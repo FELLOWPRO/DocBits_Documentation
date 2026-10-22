@@ -1,6 +1,6 @@
 # 供应商常规设置
 
-<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="供应商常规设置"><figcaption><p>供应商常规设置页面</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t012-zh.png" alt="供应商门户的常规设置。"><figcaption><p>供应商门户的常规设置。</p></figcaption></figure>
 
 ### 概览
 

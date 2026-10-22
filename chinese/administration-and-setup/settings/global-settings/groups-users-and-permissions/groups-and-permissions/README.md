@@ -4,7 +4,7 @@
 DocBits 用户组与权限教程：设置用户角色、访问权限并保护您的工作区
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="用户组与权限"><figcaption><p>用户组与权限页面</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t009-zh.png" alt="所选群组详情；个人数据已隐藏。 “Actions”列尚未翻译；成员身份已隐藏。"><figcaption><p>所选群组详情；个人数据已隐藏。 “Actions”列尚未翻译；成员身份已隐藏。</p></figcaption></figure>
 
 用户组与权限功能可用于控制哪些用户可以访问特定文档类型，以及他们可以执行哪些操作。
 

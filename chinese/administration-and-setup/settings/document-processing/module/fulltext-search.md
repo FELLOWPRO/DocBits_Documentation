@@ -2,8 +2,6 @@
 
 全文搜索允许用户搜索文档的实际内容以及所有提取字段，而不仅仅是文件名和 ID。
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="模块已禁用时显示的“需要全文模块”对话框"><figcaption><p>依赖该模块的页面上会显示“需要全文模块”对话框。</p></figcaption></figure>
-
 ## 未启用模块时
 
 未启用全文搜索时，仪表板搜索栏只能查询少量结构化字段。自由文本输入仅会匹配以下内容：
@@ -19,7 +17,7 @@
 
 启用全文搜索后，即可搜索文档中的所有提取字段，并将仪表板搜索栏升级为更丰富的查询语言。查询可以组合字段筛选条件、范围比较、逻辑运算符、相对日期和智能筛选器快捷方式。
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="仪表板搜索栏中显示范围查询及筛选后的文档列表"><figcaption><p>仪表板搜索栏支持扩展查询语言。输入查询并按 <kbd>Enter</kbd>，即可筛选文档列表。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u049-zh.png" alt="在仪表盘中输入金额查询条件。"><figcaption><p>在仪表盘中输入金额查询条件。</p></figcaption></figure>
 
 ### 按字段限定查询
 
@@ -102,7 +100,9 @@ ai: invoices from Ruiz over 1000 last quarter
 
 AI 搜索和向量搜索不可互换：向量搜索用于匹配相似内容，AI 搜索则将自然语言转换为筛选条件。AI 搜索没有单独的开关，而是通过现有的全文索引和向量索引执行。
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="全文搜索设置页面，显示 Documents、Vector Index 和 Fulltext（文本）子索引"><figcaption><p>全文搜索设置。向量索引有独立的开关；启用模块后，全文文本索引会持续运行。</p></figcaption></figure>
+下图展示模块可用性；索引状态和向量索引开关需要在可用的全文搜索设置详情中查看。
+
+<figure><img src="../../../../.gitbook/assets/prior-u048-zh.png" alt="在模块设置中检查全文搜索的可用性。此图展示模块开关，不是索引状态或向量索引设置；本例未更改开关。"><figcaption><p>在模块设置中检查全文搜索的可用性。此图展示模块开关，不是索引状态或向量索引设置；本例未更改开关。</p></figcaption></figure>
 
 ## 先决条件
 
@@ -117,7 +117,7 @@ AI 搜索和向量搜索不可互换：向量搜索用于匹配相似内容，AI
 3. 出现订阅对话框时确认订阅。
 4. 等待初始重新索引完成，再使用全文查询。
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="模块页面中“仪表板”组下的全文搜索开关"><figcaption><p>全文搜索开关位于 <strong>模块 → 仪表板 &#x26; 分析</strong> 下。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u050-zh.png" alt="全文搜索模块的可用情况。"><figcaption><p>全文搜索模块的可用情况。</p></figcaption></figure>
 
 {% hint style="info" %}
 全文搜索模块的定价由您的 DocBits 销售联系人处理。首次启用该模块时会显示订阅确认窗口。
@@ -128,3 +128,5 @@ AI 搜索和向量搜索不可互换：向量搜索用于匹配相似内容，AI
 * [全文搜索设置](../../log-settings/fulltext-search-settings.md) — 索引管理和向量索引开关。
 * [全文搜索函数](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — `fulltext_search()` 和 `vector_search()` 的脚本 API。
 * [模块概览](README.md) — DocBits 可选模块的完整列表。
+
+全文搜索需要相应模块和权限。如果提示缺少模块，请让管理员检查组织的功能可用性和访问权限。

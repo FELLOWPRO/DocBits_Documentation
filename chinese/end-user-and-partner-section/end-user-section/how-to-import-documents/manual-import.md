@@ -13,4 +13,4 @@ DocBits 导入教程：上传文档、拖放以及手动与自动分类
 * 文件上传后，初始状态为“正在运行”。在此期间，系统正在处理上传内容，无法编辑文件。处理时间可能因文件的大小和复杂程度而异。
 * 文件处理完成后，状态将变为“准备验证”。此时，您可以开始验证流程。
 
-<figure><img src="../../../.gitbook/assets/manual-import1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-manual-import1-zh.png" alt="手动导入文档窗口。"><figcaption><p>手动导入文档窗口。</p></figcaption></figure>

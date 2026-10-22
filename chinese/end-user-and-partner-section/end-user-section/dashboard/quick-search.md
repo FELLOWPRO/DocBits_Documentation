@@ -10,7 +10,7 @@
 
 > 您无需记住任何内容：点击搜索栏，从列表中选择字段和值，快速搜索会为您构建查询。下面的示例也展示了可直接复制的输入形式。
 
-<figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="仪表板顶部的快速搜索栏"><figcaption><p>仪表板顶部的快速搜索栏。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry-zh.png" alt="中文仪表盘中的快速搜索。"><figcaption><p>中文仪表盘中的快速搜索。</p></figcaption></figure>
 
 ---
 
@@ -68,7 +68,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 
 它**不会**匹配 `XYZ_Invoice.pdf`（其中“invoice”位于名称中间——请使用 `:`）。
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice 仅匹配以 invoice 开头的名称，不区分大小写"><figcaption><p><code>filename=invoice</code> — 仅匹配以“invoice”开头的名称，不区分大小写（<code>Invoice.pdf</code>、<code>iNVoice.pdf</code>、<code>INVOICE_2026.pdf</code>……都符合）。请与下文的 <code>:</code> 比较。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u028-zh.png" alt="输入按文件名查询的条件。"><figcaption><p>输入按文件名查询的条件。</p></figcaption></figure>
 
 #### `:` → 包含（任意位置）
 
@@ -78,7 +78,7 @@ filename:invoice
 
 使用 `:` 可匹配名称中**任意位置**的单词，例如 `2026_Invoice.pdf`、`vietnam_einvoice_sample.xml`、`scan_invoice_copy.pdf`。
 
-<figure><img src="../../../.gitbook/assets/quick_search_03_filename_contains.png" alt="filename:invoice 匹配名称中任意位置的单词"><figcaption><p><code>filename:invoice</code> — 匹配文档名称中任意位置的单词。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains-zh.png" alt="按文件名片段搜索：filename:invoice。"><figcaption><p>按文件名片段搜索：filename:invoice。</p></figcaption></figure>
 
 #### `="…"` → 以……开头或结尾
 
@@ -98,7 +98,7 @@ status=ready_for_validation
 
 状态是一个固定列表，因此 `=` 表示**精确**匹配；输入 `status=` 时，搜索栏会提供值选择器。
 
-<figure><img src="../../../.gitbook/assets/quick_search_05_status.png" alt="按文档状态筛选"><figcaption><p><code>status=ready_for_validation</code> — 精确匹配固定列表中的值。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status-zh.png" alt="输入技术状态 ready_for_validation 筛选条件。"><figcaption><p>输入技术状态 ready_for_validation 筛选条件。</p></figcaption></figure>
 
 ### 按日期查找文档
 
@@ -108,7 +108,7 @@ created_on>2026-05-25
 
 使用 `>`、`<`、`>=`、`<=` 指定日期范围。也可以使用**相对日期**：`today()`、`today()-7`（最近 7 天）、`today()+30`（未来 30 天）。
 
-<figure><img src="../../../.gitbook/assets/quick_search_06_date.png" alt="按创建日期筛选"><figcaption><p><code>created_on&#62;2026-05-25</code> — 查找在指定日期之后创建的文档。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date-zh.png" alt="查询 2026 年 5 月 25 日之后创建的文档。"><figcaption><p>查询 2026 年 5 月 25 日之后创建的文档。</p></figcaption></figure>
 
 ### 按发票子类型查找文档
 
@@ -116,7 +116,7 @@ created_on>2026-05-25
 invoice_sub_type="Cost Invoice"
 ```
 
-发票子类型是一个固定列表（例如 **Cost Invoice** 或 **Purchase Invoice**），因此 `=` 表示**精确**匹配；输入 `invoice_sub_type=` 时，搜索栏会提供值选择器。使用 `invoice_sub_type!="Cost Invoice"` 可查找该子类型以外的所有文档。
+发票子类型是一个固定列表（例如 **成本发票** 或 **采购发票**），因此 `=` 表示**精确**匹配；输入 `invoice_sub_type=` 时，搜索栏会提供值选择器。使用 `invoice_sub_type!="Cost Invoice"` 可查找该子类型以外的所有文档。
 
 ---
 
@@ -130,9 +130,9 @@ invoice_sub_type="Cost Invoice"
 supplier_name=Test
 ```
 
-按提取出的供应商名称进行前缀匹配。使用 `supplier_name:fuji` 匹配名称中的任意位置，或使用 `supplier_name:"Ruiz Foods"` 搜索带空格的值。
+按提取出的供应商名称进行前缀匹配。使用 `supplier_name:Example` 匹配名称中的任意位置，或使用 `supplier_name:"Example"` 搜索带空格的值。
 
-<figure><img src="../../../.gitbook/assets/quick_search_09_supplier.png" alt="按供应商名称搜索"><figcaption><p><code>supplier_name=Test</code> — 每条结果的供应商名称都以“Test”开头。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier-zh.png" alt="供应商查询示例：supplier_name=Test。"><figcaption><p>供应商查询示例：supplier_name=Test。</p></figcaption></figure>
 
 ### 按采购订单查找文档
 
@@ -142,7 +142,7 @@ purchase_order=PO
 
 按提取出的采购订单编号进行前缀匹配——非常适合搜索采购订单前缀。
 
-<figure><img src="../../../.gitbook/assets/quick_search_10_purchase_order.png" alt="按采购订单搜索"><figcaption><p><code>purchase_order=PO</code> — 查找采购订单编号以“PO”开头的文档。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order-zh.png" alt="采购订单查询示例：purchase_order=PO。"><figcaption><p>采购订单查询示例：purchase_order=PO。</p></figcaption></figure>
 
 ### 按金额查找文档
 
@@ -152,7 +152,7 @@ total_amount>5000
 
 使用 `>`、`<`、`>=`、`<=`，或使用 `between 100 and 500` 指定范围。
 
-<figure><img src="../../../.gitbook/assets/quick_search_07_amount.png" alt="按总金额筛选"><figcaption><p><code>total_amount&#62;5000</code> — 查找金额大于 5,000 的发票。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount-zh.png" alt="输入总金额大于 5000 的筛选条件。"><figcaption><p>输入总金额大于 5000 的筛选条件。</p></figcaption></figure>
 
 指定金额区间时，使用 `between`：
 
@@ -162,7 +162,7 @@ total_amount between 1000 and 5000
 
 这是 `total_amount>=1000 AND total_amount<=5000` 的简写形式。
 
-<figure><img src="../../../.gitbook/assets/quick_search_14_between.png" alt="使用 between 指定金额区间"><figcaption><p><code>total_amount between 1000 and 5000</code> — 每条结果的金额都在该区间内。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between-zh.png" alt="输入金额在 1000 到 5000 之间的查询。"><figcaption><p>输入金额在 1000 到 5000 之间的查询。</p></figcaption></figure>
 
 ### 查找缺失项
 
@@ -172,7 +172,7 @@ supplier_name=""
 
 `=""` 表示“此字段**未设置**”；`supplier_name!=""` 表示“存在任意供应商”。
 
-<figure><img src="../../../.gitbook/assets/quick_search_12_empty.png" alt="查找没有供应商的文档"><figcaption><p><code>supplier_name=""</code> — 查找尚未设置供应商的文档。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty-zh.png" alt="输入供应商名称为空的筛选条件。"><figcaption><p>输入供应商名称为空的筛选条件。</p></figcaption></figure>
 
 同样的存在性检查适用于任何字段，例如查找仍缺少 AP 分配代码的文档：
 
@@ -180,7 +180,7 @@ supplier_name=""
 ap_assignment_code=""
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_15_ap_empty.png" alt="查找缺少 AP 分配代码的文档"><figcaption><p><code>ap_assignment_code=""</code> — 查找没有 AP 分配代码的文档。使用 <code>ap_assignment_code!=""</code> 查找已设置该代码的文档。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty-zh.png" alt="搜索没有 AP 分配的文档。"><figcaption><p>搜索没有 AP 分配的文档。</p></figcaption></figure>
 
 ---
 
@@ -202,7 +202,7 @@ ap_assignment_code=""
 
 这三种**采购订单匹配**筛选器以及全文字段都要求您的组织启用全文搜索。
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="智能筛选器下拉面板"><figcaption><p>快速搜索下拉菜单顶部的智能筛选器——点击一次即可应用筛选器（已逾期、即将到期、分配给我、今日收件箱、待验证、电子文档、完全／部分／低于采购订单匹配）。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u030-zh.png" alt="快速搜索的查询与筛选帮助。"><figcaption><p>快速搜索的查询与筛选帮助。</p></figcaption></figure>
 
 ---
 
@@ -214,9 +214,9 @@ ap_assignment_code=""
 group by supplier_name
 ```
 
-随后列表会显示可折叠的**分组标题**，每个标题包含组名和**数量**（例如 *Ruiz Foods (12)*）。点击标题可展开或折叠该组。对于日期字段，可以按**天、周或月**分组。
+随后列表会显示可折叠的**分组标题**，每个标题包含组名和**数量**（例如 *Example (12)*）。点击标题可展开或折叠该组。对于日期字段，可以按**天、周或月**分组。
 
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="按供应商分组的结果，每组都有可折叠的标题"><figcaption><p><code>group by supplier_name</code> — 将结果折叠为每个供应商一个可展开的标题。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u029-zh.png" alt="输入按供应商分组的查询。"><figcaption><p>输入按供应商分组的查询。</p></figcaption></figure>
 
 分组可以与任意筛选器组合使用——`status=ready_for_validation group by
 supplier_name` 会仅对匹配的文档分组。点击某个组可**深入查看**：系统会将该组的值作为筛选条件，并返回该筛选结果的平铺列表。
@@ -267,28 +267,145 @@ status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_13_combined.png" alt="使用 AND 组合条件"><figcaption><p><code>status=ready_for_validation AND supplier_name=Test</code> — 组合两个条件。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined-zh.png" alt="使用 AND 连接状态与供应商条件。"><figcaption><p>使用 AND 连接状态与供应商条件。</p></figcaption></figure>
 
-### 快捷方式
+### 查询示例
 
-同一查询也可以用更简短的写法，根据可读性选择：
+图片展示在中文界面中输入的查询。文档数据已隐藏。筛选栏图片并不证明精确的查询结果数量。
 
-| 快捷方式 | 等同于 | 说明 |
-|----------|----------|-------------|
-| `total_amount gt 5000` | `total_amount>5000` | 比较运算符的文字别名（`gt`/`gte`/`lt`/`lte`/`eq`/`ne`） |
-| `due_date > today` | `due_date>today()` | 直接使用 `today`／`yesterday`／`tomorrow` |
-| `imported_on this_week` | `imported_on>=today()-7 AND imported_on<=today()` | 相对周期（`this_week`、`last_week`、`this_month`……） |
-| `ap_assignment_code is empty` | `ap_assignment_code=""` | 检查字段是否有值 |
-| `status:open` | `status=ready_for_validation` | 友好的状态标签（`open`/`closed`/`failed`/`done`） |
-| `total_amount not between 100, 200` | `total_amount<100 OR total_amount>200` | 查找数值不在区间内的结果 |
-| `status in (finished, error)` | `status=finished OR status=error` | 匹配列表中的任意值 |
-| `not status=finished` | `status!=finished` | 对任意谓词取反 |
-| `filename contains rechnung` | `filename:rechnung` | 字符串匹配（`contains`/`starts_with`/`ends_with`） |
-| `total_amount > 5k` | `total_amount>5000` | 金额后缀 `k`（×1 000）、`M`（×1 000 000） |
-| `overdue` | `invoice_due_date<today() AND status!=finished` | 已超过到期日且未付款的发票 |
-| `#INV-1234` | `invoice_id:INV-1234` | 用于发票 ID 的 Twitter 风格前缀 |
-| `@User` | `assigned_to:User` | 用于受指派人的 Twitter 风格前缀 |
-| `$5000+` | `total_amount>=5000` | 金额阈值的 `$` 前缀 |
+#### 文本比较运算符
+
+```
+created_on gt 2026-05-25
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases-zh.png" alt="日期查询中的 gt 比较运算符。"><figcaption><p>日期查询中的 gt 比较运算符。</p></figcaption></figure>
+
+#### 早于今天
+
+```
+created_on < today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date-zh.png" alt="将 created_on 与 today() 比较。"><figcaption><p>将 created_on 与 today() 比较。</p></figcaption></figure>
+
+#### 从创建日期开始
+
+```
+created_on >= 2026-06-01
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period-zh.png" alt="输入从 2026 年 6 月 1 日开始的创建日期条件。"><figcaption><p>输入从 2026 年 6 月 1 日开始的创建日期条件。</p></figcaption></figure>
+
+#### 未分配负责人
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence-zh.png" alt="搜索尚未分配负责人的文档。"><figcaption><p>搜索尚未分配负责人的文档。</p></figcaption></figure>
+
+#### 状态筛选
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open-zh.png" alt="快速搜索中的状态筛选示例。"><figcaption><p>快速搜索中的状态筛选示例。</p></figcaption></figure>
+
+#### 日期范围之外
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between-zh.png" alt="输入日期范围之外的查询条件。"><figcaption><p>输入日期范围之外的查询条件。</p></figcaption></figure>
+
+#### 多个可选状态
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list-zh.png" alt="使用 OR 连接两个技术状态。"><figcaption><p>使用 OR 连接两个技术状态。</p></figcaption></figure>
+
+#### 排除供应商条件
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation-zh.png" alt="使用 NOT 排除供应商条件。"><figcaption><p>使用 NOT 排除供应商条件。</p></figcaption></figure>
+
+#### 文件名片段
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains-zh.png" alt="在文件名中搜索关键词。"><figcaption><p>在文件名中搜索关键词。</p></figcaption></figure>
+
+#### 发票编号查询
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix-zh.png" alt="使用 invoice_number 的查询示例。"><figcaption><p>使用 invoice_number 的查询示例。</p></figcaption></figure>
+
+#### 空分配
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix-zh.png" alt="输入空分配条件：assigned_to=&quot;&quot;。"><figcaption><p>输入空分配条件：assigned_to=&quot;&quot;。</p></figcaption></figure>
+
+#### 货币查询
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-zh.png" alt="输入货币筛选条件：currency=EUR。"><figcaption><p>输入货币筛选条件：currency=EUR。</p></figcaption></figure>
+
+#### 到期日期早于今天
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue-zh.png" alt="输入到期日期早于 today() 的条件。"><figcaption><p>输入到期日期早于 today() 的条件。</p></figcaption></figure>
+
+#### 金额阈值
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix-zh.png" alt="输入总金额大于或等于 1000 的条件。"><figcaption><p>输入总金额大于或等于 1000 的条件。</p></figcaption></figure>
+
+## 包含文档内容
+
+内容搜索菜单决定查询是否包含文档文本。此选项独立于技术前缀 vector:、ocr: 和 ai:。
+
+### 自动
+
+首先搜索可见列。如果没有匹配项，且组织具备所需功能，则包含文档内容。
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector-zh.png" alt="快速搜索自动包含文档内容。"><figcaption><p>快速搜索自动包含文档内容。</p></figcaption></figure>
+
+### 始终包含内容
+
+明确包含文档内容。所需搜索功能必须可用。
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr-zh.png" alt="快速搜索始终包含文档内容。"><figcaption><p>快速搜索始终包含文档内容。</p></figcaption></figure>
+
+### 仅可见列
+
+仅搜索仪表盘的可见列。
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai-zh.png" alt="搜索仅限可见列。"><figcaption><p>搜索仅限可见列。</p></figcaption></figure>
 
 ### 快捷查询和结果示例
 
@@ -302,15 +419,11 @@ status=ready_for_validation AND supplier_name=Test
 - 等同于：`created_on>2026-05-25`
 - 结果：按 2026 年 5 月 25 日之后创建进行筛选。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="created_on gt 2026-05-25 的快速搜索结果"><figcaption><p><code>created_on gt 2026-05-25</code> - 按 2026 年 5 月 25 日之后创建进行筛选。</p></figcaption></figure>
-
 ##### 直接使用日期词
 
 - 查询：`created_on < today`
 - 等同于：`created_on<today()`
 - 结果：将直接使用的单词 today 展开为 today()。
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="created_on &lt; today 的快速搜索结果"><figcaption><p><code>created_on &lt; today</code> - 将直接使用的单词 today 展开为 today()。</p></figcaption></figure>
 
 ##### 相对周期
 
@@ -318,15 +431,11 @@ status=ready_for_validation AND supplier_name=Test
 - 等同于：`created_on>=first day of this month AND created_on<=last day of this month`
 - 结果：将 this_month 展开为日期区间。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="created_on this_month 的快速搜索结果"><figcaption><p><code>created_on this_month</code> - 将 this_month 展开为日期区间。</p></figcaption></figure>
-
 ##### 表示为空或已设置的词
 
 - 查询：`assigned_to is empty`
 - 等同于：`assigned_to=""`
 - 结果：查找没有受指派人的文档。
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="assigned_to is empty 的快速搜索结果"><figcaption><p><code>assigned_to is empty</code> - 查找没有受指派人的文档。</p></figcaption></figure>
 
 ##### 友好状态
 
@@ -334,15 +443,11 @@ status=ready_for_validation AND supplier_name=Test
 - 等同于：`status=ready_for_validation`
 - 结果：将 open 映射为验证状态。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="status:open 的快速搜索结果"><figcaption><p><code>status:open</code> - 将 open 映射为验证状态。</p></figcaption></figure>
-
 ##### 不在区间内
 
 - 查询：`created_on not between 2026-06-01, 2026-06-15`
 - 等同于：`(created_on<2026-06-01 OR created_on>2026-06-15)`
 - 结果：查找不在日期区间内的值。
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="created_on not between 2026-06-01, 2026-06-15 的快速搜索结果"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - 查找不在日期区间内的值。</p></figcaption></figure>
 
 ##### 列表中的任意值
 
@@ -350,15 +455,11 @@ status=ready_for_validation AND supplier_name=Test
 - 等同于：`status=ready_for_validation OR status=exported`
 - 结果：匹配列出的任意状态。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="status in (ready_for_validation, exported) 的快速搜索结果"><figcaption><p><code>status in (ready_for_validation, exported)</code> - 匹配列出的任意状态。</p></figcaption></figure>
-
 ##### 否定前缀
 
 - 查询：`not status=finished`
 - 等同于：`status!=finished`
 - 结果：反转 finished 状态谓词。
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="not status=finished 的快速搜索结果"><figcaption><p><code>not status=finished</code> - 反转 finished 状态谓词。</p></figcaption></figure>
 
 ##### 字符串包含
 
@@ -366,23 +467,17 @@ status=ready_for_validation AND supplier_name=Test
 - 等同于：`filename:E2E`
 - 结果：使用 contains 按文件名子字符串搜索。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="filename contains E2E 的快速搜索结果"><figcaption><p><code>filename contains E2E</code> - 使用 contains 按文件名子字符串搜索。</p></figcaption></figure>
-
 ##### 发票前缀
 
 - 查询：`#INV-1234`
 - 等同于：`invoice_id:INV-1234`
 - 结果：将 #... 映射为发票 ID 搜索。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="#INV-1234 的快速搜索结果"><figcaption><p><code>#INV-1234</code> - 将 #... 映射为发票 ID 搜索。</p></figcaption></figure>
-
 ##### 受指派人前缀
 
 - 查询：`@Daniel`
 - 等同于：`assigned_to:"Daniel"`
 - 结果：将 @... 映射为受指派人姓名搜索。
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="@Daniel 的快速搜索结果"><figcaption><p><code>@Daniel</code> - 将 @... 映射为受指派人姓名搜索。</p></figcaption></figure>
 
 #### 需要全文搜索
 
@@ -394,23 +489,17 @@ status=ready_for_validation AND supplier_name=Test
 - 等同于：`total_amount>5000`
 - 结果：在金额字段中将 k 展开为千。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="total_amount &gt; 5k 的快速搜索结果"><figcaption><p><code>total_amount &gt; 5k</code> - 在金额字段中将 k 展开为千。</p></figcaption></figure>
-
 ##### 逾期快捷方式
 
 - 查询：`overdue`
 - 等同于：`invoice_due_date<today() AND status!=finished`
 - 结果：查找已超过到期日且尚未完成的发票。
 
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="overdue 的快速搜索结果"><figcaption><p><code>overdue</code> - 查找已超过到期日且尚未完成的发票。</p></figcaption></figure>
-
 ##### 金额前缀
 
 - 查询：`$5000+`
 - 等同于：`total_amount>=5000`
 - 结果：将 $...+ 映射为金额阈值。
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="$5000+ 的快速搜索结果"><figcaption><p><code>$5000+</code> - 将 $...+ 映射为金额阈值。</p></figcaption></figure>
 
 ---
 
@@ -427,8 +516,6 @@ vector: invoices about office supplies
 vector: shipping delays with Hamburg port
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="语义向量搜索结果"><figcaption><p><code>vector: supplier invoice</code> — 查找语义相关的文档，即使文档中没有这些完全相同的词语。</p></figcaption></figure>
-
 ### OCR 文本搜索 — `ocr:`
 
 搜索 OCR 引擎提取的**页面文本**，而不仅仅是结构化列。当您记得的值位于文档正文中时，这种方式很有用。
@@ -440,8 +527,6 @@ ocr: Hamburg AND doc_type=INVOICE
 ocr: IBAN
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_18_ocr.png" alt="OCR 文本搜索结果"><figcaption><p><code>ocr: demo invoice</code> — 匹配文档页面任意位置找到的文本。</p></figcaption></figure>
-
 ### 自然语言（AI）搜索 — `ai:`
 
 用通俗英语描述您要查找的内容；AI 会读取您的描述，并从中提取供应商、日期、金额等筛选条件，生成结构化查询。与向量搜索不同，它会**构建查询**，而不是查找相似文档。
@@ -452,8 +537,6 @@ ai: overdue invoices waiting on approval
 ai: shipping documents from Hamburg last month
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_19_ai.png" alt="自然语言 AI 搜索结果"><figcaption><p><code>ai: invoices over 1000 from this year</code> — AI 会自动将这句话转换为筛选条件。</p></figcaption></figure>
-
 ---
 
 ### 示例
@@ -463,7 +546,7 @@ ai: shipping documents from Hamburg last month
 | 准备好进行验证且与采购订单完全匹配的文档 | `status=ready_for_validation AND po_match_status=full_matched` |
 | 本周来自该供应商的文档 | `supplier_name=Test AND created_on>today()-7` |
 | 高价值的逾期发票 | `total_amount>5000 AND invoice_due_date<today()` |
-| 同时查找两家供应商 | `supplier_name=fuji OR supplier_name=acme` |
+| 同时查找两家供应商 | `supplier_name=ExampleA OR supplier_name=ExampleB` |
 | 今天发生错误的文档 | `(status=error OR status=failed) AND created_on>today()-1` |
 | 电子贷项通知单 | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
 | 按采购订单前缀搜索 | `purchase_order=PO-2026` |

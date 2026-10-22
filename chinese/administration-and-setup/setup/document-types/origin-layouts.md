@@ -6,7 +6,7 @@ DocBits 原属地设置说明：日期和数字格式的国家标准
 
 DocBits 擅长根据文档的地理来源调整文档布局，同时根据用户的浏览器设置统一货币格式等元素。下面介绍如何使用 Layout Builder（布局构建器）为美国和德国等不同来源自定义布局。
 
-<figure><img src="../../../.gitbook/assets/origin_layout_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_1-zh.png" alt="带中文控件的布局构建器。"><figcaption><p>带中文控件的布局构建器。</p></figcaption></figure>
 
 ## **了解基于原属地的自定义**
 
@@ -34,12 +34,12 @@ DocBits 擅长根据文档的地理来源调整文档布局，同时根据用户
 
 ## 将默认布局应用于多个原属地
 
-如果要将默认布局应用于多个原属地，请点击 **Apply Default To Origins**。
+如果要将默认布局应用于多个原属地，请点击 **将默认布局应用于来源**。
 
-<figure><img src="../../../.gitbook/assets/origin_layout_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_3-zh.png" alt="选择来源；已配置的来源名称保持不变。"><figcaption><p>选择来源；已配置的来源名称保持不变。</p></figcaption></figure>
 
-此时会出现一个弹出窗口，您可以选择要应用默认布局的原属地。您可以使用 **Select All**（全选）或 **Unselect All**（取消全选）快速管理所选项。弹出窗口会显示当前选中的原属地数量。
+此时会出现一个弹出窗口，您可以选择要应用默认布局的原属地。您可以使用 **全选**（全选）或 **取消全选**（取消全选）快速管理所选项。弹出窗口会显示当前选中的原属地数量。
 
-<figure><img src="../../../.gitbook/assets/origin_layout_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-origin_layout_4-zh.png" alt="将默认布局应用到来源的窗口。"><figcaption><p>将默认布局应用到来源的窗口。</p></figcaption></figure>
 
-完成选择后，点击 **Apply to Origins**。成功消息会确认原属地已更新。
+完成选择后，点击 **应用于所选来源**。成功消息会确认原属地已更新。

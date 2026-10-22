@@ -11,10 +11,10 @@
 ## 为组织要求启用 MFA
 
 1. 前往 **Settings → Global Settings → Company Information**。
-2. 打开 **Two-factor authentication** 部分。
-3. 开启 **Require two-factor authentication for all members**，然后点击 **Save**。
+2. 打开 **双因素身份验证** 部分。
+3. 开启 **要求所有成员启用双因素身份验证**，然后点击 **保存**。
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="组织 MFA 要求开关和使用情况报告"><figcaption><p>为所有成员开启此要求，并在下方监控使用情况。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t001-zh.png" alt="组织的双因素身份验证要求。 “节省”按钮实际表示保存；本例未更改 MFA 要求。"><figcaption><p>组织的双因素身份验证要求。 “节省”按钮实际表示保存；本例未更改 MFA 要求。</p></figcaption></figure>
 
 保存后，更改会在一分钟内生效。此后：
 
@@ -28,11 +28,11 @@
 
 ## MFA 使用情况报告
 
-开关下方的 **MFA adoption** 面板会显示在强制执行前，组织内 2FA 的使用情况：
+开关下方的 **多因素身份验证 (MFA) 采用** 面板会显示在强制执行前，组织内 2FA 的使用情况：
 
 * 整体**使用率**和进度条，
 * 已启用 2FA 的成员数量（例如，*74 名成员中有 0 名*），
-* 按验证方式划分的明细——**Authenticator**、**Email** 和 **Passkey**。
+* 按验证方式划分的明细——**验证器**、**电子邮件** 和 **Passkey**。
 
 <figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="MFA 使用情况报告"><figcaption><p>MFA 使用情况报告：整体百分比、已注册成员数量以及按验证方式划分的明细。</p></figcaption></figure>
 

@@ -1,74 +1,43 @@
 # 定义表格和列
 
-本指南介绍如何在 DocBits 中手动定义表格和列，以提取行项目。当自动检测无法完整识别表格结构，或者需要添加自定义字段时，这项功能尤其有用。
+如果表格未被完整识别，可通过表格训练指定区域和列。以下使用虚构发票和未保存的训练草稿。
 
-### 1. 打开表格提取视图
+## 打开训练
 
-在 DocBits 中打开文档，然后点击 **“Table Training”** 按钮，进入表格提取视图。
+在字段验证中打开文档，然后进入表格提取。
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-zh.png" alt="定义表格和列的界面。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"><figcaption><p>定义表格和列的界面。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。</p></figcaption></figure>
 
-### 2. 激活训练模式
+启用训练模式，显示区域选择和列工具。
 
-要手动定义或修改表格和列，请点击 **“TRAINING MODE”**。
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-zh.png" alt="训练模式已开启的表格训练界面。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"><figcaption><p>训练模式已开启的表格训练界面。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。</p></figcaption></figure>
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+工具栏也提供自动检测。请将检测结果与文档比较；图片只显示可用工具，并不证明已完成自动检测。
 
-### 3. 定义表格区域
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-zh.png" alt="包括自动检测在内的表格训练工具。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"><figcaption><p>包括自动检测在内的表格训练工具。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。</p></figcaption></figure>
 
-进入训练模式后，您可以定义文档中的表格位置。您有两种选择：
+## 指定区域和列
 
-#### 选项 1：使用自动检测
+用铅笔工具画出包含表头和明细行的矩形。将下方合计排除在区域之外。
 
-点击 **“Auto-Detect Tables”** 按钮，让 DocBits 尝试自动识别表格区域。
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-zh.png" alt="虚构发票明细行上的表格区域，尚未保存。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"><figcaption><p>虚构发票明细行上的表格区域，尚未保存。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
+选择列工具，在实际列之间放置垂直分隔线。
 
-如果检测成功，系统会自动显示表格轮廓。随后，您可以继续定义列。
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-zh.png" alt="带有垂直列分隔线的表格区域。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"><figcaption><p>带有垂直列分隔线的表格区域。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。</p></figcaption></figure>
 
-#### 选项 2：手动定义表格
+检查行号、描述、数量、单价和金额。
 
-如果自动检测失败或结果不准确，您可以手动定义表格：
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-zh.png" alt="虚构发票各列之间的分隔线。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"><figcaption><p>虚构发票各列之间的分隔线。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。</p></figcaption></figure>
 
-1. 点击 **“Edit”** 按钮，启用表格选择模式。
-2. 在左侧的文档视图中，围绕表格区域绘制一个矩形。
+保存文档或规则前，检查整个区域和所有分隔线。
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-zh.png" alt="未保存的训练草稿中的区域和分隔线。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。"><figcaption><p>未保存的训练草稿中的区域和分隔线。 “节省”按钮实际表示保存；本例只标记未保存的训练区域和列分隔线。</p></figcaption></figure>
 
-### 4. 添加和定义列
+## 检查提取结果
 
-定义表格后，您可以通过以下按钮手动定义列：\
+将提取的行与发票比较。下一张图片展示验证界面中已经自动提取的行，并非上方训练草稿的提取结果。
 
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-zh.png" alt="验证界面中自动提取的虚构发票明细行。"><figcaption><p>验证界面中自动提取的虚构发票明细行。</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
-
-在文档上通过拖放来定义列并调整列顺序。对其他页面上的表格重复此操作。如果每页上的表格相同，您也可以使用以下按钮，将同一组列应用到文档中定义的所有表格。此功能会将您定义的列复制到其他所有页面：
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
-
-对于内容密集或结构复杂的文档，可以使用**缩放**功能更准确地定义列。例如，当信息排列得很紧密，导致列难以定义时：
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
-
-如果误定义了列，可以点击该列将其选中，然后通过以下按钮删除：
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**注意**</mark>：只有在选中列后才会显示该按钮。
-
-完成文档中所有表格和列的定义后，点击“Save”按钮以启用更改并从文档中提取数据：
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
-
-系统会提取所有已定义区域的数据，并在右侧显示：
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
-
-### 6. 保存并提取
-
-定义完所有表格和列后，点击 **“Save Rules”**。
-
-* 这会告知 DocBits 如何查找此特定供应商的表格数据。
-* 下次上传同一供应商的文档时，DocBits 会使用已保存的规则自动提取表格。
-
-<mark style="color:red;">**注意**</mark>：此训练针对特定供应商，不适用于其他供应商的文档。
+保存预期训练后，测试同一供应商的其他文档。一张发票不能证明所有布局都能可靠提取。

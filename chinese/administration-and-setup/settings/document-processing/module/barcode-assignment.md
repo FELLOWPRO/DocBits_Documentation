@@ -14,7 +14,7 @@
 
 以下是在验证界面中查看文档时的图标位置：
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="验证界面中显示可用条码图标"><figcaption><p>验证界面——只有启用条码分配后才会显示条码图标（已突出显示，位于右侧工具栏）。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen-zh.png" alt="含条形码和二维码的虚构发票验证视图。"><figcaption><p>含条形码和二维码的虚构发票验证视图。</p></figcaption></figure>
 
 ### 条码的读取方式
 
@@ -32,15 +32,15 @@ DocBits 会在文档处理期间检测条码，并提供解码后的值供您分
 2. 点击右侧工具栏中的**条码图标**。
 3. **条码分配**对话框会列出 DocBits 在文档中检测到的所有条码，显示为 `Barcode <n> : <value>`。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="列出检测到的条码的条码分配对话框"><figcaption><p>条码分配对话框会列出每个检测到的条码，并提供一个下拉菜单以选择目标字段。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog-zh.png" alt="将识别到的条形码映射到文档字段。"><figcaption><p>将识别到的条形码映射到文档字段。</p></figcaption></figure>
 
 4. 对于每个条码，打开其下拉菜单并选择要填入该值的字段。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="选择条码的目标字段"><figcaption><p>每个条码都可以映射到任意文档字段，例如“采购订单”、“发票编号”或“供应商 ID”。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options-zh.png" alt="条形码映射窗口中可选的文档字段。"><figcaption><p>条形码映射窗口中可选的文档字段。</p></figcaption></figure>
 
 5. 选择字段后，该字段会立即填入条码的值。
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="条码已映射到“采购订单”字段"><figcaption><p>选择字段（此处为“采购订单”）后，该字段会填入条码值。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-zh.png" alt="未保存的采购订单字段映射。"><figcaption><p>未保存的采购订单字段映射。</p></figcaption></figure>
 
 ### 如何启用
 

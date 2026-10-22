@@ -44,6 +44,10 @@ Leer y construir: [Caso Advanced: enrutamiento de facturas](advanced-workflow-ca
 
 ## 3. Campos, tipos y límites <a id="level-3"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/es.mp4" %}
+
+[Abrir el vídeo con subtítulos en español y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/es.html).
+
 **Ejercicio:** Compruebe ausente, null, texto vacío, espacios, false, 0 y números como texto. Calcule tolerancia con referencia al pedido y al documento. Compare una y todas las líneas realmente asociadas.
 
 **Criterio de finalización:** Explique verdadero, falso y error con valor, tipo, referencia y datos. Ninguna línea comparable no equivale a aprobación correcta.

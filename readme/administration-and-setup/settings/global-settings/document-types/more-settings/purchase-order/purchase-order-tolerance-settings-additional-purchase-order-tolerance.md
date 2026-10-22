@@ -1,5 +1,13 @@
 # Ajuste de tolerancias de órdenes de compra / Tolerancia adicional de órdenes de compra
 
+## Configurar reglas de conciliación y tolerancias
+
+El recorrido abre el tipo de documento factura, comprueba la versión publicada y crea un borrador inactivo. Explica los tipos de regla, la prioridad dentro de la etapa de coincidencia, las columnas comparadas, la base de cantidad, los modos y los cálculos de tolerancia. Solo se guarda el borrador del tutorial; la versión activa y las tolerancias globales se conservan. El cálculo del cinco por ciento es ilustrativo y no cambia la tolerancia activa.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/es.mp4" %}
+
+[Ver el vídeo con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/es.html)
+
 ## **Ajuste para configurar las tolerancias de órdenes de compra**&#x20;
 
 Vaya a **Configuración → Configuración general → Tipos de documento → More Settings → Sección Purchase Order → PO Tolerance Setting**

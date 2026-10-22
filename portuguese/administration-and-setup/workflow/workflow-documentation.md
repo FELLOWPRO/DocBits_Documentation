@@ -147,7 +147,7 @@ Acima está um exemplo de cálculo para MTZ com um filtro para números de item 
 
 Com uma configuração manual, é recomendável dividir os cálculos que dependem de novas colunas em um workflow separado. Para continuar com o cálculo, você pode usar o card Run Workflow.
 
-**Run Workflow**
+**Executar o fluxo**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -159,7 +159,7 @@ Com este card você pode especificar o nome de um workflow que deve ser executad
 
 Se você quiser adicionar todas as sobretaxas como um desconto negativo na coluna de desconto, você pode usar o calculation card. Pode haver entradas nesta coluna; você pode defini-la como uma das variáveis no card, ter o MTZ subtraído dela e adicionar o resultado de volta a esta coluna. Caso existam campos vazios (sobretaxas apenas para alguns itens), ele assumirá 0 para o seu cálculo.
 
-**Notify user to authorize the order confirmation in DocBits**
+**Notificar o utilizador para autorizar a confirmação da encomenda no DocBits**
 
 Após calcular as sobretaxas, você pode querer notificar um usuário específico para autorizar a confirmação de pedido. Para isso, você pode usar o notification card.
 

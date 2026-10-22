@@ -23,22 +23,22 @@ Esta seção contém os dados principais da sua empresa, agrupados em quatro ár
 
 * **ID da empresa**: um identificador exclusivo da sua empresa, usado para integrações e como referência interna.
 * **Número de identificação fiscal**: seu número de identificação fiscal para relatórios financeiros.
-* **Commercial Register ID**: seu número de registro comercial para a documentação legal.
+* **ID do registro comercial**: seu número de registro comercial para a documentação legal.
 
 ### Contato
 
-* **Official Company Phone Number**: o telefone principal da sua empresa.
+* **Telefone oficial da empresa**: o telefone principal da sua empresa.
 * **E-mail**: o endereço de e-mail principal usado para comunicações oficiais.
 
 Depois de inserir ou atualizar qualquer campo, clique em **Salvar** para aplicar as alterações. Os ícones **?** ao lado dos identificadores legais mostram orientações adicionais sobre o campo. Selecione o título da seção para expandir ou recolher o formulário.
 
 ## E-mail domains
 
-Os administradores da organização podem abrir **Settings → Company Information → E-mail domains** para gerenciar os domínios usados na atribuição automática à organização. Quando alguém entra com Microsoft ou Google e ainda não é membro de uma organização, o DocBits pode atribuí-lo a esta organização se o endereço de e-mail dessa pessoa usar um dos domínios listados. Um domínio pode pertencer a apenas uma organização.
+Os administradores da organização podem abrir **Definições → Informações da empresa → Domínios de correio eletrónico** para gerenciar os domínios usados na atribuição automática à organização. Quando alguém entra com Microsoft ou Google e ainda não é membro de uma organização, o DocBits pode atribuí-lo a esta organização se o endereço de e-mail dessa pessoa usar um dos domínios listados. Um domínio pode pertencer a apenas uma organização.
 
 <figure><img src="../../../../.gitbook/assets/prior-i002-pt.png" alt="Configuração dos domínios de e-mail da empresa."><figcaption><p>Configuração dos domínios de e-mail da empresa.</p></figcaption></figure>
 
-Insira apenas o domínio, como `example.com`, no campo e selecione **Adicionar domínio** ou pressione Enter. O primeiro domínio se torna o domínio principal. Se houver mais domínios listados, use **Faça o primário** em outra linha para alterá-lo ou o ícone de lixeira para remover um domínio. Erros como domínio inválido, provedor de e-mail pessoal ou domínio já atribuído a outra organização aparecem abaixo do campo. **No domains assigned yet** significa que esta organização não tem nenhuma regra de domínio.
+Insira apenas o domínio, como `example.com`, no campo e selecione **Adicionar domínio** ou pressione Enter. O primeiro domínio se torna o domínio principal. Se houver mais domínios listados, use **Faça o primário** em outra linha para alterá-lo ou o ícone de lixeira para remover um domínio. Erros como domínio inválido, provedor de e-mail pessoal ou domínio já atribuído a outra organização aparecem abaixo do campo. **Ainda não existem domínios atribuídos** significa que esta organização não tem nenhuma regra de domínio.
 
 Antes de adicionar um domínio, verifique qual organização deve receber os novos logins. Para gerenciar as associações existentes, continue em [Users](../groups-users-and-permissions/users/README.md).
 
@@ -63,12 +63,12 @@ Personalize a cor primária da interface do DocBits. Isso é útil para distingu
 
 Veja seus planos de assinatura ativos e os respectivos detalhes:
 
-* **Plan Name**: o nome de cada plano ativo (por exemplo, DocBits, DocFlow Users, DocSearch).
-* **Days Left**: quantos dias faltam para o plano expirar.
+* **Nome do plano**: o nome de cada plano ativo (por exemplo, DocBits, DocFlow Users, DocSearch).
+* **dias restantes**: quantos dias faltam para o plano expirar.
 * **Start Date / End Date**: o período da assinatura.
-* **Users Count**: número total de usuários na sua organização.
-* **Sub Organizations Count**: número de suborganizações configuradas.
-* **Suppliers Count**: número de fornecedores cadastrados.
+* **Número de utilizadores**: número total de usuários na sua organização.
+* **Número de suborganizações**: número de suborganizações configuradas.
+* **Número de fornecedores**: número de fornecedores cadastrados.
 
 ## Subscription Usage
 
@@ -78,7 +78,7 @@ Acompanhe seu consumo mensal de tokens e de workflows:
 |--------|-------------|
 | **Tipo** | O tipo de uso (Document ou Workflow). |
 | **From / To** | As datas do período de faturamento. |
-| **Tokens Used** | Número de tokens consumidos no período atual. |
-| **Remaining Tokens** | Tokens ainda disponíveis no período atual. |
+| **Tokens utilizados** | Número de tokens consumidos no período atual. |
+| **Tokens restantes** | Tokens ainda disponíveis no período atual. |
 
 Use o botão **Selecione** para filtrar por intervalos de datas específicos.

@@ -20,7 +20,7 @@ Habilitar ou desabilitar o sistema de permissões usando o interruptor tem vári
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-pt.png" alt="Níveis de acesso por ação na matriz de permissões. Alguns níveis de acesso permanecem em inglês."><figcaption><p>Níveis de acesso por ação na matriz de permissões. Alguns níveis de acesso permanecem em inglês.</p></figcaption></figure>
 
-O botão de alternância **Only Assigned Documents** controla a visibilidade dos documentos para os usuários com base em suas atribuições de grupo. Quando habilitado, os usuários só podem ver documentos atribuídos especificamente a eles ou a um grupo do qual façam parte. Quando desabilitado, os usuários com a permissão de visualização apropriada podem ver todos os documentos, independentemente da atribuição.
+O botão de alternância **Somente documentos atribuídos** controla a visibilidade dos documentos para os usuários com base em suas atribuições de grupo. Quando habilitado, os usuários só podem ver documentos atribuídos especificamente a eles ou a um grupo do qual façam parte. Quando desabilitado, os usuários com a permissão de visualização apropriada podem ver todos os documentos, independentemente da atribuição.
 
 #### Funcionalidade
 

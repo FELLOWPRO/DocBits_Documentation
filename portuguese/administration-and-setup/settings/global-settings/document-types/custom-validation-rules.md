@@ -30,10 +30,10 @@ As regras são definidas por **tipo de documento** e são executadas em todos os
 
 As regras de validação personalizadas são ativadas **por tipo de documento**. Não existe uma chave geral para toda a organização.
 
-1. Acesse **Settings → Global Settings → Document Types**.
+1. Acesse **Definições → Definições gerais → Tipos de documento**.
 2. No cartão do tipo de documento, clique no ícone de **configurações** (engrenagem).
 3. Abra a seção **Regras de Validação Personalizadas** e ative o alternador.
-4. Clique em **Manage validation rules** para abrir a lista de regras.
+4. Clique em **Gerenciar regras de validação** para abrir a lista de regras.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Os alternadores de regras nas configurações adicionais de um tipo de documento"><figcaption><p>Os alternadores de Manage Layouts, Custom Validation Rules e Transformation Rules</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ A partir de agora, o cartão do tipo de documento também mostra um link **Regra
 
 ## A lista de regras
 
-**Document Types → (tipo de documento) → Validation Rules** lista todas as regras do tipo de documento.
+**Tipos de documento → (tipo de documento) → Regras de validação** lista todas as regras do tipo de documento.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-pt.png" alt="Gestão de regras de validação com nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados."><figcaption><p>Gestão de regras de validação com nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados.</p></figcaption></figure>
 

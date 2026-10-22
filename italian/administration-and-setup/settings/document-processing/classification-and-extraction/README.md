@@ -1,245 +1,276 @@
 # Classificazione ed estrazione
 
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt=""><figcaption><p>Impostazioni di classificazione ed estrazione</p></figcaption></figure>
+
 ## Panoramica
 
-Nelle impostazioni di **Classificazione ed estrazione** puoi:
+Nelle impostazioni **Classificazione ed estrazione** puoi:
 
-* Abilitare la **suddivisione dei documenti** in base ai codici QR
-* Configurare la **formattazione degli importi**
-* Impostare l'**estrazione delle tabelle**
-* Attivare o disattivare l'elaborazione dei file **ZUGFeRD** non supportati
-* Definire regole di classificazione speciali
-* Monitorare i **modelli AI** addestrati su misura usati nel processo di classificazione
+* controllare come vengono **divisi** i documenti caricati e quante pagine vengono elaborate
+* configurare la **formattazione degli importi** per il confronto degli importi
+* impostare l'**estrazione della tabella**, incluso il modello AI usato per fornitore
+* attivare o disattivare l'elaborazione dei file **ZUGFeRD** non supportati
+* definire **regole di classificazione** che assegnano automaticamente un tipo di documento
+* verificare i **modelli AI** e le loro etichette addestrate
 
-Questa pagina spiega in dettaglio tutte le impostazioni disponibili.
+La pagina ha tre schede: **Generale**, **Regole di classificazione** e **Modelli AI**. La scheda *Modelli AI* viene mostrata solo quando il modulo per modelli ed etichette è abilitato per la tua organizzazione.
 
-## **Accedere alle impostazioni di Classificazione ed estrazione**
+| Scheda | Contenuto |
+|---|---|
+| Generale | Divisione del documento, Elaborazione dei documenti, Formattazione degli importi, Estrazione, Documento elettronico |
+| Regole di classificazione | Regole regex che classificano i documenti in base al nome della fonte |
+| Modelli AI | Modelli addestrati su misura con le loro etichette, tipi di documento e priorità |
 
-Per accedere alle impostazioni di **Classificazione ed estrazione**, vai su:\
-**Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione**
+## Accesso alle impostazioni di classificazione ed estrazione
 
-<figure><img src="../../../../.gitbook/assets/dbdc862-settings-nav-it-20261012.png" alt="Navigazione delle impostazioni con Elaborazione Documenti e Classificazione ed Estrazione evidenziati"><figcaption><p>Apri <strong>Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione</strong>.</p></figcaption></figure>
+Vai su **Impostazioni → Tipi di Documento → Classificazione ed Estrazione**.
 
-## Suddivisione dei documenti
+## Generale
 
-Nella sezione **Suddivisione dei documenti** puoi configurare se un documento caricato debba essere suddiviso in più documenti ogni volta che su una delle sue pagine compare un **codice a barre**.
+La scheda **Generale** raggruppa le impostazioni in sezioni espandibili. Tutte le modifiche vengono salvate immediatamente quando cambi un valore; non esiste un pulsante di salvataggio separato.
 
-Per attivare questa funzione:
+### Divisione del documento
 
-1. Vai alla sezione **Suddivisione dei documenti**.
-2.  Apri il menu a discesa.
+**Dividere** stabilisce se un documento caricato viene diviso in più documenti quando su una delle sue pagine compare un codice a barre. Il menu a discesa offre:
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Seleziona **Suddividi per codice a barre/codice QR**.
+* **Non dividere i documenti caricati** – il valore predefinito; il documento viene elaborato come un unico file.
+* **Dividere per codice a barre/QR-Code** – il documento viene diviso a ogni codice a barre rilevato.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_splitting.png" alt=""><figcaption><p>Opzioni di divisione nella sezione «Divisione del documento»</p></figcaption></figure>
 
-Avrai quindi la possibilità di:
+Quando è selezionato **Dividere per codice a barre/QR-Code**, compaiono altri due campi:
 
-* Selezionare uno o più tipi di codice a barre da rilevare.
-*   Specificare un pattern regex a cui il codice a barre deve corrispondere per attivare la suddivisione del documento.
+* **Tipo di codice a barre** – uno o più tipi di codice a barre da rilevare, ad esempio *CODE-128* o *QR-CODE*.
+* **Modello di codice a barre** – un'espressione regolare a cui deve corrispondere il valore del codice a barre prima che la divisione venga attivata. Lascialo vuoto per dividere su qualsiasi codice a barre dei tipi selezionati. Il modello viene validato prima di essere salvato; un'espressione non valida viene segnalata immediatamente.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+Dopo una divisione riuscita il documento principale viene eliminato e le pagine proseguono come documenti separati che condividono lo stesso batch.
 
-## Formattazione degli importi
+### Elaborazione dei documenti
 
-Nella sezione **Formattazione degli importi** hai due opzioni:
+**Pagine da elaborare** limita quante pagine vengono elaborate con OCR, classificate ed estratte per documento.
 
-* **Consenti l'arrotondamento nel confronto degli importi:**\
-  Se abilitata, durante il confronto degli importi è ammessa una tolleranza di ±0,5.\
-  Se disabilitata, si applica una tolleranza predefinita di ±0,05.
-* **Richiedi corrispondenza esatta nel confronto degli importi:**\
-  Se abilitata, gli importi devono corrispondere esattamente, senza tolleranza.\
-  Se disabilitata, è ammessa una tolleranza di ±0,05.
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_processing.png" alt=""><figcaption><p>Pagine da elaborare nella sezione «Elaborazione dei documenti»</p></figcaption></figure>
 
-<mark style="color:red;">**Nota**</mark>: solo una di queste due impostazioni può essere attiva alla volta.
+* Vuoto o **0** significa che vengono elaborate tutte le pagine.
+* Un numero *N* limita OCR, classificazione ed estrazione alle prime *N* pagine. Il documento completo viene comunque memorizzato, visualizzato ed esportato; le pagine oltre il limite sono mostrate in sola lettura.
 
-## Estrazione delle tabelle
+### Formattazione degli importi
+
+Due interruttori controllano come gli importi vengono confrontati con i dati anagrafici e gli ordini di acquisto.
+
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_amount_formatting.png" alt=""><figcaption><p>Sezione «Formattazione degli importi»</p></figcaption></figure>
+
+* **Consenti l'arrotondamento durante il confronto degli importi** – se abilitato, è consentita una tolleranza di ±0,5. Se disabilitato, si applica ±0,05.
+* **Richiedi corrispondenza esatta per il confronto degli importi** – se abilitato, gli importi devono corrispondere esattamente, senza tolleranza. Se disabilitato, si applica ±0,05.
+
+Solo uno dei due interruttori può essere attivo alla volta; attivandone uno si disattiva l'altro.
+
+### Estrazione
 
 {% hint style="info" %}
-**Prerequisiti per un'estrazione delle tabelle funzionante**
+**Prerequisiti per un'estrazione della tabella funzionante**
 
-* Il tipo di documento ha delle **colonne della tabella** (Impostazioni → Impostazioni Globali → Tipi di Documento → [Colonne della Tabella](../../global-settings/document-types/table-columns/README.md)). Senza colonne non c'è nulla in cui estrarre i dati.
-* **Estrazione delle tabelle** o **Estrazione AI delle tabelle** è attivata qui sotto, per l'intera organizzazione.
-* Il documento ha testo leggibile: l'OCR è stato eseguito, oppure viene usato l'E-Text per i PDF nativi digitali ([Impostazioni OCR](../ocr-settings.md)).
-* L'addestramento e i modelli AI sono **per fornitore**. Una tabella addestrata vale solo per i documenti del fornitore su cui è stata addestrata.
+* Il tipo di documento ha **colonne della tabella** (Impostazioni → Impostazioni globali → Tipi di Documento → [Colonne della tabella](../../global-settings/document-types/table-columns/README.md)). Senza colonne non c'è nulla in cui estrarre.
+* **Estrazione della tabella** o **Estrazione della tabella AI** è attiva di seguito, per tutta l'organizzazione.
+* Il documento contiene testo leggibile: è stato eseguito l'OCR, oppure per i PDF digitali viene usato l'E-Text ([Impostazioni OCR](../ocr-settings.md)).
+* Addestramento e modelli AI sono **per fornitore**. Una tabella addestrata si applica solo ai documenti del fornitore su cui è stata addestrata.
 {% endhint %}
 
-Puoi estrarre le tabelle dai documenti abilitando **Estrazione delle tabelle** oppure **Estrazione AI delle tabelle**. Una tabella addestrata (sia basata sull'AI che manuale) è sempre collegata a un fornitore specifico.
+Puoi estrarre tabelle dai documenti attivando **Estrazione della tabella** o **Estrazione della tabella AI**. Una tabella addestrata (basata su AI o manuale) è sempre collegata a un fornitore specifico.
 
-**Estrazione delle tabelle:** attiva l'estrazione delle tabelle basata su regole. Le tabelle vengono addestrate per fornitore nella schermata di validazione (*Vai alla vista di estrazione delle tabelle*).\
-Maggiori informazioni sull'addestramento [qui](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_extraction.png" alt=""><figcaption><p>Interruttori dell'estrazione della tabella</p></figcaption></figure>
 
-**Estrazione AI delle tabelle:** usa l'AI per estrarre la tabella di qualsiasi fornitore senza addestramento. Se i risultati per un fornitore non sono abbastanza accurati, addestra la tabella di quel fornitore; le regole salvate hanno quindi la precedenza sull'AI per quel fornitore.
+**Estrazione della tabella:** Attiva l'estrazione della tabella basata su regole. Le tabelle vengono addestrate per fornitore nella schermata di validazione (*Go to table extraction view*).\
+Scopri di più sull'addestramento [qui](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
-**Usa Estrazione delle tabelle Vision (AI):** l'AI legge l'immagine della pagina invece del livello di testo. Aiuta con i documenti scansionati e con le tabelle prive di una chiara struttura testuale; è più lenta. Il menu a discesa accanto all'interruttore determina quanto intensamente viene utilizzata l'immagine della pagina:
+**Estrazione della tabella AI:** Usa l'AI per estrarre la tabella di qualsiasi fornitore senza addestramento. Se i risultati per un fornitore non sono abbastanza precisi, addestra la tabella di quel fornitore; le regole salvate hanno quindi la precedenza sull'AI per quel fornitore.
 
-* **Disattivato (solo testo)** – Viene utilizzato solo il livello di testo. È l'impostazione predefinita.
+**Utilizzare Table Extraction Vision (AI):** L'AI legge l'immagine della pagina invece del livello di testo. È utile con documenti scansionati e tabelle senza una chiara struttura di testo; è più lenta. Il menu a discesa accanto all'interruttore stabilisce con quale intensità viene usata l'immagine della pagina:
+
+* **Disattivato (solo testo)** – Viene usato solo il livello di testo. Questo è il valore predefinito.
 * **Solo immagini** – Viene letta solo l'immagine della pagina.
-* **Ibrido (testo e immagini)** – Il livello di testo e l'immagine della pagina vengono combinati nella stessa richiesta.
+* **Ibrido (testo e immagini)** – Livello di testo e immagine della pagina vengono combinati nella stessa richiesta.
 * **Auto (deciso per documento)** – DocBits decide per documento se il livello di testo è sufficiente.
 
-La modalità è memorizzata nella chiave di preferenza `TABLE_EXTRACTION_VISION_MODE`; il vecchio interruttore `TABLE_EXTRACTION_USE_VISION` rimane e significa di fatto *Solo immagini*.
+**Utilizzare l'estrazione strutturata (IA):** L'AI restituisce la tabella in una struttura fissa che viene mappata direttamente sulle colonne della tabella configurate. Consigliato quando le intestazioni di colonna variano molto tra i documenti. Facendo clic sull'impostazione si apre un'anteprima di quali campi e colonne l'AI richiederà esattamente: i campi di intestazione e le colonne di riga sono elencati con la loro origine (campi standard richiesti o disattivati), insieme alla modalità di output attesa (ad esempio *strict* – nessuna colonna aggiuntiva). I campi configurati per il tipo di documento ma disattivati non vengono richiesti all'AI.
 
-**Usa Estrazione strutturata (AI):** l'AI restituisce la tabella in una struttura fissa che corrisponde direttamente alle colonne della tabella configurate. Consigliata quando le intestazioni delle colonne sui documenti variano molto. Facendo clic sull'impostazione si apre un'anteprima dei campi e delle colonne che verranno esattamente richiesti all'AI: i campi di intestazione e le colonne di riga sono elencati con la loro origine (campi standard richiesti o disattivati), insieme alla modalità di output prevista (ad esempio *strict* – nessuna colonna aggiuntiva). I campi configurati per il tipo di documento ma disattivati non vengono richiesti all'AI.
+**Estrazione della tabella per l'elemento di costo:** Se abilitato, DocBits può estrarre elementi di costo dalle tabelle a livello di riga e classificarli di conseguenza.\
+Una spiegazione dettagliata è disponibile [qui](table-extraction-for-costing-element.md).
 
-**Estrazione della tabella per l'elemento di costo:** se abilitata, DocBits può estrarre gli elementi di costo dalle tabelle a livello di riga e classificarli di conseguenza.\
-Spiegazione dettagliata disponibile [qui](table-extraction-for-costing-element.md).
-
-**Estrazione automatica del codice fiscale:** se abilitata, il sistema compila automaticamente il campo **Codice fiscale** nella schermata di validazione, a condizione che sia configurato un campo per il codice fiscale.\
+**Estrazione automatica del codice fiscale:** Se abilitato, il sistema compila automaticamente il campo **Codice fiscale** nella schermata di validazione, a condizione che sia configurato un campo per il codice fiscale.\
 Maggiori informazioni su questa impostazione [qui](auto-extract-tax-code.md).
 
-**Salva regole di estrazione (solo Admin):** solo gli amministratori possono fare clic su *Salva regole* nell'addestramento della tabella. Attivala quando gli utenti continuano a salvare regole che compromettono l'estrazione di un fornitore.
+**Salva le regole di estrazione (solo amministratore):** Solo gli amministratori possono fare clic su *Save Rules* durante l'addestramento delle tabelle. Attiva questa opzione quando gli utenti salvano ripetutamente regole che compromettono l'estrazione di un fornitore.
 
-**Modello AI:** seleziona il livello AI usato per l'estrazione delle tabelle. Sono disponibili sei opzioni: **Full** (massima precisione, il più lento, 2 token per documento), **Fast** (predefinito; 1 token per documento), **Nexus** e **Nexus Flash** (famiglia di modelli alternativa, su attivazione), oltre a **Auto** e **Auto Nexus**, dove DocBits decide documento per documento quanto potente debba essere il modello. La tabella sotto il selettore mostra:
+**Estrai campi nascosti:** Vengono estratti anche i campi contrassegnati come nascosti nelle impostazioni dei campi. Utile quando un valore serve per una regola o un'esportazione ma non deve essere mostrato nella schermata di validazione.
 
-* Quali **fornitori** usano quale modello AI
-* Se usano l'estrazione strutturata (AI) e l'E-Text
-* Le opzioni per eliminare una voce e reimpostare così il fornitore al valore predefinito
+**Modello AI:** Seleziona il livello AI usato per l'estrazione della tabella. Sono disponibili sei opzioni: **Full** (massima precisione, il più lento, 2 token per documento), **Fast** (predefinito; 1 token per documento), **Nexus** e **Nexus Flash** (famiglia di modelli alternativa, opzionale), oltre a **Auto** e **Auto Nexus**, in cui DocBits decide per documento quanto deve essere potente il modello. La tabella sotto il selettore mostra:
+
+* quali **fornitori** usano quale modello AI
+* se usano l'estrazione strutturata (AI) e l'E-Text
+* opzioni per eliminare una voce e riportare così il fornitore al valore predefinito
 
 Questa impostazione è spiegata in dettaglio [qui](ai-model.md).
 
-### Perché la tabella appare diversa da fornitore a fornitore?
+#### Perché la tabella è diversa per fornitore?
 
 Tutto ciò che DocBits apprende su una tabella viene memorizzato **per fornitore**:
 
 * **Regole salvate** (addestramento della tabella): posizione della tabella e mappatura delle sue colonne sul layout di quel fornitore.
-* **Tag della tabella AI e regole di formattazione**: i suggerimenti che l'utente ha salvato per la tabella AI di quel fornitore.
-* **Modello AI specifico per fornitore**: il livello scelto per quel fornitore in *Altre impostazioni* nella schermata di validazione.
+* **Tag della tabella AI e regole di formattazione**: indicazioni che l'utente ha salvato per la tabella AI di quel fornitore.
+* **Modello AI specifico del fornitore**: il livello scelto per quel fornitore in *More settings* nella schermata di validazione.
 
-Quindi il fornitore A con regole salvate mostra una tabella deterministica nella scheda *Tabella estratta* della schermata di validazione, mentre il fornitore B senza regole riceve la *Tabella estratta dall'AI*. Per far comportare il fornitore B come A, addestra una volta la tabella di B. Per reimpostare un fornitore, elimina le sue regole nella schermata di validazione oppure reimposta i suoi dati di addestramento nella tabella del Modello AI.
+Il fornitore A con regole salvate mostra quindi una tabella deterministica nella scheda *Extracted table* della schermata di validazione, mentre il fornitore B senza regole riceve la *AI Extracted table*. Per far comportare il fornitore B come A, addestra una volta la tabella di B. Per reimpostare un fornitore, elimina le sue regole nella schermata di validazione o reimposta i suoi dati di addestramento nella tabella Modello AI.
 
-### Chiavi delle preferenze
+#### Chiavi di preferenza
 
-Ogni interruttore di questa sezione viene memorizzato come preferenza dell'organizzazione. Usa la chiave quando imposti il valore tramite l'API (`/preferences/set_preference`), uno script o il DocBits MCP (`get_preference` / `set_preference`).
+Ogni interruttore di questa sezione viene memorizzato come preferenza dell'organizzazione. Usa la chiave quando imposti il valore tramite l'API (`/preferences/set_preference`), uno script o il MCP di DocBits (`get_preference` / `set_preference`).
 
-| Impostazione (etichetta UI) | Chiave della preferenza | Valori |
+| Impostazione (etichetta UI) | Chiave di preferenza | Valori |
 |---|---|---|
-| Estrazione delle tabelle | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
-| Estrazione AI delle tabelle | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Usa Estrazione delle tabelle Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (predefinito), `vision`, `hybrid`, `auto` |
-| Usa Estrazione delle tabelle Vision (AI) – vecchio interruttore | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; significa di fatto `vision` |
-| Usa Estrazione strutturata (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Dividere | `SPLIT_DOCUMENT_ON_BARCODE` | `true` / `false` |
+| Tipo di codice a barre | `SPLIT_DOCUMENT_BARCODE_TYPE` | elenco di nomi dei tipi di codice a barre |
+| Modello di codice a barre | `SPLIT_DOCUMENT_BARCODE_PATTERN` | stringa regex |
+| Pagine da elaborare | `RESTRICT_TO_PAGES` | numero; vuoto o `0` = tutte le pagine |
+| Consenti l'arrotondamento durante il confronto degli importi | `AMOUNTS_ROUNDING` | `true` / `false` |
+| Richiedi corrispondenza esatta per il confronto degli importi | `AMOUNTS_NO_ROUNDING` | `true` / `false` |
+| Estrazione della tabella | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| Estrazione della tabella AI | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Utilizzare Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (predefinito), `vision`, `hybrid`, `auto` |
+| Utilizzare Table Extraction Vision (AI) – vecchio interruttore | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; equivale a `vision` |
+| Utilizzare l'estrazione strutturata (IA) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Estrazione della tabella per l'elemento di costo | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Estrazione automatica del codice fiscale | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
-| Salva regole di estrazione (solo Admin) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Salva le regole di estrazione (solo amministratore) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Estrai campi nascosti | `EXTRACT_HIDDEN_FIELDS` | `true` / `false` |
 | Modello AI | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
-| Versione dell'estrazione delle tabelle (finestra di conferma) | `TBL_EXT_VERSION` | stringa di versione |
+| Versione dell'estrazione della tabella (finestra di conferma) | `TBL_EXT_VERSION` | stringa di versione |
 | Impostazioni OCR → Usa i dati AI per le tabelle se disponibili | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | Impostazioni OCR → Usa E-Text se disponibile | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Note:
 
 * Le preferenze booleane vengono memorizzate come stringhe `true` / `false`; una chiave mai impostata vale `false`. Se invii `1` o `0`, DocBits memorizza `true` / `false`.
-* `AI_MODEL` non impostato significa **Fast**.
-* Un `TABLE_EXTRACTION_VISION_MODE` non impostato viene dedotto dal vecchio interruttore `TABLE_EXTRACTION_USE_VISION`: `true` dà `vision`, qualunque altro valore dà `off`.
-* La modifica di una chiave ha effetto sui documenti elaborati in seguito. Riavvia un documento per estrarlo di nuovo con la nuova impostazione.
-* Le scelte per fornitore (E-Text, modello AI, regole salvate) non sono preferenze dell'organizzazione; si impostano nella schermata di validazione in *Altre impostazioni* su un documento di quel fornitore.
+* Un `AI_MODEL` non impostato significa **Fast**.
+* Un `TABLE_EXTRACTION_VISION_MODE` non impostato viene ricavato dal vecchio interruttore `TABLE_EXTRACTION_USE_VISION`: `true` dà `vision`, qualsiasi altro valore dà `off`.
+* La modifica di una chiave ha effetto per i documenti elaborati successivamente. Riavvia un documento per riestrarlo con la nuova impostazione.
+* Le scelte per fornitore (E-Text, modello AI, regole salvate) non sono preferenze dell'organizzazione; si impostano nella schermata di validazione sotto *More settings* per un documento di quel fornitore.
 
-## Documento elettronico
+### Documento elettronico
 
-**Elabora PDF ZUGFeRD non supportati:** se abilitata, le versioni **ZUGFeRD** non supportate vengono elaborate come PDF standard e l'XML incorporato viene ignorato.
+**Elaborazione di ZUGFeRD PDF non supportati:** Se abilitato, le versioni **ZUGFeRD** non supportate vengono elaborate come PDF standard e l'XML incorporato viene ignorato.
 
 L'elenco delle versioni **ZUGFeRD** supportate è disponibile [qui](../../global-settings/document-types/edi/zugferd/README.md).
 
-## **Regole di classificazione**
+## Regole di classificazione
 
-Nella sezione **Regole di classificazione** puoi definire pattern **regex** e criteri specifici per aiutare il sistema a classificare automaticamente i documenti durante l'elaborazione.
+La scheda **Regole di classificazione** elenca le regole che assegnano automaticamente un tipo di documento durante l'elaborazione. Ogni regola confronta un **modello regex** con il nome della fonte del documento e, in caso di corrispondenza, imposta il tipo di documento e facoltativamente un tipo di documento secondario.
 
-Per accedere a questa sezione, fai clic sulla scheda **Regole di classificazione** in cima alla pagina.
+Passa alla scheda facendo clic su **Regole di classificazione** nella parte superiore della pagina.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules.png" alt=""><figcaption><p>Scheda «Regole di classificazione» con la tabella delle regole</p></figcaption></figure>
 
-### **Aggiungere una nuova regola di classificazione**
+La tabella ha una riga per regola con queste colonne:
 
-Per creare una nuova regola:
+* **Tipo** – dove viene applicato il modello. Esistono due tipi: **Codice a barre** ed **E-mail**.
+* **Modello** – l'espressione regolare memorizzata per la regola.
+* **Tipo di documento** – il tipo di documento assegnato quando il modello corrisponde.
+* **Tipo di documento secondario** – il tipo di documento secondario assegnato quando il modello corrisponde.
+* **Organizzazione secondaria** – l'organizzazione secondaria a cui è limitata la regola. Vuoto significa che la regola vale per tutte le organizzazioni secondarie.
+* **Azioni** – il menu di riga con *Modifica* e *Cancellare*.
 
-1.  Fai clic su **Aggiungi** in alto a destra.
+Il campo di ricerca sopra la tabella filtra tutte le colonne, compresi i testi visualizzati delle colonne a discesa.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
-2. Compila i seguenti campi:
-   * **Pattern**: il pattern regex che il sistema deve cercare per attivare la classificazione.
-   * **Tipo**: dove cercare il pattern (ad esempio **Codice a barre**).
-   * **Sotto-organizzazione** _(facoltativo)_: specifica a quale sotto-organizzazione si applica la regola.
-   * **Tipo di documento**: definisce il tipo di documento da assegnare quando il pattern corrisponde.
-   *   **Sottotipo di documento** _(facoltativo)_: specifica un sottotipo per una classificazione più dettagliata.
+### Aggiungere una regola di classificazione
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
-3.  Fai clic su **Salva** per salvare la regola di classificazione.
+1.  Fai clic su **Aggiungi** sopra la tabella.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_add.png" alt=""><figcaption><p>Finestra «Configurazione della regola di classificazione»</p></figcaption></figure>
+2. Compila i campi:
+   * **Modello** (obbligatorio) – l'espressione regolare cercata dalla regola.
+   * **Tipo** (obbligatorio) – **Codice a barre** o **E-mail**. Questo decide a quale nome della fonte viene confrontato il modello.
+   * **Organizzazione secondaria** *(facoltativo)* – limita la regola a un'organizzazione secondaria.
+   * **Tipo di documento** – il tipo di documento assegnato quando il modello corrisponde.
+   * **Tipo di documento secondario** *(facoltativo)* – un tipo più specifico; l'elenco dipende dal tipo di documento selezionato. Cambiando il tipo di documento si azzera il tipo di documento secondario.
+3.  Fai clic su **Salva**.
 
-### **Modificare una regola di classificazione**
+La finestra valida il modello prima del salvataggio. Un modello già usato da un'altra regola viene rifiutato con *Il modello esiste già*; un modello vuoto viene rifiutato con il messaggio del campo obbligatorio.
 
-Per modificare una regola esistente:
+#### Aiuto sul modello
 
-1.  Fai clic sui tre punti nella colonna **Azioni**.
+L'interruttore **Mostra aiuto** sotto il campo del modello apre un riferimento in linea con i formati del nome della fonte a cui viene confrontato il modello:
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Seleziona **Modifica**.
+* **O365** – `Email condivisa + Cartella › Email condivisa › Cartella › Email › ID`
+* **Gmail** – `Email + Cartella › Cartella › Email › ID`
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
-3. Apporta le modifiche desiderate.
-4.  Fai clic su **Salva** per applicare gli aggiornamenti.
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_pattern_help.png" alt=""><figcaption><p>Pannello di aiuto sul modello nella finestra della regola</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+Esempi nel pannello:
 
-### **Eliminare una regola di classificazione**
+* `.*@acme\.de.*` – qualsiasi fonte da quella casella di posta
+* `^ap@acme\.de:.*` – una casella di posta specifica, qualsiasi cartella
 
-Per eliminare una regola:
+Suggerimento: usa `^` / `$` come ancoraggio per corrispondenze esatte, esegui l'escape dei punti come `\.` e usa `:` come separatore di campo. Vince il primo insieme di campi presente nel nome della fonte.
 
-1.  Fai clic sui tre punti nella colonna **Azioni**.
+Se usi il tipo **E-mail**, il modello viene confrontato con i nomi della casella di posta e della cartella del messaggio importato, non con il contenuto del documento.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Seleziona **Elimina**.
+### Modificare una regola di classificazione
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+1.  Fai clic sui tre punti nella colonna **Azioni** della regola che vuoi modificare.
+
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_row_menu.png" alt=""><figcaption><p>Menu di riga con Modifica e Cancellare</p></figcaption></figure>
+2.  Seleziona **Modifica**. La finestra si apre con i valori attuali della regola.
+
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_edit.png" alt=""><figcaption><p>Modifica di una regola di classificazione esistente</p></figcaption></figure>
+3. Apporta le modifiche a modello, tipo, organizzazione secondaria, tipo di documento o tipo di documento secondario.
+4.  Fai clic su **Salva**.
+
+Vale la stessa validazione dell'aggiunta: il modello non deve essere vuoto e non deve duplicare quello di un'altra regola.
+
+### Eliminare una regola di classificazione
+
+1. Fai clic sui tre punti nella colonna **Azioni**.
+2. Seleziona **Cancellare**.
+
+La regola viene rimossa immediatamente dall'elenco. L'eliminazione di una regola non modifica i documenti già classificati con essa.
 
 ## Modelli AI
 
-La sezione **Modelli AI** mostra tutti i modelli addestrati su misura che sono stati ottimizzati specificamente per le tue esigenze.
+La scheda **Modelli AI** mostra i modelli addestrati su misura disponibili per la classificazione dei documenti e le loro etichette. Compare solo quando il modulo per modelli ed etichette è abilitato per la tua organizzazione.
 
-### Accedere alla sezione Modelli AI
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_ai_models.png" alt=""><figcaption><p>Scheda «Modelli AI»</p></figcaption></figure>
 
-Per aprire questa sezione, fai clic sulla scheda **Modelli AI** in cima alla pagina.
+Se per l'organizzazione non è disponibile alcun modello proprio, la scheda mostra *Nessun record trovato!*.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+### Modelli
 
-### Categorie di modelli
+Ogni modello è una voce espandibile con:
 
-I modelli sono organizzati in categorie. Sotto il nome di ogni categoria è indicato il numero di modelli che contiene.\
-Fai clic su una categoria per vederne i dettagli.
+* il **nome del modello** e il badge **Predefinito** sul modello usato quando non si applica nulla d'altro.
+* il numero di **etichette** addestrate per quel modello.
+* per modello, una volta espanso: **Tipo**, **Solo la prima pagina** e **Versione**.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+Sotto queste informazioni sono elencate le etichette del modello.
 
-In cima alla pagina della categoria selezionata trovi le informazioni principali su ogni modello:
+### Etichette
 
-* **Tipo**: il tipo di modello.
-* **Solo prima pagina**: indica se il modello elabora solo la prima pagina di un documento.
-* **Versione**: il numero di versione del modello.
+Le etichette sono ciò che il modello impara. Ogni etichetta associa un modello riconosciuto dal modello a un tipo di documento.
 
-### Tabella dei modelli
+* **Nome** – il nome dell'etichetta.
+* **Modello successivo** – un modello che continua l'elaborazione dell'output di questa etichetta.
+* **TIPO DI DOC** – il tipo di documento assegnato dall'etichetta.
+* **Tipo di documento secondario** – un tipo più specifico per l'etichetta.
+* **Priorità** – l'ordine in cui vengono valutate le etichette; prima i numeri più bassi.
 
-Tutti i modelli di una categoria sono elencati in una tabella che include le seguenti informazioni:
+Il campo di ricerca sopra la tabella delle etichette filtra le etichette del modello selezionato.
 
-* **Nome**: il nome del modello.
-* **Modello successivo**: il modello che elaborerà ulteriormente l'output del modello corrente.
-* **Tipo di documento**: il tipo di documento principale assegnato dal modello durante la classificazione.
-* **Sottotipi di documento**: i sottotipi in cui il documento viene ulteriormente classificato.
-* **Priorità**: il livello di priorità che determina la posizione del modello nella coda di classificazione.
+### Modificare un'etichetta
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+Fai clic sull'icona a matita di una riga di etichetta per aprire la finestra di modifica. Offre **Modello successivo** e **Tipo di documento**; imposta uno dei due, perché la finestra richiede un modello successivo o un tipo di documento. Fai clic su **Salva** per applicare la modifica.
 
-### Modificare un modello
+## Pagine correlate
 
-Per modificare un modello:
-
-1.  Fai clic sull'icona a forma di penna nella colonna **Azioni** accanto al modello che vuoi modificare.
-
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
-2. Aggiorna i campi disponibili:
-   * **Modello successivo**: seleziona il modello che deve elaborare l'output del modello corrente.
-   * **Tipo di documento**: scegli il tipo di documento con cui il modello deve classificare l'input.
-3.  Fai clic su **Salva** per applicare le modifiche.
-
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+* [Modello AI](ai-model.md) – i sei livelli di estrazione e come un fornitore ottiene il proprio modello
+* [Estrazione automatica del codice fiscale](auto-extract-tax-code.md)
+* [Estrazione della tabella per l'elemento di costo](table-extraction-for-costing-element.md)
+* [Impostazioni OCR](../ocr-settings.md)

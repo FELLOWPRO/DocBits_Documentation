@@ -1,4 +1,4 @@
-# Adding/Editing Groups
+# Groepen toevoegen en bewerken
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
 DocBits Admin Guide: Managing Users, Groups & Permissions (Full Walkthrough)

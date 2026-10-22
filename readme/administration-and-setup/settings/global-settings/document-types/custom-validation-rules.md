@@ -32,10 +32,10 @@ Regels worden per **documenttype** gedefinieerd en worden uitgevoerd op elk docu
 
 Aangepaste validatieregels worden **per documenttype** ingeschakeld. Er is geen schakelaar voor de hele organisatie.
 
-1. Ga naar **Settings → Global Settings → Document Types**.
+1. Ga naar **Instellingen → Algemene instellingen → Documenttypen**.
 2. Klik op de kaart van het documenttype op het **instellingen**-pictogram (tandwiel).
 3. Open het gedeelte **Aangepaste validatieregels** en zet de schakelaar aan.
-4. Klik op **Manage validation rules** om de regellijst te openen.
+4. Klik op **Validatieregels beheren** om de regellijst te openen.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="De regelschakelaars in de aanvullende instellingen van een documenttype"><figcaption><p>De schakelaars voor Manage Layouts, Custom Validation Rules en Transformation Rules</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Vanaf nu toont de kaart van het documenttype ook een link **Validatieregels**.
 
 ## De regellijst
 
-**Document Types → (documenttype) → Validation Rules** toont alle regels van het documenttype.
+**Documenttypen → (documenttype) → Validatieregels** toont alle regels van het documenttype.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-nl.png" alt="Beheer van validatieregels met afgeschermde geconfigureerde namen. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig."><figcaption><p>Beheer van validatieregels met afgeschermde geconfigureerde namen. Relatieve datumaanduidingen blijven in deze productweergave Duitstalig.</p></figcaption></figure>
 

@@ -1,4 +1,4 @@
-# Integration & SSO
+# Integratie en SSO
 
 <figure><img src="../../../../.gitbook/assets/prior-t010-nl.png" alt="Configuratie van integratie en SSO-providers. De sectie identiteitsbewijs bevat organisatie-ID’s; het gaat niet om een identiteitsdocument."><figcaption><p>Configuratie van integratie en SSO-providers. De sectie identiteitsbewijs bevat organisatie-ID’s; het gaat niet om een identiteitsdocument.</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Configureer uw externe Identity Provider (IdP):
 | **Tenant-ID** | De tenant-ID van uw IdP. |
 | **Bestand uploaden** | Upload het XML-metadatabestand van uw IdP. |
 
-Klik op **Configure** om uw IdP-instellingen op te slaan.
+Klik op **Configureren** om uw IdP-instellingen op te slaan.
 
 * **Verhoogde efficiëntie:** Integratie met andere tools en diensten kan workflows stroomlijnen en de efficiëntie verhogen. Documenten kunnen bijvoorbeeld automatisch worden uitgewisseld tussen Docbits en een CRM-systeem, waardoor handmatige invoer wordt verminderd en de productiviteit toeneemt.
 * **Gegevensconsistentie:** Integratie maakt het mogelijk om gegevens naadloos uit te wisselen tussen verschillende systemen, wat de gegevensconsistentie en nauwkeurigheid verbetert. Dit voorkomt inconsistenties of dubbele gegevensinvoer die tot fouten kunnen leiden.

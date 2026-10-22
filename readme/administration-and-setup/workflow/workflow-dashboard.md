@@ -14,11 +14,11 @@ Het **Workflow-dashboard** is het startpunt van het workflowgedeelte. Het laat z
 
 De werkbalk biedt ook **Sjablonen**, waarmee de bibliotheek [Workflow Templates](standard-workflow-builder.md#workflow-templates) wordt geopend, en **Workflow importeren**, waarmee u een workflow uit een JSON-bestand importeert.
 
-Met de **Test Manager** kunt u per workflow testscenario's opslaan en gezamenlijk uitvoeren, zodat u kunt bevestigen dat uw workflows na wijzigingen nog steeds correct werken:
+Met de **Testbeheer** kunt u per workflow testscenario's opslaan en gezamenlijk uitvoeren, zodat u kunt bevestigen dat uw workflows na wijzigingen nog steeds correct werken:
 
 <figure><img src="../../.gitbook/assets/prior-u032-nl.png" alt="Lijst met workflowtestscenario&#x27;s."><figcaption><p>Lijst met workflowtestscenario&#x27;s.</p></figcaption></figure>
 
 ## Volgende stappen
 
-- Bouw een lineaire automatisering met de **Standard Workflow**-builder.
+- Bouw een lineaire automatisering met de **Standaardworkflow**-builder.
 - Bouw een vertakkende flow met de **Geavanceerde workflow**-builder.

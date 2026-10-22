@@ -3233,5 +3233,6 @@
       "sha256": "6bb88162f88ceee46be8e2e1412137d18ff6b699f88a8f687629849c57023673",
       "caption": "Dashboardfilters voor toewijzing en vereiste herstart."
     }
-  ]
+  ],
+  "additional_native_image_reuses": 2
 }

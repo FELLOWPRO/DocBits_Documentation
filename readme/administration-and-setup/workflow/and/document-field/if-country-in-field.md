@@ -2,7 +2,11 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
-Gebruik deze voorwaarde wanneer een extra verwerkingsstap moet afhangen van een landengroep. Het voorbeeld controleert of het land uit een documentveld tot de Europese Unie behoort.
+Beoogd gebruik: een extra verwerkingsstap hangt af van een landengroep. Het onderstaande voorbeeld beschrijft een regel voor lidmaatschap van de Europese Unie.
+
+## Huidige beperking — broncode gecontroleerd op 22 oktober 2026
+
+Lokale broncodetests met het oorspronkelijke type van de regioselectie mislukken vóór de landenvergelijking en geven `missing_variable` of `error`. Volledige landnamen omzeilen dit probleem niet. Een geslaagde uitvoering op de uitgerolde backend is voor deze versie niet bevestigd.
 
 **Locatie:** Standaardworkflow → aanvullende voorwaarden (AND) → Documentveld. Stel de volgende actie afzonderlijk in onder THEN.
 
@@ -17,12 +21,14 @@ Gebruik deze voorwaarde wanneer een extra verwerkingsstap moet afhangen van een 
 
 <!-- workflow-card-practical-example-20261021 -->
 
-## Praktisch voorbeeld
+## Beoogd voorbeeld — controleer de oplossing vóór gebruik
 
-| Landwaarde in het veld | Verwachte voorwaarde |
+Controleer de oplossing en beide voorbeeldgevallen in uw geïnstalleerde versie voordat u deze regel activeert. De tabel beschrijft de beoogde bedrijfsregel, geen bevestigde geslaagde uitvoering.
+
+| Landwaarde in het veld | Beoogde landenindeling |
 | --- | --- |
-| `Germany` | Vervuld |
-| `United States` | Niet vervuld |
+| `Germany` | Binnen de EU |
+| `United States` | Buiten de EU |
 
 De landnamen in codeopmaak zijn vaste invoerwaarden voor dit voorbeeld.
 
@@ -32,6 +38,6 @@ De landnamen in codeopmaak zijn vaste invoerwaarden voor dit voorbeeld.
 
 Behandel ontbrekende velden en lege landwaarden afzonderlijk; ze kunnen een resultaat voor ontbrekende gegevens geven in plaats van een gewone niet-overeenkomst.
 
-Controle van de broncode van de ontwikkelversie van 22 oktober 2026 toont een conversiefout voor ISO-invoer zoals `DE` en `DEU`. Deze voorbeelden gebruiken daarom volledige landnamen. Controleer de verwerking van ISO-codes afzonderlijk in uw geïnstalleerde versie.
+Het ISO-conversieprobleem bij invoer zoals `DE` en `DEU` staat hier los van. ISO-codes vervangen door volledige landnamen verhelpt de fout in de regioselectie niet.
 
 De aangeboden groepen, waaronder EU, Schengen en NAFTA, komen uit de kaartimplementatie. Controleer welke landen uw versie bevat voordat u een groep in een bedrijfsregel gebruikt.

@@ -1,5 +1,13 @@
 # Schermo di validazione
 
+## Correggere e salvare una fattura come revisora
+
+Confronta la fattura originale con i campi e le tre righe, correggi il numero, salva e ricarica per verificare il valore memorizzato. Il video usa una fattura elettronica sintetica e un normale account di revisione. Salvare questa correzione è distinto dall’addestramento dell’estrazione, dall’approvazione e dall’esportazione.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/it.mp4" %}
+
+[Guarda con i sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/it.html)
+
 ## Controllare una fattura e completare la verifica
 
 Segui una fattura dalla dashboard al passaggio successivo: confronta fornitore, date, numero, importi e valuta con l’originale e leggi un avviso relativo a un campo obbligatorio. Seleziona il numero direttamente nel documento, conferma l’associazione e conserva la regola di estrazione con **Save Rules**. In questo esempio, la fattura verificata viene poi inoltrata per approvazione. Le azioni disponibili dipendono dai tuoi permessi e dal processo aziendale.

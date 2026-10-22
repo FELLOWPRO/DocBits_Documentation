@@ -49,13 +49,3 @@ Die Workflow-Karte "DocField Comparison Validation" ist ein robustes Werkzeug f�
 **Erwartetes Ergebnis und Gegenbeispiel:** Ein Wert von `1200` erfüllt die Bedingung. `1000` und `900` erfüllen sie nicht. „Größer als“ schließt den Grenzwert `1000` selbst aus.
 
 Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
-
-## Admin-Beispielvideo
-
-Administrator, Büro und Stimme sind synthetisch erzeugt. Die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos. Die Rechnungsergebnisse sind erwartete Beispiele; es wurde kein Workflow ausgeführt.
-
-{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v1/de.mp4" %}
-
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v1/de.html)
-
-[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v1/de.txt)

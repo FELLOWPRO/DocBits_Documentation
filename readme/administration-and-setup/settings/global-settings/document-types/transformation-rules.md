@@ -113,7 +113,7 @@ Le regole **Righe della tabella** usano due passaggi diversi, che lavorano sulle
 | Passaggio | Effetto |
 | --- | --- |
 | **Cancella tutte le righe** | elimina ogni riga estratta. Le righe aggiunte da un passaggio successivo restano. |
-| **Add a row** | aggiunge una riga **dopo l'ultima riga** o **prima della prima riga**. Per ogni colonna scegli **Valore** (un valore fisso) o **Campo** (il valore di un campo dell'intestazione). Le colonne che non indichi restano vuote. |
+| **Aggiungere una riga** | aggiunge una riga **dopo l'ultima riga** o **prima della prima riga**. Per ogni colonna scegli **Valore** (un valore fisso) o **Campo** (il valore di un campo dell'intestazione). Le colonne che non indichi restano vuote. |
 
 {% hint style="info" %}
 **Riformatta la data** si aspetta la data così come DocBits la memorizza internamente (`YYYY-MM-DD`). Applicalo al campo stesso, non a un testo che contiene già una data formattata.
@@ -148,7 +148,7 @@ Righe della tabella **INVOICE_TABLE** · solo quando *Supplier ID is HP0000278* 
 
 <figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-it.png" alt="Passaggio di trasformazione non salvato per aggiungere una riga alla tabella. L’etichetta Applicato al tavolo si riferisce a una tabella di dati."><figcaption><p>Passaggio di trasformazione non salvato per aggiungere una riga alla tabella. L’etichetta Applicato al tavolo si riferisce a una tabella di dati.</p></figcaption></figure>
 
-L'ordine conta: **Cancella tutte le righe** deve venire **prima** di **Add a row**. Il generatore ti avvisa se non è così ("Clear all rows runs after Add a row …") e ti avvisa anche se un passaggio **Add a row** non è preceduto da **Cancella tutte le righe**, perché la regola aggiungerebbe un'altra copia della riga a ogni salvataggio. Abbina questa regola a una regola di matching degli ordini di acquisto sul totale, attiva per i documenti a riga singola.
+L'ordine conta: **Cancella tutte le righe** deve venire **prima** di **Aggiungere una riga**. Il generatore ti avvisa se non è così ("Clear all rows runs after Add a row …") e ti avvisa anche se un passaggio **Aggiungere una riga** non è preceduto da **Cancella tutte le righe**, perché la regola aggiungerebbe un'altra copia della riga a ogni salvataggio. Abbina questa regola a una regola di matching degli ordini di acquisto sul totale, attiva per i documenti a riga singola.
 
 ### Compilare il numero ordine dal campo del numero fattura
 
@@ -204,7 +204,7 @@ La maggior parte dei passaggi dà lo stesso risultato quando viene eseguita sul 
 **Estrai una porzione**, **Estrarre** e **Trova e sostituisci** sono diversi: eseguiti di nuovo sul proprio risultato, continuano a modificarlo (uno slice prende i primi quattro caratteri dei primi quattro caratteri …). DocBits quindi non ti permette di salvare una regola che applica questi passaggi al proprio campo bersaglio. Hai due possibilità:
 
 * attivare **Eseguire una sola volta per documento**, oppure
-* **Read from another field**, in modo che l'input resti invariato.
+* **Leggere da un altro campo**, in modo che l'input resti invariato.
 
 ## Regole di trasformazione e matching degli ordini di acquisto
 
@@ -225,7 +225,7 @@ Le regole di tabella e di colonna modificano ciò che vede il matcher PO:
 
 ## Log
 
-Con **Registra l’esecuzione** (Log execution) attivo, ogni applicazione della regola viene scritta in **Tipi di Documento → (tipo di documento) → Logs**, con l'esito (applicata, nessuna modifica, saltata), il documento e — per le regole saltate — la traccia della condizione che ne spiega il motivo. Vedi [Leggere la traccia della condizione nei log](rule-conditions-applies-when.md#leggere-la-traccia-della-condizione-nei-log).
+Con **Registra l’esecuzione** (Log execution) attivo, ogni applicazione della regola viene scritta in **Tipi di Documento → (tipo di documento) → Registri**, con l'esito (applicata, nessuna modifica, saltata), il documento e — per le regole saltate — la traccia della condizione che ne spiega il motivo. Vedi [Leggere la traccia della condizione nei log](rule-conditions-applies-when.md#leggere-la-traccia-della-condizione-nei-log).
 
 ## Best practice
 
@@ -242,7 +242,7 @@ Con **Registra l’esecuzione** (Log execution) attivo, ogni applicazione della 
 | --- | --- |
 | La regola non ha cambiato nulla | È attiva e la funzione è abilitata per il tipo di documento? La condizione è vera per questo documento (valore esatto, compresi spazi e maiuscole/minuscole)? Una regola a **esecuzione singola** è già stata applicata al documento? Controlla la traccia nel log. |
 | Il valore cambia di nuovo a ogni salvataggio | La pipeline contiene Take a slice, Extract o Find & replace. Attiva **Eseguire una sola volta per documento**, oppure leggi da un altro campo. |
-| Una tabella ottiene una riga in più a ogni salvataggio | Un passaggio **Add a row** senza **Cancella tutte le righe** prima. Aggiungi prima il passaggio di cancellazione, oppure attiva l'esecuzione singola. |
+| Una tabella ottiene una riga in più a ogni salvataggio | Un passaggio **Aggiungere una riga** senza **Cancella tutte le righe** prima. Aggiungi prima il passaggio di cancellazione, oppure attiva l'esecuzione singola. |
 | L'abbinamento dell'ordine di acquisto si perde dopo il salvataggio | Una regola di tabella ha sostituito le righe abbinate. Il motivo nel documento indica la regola; fai in modo che la regola riproduca le stesse righe, oppure impostala sull'esecuzione singola. |
 | Una regola di matching non viene mai eseguita dopo la trasformazione | La regola ha cambiato il numero di righe; modifica la condizione di attivazione della regola di matching. |
 | La regola ha bisogno di un valore dei dati anagrafici del fornitore, ma è ancora vuoto | Attiva **Run after lookup population (before PO match)**. |

@@ -1,8 +1,8 @@
-# Test Manager
+# Gestione dei test
 
-Il **Test Manager** ti consente di salvare **scenari di test** riutilizzabili per i tuoi workflow ed eseguirli insieme, così puoi verificare che un workflow continui a comportarsi correttamente dopo averlo modificato. Funziona sia per i workflow Standard sia per quelli Avanzati.
+Il **Gestione dei test** ti consente di salvare **scenari di test** riutilizzabili per i tuoi workflow ed eseguirli insieme, così puoi verificare che un workflow continui a comportarsi correttamente dopo averlo modificato. Funziona sia per i workflow Standard sia per quelli Avanzati.
 
-Aprilo da **Workflow Dashboard → Test Manager List**.
+Aprilo da **Dashboard dei flussi → Elenco dei test**.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Test Manager List con scenari di test, stato e Run All Tests"><figcaption><p>La Test Manager List: ogni scenario salvato mostra un esito superato/fallito.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ La vista dei dettagli mostra il nome dello scenario e lo **stato**, il **nome de
 
 Sono due cose diverse:
 
-- **Test Manager** (questa pagina) — scenari *salvati e ripetibili* con risultati attesi, eseguiti insieme con **Esegui tutti i test**. Usalo per i test di regressione dopo le modifiche.
+- **Gestione dei test** (questa pagina) — scenari *salvati e ripetibili* con risultati attesi, eseguiti insieme con **Esegui tutti i test**. Usalo per i test di regressione dopo le modifiche.
 - **Testing nel builder** — i controlli inline **Convalidare** e **Test** all'interno del builder dei Workflow Avanzati, per verifiche rapide mentre stai costruendo. Vedi [Validazione e Testing](advanced-workflow/validation-and-testing.md).

@@ -1,0 +1,18 @@
+[
+  {
+    "case": "S034",
+    "source_capture_id": "U044",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/italian/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u044-it.png",
+    "caption": "Accesso alle impostazioni aggiuntive del tipo di documento Fattura. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."
+  },
+  {
+    "case": "S034",
+    "source_capture_id": "U045",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/italian/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u045-it.png",
+    "caption": "Impostazioni dello stato delle righe di ordine già utilizzate."
+  }
+]

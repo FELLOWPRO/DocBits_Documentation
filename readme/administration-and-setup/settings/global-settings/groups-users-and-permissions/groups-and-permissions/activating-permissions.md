@@ -20,7 +20,7 @@ Abilitare o disabilitare il sistema di permessi utilizzando l'interruttore ha va
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-it.png" alt="Livelli di accesso per azione nella matrice delle autorizzazioni. I livelli Owner, Everyone e No Access restano in inglese."><figcaption><p>Livelli di accesso per azione nella matrice delle autorizzazioni. I livelli Owner, Everyone e No Access restano in inglese.</p></figcaption></figure>
 
-L'interruttore **Only Assigned Documents** controlla la visibilità dei documenti per gli utenti in base alle loro assegnazioni ai gruppi. Quando è attivo, gli utenti possono vedere solo i documenti assegnati specificamente a loro o a un gruppo di cui fanno parte. Quando è disattivo, gli utenti con il permesso di visualizzazione appropriato possono vedere tutti i documenti, indipendentemente dall'assegnazione.
+L'interruttore **Solo i documenti assegnati** controlla la visibilità dei documenti per gli utenti in base alle loro assegnazioni ai gruppi. Quando è attivo, gli utenti possono vedere solo i documenti assegnati specificamente a loro o a un gruppo di cui fanno parte. Quando è disattivo, gli utenti con il permesso di visualizzazione appropriato possono vedere tutti i documenti, indipendentemente dall'assegnazione.
 
 #### Funzionamento
 

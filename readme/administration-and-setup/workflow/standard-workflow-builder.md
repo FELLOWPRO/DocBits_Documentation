@@ -1,6 +1,6 @@
-# Standard Workflow
+# Flusso standard
 
-Il builder **Standard Workflow** è l'editor lineare basato su schede per automatizzare l'elaborazione dei documenti. Un workflow è composto da tre gruppi di schede — **Quando** (il trigger), **E** (condizioni aggiuntive) e **Allora** (le azioni da eseguire). Quando un documento soddisfa le condizioni When/And, le azioni Then vengono eseguite automaticamente.
+Il builder **Flusso standard** è l'editor lineare basato su schede per automatizzare l'elaborazione dei documenti. Un workflow è composto da tre gruppi di schede — **Quando** (il trigger), **E** (condizioni aggiuntive) e **Allora** (le azioni da eseguire). Quando un documento soddisfa le condizioni When/And, le azioni Then vengono eseguite automaticamente.
 
 ## Creare e testare uno Standard Workflow <a id="standard-workflow-tutorial"></a>
 
@@ -95,7 +95,7 @@ Nell’elenco attivo la regola testata e controllo che l’interruttore sia acce
 
 ## Come accedere
 
-Apri **Workflow Dashboard → Workflow List**, quindi clicca su **Aggiungi flusso di lavoro** per creare un nuovo workflow Standard, oppure clicca su un workflow esistente per modificarlo.
+Apri **Dashboard dei flussi → Elenco dei flussi**, quindi clicca su **Aggiungi flusso di lavoro** per creare un nuovo workflow Standard, oppure clicca su un workflow esistente per modificarlo.
 
 <figure><img src="../../.gitbook/assets/prior-u033-it.png" alt="Elenco dei workflow e comandi di importazione."><figcaption><p>Elenco dei workflow e comandi di importazione.</p></figcaption></figure>
 
@@ -118,5 +118,5 @@ Salva con **Salva flusso di lavoro**, oppure salva il layout come template riuti
 ## Prossimi passi
 
 - Scopri cosa fa ogni scheda nella sezione **Schede**.
-- Combina le schede in soluzioni collaudate con le **Workflow Pattern Guides**.
+- Combina le schede in soluzioni collaudate con le **Guide ai modelli di flusso**.
 - Per flussi con ramificazioni e percorsi paralleli (Wait ALL / Wait ANY / OR), usa il builder **Flusso di lavoro avanzato**.

@@ -1,4 +1,4 @@
-# Origin Layouts
+# Layout per origine
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
 Impostazione Origin di DocBits spiegata: Standard nazionali per formati di data e numero

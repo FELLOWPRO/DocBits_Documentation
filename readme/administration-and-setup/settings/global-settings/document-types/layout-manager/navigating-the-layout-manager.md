@@ -4,8 +4,8 @@ Usa il **Costruttore di layout** per disporre i campi e i gruppi che gli utenti 
 
 ## Aprire il layout Invoice
 
-1. Vai su **Settings → Document Types**.
-2. Trova **Fattura** e seleziona **Layout** nella sua scheda. Il Layout Builder si apre per quel tipo di documento.
+1. Vai su **Impostazioni → Tipi di documento**.
+2. Trova **Fattura** e seleziona **Disposizione** nella sua scheda. Il Layout Builder si apre per quel tipo di documento.
 3. Controlla il selettore del layout in alto a sinistra. L'esempio seguente mostra **DEFAULT**.
 
 <figure><img src="../../../../../.gitbook/assets/prior-u011-it.png" alt="Accesso ai tipi di documento dalle impostazioni. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati."><figcaption><p>Accesso ai tipi di documento dalle impostazioni. Le etichette Tavolo/Tavoli si riferiscono a tabelle di dati.</p></figcaption></figure>

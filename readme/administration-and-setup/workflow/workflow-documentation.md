@@ -147,7 +147,7 @@ Sopra è riportato un esempio di calcolo per MTZ con un filtro per i numeri di a
 
 Con una configurazione manuale è consigliabile suddividere i calcoli che dipendono da nuove colonne in un workflow separato. Per proseguire con il calcolo puoi utilizzare la card Run Workflow.
 
-**Run Workflow**
+**Eseguire il flusso**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -159,7 +159,7 @@ Con questa card puoi specificare il nome di un workflow che deve essere eseguito
 
 Se desideri aggiungere tutti i sovrapprezzi come sconto negativo nella colonna dello sconto, puoi utilizzare la card di calcolo. Potrebbero esserci già voci in questa colonna: puoi impostarla come una delle variabili sulla card, sottrarvi il MTZ e aggiungere nuovamente il risultato in questa colonna. Nel caso siano presenti campi vuoti (sovrapprezzi solo per alcuni articoli), assumerà uno 0 per il suo calcolo.
 
-**Notify user to authorize the order confirmation in DocBits**
+**Notificare l’utente per autorizzare la conferma d’ordine in DocBits**
 
 Dopo aver calcolato i sovrapprezzi, potresti voler notificare a un utente specifico di autorizzare la conferma d'ordine. A tale scopo puoi utilizzare la card di notifica.
 

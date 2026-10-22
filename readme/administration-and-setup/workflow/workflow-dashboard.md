@@ -1,4 +1,4 @@
-# Dashboard
+# Pannello di controllo
 
 La **Dashboard del flusso di lavoro** è la home dell'area workflow. Mostra come stanno andando i tuoi workflow — totali delle esecuzioni, tassi di successo e di fallimento, un grafico delle esecuzioni nel tempo e l'attività recente — e ti dà accesso all'elenco dei workflow, al test manager e al Card SDK.
 
@@ -14,11 +14,11 @@ La **Dashboard del flusso di lavoro** è la home dell'area workflow. Mostra come
 
 La barra degli strumenti offre anche **Modelli**, che apre la libreria [Workflow Templates](standard-workflow-builder.md#workflow-templates), e **Flusso di lavoro dell'importazione**, che importa un workflow da un file JSON.
 
-Il **Test Manager** ti permette di salvare scenari di test per ogni workflow e di eseguirli insieme, così puoi verificare che i tuoi workflow si comportino ancora correttamente dopo le modifiche:
+Il **Gestione dei test** ti permette di salvare scenari di test per ogni workflow e di eseguirli insieme, così puoi verificare che i tuoi workflow si comportino ancora correttamente dopo le modifiche:
 
 <figure><img src="../../.gitbook/assets/prior-u032-it.png" alt="Elenco degli scenari di test dei workflow."><figcaption><p>Elenco degli scenari di test dei workflow.</p></figcaption></figure>
 
 ## Prossimi passi
 
-- Crea un'automazione lineare con il builder **Standard Workflow**.
+- Crea un'automazione lineare con il builder **Flusso standard**.
 - Crea un flusso con diramazioni con il builder **Flusso di lavoro avanzato**.

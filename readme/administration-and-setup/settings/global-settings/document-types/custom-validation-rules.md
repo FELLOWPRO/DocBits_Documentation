@@ -32,10 +32,10 @@ Le regole sono definite per **tipo di documento** e vengono eseguite su ogni doc
 
 Le regole di convalida personalizzate si attivano **per tipo di documento**. Non esiste un interruttore valido per l'intera organizzazione.
 
-1. Vai su **Settings → Global Settings → Document Types**.
+1. Vai su **Impostazioni → Impostazioni generali → Tipi di documento**.
 2. Sulla scheda del tipo di documento, clicca sull'icona delle **impostazioni** (ingranaggio).
 3. Apri la sezione **Regole di convalida personalizzate** e attiva l'interruttore.
-4. Clicca su **Manage validation rules** per aprire l'elenco delle regole.
+4. Clicca su **Gestisci le regole di convalida** per aprire l'elenco delle regole.
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Gli interruttori delle regole nelle impostazioni aggiuntive di un tipo di documento"><figcaption><p>Gli interruttori per Manage Layouts, Custom Validation Rules e Transformation Rules</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Da questo momento la scheda del tipo di documento mostra anche un link **Regole 
 
 ## L'elenco delle regole
 
-**Document Types → (tipo di documento) → Validation Rules** elenca tutte le regole del tipo di documento.
+**Tipi di documento → (tipo di documento) → Regole di convalida** elenca tutte le regole del tipo di documento.
 
 <figure><img src="../../../../.gitbook/assets/s150-validation-rules-list-it.png" alt="Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto."><figcaption><p>Gestione delle regole di convalida con i nomi configurati nascosti. Le date relative restano in tedesco nel prodotto.</p></figcaption></figure>
 

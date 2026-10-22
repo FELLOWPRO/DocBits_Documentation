@@ -2,7 +2,7 @@
 
 ## Panoramica
 
-Un **layout** stabilisce quali campi e gruppi vede un utente — e in quale ordine — nelle schermate di **convalida**, **approvazione**, **rifiuto** e **revisione** di un documento. I layout si progettano nel [Layout Manager](README.md).
+Un **Disposizione** stabilisce quali campi e gruppi vede un utente — e in quale ordine — nelle schermate di **convalida**, **approvazione**, **rifiuto** e **revisione** di un documento. I layout si progettano nel [Layout Manager](README.md).
 
 Tradizionalmente DocBits sceglieva il layout in base all'**origine** del documento: il paese o la regione ricavati dalle impostazioni della lingua del documento, ad esempio `DE` o `US`. Ogni origine aveva la propria copia del layout e nient'altro poteva influenzare la scelta.
 
@@ -32,7 +32,7 @@ I layout basati su regole vengono attivati **per tipo di documento** da un **amm
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="L'interruttore Manage Layouts"><figcaption><p>L'interruttore Manage Layouts nelle impostazioni aggiuntive di un tipo di documento</p></figcaption></figure>
 
-Il collegamento **Layout** sulla scheda del tipo di documento ora apre **Layout e regole di selezione**.
+Il collegamento **Disposizione** sulla scheda del tipo di documento ora apre **Layout e regole di selezione**.
 
 ### Cosa succede quando si attiva
 
@@ -53,7 +53,7 @@ Nei layout stessi non viene eliminato né modificato nulla. Subito dopo l'attiva
 
 * **Layouts / Selection rules** (in alto a destra) consentono di passare dall'elenco dei layout all'elenco delle regole. I numeri indicano quanti ce ne sono.
 * **Field Validation / Approval / Reject / Review** cambiano la **schermata**. Ogni schermata ha i propri layout, le proprie regole e il proprio layout predefinito — una regola di approvazione non modifica mai la schermata di convalida.
-* Nella scheda **Layout** è possibile creare, modificare, clonare ed eliminare layout. Ogni scheda indica se una regola utilizza il layout ("Not targeted by rules" se nessuna lo fa). Filtrare con **All / My layouts / System**; i layout di sistema sono forniti con DocBits e possono essere visualizzati e clonati, ma non modificati.
+* Nella scheda **Disposizione** è possibile creare, modificare, clonare ed eliminare layout. Ogni scheda indica se una regola utilizza il layout ("Not targeted by rules" se nessuna lo fa). Filtrare con **All / My layouts / System**; i layout di sistema sono forniti con DocBits e possono essere visualizzati e clonati, ma non modificati.
 
 {% hint style="info" %}
 La prima e la seconda approvazione condividono i layout e le regole **Approvazione**. Per assegnare alla seconda fase di approvazione una schermata propria, aggiungere una regola di approvazione con la condizione *Document Status is Pending second approval* — vedere l'[esempio](#schermate-diverse-per-la-prima-e-la-seconda-approvazione).
@@ -175,7 +175,7 @@ Schermata **Convalida del campo** · priorità **5** · *Supplier ID is HP000027
 
 ### Un layout per più paesi
 
-Schermata **Convalida del campo** · priorità **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destinazione *Fattura DACH*. Disattivare le regole migrate "Layout for AT" e "Layout for CH" se puntano a copie più vecchie.
+Schermata **Convalida del campo** · priorità **100** · **Una qualsiasi delle condizioni**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · destinazione *Fattura DACH*. Disattivare le regole migrate "Layout for AT" e "Layout for CH" se puntano a copie più vecchie.
 
 ### Una schermata più semplice per le fatture elettroniche
 

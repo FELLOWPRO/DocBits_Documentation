@@ -23,6 +23,19 @@ This short example starts at the desk of a fictional customer in Austin, Texas. 
 The customer and office are AI-generated. The actions and search results are real recordings from the DocBits test account.
 
 
+## Dashboard tools — English walkthrough
+
+The same fictional customer from Austin shows how she works with the dashboard: find a test invoice, apply and clear a status filter, open the search help, inspect the column settings, check the status overview and refresh the worklist. The walkthrough uses the current US English interface. Available controls depend on your permissions and enabled modules.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.mp4" %}
+
+[Open the player with English subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.html) · [Open the MP4](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.mp4) · [English captions (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.vtt) · [English transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.txt)
+
+Use full-screen playback to read the interface on smaller screens.
+
+The customer, office opening and narration are AI-generated. The dashboard actions are real recordings from the DocBits test interface. Invoice numbers, supplier names, purchase orders and amounts come from a synthetic sample invoice; private account details are masked. The sample selection stays active throughout the walkthrough. The column settings are inspected and closed without saving changes.
+
+
 ## Start your daily work
 
 1. Check the active organization and, if available, the suborganization.
@@ -34,6 +47,10 @@ The customer and office are AI-generated. The actions and search results are rea
 ## Search and filter documents
 
 Enter a document name, invoice number or other business value in the search box and press **Enter**. Use the filter icon inside the search box for **Status**, **Assigned To** and **Restart required**, then choose **Apply**. Remove individual filter badges or use **Clear filters** when a document seems to be missing. Document-type tabs and saved views also narrow the list.
+
+The **bolt** icon at the start of the search box opens the field picker. It lists the **Smart Filters** first — ready-made searches such as **Overdue**, **Due soon**, **Assigned to me**, **Today's inbox**, **Pending validation** or **Electronic documents** — followed by every field you can search. Selecting an entry inserts the matching condition into the search box, so you do not have to know the syntax.
+
+<figure><img src="../../../.gitbook/assets/dbdc189-dashboard-search-fields-en.png" alt="Field picker in the dashboard search box listing Smart Filters such as Overdue, Due soon, Assigned to me and Pending validation, followed by searchable fields"><figcaption><p>The field picker: Smart Filters on top, then the searchable fields.</p></figcaption></figure>
 
 The search toolbar also provides structured search chips, a raw query view and a **Fields & Syntax** help dialog. Copy field names and examples from that dialog; keep technical field names unchanged when changing the UI language. Advanced search features depend on the search capabilities enabled for your organization.
 

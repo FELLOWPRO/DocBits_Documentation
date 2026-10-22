@@ -49,8 +49,8 @@ En el extremo derecho de la barra:
 
 - **ⓘ Help** — abre la referencia integrada **Búsqueda en el panel de control: campos y sintaxis**
   con todos los campos, operadores y atajos disponibles en su espacio de trabajo.
-- **Filters (tune)** — un panel rápido con los filtros habituales de Status / User / Restart,
-  con **Borrar filtros** y **Aplicar**.
+- **Filters** (tres barras deslizantes) — un panel rápido con los filtros habituales **Estado**,
+  **Asignado a** y **Reinicio necesario**, con **Borrar filtros** y **Aplicar**.
 - **Resumen del índice** — un pequeño anillo de progreso que muestra qué parte de su índice de texto completo
   está construida (solo se muestra cuando la búsqueda de texto completo está activada).
 
@@ -223,13 +223,14 @@ ap_assignment_code=""
 
 ---
 
-## Filtros inteligentes — con un clic
+## Filtros rápidos — con un clic
 
-En la parte superior del menú desplegable de la Búsqueda rápida (haga clic en la barra de búsqueda) encontrará los
-**Filtros rápidos**: búsquedas predefinidas que se aplican con un solo clic. Cada una
-es simplemente un atajo de una consulta que también podría escribir usted mismo:
+El icono **rayo** al inicio del campo de búsqueda abre el selector de campos. En la parte
+superior de ese selector están los **Filtros rápidos**: búsquedas predefinidas que se
+aplican con un solo clic. Cada una es simplemente un atajo de una consulta que también
+podría escribir usted mismo:
 
-| Smart Filter | Encuentra | Equivale a escribir |
+| Filtro rápido | Encuentra | Equivale a escribir |
 |--------------|-----------|---------------------|
 | ⚠️ **Vencido** | Vencidos | `invoice_due_date<today()` |
 | 🕐 **Próximo a vencer** | Dentro de los próximos 7 días | `invoice_due_date<=today()+7` |
@@ -241,8 +242,8 @@ es simplemente un atajo de una consulta que también podría escribir usted mism
 | ➗ **Coincidencia parcial de la orden de compra** | Parcialmente conciliados con un pedido de compra | `po_match_status=partial_matched` |
 | 📉 **Bajo coincidencia de PO** | Cantidad o precio unitario por debajo del pedido de compra | `po_match_status=under_matched` |
 
-Los tres filtros de **PO match** y los campos de texto completo requieren que la búsqueda de texto completo
-esté activada para su organización.
+Los tres filtros de **coincidencia de la orden de compra** y los campos de texto completo requieren
+que la búsqueda de texto completo esté activada para su organización.
 
 <figure><img src="../../../.gitbook/assets/prior-u030-es.png" alt="Ayuda de consultas y filtros de la búsqueda rápida."><figcaption><p>Ayuda de consultas y filtros de la búsqueda rápida.</p></figcaption></figure>
 

@@ -32,6 +32,10 @@ Leer y construir: [¿Cuándo se ejecuta mi workflow?](workflow-execution-model.m
 
 ## 2. Primera regla propia <a id="level-2"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/es.mp4" %}
+
+[Abrir el vídeo con subtítulos en español y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/es.html).
+
 **Ejercicio:** Construya When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW. Manténgala inactiva. Pruebe datos completos para 999, 1000 y 1000.01. Esta regla lineal todavía no necesita nodo de control.
 
 **Criterio de finalización:** REVIEW solo se alcanza por encima de 1000. Registre tipo, operador y salida elegida. Trate la entrada ausente por separado.

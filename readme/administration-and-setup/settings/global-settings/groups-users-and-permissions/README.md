@@ -1,5 +1,13 @@
 # Grupos, usuários e permissões
 
+## Criar um grupo e testar o acesso aos documentos
+
+Com as permissões de grupo já ativadas, crie um grupo de revisão e adicione um utilizador de teste sem direitos de administrador. Permita listar, consultar e editar faturas atribuídas; mantenha desativadas a eliminação, as alterações em massa e as aprovações. Guarde e reabra as definições. Depois inicie sessão como utilizador normal: a fatura atribuída está visível e o documento de controlo não atribuído não aparece.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pt.mp4" %}
+
+[Ver com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pt.html)
+
 Essas configurações respondem a três perguntas diferentes: quem pode entrar, em qual suborganização essa pessoa trabalha e o que o grupo dela pode fazer.
 
 | Se você precisa… | Abra… |

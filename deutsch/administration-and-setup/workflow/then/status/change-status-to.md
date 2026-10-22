@@ -44,10 +44,16 @@ Die Workflow-Karte **"Change Status"** bietet einen optimierten Ansatz zur Verwa
 
 ## Praxisbeispiel
 
-**Verwendungszweck:** Verschieben Sie ein überprüftes Dokument in einen definierten Verarbeitungsstatus.
+**Wann nutzen:** Einen geprüften Beleg zur Freigabe weitergeben.
 
-**Konfiguration:** Wählen Sie Ihren konfigurierten `Demo Review`-Status aus und deaktivieren Sie das Auslösen zusätzlicher Workflows für dieses Beispiel.
+**Wo:** Standard-Workflow-Designer → Dann → Status → Status auf … ändern.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Das Dokument erhält den ausgewählten Status. Diese Aktion allein führt den separat konfigurierten Export nicht aus.
+**Konfiguration:** Wählen Sie Version 3 von `staus_change`, den Status Genehmigung ausstehend (`validated_pending_approval`) und setzen Sie das Auslösen weiterer Workflows auf `false` (`trigger_docflow=false`). Verwenden Sie eine isolierte synthetische Rechnung, deren vorhergehende Prüfungen erfüllt sind.
 
-Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine zulässige, erfolgreiche Änderung versetzt den Beleg in den gewählten Status. Ist eine vorhergehende Bedingung falsch, wird diese Aktion nicht erreicht und ändert keinen Status. Eine abgelehnte oder fehlgeschlagene API-Änderung zählt nicht als Erfolg: Prüfen Sie den tatsächlichen Status und die Protokolle. Die Karte führt selbst keinen Export aus.
+
+### Kartenversionen
+
+Der ausdrückliche Schalter zum Auslösen weiterer Workflows ist in v3 verfügbar. Version 1 und 2 bieten ihn nicht; ihr älterer Aktualisierungspfad verwendet das Standardverhalten zum Auslösen von Workflows. Übertragen Sie eine v3-Einstellung `false` nicht ungeprüft auf eine ältere Kartenversion.
+
+Dies ist eine am Ausführungscode geprüfte Konfiguration mit erwartetem Ergebnis. Es wurde kein Workflow und keine Statusänderung ausgeführt.

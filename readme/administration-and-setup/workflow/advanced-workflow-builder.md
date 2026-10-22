@@ -1,4 +1,4 @@
-# Advanced Workflow
+# Zaawansowany przepływ
 
 Kreator **Zaawansowany przepływ pracy** to edytor grafu węzłów dla przepływów pracy, które wymagają rozgałęzień, równoległych ścieżek i kontroli przepływu — wykraczających poza liniowy model When/And/Then z kreatora Standard. Układasz węzły na obszarze roboczym i łączysz je, aby zdefiniować przebieg wykonywania.
 
@@ -91,6 +91,6 @@ Uruchom przepływ za pomocą elementu sterującego odtwarzaniem, zweryfikuj go i
 ## Następne kroki
 
 - Zobacz, co robi każda karta, w sekcji **Karty**.
-- W przypadku prostych liniowych automatyzacji szybszy w konfiguracji jest kreator **Standard Workflow**.
+- W przypadku prostych liniowych automatyzacji szybszy w konfiguracji jest kreator **Standardowy przepływ**.
 
 [Zobacz wszystkie pięć rozdziałów](advanced-workflow-videos.md)

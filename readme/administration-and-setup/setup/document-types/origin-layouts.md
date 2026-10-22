@@ -1,4 +1,4 @@
-# Origin Layouts
+# Układy według źródła
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
 Ustawienie Origin w DocBits wyjaśnione: Standardy krajowe dla formatów dat i liczb

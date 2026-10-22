@@ -1,6 +1,6 @@
-# Standard Workflow
+# Standardowy przepływ
 
-Kreator **Standard Workflow** to liniowy, oparty na kartach edytor do automatyzacji przetwarzania dokumentów. Przepływ pracy składa się z trzech grup kart — **Gdy** (wyzwalacz), **I** (dodatkowe warunki) oraz **Następnie** (akcje do wykonania). Gdy dokument spełnia warunki When/And, akcje Then są uruchamiane automatycznie.
+Kreator **Standardowy przepływ** to liniowy, oparty na kartach edytor do automatyzacji przetwarzania dokumentów. Przepływ pracy składa się z trzech grup kart — **Gdy** (wyzwalacz), **I** (dodatkowe warunki) oraz **Następnie** (akcje do wykonania). Gdy dokument spełnia warunki When/And, akcje Then są uruchamiane automatycznie.
 
 ## Tworzenie i testowanie Standard Workflow <a id="standard-workflow-tutorial"></a>
 
@@ -95,7 +95,7 @@ Na liście workflow włączam przetestowaną regułę i sprawdzam przełącznik.
 
 ## Jak uzyskać dostęp
 
-Otwórz **Workflow Dashboard → Workflow List**, a następnie kliknij **Dodaj przepływ pracy**, aby utworzyć nowy przepływ pracy Standard, lub kliknij istniejący przepływ pracy, aby go edytować.
+Otwórz **Panel przepływów → Lista przepływów**, a następnie kliknij **Dodaj przepływ pracy**, aby utworzyć nowy przepływ pracy Standard, lub kliknij istniejący przepływ pracy, aby go edytować.
 
 <figure><img src="../../.gitbook/assets/prior-u033-pl.png" alt="Lista przepływów i działania importu."><figcaption><p>Lista przepływów i działania importu.</p></figcaption></figure>
 
@@ -118,5 +118,5 @@ Zapisz za pomocą **Zapisz przepływ pracy** lub zapisz układ jako wielokrotneg
 ## Następne kroki
 
 - Zobacz, co robi każda karta, w sekcji **Karty**.
-- Łącz karty w sprawdzone rozwiązania dzięki **Workflow Pattern Guides**.
+- Łącz karty w sprawdzone rozwiązania dzięki **Przewodniki po wzorcach przepływów**.
 - W przypadku przepływów rozgałęzionych z równoległymi ścieżkami (Wait ALL / Wait ANY / OR) użyj kreatora **Zaawansowany przepływ pracy**.

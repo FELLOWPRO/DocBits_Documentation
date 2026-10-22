@@ -20,7 +20,7 @@ Włączenie lub wyłączenie systemu uprawnień za pomocą przełącznika ma ró
 
 <figure><img src="../../../../../.gitbook/assets/prior-u008-pl.png" alt="Poziomy dostępu dla działań w macierzy uprawnień. Poziomy Owner, Everyone i No Access pozostają w języku angielskim."><figcaption><p>Poziomy dostępu dla działań w macierzy uprawnień. Poziomy Owner, Everyone i No Access pozostają w języku angielskim.</p></figcaption></figure>
 
-Przełącznik **Only Assigned Documents** kontroluje widoczność dokumentów dla użytkowników na podstawie przypisań do grup. Gdy jest włączony, użytkownicy widzą tylko dokumenty przypisane bezpośrednio do nich lub do grupy, do której należą. Gdy jest wyłączony, użytkownicy z odpowiednim uprawnieniem do przeglądania widzą wszystkie dokumenty, niezależnie od przypisania.
+Przełącznik **Tylko przypisane dokumenty** kontroluje widoczność dokumentów dla użytkowników na podstawie przypisań do grup. Gdy jest włączony, użytkownicy widzą tylko dokumenty przypisane bezpośrednio do nich lub do grupy, do której należą. Gdy jest wyłączony, użytkownicy z odpowiednim uprawnieniem do przeglądania widzą wszystkie dokumenty, niezależnie od przypisania.
 
 #### Działanie
 

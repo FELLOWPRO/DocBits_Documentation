@@ -177,10 +177,10 @@ Aby utworzyć nowy eksport:
   * Jeśli pozostawione puste: dotyczy głównej organizacji.
   * Jeśli wybrane: eksport będzie dotyczył tylko wybranej podorganizacji.
 * **Typ dokumentu** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
-* **ION Mapping File** Wybierz plik mapowania z menedżera plików.
+* **Plik mapowania ION** Wybierz plik mapowania z menedżera plików.
 * **Plik mapowania IDM** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Cloud / On-Prem Toggle** Przełącznik wskazujący typ wdrożenia Infor:
-  * **Cloud**: Wybierz to, jeśli jesteś klientem Infor CloudSuite.
+  * **Wdrożenie w chmurze**: Wybierz to, jeśli jesteś klientem Infor CloudSuite.
   * **On-Prem**: Wybierz to, jeśli Infor jest hostowany samodzielnie.
 
 </details>
@@ -200,10 +200,10 @@ Aby utworzyć nowy eksport:
   * Jeśli pozostawione puste: dotyczy głównej organizacji.
   * Jeśli wybrane: eksport będzie dotyczył tylko wybranej podorganizacji.
 * **Typ dokumentu** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
-* **ION Mapping File** Wybierz plik mapowania z menedżera plików.
+* **Plik mapowania ION** Wybierz plik mapowania z menedżera plików.
 * **Plik mapowania BOD** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania BOD](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Przełącznik wskazujący typ wdrożenia Infor:
-  * **Cloud**: Wybierz to, jeśli jesteś klientem Infor CloudSuite.
+  * **Wdrożenie w chmurze**: Wybierz to, jeśli jesteś klientem Infor CloudSuite.
   * **On-Prem**: Wybierz to, jeśli Infor jest hostowany samodzielnie.
 
 </details>
@@ -223,11 +223,11 @@ Aby utworzyć nowy eksport:
   * Jeśli pozostawione puste: dotyczy głównej organizacji.
   * Jeśli wybrane: eksport będzie dotyczył tylko wybranej podorganizacji.
 * **Typ dokumentu** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
-* **ION Mapping File** Wybierz plik mapowania z menedżera plików.
+* **Plik mapowania ION** Wybierz plik mapowania z menedżera plików.
 * **Plik mapowania IDM** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Plik mapowania BOD** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania BOD](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Przełącznik wskazujący typ wdrożenia Infor:
-  * **Cloud**: Wybierz to, jeśli jesteś klientem Infor CloudSuite.
+  * **Wdrożenie w chmurze**: Wybierz to, jeśli jesteś klientem Infor CloudSuite.
   * **On-Prem**: Wybierz to, jeśli Infor jest hostowany samodzielnie.
 
 </details>
@@ -249,7 +249,7 @@ Aby utworzyć nowy eksport:
   * Jeśli pozostawione puste: dotyczy głównej organizacji.
   * Jeśli wybrane: eksport będzie dotyczył tylko wybranej podorganizacji.
 * **Typ dokumentu** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
-* **ION Mapping File** Wybierz plik mapowania z menedżera plików.
+* **Plik mapowania ION** Wybierz plik mapowania z menedżera plików.
 * **Plik mapowania IDM** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Plik mapowania LN** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przykład Mapowania LN](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
@@ -270,7 +270,7 @@ Aby utworzyć nowy eksport:
   * Jeśli pozostawione puste: dotyczy głównej organizacji.
   * Jeśli wybrane: eksport będzie dotyczył tylko wybranej podorganizacji.
 * **Typ dokumentu** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
-* **ION Mapping File** Wybierz plik mapowania z menedżera plików.
+* **Plik mapowania ION** Wybierz plik mapowania z menedżera plików.
 * **Plik mapowania IDM** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Plik mapowania M3** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przykład Mapowania M3](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
@@ -291,8 +291,8 @@ Aby utworzyć nowy eksport:
   * Jeśli pozostawione puste: dotyczy głównej organizacji.
   * Jeśli wybrane: eksport będzie dotyczył tylko wybranej podorganizacji.
 * **Typ dokumentu** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
-* **ION Mapping File** Wybierz plik mapowania z menedżera plików.
+* **Plik mapowania ION** Wybierz plik mapowania z menedżera plików.
 * **Plik mapowania IDM** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 toml Mapping File** Wybierz plik mapowania z menedżera plików lub użyj opcji wybierz Toml, aby użyć pliku toml utworzonego za pomocą menedżera reguł. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Menedżera Reguł](rule-manager/)
+* **Plik mapowania M3 TOML** Wybierz plik mapowania z menedżera plików lub użyj opcji wybierz Toml, aby użyć pliku toml utworzonego za pomocą menedżera reguł. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Menedżera Reguł](rule-manager/)
 
 </details>

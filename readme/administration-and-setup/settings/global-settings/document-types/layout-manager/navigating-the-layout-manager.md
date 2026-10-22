@@ -4,7 +4,7 @@ Użyj **Kreator układów**, aby rozmieścić pola i grupy widoczne na dokumenci
 
 ## Otwieranie układu Invoice
 
-1. Przejdź do **Settings → Document Types**.
+1. Przejdź do **Ustawienia → Typy dokumentów**.
 2. Znajdź **Faktura** i wybierz **Układy** na jego karcie. Layout Builder otworzy się dla tego typu dokumentu.
 3. Sprawdź selektor układu w lewym górnym rogu. Poniższy przykład pokazuje **DEFAULT**.
 

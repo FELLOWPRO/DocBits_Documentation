@@ -9,3 +9,5 @@ Wybierz format daty odpowiedni dla dokumentów. Symbole %d, %m i %Y są technicz
 <figure><img src="../../../../.gitbook/assets/prior-i004-pl.png" alt="Wybór formatu daty w preferencjach firmy."><figcaption><p>Wybór formatu daty w preferencjach firmy.</p></figcaption></figure>
 
 Format kwot jest oddzielnym ustawieniem; jego skonfigurowana nazwa może pozostać bez zmian. Sprawdź oba formaty przed zapisaniem. Dawne okno informacji o wersji nie jest częścią aktualnego widoku. Przy wykonywaniu tych obrazów nie zmieniono preferencji.
+
+{% embed url="https://youtu.be/TLmAHw3EXs4" %}

@@ -1,6 +1,6 @@
 # FAQ administrateur et dépannage de WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="Aide-mémoire de dépannage de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-fr.svg" alt="Aide au diagnostic des imports, exports et connexions WatchDog."><figcaption><p>Aide au diagnostic des imports, exports et connexions WatchDog.</p></figcaption></figure>
 
 Cette documentation aide les administrateurs à comprendre les messages d'erreur de WatchDog et à résoudre les problèmes.
 

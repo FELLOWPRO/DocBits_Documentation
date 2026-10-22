@@ -12,12 +12,12 @@ Pour activer le DocBits Operator, suivez ces étapes :
    * Depuis le tableau de bord, accédez à **Settings**.
    *   Sélectionnez **Document Processing**, puis choisissez **Module**.
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="Sélection du module DocBits Operator"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-fr.png" alt="Module d’intégration des documents, avec l’option DocBits Operator dans son état existant. Aucun module n’a été activé pendant la capture."><figcaption><p>Module d’intégration des documents, avec l’option DocBits Operator dans son état existant. Aucun module n’a été activé pendant la capture.</p></figcaption></figure>
 2. **Activer la fonctionnalité** :
    * Faites défiler la page pour trouver l'option **DocBits Operator**.
    *   Basculez le curseur pour activer le **DocBits Operator**.
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="Interrupteur d'activation du DocBits Operator" width="563"><figcaption></figcaption></figure></div>
+       <div align="left"></div>
 
 ## Accès à l'interface
 

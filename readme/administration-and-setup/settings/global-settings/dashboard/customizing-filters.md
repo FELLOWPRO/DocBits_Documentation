@@ -16,7 +16,7 @@ L'utilisation des filtres permet aux utilisateurs de trouver rapidement des info
 
 * Cliquez sur l'icône de filtre ou le champ de recherche.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_2.png)
+<figure><img src="../../../../.gitbook/assets/prior-u030-fr.png" alt="Recherche de documents avec des commandes françaises. Un ancien intitulé espagnol de colonne reste visible dans cette version du produit."><figcaption><p>Recherche de documents avec des commandes françaises. Un ancien intitulé espagnol de colonne reste visible dans cette version du produit.</p></figcaption></figure>
 
 ### Personnalisation des filtres
 
@@ -34,19 +34,19 @@ L'utilisation des filtres permet aux utilisateurs de trouver rapidement des info
 
 * Sélectionnez le champ à filtrer (par exemple, Statut).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Définissez les critères de filtre, par exemple : style de filtre Statut.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Menus déroulants : Choisissez parmi les options prédéfinies.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_6.png)
+
 
 * Enregistrez le filtre personnalisé en cliquant sur "Appliquer".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_7.png)
+
 
 #### **Utiliser des filtres combinés**
 
@@ -66,10 +66,10 @@ L'utilisation des filtres permet aux utilisateurs de trouver rapidement des info
 * Ouvrez le menu des Filtres.
 * Étape 2 : Effacez ou retirez les filtres appliqués en cliquant sur "Effacer les filtres", l'icône X à côté du filtre sélectionné, soit dans le menu des Filtres, soit en dessous de la barre des Filtres.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_8.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
+
+
+
 
 * Les données sont affichées à nouveau sans les critères de filtre précédents.

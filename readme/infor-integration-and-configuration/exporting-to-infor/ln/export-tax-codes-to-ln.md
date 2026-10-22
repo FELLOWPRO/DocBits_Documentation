@@ -11,7 +11,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 1.  Allez dans **Paramètres** -> **Traitement des documents** -> **Liste de valeurs**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-fr.png" alt="Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée."><figcaption><p>Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée.</p></figcaption></figure>
 2.  Cliquez sur **Nouveau**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -30,9 +30,9 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
 6.  Entrez les valeurs respectives souhaitées de **LN** et appuyez sur **ENREGISTRER** pour sauvegarder les modifications.
 
-    * Si vous avez plusieurs valeurs, vous pouvez cliquer sur **Ajouter d'autres valeurs** pour les ajouter.
+    * Pour plusieurs codes, ajoutez et enregistrez une ligne par valeur dans la liste concernée.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-fr.png" alt="Formulaire français de création d’une valeur : valeur, sous-organisation, synonymes et traductions. Aucun code de taxe n’a été saisi ou enregistré ; le choix Anglais concerne la langue d’une traduction, pas celle de l’interface."><figcaption><p>Formulaire français de création d’une valeur : valeur, sous-organisation, synonymes et traductions. Aucun code de taxe n’a été saisi ou enregistré ; le choix Anglais concerne la langue d’une traduction, pas celle de l’interface.</p></figcaption></figure></div>
 
     * **REMARQUE :** Vous pouvez trouver les codes de taxe dans LN sous : **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -42,7 +42,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 1.  Naviguez vers **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Choisissez le menu **Champs** correspondant au type de document où vous souhaitez ajouter les champs.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -50,7 +50,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nom</strong></td><td><strong>Titre</strong></td><td><strong>Type de champion</strong></td><td><strong>Liste de valeurs</strong></td></tr><tr><td><code>tax_country</code></td><td>Pays de taxation</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Pays de taxe réduit</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Pays sans taxe</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Code des impôts</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Code des impôts réduit</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Code des impôts Gratuit</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nom</strong></td><td><strong>Titre</strong></td><td><strong>Type de champ</strong></td><td><strong>Liste de valeurs</strong></td></tr><tr><td><code>tax_country</code></td><td>Pays de taxation</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Pays de taxe réduit</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Pays sans taxe</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Code de taxe</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Code de taxe — taux réduit</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Code de taxe — sans taxe</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
 <div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -64,7 +64,7 @@ Ce guide vous accompagnera dans le processus de configuration pour garantir que 
 
 1.  Allez dans **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Ouvrez le menu **Modifier la mise en page** pour le type de document que vous souhaitez modifier.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -101,7 +101,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 1.  Allez dans **Paramètres** -> **Traitement des documents** -> **Liste de valeurs**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-fr.png" alt="Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée."><figcaption><p>Liste de valeurs dans l’interface française actuelle. Les noms des listes propres à l’organisation sont masqués ; aucune liste n’a été créée.</p></figcaption></figure>
 2.  Cliquez sur **Nouveau**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -120,9 +120,9 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
     <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
 6.  Entrez les valeurs respectives souhaitées de **LN** et appuyez sur **ENREGISTRER** pour sauvegarder les modifications.
 
-    * Si vous avez plusieurs valeurs, vous pouvez cliquer sur **Ajouter d'autres valeurs** pour les ajouter.
+    * Pour plusieurs codes, ajoutez et enregistrez une ligne par valeur dans la liste concernée.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-fr.png" alt="Formulaire français de création d’une valeur : valeur, sous-organisation, synonymes et traductions. Aucun code de taxe n’a été saisi ou enregistré ; le choix Anglais concerne la langue d’une traduction, pas celle de l’interface."><figcaption><p>Formulaire français de création d’une valeur : valeur, sous-organisation, synonymes et traductions. Aucun code de taxe n’a été saisi ou enregistré ; le choix Anglais concerne la langue d’une traduction, pas celle de l’interface.</p></figcaption></figure></div>
 
     * **REMARQUE :** Vous pouvez trouver les codes de taxe dans LN sous : **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -132,7 +132,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 1.  Naviguez vers **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Choisissez le menu **Champs** correspondant au type de document où vous souhaitez ajouter les champs.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -140,7 +140,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nom</strong></td><td><strong>Titre</strong></td><td><strong>Type de champion</strong></td><td><strong>Liste de valeurs</strong></td></tr><tr><td><code>tax_country</code></td><td>Pays de taxation</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Pays de taxe réduit</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Pays sans taxe</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Code des impôts</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Code des impôts réduit</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Code des impôts Gratuit</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Nom</strong></td><td><strong>Titre</strong></td><td><strong>Type de champ</strong></td><td><strong>Liste de valeurs</strong></td></tr><tr><td><code>tax_country</code></td><td>Pays de taxation</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Pays de taxe réduit</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Pays sans taxe</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Code de taxe</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Code de taxe — taux réduit</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Code de taxe — sans taxe</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
 <div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -154,7 +154,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 1.  Allez dans **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié."><figcaption><p>Types de documents dans l’interface française actuelle. Choisissez Champs dans la carte du type concerné ; aucun interrupteur n’a été modifié.</p></figcaption></figure>
 2.  Ouvrez le menu **Modifier la mise en page** pour le type de document que vous souhaitez modifier.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -189,7 +189,7 @@ Après avoir téléchargé un nouveau document dans DocBits avec les paramètres
 
 Après avoir téléchargé un nouveau document dans DocBits avec les paramètres de document corrects sélectionnés, vous pourrez sélectionner les codes de taxe que vous avez ajoutés à l'étape 1 et ajouter plusieurs codes de taxe configurés à l'étape 3.
 
-* Le document commencera par trois sections distinctes : une pour les montants de taxe pleine, une pour les montants de taxe réduite et une pour les montants de taxe gratuite.
+* Le document commencera par trois sections distinctes : une pour les montants au taux normal, une pour les montants au taux réduit et une pour les montants sans taxe.
 * Cliquer sur le bouton plus dans une section créera un duplicata, permettant plusieurs soumissions au taux de taxe sélectionné.
 
 <figure><img src="../../../.gitbook/assets/TaxCodeMulti_8.png" alt=""><figcaption></figcaption></figure>

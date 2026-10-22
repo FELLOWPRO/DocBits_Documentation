@@ -41,7 +41,7 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * Cliquez sur **OK**. Saisissez à nouveau les identifiants si vous y êtes invité.
-  * <mark style="color:red;">**Remarque :**</mark> si vous voyez l'erreur **« password authentication failed for user »**, essayez de saisir votre mot de passe entre **accolades `{}`**.
+  * Si `password authentication failed for user` apparaît, vérifiez l’hôte, la base de données, le nom d’utilisateur et le mot de passe. Saisissez le véritable mot de passe dans la boîte de dialogue d’authentification. L’échappement par accolades dans une chaîne de connexion ODBC relève de la syntaxe du pilote ; ce n’est pas une solution générale aux échecs d’authentification.
 
 #### 4. Charger et transformer les données
 
@@ -60,15 +60,15 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 * Utilisez le canevas de rapport de Power BI pour créer des tableaux de bord.
 * Faites glisser des champs, ajoutez des segments, choisissez des types de graphiques et appliquez des calculs DAX.
 * Utilisez l'**Éditeur Power Query** pour nettoyer ou joindre les données avant de créer des visuels.
-* Référence : [Documentation Power BI](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* Référence : [Documentation Power BI](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Activer l'actualisation planifiée (facultatif)
 
-<mark style="color:red;">**Remarque :**</mark> **nécessite Power BI Pro ou Premium + une passerelle (Gateway)**
+L’actualisation planifiée dépend de la licence ou de la capacité de l’espace de travail, du connecteur et du mode de connexion. Pour cette connexion ODBC, configurez une passerelle accessible avec le pilote, le DSN et les identifiants appropriés. Vérifiez les conditions actuelles dans la documentation officielle.
 
-* Pour maintenir vos rapports synchronisés avec ClickHouse :
+* Pour maintenir vos rapports synchronisés avec PostgreSQL :
 * Publiez votre fichier `.pbix` sur le **service Power BI**.
-* Installez la **passerelle Power BI** (mode Standard) sur une machine disposant d'un accès réseau à ClickHouse.
+* Installez la **passerelle Power BI** (mode Standard) sur une machine disposant d'un accès réseau à PostgreSQL.
 * Dans le service Power BI :
   * Accédez à votre jeu de données → **Paramètres** → **Actualisation planifiée**
   * Associez votre DSN et fournissez les identifiants
@@ -77,3 +77,9 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 #### 7. Exemples de tableaux de bord et de vues de données&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Exemple de tableau de bord Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Exemple de tableau de bord Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Exemple de tableau de bord Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Exemple de tableau de bord Power BI 4"><figcaption></figcaption></figure></div>
+
+[Documentation officielle — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Documentation officielle — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Documentation officielle — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

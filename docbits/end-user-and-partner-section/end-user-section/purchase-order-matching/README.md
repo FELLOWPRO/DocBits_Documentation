@@ -2,22 +2,30 @@
 
 Use **PO Matching** to compare the purchase order lines loaded for a document with its extracted invoice lines. The purchase order data may come from an ERP integration or another configured import. The screen shows the document alongside the two tables so you can check numbers, quantities, prices, and differences before saving or exporting.
 
+## Match invoice lines to a purchase order
+
+The walkthrough starts with a recognized purchase order number and three matched invoice lines. It then shows manual search as an exception, an intentional wrong connection, a partial match, automatic matching and saving. Check the result after reloading; saving a match does not itself approve or export the invoice.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/en.mp4" %}
+
+[Watch the video with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/en.html)
+
 {% hint style="info" %}
-The example below uses a synthetic FellowPro invoice and purchase order in **DocBits Documentation Test A**. Its invoice table currently says **No line items found**. This demonstrates navigation and search, but it cannot demonstrate a successful line match. Do not export this example as a matched invoice.
+The recording uses synthetic test data with three extracted invoice lines and their purchase order. Paper, archive boxes and delivery total EUR 118 net. The full match shows EUR 118 matched and nothing open.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-screen-en.png" alt="English PO Matching screen in the synthetic Sandbox organization: search, toolbar, purchase order lines, empty invoice line table, and invoice preview"><figcaption><p>The purchase order is loaded; the example invoice has no extracted lines to connect.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-en.png" alt="Full match: all three invoice lines are connected, with EUR 118 matched and EUR 0 open."><figcaption><p>Full match: all three invoice lines are connected, with EUR 118 matched and EUR 0 open.</p></figcaption></figure>
 
 ## Find and inspect a purchase order
 
-1. Open an invoice in **PO Matching**. If your organization has several purchase orders, enter a number in **Search purchase order number**.
+1. Open the invoice in **PO Matching**. When its purchase order number is recognized, DocBits loads the corresponding order. Use manual search when the number is missing or you need to inspect another order.
 2. Select the filter icon beside the search box for **Keyword**, **Supplier**, **Status**, **Order Status**, dates, amount range, sorting, and the number of records shown. Select **More** for additional criteria. Select **Apply** to search or **Clear** to reset the filters.
 3. Select a purchase order number above the table to inspect its lines. The refresh icon beside the number reloads that order's data. A reload may depend on the configured integration.
-4. Compare each purchase order line with the invoice and its extracted table. The **+** on a line expands matching details; it does not itself connect the line to the invoice. In the example it displays **No multi-match Information** because no such match exists.
+4. Compare each purchase order line with the invoice and its extracted table. The **+** opens existing matching details; it does not itself connect the line to the invoice.
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-filters-en.png" alt="English purchase order search filters showing supplier, statuses, date and amount limits, sorting, and Apply and Clear buttons"><figcaption><p>Use the filter panel to narrow the purchase orders shown.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-en.png" alt="Manual search shows the three lines of the test purchase order. Use the filters when needed; a recognized order number does not require a second search."><figcaption><p>Manual search shows the three lines of the test purchase order. Use the filters when needed; a recognized order number does not require a second search.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-line-en.png" alt="Expanded purchase order line with No multi-match Information and an empty invoice line table"><figcaption><p>The expanded line shows matching details when available.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-en.png" alt="Partial match: paper accounts for EUR 50 matched; EUR 68 remains open. Partial match does not mean a fixed fifty-percent threshold."><figcaption><p>Partial match: paper accounts for EUR 50 matched; EUR 68 remains open. Partial match does not mean a fixed fifty-percent threshold.</p></figcaption></figure>
 
 ## Match lines and review the result
 
@@ -44,7 +52,7 @@ Use **Matching history** (clock icon, where your permissions allow it) to inspec
 
 ### More than one line per match
 
-A single invoice line may correspond to several order lines, or the other way around, where your matching rules allow it. Open the **+** details on a line to inspect any existing multi-match. Check the combined quantity and price, not just one line. An empty detail panel like the synthetic example above means there is no multi-match to inspect. See [Purchase Order Matching Tools](purchase-order-matching-tools.md) for changing connections.
+A single invoice line may correspond to several order lines, or the other way around, where your matching rules allow it. Open the **+** details on a line to inspect any existing multi-match. Check the combined quantity and price, not just one line. An empty detail panel means there is no multi-match to inspect. See [Purchase Order Matching Tools](purchase-order-matching-tools.md) for changing connections.
 
 ### Quantities, differences, and discounts
 

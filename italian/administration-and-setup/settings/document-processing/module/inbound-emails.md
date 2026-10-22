@@ -27,7 +27,7 @@ Per una casella standard, scegli **IMAP** e inserisci i dati del server e le cre
 
 * **Nome server** e **Porta** (predefinita `993`) del tuo server di posta.
 * **Crittografia** — `SSL`, `TLS` o `None`.
-* **Nome utente**, **e-mail** e **password** della casella.
+* **Nome utente**, **Posta elettronica** e **password** della casella.
 
 <figure><img src="../../../../.gitbook/assets/inbound_emails_imap.png" alt="Modulo di connessione IMAP con server, porta, crittografia e credenziali"><figcaption><p>Il modulo IMAP: la connessione al server di posta più le credenziali della casella.</p></figcaption></figure>
 

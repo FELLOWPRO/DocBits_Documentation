@@ -224,7 +224,7 @@ ap_assignment_code=""
 ## Smart Filters — con un clic
 
 In cima al menu a discesa della Ricerca rapida (clicca sulla barra di ricerca) trovi gli
-**Smart Filters**: ricerche già pronte che applichi con un solo clic. Ognuno
+**Filtri rapidi**: ricerche già pronte che applichi con un solo clic. Ognuno
 è semplicemente una scorciatoia per una query che potresti anche digitare tu stesso:
 
 | Smart Filter | Trova | Equivale a digitare |

@@ -345,58 +345,29 @@ Document passes through all three
 
 ### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP
 
-#### 目的
+<!-- workflow-facility-example-direct-20261022 -->
 
-将文档分配给特定设施组
+此工作流操作根据文档所匹配采购订单的地点，将文档分配给相应组。在版本 2 中，`group_name` 是用于搜索组名的文本片段。
 
-#### 何时使用
+示例：合成文档匹配采购订单 `DEMO-PO-100`，该订单的 `location_id=BERLIN`。已配置的组为 `Receiving BERLIN` 和 `Receiving MUNICH`。将 `group_name` 设置为 `Receiving`。组名必须同时包含该文本片段和采购订单的地点标识；匹配不区分大小写。
 
-* 特定仓库/设施的文件
-* 基于设施的运营
-* 特定地点的处理
+预期结果：如果文档状态允许分配，文档会直接分配给 `Receiving BERLIN`。没有匹配的采购订单或组时，不会成功完成分配；请检查工作流日志。避免使用含义不明确的组名：如果有多个组匹配，此卡不保证固定的选择顺序。
 
-#### 示例
-
-```
-Shipment notification
-
-Assign to: Berlin Warehouse Team
-    ↓
-Berlin warehouse processes shipment
-    ↓
-Or
-
-Assign to: Munich Warehouse Team
-    ↓
-Munich warehouse processes shipment
-```
+这只是示例配置，未执行工作流。
 
 ***
 
 ### 卡牌：ACTION\_ASSIGN\_DOC\_TO\_FACILITY\_GROUP\_SEQUENTIAL
 
-#### 目的
+<!-- workflow-facility-example-sequential-20261022 -->
 
-跨设施按顺序分配
+此工作流操作将匹配的地点组按配置的优先级加入顺序分配队列。它并不表示货物在工厂或仓库之间流转。
 
-#### 何时使用
+示例：使用上文中的同一合成采购订单、地点和组。设置 `group_name=Receiving` 和优先级 `value=10`。版本 2 从匹配的采购订单读取地点，并找到 `Receiving BERLIN`。
 
-* 多地点处理
-* 货物通过设施
-* 基于位置的工作流程
+预期结果：该组的分配请求以优先级 `10` 加入队列。如果有多个组匹配，它们会获得相同的优先级；组名并不决定处理顺序。请分别检查队列和后续审批。没有匹配项时，不会创建成功的分配。
 
-#### 示例
-
-```
-Manufacturing Order:
-
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
-
-Document/shipment passes through each
-```
+这只是示例配置，未执行工作流。
 
 ***
 

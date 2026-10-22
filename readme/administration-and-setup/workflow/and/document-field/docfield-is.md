@@ -44,8 +44,8 @@ Karta przepływu pracy "DocField Comparison Validation" jest niezawodnym narzęd
 
 **Kiedy używać:** Przeglądanie faktur powyżej określonej kwoty.
 
-**Konfiguracja:** Wybierz pole numeryczne `net_total`, operator `>` i wartość referencyjną `1000`.
+**Konfiguracja:** Wybierz pole numeryczne `total_amount`, operator `>` i wartość referencyjną `1000`.
 
-**Oczekiwany wynik i kontrprzykład:** Wartość `1200` przechodzi. `1000` i `900` nie powiodą się, ponieważ porównanie jest ściśle większe niż.
+**Oczekiwany wynik i kontrprzykład:** Wartość `1200` spełnia warunek. Wartości `1000` i `900` go nie spełniają: operator `>` wymaga wartości większej niż `1000`.
 
 To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

@@ -42,12 +42,18 @@ Karta przepływu pracy **"Change Status"** oferuje usprawnione podejście do zar
 
 <!-- workflow-card-practical-example-20261021 -->
 
-## Praktyczny przykład
+## Przykład praktyczny
 
-**Kiedy używać:** Przenieś recenzowany dokument do zdefiniowanego stanu przetwarzania.
+**Zastosowanie:** Przekazanie sprawdzonego dokumentu do etapu zatwierdzania.
 
-**Konfiguracja:** Wybierz skonfigurowany status `Demo Review` i wyłącz wyzwalanie dodatkowych przepływów pracy dla tego przykładu.
+**Gdzie:** Standardowy projektant procesów → Następnie → Status → Zmień status na.
 
-**Oczekiwany wynik i kontrprzykład:** Dokument otrzymuje wybrany status. Samo to działanie nie powoduje wykonania oddzielnie skonfigurowanego eksportu.
+**Konfiguracja:** Wybierz wersję 3 karty `staus_change`, status Oczekuje na zatwierdzenie (`validated_pending_approval`) i ustaw uruchamianie innych procesów na `false` (`trigger_docflow=false`). Użyj odizolowanej faktury syntetycznej, która spełnia wcześniejsze warunki kontrolne.
 
-To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.
+**Oczekiwany wynik i kontrprzykład:** Dozwolona i pomyślna aktualizacja nadaje dokumentowi wybrany status. Jeśli wcześniejszy warunek jest fałszywy, ta akcja nie zostaje osiągnięta i nie zmienia statusu. Odrzucona lub nieudana aktualizacja API nie jest sukcesem: sprawdź rzeczywisty status i logi. Sama karta nie wykonuje eksportu.
+
+### Wersje karty
+
+Jawny przełącznik uruchamiania innych procesów jest dostępny w wersji 3. Wersje 1 i 2 go nie mają; starsza ścieżka aktualizacji używa domyślnego sposobu wyzwalania procesów. Nie zakładaj, że ustawienie `false` z wersji 3 obowiązuje po przejściu na starszą wersję.
+
+Konfigurację i oczekiwany wynik zweryfikowano w kodzie wykonawczym. Nie uruchomiono procesu ani zmiany statusu.

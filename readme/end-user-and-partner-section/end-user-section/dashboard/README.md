@@ -14,7 +14,7 @@ As funções disponíveis dependem das suas permissões, do estado do documento 
 
 ## Visita completa ao painel
 
-A cliente fictícia de Lisboa mostra a pesquisa combinada com AND, os filtros de estado, a ajuda de pesquisa, as definições das colunas, as estatísticas e a atualização. A interface portuguesa foi gravada no DocBits com dados de teste sintéticos. A personagem e a voz foram geradas por IA.
+A cliente fictícia de Lisboa mostra a pesquisa combinada com AND, os filtros de estado, a ajuda de pesquisa, as configurações das colunas, as estatísticas e a atualização. A interface portuguesa foi gravada no DocBits com dados de teste sintéticos. A personagem e a voz foram geradas por IA.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/pt.mp4" %}
 
@@ -30,7 +30,9 @@ A cliente fictícia de Lisboa mostra a pesquisa combinada com AND, os filtros de
 
 ## Pesquisar e filtrar documentos
 
-Introduza um nome de documento, número de fatura ou outro valor de negócio e prima **Enter**. O ícone de filtro na pesquisa permite escolher estado, pessoa atribuída e documentos que exigem reinício. Confirme com **Aplicar**. Remova filtros individuais ou limpe os filtros se um documento parecer estar em falta. Os separadores de tipos e as vistas guardadas também limitam a lista.
+Introduza um nome de documento, número de fatura ou outro valor de negócio e prima **Enter**. O ícone **Filtros** (três barras deslizantes) no extremo direito da barra de pesquisa permite escolher **Status**, **Atribuído a** e **Reinicialização necessária**; confirme com **Aplicar**. Remova filtros individuais ou limpe os filtros se um documento parecer estar em falta. Os separadores de tipos e as vistas guardadas também limitam a lista.
+
+O ícone **raio** no início do campo de pesquisa abre o seletor de campos. Mostra primeiro os **Filtros inteligentes** — pesquisas prontas como **Atrasado**, **Em breve**, **Atribuído a mim**, **Caixa de entrada de hoje**, **Validação pendente** ou **Documentos eletrônicos** — e depois todos os campos pesquisáveis. Ao escolher uma entrada, a condição correspondente é inserida no campo de pesquisa.
 
 A barra oferece filtros estruturados, uma vista de consulta direta e ajuda sobre campos e sintaxe. Utilize os nomes de campos e os exemplos dessa ajuda. Os nomes técnicos dos campos não mudam com o idioma. As funções avançadas dependem das capacidades de pesquisa ativas.
 
@@ -48,9 +50,9 @@ Se o agrupamento estiver disponível, selecione um campo acima da tabela. Para c
 
 Use **+** junto aos separadores para mostrar outros tipos de documento. Reordene os separadores arrastando-os. Remover um separador altera apenas a vista e não elimina documentos.
 
-Abra a engrenagem e as definições das colunas. Mova colunas entre as listas ocultas e visíveis e arraste as visíveis para as ordenar. Também pode adicionar campos de um tipo de documento. Consulte [Alterar colunas dos documentos](change-document-columns.md).
+Abra a engrenagem **Configurações avançadas** à direita da barra de pesquisa e, no respetivo menu, o botão **Configurações de colunas**. Mova colunas entre as listas ocultas e visíveis e arraste as visíveis para as ordenar. Também pode adicionar campos de um tipo de documento. Consulte [Alterar colunas dos documentos](change-document-columns.md).
 
-<figure><img src="../../../.gitbook/assets/dashboard-columns-pt.png" alt="Escolha e ordene a informação da tabela nas definições das colunas."><figcaption><p>Escolha e ordene a informação da tabela nas definições das colunas.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dashboard-columns-pt.png" alt="Escolha e ordene a informação da tabela nas configurações das colunas."><figcaption><p>Escolha e ordene a informação da tabela nas configurações das colunas.</p></figcaption></figure>
 
 ## Compreender estados e ações
 
@@ -64,7 +66,7 @@ Selecione vários documentos nas caixas e abra o menu do cabeçalho para as aç�
 
 ## Guardar um painel pessoal
 
-Abra o botão azul de vista abaixo da pesquisa e crie um novo painel. Dê-lhe um nome e escolha visibilidade privada, para todos ou para grupos e utilizadores específicos. Guarde filtros, ordenação e colunas para tarefas recorrentes.
+Abra o botão de vista abaixo da pesquisa e escolha **Criar novo painel**. Dê-lhe um nome e escolha **Visível somente para mim**, **Visível para todos os usuários** ou **Compartilhe com grupos e usuários**. Guarde filtros, ordenação e colunas para tarefas recorrentes.
 
 Selecione vistas guardadas no mesmo menu. Guarde alterações posteriores quando a vista lhe pertencer e tiver sido modificada. Não pode substituir uma vista partilhada consigo: crie uma sua. Partilhar uma vista não concede acesso adicional aos documentos. Consulte [Painéis pessoais](personal-dashboards.md).
 
@@ -74,7 +76,7 @@ Selecione vistas guardadas no mesmo menu. Guarde alterações posteriores quando
 
 Escolha **Carregar**, arraste ficheiros para a janela ou selecione-os no computador e inicie o carregamento. Se disponível, a opção de classificação permite definir expressamente um tipo de documento. Caso contrário, o DocBits classifica os ficheiros automaticamente.
 
-As outras ferramentas atualizam a lista, abrem definições avançadas, iniciam um scanner, mostram estatísticas de estado, iniciam a importação de correio configurada ou pedem uma exportação CSV/Excel. Digitalização e exportação exigem a configuração adequada. Exportar a tabela é diferente de exportar um documento para o ERP. Guarde primeiro as alterações de colunas do painel pessoal, pois a exportação utiliza a configuração guardada. Consulte [Ferramentas do painel](dashboard-tools.md).
+As outras ferramentas atualizam a lista, abrem configurações avançadas, iniciam um scanner, mostram estatísticas de estado, iniciam a importação de correio configurada ou pedem uma exportação CSV/Excel. Digitalização e exportação exigem a configuração adequada. Exportar a tabela é diferente de exportar um documento para o ERP. Guarde primeiro as alterações de colunas do painel pessoal, pois a exportação utiliza a configuração guardada. Consulte [Ferramentas do painel](dashboard-tools.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-upload-pt.png" alt="Carregue ficheiros e, se necessário, escolha o tipo de documento antes da importação."><figcaption><p>Carregue ficheiros e, se necessário, escolha o tipo de documento antes da importação.</p></figcaption></figure>
 
@@ -82,6 +84,6 @@ As outras ferramentas atualizam a lista, abrem definições avançadas, iniciam 
 
 Verifique primeiro a organização, a vista ativa, o tipo de documento, o texto pesquisado e os filtros. Atualize a lista e consulte outras páginas. Se uma função continuar em falta, peça ao administrador para verificar permissões e módulos.
 
-**Ctrl/Cmd + K** abre a pesquisa rápida global; **Ctrl/Cmd + Q** atualiza o painel; **Ctrl/Cmd + H** abre a ajuda. O menu da engrenagem contém a referência dos atalhos. O eventual contador de documentos pendentes da organização é um indicador para administradores, não o seu contador pessoal de tarefas.
+**Ctrl/Cmd + K** abre a pesquisa rápida global; **Ctrl/Cmd + Q** atualiza o painel; **Ctrl/Cmd + H** abre a ajuda. O menu **Configurações avançadas** contém a referência dos atalhos. O eventual contador de documentos pendentes da organização é um indicador para administradores, não o seu contador pessoal de tarefas.
 
 Use Ctrl em Windows/Linux e Cmd em macOS. Os atalhos do navegador ou sistema podem ter prioridade.

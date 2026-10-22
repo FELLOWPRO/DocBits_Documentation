@@ -41,8 +41,18 @@ Die Workflow-Karte "Field Presence and State Validation" ist ein wichtiges Werkz
 
 **Verwendungszweck:** Rechnungen erkennen, deren Rechnungsnummer noch überprüft werden muss.
 
-**Konfiguration:** Wählen Sie Feld `invoice_number` und Leer/Nicht im Dokument.
+**Konfiguration:** Wählen Sie für dieses Beispiel das konfigurierte Feld `invoice_id` (Rechnungsnummer) und „Leer/Nicht im Dokument“.
 
-**Erwartetes Ergebnis und Gegenbeispiel:** Ein leeres oder fehlendes Feld besteht. Ein ausgefüllter Wert wie `DEMO-001` erfüllt diese Bedingung nicht.
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein leeres oder fehlendes Feld erfüllt die Bedingung. Ein befüllter Wert wie `DEMO-001` erfüllt sie nicht. Eine vorhandene, aber fachlich falsche Nummer gilt dadurch nicht als leer; für die Inhaltsprüfung ist eine zusätzliche passende Bedingung erforderlich.
 
 Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+
+## Admin-Beispielvideo
+
+Wann die Karte hilft, wo sie unter „Und → Dokumentenfeld“ liegt und wie sie fehlende Rechnungsnummern erkennt. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/de.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/de.txt)

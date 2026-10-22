@@ -2,22 +2,30 @@
 
 使用 **PO Matching** 比较为文档加载的采购订单行项目与提取出的发票行项目。采购订单数据可能来自 ERP 集成或其他已配置的导入方式。该界面会同时显示文档和两个表格，方便你在保存或导出前核对编号、数量、价格和差异。
 
+## 核对发票与采购订单的行项目
+
+本教程从已识别的采购订单号和三条已匹配的发票行开始，然后演示作为例外处理的手动搜索、故意建立的错误关联、部分匹配、自动匹配和保存。重新加载后应再次核对结果；保存匹配本身不会批准发票，也不会将其导出。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/zh.mp4" %}
+
+[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/zh.html)
+
 {% hint style="info" %}
-以下示例使用 **DocBits Documentation Test A** 中的合成 FellowPro 发票和采购订单。其发票表格目前显示 **No line items found**。此示例演示了导航和搜索，但无法展示成功的行项目匹配。请勿将此示例作为已匹配的发票导出。
+录屏使用合成测试数据，包括三条已提取的发票行和对应采购订单。纸张、档案盒和配送费的未税总额为 118 欧元。完全匹配时，已匹配金额为 118 欧元，未结金额为 0 欧元。
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-screen-en.png" alt="合成 Sandbox 组织中的英文 PO Matching 界面：搜索、工具栏、采购订单行项目、空的发票行项目表格和发票预览"><figcaption><p>采购订单已加载；示例发票没有可关联的提取行项目。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-zh.png" alt="完全匹配：三条发票行均已关联，已匹配 118 欧元，未结金额为 0 欧元。"><figcaption><p>完全匹配：三条发票行均已关联，已匹配 118 欧元，未结金额为 0 欧元。</p></figcaption></figure>
 
 ## 查找并检查采购订单
 
-1. 在 **PO Matching** 中打开一张发票。如果你的组织有多个采购订单，请在 **Search purchase order number** 中输入编号。
+1. 在 **PO Matching** 中打开该发票。识别到采购订单号时，DocBits 会加载对应订单。只有在缺少编号或需要查看其他订单时，才使用手动搜索。
 2. 选择搜索框旁的筛选图标，可按 **Keyword**、**Supplier**、**Status**、**Order Status**、日期、金额范围、排序方式以及显示的记录数进行筛选。选择 **More** 查看其他条件。选择 **Apply** 执行搜索，或选择 **Clear** 重置筛选条件。
 3. 选择表格上方的采购订单编号，查看其行项目。编号旁的刷新图标会重新加载该订单的数据。重新加载可能取决于已配置的集成。
-4. 将每个采购订单行项目与发票及其提取表格进行比较。行项目上的 **+** 可展开匹配详情；它本身不会将该行项目关联到发票。在示例中，由于不存在此类匹配，展开后会显示 **No multi-match Information**。
+4. 将每条采购订单行与发票及其提取表格进行比较。行上的 **+** 用于打开现有匹配详情；它本身不会将该行与发票关联。
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-filters-en.png" alt="英文采购订单搜索筛选器，显示供应商、状态、日期和金额限制、排序方式以及 Apply 和 Clear 按钮"><figcaption><p>使用筛选面板缩小显示的采购订单范围。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-zh.png" alt="手动搜索会显示测试采购订单的三条行项目。需要时可以使用筛选器；已识别的订单号无需再次手动搜索。"><figcaption><p>手动搜索会显示测试采购订单的三条行项目。需要时可以使用筛选器；已识别的订单号无需再次手动搜索。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-199-po-line-en.png" alt="已展开的采购订单行项目，显示 No multi-match Information 和空的发票行项目表格"><figcaption><p>有匹配详情时，展开的行项目会显示这些详情。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-zh.png" alt="部分匹配：纸张的 50 欧元已匹配，仍有 68 欧元未结。部分匹配不表示固定的百分之五十门槛。"><figcaption><p>部分匹配：纸张的 50 欧元已匹配，仍有 68 欧元未结。部分匹配不表示固定的百分之五十门槛。</p></figcaption></figure>
 
 ## 匹配行项目并查看结果
 
@@ -44,7 +52,7 @@ PO 编号发生更改或被新检测到后，保存操作可能会再次触发�
 
 ### 一次匹配多个行项目 <a id="multi-matches"></a>
 
-如果匹配规则允许，一条发票行项目可能对应多个订单行项目，反之亦然。展开行项目上的 **+** 详情，检查现有的多行匹配。请核对合计数量和价格，而不只是其中一条行项目。像上方合成示例中的空详情面板表示没有可检查的多行匹配。有关更改关联的信息，请参阅[采购订单匹配工具](purchase-order-matching-tools.md)。
+如果匹配规则允许，一条发票行项目可能对应多个订单行项目，反之亦然。展开行项目上的 **+** 详情，检查现有的多行匹配。请核对合计数量和价格，而不只是其中一条行项目。空的详情面板表示没有可检查的多行匹配。有关更改关联的信息，请参阅[采购订单匹配工具](purchase-order-matching-tools.md)。
 
 ### 数量、差异和折扣
 

@@ -1,5 +1,13 @@
 # 采购订单容差设置 / 其他采购订单容差
 
+## 配置采购订单匹配规则和容差
+
+本教程打开“发票”文档类型，检查已发布的规则版本，并将其克隆为未激活的草稿。内容包括规则类型、匹配阶段内的优先级、比较列、数量基准、匹配模式以及容差计算。仅保存教程草稿；活动版本和全局容差保持不变。百分之五的计算只是示例，并不修改当前容差。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/zh.mp4" %}
+
+[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/zh.html)
+
 ## **配置采购订单容差的设置**
 
 前往 **Settings → General Settings → Document Types → More Settings → Purchase Order Section → PO Tolerance Setting**

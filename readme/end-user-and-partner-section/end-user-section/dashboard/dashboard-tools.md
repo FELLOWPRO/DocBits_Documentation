@@ -5,7 +5,7 @@ Die Werkzeuge stehen neben der Dashboard-Suche. Bewegen Sie den Mauszeiger über
 | Werkzeug | Verwendung |
 | --- | --- |
 | Aktualisieren | Liste und Status neu laden. Ein Änderungshinweis an der Schaltfläche zeigt an, dass neuere Daten verfügbar sind. |
-| Erweiterte Einstellungen (Zahnrad) | Spalteneinstellungen, Tastenkürzel und E-Mail-Importprotokoll öffnen. Organisationsweite Einstellungen erfordern Administratorrechte. |
+| Erweiterte Einstellungen (Zahnrad) | **Weitere Einstellungen**, die **Tastaturkurzbefehle**, das **Importprotokoll** und den Dialog **Einstellungen für Spalten** öffnen. Organisationsweite Einstellungen erfordern Administratorrechte. |
 | Dokument scannen | Scanner-Dialog öffnen, sofern das Scannen aktiviert und ein kompatibler Scanner verfügbar ist. Gerät und Einstellungen vor dem Start auswählen. |
 | Analysen | Statusstatistiken im Dashboard einblenden. Eine Statuskategorie auswählen, um die Liste einzugrenzen. |
 | E-Mail-Import starten | Einen Import mit der vorhandenen Postfachkonfiguration starten. Damit wird kein Postfach eingerichtet. |

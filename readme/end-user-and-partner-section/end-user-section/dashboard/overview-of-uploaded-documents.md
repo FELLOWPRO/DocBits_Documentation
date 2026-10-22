@@ -10,6 +10,6 @@ Wenn die Gruppierung verfügbar ist, wählen Sie oberhalb der Tabelle ein Gruppi
 
 Über **+** neben den Dokumenttyp-Reitern blenden Sie weitere Reiter ein. Ziehen Sie Reiter in die gewünschte Reihenfolge. Das Entfernen eines Reiters ändert nur die Ansicht und löscht keine Dokumente.
 
-Öffnen Sie das Zahnrad und anschließend die Spalteneinstellungen. Verschieben Sie Spalten zwischen der ausgeblendeten und der sichtbaren Liste und ordnen Sie sichtbare Spalten per Ziehen an. Sie können auch Felder eines Dokumenttyps hinzufügen. Siehe [Dokumentspalten ändern](change-document-columns.md).
+Öffnen Sie das Zahnrad **Erweiterte Einstellungen** rechts neben der Suchleiste und dort die Schaltfläche **Einstellungen für Spalten**. Verschieben Sie Spalten zwischen der ausgeblendeten und der sichtbaren Liste und ordnen Sie sichtbare Spalten per Ziehen an. Sie können auch Felder eines Dokumenttyps hinzufügen. Siehe [Dokumentspalten ändern](change-document-columns.md).
 
 Suche, Dokumentaktionen und gespeicherte Ansichten erklärt die [Dashboard-Anleitung](README.md).

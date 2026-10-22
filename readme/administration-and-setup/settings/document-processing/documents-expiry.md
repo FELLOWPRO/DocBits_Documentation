@@ -9,7 +9,7 @@ Automatyczne usuwanie kontrolują dwa ustawienia:
 | Ustawienie | Co kontroluje |
 |---------|------------------|
 | **Delete document after** | Jak długo każdy przetworzony dokument jest przechowywany, zanim zostanie automatycznie usunięty. |
-| **Delete finished document after** | Jak długo dokument zakończony (w pełni przetworzony i wyeksportowany) jest przechowywany, zanim zostanie automatycznie usunięty. |
+| **Usuń gotowy dokument po** | Jak długo dokument zakończony (w pełni przetworzony i wyeksportowany) jest przechowywany, zanim zostanie automatycznie usunięty. |
 
 Dla każdego ustawienia wybierasz przedział czasu z listy rozwijanej:
 

@@ -1,26 +1,26 @@
 # e-docs
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
+DocBits Poradnik dotyczący e-faktury: Przetwarzaj XRechnung / ZUGFeRD (Factur-X), sprawdzaj poprawność danych i automatyzuj przepływy pracy
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edi_overview.png" alt="Docbits Edi Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
 
-#### Overview
+#### Przegląd
 
-In Docbits, the EDI settings provide tools for defining and managing the structure and format of EDI messages that correspond to various document types, such as invoices or purchase orders. The settings enable the customization of EDI messages to comply with the standards and requirements specific to different trading partners and industries.
+W Docbits ustawienia EDI zapewniają narzędzia do definiowania i zarządzania strukturą i formatem wiadomości EDI, które odpowiadają różnym typom dokumentów, takim jak faktury lub zamówienia. Ustawienia umożliwiają dostosowanie wiadomości EDI do standardów i wymagań specyficznych dla różnych partnerów handlowych i branż.
 
-#### Key Features and Options
+#### Najważniejsze funkcje i opcje
 
 1. **EDI Configuration Elements**:
-   * **Structure Descriptor**: Defines the basic structure of the EDI document, including segment ordering, mandatory fields, and qualifiers necessary for the EDI document to be valid.
-   * **Transformation**: Specifies the transformations applied to convert the document data into an EDI formatted message. This typically involves specifying mappings from document fields to EDI segments and elements.
-   * **Preview**: Allows administrators to view how the EDI message will look after transformation, helping to ensure accuracy before transmission.
-   * **Extraction Paths**: Shows the paths used to extract values from the document, which are then used to populate the EDI message.
+   * **Deskryptor struktury**: Definiuje podstawową strukturę dokumentu EDI, w tym kolejność segmentów, pola obowiązkowe i kwalifikatory niezbędne, aby dokument EDI był ważny.
+   * **Transformacja**: Określa transformacje zastosowane do konwersji danych dokumentu na wiadomość w formacie EDI. Zwykle obejmuje to określenie odwzorowań pól dokumentu na segmenty i elementy EDI.
+   * **Podgląd**: Umożliwia administratorom sprawdzenie, jak wiadomość EDI będzie wyglądać po transformacji, pomagając zapewnić dokładność przed transmisją.
+   * **Ścieżki wyodrębniania**: Pokazuje ścieżki używane do wyodrębniania wartości z dokumentu, które są następnie wykorzystywane do wypełnienia komunikatu EDI.
 2. **XSLT Editor**:
-   * Used for editing and validating the XSLT (eXtensible Stylesheet Language Transformations) used in the transformation process. XSLT is a powerful language designed for transforming XML documents into other XML documents or other formats like HTML, text, or even other XML structures.
+   * Używane do edycji i sprawdzania poprawności XSLT (eXtensible Stylesheet Language Transformations) używanego w procesie transformacji. XSLT to potężny język przeznaczony do przekształcania dokumentów XML na inne dokumenty XML lub inne formaty, takie jak HTML, tekst, a nawet inne struktury XML.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-pl.png" alt="Aktywny atrybut STRUCTUREDESCRIPTOR: deskryptor struktury JSON w edytorze tylko do odczytu."><figcaption><p>Aktywny atrybut STRUCTUREDESCRIPTOR: deskryptor struktury JSON w edytorze tylko do odczytu.</p></figcaption></figure>
 
 ## Faktycznie używane reguły i aktywacja
 
@@ -29,3 +29,8 @@ Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z
 ## Przewodniki krajowe
 
 Przewodniki krajowe zawierają dokładne oznaczenia formatów, składnię, ograniczenia wersji i sprawdzony stan konfiguracji. [Formaty eDocs, wersje i przewodniki krajowe](supported-electronic-documents/README.md).
+
+
+Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
+
+Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.

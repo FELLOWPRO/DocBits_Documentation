@@ -17,7 +17,7 @@ Ta strona wyjaśnia, jak aktywować i korzystać z **Portalu dostawców**, a tak
 
 Po włączeniu funkcji **Portalu dostawców**, nowa sekcja **Ustawienia dostawcy** pojawi się na dole menu **Ustawienia**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/prior-t012-pl.png" alt="Ustawienia ogólne portalu dostawców: dodatkowe pola zaproszenia."><figcaption><p>Ustawienia ogólne portalu dostawców: dodatkowe pola zaproszenia.</p></figcaption></figure>
 
 [**Ustawienia ogólne dostawcy**](../../settings/supplier-setting/supplier-general-settings.md): Tutaj możesz dostosować **Portal dostawców**, przesyłając logo swojej firmy—wyświetlane w nagłówku wszystkich szablonów e-maili—i zarządzając dokumentami prawnymi, takimi jak Warunki korzystania i Polityka prywatności.
 

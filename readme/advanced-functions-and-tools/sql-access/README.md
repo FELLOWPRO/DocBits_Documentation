@@ -1,4 +1,4 @@
-# SQL Access
+# Dostęp SQL
 
 <figure><img src="../../.gitbook/assets/sql_direct_access_settings.png" alt="Ustawienia SQL Direct Access"><figcaption></figcaption></figure>
 
@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### Tworzenie widoków zmaterializowanych
+### Przykład agregacji za pomocą SELECT
 
-Zalecamy tworzenie widoków zmaterializowanych do wstępnego obliczania danych, aby zwiększyć wydajność w narzędziach analitycznych, takich jak PowerBI:
+Poniższe zapytanie agreguje istniejące wiersze i nie tworzy widoku zmaterializowanego. Dostęp tylko do odczytu nie nadaje uprawnień zapisu potrzebnych do jego utworzenia. Dostosuj nazwy tabel i konwersje do schematu, formatu liczb oraz waluty. Nie sumuj różnych walut bez jawnego przeliczenia.
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

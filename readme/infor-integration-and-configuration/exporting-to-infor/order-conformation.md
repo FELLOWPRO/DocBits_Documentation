@@ -5,7 +5,7 @@ Niewielka aktualizacja dla potwierdzenia zamówienia
 
 
 {% hint style="info" %}
-Link do [pliku](../../../../../BOD-Mapping%20\(OrderConfirmation\).properties)
+Link do [pliku](../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties)
 {% endhint %}
 
 ```
@@ -205,5 +205,5 @@ TNV_InvoiceTable_name=InvoiceRows
 
 
 {% hint style="info" %}
-Zobacz tutaj [przykład](../../../../../M3\_CaptureDocumentToProcessPurchaseOrder2.xml) przepływu pracy Infor OS - aktualizacja z 11 czerwca 2024
+Zobacz tutaj [przykład](../../.gitbook/assets/M3_CaptureDocumentToProcessPurchaseOrder2.xml) przepływu pracy Infor OS - aktualizacja z 11 czerwca 2024
 {% endhint %}

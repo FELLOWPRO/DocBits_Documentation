@@ -35,5 +35,5 @@ Profil Extended standardu ZUGFeRD 1.0 jest najbardziej rozbudowanym profilem i o
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

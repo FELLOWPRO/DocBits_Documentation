@@ -2,7 +2,7 @@
 description: DocBits Workflow Engine
 ---
 
-# Workflow
+# Przepływ pracy
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
 

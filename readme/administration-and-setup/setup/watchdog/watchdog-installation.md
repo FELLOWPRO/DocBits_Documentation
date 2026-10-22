@@ -1,6 +1,6 @@
 # Instalacja WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="Kroki instalacji WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-pl.svg" alt="Instalacja WatchDog i główne wymagania."><figcaption><p>Instalacja WatchDog i główne wymagania.</p></figcaption></figure>
 
 > **Zalecane:** Użyj nowoczesnej konfiguracji opisanej poniżej. Konfiguracje WatchDog są teraz tworzone bezpośrednio w aplikacji DocBits — lokalne pliki konfiguracyjne nie są potrzebne.
 
@@ -30,7 +30,7 @@ C:\WatchDog\Export\        ← Export folder for exported files
 
 Pobierz `WatchDog.exe` z aplikacji DocBits:
 
-**Settings → Document Processing → WatchDog → karta General → Download**
+**Ustawienia → Przetwarzanie dokumentu → WatchDog → karta Ogólne → Pobierz**
 
 Umieść pobrany plik `WatchDog.exe` w `C:\WatchDog\`.
 

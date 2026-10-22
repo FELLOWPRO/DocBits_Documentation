@@ -4,35 +4,35 @@
 
 Strona Company Information pozwala zarządzać profilem firmy, preferencjami i szczegółami subskrypcji. Jest podzielona na następujące sekcje:
 
-## Company Information
+## Informacje o firmie
 
 Ta sekcja zawiera podstawowe dane firmy, pogrupowane w cztery obszary:
 
-### Company Identity
+### Dane identyfikacyjne firmy
 
 * **Nazwa** *(wymagane)*: Prawna nazwa Twojej firmy.
 
-### Address
+### Adres
 
 * **Ulica + Numer**: Adres ulicy Twojej firmy.
 * **Kod pocztowy**: Kod pocztowy.
 * **Miasto**: Nazwa miasta.
 * **Kraj**: Wybierz swój kraj z listy rozwijanej.
 
-### Legal Information
+### Informacje prawne
 
 * **Identyfikator firmy**: Unikalny identyfikator Twojej firmy, używany w integracjach i do wewnętrznych odniesień.
 * **Numer identyfikacyjny podatnika**: Twój numer identyfikacji podatkowej na potrzeby sprawozdawczości finansowej.
 * **ID rejestru handlowego**: Twój numer w rejestrze handlowym na potrzeby dokumentacji prawnej.
 
-### Contact
+### Kontakt
 
 * **Oficjalny numer telefonu firmy**: Główny numer telefonu Twojej firmy.
 * **E-mail**: Główny adres e-mail używany do oficjalnej komunikacji.
 
 Po wprowadzeniu lub zaktualizowaniu dowolnych pól kliknij **Zapisz**, aby zastosować zmiany. Ikony **?** obok identyfikatorów prawnych pokazują dodatkowe wskazówki dotyczące pól. Wybierz nagłówek sekcji, aby rozwinąć lub zwinąć formularz.
 
-## E-mail domains
+## Domeny poczty e-mail
 
 Administratorzy organizacji mogą otworzyć **Ustawienia → Informacje o firmie → Domeny poczty elektronicznej**, aby zarządzać domenami używanymi do automatycznego przypisywania do organizacji. Gdy ktoś loguje się przez Microsoft lub Google i nie jest jeszcze członkiem żadnej organizacji, DocBits może przypisać go do tej organizacji, jeśli jego adres e-mail używa jednej z wymienionych domen. Domena może należeć tylko do jednej organizacji.
 
@@ -42,7 +42,7 @@ Wprowadź w polu samą domenę, na przykład `example.com`, i wybierz **Dodaj do
 
 Przed dodaniem domeny sprawdź, która organizacja powinna przyjmować nowe logowania. Aby zarządzać istniejącymi członkostwami, przejdź do [Users](../groups-users-and-permissions/users/README.md).
 
-## Company Preferences
+## Preferencje firmy
 
 Skonfiguruj domyślne ustawienia dla całej firmy:
 
@@ -52,14 +52,14 @@ Skonfiguruj domyślne ustawienia dla całej firmy:
 
 Po wprowadzeniu zmian kliknij **Zapisz**.
 
-## App-Color
+## Kolor aplikacji
 
 Dostosuj kolor podstawowy interfejsu DocBits. Jest to przydatne do wizualnego odróżniania różnych środowisk (np. dev od produkcyjnego).
 
 * **Kolor**: Wprowadź kod koloru szesnastkowego (np. `#2388AE`) lub użyj próbnika kolorów.
 * Kliknij **Zapisz**, aby zastosować, lub **Nastawić**, aby przywrócić kolor domyślny.
 
-## Subscription Plan
+## Plan subskrypcji
 
 Wyświetl aktywne plany subskrypcji i ich szczegóły:
 
@@ -70,7 +70,7 @@ Wyświetl aktywne plany subskrypcji i ich szczegóły:
 * **Liczba podorganizacji**: Liczba skonfigurowanych podorganizacji.
 * **Liczba dostawców**: Liczba zarejestrowanych dostawców.
 
-## Subscription Usage
+## Wykorzystanie subskrypcji
 
 Monitoruj miesięczne zużycie tokenów i workflowów:
 

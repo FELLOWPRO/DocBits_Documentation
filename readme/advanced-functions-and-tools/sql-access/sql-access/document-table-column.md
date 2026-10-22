@@ -1,4 +1,4 @@
-# Document table column
+# Kolumna tabeli dokumentu
 
 ## Kolumny
 
@@ -14,8 +14,8 @@
 * `clean_field`: boolean
 * `alphanumeric_field`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 
 ## Analiza i opis

@@ -35,5 +35,5 @@ Factur-X 1.0.07.2 jest odpowiednikiem ZUGFeRD 2.3.2, wydanego w listopadzie 2024
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

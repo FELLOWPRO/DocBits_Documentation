@@ -98,7 +98,7 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 * **Nie może** importować modułów ani wywoływać usług zewnętrznych. To ograniczony Python. Błąd w skrypcie jest zapisywany w logu i nigdy nie zatrzymuje przetwarzania dokumentu, więc skrypt **nie** jest niezawodnym sposobem blokowania dokumentu: zamiast tego oznacz pole jako niepoprawne lub utwórz zadanie.
 * **Więcej informacji:** [Skrypt](settings/global-settings/document-types/script/README.md)
 
-### Standard Workflow
+### Standardowy przepływ pracy
 
 * **Użyj go, gdy** następny krok zależy od dokumentu: przypisanie do użytkownika lub grupy, zatwierdzenie lub odrzucenie, utworzenie zadania, wysłanie e-maila, eksport, ustawienie statusu, wywołanie API.
 * **Działa**, gdy dokument osiągnie wybrany przez Ciebie status, czyli po walidacji. Może też wystartować z webhooka, według harmonogramu lub ręcznie.
@@ -106,7 +106,7 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 * **Nie może** się rozgałęziać, czekać na kilka warunków ani reagować na błąd karty w osobnej ścieżce. Do tego użyj Advanced Workflow.
 * **Więcej informacji:** [Standard Workflow](workflow/standard-workflow-builder.md)
 
-### Advanced Workflow
+### Zaawansowany przepływ pracy
 
 * **Użyj go, gdy** jeden dokument wymaga różnych ścieżek: rozgałęzienia według warunku, kilka warunków połączonych przez ALL / ANY oraz ścieżka dla błędów lub niespełnionych warunków.
 * **Działa** na tych samych zdarzeniach co Standard Workflow. Wymaga subskrypcji DocFlow Advanced.
@@ -114,7 +114,7 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 * **Nie może** robić tego, co dzieje się przed walidacją: startuje po zmianie statusu. Logika sprzed walidacji należy do Skryptu lub reguły.
 * **Więcej informacji:** [Advanced Workflow](workflow/advanced-workflow-builder.md)
 
-### Workflow SDK (Card SDK)
+### SDK przepływów pracy (Card SDK)
 
 * **Użyj go, gdy** potrzebujesz karty, która nie istnieje, na przykład warunku lub akcji specyficznej dla aplikacji partnera.
 * **Działa** za każdym razem, gdy uruchamia się Workflow zawierający tę kartę.

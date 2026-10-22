@@ -133,7 +133,7 @@ klientów._
   „przypisano” pozostaje datą przypisania. E-maile zadań renderują się też
   poprawnie w Outlooku.
 
-### Workflow Builder
+### Edytor przepływów pracy
 
 - Wyszukiwanie, kolejność sortowania i stronicowanie na liście workflow
   pozostają spójne podczas filtrowania.

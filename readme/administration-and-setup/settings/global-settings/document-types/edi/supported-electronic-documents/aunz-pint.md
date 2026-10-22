@@ -30,7 +30,7 @@ AUNZ PINT to australijska/nowozelandzka implementacja międzynarodowego modelu f
 
 ## Domyślny podgląd
 
-<figure><img src="aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT</p></figcaption></figure>
 
 ## Mapowanie pól
 

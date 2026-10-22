@@ -2,7 +2,7 @@
 
 ## Karty stanów — kompletny przewodnik
 
-Karty warunków na tej stronie trafiają do grup **Kiedy** i **I** w Kreatorze przepływów — decydują, czy akcje Then zostaną wykonane. Obszar roboczy — **Dodaj kartę**, **Zapisz szablon**, **Zapisz przepływ pracy** — opisuje [przewodnik Standard Workflow](../standard-workflow-builder):
+Karty warunków na tej stronie trafiają do grup **Kiedy** i **I** w Kreatorze przepływów — decydują, czy akcje Then zostaną wykonane. Obszar roboczy — **Dodaj kartę**, **Zapisz szablon**, **Zapisz przepływ pracy** — opisuje [przewodnik Standard Workflow](../README.md):
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pl.png" alt="Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
@@ -22,7 +22,7 @@ Karty warunków na tej stronie trafiają do grup **Kiedy** i **I** w Kreatorze p
 
 ## Warunki stanu i statusu dokumentu
 
-### Karta: CONDITION\_DOC\_STATUS\_IS\_ISNOT / Document Status Check
+### Karta: CONDITION\_DOC\_STATUS\_IS\_ISNOT / Kontrola statusu dokumentu
 
 #### Cel
 
@@ -216,7 +216,7 @@ NO: Use cached PO data
 
 ## Warunki osoby przypisanej
 
-### Karta: CONDITION\_USER\_IS\_ISNOT / User Check
+### Karta: CONDITION\_USER\_IS\_ISNOT / Kontrola użytkownika
 
 #### Cel
 
@@ -261,7 +261,7 @@ NO: Stop
 
 ***
 
-### Karta: CONDITION\_GROUP\_IS\_ISNOT / Group Check
+### Karta: CONDITION\_GROUP\_IS\_ISNOT / Kontrola grupy
 
 #### Cel
 
@@ -299,7 +299,7 @@ NO: Stop
 
 ## Warunki daty i godziny
 
-### Karta: CONDITION\_TIME\_IS\_ISNOT\_BETWEEN / Date Range Check
+### Karta: CONDITION\_TIME\_IS\_ISNOT\_BETWEEN / Sprawdzenie zakresu dat
 
 #### Cel
 
@@ -427,7 +427,7 @@ YES: Delivery date acceptable ✅
 
 ## Warunki logiczne
 
-### Karta: CONDITION\_DECISION\_TREE\_DATA / Zwroty tabeli decyzyjnej
+### Karta: CONDITION\_DECISION\_TREE\_DATA / Wartości zwracane przez tabelę decyzyjną
 
 #### Cel
 
@@ -463,7 +463,7 @@ If NO: Use default routing
 
 ***
 
-### Karta: CONDITION\_CONTINUE\_CHANCE / Random Probability
+### Karta: CONDITION\_CONTINUE\_CHANCE / Losowe prawdopodobieństwo
 
 #### Cel
 
@@ -719,7 +719,7 @@ NO: Assign to Finance Manager
 | CONDITION\_GROUP\_IS\_ISNOT\_IN\_LIST       | Grupa na liście       | W / NIE W   | Wiele grup              |
 | CONDITION\_TIME\_IS\_ISNOT\_BETWEEN         | Zakres dat            | POMIĘDZY       | Okno czasowe            |
 | CONDITION\_TODAY\_IS\_ISNOT                 | Dzisiejsza data       | JEST / NIE JEST   | Sprawdzenie dzisiaj     |
-| CONDITION\_DECISION\_TREE\_DATA             | Zwroty DT             | MA / NIE MA | Sprawdzenie wyniku DT   |
+| CONDITION\_DECISION\_TREE\_DATA             | Wartości zwracane DT  | MA / NIE MA | Sprawdzenie wyniku DT   |
 | CONDITION\_CONTINUE\_CHANCE                 | Prawdopodobieństwo    | CHANCE        | Bramka losowa           |
 | CONDITION\_MODULE\_IS\_ISNOT\_ACTIVE        | Funkcja włączona      | JEST / NIE JEST   | Sprawdzenie funkcji     |
 | CONDITION\_HTTPS\_REQUEST\_STATUS           | Wynik żądania         | STATUS        | Sprawdzenie odpowiedzi  |

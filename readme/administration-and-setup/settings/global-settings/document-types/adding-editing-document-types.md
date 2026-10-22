@@ -1,7 +1,7 @@
 # Dodawanie/Edycja Typów Dokumentów
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+DocBits Wyjaśnienie typów dokumentów: tworzenie, konfigurowanie i przypisywanie ustawień przetwarzania
 {% endembed %}
 
 ## Dodawanie lub edycja typów dokumentów w DocBits obejmuje kilka kroków. Kroki te obejmują definiowanie układów, pól i reguł ekstrakcji.

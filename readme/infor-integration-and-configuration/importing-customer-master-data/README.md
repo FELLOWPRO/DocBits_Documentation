@@ -1,2 +1,2 @@
-# Importing Master Data
+# Importowanie danych podstawowych
 

@@ -1,10 +1,14 @@
 # Moduł
 
-<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Ustawienia modułów"><figcaption><p>Strona ustawień modułów</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-pl.png" alt="Moduły zamówień i finansów w istniejącym stanie konfiguracji. Opis integracji Vertex zawiera błędne określenie „podatku wierzchołkowego”; dotyczy on usługi podatkowej Vertex."><figcaption><p>Moduły zamówień i finansów w istniejącym stanie konfiguracji. Opis integracji Vertex zawiera błędne określenie „podatku wierzchołkowego”; dotyczy on usługi podatkowej Vertex.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-pl.png" alt="Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska."><figcaption><p>Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-dashboards-analytics-pl.png" alt="Moduły pulpitów i analiz w istniejącym stanie konfiguracji."><figcaption><p>Moduły pulpitów i analiz w istniejącym stanie konfiguracji.</p></figcaption></figure>
 
 Strona Module pozwala włączać i wyłączać opcjonalne funkcje w DocBits. Każda sekcja grupuje powiązane moduły, które można włączyć lub wyłączyć.
 
-## Purchase Order
+## Zamówienie zakupu
 
 Ustawienia PO Matching i walidacji.
 
@@ -13,30 +17,30 @@ Ustawienia PO Matching i walidacji.
 | **Auto Export if PO matched 100%** | Automatycznie eksportuje dokument, gdy dopasowanie PO osiągnie 100%. |
 | **PO Dashboard** | Włącza dashboard zamówień zakupu. Zawiera pole **PO Date Limit**, które ogranicza dane PO według daty. |
 | **PO Shipment Order** | Włącza przetwarzanie zleceń wysyłkowych powiązanych z zamówieniami zakupu. |
-| **Shipment Order Dashboard** | Włącza dedykowany dashboard dla zleceń wysyłkowych. |
+| **Panel zamówień wysyłki** | Włącza dedykowany dashboard dla zleceń wysyłkowych. |
 
-## Auto Accounting
+## Automatyczne księgowanie
 
 | Ustawienie | Opis |
 |---------|-------------|
 | **Auto Accounting** | Włącza automatyczne księgowanie dokumentów. Wybierz typ ERP (np. LN, M3). |
 
-## Dashboards
+## Panele
 
 | Ustawienie | Opis |
 |---------|-------------|
-| **Advance Shipment Dashboard** | Dashboard do monitorowania zaawansowanych działań związanych z wysyłkami. |
+| **Panel wysyłkowy z wyprzedzeniem** | Dashboard do monitorowania zaawansowanych działań związanych z wysyłkami. |
 | **Invoice Dashboard** | Dashboard do monitorowania i analizy faktur. |
-| **Full Text Search** | Włącza wyszukiwanie pełnotekstowe we wszystkich dokumentach. |
+| **Wyszukiwanie pełnotekstowe** | Włącza wyszukiwanie pełnotekstowe we wszystkich dokumentach. |
 | **Analytics Dashboard** | Włącza dashboard z przeglądem analitycznym. |
 
-## Database Access
+## Dostęp do bazy danych
 
 | Ustawienie | Opis |
 |---------|-------------|
 | **DB Access** | Włącza bezpośredni dostęp do bazy danych dla organizacji. |
 
-## AI Dashboard
+## Panel AI
 
 | Ustawienie | Opis |
 |---------|-------------|
@@ -45,13 +49,13 @@ Ustawienia PO Matching i walidacji.
 | **Clickhouse Direct Access** | Włącza bezpośredni dostęp do bazy danych Clickhouse. |
 | **Supplier Statistics** | Włącza statystyki i raportowanie na poziomie dostawców. |
 
-## Shipping & Supplier
+## Wysyłka i dostawca
 
 | Ustawienie | Opis |
 |---------|-------------|
 | **Supplier Portal** | Włącza portal dostawców, umożliwiający współpracę z dostawcami. |
 
-## Document Type
+## Typ dokumentu
 
 | Ustawienie | Opis |
 |---------|-------------|
@@ -62,29 +66,29 @@ Ustawienia PO Matching i walidacji.
 | **Models & Labels** | Zarządzanie modelami AI i etykietami do rozpoznawania dokumentów. |
 | **Document Script** | Włącza własne skrypty do przetwarzania dokumentów. |
 | **Document Scan** | Włącza funkcję skanowania dokumentów. |
-| **Bar-Code/QR Code Extraction** | Wyodrębnia dane z kodów kreskowych i kodów QR w dokumentach. Wybierz obsługiwane typy kodów. |
+| **Kod kreskowy/QR Ekstrakcja kodu** | Wyodrębnia dane z kodów kreskowych i kodów QR w dokumentach. Wybierz obsługiwane typy kodów. |
 | **Custom Master Data** | Włącza własne pola danych podstawowych. |
 | **Tasks & Notifications** | Włącza zarządzanie zadaniami i powiadomienia. Zawiera przełącznik **Dashboard Tasks Count**. |
 | **DocBits Operator** | Włącza funkcję automatyzacji przeglądarki DocBits Operator. |
 | **DocNet** | Włącza DocNet, czyli sieciową wymianę dokumentów. |
 | **IDM ACL Updater** | Aktualizuje listy kontroli dostępu (ACL) w Infor Document Management. Prześlij plik ION-Mapping i skonfiguruj mapowania Infor-Doctype na ACL. |
 | **Barcode Assignment** | Włącza przypisywanie kodów kreskowych do dokumentów. |
-| **Set Negative Sign For Credit Notes** | Automatycznie stosuje znak ujemny do kwot not kredytowych. |
+| **Ustaw znak ujemny dla not kredytowych** | Automatycznie stosuje znak ujemny do kwot not kredytowych. |
 
-## BOD Connection Stream
+## Strumień połączenia BOD
 
 | Ustawienie | Opis |
 |---------|-------------|
 | **BOD Connection Stream** | Włącza integrację BOD (Business Object Document). Wyświetla **Stream Name** używaną w połączeniu. |
 
-## Analytics
+## Analityka
 
 | Ustawienie | Opis |
 |---------|-------------|
 | **Use PostgreSQL for Quality Analytics** | Przełączanie między Prometheus (czas rzeczywisty, dane resetowane przy wdrożeniu) a PostgreSQL (trwałe przez 90 dni, analiza trendów, najgorzej działające pola). |
 
-## Vertex Tax Integration
+## Integracja podatkowa Vertex
 
 | Ustawienie | Opis |
 |---------|-------------|
-| **Vertex Tax Integration** | Włącza obliczanie podatków przez Vertex. Skonfiguruj **Base URL**, **Client ID** i **Client Secret**. Użyj **Test Connection**, aby zweryfikować połączenie. |
+| **Integracja podatkowa Vertex** | Włącza obliczanie podatków przez Vertex. Skonfiguruj **Base URL**, **Client ID** i **Client Secret**. Użyj **Test Connection**, aby zweryfikować połączenie. |

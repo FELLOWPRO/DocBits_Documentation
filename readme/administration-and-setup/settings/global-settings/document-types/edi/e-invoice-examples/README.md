@@ -1,7 +1,7 @@
 # Przykłady E-Faktur
 
 {% embed url="https://youtu.be/li8KjWO18eU" %}
-DocBits E-Invoice Tutorial: Process XRechnung & ZUGFeRD/Factur-X, Validate Data & Automate Workflows
+DocBits Poradnik dotyczący e-faktury: Przetwarzanie XRechnung i ZUGFeRD/Factur-X, sprawdzanie poprawności danych i automatyzacja przepływów pracy
 {% endembed %}
 
 **XRechnung UBL 1.2:**
@@ -74,7 +74,7 @@ Jak plik jest eksportowany:
 [xrechnung-3.0.md](xrechnung-3.0.md)
 {% endcontent-ref %}
 
-**XRechnung Cross Industry Invoice:**
+**XRechnung Faktura międzybranżowa:**
 
 * Przykładowy plik:
 

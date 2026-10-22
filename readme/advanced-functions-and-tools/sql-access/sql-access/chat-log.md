@@ -1,4 +1,4 @@
-# Chat Log
+# Dziennik czatu
 
 ## Tabela `public.chat_log`
 
@@ -9,10 +9,10 @@
 * `supplier_as_org_id`: wewnętrzne
 * `message`: wewnętrzne
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: znacznik czasu ze strefą czasową
 * `last_modified_by`: wewnętrzne
 * `deleted_by`: wewnętrzne
 * `chat_type`: wewnętrzne

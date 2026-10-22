@@ -7,7 +7,7 @@
 3. Skonfiguruj następujące ustawienia:
    * **Name**: Ustaw na `DocBits_Export`.
    * **Description**: Ustaw na `DocBits_Export`.
-   * **Uncheck**: _Application has IMS End Point_.
+   * **Odznacz**: _Aplikacja ma IMS Punkt końcowy_.
    * **ION API Client ID**:
      * Otwórz plik ION API.
      * Wyszukaj `"ci"` w pliku.
@@ -43,7 +43,7 @@
    * **Name**: `DocBits_Export_to_M3`
 4. Dodaj węzły do przepływu:
 
-#### Application Node
+#### Węzeł aplikacji
 
 1. Dodaj **Application Node** do przepływu.
    * **Name**: `DocBits` lub `DocBits-Export`.
@@ -56,7 +56,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
-#### Mapping Node
+#### Węzeł mapowania
 
 1. Dodaj **Mapping Node** po prawej stronie Application Node.
    * **Name**: `Capt2process`.
@@ -64,7 +64,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
-#### Application Node
+#### Węzeł aplikacji
 
 1. Dodaj **Application Node** po prawej stronie poprzedniego Mapping Node.
    * **Name**: `M3`.
@@ -77,7 +77,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
-#### API Node
+#### Węzeł API
 
 1. Dodaj **API Node** po prawej stronie Application Node.
    * **Name**: `DocBits-Error`.
@@ -95,7 +95,7 @@
 
 ## Krok 4: Skonfiguruj Export w DocBits
 
-### On-Premise:
+### Lokalnie:
 
 1. Otwórz **DocBits**.
 2.  Przejdź do **Ustawienia > Przetwarzanie dokumentów > Eksportuj**.
@@ -111,7 +111,7 @@
    * **IDM Mapping File**: (Podaj odpowiednią ścieżkę pliku lub lokalizację).
    * **BOD Mapping File**: (Podaj odpowiednią ścieżkę pliku lub lokalizację).
 
-### Cloud:
+### Chmura:
 
 1. Otwórz **DocBits**.
 2.  Przejdź do **Ustawienia > Przetwarzanie dokumentów > Eksportuj**.

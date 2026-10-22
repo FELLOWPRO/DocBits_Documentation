@@ -35,5 +35,5 @@ Profil Basic standardu ZUGFeRD 1.0 zawiera podstawowe pola faktury, takie jak nu
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

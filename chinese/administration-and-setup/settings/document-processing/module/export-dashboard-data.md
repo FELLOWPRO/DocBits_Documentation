@@ -1,13 +1,11 @@
 # 导出仪表板数据
 
-1.  **导航至设置**：前往 **Settings → Module**。\\
+此功能将仪表板表格导出为文件，与将发票或采购订单发送到 ERP 的业务导出不同。可用格式及入口取决于当前版本、权限和组织配置。
 
-    <figure><img src="../../../../.gitbook/assets/image (158).png" alt="设置模块菜单选项"><figcaption></figcaption></figure>
-2.  **启用导出仪表板数据**：找到并启用 **Export Dashboard Data** 选项。\\
+1. 打开需要导出的仪表板，核对组织、筛选条件、时间范围和表格列。
+2. 如果工具栏提供**导出此表格**菜单，展开后选择 **CSV** 或 **XLSX**（以当前实际菜单为准）。点击格式选项会开始实际导出；仅展开菜单不会生成文件。
+3. 下载完成后，检查文件格式、表头、行数及代表性记录，确认导出范围是否符合预期。不要仅凭按钮可见就认定数据已成功导出。
 
-    <figure><img src="../../../../.gitbook/assets/export_dashboard_data_option.png" alt="导出仪表板数据选项"><figcaption></figcaption></figure>
-3. **导出仪表板**：启用后，仪表板上会显示一个按钮，供您将数据导出为 CSV 文件。
+部分旧版本在**设置 → 文档处理 → 模块**中提供 **Export Dashboard Data** 开关；不能假定所有当前版本仍有同一开关。若看不到导出入口，请由管理员核对该版本的功能、组织配置和角色权限，不要随意更改其他模块。
 
-<figure><img src="../../../../.gitbook/assets/image (159).png" alt="导出仪表板 CSV 按钮"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/export_dashboard_confirmation.png" alt="导出仪表板确认信息"><figcaption></figcaption></figure>
+本次 Dev 检查没有显示可用的导出菜单，因此没有当前菜单截图，也没有下载文件或验证 CSV/XLSX 内容。旧英文模块及菜单图片已移除。

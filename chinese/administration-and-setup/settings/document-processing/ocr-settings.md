@@ -14,7 +14,7 @@ DocBits OCR 与电子文本说明：设置、质量与表头提取
 
 *   前往：**设置** → **文档处理** → **OCR 设置**
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-complete-ocr-settings-current-zh.png" alt="当前中文 OCR 设置，显示质量阈值、低质量处理策略、电子文本、DESKEW、OCR 版本、表格与表头提取选项。75 和开关状态是测试环境当前值，不是通用推荐设置；没有修改选项或运行提取。红色提示的产品措辞较生硬，此处说明的是两个方法均启用时的执行顺序，不保证提取准确率。"><figcaption><p>当前中文 OCR 设置，显示质量阈值、低质量处理策略、电子文本、DESKEW、OCR 版本、表格与表头提取选项。75 和开关状态是测试环境当前值，不是通用推荐设置；没有修改选项或运行提取。红色提示的产品措辞较生硬，此处说明的是两个方法均启用时的执行顺序，不保证提取准确率。</p></figcaption></figure>
 
 ## OCR 质量
 
@@ -29,12 +29,12 @@ DocBits OCR 与电子文本说明：设置、质量与表头提取
 * **抛出错误**\
   文档处理将完全停止，并显示错误消息，指出文档未达到所需的质量阈值。
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+
 
 ## 常规 OCR 设置
 
 * **如果可用，则使用电子文本**\
-  启用后，**DocBits** 将使用嵌入的电子文本（例如 PDF 中的文本），而不执行 OCR。这既能提高速度，也能提高准确性，因为系统可以直接提取文本，无需进行 OCR 处理。
+  启用后，**DocBits** 将使用嵌入的电子文本（例如 PDF 中的文本），而不执行 OCR。这可以减少重复 OCR，但嵌入文本也可能缺失、乱码或顺序错误；请用实际文档验证字段和表格结果，不保证总能提高准确性。
 * **如果可用，则使用 DESKEW**\
   此选项会自动校正扫描文档的对齐方式。拉直倾斜的图像有助于提高 OCR 准确性。
 *   **AI OCR 版本**\
@@ -44,7 +44,7 @@ DocBits OCR 与电子文本说明：设置、质量与表头提取
     * 当前所选版本未能达到预期效果。
     * 您正在排查与 OCR 性能或准确性有关的问题。
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+
 
 ## 表格 OCR 设置
 
@@ -62,4 +62,4 @@ DocBits OCR 与电子文本说明：设置、质量与表头提取
 如果同时启用这两个选项，**DocBits** 将按以下顺序执行提取：\
 **规则提取 → AI 提取**\
 \
-<mark style="color:red;">**注意**</mark>：为获得最佳结果并保持行为一致，请同时启用这两个选项。这样，**DocBits** 就能在表头提取过程中结合使用基于规则的方法和基于 AI 的方法。
+**注意：**只有同时启用两个选项时，才适用上述执行顺序。是否同时启用应根据文档类型、规则和提取结果决定；顺序说明不代表两个选项始终都应开启，也不保证提取正确。

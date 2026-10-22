@@ -51,7 +51,11 @@ Prüfer A wählte an seiner Aufgabe **Als erledigt markieren**. Erst danach klic
 
 <figure><img src="../../../.gitbook/assets/wf-practice-20261022-approval-after-a-before-b-de.png" alt="Erneut geöffnete echte Trainingsrechnung nach Genehmigung durch A: Genehmiger Super Admin und offene Aufgabe für Stufe B"><figcaption><p>Nach A liegt dieselbe Rechnung bei B. Die linke Auswahl und der Aufgabenbereich zeigen das generische zweite Testkonto. Die gespeicherte Entscheidung von A und die vollständigen Aufgabentitel wurden zusätzlich getrennt gelesen.</p></figcaption></figure>
 
-Der [Praxisnachweis mit gespeicherter Trainingsvorlage](../../../.gitbook/assets/wf-practice-20261022-approval-a-to-b-evidence-de.zip) enthält die Zustände und den tatsächlichen Entscheidungszeitpunkt. Dieses historische Archiv endet beim Übergang A→B dieser PO-Rechnung. Der folgende zusätzliche Nachweis verwendet einen getrennten eigenen Dokumenttyp und ergänzt persönliche B-Entscheidung, Ablehnung und Wiederholung. Aus dem erfolgreichen Übergang A→B folgt deshalb noch keine vollständige Freigabe oder erfolgreiche Exportzustellung.
+Der Praxisnachweis mit gespeicherter Trainingsvorlage enthält die Zustände und den tatsächlichen Entscheidungszeitpunkt. Dieses historische Archiv endet beim Übergang A→B dieser PO-Rechnung. Der folgende zusätzliche Nachweis verwendet einen getrennten eigenen Dokumenttyp und ergänzt persönliche B-Entscheidung, Ablehnung und Wiederholung. Aus dem erfolgreichen Übergang A→B folgt deshalb noch keine vollständige Freigabe oder erfolgreiche Exportzustellung.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-approval-a-to-b-evidence-de.zip" %}
+Praxisnachweis mit gespeicherter Trainingsvorlage
+{% endfile %}
 
 ## Beide Entscheidungen, Ablehnung und Wiederholung zusätzlich prüfen
 
@@ -65,7 +69,11 @@ Ein zweiter, isolierter Praxisfall verwendete den eigenen Trainingsdokumenttyp u
 | Zwei getrennte Rückkehrereignisse | Je eine offene A-Aufgabe, keine offene B-Aufgabe; dieselbe A-Aufgabe wiederverwendet |
 | A lehnt anschließend persönlich ab | Beleg und A-Aufgabe `rejected`; keine offene Aufgabe, keine neue B-Aufgabe, keine zusätzliche Exportzustellung |
 
-Geschäftsfelder und Tabellen blieben während dieser Vergleiche unverändert. Die zwei Rückkehrereignisse belegen diesen konkreten Ablauf; gleichzeitige Nachrichten und allgemeine Idempotenz sind damit nicht geprüft. Die eigene Regel und Exportkonfiguration sind wieder inaktiv. Der [zusätzliche vollständige Ergebnisnachweis](../../../.gitbook/assets/wf-practice-20261022-approval-final-evidence-de.zip) trennt persönliche Entscheidungen, Aufgaben, Status und tatsächliche Zustellung.
+Geschäftsfelder und Tabellen blieben während dieser Vergleiche unverändert. Die zwei Rückkehrereignisse belegen diesen konkreten Ablauf; gleichzeitige Nachrichten und allgemeine Idempotenz sind damit nicht geprüft. Die eigene Regel und Exportkonfiguration sind wieder inaktiv. Der zusätzliche vollständige Ergebnisnachweis trennt persönliche Entscheidungen, Aufgaben, Status und tatsächliche Zustellung.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-approval-final-evidence-de.zip" %}
+zusätzliche vollständige Ergebnisnachweis
+{% endfile %}
 
 ## Fehlenden und unbekannten Empfänger prüfen
 
@@ -77,7 +85,11 @@ Drei zusätzliche **Advanced-Tests** verwenden dieselbe sequenzielle Aufgabenkar
 | Unbekannte Testbenutzer-ID | `error` | Allgemeine Meldung `error` |
 | Vorhandenes berechtigtes Testkonto | `success` | Karte erfolgreich |
 
-Die [drei tatsächlichen Testergebnisse](../../../.gitbook/assets/wf-practice-20261022-approval-recipient-tests-de.zip) wurden mit unverändertem Dokument- und Aufgabenbestand abgeglichen. Sie belegen die Empfängerprüfung in der Simulation; eine neue reale Aufgabe und eine persönliche Entscheidung sind damit nicht nachgewiesen. Verbinden Sie den Fehlerausgang mit der vorgesehenen Korrekturroute und prüfen Sie diese gesondert. Der bisherige Praxisnachweis enthält noch keine tatsächlich ausgeführte Rückfallzuweisung.
+Die drei tatsächlichen Testergebnisse wurden mit unverändertem Dokument- und Aufgabenbestand abgeglichen. Sie belegen die Empfängerprüfung in der Simulation; eine neue reale Aufgabe und eine persönliche Entscheidung sind damit nicht nachgewiesen. Verbinden Sie den Fehlerausgang mit der vorgesehenen Korrekturroute und prüfen Sie diese gesondert. Der bisherige Praxisnachweis enthält noch keine tatsächlich ausgeführte Rückfallzuweisung.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-approval-recipient-tests-de.zip" %}
+drei tatsächlichen Testergebnisse
+{% endfile %}
 
 ## Karten und Beispielparameter
 

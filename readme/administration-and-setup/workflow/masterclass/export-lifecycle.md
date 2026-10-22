@@ -55,7 +55,11 @@ Geschäftsfelder, Tabellen und Zuständigkeit blieben während dieser vier Expor
 
 <figure><img src="../../../.gitbook/assets/wf-practice-20261022-export-receiver-de.png" alt="Aus dem tatsächlichen Empfängerjournal erzeugte lokale Ansicht: Empfangsnummer WF-EXPORT-20261022-001, Trainingsnummer, Betrag 1785, HTTP 200 und kein wiederholter Empfang"><figcaption><p>Dieses zusätzliche Testziel-Protokoll stammt aus tatsächlich angenommenen HTTP-Requests. Es bestätigt denselben Empfang um 16:27:47 UTC; eine ERP-Verarbeitung wird damit nicht behauptet.</p></figcaption></figure>
 
-Der [Praxisnachweis mit Kartenparametern, tatsächlichen Ergebnissen und Empfangsdaten](../../../.gitbook/assets/wf-practice-20261022-export-evidence-de.zip) trennt getestete und lediglich vorbereitete Varianten. Dieses historische Archiv endet nach dem unmittelbaren Export und seinem Statusschutz. Der folgende zusätzliche Nachweis belegt den späteren finalen verzögerten Export und `finished`; der alternative Export wurde nicht ausgeführt.
+Der Praxisnachweis mit Kartenparametern, tatsächlichen Ergebnissen und Empfangsdaten trennt getestete und lediglich vorbereitete Varianten. Dieses historische Archiv endet nach dem unmittelbaren Export und seinem Statusschutz. Der folgende zusätzliche Nachweis belegt den späteren finalen verzögerten Export und `finished`; der alternative Export wurde nicht ausgeführt.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-export-evidence-de.zip" %}
+Praxisnachweis mit Kartenparametern, tatsächlichen Ergebnissen und Empfangsdaten
+{% endfile %}
 
 ## Verzögerten Export und tatsächliches finished zusätzlich nachweisen
 
@@ -67,7 +71,11 @@ Der Wechsel auf `finished` erzeugte einen zusätzlichen Folgelauf. In diesem pas
 
 Eine davor ausgeführte vollständige persönliche Freigabe hatte zwar wieder zu `exported`, aber zu keiner neuen Zustellung geführt: Das eigene Ziel war bereits als erfolgreich exportiert vermerkt. Der ausdrücklich ausgewählte finale Export ist ein anderer Ausführungspfad. Vor einer erneuten Anforderung muss deshalb geprüft werden, ob und über welchen Weg ein Ziel bereits beliefert wurde.
 
-Der [zusätzliche Abschlussnachweis](../../../.gitbook/assets/wf-practice-20261022-export-final-evidence-de.zip) enthält tatsächliche Ergebnisse und beide Empfangsbelege ohne private Dokumentkennungen. Geschäftsfelder und Tabellen blieben unverändert; die eigene Regel und Konfiguration sind inaktiv, der temporäre Empfänger und Tunnel wurden beendet. Der alternative Export bleibt außerhalb dieses ausgeführten Nachweises.
+Der zusätzliche Abschlussnachweis enthält tatsächliche Ergebnisse und beide Empfangsbelege ohne private Dokumentkennungen. Geschäftsfelder und Tabellen blieben unverändert; die eigene Regel und Konfiguration sind inaktiv, der temporäre Empfänger und Tunnel wurden beendet. Der alternative Export bleibt außerhalb dieses ausgeführten Nachweises.
+
+{% file src="../../../.gitbook/assets/wf-practice-20261022-export-final-evidence-de.zip" %}
+zusätzliche Abschlussnachweis
+{% endfile %}
 
 ## Karten und Beispielparameter
 

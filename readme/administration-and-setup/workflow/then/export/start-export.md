@@ -43,3 +43,7 @@ Die obige Aussage über keine kartenspezifische Konfiguration gilt für die frü
 **Erwartetes Ergebnis und Gegenbeispiel:** Nach erfolgreichem Export wird der ausgewählte Ergebnisstatus übernommen. Bei einem Exportfehler handelt es sich nicht um einen abgeschlossenen Export. Überprüfen Sie das Protokoll und testen Sie den Fehlerzweig.
 
 Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+
+## Lernweg und Wirkungsnachweis
+
+[P1: Exportvarianten, offene Aufgaben und Abschlussstatus](../../masterclass/export-lifecycle.md) trennt Konfigurationsauswahl, Vormerken, Exportanforderung, tatsächlichen Empfang und ERP-Verarbeitung. Eine grüne Simulation oder eine Statusänderung belegt den Empfang nicht.

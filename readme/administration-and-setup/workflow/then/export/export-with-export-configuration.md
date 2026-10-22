@@ -52,3 +52,7 @@ Wenn offene Aufgaben den Export verhindern, meldet die Karte die Ablehnung. Lös
 **Erwartetes Ergebnis und Gegenbeispiel:** Es darf nicht davon ausgegangen werden, dass der Fall mit offener Aufgabe automatisch fortgesetzt wird. Nachdem Sie die Aufgabe gelöst haben, lösen Sie den beabsichtigten Export erneut aus und überprüfen Sie das Exporter-Ergebnis und den unterstützten Status.
 
 Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+
+## Lernweg und Wirkungsnachweis
+
+[P1: Exportvarianten, offene Aufgaben und Abschlussstatus](../../masterclass/export-lifecycle.md) trennt Konfigurationsauswahl, Vormerken, Exportanforderung, tatsächlichen Empfang und ERP-Verarbeitung. Eine grüne Simulation oder eine Statusänderung belegt den Empfang nicht.

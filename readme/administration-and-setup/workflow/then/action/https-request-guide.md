@@ -361,3 +361,7 @@ Die HTTPS-Anfragekarte verwendet eine konfigurierte HTTPS-URL und eigene Header.
 **Erwartetes Ergebnis und Gegenbeispiel:** Die Aktion sendet die konfigurierte Anfrage, wenn ihre Workflow-Route ausgeführt wird. Überprüfen Sie die HTTP-Antwort und den Empfangstestdienst. Eine Zeitüberschreitung ist kein Beweis dafür, dass der Dienst nichts getan hat, und diese Aktion „Dann“ ist von der Karte „Und“ getrennt, die einen HTTP-Status überprüft. Diese illustrative Anfrage wurde nicht gesendet.
 
 Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+
+## Lernweg und Rückschreibvertrag
+
+[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md) erklärt Simulation, Antwortauswertung und den ausdrücklich zu vereinbarenden Rückschreibweg. Eine erfolgreiche Anfrage stellt nicht automatisch ein Feld wie `api.response.cost_center` bereit.

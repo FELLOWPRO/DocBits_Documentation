@@ -23,3 +23,7 @@ Der Antworttext wird in einen Wahrheitswert umgewandelt: Reines `true`, `1`, `ye
 Wenn ich einen Wahrheitswert von einem konfigurierten DocBits-API-Endpunkt benötige, verwende ich diese Karte nach den erforderlichen Bedingungen. Wählen Sie für einen isolierten Test einen vorhandenen, dokumentierten, nur lesenden DocBits-Endpunkt mit passendem Wahrheitswert-Vertrag und die passende Methode, etwa `GET`. Verwenden Sie ausschließlich dessen unterstützte Demo-Parameter.
 
 Erwartetes Ergebnis und Gegenbeispiel: Bei einer hypothetischen HTTP-Antwort `200` mit dem vollständigen Text `true` ist das Kartenergebnis wahr. Bei `false` ist es falsch. Ein Objekt wie `{"approved": true}` wird nicht automatisch zu wahr zugeordnet. Prüfen Sie die tatsächliche Antwort und die Protokolle getrennt. Dieses Beispiel wurde am Ausführungscode geprüft; es wurde keine Anfrage und kein Workflow ausgeführt.
+
+## Lernweg und Rückschreibvertrag
+
+[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md) erklärt Simulation, Antwortauswertung und den ausdrücklich zu vereinbarenden Rückschreibweg. Eine erfolgreiche Anfrage stellt nicht automatisch ein Feld wie `api.response.cost_center` bereit.

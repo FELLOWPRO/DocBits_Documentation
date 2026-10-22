@@ -6,11 +6,11 @@ Als organisatiebeheerder kunt u **elk lid verplichten om twee-factor-authenticat
 
 Single sign-on (SSO)-aanmeldingen — Google, Microsoft, SAML — zijn **vrijgesteld**: hun identiteitsprovider dwingt al zijn eigen MFA af, dus de verplichting geldt alleen voor wachtwoordaanmeldingen.
 
-Deze instelling bevindt zich in **Instellingen → Global Settings → Bedrijfsinformatie → Twee-factor-authenticatie** en is alleen beschikbaar voor organisatiebeheerders.
+Deze instelling bevindt zich in **Instellingen → Algemene instellingen → Bedrijfsinformatie → Twee-factor-authenticatie** en is alleen beschikbaar voor organisatiebeheerders.
 
 ## MFA verplicht stellen voor uw organisatie
 
-1. Ga naar **Instellingen → Global Settings → Bedrijfsinformatie**.
+1. Ga naar **Instellingen → Algemene instellingen → Bedrijfsinformatie**.
 2. Open de sectie **Twee-factor-authenticatie**.
 3. Schakel **Twee-factor-authenticatie vereisen voor alle leden** in en klik op **Opslaan**.
 

@@ -1,8 +1,8 @@
-# Test Manager
+# Testbeheer
 
-Met de **Test Manager** kunt u herbruikbare **testscenario's** voor uw workflows opslaan en samen uitvoeren — zodat u kunt bevestigen dat een workflow nog steeds correct werkt nadat u deze hebt gewijzigd. Het werkt voor zowel Standaard- als Geavanceerde workflows.
+Met de **Testbeheer** kunt u herbruikbare **testscenario's** voor uw workflows opslaan en samen uitvoeren — zodat u kunt bevestigen dat een workflow nog steeds correct werkt nadat u deze hebt gewijzigd. Het werkt voor zowel Standaard- als Geavanceerde workflows.
 
-Open hem via **Workflow Dashboard → Test Manager List**.
+Open hem via **Workflowdashboard → Testlijst**.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Test Manager List met testscenario's, status en Run All Tests"><figcaption><p>De Test Manager List — elk opgeslagen scenario toont een geslaagd/mislukt-resultaat.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ De detailweergave toont de scenarionaam en **status**, de **workflownaam**, de *
 
 Dit zijn twee verschillende dingen:
 
-- **Test Manager** (deze pagina) — *opgeslagen, herhaalbare* scenario's met verwachte uitkomsten, samen uitgevoerd met **Alle tests uitvoeren**. Gebruik dit voor regressietests na wijzigingen.
+- **Testbeheer** (deze pagina) — *opgeslagen, herhaalbare* scenario's met verwachte uitkomsten, samen uitgevoerd met **Alle tests uitvoeren**. Gebruik dit voor regressietests na wijzigingen.
 - **Testen in de builder** — de inline **Valideren**- en **Test**-knoppen in de Advanced Workflow-builder, voor snelle controles terwijl u aan het bouwen bent. Zie [Validatie & Testen](advanced-workflow/validation-and-testing.md).

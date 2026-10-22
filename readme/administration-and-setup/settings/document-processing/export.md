@@ -177,10 +177,10 @@ Om een nieuwe export te maken:
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
 * **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
+* **ION-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **Cloud / On-Prem Toggle** Een schakelaar om het Infor-implementatietype aan te geven:
-  * **Cloud**: Selecteer dit als je een Infor CloudSuite-klant bent.
+  * **Cloudimplementatie**: Selecteer dit als je een Infor CloudSuite-klant bent.
   * **On-Prem**: Selecteer dit als Infor zelf gehost is.
 
 </details>
@@ -200,10 +200,10 @@ Om een nieuwe export te maken:
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
 * **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
+* **ION-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **BOD-kaartbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Een schakelaar om het Infor-implementatietype aan te geven:
-  * **Cloud**: Selecteer dit als je een Infor CloudSuite-klant bent.
+  * **Cloudimplementatie**: Selecteer dit als je een Infor CloudSuite-klant bent.
   * **On-Prem**: Selecteer dit als Infor zelf gehost is.
 
 </details>
@@ -223,11 +223,11 @@ Om een nieuwe export te maken:
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
 * **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
+* **ION-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **BOD-kaartbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de BOD Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
 * **Cloud / On-Prem Toggle** Een schakelaar om het Infor-implementatietype aan te geven:
-  * **Cloud**: Selecteer dit als je een Infor CloudSuite-klant bent.
+  * **Cloudimplementatie**: Selecteer dit als je een Infor CloudSuite-klant bent.
   * **On-Prem**: Selecteer dit als Infor zelf gehost is.
 
 </details>
@@ -249,7 +249,7 @@ Om een nieuwe export te maken:
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
 * **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
+* **ION-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **LN-mappingbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het LN Mapping Voorbeeld](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
@@ -270,7 +270,7 @@ Om een nieuwe export te maken:
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
 * **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
+* **ION-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
 * **M3-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk het M3 Mapping Voorbeeld](../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
@@ -291,8 +291,8 @@ Om een nieuwe export te maken:
   * Indien leeg gelaten: van toepassing op de hoofdorganisatie.
   * Indien geselecteerd: de export is alleen van toepassing op de gekozen sub-organisatie.
 * **Documenttype** Dropdown met alle beschikbare documenttypen. Dit bepaalt op welk type document deze exportconfiguratie van toepassing is.
-* **ION Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder.
+* **ION-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder.
 * **IDM-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder. [Hulp nodig bij het maken? Bekijk de IDM Mapping Gids](../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 toml Mapping File** Selecteer een mapping-bestand uit de bestandsbeheerder of gebruik de optie Toml selecteren om een toml te gebruiken die is gemaakt met de regelbeheerder. [Hulp nodig bij het maken? Bekijk de Rule Manager Gids](rule-manager/)
+* **M3-TOML-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder of gebruik de optie Toml selecteren om een toml te gebruiken die is gemaakt met de regelbeheerder. [Hulp nodig bij het maken? Bekijk de Rule Manager Gids](rule-manager/)
 
 </details>

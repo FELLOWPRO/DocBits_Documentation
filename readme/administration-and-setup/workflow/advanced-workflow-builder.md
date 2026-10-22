@@ -1,4 +1,4 @@
-# Advanced Workflow
+# Geavanceerde workflow
 
 De **Geavanceerde workflow** builder is een node-grafiek-editor voor workflows die vertakkingen, parallelle paden en flow-besturing nodig hebben — verder dan de lineaire When/And/Then van de Standard builder. U plaatst nodes op een canvas en verbindt ze om de uitvoeringsstroom te definiëren.
 
@@ -91,6 +91,6 @@ Voer de flow uit met de afspeelknop, valideer hem en sla op met de opslagknop in
 ## Volgende stappen
 
 - Bekijk in het **Kaarten**-gedeelte wat elke kaart doet.
-- Voor eenvoudige lineaire automatiseringen is de **Standard Workflow** builder sneller op te zetten.
+- Voor eenvoudige lineaire automatiseringen is de **Standaardworkflow** builder sneller op te zetten.
 
 [Bekijk alle vijf hoofdstukken](advanced-workflow-videos.md)

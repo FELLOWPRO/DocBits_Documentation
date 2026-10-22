@@ -1,4 +1,4 @@
-# Training Header Fields
+# Kopvelden trainen
 
 Na het uploaden van uw document wordt u naar het validatiescherm geleid.\
 Sommige velden kunnen al zijn ingevuld - dit is te danken aan de zwermintelligentie van DocBits. Andere velden kunnen echter leeg blijven. Dit betekent meestal dat het documenttype nog niet volledig is getraind, dus DocBits weet nog niet waaruit die informatie moet worden gehaald.

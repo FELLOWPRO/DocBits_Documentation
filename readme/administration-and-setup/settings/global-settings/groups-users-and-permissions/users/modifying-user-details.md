@@ -1,45 +1,21 @@
-# Modifying User Details
+# Gebruikersgegevens wijzigen
+
+Open als bevoegde beheerder het gebruikersbeheer en zoek de bedoelde gebruiker. Controleer zorgvuldig het account voordat u een bewerkactie opent.
 
 <figure><img src="../../../../../.gitbook/assets/prior-u001-nl.png" alt="Gebruikersbeheer met afgeschermde persoonsgegevens."><figcaption><p>Gebruikersbeheer met afgeschermde persoonsgegevens.</p></figcaption></figure>
 
-* **Logging in as an administrator:** Log in with your administrator privileges.
-* **Accessing user management:** Navigate to user settings where you can edit existing users.
-* **Selecting users:** Find and select the user whose details you want to change. This can be done by clicking on the username or an edit button next to the user.
+Open de bewerkingsdialoog van de bedoelde gebruiker.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_select_user_list.png" alt="Docbits Select User List"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u002-nl.png" alt="Bewerkformulier voor een gebruiker; waarden zijn afgeschermd."><figcaption><p>Bewerkformulier voor een gebruiker; waarden zijn afgeschermd.</p></figcaption></figure>
 
-*   **Editing user details:** A form will appear containing the user’s current details. Edit the required fields according to the changes you want to make. Typical details to edit include:
+## Gegevens en rechten controleren
 
-    * First and last name
-    * Email address
-    * User role or permission level
+Controleer de getoonde naam, het e-mailadres en de beschikbare rollen of beheerdersopties. De bewerkbare eigenschappen hangen af van uw rechten en het account. Wijzig uitsluitend de bedoelde gegevens en controleer het formulier voordat u opslaat. De afbeelding bevat afgeschermde voorbeeldwaarden en bewijst geen opgeslagen wijziging.
 
-    <figure><img src="../../../../../.gitbook/assets/prior-u002-nl.png" alt="Bewerkformulier voor een gebruiker; waarden zijn afgeschermd."><figcaption><p>Bewerkformulier voor een gebruiker; waarden zijn afgeschermd.</p></figcaption></figure>
-* **Saving Changes:** Review any changes you made and click Save to save the new user details.
+Controleer na een wijziging van rollen of de gebruiker de bedoelde toegang heeft. Laat vereiste gebruikersmeldingen via het afgesproken proces verlopen; het openen of opslaan van dit formulier bewijst geen verzonden bericht.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_save_user_changes.png" alt="Docbits Save User Changes"><figcaption></figcaption></figure>
+## Toegang verwijderen
 
-* **Review the impact of role changes:** If you changed the user's user role, review the impact of that change on security access levels. Make sure that after the role change, the user has the permissions required to continue performing their duties.
-* **Send notification (optional):** You can send a notification to the user to inform them of the changes made.
+Controleer vóór verwijdering welke taken en documenten aan het account zijn toegewezen. Draag verantwoordelijkheden over aan de bedoelde opvolger en controleer het geselecteerde account opnieuw. Gebruik pas daarna de beschikbare verwijderactie en de getoonde bevestiging. Controleer het resultaat en de resterende toegang. De schermafbeelding toont geen uitgevoerde verwijdering.
 
-After completing these steps, the user details are successfully updated and the user has the new information and permissions according to the changes made.
-
-## Removing Users:
-
-* **Selecting Users:** Find and select the user whose access you want to remove. This can be done by clicking the user name or an edit button next to the user.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_remove_user_access.png" alt="Docbits Remove User Access"><figcaption></figcaption></figure>
-
-* **Removing Access:** Click "delete" to remove the user.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_confirm_user_removal.png" alt="Docbits Confirm User Removal"><figcaption></figcaption></figure>
-
-* **Confirmation:** You are asked to confirm the user’s removal.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_remove_user_confirmation.png" alt="Docbits Remove User Confirmation"><figcaption></figcaption></figure>
-
-* **Optional Notification:** You can optionally send a notification to the user to inform them of the removal of their access.
-* **Review Tasks and Documents:** Before removing the user, review what tasks or documents are assigned to the user. Move or transfer responsibility for those tasks or documents to another user to make sure nothing gets lost or left unfinished.
-* **Save Changes:** Confirm the user’s removal and save the changes.
-
-By following these steps, you can ensure that the user’s access is safely removed while properly managing all relevant tasks and documents.
+Zie [Gebruikers](README.md) en [Beheerdersrechten](admin-privileges.md) voor de toepasselijke rollen en beperkingen.

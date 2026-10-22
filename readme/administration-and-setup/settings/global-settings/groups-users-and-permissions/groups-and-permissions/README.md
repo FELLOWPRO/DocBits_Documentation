@@ -31,7 +31,7 @@ Wanneer u een groep selecteert (via het menu Actions → Edit), verschijnt een m
 | Machtiging | Beschrijving |
 |------------|-------------|
 | **Weergave** | Machtiging om documenten van dit type te bekijken. |
-| **Update** | Machtiging om documenten van dit type te wijzigen. |
+| **Bijwerken** | Machtiging om documenten van dit type te wijzigen. |
 | **Verwijderen** | Machtiging om documenten van dit type te verwijderen. |
 | **Eerste goedkeuring** | Machtiging om de eerste goedkeuring uit te voeren. |
 | **Tweede goedkeuring** | Machtiging om een tweede goedkeuringsniveau uit te voeren (indien van toepassing). |

@@ -1,23 +1,20 @@
 # Velden
 
+Velden bepalen welke gegevens een documenttype verzamelt en hoe deze worden gecontroleerd. Open het documenttype in de instellingen en bekijk de bijbehorende velden.
+
 <figure><img src="../../../../../.gitbook/assets/s150-docbits_fields_overview-nl.png" alt="Velden van het documenttype Factuur. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Velden van het documenttype Factuur. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
-## Overzicht
+## Eigenschappen en herkenning
 
-De instellingen voor Velden bieden een gebruikersinterface waar beheerders de eigenschappen en het gedrag van individuele gegevensvelden die aan een documenttype zijn gekoppeld, kunnen beheren. Elk veld kan worden aangepast om de nauwkeurigheid en efficiëntie van gegevensinvoer en validatie te optimaliseren.
+* **Verplicht** vereist een waarde voor de validatie.
+* **Alleen lezen** voorkomt bewerking; **Verborgen** houdt het veld buiten de normale weergave.
+* **Geforceerde validatie** vereist een expliciete controle van het veld. Deze maakt geen vergelijkingsregel of reguliere expressie; stel aangepaste validatieregels afzonderlijk in.
+* **OCR** stelt een numerieke drempel voor herkenningsbetrouwbaarheid in. Dit is geen aan/uit-schakelaar voor OCR.
+* **Overeenkomstscore** stelt een numerieke overeenkomstsdrempel in. Dit is geen referentietekst of waardenlijst.
+* De optie voor **AI** bepaalt de gevraagde extractie voor het veld.
 
-## Belangrijkste Kenmerken en Opties
+Zoek een veld op naam en controleer de rij voordat u eigenschappen wijzigt. U kunt groepen ordenen, velden toevoegen en opties voor formules of stamgegevens openen. Acties hangen af van het veld en uw rechten; standaardvelden kunnen beperkingen voor verwijdering hebben.
 
-1. **Configuratie van Velden**:
-   * **Veldnamen**: Lijst met de namen van de velden, die doorgaans overeenkomen met de gegevenselementen binnen het document, zoals "Factuurnummer" of "Inkoopordernummer".
-   * **Verplicht**: Beheerders kunnen velden als verplicht markeren, zodat ervoor gezorgd wordt dat gegevens moeten worden ingevoerd of vastgelegd voor deze velden om de documentverwerking te voltooien.
-   * **Alleen-lezen**: Velden kunnen als alleen-lezen worden ingesteld om wijziging na gegevensinvoer of tijdens bepaalde fasen van documentverwerking te voorkomen.
-   * **Verborgen**: Velden kunnen uit het zicht in de gebruikersinterface worden verborgen, nuttig voor gevoelige informatie of om gebruikersworkflows te vereenvoudigen.
-2. **Geavanceerde Instellingen**:
-   * **Dwing Validatie af**: Zorgt ervoor dat gegevens die in een veld worden ingevoerd voldoen aan bepaalde validatieregels voordat ze worden geaccepteerd.
-   * **OCR (Optische Karakterherkenning)**: Deze schakelaar kan worden ingeschakeld om OCR-verwerking voor een specifiek veld mogelijk te maken, nuttig voor geautomatiseerde gegevensextractie uit gescande of digitale documenten.
-   * **Overeenkomstscores**: Beheerders kunnen een overeenkomstscores definiëren, een drempel die wordt gebruikt om het vertrouwensniveau van gegevensherkenning of -overeenstemming te bepalen, wat van invloed is op hoe gegevensvalidatie en kwaliteitscontroles worden uitgevoerd.
-3. **Actieknoppen**:
-   * **Nieuw Veld Aanmaken**: Maakt het mogelijk om nieuwe velden aan het documenttype toe te voegen.
-   * **Bewerkpictogrammen**: Elk veld heeft een bewerkpictogram waarmee beheerders de veldspecifieke instellingen verder kunnen configureren, zoals gegevenstype, standaardwaarden of verbonden bedrijfslogica.
-   * **Instellingen Opslaan**: Bevestigt de aangebrachte wijzigingen in de veldconfiguraties.
+Sla uitsluitend bedoelde wijzigingen op en controleer de validatie met representatieve documenten. De afbeeldingen bewijzen geen opgeslagen wijzigingen.
+
+Zie [Veldeigenschappen](configuring-field-properties-1.md), [Validatie en Match Score](setting-validation-and-match-score.md) en [Velden met extra kosten](new-fields-with-charges.md).

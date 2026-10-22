@@ -1,55 +1,57 @@
-# Documenttypes
+# Documenttypen
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Documenttypen uitgelegd: verwerkingsinstellingen maken, configureren en toewijzen
+De video demonstreert het configureren van velden in een geïsoleerd aangepast testtype.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/nl.mp4" %}
+Documenttypen
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Documenttypes"><figcaption><p>Pagina Documenttypes</p></figcaption></figure>
+[Bekijk met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/nl.html)
+
+Opmerking: Sommige native productlabels zijn mogelijk niet vertaald. De opname behoudt de daadwerkelijke gebruikersinterface.
 
 ## Overzicht
 
-De pagina Documenttypes toont alle documenttypes die door DocBits worden herkend en verwerkt. De pagina is verdeeld in twee onderdelen:
+Documenttypen definiëren de configuratie die wordt gebruikt voor verschillende soorten documenten. DocBits biedt standaardtypen zoals facturen en creditnota's. Met aangepaste typen kan een beheerder een andere categorie zakelijke documenten configureren. Standaardtypen kunnen niet worden verwijderd; beheer aangepaste typen binnen de machtigingen van de organisatie.
 
-* **Default Document Types**: Vooraf geconfigureerde types die door DocBits worden geleverd (Invoice, Credit Note, Delivery Note, Order Confirmation, Contract, ZUGFeRD, enz.). Deze kunnen niet worden verwijderd.
-* **Custom Document Types**: Types die u aanmaakt voor uw specifieke zakelijke behoeften. Deze kunnen worden bewerkt en verwijderd.
+## Bedieningselementen op een documenttypekaart
 
-## Bedieningselementen per documenttype
+| Bedieningselement | Doel |
+| --- | --- |
+| Activeren | Schakel het documenttype in of uit voor verwerking. |
+| Extraction | Kies de extractiemodus die wordt weergegeven door het native bedieningselement: Flex of Fix. Dit is een modusselectie, los van de Activeren-schakelaar. |
+| Instellingen, weergegeven als een tandwiel | Open verdere configuratie voor dat documenttype. |
 
-Elke kaart van een documenttype toont:
+De beschikbare links zijn afhankelijk van het type, de machtigingen en de ingeschakelde modules. De huidige interface kan lay-outs, velden, tabellen, scripts, modeltraining en document-subtypen bieden. Transformatie-regels, validatieregels en configuratie van elektronische documenten zijn beschikbaar waar hun respectievelijke functies van toepassing zijn. Andere configuratie-opties kunnen zich in de instellingen van het documenttype bevinden in plaats van op een apart tabblad onder elke kaart.
 
-| Bedieningselement | Beschrijving |
-|---------|-------------|
-| **Activate** | Schakelaar om dit documenttype voor verwerking in of uit te schakelen. |
-| **Extraction** | Schakelaar om AI-gebaseerde gegevensextractie voor dit type in of uit te schakelen. |
-| **Settings** (tandwielpictogram) | Opent aanvullende configuratieopties voor het documenttype. |
+## Velden en vereiste informatie configureren
 
-## Configuratietabbladen
+De video gebruikt een reeds gemaakt, geïsoleerd aangepast testtype. Het wijzigt het referentieveld van dat type; het wijzigt de bestaande factuurconfiguratie niet.
 
-Onder elk documenttype hebt u toegang tot de volgende configuratietabbladen:
+1. Open het documenttype en selecteer de velden ervan.
+2. Controleer de veldgroep en de stabiele technische veldnaam. Een leesbaar weergavelabel is een aparte instelling; het wijzigen ervan creëert geen nieuwe veld-ID.
+3. Maak het referentieveld verplicht terwijl het zichtbaar en bewerkbaar blijft. Vereiste informatie moet worden verstrekt; de instelling verzint geen ontbrekende waarde of garandeert geen correcte extractie.
+4. Configureer expliciete veldbeoordeling afzonderlijk van de vereiste waarde. Alleen-lezen, verborgen, OCR-drempels en Match Score-drempels hebben hun eigen effecten; het zijn geen uitwisselbare schakelaars.
+5. Sla de configuratie op, open deze opnieuw en controleer het opgeslagen weergavelabel en de instellingen.
 
-| Tabblad | Beschrijving |
-|-----|-------------|
-| **Labels** | Beheer weergavelabels en vertalingen voor het documenttype. |
-| **Edit layout** | Wijzig hoe het document in de validatieweergave wordt getoond, inclusief veldposities. |
-| **Documentsubtypen** | Configureer subcategorieën voor dit documenttype (bijv. verschillende factuurformaten). |
-| **Table columns** | Pas aan welke gegevenskolommen in de tabel met regelitems verschijnen. |
-| **Fields** | Beheer de gegevensvelden die uit het document worden geëxtraheerd (velden toevoegen, bewerken of verwijderen). |
-| **Model Training** | Configureer en train het AI-model dat wordt gebruikt voor het herkennen en extraheren van gegevens. |
-| **Regex** | Stel reguliere expressies in voor patroongebaseerde gegevensextractie. |
-| **Scripts** | Schrijf aangepaste verwerkingsscripts die tijdens de documentverwerking worden uitgevoerd. |
-| **E-Doc** | Configureer standaarden voor elektronische documenten (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+<figure><img src="../../../../.gitbook/assets/admin-reload-nl-98b73c173839.png" alt="Opgeslagen velden in een geïsoleerd testtype."><figcaption><p>Opgeslagen velden in een geïsoleerd testtype.</p></figcaption></figure>
+
+Het gedemonstreerde resultaat bewijst dat de veldconfiguratie is opgeslagen en opnieuw is geladen. Het vormt geen modeltraining, factuurgoedkeuring, export of een validatietest verder in het proces. Voordat u een configuratie in productie gebruikt, test u representatieve documenten en de beoogde workflow voor gewone gebruikers.
 
 ## Aangepaste validatieregels
 
-Open een documenttype en selecteer **Custom Validation Rules** om de eigen validatieregels van dat type te beheren. Om een bestaande regel te hergebruiken zonder haar opnieuw te bouwen, volgt u [Een aangepaste validatieregel dupliceren](duplicate-a-custom-validation-rule.md). De handleiding legt de regelnaam, de regelsleutel en de bevestigingsknoppen uit.
+Waar deze functie beschikbaar is, opent u de validatieregels van het documenttype. Om een bestaande regel te hergebruiken, volgt u [Aangepaste validatieregel dupliceren](duplicate-a-custom-validation-rule.md). Dit staat los van de individuele veldeigenschappen die in de video worden getoond.
 
-## Een aangepast documenttype aanmaken
+## Een aangepast documenttype maken
 
-1. Scroll omlaag naar het onderdeel **Custom Document Types**.
-2. Klik op **+ New**.
-3. Voer een naam in voor het nieuwe documenttype.
-4. Configureer de velden, de lay-out en de extractie-instellingen naar behoefte.
+Open de sectie aangepaste documenttypen, kies Nieuw en voer een duidelijke naam in. Voltooi de aangeboden instellingsstappen voor de beoogde extractiemodus, velden, groepen en eventuele tabellen. Modeltraining en extractieconfiguratie staan los van het louter opslaan van de instelling voor een verplicht veld.
 
 {% hint style="info" %}
-Zie [Documenttype instellen](../../../setup/document-types/) voor gedetailleerde installatie-instructies.
+Zie [Documenttype instellen](../../../setup/document-types/) voor de instellingsprocedure.
 {% endhint %}
+
+## Extra opname
+
+{% embed url="https://youtu.be/pFz_6tvNlU4" %}
+Documenttypen
+{% endembed %}

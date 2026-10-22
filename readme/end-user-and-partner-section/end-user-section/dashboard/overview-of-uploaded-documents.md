@@ -10,6 +10,6 @@ Se o agrupamento estiver disponível, selecione um campo acima da tabela. Para c
 
 Use **+** junto aos separadores para mostrar outros tipos de documento. Reordene os separadores arrastando-os. Remover um separador altera apenas a vista e não elimina documentos.
 
-Abra a engrenagem e as definições das colunas. Mova colunas entre as listas ocultas e visíveis e arraste as visíveis para as ordenar. Também pode adicionar campos de um tipo de documento. Consulte [Alterar colunas dos documentos](change-document-columns.md).
+Abra a engrenagem **Configurações avançadas** à direita da barra de pesquisa e, no respetivo menu, o botão **Configurações de colunas**. Mova colunas entre as listas ocultas e visíveis e arraste as visíveis para as ordenar. Também pode adicionar campos de um tipo de documento. Consulte [Alterar colunas dos documentos](change-document-columns.md).
 
 O [guia do painel](README.md) descreve pesquisa, ações e vistas guardadas.

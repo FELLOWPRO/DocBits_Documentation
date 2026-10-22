@@ -36,7 +36,7 @@ Clique em um chip para editá-lo (ele volta a se expandir como texto); clique em
 Na extremidade direita da barra:
 
 - **ⓘ Help** — abre a referência **Pesquisa no painel — Campos e sintaxe** do aplicativo, com todos os campos, operadores e atalhos disponíveis no seu workspace.
-- **Filters (tune)** — um painel rápido para os filtros comuns de Status / User / Restart, com **Limpar filtros** e **Aplicar**.
+- **Filtros** (três barras deslizantes) — um painel rápido para os filtros comuns **Status**, **Atribuído a** e **Reinicialização necessária**, com **Limpar filtros** e **Aplicar**.
 - **Resumo do índice** — um pequeno anel de progresso que mostra quanto do seu índice fulltext já foi construído (exibido apenas quando a pesquisa fulltext está ativada).
 
 ### Visualização padrão vs. bruta
@@ -184,11 +184,13 @@ ap_assignment_code=""
 
 ---
 
-## Smart Filters — com um clique
+## Filtros inteligentes — com um clique
 
-No topo da lista suspensa da Quick Search (clique na barra de pesquisa) você encontra os **Filtros inteligentes**: pesquisas prontas que você aplica com um único clique. Cada uma é apenas um atalho para uma consulta que você também poderia digitar:
+O ícone **raio** no início do campo de pesquisa abre o seletor de campos. No topo desse
+seletor estão os **Filtros inteligentes**: pesquisas prontas que você aplica com um único
+clique. Cada uma é apenas um atalho para uma consulta que você também poderia digitar:
 
-| Smart Filter | Encontra | Equivale a digitar |
+| Filtro inteligente | Encontra | Equivale a digitar |
 |--------------|----------|--------------------|
 | ⚠️ **Atrasado** | Com vencimento ultrapassado | `invoice_due_date<today()` |
 | 🕐 **Em breve** | Vencendo nos próximos 7 dias | `invoice_due_date<=today()+7` |
@@ -200,7 +202,7 @@ No topo da lista suspensa da Quick Search (clique na barra de pesquisa) você en
 | ➗ **Correspondência parcial de PO** | Parcialmente correspondentes a um pedido de compra | `po_match_status=partial_matched` |
 | 📉 **Sob correspondência PO** | Quantidade ou preço unitário abaixo do pedido de compra | `po_match_status=under_matched` |
 
-Os três filtros de **PO match** e os campos fulltext exigem que a pesquisa fulltext esteja ativada para a sua organização.
+Os três filtros de **Correspondência PO** e os campos fulltext exigem que a pesquisa fulltext esteja ativada para a sua organização.
 
 <figure><img src="../../../.gitbook/assets/prior-u030-pt.png" alt="Ajuda sobre consultas e filtros da pesquisa rápida."><figcaption><p>Ajuda sobre consultas e filtros da pesquisa rápida.</p></figcaption></figure>
 

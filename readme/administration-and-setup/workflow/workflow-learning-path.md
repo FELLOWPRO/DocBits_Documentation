@@ -32,6 +32,10 @@ Leggere e costruire: [Quando viene eseguito il mio workflow?](workflow-execution
 
 ## 2. Prima regola propria <a id="level-2"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/it.html).
+
 **Esercizio:** Creare When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW. Lasciarla inattiva. Provare dati completi per 999, 1000 e 1000.01. Non serve ancora un nodo di controllo.
 
 **Criterio di completamento:** REVIEW si raggiunge solo oltre 1000. Registrare tipo, operatore e uscita scelta. Gestire separatamente l’input assente.

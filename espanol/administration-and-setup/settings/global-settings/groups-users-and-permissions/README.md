@@ -1,5 +1,13 @@
 # Grupos, usuarios y permisos
 
+## Crear un grupo y probar el acceso a documentos
+
+Con los permisos de grupo ya activados, cree un grupo de revisión y añada un usuario de prueba sin permisos de administrador. Permita listar, ver y editar facturas asignadas; mantenga desactivadas la eliminación, los cambios masivos y las aprobaciones. Guarde y vuelva a abrir los ajustes. Después inicie sesión como usuario normal: la factura asignada aparece y el documento de control no asignado no aparece.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/es.mp4" %}
+
+[Ver con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/es.html)
+
 Estos ajustes responden a tres preguntas distintas: quién puede iniciar sesión, en qué suborganización trabaja y qué puede hacer su grupo.
 
 | Si necesita… | Abra… |

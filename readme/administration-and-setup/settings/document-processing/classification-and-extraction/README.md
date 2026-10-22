@@ -20,7 +20,7 @@
 要访问**分类与提取**设置，请前往：\
 **设置 → 文档处理 → 分类与提取**
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt="设置菜单中的文档处理分组，列出文档类型、分类与提取和 OCR 设置等条目"><figcaption></figcaption></figure>
 
 ## 文档拆分
 
@@ -31,17 +31,17 @@
 1. 前往**文档拆分**部分。
 2.  打开下拉菜单。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt="通用选项卡中的文档拆分部分，拆分下拉菜单当前显示不拆分上传的文档"><figcaption></figcaption></figure>
 3.  选择**按条形码/QR 码拆分**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt="文档拆分下拉菜单展开，显示不拆分上传的文档和按条形码或 QR 码拆分两个选项"><figcaption></figcaption></figure>
 
 随后，您可以：
 
 * 选择要检测的一种或多种条形码类型。
 *   指定条形码必须匹配的正则表达式模式，以触发文档拆分。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt="文档拆分设置为按条形码或 QR 码拆分，下方列出条形码类型和条形码模式输入框"><figcaption></figcaption></figure>
 
 ## 金额格式
 
@@ -150,7 +150,7 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 要访问此部分，请点击页面顶部的**分类规则**选项卡。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt="分类规则选项卡，包含按列搜索框以及类型、模式、文档类型、子文档类型、子组织和操作列，底部显示一到六条共六条记录"><figcaption></figcaption></figure>
 
 ### **添加新的分类规则**
 
@@ -158,7 +158,7 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击右上角的**添加**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt="分类规则表格，表格上方显示用于新建规则的添加按钮"><figcaption></figcaption></figure>
 2. 填写以下字段：
    * **模式**：系统用于触发分类的正则表达式模式。
    * **类型**：指定要在哪个位置搜索该模式（例如 **Barcode**）。
@@ -166,10 +166,10 @@ DocBits 学到的所有表格信息都按**供应商**存储：
    * **文档类型**：定义匹配该模式时要分配的文档类型。
    *   **子文档类型** _(可选)_: 指定更具体的分类子类型。
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt="配置分类规则对话框，模式字段为空，并显示类型、子组织、文档类型和子文档类型下拉菜单"><figcaption></figcaption></figure>
 3.  点击**保存**以保存分类规则。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="配置分类规则对话框填写完成，底部显示保存和取消按钮"><figcaption></figcaption></figure>
 
 ### **编辑分类规则**
 
@@ -177,14 +177,14 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击**操作**列中的三个点。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="分类规则表格中的一行，操作列显示三个点按钮"><figcaption></figcaption></figure>
 2.  选择**编辑**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt="操作菜单展开，编辑条目处于高亮状态，下方为删除条目"><figcaption></figcaption></figure>
 3. 按需进行修改。
 4.  点击**保存**以应用更改。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="编辑后的配置分类规则对话框，底部显示保存和取消按钮"><figcaption></figcaption></figure>
 
 ### **删除分类规则**
 
@@ -192,10 +192,10 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击**操作**列中的三个点。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="分类规则表格中的一行，操作列的三个点按钮用于打开菜单"><figcaption></figcaption></figure>
 2.  选择**删除**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt="操作菜单展开，删除条目处于高亮状态，上方为编辑条目"><figcaption></figcaption></figure>
 
 ## AI 模型
 
@@ -205,14 +205,14 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 要打开此部分，请点击页面顶部的 **AI 模型**选项卡。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt="AI 模型选项卡，显示手写 OCR 和标签两个模型类别卡片"><figcaption></figcaption></figure>
 
 ### 模型类别
 
 模型按类别组织。每个类别名称下方会显示该类别包含的模型数量。\
 点击类别可查看详情。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt="AI 模型类别卡片，每个类别名称下方显示该类别包含的模型数量"><figcaption></figcaption></figure>
 
 在所选类别页面顶部，您可以查看每个模型的重要信息：
 
@@ -230,7 +230,7 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 * **文档子类型**：文档进一步细分的子类型。
 * **优先级**：决定模型在分类队列中位置的优先级。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt="AI 模型表格，列出名称、下一个模型、文档类型、文档子类型、优先级和操作列"><figcaption></figcaption></figure>
 
 ### 编辑模型
 
@@ -238,10 +238,10 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击要编辑的模型对应的**操作**列中的笔形图标。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt="AI 模型表格的操作列，显示用于编辑模型的笔形图标"><figcaption></figcaption></figure>
 2. 更新可用字段：
    * **下一个模型**：选择应处理当前模型输出的模型。
    * **文档类型**：选择模型应将输入分类为何种文档类型。
 3.  点击**保存**以应用更改。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt="编辑模型面板展开，显示标签、下一个模型和文档类型字段以及取消和保存按钮"><figcaption></figcaption></figure>

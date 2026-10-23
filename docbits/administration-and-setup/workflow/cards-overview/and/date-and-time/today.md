@@ -1,28 +1,23 @@
 # Today
 
-<figure><img src="../../../../../.gitbook/assets/image (49).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-current-date-20261023-en.png" alt="Version 2 example: Greater or Equals, 2026-11-01. The comparison uses today&#x27;s UTC date." width="650"><figcaption>Version 2 example: Greater or Equals, 2026-11-01. The comparison uses today&#x27;s UTC date.</figcaption></figure>
 
-## **Purpose:**
+## What this card checks
 
-This DocBits card compares today's date to a specified date, allowing workflows to execute based on the relationship between the current date and the provided date. It is particularly useful for time-based automation, deadline management, or triggering scheduled tasks.
+This condition compares **today's UTC date at workflow execution** with a configured date. The time of day is ignored. Use it under **And → Date & Time** for a date cutoff or rollout rule.
 
-## **Functionality:**
+## Configuration
 
-* **Date Comparison:** This card evaluates today's date against a specified date using the following conditions:
-  * **Equals (=):** Checks if today's date matches the specified date.
-  * **Not Equals (≠):** Ensures today's date is different from the specified date.
-  * **Greater Than (>):** Confirms that today's date is after the specified date.
-  * **Greater or Equals (≥):** Ensures today's date is on or after the specified date.
-  * **Lesser Than (<):** Checks if today's date is before the specified date.
-  * **Less or Equals (≤):** Ensures today's date is on or before the specified date.
-* **Date Input:** Users provide the date to compare against today's date.
+Select the required comparison: equals (`eq`), not equals (`neq`), after (`gt`), on or after (`ge`), before (`lt`), or on or before (`le`). Enter an explicit date such as `2026-11-01`.
 
-## **Usage:**
+## Practical example
 
-This card is ideal for workflows involving deadlines, reminders, or time-sensitive conditions, ensuring actions are taken or restricted based on the current date.
+<!-- workflow-card-practical-example-20261023 -->
 
-## **Example Scenario:**
+**When to use:** Allow a following action only from a planned rollout date onward.
 
-* A user configures the card to check if **today is greater than (>) "2024-11-15"**. If the condition is met, the workflow triggers a follow-up notification for overdue tasks. If not, the workflow continues without interruption.
+**Configuration:** Choose **Greater or Equals** (`ge`) and `2026-11-01`.
 
-By using the "Today's Date Validation" card, organizations can automate time-based processes, meet deadlines efficiently, and maintain workflow accuracy.
+**Expected result:** On `2026-11-01` UTC the condition is met, and it remains met on `2026-11-02` UTC. On `2026-10-31` UTC it is not met. The document's own dates do not determine this comparison.
+
+Configure the workflow trigger and the following action separately. To evaluate a time window, use the separate Date or Time card.

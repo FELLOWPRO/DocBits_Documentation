@@ -1,25 +1,27 @@
 # Date or Time
 
-<figure><img src="../../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-runtime-window-20261023-en.png" alt="Version 2 example: Is, 2026-11-01 09:00:00 to 2026-11-01 17:00:00 (UTC)." width="650"><figcaption>Version 2 example: Is, 2026-11-01 09:00:00 to 2026-11-01 17:00:00 (UTC).</figcaption></figure>
 
-## **Purpose:**
+## What this card checks
 
-This DocBits card checks if a specified date/time value falls within a defined range. It enables workflows to proceed or halt based on whether the condition is met, making it suitable for time-sensitive operations or scheduling workflows.
+This condition compares the **current UTC date and time when the workflow reaches the card** with two configured bounds. Use it under **And → Date & Time** to restrict a following action to a planned time window.
 
-## **Functionality:**
+## Configuration
 
-* **Date/Time Validation:** This card evaluates whether a given date/time is within a specified range using the following conditions:
-  * **Is:** Checks if the date/time is within the defined start and end range (inclusive).
-  * **Is Not:** Ensures the date/time falls outside the defined range.
+Choose `is` for a time inside the window or `isnot` for a time outside it. Enter the start and end as explicit UTC date/time values. For a same-day window with the start before the end, both bounds are included.
 
-**Date/Time Range:** Users specify the start and end date/time values to define the range for comparison.
+## Practical example
 
-## **Usage:**
+<!-- workflow-card-practical-example-20261023 -->
 
-This card is ideal for scheduling, compliance checks, or validating time-based conditions in workflows. For example, it can be used to ensure tasks are executed only during predefined timeframes or verify deadlines.
+**When to use:** Allow a maintenance follow-up only during a planned window.
 
-## **Example Scenario:**
+**Configuration:** Select `is`, start `2026-11-01 09:00:00` and end `2026-11-01 17:00:00`, all in UTC.
 
-* A user configures the card to check if the **submission date** of an invoice **is between** **"2024-11-01"** and **"2024-11-30"**. If the submission date falls within this range, the workflow proceeds to payment processing. If not, the workflow triggers a notification for further review.
+**Expected result:** A workflow reaching this card at `2026-11-01 10:00:00` UTC meets the condition. At `2026-11-01 18:00:00` UTC it does not. Configure the workflow trigger and the following action separately.
 
-By using the "Date/Time Range Validation" card, organizations can ensure accurate scheduling, enhance compliance, and streamline workflows by adhering to predefined time constraints.
+## Timezone and overnight limits
+
+Use UTC values throughout. Adding a timezone suffix does not convert a local time to UTC in the reviewed version 2 parser.
+
+For an overnight window such as `22:00:00` to `04:00:00`, the reviewed version 2 implementation excludes the exact start and end instants from `is`. Check both boundaries before using an overnight rule. The example above uses a same-day window.

@@ -1,6 +1,6 @@
 # Assign document to the sub organization
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-03-fr-20261023.png" alt="Attribué à Attribuer le document à la sous-organisation Sous-organisation" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

@@ -1,6 +1,6 @@
 # Docfield is
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-04-fr-20261023.png" alt="Champ du document Champ du document Nom du champ est Opérateur Valeur du champ" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

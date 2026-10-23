@@ -1,6 +1,6 @@
 # Change Entries with
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-table-01-fr-20261023.png" alt="Tableau Dans le tableau Nom de la table , modifier les entrées avec Nom de la colonne Opérateur mathématique Valeur ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

@@ -1,6 +1,6 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../../.gitbook/assets/And1.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-07-fr-20261023.png" alt="Comparaison des bons de commande N&#x27;importe quel/Tous date(s) de livraison promise(s) pour les articles du tableau Opérateur date de livraison sur le bon de commande, avec Valeur jours de tolérance et Jours de tolérance autorisés jours de tolérance acceptée" width="375"><figcaption></figcaption></figure>
 
 ## Objectif :
 

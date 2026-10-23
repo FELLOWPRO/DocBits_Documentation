@@ -1,6 +1,6 @@
 # Exporter avec une exportation alternative
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_alternate_export_v2-fr-fr.png" alt="Exporter avec une exportation alternative, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Quand utiliser cette carte
 

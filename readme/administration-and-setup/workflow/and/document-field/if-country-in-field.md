@@ -1,6 +1,6 @@
 # Si pays dans le champ
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2-fr-fr.png" alt="Si pays dans le champ, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 Utilisation prévue : une étape de traitement supplémentaire dépend d’un groupe de pays. L’exemple ci-dessous décrit une règle d’appartenance à l’Union européenne.
 

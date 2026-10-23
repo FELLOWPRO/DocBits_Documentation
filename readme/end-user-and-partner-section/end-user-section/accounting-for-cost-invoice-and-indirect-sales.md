@@ -99,3 +99,36 @@ Dla faktur, które nie zostały automatycznie dopasowane:
 3. **Przegląd dopasowań**: Użytkownicy mogą przeglądać dopasowania, weryfikować szczegóły i widzieć wskaźniki statusu.
 4. **Rozwiązywanie rozbieżności**: Wszelkie niedopasowania lub rozbieżności są wyróżniane, aby użytkownik mógł je ręcznie przeglądać i korygować.
 5. **Eksport danych**: Dopasowane dane mogą być eksportowane do dalszego przetwarzania lub archiwizacji.
+
+
+## Instrukcja wideo: Podział faktury kosztowej
+
+Postać i głos są syntetyczne. Nagranie pokazuje rzeczywisty interfejs testowy DocBits z syntetycznymi fakturami szkoleniowymi.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/pl.mp4" %}
+Podział faktury kosztowej
+{% endembed %}
+
+[Oglądaj z napisami i rozdziałami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/pl.html)
+
+Niektóre etykiety produktu mogą pozostać w innym języku. Zachowano techniczne identyfikatory pól.
+
+W nagranym interfejsie kolumna « Tekst bonu » zawiera opis dekretacji. « Zarejestrowane księgowania » oznacza tutaj sumę przypisanych kwot, a « Nierozliczona kwota » resztę do przypisania. Nazwy kont i miejsc powstawania kosztów demonstracyjnych są skonfigurowanymi wartościami. Ten podział nie potwierdza płatności ani księgowania w systemie ERP.
+
+Najpierw sprawdzam naszą oryginalną fakturę szkoleniową. Dostawca, numer faktury i kwota muszą zgadzać się z dokumentem. W tym przykładzie jest to tysiąc euro bez podatku. Faktura nie zawiera zamówienia zakupu.
+
+Otwieram dekretację i pracuję z podziałem według kwoty całkowitej. Dostępne konta księgi głównej i miejsca powstawania kosztów zostały wcześniej skonfigurowane przez naszego administratora. Wybieram tylko wartości, które mają sens biznesowy dla tej faktury.
+
+Za pomocą funkcji podziału tworzę dwa wiersze podrzędne. DocBits zaczyna tutaj od równego podziału. W naszym przykładzie podział to sześćdziesiąt i czterdzieści procent. Pierwotna kwota faktury nadal wynosi tysiąc euro.
+
+Dla obu wierszy podrzędnych wybieram przygotowane konto księgi głównej dla usług biurowych. Pierwszy wiersz należy do operacyjnego miejsca powstawania kosztów, drugi do administracji. Miejsce powstawania kosztów jest w tym przykładzie polem obowiązkowym. Dodaję również zrozumiały tekst księgowania.
+
+W pierwszym wierszu wpisuję sześćdziesiąt procent i zatwierdzam klawiszem Enter. Czekam, aż kwota pokaże sześćset euro. Następnie zatwierdzam czterdzieści procent w drugim wierszu i czekam na czterysta euro. W ten sposób sprawdzam każde przeliczenie przed przejściem dalej.
+
+Teraz sprawdzam razem obie kwoty, konta księgi głównej i miejsca powstawania kosztów. Sześćset plus czterysta daje tysiąc euro. Zarejestrowana suma również musi wynosić tysiąc euro, a pozostałe saldo musi wynosić zero. Wyjaśniam wszelkie różnice w sumach przed zapisaniem.
+
+<figure><img src="../../.gitbook/assets/customer-totals-pl-accounting-email-v2.png" alt="Miejsca powstawania kosztów ze sprawdzoną sumą 1000 euro"><figcaption><p>Miejsca powstawania kosztów ze sprawdzoną sumą 1000 euro</p></figcaption></figure>
+
+Zapisuję dekretację i czekam na potwierdzenie. Następnie ponownie ładuję fakturę. Oba miejsca powstawania kosztów, wartości procentowe i kwoty nadal tam są. Po ponownym załadowaniu sprawdzam również sumę i pozostałe saldo.
+
+<figure><img src="../../.gitbook/assets/customer-save-pl-accounting-email-v2.png" alt="Dekretacja zapisana i sprawdzona po ponownym otwarciu"><figcaption><p>Dekretacja zapisana i sprawdzona po ponownym otwarciu</p></figcaption></figure>

@@ -63,3 +63,34 @@ Sprawdź podorganizację, katalog, opcjonalną skrzynkę współdzieloną, katal
 ### Dzienniki importu
 
 Dzienniki połączenia pomagają badać problemy komunikacji; dzienniki importu pokazują wyniki poprzednich importów. Zbiorczy dziennik sekcji poczty obejmuje skonfigurowane połączenia. Można filtrować według tematu lub nadawcy, sortować nagłówkami i zmieniać kolejność kolumn. Zbadaj komunikat przed ponownym importem.
+
+
+## Instrukcja wideo: Skrzynka odbiorcza i wyszukiwanie błędów
+
+Postać i głos są syntetyczne. Nagranie pokazuje rzeczywisty interfejs testowy DocBits z syntetycznymi fakturami szkoleniowymi.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/pl.mp4" %}
+Skrzynka odbiorcza i wyszukiwanie błędów
+{% endembed %}
+
+[Oglądaj z napisami i rozdziałami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/pl.html)
+
+Niektóre etykiety produktu mogą pozostać w innym języku. Zachowano techniczne identyfikatory pól.
+
+W ustawieniach i imporcie używam w tym przykładzie adresu przychodzącego DocBits. Bezpośrednio podłączona skrzynka pocztowa to osobna metoda importu. Na potrzeby szkolenia pracuję w dedykowanej organizacji demonstracyjnej z syntetycznymi fakturami. Powiadomienia pozostają wyłączone.
+
+Najpierw sprawdzam wyświetlany adres odbiorczy i zakres. Adres należy dokładnie do tej organizacji i jej środowiska. W przypadku innej firmy lub środowiska produkcyjnego zawsze używam adresu, który jest tam faktycznie wyświetlany.
+
+Tutaj ograniczam skrzynkę odbiorczą do naszego zatwierdzonego nadawcy testowego. Przypisanie do organizacji podrzędnej wybieram tylko wtedy, gdy należy do zamierzonego procesu. Zapisuję ustawienie i otwieram je ponownie. Dozwolony nadawca został zachowany; automatyczne e-maile z odpowiedziami pozostają wyłączone na tym szkoleniu.
+
+<figure><img src="../../../../.gitbook/assets/admin-save-pl-accounting-email-v2.png" alt="Dozwolony nadawca zapisany przy wyłączonych powiadomieniach"><figcaption><p>Dozwolony nadawca zapisany przy wyłączonych powiadomieniach</p></figcaption></figure>
+
+Na potrzeby tego szkolenia wiadomość testowa została przesłana bezpośrednio do obsługi poczty przychodzącej w DocBits. Ten test nie potwierdza dostarczenia zewnętrznego e-maila. W logu sprawdzam temat, nadawcę i zaimportowany załącznik. Następnie sprawdzam faktycznie utworzony dokument.
+
+Otwieram odpowiedni dokument i porównuję załącznik PDF z fakturą w DocBits. Nazwa pliku, numer faktury, dostawca i kwota muszą się zgadzać. Pomyślny import nie mówi nic o zatwierdzeniu ani księgowaniu w systemie ERP.
+
+Drugi kontrolowany test pochodzi od niezatwierdzonego nadawcy. W logu szukam konkretnie tego zgłoszenia przychodzącego i aktywuję filtr błędów. Szczegóły wymieniają odrzuconego nadawcę. Sprawdzam przyczynę za pomocą tematu i identyfikatora śledzenia, zamiast wielokrotnie uruchamiać import.
+
+W prawdziwym przypadku najpierw wyjaśniam, czy ten nadawca jest w ogóle upoważniony. Zatwierdzona zmiana na liście nadawców jest zapisywana i ponownie sprawdzana. Następnie weryfikuję nowe, unikalne zgłoszenie testowe aż do utworzonego dokumentu. W przypadku błędów technicznych przekazuję identyfikator śledzenia i konkretny komunikat o błędzie.
+
+<figure><img src="../../../../.gitbook/assets/admin-error-pl-accounting-email-v2.png" alt="Nieudany import z załącznikiem, przyczyną i identyfikatorem śledzenia"><figcaption><p>Nieudany import z załącznikiem, przyczyną i identyfikatorem śledzenia</p></figcaption></figure>

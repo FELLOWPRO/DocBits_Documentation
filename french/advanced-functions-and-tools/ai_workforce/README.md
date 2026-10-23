@@ -41,7 +41,7 @@ Les widgets disponibles comprennent :
 
 ## Boîte de réception
 
-La **Boîte de réception** est l'endroit où le travail attend une **intervention humaine**. Lorsqu'un agent est sur le point d'exécuter un outil nécessitant une validation, il met la tâche en pause et émet ici une **demande d'approbation**. C'est le principe Human-in-the-Loop (HITL) : l'action ne s'exécute pas tant qu'une personne n'a pas tranché. Le fait qu'un outil donné nécessite une validation dépend du **mode d'approbation** de l'agent et des marqueurs **critique** de ses outils (voir [Paramètres de l'agent](./#agent-settings)).
+La **Boîte de réception** est l'endroit où le travail attend une **intervention humaine**. Lorsqu'un agent est sur le point d'exécuter un outil nécessitant une validation, il met la tâche en pause et émet ici une **demande d'approbation**. C'est le principe Human-in-the-Loop (HITL) : l'action ne s'exécute pas tant qu'une personne n'a pas tranché. Le fait qu'un outil donné nécessite une validation dépend du **mode d'approbation** de l'agent et des marqueurs **critique** de ses outils (voir [Paramètres de l'agent](#parametres-de-lagent)).
 
 Chaque élément de la Boîte de réception affiche le titre de la demande, l'agent qui l'a émise et une courte description de ce qui nécessite une décision. Depuis l'élément, vous pouvez :
 
@@ -125,7 +125,7 @@ Chaque agent — système ou personnalisé — dispose d'un menu de paramètres 
   * **Medium** _(par défaut)_ — qualité et coût équilibrés.
   * **High** — raisonnement approfondi pour les tâches plus difficiles ; coût plus élevé.
   * **X-High** — raisonnement maximal ; coût le plus élevé.
-* **Mode d'approbation** — la part du travail de l'agent qui nécessite une validation humaine dans la [Boîte de réception](./#inbox) :
+* **Mode d'approbation** — la part du travail de l'agent qui nécessite une validation humaine dans la [Boîte de réception](#boite-de-reception) :
   * **None** — l'agent exécute chaque outil automatiquement ; rien n'est envoyé pour approbation.
   * **Critical** _(par défaut)_ — seuls les outils marqués **critique** nécessitent une approbation ; tout le reste s'exécute automatiquement. Les outils critiques sont les actions sensibles, d'écriture ou externes (par exemple _téléverser/importer un document_, _mettre à jour les champs d'un document_, _répondre à un e-mail_, _envoyer une notification_). Dans ce mode, un outil critique émet **toujours** une demande d'approbation dans la Boîte de réception. Vous pouvez affiner des outils individuels (marquer comme nécessitant une approbation un outil normalement sûr, ou retirer ce marquage d'un outil critique) — ces surcharges par outil ne s'appliquent qu'en mode Critical.
   * **All** — chaque outil exécuté par l'agent nécessite une approbation.

@@ -17,7 +17,7 @@
 * 打开要修改的导出配置。
 *   点击 **下载**以获取映射文件。\\
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt="Infor LN对话框，文档类型为Invoice，标题为Invoice LN，包含ION-Mapping File、IDM Mapping File和LN-Mapping File复选框以及DOWNLOAD按钮"><figcaption></figcaption></figure>
 * 在文本编辑器中打开该文件。
 
 #### 2. 修改映射文件
@@ -52,7 +52,7 @@ StaticFields=FinancialCompany,TaxCountry
 SF_TaxCountry=FR
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (418).png" alt="LN映射文件片段，包含StaticFields=FinancialCompany,RateDeterminer,ExternalRateFactor以及HF_SupplierCode=supplier_id和HF_InvoiceCurrency=currency等HeaderFields条目"><figcaption></figcaption></figure>
 
 **选项 2：从 DocBits 字段动态映射**
 
@@ -82,7 +82,7 @@ HeaderFields=SupplierCode,TaxCountry
 HF_TaxCountry=tax_country_1
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (167).png" alt="LN 映射文件片段，StaticFields 行中添加了 TaxCountry，HeaderFields 列表中映射了 HF_TaxCountry 条目"><figcaption></figcaption></figure>
 
 ### 总结
 

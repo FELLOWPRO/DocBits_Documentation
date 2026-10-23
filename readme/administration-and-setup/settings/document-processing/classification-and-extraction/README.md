@@ -31,17 +31,17 @@
 1. 前往**文档拆分**部分。
 2.  打开下拉菜单。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt="Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡，空的AI-Modelle面板中显示Kein Datensatz gefunden"><figcaption></figcaption></figure>
 3.  选择**按条形码/QR 码拆分**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt="德语DocBits设置界面中的Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡以及左侧导航"><figcaption></figcaption></figure>
 
 随后，您可以：
 
 * 选择要检测的一种或多种条形码类型。
 *   指定条形码必须匹配的正则表达式模式，以触发文档拆分。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt="提取结果面板，在文档预览窗格旁边显示带置信度分数的已识别字段"><figcaption></figcaption></figure>
 
 ## 金额格式
 
@@ -150,7 +150,7 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 要访问此部分，请点击页面顶部的**分类规则**选项卡。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt="德语DocBits设置界面中的Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡以及左侧导航"><figcaption></figcaption></figure>
 
 ### **添加新的分类规则**
 
@@ -158,7 +158,7 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击右上角的**添加**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt="提取设置页面，显示字段映射列表，包含列名、输入字段和Speichern按钮"><figcaption></figcaption></figure>
 2. 填写以下字段：
    * **模式**：系统用于触发分类的正则表达式模式。
    * **类型**：指定要在哪个位置搜索该模式（例如 **Barcode**）。
@@ -166,10 +166,10 @@ DocBits 学到的所有表格信息都按**供应商**存储：
    * **文档类型**：定义匹配该模式时要分配的文档类型。
    *   **子文档类型** _(可选)_: 指定更具体的分类子类型。
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt="Zuordnung von Dokumententypen页面，包含Bereich下拉框以及No Classification、No Splitting和Database Sharing-Klassifikation切换开关"><figcaption></figcaption></figure>
 3.  点击**保存**以保存分类规则。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡，空的AI-Modelle面板中显示Kein Datensatz gefunden"><figcaption></figcaption></figure>
 
 ### **编辑分类规则**
 
@@ -177,14 +177,14 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击**操作**列中的三个点。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="德语DocBits设置界面中的Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡以及左侧导航"><figcaption></figcaption></figure>
 2.  选择**编辑**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt="分类设置页面，包含文档类型列表、训练样本区域和上传控件"><figcaption></figcaption></figure>
 3. 按需进行修改。
 4.  点击**保存**以应用更改。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡，空的AI-Modelle面板中显示Kein Datensatz gefunden"><figcaption></figcaption></figure>
 
 ### **删除分类规则**
 
@@ -192,10 +192,10 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击**操作**列中的三个点。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="德语DocBits设置界面中的Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡以及左侧导航"><figcaption></figcaption></figure>
 2.  选择**删除**。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt="分类设置页面，右侧有文档类型建议面板、置信度值和字段列表"><figcaption></figcaption></figure>
 
 ## AI 模型
 
@@ -205,14 +205,14 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 要打开此部分，请点击页面顶部的 **AI 模型**选项卡。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt="Trainingsdaten页面，Table Extraction标签页打开，显示包含Spalte、Typ和Werte列的CSV列映射表"><figcaption></figcaption></figure>
 
 ### 模型类别
 
 模型按类别组织。每个类别名称下方会显示该类别包含的模型数量。\
 点击类别可查看详情。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt="Classification And Extraction设置页面，包含Allgemein、Klassifizierungsregeln和AI-Modelle选项卡，空的AI-Modelle面板中显示Kein Datensatz gefunden"><figcaption></figcaption></figure>
 
 在所选类别页面顶部，您可以查看每个模型的重要信息：
 
@@ -230,7 +230,7 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 * **文档子类型**：文档进一步细分的子类型。
 * **优先级**：决定模型在分类队列中位置的优先级。
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt="校验界面，左侧为分类建议面板，右侧为包含Position、Menge和Preis列的已提取表格"><figcaption></figcaption></figure>
 
 ### 编辑模型
 
@@ -238,10 +238,10 @@ DocBits 学到的所有表格信息都按**供应商**存储：
 
 1.  点击要编辑的模型对应的**操作**列中的笔形图标。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt="文档分类设置界面，包含提取规则字段、模型选择下拉框和保存按钮"><figcaption></figcaption></figure>
 2. 更新可用字段：
    * **下一个模型**：选择应处理当前模型输出的模型。
    * **文档类型**：选择模型应将输入分类为何种文档类型。
 3.  点击**保存**以应用更改。
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt="Trainingsdaten页面，包含Language Models和Table Extraction选项卡，以及一个已训练模型的表格，列为Name、Zugewiesene Dokumente、Datum和Bearbeiten"><figcaption></figcaption></figure>

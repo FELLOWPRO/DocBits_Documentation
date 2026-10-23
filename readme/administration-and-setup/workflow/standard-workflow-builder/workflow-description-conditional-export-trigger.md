@@ -1,6 +1,6 @@
 # 工作流示例：条件导出触发器
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt="工作流，Document type 为 Order Confirmation，状态为 Pending Approval，包含单价、折扣和数量比较以及 Start Export"><figcaption></figcaption></figure>
 
 此工作流概述了启动导出流程的条件。它确保只有符合所有指定条件的文档才会进入导出处理，从而提升数据完整性，并确保符合业务规则。
 

@@ -29,21 +29,21 @@ noIndex: true
 1. **访问 Infor ION Desk：**
    *   前往 **InforOS** → **ION Desk** → **Connect** → **Connection Points**。
 
-       ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
+       ![Infor ION Desk导航菜单，其中包含Home、Data Flows、API Flows和Mappings条目](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 2. **导入模板：**
    *   点击 **Import** 按钮。
 
-       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt="Infor ION Desk 的 Connect 页面，显示 Connection Points 视图及其搜索栏和工具栏"><figcaption></figcaption></figure>
    * 从本地系统中选择相应的 **Template File**。
    *   点击 **OK** 开始导入。
 
-       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="" width="327"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="Infor ION Desk 中的 Upload Local File 对话框，已选择文件 DocBits-Dev-Prod-Import-Template 进行上传" width="327"><figcaption></figcaption></figure>
 3. **确认：**
    *   如果导入成功，系统将显示确认消息。
 
-       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt="Infor ION Desk 中的导入确认，显示 DocBits-Dev-Prod-Import-Template 的导入已成功"><figcaption></figcaption></figure>
 4. **导入后配置：**
    * 导入模板后，您可以根据需要自定义特定的连接设置。
    * 请记得导入或配置用于身份验证和访问控制的 **Service Account**。
 
-<figure><img src="../../.gitbook/assets/m3_import_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/m3_import_5.png" alt="DocBits-Dev-Prod-Import-Template 的 API Connection Point 页面，显示其名称、逻辑 ID 和身份验证详情"><figcaption></figcaption></figure>

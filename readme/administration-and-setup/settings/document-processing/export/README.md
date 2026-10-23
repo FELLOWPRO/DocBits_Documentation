@@ -114,7 +114,7 @@
 * **文件名导出模式** 指定导出的文件保留原文件名，还是使用 DocBits 文档 ID 重新命名。
 * **包含文档历史记录** 启用后，导出文件将包含根据仪表板上可用日志生成的文档历史记录。
 
-<figure><img src="../../../../.gitbook/assets/export_sftp_2.png" alt="" width="316"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/export_sftp_2.png" alt="导出列表中某文档行打开的 Actions 菜单，包含 Validate、Assign to、Document-flow、Download、Restart、Document Logs 和 Workflow Logs 条目" width="316"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/prior-u016-zh.png" alt="未保存的 SFTP 导出高级选项。"><figcaption><p>未保存的 SFTP 导出高级选项。</p></figcaption></figure>
 

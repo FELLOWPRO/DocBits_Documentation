@@ -1,6 +1,6 @@
 # 采购发票 - 单价二次审批
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09.png" alt="工作流设置为Document type为Invoice、Pending Second Approval、子类型Purchase Invoice、单价Not Equals比较条件，并分配Buyer Name"><figcaption></figcaption></figure>
 
 此标题表示该规则用于管理采购发票的第二审批阶段，重点是验证单价。
 

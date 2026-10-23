@@ -1,6 +1,6 @@
 # 采购发票 - 第二次审批数量导出
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53.png" alt="工作流，文档类型为Invoice，状态为Pending Second Approval，子类型为Purchase Invoice，数量进行Equals比较并启动Start Export"><figcaption></figcaption></figure>
 
 此标题表示该规则用于管理采购发票的第二次审批阶段，重点关注数量明细，确保发票上的数量与原始采购订单上的数量一致。
 

@@ -16,7 +16,7 @@ ACL-Updater 模块负责在 DocBits 中更新和管理访问控制列表（ACL�
 
 模块激活后，您可以选择要使用的 **ION Mapping File**（ION 映射文件）。
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt="模块设置页面，IDM ACL Updater已展开，显示ION-Mapping File选择以及包含Infor-Doctype、Old-ACL和New-ACL列的表格"><figcaption></figcaption></figure>
 
 ### 添加 ACL 信息
 
@@ -26,4 +26,4 @@ ACL-Updater 模块负责在 DocBits 中更新和管理访问控制列表（ACL�
 * **Current IDM ACL Status**（当前 IDM ACL 状态）
 * **New IDM ACL Status**（新的 IDM ACL 状态）
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2.png" alt="Add IDM ACL Mapping对话框，包含IDM Document Type、Current IDM ACL status和New IDM ACL status字段以及CANCEL和SAVE按钮" width="563"><figcaption></figcaption></figure>

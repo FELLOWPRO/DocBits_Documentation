@@ -6,7 +6,7 @@
 
 作为管理员，您可以查看和管理内部物料编号与供应商物料编号之间的映射。此功能可确保高效处理您的系统与供应商系统之间的差异。您可以检查、编辑和删除错误的映射，以保持数据准确性。
 
-<figure><img src="../../../../../../.gitbook/assets/supplier_item_number_map_interface.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/supplier_item_number_map_interface.png" alt="Supplier Item Number Map 表格，包含 SUPPLIER ID、ITEM_NUMBER、SUPPLIER ITEM NUMBER 和 ACTION 列"><figcaption></figcaption></figure>
 
 **访问供应商物料编号映射**
 

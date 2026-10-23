@@ -4,7 +4,7 @@
 
 DocBits 中的验证界面用于在文档处理或保存之前，验证文档所含数据的准确性和完整性。此功能对于确保所有数据都被正确读取和处理至关重要，有助于维护数据的完整性和质量。
 
-<figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt="验证界面的层叠人字形步骤图，涵盖验证、效率、合规、易用性、防错、数据集成和数据质量"><figcaption></figcaption></figure>
 
 ## 验证界面的用途与使用方法详述
 

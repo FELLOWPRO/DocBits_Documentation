@@ -5,7 +5,7 @@
 前往 **设置 → 常规设置 → 文档类型 → 更多设置 → 采购订单部分 → 导出未匹配的采购订单行**。\
 切换按钮以启用此设置。
 
-<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt="Export not matched PO lines 设置，带有用于启用未匹配行导出的开关"><figcaption></figcaption></figure>
 
 ## **工作原理**
 

@@ -24,7 +24,7 @@
    * 编辑器允许您修改电子邮件的 HTML 代码和视觉设计。
    * 您可以使用提供的选项卡，在可视化编辑和代码编辑之间切换。
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Supplier Invitation Email的Edit Template页面，包含Name、Subject、Sender Name和Magic Link字段以及HTML源码"><figcaption></figcaption></figure>
 
 #### 将 `{{magic_link}}` 设置为链接
 

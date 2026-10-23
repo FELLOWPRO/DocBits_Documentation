@@ -24,7 +24,7 @@ De `{{magic_link}}` is een tijdelijke aanduiding die bij het verzenden van de e-
    * In de editor kunt u zowel de HTML-code als het visuele ontwerp van de e-mail aanpassen.
    * U kunt met de beschikbare tabbladen schakelen tussen visueel bewerken en codebewerking.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Edit Template-pagina voor de Supplier Invitation Email met de velden Name, Subject, Sender Name en Magic Link en de HTML-bron"><figcaption></figcaption></figure>
 
 #### `{{magic_link}}` als link definiëren
 

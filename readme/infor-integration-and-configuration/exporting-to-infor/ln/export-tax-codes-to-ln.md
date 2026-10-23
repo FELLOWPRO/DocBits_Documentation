@@ -16,33 +16,33 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-nl.png" alt="Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd."><figcaption><p>Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd.</p></figcaption></figure>
 2.  Klik op **New**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt="Pagina List of Values met het gemarkeerde knop New in de werkbalk"><figcaption></figcaption></figure>
 3.  Maak een lijst met de naam `Tax_Country` en klik op **Save**.
 
 
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="Dialoogvenster New List of Values met de ingevulde naam Tax_Country en de zichtbare knop Save" width="375"><figcaption></figcaption></figure>
 4.  Maak de volgende drie extra lijsten aan:
 
     * `Tax_Code_Full`
     * `Tax_Code_Reduced`
     * `Tax_Code_Free`
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt="Pagina List of Values met het in de lijst aangemaakte item Tax_Code_Full"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt="Pagina List of Values met de in de lijst aangemaakte invoer Tax_Code_Reduced"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt="Pagina List of Values met het in de lijst aangemaakte item Tax_Code_Free"><figcaption></figcaption></figure></div>
 5.  Klik op een van de nieuw aangemaakte lijsten om deze te openen. Klik vervolgens op de knop **Add Row** om een nieuwe rij toe te voegen.
 
 
 
-    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt="Pagina List of Values voor Tax_Country met de knop Add Row zichtbaar in de werkbalk"><figcaption></figcaption></figure>
 6.  Voer de gewenste bijbehorende waarden uit **LN** in en klik op **Save** om de wijzigingen op te slaan.
 
     * Als u meerdere waarden hebt, kunt u op **Add More Values** klikken om ze toe te voegen.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-nl.png" alt="Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde."><figcaption><p>Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde.</p></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt="Lijst met waarden van Tax_Country met een nieuwe rij en de knop Save"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-nl.png" alt="Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde."><figcaption><p>Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde.</p></figcaption></figure></div>
 
     * **OPMERKING:** U vindt de belastingcodes in LN onder: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt="Scherm LN Tax Codes by Country onder Common, Taxation, Master Data met het overzicht van de btw-codes"><figcaption></figcaption></figure>
 
 ### **Stap 2: Velden toevoegen in DocBits**
 
@@ -51,20 +51,20 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Kies het menu **Fields** van het documenttype waaraan u de velden wilt toevoegen.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="Pagina Document Types met de optie Fields geopend voor een documenttype in het menu"><figcaption></figcaption></figure>
 3.  Maak onder **VAT & Amounts** zes nieuwe velden aan, als volgt:
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt="Pagina met veldinstellingen voor een documenttype met de uitgeklapte sectie VAT and Amounts"><figcaption></figcaption></figure>
 
 <table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Naam</strong></td><td><strong>Titel</strong></td><td><strong>Veldtype</strong></td><td><strong>Lijst met waarden</strong></td></tr><tr><td><code>tax_country</code></td><td>Belasting land</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Belastingland verlaagd</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Belastingland Gratis</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Belastingcode</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Belastingwet verlaagd</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Belastingcode gratis</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt="Pagina met veldinstellingen met het nieuwe vervolgkeuzeveld Tax Country en de lijst met waarden Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt="Pagina Fields settings met het nieuwe vervolgkeuzeveld Tax Country Reduced en de List of Values Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt="Pagina met veldinstellingen met het nieuwe dropdownveld Tax Country Free en de List of Values Tax_Country"><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_13.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_13.png" alt="Pagina Fields settings met het nieuwe vervolgkeuzeveld Tax Code en de List of Values Tax_Code_Full"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14.png" alt="Pagina Veldinstellingen (Fields) met een nieuw vervolgkeuzeveld Tax Code Reduced en de List of Values Tax_Code_Reduced"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15.png" alt="Pagina Fields settings met een nieuw vervolgkeuzeveld Tax Code Free en de List of Values Tax_Code_Free"><figcaption></figcaption></figure></div>
 
 4.  Klik na het opslaan van elk veld op **Save Settings** om de wijzigingen toe te passen.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt="Pagina Fields settings met de nieuw aangemaakte belastingvelden en de gemarkeerde knop Save Settings"><figcaption></figcaption></figure>
 
 ### **Stap 3: Lay-out bewerken**
 
@@ -73,33 +73,33 @@ Deze handleiding leidt u door het installatieproces om ervoor te zorgen dat bela
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Open het menu **Edit Layout** voor het documenttype dat u wilt bewerken.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt="Pagina Document Types met de optie Edit Layout geopend voor een documenttype in het menu"><figcaption></figcaption></figure>
 3.  Selecteer de juiste **Document Origin** waarvoor u de belastingcodes wilt toepassen.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt="Layout-editor met het geopende dropdown Document Origin om de juiste oorsprong te selecteren"><figcaption></figcaption></figure>
 4.  Scroll omlaag naar de sectie **Tax Details**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt="Lay-outeditor naar beneden gescrold naar de sectie Tax Details van de documentsjabloon"><figcaption></figcaption></figure>
 5. Klap het keuzemenu **Form Elements** open.
 6.  Gebruik in de sectie **Tax Details** de **Horizontal Separator Tool**. Sleep deze tussen de subsecties binnen de belastingsectie om ze duidelijk van elkaar te scheiden en verwarring te beperken.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_22 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_22 (1).png" alt="Layout-editor met het vervolgkeuzemenu Form Elements uitgeklapt en het gereedschap Horizontal Separator gemarkeerd"><figcaption></figcaption></figure>
 7. Klap het keuzemenu **Form Fields** open.
 8.  Zoek naar **Tax Country** en sleep het veld naar het bijbehorende gebied.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_23 (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_23 (2).png" alt="Layout-editor met de uitgeklapte dropdown Form Fields en het veld Tax Country wordt gezocht"><figcaption></figcaption></figure>
 9.  Zoek naar **Tax Code** en sleep het veld naar het bijbehorende gebied.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_24 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_24 (1).png" alt="Lay-outeditor met het uitgeklapte vervolgkeuzemenu Form Fields en de lopende zoekopdracht naar het veld Tax Code"><figcaption></figcaption></figure>
 10. Sla het sjabloon op.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_25.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_25.png" alt="Layout-editor met de knop Save gemarkeerd na het plaatsen van de belastingvelden"><figcaption></figcaption></figure>
 
 ### Stap 4: Controleren of alles werkt
 
 Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinstellingen, kunt u nu de belastingcodes selecteren die u in stap 1 aan de lijsten hebt toegevoegd.
 
-<figure><img src="../../../.gitbook/assets/TaxCodes_31.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodes_31.png" alt="Validatiescherm van een geüpload document met de waarden van de vervolgkeuzelijst voor de belastingcode geopend"><figcaption></figcaption></figure>
 
 ## Meerdere belastingcodes
 
@@ -110,33 +110,33 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-nl.png" alt="Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd."><figcaption><p>Waardenlijsten in DocBits; de namen van organisatiespecifieke lijsten zijn afgeschermd.</p></figcaption></figure>
 2.  Klik op **New**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt="Pagina List of Values met het gemarkeerde knop New in de werkbalk"><figcaption></figcaption></figure>
 3.  Maak een lijst met de naam `Tax_Country` en klik op **Save**.
 
 
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="Dialoogvenster New List of Values met de ingevulde naam Tax_Country en de zichtbare knop Save" width="375"><figcaption></figcaption></figure>
 4.  Maak de volgende drie extra lijsten aan:
 
     * `Tax_Code_Full`
     * `Tax_Code_Reduced`
     * `Tax_Code_Free`
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt="Pagina List of Values met het in de lijst aangemaakte item Tax_Code_Full"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt="Pagina List of Values met de in de lijst aangemaakte invoer Tax_Code_Reduced"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt="Pagina List of Values met het in de lijst aangemaakte item Tax_Code_Free"><figcaption></figcaption></figure></div>
 5.  Klik op een van de nieuw aangemaakte lijsten om deze te openen. Klik vervolgens op de knop **Add Row** om een nieuwe rij toe te voegen.
 
 
 
-    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt="Pagina List of Values voor Tax_Country met de knop Add Row zichtbaar in de werkbalk"><figcaption></figcaption></figure>
 6.  Voer de gewenste bijbehorende waarden uit **LN** in en klik op **Save** om de wijzigingen op te slaan.
 
     * Als u meerdere waarden hebt, kunt u op **Add More Values** klikken om ze toe te voegen.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-nl.png" alt="Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde."><figcaption><p>Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde.</p></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt="Lijst met waarden van Tax_Country met een nieuwe rij en de knop Save"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-nl.png" alt="Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde."><figcaption><p>Formulier voor een nieuwe waarde met suborganisatie, synoniemen en vertalingen. Er is geen waarde ingevoerd of opgeslagen; de taalselectie betreft de vertaling van de waarde.</p></figcaption></figure></div>
 
     * **OPMERKING:** U vindt de belastingcodes in LN onder: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt="Scherm LN Tax Codes by Country onder Common, Taxation, Master Data met het overzicht van de btw-codes"><figcaption></figcaption></figure>
 
 ### **Stap 2: Velden toevoegen in DocBits**
 
@@ -145,20 +145,20 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Kies het menu **Fields** van het documenttype waaraan u de velden wilt toevoegen.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="Pagina Document Types met de optie Fields geopend voor een documenttype in het menu"><figcaption></figcaption></figure>
 3.  Maak onder **VAT & Amounts** zes nieuwe velden aan, als volgt:
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt="Pagina met veldinstellingen voor een documenttype met de uitgeklapte sectie VAT and Amounts"><figcaption></figcaption></figure>
 
 <table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Naam</strong></td><td><strong>Titel</strong></td><td><strong>Veldtype</strong></td><td><strong>Waarde</strong></td></tr><tr><td><code>tax_country</code></td><td>Belasting land</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Belastingland verlaagd</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Belastingland Gratis</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Belastingcode</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Belastingwet verlaagd</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Belastingcode gratis</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_10.png" alt="Pagina met veldinstellingen met het nieuwe vervolgkeuzeveld Tax Country en de lijst met waarden Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11.png" alt="Pagina Fields settings met het nieuwe vervolgkeuzeveld Tax Country Reduced en de List of Values Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt="Pagina met veldinstellingen met het nieuwe dropdownveld Tax Country Free en de List of Values Tax_Country"><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_13.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_13.png" alt="Pagina Fields settings met het nieuwe vervolgkeuzeveld Tax Code en de List of Values Tax_Code_Full"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14.png" alt="Pagina Veldinstellingen (Fields) met een nieuw vervolgkeuzeveld Tax Code Reduced en de List of Values Tax_Code_Reduced"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15.png" alt="Pagina Fields settings met een nieuw vervolgkeuzeveld Tax Code Free en de List of Values Tax_Code_Free"><figcaption></figcaption></figure></div>
 
 4.  Klik na het opslaan van elk veld op **Save Settings** om de wijzigingen toe te passen.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt="Pagina Fields settings met de nieuw aangemaakte belastingvelden en de gemarkeerde knop Save Settings"><figcaption></figcaption></figure>
 
 ### **Stap 3: Lay-out bewerken**
 
@@ -167,33 +167,33 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-nl.png" alt="Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Documenttypen: kies Velden bij het betreffende type. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>
 2.  Open het menu **Edit Layout** voor het documenttype dat u wilt bewerken.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt="Pagina Document Types met de optie Edit Layout geopend voor een documenttype in het menu"><figcaption></figcaption></figure>
 3.  Selecteer de juiste **Document Origin** waarvoor u de belastingcodes wilt toepassen.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt="Layout-editor met het geopende dropdown Document Origin om de juiste oorsprong te selecteren"><figcaption></figcaption></figure>
 4.  Scroll omlaag naar de sectie **Tax Details**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt="Lay-outeditor naar beneden gescrold naar de sectie Tax Details van de documentsjabloon"><figcaption></figcaption></figure>
 5. Klap het keuzemenu **Form Elements** open.
 6.  Gebruik in de sectie Tax Details de tool **Sub Group**. Sleep deze naast een bestaand veld.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodesMulti_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodesMulti_1.png" alt="Layout-editor met het uitgeklapte vervolgkeuzemenu Form Elements en het gemarkeerde gereedschap Sub Group"><figcaption></figcaption></figure>
 7.  Om uw subgroep een naam te geven, klikt u op de subgroep en voert u de gewenste naam in het veld **Label** in.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodesMulti_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodesMulti_3.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodesMulti_2.png" alt="Lay-outeditor met een zojuist toegevoegd Sub Group-element geselecteerd in de sectie Tax Details"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodesMulti_3.png" alt="Layout-editor met het veld Label van de geselecteerde Sub Group open voor naamgeving"><figcaption></figcaption></figure></div>
 8.  Sleep de velden die bij deze groep horen naar het veld **Sub Group**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt="Lay-outeditor waarin een veld naar de nieuwe Sub Group in de sectie Tax Details wordt gesleept"><figcaption></figcaption></figure>
 9. Klap het keuzemenu **Fields** open.
 10. Zoek naar **Tax** en sleep de betreffende velden, zoals **Tax Country** en **Tax Code**, naar de bijbehorende subgroep.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt="Lay-outeditor met het uitgeklapte Fields-vervolgkeuzemenu en het zoekveld voor het veld Tax Country"><figcaption></figcaption></figure>
 11. Herhaal stap 5 tot en met 10 twee keer om de volgende situatie te bereiken:
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_6.png" alt="Layout-editor met de btw-subgroep geplaatst in de sectie Tax Details na het herhalen van de stappen"><figcaption></figcaption></figure>
 12. Sla het sjabloon op.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_7.png" alt="Layout-editor met de gemarkeerde knop Save na het rangschikken van de belastingondergroepen"><figcaption></figcaption></figure>
 
 ### Stap 4: Controleren of alles werkt en de resulterende wijzigingen
 
@@ -202,11 +202,11 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 * Het document begint met drie afzonderlijke secties: één voor bedragen met volledig tarief (Tax Full), één voor bedragen met verlaagd tarief (Tax Reduced) en één voor belastingvrije bedragen (Tax Free).
 * Als u in een sectie op de plusknop klikt, wordt een duplicaat gemaakt, zodat u meerdere regels tegen het geselecteerde belastingtarief kunt invoeren.
 
-<figure><img src="../../../.gitbook/assets/TaxCodeMulti_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodeMulti_8.png" alt="Validatiescherm van een geüpload document met de belastingsecties en de plusknop"><figcaption></figcaption></figure>
 
 * Secties kunt u verwijderen door op de verwijderknop te klikken.
 
-<figure><img src="../../../.gitbook/assets/TaxCodeMulti_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodeMulti_9.png" alt="Validatiescherm van een geüpload document met een belastingsectie en het gemarkeerde verwijderknopje"><figcaption></figcaption></figure>
 
 * De totaalbedragen worden berekend als de som van alle secties.
 * De validatie van het totaalbedrag wordt aangepast op basis van alle belastingsecties.
@@ -216,9 +216,9 @@ Nadat u een nieuw document in DocBits hebt geüpload met de juiste documentinste
 
 In **LN** wordt USt Position ingevuld op basis van het positienummer uit het keuzemenu Tax Code/Tax Country. Alleen het positienummer wordt naar de export gestuurd.
 
-<figure><img src="../../../.gitbook/assets/TaxCodesLN_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodesLN_2.png" alt="LN-scherm met het veld USt Position ingevuld op basis van het positienummer van de belastingcode"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/TaxCodesLN_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodesLN_3.png" alt="LN-scherm met de geëxporteerde factuur en de ingevulde waarde USt Position"><figcaption></figcaption></figure>
 
 #### **Export Mapping**
 
@@ -228,4 +228,4 @@ Om de Tax Line aan de Cost Line te koppelen:
 2. Voeg het volgende item toe, volgens onderstaand voorbeeld:\
    `ICF_TaxLine = TF_position`
 
-<figure><img src="../../../.gitbook/assets/TaxCodeMulti_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodeMulti_10.png" alt="List of Values van InvoiceCostFields met het item TaxLine en de mapping ICF_TaxLine"><figcaption></figcaption></figure>

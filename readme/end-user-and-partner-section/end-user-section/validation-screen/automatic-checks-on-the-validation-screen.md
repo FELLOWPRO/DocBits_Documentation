@@ -6,7 +6,7 @@ Standaard worden specifieke velden in het validatieproces automatisch gecontrole
 
 Je kunt altijd de gebruikte formule verifiëren door met de muis over het info-icoon te bewegen.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1_nl.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1_nl.png" alt="Documentvalidatiescherm met het paneel Automatische controles dat selectievakopties als Dokumenttyp, Rechnungsdatum en Lieferant toont naast de veldlijst"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Opmerking:**</mark> Het info-icoon is alleen zichtbaar als er een waarde is geëxtraheerd voor het overeenkomstige veld.
 

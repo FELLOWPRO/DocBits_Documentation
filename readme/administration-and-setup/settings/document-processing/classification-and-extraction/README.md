@@ -29,17 +29,17 @@ Om deze functie te activeren:
 1. Ga naar de sectie **Documenten splitsen**.
 2.  Open het keuzemenu.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_14.png)
+    ![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle, met Kein Datensatz gefunden in het lege paneel AI-Modelle](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_14.png)
 3.  Selecteer **Gesplitst op barcode/QR-code**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_15.png)
+    ![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle en de linkernavigatie van de Duitse DocBits-instellingen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_15.png)
 
 Je hebt vervolgens de optie om:
 
 * Een of meer streepjescode-typen te selecteren die moeten worden gedetecteerd.
 *   Een regex-patroon op te geven waaraan de streepjescode moet voldoen om het splitsen van documenten te activeren.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_16.png)
+    ![Resultatenpaneel van de extractie met herkende velden en betrouwbaarheidsscores naast het voorbeeldpaneel van het document](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_16.png)
 
 ## Bedrag opmaak
 
@@ -148,7 +148,7 @@ In de sectie **Classificatieregels** kun je specifieke **regex**-patronen en cri
 
 Om deze sectie te openen, klik op het tabblad **Classificatieregels** bovenaan de pagina.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_1.png)
+![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle en de linkernavigatie van de Duitse DocBits-instellingen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_1.png)
 
 ### Nieuwe classificatieregel toevoegen
 
@@ -156,7 +156,7 @@ Om een nieuwe regel te maken:
 
 1.  Klik rechtsboven op **Toevoegen**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_2.png)
+    ![Pagina met extractie-instellingen met de lijst met veldtoewijzingen, kolomnamen, invoervelden en de knop Speichern](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_2.png)
 2. Vul de volgende velden in:
    * **Patroon**: Het regex-patroon waar het systeem naar moet zoeken om classificatie te activeren.
    * **Type**: Waar naar het patroon moet worden gezocht (bijv. **Streepjescode**).
@@ -164,10 +164,10 @@ Om een nieuwe regel te maken:
    * **Documenttype**: Definieer het documenttype dat moet worden toegewezen wanneer het patroon overeenkomt.
    *   **Subdocumenttype** _(optioneel)_: Geef een subtype op voor een gedetailleerdere classificatie.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_3.png)
+       ![Pagina Zuordnung von Dokumententypen met de vervolgkeuzelijst Bereich en de schakelaars No Classification, No Splitting en Database Sharing-Klassifikation](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_3.png)
 3.  Klik op **Opslaan** om je classificatieregel op te slaan.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_4.png)
+    ![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle, met Kein Datensatz gefunden in het lege paneel AI-Modelle](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_4.png)
 
 ### Een classificatieregel bewerken
 
@@ -175,14 +175,14 @@ Om een bestaande regel te bewerken:
 
 1.  Klik op de drie puntjes in de kolom **Acties**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_5.png)
+    ![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle en de linkernavigatie van de Duitse DocBits-instellingen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_5.png)
 2.  Selecteer **Bewerking**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_6.png)
+    ![Instellingspagina voor classificatie met de lijst met documenttypen, de sectie trainingsvoorbeelden en het uploadbesturingselement](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_6.png)
 3. Breng de gewenste wijzigingen aan.
 4.  Klik op **Opslaan** om de updates toe te passen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_4.png)
+    ![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle, met Kein Datensatz gefunden in het lege paneel AI-Modelle](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_4.png)
 
 ### Een classificatieregel verwijderen
 
@@ -190,10 +190,10 @@ Om een regel te verwijderen:
 
 1.  Klik op de drie puntjes in de kolom **Acties**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_5.png)
+    ![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle en de linkernavigatie van de Duitse DocBits-instellingen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_5.png)
 2.  Selecteer **Verwijderen**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_7.png)
+    ![Instellingenscherm voor classificatie met het paneel met suggesties voor documenttypen, betrouwbaarheidswaarden en de veldenlijst aan de rechterkant](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_7.png)
 
 ## AI-modellen
 
@@ -203,14 +203,14 @@ De sectie **AI-modellen** toont alle op maat getrainde modellen die specifiek vo
 
 Om deze sectie te openen, klik op het tabblad **AI-modellen** bovenaan de pagina.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_8.png)
+![Pagina Trainingsdaten met het geopende tabblad Table Extraction met een CSV-kolomtoewijzingstabel met de kolommen Spalte, Typ en Werte](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_8.png)
 
 ### Modelcategorieën
 
 Modellen zijn georganiseerd in categorieën. Onder elke categorienaam wordt het aantal modellen weergegeven dat deze bevat.\
 Klik op een categorie om de details te bekijken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_9.png)
+![Instellingenpagina Classification And Extraction met de tabbladen Allgemein, Klassifizierungsregeln en AI-Modelle, met Kein Datensatz gefunden in het lege paneel AI-Modelle](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_9.png)
 
 Bovenaan de pagina van de geselecteerde categorie zie je kerninformatie over elk model:
 
@@ -228,7 +228,7 @@ Alle modellen binnen een categorie worden weergegeven in een tabel met de volgen
 * **Document-subtypen**: De subtypen waarin het document verder wordt geclassificeerd.
 * **Prioriteit**: Het prioriteitsniveau dat de positie van het model in de classificatiewachtrij bepaalt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_11.png)
+![Validatiescherm met het classificatievoorstellenpaneel aan de linkerkant en de geëxtraheerde tabel met de kolommen Position, Menge en Preis](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_11.png)
 
 ### Een model bewerken
 
@@ -236,10 +236,10 @@ Om een model te bewerken:
 
 1.  Klik op het penpictogram in de kolom **Acties** naast het model dat je wilt bewerken.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_10.png)
+    ![Instellingenscherm voor documentclassificatie met velden voor extractieregels, vervolgkeuzemenu voor modelselectie en opslagknop](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_10.png)
 2. Werk de beschikbare velden bij:
    * **Volgend model**: Selecteer het model dat de output van het huidige model moet verwerken.
    * **Documenttype**: Kies het documenttype waarmee het model de input moet classificeren.
 3.  Klik op **Opslaan** om je wijzigingen toe te passen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_12.png)
+    ![Pagina Trainingsdaten met de tabbladen Language Models en Table Extraction en een tabel met getrainde modellen met de kolommen Name, Zugewiesene Dokumente, Datum en Bearbeiten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_12.png)

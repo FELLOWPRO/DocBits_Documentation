@@ -104,7 +104,7 @@ Het is ook mogelijk om de status in de workflow in te voeren, zodat de toegeweze
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-nl.png" alt="Actie voor statuswijziging in een workflowconcept."><figcaption><p>Actie voor statuswijziging in een workflowconcept.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt="Workflowbouwer met drie logische kaarten die documenten op basis van toegewezene en documenttype toewijzen aan Invoice reviewer, Delivery-note reviewer en Order reviewer"><figcaption></figcaption></figure>
 
 Als er bijvoorbeeld bepaalde of belangrijke informatie in een document ontbreekt die echter belangrijk is en voor verdere verwerking moet worden opgenomen, kunt u de workflow zo instellen dat deze documenten onmiddellijk worden doorgestuurd naar de inkoper en een vervanger.
 
@@ -141,7 +141,7 @@ Deze logic card is essentieel om ervoor te zorgen dat de gegevens van een orderb
 
 Als u een andere berekening voor toeslagen heeft, of deze slechts op sommige items van toepassing zijn, kunt u de generieke tabelberekeningskaarten gebruiken; sommige daarvan staan ook toe om te filteren op reguliere expressies.
 
-<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt="Berekeningskaart voor de kolom MTZ met een regel Material Surcharge en een regex-filter voor Item Number voor artikelnummers die beginnen met 01, 06, 9, 001 of 000"><figcaption></figcaption></figure>
 
 Hierboven staat een berekeningsvoorbeeld voor MTZ met een filter voor artikelnummers die beginnen met 01, 06, 9, 001 of 000.
 
@@ -149,7 +149,7 @@ Bij een handmatige opzet wordt geadviseerd om berekeningen die afhankelijk zijn 
 
 **Workflow uitvoeren**
 
-<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt="Kaart Run workflow Mtz Into Discount in de workflowbouwer met een sectie Conditions voor het uitvoeren van een vervolgworkflow"><figcaption></figcaption></figure>
 
 Met deze kaart kunt u de naam opgeven van een workflow die na de huidige workflow moet worden uitgevoerd als aan de voorwaarden ervan is voldaan en na voorgaande then-kaarten van de huidige workflow. Hoewel uitvoerbare, actieve workflows worden geprioriteerd, kunt u er ook gedeactiveerde workflows mee uitvoeren als het document aan de voorwaarden van de workflows voldoet.
 

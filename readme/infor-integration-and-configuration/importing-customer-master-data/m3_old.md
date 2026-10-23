@@ -29,21 +29,21 @@ Download vóór het importeren het benodigde verbindingssjabloon via het onderst
 1. **Infor ION Desk openen:**
    *   Ga naar **InforOS** → **ION Desk** → **Connect** → **Verbindingspunten**.
 
-       ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
+       ![Navigatiemenu van Infor ION Desk met de items Home, Data Flows, API Flows en Mappings](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 2. **Het sjabloon importeren:**
    *   Klik op de knop **Import**.
 
-       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt="Connect-pagina in Infor ION Desk met de weergave Connection Points inclusief zoekfunctie en werkbalk"><figcaption></figcaption></figure>
    * Selecteer het juiste **sjabloonbestand** op uw lokale systeem.
    *   Klik op **OK** om het importproces te starten.
 
-       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="" width="327"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="Dialoogvenster Upload Local File in Infor ION Desk met het voor uploaden geselecteerde bestand DocBits-Dev-Prod-Import-Template" width="327"><figcaption></figcaption></figure>
 3. **Bevestiging:**
    *   Als de import is geslaagd, verschijnt een bevestigingsmelding.
 
-       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt="Importbevestiging in Infor ION Desk met de melding dat de import van DocBits-Dev-Prod-Import-Template is geslaagd"><figcaption></figcaption></figure>
 4. **Configuratie na de import:**
    * Na het importeren van het sjabloon kunt u specifieke verbindingsinstellingen naar wens aanpassen.
    * Vergeet niet uw **Service Account** voor authenticatie en toegangsbeheer te importeren of te configureren.
 
-<figure><img src="../../.gitbook/assets/m3_import_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/m3_import_5.png" alt="Pagina API Connection Point voor DocBits-Dev-Prod-Import-Template met naam, logische ID en authenticatiedetails"><figcaption></figcaption></figure>

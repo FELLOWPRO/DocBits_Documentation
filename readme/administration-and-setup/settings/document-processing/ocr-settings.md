@@ -14,7 +14,7 @@ Om toegang te krijgen tot de OCR-instellingen:
 
 *   Navigeer naar: **Instellingen** → **Documentverwerking** → **OCR-instellingen**
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_ocr.png)
+    ![DocBits-instellingenmenu met Document Processing geopend en OCR Settings geselecteerd tussen Import, Rule Management en Export](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_ocr.png)
 
 ## OCR-kwaliteit
 
@@ -29,7 +29,7 @@ Als een document niet voldoet aan het gedefinieerde kwaliteitsniveau, biedt DocB
 * **Gooi fout**\
   De documentverwerking stopt volledig en er wordt een foutmelding weergegeven, waarin staat dat het document niet voldeed aan de vereiste kwaliteitsdrempel.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_1.png)
+![OCR Quality-instellingenpagina met de kwaliteitsschuifregelaar en daaronder geselecteerd Run again after confirmation](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_1.png)
 
 ## Algemene OCR-instellingen
 
@@ -44,7 +44,7 @@ Als een document niet voldoet aan het gedefinieerde kwaliteitsniveau, biedt DocB
     * Je de gewenste resultaten niet behaalt met de momenteel geselecteerde versie.
     * Je problemen oplost die verband houden met de OCR-prestaties of nauwkeurigheid.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_2.png)
+    ![OCR Settings-pagina met het open AI OCR Version-vervolgkeuzemenu met de versies 1.2, 2.0 en 2.1](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_2.png)
 
 ## OCR-instellingen voor tabellen
 

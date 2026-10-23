@@ -4,14 +4,14 @@
 
 De instellingen voor het Dashboard zijn ontworpen om beheerders te helpen de gegevenspresentatie en interactie binnen het DocBits-dashboard te controleren. Deze instellingen bepalen welke informatie onmiddellijk beschikbaar is bij het inloggen, zodat gebruikers snel toegang hebben tot de meest relevante gegevens voor hun taken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
+![Italiaanse documentenlijst met het documentnaambereik van Delivery Note, Advance Ship Notice en Purchase Order en in totaal 2373 documenten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
 
 ## Toegang tot de Dashboard Instellingen
 
 Om toegang te krijgen tot de dashboardinstellingen, navigeer naar:\
 **Instellingen → Globale instellingen → Dashboard**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
+![Italiaanse algemene dashboardinstellingen met de opties om filters te resetten na documentupload, herstart en export](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
 
 ## **Algemeen**
 
@@ -20,13 +20,13 @@ Om toegang te krijgen tot de dashboardinstellingen, navigeer naar:\
   * **Automatisch uploaden van dashboard**: Beheert of het dashboard automatisch gegevens moet laden bij toegang door de gebruiker, wat kan helpen om laadtijden te verminderen en de gebruikerservaring te verbeteren door alleen gegevens te laden wanneer dat nodig is.
   *   **Dashboardgegevens exporteren**: Deze functie voegt een nieuwe **Exporteer**-knop toe aan de dashboardwerkbalk, waarmee je de huidige dashboardweergave kunt exporteren als een **.csv** of **.xlsx**-bestand.
 
-      ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
+      ![Sectie General van de dashboardinstellingen met de schakelaars Reset filters en de Dashboard data-opties Auto refresh dashboard on document updates en Export Dashboard Data](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
 
 ## **Exportgeschiedenis**
 
 In de **Exportgeschiedenis** zie je een tabel met alle eerdere exports, samen met belangrijke informatie over elk verzoek.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
+![Sectie Export History op de instellingenpagina van het Dashboard met de kolommen Email, Status, Requested At, Completed At, Format en Filters Used](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
 
 De volgende details zijn inbegrepen:
 
@@ -49,19 +49,19 @@ De volgende details zijn inbegrepen:
   * **Alleen Admin en Toegewezen**: Alleen gebruikers met Admin-rechten en de toegewezen gebruiker kunnen het document opnieuw starten.
   * **Alle gebruikers**: Alle gebruikers die de nodige [machtigingen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) hebben gekregen, kunnen documenten opnieuw starten.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
+![Sectie Action op de dashboardinstellingenpagina met Assign to en Restart beide ingesteld op Only for Admin](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filters**
 
 * **Statusfilterstijl**: Bepaalt de presentatie stijl van statusfilters, die kan worden ingesteld op standaard of aangepast volgens de operationele focus van de gebruikers.
 * **Aangepast statusfilter**: Maakt het mogelijk om aangepaste filters te creëren en toe te passen die specifieke documentstatussen zoals "Nieuw", "Valideren" of "Exporteren" kunnen targeten. Dit stelt gebruikers in staat om snel toegang te krijgen tot documenten in specifieke fasen van verwerking.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
+![Instellingenpagina van het dashboard met de sectie Filters met Status filter style en Custom status filter plus de sectie Advance Shipment Dashboard](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
 
 ## Dashboard voor geavanceerde verzending
 
 * **Zichtbaarheid van geleverde bestellingen**: Deze functie stelt de gebruiker in staat om de duur op te geven waarvoor geleverde bestellingen zichtbaar zullen zijn.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
+![Sectie Advance Shipment Dashboard op de instellingenpagina van het dashboard met Delivered Orders Visibility ingesteld op 14 Days](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
 
 Deze dashboardinstellingen zijn cruciaal om ervoor te zorgen dat het DocBits-platform zo responsief en nuttig mogelijk is, en gebruikers een krachtig hulpmiddel biedt om documentverwerkingsactiviteiten rechtstreeks vanuit het dashboard te monitoren en te beheren.

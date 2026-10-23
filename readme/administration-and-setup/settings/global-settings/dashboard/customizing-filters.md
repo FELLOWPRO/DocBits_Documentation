@@ -2,7 +2,7 @@
 
 Als je op zoek bent naar een of meer specifieke documenten, zijn de volgende opties beschikbaar. Binnen de zoekbalk hebben we verschillende tools aangeboden om je te helpen het document te vinden dat je zoekt. Om toegang te krijgen tot deze tools, selecteer je het volgende pictogram.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
+![DocBits-dashboard met de zoekbalk All documents en het filterpictogram naast Upload](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
 
 Het gebruik van filters stelt gebruikers in staat om snel relevante informatie te vinden en de hoeveelheid gegevens tot de essentie te reduceren.
 

@@ -20,10 +20,10 @@ We staan alleen HTTPS-beveiligde verbindingen toe voor communicatie met onze ser
 
 ### Infor Cloud
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt="Diagram van de DocBits-naar-Infor-cloudopzet met een browser achter een firewall op poort 443, een Space S3-opslag en een PostgreSQL-database"><figcaption></figcaption></figure>
 
 ### Infor On-Prem
 
 Flexibiliteit is de sleutel, en we bieden zowel cloud- als on-premise oplossingen. Met onze on-premise optie is er geen behoefte om poorten te openen, waardoor de netwerkbeveiliging intact blijft. Of je nu in de cloud bent of alles intern houdt, wij hebben je gedekt.
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt="Diagram van de DocBits on-premise-opzet met scanner en browser achter een lokale firewall die verbinding maken met Local File Storage, Space S3 en PostgreSQL"><figcaption></figcaption></figure>

@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-04-fr-20261023.png" alt="Logique La table de décision Tableau de décision a des retours pour le document. Stocker a renvoyé des données à utiliser dans les cartes suivantes." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

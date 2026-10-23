@@ -1,8 +1,8 @@
 # Any / All Quantity
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-09-fr-20261023.png" alt="Comparaison des bons de commande N&#x27;importe quel/Tous quantité Opérateur tolérance de la commande, avec une tolérance de Tolérance Montant Type de tolérance , comparer Données comparatives" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-09-fr-20261023.png" alt="Comparaison des bons de commande N&#x27;importe quel/Tous quantité Opérateur tolérance de la commande, avec une tolérance de Tolérance Montant Type de tolérance , comparer Données comparatives" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

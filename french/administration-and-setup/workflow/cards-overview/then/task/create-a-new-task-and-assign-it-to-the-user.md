@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-03-fr-20261023.png" alt="Tâche Créer une nouvelle Tâche/Notification avec le titre: Titre , description: Description de priorité Priorité et l&#x27;assigner à l&#x27;utilisateur Utilisateur . Notifier l&#x27;utilisateur par courrier électronique Envoyer un courriel ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif**
 

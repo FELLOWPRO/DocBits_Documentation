@@ -1,6 +1,6 @@
 # Compare two Fields with Tolerance
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-02-fr-20261023.png" alt="Champ du document Comparez les deux champs: Nom du champ Opérateur Nom du champ , avec la tolérance: Tolérance Montant Type de tolérance" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

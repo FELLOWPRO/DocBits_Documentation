@@ -1,6 +1,6 @@
 # Single Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-assignee-00-fr-20261023.png" alt="Attribué à Utilisateur assigné Opérateur Utilisateur" width="552"><figcaption></figcaption></figure>
 
 **Objectif**
 

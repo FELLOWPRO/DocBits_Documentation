@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-14-fr-20261023.png" alt="Comparaison des bons de commande Comparer le coût total dans le champ Nom du champ Opérateur frais correspondants dans la commande avec des tolérances de Tolérance Montant Type de tolérance . ID de chargement comme terminaison du nom de champ après le séparateur Valeur ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

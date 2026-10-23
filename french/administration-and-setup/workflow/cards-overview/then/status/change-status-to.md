@@ -1,6 +1,6 @@
 # Change Status to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-status-00-fr-20261023.png" alt="Statut Modifier le statut en Statut , déclencher des flux de travail: Déclencher des flux de travail ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-03-pl-20261023.png" alt="Zadanie Utwórz nowy Zadanie/Powiadomienie z tytułem: Tytuł , opisem: Opis o priorytecie Priorytet i przypisz użytkownikowi Użytkownik . Powiadom użytkownika za pomocą wiadomości e-mail Wyślij e-mail" width="563"><figcaption></figcaption></figure>
 
 ## **Cel**
 

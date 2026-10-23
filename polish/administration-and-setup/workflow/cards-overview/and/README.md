@@ -8,7 +8,7 @@ W **Workflow Builder** wybierz **Add Card** pod **And...**. Wybierz kategorię p
 
 Użyj tych kart, aby porównać dane zamówienia lub faktury z zamówieniem zakupu, na przykład cenę jednostkową, obiecaną datę dostawy, opłaty lub ilość. Wybierz pola, operator i ewentualną tolerancję, o którą prosi wybrana karta. Poszczególne karty opisano w [Compare with Purchase Order](compare-with-purchase-order/).
 
-<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Compare with Purchase Order; widoczne podglądy obejmują porównanie ceny jednostkowej, daty dostawy, opłat i ilości."><figcaption><p>Kategoria Compare with Purchase Order w angielskim środowisku Sandbox.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-pl-20261023.png" alt="Selektor kart And w języku polskim z wybraną kategorią Porównaj z zamówieniem zakupu; widoczne podglądy obejmują porównanie danych zamówienia, daty dostawy, ceny, opłat i ilości."><figcaption><p>Kategoria Porównaj z zamówieniem zakupu w selektorze kart w języku polskim (dane przykładowe).</p></figcaption></figure>
 
 ## Document Field
 

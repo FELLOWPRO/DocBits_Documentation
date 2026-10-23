@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-04-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Podatek w polu dokumentu Nazwa pola wynosi Operator i jest podatkiem w zamówieniu zakupu z identyfikatorem opłaty w tabeli Tabela danych głównych z tolerancją Ilość tolerancji Typ tolerancji ." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

@@ -35,6 +35,20 @@ Sobald die Funktion **Lieferanten-Portal** aktiviert ist, erscheint ein neuer Ab
 
 Eine detaillierte Anleitung zu allen Einstellungen des Lieferanten finden Sie [hier](../../settings/supplier-setting/).
 
+## Video: Lieferanten finden und Stammdaten pflegen
+
+Dieses deutschsprachige Admin-Video zeigt die Suche im Lieferanten-Dashboard, das Bearbeiten von Stadt und Postleitzahl sowie das Speichern und die anschließende Kontrolle nach dem Neuladen. Es verwendet drei fiktive Beispielunternehmen und ein eigens konfiguriertes Formular mit Name, Stadt und Postleitzahl. Die sichtbaren Felder hängen von Ihrem konfigurierten Lieferantenlayout ab.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/de.mp4" %}
+Lieferanten suchen, Stammdaten ändern und die gespeicherten Werte kontrollieren.
+{% endembed %}
+
+[Video mit einblendbaren deutschen Untertiteln und Transkript öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/de.html).
+
+Hinweis zur gezeigten Testversion: Die Speicherbestätigung erscheint trotz deutscher Oberfläche noch auf Englisch als „Supplier is saved successfully“. Die gespeicherten Werte werden anschließend durch Neuladen kontrolliert.
+
+Das Speichern der Stammdaten ändert den Status „Anstehende Registrierung“ nicht und ersetzt keine fachliche Freigabe. Das Video zeigt keinen Einladungsversand und keine Lieferantenfreigabe.
+
 ## Dashboard für Lieferanten <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 Sie können auf das **Dashboard für Lieferanten** über das linke Menü zugreifen, wie unten gezeigt.

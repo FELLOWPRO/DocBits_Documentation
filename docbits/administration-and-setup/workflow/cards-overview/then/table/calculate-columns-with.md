@@ -1,6 +1,8 @@
 # Calculate Columns with
 
-<figure><img src="../../../../../.gitbook/assets/image (370).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_calc_columns_v1.png" alt="Calculate Columns with, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_calc_columns_v2.png" alt="Calculate Columns with, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

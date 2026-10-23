@@ -1,6 +1,6 @@
 # Set Checkbox to
 
-<figure><img src="../../../../../.gitbook/assets/image (355).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2.png" alt="Set Checkbox to, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,5 +1,9 @@
 # Run DocOperator Prompt (Automation Script)
 
+<figure><img src="../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v2.png" alt="Run DocOperator Prompt (Automation Script), Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v3.png" alt="Run DocOperator Prompt (Automation Script), Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
 ***
 
 Add this card to the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:

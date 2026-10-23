@@ -1,5 +1,7 @@
 # Send Email to Groups
 
+<figure><img src="../../../.gitbook/assets/workflow_card_action_send_email_to_groups_v2.png" alt="Send Email to Groups, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
 ***
 
 Add this card to the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:

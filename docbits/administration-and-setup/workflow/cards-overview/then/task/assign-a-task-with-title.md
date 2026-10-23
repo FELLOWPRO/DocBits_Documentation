@@ -1,6 +1,8 @@
 # Assign a Task with Title
 
-<figure><img src="../../../../../.gitbook/assets/image (367).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v2.png" alt="Assign a Task with Title, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v3.png" alt="Assign a Task with Title, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

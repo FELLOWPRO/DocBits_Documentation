@@ -1,6 +1,12 @@
 # Export with Export Configuration
 
-<figure><img src="../../../../../.gitbook/assets/image (360).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_v1.png" alt="Export with Export Configuration, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_v3.png" alt="Export with Export Configuration, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2.png" alt="Queue document export with export configuration: … for the final export at the end of the run. Ignore pending tasks: …. — Version 2" width="634"><figcaption><p>Queue document export with export configuration: … for the final export at the end of the run. Ignore pending tasks: …. — Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3.png" alt="Queue document export with export configuration: … for the final export at the end of the run. Ignore pending tasks: …. Status after export: …. — Version 3" width="634"><figcaption><p>Queue document export with export configuration: … for the final export at the end of the run. Ignore pending tasks: …. Status after export: …. — Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

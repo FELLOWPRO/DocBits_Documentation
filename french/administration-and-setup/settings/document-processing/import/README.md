@@ -69,11 +69,11 @@ Les journaux de connexion aident à diagnostiquer les communications ; les journ
 
 Le personnage et la voix sont synthétiques. La capture montre la véritable interface de test DocBits avec des factures de formation synthétiques.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/fr.mp4" %}
 Boîte de réception et recherche d'erreurs
 {% endembed %}
 
-[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/fr.html)
+[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/fr.html)
 
 Certains libellés natifs peuvent rester dans une autre langue. Les identifiants techniques des champs sont conservés.
 
@@ -83,7 +83,7 @@ Je contrôle d'abord l'adresse de réception affichée et le périmètre. L'adre
 
 Ici, je limite la réception à notre expéditeur de test approuvé. Je ne choisis l'affectation à une sous-organisation que si elle fait partie du processus prévu. J'enregistre le paramètre et je l'ouvre à nouveau. L'expéditeur autorisé a été conservé ; les e-mails de réponse automatique restent désactivés dans cette formation.
 
-<figure><img src="../../../../.gitbook/assets/admin-save-fr-accounting-email-v1.png" alt="Expéditeur autorisé enregistré, notifications désactivées"><figcaption><p>Expéditeur autorisé enregistré, notifications désactivées</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-save-fr-accounting-email-v2.png" alt="Expéditeur autorisé enregistré, notifications désactivées"><figcaption><p>Expéditeur autorisé enregistré, notifications désactivées</p></figcaption></figure>
 
 Pour cette formation, un message de test a été transmis directement au traitement des e-mails entrants de DocBits. Ce test ne confirme pas la réception d'un e-mail externe. Dans le journal, je vérifie l'objet, l'expéditeur et la pièce jointe importée. Je contrôle ensuite le document réellement créé.
 
@@ -93,4 +93,4 @@ Un deuxième test contrôlé provient d'un expéditeur non autorisé. Dans le jo
 
 Dans un cas réel, je clarifie d'abord si cet expéditeur est même autorisé. Une modification approuvée de la liste des expéditeurs est enregistrée et vérifiée à nouveau. Ensuite, je contrôle une nouvelle réception de test unique jusqu'au document créé. Pour les erreurs techniques, je transmets l'identifiant de trace et le message d'erreur concret.
 
-<figure><img src="../../../../.gitbook/assets/admin-error-fr-accounting-email-v1.png" alt="Import échoué avec pièce jointe, motif et identifiant de suivi"><figcaption><p>Import échoué avec pièce jointe, motif et identifiant de suivi</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-error-fr-accounting-email-v2.png" alt="Import échoué avec pièce jointe, motif et identifiant de suivi"><figcaption><p>Import échoué avec pièce jointe, motif et identifiant de suivi</p></figcaption></figure>

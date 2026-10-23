@@ -304,3 +304,32 @@
 * **M3 Toml 映射文件** 从文件管理器中选择映射文件，或选择 Toml 选项以使用通过规则管理器创建的 toml 文件。[需要帮助？请参阅规则管理器指南](../rule-manager/)
 
 </details>
+
+
+## 视频教程: 配置并测试 ERP 导出
+
+人物与声音均为合成。录屏展示真实的 DocBits 测试界面，使用合成培训发票。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/zh.mp4" %}
+配置并测试 ERP 导出
+{% endembed %}
+
+[查看带字幕和章节的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/zh.html)
+
+部分产品原生标签可能仍为其他语言。技术字段标识符保持不变。
+
+我使用专门的测试配置和单据类型。这些发票只用于培训，里面都是虚构数据。测试接收端会检查数据传输，但不会在生产 ERP 中记账。我不会更改其他集成。
+
+在导出配置中，我检查单据类型、组织和导出类型。本例在云端使用Generic API。凭证JSON和TOML字段映射是独立的文件。在实际项目中，目标系统、权限和子组织必须与预期流程相匹配。
+
+<figure><img src="../../../../.gitbook/assets/admin-configuration-zh-recovery-export-v1.png" alt="仅用于培训文档类型的导出配置"><figcaption><p>仅用于培训文档类型的导出配置</p></figcaption></figure>
+
+在修正后的映射中，DocBits 的 invoice_id 字段提供发送给测试接收端的发票号码。供应商、总金额和货币也会进行映射。本次测试只检查发票抬头数据。发票行项目和 ERP 记账需要在各自项目中另做业务核验。
+
+我上传修正后的TOML文件并保存配置。然后我重新打开它，确认修改已生效。准备好的测试凭证保持不变；生产环境的机密信息不应出现在录屏中。
+
+现在我返回导出失败的测试发票，只重新启动一次导出。我会等待处理完成。仅仅接受请求，并不能证明数据已成功传输。
+
+DocBits 现在显示发票已完成。此外，我还会核对接收回执。发票号码、供应商、金额和货币均与测试发票一致。身份验证和数据传输已成功。测试接收端不会确认 ERP 记账。
+
+<figure><img src="../../../../.gitbook/assets/admin-receipt-zh-recovery-export-v1.png" alt="测试接收端的实际接收记录；不表示 ERP 记账"><figcaption><p>测试接收端的实际接收记录；不表示 ERP 记账</p></figcaption></figure>

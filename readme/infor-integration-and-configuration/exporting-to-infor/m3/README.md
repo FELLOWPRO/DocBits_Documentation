@@ -91,7 +91,7 @@
 * Po dodaniu i skonfigurowaniu wszystkich węzłów kliknij **Save**.
 * Aktywuj przepływ, aby zakończyć konfigurację.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+![Data Flow editor with the connection point panel open showing the flow name DocBits_Demo_to_M3](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
 
 ## Krok 4: Skonfiguruj Export w DocBits
 

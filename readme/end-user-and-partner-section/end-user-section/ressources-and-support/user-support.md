@@ -18,6 +18,6 @@ Você também pode entrar em contato conosco por meio de nossa página FELLOWPRO
 
 Dentro da Tela de Validação, você pode criar tickets diretamente para o documento específico e incluir uma captura de tela do problema. Basta clicar no botão "Criar ticket", a janela de suporte se abre e você pode começar imediatamente.
 
-<figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/user-support3.png" alt="Botão Create ticket na barra de ferramentas de validação de documentos, usado para abrir um ticket de suporte"><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/s150-user-support4-pt.png" alt="Formulário de suporte antes do envio."><figcaption><p>Formulário de suporte antes do envio.</p></figcaption></figure>

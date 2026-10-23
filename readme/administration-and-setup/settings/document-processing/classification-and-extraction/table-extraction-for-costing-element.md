@@ -22,22 +22,22 @@ O guia de configuração de elementos de custo no **DocBits** está disponível 
 1. Abra **Configurações → Processamento de documentos → Classificação e extração → Extração de tabelas**.
 2. Ative **Extração de elementos de custo**.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt="Página de configurações em português com Classification and Extraction aberto, as guias classification rules e AI models e a mensagem no records found"><figcaption></figcaption></figure>
 
 ### **Como definir ou alterar a classificação**
 
 1.  Clique no **ícone de caixa** junto ao item.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt="Página de configurações em português com Classification and Extraction aberto, as guias classification rules e AI models e a mensagem no records found"><figcaption></figcaption></figure>
 2.  Aparece uma **lista suspensa** com os elementos de custo configurados.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt="Página de configurações em português com Classification and Extraction aberto, as guias classification rules e AI models e a mensagem no records found"><figcaption></figcaption></figure>
 3.  Selecione o **tipo de elemento de custo** correto.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt="Página de configurações em português com Classification and Extraction aberto, as guias classification rules e AI models e a mensagem no records found"><figcaption></figcaption></figure>
 4. A classificação é atualizada.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt="Página de configurações em português com Classification and Extraction aberto, as guias classification rules e AI models e a mensagem no records found"><figcaption></figcaption></figure>

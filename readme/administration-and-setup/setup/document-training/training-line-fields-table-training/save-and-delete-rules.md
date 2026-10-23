@@ -11,7 +11,7 @@ Após definir todas as colunas e correções:
 
 Isso garante que o DocBits usará automaticamente o layout treinado na próxima vez que ele encontrar um documento semelhante.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FzVn_mYiL7PwiILj2gJ4sxaPKpEUNOfKwryiZJ2Umk2SpvGHZ8OVUznBReJHqCM7UstWTt6nq0azJrtPDK_2q4jVUZgsE7bf6toT9kl57wByn4EG3JqafBfZt5G54OZ8okUfpLUH1tvHb0mZIC119I4k\&width=768\&dpr=4\&quality=100\&sign=dc056624\&sv=2)
+![Tabela treinada com colunas mapeadas e extraíveis e os botões de ação save rules, delete rules e export](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FzVn_mYiL7PwiILj2gJ4sxaPKpEUNOfKwryiZJ2Umk2SpvGHZ8OVUznBReJHqCM7UstWTt6nq0azJrtPDK_2q4jVUZgsE7bf6toT9kl57wByn4EG3JqafBfZt5G54OZ8okUfpLUH1tvHb0mZIC119I4k\&width=768\&dpr=4\&quality=100\&sign=dc056624\&sv=2)
 
 ## Excluindo Regras
 
@@ -19,4 +19,4 @@ Você pode remover as regras salvas usando o botão **EXCLUIR REGRAS** se elas f
 
 **Aviso**: Excluir regras afeta todos os documentos do mesmo fornecedor com o mesmo layout. Você precisará **reentrenar a extração da tabela do zero**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FKyfMBBv2ghBgSmqTZ4zMVsHKaoAVwcha8XRhUPNPrVMNwsmHXCDMDSsmkJYE2EYWynD1SzMcf57dmqvGIC4u3UpQohRxZW3A2RNICsNyI6Du0-jd3ZibupkTwRnYoD_XUAbfypZ5iQj-9Z0XN_SreUs\&width=768\&dpr=4\&quality=100\&sign=1a65fb86\&sv=2)
+![Barra de ferramentas do treino de tabelas com os botões save, save rules, delete rules, PO matching e export para remover regras](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FKyfMBBv2ghBgSmqTZ4zMVsHKaoAVwcha8XRhUPNPrVMNwsmHXCDMDSsmkJYE2EYWynD1SzMcf57dmqvGIC4u3UpQohRxZW3A2RNICsNyI6Du0-jd3ZibupkTwRnYoD_XUAbfypZ5iQj-9Z0XN_SreUs\&width=768\&dpr=4\&quality=100\&sign=1a65fb86\&sv=2)

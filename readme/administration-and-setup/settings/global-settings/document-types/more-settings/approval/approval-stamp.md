@@ -10,21 +10,21 @@ Para ativar o recurso de Selo de Aprovação, siga estas etapas:
 
 1.  Vá para **Configurações** → **Configurações Globais** → **Tipos de Documentos**.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_1.png" alt="Navegação das configurações globais com entradas para Company Information, Groups Users and Permissions, Integration, Document Types e Email Notification"><figcaption></figcaption></figure>
 2.  **Selecione o Tipo de Documento** para o qual você deseja habilitar o selo de aprovação e clique em **Mais Configurações**.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_2.png" alt="Lista de tipos de documentos com as linhas Invoice, Credit Note, Delivery Note, Medical Receipt e Patient Form com os controlos Edit layout, Fields e Activate"><figcaption></figcaption></figure>
 3.  Na seção **Aprovação**, ative a opção **Selo de Aprovação**.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_3.png" alt="Ecrã de mais configurações com a secção Approval mostrando as opções Approve before export, Second Approval e Approval Stamp"><figcaption></figcaption></figure>
 
 ## Após a Ativação:
 
 Uma vez que o recurso esteja ativado, qualquer documento no estado "pendente de aprovação" receberá automaticamente um selo de aprovação assim que for aprovado. O selo incluirá o logotipo "Aprovado", o nome do usuário que aprovou o documento e o horário em que o documento foi aprovado.
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_4.png" alt="Painel de aprovação com contador de documentos pendentes, detalhes da fatura 911890158, tabela de itens de linha e botões Reject, Save e Approve"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_5.png" alt="Rodapé da fatura sobreposto pelo selo de aprovação que indica o aprovador Fellowpro Test e a marca de tempo 05.03.2025 13:32:31"><figcaption></figcaption></figure>
 
 ### Baixando PDFs com ou sem o **Selo de Aprovação** <a href="#id-4.-downloading-pdfs-with-or-without-annotations" id="id-4.-downloading-pdfs-with-or-without-annotations"></a>
 
@@ -36,4 +36,4 @@ Uma vez que o recurso esteja ativado, qualquer documento no estado "pendente de 
     * **Baixar com Anotações**
     * **Baixar sem Anotações**
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_6.png" alt="" width="247"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_6.png" alt="Menu de ações do documento com as entradas Validate, Assign to, Download, Download annotated PDF e Document Logs" width="247"><figcaption></figcaption></figure>

@@ -51,7 +51,7 @@ Tipos de documento do DocBits: criar, configurar e atribuir configurações de p
 
 <figure><img src="../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Campos e Grupos</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (163).png" alt="" width="279"><figcaption><p>Criar Novo Grupo</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (163).png" alt="Ecrã de Create New Document Type com os botões Criar, Carregar e Campos e grupos e os campos de nome e descrição" width="279"><figcaption><p>Criar Novo Grupo</p></figcaption></figure>
 
 **Adicionar campos:**
 
@@ -60,13 +60,13 @@ Tipos de documento do DocBits: criar, configurar e atribuir configurações de p
 
 <figure><img src="../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Campos e Grupos</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="278"><figcaption><p>Criar Novo Campo</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt="Ecrã de Create New Document Type com os botões Criar, Carregar e Campos e grupos e os campos de nome e descrição" width="278"><figcaption><p>Criar Novo Campo</p></figcaption></figure>
 
 **Concluir**
 
 * Assim que todos os detalhes forem inseridos, clique em "Concluir" e o novo tipo de documento será criado
 
-<figure><img src="../../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (164).png" alt="Ecrã de Create New Document Type com os botões Criar, Carregar e Campos e grupos e os campos de nome e descrição"><figcaption></figcaption></figure>
 
 ### Editar um tipo de documento existente
 
@@ -75,7 +75,7 @@ Tipos de documento do DocBits: criar, configurar e atribuir configurações de p
 * Selecione o tipo de documento que você deseja editar na lista de tipos de documentos existentes.
 * Abaixo do tipo de documento, você encontrará várias opções de edição, por exemplo, editar o layout, campos, colunas da tabela, etc.
 
-<figure><img src="../../../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (166).png" alt="Ecrã de Create New Document Type com os botões Criar, Carregar e Campos e grupos e os campos de nome e descrição"><figcaption></figcaption></figure>
 
 **Mais Configurações:**
 
@@ -85,7 +85,7 @@ Tipos de documento do DocBits: criar, configurar e atribuir configurações de p
 
 * Aqui você pode fazer outras configurações para o tipo de documento, como modelo de design, se um documento deve ser aprovado antes da exportação e muitos outros detalhes.
 
-<figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (165).png" alt="Ecrã de Create New Document Type com os botões Criar, Carregar e Campos e grupos e os campos de nome e descrição"><figcaption></figcaption></figure>
 
 ### Definir regras de extração
 

@@ -4,7 +4,7 @@
 
 Bem-vindo ao módulo de Contabilização de Fatura de Custo e Vendas Indiretas! Este módulo foi projetado para ajudá-lo a gerenciar e reconciliar suas transações financeiras de forma eficiente dentro do seu sistema ERP. Com recursos como extração automática de dados, correspondência de documentos e rastreamento detalhado, você pode garantir que seus registros financeiros sejam precisos e atualizados.
 
-<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt="Ecrã de contabilidade com as colunas Split by total, Position Accounts, Voucher Text e Total junto a uma fatura de fornecedor"><figcaption></figcaption></figure>
 
 ## Primeiros Passos
 

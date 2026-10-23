@@ -23,7 +23,7 @@ Quando esta opção está ativa e a correspondência com o pedido de compra atin
    * Abra **Pedido de compra**.
    * Ative o interruptor **Auto Export if PO matched 100%**.
 
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/100%PO.png" alt="Página de configurações com um aviso de execução sequencial das exportações e a tabela de exportação a mostrar as colunas Tipo e Actions"><figcaption></figcaption></figure>
 
 2. **Monitorização**:
    * Os documentos com correspondência a 100% tornam-se elegíveis para exportação automática, sujeitos às restantes condições configuradas.

@@ -8,7 +8,7 @@ As receções de mercadorias chegam normalmente ao DocBits de forma automática 
 
 ## Duas formas de enviar o mesmo BOD
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
+![Lista de endpoints do Swagger que mostra Import Receive Delivery Bod e Import Receive Delivery Bod Xml](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
 
 | Endpoint | Quando o usar |
 | --- | --- |
@@ -25,7 +25,7 @@ Vai precisar de:
 * **O BOD** — um ficheiro XML `SyncReceiveDelivery`, ou o respetivo conteúdo.
 * **O seu Org ID**, em **Settings → Integration & SSO**, na secção **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Campos Org ID e Sub Org ID preenchidos com valores UUID de exemplo](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** mostra a suborganização que estiver selecionada no cabeçalho. Com **CROSS** selecionado — a vista sobre todas as suborganizações — mostra o mesmo valor que **Org ID**. Mude primeiro para uma suborganização específica se precisar do ID dela.
@@ -58,20 +58,20 @@ Tudo o que está sob **import** fica bloqueado até autorizar. Há duas coisas a
 
 * Clique no **ícone de cadeado** à direita do endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-lock.png)
+![Barra do endpoint Import Receive Delivery Bod com o ícone de cadeado ao lado](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-lock.png)
 
 * Abre-se a caixa de diálogo **Available authorizations** com duas entradas.
 * Cole o seu **Org ID** em **X-ORG-ID** e clique em **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Diálogo Available authorizations com o campo de cabeçalho X-ORG-ID que mostra o valor do ID da organização](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![Diálogo Available authorizations que mostra a entrada de cabeçalho X-ORG-ID marcada como Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Desça até **X-API-KEY**, cole a sua API key e clique em **Authorize**. No DocBits encontra-a em **Settings → Integration & SSO**, na secção **API Key**, ou pode [criar uma nova chave](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#criar-uma-chave-api).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Diálogo Available authorizations com o campo de cabeçalho X-API-KEY à espera do valor da chave de API](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![Diálogo Available authorizations que mostra a entrada de cabeçalho X-API-KEY marcada como Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Clique em **Close**.
 
@@ -81,13 +81,13 @@ Cole a chave sozinha — não escreva `Bearer` à frente. Ambas as autorizaçõe
 
 ### 3. Preencher os campos
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-rd.png)
+![Entrada do endpoint Receive Delivery Bod no Swagger sem parâmetros](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-rd.png)
 
 Clique em **Try it out** e preencha depois o formulário do endpoint que escolheu.
 
 #### Carregar um ficheiro — `/import/receive_delivery_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
+![Endpoint Receive Delivery Bod expandido com um formulário de corpo do pedido que inclui org_id, sub_org_id e upload de ficheiro](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
 
 | Campo | |
 | --- | --- |
@@ -148,7 +148,7 @@ Verifique para que ambiente e que organização está a apontar antes de executa
 
 Antes de executar, verifique a lista pendente **Servers** no fundo do formulário. É ela que decide para que ambiente o pedido é realmente enviado, e pode diferir da página que abriu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-execute.png)
+![Formulário do corpo do pedido com org_id, sub_org_id, o ficheiro selecionado receive-delivery-sample.xml e mapeamentos de campos personalizados](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-execute.png)
 
 Clique em **Execute**. Uma importação bem-sucedida devolve:
 
@@ -159,7 +159,7 @@ Clique em **Execute**. Uma importação bem-sucedida devolve:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-response.png)
+![Resultado de Execute com o comando curl e um corpo de resposta 200 que mostra BOD processed successfully](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-response.png)
 
 Os receive delivery BOD são processados enquanto espera, pelo que, quando vir esta mensagem, os dados já lá estão.
 

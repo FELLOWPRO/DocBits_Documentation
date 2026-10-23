@@ -1,6 +1,6 @@
 # Checkbox is checked
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="Docbits Workflow Document Field" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-08-nl-20261023.png" alt="Documentveld Selectievakje Veldnaam is aangevinkt: Booleaanse" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

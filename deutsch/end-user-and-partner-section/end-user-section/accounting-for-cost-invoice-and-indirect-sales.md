@@ -105,11 +105,11 @@ Für Rechnungen, die nicht automatisch abgeglichen wurden:
 
 Figur und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit synthetischen Schulungsrechnungen.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/de.mp4" %}
 Kostenrechnung kontieren und auf Kostenstellen aufteilen
 {% endembed %}
 
-[Mit Untertiteln und Kapiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/de.html)
+[Mit Untertiteln und Kapiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/de.html)
 
 Einzelne native Produktbeschriftungen können abweichend übersetzt sein. Technische Feld-IDs bleiben erhalten.
 
@@ -125,8 +125,8 @@ In der ersten Zeile trage ich sechzig Prozent ein und bestätige mit Enter. Ich 
 
 Jetzt prüfe ich die beiden Beträge, Sachkonten und Kostenstellen zusammen. Sechshundert plus vierhundert ergibt tausend Euro. Auch die erfasste Summe muss tausend Euro zeigen, und der offene Restbetrag muss null sein. Eine abweichende Summenanzeige kläre ich vor dem Speichern.
 
-<figure><img src="../../.gitbook/assets/customer-totals-de-accounting-email-v1.png" alt="Kostenstellen mit abgestimmter Gesamtsumme von 1.000 Euro"><figcaption><p>Kostenstellen mit abgestimmter Gesamtsumme von 1.000 Euro</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-totals-de-accounting-email-v2.png" alt="Kostenstellen mit abgestimmter Gesamtsumme von 1.000 Euro"><figcaption><p>Kostenstellen mit abgestimmter Gesamtsumme von 1.000 Euro</p></figcaption></figure>
 
 Ich speichere die Kontierung und warte auf die Rückmeldung. Anschließend lade ich die Rechnung erneut. Beide Kostenstellen, die Prozentwerte und die Beträge sind weiterhin vorhanden. Ich prüfe auch nach dem Neuladen die Summe und den Restbetrag.
 
-<figure><img src="../../.gitbook/assets/customer-save-de-accounting-email-v1.png" alt="Kontierung gespeichert und nach erneutem Öffnen geprüft"><figcaption><p>Kontierung gespeichert und nach erneutem Öffnen geprüft</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-save-de-accounting-email-v2.png" alt="Kontierung gespeichert und nach erneutem Öffnen geprüft"><figcaption><p>Kontierung gespeichert und nach erneutem Öffnen geprüft</p></figcaption></figure>

@@ -296,3 +296,32 @@ Aby utworzyć nowy eksport:
 * **Plik mapowania M3 TOML** Wybierz plik mapowania z menedżera plików lub użyj opcji wybierz Toml, aby użyć pliku toml utworzonego za pomocą menedżera reguł. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Menedżera Reguł](rule-manager/)
 
 </details>
+
+
+## Instrukcja wideo: Konfiguracja i testowanie eksportu do ERP
+
+Postać i głos są syntetyczne. Nagranie pokazuje rzeczywisty interfejs testowy DocBits z syntetycznymi fakturami szkoleniowymi.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/pl.mp4" %}
+Konfiguracja i testowanie eksportu do ERP
+{% endembed %}
+
+[Oglądaj z napisami i rozdziałami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/pl.html)
+
+Niektóre etykiety produktu mogą pozostać w innym języku. Zachowano techniczne identyfikatory pól.
+
+Używam własnej konfiguracji testowej i typu dokumentu. Faktury zawierają fikcyjne dane szkoleniowe. Nasz odbiornik testowy sprawdza przesyłanie danych, ale nie wykonuje księgowania w produkcyjnym systemie ERP. Nie zmieniam pozostałych integracji.
+
+W konfiguracji eksportu sprawdzam typ dokumentu, organizację i typ eksportu. Ten przykład wykorzystuje Generic API w chmurze. Dane uwierzytelniające JSON i mapowanie pól TOML to oddzielne pliki. W prawdziwych projektach system docelowy, uprawnienia i podorganizacja muszą pasować do zamierzonego procesu.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-pl-recovery-export-v1.png" alt="Konfiguracja eksportu ograniczona do szkoleniowego typu dokumentu"><figcaption><p>Konfiguracja eksportu ograniczona do szkoleniowego typu dokumentu</p></figcaption></figure>
+
+W poprawionym mapowaniu pole DocBits invoice_id dostarcza numer faktury wysyłany do odbiornika testowego. Mapowane są również dostawca, kwota całkowita i waluta. Test obejmuje dane nagłówka. Pozycje faktury i księgowanie w ERP wymagają osobnych kontroli biznesowych w danym projekcie.
+
+Przesyłam poprawiony plik TOML i zapisuję konfigurację. Następnie otwieram ją ponownie i sprawdzam, czy zmiana została zapisana. Testowe dane uwierzytelniające pozostają bez zmian; dane dostępowe do środowiska produkcyjnego nie powinny pojawiać się w nagraniu.
+
+Wracam do faktury testowej, której eksport się nie powiódł, i restartuję eksport dokładnie jeden raz. Czekam na zakończenie przetwarzania. Samo przyjęcie żądania nie jest dowodem udanego przesłania danych.
+
+DocBits pokazuje teraz fakturę jako zakończoną. Dodatkowo sprawdzam potwierdzenie odbioru z odbiornika testowego. Numer faktury, dostawca, kwota i waluta zgadzają się z fakturą testową. Uwierzytelnianie i przesłanie danych zakończyły się powodzeniem. Odbiornik testowy nie potwierdza księgowania w ERP.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-pl-recovery-export-v1.png" alt="Rzeczywisty odbiór przez odbiorcę testowego; bez księgowania w ERP"><figcaption><p>Rzeczywisty odbiór przez odbiorcę testowego; bez księgowania w ERP</p></figcaption></figure>

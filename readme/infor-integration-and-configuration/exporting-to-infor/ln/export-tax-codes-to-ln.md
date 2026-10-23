@@ -14,7 +14,7 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
     ![Página DocBits List of Values nas configurações em Document Processing, aberta a partir da barra lateral de configurações](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FsOvkQi6jHPOqhlU2lCRO%252FTaxCodes_1.png%3Falt%3Dmedia%26token%3Dbf6cb4a5-9d82-40d0-8222-68788d44bf16\&width=768\&dpr=4\&quality=100\&sign=5145579e\&sv=2)
 2.  Clique em **Novo**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fnnoys71KFjrJz97lPu2F%252FTaxCodes_2.png%3Falt%3Dmedia%26token%3D26c8ba44-7e3f-437e-abd6-d09993231f2a\&width=768\&dpr=4\&quality=100\&sign=20bede4e\&sv=2)
+    ![Página List of Values com o botão New destacado na barra de ferramentas](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fnnoys71KFjrJz97lPu2F%252FTaxCodes_2.png%3Falt%3Dmedia%26token%3D26c8ba44-7e3f-437e-abd6-d09993231f2a\&width=768\&dpr=4\&quality=100\&sign=20bede4e\&sv=2)
 3.  Crie uma lista com o nome `Tax_Country` e clique em **Salvar**.
 
     ![Diálogo New List of Values com o nome Tax_Country introduzido e o botão Save visível](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FVH48FUS9K0rT7PoTNqnw%252FTaxCodes_3.png%3Falt%3Dmedia%26token%3Daf31c7a7-28d5-48cd-98b0-40a7a4370168\&width=768\&dpr=4\&quality=100\&sign=7627670e\&sv=2)
@@ -58,7 +58,7 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 
 4.  Após salvar cada campo, clique em **Salvar Configurações** para aplicar as alterações.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FGFJtph4tpOZIWglbHxrf%252FTaxCodes_20.png%3Falt%3Dmedia%26token%3Db2f950b0-5198-4b6c-ae28-aa1cdf2dad57\&width=768\&dpr=4\&quality=100\&sign=bf4f16b7\&sv=2)
+    ![Página de configurações Fields com os campos de imposto recém-criados e o botão Save Settings destacado](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FGFJtph4tpOZIWglbHxrf%252FTaxCodes_20.png%3Falt%3Dmedia%26token%3Db2f950b0-5198-4b6c-ae28-aa1cdf2dad57\&width=768\&dpr=4\&quality=100\&sign=bf4f16b7\&sv=2)
 
 ### **Passo 3: Editar Layout**
 
@@ -77,14 +77,14 @@ Este guia irá orientá-lo através do processo de configuração para garantir 
 5. Expanda o menu suspenso **Elementos do Formulário**.
 6.  Na seção **Tax Details**, use a ferramenta **Horizontal Separator**. Arraste e solte entre as sub-seções dentro da seção fiscal para separá-las claramente e reduzir a confusão.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FBrsp5xo81Rf6a9kwkR28%252FTaxCodes_22.png%3Falt%3Dmedia%26token%3D72786399-6f8b-485e-a787-c8d71333fe32\&width=768\&dpr=4\&quality=100\&sign=3c7d4cea\&sv=2)
+    ![Editor de layouts com a lista Form Elements expandida e a ferramenta Horizontal Separator destacada](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FBrsp5xo81Rf6a9kwkR28%252FTaxCodes_22.png%3Falt%3Dmedia%26token%3D72786399-6f8b-485e-a787-c8d71333fe32\&width=768\&dpr=4\&quality=100\&sign=3c7d4cea\&sv=2)
 7. Expanda o menu suspenso **Campos do Formulário**.
 8.  Pesquise por **Tax Country** e arraste e solte o campo em sua área respectiva.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FUgaHNnPiXIEqbDMowdI4%252FTaxCodes_23.png%3Falt%3Dmedia%26token%3D6786a41c-cb53-485a-87e3-e9f9f12d4933\&width=768\&dpr=4\&quality=100\&sign=c6640ca2\&sv=2)
+    ![Editor de layouts com a lista Form Fields expandida e o campo Tax Country a ser pesquisado](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FUgaHNnPiXIEqbDMowdI4%252FTaxCodes_23.png%3Falt%3Dmedia%26token%3D6786a41c-cb53-485a-87e3-e9f9f12d4933\&width=768\&dpr=4\&quality=100\&sign=c6640ca2\&sv=2)
 9.  Pesquise por **Tax Code** e arraste e solte o campo em sua área correspondente.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FCYpdEBqyN3Je081u19dF%252FTaxCodes_24.png%3Falt%3Dmedia%26token%3Dc1c5c1e1-9820-4927-b67d-e6dcfa8e094a\&width=768\&dpr=4\&quality=100\&sign=79372792\&sv=2)
+    ![Editor de layouts com a lista Form Fields expandida e o campo Tax Code a ser pesquisado](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FCYpdEBqyN3Je081u19dF%252FTaxCodes_24.png%3Falt%3Dmedia%26token%3Dc1c5c1e1-9820-4927-b67d-e6dcfa8e094a\&width=768\&dpr=4\&quality=100\&sign=79372792\&sv=2)
 10. Salve o modelo.
 
     ![Editor de layouts com o botão Save destacado após colocar os campos de imposto](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FnopUJhMG5tm2PAD4tLc5%252FTaxCodes_25.png%3Falt%3Dmedia%26token%3Dfbb05319-79f8-4a95-ad2c-1698dbbb597d\&width=768\&dpr=4\&quality=100\&sign=8a441477\&sv=2)
@@ -104,7 +104,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
     ![Página DocBits List of Values nas configurações em Document Processing, aberta a partir da barra lateral de configurações](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FsOvkQi6jHPOqhlU2lCRO%252FTaxCodes_1.png%3Falt%3Dmedia%26token%3Dbf6cb4a5-9d82-40d0-8222-68788d44bf16\&width=768\&dpr=4\&quality=100\&sign=5145579e\&sv=2)
 2.  Clique em **Novo**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fnnoys71KFjrJz97lPu2F%252FTaxCodes_2.png%3Falt%3Dmedia%26token%3D26c8ba44-7e3f-437e-abd6-d09993231f2a\&width=768\&dpr=4\&quality=100\&sign=20bede4e\&sv=2)
+    ![Página List of Values com o botão New destacado na barra de ferramentas](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fnnoys71KFjrJz97lPu2F%252FTaxCodes_2.png%3Falt%3Dmedia%26token%3D26c8ba44-7e3f-437e-abd6-d09993231f2a\&width=768\&dpr=4\&quality=100\&sign=20bede4e\&sv=2)
 3.  Crie uma lista com o nome `Tax_Country` e clique em **Salvar**.
 
     ![Diálogo New List of Values com o nome Tax_Country introduzido e o botão Save visível](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FVH48FUS9K0rT7PoTNqnw%252FTaxCodes_3.png%3Falt%3Dmedia%26token%3Daf31c7a7-28d5-48cd-98b0-40a7a4370168\&width=768\&dpr=4\&quality=100\&sign=7627670e\&sv=2)
@@ -148,7 +148,7 @@ Após fazer o upload de um novo documento no DocBits com as configurações de d
 
 4.  Após salvar cada campo, clique em **Salvar Configurações** para aplicar as alterações.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FGFJtph4tpOZIWglbHxrf%252FTaxCodes_20.png%3Falt%3Dmedia%26token%3Db2f950b0-5198-4b6c-ae28-aa1cdf2dad57\&width=768\&dpr=4\&quality=100\&sign=bf4f16b7\&sv=2)
+    ![Página de configurações Fields com os campos de imposto recém-criados e o botão Save Settings destacado](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FGFJtph4tpOZIWglbHxrf%252FTaxCodes_20.png%3Falt%3Dmedia%26token%3Db2f950b0-5198-4b6c-ae28-aa1cdf2dad57\&width=768\&dpr=4\&quality=100\&sign=bf4f16b7\&sv=2)
 
 ### **Passo 3: Editar Layout**
 

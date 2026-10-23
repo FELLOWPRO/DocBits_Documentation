@@ -91,7 +91,7 @@
 * Depois de todos os nós serem adicionados e configurados, clique em **Save**.
 * Ative o fluxo para concluir a configuração.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+![Data Flow editor with the connection point panel open showing the flow name DocBits_Demo_to_M3](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
 
 ## Passo 4: Configurar Export no DocBits
 

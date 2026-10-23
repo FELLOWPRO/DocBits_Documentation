@@ -1,6 +1,6 @@
 # Extração de tabela para elemento de custo
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FhfKR7nRoSOXm7ms0X7P2%252FBildschirmfoto%25202024-09-20%2520um%252013.42.20.png%3Falt%3Dmedia%26token%3Dff914785-1bd7-41c5-a6c0-413058dbe9fc\&width=768\&dpr=4\&quality=100\&sign=2616709f\&sv=2)
+![Cabeçalho do separador de configurações com o texto Table extraction for costing e uma seta de recolher à direita](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FhfKR7nRoSOXm7ms0X7P2%252FBildschirmfoto%25202024-09-20%2520um%252013.42.20.png%3Falt%3Dmedia%26token%3Dff914785-1bd7-41c5-a6c0-413058dbe9fc\&width=768\&dpr=4\&quality=100\&sign=2616709f\&sv=2)
 
 Para ativar a extração de tabela para elemento de custo, você precisará importar a tabela m3costingelement para o DocBits.
 
@@ -46,6 +46,6 @@ Uma vez completo, procure pela API chamada master\_data\_lookup/import\_data e p
 
 ### data\_type precisa ser costing\_element
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8UD4FhFv2dRB4cMjCDL4G9ndjH7laVMKWqdeMaJGgEo48-UVvucB1uOydzNdfFy0yPM5bb66mZB4k9uJR7TTiEREGFaV2EqW01gxJpTyuUfGNh5QmBjySkyhZ56gWV8sYs8WI5RnHcENtXgjTU0vg0Q\&width=768\&dpr=4\&quality=100\&sign=7c9f4dbb\&sv=2)
+![Formulário Import Data para elementos de custo com os campos data_type, file, delimiter, on_conflict, replace_all e auto_generate_id e o botão Cancel](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8UD4FhFv2dRB4cMjCDL4G9ndjH7laVMKWqdeMaJGgEo48-UVvucB1uOydzNdfFy0yPM5bb66mZB4k9uJR7TTiEREGFaV2EqW01gxJpTyuUfGNh5QmBjySkyhZ56gWV8sYs8WI5RnHcENtXgjTU0vg0Q\&width=768\&dpr=4\&quality=100\&sign=7c9f4dbb\&sv=2)
 
 Se feito corretamente, a tabela M3CostingElement deve agora estar no seu ambiente DocBits. A extração de tabela para elementos de custo agora foi configurada para o seu ambiente.

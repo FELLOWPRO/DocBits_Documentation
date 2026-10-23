@@ -13,7 +13,7 @@ Esta página explica como configurar essa opção.
     ![Lista de tipos de documento com as linhas Invoice, Credit Note, Delivery Note e Order Confirmation e os respetivos interruptores Activate](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZSKdVhneopjjzzIBnbax%252Fpo_settings_1.png%3Falt%3Dmedia%26token%3Dab57e25e-9c6a-4273-b21b-ae328579839c\&width=768\&dpr=4\&quality=100\&sign=29a04f7d\&sv=2)
 3.  Na seção **Ordem de compra**, navegue até a opção **Exportação Alternativa**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F8kVaJLFQJemDjEzDZUdX%252Fpo_settings_alternate_export_1.png%3Falt%3Dmedia%26token%3Dfb56d11a-f8f3-4e01-8653-4a08ea5beac2\&width=768\&dpr=4\&quality=100\&sign=71b4c75\&sv=2)
+    ![Painel More Settings da secção Purchase Order com a opção Alternate Export entre PO Tolerance Setting e PO disable statuses](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F8kVaJLFQJemDjEzDZUdX%252Fpo_settings_alternate_export_1.png%3Falt%3Dmedia%26token%3Dfb56d11a-f8f3-4e01-8653-4a08ea5beac2\&width=768\&dpr=4\&quality=100\&sign=71b4c75\&sv=2)
 
 ## Como configurar
 

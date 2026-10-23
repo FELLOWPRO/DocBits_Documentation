@@ -14,7 +14,7 @@ Pour accéder aux paramètres OCR :
 
 *   Accédez à : **Paramètres** → **Traitement des documents** → **OCR Paramètres**
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt="Menu des paramètres de DocBits avec Document Processing ouvert et OCR Settings sélectionné parmi Import, Rule Management et Export"><figcaption></figcaption></figure>
 
 ## Qualité OCR
 
@@ -29,7 +29,7 @@ Si un document ne répond pas au niveau de qualité défini, DocBits propose tro
 * **Throw Error**\
   Le traitement du document s'arrêtera complètement et un message d'erreur s'affichera, indiquant que le document n'a pas atteint le seuil de qualité requis.
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt="Page de paramètres OCR Quality avec le curseur de qualité et Run again after confirmation sélectionné en dessous"><figcaption></figcaption></figure>
 
 ## Paramètres OCR généraux
 
@@ -44,7 +44,7 @@ Si un document ne répond pas au niveau de qualité défini, DocBits propose tro
     * Vous n'obtenez pas les résultats souhaités avec la version actuellement sélectionnée.
     * Vous résolvez des problèmes liés aux performances ou à la précision de l’OCR.
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt="Page OCR Settings avec le menu déroulant AI OCR Version ouvert affichant les versions 1.2, 2.0 et 2.1"><figcaption></figcaption></figure>
 
 ## Paramètres OCR pour les tableaux
 

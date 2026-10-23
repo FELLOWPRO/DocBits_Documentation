@@ -89,4 +89,4 @@ Dans la vue détaillée, les utilisateurs peuvent :
 * Identifier où surviennent les problèmes lorsque l'invite rencontre des difficultés.
 * Utiliser les mêmes actions **Pause**, **Resume**, **Cancel** et **Take Control**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="Vue détaillée de DocBits Operator pour le prompt Open google.com then search for Alan MacMasters avec des étapes terminées et des prompts enregistrés dans la barre latérale" width="563"><figcaption></figcaption></figure></div>

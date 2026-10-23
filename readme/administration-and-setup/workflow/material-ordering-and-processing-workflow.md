@@ -47,4 +47,4 @@ Ce document décrit le flux de travail pour commander du matériel auprès des f
 * Veillez à ce que tous les documents soient vérifiés et archivés à des fins de conservation des enregistrements.
 * Les divergences dans les détails de la commande ou de la facture doivent être résolues rapidement pour éviter les retards.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed.svg" alt="Diagramme en couloirs du flux de travail de commande et de traitement du matériel entre Supplier, DocBits, Purchasing-INFOR, IDM et FIBU"><figcaption></figcaption></figure>

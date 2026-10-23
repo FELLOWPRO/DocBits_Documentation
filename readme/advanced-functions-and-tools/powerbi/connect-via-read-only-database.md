@@ -18,7 +18,7 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 * Sélectionnez le pilote **PostgreSQL Unicode(x64)** dans la liste et cliquez sur **Terminer**.
 * Renseignez les champs requis avec les identifiants disponibles ici :\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
-<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt="Volet Navigator de Power BI affichant la source de données ODBC dsn-Sandbox-Read_Only avec le schéma public et ses tables répertoriées"><figcaption></figcaption></figure>
 
 **Champs requis :**
 
@@ -38,7 +38,7 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
     <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI Obtenir des données ODBC"><figcaption></figcaption></figure>
 * Dans la liste des DSN, sélectionnez votre source configurée (par ex. `Sandbox-Read_Only`).
 
-<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt="Power BI Navigator avec des tables de sandbox-doc2api telles que supplier group, supplier header et task assignment, avec les boutons Select Related Tables, Load et Transform Data"><figcaption></figcaption></figure>
 
 * Cliquez sur **OK**. Saisissez à nouveau les identifiants si vous y êtes invité.
   * Si `password authentication failed for user` apparaît, vérifiez l’hôte, la base de données, le nom d’utilisateur et le mot de passe. Saisissez le véritable mot de passe dans la boîte de dialogue d’authentification. L’échappement par accolades dans une chaîne de connexion ODBC relève de la syntaxe du pilote ; ce n’est pas une solution générale aux échecs d’authentification.
@@ -49,7 +49,7 @@ Ce guide vous explique comment connecter la **base de données en lecture seule 
 * Ouvrez le schéma **`public`**.
 * Sélectionnez les tables que vous souhaitez importer.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![Panneau Read-Only DB Access de DocBits affichant les champs nom d'utilisateur, mot de passe, base de données, hôte et port ainsi que la liste des tables disponibles](../../.gitbook/assets/connect_read_only_1.png)        ![Boîte de dialogue From ODBC de Power BI avec le menu déroulant Data source name (DSN) et les options avancées](../../.gitbook/assets/connect_read_only_2.png)
 
 * Choisissez :
   * **Charger** → importe directement dans Power BI

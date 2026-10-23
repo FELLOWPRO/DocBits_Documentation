@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-04-es-20261023.png" alt="Comparar con la orden de compra Impuesto en el campo de documento Nombre del campo es Operador al impuesto en la orden de compra con la identificación de cargo en la tabla Tabla de datos maestros con tolerancias Tolerancia Importe Tipo de tolerancia ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

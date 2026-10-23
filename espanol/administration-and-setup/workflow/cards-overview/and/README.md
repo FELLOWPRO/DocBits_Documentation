@@ -8,7 +8,7 @@ En el **Workflow Builder**, seleccione **Add Card** bajo **And...**. Elija una c
 
 Utilice estas tarjetas para comparar datos de un pedido o de una factura con una orden de compra, como el precio unitario, la fecha de entrega prometida, los cargos o la cantidad. Elija los campos, el operador y la tolerancia que solicite la tarjeta seleccionada. Consulte [Compare with Purchase Order](compare-with-purchase-order/) para ver cada tarjeta.
 
-<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Selector de tarjetas And en inglés con Compare with Purchase Order seleccionado; las vistas previas visibles incluyen comparaciones de precio unitario, fecha de entrega, cargos y cantidad."><figcaption><p>Categoría Compare with Purchase Order en el Sandbox en inglés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-es-20261023.png" alt="Selector de tarjetas And en español con la categoría Comparar con la orden de compra seleccionada; las vistas previas visibles incluyen comparaciones de datos de pedido, fecha de entrega, precio, cargos y cantidad."><figcaption><p>Categoría Comparar con la orden de compra en el selector de tarjetas en español (datos de ejemplo).</p></figcaption></figure>
 
 ## Document Field
 

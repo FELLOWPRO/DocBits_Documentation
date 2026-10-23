@@ -1,6 +1,6 @@
 # Quoted Item Price
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-03-es-20261023.png" alt="Lógica Cualquiera/Todos precio del artículo cotizado Operador al precio contratado." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

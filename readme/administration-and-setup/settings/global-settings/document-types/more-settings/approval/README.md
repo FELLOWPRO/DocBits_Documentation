@@ -2,11 +2,11 @@
 
 此视频展示了审批的配置和测试。
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/zh.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/zh.mp4" %}
 配置和测试发票审批
 {% endembed %}
 
-[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/zh.html)
+[观看带字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/zh.html)
 
 显示的是实际应用程序；选项的措辞可能取决于部署的版本。
 
@@ -32,9 +32,9 @@
 3. 将等待的发票分配给另一位授权审核员。使用第二个普通帐户检查它并使用单独的说明给予二次批准。
 4. 重新打开历史记录并验证两位不同的审核员、时间和说明。还要以特定原因拒绝单独的测试发票，并在重新加载后验证该决定。
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-zh-618ef59007ec.png" alt="已为专用测试文档类型保存的审批设置。"><figcaption><p>已为专用测试文档类型保存的审批设置。</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-zh-921235b73129.png" alt="已为专用测试文档类型保存的审批设置。"><figcaption><p>已为专用测试文档类型保存的审批设置。</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-zh-618ef59007ec.png" alt="两位不同审核人员及各自保存的备注。"><figcaption><p>两位不同审核人员及各自保存的备注。</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-zh-921235b73129.png" alt="两位不同审核人员及各自保存的备注。"><figcaption><p>两位不同审核人员及各自保存的备注。</p></figcaption></figure>
 
 ## 验证结果
 

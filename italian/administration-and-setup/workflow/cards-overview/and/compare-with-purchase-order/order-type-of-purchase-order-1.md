@@ -4,7 +4,7 @@ hidden: true
 
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-08-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto Qualsiasi/Tutti tipo di ordine di acquisto Operatore Tipo di ordine"><figcaption></figcaption></figure>
 
 ## **Scopo**:
 

@@ -2,11 +2,11 @@
 
 To wideo pokazuje konfigurację i testowanie zatwierdzeń.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/pl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/pl.mp4" %}
 Konfiguruj i testuj zatwierdzenia faktur
 {% endembed %}
 
-[Obejrzyj wideo z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/pl.html)
+[Obejrzyj wideo z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/pl.html)
 
 Pokazano rzeczywistą aplikację; sformułowanie opcji może zależeć od wdrożonej wersji.
 
@@ -32,9 +32,9 @@ Dodatkowa opcja V2 i edytory formularzy to oddzielne ustawienia. Ten samouczek w
 3. Przypisz oczekującą fakturę innej uprawnionej osobie sprawdzającej. Użyj tego drugiego zwykłego konta, aby ją sprawdzić i udzielić drugiego zatwierdzenia z oddzielną notatką.
 4. Otwórz ponownie historię i zweryfikuj dwie różne osoby sprawdzające, czasy decyzji i notatki. Odrzuć również oddzielną fakturę testową z powodem i zweryfikuj tę decyzję po odświeżeniu.
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-pl-408299622769.png" alt="Zapisane ustawienia zatwierdzania we własnym typie testowym."><figcaption><p>Zapisane ustawienia zatwierdzania we własnym typie testowym.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-pl-a52ede25cb67.png" alt="Zapisane ustawienia zatwierdzania we własnym typie testowym."><figcaption><p>Zapisane ustawienia zatwierdzania we własnym typie testowym.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-pl-408299622769.png" alt="Dwie różne osoby sprawdzające oraz obie zapisane notatki."><figcaption><p>Dwie różne osoby sprawdzające oraz obie zapisane notatki.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-pl-a52ede25cb67.png" alt="Dwie różne osoby sprawdzające oraz obie zapisane notatki."><figcaption><p>Dwie różne osoby sprawdzające oraz obie zapisane notatki.</p></figcaption></figure>
 
 ## Zweryfikuj wynik
 

@@ -32,6 +32,10 @@ description: "从入门到专家的学习路径"
 
 ## 2. 构建第一条规则 <a id="level-2"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/zh.html)。
+
 **练习:** 创建 When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW，保持未启用。使用 999、1000 和 1000.01 的完整数据测试。这条线性规则暂不需要控制节点。
 
 **完成标准:** 只有大于 1000 时到达 REVIEW；记录类型、运算符和出口，并另外处理输入缺失。
@@ -40,6 +44,10 @@ description: "从入门到专家的学习路径"
 
 ## 3. 字段、类型与边界 <a id="level-3"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/zh.html)。
+
 **练习:** 检查缺失、null、空文本、空格、false、0 和文本数字。分别以订单及文档为参考计算容差，比较一个和全部实际匹配行。
 
 **完成标准:** 根据值、类型、参考侧和现有数据解释真、假与错误；没有可比较行不能当作成功批准。
@@ -47,6 +55,10 @@ description: "从入门到专家的学习路径"
 阅读并搭建: [P1：选择 Field is、Docfield is 或 Compare two Fields](masterclass/field-conditions.md) · [P1：明确容差参考侧与采购订单比较方向](masterclass/tolerances-and-po.md).
 
 ## 4. 业务规则与审批 <a id="level-4"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/zh.html)。
 
 **练习:** 配置两条不重叠的金额规则，追踪已保存的用户返回值直到分配。安排 A 的顺序值为 10、B 为 20，并设计拒绝与后备路径。
 

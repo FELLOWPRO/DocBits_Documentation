@@ -1,110 +1,59 @@
 # Editor de diseños
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Tutorial de Layout Builder: cree diseños de documentos personalizados para una validación más rápida y limpia
-{% endembed %}
+Utilice el editor de diseños para organizar los campos y los controles que las personas ven al validar o aprobar un documento. Un diseño pertenece a un único tipo de documento, un único origen y un único tipo de diseño, así que compruebe estos tres elementos en la parte superior de la página antes de guardar.
 
-## **Acceso al editor de diseños**
+## Abrir el diseño
 
-En primer lugar, asegúrese de que la función Layout Builder esté activada. Esto se puede hacer navegando a Configuración → Procesamiento de documentos → Módulo → Tipo de documento y asegúrese de que el control deslizante del editor de diseños esté activado como se muestra a continuación.
+1. Abra **Configuración → Tipos de Documento**.
+2. Seleccione el tipo de documento que desea editar y abra el **editor de diseños**. En el caso de un subtipo de documento, abra la acción editor de diseños de ese subtipo.
+3. Compruebe el encabezado. El selector de la izquierda es el **Origen** (por ejemplo, **Defecto**), seguido del **Tipo de Documento** (por ejemplo, **Factura**) y del **Tipo de diseño** (por ejemplo, **Validación de campos**). Cada selector abre una lista; al elegir otra entrada se carga ese diseño. Si el editor de diseños no está disponible, es posible que un administrador deba activar el módulo para su organización.
 
-![](https://lh7-us.googleusercontent.com/I0VvFiFftKLoCB47jCAoosfTyqIQgXBoggMFp1QAeIj9xW4yiiIzyk5eIEHZ7duA251Yc4\_ArUKA8e-LjDht13bckAnkAOHOvl1p5k1-Qj\_UkEp2cSZwxHz\_PXe8IQ4\_jglzCtjAJg5pd9m\_hNZEhXA)
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-es.png" alt="El editor de diseños de una factura en DocBits, con los selectores de origen, tipo de documento y tipo de diseño, las pestañas Estructura, Campos y Elementos, el lienzo del diseño y el panel Propiedades a la derecha"><figcaption><p>El editor de diseños: los selectores del encabezado, las listas de elementos a la izquierda, el lienzo en el centro y el panel Propiedades a la derecha.</p></figcaption></figure>
 
-Una vez hecho esto, puede acceder al editor de diseños a través de Configuración → Tipos de documentos. Una vez en esta página, puede seleccionar entre los diversos tipos de documentos que ha creado y seleccionar “Edit Layout” como se muestra a continuación.
+## Trabajar con el encabezado
 
-![](https://lh7-us.googleusercontent.com/WMD8M0qugnc64ZuyLuEYH5P63qk-Vo86useg32-QyOsP63FJA\_Xh7UzwlwmUR3K9oTd19aXexSitZqQLVEKo26-i8hYWUS9CChzwAS8TgbWoqweFucJcNIgKBruzSd0mxn8zrh9i46lPxKMNDh-YEJ8)
+* **Tipo de Documento** y **Tipo de diseño** permiten cambiar de diseño. La página vuelve a cargar el diseño que elija.
+* Junto a **Guardar**, DocBits indica si el diseño tiene **Cambios no guardados**. Después de guardar, muestra cuándo se guardó por última vez.
+* **Guardar** almacena el diseño para el tipo de documento, el origen y el tipo de diseño seleccionados.
+* El menú **Más** (tres puntos) contiene **Autogenerar plantilla**, **Aplicar diseño predeterminado a los orígenes**, **Usar plantilla predeterminada**, **Editar json**, **Copiar JSON** y **Configuración de diseño**. **Autogenerar plantilla** y **Usar plantilla predeterminada** sustituyen un diseño personalizado, así que compruebe antes el tipo de documento y el diseño seleccionados. **Editar json** está pensado para la configuración avanzada y solo debe utilizarse si comprende el formato de la plantilla.
+* Si abandona la página con cambios sin guardar, DocBits le pregunta si desea guardarlos o descartarlos.
 
-o si tiene tipos de subdocumentos dentro de un tipo de documento creado, puede seleccionar “Document Sub Types” y seleccionar “Edit Layout” para el diseño del tipo de subdocumento que desea editar como se muestra a continuación.
+## Encontrar elementos: Estructura, Campos, Elementos
 
-![](https://lh7-us.googleusercontent.com/KfmM8wMGnn5tzXRxF1yT0Efm7X6v0kYeGzgNG3RihERh\_P71tjEVkJh4POMwgqnsCBoE736xI7oHkmpYNUbtAShhE-wAHsnLuxljDtmhGQUyljF\_PmOF2y6c0gIdIk\_jUD3sVNsq5viT2sb236OBYSA)
+La parte izquierda tiene tres pestañas:
 
-## **Conceptos básicos del gestor de diseños**
+| Pestaña | Para qué sirve |
+| --- | --- |
+| **Estructura** | Ver el diseño como un árbol. Los grupos y sus campos aparecen en el orden en que se muestran en el lienzo, junto con el número de campos colocados y disponibles. |
+| **Campos** | Todos los campos configurados para el tipo de documento, agrupados por grupo de campos y contraídos de forma predeterminada. El filtro alterna entre los campos **Todos**, **No usado** y **Oculto**, y el nombre técnico del campo se muestra debajo de su etiqueta. |
+| **Elementos** | Controles de presentación e interacción como Texto, Etiqueta, Casilla de verificación, separadores, tablas, botones y subgrupos. |
 
-Después de seguir los pasos anteriores llegarás a una página como la que se muestra a continuación.
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-es.png" alt="La pestaña Estructura del editor de diseños mostrando los grupos Detalles de la factura, Detalles de pago, Orden de compra y Detalles de entrega desplegados en sus campos"><figcaption><p>La pestaña Estructura muestra el diseño creado como un árbol de grupos y campos.</p></figcaption></figure>
 
-### **Cargar un documento de ejemplo**
+Seleccione un elemento para añadirlo o arrástrelo al lienzo. El título de un grupo indica a quien valida el documento qué corresponde a esa sección. Cree o cambie el nombre de los campos de documento reutilizables primero en [Tipos de Documento](README.md).
 
-Para cargar un documento en el creador de diseños, simplemente navegue hacia la derecha en la pantalla.
+## Trabajar en el lienzo
 
-![](https://lh7-us.googleusercontent.com/I99BkFDTOloyKwwc0P8O3wf8FbKL3B5Zn5i3GfeRKSSkBdelQ\_HNfI2oJzaXQUi\_UU6R5Vr7jrgcAxIrDmmTKWgTZx90J7izOX0oczWt\_\_qt9VmD1HqafZvqH8vb7xnZMR1m5pjwzsbcnalErYo6dIc)
+* **Diseño principal** muestra el diseño del propio documento. **Tabla** muestra el diseño de tabla que se utiliza para las líneas de artículos.
+* **Documento** abre o cierra el documento de ejemplo junto al lienzo, de modo que pueda comparar el diseño con un documento real.
+* Los grupos se representan como tarjetas; los campos de un grupo pueden organizarse en filas y tener anchos distintos.
 
-Haga clic en el botón “Upload Documents” o arrastre y suelte el documento que desee en el área proporcionada
+## Cambiar las propiedades de un elemento
 
-![](https://lh7-us.googleusercontent.com/GHqGYqvwFvN3z2ojFz\_i7ZLlZhy-A3vsKUmmzOC0NMkPd2-f6\_t\_0USF66W-N3XRqHlmx06QNSQ7U-VTPQPKWdzOhoNcN7LlMk45sKVC6bWN1O92G0r4dKyHQLlgmGZiINYjZ9vZnt89\_BjgzbON2MI)
+Seleccione un elemento o un grupo en el lienzo. El panel **Propiedades**, a la derecha, está siempre visible y se organiza en secciones:
 
-### **Grupos**
+* **Visualización**: etiqueta, nombre del campo, posición de la etiqueta y ancho del elemento.
+* **Comportamiento**: solo lectura, oculto e índice de pestañas.
+* **Valores y listas**: los valores que se ofrecen para el elemento.
+* **Automatización**: reglas que rellenan o modifican el elemento.
+* **Bordes y espaciado**: el aspecto del elemento.
 
-Los grupos se pueden crear seleccionando el siguiente icono.
+Para el ancho, elija uno de los valores predefinidos (25, 33, 50, 66, 75 o 100 por ciento) en lugar de escribir un valor, y compruebe el resultado en el lienzo. Las secciones y opciones que aparecen dependen del elemento seleccionado. Para más detalles, consulte [Configurar las propiedades de los campos](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
-![](https://lh7-us.googleusercontent.com/eb4jnCmezPFKPwgUisJKvicBqMWuGHW69WIFdtpmQiY-\_78VWmMyMD4TqKMJXwjH1XDnS5RXX0DsJ2\_ur\_GG62L4F7OEzkLrpgwUkiuQjZQPJqQoHIBj6WM33zY0AkYXhI3mKLjZetbEQ2AlhPJ8KV8)
+## Revisar y guardar
 
-Los grupos le permiten crear diferentes secciones en un diseño, lo que facilita separar diferentes grupos de datos o información para que el diseño sea más fácil de seguir. Puedes crear un título para cada grupo para que un usuario pueda saber qué información encontrará en ese grupo.
+Organice los grupos y los campos, compruebe el diseño en el lienzo y utilice **Guardar** en el encabezado cuando el resultado sea correcto. Para los diseños específicos de un origen, consulte [Diseños por origen](origin-layouts.md).
 
-![](https://lh7-us.googleusercontent.com/lWqIEC-TCOp4rKytTbhn2fYWY618\_Yra2mjWHA9oMyWPqHXA5JKCLoZoEtM8xQHAkn4HFNTPYpbMePUYnQhQGL0KmgBfTEDWPDAMy7PjZinZl2s\_kHQlsLAGjYbzSINWTme3qRO9tHLcpVaDVvS\_8F4)
-
-### **Elementos del formulario**
-
-![](https://lh7-us.googleusercontent.com/OFBRSGdol7loocu5uGVe4Q8URMDojvXTN0xj3TCgL-jb-wUgt1fjEqfXCyMPz\_HNh94LVVmg6ifQDhxvlQsgbbChRfrw2Ohx4ICOUwHix3iiAFY9hI3BPGBfcNABiHLhgXQJVZmGvEO\_niVWkIXz\_6g)
-
-Se trata de un conjunto de campos predeterminados que se pueden arrastrar y soltar en el editor de diseños y que están disponibles para que usted cree el diseño que desee. Estos incluyen:
-
-* Texto: este es un cuadro de texto que crea un campo en el diseño en el que se puede ingresar texto una vez en la pantalla de validación.
-* Etiqueta: este es un campo que se puede usar para crear texto no editable, esto podría usarse para crear subtítulos o cualquier otro texto no editable que se desee cuando esté en la pantalla de validación.
-* Casilla de verificación: esto crea un campo de tipo booleano que se puede marcar o desmarcar.
-* Casilla de verificación múltiple: funciona de la misma manera que “Checkbox”, pero se puede usar cuando el usuario sabe que agregará varias casillas de verificación en una sección.
-* Separador horizontal: esto crea una línea horizontal en el diseño que se puede usar para dividir secciones dentro de un grupo en el diseño.
-* Tabla de casillas de verificación: esto permite al usuario crear una tabla de casillas de verificación que consta de valores personalizados de los ejes x e y, por ejemplo.
-
-![](https://lh7-us.googleusercontent.com/lMZU68H4i8ELjgenpcNXeNhJ9iwzTWGRkjNMEdV3rqdGwnaRZ\_tvG9mbx2ogXQ2hMciGSp-9m1c5KS9VwGJWzuxcRiaioVDSLTLvh-csHUho4aX25LXrtjhGSfK6yTukufwrjQvZR-JliuhiaPCCxpw)
-
-* Botón: crea un botón en la pantalla de validación del diseño. Puede configurarlo para **Export**, **Export mit Sonderwunsch** (exportación con una solicitud especial) o **Reject**.
-* Tablas extraídas: esto le permite colocar un área en el diseño del documento que ilustra la tabla que se extrae del documento. Para obtener información haga clic aquí.
-* Botones de factura: este elemento le permite arrastrar y soltar un conjunto de botones optimizados para facturas. Cuando esté en la pantalla de validación, cuando seleccione el tipo de factura (ya sea costo o compra), la conciliación con la orden de compra o Contabilidad automática desaparecerá en consecuencia.
-
-![](https://lh7-us.googleusercontent.com/-w5iTr9b\_pcc6Y39osFmuzKQGRa\_e4tAXvQOn1zN8T4HwcuTs\_FP9mFPAJJeABvYKTyiQr3xZALsRgueIDksbswhnY-E9ioT1AIaf8xwAblBckX1f8xzi5v9mLxBRRUZoViDntKK6Nd5fy5sd5Bq5LU)
-
-* QR Campos de código: este elemento le permite arrastrar y soltar un bloque que mostrará toda la información extraída de un documento cuando esté presente un código QR.
-
-### **Crear campos específicos del documento**
-
-El usuario puede crear sus propios grupos y campos personalizados para un tipo de documento; esto se puede hacer al crear originalmente un tipo de documento, pero también seleccionando “Fields” en la página Tipos de documento en Configuración.
-
-![](https://lh7-us.googleusercontent.com/N9i3KnGyXATf5jLVbPQGiPEG9rlz6WqHJ5c8FZnpw3EwmaMnl2cQhMwhug3d-A82caOS6Nxc7LgAVLMtBL404hKR7i39u2RfwzCnohqn1\_mbkMtjzNKThnjGu2ivaFNqKDuobzA6kUdD8gGiQ\_zs3z8)
-
-### **Espacios en blanco**
-
-#### **La regla del 100 por ciento**
-
-![](https://lh7-us.googleusercontent.com/TwNA3gZrgzhSvZrZOGywGYz92fRkUtjIsr6sDCxEzYgWcfJ9kXuzJKkqNiFyp3H5XXoqUz76TzZ72r86YY\_O3Vw\_rvDKczD\_hdMOIQOFWORr2bo8pGunrAtUklJ1ye7KEQJEjRNqNUNCnXM0boIICUA)
-
-Para crear el espacio anterior en el diseño, se debe utilizar un “Label” de los Elementos del formulario de forma especial. La razón de esto es que el gestor de diseños opera de acuerdo con un sistema de 100 espacios por línea en el que 1 espacio representa el 1 por ciento de una línea, esto significa que los campos solo pueden ocupar 100 espacios por línea como se muestra a continuación.
-
-![](https://lh7-us.googleusercontent.com/YTqddzVQPWRuP5ylV6NnMc-KnEgCY0ZxZ8zn0In5d5dOxaWnwGDi4N2qohbobLNphLfVD61sMUE5QlmXJZ3e0tP7Y8no\_wVRy9WTF0nWIN5Tg3t-zLJhs9M-kVYPFV3CyerRZZoK-iMXLmKGcuSY\_Nw)
-
-Esto significa que el usuario debe construir el diseño línea por línea de acuerdo con esta regla. Por ejemplo, digamos que desea agregar los campos “Name” y “Date” en la misma línea pero desea que el campo “Name” sea más grande. Esto se puede hacer arrastrando y soltando el campo “Text” desde el menú desplegable Elementos de campo y nombrando cada campo “Name” y “Date” como se muestra.
-
-![](https://lh7-us.googleusercontent.com/2ru3pj0iD3V6ADqYBjeQPqDT3uvTH\_Al2MV0gpUUQ9MpX0TSFtnjYL6JN0YOkBk9afx2q2YcMo4gWE2jItUAGSEfX79O\_6sFgKwP5FGa98SwzgjGgee1G-2aO6NyqZusf27SbJoWoHmzu51Hx25kVmM)
-
-Ahora existe el problema de que ambos tienen el mismo tamaño de 33 (este es el tamaño predeterminado de todos los campos arrastrados y soltados), pero le gustaría que el campo “Name” fuera más grande que el campo “Date” y ambos campos deberían ocupar toda la línea en el diseño. Por lo tanto, siguiendo la regla del 100 por ciento, puede configurar los campos “Name” y “Date” en cualquier combinación de 100 que desee. Por supuesto, esto depende del tamaño que desee para cada campo individual, pero para este ejemplo estableceremos el campo “Name” en 70 y el campo “Date” en 30, los resultados son:
-
-![](https://lh7-us.googleusercontent.com/m411QblkCfsQWllhX74QpANjuVEv3fgM1Nhg8cJjbkNQGcjym6v0JFHIrKyMOAu-MasQ4KH9ZPaxmqNWfhWmAuL6SOZE030NXebb7ERzYxF99hLJC6oGbM-YXp7bNdZuoTaPmsDt7EjpV5BOiflwA4g)
-
-Esta misma regla se aplica a todos los campos del editor de diseños.
-
-#### **Crear espacios en blanco**
-
-Ahora que se ha explicado esta regla, crear espacios en blanco tendrá más sentido. Como se mencionó anteriormente, para crear un espacio en blanco debe usar un “Label” de los Elementos del formulario.
-
-Por ejemplo, digamos que le gustaría crear un espacio en blanco entre estos dos campos.
-
-![](https://lh7-us.googleusercontent.com/jOms6aTB3wCmX3L-MiUTrOb\_-q3AiFC3Y75TsHJe8QFLru10H9aZKzbE5MfHPZ0v9fqycQeddNPJp7pnRjv17crkrYUymNA8u9bF-3u9IfR6ru\_duavqrLCQocommljzLA00RXs\_lQA4gDH6l\_QvyTs)
-
-El primer paso es arrastrar y soltar un “Label” entre estos dos campos, una vez agregado, puede hacer clic en el campo “Label” que acaba de agregar y a la izquierda se le presentarán las propiedades del campo. Ahora, de la misma manera que crearía o cambiaría el nombre de un campo como se mostró anteriormente, eliminará cualquier nombre de la propiedad “Label” así
-
-![](https://lh7-us.googleusercontent.com/0Mma4wYIIfAkOyRIFLZtjug7pbWltfaiPm3r\_WgbP5fCgKe2BGD6Qf5YJ5Ns7fBBTRfJ68NlOtmOQrvcOvjyWGxk9v\_XmDj-8moEQhcDUugh\_VO5DdrJLYYV08ftr8YdhuhEM0otWs\_ljew18j7XJFQ)
-
-El resultado de hacer esto será entonces
-
-![](https://lh7-us.googleusercontent.com/-HqoJUAbcHRCletgSg6gcKXpn6zto1Do8I5EmcEmPWL4qUrMREh-wZdhy7ZKtnbuGjypd7p2mjcIu6LbbfdjA3c1liT2reCQXWiP1VAji08eWc\_bbF\_a0Dd82rJRgCuD5yjdlXL\_DNheMcw-fm6pQnA)
-
-Ahora existe una brecha entre los dos campos. Este espacio se puede ampliar o acortar según la regla del 100 por ciento comentada anteriormente, y con estas funciones puedes crear cualquier diseño que desees.
+{% hint style="info" %}
+Las capturas de pantalla muestran configuraciones sintéticas en la organización de prueba de DocBits, con el español seleccionado en la aplicación. No se guardó ni se sustituyó ningún diseño al realizarlas.
+{% endhint %}

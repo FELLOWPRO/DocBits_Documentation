@@ -4,6 +4,10 @@ description: "P1: Entscheidungstabelle bis zur Zuweisung nachvollziehen"
 
 # P1: Entscheidungstabelle bis zur Zuweisung nachvollziehen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-06-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-06-admin/v1/de.html).
+
 Eine Entscheidungstabelle verbindet Eingabefelder mit typisierten Rückgaben. Das Beispiel verwendet `cost_center=4711` und `total_amount`: bis 1000 soll Prüfer A, darüber Prüfer B zuständig sein. Verwenden Sie zwei überschneidungsfreie Regeln und gültige Benutzer-IDs Ihrer Testorganisation. Die Beispieldatei im Paket beschreibt den Aufbau; sie ist kein zugesicherter Import in einen Tabelleneditor.
 
 Bei **Decision Table has Returns**, Version 3, aktivieren Sie `store_data=wf_store_data`. In Version 2 wird stattdessen die boolesche Speicheroption gelesen. Die nachfolgende Zuweisung benötigt die gespeicherten Rückgaben desselben Laufs. Eine erfolgreiche Tabellenausführung allein bestätigt noch keinen gültigen Benutzer.

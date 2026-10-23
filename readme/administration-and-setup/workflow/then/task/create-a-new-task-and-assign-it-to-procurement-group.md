@@ -1,6 +1,8 @@
 # Cree una nueva tarea y asígnela al grupo de adquisiciones
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v2-es-es.png" alt="Cree una nueva tarea y asígnela al grupo de adquisiciones, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v3-es-es.png" alt="Cree una nueva tarea y asígnela al grupo de adquisiciones, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 

@@ -1,6 +1,6 @@
 # Condición de usuario único asignado
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_user_is_isnot_v2-es-es.png" alt="Condición de usuario único asignado, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 **Propósito**
 

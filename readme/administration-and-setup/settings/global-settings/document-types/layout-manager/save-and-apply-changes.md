@@ -9,7 +9,7 @@
 * 在 Layout Manager 中完成所需的自定义设置后，请找到“Save”按钮以保存更改。
 * 点击此按钮，在 Layout Manager 中保存更改。此操作会备份您的布局自定义设置，并确保您以后仍可编辑这些设置。
 
-<figure><img src="../../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (257).png" alt="Layout Manager 工具栏中的 Save 按钮，用于保存布局自定义"><figcaption></figcaption></figure>
 
 #### 将更改应用于文档处理工作流：
 

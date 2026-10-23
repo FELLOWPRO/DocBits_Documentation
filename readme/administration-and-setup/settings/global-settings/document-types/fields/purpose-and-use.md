@@ -2,7 +2,7 @@
 
 ## 正确配置 DocBits 中的字段，对于确保数据能够被正确采集、处理和存储至关重要。
 
-<figure><img src="../../../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (225).png" alt="Field Settings 页面，列出 INVOICE DETAILS 字段，并带有 REQUIRED、READ ONLY、HIDDEN、FORCE VALIDATION 和 OCR MATCH SCORE 列"><figcaption></figcaption></figure>
 
 **以下是这项工作重要的几个原因：**
 

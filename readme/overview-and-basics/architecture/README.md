@@ -16,7 +16,7 @@ Doc**Bits** 通过 ION API、ION Desk 和 Infor 标准 BOD 与 Infor LN/M3 无�
 
 **本地部署：**&#x20;
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="Operator On-Prem 架构图，显示客户端计算机上的 DocAgent 连接 Prefect API 和 DocBits 云端"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [Prefect 本地设置要求](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ Doc**Bits** 通过 ION API、ION Desk 和 Infor 标准 BOD 与 Infor LN/M3 无�
 
 **云端**：
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Operator Cloud 架构图，显示 Chrome 扩展、DocBits Operator Cloud、DocFlow 和 DocBits AI 之间交换任务与响应消息"><figcaption></figcaption></figure>
 
 ## 将数据导出到 Infor
 
@@ -38,7 +38,7 @@ Doc**Bits** 通过 ION API、ION Desk 和 Infor 标准 BOD 与 Infor LN/M3 无�
 
 为识别供应商或比较/匹配采购订单行，我们会在 LN/M3 中激活一个触发器，将 Sync.RemitToPartyMaster、Sync.SupplierPartyMaster 和 Sync.PurchaseOrder BOD 发送到 Doc**Bits**。我们在 ION Desk 中配置此流程，将数据流定义到 Doc**Bits** 的特定连接点。
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="DocBits 的 Kubernetes 集群架构图，包含负载均衡器、Redis、PostgreSQL、工作线程 Pod 和 Spaces 数据存储"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [主数据验证](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ Doc**Bits** 通过 ION API、ION Desk 和 Infor 标准 BOD 与 Infor LN/M3 无�
 
 ## 电子邮件导入 OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="Office 365 邮件导入图，显示 Microsoft Graph API 向 DocBits 邮件服务和主系统颁发访问令牌"><figcaption></figcaption></figure>

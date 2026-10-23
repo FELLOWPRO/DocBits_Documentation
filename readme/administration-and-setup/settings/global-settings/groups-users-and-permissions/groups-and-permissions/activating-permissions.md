@@ -14,17 +14,17 @@ DocBits 群组与权限教程：设置用户角色、访问权限并保护您的
 
 ## **启用权限系统：**
 
-<figure><img src="../../../../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (274).png" alt="Groups And Permissions 页面，带有 Activate/de-activate Groups &amp; Permissions 开关，组列表中包含 TESTGROUP 和 TEST11"><figcaption></figcaption></figure>
 
 * 启用权限系统后，系统会应用针对用户和群组设置的访问权限。
 * 用户只能访问根据分配的权限明确授权他们访问的资源。
 * 管理员可以管理各个用户和群组的权限，确保只有获授权的人员才能查看或编辑数据。
 
-<figure><img src="../../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (276).png" alt="权限矩阵，文档类型为 INVOICE 和 CREDIT_NOTE，列为 View、Update、Delete、First Approval 和 Second Approval"><figcaption></figcaption></figure>
 
 ## 仅显示已分配的文档
 
-<figure><img src="../../../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (171).png" alt="权限矩阵中 PURCHASE ORDER 等文档类型的行，带有 View、Update、Delete 和审批列，显示 1-28 of 28"><figcaption></figcaption></figure>
 
 **仅限指定文件**（仅显示已分配的文档）切换按钮根据用户所属的群组控制其可见的文档。启用后，用户只能查看明确分配给自己或其所属群组的文档。禁用后，拥有相应查看权限的用户可以看到所有文档，无论文档是否已分配。
 

@@ -8,7 +8,7 @@ DocBits 由 **Fellowpro AG** 运营，遵循全面的信息安全、隐私保护
 
 ## 1. ISO/IEC 27001
 
-<figure><img src="../../.gitbook/assets/ISO27001.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ISO27001.png" alt="ISO 27001 认证徽章，代表信息安全管理体系，带有 ISO 27001 标志"><figcaption></figcaption></figure>
 
 这项国际标准规定了建立、实施、维护并持续改进信息安全管理体系（ISMS）的要求。它通过风险管理流程和信息安全控制措施，帮助组织以系统且经济高效的方式保护数据。
 
@@ -20,7 +20,7 @@ DocBits 由 **Fellowpro AG** 运营，遵循全面的信息安全、隐私保护
 
 ## 2. SOC 1（服务组织控制 1）
 
-<figure><img src="../../.gitbook/assets/SOC1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SOC1.png" alt="SOC 1 认证徽章，代表 Service Organization Control 1 报告，涵盖财务报告的内部控制"><figcaption></figcaption></figure>
 
 SOC 1 报告面向需要证明财务报告相关内部控制有效性的组织。对于会影响客户财务报告的服务提供商而言，这类报告尤为重要。
 
@@ -32,7 +32,7 @@ SOC 1 报告面向需要证明财务报告相关内部控制有效性的组织�
 
 ## 3. SOC 2（服务组织控制 2）
 
-<figure><img src="../../.gitbook/assets/SOC2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SOC2.png" alt="SOC 2 认证徽章，代表 Service Organization Control 2 报告，涵盖安全性、可用性和保密性"><figcaption></figcaption></figure>
 
 SOC 2 关注与服务组织的数据安全性、可用性、处理完整性、保密性和隐私保护相关的控制措施。对于处理敏感信息的技术和云计算公司而言，这项认证至关重要。
 
@@ -44,7 +44,7 @@ SOC 2 关注与服务组织的数据安全性、可用性、处理完整性、�
 
 ## 4. GDPR（通用数据保护条例）合规性
 
-<figure><img src="../../.gitbook/assets/GDPR.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GDPR.png" alt="GDPR 合规徽章，带有欧盟星环，标志符合欧盟数据保护法规"><figcaption></figcaption></figure>
 
 GDPR 是欧盟法律中的一项法规，涉及欧盟和欧洲经济区的数据保护与隐私。该法规还涉及将个人数据传输到欧盟和欧洲经济区以外地区的情况。
 

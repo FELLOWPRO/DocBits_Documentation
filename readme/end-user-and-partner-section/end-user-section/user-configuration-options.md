@@ -4,7 +4,7 @@
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
-<figure><img src="../../.gitbook/assets/User-Config.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/User-Config.png" alt="DocBits中狭窄的用户菜单列，包含深色模式切换、语言选择和退出登录选项"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/prior-u031-zh.png" alt="用户菜单和语言选择。"><figcaption><p>用户菜单和语言选择。</p></figcaption></figure>
 
@@ -31,7 +31,7 @@
 * **字体大小：** 调整文字大小，以便更轻松地阅读。
 * **双显示器模式：** 如果您使用两台显示器，请启用此功能。
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3.png" alt="Edit User对话框，包含日期格式%d.%m.%Y、金额格式化Deutsch、字体大小从小到大、姓名字段Max Mustermann、双显示器模式和密码字段"><figcaption></figcaption></figure>
 
 **退出登录**
 

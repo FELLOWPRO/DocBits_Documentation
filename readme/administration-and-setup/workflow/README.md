@@ -4,7 +4,7 @@ description: "DocBits 工作流引擎"
 
 # 工作流
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt="工作流构建器，显示 PROCESSES 区域下的 When、And 和 Then 部分，每部分都有一个 ADD CARD 按钮"><figcaption></figcaption></figure>
 
 ## DocBits 工作流引擎：简化流程自动化
 

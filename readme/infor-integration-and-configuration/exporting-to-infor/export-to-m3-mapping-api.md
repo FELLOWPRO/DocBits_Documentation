@@ -37,15 +37,15 @@ M3 导出映射文件分为 5 个章节，每个章节又分为 2 个小节：
 
 * 打开 M3 中相应的界面，即可查看可用的 M3 字段。
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt="M3批次状态面板，显示供应商发票202300373已存在的消息以及详细信息字段"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt="M3中表FAPIBH里字段WEEORN的Field Information对话框，面板名称为APA4S50E0，类型为String，最大长度30，并带有Copy to clipboard按钮"><figcaption></figcaption></figure>
 
 * 同样，也可以获取行项目的字段名称。
 
 ### 表头：
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt="M3映射中Header Static Fields部分的代码片段，包含StaticFields=DIVI,IBTP,BSCD以及SF_DIVI=PJA和SF_IBTP=20等静态值"><figcaption></figcaption></figure>
 
 字段列表属性：StaticFields
 

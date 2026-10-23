@@ -1,6 +1,6 @@
 # 布局管理器
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.46.24.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.46.24.png" alt="INVOICE DETAIL 的 Layout Manager，包含 Elements、Properties 和 Groups 面板以及 Payment Details 字段"><figcaption></figcaption></figure>
 
 #### 概述
 

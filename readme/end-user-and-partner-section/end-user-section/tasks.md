@@ -22,9 +22,9 @@ Utilisez l'aperçu des tâches pour trouver le travail assigné et suivre sa pro
 
 La vidéo utilise un utilisateur de test ordinaire et des documents synthétiques. Terminer une tâche est distinct de l'approbation ou de l'exportation de sa facture. Les actions disponibles dépendent des autorisations du compte.
 
-<figure><img src="../../.gitbook/assets/customer-overview-fr-f7d17b470172.png" alt="Aperçu des tâches utilisant des données synthétiques."><figcaption><p>Aperçu des tâches utilisant des données synthétiques.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-overview-fr-f7d17b470172.png" alt="Aperçu des tâches avec des données synthétiques. Open reste en anglais dans la première colonne de la version illustrée."><figcaption><p>Aperçu des tâches avec des données synthétiques. Open reste en anglais dans la première colonne de la version illustrée.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/customer-find-fr-f7d17b470172.png" alt="Liste des tâches avec des données de démonstration synthétiques."><figcaption><p>Liste des tâches avec des données de démonstration synthétiques.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-find-fr-f7d17b470172.png" alt="Liste des tâches avec des données synthétiques. Les valeurs natives Open et high restent en anglais dans cette version."><figcaption><p>Liste des tâches avec des données synthétiques. Les valeurs natives Open et high restent en anglais dans cette version.</p></figcaption></figure>
 
 ## Enregistrement supplémentaire
 

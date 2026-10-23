@@ -8,43 +8,22 @@ description: >-
 
 # Flux de travail de commande et de traitement du matériel
 
-Ce document décrit le flux de travail pour commander du matériel auprès des fournisseurs, réceptionner les marchandises et traiter les factures, avec une intégration entre les fournisseurs, le système INFOR ERP et DocBits pour la gestion des documents.
+Le schéma illustre les échanges entre **les achats dans INFOR**, **DocBits**, **IDM**, **le fournisseur** et **la comptabilité**. Il s’agit d’un exemple d’intégration ; les contrôles, les documents et les connexions doivent être adaptés à votre configuration.
 
-### Aperçu du processus
+## Commande et confirmation
 
-1. **Commande de matériel**
-   * Initier la commande auprès du fournisseur.
-   * Envoyer la commande au fournisseur via INFOR.
-2. **Réception de la confirmation de commande**
-   * Le fournisseur confirme la réception de la commande.
-   * Création et envoi de la confirmation de commande.
-3. **Réception et inspection des marchandises**
-   * Réceptionner les marchandises du fournisseur.
-   * Comptabiliser la réception des marchandises dans INFOR et la vérifier par rapport au bon de livraison.
-4. **Traitement des factures**
-   * Recevoir la facture et l'envoyer à DocBits pour traitement.
-   * Vérifier et valider les détails de la facture avec la commande et la réception des marchandises.
-5. **Étapes finales**
-   * Archiver la commande et les documents associés dans DocBits.
-   * Mettre à jour INFOR avec les détails de la transaction pour la comptabilité financière.
+Les achats créent une commande dans INFOR et la transmettent au fournisseur. La commande et la confirmation suivent les chemins d’archivage vers **IDM** indiqués dans le schéma. La confirmation reçue passe par la capture et les contrôles de DocBits ; les données reconnues doivent être vérifiées et corrigées si nécessaire.
 
-### Points de décision et actions
+## Réception des marchandises
 
-* **Les marchandises reçues correspondent-elles à la commande ?**
-  * Oui : Procéder au traitement de la facture.
-  * Non : Vérification et mise à jour manuelles requises.
-* **La facture est-elle correcte par rapport aux marchandises reçues et aux détails de la commande ?**
-  * Oui : Finaliser la transaction et mettre à jour les enregistrements financiers.
-  * Non : Examen et corrections supplémentaires nécessaires.
+À la livraison, les équipes concernées contrôlent les marchandises et enregistrent la réception dans INFOR. Les informations de commande et de réception sont ensuite disponibles pour le rapprochement prévu par l’intégration. Une réception physique ou une reconnaissance OCR ne prouve pas à elle seule que les données sont correctes.
 
-### Points d'intégration
+## Facture et rapprochement
 
-* **INFOR ERP** : Système principal pour le traitement des commandes, la réception des marchandises et la comptabilité financière.
-* **DocBits** : Gestion des documents pour le traitement et l'archivage des factures et des confirmations de commande.
+La facture du fournisseur est capturée dans DocBits, puis rapprochée des données de commande et de réception. Les écarts nécessitent un examen et, si nécessaire, une correction avant de poursuivre le circuit configuré. Les contrôles de quantité, de prix et d’identité du fournisseur doivent refléter les règles de votre organisation.
 
-### Remarques
+## Archivage et comptabilité
 
-* Veillez à ce que tous les documents soient vérifiés et archivés à des fins de conservation des enregistrements.
-* Les divergences dans les détails de la commande ou de la facture doivent être résolues rapidement pour éviter les retards.
+**IDM** assure l’archivage illustré ; **DocBits** intervient dans la capture, le contrôle et le rapprochement. Le chemin vers la comptabilité représente la transmission prévue des informations validées. Vérifiez séparément l’archivage et le résultat comptable dans les systèmes cibles. Ce schéma ne prouve aucune exportation réussie ni aucun paiement.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-material-fr.png" alt="Exemple de traitement des commandes de matériaux, confirmations, réceptions et factures entre fournisseur, achats, IDM, DocBits et comptabilité. Adaptez les contrôles et les connexions à votre configuration."><figcaption><p>Exemple de traitement des commandes de matériaux, confirmations, réceptions et factures entre fournisseur, achats, IDM, DocBits et comptabilité. Adaptez les contrôles et les connexions à votre configuration.</p></figcaption></figure>

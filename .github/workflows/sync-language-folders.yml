@@ -70,7 +70,10 @@ jobs:
           python-version: "3.12"
 
       - name: Install PyYAML (front matter validation)
-        run: python3 -m pip install --quiet pyyaml
+        run: python3 -m pip install --quiet pyyaml pytest
+
+      - name: Check navigation parsing and bridge validation
+        run: python3 -m pytest -q .github/scripts/test_language_bridge.py
 
       - name: Sync every language folder
         env:

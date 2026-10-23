@@ -8,7 +8,7 @@ No **Workflow Builder**, selecione **Add Card** em **And...**. Escolha uma categ
 
 Use estes cartões para comparar dados de pedido ou de fatura com um pedido de compra, como preço unitário, data de entrega prometida, encargos ou quantidade. Escolha os campos, o operador e a tolerância que o cartão selecionado solicitar. Consulte [Compare with Purchase Order](compare-with-purchase-order/) para ver os cartões individuais.
 
-<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Seletor de cartões And em inglês com Compare with Purchase Order selecionado; as pré-visualizações visíveis incluem comparações de preço unitário, data de entrega, encargos e quantidade."><figcaption><p>Categoria Compare with Purchase Order no Sandbox em inglês.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-pt-20261023.png" alt="Seletor de cartões And em português com a categoria Comparar com a ordem de compra selecionada; as pré-visualizações visíveis incluem comparações de dados do pedido, data de entrega, preço, encargos e quantidade."><figcaption><p>Categoria Comparar com a ordem de compra no seletor de cartões em português (dados de exemplo).</p></figcaption></figure>
 
 ## Document Field
 

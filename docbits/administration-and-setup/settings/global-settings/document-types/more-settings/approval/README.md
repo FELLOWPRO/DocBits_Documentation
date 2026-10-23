@@ -2,11 +2,11 @@
 
 Configure an isolated approval process and test first approval, a different second reviewer and rejection.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/en.mp4" %}
 Configure and test invoice approvals
 {% endembed %}
 
-[Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/en.html)
+[Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/en.html)
 
 The recording shows the real application. Option wording may vary with the deployed version.
 
@@ -32,9 +32,9 @@ The additional V2 option and the form designers are separate settings. This tuto
 3. Assign the waiting invoice to the other authorized reviewer. Use that second ordinary account to check it and give second approval with a separate note.
 4. Reopen the history and verify both different reviewers, times and notes. Also reject a separate test invoice with a reason and verify that decision after reloading.
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-en-0ff5cb24c8b7.png" alt="Saved approval settings for the dedicated test document type."><figcaption><p>Saved approval settings for the dedicated test document type.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-en-2322c0ba802b.png" alt="Saved approval settings for the dedicated test document type."><figcaption><p>Saved approval settings for the dedicated test document type.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-en-0ff5cb24c8b7.png" alt="Two different reviewers and both saved review notes."><figcaption><p>Two different reviewers and both saved review notes.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-en-2322c0ba802b.png" alt="Two different reviewers and both saved review notes."><figcaption><p>Two different reviewers and both saved review notes.</p></figcaption></figure>
 
 ## Verify the outcome
 

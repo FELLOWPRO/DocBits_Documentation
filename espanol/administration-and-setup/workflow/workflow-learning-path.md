@@ -68,6 +68,10 @@ Leer y construir: [P1: Seguir la tabla de decisión hasta la asignación](master
 
 ## 5. Control Advanced y subworkflows <a id="level-5"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/es.mp4" %}
+
+[Abrir el vídeo con subtítulos en español y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/es.html).
+
 **Ejercicio:** Compare ALL, ANY y OR con dos controles alcanzados. Examine una rama no elegida. Ejecute los siete casos v2 y pruebe Run Workflow con un destino propio inactivo.
 
 **Criterio de finalización:** Explique diferencias test/planificador, conteo de orígenes y errores. V2 completa sin OR bloqueado; compruebe en destino una llamada verde.
@@ -76,6 +80,10 @@ Leer y construir: [P0: Conectar Wait ALL, Wait ANY y OR correctamente](mastercla
 
 ## 6. Cálculo, integración y exportación <a id="level-6"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/es.mp4" %}
+
+[Abrir el vídeo con subtítulos en español y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/es.html).
+
 **Ejercicio:** Compare la tabla completa antes/después, incluyendo regex sin coincidencia y división por cero. Defina la escritura real de respuestas de integración. Planifique exportación tras aprobación con configuración propia de prueba.
 
 **Criterio de finalización:** Demuestre valores posteriores, recepción y procesamiento ERP por separado. No registre simulación ni solicitud de exportación como entrega.
@@ -83,6 +91,10 @@ Leer y construir: [P0: Conectar Wait ALL, Wait ANY y OR correctamente](mastercla
 Leer y construir: [P1: Calcular columnas y comprobar dependencias regex](masterclass/table-calculations.md) · [P1: Comprobar llamadas API y uso posterior de respuestas](masterclass/api-response-contract.md) · [P1: Elegir exportación, tareas abiertas y estado final](masterclass/export-lifecycle.md).
 
 ## 7. Cambios y operación experta <a id="level-7"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/es.mp4" %}
+
+[Abrir el vídeo con subtítulos en español y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/es.html).
 
 **Ejercicio:** Guarde una exportación del workflow y versiones de tarjetas antes de cambiarlo. Repita positivos, negativos, errores, límites y una segunda ejecución. Relacione el primer fallo con entrada y configuración concretas.
 

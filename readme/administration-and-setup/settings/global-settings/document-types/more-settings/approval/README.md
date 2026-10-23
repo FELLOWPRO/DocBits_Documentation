@@ -2,11 +2,11 @@
 
 Cette vidéo montre la configuration et le test des approbations.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/fr.mp4" %}
 Configurer et tester les approbations de factures
 {% endembed %}
 
-[Regarder la vidéo avec sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/fr.html)
+[Regarder la vidéo avec sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/fr.html)
 
 L'application réelle est affichée ; la formulation des options peut dépendre de la version déployée.
 
@@ -32,9 +32,9 @@ L'option V2 supplémentaire et les éditeurs de formulaires sont des paramètres
 3. Assignez la facture en attente à l'autre vérificateur autorisé. Utilisez ce deuxième compte ordinaire pour la vérifier et donner la deuxième approbation avec une note séparée.
 4. Rouvrez l'historique et vérifiez les deux vérificateurs différents, les heures et les notes. Rejetez également une facture de test séparée avec une raison et vérifiez cette décision après le rechargement.
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-fr-d4cd2c3dc567.png" alt="Paramètres d’approbation enregistrés pour un type de document de test dédié."><figcaption><p>Paramètres d’approbation enregistrés pour un type de document de test dédié.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-fr-3fd7be2fe694.png" alt="Paramètres d’approbation enregistrés pour un type de document de test dédié."><figcaption><p>Paramètres d’approbation enregistrés pour un type de document de test dédié.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-fr-d4cd2c3dc567.png" alt="Deux vérificateurs différents et les deux notes enregistrées."><figcaption><p>Deux vérificateurs différents et les deux notes enregistrées.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-fr-3fd7be2fe694.png" alt="Deux vérificateurs différents et les deux notes enregistrées."><figcaption><p>Deux vérificateurs différents et les deux notes enregistrées.</p></figcaption></figure>
 
 ## Vérifier le résultat
 

@@ -8,7 +8,7 @@ Wählen Sie im **Workflow Builder** unter **And...** die Option **Add Card**. W�
 
 Mit diesen Karten vergleichen Sie Bestell- oder Rechnungsdaten mit einer Bestellung, etwa Stückpreis, zugesagtes Lieferdatum, Gebühren oder Menge. Wählen Sie die Felder, den Operator und gegebenenfalls die Toleranz, nach der die gewählte Karte fragt. Die einzelnen Karten finden Sie unter [Compare with Purchase Order](compare-with-purchase-order/).
 
-<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Englische And-Kartenauswahl mit ausgewähltem Compare with Purchase Order; sichtbare Vorschauen umfassen Vergleiche von Stückpreis, Lieferdatum, Gebühren und Menge."><figcaption><p>Kategorie Compare with Purchase Order in der englischen Sandbox.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-de-20261023.png" alt="And-Kartenauswahl in deutscher Oberfläche mit ausgewählter Kategorie Mit Bestellung vergleichen; sichtbare Vorschauen umfassen Vergleiche von Bestellungsdaten, Lieferdatum, Preis, Gebühren und Menge."><figcaption><p>Kategorie Mit Bestellung vergleichen in der deutschen Kartenauswahl (Beispieldaten).</p></figcaption></figure>
 
 ## Document Field
 

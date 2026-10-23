@@ -1,6 +1,6 @@
 # Assigned Group Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-assignee-02-pt-20261023.png" alt="Responsável Grupo atribuído Operador um de Grupos" width="563"><figcaption></figcaption></figure>
 
 **Propósito:**
 

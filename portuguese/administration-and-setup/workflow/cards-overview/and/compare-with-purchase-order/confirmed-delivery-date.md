@@ -1,6 +1,6 @@
 # Confirmed Delivery Date
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-01-pt-20261023.png" alt="Comparar com a ordem de compra Tipo de data de entrega data de entrega Operador data de entrega aceita na tabela de consulta de dados mestre Tabela de Dados Mestres" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

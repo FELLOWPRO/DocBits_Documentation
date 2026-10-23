@@ -30,6 +30,18 @@ Use las guías específicas para cada área:
 
 El [índice de ajustes del proveedor](../../settings/supplier-setting/) reúne estas guías. La captura de General no muestra una exportación, el envío de un correo ni el acceso de un proveedor.
 
+## Vídeo: buscar proveedores y mantener sus datos
+
+Este tutorial de administración en español muestra cómo buscar un proveedor, modificar la ciudad y el código postal, guardar y comprobar los valores después de volver a cargar la página. Utiliza tres empresas ficticias y un formulario configurado con nombre, ciudad y código postal. Los campos disponibles dependen del diseño de proveedores de su organización. La ciudad del ejemplo es Colonia y aparece en pantalla con su nombre alemán, **Köln**.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/es.mp4" %}
+Buscar un proveedor, actualizar sus datos y comprobar que los cambios se han guardado.
+{% endembed %}
+
+[Ver el vídeo con subtítulos opcionales en español y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/es.html).
+
+La confirmación de guardado todavía muestra **Supplier is saved successfully** en inglés; el vídeo conserva la interfaz real. Guardar los datos maestros no modifica el estado **Registro pendiente** ni equivale a aprobar al proveedor. Este vídeo no envía invitaciones ni aprueba proveedores.
+
 ## Panel de proveedores <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 Abra el panel desde la navegación de proveedores. La tabla muestra los registros accesibles para su usuario. Los recuentos, las columnas y los estados de la imagen corresponden al entorno mostrado; no son valores predeterminados.

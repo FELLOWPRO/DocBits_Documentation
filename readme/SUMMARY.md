@@ -832,7 +832,7 @@
   * [LN](infor-integration-and-configuration/exporting-to-infor/ln/README.md)
     * [Esempio di esportazione LN](infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/README.md)
       * [Configurazione del paese fiscale predefinito per l'esportazione LN](infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/configuring-the-default-tax-country-for-export-ln.md)
-    * [Esporta Codici Fiscali in LN](infor-integration-and-configuration/exporting-to-infor/ln/export-tax-codes-to-ln.md)
+    * [Esporta Codici d’imposta in LN](infor-integration-and-configuration/exporting-to-infor/ln/export-tax-codes-to-ln.md)
     * [Configurazione LN](infor-integration-and-configuration/exporting-to-infor/ln/ln-configuration.md)
 
 ## Funzioni e strumenti avanzati <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>

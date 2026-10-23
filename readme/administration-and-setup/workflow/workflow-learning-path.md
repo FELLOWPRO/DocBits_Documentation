@@ -44,6 +44,10 @@ Leggere e costruire: [Caso Advanced: instradamento delle fatture](advanced-workf
 
 ## 3. Campi, tipi e limiti <a id="level-3"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/it.html).
+
 **Esercizio:** Provare assente, null, testo vuoto, spazi, false, 0 e numeri testuali. Calcolare tolleranze con riferimento ordine e documento. Confrontare una e tutte le righe effettivamente abbinate.
 
 **Criterio di completamento:** Spiegare vero, falso ed errore da valore, tipo, riferimento e dati. Nessuna riga confrontabile non equivale ad approvazione riuscita.
@@ -51,6 +55,10 @@ Leggere e costruire: [Caso Advanced: instradamento delle fatture](advanced-workf
 Leggere e costruire: [P1: scegliere Field is, Docfield is o Compare two Fields](masterclass/field-conditions.md) · [P1: definire riferimento delle tolleranze e confronto PO](masterclass/tolerances-and-po.md).
 
 ## 4. Regole aziendali e approvazioni <a id="level-4"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/it.html).
 
 **Esercizio:** Configurare due regole di importo senza sovrapposizione. Seguire il risultato utente salvato fino all’assegnazione. Pianificare A con ordine 10 e B con 20, rifiuto e ripiego.
 

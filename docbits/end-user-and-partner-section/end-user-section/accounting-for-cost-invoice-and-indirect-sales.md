@@ -104,11 +104,11 @@ For invoices not automatically matched:
 
 The presenter and voice are synthetic. The recording shows the actual DocBits test interface with synthetic training invoices.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/en.mp4" %}
 Splitting an Expense Invoice
 {% endembed %}
 
-[Watch with subtitles and chapter navigation](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/en.html)
+[Watch with subtitles and chapter navigation](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/en.html)
 
 Some native product labels may remain in another language. Technical field IDs are preserved.
 
@@ -124,8 +124,8 @@ In the first line, I enter sixty percent and confirm with Enter. I wait until th
 
 Now I check the two amounts, general ledger accounts, and cost centers together. Six hundred plus four hundred equals one thousand euros. The recorded total must also show one thousand euros, and the remaining balance must be zero. I resolve any mismatched totals before saving.
 
-<figure><img src="../../.gitbook/assets/customer-totals-en-accounting-email-v1.png" alt="Cost centres with a reconciled EUR 1,000 total"><figcaption><p>Cost centres with a reconciled EUR 1,000 total</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-totals-en-accounting-email-v2.png" alt="Cost centres with a reconciled EUR 1,000 total"><figcaption><p>Cost centres with a reconciled EUR 1,000 total</p></figcaption></figure>
 
 I save the allocation and wait for confirmation. Then I reload the invoice. Both cost centers, the percentages, and the amounts are still there. I also check the total and the remaining balance after reloading.
 
-<figure><img src="../../.gitbook/assets/customer-save-en-accounting-email-v1.png" alt="Allocation saved and verified after reopening"><figcaption><p>Allocation saved and verified after reopening</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-save-en-accounting-email-v2.png" alt="Allocation saved and verified after reopening"><figcaption><p>Allocation saved and verified after reopening</p></figcaption></figure>

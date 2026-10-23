@@ -4,6 +4,10 @@ description: "P0: Run Workflow, Zielbedingungen und Fehler verstehen"
 
 # P0: Run Workflow, Zielbedingungen und Fehler verstehen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-03-admin/v1/de.mp4" %}
+
+[Vertiefungsvideo mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-03-admin/v1/de.html).
+
 **Run Workflow** ruft einen Workflow über seine ID auf und wartet auf dessen Ausführung. Ein Name genügt nicht. Der Designer verwaltet die versteckte ID des aufrufenden Workflows; ändern Sie sie nicht als Geschäftsparameter. Das aktuelle Dokument wird an das Ziel übergeben. Dessen Einstieg und Bedingungen werden erneut ausgewertet.
 
 Der geprüfte ausdrückliche Aufruf erreicht auch einen **inaktiven** Zielworkflow. Inaktiv bedeutet deshalb nicht „durch Run Workflow unaufrufbar“. Im Dev-Test wurden ein inaktives eigenes Ziel, ein Selbstaufruf und eine unbekannte Ziel-ID geprüft. Selbstaufruf und unbekannte ID nahmen den Fehlerweg. Die eingebaute Rekursions- und Kettenbegrenzung ersetzt keine fachliche Begrenzung mehrfacher Aufrufe.

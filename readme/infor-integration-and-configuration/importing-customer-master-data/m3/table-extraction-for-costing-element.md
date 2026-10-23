@@ -46,6 +46,6 @@ Una volta completato, cerca l'API chiamata master\_data\_lookup/import\_data e c
 
 ### data\_type deve essere costing\_element
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8UD4FhFv2dRB4cMjCDL4G9ndjH7laVMKWqdeMaJGgEo48-UVvucB1uOydzNdfFy0yPM5bb66mZB4k9uJR7TTiEREGFaV2EqW01gxJpTyuUfGNh5QmBjySkyhZ56gWV8sYs8WI5RnHcENtXgjTU0vg0Q\&width=768\&dpr=4\&quality=100\&sign=7c9f4dbb\&sv=2)
+![Modulo Import Data per gli elementi di costo con i campi data_type, file, delimiter, on_conflict, replace_all e auto_generate_id e il pulsante Cancel](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8UD4FhFv2dRB4cMjCDL4G9ndjH7laVMKWqdeMaJGgEo48-UVvucB1uOydzNdfFy0yPM5bb66mZB4k9uJR7TTiEREGFaV2EqW01gxJpTyuUfGNh5QmBjySkyhZ56gWV8sYs8WI5RnHcENtXgjTU0vg0Q\&width=768\&dpr=4\&quality=100\&sign=7c9f4dbb\&sv=2)
 
 Se fatto correttamente, la tabella M3CostingElement dovrebbe ora essere nel tuo ambiente DocBits. L'estrazione della tabella per gli elementi di costo è stata ora configurata per il tuo ambiente.

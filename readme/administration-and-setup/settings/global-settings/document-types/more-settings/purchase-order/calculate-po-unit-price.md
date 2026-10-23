@@ -1,4 +1,4 @@
-# Calculer le prix unitaire du bon de commande
+# Calculer le prix unitaire de la commande
 
 ## **Présentation**
 

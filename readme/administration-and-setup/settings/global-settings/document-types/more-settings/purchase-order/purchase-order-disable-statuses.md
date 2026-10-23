@@ -1,4 +1,4 @@
-# Statuts de désactivation des bons de commande
+# Statuts de commande exclus du rapprochement
 
 Le réglage affiché **PO désactiver statuts** exclut certains statuts de bons de commande du rapprochement avec les factures. Son libellé est maladroit ; il s’agit de l’éligibilité des commandes au rapprochement.
 

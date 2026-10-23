@@ -7,17 +7,17 @@ noIndex: true
 
 #### Activation <a href="#activation" id="activation"></a>
 
-<figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FOpf9zysU9VTU32nILoYY%2Fsupplier-portal.png?alt=media&#x26;token=68440dd1-5f90-4bd4-832d-8a7151a11d44" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FOpf9zysU9VTU32nILoYY%2Fsupplier-portal.png?alt=media&#x26;token=68440dd1-5f90-4bd4-832d-8a7151a11d44" alt="Navigation du module Settings avec les entrées dashboard, document warehouse, shipping and supplier et supplier portal"><figcaption></figcaption></figure>
 
 #### Paramètres fournisseurs <a href="#supplier-settings" id="supplier-settings"></a>
 
 Une fois la fonctionnalité Portail fournisseurs activée, une nouvelle zone de paramètres devient disponible. Si vous faites défiler la liste des paramètres jusqu'en bas, vous verrez ce qui suit.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FqewBeZzPPENTEzJl9gJO%2F5_Supplier_Settings.png?alt=media&#x26;token=6d83028b-ec6f-4bea-9dbb-9de9d89fd795" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FqewBeZzPPENTEzJl9gJO%2F5_Supplier_Settings.png?alt=media&#x26;token=6d83028b-ec6f-4bea-9dbb-9de9d89fd795" alt="Liste du menu Settings avec les entrées classification and extraction, master data lookup, list of values et supplier settings" width="375"><figcaption></figcaption></figure></div>
 
 Dans cette section, vous avez accès aux éléments suivants.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fw49U8RhmJH8ichVjB0zr%2F7_Supplier_Groups_1.png?alt=media&#x26;token=ee824fa5-45d6-4317-9841-8e87e6308910" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fw49U8RhmJH8ichVjB0zr%2F7_Supplier_Groups_1.png?alt=media&#x26;token=ee824fa5-45d6-4317-9841-8e87e6308910" alt="Table des paramètres des groupes de fournisseurs avec les colonnes group API name, group name et actions listant le groupe de courtiers" width="375"><figcaption></figcaption></figure></div>
 
 **Autorisations fournisseurs**
 
@@ -27,25 +27,25 @@ C'est ici que vous pouvez gérer tous les fournisseurs en les regroupant, ce qui
 
 Pour faciliter la gestion de tous les fournisseurs, vous pouvez créer dans cette section des groupes et y affecter des fournisseurs selon leur situation géographique, leur type, etc. Le choix vous appartient !
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FVXzNmgtb3OBb8q1ttHK7%2F7_Supplier_Groups_1.png?alt=media&#x26;token=1b07283a-7190-485e-8473-5cd6f1639de1" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FVXzNmgtb3OBb8q1ttHK7%2F7_Supplier_Groups_1.png?alt=media&#x26;token=1b07283a-7190-485e-8473-5cd6f1639de1" alt="Table des paramètres des groupes de fournisseurs avec les colonnes group API name, group name et actions listant le groupe de courtiers" width="375"><figcaption></figcaption></figure></div>
 
 Pour créer un nouveau groupe de fournisseurs, cliquez sur le bouton +New en haut à droite de votre écran.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FcUx4VredlX84lxpO6ID1%2F8_Supplier_Groups_2.png?alt=media&#x26;token=bc4e0efb-b06f-4e37-a82e-6c02eff8ff80" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FcUx4VredlX84lxpO6ID1%2F8_Supplier_Groups_2.png?alt=media&#x26;token=bc4e0efb-b06f-4e37-a82e-6c02eff8ff80" alt="Table des paramètres des groupes de fournisseurs avec les colonnes group API name, group name, actions et un bouton New" width="375"><figcaption></figcaption></figure></div>
 
 Attribuez ensuite simplement à ce groupe un nom qui décrit précisément les fournisseurs qui y seront affectés.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fq9G7MzWkqzFzxQVoZpdp%2F9_Supplier_Groups_3.png?alt=media&#x26;token=230ba964-784c-4c2e-b611-addf95d9743e" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fq9G7MzWkqzFzxQVoZpdp%2F9_Supplier_Groups_3.png?alt=media&#x26;token=230ba964-784c-4c2e-b611-addf95d9743e" alt="Dialogue Create new group avec les champs group API name et group name et les boutons cancel et save" width="375"><figcaption></figcaption></figure></div>
 
 **Association utilisateurs et groupes de fournisseurs**
 
 Tous les groupes de fournisseurs que vous avez créés sont affichés ici, car c'est à cet endroit que vous pouvez affecter des utilisateurs DocBits aux groupes de fournisseurs que vous créez.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2F0lYLkUtmUcZAcoBB3A62%2F10_Group_Mapping_1.png?alt=media&#x26;token=e86aae24-c36d-4103-9de9-bd6864d7dc73" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2F0lYLkUtmUcZAcoBB3A62%2F10_Group_Mapping_1.png?alt=media&#x26;token=e86aae24-c36d-4103-9de9-bd6864d7dc73" alt="Page de mappage des utilisateurs et des groupes de fournisseurs montrant le groupe de courtiers avec des actions utilisateur et un utilisateur affecté" width="375"><figcaption></figcaption></figure></div>
 
 Pour affecter un nouvel utilisateur à un groupe de fournisseurs, cliquez sur le bouton +New et sélectionnez l'utilisateur que vous souhaitez affecter.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FY6DHOi2Y4pV03VGuIZgm%2F11_Group_Mapping_2.png?alt=media&#x26;token=0fa1ac8c-8eb3-4a5b-8857-fb69c63953ef" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FY6DHOi2Y4pV03VGuIZgm%2F11_Group_Mapping_2.png?alt=media&#x26;token=0fa1ac8c-8eb3-4a5b-8857-fb69c63953ef" alt="Vue de mappage des utilisateurs et des groupes de fournisseurs avec le groupe de courtiers, la colonne des actions utilisateur et une entrée utilisateur" width="375"><figcaption></figcaption></figure></div>
 
 Sélectionnez dans la liste déroulante l'utilisateur que vous souhaitez affecter au groupe de fournisseurs, puis cliquez sur Add pour l'affecter.
 
@@ -53,13 +53,13 @@ Sélectionnez dans la liste déroulante l'utilisateur que vous souhaitez affecte
 
 C'est ici que vous pouvez charger votre politique et votre déclaration de confidentialité à destination des fournisseurs que vous inviterez via le portail fournisseurs. Pour charger un document, cliquez simplement sur Upload Document en haut à droite de votre écran.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FIrN7krduOEKQVcpU0wyh%2F12_Policy_and_Privacy_Statement.png?alt=media&#x26;token=2d1fbdb6-51d6-4e10-8f4d-3cf2ac5ffb68" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FIrN7krduOEKQVcpU0wyh%2F12_Policy_and_Privacy_Statement.png?alt=media&#x26;token=2d1fbdb6-51d6-4e10-8f4d-3cf2ac5ffb68" alt="Page des termes et conditions avec le texte d'acceptation des conditions d'utilisation affiché comme document de politique téléchargé" width="375"><figcaption></figcaption></figure></div>
 
 **Modèles d'e-mail**
 
 Dans cette section, vous pouvez charger différents modèles d'e-mail, car ils constitueront la structure des e-mails reçus par le fournisseur lorsque vous l'invitez à rejoindre le portail fournisseurs. Les modèles requis sont : invitation, approbation, finalisation de l'inscription et rejet, car ce sont tous les e-mails qu'un fournisseur peut recevoir. Pour charger un modèle, cliquez sur +New.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2F61Erb9aVMRNmKKi1DCXj%2F13_Email_Templates.png?alt=media&#x26;token=6e554119-9677-4516-9f09-0304b021317d" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2F61Erb9aVMRNmKKi1DCXj%2F13_Email_Templates.png?alt=media&#x26;token=6e554119-9677-4516-9f09-0304b021317d" alt="Liste des modèles d'e-mails avec les e-mails d'invitation, d'approbation, de fin d'inscription et de rejet affichant le type, l'objet et les dates de modification" width="375"><figcaption></figcaption></figure></div>
 
 **Mise en page fournisseur**
 
@@ -67,11 +67,11 @@ Vous pouvez personnaliser la mise en page du formulaire d'inscription que les fo
 
 Vous voyez ci-dessous que vous pouvez configurer plusieurs mises en page selon vos besoins.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FQb8dR6FSHj0mml0JFzBp%2F14_Supplier_Layout_1.png?alt=media&#x26;token=2442ec68-3690-4ef1-8b7c-1fd44fe6e6b6" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FQb8dR6FSHj0mml0JFzBp%2F14_Supplier_Layout_1.png?alt=media&#x26;token=2442ec68-3690-4ef1-8b7c-1fd44fe6e6b6" alt="Paramètres des mises en page fournisseur listant les mises en page supplier user et supplier management avec titre, nom du document et actions" width="375"><figcaption></figcaption></figure></div>
 
 Dans la mise en page, vous pouvez ajouter des listes déroulantes qui peuvent être créées avec la fonctionnalité Liste de valeurs.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FO2t4kgpui3Gebsyn1MkE%2F15_Supplier_Layout_2.png?alt=media&#x26;token=032b9665-425e-4d35-adce-de3d14a133de" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FO2t4kgpui3Gebsyn1MkE%2F15_Supplier_Layout_2.png?alt=media&#x26;token=032b9665-425e-4d35-adce-de3d14a133de" alt="Constructeur de mise en page supplier management affichant des éléments supplier details avec panneau de propriétés, options déroulantes et sélection du pays" width="375"><figcaption></figcaption></figure></div>
 
 **À NOTER**
 
@@ -83,12 +83,12 @@ C'est ici que vous pouvez charger le logo de votre entreprise ou un autre visuel
 
 Champs d'invitation supplémentaires du portail fournisseurs : cette option permet d'ajouter des champs supplémentaires à l'invitation que vous envoyez aux fournisseurs ; une liste de champs est mise à votre disposition, comme indiqué ci-dessous.
 
-<figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FLdyOv43jUPchvBTBKI1g%2Fsupplier-portal2.png?alt=media&#x26;token=73b1d4bd-06d0-408a-9abe-975a5a4af5c2" alt="" width="315"><figcaption></figcaption></figure>
+<figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FLdyOv43jUPchvBTBKI1g%2Fsupplier-portal2.png?alt=media&#x26;token=73b1d4bd-06d0-408a-9abe-975a5a4af5c2" alt="Sélection des champs d'invitation supplémentaires listant payment term et supplier group avec les options assigned user" width="315"><figcaption></figcaption></figure>
 
 **Configuration de l'export**
 
 Chargez ici votre ION API ainsi que votre fichier de mappage IDM, et votre fichier de mappage M3 sera généré sur la droite.
 
-<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fo7YNr7Y4v79egtaMKPri%2F16_Export_Config.png?alt=media&#x26;token=2c915d6f-f0b3-4aca-908a-86ea7072dfc1" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://578966019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fo7YNr7Y4v79egtaMKPri%2F16_Export_Config.png?alt=media&#x26;token=2c915d6f-f0b3-4aca-908a-86ea7072dfc1" alt="Page de configuration d'export avec le téléchargement des fichiers de mappage ION et IDM et des mappages JSON générés des erp field names" width="375"><figcaption></figcaption></figure></div>
 
 {% embed url="https://youtu.be/_67HLaje8jE?si=ETdLfocQ8T2Djavh" %}

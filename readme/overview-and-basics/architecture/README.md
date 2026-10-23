@@ -16,7 +16,7 @@ Toutes les connexions entre les composants sont sécurisées par des protocoles 
 
 **Sur site :**&#x20;
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="Diagramme d'architecture de Operator On-Prem avec DocAgent sur un poste client se connectant à la Prefect API et au cloud DocBits"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ Toutes les connexions entre les composants sont sécurisées par des protocoles 
 
 **Cloud** :
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Diagramme d'architecture de Operator Cloud avec l'extension Chrome, DocBits Operator Cloud, DocFlow et DocBits AI échangeant des messages de tâches et de réponses"><figcaption></figcaption></figure>
 
 ## Exportation de données vers Infor
 
@@ -38,7 +38,7 @@ Exporter vers [Infor](../../infor-integration-and-configuration/exporting-to-inf
 
 Pour identifier le fournisseur ou comparer/faire correspondre les lignes de commande d'achat, nous activons un déclencheur dans LN/M3 qui envoie les BODs Sync.RemitToPartyMaster, Sync.SupplierPartyMaster et Sync.PurchaseOrder à Doc**Bits**. Nous configurons ce processus dans ION Desk en définissant le flux de données vers un point de connexion spécifique à Doc**Bits**.
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="Diagramme d'architecture DocBits du cluster Kubernetes avec équilibreur de charge, Redis, PostgreSQL, pods de travail et stockage de données Spaces"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Validation des données maîtres](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ Pour identifier le fournisseur ou comparer/faire correspondre les lignes de comm
 
 ## Importation d'e-mails OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="Diagramme d'importation d'e-mails Office 365 montrant Microsoft Graph API délivrant un jeton d'accès au service de messagerie DocBits et au système principal"><figcaption></figcaption></figure>

@@ -4,7 +4,7 @@
 
 Bienvenue dans le module de Comptabilisation des Factures de Coût et des Ventes Indirectes ! Ce module est conçu pour vous aider à gérer et à rapprocher efficacement vos transactions financières au sein de votre système ERP. Avec des fonctionnalités telles que l'extraction automatique de données, la correspondance de documents et le suivi détaillé, vous pouvez vous assurer que vos dossiers financiers sont précis et à jour.
 
-<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt="Écran de comptabilité avec les colonnes Split by total, Position Accounts, Voucher Text et Total à côté d'une facture fournisseur"><figcaption></figcaption></figure>
 
 ## Commencer
 

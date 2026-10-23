@@ -21,7 +21,7 @@ Pour activer la fonctionnalité, procédez ainsi :
        \
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt="Page de recherche des paramètres avec des entrées Bon de commande, dont Appariement et validation des bons de commande et Tableau de bord PO"><figcaption></figcaption></figure>
 
 ## **Types de codes pris en charge**
 

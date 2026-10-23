@@ -4,7 +4,7 @@
 
 L'écran de validation dans DocBits est conçu pour vérifier l'exactitude et l'exhaustivité des données contenues dans les documents avant qu'elles ne soient traitées ou enregistrées. Cette fonctionnalité est cruciale pour garantir que toutes les données sont correctement lues et traitées, assurant ainsi l'intégrité et la qualité des données.
 
-<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt="Diagramme d'étapes chevron empilées pour l'écran de validation couvrant validation, efficacité, conformité, convivialité, prévention des erreurs, intégration et qualité des données"><figcaption></figcaption></figure>
 
 ## Description détaillée de l'objectif et de l'utilisation de l'écran de validation
 

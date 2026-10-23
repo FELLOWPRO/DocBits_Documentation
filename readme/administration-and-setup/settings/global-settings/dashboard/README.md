@@ -4,14 +4,14 @@
 
 Les paramètres du tableau de bord sont conçus pour aider les administrateurs à contrôler la présentation des données et l'interaction au sein du tableau de bord DocBits. Ces paramètres déterminent quelles informations sont immédiatement disponibles lors de la connexion, garantissant que les utilisateurs ont un accès rapide aux données les plus pertinentes pour leurs tâches.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
+![Liste de documents en italien avec la plage de noms de documents allant de Delivery Note, Advance Ship Notice et Purchase Order et 2373 documents au total](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
 
 ## Accéder aux Paramètres du Tableau de bord
 
 Pour accéder aux paramètres du tableau de bord, naviguez vers :\
 **Paramètres → Paramètres globaux → Tableau de bord**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
+![Paramètres généraux du tableau de bord en italien avec les options de réinitialisation des filtres après le téléversement du document, le redémarrage et l'exportation](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
 
 ## **Général**
 
@@ -20,13 +20,13 @@ Pour accéder aux paramètres du tableau de bord, naviguez vers :\
   * **Chargement automatique du tableau de bord** : Contrôle si le tableau de bord doit charger automatiquement les données lors de l'accès de l'utilisateur, ce qui peut aider à réduire les temps de chargement et à améliorer l'expérience utilisateur en ne chargeant les données que lorsque cela est nécessaire.
   *   **Exporter les données du tableau de bord** : Cette fonctionnalité ajoute un nouveau bouton **Exporter** à la barre d'outils du tableau de bord, vous permettant d'exporter la vue actuelle du tableau de bord en tant que fichier **.csv** ou **.xlsx**.
 
-      ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
+      ![Section General des paramètres du dashboard avec les interrupteurs Reset filters et les options Dashboard data Auto refresh dashboard on document updates et Export Dashboard Data](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
 
 ## **Historique des exportations**
 
 Dans l'**Historique des exportations**, vous verrez un tableau répertoriant toutes les exportations passées avec des informations clés sur chaque demande.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
+![Section Export History sur la page des paramètres du Dashboard avec les colonnes Email, Status, Requested At, Completed At, Format et Filters Used](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
 
 Les détails suivants sont inclus :
 
@@ -49,19 +49,19 @@ Les détails suivants sont inclus :
   * **Uniquement Admin et Attribué** : Seuls les utilisateurs ayant des privilèges d'administrateur et l'utilisateur attribué peuvent redémarrer le document.
   * **Tous les utilisateurs** : Tous les utilisateurs qui ont reçu les [autorisations](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) nécessaires peuvent redémarrer des documents.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
+![Section Action sur la page de paramètres du dashboard avec Assign to et Restart tous deux réglés sur Only for Admin](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtres**
 
 * **Filtre d'état Style** : Détermine le style de présentation des filtres d'état, qui peut être défini par défaut ou personnalisé selon l'orientation opérationnelle des utilisateurs.
 * **Filtre d'état personnalisé** : Permet la création et l'application de filtres personnalisés qui peuvent cibler des statuts de documents spécifiques comme "Nouveau", "Validation", ou "Exportation". Cela permet aux utilisateurs d'accéder rapidement aux documents à des étapes spécifiques de traitement.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
+![Page de paramètres du dashboard affichant la section Filters avec Status filter style et Custom status filter plus la section Advance Shipment Dashboard](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
 
 ## Tableau de bord des avis d’expédition
 
 * **Visibilité des commandes livrées** : Cette fonctionnalité permet à l'utilisateur de spécifier la durée pendant laquelle les commandes livrées seront visibles.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
+![Section Advance Shipment Dashboard sur la page des paramètres du tableau de bord avec Delivered Orders Visibility réglé sur 14 Days](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
 
 Ces paramètres de tableau de bord sont cruciaux pour garantir que la plateforme DocBits soit aussi réactive et utile que possible, fournissant aux utilisateurs un outil puissant pour surveiller et gérer les activités de traitement de documents directement depuis le tableau de bord.

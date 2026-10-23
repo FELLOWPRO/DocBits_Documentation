@@ -20,6 +20,10 @@ Używaj własnej organizacji testowej i syntetycznego dokumentu. Sprawdź organi
 
 ## 1. Orientacja i model wykonania <a id="level-1"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/pl.mp4" %}
+
+[Otwórz film z polskimi napisami i transkrypcją](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/pl.html).
+
 **Ćwiczenie:** Wyjaśnij organizację, dostęp, When–And–Then i różnicę między regułą liniową a grafem Advanced. Odróżnij filtr dokumentu, zdarzenie, zapis i aktywację.
 
 **Warunek ukończenia:** Wyjaśniasz, kiedy reguła jest uwzględniana i jaki dowód odróżnia symulację od wykonania dokumentu.

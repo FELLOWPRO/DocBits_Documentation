@@ -8,7 +8,7 @@ Goederenontvangsten bereiken DocBits normaal gesproken automatisch via uw ION-da
 
 ## Twee manieren om dezelfde BOD te versturen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
+![Swagger-endpointlijst met Import Receive Delivery Bod en Import Receive Delivery Bod Xml](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
 
 | Endpoint | Wanneer u het gebruikt |
 | --- | --- |
@@ -25,7 +25,7 @@ U hebt nodig:
 * **De BOD** — een `SyncReceiveDelivery`-XML-bestand, of de inhoud daarvan.
 * **Uw Org ID**, uit **Settings → Integration & SSO**, in de sectie **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Velden Org ID en Sub Org ID gevuld met voorbeeld-UUID-waarden](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** toont de suborganisatie die in de koptekst is geselecteerd. Met **CROSS** geselecteerd — de weergave over alle suborganisaties heen — toont het dezelfde waarde als **Org ID**. Schakel eerst naar een specifieke suborganisatie als u het ID daarvan nodig hebt.
@@ -58,20 +58,20 @@ Alles onder **import** is vergrendeld totdat u autoriseert. Er zijn twee dingen 
 
 * Klik op het **slotpictogram** rechts van het endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-lock.png)
+![Endpointbalk Import Receive Delivery Bod met het slotpictogram ernaast](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-lock.png)
 
 * Het blijkt **Beschikbare autorisaties** opent met twee items.
 * Plak uw **Org ID** in **X-ORG-ID** en klik op **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Dialoogvenster Available authorizations met het headerveld X-ORG-ID dat de waarde van de organisatie-ID toont](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![Dialoogvenster Available authorizations met het headeritem X-ORG-ID gemarkeerd als Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Scroll naar **X-API-KEY**, plak uw API key en klik op **Authorize**. In DocBits vindt u die onder **Settings → Integration & SSO**, in de sectie **API Key**, of u kunt [een nieuwe sleutel aanmaken](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#een-api-sleutel-aanmaken).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Dialoogvenster Available authorizations met het headerveld X-API-KEY dat wacht op de waarde van de API-sleutel](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![Dialoogvenster Available authorizations met het headeritem X-API-KEY gemarkeerd als Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Klik op **Close**.
 
@@ -81,13 +81,13 @@ Plak de sleutel op zichzelf — zet er geen `Bearer` voor. Beide autorisaties bl
 
 ### 3. De velden invullen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-rd.png)
+![Endpoint-item Receive Delivery Bod in Swagger zonder parameters](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-rd.png)
 
 Klik op **Try it out** en vul vervolgens het formulier in van het endpoint dat u hebt gekozen.
 
 #### Een bestand uploaden — `/import/receive_delivery_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
+![Uitgevouwen endpoint Receive Delivery Bod met een formulier voor de aanvraagbody inclusief org_id, sub_org_id en bestandsupload](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
 
 | Veld | |
 | --- | --- |
@@ -148,7 +148,7 @@ Controleer naar welke omgeving en welke organisatie u wijst voordat u uitvoert. 
 
 Controleer voordat u uitvoert de keuzelijst **Servers** onderaan het formulier. Die bepaalt naar welke omgeving het verzoek daadwerkelijk wordt gestuurd, en kan afwijken van de pagina die u hebt geopend.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-execute.png)
+![Formulier voor de aanvraagbody met org_id, sub_org_id, het gekozen bestand receive-delivery-sample.xml en aangepaste veldtoewijzingen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-execute.png)
 
 Klik op **Execute**. Een geslaagde import geeft terug:
 
@@ -159,7 +159,7 @@ Klik op **Execute**. Een geslaagde import geeft terug:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-response.png)
+![Execute-resultaat met het curl-commando en een 200-responstekst met BOD processed successfully](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-response.png)
 
 Receive delivery BOD's worden verwerkt terwijl u wacht, dus tegen de tijd dat u dit bericht ziet, staan de gegevens erin.
 

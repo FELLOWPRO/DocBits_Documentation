@@ -106,7 +106,7 @@ Om een nieuwe export te maken:
 * **Bestandsnaam Exportmodus** Specificeert of het geëxporteerde bestand zijn oorspronkelijke bestandsnaam behoudt of wordt hernoemd met het DocBits document-ID.
 * **Documentgeschiedenis opnemen** Wanneer ingeschakeld, bevat het geëxporteerde bestand de documentgeschiedenis gebaseerd op de logs beschikbaar in het dashboard.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
+![Menu met documentacties met de opties Validate, Assign to, Document-flow, Download, Restart, Document Logs, Workflow Logs en Delete](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
 
 <figure><img src="../../../.gitbook/assets/prior-u016-nl.png" alt="Niet-opgeslagen geavanceerde SFTP-exportopties."><figcaption><p>Niet-opgeslagen geavanceerde SFTP-exportopties.</p></figcaption></figure>
 

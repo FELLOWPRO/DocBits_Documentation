@@ -12,10 +12,10 @@ Om de detectie van dubbele documenten in **DocBits** in te schakelen, volg je de
 
 1.  Navigeer naar **Instellingen** → **Globale instellingen** → **Documenttypen**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
+    ![Global settings zijbalk met de menu-items Company Information, Document Types, Email Notification, Email Templates en Dashboard](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
 2.  Selecteer het gewenste **Documenttype** en klik op **Meer instellingen**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
+    ![Document types pagina met de items Invoice, Credit Note, Delivery Note, Order Confirmation en Contract, met Extraction Type schakelaars en Edit layout tabbladen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
 3.  Ga naar de sectie **Duplicaatdetectie**.
 
 <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-nl.png" alt="Instellingen voor de detectie van dubbele documenten."><figcaption><p>Instellingen voor de detectie van dubbele documenten.</p></figcaption></figure>
@@ -51,7 +51,7 @@ Zodra **Duplicaatdetectie** is ingeschakeld, zijn er twee dropdown-menu's beschi
 
     <mark style="color:red;">**Opmerking**</mark>: Een interval van 3 maanden wordt aanbevolen om optimale prestaties te garanderen. Het selecteren van een langer interval kan leiden tot langzamere laadtijden van het dashboard.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
+    ![More Settings sectie voor duplicaatdetectie met Duplicate Detection Interval ingesteld op 3 Months en Duplicate Invoice Detection vervolgkeuzelijsten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
 
 ## Dubbele documenten bekijken op het Dashboard
 
@@ -62,6 +62,6 @@ Zodra **Duplicaatdetectie** is ingeschakeld, worden documenten die als duplicate
 
 *   Wanneer je een gemarkeerd document bekijkt, verschijnt er een waarschuwingsbalk bovenaan, die aangeeft dat het document een duplicaat is.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+    ![Gesplitste schermweergave van een duplicaatvergelijking van een factuur met velden voor factuurnummer, factuurdatum, leveranciersadres en betaalgegevens](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
 
 Vergelijk bij mogelijke duplicaten factuurnummer, leverancier, datum en bedrag. Gebruik de waarschuwing en documentdetails om te bepalen welke correctie nodig is.

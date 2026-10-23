@@ -104,7 +104,7 @@ Then：**Assign document to:** 审批负责人
 
 <figure><img src="../../../.gitbook/assets/s150-workflow_test7_status_update-zh.png" alt="工作流草稿中的状态更改操作。"><figcaption><p>工作流草稿中的状态更改操作。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (1).png" alt="工作流生成器，包含三张逻辑卡片，按负责人和文档类型将文档分配给Invoice reviewer、Delivery-note reviewer和Order reviewer"><figcaption></figcaption></figure>
 
 例如，如果文档缺少某些信息或重要信息，而这些信息对后续处理至关重要，你可以设置工作流，让这些文档立即转发给采购员及其替代人员。
 
@@ -141,7 +141,7 @@ Then：**Assign document to:** 审批负责人
 
 如果附加费用采用不同的计算方式，或者仅适用于某些行项目，可以使用通用表格计算卡片；其中一些卡片还支持按正则表达式筛选。
 
-<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19.png" alt="MTZ列的计算卡片，包含Material Surcharge规则和针对以01、06、9、001或000开头的Item Number正则表达式筛选器"><figcaption></figcaption></figure>
 
 上方是 MTZ 的计算示例，筛选条件为行项目编号以 01、06、9、001 或 000 开头。
 
@@ -149,7 +149,7 @@ Then：**Assign document to:** 审批负责人
 
 **运行工作流**
 
-<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20.png" alt="工作流生成器中的Run workflow Mtz Into Discount卡片，其中包含用于运行后续工作流的Conditions部分"><figcaption></figcaption></figure>
 
 使用此卡片，你可以指定一个工作流的名称：当其条件满足且当前工作流中之前的 Then 卡片执行完毕后，该工作流将接着运行。系统会优先运行可运行的活动工作流，但如果文档满足已停用工作流的条件，也允许运行该工作流。
 

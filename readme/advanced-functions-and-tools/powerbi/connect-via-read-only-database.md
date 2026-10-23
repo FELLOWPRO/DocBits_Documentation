@@ -18,7 +18,7 @@
 * 从列表中选择 **PostgreSQL Unicode(x64)** 驱动程序，然后点击 **完成**。
 * 使用以下位置提供的凭据填写必填字段：\n  **DocBits → 设置 → 文档处理 → 模块 → AI 仪表板 → 只读数据库访问**
 
-<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt="Power BI的Navigator窗格，显示ODBC数据源dsn-Sandbox-Read_Only以及public架构及其表列表"><figcaption></figcaption></figure>
 
 **必填字段：**
 
@@ -38,7 +38,7 @@
     <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI 获取数据 ODBC"><figcaption></figcaption></figure>
 * 在 DSN 列表中，选择已配置的数据源（例如，`Sandbox-Read_Only`）。
 
-<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt="Power BI Navigator，显示 sandbox-doc2api 的表，如 supplier group、supplier header 和 task assignment，并带有 Select Related Tables、Load 和 Transform Data 按钮"><figcaption></figcaption></figure>
 
 * 点击 **确定**。如果系统提示，请再次输入凭据。
   * <mark style="color:red;">**注意：**</mark> 如果看到错误 **“password authentication failed for user”**，请尝试将密码用**花括号 `{}`**括起来后输入。
@@ -49,7 +49,7 @@
 * 打开 **`public`** 架构。
 * 选择要导入的表。
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![DocBits的Read-Only DB Access面板，显示用户名、密码、数据库、主机和端口字段以及可用表列表](../../.gitbook/assets/connect_read_only_1.png)        ![Power BI的From ODBC对话框，包含Data source name (DSN)下拉框和高级选项](../../.gitbook/assets/connect_read_only_2.png)
 
 * 选择：
   * **加载** → 直接导入 Power BI

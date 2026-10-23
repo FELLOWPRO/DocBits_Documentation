@@ -10,7 +10,7 @@
 
 系统会带您前往 Microsoft 页面，您需要在该页面输入一段代码。
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
+![Microsoft登录页面，要求输入代码，包含Code输入框和Next按钮](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
 返回 DocBits 即可找到这段代码，代码会像下图所示显示在那里。只需复制代码并将其输入 Microsoft 页面。之后，您需要输入自己的 Microsoft 凭据。
 

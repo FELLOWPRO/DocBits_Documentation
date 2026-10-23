@@ -15,10 +15,10 @@
 1. 前往**设置** -> **全局设置** -> **文档类型**
 2.  选择所需的文档类型，然后点击**更多设置**。
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt="文档类型列表，包含Invoice、Credit Note、Delivery Note和Order Confirmation行及其Activate开关"><figcaption></figcaption></figure>
 3.  在**采购订单**部分中，找到**采购订单**选项。
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_po.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/po_settings_po.png" alt="Purchase Order 更多设置面板，包含 PO tolerance、Auto check for PO updates 和 PO disable statuses 选项"><figcaption></figcaption></figure>
 
 ## **功能**
 

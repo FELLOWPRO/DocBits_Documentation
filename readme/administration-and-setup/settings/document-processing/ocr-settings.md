@@ -14,7 +14,7 @@ DocBits OCR 与电子文本说明：设置、质量与表头提取
 
 *   前往：**设置** → **文档处理** → **OCR 设置**
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt="DocBits设置菜单，Document Processing已打开，并在Import、Rule Management和Export中选中OCR Settings"><figcaption></figcaption></figure>
 
 ## OCR 质量
 
@@ -29,7 +29,7 @@ DocBits OCR 与电子文本说明：设置、质量与表头提取
 * **抛出错误**\
   文档处理将完全停止，并显示错误消息，指出文档未达到所需的质量阈值。
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt="OCR Quality设置页面，包含质量滑块，其下方选中了Run again after confirmation"><figcaption></figcaption></figure>
 
 ## 常规 OCR 设置
 
@@ -44,7 +44,7 @@ DocBits OCR 与电子文本说明：设置、质量与表头提取
     * 当前所选版本未能达到预期效果。
     * 您正在排查与 OCR 性能或准确性有关的问题。
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt="OCR Settings页面，AI OCR Version下拉框已展开，显示版本1.2、2.0和2.1"><figcaption></figcaption></figure>
 
 ## 表格 OCR 设置
 

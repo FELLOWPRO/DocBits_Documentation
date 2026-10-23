@@ -14,13 +14,13 @@
     \
 
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-Setting.jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-Setting.jpg" alt="DocBits中Purchase Order模块设置里高亮显示的PO Shipment Order切换开关" width="563"><figcaption></figcaption></figure></div>
 
 ## **显示位置**
 
 启用后，**PO Shipment Order**部分会显示在采购订单匹配界面中。
 
-<figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt="PO Shipment Order表格，包含物料和数量列、76%的进度条以及承诺交货日期2025-09-30"><figcaption></figcaption></figure>
 
 ### **PO Shipment Order – 字段说明**
 

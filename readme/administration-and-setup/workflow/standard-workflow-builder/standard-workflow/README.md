@@ -1,6 +1,6 @@
 # 工作流示例
 
-<figure><img src="../../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1).svg" alt="涵盖基于供应商的审批、PO Matching中的Finance和Buyer Review、Infor IDM LN路由及导出的AP工作流程图"><figcaption></figcaption></figure>
 
 #### 工作流组件概览：
 

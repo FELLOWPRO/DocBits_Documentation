@@ -1,6 +1,6 @@
 # 成本发票 - 导出
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28.png" alt="包含文档类型Invoice、子类型Cost Invoice、Pending Second Approval状态和Start Export的工作流"><figcaption></figcaption></figure>
 
 该标题表明，此规则专门用于管理成本发票，并包含导出操作，可能用于报告、后续处理或与其他系统集成。
 

@@ -89,4 +89,4 @@
 * 如果提示词执行遇到问题，找出问题发生的位置。
 * 使用相同的**暂停**、**恢复**、**取消**和**接管控制**操作。
 
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="DocBits Operator 详细视图，显示提示词 Open google.com then search for Alan MacMasters，步骤已完成，侧边栏中有已保存的提示词" width="563"><figcaption></figcaption></figure></div>

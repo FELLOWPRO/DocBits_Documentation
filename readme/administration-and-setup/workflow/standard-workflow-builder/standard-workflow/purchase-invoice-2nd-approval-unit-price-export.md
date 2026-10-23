@@ -1,6 +1,6 @@
 # 采购发票 - 第二次审批单价导出
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02.png" alt="工作流，Document type 为 Invoice，状态为 Pending Second Approval，子类型为 Purchase Invoice，包含单价比较和 Start Export"><figcaption></figcaption></figure>
 
 此标题表示，该规则用于管理采购发票的第二阶段审批，重点关注单价，确保其符合约定条款。
 

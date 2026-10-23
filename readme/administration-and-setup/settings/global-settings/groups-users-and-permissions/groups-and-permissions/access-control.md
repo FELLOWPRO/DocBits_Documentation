@@ -23,7 +23,7 @@
 3. 选择 **Module.**（模块）。
 4. 启用滑块以激活 **Access Control**（访问控制）。
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt="DocBits设置中的Access Control页面，Access Control标签页已打开"><figcaption></figcaption></figure>
 
 ## 打开组的访问控制
 

@@ -2,7 +2,7 @@
 
 Docbits 是一款先进的系统，旨在自动将采购订单（PO）数据与收到的发票文档进行匹配。该工具专为在 ERP 系统中高效管理和处理发票数据而设计。本文档介绍 Docbits 自动匹配的基本原理，并定义成功匹配所需的具体规则。
 
-<figure><img src="../../../.gitbook/assets/Automatic Purchase Order Data Matching.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Automatic Purchase Order Data Matching.svg" alt="自动采购订单数据匹配流程图，包含数据提取、比对、自动匹配、报告和匹配成功等步骤"><figcaption></figcaption></figure>
 
 ## **Docbits 自动匹配的基本原则**
 

@@ -140,7 +140,7 @@ YYYY-MM-DD HH:MM:SS
 1. 访问：[https://api.docbits.com/](https://api.docbits.com/)
 2. 点击 **“Authorize”** 按钮。
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_1.png" alt="DocBits API的Swagger页面，default列表已展开并显示healthz Healthz端点"><figcaption></figcaption></figure>
 3. 输入 API-Key，然后点击 **“Authorize”**
 
     * API-Key 可在 DocBits 的 Settings -> Global Settings -> Integration&#x20; 中找到。
@@ -148,20 +148,20 @@ YYYY-MM-DD HH:MM:SS
 
 
 
-    <figure><img src="../.gitbook/assets/import_csv_api.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_api.png" alt="DocBits的Settings页面，Global Settings已打开，显示Company Information、Groups Users and Permissions和Integration"><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="Available authorizations对话框，包含APIKeyHeader apiKey条目和X-API-KEY标头值字段" width="563"><figcaption></figcaption></figure>
 
 
 
 1. 按 **CTRL + F**（Mac 上按 **CMD + F**）打开搜索功能，然后搜索 `/master_data_lookup/import_data`。
 2. 点击该请求以查看详细信息，然后点击 **“Try it out”** 继续。
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_3.png" alt="浏览器查找栏在DocBits API页面上打开，用于搜索import_data端点"><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_6.png" alt="Import Data端点页面，包含Try it out按钮以及multipart form-data请求正文字段"><figcaption></figcaption></figure>
 3. 现在可以在 Request Body 中输入所需参数。\
 
 
@@ -181,7 +181,7 @@ YYYY-MM-DD HH:MM:SS
         3. 在导入请求中，将 `delimiter` 参数设为识别出的字符（`,` 或 `;`）。使用错误的分隔符会导致数据无法正确解析，导入也会失败。
     * **on\_conflict & auto\_generate\_id：** 目前尚未为这些数据类型实现冲突处理功能（`on_conflict`）和自动生成 ID 功能（`auto_generate_id`）。
 
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_4.png" alt="Import Data请求正文，包含sub_org_id、data_type、file、delimiter、replace_all、on_conflict和auto_generate_id字段"><figcaption></figcaption></figure>
 4. 确认所有信息均正确后，点击 **“Execute”** 按钮即可启动导入过程。
 
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_5.png" alt="已填写的Import Data请求，data_type为supplier，文件为supplier.csv，on_conflict设置为REPLACE"><figcaption></figcaption></figure>

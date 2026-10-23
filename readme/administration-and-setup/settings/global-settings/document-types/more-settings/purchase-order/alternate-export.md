@@ -10,10 +10,10 @@
 1. 前往 **Settings** -> **Global Settings** -> **Document Types**
 2.  选择所需的文档类型，然后点击 **More Settings**。
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt="文档类型列表，包含Invoice、Credit Note、Delivery Note和Order Confirmation行及其Activate开关"><figcaption></figcaption></figure>
 3.  在 **Purchase Order** 部分中，找到 **Alternate Export** 选项。
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_1 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_1 (1).png" alt="Purchase Order 部分的 More Settings 面板，Alternate Export 选项位于 PO Tolerance Setting 和 PO disable statuses 之间"><figcaption></figcaption></figure>
 
 ## 设置方法
 
@@ -38,4 +38,4 @@
 
 设置完成后，采购订单匹配导出选项中会显示一个额外的导出选项。当文档符合指定状态时，此选项将使用指定的导出配置。
 
-<figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_2.png" alt="Purchase Order Matching 界面，Export 下拉菜单展开，显示 Alternate Export、Reject 和 Auto Export 选项"><figcaption></figcaption></figure>

@@ -8,16 +8,16 @@
 
 1.  前往 **Settings → Document Processing → Module**。
 
-    <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_module.png" alt="DocBits的Settings页面，打开的Document Processing菜单显示Module、Export、OCR Settings以及Classification and Extraction条目"><figcaption></figcaption></figure>
 2.  在 **Shipping & Supplier** 部分中，启用 **Supplier Portal** 选项。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt="DocBits的Modules设置页面，Shipping &amp;amp; Supplier部分显示Supplier Portal选项"><figcaption></figcaption></figure>
 
 ## 供应商设置
 
 启用**供应商门户**功能后，**设置**菜单底部会显示新的 **Supplier Settings** 部分。
 
-<figure><img src="../../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (453).png" alt="DocBits的Settings菜单，显示Supplier Settings部分，包含Supplier General Settings、Email Templates、Supplier Layout、Export Configuration和Supplier Permissions"><figcaption></figcaption></figure>
 
 [**Supplier General Settings**](../../settings/supplier-setting/supplier-general-settings.md)：在这里，您可以上传公司徽标来自定义**供应商门户**。徽标会显示在所有电子邮件模板的页眉中。您还可以管理法律文件，例如使用条款和隐私政策。
 
@@ -35,7 +35,7 @@
 
 您可以通过左侧菜单访问**供应商仪表板**，如下所示。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt="DocBits中的Supplier Dashboard，包含All Supplier、Pending Approval和Pending Registration的计数以及Test Supplier行的表格"><figcaption></figcaption></figure>
 
 这里会显示您创建的所有供应商。
 
@@ -49,11 +49,11 @@
 
 您还可以指定每页显示的供应商数量。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt="Supplier Dashboard的筛选面板，包含Supplier Groups、Status、Created On、Supplier Per Page和Clear Filters按钮"><figcaption></figcaption></figure>
 
 此外，您可以点击筛选栏左侧的相应类别，快速筛选**待审批**或**待注册**状态的供应商。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt="Supplier Dashboard，搜索栏左侧显示All Supplier、Pending Approval和Pending Registration类别"><figcaption></figcaption></figure>
 
 ## 供应商详情（内部视图）
 
@@ -79,26 +79,26 @@
 
 ### 刷新表格 <a href="#refresh-table" id="refresh-table"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt="DocBits中的Supplier Dashboard表格，顶部工具栏中有刷新表格按钮"><figcaption></figcaption></figure>
 
 点击此按钮可刷新仪表板，加载最新的数据和状态。
 
 ### 设置表格列以便整理 <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt="DocBits中的Supplier Dashboard表格，顶部工具栏中包含设置表格列的按钮"><figcaption></figcaption></figure>
 
 点击此按钮可打开菜单，管理采购订单表格中列的显示情况。使用复选框和箭头按钮可在显示和隐藏区域之间移动列。您还可以拖放列名称来调整列的顺序。点击 **Done** 保存更改。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt="供应商表的Columns settings菜单，包含Supplier Number、Status和Created On等隐藏列以及Cancel和Done按钮"><figcaption></figcaption></figure>
 
 ### 分析 <a href="#analytics" id="analytics"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt="DocBits中的Supplier Dashboard，包含All Supplier、Pending Approval和Pending Registration标签页，以及带有Supplier Name和Status列的供应商表格"><figcaption></figcaption></figure>
 
 点击此按钮会打开一个新部分，显示即将到期的供应商数量及其到期时间。\
 点击任意类别可应用筛选，仅查看符合条件的供应商。
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt="Supplier Dashboard的分析部分，包含Expired (13)以及1 Month、6 Month和1 Year的Expires in计数"><figcaption></figcaption></figure>
 
 ## 创建供应商并发送注册邮件
 
@@ -106,10 +106,10 @@
 
 1.  点击右上角的加号（+）图标。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt="DocBits中的Supplier Dashboard，包含All Supplier、Pending Approval和Pending Registration标签页，以及带有Supplier Name和Status列的供应商表格"><figcaption></figcaption></figure>
 2.  填写必填字段，然后点击 **Save**。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt="DocBits中的Add Supplier表单，包含Supplier Group、Supplier Name、Supplier Responder和Payment Terms字段以及Cancel和Save按钮"><figcaption></figcaption></figure>
 3. 系统会自动向供应商发送一封包含账户创建链接的电子邮件。
 
 ### **向现有供应商发送注册邮件：**
@@ -118,11 +118,11 @@
 2. 点击 **Actions** 列中的三点菜单。
 3.  选择 **Magic Link**。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt="DocBits中的Supplier Dashboard，行菜单已打开，显示Magic Link选项"><figcaption></figcaption></figure>
 4. 核实供应商信息。
 5.  点击 **Send**，通过电子邮件发送注册链接。
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt="DocBits中的Magic Link确认面板，包含Supplier Group、Supplier Name和Supplier Responder详细信息以及Cancel和Send按钮"><figcaption></figcaption></figure>
 
 ## 供应商的注册流程是怎样的？
 

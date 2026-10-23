@@ -44,4 +44,4 @@ description: >-
 * 请确保所有文档均经过验证并归档，以便留存记录。
 * 必须及时解决订单或发票详情中的差异，以避免延误。
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed.svg" alt="材料订购与处理工作流的泳道图，贯穿 Supplier、DocBits、Purchasing-INFOR、IDM 和 FIBU"><figcaption></figcaption></figure>

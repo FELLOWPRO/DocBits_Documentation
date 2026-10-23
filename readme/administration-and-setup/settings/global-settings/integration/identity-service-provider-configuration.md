@@ -2,7 +2,7 @@
 
 配置身份服务提供商（IdP）以与 DocBits 集成，需要执行几个特定步骤。以下是操作指南：
 
-<figure><img src="../../../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (199).png" alt="Identity Service Provider Settings 界面，包含 Upload file 字段和 Import 按钮"><figcaption></figcaption></figure>
 
 **访问 IdP 配置界面**
 

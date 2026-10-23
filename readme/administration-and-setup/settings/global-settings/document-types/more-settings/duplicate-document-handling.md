@@ -12,10 +12,10 @@ Per abilitare il rilevamento di documenti doppi in **DocBits**, segui questi pas
 
 1.  Naviga su **Impostazioni** → **Impostazioni globali** → **Tipi di documenti**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
+    ![Barra laterale delle Global settings con le voci di menu Company Information, Document Types, Email Notification, Email Templates e Dashboard](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
 2.  Seleziona il **Tipo di documento** desiderato e fai clic su **Altre impostazioni**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
+    ![Pagina Document types con le voci Invoice, Credit Note, Delivery Note, Order Confirmation e Contract, con interruttori Extraction Type e schede Edit layout](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
 3.  Vai alla sezione **Rilevamento dei duplicati**.
 
 <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-it.png" alt="Impostazioni di rilevamento dei documenti duplicati."><figcaption><p>Impostazioni di rilevamento dei documenti duplicati.</p></figcaption></figure>
@@ -51,7 +51,7 @@ Una volta abilitato il **Rilevamento dei duplicati**, saranno disponibili due me
 
     <mark style="color:red;">**Nota**</mark>: Si consiglia un intervallo di 3 mesi per garantire prestazioni ottimali. Selezionare un intervallo più lungo potrebbe portare a tempi di caricamento più lenti del cruscotto.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
+    ![Sezione di rilevamento duplicati di More Settings con Duplicate Detection Interval impostato su 3 Months ed elenchi a discesa Duplicate Invoice Detection](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
 
 ## Visualizzare documenti duplicati nel Cruscotto
 
@@ -62,6 +62,6 @@ Una volta abilitato il **Rilevamento dei duplicati**, qualsiasi documento identi
 
 *   Quando visualizzi un documento contrassegnato, apparirà una barra di avviso nella parte superiore, indicando che il documento è un duplicato.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+    ![Confronto duplicati a schermo diviso di una fattura che mostra i campi numero fattura, data fattura, indirizzo fornitore e dettagli di pagamento](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
 
 Per esaminare possibili duplicati, confrontare numero di fattura, fornitore, data e importo. Usare l’avviso e i dettagli dei documenti per decidere le correzioni necessarie.

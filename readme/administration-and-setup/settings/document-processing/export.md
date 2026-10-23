@@ -106,7 +106,7 @@ Per creare una nuova esportazione:
 * **Modalità di esportazione del nome file** Specifica se il file esportato mantiene il nome file originale o viene rinominato usando l'ID documento DocBits.
 * **Includi cronologia documenti** Quando abilitato, il file esportato includerà la cronologia del documento basata sui log disponibili nella dashboard.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
+![Menu delle azioni del documento con le opzioni Validate, Assign to, Document-flow, Download, Restart, Document Logs, Workflow Logs e Delete](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
 
 <figure><img src="../../../.gitbook/assets/prior-u016-it.png" alt="Opzioni avanzate non salvate dell’esportazione SFTP."><figcaption><p>Opzioni avanzate non salvate dell’esportazione SFTP.</p></figcaption></figure>
 

@@ -13,7 +13,7 @@ Quando si tratta di testare la configurazione di PO Matching, dovrai creare un o
 
 Una volta creato l'ordine d'acquisto, vai su Impostazioni → Ricerca dati anagrafici e cerca il numero dell'ordine d'acquisto del PO appena creato come dovrebbe ora apparire nei dati anagrafici dell'ordine d'acquisto in DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+![Tabella Purchase order nei dati principali di DocBits con le colonne Warehouse Id, Supplier Name, Purchase Order Number, Line Number e Quantity](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
 Dovresti vedere il tuo numero univoco PO qui, questo significa che DocBits e INFOR sono correttamente sincronizzati.
 

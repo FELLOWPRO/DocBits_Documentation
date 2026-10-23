@@ -4,11 +4,11 @@ Om het overzicht te bewaren, kunt u de workflows verschillende koppen geven, zod
 
 Maak een nieuwe Workflow aan: Klik op + WORKFLOW TOEVOEGEN
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Werkgebied van de Workflow Builder met de sjabloon Test Simple Workflow, drie rijen Wenn, Und en Dann en een knop Karte hinzufügen onder elke rij](<../../.gitbook/assets/workflow_add_button.png>)
 
 U kunt deze workflows (Test 1, 2, 3) gebruiken om verschillende documenten automatisch toe te wijzen aan de juiste medewerker in het bedrijf.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Dashboard Workflow List met de rij Test Simple Workflow en de kolommen Name, Type, Workflow Execution Order, Updated By, Created On en Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Als een factuur of ander document een bepaald totaalbedrag overschrijdt dat voorafgaande beoordeling en goedkeuring vereist, kunnen deze documenten onmiddellijk aan de juiste persoon worden toegewezen.
 

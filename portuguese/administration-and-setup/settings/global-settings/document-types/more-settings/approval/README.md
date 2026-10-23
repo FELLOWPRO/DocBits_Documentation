@@ -2,11 +2,11 @@
 
 Este vídeo mostra a configuração e o teste de aprovações.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/pt.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/pt.mp4" %}
 Configurar e testar aprovações de faturas
 {% endembed %}
 
-[Ver vídeo com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/pt.html)
+[Ver vídeo com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/pt.html)
 
 A aplicação real é mostrada; a redação das opções pode depender da versão implementada.
 
@@ -32,9 +32,9 @@ A opção V2 adicional e os editores de formulários são definições separadas
 3. Atribua a fatura em espera ao outro revisor autorizado. Utilize essa segunda conta normal de revisão para a verificar e dar a segunda aprovação com uma nota separada.
 4. Reabra o histórico e verifique ambos os revisores diferentes, horas e notas. Rejeite também uma fatura de teste separada com um motivo e verifique essa decisão após recarregar.
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-pt-3ad9c40b2491.png" alt="Definições de aprovação guardadas no próprio tipo de teste."><figcaption><p>Definições de aprovação guardadas no próprio tipo de teste.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-pt-d2c684ac9ff8.png" alt="Definições de aprovação guardadas no próprio tipo de teste."><figcaption><p>Definições de aprovação guardadas no próprio tipo de teste.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-pt-3ad9c40b2491.png" alt="Dois revisores diferentes e ambas as notas guardadas."><figcaption><p>Dois revisores diferentes e ambas as notas guardadas.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-pt-d2c684ac9ff8.png" alt="Dois revisores diferentes e ambas as notas guardadas."><figcaption><p>Dois revisores diferentes e ambas as notas guardadas.</p></figcaption></figure>
 
 ## Verificar o resultado
 

@@ -1,50 +1,27 @@
 ---
-description: >-
-  Esplora il workflow passo dopo passo per l'ordinazione dei materiali, il
-  ricevimento merci e l'elaborazione delle fatture con l'integrazione tra INFOR
-  ERP e DocBits. Gestione efficace di fornitori e documenti in un'unica
-  soluzione.
+description: Esempio di ordinazione materiali, ricezione merci e fatture con ruoli distinti per INFOR, IDM, fornitore e DocBits
 ---
 
-# Workflow di Ordinazione ed Elaborazione dei Materiali
+# Flusso di lavoro per l’ordine e l’elaborazione dei materiali
 
-Questo documento illustra il workflow per l'ordinazione dei materiali dai fornitori, il ricevimento delle merci e l'elaborazione delle fatture, con l'integrazione tra fornitori, sistema INFOR ERP e DocBits per la gestione dei documenti.
+Il diagramma illustra un processo di esempio. Le corsie distinguono **Acquisti INFOR**, **DocBits**, **IDM** e **Fornitore**; la contabilità è una destinazione separata. Non tutti i passaggi sono funzioni eseguite da DocBits.
 
-### Panoramica del Processo
+<figure><img src="../../.gitbook/assets/workflow-material-it.png" alt="Esempio di ordinazione dei materiali con ruoli distinti per fornitore, acquisti INFOR, IDM, DocBits e contabilità. L’archiviazione illustrata appartiene a IDM. Diagramma tradotto con geometria conservata, non prova di esecuzione."><figcaption><p>Esempio di ordinazione dei materiali con ruoli distinti per fornitore, acquisti INFOR, IDM, DocBits e contabilità. L’archiviazione illustrata appartiene a IDM. Diagramma tradotto con geometria conservata, non prova di esecuzione.</p></figcaption></figure>
 
-1. **Ordinazione dei Materiali**
-   * Avvia l'ordine con il fornitore.
-   * Invia l'ordine al fornitore tramite INFOR.
-2. **Ricezione della Conferma d'Ordine**
-   * Il fornitore conferma la ricezione dell'ordine.
-   * Creazione e invio della conferma d'ordine.
-3. **Ricevimento e Ispezione delle Merci**
-   * Ricevi le merci dal fornitore.
-   * Registra il ricevimento merci in INFOR e verifica rispetto alla bolla di consegna.
-4. **Elaborazione della Fattura**
-   * Ricevi la fattura e inviala a DocBits per l'elaborazione.
-   * Controlla e verifica i dettagli della fattura con l'ordine e il ricevimento merci.
-5. **Passaggi Finali**
-   * Archivia l'ordine e i documenti correlati in DocBits.
-   * Aggiorna INFOR con i dettagli della transazione per la contabilità finanziaria.
+## Ordine e conferma
 
-### Punti Decisionali e Azioni
+Acquisti crea l’ordine e lo invia al fornitore. L’ordine viene archiviato nella corsia **IDM**. Il fornitore verifica la possibilità di consegna e prepara una conferma; se serve, riesamina l’ordine e concorda modifiche.
 
-* **Le merci ricevute corrispondono all'ordine?**
-  * Sì: prosegui con l'elaborazione della fattura.
-  * No: è necessario un controllo e un aggiornamento manuali.
-* **La fattura è corretta in base alle merci ricevute e ai dettagli dell'ordine?**
-  * Sì: completa la transazione e aggiorna i registri finanziari.
-  * No: sono necessari ulteriori esami e correzioni.
+DocBits riceve la conferma e il processo valuta se il confronto con l’ordine sia automatizzabile. In caso contrario è previsto un controllo dell’operatore sui dati OCR. La conferma viene archiviata in **IDM**, mentre acquisti mantiene conferma e termine di consegna.
 
-### Punti di Integrazione
+## Consegna e ricezione merci
 
-* **INFOR ERP**: sistema principale per l'elaborazione degli ordini, il ricevimento merci e la contabilità finanziaria.
-* **DocBits**: gestione documentale per l'elaborazione e l'archiviazione di fatture e conferme d'ordine.
+Il fornitore prepara componenti, documento di trasporto e fattura, quindi spedisce la merce. Acquisti registra la ricezione merci e la confronta con il documento di trasporto. Le differenze richiedono il controllo e l’eventuale correzione prevista dal processo prima della trasmissione a DocBits.
 
-### Note
+## Fattura e contabilità
 
-* Assicurati che tutti i documenti siano verificati e archiviati per la conservazione dei registri.
-* Le discrepanze nei dettagli dell'ordine o della fattura devono essere risolte tempestivamente per evitare ritardi.
+La fattura viene inviata a DocBits e il processo collega l’elaborazione ai dati di consegna e ricezione. Il passaggio verso la contabilità e il nodo di flusso di cassa rappresentano fasi del processo complessivo: il diagramma non certifica registrazioni o pagamenti automatici.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+## Verifica dell’integrazione
+
+Controlla ruoli, associazioni tra documenti, risultati dei confronti e gestione degli errori nell’ambiente reale. Questo diagramma tradotto conserva forme e collegamenti della sorgente; non è una prova di esecuzione e non attribuisce a DocBits l’archiviazione mostrata nella corsia IDM.

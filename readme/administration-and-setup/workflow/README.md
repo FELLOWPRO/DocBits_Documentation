@@ -98,12 +98,12 @@ Il Motore di Workflow DocBits opera su un principio di base ma potente che rende
 * **Definizione**: Il componente "When" (Quando) rappresenta il _Trigger_ del flusso di lavoro. Questo è l'evento o la condizione che avvia l'esecuzione del flusso di lavoro. I trigger possono essere una varietà di occorrenze come l'arrivo di una nuova email, una data e un'ora specifiche o la creazione di un nuovo documento.
 * **Esempio**: "Quando viene inviato un nuovo modulo cliente..."
 
-#### [And](./#and-condition) (Condizione)
+#### [And](./#and-condizione) (Condizione)
 
 * **Definizione**: Il componente "And" (E) introduce la _Condizione_ che deve essere soddisfatta affinché l'azione proceda. Le condizioni servono come filtri o criteri che affinano il trigger, garantendo che il flusso di lavoro venga eseguito solo in determinate circostanze.
 * **Esempio**: "...e il cliente proviene dal segmento 'Enterprise'..."
 
-#### [Then](./#then-action) (Azione)
+#### [Then](./#then-azione) (Azione)
 
 * **Definizione**: Infine, la parte "Then" (Allora) specifica l'_Azione_ da intraprendere una volta che si verifica il trigger e la condizione è soddisfatta. Le azioni sono i compiti o le operazioni eseguiti dal flusso di lavoro, come l'invio di un'email, l'aggiornamento di un database o la creazione di un'attività in uno strumento di gestione dei progetti.
 * **Esempio**: "...allora assegna il lead al team di vendita enterprise e invia un'email di benvenuto."

@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-01-nl-20261023.png" alt="Logica Stuur HTTPS-verzoek naar URL met headers: Kopteksten , methode: Methode , parameter: Parameters , gegevens: data en de ontvangende statuscode is in status code" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

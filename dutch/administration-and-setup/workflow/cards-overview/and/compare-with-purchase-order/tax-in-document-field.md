@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-04-nl-20261023.png" alt="Vergelijk met inkooporder De belasting in het documentveld Veldnaam is Operator voor de belasting in de inkooporder met kosten-ID in tabel Stamgegevenstabel met toleranties Tolerantiebedrag Tolerantietype ." width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

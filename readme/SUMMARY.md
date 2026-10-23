@@ -153,7 +153,7 @@
       * [Configurazione dell'Identity Service Provider](administration-and-setup/settings/global-settings/integration/identity-service-provider-configuration.md)
       * [Buone pratiche](administration-and-setup/settings/global-settings/integration/best-practices.md)
       * [Risoluzione dei problemi comuni](administration-and-setup/settings/global-settings/integration/troubleshooting-common-issues.md)
-    * [Tipi di documenti](administration-and-setup/settings/global-settings/document-types/README.md)
+    * [Tipi di documento](administration-and-setup/settings/global-settings/document-types/README.md)
       * [Duplicare una regola di convalida personalizzata](administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md)
       * [Scopo e ambito](administration-and-setup/settings/global-settings/document-types/purpose-and-scope.md)
       * [Aggiungere/Modificare Tipi di Documenti](administration-and-setup/settings/global-settings/document-types/adding-editing-document-types.md)

@@ -1,5 +1,9 @@
 # Datum oder Uhrzeit prüfen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-14-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-14-admin/v1/de.html).
+
 Die Karte **Date or Time** (`condition_time_is_isnot_between`, Version 2) vergleicht die aktuelle Ausführungszeit mit zwei eingetragenen Grenzen. Im geprüften Dev-Stand stammt diese Zeit aus UTC. Das auf einem Rechnungsbeleg erkannte Einreichungs- oder Rechnungsdatum wird durch diese Karte nicht automatisch ausgewählt.
 
 Für den Vergleich zweier Dokumentfelder verwenden Sie eine passende Feldvergleichskarte. Ein Zeitfenster löst außerdem keinen Workflow selbstständig aus: Die Karte wird geprüft, wenn ein Workflow gestartet wird und diesen Knoten erreicht.

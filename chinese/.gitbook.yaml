@@ -104,3 +104,18 @@ redirects:
     zui-zhong-yong-hu-yu-he-zuo-huo-ban/end-user-section/web-address-changes: end-user-and-partner-section/end-user-section/web-address-changes.md
     zui-zhong-yong-hu-yu-he-zuo-huo-ban/partner-section: end-user-and-partner-section/partner-section/README.md
     zui-zhong-yong-hu-yu-he-zuo-huo-ban/partner-section/invoice-automation-testing-with-docbits: end-user-and-partner-section/partner-section/invoice-automation-testing-with-docbits.md
+    guan-li-yu-she-zhi/workflow/workflow-execution-model: administration-and-setup/workflow/workflow-execution-model.md
+    guan-li-yu-she-zhi/workflow/status-and-reentry: administration-and-setup/workflow/masterclass/status-and-reentry.md
+    guan-li-yu-she-zhi/workflow/advanced-workflow-case-study: administration-and-setup/workflow/advanced-workflow-case-study.md
+    guan-li-yu-she-zhi/workflow/workflow-training-kit: administration-and-setup/workflow/workflow-training-kit.md
+    guan-li-yu-she-zhi/workflow/field-conditions: administration-and-setup/workflow/masterclass/field-conditions.md
+    guan-li-yu-she-zhi/workflow/tolerances-and-po: administration-and-setup/workflow/masterclass/tolerances-and-po.md
+    guan-li-yu-she-zhi/workflow/decision-table-routing: administration-and-setup/workflow/masterclass/decision-table-routing.md
+    guan-li-yu-she-zhi/workflow/assignment-task-sequential: administration-and-setup/workflow/masterclass/assignment-task-sequential.md
+    guan-li-yu-she-zhi/workflow/control-nodes: administration-and-setup/workflow/masterclass/control-nodes.md
+    guan-li-yu-she-zhi/workflow/run-workflow: administration-and-setup/workflow/masterclass/run-workflow.md
+    guan-li-yu-she-zhi/workflow/table-calculations: administration-and-setup/workflow/masterclass/table-calculations.md
+    guan-li-yu-she-zhi/workflow/api-response-contract: administration-and-setup/workflow/masterclass/api-response-contract.md
+    guan-li-yu-she-zhi/workflow/export-lifecycle: administration-and-setup/workflow/masterclass/export-lifecycle.md
+    guan-li-yu-she-zhi/workflow/workflow-troubleshooting: administration-and-setup/workflow/workflow-troubleshooting.md
+    guan-li-yu-she-zhi/workflow/card-reference-standard: administration-and-setup/workflow/card-reference-standard.md

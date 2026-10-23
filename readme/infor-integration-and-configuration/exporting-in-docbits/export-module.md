@@ -14,7 +14,7 @@ La página de Exportación muestra todas las configuraciones de exportación con
 
 Puedes encontrarlo en: **Configuración** → **Procesamiento de Documentos** → **Exportación**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fn6ldlcI2sVUEgDdWb9U4%252Fimage.png%3Falt%3Dmedia%26token%3D8368818d-c899-4bee-ad21-a631d6be5c20\&width=768\&dpr=4\&quality=100\&sign=fbfcbd0c\&sv=2)
+![Página Export Configuration en los ajustes de DocBits con los campos de Basic Information y las áreas de carga del archivo de la API de ION y del TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fn6ldlcI2sVUEgDdWb9U4%252Fimage.png%3Falt%3Dmedia%26token%3D8368818d-c899-4bee-ad21-a631d6be5c20\&width=768\&dpr=4\&quality=100\&sign=fbfcbd0c\&sv=2)
 
 Para obtener instrucciones detalladas sobre cómo configurar cada tipo de exportación, incluidas capturas de pantalla y descripciones de campos, visita la guía completa:
 

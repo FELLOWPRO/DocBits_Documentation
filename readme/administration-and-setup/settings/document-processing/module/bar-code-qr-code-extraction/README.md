@@ -21,7 +21,7 @@ Siga estos pasos para activar la función:
        \
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt="Página de búsqueda de configuración con entradas de Orden de compra, incluido Cuadro de mandos PO y la exportación automática cuando el PO coincide al 100%"><figcaption></figcaption></figure>
 
 ## **Tipos de código admitidos**
 

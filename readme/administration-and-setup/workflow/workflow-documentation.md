@@ -6,11 +6,11 @@ Para mantener una visión general, puede asignar a los flujos de trabajo diferen
 
 Cree un nuevo flujo de trabajo: Haga clic en + ADD WORKFLOW
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Lienzo del Workflow Builder con la plantilla Test Simple Workflow, tres filas Wenn, Und y Dann y un botón Karte hinzufügen debajo de cada una](<../../.gitbook/assets/workflow_add_button.png>)
 
 Puede utilizar estos flujos de trabajo (Test 1,2,3) para asignar automáticamente diversos documentos al empleado adecuado de la empresa.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Panel de Workflow List con la fila Test Simple Workflow y las columnas Name, Type, Workflow Execution Order, Updated By, Created On y Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Si una factura u otro documento supera un determinado importe total que requiere revisión y aprobación previas, estos documentos pueden asignarse de inmediato a la persona correcta.
 
@@ -106,7 +106,7 @@ También es posible introducir el estado en el flujo de trabajo, de modo que la 
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-es.png" alt="Acción de cambio de estado en un flujo sin guardar."><figcaption><p>Acción de cambio de estado en un flujo sin guardar.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt="Creador de flujos de trabajo con tres tarjetas de lógica que asignan documentos por responsable y tipo de documento al Invoice reviewer, Delivery-note reviewer y Order reviewer"><figcaption></figcaption></figure>
 
 Por ejemplo, si a un documento le falta información concreta o importante, pero esta es relevante y debe incluirse para su procesamiento posterior, puede configurar el flujo de trabajo de modo que estos documentos se reenvíen de inmediato al comprador y a un sustituto (suplente).
 
@@ -143,7 +143,7 @@ Esta tarjeta de lógica es vital para garantizar que los detalles de una confirm
 
 Si tiene un cálculo diferente para los recargos, o solo los aplica a algunos artículos, puede utilizar las tarjetas genéricas de cálculo de tablas; algunas de ellas también permiten filtrar mediante expresiones regulares.
 
-<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt="Tarjeta de cálculo para la columna MTZ con una regla Material Surcharge y un filtro regex de Item Number para números de artículo que empiezan por 01, 06, 9, 001 o 000"><figcaption></figcaption></figure>
 
 Arriba se muestra un ejemplo de cálculo para MTZ con un filtro para los números de artículo que empiezan por 01, 06, 9, 001 o 000.
 
@@ -151,7 +151,7 @@ Con una configuración manual, se recomienda dividir los cálculos que dependen 
 
 **Ejecutar el flujo**
 
-<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt="Tarjeta Run workflow Mtz Into Discount del creador de flujos de trabajo con una sección Conditions para ejecutar un flujo de trabajo posterior"><figcaption></figcaption></figure>
 
 Con esta tarjeta puede especificar el nombre de un flujo de trabajo que debe ejecutarse después del flujo de trabajo actual si se cumplen sus condiciones, y después de las tarjetas "then" anteriores del flujo de trabajo actual. Aunque da prioridad a los flujos de trabajo ejecutables y activos, también permite ejecutar flujos de trabajo desactivados si el documento cumple las condiciones de dichos flujos.
 

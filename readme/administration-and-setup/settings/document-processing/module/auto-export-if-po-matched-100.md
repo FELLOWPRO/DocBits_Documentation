@@ -20,7 +20,7 @@ Al activarla, se comprueba el resultado de la conciliación del documento actual
    * Vaya a **Configuración** → **Procesamiento de documentos** → **Módulo** → **Pedido de compra**.
    * Active el control **Auto Export if PO matched 100%**.
 
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/100%PO.png" alt="Página de configuración con la navegación Procesamiento de documentos y la tabla de exportación que muestra las columnas Tipo, Suborganizaciones y Actions"><figcaption></figcaption></figure>
 
 2. **Supervisar el procesamiento:**
    * Revise los estados de conciliación, validación y exportación de la factura actual.

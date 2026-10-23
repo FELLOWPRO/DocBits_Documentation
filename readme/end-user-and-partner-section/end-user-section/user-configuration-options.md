@@ -5,7 +5,7 @@ Para configurar tus ajustes, haz clic en el Icono de Usuario ubicado en la esqui
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
 
-<figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config.png" alt="Columna estrecha del menú de usuario en DocBits con el interruptor del modo oscuro, la selección de idioma y la opción de cerrar sesión"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/prior-u031-es.png" alt="Menú de usuario y selección del idioma."><figcaption><p>Menú de usuario y selección del idioma.</p></figcaption></figure>
 
@@ -32,7 +32,7 @@ En esta sección, puedes ajustar las siguientes preferencias:
 * **Tamaño de Letra:** Ajusta el tamaño del texto para una mejor legibilidad.
 * **Dual Monitor Mode:** Habilita esta función si estás utilizando dos monitores.
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3.png" alt="Diálogo Edit User con el patrón de fecha %d.%m.%Y, el formato de importe Deutsch, el tamaño de fuente de pequeño a grande, los campos de nombre Max Mustermann, el modo de monitor dual y los campos de contraseña"><figcaption></figcaption></figure>
 
 **Cerrar Sesión**
 

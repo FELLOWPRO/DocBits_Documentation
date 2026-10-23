@@ -24,7 +24,7 @@ Il video utilizza un normale utente di test e documenti sintetici. Il completame
 
 <figure><img src="../../.gitbook/assets/customer-overview-it-b4f434add43a.png" alt="Panoramica delle attività con dati sintetici. Open resta in inglese nella colonna iniziale della versione illustrata; il completamento di un’attività è distinto dall’approvazione o esportazione della fattura. Immagine conservata, non una nuova esecuzione durante questa revisione."><figcaption><p>Panoramica delle attività con dati sintetici. Open resta in inglese nella colonna iniziale della versione illustrata; il completamento di un’attività è distinto dall’approvazione o esportazione della fattura. Immagine conservata, non una nuova esecuzione durante questa revisione.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/customer-find-it-b4f434add43a.png" alt="Elenco delle attività con dati dimostrativi sintetici."><figcaption><p>Elenco delle attività con dati dimostrativi sintetici.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-find-it-b4f434add43a.png" alt="Elenco delle attività con dati dimostrativi sintetici. I valori Open e high restano in inglese nella versione illustrata. Immagine conservata da una pubblicazione indipendente; questa revisione non ha eseguito nuove attività."><figcaption><p>Elenco delle attività con dati dimostrativi sintetici. I valori Open e high restano in inglese nella versione illustrata. Immagine conservata da una pubblicazione indipendente; questa revisione non ha eseguito nuove attività.</p></figcaption></figure>
 
 ## Registrazione aggiuntiva
 

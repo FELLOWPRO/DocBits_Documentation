@@ -1,6 +1,6 @@
 # Export with alternate Export
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-03-pl-20261023.png" alt="Eksport Dokument eksportowy z alternatywnym eksportem" width="563"><figcaption></figcaption></figure>
 
 ## **Cel**
 

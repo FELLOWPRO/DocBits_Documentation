@@ -1,8 +1,8 @@
 # Any / All Unit Price is
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-13-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Dowolny/Wszystkie cena jednostkowa wynosi Operator od zamówienia zakupu, z tolerancją Ilość tolerancji Typ tolerancji . Porównaj jako Dane porównawcze" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-13-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Dowolny/Wszystkie cena jednostkowa wynosi Operator od zamówienia zakupu, z tolerancją Ilość tolerancji Typ tolerancji . Porównaj jako Dane porównawcze" width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

@@ -46,6 +46,6 @@ Une fois terminé, recherchez l'API appelée master\_data\_lookup/import\_data e
 
 ### data\_type doit être costing\_element
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8UD4FhFv2dRB4cMjCDL4G9ndjH7laVMKWqdeMaJGgEo48-UVvucB1uOydzNdfFy0yPM5bb66mZB4k9uJR7TTiEREGFaV2EqW01gxJpTyuUfGNh5QmBjySkyhZ56gWV8sYs8WI5RnHcENtXgjTU0vg0Q\&width=768\&dpr=4\&quality=100\&sign=7c9f4dbb\&sv=2)
+![Formulaire Import Data pour les éléments de coût avec les champs data_type, file, delimiter, on_conflict, replace_all et auto_generate_id et le bouton Cancel](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8UD4FhFv2dRB4cMjCDL4G9ndjH7laVMKWqdeMaJGgEo48-UVvucB1uOydzNdfFy0yPM5bb66mZB4k9uJR7TTiEREGFaV2EqW01gxJpTyuUfGNh5QmBjySkyhZ56gWV8sYs8WI5RnHcENtXgjTU0vg0Q\&width=768\&dpr=4\&quality=100\&sign=7c9f4dbb\&sv=2)
 
 Si cela est fait correctement, le tableau M3CostingElement devrait maintenant être dans votre environnement DocBits. L'extraction de tableau pour les éléments de coût a maintenant été configurée pour votre environnement.

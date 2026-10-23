@@ -1,6 +1,6 @@
 # Dokumenttyp aus einer Liste
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjKuMuMzIj26NMq60lKOZ%252Fimage.png%3Falt%3Dmedia%26token%3D02ce1a72-99ad-4b6f-a53a-476e46cc645d\&width=768\&dpr=2\&quality=100\&sign=99a9ad41\&sv=2)
+![Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjKuMuMzIj26NMq60lKOZ%252Fimage.png%3Falt%3Dmedia%26token%3D02ce1a72-99ad-4b6f-a53a-476e46cc645d\&width=768\&dpr=2\&quality=100\&sign=99a9ad41\&sv=2)
 
 ## **Zweck:**
 

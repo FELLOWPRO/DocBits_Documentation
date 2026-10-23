@@ -22,22 +22,22 @@ Die **Anleitung zur Einrichtung von Kostenelementen in DocBits** finden Sie hier
 1. Öffnen Sie **Settings → Document Processing → Classification and Extraction → Table Extraction**.
 2. Aktivieren Sie **Costing Element Extraction**.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt="Einstellungsseite auf Deutsch mit geöffnetem Classification and Extraction, den Tabs classification rules und AI models sowie der Meldung no records found"><figcaption></figcaption></figure>
 
 ### **Klassifizierung festlegen oder ändern**
 
 1.  Klicken Sie auf das **Kästchensymbol** neben der Position.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt="Einstellungsseite auf Deutsch mit geöffnetem Classification and Extraction, den Tabs classification rules und AI models sowie der Meldung no records found"><figcaption></figcaption></figure>
 2.  Ein **Auswahlmenü** mit allen konfigurierten Kostenelementen erscheint.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt="Einstellungsseite auf Deutsch mit geöffnetem Classification and Extraction, den Tabs classification rules und AI models sowie der Meldung no records found"><figcaption></figcaption></figure>
 3.  Wählen Sie den passenden **Kostenelementtyp** aus.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt="Einstellungsseite auf Deutsch mit geöffnetem Classification and Extraction, den Tabs classification rules und AI models sowie der Meldung no records found"><figcaption></figcaption></figure>
 4. Die Klassifizierung wird entsprechend aktualisiert.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt="Einstellungsseite auf Deutsch mit geöffnetem Classification and Extraction, den Tabs classification rules und AI models sowie der Meldung no records found"><figcaption></figcaption></figure>

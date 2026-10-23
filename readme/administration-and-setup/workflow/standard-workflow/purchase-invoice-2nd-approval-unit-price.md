@@ -1,6 +1,6 @@
 # Eingangsrechnung – zweite Stückpreisgenehmigung
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09 (1).png" alt="Document list table view with column headers, filter toolbar, and rows of processed invoice entries"><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel zur Verwaltung der zweiten Genehmigungsphase einer Einkaufsrechnung eingerichtet ist, mit einem besonderen Schwerpunkt auf der Validierung des Stückpreises.
 

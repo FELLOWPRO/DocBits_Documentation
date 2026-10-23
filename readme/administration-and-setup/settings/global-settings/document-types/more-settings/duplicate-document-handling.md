@@ -12,10 +12,10 @@ Um die Erkennung von doppelten Dokumenten in **DocBits** zu aktivieren, befolgen
 
 1.  Navigieren Sie zu **Einstellungen** → **Globale Einstellungen** → **Dokumenttypen**.
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_1_de.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_1_de.png" alt="Global settings Seitenleiste auf Deutsch mit den Menüeinträgen Firmeninformationen, Dokumenttypen, E-Mail Benachrichtigung und E-Mail-Vorlagen"><figcaption></figcaption></figure>
 2.  Wählen Sie den gewünschten **Dokumenttyp** aus und klicken Sie auf **Weitere Einstellungen**.
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_2_de.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_2_de.png" alt="Document types Seite auf Deutsch mit den Einträgen Invoice, Credit Note, Delivery Note, Order Confirmation und Contract sowie Layout-Bearbeitung und Extraction Type Umschaltern"><figcaption></figcaption></figure>
 3.  Gehen Sie zum Abschnitt **Erkennung von Duplikaten**.
 
     <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-de.png" alt="Deutsche Einstellungen zur Erkennung doppelter Dokumente."><figcaption><p>Deutsche Einstellungen zur Erkennung doppelter Dokumente.</p></figcaption></figure>
@@ -50,7 +50,7 @@ Sobald die **Erkennung von Duplikaten** aktiviert ist, stehen zwei Dropdown-Men�
 
     <mark style="color:red;">**Hinweis**</mark>: Ein 3-Monats-Intervall wird empfohlen, um eine optimale Leistung sicherzustellen. Die Auswahl eines längeren Intervalls kann zu langsameren Ladezeiten des Dashboards führen.
 
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_6.png" alt="More Settings Bereich zur Duplikaterkennung mit Duplicate Detection Interval auf 3 Months und Dropdowns für Duplicate Invoice Detection"><figcaption></figcaption></figure>
 
 ## Anzeigen doppelter Dokumente im Dashboard
 
@@ -63,4 +63,4 @@ Sobald die **Erkennung von Duplikaten** aktiviert ist, wird bei allen als Duplik
 
 *   Beim Anzeigen eines gekennzeichneten Dokuments erscheint oben eine Warnleiste, die darauf hinweist, dass das Dokument ein Duplikat ist.
 
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_5_de.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_5_de.png" alt="Rechnungsansicht mit dem Panel RECHNUNGS-DETAILS und den Feldern Rechnungsdatum, Rechnungsnummer, Liefertermin und ZAHLUNGSDETAILS"><figcaption></figcaption></figure>

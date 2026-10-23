@@ -10,7 +10,7 @@ Lieferantenstammdaten erreichen DocBits normalerweise automatisch über Ihren IO
 
 Es gibt zwei Endpunkte, und sie tun dasselbe. Der einzige Unterschied liegt darin, wie Sie den BOD übergeben:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-endpoints.png)
+![Swagger-Endpunktliste mit Import Supplier Bod und Import Supplier Bod Xml](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-endpoints.png)
 
 | Endpunkt | Wann Sie ihn verwenden |
 | --- | --- |
@@ -27,7 +27,7 @@ Sie benötigen:
 * **Den BOD** — eine `SyncSupplierPartyMaster`- oder `SyncRemitToPartyMaster`-XML-Datei oder deren Inhalt.
 * **Ihre Org ID**, aus **Settings → Integration & SSO** im Abschnitt **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Felder Org ID und Sub Org ID, ausgefüllt mit Beispiel-UUID-Werten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** zeigt diejenige Unterorganisation, die in der Kopfzeile ausgewählt ist. Mit **CROSS** — der Ansicht über alle Unterorganisationen hinweg — zeigt sie denselben Wert wie **Org ID**. Wechseln Sie zuerst zu einer bestimmten Unterorganisation, wenn Sie deren ID benötigen.
@@ -60,20 +60,20 @@ Alles unter **import** ist gesperrt, bis Sie autorisieren. Zwei Dinge sind einzu
 
 * Klicken Sie auf das **Schlosssymbol** rechts neben dem Endpunkt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-lock.png)
+![Endpunkt-Leiste Import Supplier Bod mit dem Schloss-Symbol daneben](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-lock.png)
 
 * Der Dialog **Available authorizations** öffnet sich mit zwei Einträgen.
 * Fügen Sie Ihre **Org ID** in **X-ORG-ID** ein und klicken Sie auf **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Dialog Available authorizations mit dem Header-Feld X-ORG-ID, das den Wert der Organisations-ID zeigt](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![Dialog Available authorizations mit dem als Authorized markierten Headereintrag X-ORG-ID](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Scrollen Sie zu **X-API-KEY**, fügen Sie Ihren API Key ein und klicken Sie auf **Authorize**. In DocBits finden Sie ihn unter **Settings → Integration & SSO** im Abschnitt **API Key**, oder Sie [erstellen einen neuen Key](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#einen-api-key-erstellen).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Dialog Available authorizations mit dem Header-Feld X-API-KEY, das auf den Wert des API-Schlüssels wartet](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![Dialog Available authorizations mit dem als Authorized markierten Headereintrag X-API-KEY](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Klicken Sie auf **Close**.
 
@@ -83,13 +83,13 @@ Fügen Sie den Key für sich allein ein — schreiben Sie kein `Bearer` davor. B
 
 ### 3. Die Felder ausfüllen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout.png)
+![Endpunkteintrag Supplier Bod in Swagger mit Try it out und ohne Parameter](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout.png)
 
 Klicken Sie auf **Try it out** und füllen Sie dann das Formular für den gewählten Endpunkt aus.
 
 #### Eine Datei hochladen — `/import/supplier_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-bod-form.png)
+![Anforderungstext-Formular mit org_id, sub_org_id, der ausgewählten Datei supplier-partymaster-sample.xml und custom_fields_mapping](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-bod-form.png)
 
 | Feld | |
 | --- | --- |
@@ -142,7 +142,7 @@ Prüfen Sie vor dem Ausführen, auf welche Umgebung und welche Organisation Sie 
 
 Prüfen Sie vor dem Ausführen das Dropdown **Servers** unten im Formular. Es entscheidet, an welche Umgebung der Request tatsächlich gesendet wird, und kann von der geöffneten Seite abweichen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![Dropdown Servers am unteren Rand des Formulars mit dem Hinweis, dass Optionen auf Operationsebene globale Serveroptionen überschreiben](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
 
 Klicken Sie auf **Execute**. Ein erfolgreicher Import liefert:
 
@@ -153,7 +153,7 @@ Klicken Sie auf **Execute**. Ein erfolgreicher Import liefert:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-response.png)
+![Execute-Ergebnis von Supplier BOD mit dem curl-Befehl und einem 200-Antworttext mit Erfolgsmeldung](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-response.png)
 
 Supplier BODs werden verarbeitet, während Sie warten — wenn Sie diese Meldung sehen, sind die Daten also bereits da.
 

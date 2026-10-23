@@ -8,7 +8,7 @@ Benötigen Sie ein Zertifikat für Ihr Beschaffungs-, Sicherheits- oder Complian
 
 ## 1. ISO/IEC 27001
 
-<figure><img src="../../.gitbook/assets/ISO27001.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ISO27001.png" alt="ISO 27001-Zertifizierungsabzeichen für ein Informationssicherheits-Managementsystem mit dem ISO 27001-Logo"><figcaption></figcaption></figure>
 
 Dieser internationale Standard definiert die Anforderungen für den Aufbau, die Umsetzung, die Aufrechterhaltung und die kontinuierliche Verbesserung eines Informationssicherheits-Managementsystems (ISMS). Er hilft Organisationen, Daten auf systematische und kosteneffiziente Weise zu schützen, einschließlich Prozessen für das Risikomanagement und Kontrollen zur Informationssicherheit.
 
@@ -20,7 +20,7 @@ Dieser internationale Standard definiert die Anforderungen für den Aufbau, die 
 
 ## 2. SOC 1 (Service Organization Control 1)
 
-<figure><img src="../../.gitbook/assets/SOC1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SOC1.png" alt="SOC 1-Zertifizierungsabzeichen, das einen Service Organization Control 1-Bericht zu internen Kontrollen der Finanzberichterstattung kennzeichnet"><figcaption></figcaption></figure>
 
 SOC-1-Berichte sind für Organisationen konzipiert, die die Wirksamkeit interner Kontrollen über die Finanzberichterstattung nachweisen müssen. Sie sind besonders relevant für Dienstleister, die die Finanzberichterstattung ihrer Kunden beeinflussen.
 
@@ -32,7 +32,7 @@ SOC-1-Berichte sind für Organisationen konzipiert, die die Wirksamkeit interner
 
 ## 3. SOC 2 (Service Organization Control 2)
 
-<figure><img src="../../.gitbook/assets/SOC2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SOC2.png" alt="SOC 2-Zertifizierungsabzeichen, das einen Service Organization Control 2-Bericht zu Sicherheit, Verfügbarkeit und Vertraulichkeit kennzeichnet"><figcaption></figcaption></figure>
 
 SOC 2 konzentriert sich auf die Kontrollen einer Dienstleistungsorganisation in Bezug auf Sicherheit, Verfügbarkeit, Verarbeitungsintegrität, Vertraulichkeit und Datenschutz der Daten. Es ist entscheidend für Technologie- und Cloud-Computing-Unternehmen, die mit sensiblen Informationen umgehen.
 
@@ -44,7 +44,7 @@ SOC 2 konzentriert sich auf die Kontrollen einer Dienstleistungsorganisation in 
 
 ## 4. DSGVO (Datenschutz-Grundverordnung) – Konformität
 
-<figure><img src="../../.gitbook/assets/GDPR.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GDPR.png" alt="DSGVO-Konformitätsabzeichen mit dem EU-Sternenring, das die Konformität mit der EU-Datenschutzgrundverordnung kennzeichnet"><figcaption></figcaption></figure>
 
 Die DSGVO ist eine Verordnung im EU-Recht zum Datenschutz und zur Privatsphäre in der Europäischen Union und im Europäischen Wirtschaftsraum. Sie regelt auch die Übermittlung personenbezogener Daten außerhalb der EU und des EWR.
 

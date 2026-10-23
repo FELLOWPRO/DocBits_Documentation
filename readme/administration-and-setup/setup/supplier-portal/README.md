@@ -12,10 +12,10 @@ Diese Seite erklärt, wie man das **Lieferanten-Portal** aktiviert und nutzt, so
 
 1.  Gehen Sie zu **Einstellungen → Verarbeitung von Dokumenten → Module**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
+    ![Einstellungsseite von DocBits mit geöffnetem Menü Document Processing und den Einträgen Module, Export, OCR Settings sowie Classification and Extraction](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
 2.  Aktivieren Sie im Abschnitt **Versand & Lieferant** die Option **Lieferanten-Portal**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+    ![Einstellungsseite Modules in DocBits mit dem Abschnitt Shipping & Supplier und der Option Supplier Portal](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
 
 ## Einstellungen des Lieferanten
 
@@ -39,7 +39,7 @@ Eine detaillierte Anleitung zu allen Einstellungen des Lieferanten finden Sie [h
 
 Sie können auf das **Dashboard für Lieferanten** über das linke Menü zugreifen, wie unten gezeigt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+![Supplier Dashboard in DocBits mit den Zahlen zu All Supplier, Pending Approval und Pending Registration und einer Tabelle mit Test Supplier-Zeilen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
 
 Alle von Ihnen erstellten Lieferanten werden hier angezeigt.
 
@@ -55,11 +55,11 @@ einzugrenzen.
 
 Sie können auch angeben, wie viele Lieferanten pro Seite angezeigt werden sollen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+![Filterbereich des Supplier Dashboards mit Supplier Groups, Status, Created On, Supplier Per Page und einer Schaltfläche Clear Filters](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
 
 Zusätzlich können Sie schnell nach den Status **Genehmigung ausstehend** oder **Anstehende Registrierung** filtern, indem Sie auf die entsprechende Kategorie links von der Filterleiste klicken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+![Dashboard document table with Document name, Imported on, Type, Status, Assigned to, Pages and Invoice number columns](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
 ## Status der Lieferanten
 
@@ -79,26 +79,26 @@ Rechts von der Suchleiste finden Sie mehrere Werkzeuge, die Ihnen helfen, mit de
 
 ### Dashboard aktualisieren <a href="#refresh-table" id="refresh-table"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+![Tabelle Supplier Dashboard in DocBits mit der Schaltfläche zum Aktualisieren der Tabelle in der oberen Symbolleiste](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
 
 Klicken Sie auf diese Schaltfläche, um das Dashboard zu aktualisieren und die aktuellsten Daten und Status zu laden.
 
 ### Tabellenspalten für die Organisation festlegen <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
+![Supplier-Dashboard-Tabelle in DocBits mit der Schaltfläche zum Festlegen der Tabellenspalten in der oberen Symbolleiste](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
 
 Klicken Sie auf diese Schaltfläche, um ein Menü zu öffnen, in dem Sie die Sichtbarkeit der Spalten in der Bestelltabelle verwalten können. Verwenden Sie die Kontrollkästchen und Pfeiltasten, um Spalten zwischen den sichtbaren und versteckten Abschnitten zu verschieben. Sie können auch Spalten durch Ziehen und Ablegen der Spaltennamen neu anordnen. Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
+![Menü Columns settings für die Lieferantentabelle mit ausgeblendeten Spalten wie Supplier Number, Status und Created On sowie den Schaltflächen Cancel und Done](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
 
 ### Analytik <a href="#analytics" id="analytics"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
+![Supplier Dashboard in DocBits mit den Registerkarten All Supplier, Pending Approval und Pending Registration sowie der Lieferantentabelle mit den Spalten Supplier Name und Status](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
 
 Durch Klicken auf diese Schaltfläche wird ein neuer Abschnitt geöffnet, der zeigt, wie viele Lieferanten kurz vor dem Ablauf stehen und wann.\
 Klicken Sie auf eine beliebige Kategorie, um einen Filter anzuwenden und nur diese Lieferanten anzuzeigen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
+![Analysebereich des Supplier Dashboards mit Expired (13) und Ablauf-Zahlen für 1 Month, 6 Month und 1 Year](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
 
 ## Lieferanten erstellen und Registrierungs-E-Mail senden
 
@@ -106,10 +106,10 @@ Klicken Sie auf eine beliebige Kategorie, um einen Filter anzuwenden und nur die
 
 1.  Klicken Sie auf das Pluszeichen (+) in der oberen rechten Ecke.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
+    ![Supplier Dashboard in DocBits mit den Registerkarten All Supplier, Pending Approval und Pending Registration sowie der Lieferantentabelle mit den Spalten Supplier Name und Status](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
 2.  Füllen Sie die erforderlichen Felder aus und klicken Sie dann auf **Speichern**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
+    ![Formular Add Supplier in DocBits mit den Feldern Supplier Group, Supplier Name, Supplier Responder und Payment Terms sowie den Schaltflächen Cancel und Save](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
 3. Der Lieferant erhält automatisch eine E-Mail mit einem Link zur Erstellung seines Kontos.
 
 ### **Um eine Registrierungs-E-Mail an einen bestehenden Lieferanten zu senden:**
@@ -118,11 +118,11 @@ Klicken Sie auf eine beliebige Kategorie, um einen Filter anzuwenden und nur die
 2. Klicken Sie auf das Drei-Punkte-Menü in der Spalte **Aktionen**.
 3.  Wählen Sie **Magic Link**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
+    ![Supplier Dashboard in DocBits mit geöffnetem Zeilenmenü und der Option Magic Link](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
 4. Überprüfen Sie die Details des Lieferanten.
 5.  Klicken Sie auf **Senden**, um den Registrierungslink per E-Mail zu versenden.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
+    ![Bestätigungsbereich Magic Link in DocBits mit den Details zu Supplier Group, Supplier Name und Supplier Responder sowie den Schaltflächen Cancel und Send](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
 
 ## Wie funktioniert der Registrierungsprozess für den Lieferanten?
 

@@ -34,7 +34,7 @@ Wenn das **Automatic Matching** auf **Match to Purchase Receipt** eingestellt is
 
 Es sollte wie folgt aussehen:
 
-<figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (328).png" alt="LN-Mapping-Datei mit dem Feld IRF_PackingSlip auf TF_packing_slip gesetzt und PackingSlip zu InvoiceReceiptFields hinzugefügt"><figcaption></figcaption></figure>
 
 
 

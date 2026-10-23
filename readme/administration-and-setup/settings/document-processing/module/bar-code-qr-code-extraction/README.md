@@ -21,7 +21,7 @@ Folgen Sie diesen Schritten, um die Funktion zu aktivieren:
        \
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt="Einstellungs-Suchseite mit Einträgen zu PO-Abgleich, darunter PO-Dashboard, PO-Versandauftrag, Auto Accounting und Vertex Tax Integration"><figcaption></figcaption></figure>
 
 ## **Unterstützte Code-Typen**
 

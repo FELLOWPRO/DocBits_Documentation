@@ -1,6 +1,6 @@
 # Unterhalb des Höchstbetrags
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55 (1).png" alt="Einstellungen Allgemein page listing the permission toggles Wer kann Dokumente hochladen, Wer kann Daten hochladen, Wer kann validieren und exportieren"><figcaption></figcaption></figure>
 
 Dieser Titel legt nahe, dass die eingerichtete Regel oder Bedingung dafür ausgelegt ist, Rechnungen zu behandeln, bei denen der Gesamtbetrag kleiner oder gleich einem festgelegten Maximalbetrag ist.
 

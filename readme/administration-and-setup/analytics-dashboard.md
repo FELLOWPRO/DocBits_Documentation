@@ -117,7 +117,7 @@ Ein **Alle auswählen**-Schalter im Header ermöglicht es Ihnen, alle Schritte g
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-de.png" alt="Karte Ablaufschritte mit aggregierten Verarbeitungszeiten."><figcaption><p>Karte Ablaufschritte mit aggregierten Verarbeitungszeiten.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+![Karte Flow steps mit dem Select All Schalter und Statuskacheln, die maximale, durchschnittliche und minimale Zeiten im Vergleich zum Global Average zeigen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Mit Global Average vergleichen
 
@@ -141,7 +141,7 @@ Das Durchschnittszeit-Diagramm visualisiert, wie sich die Verarbeitungszeit auf 
 
 Wenn **Vergleich mit dem globalen Durchschnitt** aktiviert ist, zeigt das Diagramm auch den DocBits Global Average als Benchmark an.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+![Diagramm der durchschnittlichen Zeit gruppiert nach Unterorganisation mit Gesamtdurchschnitt und dem DocBits Global Average Benchmark](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Top-Dokumente
 
@@ -153,7 +153,7 @@ Die Karte **Top-Dokumente** listet einzelne Dokumente auf, die dem aktiven Filte
 * **Alle Dokumente ausblenden / anzeigen** im Filter über das Augensymbol im Header.
 * **Klicken Sie auf ein Dokument** (Dateiname oder Fortschrittsbalken), um seine Document ID in die Zwischenablage zu kopieren.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+![Panel Top documents, das Dateinamen nach Verarbeitungszeit ordnet, mit insgesamt 13889 Dokumenten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Zeittrend-Diagramm
 
@@ -167,9 +167,9 @@ Verfolgen Sie Leistungstrends im Zeitverlauf und erkennen Sie Anomalien. Das Zei
 
 Dadurch lässt sich leicht ein plötzlicher Anstieg bei einem bestimmten Lieferanten oder ein allmählicher Anstieg bei einem bestimmten Dokumenttyp erkennen, bevor er zu einem kritischen Problem wird.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+![Zeitverlaufstrend für Flow steps mit Linien für maximale, durchschnittliche und minimale Zeit über die ausgewählten Daten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+![Zeitverlaufstrend der durchschnittlichen Zeit mit einer Linie pro Dokumenttyp, darunter Purchase Order, Invoice und Delivery Note](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Datentabelle
 
@@ -181,9 +181,9 @@ Die Datentabelle bietet vollständigen Zugriff auf alle zugrunde liegenden Zeile
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-de.png" alt="Datentabelle der Analyse mit deutschen Spaltenüberschriften; Dokumentwerte sind ausgeblendet."><figcaption><p>Datentabelle der Analyse mit deutschen Spaltenüberschriften; Dokumentwerte sind ausgeblendet.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+![Analytics-Datentabelle mit den Spalten Document Type, Min Time, Max Time und Avg Time sowie ausgeblendeten Spalten-Chips für Supplier und Sub Organization](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+![Analytics-Datentabelle mit den Zeilen Invoice und Order Confirmation, minimalen, maximalen und durchschnittlichen Zeiten sowie ausgeblendeten Spalten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
 
 ## Touchless Intelligence
 

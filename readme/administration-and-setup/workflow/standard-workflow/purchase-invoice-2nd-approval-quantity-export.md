@@ -1,6 +1,6 @@
 # Eingangsrechnung – zweite Mengengenehmigung und Export
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53 (1).png" alt="Decision Trees settings page listing decision trees in a table with Name, Dokumenttyp and Actions columns beside the Entscheidungsbaume sidebar"><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel zur Verwaltung der zweiten Genehmigungsphase für Einkaufsrechnungen mit Schwerpunkt auf den Mengendetails eingerichtet ist und sicherstellt, dass die Mengen auf der Rechnung mit denen auf der ursprünglichen Bestellung übereinstimmen.
 

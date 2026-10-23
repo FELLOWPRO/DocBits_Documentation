@@ -1,6 +1,6 @@
 # Workflow-Beispiel: Bedingter Export-Trigger
 
-<figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt="Seite Workflowbearbeitung mit der Karte Genehmiger-E-Mail, den Feldern Betreff und Text sowie Variablen-Platzhaltern auf der rechten Seite"><figcaption></figcaption></figure>
 
 Dieser Workflow beschreibt die Bedingungen, unter denen ein Export-Prozess gestartet werden soll. Er stellt sicher, dass nur Dokumente, die alle festgelegten Kriterien erfüllen, für den Export verarbeitet werden, wodurch die Datenintegrität und die Übereinstimmung mit Geschäftsregeln verbessert werden.
 

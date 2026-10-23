@@ -4,11 +4,11 @@ Para manter uma visão geral, você pode atribuir títulos diferentes aos workfl
 
 Criar um novo Workflow: Clique em + ADD WORKFLOW
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Área de trabalho do Workflow Builder com o modelo Test Simple Workflow, três linhas Wenn, Und e Dann e um botão Karte hinzufügen sob cada uma](<../../.gitbook/assets/workflow_add_button.png>)
 
 Você pode usar esses workflows (Test 1,2,3) para atribuir automaticamente diversos documentos ao colaborador certo na empresa.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Dashboard Workflow List com a linha Test Simple Workflow e as colunas Name, Type, Workflow Execution Order, Updated By, Created On e Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Se uma fatura ou outro documento exceder um determinado valor total que exija revisão e aprovação prévias, esses documentos podem ser atribuídos imediatamente à pessoa correta.
 

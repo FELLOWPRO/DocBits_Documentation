@@ -69,11 +69,11 @@ Verbindungsprotokolle helfen bei Kommunikationsproblemen; Importprotokolle zeige
 
 Figur und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit synthetischen Schulungsrechnungen.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/de.mp4" %}
 E-Mail-Import einrichten und Fehler gezielt finden
 {% endembed %}
 
-[Mit Untertiteln und Kapiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/de.html)
+[Mit Untertiteln und Kapiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/de.html)
 
 Einzelne native Produktbeschriftungen können abweichend übersetzt sein. Technische Feld-IDs bleiben erhalten.
 
@@ -83,7 +83,7 @@ Ich kontrolliere zuerst die angezeigte Empfangsadresse und den Geltungsbereich. 
 
 Hier beschränke ich den Eingang auf unseren freigegebenen Testabsender. Die Zuordnung zu einer Unterorganisation wähle ich nur, wenn sie zum vorgesehenen Prozess gehört. Ich speichere die Einstellung und öffne sie erneut. Der erlaubte Absender ist erhalten geblieben; automatische Antwortmails sind in dieser Schulung weiterhin ausgeschaltet.
 
-<figure><img src="../../../../.gitbook/assets/admin-save-de-accounting-email-v1.png" alt="Erlaubter Absender gespeichert, Benachrichtigungen ausgeschaltet"><figcaption><p>Erlaubter Absender gespeichert, Benachrichtigungen ausgeschaltet</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-save-de-accounting-email-v2.png" alt="Erlaubter Absender gespeichert, Benachrichtigungen ausgeschaltet"><figcaption><p>Erlaubter Absender gespeichert, Benachrichtigungen ausgeschaltet</p></figcaption></figure>
 
 Für die Schulung wurde ein Testeingang direkt an die DocBits-Eingangsverarbeitung übergeben. Dieser Test bestätigt keine externe Mailzustellung. Im Protokoll prüfe ich den passenden Betreff, den Absender und den importierten Anhang. Erst der tatsächlich angelegte Beleg zeigt, dass der Eingang weiterverarbeitet wurde.
 
@@ -93,4 +93,4 @@ Ein zweiter kontrollierter Test stammt von einem nicht zugelassenen Absender. Im
 
 Bei einem echten Fall kläre ich zuerst, ob dieser Absender überhaupt berechtigt ist. Eine erlaubte Änderung an der Absenderliste wird gespeichert und erneut geprüft. Anschließend kontrolliere ich einen neuen eindeutigen Testeingang bis zum angelegten Dokument. Für technische Fehler übergebe ich die Vorgangskennung und die konkrete Fehlermeldung.
 
-<figure><img src="../../../../.gitbook/assets/admin-error-de-accounting-email-v1.png" alt="Fehlgeschlagener Import mit Anhang, Ursache und Vorgangskennung"><figcaption><p>Fehlgeschlagener Import mit Anhang, Ursache und Vorgangskennung</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-error-de-accounting-email-v2.png" alt="Fehlgeschlagener Import mit Anhang, Ursache und Vorgangskennung"><figcaption><p>Fehlgeschlagener Import mit Anhang, Ursache und Vorgangskennung</p></figcaption></figure>

@@ -9,3 +9,32 @@
 使用复选框选择多个文档，然后打开表头中的菜单，执行允许的批量操作，例如分配、合并、重新启动、重新导出或删除。请仔细检查所选文档和每次确认。这些操作可能更改文档；保存视图只会更改工作列表的显示方式。
 
 搜索、文档操作和已保存视图的说明请参阅[仪表板指南](README.md)。
+
+
+## 视频教程: 处理受阻发票
+
+人物与声音均为合成。录屏展示真实的 DocBits 测试界面，使用合成培训发票。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/zh.mp4" %}
+处理受阻发票
+{% endembed %}
+
+[查看带字幕和章节的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/zh.html)
+
+部分产品原生标签可能仍为其他语言。技术字段标识符保持不变。
+
+我在字段验证中打开这张发票。在这个例子中，发票号码缺失了。其他数值已经填好。在修改任何内容之前，我会将它们与原件进行核对。
+
+现在我输入发票号码并离开该字段。然后，我保存发票。我等待系统反馈并重新加载单据。这样我就能看出修改是否真的生效了。
+
+重新打开后，号码依然存在。必填字段错误已解决。不过，保存并不意味着发票已获批或已导出到ERP系统。
+
+对于第二张发票，列表显示了一个导出错误。我打开状态并阅读详情。测试接收端拒绝了提交的数据，错误代码为422。这里需要检查技术映射。我不会盲目地多次重启导出。
+
+<figure><img src="../../../.gitbook/assets/customer-error-zh-recovery-export-v1.png" alt="导出错误与接收方响应"><figcaption><p>导出错误与接收方响应</p></figcaption></figure>
+
+通过单据上的任务功能，我向我们的测试管理员创建一个明确的交接任务。我提到了错误代码，并请求在映射中检查发票号码。在本次培训中，邮件发送功能保持关闭。
+
+重新加载后，我检查任务是否已保存并分配给了正确的人。在查明原因之前，任务会保持开启状态。创建任务本身并不等于导出成功。
+
+<figure><img src="../../../.gitbook/assets/customer-verify-zh-recovery-export-v1.png" alt="已保存并分配给管理员的交接任务"><figcaption><p>已保存并分配给管理员的交接任务</p></figcaption></figure>

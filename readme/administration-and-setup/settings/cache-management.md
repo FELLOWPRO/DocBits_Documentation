@@ -1,25 +1,9 @@
 # Gestione della cache
 
-<figure><img src="../../.gitbook/assets/cache_management.png" alt="Gestione della cache"><figcaption><p>Pagina Gestione della cache</p></figcaption></figure>
+Apri **Impostazioni → Gestione della cache**. Nella versione illustrata è disponibile **Cancella la cache**. Il comando invalida i dati memorizzati nella cache; il loro successivo caricamento può richiedere nuove richieste.
 
-La Gestione della cache controlla la cancellazione automatica della cache per i dati a cui si accede di frequente. L'attivazione della cache migliora le prestazioni riducendo le chiamate API ripetute.
+<figure><img src="../../.gitbook/assets/native-cache-context-it-20261023.png" alt="Gestione della cache con il comando Cancella la cache. Questa vista non mostra oggetti, interruttori per singola cache o valori TTL. Il comando non è stato eseguito durante la verifica."><figcaption><p>Gestione della cache con il comando Cancella la cache. Questa vista non mostra oggetti, interruttori per singola cache o valori TTL. Il comando non è stato eseguito durante la verifica.</p></figcaption></figure>
 
-## Svuota cache
+## Prima di cancellare la cache
 
-Clicca sul pulsante **Clear Cache** (in alto a destra) per invalidare immediatamente e manualmente tutti i dati nella cache.
-
-## Tabella della cache
-
-| Colonna | Descrizione |
-|--------|-------------|
-| **Object** | Il tipo di dati nella cache (ad es. Receive Delivery Cache, Purchase Order Cache). |
-| **Status** | Interruttore per attivare o disattivare la cache per questo oggetto. |
-| **TTL** | Time to Live in minuti: per quanto tempo i dati nella cache restano validi prima di essere aggiornati automaticamente. Imposta `0` per disattivare la scadenza automatica. |
-
-## Cache disponibili
-
-| Cache | Descrizione |
-|-------|-------------|
-| **Receive Delivery Cache** | Memorizza nella cache i dati delle ricevute di consegna utilizzati durante il PO matching. |
-| **Purchase Order Cache** | Memorizza nella cache i dati degli ordini di acquisto per una ricerca più rapida durante l'elaborazione dei documenti. |
-| **Task and Notification Cache** | Memorizza nella cache il numero di attività e i dati delle notifiche mostrati nella dashboard. |
+Verifica che lo svuotamento sia pertinente al problema osservato e considera l’effetto sugli utenti. Non usare una tabella o un valore TTL di una vecchia versione come istruzione per questa schermata: tali controlli non sono presenti nella vista illustrata.

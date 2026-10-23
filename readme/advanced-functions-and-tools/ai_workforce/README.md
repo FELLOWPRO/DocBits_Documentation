@@ -1,6 +1,6 @@
 # AI Workforce
 
-<figure><img src="../../.gitbook/assets/docnet-agents-infographic-en.png" alt="AI Workforce Agents Infographic"><figcaption><p>Il sistema multi-agente di DocBits per l'elaborazione autonoma dei documenti</p></figcaption></figure>
+La disponibilità degli agenti e delle integrazioni dipende dalla configurazione e dalle autorizzazioni. Tempi, costi, precisione e conformità devono essere misurati sul proprio processo: questa guida non fornisce percentuali o prestazioni garantite.
 
 ## Panoramica
 
@@ -12,7 +12,7 @@ Consideralo come un team che gestisci piuttosto che uno strumento che utilizzi. 
 * Il piano viene suddiviso in **Problemi** (attività singole), ciascuno gestito da un **agente Specialista** o da una **persona**.
 * Gli Specialisti riferiscono i risultati e l'Orchestratore sintetizza l'esito.
 
-Gli _agenti_ che ricoprono questi ruoli non sono fissi: DocBits include un **DocBits Orchestrator** pronto all'uso e due Specialisti predefiniti, e puoi crearne di tuoi (vedi [Agenti](./#agents)).
+Gli _agenti_ che ricoprono questi ruoli non sono fissi: DocBits include un **DocBits Orchestrator** pronto all'uso e due Specialisti predefiniti, e puoi crearne di tuoi (vedi [Agenti](./#agenti)).
 
 Un'esecuzione tipica, dall'inizio alla fine: una fattura arriva via e-mail → viene creata una Missione → l'Orchestratore la pianifica e assegna i Problemi agli Specialisti (classificazione, estrazione, convalida, abbinamento OdA) → un passaggio sensibile si mette in pausa nella **Posta in arrivo** in attesa dell'approvazione di una persona → dopo l'approvazione il documento viene esportato e la Missione si completa. Puoi monitorare l'intero processo dalla **Dashboard**, tenere insieme le esecuzioni correlate nei **Progetti** e intervenire tramite la **Posta in arrivo** e i **Problemi** ogni volta che è necessaria una decisione umana.
 
@@ -41,7 +41,7 @@ I widget disponibili includono:
 
 ## Posta in arrivo
 
-La **Posta in arrivo** è il luogo in cui il lavoro attende l'**attenzione umana**. Quando un agente sta per eseguire uno strumento che richiede un'approvazione, mette in pausa l'attività e genera qui una **richiesta di approvazione**. Questo è l'Human-in-the-Loop (HITL): l'azione non viene eseguita finché una persona non decide. Se un determinato strumento richieda o meno un'approvazione dipende dalla **modalità di approvazione** dell'agente e dai contrassegni **critico** dei suoi strumenti (vedi [Impostazioni dell'agente](./#agent-settings)).
+La **Posta in arrivo** è il luogo in cui il lavoro attende l'**attenzione umana**. Quando un agente sta per eseguire uno strumento che richiede un'approvazione, mette in pausa l'attività e genera qui una **richiesta di approvazione**. Questo è l'Human-in-the-Loop (HITL): l'azione non viene eseguita finché una persona non decide. Se un determinato strumento richieda o meno un'approvazione dipende dalla **modalità di approvazione** dell'agente e dai contrassegni **critico** dei suoi strumenti (vedi [Impostazioni dell'agente](./#impostazioni-dellagente)).
 
 Ogni elemento della Posta in arrivo mostra il titolo della richiesta, l'agente che l'ha generata e una breve descrizione di ciò che richiede una decisione. Dall'elemento puoi:
 
@@ -125,7 +125,7 @@ Ogni agente — di sistema o personalizzato — dispone di un menu di impostazio
   * **Medium** _(predefinito)_ — qualità e costo in equilibrio.
   * **High** — ragionamento approfondito per attività più difficili; costo più elevato.
   * **X-High** — ragionamento massimo; costo più elevato.
-* **Modalità di approvazione** — quanta parte del lavoro dell'agente necessita di approvazione umana nella [Posta in arrivo](./#inbox):
+* **Modalità di approvazione** — quanta parte del lavoro dell'agente necessita di approvazione umana nella [Posta in arrivo](./#posta-in-arrivo):
   * **None** — l'agente esegue automaticamente ogni strumento; nulla viene inviato per l'approvazione.
   * **Critical** _(predefinito)_ — solo gli strumenti contrassegnati come **critici** richiedono l'approvazione; tutto il resto viene eseguito automaticamente. Gli strumenti critici sono le azioni sensibili di scrittura/esterne (ad esempio _carica/importa documento_, _aggiorna i campi del documento_, _rispondi all'e-mail_, _invia notifica_). In questa modalità uno strumento critico genera **sempre** una richiesta di approvazione nella Posta in arrivo. Puoi regolare finemente i singoli strumenti (contrassegnare come bisognoso di approvazione uno strumento normalmente sicuro, oppure rimuoverla da uno critico) — queste sostituzioni per singolo strumento si applicano solo in modalità Critical.
   * **All** — ogni strumento eseguito dall'agente richiede l'approvazione.

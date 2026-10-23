@@ -1,44 +1,23 @@
 # Modello AI
 
-## Panoramica
+## Ambito del modello
 
-L’impostazione del modello AI definisce il modello dell’organizzazione per l’estrazione di campi e tabelle. La tabella delle assegnazioni consente di esaminare le preferenze dei template di estrazione. Verificare i costi nelle informazioni attuali dell’ambiente e nelle condizioni concordate.
+Apri **Impostazioni → Elaborazione documenti → Classificazione ed estrazione** e individua **Modello AI** nella sezione di estrazione. La configurazione dell’organizzazione viene usata quando non esiste una preferenza applicabile al template di estrazione corrente.
 
-## Come Accedere
+<figure><img src="../../../../.gitbook/assets/native-global-ai-model-options-it-20261023.png" alt="Menu Modello AI con Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Sono livelli del prodotto. Le righe di preferenze sono mascherate; nessun modello è stato cambiato."><figcaption><p>Menu Modello AI con Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Sono livelli del prodotto. Le righe di preferenze sono mascherate; nessun modello è stato cambiato.</p></figcaption></figure>
 
-1.  Vai su **Impostazioni** → **Elaborazione Documenti** → **Classificazione ed Estrazione**
+## Scegliere un livello
 
-    <figure><img src="../../../../.gitbook/assets/dbdc862-settings-nav-it-20261012.png" alt="Navigazione delle impostazioni con Elaborazione Documenti e Classificazione ed Estrazione evidenziati"><figcaption><p>Apri <strong>Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione</strong>.</p></figcaption></figure>
-2.  Scorri verso il basso fino alla sezione **Estrazione**
+Le sei opzioni visibili sono **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** e **Auto Nexus**. I nomi non garantiscono un particolare modello sottostante, prezzo, tempo o grado di precisione. Confronta gli stessi documenti rappresentativi e controlla campi, tabelle, tempi e costi nelle condizioni attuali dell’ambiente.
 
-    <figure><img src="../../../../.gitbook/assets/dbdc862-ai-model-overview-it-20261012.png" alt="Sezione Estrazione con l'impostazione Modello AI e la tabella di assegnazione per fornitore"><figcaption><p>La sezione <strong>Estrazione</strong> contiene l'impostazione <strong>Modello AI</strong> e la tabella di assegnazione per fornitore.</p></figcaption></figure>
+## Preferenze del template
 
-## Opzioni del Modello AI
+La preferenza specifica viene salvata per organizzazione e template di estrazione (`tfidf_id`). Un fornitore può avere più template con preferenze indipendenti: cambiare una voce non aggiorna automaticamente tutti i suoi documenti o template. Una preferenza non impostata non significa sempre Fast.
 
-Il menu offre **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** e **Auto Nexus**. Sono nomi di livelli del prodotto. Opzioni, modelli sottostanti e costi possono cambiare; nomi storici dei fornitori e prezzi fissi non costituiscono una promessa permanente.
+Consulta [Modello AI specifico del fornitore](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md) per l’accesso dalla schermata di convalida.
 
-Confrontare i livelli sullo stesso campione rappresentativo e verificare valori estratti, tempi di elaborazione e costi. Full non garantisce sempre la massima precisione, né Fast o Nexus Flash il tempo minore. Verificare anche risultati e costi di Auto e Auto Nexus.
+## Rimuovere una preferenza
 
-In assenza di una preferenza per il template di estrazione corrente, viene usata la configurazione dell’organizzazione. Un modello specifico del fornitore non impostato non significa quindi sempre Fast. Un cambio di modello non garantisce convalida, abbinamento degli ordini, approvazione o esportazione.
+Prima di eliminare una voce, identifica il template e tutte le preferenze interessate. L’eliminazione può rimuovere più preferenze del template, non soltanto il livello AI. Esamina l’eventuale conferma della versione in uso prima di procedere. Successivamente si applicano la configurazione dell’organizzazione e i valori di ripiego pertinenti; gli altri template possono mantenere impostazioni indipendenti.
 
-<figure><img src="../../../../.gitbook/assets/dbdc862-ai-model-options-it-20261012.png" alt="Menu a discesa Modello AI aperto, con Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus"><figcaption><p>Il menu a discesa <strong>Modello AI</strong> con le sei opzioni disponibili.</p></figcaption></figure>
-
-## Tabella di Assegnazione del Modello AI
-
-La schermata di convalida offre un accesso ai modelli specifici del fornitore. La preferenza viene salvata per organizzazione e template di estrazione corrente (`tfidf_id`). L’associazione al fornitore non aggiorna automaticamente tutti i suoi template o documenti storici.
-
-Verificare le colonne realmente disponibili nella versione in uso: associazione del fornitore, livello del modello, opzioni di estrazione e informazioni di creazione e modifica. Le colonne possono variare.
-
-[qui](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
-
-<figure><img src="../../../../.gitbook/assets/dbdc862-ai-model-table-it-20261012.png" alt="Tabella di assegnazione con ID Fornitore, Modello AI, Utilizzare L'estrazione Strutturata (IA), E-Text e le colonne Creato Da, Modificato Da, Creato, Modificato"><figcaption><p>La tabella di assegnazione mostra l'etichetta del livello per fornitore, mai l'identificatore raw del modello.</p></figcaption></figure>
-
-### Eliminare una voce: rimuovere le preferenze del template
-
-Prima di eliminare una voce, identificare il template di estrazione e tutte le preferenze interessate. L’eliminazione può rimuovere più preferenze del template, non soltanto il modello AI. Se un amministratore deve eliminare la voce, usare l’azione di eliminazione della riga corretta e controllare la conferma prima di procedere.
-
-<figure><img src="../../../../.gitbook/assets/dbdc862-ai-model-delete-it-20261012.png" alt="Menu delle azioni di riga con l'opzione Cancellare nella tabella Modello AI"><figcaption><p>Apri il menu delle azioni della riga e scegli <strong>Cancellare</strong>.</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/dbdc862-ai-model-delete-confirm-it-20261012.png" alt="Finestra di conferma che chiede se eliminare la voce"><figcaption><p>Conferma l'eliminazione nella finestra di dialogo.</p></figcaption></figure>
-
-Le elaborazioni successive usano la configurazione dell’organizzazione e i valori di ripiego applicabili al template. Altri template dello stesso fornitore possono mantenere preferenze indipendenti. L’eliminazione non rielabora automaticamente i documenti storici. Durante questa verifica non sono state eliminate voci né testate estrazioni successive a un’eliminazione.
+La modifica non rielabora automaticamente i documenti storici e non garantisce convalida, abbinamento degli ordini, approvazione o esportazione. Durante questa verifica non sono stati eliminati template né eseguite nuove estrazioni.

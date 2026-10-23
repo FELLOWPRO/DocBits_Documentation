@@ -44,5 +44,5 @@ except ValueError:
 ## Funzioni Utilizzate
 
 - [get\_field\_value()](../field-functions.md#get\_field\_value) — Leggere il valore del campo
-- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Trovare il gruppo per nome
+- [get\_group\_by\_name()](../business-logic-functions.md#get_group_by_id-get_group_by_name) — Trovare il gruppo per nome
 - [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Creare l'attivita di approvazione

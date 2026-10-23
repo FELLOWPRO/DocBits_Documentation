@@ -1,152 +1,57 @@
 # Configurazione di WatchDog
 
-Questa guida spiega come configurare il servizio WatchDog all'interno dell'applicazione DocBits. Tutte le configurazioni vengono gestite direttamente in **Settings → Document Processing → WatchDog**.
+Apri **Impostazioni → WatchDog**. Nella versione illustrata le schede effettive sono **Generale**, **Configurazioni**, **Registri** e **Modelli XSLT**. Lo stato è mostrato in Generale; non è una quinta scheda autonoma.
 
-<figure><img src="../../../.gitbook/assets/watchdog-configuration-it.svg" alt="Configurazione di WatchDog: funzioni delle quattro schede."><figcaption><p>Configurazione di WatchDog: funzioni delle quattro schede.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-configuration-it.svg" alt="Ruoli delle quattro schede attuali: Generale, Configurazioni, Registri e Modelli XSLT. OpenSearch riguarda i registri; la procedura di esportazione riguarda Configurazioni. Diagramma esplicativo, non schermata del prodotto."><figcaption><p>Ruoli delle quattro schede attuali: Generale, Configurazioni, Registri e Modelli XSLT. OpenSearch riguarda i registri; la procedura di esportazione riguarda Configurazioni. Diagramma esplicativo, non schermata del prodotto.</p></figcaption></figure>
 
----
+## 1. Generale
 
-## 1. Scheda General
+Esamina istruzioni, download, stato del servizio e opzioni di aggiornamento disponibili. La versione di download e la versione installata sono informazioni diverse. Non dedurre che il servizio sia attivo dalla presenza del pulsante di download.
 
-La scheda General fornisce le istruzioni di configurazione, i link di download e le impostazioni di aggiornamento.
+<figure><img src="../../../.gitbook/assets/native-watchdog-general-safe-it-20261023.png" alt="Scheda Generale di WatchDog nello stato esistente FUORI LINEA. Chiave API, comandi specifici dell’account e percorso di installazione sono nascosti. La versione proposta per il download non dimostra la versione installata o in esecuzione. Nessun comando o servizio è stato avviato."><figcaption><p>Scheda Generale di WatchDog nello stato esistente FUORI LINEA. Chiave API, comandi specifici dell’account e percorso di installazione sono nascosti. La versione proposta per il download non dimostra la versione installata o in esecuzione. Nessun comando o servizio è stato avviato.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Scheda General di WatchDog"><figcaption></figcaption></figure>
-
-### 1.1 Download e Configurazione
-
-* Scarica l'ultima versione di `WatchDog.exe` direttamente dalla scheda General
-* Copia l'API Key visualizzata
-* Esegui il comando di configurazione in un Prompt dei comandi come amministratore:
+Per collegare il pacchetto all’organizzazione, segui le istruzioni della tua versione. Il comando documentato è:
 
 ```powershell
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-### 1.2 Pianificazione degli Aggiornamenti Automatici
+Proteggi la chiave API e verifica la configurazione prima dell’esecuzione. Le opzioni di pianificazione degli aggiornamenti dipendono dalla versione; l’immagine non dimostra intervalli universali o un aggiornamento riuscito.
 
-| Opzione | Intervallo |
-| :--- | :--- |
-| On Startup Only | Controlla una volta all'avvio |
-| Hourly | Ogni 3600 secondi |
-| Daily | Ogni 86400 secondi |
-| Weekly | Ogni 604800 secondi |
+## 2. Configurazioni
 
----
+Le configurazioni di importazione definiscono cartella monitorata, cartella di successo, tipo di documento ed eventuale sub-organizzazione. Quelle di esportazione definiscono tipo di documento (`doc_type`), metodo, destinazione, ordine di esecuzione e trasformazioni pertinenti. Verifica i campi obbligatori nella versione installata.
 
-## 2. Scheda Configurations
+<figure><img src="../../../.gitbook/assets/native-watchdog-configurations-it-20261023.png" alt="Scheda Configurazioni con sezioni e contatori esistenti. I valori delle righe sono mascherati mantenendo la struttura; gli elenchi non sono vuoti. Nessuna configurazione è stata creata, copiata o modificata."><figcaption><p>Scheda Configurazioni con sezioni e contatori esistenti. I valori delle righe sono mascherati mantenendo la struttura; gli elenchi non sono vuoti. Nessuna configurazione è stata creata, copiata o modificata.</p></figcaption></figure>
 
-Crea e gestisci le configurazioni di importazione e di esportazione. Tutte le configurazioni vengono create direttamente in DocBits — non sono necessari file di configurazione locali.
+### Importazione
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="Panoramica delle configurazioni di WatchDog"><figcaption></figcaption></figure>
+Apri la creazione di una configurazione di importazione e identifica cartelle, tipo e ambito. Non confondere l’invio di una configurazione con l’importazione di un documento.
 
-### 2.1 Importare le configurazioni
+<figure><img src="../../../.gitbook/assets/native-watchdog-import-dialog-it-20261023.png" alt="Modulo di importazione vuoto. Nuova configurazione Importazione e Importa configurazione sono etichette poco chiare della versione illustrata; l’acronimo BOD è corretto. Nessun campo è stato compilato e nessuna configurazione è stata salvata."><figcaption><p>Modulo di importazione vuoto. Nuova configurazione Importazione e Importa configurazione sono etichette poco chiare della versione illustrata; l’acronimo BOD è corretto. Nessun campo è stato compilato e nessuna configurazione è stata salvata.</p></figcaption></figure>
 
-Definisci dove WatchDog cerca i nuovi documenti.
+### Esportazione
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_02.png" alt="Configurazione di importazione di WatchDog"><figcaption></figcaption></figure>
+Seleziona il tipo di documento e il metodo previsto dalla tua integrazione. Secondo il pacchetto possono essere disponibili cartella locale, Infor IDM, Infor BOD, ION API, GLS840MI e REST API. La disponibilità di un metodo non garantisce connettività o accettazione nel sistema destinatario. Per l’esportazione XML associa il modello XSLT pertinente e verifica il risultato su un campione autorizzato.
 
-| Campo | Descrizione |
-| :--- | :--- |
-| **Name** | Nome visualizzato per questa configurazione |
-| **Watch Folder** | Directory da monitorare per i nuovi documenti (obbligatorio) |
-| **Success Folder** | Dove vengono spostati i file dopo un'importazione riuscita |
-| **Document Type** | INVOICE, CREDIT\_NOTE, PURCHASE\_ORDER, ecc. |
-| **Sub-Organisation** | Facoltativo — instrada i documenti a una sub-organizzazione specifica |
+<figure><img src="../../../.gitbook/assets/native-watchdog-export-draft-it-20261023.png" alt="Primo passaggio della creazione di una configurazione di esportazione, senza dati salvati. È una bozza vuota, non una configurazione funzionante né una prova di esportazione."><figcaption><p>Primo passaggio della creazione di una configurazione di esportazione, senza dati salvati. È una bozza vuota, non una configurazione funzionante né una prova di esportazione.</p></figcaption></figure>
 
-### 2.2 Configurazione dell’esportaziones
+Il percorso moderno usa le configurazioni gestite in DocBits; il download manuale di `watchdog-config.json` appartiene al percorso storico V1, non è un prerequisito universale. Eventuali opzioni di divisione tramite codici a barre o automazione dell’Operatore richiedono una verifica specifica del pacchetto e del processo.
 
-Definisci come e dove vengono esportati i documenti elaborati.
+## 3. Registri
 
-> **Importante:** Le configurazioni di esportazione ora **richiedono un tipo di documento** (`doc_type`). Le configurazioni senza tipo di documento verranno rifiutate dal sistema.
+Consulta gli eventi disponibili e il periodo selezionato. OpenSearch è il contesto di ricerca dei registri; non è una configurazione di esportazione. Un filtro temporale non certifica la conservazione completa degli eventi.
 
-| Campo | Descrizione |
-| :--- | :--- |
-| **Name** | Nome visualizzato per questa configurazione |
-| **Document Type** | Obbligatorio — INVOICE, CREDIT\_NOTE, ecc. |
-| **Export Method** | Come vengono esportati i documenti (vedi sotto) |
-| **Export Folder** | Directory di destinazione per le esportazioni in cartella |
-| **Execution Order** | Priorità quando più configurazioni corrispondono (predefinito: 1) |
-| **XSLT Template** | Facoltativo — template di trasformazione XML |
+<figure><img src="../../../.gitbook/assets/native-watchdog-logs-it-20261023.png" alt="Scheda Registri con il periodo selezionato Ultime 48 ore. È un filtro della vista, non una promessa sulla conservazione o sulla frequenza universale degli eventi. Nessun risultato dimostra da solo lo stato del servizio."><figcaption><p>Scheda Registri con il periodo selezionato Ultime 48 ore. È un filtro della vista, non una promessa sulla conservazione o sulla frequenza universale degli eventi. Nessun risultato dimostra da solo lo stato del servizio.</p></figcaption></figure>
 
-### 2.3 Metodi di Esportazione
+Gli identificatori tecnici comprendono `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED` e `SERVICE_RESTART_COMPLETED`. Verifica presenza, timestamp ed esito nel processo reale; l’elenco non dimostra che tutti gli eventi siano stati prodotti durante questa verifica.
 
-| Metodo | Descrizione |
-| :--- | :--- |
-| **Folder (watcher)** | Esporta PDF + XML in una cartella locale |
-| **Infor IDM** | Carica in Infor Document Management |
-| **Infor BOD** | Invia il BOD XML a Infor ERP / SAP / M3 |
-| **ION API** | Chiama gli endpoint dell'API Infor ION |
-| **GLS840MI** | Elaborazione batch M3 (tramite REST API) |
-| **REST API** | Invia a un'API esterna con autenticazione ION OAuth |
+## 4. Modelli XSLT
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_04.png" alt="Configurazione di esportazione di WatchDog"><figcaption></figcaption></figure>
+Gestisci i modelli di trasformazione usati dalle esportazioni. Identifica modello, XML in ingresso e configurazione associata. Se la versione offre una validazione, esamina anche il risultato con un campione rappresentativo; la sola presenza dell’editor non dimostra una trasformazione valida.
 
-### 2.4 Opzioni di Elaborazione
+<figure><img src="../../../.gitbook/assets/native-watchdog-templates-it-20261023.png" alt="Scheda Modelli XSLT con l’elenco esistente e valori privati mascherati. Nessun modello è stato creato, modificato o eliminato."><figcaption><p>Scheda Modelli XSLT con l’elenco esistente e valori privati mascherati. Nessun modello è stato creato, modificato o eliminato.</p></figcaption></figure>
 
-* **Barcode Divider:** Divide automaticamente i documenti multipagina in base ai codici a barre
-* **DocBits Operator:** Abilita le attività di automazione del browser
+<figure><img src="../../../.gitbook/assets/native-watchdog-xslt-new-dialog-it-20261023.png" alt="Editor XSLT vuoto con Nome del modello e Contenuto XSLT. I nomi configurati visibili sullo sfondo sono mascherati. Nessun contenuto, modello o risultato di validazione è stato salvato."><figcaption><p>Editor XSLT vuoto con Nome del modello e Contenuto XSLT. I nomi configurati visibili sullo sfondo sono mascherati. Nessun contenuto, modello o risultato di validazione è stato salvato.</p></figcaption></figure>
 
----
-
-## 3. Scheda Status
-
-Monitora lo stato di salute e l'attività del servizio WatchDog.
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="Stato del servizio WatchDog"><figcaption></figcaption></figure>
-
-### Informazioni di Stato
-
-| Campo | Descrizione |
-| :--- | :--- |
-| **Online/Offline** | Stato di connessione corrente (soglia heartbeat di 30 s) |
-| **Version** | Versione di WatchDog installata |
-| **Version First Seen** | Quando questa versione è stata segnalata per la prima volta |
-| **Last Restart** | Timestamp dell'ultimo riavvio del servizio |
-| **Auto-Update Enabled** | Indica se gli aggiornamenti automatici sono attivi |
-| **Latest Version** | Ultima versione disponibile |
-| **Latest Version Checked At** | Quando è stata controllata l'ultima versione |
-| **System Info** | Percorso di installazione, RAM libera, spazio libero su disco |
-
-### Indicatore di Stato
-
-| Stato | Significato |
-| :--- | :--- |
-| ✅ **Online** | WatchDog è connesso e attivo |
-| ⚠️ **Offline** | Nessun heartbeat ricevuto da oltre 30 secondi |
-| ❌ **Not Installed** | WatchDog non si è mai connesso a questa organizzazione |
-
----
-
-## 4. Scheda Logs
-
-Visualizza tutti gli eventi di WatchDog memorizzati in OpenSearch.
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="Log di WatchDog"><figcaption></figcaption></figure>
-
-* Filtra per data, tipo di evento o parole chiave
-* Tipi di evento: `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED`, `SERVICE_RESTART_COMPLETED`
-
----
-
-## 5. Scheda XSLT Templates
-
-Gestisci i template di trasformazione XSLT utilizzati per le esportazioni XML.
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Elenco dei template XSLT"><figcaption></figcaption></figure>
-
-* Carica e modifica i template XSLT
-* **Validazione in tempo reale** — testa i template su un XML di esempio con analisi dei campi
-* Collega i template alle configurazioni di esportazione
-* Visualizza il conteggio di utilizzo (quali configurazioni usano ciascun template)
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_07.png" alt="Editor dei template XSLT"><figcaption></figcaption></figure>
-
----
-
-## 6. Scheda Configurazione dell’esportaziones
-
-Panoramica di tutte le configurazioni di esportazione attive con lo stato della connessione.
-
-* Monitora il timestamp dell'ultima connessione riuscita
-* Gestisci le configurazioni direttamente nell'elenco (modifica, copia, elimina)
-* Copia in blocco le configurazioni tra le sub-organizzazioni
+La verifica ha aperto viste e moduli vuoti e li ha chiusi senza salvataggi. Non ha eseguito importazioni, esportazioni, aggiornamenti o riavvii del servizio.

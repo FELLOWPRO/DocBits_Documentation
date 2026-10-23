@@ -8,7 +8,7 @@ Aqui está um guia sobre como usar corretamente as ações "Copy" e "Delete" par
 * Selecione o subtipo que deseja copiar, clique em "Copy" e insira um novo nome para o subtipo copiado, se necessário.
 * Confirme a ação e o sistema criará uma cópia do subtipo selecionado com todas as configurações, campos, layouts e scripts existentes.
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Diálogo Clone Sub Document Type com Duplicate From KOSTENRECHNUNG_copy e um botão CANCEL"><figcaption></figcaption></figure>
 
 ## Excluindo um subtipo:
 

@@ -49,7 +49,7 @@ Se o **Pedido de Compra** parecer correto e contiver os detalhes necessários, v
 
 Deve parecer com o seguinte:
 
-<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="Ecrã de validação com uma tabela de itens de linha do recibo, as colunas extraídas de Positionen e as linhas de fatura associadas realçadas" width="563"><figcaption></figcaption></figure>
 
 ## **Passo 5: Adicionar o Arquivo Atualizado de Volta ao DocBits**
 

@@ -24,7 +24,7 @@ O DocBits se destaca na adaptação de layouts de documentos de acordo com suas 
 * Personalizar campos: Adapte o layout adicionando ou removendo campos. Por exemplo, inclua 'City Tax' para um layout dos EUA.
 * Aplicar e testar: Uma vez personalizado, aplique o layout aos seus documentos e teste para garantir a precisão.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
+![Diagrama de layout de origem com os passos Selector, Customize, Apply Layout e Test Format em sequência](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
 
 ## **Dicas para personalização eficaz**
 

@@ -16,7 +16,7 @@ Todas as conexões entre os componentes são protegidas com protocolos de cripto
 
 **Em instalações próprias:**&#x20;
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="Diagrama de arquitetura do Operator On-Prem com o DocAgent num computador cliente a ligar à Prefect API e à nuvem DocBits"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ Todas as conexões entre os componentes são protegidas com protocolos de cripto
 
 **Cloud**:
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Diagrama de arquitetura do Operator Cloud com a extensão do Chrome, DocBits Operator Cloud, DocFlow e DocBits AI a trocar mensagens de tarefas e respostas"><figcaption></figcaption></figure>
 
 ## Exportando dados para a Infor
 
@@ -38,7 +38,7 @@ Exportar para a [Infor](../../infor-integration-and-configuration/exporting-to-i
 
 Para identificar o fornecedor ou comparar/combinar linhas de pedidos de compra, ativamos um gatilho no LN/M3 que envia os BODs Sync.RemitToPartyMaster, Sync.SupplierPartyMaster e Sync.PurchaseOrder para o Doc**Bits**. Configuramos esse processo no ION Desk definindo o fluxo de dados para um ponto de conexão específico com o Doc**Bits**.
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="Diagrama de arquitetura DocBits do cluster Kubernetes com balanceador de carga, Redis, PostgreSQL, pods de trabalho e armazenamento de dados Spaces"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Validação de dados mestres](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ Para identificar o fornecedor ou comparar/combinar linhas de pedidos de compra, 
 
 ## Importação de e-mail com OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="Diagrama da importação de e-mail do Office 365 a mostrar o Microsoft Graph API a emitir um token de acesso para o serviço de correio DocBits e o sistema principal"><figcaption></figcaption></figure>

@@ -4,7 +4,7 @@
 
 A tela de validação no DocBits é projetada para verificar a precisão e a completude dos dados contidos em documentos antes de serem processados ou salvos. Essa funcionalidade é crucial para garantir que todos os dados sejam lidos e processados corretamente, mantendo assim a integridade e a qualidade dos dados.
 
-<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt="Diagrama de passos em chevron empilhados para o ecrã de validação cobrindo validação, eficiência, conformidade, facilidade de utilização, prevenção de erros, integração de dados e qualidade de dados"><figcaption></figcaption></figure>
 
 ## Descrição Detalhada do Propósito e Uso da Tela de Validação
 

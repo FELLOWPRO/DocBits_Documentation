@@ -8,16 +8,16 @@ Esta página explica como ativar e usar o **Portal do Fornecedor**, bem como ond
 
 1.  Acesse **Configurações → Processamento de Documentos → Módulo**.
 
-    <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_module.png" alt="Página Settings do DocBits com o menu Document Processing aberto mostrando as entradas Module, Export, OCR Settings e Classification and Extraction"><figcaption></figcaption></figure>
 2.  Na seção **Envio e Fornecedor**, ative a opção **Portal do Fornecedor**.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt="Página de configurações Modules do DocBits com a secção Shipping &amp;amp; Supplier a mostrar a opção Supplier Portal"><figcaption></figcaption></figure>
 
 ## Configurações do Fornecedor
 
 Depois que o recurso **Portal do Fornecedor** estiver ativado, uma nova seção **Configurações do Fornecedor** aparecerá na parte inferior do menu **Configurações**.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt="Menu Settings do DocBits mostrando a secção Supplier Settings com Supplier General Settings, Email Templates, Supplier Layout, Export Configuration e Supplier Permissions"><figcaption></figcaption></figure>
 
 [**Configurações Gerais do Fornecedor**](../../settings/supplier-setting/supplier-general-settings.md): Aqui, você pode personalizar o **Portal do Fornecedor** enviando o logotipo da sua empresa—exibido no cabeçalho de todos os modelos de e-mail—e gerenciando documentos legais como os Termos de Uso e a Política de Privacidade.
 
@@ -35,7 +35,7 @@ Um guia detalhado de todas as Configurações do Fornecedor pode ser encontrado 
 
 Você pode acessar o **Painel do Fornecedor** pelo menu à esquerda, conforme mostrado abaixo.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt="Supplier Dashboard no DocBits com as contagens All Supplier, Pending Approval e Pending Registration e uma tabela de linhas Test Supplier"><figcaption></figcaption></figure>
 
 Todos os Fornecedores que você criou são exibidos aqui.
 
@@ -49,11 +49,11 @@ Você pode pesquisar fornecedores por **Nome** ou **Número**, ou usar os filtro
 
 Você também pode especificar quantos fornecedores devem ser exibidos por página.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt="Painel de filtros do Supplier Dashboard com Supplier Groups, Status, Created On, Supplier Per Page e um botão Clear Filters"><figcaption></figcaption></figure>
 
 Além disso, você pode filtrar rapidamente pelos status **Aprovação Pendente** ou **Registro Pendente** clicando na categoria correspondente à esquerda da barra de filtr&#x6f;**.**
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt="Dashboard de fornecedores com as categorias All Supplier, Pending Approval e Pending Registration à esquerda da barra de pesquisa"><figcaption></figcaption></figure>
 
 ## Status do Fornecedor
 
@@ -73,26 +73,26 @@ Se você está usando o **Portal do Fornecedor**, é importante entender os dife
 
 ### Atualizar tabela <a href="#refresh-table" id="refresh-table"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt="Tabela do Supplier Dashboard no DocBits com o botão de atualização da tabela na barra de ferramentas superior"><figcaption></figcaption></figure>
 
 Clique neste botão para atualizar o painel e carregar os dados e status mais recentes.
 
 ### Definir colunas da tabela para a organização <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt="Tabela do Supplier Dashboard no DocBits com o botão de definir colunas da tabela na barra de ferramentas superior"><figcaption></figcaption></figure>
 
 Clique neste botão para abrir um menu onde você pode gerenciar a visibilidade das colunas na tabela de pedidos de compra. Use as caixas de seleção e os botões de seta para mover colunas entre as seções visível e oculta. Você também pode reordenar as colunas arrastando e soltando os nomes das colunas. Clique em **Concluído** para salvar suas alterações.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt="Menu Columns settings da tabela de fornecedores com colunas ocultas como Supplier Number, Status e Created On mais os botões Cancel e Done"><figcaption></figcaption></figure>
 
 ### Análises <a href="#analytics" id="analytics"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt="Supplier Dashboard no DocBits com os separadores All Supplier, Pending Approval e Pending Registration e a tabela de fornecedores com as colunas Supplier Name e Status"><figcaption></figcaption></figure>
 
 Ao clicar neste botão, uma nova seção será aberta mostrando quantos fornecedores estão prestes a expirar e quando.\
 Clique em qualquer categoria para aplicar um filtro e visualizar apenas esses fornecedores.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt="Secção de análise do Supplier Dashboard com Expired (13) e as contagens Expires in para 1 Month, 6 Month e 1 Year"><figcaption></figcaption></figure>
 
 ## Criar Fornecedor e Enviar E-mail de Registro
 
@@ -100,10 +100,10 @@ Clique em qualquer categoria para aplicar um filtro e visualizar apenas esses fo
 
 1.  Clique no ícone de mais (+) no canto superior direito.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt="Supplier Dashboard no DocBits com os separadores All Supplier, Pending Approval e Pending Registration e a tabela de fornecedores com as colunas Supplier Name e Status"><figcaption></figcaption></figure>
 2.  Preencha os campos obrigatórios e clique em **Salvar**.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt="Formulário Add Supplier no DocBits com os campos Supplier Group, Supplier Name, Supplier Responder e Payment Terms e os botões Cancel e Save"><figcaption></figcaption></figure>
 3. O fornecedor receberá automaticamente um e-mail com um link para criar sua conta.
 
 ### **Para enviar um e-mail de registro a um fornecedor existente:**
@@ -112,11 +112,11 @@ Clique em qualquer categoria para aplicar um filtro e visualizar apenas esses fo
 2. Clique no menu de três pontos na coluna **Ações**.
 3.  Selecione **Magic Link**.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt="Supplier Dashboard no DocBits com o menu de linha aberto a mostrar a opção Magic Link"><figcaption></figcaption></figure>
 4. Verifique os detalhes do fornecedor.
 5.  Clique em **Enviar** para enviar o link de registro por e-mail.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt="Painel de confirmação Magic Link no DocBits com os detalhes de Supplier Group, Supplier Name e Supplier Responder, mais os botões Cancel e Send"><figcaption></figcaption></figure>
 
 ## Como funciona o processo de registro para o fornecedor?
 

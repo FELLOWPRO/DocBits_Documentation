@@ -31,7 +31,7 @@ Se a **Correspondência Automática** estiver definida como **Correspondência c
 
 Deve ficar como o seguinte:
 
-<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt="Ficheiro LN-Mapping com o campo IRF_PackingSlip definido como TF_packing_slip e PackingSlip adicionado a InvoiceReceiptFields"><figcaption></figcaption></figure>
 
 ## **Passo 4: Adicionar o Arquivo Atualizado de Volta ao DocBits**
 

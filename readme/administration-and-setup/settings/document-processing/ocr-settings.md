@@ -37,7 +37,7 @@ Para aceder às configurações OCR:
 
 *   Abra: **Configurações** → **Processamento de documentos** → **Configurações OCR**
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt="Menu de configurações do DocBits com Document Processing aberto e OCR Settings selecionado entre Import, Rule Management e Export"><figcaption></figcaption></figure>
 
 ## Qualidade OCR
 
@@ -52,7 +52,7 @@ Se um documento não atingir a qualidade definida, o DocBits oferece três opç�
 * **Apresentar erro**\
   O processamento é interrompido e é apresentada uma mensagem de erro a indicar que o documento não atingiu a qualidade mínima exigida.
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt="Página de configurações de OCR Quality com o controle deslizante de qualidade e Run again after confirmation selecionado abaixo"><figcaption></figcaption></figure>
 
 ## Configurações gerais de OCR
 
@@ -67,7 +67,7 @@ Se um documento não atingir a qualidade definida, o DocBits oferece três opç�
     * Não estiver a obter os resultados pretendidos com a versão selecionada.
     * Estiver a investigar problemas de desempenho ou precisão do OCR.
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt="Página de OCR Settings com o menu suspenso AI OCR Version aberto mostrando as versões 1.2, 2.0 e 2.1"><figcaption></figcaption></figure>
 
 ## Configurações OCR para tabelas
 

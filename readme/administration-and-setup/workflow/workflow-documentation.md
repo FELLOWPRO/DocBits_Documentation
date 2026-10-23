@@ -104,7 +104,7 @@ Também é possível inserir o status no workflow, para que a pessoa atribuída 
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-pt.png" alt="Ação de alteração de estado num rascunho de fluxo."><figcaption><p>Ação de alteração de estado num rascunho de fluxo.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt="Construtor de fluxos de trabalho com três cartões de lógica que atribuem documentos por responsável e tipo de documento ao Invoice reviewer, Delivery-note reviewer e Order reviewer"><figcaption></figcaption></figure>
 
 Por exemplo, se faltarem informações específicas ou importantes em um documento, mas que sejam essenciais e devam ser incluídas para o processamento posterior, você pode configurar o workflow para que esses documentos sejam encaminhados imediatamente ao comprador e a um substituto (suplente).
 
@@ -141,7 +141,7 @@ Este logic card é vital para garantir que os detalhes de uma confirmação de p
 
 Se você tiver um cálculo diferente para sobretaxas, ou tiver sobretaxas apenas em alguns itens, você pode usar os generic table calculation cards; alguns deles também permitem filtrar por expressões regulares.
 
-<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt="Cartão de cálculo para a coluna MTZ com uma regra Material Surcharge e um filtro regex de Item Number para números de artigo que começam por 01, 06, 9, 001 ou 000"><figcaption></figcaption></figure>
 
 Acima está um exemplo de cálculo para MTZ com um filtro para números de item que começam com 01, 06, 9, 001 ou 000.
 
@@ -149,7 +149,7 @@ Com uma configuração manual, é recomendável dividir os cálculos que depende
 
 **Executar o fluxo**
 
-<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt="Cartão Run workflow Mtz Into Discount do construtor de fluxos de trabalho com uma secção Conditions para executar um fluxo de trabalho de seguimento"><figcaption></figcaption></figure>
 
 Com este card você pode especificar o nome de um workflow que deve ser executado após o workflow atual, caso suas condições sejam atendidas, e após os then cards anteriores do workflow atual. Embora ele priorize workflows executáveis e ativos, também permite executar workflows desativados se o documento atender às condições do workflow.
 

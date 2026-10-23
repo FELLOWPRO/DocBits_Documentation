@@ -4,11 +4,11 @@ Per mantenere una visione d'insieme, puoi assegnare ai workflow intestazioni div
 
 Crea un nuovo Workflow: fai clic su + ADD WORKFLOW
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Area di lavoro del Workflow Builder con il modello Test Simple Workflow, tre righe Wenn, Und e Dann e un pulsante Karte hinzufügen sotto ciascuna](<../../.gitbook/assets/workflow_add_button.png>)
 
 Puoi utilizzare questi workflow (Test 1,2,3) per assegnare automaticamente i vari documenti al dipendente giusto in azienda.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Dashboard Workflow List con la riga Test Simple Workflow e le colonne Name, Type, Workflow Execution Order, Updated By, Created On e Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Se una fattura o un altro documento supera un determinato importo totale che richiede una revisione e un'approvazione preventive, questi documenti possono essere assegnati immediatamente alla persona corretta.
 

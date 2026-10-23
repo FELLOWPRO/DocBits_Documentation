@@ -296,3 +296,32 @@ Para criar uma nova exportação:
 * **Ficheiro de mapeamento M3 TOML** Selecione um arquivo de mapeamento do gerenciador de arquivos ou use a opção selecionar Toml para usar um toml criado com o gerenciador de regras. [Precisa de ajuda para criar um? Veja o Guia do Gerenciador de Regras](rule-manager/)
 
 </details>
+
+
+## Tutorial em vídeo: Configurar e testar a exportação para o ERP
+
+A personagem e a voz são sintéticas. A gravação mostra a interface de teste real do DocBits com faturas de formação sintéticas.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/pt.mp4" %}
+Configurar e testar a exportação para o ERP
+{% endembed %}
+
+[Ver com legendas e capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/pt.html)
+
+Alguns rótulos nativos podem permanecer noutro idioma. Os identificadores técnicos dos campos são preservados.
+
+Utilizo uma configuração e um tipo de documento próprios para este teste. As faturas contêm dados fictícios. O nosso recetor de teste verifica a transmissão, sem efetuar lançamentos num ERP de produção. Não altero as outras integrações.
+
+Na configuração de exportação, verifico o tipo de documento, a organização e o tipo de exportação. Este exemplo utiliza Generic API na nuvem. As credenciais JSON e o mapeamento de campos TOML são ficheiros separados. Em projetos reais, o sistema de destino, as permissões e a suborganização devem corresponder ao processo pretendido.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-pt-recovery-export-v1.png" alt="Configuração de exportação limitada ao tipo de documento de formação"><figcaption><p>Configuração de exportação limitada ao tipo de documento de formação</p></figcaption></figure>
+
+No mapeamento corrigido, o campo invoice_id do DocBits fornece o número da fatura enviado ao recetor de teste. São também mapeados o fornecedor, o montante total e a moeda. Este teste verifica os dados de cabeçalho. As linhas da fatura e os lançamentos no ERP exigem verificações de negócio separadas em cada projeto.
+
+Carrego o ficheiro TOML corrigido e guardo a configuração. Depois, abro-a novamente e verifico se a alteração foi guardada. As credenciais de teste mantêm-se; as credenciais de produção não devem aparecer na gravação.
+
+Regresso à fatura de teste cuja exportação falhou e reinicio a exportação exatamente uma vez. Aguardo que o processamento termine. A simples aceitação do pedido não comprova que a transmissão foi bem-sucedida.
+
+O DocBits mostra agora a fatura como concluída. Além disso, verifico o comprovativo de receção do recetor de teste. O número da fatura, o fornecedor, o montante e a moeda coincidem com a fatura de teste. A autenticação e a transmissão foram bem-sucedidas. O recetor de teste não confirma qualquer lançamento no ERP.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-pt-recovery-export-v1.png" alt="Receção real pelo destinatário de teste; sem lançamento no ERP"><figcaption><p>Receção real pelo destinatário de teste; sem lançamento no ERP</p></figcaption></figure>

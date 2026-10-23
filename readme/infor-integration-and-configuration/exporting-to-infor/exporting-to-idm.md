@@ -4,10 +4,10 @@ Si vous souhaitez uniquement que votre document soit exporté vers IDM ou Docume
 
 Sélectionnez l’option suivante pour l’exportation.
 
-![](https://lh7-us.googleusercontent.com/ELtWrfGudPjyRoKqvszlrAlLX83byrejUsmJh0Z7VjBOQ2VNrVJ-B-o\_\_NoziePWk8HCMIBL2cvGo\_ORL\_oS6LluvfIUdNHuVOKzUQB\_HgxyPNgrjnIb3P5N24KvXiavFL7aBPQZ1gIimSyaxosm47c)
+![Boîte de dialogue Select Integration listant Webhook, SFTP, SMB, Flow, ZUGFeRD, Infor ION, Infor IDM + ION BOD, Infor IDM + LN et Infor IDM + M3](https://lh7-us.googleusercontent.com/ELtWrfGudPjyRoKqvszlrAlLX83byrejUsmJh0Z7VjBOQ2VNrVJ-B-o\_\_NoziePWk8HCMIBL2cvGo\_ORL\_oS6LluvfIUdNHuVOKzUQB\_HgxyPNgrjnIb3P5N24KvXiavFL7aBPQZ1gIimSyaxosm47c)
 
 Vous devrez téléverser un fichier ION API ainsi qu'un fichier de mappage IDM.
 
-![](https://lh7-us.googleusercontent.com/AVoWKz3ocf-1KTrXCGmUmxQzY8brTeR0aIaBAvaB6rV5Otb\_BjYOCm0rzoAXV-ZNxcs\_95yZARY\_MiKPm8-FXDU9oOSQslpc\_JmtiF6dLaaPTQ8TwslL8xySiz2FefX1op73oOQHOfEs\_Yq-RKcmdv4)
+![Boîte de dialogue de configuration d'exportation avec le champ Title, les menus déroulants Sub-Organizations et Document Type et les cases à cocher pour ION-Mapping File et IDM Mapping File](https://lh7-us.googleusercontent.com/AVoWKz3ocf-1KTrXCGmUmxQzY8brTeR0aIaBAvaB6rV5Otb\_BjYOCm0rzoAXV-ZNxcs\_95yZARY\_MiKPm8-FXDU9oOSQslpc\_JmtiF6dLaaPTQ8TwslL8xySiz2FefX1op73oOQHOfEs\_Yq-RKcmdv4)
 
 La manière de les obtenir a été abordée plus tôt dans cette documentation. Fichier ION API et fichier de mappage IDM.

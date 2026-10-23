@@ -6,7 +6,7 @@ Par défaut, des champs spécifiques dans le processus de validation des champs 
 
 Vous pouvez toujours vérifier la formule utilisée en survolant l'icône d'information.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1_fr.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1_fr.png" alt="Écran de validation de document avec le panneau de vérifications automatiques listant des options à cocher comme Dokumenttyp, Rechnungsdatum et Lieferant à côté de la liste des champs"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Remarque :**</mark> L'icône d'information n'est visible que si une valeur a été extraite pour le champ correspondant.
 

@@ -104,7 +104,7 @@ Il est également possible de saisir le statut dans le flux de travail, afin que
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-fr.png" alt="Action de changement de statut dans un brouillon de workflow."><figcaption><p>Action de changement de statut dans un brouillon de workflow.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt="Concepteur de workflows avec trois cartes logiques attribuant des documents par responsable et type de document au Invoice reviewer, Delivery-note reviewer et Order reviewer"><figcaption></figcaption></figure>
 
 Par exemple, si certaines informations ou des informations importantes manquent dans un document, mais qu'elles sont importantes et doivent être incluses pour un traitement ultérieur, vous pouvez configurer le flux de travail de sorte que ces documents soient immédiatement transmis à l'acheteur et à un remplaçant (substitut).
 
@@ -141,7 +141,7 @@ Cette logic card est essentielle pour garantir que les détails d'une confirmati
 
 Si vous avez un calcul différent pour les surcharges, ou si vous ne les avez que sur certains articles, vous pouvez utiliser les cartes génériques de calcul de tableau ; certaines d'entre elles permettent également de filtrer par expressions régulières.
 
-<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt="Carte de calcul pour la colonne MTZ avec une règle Material Surcharge et un filtre regex Item Number pour les numéros d'article commençant par 01, 06, 9, 001 ou 000"><figcaption></figcaption></figure>
 
 Ci-dessus se trouve un exemple de calcul pour MTZ avec un filtre pour les numéros d'article commençant par 01, 06, 9, 001 ou 000.
 
@@ -149,7 +149,7 @@ Avec une configuration manuelle, il est conseillé de séparer les calculs qui d
 
 **Exécuter le flux**
 
-<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt="Carte Run workflow Mtz Into Discount du générateur de workflows avec une section Conditions pour exécuter un workflow de suivi"><figcaption></figcaption></figure>
 
 Avec cette carte, vous pouvez spécifier le nom d'un flux de travail à exécuter après le flux de travail actuel si ses conditions sont remplies, et après les cartes then précédentes du flux de travail actuel. Bien qu'elle priorise les flux de travail exécutables et actifs, elle vous permet également d'exécuter des flux de travail désactivés si le document remplit les conditions du flux de travail.
 

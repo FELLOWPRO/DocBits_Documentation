@@ -31,6 +31,18 @@ Once the **Supplier Portal** feature is enabled, a new **Supplier Settings** sec
 
 A detailed guide to all Supplier Settings can be found [here](../../settings/supplier-setting/).
 
+## Video: Find suppliers and maintain their details
+
+This English admin tutorial shows how to search the supplier dashboard, change a city and postcode, save, and verify the saved values after reloading. It uses three fictional example companies and a configured form with name, city and postcode. The fields available in your organisation depend on your supplier layout. The example city is Cologne, displayed using its German name, **Köln**.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/en.mp4" %}
+Find a supplier, update their details and check that the changes were saved.
+{% endembed %}
+
+[Open the video with optional English subtitles and a transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/en.html).
+
+Saving master data does not change the supplier's Pending Registration status or grant business approval. This video does not send invitations or approve suppliers.
+
 ## Supplier Dashboard <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 You can access the **Supplier Dashboard** from the left-hand menu, as shown below.

@@ -1,41 +1,59 @@
 # Layout Builder
 
-Use the Layout Builder to arrange the fields and controls that people see when they validate a document. Changes to the layout affect the selected document type and layout, so check your selection before saving.
+Use the Layout Builder to arrange the fields and controls that people see when they validate or approve a document. A layout belongs to one document type, one origin and one layout type, so check those three at the top of the page before you save.
 
 ## Open the layout
 
 1. Open **Settings → Document Types**.
 2. Select the document type you want to edit and open **Layout Builder**. For a document subtype, open that subtype's Layout Builder action.
-3. Check the selection at the top left. The example below uses the **INVOICE** document type, the **DEFAULT** origin, and the **Field Validation** layout. If Layout Builder is unavailable, an administrator may need to enable the module for your organization.
+3. Check the header. The left selector is the **origin** (for example **Default**), followed by **Document Type** (for example **Invoice**) and **Layout type** (for example **Field Validation**). Each selector opens a list; choosing another entry loads that layout. If Layout Builder is unavailable, an administrator may need to enable the module for your organization.
 
-<figure><img src="../../../.gitbook/assets/dbdc-194-layout-overview-en.png" alt="English Layout Builder for an invoice in DocBits Documentation Test A, with origin selector, Elements tab, groups and field arrangement"><figcaption><p>Confirm the document type, origin, and layout before editing.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-overview.png" alt="The Layout Builder for an invoice in DocBits, with origin, document type and layout type selectors, the Structure, Fields and Elements tabs, the layout canvas and the Properties panel on the right"><figcaption><p>The Layout Builder: the header selectors, the element lists on the left, the canvas in the middle and the Properties panel on the right.</p></figcaption></figure>
 
-## Arrange groups and fields
+## Work with the header
 
-The **Elements** tab contains three lists:
+* **Document Type** and **Layout type** switch between layouts. The page reloads the layout you choose.
+* Next to **Save**, DocBits shows whether the layout has **unsaved changes**. After a save it shows when the layout was last saved.
+* **Save** stores the layout for the selected document type, origin and layout type.
+* The **More** menu (three dots) holds **Auto Generate template**, **Apply Default layout to Origins**, **Use default template**, **Edit JSON**, **Copy JSON** and **Layout settings**. **Auto Generate template** and **Use default template** replace a custom layout, so check the selected document type and layout first. **Edit JSON** is for advanced configuration and should only be used when you understand the template format.
+* If you leave the page with unsaved changes, DocBits asks whether to save or discard them.
 
-| List | Use it for |
+## Find elements: Structure, Fields, Elements
+
+The left side has three tabs:
+
+| Tab | Use it for |
 | --- | --- |
-| **Groups** | Arrange sections such as Invoice details, Payment details, and Purchase Order. |
-| **Fields** | Add fields configured for the selected document type. Create or rename reusable document fields in [Document Types](README.md) first. |
-| **Form Elements** | Add presentation and interaction controls such as Text, Label, Check Box, separators, tables, buttons, and subgroups. |
+| **Structure** | See the layout as a tree. Groups and their fields are listed in the order they appear on the canvas, with the number of fields placed and available. |
+| **Fields** | All fields configured for the document type, grouped by field group and collapsed by default. The filter switches between **All**, **Unused** and **Hidden** fields, and the technical field name is shown under the field label. |
+| **Elements** | Presentation and interaction controls such as Text, Label, Check Box, separators, tables, buttons and subgroups. |
 
-Select or drag an item into the central layout. The central area shows how the groups and fields are arranged. A group title tells the person validating the document what belongs in that section.
+<figure><img src="../../../.gitbook/assets/layout-builder-structure.png" alt="The Structure tab of the Layout Builder showing the groups Invoice details, Payment details, Purchase Order and Delivery Details expanded into their fields"><figcaption><p>The Structure tab shows the built layout as a tree of groups and fields.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-194-form-elements-en.png" alt="Expanded Form Elements list in the English Layout Builder, showing text, label, checkboxes, separators, tables, buttons and subgroup controls"><figcaption><p>Open Form Elements to see the controls available for this layout.</p></figcaption></figure>
+Select an item to add it, or drag it into the canvas. A group title tells the person validating the document what belongs in that section. Create or rename reusable document fields in [Document Types](README.md) first.
+
+## Work on the canvas
+
+* **Main layout** shows the layout of the document itself. **Table** shows the table layout used for line items.
+* **Document** opens or closes the example document next to the canvas, so you can compare the layout with a real document.
+* Groups are drawn as cards; the fields inside a group can be arranged in rows and given different widths.
 
 ## Change an element's properties
 
-Select an element in the layout, then open **Properties** on the left. The options depend on the selected element. In the example shown, you can change its **Label**, inspect its **Field Name**, and set **Element Width in Percentage**. Use the width to give fields more or less space in a row; check the result in the central layout. For more detail, see [Configuring Field Properties](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+Select an element or a group on the canvas. **Properties** on the right is always visible and is organised in sections:
 
-<figure><img src="../../../.gitbook/assets/dbdc-194-properties-en.png" alt="Properties tab for a selected layout element, with label, field name and element width percentage"><figcaption><p>Select an element before changing its properties.</p></figcaption></figure>
+* **Display** – label, field name, label position and element width.
+* **Behaviour** – read-only, hidden and tab index.
+* **Values & lists** – the values offered for the element.
+* **Automation** – rules that fill or change the element.
+* **Borders & spacing** – the appearance of the element.
+
+For the width, choose one of the presets (25, 33, 50, 66, 75 or 100 percent) instead of typing a value; check the result on the canvas. Which sections and options appear depends on the selected element. For more detail, see [Configuring Field Properties](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
 ## Review and save
 
-The right side of the Layout Builder is the document preview area. Its upload control can be used with an example document when a preview is needed. In this sandbox capture, the example document image did not load, so these screenshots demonstrate the editor and properties only.
-
-Use **Save** at the top right when the arrangement is correct. **Auto Generate template** and **Use default template** can replace a custom layout; review the selected document type and layout before using either action. **Edit JSON** is for advanced configuration and should be used only when you understand the template format. For origin-specific layouts, see [Origin Layouts](origin-layouts.md).
+Arrange the groups and fields, check the layout on the canvas and use **Save** in the header when the result is correct. For origin-specific layouts, see [Origin Layouts](origin-layouts.md).
 
 {% hint style="info" %}
-The screenshots show synthetic settings in DocBits Documentation Test A with English selected in the application. No layout was saved or replaced while capturing them.
+The screenshots show synthetic settings in the DocBits test organization with English selected in the application. No layout was saved or replaced while capturing them.
 {% endhint %}

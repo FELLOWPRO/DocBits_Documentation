@@ -4,11 +4,11 @@ Pour garder une vue d'ensemble, vous pouvez donner aux flux de travail différen
 
 Créer un nouveau flux de travail : Cliquez sur + ADD WORKFLOW
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Canevas Workflow Builder avec le modèle Test Simple Workflow, trois lignes Wenn, Und et Dann et un bouton Karte hinzufügen sous chacune](<../../.gitbook/assets/workflow_add_button.png>)
 
 Vous pouvez utiliser ces flux de travail (Test 1, 2, 3) pour assigner automatiquement divers documents au bon employé de l'entreprise.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Tableau de bord Workflow List avec la ligne Test Simple Workflow et les colonnes Name, Type, Workflow Execution Order, Updated By, Created On et Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Si une facture ou un autre document dépasse un certain montant total qui nécessite un examen et une approbation préalables, ces documents peuvent être immédiatement assignés à la bonne personne.
 

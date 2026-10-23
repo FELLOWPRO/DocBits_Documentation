@@ -1,6 +1,6 @@
 # Assign a Task with Title
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-04-de-20261023.png" alt="Aufgabe Weisen Sie Aufgabe/Benachrichtigung mit Titel: Titel , Beschreibung: Beschreibung und Priorität: Priorität zur Zuweisungstyp Rückgabe der Entscheidungstabelle zu. Benachrichtigen Sie sie per E-Mail: E-Mail senden ." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

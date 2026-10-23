@@ -1,6 +1,6 @@
 # AI Calculation for Cost Increase Surcharges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-action-03-de-20261023.png" alt="Aktion AI-Berechnung für Kostensteigerungszuschläge" width="563"><figcaption></figcaption></figure>
 
 ## Zweck:
 

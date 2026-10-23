@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-14-de-20261023.png" alt="Mit Bestellung vergleichen Vergleich der Gesamtkosten im Feld Feld Name Operator entsprechende Zusatzkosten in der Bestellung mit Toleranzen von Toleranzbetrag Toleranz Typ . Zusatzkosten-ID als Ende des Feldnamens nach Trennzeichen Wert ." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

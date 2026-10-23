@@ -1,6 +1,6 @@
 # Confirmed Delivery Date
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-01-de-20261023.png" alt="Mit Bestellung vergleichen Art des Liefertermins Lieferdatum Operator akzeptiertes Lieferdatum in Stammdaten-Lookup-Tabelle Stammdaten-Tabelle" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 

@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-04-de-20261023.png" alt="Mit Bestellung vergleichen Steuer im Belegfeld Feld Name ist Operator zur Steuer in der Bestellung mit Gebühren-ID in Tabelle Stammdaten-Tabelle mit Toleranzen Toleranzbetrag Toleranz Typ ." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

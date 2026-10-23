@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-08-de-20261023.png" alt="Aufgabe Ordnen Sie das Dokument nacheinander zu und erstellen Sie eine Aufgabe/Benachrichtigung für Benutzer mit Titel: Titel , Beschreibung: Beschreibung der Priorität Priorität . Benachrichtigen Sie den Benutzer per E-Mail E-Mail senden . Setzen Sie die Zuweisungspriorität von Wert ." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 

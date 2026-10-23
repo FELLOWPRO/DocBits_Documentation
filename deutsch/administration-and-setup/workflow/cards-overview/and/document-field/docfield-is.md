@@ -1,6 +1,6 @@
 # Docfield is
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-04-de-20261023.png" alt="Dokument Feld Dokumentfeld Feld Name ist Operator Feld Wert" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

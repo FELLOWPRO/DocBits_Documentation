@@ -49,7 +49,9 @@ Questa guida ti accompagna nel collegamento del **database in sola lettura di Do
 * Apri lo schema **`public`**.
 * Seleziona le tabelle che desideri importare.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
+
+![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Scegli:
   * **Load** → importa direttamente in Power BI

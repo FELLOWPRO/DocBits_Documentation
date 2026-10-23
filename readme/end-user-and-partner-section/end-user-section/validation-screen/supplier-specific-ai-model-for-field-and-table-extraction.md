@@ -1,21 +1,15 @@
 # Modello di IA Specifico per Fornitore per l'Estrazione di Campi e Tabelle
 
-Nella sezione degli strumenti della **Schermata di validazione**, puoi scegliere il modello di IA utilizzato per l'**Estrazione dei campi** e l'**Estrazione delle tabelle**.\
-Il **modello di IA** selezionato viene applicato solo a tutti i documenti del fornitore corrente.
+Gli strumenti della schermata di convalida consentono di scegliere il modello per l’estrazione di campi e tabelle nel contesto del template corrente. La preferenza è salvata per organizzazione e template di estrazione (`tfidf_id`); non modifica automaticamente tutti i template o i documenti storici dello stesso fornitore. In assenza di una preferenza specifica viene usata la configurazione applicabile dell’organizzazione.
 
-Per cambiare il modello, apri il menu delle opzioni cliccando sul pulsante **Altre opzioni** (i tre punti) sul lato destro dello schermo, quindi scegli uno dei modelli disponibili:<br>
+Aprire **Altre opzioni** e il selettore del modello AI. Il menu offre **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** e **Auto Nexus**. Verificare disponibilità e costi attuali dell’ambiente e le condizioni concordate. Nessuna opzione è sempre la più precisa o veloce; Fast non è un valore predefinito universale.
 
-* **Full** – Precisione massima; costa 2 token per documento
-* **Fast** – Livello predefinito; costa 1 token per documento
-* **Nexus** – Costa 1 token per documento
-* **Nexus Flash** – Livello più rapido della famiglia Nexus; costa 1 token per documento
-* **Auto** – DocBits decide documento per documento se basta Fast o se serve Full; costa 1 token per documento
-* **Auto Nexus** – Come Auto, ma limitato alla famiglia di modelli Nexus; costa 1 token per documento
+Un cambio può richiedere conferma e riavviare l’estrazione. Controllare prima il documento e l’ambito della modifica. Aprire il menu non cambia la preferenza; le illustrazioni non dimostrano l’esecuzione di un cambio di modello.
 
 <figure><img src="../../../.gitbook/assets/dbdc862-supplier-menu-it-20261012.png" alt="Menu delle opzioni della schermata di validazione con il menu a discesa Modello AI"><figcaption><p>Apri il menu delle opzioni e scegli il modello di IA per questo fornitore.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dbdc862-supplier-options-it-20261012.png" alt="Menu a discesa Modello AI aperto con Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus"><figcaption><p>Il menu a discesa Modello AI con le sei opzioni disponibili.</p></figcaption></figure>
 
-Se i risultati dell'**estrazione dei campi** o dell'**estrazione delle tabelle** non sono soddisfacenti, prova a passare a un altro modello per migliorare la precisione.
+Confrontare i modelli con documenti di test autorizzati e controllare valori, tempi e costi. Un cambio può rielaborare un documento e non garantisce un miglioramento. Per configurare il valore dell’organizzazione o esaminare le preferenze dei template, consultare la documentazione collegata.
 
-Per configurare il modello di IA **globalmente per i fornitori senza un modello personalizzato** o per **gestire quale modello è attivo per ogni fornitore**, consulta la documentazione corrispondente [**qui**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+[**qui**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)

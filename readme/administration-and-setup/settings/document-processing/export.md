@@ -106,7 +106,7 @@ Aby utworzyć nowy eksport:
 * **Tryb eksportu nazwy pliku** Określa, czy wyeksportowany plik zachowuje oryginalną nazwę pliku, czy jest zmieniany na ID dokumentu DocBits.
 * **Uwzględnij historię dokumentu** Po włączeniu wyeksportowany plik będzie zawierał historię dokumentu na podstawie logów dostępnych w panelu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
+![Menu akcji dokumentu z opcjami Validate, Assign to, Document-flow, Download, Restart, Document Logs, Workflow Logs i Delete](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
 
 <figure><img src="../../../.gitbook/assets/prior-u016-pl.png" alt="Niezapisane zaawansowane opcje eksportu SFTP."><figcaption><p>Niezapisane zaawansowane opcje eksportu SFTP.</p></figcaption></figure>
 

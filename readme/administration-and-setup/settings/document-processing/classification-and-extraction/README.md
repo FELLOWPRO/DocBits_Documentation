@@ -29,17 +29,17 @@ Aby aktywować tę funkcję:
 1. Przejdź do sekcji **Podział dokumentu**.
 2.  Otwórz menu rozwijane.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle, na pustym panelu AI-Modelle widnieje napis Kein Datensatz gefunden"><figcaption></figcaption></figure>
 3.  Wybierz **Podziel według kodu kreskowego/QR kodu**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle oraz lewą nawigacją niemieckich ustawień DocBits"><figcaption></figcaption></figure>
 
 Będziesz wtedy mieć możliwość:
 
 * Wybierz jeden lub więcej typów kodów kreskowych, które mają zostać wykryte.
 *   Określ wzór wyrażenia regularnego, do którego musi pasować kod kreskowy, aby uruchomić podział dokumentu.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt="Panel wyników ekstrakcji pokazujący rozpoznane pola z ocenami pewności obok okna podglądu dokumentu"><figcaption></figcaption></figure>
 
 ## Formatowanie kwot
 
@@ -148,7 +148,7 @@ W sekcji **Zasady klasyfikacji** możesz zdefiniować konkretne wzorce i kryteri
 
 Aby uzyskać dostęp do tej sekcji, kliknij zakładkę **Zasady klasyfikacji** u góry strony.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle oraz lewą nawigacją niemieckich ustawień DocBits"><figcaption></figcaption></figure>
 
 ### **Dodaj nową regułę klasyfikacji**
 
@@ -156,7 +156,7 @@ Aby utworzyć nową regułę:
 
 1.  Kliknij **Dodaj** w prawym górnym rogu.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt="Strona ustawień ekstrakcji pokazująca listę mapowania pól z nazwami kolumn, polami wejściowymi i przyciskiem Speichern"><figcaption></figcaption></figure>
 2. Wypełnij następujące pola:
    * **Wzorzec**: Wzorzec wyrażenia regularnego, którego system powinien szukać, aby wywołać klasyfikację.
    * **Type**: Gdzie należy szukać wzorca (np. **Kod kreskowy**).
@@ -164,10 +164,10 @@ Aby utworzyć nową regułę:
    * **Typ dokumentu**: Określ typ dokumentu, który ma zostać przypisany po dopasowaniu wzorca.
    *   **Podtyp dokumentu** _(opcjonalnie)_: Określ podtyp w celu uzyskania bardziej szczegółowej klasyfikacji.
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt="Strona Zuordnung von Dokumententypen z listą rozwijaną Bereich oraz przełącznikami No Classification, No Splitting i Database Sharing-Klassifikation"><figcaption></figcaption></figure>
 3.  Kliknij **Zapisz**, aby zapisać regułę klasyfikacji.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle, na pustym panelu AI-Modelle widnieje napis Kein Datensatz gefunden"><figcaption></figcaption></figure>
 
 ### **Edytuj regułę klasyfikacji**
 
@@ -175,14 +175,14 @@ Aby edytować istniejącą regułę:
 
 1.  Kliknij trzy kropki w kolumnie **Akcje**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle oraz lewą nawigacją niemieckich ustawień DocBits"><figcaption></figcaption></figure>
 2.  Select **Edit**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt="Strona konfiguracji klasyfikacji z listą typów dokumentów, sekcją próbek treningowych i elementem do przesyłania"><figcaption></figcaption></figure>
 3. Wprowadź żądane zmiany.
 4.  Kliknij **Zapisz**, aby zastosować aktualizacje.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle, na pustym panelu AI-Modelle widnieje napis Kein Datensatz gefunden"><figcaption></figcaption></figure>
 
 ### **Usuń regułę klasyfikacji**
 
@@ -190,10 +190,10 @@ Aby usunąć regułę:
 
 1.  Kliknij trzy kropki w kolumnie **Akcje**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle oraz lewą nawigacją niemieckich ustawień DocBits"><figcaption></figcaption></figure>
 2.  Select **Delete**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt="Ekran ustawień klasyfikacji z panelem sugestii typów dokumentów, wartościami pewności i listą pól po prawej stronie"><figcaption></figcaption></figure>
 
 ## Modele AI
 
@@ -203,14 +203,14 @@ Sekcja **Modele AI** wyświetla wszystkie specjalnie wytrenowane modele, które 
 
 Aby otworzyć tę sekcję, kliknij zakładkę **Modele AI** znajdującą się na górze strony.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt="Strona Trainingsdaten z otwartą kartą Table Extraction pokazująca tabelę mapowania kolumn CSV z kolumnami Spalte, Typ i Werte"><figcaption></figcaption></figure>
 
 ### Kategorie modeli
 
 Modele są podzielone na kategorie. Pod każdą nazwą kategorii pokazana jest liczba modeli, które zawiera.\
 Kliknij kategorię, aby wyświetlić jej szczegóły.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt="Strona ustawień Classification And Extraction z zakładkami Allgemein, Klassifizierungsregeln i AI-Modelle, na pustym panelu AI-Modelle widnieje napis Kein Datensatz gefunden"><figcaption></figcaption></figure>
 
 U góry strony wybranej kategorii zobaczysz najważniejsze informacje o każdym modelu:
 
@@ -228,7 +228,7 @@ Wszystkie modele w danej kategorii są wymienione w tabeli zawierającej następ
 * **Podtypy dokumentów**: Podtypy, na które dokument jest dalej klasyfikowany.
 * **Priority**: Poziom priorytetu określający pozycję modelu w kolejce klasyfikacyjnej.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt="Ekran walidacji z panelem sugestii klasyfikacji po lewej stronie i wyekstrahowaną tabelą z kolumnami Position, Menge i Preis"><figcaption></figcaption></figure>
 
 ### Edycja modelu
 
@@ -236,10 +236,10 @@ Aby edytować model:
 
 1.  Kliknij ikonę pióra w kolumnie **Akcje** obok modelu, który chcesz edytować.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt="Ekran ustawień klasyfikacji dokumentów z polami reguł ekstrakcji, listą rozwijaną wyboru modelu i przyciskiem zapisu"><figcaption></figcaption></figure>
 2. Zaktualizuj dostępne pola:
    * **Następny model**: Wybierz model, który powinien przetwarzać dane wyjściowe z bieżącego modelu.
    * **Typ dokumentu**: Wybierz typ dokumentu, jako który model powinien klasyfikować dane wejściowe.
 3.  Kliknij **Zapisz**, aby zastosować zmiany.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt="Strona Trainingsdaten z zakładkami Language Models i Table Extraction oraz tabelą wytrenowanych modeli z kolumnami Name, Zugewiesene Dokumente, Datum i Bearbeiten"><figcaption></figcaption></figure>

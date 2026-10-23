@@ -20,7 +20,7 @@ Możesz pomóc w szkoleniu DocBits, aby rozpoznawał te pola, ręcznie identyfik
 Powtórz ten proces dla wszystkich wymaganych pól.\
 Gdy wszystkie niezbędne pola zostaną wypełnione, **kliknij "Zapisz Reguły"**, aby zapisać szkolenie. Zapewnia to, że DocBits uczy się, gdzie znaleźć każdy kawałek informacji dla podobnych dokumentów w przyszłości.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![Trening pól nagłówkowych na Apple_invoice.pdf z wyróżnionymi w dokumencie Company Name, Company Street i Company PLZ](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Po zapisaniu, twój dokument jest gotowy do wyeksportowania — a następnym razem DocBits automatycznie wydobyje przeszkolone pola.
 

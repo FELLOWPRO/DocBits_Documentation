@@ -17,7 +17,7 @@ Domyślny kraj podatkowy dla eksportu jest ustawiony na **DE (Niemcy)**, aby zap
 * Otwórz konfigurację eksportu, którą chcesz zmodyfikować.
 *   Kliknij **Pobierz**, aby pobrać plik mapowania.\\
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt="Okno dialogowe Infor LN dla typu dokumentu Invoice z tytułem Invoice LN, polami wyboru ION-Mapping File, IDM Mapping File i LN-Mapping File oraz przyciskiem DOWNLOAD"><figcaption></figcaption></figure>
 * Otwórz plik w edytorze tekstu.
 
 #### 2. Zmodyfikuj plik mapowania
@@ -52,7 +52,7 @@ StaticFields=FinancialCompany,TaxCountry
 SF_TaxCountry=FR
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (415).png" alt="Fragment pliku mapowania LN ze StaticFields=FinancialCompany,RateDeterminer,ExternalRateFactor oraz wpisami HeaderFields takimi jak HF_SupplierCode=supplier_id i HF_InvoiceCurrency=currency"><figcaption></figcaption></figure>
 
 **Opcja 2: Dynamiczne mapowanie z pola DocBits**
 
@@ -82,7 +82,7 @@ HeaderFields=SupplierCode,TaxCountry
 HF_TaxCountry=tax_country_1
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (411).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (411).png" alt="Fragment pliku mapowania LN z dodanym TaxCountry w wierszu StaticFields i pozycją HF_TaxCountry zmapowaną na liście HeaderFields"><figcaption></figcaption></figure>
 
 ### Podsumowanie
 

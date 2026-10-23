@@ -4,7 +4,7 @@ Aby skonfigurować swoje ustawienia, kliknij ikonę Użytkownika znajdującą si
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
-<figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config.png" alt="Wąska kolumna menu użytkownika w DocBits z przełącznikiem trybu ciemnego, wyborem języka i opcją wylogowania"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/prior-u031-pl.png" alt="Menu użytkownika i wybór języka."><figcaption><p>Menu użytkownika i wybór języka.</p></figcaption></figure>
 
@@ -31,7 +31,7 @@ W tej sekcji możesz dostosować następujące preferencje:
 * **Rozmiar Czcionki:** Dostosuj rozmiar tekstu dla lepszej czytelności.
 * **Tryb Podwójnego Monitora:** Włącz tę funkcję, jeśli używasz dwóch monitorów.
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3.png" alt="Okno dialogowe Edit User z wzorem daty %d.%m.%Y, formatowaniem kwot Deutsch, rozmiarem czcionki od małej do dużej, polami nazwy Max Mustermann, trybem podwójnego monitora oraz polami hasła"><figcaption></figcaption></figure>
 
 **Wyloguj się**
 

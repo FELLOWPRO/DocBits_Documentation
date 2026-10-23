@@ -30,7 +30,7 @@ Po włączeniu to ustawienie pozwala zdefiniować tolerancje dla **Ilości** i/l
     * **Procent:** Wskazuje tolerancję procentową.
     * **Wartość:** Wskazuje stałą kwotę, o którą wartość może się różnić.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fs661pgIKUsLzwhxU4kes%2Fimage.png?alt=media\&token=6d152cde-14d8-4caf-bcc8-acf1a1fe497c)
+![Strona PO Tolerance Setting z polami Quantity Tolerance i Unit Price Tolerance ustawionymi na 5 procent](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fs661pgIKUsLzwhxU4kes%2Fimage.png?alt=media\&token=6d152cde-14d8-4caf-bcc8-acf1a1fe497c)
 
 #### **Przykładowy scenariusz:**
 
@@ -45,7 +45,7 @@ Po włączeniu to ustawienie pozwala zdefiniować tolerancje dla **Ilości** i/l
   * Pozycja 1 **nie jest oznaczona** jako niezgodność, ponieważ 4,80 $ mieści się w 5% od 5,00 $.
   * Pozycja 2 **jest oznaczona** jako niezgodność, ponieważ 2,20 $ przekracza dozwoloną 5% odchylenie od 2,00 $. Użytkownik musi podjąć działania w celu rozwiązania niezgodności przed dalszym przetwarzaniem faktury.​
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fn5ki5044GfbGekHWyjhs%2Fimage.png?alt=media\&token=6e1e641b-4d6d-4236-a375-72edcfc98529)
+![Tabela porównania dopasowania PO z kolumnami UNIT, PO QUANTITY, INVOICE QUANTITY, PO UNIT PRICE i INVOICE UNIT PRICE](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fn5ki5044GfbGekHWyjhs%2Fimage.png?alt=media\&token=6e1e641b-4d6d-4236-a375-72edcfc98529)
 
 ### Ustawienie do konfigurowania dodatkowych ustawień tolerancji zamówienia zakupu
 

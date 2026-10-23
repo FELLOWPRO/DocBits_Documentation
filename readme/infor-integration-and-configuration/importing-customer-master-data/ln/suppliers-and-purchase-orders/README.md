@@ -6,39 +6,39 @@ Musisz utworzyć punkt połączenia DocBits API (Connection Point), aby późnie
 
 Najpierw w InforOS przejdź do ION Desk → Connect → Connection Points
 
-![](https://lh7-us.googleusercontent.com/852EogukgFvteFTdg6_a6MPLaBUUqDw1J4x4H2q9BMjaVzZIGlpASC_fImhvAxe-nPBvIvOPFTI0oG8D3RlkAHiFDbLsVrsjaJMD1B5otXyIzPDkvoJvrj-JvMEHao73jgcZ5aKLAP4fCpkP7XV08JE)
+![Nawigacja ION Desk w InforOS z pozycjami menu Home, Data Flows, API Flows i Mappings](https://lh7-us.googleusercontent.com/852EogukgFvteFTdg6_a6MPLaBUUqDw1J4x4H2q9BMjaVzZIGlpASC_fImhvAxe-nPBvIvOPFTI0oG8D3RlkAHiFDbLsVrsjaJMD1B5otXyIzPDkvoJvrj-JvMEHao73jgcZ5aKLAP4fCpkP7XV08JE)
 
 Następnie utwórz nowy punkt połączenia.
 
-![](https://lh7-us.googleusercontent.com/eh1NyUDTS0k-59ePv89PjZpfh5IT0iyFPoV5M9xmo3fmai-Iz0ptQFXgI9onZM-sTICHii32MkAw22AhZZAT5iKs_Hjw3_NDT49XG_KRONAvyK4OuL-bX667F9UGr-juckRmcE2hATOkSQ5x8QlugxU)
+![Strona Connection Points w ION Desk z ikonami paska narzędzi i pustą listą punktów połączenia](https://lh7-us.googleusercontent.com/eh1NyUDTS0k-59ePv89PjZpfh5IT0iyFPoV5M9xmo3fmai-Iz0ptQFXgI9onZM-sTICHii32MkAw22AhZZAT5iKs_Hjw3_NDT49XG_KRONAvyK4OuL-bX667F9UGr-juckRmcE2hATOkSQ5x8QlugxU)
 
 **Wybierz API**
 
 Nadaj punktowi połączenia nazwę i opis, które odzwierciedlają jego charakter i środowisko. Na karcie Connection zaimportuj konto serwisowe utworzone dla środowiska, w którym pracujesz.
 
-![](https://lh7-us.googleusercontent.com/WZKJSckXWzztmEHmySnz6oDSbgFDvPmxku48HCiDJn7O1vTUcpUBYnwDHMT_Ja8aSGd8sFm-YQQYzyn5DnYLw77PQeFwTxcOV6C9aPWHyj2VofevH4S6ciyduIUy5YaNvmuNV6WgVJKOZ89_6oJjuq0)
+![Ustawienia punktu połączenia dla DocBits-DEV-Demo-Import w ION Desk pokazujące Name, Description i konto usługi na karcie Connection](https://lh7-us.googleusercontent.com/WZKJSckXWzztmEHmySnz6oDSbgFDvPmxku48HCiDJn7O1vTUcpUBYnwDHMT_Ja8aSGd8sFm-YQQYzyn5DnYLw77PQeFwTxcOV6C9aPWHyj2VofevH4S6ciyduIUy5YaNvmuNV6WgVJKOZ89_6oJjuq0)
 
 Następnie przełącz się na kartę Documents. Do punktu połączenia musisz dodać następujące BOD-y.
 
-![](https://lh7-us.googleusercontent.com/3Q4XIpxXLixaDqXhh7CRKPl0yUwBce34CqLfw0BGS1UFXsvFIaxD6XelEgbnwfYFUCa5En-C1oAZR74C4lQ15as_M7JIQ20Nf9ZVmrVK8zCGuLS2YtphX4bgQ5uOwS2-MJLLZvsflDC31XLrTZzTKCg)
+![Karta Documents punktu połączenia ION Desk z dokumentami połączeń Ack SupplierInvoice, Sync.PurchaseOrder i Sync.ReceiveDelivery](https://lh7-us.googleusercontent.com/3Q4XIpxXLixaDqXhh7CRKPl0yUwBce34CqLfw0BGS1UFXsvFIaxD6XelEgbnwfYFUCa5En-C1oAZR74C4lQ15as_M7JIQ20Nf9ZVmrVK8zCGuLS2YtphX4bgQ5uOwS2-MJLLZvsflDC31XLrTZzTKCg)
 
 * Ack-SupplierInvoice
 
 Ten BOD służy do sygnalizowania w DocBits, że w Infor wystąpił błąd. Konfiguracja tych dwóch BOD-ów powinna wyglądać podobnie do poniższej (zmienia się nazwa wywołania API (API Call Name) dla każdego z nich)
 
-![](https://lh7-us.googleusercontent.com/vmcVsltij144O3NeysAS2YduFNds98X_VJOpn6v356vAZI3v10SO8-ZMBd7zWyBUJKR9-UMQgGcT2U34HdGgpQ8rhtbFxsmuhgwJ_K6qXbtu04AP67G8jrNwkdj32LCgAhy_m4tnFQJApQehnfX8w5Y)
+![Konfiguracja Send to API dla Ack-SupplierInvoice z niemieckimi kartami Eingabedokument, Anforderungsparameter, Anforderungstext i Einstellungen](https://lh7-us.googleusercontent.com/vmcVsltij144O3NeysAS2YduFNds98X_VJOpn6v356vAZI3v10SO8-ZMBd7zWyBUJKR9-UMQgGcT2U34HdGgpQ8rhtbFxsmuhgwJ_K6qXbtu04AP67G8jrNwkdj32LCgAhy_m4tnFQJApQehnfX8w5Y)
 
 * Sync.PurchaseOrder
 
 Konfiguracja tego BOD-a powinna wyglądać podobnie do poniższej
 
-![](https://lh7-us.googleusercontent.com/LPmOwFuzOnYNjwcKDfpI2S-IYJPKhjHYy4xKSUtB7EXSmPGfnG1lDfR-q6fdk4Uh9QBr-PIWjkpW3clbq31z8BP4_CGgoryKguS4GhR44gCG8xt6FJxRvqV-1i5Ul_3-wFjmiroYcchb5Ou5wBA0DF0)
+![Konfiguracja Send to API dla Sync.PurchaseOrder z Product DocBits-DEV i operacją post CustomerApi/DocBits-DEV/prod/import/purchase_order_bod](https://lh7-us.googleusercontent.com/LPmOwFuzOnYNjwcKDfpI2S-IYJPKhjHYy4xKSUtB7EXSmPGfnG1lDfR-q6fdk4Uh9QBr-PIWjkpW3clbq31z8BP4_CGgoryKguS4GhR44gCG8xt6FJxRvqV-1i5Ul_3-wFjmiroYcchb5Ou5wBA0DF0)
 
 * Sync.ReceiveDelivery
 
 Konfiguracja tego BOD-a powinna wyglądać podobnie do poniższej
 
-![](https://lh7-us.googleusercontent.com/75TPWASsqnzrWdeoyHZ4T23Zm5DbctQLOZKVe4N05ni32ecs0kZmBAihWnr7j0J7TisLvF2lncmUbEGGF9dKz8glVcRe7pmCvmEx8TMTesh0zGeewNpveNIsQqw-gkHvcITTF4a067MhoMgY8Jp6Prc)
+![Konfiguracja Send to API dla Sync.ReceiveDelivery w ION Desk z polami API call name, Product i Operation](https://lh7-us.googleusercontent.com/75TPWASsqnzrWdeoyHZ4T23Zm5DbctQLOZKVe4N05ni32ecs0kZmBAihWnr7j0J7TisLvF2lncmUbEGGF9dKz8glVcRe7pmCvmEx8TMTesh0zGeewNpveNIsQqw-gkHvcITTF4a067MhoMgY8Jp6Prc)
 
 Po skonfigurowaniu tych BOD-ów możesz zapisać punkt połączenia, naciskając ikonę znajdującą się po prawej stronie przycisku Wstecz.
 
@@ -46,7 +46,7 @@ Po skonfigurowaniu tych BOD-ów możesz zapisać punkt połączenia, naciskając
 
 Przepływ danych będzie wyglądał podobnie do poniższego
 
-![](https://lh7-us.googleusercontent.com/yhSunSyXrzx2Q0VIulIa6b989LxG36g5-kyYXGwniU0okKb3cJWDe65GYhpOfkHWTYJR4xdT85Us2Ba7tHhoJsE51I-g-82ZQ2bRM5zkgF5VmaRSno8M5bfhMCbUAw4-xx5oEudkqZWYoeIUUYhJPDU)
+![Diagram przepływu danych ION łączący aplikację LN przez filtr z aplikacją DocBits API i elementem End](https://lh7-us.googleusercontent.com/yhSunSyXrzx2Q0VIulIa6b989LxG36g5-kyYXGwniU0okKb3cJWDe65GYhpOfkHWTYJR4xdT85Us2Ba7tHhoJsE51I-g-82ZQ2bRM5zkgF5VmaRSno8M5bfhMCbUAw4-xx5oEudkqZWYoeIUUYhJPDU)
 
 (Powodem występowania wielu DocBits API jest to, że każde połączenie reprezentuje inne środowisko, więc w zależności od liczby posiadanych środowisk Twój przepływ danych może się nieznacznie różnić)
 
@@ -64,13 +64,13 @@ Tutaj dodajesz aplikację i wybierasz utworzone wcześniej DocBits API
 
 Konfiguracja powinna wyglądać następująco
 
-![](https://lh7-us.googleusercontent.com/OEG6wQFd9LT6J_Ttcsdj7GgM2bTxrS-dpO2EbcVx4vGH1NLtZyaRTbYnr4-SDIWL2hk1zeVGr3bjuebNmwAMEx0S0U7xmNGztp-8HVjRLYyc-3lbQBL8lDU_TahhNxBugX_Bnu3QjZsKHX0Pafae-zU)
+![Konfiguracja Files w ION Desk pokazująca listę dokumentów obejmującą Sync.PurchaseOrder i Sync.ReceiveDelivery dla aplikacji DocBits API](https://lh7-us.googleusercontent.com/OEG6wQFd9LT6J_Ttcsdj7GgM2bTxrS-dpO2EbcVx4vGH1NLtZyaRTbYnr4-SDIWL2hk1zeVGr3bjuebNmwAMEx0S0U7xmNGztp-8HVjRLYyc-3lbQBL8lDU_TahhNxBugX_Bnu3QjZsKHX0Pafae-zU)
 
 ## **Wyzwalanie BOD-ów w LN**
 
 Po zakończeniu wszystkich powyższych kroków należy przejść do Infor LN i wyzwolić BOD-y, aby różne dane podstawowe potrzebne dla dostawców i zamówień zakupu trafiły do DocBits.
 
-![](https://lh7-us.googleusercontent.com/b6IsSx-x5Ri0cfYU9TTpgipqsoCkDPTxXdKoMBPaumyaopp-NRAJhoNnBfksnVVdz9Y26M0KlfdcKP4S1n_PjcTYKIu3MbVMQIfuIaTYYAL2ctyYsp29mEOrVh2TxmLPkUofeqJQ8nvBQbTOwj0-V0Y)
+![Menu Publish BODs w Infor LN ze ścieżką nawigacji Common, BOD-Messaging, Publish BODs, Publish Order Management Transactional Data](https://lh7-us.googleusercontent.com/b6IsSx-x5Ri0cfYU9TTpgipqsoCkDPTxXdKoMBPaumyaopp-NRAJhoNnBfksnVVdz9Y26M0KlfdcKP4S1n_PjcTYKIu3MbVMQIfuIaTYYAL2ctyYsp29mEOrVh2TxmLPkUofeqJQ8nvBQbTOwj0-V0Y)
 
 ### **PurchaseOrder**
 
@@ -78,7 +78,7 @@ W powyższym menu, w lewej zakładce menu, wybierz Common → BOD-Messaging → 
 
 Wybierz kartę PurchaseOrder i zaznacz pole wyboru.
 
-![](https://lh7-us.googleusercontent.com/UJlicSuDjbEVtr_pzOeqkP8kkiBJIdAgzPK46FlhubqIIHiaJRYp27B__08e9IcNHdcctrBeBfZ6vFPQI3Xf3duL6R2Hu-iaL9dY7hANmy8ukiL61CTxcel0jd_66GAySp3dC1ptYKBaqLqaP1TwJco)
+![Strona Publish Order Management Transactional Data w Infor LN z zaznaczoną kartą PurchaseOrder oraz przyciskami PROCESS, CLONE, SELECT ALL i CLEAR ALL](https://lh7-us.googleusercontent.com/UJlicSuDjbEVtr_pzOeqkP8kkiBJIdAgzPK46FlhubqIIHiaJRYp27B__08e9IcNHdcctrBeBfZ6vFPQI3Xf3duL6R2Hu-iaL9dY7hANmy8ukiL61CTxcel0jd_66GAySp3dC1ptYKBaqLqaP1TwJco)
 
 ### **Dostawcy**
 
@@ -86,7 +86,7 @@ Na stronie głównej LN, w lewej zakładce menu, przejdź do Common → BOD-Mess
 
 Wybierz kartę PartyMaster i zaznacz pole Supplier → Buy-from lub SupplierPartyMaster.
 
-![](https://lh7-us.googleusercontent.com/KY_cFaUegEZmqAlcsBLVOTaxKOkkBkMeaQUbv996H946oOa-jvxB3lDqrkWV-17elt0mZDGews6Lr_6ojbFXtReDnV1PmqzwLXfE-IX5fKJr2IeJkAdnf1R9Sk5WYoxOLGolgo2MPQ3SNeoPnQ-ysy0)
+![Strona Publish Logistics Master Data w Infor LN z kartą PartyMaster i zaznaczoną opcją Supplier Buy-from SupplierPartyMaster](https://lh7-us.googleusercontent.com/KY_cFaUegEZmqAlcsBLVOTaxKOkkBkMeaQUbv996H946oOa-jvxB3lDqrkWV-17elt0mZDGews6Lr_6ojbFXtReDnV1PmqzwLXfE-IX5fKJr2IeJkAdnf1R9Sk5WYoxOLGolgo2MPQ3SNeoPnQ-ysy0)
 
 ### **Wyzwalanie BOD-ów**
 
@@ -94,11 +94,11 @@ Gdy wszystkie właściwe BOD-y zostaną zaznaczone do publikacji, wybierz kartę
 
 Należy wybrać następujące opcje.
 
-![](https://lh7-us.googleusercontent.com/7KpYALL1XL0pqWLRCPFng8-WT8IWI4o9lEtrp2zAN5bOBnYdz-6EHfAPc_StaY9raJTWbfrksra9UUxyQAQdtg4nOZggpHox3AV3C_cL9xhDAdHV4n79yyCfbyGH2NmS30fQGfsLTe_4_tXKy54nI8U)
+![Karta Options na stronie Publish Logistics Master Data w Infor LN z ustawieniami wyboru i dokumentu oraz przyciskami PROCESS i CLEAR ALL](https://lh7-us.googleusercontent.com/7KpYALL1XL0pqWLRCPFng8-WT8IWI4o9lEtrp2zAN5bOBnYdz-6EHfAPc_StaY9raJTWbfrksra9UUxyQAQdtg4nOZggpHox3AV3C_cL9xhDAdHV4n79yyCfbyGH2NmS30fQGfsLTe_4_tXKy54nI8U)
 
 Po zakończeniu naciśnij przycisk PROCESS, a BOD-y zostaną wyzwolone. Na ekranie pojawi się komunikat informujący o wyzwoleniu BOD-ów.
 
-![](https://lh7-us.googleusercontent.com/BPX5vIBHIFv641srJPwW-19Dx1N1T2QnadGwVMQu-6pBZUxnUdOjdY1olMqorIyN_oeTBqz_1knMoYsSxEA-_NtGVx_j9dBixvOfic8rKJDT91tYqwSSLNpk8YkMW8ndelpH9_fzrTZUCMs_vnoxbvM)
+![Strona Publish Logistics Master Data w Infor LN po przetworzeniu, pokazująca kartę Factory Track, panel Selection i opcje Settings](https://lh7-us.googleusercontent.com/BPX5vIBHIFv641srJPwW-19Dx1N1T2QnadGwVMQu-6pBZUxnUdOjdY1olMqorIyN_oeTBqz_1knMoYsSxEA-_NtGVx_j9dBixvOfic8rKJDT91tYqwSSLNpk8YkMW8ndelpH9_fzrTZUCMs_vnoxbvM)
 
 Jeśli operacja zakończyła się powodzeniem, tabele dostawców i zamówień zakupu powinny być teraz dostępne w Ustawienia → Master Data Lookup.
 

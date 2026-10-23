@@ -20,7 +20,7 @@ Po włączeniu opcji sprawdzany jest wynik dopasowania bieżącego dokumentu do 
    * Otwórz **Ustawienia** → **Przetwarzanie dokumentów** → **Moduł** → **Zamówienie zakupu**.
    * Włącz przełącznik **Auto Export if PO matched 100%**.
 
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/100%PO.png" alt="Strona ustawień z powiadomieniem o sekwencyjnym wykonywaniu eksportów i tabelą eksportu z kolumnami Typ, Metoda Eksportu i Actions"><figcaption></figcaption></figure>
 
 2. **Monitorowanie przetwarzania:**
    * Sprawdź status dopasowania, walidacji i eksportu bieżącej faktury.

@@ -37,15 +37,15 @@ Usuwanie pola:
 
 * Dostępne pola M3 można sprawdzić, otwierając odpowiedni ekran w M3.
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt="Panel statusu wsadu M3 z komunikatem, że faktura dostawcy 202300373 już istnieje, oraz polami ze szczegółowymi informacjami"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt="Okno dialogowe Field Information w M3 dla pola WEEORN w tabeli FAPIBH z nazwą panelu APA4S50E0, typem String, maksymalną długością 30 i przyciskiem Copy to clipboard"><figcaption></figcaption></figure>
 
 * W podobny sposób możesz uzyskać nazwy pól dla linii
 
 ### Header (Nagłówek):
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt="Fragment kodu mapowania M3 w sekcji Header Static Fields z StaticFields=DIVI,IBTP,BSCD oraz wartościami statycznymi takimi jak SF_DIVI=PJA i SF_IBTP=20"><figcaption></figcaption></figure>
 
 Właściwość z listą pól: StaticFields
 

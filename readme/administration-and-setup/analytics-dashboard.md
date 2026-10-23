@@ -117,7 +117,7 @@ Przełącznik **Wybierz wszystko** w nagłówku pozwala uwzględnić lub wyklucz
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-pl.png" alt="Karty etapów ze zbiorczymi czasami przetwarzania. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu."><figcaption><p>Karty etapów ze zbiorczymi czasami przetwarzania. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+![Karta Flow steps z przełącznikiem Select All i kafelkami statusu pokazującymi maksymalny, średni i minimalny czas w odniesieniu do Global Average](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Porównaj ze Średnią Globalną
 
@@ -141,7 +141,7 @@ Wykres Średniego Czasu wizualizuje, jak czas przetwarzania jest rozłożony dla
 
 Gdy włączone jest **Porównaj ze Średnią Globalną**, wykres wyświetla również Średnią Globalną DocBits do celów porównawczych.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+![Wykres średniego czasu pogrupowany według podorganizacji pokazujący średnią całkowitą i benchmark DocBits Global Average](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Najlepsze dokumenty
 
@@ -153,7 +153,7 @@ Karta **Najlepsze dokumenty** zawiera listę poszczególnych dokumentów pasują
 * **Ukryj / pokaż wszystkie** dokumenty w filtrze za pomocą ikony oka w nagłówku.
 * **Kliknij dokument** (nazwa pliku lub pasek postępu), aby skopiować jego identyfikator dokumentu do schowka.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+![Panel Top documents porządkujący nazwy plików według czasu przetwarzania z łącznie 13889 dokumentami](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Wykres Trendu Czasu
 
@@ -167,9 +167,9 @@ Karta **Najlepsze dokumenty** zawiera listę poszczególnych dokumentów pasują
 
 Ułatwia to wykrycie nagłego skoku dla konkretnego dostawcy lub stopniowego wzrostu dla konkretnego typu dokumentu, zanim stanie się krytycznym problemem.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+![Wykres trendu czasowego dla Flow steps z liniami maksymalnego, średniego i minimalnego czasu w wybranych datach](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+![Wykres trendu czasowego średniego czasu z jedną linią dla każdego typu dokumentu, w tym Purchase Order, Invoice i Delivery Note](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Tabela danych
 
@@ -181,9 +181,9 @@ Tabela danych zapewnia pełny dostęp do wszystkich podstawowych danych wierszy 
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-pl.png" alt="Tabela analityczna z polskimi etykietami; wartości dokumentów są ukryte."><figcaption><p>Tabela analityczna z polskimi etykietami; wartości dokumentów są ukryte.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+![Tabela danych Analytics z kolumnami Document Type, Min Time, Max Time i Avg Time oraz ukrytymi chipami kolumn dla Supplier i Sub Organization](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+![Tabela danych Analytics z wierszami Invoice i Order Confirmation, czasami minimalnym, maksymalnym i średnim oraz ukrytymi kolumnami](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
 
 ## Touchless Intelligence
 

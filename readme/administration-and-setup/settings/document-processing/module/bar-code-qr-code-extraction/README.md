@@ -21,7 +21,7 @@ Aby włączyć funkcję, wykonaj następujące kroki:
        \
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt="Strona wyszukiwania w ustawieniach z wpisami modułu Purchase Order, w tym panel PO, panel zamówienia wysyłki i automatyczny eksport przy 100% dopasowaniu PO"><figcaption></figcaption></figure>
 
 ## **Obsługiwane typy kodów**
 

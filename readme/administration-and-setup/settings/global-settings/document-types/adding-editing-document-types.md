@@ -51,7 +51,7 @@ DocBits Wyjaśnienie typów dokumentów: tworzenie, konfigurowanie i przypisywan
 
 <figure><img src="../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Pola i Grupy</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (163).png" alt="" width="279"><figcaption><p>Utwórz Nową Grupę</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (163).png" alt="Ekran Create New Document Type z polami Nazwa i Opis oraz wpisami Pola i grupy, automatic i regular expression" width="279"><figcaption><p>Utwórz Nową Grupę</p></figcaption></figure>
 
 **Dodaj pola:**
 
@@ -60,13 +60,13 @@ DocBits Wyjaśnienie typów dokumentów: tworzenie, konfigurowanie i przypisywan
 
 <figure><img src="../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Pola i Grupy</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="278"><figcaption><p>Utwórz Nowe Pole</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt="Ekran Create New Document Type z polami Nazwa i Opis oraz wpisami Pola i grupy, automatic i regular expression" width="278"><figcaption><p>Utwórz Nowe Pole</p></figcaption></figure>
 
 **Zakończ**
 
 * Po wprowadzeniu wszystkich szczegółów kliknij "Zakończ", a nowy typ dokumentu zostanie utworzony
 
-<figure><img src="../../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (164).png" alt="Ekran Create New Document Type z polami Nazwa i Opis oraz wpisami Pola i grupy, automatic i regular expression"><figcaption></figcaption></figure>
 
 ### Edytuj istniejący typ dokumentu
 
@@ -75,7 +75,7 @@ DocBits Wyjaśnienie typów dokumentów: tworzenie, konfigurowanie i przypisywan
 * Wybierz typ dokumentu, który chcesz edytować, z listy istniejących typów dokumentów.
 * Pod typem dokumentu znajdziesz różne opcje edycji, na przykład edycję układu, pól, kolumn tabeli itp.
 
-<figure><img src="../../../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (166).png" alt="Ekran Create New Document Type z polami Nazwa i Opis oraz wpisami Pola i grupy, automatic i regular expression"><figcaption></figcaption></figure>
 
 **Więcej Ustawień:**
 
@@ -85,7 +85,7 @@ DocBits Wyjaśnienie typów dokumentów: tworzenie, konfigurowanie i przypisywan
 
 * Tutaj możesz wprowadzić dalsze ustawienia dla typu dokumentu, takie jak szablon projektu, czy dokument musi zostać zatwierdzony przed eksportem i wiele innych szczegółów.
 
-<figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (165).png" alt="Ekran Create New Document Type z polami Nazwa i Opis oraz wpisami Pola i grupy, automatic i regular expression"><figcaption></figcaption></figure>
 
 ### Zdefiniuj reguły ekstrakcji
 

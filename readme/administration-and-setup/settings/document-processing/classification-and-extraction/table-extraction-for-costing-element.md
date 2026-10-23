@@ -22,22 +22,22 @@ Gdy ta opcja jest włączona, **DocBits** może wyodrębnić **elementy kosztów
 1. Przejdź do **Ustawienia → Przetwarzanie dokumentu → Klasyfikacja i wyodrębnianie → Wyodrębnianie tabeli**.
 2. Włącz **Wyodrębnianie elementów kosztów**.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt="Strona ustawień w języku polskim z otwartym Classification and Extraction, kartami classification rules i AI models oraz komunikatem no records found"><figcaption></figcaption></figure>
 
 ### **Ustawianie lub zmiana klasyfikacji**
 
 1.  Click on the **box icon** next to the item.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt="Strona ustawień w języku polskim z otwartym Classification and Extraction, kartami classification rules i AI models oraz komunikatem no records found"><figcaption></figcaption></figure>
 2.  Pojawi się menu rozwijane  ze wszystkimi skonfigurowanymi elementami wyceny.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt="Strona ustawień w języku polskim z otwartym Classification and Extraction, kartami classification rules i AI models oraz komunikatem no records found"><figcaption></figcaption></figure>
 3.  Wybierz właściwy **typ elementu kosztorysowego**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt="Strona ustawień w języku polskim z otwartym Classification and Extraction, kartami classification rules i AI models oraz komunikatem no records found"><figcaption></figcaption></figure>
 4. Klasyfikacja została obecnie odpowiednio zaktualizowana.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt="Strona ustawień w języku polskim z otwartym Classification and Extraction, kartami classification rules i AI models oraz komunikatem no records found"><figcaption></figcaption></figure>

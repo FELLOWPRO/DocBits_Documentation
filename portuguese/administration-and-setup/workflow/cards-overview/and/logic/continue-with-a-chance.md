@@ -1,6 +1,6 @@
 # Continue with a chance
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-00-pt-20261023.png" alt="Lógica Continue com chance de Valor" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

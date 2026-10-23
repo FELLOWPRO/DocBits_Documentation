@@ -1,6 +1,6 @@
 # Assign document to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-05-pt-20261023.png" alt="Responsável Atribuir documento a Tipo de responsável com base na tabela de decisão." width="563"><figcaption></figcaption></figure>
 
 ## Propósito:
 

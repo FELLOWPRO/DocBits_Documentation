@@ -1,6 +1,6 @@
 # Date or Time
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-date-time-00-pt-20261023.png" alt="Data e hora Data/Hora Operador entre Data/Hora e Data/Hora" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

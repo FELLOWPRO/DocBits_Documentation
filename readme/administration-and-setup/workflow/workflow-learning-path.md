@@ -20,6 +20,10 @@ description: "从入门到专家的学习路径"
 
 ## 1. 认识产品与执行模型 <a id="level-1"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/zh.html)。
+
 **练习:** 说明组织、权限、When–And–Then，以及线性规则与 Advanced 图的区别。区分文档类型过滤、执行事件、保存和启用。
 
 **完成标准:** 能够在搭建前说明何时会处理规则，以及哪些依据能区分模拟与实际文档运行。

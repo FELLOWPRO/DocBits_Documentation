@@ -1,14 +1,14 @@
-# Creador de diseño
+# Editor de diseños
 
-Utilice el creador de diseño para organizar los campos y los controles que las personas ven al validar o aprobar un documento. Un diseño pertenece a un único tipo de documento, un único origen y un único tipo de diseño, así que compruebe estos tres elementos en la parte superior de la página antes de guardar.
+Utilice el editor de diseños para organizar los campos y los controles que las personas ven al validar o aprobar un documento. Un diseño pertenece a un único tipo de documento, un único origen y un único tipo de diseño, así que compruebe estos tres elementos en la parte superior de la página antes de guardar.
 
 ## Abrir el diseño
 
 1. Abra **Configuración → Tipos de Documento**.
-2. Seleccione el tipo de documento que desea editar y abra el **creador de diseño**. En el caso de un subtipo de documento, abra la acción creador de diseño de ese subtipo.
-3. Compruebe el encabezado. El selector de la izquierda es el **Origen** (por ejemplo, **Defecto**), seguido del **Tipo de Documento** (por ejemplo, **Factura**) y del **Tipo de diseño** (por ejemplo, **Validación de campos**). Cada selector abre una lista; al elegir otra entrada se carga ese diseño. Si el creador de diseño no está disponible, es posible que un administrador deba activar el módulo para su organización.
+2. Seleccione el tipo de documento que desea editar y abra el **editor de diseños**. En el caso de un subtipo de documento, abra la acción editor de diseños de ese subtipo.
+3. Compruebe el encabezado. El selector de la izquierda es el **Origen** (por ejemplo, **Defecto**), seguido del **Tipo de Documento** (por ejemplo, **Factura**) y del **Tipo de diseño** (por ejemplo, **Validación de campos**). Cada selector abre una lista; al elegir otra entrada se carga ese diseño. Si el editor de diseños no está disponible, es posible que un administrador deba activar el módulo para su organización.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-es.png" alt="El creador de diseño de una factura en DocBits, con los selectores de origen, tipo de documento y tipo de diseño, las pestañas Estructura, Campos y Elementos, el lienzo del diseño y el panel Propiedades a la derecha"><figcaption><p>El creador de diseño: los selectores del encabezado, las listas de elementos a la izquierda, el lienzo en el centro y el panel Propiedades a la derecha.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-es.png" alt="El editor de diseños de una factura en DocBits, con los selectores de origen, tipo de documento y tipo de diseño, las pestañas Estructura, Campos y Elementos, el lienzo del diseño y el panel Propiedades a la derecha"><figcaption><p>El editor de diseños: los selectores del encabezado, las listas de elementos a la izquierda, el lienzo en el centro y el panel Propiedades a la derecha.</p></figcaption></figure>
 
 ## Trabajar con el encabezado
 
@@ -28,7 +28,7 @@ La parte izquierda tiene tres pestañas:
 | **Campos** | Todos los campos configurados para el tipo de documento, agrupados por grupo de campos y contraídos de forma predeterminada. El filtro alterna entre los campos **Todos**, **No usado** y **Oculto**, y el nombre técnico del campo se muestra debajo de su etiqueta. |
 | **Elementos** | Controles de presentación e interacción como Texto, Etiqueta, Casilla de verificación, separadores, tablas, botones y subgrupos. |
 
-<figure><img src="../../../.gitbook/assets/layout-builder-structure-es.png" alt="La pestaña Estructura del creador de diseño mostrando los grupos Detalles de la factura, Detalles de pago, Orden de compra y Detalles de entrega desplegados en sus campos"><figcaption><p>La pestaña Estructura muestra el diseño creado como un árbol de grupos y campos.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-es.png" alt="La pestaña Estructura del editor de diseños mostrando los grupos Detalles de la factura, Detalles de pago, Orden de compra y Detalles de entrega desplegados en sus campos"><figcaption><p>La pestaña Estructura muestra el diseño creado como un árbol de grupos y campos.</p></figcaption></figure>
 
 Seleccione un elemento para añadirlo o arrástrelo al lienzo. El título de un grupo indica a quien valida el documento qué corresponde a esa sección. Cree o cambie el nombre de los campos de documento reutilizables primero en [Tipos de Documento](README.md).
 

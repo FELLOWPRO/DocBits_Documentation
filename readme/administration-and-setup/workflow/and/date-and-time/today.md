@@ -1,6 +1,6 @@
 # Vandaag
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bd785752f7b5-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_today_is_isnot_v2-nl-nl.png" alt="Vandaag, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 

@@ -1,6 +1,6 @@
 # Documentoperator voor suborganisaties
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-nl-nl.png" alt="Documentoperator voor suborganisaties, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## Doel:
 

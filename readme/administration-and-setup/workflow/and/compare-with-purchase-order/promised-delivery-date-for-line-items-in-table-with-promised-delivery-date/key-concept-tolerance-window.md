@@ -2,6 +2,8 @@
 
 Voordat we naar operatoren kijken, is het belangrijk om te begrijpen hoe het tolerantievenster wordt berekend.
 
+Hoe het tolerantievenster wordt berekend, met voorbeelden zoals "vandaag of morgen", wordt uitgelegd op [Date Tolerances](../../date-tolerances.md).
+
 ## Wat is een tolerantievenster?
 
 Het tolerantievenster definieert een bereik van acceptabele datums rond de beloofde leverdatum van de inkooporder.

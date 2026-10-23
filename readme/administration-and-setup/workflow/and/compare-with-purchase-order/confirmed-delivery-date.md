@@ -1,6 +1,8 @@
 # Bevestigde leverdatum
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-63b0722ae913-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v2-nl-nl.png" alt="Bevestigde leverdatum, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v3-nl-nl.png" alt="Bevestigde leverdatum, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
 ## **Doel**
 

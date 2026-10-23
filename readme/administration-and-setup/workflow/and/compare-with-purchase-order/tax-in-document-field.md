@@ -1,6 +1,6 @@
 # Belasting in documentveld
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_po_operator_tax_charge_id_v2-nl-nl.png" alt="Belasting in documentveld, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 

@@ -1,6 +1,6 @@
 # Modul aktiv
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-405c9bb87c62-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_module_is_isnot_active_v2-de-de.png" alt="Modul aktiv, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

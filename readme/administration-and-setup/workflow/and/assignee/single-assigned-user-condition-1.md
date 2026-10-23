@@ -1,6 +1,6 @@
 # Bedingung für eine einzelne zugewiesene Gruppe
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_v2-de-de.png" alt="Bedingung für eine einzelne zugewiesene Gruppe, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Zweck:**\
 Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe oder ein Dokument einer bestimmten Gruppe zugewiesen ist. Sie verwendet eine einfache Bedingung, um Aktionen je nach Gruppenzuweisung auszulösen oder zu verhindern.

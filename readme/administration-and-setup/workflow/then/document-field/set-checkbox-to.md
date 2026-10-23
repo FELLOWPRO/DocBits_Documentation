@@ -1,6 +1,6 @@
 # Setzen Sie das Kontrollkästchen auf
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bab00fc455aa-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-de-de.png" alt="Setzen Sie das Kontrollkästchen auf, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

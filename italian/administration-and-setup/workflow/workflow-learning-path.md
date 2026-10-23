@@ -68,6 +68,10 @@ Leggere e costruire: [P1: seguire la tabella decisionale fino all’assegnazione
 
 ## 5. Controllo Advanced e sotto-workflow <a id="level-5"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/it.html).
+
 **Esercizio:** Confrontare ALL, ANY e OR con due controlli raggiunti. Esaminare un ramo non scelto. Eseguire i sette casi v2 e provare Run Workflow con un proprio destinatario inattivo.
 
 **Criterio di completamento:** Spiegare differenza test/scheduler, conteggio sorgenti ed errori. V2 termina senza OR bloccato; controllare la destinazione di una chiamata verde.
@@ -76,6 +80,10 @@ Leggere e costruire: [P0: collegare correttamente Wait ALL, Wait ANY e OR](maste
 
 ## 6. Calcolo, integrazione ed export <a id="level-6"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/it.html).
+
 **Esercizio:** Confrontare tutta la tabella prima/dopo, inclusi regex senza corrispondenza e divisione per zero. Definire il contratto reale di scrittura dei risultati. Pianificare export dopo approvazione con una propria configurazione di test.
 
 **Criterio di completamento:** Provare separatamente valori successivi, ricezione ed elaborazione ERP. Non registrare simulazione o richiesta di export come consegna.
@@ -83,6 +91,10 @@ Leggere e costruire: [P0: collegare correttamente Wait ALL, Wait ANY e OR](maste
 Leggere e costruire: [P1: calcolare colonne e verificare dipendenze regex](masterclass/table-calculations.md) · [P1: verificare chiamate API e uso successivo delle risposte](masterclass/api-response-contract.md) · [P1: scegliere export, attività aperte e stato finale](masterclass/export-lifecycle.md).
 
 ## 7. Modifiche e gestione esperta <a id="level-7"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/it.html).
 
 **Esercizio:** Salvare l’export del workflow e le versioni prima di modificarlo. Ripetere casi positivi, negativi, errori, limiti e una seconda esecuzione. Collegare il primo errore a input e configurazione precisi.
 

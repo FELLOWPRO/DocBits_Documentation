@@ -173,3 +173,34 @@ You can view the import log of all created email connections, including any erro
 <figure><img src="../../../../.gitbook/assets/email_8.png" alt=""><figcaption></figcaption></figure>
 
 You can filter the logs by subject or sender, sort columns in ascending or descending order by clicking the column headers, and rearrange columns using drag-and-drop.
+
+
+## Video tutorial: Email Inbox and Error Troubleshooting
+
+The presenter and voice are synthetic. The recording shows the actual DocBits test interface with synthetic training invoices.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/en.mp4" %}
+Email Inbox and Error Troubleshooting
+{% endembed %}
+
+[Watch with subtitles and chapter navigation](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/en.html)
+
+Some native product labels may remain in another language. Technical field IDs are preserved.
+
+Under settings and import, I use the incoming DocBits address in this example. A directly connected mailbox is a separate import method. For this training, I work in a dedicated demo organization with synthetic invoices. Notifications remain turned off.
+
+First, I check the displayed receiving address and the scope. The address belongs exactly to this organization and its environment. For a different company or a production environment, I always use the address actually displayed there.
+
+Here I restrict the inbox to our approved test sender. I only select the assignment to a sub-organization if it belongs to the intended process. I save the setting and open it again. The allowed sender has been kept; automatic reply emails remain turned off in this training.
+
+<figure><img src="../../../../.gitbook/assets/admin-save-en-accounting-email-v1.png" alt="Allowed sender saved with notifications off"><figcaption><p>Allowed sender saved with notifications off</p></figcaption></figure>
+
+For this training, a test message was submitted directly to DocBits inbound processing. This test does not confirm external email delivery. In the log, I check the matching subject, sender, and imported attachment. I then check the document that was actually created.
+
+I open the corresponding document and compare the PDF attachment with the invoice in DocBits. File name, invoice number, supplier, and amount must match. A successful import says nothing about an approval or an ERP booking.
+
+A second controlled test comes from an unapproved sender. In the log, I specifically search for this inbound and activate the error filter. The details name the rejected sender. I check the cause using the subject and the trace ID, instead of triggering the import multiple times.
+
+In a real case, I first clarify whether this sender is even authorized. An approved change to the sender list is saved and checked again. Afterward, I verify a new unique test inbound all the way to the created document. For technical errors, I hand over the trace ID and the concrete error message.
+
+<figure><img src="../../../../.gitbook/assets/admin-error-en-accounting-email-v1.png" alt="Failed import with attachment, reason and trace"><figcaption><p>Failed import with attachment, reason and trace</p></figcaption></figure>

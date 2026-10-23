@@ -4,6 +4,10 @@ description: "P1: Zuweisung, Aufgabe und sequenzielle Freigabe unterscheiden"
 
 # P1: Zuweisung, Aufgabe und sequenzielle Freigabe unterscheiden
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-07-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-07-admin/v1/de.html).
+
 Eine **Dokumentzuweisung** bestimmt die aktuelle Zuständigkeit. Eine **Aufgabe** ist ein eigener Arbeitsauftrag. Eine **Benachrichtigung** informiert. Keine dieser drei Wirkungen ist bereits eine persönliche Genehmigung. Eine Gruppenzuweisung beweist auch nicht die Zustimmung jedes Gruppenmitglieds.
 
 Bei sequenziellen Karten werden Empfänger und Reihenfolge für den Freigabeprozess gesammelt. Das Beispiel verwendet Prüfer A mit Reihenfolgewert 10 und Prüfer B mit 20. Die geprüfte Abschlusslogik beginnt mit dem kleineren Wert. Der Übergang zu B entsteht durch die verarbeitete Benutzerentscheidung im Freigabeprozess, nicht durch das bloße Weiterlaufen eines Wait-Knotens im Designer.

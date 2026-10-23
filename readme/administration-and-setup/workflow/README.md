@@ -4,7 +4,7 @@ description: DocBits Workflow Engine
 
 # Przepływ pracy
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt="Kreator workflow pokazujący sekcje When, And i Then w obszarze PROCESSES, z których każda zawiera przycisk ADD CARD"><figcaption></figcaption></figure>
 
 ## DocBits Workflow Engine: uproszczona automatyzacja procesów
 

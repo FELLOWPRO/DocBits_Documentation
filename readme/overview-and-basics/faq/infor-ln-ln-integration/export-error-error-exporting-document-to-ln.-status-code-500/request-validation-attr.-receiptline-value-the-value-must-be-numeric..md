@@ -49,7 +49,7 @@ Jeśli **Zamówienie zakupu** wydaje się poprawne i zawiera niezbędne szczegó
 
 Powinno to wyglądać następująco:
 
-<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="Ekran walidacji z tabelą pozycji paragonu, wyekstrahowanymi kolumnami Positionen i wyróżnionymi powiązanymi wierszami faktury" width="563"><figcaption></figcaption></figure>
 
 ## **Krok 4: Dodaj zaktualizowany plik z powrotem do DocBits**
 

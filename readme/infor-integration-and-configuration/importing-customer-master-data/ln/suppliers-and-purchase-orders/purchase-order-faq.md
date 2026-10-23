@@ -7,7 +7,7 @@ Przejdź do sesji _BOD Implementation Registration (bobod1100m000)_ w LN. Ta ses
 \
 
 
-<figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO.png" alt="Sesja LN BOD Implementation Registration (bobod1100m000) pokazująca implementacje BOD z polami wyboru Public, Standard i Staging"><figcaption></figcaption></figure>
 
 **Jak zidentyfikować konkretną implementację BOD, którą muszę zweryfikować?**
 

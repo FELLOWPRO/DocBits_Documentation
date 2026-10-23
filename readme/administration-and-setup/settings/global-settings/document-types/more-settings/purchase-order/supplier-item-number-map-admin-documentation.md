@@ -6,7 +6,7 @@
 
 Jako administrator masz możliwość przeglądania i zarządzania mapowaniami między wewnętrznymi numerami przedmiotów a numerami przedmiotów dostawcy. Ta funkcja zapewnia, że niezgodności między Twoim systemem a systemami dostawców są obsługiwane efektywnie. Możesz przeglądać, edytować i usuwać niepoprawne mapowania, aby utrzymać dokładność danych.
 
-<figure><img src="../../../../../../.gitbook/assets/supplier_item_number_map_interface.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/supplier_item_number_map_interface.png" alt="Tabela Supplier Item Number Map z kolumnami SUPPLIER ID, ITEM_NUMBER, SUPPLIER ITEM NUMBER i ACTION"><figcaption></figcaption></figure>
 
 **Dostęp do mapy numerów przedmiotów dostawcy**
 

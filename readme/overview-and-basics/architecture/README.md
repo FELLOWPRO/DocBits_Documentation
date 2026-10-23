@@ -16,7 +16,7 @@ Wszystkie połączenia między komponentami są zabezpieczone przy użyciu stand
 
 **W siedzibie:**
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="Diagram architektury Operator On-Prem z DocAgent na komputerze klienckim łączącym się z Prefect API i chmurą DocBits"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ Wszystkie połączenia między komponentami są zabezpieczone przy użyciu stand
 
 **Cloud**:
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Diagram architektury Operator Cloud z rozszerzeniem Chrome, DocBits Operator Cloud, DocFlow i DocBits AI wymieniającymi komunikaty zadań i odpowiedzi"><figcaption></figcaption></figure>
 
 ## Eksportowanie danych do Infor
 
@@ -38,7 +38,7 @@ Eksport do [Infor](../../infor-integration-and-configuration/exporting-to-infor/
 
 Aby zidentyfikować dostawcę lub porównać/dopasować linie zamówienia, aktywujemy wyzwalacz w LN/M3, który wysyła BOD Sync.RemitToPartyMaster, Sync.SupplierPartyMaster i Sync.PurchaseOrder do Doc**Bits**. Konfigurujemy ten proces w ION Desk, definiując przepływ danych do konkretnego punktu połączenia z Doc**Bits**.
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="Diagram architektury DocBits klastra Kubernetes z load balancerem, Redis, PostgreSQL, podami roboczymi i magazynem danych Spaces"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Walidacja danych głównych](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ Aby zidentyfikować dostawcę lub porównać/dopasować linie zamówienia, aktyw
 
 ## Import e-mail OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="Diagram importu poczty e-mail Office 365 pokazujący, jak Microsoft Graph API wystawia token dostępu dla usługi pocztowej DocBits i systemu głównego"><figcaption></figcaption></figure>

@@ -104,7 +104,7 @@ Możliwe jest również wprowadzenie statusu do przepływu pracy, dzięki czemu 
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-pl.png" alt="Działanie zmiany statusu w projekcie przepływu."><figcaption><p>Działanie zmiany statusu w projekcie przepływu.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt="Kreator przepływów pracy z trzema kartami logiki przypisującymi dokumenty według osoby przypisanej i typu dokumentu do Invoice reviewer, Delivery-note reviewer i Order reviewer"><figcaption></figcaption></figure>
 
 Na przykład, jeśli w dokumencie brakuje pewnych lub ważnych informacji, które są jednak istotne i muszą zostać uwzględnione do dalszego przetwarzania, możesz skonfigurować przepływ pracy tak, aby dokumenty te były natychmiast przekazywane do kupującego oraz osoby zastępującej (zastępcy).
 
@@ -141,7 +141,7 @@ Ta karta logiki jest niezbędna do zapewnienia, że szczegóły potwierdzenia za
 
 Jeśli masz inne obliczenie dla dopłat lub masz je tylko na niektórych pozycjach, możesz użyć generycznych kart obliczeń tabeli, z których niektóre umożliwiają również filtrowanie według wyrażeń regularnych.
 
-<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt="Karta obliczeń dla kolumny MTZ z regułą Material Surcharge i filtrem regex pola Item Number dla numerów pozycji zaczynających się od 01, 06, 9, 001 lub 000"><figcaption></figcaption></figure>
 
 Powyżej znajduje się przykład obliczenia dla MTZ z filtrem dla numerów pozycji zaczynających się od 01, 06, 9, 001 lub 000.
 
@@ -149,7 +149,7 @@ W przypadku konfiguracji ręcznej zaleca się podzielenie obliczeń, które zale
 
 **Uruchom przepływ**
 
-<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt="Karta Run workflow Mtz Into Discount w kreatorze przepływów pracy z sekcją Conditions do uruchamiania kolejnego przepływu pracy"><figcaption></figcaption></figure>
 
 Za pomocą tej karty możesz określić nazwę przepływu pracy, który ma zostać uruchomiony po bieżącym przepływie pracy, jeśli jego warunki są spełnione, oraz po poprzednich kartach then bieżącego przepływu pracy. Chociaż priorytetowo traktuje uruchamialne, aktywne przepływy pracy, umożliwia również uruchamianie dezaktywowanych przepływów pracy, jeśli dokument spełnia warunki przepływów pracy.
 

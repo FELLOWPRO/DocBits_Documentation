@@ -24,27 +24,27 @@ Aby dodać własne dane podstawowe do DocBits, przejdź w Ustawieniach do Master
 
 Kliknij „Custom Master Data”
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="Strona ustawień Master Data Lookup z lookups Additional charge Costing Element, Purchase order, Purchase order Header i Supplier" width="375"><figcaption></figcaption></figure></div>
 
 Następnie możesz utworzyć szablon (Template) lub punkt końcowy (Endpoint).
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="Panel Custom Master Data z przyciskami Create Template i Create Endpoint" width="375"><figcaption></figcaption></figure></div>
 
 #### Tworzenie szablonu <a href="#create-a-template" id="create-a-template"></a>
 
 Pierwszym krokiem jest wybór między użyciem pliku ION API Twojej organizacji a użyciem OAuth2 i wprowadzeniem niezbędnych danych.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="Krok Select Preset kreatora Master Data Lookup z pytaniem What API do you want to use oraz opcjami ION API i OAUTH2" width="375"><figcaption></figcaption></figure></div>
 
 Następnie skonfigurujemy ustawienia wstępne. Tutaj wprowadzisz nazwę tabeli danych podstawowych oraz adres URL wywołania API.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="Krok Configure Preset kreatora Master Data Lookup z Preset Name, Application Type, polem GET URL oraz kartami PARAMS, HEADERS, AUTHORIZATION i BODY" width="375"><figcaption></figcaption></figure></div>
 
 Następnie należy podać ścieżkę JSON w notacji kropkowej. Więcej informacji o notacji kropkowej znajdziesz [tutaj](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
 
 Na koniec musisz zmapować dane na kolumny, które chcesz utworzyć, jak w przykładzie poniżej.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="Kreator Master Data Lookup z Select Table Columns, odpowiedzią JSON po lewej i kolumnami mapowania Column Name, Spaltenwert Name i Test Extraction" width="375"><figcaption></figcaption></figure></div>
 
 Po wykonaniu tych czynności kliknij Done, aby utworzyć i wypełnić nowe dane podstawowe.
 
@@ -52,16 +52,16 @@ Po wykonaniu tych czynności kliknij Done, aby utworzyć i wypełnić nowe dane 
 
 Pierwszym krokiem jest wybór między użyciem pliku ION API Twojej organizacji, użyciem OAuth2 lub pozostawieniem tego pola pustego i wprowadzeniem niezbędnych danych.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="Krok Select Preset kreatora endpointów Master Data Lookup z Choose a preset for your endpoint oraz opcjami BLANK, ION API i OAUTH2" width="375"><figcaption></figcaption></figure></div>
 
 Następnie skonfigurujemy ustawienia wstępne. Tutaj wprowadzisz nazwę tabeli danych podstawowych oraz adres URL wywołania API.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="Krok Configure Preset kreatora Master Data Lookup z Preset Name, Application Type, polem GET URL oraz kartami PARAMS, HEADERS, AUTHORIZATION i BODY" width="375"><figcaption></figcaption></figure></div>
 
 Następnie należy podać ścieżkę JSON w notacji kropkowej. Więcej informacji o notacji kropkowej znajdziesz [tutaj](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
 
 Na koniec musisz zmapować dane na kolumny, które chcesz utworzyć, jak w przykładzie poniżej.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="Kreator Master Data Lookup z Select Table Columns, odpowiedzią JSON po lewej i kolumnami mapowania Column Name, Spaltenwert Name i Test Extraction" width="375"><figcaption></figcaption></figure></div>
 
 Po wykonaniu tych czynności kliknij Done, aby utworzyć i wypełnić nowe dane podstawowe.

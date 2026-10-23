@@ -2,7 +2,7 @@
 
 Skonfigurowanie dostawcy tożsamości (IdP) pod kątem integracji z DocBits wymaga kilku konkretnych kroków. Oto przewodnik:
 
-<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (83).png" alt="Ekran Identity Service Provider Settings z polem Upload file i przyciskiem Import"><figcaption></figcaption></figure>
 
 **Dostęp do interfejsu konfiguracji IdP**
 

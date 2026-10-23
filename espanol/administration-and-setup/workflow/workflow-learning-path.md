@@ -56,6 +56,10 @@ Leer y construir: [P1: Elegir Field is, Docfield is o Compare two Fields](master
 
 ## 4. Reglas de negocio y aprobaciones <a id="level-4"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/es.mp4" %}
+
+[Abrir el vídeo con subtítulos en español y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/es.html).
+
 **Ejercicio:** Configure dos reglas de importe sin solapamiento en una tabla de decisión. Siga el resultado de usuario guardado hasta la asignación. Planifique A con orden 10 y B con 20, rechazo y alternativa.
 
 **Criterio de finalización:** Distinga responsabilidad, tarea, notificación y aprobación. Acepte un traspaso real a B solo después de una decisión de A procesada.

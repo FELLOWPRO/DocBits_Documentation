@@ -117,7 +117,7 @@ Um seletor **Selecionar Todos** no cabeçalho permite incluir ou excluir todas a
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-pt.png" alt="Cartões das etapas com tempos de processamento agregados."><figcaption><p>Cartões das etapas com tempos de processamento agregados.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+![Cartão Flow steps com a alternância Select All e blocos de status mostrando os tempos máximo, médio e mínimo em relação ao Global Average](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Comparar com a Média Global
 
@@ -141,7 +141,7 @@ O Gráfico de Tempo Médio visualiza como o tempo de processamento é distribuí
 
 Quando **Comparar com a Média Global** está ativado, o gráfico também exibe a Média Global DocBits para benchmarking.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+![Gráfico de tempo médio agrupado por suborganização mostrando a média total e o benchmark DocBits Global Average](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Top Documentos
 
@@ -153,7 +153,7 @@ O cartão **Top Documentos** lista documentos individuais que correspondem ao co
 * **Ocultar / mostrar todos** os documentos no filtro por meio do ícone de olho no cabeçalho.
 * **Clique em um documento** (nome do arquivo ou barra de progresso) para copiar o ID do Documento para a área de transferência.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+![Painel Top documents que classifica os nomes dos ficheiros por tempo de processamento com um total de 13889 documentos](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Gráfico de Tendência de Tempo
 
@@ -167,9 +167,9 @@ Acompanhe as tendências de desempenho ao longo do tempo e identifique anomalias
 
 Isso facilita detectar um pico repentino para um fornecedor específico ou um aumento gradual para um tipo de documento específico, antes que se torne um problema crítico.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+![Gráfico de tendência temporal para Flow steps com linhas de tempo máximo, médio e mínimo nas datas selecionadas](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+![Gráfico de tendência temporal do tempo médio com uma linha por tipo de documento, incluindo Purchase Order, Invoice e Delivery Note](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Tabela de Dados
 
@@ -181,9 +181,9 @@ A Tabela de Dados fornece acesso completo a todos os dados de linha subjacentes 
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-pt.png" alt="Tabela de análise com rótulos em português; valores dos documentos ocultos. A etiqueta Mesa refere-se à tabela de dados, não a mobiliário."><figcaption><p>Tabela de análise com rótulos em português; valores dos documentos ocultos. A etiqueta Mesa refere-se à tabela de dados, não a mobiliário.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+![Tabela de dados do Analytics com as colunas Document Type, Min Time, Max Time e Avg Time e chips de colunas ocultas para Supplier e Sub Organization](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+![Tabela de dados do Analytics com as linhas Invoice e Order Confirmation, tempos mínimo, máximo e médio e colunas ocultas](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
 
 ## Touchless Intelligence
 

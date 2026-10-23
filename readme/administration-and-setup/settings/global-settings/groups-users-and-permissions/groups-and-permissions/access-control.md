@@ -23,7 +23,7 @@ Cada grupo pode ser configurado para:
 3. Selecione **Módulo.**
 4. Ative o **Controle de Acesso** habilitando o controle deslizante.
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt="Página de Access Control nas configurações do DocBits com o separador Access Control aberto"><figcaption></figcaption></figure>
 
 ## Abrir o Controle de Acesso de um grupo
 

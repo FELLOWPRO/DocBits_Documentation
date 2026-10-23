@@ -29,17 +29,17 @@ Para ativar esta funcionalidade:
 1. Abra a secção **Divisão de documentos**.
 2.  Abra a lista suspensa.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle, mostrando Kein Datensatz encontrado no painel vazio de AI-Modelle"><figcaption></figcaption></figure>
 3.  Selecione **Dividir por código de barras/QR**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle e a navegação à esquerda das configurações DocBits em alemão"><figcaption></figcaption></figure>
 
 Depois, poderá:
 
 * Selecionar um ou mais tipos de código de barras a detetar.
 *   Indicar um padrão de expressão regular que o código de barras deve cumprir para provocar a divisão do documento.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt="Painel de resultados de extração que mostra os campos reconhecidos com pontuações de confiança junto ao painel de pré-visualização do documento"><figcaption></figcaption></figure>
 
 ## Formatação de valores
 
@@ -162,7 +162,7 @@ Na secção **Regras de classificação**, pode definir padrões de **expressõe
 
 Para abrir esta secção, clique no separador **Regras de classificação** no topo da página.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle e a navegação à esquerda das configurações DocBits em alemão"><figcaption></figcaption></figure>
 
 ### **Adicionar uma regra de classificação**
 
@@ -170,7 +170,7 @@ Para criar uma regra:
 
 1.  Clique em **Adicionar** no canto superior direito.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt="Página de definições de extração a mostrar a lista de mapeamento de campos com nomes de colunas, campos de entrada e o botão Speichern"><figcaption></figcaption></figure>
 2. Preencha os campos seguintes:
    * **Padrão**: expressão regular que o sistema deve procurar para iniciar a classificação.
    * **Tipo**: local onde o padrão deve ser procurado, por exemplo no **código de barras**.
@@ -178,10 +178,10 @@ Para criar uma regra:
    * **Tipo de documento**: tipo a atribuir ao documento quando o padrão corresponder.
    *   **Subtipo de documento** _(opcional)_: indique um subtipo para uma classificação mais detalhada.
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt="Página Zuordnung von Dokumententypen com o menu pendente Bereich e os interruptores No Classification, No Splitting e Database Sharing-Klassifikation"><figcaption></figcaption></figure>
 3.  Clique em **Guardar** para guardar a regra de classificação.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle, mostrando Kein Datensatz encontrado no painel vazio de AI-Modelle"><figcaption></figcaption></figure>
 
 ### **Editar uma regra de classificação**
 
@@ -189,14 +189,14 @@ Para editar uma regra existente:
 
 1.  Clique nos três pontos da coluna **Ações**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle e a navegação à esquerda das configurações DocBits em alemão"><figcaption></figcaption></figure>
 2.  Selecione **Editar**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt="Página de configuração da classificação com a lista de tipos de documento, a secção de amostras de treino e o controlo de carregamento"><figcaption></figcaption></figure>
 3. Efetue as alterações pretendidas.
 4.  Clique em **Guardar** para aplicar as alterações.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle, mostrando Kein Datensatz encontrado no painel vazio de AI-Modelle"><figcaption></figcaption></figure>
 
 ### **Eliminar uma regra de classificação**
 
@@ -204,10 +204,10 @@ Para eliminar uma regra:
 
 1.  Clique nos três pontos da coluna **Ações**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle e a navegação à esquerda das configurações DocBits em alemão"><figcaption></figcaption></figure>
 2.  Selecione **Eliminar**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt="Ecrã de configurações de classificação com o painel de sugestões de tipo de documento, os valores de confiança e a lista de campos à direita"><figcaption></figcaption></figure>
 
 ## Modelos de IA
 
@@ -217,14 +217,14 @@ A secção **Modelos de IA** apresenta os modelos treinados e ajustados especifi
 
 Para abrir esta secção, clique no separador **Modelos de IA** no topo da página.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt="Página Trainingsdaten com o separador Table Extraction aberto mostrando uma tabela de mapeamento de colunas CSV com as colunas Spalte, Typ e Werte"><figcaption></figcaption></figure>
 
 ### Categorias de modelos
 
 Os modelos estão organizados por categorias. Por baixo do nome de cada categoria, é apresentado o número de modelos que contém.\
 Clique numa categoria para consultar os detalhes.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt="Página de configurações Classification And Extraction com os separadores Allgemein, Klassifizierungsregeln e AI-Modelle, mostrando Kein Datensatz encontrado no painel vazio de AI-Modelle"><figcaption></figcaption></figure>
 
 No topo da página da categoria selecionada, encontrará informação sobre cada modelo:
 
@@ -242,7 +242,7 @@ Os modelos da categoria são apresentados numa tabela com a seguinte informaçã
 * **Subtipos de documento**: subtipos nos quais o documento é classificado adicionalmente.
 * **Prioridade**: nível que determina a posição do modelo na fila de classificação.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt="Ecrã de validação com o painel de sugestões de classificação à esquerda e a tabela extraída com as colunas Position, Menge e Preis"><figcaption></figcaption></figure>
 
 ### Editar um modelo
 
@@ -250,10 +250,10 @@ Para editar um modelo:
 
 1.  Clique no ícone de lápis da coluna **Ações**, junto ao modelo que pretende editar.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt="Ecrã de configurações de classificação de documentos com campos de regras de extração, menu pendente de seleção de modelo e botão guardar"><figcaption></figcaption></figure>
 2. Atualize os campos disponíveis:
    * **Próximo modelo**: selecione o modelo que deve processar o resultado do modelo atual.
    * **Tipo de documento**: escolha o tipo que o modelo deve atribuir ao documento de entrada.
 3.  Clique em **Guardar** para aplicar as alterações.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt="Página Trainingsdaten com os separadores Language Models e Table Extraction e uma tabela de modelos treinados com as colunas Name, Zugewiesene Dokumente, Datum e Bearbeiten"><figcaption></figcaption></figure>

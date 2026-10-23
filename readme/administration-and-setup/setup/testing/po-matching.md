@@ -17,7 +17,7 @@ Para testar a correspondência de pedidos de compra, crie um pedido de compra no
 
 Depois de criar o pedido, abra Configurações → Pesquisa de dados mestre e procure o respetivo número. O pedido deverá aparecer nos dados mestre de pedidos de compra do DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+![Tabela Purchase order nos dados mestre do DocBits com as colunas Warehouse Id, Supplier Name, Purchase Order Number, Line Number e Quantity](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
 O número do pedido deve aparecer aqui. Isto confirma a sincronização desse pedido entre o DocBits e a Infor.
 

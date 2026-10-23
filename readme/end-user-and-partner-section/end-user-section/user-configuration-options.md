@@ -31,7 +31,7 @@ Nesta seção, você pode ajustar as seguintes preferências:
 * **Tamanho da Fonte:** Ajuste o tamanho do texto para melhor legibilidade.
 * **Modo de Duplo Monitor:** Ative este recurso se você estiver usando dois monitores.
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3.png" alt="Diálogo Edit User com o padrão de data %d.%m.%Y, a formatação de valores Deutsch, o tamanho de letra de pequeno a grande, os campos de nome Max Mustermann, o modo de monitor duplo e os campos de palavra-passe"><figcaption></figcaption></figure>
 
 **Sair**
 

@@ -300,3 +300,32 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **M3-TOML-Zuordnungsdatei** Wählen Sie eine Mapping-Datei aus dem Dateimanager oder verwenden Sie die Option Toml auswählen, um ein mit dem Regel-Manager erstelltes toml zu verwenden. [Benötigen Sie Hilfe bei der Erstellung? Siehe Regel-Manager-Leitfaden](rule-manager/)
 
 </details>
+
+
+## Videoanleitung: ERP-Export einrichten und testen
+
+Figur und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit synthetischen Schulungsrechnungen.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/de.mp4" %}
+ERP-Export einrichten und testen
+{% endembed %}
+
+[Mit Untertiteln und Kapiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/de.html)
+
+Einzelne native Produktbeschriftungen können abweichend übersetzt sein. Technische Feld-IDs bleiben erhalten.
+
+Ich verwende eine eigene Testkonfiguration und einen eigenen Dokumenttyp. Die Rechnungen sind synthetisch. Unser Testempfänger prüft die Datenübertragung; er führt keine Buchung in einem produktiven ERP aus. Bestehende andere Integrationen ändere ich nicht.
+
+In der Exportkonfiguration kontrolliere ich den Dokumenttyp, die Organisation und die Exportart. Dieses Beispiel verwendet Generic API in der Cloud. Zugangsdaten und Feldzuordnung sind getrennte Dateien. In echten Projekten müssen Zielsystem, Berechtigungen und gegebenenfalls die Unterorganisation zum vorgesehenen Prozess passen.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-de-recovery-export-v1.png" alt="Exportkonfiguration für den Schulungsdokumenttyp"><figcaption><p>Exportkonfiguration für den Schulungsdokumenttyp</p></figcaption></figure>
+
+Im korrigierten Mapping wird das DocBits-Feld invoice_id als Rechnungsnummer an den Testempfänger gesendet. Auch Lieferant, Gesamtbetrag und Währung werden zugeordnet. Dieser Test prüft die Kopfdaten. Positionsdaten und eine ERP-Buchung brauchen im jeweiligen Projekt eigene fachliche Prüfungen.
+
+Ich lade die korrigierte Mapping-Datei hoch und speichere die Konfiguration. Danach öffne ich sie erneut und kontrolliere, dass die Änderung übernommen wurde. Die vorbereiteten Testzugangsdaten bleiben unverändert; produktive Geheimnisse gehören nicht in eine Videoaufnahme.
+
+Jetzt kehre ich zur fehlgeschlagenen Testrechnung zurück und starte den Export genau einmal neu. Ich warte auf das abgeschlossene Ergebnis. Die Annahme des Auftrags allein wäre noch kein Nachweis einer erfolgreichen Übertragung.
+
+DocBits zeigt die Rechnung nun als fertig an. Zusätzlich prüfe ich den Empfangsbeleg: Rechnungsnummer, Lieferant, Betrag und Währung stimmen mit der Testrechnung überein. Die Anmeldung und die Übertragung waren erfolgreich. Der Testempfänger bestätigt ausdrücklich keine ERP-Buchung.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-de-recovery-export-v1.png" alt="Tatsächlicher Empfang beim Testempfänger; keine ERP-Buchung"><figcaption><p>Tatsächlicher Empfang beim Testempfänger; keine ERP-Buchung</p></figcaption></figure>

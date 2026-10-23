@@ -2,11 +2,11 @@
 
 Deze video toont de configuratie en het testen van goedkeuringen.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/nl.mp4" %}
 Factuurgoedkeuringen configureren en testen
 {% endembed %}
 
-[Bekijk video met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/nl.html)
+[Bekijk video met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/nl.html)
 
 De echte applicatie wordt getoond. De namen van opties kunnen per gebruikte versie verschillen.
 
@@ -32,9 +32,9 @@ De extra V2-optie en de formuliereditors zijn aparte instellingen. Deze tutorial
 3. Wijs de wachtende factuur toe aan de andere geautoriseerde beoordelaar. Gebruik dat tweede gewone account om het te controleren en de tweede goedkeuring te geven met een aparte notitie.
 4. Heropen de geschiedenis en verifieer beide verschillende beoordelaars, tijden en notities. Wijs ook een aparte testfactuur af met een reden en verifieer die beslissing na het opnieuw laden.
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-nl-0a7866ec11e5.png" alt="Opgeslagen goedkeuringsinstellingen in eigen testtype."><figcaption><p>Opgeslagen goedkeuringsinstellingen in eigen testtype.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-nl-f45214fdcb2a.png" alt="Opgeslagen goedkeuringsinstellingen in eigen testtype."><figcaption><p>Opgeslagen goedkeuringsinstellingen in eigen testtype.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-nl-0a7866ec11e5.png" alt="Twee verschillende beoordelaars en beide opgeslagen notities."><figcaption><p>Twee verschillende beoordelaars en beide opgeslagen notities.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-nl-f45214fdcb2a.png" alt="Twee verschillende beoordelaars en beide opgeslagen notities."><figcaption><p>Twee verschillende beoordelaars en beide opgeslagen notities.</p></figcaption></figure>
 
 ## Verifieer de uitkomst
 

@@ -1,6 +1,8 @@
 # Approve the Document
 
-<figure><img src="../../../../../.gitbook/assets/image (357).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_approve_v1.png" alt="Approve the Document, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_approve_v2.png" alt="Approve the Document, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

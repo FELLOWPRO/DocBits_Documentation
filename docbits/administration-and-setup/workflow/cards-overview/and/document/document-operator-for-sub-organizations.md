@@ -1,6 +1,6 @@
 # Document Operator for Sub-Organizations
 
-<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2.png" alt="Document Operator for Sub-Organizations, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

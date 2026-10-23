@@ -1,6 +1,6 @@
 # Date or Time
 
-<figure><img src="../../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2.png" alt="Date or Time, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

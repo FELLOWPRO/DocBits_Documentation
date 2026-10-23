@@ -1,6 +1,6 @@
 # If Country in Field is One of
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2.png" alt="If Country in Field is One of, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose**
 

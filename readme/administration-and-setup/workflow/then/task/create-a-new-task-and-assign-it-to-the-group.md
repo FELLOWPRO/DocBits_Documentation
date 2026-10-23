@@ -1,6 +1,10 @@
 # Create a New Task and assign it to the group
 
-<figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v2.png" alt="Create a New Task and assign it to the group, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v3.png" alt="Create a New Task and assign it to the group, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v4.png" alt="Create a New Task and assign it to the group, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Purpose:**
 

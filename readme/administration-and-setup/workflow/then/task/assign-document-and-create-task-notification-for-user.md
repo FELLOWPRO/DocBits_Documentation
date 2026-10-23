@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for User
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_user_sequential_v2.png" alt="Assign Document and Create Task/Notification for User, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose**
 

@@ -1,6 +1,8 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v1.png" alt="Create a New Task and assign it to the Recipient, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v2.png" alt="Create a New Task and assign it to the Recipient, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

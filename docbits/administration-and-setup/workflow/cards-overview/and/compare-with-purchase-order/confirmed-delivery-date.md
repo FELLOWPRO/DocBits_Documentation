@@ -1,6 +1,8 @@
 # Confirmed Delivery Date
 
-<figure><img src="../../../../../.gitbook/assets/image (342).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v2.png" alt="Confirmed Delivery Date, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v3.png" alt="Confirmed Delivery Date, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose**
 

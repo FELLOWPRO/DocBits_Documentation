@@ -1,6 +1,6 @@
 # Assign Sequentially to User
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_user_sequential_v2.png" alt="Assign Sequentially to User, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose**
 

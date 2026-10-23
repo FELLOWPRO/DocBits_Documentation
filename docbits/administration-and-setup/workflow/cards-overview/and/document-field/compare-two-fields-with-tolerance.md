@@ -1,6 +1,6 @@
 # Compare two Fields with Tolerance
 
-<figure><img src="../../../../../.gitbook/assets/image (54).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_operator_docfield_tolerances_v2.png" alt="Compare two Fields with Tolerance, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

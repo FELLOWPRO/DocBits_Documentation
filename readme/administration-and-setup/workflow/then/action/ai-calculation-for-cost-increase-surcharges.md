@@ -1,6 +1,8 @@
 # AI Calculation for Cost Increase Surcharges
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1.png" alt="AI Calculation for Cost Increase Surcharges, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2.png" alt="AI Calculation for Cost Increase Surcharges, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

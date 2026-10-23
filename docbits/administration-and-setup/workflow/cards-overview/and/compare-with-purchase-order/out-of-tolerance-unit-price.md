@@ -1,6 +1,6 @@
 # Out of Tolerance Unit Price
 
-<figure><img src="../../../../../.gitbook/assets/image (348).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_separat_unit_price_operator_field_values_v3.png" alt="Out of Tolerance Unit Price, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

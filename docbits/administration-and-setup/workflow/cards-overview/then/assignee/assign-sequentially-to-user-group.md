@@ -1,6 +1,8 @@
 # Assign Sequentially to User/Group
 
-<figure><img src="../../../../../.gitbook/assets/image (144).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_v2.png" alt="Assign Sequentially to User/Group, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2.png" alt="Assign the document sequentially to User / Group based on decision table. — Version 2" width="634"><figcaption><p>Assign the document sequentially to User / Group based on decision table. — Version 2</p></figcaption></figure>
 
 ## **Purpose**
 

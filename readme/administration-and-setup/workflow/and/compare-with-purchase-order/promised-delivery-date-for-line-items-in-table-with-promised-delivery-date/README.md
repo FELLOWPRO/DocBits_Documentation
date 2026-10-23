@@ -1,6 +1,8 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2.png" alt="Promised delivery date for line items in table with promised delivery date, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+How the tolerance window is calculated, with examples such as "today or tomorrow", is explained on [Date Tolerances](../../date-tolerances.md).
 
 ## Purpose:
 

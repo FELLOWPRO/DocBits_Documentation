@@ -1,6 +1,8 @@
 # Assign to group
 
-<figure><img src="../../../../../.gitbook/assets/image (377).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_doc_group_assign_v2.png" alt="Assign to group, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_doc_group_assign_v3.png" alt="Assign to group, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## Purpose:
 

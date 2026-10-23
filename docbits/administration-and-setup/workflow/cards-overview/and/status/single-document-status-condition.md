@@ -1,6 +1,6 @@
 # Single Document Status Condition
 
-<figure><img src="../../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9.png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_v2.png" alt="Single Document Status Condition, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Purpose**
 

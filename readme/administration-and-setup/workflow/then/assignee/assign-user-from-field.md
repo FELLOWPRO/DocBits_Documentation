@@ -1,6 +1,6 @@
 # Assign user from field
 
-<figure><img src="../../../../.gitbook/assets/image (299).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_user_from_field_with_fallback_v2.png" alt="Assign user from field, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

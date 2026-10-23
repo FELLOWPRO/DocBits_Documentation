@@ -2,11 +2,11 @@
 
 Dieses Video zeigt die Konfiguration und das Testen von Genehmigungen.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/de.mp4" %}
 Rechnungsfreigaben konfigurieren und testen
 {% endembed %}
 
-[Video mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/de.html)
+[Video mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/de.html)
 
 Gezeigt wird die tatsächliche Anwendung. Die Bezeichnungen können je nach eingesetzter Version abweichen.
 
@@ -32,9 +32,9 @@ Die zusätzliche V2-Option und die Formulardesigner sind separate Einstellungen.
 3. Weisen Sie die wartende Rechnung dem anderen autorisierten Prüfer zu. Verwenden Sie dieses zweite normale Prüferkonto, um sie zu prüfen und die zweite Genehmigung mit einer separaten Notiz zu erteilen.
 4. Öffnen Sie den Verlauf erneut und überprüfen Sie beide unterschiedlichen Prüfer, Zeiten und Notizen. Lehnen Sie auch eine separate Testrechnung mit Begründung ab und überprüfen Sie diese Entscheidung nach dem Neuladen.
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-de-256924816e22.png" alt="Gespeicherte Genehmigungseinstellungen im eigenen Testtyp."><figcaption><p>Gespeicherte Genehmigungseinstellungen im eigenen Testtyp.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-de-2885b7bd765c.png" alt="Gespeicherte Genehmigungseinstellungen im eigenen Testtyp."><figcaption><p>Gespeicherte Genehmigungseinstellungen im eigenen Testtyp.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-de-256924816e22.png" alt="Zwei verschiedene Prüfer und beide gespeicherten Notizen."><figcaption><p>Zwei verschiedene Prüfer und beide gespeicherten Notizen.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-de-2885b7bd765c.png" alt="Zwei verschiedene Prüfer und beide gespeicherten Notizen."><figcaption><p>Zwei verschiedene Prüfer und beide gespeicherten Notizen.</p></figcaption></figure>
 
 ## Ergebnis überprüfen
 

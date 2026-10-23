@@ -1,6 +1,12 @@
 # Eksportuj z konfiguracją eksportu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v1-pl-pl.png" alt="Eksportuj z konfiguracją eksportu, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v3-pl-pl.png" alt="Eksportuj z konfiguracją eksportu, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-pl-pl.png" alt="Kolejka eksportu dokumentów z konfiguracją eksportu: … dla ostatecznego eksportu na koniec przebiegu. Ignoruj zadania oczekujące: …. — Wersja 2" width="634"><figcaption><p>Kolejka eksportu dokumentów z konfiguracją eksportu: … dla ostatecznego eksportu na koniec przebiegu. Ignoruj zadania oczekujące: …. — Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-pl-pl.png" alt="Kolejka eksportu dokumentów z konfiguracją eksportu: … dla ostatecznego eksportu na koniec przebiegu. Ignoruj zadania oczekujące: …. Status po eksporcie: …. — Wersja 3" width="634"><figcaption><p>Kolejka eksportu dokumentów z konfiguracją eksportu: … dla ostatecznego eksportu na koniec przebiegu. Ignoruj zadania oczekujące: …. Status po eksporcie: …. — Wersja 3</p></figcaption></figure>
 
 ## **Cel:**
 

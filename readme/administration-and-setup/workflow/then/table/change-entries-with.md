@@ -1,6 +1,8 @@
 # Zmień wpisy za pomocą
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2186644bde72-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_edit_column_v1-pl-pl.png" alt="Zmień wpisy za pomocą, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_edit_column_v2-pl-pl.png" alt="Zmień wpisy za pomocą, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

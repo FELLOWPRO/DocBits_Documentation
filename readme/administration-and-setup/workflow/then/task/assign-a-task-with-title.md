@@ -1,6 +1,8 @@
 # Przypisz zadanie z tytułem
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-201d51354473-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v2-pl-pl.png" alt="Przypisz zadanie z tytułem, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v3-pl-pl.png" alt="Przypisz zadanie z tytułem, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
 ## **Cel:**
 

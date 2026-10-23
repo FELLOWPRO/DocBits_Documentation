@@ -1,6 +1,6 @@
 # Typ dokumentu Jeden z
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-da4216631693-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-pl-pl.png" alt="Typ dokumentu Jeden z, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

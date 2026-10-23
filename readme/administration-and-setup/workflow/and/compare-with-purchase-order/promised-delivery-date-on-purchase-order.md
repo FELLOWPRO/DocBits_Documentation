@@ -1,6 +1,12 @@
 # Obiecana data dostawy w zamówieniu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-604866ed54fe-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-pl-pl.png" alt="Obiecana data dostawy w zamówieniu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-pl-pl.png" alt="Obiecana data dostawy w zamówieniu, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-pl-pl.png" alt="Obiecana data dostawy w zamówieniu, Wersja 4" width="634"><figcaption><p>Wersja 4</p></figcaption></figure>
+
+Sposób obliczania okna tolerancji, wraz z przykładami takimi jak „dziś lub jutro”, wyjaśniono na stronie [Date Tolerances](../date-tolerances.md).
 
 ## **Cel**
 

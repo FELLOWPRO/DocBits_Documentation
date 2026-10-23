@@ -80,6 +80,10 @@ Lire et construire: [P0 : connecter correctement Wait ALL, Wait ANY et OR](maste
 
 ## 6. Calcul, intégration et export <a id="level-6"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo avec les sous-titres français et la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/fr.html).
+
 **Exercice:** Comparez tout le tableau avant/après, avec regex sans correspondance et division par zéro. Définissez l’écriture réelle des retours d’intégration. Prévoyez l’export après approbation avec votre configuration de test.
 
 **Critère de fin:** Prouvez séparément valeurs suivantes, réception et traitement ERP. Ne présentez ni simulation ni demande d’export comme livraison.
@@ -87,6 +91,10 @@ Lire et construire: [P0 : connecter correctement Wait ALL, Wait ANY et OR](maste
 Lire et construire: [P1 : calculer les colonnes et contrôler les dépendances regex](masterclass/table-calculations.md) · [P1 : vérifier les appels API et l’utilisation des réponses](masterclass/api-response-contract.md) · [P1 : choisir l’export, les tâches ouvertes et le statut final](masterclass/export-lifecycle.md).
 
 ## 7. Gestion des changements et exploitation experte <a id="level-7"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo avec les sous-titres français et la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/fr.html).
 
 **Exercice:** Sauvegardez l’export du workflow et les versions avant modification. Répétez positifs, négatifs, erreurs, limites et seconde exécution. Reliez la première erreur à une entrée et une configuration précises.
 

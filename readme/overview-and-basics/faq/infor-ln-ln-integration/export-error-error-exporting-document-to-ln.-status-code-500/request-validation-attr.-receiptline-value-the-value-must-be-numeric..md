@@ -49,7 +49,7 @@ Se l'**Ordine di Acquisto** sembra corretto e contiene i dettagli necessari, puo
 
 Dovrebbe apparire come segue:
 
-<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="Schermata di validazione con una tabella delle voci di riga della ricevuta, le colonne estratte di Positionen e le righe di fattura collegate evidenziate" width="563"><figcaption></figcaption></figure>
 
 ## **Passo 4: Aggiungi il File Aggiornato a DocBits**
 

@@ -8,7 +8,7 @@ Ti serve un certificato per il tuo team di procurement, sicurezza o compliance? 
 
 ## 1. ISO/IEC 27001
 
-<figure><img src="../../.gitbook/assets/certifications1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications1.png" alt="Pagina panoramica delle certificazioni che elenca i certificati di conformità con nomi dei documenti, date di emissione e icone di download"><figcaption></figcaption></figure>
 
 Questa norma internazionale definisce i requisiti per stabilire, implementare, mantenere e migliorare continuamente un Sistema di Gestione della Sicurezza delle Informazioni (ISMS). Aiuta le organizzazioni a proteggere i dati in modo sistematico ed economico, inclusi i processi per la gestione del rischio e i controlli di sicurezza delle informazioni.
 
@@ -20,7 +20,7 @@ Questa norma internazionale definisce i requisiti per stabilire, implementare, m
 
 ## 2. SOC 1 (Controllo del fornitore di servizi 1)
 
-<figure><img src="../../.gitbook/assets/certifications2.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications2.avif" alt="Riga di badge di certificazione con i sigilli di conformità SOC 2 Type II e GDPR su uno sfondo scuro"><figcaption></figcaption></figure>
 
 I rapporti SOC 1 sono progettati per le organizzazioni che devono dimostrare l'efficacia dei controlli interni sulla rendicontazione finanziaria. È particolarmente rilevante per i fornitori di servizi che influenzano la rendicontazione finanziaria dei loro clienti.
 
@@ -32,7 +32,7 @@ I rapporti SOC 1 sono progettati per le organizzazioni che devono dimostrare l'e
 
 ## 3. SOC 2 (Controllo del fornitore di servizi 2)
 
-<figure><img src="../../.gitbook/assets/certifications3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications3.png" alt="Pagina delle certificazioni che elenca i badge di conformità SOC 2 Type II, ISO 27001 e GDPR con breve testo descrittivo"><figcaption></figcaption></figure>
 
 SOC 2 si concentra sui controlli di un'organizzazione di servizi rilevanti per la sicurezza, la disponibilità, l'integrità del processo, la riservatezza e la privacy dei dati. È cruciale per le aziende tecnologiche e di cloud computing che gestiscono informazioni sensibili.
 
@@ -44,7 +44,7 @@ SOC 2 si concentra sui controlli di un'organizzazione di servizi rilevanti per l
 
 ## 4. Conformità al GDPR (regolamento generale sulla protezione dei dati).
 
-<figure><img src="../../.gitbook/assets/certifications4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications4.png" alt="Badge GDPR rotondo blu navy con scritta bianca, puntini decorativi gialli e uno sfondo bianco"><figcaption></figcaption></figure>
 
 Il GDPR è un regolamento del diritto dell'UE sulla protezione dei dati e sulla privacy nell'Unione Europea e nello Spazio Economico Europeo. Affronta anche il trasferimento di dati personali al di fuori delle aree UE e SEE.
 

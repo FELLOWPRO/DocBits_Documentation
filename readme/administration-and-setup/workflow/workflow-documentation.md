@@ -6,11 +6,11 @@ Para mantener una visión general, puede asignar a los flujos de trabajo diferen
 
 Cree un nuevo flujo de trabajo: Haga clic en + ADD WORKFLOW
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Lienzo del Workflow Builder con la plantilla Test Simple Workflow, tres filas Wenn, Und y Dann y un botón Karte hinzufügen debajo de cada una](<../../.gitbook/assets/workflow_add_button.png>)
 
 Puede utilizar estos flujos de trabajo (Test 1,2,3) para asignar automáticamente diversos documentos al empleado adecuado de la empresa.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Panel de Workflow List con la fila Test Simple Workflow y las columnas Name, Type, Workflow Execution Order, Updated By, Created On y Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Si una factura u otro documento supera un determinado importe total que requiere revisión y aprobación previas, estos documentos pueden asignarse de inmediato a la persona correcta.
 

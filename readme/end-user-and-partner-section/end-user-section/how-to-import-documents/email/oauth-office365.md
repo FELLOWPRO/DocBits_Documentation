@@ -6,7 +6,7 @@
 
 Hier müssen Sie lediglich die gewünschte Unterorganisation auswählen und auf „Authentifizieren" drücken
 
-![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
+![Dialog Add new Data mit dem auf OAuth Office365 eingestellten Dropdown Protocol, dem Feld Sub-Organizations und der Schaltfläche AUTHENTICATE](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
 
 Sie werden auf diese Microsoft-Seite weitergeleitet und müssen einen Code eingeben.
 

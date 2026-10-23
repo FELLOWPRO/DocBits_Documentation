@@ -2,7 +2,7 @@
 
 1.  Sie erhalten eine Einladung mit einem Link per E-Mail, um den Registrierungsprozess zu beginnen. Bitte klicken Sie auf „Zur Registrierung gehen“, geben Sie die erforderlichen Informationen ein und akzeptieren Sie die Allgemeinen Geschäftsbedingungen, um zu starten.&#x20;
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/supplier_registration_1.png" alt="" width="287"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/supplier_registration_2.png" alt="Supplier registration page with onboarding form fields, contact details section, and submit button" width="246"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/supplier_registration_1.png" alt="Ankündigungsbanner für das neue Lieferantenportal mit dem Hinweis, dass Partner nach der Registrierung den Status von Bestellungen und Rechnungen einsehen und Rechnungen hochladen können" width="287"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/supplier_registration_2.png" alt="Supplier registration page with onboarding form fields, contact details section, and submit button" width="246"><figcaption></figcaption></figure></div>
 2.  **Lieferantendetails**
 
     Bitte überprüfen Sie, ob der Name des Lieferanten korrekt ist. Dies ist ein kritisches Detail für Identitäts- und rechtliche Zwecke, das nicht geändert werden kann. Bitte geben Sie alle zutreffenden Informationen einschließlich der erforderlichen Felder an. Wenn Sie fertig sind, klicken Sie auf „Weiter“, um zum Abschnitt Adressdaten zu gelangen. Um Ihren Fortschritt zu speichern und später fortzufahren, klicken Sie auf „Speichern.“\

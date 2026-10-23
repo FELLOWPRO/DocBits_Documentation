@@ -6,11 +6,11 @@ Um den Überblick zu behalten, können Sie den Workflows verschiedene Überschri
 
 Erstellen Sie einen neuen Workflow: Klicken Sie auf + ADD WORKFLOW
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Workflow-Builder-Arbeitsfläche mit der Vorlage Test Simple Workflow, drei Zeilen Wenn, Und und Dann sowie einer Schaltfläche Karte hinzufügen unter jeder Zeile](<../../.gitbook/assets/workflow_add_button.png>)
 
 Sie können diese Workflows (Test 1, 2, 3) verwenden, um verschiedene Dokumente automatisch dem richtigen Mitarbeiter im Unternehmen zuzuweisen.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Workflow-Liste mit der Zeile Test Simple Workflow und den Spalten Name, Type, Workflow Execution Order, Updated By, Created On und Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag überschreitet, der eine vorherige Prüfung und Genehmigung erfordert, können diese Dokumente sofort der richtigen Person zugewiesen werden.
 

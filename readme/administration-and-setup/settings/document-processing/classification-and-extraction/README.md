@@ -31,10 +31,10 @@ So aktivieren Sie diese Funktion:
 1. Gehen Sie zum Abschnitt **Document Splitting**.
 2.  Öffnen Sie das Dropdown-Menü.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt="Einstellungsseite Classification And Extraction mit den Tabs Allgemein, Klassifizierungsregeln und AI-Modelle, im leeren Bereich AI-Modelle wird Kein Datensatz gefunden angezeigt"><figcaption></figcaption></figure>
 3.  Wählen Sie **Split by Barcode/QR Code**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt="Einstellungsseite Classification And Extraction mit den Registerkarten Allgemein, Klassifizierungsregeln und AI-Modelle sowie der linken Navigation der deutschen DocBits-Einstellungen"><figcaption></figcaption></figure>
 
 Anschließend können Sie:
 
@@ -141,7 +141,7 @@ Im Abschnitt **Classification Rules** können Sie bestimmte **Regex**-Muster und
 
 Um diesen Abschnitt zu öffnen, klicken Sie oben auf der Seite auf den Tab **Classification Rules**.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt="Einstellungsseite Classification And Extraction mit den Registerkarten Allgemein, Klassifizierungsregeln und AI-Modelle sowie der linken Navigation der deutschen DocBits-Einstellungen"><figcaption></figcaption></figure>
 
 ### **Neue Klassifizierungsregel hinzufügen**
 
@@ -160,7 +160,7 @@ So erstellen Sie eine neue Regel:
        <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt="Zuordnung von Dokumententypen page with the Bereich dropdown, No Classification, No Splitting and Database Sharing-Klassifikation toggles"><figcaption></figcaption></figure>
 3.  Klicken Sie auf **Save**, um Ihre Klassifizierungsregel zu speichern.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Einstellungsseite Classification And Extraction mit den Tabs Allgemein, Klassifizierungsregeln und AI-Modelle, im leeren Bereich AI-Modelle wird Kein Datensatz gefunden angezeigt"><figcaption></figcaption></figure>
 
 ### **Klassifizierungsregel bearbeiten**
 
@@ -168,14 +168,14 @@ So bearbeiten Sie eine vorhandene Regel:
 
 1.  Klicken Sie in der Spalte **Actions** auf die drei Punkte.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="Einstellungsseite Classification And Extraction mit den Registerkarten Allgemein, Klassifizierungsregeln und AI-Modelle sowie der linken Navigation der deutschen DocBits-Einstellungen"><figcaption></figcaption></figure>
 2.  Wählen Sie **Edit**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt="Classification setup page with document type list, training samples section, and upload control"><figcaption></figcaption></figure>
 3. Nehmen Sie die gewünschten Änderungen vor.
 4.  Klicken Sie auf **Save**, um die Änderungen zu übernehmen.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt="Einstellungsseite Classification And Extraction mit den Tabs Allgemein, Klassifizierungsregeln und AI-Modelle, im leeren Bereich AI-Modelle wird Kein Datensatz gefunden angezeigt"><figcaption></figcaption></figure>
 
 ### **Klassifizierungsregel löschen**
 
@@ -183,7 +183,7 @@ So löschen Sie eine Regel:
 
 1.  Klicken Sie in der Spalte **Actions** auf die drei Punkte.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt="Einstellungsseite Classification And Extraction mit den Registerkarten Allgemein, Klassifizierungsregeln und AI-Modelle sowie der linken Navigation der deutschen DocBits-Einstellungen"><figcaption></figcaption></figure>
 2.  Wählen Sie **Delete**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt="Extraction rules list showing rows with Zielfeld values like Rechnungsnummer and Rechnungsdatum, Typ Feld, matching field and Wert columns"><figcaption></figcaption></figure>
@@ -203,7 +203,7 @@ Um diesen Abschnitt zu öffnen, klicken Sie oben auf der Seite auf den Tab **AI 
 Die Modelle sind in Kategorien organisiert. Unter jedem Kategorienamen wird die Anzahl der enthaltenen Modelle angezeigt.\
 Klicken Sie auf eine Kategorie, um deren Details anzuzeigen.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt="Einstellungsseite Classification And Extraction mit den Tabs Allgemein, Klassifizierungsregeln und AI-Modelle, im leeren Bereich AI-Modelle wird Kein Datensatz gefunden angezeigt"><figcaption></figcaption></figure>
 
 Oben auf der Seite der ausgewählten Kategorie sehen Sie wichtige Informationen zu jedem Modell:
 

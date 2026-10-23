@@ -105,11 +105,11 @@ Para facturas no coincidentes automáticamente:
 
 El personaje y la voz son sintéticos. La grabación muestra la interfaz de pruebas real de DocBits con facturas de formación sintéticas.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/es.mp4" %}
 Distribución de una factura de gastos
 {% endembed %}
 
-[Ver con subtítulos y capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/es.html)
+[Ver con subtítulos y capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/es.html)
 
 Algunas etiquetas nativas pueden permanecer en otro idioma. Se conservan los identificadores técnicos de los campos.
 
@@ -127,8 +127,8 @@ En la primera línea, introduzco el sesenta por ciento y confirmo con Intro. Esp
 
 Ahora compruebo juntos los dos importes, las cuentas de mayor y los centros de coste. Seiscientos más cuatrocientos suman mil euros. El total registrado también debe mostrar mil euros, y el saldo restante debe ser cero. Aclaro cualquier diferencia en los totales antes de guardar.
 
-<figure><img src="../../.gitbook/assets/customer-totals-es-accounting-email-v1.png" alt="Centros de coste con un total comprobado de 1.000 euros"><figcaption><p>Centros de coste con un total comprobado de 1.000 euros</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-totals-es-accounting-email-v2.png" alt="Centros de coste con un total comprobado de 1.000 euros"><figcaption><p>Centros de coste con un total comprobado de 1.000 euros</p></figcaption></figure>
 
 Guardo la contabilización y espero la confirmación. A continuación, vuelvo a cargar la factura. Ambos centros de coste, los porcentajes y los importes siguen ahí. También compruebo el total y el saldo restante después de recargar.
 
-<figure><img src="../../.gitbook/assets/customer-save-es-accounting-email-v1.png" alt="Imputación guardada y comprobada tras volver a abrir"><figcaption><p>Imputación guardada y comprobada tras volver a abrir</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-save-es-accounting-email-v2.png" alt="Imputación guardada y comprobada tras volver a abrir"><figcaption><p>Imputación guardada y comprobada tras volver a abrir</p></figcaption></figure>

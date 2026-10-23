@@ -106,7 +106,7 @@ Pour créer une nouvelle exportation :
 * **Mode d'exportation du nom de fichier** Spécifie si le fichier exporté conserve son nom de fichier original ou est renommé en utilisant l'ID de document DocBits.
 * **Inclure l'historique du document** Lorsqu'il est activé, le fichier exporté inclura l'historique du document basé sur les journaux disponibles dans le tableau de bord.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
+![Menu d'actions du document avec les options Validate, Assign to, Document-flow, Download, Restart, Document Logs, Workflow Logs et Delete](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
 
 <figure><img src="../../../.gitbook/assets/prior-u016-fr.png" alt="Options avancées d’export SFTP non enregistrées."><figcaption><p>Options avancées d’export SFTP non enregistrées.</p></figcaption></figure>
 

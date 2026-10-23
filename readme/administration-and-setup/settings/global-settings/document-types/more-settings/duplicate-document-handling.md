@@ -12,10 +12,10 @@ Pour activer la détection des documents en double dans **DocBits**, suivez ces 
 
 1.  Accédez à **Paramètres** → **Paramètres globaux** → **Types de documents**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
+    ![Barre latérale des Global settings avec les entrées de menu Company Information, Document Types, Email Notification, Email Templates et Dashboard](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
 2.  Sélectionnez le **Type de document** souhaité et cliquez sur **Plus de paramètres**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
+    ![Page Document types listant Invoice, Credit Note, Delivery Note, Order Confirmation et Contract, avec commutateurs Extraction Type et onglets Edit layout](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
 3.  Allez à la section **Détection des doublons**.
 
 <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-fr.png" alt="Paramètres de détection des documents en double."><figcaption><p>Paramètres de détection des documents en double.</p></figcaption></figure>
@@ -51,7 +51,7 @@ Une fois la **Détection des doublons** activée, deux menus déroulants seront 
 
     <mark style="color:red;">**Remarque**</mark> : Un intervalle de 3 mois est recommandé pour garantir des performances optimales. La sélection d'un intervalle plus long peut entraîner des temps de chargement plus lents du tableau de bord.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
+    ![Section de détection des doublons de More Settings avec Duplicate Detection Interval réglé sur 3 Months et listes déroulantes Duplicate Invoice Detection](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
 
 ## Affichage des documents en double sur le Tableau de bord
 
@@ -62,6 +62,6 @@ Une fois la **Détection des doublons** activée, tous les documents identifiés
 
 *   Lors de la visualisation d'un document signalé, une barre d'avertissement apparaîtra en haut, indiquant que le document est un doublon.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+    ![Comparaison de doublons en écran partagé d'une facture affichant les champs numéro de facture, date de facture, adresse du fournisseur et détails de paiement](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
 
 Pour examiner des doublons possibles, comparez numéro de facture, fournisseur, date et montant. Utilisez l’avertissement et les détails des documents pour décider des corrections nécessaires.

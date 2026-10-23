@@ -8,7 +8,7 @@ Les réceptions de marchandises arrivent normalement dans DocBits automatiquemen
 
 ## Deux façons d'envoyer le même BOD
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
+![Liste des endpoints Swagger affichant Import Receive Delivery Bod et Import Receive Delivery Bod Xml](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
 
 | Endpoint | Quand l'utiliser |
 | --- | --- |
@@ -25,7 +25,7 @@ Il vous faudra :
 * **Le BOD** — un fichier XML `SyncReceiveDelivery`, ou son contenu.
 * **Votre Org ID**, depuis **Settings → Integration & SSO**, dans la section **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Champs Org ID et Sub Org ID remplis avec des valeurs UUID d'exemple](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** affiche la sous-organisation sélectionnée dans l'en-tête. Avec **CROSS** sélectionné — la vue couvrant toutes les sous-organisations — il affiche la même valeur que **Org ID**. Basculez d'abord vers une sous-organisation précise si vous avez besoin de son ID.
@@ -58,20 +58,20 @@ Tout ce qui se trouve sous **import** est verrouillé tant que vous ne vous ête
 
 * Cliquez sur l'**icône de cadenas** à droite de l'endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-lock.png)
+![Barre du endpoint Import Receive Delivery Bod avec l'icône de cadenas à côté](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-lock.png)
 
 * La boîte de dialogue **Available authorizations** s'ouvre avec deux entrées.
 * Collez votre **Org ID** dans **X-ORG-ID** et cliquez sur **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Dialogue Available authorizations avec le champ d'en-tête X-ORG-ID affichant la valeur de l'ID d'organisation](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![Dialogue Available authorizations affichant l'entrée d'en-tête X-ORG-ID marquée comme Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Descendez jusqu'à **X-API-KEY**, collez votre API key et cliquez sur **Authorize**. Dans DocBits, vous la trouverez sous **Settings → Integration & SSO**, dans la section **API Key**, ou vous pouvez [créer une nouvelle clé](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Dialogue Available authorizations avec le champ d'en-tête X-API-KEY attendant la valeur de la clé d'API](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![Dialogue Available authorizations affichant l'entrée d'en-tête X-API-KEY marquée comme Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Cliquez sur **Close**.
 
@@ -81,13 +81,13 @@ Collez la clé seule — n'écrivez pas `Bearer` devant. Les deux autorisations 
 
 ### 3. Remplir les champs
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-rd.png)
+![Entrée du endpoint Receive Delivery Bod dans Swagger sans paramètres](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-rd.png)
 
 Cliquez sur **Try it out**, puis remplissez le formulaire de l'endpoint que vous avez choisi.
 
 #### Téléverser un fichier — `/import/receive_delivery_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
+![Endpoint Receive Delivery Bod développé avec un formulaire de corps de requête incluant org_id, sub_org_id et le téléchargement de fichier](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
 
 | Champ | |
 | --- | --- |
@@ -148,7 +148,7 @@ Vérifiez vers quel environnement et quelle organisation vous pointez avant d'ex
 
 Avant d'exécuter, vérifiez la liste déroulante **Servers** en bas du formulaire. Elle détermine l'environnement vers lequel la requête est réellement envoyée, et elle peut différer de la page que vous avez ouverte.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-execute.png)
+![Formulaire du corps de requête avec org_id, sub_org_id, le fichier sélectionné receive-delivery-sample.xml et des mappages de champs personnalisés](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-execute.png)
 
 Cliquez sur **Execute**. Un import réussi renvoie :
 
@@ -159,7 +159,7 @@ Cliquez sur **Execute**. Un import réussi renvoie :
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-response.png)
+![Résultat de Execute avec la commande curl et un corps de réponse 200 affichant BOD processed successfully](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-response.png)
 
 Les receive delivery BOD sont traités pendant que vous attendez : lorsque ce message s'affiche, les données sont donc déjà en place.
 

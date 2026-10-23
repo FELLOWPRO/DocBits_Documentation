@@ -31,11 +31,11 @@ Cela rend les prompts réutilisables et adaptables à travers différents flux d
 
 Pour ouvrir le popup des variables de prompt, cliquez sur l'icône **roue dentée** située à côté du champ de saisie du prompt.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvEC6vmU6CCsAa36OK9V6%252Fimage.png%3Falt%3Dmedia%26token%3Dfd26ce70-0de4-4bdb-adf4-85d0052f9d53\&width=768\&dpr=4\&quality=100\&sign=fc29eaa3\&sv=2)
+![Champ de saisie de prompt dans le DocBits Operator avec l'icône d'engrenage qui ouvre la fenêtre contextuelle Prompt Variables](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvEC6vmU6CCsAa36OK9V6%252Fimage.png%3Falt%3Dmedia%26token%3Dfd26ce70-0de4-4bdb-adf4-85d0052f9d53\&width=768\&dpr=4\&quality=100\&sign=fc29eaa3\&sv=2)
 
 ## Mise en Page et Contrôles du Popup
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FftlMKp0ql0miqBTdCtt3%252Fimage.png%3Falt%3Dmedia%26token%3D979b7c8e-0728-4a10-bb8a-3275203c4c3d\&width=768\&dpr=4\&quality=100\&sign=b07844a9\&sv=2)
+![Fenêtre contextuelle Prompt Variables avec des paires de champs de saisie Key et Value, des cases à cocher Save as sensitive et un bouton Add](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FftlMKp0ql0miqBTdCtt3%252Fimage.png%3Falt%3Dmedia%26token%3D979b7c8e-0728-4a10-bb8a-3275203c4c3d\&width=768\&dpr=4\&quality=100\&sign=b07844a9\&sv=2)
 
 * **Champ de Saisie de Clé :** Saisissez le nom de la variable ici (sans les crochets).
 * **Champ de Saisie de Valeur :** Saisissez la valeur à utiliser pour cette variable lorsque le prompt s'exécute.

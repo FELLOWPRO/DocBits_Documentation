@@ -8,7 +8,7 @@ La **Swiss QR Bill** est le standard national de bulletin de paiement qui, depui
 
 Les Swiss QR Bills suivent le standard de paiement **ISO 20022** et sont émises en deux versions : **v1.0** (déploiement initial) et **v2.0** (actuelle). L'extracteur DocBits prend en charge les deux. Les payloads reconnus sont décodés en un ensemble complet de champs — créancier, débiteur, IBAN / QR-IBAN, montant, devise, type de référence (QRR, SCOR ou NON), messages structurés et libres, schémas de paiement alternatifs.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt="Page de recherche des paramètres avec des entrées Bon de commande, dont Appariement et validation des bons de commande et Tableau de bord PO"><figcaption></figcaption></figure>
 
 #### Principaux avantages
 
@@ -77,6 +77,6 @@ L'analyse Swiss QR Bill est couverte par le réglage général **Extraction de c
    * Faites défiler jusqu'à l'option **Extraction de codes-barres / QR**.
    * Basculez le curseur pour l'activer.
 
-<figure><img src="../../../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (444).png" alt="Page de recherche des paramètres avec des entrées Bon de commande, dont Appariement et validation des bons de commande et Tableau de bord PO"><figcaption></figcaption></figure>
 
 Pour la liste complète des standards de QR codes de paiement, consultez la [page Vue d'ensemble](./README.md).

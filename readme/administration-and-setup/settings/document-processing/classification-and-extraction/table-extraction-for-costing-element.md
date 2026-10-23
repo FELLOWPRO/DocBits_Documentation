@@ -22,22 +22,22 @@ Vous pouvez trouver le **guide sur la configuration des éléments de coûts** d
 1. Accédez à **Paramètres → Traitement des documents → Classification et extraction → Extraction de table**.
 2. Activez **Extraction d'éléments de coût**.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt="Page de réglages en français avec Classification and Extraction ouvert, montrant les onglets classification rules et AI models et le message no records found"><figcaption></figcaption></figure>
 
 ### **Définir ou modifier la classification**
 
 1.  Click on the **box icon** next to the item.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt="Page de réglages en français avec Classification and Extraction ouvert, montrant les onglets classification rules et AI models et le message no records found"><figcaption></figcaption></figure>
 2.  Un **menu déroulant** avec tous les éléments de calcul configurés apparaîtra.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt="Page de réglages en français avec Classification and Extraction ouvert, montrant les onglets classification rules et AI models et le message no records found"><figcaption></figcaption></figure>
 3.  Sélectionnez le bon **type d'élément de coût**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt="Page de réglages en français avec Classification and Extraction ouvert, montrant les onglets classification rules et AI models et le message no records found"><figcaption></figcaption></figure>
 4. La classification est désormais mise à jour en conséquence.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt="Page de réglages en français avec Classification and Extraction ouvert, montrant les onglets classification rules et AI models et le message no records found"><figcaption></figcaption></figure>

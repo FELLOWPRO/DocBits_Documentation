@@ -4,11 +4,11 @@ Aby zachować przejrzystość, możesz nadać przepływom pracy różne nagłów
 
 Utwórz nowy przepływ pracy: Kliknij + ADD WORKFLOW
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+![Obszar roboczy Workflow Builder z szablonem Test Simple Workflow, trzema wierszami Wenn, Und i Dann oraz przyciskiem Karte hinzufügen pod każdym z nich](<../../.gitbook/assets/workflow_add_button.png>)
 
 Możesz użyć tych przepływów pracy (Test 1,2,3), aby automatycznie przypisywać różne dokumenty do właściwego pracownika w firmie.
 
-![](<../../.gitbook/assets/workflow_list_overview.png>)
+![Pulpit Workflow List z wierszem Test Simple Workflow i kolumnami Name, Type, Workflow Execution Order, Updated By, Created On i Last Mod](<../../.gitbook/assets/workflow_list_overview.png>)
 
 Jeśli faktura lub inny dokument przekracza określoną kwotę całkowitą, która wymaga wcześniejszego przeglądu i zatwierdzenia, dokumenty te mogą zostać natychmiast przypisane do właściwej osoby.
 

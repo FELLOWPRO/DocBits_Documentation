@@ -99,3 +99,36 @@ Voor facturen die niet automatisch zijn gematcht:
 3. **Matches Beoordelen**: Gebruikers kunnen de matches beoordelen, details verifiëren en statusindicatoren bekijken.
 4. **Afwijkingen Oplossen**: Eventuele mismatches of afwijkingen worden gemarkeerd voor de gebruiker om handmatig te beoordelen en te corrigeren.
 5. **Gegevens Exporteren**: Gematchte gegevens kunnen worden geëxporteerd voor verdere verwerking of archivering.
+
+
+## Videohandleiding: Een onkostenfactuur verdelen
+
+De persoon en stem zijn synthetisch. De opname toont de echte DocBits-testinterface met synthetische trainingsfacturen.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/nl.mp4" %}
+Een onkostenfactuur verdelen
+{% endembed %}
+
+[Bekijken met ondertiteling en hoofdstukken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/nl.html)
+
+Sommige oorspronkelijke productlabels kunnen in een andere taal staan. Technische veld-ID’s blijven behouden.
+
+In de opgenomen interface toont de kolom « Hoeveelheid » hier het geldbedrag van de verdeling. « Geregistreerde boekingen » is het toegewezen totaal en « Onvereffend bedrag » het nog toe te wijzen restant. « Vouchertekst » bevat de omschrijving van de boekingsverdeling. De namen van de demonstratierekeningen en kostenplaatsen zijn ingestelde waarden. Deze verdeling bevestigt geen betaling of boeking in het ERP.
+
+Eerst controleer ik onze originele trainingsfactuur. De leverancier, het factuurnummer en het bedrag moeten overeenkomen met het document. In dit voorbeeld is het duizend euro zonder btw. De factuur bevat geen inkooporder.
+
+Ik open de boeking en werk met de verdeling op basis van het totaalbedrag. De beschikbare grootboekrekeningen en kostenplaatsen zijn vooraf door onze beheerder ingesteld. Ik kies alleen waarden die zakelijk gezien logisch zijn voor deze factuur.
+
+Met de verdeelfunctie maak ik twee subregels aan. DocBits begint hier met een gelijkmatige verdeling. Maar voor ons voorbeeld heb ik zestig en veertig procent nodig. Het oorspronkelijke factuurbedrag blijft duizend euro.
+
+Voor beide subregels selecteer ik de voorbereide grootboekrekening voor kantoordiensten. De eerste regel hoort bij de operationele kostenplaats, de tweede bij de administratie. De kostenplaats is in dit voorbeeld een verplicht veld. Ik voeg ook een duidelijke boekingstekst toe.
+
+In de eerste regel vul ik zestig procent in en bevestig met Enter. Ik wacht tot het bedrag zeshonderd euro aangeeft. Daarna bevestig ik veertig procent in de tweede regel en wacht op vierhonderd euro. Zo controleer ik elke herberekening voordat ik verderga.
+
+Nu controleer ik de twee bedragen, grootboekrekeningen en kostenplaatsen samen. Zeshonderd plus vierhonderd is duizend euro. Het geregistreerde totaal moet ook duizend euro aangeven, en het resterende saldo moet nul zijn. Ik los eventuele verschillen in de totalen op voordat ik opsla.
+
+<figure><img src="../../.gitbook/assets/customer-totals-nl-accounting-email-v2.png" alt="Kostenplaatsen met een gecontroleerd totaal van 1.000 euro"><figcaption><p>Kostenplaatsen met een gecontroleerd totaal van 1.000 euro</p></figcaption></figure>
+
+Ik sla de verdeling op en wacht op de bevestiging. Daarna laad ik de factuur opnieuw. Beide kostenplaatsen, de percentages en de bedragen zijn er nog steeds. Ik controleer ook het totaal en het resterende saldo na het herladen.
+
+<figure><img src="../../.gitbook/assets/customer-save-nl-accounting-email-v2.png" alt="Boekingsverdeling opgeslagen en na heropenen gecontroleerd"><figcaption><p>Boekingsverdeling opgeslagen en na heropenen gecontroleerd</p></figcaption></figure>

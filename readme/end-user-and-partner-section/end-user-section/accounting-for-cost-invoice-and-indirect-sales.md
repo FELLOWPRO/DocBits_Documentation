@@ -105,11 +105,11 @@ Pour les factures non associées automatiquement :
 
 Le personnage et la voix sont synthétiques. La capture montre la véritable interface de test DocBits avec des factures de formation synthétiques.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/fr.mp4" %}
 Répartition d'une facture de frais
 {% endembed %}
 
-[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v1/fr.html)
+[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/fr.html)
 
 Certains libellés natifs peuvent rester dans une autre langue. Les identifiants techniques des champs sont conservés.
 
@@ -127,8 +127,8 @@ Dans la première ligne, je saisis soixante pour cent et je valide avec Entrée.
 
 Maintenant, je vérifie ensemble les deux montants, les comptes généraux et les centres de coûts. Six cents plus quatre cents font mille euros. Le total saisi doit aussi afficher mille euros, et le reste à répartir doit être zéro. Je clarifie toute différence d'affichage des totaux avant de sauvegarder.
 
-<figure><img src="../../.gitbook/assets/customer-totals-fr-accounting-email-v1.png" alt="Centres de coûts avec un total vérifié de 1 000 euros"><figcaption><p>Centres de coûts avec un total vérifié de 1 000 euros</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-totals-fr-accounting-email-v2.png" alt="Centres de coûts avec un total vérifié de 1 000 euros"><figcaption><p>Centres de coûts avec un total vérifié de 1 000 euros</p></figcaption></figure>
 
 J'enregistre la répartition et j'attends la confirmation. Ensuite, je recharge la facture. Les deux centres de coûts, les pourcentages et les montants sont toujours présents. Je vérifie aussi le total et le reste à répartir après le rechargement.
 
-<figure><img src="../../.gitbook/assets/customer-save-fr-accounting-email-v1.png" alt="Imputation enregistrée et vérifiée après réouverture"><figcaption><p>Imputation enregistrée et vérifiée après réouverture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customer-save-fr-accounting-email-v2.png" alt="Imputation enregistrée et vérifiée après réouverture"><figcaption><p>Imputation enregistrée et vérifiée après réouverture</p></figcaption></figure>

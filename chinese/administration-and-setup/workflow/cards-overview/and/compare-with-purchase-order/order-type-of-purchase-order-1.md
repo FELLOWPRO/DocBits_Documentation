@@ -4,7 +4,7 @@ hidden: true
 
 # 采购订单类型
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-08-zh-20261023.png" alt="与采购订单比较 任意/全部 采购订单类型 运算符 订单类型" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
 
 ## **用途**：
 

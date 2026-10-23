@@ -395,7 +395,7 @@ Gli annunci di rilascio originali rimangono di seguito per riferimento.
 * **Contatore dei task per i documenti nella vista dashboard:**\
   I documenti nel dashboard possono ora indicare i task aperti ad essi associati e mostrare il numero totale di task in sospeso. Questa funzionalità offre agli utenti una rapida panoramica delle azioni in sospeso, migliorando la gestione dei task e l'efficienza del workflow.
 * **Selezione del modello IA per fornitore:**\
-  Gli utenti possono ora selezionare il modello IA utilizzato per l'estrazione dei dati per singolo fornitore. Questo miglioramento consente un'ottimizzazione mirata, garantendo una migliore accuratezza di estrazione per fornitori diversi e migliorando i risultati complessivi dell'elaborazione dei dati. [Scopri di più](https://docs.docbits.com/end-user-and-partner-section/end-user-section/validation-screen#supplier-based-ai-model)
+  Gli utenti possono ora selezionare il modello IA utilizzato per l'estrazione dei dati per singolo fornitore. Questo miglioramento consente un'ottimizzazione mirata, garantendo una migliore accuratezza di estrazione per fornitori diversi e migliorando i risultati complessivi dell'elaborazione dei dati. [Scopri di più](https://docs.docbits.com/italian/end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction)
 * **Log di workflow migliorati per le card dell'albero decisionale:**\
   I log ora mostrano l'output dell'albero decisionale, rendendo più semplice tracciare e comprendere come sono state prese le decisioni all'interno dei workflow.
 *   **Introduzione di un nuovo setup di auto-testing per migliorare funzionalità e stabilità del sistema:**
@@ -519,7 +519,7 @@ Gli annunci di rilascio originali rimangono di seguito per riferimento.
 ### Miglioramenti di DocBits:
 
 * **Estrazione dati migliorata:** aggiunta un'opzione per estrarre il **Purchase Order** o l'**Item Number** da una riga sopra o sotto.
-* **Accesso esteso alle Cross Sub-Organizations:** anche gli utenti non amministratori possono ora accedere alla funzionalità **Cross Sub-Organizations**. [Scopri di più](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
+* **Accesso esteso alle Cross Sub-Organizations:** anche gli utenti non amministratori possono ora accedere alla funzionalità **Cross Sub-Organizations**. [Scopri di più](https://docs.docbits.com/italian/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#opzione-mostra-organizzazione-incrociata-cross)
 
 ### **Correzioni di bug:**
 
@@ -561,7 +561,7 @@ DocBits introduce una funzionalità avanzata per sfruttare le API esterne durant
 
 ### Accesso Cross Sub-Organizations
 
-Per le organizzazioni con più sotto-organizzazioni abilitate, DocBits introduce la funzionalità Cross Sub-Organizations. Questo miglioramento consente agli utenti amministrativi di semplificare la gestione dei documenti in tutte le sotto-organizzazioni sotto un'unica struttura. Gli utenti admin possono ora accedere e visualizzare tutti i documenti di ogni sotto-organizzazione senza dover cambiare sotto-organizzazione. Questa visibilità centralizzata permette agli amministratori di vedere tutti i documenti di tutte le sotto-organizzazioni, rendendo facile individuare file specifici e mantenendo al contempo una visione d'insieme. [Scopri di più](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
+Per le organizzazioni con più sotto-organizzazioni abilitate, DocBits introduce la funzionalità Cross Sub-Organizations. Questo miglioramento consente agli utenti amministrativi di semplificare la gestione dei documenti in tutte le sotto-organizzazioni sotto un'unica struttura. Gli utenti admin possono ora accedere e visualizzare tutti i documenti di ogni sotto-organizzazione senza dover cambiare sotto-organizzazione. Questa visibilità centralizzata permette agli amministratori di vedere tutti i documenti di tutte le sotto-organizzazioni, rendendo facile individuare file specifici e mantenendo al contempo una visione d'insieme. [Scopri di più](https://docs.docbits.com/italian/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#opzione-mostra-organizzazione-incrociata-cross)
 
 <figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt=""><figcaption></figcaption></figure>
 

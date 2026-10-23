@@ -91,7 +91,7 @@
 * Una volta aggiunti e configurati tutti i nodi, fare clic su **Save**.
 * Attivare il flusso per completare la configurazione.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+<figure><img src="../../../.gitbook/assets/m3-historical-ion-activation-example.png" alt="Esempio storico dell’attivazione di un flusso in Infor ION, interfaccia esterna in inglese. Non è una schermata italiana di DocBits né la prova di un’esportazione M3 riuscita durante questa verifica."><figcaption><p>Esempio storico dell’attivazione di un flusso in Infor ION, interfaccia esterna in inglese. Non è una schermata italiana di DocBits né la prova di un’esportazione M3 riuscita durante questa verifica.</p></figcaption></figure>
 
 ## Passo 4: Configurare l'Export in DocBits
 

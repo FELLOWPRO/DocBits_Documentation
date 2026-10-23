@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-00-de-20261023.png" alt="Aufgabe Erstellen Sie eine Aufgabe mit dem Titel: Titel , Beschreibung: Beschreibung der Priorität Priorität und weisen Sie sie Empfänger zu. Benachrichtigen Sie sie per E-Mail E-Mail senden . Verwenden Sie Benutzer als Ausweichlösung, wenn der Empfänger nicht gefunden wird." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

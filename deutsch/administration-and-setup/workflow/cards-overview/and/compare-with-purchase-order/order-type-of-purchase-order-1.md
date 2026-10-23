@@ -4,7 +4,7 @@ hidden: true
 
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-08-de-20261023.png" alt="Mit Bestellung vergleichen Beliebig/Alle Bestellart der Bestellung Operator Art der Bestellung"><figcaption></figcaption></figure>
 
 ## **Zweck**:
 

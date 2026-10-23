@@ -1,6 +1,6 @@
 # Start Export
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-01-de-20261023.png" alt="Exportieren Starte den Export, wobei die Validierung auf Boolesche gesetzt ist. Status nach dem Export: Status" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

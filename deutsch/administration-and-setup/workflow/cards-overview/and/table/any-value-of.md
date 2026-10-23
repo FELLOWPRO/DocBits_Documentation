@@ -1,6 +1,6 @@
 # Any Value of
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-table-07-de-20261023.png" alt="Tabelle Wenn irgendein Wert von Spalte Name in der Tabelle Name der Tabelle dem Regex-Muster Search Pattern entspricht. Es muss nur EIN Spalteneintrag übereinstimmen, um fortzufahren." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

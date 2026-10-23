@@ -21,7 +21,7 @@ Puede ayudar a entrenar a DocBits para reconocer estos campos identificando manu
 
 Repita este proceso para todos los campos requeridos. Una vez que todos los campos necesarios hayan sido completados, **haga clic en "Guardar Reglas"** para almacenar el entrenamiento. Esto asegura que DocBits aprenda dónde encontrar cada pieza de información para documentos similares en el futuro.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![Entrenamiento de campos de cabecera en Apple_invoice.pdf con Company Name, Company Street y Company PLZ resaltados en el documento](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Después de guardar, su documento estará listo para ser exportado, y la próxima vez, DocBits extraerá automáticamente los campos entrenados.
 

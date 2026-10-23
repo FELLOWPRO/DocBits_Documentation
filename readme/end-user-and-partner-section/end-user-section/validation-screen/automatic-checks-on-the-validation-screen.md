@@ -6,7 +6,7 @@ Por defecto, campos específicos en el proceso de validación de campos se verif
 
 Siempre puedes verificar la fórmula utilizada al pasar el cursor sobre el icono de información.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1_es.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1_es.png" alt="Pantalla de validación de documentos con el panel de comprobaciones automáticas que enumera opciones de casilla como Dokumenttyp, Rechnungsdatum y Lieferant junto a la lista de campos"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Nota:**</mark> El icono de información solo es visible si se ha extraído un valor para el campo correspondiente.
 

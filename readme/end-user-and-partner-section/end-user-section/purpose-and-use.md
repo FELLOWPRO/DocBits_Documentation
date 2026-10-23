@@ -4,7 +4,7 @@
 
 La pantalla de validación de DocBits está diseñada para verificar la exactitud y la integridad de los datos contenidos en los documentos antes de que se procesen o se guarden. Esta funcionalidad es fundamental para garantizar que todos los datos se lean y procesen correctamente, manteniendo así la integridad y la calidad de los datos.
 
-<figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt="Diagrama de pasos en galones apilados para la pantalla de validación que cubre validación, eficiencia, cumplimiento, facilidad de uso, prevención de errores, integración de datos y calidad de datos"><figcaption></figcaption></figure>
 
 ## Descripción detallada del propósito y uso de la pantalla de validación
 

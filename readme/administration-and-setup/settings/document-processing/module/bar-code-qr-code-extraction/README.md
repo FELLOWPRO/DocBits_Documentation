@@ -21,7 +21,7 @@ Per abilitare la funzione, seguire questi passaggi:
        \
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt="Pagina di ricerca delle impostazioni con voci Ordine di acquisto, tra cui Corrispondenza e convalida degli ordini di acquisto e Cruscotto PO"><figcaption></figcaption></figure>
 
 ## **Tipi di codice supportati**
 

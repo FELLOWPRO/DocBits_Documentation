@@ -4,7 +4,7 @@
 
 L'impostazione **App Color** consente agli amministratori di definire la combinazione di colori dell'interfaccia dell'applicazione. Questa funzionalità è particolarmente utile per distinguere tra diversi ambienti come testing, sandbox e produzione. Assegnando colori distinti a ciascun ambiente, gli utenti possono facilmente identificare in quale ambiente stanno lavorando, riducendo il rischio di eseguire azioni critiche nell'ambiente sbagliato.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/AppColor.png)
+![Pagina delle impostazioni Company Information con la sezione App-Color che mostra il campo App-Color impostato su #faa5d2](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/AppColor.png)
 
 ## Accesso all'Impostazione del Colore dell'App
 

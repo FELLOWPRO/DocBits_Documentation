@@ -20,7 +20,7 @@ Quando è attiva, viene verificato il risultato dell’abbinamento del documento
    * Aprire **Impostazioni** → **Elaborazione documenti** → **Modulo** → **Ordine di acquisto**.
    * Attivare il selettore **Auto Export if PO matched 100%**.
 
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/100%PO.png" alt="Pagina delle impostazioni con la navigazione Elaborazione documenti e la tabella di esportazione che mostra le colonne Tipo, Sotto-Organizzazioni, Titolo e Metodo Di Esportazione"><figcaption></figcaption></figure>
 
 2. **Monitorare l’elaborazione:**
    * Controllare gli stati di abbinamento, convalida ed esportazione della fattura corrente.

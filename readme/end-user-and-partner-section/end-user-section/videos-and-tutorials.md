@@ -11,7 +11,7 @@ The video icon sits at the right end of the top bar, after the help icon.
 * The icon is **yellow with a small dot** while at least one video has not been acknowledged.
 * It takes the same colour as the other header icons once you have acknowledged every video.
 
-Select the icon to open **Videos & Tutorials** as a panel on the right. The panel stays open while you move through DocBits, so you can watch a step and repeat it in the page behind it.
+Select the icon to open **Videos & Tutorials** as a panel on the right.
 
 <figure><img src="../../.gitbook/assets/videos-tutorials-panel.png" alt="The Videos and Tutorials panel listing the topics Document processing, Workflows, PO Matching, E-Documents, Validation and rules, Analytics and Administration as folders with video counts"><figcaption><p>The panel opens on the list of topics. Each topic is a folder with its number of videos.</p></figcaption></figure>
 
@@ -43,4 +43,3 @@ Select **Acknowledge** when you have watched the video. This marks it as seen fo
 
 * Videos marked **Admin** are meant for administrators. Administrators see both administrator and end-user videos in the panel; end users see the end-user videos only.
 * If a video is not available in your interface language, the English version is shown with a language code such as **EN**.
-* The catalogue is read when you open the panel. If no videos are available, the icon keeps its normal colour and the panel shows no videos.

@@ -2,11 +2,11 @@
 
 Este video muestra la configuración y prueba de aprobaciones.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/es.mp4" %}
 Configurar y probar aprobaciones de facturas
 {% endembed %}
 
-[Ver video con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/es.html)
+[Ver video con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/es.html)
 
 Se muestra la aplicación real. Los nombres de las opciones pueden variar según la versión utilizada.
 
@@ -32,9 +32,9 @@ La opción V2 adicional y los editores de formularios son configuraciones separa
 3. Asigne la factura en espera al otro revisor autorizado. Utilice esa segunda cuenta normal de revisión para verificarla y otorgar la segunda aprobación con una nota separada.
 4. Vuelva a abrir el historial y verifique ambos revisores diferentes, horas y notas. También rechace una factura de prueba separada con un motivo y verifique esa decisión después de volver a cargar.
 
-<figure><img src="../../../../../../.gitbook/assets/admin-options-es-d7f83916ec6d.png" alt="Configuraciones de aprobación guardadas en el propio tipo de prueba."><figcaption><p>Configuraciones de aprobación guardadas en el propio tipo de prueba.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-options-es-808b18795b26.png" alt="Configuraciones de aprobación guardadas en el propio tipo de prueba."><figcaption><p>Configuraciones de aprobación guardadas en el propio tipo de prueba.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/admin-second-es-d7f83916ec6d.png" alt="Dos revisores diferentes y ambas notas guardadas."><figcaption><p>Dos revisores diferentes y ambas notas guardadas.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/admin-second-es-808b18795b26.png" alt="Dos revisores diferentes y ambas notas guardadas."><figcaption><p>Dos revisores diferentes y ambas notas guardadas.</p></figcaption></figure>
 
 ## Verificar el resultado
 

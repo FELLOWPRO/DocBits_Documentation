@@ -1,6 +1,8 @@
 # Crie uma nova tarefa e atribua-a ao grupo de compras
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v2-pt-pt.png" alt="Crie uma nova tarefa e atribua-a ao grupo de compras, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v3-pt-pt.png" alt="Crie uma nova tarefa e atribua-a ao grupo de compras, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
 ## **Propósito:**
 

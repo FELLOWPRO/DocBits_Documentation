@@ -1,8 +1,10 @@
 # Preço Combinado de Diferença de Quantidade
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5e9d809dfde3-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v2-pt-pt.png" alt="Preço Combinado de Diferença de Quantidade, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-313edcefbea2-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v3-pt-pt.png" alt="Preço Combinado de Diferença de Quantidade, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v4-pt-pt.png" alt="Preço Combinado de Diferença de Quantidade, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
 
 ## **Objetivo**:
 

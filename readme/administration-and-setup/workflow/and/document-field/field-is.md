@@ -1,6 +1,8 @@
 # Verificar a presença e o conteúdo de um campo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1-pt-pt.png" alt="Verificar a presença e o conteúdo de um campo, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-pt-pt.png" alt="Verificar a presença e o conteúdo de um campo, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## Quando utilizar
 

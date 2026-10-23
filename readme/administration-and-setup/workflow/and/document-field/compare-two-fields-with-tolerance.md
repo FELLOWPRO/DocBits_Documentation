@@ -1,6 +1,6 @@
 # Compare dois campos com tolerância
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-19d9a4d5e71d-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_docfield_tolerances_v2-pt-pt.png" alt="Compare dois campos com tolerância, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 

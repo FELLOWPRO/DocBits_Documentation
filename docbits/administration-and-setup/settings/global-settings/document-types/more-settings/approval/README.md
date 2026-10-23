@@ -1,18 +1,49 @@
-# Approval
+# Configure and test invoice approvals
 
-Use the approval options to decide how a document is checked before it leaves DocBits. The options are configured for each document type, so start with the type your team uses, such as **Invoice**.
+Configure an isolated approval process and test first approval, a different second reviewer and rejection.
 
-1. Open **Settings** → **Document Types**.
-2. Select the document type and open **More Settings**.
-3. Scroll to **Approval & Rejection**. Review the four switches before changing any of them.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/en.mp4" %}
+Configure and test invoice approvals
+{% endembed %}
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc126-approval-stamp-en.png" alt="English Approval and Rejection options in the Sandbox Invoice document type"><figcaption><p>Current English Sandbox view for Invoice in DocBits Documentation Test A. All four switches are off in this example.</p></figcaption></figure>
+[Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v1/en.html)
 
-| Option                    | What it is for                                                                                                                 |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Approve before export** | Require an approval decision before exporting the document.                                                                    |
-| **Second Approval**       | Add another approval step when one decision is not enough for your process.                                                    |
-| **Approval Stamp**        | Add an approval mark to an approved document. See [Approval Stamp](approval-stamp.md) for the setup and download options.      |
-| **Approval History**      | Keep a record of approval decisions. See [Approval History](approval-history.md) for the setting and how to check the history. |
+The recording shows the real application. Option wording may vary with the deployed version.
 
-Choose the options required by your own process. Then use a non-customer test document and the intended reviewer roles to check the approval path before applying it to live documents. The screenshot shows the available settings; no approval flow or export was performed during this documentation check.
+Configure approval for the document type used by your process. Identify the intended reviewers and decide whether you need a second independent review. The video uses a separate test type, synthetic invoices and temporary ordinary reviewer accounts; its male presenter is fictional.
+
+## Configure the document type
+
+Open **Settings → Document Types**, select the intended type and open **More settings → Approval & Rejection**. Choose the settings your process needs, then reload the page to check what was saved.
+
+| Setting | Purpose |
+| --- | --- |
+| Approve before export | Require an approval decision before the document proceeds to export. |
+| Second Approval | Add a second approval stage to the configured process. |
+| Approval History | Keep the recorded decisions available for review. |
+| Approval Stamp | Configure a mark on an approved document; see the separate stamp guide. |
+
+The additional V2 option and the form designers are separate settings. This tutorial uses prepared standard approval forms.
+
+## Test with the intended roles
+
+1. Give the first and second reviewers separate groups and the intended assigned-document access. In this example, the first account has first-stage approval permission and the second account has second-stage permission. A switch alone does not assign a person or grant that permission.
+2. Use the first ordinary account to check the assigned, already validated invoice, add a note and give first approval. Verify that the saved document still awaits second approval. Check that this account cannot perform the second stage when its permissions forbid it.
+3. Assign the waiting invoice to the other authorized reviewer. Use that second ordinary account to check it and give second approval with a separate note.
+4. Reopen the history and verify both different reviewers, times and notes. Also reject a separate test invoice with a reason and verify that decision after reloading.
+
+<figure><img src="../../../../../../.gitbook/assets/admin-options-en-0ff5cb24c8b7.png" alt="Saved approval settings for the dedicated test document type."><figcaption><p>Saved approval settings for the dedicated test document type.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/admin-second-en-0ff5cb24c8b7.png" alt="Two different reviewers and both saved review notes."><figcaption><p>Two different reviewers and both saved review notes.</p></figcaption></figure>
+
+## Verify the outcome
+
+Keep first approval, outstanding second approval and rejection as different outcomes. Confirm that the invoice values remain unchanged after each decision. In this isolated test, the test channel waits for data retrieval and has no external ERP target. The technical status `pending_data_fetch`, when displayed, means waiting for data retrieval. Approval history alone does not prove an ERP transfer.
+
+Test the configured roles, assignment and full decision path before applying the process to live documents.
+
+## Related pages
+
+- [Groups, users and permissions](../../../groups-users-and-permissions/README.md)
+- [Approval history](approval-history.md)
+- [Approval stamp](approval-stamp.md)

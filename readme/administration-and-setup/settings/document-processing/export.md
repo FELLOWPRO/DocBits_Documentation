@@ -325,3 +325,32 @@ Para crear una nueva exportación:
 * **Archivo de mapeo M3 TOML** Seleccione un archivo de mapeo del administrador de archivos o use la opción seleccionar Toml para usar un toml creado con el gestor de reglas. [¿Necesita ayuda para crear uno? Ver la Guía del Gestor de Reglas](rule-manager/)
 
 </details>
+
+
+## Videotutorial: Configurar y probar la exportación al ERP
+
+El personaje y la voz son sintéticos. La grabación muestra la interfaz de pruebas real de DocBits con facturas de formación sintéticas.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/es.mp4" %}
+Configurar y probar la exportación al ERP
+{% endembed %}
+
+[Ver con subtítulos y capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/es.html)
+
+Algunas etiquetas nativas pueden permanecer en otro idioma. Se conservan los identificadores técnicos de los campos.
+
+Utilizo una configuración y un tipo de documento propios para esta prueba. Las facturas contienen datos ficticios. Nuestro receptor de prueba comprueba la transmisión; no realiza ninguna contabilización en un ERP de producción. No modifico otras integraciones existentes.
+
+En la configuración de exportación, compruebo el tipo de documento, la organización y el tipo de exportación. Este ejemplo utiliza Generic API en la nube. Las credenciales JSON y el mapeo de campos TOML son archivos separados. En proyectos reales, el sistema de destino, los permisos y la suborganización deben coincidir con el proceso previsto.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-es-recovery-export-v1.png" alt="Configuración de exportación limitada al tipo de documento de formación"><figcaption><p>Configuración de exportación limitada al tipo de documento de formación</p></figcaption></figure>
+
+En el mapeo corregido, el campo invoice_id de DocBits proporciona el número de factura enviado al receptor de prueba. También se asignan el proveedor, el importe total y la moneda. Esta prueba comprueba los datos de cabecera. Las líneas de factura y la contabilización en el ERP requieren controles de negocio específicos para cada proyecto.
+
+Subo el archivo TOML corregido y guardo la configuración. Luego la vuelvo a abrir y compruebo que el cambio se ha guardado. Las credenciales de prueba se mantienen; las credenciales de producción no deben aparecer en la grabación.
+
+Vuelvo a la factura de prueba cuya exportación ha fallado y reinicio la exportación exactamente una vez. Espero a que termine el procesamiento. Aceptar la solicitud por sí solo no demuestra que la transmisión haya sido correcta.
+
+DocBits muestra ahora la factura como finalizada. Además, compruebo el justificante de recepción del receptor de prueba. El número de factura, el proveedor, el importe y la moneda coinciden con la factura de prueba. La autenticación y la transmisión han funcionado. El receptor de prueba no confirma ninguna contabilización en el ERP.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-es-recovery-export-v1.png" alt="Recepción real en el receptor de pruebas; sin contabilización en el ERP"><figcaption><p>Recepción real en el receptor de pruebas; sin contabilización en el ERP</p></figcaption></figure>

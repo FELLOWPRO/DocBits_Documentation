@@ -1,6 +1,12 @@
 # Dati dell'ordine nella conferma dell'ordine
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-77711a53d4d0-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1-it-it.png" alt="Dati dell&#x27;ordine nella conferma dell&#x27;ordine, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2-it-it.png" alt="Dati dell&#x27;ordine nella conferma dell&#x27;ordine, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3-it-it.png" alt="Dati dell&#x27;ordine nella conferma dell&#x27;ordine, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4-it-it.png" alt="Dati dell&#x27;ordine nella conferma dell&#x27;ordine, Versione 4" width="634"><figcaption><p>Versione 4</p></figcaption></figure>
 
 ## **Scopo**
 

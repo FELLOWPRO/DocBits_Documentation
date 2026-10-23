@@ -1,6 +1,8 @@
 # Calcola colonne con
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aafc18d42905-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v1-it-it.png" alt="Calcola colonne con, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-it-it.png" alt="Calcola colonne con, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 

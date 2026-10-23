@@ -1,8 +1,8 @@
 # Any / All Quantity
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-09-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto Qualsiasi/Tutti quantità Operatore tolleranza dell&#x27;ordine di acquisto, con tolleranza di Tolleranza Importo Tipo di tolleranza , confrontare Dati di confronto" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-09-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto Qualsiasi/Tutti quantità Operatore tolleranza dell&#x27;ordine di acquisto, con tolleranza di Tolleranza Importo Tipo di tolleranza , confrontare Dati di confronto" width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

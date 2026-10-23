@@ -1,6 +1,6 @@
 # AI Calculation for Cost Increase Surcharges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-action-03-it-20261023.png" alt="Azione Calcolo dell&#x27;AI per i supplementi di incremento dei costi" width="563"><figcaption></figcaption></figure>
 
 ## Scopo:
 

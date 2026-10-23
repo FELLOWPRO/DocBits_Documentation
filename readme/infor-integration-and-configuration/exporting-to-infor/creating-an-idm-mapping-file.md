@@ -184,15 +184,15 @@ Hinweis: Stellen Sie sicher, dass **export_doc_type** auf den IDM-Rechnungstyp g
 
 Gehen Sie zum Document Manager und wählen Sie den Namen des aktuellen Dokumenttyps aus, den Sie exportieren möchten, zum Beispiel Supplier Invoice.
 
-![](https://lh7-us.googleusercontent.com/EV3uw3R1L6_RRANB7FRLwtUFMbv_KGtL4x6kAk6lEYhwI90UeG2uWqFD2Azpxv-SRFl9zfvdratOZbXxp2D1-SryLo3Boj2x9Xc4PQXJ6vUhX5c9pvhv4XHuCk-qMK51DZ885vRUJ5dwES7k84uhoyk)
+![Dokumentliste im Infor Document Manager mit dem Dokumenttyp Rental_Invoice und seinen Angaben zu Erstellung und Änderung](https://lh7-us.googleusercontent.com/EV3uw3R1L6_RRANB7FRLwtUFMbv_KGtL4x6kAk6lEYhwI90UeG2uWqFD2Azpxv-SRFl9zfvdratOZbXxp2D1-SryLo3Boj2x9Xc4PQXJ6vUhX5c9pvhv4XHuCk-qMK51DZ885vRUJ5dwES7k84uhoyk)
 
 Klicken Sie auf das oben gezeigte Symbol, klicken Sie anschließend auf Administration → Document Type und suchen Sie dann den benötigten Dokumenttyp in der Liste.
 
-![](https://lh7-us.googleusercontent.com/ldsuINS9SCUQm3E57s8j_95gzBGwHQFavcf6d3myg6tuVxRoQHtq8R-6we5OEJ63swDxwPc9w7hbySWqWdfaMsGdQpn99m6EchPY5f5DzXEj-8mjocwPNtdJVNP34CuPvw0JIImDgFX1Q05M8-ogZo8)
+![Infor Control Center Document Type-Seite mit Dokumenttypen wie Bank Statement CAMT053 und Customer invoice](https://lh7-us.googleusercontent.com/ldsuINS9SCUQm3E57s8j_95gzBGwHQFavcf6d3myg6tuVxRoQHtq8R-6we5OEJ63swDxwPc9w7hbySWqWdfaMsGdQpn99m6EchPY5f5DzXEj-8mjocwPNtdJVNP34CuPvw0JIImDgFX1Q05M8-ogZo8)
 
 Wie unten dargestellt, sehen Sie anschließend den Namen des Dokumenttyps so, wie er in INFOR lautet.
 
-![](https://lh7-us.googleusercontent.com/KSreWGS7TqdMP64BqtufM24xk0RDnNDHUZapnPsSuRj_umPJ3icll89KI2RYpbtet2F6ccL8QfYbl27-2j1nQPwQ0z-Nq873c4Tv72ee9AJhKMxynIUxmJKKsQQCupW_dpRfw_5BXm0WvAnw4HOALmw)
+![Infor Document Manager MONGOOSE Reports-Seite mit dem Tab Attributes und einer Dokumenttyp-Liste inklusive Purchase Order](https://lh7-us.googleusercontent.com/KSreWGS7TqdMP64BqtufM24xk0RDnNDHUZapnPsSuRj_umPJ3icll89KI2RYpbtet2F6ccL8QfYbl27-2j1nQPwQ0z-Nq873c4Tv72ee9AJhKMxynIUxmJKKsQQCupW_dpRfw_5BXm0WvAnw4HOALmw)
 
 Stellen Sie sicher, dass der Name in der IDM-Mapping-Datei genau so angezeigt wird.
 
@@ -200,4 +200,4 @@ Stellen Sie sicher, dass der Name in der IDM-Mapping-Datei genau so angezeigt wi
 
 Sobald die Datei vorbereitet ist, laden Sie sie in Ihre Exportkonfiguration in DocBits hoch. Diese ist unter Settings → Export verfügbar.
 
-![](https://lh7-us.googleusercontent.com/rUHhvImiWamK6JxnWSPL4JEioAJq3AmvdsubJDo-DoDV9F_i5mZ42YDnjqZUYKYSJu1Cetc_4fLwlvvmoZXYIzmBf3hoyW6RjfP9HQ8FkNDhW1IbLHvNTCHWFRaeCECdZ97u79-Eu37TvzqnqGPEayM)
+![DocBits Export Settings-Seite mit einem Rechnungseintrag, der die INVOKE-Webhook-Exportmethode nutzt und IDM Mapping File ausgewählt hat](https://lh7-us.googleusercontent.com/rUHhvImiWamK6JxnWSPL4JEioAJq3AmvdsubJDo-DoDV9F_i5mZ42YDnjqZUYKYSJu1Cetc_4fLwlvvmoZXYIzmBf3hoyW6RjfP9HQ8FkNDhW1IbLHvNTCHWFRaeCECdZ97u79-Eu37TvzqnqGPEayM)

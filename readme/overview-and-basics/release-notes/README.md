@@ -244,19 +244,19 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Standard-Layout auf alle Origins anwenden:**\
     Ein neuer **Apply Default Layout to Origins**-Button wurde im Layout-Konfigurationsbildschirm eingeführt. Administratoren können jetzt das Standard-Layout mit einer einzigen Aktion auf alle Origins innerhalb einer Organisation übertragen, wodurch der zeitaufwändige manuelle Prozess des Kopierens und Einfügens von Layout-JSON für jede Origin einzeln entfällt. Dies ist besonders nützlich beim Onboarding neuer Kunden, bei dem mehrere Origins konsistent konfiguriert werden müssen.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5).png" alt="Dialog Apply Default Layout to Origins mit der Checkbox-Liste Select Origins, der Warnung, dass benutzerdefinierte Layouts ersetzt werden, und einer SELECT ALL-Option"><figcaption></figcaption></figure>
 *   **Dokumenttyp-Auswahl für FTP-Import:**\
     FTP-Import-Konfigurationen unterstützen jetzt die ordnerspezifische Dokumenttyp-Zuweisung. Bei der Konfiguration eines FTP-Imports können Benutzer angeben, welcher Dokumenttyp — wie Rechnung oder Auftragsbestätigung — auf alle aus diesem Ordner importierten Dokumente angewendet werden soll. Dokumente werden beim Import automatisch klassifiziert, wodurch eine manuelle Dokumenttyp-Zuweisung nach der Aufnahme entfällt. Dies unterstützt Organisationen, die mehrere Dokumenttypen über verschiedene Unterorganisationen und Ordner verwalten.
 
-    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4).png" alt="Dialog Add new Data mit dem SFTP-Typ-Dropdown sowie den Feldern Servername, Port, Benutzername, Passwort und Document Type für den FTP-Import"><figcaption></figcaption></figure>
 * **Export nach GLS840 für Infor On Premise**:\
   DocBits unterstützt jetzt den Export von Dokumenten in das GLS840-Programm für Infor On Premise-Kunden und erweitert damit die Palette der unterstützten Exportziele für On-Premise-Umgebungen.
 *   **UI-Verbesserungen für Watchdog und Export-Konfiguration:**\
     Die Watchdog-Konfigurations- und Export-Konfigurationsbildschirme wurden mit einer verbesserten Benutzeroberfläche aktualisiert, die ein übersichtlicheres Layout und eine intuitivere Erfahrung für Administratoren bietet, die diese Einstellungen verwalten.
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image.png" alt="Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2).png" alt="Watchdog-Seite in den DocBits-Einstellungen mit den Registerkarten General, Configurations, Logs und XSLT Templates sowie der Liste der Import- und Exportkonfigurationen"><figcaption></figcaption></figure>
 
 ### Fehlerbehebungen:
 
@@ -276,15 +276,15 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Erweiterte Anpassung der PO-Matching-Regeln:**\
     DocBits bietet nun eine präzisere und anpassbarere Kontrolle über Bestellabgleichsregeln. Administratoren können genau festlegen, welche Spalten während des Abgleichsprozesses für jeden Dokumenttyp ausgewertet werden sollen, um sicherzustellen, dass nur die relevantesten Felder berücksichtigt werden. Zusätzlich können Toleranzen auf Spaltenebene definiert werden, was eine größere Flexibilität bei der Behandlung kleinerer Abweichungen ermöglicht. Jede Regel kann so konfiguriert werden, dass sie für manuellen Abgleich, automatischen Abgleich oder beides gilt, wodurch Teams die Möglichkeit erhalten, den Abgleichsworkflow genau an ihre betrieblichen Anforderungen anzupassen. Diese Verbesserungen erhöhen die Anpassungsfähigkeit und Präzision des Bestellabgleichsprozesses erheblich.
 
-    <figure><img src="../../.gitbook/assets/release_notes_12_2025_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_3.png" alt="Versionshistorie der PO Match Base Rule mit der Regeltabelle, dem Bereich Rule Configuration und den Spalten für den Abgleich mit Toleranzen"><figcaption></figcaption></figure>
 *   **Unterstützung für mehrere Finanzkonten von Lieferanten:**\
     DocBits unterstützt nun die Verwaltung mehrerer Finanzkonten für Lieferanten über die von Infor bereitgestellte RemitToPartyMaster BOD. Diese Verbesserung ermöglicht es Organisationen, mehrere Zahlungsempfänger-Kontodatensätze für einen einzelnen Lieferanten zu verwalten, was die Flexibilität und Genauigkeit bei der Zahlungsabwicklung verbessert. Eine neue Konfigurationseinstellung wurde eingeführt, um diese Funktion zu aktivieren oder zu deaktivieren, sodass Administratoren die Funktion basierend auf ihren betrieblichen Anforderungen aktivieren können.
 
-    <figure><img src="../../.gitbook/assets/release_notes_12_2025_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_1.png" alt="Einstellungsseite Master Data Validation mit den Panels Supplier BOD, ERP API Data und DocBits Master Data sowie dem Schalter Allow Multiple Supplier Accounts"><figcaption></figcaption></figure>
 *   **Benutzerzugriff auf OCR-Extraktionsergebnisse hinzugefügt:**\
     Die Schaltfläche **OCR View** auf dem Feldvalidierungsbildschirm ist jetzt für alle Benutzer verfügbar, die Validierungszugriff haben, und nicht mehr nur auf Administratoren beschränkt. Mit diesem Update kann jeder autorisierte Benutzer OCR-Extraktionsergebnisse direkt überprüfen, was die Validierung der Datengenauigkeit erleichtert und die Überwachung der gesamten OCR-Leistung verbessert. Diese Verbesserung fördert größere Transparenz und verbessert die Effizienz des Validierungsworkflows.
 
-    <figure><img src="../../.gitbook/assets/release_notes_12_2025_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_2.png" alt="Field Validation-Bildschirm mit der Schaltfläche OCR view, der Vorschau der Rechnungsseite sowie den Bereichen für extrahierte Felder und die extrahierte Tabelle"><figcaption></figcaption></figure>
 * **Dynamisches Spalten-Rendering in Genehmigungsbildschirmen:**\
   Verbesserte Genehmigungsansichten zur dynamischen Anzeige nur der Spalten, die für den Vergleich in den Datenbankeinstellungen jeder Organisation konfiguriert sind. Zuvor erschienen einige organisationsspezifische Spalten leer, wenn sie nicht für den Vergleich konfiguriert waren, was zu Verwirrung führte. Jetzt zeigen Genehmigungsansichten nur Felder an, die aktiv verglichen werden. Dies bietet klarere, organisationsspezifische Genehmigungsbildschirme ohne leere oder irrelevante Spalten.
 * **Bestelltypfeld zur Stammdatensuche hinzugefügt**:\
@@ -323,16 +323,16 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 
     Der E-Mail-Vorlagen-Editor wurde neu gestaltet, um eine klarere Struktur und ein reibungsloseres Erlebnis zu bieten. Die Auswahl von Dokumentfeldern ist jetzt intuitiver, und Anhänge können direkt in Vorlagen eingefügt werden. Diese Verbesserungen machen es schneller und einfacher, professionelle, maßgeschneiderte E-Mails zu erstellen.
 
-    <figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (310).png" alt="Seite Edit Template in den Email Templates mit dem Vorlageneditor, der Liste der Dokumentfelder mit Schlüsseln und der E-Mail-Textvorschau einer Fehlerbenachrichtigung"><figcaption></figcaption></figure>
 *   **Dashboard-Verbesserungen:**
 
     Das Dashboard wurde erweitert, um die Navigation und Anpassung zu verbessern. Mit neuen Registerkarten können Benutzer schneller zwischen verschiedenen Dokumenttypen wechseln und so die Zeit für die Suche nach der richtigen Ansicht verkürzen.
 
-    <figure><img src="../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (474).png" alt="Dashboard in DocBits mit den Dokumenttyp-Registerkarten, den Spalten der Dokumentliste und dem Filter-Dropdown All documents"><figcaption></figcaption></figure>
 *   **Benutzerdefinierte Filter-Dashboards:**\
     Darüber hinaus können Dashboards jetzt nach individuellen Vorlieben angepasst und gefiltert werden. Diese benutzerdefinierten Dashboards können auch mit Kollegen geteilt werden, um die Erstellung konsistenter teamweiter Berichtsansichten zu erleichtern.
 
-    <figure><img src="../../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (477).png" alt="Dashboard mit den Dokumenttyp-Tabs, der Dashboard-Auswahlliste und dem Menü mit Create new Dashboard und Rename current Dashboard"><figcaption></figcaption></figure>
 *   **E-Mail-Benachrichtigungsprotokolle:**
 
     Eine neue Protokollfunktion steht für alle E-Mail-Benachrichtigungen zur Verfügung. Benutzer können jetzt eine Historie der gesendeten Benachrichtigungen überprüfen, was es einfacher macht, Lieferungen zu überprüfen und Probleme zu beheben, wenn E-Mails nicht empfangen werden.
@@ -343,7 +343,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 
     Die Duplikaterkennung wurde mit zwei leistungsstarken Konfigurationsoptionen aktualisiert. Das **Duplicate Detection Interval** ermöglicht es Ihnen, einen Zeitraum festzulegen, um Duplikate genauer zu überprüfen, während die Einstellung **Disallow Export of Duplicates** automatisch das Exportieren von Dokumenten verhindert, die als Duplikate erkannt wurden. Zusammen bieten diese Verbesserungen mehr Kontrolle und gewährleisten eine höhere Datenpräzision.
 
-    <figure><img src="../../.gitbook/assets/image (478).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (478).png" alt="Seite More Settings der Dokumenttypen mit den Feldern der Duplikaterkennung, dem Dropdown Duplicate Detection Interval und dem Schalter Disallow Export of Duplicate Documents"><figcaption></figcaption></figure>
 *   **Entscheidungsbaum-Verbesserungen:**
 
     Entscheidungsbäume sind jetzt vielseitiger und können Dokumentfeldwerte zurückgeben. Dies ermöglicht eine fortschrittlichere Automatisierungslogik, die Workflows basierend auf tatsächlichen Dokumentdaten Entscheidungen treffen lässt.
@@ -387,7 +387,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Mehrsprachige Unterstützung für Wertelisten :**\
     Wir haben die mehrsprachigen Funktionen für die Wertelisten erweitert. Administratoren können jetzt Bezeichnungen in mehreren Sprachen definieren, um sicherzustellen, dass die korrekte Bezeichnung basierend auf den Systemspracheinstellungen des Benutzers automatisch angezeigt wird. Diese Verbesserung fördert eine bessere Zugänglichkeit und Lokalisierung und erleichtert es Benutzern weltweit, mit der Plattform in ihrer Muttersprache zu interagieren.
 
-    <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt="Einstellungsseite List Of Values mit den Spalten Wert, Bezeichnung und Sprache sowie den Synonymen Rechnung und Invoice für den Wert Invoice"><figcaption></figcaption></figure>
 * **Benutzerdetailverbesserungen in den Einstellungen:**\
   Die Einstellungsschnittstelle zeigt jetzt umfassende Benutzerinformationen an. Administratoren können problemlos Gruppenzugehörigkeiten, Unterorganisationsdetails und zusätzliche Schlüsseldaten anzeigen, um eine bessere Verwaltung von Benutzerrollen und ein klareres Verständnis der Teamstrukturen zu ermöglichen. Außerdem können Administratoren jetzt einen System Admin für die Organisation anlegen.
 * **Automatische Buchhaltungsinformationen auf dem Genehmigungsbildschirm:**\
@@ -406,7 +406,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Schritt-für-Schritt-Anleitung (Walkthrough):**\
     Eine geführte Schritt-für-Schritt-Anleitung steht jetzt zur Verfügung, um Benutzern zu helfen, sich einfacher durch verschiedene Teile der Anwendung zu navigieren und zu verstehen. Dies ist besonders nützlich für die Einarbeitung neuer Benutzer oder die Erkundung von unbekannten Funktionen.
 
-    <figure><img src="../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (430).png" alt="Walkthrough-Tooltip, der erklärt, dass die Schaltfläche den Walkthrough für die aktuelle Seite startet, sofern verfügbar"><figcaption></figcaption></figure>
 * **Verbesserungen am Entscheidungsbaum:**\
   Es wurden Verbesserungen an der Benutzeroberfläche des Entscheidungsbaums vorgenommen, einschließlich einer intuitiveren Funktion zum Hinzufügen von Zeilen — jetzt oben im Baum —, um die Wartung und Bearbeitung zu vereinfachen.
 * **DocOperator**\
@@ -414,7 +414,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Vorschauoption für elektronische Dokumente:**\
     Eine Vorschauoption wurde für elektronische Dokumente (eDocs) hinzugefügt, die es Benutzern ermöglicht, Änderungen direkt in den Einstellungen zu testen und anzuzeigen, bevor sie bereitgestellt werden.\\
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="E-Doc-Seite in den Document Types-Einstellungen mit dem Versionsverlauf, dem JSON-Editor für die Struktur und dem EDI-Deskriptor mit VALUE-Tags"><figcaption></figcaption></figure>
 * **Neue Sprachunterstützung – Chinesisch:**\
   DocBits unterstützt jetzt Chinesisch und erweitert die Zugänglichkeits- und Lokalisierungsoptionen für Benutzer auf globalen Märkten.
 * **Verbessertes Aufgaben-Dashboard:**\
@@ -435,7 +435,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Watchdog-Verbesserungen:**\
     Die Watchdog-Konfiguration wurde in die Hauptanwendungs-Benutzeroberfläche verschoben, um das Management zu erleichtern. Es wurden auch zusätzliche Funktionen eingeführt, um eine bessere Übersicht und Steuerung zu ermöglichen.\\
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt="Watchdog-Einstellungsseite mit dem Panel Folder Settings, den Kontrollkästchen Choose Document Types und dem Dropdown für das Exportziel"><figcaption></figcaption></figure>
 * **Verbesserungen bei der Zeilenablehnung:**\
   Das Ablehnen eines Positionsartikels erfordert jetzt, dass Benutzer einen Grund angeben, um eine bessere Rückverfolgbarkeit und Verantwortlichkeit in Überprüfungs-Workflows sicherzustellen.
 * **Lieferanten-KI-Modellliste in den Einstellungen:**\
@@ -443,7 +443,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Dokumentenprotokollverbesserungen:**\
     Die Dokumentenprotokolle enthalten jetzt detailliertere Informationen zur Unterstützung einer besseren Prüfung und Fehlerbehebung.
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="Dialog Document Logs mit den Spalten Modified By/On, Description, Previous Status und Current Status sowie den Einträgen der Statusänderungen"><figcaption></figcaption></figure>
 * **PNG- und JPG-Unterstützung:**\
   Sie können jetzt PNG- und JPG-Dateien hochladen, die automatisch in das PDF-Format für die Verarbeitung konvertiert werden.
 * **IDM-Exportdokumentformatkonfiguration:**\
@@ -563,13 +563,13 @@ DocBits bietet nun die Möglichkeit, externe APIs bei der Dokumentenverarbeitung
 
 Für Organisationen mit mehreren aktivierten Unterorganisationen führt DocBits nun die Funktion Cross Sub-Organizations ein. Diese Erweiterung ermöglicht es Administratoren, ihre Dokumentenverwaltung über alle Unterorganisationen unter einem Dach zu vereinheitlichen. Admin-Benutzer können nun alle Dokumente jeder Unterorganisation einsehen, ohne die Unterorganisation wechseln zu müssen. Diese zentrale Sicht ermöglicht es Administratoren, alle Dokumente aller Unterorganisationen zu sehen, sodass sich bestimmte Dateien leicht finden lassen und dennoch der Überblick erhalten bleibt. [Weitere Informationen](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
 
-<figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt="Dokumenten-Dashboard mit dem Zähler All documents, dem Suchfeld und der Dokumententabelle mit den Spalten Invoice Number, Purchase Order und Supplier Name"><figcaption></figcaption></figure>
 
 ### Dokumentensichtbarkeit basierend auf Gruppenberechtigungen
 
 DocBits erweitert die Steuerung der Dokumentensichtbarkeit, um den Zugriff für Nicht-Admin-Benutzer über gruppenbasierte Berechtigungen präziser zu regeln. Diese Funktion ermöglicht es Administratoren festzulegen, welche Dokumente für bestimmte Benutzer oder Gruppen sichtbar sind, was für optimierte Workflows und mehr Datensicherheit sorgt. Admin-Benutzer können Dokumente bestimmten Gruppen zuweisen, sodass sie nur für Benutzer innerhalb dieser Gruppen sichtbar sind. Dadurch sehen Benutzer nur die Dokumente, die für ihre Rolle oder ihr Team relevant sind, was Unübersichtlichkeit reduziert und den Fokus verbessert. [Weitere Informationen](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
 
-<figure><img src="../../.gitbook/assets/Group Based Permission.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Group Based Permission.png" alt="Gruppenberechtigungstabelle für die Gruppe TAX_TEAM mit den Spalten Document Type, View, Update, Delete, First Approval und Second Approval"><figcaption></figcaption></figure>
 
 ### Sequentieller Workflow und Freigabehistorie
 
@@ -587,13 +587,13 @@ DocBits führt die leistungsstarke Funktion Sequentieller Workflow und Freigabeh
   * Kommentare oder Notizen, die Benutzer während der Prüfung hinzugefügt haben
 * Die Historie sorgt für Transparenz und dient als Prüfpfad für Compliance und Fehlersuche. [Weitere Informationen](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/approval-history)
 
-<figure><img src="../../.gitbook/assets/Approval History.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Approval History.png" alt="Genehmigungsseite mit den Registerkarten Activity Stream und Approval History, den Genehmigungskommentaren und dem Panel Approval Details mit Rechnungsfeldern"><figcaption></figcaption></figure>
 
 ### SFTP/FTP-Dokumentenarchiv-Erweiterung
 
 Die SFTP/FTP-Dokumentenarchiv-Erweiterung in DocBits baut auf der bestehenden Importfunktionalität auf und bietet eine unkomplizierte Methode, Dateien nach ihrer Verarbeitung zu archivieren. Eine neue Einstellung in der FTP-Importkonfiguration ermöglicht es, das Archivieren von Dateien zu aktivieren oder zu deaktivieren. Sobald Dateien erfolgreich in DocBits eingelesen und verarbeitet wurden, werden sie automatisch in einem definierten Ordner auf dem SFTP/FTP-Server archiviert, sofern die Option aktiviert ist. So bleiben verarbeitete Dateien für die Aufbewahrung erhalten, ohne die aktiven Importverzeichnisse zu überfüllen. [Weitere Informationen](https://docs.docbits.com/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
 
-<figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt="Dialog Add new Data mit dem SFTP-Typ-Dropdown und den Feldern Server-name, Port, Username, Primary Directory, Import Directory und Archive after Import"><figcaption></figcaption></figure>
 
 ### Mehrere Steuerbereiche für Steuertyp und Export nach Infor ERP / SAP
 
@@ -617,9 +617,9 @@ Diese Funktion erweitert die Handhabung von Steuern, indem sie eine detaillierte
 * Die Steuerdaten, einschließlich aller relevanten Bereiche und Klassifizierungen, werden nahtlos nach Infor ERP / SAP exportiert, um die Konsistenz zwischen der Dokumentenverarbeitung in DocBits und dem ERP-System sicherzustellen.
 * Exportierte Daten werden mit den jeweiligen Kostenzeilen in Infor ERP / SAP verknüpft, was eine klare Nachverfolgbarkeit und eine genaue Finanzberichterstattung gewährleistet.
 
-<figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt="Validierungsbildschirm mit den Abschnitten VAT und Amounts für mehrere Steuerzeilen, einschließlich der Beträge Vollversteuert, Reduzierte Steuer und Steuerfrei auf Deutsch"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/MultipleTaxLineAuto Accounting.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MultipleTaxLineAuto Accounting.png" alt="Auto-Accounting-Bildschirm mit den Spalten Position, Accounts, Buchungsreferenz, Tax Code/Country und Amount sowie den Rechnungspositionen darunter"><figcaption></figcaption></figure>
 
 ### Dashboard-Verbesserungen
 
@@ -707,13 +707,13 @@ Wir haben erweiterte Caching-Strategien im gesamten System implementiert, um Dat
 
 IMAP-E-Mail-Einstellungen wurden so konfiguriert, dass Benachrichtigungen über Importergebnisse automatisch gesendet werden. Erfolgreiche Importbenachrichtigungen bestätigen die verarbeiteten Dateien, während Fehlermeldungen die Dateinamen und spezifische Fehlerdetails für eine schnelle Fehlersuche enthalten.
 
-<figure><img src="../../.gitbook/assets/EmailImport.png" alt=""><figcaption><p>E-Mail-Import-Konfigurationen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/EmailImport.png" alt="Dialog Edit Data für den IMAP-E-Mail-Import mit Protocol IMAP, Server name imap.gmail.com, Port 993, Encryption SSL und den Benachrichtigungs-Umschaltern"><figcaption><p>E-Mail-Import-Konfigurationen</p></figcaption></figure>
 
 #### Überarbeitung der Stammdatenabfrage
 
 Die Einstellungen zur Stammdatenabfrage wurden mit einer verfeinerten Kategorisierung überarbeitet, sodass verschiedene Stammdatentypen schneller und genauer abgerufen werden können. Diese Verbesserung optimiert den Datenzugriff, indem Stammdaten in unterschiedliche Kategorien organisiert werden, was die Sucheffizienz und -genauigkeit erheblich steigert. Benutzer können nun die relevanten Daten schneller finden, was die Produktivität und Entscheidungsfindung in der gesamten Anwendung verbessert.
 
-<figure><img src="../../.gitbook/assets/MasterDataLookup.png" alt=""><figcaption><p>Stammdaten</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MasterDataLookup.png" alt="Master-Data-Seite mit den Registerkarten SUPPLIER, PURCHASE ORDER HEADER und M3 CHART OF ACCOUNTS sowie der Kontenplan-Tabelle mit Dimension-Spalten"><figcaption><p>Stammdaten</p></figcaption></figure>
 
 #### Leistungsverbesserungen
 
@@ -782,7 +782,7 @@ DocBits bietet nun die Möglichkeit, die innerhalb der Plattform verwendete OCR-
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") bietet die Flexibilität, Regeln zur Konfliktlösung zu erstellen und zu bearbeiten, die auf das DocBits-Rechnungssystem zugeschnitten sind. Diese Regeln sind darauf ausgelegt, Abweichungen zwischen Rechnungsdetails und Bestelldaten (PO) automatisch zu behandeln und so einen genauen finanziellen Abgleich sicherzustellen. Das System wendet diese Regeln auf Rechnungspositionen, Zuschläge und Steuern an und erzeugt bei Bedarf entsprechende Anpassungen oder Hinweise.
 
-<figure><img src="../../.gitbook/assets/RuleManager.png" alt=""><figcaption><p>Rule Manager</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/RuleManager.png" alt="Rule Manager Edit Template mit dem TOML-File-Editor, dem Kriterien-Builder und der Regelstabelle des Dokumenttyps mit den Bedingungen Quantity und Unit price"><figcaption><p>Rule Manager</p></figcaption></figure>
 
 ### Datensynchronisierung per Stream
 
@@ -792,7 +792,7 @@ Die BOD-Synchronisierung von Infor nutzt AWS Stream für die Datenverarbeitung i
 
 DocBits verarbeitet XRechnung (elektronische Rechnungen) nun nahtlos, indem zunächst ein benutzerfreundliches PDF erstellt wird, was den Rechnungsverarbeitungs-Workflow vereinfacht und strafft.
 
-<figure><img src="../../.gitbook/assets/XRECHNUNG.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/XRECHNUNG.png" alt="Validierungsbildschirm einer XRechnung mit den Bereichen INVOICE DETAILS, VAT und AMOUNTS sowie der Rechnungspositionstabelle"><figcaption></figcaption></figure>
 
 ### Fehlerbehebungen:
 
@@ -952,7 +952,7 @@ DocBits verarbeitet XRechnung (elektronische Rechnungen) nun nahtlos, indem zun�
 
 Dem bestehenden System fehlen automatisierte Regeln, um Rechnungszuschläge korrekt mit Bestellungen (POs) abzugleichen und zu verarbeiten. Dieser manuelle Prozess kann zu Abweichungen führen, wie die Screenshots zeigen, in denen Rechnungszuschläge und POs für eine korrekte Fakturierung abgestimmt werden müssen.
 
-<div><figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.37.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.46.png" alt=""><figcaption><p>Rule Manager DocBits</p></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.37.png" alt="Rule Manager mit der Regel Invoice Line Items, dem TOML-Exportkonfigurationseditor und der Bedingungstabelle mit Quantity Greater Than"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.46.png" alt="Rule Manager der Organisation TEST3 mit der Regel Invoice Line Items, der Bedingungstabelle und dem TOML-Exportkonfigurationseditor"><figcaption><p>Rule Manager DocBits</p></figcaption></figure></div>
 
 ### Lösung:
 
@@ -982,7 +982,7 @@ Dieses Update bringt spannende neue Funktionen und Fehlerbehebungen für Junebug
 *
 
 ```
-<div><figure><img src="../../.gitbook/assets/POShipmentTable.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/POShipmentTable.png" alt="PO-Matching-Bildschirm für PO#2051341-2.pdf mit der Tabelle der Rechnungspositionen und der Tabelle PO Shipment Order mit gelieferten und fakturierten Mengen"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen2.png" alt="Genehmigungsbildschirm für PO#2051333.pdf von Pacific Cheese Co mit den Rechnungsdetails, den Lieferantendetails und der Tabelle zum Vergleich der Positionen"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen1.png" alt="Freigabebildschirm für PO#2051339.pdf von American Packaging Corp mit den Rechnungsdetails, Lieferantendetails und der Tabelle zum Vergleich der Positionen"><figcaption></figcaption></figure></div>
 ```
 
 **Fehlerbehebungen:**
@@ -990,7 +990,7 @@ Dieses Update bringt spannende neue Funktionen und Fehlerbehebungen für Junebug
 * **QR-Code-Korrektur:** Ein Problem, das zuvor Schwierigkeiten bei der QR-Code-Verarbeitung verursachte, wurde behoben.
 * **Verarbeitung von Nicht-EDI-Dokumenten:** Junebug verarbeitet Nicht-EDI-Dokumente jetzt effektiver.
 
-<figure><img src="../../.gitbook/assets/EDI810-Invoice.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/EDI810-Invoice.png" alt="EDI-810-Rechnungsbildschirm mit dem Panel EDI INVOICE DATA, den extrahierten Feldern und der Rechnungs-PDF-Vorschau von John Soules Foods"><figcaption></figcaption></figure>
 
 Hotfix - 5. Juni [**Priority System**](../../end-user-and-partner-section/end-user-section/our-document-priority-system.md)
 
@@ -998,7 +998,7 @@ Hotfix - 5. Juni [**Priority System**](../../end-user-and-partner-section/end-us
 
 Sandbox Freeze - 3. Juni 2024
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 20.37.35.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 20.37.35.png" alt="Validierungsbildschirm mit der Frachtkostentabelle, die Tarifkategorien, TMS Ancillary- und Brennstoffzuschlagspositionen für eine ARA Recycling-Rechnung zeigt"><figcaption></figcaption></figure>
 
 Im kommenden Release wird eine wesentliche Erweiterung der Klassifizierungs- und Extraktionsfunktionen eingeführt, die speziell auf Tabellenzeilen in Dokumenten abzielt. Mit dieser neuen Funktion können Benutzer festlegen, ob eine Zeile in einer Tabelle einen Zuschlag darstellt. Diese Funktionalität ist besonders nützlich bei detaillierten Finanzdokumenten wie Rechnungen, bei denen die Unterscheidung zwischen verschiedenen Transaktionsarten — etwa Zuschlägen, Steuern oder Gebühren — für eine genaue Verarbeitung und Aufzeichnung entscheidend ist.
 

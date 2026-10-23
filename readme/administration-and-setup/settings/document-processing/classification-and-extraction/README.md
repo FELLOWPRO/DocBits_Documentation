@@ -20,7 +20,7 @@ Diese Seite erklärt alle verfügbaren Einstellungen im Detail.
 Um die Einstellungen für **Classification and Extraction** zu öffnen, gehen Sie zu:\
 **Settings → Document Processing → Classification and Extraction**
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt="Einstellungsnavigation mit hervorgehobenem Document Processing sowie Classification and Extraction"><figcaption></figcaption></figure>
 
 ## Dokumentenaufteilung
 
@@ -41,7 +41,7 @@ Anschließend können Sie:
 * einen oder mehrere Barcode-Typen auswählen, die erkannt werden sollen.
 *   ein Regex-Muster angeben, dem der Barcode entsprechen muss, damit die Dokumentenaufteilung ausgelöst wird.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt="Extraction results panel showing recognized fields with confidence scores beside the document preview pane"><figcaption></figcaption></figure>
 
 ## Betragsformatierung
 
@@ -149,7 +149,7 @@ So erstellen Sie eine neue Regel:
 
 1.  Klicken Sie oben rechts auf **Add**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt="Classification and extraction rules page with the Zielfeld dropdown set to Rechnungsnummer, Typ Festwert, the Wert field and Speichern button"><figcaption></figcaption></figure>
 2. Füllen Sie die folgenden Felder aus:
    * **Pattern**: Das Regex-Muster, nach dem das System suchen soll, um die Klassifizierung auszulösen.
    * **Type**: Wo nach dem Muster gesucht werden soll (z. B. **Barcode**).
@@ -157,7 +157,7 @@ So erstellen Sie eine neue Regel:
    * **Document Type**: Legen Sie den Dokumenttyp fest, der zugewiesen wird, wenn das Muster zutrifft.
    *   **Sub Document Type** _(optional)_: Geben Sie einen Untertyp für eine detailliertere Klassifizierung an.
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt="Zuordnung von Dokumententypen page with the Bereich dropdown, No Classification, No Splitting and Database Sharing-Klassifikation toggles"><figcaption></figcaption></figure>
 3.  Klicken Sie auf **Save**, um Ihre Klassifizierungsregel zu speichern.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
@@ -171,7 +171,7 @@ So bearbeiten Sie eine vorhandene Regel:
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
 2.  Wählen Sie **Edit**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt="Classification setup page with document type list, training samples section, and upload control"><figcaption></figcaption></figure>
 3. Nehmen Sie die gewünschten Änderungen vor.
 4.  Klicken Sie auf **Save**, um die Änderungen zu übernehmen.
 
@@ -186,7 +186,7 @@ So löschen Sie eine Regel:
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
 2.  Wählen Sie **Delete**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt="Extraction rules list showing rows with Zielfeld values like Rechnungsnummer and Rechnungsdatum, Typ Feld, matching field and Wert columns"><figcaption></figcaption></figure>
 
 ## KI-Modelle
 
@@ -196,7 +196,7 @@ Der Abschnitt **AI Models** zeigt alle individuell trainierten Modelle an, die g
 
 Um diesen Abschnitt zu öffnen, klicken Sie oben auf der Seite auf den Tab **AI Models**.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt="Trainingsdaten page with the Table Extraction tab open showing a CSV column mapping table with Spalte, Typ and Werte columns"><figcaption></figcaption></figure>
 
 ### Modellkategorien
 
@@ -221,7 +221,7 @@ Alle Modelle einer Kategorie werden in einer Tabelle aufgelistet, die folgende I
 * **Document Sub Types**: Die Untertypen, in die das Dokument weiter klassifiziert wird.
 * **Priority**: Die Prioritätsstufe, die die Position des Modells in der Klassifizierungswarteschlange bestimmt.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt="Document validation screen showing the extracted Rechnungsnummer, Rechnungsdatum and Total fields beside the document type suggestion Belegart Rechnung"><figcaption></figcaption></figure>
 
 ### Ein Modell bearbeiten
 
@@ -229,10 +229,10 @@ So bearbeiten Sie ein Modell:
 
 1.  Klicken Sie in der Spalte **Actions** auf das Stiftsymbol neben dem Modell, das Sie bearbeiten möchten.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt="Document classification settings screen with extraction rule fields, model selection dropdown, and save button"><figcaption></figcaption></figure>
 2. Aktualisieren Sie die verfügbaren Felder:
    * **Next Model**: Wählen Sie das Modell, das die Ausgabe des aktuellen Modells verarbeiten soll.
    * **Document Type**: Wählen Sie den Dokumenttyp, als den das Modell die Eingabe klassifizieren soll.
 3.  Klicken Sie auf **Save**, um Ihre Änderungen zu übernehmen.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt="Trainingsdaten page with Language Models and Table Extraction tabs, a table of trained models with Name, Zugewiesene Dokumente, Datum and Bearbeiten columns"><figcaption></figcaption></figure>

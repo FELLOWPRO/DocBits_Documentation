@@ -37,15 +37,15 @@ Feld entfernen:
 
 * Die verfügbaren M3-Felder können durch Öffnen des entsprechenden Bildschirms in M3 überprüft werden.
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274 (1).png" alt="M3-Batch-Statuspanel mit der Meldung, dass die Lieferantenrechnung 202300373 bereits existiert, und den Feldern mit Detailinformationen"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee (1).png" alt="M3-Dialog „Field Information“ für das Feld WEEORN in der Tabelle FAPIBH mit Panelnamen APA4S50E0, Typ String, maximaler Länge 30 und einer Schaltfläche „Copy to clipboard“"><figcaption></figcaption></figure>
 
 * Auf ähnliche Weise können Sie die Feldnamen für Zeilen abrufen.
 
 ### Kopfbereich:
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871 (1).png" alt="Codeausschnitt des M3-Mappings im Abschnitt Header Static Fields mit StaticFields=DIVI,IBTP,BSCD und statischen Werten wie SF_DIVI=PJA und SF_IBTP=20"><figcaption></figcaption></figure>
 
 Felderlisten-Eigenschaft: StaticFields
 

@@ -7,7 +7,7 @@ Navigieren Sie in Infor ERP / SAP zur Session _BOD Implementation Registration (
 \
 
 
-<figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO.png" alt="LN-Sitzung BOD Implementation Registration (bobod1100m000) mit BOD-Implementierungen und den Kontrollkästchen Public, Standard und Staging"><figcaption></figcaption></figure>
 
 **Wie kann ich die konkrete BOD-Implementierung identifizieren, die ich prüfen muss?**
 

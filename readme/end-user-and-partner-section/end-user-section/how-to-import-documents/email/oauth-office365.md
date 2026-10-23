@@ -10,15 +10,15 @@ Hier müssen Sie lediglich die gewünschte Unterorganisation auswählen und auf 
 
 Sie werden auf diese Microsoft-Seite weitergeleitet und müssen einen Code eingeben.
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
+![Microsoft Sign in-Seite mit Aufforderung zur Eingabe eines Codes, einem Code-Eingabefeld und einer Next-Schaltfläche](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
 Diesen Code finden Sie, indem Sie zu DocBits zurückwechseln; der Code wird dort wie unten dargestellt angezeigt. Kopieren Sie den Code einfach und geben Sie ihn auf der Microsoft-Seite ein. Anschließend müssen Sie Ihre eigenen Microsoft-Anmeldedaten eingeben.
 
-![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
+![Approval workflow status bar with Document Approvals, Approval History and Audit Log tabs above the approval progress steps](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
 
 Drücken Sie die Schaltfläche FINISH AUTHENTICATION und Sie werden zu diesem Menü weitergeleitet
 
-![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
+![Dashboard overview cards showing Pending Approvals, Approved Today, Total Pending Amount and Total Approved Amount statistics](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
 
 **Ordner verwenden**
 

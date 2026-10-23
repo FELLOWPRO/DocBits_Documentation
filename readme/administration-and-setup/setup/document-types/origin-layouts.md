@@ -24,7 +24,7 @@ DocBits passt Dokumentlayouts hervorragend an ihre geografische Herkunft an und 
 * Felder anpassen: Passen Sie das Layout an, indem Sie Felder hinzufügen oder entfernen. Nehmen Sie zum Beispiel für ein US-Layout das Feld „City Tax“ auf.
 * Anwenden und testen: Wenden Sie das angepasste Layout auf Ihre Dokumente an und testen Sie es, um die Korrektheit sicherzustellen.
 
-<figure><img src="../../../.gitbook/assets/origin_layout_2.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/origin_layout_2.svg" alt="Ursprungslayout-Diagramm mit den Schritten Selector, Customize, Apply Layout und Test Format in Folge"><figcaption></figcaption></figure>
 
 ## **Tipps für eine wirkungsvolle Anpassung**
 

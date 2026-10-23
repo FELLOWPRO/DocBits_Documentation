@@ -41,7 +41,7 @@ Jede Zeile in der Tabelle repräsentiert eine Workflow-Ausführung und enthält:
 
 Durch Klicken auf den **Pfeil** links von jeder Zeile wird die **Detailansicht des Workflows** erweitert.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow-Detailansicht mit ausgeklapptem Purchase Invoice - Approval-Workflow mit When-, And- und Then-Karten sowie mit Häkchen und Strichen markierten Bedingungsergebnissen" width="563"><figcaption></figcaption></figure></div>
 
 ### **Detailansicht des Workflows**
 

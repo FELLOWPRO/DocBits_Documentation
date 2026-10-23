@@ -23,7 +23,7 @@ Jede Gruppe kann konfiguriert werden für:
 3. Wählen Sie **Module.**
 4. Aktivieren Sie die **Zugriffskontrolle**, indem Sie den Schieberegler aktivieren.
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3_de.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Access-Control3_de.png" alt="Access Control-Seite in den DocBits-Einstellungen mit geöffnetem Access Control-Tab"><figcaption></figcaption></figure>
 
 ## Zugriffskontrolle einer Gruppe öffnen
 

@@ -20,10 +20,10 @@ Wir erlauben für die Kommunikation mit unseren Servern ausschließlich HTTPS-ge
 
 ### Infor Cloud
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt="Diagramm des DocBits-zu-Infor-Cloud-Setups mit einem Browser hinter einer Firewall auf Port 443, einem Space-S3-Speicher und einer PostgreSQL-Datenbank"><figcaption></figcaption></figure>
 
 ### Infor On-Prem
 
 Flexibilität ist entscheidend, und wir bieten sowohl Cloud- als auch On-Premise-Lösungen an. Mit unserer On-Premise-Option müssen keine Ports geöffnet werden, sodass die Sicherheit Ihres Netzwerks uneingeschränkt erhalten bleibt. Ob in der Cloud oder im eigenen Haus – wir haben für Sie die passende Lösung.
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt="Diagramm des DocBits-On-Premise-Setups mit Scanner und Browser hinter einer lokalen Firewall, die sich mit Local File Storage, Space S3 und PostgreSQL verbinden"><figcaption></figcaption></figure>

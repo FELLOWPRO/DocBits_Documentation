@@ -5,7 +5,7 @@ Um Ihre Einstellungen zu konfigurieren, klicken Sie auf das Benutzer-Icon in der
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
 
-<figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config.png" alt="Schmale Benutzermenü-Spalte in DocBits mit Dark-Mode-Umschalter, Sprachauswahl und Abmeldeoption"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/s50-user_config_options_2-de.png" alt="Deutsches Benutzermenü mit Sprache, Dunkelmodus, Einstellungen und Abmelden. Kontoname und Initialen sind ausgeblendet." width="308"><figcaption><p>Deutsches Benutzermenü mit Sprache, Dunkelmodus, Einstellungen und Abmelden. Kontoname und Initialen sind ausgeblendet.</p></figcaption></figure>
 
@@ -32,7 +32,7 @@ In diesem Abschnitt können Sie die folgenden Präferenzen anpassen:
 * **Schriftgröße:** Passen Sie die Textgröße für bessere Lesbarkeit an.
 * **Dual Monitor Mode:** Aktivieren Sie diese Funktion, wenn Sie zwei Monitore verwenden.
 
-<figure><img src="../../.gitbook/assets/user-config3-de.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3-de.png" alt="Dialog Edit User mit dem Datumsformat %d.%m.%Y, der Betragsformatierung Deutsch, der Schriftgröße von Klein bis Groß, den Namensfeldern Max Mustermann, dem Dual-Monitor-Modus und Passwortfeldern"><figcaption></figcaption></figure>
 
 **Abmelden**
 

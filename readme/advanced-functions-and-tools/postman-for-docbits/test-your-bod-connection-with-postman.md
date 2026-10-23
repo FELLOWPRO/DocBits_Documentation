@@ -10,22 +10,22 @@ Diese Seite erklärt, wie Sie die erfolgreiche Verarbeitung Ihres BOD (Business 
 
 1.  Gehen Sie zu **Einstellungen → Globale Einstellungen → Integration und SSO**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_integration.png)
+    ![Einstellungsseite in DocBits mit geöffneter Global-Settings-Navigation und Integrations & SSO hervorgehoben zwischen Document Types und Email Templates](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_integration.png)
 2.  Sie können entweder Ihren **API-Schlüssel** manuell kopieren oder auf die Schaltfläche "Kopieren" klicken, um ihn in Ihre Zwischenablage zu kopieren.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_1.png)
+    ![Seite Integration & SSO in DocBits mit dem Feld API Key samt Kopier-Schaltfläche über dem Abschnitt SSO Service Provider Settings](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_1.png)
 
 ### **Herunterladen der BOD-Mapping-Datei**
 
 1.  Gehen Sie zu **Einstellungen → Verarbeitung von Dokumenten → Exportieren**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![Einstellungsseite in DocBits mit geöffneter Document-Processing-Navigation und den Einträgen Import, OCR Settings, Classification and Extraction und Module](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
 2.  Klicken Sie in der **Aktionen**-Spalte des relevanten Exporteintrags auf das Drei-Punkte-Menü und wählen Sie **Bearbeiten**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_2.png)
+    ![Seite Export settings in DocBits mit den Zeilen google Invoice webhook und Infor LN Test Invoice und geöffnetem Menü Actions](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_2.png)
 3.  Suchen Sie die **BOD-Mapping-Datei** und klicken Sie auf die Schaltfläche **Herunterladen**, um sie zu speichern.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_3.png)
+    ![Infor-ION-Dialog mit dem Feld Title Test und den Schaltflächen zum Herunterladen von ION-Mapping File, IDM Mapping File und BOD-Mapping File](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_3.png)
 
 ## Testen Sie den Endpunkt in Postman
 
@@ -45,22 +45,22 @@ Diese Seite erklärt, wie Sie die erfolgreiche Verarbeitung Ihres BOD (Business 
       -F 'custom_fields_mapping='
     ```
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_4.png)
+    ![Postman-Workspace mit dem Willkommensbildschirm, dem Tab History und der Option Create a new request](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_4.png)
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_5.png)
+    ![Postman-Dialog „Import“ mit geöffnetem Feld zum Einfügen von cURL zum Importieren der BOD-Anfrage](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_5.png)
 2.  **Setzen Sie den API-Schlüssel**\
     Gehen Sie zum **Headers**-Tab, suchen Sie den `X-API-KEY`-Header und fügen Sie Ihren API-Schlüssel in die **Value**-Spalte ein.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_6.png)
+    ![Postman-Request für https://api.docbits.com/prod-api/import/purchase_order_bod mit dem Tab Headers und der Zeile X-API-KEY](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_6.png)
 3.  **Laden Sie die BOD-Datei hoch**\
     Gehen Sie zum **Body**-Tab, suchen Sie den `file`-Schlüssel, klicken Sie dann auf **Select Files** in der **Value**-Spalte und laden Sie Ihre BOD-XML-Datei hoch.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_7.png)
+    ![Postman-Request-Tab Body mit den form-data-Schlüsseln org_id, sub_org_id, file mit Select Files und custom_fields_mapping](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_7.png)
 4.  **Senden Sie die Anfrage**\
     Klicken Sie auf **Send**, um den API-Aufruf zu tätigen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_8.png)
+    ![Postman-Request mit geöffneter Registerkarte Authorization und ausgewähltem No Auth](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_8.png)
 5.  **Überprüfen Sie die Antwort**\
     Überprüfen Sie die Antwort, um zu bestätigen, dass Ihr BOD erfolgreich verarbeitet wurde.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_9.png)
+    ![Postman-Antwortbereich mit Status 200 OK und der Body-Nachricht BOD processed successfully](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/test_bod_connection_postman_9.png)

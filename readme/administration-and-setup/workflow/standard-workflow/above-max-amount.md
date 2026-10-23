@@ -1,6 +1,6 @@
 # Oberhalb des Höchstbetrags
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42 (1).png" alt="Decision Trees settings page listing decision trees in a table with Name, Dokumenttyp and Actions columns beside the Entscheidungsbaume sidebar"><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel dafür ausgelegt ist, Fälle zu verwalten, in denen der Rechnungsgesamtbetrag höher ist als der maximale Betrag, den ein Genehmiger bearbeiten darf.
 

@@ -6,7 +6,7 @@ Standardmäßig werden bestimmte Felder im Validierungsprozess automatisch über
 
 Sie können die verwendete Formel jederzeit überprüfen, indem Sie über das Info-Symbol fahren.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1_de.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1_de.png" alt="Document validation screen with the Automatische Pruefungen panel on the left listing Pruefungen options and the extracted invoice field list on the right"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Hinweis:**</mark> Das Info-Symbol ist nur sichtbar, wenn ein Wert für das entsprechende Feld extrahiert wurde.
 

@@ -106,7 +106,7 @@ Es ist auch möglich, den Status in den Workflow einzutragen, sodass die zugewie
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-de.png" alt="Statusänderung als Aktion in einem ungespeicherten Workflow-Entwurf."><figcaption><p>Statusänderung als Aktion in einem ungespeicherten Workflow-Entwurf.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt="Workflow-Builder mit drei Logikkarten, die Dokumente nach Bearbeiter und Dokumenttyp dem Invoice reviewer, Delivery-note reviewer und Order reviewer zuweisen"><figcaption></figcaption></figure>
 
 Wenn beispielsweise bestimmte oder wichtige Informationen in einem Dokument fehlen, die aber für die weitere Verarbeitung wichtig sind und enthalten sein müssen, können Sie den Workflow so einrichten, dass diese Dokumente sofort an den Einkäufer und einen Stellvertreter (Ersatz) weitergeleitet werden.
 
@@ -143,7 +143,7 @@ Diese Logic Card ist entscheidend, um sicherzustellen, dass die Details einer Au
 
 Wenn Sie eine andere Berechnung für Zuschläge haben oder diese nur bei einigen Artikeln auftreten, können Sie die generischen Tabellenberechnungs-Cards verwenden. Einige davon erlauben auch das Filtern nach regulären Ausdrücken.
 
-<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt="Dashboard settings panel with preset dropdown, add row controls, a columns list and a preview table of document rows"><figcaption></figcaption></figure>
 
 Oben sehen Sie ein Berechnungsbeispiel für MTZ mit einem Filter für Artikelnummern, die mit 01, 06, 9, 001 oder 000 beginnen.
 
@@ -151,7 +151,7 @@ Bei einer manuellen Einrichtung wird empfohlen, Berechnungen, die von neuen Spal
 
 **Workflow ausführen**
 
-<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt="DocBits dashboard overview with document status donut chart, invoice volume bar chart, and left navigation sidebar"><figcaption></figcaption></figure>
 
 Mit dieser Card können Sie den Namen eines Workflows angeben, der nach dem aktuellen Workflow ausgeführt werden soll, wenn dessen Bedingungen erfüllt sind und nach den vorherigen Then-Cards des aktuellen Workflows. Während sie ausführbare, aktive Workflows priorisiert, ermöglicht sie auch das Ausführen deaktivierter Workflows, sofern das Dokument die Bedingungen des Workflows erfüllt.
 

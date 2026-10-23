@@ -63,3 +63,34 @@ Vérifiez la sous-organisation, le dossier, la boîte partagée facultative, le 
 ### Journaux d’importation
 
 Les journaux de connexion aident à diagnostiquer les communications ; les journaux d’importation montrent les résultats antérieurs. Le journal agrégé de la section e-mail couvre les connexions configurées. Vous pouvez filtrer par objet ou expéditeur, trier avec les en-têtes et modifier l’ordre des colonnes. Examinez le message avant de répéter l’importation.
+
+
+## Tutoriel vidéo: Boîte de réception et recherche d'erreurs
+
+Le personnage et la voix sont synthétiques. La capture montre la véritable interface de test DocBits avec des factures de formation synthétiques.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/fr.mp4" %}
+Boîte de réception et recherche d'erreurs
+{% endembed %}
+
+[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/fr.html)
+
+Certains libellés natifs peuvent rester dans une autre langue. Les identifiants techniques des champs sont conservés.
+
+Sous les paramètres et l'importation, j'utilise l'adresse entrante DocBits dans cet exemple. Une boîte aux lettres directement connectée est une méthode d'importation distincte. Pour la formation, je travaille dans une organisation de démonstration dédiée avec des factures synthétiques. Les notifications restent désactivées.
+
+Je contrôle d'abord l'adresse de réception affichée et le périmètre. L'adresse appartient exactement à cette organisation et à son environnement. Pour une autre entreprise ou un environnement de production, j'utilise toujours l'adresse qui y est réellement affichée.
+
+Ici, je limite la réception à notre expéditeur de test approuvé. Je ne choisis l'affectation à une sous-organisation que si elle fait partie du processus prévu. J'enregistre le paramètre et je l'ouvre à nouveau. L'expéditeur autorisé a été conservé ; les e-mails de réponse automatique restent désactivés dans cette formation.
+
+<figure><img src="../../../../.gitbook/assets/admin-save-fr-accounting-email-v1.png" alt="Expéditeur autorisé enregistré, notifications désactivées"><figcaption><p>Expéditeur autorisé enregistré, notifications désactivées</p></figcaption></figure>
+
+Pour cette formation, un message de test a été transmis directement au traitement des e-mails entrants de DocBits. Ce test ne confirme pas la réception d'un e-mail externe. Dans le journal, je vérifie l'objet, l'expéditeur et la pièce jointe importée. Je contrôle ensuite le document réellement créé.
+
+J'ouvre le document correspondant et je compare la pièce jointe PDF avec la facture dans DocBits. Le nom du fichier, le numéro de facture, le fournisseur et le montant doivent correspondre. Un import réussi ne dit rien sur une approbation ou une écriture ERP.
+
+Un deuxième test contrôlé provient d'un expéditeur non autorisé. Dans le journal, je cherche spécifiquement cette réception et j'active le filtre d'erreur. Les détails nomment l'expéditeur rejeté. Je vérifie la cause à l'aide de l'objet et de l'identifiant de trace, au lieu de relancer l'importation plusieurs fois.
+
+Dans un cas réel, je clarifie d'abord si cet expéditeur est même autorisé. Une modification approuvée de la liste des expéditeurs est enregistrée et vérifiée à nouveau. Ensuite, je contrôle une nouvelle réception de test unique jusqu'au document créé. Pour les erreurs techniques, je transmets l'identifiant de trace et le message d'erreur concret.
+
+<figure><img src="../../../../.gitbook/assets/admin-error-fr-accounting-email-v1.png" alt="Import échoué avec pièce jointe, motif et identifiant de suivi"><figcaption><p>Import échoué avec pièce jointe, motif et identifiant de suivi</p></figcaption></figure>

@@ -1,14 +1,14 @@
-# Layout Builder
+# Layout-Editor
 
-Mit dem Layout Builder ordnen Sie die Felder und Steuerelemente an, die Personen beim Validieren oder Freigeben eines Dokuments sehen. Ein Layout gehört zu genau einem Dokumenttyp, einer Herkunft und einem Layouttyp – prüfen Sie diese drei Angaben oben auf der Seite, bevor Sie speichern.
+Mit dem Layout-Editor ordnen Sie die Felder und Steuerelemente an, die Personen beim Validieren oder Freigeben eines Dokuments sehen. Ein Layout gehört zu genau einem Dokumenttyp, einer Herkunft und einem Layouttyp – prüfen Sie diese drei Angaben oben auf der Seite, bevor Sie speichern.
 
 ## Layout öffnen
 
 1. Öffnen Sie **Einstellungen → Dokumenttypen**.
-2. Wählen Sie den Dokumenttyp aus, den Sie bearbeiten möchten, und öffnen Sie den **Layout Builder**. Bei einem Untertyp eines Dokuments öffnen Sie die Aktion Layout Builder dieses Untertyps.
-3. Prüfen Sie die Kopfzeile. Der linke Selektor ist die **Herkunft** (zum Beispiel **Standard**), gefolgt vom **Dokumenttyp** (zum Beispiel **Rechnung**) und dem **Layouttyp** (zum Beispiel **Feldvalidierung**). Jeder Selektor öffnet eine Liste; mit einer anderen Auswahl wird das jeweilige Layout geladen. Ist der Layout Builder nicht verfügbar, muss ein Administrator das Modul möglicherweise für Ihre Organisation freischalten.
+2. Wählen Sie den Dokumenttyp aus, den Sie bearbeiten möchten, und öffnen Sie den **Layout-Editor**. Bei einem Untertyp eines Dokuments öffnen Sie die Aktion Layout-Editor dieses Untertyps.
+3. Prüfen Sie die Kopfzeile. Der linke Selektor ist die **Herkunft** (zum Beispiel **Standard**), gefolgt vom **Dokumenttyp** (zum Beispiel **Rechnung**) und dem **Layouttyp** (zum Beispiel **Feldvalidierung**). Jeder Selektor öffnet eine Liste; mit einer anderen Auswahl wird das jeweilige Layout geladen. Ist der Layout-Editor nicht verfügbar, muss ein Administrator das Modul möglicherweise für Ihre Organisation freischalten.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-de.png" alt="Der Layout Builder für eine Rechnung in DocBits, mit den Selektoren für Herkunft, Dokumenttyp und Layouttyp, den Tabs Struktur, Felder und Elemente, der Layoutfläche und dem Bereich Eigenschaften rechts"><figcaption><p>Der Layout Builder: die Selektoren in der Kopfzeile, die Elementlisten links, die Fläche in der Mitte und der Bereich Eigenschaften rechts.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-de.png" alt="Der Layout-Editor für eine Rechnung in DocBits, mit den Selektoren für Herkunft, Dokumenttyp und Layouttyp, den Tabs Struktur, Felder und Elemente, der Layoutfläche und dem Bereich Eigenschaften rechts"><figcaption><p>Der Layout-Editor: die Selektoren in der Kopfzeile, die Elementlisten links, die Fläche in der Mitte und der Bereich Eigenschaften rechts.</p></figcaption></figure>
 
 ## Mit der Kopfzeile arbeiten
 
@@ -28,7 +28,7 @@ Die linke Seite hat drei Tabs:
 | **Felder** | Alle für den Dokumenttyp konfigurierten Felder, nach Feldgruppe gruppiert und standardmäßig eingeklappt. Der Filter wechselt zwischen **Alle**, **Nicht verwendet** und **Versteckt**; der technische Feldname steht unter der Bezeichnung des Feldes. |
 | **Elemente** | Steuerelemente für Darstellung und Interaktion wie Text, Bezeichnung, Kontrollkästchen, Trennlinien, Tabellen, Schaltflächen und Untergruppen. |
 
-<figure><img src="../../../.gitbook/assets/layout-builder-structure-de.png" alt="Der Tab Struktur des Layout Builders mit den aufgeklappten Gruppen Rechnungsdetails, Zahlungsdetails, Bestellung und Lieferdetails samt ihren Feldern"><figcaption><p>Der Tab Struktur zeigt das erstellte Layout als Baum aus Gruppen und Feldern.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-de.png" alt="Der Tab Struktur des Layout-Editors mit den aufgeklappten Gruppen Rechnungsdetails, Zahlungsdetails, Bestellung und Lieferdetails samt ihren Feldern"><figcaption><p>Der Tab Struktur zeigt das erstellte Layout als Baum aus Gruppen und Feldern.</p></figcaption></figure>
 
 Wählen Sie ein Element aus, um es hinzuzufügen, oder ziehen Sie es auf die Fläche. Der Titel einer Gruppe sagt der Person, die das Dokument validiert, was in diesen Abschnitt gehört. Wiederverwendbare Dokumentfelder erstellen oder benennen Sie zuerst unter [Dokumenttypen](README.md) um.
 

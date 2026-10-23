@@ -1,6 +1,6 @@
 # Confirmed Delivery Date
 
-<figure><img src="../../../../../.gitbook/assets/image (342).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (342).png" alt="Workflow card Confirmed Delivery Date with the operator Is or Is Not and a master data table lookup" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

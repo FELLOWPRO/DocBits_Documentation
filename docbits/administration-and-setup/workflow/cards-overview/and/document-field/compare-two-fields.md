@@ -1,6 +1,6 @@
 # Compare two Fields
 
-<figure><img src="../../../../../.gitbook/assets/image (53).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (53).png" alt="Workflow And card that compares two document fields against each other" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

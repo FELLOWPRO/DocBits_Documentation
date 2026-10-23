@@ -14,29 +14,29 @@ This guide will walk you through the setup process to ensure tax codes are corre
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-en.png" alt="Value lists in DocBits; organization-specific list names are hidden."><figcaption><p>Value lists in DocBits; organization-specific list names are hidden.</p></figcaption></figure>
 2.  Click **New**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt="List of Values page with the New button highlighted in the toolbar"><figcaption></figcaption></figure>
 3.  Create a list with the name `Tax_Country` and click **Save**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="New List of Values dialog with the name Tax_Country entered and the Save button visible" width="375"><figcaption></figcaption></figure>
 4.  Create the following three additional lists:
 
     * `Tax_Code_Full`
     * `Tax_Code_Reduced`
     * `Tax_Code_Free`
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt="List of Values page with the Tax_Code_Full entry created in the list"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt="List of Values page with the Tax_Code_Reduced entry created in the list"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt="List of Values page with the Tax_Code_Free entry created in the list"><figcaption></figcaption></figure></div>
 5.  Click on one of the newly created lists to open it. Then, press the **Add Row** button to add a new row.
 
-    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt="List of Values page for Tax_Country with the Add Row button visible in the toolbar"><figcaption></figcaption></figure>
 6.  Enter the desired respective values from **LN** and press **Save** to save the changes.
 
     * If you have multiple values, you can click **Add More Values** to add them.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-en.png" alt="New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation."><figcaption><p>New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation.</p></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt="Tax_Country list of values with a new row entry and the Save button"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-en.png" alt="New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation."><figcaption><p>New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation.</p></figcaption></figure></div>
 
     * **NOTE:** You can find the Tax Codes in LN under: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt="LN Tax Codes by Country screen under Common, Taxation, Master Data showing the tax code overview"><figcaption></figcaption></figure>
 
 ### **Step 2: Add Fields in DocBits**
 
@@ -45,20 +45,20 @@ This guide will walk you through the setup process to ensure tax codes are corre
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="Document Types page with the Fields option open for a document type in the menu"><figcaption></figcaption></figure>
 3.  Under **VAT & Amounts**, create six new fields as follows:
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt="Fields settings page for a document type with the VAT and Amounts section expanded"><figcaption></figcaption></figure>
 
 <table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><strong>Title</strong></td><td><strong>Field Type</strong></td><td><strong>List of Values</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_10 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_10 (1).png" alt="Fields settings page with a new dropdown field Tax Country and the List of Values Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11 (1).png" alt="Fields settings page with a new dropdown field Tax Country Reduced and the List of Values Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt="Fields settings page with a new dropdown field Tax Country Free and the List of Values Tax_Country"><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_13 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15 (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_13 (1).png" alt="Fields settings page with a new dropdown field Tax Code and the List of Values Tax_Code_Full"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14 (1).png" alt="Fields settings page with a new dropdown field Tax Code Reduced and the List of Values Tax_Code_Reduced"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15 (1).png" alt="Fields settings page with a new dropdown field Tax Code Free and the List of Values Tax_Code_Free"><figcaption></figcaption></figure></div>
 
 4.  After saving each field, click on **Save Settings** to apply the changes.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt="Fields settings page with the newly created tax fields and the Save Settings button highlighted"><figcaption></figcaption></figure>
 
 ### **Step 3: Edit Layout**
 
@@ -67,33 +67,33 @@ This guide will walk you through the setup process to ensure tax codes are corre
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Open the **Edit Layout** menu for the Document Type you want to edit.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt="Document Types page with the Edit Layout option open for a document type in the menu"><figcaption></figcaption></figure>
 3.  Select the appropriate **Document Origin** for which you want to apply the Tax Codes
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt="Layout editor with the Document Origin dropdown open to select the appropriate origin"><figcaption></figcaption></figure>
 4.  Scroll down to the **Tax Details** section.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt="Layout editor scrolled down to the Tax Details section of the document template"><figcaption></figcaption></figure>
 5. Expand the **Form Elements** dropdown menu.
 6.  In the **Tax Details** section, use the **Horizontal Separator Tool**. Drag and drop it between the sub-sections within the tax section to clearly separate them and reduce confusion.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_22 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_22 (1).png" alt="Layout editor with the Form Elements dropdown expanded and the Horizontal Separator tool highlighted"><figcaption></figcaption></figure>
 7. Expand the **Form Fields** dropdown menu.
 8.  Search for **Tax Country** and drag and drop the field into its respective area.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_23 (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_23 (2).png" alt="Layout editor with the Form Fields dropdown expanded and the Tax Country field being searched"><figcaption></figcaption></figure>
 9.  Search for **Tax Code** and drag and drop the field into its corresponding area.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_24 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_24 (1).png" alt="Layout editor with the Form Fields dropdown expanded and the Tax Code field being searched"><figcaption></figcaption></figure>
 10. Save the template.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_25.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_25.png" alt="Layout editor with the Save button highlighted after placing the tax fields"><figcaption></figcaption></figure>
 
 ### Step 4: Verify that Everything Worked
 
 After uploading a new document into DocBits with the correct document settings selected, you should now be able to select the tax codes you added to the lists in Step 1.
 
-<figure><img src="../../../.gitbook/assets/TaxCodes_31.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodes_31.png" alt="Validation screen of an uploaded document with the tax code dropdown values open"><figcaption></figcaption></figure>
 
 ## Multi Tax Code
 
@@ -104,29 +104,29 @@ After uploading a new document into DocBits with the correct document settings s
     <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-en.png" alt="Value lists in DocBits; organization-specific list names are hidden."><figcaption><p>Value lists in DocBits; organization-specific list names are hidden.</p></figcaption></figure>
 2.  Click **New**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_2 (1).png" alt="List of Values page with the New button highlighted in the toolbar"><figcaption></figcaption></figure>
 3.  Create a list with the name `Tax_Country` and click **Save**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_3.png" alt="New List of Values dialog with the name Tax_Country entered and the Save button visible" width="375"><figcaption></figcaption></figure>
 4.  Create the following three additional lists:
 
     * `Tax_Code_Full`
     * `Tax_Code_Reduced`
     * `Tax_Code_Free`
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_28.png" alt="List of Values page with the Tax_Code_Full entry created in the list"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_29.png" alt="List of Values page with the Tax_Code_Reduced entry created in the list"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_30.png" alt="List of Values page with the Tax_Code_Free entry created in the list"><figcaption></figcaption></figure></div>
 5.  Click on one of the newly created lists to open it. Then, press the **Add Row** button to add a new row.
 
-    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCode_4.png" alt="List of Values page for Tax_Country with the Add Row button visible in the toolbar"><figcaption></figcaption></figure>
 6.  Enter the desired respective values from **LN** and press **Save** to save the changes.
 
     * If you have multiple values, you can click **Add More Values** to add them.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-en.png" alt="New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation."><figcaption><p>New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation.</p></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt="Tax_Country list of values with a new row entry and the Save button"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-en.png" alt="New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation."><figcaption><p>New-value form: suborganization, synonyms and translations. No value was entered or saved; the language choice concerns the value translation.</p></figcaption></figure></div>
 
     * **NOTE:** You can find the Tax Codes in LN under: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_LN.png" alt="LN Tax Codes by Country screen under Common, Taxation, Master Data showing the tax code overview"><figcaption></figcaption></figure>
 
 ### **Step 2: Add Fields in DocBits**
 
@@ -135,20 +135,20 @@ After uploading a new document into DocBits with the correct document settings s
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Choose the **Fields** menu corresponding to the Document Type where you wish to add the fields.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt="Document Types page with the Fields option open for a document type in the menu"><figcaption></figcaption></figure>
 3.  Under **VAT & Amounts**, create six new fields as follows:
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_8.png" alt="Fields settings page for a document type with the VAT and Amounts section expanded"><figcaption></figcaption></figure>
 
 <table data-header-hidden><thead><tr><th width="306"></th><th width="139"></th><th width="119"></th><th></th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><strong>Title</strong></td><td><strong>Field Type</strong></td><td><strong>Value</strong></td></tr><tr><td><code>tax_country</code></td><td>Tax Country</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_2</code></td><td>Tax Country Reduced</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_country_3</code></td><td>Tax Country Free</td><td>Dropdown</td><td>Tax_Country</td></tr><tr><td><code>tax_code_without_country</code></td><td>Tax Code</td><td>Dropdown</td><td>Tax_Code_Full</td></tr><tr><td><code>tax_code_without_country_2</code></td><td>Tax Code Reduced</td><td>Dropdown</td><td>Tax_Code_Reduced</td></tr><tr><td><code>tax_code_without_country_3</code></td><td>Tax Code Free</td><td>Dropdown</td><td>Tax_Code_Free</td></tr></tbody></table>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_10 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_10 (1).png" alt="Fields settings page with a new dropdown field Tax Country and the List of Values Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_11 (1).png" alt="Fields settings page with a new dropdown field Tax Country Reduced and the List of Values Tax_Country"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_12.png" alt="Fields settings page with a new dropdown field Tax Country Free and the List of Values Tax_Country"><figcaption></figcaption></figure></div>
 
-<div><figure><img src="../../../.gitbook/assets/TaxCodes_13 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15 (1).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/TaxCodes_13 (1).png" alt="Fields settings page with a new dropdown field Tax Code and the List of Values Tax_Code_Full"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_14 (1).png" alt="Fields settings page with a new dropdown field Tax Code Reduced and the List of Values Tax_Code_Reduced"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_15 (1).png" alt="Fields settings page with a new dropdown field Tax Code Free and the List of Values Tax_Code_Free"><figcaption></figcaption></figure></div>
 
 4.  After saving each field, click on **Save Settings** to apply the changes.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_20 (2).png" alt="Fields settings page with the newly created tax fields and the Save Settings button highlighted"><figcaption></figcaption></figure>
 
 ### **Step 3: Edit Layout**
 
@@ -157,33 +157,33 @@ After uploading a new document into DocBits with the correct document settings s
     <figure><img src="../../../.gitbook/assets/site-extra-document-types-en.png" alt="Document types: select the fields for the relevant type. No switches were changed."><figcaption><p>Document types: select the fields for the relevant type. No switches were changed.</p></figcaption></figure>
 2.  Open the **Edit Layout** menu for the Document Type you want to edit.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt="Document Types page with the Edit Layout option open for a document type in the menu"><figcaption></figcaption></figure>
 3.  Select the appropriate **Document Origin** for which you want to apply the Tax Codes
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_26.png" alt="Layout editor with the Document Origin dropdown open to select the appropriate origin"><figcaption></figcaption></figure>
 4.  Scroll down to the **Tax Details** section.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodes_21.png" alt="Layout editor scrolled down to the Tax Details section of the document template"><figcaption></figcaption></figure>
 5. Expand the **Form Elements** dropdown menu.
 6.  In the Tax Details section use the **Sub Group** Tool. Drag and Drop it next to an existing field
 
-    <figure><img src="../../../.gitbook/assets/TaxCodesMulti_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodesMulti_1.png" alt="Layout editor with the Form Elements dropdown expanded and the Sub Group tool highlighted"><figcaption></figcaption></figure>
 7.  To name your subgroup, click on the subgroup and enter your desired name in the **Label** field.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodesMulti_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodesMulti_3.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodesMulti_2.png" alt="Layout editor with a newly added Sub Group element selected in the Tax Details section"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodesMulti_3.png" alt="Layout editor with the Label field of the selected Sub Group open for naming"><figcaption></figcaption></figure></div>
 8.  Drag and drop the fields that correspond to this group into the **Sub Group** field.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_4.png" alt="Layout editor with a field being dragged into the new Sub Group in the Tax Details section"><figcaption></figcaption></figure>
 9. Expand the **Fields** dropdown menu.
 10. Search for **Tax** and drag and drop the respective fields, such as **Tax Country** and **Tax Code**, into the corresponding subgroup.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_5.png" alt="Layout editor with the Fields dropdown expanded and the Tax Country field being searched"><figcaption></figcaption></figure>
 11. Repeat steps 5 through 10 2 times to reach the following state:
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_6.png" alt="Layout editor with the tax subgroup placed in the Tax Details section after repeating the steps"><figcaption></figcaption></figure>
 12. Save the template.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/TaxCodeMulti_7.png" alt="Layout editor with the Save button highlighted after arranging the tax subgroups"><figcaption></figcaption></figure>
 
 ### Step 4: Verify that Everything Worked and resulting changes
 
@@ -192,11 +192,11 @@ After uploading a new document into DocBits with the correct document settings s
 * The document will begin with three distinct sections: one for Tax Full amounts, one for Tax Reduced amounts, and one for Tax Free amounts.
 * Clicking the plus button within a section will create a duplicate, allowing multiple submissions at the selected tax rate.
 
-<figure><img src="../../../.gitbook/assets/TaxCodeMulti_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodeMulti_8.png" alt="Validation screen of an uploaded document showing the tax sections with the plus button"><figcaption></figcaption></figure>
 
 * Sections can be deleted by clicking the remove button.
 
-<figure><img src="../../../.gitbook/assets/TaxCodeMulti_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodeMulti_9.png" alt="Validation screen of an uploaded document with a tax section and the remove button highlighted"><figcaption></figcaption></figure>
 
 * Total Amounts will be calculated as a sum of all sections
 * Validation of Total Amount will be modified based on all tax-sections
@@ -206,9 +206,9 @@ After uploading a new document into DocBits with the correct document settings s
 
 In **LN** USt Position will be filled out based on the position number from the Tax Code/Tax Country dropdown menu. Only the Position number will be sent to export.
 
-<figure><img src="../../../.gitbook/assets/TaxCodesLN_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodesLN_2.png" alt="LN screen showing the USt Position field filled based on the tax code position number"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/TaxCodesLN_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodesLN_3.png" alt="LN screen showing the exported invoice with the filled USt Position value"><figcaption></figcaption></figure>
 
 #### **Export Mapping**
 
@@ -218,4 +218,4 @@ To link the Tax Line with the Cost Line:
 2. Add the following entry, following the example below:\
    `ICF_TaxLine = TF_position`
 
-<figure><img src="../../../.gitbook/assets/TaxCodeMulti_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/TaxCodeMulti_10.png" alt="InvoiceCostFields list of values with the TaxLine entry and the ICF_TaxLine mapping"><figcaption></figcaption></figure>

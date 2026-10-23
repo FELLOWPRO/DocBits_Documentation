@@ -1,6 +1,6 @@
 # Document Type One of
 
-<figure><img src="../../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (88).png" alt="Workflow card Document Type One of with the operator Is and a selection of document types such as Invoice and Credit Note"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

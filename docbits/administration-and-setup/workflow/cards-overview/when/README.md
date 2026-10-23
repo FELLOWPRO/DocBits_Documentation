@@ -4,7 +4,7 @@ The cards in this category, shown in the **Add Card** library of the Workflow Bu
 
 <figure><img src="../../../../.gitbook/assets/workflow_cards_when.png" alt="Workflow Builder card category"><figcaption><p>The cards in this category.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (89).png" alt="When category in the Workflow Builder Add Card library with document type condition cards and the Celery Beat trigger"><figcaption></figcaption></figure>
 
 #### Understanding the "When" in Workflow Configurations
 

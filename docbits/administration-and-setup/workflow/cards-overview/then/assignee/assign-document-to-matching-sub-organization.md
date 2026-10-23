@@ -1,6 +1,6 @@
 # Assign document to matching sub organization
 
-<figure><img src="../../../../../.gitbook/assets/image (376).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (376).png" alt="Workflow Then card that assigns the document to the matching sub-organization" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/image (344).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (344).png" alt="Workflow card Tax in document field with a field name, comparison operator, master data table, tolerance amount and tolerance type" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

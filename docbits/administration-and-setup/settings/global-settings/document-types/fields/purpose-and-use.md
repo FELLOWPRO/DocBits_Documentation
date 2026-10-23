@@ -2,7 +2,7 @@
 
 ## Proper configuration of fields in DocBits is critical to ensure that data can be captured, processed and stored correctly.
 
-<figure><img src="../../../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (225).png" alt="Field Settings page listing INVOICE DETAILS fields with REQUIRED, READ ONLY, HIDDEN, FORCE VALIDATION and OCR MATCH SCORE columns"><figcaption></figcaption></figure>
 
 **Here are some reasons why this is important:**
 

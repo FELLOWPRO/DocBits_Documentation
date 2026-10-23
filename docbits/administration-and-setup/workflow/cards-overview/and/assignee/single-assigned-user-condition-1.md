@@ -1,6 +1,6 @@
 # Single Assigned Group Condition
 
-<figure><img src="../../../../../.gitbook/assets/image (149).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (149).png" alt="Workflow And card that checks the assigned user against a single selected user" width="563"><figcaption></figcaption></figure>
 
 **Purpose:**\
 This workflow card executes operations based on whether a task or document is assigned to a particular group. It uses a straightforward condition to trigger or prevent actions based on group assignment.

@@ -1,6 +1,6 @@
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (353).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (353).png" alt="Workflow card Order Type of Purchase Order with an Any or All selector, the operator Equals and an order type value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

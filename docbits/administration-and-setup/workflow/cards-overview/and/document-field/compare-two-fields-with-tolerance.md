@@ -1,6 +1,6 @@
 # Compare two Fields with Tolerance
 
-<figure><img src="../../../../../.gitbook/assets/image (54).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54).png" alt="Workflow And card that compares two document fields with a tolerance" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -104,7 +104,7 @@ It is also possible to enter the status into the workflow, so the assigned perso
 
 <figure><img src="../../../.gitbook/assets/s150-workflow_test7_status_update.png" alt="Status-change action in an unsaved workflow draft."><figcaption><p>Status-change action in an unsaved workflow draft.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (1).png" alt="Workflow builder with three logic cards assigning documents by assignee and document type to Invoice reviewer, Delivery-note reviewer and Order reviewer"><figcaption></figcaption></figure>
 
 For example, if certain or important information is missing from a document, but is important and must be included for further processing, you can set up the workflow so that these documents are immediately forwarded to the buyer and a substitute (replacement).
 
@@ -141,7 +141,7 @@ This logic card is vital for ensuring that the details of an order confirmation 
 
 If you have a different calculation for surcharges, or only have them on some items, you can use the generic table calculation cards, some of them also allow to filter for regular expressions.
 
-<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19.png" alt="Calculation card for the MTZ column with a Material Surcharge rule and an Item Number regex filter for item numbers starting 01, 06, 9, 001 or 000"><figcaption></figcaption></figure>
 
 Above is a calculation example for MTZ with a filter for item numbers starting with 01, 06, 9, 001 or 000.
 
@@ -149,7 +149,7 @@ With a manual setup it’s advised to split calculations that depend on new colu
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20.png" alt="Workflow builder card Run workflow Mtz Into Discount with a Conditions section for running a follow-up workflow"><figcaption></figcaption></figure>
 
 With this card you can specify the name of a workflow that is to be run after the current workflow if its conditions are met and after previous then cards of the current workflow. While it prioritises runnable, active workflows, it also allows you to run deactivated workflows if the document fulfills the workflows conditions.
 

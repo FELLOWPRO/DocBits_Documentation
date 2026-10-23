@@ -4,7 +4,7 @@ hidden: true
 
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (104).png" alt="Workflow card Order Type of Purchase Order with an Any or All selector, the operator Equals and an order type value"><figcaption></figcaption></figure>
 
 ## **Purpose**:
 

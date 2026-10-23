@@ -1,6 +1,6 @@
 # Order Data in Order Confirmation
 
-<figure><img src="../../../../../.gitbook/assets/image (341).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (341).png" alt="Workflow card Order Data in Order Confirmation with a Unit Price, Discount or Quantity selector, operator, text, target field and condition result" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

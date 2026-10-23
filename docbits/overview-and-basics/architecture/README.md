@@ -16,7 +16,7 @@ All connections between components are secured using industry-standard encryptio
 
 **On Premise:**&#x20;
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="Operator On-Prem architecture diagram with DocAgent on a client machine connecting to the Prefect API and the DocBits cloud"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ All connections between components are secured using industry-standard encryptio
 
 **Cloud**:
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Operator Cloud architecture diagram with the Chrome extension, DocBits Operator Cloud, DocFlow and DocBits AI exchanging task and response messages"><figcaption></figcaption></figure>
 
 ## Exporting Data to Infor
 
@@ -38,7 +38,7 @@ Export to [Infor](../../infor-integration-and-configuration/exporting-to-infor/)
 
 To identify the supplier or compare/match purchase order lines, we activate a trigger in LN/M3 that sends the Sync.RemitToPartyMaster, Sync.SupplierPartyMaster, and Sync.PurchaseOrder BODs to Doc**Bits**. We configure this process in ION Desk by defining the dataflow to a specific connection point to Doc**Bits**.
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="DocBits architecture diagram of the Kubernetes cluster with load balancer, Redis, PostgreSQL, worker pods and Spaces data storage"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Master Data Validation](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ To identify the supplier or compare/match purchase order lines, we activate a tr
 
 ## Email Import OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="Office 365 email import diagram showing Microsoft Graph API issuing an access token to the DocBits mail service and main system"><figcaption></figcaption></figure>

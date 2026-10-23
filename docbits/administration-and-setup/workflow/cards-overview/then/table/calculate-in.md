@@ -1,6 +1,6 @@
 # Calculate in
 
-<figure><img src="../../../../../.gitbook/assets/image (371).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (371).png" alt="Workflow Then card that calculates a table column total into a document field" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

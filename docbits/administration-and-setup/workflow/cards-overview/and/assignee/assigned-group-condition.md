@@ -1,6 +1,6 @@
 # Assigned Group Condition
 
-<figure><img src="../../../../../.gitbook/assets/image (148).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (148).png" alt="Workflow And card that checks the assigned group against a selected group" width="563"><figcaption></figcaption></figure>
 
 **Purpose:**
 

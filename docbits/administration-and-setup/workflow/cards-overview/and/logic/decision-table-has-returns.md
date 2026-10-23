@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (45).png" alt="Workflow And card that checks whether a decision table has returns" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Assign Sequentially to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/image (143).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (143).png" alt="Workflow Then card that assigns the document sequentially to users in a procurement group" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

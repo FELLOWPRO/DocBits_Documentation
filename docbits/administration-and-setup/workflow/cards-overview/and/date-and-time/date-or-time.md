@@ -1,6 +1,6 @@
 # Date or Time
 
-<figure><img src="../../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (48).png" alt="Workflow And card that compares a date or time field with a chosen value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

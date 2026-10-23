@@ -1,6 +1,6 @@
 # Classification and Extraction
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt=""><figcaption><p>Classification and Extraction settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="Classification and Extraction settings in DocBits, General tab, with the Document Splitting, Document Processing, Amount Formatting, Extraction and Electronic Document sections"><figcaption><p>Classification and Extraction settings</p></figcaption></figure>
 
 ## Overview
 
@@ -36,7 +36,7 @@ The **General** tab groups the settings into collapsible sections. All changes a
 * **Do not split uploaded documents** – the default; the document is processed as one file.
 * **Split by Barcode/QR-Code** – the document is split at every detected barcode.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_splitting.png" alt=""><figcaption><p>Split options in the Document Splitting section</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_splitting.png" alt="Document Splitting section in DocBits with the Split dropdown open showing Do not split uploaded documents and Split by Barcode/QR-Code"><figcaption><p>Split options in the Document Splitting section</p></figcaption></figure>
 
 When **Split by Barcode/QR-Code** is selected, two more fields appear:
 
@@ -49,7 +49,7 @@ After a successful split, the parent document is deleted and the pages continue 
 
 **Pages to process** limits how many pages are OCRed, classified and extracted per document.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_processing.png" alt=""><figcaption><p>Pages to process in the Document Processing section</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_processing.png" alt="Classification and Extraction settings in DocBits with Split set to Split by Barcode/QR-Code, Barcode Type CODE-128 and QR-CODE and Pages to process 10"><figcaption><p>Pages to process in the Document Processing section</p></figcaption></figure>
 
 * Empty or **0** means all pages are processed.
 * A number *N* limits OCR, classification and extraction to the first *N* pages. The complete document is still stored, displayed and exported; pages beyond the limit are shown read-only.
@@ -58,7 +58,7 @@ After a successful split, the parent document is deleted and the pages continue 
 
 Two switches control how amounts are compared against master data and purchase orders.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_amount_formatting.png" alt=""><figcaption><p>Amount Formatting section</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_amount_formatting.png" alt="Classification and Extraction settings in DocBits with the Amount Formatting and Extraction section headers below the Document Processing settings"><figcaption><p>Amount Formatting section</p></figcaption></figure>
 
 * **Allow Rounding During Amount Comparison** – when enabled, a tolerance of ±0.5 is allowed. When disabled, ±0.05 applies.
 * **Require Exact Match for Amount Comparison** – when enabled, amounts must match exactly, with zero tolerance. When disabled, ±0.05 applies.
@@ -78,7 +78,7 @@ Only one of the two switches can be active at a time; enabling one disables the 
 
 You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table (whether AI-based or manual) is always linked to a specific supplier.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_extraction.png" alt=""><figcaption><p>Table extraction switches</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_extraction.png" alt="Classification and Extraction settings in DocBits with the Extraction section for table extraction configuration below Pages to process"><figcaption><p>Table extraction switches</p></figcaption></figure>
 
 **Table Extraction:** Activates rule-based table extraction. Tables are trained per supplier on the validation screen (*Go to table extraction view*).\
 Learn more about training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
@@ -168,7 +168,7 @@ The **Classification Rules** tab lists the rules that assign a document type aut
 
 Switch to the tab by clicking **Classification Rules** at the top of the page.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules.png" alt=""><figcaption><p>Classification Rules tab with the rule table</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules.png" alt="Classification Rules tab with a table of E-Mail and Barcode rules and columns Type, Pattern, Document Type and Actions"><figcaption><p>Classification Rules tab with the rule table</p></figcaption></figure>
 
 The table has one row per rule with these columns:
 
@@ -185,7 +185,7 @@ The search field above the table filters all columns, including the display labe
 
 1.  Click **Add** above the table.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_add.png" alt=""><figcaption><p>Configure classification Rule dialog</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_add.png" alt="Configure classification Rule dialog with empty Pattern, Show help, Type, Sub Organization, Document Type and Sub Document Type fields"><figcaption><p>Configure classification Rule dialog</p></figcaption></figure>
 2. Fill in the fields:
    * **Pattern** (required) – the regex the rule looks for.
    * **Type** (required) – **Barcode** or **E-Mail**. This decides which source name the pattern is matched against.
@@ -203,7 +203,7 @@ The **Show help** switch below the pattern field opens an inline reference with 
 * **O365** – `Shared Email + Folder › Shared Email › Folder › Email › Id`
 * **Gmail** – `Email + Folder › Folder › Email › Id`
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_pattern_help.png" alt=""><figcaption><p>Pattern help panel inside the rule dialog</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_pattern_help.png" alt="Configure classification Rule dialog with the pattern help open showing O365 and Gmail source name formats and the examples .*@acme.de.* and ap@acme.de:.*"><figcaption><p>Pattern help panel inside the rule dialog</p></figcaption></figure>
 
 Examples given in the panel:
 
@@ -218,10 +218,10 @@ If you use the **E-Mail** type, the pattern is matched against the mailbox and f
 
 1.  Click the three dots in the **Actions** column of the rule you want to change.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_row_menu.png" alt=""><figcaption><p>Row menu with Edit and Delete</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_row_menu.png" alt="Classification Rules table in DocBits with the row menu open on Edit and Delete in the Actions column"><figcaption><p>Row menu with Edit and Delete</p></figcaption></figure>
 2.  Select **Edit**. The dialog opens with the rule's current values.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_edit.png" alt=""><figcaption><p>Editing an existing classification rule</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_edit.png" alt="Configure classification Rule dialog with pattern 101_Polydocs, Type E-Mail, Document Type Invoice and Sub Document Type WARENRECHNUNG"><figcaption><p>Editing an existing classification rule</p></figcaption></figure>
 3. Make your changes to the pattern, type, sub organization, document type or sub document type.
 4.  Click **Save**.
 
@@ -238,7 +238,7 @@ The rule is removed from the list immediately. Deleting a rule does not change d
 
 The **AI Models** tab shows the custom-trained models available for document classification and their labels. It only appears when the model and label module is enabled for your organization.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_ai_models.png" alt=""><figcaption><p>AI Models tab</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/classification_and_extraction_ai_models.png" alt="AI Models tab in Classification and Extraction settings with a model entry and its labels table"><figcaption><p>AI Models tab</p></figcaption></figure>
 
 If no custom model is available for the organization, the tab shows *No Record Found!*.
 

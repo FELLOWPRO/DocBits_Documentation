@@ -18,7 +18,7 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
 * Select **PostgreSQL Unicode(x64)** driver from the list and click **Finish**.
 * Fill in the required fields with credentials from:\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
-<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt="DocBits Read-Only DB Access panel showing username, password, database, host, port fields and the available tables list"><figcaption></figcaption></figure>
 
 **Required Fields:**
 
@@ -38,7 +38,7 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
     <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI Get Data ODBC"><figcaption></figcaption></figure>
 * From the DSN list, select your configured source (e.g., `Sandbox-Read_Only`).
 
-<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt="Power BI From ODBC dialog with the Data source name (DSN) dropdown and Advanced options"><figcaption></figcaption></figure>
 
 * Click **OK**. Enter credentials again if prompted.
   * If `password authentication failed for user` appears, verify the host, database, username and password. Enter the actual password in the credential dialog. Curly-brace escaping in an ODBC connection string is driver syntax; it is not a general fix for failed authentication.
@@ -49,9 +49,9 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
 * Open the **`public`** schema.
 * Select the tables you want to import.
 
-![](../../.gitbook/assets/connect_read_only_1.png)
+![Power BI Navigator pane showing the ODBC data source dsn-Sandbox-Read_Only with the public schema and its tables listed](../../.gitbook/assets/connect_read_only_1.png)
 
-![](../../.gitbook/assets/connect_read_only_2.png)
+![Power BI Navigator with sandbox-doc2api tables such as supplier group, supplier header and task assignment, with Select Related Tables, Load and Transform Data buttons](../../.gitbook/assets/connect_read_only_2.png)
 
 * Choose:
   * **Load** → Import directly into Power BI

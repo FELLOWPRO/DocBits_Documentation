@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../../.gitbook/assets/image (364).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (364).png" alt="Workflow Then card that creates a new task and assigns it to the recipient" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

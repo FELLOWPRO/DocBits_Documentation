@@ -24,7 +24,7 @@ DocBits excels in adapting document layouts according to their geographical orig
 * Customize Fields: Adapt the layout by adding or removing fields. For instance, include ‘City Tax’ for a U.S. layout.
 * Apply and Test: Once customized, apply the layout to your documents and test to ensure accuracy.
 
-<figure><img src="../../../.gitbook/assets/origin_layout_2.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/origin_layout_2.svg" alt="Origin layout diagram with the steps Selector, Customize, Apply Layout and Test Format in sequence"><figcaption></figcaption></figure>
 
 ## **Tips for Effective Customization**
 

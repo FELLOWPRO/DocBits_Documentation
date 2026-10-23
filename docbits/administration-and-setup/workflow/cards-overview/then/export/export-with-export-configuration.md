@@ -1,6 +1,6 @@
 # Export with Export Configuration
 
-<figure><img src="../../../../../.gitbook/assets/image (360).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (360).png" alt="Workflow Then card that exports the document using an export configuration" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

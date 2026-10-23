@@ -1,6 +1,6 @@
 # Set to
 
-<figure><img src="../../../../../.gitbook/assets/image (354).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (354).png" alt="Workflow Then card that sets a document field to a value chosen on the card" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Approve the Document
 
-<figure><img src="../../../../../.gitbook/assets/image (357).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (357).png" alt="Workflow Then card that approves the document so processing continues in the workflow builder" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

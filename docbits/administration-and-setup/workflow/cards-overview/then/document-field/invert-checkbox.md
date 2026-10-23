@@ -1,6 +1,6 @@
 # Invert Checkbox
 
-<figure><img src="../../../../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (356).png" alt="Workflow Then card that inverts the checked state of a checkbox document field"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

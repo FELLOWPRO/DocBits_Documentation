@@ -16,7 +16,7 @@ To access workflow logs:
    * <mark style="color:red;">**Note**</mark>: The Workflow feature must be enabled to access this option.
 4.  A **side panel** opens showing a summary of executed workflows.\\
 
-    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="Workflow Logs side panel for document rechnung_2514075 with summary counters and the workflow result table" width="563"><figcaption></figcaption></figure></div>
 
 ## **Components of the Workflow Logs Panel**
 
@@ -43,7 +43,7 @@ Each row in the table represents one workflow execution and includes:
 
 Clicking the **arrow** on the left of each row expands the **workflow detail view**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow detail view expanding the Purchase Invoice - Approval workflow with When, And and Then cards and condition results marked with checkmarks and dashes" width="563"><figcaption></figcaption></figure></div>
 
 ### **Workflow Detail View**
 

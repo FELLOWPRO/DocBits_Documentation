@@ -1,6 +1,6 @@
 # Calculate Columns with
 
-<figure><img src="../../../../../.gitbook/assets/image (370).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (370).png" alt="Workflow Then card that calculates table columns using a formula on the card" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

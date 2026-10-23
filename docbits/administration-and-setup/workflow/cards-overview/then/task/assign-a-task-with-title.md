@@ -1,6 +1,6 @@
 # Assign a Task with Title
 
-<figure><img src="../../../../../.gitbook/assets/image (367).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (367).png" alt="Workflow Then card that assigns a task with a title entered on the card" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

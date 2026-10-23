@@ -2,7 +2,7 @@
 
 Docbits is an advanced system designed to automate the matching of purchase order data (POs) with incoming invoice documents. This tool is specifically designed for efficient management and processing of invoice data within ERP systems. This documentation explains the basics of automatic matching through Docbits and defines the specific rules required for successful matching.
 
-<figure><img src="../../../.gitbook/assets/Automatic Purchase Order Data Matching.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Automatic Purchase Order Data Matching.svg" alt="Diagram of automatic purchase order data matching with steps for data extraction, comparison, automatic matching, reporting and successful match"><figcaption></figcaption></figure>
 
 ## **Fundamental Principles of Auto Matching in Docbits**
 

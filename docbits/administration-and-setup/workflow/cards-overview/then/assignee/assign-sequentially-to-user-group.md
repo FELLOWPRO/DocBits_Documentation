@@ -1,6 +1,6 @@
 # Assign Sequentially to User/Group
 
-<figure><img src="../../../../../.gitbook/assets/image (144).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (144).png" alt="Workflow Then card that assigns the document sequentially to users in a user group" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

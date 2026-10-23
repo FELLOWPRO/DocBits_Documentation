@@ -1,6 +1,6 @@
 # Assign user from field
 
-<figure><img src="../../../../../.gitbook/assets/image (372).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (372).png" alt="Workflow Then card that assigns the document to the user taken from a document field" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt="Workflow card Promised delivery date for line items in table with a comparison operator, tolerance days and allowed tolerance days" width="375"><figcaption></figcaption></figure>
 
 ## Purpose:
 

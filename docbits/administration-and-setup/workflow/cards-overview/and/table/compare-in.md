@@ -1,6 +1,6 @@
 # Compare In
 
-<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="Workflow card Compare In with two column selectors, a comparison operator and a dependency column with a Python regex field" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

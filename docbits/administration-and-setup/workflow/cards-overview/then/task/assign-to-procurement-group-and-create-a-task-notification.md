@@ -1,6 +1,6 @@
 # Assign to Procurement Group and Create a Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/image (138).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (138).png" alt="Workflow Then card that assigns to a procurement group and creates a task notification" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

@@ -11,7 +11,7 @@ The Dashboard settings are designed to help administrators control the data pres
 To access the dashboard settings, navigate to:\
 **Settings → Global Settings → Dashboard**
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt="Dashboard settings page in DocBits with the General section showing Reset filters options and Export History below"><figcaption></figcaption></figure>
 
 ## **General**
 
@@ -20,13 +20,13 @@ To access the dashboard settings, navigate to:\
   * **Auto load dashboard upload**: Controls whether the dashboard should automatically load data upon user access, which can help in reducing load times and improving user experience by only loading data when needed.
   *   **Export Dashboard Data**: This feature adds a new **Export** button to the dashboard toolbar, allowing you to export the current dashboard view as a **.csv** or **.xlsx** file.
 
-      <figure><img src="../../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../../.gitbook/assets/dashboard_settings_3.png" alt="Dashboard settings General section with the Reset filters toggles and the Dashboard data options Auto refresh dashboard on document updates and Export Dashboard Data"><figcaption></figcaption></figure>
 
 ## **Export History**
 
 In the **Export History**, you will see a table listing all past exports along with key information about each request.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dashboard_settings_4.png" alt="Export History section on the Dashboard settings page with the columns Email, Status, Requested At, Completed At, Format and Filters Used"><figcaption></figcaption></figure>
 
 The following details are included:
 
@@ -49,19 +49,19 @@ The following details are included:
   * **Only Admin and Assignee**: Only users with Admin privileges and the assigned user can restart the document.
   * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can restart documents.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt="Action section on the Dashboard settings page with Assign to and Restart each set to Only for Admin"><figcaption></figcaption></figure>
 
 ## **Filters**
 
 * **Status filter style**: Determines the presentation style of status filters, which can be set to default or customized according to the operational focus of the users.
 * **Custom status filter**: Enables the creation and application of custom filters that can target specific document statuses like "New", "Validating", or "Exporting". This allows users to quickly access documents in specific stages of processing.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dashboard_settings_5.png" alt="Dashboard settings page showing the Filters section with Status filter style and Custom status filter plus the Advance Shipment Dashboard section"><figcaption></figcaption></figure>
 
 ## Advance Shipment Dashboard
 
 * **Delivered Orders Visibility**: This feature allows the user to specify the duration for which delivered orders will be visible.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dashboard_settings_6.png" alt="Advance Shipment Dashboard section on the Dashboard settings page with Delivered Orders Visibility set to 14 Days"><figcaption></figcaption></figure>
 
 These dashboard settings are crucial for ensuring that the DocBits platform is as responsive and useful as possible, providing users with a powerful tool to monitor and manage document processing activities directly from the dashboard.

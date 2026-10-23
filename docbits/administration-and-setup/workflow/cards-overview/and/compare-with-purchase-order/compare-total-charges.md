@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/image (347).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (347).png" alt="Workflow card Compare Total Charges with a field name, operator, tolerance amount, tolerance type and a Charge ID separator" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -5,7 +5,7 @@
 Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → Export Not Matched PO Lines**.\
 Toggle the button to enable this setting.
 
-<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt="Export not matched PO lines setting with a toggle switch for enabling the export of unmatched lines"><figcaption></figcaption></figure>
 
 ## **How It Works**
 

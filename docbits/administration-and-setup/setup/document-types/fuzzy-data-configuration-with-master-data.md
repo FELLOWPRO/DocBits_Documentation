@@ -8,7 +8,7 @@ Each document type has its own default configurations and must be set up separat
 
 Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → Lookup Master Data
 
-<div align="center"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_1.png" alt="" width="454"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_1.png" alt="Fields settings page with the Master Data Settings section showing Lookup Master Data and LOV Master Data" width="454"><figcaption></figcaption></figure></div>
 
 ### **Default Lookups**
 
@@ -19,7 +19,7 @@ There are **four default lookup groups** for invoices:
 3. **Supplier**
 4. **Tax Code**
 
-<figure><img src="../../../.gitbook/assets/fuzzy_data_config_2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fuzzy_data_config_2.png" alt="Lookup Master Data page listing the groups Company Data, Purchase Order Header, Supplier, Taxcode and Test with Default tags" width="563"><figcaption></figcaption></figure>
 
 Each group contains specific fields. Click on a group to **expand** it and view the fields. Default lookup groups are labeled with a **"Default" tag**.
 
@@ -55,14 +55,14 @@ There are **two ways** to create a lookup configuration:
 
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_3.png" alt="Lookup Master Data menu for Purchase Order Header open with Deactivate, Duplicate and View"><figcaption></figcaption></figure>
 
     * This copies all information and fields from an existing group.
     * You only need to provide a **new name**.
 2.  **Create a lookup from scratch**\
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_4.png" alt="Lookup Master Data page with the groups Company Data and Purchase Order Header expanded"><figcaption></figcaption></figure>
 
     * Click **"Create Lookup Configuration"**.
     * Fill in the required details:
@@ -83,7 +83,7 @@ Each group contains fields that can be **added, removed, edited, or viewed**, de
 *   Marked with a **"Default" tag**.\
 
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_5.png" alt="" width="251"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_5.png" alt="Lookup group field row with the field Supplier marked with a Default tag and a view icon" width="251"><figcaption></figcaption></figure></div>
 * **Can only be viewed**, not edited or deleted.
 
 #### **Non-Default Fields**
@@ -99,7 +99,7 @@ To add a new field within a group:
 1.  Click **"Create"** inside the relevant group.\
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_6.png" alt="Expanded Purchase Order Header group with the columns Lookup Field, Validation Field, Parent Field, Searchable, Auto Trigger and Actions"><figcaption></figcaption></figure>
 2. Provide the following details:
    * **Lookup Field** → Column name from the master data lookup table.
    * **Validation Field** → Corresponding DocBits field.

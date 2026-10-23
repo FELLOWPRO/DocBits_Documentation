@@ -1,6 +1,6 @@
 # Item Receiving Method
 
-<figure><img src="../../../../../.gitbook/assets/image (101).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (101).png" alt="Workflow card Item Receiving Method with an Any Items or All Items selector, the operator Equals and a receiving method value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,8 +1,8 @@
 # Any / All Unit Price is
 
-<figure><img src="../../../../../.gitbook/assets/image (350).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (350).png" alt="And card Compare with Purchase Order Any/All unit price is to purchase order with Any or All and operator dropdowns in version 3" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (349).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (349).png" alt="And card Compare with Purchase Order unit price is to purchase order in version 4 with operator, tolerance and Compare as dropdown" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

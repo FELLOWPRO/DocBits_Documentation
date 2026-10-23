@@ -1,6 +1,6 @@
 # Single Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50.png" alt="Workflow And card that checks the document against a single assigned user condition" width="552"><figcaption></figcaption></figure>
 
 **Purpose**
 

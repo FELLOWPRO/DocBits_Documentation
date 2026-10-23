@@ -1,8 +1,8 @@
 # Any / All Quantity
 
-<figure><img src="../../../../../.gitbook/assets/image (345).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (345).png" alt="And card Compare with Purchase Order quantity tolerance with Any or All and operator dropdowns in version 3" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (346).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (346).png" alt="And card Compare with Purchase Order quantity tolerance version 4 with Any or All, operator and comparison dropdowns" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

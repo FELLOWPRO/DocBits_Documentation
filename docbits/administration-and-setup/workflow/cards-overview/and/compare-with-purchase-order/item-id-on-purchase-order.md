@@ -1,6 +1,6 @@
 # Item Id on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (351).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (351).png" alt="Workflow card Item Id on Purchase Order with an Any or All selector and the operator Equals to compare item IDs" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

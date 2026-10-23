@@ -1,6 +1,6 @@
 # Send HTTPS request to
 
-<figure><img src="../../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="Then card Send HTTPS request to with placeholders for URL, headers, method, parameter and data" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 
@@ -46,7 +46,7 @@ The **"Send HTTPS Request"** workflow card enables users to send HTTPS requests 
 
 ## Example Card:
 
-<figure><img src="../../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="Send HTTPS request to example card with URL https://www.docbits.com/, headers Authorization Bearer example value, method Post and data approval status Approved" width="375"><figcaption></figcaption></figure>
 
 ## Conclusion:
 

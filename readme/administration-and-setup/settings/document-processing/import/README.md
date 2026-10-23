@@ -69,11 +69,11 @@ Los registros de conexión ayudan a investigar problemas de comunicación; los r
 
 El personaje y la voz son sintéticos. La grabación muestra la interfaz de pruebas real de DocBits con facturas de formación sintéticas.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/es.mp4" %}
 Bandeja de entrada y búsqueda de errores
 {% endembed %}
 
-[Ver con subtítulos y capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v1/es.html)
+[Ver con subtítulos y capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/es.html)
 
 Algunas etiquetas nativas pueden permanecer en otro idioma. Se conservan los identificadores técnicos de los campos.
 
@@ -83,7 +83,7 @@ Primero compruebo la dirección de recepción mostrada y el alcance. La direcci�
 
 Aquí restrinjo la entrada a nuestro remitente de prueba aprobado. Solo selecciono la asignación a una suborganización si pertenece al proceso previsto. Guardo la configuración y la abro de nuevo. El remitente permitido se ha mantenido; los correos de respuesta automática siguen desactivados en esta formación.
 
-<figure><img src="../../../../.gitbook/assets/admin-save-es-accounting-email-v1.png" alt="Remitente permitido guardado con las notificaciones desactivadas"><figcaption><p>Remitente permitido guardado con las notificaciones desactivadas</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-save-es-accounting-email-v2.png" alt="Remitente permitido guardado con las notificaciones desactivadas"><figcaption><p>Remitente permitido guardado con las notificaciones desactivadas</p></figcaption></figure>
 
 Para esta formación, se ha enviado un mensaje de prueba directamente al procesamiento de correos entrantes de DocBits. Esta prueba no confirma la entrega de correo externo. En el registro, compruebo el asunto, el remitente y el archivo adjunto importado. Después reviso el documento que se ha creado.
 
@@ -93,4 +93,4 @@ Una segunda prueba controlada proviene de un remitente no autorizado. En el regi
 
 En un caso real, primero aclaro si este remitente está siquiera autorizado. Un cambio aprobado en la lista de remitentes se guarda y se comprueba de nuevo. Después, verifico una nueva entrada de prueba única hasta el documento creado. Para errores técnicos, entrego el identificador de seguimiento y el mensaje de error concreto.
 
-<figure><img src="../../../../.gitbook/assets/admin-error-es-accounting-email-v1.png" alt="Importación fallida con adjunto, motivo e identificador de seguimiento"><figcaption><p>Importación fallida con adjunto, motivo e identificador de seguimiento</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-error-es-accounting-email-v2.png" alt="Importación fallida con adjunto, motivo e identificador de seguimiento"><figcaption><p>Importación fallida con adjunto, motivo e identificador de seguimiento</p></figcaption></figure>

@@ -1,6 +1,6 @@
 # Set Checkbox to
 
-<figure><img src="../../../../../.gitbook/assets/image (355).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (355).png" alt="Workflow Then card that sets a checkbox document field to a selected value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Export with alternate Export
 
-<figure><img src="../../../../../.gitbook/assets/image (362).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (362).png" alt="Workflow Then card that exports the document using an alternate export" width="563"><figcaption></figcaption></figure>
 
 ## When to use this card
 

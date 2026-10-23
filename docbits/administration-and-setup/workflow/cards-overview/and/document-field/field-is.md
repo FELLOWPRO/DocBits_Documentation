@@ -1,6 +1,6 @@
 # Field is
 
-<figure><img src="../../../../../.gitbook/assets/image (50).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (50).png" alt="Workflow And card that checks whether a document field has a selected value" width="563"><figcaption></figcaption></figure>
 
 ## When to use it
 

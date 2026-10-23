@@ -1,8 +1,8 @@
 # Compare Order Confirmation with Purchase order
 
-<figure><img src="../../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (69).png" alt="And card Compare with Purchase Order confirmation purchase order for a selected order data field such as quantity, discount or unit price" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (343).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (343).png" alt="And card Compare with Purchase Order confirmation purchase order in version 4 with a Compare as dropdown to choose the comparison entities" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

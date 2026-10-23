@@ -1,6 +1,6 @@
 # Change Entries with
 
-<figure><img src="../../../../../.gitbook/assets/image (369).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (369).png" alt="Workflow Then card that changes entries in a table column using a rule" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

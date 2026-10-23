@@ -1,6 +1,6 @@
 # Unit Price Combined with Fields
 
-<figure><img src="../../../../../.gitbook/assets/image (63).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (63).png" alt="Workflow card Unit Price Combined with Fields with a field name, comparison operator and a numeric value to compare against" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

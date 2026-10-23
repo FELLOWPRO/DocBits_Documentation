@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47).png" alt="Workflow And card that sends an HTTPS request as part of the workflow" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

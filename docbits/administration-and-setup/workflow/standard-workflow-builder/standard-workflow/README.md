@@ -1,6 +1,6 @@
 # Workflow Examples
 
-<figure><img src="../../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1).svg" alt="AP workflow flowchart covering supplier-based approval, Finance and Buyer Review in PO Matching, Infor IDM LN routing and exports"><figcaption></figcaption></figure>
 
 #### Overview of Workflow Components:
 

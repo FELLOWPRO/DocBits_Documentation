@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User
 
-<figure><img src="../../../../../.gitbook/assets/image (363).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (363).png" alt="Workflow Then card that creates a new task and assigns it to a selected user" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

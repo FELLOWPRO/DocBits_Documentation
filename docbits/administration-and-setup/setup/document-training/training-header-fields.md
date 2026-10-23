@@ -20,6 +20,6 @@ You can help train DocBits to recognize these fields by manually identifying the
 Repeat this process for all required fields.\
 Once all necessary fields have been populated, **click "Save Rules"** to store the training. This ensures that DocBits learns where to find each piece of information for similar documents in the future.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/header_field_training_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/header_field_training_2.png" alt="Header field training on Apple_invoice.pdf with Company Name, Company Street and Company PLZ highlighted on the document" width="375"><figcaption></figcaption></figure></div>
 
 After saving training, test further documents from the same supplier. Export readiness also depends on validation and the configured workflow.

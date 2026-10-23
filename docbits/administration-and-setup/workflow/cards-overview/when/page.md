@@ -1,6 +1,6 @@
 # Document Type Operation
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt="Workflow card Document Type with the operator Is and a document type selector with types such as Invoice and Credit Note"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

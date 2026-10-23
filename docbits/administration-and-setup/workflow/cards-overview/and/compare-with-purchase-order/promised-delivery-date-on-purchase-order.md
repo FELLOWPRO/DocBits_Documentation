@@ -1,6 +1,6 @@
 # Promised Delivery Date on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (68).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (68).png" alt="Workflow card Promised Delivery Date on Purchase Order with a date comparison operator and a tolerance value in days" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

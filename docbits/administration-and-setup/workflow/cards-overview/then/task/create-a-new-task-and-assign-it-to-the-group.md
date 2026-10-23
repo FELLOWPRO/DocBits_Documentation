@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the group
 
-<figure><img src="../../../../../.gitbook/assets/image (365).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (365).png" alt="Workflow Then card that creates a new task and assigns it to a group" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

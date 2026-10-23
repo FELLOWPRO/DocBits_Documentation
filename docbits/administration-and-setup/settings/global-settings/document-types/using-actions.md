@@ -8,7 +8,7 @@ Here is a guide on how to properly use the "Copy" and "Delete" actions for effic
 * Select the subtype you want to copy, click "Copy" and enter a new name for the copied subtype if necessary.
 * Confirm the action and the system will create a copy of the selected sub-type with all existing settings, fields, layouts and scripts.
 
-<figure><img src="../../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (194).png" alt="Clone Sub Document Type dialog with Duplicate From KOSTENRECHNUNG_copy and a CANCEL button"><figcaption></figcaption></figure>
 
 ## Deleting a sub-type:
 

@@ -1,6 +1,6 @@
 # Today
 
-<figure><img src="../../../../../.gitbook/assets/image (49).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (49).png" alt="Workflow And card that checks whether the document date or time is today" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

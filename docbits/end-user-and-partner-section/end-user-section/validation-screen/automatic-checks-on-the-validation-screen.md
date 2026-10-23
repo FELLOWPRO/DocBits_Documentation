@@ -6,7 +6,7 @@ By default, specific fields in the field validation process are automatically ch
 
 You can always verify the formula used by hovering over the info icon.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1 (1).png" alt="Validation screen with fields Total net amount 77,91, Total amount 84,20 and Currency EUR plus an EXTRACTED TABLE with a Total net amount column"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Note:**</mark> The info icon is only visible if a value has been extracted for the corresponding field.
 

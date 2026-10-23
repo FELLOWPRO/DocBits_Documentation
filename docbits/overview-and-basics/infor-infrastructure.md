@@ -20,10 +20,10 @@ We only allow HTTPS-secured connections for communicating with our servers. This
 
 ### Infor Cloud
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt="Diagram of the DocBits to Infor cloud setup with a browser behind a firewall on port 443, a Space S3 store and a PostgreSQL database"><figcaption></figcaption></figure>
 
 ### Infor On-Prem
 
 Flexibility is key, and we offer both cloud and on-premise solutions. With our on-premise option, there’s no need to open any ports, ensuring that your network security remains uncompromised. Whether you’re in the cloud or keeping things in-house, we’ve got you covered.
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt="Diagram of the DocBits on-premise setup with scanner and browser behind a local firewall connecting to Local File Storage, Space S3 and PostgreSQL"><figcaption></figcaption></figure>

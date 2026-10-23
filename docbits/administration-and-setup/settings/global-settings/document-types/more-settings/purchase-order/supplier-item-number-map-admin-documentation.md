@@ -6,7 +6,7 @@
 
 As an admin, you have the ability to view and manage the mappings between internal item numbers and supplier item numbers. This feature ensures that discrepancies between your system and your suppliers' systems are handled efficiently. You can review, edit, and delete incorrect mappings to maintain data accuracy.
 
-<figure><img src="../../../../../../.gitbook/assets/supplier_item_number_map_interface.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/supplier_item_number_map_interface.png" alt="Supplier Item Number Map table with the columns SUPPLIER ID, ITEM_NUMBER, SUPPLIER ITEM NUMBER and ACTION"><figcaption></figcaption></figure>
 
 **Accessing the Supplier Item Number Map**
 

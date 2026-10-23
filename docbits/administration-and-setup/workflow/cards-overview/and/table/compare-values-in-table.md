@@ -1,6 +1,6 @@
 # Compare values in table
 
-<figure><img src="../../../../../.gitbook/assets/image (102).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (102).png" alt="Workflow card Compare values in table with two column selectors and a comparison operator such as Equals or Greater Than" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Document Status Condition List
 
-<figure><img src="../../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605.png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605.png" alt="Workflow And card that checks the document status against a list of statuses" width="521"><figcaption></figcaption></figure>
 
 **Purpose**
 

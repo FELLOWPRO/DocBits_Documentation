@@ -1,6 +1,6 @@
 # Change Status to
 
-<figure><img src="../../../../../.gitbook/assets/image (359).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (359).png" alt="Workflow Then card that changes the document status to a value chosen on the card" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

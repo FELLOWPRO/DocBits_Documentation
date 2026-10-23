@@ -1,6 +1,6 @@
 # Assign document to recipient
 
-<figure><img src="../../../../../.gitbook/assets/image (374).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (374).png" alt="Workflow Then card that assigns the document to the recipient of the document" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

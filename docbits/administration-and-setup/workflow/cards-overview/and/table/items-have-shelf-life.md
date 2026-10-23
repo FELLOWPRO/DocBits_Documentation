@@ -1,6 +1,6 @@
 # Items Have Shelf Life
 
-<figure><img src="../../../../../.gitbook/assets/image (98).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (98).png" alt="Workflow And card that checks whether table items are within their shelf life" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

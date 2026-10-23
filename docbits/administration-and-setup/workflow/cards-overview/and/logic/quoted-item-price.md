@@ -1,6 +1,6 @@
 # Quoted Item Price
 
-<figure><img src="../../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (46).png" alt="Workflow And card that checks the quoted item price against a value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # If Country in Field
 
-<figure><img src="../../../../../.gitbook/assets/image (55).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (55).png" alt="Workflow And card that checks whether the country in a field matches a value" width="563"><figcaption></figcaption></figure>
 
 Intended use: an additional processing step depends on a country group. The example below describes a rule for membership of the European Union.
 

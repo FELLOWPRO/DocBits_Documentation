@@ -14,7 +14,7 @@ To access the OCR settings:
 
 *   Navigate to: **Settings** → **Document Processing** → **OCR Settings**
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt="DocBits Settings menu with Document Processing open and OCR Settings selected among Import, Rule Management and Export"><figcaption></figcaption></figure>
 
 ## OCR Quality
 
@@ -29,7 +29,7 @@ If a document does not meet the defined quality level, DocBits provides three op
 * **Throw Error**\
   Document processing will stop entirely, and an error message will be displayed, indicating that the document did not meet the required quality threshold.
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt="OCR Quality settings page with the quality slider and Run again after confirmation selected below it"><figcaption></figcaption></figure>
 
 ## General OCR Settings
 
@@ -44,7 +44,7 @@ If a document does not meet the defined quality level, DocBits provides three op
     * You are not achieving the desired results with the currently selected version.
     * You are troubleshooting issues related to OCR performance or accuracy.
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt="OCR Settings page with the AI OCR Version dropdown open showing versions 1.2, 2.0 and 2.1"><figcaption></figcaption></figure>
 
 ## OCR Settings for Tables
 

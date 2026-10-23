@@ -24,27 +24,27 @@ In order to add your own master data into DocBits, navigate to Master Data Looku
 
 Click on “Custom Master Data”
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="Master Data Lookup settings page with the lookups Additional charge Costing Element, Purchase order, Purchase order Header and Supplier" width="375"><figcaption></figcaption></figure></div>
 
 You then have the option to create a Template or an Endpoint.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="Custom Master Data panel with the buttons Create Template and Create Endpoint" width="375"><figcaption></figcaption></figure></div>
 
 #### Create a Template <a href="#create-a-template" id="create-a-template"></a>
 
 The first step is to choose between using your organizations ION API file or to use OAuth2 and enter the necessary data.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="Master Data Lookup wizard step Select Preset with the question What API do you want to use and the ION API and OAUTH2 options" width="375"><figcaption></figcaption></figure></div>
 
 Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="Master Data Lookup wizard step Configure Preset with Preset Name, Application Type, GET URL field and the PARAMS, HEADERS, AUTHORIZATION and BODY tabs" width="375"><figcaption></figcaption></figure></div>
 
 You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
 
 Lastly, you will need to map the data to the columns you would like to create like in the example below.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="Master Data Lookup wizard with Select Table Columns, a JSON response on the left and the Column Name, Spaltenwert Name and Test Extraction mapping columns" width="375"><figcaption></figcaption></figure></div>
 
 After you have done this, click on Done for your new master data to be created and populated .
 
@@ -52,16 +52,16 @@ After you have done this, click on Done for your new master data to be created a
 
 The first step is to choose between using your organizations ION API file, to use OAuth2 or to leave this blank and enter the necessary data.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="Master Data Lookup endpoint wizard step Select Preset with Choose a preset for your endpoint and the BLANK, ION API and OAUTH2 options" width="375"><figcaption></figcaption></figure></div>
 
 Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="Master Data Lookup wizard step Configure Preset with Preset Name, Application Type, GET URL field and the PARAMS, HEADERS, AUTHORIZATION and BODY tabs" width="375"><figcaption></figcaption></figure></div>
 
 You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
 
 Lastly, you will need to map the data to the columns you would like to create like in the example below.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="Master Data Lookup wizard with Select Table Columns, a JSON response on the left and the Column Name, Spaltenwert Name and Test Extraction mapping columns" width="375"><figcaption></figcaption></figure></div>
 
 After you have done this, click on Done for your new master data to be created and populated .

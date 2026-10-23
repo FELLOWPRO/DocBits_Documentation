@@ -24,7 +24,7 @@ The `{{magic_link}}` is a placeholder that is dynamically replaced with a unique
    * The editor allows you to modify both the HTML code and the visual design of the email.
    * You can switch between visual editing and code editing using the provided tabs.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Edit Template page for the Supplier Invitation Email with Name, Subject, Sender Name and Magic Link fields and HTML source"><figcaption></figcaption></figure>
 
 #### Defining `{{magic_link}}` as a Link
 

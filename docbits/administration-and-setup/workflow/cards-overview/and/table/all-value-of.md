@@ -1,6 +1,6 @@
 # All Value of
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="Workflow card All Value of with a table and column selector, the operator Matches Regex Pattern and a regex value field" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

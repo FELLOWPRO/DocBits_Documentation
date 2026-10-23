@@ -1,6 +1,6 @@
 # Text in Field
 
-<figure><img src="../../../../../.gitbook/assets/image (52).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (52).png" alt="Workflow And card that checks the text in a document field against a value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -4,7 +4,7 @@ hidden: true
 
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt="Workflow card Supplier on Invoice with the operator Is or Is not for comparing invoice supplier with order confirmation supplier"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

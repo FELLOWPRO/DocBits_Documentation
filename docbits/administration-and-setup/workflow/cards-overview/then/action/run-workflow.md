@@ -1,6 +1,6 @@
 # Run Workflow
 
-<figure><img src="../../../../../.gitbook/assets/image (380).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (380).png" alt="Workflow Then card that starts another workflow selected on the card" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

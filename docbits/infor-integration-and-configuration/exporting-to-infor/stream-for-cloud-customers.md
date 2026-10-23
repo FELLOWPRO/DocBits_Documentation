@@ -4,8 +4,8 @@
 
 Go to _Settings → Module → BOD Connection Stream_
 
-<figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (317).png" alt="Module settings entry BOD Connection Stream with its toggle switch enabled"><figcaption></figcaption></figure>
 
 Turning this on will automatically generate a Stream Name t. Now you need to head over to Infor _→ OS → ION → Data Flows._ Here you need to set up a new data flow. It should look something like the following:
 
-<figure><img src="../../.gitbook/assets/image (319).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (319).png" alt="Infor ION Data Flow diagram showing the DocBits stream connection on the left flowing into ION and ending at an End node"><figcaption></figcaption></figure>

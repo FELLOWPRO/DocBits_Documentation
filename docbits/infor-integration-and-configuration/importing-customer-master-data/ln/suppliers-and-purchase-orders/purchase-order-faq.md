@@ -7,7 +7,7 @@ Navigate to the _BOD Implementation Registration (bobod1100m000)_ session in LN.
 \
 
 
-<figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO.png" alt="LN session BOD Implementation Registration (bobod1100m000) showing BOD implementations with Public, Standard and Staging checkboxes"><figcaption></figcaption></figure>
 
 **How can I identify the specific BOD implementation I need to verify?**
 

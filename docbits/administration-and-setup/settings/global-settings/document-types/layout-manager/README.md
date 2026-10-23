@@ -1,6 +1,6 @@
 # Layout Manager
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.46.24.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.46.24.png" alt="Layout Manager for INVOICE DETAIL with Elements, Properties and Groups panels and Payment Details fields"><figcaption></figcaption></figure>
 
 #### Overview
 

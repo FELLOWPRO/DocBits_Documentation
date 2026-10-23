@@ -1,6 +1,6 @@
 # Document Operator for Sub-Organizations
 
-<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="Workflow And card that applies a document operator for sub-organizations" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

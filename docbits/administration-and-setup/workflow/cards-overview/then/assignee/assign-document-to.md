@@ -1,6 +1,6 @@
 # Assign document to
 
-<figure><img src="../../../../../.gitbook/assets/image (379).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (379).png" alt="Workflow Then card that assigns the document to a user or group chosen on the card" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

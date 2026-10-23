@@ -1,6 +1,6 @@
 # Module active
 
-<figure><img src="../../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (44).png" alt="Workflow And card that checks whether a module is active before continuing" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

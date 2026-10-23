@@ -1,6 +1,6 @@
 # Document Type
 
-<figure><img src="../../../../../.gitbook/assets/image (58).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58).png" alt="Workflow And card that checks whether the document has a selected document type" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

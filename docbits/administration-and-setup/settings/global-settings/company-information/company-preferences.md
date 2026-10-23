@@ -17,7 +17,7 @@ To access the **Company Preferences**:
 
 1.  Navigate to **Settings** → **Global Settings** → **Company Information**
 
-    <figure><img src="../../../../.gitbook/assets/settings_company_information.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/settings_company_information.png" alt="Company Information settings page in DocBits with the sections Company Information, Company Preferences, App-Color, Subscription Plan and My Contact"><figcaption></figcaption></figure>
 2.  Scroll to the **Company Preferences** section
 
     <figure><img src="../../../../.gitbook/assets/prior-i003-en.png" alt="Company preferences and amount/date formats."><figcaption><p>Company preferences and amount/date formats.</p></figcaption></figure>
@@ -44,7 +44,7 @@ Select the format that best fits your organizational or regional requirements.
 
 After making your changes, click the **Save** button in the bottom-right corner to apply them.
 
-<figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt="Company Preferences section with the New Version Info Dialog toggle on the Company Information settings page"><figcaption></figcaption></figure>
 
 ## Amount Formatting
 
@@ -55,11 +55,11 @@ This setting allows you to define how amounts are formatted throughout the appli
 * `1,000.00` (US format)
 * `1.000,00` (European format)
 
-<figure><img src="../../../../.gitbook/assets/company_preferences_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_preferences_3.png" alt="Company Preferences section with the Amount Formatting field and the language selector set to Deutsch"><figcaption></figcaption></figure>
 
 After making your changes, click the **Save** button in the bottom-right corner to apply them.
 
-<figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt="Company Preferences section with the New Version Info Dialog toggle on the Company Information settings page"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Note**</mark>: This setting controls how amounts are displayed throughout **DocBits**. The **amount format** in the **Field Validation screen** is determined by the document’s **origin** setting.
 
@@ -67,10 +67,10 @@ After making your changes, click the **Save** button in the bottom-right corner 
 
 This setting allows you to enable a popup notification when a new version of the application is released. When activated, a dialog will automatically appear if an update is available. To apply the update:
 
-<figure><img src="../../../../.gitbook/assets/company_preferences_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_preferences_4.png" alt="Company Preferences section with two format fields and the New Version Info Dialog checkbox below them"><figcaption></figcaption></figure>
 
 Click **Refresh to Close** in the dialog window. **DocBits** will reload and open with the most recent version. This ensures users are always working with the latest features, improvements, and bug fixes.
 
 After toggling the setting on or off, click the **Save** button in the bottom-right corner to apply your changes.
 
-<figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_preferences_5.png" alt="Company Preferences section with the New Version Info Dialog toggle on the Company Information settings page"><figcaption></figcaption></figure>

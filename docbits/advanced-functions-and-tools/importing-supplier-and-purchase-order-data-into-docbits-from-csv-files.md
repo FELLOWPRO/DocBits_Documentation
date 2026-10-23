@@ -140,7 +140,7 @@ To import data, follow these steps:
 1. Visit: [https://api.docbits.com/](https://api.docbits.com/)
 2.  Click the **"Authorize"** button.
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_1.png" alt="DocBits API swagger page with the default list expanded and the healthz Healthz endpoint"><figcaption></figcaption></figure>
 3.  Enter the API-Key and click **"Authorize"**
 
     * The API-Key can be found in DocBits in Settings -> Global Settings -> Integration&#x20;
@@ -148,20 +148,20 @@ To import data, follow these steps:
 
 
 
-    <figure><img src="../.gitbook/assets/import_csv_api.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_api.png" alt="DocBits Settings page with Global Settings open showing Company Information, Groups Users and Permissions and Integration"><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="Available authorizations dialog with the APIKeyHeader apiKey entry and the X-API-KEY header value field" width="563"><figcaption></figcaption></figure>
 
 
 
 1. Press **CTRL + F** (or **CMD + F** on Mac) to open the search function, and search for `/master_data_lookup/import_data`.
 2.  Click on the request to view its details, then click on "**Try it out"** to proceed.
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_3.png" alt="Browser find bar opened over the DocBits API page to search for the import_data endpoint"><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_6.png" alt="Import Data endpoint page with the Try it out button and the multipart form-data request body fields"><figcaption></figcaption></figure>
 3.  You can now enter the required parameters in the Request Body.\
 
 
@@ -181,7 +181,7 @@ To import data, follow these steps:
         3. Set the `delimiter` parameter in your import request to this identified character (either `,` or `;`). Using the wrong delimiter will prevent the data from being parsed correctly and will result in a failed import.
     * **on\_conflict & auto\_generate\_id:** The functionality for handling data conflicts (`on_conflict`) and automatically generating IDs (`auto_generate_id`) is currently **not implemented** for these data types.
 
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_4.png" alt="Import Data request body with sub_org_id, data_type, file, delimiter, replace_all, on_conflict and auto_generate_id fields"><figcaption></figcaption></figure>
 4.  If you have verified that all the information is correct, you can initiate the import process by clicking the **"Execute"** button.
 
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_5.png" alt="Import Data request filled in with data_type supplier, the file supplier.csv and on_conflict set to REPLACE"><figcaption></figcaption></figure>

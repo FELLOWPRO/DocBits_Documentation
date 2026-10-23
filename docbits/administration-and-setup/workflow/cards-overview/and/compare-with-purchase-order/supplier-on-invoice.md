@@ -1,6 +1,6 @@
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/image (352).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (352).png" alt="Workflow card Supplier on Invoice with the operator Is or Is Not for comparing invoice supplier with purchase order supplier" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

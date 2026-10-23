@@ -8,16 +8,16 @@ This page explains how to activate and use the **Supplier Portal**, as well as w
 
 1.  Go to **Settings → Document Processing → Module**.
 
-    <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_module.png" alt="DocBits Settings page with the Document Processing menu open showing Module, Export, OCR Settings and Classification and Extraction entries"><figcaption></figcaption></figure>
 2.  In the **Shipping & Supplier** section, enable the **Supplier Portal** option.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt="DocBits Modules settings page with the Shipping &amp; Supplier section showing the Supplier Portal option"><figcaption></figcaption></figure>
 
 ## Supplier Settings
 
 Once the **Supplier Portal** feature is enabled, a new **Supplier Settings** section will appear at the bottom of the **Settings** menu.
 
-<figure><img src="../../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (453).png" alt="DocBits Settings menu showing the Supplier Settings section with Supplier General Settings, Email Templates, Supplier Layout, Export Configuration and Supplier Permissions"><figcaption></figcaption></figure>
 
 [**Supplier General Settings**](../../settings/supplier-setting/supplier-general-settings.md): Here, you can customize the **Supplier Portal** by uploading your company logo—displayed in the header of all email templates—and by managing legal documents such as the Terms of Use and Privacy Policy.
 
@@ -35,7 +35,7 @@ A detailed guide to all Supplier Settings can be found [here](../../settings/sup
 
 You can access the **Supplier Dashboard** from the left-hand menu, as shown below.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt="Supplier Dashboard in DocBits with the counts All Supplier, Pending Approval and Pending Registration and a table of Test Supplier rows"><figcaption></figcaption></figure>
 
 All of your created Suppliers are displayed here.
 
@@ -49,11 +49,11 @@ You can search for suppliers by N**ame** or N**umber**, or use the advanced filt
 
 You can also specify how many suppliers should be displayed per page.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt="Supplier Dashboard filter panel with Supplier Groups, Status, Created On, Supplier Per Page and a Clear Filters button"><figcaption></figcaption></figure>
 
 Additionally, you can quickly filter by the statuses **Pending Approval** or **Pending Registration** by clicking the corresponding category to the left of the filter ba&#x72;**.**
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt="Supplier Dashboard with the categories All Supplier, Pending Approval and Pending Registration to the left of the search bar"><figcaption></figcaption></figure>
 
 ## Supplier Details (internal view)
 
@@ -79,26 +79,26 @@ To the right of the search bar, you'll find several tools that help you interact
 
 ### Refresh table <a href="#refresh-table" id="refresh-table"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt="Supplier Dashboard table in DocBits with the refresh table button in the top toolbar"><figcaption></figcaption></figure>
 
 Click this button to refresh the dashboard and load the most up-to-date data and statuses.
 
 ### Set table columns for organization <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt="Supplier Dashboard table in DocBits with the set table columns button in the top toolbar"><figcaption></figcaption></figure>
 
 Click this button to open a menu where you can manage the visibility of columns in the purchase order table. Use the checkboxes and arrow buttons to move columns between the visible and hidden sections. You can also reorder columns by dragging and dropping the column names. Click **Done** to save your changes.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt="Columns settings menu for the supplier table with Hidden columns such as Supplier Number, Status and Created On plus Cancel and Done buttons"><figcaption></figcaption></figure>
 
 ### Analytics <a href="#analytics" id="analytics"></a>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt="Supplier Dashboard in DocBits with the tabs All Supplier, Pending Approval, Pending Registration and the supplier table with the column Supplier Name and Status"><figcaption></figcaption></figure>
 
 Clicking this button will open a new section showing how many suppliers are set to expire and when.\
 Click on any category to apply a filter and view only those suppliers.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt="Supplier Dashboard analytics section with Expired (13) and Expires in counts for 1 Month, 6 Month and 1 Year"><figcaption></figcaption></figure>
 
 ## Create Supplier and Send Registration Email
 
@@ -106,10 +106,10 @@ Click on any category to apply a filter and view only those suppliers.
 
 1.  Click the plus (+) icon in the top right corner.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt="Supplier Dashboard in DocBits with the tabs All Supplier, Pending Approval, Pending Registration and the supplier table with the column Supplier Name and Status"><figcaption></figcaption></figure>
 2.  Fill in the required fields, then click **Save**.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt="Add Supplier form in DocBits with Supplier Group, Supplier Name, Supplier Responder and Payment Terms fields plus Cancel and Save buttons"><figcaption></figcaption></figure>
 3. The supplier will automatically receive an email with a link to create their account.
 
 ### **To send a registration email to an existing supplier:**
@@ -118,11 +118,11 @@ Click on any category to apply a filter and view only those suppliers.
 2. Click the three-dot menu in the **Actions** column.
 3.  Select **Magic Link**.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt="Supplier Dashboard in DocBits with the row menu open showing the Magic Link option"><figcaption></figcaption></figure>
 4. Verify the supplier’s details.
 5.  Click **Send** to email the registration link.
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt="Magic Link confirmation panel in DocBits with Supplier Group, Supplier Name and Supplier Responder details plus Cancel and Send buttons"><figcaption></figcaption></figure>
 
 ## How Does the Registration Process Work for the Supplier?
 

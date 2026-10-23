@@ -13,11 +13,11 @@
      * Search for `"ci"` within the file.
      * Copy the value inside the quotation marks (without the quotation marks).
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_1.png" alt="Infor Application Connection Point page for IMS via API Gateway with name DocBits_Export, description and ION API Client ID fields"><figcaption></figcaption></figure>
 
 4. Under **Documents**, add `Sync.CaptureDocument`.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_2.png" alt="Connection Point page DocBits_Export with the Documents section listing Sync.CaptureDocument set to Send from Application"><figcaption></figcaption></figure>
 
 5. Click **Save** to finalize the configuration.
 
@@ -29,11 +29,11 @@
 2. Navigate to **Infor** > **OS** > **ION** > **Connect** > **Mappings**.
 3. Click **Import** and select the appropriate mapping file for **M3**.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_3.png" alt="Add button in the toolbar of the Infor ION Connect Mappings page"><figcaption></figcaption></figure>
 
 4. Once the files are imported, approve the mappings to activate them.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_4.png" alt="Mapping overview in ION Connect showing the approved mapping from Sync.CaptureDocument to ProcessSupplierInvoice"><figcaption></figcaption></figure>
 
 ## Step 3: Create the Data Flow
 
@@ -49,12 +49,12 @@
    * **Name**: `DocBits` or `DocBits-Export`.
 2. Click **Add** and select the **Connection Point** created in Step 1.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_5.png" alt="Data Flow editor with the node palette open and the Application Activity Properties panel naming the node DocBits-Dev-Demo-Export"><figcaption></figcaption></figure>
 
 3. Click on the **Document Icon** next to the application node.
    * Click **Add** and select `Sync.CaptureDocument`.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_6.png" alt="Data Flow editor showing the Documents list of the application node with Sync.CaptureDocument added"><figcaption></figcaption></figure>
 
 #### Mapping Node
 
@@ -62,7 +62,7 @@
    * **Name**: `Capt2process`.
    * **Mapping**: `CaptureDocument_to_ProcessSupplierInvoice`.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_7.png" alt="Data Flow editor with the Mapping Properties panel showing the name and the selected mapping for the node"><figcaption></figcaption></figure>
 
 #### Application Node
 
@@ -70,12 +70,12 @@
    * **Name**: `M3`.
 2. Click **Add** and select the **M3 Application** from the customer.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_8.png" alt="Data Flow editor with the Application Activity Properties panel showing the M3 application node named M3 BODs"><figcaption></figcaption></figure>
 
 3. Click on the **Document Icon** next to the application node.
    * Click **Add** and select `Acknowledge.SupplierInvoice`.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_9.png" alt="Data Flow editor showing the Documents list of the M3 application node with Acknowledge.SupplierInvoice added"><figcaption></figcaption></figure>
 
 #### API Node
 
@@ -84,14 +84,14 @@
    * **ION API Connector**: `DocBits_Import`.
    * If `DocBits_Import` does not exist, refer to **Step 1** and **Step 2** of the Import from M3 documentation to create the connection point.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_10.png" alt="Data Flow editor with the ION API Activity Properties panel naming the connector DocBits-Dev-Demo-Import for the API node"><figcaption></figcaption></figure>
 
 #### Save and Activate the Flow
 
 * Once all nodes are added and configured, click **Save**.
 * Activate the flow to complete the setup.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_11.png" alt="Data Flow editor with the connection point panel open showing the flow name DocBits_Demo_to_M3"><figcaption></figcaption></figure>
 
 ## Step 4: Configure Export in DocBits
 
@@ -100,7 +100,7 @@
 1. Open **DocBits**.
 2.  Navigate to **Settings > Document Processing > Export**.
 
-    <figure><img src="../../../.gitbook/assets/settings_export.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_export.png" alt="Settings page in DocBits with the Document Processing navigation open listing Import, OCR Settings, Classification and Extraction and Module"><figcaption></figcaption></figure>
 3. Create a new export:
    * **Select**: **Infor IDM + ION BOD**.
    * **Title**: Choose a meaningful title.
@@ -116,7 +116,7 @@
 1. Open **DocBits**.
 2.  Navigate to **Settings > Document Processing > Export**.
 
-    <figure><img src="../../../.gitbook/assets/settings_export.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_export.png" alt="Settings page in DocBits with the Document Processing navigation open listing Import, OCR Settings, Classification and Extraction and Module"><figcaption></figcaption></figure>
 3. Create a new export:
    * **Select**: **Infor IDM + M3 (API)**.
    * **Title**: Choose a meaningful title.
@@ -132,7 +132,7 @@
 1. Open **DocBits**.
 2.  Navigate to **Settings > Document Processing > Export**.
 
-    <figure><img src="../../../.gitbook/assets/settings_export.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_export.png" alt="Settings page in DocBits with the Document Processing navigation open listing Import, OCR Settings, Classification and Extraction and Module"><figcaption></figcaption></figure>
 3. Create a new export:
    * **Select**: **Infor IDM + M3 (API)**.
    * **Title**: Choose a meaningful title.

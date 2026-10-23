@@ -1,6 +1,6 @@
 # Docfield is
 
-<figure><img src="../../../../../.gitbook/assets/image (51).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (51).png" alt="Workflow And card that checks whether a document field has a selected value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

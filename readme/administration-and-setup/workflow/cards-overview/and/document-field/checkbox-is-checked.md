@@ -1,6 +1,6 @@
 # 复选框已选中
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-zh-cn.png" alt="复选框已选中, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 ## **用途：**
 

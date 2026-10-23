@@ -1,6 +1,6 @@
 # 字段中的国家是否属于列表
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-zh-cn.png" alt="字段中的国家是否属于列表, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 当额外处理步骤需要适用于指定国家的文档时，可使用此条件，例如德国和法国。此卡将文档字段中的国家值与配置的国家列表进行比较。
 

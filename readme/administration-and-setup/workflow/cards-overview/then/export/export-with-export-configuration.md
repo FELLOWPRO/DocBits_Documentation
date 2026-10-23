@@ -1,6 +1,12 @@
 # 使用导出配置导出
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_v1-zh-cn.png" alt="使用导出配置导出, 版本 1" width="634"><figcaption><p>版本 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_v3-zh-cn.png" alt="使用导出配置导出, 版本 3" width="634"><figcaption><p>版本 3</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-zh-cn.png" alt="将文档导出队列（导出配置：…）用于运行结束时的最终导出。忽略待处理任务：…。 — 版本 2" width="634"><figcaption><p>将文档导出队列（导出配置：…）用于运行结束时的最终导出。忽略待处理任务：…。 — 版本 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-zh-cn.png" alt="将文档导出队列（导出配置：…）添加到队列中，以便在运行结束时进行最终导出。忽略待处理任务：…。导出后的状态：…。 — 版本 3" width="634"><figcaption><p>将文档导出队列（导出配置：…）添加到队列中，以便在运行结束时进行最终导出。忽略待处理任务：…。导出后的状态：…。 — 版本 3</p></figcaption></figure>
 
 ## **目的：**
 

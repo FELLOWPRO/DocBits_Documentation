@@ -46,4 +46,4 @@ Este documento describe el flujo de trabajo para pedir materiales a los proveedo
 * Asegúrese de que todos los documentos estén verificados y archivados para su registro.
 * Las discrepancias en los detalles del pedido o de la factura deben resolverse con prontitud para evitar retrasos.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed.svg" alt="Diagrama de carriles del flujo de trabajo de pedido y procesamiento de material a través de Supplier, DocBits, Purchasing-INFOR, IDM y FIBU"><figcaption></figcaption></figure>

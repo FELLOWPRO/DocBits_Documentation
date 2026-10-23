@@ -4,14 +4,14 @@
 
 Los ajustes del Panel están diseñados para ayudar a los administradores a controlar la presentación de datos y la interacción dentro del panel de DocBits. Estos ajustes determinan qué información está disponible de inmediato al iniciar sesión, asegurando que los usuarios tengan acceso rápido a los datos más relevantes para sus tareas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
+![Lista de documentos en italiano con el rango de nombres de documento de Delivery Note, Advance Ship Notice y Purchase Order y 2373 documentos en total](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
 
 ## Accediendo a los Ajustes del Panel
 
 Para acceder a los ajustes del panel, navega a:\
 **Ajustes → Ajustes globales → Panel**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
+![Configuración general del dashboard en italiano con las opciones de restablecimiento de filtros tras la carga de documentos, el reinicio y la exportación](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
 
 ## **General**
 
@@ -20,13 +20,13 @@ Para acceder a los ajustes del panel, navega a:\
   * **Cargar automáticamente el tablero de instrumentos**: Controla si el panel debe cargar automáticamente los datos al acceder el usuario, lo que puede ayudar a reducir los tiempos de carga y mejorar la experiencia del usuario al cargar datos solo cuando sea necesario.
   *   **Exportar datos del cuadro de mandos**: Esta función añade un nuevo botón de **Exportar** a la barra de herramientas del panel, permitiéndote exportar la vista actual del panel como un archivo **.csv** o **.xlsx**.
 
-      ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
+      ![Sección General de la configuración del dashboard con los interruptores Reset filters y las opciones de Dashboard data Auto refresh dashboard on document updates y Export Dashboard Data](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
 
 ## **Historial de exportaciones**
 
 En el **Historial de exportaciones**, verás una tabla que lista todas las exportaciones pasadas junto con información clave sobre cada solicitud.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
+![Sección Export History en la página de configuración del Dashboard con las columnas Email, Status, Requested At, Completed At, Format y Filters Used](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
 
 Los siguientes detalles están incluidos:
 
@@ -49,19 +49,19 @@ Los siguientes detalles están incluidos:
   * **Solo Admin y Asignado**: Solo los usuarios con privilegios de Admin y el usuario asignado pueden reiniciar el documento.
   * **Todos los Usuarios**: Todos los usuarios que han recibido los [permisos](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) necesarios pueden reiniciar documentos.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
+![Sección Action en la página de configuración del dashboard con Assign to y Restart configurados ambos en Only for Admin](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtros**
 
 * **Estilo de filtro de estado**: Determina el estilo de presentación de los filtros de estado, que se puede establecer como predeterminado o personalizado según el enfoque operativo de los usuarios.
 * **Filtro de estado personalizado**: Permite la creación y aplicación de filtros personalizados que pueden dirigirse a estados de documentos específicos como "Nuevo", "Validando" o "Exportando". Esto permite a los usuarios acceder rápidamente a documentos en etapas específicas de procesamiento.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
+![Página de configuración del dashboard que muestra la sección Filters con Status filter style y Custom status filter más la sección Advance Shipment Dashboard](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
 
 ## Cuadro de mandos de envíos anticipados
 
 * **Visibilidad de pedidos entregados**: Esta función permite al usuario especificar la duración durante la cual los pedidos entregados serán visibles.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
+![Sección Advance Shipment Dashboard en la página de configuración del dashboard con Delivered Orders Visibility establecido en 14 Days](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
 
 Estos ajustes del panel son cruciales para garantizar que la plataforma DocBits sea lo más receptiva y útil posible, proporcionando a los usuarios una herramienta poderosa para monitorear y gestionar actividades de procesamiento de documentos directamente desde el panel.

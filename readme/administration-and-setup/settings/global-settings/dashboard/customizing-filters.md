@@ -2,7 +2,7 @@
 
 Si estás buscando uno o más documentos específicos, las siguientes opciones están disponibles para ti. Dentro de la barra de búsqueda, te hemos proporcionado varias herramientas para ayudarte a encontrar el documento que buscas. Para acceder a ellas, selecciona el siguiente ícono.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
+![Dashboard de DocBits con la barra de búsqueda All documents y el icono de filtro junto a Upload](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
 
 Usar filtros permite a los usuarios encontrar rápidamente información relevante y reducir la cantidad de datos a lo esencial.
 
@@ -70,8 +70,8 @@ Usar filtros permite a los usuarios encontrar rápidamente información relevant
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_8.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
+![Dashboard con el filtro Document Type aplicado establecido en Invoice](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
+![Barra de búsqueda del dashboard con el filtro aplicado Ready For Validation y su icono X](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
 
 * Los datos se muestran nuevamente sin los criterios de filtro anteriores.

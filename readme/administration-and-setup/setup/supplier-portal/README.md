@@ -8,10 +8,10 @@ Esta página explica cómo activar y usar el **Panel de proveedores**, así como
 
 1.  Ve a **Ajustes → Procesamiento de documentos → Módulo**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
+    ![Página de Settings de DocBits con el menú Document Processing abierto que muestra las entradas Module, Export, OCR Settings y Classification and Extraction](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
 2.  En la sección **Envío y proveedor**, habilita la opción **Panel de proveedores**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+    ![Página de ajustes Modules en DocBits con la sección Shipping & Supplier que muestra la opción Supplier Portal](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
 
 ## Configuración del proveedor
 
@@ -35,7 +35,7 @@ Una guía detallada de todas las configuraciones del proveedor se puede encontra
 
 Puedes acceder al **Panel de proveedores** desde el menú de la izquierda, como se muestra a continuación.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+![Supplier Dashboard en DocBits con los recuentos de All Supplier, Pending Approval y Pending Registration y una tabla de filas Test Supplier](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
 
 Todos los proveedores que has creado se muestran aquí.
 
@@ -49,11 +49,11 @@ Puedes buscar proveedores por N**ombre** o N**úmero**, o usar los filtros avanz
 
 También puedes especificar cuántos proveedores deben mostrarse por página.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+![Panel de filtros del Supplier Dashboard con Supplier Groups, Status, Created On, Supplier Per Page y un botón Clear Filters](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
 
 Además, puedes filtrar rápidamente por los estados **Pendiente de aprobación** o **Registro pendiente** haciendo clic en la categoría correspondiente a la izquierda de la barra de filtros.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+![Tabla de documentos del dashboard con las columnas Document name, Imported on, Type, Status, Assigned to, Pages y Invoice number](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
 ## Estado del proveedor
 
@@ -73,26 +73,26 @@ A la derecha de la barra de búsqueda, encontrarás varias herramientas que te a
 
 ### Refrescar tabla <a href="#refresh-table" id="refresh-table"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+![Tabla del Supplier Dashboard en DocBits con el botón de actualización de tabla en la barra de herramientas superior](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
 
 Haz clic en este botón para refrescar el panel y cargar los datos y estados más actualizados.
 
 ### Establecer columnas de tabla para la organización <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
+![Tabla del Supplier Dashboard en DocBits con el botón de establecer columnas de tabla en la barra de herramientas superior](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
 
 Haz clic en este botón para abrir un menú donde puedes gestionar la visibilidad de las columnas en la tabla de órdenes de compra. Usa las casillas de verificación y los botones de flecha para mover columnas entre las secciones visibles y ocultas. También puedes reordenar columnas arrastrando y soltando los nombres de las columnas. Haz clic en **Hecho** para guardar tus cambios.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
+![Menú Columns settings de la tabla de proveedores con columnas ocultas como Supplier Number, Status y Created On más los botones Cancel y Done](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
 
 ### Analítica <a href="#analytics" id="analytics"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
+![Supplier Dashboard en DocBits con las pestañas All Supplier, Pending Approval y Pending Registration y la tabla de proveedores con las columnas Supplier Name y Status](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
 
 Hacer clic en este botón abrirá una nueva sección que muestra cuántos proveedores están a punto de expirar y cuándo.\
 Haz clic en cualquier categoría para aplicar un filtro y ver solo esos proveedores.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
+![Sección de análisis del Supplier Dashboard con Expired (13) y los recuentos de Expires in para 1 Month, 6 Month y 1 Year](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
 
 ## Crear proveedor y enviar correo electrónico de registro
 
@@ -100,10 +100,10 @@ Haz clic en cualquier categoría para aplicar un filtro y ver solo esos proveedo
 
 1.  Haz clic en el ícono de más (+) en la esquina superior derecha.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
+    ![Supplier Dashboard en DocBits con las pestañas All Supplier, Pending Approval y Pending Registration y la tabla de proveedores con las columnas Supplier Name y Status](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
 2.  Completa los campos requeridos y luego haz clic en **Guardar**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
+    ![Formulario Add Supplier en DocBits con los campos Supplier Group, Supplier Name, Supplier Responder y Payment Terms más los botones Cancel y Save](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
 3. El proveedor recibirá automáticamente un correo electrónico con un enlace para crear su cuenta.
 
 ### **Para enviar un correo electrónico de registro a un proveedor existente:**
@@ -112,11 +112,11 @@ Haz clic en cualquier categoría para aplicar un filtro y ver solo esos proveedo
 2. Haz clic en el menú de tres puntos en la columna de **Comportamiento**.
 3.  Selecciona **Magic Link**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
+    ![Supplier Dashboard en DocBits con el menú de fila abierto mostrando la opción Magic Link](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
 4. Verifica los detalles del proveedor.
 5.  Haz clic en **Enviar** para enviar el enlace de registro por correo electrónico.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
+    ![Panel de confirmación Magic Link en DocBits con los detalles de Supplier Group, Supplier Name y Supplier Responder, además de los botones Cancel y Send](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
 
 ## ¿Cómo funciona el proceso de registro para el proveedor?
 

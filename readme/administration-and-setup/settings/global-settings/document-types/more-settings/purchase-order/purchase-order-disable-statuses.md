@@ -10,30 +10,30 @@ Al utilizar esta configuración, los usuarios pueden asegurarse de que las órde
 
 1.  Ir a **Ajustes → Ajustes globales → Tipos de documentos**
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1_es.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1_es.png" alt="Navegación de configuración de DocBits en español con los grupos Global Settings y Document Processing y las entradas de información de la empresa y permisos de usuario"><figcaption></figcaption></figure>
 2.  Seleccionar el tipo de documento deseado y hacer clic en **Más ajustes**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2_es.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2_es.png" alt="Página de Document Types con la lista de Invoice, Credit Note, Delivery Note, Order Confirmation y Contract y las pestañas Edit layout, Document Sub Types, Table columns y Fields"><figcaption></figcaption></figure>
 3.  En la sección de **Orden de compra**, navegar a la opción de **PO Desactivar Estados**.
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_3_es.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_3_es.png" alt="Página More Settings para tipos de documento con la sección Purchase Order y la opción PO disable statuses resaltada"><figcaption></figcaption></figure>
 
 ### **Cómo identificar una orden de compra deshabilitada**
 
 En la pantalla de **Emparejamiento de PO**, una orden de compra deshabilitada aparece **tachada**. Esto indica visualmente que la PO está actualmente restringida para ser emparejada debido a su estado.
 
-<figure><img src="../../../../../../.gitbook/assets/disable_po_status_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/disable_po_status_6.png" alt="Tabla de la pantalla de PO Matching con las columnas LINE NUMBER, ITEM ID, STATUS, QUANTITY, UNIT PRICE y MATCHED QUANTITY"><figcaption></figcaption></figure>
 
 ### **Cómo configurarlo**
 
 1. En la configuración de **PO Desactivar Estados**, verás un campo de selección en el lado izquierdo.
 2.  Hacer clic en este campo abre una lista desplegable de estados de PO disponibles.
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_4_es.png" alt="" width="261"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_4_es.png" alt="Panel de configuración del estado de PO con interruptor del estado de Purchase Order desactivado y diálogo de confirmación en la interfaz en español" width="261"><figcaption></figcaption></figure>
 3. Selecciona uno o más estados haciendo clic en ellos. Haz clic nuevamente para deseleccionar.
 4.  Haz clic en el botón **Aplicar** para guardar tus cambios.
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_5_es.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_5_es.png" alt="Ajuste de estados deshabilitados del PO con los valores seleccionados Canceled, Deleted e Invoiced, y el botón Apply"><figcaption></figcaption></figure>
 
 **Estados disponibles**
 

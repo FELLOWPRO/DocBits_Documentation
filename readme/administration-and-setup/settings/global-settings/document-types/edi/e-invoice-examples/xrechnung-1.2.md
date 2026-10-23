@@ -6,7 +6,7 @@ Exportaciones al sistema de gestión documental (IDM):
 
 Exportado a Infor LN:
 
-<figure><img src="../../../../../../.gitbook/assets/image (360).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (360).png" alt="Tarjeta Then del workflow que exporta el documento mediante una configuración de exportación"><figcaption></figcaption></figure>
 
 Exportado a Infor M3:
 

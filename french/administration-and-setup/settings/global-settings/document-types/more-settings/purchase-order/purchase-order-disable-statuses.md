@@ -1,50 +1,22 @@
 # Statuts de désactivation des bons de commande
 
-## **Aperçu**
+Le réglage affiché **PO désactiver statuts** exclut certains statuts de bons de commande du rapprochement avec les factures. Son libellé est maladroit ; il s’agit de l’éligibilité des commandes au rapprochement.
 
-Le paramètre **PO Désactiver Statuts** permet aux utilisateurs de spécifier les statuts de bon de commande (PO) qui empêchent les factures d'être associées à ces POs. Si un bon de commande a un statut répertorié dans ce paramètre, il **ne peut pas** être utilisé pour l'appariement des factures dans l'écran d'appariement des PO, empêchant ainsi le traitement ultérieur des factures associées jusqu'à ce que le statut du PO change pour un statut qui n'est pas désactivé.\
-\
-En utilisant ce paramètre, les utilisateurs peuvent s'assurer que les bons de commande avec des statuts spécifiques ne subissent pas de traitement supplémentaire des factures, réduisant ainsi les erreurs et empêchant les paiements inutiles.
+Cette exclusion ne constitue pas, à elle seule, une interdiction universelle de traiter une facture, de l’exporter ou de la payer. Ces étapes dépendent d’autres règles et contrôles du flux.
 
-## **Étapes d'activation**
+## Accès
 
-1.  Allez dans **Paramètres → Paramètres globaux → Types de documents**
+1. Ouvrez **Paramètres → Types de Documents**.
+2. Ouvrez l’engrenage du type concerné.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1_fr.png" alt=""><figcaption></figcaption></figure>
-2.  Sélectionnez le type de document souhaité et cliquez sur **Plus de paramètres**.
+<figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-fr.png" alt="Exemple de la liste des types de documents et de leurs engrenages de configuration. Aucun réglage Activer ou Extraction n’a été modifié."><figcaption><p>Exemple de la liste des types de documents et de leurs engrenages de configuration. Aucun réglage Activer ou Extraction n’a été modifié.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2_fr.png" alt=""><figcaption></figcaption></figure>
-3.  Dans la section **Bon de commande**, accédez à l'option **PO Désactiver Statuts**.
+3. Dépliez **Bon de commande** et repérez **PO désactiver statuts**.
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_3_fr.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-disabled-po-statuses-fr.png" alt="Sélecteur PO désactiver statuts dans Bon de commande. Canceled, Deleted, Invoiced, Open, Partially Invoiced, Partially Received et Received restent en anglais ; Rejeté est traduit. Aucun statut n’a été sélectionné ni appliqué."><figcaption><p>Sélecteur PO désactiver statuts dans Bon de commande. Canceled, Deleted, Invoiced, Open, Partially Invoiced, Partially Received et Received restent en anglais ; Rejeté est traduit. Aucun statut n’a été sélectionné ni appliqué.</p></figcaption></figure>
 
-### **Comment identifier un bon de commande désactivé**
+## Configurer et vérifier
 
-Dans l'écran **Appariement des PO**, un bon de commande désactivé apparaît **barré**. Cela indique visuellement que le PO est actuellement restreint d'être associé en raison de son statut.
+Examinez les statuts proposés par votre version, sélectionnez ceux à exclure et confirmez **Appliquer** si vous souhaitez enregistrer le réglage. Plusieurs valeurs du sélecteur restent en anglais dans la version illustrée ; conservez les valeurs attendues par votre intégration et votre flux.
 
-<figure><img src="../../../../../../.gitbook/assets/disable_po_status_6.png" alt=""><figcaption></figcaption></figure>
-
-### **Comment le configurer**
-
-1. Dans le paramètre **PO Désactiver Statuts**, vous verrez un champ de sélection sur le côté gauche.
-2.  En cliquant sur ce champ, une liste déroulante des statuts de PO disponibles s'ouvre.
-
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_4_fr.png" alt="" width="261"><figcaption></figcaption></figure>
-3. Sélectionnez un ou plusieurs statuts en cliquant dessus. Cliquez à nouveau pour désélectionner.
-4.  Cliquez sur le bouton **Appliquer** pour enregistrer vos modifications.
-
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_5_fr.png" alt=""><figcaption></figcaption></figure>
-
-**Statuts disponibles**
-
-* Canceled
-* Deleted
-* Invoiced
-* Open
-* Partially Invoiced
-* Partially Received
-* Received
-* Rejeté
-* Unapproved
-* Hold
-* Closed
+Testez séparément une commande admissible et une commande portant un statut exclu, puis examinez le résultat de rapprochement. Une mise en forme barrée ou une liste de paramètres ne prouve pas à elle seule le résultat d’un paiement ou d’une exportation. Aucun statut n’a été modifié et aucun rapprochement n’a été exécuté pour cette illustration.

@@ -156,18 +156,18 @@
   <!-- Issue 3: Auto-reactivation -->
   <g transform="translate(550, 278)">
     <rect x="0" y="0" width="212" height="24" rx="8" fill="#005cad" opacity="0.05"></rect>
-    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Réactivation automatique</text>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Vérifier la reprise</text>
   </g>
   <g transform="translate(560, 310)">
     <circle cx="4" cy="5" r="3" fill="#1a8754"></circle>
-    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Les configurations se réactivent</text>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Contrôler la configuration</text>
   </g>
   <g transform="translate(560, 328)">
-    <text x="16" y="9" fill="#44474e" font-size="10.5" font-weight="400">après résolution des problèmes</text>
+    <text x="16" y="9" fill="#44474e" font-size="10.5" font-weight="400">après résolution du problème</text>
   </g>
   <g transform="translate(560, 346)">
     <circle cx="4" cy="5" r="3" fill="#1a8754"></circle>
-    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Consulter l’état dans l’onglet Journaux</text>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Confirmer dans les journaux</text>
   </g>
 
   <!-- Bottom CLI reference bar -->

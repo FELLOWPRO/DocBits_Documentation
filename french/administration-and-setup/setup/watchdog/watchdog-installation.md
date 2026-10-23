@@ -2,20 +2,15 @@
 
 <figure><img src="../../../.gitbook/assets/watchdog-installation-fr.svg" alt="Installation de WatchDog et principaux prérequis."><figcaption><p>Installation de WatchDog et principaux prérequis.</p></figcaption></figure>
 
-> **Recommandé :** utilisez la configuration moderne décrite ci-dessous. Les configurations de WatchDog sont désormais créées directement dans l'application DocBits — aucun fichier de configuration local n'est nécessaire.
-
 ## Prérequis
 
-* Windows Server ou Windows 10/11
-* Accès administrateur
-* Connectivité réseau vers l'API DocBits
-* API Touche DocBits (disponible dans Paramètres → WatchDog → onglet Général)
+Préparez un système Windows compatible avec le paquet installé, les droits administrateur et les autorisations de la future identité de service. Vérifiez la connectivité à l’API de DocBits et une clé API autorisée pour la bonne organisation et le bon environnement. Les dépendances d’exécution dépendent du paquet de votre version.
 
-## Étapes d'installation
+## Étapes d’installation
 
-### 1. Créer les dossiers requis
+### 1. Préparer les dossiers
 
-Créez un répertoire principal et des sous-dossiers pour WatchDog :
+Choisissez les dossiers et leurs autorisations. Les noms ci-dessous sont des exemples ; ils doivent correspondre aux chemins configurés dans votre installation.
 
 ```
 C:\WatchDog\              ← WatchDog executable
@@ -24,28 +19,24 @@ C:\WatchDog\Processed\    ← Success folder for processed documents
 C:\WatchDog\Export\        ← Export folder for exported files
 ```
 
-> **Remarque :** il est recommandé d'utiliser des chemins locaux. Les chemins réseau UNC (par exemple `\\server\share`) sont pris en charge, mais peuvent nécessiter un Polling Observer pour une détection fiable des fichiers.
+Les chemins réseau UNC, comme `\\server\share`, nécessitent l’accès de la véritable identité de service. Une unité accessible à votre utilisateur ne prouve pas que le service peut la lire ou y écrire.
 
 ### 2. Télécharger WatchDog
 
-Téléchargez `WatchDog.exe` depuis l'application DocBits :
+Dans **Paramètres → WatchDog → Général**, téléchargez le paquet adapté à l’environnement et placez l’exécutable dans le dossier prévu.
 
-**Paramètres → Traitement des documents → WatchDog → onglet Général → Télécharger**
+### 3. Configurer la connexion à l’API
 
-Placez le fichier `WatchDog.exe` téléchargé dans `C:\WatchDog\`.
-
-### 3. Configurer la connexion à l'API
-
-Ouvrez l'**invite de commandes (CMD)** en tant qu'**administrateur** et exécutez :
+Ouvrez un terminal administrateur et remplacez le marqueur par une clé autorisée :
 
 ```powershell
 cd C:\WatchDog
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-Cela connecte WatchDog à votre organisation DocBits et récupère automatiquement les configurations.
+Le résultat dépend de la clé, de l’environnement et de la connectivité. Ne partagez pas les commandes contenant des secrets.
 
-### 4. Installer en tant que service Windows
+### 4. Installer le service
 
 ```powershell
 WatchDog.exe install
@@ -57,33 +48,21 @@ WatchDog.exe install
 WatchDog.exe start
 ```
 
-### 6. Créer les configurations dans DocBits
+### 6. Définir les importations et exportations
 
-Dans DocBits, accédez à **Settings → Document Processing → WatchDog → onglet Configurations** :
+Ouvrez **Paramètres → WatchDog → Configurations**. **Nouvelle configuration d’importation** définit notamment les dossiers et le périmètre ; **Nouvelle configuration d’exportation** ouvre l’assistant d’exportation. Choisissez un type de document pour l’exportation et vérifiez les paramètres propres à la méthode sélectionnée.
 
-* Cliquez sur **New Import Configuration** pour configurer les dossiers surveillés
-* Cliquez sur **New Export Configuration** pour configurer les destinations d'exportation
+### 7. Configurer le démarrage automatique
 
-> **Important :** les configurations d'exportation exigent un **type de document**. Toutes les configurations sont gérées de manière centralisée dans DocBits, et non dans des fichiers de configuration locaux.
+Dans `services.msc`, choisissez le type de démarrage du service adapté à votre exploitation. Vérifiez aussi l’identité du service et ses accès aux dossiers et au réseau.
 
-### 7. Définir le démarrage automatique
+## Vérifier l’installation
 
-1. Ouvrez **Services** (`Win + R` → `services.msc`)
-2. Recherchez **WatchDog** dans la liste des services
-3. Double-cliquez pour ouvrir les propriétés
-4. Définissez le **Type de démarrage** sur **Automatique (démarrage différé)**
-5. Cliquez sur **OK**
+Dans **Général**, examinez l’état, l’âge de la dernière communication et les informations de version disponibles. Consultez aussi les journaux et réalisez un test autorisé avec des fichiers de démonstration avant de vous fier au fonctionnement.
 
-## Vérifier l'installation
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-fr.png" alt="Vue Général avec les quatre onglets actuels et l’état Hors ligne de l’environnement de test. La clé API, les commandes sensibles et le chemin d’installation sont masqués. Cette image ne prouve pas une installation ou une connexion réussie."><figcaption><p>Vue Général avec les quatre onglets actuels et l’état Hors ligne de l’environnement de test. La clé API, les commandes sensibles et le chemin d’installation sont masqués. Cette image ne prouve pas une installation ou une connexion réussie.</p></figcaption></figure>
 
-Après l'installation, vérifiez l'état de WatchDog dans DocBits :
-
-**Settings → WatchDog → onglet General**
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Onglet General de WatchDog — état du service"><figcaption></figcaption></figure>
-
-* ✅ **Online** — WatchDog est connecté et envoie des heartbeats
-* La version, le dernier redémarrage et les informations système doivent être visibles
+Cette vue montre Hors ligne dans l’environnement de test ; elle ne constitue pas la preuve d’une installation ou d’une connexion réussie.
 
 ## Référence des commandes
 
@@ -102,35 +81,8 @@ Après l'installation, vérifiez l'état de WatchDog dans DocBits :
 
 ---
 
-## Ancienne méthode : configuration V1 (obsolète)
 
-La méthode de configuration V1 ci-dessous, qui repose sur des fichiers de configuration locaux, est **obsolète**. Utilisez plutôt la configuration moderne basée sur l'API décrite ci-dessus.
 
-<details>
-<summary>Configuration V1 (cliquez pour développer)</summary>
+## Ancienne configuration V1
 
-### Configurer WatchDog dans DocBits (V1)
-
-1. **Accéder aux paramètres de WatchDog**
-   * Accédez à **Settings → Document Processing → WatchDog**
-2. **Paramètres des dossiers**
-   * Définissez les chemins : `C:/WatchDog/Read` et `C:/WatchDog/Processed`
-
-   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="Paramètres des dossiers WatchDog"><figcaption></figcaption></figure>
-
-3. **Paramètres généraux**
-   * Sélectionnez les types de documents, configurez la destination d'exportation
-
-   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="Paramètres généraux de WatchDog"><figcaption></figcaption></figure>
-
-4. **Configurations d'exportation**
-   * Affiche les exportations configurées pour le traitement sur site (on-premise)
-
-   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="Configurations d'exportation de WatchDog"><figcaption></figcaption></figure>
-
-5. **Télécharger la configuration**
-   * Téléchargez `watchdog-config.json` et placez-le dans `C:\WatchDog\`
-
-   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Télécharger la configuration"><figcaption></figcaption></figure>
-
-</details>
+Le fichier local `watchdog-config.json` appartient aux anciennes configurations V1. Il n’est pas un fichier à télécharger obligatoirement pour la configuration moderne par API illustrée ici. Si vous maintenez une installation ancienne, identifiez sa version et son mode de configuration avant une migration. Les anciennes captures V1 ne décrivent pas les formulaires actuels.

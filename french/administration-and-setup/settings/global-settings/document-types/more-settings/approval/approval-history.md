@@ -1,24 +1,17 @@
 # Historique de l'approbation
 
-Pour activer la fonctionnalité **Historique de l'approbation** :
+L’historique permet d’examiner les décisions d’approbation et de rejet enregistrées pour un document. Les informations visibles dépendent des traitements antérieurs et de vos autorisations.
 
-1. Allez dans **Paramètres** → **Paramètres généraux** → **Types de documents** → **Plus de paramètres** → **Approbation**.
-2. Activez **Historique de l'approbation**.
+## Trouver le réglage
 
-Une fois activé, l'historique des approbations sera visible dans l'écran **En attente de validation**. Vous pouvez passer à l'écran **Historique de l'approbation** en cliquant sur le bouton dans le coin supérieur gauche.
+1. Ouvrez **Paramètres → Types de Documents**.
+2. Ouvrez l’engrenage du type concerné.
+3. Dépliez **Approbation et rejet** et examinez **Historique de l’approbation**. Modifiez le réglage uniquement si votre flux le requiert.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_1.png)
+<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-approval-settings-fr.png" alt="Réglages Approbation et rejet avec Historique de l’approbation. L’image montre une configuration, pas un historique de décisions créé pendant cette vérification ; aucune approbation, aucun rejet ni changement de réglage."><figcaption><p>Réglages Approbation et rejet avec Historique de l’approbation. L’image montre une configuration, pas un historique de décisions créé pendant cette vérification ; aucune approbation, aucun rejet ni changement de réglage.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_2.png)
+## Examiner les décisions
 
-Dans l'écran **Historique de l'approbation**, vous verrez les détails suivants :
+Ouvrez le document et l’historique proposé par votre version, lorsqu’il est disponible. Vérifiez la décision, son auteur, sa date et l’ordre des étapes. Les commentaires peuvent préciser le motif lorsqu’ils ont été enregistrés.
 
-* **Qui** a approuvé ou rejeté le document.
-* Le **temps** et l'**ordre** des approbations ou des rejets.
-* Si configuré, des **commentaires** expliquant les raisons derrière les décisions.
-* **Rouge** indique un **rejet**.
-* La couleur correspondant à l'environnement (par exemple, vert) indique une **approbation**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_3.png)
-
-Cette fonctionnalité offre une transparence accrue en suivant et en visualisant le processus d'approbation.
+Évaluez le texte de la décision, pas seulement sa couleur. Un historique vide ne prouve pas une approbation. L’image montre la configuration : aucun document n’a été approuvé, aucun document n’a été rejeté et aucun historique de décisions n’a été créé pendant cette vérification.

@@ -4,64 +4,32 @@ description: Comment importer des données de base directement dans DocBits.
 
 # Données de base personnalisées
 
-#### Activer les données de base personnalisées <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
+Préparez les jeux de données nécessaires à votre organisation en vérifiant la source, les autorisations et la structure des réponses. Une capture du premier écran ne prouve pas une connexion API ou un jeu de données créé.
 
-Depuis le tableau de bord, accédez à Settings → Document Processing → Module.
+## Accès
 
-![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
+Dans **Paramètres → Module → Intégration de documents**, examinez la fonction de données de base personnalisées. Ne l’activez que si votre configuration le requiert. Aucun interrupteur n’a été modifié pour les illustrations.
 
-<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-fr.png" alt="Module d’intégration des documents : option des données de base personnalisées, affichée sans modification."><figcaption><p>Module d’intégration des documents : option des données de base personnalisées, affichée sans modification.</p></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-fr.png" alt="Module d’intégration des documents : option des données de base personnalisées, affichée sans modification."><figcaption><p>Module d’intégration des documents : option des données de base personnalisées, affichée sans modification.</p></figcaption></figure>
 
-Dans Module, activez Custom Master Data en cliquant sur le curseur, comme illustré ci-dessous.
+Ouvrez ensuite la consultation des données de base et identifiez les jeux de votre organisation. Les lignes et noms privés masqués ne signifient pas que la liste est vide.
 
-<div align="left"></div>
+<figure><img src="../../.gitbook/assets/site-extra-master-data-overview-fr.png" alt="Consultation des données de base ; les données de l’organisation sont masquées."><figcaption><p>Consultation des données de base ; les données de l’organisation sont masquées.</p></figcaption></figure>
 
-#### Aperçu de la fonctionnalité <a href="#feature-overview" id="feature-overview"></a>
+## Choisir un préréglage
 
-Pour ajouter vos propres données de base dans DocBits, accédez à Master Data Lookup dans Settings.
+Le premier écran propose **Vide**, **ION API**, **OAuth2** ou un préréglage autorisé de votre organisation. Les noms des préréglages configurés sont masqués dans l’illustration.
 
-<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-fr.png" alt="Consultation des données de base ; les données de l’organisation sont masquées."><figcaption><p>Consultation des données de base ; les données de l’organisation sont masquées.</p></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/site-extra-custom-master-data-template-fr.png" alt="Première étape du choix de préréglage avec Vide, ION API et OAuth2. Les noms des préréglages configurés sont masqués. Aucun choix, appel API ni tableau créé."><figcaption><p>Première étape du choix de préréglage avec Vide, ION API et OAuth2. Les noms des préréglages configurés sont masqués. Aucun choix, appel API ni tableau créé.</p></figcaption></figure>
 
-Cliquez sur « Custom Master Data ».
+Suivez les étapes de votre assistant : point de terminaison de l’API, chemin des données de table, puis création à partir de la réponse. Examinez l’URL, la méthode, l’authentification et les paramètres de la source. Contrôlez la réponse et les correspondances de colonnes avant de créer le jeu.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
+Lorsqu’un champ demande un chemin de données, utilisez sa syntaxe prise en charge et vérifiez-le avec la réponse réelle. La [référence JSONPath](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/) distingue les expressions de chemins et leurs structures d’exemple.
 
-Vous pouvez ensuite choisir de créer un Template ou un Endpoint.
+## Préparer un préréglage réutilisable
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
+**Créer un préréglage** commence par le choix **ION API** ou **OAUTH2**. Sélectionnez la méthode adaptée au service et complétez la configuration et les correspondances réellement demandées.
 
-#### Créer un Template <a href="#create-a-template" id="create-a-template"></a>
+<figure><img src="../../.gitbook/assets/site-extra-custom-master-data-preset-fr.png" alt="Première étape de Créer un préréglage avec ION API et OAUTH2. Ce sont des noms de protocoles ; aucun identifiant n’a été saisi et aucun préréglage n’a été enregistré."><figcaption><p>Première étape de Créer un préréglage avec ION API et OAUTH2. Ce sont des noms de protocoles ; aucun identifiant n’a été saisi et aucun préréglage n’a été enregistré.</p></figcaption></figure>
 
-La première étape consiste à choisir entre utiliser le fichier API ION de votre organisation ou utiliser OAuth2 et saisir les données nécessaires.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Nous allons ensuite configurer les préréglages. Vous y saisirez le nom de la table de données de base et l'URL de l'appel d'API.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Vous devrez ensuite saisir le chemin JSON en notation pointée ; pour plus d'informations sur la notation pointée, cliquez [ici](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
-
-Enfin, vous devrez mapper les données vers les colonnes que vous souhaitez créer, comme dans l'exemple ci-dessous.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Cela fait, cliquez sur Done pour que vos nouvelles données de base soient créées et alimentées.
-
-#### Créer un Endpoint <a href="#create-an-endpoint" id="create-an-endpoint"></a>
-
-La première étape consiste à choisir entre utiliser le fichier API ION de votre organisation, utiliser OAuth2, ou laisser ce champ vide et saisir les données nécessaires.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Nous allons ensuite configurer les préréglages. Vous y saisirez le nom de la table de données de base et l'URL de l'appel d'API.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Vous devrez ensuite saisir le chemin JSON en notation pointée ; pour plus d'informations sur la notation pointée, cliquez [ici](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
-
-Enfin, vous devrez mapper les données vers les colonnes que vous souhaitez créer, comme dans l'exemple ci-dessous.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Cela fait, cliquez sur Done pour que vos nouvelles données de base soient créées et alimentées.
+Les identifiants et valeurs d’API appartiennent à leur organisation et à leur environnement. Ne recopiez pas ceux d’une illustration. Pendant cette vérification, aucune API n’a été sélectionnée, aucun identifiant n’a été saisi, aucune étape suivante n’a été ouverte et aucun tableau ni préréglage n’a été enregistré.

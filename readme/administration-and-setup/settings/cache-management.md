@@ -1,25 +1,11 @@
 # Gestion du cache
 
-<figure><img src="../../.gitbook/assets/cache_management.png" alt="Gestion du cache"><figcaption><p>Page de gestion du cache</p></figcaption></figure>
+La page **Gestion du cache** propose l’action **Effacer le cache**. La version illustrée ne présente pas de tableau d’objets, de réglage par type de cache ni de durée TTL modifiable.
 
-La gestion du cache contrôle le nettoyage automatique du cache pour les données fréquemment consultées. L'activation du cache améliore les performances en réduisant les appels d'API répétés.
+<figure><img src="../../.gitbook/assets/site-complete-cache-context-fr.png" alt="Gestion du cache dans la version illustrée : seul Effacer le cache est proposé. Aucun objet ni réglage TTL n’est affiché ; aucune suppression de cache n’a été exécutée."><figcaption><p>Gestion du cache dans la version illustrée : seul Effacer le cache est proposé. Aucun objet ni réglage TTL n’est affiché ; aucune suppression de cache n’a été exécutée.</p></figcaption></figure>
 
-## Vider le cache
+## Effacer le cache
 
-Cliquez sur le bouton **Clear Cache** (en haut à droite) pour invalider immédiatement et manuellement toutes les données mises en cache.
+Ouvrez **Paramètres → Gestion du cache**. Utilisez **Effacer le cache** uniquement si cette opération est nécessaire pour votre diagnostic et votre organisation. Vérifiez ensuite le comportement concerné et les informations disponibles dans votre environnement. La présence du bouton ne prouve pas qu’une suppression a eu lieu.
 
-## Tableau du cache
-
-| Colonne | Description |
-|--------|-------------|
-| **Object** | Le type de données mises en cache (par exemple, Receive Delivery Cache, Purchase Order Cache). |
-| **Status** | Bouton permettant d'activer ou de désactiver la mise en cache pour cet objet. |
-| **TTL** | Durée de vie (Time to Live) en minutes : durée pendant laquelle les données mises en cache restent valides avant d'être actualisées automatiquement. Définissez `0` pour désactiver l'expiration automatique. |
-
-## Caches disponibles
-
-| Cache | Description |
-|-------|-------------|
-| **Receive Delivery Cache** | Met en cache les données de réception de livraison utilisées lors du rapprochement avec les commandes d'achat. |
-| **Purchase Order Cache** | Met en cache les données des commandes d'achat pour accélérer la recherche pendant le traitement des documents. |
-| **Task and Notification Cache** | Met en cache le nombre de tâches et les données de notification affichés dans le tableau de bord. |
+Cette page ne définit pas une politique universelle de conservation ou d’expiration. Aucun cache n’a été effacé pendant cette vérification.

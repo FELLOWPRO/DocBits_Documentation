@@ -43,7 +43,7 @@
   <text x="80" y="200" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">2</text>
   <rect x="116" y="170" width="460" height="72" rx="14" fill="#ffffff" filter="url(#shadow)"></rect>
   <rect x="116" y="170" width="460" height="72" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"></rect>
-  <text x="136" y="194" fill="#1a1c1e" font-size="14" font-weight="700">Télécharger et configurer</text>
+  <text x="136" y="194" fill="#1a1c1e" font-size="14" font-weight="700">Télécharger et préparer</text>
   <g transform="translate(136, 204)">
     <rect x="0" y="0" width="130" height="22" rx="6" fill="#1a8754" opacity="0.1"></rect>
     <text x="8" y="15" fill="#1a8754" font-size="11" font-weight="600">WatchDog.exe</text>
@@ -51,7 +51,7 @@
   <text x="278" y="219" fill="#44474e" font-size="11" font-weight="400">+</text>
   <g transform="translate(296, 204)">
     <rect x="0" y="0" width="170" height="22" rx="6" fill="#1a8754" opacity="0.1"></rect>
-    <text x="8" y="15" fill="#1a8754" font-size="11" font-weight="600">watchdog-config.json</text>
+    <text x="8" y="15" fill="#1a8754" font-size="11" font-weight="600">Configuration API</text>
   </g>
   <text x="478" y="219" fill="#44474e" font-size="11" font-weight="400">+ Clé API</text>
 
@@ -60,15 +60,15 @@
   <text x="80" y="290" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">3</text>
   <rect x="116" y="260" width="460" height="72" rx="14" fill="#f0f3ff" filter="url(#shadow)"></rect>
   <rect x="116" y="260" width="460" height="72" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"></rect>
-  <text x="136" y="284" fill="#1a1c1e" font-size="14" font-weight="700">Installer le service</text>
+  <text x="136" y="284" fill="#1a1c1e" font-size="14" font-weight="700">Configurer et installer</text>
   <g transform="translate(136, 294)">
     <rect x="0" y="0" width="190" height="22" rx="6" fill="#005cad" opacity="0.08"></rect>
-    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">WatchDog.exe install</text>
+    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">WatchDog.exe -api KEY</text>
   </g>
   <text x="340" y="309" fill="#44474e" font-size="14" font-weight="400">→</text>
   <g transform="translate(362, 294)">
     <rect x="0" y="0" width="200" height="22" rx="6" fill="#005cad" opacity="0.08"></rect>
-    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">WatchDog.exe -api KEY</text>
+    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">WatchDog.exe install</text>
   </g>
 
   <!-- Step 4: Start & Verify -->
@@ -120,8 +120,8 @@
     <text x="10" y="15" text-anchor="middle" fill="#005cad" font-size="11" font-weight="700">i</text>
   </g>
   <text x="644" y="292" fill="#1a1c1e" font-size="12" font-weight="600">Clé API</text>
-  <text x="616" y="312" fill="#44474e" font-size="10.5" font-weight="400">Dans les paramètres DocBits</text>
-  <text x="616" y="328" fill="#44474e" font-size="10.5" font-weight="400">→ Intégration → API</text>
+  <text x="616" y="312" fill="#44474e" font-size="10.5" font-weight="400">Pour votre organisation</text>
+  <text x="616" y="328" fill="#44474e" font-size="10.5" font-weight="400">et votre environnement</text>
 
   <line x1="620" y1="344" x2="752" y2="344" stroke="#c0c6d5" stroke-opacity="0.2"></line>
 
@@ -130,11 +130,11 @@
     <text x="10" y="15" text-anchor="middle" fill="#005cad" font-size="11" font-weight="700">i</text>
   </g>
   <text x="644" y="372" fill="#1a1c1e" font-size="11.7" font-weight="600">Environnement .NET</text>
-  <text x="616" y="392" fill="#44474e" font-size="10.5" font-weight="400">Inclus dans l’installeur</text>
+  <text x="616" y="392" fill="#44474e" font-size="10.5" font-weight="400">Selon le paquet installé</text>
 
   <!-- Bottom completion bar -->
   <rect x="40" y="448" width="720" height="36" rx="10" fill="#1a8754" opacity="0.06"></rect>
   <circle cx="66" cy="466" r="10" fill="#1a8754" opacity="0.15"></circle>
   <path d="M61 466 L64.5 469.5 L71 462" stroke="#1a8754" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-  <text x="84" y="471" fill="#1a8754" font-size="12" font-weight="600">Installation terminée : WatchDog démarrera avec le système et surveillera les dossiers.</text>
+  <text x="84" y="471" fill="#1a8754" font-size="12" font-weight="600">Après installation, configurez le démarrage automatique et vérifiez la surveillance des dossiers.</text>
 </svg>

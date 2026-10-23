@@ -47,4 +47,4 @@ Questo documento illustra il workflow per l'ordinazione dei materiali dai fornit
 * Assicurati che tutti i documenti siano verificati e archiviati per la conservazione dei registri.
 * Le discrepanze nei dettagli dell'ordine o della fattura devono essere risolte tempestivamente per evitare ritardi.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed.svg" alt="Diagramma a corsie del flusso di lavoro di ordinazione ed elaborazione del materiale tra Supplier, DocBits, Purchasing-INFOR, IDM e FIBU"><figcaption></figcaption></figure>

@@ -23,7 +23,7 @@ Ogni gruppo può essere configurato per:
 3. Seleziona **Modulo.**
 4. Attiva il **Controllo Accessi** abilitando il cursore.
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3_it.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Access-Control3_it.png" alt="Pagina Access Control nelle impostazioni di DocBits con la scheda Access Control aperta"><figcaption></figcaption></figure>
 
 ## Aprire il Controllo Accessi di un gruppo
 

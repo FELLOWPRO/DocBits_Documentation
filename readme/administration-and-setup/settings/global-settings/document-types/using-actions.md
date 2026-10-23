@@ -8,7 +8,7 @@ Ecco una guida su come utilizzare correttamente le azioni "Copia" ed "Elimina" p
 * Seleziona il sottotipo che desideri copiare, fai clic su "Copia" e, se necessario, inserisci un nuovo nome per il sottotipo copiato.
 * Conferma l'azione e il sistema creerà una copia del sottotipo selezionato con tutte le impostazioni, i campi, i layout e gli script esistenti.
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Editor delle regole del workflow con elenco di condizioni, menu a discesa delle azioni e barra degli strumenti del riepilogo di validazione"><figcaption></figcaption></figure>
 
 ## Eliminazione di un sottotipo:
 

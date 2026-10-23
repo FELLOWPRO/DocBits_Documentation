@@ -104,7 +104,7 @@ Then: **Assign document to:** Responsabile delle approvazioni
 
 <figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-it.png" alt="Azione di modifica dello stato in una bozza di workflow."><figcaption><p>Azione di modifica dello stato in una bozza di workflow.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt="Generatore di workflow con tre schede logiche che assegnano documenti per assegnatario e tipo di documento al Invoice reviewer, Delivery-note reviewer e Order reviewer"><figcaption></figcaption></figure>
 
 Ad esempio, se in un documento mancano informazioni specifiche o importanti, ma necessarie e che devono essere incluse per l'ulteriore elaborazione, puoi configurare il workflow in modo che questi documenti vengano immediatamente inoltrati all'acquirente e a un sostituto (rimpiazzo).
 
@@ -141,7 +141,7 @@ Questa logic card è fondamentale per garantire che i dettagli di una conferma d
 
 Se hai un calcolo diverso per i sovrapprezzi, oppure li applichi solo ad alcuni articoli, puoi utilizzare le card generiche di calcolo della tabella; alcune di esse consentono anche di filtrare tramite espressioni regolari.
 
-<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt="Scheda di calcolo per la colonna MTZ con una regola Material Surcharge e un filtro regex Item Number per i numeri d'articolo che iniziano con 01, 06, 9, 001 o 000"><figcaption></figcaption></figure>
 
 Sopra è riportato un esempio di calcolo per MTZ con un filtro per i numeri di articolo che iniziano con 01, 06, 9, 001 o 000.
 
@@ -149,7 +149,7 @@ Con una configurazione manuale è consigliabile suddividere i calcoli che dipend
 
 **Eseguire il flusso**
 
-<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt="Scheda Run workflow Mtz Into Discount del generatore di workflow con una sezione Conditions per l'esecuzione di un workflow successivo"><figcaption></figcaption></figure>
 
 Con questa card puoi specificare il nome di un workflow che deve essere eseguito dopo il workflow corrente, se le sue condizioni sono soddisfatte e dopo le precedenti card "then" del workflow corrente. Pur dando priorità ai workflow eseguibili e attivi, consente anche di eseguire workflow disattivati se il documento soddisfa le condizioni del workflow.
 

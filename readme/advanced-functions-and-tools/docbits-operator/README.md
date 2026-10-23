@@ -89,4 +89,4 @@ Nella vista di dettaglio, gli utenti possono:
 * Individuare dove si verificano i problemi se il prompt incontra difficoltà.
 * Usare le stesse azioni **Pause**, **Resume**, **Cancel** e **Take Control**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="Vista dettagli di DocBits Operator per il prompt Open google.com then search for Alan MacMasters con passaggi completati e prompt salvati nella barra laterale" width="563"><figcaption></figcaption></figure></div>

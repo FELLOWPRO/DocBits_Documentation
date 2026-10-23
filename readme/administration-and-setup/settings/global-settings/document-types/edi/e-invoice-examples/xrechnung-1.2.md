@@ -6,7 +6,7 @@ Esportazioni al sistema di gestione documentale (IDM):
 
 Esportato in Infor LN:
 
-<figure><img src="../../../../../../.gitbook/assets/image (360).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (360).png" alt="Scheda Then del workflow che esporta il documento utilizzando una configurazione di esportazione"><figcaption></figcaption></figure>
 
 Esportato in Infor M3:
 

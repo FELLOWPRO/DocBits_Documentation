@@ -16,7 +16,7 @@ Tutte le connessioni tra i componenti sono protette con protocolli di crittograf
 
 **In sede:**
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="Diagramma dell'architettura di Operator On-Prem con DocAgent su un client collegato alla Prefect API e al cloud DocBits"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ Tutte le connessioni tra i componenti sono protette con protocolli di crittograf
 
 **Cloud**:
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Diagramma dell'architettura di Operator Cloud con l'estensione Chrome, DocBits Operator Cloud, DocFlow e DocBits AI che si scambiano messaggi di attività e risposte"><figcaption></figcaption></figure>
 
 ## Esportazione dei Dati in Infor
 
@@ -38,7 +38,7 @@ Esporta in [Infor](../../infor-integration-and-configuration/exporting-to-infor/
 
 Per identificare il fornitore o confrontare/corrispondere le righe degli ordini di acquisto, attiviamo un trigger in LN/M3 che invia i BOD Sync.RemitToPartyMaster, Sync.SupplierPartyMaster e Sync.PurchaseOrder a Doc**Bits**. Configuriamo questo processo in ION Desk definendo il flusso di dati verso un punto di connessione specifico a Doc**Bits**.
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="Diagramma dell'architettura DocBits del cluster Kubernetes con bilanciatore di carico, Redis, PostgreSQL, pod di lavoro e archiviazione dati Spaces"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Validazione dei Dati Master](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ Per identificare il fornitore o confrontare/corrispondere le righe degli ordini 
 
 ## Importazione Email OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="Diagramma dell'importazione e-mail di Office 365 che mostra Microsoft Graph API che emette un token di accesso per il servizio di posta di DocBits e il sistema principale"><figcaption></figcaption></figure>

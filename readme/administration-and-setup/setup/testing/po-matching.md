@@ -9,7 +9,7 @@ Um Ihre PO-Matching-Konfiguration zu testen, müssen Sie in LN/M3 eine Bestellun
 
 Nachdem Sie Ihre Bestellung angelegt haben, gehen Sie zu Settings → Master Data Lookup und suchen Sie nach der Bestellnummer der soeben angelegten Bestellung. Sie sollte nun in Ihren Bestellstammdaten in DocBits erscheinen.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+![Purchase order-Tabelle in den DocBits-Stammdaten mit den Spalten Warehouse Id, Supplier Name, Purchase Order Number, Line Number und Quantity](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
 Hier sollte Ihre eindeutige Bestellnummer angezeigt werden. Das bedeutet, dass DocBits und INFOR korrekt synchronisiert sind.
 

@@ -4,7 +4,7 @@
 
 Willkommen im Modul Buchhaltung für Kostenrechnungen und indirekte Verkäufe! Dieses Modul ist darauf ausgelegt, Ihnen zu helfen, Ihre finanziellen Transaktionen innerhalb Ihres ERP-Systems effizient zu verwalten und abzugleichen. Mit Funktionen wie automatischer Datenerfassung, Dokumentenabgleich und detaillierter Nachverfolgung können Sie sicherstellen, dass Ihre Finanzunterlagen genau und aktuell sind.
 
-<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt="Buchungsbildschirm mit den Spalten Split by total, Position Accounts, Voucher Text und Total neben einer Lieferantenrechnung"><figcaption></figcaption></figure>
 
 ## Erste Schritte
 

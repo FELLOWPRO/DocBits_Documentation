@@ -8,7 +8,7 @@ Die **Swiss QR Bill** ist der nationale Zahlungsbeleg-Standard, der seit dem 30.
 
 Swiss QR Bills folgen dem **ISO-20022**-Zahlungsstandard und werden in zwei Versionen ausgegeben: **v1.0** (früher Rollout) und **v2.0** (aktuell). Der DocBits-Extraktor unterstützt beide. Erkannte Payloads liefern ein vollständiges Feldset — Zahlungsempfänger, Einzahler, IBAN / QR-IBAN, Betrag, Währung, Referenztyp (QRR, SCOR oder NON), strukturierte und unstrukturierte Nachrichten sowie alternative Zahlungsverfahren.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt="Einstellungs-Suchseite mit Einträgen zu PO-Abgleich, darunter PO-Dashboard, PO-Versandauftrag, Auto Accounting und Vertex Tax Integration"><figcaption></figcaption></figure>
 
 #### Hauptvorteile
 
@@ -77,6 +77,6 @@ Die Swiss-QR-Bill-Erkennung ist Teil der allgemeinen **Bar-Code / QR-Code-Extrak
    * Scrollen Sie zur Option **Bar-Code / QR-Code-Extraktion**.
    * Schalten Sie den Schieberegler um, um sie zu aktivieren.
 
-<figure><img src="../../../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (444).png" alt="Einstellungs-Suchseite mit Einträgen zu PO-Abgleich, darunter PO-Dashboard, PO-Versandauftrag, Auto Accounting und Vertex Tax Integration"><figcaption></figcaption></figure>
 
 Eine vollständige Liste der Payment-QR-Code-Standards finden Sie auf der [Übersichtsseite](./README.md).

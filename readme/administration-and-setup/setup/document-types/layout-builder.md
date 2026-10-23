@@ -1,14 +1,14 @@
 # Costruttore di Layout
 
-Usa il Layout Builder per organizzare i campi e i controlli che gli utenti vedono quando convalidano o approvano un documento. Un layout appartiene a un tipo di documento, a un'origine e a un tipo di layout, quindi controlla questi tre elementi in cima alla pagina prima di salvare.
+Usa il Costruttore di Layout per organizzare i campi e i controlli che gli utenti vedono quando convalidano o approvano un documento. Un layout appartiene a un tipo di documento, a un'origine e a un tipo di layout, quindi controlla questi tre elementi in cima alla pagina prima di salvare.
 
 ## Aprire il layout
 
 1. Apri **Impostazioni → Tipi di Documento**.
-2. Seleziona il tipo di documento che vuoi modificare e apri **Layout Builder**. Per un sottotipo di documento, apri l'azione Layout Builder di quel sottotipo.
-3. Controlla l'intestazione. Il selettore a sinistra è l'**Origine** (ad esempio **Predefinito**), seguito da **Tipo di documento** (ad esempio **Fattura**) e **Tipo di layout** (ad esempio **Convalida campi**). Ogni selettore apre un elenco; scegliendo un'altra voce si carica il layout corrispondente. Se il Layout Builder non è disponibile, un amministratore potrebbe dover attivare il modulo per la tua organizzazione.
+2. Seleziona il tipo di documento che vuoi modificare e apri **Costruttore di Layout**. Per un sottotipo di documento, apri l'azione Costruttore di Layout di quel sottotipo.
+3. Controlla l'intestazione. Il selettore a sinistra è l'**Origine** (ad esempio **Predefinito**), seguito da **Tipo di documento** (ad esempio **Fattura**) e **Tipo di layout** (ad esempio **Convalida campi**). Ogni selettore apre un elenco; scegliendo un'altra voce si carica il layout corrispondente. Se il Costruttore di Layout non è disponibile, un amministratore potrebbe dover attivare il modulo per la tua organizzazione.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-it.png" alt="Il Layout Builder di una fattura in DocBits, con i selettori di origine, tipo di documento e tipo di layout, le schede Struttura, Campi ed Elementi, l'area di lavoro del layout e il pannello Proprietà a destra"><figcaption><p>Il Layout Builder: i selettori dell'intestazione, gli elenchi degli elementi a sinistra, l'area di lavoro al centro e il pannello Proprietà a destra.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-it.png" alt="Il Costruttore di Layout di una fattura in DocBits, con i selettori di origine, tipo di documento e tipo di layout, le schede Struttura, Campi ed Elementi, l'area di lavoro del layout e il pannello Proprietà a destra"><figcaption><p>Il Costruttore di Layout: i selettori dell'intestazione, gli elenchi degli elementi a sinistra, l'area di lavoro al centro e il pannello Proprietà a destra.</p></figcaption></figure>
 
 ## Lavorare con l'intestazione
 
@@ -28,7 +28,7 @@ Il lato sinistro ha tre schede:
 | **Campi** | Tutti i campi configurati per il tipo di documento, raggruppati per gruppo di campi e compressi per impostazione predefinita. Il filtro passa tra i campi **Tutti**, **Inutilizzato** e **Nascosto**, e sotto l'etichetta del campo viene mostrato il nome tecnico del campo. |
 | **Elementi** | Controlli di presentazione e interazione come Testo, Etichetta, Casella di controllo, separatori, tabelle, pulsanti e sottogruppi. |
 
-<figure><img src="../../../.gitbook/assets/layout-builder-structure-it.png" alt="La scheda Struttura del Layout Builder con i gruppi Dettagli fattura, Dettagli del pagamento, Ordine di acquisto e Dettagli di consegna espansi nei rispettivi campi"><figcaption><p>La scheda Struttura mostra il layout costruito come un albero di gruppi e campi.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-structure-it.png" alt="La scheda Struttura del Costruttore di Layout con i gruppi Dettagli fattura, Dettagli del pagamento, Ordine di acquisto e Dettagli di consegna espansi nei rispettivi campi"><figcaption><p>La scheda Struttura mostra il layout costruito come un albero di gruppi e campi.</p></figcaption></figure>
 
 Seleziona un elemento per aggiungerlo, oppure trascinalo nell'area di lavoro. Il titolo di un gruppo indica alla persona che convalida il documento cosa appartiene a quella sezione. Crea o rinomina i campi riutilizzabili del documento prima in [Tipi di Documento](README.md).
 
@@ -55,5 +55,5 @@ Per la larghezza, scegli uno dei valori preimpostati (25, 33, 50, 66, 75 o 100 p
 Disponi i gruppi e i campi, controlla il layout sull'area di lavoro e usa **Salva** nell'intestazione quando il risultato è corretto. Per i layout specifici di un'origine, vedi [Layout per origine](origin-layouts.md).
 
 {% hint style="info" %}
-Le schermate mostrano impostazioni sintetiche nell'organizzazione di test di DocBits con l'inglese selezionato nell'applicazione. Durante la loro acquisizione non è stato salvato né sostituito alcun layout.
+Le schermate mostrano impostazioni sintetiche nell'organizzazione di test di DocBits con l'italiano selezionato nell'applicazione. Durante la loro acquisizione non è stato salvato né sostituito alcun layout.
 {% endhint %}

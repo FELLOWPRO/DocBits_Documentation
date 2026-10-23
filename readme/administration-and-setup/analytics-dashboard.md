@@ -117,7 +117,7 @@ Met een schakelaar **Alles selecteren** in de header kunt u alle stappen tegelij
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-nl.png" alt="Fasekaarten met geaggregeerde verwerkingstijden."><figcaption><p>Fasekaarten met geaggregeerde verwerkingstijden.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+![Flow steps kaart met de Select All schakelaar en statustegels die maximale, gemiddelde en minimale tijden tonen ten opzichte van de Global Average](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Vergelijk met het wereldwijde gemiddelde
 
@@ -141,7 +141,7 @@ De Grafiek Gemiddelde Tijd visualiseert hoe de verwerkingstijd is verdeeld over 
 
 Wanneer **Vergelijk met het wereldwijde gemiddelde** is ingeschakeld, toont de grafiek ook het DocBits Global Average voor benchmarking.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+![Grafiek van de gemiddelde tijd gegroepeerd per suborganisatie met het totaalgemiddelde en de DocBits Global Average benchmark](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Topdocumenten
 
@@ -153,7 +153,7 @@ De kaart **Topdocumenten** somt individuele documenten op die overeenkomen met d
 * **Verberg / toon alle** documenten in het filter via het oogpictogram in de header.
 * **Klik op een document** (bestandsnaam of voortgangsbalk) om de document-ID naar het klembord te kopiëren.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+![Paneel Top documents dat bestandsnamen rangschikt op verwerkingstijd met een totaal van 13889 documenten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Tijdtrendgrafiek
 
@@ -167,9 +167,9 @@ Volg prestatietrends in de tijd en spot afwijkingen. De Tijdtrendgrafiek toont d
 
 Hierdoor is het eenvoudig om een plotselinge piek voor een specifieke leverancier te detecteren, of een geleidelijke toename voor een specifiek documenttype, voordat het een kritiek probleem wordt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+![Trendgrafiek voor Flow steps met lijnen voor maximale, gemiddelde en minimale tijd over de geselecteerde datums](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+![Trendgrafiek van de gemiddelde tijd met één lijn per documenttype, waaronder Purchase Order, Invoice en Delivery Note](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Datatabel
 
@@ -181,9 +181,9 @@ De Datatabel biedt volledige toegang tot alle onderliggende rijgegevens voor de 
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-nl.png" alt="Analysetabel met Nederlandstalige labels; documentwaarden zijn afgeschermd. Het productlabel Tafel verwijst hier naar een gegevenstabel."><figcaption><p>Analysetabel met Nederlandstalige labels; documentwaarden zijn afgeschermd. Het productlabel Tafel verwijst hier naar een gegevenstabel.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+![Analytics datatabel met de kolommen Document Type, Min Time, Max Time en Avg Time en verborgen kolomchips voor Supplier en Sub Organization](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+![Analytics datatabel met de rijen Invoice en Order Confirmation, minimale, maximale en gemiddelde tijden en verborgen kolommen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
 
 ## Touchless Intelligence
 

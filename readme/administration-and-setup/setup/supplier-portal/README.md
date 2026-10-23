@@ -8,10 +8,10 @@ Deze pagina legt uit hoe je het **Leveranciersportaal** activeert en gebruikt, e
 
 1.  Ga naar **Instellingen → Documentverwerking → Module**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
+    ![Pagina Settings in DocBits met het geopende menu Document Processing met de items Module, Export, OCR Settings en Classification and Extraction](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
 2.  Schakel in de sectie **Verzending & Leverancier** de optie **Leveranciersportaal** in.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+    ![Instellingenpagina Modules in DocBits met de sectie Shipping & Supplier en de optie Supplier Portal](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
 
 ## Leveranciersinstellingen
 
@@ -35,7 +35,7 @@ Een gedetailleerde gids voor alle Leveranciersinstellingen is hier te [vinden](.
 
 Je kunt het **Leveranciersdashboard** openen vanuit het menu aan de linkerkant, zoals hieronder weergegeven.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+![Supplier Dashboard in DocBits met de aantallen All Supplier, Pending Approval en Pending Registration en een tabel met Test Supplier-rijen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
 
 Al je gemaakte leveranciers worden hier weergegeven.
 
@@ -49,11 +49,11 @@ Je kunt zoeken naar leveranciers op N**aam** of N**ummer**, of gebruik de geavan
 
 Je kunt ook specificeren hoeveel leveranciers per pagina moeten worden weergegeven.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+![Filterpaneel van het Supplier Dashboard met Supplier Groups, Status, Created On, Supplier Per Page en een knop Clear Filters](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
 
 Daarnaast kun je snel filteren op de statussen **In afwachting van goedkeuring** of **In afwachting van registratie** door op de bijbehorende categorie links van de filterbalk te klikken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+![Documententabel van het dashboard met de kolommen Document name, Imported on, Type, Status, Assigned to, Pages en Invoice number](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
 ## Leverancier Status
 
@@ -73,26 +73,26 @@ Aan de rechterkant van de zoekbalk vind je verschillende hulpmiddelen die je hel
 
 ### Tabel vernieuwen <a href="#refresh-table" id="refresh-table"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+![Tabel Supplier Dashboard in DocBits met de knop voor het vernieuwen van de tabel in de bovenste werkbalk](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
 
 Klik op deze knop om het dashboard te vernieuwen en de meest actuele gegevens en statussen te laden.
 
 ### Tabelkolommen instellen voor organisatie <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
+![Supplier Dashboard-tabel in DocBits met de knop voor het instellen van tabelkolommen in de werkbalk bovenaan](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
 
 Klik op deze knop om een menu te openen waar je de zichtbaarheid van kolommen in de inkoopordertabel kunt beheren. Gebruik de selectievakjes en pijlknoppen om kolommen tussen de zichtbare en verborgen secties te verplaatsen. Je kunt ook kolommen opnieuw ordenen door de kolomnamen te slepen en neer te zetten. Klik op **Klaar** om je wijzigingen op te slaan.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
+![Menu Columns settings voor de leverancierstabel met verborgen kolommen zoals Supplier Number, Status en Created On plus de knoppen Cancel en Done](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
 
 ### Analyse <a href="#analytics" id="analytics"></a>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
+![Supplier Dashboard in DocBits met de tabbladen All Supplier, Pending Approval en Pending Registration en de leverancierstabel met de kolommen Supplier Name en Status](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
 
 Door op deze knop te klikken, wordt een nieuwe sectie geopend die laat zien hoeveel leveranciers op het punt staan te verlopen en wanneer.\
 Klik op een categorie om een filter toe te passen en alleen die leveranciers te bekijken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
+![Analysesectie van het Supplier Dashboard met Expired (13) en de aantallen Expires in voor 1 Month, 6 Month en 1 Year](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
 
 ## Leverancier Aanmaken en Registratie-e-mail Versturen
 
@@ -100,10 +100,10 @@ Klik op een categorie om een filter toe te passen en alleen die leveranciers te 
 
 1.  Klik op het plus (+) pictogram in de rechterbovenhoek.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
+    ![Supplier Dashboard in DocBits met de tabbladen All Supplier, Pending Approval en Pending Registration en de leverancierstabel met de kolommen Supplier Name en Status](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
 2.  Vul de vereiste velden in en klik vervolgens op **Opslaan**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
+    ![Formulier Add Supplier in DocBits met de velden Supplier Group, Supplier Name, Supplier Responder en Payment Terms plus de knoppen Cancel en Save](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
 3. De leverancier ontvangt automatisch een e-mail met een link om hun account aan te maken.
 
 ### **Om een registratie-e-mail naar een bestaande leverancier te sturen:**
@@ -112,11 +112,11 @@ Klik op een categorie om een filter toe te passen en alleen die leveranciers te 
 2. Klik op het menu met drie stippen in de kolom **Acties**.
 3.  Selecteer **Magic Link**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
+    ![Supplier Dashboard in DocBits met het rijmenu geopend en de optie Magic Link](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
 4. Controleer de gegevens van de leverancier.
 5.  Klik op **Versturen** om de registratie-link per e-mail te verzenden.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
+    ![Magic Link-bevestigingspaneel in DocBits met de details van Supplier Group, Supplier Name en Supplier Responder, plus de knoppen Cancel en Send](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
 
 ## Hoe Werkt het Registratieproces voor de Leverancier?
 

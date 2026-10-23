@@ -11,7 +11,7 @@ Nadat u alle kolommen en correcties heeft gedefinieerd:
 
 Dit zorgt ervoor dat DocBits automatisch uw getrainde lay-out zal gebruiken de volgende keer dat het een vergelijkbaar document ziet.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FzVn_mYiL7PwiILj2gJ4sxaPKpEUNOfKwryiZJ2Umk2SpvGHZ8OVUznBReJHqCM7UstWTt6nq0azJrtPDK_2q4jVUZgsE7bf6toT9kl57wByn4EG3JqafBfZt5G54OZ8okUfpLUH1tvHb0mZIC119I4k\&width=768\&dpr=4\&quality=100\&sign=dc056624\&sv=2)
+![Getrainde tabel met toegewezen en extraheerbare kolommen en de actieknoppen save rules, delete rules en export](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FzVn_mYiL7PwiILj2gJ4sxaPKpEUNOfKwryiZJ2Umk2SpvGHZ8OVUznBReJHqCM7UstWTt6nq0azJrtPDK_2q4jVUZgsE7bf6toT9kl57wByn4EG3JqafBfZt5G54OZ8okUfpLUH1tvHb0mZIC119I4k\&width=768\&dpr=4\&quality=100\&sign=dc056624\&sv=2)
 
 ## Regels Verwijderen
 
@@ -19,4 +19,4 @@ U kunt opgeslagen regels verwijderen met de knop **REGELS VERWIJDEREN** als ze v
 
 **Waarschuwing**: Het verwijderen van regels heeft invloed op alle documenten van dezelfde leverancier met dezelfde lay-out. U moet **de tabel extractie opnieuw trainen vanaf nul**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FKyfMBBv2ghBgSmqTZ4zMVsHKaoAVwcha8XRhUPNPrVMNwsmHXCDMDSsmkJYE2EYWynD1SzMcf57dmqvGIC4u3UpQohRxZW3A2RNICsNyI6Du0-jd3ZibupkTwRnYoD_XUAbfypZ5iQj-9Z0XN_SreUs\&width=768\&dpr=4\&quality=100\&sign=1a65fb86\&sv=2)
+![Werkbalk van tabeltraining met de knoppen save, save rules, delete rules, PO matching en export voor het verwijderen van regels](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FKyfMBBv2ghBgSmqTZ4zMVsHKaoAVwcha8XRhUPNPrVMNwsmHXCDMDSsmkJYE2EYWynD1SzMcf57dmqvGIC4u3UpQohRxZW3A2RNICsNyI6Du0-jd3ZibupkTwRnYoD_XUAbfypZ5iQj-9Z0XN_SreUs\&width=768\&dpr=4\&quality=100\&sign=1a65fb86\&sv=2)

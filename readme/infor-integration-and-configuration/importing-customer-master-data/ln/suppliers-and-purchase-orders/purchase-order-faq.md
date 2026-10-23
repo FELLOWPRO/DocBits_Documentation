@@ -7,7 +7,7 @@ Open de sessie _BOD Implementation Registration (bobod1100m000)_ in LN. Hier kun
 \
 
 
-<figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO.png" alt="LN-sessie BOD Implementation Registration (bobod1100m000) met BOD-implementaties en de selectievakjes Public, Standard en Staging"><figcaption></figcaption></figure>
 
 **Hoe vind ik de BOD-implementatie die ik moet controleren?**
 

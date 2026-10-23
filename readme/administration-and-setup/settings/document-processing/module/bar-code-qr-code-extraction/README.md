@@ -20,7 +20,7 @@ Volg deze stappen om de Barcode / QR-Code Extractie functie in te schakelen:
    *   Gebruik de schuifregelaar om Barcode / QR-Code Extractie in te schakelen.
        
 
-       <figure><img src="../../../../../.gitbook/assets/image (443) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (443) (1).png" alt="Zoekpagina in de instellingen met items voor Inkooporder, waaronder Afstemming en validatie van inkooporders en Automatische export indien inkooporder 100% overeenkomt"><figcaption></figcaption></figure>
 
 ## **Ondersteunde Code Typen**
 

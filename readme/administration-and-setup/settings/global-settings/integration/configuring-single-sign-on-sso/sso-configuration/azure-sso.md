@@ -10,10 +10,10 @@ Voer de volgende stappen uit om SAML-SSO toe te voegen in Azure AD:
 
 *   Open in Azure de console \`Azure Active Directory\`.
 
-    ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_1.png)
+    ![Navigatiedeelvenster van de Azure-portal met favorieten zoals Resource groups, All resources en Azure Active Directory](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_1.png)
 * Klik in het linkerpaneel op \`Enterprise applications\`.
 
-![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_2.png)
+![Linkerpaneel van Azure Active Directory met de items onder Manage: Users, Groups, Roles and administrators en Enterprise applications](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_2.png)
 
 * Klik op \`+ New application\`.
 
@@ -25,7 +25,7 @@ Voer de volgende stappen uit om SAML-SSO toe te voegen in Azure AD:
 
 * Voer een naam voor uw toepassing in. Behoud de overige standaardkeuzes.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_5.png" alt="Dialoog Create your own application in Azure met de app-naam MyApplication en de opties voor applicatie-integratie"><figcaption></figcaption></figure>
 
 * Klik op \`Create\`.
 
@@ -38,16 +38,16 @@ Wijs vervolgens gebruikers of groepen toe aan de SSO-configuratie.
 * Klik onder \`Getting Started\` op \`Assign Users and Groups\`.
 * Klik op \`+ Add user\`.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_6.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_6.png" alt="Pagina Users and groups voor MyApplication in Azure met de knoppen Add user, Edit en Remove en een lege Display Name-lijst" width="563"><figcaption></figcaption></figure>
 
 * Selecteer de gebruikers en groepen die u aan deze SSO-configuratie wilt toewijzen. Deze gebruikers kunnen zich met SSO aanmelden bij DocBits.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_7.png" alt="Selectiepaneel voor gebruikers en groepen in Azure met een lijst met Daniel-gebruikers en een paneel Selected items"><figcaption></figcaption></figure>
 
 * Klik op \`Select\`.
 * Klik op \`Assign\` wanneer de selectie klopt.
 
-![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
+![Dialoogvenster Add Assignment in Azure met 2 users selected, 2 groups selected en Select Role ingesteld op User](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
 
 <div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_azure_sso_groups.png" alt="Groepen voor Azure-SSO in DocBits"><figcaption></figcaption></figure></div>
 
@@ -59,34 +59,34 @@ Voltooi vervolgens de configuratie voor eenmalige aanmelding in Azure.\\
 
 * Klik in het linkerpaneel op \`Single sign-on\`.
 
-![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_10.png)
+![Overzichtsmenu van de ondernemingstoepassing in Azure met de Manage-items Properties, Owners, Users and groups, Single sign-on en Provisioning](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_10.png)
 
 * Klik op \`SAML\`.
 
-![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_11.png)
+![SAML-optiekaart in Azure die uitgebreide en veilige verificatie met het Security Assertion Markup Language-protocol beschrijft](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_11.png)
 
 * Klik op \`Upload metadata file\`.
 
-![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_12.png)
+![Paneel SAML-based Sign-on in Azure met Upload metadata file en Set up Single Sign-On](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_12.png)
 
 * Upload het DocBits-bestand **metadata.xml**. U vindt dit in uw DocBits-account in het instellingenmenu **Integration**, onder **SSO Service Provider Settings**.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_Metadata-1024x216.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_Metadata-1024x216.png" alt="Pagina SSO Service Provider Settings met de Tenant ID, de Entity ID en de velden SSO Url, SLO Url en Metadata Url"><figcaption></figcaption></figure>
 
 * Bewerk \`Basic SAML Configuration\`.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.png" alt="Scherm voor het instellen van Single Sign-On met SAML met Basic SAML Configuration en de velden Identifier, Reply URL, Sign on URL en Logout Url"><figcaption></figcaption></figure>
 
 * Controleer of \`Entity ID\`, \`ACS URL\`, \`Sign on URL\` en \`Logout URL\` correct zijn ingevuld.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.1.png" alt="Editor voor Basic SAML Configuration in Azure met de velden Identifier, Reply URL, Sign on URL, Relay State en Logout Url en Save"><figcaption></figcaption></figure>
 
 * Download het nieuw gegenereerde bestand **Federation Metadata XML**.
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_14.png" alt="Sectie SAML Signing Certificate in Azure met vingerafdruk, vervaldatum en downloadlinks voor Certificate (Raw) en Federation Metadata XML"><figcaption></figcaption></figure>
 
 * Upload FederationMetadata.xml naar **Identity Service Provider Settings** in uw DocBits-account, in het instellingenmenu **Integration**.
 
 \\
 
-<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_15-1024x204.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_15-1024x204.png" alt="Dialoogvenster Identity Service Provider Settings in DocBits met de Tenant ID FELLOWPRO_PRD en de knop Upload file"><figcaption></figcaption></figure>

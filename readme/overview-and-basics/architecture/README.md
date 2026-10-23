@@ -16,7 +16,7 @@ Alle verbindingen tussen componenten zijn beveiligd met versleutelingsprotocolle
 
 **On premise:**&#x20;
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="Architectuurdiagram van Operator On-Prem met DocAgent op een clientcomputer die verbinding maakt met de Prefect API en de DocBits-cloud"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ Alle verbindingen tussen componenten zijn beveiligd met versleutelingsprotocolle
 
 **Cloud**:
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Architectuurdiagram van Operator Cloud met de Chrome-extensie, DocBits Operator Cloud, DocFlow en DocBits AI die taak- en antwoordberichten uitwisselen"><figcaption></figcaption></figure>
 
 ## Gegevens exporteren naar Infor
 
@@ -38,7 +38,7 @@ Exporteren naar [Infor](../../infor-integration-and-configuration/exporting-to-i
 
 Om de leverancier te identificeren of inkooporderregels te vergelijken/te matchen, activeren we in LN/M3 een trigger die de BODs Sync.RemitToPartyMaster, Sync.SupplierPartyMaster en Sync.PurchaseOrder naar Doc**Bits** stuurt. We configureren dit proces in ION Desk door de gegevensstroom naar een specifiek aansluitpunt (connection point) naar Doc**Bits** te definiëren.
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="DocBits-architectuurdiagram van het Kubernetes-cluster met load balancer, Redis, PostgreSQL, worker-pods en Spaces-datopslag"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Masterdata-validatie](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ Om de leverancier te identificeren of inkooporderregels te vergelijken/te matche
 
 ## E-mailimport OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="Diagram van de Office 365-e-mailimport dat toont hoe Microsoft Graph API een toegangstoken uitgeeft aan de DocBits-mailservice en het hoofdsysteem"><figcaption></figcaption></figure>

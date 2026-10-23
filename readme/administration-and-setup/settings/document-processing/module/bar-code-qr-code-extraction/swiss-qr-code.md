@@ -8,7 +8,7 @@ De **Zwitserse QR Bill** is de nationale betalingsstandaard die sinds 30 juni 20
 
 Zwitserse QR Bills volgen de betalingsstandaard **ISO 20022** en worden in twee versies uitgegeven: **v1.0** (eerste uitrol) en **v2.0** (huidig). De DocBits-extractor ondersteunt beide. Herkende payloads worden gedecodeerd in een volledige set velden — crediteur, debiteur, IBAN / QR-IBAN, bedrag, valuta, referentietype (QRR, SCOR of NON), gestructureerde en vrije berichten, en alternatieve betalingsschema's.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt="Zoekpagina in de instellingen met items voor Inkooporder, waaronder Afstemming en validatie van inkooporders en Automatische export indien inkooporder 100% overeenkomt"><figcaption></figcaption></figure>
 
 #### Belangrijkste Voordelen
 
@@ -77,6 +77,6 @@ Parsing van Zwitserse QR Bill wordt afgedekt door de algemene **Barcode / QR-Cod
    * Scroll naar beneden om de optie **Barcode / QR-Code Extractie** te vinden.
    * Gebruik de schuifregelaar om deze in te schakelen.
 
-<figure><img src="../../../../../.gitbook/assets/image (443) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (443) (1).png" alt="Zoekpagina in de instellingen met items voor Inkooporder, waaronder Afstemming en validatie van inkooporders en Automatische export indien inkooporder 100% overeenkomt"><figcaption></figcaption></figure>
 
 Voor de volledige lijst van Betalings-QR-code standaarden, zie de [Overzichtspagina](./README.md).

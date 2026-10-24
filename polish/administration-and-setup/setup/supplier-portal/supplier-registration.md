@@ -10,7 +10,7 @@ Sprawdź, która organizacja wysłała zaproszenie i dla jakiego adresu e-mail j
 
 Sprawdź wstępnie uzupełnione imię, nazwisko i adres e-mail. Podaj wymagane dane konta i przestrzegaj wyświetlonych zasad dotyczących hasła. Przeczytaj warunki i informacje o prywatności. Zakończ tworzenie konta przy użyciu funkcji rejestracji. Istniejące konto i nowa rejestracja to różne przypadki; postępuj zgodnie ze ścieżką przewidzianą dla zaproszenia.
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-pl.png" alt="Formularz rejestracji konta dostawcy. Pokazano pusty formularz; zaproszenie może wstępnie uzupełnić część danych."><figcaption><p>Formularz rejestracji konta dostawcy. Pokazano pusty formularz; zaproszenie może wstępnie uzupełnić część danych.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-pl.png" alt="Formularz rejestracji konta dostawcy. Pokazano pusty formularz; zaproszenie może wstępnie uzupełnić część danych."><figcaption><p>Formularz rejestracji konta dostawcy. Pokazano pusty formularz; zaproszenie może wstępnie uzupełnić część danych.</p></figcaption></figure>
 
 ## 3. Uzupełnij dane dostawcy
 

@@ -1,5 +1,20 @@
 # Portal dostawców
 
+## Do czego służy portal dostawców?
+
+**Portal dostawców** umożliwia administratorowi udostępnienie **DocBits** dostawcom swojej firmy. Administrator aktywuje portal i określa, którzy dostawcy mogą z niego korzystać oraz jakie informacje mogą przeglądać.
+
+Zaproszony dostawca rejestruje się i loguje na własne konto. Może wtedy przeglądać udostępnione mu informacje, na przykład status swoich zamówień zakupu i faktur. Dostępne funkcje zależą od konfiguracji organizacji.
+
+### Od aktywacji do dostępu dostawcy
+
+1. **Aktywacja portalu:** administrator włącza funkcję w ustawieniach modułów.
+2. **Konfiguracja portalu:** administrator określa pola rejestracji, treść zaproszeń i uprawnienia dostawców.
+3. **Zaproszenie dostawców:** administrator wybiera odpowiednich dostawców i wysyła im zaproszenia.
+4. **Dostęp jako dostawca:** dostawca korzysta z zaproszenia, przechodzi wymagane etapy rejestracji i zatwierdzania, a następnie uzyskuje dostęp do DocBits na swoim koncie.
+
+Samo włączenie portalu nie daje dostępu żadnemu dostawcy. Utworzenie lub edycja danych dostawcy nie zastępuje zaproszenia ani zatwierdzenia dostępu.
+
 ## Przegląd
 
 Ta strona wyjaśnia, jak aktywować i korzystać z **Portalu dostawców**, a także gdzie znaleźć wszystkie odpowiednie **Ustawienia**. Portal dostawców pozwala na zapraszanie dostawców do **DocBits**. Po przyznaniu dostępu, dostawcy mogą zalogować się, aby zobaczyć status swoich **Zamówień zakupu** i **Faktur** bezpośrednio w **DocBits**.
@@ -34,6 +49,8 @@ Szczegółowy przewodnik po wszystkich Ustawieniach dostawcy można znaleźć [t
 ## Film: wyszukiwanie dostawców i aktualizacja danych
 
 Ten film po polsku pokazuje, jak znaleźć przykładowego dostawcę, otworzyć jego szczegóły, zmienić miasto i kod pocztowy oraz sprawdzić zapis po odświeżeniu strony.
+
+**O poniższym filmie:** pokazuje on wewnętrzne wyszukiwanie i edycję danych dostawcy przez administratora. Nie pokazuje aktywacji portalu ani logowania dostawcy.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pl.mp4" %}
 Demonstracja po polsku z syntetycznym administratorem i rzeczywistym interfejsem testowym DocBits.

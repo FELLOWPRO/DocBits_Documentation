@@ -1,65 +1,50 @@
-# Bereken kolommen met
+# Kolommen berekenen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aafc18d42905-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
+## Wanneer en waar gebruiken
 
-## **Doel:**
+Gebruik deze kaart als elke rij in een tabel een berekende waarde nodig heeft. Een veelvoorkomend voorbeeld is het regeltotaal van een factuur: **hoeveelheid × eenheidsprijs**. De kaart berekent de gekozen bewerking per rij en schrijft het resultaat naar de resultaatkolom.
 
-De workflow-kaart **"Bereken kolommen in tabel"** wordt gebruikt om berekeningen tussen kolommen in een geselecteerde tabel uit te voeren. Hiermee kunnen gebruikers kolommen selecteren, een wiskundige bewerking toepassen en het resultaat in een opgegeven resultaatkolom opslaan.
+Voeg de actie in de standaardworkflow toe onder **Dan → Tabel**. Stel de gewenste voorwaarden in bij **Wanneer** en **En**, en controleer de invoer voordat een volgende workflowstap de berekende bedragen gebruikt.
 
-## **Onderdelen van de kaart:**
+## Beheerdersvideo
 
-1. **Tabelnaam**
-   * **Beschrijving:** Geeft de **tabel** op waarin de kolommen worden berekend.
-   * **Details:** Er wordt een dropdownlijst van alle beschikbare **tabellen** geboden om uit te selecteren.
-2. **Kolomnaam (1e kolom)**
-   * **Beschrijving:** Geeft de **eerste kolom** op die bij de berekening betrokken is.
-   * **Details:** Er wordt een lijst van alle beschikbare **kolommen** geboden om uit te selecteren.
-3. **Bediening**
-   * **Beschrijving:** Definieert de wiskundige bewerking die tussen de geselecteerde kolommen wordt toegepast.
-   * **Opties:**
-     * **Add (+):** Telt de waarde van de tweede kolom op bij de waarde van de eerste kolom.
-     * **Aftrekken (-):** Trekt de waarde van de tweede kolom af van de waarde van de eerste kolom.
-     * **Multiply (\*):** Vermenigvuldigt de waarde in de eerste kolom met de waarde in de tweede kolom.
-     * **Verdeel (/):** Deelt de waarde in de eerste kolom door de waarde in de tweede kolom.
-4. **Kolomnaam (2e kolom)**
-   * **Beschrijving:** Geeft de **tweede kolom** op die bij de berekening betrokken is.
-   * **Details:** Er wordt een lijst van beschikbare **kolommen** geboden om uit te selecteren.
-5. **Resultaatkolom**
-   * **Beschrijving:** Geeft de **kolom** op waarin het resultaat van de berekening wordt opgeslagen.
-   * **Details:** Er wordt een lijst van beschikbare **kolommen** geboden waarin de berekende waarde wordt opgeslagen.
+**36 seconden · Nederlands.** Jan legt het gebruik uit, kiest hoeveelheid × eenheidsprijs en toont de opgeslagen resultaten op dezelfde voorbeeldfactuur.
 
-## **Functionaliteit:**
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/nl.mp4" %}
 
-* **Voorwaarde-evaluatie:**\
-  De kaart voert de actie alleen uit als zowel de **"Wanneer"**- als de **"En"**-secties als true worden geëvalueerd.
-* **Kolomberekening:**\
-  De kaart voert de geselecteerde wiskundige bewerking uit tussen de twee gekozen kolommen.
-* **Resultaatopslag:**\
-  Het resultaat van de berekening wordt opgeslagen in de geselecteerde **resultaatkolom**.
+[Video met Nederlandse ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/nl.html) · [Transcript lezen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/nl.txt)
 
-## **Opzet en configuratie:**
+## Kaart instellen
 
-* **Tabel selecteren:**\
-  Kies de **tabel** waarin de kolommen worden berekend.
-* **Kolommen kiezen:**\
-  Selecteer de **eerste kolom** en **tweede kolom** die in de berekening worden gebruikt.
-* **Bewerking selecteren:**\
-  Kies de wiskundige bewerking (**Add (+)**, **Aftrekken (-)**, **Multiply (\*)**, **Divide (/)**) die tussen de kolommen wordt toegepast.
-* **Resultaatkolom selecteren:**\
-  Kies de **resultaatkolom** waarin de berekening wordt opgeslagen.
+| Instelling | Keuze in het voorbeeld |
+| --- | --- |
+| Tabel | `INVOICE_TABLE` |
+| Eerste kolom | `QUANTITY` — Hoeveelheid |
+| Rekenbewerking | `*` — vermenigvuldigen |
+| Tweede kolom | `UNIT_PRICE` — Eenheidsprijs |
+| Resultaatkolom | `TOTAL_AMOUNT` — Totaalbedrag |
 
-## **Conclusie:**
+<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-configured-nl-20261024.png" alt="Ingestelde Nederlandse kaart met tabel INVOICE_TABLE, Hoeveelheid maal Eenheidsprijs en Totaalbedrag als resultaatkolom."><figcaption><p>Hoeveelheid × Eenheidsprijs → Totaalbedrag in de werkelijke Nederlandse interface.</p></figcaption></figure>
 
-De workflow-kaart **"Bereken kolommen in tabel"** stelt gebruikers in staat dynamische berekeningen tussen kolommen in een tabel uit te voeren en de resultaten in een aangewezen kolom op te slaan. De kaart biedt flexibiliteit om verschillende wiskundige bewerkingen toe te passen en zorgt ervoor dat het resultaat in de opgegeven kolom wordt opgeslagen.
+In de getoonde interface staat de tabelnaam tweemaal. De selectie in dit voorbeeld betreft één tabel: `INVOICE_TABLE`.
 
-<!-- workflow-card-practical-example-20261021 -->
+Naast vermenigvuldigen zijn **optellen (`+`)**, **aftrekken (`-`)** en **delen (`/`)** beschikbaar. Bij aftrekken en delen is de volgorde van de kolommen bepalend: de eerste kolom staat links van het bewerkingsteken. Controleer bij deling ook de noemer.
 
 ## Praktisch voorbeeld
 
-**Wanneer gebruiken:** Bereken regeltotalen op basis van hoeveelheid en eenheidsprijs.
+Dezelfde voorbeeldfactuur bevat twee regels. De bronkolommen hebben deze waarden:
 
-**Configuratie:** Selecteer tabel `lines`, kolommen `quantity` en `unit_price`, vermenigvuldiging en resultaatkolom `line_total`.
+| Rij | Hoeveelheid | Eenheidsprijs | Totaalbedrag na de berekening |
+| --- | ---: | ---: | ---: |
+| 1 | 2 | 10,00 | 20,00 |
+| 2 | 3 | 4,00 | 12,00 |
 
-**Verwacht resultaat en tegenvoorbeeld:** Een rij met `2` en `10` levert `20` op. Test een andere rij onafhankelijk en diagnosticeer ontbrekende of niet-numerieke invoer in plaats van deze als een geldig totaal te behandelen.
+Na het uitvoeren van de kaart zijn **20,00** en **12,00** in de resultaatkolom opgeslagen. De hoeveelheid en eenheidsprijs blijven gelijk. Het gaat om afzonderlijke berekeningen per rij; de kaart maakt hiervan geen gezamenlijke factuursom.
 
-Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.
+## Controleren en tegenvoorbeelden
+
+- Controleer of de juiste tabel, bronkolommen, bewerking en resultaatkolom zijn gekozen.
+- Controleer of beide bronkolommen numerieke waarden bevatten. Tekst zoals `ABC` in plaats van een getal leidt tot een rekenfout.
+- Een ontbrekende eenheidsprijs kan in dit voorbeeld een resultaat van **0** opleveren. Dat bewijst niet dat de invoer volledig is; controleer ontbrekende waarden afzonderlijk.
+- Bestaande waarden in de resultaatkolom worden vervangen. Kies daarom bewust de kolom die de kaart mag bijwerken.
+- Controleer meerdere rijen afzonderlijk en vergelijk de opgeslagen resultaten met de bronwaarden.

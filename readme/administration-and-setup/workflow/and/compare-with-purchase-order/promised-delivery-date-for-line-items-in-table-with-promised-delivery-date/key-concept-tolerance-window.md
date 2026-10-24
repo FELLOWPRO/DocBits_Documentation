@@ -2,6 +2,8 @@
 
 Avant d'examiner les opérateurs, il est important de comprendre comment la fenêtre de tolérance est calculée.
 
+Le calcul de la fenêtre de tolérance, avec des exemples tels que « aujourd'hui ou demain », est expliqué sur la page [Date Tolerances](../../date-tolerances.md).
+
 ## Qu'est-ce qu'une fenêtre de tolérance ?
 
 La fenêtre de tolérance définit une plage de dates acceptables autour de la date de livraison promise du bon de commande.

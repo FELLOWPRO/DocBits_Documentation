@@ -1,6 +1,12 @@
 # Exporter avec la configuration d'exportation
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v1-fr-fr.png" alt="Exporter avec la configuration d&#x27;exportation, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v3-fr-fr.png" alt="Exporter avec la configuration d&#x27;exportation, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-fr-fr.png" alt="Exportation des documents en file d&#x27;attente avec la configuration d&#x27;exportation\xA0: … pour l&#x27;exportation finale à la fin de l&#x27;exécution. Ignorer les tâches en attente\xA0: …. — Version 2" width="634"><figcaption><p>Exportation des documents en file d'attente avec la configuration d'exportation\xA0: … pour l'exportation finale à la fin de l'exécution. Ignorer les tâches en attente\xA0: …. — Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-fr-fr.png" alt="Exportation des documents en file d&#x27;attente avec la configuration d&#x27;exportation\xA0: … pour l&#x27;exportation finale à la fin de l&#x27;exécution. Ignorer les tâches en attente\xA0: …. Statut après exportation\xA0: …. — Version 3" width="634"><figcaption><p>Exportation des documents en file d'attente avec la configuration d'exportation\xA0: … pour l'exportation finale à la fin de l'exécution. Ignorer les tâches en attente\xA0: …. Statut après exportation\xA0: …. — Version 3</p></figcaption></figure>
 
 ## **Objectif :**
 

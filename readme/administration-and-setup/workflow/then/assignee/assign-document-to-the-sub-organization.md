@@ -1,6 +1,6 @@
 # Attribuer un document à la sous-organisation
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-a05599461b30-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_change_doc_suborg_v2-fr-fr.png" alt="Attribuer un document à la sous-organisation, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 

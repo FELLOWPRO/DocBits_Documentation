@@ -1,6 +1,6 @@
 # Condition de groupe assignée
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bdcdca2a5488-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_in_list_v2-fr-fr.png" alt="Condition de groupe assignée, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Objectif :**
 

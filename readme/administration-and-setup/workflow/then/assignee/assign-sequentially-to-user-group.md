@@ -1,6 +1,8 @@
 # Attribuer séquentiellement à l'utilisateur/au groupe
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61e424b9ad8c-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_v2-fr-fr.png" alt="Attribuer séquentiellement à l&#x27;utilisateur/au groupe, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-fr-fr.png" alt="Attribuer le document de manière séquentielle à l&#x27;utilisateur / au groupe sur la base de la table de décision. — Version 2" width="634"><figcaption><p>Attribuer le document de manière séquentielle à l'utilisateur / au groupe sur la base de la table de décision. — Version 2</p></figcaption></figure>
 
 ## **Objectif**
 

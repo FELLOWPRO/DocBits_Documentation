@@ -10,11 +10,11 @@ Usala per calcolare gli importi delle righe prima dell’azione successiva del w
 
 ## Video di amministrazione
 
-**Anteprima · 40 secondi · italiano.** Roberto spiega quando usare la scheda, configura la moltiplicazione e mostra i risultati salvati.
+**40 secondi · italiano.** Roberto spiega quando usare la scheda, configura la moltiplicazione e mostra i risultati salvati.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/it.mp4" %}
 
-[Guarda il video con sottotitoli italiani](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.html) · [Leggi la trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.txt)
+[Guarda il video con sottotitoli italiani](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/it.html) · [Leggi la trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/it.txt)
 
 ## Configurazione della scheda
 

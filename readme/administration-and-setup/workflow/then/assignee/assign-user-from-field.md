@@ -1,6 +1,6 @@
 # Benutzer aus Feld zuweisen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-a30b121432e4-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_user_from_field_with_fallback_v2-de-de.png" alt="Benutzer aus Feld zuweisen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

@@ -1,5 +1,7 @@
 # Heute mit einem Datum vergleichen
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_today_is_isnot_v2-de-de.png" alt="Heute mit einem Datum vergleichen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
 Die Karte **Today** (`condition_today_is_isnot`, Version 2) vergleicht das aktuelle Datum der Ausführung mit einem eingetragenen Datum. Im geprüften Dev-Stand wird „heute“ aus UTC gebildet. Die Karte startet keinen Workflow zu einem Termin und wartet nicht bis zum eingetragenen Datum.
 
 <figure><img src="../../../../.gitbook/assets/wf-practice-20261022-today-card-de.png" alt="Heute-Karte mit Gleich-Vergleich und konkretem Datum."><figcaption><p>Heute-Karte mit Gleich-Vergleich und konkretem Datum.</p></figcaption></figure>

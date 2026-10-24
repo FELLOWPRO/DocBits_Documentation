@@ -1,6 +1,8 @@
 # Workflow ausführen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-359c9c1abe8c-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_run_workflow_v1-de-de.png" alt="Workflow ausführen, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_run_workflow_v2-de-de.png" alt="Workflow ausführen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Zweck:
 

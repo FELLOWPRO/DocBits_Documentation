@@ -1,5 +1,7 @@
 # Datum oder Uhrzeit prüfen
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-de-de.png" alt="Datum oder Uhrzeit prüfen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-14-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-14-admin/v1/de.html).

@@ -1,6 +1,10 @@
 # Assegna documento all'utente
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e7f92cca6e9d-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v1-it-it.png" alt="Assegna documento all&#x27;utente, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v2-it-it.png" alt="Assegna documento all&#x27;utente, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-it-it.png" alt="Assegna documento all&#x27;utente, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
 ## **Scopo:**
 

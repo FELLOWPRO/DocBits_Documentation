@@ -1,6 +1,8 @@
 # Tipo di documento
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3a6901be7256-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1-it-it.png" alt="Tipo di documento, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-it-it.png" alt="Tipo di documento, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## Scopo:
 

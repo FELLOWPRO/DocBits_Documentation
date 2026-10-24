@@ -1,8 +1,10 @@
 # Prezzo combinato della differenza di quantità
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5e9d809dfde3-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v2-it-it.png" alt="Prezzo combinato della differenza di quantità, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-313edcefbea2-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v3-it-it.png" alt="Prezzo combinato della differenza di quantità, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v4-it-it.png" alt="Prezzo combinato della differenza di quantità, Versione 4" width="634"><figcaption><p>Versione 4</p></figcaption></figure>
 
 ## **Scopo**:
 

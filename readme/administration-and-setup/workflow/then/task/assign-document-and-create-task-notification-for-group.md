@@ -1,6 +1,6 @@
 # Assegna documento e crea attività/notifica per il gruppo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-01f8137c5c7f-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_group_sequential_v2-it-it.png" alt="Assegna documento e crea attività/notifica per il gruppo, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo**
 

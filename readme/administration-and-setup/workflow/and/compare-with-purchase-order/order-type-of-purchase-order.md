@@ -1,6 +1,6 @@
 # Tipo di ordine di acquisto
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_check_order_type_in_po_v2-it-it.png" alt="Tipo di ordine di acquisto, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 

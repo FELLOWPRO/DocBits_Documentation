@@ -1,6 +1,6 @@
 # Data o ora
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-it-it.png" alt="Data o ora, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 

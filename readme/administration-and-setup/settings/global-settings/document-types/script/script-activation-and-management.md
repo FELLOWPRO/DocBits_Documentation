@@ -2,7 +2,7 @@
 
 ## Videoanleitung: Skripte verwalten
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v2/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v3/de.mp4" %}
 Skripte eines Dokumenttyps verwalten
 {% endembed %}
 

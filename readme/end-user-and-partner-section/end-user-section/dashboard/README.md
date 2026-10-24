@@ -25,7 +25,7 @@ La usuaria y la oficina se han generado con IA. Las acciones y los resultados pr
 
 ## Recorrido completo por el panel
 
-La usuaria ficticia de Madrid muestra la búsqueda combinada con AND, los filtros de estado, la ayuda de búsqueda, la configuración de columnas, las estadísticas y la actualización. La interfaz española se ha grabado en DocBits con datos de prueba sintéticos. El personaje y la voz se han generado con IA.
+La usuaria de Madrid muestra la búsqueda combinada con AND, los filtros de estado, la ayuda de búsqueda, la configuración de columnas, las estadísticas y la actualización.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/es.mp4" %}
 

@@ -103,8 +103,6 @@ Para facturas no coincidentes automáticamente:
 
 ## Videotutorial: Distribución de una factura de gastos
 
-El personaje y la voz son sintéticos. La grabación muestra la interfaz de pruebas real de DocBits con facturas de formación sintéticas.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/es.mp4" %}
 Distribución de una factura de gastos
 {% endembed %}

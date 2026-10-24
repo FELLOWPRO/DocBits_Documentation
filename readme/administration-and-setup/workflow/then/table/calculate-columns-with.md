@@ -16,8 +16,6 @@ Utilícela cuando necesite calcular importes por línea antes de la siguiente ac
 
 [Reproducir el vídeo con subtítulos en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/es.html) · [Leer la transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/es.txt)
 
-El administrador y su voz son sintéticos. La interfaz corresponde a una organización de demostración de DocBits con una factura ficticia.
-
 ## Configuración de la tarjeta
 
 | Campo | Selección del ejemplo |

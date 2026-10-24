@@ -10,7 +10,7 @@ Aprovar ou rejeitar uma fatura
 
 A aplicação real é mostrada; a redação das opções pode depender da versão implementada.
 
-Utilize a aprovação para registar a sua decisão após verificar o conteúdo de uma fatura já validada. Precisa de acesso ao documento e permissão para a sua fase de aprovação atual. O vídeo utiliza uma conta normal de revisão, faturas sintéticas preparadas e uma apresentadora fictícia.
+Utilize a aprovação para registar a sua decisão após verificar o conteúdo de uma fatura já validada. Precisa de acesso ao documento e permissão para a sua fase de aprovação atual. O vídeo utiliza uma conta normal de revisão.
 
 ## Rever e decidir
 

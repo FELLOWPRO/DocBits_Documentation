@@ -31,6 +31,18 @@ Zodra de functie **Leveranciersportaal** is ingeschakeld, verschijnt er een nieu
 
 Een gedetailleerde gids voor alle Leveranciersinstellingen is hier te [vinden](../../settings/supplier-setting/).
 
+## Video: leveranciers zoeken en gegevens bijwerken
+
+Deze Nederlandstalige video laat zien hoe je in het leveranciersdashboard een voorbeeldleverancier zoekt, de leveranciersgegevens opent, de stad en postcode wijzigt en na het opslaan en opnieuw laden controleert of de wijziging behouden blijft.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/nl.mp4" %}
+Nederlandse demonstratie met een synthetische beheerder en de echte DocBits-testinterface.
+{% endembed %}
+
+[Video met Nederlandse ondertiteling en transcript openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/nl.html).
+
+Het getoonde formulier is voor deze demonstratie ingesteld met **Leveranciersnaam**, **Stad** en **Postcode**; je eigen formulier kan anders zijn. De stad Keulen wordt ingevoerd als **Köln**, zoals op het scherm, met postcode **50667**. De bevestiging verschijnt in deze opname nog in het Engels: **Supplier is saved successfully**. Het opslaan wijzigt de stamgegevens. De demonstratie keurt geen leverancier goed en verstuurt geen uitnodiging.
+
 ## Leveranciersdashboard <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 Je kunt het **Leveranciersdashboard** openen vanuit het menu aan de linkerkant, zoals hieronder weergegeven.

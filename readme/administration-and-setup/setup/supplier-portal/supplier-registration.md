@@ -25,3 +25,5 @@ Ergänzen Sie die von der Organisation angeforderten Daten und gegebenenfalls Na
 Bei einem ungültigen Einladungslink, fehlender Berechtigung oder unklaren Pflichtangaben wenden Sie sich an die einladende Organisation. Ein sichtbarer Lieferantenstammsatz im internen Dashboard ersetzt weder Ihre Registrierung noch die erforderliche Zugangsfreigabe.
 
 [Zur Einrichtung des Lieferantenportals](README.md).
+
+[Video: Portalzugang und Registrierung vorbereiten – mit deutschen Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.html)

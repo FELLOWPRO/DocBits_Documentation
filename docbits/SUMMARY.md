@@ -712,7 +712,7 @@
         * [Assign Document and Create Task/Notification](administration-and-setup/workflow/cards-overview/then/task/assign-document-and-create-task-notification.md)
       * [Table](administration-and-setup/workflow/cards-overview/then/table/README.md)
         * [Change Entries with](administration-and-setup/workflow/cards-overview/then/table/change-entries-with.md)
-        * [Calculate Columns with](administration-and-setup/workflow/cards-overview/then/table/calculate-columns-with.md)
+        * [Calculate columns](administration-and-setup/workflow/cards-overview/then/table/calculate-columns-with.md)
         * [Calculate in](administration-and-setup/workflow/cards-overview/then/table/calculate-in.md)
       * [Assignee](administration-and-setup/workflow/cards-overview/then/assignee/README.md)
         * [Assign user from field](administration-and-setup/workflow/cards-overview/then/assignee/assign-user-from-field.md)

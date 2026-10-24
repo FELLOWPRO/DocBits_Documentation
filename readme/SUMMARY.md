@@ -18,6 +18,7 @@
 * [Dvofaktorska autentifikacija (2FA)](overview-and-basics/two-factor-authentication.md)
 * [End User Section](<README (1).md>)
   * [Globalna Brza Pretraga](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Video zapisi i uputstva](end-user-and-partner-section/end-user-section/videos-and-tutorials.md)
   * [Mapa Sajta](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Prilagodljiva Bočna Traka](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Tabla Ideja](end-user-and-partner-section/end-user-section/idea-board.md)

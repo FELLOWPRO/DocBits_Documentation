@@ -1,107 +1,42 @@
 # Portail fournisseurs
 
-## À quoi sert le portail fournisseurs ?
-
 Le **portail fournisseurs** permet à un administrateur de donner aux fournisseurs de son entreprise un accès à **DocBits**. L’administrateur active le portail et définit quels fournisseurs peuvent l’utiliser et quelles informations ils peuvent consulter.
 
 Un fournisseur invité s’inscrit puis se connecte avec son propre compte. Il peut consulter les informations mises à sa disposition, par exemple le statut de ses commandes d’achat et de ses factures. Les fonctions disponibles dépendent de la configuration de l’organisation.
 
-### De l’activation à l’accès du fournisseur
+## Admin : activer le portail
 
-1. **Activer le portail :** l’administrateur active la fonction dans les paramètres des modules.
-2. **Configurer le portail :** l’administrateur définit les champs d’inscription, le contenu des invitations et les autorisations des fournisseurs.
-3. **Inviter les fournisseurs :** l’administrateur sélectionne les fournisseurs concernés et leur envoie une invitation.
-4. **Accéder en tant que fournisseur :** le fournisseur suit l’invitation, effectue les étapes d’inscription et d’approbation prévues, puis utilise son accès à DocBits.
+1. Dans les paramètres, ouvrez les modules puis la rubrique **Intégration de documents**.
+2. Développez **Expédition et fournisseur** et activez **Tableau de bord du fournisseur**.
+3. Si une fenêtre d’activation apparaît, vérifiez l’offre affichée et confirmez l’activation souhaitée.
 
-L’activation du portail ne donne pas, à elle seule, accès aux fournisseurs. La création ou la modification d’une fiche fournisseur ne remplace ni l’invitation ni l’autorisation d’accès.
+<figure><img src="../../../.gitbook/assets/portal-module-20261024-fr.png" alt="Option du portail dans le module d’expédition et de fournisseurs. Cet interrupteur active la fonction pour l’organisation."><figcaption><p>Option du portail dans le module d’expédition et de fournisseurs. Cet interrupteur active la fonction pour l’organisation.</p></figcaption></figure>
 
-## Présentation
+## Admin : configurer le portail
 
-Le portail permet de gérer l’inscription et l’accès des fournisseurs. Les informations et les actions proposées dépendent des autorisations, du modèle de portail et de l’intégration de votre organisation. Créer un enregistrement ne donne pas automatiquement accès à tous les documents de DocBits.
+Configurez le portail de votre organisation avant d’envoyer les premières invitations :
 
-## Accéder à la fonction
+- [Paramètres généraux des fournisseurs](../../settings/supplier-setting/supplier-general-settings.md): Champs supplémentaires d’invitation, statuts, logo et informations de confidentialité.
+- [Modèles d’e-mail](../../settings/supplier-setting/editing-email-templates.md): Contenu et présentation des messages d’invitation.
+- [Mise en page fournisseur](../../settings/supplier-setting/supplier-layout.md): Champs d’inscription des fournisseurs et de gestion interne. Sélectionnez le type de mise en page approprié.
+- [Autorisations des fournisseurs](../../settings/supplier-setting/supplier-permissions.md): Affectation des collaborateurs internes aux groupes de fournisseurs. Ces responsabilités internes sont distinctes de l’accès personnel du fournisseur au portail.
 
-Dans **Paramètres → Module → Intégration de documents**, examinez **Expédition et fournisseur** et **Tableau de bord du fournisseur**. Ne modifiez l’option que si votre organisation doit l’utiliser et dispose des droits nécessaires. Les images montrent l’état existant, sans activation réalisée pendant cette vérification.
+<figure><img src="../../../.gitbook/assets/portal-general-20261024-fr.png" alt="Paramètres généraux des fournisseurs avec l’option de champs supplémentaires d’invitation."><figcaption><p>Paramètres généraux des fournisseurs avec l’option de champs supplémentaires d’invitation.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/site-extra-modules-document-integration-fr.png" alt="Modules d’intégration de documents dans la version illustrée. Repérez Expédition et fournisseur pour le portail ; aucun module ni abonnement n’a été activé pendant cette vérification."><figcaption><p>Modules d’intégration de documents dans la version illustrée. Repérez Expédition et fournisseur pour le portail ; aucun module ni abonnement n’a été activé pendant cette vérification.</p></figcaption></figure>
+## Admin : inviter les fournisseurs
 
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-portal-module-fr.png" alt="Expédition et fournisseur avec Tableau de bord du fournisseur dans son état existant. Aucun interrupteur n’a été modifié."><figcaption><p>Expédition et fournisseur avec Tableau de bord du fournisseur dans son état existant. Aucun interrupteur n’a été modifié.</p></figcaption></figure>
+Ouvrez la gestion des fournisseurs. Avant toute invitation, vérifiez l’entreprise, le groupe, le contact et l’adresse e-mail. Lors de la création d’un fournisseur, l’enregistrement demande l’envoi de l’invitation à s’inscrire ; il ne conserve pas simplement un brouillon. Pour un fournisseur existant, utilisez l’action d’invitation correspondante. Une confirmation d’envoi ne prouve ni la réception du message ni la fin de l’inscription.
 
-## Réglages du fournisseur
+<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-fr.png" alt="Gestion interne de trois entreprises fictives. Les trois fournisseurs n’ont pas encore terminé leur inscription."><figcaption><p>Gestion interne de trois entreprises fictives. Les trois fournisseurs n’ont pas encore terminé leur inscription.</p></figcaption></figure>
 
-Dans la section fournisseurs des paramètres, **Général** permet d’examiner les champs supplémentaires de l’invitation, les statuts et le regroupement des identifiants. Les noms de statuts configurés, par exemple **Open**, peuvent appartenir au flux de votre organisation.
+<figure><img src="../../../.gitbook/assets/portal-invitation-20261024-fr.png" alt="Formulaire de création et d’invitation d’un fournisseur. Vérifiez l’entreprise, le contact et l’adresse e-mail avant l’enregistrement."><figcaption><p>Formulaire de création et d’invitation d’un fournisseur. Vérifiez l’entreprise, le contact et l’adresse e-mail avant l’enregistrement.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-general-settings-fr.png" alt="Réglages Général du fournisseur : champs d’invitation, statuts et regroupement des identifiants. Assigned User, Save Changes et Reset sont les libellés anglais encore affichés. Aucune invitation ni modification enregistrée."><figcaption><p>Réglages Général du fournisseur : champs d’invitation, statuts et regroupement des identifiants. Assigned User, Save Changes et Reset sont les libellés anglais encore affichés. Aucune invitation ni modification enregistrée.</p></figcaption></figure>
+## Fournisseur : s’inscrire et accéder à DocBits
 
-Consultez les guides propres à chaque zone :
+Le fournisseur ouvre son invitation, crée ou utilise le compte personnel prévu et suit les étapes d’inscription configurées. Il peut ensuite consulter les informations mises à sa disposition dans DocBits. Le déroulement exact et les fonctions disponibles dépendent de l’organisation.
 
-* [Paramètres généraux du fournisseur](../../settings/supplier-setting/supplier-general-settings.md) : réglages du portail et références aux éléments légaux et à l’identité visuelle.
-* [Modèles de courriel](../../settings/supplier-setting/editing-email-templates.md) : contenu des invitations.
-* [Mise en page du fournisseur](../../settings/supplier-setting/supplier-layout.md) : informations demandées à l’inscription.
-* [Configuration d’exportation](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md) : intégration et correspondances pour Infor M3.
-* [Autorisations des fournisseurs](../../settings/supplier-setting/supplier-permissions.md) : accès et groupes.
+[Guide d’inscription des fournisseurs](supplier-registration.md).
 
-L’[index des paramètres du fournisseur](../../settings/supplier-setting/) regroupe ces guides. L’illustration de Général ne montre ni exportation ni invitation envoyée.
+## Comprendre les accès et les statuts
 
-## Vidéo : rechercher un fournisseur et mettre à jour ses données
-
-Cette vidéo en français montre comment rechercher un fournisseur fictif, ouvrir ses détails, modifier sa ville et son code postal, puis vérifier l’enregistrement après avoir rechargé la page.
-
-**À propos de la vidéo suivante :** elle montre la recherche et la modification des données d’un fournisseur par un administrateur en interne. Elle ne montre ni l’activation du portail ni la connexion d’un fournisseur.
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/fr.mp4" %}
-Démonstration en français avec un administrateur synthétique et l’interface de test réelle de DocBits.
-{% endembed %}
-
-[Ouvrir la vidéo avec les sous-titres français et la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/fr.html).
-
-L’exemple utilise une mise en page configurée avec les champs **Nom du fournisseur**, **Ville** et **Code postal**. Les valeurs **Köln** et **50667** sont visibles à l’écran ; les champs disponibles dépendent de la configuration de votre organisation. **Enregistrer** met à jour les données de base sans approuver le fournisseur ni envoyer d’invitation. Le message de confirmation de l’interface présentée reste actuellement en anglais.
-
-## Tableau de bord <a href="#supplier-permissions" id="supplier-permissions"></a>
-
-Ouvrez le tableau depuis la navigation fournisseurs. La liste montre les enregistrements accessibles à votre utilisateur ; les compteurs et la disposition appartiennent à l’environnement illustré.
-
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-dashboard-overview-fr.png" alt="Tableau des fournisseurs avec les données des lignes masquées. Les compteurs concernent l’environnement de test. Le libellé de nom de contact Supplier Responder Dernier nom reste partiellement anglais."><figcaption><p>Tableau des fournisseurs avec les données des lignes masquées. Les compteurs concernent l’environnement de test. Le libellé de nom de contact Supplier Responder Dernier nom reste partiellement anglais.</p></figcaption></figure>
-
-## Filtrer les fournisseurs
-
-Utilisez **Recherche par nom, numéro**, le contrôle des critères et les catégories **tous les fournisseurs**, **En attente de validation** ou **Enregistrement en cours**. Examinez les critères actifs avant d’interpréter les résultats. La pagination détermine le nombre de lignes affichées.
-
-## Comprendre les statuts
-
-Les étapes d’inscription et d’approbation dépendent du flux configuré. Un statut d’inscription en attente n’est pas une approbation, et un statut unique ne démontre pas à lui seul l’étendue des accès. Vérifiez les contrôles et les permissions prévus par votre organisation.
-
-## Outils du tableau
-
-### Actualiser la liste <a href="#refresh-table" id="refresh-table"></a>
-
-La flèche circulaire recharge les données. Actualiser la liste n’envoie pas une invitation et ne modifie pas le statut d’un fournisseur.
-
-### Configurer les colonnes <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-Ouvrez la configuration de colonnes près de la recherche. Ce dialogue concerne les **fournisseurs**, pas les commandes. Les cases et flèches déplacent les champs entre **Colonnes cachées** et **Colonnes visibles**. Vous pouvez réorganiser les colonnes visibles ; **Terminé** confirme les changements et **Annuler** ferme sans confirmation. Examinez le périmètre de la préférence avant de l’enregistrer.
-
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-columns-dialog-fr.png" alt="Paramètres de colonnes des fournisseurs, avec Colonnes cachées et Colonnes visibles. Supplier Responder Dernier nom est un libellé natif incorrect. Aucune sélection ni disposition n’a été enregistrée."><figcaption><p>Paramètres de colonnes des fournisseurs, avec Colonnes cachées et Colonnes visibles. Supplier Responder Dernier nom est un libellé natif incorrect. Aucune sélection ni disposition n’a été enregistrée.</p></figcaption></figure>
-
-### Analyse <a href="#analytics" id="analytics"></a>
-
-Le bouton de graphique ouvre les informations d’échéance disponibles. Les périodes et compteurs dépendent des données de l’organisation ; ils ne représentent pas nécessairement une expiration de l’accès à DocBits. Vérifiez le filtre sélectionné pour comprendre la liste résultante.
-
-## Créer un fournisseur et demander son inscription
-
-1. Ouvrez **+** pour afficher **Ajouter un fournisseur**.
-2. Vérifiez le groupe, le nom du fournisseur et les coordonnées de contact. Les champs supplémentaires dépendent de la configuration.
-3. Avant **Enregistrer**, vérifiez le destinataire et l’autorisation d’envoyer une invitation. Cette action peut demander l’envoi du lien d’inscription ; ce n’est pas nécessairement un simple brouillon sans communication externe.
-4. Examinez le résultat. Une demande acceptée ne garantit pas que le message a été remis au destinataire ; contrôlez la livraison en cas d’absence de réception.
-
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-create-dialog-fr.png" alt="Formulaire initial Ajouter un fournisseur, vide. Supplier Responder Dernier nom désigne le nom du contact. Enregistrer peut demander l’envoi du lien d’inscription ; aucun fournisseur ni courriel n’a été créé pour cette illustration."><figcaption><p>Formulaire initial Ajouter un fournisseur, vide. Supplier Responder Dernier nom désigne le nom du contact. Enregistrer peut demander l’envoi du lien d’inscription ; aucun fournisseur ni courriel n’a été créé pour cette illustration.</p></figcaption></figure>
-
-Le champ natif **Supplier Responder Dernier nom** désigne le nom du contact ; son libellé reste incorrect. Le formulaire illustré est vide : aucun fournisseur n’a été créé et aucun courriel n’a été envoyé pendant la prise de vue.
-
-## Inviter un fournisseur existant
-
-Repérez le bon enregistrement et l’action **Magic Link**, si elle est disponible pour votre rôle et son statut. Vérifiez les coordonnées avant de confirmer **Envoyer**. Cette opération demande un courriel d’inscription ; elle n’a pas été exécutée pour cette documentation.
-
-## Inscription du fournisseur
-
-Après réception d’une invitation valide, le fournisseur suit le lien et complète les informations et étapes demandées. Consultez le [processus d’inscription](supplier-registration.md). L’accès final dépend des autorisations et des approbations configurées.
+L’activation du portail, l’envoi d’une invitation, la fin de l’inscription et l’approbation sont des états distincts. Une fiche fournisseur ou des données de référence enregistrées ne prouvent pas que l’accès au portail est prêt. La vue fournisseur dépend des autorisations attribuées et diffère de la vue interne de l’administrateur.

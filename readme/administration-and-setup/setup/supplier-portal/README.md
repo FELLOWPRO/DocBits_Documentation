@@ -1,5 +1,20 @@
 # Portale fornitori
 
+## A cosa serve il portale fornitori?
+
+Il **portale fornitori** permette a un amministratore di dare ai fornitori della propria azienda accesso a **DocBits**. L’amministratore attiva il portale e configura quali fornitori possono utilizzarlo e quali informazioni possono consultare.
+
+Un fornitore invitato si registra e accede con il proprio account. Può quindi consultare le informazioni messe a sua disposizione, ad esempio lo stato dei propri ordini di acquisto e delle fatture. Le funzioni disponibili dipendono dalla configurazione dell’organizzazione.
+
+### Dall’attivazione all’accesso del fornitore
+
+1. **Attivare il portale:** l’amministratore abilita la funzione nelle impostazioni dei moduli.
+2. **Configurare il portale:** l’amministratore definisce i campi di registrazione, i testi degli inviti e le autorizzazioni dei fornitori.
+3. **Invitare i fornitori:** l’amministratore seleziona i fornitori previsti e invia loro un invito.
+4. **Accedere come fornitore:** il fornitore segue l’invito, completa i passaggi di registrazione e approvazione previsti e poi utilizza il proprio accesso a DocBits.
+
+L’attivazione del portale, da sola, non concede l’accesso ad alcun fornitore. Creare o modificare una scheda fornitore non sostituisce l’invito né l’autorizzazione all’accesso.
+
 ## Disponibilità e autorizzazioni
 
 Il portale consente ai fornitori autorizzati di partecipare al processo di registrazione e consultare i dati resi disponibili dall’organizzazione. La visibilità di ordini, fatture e funzioni dipende dalle autorizzazioni e dalla configurazione assegnate.
@@ -50,6 +65,8 @@ Consulta la [registrazione del fornitore](supplier-registration.md) per il perco
 ## Video: cercare un fornitore e aggiornare i dati anagrafici
 
 Questo video in italiano mostra come un amministratore cerca un fornitore di esempio, apre i suoi dettagli, modifica città e codice postale, salva e verifica i valori dopo aver ricaricato la pagina.
+
+**Informazioni sul video seguente:** mostra la ricerca e la manutenzione interna dei dati di un fornitore da parte di un amministratore. Non mostra l’attivazione del portale né l’accesso di un fornitore.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/it.mp4" %}
 Dimostrazione in italiano con un personaggio sintetico e la vera interfaccia DocBits di un’organizzazione di prova.

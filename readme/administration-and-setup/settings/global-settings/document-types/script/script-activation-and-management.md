@@ -1,5 +1,15 @@
 # Skriptaktivierung und -verwaltung
 
+## Videoanleitung: Skripte verwalten
+
+Figur, Büro und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit Demo-Daten.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v1/de.mp4" %}
+Skripte eines Dokumenttyps verwalten
+{% endembed %}
+
+Das Video zeigt die Skriptliste mit Filter und Sortierung, das Aktivieren und Deaktivieren, das Kopieren, den Versionsverlauf und das Löschen mit Rückfrage.
+
 ## Hier ist eine Anleitung, wie Sie bestehende Skripte in DocBits aktivieren, deaktivieren und verwalten können, um sie an Ihre aktuellen Verarbeitungsanforderungen anzupassen:
 
 **Anmelden bei DocBits:**

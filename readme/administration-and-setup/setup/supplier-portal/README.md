@@ -6,13 +6,11 @@ Un fournisseur invité s’inscrit puis se connecte avec son propre compte. Il p
 
 ## Vidéo : préparer le portail fournisseurs et les accès
 
-Un administrateur fictif présente l’option du portail, le choix du forfait, la préparation d’une invitation et l’entrée dans l’inscription. Activation, envoi, inscription et approbation sont expliqués comme des étapes distinctes.
+Un administrateur présente l’option du portail, le choix du forfait, la préparation d’une invitation et l’entrée dans l’inscription. Activation, envoi, inscription et approbation sont expliqués comme des étapes distinctes.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/fr.mp4" %}
 
 [Ouvrir la vidéo avec sous-titres français et sélection des chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/fr.html)
-
-*Le personnage et la voix sont synthétiques. L’interface provient d’une organisation de démonstration DocBits.*
 
 ## Admin : activer le portail
 

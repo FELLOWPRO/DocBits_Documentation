@@ -45,3 +45,16 @@ Il salvataggio può richiedere l’invio di un’e-mail di registrazione: contro
 Per un fornitore già esistente, usa il processo di invito autorizzato previsto dalla tua installazione. Le azioni della riga e il relativo invio non sono stati eseguiti durante questa verifica.
 
 Consulta la [registrazione del fornitore](supplier-registration.md) per il percorso del destinatario. La verifica delle immagini non ha creato fornitori, salvato impostazioni o inviato inviti.
+
+
+## Video: cercare un fornitore e aggiornare i dati anagrafici
+
+Questo video in italiano mostra come un amministratore cerca un fornitore di esempio, apre i suoi dettagli, modifica città e codice postale, salva e verifica i valori dopo aver ricaricato la pagina.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/it.mp4" %}
+Dimostrazione in italiano con un personaggio sintetico e la vera interfaccia DocBits di un’organizzazione di prova.
+{% endembed %}
+
+[Apri il video con sottotitoli e trascrizione in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/it.html).
+
+La dimostrazione usa tre aziende fittizie e un modulo preparato con nome, città e codice postale. Il fornitore di imballaggi viene cercato per nome; la città viene impostata su **Köln** e il codice postale su **50667**. Dopo il salvataggio e il ricaricamento i valori sono ancora presenti. Lo stato del fornitore resta in attesa di registrazione: il salvataggio dei dati anagrafici non costituisce un’approvazione. Il video non invia inviti e non mostra il completamento della registrazione.

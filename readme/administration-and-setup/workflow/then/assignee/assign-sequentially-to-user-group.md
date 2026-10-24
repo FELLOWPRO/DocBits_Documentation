@@ -1,6 +1,8 @@
 # Opeenvolgend toewijzen aan gebruiker/groep
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61e424b9ad8c-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_v2-nl-nl.png" alt="Opeenvolgend toewijzen aan gebruiker/groep, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_decision_table_sequential_no_variables_v2-nl-nl.png" alt="Wijs het document sequentieel toe aan Gebruiker/Groep op basis van de beslissingstabel. — Versie 2" width="634"><figcaption><p>Wijs het document sequentieel toe aan Gebruiker/Groep op basis van de beslissingstabel. — Versie 2</p></figcaption></figure>
 
 ## **Doel**
 

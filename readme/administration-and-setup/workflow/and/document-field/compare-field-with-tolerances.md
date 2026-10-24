@@ -1,6 +1,6 @@
 # Vergelijk Veld met toleranties
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_tolerances_v2-nl-nl.png" alt="Vergelijk Veld met toleranties, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## Wanneer gebruikt u deze kaart?
 

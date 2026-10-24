@@ -18,7 +18,6 @@ Hier tragen Sie Ihre Angaben ein und beschreiben den Fehler. Sie können außerd
 Dieses deutsche Video zeigt das Supportformular über den Eintrag **Support** in der Seitenleiste. Ein Administrator gibt fiktive Kontaktdaten und eine nachvollziehbare Beispielnachricht ein, wählt die Priorität **Niedrig** und verwirft den Entwurf mit **Abbrechen**. Danach öffnet er das Formular erneut: Die Nachricht ist leer und die Priorität steht wieder auf **Mittel**.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/support-request-draft-admin/v1/de.mp4" %}
-Deutsche Demonstration mit einer synthetischen Person und ausschließlich fiktiven Beispieleingaben in einer DocBits-Testorganisation.
 {% endembed %}
 
 [Video mit deutschen Untertiteln und Transkript öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/support-request-draft-admin/v1/de.html).

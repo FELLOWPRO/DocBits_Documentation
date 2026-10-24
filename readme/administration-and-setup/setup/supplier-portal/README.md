@@ -6,13 +6,11 @@ Zaproszony dostawca rejestruje się i loguje na własne konto. Może wtedy przeg
 
 ## Film: przygotowanie portalu dostawców i dostępu
 
-Fikcyjny administrator przedstawia opcję portalu, wybór planu, przygotowanie zaproszenia i stronę rejestracji. Aktywacja, wysyłka, rejestracja i zatwierdzenie są wyjaśnione jako osobne kroki.
+Administrator przedstawia opcję portalu, wybór planu, przygotowanie zaproszenia i stronę rejestracji. Aktywacja, wysyłka, rejestracja i zatwierdzenie są wyjaśnione jako osobne kroki.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pl.mp4" %}
 
 [Otwórz film z polskimi napisami i wyborem rozdziałów](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pl.html)
-
-*Postać i głos są syntetyczne. Interfejs pochodzi z organizacji demonstracyjnej DocBits.*
 
 ## Administrator: włączenie portalu
 

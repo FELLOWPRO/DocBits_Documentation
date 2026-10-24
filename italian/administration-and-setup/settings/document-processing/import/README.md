@@ -67,8 +67,6 @@ I registri di connessione aiutano a indagare i problemi di comunicazione; quelli
 
 ## Video tutorial: Casella di posta e ricerca errori
 
-Il personaggio e la voce sono sintetici. La registrazione mostra la vera interfaccia di test DocBits con fatture di formazione sintetiche.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/it.mp4" %}
 Casella di posta e ricerca errori
 {% endembed %}

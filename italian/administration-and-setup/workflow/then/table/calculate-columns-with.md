@@ -16,8 +16,6 @@ Usala per calcolare gli importi delle righe prima dell’azione successiva del w
 
 [Guarda il video con sottotitoli italiani](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.html) · [Leggi la trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.txt)
 
-L’amministratore e la sua voce sono sintetici. La dimostrazione usa l’interfaccia reale di DocBits e una fattura fittizia.
-
 ## Configurazione della scheda
 
 | Campo | Selezione dell’esempio |

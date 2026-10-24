@@ -300,8 +300,6 @@ Per creare una nuova esportazione:
 
 ## Video tutorial: Configurare e testare l’esportazione verso l’ERP
 
-Il personaggio e la voce sono sintetici. La registrazione mostra la vera interfaccia di test DocBits con fatture di formazione sintetiche.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/it.mp4" %}
 Configurare e testare l’esportazione verso l’ERP
 {% endembed %}

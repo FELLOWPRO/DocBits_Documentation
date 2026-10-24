@@ -10,7 +10,7 @@ Approuver ou rejeter une facture
 
 L'application réelle est affichée ; la formulation des options peut dépendre de la version déployée.
 
-Utilisez l’approbation pour enregistrer votre décision après avoir vérifié le contenu d’une facture déjà validée. Vous avez besoin d'accéder au document et de l'autorisation pour son étape d'approbation actuelle. La vidéo utilise un compte de vérification standard, des factures synthétiques préparées et une présentatrice fictive.
+Utilisez l’approbation pour enregistrer votre décision après avoir vérifié le contenu d’une facture déjà validée. Vous avez besoin d'accéder au document et de l'autorisation pour son étape d'approbation actuelle. La vidéo utilise un compte de vérification standard.
 
 ## Examiner et décider
 

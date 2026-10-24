@@ -25,7 +25,7 @@ L’utilisatrice et le bureau sont générés par IA. Les manipulations et les r
 
 ## Visite complète du tableau de bord
 
-La cliente fictive de Paris présente la recherche combinée avec AND, les filtres de statut, l’aide à la recherche, les paramètres des colonnes, les statistiques et l’actualisation. L’interface française est enregistrée dans DocBits avec des données de test synthétiques. Le personnage et la voix sont générés par IA.
+La cliente de Paris présente la recherche combinée avec AND, les filtres de statut, l’aide à la recherche, les paramètres des colonnes, les statistiques et l’actualisation.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/fr.mp4" %}
 

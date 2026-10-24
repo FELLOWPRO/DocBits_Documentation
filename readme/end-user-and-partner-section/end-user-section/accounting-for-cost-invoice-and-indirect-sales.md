@@ -103,8 +103,6 @@ Pour les factures non associées automatiquement :
 
 ## Tutoriel vidéo: Répartition d'une facture de frais
 
-Le personnage et la voix sont synthétiques. La capture montre la véritable interface de test DocBits avec des factures de formation synthétiques.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/fr.mp4" %}
 Répartition d'une facture de frais
 {% endembed %}

@@ -13,8 +13,6 @@ Le [guide du tableau de bord](README.md) présente la recherche, les actions et 
 
 ## Tutoriel vidéo: Traiter une facture bloquée
 
-Le personnage et la voix sont synthétiques. La capture montre la véritable interface de test DocBits avec des factures de formation synthétiques.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/fr.mp4" %}
 Traiter une facture bloquée
 {% endembed %}

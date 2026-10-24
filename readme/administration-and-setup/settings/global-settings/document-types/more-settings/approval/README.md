@@ -10,7 +10,7 @@ Configurer et tester les approbations de factures
 
 L'application réelle est affichée ; la formulation des options peut dépendre de la version déployée.
 
-Configurez l'approbation pour le type de document utilisé par votre processus. Identifiez les vérificateurs prévus et décidez si vous avez besoin d'un deuxième examen indépendant. La vidéo utilise un type de test séparé, des factures synthétiques et des comptes de vérificateurs ordinaires temporaires ; son présentateur est fictif.
+Configurez l'approbation pour le type de document utilisé par votre processus. Identifiez les vérificateurs prévus et décidez si vous avez besoin d'un deuxième examen indépendant. La vidéo utilise un type de document séparé et des comptes de vérificateurs ordinaires temporaires.
 
 ## Configurer le type de document
 

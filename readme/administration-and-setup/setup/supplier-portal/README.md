@@ -4,6 +4,16 @@ Il **portale fornitori** permette a un amministratore di dare ai fornitori della
 
 Un fornitore invitato si registra e accede con il proprio account. Può quindi consultare le informazioni messe a sua disposizione, ad esempio lo stato dei propri ordini di acquisto e delle fatture. Le funzioni disponibili dipendono dalla configurazione dell’organizzazione.
 
+## Video: preparare il portale fornitori e l’accesso
+
+Un amministratore fittizio presenta l’opzione del portale, la scelta del piano, la preparazione di un invito e l’avvio della registrazione. Attivazione, invio, registrazione e approvazione sono spiegati come passaggi distinti.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e selezione dei capitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/it.html)
+
+*Il personaggio e la voce sono sintetici. L’interfaccia proviene da un’organizzazione dimostrativa di DocBits.*
+
 ## Admin: attivare il portale
 
 1. Nelle impostazioni, aprire i moduli e selezionare **Integrazione dei documenti**.

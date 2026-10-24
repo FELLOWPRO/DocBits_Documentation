@@ -25,3 +25,5 @@ Inviare i dati tramite l’apposita funzione di completamento. Se è prevista un
 Contattare l’organizzazione che ha inviato l’invito se il link non è valido, mancano autorizzazioni o i dati obbligatori non sono chiari. Una scheda fornitore interna non sostituisce la registrazione né la necessaria approvazione dell’accesso.
 
 [Configurazione del portale fornitori](README.md).
+
+[Video: preparare l’accesso al portale e la registrazione – con sottotitoli in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/it.html)

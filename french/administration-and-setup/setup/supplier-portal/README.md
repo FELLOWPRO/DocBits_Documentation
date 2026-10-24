@@ -28,6 +28,18 @@ Consultez les guides propres à chaque zone :
 
 L’[index des paramètres du fournisseur](../../settings/supplier-setting/) regroupe ces guides. L’illustration de Général ne montre ni exportation ni invitation envoyée.
 
+## Vidéo : rechercher un fournisseur et mettre à jour ses données
+
+Cette vidéo en français montre comment rechercher un fournisseur fictif, ouvrir ses détails, modifier sa ville et son code postal, puis vérifier l’enregistrement après avoir rechargé la page.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/fr.mp4" %}
+Démonstration en français avec un administrateur synthétique et l’interface de test réelle de DocBits.
+{% endembed %}
+
+[Ouvrir la vidéo avec les sous-titres français et la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/fr.html).
+
+L’exemple utilise une mise en page configurée avec les champs **Nom du fournisseur**, **Ville** et **Code postal**. Les valeurs **Köln** et **50667** sont visibles à l’écran ; les champs disponibles dépendent de la configuration de votre organisation. **Enregistrer** met à jour les données de base sans approuver le fournisseur ni envoyer d’invitation. Le message de confirmation de l’interface présentée reste actuellement en anglais.
+
 ## Tableau de bord <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 Ouvrez le tableau depuis la navigation fournisseurs. La liste montre les enregistrements accessibles à votre utilisateur ; les compteurs et la disposition appartiennent à l’environnement illustré.

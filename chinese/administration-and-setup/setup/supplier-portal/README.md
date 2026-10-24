@@ -4,6 +4,16 @@
 
 受邀供应商完成注册后，使用自己的账户登录，即可查看向其开放的信息，例如自己的采购订单和发票状态。具体可用功能取决于组织的配置。
 
+## 视频：准备供应商门户及访问权限
+
+虚构管理员演示门户选项、套餐选择、邀请准备和注册入口。启用、发送邀请、注册和审批分别作为独立步骤说明。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和章节选择的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/zh.html)
+
+*人物和声音均为合成。界面来自 DocBits 演示组织。*
+
 ## 管理员：启用门户
 
 1. 在设置中打开模块，然后选择**文档集成**。

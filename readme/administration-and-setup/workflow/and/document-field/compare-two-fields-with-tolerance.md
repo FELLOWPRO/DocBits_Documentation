@@ -65,7 +65,7 @@ Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organ
 
 ## Admin-Beispielvideo
 
-Wann ich zwei Beträge mit einer zulässigen Abweichung vergleiche und wie ich die Felder und Toleranzen einstelle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann ich zwei Beträge mit einer zulässigen Abweichung vergleiche und wie ich die Felder und Toleranzen einstelle. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-two-fields-tolerance-admin/v1/de.mp4" %}
 

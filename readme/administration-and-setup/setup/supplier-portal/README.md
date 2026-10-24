@@ -6,13 +6,11 @@ Ein eingeladener Lieferant registriert sich und meldet sich mit seinem eigenen Z
 
 ## Video: Lieferantenportal und Zugang vorbereiten
 
-Im Video führt ein fiktiver Administrator durch Portaloption und Tarifauswahl, die Vorbereitung einer Einladung und den Registrierungseinstieg. Aktivierung, Versand, Registrierung und Freigabe werden als getrennte Schritte erklärt.
+Im Video führt ein Administrator durch Portaloption und Tarifauswahl, die Vorbereitung einer Einladung und den Registrierungseinstieg. Aktivierung, Versand, Registrierung und Freigabe werden als getrennte Schritte erklärt.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.mp4" %}
 
 [Video mit deutschen Untertiteln und Kapitelauswahl öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.html)
-
-*Figur und Stimme sind synthetisch. Die Oberfläche stammt aus einer DocBits-Demoorganisation.*
 
 ## Admin: Portal aktivieren
 

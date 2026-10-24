@@ -10,7 +10,7 @@ Rechnung genehmigen oder ablehnen
 
 Gezeigt wird die tatsächliche Anwendung. Die Bezeichnungen können je nach eingesetzter Version abweichen.
 
-Verwenden Sie die Genehmigung, um Ihre fachliche Entscheidung zu einer bereits validierten Rechnung festzuhalten. Sie benötigen Zugriff auf das Dokument und die Berechtigung für die aktuelle Genehmigungsstufe. Das Video verwendet ein normales Prüferkonto, vorbereitete synthetische Rechnungen und eine fiktive Moderatorin.
+Verwenden Sie die Genehmigung, um Ihre fachliche Entscheidung zu einer bereits validierten Rechnung festzuhalten. Sie benötigen Zugriff auf das Dokument und die Berechtigung für die aktuelle Genehmigungsstufe. Das Video verwendet ein normales Prüferkonto.
 
 ## Prüfen und entscheiden
 

@@ -50,7 +50,7 @@ Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organ
 
 ## Admin-Beispielvideo
 
-Wann ich einen festen Text als Kennzeichnung benötige und wie ich ein vorhandenes Dokumentenfeld dafür auswähle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann ich einen festen Text als Kennzeichnung benötige und wie ich ein vorhandenes Dokumentenfeld dafür auswähle. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de.mp4" %}
 

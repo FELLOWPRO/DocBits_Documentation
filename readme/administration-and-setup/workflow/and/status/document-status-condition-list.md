@@ -54,7 +54,7 @@ Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organ
 
 ## Admin-Beispielvideo
 
-Wann einer von mehreren Belegstatus passen darf und wie ich die Statusliste als Bedingung einrichte. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann einer von mehreren Belegstatus passen darf und wie ich die Statusliste als Bedingung einrichte. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-document-status-list-admin/v1/de.mp4" %}
 

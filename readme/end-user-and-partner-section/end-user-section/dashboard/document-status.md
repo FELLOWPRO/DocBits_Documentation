@@ -13,8 +13,6 @@ Suche, Dokumentaktionen und gespeicherte Ansichten erklärt die [Dashboard-Anlei
 
 ## Videoanleitung: Blockierte Rechnungen gezielt weiterbearbeiten
 
-Figur und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit synthetischen Schulungsrechnungen.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/de.mp4" %}
 Blockierte Rechnungen gezielt weiterbearbeiten
 {% endembed %}

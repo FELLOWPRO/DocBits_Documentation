@@ -49,7 +49,7 @@ Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden
 
 ## Admin-Beispielvideo
 
-Wann die Karte hilft, wo sie unter „Und → Dokumentenfeld“ liegt und wie sie fehlende Rechnungsnummern erkennt. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann die Karte hilft, wo sie unter „Und → Dokumentenfeld“ liegt und wie sie fehlende Rechnungsnummern erkennt. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/de.mp4" %}
 

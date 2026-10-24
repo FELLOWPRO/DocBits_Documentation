@@ -9,7 +9,6 @@ Dieser Bereich bietet einen detaillierten Überblick über alle Versandaufträge
 Im deutschen Video sucht ein Administrator eine Beispielposition über die Artikel-ID, vergleicht Bestellbezug und Liefernummer und prüft versendete Menge, Status sowie Lagerhaus. Anschließend leert er die Suche und lädt die Übersicht erneut.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/de.mp4" %}
-Deutsche Demonstration mit einem synthetischen Administrator und der echten DocBits-Testoberfläche.
 {% endembed %}
 
 [Video mit deutschen Untertiteln und Transkript öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/de.html).

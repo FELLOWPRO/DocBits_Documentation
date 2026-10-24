@@ -27,7 +27,7 @@ Configurez le portail de votre organisation avant d’envoyer les premières inv
 
 Ouvrez la gestion des fournisseurs. Avant toute invitation, vérifiez l’entreprise, le groupe, le contact et l’adresse e-mail. Lors de la création d’un fournisseur, l’enregistrement demande l’envoi de l’invitation à s’inscrire ; il ne conserve pas simplement un brouillon. Pour un fournisseur existant, utilisez l’action d’invitation correspondante. Une confirmation d’envoi ne prouve ni la réception du message ni la fin de l’inscription.
 
-<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-fr.png" alt="Gestion interne de trois entreprises fictives. Les trois fournisseurs n’ont pas encore terminé leur inscription."><figcaption><p>Gestion interne de trois entreprises fictives. Les trois fournisseurs n’ont pas encore terminé leur inscription.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-suppliers-focus-20261024-fr.png" alt="Gestion interne de trois entreprises fictives. Les trois fournisseurs n’ont pas encore terminé leur inscription."><figcaption><p>Gestion interne de trois entreprises fictives. Les trois fournisseurs n’ont pas encore terminé leur inscription.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/portal-invitation-20261024-fr.png" alt="Formulaire de création et d’invitation d’un fournisseur. Vérifiez l’entreprise, le contact et l’adresse e-mail avant l’enregistrement."><figcaption><p>Formulaire de création et d’invitation d’un fournisseur. Vérifiez l’entreprise, le contact et l’adresse e-mail avant l’enregistrement.</p></figcaption></figure>
 

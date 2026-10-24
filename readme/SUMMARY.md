@@ -772,7 +772,7 @@
       * [LN](administration-and-setup/setup/testing/auto-accounting/ln.md)
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)
   * [Portail fournisseurs (ancien)](administration-and-setup/setup/supplier-portal-old.md)
-  * [Tableau de bord du fournisseur](administration-and-setup/setup/supplier-portal/README.md)
+  * [Portail fournisseurs](administration-and-setup/setup/supplier-portal/README.md)
     * [Inscription du Fournisseur](administration-and-setup/setup/supplier-portal/supplier-registration.md)
   * [WatchDog](administration-and-setup/setup/watchdog/README.md)
     * [Installation de WatchDog](administration-and-setup/setup/watchdog/watchdog-installation.md)

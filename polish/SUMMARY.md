@@ -712,7 +712,7 @@
         * [Przypisz dokument i utwórz zadanie/powiadomienie](administration-and-setup/workflow/then/task/assign-document-and-create-task-notification.md)
       * [Tabela](administration-and-setup/workflow/then/table/README.md)
         * [Zmień wpisy za pomocą](administration-and-setup/workflow/then/table/change-entries-with.md)
-        * [Oblicz kolumny za pomocą](administration-and-setup/workflow/then/table/calculate-columns-with.md)
+        * [Obliczanie kolumn w tabeli](administration-and-setup/workflow/then/table/calculate-columns-with.md)
         * [Oblicz w](administration-and-setup/workflow/then/table/calculate-in.md)
       * [Osoba przypisana](administration-and-setup/workflow/then/assignee/README.md)
         * [Przypisz użytkownika z pola](administration-and-setup/workflow/then/assignee/assign-user-from-field.md)

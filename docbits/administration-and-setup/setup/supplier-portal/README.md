@@ -1,5 +1,20 @@
 # Supplier Portal
 
+## What is the Supplier Portal for?
+
+The **Supplier Portal** lets an administrator give their company’s suppliers access to **DocBits**. The administrator enables the portal and configures which suppliers can use it and which information they can see.
+
+An invited supplier registers and signs in with their own account. They can then view the information made available to them, such as the status of their purchase orders and invoices. The organisation’s configuration determines which features are available.
+
+### From activation to supplier access
+
+1. **Enable the portal:** The administrator enables the portal feature in the module settings.
+2. **Configure the portal:** The administrator sets up registration fields, invitation content and supplier permissions.
+3. **Invite suppliers:** The administrator selects the intended suppliers and sends their invitations.
+4. **Access as a supplier:** The supplier follows the invitation, completes the required registration and approval steps, and then uses their access to DocBits.
+
+Enabling the portal alone does not grant any supplier access. Creating or editing a supplier master record does not replace an invitation or an access approval.
+
 ## Overview
 
 This page explains how to activate and use the **Supplier Portal**, as well as where to find all relevant settings. The Supplier Portal allows you to invite suppliers to **DocBits**. Once access is granted, suppliers can log in to view the status of their **Purchase Orders** and **Invoices** directly within **DocBits**.
@@ -34,6 +49,8 @@ A detailed guide to all Supplier Settings can be found [here](../../settings/sup
 ## Video: Find suppliers and maintain their details
 
 This English admin tutorial shows how to search the supplier dashboard, change a city and postcode, save, and verify the saved values after reloading. It uses three fictional example companies and a configured form with name, city and postcode. The fields available in your organisation depend on your supplier layout. The example city is Cologne, displayed using its German name, **Köln**.
+
+**About the following video:** It demonstrates internal supplier search and master-data maintenance by an administrator. It does not demonstrate enabling the portal or signing in as a supplier.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/en.mp4" %}
 Find a supplier, update their details and check that the changes were saved.

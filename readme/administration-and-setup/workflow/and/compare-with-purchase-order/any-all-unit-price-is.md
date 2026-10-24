@@ -1,8 +1,12 @@
 # Cena jednostkowa dowolna/wszystkie
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6c572102504a-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v2-pl-pl.png" alt="Cena jednostkowa dowolna/wszystkie, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2a7bdfe3ffe9-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v3-pl-pl.png" alt="Cena jednostkowa dowolna/wszystkie, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v4-pl-pl.png" alt="Cena jednostkowa dowolna/wszystkie, Wersja 4" width="634"><figcaption><p>Wersja 4</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v5-pl-pl.png" alt="Cena jednostkowa dowolna/wszystkie, Wersja 5" width="634"><figcaption><p>Wersja 5</p></figcaption></figure>
 
 ## **Cel:**
 

@@ -1,6 +1,8 @@
 # Utwórz nowe zadanie i przypisz je do użytkownika w polu dokumentu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f325db80cf3-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v1-pl-pl.png" alt="Utwórz nowe zadanie i przypisz je do użytkownika w polu dokumentu, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v3-pl-pl.png" alt="Utwórz nowe zadanie i przypisz je do użytkownika w polu dokumentu, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
 ## **Cel:**
 

@@ -1,6 +1,8 @@
 # Tabela decyzyjna zwraca wyniki
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3db6e383828c-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v2-pl-pl.png" alt="Tabela decyzyjna zwraca wyniki, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-pl-pl.png" alt="Tabela decyzyjna zwraca wyniki, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
 ## **Cel:**
 

@@ -1,6 +1,8 @@
 # Przypisz do grupy
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v2-pl-pl.png" alt="Przypisz do grupy, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-pl-pl.png" alt="Przypisz do grupy, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
 ## Cel:
 

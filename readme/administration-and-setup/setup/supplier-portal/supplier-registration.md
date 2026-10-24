@@ -10,7 +10,7 @@ Prüfen Sie, von welcher Organisation die Einladung stammt und für welche E-Mai
 
 Prüfen Sie vorbelegte Namen und E-Mail-Adresse. Ergänzen Sie die angeforderten Zugangsdaten und beachten Sie die angezeigten Kennwortregeln. Lesen Sie die eingeblendeten Bedingungen und Datenschutzhinweise. Schließen Sie die Kontoregistrierung mit der angezeigten Registrierungsfunktion ab. Ein bereits vorhandener Zugang und eine neue Registrierung sind unterschiedliche Fälle; verwenden Sie den für Ihre Einladung vorgesehenen Ablauf.
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-de.png" alt="Registrierungsformular für den Lieferantenzugang. Gezeigt ist der Einstieg ohne eingegebene Daten; eine Einladung kann Angaben bereits vorbelegen."><figcaption><p>Registrierungsformular für den Lieferantenzugang. Gezeigt ist der Einstieg ohne eingegebene Daten; eine Einladung kann Angaben bereits vorbelegen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-de.png" alt="Registrierungsformular für den Lieferantenzugang. Gezeigt ist der Einstieg ohne eingegebene Daten; eine Einladung kann Angaben bereits vorbelegen."><figcaption><p>Registrierungsformular für den Lieferantenzugang. Gezeigt ist der Einstieg ohne eingegebene Daten; eine Einladung kann Angaben bereits vorbelegen.</p></figcaption></figure>
 
 ## 3. Lieferantenangaben vervollständigen
 

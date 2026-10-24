@@ -13,8 +13,6 @@ Wyszukiwanie, działania i widoki opisuje [przewodnik po pulpicie](README.md).
 
 ## Instrukcja wideo: Obsługa zablokowanych faktur
 
-Postać i głos są syntetyczne. Nagranie pokazuje rzeczywisty interfejs testowy DocBits z syntetycznymi fakturami szkoleniowymi.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/pl.mp4" %}
 Obsługa zablokowanych faktur
 {% endembed %}

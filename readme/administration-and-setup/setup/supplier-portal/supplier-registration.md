@@ -25,3 +25,5 @@
 如果邀请链接无效、缺少权限或不清楚必填信息，请联系邀请您的组织。内部系统中的供应商记录不能代替您的注册或必要的访问审批。
 
 [供应商门户设置](README.md).
+
+[视频：准备门户访问及注册——附中文字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/zh.html)

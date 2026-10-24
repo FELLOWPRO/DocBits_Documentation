@@ -2,9 +2,7 @@
 
 ## Videoanleitung: Skripte verwalten
 
-Figur, Büro und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit Demo-Daten.
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v2/de.mp4" %}
 Skripte eines Dokumenttyps verwalten
 {% endembed %}
 

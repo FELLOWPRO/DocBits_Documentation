@@ -1,65 +1,51 @@
 # Calcola colonne con
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aafc18d42905-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+La scheda applica un’operazione a due colonne di una tabella e salva il risultato in un’altra colonna, per ogni riga.
 
-## **Scopo:**
+## Quando e dove utilizzarla
 
-La scheda di workflow **"Calcola colonne nella tabella"** viene utilizzata per eseguire calcoli tra colonne in una tabella selezionata. Consente agli utenti di selezionare le colonne, applicare un'operazione matematica e memorizzare il risultato in una colonna dei risultati specificata.
+Usala per calcolare gli importi delle righe prima dell’azione successiva del workflow, per esempio **quantità × prezzo unitario**. Aggiungila nella sezione **Poi**, categoria **Tabella**. Prima verifica che le due colonne di ingresso contengano numeri e che i dati siano completi.
 
-## **Componenti della scheda:**
+<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-v2-configured-it-20261024.png" alt="Scheda versione 2: INVOICE_TABLE, Quantità × Prezzo unitario → TOTAL_AMOUNT. L’interfaccia ripete il nome della tabella." width="650"><figcaption><p>Scheda versione 2: INVOICE_TABLE, Quantità × Prezzo unitario → TOTAL_AMOUNT. L’interfaccia ripete il nome della tabella.</p></figcaption></figure>
 
-1. **Nome tabella**
-   * **Descrizione:** Specifica la **tabella** in cui verranno calcolate le colonne.
-   * **Dettaglio:** Viene fornito un menu a discesa di tutte le **tabelle** disponibili per la selezione.
-2. **Nome colonna (1a colonna)**
-   * **Descrizione:** Specifica la **prima colonna** da coinvolgere nel calcolo.
-   * **Dettaglio:** Viene fornito un elenco di tutte le **colonne** disponibili per la selezione.
-3. **Operazione**
-   * **Descrizione:** Definisce l'operazione matematica da applicare tra le colonne selezionate.
-   * **Opzioni:**
-     * **Add (+):** Somma il valore della seconda colonna al valore della prima colonna.
-     * **Sottrarre (-):** Sottrae il valore della seconda colonna dal valore della prima colonna.
-     * **Multiply (\*):** Moltiplica il valore della prima colonna per il valore della seconda colonna.
-     * **Dividi (/):** Divide il valore della prima colonna per il valore della seconda colonna.
-4. **Nome colonna (2a colonna)**
-   * **Descrizione:** Specifica la **seconda colonna** da coinvolgere nel calcolo.
-   * **Dettaglio:** Viene fornito un elenco delle **colonne** disponibili per la selezione.
-5. **Colonna dei risultati**
-   * **Descrizione:** Specifica la **colonna** in cui verrà memorizzato il risultato del calcolo.
-   * **Dettaglio:** Viene fornito un elenco delle **colonne** disponibili in cui verrà salvato il valore calcolato.
+## Video di amministrazione
 
-## **Funzionalità:**
+**Anteprima · 40 secondi · italiano.** Roberto spiega quando usare la scheda, configura la moltiplicazione e mostra i risultati salvati.
 
-* **Valutazione della condizione:**\
-  La scheda esegue la sua azione solo se sia la sezione **"Quando"** che la sezione **"E"** risultano vere.
-* **Calcolo delle colonne:**\
-  La scheda esegue l'operazione matematica selezionata tra le due colonne scelte.
-* **Memorizzazione del risultato:**\
-  Il risultato del calcolo viene memorizzato nella **colonna dei risultati** selezionata.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.mp4" %}
 
-## **Configurazione e impostazione:**
+[Guarda il video con sottotitoli italiani](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.html) · [Leggi la trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/it.txt)
 
-* **Seleziona la tabella:**\
-  Scegli la **tabella** in cui verranno calcolate le colonne.
-* **Scegli le colonne:**\
-  Seleziona la **prima colonna** e la **seconda colonna** che verranno utilizzate nel calcolo.
-* **Seleziona l'operazione:**\
-  Scegli l'operazione matematica (**Add (+)**, **Sottrai (-)**, **Multiply (\*)**, **Divide (/)**) da applicare tra le colonne.
-* **Seleziona la colonna dei risultati:**\
-  Scegli la **colonna dei risultati** in cui verrà memorizzato il calcolo.
+L’amministratore e la sua voce sono sintetici. La dimostrazione usa l’interfaccia reale di DocBits e una fattura fittizia.
 
-## **Conclusione:**
+## Configurazione della scheda
 
-La scheda di workflow **"Calcola colonne nella tabella"** consente agli utenti di eseguire calcoli dinamici tra colonne in una tabella e di memorizzare i risultati in una colonna designata. La scheda offre la flessibilità di applicare diverse operazioni matematiche e garantisce che il risultato venga memorizzato nella colonna specificata.
+| Campo | Selezione dell’esempio |
+| --- | --- |
+| Tabella | `INVOICE_TABLE` |
+| Prima colonna | `QUANTITY` — Quantità |
+| Operazione | `*` — moltiplicazione |
+| Seconda colonna | `UNIT_PRICE` — Prezzo unitario |
+| Colonna del risultato | `TOTAL_AMOUNT` — Importo totale |
+
+Sono disponibili anche `+` (addizione), `-` (sottrazione) e `/` (divisione). L’ordine delle colonne conta per sottrazione e divisione. Seleziona gli identificativi configurati nella tua organizzazione.
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Esempio pratico
 
-**Quando utilizzarlo:** Calcola i totali delle righe dalla quantità e dal prezzo unitario.
+La fattura contiene due righe. Prima del calcolo la colonna del risultato non esiste ancora:
 
-**Configurazione:** Seleziona la tabella `lines`, colonne `quantity` e `unit_price`, moltiplicazione e colonna dei risultati `line_total`.
+| Riga | Quantità | Prezzo unitario | Risultato salvato in `TOTAL_AMOUNT` |
+| --- | ---: | ---: | ---: |
+| 1 | 2 | 10 | 20 |
+| 2 | 3 | 4 | 12 |
 
-**Risultato atteso e controesempio:** Una riga contenente `2` e `10` produce `20`. Testare un'altra riga in modo indipendente e diagnosticare l'input mancante o non numerico anziché trattarlo come un totale valido.
+Nella dimostrazione, la scheda crea la colonna del risultato. I valori **20,00** e **12,00** restano visibili dopo aver riaperto la fattura. In questo esempio le colonne di ingresso e gli importi originali di `NET_AMOUNT` vengono conservati. Se la colonna del risultato scelta contiene già valori, il calcolo li sostituisce.
 
-Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.
+## Controlli e controesempi
+
+- Controlla entrambe le colonne di ingresso e verifica i risultati salvati dopo il calcolo.
+- Nell’esempio illustrato, un prezzo mancante può dare zero. Questo zero non dimostra che i dati siano completi: verifica gli ingressi prima di calcolare.
+- Un testo come `ABC` al posto di un numero provoca un errore di calcolo. Correggi il valore e verifica di nuovo il caso.
+- I casi del prezzo mancante e del testo non numerico nello schema sono risultati attesi per illustrare i controlli; non sono esecuzioni della fattura a due righe mostrata.

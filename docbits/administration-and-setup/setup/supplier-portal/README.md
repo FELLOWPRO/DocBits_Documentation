@@ -27,7 +27,7 @@ Configure the portal for your organisation before sending the first invitations:
 
 Open supplier administration. Before inviting someone, check the company, supplier group, contact person and email address. Saving a new supplier requests the registration invitation to be sent; it does more than store a draft. For an existing supplier, use the relevant invitation action. A send confirmation does not prove email delivery or completed registration.
 
-<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-en.png" alt="Internal supplier administration with three fictional companies. Each status shown here is pending registration."><figcaption><p>Internal supplier administration with three fictional companies. Each status shown here is pending registration.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-suppliers-focus-20261024-en.png" alt="Internal supplier administration with three fictional companies. Each status shown here is pending registration."><figcaption><p>Internal supplier administration with three fictional companies. Each status shown here is pending registration.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/portal-invitation-20261024-en.png" alt="Form for creating and inviting a supplier. Check the company, contact person and email address before saving."><figcaption><p>Form for creating and inviting a supplier. Check the company, contact person and email address before saving.</p></figcaption></figure>
 

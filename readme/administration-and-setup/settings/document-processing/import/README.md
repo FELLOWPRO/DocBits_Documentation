@@ -179,8 +179,6 @@ U kunt de logboeken filteren op onderwerp of afzender, kolommen sorteren in oplo
 
 ## Videohandleiding: Inbox en gericht fouten zoeken
 
-De persoon en stem zijn synthetisch. De opname toont de echte DocBits-testinterface met synthetische trainingsfacturen.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/nl.mp4" %}
 Inbox en gericht fouten zoeken
 {% endembed %}

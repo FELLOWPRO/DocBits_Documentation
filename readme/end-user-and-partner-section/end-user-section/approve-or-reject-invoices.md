@@ -10,7 +10,7 @@ Een factuur goedkeuren of afwijzen
 
 De echte applicatie wordt getoond. De namen van opties kunnen per gebruikte versie verschillen.
 
-Gebruik goedkeuring om uw inhoudelijke beslissing vast te leggen over een factuur die al is gevalideerd. U heeft toegang tot het document nodig en toestemming voor de huidige goedkeuringsfase. De video gebruikt een gewoon beoordelaarsaccount, voorbereide synthetische facturen en een fictieve presentatrice.
+Gebruik goedkeuring om uw inhoudelijke beslissing vast te leggen over een factuur die al is gevalideerd. U heeft toegang tot het document nodig en toestemming voor de huidige goedkeuringsfase. De video gebruikt een gewoon beoordelaarsaccount.
 
 ## Beoordelen en beslissen
 

@@ -37,8 +37,6 @@ Para aceder às configurações OCR:
 
 *   Abra: **Configurações** → **Processamento de documentos** → **Configurações OCR**
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
-
 ## Qualidade OCR
 
 Nesta secção, pode ajustar o controlo deslizante para definir a qualidade mínima dos documentos para o processamento OCR. Mova-o para a esquerda para reduzir o limite ou para a direita para o aumentar.
@@ -52,7 +50,7 @@ Se um documento não atingir a qualidade definida, o DocBits oferece três opç�
 * **Apresentar erro**\
   O processamento é interrompido e é apresentada uma mensagem de erro a indicar que o documento não atingiu a qualidade mínima exigida.
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr-quality-current-pt.png" alt="Qualidade OCR: limite mínimo de qualidade e opção de processamento quando o documento não atinge esse limite."><figcaption><p>Qualidade OCR: limite mínimo de qualidade e opção de processamento quando o documento não atinge esse limite.</p></figcaption></figure>
 
 ## Configurações gerais de OCR
 
@@ -67,12 +65,14 @@ Se um documento não atingir a qualidade definida, o DocBits oferece três opç�
     * Não estiver a obter os resultados pretendidos com a versão selecionada.
     * Estiver a investigar problemas de desempenho ou precisão do OCR.
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr-general-current-pt.png" alt="Configurações gerais de OCR: utilização de E-Text, correção de inclinação com DESKEW e seleção da versão OCR de IA."><figcaption><p>Configurações gerais de OCR: utilização de E-Text, correção de inclinação com DESKEW e seleção da versão OCR de IA.</p></figcaption></figure>
 
 ## Configurações OCR para tabelas
 
 * **Utilizar dados de IA para tabelas, se disponíveis**\
   Quando esta opção está ativa, o DocBits utiliza os dados OCR nas tabelas em vez do texto eletrónico incorporado, mesmo que **Utilizar texto eletrónico, se disponível** esteja ativa.
+
+<figure><img src="../../../.gitbook/assets/ocr-tables-current-pt.png" alt="Configurações de OCR para tabelas: opção de utilização de dados de IA quando disponíveis."><figcaption><p>Configurações de OCR para tabelas: opção de utilização de dados de IA quando disponíveis.</p></figcaption></figure>
 
 ## Configurações OCR para campos de cabeçalho
 
@@ -86,3 +86,5 @@ Se ambas as opções estiverem ativas, o **DocBits** executa a extração nesta 
 **Extração por regras → Extração por IA**\
 \
 <mark style="color:red;">**Nota**</mark>: para obter os melhores resultados e um comportamento consistente, ative ambas as opções. Isto permite ao **DocBits** combinar a extração por regras e por IA nos campos de cabeçalho.
+
+<figure><img src="../../../.gitbook/assets/ocr-header-current-pt.png" alt="Configurações de OCR para campos de cabeçalho: extração por regras e por IA, com a ordem de execução indicada."><figcaption><p>Configurações de OCR para campos de cabeçalho: extração por regras e por IA, com a ordem de execução indicada.</p></figcaption></figure>

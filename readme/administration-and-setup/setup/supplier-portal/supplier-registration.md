@@ -10,7 +10,7 @@ Vérifiez l’organisation à l’origine de l’invitation et l’adresse e-mai
 
 Vérifiez les noms et l’adresse e-mail préremplis. Saisissez les données de compte demandées et respectez les règles de mot de passe affichées. Lisez les conditions et les informations de confidentialité. Terminez la création du compte avec la commande d’inscription. Un compte existant et une nouvelle inscription sont deux cas différents ; suivez le parcours prévu pour votre invitation.
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-fr.png" alt="Formulaire d’inscription au compte fournisseur. Cet exemple est vide ; une invitation peut préremplir certaines informations."><figcaption><p>Formulaire d’inscription au compte fournisseur. Cet exemple est vide ; une invitation peut préremplir certaines informations.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-fr.png" alt="Formulaire d’inscription au compte fournisseur. Cet exemple est vide ; une invitation peut préremplir certaines informations."><figcaption><p>Formulaire d’inscription au compte fournisseur. Cet exemple est vide ; une invitation peut préremplir certaines informations.</p></figcaption></figure>
 
 ## 3. Compléter les informations fournisseur
 

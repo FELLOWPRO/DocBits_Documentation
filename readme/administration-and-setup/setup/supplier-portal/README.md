@@ -1,5 +1,20 @@
 # Leveranciersportaal
 
+## Waarvoor dient het leveranciersportaal?
+
+Met het **leveranciersportaal** geeft een beheerder de leveranciers van zijn bedrijf toegang tot **DocBits**. De beheerder activeert het portaal en stelt in welke leveranciers het mogen gebruiken en welke informatie zij mogen bekijken.
+
+Een uitgenodigde leverancier registreert zich en meldt zich aan met een eigen account. Vervolgens kan de leverancier de beschikbaar gestelde informatie bekijken, zoals de status van de eigen inkooporders en facturen. De configuratie van de organisatie bepaalt welke functies beschikbaar zijn.
+
+### Van activering tot leverancierstoegang
+
+1. **Portaal activeren:** de beheerder schakelt de portaalfunctie in bij de module-instellingen.
+2. **Portaal instellen:** de beheerder stelt registratievelden, uitnodigingsteksten en leveranciersrechten in.
+3. **Leveranciers uitnodigen:** de beheerder selecteert de beoogde leveranciers en stuurt hun een uitnodiging.
+4. **Als leverancier toegang krijgen:** de leverancier volgt de uitnodiging, doorloopt de vereiste registratie- en goedkeuringsstappen en gebruikt daarna de eigen toegang tot DocBits.
+
+Alleen het activeren van het portaal geeft nog geen enkele leverancier toegang. Een leveranciersrecord aanmaken of wijzigen vervangt de uitnodiging en de toegangsgoedkeuring niet.
+
 ## Overzicht
 
 Deze pagina legt uit hoe je het **Leveranciersportaal** activeert en gebruikt, evenals waar je alle relevante instellingen kunt vinden. Het Leveranciersportaal stelt je in staat om leveranciers uit te nodigen voor **DocBits**. Zodra de toegang is verleend, kunnen leveranciers inloggen om de status van hun **Inkooporders** en **Facturen** direct binnen **DocBits** te bekijken.
@@ -34,6 +49,8 @@ Een gedetailleerde gids voor alle Leveranciersinstellingen is hier te [vinden](.
 ## Video: leveranciers zoeken en gegevens bijwerken
 
 Deze Nederlandstalige video laat zien hoe je in het leveranciersdashboard een voorbeeldleverancier zoekt, de leveranciersgegevens opent, de stad en postcode wijzigt en na het opslaan en opnieuw laden controleert of de wijziging behouden blijft.
+
+**Over de volgende video:** deze toont het intern zoeken en bijwerken van leveranciersgegevens door een beheerder. Het activeren van het portaal en het aanmelden als leverancier worden niet getoond.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/nl.mp4" %}
 Nederlandse demonstratie met een synthetische beheerder en de echte DocBits-testinterface.

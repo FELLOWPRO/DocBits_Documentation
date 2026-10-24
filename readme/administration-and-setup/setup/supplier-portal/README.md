@@ -1,77 +1,42 @@
 # Portale fornitori
 
-## A cosa serve il portale fornitori?
-
 Il **portale fornitori** permette a un amministratore di dare ai fornitori della propria azienda accesso a **DocBits**. L’amministratore attiva il portale e configura quali fornitori possono utilizzarlo e quali informazioni possono consultare.
 
 Un fornitore invitato si registra e accede con il proprio account. Può quindi consultare le informazioni messe a sua disposizione, ad esempio lo stato dei propri ordini di acquisto e delle fatture. Le funzioni disponibili dipendono dalla configurazione dell’organizzazione.
 
-### Dall’attivazione all’accesso del fornitore
+## Admin: attivare il portale
 
-1. **Attivare il portale:** l’amministratore abilita la funzione nelle impostazioni dei moduli.
-2. **Configurare il portale:** l’amministratore definisce i campi di registrazione, i testi degli inviti e le autorizzazioni dei fornitori.
-3. **Invitare i fornitori:** l’amministratore seleziona i fornitori previsti e invia loro un invito.
-4. **Accedere come fornitore:** il fornitore segue l’invito, completa i passaggi di registrazione e approvazione previsti e poi utilizza il proprio accesso a DocBits.
+1. Nelle impostazioni, aprire i moduli e selezionare **Integrazione dei documenti**.
+2. Espandere **Spedizioni e fornitori** e attivare **Portale fornitori**.
+3. Se compare una finestra di attivazione, verificare il piano visualizzato e confermare l’attivazione desiderata.
 
-L’attivazione del portale, da sola, non concede l’accesso ad alcun fornitore. Creare o modificare una scheda fornitore non sostituisce l’invito né l’autorizzazione all’accesso.
+<figure><img src="../../../.gitbook/assets/portal-module-20261024-it.png" alt="Opzione del portale nel modulo spedizioni e fornitori. Questo interruttore attiva la funzione per l’organizzazione."><figcaption><p>Opzione del portale nel modulo spedizioni e fornitori. Questo interruttore attiva la funzione per l’organizzazione.</p></figcaption></figure>
 
-## Disponibilità e autorizzazioni
+## Admin: configurare il portale
 
-Il portale consente ai fornitori autorizzati di partecipare al processo di registrazione e consultare i dati resi disponibili dall’organizzazione. La visibilità di ordini, fatture e funzioni dipende dalle autorizzazioni e dalla configurazione assegnate.
+Configurare il portale dell’organizzazione prima di inviare i primi inviti:
 
-Apri **Impostazioni → Modulo → Spedizioni e fornitori** e verifica **Portale fornitori** con l’amministratore.
+- [Impostazioni generali dei fornitori](../../settings/supplier-setting/supplier-general-settings.md): Campi aggiuntivi dell’invito, stati, logo e informazioni sulla privacy.
+- [Modelli email](../../settings/supplier-setting/editing-email-templates.md): Contenuto e presentazione dei messaggi di invito.
+- [Layout fornitore](../../settings/supplier-setting/supplier-layout.md): Campi per la registrazione dei fornitori e la gestione interna. Selezionare il tipo di layout appropriato.
+- [Autorizzazioni dei fornitori](../../settings/supplier-setting/supplier-permissions.md): Assegnazione dei dipendenti interni ai gruppi di fornitori. Queste responsabilità interne sono separate dall’accesso personale del fornitore al portale.
 
-<figure><img src="../../../.gitbook/assets/native-supplier-portal-module-it-20261023.png" alt="Spedizioni e fornitori con Portale fornitori già attivo nell’organizzazione di prova. L’immagine mostra lo stato esistente; nessun modulo o interruttore è stato modificato."><figcaption><p>Spedizioni e fornitori con Portale fornitori già attivo nell’organizzazione di prova. L’immagine mostra lo stato esistente; nessun modulo o interruttore è stato modificato.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-general-20261024-it.png" alt="Impostazioni generali dei fornitori con l’opzione per i campi aggiuntivi dell’invito."><figcaption><p>Impostazioni generali dei fornitori con l’opzione per i campi aggiuntivi dell’invito.</p></figcaption></figure>
 
-## Impostazioni del fornitore
+## Admin: invitare i fornitori
 
-Le impostazioni del fornitore comprendono [impostazioni generali](../../settings/supplier-setting/supplier-general-settings.md), [modelli di e-mail](../../settings/supplier-setting/editing-email-templates.md), layout di registrazione, autorizzazioni e [configurazione di esportazione per M3](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md). Verifica campi richiesti, testi legali e destinatari prima di usare il processo con un fornitore.
+Aprire la gestione dei fornitori. Prima di inviare un invito, controllare azienda, gruppo, referente e indirizzo email. Quando si crea un fornitore, il salvataggio richiede l’invio dell’invito alla registrazione; non salva soltanto una bozza. Per un fornitore esistente, utilizzare l’azione di invito appropriata. Una conferma di invio non dimostra la consegna dell’email né il completamento della registrazione.
 
-<figure><img src="../../../.gitbook/assets/native-supplier-general-settings-it-20261023.png" alt="Impostazioni generali del fornitore, con valori e contenuti configurati mascherati. Assigned User, Save Changes e Reset restano in inglese. Open è un valore di stato configurato, non la prova di un’ulteriore traduzione mancante. Nessuna impostazione è stata salvata."><figcaption><p>Impostazioni generali del fornitore, con valori e contenuti configurati mascherati. Assigned User, Save Changes e Reset restano in inglese. Open è un valore di stato configurato, non la prova di un’ulteriore traduzione mancante. Nessuna impostazione è stata salvata.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-it.png" alt="Gestione interna di tre aziende fittizie. Tutti e tre gli stati indicano una registrazione in attesa."><figcaption><p>Gestione interna di tre aziende fittizie. Tutti e tre gli stati indicano una registrazione in attesa.</p></figcaption></figure>
 
-## Cruscotto fornitori <a href="#supplier-permissions" id="supplier-permissions"></a>
+<figure><img src="../../../.gitbook/assets/portal-invitation-20261024-it.png" alt="Modulo per creare e invitare un fornitore. Controllare azienda, referente ed email prima di salvare."><figcaption><p>Modulo per creare e invitare un fornitore. Controllare azienda, referente ed email prima di salvare.</p></figcaption></figure>
 
-Apri il cruscotto dei fornitori dal menu. La tabella mostra i fornitori accessibili e i contatori dell’organizzazione corrente. Ricerca, filtri di stato e paginazione restringono l’elenco; i valori mostrati non sono valori predefiniti del prodotto.
+## Fornitore: registrarsi e accedere a DocBits
 
-<figure><img src="../../../.gitbook/assets/native-supplier-dashboard-overview-it-20261023.png" alt="Cruscotto fornitori italiano con contatori e tabella esistenti. I dati delle righe sono mascherati mantenendo la struttura: la tabella non è vuota. Le etichette Nome del fornitore e Cognome del fornitore non distinguono chiaramente tutti i campi del contatto."><figcaption><p>Cruscotto fornitori italiano con contatori e tabella esistenti. I dati delle righe sono mascherati mantenendo la struttura: la tabella non è vuota. Le etichette Nome del fornitore e Cognome del fornitore non distinguono chiaramente tutti i campi del contatto.</p></figcaption></figure>
+Il fornitore apre l’invito, crea o utilizza l’account personale previsto e segue i passaggi di registrazione configurati. Può quindi consultare le informazioni rese disponibili in DocBits. La procedura esatta e le funzioni disponibili dipendono dall’organizzazione.
 
-### Aggiornare la tabella <a href="#refresh-table" id="refresh-table"></a>
+[Guida alla registrazione dei fornitori](supplier-registration.md).
 
-Usa il controllo di aggiornamento del cruscotto per ricaricare l’elenco. Rivedi filtri e intervallo selezionati prima di interpretare un risultato vuoto.
+## Comprendere accesso e stati
 
-### Colonne dei fornitori <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-Il selettore di colonne riguarda la **tabella dei fornitori**. Esamina i campi visibili e nascosti e l’eventuale ambito organizzativo prima di salvare una modifica.
-
-<figure><img src="../../../.gitbook/assets/native-supplier-columns-dialog-it-20261023.png" alt="Selettore delle colonne della tabella fornitori. Le etichette dei nomi non distinguono chiaramente azienda e contatto nella versione illustrata. Nessuna visibilità o posizione di colonna è stata salvata."><figcaption><p>Selettore delle colonne della tabella fornitori. Le etichette dei nomi non distinguono chiaramente azienda e contatto nella versione illustrata. Nessuna visibilità o posizione di colonna è stata salvata.</p></figcaption></figure>
-
-### Stato e analisi <a href="#analytics" id="analytics"></a>
-
-Controlla lo stato effettivo del singolo fornitore e i passaggi previsti dalla configurazione. Le categorie possono includere registrazione in attesa, richiesta di integrazioni, approvazione o rifiuto. Non dedurre dal solo contatore che un invito sia stato consegnato o che ogni organizzazione usi le stesse fasi.
-
-## Creazione e invio della registrazione
-
-Apri il comando di creazione e identifica separatamente ragione sociale, dati del contatto ed e-mail. Nella versione illustrata **Nome del fornitore** compare sia per l’azienda sia per il nome del contatto; verifica il significato del campo prima di inserire dati.
-
-<figure><img src="../../../.gitbook/assets/native-supplier-create-dialog-it-20261023.png" alt="Modulo di creazione del fornitore senza dati inseriti. Nome del fornitore è ripetuto per azienda e nome del contatto; Cognome del fornitore indica il cognome del contatto. Nessun fornitore è stato creato e nessuna e-mail è stata richiesta."><figcaption><p>Modulo di creazione del fornitore senza dati inseriti. Nome del fornitore è ripetuto per azienda e nome del contatto; Cognome del fornitore indica il cognome del contatto. Nessun fornitore è stato creato e nessuna e-mail è stata richiesta.</p></figcaption></figure>
-
-Il salvataggio può richiedere l’invio di un’e-mail di registrazione: controlla destinatario e configurazione prima di procedere. Una richiesta di invio non dimostra la consegna del messaggio né la registrazione del fornitore.
-
-Per un fornitore già esistente, usa il processo di invito autorizzato previsto dalla tua installazione. Le azioni della riga e il relativo invio non sono stati eseguiti durante questa verifica.
-
-Consulta la [registrazione del fornitore](supplier-registration.md) per il percorso del destinatario. La verifica delle immagini non ha creato fornitori, salvato impostazioni o inviato inviti.
-
-
-## Video: cercare un fornitore e aggiornare i dati anagrafici
-
-Questo video in italiano mostra come un amministratore cerca un fornitore di esempio, apre i suoi dettagli, modifica città e codice postale, salva e verifica i valori dopo aver ricaricato la pagina.
-
-**Informazioni sul video seguente:** mostra la ricerca e la manutenzione interna dei dati di un fornitore da parte di un amministratore. Non mostra l’attivazione del portale né l’accesso di un fornitore.
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/it.mp4" %}
-Dimostrazione in italiano con un personaggio sintetico e la vera interfaccia DocBits di un’organizzazione di prova.
-{% endembed %}
-
-[Apri il video con sottotitoli e trascrizione in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/it.html).
-
-La dimostrazione usa tre aziende fittizie e un modulo preparato con nome, città e codice postale. Il fornitore di imballaggi viene cercato per nome; la città viene impostata su **Köln** e il codice postale su **50667**. Dopo il salvataggio e il ricaricamento i valori sono ancora presenti. Lo stato del fornitore resta in attesa di registrazione: il salvataggio dei dati anagrafici non costituisce un’approvazione. Il video non invia inviti e non mostra il completamento della registrazione.
+Portale attivato, invito inviato, registrazione completata e approvazione concessa sono stati distinti. Una scheda fornitore o dati anagrafici salvati non dimostrano che l’accesso al portale sia pronto. La vista del fornitore dipende dalle autorizzazioni assegnate ed è diversa dalla vista interna dell’amministratore.

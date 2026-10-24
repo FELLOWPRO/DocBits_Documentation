@@ -8,6 +8,14 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow-card-calc-columns-configured-v2-20261024-zh.png" alt="卡片版本 2：INVOICE_TABLE，数量 × 单价 → TOTAL_AMOUNT。界面会重复显示表格名称。" width="563"><figcaption><p>卡片版本 2：INVOICE_TABLE，数量 × 单价 → TOTAL_AMOUNT。界面会重复显示表格名称。</p></figcaption></figure>
 
+## 管理员视频
+
+**37 秒 · 简体中文。** 陈伟说明何时使用这张卡片，演示乘法配置，并展示同一张示例发票中保存的结果。
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/zh.mp4" %}
+
+[观看带中文字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/zh.html) · [阅读文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/zh.txt)
+
 ## 配置卡片
 
 | 设置 | 示例中的选择 |

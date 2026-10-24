@@ -51,3 +51,4 @@ Scripts only run with the approved script functions. If a script calls a functio
 * [Creating and Editing Scripts](creating-and-editing-scripts.md)
 * [Field Functions](scripting-in-docbits/field-functions.md)
 * [Sample Scripts](scripting-in-docbits/sample-scripts/README.md)
+* [Script Activation and Management](script-activation-and-management.md)

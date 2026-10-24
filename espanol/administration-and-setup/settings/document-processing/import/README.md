@@ -67,8 +67,6 @@ Los registros de conexión ayudan a investigar problemas de comunicación; los r
 
 ## Videotutorial: Bandeja de entrada y búsqueda de errores
 
-El personaje y la voz son sintéticos. La grabación muestra la interfaz de pruebas real de DocBits con facturas de formación sintéticas.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/es.mp4" %}
 Bandeja de entrada y búsqueda de errores
 {% endembed %}

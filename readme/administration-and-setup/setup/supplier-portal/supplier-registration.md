@@ -25,3 +25,5 @@ Transmettez vos informations avec la commande de finalisation prévue. Si une v�
 Contactez l’organisation qui vous invite si le lien est invalide, si des autorisations manquent ou si les données obligatoires sont ambiguës. Une fiche fournisseur interne ne remplace ni votre inscription ni l’approbation d’accès nécessaire.
 
 [Configuration du portail fournisseurs](README.md).
+
+[Vidéo : préparer l’accès au portail et l’inscription – avec sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/fr.html)

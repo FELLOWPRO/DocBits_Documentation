@@ -10,11 +10,11 @@ Utilisez-la pour calculer les montants des lignes avant l’action suivante du w
 
 ## Vidéo d’administration
 
-**Aperçu · 41 secondes · français.** Alain explique quand utiliser la carte, configure la multiplication et montre les résultats enregistrés.
+**41 secondes · français.** Alain explique quand utiliser la carte, configure la multiplication et montre les résultats enregistrés.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/fr.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.mp4" %}
 
-[Lire la vidéo avec des sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/fr.html) · [Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/fr.txt)
+[Lire la vidéo avec des sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.html) · [Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.txt)
 
 L’administrateur et sa voix sont synthétiques. La démonstration utilise l’interface réelle de DocBits et une facture fictive.
 

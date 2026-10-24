@@ -13,8 +13,6 @@ Consulte búsqueda, acciones y vistas guardadas en la [guía del panel](README.m
 
 ## Videotutorial: Resolver facturas bloqueadas
 
-El personaje y la voz son sintéticos. La grabación muestra la interfaz de pruebas real de DocBits con facturas de formación sintéticas.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/es.mp4" %}
 Resolver facturas bloqueadas
 {% endembed %}

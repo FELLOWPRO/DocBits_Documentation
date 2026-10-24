@@ -329,8 +329,6 @@ Para crear una nueva exportación:
 
 ## Videotutorial: Configurar y probar la exportación al ERP
 
-El personaje y la voz son sintéticos. La grabación muestra la interfaz de pruebas real de DocBits con facturas de formación sintéticas.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/es.mp4" %}
 Configurar y probar la exportación al ERP
 {% endembed %}

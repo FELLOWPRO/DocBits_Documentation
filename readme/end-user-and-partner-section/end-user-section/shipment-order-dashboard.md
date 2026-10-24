@@ -10,7 +10,6 @@
 本中文视频演示管理员如何按物料编号查找示例记录，核对订单和交货编号，以及发货数量、状态和仓库。随后，他清空搜索条件并重新加载列表。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/zh.mp4" %}
-使用合成人物和真实 DocBits 测试界面录制的中文演示。
 {% endembed %}
 
 [打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/zh.html)。

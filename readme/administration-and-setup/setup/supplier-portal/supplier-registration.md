@@ -1,35 +1,27 @@
-# Registro de Fornecedor
+# Registro de fornecedores
 
-1. Você receberá um convite com um link por E-mail para iniciar o processo de registro. Clique em “Go to Registration”, envie as informações solicitadas e aceite os termos e condições para começar.\
-   ![](<../../../.gitbook/assets/image (51).png>)![](<../../../.gitbook/assets/image (242) (1).png>)
-2.  **Dados do Fornecedor**
+Este guia destina-se a fornecedores convidados para o portal DocBits de uma organização. Utilize o link do seu convite. Você tem a sua própria conta de fornecedor; a organização que convida define as informações disponíveis e as etapas de registro necessárias.
 
-    Verifique se o nome do Fornecedor está correto. Este é um detalhe essencial para fins de identidade e legais que não pode ser alterado. Forneça todas as informações aplicáveis, incluindo os campos obrigatórios. Quando concluído, clique em “Next” para continuar para a seção Dados de Endereço. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
+## 1. Abrir o convite
 
-    <figure><img src="../../../.gitbook/assets/image (243) (1).png" alt=""><figcaption></figcaption></figure>
-3.  **Dados de Endereço**\
-    Forneça todas as informações aplicáveis, incluindo os campos obrigatórios. Quando concluído, clique em “Next” para continuar para a seção Contato do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
+Verifique qual organização enviou o convite e a que endereço de e-mail se destina. Abra o link de registro desse convite. Se tiver expirado ou for destinado a outra pessoa, solicite um novo convite à organização.
 
-    <figure><img src="../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
-4.  **Contato do Fornecedor**\
-    Forneça todas as informações aplicáveis, incluindo os campos obrigatórios. Quando concluído, clique em “Next” para continuar para a seção Financeiro do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
+## 2. Configurar a sua conta
 
-    <figure><img src="../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
-5.  **Financeiro do Fornecedor**\
-    Forneça todas as informações aplicáveis. Quando concluído, clique em “Next” para continuar para a seção Compras do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
+Confira o nome e o e-mail preenchidos previamente. Insira os dados solicitados e siga as regras de senha apresentadas. Leia os termos e as informações de privacidade. Conclua a criação da conta com a função de registro. Uma conta existente e um novo registro são situações diferentes; siga o processo previsto para o seu convite.
 
-    <figure><img src="../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
-6.  **Compras do Fornecedor**\
-    Forneça todas as informações aplicáveis. Quando concluído, clique em “Next” para continuar para a seção Certificados do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
+<figure><img src="../../../.gitbook/assets/portal-registration-20261024-pt.png" alt="Formulário de registro da conta de fornecedor. O exemplo está vazio; um convite pode preencher previamente alguns dados."><figcaption><p>Formulário de registro da conta de fornecedor. O exemplo está vazio; um convite pode preencher previamente alguns dados.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
-7.  **Certificados do Fornecedor**\
-    Envie todos os certificados exigidos (Imposto, Seguro, Diversificação de Fornecedores). Salve o seu progresso se precisar retornar para concluir o processo de registro mais tarde. Quando concluído, clique em “Send for Approval”.\\
+## 3. Completar os dados do fornecedor
 
-    <figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
-8.  Envie todos os certificados exigidos (Imposto, Seguro, Diversificação de Fornecedores). Salve o seu progresso se precisar retornar para concluir o processo de registro mais tarde. Quando concluído, clique em “Send for Approval”.\\
+Complete os dados e eventuais documentos solicitados pela organização. Os campos e as seções dependem do layout de fornecedor configurado. As marcações e mensagens de validação indicam os dados obrigatórios. Salve o progresso se a tela oferecer essa opção; salvar não equivale automaticamente ao envio final.
 
-    <figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
-9.  Verifique o seu E-mail em busca de uma confirmação de que você concluiu o processo de registro.\\
+## 4. Verificar o registro e a aprovação
 
-    <figure><img src="../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
+Envie os dados por meio da ação de conclusão correspondente. Se houver uma revisão ou aprovação configurada, aguarde o resultado. Depois, entre com a sua própria conta. A organização define quais pedidos, faturas e outras informações você pode consultar.
+
+## Se não conseguir acessar o portal
+
+Entre em contato com a organização que enviou o convite se o link for inválido, faltarem permissões ou os dados obrigatórios não estiverem claros. Uma ficha interna de fornecedor não substitui o seu registro nem a aprovação de acesso necessária.
+
+[Configuração do portal de fornecedores](README.md).

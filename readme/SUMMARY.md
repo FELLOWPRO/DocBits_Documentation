@@ -45,6 +45,7 @@
 * [Section utilisateur final](end-user-and-partner-section/end-user-section/README.md)
   * [Accéder à DocBits et se connecter](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Recherche Rapide Globale](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Vidéos et tutoriels](end-user-and-partner-section/end-user-section/videos-and-tutorials.md)
   * [Plan du Site](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Modifications des adresses web](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [Barre Latérale Personnalisable](end-user-and-partner-section/end-user-section/customizable-sidebar.md)

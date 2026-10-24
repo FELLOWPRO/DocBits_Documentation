@@ -1,4 +1,19 @@
-# Tableau de bord du fournisseur
+# Portail fournisseurs
+
+## À quoi sert le portail fournisseurs ?
+
+Le **portail fournisseurs** permet à un administrateur de donner aux fournisseurs de son entreprise un accès à **DocBits**. L’administrateur active le portail et définit quels fournisseurs peuvent l’utiliser et quelles informations ils peuvent consulter.
+
+Un fournisseur invité s’inscrit puis se connecte avec son propre compte. Il peut consulter les informations mises à sa disposition, par exemple le statut de ses commandes d’achat et de ses factures. Les fonctions disponibles dépendent de la configuration de l’organisation.
+
+### De l’activation à l’accès du fournisseur
+
+1. **Activer le portail :** l’administrateur active la fonction dans les paramètres des modules.
+2. **Configurer le portail :** l’administrateur définit les champs d’inscription, le contenu des invitations et les autorisations des fournisseurs.
+3. **Inviter les fournisseurs :** l’administrateur sélectionne les fournisseurs concernés et leur envoie une invitation.
+4. **Accéder en tant que fournisseur :** le fournisseur suit l’invitation, effectue les étapes d’inscription et d’approbation prévues, puis utilise son accès à DocBits.
+
+L’activation du portail ne donne pas, à elle seule, accès aux fournisseurs. La création ou la modification d’une fiche fournisseur ne remplace ni l’invitation ni l’autorisation d’accès.
 
 ## Présentation
 
@@ -31,6 +46,8 @@ L’[index des paramètres du fournisseur](../../settings/supplier-setting/) reg
 ## Vidéo : rechercher un fournisseur et mettre à jour ses données
 
 Cette vidéo en français montre comment rechercher un fournisseur fictif, ouvrir ses détails, modifier sa ville et son code postal, puis vérifier l’enregistrement après avoir rechargé la page.
+
+**À propos de la vidéo suivante :** elle montre la recherche et la modification des données d’un fournisseur par un administrateur en interne. Elle ne montre ni l’activation du portail ni la connexion d’un fournisseur.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/fr.mp4" %}
 Démonstration en français avec un administrateur synthétique et l’interface de test réelle de DocBits.

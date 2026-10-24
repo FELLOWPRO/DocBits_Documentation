@@ -1,6 +1,8 @@
 # 调用 API
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_call_api_v1-zh-cn.png" alt="调用 API, 版本 1" width="634"><figcaption><p>版本 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_call_api_v2-zh-cn.png" alt="调用 API, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 <!-- workflow-card-call-api-contract-20261022 -->
 

@@ -712,7 +712,7 @@
         * [Document toewijzen en taak/melding maken](administration-and-setup/workflow/then/task/assign-document-and-create-task-notification.md)
       * [Tabel](administration-and-setup/workflow/then/table/README.md)
         * [Invoer wijzigen met](administration-and-setup/workflow/then/table/change-entries-with.md)
-        * [Bereken kolommen met](administration-and-setup/workflow/then/table/calculate-columns-with.md)
+        * [Kolommen berekenen](administration-and-setup/workflow/then/table/calculate-columns-with.md)
         * [Bereken binnen](administration-and-setup/workflow/then/table/calculate-in.md)
       * [Ontvanger](administration-and-setup/workflow/then/assignee/README.md)
         * [Gebruiker uit veld toewijzen](administration-and-setup/workflow/then/assignee/assign-user-from-field.md)

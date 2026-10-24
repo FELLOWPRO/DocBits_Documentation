@@ -14,22 +14,20 @@ Om toegang te krijgen tot de OCR-instellingen:
 
 *   Navigeer naar: **Instellingen** → **Documentverwerking** → **OCR-instellingen**
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_ocr.png)
-
 ## OCR-kwaliteit
 
 In deze sectie kun je de minimale documentkwaliteit instellen die vereist is voor OCR-verwerking door de kwaliteitsregelaar aan te passen. Beweeg de regelaar naar links of rechts om de kwaliteitsdrempel respectievelijk te verlagen of te verhogen.
 
-Als een document niet voldoet aan het gedefinieerde kwaliteitsniveau, biedt DocBits drie opties voor de verwerking:
+Als een document niet voldoet aan het gedefinieerde kwaliteitsniveau, biedt DocBits drie manieren om het document te verwerken:
 
-* **Ren toch maar**\
+* **Verwerken ondanks lage kwaliteit**\
   Het document wordt verwerkt, ongeacht de kwaliteit.
 * **Opnieuw uitvoeren na bevestiging**\
   **DocBits** zal pauzeren en je vragen om te bevestigen of je door wilt gaan met de verwerking.
-* **Gooi fout**\
+* **Stoppen met een foutmelding**\
   De documentverwerking stopt volledig en er wordt een foutmelding weergegeven, waarin staat dat het document niet voldeed aan de vereiste kwaliteitsdrempel.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_1.png)
+<figure><img src="../../../.gitbook/assets/ocr-quality-current-nl.png" alt="Minimale OCR-kwaliteit en de verwerking van documenten onder de ingestelde drempel."><figcaption><p>Minimale OCR-kwaliteit en de verwerking van documenten onder de ingestelde drempel.</p></figcaption></figure>
 
 ## Algemene OCR-instellingen
 
@@ -44,12 +42,14 @@ Als een document niet voldoet aan het gedefinieerde kwaliteitsniveau, biedt DocB
     * Je de gewenste resultaten niet behaalt met de momenteel geselecteerde versie.
     * Je problemen oplost die verband houden met de OCR-prestaties of nauwkeurigheid.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_2.png)
+<figure><img src="../../../.gitbook/assets/ocr-general-current-nl.png" alt="Algemene OCR-instellingen voor E-tekst, het rechtzetten van scans en de OCR-versie."><figcaption><p>Algemene OCR-instellingen voor E-tekst, het rechtzetten van scans en de OCR-versie.</p></figcaption></figure>
 
 ## OCR-instellingen voor tabellen
 
 * **Gebruik AI-gegevens voor tabellen indien beschikbaar**\
   Wanneer ingeschakeld, zal DocBits OCR-gegevens voor tabellen gebruiken in plaats van ingebedde elektronische tekst (E-tekst) — zelfs als de instelling **Gebruik E-tekst indien beschikbaar** is ingeschakeld.
+
+<figure><img src="../../../.gitbook/assets/ocr-tables-current-nl.png" alt="OCR-instellingen voor het gebruik van AI-gegevens bij tabellen."><figcaption><p>OCR-instellingen voor het gebruik van AI-gegevens bij tabellen.</p></figcaption></figure>
 
 ## OCR-instellingen voor headervelden
 
@@ -57,6 +57,8 @@ Als een document niet voldoet aan het gedefinieerde kwaliteitsniveau, biedt DocB
   DocBits zal je vooraf gedefinieerde extractieregels toepassen voor het identificeren van headervelden.
 * **Gebruik AI-extractie**\
   DocBits zal AI gebruiken om headervelden automatisch te detecteren en te extraheren.
+
+<figure><img src="../../../.gitbook/assets/ocr-header-current-nl.png" alt="OCR-instellingen voor regelgebaseerde extractie en AI-extractie van headervelden."><figcaption><p>OCR-instellingen voor regelgebaseerde extractie en AI-extractie van headervelden.</p></figcaption></figure>
 
 **Uitvoeringsvolgorde:**\
 Als beide opties zijn ingeschakeld, zal **DocBits** extractie uitvoeren in de volgende volgorde:\

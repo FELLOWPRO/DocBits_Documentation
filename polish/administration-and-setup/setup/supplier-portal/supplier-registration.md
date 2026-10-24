@@ -1,40 +1,27 @@
-# Rejestracja Dostawcy
+# Rejestracja dostawców
 
-1.  Otrzymasz zaproszenie z linkiem na E-mail, aby rozpocząć proces rejestracji. Proszę kliknąć „Przejdź do rejestracji”, wprowadzić wymagane informacje i zaakceptować warunki, aby rozpocząć. \
+Ta instrukcja jest przeznaczona dla dostawców zaproszonych do portalu DocBits danej organizacji. Użyj linku z zaproszenia. Masz własne konto dostawcy; organizacja zapraszająca określa dostępne informacje i wymagane etapy rejestracji.
 
+## 1. Otwórz zaproszenie
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/supplier_registration_1.png" alt="" width="287"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/supplier_registration_2.png" alt="" width="246"><figcaption></figcaption></figure></div>
-2.  **Szczegóły Dostawcy**
+Sprawdź, która organizacja wysłała zaproszenie i dla jakiego adresu e-mail jest przeznaczone. Otwórz link rejestracyjny z tego zaproszenia. Jeśli wygasł lub dotyczy innej osoby, poproś organizację o nowe zaproszenie.
 
-    Proszę zweryfikować, czy nazwa Dostawcy jest poprawna. To jest kluczowy szczegół dla celów tożsamości i prawnych, którego nie można zmienić. Proszę podać wszystkie stosowne informacje, w tym wymagane pola. Po zakończeniu kliknij „Dalej”, aby przejść do sekcji Danych Adresowych. Aby zapisać postęp i kontynuować później, kliknij „Zapisz.”\
+## 2. Skonfiguruj własne konto
 
+Sprawdź wstępnie uzupełnione imię, nazwisko i adres e-mail. Podaj wymagane dane konta i przestrzegaj wyświetlonych zasad dotyczących hasła. Przeczytaj warunki i informacje o prywatności. Zakończ tworzenie konta przy użyciu funkcji rejestracji. Istniejące konto i nowa rejestracja to różne przypadki; postępuj zgodnie ze ścieżką przewidzianą dla zaproszenia.
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_3.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **Dane Adresowe** Proszę podać wszystkie stosowne informacje, w tym wymagane pola. Po zakończeniu kliknij „Dalej”, aby przejść do sekcji Kontakt z Dostawcą. Aby zapisać postęp i kontynuować później, kliknij „Zapisz.”\
+<figure><img src="../../../.gitbook/assets/portal-registration-20261024-pl.png" alt="Formularz rejestracji konta dostawcy. Pokazano pusty formularz; zaproszenie może wstępnie uzupełnić część danych."><figcaption><p>Formularz rejestracji konta dostawcy. Pokazano pusty formularz; zaproszenie może wstępnie uzupełnić część danych.</p></figcaption></figure>
 
+## 3. Uzupełnij dane dostawcy
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_4.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  **Kontakt z Dostawcą** Proszę podać wszystkie stosowne informacje, w tym wymagane pola. Po zakończeniu kliknij „Dalej”, aby przejść do sekcji Finansowej Dostawcy. Aby zapisać postęp i kontynuować później, kliknij „Zapisz.”\
+Uzupełnij dane i ewentualne dokumenty wymagane przez organizację. Pola i sekcje zależą od skonfigurowanego układu dostawcy. Oznaczenia i komunikaty walidacji wskazują wymagane informacje. Zapisz postęp, jeśli ekran oferuje taką możliwość; zapisanie nie oznacza automatycznie końcowego przesłania.
 
+## 4. Sprawdź rejestrację i zatwierdzenie
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_5.png" alt="" width="404"><figcaption></figcaption></figure>
-5.  **Finanse Dostawcy** Proszę podać wszystkie stosowne informacje. Po zakończeniu kliknij „Dalej”, aby przejść do sekcji Zakupu Dostawcy. Aby zapisać postęp i kontynuować później, kliknij „Zapisz.”\
+Prześlij dane za pomocą przeznaczonej do tego akcji zakończenia. Jeśli skonfigurowano weryfikację lub zatwierdzenie, poczekaj na wynik. Następnie zaloguj się na własne konto. Organizacja określa, jakie zamówienia, faktury i inne informacje możesz przeglądać.
 
+## Jeśli nie możesz uzyskać dostępu
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_6.png" alt="" width="402"><figcaption></figcaption></figure>
-6.  **Zakup Dostawcy** Proszę podać wszystkie stosowne informacje. Po zakończeniu kliknij „Dalej”, aby przejść do sekcji Certyfikatów Dostawcy. Aby zapisać postęp i kontynuować później, kliknij „Zapisz.”\
+Skontaktuj się z organizacją zapraszającą, jeśli link jest nieprawidłowy, brakuje uprawnień lub wymagane dane są niejasne. Wewnętrzny rekord dostawcy nie zastępuje rejestracji ani niezbędnego zatwierdzenia dostępu.
 
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_7.png" alt="" width="401"><figcaption></figcaption></figure>
-7.  **Certyfikaty Dostawcy** Proszę przesłać wszystkie wymagane certyfikaty (Podatek, Ubezpieczenie, Dywersyfikacja Dostawców). Proszę zapisać postęp, jeśli musisz wrócić, aby dokończyć proces rejestracji później. Po zakończeniu kliknij „Wyślij do zatwierdzenia.”\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_8.png" alt="" width="404"><figcaption></figcaption></figure>
-8.  Proszę przesłać wszystkie wymagane certyfikaty (Podatek, Ubezpieczenie, Dywersyfikacja Dostawców). Proszę zapisać postęp, jeśli musisz wrócić, aby dokończyć proces rejestracji później. Po zakończeniu kliknij „Wyślij do zatwierdzenia.”\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_9.png" alt="" width="404"><figcaption></figcaption></figure>
-9.  Proszę sprawdzić swoją skrzynkę E-mail w celu potwierdzenia, że zakończyłeś proces rejestracji.\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_10.png" alt="" width="563"><figcaption></figcaption></figure>
+[Konfiguracja portalu dostawców](README.md).

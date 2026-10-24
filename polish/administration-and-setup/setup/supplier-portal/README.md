@@ -1,154 +1,42 @@
 # Portal dostawców
 
-## Do czego służy portal dostawców?
-
 **Portal dostawców** umożliwia administratorowi udostępnienie **DocBits** dostawcom swojej firmy. Administrator aktywuje portal i określa, którzy dostawcy mogą z niego korzystać oraz jakie informacje mogą przeglądać.
 
 Zaproszony dostawca rejestruje się i loguje na własne konto. Może wtedy przeglądać udostępnione mu informacje, na przykład status swoich zamówień zakupu i faktur. Dostępne funkcje zależą od konfiguracji organizacji.
 
-### Od aktywacji do dostępu dostawcy
+## Administrator: włączenie portalu
 
-1. **Aktywacja portalu:** administrator włącza funkcję w ustawieniach modułów.
-2. **Konfiguracja portalu:** administrator określa pola rejestracji, treść zaproszeń i uprawnienia dostawców.
-3. **Zaproszenie dostawców:** administrator wybiera odpowiednich dostawców i wysyła im zaproszenia.
-4. **Dostęp jako dostawca:** dostawca korzysta z zaproszenia, przechodzi wymagane etapy rejestracji i zatwierdzania, a następnie uzyskuje dostęp do DocBits na swoim koncie.
+1. W ustawieniach otwórz moduły i wybierz **Integracja dokumentów**.
+2. Rozwiń **Wysyłka i dostawca** i włącz **Portal dostawców**.
+3. Jeśli pojawi się okno aktywacji, sprawdź wyświetlony plan i potwierdź wybraną aktywację.
 
-Samo włączenie portalu nie daje dostępu żadnemu dostawcy. Utworzenie lub edycja danych dostawcy nie zastępuje zaproszenia ani zatwierdzenia dostępu.
+<figure><img src="../../../.gitbook/assets/portal-module-20261024-pl.png" alt="Opcja portalu w module wysyłek i dostawców. Ten przełącznik włącza funkcję dla organizacji."><figcaption><p>Opcja portalu w module wysyłek i dostawców. Ten przełącznik włącza funkcję dla organizacji.</p></figcaption></figure>
 
-## Przegląd
+## Administrator: konfiguracja portalu
 
-Ta strona wyjaśnia, jak aktywować i korzystać z **Portalu dostawców**, a także gdzie znaleźć wszystkie odpowiednie **Ustawienia**. Portal dostawców pozwala na zapraszanie dostawców do **DocBits**. Po przyznaniu dostępu, dostawcy mogą zalogować się, aby zobaczyć status swoich **Zamówień zakupu** i **Faktur** bezpośrednio w **DocBits**.
+Skonfiguruj portal organizacji przed wysłaniem pierwszych zaproszeń:
 
-## Jak aktywować Portal dostawców
+- [Ogólne ustawienia dostawców](../../settings/supplier-setting/supplier-general-settings.md): Dodatkowe pola zaproszeń, statusy, logo i informacje o prywatności.
+- [Szablony wiadomości e-mail](../../settings/supplier-setting/editing-email-templates.md): Treść i wygląd wiadomości z zaproszeniami.
+- [Układ dostawcy](../../settings/supplier-setting/supplier-layout.md): Pola rejestracji dostawców i wewnętrznego zarządzania dostawcami. Wybierz odpowiedni typ układu.
+- [Uprawnienia dostawców](../../settings/supplier-setting/supplier-permissions.md): Przypisanie pracowników wewnętrznych do grup dostawców. Te wewnętrzne obowiązki są odrębne od własnego dostępu dostawcy do portalu.
 
-1.  Przejdź do **Ustawienia → Przetwarzanie dokumentów → Moduł**.
+<figure><img src="../../../.gitbook/assets/portal-general-20261024-pl.png" alt="Ogólne ustawienia dostawców z opcją dodatkowych pól zaproszenia."><figcaption><p>Ogólne ustawienia dostawców z opcją dodatkowych pól zaproszenia.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  W sekcji **Wysyłka i dostawca** włącz opcję **Portal dostawców**.
+## Administrator: zapraszanie dostawców
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+Otwórz zarządzanie dostawcami. Przed zaproszeniem sprawdź firmę, grupę dostawców, osobę kontaktową i adres e-mail. Przy tworzeniu dostawcy zapisanie danych zleca wysłanie zaproszenia do rejestracji; nie jest jedynie zapisem wersji roboczej. Dla istniejącego dostawcy użyj odpowiedniej akcji zaproszenia. Potwierdzenie wysłania nie dowodzi doręczenia wiadomości ani ukończenia rejestracji.
 
-## Ustawienia dostawcy
+<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-pl.png" alt="Wewnętrzne zarządzanie trzema fikcyjnymi firmami. Wszystkie trzy statusy wskazują tutaj oczekiwanie na rejestrację."><figcaption><p>Wewnętrzne zarządzanie trzema fikcyjnymi firmami. Wszystkie trzy statusy wskazują tutaj oczekiwanie na rejestrację.</p></figcaption></figure>
 
-Po włączeniu funkcji **Portalu dostawców**, nowa sekcja **Ustawienia dostawcy** pojawi się na dole menu **Ustawienia**.
+<figure><img src="../../../.gitbook/assets/portal-invitation-20261024-pl.png" alt="Formularz tworzenia i zapraszania dostawcy. Przed zapisaniem sprawdź firmę, osobę kontaktową i adres e-mail."><figcaption><p>Formularz tworzenia i zapraszania dostawcy. Przed zapisaniem sprawdź firmę, osobę kontaktową i adres e-mail.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/prior-t012-pl.png" alt="Ustawienia ogólne portalu dostawców: dodatkowe pola zaproszenia."><figcaption><p>Ustawienia ogólne portalu dostawców: dodatkowe pola zaproszenia.</p></figcaption></figure>
+## Dostawca: rejestracja i dostęp do DocBits
 
-[**Ustawienia ogólne dostawcy**](../../settings/supplier-setting/supplier-general-settings.md): Tutaj możesz dostosować **Portal dostawców**, przesyłając logo swojej firmy—wyświetlane w nagłówku wszystkich szablonów e-maili—i zarządzając dokumentami prawnymi, takimi jak Warunki korzystania i Polityka prywatności.
+Dostawca otwiera zaproszenie, tworzy lub wykorzystuje przewidziane własne konto i przechodzi skonfigurowane etapy rejestracji. Następnie może przeglądać udostępnione mu informacje w DocBits. Dokładny przebieg i dostępne funkcje zależą od organizacji.
 
-[**Szablony e-maili**](../../settings/supplier-setting/editing-email-templates.md)**:** Tutaj możesz tworzyć i testować szablony e-maili zaproszeń, które będą wysyłane do zaproszonych dostawców.
+[Instrukcja rejestracji dostawców](supplier-registration.md).
 
-**Układ dostawcy:** Tutaj możesz tworzyć i zarządzać układami, które definiują, jakie informacje nowi dostawcy muszą podać podczas procesu rejestracji.
+## Dostęp i status to różne rzeczy
 
-[**Eksportuj konfigurację**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Tutaj możesz zdefiniować, jak dane są mapowane i synchronizowane między **Portalem dostawców** a systemem **Infor M3** przy użyciu plików mapowania ION i IDM.
-
-**Uprawnienia dostawcy**: Tutaj możesz skonfigurować uprawnienia, które będą miały dostawcy w **Portalu dostawców**. Możesz również grupować dostawców, co ułatwia zarządzanie dostępem i ustawieniami w przypadku wielu dostawców.
-
-Szczegółowy przewodnik po wszystkich Ustawieniach dostawcy można znaleźć [tutaj](../../settings/supplier-setting/).
-
-## Film: wyszukiwanie dostawców i aktualizacja danych
-
-Ten film po polsku pokazuje, jak znaleźć przykładowego dostawcę, otworzyć jego szczegóły, zmienić miasto i kod pocztowy oraz sprawdzić zapis po odświeżeniu strony.
-
-**O poniższym filmie:** pokazuje on wewnętrzne wyszukiwanie i edycję danych dostawcy przez administratora. Nie pokazuje aktywacji portalu ani logowania dostawcy.
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pl.mp4" %}
-Demonstracja po polsku z syntetycznym administratorem i rzeczywistym interfejsem testowym DocBits.
-{% endembed %}
-
-[Odtwarzacz z polskimi napisami i transkrypcją](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pl.html).
-
-Przykład wykorzystuje skonfigurowany układ z polami **Nazwa dostawcy**, **Miasto** i **Kod pocztowy**. Wartości **Köln** i **50667** są widoczne na ekranie; dostępne pola zależą od układu w Twojej organizacji. Przycisk **Zapisz** zapisuje dane podstawowe. Zapis nie zatwierdza dostawcy ani nie wysyła zaproszenia. Komunikat potwierdzenia w pokazanym interfejsie jest obecnie wyświetlany po angielsku.
-
-## Panel dostawcy <a href="#supplier-permissions" id="supplier-permissions"></a>
-
-Możesz uzyskać dostęp do **Panelu dostawcy** z menu po lewej stronie, jak pokazano poniżej.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
-
-Wszystkie Twoje utworzone dostawcy są tutaj wyświetlane.
-
-## Filtruj dostawców
-
-Możesz wyszukiwać dostawców według N**azwy** lub N**umeru**, lub użyć zaawansowanych filtrów, aby zawęzić wyniki według:
-
-* **Grup dostawców**
-* **Statusu**
-* **Utworzone w**
-
-Możesz również określić, ile dostawców powinno być wyświetlanych na stronie.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
-
-Dodatkowo możesz szybko filtrować według statusów **Oczekujące na zatwierdzenie** lub **Oczekująca rejestracja**, klikając odpowiednią kategorię po lewej stronie paska filtrów.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
-
-## Status dostawcy
-
-Jeśli korzystasz z **Portalu dostawców**, ważne jest, aby zrozumieć różne statusy, jakie mogą mieć dostawcy. Poniżej znajduje się lista wszystkich możliwych statusów dostawców i ich znaczenia:
-
-* **Otwarte**: Istniejący dostawca, który nie został jeszcze zaproszony do portalu.
-* **Oczekująca rejestracja**: Dostawca został zaproszony, ale nie zakończył jeszcze procesu rejestracji.
-* **Oczekiwanie na dane wejściowe dostawcy**: Rejestracja jest zakończona, ale wymagane są dalsze dane lub zmiany od dostawcy.
-* **Oczekujące na zatwierdzenie**: Dostawca zakończył rejestrację i czeka na pierwsze zatwierdzenie.
-* **Oczekujące na zatwierdzenie AP**: Dostawca otrzymał pierwsze zatwierdzenie i czeka na drugie (zatwierdzenie działu księgowości).
-* **Zatwierdzony**: Dostawca zakończył proces i został w pełni zatwierdzony.
-* **Odrzucony**: Rejestracja lub zatwierdzenie dostawcy zostało odrzucone.
-
-## Narzędzia w Panelu dostawcy
-
-Po prawej stronie paska wyszukiwania znajdziesz kilka narzędzi, które pomogą Ci w interakcji i zarządzaniu panelem w bardziej efektywny sposób.
-
-### Odśwież tabelę <a href="#refresh-table" id="refresh-table"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
-
-Kliknij ten przycisk, aby odświeżyć panel i załadować najnowsze dane i statusy.
-
-### Ustaw kolumny tabeli dla organizacji <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
-
-Kliknij ten przycisk, aby otworzyć menu, w którym możesz zarządzać widocznością kolumn w tabeli zamówień zakupu. Użyj pól wyboru i przycisków strzałek, aby przenieść kolumny między sekcjami widocznymi i ukrytymi. Możesz również zmieniać kolejność kolumn, przeciągając i upuszczając nazwy kolumn. Kliknij **Zrobione**, aby zapisać zmiany.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
-
-### Analityka <a href="#analytics" id="analytics"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-Kliknięcie tego przycisku otworzy nową sekcję pokazującą, ilu dostawców ma wygasnąć i kiedy.\
-Kliknij dowolną kategorię, aby zastosować filtr i wyświetlić tylko tych dostawców.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
-
-## Utwórz dostawcę i wyślij e-mail rejestracyjny
-
-### **Aby utworzyć nowego dostawcę:**
-
-1.  Kliknij ikonę plusa (+) w prawym górnym rogu.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Wypełnij wymagane pola, a następnie kliknij **Ratować**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. Dostawca automatycznie otrzyma e-mail z linkiem do utworzenia swojego konta.
-
-### **Aby wysłać e-mail rejestracyjny do istniejącego dostawcy:**
-
-1. Zlokalizuj dostawcę w **Panelu dostawcy**.
-2. Kliknij menu z trzema kropkami w kolumnie **Akcje**.
-3.  Wybierz **Magiczny Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Zweryfikuj dane dostawcy.
-5.  Kliknij **Wysłać**, aby wysłać link rejestracyjny.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
-
-## Jak działa proces rejestracji dla dostawcy?
-
-Po wysłaniu e-maila z zaproszeniem, dostawca musi zakończyć proces rejestracji, aby uzyskać dostęp do **Portalu dostawców**.
-
-Szczegółowy przewodnik krok po kroku dotyczący procesu rejestracji można znaleźć [tutaj](supplier-registration.md).
+Włączenie portalu, wysłanie zaproszenia, ukończenie rejestracji i zatwierdzenie są odrębnymi stanami. Rekord dostawcy lub zapisane dane podstawowe nie dowodzą gotowego dostępu do portalu. Widok dostawcy zależy od przypisanych uprawnień i różni się od wewnętrznego widoku administratora.

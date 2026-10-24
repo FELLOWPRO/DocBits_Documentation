@@ -10,7 +10,7 @@
 
 核对预先填写的姓名和电子邮件地址。填写要求的账户信息，并遵守页面显示的密码规则。阅读条款和隐私信息，然后使用注册功能完成账户注册。已有账户与首次注册属于不同情况，请按照邀请对应的流程操作。
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-zh.png" alt="供应商账户注册表单。此示例尚未填写；通过邀请进入时，部分信息可能已预先填写。"><figcaption><p>供应商账户注册表单。此示例尚未填写；通过邀请进入时，部分信息可能已预先填写。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-zh.png" alt="供应商账户注册表单。此示例尚未填写；通过邀请进入时，部分信息可能已预先填写。"><figcaption><p>供应商账户注册表单。此示例尚未填写；通过邀请进入时，部分信息可能已预先填写。</p></figcaption></figure>
 
 ## 3. 完善供应商信息
 

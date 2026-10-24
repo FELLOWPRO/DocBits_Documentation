@@ -177,8 +177,6 @@ You can filter the logs by subject or sender, sort columns in ascending or desce
 
 ## Video tutorial: Email Inbox and Error Troubleshooting
 
-The presenter and voice are synthetic. The recording shows the actual DocBits test interface with synthetic training invoices.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/en.mp4" %}
 Email Inbox and Error Troubleshooting
 {% endembed %}

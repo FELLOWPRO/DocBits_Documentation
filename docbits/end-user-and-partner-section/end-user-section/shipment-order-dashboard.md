@@ -9,7 +9,6 @@ This section offers a detailed overview of all shipment orders. It includes a se
 In this English video, an administrator searches for an example line by item ID, compares the order and delivery references, and checks the shipped quantity, status and warehouse. He then clears the search and reloads the overview.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/en.mp4" %}
-English demonstration with a synthetic administrator and the real DocBits test interface.
 {% endembed %}
 
 [Open the video with English captions and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/en.html).

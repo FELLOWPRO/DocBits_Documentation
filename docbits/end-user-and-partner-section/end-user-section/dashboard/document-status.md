@@ -13,8 +13,6 @@ For searching, document actions and saved views, return to the [dashboard guide]
 
 ## Video tutorial: Resolve blocked invoices
 
-The presenter and voice are synthetic. The recording shows the actual DocBits test interface with synthetic training invoices.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/en.mp4" %}
 Resolve blocked invoices
 {% endembed %}

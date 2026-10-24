@@ -4,6 +4,7 @@
 
 * [DocBits](README.md)
   * [Key Features of DocBits](overview-and-basics/readme/key-features-of-docbits.md)
+* [About our training videos](about-training-videos.md)
 * [Architecture](overview-and-basics/architecture/README.md)
   * [DocBits Infor on Premise Customer](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)
   * [Certifications](overview-and-basics/architecture/certifications.md)

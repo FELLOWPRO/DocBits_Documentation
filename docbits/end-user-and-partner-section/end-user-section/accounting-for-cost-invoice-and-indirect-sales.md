@@ -102,8 +102,6 @@ For invoices not automatically matched:
 
 ## Video tutorial: Splitting an Expense Invoice
 
-The presenter and voice are synthetic. The recording shows the actual DocBits test interface with synthetic training invoices.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/en.mp4" %}
 Splitting an Expense Invoice
 {% endembed %}

@@ -10,7 +10,7 @@ Approve or reject an invoice
 
 The recording shows the real application. Option wording may vary with the deployed version.
 
-Use approval to record your business decision on an invoice that has already been validated. You need access to the document and permission for its current approval stage. The video uses an ordinary reviewer account, prepared synthetic invoices and a fictional female presenter.
+Use approval to record your business decision on an invoice that has already been validated. You need access to the document and permission for its current approval stage. The video uses an ordinary reviewer account.
 
 ## Review and decide
 

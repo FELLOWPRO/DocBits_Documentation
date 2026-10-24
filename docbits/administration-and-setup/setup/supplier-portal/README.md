@@ -6,13 +6,11 @@ An invited supplier registers and signs in with their own account. They can then
 
 ## Video: Prepare the Supplier Portal and supplier access
 
-A fictional administrator explains the portal option and plan selection, invitation preparation and the registration entry. Activation, sending, registration and approval are explained as separate steps.
+A administrator explains the portal option and plan selection, invitation preparation and the registration entry. Activation, sending, registration and approval are explained as separate steps.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/en.mp4" %}
 
 [Open the video with English captions and chapter selection](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/en.html)
-
-*The presenter and voice are synthetic. The interface comes from a DocBits demo organisation.*
 
 ## Admin: enable the portal
 

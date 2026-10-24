@@ -31,6 +31,18 @@
 
 所有供应商设置的详细指南请参见[此处](../../settings/supplier-setting/)。
 
+## 视频：查找供应商并更新资料
+
+这段中文视频演示如何搜索示例供应商、打开供应商详情、修改城市和邮政编码，以及在保存并重新加载页面后确认修改结果。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/zh.mp4" %}
+中文演示使用合成管理员角色，录屏展示真实的 DocBits 测试界面。
+{% endembed %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/zh.html)。
+
+本次演示专门配置了包含**供应商名称**、**城市**和**邮政编码**的表单；您所在组织的表单可能不同。城市使用屏幕上显示的科隆德文名称 **Köln**，邮政编码为 **50667**。点击**保存**后，此录屏中的确认消息仍显示英文 **Supplier is saved successfully**。保存会更新主数据；本次演示不会批准供应商，也不会发送邀请。
+
 ## 供应商仪表板 <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 您可以通过左侧菜单访问**供应商仪表板**，如下所示。

@@ -1,5 +1,20 @@
 # Portal do Fornecedor
 
+## Para que serve o portal do fornecedor?
+
+O **portal do fornecedor** permite que um administrador dê aos fornecedores da sua empresa acesso ao **DocBits**. O administrador ativa o portal e configura quais fornecedores podem utilizá-lo e quais informações podem consultar.
+
+Um fornecedor convidado regista-se e inicia sessão com a sua própria conta. Pode então consultar as informações disponibilizadas, por exemplo o estado das suas encomendas de compra e faturas. As funcionalidades disponíveis dependem da configuração da organização.
+
+### Da ativação ao acesso do fornecedor
+
+1. **Ativar o portal:** o administrador ativa a funcionalidade nas definições dos módulos.
+2. **Configurar o portal:** o administrador define os campos de registo, os textos dos convites e as permissões dos fornecedores.
+3. **Convidar fornecedores:** o administrador seleciona os fornecedores pretendidos e envia-lhes um convite.
+4. **Aceder como fornecedor:** o fornecedor segue o convite, conclui as etapas de registo e aprovação previstas e utiliza depois o seu acesso ao DocBits.
+
+Ativar o portal, por si só, não dá acesso a nenhum fornecedor. Criar ou editar um registo de fornecedor não substitui o convite nem a autorização de acesso.
+
 ## Visão geral
 
 Esta página explica como ativar e usar o **Portal do Fornecedor**, bem como onde encontrar todas as configurações relevantes. O Portal do Fornecedor permite que você convide fornecedores para o **DocBits**. Depois que o acesso é concedido, os fornecedores podem fazer login para visualizar o status de seus **Pedidos de Compra** e **Faturas** diretamente no **DocBits**.
@@ -34,6 +49,8 @@ Um guia detalhado de todas as Configurações do Fornecedor pode ser encontrado 
 ## Vídeo: pesquisar fornecedores e atualizar dados
 
 Este vídeo em português mostra como pesquisar um fornecedor de exemplo, abrir os respetivos detalhes, alterar a cidade e o código postal e confirmar que as alterações foram guardadas após recarregar a página.
+
+**Sobre o vídeo seguinte:** mostra a pesquisa e a manutenção interna dos dados de um fornecedor por um administrador. Não mostra a ativação do portal nem o início de sessão de um fornecedor.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pt.mp4" %}
 Demonstração em português com um administrador sintético e a interface de teste real do DocBits.

@@ -1,31 +1,19 @@
 # Esportazione alternativa
 
-## **Passaggio 1: creare una nuova esportazione**
+## Preparare l’esportazione
 
-1. Vai su **Impostazioni** > **Elaborazione documenti** > **Esportazione**.
-2. Fai clic su **Crea nuova esportazione** per definire una nuova configurazione di esportazione.
-3. Salva la configurazione e assicurati che l'esportazione sia **disattivata**.
+Apri **Impostazioni → Elaborazione documenti → Esportazione** e prepara la configurazione richiesta dall’integrazione. Se deve essere usata soltanto su richiesta come esportazione alternativa, verifica che non sia attiva nel normale percorso automatico.
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+## Configurare la disponibilità
 
-### **Passaggio 2: abilitare l'esportazione alternativa**
+Apri l’ingranaggio del tipo di documento in **Impostazioni → Tipi di documenti** e individua **Impostazioni di esportazione → Esportazione alternativa**. Seleziona lo stato che rende disponibile l’opzione e la configurazione da utilizzare. **Lo stato selezionato non è lo stato del documento dopo l’esportazione.**
 
-1. Vai su **Impostazioni** > **Impostazioni globali** > **Tipo di documento** > **Altre impostazioni**.
-2. Individua l'impostazione **Esportazione alternativa** e attivala.
-3. Configura quanto segue:
-   * **Stato del documento**: specifica lo stato dei documenti dopo l'esportazione alternativa.
-   * **Configurazione di esportazione**: seleziona la configurazione di esportazione appena creata da utilizzare per l'esportazione alternativa.
+<figure><img src="../../.gitbook/assets/native-invoice-export-settings-it-20261023.png" alt="Impostazioni di esportazione con Esportazione alternativa e Stato. Stato definisce quando l’opzione è disponibile, non lo stato dopo l’esportazione. Il valore selezionato è troncato; la configurazione mostrata è un esempio esistente. Nessuna esportazione è stata eseguita."><figcaption><p>Impostazioni di esportazione con Esportazione alternativa e Stato. Stato definisce quando l’opzione è disponibile, non lo stato dopo l’esportazione. Il valore selezionato è troncato; la configurazione mostrata è un esempio esistente. Nessuna esportazione è stata eseguita.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+## Utilizzo e controllo
 
-## Utilizzo dell'esportazione alternativa
+Verifica l’opzione sul documento di prova nella schermata di abbinamento degli ordini. Se il workflow usa una card di esportazione alternativa, verifica anche le condizioni, gli identificatori e la versione della card disponibili nell’installazione. Non presumere che la configurazione da sola attivi un’automazione.
 
-**Nella schermata PO-Matching**
+Controlla il risultato dell’esportazione e la ricezione nel sistema destinatario prima di usare il processo operativo. Questa verifica ha esaminato le impostazioni esistenti, senza creare configurazioni, modificare stati o eseguire esportazioni.
 
-* Dopo aver abilitato l'esportazione alternativa, potrai selezionarla direttamente nella schermata **PO-Matching**.
-
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
-
-**Con la card del workflow**
-
-* La card del workflow **Alternate Export** può essere utilizzata anche per automatizzare questo processo. Configura la card come necessario per applicare la logica di esportazione alternativa al tuo workflow.
+Consulta anche [Esportazione alternativa nelle impostazioni del tipo di documento](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/alternate-export.md).

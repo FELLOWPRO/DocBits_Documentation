@@ -156,18 +156,18 @@
   <!-- Issue 3: Auto-reactivation -->
   <g transform="translate(550, 278)">
     <rect x="0" y="0" width="212" height="24" rx="8" fill="#005cad" opacity="0.05"></rect>
-    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Riattivazione automatica</text>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Verifica la ripresa</text>
   </g>
   <g transform="translate(560, 310)">
     <circle cx="4" cy="5" r="3" fill="#1a8754"></circle>
-    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Le configurazioni si riattivano</text>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Controlla la configurazione</text>
   </g>
   <g transform="translate(560, 328)">
-    <text x="16" y="9" fill="#44474e" font-size="10.5" font-weight="400">dopo la risoluzione dei problemi</text>
+    <text x="16" y="9" fill="#44474e" font-size="10.5" font-weight="400">dopo aver risolto il problema</text>
   </g>
   <g transform="translate(560, 346)">
     <circle cx="4" cy="5" r="3" fill="#1a8754"></circle>
-    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Controlla lo stato in Registri</text>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Conferma nei Registri</text>
   </g>
 
   <!-- Bottom CLI reference bar -->

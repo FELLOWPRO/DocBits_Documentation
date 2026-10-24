@@ -140,7 +140,7 @@ Definisce le azioni specifiche da eseguire quando viene rilevata una discrepanza
 
 • Azione: il sistema accetta i valori della fattura e calcola l'importo totale.
 
-#### [Caso 4, 5: quantità entro la tolleranza, prezzo unitario fuori tolleranza (approvato)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
+#### [Caso 4, 5: quantità entro la tolleranza, prezzo unitario fuori tolleranza (approvato)](./#caso-4-5-quantita-entro-la-tolleranza-prezzo-unitario-fuori-tolleranza-approvato)
 
 • Scopo: si applica quando la quantità è entro la tolleranza ma il prezzo unitario è fuori tolleranza ed è stato approvato.
 

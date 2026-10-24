@@ -1,59 +1,17 @@
 # Personalizzare i Filtri
 
-Se stai cercando uno o più documenti specifici, sono disponibili le seguenti opzioni. All'interno della barra di ricerca, ti abbiamo fornito vari strumenti per aiutarti a trovare il documento che stai cercando. Per accedervi, seleziona l'icona seguente.
+La dashboard offre filtri di ricerca per trovare documenti. Le impostazioni amministrative dei filtri di stato configurano invece la presentazione dei relativi controlli: sono operazioni distinte.
 
-L'uso dei filtri consente agli utenti di trovare rapidamente informazioni rilevanti e ridurre la quantità di dati all'essenziale.
+## Filtrare i documenti nella dashboard
 
-## Come personalizzare e applicare i filtri in DocBits
+Apri il menu dei filtri accanto alla ricerca e scegli i criteri disponibili nella tua versione, ad esempio tipo di documento, persona assegnata o intervallo di date. Controlla i criteri attivi e i risultati; rimuovi il singolo criterio o azzera la selezione quando serve. Non presumere un operatore logico universale tra tutti i filtri: verifica il risultato della combinazione usata.
 
-**Accedere alle impostazioni dei filtri Aprire la dashboard:**
+<figure><img src="../../../../.gitbook/assets/native-dashboard-smart-filters-it-20261023.png" alt="Menu dei filtri della dashboard con opzioni di abbinamento degli ordini e campi standard. In base alla corrispondenza PO è un’etichetta ambigua del caso di scostamento inferiore; il testo non chiarisce quale grandezza venga confrontata. Nessun filtro è stato applicato."><figcaption><p>Menu dei filtri della dashboard con opzioni di abbinamento degli ordini e campi standard. In base alla corrispondenza PO è un’etichetta ambigua del caso di scostamento inferiore; il testo non chiarisce quale grandezza venga confrontata. Nessun filtro è stato applicato.</p></figcaption></figure>
 
-* Accedi a DocBits e apri la dashboard che contiene i dati che desideri filtrare.
+## Configurare i filtri di stato
 
-**Accedere al menu dei filtri:**
+Apri **Impostazioni → Dashboard → Filtri**. Controlla **Stile del filtro di stato** e **Filtro di stato personalizzato**. Il valore **Custom** resta in inglese nella versione illustrata. Se devi modificare questa preferenza, scegli la configurazione desiderata e usa il comando di applicazione previsto dalla schermata.
 
-* Clicca sull'icona del filtro o sul campo di ricerca.
+<figure><img src="../../../../.gitbook/assets/native-dashboard-status-filters-it-20261023.png" alt="Impostazioni dei filtri di stato della dashboard. Stile del filtro di stato e Filtro di stato personalizzato sono visibili; Custom resta in inglese. Il valore di stato selezionato è troncato. Nessuna preferenza è stata modificata."><figcaption><p>Impostazioni dei filtri di stato della dashboard. Stile del filtro di stato e Filtro di stato personalizzato sono visibili; Custom resta in inglese. Il valore di stato selezionato è troncato. Nessuna preferenza è stata modificata.</p></figcaption></figure>
 
-### Personalizzare i filtri
-
-#### **Usare filtri predefiniti**
-
-* Apri il menu dei filtri.
-* Scegli tra le opzioni di filtro predefinite (ad es. Data, Tipo di Documento, Persona Assegnata).
-* Regola i criteri di filtro selezionando o inserendo i valori appropriati (ad es. intervallo di date, tipo di documento specifico).
-
-#### **Creare i propri filtri**
-
-* Apri il menu dei filtri nelle impostazioni sotto Dashboard e clicca su "Filtri".
-
-<figure><img src="../../../../.gitbook/assets/prior-u015-it.png" alt="Stile del filtro sullo stato e filtro personalizzato della dashboard."><figcaption><p>Stile del filtro sullo stato e filtro personalizzato della dashboard.</p></figcaption></figure>
-
-* Seleziona il campo da filtrare (ad es. Stato).
-
-<div data-full-width="true"></div>
-
-* Definisci i criteri di filtro, ad es.: Stile filtro stato.
-
-* Menu a discesa: Scegli tra le opzioni predefinite.
-
-* Salva il filtro personalizzato cliccando su "Applica".
-
-#### **Usare filtri combinati**
-
-* Apri il menu dei filtri e seleziona più criteri di filtro contemporaneamente.
-* Combina i criteri di filtro.
-* **Esempio:** Documenti creati sia dall'autore "Max Mustermann" E creati nell'ultimo mese.
-* Una volta selezionato un filtro, verrà applicato automaticamente.
-
-#### **Applicare e Gestire i Filtri**
-
-**Applicare i Filtri**
-
-* Dopo aver selezionato e regolato i filtri desiderati, i filtri vengono applicati automaticamente.
-
-**Rimuovere i Filtri**
-
-* Apri il menu Filtri.
-* Passaggio 2: Cancella o rimuovi i filtri applicati cliccando su "Cancella Filtri", l'icona X accanto al filtro selezionato sia nel menu Filtri che sotto la barra dei Filtri.
-
-* I dati vengono visualizzati nuovamente senza i criteri di filtro precedenti.
+Il salvataggio della preferenza amministrativa non dimostra che una ricerca specifica restituisca documenti corretti. La verifica delle immagini non ha eseguito query funzionali sui filtri intelligenti.

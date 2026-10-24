@@ -37,7 +37,7 @@ Sono inclusi i seguenti dettagli:
 * **Formato**: Il formato del file utilizzato per l'esportazione (CSV, XLSX).
 * **Filtri Usati**: Eventuali filtri applicati alla dashboard al momento dell'esportazione.
 
-<mark style="color:red;">**Nota**</mark>: Per esportare le tabelle, l'opzione Esporta Dati Dashboard nella sezione [Generale](./#general) deve essere attiva.
+<mark style="color:red;">**Nota**</mark>: Per esportare le tabelle, l'opzione Esporta Dati Dashboard nella sezione [Generale](./#generale) deve essere attiva.
 
 ## **Azione**
 

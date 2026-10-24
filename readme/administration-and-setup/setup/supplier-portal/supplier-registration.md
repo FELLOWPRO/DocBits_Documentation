@@ -25,3 +25,5 @@ Prześlij dane za pomocą przeznaczonej do tego akcji zakończenia. Jeśli skonf
 Skontaktuj się z organizacją zapraszającą, jeśli link jest nieprawidłowy, brakuje uprawnień lub wymagane dane są niejasne. Wewnętrzny rekord dostawcy nie zastępuje rejestracji ani niezbędnego zatwierdzenia dostępu.
 
 [Konfiguracja portalu dostawców](README.md).
+
+[Film: przygotowanie dostępu do portalu i rejestracji – z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pl.html)

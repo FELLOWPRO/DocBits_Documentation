@@ -6,13 +6,11 @@ Een uitgenodigde leverancier registreert zich en meldt zich aan met een eigen ac
 
 ## Video: het leveranciersportaal en toegang voorbereiden
 
-Een fictieve beheerder legt de portaaloptie en abonnementkeuze uit, bereidt een uitnodiging voor en toont de registratiepagina. Activering, verzending, registratie en goedkeuring worden als afzonderlijke stappen uitgelegd.
+Een beheerder legt de portaaloptie en abonnementkeuze uit, bereidt een uitnodiging voor en toont de registratiepagina. Activering, verzending, registratie en goedkeuring worden als afzonderlijke stappen uitgelegd.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/nl.mp4" %}
 
 [Open de video met Nederlandse ondertiteling en hoofdstukselectie](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/nl.html)
-
-*De persoon en de stem zijn synthetisch. De interface is afkomstig van een DocBits-demo-organisatie.*
 
 ## Admin: het portaal activeren
 

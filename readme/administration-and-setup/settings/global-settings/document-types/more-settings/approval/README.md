@@ -10,7 +10,7 @@ Configurar e testar aprovações de faturas
 
 A aplicação real é mostrada; a redação das opções pode depender da versão implementada.
 
-Configure a aprovação para o tipo de documento utilizado pelo seu processo. Identifique os revisores pretendidos e decida se necessita de uma segunda revisão independente. O vídeo utiliza um tipo de teste separado, faturas sintéticas e contas temporárias de revisão sem permissões de administração; o seu apresentador é fictício.
+Configure a aprovação para o tipo de documento utilizado pelo seu processo. Identifique os revisores pretendidos e decida se necessita de uma segunda revisão independente. O vídeo utiliza um tipo de documento separado e contas temporárias de revisão sem permissões de administração.
 
 ## Configurar o tipo de documento
 

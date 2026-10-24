@@ -13,8 +13,6 @@ O [guia do painel](README.md) descreve pesquisa, ações e vistas guardadas.
 
 ## Tutorial em vídeo: Resolver faturas bloqueadas
 
-A personagem e a voz são sintéticas. A gravação mostra a interface de teste real do DocBits com faturas de formação sintéticas.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/pt.mp4" %}
 Resolver faturas bloqueadas
 {% endembed %}

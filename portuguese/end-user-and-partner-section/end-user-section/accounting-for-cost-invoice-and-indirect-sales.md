@@ -103,8 +103,6 @@ Para faturas não correspondidas automaticamente:
 
 ## Tutorial em vídeo: Repartição de uma fatura de despesas
 
-A personagem e a voz são sintéticas. A gravação mostra a interface de teste real do DocBits com faturas de formação sintéticas.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/pt.mp4" %}
 Repartição de uma fatura de despesas
 {% endembed %}

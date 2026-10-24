@@ -67,8 +67,6 @@ Os registos de ligação ajudam a investigar problemas de comunicação; os regi
 
 ## Tutorial em vídeo: Caixa de entrada e procura de erros
 
-A personagem e a voz são sintéticas. A gravação mostra a interface de teste real do DocBits com faturas de formação sintéticas.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/pt.mp4" %}
 Caixa de entrada e procura de erros
 {% endembed %}

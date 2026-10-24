@@ -10,7 +10,6 @@ Esta seção oferece uma visão detalhada de todos os pedidos de envio. Inclui u
 Neste vídeo em português, um administrador pesquisa uma linha de exemplo pelo ID do artigo, compara as referências da encomenda e da entrega e verifica a quantidade enviada, o estado e o armazém. Depois limpa a pesquisa e volta a carregar a lista.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/pt.mp4" %}
-Demonstração em português com um administrador sintético e a verdadeira interface de teste do DocBits.
 {% endembed %}
 
 [Abrir o vídeo com legendas em português e transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/pt.html).

@@ -717,7 +717,7 @@
         * [Dokument zuordnen und Aufgabe/Benachrichtigung erstellen](administration-and-setup/workflow/then/task/assign-document-and-create-task-notification.md)
       * [Tabelle](administration-and-setup/workflow/then/table/README.md)
         * [Einträge ändern mit](administration-and-setup/workflow/then/table/change-entries-with.md)
-        * [Berechnen Sie Spalten mit](administration-and-setup/workflow/then/table/calculate-columns-with.md)
+        * [Spalten berechnen](administration-and-setup/workflow/then/table/calculate-columns-with.md)
         * [Werte in einer Tabelle berechnen](administration-and-setup/workflow/then/table/calculate-in.md)
       * [Zugewiesener Benutzer](administration-and-setup/workflow/then/assignee/README.md)
         * [Benutzer aus Feld zuweisen](administration-and-setup/workflow/then/assignee/assign-user-from-field.md)

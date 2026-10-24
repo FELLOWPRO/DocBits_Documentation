@@ -31,6 +31,18 @@ Po włączeniu funkcji **Portalu dostawców**, nowa sekcja **Ustawienia dostawcy
 
 Szczegółowy przewodnik po wszystkich Ustawieniach dostawcy można znaleźć [tutaj](../../settings/supplier-setting/).
 
+## Film: wyszukiwanie dostawców i aktualizacja danych
+
+Ten film po polsku pokazuje, jak znaleźć przykładowego dostawcę, otworzyć jego szczegóły, zmienić miasto i kod pocztowy oraz sprawdzić zapis po odświeżeniu strony.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pl.mp4" %}
+Demonstracja po polsku z syntetycznym administratorem i rzeczywistym interfejsem testowym DocBits.
+{% endembed %}
+
+[Odtwarzacz z polskimi napisami i transkrypcją](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pl.html).
+
+Przykład wykorzystuje skonfigurowany układ z polami **Nazwa dostawcy**, **Miasto** i **Kod pocztowy**. Wartości **Köln** i **50667** są widoczne na ekranie; dostępne pola zależą od układu w Twojej organizacji. Przycisk **Zapisz** zapisuje dane podstawowe. Zapis nie zatwierdza dostawcy ani nie wysyła zaproszenia. Komunikat potwierdzenia w pokazanym interfejsie jest obecnie wyświetlany po angielsku.
+
 ## Panel dostawcy <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 Możesz uzyskać dostęp do **Panelu dostawcy** z menu po lewej stronie, jak pokazano poniżej.

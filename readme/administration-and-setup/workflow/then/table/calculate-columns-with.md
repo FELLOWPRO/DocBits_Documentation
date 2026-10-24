@@ -10,11 +10,11 @@ Utilícela cuando necesite calcular importes por línea antes de la siguiente ac
 
 ## Vídeo de administración
 
-**Vista previa · 35 segundos · español.** Javier explica cuándo utiliza la tarjeta, configura la multiplicación y muestra los resultados guardados. La revisión completa de voz, acento y sincronización percibida sigue pendiente.
+**35 segundos · español.** Javier explica cuándo utiliza la tarjeta, configura la multiplicación y muestra los resultados guardados.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/es.mp4" %}
 
-[Reproducir el vídeo con subtítulos en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/es.html) · [Leer la transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/es.txt)
+[Reproducir el vídeo con subtítulos en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/es.html) · [Leer la transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/es.txt)
 
 El administrador y su voz son sintéticos. La interfaz corresponde a una organización de demostración de DocBits con una factura ficticia.
 

@@ -67,8 +67,6 @@ Dzienniki połączenia pomagają badać problemy komunikacji; dzienniki importu 
 
 ## Instrukcja wideo: Skrzynka odbiorcza i wyszukiwanie błędów
 
-Postać i głos są syntetyczne. Nagranie pokazuje rzeczywisty interfejs testowy DocBits z syntetycznymi fakturami szkoleniowymi.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/pl.mp4" %}
 Skrzynka odbiorcza i wyszukiwanie błędów
 {% endembed %}

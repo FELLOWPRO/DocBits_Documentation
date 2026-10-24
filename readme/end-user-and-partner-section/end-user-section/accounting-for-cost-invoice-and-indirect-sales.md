@@ -103,8 +103,6 @@ Dla faktur, które nie zostały automatycznie dopasowane:
 
 ## Instrukcja wideo: Podział faktury kosztowej
 
-Postać i głos są syntetyczne. Nagranie pokazuje rzeczywisty interfejs testowy DocBits z syntetycznymi fakturami szkoleniowymi.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/pl.mp4" %}
 Podział faktury kosztowej
 {% endembed %}

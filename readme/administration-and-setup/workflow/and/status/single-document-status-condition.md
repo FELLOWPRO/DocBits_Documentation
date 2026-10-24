@@ -1,6 +1,6 @@
 # Condição de status de documento único
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_v2-pt-pt.png" alt="Condição de status de documento único, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 **Propósito**
 

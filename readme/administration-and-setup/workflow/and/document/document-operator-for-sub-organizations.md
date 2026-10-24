@@ -1,6 +1,6 @@
 # Operador de documentos para suborganizações
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-pt-pt.png" alt="Operador de documentos para suborganizações, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## Propósito:
 

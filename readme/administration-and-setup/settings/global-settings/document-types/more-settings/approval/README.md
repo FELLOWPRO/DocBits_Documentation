@@ -10,7 +10,7 @@ Factuurgoedkeuringen configureren en testen
 
 De echte applicatie wordt getoond. De namen van opties kunnen per gebruikte versie verschillen.
 
-Configureer goedkeuring voor het documenttype dat door uw proces wordt gebruikt. Identificeer de beoogde beoordelaars en beslis of u een tweede onafhankelijke beoordeling nodig heeft. De video gebruikt een apart testtype, synthetische facturen en tijdelijke gewone beoordelaarsaccounts; de presentator is fictief.
+Configureer goedkeuring voor het documenttype dat door uw proces wordt gebruikt. Identificeer de beoogde beoordelaars en beslis of u een tweede onafhankelijke beoordeling nodig heeft. De video gebruikt een apart documenttype en tijdelijke gewone beoordelaarsaccounts.
 
 ## Configureer het documenttype
 

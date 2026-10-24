@@ -103,8 +103,6 @@ Voor facturen die niet automatisch zijn gematcht:
 
 ## Videohandleiding: Een onkostenfactuur verdelen
 
-De persoon en stem zijn synthetisch. De opname toont de echte DocBits-testinterface met synthetische trainingsfacturen.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/nl.mp4" %}
 Een onkostenfactuur verdelen
 {% endembed %}

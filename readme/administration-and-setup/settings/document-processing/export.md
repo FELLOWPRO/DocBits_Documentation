@@ -300,8 +300,6 @@ Om een nieuwe export te maken:
 
 ## Videohandleiding: ERP-export instellen en testen
 
-De persoon en stem zijn synthetisch. De opname toont de echte DocBits-testinterface met synthetische trainingsfacturen.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/nl.mp4" %}
 ERP-export instellen en testen
 {% endembed %}

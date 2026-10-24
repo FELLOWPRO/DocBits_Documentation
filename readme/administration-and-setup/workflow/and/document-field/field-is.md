@@ -31,7 +31,7 @@ Dit zijn voorbeelden van verwachte resultaten. Voeg een passende inhoudsvoorwaar
 
 ## Voorbeeldvideo met een beheerder
 
-Wanneer ik deze kaart gebruik, waar deze staat en hoe ik ontbrekende factuurnummers vind. De beheerder, het kantoor en de stem zijn synthetisch; de demonstratie toont de echte DocBits-interface van een testaccount. De voorbeelden tonen verwachte resultaten.
+Wanneer ik deze kaart gebruik, waar deze staat en hoe ik ontbrekende factuurnummers vind. De voorbeelden tonen verwachte resultaten.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/nl.mp4" %}
 

@@ -1,65 +1,51 @@
 # Calcular columnas con
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aafc18d42905-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+La tarjeta calcula una operación entre dos columnas de una tabla y guarda el resultado en otra columna de cada fila.
 
-## **Propósito:**
+## Cuándo y dónde utilizarla
 
-La tarjeta de flujo de trabajo **"Calcular columnas en la tabla"** se utiliza para realizar cálculos entre columnas de una tabla seleccionada. Permite a los usuarios seleccionar columnas, aplicar una operación matemática y almacenar el resultado en una columna de resultado especificada.
+Utilícela cuando necesite calcular importes por línea antes de la siguiente acción del flujo de trabajo; por ejemplo, **cantidad × precio unitario**. Añádala a **Entonces**, en la categoría de tarjetas de tabla que esta versión de la interfaz denomina **Cuadro**. Compruebe primero que los valores de entrada son numéricos y están completos.
 
-## **Componentes de la tarjeta:**
+<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-v2-configured-es-20261024.png" alt="Tarjeta versión 2: INVOICE_TABLE, Cantidad × Precio unitario → columna TOTAL_AMOUNT. La interfaz muestra «Importe total factura» para esta columna de resultado por línea y repite el nombre de la tabla." width="650"><figcaption><p>Tarjeta versión 2: INVOICE_TABLE, Cantidad × Precio unitario → columna TOTAL_AMOUNT. La interfaz muestra «Importe total factura» para esta columna de resultado por línea y repite el nombre de la tabla.</p></figcaption></figure>
 
-1. **Nombre de la tabla**
-   * **Descripción:** Especifica la **tabla** en la que se calcularán las columnas.
-   * **Detalle:** Se proporciona una lista desplegable de todas las **tablas** disponibles para su selección.
-2. **Column Name (1ª columna)**
-   * **Descripción:** Especifica la **primera columna** que participará en el cálculo.
-   * **Detalle:** Se proporciona una lista de todas las **columnas** disponibles para su selección.
-3. **Operación**
-   * **Descripción:** Define la operación matemática que se aplicará entre las columnas seleccionadas.
-   * **Opciones:**
-     * **Add (+):** Suma el valor de la segunda columna al valor de la primera columna.
-     * **Restar (-):** Resta el valor de la segunda columna del valor de la primera columna.
-     * **Multiply (\*):** Multiplica el valor de la primera columna por el valor de la segunda columna.
-     * **Dividir (/):** Divide el valor de la primera columna por el valor de la segunda columna.
-4. **Column Name (2ª columna)**
-   * **Descripción:** Especifica la **segunda columna** que participará en el cálculo.
-   * **Detalle:** Se proporciona una lista de **columnas** disponibles para su selección.
-5. **Columna de resultados**
-   * **Descripción:** Especifica la **columna** donde se almacenará el resultado del cálculo.
-   * **Detalle:** Se proporciona una lista de **columnas** disponibles donde se guardará el valor calculado.
+## Vídeo de administración
 
-## **Funcionalidad:**
+**Vista previa · 35 segundos · español.** Javier explica cuándo utiliza la tarjeta, configura la multiplicación y muestra los resultados guardados. La revisión completa de voz, acento y sincronización percibida sigue pendiente.
 
-* **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
-* **Cálculo de columnas:**\
-  La tarjeta realiza la operación matemática seleccionada entre las dos columnas elegidas.
-* **Almacenamiento del resultado:**\
-  El resultado del cálculo se almacena en la **columna de resultado** seleccionada.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/es.mp4" %}
 
-## **Configuración:**
+[Reproducir el vídeo con subtítulos en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/es.html) · [Leer la transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-preview-admin/v1/es.txt)
 
-* **Seleccionar la Table:**\
-  Elija la **tabla** donde se calcularán las columnas.
-* **Elegir las columnas:**\
-  Seleccione la **primera columna** y la **segunda columna** que se usarán en el cálculo.
-* **Seleccionar la Operation:**\
-  Elija la operación matemática (**Add (+)**, **Restar (-)**, **Multiply (\*)**, **Divide (/)**) que se aplicará entre las columnas.
-* **Seleccionar la Result Column:**\
-  Elija la **columna de resultado** donde se almacenará el cálculo.
+El administrador y su voz son sintéticos. La interfaz corresponde a una organización de demostración de DocBits con una factura ficticia.
 
-## **Conclusión:**
+## Configuración de la tarjeta
 
-La tarjeta de flujo de trabajo **"Calcular columnas en la tabla"** permite a los usuarios realizar cálculos dinámicos entre columnas de una tabla y almacenar los resultados en una columna designada. La tarjeta ofrece flexibilidad para aplicar diferentes operaciones matemáticas y garantiza que el resultado se almacene en la columna especificada.
+| Campo | Selección del ejemplo |
+| --- | --- |
+| Tabla | `INVOICE_TABLE` |
+| Primera columna | `QUANTITY` — Cantidad |
+| Operación | `*` — multiplicación |
+| Segunda columna | `UNIT_PRICE` — Precio unitario |
+| Columna de resultado | `TOTAL_AMOUNT` |
+
+También están disponibles `+` (sumar), `-` (restar) y `/` (dividir). El orden de las columnas importa para la resta y la división. Seleccione los identificadores configurados en su organización.
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Ejemplo práctico
 
-**Cuándo usar:** Calcule los totales de línea a partir de la cantidad y el precio unitario.
+Una factura contiene las siguientes posiciones. La columna de resultado aún no existe antes del cálculo:
 
-**Configuración:** Seleccionar tabla `lines`, columnas `quantity` y `unit_price`, columna de multiplicación y resultado `line_total`.
+| Fila | Cantidad | Precio unitario | Resultado guardado en `TOTAL_AMOUNT` |
+| --- | ---: | ---: | ---: |
+| 1 | 2 | 10 | 20 |
+| 2 | 3 | 4 | 12 |
 
-**Resultado esperado y contraejemplo:** Una fila que contiene `2` y `10` produce `20`. Pruebe otra fila de forma independiente y diagnostique entradas faltantes o no numéricas en lugar de tratarla como un total válido.
+En el ejemplo del vídeo, la tarjeta crea la columna de resultado y los valores **20,00** y **12,00** siguen visibles después de volver a abrir la factura. Los importes originales de `NET_AMOUNT` se conservan. Si ya hay valores en la columna de resultado elegida, el cálculo los sustituye.
 
-Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.
+## Comprobaciones y contraejemplos
+
+- Revise las dos columnas de entrada y compruebe los valores guardados después del cálculo.
+- Un precio ausente puede producir cero en el ejemplo mostrado; ese cero no demuestra que los datos estén completos. Valide los datos de entrada antes de calcular.
+- Un texto como `ABC` en lugar de un número provoca un error de cálculo. Corrija el dato y vuelva a comprobar el caso.
+- Los casos de precio ausente y texto no numérico de la gráfica son resultados esperados para ilustrar las comprobaciones; no son ejecuciones de la factura de dos filas mostrada.

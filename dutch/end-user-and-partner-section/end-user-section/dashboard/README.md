@@ -14,7 +14,7 @@ De beschikbare functies hangen af van uw rechten, de documentstatus en de ingesc
 
 ## Volledige rondleiding door het dashboard
 
-De fictieve klant in Amsterdam laat gecombineerd zoeken met AND, statusfilters, zoekhulp, kolominstellingen, statistieken en vernieuwen zien. De Nederlandse interface is opgenomen in DocBits met synthetische testgegevens. Het personage en de stem zijn met AI gemaakt.
+De klant in Amsterdam laat gecombineerd zoeken met AND, statusfilters, zoekhulp, kolominstellingen, statistieken en vernieuwen zien.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/nl.mp4" %}
 

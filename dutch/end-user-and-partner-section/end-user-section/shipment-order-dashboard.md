@@ -10,7 +10,6 @@ Deze sectie biedt een gedetailleerd overzicht van alle verzendorders. Het bevat 
 In deze Nederlandstalige video zoekt een beheerder een voorbeeldregel op artikel-ID, vergelijkt hij de order- en leveringsreferenties en controleert hij de verzonden hoeveelheid, status en het magazijn. Daarna wist hij de zoekopdracht en laadt hij het overzicht opnieuw.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/nl.mp4" %}
-Nederlandstalige demonstratie met een synthetische beheerder en de echte DocBits-testinterface.
 {% endembed %}
 
 [Open de video met Nederlandse ondertiteling en transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/nl.html).

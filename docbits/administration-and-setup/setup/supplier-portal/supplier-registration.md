@@ -25,3 +25,5 @@ Submit your information using the designated completion action. If a review or a
 Contact the inviting organisation if your invitation link is invalid, permissions are missing or required information is unclear. An internal supplier record does not replace your registration or the necessary access approval.
 
 [Supplier portal setup](README.md).
+
+[Video: Prepare portal access and registration – with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/en.html)

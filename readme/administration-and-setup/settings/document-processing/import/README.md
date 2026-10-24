@@ -67,8 +67,6 @@ Verbindungsprotokolle helfen bei Kommunikationsproblemen; Importprotokolle zeige
 
 ## Videoanleitung: E-Mail-Import einrichten und Fehler gezielt finden
 
-Figur und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit synthetischen Schulungsrechnungen.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/de.mp4" %}
 E-Mail-Import einrichten und Fehler gezielt finden
 {% endembed %}

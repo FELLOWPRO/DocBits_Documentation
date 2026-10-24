@@ -103,8 +103,6 @@ Für Rechnungen, die nicht automatisch abgeglichen wurden:
 
 ## Videoanleitung: Kostenrechnung kontieren und auf Kostenstellen aufteilen
 
-Figur und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit synthetischen Schulungsrechnungen.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/de.mp4" %}
 Kostenrechnung kontieren und auf Kostenstellen aufteilen
 {% endembed %}

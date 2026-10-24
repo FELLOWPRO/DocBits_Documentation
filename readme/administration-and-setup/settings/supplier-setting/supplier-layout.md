@@ -12,7 +12,6 @@ Sie können damit Layouts für Lieferantenbenutzer und für die Lieferantenverwa
 Im deutschen Video wählt ein Administrator das Feld **Postleitzahl** in einem vorbereiteten Layout der internen Lieferantenverwaltung aus, aktiviert **Erforderlich** und speichert die Vorlage. Nach dem erneuten Laden prüft er, dass die Eigenschaft erhalten bleibt.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-layout-required-field-admin/v1/de.mp4" %}
-Deutsche Demonstration mit einer synthetischen Person und der echten DocBits-Oberfläche einer Testorganisation.
 {% endembed %}
 
 [Video mit deutschen Untertiteln und Transkript öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-layout-required-field-admin/v1/de.html).

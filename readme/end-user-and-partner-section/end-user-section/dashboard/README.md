@@ -16,13 +16,13 @@ Welche Funktionen Sie sehen, hängt von Ihren Berechtigungen, dem Dokumentstatus
 
 ### Suche im Arbeitsalltag
 
-Das kurze Suchbeispiel beginnt am Arbeitsplatz einer fiktiven Anwenderin in Köln. Anschließend sehen Sie die deutsche DocBits-Oberfläche bildfüllend: einen Teil des Dateinamens eingeben, mit Enter suchen und den Treffer prüfen. Das zweite Beispiel zeigt, wie die Suche mit aktiviertem Volltext-Modul auch den Dokumentinhalt findet.
+Das kurze Suchbeispiel beginnt am Arbeitsplatz einer Anwenderin in Köln. Anschließend sehen Sie die deutsche DocBits-Oberfläche bildfüllend: einen Teil des Dateinamens eingeben, mit Enter suchen und den Treffer prüfen. Das zweite Beispiel zeigt, wie die Suche mit aktiviertem Volltext-Modul auch den Dokumentinhalt findet.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.mp4" %}
 
 ### Vollständiger Dashboard-Rundgang
 
-Die fiktive Kundin in Köln zeigt die deutsche DocBits-Oberfläche: eine kombinierte Suche mit AND, Statusfilter, die Hilfe zu Suchfeldern, die Spalteneinstellungen sowie Statusübersicht und Aktualisierung. Die sichtbaren Rechnungswerte stammen aus synthetischen Testdaten. Figur und Stimme sind KI-generiert; die Bedienung wurde im echten DocBits-Testkonto aufgenommen.
+Die Kundin in Köln zeigt die deutsche DocBits-Oberfläche: eine kombinierte Suche mit AND, Statusfilter, die Hilfe zu Suchfeldern, die Spalteneinstellungen sowie Statusübersicht und Aktualisierung.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v3/de.mp4" %}
 

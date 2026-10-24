@@ -60,7 +60,7 @@ Dies ist eine am Ausführungscode geprüfte Konfiguration mit erwartetem Ergebni
 
 ## Admin-Beispielvideo
 
-Wann ich einen geprüften Beleg auf eine Freigabestufe setze und wie ich in Version 3 das Auslösen weiterer Workflows steuere. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann ich einen geprüften Beleg auf eine Freigabestufe setze und wie ich in Version 3 das Auslösen weiterer Workflows steuere. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-change-status-admin/v1/de.mp4" %}
 

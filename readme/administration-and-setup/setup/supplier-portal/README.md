@@ -1,5 +1,20 @@
 # Lieferantenportal
 
+## Wofür ist das Lieferantenportal da?
+
+Mit dem **Lieferantenportal** stellt ein Administrator den Lieferanten seines Unternehmens einen Zugang zu **DocBits** bereit. Der Admin aktiviert das Portal und richtet ein, welche Lieferanten es nutzen und welche Informationen sie sehen dürfen.
+
+Ein eingeladener Lieferant registriert sich und meldet sich mit seinem eigenen Zugang an. Dort kann er die für ihn freigegebenen Informationen und beispielsweise den Status seiner Bestellungen und Rechnungen einsehen. Welche Funktionen verfügbar sind, bestimmt die Konfiguration der Organisation.
+
+### Vom Aktivieren bis zum Lieferantenzugang
+
+1. **Portal aktivieren:** Der Admin aktiviert die Portalfunktion in den Moduleinstellungen.
+2. **Portal einrichten:** Der Admin legt Registrierungsfelder, Einladungstexte und Lieferantenberechtigungen fest.
+3. **Lieferanten einladen:** Der Admin wählt die vorgesehenen Lieferanten aus und veranlasst deren Einladung.
+4. **Als Lieferant zugreifen:** Der Lieferant folgt der Einladung, durchläuft die vorgesehenen Registrierungs- und Freigabeschritte und nutzt anschließend seinen Zugang zu DocBits.
+
+Das Aktivieren des Portals allein erteilt noch keinem Lieferanten Zugriff. Auch das Anlegen oder Bearbeiten eines Lieferantenstammsatzes ersetzt weder Einladung noch Zugangsfreigabe.
+
 ## Übersicht
 
 {% embed url="https://youtu.be/R5IrCpiP__4" %}
@@ -38,6 +53,8 @@ Eine detaillierte Anleitung zu allen Einstellungen des Lieferanten finden Sie [h
 ## Video: Lieferanten finden und Stammdaten pflegen
 
 Dieses deutschsprachige Admin-Video zeigt die Suche im Lieferanten-Dashboard, das Bearbeiten von Stadt und Postleitzahl sowie das Speichern und die anschließende Kontrolle nach dem Neuladen. Es verwendet drei fiktive Beispielunternehmen und ein eigens konfiguriertes Formular mit Name, Stadt und Postleitzahl. Die sichtbaren Felder hängen von Ihrem konfigurierten Lieferantenlayout ab.
+
+**Zum folgenden Video:** Es zeigt die interne Suche und Stammdatenpflege durch einen Administrator. Die Portalaktivierung und die Anmeldung eines Lieferanten werden darin nicht gezeigt.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/de.mp4" %}
 Lieferanten suchen, Stammdaten ändern und die gespeicherten Werte kontrollieren.

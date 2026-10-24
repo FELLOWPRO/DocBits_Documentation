@@ -103,8 +103,6 @@
 
 ## 视频教程: 拆分费用发票
 
-人物与声音均为合成。录屏展示真实的 DocBits 测试界面，使用合成培训发票。
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/zh.mp4" %}
 拆分费用发票
 {% endembed %}

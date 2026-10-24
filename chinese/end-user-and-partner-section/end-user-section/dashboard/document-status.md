@@ -13,8 +13,6 @@
 
 ## 视频教程: 处理受阻发票
 
-人物与声音均为合成。录屏展示真实的 DocBits 测试界面，使用合成培训发票。
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/zh.mp4" %}
 处理受阻发票
 {% endembed %}

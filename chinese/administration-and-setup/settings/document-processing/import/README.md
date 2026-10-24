@@ -67,8 +67,6 @@
 
 ## 视频教程: 收件箱与错误排查
 
-人物与声音均为合成。录屏展示真实的 DocBits 测试界面，使用合成培训发票。
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/zh.mp4" %}
 收件箱与错误排查
 {% endembed %}

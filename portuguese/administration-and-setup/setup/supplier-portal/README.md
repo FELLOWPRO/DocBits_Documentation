@@ -6,13 +6,11 @@ Um fornecedor convidado regista-se e inicia sessão com a sua própria conta. Po
 
 ## Vídeo: preparar o portal de fornecedores e o acesso
 
-Um administrador fictício explica a opção do portal, a seleção do plano, a preparação de um convite e a página de registo. A ativação, o envio, o registo e a aprovação são explicados como passos separados.
+Um administrador explica a opção do portal, a seleção do plano, a preparação de um convite e a página de registo. A ativação, o envio, o registo e a aprovação são explicados como passos separados.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pt.mp4" %}
 
 [Abrir o vídeo com legendas em português e seleção de capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pt.html)
-
-*A personagem e a voz são sintéticas. A interface pertence a uma organização de demonstração do DocBits.*
 
 ## Admin: ativar o portal
 

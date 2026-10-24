@@ -1,40 +1,27 @@
-# Registrazione Fornitore
+# Registrazione dei fornitori
 
-1.  Riceverai un invito con un link via E-mail per iniziare il processo di registrazione. Si prega di cliccare su “Vai alla Registrazione”, inviare le informazioni richieste e accettare i termini e le condizioni per iniziare. \
+Questa guida è destinata ai fornitori invitati al portale DocBits di un’organizzazione. Utilizzare il link dell’invito. Il fornitore dispone di un proprio account; l’organizzazione che lo invita stabilisce quali informazioni sono disponibili e quali passaggi di registrazione sono necessari.
 
+## 1. Aprire l’invito
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/supplier_registration_1.png" alt="" width="287"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/supplier_registration_2.png" alt="" width="246"><figcaption></figcaption></figure></div>
-2.  **Dettagli Fornitore**
+Verificare quale organizzazione ha inviato l’invito e a quale indirizzo email è destinato. Aprire il link di registrazione contenuto nell’invito. Se è scaduto o riguarda un’altra persona, richiedere un nuovo invito all’organizzazione.
 
-    Si prega di verificare che il nome del Fornitore sia corretto. Questo è un dettaglio critico per scopi di identità e legali che non può essere modificato. Si prega di fornire tutte le informazioni applicabili, inclusi i campi richiesti. Una volta completato, clicca su “Avanti” per continuare alla sezione Dati Indirizzo. Per salvare i tuoi progressi e continuare più tardi, clicca su “Salva.”\
+## 2. Configurare il proprio account
 
+Controllare nome ed email precompilati. Inserire i dati richiesti e rispettare le regole della password visualizzate. Leggere condizioni e informazioni sulla privacy. Completare la creazione dell’account con la funzione di registrazione. Un account esistente e una nuova registrazione sono casi diversi; seguire la procedura prevista per l’invito.
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_3.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **Dati Indirizzo** Si prega di fornire tutte le informazioni applicabili, inclusi i campi richiesti. Una volta completato, clicca su “Avanti” per continuare alla sezione Contatto Fornitore. Per salvare i tuoi progressi e continuare più tardi, clicca su “Salva.”\
+<figure><img src="../../../.gitbook/assets/portal-registration-20261024-it.png" alt="Modulo di registrazione dell’account fornitore. L’esempio è vuoto; un invito può precompilare alcuni dati."><figcaption><p>Modulo di registrazione dell’account fornitore. L’esempio è vuoto; un invito può precompilare alcuni dati.</p></figcaption></figure>
 
+## 3. Completare i dati del fornitore
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_4.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  **Contatto Fornitore** Si prega di fornire tutte le informazioni applicabili, inclusi i campi richiesti. Una volta completato, clicca su “Avanti” per continuare alla sezione Finanziaria Fornitore. Per salvare i tuoi progressi e continuare più tardi, clicca su “Salva.”\
+Inserire i dati e gli eventuali documenti richiesti dall’organizzazione. Campi e sezioni dipendono dal layout fornitore configurato. Indicatori e messaggi di convalida segnalano i dati obbligatori. Salvare i progressi se la schermata offre questa possibilità; il salvataggio non equivale automaticamente all’invio definitivo.
 
+## 4. Verificare registrazione e approvazione
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_5.png" alt="" width="404"><figcaption></figcaption></figure>
-5.  **Finanziaria Fornitore** Si prega di fornire tutte le informazioni applicabili. Una volta completato, clicca su “Avanti” per continuare alla sezione Acquisti Fornitore. Per salvare i tuoi progressi e continuare più tardi, clicca su “Salva.”\
+Inviare i dati tramite l’apposita funzione di completamento. Se è prevista una verifica o approvazione, attenderne l’esito. Accedere quindi con il proprio account. L’organizzazione determina quali ordini, fatture e altre informazioni sono consultabili.
 
+## In caso di problemi di accesso
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_6.png" alt="" width="402"><figcaption></figcaption></figure>
-6.  **Acquisti Fornitore** Si prega di fornire tutte le informazioni applicabili. Una volta completato, clicca su “Avanti” per continuare alla sezione Certificati Fornitore. Per salvare i tuoi progressi e continuare più tardi, clicca su “Salva.”\
+Contattare l’organizzazione che ha inviato l’invito se il link non è valido, mancano autorizzazioni o i dati obbligatori non sono chiari. Una scheda fornitore interna non sostituisce la registrazione né la necessaria approvazione dell’accesso.
 
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_7.png" alt="" width="401"><figcaption></figcaption></figure>
-7.  **Certificati Fornitore** Si prega di caricare tutti i certificati richiesti (Fiscale, Assicurazione, Diversificazione Fornitori). Si prega di salvare i propri progressi se è necessario tornare a completare il processo di registrazione in seguito. Una volta completato, clicca su “Invia per Approvazione.”\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_8.png" alt="" width="404"><figcaption></figcaption></figure>
-8.  Si prega di caricare tutti i certificati richiesti (Fiscale, Assicurazione, Diversificazione Fornitori). Si prega di salvare i propri progressi se è necessario tornare a completare il processo di registrazione in seguito. Una volta completato, clicca su “Invia per Approvazione.”\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_9.png" alt="" width="404"><figcaption></figcaption></figure>
-9.  Si prega di controllare la propria E-mail per una conferma che hai completato il processo di registrazione.\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_10.png" alt="" width="563"><figcaption></figcaption></figure>
+[Configurazione del portale fornitori](README.md).

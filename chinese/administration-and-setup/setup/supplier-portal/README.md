@@ -6,13 +6,11 @@
 
 ## 视频：准备供应商门户及访问权限
 
-虚构管理员演示门户选项、套餐选择、邀请准备和注册入口。启用、发送邀请、注册和审批分别作为独立步骤说明。
+管理员演示门户选项、套餐选择、邀请准备和注册入口。启用、发送邀请、注册和审批分别作为独立步骤说明。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/zh.mp4" %}
 
 [打开带中文字幕和章节选择的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/zh.html)
-
-*人物和声音均为合成。界面来自 DocBits 演示组织。*
 
 ## 管理员：启用门户
 

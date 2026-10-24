@@ -1,4 +1,19 @@
-# Panel de proveedores
+# Portal de proveedores
+
+## ¿Para qué sirve el portal de proveedores?
+
+El **portal de proveedores** permite que un administrador dé a los proveedores de su empresa acceso a **DocBits**. El administrador activa el portal y configura qué proveedores pueden utilizarlo y qué información pueden consultar.
+
+Un proveedor invitado se registra e inicia sesión con su propia cuenta. Allí puede consultar la información que se le haya habilitado, por ejemplo el estado de sus pedidos de compra y facturas. Las funciones disponibles dependen de la configuración de la organización.
+
+### De la activación al acceso del proveedor
+
+1. **Activar el portal:** el administrador habilita la función en los ajustes de módulos.
+2. **Configurar el portal:** el administrador define los campos de registro, el contenido de las invitaciones y los permisos de los proveedores.
+3. **Invitar a los proveedores:** el administrador selecciona a los proveedores previstos y les envía una invitación.
+4. **Acceder como proveedor:** el proveedor sigue la invitación, completa los pasos de registro y aprobación previstos y, después, utiliza su acceso a DocBits.
+
+Activar el portal no concede por sí solo acceso a ningún proveedor. Crear o editar una ficha de proveedor no sustituye la invitación ni la autorización de acceso.
 
 ## Descripción general
 
@@ -33,6 +48,8 @@ El [índice de ajustes del proveedor](../../settings/supplier-setting/) reúne e
 ## Vídeo: buscar proveedores y mantener sus datos
 
 Este tutorial de administración en español muestra cómo buscar un proveedor, modificar la ciudad y el código postal, guardar y comprobar los valores después de volver a cargar la página. Utiliza tres empresas ficticias y un formulario configurado con nombre, ciudad y código postal. Los campos disponibles dependen del diseño de proveedores de su organización. La ciudad del ejemplo es Colonia y aparece en pantalla con su nombre alemán, **Köln**.
+
+**Sobre el siguiente vídeo:** muestra la búsqueda y el mantenimiento interno de los datos de un proveedor por parte de un administrador. No muestra la activación del portal ni el inicio de sesión de un proveedor.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/es.mp4" %}
 Buscar un proveedor, actualizar sus datos y comprobar que los cambios se han guardado.

@@ -27,7 +27,7 @@ Configurare il portale dell’organizzazione prima di inviare i primi inviti:
 
 Aprire la gestione dei fornitori. Prima di inviare un invito, controllare azienda, gruppo, referente e indirizzo email. Quando si crea un fornitore, il salvataggio richiede l’invio dell’invito alla registrazione; non salva soltanto una bozza. Per un fornitore esistente, utilizzare l’azione di invito appropriata. Una conferma di invio non dimostra la consegna dell’email né il completamento della registrazione.
 
-<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-it.png" alt="Gestione interna di tre aziende fittizie. Tutti e tre gli stati indicano una registrazione in attesa."><figcaption><p>Gestione interna di tre aziende fittizie. Tutti e tre gli stati indicano una registrazione in attesa.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-suppliers-focus-20261024-it.png" alt="Gestione interna di tre aziende fittizie. Tutti e tre gli stati indicano una registrazione in attesa."><figcaption><p>Gestione interna di tre aziende fittizie. Tutti e tre gli stati indicano una registrazione in attesa.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/portal-invitation-20261024-it.png" alt="Modulo per creare e invitare un fornitore. Controllare azienda, referente ed email prima di salvare."><figcaption><p>Modulo per creare e invitare un fornitore. Controllare azienda, referente ed email prima di salvare.</p></figcaption></figure>
 

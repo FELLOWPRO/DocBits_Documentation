@@ -27,7 +27,7 @@ Richten Sie das Portal vor den ersten Einladungen für Ihre Organisation ein:
 
 Öffnen Sie die Lieferantenverwaltung. Prüfen Sie vor einer Einladung Firma, Lieferantengruppe, Ansprechperson und E-Mail-Adresse. Beim Anlegen eines Lieferanten fordert das Speichern den Versand der Registrierungseinladung an; es ist nicht nur eine unverbindliche Dateneingabe. Für bestehende Lieferanten verwenden Sie die passende Einladungsaktion. Eine Versandbestätigung bedeutet noch nicht, dass die E-Mail zugestellt oder die Registrierung abgeschlossen wurde.
 
-<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-de.png" alt="Interne Lieferantenverwaltung mit drei fiktiven Beispielunternehmen. Die Statusspalte zeigt hier jeweils eine ausstehende Registrierung."><figcaption><p>Interne Lieferantenverwaltung mit drei fiktiven Beispielunternehmen. Die Statusspalte zeigt hier jeweils eine ausstehende Registrierung.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-suppliers-focus-20261024-de.png" alt="Interne Lieferantenverwaltung mit drei fiktiven Beispielunternehmen. Die Statusspalte zeigt hier jeweils eine ausstehende Registrierung."><figcaption><p>Interne Lieferantenverwaltung mit drei fiktiven Beispielunternehmen. Die Statusspalte zeigt hier jeweils eine ausstehende Registrierung.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/portal-invitation-20261024-de.png" alt="Formular zum Anlegen und Einladen eines Lieferanten. Firma, Ansprechperson und E-Mail-Adresse werden vor dem Speichern geprüft."><figcaption><p>Formular zum Anlegen und Einladen eines Lieferanten. Firma, Ansprechperson und E-Mail-Adresse werden vor dem Speichern geprüft.</p></figcaption></figure>
 

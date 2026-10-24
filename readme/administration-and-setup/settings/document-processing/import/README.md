@@ -67,8 +67,6 @@ Les journaux de connexion aident à diagnostiquer les communications ; les journ
 
 ## Tutoriel vidéo: Boîte de réception et recherche d'erreurs
 
-Le personnage et la voix sont synthétiques. La capture montre la véritable interface de test DocBits avec des factures de formation synthétiques.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/fr.mp4" %}
 Boîte de réception et recherche d'erreurs
 {% endembed %}

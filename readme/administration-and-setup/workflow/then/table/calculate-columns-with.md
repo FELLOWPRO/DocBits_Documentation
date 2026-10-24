@@ -16,8 +16,6 @@ Utilisez-la pour calculer les montants des lignes avant l’action suivante du w
 
 [Lire la vidéo avec des sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.html) · [Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.txt)
 
-L’administrateur et sa voix sont synthétiques. La démonstration utilise l’interface réelle de DocBits et une facture fictive.
-
 ## Configuration de la carte
 
 | Champ | Sélection de l’exemple |

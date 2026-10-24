@@ -4,6 +4,16 @@ Met het **leveranciersportaal** geeft een beheerder de leveranciers van zijn bed
 
 Een uitgenodigde leverancier registreert zich en meldt zich aan met een eigen account. Vervolgens kan de leverancier de beschikbaar gestelde informatie bekijken, zoals de status van de eigen inkooporders en facturen. De configuratie van de organisatie bepaalt welke functies beschikbaar zijn.
 
+## Video: het leveranciersportaal en toegang voorbereiden
+
+Een fictieve beheerder legt de portaaloptie en abonnementkeuze uit, bereidt een uitnodiging voor en toont de registratiepagina. Activering, verzending, registratie en goedkeuring worden als afzonderlijke stappen uitgelegd.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/nl.mp4" %}
+
+[Open de video met Nederlandse ondertiteling en hoofdstukselectie](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/nl.html)
+
+*De persoon en de stem zijn synthetisch. De interface is afkomstig van een DocBits-demo-organisatie.*
+
 ## Admin: het portaal activeren
 
 1. Open in de instellingen de modules en selecteer **Documentintegratie**.

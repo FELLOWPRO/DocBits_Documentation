@@ -25,3 +25,5 @@ Dien de gegevens in via de daarvoor bedoelde afrondingsactie. Is een controle of
 Neem contact op met de uitnodigende organisatie bij een ongeldige link, ontbrekende rechten of onduidelijke verplichte gegevens. Een intern leveranciersrecord vervangt uw registratie of de noodzakelijke toegangsgoedkeuring niet.
 
 [Het leveranciersportaal instellen](README.md).
+
+[Video: portaaltoegang en registratie voorbereiden – met Nederlandse ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/nl.html)

@@ -4,6 +4,7 @@
 
 * [DocBits](README.md)
   * [Kluczowe funkcje DocBits](overview-and-basics/docbits/key-features-of-docbits.md)
+* [Informacje o naszych filmach szkoleniowych](about-training-videos.md)
 * [Architektura](overview-and-basics/architecture/README.md)
   * [DocBits Infor na miejscu Klienta](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)
   * [Certyfikaty](overview-and-basics/architecture/certifications.md)

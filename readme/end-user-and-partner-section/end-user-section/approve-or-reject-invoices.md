@@ -10,7 +10,7 @@ Zatwierdź lub odrzuć fakturę
 
 Pokazano rzeczywistą aplikację; sformułowanie opcji może zależeć od wdrożonej wersji.
 
-Użyj zatwierdzenia, aby zapisać swoją decyzję merytoryczną dotyczącą faktury, która została już zwalidowana. Potrzebujesz dostępu do dokumentu i uprawnień do jego obecnego etapu zatwierdzania. Wideo wykorzystuje zwykłe konto osoby sprawdzającej, przygotowane syntetyczne faktury i fikcyjną prezenterkę.
+Użyj zatwierdzenia, aby zapisać swoją decyzję merytoryczną dotyczącą faktury, która została już zwalidowana. Potrzebujesz dostępu do dokumentu i uprawnień do jego obecnego etapu zatwierdzania. Wideo wykorzystuje zwykłe konto osoby sprawdzającej.
 
 ## Sprawdź i podejmij decyzję
 

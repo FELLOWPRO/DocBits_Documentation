@@ -36,7 +36,7 @@ Są to oczekiwane wyniki przykładu. Brak pola nie potwierdza zakończenia kontr
 
 ## Film z przykładem administratora
 
-Kiedy używam karty, gdzie ją znaleźć i jak porównać stan pola wyboru. Administrator, biuro i głos są wygenerowane syntetycznie; obsługa przedstawia rzeczywisty interfejs DocBits na koncie testowym. Przykłady pokazują oczekiwane wyniki.
+Kiedy używam karty, gdzie ją znaleźć i jak porównać stan pola wyboru. Przykłady pokazują oczekiwane wyniki.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v2/pl.mp4" %}
 

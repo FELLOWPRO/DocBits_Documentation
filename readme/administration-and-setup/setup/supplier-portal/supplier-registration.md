@@ -10,7 +10,7 @@ Verifique qual organização enviou o convite e a que endereço de e-mail se des
 
 Confira o nome e o e-mail preenchidos previamente. Insira os dados solicitados e siga as regras de senha apresentadas. Leia os termos e as informações de privacidade. Conclua a criação da conta com a função de registro. Uma conta existente e um novo registro são situações diferentes; siga o processo previsto para o seu convite.
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-pt.png" alt="Formulário de registro da conta de fornecedor. O exemplo está vazio; um convite pode preencher previamente alguns dados."><figcaption><p>Formulário de registro da conta de fornecedor. O exemplo está vazio; um convite pode preencher previamente alguns dados.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-pt.png" alt="Formulário de registro da conta de fornecedor. O exemplo está vazio; um convite pode preencher previamente alguns dados."><figcaption><p>Formulário de registro da conta de fornecedor. O exemplo está vazio; um convite pode preencher previamente alguns dados.</p></figcaption></figure>
 
 ## 3. Completar os dados do fornecedor
 

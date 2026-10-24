@@ -25,7 +25,7 @@ La cliente e l’ufficio sono generati con IA. Le azioni e i risultati di ricerc
 
 ## Visita completa della dashboard
 
-La cliente immaginaria di Milano mostra la ricerca combinata con AND, i filtri di stato, la guida alla ricerca, le impostazioni delle colonne, le statistiche e l’aggiornamento. L’interfaccia italiana è stata registrata in DocBits con dati di prova sintetici. Il personaggio e la voce sono generati dall’IA.
+La cliente di Milano mostra la ricerca combinata con AND, i filtri di stato, la guida alla ricerca, le impostazioni delle colonne, le statistiche e l’aggiornamento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/it.mp4" %}
 

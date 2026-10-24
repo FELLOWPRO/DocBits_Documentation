@@ -103,8 +103,6 @@ Per le fatture non abbinate automaticamente:
 
 ## Video tutorial: Ripartizione di una fattura di spesa
 
-Il personaggio e la voce sono sintetici. La registrazione mostra la vera interfaccia di test DocBits con fatture di formazione sintetiche.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/it.mp4" %}
 Ripartizione di una fattura di spesa
 {% endembed %}

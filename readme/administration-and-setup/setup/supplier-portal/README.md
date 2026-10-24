@@ -4,6 +4,16 @@ O **portal do fornecedor** permite que um administrador dê aos fornecedores da 
 
 Um fornecedor convidado regista-se e inicia sessão com a sua própria conta. Pode então consultar as informações disponibilizadas, por exemplo o estado das suas encomendas de compra e faturas. As funcionalidades disponíveis dependem da configuração da organização.
 
+## Vídeo: preparar o portal de fornecedores e o acesso
+
+Um administrador fictício explica a opção do portal, a seleção do plano, a preparação de um convite e a página de registo. A ativação, o envio, o registo e a aprovação são explicados como passos separados.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pt.mp4" %}
+
+[Abrir o vídeo com legendas em português e seleção de capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pt.html)
+
+*A personagem e a voz são sintéticas. A interface pertence a uma organização de demonstração do DocBits.*
+
 ## Admin: ativar o portal
 
 1. Nas configurações, abra os módulos e selecione **Integração de Documentos**.

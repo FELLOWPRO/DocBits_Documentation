@@ -10,7 +10,7 @@ Verificare quale organizzazione ha inviato l’invito e a quale indirizzo email 
 
 Controllare nome ed email precompilati. Inserire i dati richiesti e rispettare le regole della password visualizzate. Leggere condizioni e informazioni sulla privacy. Completare la creazione dell’account con la funzione di registrazione. Un account esistente e una nuova registrazione sono casi diversi; seguire la procedura prevista per l’invito.
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-it.png" alt="Modulo di registrazione dell’account fornitore. L’esempio è vuoto; un invito può precompilare alcuni dati."><figcaption><p>Modulo di registrazione dell’account fornitore. L’esempio è vuoto; un invito può precompilare alcuni dati.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-it.png" alt="Modulo di registrazione dell’account fornitore. L’esempio è vuoto; un invito può precompilare alcuni dati."><figcaption><p>Modulo di registrazione dell’account fornitore. L’esempio è vuoto; un invito può precompilare alcuni dati.</p></figcaption></figure>
 
 ## 3. Completare i dati del fornitore
 

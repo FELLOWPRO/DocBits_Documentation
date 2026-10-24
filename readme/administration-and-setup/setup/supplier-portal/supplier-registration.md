@@ -10,7 +10,7 @@ Controleer welke organisatie de uitnodiging heeft verstuurd en voor welk e-maila
 
 Controleer de vooraf ingevulde naam en het e-mailadres. Vul de gevraagde accountgegevens in en volg de getoonde wachtwoordregels. Lees de voorwaarden en privacyinformatie. Voltooi het aanmaken van uw account met de registratiefunctie. Een bestaand account en een nieuwe registratie zijn verschillende gevallen; volg de procedure die bij uw uitnodiging hoort.
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-nl.png" alt="Registratieformulier voor een leveranciersaccount. Dit voorbeeld is leeg; een uitnodiging kan gegevens vooraf invullen."><figcaption><p>Registratieformulier voor een leveranciersaccount. Dit voorbeeld is leeg; een uitnodiging kan gegevens vooraf invullen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-nl.png" alt="Registratieformulier voor een leveranciersaccount. Dit voorbeeld is leeg; een uitnodiging kan gegevens vooraf invullen."><figcaption><p>Registratieformulier voor een leveranciersaccount. Dit voorbeeld is leeg; een uitnodiging kan gegevens vooraf invullen.</p></figcaption></figure>
 
 ## 3. Leveranciersgegevens aanvullen
 

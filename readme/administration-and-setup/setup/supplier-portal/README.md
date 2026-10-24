@@ -31,6 +31,18 @@ Depois que o recurso **Portal do Fornecedor** estiver ativado, uma nova seção 
 
 Um guia detalhado de todas as Configurações do Fornecedor pode ser encontrado [aqui](../../settings/supplier-setting/).
 
+## Vídeo: pesquisar fornecedores e atualizar dados
+
+Este vídeo em português mostra como pesquisar um fornecedor de exemplo, abrir os respetivos detalhes, alterar a cidade e o código postal e confirmar que as alterações foram guardadas após recarregar a página.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pt.mp4" %}
+Demonstração em português com um administrador sintético e a interface de teste real do DocBits.
+{% endembed %}
+
+[Abrir o vídeo com legendas e transcrição em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/pt.html).
+
+O formulário foi configurado para esta demonstração com **Nome do Fornecedor**, **Cidade** e **CEP**; a configuração da sua organização pode ser diferente. A cidade de Colónia é introduzida como **Köln**, conforme aparece no ecrã, com o código postal **50667**. Na interface gravada, o botão para guardar chama-se **Salvar**. A confirmação ainda aparece em inglês: **Supplier is saved successfully**. Guardar atualiza os dados mestre; esta demonstração não aprova o fornecedor nem envia um convite.
+
 ## Painel do Fornecedor <a href="#supplier-permissions" id="supplier-permissions"></a>
 
 Você pode acessar o **Painel do Fornecedor** pelo menu à esquerda, conforme mostrado abaixo.

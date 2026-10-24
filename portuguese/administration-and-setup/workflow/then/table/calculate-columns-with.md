@@ -8,6 +8,14 @@ Use o cartão quando o passo seguinte do workflow precisar de valores calculados
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-configured-v2-20261024-pt.png" alt="Cartão versão 2: INVOICE_TABLE, Quantidade × Preço unitário → TOTAL_AMOUNT. A interface apresenta o nome da tabela duas vezes." width="563"><figcaption><p>Cartão versão 2: INVOICE_TABLE, Quantidade × Preço unitário → TOTAL_AMOUNT. A interface apresenta o nome da tabela duas vezes.</p></figcaption></figure>
 
+## Vídeo de administração
+
+**37 segundos · Português.** João explica quando utilizar o cartão, configura a multiplicação e mostra os resultados guardados na mesma fatura de exemplo.
+
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.mp4" %}
+
+[Ver com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.html) · [Ler a transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.txt)
+
 ## Configurar o cartão
 
 | Definição | Seleção no exemplo |

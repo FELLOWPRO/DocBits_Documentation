@@ -123,3 +123,16 @@ Fai clic su qualsiasi categoria per applicare un filtro e visualizzare solo quei
 Dopo che è stata inviata un'e-mail di invito, il fornitore deve completare il processo di registrazione per accedere al **Portale fornitori**.
 
 Una guida dettagliata passo-passo sul processo di registrazione può essere trovata [qui](supplier-registration.md).
+
+
+## Video: cercare un fornitore e aggiornare i dati anagrafici
+
+Questo video in italiano mostra come un amministratore cerca un fornitore di esempio, apre i suoi dettagli, modifica città e codice postale, salva e verifica i valori dopo aver ricaricato la pagina.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/it.mp4" %}
+Dimostrazione in italiano con un personaggio sintetico e la vera interfaccia DocBits di un’organizzazione di prova.
+{% endembed %}
+
+[Apri il video con sottotitoli e trascrizione in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-management-admin/v1/it.html).
+
+La dimostrazione usa tre aziende fittizie e un modulo preparato con nome, città e codice postale. Il fornitore di imballaggi viene cercato per nome; la città viene impostata su **Köln** e il codice postale su **50667**. Dopo il salvataggio e il ricaricamento i valori sono ancora presenti. Lo stato del fornitore resta in attesa di registrazione: il salvataggio dei dati anagrafici non costituisce un’approvazione. Il video non invia inviti e non mostra il completamento della registrazione.

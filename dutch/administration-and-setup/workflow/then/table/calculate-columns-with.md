@@ -10,9 +10,9 @@ Voeg de actie in de standaardworkflow toe onder **Dan → Tabel**. Stel de gewen
 
 **36 seconden · Nederlands.** Jan legt het gebruik uit, kiest hoeveelheid × eenheidsprijs en toont de opgeslagen resultaten op dezelfde voorbeeldfactuur.
 
-{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/nl.mp4" %}
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/nl.mp4" %}
 
-[Video met Nederlandse ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/nl.html) · [Transcript lezen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/nl.txt)
+[Video met Nederlandse ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/nl.html) · [Transcript lezen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/nl.txt)
 
 ## Kaart instellen
 

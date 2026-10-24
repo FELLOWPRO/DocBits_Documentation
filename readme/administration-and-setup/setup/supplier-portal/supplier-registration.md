@@ -1,40 +1,27 @@
-# Inscription du Fournisseur
+# Inscription des fournisseurs
 
-1.  Vous recevrez une invitation avec un lien par E-mail pour commencer le processus d'inscription. Veuillez cliquer sur « Aller à l'inscription », soumettre les informations requises et accepter les termes et conditions pour commencer. \
+Ce guide s’adresse aux fournisseurs invités au portail DocBits d’une organisation. Utilisez le lien de votre invitation. Vous disposez de votre propre compte fournisseur ; l’organisation qui vous invite détermine les informations accessibles et les étapes d’inscription requises.
 
+## 1. Ouvrir l’invitation
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/supplier_registration_1.png" alt="" width="287"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/supplier_registration_2.png" alt="" width="246"><figcaption></figcaption></figure></div>
-2.  **Détails du Fournisseur**
+Vérifiez l’organisation à l’origine de l’invitation et l’adresse e-mail du destinataire. Ouvrez le lien d’inscription de cette invitation. Si le lien a expiré ou concerne une autre personne, demandez une nouvelle invitation à l’organisation.
 
-    Veuillez vérifier que le nom du Fournisseur est correct. C'est un détail critique pour des raisons d'identité et légales qui ne peut pas être modifié. Veuillez fournir toutes les informations applicables, y compris les champs requis. Une fois terminé, cliquez sur « Suivant » pour continuer vers la section Données d'Adresse. Pour enregistrer vos progrès et continuer plus tard, cliquez sur « Enregistrer ».\
+## 2. Créer son accès personnel
 
+Vérifiez les noms et l’adresse e-mail préremplis. Saisissez les données de compte demandées et respectez les règles de mot de passe affichées. Lisez les conditions et les informations de confidentialité. Terminez la création du compte avec la commande d’inscription. Un compte existant et une nouvelle inscription sont deux cas différents ; suivez le parcours prévu pour votre invitation.
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_3.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **Données d'Adresse** Veuillez fournir toutes les informations applicables, y compris les champs requis. Une fois terminé, cliquez sur « Suivant » pour continuer vers la section Contact du Fournisseur. Pour enregistrer vos progrès et continuer plus tard, cliquez sur « Enregistrer ».\
+<figure><img src="../../../.gitbook/assets/portal-registration-20261024-fr.png" alt="Formulaire d’inscription au compte fournisseur. Cet exemple est vide ; une invitation peut préremplir certaines informations."><figcaption><p>Formulaire d’inscription au compte fournisseur. Cet exemple est vide ; une invitation peut préremplir certaines informations.</p></figcaption></figure>
 
+## 3. Compléter les informations fournisseur
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_4.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  **Contact du Fournisseur** Veuillez fournir toutes les informations applicables, y compris les champs requis. Une fois terminé, cliquez sur « Suivant » pour continuer vers la section Financière du Fournisseur. Pour enregistrer vos progrès et continuer plus tard, cliquez sur « Enregistrer ».\
+Renseignez les données et, le cas échéant, les justificatifs demandés. Les champs et sections dépendent de la mise en page configurée par l’organisation. Les indications et messages de validation précisent les données obligatoires. Enregistrez votre progression si cette option est proposée ; cet enregistrement ne constitue pas automatiquement l’envoi final.
 
+## 4. Vérifier l’inscription et l’approbation
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_5.png" alt="" width="404"><figcaption></figcaption></figure>
-5.  **Financier du Fournisseur** Veuillez fournir toutes les informations applicables. Une fois terminé, cliquez sur « Suivant » pour continuer vers la section Achats du Fournisseur. Pour enregistrer vos progrès et continuer plus tard, cliquez sur « Enregistrer ».\
+Transmettez vos informations avec la commande de finalisation prévue. Si une vérification ou une approbation est configurée, attendez son résultat. Connectez-vous ensuite avec votre propre compte. L’organisation détermine les commandes, factures et autres informations que vous pouvez consulter.
 
+## En cas de problème d’accès
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_6.png" alt="" width="402"><figcaption></figcaption></figure>
-6.  **Achats du Fournisseur** Veuillez fournir toutes les informations applicables. Une fois terminé, cliquez sur « Suivant » pour continuer vers la section Certificats du Fournisseur. Pour enregistrer vos progrès et continuer plus tard, cliquez sur « Enregistrer ».\
+Contactez l’organisation qui vous invite si le lien est invalide, si des autorisations manquent ou si les données obligatoires sont ambiguës. Une fiche fournisseur interne ne remplace ni votre inscription ni l’approbation d’accès nécessaire.
 
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_7.png" alt="" width="401"><figcaption></figcaption></figure>
-7.  **Certificats du Fournisseur** Veuillez télécharger tous les certificats requis (Fiscal, Assurance, Diversification des Fournisseurs). Veuillez enregistrer vos progrès si vous devez revenir pour compléter le processus d'inscription plus tard. Une fois terminé, cliquez sur « Envoyer pour approbation ».\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_8.png" alt="" width="404"><figcaption></figcaption></figure>
-8.  Veuillez télécharger tous les certificats requis (Fiscal, Assurance, Diversification des Fournisseurs). Veuillez enregistrer vos progrès si vous devez revenir pour compléter le processus d'inscription plus tard. Une fois terminé, cliquez sur « Envoyer pour approbation ».\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_9.png" alt="" width="404"><figcaption></figcaption></figure>
-9.  Veuillez vérifier votre E-mail pour une confirmation que vous avez complété le processus d'inscription.\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_10.png" alt="" width="563"><figcaption></figcaption></figure>
+[Configuration du portail fournisseurs](README.md).

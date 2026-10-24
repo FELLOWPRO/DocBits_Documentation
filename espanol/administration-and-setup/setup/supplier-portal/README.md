@@ -27,7 +27,7 @@ Configure el portal de su organización antes de enviar las primeras invitacione
 
 Abra la administración de proveedores. Antes de invitar, revise la empresa, el grupo, la persona de contacto y el correo. Al crear un proveedor, guardar solicita el envío de la invitación de registro; no se limita a conservar un borrador. Para un proveedor existente, utilice la acción de invitación correspondiente. La confirmación de envío no demuestra que el correo se haya entregado ni que el registro haya finalizado.
 
-<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-es.png" alt="Administración interna de tres empresas ficticias. Los tres estados muestran aquí un registro pendiente."><figcaption><p>Administración interna de tres empresas ficticias. Los tres estados muestran aquí un registro pendiente.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-suppliers-focus-20261024-es.png" alt="Administración interna de tres empresas ficticias. Los tres estados muestran aquí un registro pendiente."><figcaption><p>Administración interna de tres empresas ficticias. Los tres estados muestran aquí un registro pendiente.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/portal-invitation-20261024-es.png" alt="Formulario para crear e invitar a un proveedor. Revise la empresa, el contacto y el correo antes de guardar."><figcaption><p>Formulario para crear e invitar a un proveedor. Revise la empresa, el contacto y el correo antes de guardar.</p></figcaption></figure>
 

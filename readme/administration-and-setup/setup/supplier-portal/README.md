@@ -4,6 +4,16 @@ Mit dem **Lieferantenportal** stellt ein Administrator den Lieferanten seines Un
 
 Ein eingeladener Lieferant registriert sich und meldet sich mit seinem eigenen Zugang an. Dort kann er die für ihn freigegebenen Informationen und beispielsweise den Status seiner Bestellungen und Rechnungen einsehen. Welche Funktionen verfügbar sind, bestimmt die Konfiguration der Organisation.
 
+## Video: Lieferantenportal und Zugang vorbereiten
+
+Im Video führt ein fiktiver Administrator durch Portaloption und Tarifauswahl, die Vorbereitung einer Einladung und den Registrierungseinstieg. Aktivierung, Versand, Registrierung und Freigabe werden als getrennte Schritte erklärt.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Kapitelauswahl öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.html)
+
+*Figur und Stimme sind synthetisch. Die Oberfläche stammt aus einer DocBits-Demoorganisation.*
+
 ## Admin: Portal aktivieren
 
 1. Öffnen Sie in den Einstellungen die Module und dort den Bereich **Dokumentenintegration**.

@@ -41,6 +41,8 @@ Die Beispielrechnung enthält zwei Zeilen. Vor der Berechnung ist die Ergebnissp
 
 Im gezeigten Test legt die Karte die Ergebnisspalte an. Nach dem erneuten Öffnen der Rechnung sind **20,00** und **12,00** sichtbar. Die Eingabespalten und die ursprünglichen Werte in `NET_AMOUNT` bleiben in diesem Beispiel erhalten. Enthält die ausgewählte Ergebnisspalte bereits Werte, werden diese durch die Berechnung ersetzt.
 
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-de-dark-20261024.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-de-light-20261024.png" alt="Dieselbe Beispielrechnung und das nach erneutem Öffnen gespeicherte Ergebnis: Gesamtbetrag 20,00 und 12,00. Die ursprünglichen Nettobeträge bleiben erhalten." width="735"></picture><figcaption><p>Dieselbe Beispielrechnung und das nach erneutem Öffnen gespeicherte Ergebnis: Gesamtbetrag 20,00 und 12,00. Die ursprünglichen Nettobeträge bleiben erhalten.</p></figcaption></figure>
+
 ## Prüfen und Gegenbeispiele
 
 - Prüfen Sie beide Eingabespalten und kontrollieren Sie nach der Berechnung die gespeicherten Ergebniswerte.

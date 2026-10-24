@@ -25,3 +25,5 @@ Envíe la información mediante la acción de finalización correspondiente. Si 
 Póngase en contacto con la organización que le invita si el enlace no es válido, faltan permisos o no están claros los datos obligatorios. Una ficha de proveedor interna no sustituye su registro ni la aprobación de acceso necesaria.
 
 [Configuración del portal de proveedores](README.md).
+
+[Vídeo: preparar el acceso al portal y el registro – con subtítulos en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.html)

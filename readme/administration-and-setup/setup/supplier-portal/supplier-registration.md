@@ -10,7 +10,7 @@ Compruebe qué organización ha enviado la invitación y a qué dirección de co
 
 Revise el nombre y el correo rellenados previamente. Introduzca los datos solicitados y siga las reglas de contraseña mostradas. Introduzca la contraseña y repítala en el segundo campo de contraseña. Lea las condiciones y la información de privacidad. Complete la creación de la cuenta mediante la función de registro. Una cuenta existente y un registro nuevo son casos distintos; siga el proceso previsto para su invitación.
 
-<figure><img src="../../../.gitbook/assets/portal-registration-20261024-es.png" alt="Formulario de registro de la cuenta de proveedor. Se muestra un formulario vacío; una invitación puede rellenar algunos datos previamente."><figcaption><p>Formulario de registro de la cuenta de proveedor. Se muestra un formulario vacío; una invitación puede rellenar algunos datos previamente.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-es.png" alt="Formulario de registro de la cuenta de proveedor. Se muestra un formulario vacío; una invitación puede rellenar algunos datos previamente."><figcaption><p>Formulario de registro de la cuenta de proveedor. Se muestra un formulario vacío; una invitación puede rellenar algunos datos previamente.</p></figcaption></figure>
 
 ## 3. Completar los datos del proveedor
 

@@ -13,8 +13,6 @@ La [guida alla dashboard](README.md) descrive ricerca, azioni e viste salvate.
 
 ## Video tutorial: Gestire le fatture bloccate
 
-Il personaggio e la voce sono sintetici. La registrazione mostra la vera interfaccia di test DocBits con fatture di formazione sintetiche.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/it.mp4" %}
 Gestire le fatture bloccate
 {% endembed %}

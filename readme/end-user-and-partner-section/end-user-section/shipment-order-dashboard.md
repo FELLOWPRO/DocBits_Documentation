@@ -9,7 +9,6 @@ Questa sezione offre una panoramica dettagliata di tutti gli ordini di spedizion
 Questo video in italiano mostra come un amministratore cerca una spedizione per ID articolo e verifica numero di ordine, numero di consegna, quantità spedita, stato e magazzino. Infine cancella la ricerca e ricarica l’elenco.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/it.mp4" %}
-Dimostrazione in italiano con un personaggio sintetico e l’interfaccia reale di DocBits in un ambiente di prova.
 {% endembed %}
 
 [Apri il video con sottotitoli e trascrizione in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/it.html).

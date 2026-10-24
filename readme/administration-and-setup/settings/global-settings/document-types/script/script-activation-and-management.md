@@ -2,6 +2,14 @@
 
 Administrators can use **Scripts** to manage processing rules for a document type. This guide shows where to find scripts, how to switch them on or off, and how to change a published script safely.
 
+## Video guide: manage scripts
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v3/en.mp4" %}
+Manage the scripts of a document type
+{% endembed %}
+
+The video shows the script list with filter and sort, switching scripts on and off, copying, the version history and deleting with a confirmation.
+
 ## Find a script
 
 1. Open **Settings → Document Types**.

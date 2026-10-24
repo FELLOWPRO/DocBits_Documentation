@@ -25,7 +25,7 @@ description: "在当前 DocBits 仪表板中查找、检查和整理文档。"
 
 ## 完整仪表板操作演示
 
-上海的虚构客户演示如何使用 AND 组合搜索条件、按状态筛选、打开搜索帮助、查看列设置、统计信息和刷新列表。真实中文 DocBits 界面使用合成测试数据录制。人物和声音由 AI 生成。
+上海的客户演示如何使用 AND 组合搜索条件、按状态筛选、打开搜索帮助、查看列设置、统计信息和刷新列表。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/zh.mp4" %}
 

@@ -304,8 +304,6 @@ To create a new export:
 
 ## Video tutorial: Configure and test an ERP export
 
-The presenter and voice are synthetic. The recording shows the actual DocBits test interface with synthetic training invoices.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/en.mp4" %}
 Configure and test an ERP export
 {% endembed %}

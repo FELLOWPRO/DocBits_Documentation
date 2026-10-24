@@ -31,7 +31,7 @@ These are expected-result examples. Add an appropriate content condition to vali
 
 ## Administrator example video
 
-When I use the card, where to find it and how to detect missing invoice numbers. The administrator, office and voice are synthetic; the demonstration shows the real DocBits interface of a test account. The examples show expected results.
+When I use the card, where to find it and how to detect missing invoice numbers. The examples show expected results.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/en.mp4" %}
 

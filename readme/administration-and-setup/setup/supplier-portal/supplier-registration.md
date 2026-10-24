@@ -25,3 +25,5 @@ Envie os dados por meio da ação de conclusão correspondente. Se houver uma re
 Entre em contato com a organização que enviou o convite se o link for inválido, faltarem permissões ou os dados obrigatórios não estiverem claros. Uma ficha interna de fornecedor não substitui o seu registro nem a aprovação de acesso necessária.
 
 [Configuração do portal de fornecedores](README.md).
+
+[Vídeo: preparar o acesso ao portal e o registo – com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pt.html)

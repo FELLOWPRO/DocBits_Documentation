@@ -6,13 +6,11 @@ Un proveedor invitado se registra e inicia sesión con su propia cuenta. Allí p
 
 ## Vídeo: preparar el portal de proveedores y el acceso
 
-Un administrador ficticio explica la opción del portal y la selección del plan, la preparación de una invitación y el inicio del registro. La activación, el envío, el registro y la aprobación se explican como pasos separados.
+Un administrador explica la opción del portal y la selección del plan, la preparación de una invitación y el inicio del registro. La activación, el envío, el registro y la aprobación se explican como pasos separados.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.mp4" %}
 
 [Abrir el vídeo con subtítulos en español y selección de capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.html)
-
-*El personaje y la voz son sintéticos. La interfaz pertenece a una organización de demostración de DocBits.*
 
 ## Admin: activar el portal
 

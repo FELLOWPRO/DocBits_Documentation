@@ -1,6 +1,8 @@
 # Cree una nueva tarea y asígnela al destinatario
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2e92980da837-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v1-es-es.png" alt="Cree una nueva tarea y asígnela al destinatario, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v2-es-es.png" alt="Cree una nueva tarea y asígnela al destinatario, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 

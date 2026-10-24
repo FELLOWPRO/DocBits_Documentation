@@ -1,6 +1,6 @@
 # Texto en el campo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_field_contains_v2-es-es.png" alt="Texto en el campo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 

@@ -1,6 +1,6 @@
 # Fecha u hora
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-es-es.png" alt="Fecha u hora, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 

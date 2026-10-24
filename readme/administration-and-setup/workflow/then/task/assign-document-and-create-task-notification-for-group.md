@@ -1,6 +1,6 @@
 # Asignar documento y crear tarea/notificación para grupo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-01f8137c5c7f-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_group_sequential_v2-es-es.png" alt="Asignar documento y crear tarea/notificación para grupo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito**
 

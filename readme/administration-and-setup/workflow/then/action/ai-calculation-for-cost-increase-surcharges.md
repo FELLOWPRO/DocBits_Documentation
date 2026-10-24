@@ -1,6 +1,8 @@
 # Cálculo de IA para recargos por aumento de costos
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1-es-es.png" alt="Cálculo de IA para recargos por aumento de costos, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2-es-es.png" alt="Cálculo de IA para recargos por aumento de costos, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## Cuando usar esta tarjeta
 

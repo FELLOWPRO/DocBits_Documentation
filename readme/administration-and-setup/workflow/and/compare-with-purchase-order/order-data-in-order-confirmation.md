@@ -1,6 +1,12 @@
 # Datos del pedido en la confirmación del pedido
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-77711a53d4d0-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1-es-es.png" alt="Datos del pedido en la confirmación del pedido, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2-es-es.png" alt="Datos del pedido en la confirmación del pedido, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3-es-es.png" alt="Datos del pedido en la confirmación del pedido, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4-es-es.png" alt="Datos del pedido en la confirmación del pedido, Versión 4" width="634"><figcaption><p>Versión 4</p></figcaption></figure>
 
 ## **Propósito**
 

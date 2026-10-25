@@ -1,0 +1,178 @@
+# gha-runner-scale-set 0.14.1, namespace arc-docs. Credential is a Secret reference.
+containerMode:
+  kubernetesModeWorkVolumeClaim:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 10Gi
+    storageClassName: do-block-storage
+  type: dind
+githubConfigSecret: github-app-secret
+githubConfigUrl: https://github.com/FELLOWPRO
+listenerTemplate:
+  spec:
+    containers:
+    - name: listener
+      resources:
+        limits:
+          cpu: 500m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 128Mi
+maxRunners: 3
+minRunners: 0
+template:
+  spec:
+    containers:
+    - command:
+      - /home/runner/run.sh
+      env:
+      - name: DOCKER_BUILDKIT
+        value: '1'
+      - name: BUILDKIT_PROGRESS
+        value: plain
+      - name: ACTIONS_RUNNER_REQUIRE_JOB_CONTAINER
+        value: 'false'
+      - name: DOCKER_CLI_EXPERIMENTAL
+        value: enabled
+      - name: DOCKER_CONFIG
+        value: /home/runner/.docker
+      - name: DOCKER_HOST
+        value: unix:///var/run/docker.sock
+      image: ghcr.io/actions/actions-runner:2.336.0
+      name: runner
+      resources:
+        limits:
+          cpu: '4'
+          memory: 4Gi
+        requests:
+          cpu: '2'
+          memory: 1536Mi
+      volumeMounts:
+      - mountPath: /home/runner/.docker
+        name: docker-config
+      - mountPath: /usr/local/bin/doctl
+        name: shared-bin
+        subPath: doctl
+      - mountPath: /home/runner/_work
+        name: work
+    - image: docker:24-dind
+      name: dind
+      resources:
+        limits:
+          cpu: '4'
+          memory: 4Gi
+        requests:
+          cpu: 500m
+          memory: 1Gi
+      securityContext:
+        privileged: true
+      volumeMounts:
+      - mountPath: /home/runner/_work
+        name: work
+      - mountPath: /var/lib/docker
+        name: dind-storage
+    initContainers:
+    - command:
+      - /bin/sh
+      - -c
+      - "set -e\necho \"Setting up tools for runner...\"\n\n# Create plugin directory\n\
+        mkdir -p /docker-config/cli-plugins\n\n# api.github.com allows only 60 requests/hour\
+        \ per source IP when\n# unauthenticated, which a burst of runner starts exhausts\
+        \ in seconds. The\n# release lookups below then return 403, the version string\
+        \ comes back empty,\n# and the download URL built from it 404s - killing the\
+        \ pod before the runner\n# ever registers. Mint a short-lived GitHub App installation\
+        \ token instead,\n# which raises the ceiling to five figures per hour.\n#\n\
+        # The App private key is mounted into this init container only: it is absent\n\
+        # from the runner container, so workflow code cannot read it.\nmint_token()\
+        \ {\n  b64url() { openssl base64 -A | tr '+/' '-_' | tr -d '='; }\n  app_id=$(tr\
+        \ -d '[:space:]' < /github-app/github_app_id)\n  inst_id=$(tr -d '[:space:]'\
+        \ < /github-app/github_app_installation_id)\n  now=$(date +%s)\n  jwt_h=$(printf\
+        \ '{\"alg\":\"RS256\",\"typ\":\"JWT\"}' | b64url)\n  jwt_c=$(printf '{\"iat\"\
+        :%d,\"exp\":%d,\"iss\":\"%s\"}' \"$((now - 60))\" \"$((now + 540))\" \"$app_id\"\
+        \ | b64url)\n  jwt_s=$(printf '%s.%s' \"$jwt_h\" \"$jwt_c\" \\\n    | openssl\
+        \ dgst -sha256 -sign /github-app/github_app_private_key -binary | b64url)\n\
+        \  wget -qO- --timeout=30 --post-data='' \\\n    --header=\"Authorization:\
+        \ Bearer $jwt_h.$jwt_c.$jwt_s\" \\\n    --header=\"Accept: application/vnd.github+json\"\
+        \ \\\n    \"https://api.github.com/app/installations/$inst_id/access_tokens\"\
+        \ \\\n    | grep -o '\"token\" *: *\"[^\"]*\"' | cut -d'\"' -f4\n}\n\nGH_TOKEN=\"\
+        \"\nif [ -r /github-app/github_app_private_key ]; then\n  GH_TOKEN=$(mint_token)\
+        \ || GH_TOKEN=\"\"\nfi\nif [ -n \"$GH_TOKEN\" ]; then\n  echo \"GitHub API:\
+        \ authenticated as the runner GitHub App\"\nelse\n  echo \"WARNING: GitHub\
+        \ API unauthenticated (60 req/hour per IP) - token mint failed\"\nfi\n\n#\
+        \ $1 = repo slug. Prints the latest release tag, or nothing on failure.\n\
+        latest_tag() {\n  if [ -n \"$GH_TOKEN\" ]; then\n    wget -qO- --timeout=30\
+        \ --header=\"Authorization: Bearer $GH_TOKEN\" \\\n      --header=\"Accept:\
+        \ application/vnd.github+json\" \\\n      \"https://api.github.com/repos/$1/releases/latest\"\
+        \n  else\n    wget -qO- --timeout=30 \"https://api.github.com/repos/$1/releases/latest\"\
+        \n  fi | grep '\"tag_name\"' | cut -d'\"' -f4\n}\n\n# Get latest buildx version\n\
+        BUILDX_VERSION=$(latest_tag docker/buildx) || BUILDX_VERSION=\"\"\n[ -n \"\
+        $BUILDX_VERSION\" ] || { echo \"ERROR: could not resolve the latest docker/buildx\
+        \ release\"; exit 1; }\nBUILDX_URL=\"https://github.com/docker/buildx/releases/download/${BUILDX_VERSION}/buildx-${BUILDX_VERSION}.linux-amd64\"\
+        \nwget --timeout=60 -O /docker-config/cli-plugins/docker-buildx \"${BUILDX_URL}\"\
+        \nchmod +x /docker-config/cli-plugins/docker-buildx\n\n# Get latest doctl\
+        \ version\nDOCTL_VERSION=$(latest_tag digitalocean/doctl | sed 's/^v//') ||\
+        \ DOCTL_VERSION=\"\"\n[ -n \"$DOCTL_VERSION\" ] || { echo \"ERROR: could not\
+        \ resolve the latest digitalocean/doctl release\"; exit 1; }\nDOCTL_URL=\"\
+        https://github.com/digitalocean/doctl/releases/download/v${DOCTL_VERSION}/doctl-${DOCTL_VERSION}-linux-amd64.tar.gz\"\
+        \nwget --timeout=60 -O /tmp/doctl.tar.gz \"${DOCTL_URL}\"\n\nmkdir -p /shared-bin\n\
+        cd /tmp && tar xf doctl.tar.gz && mv doctl /shared-bin/\nchmod +x /shared-bin/doctl\n\
+        \necho '{\"experimental\": \"enabled\"}' > /docker-config/config.json\n\n\
+        echo \"Runner setup completed\"\n"
+      image: docker:24-dind
+      name: setup-tools
+      resources:
+        limits:
+          cpu: 500m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 128Mi
+      securityContext:
+        runAsUser: 0
+      volumeMounts:
+      - mountPath: /docker-config
+        name: docker-config
+      - mountPath: /shared-bin
+        name: shared-bin
+      - mountPath: /github-app
+        name: github-app
+        readOnly: true
+    nodeSelector:
+      doks.digitalocean.com/node-pool: dev-stage-high
+      kubernetes.io/arch: amd64
+    securityContext:
+      fsGroup: 1001
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    topologySpreadConstraints:
+    - labelSelector:
+        matchLabels:
+          actions-ephemeral-runner: 'True'
+      maxSkew: 1
+      topologyKey: kubernetes.io/hostname
+      whenUnsatisfiable: ScheduleAnyway
+    volumes:
+    - name: github-app
+      secret:
+        defaultMode: 256
+        secretName: github-app-secret
+    - emptyDir: {}
+      name: docker-config
+    - emptyDir: {}
+      name: shared-bin
+    - emptyDir: {}
+      name: work
+    - emptyDir: {}
+      name: dind-storage
+runnerGroup: DocBits Documentation
+runnerScaleSetName: k9s

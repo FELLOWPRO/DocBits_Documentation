@@ -65,7 +65,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
 
       - uses: actions/setup-python@v6
         with:
@@ -99,7 +99,7 @@ jobs:
             if [ -z "${dir}" ]; then echo "::error::unknown language ${lang}"; failed="${failed} ${lang}"; continue; fi
             echo "::group::${lang} -> ${dir}/"
 
-            if ! git fetch --quiet origin "${lang}"; then
+            if ! git fetch --quiet --depth=1 origin "${lang}:refs/remotes/origin/${lang}"; then
               echo "::error::cannot fetch branch ${lang}"; failed="${failed} ${lang}"; echo "::endgroup::"; continue
             fi
             src="${RUNNER_TEMP}/src-${lang}"

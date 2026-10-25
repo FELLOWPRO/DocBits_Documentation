@@ -209,6 +209,7 @@
         * [Scripts activeren en beheren](administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md)
         * [Scripts maken en bewerken](administration-and-setup/settings/global-settings/document-types/script/creating-and-editing-scripts.md)
         * [Scripts testen](administration-and-setup/settings/global-settings/document-types/script/testing-scripts.md)
+        * [AI-assistent in de scripteditor](administration-and-setup/settings/global-settings/document-types/script/script-ai-assistant.md)
         * [Scripts in DocBits](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)
           * [Contextvariabelen](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/context-variables.md)
           * [Functies](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/functions.md)

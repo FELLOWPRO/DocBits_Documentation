@@ -41,6 +41,8 @@ Una factura contiene las siguientes posiciones. La columna de resultado aún no 
 
 En el ejemplo del vídeo, la tarjeta crea la columna de resultado y los valores **20,00** y **12,00** siguen visibles después de volver a abrir la factura. Los importes originales de `NET_AMOUNT` se conservan. Si ya hay valores en la columna de resultado elegida, el cálculo los sustituye.
 
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-es-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-es-light-20261025.png" alt="Resultados por línea en TOTAL_AMOUNT tras volver a abrir la misma factura: 20,00 y 12,00. La interfaz denomina la columna «Importe Total Factura». Los importes netos originales se conservan." width="735"></picture><figcaption><p>Resultados por línea en TOTAL_AMOUNT tras volver a abrir la misma factura: 20,00 y 12,00. La interfaz denomina la columna «Importe Total Factura». Los importes netos originales se conservan.</p></figcaption></figure>
+
 ## Comprobaciones y contraejemplos
 
 - Revise las dos columnas de entrada y compruebe los valores guardados después del cálculo.

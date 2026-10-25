@@ -12,6 +12,10 @@ Dans le concepteur Standard, ouvrez **Ajouter une carte** dans le groupe **Et...
 
 ## Vue d'ensemble du modèle
 
+Ces quatre schémas présentent les règles métier à configurer. Ils complètent la carte de bibliothèque ci-dessus, affichée avant sélection et configuration. Dans Advanced, reliez explicitement chaque chemin. Dans une séquence Standard linéaire, définissez les conditions qui autorisent ses actions.
+
+<figure><img src="../../../.gitbook/assets/decision-flow-overview-fr.png" alt="Vue d’ensemble de l’exemple complet : contrôler les exceptions critiques, le type de document et l’urgence avant de choisir le circuit d’approbation. Chaque traitement et chaque connexion doivent être configurés ; le schéma ne représente pas un comportement automatique du produit."><figcaption><p>Vue d’ensemble de l’exemple complet : contrôler les exceptions critiques, le type de document et l’urgence avant de choisir le circuit d’approbation. Chaque traitement et chaque connexion doivent être configurés ; le schéma ne représente pas un comportement automatique du produit.</p></figcaption></figure>
+
 Ce modèle montre comment mettre en place une logique de décision complexe dans les workflows DocBits à l'aide de cartes de condition pour acheminer les documents par différents chemins de traitement en fonction des attributs des documents, des valeurs de champs et des règles métier.
 
 **Ce que fait ce modèle :**
@@ -45,6 +49,8 @@ Utilisez ce modèle lorsque vous devez :
 ***
 
 ## Types de logique de décision
+
+Les exemples IF-THEN, ET, OU et imbriqués ci-dessous sont indépendants. Leurs seuils illustrent chaque principe ; ils ne constituent pas une seule matrice d’approbation. La matrice complète plus loin utilise quatre tranches sans chevauchement. Une donnée inconnue ou une erreur d’évaluation n’est pas automatiquement Faux : définissez et testez son traitement séparément.
 
 ### 1. Logique IF-THEN simple
 
@@ -100,6 +106,8 @@ ELSE:
   → Standard processing
 ```
 
+<figure><img src="../../../.gitbook/assets/decision-conditions-and-or-fr.png" alt="Deux exemples indépendants : ET exige les trois critères ; OU en exige au moins un. Leurs seuils illustratifs ne remplacent pas les tranches de la matrice complète. Les sorties et le traitement des données inconnues ou des erreurs doivent être configurés."><figcaption><p>Deux exemples indépendants : ET exige les trois critères ; OU en exige au moins un. Leurs seuils illustratifs ne remplacent pas les tranches de la matrice complète. Les sorties et le traitement des données inconnues ou des erreurs doivent être configurés.</p></figcaption></figure>
+
 ### 4. Arbre de décision imbriqué
 
 ```
@@ -138,30 +146,53 @@ ELSE IF Document_Type = "Credit Note":
 
 **Règles métier :**
 
-1. Montant < 1 000 € : Approbation automatique
-2. Montant 1 000-10 000 € : Approbation par la responsable
-3. Montant > 10 000 € ET nouveau fournisseur : Approbation par le directeur + CFO
-4. Montant > 10 000 € ET fournisseur existant : Approbation par le directeur uniquement
-5. Tout montant avec écart de commande : Approbation par les achats d'abord
-6. Factures urgentes (marquées) : Workflow accéléré
+1. Avant tout routage par montant, arrêter et traiter les exceptions critiques, notamment un fournisseur bloqué. Un écart de commande n’est pas toujours critique : après sa résolution par les achats, le circuit peut continuer selon la configuration. Vérifier ensuite le type de document.
+2. Pour une facture urgente, suivre le circuit accéléré décrit dans cet exemple plutôt que les tranches ordinaires.
+3. Pour une facture non urgente avec un montant valide :
+   * montant < 1 000 € : approbation automatique ;
+   * 1 000 € ≤ montant < 10 000 € : approbation par la responsable ;
+   * 10 000 € ≤ montant < 50 000 € : contrôle du fournisseur puis circuit du directeur ; un fournisseur non bloqué de moins de 180 jours nécessite l’accord du directeur, puis celui de la direction financière ; les autres fournisseurs passent aussi au contrôle du risque ;
+   * montant ≥ 50 000 € : circuit de direction générale détaillé au chemin D.
+4. Un montant absent ou invalide mène ici à un contrôle manuel explicitement configuré. C’est une politique de cet exemple, pas un comportement de repli automatique du produit.
+5. Après création d’une tâche, attendre son résultat. Un refus arrête la chaîne et suit le traitement configuré ; un résultat en attente ne permet pas de poursuivre. La tâche de la direction financière n’est créée qu’après l’accord du directeur.
 
-**Mise en œuvre :**
+<figure><img src="../../../.gitbook/assets/decision-amount-routing-fr.png" alt="Seuils du niveau 2 : moins de 1 000 € ; de 1 000 € inclus à 10 000 € exclu ; de 10 000 € inclus à 50 000 € exclu ; 50 000 € ou plus. Chaque test suit le résultat négatif du précédent. Le contrôle manuel pour un montant absent ou invalide doit être configuré explicitement."><figcaption><p>Seuils du niveau 2 : moins de 1 000 € ; de 1 000 € inclus à 10 000 € exclu ; de 10 000 € inclus à 50 000 € exclu ; 50 000 € ou plus. Chaque test suit le résultat négatif du précédent. Le contrôle manuel pour un montant absent ou invalide doit être configuré explicitement.</p></figcaption></figure>
+
+Les valeurs de 1 000 €, 10 000 € et 50 000 € appartiennent à la tranche supérieure. Les contrôles précédents, l’attente d’un résultat et les connexions entre chemins doivent être configurés et testés. Une tâche créée ne prouve ni son approbation ni l’export du document.
+
+**Mise en œuvre illustrative :** adaptez les noms techniques et le pseudocode aux cartes réellement disponibles dans votre version. Ces blocs décrivent un exemple à configurer, plutôt qu’un fichier prêt à importer. Vérifiez les résultats d’exécution et les effets de votre configuration.
 
 ```
+PRECHECK: Critical Exceptions
+  IF Critical_Exception = TRUE OR Supplier_Status = "BLOCKED":
+    → Stop & handle exception before routing
+
 STEP 1: Check for PO Mismatch
   IF PO_Match_Status = "FAIL":
     → Route to Procurement for PO resolution
-    → After resolution, continue below
+    → After resolution, continue below as configured
+
+STEP 1b: Check Document Type
+  IF Document_Type = "Credit Note":
+    → Configured Credit Note workflow
+  ELSE IF Document_Type is not "Invoice":
+    → Configured workflow for this document type
+  ELSE:
+    → Continue below
 
 STEP 2: Check Urgent Flag
   IF Urgent_Flag = TRUE:
     → Skip amount checks
     → Direct to highest approver
-    → Set priority = HIGH
+    → Set priority = URGENT
     → 1-day deadline
 
-STEP 3: Amount-Based Routing (if not urgent)
-  IF Amount < €1,000:
+STEP 3: Amount-Based Routing (Invoice, if not urgent)
+  IF Amount is missing or invalid:
+    → Manual review (explicit example policy)
+    → Do not enter amount bands
+
+  ELSE IF Amount < €1,000:
     → Auto-approve
     → Export immediately
 
@@ -170,18 +201,27 @@ STEP 3: Amount-Based Routing (if not urgent)
     → Priority: Medium
     → Deadline: 3 days
 
-  ELSE IF Amount ≥ €10,000:
-    CHECK Supplier Status:
-      IF Supplier_Age < 180 days (New):
+  ELSE IF Amount < €50,000:
+    CHECK Supplier Status and Risk:
+      IF Supplier_Status = "BLOCKED":
+        → Stop & handle exception
+      ELSE IF Supplier_Age < 180 days (New):
         → Create task for Director (Task 1)
-        → After approval, create task for CFO (Task 2)
+        → Wait for positive Director approval before creating CFO task (Task 2)
+        → Wait for positive CFO approval before continuing
+        → Any rejection: Stop chain & handle rejection as configured
+        → Pending: Do not continue
         → Priority: High
         → Deadline: 2 days each
-
+      ELSE IF Supplier_Risk_Rating = "HIGH":
+        → Additional checks and Director approval
       ELSE (Existing Supplier):
         → Create task for Director only
         → Priority: High
         → Deadline: 2 days
+
+  ELSE (Amount ≥ €50,000):
+    → Executive approval path (see Path D)
 ```
 
 ***
@@ -249,7 +289,7 @@ ELSE:
   → Route to "Unknown Document Type" handling
 ```
 
-**Niveau 2 : Seuils de montant (pour les factures)**
+**Niveau 2 : Seuils de montant (factures non urgentes, montant valide)**
 
 ```
 IF Amount < €1,000:
@@ -304,7 +344,7 @@ Actions:
 5. Send confirmation email (optional)
 ```
 
-**Chemin B : Approbation par la responsable (1 000-10 000 €)**
+**Chemin B : Approbation par la responsable (1 000 € ≤ montant < 10 000 €)**
 
 ```
 Actions:
@@ -321,17 +361,22 @@ Actions:
 7. If rejected: Return to supplier
 ```
 
-**Chemin C : Approbation par le directeur (10 000-50 000 €)**
+**Chemin C : Approbation par le directeur (10 000 € ≤ montant < 50 000 €)**
 
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
 2. Set field "Approval_Level" = "2"
-3. Check Supplier_Age:
+3. Check Supplier_Age and Supplier_Risk_Rating:
    IF New (< 180 days):
      - Create Task 1: Director approval
-     - After Task 1: Create Task 2: CFO approval
-     - Dual approval required
+     - Wait for positive Task 1 approval before creating Task 2: CFO approval
+     - Wait for positive Task 2 approval before continuing
+     - Pending: Do not continue
+     - Any rejection: Stop chain & handle rejection as configured
+     - Both positive approvals required
+   ELSE IF Supplier_Risk_Rating = "HIGH":
+     - Additional risk checks and Director approval
    ELSE:
      - Create Task: Director approval only
 4. Priority: High
@@ -341,6 +386,10 @@ Actions:
 8. If all approved: Export
 9. If any rejected: Return to supplier
 ```
+
+<figure><img src="../../../.gitbook/assets/decision-approvals-sequence-fr.png" alt="Exemple d’approbations successives : créer la tâche de la direction financière seulement après l’accord du directeur, puis attendre son résultat. Poursuivre uniquement après les deux accords. Un refus arrête la chaîne et suit le traitement configuré ; un résultat en attente ne permet pas de continuer."><figcaption><p>Exemple d’approbations successives : créer la tâche de la direction financière seulement après l’accord du directeur, puis attendre son résultat. Poursuivre uniquement après les deux accords. Un refus arrête la chaîne et suit le traitement configuré ; un résultat en attente ne permet pas de continuer.</p></figcaption></figure>
+
+Le traitement d’un refus peut, selon votre configuration, renvoyer le document au fournisseur ou suivre un autre circuit. Ce schéma impose seulement l’arrêt de la chaîne d’approbation concernée ; il ne prescrit pas un contrôle manuel dans tous les cas.
 
 **Chemin D : Approbation par la direction générale (≥ 50 000 €)**
 
@@ -365,9 +414,11 @@ Actions:
 
 ## Modèles avancés de logique de décision
 
+Les modèles suivants sont des variantes indépendantes. Le score, les seuils par service et les règles temporelles ne s’ajoutent pas automatiquement à la matrice complète précédente ; choisissez et configurez les règles applicables à votre cas.
+
 ### Modèle 1 : Routage basé sur un score
 
-**Calculer un score de risque et router en conséquence :**
+**Calculer un score de risque entier et router en conséquence dans cet exemple :**
 
 ```
 Risk Score Calculation:
@@ -507,12 +558,18 @@ Exception Types:
 
 ## Diagramme complet de logique de décision
 
+Les quatre graphiques présentent les étapes essentielles. L’arbre textuel ci-dessous conserve le détail technique de l’exemple ; ses destinations restent à configurer.
+
+<details>
+<summary>Consulter l’arbre textuel détaillé de l’exemple complet</summary>
+
 ```
 INVOICE ARRIVES
 │
 ├─ LEVEL 1: EXCEPTION CHECK
 │  │
-│  ├─ Has Critical Exception? (Missing PO, Duplicate, etc.)
+│  ├─ Critical exception or BLOCKED supplier?
+│  │  (Criticality must be configured; not every PO mismatch is critical.)
 │  │  │
 │  │  ├─ YES → Stop & Escalate
 │  │  │        Create urgent task
@@ -548,6 +605,10 @@ INVOICE ARRIVES
 │
 ├─ LEVEL 4: AMOUNT THRESHOLDS
 │  │
+│  ├─ Amount missing or invalid?
+│  │  ├─ YES → Manual review (explicit example policy)
+│  │  └─ NO → Continue to amount thresholds below
+│  │
 │  ├─ Amount < €1,000?
 │  │  │
 │  │  ├─ YES → AUTO-APPROVE PATH
@@ -564,8 +625,9 @@ INVOICE ARRIVES
 │  │  │        Create task for Manager
 │  │  │        Priority: Medium
 │  │  │        Deadline: 3 days
-│  │  │        → WAIT for approval
-│  │  │           → END (Manager Path)
+│  │  │        → WAIT for result; pending must not continue
+│  │  │           → Approved: Continue configured processing
+│  │  │           → Rejected: Stop chain & handle rejection as configured
 │  │  │
 │  │  └─ NO → Continue
 │  │
@@ -585,10 +647,12 @@ INVOICE ARRIVES
 │              - CEO (if > €100,000)
 │              Priority: URGENT
 │              Deadline: 1 day each
-│              → WAIT for all approvals
-│                 → END (Executive Path)
+│              → WAIT for all required results
+│                 → All approved: Continue configured processing
+│                 → Pending: Do not continue
+│                 → Any rejection: Stop chain & handle rejection as configured
 │
-├─ LEVEL 5: SUPPLIER ANALYSIS (for €10k-€50k range)
+├─ LEVEL 5: SUPPLIER ANALYSIS (€10,000 ≤ Amount < €50,000)
 │  │
 │  ├─ Supplier Status = "BLOCKED"?
 │  │  │
@@ -608,9 +672,13 @@ INVOICE ARRIVES
 │  │  │           IF Task 1 Approved:
 │  │  │             Task 2: CFO (2 days)
 │  │  │             → WAIT for Task 2
-│  │  │                → END (Dual Approved)
+│  │  │                → Pending: Do not continue
+│  │  │                → Approved: Continue only after both positive approvals
+│  │  │                → Rejected: Stop chain & handle rejection as configured
 │  │  │           IF Task 1 Rejected:
-│  │  │             → END (Rejected at Level 1)
+│  │  │             → Stop chain & handle rejection as configured
+│  │  │           IF Task 1 Pending:
+│  │  │             → Do not create Task 2 or continue
 │  │  │
 │  │  └─ NO → Continue
 │  │
@@ -626,13 +694,16 @@ INVOICE ARRIVES
 │  │           Create task for Director
 │  │           Priority: High
 │  │           Deadline: 2 days
-│  │           → WAIT for approval
-│  │              → END (Standard High-Value)
+│  │           → WAIT for result; pending must not continue
+│  │              → Approved: Continue configured processing
+│  │              → Rejected: Stop chain & handle rejection as configured
 │  │
 │  └─ [Supplier analysis complete]
 │
 └─ [All decision levels processed]
 ```
+
+</details>
 
 ***
 
@@ -684,8 +755,9 @@ Business Rule: BR-INV-001 (Invoice Approval Matrix)
 Purpose: Route invoices based on amount thresholds per company policy
 Thresholds:
   < €1,000: Auto-approve (CFO approved threshold)
-  €1,000-€10,000: Manager approval (Delegation matrix)
-  > €10,000: Director approval (Signature authority)
+  €1,000 ≤ Amount < €10,000: Manager approval (Delegation matrix)
+  €10,000 ≤ Amount < €50,000: Director approval with supplier checks
+  Amount ≥ €50,000: Executive approval
 Exceptions: Urgent invoices skip to highest level
 Updated: 2025-10-23
 Owner: Finance Department
@@ -695,16 +767,28 @@ Owner: Finance Department
 
 ### 3. Tester tous les chemins
 
-**Matrice de test :**
+**Matrice de tests proposés — résultats attendus, pas des tests exécutés :**
 
-| Cas de test | Montant  | Tapez        | Fournisseur | Chemin attendu  | Statut |
+Ces résultats sont attendus et restent à vérifier dans votre configuration. Renseignez les résultats observés après vos tests.
+
+| Cas de test | Montant  | Type        | Fournisseur | Chemin attendu  | Vérification |
 | ----------- | -------- | ----------- | ----------- | --------------- | ------ |
-| TC1         | €500     | Facture     | Existant    | Auto-approve    | ✅      |
-| TC2         | €5,000   | Facture     | Existant    | Gestionnaire         | ✅      |
-| TC3         | €15,000  | Facture     | New         | Director+CFO    | ✅      |
-| TC4         | €60,000  | Facture     | Existant    | Executive       | ✅      |
-| TC5         | €2,000   | Note de crédit | Existant    | Flux de travail de crédit | ✅      |
-| TC6         | €100,000 | Facture     | Bloqué     | Arrêter et escalader | ✅      |
+| TC1         | €500     | Facture     | Existant    | Approbation automatique    | À tester      |
+| TC2         | €5,000   | Facture     | Existant    | Responsable         | À tester      |
+| TC3         | €15,000  | Facture     | Nouveau     | Directeur puis direction financière    | À tester      |
+| TC4         | €60,000  | Facture     | Existant    | Direction générale       | À tester      |
+| TC5         | €2,000   | Note de crédit | Existant    | Flux de travail de crédit | À tester      |
+| TC6         | €100,000 | Facture     | Bloqué     | Arrêter et escalader | À tester      |
+| TC7 | 999,99 € | Facture | Existant | Approbation automatique | À tester |
+| TC8 | 1 000 € | Facture | Existant | Responsable | À tester |
+| TC9 | 9 999,99 € | Facture | Existant | Responsable | À tester |
+| TC10 | 10 000 € | Facture | Existant | Directeur + contrôle fournisseur | À tester |
+| TC11 | 49 999,99 € | Facture | Existant | Directeur + contrôle fournisseur | À tester |
+| TC12 | 50 000 € | Facture | Existant | Direction générale | À tester |
+| TC13 | Absent ou invalide | Facture | Existant | Contrôle manuel choisi pour cet exemple | À tester |
+| TC14 | 15 000 € | Facture | Nouveau | Directeur en attente : ne pas créer la tâche suivante | À tester |
+| TC15 | 15 000 € | Facture | Nouveau | Refus du directeur ou de la direction financière : arrêter la chaîne et traiter le refus | À tester |
+| TC16 | 15 000 € | Facture | Nouveau | Deux accords positifs : poursuivre le traitement prévu | À tester |
 
 ***
 
@@ -719,7 +803,7 @@ Owner: Finance Department
 * Les taux d'exception
 * L'utilisation des chemins
 
-**Exemple d'indicateurs :**
+**Exemple fictif d’indicateurs :** les valeurs ci-dessous illustrent un rapport ; elles ne prouvent ni les performances actuelles ni l’exécution de ce workflow.
 
 ```
 Month: October 2025
@@ -727,9 +811,9 @@ Total Invoices: 1,250
 
 Decision Path Distribution:
 - Auto-approved (< €1k): 680 (54%)
-- Manager path (€1k-€10k): 420 (34%)
-- Director path (€10k-€50k): 120 (10%)
-- Executive path (> €50k): 30 (2%)
+- Manager path (€1k ≤ Amount < €10k): 420 (34%)
+- Director path (€10k ≤ Amount < €50k): 120 (10%)
+- Executive path (Amount ≥ €50k): 30 (2%)
 
 Processing Time:
 - Auto-approve: < 1 minute
@@ -777,4 +861,6 @@ Exceptions: 15 (1.2%)
 
 ***
 
-**Version du modèle :** 1.0 **Dernière mise à jour :** 23 octobre 2025 **Difficulté :** Moyenne **Temps estimé :** 30-45 minutes **Taux de réussite :** Élevé
+**Métadonnées historiques de l’exemple :**
+
+**Version du modèle :** 1.0 **Dernière mise à jour :** 23 octobre 2025 **Difficulté :** Moyenne **Temps estimé :** 30-45 minutes

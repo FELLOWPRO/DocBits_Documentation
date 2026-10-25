@@ -236,6 +236,25 @@ class PublishedImageRegressionTests(unittest.TestCase):
         self.assertEqual(second, first)
         self.assertEqual(fetch.call_count, 2)
 
+    def test_missing_published_page_still_warns_without_retrying_a_404(self):
+        error = sync.urllib.error.HTTPError('https://docs.docbits.com/missing', 404, 'Missing', {}, io.BytesIO())
+        output = io.StringIO()
+        with redirect_stdout(output), patch.object(sync.urllib.request, 'urlopen', side_effect=error) as fetch, patch.object(sync.time, 'sleep') as sleep:
+            mapping = sync._fetch_page_blob_to_url_map('https://docs.docbits.com/missing')
+        self.assertEqual(mapping, {})
+        self.assertEqual(fetch.call_count, 1)
+        sleep.assert_not_called()
+        self.assertIn('::warning::could not fetch', output.getvalue())
+
+    def test_persistent_page_timeout_still_warns_after_bounded_retries(self):
+        output = io.StringIO()
+        with redirect_stdout(output), patch.object(sync.urllib.request, 'urlopen', side_effect=TimeoutError('unavailable')) as fetch, patch.object(sync.time, 'sleep') as sleep:
+            mapping = sync._fetch_page_blob_to_url_map('https://docs.docbits.com/unavailable')
+        self.assertEqual(mapping, {})
+        self.assertEqual(fetch.call_count, 3)
+        self.assertEqual(sleep.call_count, 2)
+        self.assertEqual(output.getvalue().count('::warning::'), 1)
+
     def test_external_image_uses_existing_signed_same_origin_proxy(self):
         original = "https://lh7-us.googleusercontent.com/screenshot"
         proxy = "https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fscreenshot&width=768&sign=real-signature&sv=3"

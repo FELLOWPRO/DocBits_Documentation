@@ -97,7 +97,7 @@ Na lista de workflows, ativo a regra testada e confirmo o interruptor ligado. An
 
 Abra o **Painel de fluxos → Lista de fluxos** e clique em **Novo fluxo de trabalho** para criar um novo fluxo de trabalho Standard, ou clique num fluxo de trabalho existente para o editar.
 
-<figure><img src="../../.gitbook/assets/workflow-list-search-detail-pt.png" alt="Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos. Nesta versão, alguns controlos do cabeçalho aparecem como M."><figcaption><p>Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos. Nesta versão, alguns controlos do cabeçalho aparecem como M.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-search-detail-pt.png" alt="Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos."><figcaption><p>Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/workflow-actions-detail-pt.png" alt="Pormenor das ações da lista: Novo fluxo de trabalho, Modelos e Fluxo de trabalho de importação."><figcaption><p>Pormenor das ações da lista: Novo fluxo de trabalho, Modelos e Fluxo de trabalho de importação.</p></figcaption></figure>
 

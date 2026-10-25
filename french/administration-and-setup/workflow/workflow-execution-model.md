@@ -6,6 +6,8 @@ description: "Distinguer événements, conditions, ordre d’exécution, tests e
 
 Un workflow nécessite un événement d’exécution et des conditions correspondantes. **Le type de document est Facture** sélectionne des documents ; cela ne signifie pas que toute modification d’une facture déclenche automatiquement une nouvelle exécution.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-fr-v3.png" alt="Exemples schématiques : une séquence standard linéaire exécute les actions uniquement si ses conditions sont remplies ; sinon, cette séquence s’arrête. Un nœud de condition avancé peut utiliser des chemins de résultat configurés séparément. Un chemin ne continue que si une connexion existe. Les branches standard facultatives sont omises ; il ne s’agit pas d’une capture de l’interface DocBits."><figcaption>Exemples schématiques : une séquence standard linéaire exécute les actions uniquement si ses conditions sont remplies ; sinon, cette séquence s’arrête. Un nœud de condition avancé peut utiliser des chemins de résultat configurés séparément. Un chemin ne continue que si une connexion existe. Les branches standard facultatives sont omises ; il ne s’agit pas d’une capture de l’interface DocBits.</figcaption></figure>
+
 ## De l’événement à l’action
 
 1. Vérifiez l’organisation, les autorisations et le module Workflow, ainsi que l’habilitation Advanced si nécessaire.

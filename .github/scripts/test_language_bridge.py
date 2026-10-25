@@ -314,3 +314,24 @@ def test_asset_only_on_destination_still_resolves(tmp_path):
     (dest / ".gitbook" / "assets" / "shared.png").write_bytes(b"X")
     rep, _ = lb.plan_sync(tmp_path / "src" / "readme", dest)
     assert not [w for w in rep.warnings if "shared.png" in w]
+
+
+def test_external_image_does_not_require_a_local_asset(tmp_path):
+    page = '# B\n\n![History](https://raw.githubusercontent.com/org/repo/main/readme/.gitbook/assets/approval_history_1.png)\n'
+    (rep, plan), dest = run(tmp_path, {**GOOD, 'b.md': page})
+    assert rep.warnings == []
+    assert rep.errors == []
+
+
+def test_markdown_escaped_asset_name_is_copied(tmp_path):
+    page = '# B\n\n![M3](.gitbook/assets/export_to_m3_from_docbits_11%20\\(1\\).png)\n'
+    (rep, plan), dest = run(tmp_path, {**GOOD, 'b.md': page}, assets={'export_to_m3_from_docbits_11 (1).png': b'image'})
+    assert rep.warnings == []
+    assert dest / '.gitbook/assets/export_to_m3_from_docbits_11 (1).png' in plan
+
+
+def test_url_encoded_percent_asset_name_is_copied(tmp_path):
+    page = '# B\n\n<img src=".gitbook/assets/100%25PO.png">\n'
+    (rep, plan), dest = run(tmp_path, {**GOOD, 'b.md': page}, assets={'100%PO.png': b'image'})
+    assert rep.warnings == []
+    assert dest / '.gitbook/assets/100%PO.png' in plan

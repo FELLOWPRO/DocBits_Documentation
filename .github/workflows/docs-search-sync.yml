@@ -47,6 +47,9 @@ on:
     types: [completed]
   workflow_dispatch: {}
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 permissions:
   contents: read
 
@@ -57,11 +60,16 @@ concurrency:
 jobs:
   diff-sync:
     if: github.event_name == 'push'
-    runs-on: ubuntu-latest
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+
+      - name: Check search sync regressions
+        run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
       - name: Sync changed pages
         env:
@@ -83,7 +91,9 @@ jobs:
     if: >-
       github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
       || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
-    runs-on: ubuntu-latest
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     strategy:
       fail-fast: false
       # 9 languages ingesting at once overloaded the shared ingress (502s)
@@ -102,9 +112,12 @@ jobs:
           - { lang: pt, root: portuguese }
           - { lang: zh, root: chinese }
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 1
+
+      - name: Check search sync regressions
+        run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
       - name: Full ingest + reconcile
         env:

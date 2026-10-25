@@ -57,20 +57,25 @@ concurrency:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install PyYAML (front matter validation)
-        run: python3 -m pip install --quiet pyyaml pytest
+        run: |
+          python3 -m venv "${RUNNER_TEMP}/docs-bridge-venv"
+          "${RUNNER_TEMP}/docs-bridge-venv/bin/python" -m pip --disable-pip-version-check install --quiet pyyaml pytest
+          echo "${RUNNER_TEMP}/docs-bridge-venv/bin" >> "$GITHUB_PATH"
 
       - name: Check navigation parsing and bridge validation
         run: python3 -m pytest -q .github/scripts/test_language_bridge.py
@@ -79,7 +84,7 @@ jobs:
         env:
           ONLY_LANG: ${{ github.event.inputs.lang }}
         run: |
-          set -u
+          set -uo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -94,7 +99,7 @@ jobs:
             if [ -z "${dir}" ]; then echo "::error::unknown language ${lang}"; failed="${failed} ${lang}"; continue; fi
             echo "::group::${lang} -> ${dir}/"
 
-            if ! git fetch --quiet origin "${lang}"; then
+            if ! git fetch --quiet --depth=1 origin "${lang}:refs/remotes/origin/${lang}"; then
               echo "::error::cannot fetch branch ${lang}"; failed="${failed} ${lang}"; echo "::endgroup::"; continue
             fi
             src="${RUNNER_TEMP}/src-${lang}"

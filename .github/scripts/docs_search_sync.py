@@ -385,19 +385,30 @@ def _fetch_page_blob_to_url_map(page_url: str) -> dict[str, str]:
         return _page_blob_url_cache[page_url]
 
     mapping: dict[str, str] = {}
-    try:
-        # docs.docbits.com (GitBook-hosted) 403s a bare urllib default
-        # User-Agent — a normal browser UA is enough to pass.
-        request = urllib.request.Request(
-            page_url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; DocBitsSync/1.0)"},
-        )
-        with urllib.request.urlopen(request, timeout=30) as response:
-            page_html = response.read().decode("utf-8", "replace")
-    except (urllib.error.URLError, TimeoutError) as exc:
-        print(f"::warning::could not fetch {page_url} to resolve images: {exc}")
-        _page_blob_url_cache[page_url] = mapping
-        return mapping
+    # A cold GitBook page can time out once while its cached rendering is
+    # refreshed. Retry before caching an empty map and discarding every image
+    # on that page. Persistent failures still produce a warning.
+    delays = (2, 5)
+    for attempt in range(len(delays) + 1):
+        try:
+            request = urllib.request.Request(
+                page_url,
+                headers={"User-Agent": "Mozilla/5.0 (compatible; DocBitsSync/1.0)"},
+            )
+            with urllib.request.urlopen(request, timeout=45) as response:
+                page_html = response.read().decode("utf-8", "replace")
+            break
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            transient = not isinstance(exc, urllib.error.HTTPError) or exc.code in (429, 500, 502, 503, 504)
+            if isinstance(exc, urllib.error.HTTPError):
+                exc.close()
+            if transient and attempt < len(delays):
+                print(f"retry page fetch {page_url}: {exc} (attempt {attempt + 2}/{len(delays) + 1})")
+                time.sleep(delays[attempt])
+                continue
+            print(f"::warning::could not fetch {page_url} to resolve images: {exc}")
+            _page_blob_url_cache[page_url] = mapping
+            return mapping
 
     for match in _GITBOOK_PROXY_IMG_SRC_RE.finditer(page_html):
         proxied_src = html.unescape(match.group(1))

@@ -4,15 +4,21 @@
 
 ***
 
-Este padrão é construído no **Construtor de fluxo de trabalho** (Workflow Dashboard → Workflow List → Add Workflow). Clique em **Adicionar cartão** e abra a categoria **Lógica** — contém as cartas de condição e de ramificação que controlam a árvore de decisão e que combina com o grupo **E** para avaliar várias condições:
+No editor no modo Standard, selecione «Adicionar cartão» no grupo «E....» e abra a categoria «Lógica». A tela mostra uma condição baseada em uma tabela de decisão; nenhuma tabela foi selecionada e o armazenamento dos resultados ainda não foi configurado. Selecione a tabela e configure o armazenamento dos resultados retornados para o documento ou para a organização fornecedora. Em seguida, configure as demais condições, ações e conexões do fluxo de trabalho e teste seu comportamento.
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-decision-condition-library-current-pt.png" alt="Editor no modo Standard: categoria «Lógica» aberta por «Adicionar cartão» no grupo «E....»; a tabela de decisão da condição ainda não foi selecionada e o armazenamento dos resultados ainda não foi configurado."><figcaption><p>Editor no modo Standard: categoria «Lógica» aberta por «Adicionar cartão» no grupo «E....»; a tabela de decisão da condição ainda não foi selecionada e o armazenamento dos resultados ainda não foi configurado.</p></figcaption></figure>
 
 ***
 
 ## Visão geral do padrão
 
-Este padrão demonstra como implementar lógica de decisão complexa em workflows do DocBits. Com cartas de condição, encaminha documentos com base em atributos do documento, valores de campo e regras de negócio através de diferentes caminhos de processamento.
+#### Diagrama: Visão geral
+
+<figure><img src="../../../.gitbook/assets/decision-flow-overview-pt.png" alt="Visão geral do exemplo completo: verificar exceções críticas, o tipo de documento e a urgência antes de escolher o circuito de aprovação. Cada tratamento e cada ligação têm de ser configurados; o diagrama não representa um comportamento automático do produto."><figcaption><p>Visão geral do exemplo completo: verificar exceções críticas, o tipo de documento e a urgência antes de escolher o circuito de aprovação. Cada tratamento e cada ligação têm de ser configurados; o diagrama não representa um comportamento automático do produto.</p></figcaption></figure>
+
+Estes diagramas explicam regras de negócio a configurar. Complementam a imagem da biblioteca acima. No modo Advanced, ligue explicitamente cada percurso. Numa sequência linear Standard, defina as condições que permitem as respetivas ações.
+
+Este padrão demonstra como implementar lógica de decisão complexa em workflows do DocBits. Com cartões de condição, encaminha documentos com base em atributos do documento, valores de campo e regras de negócio através de diferentes caminhos de processamento.
 
 **O que este padrão faz:**
 
@@ -38,7 +44,7 @@ Utilize este padrão quando precisar de:
 
 **Não utilize este padrão quando:**
 
-* ❌ um fluxo de trabalho linear simples por suficiente
+* ❌ um fluxo de trabalho linear simples for suficiente
 * ❌ todos os documentos seguirem o mesmo caminho
 * ❌ não for necessário processamento condicional
 
@@ -46,89 +52,153 @@ Utilize este padrão quando precisar de:
 
 ## Tipos de lógica de decisão
 
+Os exemplos IF-THEN, AND, OR e aninhados abaixo são independentes. Os respetivos limites ilustram cada princípio; não formam uma única matriz de aprovação. A matriz completa seguinte utiliza quatro faixas sem sobreposição. Um valor desconhecido ou um erro de avaliação não equivale automaticamente a False: defina e teste separadamente o seu tratamento.
+
 ### 1. Lógica IF-THEN simples
+
+#### Diagrama: Condição simples
+
+<figure><img src="../../../.gitbook/assets/decision-simple-if-pt.png" alt="Exemplo IF-THEN independente: um valor estritamente superior a 10.000 € seleciona o diretor; caso contrário, o gestor. A igualdade permanece no segundo ramo. Configure os destinos."><figcaption><p>Exemplo IF-THEN independente: um valor estritamente superior a 10.000 € seleciona o diretor; caso contrário, o gestor. A igualdade permanece no segundo ramo. Configure os destinos.</p></figcaption></figure>
+
+<details>
+<summary>Princípio IF-THEN: uma condição, dois resultados</summary>
 
 ```
 IF condition:
-  → Action A
+  → Ação A
 ELSE:
-  → Action B
+  → Ação B
 ```
 
+</details>
+
 **Exemplo:**
+
+Explicação visual: [condição simples](#diagrama-condicao-simples).
+
+<details>
+<summary>Exemplo IF-THEN: limite de valor</summary>
 
 ```
 IF Amount > €10,000:
-  → Assign to Director
+  → Atribuir ao diretor
 ELSE:
-  → Assign to Manager
+  → Atribuir ao gestor
 ```
+
+</details>
+
+#### Diagrama: Critérios E e OU
+
+<figure><img src="../../../.gitbook/assets/decision-conditions-and-or-pt.png" alt="Dois exemplos independentes: E exige os três critérios; OU exige pelo menos um. Os seus limites ilustrativos não substituem os intervalos da matriz completa. As saídas e o tratamento de dados desconhecidos ou erros têm de ser configurados."><figcaption><p>Dois exemplos independentes: E exige os três critérios; OU exige pelo menos um. Os seus limites ilustrativos não substituem os intervalos da matriz completa. As saídas e o tratamento de dados desconhecidos ou erros têm de ser configurados.</p></figcaption></figure>
 
 ### 2. Vários critérios (lógica E)
 
+<details>
+<summary>Princípio AND: todos os critérios</summary>
+
 ```
 IF condition1 AND condition2 AND condition3:
-  → Action A
+  → Ação A
 ELSE:
-  → Action B
+  → Ação B
 ```
 
+</details>
+
 **Exemplo:**
+
+Explicação visual: [critérios E e OU](#diagrama-criterios-e-e-ou).
+
+<details>
+<summary>Exemplo AND: três critérios</summary>
 
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
-  → Assign to IT Director + CFO (dual approval)
+  → Atribuir ao diretor de TI + CFO (duas aprovações)
 ELSE:
-  → Standard approval workflow
+  → Workflow de aprovação habitual
 ```
+
+</details>
 
 ### 3. Critérios alternativos (lógica OU)
 
+Explicação visual: [critérios E e OU](#diagrama-criterios-e-e-ou).
+
+<details>
+<summary>Princípio OR: pelo menos um critério</summary>
+
 ```
 IF condition1 OR condition2 OR condition3:
-  → Action A
+  → Ação A
 ELSE:
-  → Action B
+  → Ação B
 ```
+
+</details>
 
 **Exemplo:**
 
+Explicação visual: [critérios E e OU](#diagrama-criterios-e-e-ou).
+
+<details>
+<summary>Exemplo OR: valor, bloqueio ou urgência</summary>
+
 ```
-IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
-  → Escalate immediately
+IF Amount > €50,000 OR Supplier is "Blocked" OR Document tem a marca "Urgent":
+  → Escalar imediatamente
 ELSE:
-  → Standard processing
+  → Processamento habitual
 ```
 
+</details>
+
 ### 4. Árvore de decisão aninhada
+
+#### Diagrama: Decisões aninhadas
+
+<figure><img src="../../../.gitbook/assets/decision-nested-type-amount-pt.png" alt="Exemplo aninhado independente: o tipo de documento seleciona um teste de valor. Os limites são estritos: 10.000 € numa fatura e 5.000 € numa nota de crédito não satisfazem «superior a». Defina o tratamento de outros tipos e dados desconhecidos."><figcaption><p>Exemplo aninhado independente: o tipo de documento seleciona um teste de valor. Os limites são estritos: 10.000 € numa fatura e 5.000 € numa nota de crédito não satisfazem «superior a». Defina o tratamento de outros tipos e dados desconhecidos.</p></figcaption></figure>
+
+<details>
+<summary>Princípio de decisão aninhada</summary>
 
 ```
 IF condition1:
   IF condition2:
-    → Action A
+    → Ação A
   ELSE:
-    → Action B
+    → Ação B
 ELSE:
   IF condition3:
-    → Action C
+    → Ação C
   ELSE:
-    → Action D
+    → Ação D
 ```
 
+</details>
+
 **Exemplo:**
+
+Explicação visual: [decisões aninhadas](#diagrama-decisoes-aninhadas).
+
+<details>
+<summary>Exemplo aninhado: fatura e nota de crédito</summary>
 
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
-    → High-value invoice workflow
+    → Workflow de faturas de valor elevado
   ELSE:
-    → Standard invoice workflow
+    → Workflow habitual de faturas
 ELSE IF Document_Type = "Credit Note":
   IF Amount > €5,000:
-    → High-value credit workflow
+    → Workflow de notas de crédito de valor elevado
   ELSE:
-    → Standard credit workflow
+    → Workflow habitual de notas de crédito
 ```
+
+</details>
 
 ***
 
@@ -138,59 +208,109 @@ ELSE IF Document_Type = "Credit Note":
 
 **Regras de negócio:**
 
-1. Montante < 1.000 €: Aprovação automática
-2. Montante 1.000–10.000 €: Aprovação pela Direção
-3. Montante > 10.000 € E novo fornecedor: Aprovação por Diretor + CFO
-4. Montante > 10.000 € E fornecedor existente: Apenas aprovação pelo Diretor
-5. Qualquer montante com discrepância de PO: Primeiro aprovação pelas Compras
-6. Faturas urgentes (assinaladas): Workflow acelerado
+1. Antes do encaminhamento por valor, pare e trate as exceções críticas, incluindo um fornecedor bloqueado. Uma divergência face à encomenda nem sempre é crítica: depois de resolvida pelas compras, o percurso pode prosseguir conforme configurado. Verifique depois o tipo de documento.
+2. Para uma fatura urgente, siga o percurso acelerado deste exemplo em vez das faixas de valor habituais.
+3. Para uma fatura não urgente com valor válido:
+   * valor < 1.000 €: aprovação automática;
+   * 1.000 € ≤ valor < 10.000 €: aprovação do gestor;
+   * 10.000 € ≤ valor < 50.000 €: verificações do fornecedor seguidas da aprovação do diretor; um fornecedor não bloqueado com menos de 180 dias requer a aprovação do diretor seguida da aprovação do CFO; os outros fornecedores também são sujeitos a uma verificação de risco;
+   * valor ≥ 50.000 €: aprovação executiva descrita no percurso D.
+4. Um valor ausente ou inválido segue a revisão manual explicitamente configurada neste exemplo. Trata-se de uma política de exemplo, não de um recurso automático do produto.
+5. Depois de criar uma tarefa, aguarde o resultado. A rejeição interrompe a cadeia e segue o tratamento configurado; resultados pendentes não permitem prosseguir. Crie a tarefa do CFO apenas após a aprovação positiva do diretor.
 
-**Implementação:**
+#### Diagrama: Faixas de valor
+
+<figure><img src="../../../.gitbook/assets/decision-amount-routing-pt.png" alt="Limites do nível 2: menos de 1 000 €; de 1 000 € inclusive a 10 000 € exclusive; de 10 000 € inclusive a 50 000 € exclusive; 50 000 € ou mais. Cada teste segue o resultado negativo do anterior. A verificação manual de um montante ausente ou inválido tem de ser configurada explicitamente."><figcaption><p>Limites do nível 2: menos de 1 000 €; de 1 000 € inclusive a 10 000 € exclusive; de 10 000 € inclusive a 50 000 € exclusive; 50 000 € ou mais. Cada teste segue o resultado negativo do anterior. A verificação manual de um montante ausente ou inválido tem de ser configurada explicitamente.</p></figcaption></figure>
+
+Os valores-limite de 1.000 €, 10.000 € e 50.000 € entram na faixa superior. Configure e teste as verificações prévias, a espera pelos resultados e as ligações entre percursos. Uma tarefa criada não comprova a aprovação nem a exportação do documento.
+
+**Implementação ilustrativa:** adapte os nomes técnicos e o pseudocódigo aos cartões realmente disponíveis na sua versão. Estes blocos descrevem um exemplo a configurar, não um ficheiro importável. Verifique os resultados da execução e os efeitos secundários.
+
+Explicação visual: [visão geral](#diagrama-visao-geral), [faixas de valor](#diagrama-faixas-de-valor), [análise do fornecedor](#diagrama-analise-do-fornecedor), [percurso automático](#diagrama-percurso-automatico), [tarefa do gestor](#diagrama-tarefa-do-gestor), [aprovação executiva](#diagrama-aprovacao-executiva), [registo da regra](#diagrama-registo-da-regra).
+
+<details>
+<summary>Pseudocódigo da matriz completa</summary>
 
 ```
-STEP 1: Check for PO Mismatch
+VERIFICAÇÃO PRÉVIA: exceções críticas
+  IF Critical_Exception = TRUE OR Supplier_Status = "BLOCKED":
+    → Parar e tratar a exceção antes do encaminhamento
+
+PASSO 1: verificar divergências com a encomenda
   IF PO_Match_Status = "FAIL":
-    → Route to Procurement for PO resolution
-    → After resolution, continue below
+    → Encaminhar para compras para resolver a divergência com a encomenda
+    → Após a resolução, continuar abaixo conforme a configuração
 
-STEP 2: Check Urgent Flag
+PASSO 1b: verificar o tipo de documento
+  IF Document_Type = "Credit Note":
+    → Workflow configurado de notas de crédito
+  ELSE IF Document_Type is not "Invoice":
+    → Workflow configurado para este tipo de documento
+  ELSE:
+    → Continuar abaixo
+
+PASSO 2: verificar a marca de urgência
   IF Urgent_Flag = TRUE:
-    → Skip amount checks
-    → Direct to highest approver
-    → Set priority = HIGH
-    → 1-day deadline
+    → Ignorar as verificações do montante
+    → Encaminhar para o aprovador de nível mais elevado
+    → Definir a prioridade = URGENT
+    → Prazo de 1 dia
 
-STEP 3: Amount-Based Routing (if not urgent)
-  IF Amount < €1,000:
-    → Auto-approve
-    → Export immediately
+PASSO 3: encaminhamento pelo montante (Invoice, se não for urgente)
+  IF Amount está em falta ou é inválido:
+    → Revisão manual (política explícita deste exemplo)
+    → Não avançar para as faixas de montante
+
+  ELSE IF Amount < €1,000:
+    → Aprovar automaticamente
+    → Exportar imediatamente
 
   ELSE IF Amount < €10,000:
-    → Create task for Manager
+    → Criar tarefa para o gestor
     → Priority: Medium
-    → Deadline: 3 days
+    → Deadline: 3 dias
 
-  ELSE IF Amount ≥ €10,000:
-    CHECK Supplier Status:
-      IF Supplier_Age < 180 days (New):
-        → Create task for Director (Task 1)
-        → After approval, create task for CFO (Task 2)
+  ELSE IF Amount < €50,000:
+    VERIFICAR o estado e o risco do fornecedor:
+      IF Supplier_Status = "BLOCKED":
+        → Parar e tratar a exceção
+      ELSE IF Supplier_Age < 180 dias (novo):
+        → Criar tarefa para o diretor (tarefa 1)
+        → Aguardar a aprovação positiva do diretor antes de criar a tarefa do CFO (tarefa 2)
+        → Aguardar a aprovação positiva do CFO antes de continuar
+        → Qualquer rejeição: parar a cadeia e tratar a rejeição conforme a configuração
+        → Pendente: não continuar
         → Priority: High
-        → Deadline: 2 days each
+        → Deadline: 2 dias por tarefa
+      ELSE IF Supplier_Risk_Rating = "HIGH":
+        → Verificações adicionais e aprovação prévia do gestor
+        → Aguardar a aprovação positiva do gestor antes da aprovação do diretor
+        → Pendente ou rejeitado: não continuar a cadeia de aprovação
+      ELSE (fornecedor existente):
+        → Criar tarefa apenas para o diretor
+        → Priority: High
+        → Deadline: 2 dias
 
-      ELSE (Existing Supplier):
-        → Create task for Director only
-        → Priority: High
-        → Deadline: 2 days
+  ELSE (Amount ≥ €50,000):
+    → Percurso de aprovação executiva (ver percurso D)
 ```
+
+</details>
 
 ***
 
 ## Implementação passo a passo
 
-### Passo 1: Definir as cartas de condição
+### Passo 1: Definir os cartões de condição
 
 **Condição 1: Limiar de valor**
+
+#### Diagrama: Parâmetros independentes
+
+<figure><img src="../../../.gitbook/assets/decision-parameter-checks-pt.png" alt="Duas condições independentes: um valor estritamente inferior a 1.000 EUR e um fornecedor com estado ACTIVE. A igualdade do valor dá Não; um fornecedor inativo não está necessariamente bloqueado. Os parâmetros técnicos são ilustrativos e devem ser adaptados à configuração real."><figcaption><p>Duas condições independentes: um valor estritamente inferior a 1.000 EUR e um fornecedor com estado ACTIVE. A igualdade do valor dá Não; um fornecedor inativo não está necessariamente bloqueado. Os parâmetros técnicos são ilustrativos e devem ser adaptados à configuração real.</p></figcaption></figure>
+
+<details>
+<summary>Parâmetros ilustrativos: limite de valor</summary>
 
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
@@ -200,7 +320,16 @@ Value: 1000
 Currency: EUR
 ```
 
+</details>
+
 **Condição 2: Verificação do tipo de documento**
+
+#### Diagrama: Tipos de documento
+
+<figure><img src="../../../.gitbook/assets/decision-document-type-pt.png" alt="O filtro Invoice e o encaminhamento por tipo ilustram aspetos complementares deste exemplo. O encaminhamento distingue fatura, nota de crédito, recibo e tipo desconhecido. Os nomes dos cartões e workflows são ilustrativos; configure todos os destinos."><figcaption><p>O filtro Invoice e o encaminhamento por tipo ilustram aspetos complementares deste exemplo. O encaminhamento distingue fatura, nota de crédito, recibo e tipo desconhecido. Os nomes dos cartões e workflows são ilustrativos; configure todos os destinos.</p></figcaption></figure>
+
+<details>
+<summary>Parâmetros ilustrativos: tipo de documento</summary>
 
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
@@ -208,7 +337,14 @@ Document Type: IS
 Type: Invoice
 ```
 
+</details>
+
 **Condição 3: Estado do fornecedor**
+
+Explicação visual: [parâmetros independentes](#diagrama-parametros-independentes).
+
+<details>
+<summary>Parâmetros ilustrativos: estado ativo</summary>
 
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
@@ -216,7 +352,18 @@ Supplier Status: IS
 Status: ACTIVE
 ```
 
+</details>
+
 **Condição 4: Verificação de novo fornecedor**
+
+Neste exemplo, calcule a data de 180 dias antes da data de avaliação e compare a data da primeira transação com esse limite. «IS AFTER» significa estritamente posterior: a igualdade dá Não. Escolha o campo real e calcule ou introduza a data-limite; os nomes do cartão e do campo e o marcador {{TODAY_MINUS_180_DAYS}} são ilustrativos. Verifique separadamente se a data da primeira transação é válida e não ultrapassa a data de avaliação; configure o tratamento de valores ausentes ou inválidos.
+
+#### Diagrama: Condição de 180 dias
+
+<figure><img src="../../../.gitbook/assets/decision-supplier-date-180-days-pt.png" alt="Exemplo de comparação: em 25 de outubro de 2026, a data-limite é 28 de abril de 2026. «IS AFTER» exclui a igualdade: 29 de abril dá Sim; 28 e 27 de abril dão Não. Os nomes do cartão e do campo e o marcador {{TODAY_MINUS_180_DAYS}} são ilustrativos: escolha o campo real e calcule ou indique a data-limite. Pressupõem-se datas válidas e não futuras; o tratamento de uma data ausente ou inválida tem de ser configurado."><figcaption><p>Exemplo de comparação: em 25 de outubro de 2026, a data-limite é 28 de abril de 2026. «IS AFTER» exclui a igualdade: 29 de abril dá Sim; 28 e 27 de abril dão Não. Os nomes do cartão e do campo e o marcador {{TODAY_MINUS_180_DAYS}} são ilustrativos: escolha o campo real e calcule ou indique a data-limite. Pressupõem-se datas válidas e não futuras; o tratamento de uma data ausente ou inválida tem de ser configurado.</p></figcaption></figure>
+
+<details>
+<summary>Copiar os parâmetros ilustrativos do exemplo</summary>
 
 ```
 Card: CONDITION_DOC_FIELD_DATE
@@ -225,7 +372,10 @@ Operator: IS AFTER
 Value: {{TODAY_MINUS_180_DAYS}}
 ```
 
-**Referência de guia:** [Guia completo de cartas de condição](../and/condition-cards-complete-guide.md)
+</details>
+
+
+**Referência de guia:** [Guia completo de cartões de condição](../and/condition-cards-complete-guide.md)
 
 ***
 
@@ -233,61 +383,85 @@ Value: {{TODAY_MINUS_180_DAYS}}
 
 **Nível 1: Tipo de documento**
 
+Explicação visual: [tipos de documento](#diagrama-tipos-de-documento).
+
+<details>
+<summary>Encaminhamento ilustrativo por tipo de documento</summary>
+
 ```
 Workflow: "Invoice Processing"
 
 IF Document_Type = "Invoice":
-  → Continue to Level 2
+  → Continuar para o nível 2
 
 ELSE IF Document_Type = "Credit Note":
-  → Branch to "Credit Note Processing"
+  → Encaminhar para "Credit Note Processing"
 
 ELSE IF Document_Type = "Receipt":
-  → Branch to "Receipt Processing"
+  → Encaminhar para "Receipt Processing"
 
 ELSE:
-  → Route to "Unknown Document Type" handling
+  → Encaminhar para o tratamento "Unknown Document Type"
 ```
 
-**Nível 2: Limiares de valor (para faturas)**
+</details>
+
+**Nível 2: limites de valor (faturas não urgentes, valor válido)**
+
+Explicação visual: [faixas de valor](#diagrama-faixas-de-valor).
+
+<details>
+<summary>Quatro faixas de valor: pseudocódigo</summary>
 
 ```
 IF Amount < €1,000:
-  → Branch to "Auto-Approve Path"
+  → Encaminhar para "Auto-Approve Path"
 
 ELSE IF Amount < €10,000:
-  → Branch to "Manager Approval Path"
+  → Encaminhar para "Manager Approval Path"
 
 ELSE IF Amount < €50,000:
-  → Branch to "Director Approval Path"
-  → Check Level 3 conditions
+  → Encaminhar para "Director Approval Path"
+  → Verificar as condições do nível 3
 
 ELSE (Amount ≥ €50,000):
-  → Branch to "Executive Approval Path"
-  → Dual or triple approval required
+  → Encaminhar para "Executive Approval Path"
+  → São necessárias duas ou três aprovações
 ```
+
+</details>
 
 **Nível 3: Análise do fornecedor (para faturas de valor elevado)**
 
+#### Diagrama: Análise do fornecedor
+
+<figure><img src="../../../.gitbook/assets/decision-supplier-analysis-pt.png" alt="Detalhe do percurso do fornecedor: tratar o bloqueio, depois a antiguidade e o risco. O ramo de fornecedores com menos de 180 dias remete para o diagrama de duas aprovações sequenciais. Configure as tarefas, prazos, notificações e ações do percurso C."><figcaption><p>Detalhe do percurso do fornecedor: tratar o bloqueio, depois a antiguidade e o risco. O ramo de fornecedores com menos de 180 dias remete para o diagrama de duas aprovações sequenciais. Configure as tarefas, prazos, notificações e ações do percurso C.</p></figcaption></figure>
+
+<details>
+<summary>Análise do fornecedor: bloqueio, antiguidade e risco</summary>
+
 ```
 IF Supplier_Status = "BLOCKED":
-  → STOP processing
-  → Create urgent escalation task
-  → Notify procurement and finance
+  → PARAR o processamento
+  → Criar tarefa urgente de escalamento
+  → Notificar compras e finanças
 
-ELSE IF Supplier_Age < 180 days (New):
-  → Additional approval required
-  → Add CFO to approval chain
-  → Enhanced verification
+ELSE IF Supplier_Age < 180 dias (novo):
+  → É necessária aprovação adicional
+  → Adicionar o CFO à cadeia de aprovação
+  → Verificação reforçada
 
 ELSE IF Supplier_Risk_Rating = "HIGH":
-  → Additional checks required
-  → Fraud detection review
-  → Manager pre-approval
+  → São necessárias verificações adicionais
+  → Revisão para deteção de fraude
+  → Aprovação prévia do gestor; aguardar aprovação positiva
+  → Aprovação do diretor; aguardar aprovação positiva
 
 ELSE:
-  → Standard high-value workflow
+  → Workflow habitual para valores elevados
 ```
+
+</details>
 
 ***
 
@@ -295,107 +469,173 @@ ELSE:
 
 **Caminho A: Aprovação automática (montante < 1.000 €)**
 
+#### Diagrama: Percurso automático
+
+<figure><img src="../../../.gitbook/assets/decision-action-auto-pt.png" alt="Exemplo do percurso A: definir os campos de aprovação, aprovar o documento e exportar. O email de confirmação é opcional. Este diagrama descreve ações a configurar, não uma execução observada."><figcaption><p>Exemplo do percurso A: definir os campos de aprovação, aprovar o documento e exportar. O email de confirmação é opcional. Este diagrama descreve ações a configurar, não uma execução observada.</p></figcaption></figure>
+
+<details>
+<summary>Ações do percurso A: aprovação automática</summary>
+
 ```
-Actions:
-1. Set field "Approval_Type" = "AUTO"
-2. Set field "Approval_Level" = "0"
+Ações:
+1. Definir o campo "Approval_Type" = "AUTO"
+2. Definir o campo "Approval_Level" = "0"
 3. ACTION_APPROVE_DOCUMENT
-4. Export to ERP
-5. Send confirmation email (optional)
+4. Exportar para o ERP
+5. Enviar email de confirmação (opcional)
 ```
 
-**Caminho B: Aprovação pela Direção (1.000–10.000 €)**
+</details>
+
+**Percurso B: aprovação do gestor (1.000 € ≤ valor < 10.000 €)**
+
+#### Diagrama: Tarefa do gestor
+
+<figure><img src="../../../.gitbook/assets/decision-action-manager-pt.png" alt="Exemplo do percurso B: criar uma tarefa para o gestor, notificá-lo e aguardar o resultado. Só a aprovação permite exportar; neste exemplo, a rejeição devolve o documento ao fornecedor. O prazo de três dias e os destinatários são opções de configuração."><figcaption><p>Exemplo do percurso B: criar uma tarefa para o gestor, notificá-lo e aguardar o resultado. Só a aprovação permite exportar; neste exemplo, a rejeição devolve o documento ao fornecedor. O prazo de três dias e os destinatários são opções de configuração.</p></figcaption></figure>
+
+<details>
+<summary>Ações do percurso B: tarefa do gestor</summary>
 
 ```
-Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "1"
+Ações:
+1. Definir o campo "Approval_Type" = "MANUAL"
+2. Definir o campo "Approval_Level" = "1"
 3. tasks_create:
-   - Title: "Approve Invoice {{DOCUMENT_NUMBER}}"
+   - Title: "Aprovar a fatura {{DOCUMENT_NUMBER}}"
    - Assign to: Department_Manager
    - Priority: Medium
-   - Deadline: 3 days
-4. Send email notification to manager
-5. Wait for task completion
-6. If approved: Export to ERP
-7. If rejected: Return to supplier
+   - Deadline: 3 dias
+4. Enviar notificação por email ao gestor
+5. Aguardar a conclusão da tarefa
+6. Se aprovado: exportar para o ERP
+7. Se rejeitado: devolver ao fornecedor
 ```
 
-**Caminho C: Aprovação pelo Diretor (10.000–50.000 €)**
+</details>
+
+**Percurso C: aprovação do diretor (10.000 € ≤ valor < 50.000 €)**
+
+Explicação visual: [análise do fornecedor](#diagrama-analise-do-fornecedor), [aprovações sequenciais](#diagrama-aprovacoes-sequenciais).
+
+<details>
+<summary>Ações do percurso C: verificações e aprovações necessárias</summary>
 
 ```
-Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "2"
-3. Check Supplier_Age:
-   IF New (< 180 days):
-     - Create Task 1: Director approval
-     - After Task 1: Create Task 2: CFO approval
-     - Dual approval required
+Ações:
+1. Definir o campo "Approval_Type" = "MANUAL"
+2. Definir o campo "Approval_Level" = "2"
+3. Verificar Supplier_Age e Supplier_Risk_Rating:
+   IF novo (< 180 dias):
+     - Criar tarefa 1: aprovação do diretor
+     - Aguardar a aprovação positiva da tarefa 1 antes de criar a tarefa 2: aprovação do CFO
+     - Aguardar a aprovação positiva da tarefa 2 antes de continuar
+     - Pendente: não continuar
+     - Qualquer rejeição: parar a cadeia e tratar a rejeição conforme a configuração
+     - São necessárias ambas as aprovações positivas
+   ELSE IF Supplier_Risk_Rating = "HIGH":
+     - Verificações de risco adicionais e aprovação prévia do gestor
+     - Aguardar a aprovação positiva do gestor antes da aprovação do diretor
+     - Aguardar a aprovação positiva do diretor antes de exportar
+     - Pendente ou rejeitado: parar a progressão e tratar o resultado conforme a configuração
    ELSE:
-     - Create Task: Director approval only
+     - Criar tarefa: apenas aprovação do diretor
 4. Priority: High
-5. Deadline: 2 days
-6. Send email notifications
-7. Wait for completion
-8. If all approved: Export
-9. If any rejected: Return to supplier
+5. Deadline: 2 dias para as tarefas de aprovação do percurso C; configurar separadamente os prazos das verificações de risco
+6. Enviar notificações por email
+7. Aguardar a conclusão
+8. Se todos aprovarem: exportar
+9. Se algum rejeitar: devolver ao fornecedor
 ```
+
+</details>
+
+#### Diagrama: Aprovações sequenciais
+
+<figure><img src="../../../.gitbook/assets/decision-approvals-sequence-pt.png" alt="Exemplo de aprovações sucessivas: criar a tarefa da direção financeira apenas após a aprovação do diretor e aguardar o respetivo resultado. Continuar apenas após ambas as aprovações. Uma recusa interrompe a cadeia e segue o tratamento configurado; um resultado pendente não permite continuar."><figcaption><p>Exemplo de aprovações sucessivas: criar a tarefa da direção financeira apenas após a aprovação do diretor e aguardar o respetivo resultado. Continuar apenas após ambas as aprovações. Uma recusa interrompe a cadeia e segue o tratamento configurado; um resultado pendente não permite continuar.</p></figcaption></figure>
+
+Conforme a configuração, a rejeição pode devolver o documento ao fornecedor ou seguir outro percurso. O diagrama exige apenas a interrupção desta cadeia de aprovação; não impõe a revisão manual em todos os casos.
 
 **Caminho D: Aprovação pela administração (≥ 50.000 €)**
 
+#### Diagrama: Aprovação executiva
+
+<figure><img src="../../../.gitbook/assets/decision-action-executive-pt.png" alt="Exemplo do percurso D: duas aprovações sequenciais a partir de 50.000 €, com uma terceira apenas acima de 100.000 €. Cada tarefa seguinte aguarda a aprovação anterior. Configure funções, prazos, notificações e tratamento da rejeição."><figcaption><p>Exemplo do percurso D: duas aprovações sequenciais a partir de 50.000 €, com uma terceira apenas acima de 100.000 €. Cada tarefa seguinte aguarda a aprovação anterior. Configure funções, prazos, notificações e tratamento da rejeição.</p></figcaption></figure>
+
+<details>
+<summary>Ações do percurso D: aprovação executiva</summary>
+
 ```
-Actions:
-1. Set field "Approval_Type" = "EXECUTIVE"
-2. Set field "Approval_Level" = "3"
-3. Sequential approvals:
-   - Task 1: Finance Director
-   - Task 2: CFO
-   - Task 3: CEO (if > €100,000)
+Ações:
+1. Definir o campo "Approval_Type" = "EXECUTIVE"
+2. Definir o campo "Approval_Level" = "3"
+3. Aprovações sequenciais:
+   - Tarefa 1: diretor financeiro
+   - Tarefa 2: CFO
+   - Tarefa 3: CEO (se > €100,000)
 4. Priority: Urgent
-5. Deadline: 1 day each
-6. Send urgent notifications
-7. Executive dashboard update
-8. Wait for all approvals
-9. If all approved: Export
-10. If any rejected: Executive review meeting
+5. Deadline: 1 dia por tarefa
+6. Enviar notificações urgentes
+7. Atualizar o painel da direção
+8. Aguardar todas as aprovações
+9. Se todos aprovarem: exportar
+10. Se algum rejeitar: reunião de revisão da direção
 ```
+
+</details>
 
 ***
 
 ## Padrões avançados de lógica de decisão
 
+Os padrões seguintes são variantes independentes. As pontuações, os limites departamentais e as regras temporais não se acrescentam automaticamente à matriz completa acima; escolha e configure as regras adequadas ao seu caso.
+
 ### Padrão 1: Encaminhamento baseado em pontuação
 
-**Calcular uma pontuação de risco e encaminhar em conformidade:**
+**Calcular uma pontuação de risco inteira e encaminhar em conformidade neste exemplo:**
+
+#### Diagrama: Pontuação de risco
+
+<figure><img src="../../../.gitbook/assets/decision-risk-score-pt.png" alt="Variante independente: cinco contribuições conhecidas produzem uma pontuação inteira de 0 a 100 e depois um percurso. Os limites 51 e 76 definem categorias; estes cinco pesos não produzem essas pontuações. Defina separadamente o tratamento de dados desconhecidos."><figcaption><p>Variante independente: cinco contribuições conhecidas produzem uma pontuação inteira de 0 a 100 e depois um percurso. Os limites 51 e 76 definem categorias; estes cinco pesos não produzem essas pontuações. Defina separadamente o tratamento de dados desconhecidos.</p></figcaption></figure>
+
+<details>
+<summary>Cálculo da pontuação de risco e intervalos</summary>
 
 ```
-Risk Score Calculation:
+Cálculo da pontuação de risco:
   Score = 0
 
   IF Amount > €50,000: Score += 30
-  IF Supplier_Age < 180 days: Score += 25
+  IF Supplier_Age < 180 dias: Score += 25
   IF PO_Variance > 10%: Score += 20
   IF Supplier_Country = "High Risk Country": Score += 15
-  IF Payment_Terms < 30 days: Score += 10
+  IF Payment_Terms < 30 dias: Score += 10
 
-  Total Score Range: 0-100
+  Intervalo total de Score: 0-100
 
-Routing:
-  IF Score < 20: Auto-approve
-  IF Score 20-50: Manager approval
-  IF Score 51-75: Director approval
-  IF Score > 75: Executive approval + fraud check
+Encaminhamento:
+  IF Score < 20: Aprovar automaticamente
+  IF Score 20-50: Aprovação do gestor
+  IF Score 51-75: Aprovação do diretor
+  IF Score > 75: Aprovação executiva + verificação de fraude
 ```
+
+</details>
 
 **Implementação:**
 
+Explicação visual: [pontuação de risco](#diagrama-pontuacao-de-risco).
+
+<details>
+<summary>Implementação ilustrativa da pontuação</summary>
+
 ```
-1. ACTION_CALCULATE_FIELD: Calculate risk score
-2. ACTION_SET_FIELD_TO_NUMBER: Store score
-3. CONDITION_DOC_FIELD_NUMBER: Check score thresholds
-4. Route based on score
+1. ACTION_CALCULATE_FIELD: Calcular a pontuação de risco
+2. ACTION_SET_FIELD_TO_NUMBER: Guardar a pontuação
+3. CONDITION_DOC_FIELD_NUMBER: Verificar os limites da pontuação
+4. Encaminhar com base na pontuação
 ```
+
+</details>
 
 ***
 
@@ -403,34 +643,50 @@ Routing:
 
 **Regras de aprovação diferentes por departamento:**
 
+#### Diagrama: Matriz departamental
+
+<figure><img src="../../../.gitbook/assets/decision-department-matrix-pt.png" alt="Matriz departamental independente: os limites diferem para TI, finanças, operações e o caso geral. A igualdade seleciona a faixa superior. Configure as várias funções; a sua presença não comprova uma aprovação sequencial."><figcaption><p>Matriz departamental independente: os limites diferem para TI, finanças, operações e o caso geral. A igualdade seleciona a faixa superior. Configure as várias funções; a sua presença não comprova uma aprovação sequencial.</p></figcaption></figure>
+
+<details>
+<summary>Matriz de limites por departamento</summary>
+
 ```
-Department Matrix:
+Matriz departamental:
 
-  IT Department:
-    Amount < €5,000: IT Manager
-    Amount ≥ €5,000: IT Director + CIO
+  Departamento de TI:
+    Amount < €5,000: Gestor de TI
+    Amount ≥ €5,000: Diretor de TI + CIO
 
-  Finance Department:
-    Amount < €10,000: Finance Manager
+  Departamento financeiro:
+    Amount < €10,000: Gestor financeiro
     Amount ≥ €10,000: CFO
 
-  Operations Department:
-    Amount < €3,000: Operations Manager
+  Departamento de operações:
+    Amount < €3,000: Gestor de operações
     Amount ≥ €3,000: COO
 
-  General:
-    Amount < €2,000: Department Manager
-    Amount ≥ €2,000: Department Director
+  Caso geral:
+    Amount < €2,000: Gestor do departamento
+    Amount ≥ €2,000: Diretor do departamento
 ```
+
+</details>
 
 **Implementação:**
 
+Explicação visual: [matriz departamental](#diagrama-matriz-departamental).
+
+<details>
+<summary>Implementação ilustrativa da matriz departamental</summary>
+
 ```
-1. Check Department field
-2. Based on department, check amount threshold
-3. Route to appropriate approver
-4. Different thresholds per department
+1. Verificar o campo Department
+2. Verificar o limite do montante em função do departamento
+3. Encaminhar para o aprovador adequado
+4. Limites diferentes por departamento
 ```
+
+</details>
 
 ***
 
@@ -438,33 +694,46 @@ Department Matrix:
 
 **Regras diferentes consoante o momento:**
 
+#### Diagrama: Variantes temporais
+
+<figure><img src="../../../.gitbook/assets/decision-time-variants-pt.png" alt="Três variantes independentes: fim do mês, horário de trabalho e período fiscal. A fila e a aprovação de prevenção são alternativas a escolher. Uma data fora do período atual não é necessariamente anterior; verifique o caso separadamente."><figcaption><p>Três variantes independentes: fim do mês, horário de trabalho e período fiscal. A fila e a aprovação de prevenção são alternativas a escolher. Uma data fora do período atual não é necessariamente anterior; verifique o caso separadamente.</p></figcaption></figure>
+
+<details>
+<summary>Três variantes temporais independentes</summary>
+
 ```
-Month-End Processing (Last 3 days of month):
-  IF Today in last 3 days of month:
+Processamento de fim do mês (últimos 3 dias do mês):
+  IF Today está nos últimos 3 dias do mês:
     - Priority: URGENT
-    - Deadline: 1 day
-    - Approver: On-duty finance manager
-    - Expedited workflow
+    - Deadline: 1 dia
+    - Aprovador: gestor financeiro de serviço
+    - Workflow acelerado
   ELSE:
-    - Standard priority
-    - Standard deadline
-    - Standard workflow
+    - Prioridade habitual
+    - Prazo habitual
+    - Workflow habitual
 
-Business Hours vs After Hours:
-  IF Time between 9 AM - 5 PM:
-    - Assign to current shift
+Dentro e fora do horário de trabalho:
+  IF Time está entre as 9h00 e as 17h00:
+    - Atribuir ao turno atual
   ELSE:
-    - Queue for next business day
-    - OR route to on-call approver
+    - Colocar na fila para o próximo dia útil
+    - OR encaminhar para o aprovador de prevenção
 
-Fiscal Period:
-  IF Document_Date in Current_Fiscal_Period:
-    - Standard processing
+Período contabilístico (política ilustrativa independente):
+  IF Document_Date está em falta ou é inválida:
+    - Tratar a data inválida ou desconhecida conforme a configuração
+  ELSE IF Document_Date in Current_Fiscal_Period:
+    - Processamento habitual
+  ELSE IF Document_Date pertence a qualquer Fiscal_Period anterior a Current_Fiscal_Period:
+    - Marcar como "Prior Period"
+    - Exigir aprovação da contabilidade
+    - Verificações adicionais
   ELSE:
-    - Flag as "Prior Period"
-    - Require accounting approval
-    - Additional checks
+    - Período contabilístico futuro ou diferente: tratar conforme a configuração
 ```
+
+</details>
 
 ***
 
@@ -472,167 +741,201 @@ Fiscal Period:
 
 **Encaminhar as exceções separadamente:**
 
+#### Diagrama: Gravidade das exceções
+
+<figure><img src="../../../.gitbook/assets/decision-exception-severity-pt.png" alt="Exemplo de política de gravidade: prosseguir só após a correção configurada ou a resolução esperada. Uma exceção crítica interrompe o processamento. Os exemplos de deteção, por si só, não determinam a gravidade."><figcaption><p>Exemplo de política de gravidade: prosseguir só após a correção configurada ou a resolução esperada. Uma exceção crítica interrompe o processamento. Os exemplos de deteção, por si só, não determinam a gravidade.</p></figcaption></figure>
+
+<details>
+<summary>Política de gravidade das exceções</summary>
+
 ```
-Exception Detection:
+Deteção de exceções:
 
-  No Exception:
-    → Standard workflow
+  Sem exceção:
+    → Workflow habitual
 
-  Minor Exception (Auto-fixable):
-    → Auto-correct
-    → Log correction
-    → Continue standard workflow
+  Exceção ligeira (corrigível automaticamente):
+    → Corrigir automaticamente
+    → Registar a correção
+    → Continuar o workflow habitual
 
-  Medium Exception (Needs review):
-    → Create review task
-    → Flag document
-    → After fix: Continue workflow
+  Exceção média (requer revisão):
+    → Criar tarefa de revisão
+    → Marcar o documento
+    → Após a resolução: continuar o workflow
 
-  Major Exception (Requires escalation):
-    → Stop processing
-    → Create urgent task
-    → Notify multiple levels
-    → Manual intervention required
+  Exceção grave (requer escalamento):
+    → Parar o processamento
+    → Criar tarefa urgente
+    → Notificar vários níveis
+    → É necessária intervenção manual
 
-Exception Types:
-  - Missing required field
-  - Invalid field value
-  - PO mismatch
-  - Duplicate invoice
-  - Supplier mismatch
-  - Amount discrepancy
+Tipos de exceção:
+  - Campo obrigatório em falta
+  - Valor de campo inválido
+  - Divergência com a encomenda
+  - Fatura duplicada
+  - Fornecedor não corresponde
+  - Divergência no montante
 ```
+
+</details>
 
 ***
 
 ## Diagrama completo de lógica de decisão
 
+Os diagramas apresentam os passos essenciais. A árvore textual detalhada abaixo conserva o exemplo técnico; os destinos continuam a exigir configuração.
+
+
+Explicação visual: [visão geral](#diagrama-visao-geral), [faixas de valor](#diagrama-faixas-de-valor), [análise do fornecedor](#diagrama-analise-do-fornecedor), [aprovações sequenciais](#diagrama-aprovacoes-sequenciais), [percurso automático](#diagrama-percurso-automatico), [tarefa do gestor](#diagrama-tarefa-do-gestor), [aprovação executiva](#diagrama-aprovacao-executiva).
+
+<details>
+<summary>Exemplo completo: árvore textual detalhada</summary>
+
 ```
-INVOICE ARRIVES
+CHEGADA DA FATURA
 │
-├─ LEVEL 1: EXCEPTION CHECK
+├─ NÍVEL 1: VERIFICAÇÃO DE EXCEÇÕES
 │  │
-│  ├─ Has Critical Exception? (Missing PO, Duplicate, etc.)
+│  ├─ Exceção crítica ou fornecedor com estado BLOCKED?
+│  │  (Configurar a criticidade; nem toda a divergência com a encomenda é crítica.)
 │  │  │
-│  │  ├─ YES → Stop & Escalate
-│  │  │        Create urgent task
-│  │  │        Notify admin
-│  │  │        → END (Exception Handling)
+│  │  ├─ SIM → parar e escalar
+│  │  │        Criar tarefa urgente
+│  │  │        Notificar o administrador
+│  │  │        → FIM (tratamento de exceções)
 │  │  │
-│  │  └─ NO → Continue to Level 2
+│  │  └─ NÃO → continuar para o nível 2
 │
-├─ LEVEL 2: DOCUMENT TYPE
+├─ NÍVEL 2: TIPO DE DOCUMENTO
 │  │
 │  ├─ Type = Invoice?
-│  │  └─ YES → Continue to Level 3
+│  │  └─ SIM → continuar para o nível 3
 │  │
 │  ├─ Type = Credit Note?
-│  │  └─ YES → Branch to Credit Note workflow
-│  │           → END (Credit Note Path)
+│  │  └─ SIM → encaminhar para o workflow de notas de crédito
+│  │           → FIM (percurso de notas de crédito)
 │  │
-│  └─ Other Type?
-│     └─ YES → Branch to appropriate workflow
-│              → END (Other Type Path)
+│  └─ Outro tipo?
+│     └─ SIM → encaminhar para o workflow adequado
+│              → FIM (percurso de outro tipo)
 │
-├─ LEVEL 3: URGENCY CHECK (for Invoices)
+├─ NÍVEL 3: VERIFICAÇÃO DA URGÊNCIA (para faturas)
 │  │
-│  ├─ Urgent Flag = TRUE?
+│  ├─ Marca de urgência = TRUE?
 │  │  │
-│  │  ├─ YES → Expedited Workflow
+│  │  ├─ SIM → workflow acelerado
 │  │  │        Priority: URGENT
-│  │  │        Deadline: 1 day
-│  │  │        Assign to: Senior Approver
-│  │  │        → END (Expedited Path)
+│  │  │        Deadline: 1 dia
+│  │  │        Atribuir a: aprovador de nível superior
+│  │  │        → FIM (percurso acelerado)
 │  │  │
-│  │  └─ NO → Continue to Level 4
+│  │  └─ NÃO → continuar para o nível 4
 │
-├─ LEVEL 4: AMOUNT THRESHOLDS
+├─ NÍVEL 4: LIMITES DE MONTANTE
+│  │
+│  ├─ Amount está em falta ou é inválido?
+│  │  ├─ SIM → revisão manual (política explícita deste exemplo)
+│  │  └─ NÃO → continuar para os limites de montante abaixo
 │  │
 │  ├─ Amount < €1,000?
 │  │  │
-│  │  ├─ YES → AUTO-APPROVE PATH
-│  │  │        Set Approval_Type = "AUTO"
-│  │  │        Approve immediately
-│  │  │        Export to ERP
-│  │  │        → END (Auto-Approved)
+│  │  ├─ SIM → PERCURSO DE APROVAÇÃO AUTOMÁTICA
+│  │  │        Definir Approval_Type = "AUTO"
+│  │  │        Aprovar imediatamente
+│  │  │        Exportar para o ERP
+│  │  │        → FIM (aprovado automaticamente)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NÃO → continuar
 │  │
 │  ├─ Amount < €10,000?
 │  │  │
-│  │  ├─ YES → MANAGER APPROVAL PATH
-│  │  │        Create task for Manager
+│  │  ├─ SIM → PERCURSO DE APROVAÇÃO DO GESTOR
+│  │  │        Criar tarefa para o gestor
 │  │  │        Priority: Medium
-│  │  │        Deadline: 3 days
-│  │  │        → WAIT for approval
-│  │  │           → END (Manager Path)
+│  │  │        Deadline: 3 dias
+│  │  │        → AGUARDAR o resultado; se pendente, não continuar
+│  │  │           → Aprovado: continuar o processamento configurado
+│  │  │           → Rejeitado: parar a cadeia e tratar a rejeição conforme a configuração
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NÃO → continuar
 │  │
 │  ├─ Amount < €50,000?
 │  │  │
-│  │  ├─ YES → DIRECTOR APPROVAL PATH
-│  │  │        Continue to Level 5 (Supplier Check)
+│  │  ├─ SIM → PERCURSO DE APROVAÇÃO DO DIRETOR
+│  │  │        Continuar para o nível 5 (verificação do fornecedor)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NÃO → continuar
 │  │
 │  └─ Amount ≥ €50,000?
 │     │
-│     └─ YES → EXECUTIVE APPROVAL PATH
-│              Create sequential tasks:
-│              - Finance Director
+│     └─ SIM → PERCURSO DE APROVAÇÃO EXECUTIVA
+│              Criar tarefas sequenciais:
+│              - Diretor financeiro
 │              - CFO
-│              - CEO (if > €100,000)
+│              - CEO (se > €100,000)
 │              Priority: URGENT
-│              Deadline: 1 day each
-│              → WAIT for all approvals
-│                 → END (Executive Path)
+│              Deadline: 1 dia por tarefa
+│              → AGUARDAR todos os resultados necessários
+│                 → Todos aprovados: continuar o processamento configurado
+│                 → Pendente: não continuar
+│                 → Qualquer rejeição: parar a cadeia e tratar a rejeição conforme a configuração
 │
-├─ LEVEL 5: SUPPLIER ANALYSIS (for €10k-€50k range)
+├─ NÍVEL 5: ANÁLISE DO FORNECEDOR (€10,000 ≤ Amount < €50,000)
 │  │
 │  ├─ Supplier Status = "BLOCKED"?
 │  │  │
-│  │  ├─ YES → BLOCK & ESCALATE
-│  │  │        Stop processing
-│  │  │        Create urgent task
-│  │  │        Notify procurement & finance
-│  │  │        → END (Blocked Supplier)
+│  │  ├─ SIM → BLOQUEAR E ESCALAR
+│  │  │        Parar o processamento
+│  │  │        Criar tarefa urgente
+│  │  │        Notificar compras e finanças
+│  │  │        → FIM (fornecedor bloqueado)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NÃO → continuar
 │  │
-│  ├─ Supplier Age < 180 days (New)?
+│  ├─ Supplier Age < 180 dias (novo)?
 │  │  │
-│  │  ├─ YES → DUAL APPROVAL REQUIRED
-│  │  │        Task 1: Director (2 days)
-│  │  │        → WAIT for Task 1
-│  │  │           IF Task 1 Approved:
-│  │  │             Task 2: CFO (2 days)
-│  │  │             → WAIT for Task 2
-│  │  │                → END (Dual Approved)
-│  │  │           IF Task 1 Rejected:
-│  │  │             → END (Rejected at Level 1)
+│  │  ├─ SIM → SÃO NECESSÁRIAS DUAS APROVAÇÕES
+│  │  │        Tarefa 1: diretor (2 dias)
+│  │  │        → AGUARDAR a tarefa 1
+│  │  │           IF tarefa 1 aprovada:
+│  │  │             Tarefa 2: CFO (2 dias)
+│  │  │             → AGUARDAR a tarefa 2
+│  │  │                → Pendente: não continuar
+│  │  │                → Aprovado: continuar apenas após ambas as aprovações positivas
+│  │  │                → Rejeitado: parar a cadeia e tratar a rejeição conforme a configuração
+│  │  │           IF tarefa 1 rejeitada:
+│  │  │             → Parar a cadeia e tratar a rejeição conforme a configuração
+│  │  │           IF tarefa 1 pendente:
+│  │  │             → Não criar a tarefa 2 nem continuar
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NÃO → continuar
 │  │
 │  ├─ Supplier Risk Rating = "HIGH"?
 │  │  │
-│  │  ├─ YES → ENHANCED APPROVAL
-│  │  │        Additional fraud checks
-│  │  │        Director approval required
-│  │  │        Extended deadline
-│  │  │        → END (Enhanced Path)
+│  │  ├─ SIM → APROVAÇÃO REFORÇADA
+│  │  │        Verificações de fraude adicionais
+│  │  │        Aprovação prévia do gestor, depois aprovação do diretor
+│  │  │        Aguardar cada resultado positivo; se pendente ou rejeitado, não continuar
+│  │  │        Configurar os prazos das verificações de risco; as tarefas de aprovação do percurso C indicam 2 dias
+│  │  │        → FIM (percurso reforçado)
 │  │  │
-│  │  └─ NO → STANDARD DIRECTOR APPROVAL
-│  │           Create task for Director
+│  │  └─ NÃO → APROVAÇÃO HABITUAL DO DIRETOR
+│  │           Criar tarefa para o diretor
 │  │           Priority: High
-│  │           Deadline: 2 days
-│  │           → WAIT for approval
-│  │              → END (Standard High-Value)
+│  │           Deadline: 2 dias
+│  │           → AGUARDAR o resultado; se pendente, não continuar
+│  │              → Aprovado: continuar o processamento configurado
+│  │              → Rejeitado: parar a cadeia e tratar a rejeição conforme a configuração
 │  │
-│  └─ [Supplier analysis complete]
+│  └─ [Análise do fornecedor concluída]
 │
-└─ [All decision levels processed]
+└─ [Todos os níveis de decisão processados]
 ```
+
+</details>
+
 
 ***
 
@@ -640,30 +943,59 @@ INVOICE ARRIVES
 
 ### 1. Manter a lógica clara e fácil de manter
 
+A comparação seguinte apresenta uma condição simples, uma condição densa e uma política diferente por etapas. O diagrama distingue os respetivos objetivos sem afirmar equivalência.
+
+#### Diagrama: Decisões legíveis
+
+<figure><img src="../../../.gitbook/assets/decision-staged-maintainability-pt.png" alt="O exemplo de quatro passos ilustra uma política distinta da condição densa. Torna visível cada resultado negativo; não é uma transformação lógica equivalente comprovada. Defina listas permitidas e o tratamento das saídas."><figcaption><p>O exemplo de quatro passos ilustra uma política distinta da condição densa. Torna visível cada resultado negativo; não é uma transformação lógica equivalente comprovada. Defina listas permitidas e o tratamento das saídas.</p></figcaption></figure>
+
 ✅ **Bom:**
+
+Explicação visual: [condição simples](#diagrama-condicao-simples).
+
+<details>
+<summary>Exemplo simples: percurso para valores elevados</summary>
 
 ```
 IF Amount > 10000:
-  → High value path
+  → Percurso de valor elevado
 ELSE:
-  → Standard path
+  → Percurso habitual
 ```
+
+</details>
 
 ❌ **Mau (demasiado complexo):**
 
+Explicação visual: [decisões legíveis](#diagrama-decisoes-legiveis).
+
+<details>
+<summary>Exemplo de condição densa</summary>
+
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
-  → Complex path
+  → Percurso complexo
 ```
 
-**Melhor: dividir em passos:**
+</details>
+
+**Outro exemplo: uma política distinta em quatro etapas:**
+
+Este exemplo distingue os resultados em cada etapa. Não é uma reescrita logicamente equivalente da condição densa acima: listas de fornecedores, estados válidos, departamentos permitidos e tratamento de resultados negativos têm de ser definidos para este segundo exemplo.
+
+Explicação visual: [decisões legíveis](#diagrama-decisoes-legiveis).
+
+<details>
+<summary>Outro exemplo: política em quatro passos</summary>
 
 ```
-Step 1: IF Amount > 10000: Continue, ELSE: Standard path
-Step 2: IF Supplier in allowed list: Continue, ELSE: Review
-Step 3: IF Status valid: Continue, ELSE: Reject
-Step 4: IF Department authorized: Approve, ELSE: Escalate
+Passo 1: IF Amount > 10000: Continuar, ELSE: Percurso habitual
+Passo 2: IF Supplier está na lista permitida: Continuar, ELSE: Rever
+Passo 3: IF Status é válido: Continuar, ELSE: Rejeitar
+Passo 4: IF Department está autorizado: Aprovar, ELSE: Escalar
 ```
+
+</details>
 
 ***
 
@@ -678,33 +1010,55 @@ Step 4: IF Department authorized: Approve, ELSE: Escalate
 
 **Exemplo de documentação:**
 
+#### Diagrama: Registo da regra
+
+<figure><img src="../../../.gitbook/assets/decision-rule-documentation-pt.png" alt="Registo ilustrativo da regra BR-INV-001: objetivo, limites, exceção, responsável e data de referência. A referência às quatro faixas evita duplicar a regra; este registo não comprova aprovação nem execução."><figcaption><p>Registo ilustrativo da regra BR-INV-001: objetivo, limites, exceção, responsável e data de referência. A referência às quatro faixas evita duplicar a regra; este registo não comprova aprovação nem execução.</p></figcaption></figure>
+
+<details>
+<summary>Registo ilustrativo da regra BR-INV-001</summary>
+
 ```
-Decision Point: Amount Threshold Check
-Business Rule: BR-INV-001 (Invoice Approval Matrix)
-Purpose: Route invoices based on amount thresholds per company policy
-Thresholds:
-  < €1,000: Auto-approve (CFO approved threshold)
-  €1,000-€10,000: Manager approval (Delegation matrix)
-  > €10,000: Director approval (Signature authority)
-Exceptions: Urgent invoices skip to highest level
-Updated: 2025-10-23
-Owner: Finance Department
+Ponto de decisão: verificação do limite do montante
+Regra de negócio: BR-INV-001 (matriz de aprovação de faturas)
+Objetivo: encaminhar faturas pelos limites de montante segundo a política da empresa
+Limites:
+  < €1,000: Aprovar automaticamente (limite aprovado pelo CFO neste exemplo)
+  €1,000 ≤ Amount < €10,000: Aprovação do gestor (matriz de delegação)
+  €10,000 ≤ Amount < €50,000: Aprovação do diretor com verificações do fornecedor
+  Amount ≥ €50,000: Aprovação executiva
+Exceções: faturas urgentes passam diretamente ao nível mais elevado
+Atualizado: 2025-10-23
+Responsável: departamento financeiro
 ```
+
+</details>
 
 ***
 
 ### 3. Testar todos os caminhos
 
-**Matriz de testes:**
+**Matriz de teste proposta — resultados esperados, não testes executados:**
 
-| Caso de teste | Montante | Tipo        | Fornecedor | Caminho esperado | Estado |
-| ------------- | -------- | ----------- | ---------- | ---------------- | ------ |
-| TC1           | €500     | Fatura     | Existente   | Auto-approve     | ✅      |
-| TC2           | €5,000   | Fatura     | Existente   | Gerente          | ✅      |
-| TC3           | €15,000  | Fatura     | New        | Director+CFO     | ✅      |
-| TC4           | €60,000  | Fatura     | Existente   | Executive        | ✅      |
-| TC5           | €2,000   | Nota de crédito | Existente   | Fluxo de trabalho de crédito  | ✅      |
-| TC6           | €100,000 | Fatura     | Bloqueado    | Parar e escalar  | ✅      |
+Verifique estes resultados esperados na sua configuração e registe o que observar.
+
+| Caso | Valor | Tipo | Fornecedor | Percurso esperado | Verificação |
+| --- | --- | --- | --- | --- | --- |
+| TC1 | 500 € | Invoice | Existente | Aprovação automática | A testar |
+| TC2 | 5.000 € | Invoice | Existente | Gestor | A testar |
+| TC3 | 15.000 € | Invoice | Novo | Diretor, depois CFO | A testar |
+| TC4 | 60.000 € | Invoice | Existente | Executivo | A testar |
+| TC5 | 2.000 € | Credit Note | Existente | Workflow de notas de crédito | A testar |
+| TC6 | 100.000 € | Invoice | Bloqueado | Parar e escalar | A testar |
+| TC7 | 999,99 € | Invoice | Existente | Aprovação automática | A testar |
+| TC8 | 1.000 € | Invoice | Existente | Gestor | A testar |
+| TC9 | 9.999,99 € | Invoice | Existente | Gestor | A testar |
+| TC10 | 10.000 € | Invoice | Existente | Diretor + verificações do fornecedor | A testar |
+| TC11 | 49.999,99 € | Invoice | Existente | Diretor + verificações do fornecedor | A testar |
+| TC12 | 50.000 € | Invoice | Existente | Executivo | A testar |
+| TC13 | Ausente ou inválido | Invoice | Existente | Revisão manual escolhida para este exemplo | A testar |
+| TC14 | 15.000 € | Invoice | Novo | Diretor pendente: não criar a tarefa seguinte | A testar |
+| TC15 | 15.000 € | Invoice | Novo | Diretor ou CFO rejeitado: parar a cadeia e tratar a rejeição | A testar |
+| TC16 | 15.000 € | Invoice | Novo | Ambas as aprovações positivas: prosseguir com o processamento configurado | A testar |
 
 ***
 
@@ -719,26 +1073,35 @@ Owner: Finance Department
 * Taxas de exceção
 * Utilização dos caminhos
 
-**Exemplo de métricas:**
+**Métricas de exemplo fictícias:** estes valores ilustram um relatório; não comprovam o desempenho atual nem a execução deste workflow.
+
+#### Diagrama: Métricas fictícias
+
+<figure><img src="../../../.gitbook/assets/decision-fictional-metrics-pt.png" alt="Exemplo fictício: os quatro percursos totalizam 1.250 faturas. As percentagens dos percursos são arredondadas. As 15 exceções, ou 1,2%, podem referir-se às mesmas faturas; não constituem um quinto percurso. As durações não medem o desempenho do DocBits."><figcaption><p>Exemplo fictício: os quatro percursos totalizam 1.250 faturas. As percentagens dos percursos são arredondadas. As 15 exceções, ou 1,2%, podem referir-se às mesmas faturas; não constituem um quinto percurso. As durações não medem o desempenho do DocBits.</p></figcaption></figure>
+
+<details>
+<summary>Exemplo fictício de distribuição e durações</summary>
 
 ```
-Month: October 2025
-Total Invoices: 1,250
+Mês: outubro de 2025
+Total de faturas: 1250
 
-Decision Path Distribution:
-- Auto-approved (< €1k): 680 (54%)
-- Manager path (€1k-€10k): 420 (34%)
-- Director path (€10k-€50k): 120 (10%)
-- Executive path (> €50k): 30 (2%)
+Distribuição pelos percursos de decisão:
+- Aprovadas automaticamente (< €1k): 680 (54%)
+- Percurso do gestor (€1k ≤ Amount < €10k): 420 (34%)
+- Percurso do diretor (€10k ≤ Amount < €50k): 120 (10%)
+- Percurso executivo (Amount ≥ €50k): 30 (2%)
 
-Processing Time:
-- Auto-approve: < 1 minute
-- Manager path: 2.5 days average
-- Director path: 1.8 days average
-- Executive path: 3.2 days average
+Tempo de processamento:
+- Aprovar automaticamente: < 1 minuto
+- Percurso do gestor: média de 2,5 dias
+- Percurso do diretor: média de 1,8 dias
+- Percurso executivo: média de 3,2 dias
 
-Exceptions: 15 (1.2%)
+Exceções: 15 (1,2%)
 ```
+
+</details>
 
 ***
 
@@ -757,15 +1120,15 @@ Exceptions: 15 (1.2%)
 
 ### Pré-requisitos
 
-* [Guia completo de cartas de condição](../and/condition-cards-complete-guide.md) – Todas as cartas de condição
+* [Guia completo de cartões de condição](../and/condition-cards-complete-guide.md) – Todos os cartões de condição
 * [Guia de manipulação de campos](../then/document-field/field-manipulation-guide.md) – Operações de campos
 * [Guia de atribuição](../then/assignee/assignment-user-guide.md) – Lógica de encaminhamento
 
-### Cartas relacionadas
+### Cartões relacionados
 
-* **CONDITION\_DOC\_FIELD\_AMOUNT** – [Guia de cartas de condição](../and/condition-cards-complete-guide.md)
-* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** – [Guia de cartas de condição](../and/condition-cards-complete-guide.md)
-* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** – [Guia de cartas de condição](../and/condition-cards-complete-guide.md)
+* **CONDITION\_DOC\_FIELD\_AMOUNT** – [Guia de cartões de condição](../and/condition-cards-complete-guide.md)
+* **CONDITION\_DOC\_TYPE\_IS\_ISNOT** – [Guia de cartões de condição](../and/condition-cards-complete-guide.md)
+* **CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT** – [Guia de cartões de condição](../and/condition-cards-complete-guide.md)
 * **ACTION\_ASSIGN\_TO\_USER** – [Guia de atribuição](../then/assignee/assignment-user-guide.md)
 * **tasks\_create** – [Guia de atribuição de tarefas](../then/task/task-assignment-guide.md)
 
@@ -777,4 +1140,6 @@ Exceptions: 15 (1.2%)
 
 ***
 
-**Versão do padrão:** 1.0 **Última atualização:** 23 de outubro de 2025 **Dificuldade:** Média **Tempo estimado:** 30–45 minutos **Taxa de êxito:** Alta
+**Metadados históricos do exemplo:**
+
+**Versão do padrão:** 1.0 **Última atualização:** 23 de outubro de 2025 **Dificuldade:** média **Tempo estimado:** 30–45 minutos

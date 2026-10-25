@@ -16,7 +16,7 @@ La barra de herramientas también ofrece **Plantillas**, que abre la biblioteca 
 
 El **Gestión de pruebas** le permite guardar escenarios de prueba por flujo de trabajo y ejecutarlos juntos, de modo que pueda confirmar que sus flujos de trabajo siguen comportándose correctamente después de los cambios:
 
-<figure><img src="../../.gitbook/assets/workflow-test-manager-current-es.png" alt="Vista parcial del gestor de pruebas: búsqueda, columnas Nombre y Detalle y estados de los escenarios. Los valores privados están ocultos; algunos controles de la cabecera se muestran como «M» en esta versión."><figcaption><p>Vista parcial del gestor de pruebas: búsqueda, columnas Nombre y Detalle y estados de los escenarios. Los valores privados están ocultos; algunos controles de la cabecera se muestran como «M» en esta versión.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-test-manager-current-es.png" alt="Vista parcial del gestor de pruebas: búsqueda, columnas Nombre y Detalle y estados de los escenarios. Los valores privados están ocultos."><figcaption><p>Vista parcial del gestor de pruebas: búsqueda, columnas Nombre y Detalle y estados de los escenarios. Los valores privados están ocultos.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/workflow-test-manager-actions-detail-es.png" alt="Detalle de los botones Ejecutar todas las pruebas y Agregar escenario de prueba."><figcaption><p>Detalle de los botones Ejecutar todas las pruebas y Agregar escenario de prueba.</p></figcaption></figure>
 

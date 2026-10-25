@@ -41,6 +41,8 @@
 
 在所示测试中，卡片创建了结果列。重新打开同一张发票后，**总金额** 列中显示 `20.00` 和 `12.00`。本例中的输入列和 `NET_AMOUNT` 原有值保持不变。如果所选结果列已经有值，计算结果会覆盖这些值。
 
+<figure><picture><source srcset="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-zh-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-zh-light-20261025.png" alt="重新打开同一张发票后，两行的 TOTAL_AMOUNT 仍为 20.00 和 12.00，原始 NET_AMOUNT 金额保持不变。" width="735"></picture><figcaption><p>重新打开同一张发票后，两行的 TOTAL_AMOUNT 仍为 20.00 和 12.00，原始 NET_AMOUNT 金额保持不变。</p></figcaption></figure>
+
 ## 检查和反例
 
 计算前检查两列输入，计算后核对保存的结果。

@@ -41,6 +41,8 @@ A fatura de exemplo contém duas linhas. Antes do cálculo, a coluna de resultad
 
 No teste apresentado, o cartão cria a coluna de resultado. Depois de reabrir a mesma fatura, os valores `20.00` e `12.00` estão visíveis na coluna **Montante total**. As colunas de entrada e os valores originais em `NET_AMOUNT` permanecem inalterados neste exemplo. Se a coluna de resultado selecionada já contiver valores, o cálculo substitui-os.
 
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pt-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pt-light-20261025.png" alt="Depois de reabrir a mesma fatura, TOTAL_AMOUNT contém 20,00 e 12,00 nas duas linhas. Os valores originais em NET_AMOUNT permanecem inalterados." width="735"></picture><figcaption><p>Depois de reabrir a mesma fatura, TOTAL_AMOUNT contém 20,00 e 12,00 nas duas linhas. Os valores originais em NET_AMOUNT permanecem inalterados.</p></figcaption></figure>
+
 ## Verificações e contraexemplos
 
 Verifique ambas as colunas de entrada e confirme os valores guardados depois do cálculo.

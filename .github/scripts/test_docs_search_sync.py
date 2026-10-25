@@ -12,6 +12,8 @@ function that does) is mocked in every resolution test.
 from __future__ import annotations
 
 import os
+import io
+from contextlib import redirect_stdout
 from pathlib import Path
 import sys
 import tempfile
@@ -86,11 +88,15 @@ class ResolveImagesInMarkdownTests(unittest.TestCase):
         sync._page_blob_url_cache.clear()
         self._tmpdir = tempfile.TemporaryDirectory()
         self._orig_repo_root = sync.REPO_ROOT
+        self.output = io.StringIO()
+        self.stdout = redirect_stdout(self.output)
+        self.stdout.__enter__()
         sync.REPO_ROOT = self._tmpdir.name
 
     def tearDown(self):
         sync.REPO_ROOT = self._orig_repo_root
         self._tmpdir.cleanup()
+        self.stdout.__exit__(None, None, None)
 
     def _write_local_asset(self, rel_path: str, content: bytes = b"fake-png-bytes"):
         abs_path = os.path.join(self._tmpdir.name, rel_path)
@@ -109,9 +115,11 @@ class ResolveImagesInMarkdownTests(unittest.TestCase):
 
     def test_already_absolute_disallowed_host_is_dropped(self):
         markdown = "![Alt](https://lh7-us.googleusercontent.com/pasted.png)"
-        result = sync.resolve_images_in_markdown(
-            markdown, "readme/x.md", "https://docs.docbits.com/x"
-        )
+        with patch.object(sync, "_fetch_page_blob_to_url_map", return_value={}):
+            result = sync.resolve_images_in_markdown(
+                markdown, "readme/x.md", "https://docs.docbits.com/x"
+            )
+        self.assertIn("dropping unresolvable image", self.output.getvalue())
         self.assertNotIn("googleusercontent.com", result)
         self.assertEqual(result.count("!["), 0)
 
@@ -180,6 +188,13 @@ class ResolveImagesInMarkdownTests(unittest.TestCase):
 class PublishedImageRegressionTests(unittest.TestCase):
     def setUp(self):
         sync._page_blob_url_cache.clear()
+
+    def test_navigation_summary_is_not_an_ingestable_page_or_a_warning(self):
+        output = io.StringIO()
+        with redirect_stdout(output), patch.object(sync, "_call_endpoint") as endpoint:
+            sync.ingest_md_file(sync.SUMMARY_PATH, 'main', 'sha', dry_run=True, published=set())
+        endpoint.assert_not_called()
+        self.assertNotIn('::warning::', output.getvalue())
 
     def test_external_image_uses_existing_signed_same_origin_proxy(self):
         original = "https://lh7-us.googleusercontent.com/screenshot"

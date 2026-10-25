@@ -16,9 +16,9 @@
 
 **多版本卡：** CALC\_COLUMNS (v2)、CALC\_COLUMNS\_REGEX (v2)、EDIT\_COLUMN (v2)、AI\_CALC\_MTZ\_ETZ (v2)
 
-**版本提示：**请以实际卡片的版本徽章为准。本文的字段复制示例使用 v2；不同卡片的输入项和行为应分别核对。
+**版本提示：** 请以实际卡片的版本徽章为准。本文的字段复制示例使用 v2；不同卡片的输入项和行为应分别核对。
 
-📖 [完整版本历史](../release.md) | [卡牌版本和行为](card-versions-guide.md)
+📖 [完整版本历史](../release.md) | [卡片版本与行为](card-versions-guide.md)
 
 ***
 

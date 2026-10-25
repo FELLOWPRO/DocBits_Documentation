@@ -4,10 +4,6 @@
 
 Maak, terwijl groepsrechten al zijn ingeschakeld, een beoordelaarsgroep en voeg een testgebruiker zonder beheerdersrechten toe. Sta het tonen in de lijst, bekijken en bewerken van toegewezen facturen toe; laat verwijderen, bulkupdates en goedkeuringen uitgeschakeld. Sla op, open de instellingen opnieuw en meld u aan als gewone gebruiker: de toegewezen factuur is zichtbaar en het niet-toegewezen controledocument ontbreekt.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/nl.mp4" %}
-
-[Bekijk met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/nl.html)
-
 Deze instellingen beantwoorden drie verschillende vragen: wie zich kan aanmelden, in welke suborganisatie iemand werkt en wat de groep van die persoon mag doen.
 
 | Als u wilt… | Open… |

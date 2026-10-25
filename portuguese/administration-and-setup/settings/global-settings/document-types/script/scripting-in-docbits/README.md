@@ -1,5 +1,13 @@
 # Scripting no DocBits
 
+## Vídeo tutorial: as funções de script mais importantes
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/pt.mp4" %}
+As funções de script mais importantes no DocBits
+{% endembed %}
+
+O vídeo mostra no editor de roteiros como ler um campo (`get_field_value`), definir um valor (`set_field_value`), calcular uma data de vencimento (`set_date_value`), marcar um campo como inválido (`set_field_as_invalid`) e torná-lo obrigatório (`set_is_required`).
+
 ## Guia de Scripting do DocBits
 
 Bem-vindo ao guia de scripting do DocBits! Aqui, aprenderá a utilizar scripts para automatizar e melhorar o processamento de documentos no DocBits. Os scripts permitem a manipulação personalizada de campos, transformação de dados e implementação de lógica em vários tipos de documentos.

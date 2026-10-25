@@ -1,24 +1,20 @@
 # Historia zatwierdzeń
 
-Aby włączyć funkcję **Historia zatwierdzeń**:
+**Historia zatwierdzeń** pozwala sprawdzać decyzje podejmowane podczas zatwierdzania dokumentu. Ustawienie jest przypisane do typu dokumentu.
 
-1. Przejdź do **Ustawienia** → **Ustawienia ogólne** → **Typy dokumentów** → **Więcej ustawień** → **Aprobata**.
-2. Włącz **Historię zatwierdzeń**.
+## Ustawienie dla typu dokumentu
 
-Po włączeniu historia zatwierdzeń będzie widoczna na ekranie **Oczekujące na zatwierdzenie**. Możesz przełączyć się na ekran **Historia zatwierdzeń**, klikając przycisk w lewym górnym rogu.
+1. Otwórz **Ustawienia → Typy dokumentów**.
+2. Znajdź odpowiedni typ dokumentu i wybierz koło zębate, aby otworzyć **Więcej ustawień**. Opcje układów i pól otwierają inne edytory.
+3. Rozwiń **Zatwierdzenie i odrzucenie** i znajdź **Historia zatwierdzeń**. Ten przełącznik jest niezależny od opcji **Zatwierdź przed eksportem**, **Drugie zatwierdzenie** i **Pieczęć zatwierdzenia**.
+4. Przed zmianą ustawienia sprawdź wymagany proces zatwierdzania oraz uprawnienia do przeglądania decyzji. Zapisz poprzednią wartość, jeśli chcesz porównać działanie na dokumencie testowym.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_1.png)
+<figure><img src="../../../../../../.gitbook/assets/doc-type-settings-approval-pl.png" alt="Historia zatwierdzeń w sekcji Zatwierdzenie i odrzucenie w ustawieniach typu dokumentu. Obraz przedstawia ustawienia, a nie wykonane zatwierdzenie."><figcaption><p>Historia zatwierdzeń w sekcji Zatwierdzenie i odrzucenie w ustawieniach typu dokumentu. Obraz przedstawia ustawienia, a nie wykonane zatwierdzenie.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_2.png)
+## Sprawdzenie na dokumencie testowym
 
-Na ekranie **Historia zatwierdzeń** zobaczysz następujące szczegóły:
+Użyj dokumentu syntetycznego o skonfigurowanym typie, który rzeczywiście przechodzi proces zatwierdzania. Uprawniony użytkownik testowy powinien zatwierdzić lub odrzucić dokument. Następnie otwórz widok zatwierdzania tego dokumentu i sprawdź dostępną historię.
 
-* **Kto** zatwierdził lub odrzucił dokument.
-* **Czas** i **kolejność** zatwierdzeń lub odrzucenia.
-* Jeśli jest ustawione, **komentarze** wyjaśniające powody decyzji.
-* **Czerwony** oznacza **odrzucenie**.
-* Kolor odpowiadający środowisku (np. zielony) oznacza **zatwierdzenie**.
+Porównaj decyzję, użytkownika, czas i ewentualny komentarz z wykonaną czynnością. Jeśli uczestniczy kilku zatwierdzających, sprawdzaj kolejność po każdej decyzji.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_3.png)
-
-Ta funkcja zapewnia zwiększoną przejrzystość, śledząc i wizualizując proces zatwierdzania.
+Jeśli historia nie jest widoczna, sprawdź typ dokumentu, stan przepływu pracy, ustawienie i uprawnienia dostępu. Stare zrzuty ekranu nie potwierdzają obecnej nawigacji ani stałych kolorów stanów; zweryfikuj je w swoim procesie zatwierdzania.

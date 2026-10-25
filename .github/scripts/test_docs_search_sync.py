@@ -196,6 +196,20 @@ class PublishedImageRegressionTests(unittest.TestCase):
         endpoint.assert_not_called()
         self.assertNotIn('::warning::', output.getvalue())
 
+    def test_markdown_escaped_ampersand_matches_the_published_source_url(self):
+        original = 'https://files.gitbook.com/image.png?alt=media&token=abc'
+        proxy = 'https://docs.docbits.com/~gitbook/image?url=x&sign=s'
+        with patch.object(sync, '_fetch_page_blob_to_url_map', return_value={original: proxy}):
+            result = sync.resolve_images_in_markdown(
+                r'![A](https://files.gitbook.com/image.png?alt=media\&token=abc)',
+                'readme/page.md', 'https://docs.docbits.com/page')
+        self.assertEqual(result, f'![A]({proxy})')
+
+    def test_indented_code_is_not_an_image_but_list_images_are(self):
+        self.assertEqual(sync._iter_raw_images('Text.\n\n    ![Example](missing.png)\n'), [])
+        images = sync._iter_raw_images('- A list item\n\n    ![Screen](screen.png)\n')
+        self.assertEqual([src for _, src, _ in images], ['screen.png'])
+
     def test_external_image_uses_existing_signed_same_origin_proxy(self):
         original = "https://lh7-us.googleusercontent.com/screenshot"
         proxy = "https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fscreenshot&width=768&sign=real-signature&sv=3"

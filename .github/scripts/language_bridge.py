@@ -43,6 +43,8 @@ from __future__ import annotations
 
 import argparse
 import re
+import string
+import urllib.parse
 import shutil
 import sys
 from dataclasses import dataclass, field
@@ -178,7 +180,9 @@ def resolve_asset(candidate: str, *asset_dirs: Path) -> tuple[str, Path] | None:
     """A reference like `image (83).png" alt=...` has no clean delimiter, so
     shorten it until it names a file in one of the asset directories."""
     for k in range(len(candidate), 0, -1):
-        name = candidate[:k].replace("%20", " ")
+        name = urllib.parse.unquote(
+            re.sub(r"\\([" + re.escape(string.punctuation) + r"])", r"\1", candidate[:k])
+        )
         if not safe_rel(name):
             continue
         for d in asset_dirs:
@@ -279,7 +283,12 @@ def plan_sync(source_readme: Path, dest_dir: Path) -> tuple[Report, dict[Path, P
             if not (final.is_file() or (in_assets and (src_assets / final.name).is_file())):
                 rep.errors.append(f"{p}: {{% file %}} points to a missing file: {target}")
         # --- images and attachments
-        for cand in ASSET_REF.findall(text):
+        for asset_ref in ASSET_REF.finditer(text):
+            # An absolute image URL is fetched by GitBook itself. Its path
+            # may contain .gitbook/assets, but it is not a branch-local file.
+            if re.search(r"https?://[^\s\"'<>]*$", text[:asset_ref.start()]):
+                continue
+            cand = asset_ref.group(1)
             # Look in the BRANCH's assets first. The destination folder already
             # holds a copy of every asset from an earlier sync, so resolving
             # against it first made the branch's own version invisible: a

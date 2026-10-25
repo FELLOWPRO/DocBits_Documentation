@@ -1,5 +1,13 @@
 # Script in DocBits
 
+## Video tutorial: le funzioni di script più importanti
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/it.mp4" %}
+Le funzioni di script più importanti in DocBits
+{% endembed %}
+
+Il video mostra nell'editor di script come leggere un campo (`get_field_value`), impostare un valore (`set_field_value`), calcolare una data di scadenza (`set_date_value`), contrassegnare un campo come non valido (`set_field_as_invalid`) e renderlo obbligatorio (`set_is_required`).
+
 ## Guida allo Scripting di Docbits
 
 Benvenuti nella guida allo scripting di Docbits! Qui imparerete come utilizzare gli script per automatizzare e migliorare l'elaborazione dei documenti in Docbits. Gli script consentono la manipolazione personalizzata dei campi, la trasformazione dei dati e l'implementazione di logiche su vari tipi di documento.

@@ -2,7 +2,7 @@
 
 ## Videoanleitung: Die wichtigsten Skript-Funktionen
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v2/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/de.mp4" %}
 Die wichtigsten Skript-Funktionen in DocBits
 {% endembed %}
 

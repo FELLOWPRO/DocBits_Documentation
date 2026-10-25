@@ -15,7 +15,9 @@ select both this group and the `k9s` label.
 
 `k9s-values.yaml` records the installed ARC chart values, including the
 existing runner image and pod configuration. The scale set has zero idle
-runners and at most three concurrent runners. The existing shared k9s and
+runners and at most four concurrent runners. Search workflows retain their
+three-job matrix limit, leaving capacity for a language bridge while indexing
+is active. The existing shared k9s and
 k9s-high scale sets are unchanged.
 
 To reconcile the installation, first ensure the `github-app-secret` Secret is

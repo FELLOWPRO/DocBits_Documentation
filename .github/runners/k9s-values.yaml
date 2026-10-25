@@ -21,7 +21,7 @@ listenerTemplate:
         requests:
           cpu: 100m
           memory: 128Mi
-maxRunners: 3
+maxRunners: 4
 minRunners: 0
 template:
   spec:

@@ -2,7 +2,7 @@
 
 ## Videotutorial: las funciones de guion más importantes
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v2/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/es.mp4" %}
 Las funciones de guion más importantes en DocBits
 {% endembed %}
 

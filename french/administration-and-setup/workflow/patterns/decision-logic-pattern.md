@@ -4,9 +4,9 @@
 
 ***
 
-Vous construisez ce modèle dans le **Générateur de flux de travail** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Ajouter une carte** et ouvrez la catégorie **Logique** — elle contient les cartes de condition et de branchement qui pilotent l'arbre de décision, et que vous combinez avec le groupe **Et** pour évaluer plusieurs conditions :
+Dans le concepteur Standard, ouvrez **Ajouter une carte** dans le groupe **Et....**, puis la catégorie **Logique**. La vue partielle ci-dessous présente une carte de condition fondée sur une table de décision, affichée dans la bibliothèque avant sa sélection et sa configuration. La table à utiliser et le stockage des résultats pour les cartes suivantes restent à configurer. Les autres conditions, actions et connexions du modèle restent à définir et à vérifier. La condition porte sur les résultats renvoyés par la table pour le document ou l’organisation du fournisseur.
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-decision-condition-library-current-fr.png" alt="Carte de condition de la catégorie « Logique » dans la bibliothèque, avant sa sélection et sa configuration. La table de décision et le stockage des résultats restent à configurer."><figcaption><p>Carte de condition de la catégorie « Logique » dans la bibliothèque, avant sa sélection et sa configuration. La table de décision et le stockage des résultats restent à configurer.</p></figcaption></figure>
 
 ***
 

@@ -1,6 +1,6 @@
 # Pole wyboru jest zaznaczone
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-pl-20261025.png" alt="Przykład w wersji 2: validation complete porównane z wartością PRAWDA."><figcaption><p>Przykład w wersji 2: validation complete porównane z wartością PRAWDA.</p></figcaption></figure>
 
 ## Kiedy używać
 

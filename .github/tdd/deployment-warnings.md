@@ -21,9 +21,9 @@ escaped ampersands, indented code and three bridge asset cases. The verifier
 reproducer independently exposed three invalid language/origin results being
 accepted as successful.
 
-The final offline suite passed **80 tests**, including all 15 verifier subtests.
-Production script statement coverage was **81%** for docs_search_sync.py and
-**94%** for language_bridge.py (**85%** combined). Validation:
+The final offline suite passed **84 tests**, including all 15 verifier subtests.
+Production script statement coverage was **82%** for docs_search_sync.py and
+**94%** for language_bridge.py (**86%** combined). Validation:
 
 ```sh
 python -m coverage run --source=.github/scripts -m pytest -q .github/scripts
@@ -40,6 +40,9 @@ regression suite does not create spurious Actions annotations.
 
 ## Live evidence
 
-Pending: final merged runner assignment, nine-language full ingest/search
-verification, and complete warning/error annotation review. Offline tests are
-not treated as proof of deployment completion.
+- The dedicated k9s test run [40224621191](https://github.com/FELLOWPRO/DocBits_Documentation/actions/runs/40224621191) completed successfully with zero annotations.
+- The merged all-language bridge [40225298533](https://github.com/FELLOWPRO/DocBits_Documentation/actions/runs/40225298533) completed on `k9s-xkfm4-runner-cdmnv`; all eight languages reported `warnings=0` and the job has zero warning/error annotations.
+- The six PO screenshots are published and independently fetched as HTTP 200 PNGs with the expected image-content git hash. GitBook reuses existing CDN filenames; matching a new source filename is not a valid publication oracle.
+- The additional Chinese audit exposed one transient page read timeout. Regression tests reproduce both timeout/503 recovery and persistent 404/timeout diagnostics. Page fetches now retry transient failures before caching an empty result.
+
+Pending: final nine-language full ingest/search verification on the retry-enabled version, manual refresh verification and complete annotation review. Offline tests are not treated as proof of deployment completion.

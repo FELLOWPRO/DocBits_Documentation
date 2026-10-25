@@ -1,59 +1,51 @@
 # Layout-Editor
 
-Mit dem Layout-Editor ordnen Sie die Felder und Steuerelemente an, die Personen beim Validieren oder Freigeben eines Dokuments sehen. Ein Layout gehört zu genau einem Dokumenttyp, einer Herkunft und einem Layouttyp – prüfen Sie diese drei Angaben oben auf der Seite, bevor Sie speichern.
+Mit dem Layout-Editor ordnen Sie die Felder und Steuerelemente an, die Personen beim Validieren oder Freigeben eines Dokuments sehen. Ein Layout gehört zu einem Dokumenttyp, einer Herkunft und einem Layouttyp. Prüfen Sie den geöffneten Kontext, bevor Sie Änderungen speichern.
 
 ## Layout öffnen
 
 1. Öffnen Sie **Einstellungen → Dokumenttypen**.
-2. Wählen Sie den Dokumenttyp aus, den Sie bearbeiten möchten, und öffnen Sie den **Layout-Editor**. Bei einem Untertyp eines Dokuments öffnen Sie die Aktion Layout-Editor dieses Untertyps.
-3. Prüfen Sie die Kopfzeile. Der linke Selektor ist die **Herkunft** (zum Beispiel **Standard**), gefolgt vom **Dokumenttyp** (zum Beispiel **Rechnung**) und dem **Layouttyp** (zum Beispiel **Feldvalidierung**). Jeder Selektor öffnet eine Liste; mit einer anderen Auswahl wird das jeweilige Layout geladen. Ist der Layout-Editor nicht verfügbar, muss ein Administrator das Modul möglicherweise für Ihre Organisation freischalten.
+2. Öffnen Sie den **Layout-Editor** für den gewünschten Dokumenttyp oder Untertyp. Ist der Layout-Editor nicht verfügbar, muss ein Administrator das Modul möglicherweise für Ihre Organisation freischalten.
+3. Prüfen Sie die ausgewählte **Herkunft** in der Aktionsleiste. Daneben zeigt DocBits den Typ des geöffneten Editors an.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-de.png" alt="Der Layout-Editor für eine Rechnung in DocBits, mit den Selektoren für Herkunft, Dokumenttyp und Layouttyp, den Tabs Struktur, Felder und Elemente, der Layoutfläche und dem Bereich Eigenschaften rechts"><figcaption><p>Der Layout-Editor: die Selektoren in der Kopfzeile, die Elementlisten links, die Fläche in der Mitte und der Bereich Eigenschaften rechts.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-de.png" alt="Ausschnitt des Layout-Editors: links die Bereiche Gruppen, Felder und Formular-Elemente, daneben eine Beispielgruppe auf der Layoutfläche."><figcaption><p>Ausschnitt des Layout-Editors: links die Bereiche Gruppen, Felder und Formular-Elemente, daneben eine Beispielgruppe auf der Layoutfläche.</p></figcaption></figure>
 
-## Mit der Kopfzeile arbeiten
+Wenn Sie die Herkunft wechseln, kann DocBits dafür ein eigenes Herkunfts-Layout anlegen. Prüfen Sie deshalb die Auswahl, bevor Sie das Layout bearbeiten.
 
-* Über **Dokumenttyp** und **Layouttyp** wechseln Sie zwischen Layouts. Die Seite lädt das gewählte Layout neu.
-* Neben **Speichern** zeigt DocBits an, ob das Layout **Nicht gespeicherte Änderungen** enthält. Nach dem Speichern sehen Sie, wann das Layout zuletzt gespeichert wurde.
-* **Speichern** sichert das Layout für den ausgewählten Dokumenttyp, die Herkunft und den Layouttyp.
-* Das Menü **Mehr** (drei Punkte) enthält **Vorlage automatisch generieren**, **Standardlayout auf die Herkunft anwenden**, **Standardvorlage verwenden**, **JSON bearbeiten**, **JSON kopieren** und **Layout-Einstellungen**. **Vorlage automatisch generieren** und **Standardvorlage verwenden** ersetzen ein individuelles Layout – prüfen Sie daher zuerst den ausgewählten Dokumenttyp und das Layout. **JSON bearbeiten** ist für die erweiterte Konfiguration gedacht und sollte nur verwendet werden, wenn Sie das Vorlagenformat kennen.
-* Verlassen Sie die Seite mit nicht gespeicherten Änderungen, fragt DocBits, ob diese gespeichert oder verworfen werden sollen.
+## Die Bereiche des Editors
 
-## Elemente finden: Struktur, Felder, Elemente
+Links wechseln Sie zwischen **Elemente**, **Eigenschaften** und den allgemeinen Einstellungen über das Zahnradsymbol.
 
-Die linke Seite hat drei Tabs:
+* **Elemente** enthält die Bereiche für Gruppen, Dokumentfelder und weitere Formularelemente. Klappen Sie den benötigten Bereich auf, um die verfügbaren Einträge zu sehen.
+* Die Fläche in der Mitte zeigt die Gruppen und Felder Ihres Layouts. Gruppen fassen zusammengehörige Felder zusammen.
+* Rechts befindet sich der Bereich für ein Beispieldokument. Dort können Sie ein Dokument zum Vergleich mit dem Layout anzeigen und vergrößern oder verkleinern.
 
-| Tab | Wofür |
-| --- | --- |
-| **Struktur** | Zeigt das Layout als Baum. Gruppen und ihre Felder werden in der Reihenfolge aufgeführt, in der sie auf der Fläche erscheinen, mit der Anzahl der platzierten und der verfügbaren Felder. |
-| **Felder** | Alle für den Dokumenttyp konfigurierten Felder, nach Feldgruppe gruppiert und standardmäßig eingeklappt. Der Filter wechselt zwischen **Alle**, **Nicht verwendet** und **Versteckt**; der technische Feldname steht unter der Bezeichnung des Feldes. |
-| **Elemente** | Steuerelemente für Darstellung und Interaktion wie Text, Bezeichnung, Kontrollkästchen, Trennlinien, Tabellen, Schaltflächen und Untergruppen. |
+Ziehen Sie einen Eintrag aus dem gewünschten Bereich auf die Layoutfläche, um eine Gruppe, ein Feld oder ein Formularelement hinzuzufügen.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-structure-de.png" alt="Der Tab Struktur des Layout-Editors mit den aufgeklappten Gruppen Rechnungsdetails, Zahlungsdetails, Bestellung und Lieferdetails samt ihren Feldern"><figcaption><p>Der Tab Struktur zeigt das erstellte Layout als Baum aus Gruppen und Feldern.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-de.png" alt="Detail der Beispielgruppe mit den Feldern Rechnungsnummer und Datum. Beide Felder belegen im gezeigten Beispiel jeweils die Hälfte der Gruppenbreite."><figcaption><p>Detail der Beispielgruppe mit den Feldern Rechnungsnummer und Datum. Beide Felder belegen im gezeigten Beispiel jeweils die Hälfte der Gruppenbreite.</p></figcaption></figure>
 
-Wählen Sie ein Element aus, um es hinzuzufügen, oder ziehen Sie es auf die Fläche. Der Titel einer Gruppe sagt der Person, die das Dokument validiert, was in diesen Abschnitt gehört. Wiederverwendbare Dokumentfelder erstellen oder benennen Sie zuerst unter [Dokumenttypen](README.md) um.
-
-## Auf der Fläche arbeiten
-
-* **Hauptlayout** zeigt das Layout des Dokuments selbst. **Tabelle** zeigt das Tabellenlayout für Positionen.
-* **Dokument** öffnet oder schließt das Beispieldokument neben der Fläche, sodass Sie das Layout mit einem echten Dokument vergleichen können.
-* Gruppen werden als Karten dargestellt; die Felder innerhalb einer Gruppe lassen sich in Zeilen anordnen und unterschiedlich breit machen.
+Wiederverwendbare Dokumentfelder konfigurieren Sie unter [Dokumenttypen](README.md). Die im Editor verfügbaren Felder hängen vom ausgewählten Dokumenttyp und Ihrer Konfiguration ab.
 
 ## Eigenschaften eines Elements ändern
 
-Wählen Sie ein Element oder eine Gruppe auf der Fläche aus. **Eigenschaften** rechts ist immer sichtbar und in Abschnitte gegliedert:
+Wählen Sie eine Gruppe oder ein Feld auf der Fläche aus und öffnen Sie links **Eigenschaften**. Die verfügbaren Einstellungen richten sich nach dem gewählten Element. Dazu gehören beispielsweise Bezeichnung, technischer Feldname, Breite und Verhalten.
 
-* **Darstellung** – Bezeichnung, Feldname, Position der Bezeichnung und Breite des Elements.
-* **Verhalten** – schreibgeschützt, versteckt und Tab-Index.
-* **Werte & Listen** – die für das Element angebotenen Werte.
-* **Automatisierung** – Regeln, die das Element befüllen oder verändern.
-* **Rahmen & Abstände** – das Erscheinungsbild des Elements.
+<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-de.png" alt="Detail der Eigenschaften des ausgewählten Felds: Bezeichnung, technischer Feldname und Elementbreite in Prozenten."><figcaption><p>Detail der Eigenschaften des ausgewählten Felds: Bezeichnung, technischer Feldname und Elementbreite in Prozenten.</p></figcaption></figure>
 
-Wählen Sie für die Breite eine der Vorgaben (25, 33, 50, 66, 75 oder 100 Prozent), statt einen Wert einzugeben, und prüfen Sie das Ergebnis auf der Fläche. Welche Abschnitte und Optionen erscheinen, hängt vom ausgewählten Element ab. Weitere Details finden Sie unter [Feldeigenschaften konfigurieren](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+Bei vordefinierten Feldern können Bezeichnung und technischer Feldname gesperrt sein. Je nach Element können Sie außerdem Schreibschutz, Sichtbarkeit, Tab-Reihenfolge, Wertelisten sowie die Ausführung eines Workflows oder Skripts bei einer Änderung einstellen. Für Gruppen und Felder stehen unterschiedliche Optionen zur Verfügung.
+
+Passen Sie die Eigenschaften an und prüfen Sie das Ergebnis auf der Fläche. Die Breite wird als Prozentwert eingestellt; Gruppen und die darin angeordneten Felder können unterschiedliche Breiten haben. Weitere Details finden Sie unter [Feldeigenschaften konfigurieren](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+
+## Vorlagen und JSON
+
+Die Aktionsleiste bietet neben **Speichern** Funktionen zum automatischen Erzeugen einer Vorlage, zum Anwenden des Standardlayouts auf Herkunfts-Layouts, zum Verwenden der Standardvorlage und zum Bearbeiten von JSON. Welche Funktionen verfügbar sind, hängt vom geöffneten Editor ab.
+
+Das Erzeugen oder Übernehmen einer Vorlage kann ein individuell angeordnetes Layout ersetzen. Prüfen Sie deshalb zuerst den Dokumenttyp, die Herkunft und das bestehende Layout. **JSON bearbeiten** ist für die erweiterte Konfiguration gedacht und sollte nur verwendet werden, wenn Sie das Vorlagenformat kennen. Im JSON-Dialog können Sie die Layoutkonfiguration auch kopieren.
 
 ## Prüfen und speichern
 
-Ordnen Sie die Gruppen und Felder an, prüfen Sie das Layout auf der Fläche und verwenden Sie **Speichern** in der Kopfzeile, sobald das Ergebnis passt. Zu herkunftsspezifischen Layouts siehe [Herkunfts-Layouts](origin-layouts.md).
+Ordnen Sie die Gruppen und Felder an, prüfen Sie das Layout auf der Fläche und verwenden Sie **Speichern** in der Aktionsleiste, sobald das Ergebnis passt. Zu herkunftsspezifischen Layouts siehe [Herkunfts-Layouts](origin-layouts.md).
 
 {% hint style="info" %}
-Die Screenshots zeigen synthetische Einstellungen in der DocBits-Testorganisation mit deutscher Spracheinstellung in der Anwendung. Beim Erstellen der Aufnahmen wurde kein Layout gespeichert oder ersetzt.
+Die Abbildungen zeigen ein vereinfachtes Beispiel für ein Rechnungslayout. Feldbezeichnungen und verfügbare Optionen hängen von Ihrer Konfiguration ab.
 {% endhint %}

@@ -6,8 +6,11 @@ Default runner group excludes public repositories, so changing `runs-on` alone
 would leave these jobs queued indefinitely.
 
 The **DocBits Documentation** runner group (organization group ID 4) permits
-only this repository and the three workflow files on `main` listed in
-`group.json`. Pull request and fork workflows are not allowed. Jobs explicitly
+only this repository and the three workflow files on `main`, plus the
+search-sync push entrypoint on the trusted `de` branch, listed in `group.json`.
+Push workflows execute the definition stored on the pushed branch, so the
+German entrypoint must also be synchronized with the current main implementation.
+Pull request and fork workflows are not allowed. Jobs explicitly
 select both this group and the `k9s` label.
 
 `k9s-values.yaml` records the installed ARC chart values, including the
@@ -28,3 +31,7 @@ helm upgrade --install k9s-docs \
 No credential material is stored here. The runner image is 2.336.0, which
 supports the Node.js 24 actions used by the workflows. The runner-group policy
 must be maintained separately through GitHub organization settings/API.
+
+When updating group access through the REST API, update the workflow policy
+and the selected-repositories list through their separate endpoints, then
+read both back to verify the effective configuration.

@@ -1,59 +1,53 @@
 # Costruttore di Layout
 
-Usa il Costruttore di Layout per organizzare i campi e i controlli che gli utenti vedono quando convalidano o approvano un documento. Un layout appartiene a un tipo di documento, a un'origine e a un tipo di layout, quindi controlla questi tre elementi in cima alla pagina prima di salvare.
+Usa il Costruttore di Layout per organizzare i campi e i controlli visualizzati durante la convalida o l'approvazione di un documento. Ogni layout è associato a un tipo di documento, a un'origine e a un tipo di layout. Prima di salvare le modifiche, verifica quale layout è aperto.
 
 ## Aprire il layout
 
 1. Apri **Impostazioni → Tipi di Documento**.
-2. Seleziona il tipo di documento che vuoi modificare e apri **Costruttore di Layout**. Per un sottotipo di documento, apri l'azione Costruttore di Layout di quel sottotipo.
-3. Controlla l'intestazione. Il selettore a sinistra è l'**Origine** (ad esempio **Predefinito**), seguito da **Tipo di documento** (ad esempio **Fattura**) e **Tipo di layout** (ad esempio **Convalida campi**). Ogni selettore apre un elenco; scegliendo un'altra voce si carica il layout corrispondente. Se il Costruttore di Layout non è disponibile, un amministratore potrebbe dover attivare il modulo per la tua organizzazione.
+2. Apri il Costruttore di Layout del tipo o sottotipo di documento desiderato. Se non è disponibile, un amministratore potrebbe dover attivare il modulo per la tua organizzazione.
+3. Verifica l'origine selezionata nella barra delle azioni e il tipo di editor indicato accanto.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-it.png" alt="Il Costruttore di Layout di una fattura in DocBits, con i selettori di origine, tipo di documento e tipo di layout, le schede Struttura, Campi ed Elementi, l'area di lavoro del layout e il pannello Proprietà a destra"><figcaption><p>Il Costruttore di Layout: i selettori dell'intestazione, gli elenchi degli elementi a sinistra, l'area di lavoro al centro e il pannello Proprietà a destra.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-it.png" alt="Vista parziale dell&#x27;editor: le sezioni Gruppi, Campi ed Elementi di forma a sinistra e un esempio semplificato di layout di fattura al centro."><figcaption><p>Vista parziale dell&#x27;editor: le sezioni Gruppi, Campi ed Elementi di forma a sinistra e un esempio semplificato di layout di fattura al centro.</p></figcaption></figure>
 
-## Lavorare con l'intestazione
+Quando cambi **Origine**, DocBits può creare un layout indipendente per quell'origine. Verifica l'origine prima di apportare modifiche.
 
-* **Tipo di documento** e **Tipo di layout** permettono di passare da un layout all'altro. La pagina ricarica il layout che scegli.
-* Accanto a **Salva**, DocBits indica se il layout presenta **Modifiche non salvate**. Dopo un salvataggio mostra quando il layout è stato salvato l'ultima volta.
-* **Salva** memorizza il layout per il tipo di documento, l'origine e il tipo di layout selezionati.
-* Il menu **Di più** (tre punti) contiene **Generazione automatica del modello**, **Applica il layout predefinito alle origini**, **Usa il modello predefinito**, **Modifica JSON**, **Copiare JSON** e **Impostazioni di layout**. **Generazione automatica del modello** e **Usa il modello predefinito** sostituiscono un layout personalizzato, quindi controlla prima il tipo di documento e il layout selezionati. **Modifica JSON** serve per la configurazione avanzata e va usato solo quando conosci il formato del modello.
-* Se esci dalla pagina con modifiche non salvate, DocBits chiede se salvarle o scartarle.
+## Conoscere le aree dell'editor
 
-## Trovare gli elementi: Struttura, Campi, Elementi
+A sinistra puoi passare tra **Elementi**, **Proprietà** e la configurazione generale, rappresentata da un ingranaggio.
 
-Il lato sinistro ha tre schede:
+* La scheda **Elementi** contiene le sezioni **Gruppi**, **Campi** ed **Elementi di forma**. Apri ogni sezione per consultare i gruppi, i campi e i controlli disponibili.
+* L'area centrale mostra i gruppi e i campi del layout. I gruppi permettono di organizzare campi correlati.
+* A destra si trova la vista del documento di esempio, dove puoi consultare il documento e regolare lo zoom.
 
-| Scheda | A cosa serve |
-| --- | --- |
-| **Struttura** | Visualizza il layout come un albero. I gruppi e i relativi campi sono elencati nell'ordine in cui compaiono sull'area di lavoro, con il numero di campi posizionati e disponibili. |
-| **Campi** | Tutti i campi configurati per il tipo di documento, raggruppati per gruppo di campi e compressi per impostazione predefinita. Il filtro passa tra i campi **Tutti**, **Inutilizzato** e **Nascosto**, e sotto l'etichetta del campo viene mostrato il nome tecnico del campo. |
-| **Elementi** | Controlli di presentazione e interazione come Testo, Etichetta, Casella di controllo, separatori, tabelle, pulsanti e sottogruppi. |
+Trascina un elemento dalla sezione corrispondente a sinistra nell'area del layout per aggiungere un gruppo, un campo o un controllo del modulo.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-structure-it.png" alt="La scheda Struttura del Costruttore di Layout con i gruppi Dettagli fattura, Dettagli del pagamento, Ordine di acquisto e Dettagli di consegna espansi nei rispettivi campi"><figcaption><p>La scheda Struttura mostra il layout costruito come un albero di gruppi e campi.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-it.png" alt="I campi Numero di fattura e Data del gruppo di esempio. In questo layout, ogni campo occupa il 50 % della larghezza del gruppo."><figcaption><p>I campi Numero di fattura e Data del gruppo di esempio. In questo layout, ogni campo occupa il 50 % della larghezza del gruppo.</p></figcaption></figure>
 
-Seleziona un elemento per aggiungerlo, oppure trascinalo nell'area di lavoro. Il titolo di un gruppo indica alla persona che convalida il documento cosa appartiene a quella sezione. Crea o rinomina i campi riutilizzabili del documento prima in [Tipi di Documento](README.md).
-
-## Lavorare sull'area di lavoro
-
-* **Layout principale** mostra il layout del documento stesso. **Tabella** mostra il layout a tabella usato per le voci di riga.
-* **Documento** apre o chiude il documento di esempio accanto all'area di lavoro, così puoi confrontare il layout con un documento reale.
-* I gruppi sono disegnati come schede; i campi all'interno di un gruppo possono essere disposti su righe e avere larghezze diverse.
+Configura i campi riutilizzabili in [Tipi di Documento](README.md). I campi disponibili dipendono dal tipo di documento selezionato e dalla relativa configurazione.
 
 ## Modificare le proprietà di un elemento
 
-Seleziona un elemento o un gruppo sull'area di lavoro. **Proprietà** a destra è sempre visibile ed è organizzato in sezioni:
+Seleziona un gruppo o un campo nell'area del layout e apri **Proprietà** a sinistra. Le opzioni dipendono dall'elemento selezionato e comprendono, ad esempio, l'etichetta, il nome tecnico, la larghezza e il comportamento.
 
-* **Visualizzazione** – etichetta, nome campo, posizione dell'etichetta e larghezza dell'elemento.
-* **Comportamento** – sola lettura, nascosto e indice delle schede.
-* **Valori ed elenchi** – i valori offerti per l'elemento.
-* **Automazione** – regole che compilano o modificano l'elemento.
-* **Bordi e spaziatura** – l'aspetto dell'elemento.
+<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-it.png" alt="Proprietà del campo selezionato: Etichetta, Nome del campo e Larghezza dell&#x27;elemento in percentuale."><figcaption><p>Proprietà del campo selezionato: Etichetta, Nome del campo e Larghezza dell&#x27;elemento in percentuale.</p></figcaption></figure>
 
-Per la larghezza, scegli uno dei valori preimpostati (25, 33, 50, 66, 75 o 100 per cento) invece di digitare un valore; controlla il risultato sull'area di lavoro. Quali sezioni e opzioni compaiono dipende dall'elemento selezionato. Per maggiori dettagli, vedi [Configurazione delle proprietà dei campi](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+Nell'esempio, **Etichetta** contiene «Numero della fattura», mentre il campo nell'area centrale mostra **Numero di fattura**.
+
+Per i campi predefiniti, l'etichetta e il nome tecnico potrebbero non essere modificabili. A seconda del tipo di elemento, puoi anche configurare la modalità di sola lettura, la visibilità, l'ordine di tabulazione, gli elenchi di valori e l'esecuzione di un workflow o di uno script quando il valore cambia. Le opzioni dei gruppi e dei campi sono diverse.
+
+Dopo aver modificato le proprietà, verifica il risultato nell'area del layout. La larghezza viene inserita come percentuale tramite un controllo numerico; i gruppi e i relativi campi possono avere larghezze diverse. Vedi [Configurazione delle proprietà dei campi](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+
+## Modelli e JSON
+
+Oltre al salvataggio del layout, la barra delle azioni offre funzioni per generare un modello, applicare il layout predefinito ai layout per origine, usare il modello predefinito e modificare JSON. La disponibilità dipende dall'editor aperto.
+
+Generare o applicare un modello può sostituire il layout personalizzato. Verifica prima il tipo di documento, l'origine e il layout attuale. **Modifica JSON** è destinato alla configurazione avanzata e richiede la conoscenza del formato del modello. La funzione per copiare la configurazione è disponibile nella finestra di dialogo JSON.
 
 ## Rivedere e salvare
 
-Disponi i gruppi e i campi, controlla il layout sull'area di lavoro e usa **Salva** nell'intestazione quando il risultato è corretto. Per i layout specifici di un'origine, vedi [Layout per origine](origin-layouts.md).
+Organizza i gruppi e i campi e verifica il risultato nell'area del layout. Quando è corretto, usa **Salva** nella barra delle azioni. Per i layout specifici di un'origine, vedi [Layout per origine](origin-layouts.md).
 
 {% hint style="info" %}
-Le schermate mostrano impostazioni sintetiche nell'organizzazione di test di DocBits con l'italiano selezionato nell'applicazione. Durante la loro acquisizione non è stato salvato né sostituito alcun layout.
+Le illustrazioni utilizzano un esempio semplificato di layout di fattura. I nomi dei campi e le opzioni disponibili dipendono dalla configurazione.
 {% endhint %}

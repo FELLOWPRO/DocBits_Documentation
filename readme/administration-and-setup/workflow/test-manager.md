@@ -2,9 +2,11 @@
 
 **测试管理器**允许您为工作流保存可重复使用的**测试场景**并批量运行，以便在更改工作流后确认其行为仍然正确。它适用于标准工作流和高级工作流。
 
-从 **Workflow Dashboard → Test Manager List** 打开。
+从 **工作流仪表板 → 测试经理列表** 打开测试管理器。使用 **搜索工作流测试场景** 查找场景，或使用 **清除** 清除筛选条件。
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="测试管理器列表，显示测试场景、状态和 Run All Tests"><figcaption><p>测试管理器列表 — 每个已保存的场景都会显示通过或失败结果。</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-test-manager-search-columns-current-zh.png" alt="测试管理器列表局部视图：搜索栏、名称与细节列。场景名称等私有值已隐藏；状态图标来自已有记录。"><figcaption><p>测试管理器列表局部视图：搜索栏、名称与细节列。场景名称等私有值已隐藏；状态图标来自已有记录。</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-test-manager-toolbar-current-zh.png" alt="测试管理器操作：运行所有测试与添加测试场景。"><figcaption><p>测试管理器操作：运行所有测试与添加测试场景。</p></figcaption></figure>
 
 ## 什么是测试场景
 

@@ -10,10 +10,14 @@ DocBits 中的脚本使用 Python 编写。它们与文档字段和元数据交�
 
 #### 关键函数
 
-* `get_field_value(fields_dict, field_name, default=None)`：获取指定字段的值。
-* `set_field_value(fields_dict, field_name, value)`：设置指定字段的值。
-* `create_new_field(field_name, value)`：创建具有指定名称和值的新字段。
-* `format_decimal_to_locale(value, locale)`：根据指定区域设置格式化十进制值。
+每个脚本都会以 `document_data` 的名称接收文档。请将它作为第一个参数传递给字段函数。完整参考请参见 [字段函数](field-functions.md) 页面。
+
+* `get_field_value(document_data, field_name, default_value=None, is_clean=False)`：读取字段的值。
+* `set_field_value(document_data, field_name, value)`：向字段写入值；如果字段不存在，则创建该字段。
+* `set_date_value(document_data, field_name, value, add_days=0, skip_weekend=False)`：写入日期，可选择增加天数并跳过周末。
+* `set_amount_value(document_data, field_name, value)`：按文档区域设置的格式写入金额。
+* `set_field_as_invalid(document_data, field_name, message, code=None)`：将字段标记为无效，并向用户显示该消息。
+* `set_is_required(document_data, field_name, value)`：将字段设为必填或取消必填。
 
 ### 脚本示例
 
@@ -30,10 +34,10 @@ currency_map = {
     "$": "USD",
     "£": "GBP"
 }
-currency_value = get_field_value(fields_dict, "currency", None)
+currency_value = get_field_value(document_data, "currency", None)
 if currency_value:
     currency_value = currency_value.upper()
     if currency_value in currency_map:
         currency_value = currency_map[currency_value]
-    set_field_value(fields_dict, "currency", currency_value)
+    set_field_value(document_data, "currency", currency_value)
 ```

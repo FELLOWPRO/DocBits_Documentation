@@ -81,9 +81,9 @@ Lecture visuelle de cet exemple : [condition simple](#schema-condition-simple).
 
 ```
 IF Amount > €10,000:
-  → Assign to Director
+  → Affecter au directeur
 ELSE:
-  → Assign to Manager
+  → Affecter au responsable
 ```
 
 </details>
@@ -117,9 +117,9 @@ Lecture visuelle de cet exemple : [critères ET et OU](#schema-criteres-et-et-ou
 
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
-  → Assign to IT Director + CFO (dual approval)
+  → Affecter au directeur informatique + CFO (double approbation)
 ELSE:
-  → Standard approval workflow
+  → Flux d’approbation habituel
 ```
 
 </details>
@@ -148,10 +148,10 @@ Lecture visuelle de cet exemple : [critères ET et OU](#schema-criteres-et-et-ou
 <summary>Exemple OU : montant, blocage ou urgence</summary>
 
 ```
-IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
-  → Escalate immediately
+IF Amount > €50,000 OR Supplier is "Blocked" OR Document has l’indicateur "Urgent":
+  → Faire remonter immédiatement
 ELSE:
-  → Standard processing
+  → Traitement habituel
 ```
 
 </details>
@@ -190,14 +190,14 @@ Lecture visuelle de cet exemple : [décisions imbriquées](#schema-decisions-imb
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
-    → High-value invoice workflow
+    → Flux de factures de montant élevé
   ELSE:
-    → Standard invoice workflow
+    → Flux habituel de factures
 ELSE IF Document_Type = "Credit Note":
   IF Amount > €5,000:
-    → High-value credit workflow
+    → Flux d’avoirs de montant élevé
   ELSE:
-    → Standard credit workflow
+    → Flux habituel d’avoirs
 ```
 
 </details>
@@ -234,67 +234,67 @@ Lecture visuelle de cet exemple : [vue générale](#schema-vue-generale), [tranc
 <summary>Pseudocode de la matrice complète</summary>
 
 ```
-PRECHECK: Critical Exceptions
+CONTRÔLE PRÉALABLE : Exceptions critiques
   IF Critical_Exception = TRUE OR Supplier_Status = "BLOCKED":
-    → Stop & handle exception before routing
+    → Arrêter et traiter l’exception avant l’orientation
 
-STEP 1: Check for PO Mismatch
+ÉTAPE 1 : Vérifier les écarts avec la commande
   IF PO_Match_Status = "FAIL":
-    → Route to Procurement for PO resolution
-    → After resolution, continue below as configured
+    → Orienter vers les achats pour résoudre l’écart avec la commande
+    → Après résolution, continuer ci-dessous selon la configuration
 
-STEP 1b: Check Document Type
+ÉTAPE 1b : Vérifier le type de document
   IF Document_Type = "Credit Note":
-    → Configured Credit Note workflow
+    → Flux configuré pour les avoirs
   ELSE IF Document_Type is not "Invoice":
-    → Configured workflow for this document type
+    → Flux configuré pour ce type de document
   ELSE:
-    → Continue below
+    → Continuer ci-dessous
 
-STEP 2: Check Urgent Flag
+ÉTAPE 2 : Vérifier l’indicateur d’urgence
   IF Urgent_Flag = TRUE:
-    → Skip amount checks
-    → Direct to highest approver
-    → Set priority = URGENT
-    → 1-day deadline
+    → Ignorer les contrôles de montant
+    → Adresser à l’approbateur de niveau le plus élevé
+    → Définir la priorité = URGENT
+    → Délai de 1 jour
 
-STEP 3: Amount-Based Routing (Invoice, if not urgent)
-  IF Amount is missing or invalid:
-    → Manual review (explicit example policy)
-    → Do not enter amount bands
+ÉTAPE 3 : Orientation par montant (Invoice, hors urgence)
+  IF Amount est absent ou invalide:
+    → Vérification manuelle (politique explicite de l’exemple)
+    → Ne pas entrer dans les tranches de montant
 
   ELSE IF Amount < €1,000:
-    → Auto-approve
-    → Export immediately
+    → Approuver automatiquement
+    → Exporter immédiatement
 
   ELSE IF Amount < €10,000:
-    → Create task for Manager
-    → Priority: Medium
-    → Deadline: 3 days
+    → Créer une tâche pour le responsable
+    → Priorité : Moyenne
+    → Délai : 3 jours
 
   ELSE IF Amount < €50,000:
-    CHECK Supplier Status and Risk:
+    VÉRIFIER le statut et le risque du fournisseur:
       IF Supplier_Status = "BLOCKED":
-        → Stop & handle exception
-      ELSE IF Supplier_Age < 180 days (New):
-        → Create task for Director (Task 1)
-        → Wait for positive Director approval before creating CFO task (Task 2)
-        → Wait for positive CFO approval before continuing
-        → Any rejection: Stop chain & handle rejection as configured
-        → Pending: Do not continue
-        → Priority: High
-        → Deadline: 2 days each
+        → Arrêter et traiter l’exception
+      ELSE IF Supplier_Age < 180 jours (nouveau):
+        → Créer une tâche pour le directeur (tâche 1)
+        → Attendre l’approbation positive du directeur avant de créer la tâche du CFO (tâche 2)
+        → Attendre l’approbation positive du CFO avant de continuer
+        → Tout rejet : arrêter la chaîne et traiter le rejet selon la configuration
+        → En attente : ne pas continuer
+        → Priorité : Élevée
+        → Délai : 2 jours chacune
       ELSE IF Supplier_Risk_Rating = "HIGH":
-        → Additional checks and Manager pre-approval
-        → Wait for positive Manager approval before Director approval
-        → Pending or rejection: Do not continue the approval chain
-      ELSE (Existing Supplier):
-        → Create task for Director only
-        → Priority: High
-        → Deadline: 2 days
+        → Contrôles supplémentaires et approbation préalable du responsable
+        → Attendre l’approbation positive du responsable avant celle du directeur
+        → En attente ou rejet : ne pas poursuivre la chaîne d’approbation
+      ELSE (fournisseur existant):
+        → Créer une tâche pour le directeur uniquement
+        → Priorité : Élevée
+        → Délai : 2 jours
 
   ELSE (Amount ≥ €50,000):
-    → Executive approval path (see Path D)
+    → Circuit d’approbation de la direction (voir le circuit D)
 ```
 
 </details>
@@ -393,16 +393,16 @@ Lecture visuelle de cet exemple : [types documentaires](#schema-types-documentai
 Workflow: "Invoice Processing"
 
 IF Document_Type = "Invoice":
-  → Continue to Level 2
+  → Continuer au niveau 2
 
 ELSE IF Document_Type = "Credit Note":
-  → Branch to "Credit Note Processing"
+  → Brancher vers "Credit Note Processing"
 
 ELSE IF Document_Type = "Receipt":
-  → Branch to "Receipt Processing"
+  → Brancher vers "Receipt Processing"
 
 ELSE:
-  → Route to "Unknown Document Type" handling
+  → Orienter vers le traitement "Unknown Document Type"
 ```
 
 </details>
@@ -416,18 +416,18 @@ Lecture visuelle de cet exemple : [tranches de montant](#schema-tranches-de-mont
 
 ```
 IF Amount < €1,000:
-  → Branch to "Auto-Approve Path"
+  → Brancher vers "Auto-Approve Path"
 
 ELSE IF Amount < €10,000:
-  → Branch to "Manager Approval Path"
+  → Brancher vers "Manager Approval Path"
 
 ELSE IF Amount < €50,000:
-  → Branch to "Director Approval Path"
-  → Check Level 3 conditions
+  → Brancher vers "Director Approval Path"
+  → Vérifier les conditions du niveau 3
 
 ELSE (Amount ≥ €50,000):
-  → Branch to "Executive Approval Path"
-  → Dual or triple approval required
+  → Brancher vers "Executive Approval Path"
+  → Double ou triple approbation requise
 ```
 
 </details>
@@ -443,23 +443,23 @@ ELSE (Amount ≥ €50,000):
 
 ```
 IF Supplier_Status = "BLOCKED":
-  → STOP processing
-  → Create urgent escalation task
-  → Notify procurement and finance
+  → ARRÊTER le traitement
+  → Créer une tâche urgente de remontée
+  → Notifier les achats et les finances
 
-ELSE IF Supplier_Age < 180 days (New):
-  → Additional approval required
-  → Add CFO to approval chain
-  → Enhanced verification
+ELSE IF Supplier_Age < 180 jours (nouveau):
+  → Approbation supplémentaire requise
+  → Ajouter le CFO à la chaîne d’approbation
+  → Vérification renforcée
 
 ELSE IF Supplier_Risk_Rating = "HIGH":
-  → Additional checks required
-  → Fraud detection review
-  → Manager pre-approval; wait for positive approval
-  → Director approval; wait for positive approval
+  → Contrôles supplémentaires requis
+  → Vérification pour détecter la fraude
+  → Approbation préalable du responsable ; attendre une approbation positive
+  → Approbation du directeur ; attendre une approbation positive
 
 ELSE:
-  → Standard high-value workflow
+  → Flux habituel de montant élevé
 ```
 
 </details>
@@ -479,11 +479,11 @@ ELSE:
 
 ```
 Actions:
-1. Set field "Approval_Type" = "AUTO"
-2. Set field "Approval_Level" = "0"
+1. Définir le champ "Approval_Type" = "AUTO"
+2. Définir le champ "Approval_Level" = "0"
 3. ACTION_APPROVE_DOCUMENT
-4. Export to ERP
-5. Send confirmation email (optional)
+4. Exporter vers l’ERP
+5. Envoyer un courriel de confirmation (facultatif)
 ```
 
 </details>
@@ -499,17 +499,17 @@ Actions:
 
 ```
 Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "1"
+1. Définir le champ "Approval_Type" = "MANUAL"
+2. Définir le champ "Approval_Level" = "1"
 3. tasks_create:
    - Title: "Approuver la facture {{DOCUMENT_NUMBER}}"
    - Assign to: Department_Manager
    - Priority: Medium
-   - Deadline: 3 days
-4. Send email notification to manager
-5. Wait for task completion
-6. If approved: Export to ERP
-7. If rejected: Return to supplier
+   - Deadline: 3 jours
+4. Envoyer une notification par courriel au responsable
+5. Attendre la fin de la tâche
+6. Si approuvé : exporter vers l’ERP
+7. Si rejeté : retourner au fournisseur
 ```
 
 </details>
@@ -523,29 +523,29 @@ Lecture visuelle de cet exemple : [analyse du fournisseur](#schema-analyse-du-fo
 
 ```
 Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "2"
-3. Check Supplier_Age and Supplier_Risk_Rating:
-   IF New (< 180 days):
-     - Create Task 1: Director approval
-     - Wait for positive Task 1 approval before creating Task 2: CFO approval
-     - Wait for positive Task 2 approval before continuing
-     - Pending: Do not continue
-     - Any rejection: Stop chain & handle rejection as configured
-     - Both positive approvals required
+1. Définir le champ "Approval_Type" = "MANUAL"
+2. Définir le champ "Approval_Level" = "2"
+3. Vérifier Supplier_Age et Supplier_Risk_Rating:
+   IF New (< 180 jours):
+     - Créer la tâche 1 : approbation du directeur
+     - Attendre l’approbation positive de la tâche 1 avant de créer la tâche 2 : approbation du CFO
+     - Attendre l’approbation positive de la tâche 2 avant de continuer
+     - En attente : ne pas continuer
+     - Tout rejet : arrêter la chaîne et traiter le rejet selon la configuration
+     - Les deux approbations positives sont requises
    ELSE IF Supplier_Risk_Rating = "HIGH":
-     - Additional risk checks and Manager pre-approval
-     - Wait for positive Manager approval before Director approval
-     - Wait for positive Director approval before export
-     - Pending or rejection: Stop progression and handle result as configured
+     - Contrôles de risque supplémentaires et approbation préalable du responsable
+     - Attendre l’approbation positive du responsable avant celle du directeur
+     - Attendre l’approbation positive du directeur avant l’export
+     - En attente ou rejet : arrêter la progression et traiter le résultat selon la configuration
    ELSE:
-     - Create Task: Director approval only
-4. Priority: High
-5. Deadline: 2 days for Path C approval tasks; configure risk-check deadlines separately
-6. Send email notifications
-7. Wait for completion
-8. If all approved: Export
-9. If any rejected: Return to supplier
+     - Créer une tâche : approbation du directeur uniquement
+4. Priorité : Élevée
+5. Délai : 2 jours pour les tâches d’approbation du circuit C ; configurer séparément les délais des contrôles de risque
+6. Envoyer les notifications par courriel
+7. Attendre leur achèvement
+8. Si tout est approuvé : exporter
+9. Si l’une est rejetée : retourner au fournisseur
 ```
 
 </details>
@@ -567,19 +567,19 @@ Le traitement d’un refus peut, selon votre configuration, renvoyer le document
 
 ```
 Actions:
-1. Set field "Approval_Type" = "EXECUTIVE"
-2. Set field "Approval_Level" = "3"
-3. Sequential approvals:
-   - Task 1: Finance Director
-   - Task 2: CFO
-   - Task 3: CEO (if > €100,000)
-4. Priority: Urgent
-5. Deadline: 1 day each
-6. Send urgent notifications
-7. Executive dashboard update
-8. Wait for all approvals
-9. If all approved: Export
-10. If any rejected: Executive review meeting
+1. Définir le champ "Approval_Type" = "EXECUTIVE"
+2. Définir le champ "Approval_Level" = "3"
+3. Approbations successives:
+   - Tâche 1 : directeur des finances
+   - Tâche 2 : CFO
+   - Tâche 3 : CEO (si > €100,000)
+4. Priorité : Urgente
+5. Délai : 1 jour chacune
+6. Envoyer les notifications urgentes
+7. Mettre à jour le tableau de bord de la direction
+8. Attendre toutes les approbations
+9. Si tout est approuvé : exporter
+10. Si l’une est rejetée : réunion de révision de la direction
 ```
 
 </details>
@@ -602,22 +602,22 @@ Les modèles suivants sont des variantes indépendantes. Le score, les seuils pa
 <summary>Calcul du score de risque et ses intervalles</summary>
 
 ```
-Risk Score Calculation:
+Calcul du score de risque:
   Score = 0
 
   IF Amount > €50,000: Score += 30
-  IF Supplier_Age < 180 days: Score += 25
+  IF Supplier_Age < 180 jours: Score += 25
   IF PO_Variance > 10%: Score += 20
   IF Supplier_Country = "High Risk Country": Score += 15
-  IF Payment_Terms < 30 days: Score += 10
+  IF Payment_Terms < 30 jours: Score += 10
 
-  Total Score Range: 0-100
+  Plage du score total : 0-100
 
-Routing:
-  IF Score < 20: Auto-approve
-  IF Score 20-50: Manager approval
-  IF Score 51-75: Director approval
-  IF Score > 75: Executive approval + fraud check
+Orientation:
+  IF Score < 20: approbation automatique
+  IF Score 20-50: approbation du responsable
+  IF Score 51-75: approbation du directeur
+  IF Score > 75: approbation de la direction + contrôle de fraude
 ```
 
 </details>
@@ -630,10 +630,10 @@ Lecture visuelle de cet exemple : [score de risque](#schema-score-de-risque).
 <summary>Mise en œuvre illustrative du score</summary>
 
 ```
-1. ACTION_CALCULATE_FIELD: Calculate risk score
-2. ACTION_SET_FIELD_TO_NUMBER: Store score
-3. CONDITION_DOC_FIELD_NUMBER: Check score thresholds
-4. Route based on score
+1. ACTION_CALCULATE_FIELD: calculer le score de risque
+2. ACTION_SET_FIELD_TO_NUMBER: enregistrer le score
+3. CONDITION_DOC_FIELD_NUMBER: vérifier les seuils du score
+4. Orienter selon le score
 ```
 
 </details>
@@ -652,23 +652,23 @@ Lecture visuelle de cet exemple : [score de risque](#schema-score-de-risque).
 <summary>Matrice de seuils par service</summary>
 
 ```
-Department Matrix:
+Matrice par département:
 
-  IT Department:
-    Amount < €5,000: IT Manager
-    Amount ≥ €5,000: IT Director + CIO
+  Département informatique:
+    Amount < €5,000: responsable informatique
+    Amount ≥ €5,000: directeur informatique + CIO
 
-  Finance Department:
-    Amount < €10,000: Finance Manager
+  Département des finances:
+    Amount < €10,000: responsable financier
     Amount ≥ €10,000: CFO
 
-  Operations Department:
-    Amount < €3,000: Operations Manager
+  Département des opérations:
+    Amount < €3,000: responsable des opérations
     Amount ≥ €3,000: COO
 
-  General:
-    Amount < €2,000: Department Manager
-    Amount ≥ €2,000: Department Director
+  Cas général:
+    Amount < €2,000: responsable du département
+    Amount ≥ €2,000: directeur du département
 ```
 
 </details>
@@ -681,10 +681,10 @@ Lecture visuelle de cet exemple : [matrice par service](#schema-matrice-par-serv
 <summary>Mise en œuvre illustrative de la matrice par service</summary>
 
 ```
-1. Check Department field
-2. Based on department, check amount threshold
-3. Route to appropriate approver
-4. Different thresholds per department
+1. Vérifier le champ Department
+2. Selon le département, vérifier le seuil de montant
+3. Orienter vers l’approbateur approprié
+4. Seuils différents selon le département
 ```
 
 </details>
@@ -703,35 +703,35 @@ Lecture visuelle de cet exemple : [matrice par service](#schema-matrice-par-serv
 <summary>Trois variantes temporelles indépendantes</summary>
 
 ```
-Month-End Processing (Last 3 days of month):
-  IF Today in last 3 days of month:
-    - Priority: URGENT
-    - Deadline: 1 day
-    - Approver: On-duty finance manager
-    - Expedited workflow
+Traitement de fin de mois (3 derniers jours du mois):
+  IF Today se situe dans les 3 derniers jours du mois:
+    - Priorité : URGENT
+    - Délai : 1 jour
+    - Approbateur : responsable financier de permanence
+    - Flux accéléré
   ELSE:
-    - Standard priority
-    - Standard deadline
-    - Standard workflow
+    - Priorité habituelle
+    - Délai habituel
+    - Flux habituel
 
-Business Hours vs After Hours:
-  IF Time between 9 AM - 5 PM:
-    - Assign to current shift
+Heures de travail et hors horaires:
+  IF Time se situe entre 9 AM - 5 PM:
+    - Affecter à l’équipe en service
   ELSE:
-    - Queue for next business day
-    - OR route to on-call approver
+    - Mettre en attente pour le jour ouvré suivant
+    - OR orienter vers l’approbateur de permanence
 
-Fiscal Period (independent illustrative policy):
-  IF Document_Date is missing or invalid:
-    - Handle invalid or unknown date as configured
+Période comptable (politique illustrative indépendante):
+  IF Document_Date est absent ou invalide:
+    - Traiter la date invalide ou inconnue selon la configuration
   ELSE IF Document_Date in Current_Fiscal_Period:
-    - Standard processing
-  ELSE IF Document_Date in any Fiscal_Period before Current_Fiscal_Period:
-    - Flag as "Prior Period"
-    - Require accounting approval
-    - Additional checks
+    - Traitement habituel
+  ELSE IF Document_Date in toute Fiscal_Period before Current_Fiscal_Period:
+    - Marquer comme "Prior Period"
+    - Exiger une approbation comptable
+    - Contrôles supplémentaires
   ELSE:
-    - Future or other fiscal period: Handle as configured
+    - Période future ou autre : traiter selon la configuration
 ```
 
 </details>
@@ -750,34 +750,34 @@ Fiscal Period (independent illustrative policy):
 <summary>Politique de gravité des exceptions</summary>
 
 ```
-Exception Detection:
+Détection des exceptions:
 
-  No Exception:
-    → Standard workflow
+  Aucune exception:
+    → Flux habituel
 
-  Minor Exception (Auto-fixable):
-    → Auto-correct
-    → Log correction
-    → Continue standard workflow
+  Exception mineure (corrigeable automatiquement):
+    → Corriger automatiquement
+    → Journaliser la correction
+    → Continuer le flux habituel
 
-  Medium Exception (Needs review):
-    → Create review task
-    → Flag document
-    → After fix: Continue workflow
+  Exception moyenne (nécessite une révision):
+    → Créer une tâche de révision
+    → Marquer le document
+    → Après correction : continuer le flux
 
-  Major Exception (Requires escalation):
-    → Stop processing
-    → Create urgent task
-    → Notify multiple levels
-    → Manual intervention required
+  Exception majeure (nécessite une remontée):
+    → Arrêter le traitement
+    → Créer une tâche urgente
+    → Notifier plusieurs niveaux
+    → Intervention manuelle requise
 
-Exception Types:
-  - Missing required field
-  - Invalid field value
-  - PO mismatch
-  - Duplicate invoice
-  - Supplier mismatch
-  - Amount discrepancy
+Types d’exception:
+  - Champ obligatoire absent
+  - Valeur de champ invalide
+  - Écart avec la commande
+  - Facture en double
+  - Écart de fournisseur
+  - Écart de montant
 ```
 
 </details>
@@ -794,144 +794,144 @@ Les explications visuelles du même exemple sont : [vue générale](#schema-vue-
 <summary>Consulter l’arbre textuel détaillé de l’exemple complet</summary>
 
 ```
-INVOICE ARRIVES
+LA FACTURE ARRIVE
 │
-├─ LEVEL 1: EXCEPTION CHECK
+├─ NIVEAU 1 : CONTRÔLE DES EXCEPTIONS
 │  │
-│  ├─ Critical exception or BLOCKED supplier?
-│  │  (Criticality must be configured; not every PO mismatch is critical.)
+│  ├─ Exception critique ou fournisseur BLOCKED ?
+│  │  (La gravité doit être configurée ; tout écart avec la commande n’est pas critique.)
 │  │  │
-│  │  ├─ YES → Stop & Escalate
-│  │  │        Create urgent task
-│  │  │        Notify admin
-│  │  │        → END (Exception Handling)
+│  │  ├─ OUI → Arrêter et faire remonter
+│  │  │        Créer une tâche urgente
+│  │  │        Notifier l’administrateur
+│  │  │        → FIN (traitement des exceptions)
 │  │  │
-│  │  └─ NO → Continue to Level 2
+│  │  └─ NON → Continuer au niveau 2
 │
-├─ LEVEL 2: DOCUMENT TYPE
+├─ NIVEAU 2 : TYPE DE DOCUMENT
 │  │
-│  ├─ Type = Invoice?
-│  │  └─ YES → Continue to Level 3
+│  ├─ Type = Invoice ?
+│  │  └─ OUI → Continuer au niveau 3
 │  │
-│  ├─ Type = Credit Note?
-│  │  └─ YES → Branch to Credit Note workflow
-│  │           → END (Credit Note Path)
+│  ├─ Type = Credit Note ?
+│  │  └─ OUI → Brancher vers le flux des avoirs
+│  │           → FIN (circuit des avoirs)
 │  │
-│  └─ Other Type?
-│     └─ YES → Branch to appropriate workflow
-│              → END (Other Type Path)
+│  └─ Autre type ?
+│     └─ OUI → Brancher vers le flux approprié
+│              → FIN (circuit d’un autre type)
 │
-├─ LEVEL 3: URGENCY CHECK (for Invoices)
+├─ NIVEAU 3 : CONTRÔLE D’URGENCE (pour les factures)
 │  │
-│  ├─ Urgent Flag = TRUE?
+│  ├─ Urgent Flag = TRUE ?
 │  │  │
-│  │  ├─ YES → Expedited Workflow
-│  │  │        Priority: URGENT
-│  │  │        Deadline: 1 day
-│  │  │        Assign to: Senior Approver
-│  │  │        → END (Expedited Path)
+│  │  ├─ OUI → Flux accéléré
+│  │  │        Priorité : URGENT
+│  │  │        Délai : 1 jour
+│  │  │        Affecter à : approbateur de niveau le plus élevé
+│  │  │        → FIN (circuit accéléré)
 │  │  │
-│  │  └─ NO → Continue to Level 4
+│  │  └─ NON → Continuer au niveau 4
 │
-├─ LEVEL 4: AMOUNT THRESHOLDS
+├─ NIVEAU 4 : SEUILS DE MONTANT
 │  │
-│  ├─ Amount missing or invalid?
-│  │  ├─ YES → Manual review (explicit example policy)
-│  │  └─ NO → Continue to amount thresholds below
+│  ├─ Amount absent ou invalide ?
+│  │  ├─ OUI → Vérification manuelle (politique explicite de l’exemple)
+│  │  └─ NON → Continuer aux seuils de montant ci-dessous
 │  │
-│  ├─ Amount < €1,000?
+│  ├─ Amount < €1,000 ?
 │  │  │
-│  │  ├─ YES → AUTO-APPROVE PATH
-│  │  │        Set Approval_Type = "AUTO"
-│  │  │        Approve immediately
-│  │  │        Export to ERP
-│  │  │        → END (Auto-Approved)
+│  │  ├─ OUI → CIRCUIT D’APPROBATION AUTOMATIQUE
+│  │  │        Définir Approval_Type = "AUTO"
+│  │  │        Approuver immédiatement
+│  │  │        Exporter vers l’ERP
+│  │  │        → FIN (approuvé automatiquement)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NON → Continuer
 │  │
-│  ├─ Amount < €10,000?
+│  ├─ Amount < €10,000 ?
 │  │  │
-│  │  ├─ YES → MANAGER APPROVAL PATH
-│  │  │        Create task for Manager
-│  │  │        Priority: Medium
-│  │  │        Deadline: 3 days
-│  │  │        → WAIT for result; pending must not continue
-│  │  │           → Approved: Continue configured processing
-│  │  │           → Rejected: Stop chain & handle rejection as configured
+│  │  ├─ OUI → CIRCUIT D’APPROBATION DU RESPONSABLE
+│  │  │        Créer une tâche pour le responsable
+│  │  │        Priorité : Moyenne
+│  │  │        Délai : 3 jours
+│  │  │        → ATTENDRE le résultat ; ne pas continuer s’il est en attente
+│  │  │           → Approuvé : continuer le traitement configuré
+│  │  │           → Rejeté : arrêter la chaîne et traiter le rejet selon la configuration
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NON → Continuer
 │  │
-│  ├─ Amount < €50,000?
+│  ├─ Amount < €50,000 ?
 │  │  │
-│  │  ├─ YES → DIRECTOR APPROVAL PATH
-│  │  │        Continue to Level 5 (Supplier Check)
+│  │  ├─ OUI → CIRCUIT D’APPROBATION DU DIRECTEUR
+│  │  │        Continuer au niveau 5 (contrôle du fournisseur)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NON → Continuer
 │  │
-│  └─ Amount ≥ €50,000?
+│  └─ Amount ≥ €50,000 ?
 │     │
-│     └─ YES → EXECUTIVE APPROVAL PATH
-│              Create sequential tasks:
-│              - Finance Director
+│     └─ OUI → CIRCUIT D’APPROBATION DE LA DIRECTION
+│              Créer les tâches successives:
+│              - Directeur des finances
 │              - CFO
-│              - CEO (if > €100,000)
-│              Priority: URGENT
-│              Deadline: 1 day each
-│              → WAIT for all required results
-│                 → All approved: Continue configured processing
-│                 → Pending: Do not continue
-│                 → Any rejection: Stop chain & handle rejection as configured
+│              - CEO (si > €100,000)
+│              Priorité : URGENT
+│              Délai : 1 jour chacune
+│              → ATTENDRE tous les résultats requis
+│                 → Tous approuvés : continuer le traitement configuré
+│                 → En attente : ne pas continuer
+│                 → Tout rejet : arrêter la chaîne et traiter le rejet selon la configuration
 │
-├─ LEVEL 5: SUPPLIER ANALYSIS (€10,000 ≤ Amount < €50,000)
+├─ NIVEAU 5 : ANALYSE DU FOURNISSEUR (€10,000 ≤ Amount < €50,000)
 │  │
-│  ├─ Supplier Status = "BLOCKED"?
+│  ├─ Supplier Status = "BLOCKED" ?
 │  │  │
-│  │  ├─ YES → BLOCK & ESCALATE
-│  │  │        Stop processing
-│  │  │        Create urgent task
-│  │  │        Notify procurement & finance
-│  │  │        → END (Blocked Supplier)
+│  │  ├─ OUI → BLOQUER ET FAIRE REMONTER
+│  │  │        Arrêter le traitement
+│  │  │        Créer une tâche urgente
+│  │  │        Notifier les achats et les finances
+│  │  │        → FIN (fournisseur bloqué)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NON → Continuer
 │  │
-│  ├─ Supplier Age < 180 days (New)?
+│  ├─ Supplier Age < 180 jours (nouveau) ?
 │  │  │
-│  │  ├─ YES → DUAL APPROVAL REQUIRED
-│  │  │        Task 1: Director (2 days)
-│  │  │        → WAIT for Task 1
-│  │  │           IF Task 1 Approved:
-│  │  │             Task 2: CFO (2 days)
-│  │  │             → WAIT for Task 2
-│  │  │                → Pending: Do not continue
-│  │  │                → Approved: Continue only after both positive approvals
-│  │  │                → Rejected: Stop chain & handle rejection as configured
-│  │  │           IF Task 1 Rejected:
-│  │  │             → Stop chain & handle rejection as configured
-│  │  │           IF Task 1 Pending:
-│  │  │             → Do not create Task 2 or continue
+│  │  ├─ OUI → DOUBLE APPROBATION REQUISE
+│  │  │        Tâche 1 : directeur (2 jours)
+│  │  │        → ATTENDRE la tâche 1
+│  │  │           IF tâche 1 approuvée:
+│  │  │             Tâche 2 : CFO (2 jours)
+│  │  │             → ATTENDRE la tâche 2
+│  │  │                → En attente : ne pas continuer
+│  │  │                → Approuvé : continuer seulement après les deux approbations positives
+│  │  │                → Rejeté : arrêter la chaîne et traiter le rejet selon la configuration
+│  │  │           IF tâche 1 rejetée:
+│  │  │             → Arrêter la chaîne et traiter le rejet selon la configuration
+│  │  │           IF tâche 1 en attente:
+│  │  │             → Ne pas créer la tâche 2 ni continuer
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NON → Continuer
 │  │
-│  ├─ Supplier Risk Rating = "HIGH"?
+│  ├─ Supplier Risk Rating = "HIGH" ?
 │  │  │
-│  │  ├─ YES → ENHANCED APPROVAL
-│  │  │        Additional fraud checks
-│  │  │        Manager pre-approval, then Director approval
-│  │  │        Wait for each positive result; pending or rejection must not continue
-│  │  │        Configure risk-check deadlines; Path C approval tasks indicate 2 days
-│  │  │        → END (Enhanced Path)
+│  │  ├─ OUI → APPROBATION RENFORCÉE
+│  │  │        Contrôles supplémentaires de fraude
+│  │  │        Approbation préalable du responsable, puis approbation du directeur
+│  │  │        Attendre chaque résultat positif ; ne pas continuer en cas d’attente ou de rejet
+│  │  │        Configurer les délais des contrôles de risque ; les tâches d’approbation du circuit C indiquent 2 jours
+│  │  │        → FIN (circuit renforcé)
 │  │  │
-│  │  └─ NO → STANDARD DIRECTOR APPROVAL
-│  │           Create task for Director
-│  │           Priority: High
-│  │           Deadline: 2 days
-│  │           → WAIT for result; pending must not continue
-│  │              → Approved: Continue configured processing
-│  │              → Rejected: Stop chain & handle rejection as configured
+│  │  └─ NON → APPROBATION HABITUELLE DU DIRECTEUR
+│  │           Créer une tâche pour le directeur
+│  │           Priorité : Élevée
+│  │           Délai : 2 jours
+│  │           → ATTENDRE le résultat ; ne pas continuer s’il est en attente
+│  │              → Approuvé : continuer le traitement configuré
+│  │              → Rejeté : arrêter la chaîne et traiter le rejet selon la configuration
 │  │
-│  └─ [Supplier analysis complete]
+│  └─ [Analyse du fournisseur terminée]
 │
-└─ [All decision levels processed]
+└─ [Tous les niveaux de décision traités]
 ```
 
 </details>
@@ -957,9 +957,9 @@ Lecture visuelle de cet exemple : [condition simple](#schema-condition-simple).
 
 ```
 IF Amount > 10000:
-  → High value path
+  → Circuit de montant élevé
 ELSE:
-  → Standard path
+  → Circuit habituel
 ```
 
 </details>
@@ -973,7 +973,7 @@ Lecture visuelle de cet exemple : [décisions maintenables](#schema-decisions-ma
 
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
-  → Complex path
+  → Circuit complexe
 ```
 
 </details>
@@ -988,10 +988,10 @@ Lecture visuelle de cet exemple : [décisions maintenables](#schema-decisions-ma
 <summary>Autre exemple : politique en quatre étapes</summary>
 
 ```
-Step 1: IF Amount > 10000: Continue, ELSE: Standard path
-Step 2: IF Supplier in allowed list: Continue, ELSE: Review
-Step 3: IF Status valid: Continue, ELSE: Reject
-Step 4: IF Department authorized: Approve, ELSE: Escalate
+Étape 1: IF Amount > 10000: continuer, ELSE: circuit habituel
+Étape 2: IF Supplier in liste autorisée: continuer, ELSE: réviser
+Étape 3: IF Status valide: continuer, ELSE: rejeter
+Étape 4: IF Department autorisé: approuver, ELSE: faire remonter
 ```
 
 </details>
@@ -1017,17 +1017,17 @@ Step 4: IF Department authorized: Approve, ELSE: Escalate
 <summary>Fiche illustrative de la règle BR-INV-001</summary>
 
 ```
-Decision Point: Amount Threshold Check
-Business Rule: BR-INV-001 (Invoice Approval Matrix)
-Purpose: Route invoices based on amount thresholds per company policy
-Thresholds:
-  < €1,000: Auto-approve (CFO approved threshold)
-  €1,000 ≤ Amount < €10,000: Manager approval (Delegation matrix)
-  €10,000 ≤ Amount < €50,000: Director approval with supplier checks
-  Amount ≥ €50,000: Executive approval
-Exceptions: Urgent invoices skip to highest level
-Updated: 2025-10-23
-Owner: Finance Department
+Point de décision : contrôle du seuil de montant
+Règle de gestion : BR-INV-001 (matrice d’approbation des factures)
+Objectif : orienter les factures selon les seuils de montant de la politique de l’entreprise
+Seuils:
+  < €1,000: approbation automatique (seuil approuvé par le CFO)
+  €1,000 ≤ Amount < €10,000: approbation du responsable (matrice de délégation)
+  €10,000 ≤ Amount < €50,000: approbation du directeur avec contrôles du fournisseur
+  Amount ≥ €50,000: approbation de la direction
+Exceptions : les factures urgentes passent directement au niveau le plus élevé
+Mise à jour : 2025-10-23
+Responsable : département des finances
 ```
 
 </details>
@@ -1082,22 +1082,22 @@ Ces résultats sont attendus et restent à vérifier dans votre configuration. R
 <summary>Exemple fictif de répartition et de durées</summary>
 
 ```
-Month: October 2025
-Total Invoices: 1,250
+Mois : octobre 2025
+Total des factures : 1250
 
-Decision Path Distribution:
-- Auto-approved (< €1k): 680 (54%)
-- Manager path (€1k ≤ Amount < €10k): 420 (34%)
-- Director path (€10k ≤ Amount < €50k): 120 (10%)
-- Executive path (Amount ≥ €50k): 30 (2%)
+Répartition des circuits de décision:
+- Approbation automatique (< €1k): 680 (54 %)
+- Circuit du responsable (€1k ≤ Amount < €10k): 420 (34 %)
+- Circuit du directeur (€10k ≤ Amount < €50k): 120 (10 %)
+- Circuit de la direction (Amount ≥ €50k): 30 (2 %)
 
-Processing Time:
-- Auto-approve: < 1 minute
-- Manager path: 2.5 days average
-- Director path: 1.8 days average
-- Executive path: 3.2 days average
+Temps de traitement:
+- Approbation automatique : < 1 minute
+- Circuit du responsable : 2,5 jours en moyenne
+- Circuit du directeur : 1,8 jours en moyenne
+- Circuit de la direction : 3,2 jours en moyenne
 
-Exceptions: 15 (1.2%)
+Exceptions : 15 (1,2 %)
 ```
 
 </details>

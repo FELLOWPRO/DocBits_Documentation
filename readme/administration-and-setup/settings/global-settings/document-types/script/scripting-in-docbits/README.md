@@ -1,5 +1,13 @@
 # DocBits 中的脚本编写
 
+## 视频教程：最重要的脚本函数
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/zh.mp4" %}
+DocBits 中最重要的脚本函数
+{% endembed %}
+
+视频在脚本编辑器中演示如何读取字段（`get_field_value`）、设置值（`set_field_value`）、计算到期日（`set_date_value`）、将字段标记为无效（`set_field_as_invalid`）并设为必填（`set_is_required`）。
+
 ## DocBits 脚本指南
 
 欢迎阅读 DocBits 脚本指南！在这里，您将学习如何使用脚本自动化和增强 DocBits 中的文档处理。脚本可用于在各种文档类型中自定义字段、转换数据和实现逻辑。

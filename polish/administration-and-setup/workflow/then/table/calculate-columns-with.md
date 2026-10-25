@@ -42,6 +42,8 @@ Kolumna `NET_AMOUNT` — Kwota Netto — była już obecna przed obliczeniem. W 
 
 Pomarańczowy wskaźnik przy kolumnie wyniku pozostaje widoczny. Zapisanie obliczenia nie potwierdza kompletności danych, zatwierdzenia faktury ani eksportu do innego systemu.
 
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pl-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pl-light-20261025.png" alt="Po ponownym otwarciu tej samej faktury kolumna TOTAL_AMOUNT zawiera 20.00 i 12.00 dla dwóch pozycji. Oryginalne kwoty w NET_AMOUNT pozostają bez zmian." width="735"></picture><figcaption><p>Po ponownym otwarciu tej samej faktury kolumna TOTAL_AMOUNT zawiera 20.00 i 12.00 dla dwóch pozycji. Oryginalne kwoty w NET_AMOUNT pozostają bez zmian.</p></figcaption></figure>
+
 ## Sprawdzanie i kontrprzykłady
 
 Sprawdź oba wiersze niezależnie: `2 × 10 = 20` oraz `3 × 4 = 12`. Nie traktuj poprawnego wyniku jednego wiersza jako potwierdzenia całej tabeli.

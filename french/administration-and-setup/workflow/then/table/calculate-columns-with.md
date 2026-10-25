@@ -41,6 +41,8 @@ La facture contient deux lignes. La colonne de résultat n’existe pas encore a
 
 Dans la démonstration, la carte crée la colonne de résultat. Les valeurs **20,00** et **12,00** restent visibles après la réouverture de la facture. Les colonnes d’entrée et les montants d’origine de `NET_AMOUNT` sont conservés dans cet exemple. Si la colonne de résultat choisie contient déjà des valeurs, le calcul les remplace.
 
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-fr-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-fr-light-20261025.png" alt="La même facture d’exemple et les résultats enregistrés après réouverture : Montant Total vaut 20,00 et 12,00. Les montants nets d’origine sont conservés." width="735"></picture><figcaption><p>La même facture d’exemple et les résultats enregistrés après réouverture : Montant Total vaut 20,00 et 12,00. Les montants nets d’origine sont conservés.</p></figcaption></figure>
+
 ## Vérifications et contre-exemples
 
 - Contrôlez les deux colonnes d’entrée et vérifiez les résultats enregistrés après le calcul.

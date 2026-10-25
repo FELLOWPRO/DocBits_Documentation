@@ -27,6 +27,9 @@ on:
         default: refresh
         options: [refresh, rebuild]
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 permissions:
   contents: read
 
@@ -39,6 +42,7 @@ jobs:
     runs-on: k9s
     strategy:
       fail-fast: false
+      max-parallel: 3
       matrix:
         include:
           - { lang: main, root: docbits }
@@ -51,10 +55,14 @@ jobs:
           - { lang: pt, root: portuguese }
           - { lang: zh, root: chinese }
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         if: inputs.lang == 'all' || inputs.lang == matrix.lang
         with:
           fetch-depth: 1
+
+      - name: Check search sync regressions
+        if: inputs.lang == 'all' || inputs.lang == matrix.lang
+        run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
       - name: Purge index (rebuild only)
         if: (inputs.lang == 'all' || inputs.lang == matrix.lang) && inputs.mode == 'rebuild'

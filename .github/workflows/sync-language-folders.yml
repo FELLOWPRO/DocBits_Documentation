@@ -60,17 +60,20 @@ jobs:
     runs-on: k9s
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: main
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install PyYAML (front matter validation)
-        run: python3 -m pip install --quiet pyyaml pytest
+        run: |
+          python3 -m venv "${RUNNER_TEMP}/docs-bridge-venv"
+          "${RUNNER_TEMP}/docs-bridge-venv/bin/python" -m pip --disable-pip-version-check install --quiet pyyaml pytest
+          echo "${RUNNER_TEMP}/docs-bridge-venv/bin" >> "$GITHUB_PATH"
 
       - name: Check navigation parsing and bridge validation
         run: python3 -m pytest -q .github/scripts/test_language_bridge.py

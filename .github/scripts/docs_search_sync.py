@@ -84,7 +84,10 @@ _IMG_TAG_RE = re.compile(r"<img\b([^>]*)>", re.IGNORECASE)
 _IMG_ATTR_RE = re.compile(r'(\w+)\s*=\s*"([^"]*)"')
 # Plain markdown ![alt](src) — also handled since not every image in this
 # repo uses the GitBook HTML form.
-_MD_IMAGE_RE = re.compile(r'!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)')
+_MD_IMAGE_RE = re.compile(
+    r'!\[([^\]]*)\]\(\s*(?:<([^>\n]+)>|((?:\\.|[^()\s]|\((?:\\.|[^()])*\))+))'
+    r'(?:\s+"[^"]*")?\s*\)'
+)
 
 # Extracts the real, directly-fetchable CDN url from GitBook's own
 # docs.docbits.com/~gitbook/image?url=<encoded>&...&sign=<hmac>&... proxy —
@@ -313,14 +316,35 @@ def _iter_raw_images(markdown_text: str) -> list[tuple[tuple[int, int], str, str
     """Yield ((start, end), src, alt) for every image reference in document
     order — GitBook's exported `<figure><img src=... alt=...>` HTML form
     and plain markdown `![alt](src)` alike."""
+    # Mask code rather than deleting it so match offsets still refer to the
+    # original markdown. Release notes contain literal HTML image examples.
+    lines: list[str] = []
+    fence: tuple[str, int] | None = None
+    for line in markdown_text.splitlines(keepends=True):
+        marker = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)", line)
+        if fence:
+            lines.append(" " * len(line))
+            if (marker and marker[1][0] == fence[0]
+                    and len(marker[1]) >= fence[1] and not marker[2].strip()):
+                fence = None
+        elif marker and not (marker[1][0] == "`" and "`" in marker[2]):
+            fence = (marker[1][0], len(marker[1]))
+            lines.append(" " * len(line))
+        else:
+            lines.append(line)
+    searchable = "".join(lines)
+    searchable = re.sub(
+        r"(?<!`)(`+)(?!`)([\s\S]*?)(?<!`)\1(?!`)",
+        lambda match: " " * len(match[0]), searchable,
+    )
     found: list[tuple[tuple[int, int], str, str]] = []
-    for match in _IMG_TAG_RE.finditer(markdown_text):
+    for match in _IMG_TAG_RE.finditer(searchable):
         attrs = dict(_IMG_ATTR_RE.findall(match.group(1)))
         src = attrs.get("src")
         if src:
             found.append((match.span(), src, attrs.get("alt", "")))
-    for match in _MD_IMAGE_RE.finditer(markdown_text):
-        found.append((match.span(), match.group(2), match.group(1)))
+    for match in _MD_IMAGE_RE.finditer(searchable):
+        found.append((match.span(), match.group(2) or match.group(3), match.group(1)))
     found.sort(key=lambda item: item[0][0])
     return found
 
@@ -360,7 +384,17 @@ def _fetch_page_blob_to_url_map(page_url: str) -> dict[str, str]:
         inner_match = _GITBOOK_PROXY_INNER_URL_RE.search(proxied_src)
         if not inner_match:
             continue
+        # External source images are already published through GitBook's
+        # signed same-origin proxy. Preserve that exact URL; never invent a
+        # signature or expand the Assistant's image-host allowlist.
         inner_url = urllib.parse.unquote(inner_match.group(1))
+        proxy = urllib.parse.urlparse(proxied_src)
+        if (proxy.scheme != "https" or proxy.hostname != "docs.docbits.com"
+                or proxy.path != "/~gitbook/image"
+                or not urllib.parse.parse_qs(proxy.query).get("sign")):
+            continue
+        resolved_url = inner_url if _is_allowed_image_host(inner_url) else proxied_src
+        mapping[inner_url] = resolved_url
         blob_match = _GIT_BLOB_SHA_RE.search(inner_url)
         if blob_match and _is_allowed_image_host(inner_url):
             mapping[blob_match.group(1)] = inner_url
@@ -377,8 +411,8 @@ def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) 
 
     - Already-absolute src on an allowed host (docs.docbits.com or a
       GitBook per-space files CDN): kept as-is.
-    - Already-absolute src on any other host (pasted googleusercontent.com
-      links etc.): dropped.
+    - Already-absolute src on another host: use its existing signed
+      docs.docbits.com image proxy from the published page.
     - Relative src (GitBook's `.gitbook/assets/...` convention): resolved
       via the local file's git blob sha, matched against the live page's
       own rendered image urls (see `_fetch_page_blob_to_url_map`) — the
@@ -398,13 +432,18 @@ def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) 
         out.append(markdown_text[last_end:start])
         last_end = end
 
+        src = html.unescape(re.sub(r"\\([\\!\[\]()_*])", r"\1", src))
         resolved: str | None = None
         if src.startswith("http://") or src.startswith("https://"):
             if _is_allowed_image_host(src):
                 resolved = src
+            else:
+                if blob_map is None:
+                    blob_map = _fetch_page_blob_to_url_map(page_url)
+                resolved = blob_map.get(src)
         else:
             local_rel_path = os.path.normpath(
-                os.path.join(os.path.dirname(md_path), src)
+                os.path.join(os.path.dirname(md_path), urllib.parse.unquote(src))
             )
             local_abs_path = os.path.join(REPO_ROOT, local_rel_path)
             if os.path.exists(local_abs_path):
@@ -500,6 +539,10 @@ def ingest_md_file(
     dry_run: bool,
     published: set[str] | None = None,
 ) -> None:
+    # Navigation changes are handled separately by run_diff; SUMMARY.md is
+    # intentionally not a published page and must never generate a warning.
+    if md_path == SUMMARY_PATH:
+        return
     rel = published_rel_path(md_path)
     if rel is None:
         return

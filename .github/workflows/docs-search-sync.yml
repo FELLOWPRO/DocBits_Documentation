@@ -47,6 +47,9 @@ on:
     types: [completed]
   workflow_dispatch: {}
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 permissions:
   contents: read
 
@@ -59,9 +62,12 @@ jobs:
     if: github.event_name == 'push'
     runs-on: k9s
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+
+      - name: Check search sync regressions
+        run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
       - name: Sync changed pages
         env:
@@ -102,9 +108,12 @@ jobs:
           - { lang: pt, root: portuguese }
           - { lang: zh, root: chinese }
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 1
+
+      - name: Check search sync regressions
+        run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
       - name: Full ingest + reconcile
         env:

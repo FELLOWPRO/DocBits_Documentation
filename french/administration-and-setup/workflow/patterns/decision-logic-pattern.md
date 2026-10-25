@@ -12,7 +12,7 @@ Dans le concepteur Standard, ouvrez **Ajouter une carte** dans le groupe **Et...
 
 ## Vue d'ensemble du modèle
 
-Ces quatre schémas présentent les règles métier à configurer. Ils complètent la carte de bibliothèque ci-dessus, affichée avant sélection et configuration. Dans Advanced, reliez explicitement chaque chemin. Dans une séquence Standard linéaire, définissez les conditions qui autorisent ses actions.
+Ces schémas présentent les règles métier à configurer. Ils complètent la carte de bibliothèque ci-dessus, affichée avant sélection et configuration. Dans Advanced, reliez explicitement chaque chemin. Dans une séquence Standard linéaire, définissez les conditions qui autorisent ses actions.
 
 <figure><img src="../../../.gitbook/assets/decision-flow-overview-fr.png" alt="Vue d’ensemble de l’exemple complet : contrôler les exceptions critiques, le type de document et l’urgence avant de choisir le circuit d’approbation. Chaque traitement et chaque connexion doivent être configurés ; le schéma ne représente pas un comportement automatique du produit."><figcaption><p>Vue d’ensemble de l’exemple complet : contrôler les exceptions critiques, le type de document et l’urgence avant de choisir le circuit d’approbation. Chaque traitement et chaque connexion doivent être configurés ; le schéma ne représente pas un comportement automatique du produit.</p></figcaption></figure>
 
@@ -258,12 +258,21 @@ Status: ACTIVE
 
 **Condition 4 : Vérification d'un nouveau fournisseur**
 
+Pour cet exemple, calculez la date située 180 jours avant la date d’évaluation, puis comparez la première transaction à cette limite. « IS AFTER » signifie strictement après : une date égale à la limite donne Non. Choisissez le champ réel et calculez ou renseignez la date limite ; les noms de carte et de champ et le repère {{TODAY_MINUS_180_DAYS}} sont illustratifs. Vérifiez séparément que la date de première transaction est valide et ne dépasse pas la date d’évaluation ; configurez le traitement des valeurs absentes ou invalides.
+
+<figure><img src="../../../.gitbook/assets/decision-supplier-date-180-days-fr.png" alt="Exemple de comparaison : au 25 octobre 2026, la date limite est le 28 avril 2026. « IS AFTER » exclut l’égalité : le 29 avril donne Oui, les 28 et 27 avril donnent Non. Les noms de carte et de champ et le repère {{TODAY_MINUS_180_DAYS}} sont illustratifs : choisissez le champ réel et calculez ou renseignez la date limite. Les dates sont supposées valides et non futures ; le traitement d’une date absente ou invalide reste à configurer."><figcaption><p>Exemple de comparaison : au 25 octobre 2026, la date limite est le 28 avril 2026. « IS AFTER » exclut l’égalité : le 29 avril donne Oui, les 28 et 27 avril donnent Non. Les noms de carte et de champ et le repère {{TODAY_MINUS_180_DAYS}} sont illustratifs : choisissez le champ réel et calculez ou renseignez la date limite. Les dates sont supposées valides et non futures ; le traitement d’une date absente ou invalide reste à configurer.</p></figcaption></figure>
+
+<details>
+<summary>Copier les paramètres illustratifs de cet exemple</summary>
+
 ```
 Card: CONDITION_DOC_FIELD_DATE
 Field: Supplier_First_Transaction_Date
 Operator: IS AFTER
 Value: {{TODAY_MINUS_180_DAYS}}
 ```
+
+</details>
 
 **Référence du guide :** [Guide complet des cartes de condition](../and/condition-cards-complete-guide.md)
 
@@ -558,7 +567,7 @@ Exception Types:
 
 ## Diagramme complet de logique de décision
 
-Les quatre graphiques présentent les étapes essentielles. L’arbre textuel ci-dessous conserve le détail technique de l’exemple ; ses destinations restent à configurer.
+Les graphiques présentent les étapes essentielles. L’arbre textuel ci-dessous conserve le détail technique de l’exemple ; ses destinations restent à configurer.
 
 <details>
 <summary>Consulter l’arbre textuel détaillé de l’exemple complet</summary>

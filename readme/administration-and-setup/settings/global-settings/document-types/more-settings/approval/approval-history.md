@@ -1,24 +1,20 @@
 # Goedkeuringsgeschiedenis
 
-Om de **Goedkeuringsgeschiedenis** functie in te schakelen:
+Met **Goedkeuringsgeschiedenis** kun je de beslissingen in het goedkeuringsproces van een document controleren. De instelling hoort bij het documenttype.
 
-1. Ga naar **Instellingen** → **Algemene instellingen** → **Documenttypen** → **Meer instellingen** → **Goedkeuring**.
-2. Zet **Goedkeuringsgeschiedenis** aan.
+## Instelling voor een documenttype
 
-Eenmaal ingeschakeld, zal de goedkeuringsgeschiedenis zichtbaar zijn op het **In afwachting van goedkeuring** scherm. Je kunt schakelen naar het **Goedkeuringsgeschiedenis** scherm door op de knop in de linkerbovenhoek te klikken.
+1. Open **Instellingen → Documenttypen**.
+2. Zoek het gewenste documenttype en kies het tandwiel voor **Meer instellingen**. **Layouts** en **Velden** openen andere editors.
+3. Open **Goedkeuring en afwijzing** en zoek **Goedkeuringsgeschiedenis**. Deze schakelaar staat los van **Goedkeuren vóór export**, **Tweede goedkeuring** en **Goedkeuringsstempel**.
+4. Controleer het gewenste goedkeuringsproces en wie de beslissingen mag bekijken voordat je de instelling wijzigt. Noteer de vorige waarde als je de werking met een proefdocument wilt vergelijken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_1.png)
+<figure><img src="../../../../../../.gitbook/assets/doc-type-settings-approval-nl.png" alt="Goedkeuringsgeschiedenis onder Goedkeuring en afwijzing in de documenttype-instellingen. De afbeelding toont instellingen, geen uitgevoerde goedkeuring."><figcaption><p>Goedkeuringsgeschiedenis onder Goedkeuring en afwijzing in de documenttype-instellingen. De afbeelding toont instellingen, geen uitgevoerde goedkeuring.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_2.png)
+## Controleren met een proefdocument
 
-In het **Goedkeuringsgeschiedenis** scherm zie je de volgende details:
+Gebruik een synthetisch document van het ingestelde documenttype dat daadwerkelijk het goedkeuringsproces doorloopt. Laat een bevoegde testgebruiker het document goedkeuren of afwijzen. Open daarna de goedkeuringsweergave van dat document en controleer de beschikbare geschiedenis.
 
-* **Wie** het document heeft goedgekeurd of afgewezen.
-* De **tijd** en **volgorde** van goedkeuringen of afwijzingen.
-* Als ingesteld, **opmerkingen** die de redenen achter de beslissingen uitleggen.
-* **Rood** geeft een **afwijzing** aan.
-* De kleur die overeenkomt met de omgeving (bijv. groen) geeft **goedkeuring** aan.
+Vergelijk de beslissing, de gebruiker, het tijdstip en een eventuele opmerking met de uitgevoerde handeling. Controleer bij meerdere goedkeurders de volgorde na iedere beslissing.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_3.png)
-
-Deze functie biedt verbeterde transparantie door het volgen en visualiseren van het goedkeuringsproces.
+Als geen geschiedenis zichtbaar is, controleer dan het documenttype, de workflowstatus, de instelling en de toegangsrechten. De oude schermafbeeldingen vormen geen bewijs voor de huidige navigatie of vaste statuskleuren; verifieer deze in je eigen goedkeuringsproces.

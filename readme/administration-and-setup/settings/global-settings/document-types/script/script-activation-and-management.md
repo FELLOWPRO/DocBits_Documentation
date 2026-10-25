@@ -4,7 +4,7 @@ Administrators can use **Scripts** to manage processing rules for a document typ
 
 ## Video guide: manage scripts
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v3/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v4/en.mp4" %}
 Manage the scripts of a document type
 {% endembed %}
 

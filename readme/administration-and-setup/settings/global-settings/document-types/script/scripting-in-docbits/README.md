@@ -2,7 +2,7 @@
 
 ## Video guide: the most important script functions
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v2/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/en.mp4" %}
 The most important script functions in DocBits
 {% endembed %}
 

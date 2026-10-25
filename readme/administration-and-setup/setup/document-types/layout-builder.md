@@ -1,59 +1,51 @@
 # Editor de diseños
 
-Utilice el editor de diseños para organizar los campos y los controles que las personas ven al validar o aprobar un documento. Un diseño pertenece a un único tipo de documento, un único origen y un único tipo de diseño, así que compruebe estos tres elementos en la parte superior de la página antes de guardar.
+Utilice el editor de diseños para organizar los campos y los controles que las personas ven al validar o aprobar un documento. Cada diseño está asociado a un tipo de documento, un origen y un tipo de diseño. Antes de guardar cambios, compruebe qué diseño está abierto.
 
 ## Abrir el diseño
 
 1. Abra **Configuración → Tipos de Documento**.
-2. Seleccione el tipo de documento que desea editar y abra el **editor de diseños**. En el caso de un subtipo de documento, abra la acción editor de diseños de ese subtipo.
-3. Compruebe el encabezado. El selector de la izquierda es el **Origen** (por ejemplo, **Defecto**), seguido del **Tipo de Documento** (por ejemplo, **Factura**) y del **Tipo de diseño** (por ejemplo, **Validación de campos**). Cada selector abre una lista; al elegir otra entrada se carga ese diseño. Si el editor de diseños no está disponible, es posible que un administrador deba activar el módulo para su organización.
+2. Abra el editor de diseños del tipo o subtipo de documento que necesite. Si no está disponible, puede que un administrador deba activar el módulo para su organización.
+3. Compruebe el origen seleccionado en la barra de acciones y el tipo de editor indicado junto a él.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-overview-es.png" alt="El editor de diseños de una factura en DocBits, con los selectores de origen, tipo de documento y tipo de diseño, las pestañas Estructura, Campos y Elementos, el lienzo del diseño y el panel Propiedades a la derecha"><figcaption><p>El editor de diseños: los selectores del encabezado, las listas de elementos a la izquierda, el lienzo en el centro y el panel Propiedades a la derecha.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-es.png" alt="Vista parcial del editor: las secciones Grupos, Campos y Elementos de formulario a la izquierda y un ejemplo simplificado de diseño de factura en el centro."><figcaption><p>Vista parcial del editor: las secciones Grupos, Campos y Elementos de formulario a la izquierda y un ejemplo simplificado de diseño de factura en el centro.</p></figcaption></figure>
 
-## Trabajar con el encabezado
+Al cambiar **Origen**, DocBits puede crear un diseño independiente para ese origen. Confirme el origen antes de editar.
 
-* **Tipo de Documento** y **Tipo de diseño** permiten cambiar de diseño. La página vuelve a cargar el diseño que elija.
-* Junto a **Guardar**, DocBits indica si el diseño tiene **Cambios no guardados**. Después de guardar, muestra cuándo se guardó por última vez.
-* **Guardar** almacena el diseño para el tipo de documento, el origen y el tipo de diseño seleccionados.
-* El menú **Más** (tres puntos) contiene **Autogenerar plantilla**, **Aplicar diseño predeterminado a los orígenes**, **Usar plantilla predeterminada**, **Editar json**, **Copiar JSON** y **Configuración de diseño**. **Autogenerar plantilla** y **Usar plantilla predeterminada** sustituyen un diseño personalizado, así que compruebe antes el tipo de documento y el diseño seleccionados. **Editar json** está pensado para la configuración avanzada y solo debe utilizarse si comprende el formato de la plantilla.
-* Si abandona la página con cambios sin guardar, DocBits le pregunta si desea guardarlos o descartarlos.
+## Conocer las áreas del editor
 
-## Encontrar elementos: Estructura, Campos, Elementos
+A la izquierda puede alternar entre **Elementos**, **Propiedades** y la configuración general, representada por un engranaje.
 
-La parte izquierda tiene tres pestañas:
+* La pestaña **Elementos** contiene las secciones **Grupos**, **Campos** y **Elementos de formulario**. Abra cada sección para consultar los grupos, campos y controles disponibles.
+* La zona central muestra los grupos y campos del diseño. Los grupos permiten organizar campos relacionados.
+* A la derecha se encuentra la vista del documento de ejemplo, donde puede consultar el documento y ajustar el zoom.
 
-| Pestaña | Para qué sirve |
-| --- | --- |
-| **Estructura** | Ver el diseño como un árbol. Los grupos y sus campos aparecen en el orden en que se muestran en el lienzo, junto con el número de campos colocados y disponibles. |
-| **Campos** | Todos los campos configurados para el tipo de documento, agrupados por grupo de campos y contraídos de forma predeterminada. El filtro alterna entre los campos **Todos**, **No usado** y **Oculto**, y el nombre técnico del campo se muestra debajo de su etiqueta. |
-| **Elementos** | Controles de presentación e interacción como Texto, Etiqueta, Casilla de verificación, separadores, tablas, botones y subgrupos. |
+Arrastre un elemento desde la sección correspondiente de la izquierda hasta la zona del diseño para añadir un grupo, un campo o un control de formulario.
 
-<figure><img src="../../../.gitbook/assets/layout-builder-structure-es.png" alt="La pestaña Estructura del editor de diseños mostrando los grupos Detalles de la factura, Detalles de pago, Orden de compra y Detalles de entrega desplegados en sus campos"><figcaption><p>La pestaña Estructura muestra el diseño creado como un árbol de grupos y campos.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-es.png" alt="Los campos Número de factura y Fecha del grupo de ejemplo. En este diseño, cada campo ocupa el 50 % del ancho del grupo."><figcaption><p>Los campos Número de factura y Fecha del grupo de ejemplo. En este diseño, cada campo ocupa el 50 % del ancho del grupo.</p></figcaption></figure>
 
-Seleccione un elemento para añadirlo o arrástrelo al lienzo. El título de un grupo indica a quien valida el documento qué corresponde a esa sección. Cree o cambie el nombre de los campos de documento reutilizables primero en [Tipos de Documento](README.md).
-
-## Trabajar en el lienzo
-
-* **Diseño principal** muestra el diseño del propio documento. **Tabla** muestra el diseño de tabla que se utiliza para las líneas de artículos.
-* **Documento** abre o cierra el documento de ejemplo junto al lienzo, de modo que pueda comparar el diseño con un documento real.
-* Los grupos se representan como tarjetas; los campos de un grupo pueden organizarse en filas y tener anchos distintos.
+Configure los campos reutilizables en [Tipos de Documento](README.md). Los campos disponibles dependen del tipo de documento seleccionado y de su configuración.
 
 ## Cambiar las propiedades de un elemento
 
-Seleccione un elemento o un grupo en el lienzo. El panel **Propiedades**, a la derecha, está siempre visible y se organiza en secciones:
+Seleccione un grupo o campo en la zona del diseño y abra **Propiedades** a la izquierda. Las opciones dependen del elemento seleccionado e incluyen, por ejemplo, la etiqueta, el nombre técnico, el ancho y el comportamiento.
 
-* **Visualización**: etiqueta, nombre del campo, posición de la etiqueta y ancho del elemento.
-* **Comportamiento**: solo lectura, oculto e índice de pestañas.
-* **Valores y listas**: los valores que se ofrecen para el elemento.
-* **Automatización**: reglas que rellenan o modifican el elemento.
-* **Bordes y espaciado**: el aspecto del elemento.
+<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-es.png" alt="Propiedades del campo seleccionado: su etiqueta, su nombre técnico y el ancho del elemento en porcentaje."><figcaption><p>Propiedades del campo seleccionado: su etiqueta, su nombre técnico y el ancho del elemento en porcentaje.</p></figcaption></figure>
 
-Para el ancho, elija uno de los valores predefinidos (25, 33, 50, 66, 75 o 100 por ciento) en lugar de escribir un valor, y compruebe el resultado en el lienzo. Las secciones y opciones que aparecen dependen del elemento seleccionado. Para más detalles, consulte [Configurar las propiedades de los campos](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+En los campos predefinidos, la etiqueta y el nombre técnico pueden no ser editables. Según el tipo de elemento, también puede configurar el modo de solo lectura, la visibilidad, el orden de tabulación, listas de valores y la ejecución de un flujo de trabajo o un script cuando cambie el valor. Las opciones de grupos y campos no son iguales.
+
+Compruebe el resultado en la zona del diseño después de modificar las propiedades. El ancho se introduce como porcentaje mediante un control numérico; los grupos y sus campos pueden tener anchos distintos. Consulte [Configurar las propiedades de los campos](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
+
+## Plantillas y JSON
+
+Además de guardar el diseño, la barra de acciones ofrece funciones para generar una plantilla, aplicar el diseño predeterminado a los diseños por origen, usar la plantilla predeterminada y editar JSON. Su disponibilidad depende del editor abierto.
+
+Generar o aplicar una plantilla puede sustituir el diseño personalizado. Compruebe antes el tipo de documento, el origen y el diseño actual. **Editar json** se utiliza para la configuración avanzada y requiere conocer el formato de la plantilla. La copia de la configuración está disponible dentro del diálogo JSON.
 
 ## Revisar y guardar
 
-Organice los grupos y los campos, compruebe el diseño en el lienzo y utilice **Guardar** en el encabezado cuando el resultado sea correcto. Para los diseños específicos de un origen, consulte [Diseños por origen](origin-layouts.md).
+Organice los grupos y los campos y compruebe el resultado en la zona del diseño. Cuando sea correcto, utilice **Guardar** en la barra de acciones. Para diseños específicos de un origen, consulte [Diseños por origen](origin-layouts.md).
 
 {% hint style="info" %}
-Las capturas de pantalla muestran configuraciones sintéticas en la organización de prueba de DocBits, con el español seleccionado en la aplicación. No se guardó ni se sustituyó ningún diseño al realizarlas.
+Las ilustraciones utilizan un ejemplo simplificado de diseño de factura. Los nombres de campo y las opciones disponibles dependen de su configuración.
 {% endhint %}

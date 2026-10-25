@@ -57,7 +57,7 @@ concurrency:
 jobs:
   diff-sync:
     if: github.event_name == 'push'
-    runs-on: ubuntu-latest
+    runs-on: k9s
     steps:
       - uses: actions/checkout@v4
         with:
@@ -83,7 +83,7 @@ jobs:
     if: >-
       github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
       || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
-    runs-on: ubuntu-latest
+    runs-on: k9s
     strategy:
       fail-fast: false
       # 9 languages ingesting at once overloaded the shared ingress (502s)

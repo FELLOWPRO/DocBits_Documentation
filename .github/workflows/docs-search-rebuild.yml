@@ -36,7 +36,7 @@ concurrency:
 
 jobs:
   rebuild:
-    runs-on: ubuntu-latest
+    runs-on: k9s
     strategy:
       fail-fast: false
       matrix:

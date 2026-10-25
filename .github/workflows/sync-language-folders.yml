@@ -57,7 +57,9 @@ concurrency:
 
 jobs:
   sync:
-    runs-on: k9s
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v6

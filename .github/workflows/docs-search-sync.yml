@@ -60,7 +60,9 @@ concurrency:
 jobs:
   diff-sync:
     if: github.event_name == 'push'
-    runs-on: k9s
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     steps:
       - uses: actions/checkout@v6
         with:
@@ -89,7 +91,9 @@ jobs:
     if: >-
       github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
       || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
-    runs-on: k9s
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     strategy:
       fail-fast: false
       # 9 languages ingesting at once overloaded the shared ingress (502s)

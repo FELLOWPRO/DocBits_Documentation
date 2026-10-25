@@ -39,7 +39,9 @@ concurrency:
 
 jobs:
   rebuild:
-    runs-on: k9s
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     strategy:
       fail-fast: false
       max-parallel: 3

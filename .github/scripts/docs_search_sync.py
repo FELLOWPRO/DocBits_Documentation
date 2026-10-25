@@ -43,6 +43,7 @@ import html
 import json
 import os
 import re
+import string
 import subprocess
 import sys
 import time
@@ -320,7 +321,25 @@ def _iter_raw_images(markdown_text: str) -> list[tuple[tuple[int, int], str, str
     # original markdown. Release notes contain literal HTML image examples.
     lines: list[str] = []
     fence: tuple[str, int] | None = None
+    list_indents: list[int] = []
+    indented_code = False
+    previous_blank = True
     for line in markdown_text.splitlines(keepends=True):
+        expanded = line.expandtabs(4)
+        indent = len(expanded) - len(expanded.lstrip(" "))
+        blank = not line.strip()
+        while list_indents and not blank and indent < list_indents[-1]:
+            list_indents.pop()
+        code_indent = (list_indents[-1] if list_indents else 0) + 4
+        if not fence and not blank and indent >= code_indent and (indented_code or previous_blank):
+            lines.append(" " * len(line))
+            indented_code = True
+            continue
+        if not blank:
+            indented_code = False
+        item = re.match(r"^( *)(?:[-+*]|\d+[.)])(?: +|$)", expanded)
+        if item and indent < code_indent:
+            list_indents.append(item.end() or indent + 2)
         marker = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)", line)
         if fence:
             lines.append(" " * len(line))
@@ -332,6 +351,7 @@ def _iter_raw_images(markdown_text: str) -> list[tuple[tuple[int, int], str, str
             lines.append(" " * len(line))
         else:
             lines.append(line)
+        previous_blank = blank
     searchable = "".join(lines)
     searchable = re.sub(
         r"(?<!`)(`+)(?!`)([\s\S]*?)(?<!`)\1(?!`)",
@@ -432,7 +452,7 @@ def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) 
         out.append(markdown_text[last_end:start])
         last_end = end
 
-        src = html.unescape(re.sub(r"\\([\\!\[\]()_*])", r"\1", src))
+        src = html.unescape(re.sub(r"\\([" + re.escape(string.punctuation) + r"])", r"\1", src))
         resolved: str | None = None
         if src.startswith("http://") or src.startswith("https://"):
             if _is_allowed_image_host(src):

@@ -884,9 +884,15 @@ def verify_lang(lang: str, *, dry_run: bool) -> None:
             "fallback_bm25_only=true: DigitalOcean embedding/rerank was not used"
         )
     expected_prefix = full_url(VERIFY_PAGE, lang)
-    if hits and not any(url.startswith(expected_prefix) for url in urls):
+    if hits and not any(url == expected_prefix or url.startswith(expected_prefix + "/") for url in urls):
         problems.append(f"expected page {expected_prefix} not in the top 5")
-    wrong_lang = [u for u in urls if not u.startswith(full_url("", lang))]
+    space = full_url("", lang)
+    language_slugs = {slug for slug in LANG_URL_SLUG.values() if slug}
+    wrong_lang = [
+        u for u in urls
+        if not (u == space or u.startswith(space + "/"))
+        or (lang == "main" and urllib.parse.urlparse(u).path.strip("/").split("/")[0] in language_slugs)
+    ]
     if wrong_lang:
         problems.append(f"hits outside the {lang} language space: {wrong_lang[:2]}")
     if problems:

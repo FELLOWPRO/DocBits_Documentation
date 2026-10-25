@@ -10,10 +10,6 @@ Aby skonfigurować swoje ustawienia, kliknij ikonę Użytkownika znajdującą si
 
 **Język**
 
-{% embed url="https://youtu.be/h_knkUZkNyI" %}
-Jak zmienić język w DocBits (samouczek ustawień użytkownika)
-{% endembed %}
-
 * **Wybierz Preferowany Język:** Wybierz swój preferowany język z dostępnych opcji.
 
 **Tryb ciemny**

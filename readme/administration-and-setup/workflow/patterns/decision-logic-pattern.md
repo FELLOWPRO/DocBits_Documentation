@@ -14,6 +14,8 @@ Dans le concepteur Standard, ouvrez **Ajouter une carte** dans le groupe **Et...
 
 Ces schémas présentent les règles métier à configurer. Ils complètent la carte de bibliothèque ci-dessus, affichée avant sélection et configuration. Dans Advanced, reliez explicitement chaque chemin. Dans une séquence Standard linéaire, définissez les conditions qui autorisent ses actions.
 
+#### Schéma : vue générale
+
 <figure><img src="../../../.gitbook/assets/decision-flow-overview-fr.png" alt="Vue d’ensemble de l’exemple complet : contrôler les exceptions critiques, le type de document et l’urgence avant de choisir le circuit d’approbation. Chaque traitement et chaque connexion doivent être configurés ; le schéma ne représente pas un comportement automatique du produit."><figcaption><p>Vue d’ensemble de l’exemple complet : contrôler les exceptions critiques, le type de document et l’urgence avant de choisir le circuit d’approbation. Chaque traitement et chaque connexion doivent être configurés ; le schéma ne représente pas un comportement automatique du produit.</p></figcaption></figure>
 
 Ce modèle montre comment mettre en place une logique de décision complexe dans les workflows DocBits à l'aide de cartes de condition pour acheminer les documents par différents chemins de traitement en fonction des attributs des documents, des valeurs de champs et des règles métier.
@@ -54,6 +56,13 @@ Les exemples IF-THEN, ET, OU et imbriqués ci-dessous sont indépendants. Leurs 
 
 ### 1. Logique IF-THEN simple
 
+#### Schéma : condition simple
+
+<figure><img src="../../../.gitbook/assets/decision-simple-if-fr.png" alt="Exemple IF-THEN indépendant : un montant strictement supérieur à 10 000 € choisit le directeur ; sinon, le responsable. L’égalité reste dans la seconde branche. Les destinations sont à configurer."><figcaption><p>Exemple IF-THEN indépendant : un montant strictement supérieur à 10 000 € choisit le directeur ; sinon, le responsable. L’égalité reste dans la seconde branche. Les destinations sont à configurer.</p></figcaption></figure>
+
+<details>
+<summary>Principe IF-THEN : une condition, deux résultats</summary>
+
 ```
 IF condition:
   → Action A
@@ -61,7 +70,14 @@ ELSE:
   → Action B
 ```
 
+</details>
+
 **Exemple :**
+
+Lecture visuelle de cet exemple : [condition simple](#schema-condition-simple).
+
+<details>
+<summary>Exemple IF-THEN : seuil de montant</summary>
 
 ```
 IF Amount > €10,000:
@@ -70,7 +86,18 @@ ELSE:
   → Assign to Manager
 ```
 
+</details>
+
+#### Schéma : critères ET et OU
+
+<figure><img src="../../../.gitbook/assets/decision-conditions-and-or-fr.png" alt="Deux exemples indépendants : ET exige les trois critères ; OU en exige au moins un. Leurs seuils illustratifs ne remplacent pas les tranches de la matrice complète. Les sorties et le traitement des données inconnues ou des erreurs doivent être configurés."><figcaption><p>Deux exemples indépendants : ET exige les trois critères ; OU en exige au moins un. Leurs seuils illustratifs ne remplacent pas les tranches de la matrice complète. Les sorties et le traitement des données inconnues ou des erreurs doivent être configurés.</p></figcaption></figure>
+
 ### 2. Plusieurs critères (logique ET)
+
+Lecture visuelle de cet exemple : [critères ET et OU](#schema-criteres-et-et-ou).
+
+<details>
+<summary>Principe ET : tous les critères</summary>
 
 ```
 IF condition1 AND condition2 AND condition3:
@@ -79,7 +106,14 @@ ELSE:
   → Action B
 ```
 
+</details>
+
 **Exemple :**
+
+Lecture visuelle de cet exemple : [critères ET et OU](#schema-criteres-et-et-ou).
+
+<details>
+<summary>Exemple ET : trois critères</summary>
 
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
@@ -88,7 +122,14 @@ ELSE:
   → Standard approval workflow
 ```
 
+</details>
+
 ### 3. Critères alternatifs (logique OU)
+
+Lecture visuelle de cet exemple : [critères ET et OU](#schema-criteres-et-et-ou).
+
+<details>
+<summary>Principe OU : au moins un critère</summary>
 
 ```
 IF condition1 OR condition2 OR condition3:
@@ -97,7 +138,14 @@ ELSE:
   → Action B
 ```
 
+</details>
+
 **Exemple :**
+
+Lecture visuelle de cet exemple : [critères ET et OU](#schema-criteres-et-et-ou).
+
+<details>
+<summary>Exemple OU : montant, blocage ou urgence</summary>
 
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
@@ -106,9 +154,16 @@ ELSE:
   → Standard processing
 ```
 
-<figure><img src="../../../.gitbook/assets/decision-conditions-and-or-fr.png" alt="Deux exemples indépendants : ET exige les trois critères ; OU en exige au moins un. Leurs seuils illustratifs ne remplacent pas les tranches de la matrice complète. Les sorties et le traitement des données inconnues ou des erreurs doivent être configurés."><figcaption><p>Deux exemples indépendants : ET exige les trois critères ; OU en exige au moins un. Leurs seuils illustratifs ne remplacent pas les tranches de la matrice complète. Les sorties et le traitement des données inconnues ou des erreurs doivent être configurés.</p></figcaption></figure>
+</details>
 
 ### 4. Arbre de décision imbriqué
+
+#### Schéma : décisions imbriquées
+
+<figure><img src="../../../.gitbook/assets/decision-nested-type-amount-fr.png" alt="Exemple imbriqué indépendant : le type documentaire sélectionne un test de montant. Les seuils sont stricts : 10 000 € pour une facture et 5 000 € pour un avoir ne satisfont pas le test « supérieur à ». Le traitement des autres types et des données inconnues doit être défini."><figcaption><p>Exemple imbriqué indépendant : le type documentaire sélectionne un test de montant. Les seuils sont stricts : 10 000 € pour une facture et 5 000 € pour un avoir ne satisfont pas le test « supérieur à ». Le traitement des autres types et des données inconnues doit être défini.</p></figcaption></figure>
+
+<details>
+<summary>Principe de décision imbriquée</summary>
 
 ```
 IF condition1:
@@ -123,7 +178,14 @@ ELSE:
     → Action D
 ```
 
+</details>
+
 **Exemple :**
+
+Lecture visuelle de cet exemple : [décisions imbriquées](#schema-decisions-imbriquees).
+
+<details>
+<summary>Exemple imbriqué : facture et avoir</summary>
 
 ```
 IF Document_Type = "Invoice":
@@ -137,6 +199,8 @@ ELSE IF Document_Type = "Credit Note":
   ELSE:
     → Standard credit workflow
 ```
+
+</details>
 
 ***
 
@@ -156,11 +220,18 @@ ELSE IF Document_Type = "Credit Note":
 4. Un montant absent ou invalide mène ici à un contrôle manuel explicitement configuré. C’est une politique de cet exemple, pas un comportement de repli automatique du produit.
 5. Après création d’une tâche, attendre son résultat. Un refus arrête la chaîne et suit le traitement configuré ; un résultat en attente ne permet pas de poursuivre. La tâche de la direction financière n’est créée qu’après l’accord du directeur.
 
+#### Schéma : tranches de montant
+
 <figure><img src="../../../.gitbook/assets/decision-amount-routing-fr.png" alt="Seuils du niveau 2 : moins de 1 000 € ; de 1 000 € inclus à 10 000 € exclu ; de 10 000 € inclus à 50 000 € exclu ; 50 000 € ou plus. Chaque test suit le résultat négatif du précédent. Le contrôle manuel pour un montant absent ou invalide doit être configuré explicitement."><figcaption><p>Seuils du niveau 2 : moins de 1 000 € ; de 1 000 € inclus à 10 000 € exclu ; de 10 000 € inclus à 50 000 € exclu ; 50 000 € ou plus. Chaque test suit le résultat négatif du précédent. Le contrôle manuel pour un montant absent ou invalide doit être configuré explicitement.</p></figcaption></figure>
 
 Les valeurs de 1 000 €, 10 000 € et 50 000 € appartiennent à la tranche supérieure. Les contrôles précédents, l’attente d’un résultat et les connexions entre chemins doivent être configurés et testés. Une tâche créée ne prouve ni son approbation ni l’export du document.
 
 **Mise en œuvre illustrative :** adaptez les noms techniques et le pseudocode aux cartes réellement disponibles dans votre version. Ces blocs décrivent un exemple à configurer, plutôt qu’un fichier prêt à importer. Vérifiez les résultats d’exécution et les effets de votre configuration.
+
+Lecture visuelle de cet exemple : [vue générale](#schema-vue-generale), [tranches de montant](#schema-tranches-de-montant), [analyse du fournisseur](#schema-analyse-du-fournisseur), [chemin automatique](#schema-chemin-automatique), [tâche de la responsable](#schema-tache-de-la-responsable), [direction générale](#schema-direction-generale), [fiche de règle](#schema-fiche-de-regle).
+
+<details>
+<summary>Pseudocode de la matrice complète</summary>
 
 ```
 PRECHECK: Critical Exceptions
@@ -214,7 +285,9 @@ STEP 3: Amount-Based Routing (Invoice, if not urgent)
         → Priority: High
         → Deadline: 2 days each
       ELSE IF Supplier_Risk_Rating = "HIGH":
-        → Additional checks and Director approval
+        → Additional checks and Manager pre-approval
+        → Wait for positive Manager approval before Director approval
+        → Pending or rejection: Do not continue the approval chain
       ELSE (Existing Supplier):
         → Create task for Director only
         → Priority: High
@@ -224,6 +297,8 @@ STEP 3: Amount-Based Routing (Invoice, if not urgent)
     → Executive approval path (see Path D)
 ```
 
+</details>
+
 ***
 
 ## Mise en œuvre étape par étape
@@ -231,6 +306,13 @@ STEP 3: Amount-Based Routing (Invoice, if not urgent)
 ### Étape 1 : Définir les cartes de condition
 
 **Condition 1 : Seuil de montant**
+
+#### Schéma : paramètres indépendants
+
+<figure><img src="../../../.gitbook/assets/decision-parameter-checks-fr.png" alt="Deux conditions indépendantes : un montant strictement inférieur à 1 000 EUR et un fournisseur de statut actif. L’égalité du montant donne Non ; un fournisseur non actif n’est pas nécessairement bloqué. Les paramètres techniques sont illustratifs et doivent être adaptés à la configuration réelle."><figcaption><p>Deux conditions indépendantes : un montant strictement inférieur à 1 000 EUR et un fournisseur de statut actif. L’égalité du montant donne Non ; un fournisseur non actif n’est pas nécessairement bloqué. Les paramètres techniques sont illustratifs et doivent être adaptés à la configuration réelle.</p></figcaption></figure>
+
+<details>
+<summary>Paramètres illustratifs : seuil de montant</summary>
 
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
@@ -240,7 +322,16 @@ Value: 1000
 Currency: EUR
 ```
 
+</details>
+
 **Condition 2 : Vérification du type de document**
+
+#### Schéma : types documentaires
+
+<figure><img src="../../../.gitbook/assets/decision-document-type-fr.png" alt="Le filtre « Facture » et le routeur de types sont deux lectures complémentaires de cet exemple. Le routeur distingue facture, avoir, reçu et type inconnu. Les noms de carte et de workflow sont illustratifs ; chaque destination doit être configurée."><figcaption><p>Le filtre « Facture » et le routeur de types sont deux lectures complémentaires de cet exemple. Le routeur distingue facture, avoir, reçu et type inconnu. Les noms de carte et de workflow sont illustratifs ; chaque destination doit être configurée.</p></figcaption></figure>
+
+<details>
+<summary>Paramètres illustratifs : type documentaire</summary>
 
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
@@ -248,7 +339,14 @@ Document Type: IS
 Type: Invoice
 ```
 
+</details>
+
 **Condition 3 : Statut du fournisseur**
+
+Lecture visuelle de cet exemple : [paramètres indépendants](#schema-parametres-independants).
+
+<details>
+<summary>Paramètres illustratifs : statut actif</summary>
 
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
@@ -256,9 +354,13 @@ Supplier Status: IS
 Status: ACTIVE
 ```
 
+</details>
+
 **Condition 4 : Vérification d'un nouveau fournisseur**
 
 Pour cet exemple, calculez la date située 180 jours avant la date d’évaluation, puis comparez la première transaction à cette limite. « IS AFTER » signifie strictement après : une date égale à la limite donne Non. Choisissez le champ réel et calculez ou renseignez la date limite ; les noms de carte et de champ et le repère {{TODAY_MINUS_180_DAYS}} sont illustratifs. Vérifiez séparément que la date de première transaction est valide et ne dépasse pas la date d’évaluation ; configurez le traitement des valeurs absentes ou invalides.
+
+#### Schéma : condition des 180 jours
 
 <figure><img src="../../../.gitbook/assets/decision-supplier-date-180-days-fr.png" alt="Exemple de comparaison : au 25 octobre 2026, la date limite est le 28 avril 2026. « IS AFTER » exclut l’égalité : le 29 avril donne Oui, les 28 et 27 avril donnent Non. Les noms de carte et de champ et le repère {{TODAY_MINUS_180_DAYS}} sont illustratifs : choisissez le champ réel et calculez ou renseignez la date limite. Les dates sont supposées valides et non futures ; le traitement d’une date absente ou invalide reste à configurer."><figcaption><p>Exemple de comparaison : au 25 octobre 2026, la date limite est le 28 avril 2026. « IS AFTER » exclut l’égalité : le 29 avril donne Oui, les 28 et 27 avril donnent Non. Les noms de carte et de champ et le repère {{TODAY_MINUS_180_DAYS}} sont illustratifs : choisissez le champ réel et calculez ou renseignez la date limite. Les dates sont supposées valides et non futures ; le traitement d’une date absente ou invalide reste à configurer.</p></figcaption></figure>
 
@@ -282,6 +384,11 @@ Value: {{TODAY_MINUS_180_DAYS}}
 
 **Niveau 1 : Type de document**
 
+Lecture visuelle de cet exemple : [types documentaires](#schema-types-documentaires).
+
+<details>
+<summary>Routeur illustratif des types documentaires</summary>
+
 ```
 Workflow: "Invoice Processing"
 
@@ -298,7 +405,14 @@ ELSE:
   → Route to "Unknown Document Type" handling
 ```
 
+</details>
+
 **Niveau 2 : Seuils de montant (factures non urgentes, montant valide)**
+
+Lecture visuelle de cet exemple : [tranches de montant](#schema-tranches-de-montant).
+
+<details>
+<summary>Pseudocode des quatre tranches de montant</summary>
 
 ```
 IF Amount < €1,000:
@@ -316,7 +430,16 @@ ELSE (Amount ≥ €50,000):
   → Dual or triple approval required
 ```
 
+</details>
+
 **Niveau 3 : Analyse du fournisseur (pour les factures de montant élevé)**
+
+#### Schéma : analyse du fournisseur
+
+<figure><img src="../../../.gitbook/assets/decision-supplier-analysis-fr.png" alt="Extrait du circuit fournisseur : traiter le blocage, puis l’ancienneté, puis le risque. La branche de moins de 180 jours renvoie au schéma des deux approbations successives. Les tâches, délais, notifications et actions du chemin C restent à configurer."><figcaption><p>Extrait du circuit fournisseur : traiter le blocage, puis l’ancienneté, puis le risque. La branche de moins de 180 jours renvoie au schéma des deux approbations successives. Les tâches, délais, notifications et actions du chemin C restent à configurer.</p></figcaption></figure>
+
+<details>
+<summary>Analyse du fournisseur : blocage, ancienneté et risque</summary>
 
 ```
 IF Supplier_Status = "BLOCKED":
@@ -332,17 +455,27 @@ ELSE IF Supplier_Age < 180 days (New):
 ELSE IF Supplier_Risk_Rating = "HIGH":
   → Additional checks required
   → Fraud detection review
-  → Manager pre-approval
+  → Manager pre-approval; wait for positive approval
+  → Director approval; wait for positive approval
 
 ELSE:
   → Standard high-value workflow
 ```
+
+</details>
 
 ***
 
 ### Étape 3 : Créer les actions de routage
 
 **Chemin A : Approbation automatique (montant < 1 000 €)**
+
+#### Schéma : chemin automatique
+
+<figure><img src="../../../.gitbook/assets/decision-action-auto-fr.png" alt="Chemin A de l’exemple : définir les champs d’approbation, approuver le document puis exporter. Le courriel de confirmation est facultatif. Ce schéma décrit les actions à configurer, pas une exécution observée."><figcaption><p>Chemin A de l’exemple : définir les champs d’approbation, approuver le document puis exporter. Le courriel de confirmation est facultatif. Ce schéma décrit les actions à configurer, pas une exécution observée.</p></figcaption></figure>
+
+<details>
+<summary>Actions du chemin A : approbation automatique</summary>
 
 ```
 Actions:
@@ -353,14 +486,23 @@ Actions:
 5. Send confirmation email (optional)
 ```
 
+</details>
+
 **Chemin B : Approbation par la responsable (1 000 € ≤ montant < 10 000 €)**
+
+#### Schéma : tâche de la responsable
+
+<figure><img src="../../../.gitbook/assets/decision-action-manager-fr.png" alt="Chemin B de l’exemple : créer une tâche pour la responsable, notifier et attendre son résultat. Seul l’accord permet l’export ; un refus renvoie ici au fournisseur. Le délai de trois jours et les destinataires sont des choix de configuration."><figcaption><p>Chemin B de l’exemple : créer une tâche pour la responsable, notifier et attendre son résultat. Seul l’accord permet l’export ; un refus renvoie ici au fournisseur. Le délai de trois jours et les destinataires sont des choix de configuration.</p></figcaption></figure>
+
+<details>
+<summary>Actions du chemin B : tâche de la responsable</summary>
 
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
 2. Set field "Approval_Level" = "1"
 3. tasks_create:
-   - Title: "Approve Invoice {{DOCUMENT_NUMBER}}"
+   - Title: "Approuver la facture {{DOCUMENT_NUMBER}}"
    - Assign to: Department_Manager
    - Priority: Medium
    - Deadline: 3 days
@@ -370,7 +512,14 @@ Actions:
 7. If rejected: Return to supplier
 ```
 
+</details>
+
 **Chemin C : Approbation par le directeur (10 000 € ≤ montant < 50 000 €)**
+
+Lecture visuelle de cet exemple : [analyse du fournisseur](#schema-analyse-du-fournisseur), [accords successifs](#schema-accords-successifs).
+
+<details>
+<summary>Actions du chemin C : contrôles et accords requis</summary>
 
 ```
 Actions:
@@ -385,22 +534,36 @@ Actions:
      - Any rejection: Stop chain & handle rejection as configured
      - Both positive approvals required
    ELSE IF Supplier_Risk_Rating = "HIGH":
-     - Additional risk checks and Director approval
+     - Additional risk checks and Manager pre-approval
+     - Wait for positive Manager approval before Director approval
+     - Wait for positive Director approval before export
+     - Pending or rejection: Stop progression and handle result as configured
    ELSE:
      - Create Task: Director approval only
 4. Priority: High
-5. Deadline: 2 days
+5. Deadline: 2 days for Path C approval tasks; configure risk-check deadlines separately
 6. Send email notifications
 7. Wait for completion
 8. If all approved: Export
 9. If any rejected: Return to supplier
 ```
 
+</details>
+
+#### Schéma : accords successifs
+
 <figure><img src="../../../.gitbook/assets/decision-approvals-sequence-fr.png" alt="Exemple d’approbations successives : créer la tâche de la direction financière seulement après l’accord du directeur, puis attendre son résultat. Poursuivre uniquement après les deux accords. Un refus arrête la chaîne et suit le traitement configuré ; un résultat en attente ne permet pas de continuer."><figcaption><p>Exemple d’approbations successives : créer la tâche de la direction financière seulement après l’accord du directeur, puis attendre son résultat. Poursuivre uniquement après les deux accords. Un refus arrête la chaîne et suit le traitement configuré ; un résultat en attente ne permet pas de continuer.</p></figcaption></figure>
 
 Le traitement d’un refus peut, selon votre configuration, renvoyer le document au fournisseur ou suivre un autre circuit. Ce schéma impose seulement l’arrêt de la chaîne d’approbation concernée ; il ne prescrit pas un contrôle manuel dans tous les cas.
 
 **Chemin D : Approbation par la direction générale (≥ 50 000 €)**
+
+#### Schéma : direction générale
+
+<figure><img src="../../../.gitbook/assets/decision-action-executive-fr.png" alt="Chemin D de l’exemple : deux approbations successives à partir de 50 000 €, puis une troisième seulement au-delà de 100 000 €. Chaque tâche suivante attend l’accord précédent. Les rôles, délais, notifications et suites d’un refus doivent être configurés."><figcaption><p>Chemin D de l’exemple : deux approbations successives à partir de 50 000 €, puis une troisième seulement au-delà de 100 000 €. Chaque tâche suivante attend l’accord précédent. Les rôles, délais, notifications et suites d’un refus doivent être configurés.</p></figcaption></figure>
+
+<details>
+<summary>Actions du chemin D : direction générale</summary>
 
 ```
 Actions:
@@ -419,6 +582,8 @@ Actions:
 10. If any rejected: Executive review meeting
 ```
 
+</details>
+
 ***
 
 ## Modèles avancés de logique de décision
@@ -428,6 +593,13 @@ Les modèles suivants sont des variantes indépendantes. Le score, les seuils pa
 ### Modèle 1 : Routage basé sur un score
 
 **Calculer un score de risque entier et router en conséquence dans cet exemple :**
+
+#### Schéma : score de risque
+
+<figure><img src="../../../.gitbook/assets/decision-risk-score-fr.png" alt="Variante indépendante : les cinq contributions connues donnent un score entier de 0 à 100, puis un circuit. Les bornes 51 et 76 délimitent des catégories ; elles ne sont pas des scores effectivement produits par ces cinq poids. Définissez séparément le traitement des données inconnues."><figcaption><p>Variante indépendante : les cinq contributions connues donnent un score entier de 0 à 100, puis un circuit. Les bornes 51 et 76 délimitent des catégories ; elles ne sont pas des scores effectivement produits par ces cinq poids. Définissez séparément le traitement des données inconnues.</p></figcaption></figure>
+
+<details>
+<summary>Calcul du score de risque et ses intervalles</summary>
 
 ```
 Risk Score Calculation:
@@ -448,7 +620,14 @@ Routing:
   IF Score > 75: Executive approval + fraud check
 ```
 
+</details>
+
 **Mise en œuvre :**
+
+Lecture visuelle de cet exemple : [score de risque](#schema-score-de-risque).
+
+<details>
+<summary>Mise en œuvre illustrative du score</summary>
 
 ```
 1. ACTION_CALCULATE_FIELD: Calculate risk score
@@ -457,11 +636,20 @@ Routing:
 4. Route based on score
 ```
 
+</details>
+
 ***
 
 ### Modèle 2 : Matrice basée sur le service
 
 **Règles d'approbation différentes par service :**
+
+#### Schéma : matrice par service
+
+<figure><img src="../../../.gitbook/assets/decision-department-matrix-fr.png" alt="Matrice indépendante par service : le seuil varie entre informatique, finances, opérations et cas général. L’égalité choisit la tranche supérieure. Les rôles multiples doivent être configurés ; leur présence ne prouve pas une approbation séquentielle."><figcaption><p>Matrice indépendante par service : le seuil varie entre informatique, finances, opérations et cas général. L’égalité choisit la tranche supérieure. Les rôles multiples doivent être configurés ; leur présence ne prouve pas une approbation séquentielle.</p></figcaption></figure>
+
+<details>
+<summary>Matrice de seuils par service</summary>
 
 ```
 Department Matrix:
@@ -483,7 +671,14 @@ Department Matrix:
     Amount ≥ €2,000: Department Director
 ```
 
+</details>
+
 **Mise en œuvre :**
+
+Lecture visuelle de cet exemple : [matrice par service](#schema-matrice-par-service).
+
+<details>
+<summary>Mise en œuvre illustrative de la matrice par service</summary>
 
 ```
 1. Check Department field
@@ -492,11 +687,20 @@ Department Matrix:
 4. Different thresholds per department
 ```
 
+</details>
+
 ***
 
 ### Modèle 3 : Logique basée sur le temps
 
 **Règles différentes selon le moment :**
+
+#### Schéma : variantes temporelles
+
+<figure><img src="../../../.gitbook/assets/decision-time-variants-fr.png" alt="Trois variantes indépendantes : fin de mois, créneau de travail et période comptable. File d’attente et permanence sont des alternatives à choisir. Une date hors période courante n’est pas nécessairement antérieure ; son cas doit être vérifié séparément."><figcaption><p>Trois variantes indépendantes : fin de mois, créneau de travail et période comptable. File d’attente et permanence sont des alternatives à choisir. Une date hors période courante n’est pas nécessairement antérieure ; son cas doit être vérifié séparément.</p></figcaption></figure>
+
+<details>
+<summary>Trois variantes temporelles indépendantes</summary>
 
 ```
 Month-End Processing (Last 3 days of month):
@@ -517,20 +721,33 @@ Business Hours vs After Hours:
     - Queue for next business day
     - OR route to on-call approver
 
-Fiscal Period:
-  IF Document_Date in Current_Fiscal_Period:
+Fiscal Period (independent illustrative policy):
+  IF Document_Date is missing or invalid:
+    - Handle invalid or unknown date as configured
+  ELSE IF Document_Date in Current_Fiscal_Period:
     - Standard processing
-  ELSE:
+  ELSE IF Document_Date in any Fiscal_Period before Current_Fiscal_Period:
     - Flag as "Prior Period"
     - Require accounting approval
     - Additional checks
+  ELSE:
+    - Future or other fiscal period: Handle as configured
 ```
+
+</details>
 
 ***
 
 ### Modèle 4 : Routage basé sur les exceptions
 
 **Acheminer les exceptions séparément :**
+
+#### Schéma : gravité des exceptions
+
+<figure><img src="../../../.gitbook/assets/decision-exception-severity-fr.png" alt="Exemple de politique de gravité : continuer seulement après la correction prévue ou la résolution attendue. Une exception critique arrête le traitement. Les exemples de détection ne fixent pas, à eux seuls, leur gravité."><figcaption><p>Exemple de politique de gravité : continuer seulement après la correction prévue ou la résolution attendue. Une exception critique arrête le traitement. Les exemples de détection ne fixent pas, à eux seuls, leur gravité.</p></figcaption></figure>
+
+<details>
+<summary>Politique de gravité des exceptions</summary>
 
 ```
 Exception Detection:
@@ -563,11 +780,15 @@ Exception Types:
   - Amount discrepancy
 ```
 
+</details>
+
 ***
 
 ## Diagramme complet de logique de décision
 
 Les graphiques présentent les étapes essentielles. L’arbre textuel ci-dessous conserve le détail technique de l’exemple ; ses destinations restent à configurer.
+
+Les explications visuelles du même exemple sont : [vue générale](#schema-vue-generale), [tranches de montant](#schema-tranches-de-montant), [analyse du fournisseur](#schema-analyse-du-fournisseur), [accords successifs](#schema-accords-successifs), [chemin automatique](#schema-chemin-automatique), [tâche de la responsable](#schema-tache-de-la-responsable), [direction générale](#schema-direction-generale).
 
 <details>
 <summary>Consulter l’arbre textuel détaillé de l’exemple complet</summary>
@@ -695,8 +916,9 @@ INVOICE ARRIVES
 │  │  │
 │  │  ├─ YES → ENHANCED APPROVAL
 │  │  │        Additional fraud checks
-│  │  │        Director approval required
-│  │  │        Extended deadline
+│  │  │        Manager pre-approval, then Director approval
+│  │  │        Wait for each positive result; pending or rejection must not continue
+│  │  │        Configure risk-check deadlines; Path C approval tasks indicate 2 days
 │  │  │        → END (Enhanced Path)
 │  │  │
 │  │  └─ NO → STANDARD DIRECTOR APPROVAL
@@ -720,7 +942,18 @@ INVOICE ARRIVES
 
 ### 1. Garder la logique claire et maintenable
 
+La comparaison suivante présente une condition simple, une condition dense et une autre politique en étapes. Le schéma distingue leurs objectifs sans affirmer une équivalence.
+
+#### Schéma : décisions maintenables
+
+<figure><img src="../../../.gitbook/assets/decision-staged-maintainability-fr.png" alt="L’exemple en quatre étapes illustre une politique distincte de la condition dense. Il rend chaque résultat négatif visible ; ce n’est pas une transformation logiquement équivalente démontrée. Définissez les listes autorisées et les traitements de sortie."><figcaption><p>L’exemple en quatre étapes illustre une politique distincte de la condition dense. Il rend chaque résultat négatif visible ; ce n’est pas une transformation logiquement équivalente démontrée. Définissez les listes autorisées et les traitements de sortie.</p></figcaption></figure>
+
 ✅ **Bon :**
+
+Lecture visuelle de cet exemple : [condition simple](#schema-condition-simple).
+
+<details>
+<summary>Exemple simple : chemin de montant élevé</summary>
 
 ```
 IF Amount > 10000:
@@ -729,14 +962,30 @@ ELSE:
   → Standard path
 ```
 
+</details>
+
 ❌ **Mauvais (trop complexe) :**
+
+Lecture visuelle de cet exemple : [décisions maintenables](#schema-decisions-maintenables).
+
+<details>
+<summary>Exemple de condition dense</summary>
 
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
   → Complex path
 ```
 
-**Mieux : Décomposer en étapes :**
+</details>
+
+**Autre exemple : une politique distincte en quatre étapes :**
+
+Cet exemple distingue les issues à chaque étape. Il ne constitue pas une réécriture logiquement équivalente de la condition dense ci-dessus : les listes de fournisseurs, les statuts valides, les services autorisés et les traitements des résultats négatifs doivent être définis pour ce second exemple.
+
+Lecture visuelle de cet exemple : [décisions maintenables](#schema-decisions-maintenables).
+
+<details>
+<summary>Autre exemple : politique en quatre étapes</summary>
 
 ```
 Step 1: IF Amount > 10000: Continue, ELSE: Standard path
@@ -744,6 +993,8 @@ Step 2: IF Supplier in allowed list: Continue, ELSE: Review
 Step 3: IF Status valid: Continue, ELSE: Reject
 Step 4: IF Department authorized: Approve, ELSE: Escalate
 ```
+
+</details>
 
 ***
 
@@ -758,6 +1009,13 @@ Step 4: IF Department authorized: Approve, ELSE: Escalate
 
 **Exemple de documentation :**
 
+#### Schéma : fiche de règle
+
+<figure><img src="../../../.gitbook/assets/decision-rule-documentation-fr.png" alt="Fiche illustrative de la règle BR-INV-001 : objectif, seuils, exception, responsable et date de référence. Le renvoi aux quatre tranches évite de dupliquer la règle ; cette fiche ne prouve ni son approbation ni son exécution."><figcaption><p>Fiche illustrative de la règle BR-INV-001 : objectif, seuils, exception, responsable et date de référence. Le renvoi aux quatre tranches évite de dupliquer la règle ; cette fiche ne prouve ni son approbation ni son exécution.</p></figcaption></figure>
+
+<details>
+<summary>Fiche illustrative de la règle BR-INV-001</summary>
+
 ```
 Decision Point: Amount Threshold Check
 Business Rule: BR-INV-001 (Invoice Approval Matrix)
@@ -771,6 +1029,8 @@ Exceptions: Urgent invoices skip to highest level
 Updated: 2025-10-23
 Owner: Finance Department
 ```
+
+</details>
 
 ***
 
@@ -814,6 +1074,13 @@ Ces résultats sont attendus et restent à vérifier dans votre configuration. R
 
 **Exemple fictif d’indicateurs :** les valeurs ci-dessous illustrent un rapport ; elles ne prouvent ni les performances actuelles ni l’exécution de ce workflow.
 
+#### Schéma : indicateurs fictifs
+
+<figure><img src="../../../.gitbook/assets/decision-fictional-metrics-fr.png" alt="Exemple fictif : les quatre circuits totalisent 1 250 factures. Les pourcentages de circuit sont arrondis. Les 15 exceptions, soit 1,2 %, peuvent concerner ces mêmes factures ; elles ne forment pas un cinquième circuit. Les durées ne sont pas des performances mesurées de DocBits."><figcaption><p>Exemple fictif : les quatre circuits totalisent 1 250 factures. Les pourcentages de circuit sont arrondis. Les 15 exceptions, soit 1,2 %, peuvent concerner ces mêmes factures ; elles ne forment pas un cinquième circuit. Les durées ne sont pas des performances mesurées de DocBits.</p></figcaption></figure>
+
+<details>
+<summary>Exemple fictif de répartition et de durées</summary>
+
 ```
 Month: October 2025
 Total Invoices: 1,250
@@ -832,6 +1099,8 @@ Processing Time:
 
 Exceptions: 15 (1.2%)
 ```
+
+</details>
 
 ***
 

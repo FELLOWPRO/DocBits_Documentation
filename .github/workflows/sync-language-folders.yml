@@ -84,7 +84,7 @@ jobs:
         env:
           ONLY_LANG: ${{ github.event.inputs.lang }}
         run: |
-          set -u
+          set -uo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 

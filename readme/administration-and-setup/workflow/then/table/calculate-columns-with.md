@@ -41,6 +41,8 @@ Dezelfde voorbeeldfactuur bevat twee regels. De bronkolommen hebben deze waarden
 
 Na het uitvoeren van de kaart zijn **20,00** en **12,00** in de resultaatkolom opgeslagen. De hoeveelheid en eenheidsprijs blijven gelijk. Het gaat om afzonderlijke berekeningen per rij; de kaart maakt hiervan geen gezamenlijke factuursom.
 
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-nl-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-nl-light-20261025.png" alt="Na het heropenen van dezelfde factuur bevat TOTAL_AMOUNT voor de twee regels 20,00 en 12,00. De oorspronkelijke bedragen in NET_AMOUNT blijven behouden." width="735"></picture><figcaption><p>Na het heropenen van dezelfde factuur bevat TOTAL_AMOUNT voor de twee regels 20,00 en 12,00. De oorspronkelijke bedragen in NET_AMOUNT blijven behouden.</p></figcaption></figure>
+
 ## Controleren en tegenvoorbeelden
 
 - Controleer of de juiste tabel, bronkolommen, bewerking en resultaatkolom zijn gekozen.

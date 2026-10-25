@@ -41,6 +41,8 @@ La fattura contiene due righe. Prima del calcolo la colonna del risultato non es
 
 Nella dimostrazione, la scheda crea la colonna del risultato. I valori **20,00** e **12,00** restano visibili dopo aver riaperto la fattura. In questo esempio le colonne di ingresso e gli importi originali di `NET_AMOUNT` vengono conservati. Se la colonna del risultato scelta contiene già valori, il calcolo li sostituisce.
 
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-it-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-it-light-20261025.png" alt="Dopo aver riaperto la stessa fattura, TOTAL_AMOUNT contiene 20,00 e 12,00 per le due righe. Gli importi originali di NET_AMOUNT sono conservati." width="735"></picture><figcaption><p>Dopo aver riaperto la stessa fattura, TOTAL_AMOUNT contiene 20,00 e 12,00 per le due righe. Gli importi originali di NET_AMOUNT sono conservati.</p></figcaption></figure>
+
 ## Controlli e controesempi
 
 - Controlla entrambe le colonne di ingresso e verifica i risultati salvati dopo il calcolo.

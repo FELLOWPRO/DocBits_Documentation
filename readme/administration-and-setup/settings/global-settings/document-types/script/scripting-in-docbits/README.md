@@ -1,5 +1,13 @@
 # Skrypty w DocBits
 
+## Film instruktażowy: najważniejsze funkcje skryptów
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/pl.mp4" %}
+Najważniejsze funkcje skryptów w DocBits
+{% endembed %}
+
+Film pokazuje w edytorze skryptów, jak odczytać pole (`get_field_value`), ustawić wartość (`set_field_value`), obliczyć termin płatności (`set_date_value`), oznaczyć pole jako nieprawidłowe (`set_field_as_invalid`) i uczynić je obowiązkowym (`set_is_required`).
+
 ## Przewodnik po skryptach Docbits
 
 Witamy w przewodniku po skryptach Docbits! Tutaj dowiesz się, jak używać skryptów do automatyzacji i ulepszania przetwarzania dokumentów w Docbits. Skrypty umożliwiają niestandardową manipulację polami, transformację danych i implementację logiki w różnych typach dokumentów.

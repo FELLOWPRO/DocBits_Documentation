@@ -2,7 +2,8 @@
 """Sync docs.docbits.com markdown pages into the fulltextsearch docs index
 (CORE-6111, Settings-Assistent doc search).
 
-Two modes:
+Four modes (diff/full ingest, plus purge and verify used by the manual
+"Docs Search Rebuild" workflow and the post-sync self test):
 
   diff --before SHA --after SHA --lang LANG
       Push mode. Diffs the two commits under readme/, POSTs changed pages
@@ -42,14 +43,22 @@ import html
 import json
 import os
 import re
+import string
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-README_ROOT = "readme"
+# Folder the pages are read from. English is `docbits/` on main (the GitBook
+# space imports it; `readme/` is an outdated copy, only 658 of its 832 pages
+# exist on the live site) and `readme/` is the layout of the language branches.
+# The language spaces are mirrored into main:<folder>/ by language_bridge.py
+# (deutsch/, espanol/, ...). The all-languages sync runs from main with
+# DOCS_ROOT set per language, so no language branch needs this script.
+README_ROOT = os.environ.get("DOCS_ROOT", "readme")
 SUMMARY_PATH = os.path.join(README_ROOT, "SUMMARY.md")
 BASE_DOCS_URL = "https://docs.docbits.com"
 # GitBook's asset convention (see resolve_images_in_markdown) — an
@@ -76,7 +85,10 @@ _IMG_TAG_RE = re.compile(r"<img\b([^>]*)>", re.IGNORECASE)
 _IMG_ATTR_RE = re.compile(r'(\w+)\s*=\s*"([^"]*)"')
 # Plain markdown ![alt](src) — also handled since not every image in this
 # repo uses the GitBook HTML form.
-_MD_IMAGE_RE = re.compile(r'!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)')
+_MD_IMAGE_RE = re.compile(
+    r'!\[([^\]]*)\]\(\s*(?:<([^>\n]+)>|((?:\\.|[^()\s]|\((?:\\.|[^()])*\))+))'
+    r'(?:\s+"[^"]*")?\s*\)'
+)
 
 # Extracts the real, directly-fetchable CDN url from GitBook's own
 # docs.docbits.com/~gitbook/image?url=<encoded>&...&sign=<hmac>&... proxy —
@@ -112,19 +124,102 @@ def published_rel_path(md_path: str) -> str | None:
     return None
 
 
+# Public URL segment of each GitBook language space. `docs.docbits.com/es/...`
+# is a 404 and `/de/` only redirects, the real spaces are these folders
+# (same names as the language_bridge folders). "" = site root (English).
+LANG_URL_SLUG = {
+    "main": "",
+    "de": "deutsch",
+    "es": "espanol",
+    "fr": "french",
+    "it": "italian",
+    "nl": "dutch",
+    "pl": "polish",
+    "pt": "portuguese",
+    "zh": "chinese",
+}
+
+# The Chinese space publishes the top-level folders under their pinyin
+# titles (docs.docbits.com/chinese/zui-zhong-yong-hu-yu-he-zuo-huo-ban/
+# end-user-section/ai-table); everything below the first segment keeps the
+# folder/file names. Checked against the space's sitemap-pages.xml
+# (836 pages, same count as de/es).
+ZH_TOP_SEGMENT = {
+    "overview-and-basics": "gai-shu-yu-ji-chu",
+    "administration-and-setup": "guan-li-yu-she-zhi",
+    "advanced-functions-and-tools": "gao-ji-gong-neng-yu-gong-ju",
+    "end-user-and-partner-section": "zui-zhong-yong-hu-yu-he-zuo-huo-ban",
+    "infor-integration-and-configuration": "infor-ji-cheng-yu-pei-zhi",
+    "security": "security",
+}
+
+
+_SITEMAP_CACHE: dict[str, set[str] | None] = {}
+
+
+def _live_urls(lang: str) -> set[str] | None:
+    """Canonical page URLs of one language space, from GitBook's
+    sitemap-pages.xml (cached). None when it cannot be fetched (the caller then
+    keeps the path-derived URL)."""
+    if lang in _SITEMAP_CACHE:
+        return _SITEMAP_CACHE[lang]
+    slug = LANG_URL_SLUG.get(lang, lang)
+    url = f"{BASE_DOCS_URL}/{slug + '/' if slug else ''}sitemap-pages.xml"
+    urls: set[str] | None
+    try:
+        request = urllib.request.Request(url, headers={"User-Agent": "docs-search-sync"})
+        with urllib.request.urlopen(request, timeout=60) as response:
+            xml = response.read().decode("utf-8", "replace")
+        urls = {u.rstrip("/") for u in re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", xml)}
+        if not urls:
+            urls = None
+    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        print(f"::warning::sitemap {url} not available ({exc}); keeping path-derived URLs")
+        urls = None
+    _SITEMAP_CACHE[lang] = urls
+    return urls
+
+
+def _canonical(url: str, lang: str) -> str:
+    """GitBook builds a page's URL from its position in SUMMARY.md, not from the
+    file path (a page nested under another publishes below it), and a path-
+    derived URL then 404s or only redirects. Pick the real URL from the
+    sitemap: exact match, else the unique sitemap URL with the same last
+    segment, else the one sharing the longest path suffix (needs >= 2 segments
+    in common); otherwise keep the guess."""
+    live = _live_urls(os.environ.get("SYNC_SITEMAP_LANG", lang))
+    if not live or url in live:
+        return url
+    segments = url.split("/")
+    candidates = [u for u in live if u.rsplit("/", 1)[-1] == segments[-1]]
+    if len(candidates) == 1:
+        return candidates[0]
+    best, best_len, tie = None, 1, False
+    for candidate in candidates:
+        cs = candidate.split("/")
+        n = 0
+        while n < min(len(cs), len(segments)) and cs[-1 - n] == segments[-1 - n]:
+            n += 1
+        if n > best_len:
+            best, best_len, tie = candidate, n, False
+        elif n == best_len and best is not None:
+            tie = True
+    return best if best and not tie else url
+
+
 def full_url(rel_path: str, lang: str) -> str:
     """Build the live docs.docbits.com URL for a page.
 
-    Verified against live pages (see PR description): the `main` branch
-    (English) publishes at the site root with no prefix; other language
-    branches publish under a `/{lang}` path segment (confirmed for `de` —
-    `docs.docbits.com/de/...`). `lang` is otherwise a generic parameter (a
-    branch not yet wired to a live GitBook variant, e.g. `es`, would just
-    404 today — that's a docs-hosting decision, not something this script
-    special-cases).
-    """
-    prefix = BASE_DOCS_URL if lang == "main" else f"{BASE_DOCS_URL}/{lang}"
-    return prefix if not rel_path else f"{prefix}/{rel_path}"
+    The language spaces publish under their folder name (see LANG_URL_SLUG);
+    English (`main`) at the site root. The path-derived guess is then replaced
+    by the real URL from the space's sitemap (see _canonical)."""
+    if lang == "zh" and rel_path:
+        first, _, rest = rel_path.partition("/")
+        rel_path = ZH_TOP_SEGMENT.get(first, first) + (f"/{rest}" if rest else "")
+    slug = LANG_URL_SLUG.get(lang, lang)
+    prefix = f"{BASE_DOCS_URL}/{slug}" if slug else BASE_DOCS_URL
+    guess = prefix if not rel_path else f"{prefix}/{rel_path}"
+    return _canonical(guess, lang) if rel_path else guess
 
 
 def _parse_summary_links(text: str) -> set[str]:
@@ -222,14 +317,54 @@ def _iter_raw_images(markdown_text: str) -> list[tuple[tuple[int, int], str, str
     """Yield ((start, end), src, alt) for every image reference in document
     order — GitBook's exported `<figure><img src=... alt=...>` HTML form
     and plain markdown `![alt](src)` alike."""
+    # Mask code rather than deleting it so match offsets still refer to the
+    # original markdown. Release notes contain literal HTML image examples.
+    lines: list[str] = []
+    fence: tuple[str, int] | None = None
+    list_indents: list[int] = []
+    indented_code = False
+    previous_blank = True
+    for line in markdown_text.splitlines(keepends=True):
+        expanded = line.expandtabs(4)
+        indent = len(expanded) - len(expanded.lstrip(" "))
+        blank = not line.strip()
+        while list_indents and not blank and indent < list_indents[-1]:
+            list_indents.pop()
+        code_indent = (list_indents[-1] if list_indents else 0) + 4
+        if not fence and not blank and indent >= code_indent and (indented_code or previous_blank):
+            lines.append(" " * len(line))
+            indented_code = True
+            continue
+        if not blank:
+            indented_code = False
+        item = re.match(r"^( *)(?:[-+*]|\d+[.)])(?: +|$)", expanded)
+        if item and indent < code_indent:
+            list_indents.append(item.end() or indent + 2)
+        marker = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)", line)
+        if fence:
+            lines.append(" " * len(line))
+            if (marker and marker[1][0] == fence[0]
+                    and len(marker[1]) >= fence[1] and not marker[2].strip()):
+                fence = None
+        elif marker and not (marker[1][0] == "`" and "`" in marker[2]):
+            fence = (marker[1][0], len(marker[1]))
+            lines.append(" " * len(line))
+        else:
+            lines.append(line)
+        previous_blank = blank
+    searchable = "".join(lines)
+    searchable = re.sub(
+        r"(?<!`)(`+)(?!`)([\s\S]*?)(?<!`)\1(?!`)",
+        lambda match: " " * len(match[0]), searchable,
+    )
     found: list[tuple[tuple[int, int], str, str]] = []
-    for match in _IMG_TAG_RE.finditer(markdown_text):
+    for match in _IMG_TAG_RE.finditer(searchable):
         attrs = dict(_IMG_ATTR_RE.findall(match.group(1)))
         src = attrs.get("src")
         if src:
             found.append((match.span(), src, attrs.get("alt", "")))
-    for match in _MD_IMAGE_RE.finditer(markdown_text):
-        found.append((match.span(), match.group(2), match.group(1)))
+    for match in _MD_IMAGE_RE.finditer(searchable):
+        found.append((match.span(), match.group(2) or match.group(3), match.group(1)))
     found.sort(key=lambda item: item[0][0])
     return found
 
@@ -269,7 +404,17 @@ def _fetch_page_blob_to_url_map(page_url: str) -> dict[str, str]:
         inner_match = _GITBOOK_PROXY_INNER_URL_RE.search(proxied_src)
         if not inner_match:
             continue
+        # External source images are already published through GitBook's
+        # signed same-origin proxy. Preserve that exact URL; never invent a
+        # signature or expand the Assistant's image-host allowlist.
         inner_url = urllib.parse.unquote(inner_match.group(1))
+        proxy = urllib.parse.urlparse(proxied_src)
+        if (proxy.scheme != "https" or proxy.hostname != "docs.docbits.com"
+                or proxy.path != "/~gitbook/image"
+                or not urllib.parse.parse_qs(proxy.query).get("sign")):
+            continue
+        resolved_url = inner_url if _is_allowed_image_host(inner_url) else proxied_src
+        mapping[inner_url] = resolved_url
         blob_match = _GIT_BLOB_SHA_RE.search(inner_url)
         if blob_match and _is_allowed_image_host(inner_url):
             mapping[blob_match.group(1)] = inner_url
@@ -286,8 +431,8 @@ def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) 
 
     - Already-absolute src on an allowed host (docs.docbits.com or a
       GitBook per-space files CDN): kept as-is.
-    - Already-absolute src on any other host (pasted googleusercontent.com
-      links etc.): dropped.
+    - Already-absolute src on another host: use its existing signed
+      docs.docbits.com image proxy from the published page.
     - Relative src (GitBook's `.gitbook/assets/...` convention): resolved
       via the local file's git blob sha, matched against the live page's
       own rendered image urls (see `_fetch_page_blob_to_url_map`) — the
@@ -307,13 +452,18 @@ def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) 
         out.append(markdown_text[last_end:start])
         last_end = end
 
+        src = html.unescape(re.sub(r"\\([" + re.escape(string.punctuation) + r"])", r"\1", src))
         resolved: str | None = None
         if src.startswith("http://") or src.startswith("https://"):
             if _is_allowed_image_host(src):
                 resolved = src
+            else:
+                if blob_map is None:
+                    blob_map = _fetch_page_blob_to_url_map(page_url)
+                resolved = blob_map.get(src)
         else:
             local_rel_path = os.path.normpath(
-                os.path.join(os.path.dirname(md_path), src)
+                os.path.join(os.path.dirname(md_path), urllib.parse.unquote(src))
             )
             local_abs_path = os.path.join(REPO_ROOT, local_rel_path)
             if os.path.exists(local_abs_path):
@@ -337,19 +487,68 @@ def _call_endpoint(path: str, payload: dict, *, dry_run: bool) -> dict:
         return {}
     base_url = os.environ["DOCS_INGEST_URL"].rstrip("/")
     key = os.environ["DOCS_INGEST_KEY"]
-    request = urllib.request.Request(
-        f"{base_url}{path}",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json", "X-Service-Key": key},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=60) as response:
-            return json.loads(response.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode("utf-8", "replace")
-        print(f"::error::POST {path} failed ({exc.code}): {body}", file=sys.stderr)
-        raise
+    data = json.dumps(payload).encode("utf-8")
+    # A long full sync meets gateway hiccups (502/503/504, timeouts) on the
+    # shared ingress; one bad page must not fail a 40 minute run. Client
+    # errors (4xx, e.g. 401/422) are never retried.
+    delays = (5, 15, 45)
+    for attempt in range(len(delays) + 1):
+        request = urllib.request.Request(
+            f"{base_url}{path}",
+            data=data,
+            headers={"Content-Type": "application/json", "X-Service-Key": key},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=120) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode("utf-8", "replace")
+            if exc.code in (502, 503, 504) and attempt < len(delays):
+                print(f"::warning::POST {path} {exc.code}, retry {attempt + 1}/{len(delays)}")
+                time.sleep(delays[attempt])
+                continue
+            print(f"::error::POST {path} failed ({exc.code}): {body}", file=sys.stderr)
+            raise
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt < len(delays):
+                print(f"::warning::POST {path} {exc}, retry {attempt + 1}/{len(delays)}")
+                time.sleep(delays[attempt])
+                continue
+            print(f"::error::POST {path} failed: {exc}", file=sys.stderr)
+            raise
+    raise RuntimeError("unreachable")
+
+
+_VIDEO_EMBED_RE = re.compile(
+    r"\{%\s*embed\s+url=\"(https://docbits-videos\.fra1\.cdn\.digitaloceanspaces\.com/"
+    r"settings-assistant/[A-Za-z0-9_.-]+/v\d+/[a-z]{2}\.mp4)\"\s*%\}"
+)
+_HEADING_RE = re.compile(r"^#{1,6}\s+(.*?)\s*#*\s*$")
+MAX_VIDEOS_PER_PAGE = 20
+
+
+def extract_videos(markdown_text: str, page_title: str) -> list[dict]:
+    """Explainer videos of a page: every `{% embed url="...mp4" %}` on the
+    docbits-videos CDN, in page order, titled by the nearest heading above it
+    (a leading "3. " is dropped) or by the page title. The fulltext service
+    stores them on every chunk of the page and the Assistant shows them as
+    "Watch video" buttons; it validates the same URL pattern again."""
+    videos: list[dict] = []
+    seen: set[str] = set()
+    heading = ""
+    for line in markdown_text.splitlines():
+        match = _HEADING_RE.match(line)
+        if match:
+            heading = re.sub(r"^\d+\.\s*", "", match.group(1)).strip()
+            continue
+        for embed in _VIDEO_EMBED_RE.finditer(line):
+            url = embed.group(1)
+            if url in seen:
+                continue
+            seen.add(url)
+            videos.append({"title": (heading or page_title)[:200], "url": url})
+    return videos[:MAX_VIDEOS_PER_PAGE]
 
 
 def ingest_md_file(
@@ -360,6 +559,10 @@ def ingest_md_file(
     dry_run: bool,
     published: set[str] | None = None,
 ) -> None:
+    # Navigation changes are handled separately by run_diff; SUMMARY.md is
+    # intentionally not a published page and must never generate a warning.
+    if md_path == SUMMARY_PATH:
+        return
     rel = published_rel_path(md_path)
     if rel is None:
         return
@@ -376,7 +579,8 @@ def ingest_md_file(
     title = extract_title(markdown_text, fallback=rel.rsplit("/", 1)[-1] or "DocBits")
     url = full_url(rel, lang)
     markdown_text = resolve_images_in_markdown(markdown_text, md_path, url)
-    print(f"ingest {md_path} -> {url}")
+    videos = extract_videos(markdown_text, title)
+    print(f"ingest {md_path} -> {url}" + (f" ({len(videos)} video)" if videos else ""))
     _call_endpoint(
         "/docs/ingest",
         {
@@ -385,6 +589,7 @@ def ingest_md_file(
             "lang": lang,
             "commit_sha": commit_sha,
             "markdown": markdown_text,
+            "videos": videos,
         },
         dry_run=dry_run,
     )
@@ -634,9 +839,72 @@ def run_full(lang: str, *, reconcile_only: bool, dry_run: bool) -> None:
     _call_endpoint("/docs/reconcile", {"lang": lang, "urls": urls}, dry_run=dry_run)
 
 
+# One real question per language and the page that must answer it. `verify`
+# asks the live search (hybrid kNN + BM25 + rerank through DigitalOcean
+# serverless) and fails the run when the page is missing from the top hits or
+# when the service had to fall back to BM25 only (= embedding/rerank broken).
+VERIFY_PAGE = "end-user-and-partner-section/end-user-section/ai-table"
+VERIFY_QUERIES = {
+    "main": "How do I read the AI table and what does each button do?",
+    "de": "Wie lese ich die KI-Tabelle und was macht jede Schaltfläche?",
+    "es": "¿Cómo leo la tabla AI y qué hace cada botón?",
+    "fr": "Comment lire le tableau IA et que fait chaque bouton ?",
+    "it": "Come leggo la tabella AI e cosa fa ogni pulsante?",
+    "nl": "Hoe lees ik de AI-tabel en wat doet elke knop?",
+    "pl": "Jak czytać tabelę AI i co robi każdy przycisk?",
+    "pt": "Como leio a tabela AI e o que faz cada botão?",
+    "zh": "如何阅读 AI 表格，每个按钮有什么作用？",
+}
+
+
+def purge_lang(lang: str, *, dry_run: bool) -> None:
+    """Drop one language's whole index (manual rebuild); the next ingest
+    re-creates it. Other languages are untouched."""
+    result = _call_endpoint("/docs/purge", {"lang": lang}, dry_run=dry_run)
+    print(f"purge lang={lang}: index_deleted={result.get('index_deleted')}")
+
+
+def verify_lang(lang: str, *, dry_run: bool) -> None:
+    query = VERIFY_QUERIES[lang]
+    result = _call_endpoint(
+        "/docs/search", {"query": query, "lang": lang, "k": 5}, dry_run=dry_run
+    )
+    if dry_run:
+        return
+    hits = result.get("hits", [])
+    urls = [hit.get("url", "") for hit in hits]
+    print(f"verify lang={lang}: {len(hits)} hits for {query!r}")
+    for hit in hits:
+        print(f"  {hit.get('score', 0):.3f} {hit.get('url')}")
+    problems = []
+    if not hits:
+        problems.append("no hits (index empty or language not indexed)")
+    if result.get("fallback_bm25_only"):
+        problems.append(
+            "fallback_bm25_only=true: DigitalOcean embedding/rerank was not used"
+        )
+    expected_prefix = full_url(VERIFY_PAGE, lang)
+    if hits and not any(url == expected_prefix or url.startswith(expected_prefix + "/") for url in urls):
+        problems.append(f"expected page {expected_prefix} not in the top 5")
+    space = full_url("", lang)
+    language_slugs = {slug for slug in LANG_URL_SLUG.values() if slug}
+    wrong_lang = [
+        u for u in urls
+        if not (u == space or u.startswith(space + "/"))
+        or (lang == "main" and urllib.parse.urlparse(u).path.strip("/").split("/")[0] in language_slugs)
+    ]
+    if wrong_lang:
+        problems.append(f"hits outside the {lang} language space: {wrong_lang[:2]}")
+    if problems:
+        for problem in problems:
+            print(f"::error::verify lang={lang}: {problem}", file=sys.stderr)
+        sys.exit(1)
+    print(f"verify lang={lang}: OK")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode", choices=["diff", "full"])
+    parser.add_argument("mode", choices=["diff", "full", "purge", "verify"])
     parser.add_argument("--lang", required=True)
     parser.add_argument("--before")
     parser.add_argument("--after")
@@ -658,6 +926,12 @@ def main() -> None:
         )
         sys.exit(1)
 
+    if args.mode == "purge":
+        purge_lang(args.lang, dry_run=args.dry_run)
+        return
+    if args.mode == "verify":
+        verify_lang(args.lang, dry_run=args.dry_run)
+        return
     if args.mode == "diff":
         if not args.before or not args.after:
             parser.error("diff mode requires --before and --after")

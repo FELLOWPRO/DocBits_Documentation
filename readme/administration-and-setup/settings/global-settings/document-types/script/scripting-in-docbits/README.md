@@ -1,5 +1,13 @@
 # Scripts in DocBits
 
+## Videohandleiding: de belangrijkste scriptfuncties
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/nl.mp4" %}
+De belangrijkste scriptfuncties in DocBits
+{% endembed %}
+
+De video toont in de scripteditor hoe u een veld leest (`get_field_value`), een waarde instelt (`set_field_value`), een vervaldatum berekent (`set_date_value`), een veld als ongeldig markeert (`set_field_as_invalid`) en verplicht maakt (`set_is_required`).
+
 ## Docbits Scripting Gids
 
 Welkom bij de Docbits scripting gids! Hier leer je hoe je scripts kunt gebruiken om je documentverwerking binnen Docbits te automatiseren en te verbeteren. Scripts maken aangepaste veldmanipulatie, datatransformatie en logica-implementatie mogelijk voor verschillende documenttypen.

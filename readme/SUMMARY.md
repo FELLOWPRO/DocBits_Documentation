@@ -214,6 +214,7 @@
         * [启用和管理脚本](administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md)
         * [创建和编辑脚本](administration-and-setup/settings/global-settings/document-types/script/creating-and-editing-scripts.md)
         * [测试脚本](administration-and-setup/settings/global-settings/document-types/script/testing-scripts.md)
+        * [脚本编辑器中的 AI 助手](administration-and-setup/settings/global-settings/document-types/script/script-ai-assistant.md)
         * [DocBits 中的脚本编写](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)
           * [上下文变量](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/context-variables.md)
           * [函数](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/functions.md)

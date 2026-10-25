@@ -6,56 +6,43 @@ In den Einstellungen für **OCR (optische Zeichenerkennung)** legen Sie fest, wi
 
 ## OCR-Einstellungen öffnen
 
-So öffnen Sie die OCR-Einstellungen:
+Navigieren Sie zu **Einstellungen** → **Dokumentenverarbeitung** → **OCR-Einstellungen**.
 
-*   Navigieren Sie zu: **Settings** → **Document Processing** → **OCR Settings**.
-
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+Die abgebildeten Werte, Versionen und Schalterstellungen sind Beispiele und keine allgemeine Empfehlung.
 
 ## OCR-Qualität
+
+<figure><img src="../../../.gitbook/assets/ocr-quality-current-de.png" alt="OCR-Qualität mit dem eingestellten Mindestwert und der Auswahl, wie DocBits bei geringerer Dokumentqualität vorgeht."><figcaption><p>OCR-Qualität mit dem eingestellten Mindestwert und der Auswahl, wie DocBits bei geringerer Dokumentqualität vorgeht.</p></figcaption></figure>
 
 In diesem Bereich legen Sie mit dem Qualitätsregler die Mindestqualität für die OCR-Verarbeitung fest. Verschieben Sie den Regler nach links, um den Schwellenwert zu senken, oder nach rechts, um ihn zu erhöhen.
 
 Wenn ein Dokument die festgelegte Qualität nicht erreicht, bietet DocBits drei Möglichkeiten:
 
-* **Run Anyway**\
-  Das Dokument wird unabhängig von seiner Qualität verarbeitet.
-* **Run Again After Confirmation**\
-  **DocBits** hält die Verarbeitung an und fragt nach Ihrer Bestätigung, bevor es fortfährt.
-* **Throw Error**\
-  Die Dokumentenverarbeitung wird abgebrochen. Eine Fehlermeldung weist darauf hin, dass das Dokument die erforderliche Qualität nicht erreicht.
-
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+* **Trotz geringer Qualität verarbeiten:** Das Dokument wird unabhängig von seiner Qualität verarbeitet.
+* **Nach Bestätigung erneut ausführen:** DocBits hält die Verarbeitung an und verlangt eine Bestätigung, bevor sie fortgesetzt wird.
+* **Mit Fehlermeldung abbrechen:** Die Verarbeitung wird abgebrochen. Eine Fehlermeldung weist darauf hin, dass das Dokument die erforderliche Qualität nicht erreicht.
 
 ## Allgemeine OCR-Einstellungen
 
-* **Use E-Text if Available**\
-  Wenn diese Option aktiviert ist, verwendet **DocBits** eingebetteten elektronischen Text, beispielsweise aus PDF-Dateien, anstatt eine OCR-Erkennung durchzuführen. Die direkte Textextraktion verbessert Geschwindigkeit und Genauigkeit.
-* **Use DESKEW if Available**\
-  Diese Option richtet schief eingescannte Dokumente automatisch aus. Das Begradigen der Bilder verbessert die OCR-Genauigkeit.
-*   **AI OCR Version**\
-    Hier wählen Sie eine bestimmte Version der KI-basierten OCR-Engine aus.\
-    Das kann hilfreich sein, wenn:
+<figure><img src="../../../.gitbook/assets/ocr-general-current-de.png" alt="Allgemeine OCR-Einstellungen mit den Optionen für eingebetteten Text, die Ausrichtung gescannter Seiten und die OCR-Version."><figcaption><p>Allgemeine OCR-Einstellungen mit den Optionen für eingebetteten Text, die Ausrichtung gescannter Seiten und die OCR-Version.</p></figcaption></figure>
 
-    * die derzeit ausgewählte Version nicht die gewünschten Ergebnisse liefert;
-    * Sie Probleme mit der OCR-Leistung oder -Genauigkeit untersuchen.
-
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+* **E-Text verwenden, falls verfügbar:** Wenn diese Option aktiviert ist, verwendet DocBits eingebetteten elektronischen Text, beispielsweise aus PDF-Dateien, anstatt eine OCR-Erkennung durchzuführen. Das kann erneute OCR vermeiden. Eingebetteter Text kann jedoch fehlen, fehlerhaft sein oder eine ungeeignete Reihenfolge haben. Prüfen Sie die Ergebnisse für Felder und Tabellen mit Ihren Dokumenten; eine höhere Genauigkeit ist nicht garantiert.
+* **DESKEW verwenden, wenn verfügbar:** Diese Option richtet schief eingescannte Dokumente aus. Das kann die OCR-Erkennung unterstützen.
+* **AI OCR Version:** Hier wählen Sie eine bestimmte Version der KI-basierten OCR-Engine aus. Das kann hilfreich sein, wenn die ausgewählte Version nicht die gewünschten Ergebnisse liefert oder Sie Probleme mit der OCR-Leistung oder -Genauigkeit untersuchen.
 
 ## OCR-Einstellungen für Tabellen
 
-* **Use AI Data for Tables if Available**\
-  Wenn diese Option aktiviert ist, verwendet DocBits für Tabellen OCR-Daten anstelle des eingebetteten elektronischen Texts (E-Text) – auch wenn **Use E-Text if Available** eingeschaltet ist.
+<figure><img src="../../../.gitbook/assets/ocr-tables-current-de.png" alt="OCR-Einstellungen für Tabellen mit der Option, verfügbare KI-Daten für die Tabellenverarbeitung zu verwenden."><figcaption><p>OCR-Einstellungen für Tabellen mit der Option, verfügbare KI-Daten für die Tabellenverarbeitung zu verwenden.</p></figcaption></figure>
+
+* **Verfügbare KI-Daten für Tabellen verwenden:** Wenn diese Option aktiviert ist, verwendet DocBits für Tabellen OCR-Daten anstelle des eingebetteten elektronischen Texts (E-Text) – auch wenn **E-Text verwenden, falls verfügbar** eingeschaltet ist.
 
 ## OCR-Einstellungen für Kopffelder
 
-* **Use Rules Extraction**\
-  DocBits verwendet Ihre vordefinierten Extraktionsregeln, um Kopffelder zu erkennen.
-* **Use AI Extraction**\
-  DocBits erkennt und extrahiert Kopffelder automatisch mithilfe von KI.
+<figure><img src="../../../.gitbook/assets/ocr-header-current-de.png" alt="OCR-Einstellungen für Kopffelder mit regelbasierter Extraktion, KI-Extraktion und dem Hinweis zu ihrer Ausführungsreihenfolge."><figcaption><p>OCR-Einstellungen für Kopffelder mit regelbasierter Extraktion, KI-Extraktion und dem Hinweis zu ihrer Ausführungsreihenfolge.</p></figcaption></figure>
 
-**Ausführungsreihenfolge:**\
-Wenn beide Optionen aktiviert sind, führt **DocBits** die Extraktion in dieser Reihenfolge aus:\
-**Rules Extraction → AI Extraction**\
-\
-<mark style="color:red;">**Hinweis**</mark>: Aktivieren Sie beide Optionen, um optimale Ergebnisse und ein einheitliches Verhalten zu erzielen. So kombiniert **DocBits** regelbasierte und KI-basierte Verfahren bei der Extraktion von Kopffeldern.
+* **Regelbasierte Extraktion:** DocBits verwendet Ihre vordefinierten Extraktionsregeln, um Kopffelder zu erkennen.
+* **KI-Extraktion:** DocBits erkennt und extrahiert Kopffelder mithilfe von KI.
+
+**Ausführungsreihenfolge:** Wenn beide Optionen aktiviert sind, erfolgt zuerst die regelbasierte Extraktion und danach die KI-Extraktion.
+
+**Hinweis:** Diese Reihenfolge gilt nur, wenn beide Optionen aktiviert sind. Ob Sie beide benötigen, hängt vom Dokumenttyp, den Regeln und den geprüften Extraktionsergebnissen ab. Die Reihenfolge ist keine Empfehlung, immer beide Optionen einzuschalten, und garantiert keine korrekte Extraktion.

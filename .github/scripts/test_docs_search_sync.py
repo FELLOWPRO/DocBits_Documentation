@@ -12,6 +12,7 @@ function that does) is mocked in every resolution test.
 from __future__ import annotations
 
 import os
+from pathlib import Path
 import sys
 import tempfile
 import unittest
@@ -174,6 +175,76 @@ class ResolveImagesInMarkdownTests(unittest.TestCase):
         self.assertIn("Trailing text.", result)
         self.assertIn(resolved_url, result)
         self.assertNotIn("googleusercontent.com", result)
+
+
+class PublishedImageRegressionTests(unittest.TestCase):
+    def setUp(self):
+        sync._page_blob_url_cache.clear()
+
+    def test_external_image_uses_existing_signed_same_origin_proxy(self):
+        original = "https://lh7-us.googleusercontent.com/screenshot"
+        proxy = "https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fscreenshot&width=768&sign=real-signature&sv=3"
+        response = unittest.mock.MagicMock()
+        response.__enter__.return_value.read.return_value = (
+            '<img src="' + proxy.replace('&', '&amp;') + '">'
+        ).encode()
+        with patch.object(sync.urllib.request, "urlopen", return_value=response) as fetch:
+            result = sync.resolve_images_in_markdown(
+                f"![Screenshot]({original})", "readme/page.md", "https://docs.docbits.com/page"
+            )
+        self.assertEqual(result, f"![Screenshot]({proxy})")
+        self.assertEqual(fetch.call_count, 1)
+
+    def test_external_markdown_escapes_are_normalized_before_lookup(self):
+        original = "https://lh7-us.googleusercontent.com/screen_name"
+        proxy = "https://docs.docbits.com/~gitbook/image?url=x&sign=s"
+        with patch.object(sync, "_fetch_page_blob_to_url_map", return_value={original: proxy}):
+            result = sync.resolve_images_in_markdown(
+                r"![Screen](https://lh7-us.googleusercontent.com/screen\_name)",
+                "readme/page.md", "https://docs.docbits.com/page"
+            )
+        self.assertEqual(result, f"![Screen]({proxy})")
+
+    def test_untrusted_proxy_host_cannot_resolve_external_image(self):
+        original = "https://example.org/screenshot.png"
+        response = unittest.mock.MagicMock()
+        response.__enter__.return_value.read.return_value = (
+            '<img src="https://evil.example/~gitbook/image?url=https%3A%2F%2Fexample.org%2Fscreenshot.png&amp;sign=x">'
+        ).encode()
+        with patch.object(sync.urllib.request, "urlopen", return_value=response):
+            mapping = sync._fetch_page_blob_to_url_map("https://docs.docbits.com/page")
+        self.assertNotIn(original, mapping)
+
+    def test_literal_images_in_fenced_code_are_not_rewritten_or_fetched(self):
+        markdown = "```html\n<img src=\"../../.gitbook/assets/POShipmentTable.png\">\n```\n~~~\n![Example](missing.png)\n~~~\n"
+        with patch.object(sync, "_fetch_page_blob_to_url_map") as fetch:
+            result = sync.resolve_images_in_markdown(markdown, "readme/page.md", "https://docs.docbits.com/page")
+        self.assertEqual(result, markdown)
+        fetch.assert_not_called()
+
+    def test_inline_code_example_is_not_an_image(self):
+        self.assertEqual(sync._iter_raw_images('Use `![Example](missing.png)` here.'), [])
+
+    def test_markdown_angle_destination_and_balanced_parentheses_are_complete(self):
+        text = '![A](<../.gitbook/assets/workflow_add_button.png>) ![B](../.gitbook/assets/image%20(28).png)'
+        images = sync._iter_raw_images(text)
+        self.assertEqual([src for _, src, _ in images], [
+            '../.gitbook/assets/workflow_add_button.png', '../.gitbook/assets/image%20(28).png'
+        ])
+
+    def test_percent_encoded_local_asset_is_resolved(self):
+        with tempfile.TemporaryDirectory() as root:
+            asset = Path(root) / 'readme/.gitbook/assets/image (28).png'
+            asset.parent.mkdir(parents=True)
+            asset.write_bytes(b'png')
+            with patch.object(sync, 'REPO_ROOT', root):
+                sha = sync._run_git(['hash-object', 'readme/.gitbook/assets/image (28).png']).strip()
+                target = 'https://578966019-files.gitbook.io/git-blob-' + sha
+                with patch.object(sync, '_fetch_page_blob_to_url_map', return_value={sha: target}):
+                    result = sync.resolve_images_in_markdown(
+                        '![A](../.gitbook/assets/image%20(28).png)', 'readme/sub/page.md', 'https://docs.docbits.com/sub/page'
+                    )
+            self.assertEqual(result, f'![A]({target})')
 
 
 if __name__ == "__main__":

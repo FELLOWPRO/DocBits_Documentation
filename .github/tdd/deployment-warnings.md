@@ -22,7 +22,7 @@ reproducer independently exposed three invalid language/origin results being
 accepted as successful.
 
 The final offline suite passed **84 tests**, including all 15 verifier subtests.
-Production script statement coverage was **82%** for docs_search_sync.py and
+Production script statement coverage was **83%** for docs_search_sync.py and
 **94%** for language_bridge.py (**86%** combined). Validation:
 
 ```sh

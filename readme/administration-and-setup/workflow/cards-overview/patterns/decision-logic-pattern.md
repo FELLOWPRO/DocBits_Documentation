@@ -54,7 +54,7 @@
 
 #### 图示：一个条件，两种结果 {#diagram-simple-if}
 
-<figure><img src="../../../../.gitbook/assets/decision-simple-if-zh.png" alt="独立的 IF-THEN 示例：金额严格大于 10,000 欧元时选择总监，否则选择负责人。相等时归入第二个分支。目标路径需要配置。"><figcaption><p>独立的 IF-THEN 示例：金额严格大于 10,000 欧元时选择总监，否则选择负责人。相等时归入第二个分支。目标路径需要配置。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/decision-simple-if-zh.png" alt="独立的 IF-THEN 示例：金额严格大于 10,000 欧元时选择总监，否则选择经理。相等时归入第二个分支。目标路径需要配置。"><figcaption><p>独立的 IF-THEN 示例：金额严格大于 10,000 欧元时选择总监，否则选择经理。相等时归入第二个分支。目标路径需要配置。</p></figcaption></figure>
 
 对应概念图：[图示：一个条件，两种结果](#diagram-simple-if)。
 
@@ -237,9 +237,9 @@ ELSE IF Document_Type = "Credit Note":
 
 <figure><img src="../../../../.gitbook/assets/decision-action-auto-zh.png" alt="示例路径 A：设置审批字段，批准文档，然后导出。确认邮件为可选步骤。此图描述需要配置的动作，并非已观察到的执行。"><figcaption><p>示例路径 A：设置审批字段，批准文档，然后导出。确认邮件为可选步骤。此图描述需要配置的动作，并非已观察到的执行。</p></figcaption></figure>
 
-#### 图示：路径 B：等待负责人审批 {#diagram-action-manager}
+#### 图示：路径 B：等待经理审批 {#diagram-action-manager}
 
-<figure><img src="../../../../.gitbook/assets/decision-action-manager-zh.png" alt="示例路径 B：为负责人创建任务，发送通知并等待结果。只有批准后才可导出；此示例在拒绝后退回供应商。三天期限与接收人均为配置选择。"><figcaption><p>示例路径 B：为负责人创建任务，发送通知并等待结果。只有批准后才可导出；此示例在拒绝后退回供应商。三天期限与接收人均为配置选择。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/decision-action-manager-zh.png" alt="示例路径 B：为经理创建任务，发送通知并等待结果。只有批准后才可导出；此示例在拒绝后退回供应商。三天期限与接收人均为配置选择。"><figcaption><p>示例路径 B：为经理创建任务，发送通知并等待结果。只有批准后才可导出；此示例在拒绝后退回供应商。三天期限与接收人均为配置选择。</p></figcaption></figure>
 
 #### 图示：路径 D：高层管理审批 {#diagram-action-executive}
 
@@ -249,7 +249,7 @@ ELSE IF Document_Type = "Credit Note":
 
 <figure><img src="../../../../.gitbook/assets/decision-rule-documentation-zh.png" alt="规则 BR-INV-001 的示例记录：目的、阈值、例外、负责人及参考日期。引用四个区间可避免重复定义规则；此记录不能证明规则已获批准或已执行。"><figcaption><p>规则 BR-INV-001 的示例记录：目的、阈值、例外、负责人及参考日期。引用四个区间可避免重复定义规则；此记录不能证明规则已获批准或已执行。</p></figcaption></figure>
 
-对应概念图：[图示：从文档到审批流程](#diagram-flow-overview)、[图示：四个互不重叠的金额区间](#diagram-amount-routing)、[图示：分析供应商](#diagram-supplier-analysis)、[图示：路径 A：批准后导出](#diagram-action-auto)、[图示：路径 B：等待负责人审批](#diagram-action-manager)、[图示：路径 D：高层管理审批](#diagram-action-executive)、[图示：记录规则与例外](#diagram-rule-documentation)。
+对应概念图：[图示：从文档到审批流程](#diagram-flow-overview)、[图示：四个互不重叠的金额区间](#diagram-amount-routing)、[图示：分析供应商](#diagram-supplier-analysis)、[图示：路径 A：批准后导出](#diagram-action-auto)、[图示：路径 B：等待经理审批](#diagram-action-manager)、[图示：路径 D：高层管理审批](#diagram-action-executive)、[图示：记录规则与例外](#diagram-rule-documentation)。
 
 <details>
 <summary>完整矩阵伪代码</summary>
@@ -509,10 +509,10 @@ ELSE:
 
 **路径 B：经理审批（€1,000 ≤ 金额 < €10,000）**
 
-对应概念图：[图示：路径 B：等待负责人审批](#diagram-action-manager)。
+对应概念图：[图示：路径 B：等待经理审批](#diagram-action-manager)。
 
 <details>
-<summary>路径 B：负责人任务</summary>
+<summary>路径 B：经理任务</summary>
 
 ```
 操作：

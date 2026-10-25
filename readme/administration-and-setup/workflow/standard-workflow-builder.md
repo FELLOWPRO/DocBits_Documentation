@@ -115,9 +115,9 @@ Les trois vues partielles suivantes montrent un workflow Standard encore vierge 
 
 ## Ajouter des cartes
 
-Cliquez sur **Ajouter une carte** dans n'importe quel groupe pour ouvrir la bibliothèque de cartes. Les cartes sont organisées par catégorie afin que vous puissiez trouver le bloc de construction dont vous avez besoin :
+Cliquez sur **Ajouter une carte** dans un groupe pour ouvrir la bibliothèque de cartes. Dans le groupe **Et....**, la catégorie **Comparaison des bons de commande** propose des conditions de comparaison. La vue partielle ci-dessous montre une carte qui rapproche des données de confirmation de commande et de bon de commande. Les paramètres **N’importe quel/Tous**, **Données de commande**, **Opérateur** et **Données comparatives** sont encore à renseigner avant d’utiliser la carte. Cette carte est encore affichée dans la bibliothèque, avant sa sélection et sa configuration.
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Bibliothèque Add Card regroupée par catégorie"><figcaption><p>La bibliothèque <strong>Add Card</strong> — cartes de condition, cartes de comparaison, cartes d'action et plus encore, regroupées par catégorie.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-po-condition-library-current-fr.png" alt="Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner."><figcaption><p>Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner.</p></figcaption></figure>
 
 Enregistrez avec **Enregistrer le flux de travail**, ou enregistrez la disposition comme modèle réutilisable avec **Enregistrer le modèle**.
 

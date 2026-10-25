@@ -1,50 +1,44 @@
 # La casella di controllo è selezionata
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+## Quando e dove usare questa scheda
 
-## **Scopo:**
+Usa questa condizione quando un'azione successiva dipende da una casella di controllo del documento. Ad esempio, consenti a una fattura di proseguire solo dopo che il relativo indicatore di verifica è stato selezionato.
 
-Questa scheda di workflow è progettata per automatizzare le azioni in base allo stato (selezionato o deselezionato) di una casella di controllo all'interno del tuo sistema ERP. Valutando la condizione della casella di controllo, facilita l'attivazione di processi specifici o l'applicazione di determinate regole all'interno dell'applicazione.
+Nell'editor del workflow, aggiungi la scheda sotto **E… → Campo del documento**. La scheda confronta il valore del campo quando viene eseguito il workflow; non monitora continuamente un campo dell'ERP e non modifica la casella.
 
-## **Componenti della scheda:**
+## Prerequisiti
 
-* **Nome campo**
-  * **Descrizione:** Specifica il nome del campo casella di controllo che verrà valutato.
-  * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo utilizzato nel sistema. Determina lo stato di quale casella di controllo viene monitorato.
-* **Booleano**
-  * **Descrizione:** Definisce la condizione che attiva il workflow.
-  * **Opzioni:**
-    * **True:** Il workflow si attiva se la casella di controllo è selezionata.
-    * **False:** Il workflow si attiva se la casella di controllo è deselezionata.
+Il tipo di documento deve contenere un campo booleano per questa casella. Usa il suo identificatore tecnico esatto. Questo esempio usa `validation_complete`; sostituiscilo con il campo corrispondente della tua organizzazione.
 
-#### **Funzionalità:**
+## Configurare la scheda
 
-* **Rilevamento dello stato:** La scheda monitora continuamente lo stato del campo casella di controllo specificato.
-* **Valutazione della condizione:** Il sistema verifica se la casella di controllo è nello stato (selezionato o deselezionato) specificato dalla condizione Boolean.
-* **Esecuzione dell'azione:**
-  * **Condizione vera:**\
-    Se lo stato della casella di controllo corrisponde alla condizione Boolean specificata (true per selezionato o false per deselezionato), il sistema avvia le azioni associate. Queste potrebbero includere l'abilitazione o la disabilitazione di campi del modulo, l'attivazione di notifiche, l'avvio di workflow o l'aggiornamento di record.
-  * **Condizione falsa:**\
-    Se lo stato della casella di controllo non corrisponde alla condizione, possono essere intraprese azioni alternative o nessuna azione, a seconda della configurazione del workflow.
+1. Scegli **La casella di controllo … è selezionata** in **Campo del documento**.
+2. Inserisci `validation_complete` in **Nome campo** e conferma il valore.
+3. Seleziona **Vero** in **Booleano** per richiedere una casella selezionata. Seleziona **Falso** per verificare che non sia selezionata.
 
-## **Configurazione e impostazione:**
+## Esempio pratico: proseguire dopo la verifica
 
-* Gli utenti configurano la scheda selezionando il campo casella di controllo da un elenco di campi disponibili e impostando la condizione Boolean.
+**Quando usarla:** una fattura richiede una verifica preliminare e il processo ne registra il completamento in `validation_complete`.
 
-## Conclusione:
+**Dove inserirla:** nelle condizioni sotto **E…**, prima dell'azione successiva configurata in **Poi…**. Configura separatamente questa azione e l'evento che avvia il workflow.
 
-La scheda di workflow "Checkbox Field Condition" è uno strumento fondamentale per gestire moduli e documenti dinamici all'interno di un sistema ERP, dove gli input dell'utente possono determinare i successivi processi sui dati. Automatizzando le azioni in base allo stato di una casella di controllo, questa scheda migliora l'efficienza del workflow e garantisce che i comportamenti del sistema siano allineati con gli input dell'utente. Una documentazione chiara di questa scheda aiuterà gli utenti a implementarla efficacemente nelle loro operazioni, consentendo un migliore controllo sui comportamenti dei moduli e sulle automazioni dei processi.
+**Configurazione dell'esempio:** campo `validation_complete`, confronto **Vero** (`true`), scheda versione 2.
 
-**Nota: Non tutti i clienti dispongono della casella di controllo, ma può essere aggiunta se desiderato.**
+<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-it-20261025.png" alt="Esempio con la versione 2: validation complete confrontato con Vero." width="651"><figcaption><p>Esempio con la versione 2: validation complete confrontato con Vero.</p></figcaption></figure>
 
-<!-- workflow-card-practical-example-20261021 -->
+I risultati attesi per questa configurazione sono:
 
-## Esempio pratico
+| Valore del campo nel documento | Risultato della condizione |
+| --- | --- |
+| Casella esistente e selezionata (`true`) | La condizione è soddisfatta. |
+| Casella esistente e non selezionata (`false`) | La condizione non è soddisfatta. |
+| Casella esistente con un valore vuoto (`None`) | Considerata non selezionata; la condizione non è soddisfatta. |
+| Campo assente dal documento | `NOT_FOUND_IN_DOCUMENT`; questo caso è diverso da una casella esistente non selezionata. |
 
-**Quando utilizzarlo:** Esegui un follow-up solo dopo che è stato impostato un flag di revisione esplicito.
+Se scegli **Falso**, una casella esistente non selezionata soddisfa la condizione e una casella selezionata non la soddisfa. Un campo assente continua a produrre un risultato di errore distinto.
 
-**Configurazione:** Seleziona il campo della casella di controllo `review_complete` e il booleano `true`.
+## Verificare prima dell'attivazione
 
-**Risultato atteso e controesempio:** Una casella selezionata passa. Una casella di controllo deselezionata fallisce; non utilizzare un campo mancante come prova del completamento della revisione.
+Verifica che il campo scelto sia booleano e appartenga al tipo di documento utilizzato. Prova un documento con la casella selezionata, uno con la casella non selezionata e un documento in cui il campo sia assente. Controlla il risultato della scheda e il percorso successivo del workflow in ogni caso.
 
-Questa è una configurazione illustrativa e il risultato atteso. Utilizza campi, utenti e gruppi configurati nella tua organizzazione di test; non si afferma che questo esempio sia stato eseguito.
+Questa scheda verifica lo stato della casella; il processo precedente deve impostare l'indicatore di verifica. Selezionarlo automaticamente senza eseguire la verifica non dimostra che la verifica sia stata effettuata.

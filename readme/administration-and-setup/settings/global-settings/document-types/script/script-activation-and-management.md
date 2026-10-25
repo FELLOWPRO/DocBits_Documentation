@@ -2,7 +2,7 @@
 
 ## Videotutorial: administrar scripts
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v3/es.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v4/es.mp4" %}
 Administrar los scripts de un tipo de documento
 {% endembed %}
 

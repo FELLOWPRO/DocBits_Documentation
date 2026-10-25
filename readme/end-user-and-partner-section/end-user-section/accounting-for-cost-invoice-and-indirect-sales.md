@@ -101,13 +101,7 @@ Für Rechnungen, die nicht automatisch abgeglichen wurden:
 5. **Daten exportieren**: Abgeglichene Daten können für die weitere Verarbeitung oder Aufzeichnung exportiert werden.
 
 
-## Videoanleitung: Kostenrechnung kontieren und auf Kostenstellen aufteilen
-
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/de.mp4" %}
-Kostenrechnung kontieren und auf Kostenstellen aufteilen
-{% endembed %}
-
-[Mit Untertiteln und Kapiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/de.html)
+## Kostenrechnung kontieren und auf Kostenstellen aufteilen
 
 Einzelne native Produktbeschriftungen können abweichend übersetzt sein. Technische Feld-IDs bleiben erhalten.
 

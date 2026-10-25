@@ -41,6 +41,8 @@ The example invoice contains two rows. The destination column does not exist bef
 
 In the demonstrated test, the card creates the destination column. After reopening the invoice, **20.00** and **12.00** remain visible. The input columns and the original `NET_AMOUNT` values are preserved in this example. If the selected destination column already contains values, the calculation replaces them.
 
+<figure><picture><source srcset="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-en-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-en-light-20261025.png" alt="After reopening the same invoice, TOTAL_AMOUNT contains 20.00 and 12.00 for the two lines. The original NET_AMOUNT values are preserved. The AI hint describes the original extraction; the workflow fills the result column afterward." width="735"></picture><figcaption><p>After reopening the same invoice, TOTAL_AMOUNT contains 20.00 and 12.00 for the two lines. The original NET_AMOUNT values are preserved. The AI hint describes the original extraction; the workflow fills the result column afterward.</p></figcaption></figure>
+
 ## Checks and counterexamples
 
 - Check both input columns and verify the saved results after calculating.

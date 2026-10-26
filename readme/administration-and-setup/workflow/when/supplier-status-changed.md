@@ -12,7 +12,7 @@ Esta tarjeta de flujo de trabajo inicia un flujo de trabajo (disparador) cuando 
    * **Descripción:** Define si el nuevo estado del proveedor debería ser uno de los estados seleccionados o ninguno de ellos.
    * **Opciones:**
      * **Es:** La condición es verdadera si el nuevo estado es uno de los estados seleccionados.
-     * **No Es:** La condición es verdadera si el nuevo estado no es ninguno de los estados seleccionados.
+     * **No Es:** La condición es verdadera si un cambio de estado de proveedor inició el flujo de trabajo y el nuevo estado no es ninguno de los estados seleccionados.
 2. **Estado del proveedor**
    * **Descripción:** Los estados de proveedor con los que se compara el nuevo estado.
    * **Opciones:** Uno o varios de los siguientes:
@@ -28,10 +28,10 @@ Esta tarjeta de flujo de trabajo inicia un flujo de trabajo (disparador) cuando 
 * **Evaluación de la condición:** La tarjeta compara el estado transmitido al flujo de trabajo con los estados seleccionados en la tarjeta.
 * **Ejecución de la acción:**
   * **Condición verdadera:**\
-    Con **Es**, el nuevo estado es uno de los estados seleccionados. Con **No Es**, no lo es. El flujo de trabajo continúa con las tarjetas siguientes.
+    Con **Es**, el nuevo estado es uno de los estados seleccionados. Con **No Es**, un cambio de estado de proveedor inició el flujo de trabajo y el nuevo estado no es ninguno de los estados seleccionados. El flujo de trabajo continúa con las tarjetas siguientes.
   * **Condición falsa:**\
     Si no se cumple la condición, la tarjeta no se cumple y los pasos posteriores no se ejecutan.
-* **Nota sobre «No Es»:** Una importación de órdenes de compra también inicia todos los flujos de trabajo independientes del documento, incluidos los flujos de trabajo con esta tarjeta. Una importación de órdenes de compra no transmite ningún estado de proveedor, por lo que, con **No Es**, una importación de órdenes de compra también hace que la tarjeta sea verdadera y el flujo de trabajo se ejecuta. Combinar **No Es** con otras condiciones puede ayudar a limitar el flujo de trabajo a los eventos de proveedores.
+* **Otros eventos independientes del documento:** Una importación de órdenes de compra también inicia todos los flujos de trabajo independientes del documento, incluidos los flujos de trabajo con esta tarjeta. Una ejecución de este tipo no cumple la tarjeta con ninguno de los dos operadores, por lo que los pasos posteriores solo se ejecutan con cambios de estado de proveedor.
 * **Datos que faltan:** Si no hay ningún estado seleccionado en la tarjeta, la tarjeta no evalúa la condición. Registra la entrada que falta (o un error) en el registro del flujo de trabajo, y los pasos posteriores no se ejecutan.
 * **Operador no válido:** Si el operador no es ni **Es** ni **No Es**, la tarjeta registra un error de configuración de la tarjeta en el registro del flujo de trabajo.
 

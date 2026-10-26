@@ -13,8 +13,8 @@ La conciliación de la orden de compra debería ejecutarse antes de esta tarjeta
 1. **Cualquiera/Todos**
    * **Descripción:** Cómo se evalúan los códigos de instalación de las órdenes de compra emparejadas frente a la lista.
    * **Opciones:**
-     * **Cualquier:** Al menos una entrada de la lista se encuentra en los códigos de instalación de las órdenes de compra emparejadas.
-     * **Todos:** Cada código de instalación de las órdenes de compra emparejadas está en la lista. Si no se ha definido ningún valor, la tarjeta utiliza **Todos**.
+     * **Cualquier:** Al menos una orden de compra emparejada cumple el operador.
+     * **Todos:** Cada orden de compra emparejada con instalación cumple el operador. Si no se ha definido ningún valor, la tarjeta utiliza **Todos**.
 2. **Operador**
    * **Descripción:** Si la instalación debería estar en la lista o no.
    * **Opciones:**
@@ -27,10 +27,10 @@ La conciliación de la orden de compra debería ejecutarse antes de esta tarjeta
 ## Funcionalidad:
 
 * **Evaluación de la condición:** La tarjeta lee los números de orden de compra emparejados con el documento, carga estas órdenes de compra y recoge la instalación (ubicación) de cada una de ellas. Las órdenes de compra sin instalación se omiten. A continuación, los códigos de instalación recogidos se comparan con los **Códigos de nombres de instalaciones** de la tarjeta.
-  * Con **Cualquier** y **Es**, la comparación no distingue entre mayúsculas y minúsculas, y una entrada de la lista también cuenta cuando forma parte de un código de instalación más largo (por ejemplo, la entrada `WH` se encuentra en `WH01`).
-  * Con **Todos** y **Es**, cada código de instalación de las órdenes de compra debería aparecer en la lista con exactamente la misma grafía, incluidas las mayúsculas y minúsculas.
+  * Un código de instalación cuenta como incluido en la lista cuando coincide por completo con uno de los códigos introducidos. Se ignoran las mayúsculas y minúsculas y los espacios alrededor de las entradas, por lo que `wh01` coincide con `WH01`, pero `WH` no coincide con `WH01`.
+  * Con **Es**, una orden de compra cumple la condición cuando su código de instalación está en la lista. Con **No Es**, la cumple cuando su código de instalación no está en la lista.
+  * Con **Cualquier**, la condición se cumple si al menos una orden de compra la cumple; con **Todos**, si la cumple cada orden de compra con instalación.
   * Si ninguna de las órdenes de compra emparejadas tiene instalación, **Todos** se cumple y **Cualquier** no.
-  * Con **No Es**, el resultado no es simplemente lo contrario de **Es**. El registro de la tarjeta muestra qué códigos se encontraron y cuáles no coincidieron, lo que ayuda a comprobar el comportamiento para una configuración concreta.
 * **Ejecución de la acción:**
   * **Condición verdadera:**\
     Si se cumple la condición, el flujo de trabajo continúa, por ejemplo con un paso específico para las instalaciones indicadas.
@@ -40,7 +40,7 @@ La conciliación de la orden de compra debería ejecutarse antes de esta tarjeta
 
 ## Configuración:
 
-* La tarjeta se puede añadir como condición And después de la conciliación de la orden de compra, desde la categoría **Comparar con la orden de compra**. A continuación se pueden definir **Cualquier** o **Todos**, el operador y los códigos de instalación, separados por comas. Introducir los códigos con la misma grafía que en la orden de compra es la opción más segura, porque **Todos** los compara de forma exacta.
+* La tarjeta se puede añadir como condición And después de la conciliación de la orden de compra, desde la categoría **Comparar con la orden de compra**. A continuación se pueden definir **Cualquier** o **Todos**, el operador y los códigos de instalación, separados por comas. Las mayúsculas y minúsculas no importan, pero cada código debería introducirse completo, porque las partes de un código no coinciden.
 * Para probar la configuración con un documento existente, se puede utilizar **Tarjeta de prueba** en el menú de la tarjeta del Workflow Builder. El registro de la tarjeta enumera las órdenes de compra emparejadas, los códigos de instalación encontrados en ellas y los códigos que no coincidieron.
 
 ## Conclusión:

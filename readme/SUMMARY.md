@@ -76,6 +76,7 @@
     * [Purchase Order Detail](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
   * [Invoice Dashboard](end-user-and-partner-section/end-user-section/invoice-dashboard.md)
   * [Shipment Order Dashboard](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)
+  * [Supplier Statistics](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [User Configuration Options](end-user-and-partner-section/end-user-section/user-configuration-options.md)
   * [AI Table](end-user-and-partner-section/end-user-section/ai-table/README.md)
     * [AI Table Tags](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)

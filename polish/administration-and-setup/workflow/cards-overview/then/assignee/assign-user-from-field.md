@@ -1,6 +1,6 @@
 # Assign user from field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-02-pl-20261023.png" alt="Osoba przypisana Przypisz użytkownika z pola Nazwa pola , użyj użytkownika Użytkownik jako zapasowego" width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

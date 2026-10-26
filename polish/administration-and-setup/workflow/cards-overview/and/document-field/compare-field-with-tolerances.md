@@ -1,6 +1,6 @@
 # Compare Field with tolerances
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-05-pl-20261023.png" alt="Pole dokumentu Porównaj pole Nazwa pola Operator Wartość z tolerancjami Ilość tolerancji Typ tolerancji" width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

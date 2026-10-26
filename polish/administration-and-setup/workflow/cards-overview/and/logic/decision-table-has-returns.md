@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-04-pl-20261023.png" alt="Logika Tabela decyzyjna Tabela decyzyjna zwraca wyniki dla dokumentu lub organizacji dostawcy. Magazyn zwróciła dane do wykorzystania w kolejnych kartach." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

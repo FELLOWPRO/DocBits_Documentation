@@ -1,6 +1,6 @@
 # Start Export
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-01-pl-20261023.png" alt="Eksport Rozpocznij eksport z weryfikacją ustawioną na Wartość logiczna . Status po eksporcie: Status ." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

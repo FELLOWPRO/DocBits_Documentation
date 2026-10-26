@@ -1,39 +1,23 @@
 # Cachet d'approbation
 
-## **Aperçu :**
+Un cachet d'approbation est une annotation ajoutée lors de l'approbation d'un document lorsque l'option est activée pour ce type de document. C'est utile lorsqu'une personne chargée de la validation doit voir qui a approuvé un document et quand. La page précédente montrait six captures d'écran d'une ancienne interface et présentait le cachet, l'export IDM et le téléchargement PDF comme déjà vérifiés ensemble. Vérifiez chaque résultat dans votre propre processus avant de vous y fier.
 
-Cette fonctionnalité ajoute automatiquement un cachet d'approbation à un document lorsqu'il est approuvé dans l'écran d'approbation. Si un document contient un cachet d'approbation, il sera inclus lors de l'**exportation vers IDM**.
+## Trouver l'option
 
-## Activation de la fonctionnalité Cachet d'approbation
+1. Avec un compte administrateur, ouvrez **Paramètres → Types de Documents**. Trouvez le type à configurer, par exemple **Facture**, et sélectionnez l'**icône d'engrenage** sur sa carte. L'engrenage ouvre **Plus de Paramètres** pour ce type de document ; **Plans** et **Champs** ouvrent d'autres éditeurs.
 
-Pour activer la fonctionnalité Cachet d'approbation, suivez ces étapes :
+   <figure><img src="../../../../../../.gitbook/assets/dbdc704-document-types-fr-20261011.png" alt="Page Types de Documents de DocBits en français, avec la carte Facture et son icône d'engrenage pour Plus de Paramètres"><figcaption><p>Ouvrez l'engrenage sur le type de document concerné.</p></figcaption></figure>
 
-1.  Allez dans **Paramètres** → **Paramètres Globaux** → **Types de documents**.
+2. Dans **Plus de Paramètres**, dépliez **Approbation et rejet**. Repérez le commutateur **Cachet d'approbation** à côté de **Approuver avant l'exportation**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation**. La capture montre l'organisation synthétique **DocBits Documentation Test A** avec le cachet **désactivé**. Elle ne montre pas de document cacheteté.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_1_fr.png" alt=""><figcaption></figcaption></figure>
-2.  **Sélectionnez le Type de Document** pour lequel vous souhaitez activer le cachet d'approbation et cliquez sur **Plus de Paramètres**.
+   <figure><img src="../../../../../../.gitbook/assets/dbdc704-approval-stamp-fr-20261011.png" alt="Page Plus de Paramètres de la Facture en français, avec Approbation et rejet déplié et le Cachet d'approbation désactivé"><figcaption><p>Vérifiez le réglage du Cachet d'approbation pour le type de document sélectionné.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_2_fr.png" alt=""><figcaption></figcaption></figure>
-3.  Dans la section **Approbation**, activez l'option **Cachet d'approbation**.
+3. Activez le commutateur seulement après avoir convenu dans votre organisation du fonctionnement des approbations et des exports. Conservez une trace du réglage précédent afin de pouvoir vérifier son effet sur une facture de test.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_3_fr.png" alt=""><figcaption></figcaption></figure>
+## Vérifier une approbation
 
-## Après activation :
+Envoyez une facture synthétique de ce type de document dans le flux d'approbation configuré. Sur l'écran **En attente d'approbation**, approuvez-la avec un compte de test autorisé. Le client web DocBits actuel vérifie l'option Cachet d'approbation lors de l'approbation et ajoute une annotation de cachet avec le nom de l'approbateur et la date. Rouvrez le document approuvé et examinez l'annotation ainsi que le PDF téléchargé que votre processus utilise réellement. Si le cachet est absent, vérifiez le type de document, le statut d'approbation, le réglage et la configuration d'export.
 
-Une fois la fonctionnalité activée, tout document en état "d'approbation en attente" recevra automatiquement un cachet d'approbation une fois qu'il sera approuvé. Le cachet inclura le logo "Approved", le nom de l'utilisateur qui a approuvé le document, et l'heure à laquelle le document a été approuvé.
+Un cachet d'approbation est distinct de la **Deuxième approbation** et de l'**Historique de l'approbation**. Activer l'un ne prouve pas que les autres sont configurés. Les actions de téléchargement disponibles dans le tableau de bord et le format d'export IDM dépendent de l'environnement et n'ont pas été vérifiés pour cette page ; ce guide ne promet donc pas de libellés précis dans le menu de téléchargement ni de sortie IDM automatique.
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_4_fr.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_5.png" alt=""><figcaption></figcaption></figure>
-
-### Téléchargement de PDFs avec ou sans le **Cachet d'approbation** <a href="#id-4.-downloading-pdfs-with-or-without-annotations" id="id-4.-downloading-pdfs-with-or-without-annotations"></a>
-
-* Si un document a un cachet d'approbation, vous pouvez choisir de télécharger le PDF soit avec, soit sans le cachet d'approbation.
-* Pour ce faire, allez dans le **Tableau De Bord**.
-* Cliquez sur les **trois points** dans la colonne **Actions**.
-*   Sélectionnez l'une des deux options de téléchargement disponibles :
-
-    * **Télécharger avec Annotations**
-    * **Télécharger sans Annotations**
-
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_6_fr.png" alt="" width="231"><figcaption></figcaption></figure>
+Les deux nouvelles captures ont été vérifiées visuellement dans le bac à sable Test A en français. Aucun commutateur n'a été modifié et aucun document n'a été approuvé ni exporté pendant cette vérification ; l'état final avec cachet nécessite une facture approuvée synthétique dédiée.

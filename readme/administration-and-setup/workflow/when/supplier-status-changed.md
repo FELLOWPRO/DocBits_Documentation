@@ -12,7 +12,7 @@ Cette carte de workflow démarre un workflow (déclencheur) lorsque le statut d'
    * **Description :** définit si le nouveau statut du fournisseur devrait être l'un des statuts sélectionnés ou aucun d'entre eux.
    * **Options :**
      * **Est :** la condition est vraie si le nouveau statut est l'un des statuts sélectionnés.
-     * **N'est pas :** la condition est vraie si le nouveau statut ne fait pas partie des statuts sélectionnés.
+     * **N'est pas :** la condition est vraie si un changement de statut de fournisseur a démarré le workflow et que le nouveau statut ne fait pas partie des statuts sélectionnés.
 2. **Statut du fournisseur**
    * **Description :** les statuts de fournisseur auxquels le nouveau statut est comparé.
    * **Options :** un ou plusieurs des statuts suivants :
@@ -28,10 +28,10 @@ Cette carte de workflow démarre un workflow (déclencheur) lorsque le statut d'
 * **Évaluation de la condition :** la carte compare le statut transmis au workflow aux statuts sélectionnés sur la carte.
 * **Exécution de l'action :**
   * **Condition vraie :**\
-    Avec **Est**, le nouveau statut est l'un des statuts sélectionnés. Avec **N'est pas**, il ne l'est pas. Le workflow se poursuit avec les cartes suivantes.
+    Avec **Est**, le nouveau statut est l'un des statuts sélectionnés. Avec **N'est pas**, un changement de statut de fournisseur a démarré le workflow et le nouveau statut ne fait pas partie des statuts sélectionnés. Le workflow se poursuit avec les cartes suivantes.
   * **Condition fausse :**\
     Si la condition n'est pas remplie, la carte n'est pas satisfaite et les étapes suivantes ne sont pas exécutées.
-* **Remarque sur « N'est pas » :** une importation de bon de commande démarre elle aussi tous les workflows indépendants des documents, y compris ceux qui contiennent cette carte. Une importation de bon de commande ne transmet aucun statut de fournisseur ; avec **N'est pas**, une importation de bon de commande rend donc également la carte vraie et le workflow s'exécute. Combiner **N'est pas** avec d'autres conditions peut aider à limiter le workflow aux événements liés aux fournisseurs.
+* **Autres événements indépendants des documents :** une importation de bon de commande démarre elle aussi tous les workflows indépendants des documents, y compris ceux qui contiennent cette carte. Une telle exécution ne satisfait la carte avec aucun des deux opérateurs ; les étapes suivantes ne s'exécutent donc que pour des changements de statut de fournisseur.
 * **Données manquantes :** si aucun statut n'est sélectionné sur la carte, la carte n'évalue pas la condition. Elle signale la saisie manquante (ou une erreur) dans le journal du workflow, et les étapes suivantes ne sont pas exécutées.
 * **Opérateur non valide :** si l'opérateur n'est ni **Est** ni **N'est pas**, la carte signale une erreur de configuration de la carte dans le journal du workflow.
 

@@ -1,5 +1,13 @@
 # Paramètres des données de référence
 
+## Tutoriel vidéo : données de base et listes de valeurs
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/fr.mp4" %}
+Sources de données de base, listes de valeurs et paramètres des données de base dans DocBits
+{% endembed %}
+
+La vidéo présente les sources de données de base, les listes de valeurs et les paramètres des données de base d'un type de document.
+
 Les **Paramètres des données de référence** relient les champs de validation d'un document aux données stockées sous [Recherche de données de référence](../../../document-processing/master-data-lookup.md). Utilisez **Consultation des données de base** pour trouver un enregistrement correspondant et le reprendre. Utilisez **Données de base LOV** pour proposer une liste de valeurs issue d'un jeu de données.
 
 ## Ouvrir les paramètres

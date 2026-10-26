@@ -2,48 +2,46 @@
 
 <figure><img src="../../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_in_list_v2-zh-cn.png" alt="文档状态条件列表, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
-**用途**
+## 何时使用
 
-此卡片用于根据文档的当前状态，通过条件逻辑控制工作流操作，从而触发或限制特定流程。它可确保文档只有在满足预定义的状态条件时，才会继续通过工作流。
+当多个单据状态都应满足同一个附加条件时，使用此卡片。例如，在第一轮审批或第二轮审批期间继续执行同一项后续操作。卡片检查单据的当前状态是否属于所选列表；它不会更改单据状态。工作流的触发器和后续操作需分别配置。
 
-**卡片组件**
+**位置：** 标准工作流 → 附加条件（AND）→ 状态 → 状态列表卡片。
 
-1. **运算符**
-   * **说明**：确定如何根据指定条件评估文档状态。
-   * **选项**：
-     * **是**：如果文档的当前状态与指定状态之一匹配，则触发相关操作。
-     * **不是**：如果文档状态与指定状态均不匹配，则触发相关操作。
-2. **状态（列表）**
-   * **说明**：列出用于与文档当前状态进行比较的特定状态。
-   * **示例**："Error"（错误）、"Export Error"（导出错误）、"Ready in Validation"（已准备好验证）、"Ready in Review"（已准备好审核）、"Pending Approval"（待审批）、"Pending Second Approval"（待二次审批）。这些状态代表文档在工作流流程中可能处于的不同阶段或状态。
+## 配置（版本 2）
 
-**功能**
+| 设置 | 视频中的配置 |
+| --- | --- |
+| 运算符 | `is` — 当前状态属于所选列表 |
+| 状态列表 | 待批准（`validated_pending_approval`）和等待第二次批准（`approved_pending_second_approval`） |
 
-* **状态识别**：文档在 ERP 系统的工作流中流转时，自动识别其当前状态。
-* **条件评估**：将所选运算符（是或不是）应用于文档状态，并与列出的状态进行比较：
-  * 如果选择**是**，则检查文档状态是否与列表中的任一状态匹配。
-  * 如果选择**不是**，则检查文档状态是否未出现在列表中。
-* **执行操作**：根据条件评估结果：
-  * **为真**：如果满足条件，则执行预定义的操作或工作流。
-  * **为假**：如果不满足条件，则跳过或触发其他工作流。
-* **工作流集成**：与其他工作流组件无缝集成，确保文档处理在整个系统中协调进行。
+选择列表成员比较的运算符，再在多选列表中选择两个审批状态。关闭列表后，确认卡片显示了两个选项。一张单据只需处于其中任意一个状态，无需同时具有两个状态。
 
-**用户交互**
+**当前界面用语：** 录制版本中显示“是 位于”。这里表示“当前状态属于以下任一所选状态”，与空间位置无关。这一界面译文尚待改进；视频保留实际界面。
 
-* **设置和配置**：用户通过选择运算符并指定相关状态来配置此卡片。配置时可能需要使用简单的下拉菜单或复选框来选择状态和运算符。
-* **监控和管理**：用户可以通过仪表板跟踪卡片的活动，查看正在监控的状态条件，以及根据这些条件采取的操作。
-* **错误处理和提醒**：支持设置流程失败或文档状态与预期不符时的提醒，以便快速响应运营问题。
+选择 `isnot` 时，条件在当前状态不属于列表时成立。状态列表应通过实际多选控件配置。
 
-#### 结论
-
-“文档状态条件”工作流卡片对于确保文档根据其当前状态得到正确处理至关重要，有助于加强 ERP 系统中的控制并提升效率。在系统手册中清晰地说明此卡片，将帮助用户有效地实施和管理它，并利用其功能维护顺畅且合规的文档工作流。此卡片在管理文档生命周期、确保只有满足特定条件的文档才能进入业务流程后续阶段方面尤其有用。
-
+<!-- workflow-card-practical-example-20261021 -->
 <!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot_in_list -->
 
-### 状态列表示例
+## 实用示例
 
-**配置：** 选择需要当前状态位于列表内的运营商。 Select `Pending Approval` and `Pending Second Approval` in the status list.
+将第一轮审批和第二轮审批合并为一个条件。对于视频中的 `is` 和上述两个状态：
 
-**预期结果和反例：**对于具有任一选定状态的文档，条件为真。 It is false for a document with status `Ready in Validation`.对于要求状态位于列表之外的运算符，这些条件结果会相反。检查实际列表而不是比较以逗号分隔的自由文本值。
+| 单据的当前状态 | 预期结果 |
+| --- | --- |
+| 待批准（`validated_pending_approval`） | 条件成立 |
+| 等待第二次批准（`approved_pending_second_approval`） | 条件成立 |
+| 已经导出（`exported`） | 条件不成立 |
 
-这是一个说明性的测试配置和预期结果；它没有被执行。使用测试组织中配置的数据和收件人。
+这些是示例的预期结果。`isnot` 会反转上述成员匹配结果。单据缺少状态时，版本 2 返回 `NOT_FOUND_IN_DOCUMENT`，而不是正常的“条件不成立”；卡片缺少状态列表配置时返回 `MISSING_VARIABLE`。
+
+## 管理员示例视频
+
+视频介绍何时使用此卡片、如何找到并选择两个审批状态，以及如何检查最终配置。管理员、办公室和配音均为合成内容；操作演示使用测试账号中的真实 DocBits 界面。结果示例为说明性预期结果。
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-document-status-list-admin/v1/zh.mp4" %}
+
+[打开带中文字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-document-status-list-admin/v1/zh-theme-v4.html)
+
+[阅读文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-document-status-list-admin/v1/zh.txt)

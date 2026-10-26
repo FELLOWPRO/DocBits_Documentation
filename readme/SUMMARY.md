@@ -1,9 +1,10 @@
 # 目录
 
-## 概述与基础
+## 概述与基础 <a href="#overview-and-basics" id="overview-and-basics"></a>
 
 * [DocBits](README.md)
   * [DocBits 的主要功能](overview-and-basics/readme/key-features-of-docbits.md)
+* [关于我们的培训视频](about-training-videos.md)
 * [架构](overview-and-basics/architecture/README.md)
   * [DocBits Infor 本地部署客户](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)
   * [认证](overview-and-basics/architecture/certifications.md)
@@ -50,6 +51,7 @@
 * [终端用户部分](end-user-and-partner-section/end-user-section/README.md)
   * [获取访问权限并登录](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [全局快速搜索](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [视频和教程](end-user-and-partner-section/end-user-section/videos-and-tutorials.md)
   * [站点地图](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Web 地址变更](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [可自定义侧边栏](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
@@ -121,7 +123,7 @@
 * [合作伙伴专区](end-user-and-partner-section/partner-section/README.md)
   * [使用 DocBits 测试发票自动化](end-user-and-partner-section/partner-section/invoice-automation-testing-with-docbits.md)
 
-## 管理与设置
+## 管理与设置 <a href="#administration-and-setup" id="administration-and-setup"></a>
 
 * [选择合适的自动化工具](administration-and-setup/choose-the-right-automation.md)
 * [设置](administration-and-setup/settings/README.md)
@@ -213,6 +215,7 @@
         * [启用和管理脚本](administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md)
         * [创建和编辑脚本](administration-and-setup/settings/global-settings/document-types/script/creating-and-editing-scripts.md)
         * [测试脚本](administration-and-setup/settings/global-settings/document-types/script/testing-scripts.md)
+        * [脚本编辑器中的 AI 助手](administration-and-setup/settings/global-settings/document-types/script/script-ai-assistant.md)
         * [DocBits 中的脚本编写](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)
           * [上下文变量](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/context-variables.md)
           * [函数](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/functions.md)
@@ -584,22 +587,22 @@
   * [缓存管理](administration-and-setup/settings/cache-management.md)
   * [基础设施](administration-and-setup/settings/infrastructure.md)
 * [工作流](administration-and-setup/workflow/README.md)
-  * [从入门到专家的学习路径](administration-and-setup/workflow/workflow-learning-path.md)
-  * [P0：正确连接 Wait ALL、Wait ANY 和 OR](administration-and-setup/workflow/masterclass/control-nodes.md)
-  * [P0：更改状态并限制重复执行](administration-and-setup/workflow/masterclass/status-and-reentry.md)
-  * [P0：理解 Run Workflow、目标条件和错误](administration-and-setup/workflow/masterclass/run-workflow.md)
-  * [P1：选择 Field is、Docfield is 或 Compare two Fields](administration-and-setup/workflow/masterclass/field-conditions.md)
-  * [P1：明确容差参考侧与采购订单比较方向](administration-and-setup/workflow/masterclass/tolerances-and-po.md)
-  * [P1：从决策表追踪到文档分配](administration-and-setup/workflow/masterclass/decision-table-routing.md)
-  * [P1：区分文档分配、任务与顺序审批](administration-and-setup/workflow/masterclass/assignment-task-sequential.md)
-  * [P1：计算表格列并检查正则依赖](administration-and-setup/workflow/masterclass/table-calculations.md)
-  * [P1：验证 API 调用与后续响应使用](administration-and-setup/workflow/masterclass/api-response-contract.md)
-  * [P1：选择导出方式、待办检查与最终状态](administration-and-setup/workflow/masterclass/export-lifecycle.md)
-  * [我的工作流何时运行？](administration-and-setup/workflow/workflow-execution-model.md)
-  * [高级案例：发票路由](administration-and-setup/workflow/advanced-workflow-case-study.md)
-  * [工作流练习包](administration-and-setup/workflow/workflow-training-kit.md)
-  * [系统诊断工作流问题](administration-and-setup/workflow/workflow-troubleshooting.md)
-  * [理解并配置工作流卡片](administration-and-setup/workflow/card-reference-standard.md)
+  * [从入门到专家的学习路径](administration-and-setup/workflow/workflow-learning-path.md "学习路径：从入门到专家")
+    * [我的工作流何时运行？](administration-and-setup/workflow/workflow-execution-model.md)
+    * [P0：更改状态并限制重复执行](administration-and-setup/workflow/masterclass/status-and-reentry.md)
+    * [高级案例：发票路由](administration-and-setup/workflow/advanced-workflow-case-study.md)
+    * [工作流练习包](administration-and-setup/workflow/workflow-training-kit.md)
+    * [P1：选择 Field is、Docfield is 或 Compare two Fields](administration-and-setup/workflow/masterclass/field-conditions.md)
+    * [P1：明确容差参考侧与采购订单比较方向](administration-and-setup/workflow/masterclass/tolerances-and-po.md)
+    * [P1：从决策表追踪到文档分配](administration-and-setup/workflow/masterclass/decision-table-routing.md)
+    * [P1：区分文档分配、任务与顺序审批](administration-and-setup/workflow/masterclass/assignment-task-sequential.md)
+    * [P0：正确连接 Wait ALL、Wait ANY 和 OR](administration-and-setup/workflow/masterclass/control-nodes.md)
+    * [P0：理解 Run Workflow、目标条件和错误](administration-and-setup/workflow/masterclass/run-workflow.md)
+    * [P1：计算表格列并检查正则依赖](administration-and-setup/workflow/masterclass/table-calculations.md)
+    * [P1：验证 API 调用与后续响应使用](administration-and-setup/workflow/masterclass/api-response-contract.md)
+    * [P1：选择导出方式、待办检查与最终状态](administration-and-setup/workflow/masterclass/export-lifecycle.md)
+    * [系统诊断工作流问题](administration-and-setup/workflow/workflow-troubleshooting.md)
+    * [理解并配置工作流卡片](administration-and-setup/workflow/card-reference-standard.md)
   * [仪表板](administration-and-setup/workflow/workflow-dashboard.md)
   * [标准工作流](administration-and-setup/workflow/standard-workflow-builder/README.md)
     * [工作流示例](administration-and-setup/workflow/standard-workflow-builder/standard-workflow/README.md)
@@ -803,7 +806,7 @@
     * [测试自动记账](administration-and-setup/setup/testing/auto-accounting/README.md)
       * [LN](administration-and-setup/setup/testing/auto-accounting/ln.md)
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)
-  * [供应商门户（旧版）](administration-and-setup/setup/supplier-portal-old.md)
+  * [供应商门户：旧版指南](administration-and-setup/setup/supplier-portal-old.md)
   * [供应商门户](administration-and-setup/setup/supplier-portal/README.md)
     * [供应商注册](administration-and-setup/setup/supplier-portal/supplier-registration.md)
   * [WatchDog](administration-and-setup/setup/watchdog/README.md)
@@ -818,7 +821,7 @@
     * [文档追踪](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-document-trace.md)
     * [变更提案和报告](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-change-proposals.md)
 
-## Infor 集成与配置
+## Infor 集成与配置 <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 
 * [导入主数据](infor-integration-and-configuration/importing-customer-master-data/README.md)
   * [字段映射](infor-integration-and-configuration/importing-customer-master-data/field-mappings.md)
@@ -869,7 +872,7 @@
     * [将税码导出到 LN](infor-integration-and-configuration/exporting-to-infor/ln/export-tax-codes-to-ln.md)
     * [LN 配置](infor-integration-and-configuration/exporting-to-infor/ln/ln-configuration.md)
 
-## 高级功能与工具
+## 高级功能与工具 <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
 * [知识图谱探索器](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [AI 工作团队](advanced-functions-and-tools/ai_workforce.md)

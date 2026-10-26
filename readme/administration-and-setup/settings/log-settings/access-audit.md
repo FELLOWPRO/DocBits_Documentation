@@ -1,5 +1,13 @@
 # 访问审计
 
+## 视频教程：公司、订阅与审计
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/zh.mp4" %}
+DocBits 中的公司信息、订阅计划与审计日志
+{% endembed %}
+
+视频演示了公司信息和偏好、订阅计划、登录活动以及审计日志。
+
 <!-- Obsolete illustration retired: Retire legacy English audit screenshots: current native zh feature body is still English (verified product localization gap). Preserve complete bilingual procedure and state the limitation; do not present an English image as localized. -->
 
 当前中文界面的访问审计正文和控件仍显示英文，这是已确认的产品翻译缺口。因此下表保留实际英文控件名，并提供中文说明；本页不将该功能标为已完整本地化。

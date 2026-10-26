@@ -1,5 +1,13 @@
 # 模块
 
+## 视频教程：设置概览与模块
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/zh.mp4" %}
+DocBits 中的设置概览与模块
+{% endembed %}
+
+视频演示了设置概览的五个分组、搜索和快速链接，以及三个模块页面分别控制的内容。
+
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-zh.png" alt="订单与财务模块，画面保留已有配置状态。"><figcaption><p>订单与财务模块，画面保留已有配置状态。</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-zh.png" alt="中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。"><figcaption><p>中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。</p></figcaption></figure>

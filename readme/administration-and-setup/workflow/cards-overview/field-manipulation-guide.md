@@ -16,9 +16,9 @@
 
 **多版本卡：** CALC\_COLUMNS (v2)、CALC\_COLUMNS\_REGEX (v2)、EDIT\_COLUMN (v2)、AI\_CALC\_MTZ\_ETZ (v2)
 
-**版本模式：**所有字段操作卡都遵循 v1 → v2 模式**密钥更改：**v2 添加了带有翻译密钥的国际化 (i18n) 支持
+**版本提示：** 请以实际卡片的版本徽章为准。本文的字段复制示例使用 v2；不同卡片的输入项和行为应分别核对。
 
-📖【完整版本历史](../release.md) | [卡牌版本和行为](card-versions-guide.md)
+📖 [完整版本历史](../release.md) | [卡片版本与行为](card-versions-guide.md)
 
 ***
 
@@ -208,73 +208,44 @@ Checkbox now unchecked (no longer priority)
 
 ### 卡：ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / 复制字段值
 
-#### 目的
+#### 用途与适用场景
 
-将值从一个字段复制到另一字段
+当后续处理需要在另一个文本字段中使用同一个发票号码时，可用此卡片复制字段值。目标字段的原值会被覆盖；请先检查源字段、目标字段及其类型。复制操作本身不会规范化数据格式。
 
-#### 何时使用
+#### 在哪里配置
 
-* 将供应商信息复制到账单信息
-* 跨字段重复数据
-* 标准化数据格式
-* 创建字段值备份
+标准工作流设计器 → **然后…** → **文档字段** → 复制字段值卡片。本示例使用实际界面中的 **v2**。
 
-#### 它是如何运作的
+#### 示例：把发票号码复制到附加字段
 
-```
-Source Field: "Invoice_Supplier"  Value: "ABC Corp"
-    ↓
-COPY TO
-    ↓
-Target Field: "Billing_Partner"  Value: "ABC Corp"
+两个字段均为文本字段：
 
-Both fields now have same value
-```
+| 配置 | 本例中的值 |
+| --- | --- |
+| 源字段 | `invoice_id` — 发票号码 |
+| 目标字段 | `custom_field_1` — 自定义字段 1 |
+| 源值 | `WF-INV-1001` |
+| 目标字段原值 | `ALT` |
 
-#### 真实例子
+在卡片中先选择“发票号码”，再选择“自定义字段 1”。请确认这两个标记的顺序；反向配置会覆盖另一个字段。
 
-**例1：复制送货地址**
+#### 预期结果与检查
 
-```
-Source: "Delivery_Address" = "123 Main St, Berlin"
-    ↓
-Copy to: "Billing_Address"
-    ↓
-Result: Both fields show "123 Main St, Berlin"
-```
+| 情况 | 预期结果 |
+| --- | --- |
+| 源字段存在，文档服务接受修改 | 目标值变为 `WF-INV-1001`，结果为 `SUCCESS`。源字段保持原值。 |
+| 文档中缺少源字段 | 返回 `NOT_FOUND_IN_DOCUMENT`；检查源字段名称和文档数据。 |
+| 文档服务拒绝修改或请求超时 | 返回 `ERROR`；不要把这次复制视为成功。 |
 
-**示例2：复制供应商代码**
+运行后检查目标字段的实际值及工作流日志。下方影片中的结果图是同一示例的预期结果说明。
 
-```
-Source: "Supplier_Code_External" = "SUPP-789"
-    ↓
-Copy to: "Supplier_Code_Internal"
-    ↓
-Result: Both codes match, system recognizes supplier
-```
+#### 管理员视频：复制字段值 <a href="#copy-field-admin-video" id="copy-field-admin-video"></a>
 
-**示例3：复制金额进行验证**
+**34 秒 · 中文。** 陈伟说明何时使用此卡片，在真实中文界面中配置两个字段，并解释成功、缺少源字段和修改被拒绝时应检查什么。
 
-```
-Source: "Invoice_Total" = "€5000"
-    ↓
-Copy to: "Amount_to_Validate"
-    ↓
-Result: Validation field has correct amount
-```
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-copy-field-admin/v1/zh.mp4" %}
 
-#### 参数
-
-```
-Source Field: [Choose field to copy FROM]
-Target Field: [Choose field to copy TO]
-```
-
-#### 注释
-
-* 原始字段不变
-* 目标字段被源值覆盖
-* 有利于标准化数据
+[打开带中文字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-copy-field-admin/v1/zh.html) · [阅读文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-copy-field-admin/v1/zh.txt)
 
 ***
 

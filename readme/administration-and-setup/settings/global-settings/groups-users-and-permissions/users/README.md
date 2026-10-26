@@ -1,6 +1,8 @@
 # 用户
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/zh.mp4" %}
+
+视频中的“节省”是“保存”的旧译文，在该片中指保存用户数据。请按本页说明理解该操作。
 
 <figure><img src="../../../../../.gitbook/assets/prior-u046-zh.png" alt="用户视图；姓名和账户已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。"><figcaption><p>用户视图；姓名和账户已隐藏。 “Actions”列尚未翻译；用户身份和数据行已隐藏。</p></figcaption></figure>
 

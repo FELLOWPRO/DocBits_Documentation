@@ -25,7 +25,7 @@ La usuaria y la oficina se han generado con IA. Las acciones y los resultados pr
 
 ## Recorrido completo por el panel
 
-La usuaria ficticia de Madrid muestra la búsqueda combinada con AND, los filtros de estado, la ayuda de búsqueda, la configuración de columnas, las estadísticas y la actualización. La interfaz española se ha grabado en DocBits con datos de prueba sintéticos. El personaje y la voz se han generado con IA.
+La usuaria de Madrid muestra la búsqueda combinada con AND, los filtros de estado, la ayuda de búsqueda, la configuración de columnas, las estadísticas y la actualización.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/es.mp4" %}
 
@@ -41,7 +41,9 @@ La usuaria ficticia de Madrid muestra la búsqueda combinada con AND, los filtro
 
 ## Buscar y filtrar documentos
 
-Introduzca un nombre de documento, número de factura u otro dato comercial y pulse **Intro**. El icono de filtros del buscador permite elegir **Estado**, **Asignado a** y **Reinicio requerido**. Confirme con **Aplicar**. Quite filtros individuales o utilice **Borrar filtros** si falta un documento. Las pestañas de tipos de documento y las vistas guardadas también limitan la lista.
+Introduzca un nombre de documento, número de factura u otro dato comercial y pulse **Intro**. Con el icono **Filtros** (tres barras deslizantes) al final derecho de la barra de búsqueda elija **Estado**, **Asignado a** y **Reinicio necesario**; confirme con **Aplicar**. Quite filtros individuales o utilice **Borrar filtros** si falta un documento. Las pestañas de tipos de documento y las vistas guardadas también limitan la lista.
+
+El icono **rayo** al inicio del campo de búsqueda abre el selector de campos. Muestra primero los **Filtros rápidos** — búsquedas preparadas como **Vencido**, **Próximo a vencer**, **Asignado a mí**, **Bandeja de hoy**, **Pendiente de validación** o **Documentos electrónicos** — y después todos los campos que se pueden buscar. Al elegir una entrada, la condición correspondiente se inserta en el campo de búsqueda.
 
 La barra de búsqueda ofrece filtros estructurados, una vista de consulta directa y ayuda sobre campos y sintaxis. Copie los nombres de campo y los ejemplos de esa ayuda. Los nombres técnicos de los campos no cambian al cambiar el idioma. Las opciones avanzadas dependen de las capacidades de búsqueda habilitadas.
 
@@ -59,7 +61,7 @@ Si la agrupación está disponible, seleccione un campo sobre la tabla. Para fec
 
 Use **+** junto a las pestañas de tipos de documento para mostrar otras pestañas. Puede reordenarlas arrastrándolas. Quitar una pestaña solo cambia la vista; no elimina documentos.
 
-Abra el engranaje y los ajustes de columnas. Mueva columnas entre las listas de ocultas y visibles y arrastre las visibles para ordenarlas. También puede añadir campos de un tipo de documento. Consulte [Cambiar columnas del documento](change-document-columns.md).
+Abra el engranaje **Ajustes avanzados** a la derecha de la barra de búsqueda y, en su menú, el botón **Configuración de columnas**. Mueva columnas entre las listas de ocultas y visibles y arrastre las visibles para ordenarlas. También puede añadir campos de un tipo de documento. Consulte [Cambiar columnas del documento](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns-es.png" alt="Seleccione y ordene la información de la tabla en los ajustes de columnas."><figcaption><p>Seleccione y ordene la información de la tabla en los ajustes de columnas.</p></figcaption></figure>
 
@@ -75,7 +77,7 @@ Marque varios documentos y abra el menú de la cabecera para las acciones masiva
 
 ## Guardar un panel personal
 
-Abra el botón azul de vista situado bajo el buscador y elija **Crear nuevo panel**. Introduzca un nombre y decida si la vista es privada, visible para todos o compartida con grupos y usuarios concretos. Guarde filtros, orden y columnas para tareas recurrentes.
+Abra el botón de vista situado bajo la barra de búsqueda y elija **Crear un nuevo panel de control**. Introduzca un nombre y elija **Visible sólo para mí**, **Visible para todos los usuarios** o **Compartir con grupos y usuarios**. Guarde filtros, orden y columnas para tareas recurrentes.
 
 Seleccione las vistas guardadas desde el mismo menú. Guarde cambios posteriores cuando la vista sea suya y haya cambiado. No puede sobrescribir una vista compartida con usted: cree una propia. Compartir una vista no concede nuevos permisos sobre los documentos. Consulte [Paneles personales](personal-dashboards.md).
 
@@ -93,6 +95,6 @@ Los demás botones actualizan la lista, abren ajustes avanzados, inician un esc�
 
 Compruebe organización, vista activa, tipo de documento, texto de búsqueda y filtros. Actualice la lista y revise otras páginas de resultados. Si sigue faltando una función, pida a su administrador que revise permisos y módulos.
 
-**Ctrl/Cmd + K** abre la búsqueda rápida global; **Ctrl/Cmd + Q** actualiza el panel; **Ctrl/Cmd + H** abre la ayuda. El menú del engranaje contiene la referencia de atajos. El contador de documentos pendientes de toda la organización, si aparece, es un indicador para administradores, no su contador personal de tareas.
+**Ctrl/Cmd + K** abre la búsqueda rápida global; **Ctrl/Cmd + Q** actualiza el panel; **Ctrl/Cmd + H** abre la ayuda. El menú **Ajustes avanzados** contiene la referencia de atajos. El contador de documentos pendientes de toda la organización, si aparece, es un indicador para administradores, no su contador personal de tareas.
 
 Use Ctrl en Windows/Linux y Cmd en macOS. Los atajos del navegador o sistema pueden tener prioridad.

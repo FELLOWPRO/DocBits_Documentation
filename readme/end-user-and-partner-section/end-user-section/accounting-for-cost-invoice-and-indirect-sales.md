@@ -99,3 +99,34 @@ Para facturas no coincidentes automáticamente:
 3. **Revisar Coincidencias**: Los usuarios pueden revisar las coincidencias, verificar detalles y ver indicadores de estado.
 4. **Resolver Discrepancias**: Cualquier desajuste o discrepancia se resalta para que el usuario lo revise y corrija manualmente.
 5. **Exportar Datos**: Los datos coincidentes pueden exportarse para procesamiento adicional o mantenimiento de registros.
+
+
+## Videotutorial: Distribución de una factura de gastos
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/es.mp4" %}
+Distribución de una factura de gastos
+{% endembed %}
+
+[Ver con subtítulos y capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/es.html)
+
+Algunas etiquetas nativas pueden permanecer en otro idioma. Se conservan los identificadores técnicos de los campos.
+
+En la interfaz grabada, «Reservas registradas» representa aquí el total imputado y «Cantidad pendiente de liquidar» el saldo que queda por repartir: estos rótulos no confirman una reserva ni un pago. Los nombres de las cuentas y centros de coste de demostración son valores configurados. Esta distribución no confirma una contabilización en el ERP.
+
+Primero, compruebo nuestra factura de formación original. El proveedor, el número de factura y el importe deben coincidir con el documento. En este ejemplo, son mil euros sin impuestos. La factura no contiene ningún pedido de compra.
+
+Abro la contabilización y trabajo con la distribución según el importe total. Las cuentas de mayor y los centros de coste disponibles fueron configurados previamente por nuestro administrador. Solo elijo valores que tengan sentido comercial para esta factura.
+
+Con la función de división, creo dos sublíneas. DocBits comienza aquí con una distribución equitativa. Pero para nuestro ejemplo, necesito el sesenta y el cuarenta por ciento. El importe original de la factura sigue siendo de mil euros.
+
+Para ambas sublíneas, selecciono la cuenta de mayor preparada para servicios de oficina. La primera línea pertenece al centro de coste operativo, la segunda a la administración. El centro de coste es un campo obligatorio en este ejemplo. También añado un texto de apunte contable claro.
+
+En la primera línea, introduzco el sesenta por ciento y confirmo con Intro. Espero hasta que el importe muestre seiscientos euros. Luego confirmo el cuarenta por ciento en la segunda línea y espero a los cuatrocientos euros. Así compruebo cada recálculo antes de continuar.
+
+Ahora compruebo juntos los dos importes, las cuentas de mayor y los centros de coste. Seiscientos más cuatrocientos suman mil euros. El total registrado también debe mostrar mil euros, y el saldo restante debe ser cero. Aclaro cualquier diferencia en los totales antes de guardar.
+
+<figure><img src="../../.gitbook/assets/customer-totals-es-accounting-email-v2.png" alt="Centros de coste con un total comprobado de 1.000 euros"><figcaption><p>Centros de coste con un total comprobado de 1.000 euros</p></figcaption></figure>
+
+Guardo la contabilización y espero la confirmación. A continuación, vuelvo a cargar la factura. Ambos centros de coste, los porcentajes y los importes siguen ahí. También compruebo el total y el saldo restante después de recargar.
+
+<figure><img src="../../.gitbook/assets/customer-save-es-accounting-email-v2.png" alt="Imputación guardada y comprobada tras volver a abrir"><figcaption><p>Imputación guardada y comprobada tras volver a abrir</p></figcaption></figure>

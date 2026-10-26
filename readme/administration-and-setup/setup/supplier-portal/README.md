@@ -1,82 +1,50 @@
-# Panel de proveedores
+# Portal de proveedores
 
-## Descripción general
+El **portal de proveedores** permite que un administrador dé a los proveedores de su empresa acceso a **DocBits**. El administrador activa el portal y configura qué proveedores pueden utilizarlo y qué información pueden consultar.
 
-El **Panel de proveedores** permite gestionar el registro y el acceso de proveedores. La información y las acciones disponibles para cada proveedor dependen de los permisos, el diseño del portal y la integración de su organización. Dar de alta un registro no concede por sí solo acceso a todos los documentos de DocBits.
+Un proveedor invitado se registra e inicia sesión con su propia cuenta. Allí puede consultar la información que se le haya habilitado, por ejemplo el estado de sus pedidos de compra y facturas. Las funciones disponibles dependen de la configuración de la organización.
 
-## Cómo activar el Panel de proveedores
+## Vídeo: preparar el portal de proveedores y el acceso
 
-1. Abra **Ajustes → Procesamiento de documentos → Módulos → Integración de documentos**.
-2. En **Envío y proveedor**, revise el interruptor **Supplier Dashboard**. Este nombre aún aparece en inglés en la interfaz española.
-3. Si debe cambiar la opción, compruebe antes que su organización está autorizada a usarla. Las imágenes muestran el estado existente; no representan una activación realizada durante la documentación.
+Un administrador explica la opción del portal y la selección del plan, la preparación de una invitación y el inicio del registro. La activación, el envío, el registro y la aprobación se explican como pasos separados.
 
-<figure><img src="../../../.gitbook/assets/site-extra-modules-document-integration-es.png" alt="Módulos de integración de documentos en español. Abra Envío y proveedor para revisar la opción del portal; esta imagen no acredita una activación o un cambio de suscripción."><figcaption><p>Módulos de integración de documentos en español. Abra Envío y proveedor para revisar la opción del portal; esta imagen no acredita una activación o un cambio de suscripción.</p></figcaption></figure>
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.mp4" %}
 
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-portal-module-es.png" alt="Envío y proveedor muestra el interruptor Supplier Dashboard, cuyo nombre aún aparece en inglés. La opción ya estaba activa en este entorno; no se cambió su estado."><figcaption><p>Envío y proveedor muestra el interruptor Supplier Dashboard, cuyo nombre aún aparece en inglés. La opción ya estaba activa en este entorno; no se cambió su estado.</p></figcaption></figure>
+[Abrir el vídeo con subtítulos en español y selección de capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.html)
 
-## Configuración del proveedor
+## Admin: activar el portal
 
-Abra el área de proveedores de **Ajustes**. En **General** puede revisar los campos adicionales de la invitación, el estado del proveedor y la agrupación de identificadores. Los nombres de estados configurados, como **Open**, pueden pertenecer al flujo de su organización.
+1. En Configuración, abra los módulos y seleccione **Integración de documentos**.
+2. Despliegue **Envío y proveedor** y active **Portal de proveedores**.
+3. Si aparece un diálogo de activación, revise el plan mostrado y confirme la activación que necesita.
 
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-general-settings-es.png" alt="Ajustes generales del proveedor: campos adicionales de invitación, Estado del proveedor y agrupación de identificadores. Assigned User, Save Changes y Reset son las etiquetas inglesas que todavía muestra el producto. No se cambiaron ajustes ni se envió una invitación."><figcaption><p>Ajustes generales del proveedor: campos adicionales de invitación, Estado del proveedor y agrupación de identificadores. Assigned User, Save Changes y Reset son las etiquetas inglesas que todavía muestra el producto. No se cambiaron ajustes ni se envió una invitación.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-module-20261024-es.png" alt="Opción del portal en el módulo de envíos y proveedores. Este interruptor activa la función para la organización."><figcaption><p>Opción del portal en el módulo de envíos y proveedores. Este interruptor activa la función para la organización.</p></figcaption></figure>
 
-Use las guías específicas para cada área:
+## Admin: configurar el portal
 
-* [Configuración general del proveedor](../../settings/supplier-setting/supplier-general-settings.md): ajustes del portal y referencias a los documentos legales y a la identidad visual.
-* [Plantillas de correo electrónico](../../settings/supplier-setting/editing-email-templates.md): contenido de los mensajes de invitación.
-* [Diseño del proveedor](../../settings/supplier-setting/supplier-layout.md): campos que debe aportar el proveedor al registrarse.
-* [Configuración de exportación](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): integración y mapeo del portal con Infor M3.
-* [Permisos para proveedores](../../settings/supplier-setting/supplier-permissions.md): alcance de acceso y grupos de proveedores.
+Configure el portal de su organización antes de enviar las primeras invitaciones:
 
-El [índice de ajustes del proveedor](../../settings/supplier-setting/) reúne estas guías. La captura de General no muestra una exportación, el envío de un correo ni el acceso de un proveedor.
+- [Configuración general de proveedores](../../settings/supplier-setting/supplier-general-settings.md): Campos adicionales de invitación, estados, logotipo e información de privacidad.
+- [Plantillas de correo](../../settings/supplier-setting/editing-email-templates.md): Contenido y presentación de los mensajes de invitación.
+- [Diseño de proveedor](../../settings/supplier-setting/supplier-layout.md): Campos para el registro de proveedores y la administración interna. Seleccione el tipo de diseño adecuado.
+- [Permisos de proveedores](../../settings/supplier-setting/supplier-permissions.md): Asignación de empleados internos a grupos de proveedores. Estas responsabilidades internas son independientes del acceso propio de cada proveedor al portal.
 
-## Panel de proveedores <a href="#supplier-permissions" id="supplier-permissions"></a>
+<figure><img src="../../../.gitbook/assets/portal-general-20261024-es.png" alt="Configuración general de proveedores con la opción de campos adicionales de invitación."><figcaption><p>Configuración general de proveedores con la opción de campos adicionales de invitación.</p></figcaption></figure>
 
-Abra el panel desde la navegación de proveedores. La tabla muestra los registros accesibles para su usuario. Los recuentos, las columnas y los estados de la imagen corresponden al entorno mostrado; no son valores predeterminados.
+## Admin: invitar a proveedores
 
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-dashboard-overview-es.png" alt="Panel actual con Todos los proveedores, Pendiente de aprobación, Registro pendiente y búsqueda por nombre o número. La tabla contiene registros con sus datos ocultos; los recuentos pertenecen al entorno de prueba."><figcaption><p>Panel actual con Todos los proveedores, Pendiente de aprobación, Registro pendiente y búsqueda por nombre o número. La tabla contiene registros con sus datos ocultos; los recuentos pertenecen al entorno de prueba.</p></figcaption></figure>
+Abra la administración de proveedores. Antes de invitar, revise la empresa, el grupo, la persona de contacto y el correo. Al crear un proveedor, guardar solicita el envío de la invitación de registro; no se limita a conservar un borrador. Para un proveedor existente, utilice la acción de invitación correspondiente. La confirmación de envío no demuestra que el correo se haya entregado ni que el registro haya finalizado.
 
-## Filtrar por proveedores
+<figure><img src="../../../.gitbook/assets/portal-suppliers-focus-20261024-es.png" alt="Administración interna de tres empresas ficticias. Los tres estados muestran aquí un registro pendiente."><figcaption><p>Administración interna de tres empresas ficticias. Los tres estados muestran aquí un registro pendiente.</p></figcaption></figure>
 
-Utilice **Búsqueda por nombre, número** para localizar un proveedor. El control de filtros junto a la búsqueda permite revisar las opciones de su entorno. Las categorías **Todos los proveedores**, **Pendiente de aprobación** y **Registro pendiente** permiten acotar la lista. La paginación controla cuántos registros se muestran por página.
+<figure><img src="../../../.gitbook/assets/portal-invitation-20261024-es.png" alt="Formulario para crear e invitar a un proveedor. Revise la empresa, el contacto y el correo antes de guardar."><figcaption><p>Formulario para crear e invitar a un proveedor. Revise la empresa, el contacto y el correo antes de guardar.</p></figcaption></figure>
 
-## Estado del proveedor
+## Proveedor: registrarse y acceder a DocBits
 
-Revise el estado y el flujo configurados en su organización. Un registro pendiente de inscripción indica una fase distinta de una aprobación pendiente; no deduzca de un único estado que el proveedor ya tiene acceso o que se han cumplido todos los controles internos. Los nombres y pasos pueden variar según la configuración.
+El proveedor abre su invitación, crea o utiliza la cuenta propia prevista y sigue los pasos de registro configurados. Después puede consultar la información que la organización pone a su disposición en DocBits. El proceso exacto y las funciones disponibles dependen de la organización.
 
-## Herramientas en el Panel de proveedores
+[Guía de registro para proveedores](supplier-registration.md).
 
-### Refrescar tabla <a href="#refresh-table" id="refresh-table"></a>
+## Entender el acceso y los estados
 
-El botón con la flecha circular vuelve a cargar la lista. Actualizar la tabla no envía una invitación ni modifica el estado de un proveedor.
-
-### Establecer columnas de tabla para la organización <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-Abra el botón de configuración de columnas junto a la búsqueda. Este diálogo corresponde a la **tabla de proveedores**. Seleccione campos y use las flechas para moverlos entre **Columnas ocultas** y **Columnas visibles**; arrastre los campos visibles para cambiar su orden. **Hecho** confirma los cambios y **Cancelar** permite salir sin confirmarlos. Revise el alcance de la configuración de su organización antes de guardarla.
-
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-columns-dialog-es.png" alt="Configuración de columnas de la tabla de proveedores, con Columnas ocultas y Columnas visibles. Las casillas y flechas permiten cambiar la visibilidad, y Hecho confirma los cambios. En esta captura no se modificó ni guardó la selección."><figcaption><p>Configuración de columnas de la tabla de proveedores, con Columnas ocultas y Columnas visibles. Las casillas y flechas permiten cambiar la visibilidad, y Hecho confirma los cambios. En esta captura no se modificó ni guardó la selección.</p></figcaption></figure>
-
-### Analítica <a href="#analytics" id="analytics"></a>
-
-El botón con el gráfico abre el resumen de vencimientos disponible para los proveedores. Los períodos y recuentos dependen de los datos de su organización; no representan necesariamente una fecha de caducidad del acceso a DocBits. Compruebe el filtro aplicado antes de interpretar la lista resultante.
-
-## Crear proveedor y enviar correo electrónico de registro
-
-### Para crear un nuevo proveedor
-
-1. Pulse **+** en la barra de herramientas para abrir **Añadir proveedor**.
-2. Revise el grupo, el nombre del proveedor y los datos de la persona de contacto. Los campos adicionales dependen de la configuración.
-3. Antes de pulsar **Guardar**, compruebe el destinatario y la autorización para enviar la invitación. Esta acción puede iniciar el envío del enlace de registro; no debe tratarse como un borrador sin comunicación externa.
-4. Compruebe el resultado de la operación. Una confirmación de la solicitud no garantiza que el mensaje haya llegado al buzón; revise la entrega si el proveedor no lo recibe.
-
-<figure><img src="../../../.gitbook/assets/site-complete-supplier-create-dialog-es.png" alt="Formulario inicial Añadir proveedor, vacío y sin guardar. Guardar puede iniciar el envío del enlace de registro; compruebe los destinatarios y la autorización antes de usarlo. En esta captura no se creó un proveedor ni se envió correo."><figcaption><p>Formulario inicial Añadir proveedor, vacío y sin guardar. Guardar puede iniciar el envío del enlace de registro; compruebe los destinatarios y la autorización antes de usarlo. En esta captura no se creó un proveedor ni se envió correo.</p></figcaption></figure>
-
-La imagen muestra únicamente el formulario inicial, sin datos ni envío.
-
-### Para enviar un correo electrónico de registro a un proveedor existente
-
-Localice el registro correcto y revise la acción **Magic Link** cuando esté disponible para su rol y el estado del proveedor. Compruebe los datos de contacto antes de confirmar **Enviar**. Esta operación solicita el correo de registro; no se ejecutó durante la preparación de esta guía. No use una cuenta real para probar un envío sin autorización.
-
-## ¿Cómo funciona el proceso de registro para el proveedor?
-
-Tras recibir una invitación válida, el proveedor sigue el enlace y completa los datos y pasos requeridos por su organización. Consulte la [guía del proceso de registro](supplier-registration.md). El acceso final depende de los permisos y de las aprobaciones configuradas.
+Portal activado, invitación enviada, registro completado y aprobación concedida son estados distintos. Una ficha de proveedor o datos maestros guardados no demuestran que el acceso al portal esté listo. La vista del proveedor depende de los permisos asignados y difiere de la vista interna del administrador.

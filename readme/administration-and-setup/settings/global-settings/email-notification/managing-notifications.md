@@ -1,35 +1,28 @@
 # Benachrichtigungen verwalten
 
-Um bestehende Benachrichtigungen zu bearbeiten, zu deaktivieren oder zu löschen und sie an Änderungen in den Dokumentenverarbeitungs-Workflows oder Benutzerverantwortlichkeiten anzupassen, können Sie Folgendes tun:
+Öffnen Sie **Einstellungen → E-Mail-Benachrichtigung**, um die Regeln für Ihre Organisation zu sehen. Eine Regel verknüpft einen Dokumentstatus mit einer E-Mail-Vorlage und einem Empfänger. Das folgende Beispiel verwendet eine Demonstrationsregel für Rechnungen und bleibt in der DocBits-Sandbox **inaktiv**.
 
-**Zu den Benachrichtigungseinstellungen navigieren:** Gehen Sie zu den Einstellungen Ihres Systems, wo Sie Benachrichtigungen verwalten können. Diese finden Sie im Bereich "Einstellungen", "Globale Einstellungen" und dann unter "E-Mail-Benachrichtigung".
+## Beispiel: Eine Rechnung ist bereit zur Validierung
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Bevor Sie eine Regel erstellen, bereiten Sie eine E-Mail-Vorlage für **Invoice** unter **Einstellungen → E-Mail-Vorlagen** vor. In diesem Beispiel heißt die Vorlage **Docs Demo Invoice Notification**. Die Vorlage liefert den E-Mail-Betreff und die Nachricht.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Wählen Sie auf der Seite **E-Mail-Benachrichtigung** **+ Neu** aus.
+2. Geben Sie **Docs Demo Invoice Validation** als Namen ein, wählen Sie **Invoice** als Dokumenttyp und wählen Sie die vorbereitete E-Mail-Vorlage aus.
+3. Wählen Sie **Ready for validation** als Status und **Medium** als Priorität. Setzen Sie **Zeiteinheit** auf **MINUTEN** und **Verzögerung** auf **10**. Die Mindestverzögerung für Minuten beträgt fünf.
+4. Wählen Sie **E-Mail an zugewiesenen Benutzer/Gruppe senden**. Aktivieren Sie **Nicht wiederholen**, wenn die Nachricht nur einmal gesendet werden soll. Prüfen Sie Empfänger und Timing und wählen Sie dann **Speichern**.
 
-**Nach der Liste bestehender Benachrichtigungen suchen:** In den Benachrichtigungseinstellungen finden Sie eine Liste bestehender Benachrichtigungen. Diese Liste zeigt Ihnen alle Benachrichtigungen an, die derzeit eingerichtet sind.
+<figure><img src="../../../../.gitbook/assets/dbdc-639-example-form-de-20261011.png" alt="Ausgefüllte Benachrichtigungsregel für Invoice, Ready for validation, zehn Minuten Verzögerung und der zugewiesene Benutzer oder die Gruppe"><figcaption><p>Die gespeicherte Beispielregel im Bearbeitungsdialog. Ihre Werte zeigen, wann und an wen die Benachrichtigung gesendet würde.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Die Regel erscheint nun in der Liste. Das Dokumentationsbeispiel wurde danach deaktiviert, daher bietet sein **Actions**-Menü **Aktivieren** an. Prüfen Sie Name, Dokumenttyp, Status, Verzögerung und Empfänger in Ihrer eigenen Liste, bevor Sie eine Regel aktivieren.
 
-**Eine Benachrichtigung bearbeiten:** Um eine bestehende Benachrichtigung zu bearbeiten, suchen Sie die Benachrichtigung in der Liste und wählen Sie die Bearbeitungsoption aus. Dies ermöglicht es Ihnen, die Benachrichtigungseinstellungen zu ändern, wie z. B. den Belegtyp, den Status, auslösende Ereignisse oder Empfänger.
+<figure><img src="../../../../.gitbook/assets/dbdc-639-example-list-de-20261011.png" alt="Liste der E-Mail-Benachrichtigungen mit Regeln anstelle einer leeren Tabelle"><figcaption><p>Die Liste zeigt die gespeicherten Regeln, die Sie finden und verwalten können.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="192"><figcaption></figcaption></figure>
+## Regel bearbeiten, aktivieren oder löschen
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+Öffnen Sie das **Actions**-Menü der Zeile. **Bearbeiten** öffnet die Regel mit ihren aktuellen Werten. **Aktivieren** schaltet dieses inaktive Beispiel ein; eine aktive Regel bietet stattdessen **Deaktivieren** an. **Logs** öffnet den Benachrichtigungsverlauf der Regel. **Löschen** entfernt die Regel nach einer Bestätigung. Prüfen Sie Empfänger und Timing, bevor Sie eine Regel aktivieren oder ändern.
 
-**Eine Benachrichtigung deaktivieren:** Wenn Sie eine Benachrichtigung vorübergehend deaktivieren möchten, suchen Sie die Benachrichtigung in der Liste und wählen Sie die Option zum Deaktivieren aus. Dadurch wird die Benachrichtigung vorübergehend gestoppt, ohne sie zu löschen, sodass Sie sie später bei Bedarf wieder aktivieren können.
+<figure><img src="../../../../.gitbook/assets/dbdc-639-example-actions-de-20261011.png" alt="Actions-Menü der inaktiven Beispielbenachrichtigung mit Bearbeiten, Aktivieren, Logs und Löschen"><figcaption><p>Die verfügbaren Aktionen hängen davon ab, ob die Regel aktiv ist.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="116"><figcaption></figcaption></figure>
+Wenn die Liste **No Record Found!** anzeigt, erstellen Sie zuerst eine Regel. Wenn die Liste **Dokumenttyp** oder die E-Mail-Vorlagen leer ist, konfigurieren Sie einen aktiven Dokumenttyp und eine passende Vorlage, bevor Sie zu diesem Formular zurückkehren.
 
-**Eine Benachrichtigung löschen:** Um eine Benachrichtigung dauerhaft zu entfernen, suchen Sie die Benachrichtigung in der Liste und wählen Sie die Löschoption aus. Dadurch wird die Benachrichtigung vollständig aus dem System entfernt und kann nicht wiederhergestellt werden.
-
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="106"><figcaption></figcaption></figure>
-
-**An Änderungen anpassen:** Überprüfen Sie regelmäßig Ihre Benachrichtigungseinstellungen und passen Sie sie bei Bedarf an, um Änderungen in den Dokumentenverarbeitungs-Workflows oder Benutzerverantwortlichkeiten widerzuspiegeln. Dies könnte das Aktualisieren von Benachrichtigungen aufgrund neuer Ereignisse, geänderter Verantwortlichkeiten oder anderer organisatorischer Änderungen umfassen.
-
-**Die Änderungen speichern:** Vergessen Sie nach dem Vornehmen Ihrer Änderungen nicht, diese zu speichern, damit sie wirksam werden.
-
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" width="150"><figcaption></figcaption></figure>
-
-Durch regelmäßiges Überprüfen und Anpassen Ihrer Benachrichtigungseinstellungen können Sie sicherstellen, dass Ihre Benachrichtigungen immer den aktuellen Bedürfnissen und Workflows entsprechen. Dies hilft bei einer effizienten Kommunikation und stellt sicher, dass die richtigen Personen rechtzeitig über wichtige Ereignisse informiert werden.
+Weitere Informationen zur Ersteinrichtung finden Sie unter [Benachrichtigungen konfigurieren](configuring-notifications.md). Wenn E-Mails nicht wie erwartet ankommen, lesen Sie [Fehlerbehebung](troubleshooting.md).

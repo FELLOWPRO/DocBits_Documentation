@@ -14,6 +14,8 @@ Under **Reset filters**, choose whether the dashboard clears its current filters
 
 Under **Action**, choose who can **Assign to** and **Restart** documents. **Return to Validation (Exported Docs)** is a separate switch. Choose these permissions to match the employees who handle documents in your organization.
 
+**Pending Input access (days)** sets how many days a user who was asked for input in the Activity Stream can open the document read-only; after that the link no longer works. The default is 14 days, and access also ends as soon as the document moves on. See [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
+
 Under **Filters**, **Status filter style** offers **All**, **Static**, and **Custom**. Choose **Custom** to select the document statuses you want to display, then select **Apply**. The custom status selector is shown only after Custom is chosen.
 
 Under **Advance Shipment Dashboard**, **Delivered Orders Visibility** sets how many days delivered orders remain visible.

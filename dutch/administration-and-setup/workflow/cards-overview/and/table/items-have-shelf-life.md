@@ -1,6 +1,6 @@
 # Items Have Shelf Life
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-table-04-nl-20261023.png" alt="Tabel Elk/Alle artikelen hebben een houdbaarheidsdatum Operator Waarde" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

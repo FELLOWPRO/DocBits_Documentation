@@ -1,6 +1,6 @@
 # Document Status Condition List
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-status-01-nl-20261023.png" alt="Status Documentstatus Operator in Status" width="521"><figcaption></figcaption></figure>
 
 **Doel**
 

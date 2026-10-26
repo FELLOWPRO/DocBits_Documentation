@@ -1,6 +1,6 @@
 # Start Export
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-01-nl-20261023.png" alt="Exporteren Export starten, met validatie ingesteld op Booleaanse . Status na export: Status" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

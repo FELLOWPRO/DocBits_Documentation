@@ -2,32 +2,34 @@
 
 {% embed url="https://youtu.be/Vvy38N_5g3Y" %}
 
-Aqui você só precisa inserir sua sub-organização desejada e pressionar 'Autenticar'
+Aqui você só precisa inserir a sub-organização desejada e pressionar **Autenticar**
 
-![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-authenticate-pt-20261009.png" alt="Janela »Configuração do servidor de e-mail« com o protocolo OAuth Office365, o roteamento de documentos e o botão »Autenticar«."><figcaption><p>Escolha o roteamento e pressione Autenticar.</p></figcaption></figure>
 
-Você será levado para esta página da Microsoft e precisará inserir um código.
+Você será levado a esta página da Microsoft e precisará inserir um código.
 
 ![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
-Este código pode ser encontrado clicando de volta no DocBits e o código será exibido lá como abaixo, basta copiar o código e inseri-lo na página da Microsoft. Depois disso, você precisará inserir suas próprias credenciais da Microsoft.
+Este código pode ser encontrado voltando ao DocBits — o código será exibido lá como abaixo. Basta copiar o código e inseri-lo na página da Microsoft. Depois disso, você precisará inserir as suas próprias credenciais da Microsoft.
 
-![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-code-pt-20261009.png" alt="Janela »Configuração do servidor de e-mail« com o código de autenticação da Microsoft, o botão »Cópia« e o botão »Concluir autenticação«."><figcaption><p>O código da Microsoft é exibido no DocBits.</p></figcaption></figure>
 
-Pressione o botão CONCLUIR AUTENTICAÇÃO e você será levado para este menu
+Pressione o botão **Concluir autenticação** e você será levado a este menu
 
-![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-options-pt-20261009.png" alt="Janela »Configuração do servidor de e-mail« após a autenticação, com as opções »Usar pasta«, »Usar caixa de correio compartilhada« e »Mover e-mails para outra pasta«."><figcaption><p>Opções após a conclusão da autenticação.</p></figcaption></figure>
 
-**Usar Pasta**
+**Usar pasta**
 
-Se você estiver usando uma pasta diferente da sua caixa de entrada, insira o nome da pasta após ativar o controle deslizante.
+Se você estiver usando uma pasta diferente da sua caixa de entrada, insira o nome da pasta após ativar a opção.
 
-**Usar Caixa de Correio Compartilhada**
+**Usar caixa de correio compartilhada**
 
-Se você deseja que a importação de e-mails acesse uma caixa de entrada ou uma pasta de uma caixa de correio compartilhada, insira o endereço de e-mail aqui após ativar o controle deslizante.
+Se você quiser que a importação de e-mails acesse uma caixa de entrada ou uma pasta de uma caixa de correio compartilhada, insira aqui o endereço de e-mail após ativar a opção.
 
 **Mover e-mails importados para a lixeira**
 
-Se você deseja importar todos os e-mails, não apenas os não lidos, e movê-los para a lixeira, ative esta opção. Caso contrário, ele verificará apenas os e-mails não lidos, importará os documentos, marcará o e-mail como lido e o deixará em seu local atual.
+(Na janela, a opção chama-se **Mover e-mails para outra pasta**.)
 
-No caso de você receber uma mensagem de erro indicando que não tem direitos para estabelecer tal conexão, alguém com direitos de administrador no Azure precisaria autorizar essa conexão. Para mais informações, visite a seguinte página: [https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps)
+Se você quiser importar todos os e-mails — e não apenas os não lidos — e movê-los para outra pasta (por exemplo, a lixeira), ative esta opção. Caso contrário, serão verificados apenas os e-mails não lidos: os documentos são importados, o e-mail é marcado como lido e permanece no seu local. Essa mesma opção é descrita na página [Importar](../../../../administration-and-setup/settings/document-processing/import.md).
+
+Caso você receba uma mensagem de erro indicando que não tem permissões para estabelecer essa conexão, alguém com permissões de administrador no Azure precisará autorizar essa conexão. Para mais informações, visite a seguinte página: [https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps)

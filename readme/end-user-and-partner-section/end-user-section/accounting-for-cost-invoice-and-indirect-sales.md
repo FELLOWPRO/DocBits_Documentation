@@ -99,3 +99,34 @@ Para faturas não correspondidas automaticamente:
 3. **Revisão de Correspondências**: Os usuários podem revisar as correspondências, verificar detalhes e ver indicadores de status.
 4. **Resolução de Discrepâncias**: Quaisquer incompatibilidades ou discrepâncias são destacadas para que o usuário revise e corrija manualmente.
 5. **Exportação de Dados**: Dados correspondentes podem ser exportados para processamento posterior ou arquivamento.
+
+
+## Tutorial em vídeo: Repartição de uma fatura de despesas
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/pt.mp4" %}
+Repartição de uma fatura de despesas
+{% endembed %}
+
+[Ver com legendas e capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/pt.html)
+
+Alguns rótulos nativos podem permanecer noutro idioma. Os identificadores técnicos dos campos são preservados.
+
+Na interface gravada, «Valor registrado» indica o total atribuído e «Valor não liquidado» o montante ainda por atribuir. Estes rótulos não confirmam pagamentos. «Texto do voucher» contém a descrição da imputação. Os nomes das contas e dos centros de custo de demonstração são valores configurados. Esta repartição não confirma qualquer lançamento no ERP.
+
+Primeiro, verifico a nossa fatura de formação original. O fornecedor, o número da fatura e o valor devem corresponder ao documento. Neste exemplo, são mil euros sem impostos. A fatura não contém nenhuma nota de encomenda.
+
+Abro a contabilização e trabalho com a repartição com base no valor total. As contas do razão e os centros de custos disponíveis foram configurados previamente pelo nosso administrador. Escolho apenas valores que façam sentido a nível de negócio para esta fatura.
+
+Com a função de divisão, crio duas sublinhas. O DocBits começa aqui com uma distribuição uniforme. Mas para o nosso exemplo, preciso de sessenta e quarenta por cento. O valor original da fatura mantém-se nos mil euros.
+
+Para ambas as sublinhas, seleciono a conta do razão preparada para serviços de escritório. A primeira linha pertence ao centro de custos operacional, a segunda à administração. O centro de custos é um campo obrigatório neste exemplo. Adiciono também um texto de lançamento claro.
+
+Na primeira linha, insiro sessenta por cento e confirmo com Enter. Espero até que o valor mostre seiscentos euros. Depois confirmo quarenta por cento na segunda linha e espero pelos quatrocentos euros. É assim que controlo cada recálculo antes de prosseguir.
+
+Agora verifico os dois valores, as contas do razão e os centros de custos em conjunto. Seiscentos mais quatrocentos dá mil euros. O total registado também deve mostrar mil euros, e o saldo remanescente deve ser zero. Esclareço qualquer diferença nos totais antes de guardar.
+
+<figure><img src="../../.gitbook/assets/customer-totals-pt-accounting-email-v2.png" alt="Centros de custo com um total verificado de 1.000 euros"><figcaption><p>Centros de custo com um total verificado de 1.000 euros</p></figcaption></figure>
+
+Guardo a contabilização e espero pela confirmação. De seguida, volto a carregar a fatura. Ambos os centros de custos, as percentagens e os valores continuam lá. Também verifico o total e o saldo remanescente após recarregar.
+
+<figure><img src="../../.gitbook/assets/customer-save-pt-accounting-email-v2.png" alt="Imputação guardada e verificada após reabrir"><figcaption><p>Imputação guardada e verificada após reabrir</p></figcaption></figure>

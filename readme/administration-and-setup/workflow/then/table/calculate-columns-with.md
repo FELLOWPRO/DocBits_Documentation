@@ -4,64 +4,52 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-pt-pt.png" alt="Calcular colunas com, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-## **Propósito:**
+## Propósito:
 
-O cartão de fluxo de trabalho **"Calcular colunas na tabela"** é utilizado para realizar cálculos entre colunas numa tabela selecionada. Permite aos utilizadores selecionar colunas, aplicar uma operação matemática e armazenar o resultado numa coluna de resultado especificada.
+Este cartão de fluxo de trabalho calcula, linha a linha, um valor a partir de duas colunas de uma tabela do documento e guarda o resultado numa coluna de resultado. Pode ser utilizado, por exemplo, para calcular totais de linha a partir da quantidade e do preço unitário.
 
-## **Componentes do cartão:**
+## Vídeo de administração:
 
-1. **Nome da tabela**
-   * **Descrição:** Especifica a **tabela** na qual as colunas serão calculadas.
-   * **Detalhe:** É disponibilizada uma lista pendente com todas as **tabelas** disponíveis para seleção.
-2. **Nome da coluna (1.ª coluna)**
-   * **Descrição:** Especifica a **primeira coluna** a envolver no cálculo.
-   * **Detalhe:** É disponibilizada uma lista de todas as **colunas** disponíveis para seleção.
+{% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.mp4" %}
+
+[Ver com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.html) · [Ler a transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.txt)
+
+## Componentes do cartão:
+
+1. **Tabela**
+   * **Descrição:** A tabela do documento na qual o cálculo é executado.
+2. **Primeira coluna**
+   * **Descrição:** A coluna com o primeiro valor de cada linha.
 3. **Operação**
-   * **Descrição:** Define a operação matemática a aplicar entre as colunas selecionadas.
    * **Opções:**
-     * **Add (+):** Adiciona o valor da segunda coluna ao valor da primeira coluna.
-     * **Subtrair (-):** Subtrai o valor da segunda coluna ao valor da primeira coluna.
-     * **Multiply (\*):** Multiplica o valor na primeira coluna pelo valor na segunda coluna.
-     * **Dividir (/):** Divide o valor na primeira coluna pelo valor na segunda coluna.
-4. **Nome da coluna (2.ª coluna)**
-   * **Descrição:** Especifica a **segunda coluna** a envolver no cálculo.
-   * **Detalhe:** É disponibilizada uma lista das **colunas** disponíveis para seleção.
-5. **Coluna de resultados**
-   * **Descrição:** Especifica a **coluna** onde o resultado do cálculo será armazenado.
-   * **Detalhe:** É disponibilizada uma lista das **colunas** disponíveis onde o valor calculado será guardado.
+     * **+** soma o segundo valor ao primeiro.
+     * **-** subtrai o segundo valor do primeiro.
+     * **\*** multiplica os dois valores.
+     * **/** divide o primeiro valor pelo segundo.
+4. **Segunda coluna**
+   * **Descrição:** A coluna com o segundo valor de cada linha.
+5. **Coluna de resultado**
+   * **Descrição:** A coluna na qual o resultado de cada linha é guardado.
+   * **Detalhe:** O nome é guardado em maiúsculas, com os espaços substituídos por sublinhados (`total amount` passa a `TOTAL_AMOUNT`). Se a coluna ainda não existir, o cartão adiciona-a; se existir, os seus valores são substituídos.
 
-## **Funcionalidade:**
+As versões 1 e 2 do cartão têm as mesmas definições e funcionam da mesma forma.
 
-* **Avaliação da condição:**\
-  O cartão só executa a sua ação se tanto a secção **"Quando"** como as **"E Seções"** forem avaliadas como verdadeiras.
-* **Cálculo de colunas:**\
-  O cartão realiza a operação matemática selecionada entre as duas colunas escolhidas.
-* **Armazenamento do resultado:**\
-  O resultado do cálculo é armazenado na **coluna de resultado** selecionada.
+## Funcionalidade:
 
-## **Configuração:**
+* **Cálculo:** Para cada linha da tabela, o cartão lê as duas colunas (maiúsculas e minúsculas nos nomes das colunas não importam), aplica a operação e escreve o resultado na coluna de resultado. Os resultados são arredondados a quatro casas decimais. Em seguida, o documento é guardado com os novos valores.
+  * Um valor vazio ou em falta conta como `0`. Se ambos os valores de uma linha estiverem vazios, o resultado dessa linha fica vazio.
+  * Uma divisão por zero deixa vazio o resultado dessa linha.
+  * Com **+**, dois valores que não são números são unidos com um espaço em vez de somados. Com as outras operações, um valor que não é um número provoca um erro e nenhum resultado é guardado.
+* **Execução da ação:** Se o cálculo e a gravação forem bem-sucedidos, o fluxo de trabalho continua com os cartões seguintes. Se a tabela não existir no documento, se não for possível calcular um valor ou se não for possível guardar o documento, o cartão comunica um erro no registo do fluxo de trabalho.
+* **Test Card:** Quando o cartão é executado com **Test Card**, o cálculo é apenas simulado e o documento não é alterado.
 
-* **Selecionar a tabela:**\
-  Escolha a **tabela** onde as colunas serão calculadas.
-* **Escolher colunas:**\
-  Selecione a **primeira coluna** e a **segunda coluna** que serão utilizadas no cálculo.
-* **Selecionar a operação:**\
-  Escolha a operação matemática (**Add (+)**, **Subtrair (-)**, **Multiply (\*)**, **Divide (/)**) a aplicar entre as colunas.
-* **Selecionar a coluna de resultado:**\
-  Escolha a **coluna de resultado** onde o cálculo será armazenado.
+## Configuração:
 
-## **Conclusão:**
+* O cartão pode ser adicionado como ação Then a partir da categoria **Tabela**. Em seguida, selecionam-se a tabela, as duas colunas, a operação e a coluna de resultado.
+* **Exemplo:** Tabela `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, coluna de resultado `TOTAL_AMOUNT`. Uma linha com quantidade 2 e preço unitário 10 obtém 20; uma linha com 3 e 4 obtém 12.
+* Como um valor vazio conta como `0`, um preço em falta dá um resultado de `0`. Verificar se as colunas de entrada estão preenchidas, por exemplo com uma condição antes deste cartão, pode ajudar a evitar totais errados.
+* Na subtração e na divisão, a ordem das duas colunas é importante.
 
-O cartão de fluxo de trabalho **"Calcular colunas na tabela"** permite aos utilizadores realizar cálculos dinâmicos entre colunas numa tabela e armazenar os resultados numa coluna designada. O cartão oferece flexibilidade para aplicar diferentes operações matemáticas e assegura que o resultado é armazenado na coluna especificada.
+## Conclusão:
 
-<!-- workflow-card-practical-example-20261021 -->
-
-## Exemplo prático
-
-**Quando usar:** Calcule os totais das linhas a partir da quantidade e do preço unitário.
-
-**Configuração:** Selecione tabela `lines`, colunas `quantity` e `unit_price`, multiplicação e coluna de resultado `line_total`.
-
-**Resultado esperado e contra-exemplo:** Uma linha contendo `2` e `10` produz `20`. Teste outra linha de forma independente e diagnostique entradas ausentes ou não numéricas, em vez de tratá-las como um total válido.
-
-Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.
+O cartão de fluxo de trabalho "Calculate Columns with" acrescenta automaticamente valores calculados às linhas da tabela. Os totais de linha e valores semelhantes ficam disponíveis para os cartões seguintes e para a exportação, sem cálculo manual.

@@ -14,7 +14,7 @@ As funções disponíveis dependem das suas permissões, do estado do documento 
 
 ## Visita completa ao painel
 
-A cliente fictícia de Lisboa mostra a pesquisa combinada com AND, os filtros de estado, a ajuda de pesquisa, as definições das colunas, as estatísticas e a atualização. A interface portuguesa foi gravada no DocBits com dados de teste sintéticos. A personagem e a voz foram geradas por IA.
+A cliente de Lisboa mostra a pesquisa combinada com AND, os filtros de estado, a ajuda de pesquisa, as definições das colunas, as estatísticas e a atualização.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/pt.mp4" %}
 

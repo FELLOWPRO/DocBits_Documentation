@@ -2,24 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-pt-pt.png" alt="Data ou hora, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-## **Propósito:**
+## Propósito:
 
-Este cartão DocBits verifica se um valor de data/hora especificado está dentro de um intervalo definido. Permite que os fluxos de trabalho prossigam ou parem consoante a condição seja cumprida, sendo adequado para operações sensíveis ao tempo ou para agendar fluxos de trabalho.
+Este cartão de fluxo de trabalho verifica se a data e a hora atuais se encontram dentro ou fora de um intervalo definido no cartão. Pode ser utilizado para limitar passos a determinadas horas, por exemplo ao horário de trabalho ou a uma janela de manutenção planeada.
 
-## **Funcionalidade:**
+## Componentes do cartão:
 
-* **Validação de data/hora:** Este cartão avalia se uma determinada data/hora está dentro de um intervalo especificado utilizando as seguintes condições:
-  * **Is:** Verifica se a data/hora está dentro do intervalo de início e fim definido (inclusive).
-  * **Não é:** Garante que a data/hora está fora do intervalo definido.
+1. **Operador**
+   * **Opções:**
+     * **É:** A data e a hora atuais encontram-se dentro do intervalo.
+     * **Não é:** A data e a hora atuais encontram-se fora do intervalo.
+2. **Primeira data/hora**
+   * **Descrição:** Um extremo do intervalo, como data e hora ou apenas como hora.
+3. **Segunda data/hora**
+   * **Descrição:** O outro extremo do intervalo.
 
-**Intervalo de data/hora:** Os utilizadores especificam os valores de data/hora de início e de fim para definir o intervalo de comparação.
+## Funcionalidade:
 
-## **Utilização:**
+* **Avaliação da condição:** Quando o fluxo de trabalho chega ao cartão, este obtém a data e a hora atuais em UTC e verifica se se encontram entre os dois valores do cartão. O valor mais antigo é utilizado como início, pelo que a ordem dos dois campos não importa.
+  * Um valor apenas com uma hora (por exemplo `09:00`) é utilizado com a data de hoje, pelo que o intervalo se repete todos os dias.
+  * O início e o fim pertencem ao intervalo: exatamente à hora de início ou de fim, **É** é verdadeiro.
+  * Um intervalo que atravessa a meia-noite pode ser introduzido apenas com horas, por exemplo de `22:00` a `04:00`. O cartão verifica então o período das 22:00 às 04:00; neste caso, as horas exatas de início e de fim não pertencem ao intervalo.
+  * Um intervalo que atravessa a meia-noite com datas completas (por exemplo de `2026-11-01 22:00` a `2026-11-02 04:00`) atualmente não é avaliado corretamente e não deverá ser utilizado.
+* **Execução da ação:**
+  * **Condição Verdadeira:**\
+    Se a condição for cumprida, o fluxo de trabalho continua com os cartões seguintes.
+  * **Condição Falsa:**\
+    Se não for cumprida, o fluxo de trabalho para com uma condição não cumprida.
+* **Dados em falta:** Se faltar um dos dois valores no cartão, o cartão não avalia a condição e comunica a entrada em falta no registo do fluxo de trabalho.
 
-Este cartão é ideal para agendamento, verificações de conformidade ou validação de condições baseadas no tempo nos fluxos de trabalho. Por exemplo, pode ser utilizado para assegurar que as tarefas são executadas apenas durante períodos predefinidos ou para verificar prazos.
+## Configuração:
 
-## **Exemplo de cenário:**
+* O cartão pode ser adicionado como condição And a partir da categoria **Data e hora**. Em seguida, definem-se os dois valores e o operador. Todas as horas deverão ser introduzidas em UTC.
+* **Exemplo:** Com **É**, `09:00` e `17:00`, o cartão é cumprido quando o fluxo de trabalho é executado entre as 09:00 e as 17:00 UTC de qualquer dia.
 
-* Um utilizador configura o cartão para verificar se a **data de submissão** de uma fatura **está entre** **"2024-11-01"** e **"2024-11-30"**. Se a data de submissão estiver dentro deste intervalo, o fluxo de trabalho prossegue para o processamento de pagamento. Caso contrário, o fluxo de trabalho aciona uma notificação para revisão adicional.
+## Conclusão:
 
-Ao utilizar o cartão "Date/Time Range Validation", as organizações podem assegurar um agendamento preciso, reforçar a conformidade e simplificar os fluxos de trabalho ao respeitar restrições de tempo predefinidas.
+O cartão de fluxo de trabalho "Date or Time" torna o momento da execução numa condição do fluxo de trabalho. Os passos podem ser limitados a horas fixas ou a um único intervalo planeado sem alterar o fluxo de trabalho de cada vez.

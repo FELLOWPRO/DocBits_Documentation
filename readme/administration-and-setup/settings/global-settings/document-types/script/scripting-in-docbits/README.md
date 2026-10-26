@@ -1,5 +1,13 @@
 # Scripting no DocBits
 
+## Vídeo tutorial: as funções de script mais importantes
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/pt.mp4" %}
+As funções de script mais importantes no DocBits
+{% endembed %}
+
+O vídeo mostra no editor de roteiros como ler um campo (`get_field_value`), definir um valor (`set_field_value`), calcular uma data de vencimento (`set_date_value`), marcar um campo como inválido (`set_field_as_invalid`) e torná-lo obrigatório (`set_is_required`).
+
 ## Guia de Scripting do DocBits
 
 Bem-vindo ao guia de scripting do DocBits! Aqui, aprenderá a utilizar scripts para automatizar e melhorar o processamento de documentos no DocBits. Os scripts permitem a manipulação personalizada de campos, transformação de dados e implementação de lógica em vários tipos de documentos.
@@ -10,10 +18,14 @@ Os scripts no DocBits são escritos em Python. Eles interagem com os campos e me
 
 #### Funções Principais
 
-* `get_field_value(fields_dict, field_name, default=None)`: Obtém o valor de um campo especificado.
-* `set_field_value(fields_dict, field_name, value)`: Define o valor de um campo especificado.
-* `create_new_field(field_name, value)`: Cria um novo campo com um nome e valor especificados.
-* `format_decimal_to_locale(value, locale)`: Formata um valor decimal de acordo com uma localidade especificada.
+Cada script recebe o documento com o nome `document_data`. Passe-o como primeiro argumento às funções de campo. A referência completa encontra-se na página [Funções de Campo](field-functions.md).
+
+* `get_field_value(document_data, field_name, default_value=None, is_clean=False)`: Lê o valor de um campo.
+* `set_field_value(document_data, field_name, value)`: Escreve um valor num campo e cria o campo se ele não existir.
+* `set_date_value(document_data, field_name, value, add_days=0, skip_weekend=False)`: Escreve uma data, opcionalmente com dias adicionados e sem fins de semana.
+* `set_amount_value(document_data, field_name, value)`: Escreve um montante no formato da localidade do documento.
+* `set_field_as_invalid(document_data, field_name, message, code=None)`: Marca um campo como inválido e mostra a mensagem ao utilizador.
+* `set_is_required(document_data, field_name, value)`: Torna um campo obrigatório ou remove essa obrigatoriedade.
 
 ### Scripts de Exemplo
 
@@ -30,12 +42,12 @@ currency_map = {
     "$": "USD",
     "£": "GBP"
 }
-currency_value = get_field_value(fields_dict, "currency", None)
+currency_value = get_field_value(document_data, "currency", None)
 if currency_value:
     currency_value = currency_value.upper()
     if currency_value in currency_map:
         currency_value = currency_map[currency_value]
-    set_field_value(fields_dict, "currency", currency_value)
+    set_field_value(document_data, "currency", currency_value)
 ```
 
 

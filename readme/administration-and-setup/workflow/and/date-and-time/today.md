@@ -2,27 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_today_is_isnot_v2-pt-pt.png" alt="Hoje, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-## **Propósito:**
+## Propósito:
 
-Este cartão DocBits compara a data de hoje com uma data especificada, permitindo que os fluxos de trabalho sejam executados com base na relação entre a data atual e a data fornecida. É particularmente útil para automação baseada no tempo, gestão de prazos ou acionamento de tarefas agendadas.
+Este cartão de fluxo de trabalho compara a data de hoje com uma data definida no cartão. Pode ser utilizado para regras que só deverão aplicar-se a partir de uma determinada data ou até ela, por exemplo uma alteração de processo a partir de uma data de início planeada.
 
-## **Funcionalidade:**
+## Componentes do cartão:
 
-* **Comparação de datas:** Este cartão avalia a data de hoje face a uma data especificada utilizando as seguintes condições:
-  * **Igual a (=):** Verifica se a data de hoje corresponde à data especificada.
-  * **Não é igual (≠):** Garante que a data de hoje é diferente da data especificada.
-  * **Maior que (>):** Confirma que a data de hoje é posterior à data especificada.
-  * **Maior ou Igual (≥):** Garante que a data de hoje é igual ou posterior à data especificada.
-  * **Menor que (<):** Verifica se a data de hoje é anterior à data especificada.
-  * **Menor ou igual (≤):** Garante que a data de hoje é igual ou anterior à data especificada.
-* **Introdução da data:** Os utilizadores fornecem a data a comparar com a data de hoje.
+1. **Operador**
+   * **Descrição:** Como a data de hoje é comparada com a data no cartão.
+   * **Opções:**
+     * **É igual a:** Hoje é a data no cartão.
+     * **Não é igual a:** Hoje é qualquer outro dia.
+     * **Maior que:** Hoje é posterior à data no cartão.
+     * **Maior ou igual:** Hoje é a data no cartão ou uma data posterior.
+     * **Menor que:** Hoje é anterior à data no cartão.
+     * **Menor ou igual:** Hoje é a data no cartão ou uma data anterior.
+2. **Data**
+   * **Descrição:** A data com a qual o dia de hoje é comparado.
 
-## **Utilização:**
+## Funcionalidade:
 
-Este cartão é ideal para fluxos de trabalho que envolvem prazos, lembretes ou condições sensíveis ao tempo, assegurando que as ações são realizadas ou restringidas com base na data atual.
+* **Avaliação da condição:** Quando o fluxo de trabalho chega ao cartão, este obtém a data atual em UTC e compara-a com a data no cartão através do operador. Só são comparadas as datas; as horas do dia são ignoradas. As datas do documento não têm qualquer papel.
+* **Execução da ação:**
+  * **Condição Verdadeira:**\
+    Se a comparação for verdadeira, o fluxo de trabalho continua com os cartões seguintes.
+  * **Condição Falsa:**\
+    Se não for verdadeira, o fluxo de trabalho para com uma condição não cumprida.
+* **Dados em falta:** Se não estiver definida nenhuma data no cartão, o cartão não avalia a condição e comunica a entrada em falta no registo do fluxo de trabalho.
 
-## **Exemplo de cenário:**
+## Configuração:
 
-* Um utilizador configura o cartão para verificar se **hoje é superior a (>) "2024-11-15"**. Se a condição for cumprida, o fluxo de trabalho aciona uma notificação de seguimento para tarefas em atraso. Caso contrário, o fluxo de trabalho continua sem interrupção.
+* O cartão pode ser adicionado como condição And a partir da categoria **Data e hora**. Em seguida, selecionam-se um operador e uma data.
+* **Exemplo:** Com **Maior ou igual** e `2026-11-01`, o cartão é cumprido a partir de 1 de novembro de 2026 (UTC) e não é cumprido a 31 de outubro de 2026.
+* Como a data é obtida em UTC, pode diferir da data local por volta da meia-noite: na Europa, pouco depois da meia-noite o cartão ainda vê o dia anterior; na América, à noite já vê o dia seguinte.
 
-Ao utilizar o cartão "Today's Date Validation", as organizações podem automatizar processos baseados no tempo, cumprir prazos de forma eficiente e manter a precisão dos fluxos de trabalho.
+## Conclusão:
+
+O cartão de fluxo de trabalho "Today" torna a data do calendário numa condição do fluxo de trabalho. Regras baseadas em datas, como uma data de início ou de fim de um processo, podem ser configuradas uma única vez e entram em vigor automaticamente.

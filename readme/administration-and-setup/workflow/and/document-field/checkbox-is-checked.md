@@ -2,49 +2,39 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-pt-pt.png" alt="A caixa de seleção está marcada, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-## **Propósito:**
+## Propósito:
 
-Este cartão de fluxo de trabalho foi concebido para automatizar ações com base no estado (assinalado ou não assinalado) de uma caixa de verificação dentro do seu sistema ERP. Ao avaliar a condição da caixa de verificação, facilita o acionamento de processos específicos ou a aplicação de determinadas regras dentro da aplicação.
+Este cartão de fluxo de trabalho verifica se um campo de caixa de seleção do documento está marcado ou desmarcado. Pode ser utilizado para que um fluxo de trabalho só continue depois de ter sido definido um indicador no documento, por exemplo um indicador de revisão.
 
-## **Componentes do cartão:**
+## Componentes do cartão:
 
-* **Nome do campo**
-  * **Descrição:** Especifica o nome do campo de caixa de verificação que será avaliado.
-  * **Detalhe:** Deve corresponder ao identificador exato do campo utilizado no sistema. Determina qual o estado da caixa de verificação que está a ser monitorizado.
-* **Booleano**
-  * **Descrição:** Define a condição que aciona o fluxo de trabalho.
-  * **Opções:**
-    * **True:** O fluxo de trabalho é acionado se a caixa de verificação estiver assinalada.
-    * **False:** O fluxo de trabalho é acionado se a caixa de verificação não estiver assinalada.
+1. **Nome do campo**
+   * **Descrição:** O nome técnico do campo de caixa de seleção do documento.
+   * **Detalhe:** O campo deverá ser um campo de caixa de seleção (booleano) do tipo de documento.
+2. **Booleano**
+   * **Descrição:** O estado que a caixa de seleção deverá ter.
+   * **Opções:**
+     * **Verdadeiro:** A caixa de seleção deverá estar marcada.
+     * **Falso:** A caixa de seleção deverá estar desmarcada.
 
-#### **Funcionalidade:**
+## Funcionalidade:
 
-* **Deteção de estado:** O cartão monitoriza continuamente o estado do campo de caixa de verificação especificado.
-* **Avaliação da condição:** O sistema verifica se a caixa de verificação está no estado (assinalada ou não assinalada) especificado pela condição Boolean.
+* **Avaliação da condição:** Quando o fluxo de trabalho chega ao cartão, este lê o valor atual do campo no documento e compara-o com **Booleano**. O cartão não acompanha o campo ao longo do tempo e não o altera.
+  * Um valor de caixa de seleção vazio conta como desmarcado.
+  * Se não for selecionado nenhum valor em **Booleano**, o cartão verifica se a caixa de seleção está desmarcada.
+  * Se o campo não for um campo de caixa de seleção, o cartão regista isso no registo do fluxo de trabalho e compara o seu valor na mesma.
 * **Execução da ação:**
   * **Condição Verdadeira:**\
-    Se o estado da caixa de verificação corresponder à condição Boolean especificada (true para assinalada ou false para não assinalada), o sistema inicia as ações associadas. Estas podem incluir ativar ou desativar campos de formulário, acionar notificações, iniciar fluxos de trabalho ou atualizar registos.
+    Se o estado da caixa de seleção corresponder a **Booleano**, o fluxo de trabalho continua com os cartões seguintes.
   * **Condição Falsa:**\
-    Se o estado da caixa de verificação não corresponder à condição, podem ser tomadas ações alternativas ou nenhuma ação, consoante a configuração do fluxo de trabalho.
+    Se não corresponder, o fluxo de trabalho para com uma condição não cumprida.
+* **Dados em falta:** Se o campo não existir no documento, o cartão não avalia a condição. Comunica que o campo não foi encontrado no documento, o que é um resultado diferente de uma caixa de seleção desmarcada.
 
-## **Configuração:**
+## Configuração:
 
-* Os utilizadores configuram o cartão selecionando o campo de caixa de verificação a partir de uma lista de campos disponíveis e definindo a condição Boolean.
+* O cartão pode ser adicionado como condição And a partir da categoria **Campo de documento**. Em seguida, introduz-se o nome técnico do campo de caixa de seleção em **Nome do campo** e seleciona-se **Verdadeiro** ou **Falso**.
+* Pode ser utilizado **Test Card** no menu do cartão do Workflow Builder para verificar a configuração num documento com a caixa marcada, num com a caixa desmarcada e num sem o campo.
 
 ## Conclusão:
 
-O cartão de fluxo de trabalho "Checkbox Field Condition" é uma ferramenta fundamental para gerir formulários e documentos dinâmicos dentro de um sistema ERP, onde as entradas do utilizador podem ditar os processos de dados subsequentes. Ao automatizar ações com base no estado de uma caixa de verificação, este cartão melhora a eficiência do fluxo de trabalho e assegura que os comportamentos do sistema estão alinhados com as entradas do utilizador. Uma documentação clara deste cartão ajudará os utilizadores a implementá-lo eficazmente nas suas operações, permitindo um melhor controlo sobre os comportamentos dos formulários e as automações de processos.
-
-**Nota: Nem todos os clientes têm a caixa de verificação, mas esta pode ser adicionada se assim o desejarem.**
-
-<!-- workflow-card-practical-example-20261021 -->
-
-## Exemplo prático
-
-**Quando usar:** Execute um acompanhamento somente após um sinalizador de revisão explícito ter sido definido.
-
-**Configuração:** Selecione o campo da caixa de seleção `review_complete` e o booleano `true`.
-
-**Resultado esperado e contra-exemplo:** Uma caixa de seleção marcada é aprovada. Uma caixa de seleção desmarcada falha; não use um campo ausente como prova de revisão concluída.
-
-Esta é uma configuração ilustrativa e resultado esperado. Utilize campos, usuários e grupos configurados em sua organização de teste; não é uma afirmação de que este exemplo foi executado.
+O cartão de fluxo de trabalho "Checkbox is checked" transforma uma caixa de seleção do documento numa condição do fluxo de trabalho. Assim, um fluxo de trabalho pode aguardar um passo manual, como uma revisão concluída, antes de as ações seguintes serem executadas.

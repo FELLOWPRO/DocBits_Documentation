@@ -1,6 +1,6 @@
 # Dokumente filtern
 
-## Standard-Filteroptionen
+Nutzen Sie die Suchleiste des Dashboards, den Filterbereich, den Datumsbereich und die Dokumenttyp-Tabs, um die Dokumentliste einzugrenzen. Die Steuerungen greifen zusammen: Ein Dokument muss sowohl der aktiven Suche als auch den aktiven Filtern entsprechen, um in der Tabelle zu bleiben.
 
 Über die Suchleiste im Dashboard suchen Sie nach Dokumenten. Weitere Möglichkeiten und Suchausdrücke erklärt die [Schnellsuche](quick-search.md).
 
@@ -14,7 +14,7 @@ Wählen Sie das Symbol **Filter** (drei Schieberegler) am rechten Ende der Suchl
 
 Wählen Sie **Anwenden**, um die Filter zu übernehmen. Mit **Filter löschen** setzen Sie die Filter zurück.
 
-## Zeitbasierte Filterung
+## Importzeitraum wählen
 
 Je nach Suchkonfiguration zeigt das Dashboard zusätzlich Schaltflächen für voreingestellte Zeiträume und einen benutzerdefinierten Zeitraum. Bei aktivierter Volltextsuche können diese Schaltflächen ausgeblendet sein.
 

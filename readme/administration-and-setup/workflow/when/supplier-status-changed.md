@@ -12,7 +12,7 @@ Este cartão de fluxo de trabalho inicia um fluxo de trabalho (acionador) quando
    * **Descrição:** Define se o novo estado do fornecedor deverá ser um dos estados selecionados ou nenhum deles.
    * **Opções:**
      * **É:** A condição é verdadeira se o novo estado for um dos estados selecionados.
-     * **Não é:** A condição é verdadeira se o novo estado não for um dos estados selecionados.
+     * **Não é:** A condição é verdadeira se uma alteração do estado do fornecedor tiver iniciado o fluxo de trabalho e o novo estado não for um dos estados selecionados.
 2. **Status**
    * **Descrição:** Os estados de fornecedor com os quais o novo estado é comparado.
    * **Opções:** Um ou mais dos seguintes:
@@ -28,10 +28,10 @@ Este cartão de fluxo de trabalho inicia um fluxo de trabalho (acionador) quando
 * **Avaliação da condição:** O cartão compara o estado transmitido ao fluxo de trabalho com os estados selecionados no cartão.
 * **Execução da ação:**
   * **Condição Verdadeira:**\
-    Com **É**, o novo estado é um dos estados selecionados. Com **Não é**, não é. O fluxo de trabalho continua com os cartões seguintes.
+    Com **É**, o novo estado é um dos estados selecionados. Com **Não é**, uma alteração do estado do fornecedor iniciou o fluxo de trabalho e o novo estado não é um dos estados selecionados. O fluxo de trabalho continua com os cartões seguintes.
   * **Condição Falsa:**\
     Se a condição não for cumprida, o cartão não é cumprido e os passos seguintes não são executados.
-* **Nota sobre "Não é":** Uma importação de ordem de compra também inicia todos os fluxos de trabalho independentes de documentos, incluindo os fluxos de trabalho com este cartão. Uma importação de ordem de compra não transmite nenhum estado de fornecedor, pelo que, com **Não é**, uma importação de ordem de compra também torna o cartão verdadeiro e o fluxo de trabalho é executado. Combinar **Não é** com outras condições pode ajudar a limitar o fluxo de trabalho a eventos de fornecedores.
+* **Outros eventos independentes de documentos:** Uma importação de ordem de compra também inicia todos os fluxos de trabalho independentes de documentos, incluindo os fluxos de trabalho com este cartão. Uma execução deste tipo não cumpre o cartão com nenhum dos operadores, pelo que os passos seguintes só são executados para alterações do estado do fornecedor.
 * **Dados em falta:** Se não estiver selecionado nenhum estado no cartão, o cartão não avalia a condição. Regista a entrada em falta (ou um erro) no registo do fluxo de trabalho, e os passos seguintes não são executados.
 * **Operador inválido:** Se o operador não for **É** nem **Não é**, o cartão regista um erro de configuração do cartão no registo do fluxo de trabalho.
 

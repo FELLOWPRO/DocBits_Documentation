@@ -13,8 +13,8 @@ A correspondência da ordem de compra deverá ser executada antes deste cartão.
 1. **Qualquer/Todos**
    * **Descrição:** Como os códigos de instalação das ordens de compra associadas são avaliados em relação à lista.
    * **Opções:**
-     * **Qualquer:** Pelo menos uma entrada da lista é encontrada nos códigos de instalação das ordens de compra associadas.
-     * **Todos:** Cada código de instalação das ordens de compra associadas está na lista. Se não for definido nenhum valor, o cartão utiliza **Todos**.
+     * **Qualquer:** Pelo menos uma ordem de compra associada cumpre o operador.
+     * **Todos:** Cada ordem de compra associada com instalação cumpre o operador. Se não for definido nenhum valor, o cartão utiliza **Todos**.
 2. **Operador**
    * **Descrição:** Se a instalação deverá estar na lista ou não.
    * **Opções:**
@@ -27,10 +27,10 @@ A correspondência da ordem de compra deverá ser executada antes deste cartão.
 ## Funcionalidade:
 
 * **Avaliação da condição:** O cartão lê os números das ordens de compra associadas ao documento, carrega essas ordens de compra e recolhe a instalação (localização) de cada uma delas. As ordens de compra sem instalação são ignoradas. Os códigos de instalação recolhidos são depois comparados com os **Códigos de nomes de instalações** do cartão.
-  * Com **Qualquer** e **É**, a comparação não distingue maiúsculas de minúsculas, e uma entrada da lista também conta quando faz parte de um código de instalação mais longo (por exemplo, a entrada `WH` é encontrada em `WH01`).
-  * Com **Todos** e **É**, cada código de instalação das ordens de compra deverá constar da lista exatamente com a mesma grafia, incluindo maiúsculas e minúsculas.
+  * Um código de instalação conta como listado quando é igual, na íntegra, a um dos códigos introduzidos. As maiúsculas e minúsculas e os espaços à volta das entradas são ignorados, pelo que `wh01` corresponde a `WH01`, mas `WH` não corresponde a `WH01`.
+  * Com **É**, uma ordem de compra cumpre a condição quando o seu código de instalação está listado. Com **Não é**, cumpre a condição quando o seu código de instalação não está listado.
+  * Com **Qualquer**, a condição é cumprida se pelo menos uma ordem de compra a cumprir; com **Todos**, se cada ordem de compra com instalação a cumprir.
   * Se nenhuma das ordens de compra associadas tiver instalação, **Todos** é cumprido e **Qualquer** não.
-  * Com **Não é**, o resultado não é simplesmente o oposto de **É**. O registo do cartão mostra que códigos foram encontrados e quais não tiveram correspondência, o que ajuda a verificar o comportamento para uma determinada configuração.
 * **Execução da ação:**
   * **Condição Verdadeira:**\
     Se a condição for cumprida, o fluxo de trabalho continua, por exemplo com um passo específico das instalações listadas.
@@ -40,7 +40,7 @@ A correspondência da ordem de compra deverá ser executada antes deste cartão.
 
 ## Configuração:
 
-* O cartão pode ser adicionado como condição And após a correspondência da ordem de compra, a partir da categoria **Comparar com a ordem de compra**. Em seguida, podem ser definidos **Qualquer** ou **Todos**, o operador e os códigos de instalação, separados por vírgulas. Introduzir os códigos com a mesma grafia que na ordem de compra é a opção mais segura, porque **Todos** compara-os de forma exata.
+* O cartão pode ser adicionado como condição And após a correspondência da ordem de compra, a partir da categoria **Comparar com a ordem de compra**. Em seguida, podem ser definidos **Qualquer** ou **Todos**, o operador e os códigos de instalação, separados por vírgulas. As maiúsculas e minúsculas não importam, mas cada código deverá ser introduzido por completo, porque partes de um código não têm correspondência.
 * Pode ser utilizado **Test Card** no menu do cartão do Workflow Builder para experimentar a configuração num documento existente. O registo do cartão lista as ordens de compra associadas, os códigos de instalação nelas encontrados e os códigos que não tiveram correspondência.
 
 ## Conclusão:

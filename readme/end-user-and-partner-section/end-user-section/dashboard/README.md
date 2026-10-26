@@ -16,13 +16,13 @@ Welche Funktionen Sie sehen, hängt von Ihren Berechtigungen, dem Dokumentstatus
 
 ### Suche im Arbeitsalltag
 
-Das kurze Suchbeispiel beginnt am Arbeitsplatz einer fiktiven Anwenderin in Köln. Anschließend sehen Sie die deutsche DocBits-Oberfläche bildfüllend: einen Teil des Dateinamens eingeben, mit Enter suchen und den Treffer prüfen. Das zweite Beispiel zeigt, wie die Suche mit aktiviertem Volltext-Modul auch den Dokumentinhalt findet.
+Das kurze Suchbeispiel beginnt am Arbeitsplatz einer Anwenderin in Köln. Anschließend sehen Sie die deutsche DocBits-Oberfläche bildfüllend: einen Teil des Dateinamens eingeben, mit Enter suchen und den Treffer prüfen. Das zweite Beispiel zeigt, wie die Suche mit aktiviertem Volltext-Modul auch den Dokumentinhalt findet.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/de.mp4" %}
 
 ### Vollständiger Dashboard-Rundgang
 
-Die fiktive Kundin in Köln zeigt die deutsche DocBits-Oberfläche: eine kombinierte Suche mit AND, Statusfilter, die Hilfe zu Suchfeldern, die Spalteneinstellungen sowie Statusübersicht und Aktualisierung. Die sichtbaren Rechnungswerte stammen aus synthetischen Testdaten. Figur und Stimme sind KI-generiert; die Bedienung wurde im echten DocBits-Testkonto aufgenommen.
+Die Kundin in Köln zeigt die deutsche DocBits-Oberfläche: eine kombinierte Suche mit AND, Statusfilter, die Hilfe zu Suchfeldern, die Spalteneinstellungen sowie Statusübersicht und Aktualisierung.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v3/de.mp4" %}
 
@@ -38,9 +38,11 @@ Die fiktive Kundin in Köln zeigt die deutsche DocBits-Oberfläche: eine kombini
 
 ## Dokumente suchen und filtern
 
-Geben Sie einen Dokumentnamen, eine Rechnungsnummer oder einen anderen Geschäftswert in das Suchfeld ein und drücken Sie **Enter**. Über das Filtersymbol im Suchfeld wählen Sie **Status**, **Zugewiesen an** und **Neustart erforderlich**; bestätigen Sie mit **Anwenden**. Entfernen Sie einzelne Filterchips oder verwenden Sie **Filter löschen**, wenn ein Dokument fehlt. Auch Dokumenttyp-Reiter und gespeicherte Ansichten grenzen die Liste ein.
+Geben Sie einen Dokumentnamen, eine Rechnungsnummer oder einen anderen Geschäftswert in das Suchfeld ein und drücken Sie **Enter**. Über das Symbol **Filter** (drei Schieberegler) am rechten Ende der Suchleiste wählen Sie **Status**, **Zugewiesen An** und **Neustart Erforderlich**; bestätigen Sie mit **Anwenden**. Entfernen Sie einzelne Filterchips oder verwenden Sie **Filter löschen**, wenn ein Dokument fehlt. Auch Dokumenttyp-Reiter und gespeicherte Ansichten grenzen die Liste ein.
 
 Im Suchbeispiel wird `350495` als Teil eines Dateinamens eingegeben und mit **Enter** bestätigt. Die Trefferliste zeigt den passenden Demobeleg.
+
+Das Symbol **Blitz** am Anfang des Suchfelds öffnet die Feldauswahl. Sie zeigt zuerst die **Schnellfilter** – fertige Suchen wie **Überfällig**, **Bald fällig**, **Mir zugewiesen**, **Heute eingegangen**, **Wartet auf Validierung** oder **Elektronische Dokumente** – und danach alle durchsuchbaren Felder. Mit der Auswahl wird die passende Bedingung in das Suchfeld übernommen.
 
 Die Suchleiste bietet außerdem strukturierte Suchchips, eine Ansicht für die direkte Suchabfrage und eine Hilfe zu Feldern und Syntax. Übernehmen Sie Feldnamen und Beispiele aus dieser Hilfe. Technische Feldnamen bleiben beim Sprachwechsel unverändert. Erweiterte Suchfunktionen setzen die entsprechenden Suchmodule Ihrer Organisation voraus.
 
@@ -58,7 +60,7 @@ Wenn die Gruppierung verfügbar ist, wählen Sie oberhalb der Tabelle ein Gruppi
 
 Über **+** neben den Dokumenttyp-Reitern blenden Sie weitere Reiter ein. Ziehen Sie Reiter in die gewünschte Reihenfolge. Das Entfernen eines Reiters ändert nur die Ansicht und löscht keine Dokumente.
 
-Öffnen Sie das Zahnrad und anschließend die Spalteneinstellungen. Verschieben Sie Spalten zwischen der ausgeblendeten und der sichtbaren Liste und ordnen Sie sichtbare Spalten per Ziehen an. Sie können auch Felder eines Dokumenttyps hinzufügen. Siehe [Dokumentspalten ändern](change-document-columns.md).
+Öffnen Sie das Zahnrad **Erweiterte Einstellungen** rechts neben der Suchleiste und dort die Schaltfläche **Einstellungen für Spalten**. Verschieben Sie Spalten zwischen der ausgeblendeten und der sichtbaren Liste und ordnen Sie sichtbare Spalten per Ziehen an. Sie können auch Felder eines Dokumenttyps hinzufügen. Siehe [Dokumentspalten ändern](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns-de.png" alt="In den Spalteneinstellungen wählen und ordnen Sie die Informationen der Tabelle."><figcaption><p>In den Spalteneinstellungen wählen und ordnen Sie die Informationen der Tabelle.</p></figcaption></figure>
 
@@ -74,7 +76,7 @@ Wählen Sie mehrere Dokumente über ihre Kontrollkästchen aus und öffnen Sie d
 
 ## Ein persönliches Dashboard speichern
 
-Öffnen Sie die blaue Ansichts-Schaltfläche unter dem Suchfeld und wählen Sie **Neues Dashboard erstellen**. Vergeben Sie einen Namen und legen Sie fest, ob die Ansicht privat, für alle oder für ausgewählte Gruppen und Benutzer sichtbar ist. So speichern Sie Filter, Sortierung und Spalten für wiederkehrende Aufgaben.
+Öffnen Sie die Ansichts-Schaltfläche unter dem Suchfeld und wählen Sie **Neues Dashboard erstellen**. Vergeben Sie einen Namen und wählen Sie **Nur für mich sichtbar**, **Für alle Benutzer sichtbar** oder **Mit Gruppen und Benutzern teilen**. So speichern Sie Filter, Sortierung und Spalten für wiederkehrende Aufgaben.
 
 Wählen Sie gespeicherte Ansichten im selben Menü. Spätere Anpassungen speichern Sie mit **Dashboard-Änderungen speichern**, sobald Ihre eigene Ansicht geändert wurde. Eine mit Ihnen geteilte Ansicht können Sie nicht überschreiben; erstellen Sie stattdessen eine eigene. Das Teilen einer Ansicht erweitert keine Dokumentberechtigungen. Siehe [Persönliche Dashboards](personal-dashboards.md).
 
@@ -92,6 +94,6 @@ Die übrigen Werkzeuge aktualisieren die Liste, öffnen erweiterte Einstellungen
 
 Prüfen Sie zuerst Organisation, aktive Ansicht, Dokumenttyp, Suchtext und Filterchips. Aktualisieren Sie die Liste und prüfen Sie weitere Ergebnisseiten. Fehlt eine Funktion weiterhin, lassen Sie Berechtigungen und aktivierte Module durch Ihre Administration prüfen.
 
-**Strg/Cmd + K** öffnet die globale Schnellsuche. **Strg/Cmd + Q** aktualisiert das Dashboard; **Strg/Cmd + H** öffnet die Hilfe. Die Übersicht der Tastenkürzel finden Sie im Zahnradmenü. Ein gegebenenfalls angezeigter organisationsweiter Zähler ausstehender Dokumente ist eine Administratoranzeige und kein persönlicher Aufgabenzähler.
+**Strg/Cmd + K** öffnet die globale Schnellsuche. **Strg/Cmd + Q** aktualisiert das Dashboard; **Strg/Cmd + H** öffnet die Hilfe. Die Übersicht der Tastenkürzel finden Sie im Menü **Erweiterte Einstellungen**. Ein gegebenenfalls angezeigter organisationsweiter Zähler ausstehender Dokumente ist eine Administratoranzeige und kein persönlicher Aufgabenzähler.
 
 Verwenden Sie unter Windows/Linux Strg und unter macOS Cmd. Tastenkürzel des Browsers oder Betriebssystems können Vorrang haben.

@@ -2,61 +2,45 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-de-de.png" alt="Das Kontrollkästchen ist aktiviert, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## **Zweck:**
+## Zweck:
 
-Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Zustands (aktiviert oder deaktiviert) eines Kontrollkästchens innerhalb Ihres ERP-Systems zu automatisieren. Indem sie den Zustand des Kontrollkästchens auswertet, ermöglicht sie das Auslösen bestimmter Prozesse oder die Durchsetzung bestimmter Regeln innerhalb der Anwendung.
+Diese Workflow-Karte prüft, ob ein Kontrollkästchenfeld auf dem Dokument aktiviert oder deaktiviert ist. Sie kann verwendet werden, damit ein Workflow erst weiterläuft, nachdem auf dem Dokument eine Markierung gesetzt wurde, zum Beispiel eine Prüfmarkierung.
 
-## **Bestandteile der Karte:**
-
-* **Feldname**
-  * **Beschreibung:** Gibt den Namen des Kontrollkästchenfelds an, das ausgewertet wird.
-  * **Detail:** Dieser sollte exakt mit dem im System verwendeten Feldbezeichner übereinstimmen. Er bestimmt, welcher Kontrollkästchenzustand überwacht wird.
-* **Boolescher Wert**
-  * **Beschreibung:** Legt die Bedingung fest, die den Workflow auslöst.
-  * **Optionen:**
-    * **True:** Der Workflow wird ausgelöst, wenn das Kontrollkästchen aktiviert ist.
-    * **False:** Der Workflow wird ausgelöst, wenn das Kontrollkästchen deaktiviert ist.
-
-#### **Funktionalität:**
-
-* **Zustandserkennung:** Die Karte prüft bei ihrer Auswertung den Zustand des angegebenen Kontrollkästchenfelds.
-* **Bedingungsauswertung:** Das System prüft, ob sich das Kontrollkästchen in dem durch die Boolean-Bedingung angegebenen Zustand (aktiviert oder deaktiviert) befindet.
-* **Ausführung der Aktion:**
-  * **Bedingung erfüllt (True):**\
-    Stimmt der Zustand des Kontrollkästchens mit der angegebenen Boolean-Bedingung überein (entweder true für aktiviert oder false für deaktiviert), leitet das System die zugehörigen Aktionen ein. Dazu können das Aktivieren oder Deaktivieren von Formularfeldern, das Auslösen von Benachrichtigungen, das Starten von Workflows oder das Aktualisieren von Datensätzen gehören.
-  * **Bedingung nicht erfüllt (False):**\
-    Stimmt der Zustand des Kontrollkästchens nicht mit der Bedingung überein, werden je nach Workflow-Einrichtung alternative oder keine Aktionen ausgeführt.
-
-## **Einrichtung und Konfiguration:**
-
-* Benutzer konfigurieren die Karte, indem sie das Kontrollkästchenfeld aus einer Liste verfügbarer Felder auswählen und die Boolean-Bedingung festlegen.
-
-## Fazit:
-
-Die Workflow-Karte "Checkbox Field Condition" ist ein grundlegendes Werkzeug für die Verwaltung dynamischer Formulare und Dokumente innerhalb eines ERP-Systems, in dem Benutzereingaben nachfolgende Datenprozesse bestimmen können. Indem sie Aktionen auf Basis des Zustands eines Kontrollkästchens automatisiert, steigert diese Karte die Workflow-Effizienz und stellt sicher, dass das Systemverhalten mit den Benutzereingaben übereinstimmt. Eine klare Dokumentation dieser Karte hilft Benutzern, sie effektiv in ihren Abläufen einzusetzen, und ermöglicht eine bessere Kontrolle über das Verhalten von Formularen und Prozessautomatisierungen.
-
-**Hinweis: Nicht jeder Kunde verfügt über das Kontrollkästchen, es kann jedoch bei Bedarf hinzugefügt werden.**
-
-<!-- workflow-card-practical-example-20261021 -->
-
-## Praxisbeispiel
-
-**Wann nutzen:** Eine Folgeaktion nur nach einer ausdrücklich gesetzten Prüfmarkierung erreichen.
-
-**Wo:** Standard-Workflow-Designer → Und → Dokumentenfeld.
-
-**Konfiguration:** Wählen Sie in Version 2 das vorhandene Boolesche Feld `validation_complete` und den Vergleichswert Wahr (`true`).
-
-**Erwartetes Ergebnis und Gegenbeispiel:** Eine gesetzte Checkbox erfüllt diese Bedingung; eine vorhandene, nicht gesetzte Checkbox erfüllt sie nicht. Ein fehlendes Feld ist ein eigener Fehlerfall. Prüfen Sie, dass das gewählte Feld tatsächlich Boolesche Werte verwendet.
-
-Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
-
-## Admin-Beispielvideo
-
-Wann ich ein angehaktes Kontrollkästchen als Bedingung verwende und wie ich den Booleschen Wert prüfe. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+## Admin-Video:
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.mp4" %}
 
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.html)
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de-theme-v4.html)
 
-[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.txt)
+## Bestandteile der Karte:
+
+1. **Feld Name**
+   * **Beschreibung:** Der technische Name des Kontrollkästchenfelds auf dem Dokument.
+   * **Detail:** Das Feld sollte ein Kontrollkästchenfeld (Boolean) des Dokumenttyps sein.
+2. **Boolescher Wert**
+   * **Beschreibung:** Der Zustand, den das Kontrollkästchen haben sollte.
+   * **Optionen:**
+     * **Wahr:** Das Kontrollkästchen sollte aktiviert sein.
+     * **Falsch:** Das Kontrollkästchen sollte deaktiviert sein.
+
+## Funktionalität:
+
+* **Bedingungsauswertung:** Wenn der Workflow die Karte erreicht, liest sie den aktuellen Wert des Felds auf dem Dokument und vergleicht ihn mit **Boolescher Wert**. Die Karte überwacht das Feld nicht über längere Zeit und ändert es nicht.
+  * Ein leerer Kontrollkästchenwert gilt als deaktiviert.
+  * Ist kein **Boolescher Wert** ausgewählt, prüft die Karte auf ein deaktiviertes Kontrollkästchen.
+  * Ist das Feld kein Kontrollkästchenfeld, vermerkt die Karte dies im Workflow-Protokoll und vergleicht seinen Wert trotzdem.
+* **Ausführung der Aktion:**
+  * **True-Bedingung:**\
+    Stimmt der Zustand des Kontrollkästchens mit **Boolescher Wert** überein, wird der Workflow mit den nächsten Karten fortgesetzt.
+  * **False-Bedingung:**\
+    Stimmt er nicht überein, stoppt der Workflow mit einer nicht erfüllten Bedingung.
+* **Fehlende Daten:** Existiert das Feld auf dem Dokument nicht, wertet die Karte die Bedingung nicht aus. Sie meldet, dass das Feld auf dem Dokument nicht gefunden wurde. Das ist ein anderes Ergebnis als ein deaktiviertes Kontrollkästchen.
+
+## Einrichtung und Konfiguration:
+
+* Die Karte kann als And-Bedingung aus der Kategorie **Dokument Feld** hinzugefügt werden. Danach wird der technische Name des Kontrollkästchenfelds unter **Feld Name** eingetragen und **Wahr** oder **Falsch** ausgewählt.
+* Mit **Testkarte** im Kartenmenü des Workflow Builders kann die Konfiguration an einem Dokument mit aktiviertem Kontrollkästchen, an einem mit deaktiviertem Kontrollkästchen und an einem ohne das Feld geprüft werden.
+
+## Fazit:
+
+Die Workflow-Karte „Checkbox is checked“ macht ein Kontrollkästchen auf dem Dokument zu einer Workflow-Bedingung. So kann ein Workflow auf einen manuellen Schritt warten, etwa eine abgeschlossene Prüfung, bevor die folgenden Aktionen ausgeführt werden.

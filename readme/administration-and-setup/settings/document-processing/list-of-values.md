@@ -1,5 +1,13 @@
 # Wertelisten
 
+## Video-Tutorial: Stammdaten und Wertelisten
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/de.mp4" %}
+Stammdatenquellen, Wertelisten und Stammdaten-Einstellungen in DocBits
+{% endembed %}
+
+Das Video zeigt die Stammdatenquellen, die Wertelisten und die Stammdaten-Einstellungen eines Dokumenttyps.
+
 Wertelisten enthalten vordefinierte Optionen für Dokumentfelder. Ein Feld kann bei der Validierung auf eine solche Liste zugreifen. Die angezeigten Bezeichnungen können übersetzt werden; der technische Wert bleibt in allen Sprachen gleich.
 
 ## Listen öffnen

@@ -64,10 +64,10 @@ Wenn beide Beträge aus Belegfeldern stammen, verwenden Sie die separate Karte z
 
 ## Admin-Beispielvideo
 
-Administrator, Büro und Stimme sind synthetisch erzeugt. Die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos. Die Rechenergebnisse sind erwartete Beispiele; ein Workflow wurde nicht ausgeführt.
+Die Rechenergebnisse sind erwartete Beispiele; ein Workflow wurde nicht ausgeführt.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v5/de.mp4" %}
 
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v5/de.html)
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v5/de-theme-v4.html)
 
 [Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-reference-tolerance-admin/v5/de.txt)

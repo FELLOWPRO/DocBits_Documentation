@@ -4,64 +4,52 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-de-de.png" alt="Berechnen Sie Spalten mit, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## **Zweck:**
+## Zweck:
 
-Die Workflow-Karte **„Spalten in der Tabelle berechnen“** wird verwendet, um Berechnungen zwischen Spalten in einer ausgewählten Tabelle durchzuführen. Sie ermöglicht es Benutzern, Spalten auszuwählen, eine mathematische Operation anzuwenden und das Ergebnis in einer angegebenen Ergebnisspalte zu speichern.
+Diese Workflow-Karte berechnet Zeile für Zeile einen Wert aus zwei Spalten einer Tabelle auf dem Dokument und speichert das Ergebnis in einer Ergebnisspalte. Sie kann zum Beispiel verwendet werden, um Zeilensummen aus Menge und Stückpreis zu berechnen.
 
-## **Bestandteile der Karte:**
+## Admin-Video:
 
-1. **Tabellenname**
-   * **Beschreibung:** Gibt die **Tabelle** an, in der die Spalten berechnet werden.
-   * **Detail:** Zur Auswahl wird eine Dropdown-Liste aller verfügbaren **Tabellen** bereitgestellt.
-2. **Spaltenname (1. Spalte)**
-   * **Beschreibung:** Gibt die **erste Spalte** an, die an der Berechnung beteiligt ist.
-   * **Detail:** Zur Auswahl wird eine Liste aller verfügbaren **Spalten** bereitgestellt.
-3. **Betrieb**
-   * **Beschreibung:** Legt die mathematische Operation fest, die zwischen den ausgewählten Spalten angewendet wird.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/de.mp4" %}
+
+[Video mit deutschen Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/de.html) · [Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/de.txt)
+
+## Bestandteile der Karte:
+
+1. **Tabelle**
+   * **Beschreibung:** Die Tabelle auf dem Dokument, in der die Berechnung ausgeführt wird.
+2. **Erste Spalte**
+   * **Beschreibung:** Die Spalte mit dem ersten Wert jeder Zeile.
+3. **Operation**
    * **Optionen:**
-     * **Addieren (+):** Addiert den Wert der zweiten Spalte zum Wert der ersten Spalte.
-     * **Subtrahieren (-):** Subtrahiert den Wert der zweiten Spalte vom Wert der ersten Spalte.
-     * **Multiplizieren (\*):** Multipliziert den Wert in der ersten Spalte mit dem Wert in der zweiten Spalte.
-     * **Dividieren (/):** Dividiert den Wert in der ersten Spalte durch den Wert in der zweiten Spalte.
-4. **Spaltenname (2. Spalte)**
-   * **Beschreibung:** Gibt die **zweite Spalte** an, die an der Berechnung beteiligt ist.
-   * **Detail:** Zur Auswahl wird eine Liste der verfügbaren **Spalten** bereitgestellt.
+     * **+** addiert den zweiten Wert zum ersten.
+     * **-** subtrahiert den zweiten Wert vom ersten.
+     * **\*** multipliziert die beiden Werte.
+     * **/** dividiert den ersten Wert durch den zweiten.
+4. **Zweite Spalte**
+   * **Beschreibung:** Die Spalte mit dem zweiten Wert jeder Zeile.
 5. **Ergebnisspalte**
-   * **Beschreibung:** Gibt die **Spalte** an, in der das Ergebnis der Berechnung gespeichert wird.
-   * **Detail:** Es wird eine Liste der verfügbaren **Spalten** bereitgestellt, in der der berechnete Wert gespeichert wird.
+   * **Beschreibung:** Die Spalte, in der das Ergebnis jeder Zeile gespeichert wird.
+   * **Detail:** Der Name wird in Großbuchstaben gespeichert, Leerzeichen werden durch Unterstriche ersetzt (`total amount` wird zu `TOTAL_AMOUNT`). Existiert die Spalte noch nicht, fügt die Karte sie hinzu; existiert sie, werden ihre Werte ersetzt.
 
-## **Funktionalität:**
+Die Versionen 1 und 2 der Karte haben dieselben Einstellungen und arbeiten gleich.
 
-* **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
-* **Spaltenberechnung:**\
-  Die Karte führt die ausgewählte mathematische Operation zwischen den beiden gewählten Spalten durch.
-* **Ergebnisspeicherung:**\
-  Das Ergebnis der Berechnung wird in der ausgewählten **Ergebnisspalte** gespeichert.
+## Funktionalität:
 
-## **Einrichtung und Konfiguration:**
+* **Berechnung:** Für jede Zeile der Tabelle liest die Karte die beiden Spalten (Groß- und Kleinschreibung der Spaltennamen spielt keine Rolle), wendet die Operation an und schreibt das Ergebnis in die Ergebnisspalte. Ergebnisse werden auf vier Nachkommastellen gerundet. Anschließend wird das Dokument mit den neuen Werten gespeichert.
+  * Ein leerer oder fehlender Wert gilt als `0`. Sind beide Werte einer Zeile leer, bleibt das Ergebnis dieser Zeile leer.
+  * Eine Division durch null lässt das Ergebnis dieser Zeile leer.
+  * Mit **+** werden zwei Werte, die keine Zahlen sind, mit einem Leerzeichen verbunden statt addiert. Bei den anderen Operationen verursacht ein Wert, der keine Zahl ist, einen Fehler, und es werden keine Ergebnisse gespeichert.
+* **Ausführung der Aktion:** Sind Berechnung und Speichern erfolgreich, wird der Workflow mit den nächsten Karten fortgesetzt. Existiert die Tabelle auf dem Dokument nicht, kann ein Wert nicht berechnet oder das Dokument nicht gespeichert werden, meldet die Karte einen Fehler im Workflow-Protokoll.
+* **Testkarte:** Wird die Karte mit **Testkarte** ausgeführt, wird die Berechnung nur simuliert und das Dokument nicht geändert.
 
-* **Tabelle auswählen:**\
-  Wählen Sie die **Tabelle**, in der die Spalten berechnet werden.
-* **Spalten wählen:**\
-  Wählen Sie die **erste Spalte** und die **zweite Spalte**, die in der Berechnung verwendet werden.
-* **Operation auswählen:**\
-  Wählen Sie die mathematische Operation (**Addieren (+)**, **Subtrahieren (-)**, **Multiplizieren (\*)**, **Dividieren (/)**), die zwischen den Spalten angewendet wird.
-* **Ergebnisspalte auswählen:**\
-  Wählen Sie die **Ergebnisspalte**, in der die Berechnung gespeichert wird.
+## Einrichtung und Konfiguration:
 
-## **Fazit:**
+* Die Karte kann als Then-Aktion aus der Kategorie **Tabelle** hinzugefügt werden. Danach werden die Tabelle, die beiden Spalten, die Operation und die Ergebnisspalte ausgewählt.
+* **Beispiel:** Tabelle `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, Ergebnisspalte `TOTAL_AMOUNT`. Eine Zeile mit Menge 2 und Stückpreis 10 erhält 20, eine Zeile mit 3 und 4 erhält 12.
+* Da ein leerer Wert als `0` gilt, ergibt ein fehlender Preis das Ergebnis `0`. Eine Prüfung, ob die Eingabespalten gefüllt sind, zum Beispiel mit einer Bedingung vor dieser Karte, kann helfen, falsche Summen zu vermeiden.
+* Bei Subtraktion und Division ist die Reihenfolge der beiden Spalten wichtig.
 
-Die Workflow-Karte **„Spalten in der Tabelle berechnen“** ermöglicht es Benutzern, dynamische Berechnungen zwischen Spalten in einer Tabelle durchzuführen und die Ergebnisse in einer festgelegten Spalte zu speichern. Die Karte bietet Flexibilität, um verschiedene mathematische Operationen anzuwenden, und stellt sicher, dass das Ergebnis in der angegebenen Spalte gespeichert wird.
+## Fazit:
 
-<!-- workflow-card-practical-example-20261021 -->
-
-## Praxisbeispiel
-
-**Verwendungszweck:** Zeilensummen aus Menge und Stückpreis berechnen.
-
-**Konfiguration:** Tabelle auswählen `lines`, Spalten `quantity` und `unit_price`, Multiplikations- und Ergebnisspalte `line_total`.
-
-**Erwartetes Ergebnis und Gegenbeispiel:** Eine Zeile, die `2` und `10` enthält, erzeugt `20`. Testen Sie eine andere Zeile unabhängig und diagnostizieren Sie fehlende oder nicht numerische Eingaben, anstatt sie als gültige Summe zu behandeln.
-
-Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+Die Workflow-Karte „Calculate Columns with“ ergänzt Tabellenzeilen automatisch um berechnete Werte. Zeilensummen und ähnliche Werte stehen den folgenden Karten und dem Export ohne manuelle Berechnung zur Verfügung.

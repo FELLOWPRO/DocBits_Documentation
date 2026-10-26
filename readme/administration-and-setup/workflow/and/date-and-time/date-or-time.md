@@ -2,44 +2,46 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-de-de.png" alt="Datum oder Uhrzeit prüfen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
+## Zweck:
+
+Diese Workflow-Karte prüft, ob das aktuelle Datum und die aktuelle Uhrzeit innerhalb oder außerhalb eines auf der Karte festgelegten Zeitfensters liegen. Sie kann verwendet werden, um Schritte auf bestimmte Zeiten zu beschränken, zum Beispiel auf die Arbeitszeit oder ein geplantes Wartungsfenster.
+
+## Admin-Video:
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-14-admin/v1/de.mp4" %}
 
-[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-14-admin/v1/de.html).
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-14-admin/v1/de.html)
 
-Die Karte **Date or Time** (`condition_time_is_isnot_between`, Version 2) vergleicht die aktuelle Ausführungszeit mit zwei eingetragenen Grenzen. Im geprüften Dev-Stand stammt diese Zeit aus UTC. Das auf einem Rechnungsbeleg erkannte Einreichungs- oder Rechnungsdatum wird durch diese Karte nicht automatisch ausgewählt.
+## Bestandteile der Karte:
 
-Für den Vergleich zweier Dokumentfelder verwenden Sie eine passende Feldvergleichskarte. Ein Zeitfenster löst außerdem keinen Workflow selbstständig aus: Die Karte wird geprüft, wenn ein Workflow gestartet wird und diesen Knoten erreicht.
+1. **Operator**
+   * **Optionen:**
+     * **Ist:** Das aktuelle Datum und die aktuelle Uhrzeit liegen innerhalb des Zeitfensters.
+     * **Ist nicht:** Das aktuelle Datum und die aktuelle Uhrzeit liegen außerhalb des Zeitfensters.
+2. **Erstes Datum/Uhrzeit**
+   * **Beschreibung:** Ein Ende des Zeitfensters, als Datum und Uhrzeit oder nur als Uhrzeit.
+3. **Zweites Datum/Uhrzeit**
+   * **Beschreibung:** Das andere Ende des Zeitfensters.
 
-<figure><img src="../../../../.gitbook/assets/wf-practice-20261022-date-window-de.png" alt="Ausgefüllte Datums-/Zeitkarte mit Oktoberfenster und Version 2."><figcaption><p>Ausgefüllte Datums-/Zeitkarte mit Oktoberfenster und Version 2.</p></figcaption></figure>
+## Funktionalität:
 
-## Ein vollständig ausgefülltes Beispiel
+* **Bedingungsauswertung:** Wenn der Workflow die Karte erreicht, nimmt sie das aktuelle Datum und die aktuelle Uhrzeit in UTC und prüft, ob sie zwischen den beiden Werten auf der Karte liegen. Der frühere Wert wird als Beginn verwendet, die Reihenfolge der beiden Felder spielt also keine Rolle.
+  * Ein Wert nur mit Uhrzeit (zum Beispiel `09:00`) wird mit dem heutigen Datum verwendet, sodass sich das Zeitfenster jeden Tag wiederholt.
+  * Beginn und Ende gehören zum Zeitfenster: Genau zur Beginn- oder Endzeit ist **Ist** wahr.
+  * Ein Zeitfenster über Mitternacht kann nur mit Uhrzeiten eingetragen werden, zum Beispiel `22:00` bis `04:00`. Die Karte prüft dann auf die Zeit von 22:00 bis 04:00; die genauen Beginn- und Endzeiten gehören in diesem Fall nicht zum Zeitfenster.
+  * Ein Zeitfenster über Mitternacht mit vollständigen Daten (zum Beispiel `2026-11-01 22:00` bis `2026-11-02 04:00`) wird derzeit nicht korrekt ausgewertet und sollte nicht verwendet werden.
+* **Ausführung der Aktion:**
+  * **True-Bedingung:**\
+    Ist die Bedingung erfüllt, wird der Workflow mit den nächsten Karten fortgesetzt.
+  * **False-Bedingung:**\
+    Ist sie nicht erfüllt, stoppt der Workflow mit einer nicht erfüllten Bedingung.
+* **Fehlende Daten:** Fehlt einer der beiden Werte auf der Karte, wertet die Karte die Bedingung nicht aus und meldet die fehlende Eingabe im Workflow-Protokoll.
 
-Öffnen Sie einen eigenen inaktiven Trainingsworkflow. Begrenzen Sie seinen Einstieg auf den Dokumenttyp Rechnung und die synthetische Rechnungsnummer `WF-TRAINING-001`. Fügen Sie unter **UND → Datum und Uhrzeit** die Karte hinzu und lassen Sie Version 2 ausgewählt.
+## Einrichtung und Konfiguration:
 
-| Parameter | Beispielwert | Bedeutung |
-| --- | --- | --- |
-| Linke Grenze (`date_time_left`) | `2026-10-01 00:00:00` | Beginn des vorgesehenen UTC-Zeitfensters |
-| Rechte Grenze (`date_time_right`) | `2026-10-31 23:59:59` | Ende des vorgesehenen UTC-Zeitfensters |
-| Operator | `is` | Aktuelle Ausführungszeit muss im Fenster liegen |
+* Die Karte kann als And-Bedingung aus der Kategorie **Datum und Uhrzeit** hinzugefügt werden. Danach werden die beiden Werte und der Operator festgelegt. Alle Uhrzeiten sollten in UTC eingetragen werden.
+* **Beispiel:** Mit **Ist**, `09:00` und `17:00` ist die Karte erfüllt, wenn der Workflow an einem beliebigen Tag zwischen 09:00 und 17:00 UTC läuft.
 
-Tragen Sie vollständige Jahres-, Monats- und Tageswerte ein. Damit bleibt die Bedeutung des gespeicherten Beispiels eindeutig. Im geprüften Parser werden Zeitzonenangaben nicht in eine andere Zeitzone umgerechnet; verwenden Sie für diesen Stand Grenzen in UTC und prüfen Sie lokale Geschäftszeiten ausdrücklich dagegen.
+## Fazit:
 
-Starten Sie **Test → Benutzerdefinierte Daten** mit dem synthetischen Rechnungsbeispiel. Öffnen Sie anschließend **Details** und die Datums-/Zeitkarte. Der Test am 22. Oktober 2026 lag im Oktoberfenster und ergab `success`.
-
-## Treffer, Nichttreffer und Eingabefehler unterscheiden
-
-| Tatsächlich geprüfter Fall am 22.10.2026 | Knotenpfad | Schlussfolgerung |
-| --- | --- | --- |
-| Fenster 01.10.2026 bis 31.10.2026 | `success` | Die aktuelle Ausführungszeit liegt im Fenster. |
-| Fenster 01.10.2025 bis 31.10.2025 | `failed_condition` | Die Bedingung trifft fachlich nicht zu. |
-| Linke Grenze `not-a-date` | `error` | Die Eingabe konnte nicht als Datum gelesen werden. |
-
-Bei einem normalen aufsteigenden Zeitfenster verwendet die Implementierung inklusive Vergleiche für Anfang und Ende. Prüfen Sie Uhrzeitfenster über Mitternacht getrennt mit Fällen unmittelbar vor, auf und nach beiden Grenzen; übertragen Sie den Nachweis für ein normales Datumsfenster nicht auf einen Tageswechsel.
-
-`isnot` kehrt die fachliche Fensterprüfung um. Ein unlesbares Datum wird dadurch nicht zu einem gültigen Nichttreffer. Prüfen Sie in diesem Fall zuerst Eingabeformat und konkrete Meldung des ersten betroffenen Knotens.
-
-## Für die Freigabe nachweisen
-
-Speichern Sie Kartenparameter, Version, UTC-Zeit des Tests und tatsächlichen Knotenpfad zusammen. Wiederholen Sie die Prüfung nach einer Zeit-, Datums- oder Versionsänderung. Der Advanced-Test bestätigt die Kartenlogik mit den Testdaten; ein geplanter Start oder ein echter Dokumentlauf braucht einen eigenen Nachweis.
-
-[Heute vergleichen](today.md) · [Test und Echtlauf unterscheiden](../../workflow-logs.md) · [Sicher aktivieren](../../workflow-go-live.md)
+Die Workflow-Karte „Date or Time“ macht den Zeitpunkt der Ausführung zu einer Workflow-Bedingung. Schritte können auf feste Zeiten oder ein einzelnes geplantes Zeitfenster beschränkt werden, ohne den Workflow jedes Mal zu ändern.

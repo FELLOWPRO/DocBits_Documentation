@@ -10,7 +10,7 @@ Rechnungsfreigaben konfigurieren und testen
 
 Gezeigt wird die tatsächliche Anwendung. Die Bezeichnungen können je nach eingesetzter Version abweichen.
 
-Konfigurieren Sie die Genehmigung für den von Ihrem Prozess verwendeten Dokumenttyp. Identifizieren Sie die vorgesehenen Prüfer und entscheiden Sie, ob Sie eine zweite unabhängige Prüfung benötigen. Das Video verwendet einen separaten Testtyp, synthetische Rechnungen und temporäre Prüferkonten ohne Administratorrechte; der Moderator ist fiktiv.
+Konfigurieren Sie die Genehmigung für den von Ihrem Prozess verwendeten Dokumenttyp. Identifizieren Sie die vorgesehenen Prüfer und entscheiden Sie, ob Sie eine zweite unabhängige Prüfung benötigen. Das Video verwendet einen separaten Dokumenttyp und temporäre Prüferkonten ohne Administratorrechte.
 
 ## Dokumenttyp konfigurieren
 

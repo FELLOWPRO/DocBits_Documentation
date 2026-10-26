@@ -1,5 +1,13 @@
 # Skrypty w DocBits
 
+## Film instruktażowy: najważniejsze funkcje skryptów
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-script-functions/v3/pl.mp4" %}
+Najważniejsze funkcje skryptów w DocBits
+{% endembed %}
+
+Film pokazuje w edytorze skryptów, jak odczytać pole (`get_field_value`), ustawić wartość (`set_field_value`), obliczyć termin płatności (`set_date_value`), oznaczyć pole jako nieprawidłowe (`set_field_as_invalid`) i uczynić je obowiązkowym (`set_is_required`).
+
 ## Przewodnik po skryptach Docbits
 
 Witamy w przewodniku po skryptach Docbits! Tutaj dowiesz się, jak używać skryptów do automatyzacji i ulepszania przetwarzania dokumentów w Docbits. Skrypty umożliwiają niestandardową manipulację polami, transformację danych i implementację logiki w różnych typach dokumentów.
@@ -10,10 +18,14 @@ Skrypty w Docbits są pisane w języku Python. Wchodzą w interakcję z polami d
 
 #### Kluczowe funkcje
 
-* `get_field_value(fields_dict, field_name, default=None)`: Pobiera wartość określonego pola.
-* `set_field_value(fields_dict, field_name, value)`: Ustawia wartość określonego pola.
-* `create_new_field(field_name, value)`: Tworzy nowe pole o określonej nazwie i wartości.
-* `format_decimal_to_locale(value, locale)`: Formatuje wartość dziesiętną zgodnie z określoną lokalizacją.
+Każdy skrypt otrzymuje dokument pod nazwą `document_data`. Przekazuj go jako pierwszy argument do funkcji pól. Pełną dokumentację znajdziesz na stronie [Funkcje Pol](field-functions.md).
+
+* `get_field_value(document_data, field_name, default_value=None, is_clean=False)`: Odczytuje wartość pola.
+* `set_field_value(document_data, field_name, value)`: Zapisuje wartość w polu i tworzy pole, jeśli nie istnieje.
+* `set_date_value(document_data, field_name, value, add_days=0, skip_weekend=False)`: Zapisuje datę, opcjonalnie z dodaniem dni i pominięciem weekendów.
+* `set_amount_value(document_data, field_name, value)`: Zapisuje kwotę sformatowaną zgodnie z lokalizacją dokumentu.
+* `set_field_as_invalid(document_data, field_name, message, code=None)`: Oznacza pole jako nieprawidłowe i wyświetla użytkownikowi komunikat.
+* `set_is_required(document_data, field_name, value)`: Ustawia pole jako wymagane lub opcjonalne.
 
 ### Przykładowe skrypty
 
@@ -30,12 +42,12 @@ currency_map = {
     "$": "USD",
     "£": "GBP"
 }
-currency_value = get_field_value(fields_dict, "currency", None)
+currency_value = get_field_value(document_data, "currency", None)
 if currency_value:
     currency_value = currency_value.upper()
     if currency_value in currency_map:
         currency_value = currency_map[currency_value]
-    set_field_value(fields_dict, "currency", currency_value)
+    set_field_value(document_data, "currency", currency_value)
 ```
 
 

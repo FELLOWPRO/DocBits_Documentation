@@ -6,6 +6,8 @@ description: "Rozróżnianie zdarzeń, warunków, kolejności wykonywania, test�
 
 Workflow wymaga powodu uruchomienia i pasujących warunków. **Typ dokumentu to Faktura** wybiera dokumenty; nie oznacza to, że każda zmiana faktury automatycznie rozpocznie kolejne wykonanie.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-pl-v3.png" alt="Przykłady poglądowe: liniowa sekwencja standardowa wykonuje działania tylko po spełnieniu warunków; w przeciwnym razie ta sekwencja się zatrzymuje. Zaawansowany węzeł warunku może korzystać z osobno skonfigurowanych ścieżek wyników. Ścieżka jest kontynuowana tylko wtedy, gdy istnieje połączenie. Pominięto opcjonalne rozgałęzienia standardowe; nie jest to zrzut interfejsu DocBits."><figcaption>Przykłady poglądowe: liniowa sekwencja standardowa wykonuje działania tylko po spełnieniu warunków; w przeciwnym razie ta sekwencja się zatrzymuje. Zaawansowany węzeł warunku może korzystać z osobno skonfigurowanych ścieżek wyników. Ścieżka jest kontynuowana tylko wtedy, gdy istnieje połączenie. Pominięto opcjonalne rozgałęzienia standardowe; nie jest to zrzut interfejsu DocBits.</figcaption></figure>
+
 ## Od zdarzenia do działania
 
 1. Sprawdź organizację, uprawnienia i moduł Workflow, a w razie potrzeby także dostęp Advanced.

@@ -33,10 +33,10 @@ Są to przykłady oczekiwanych wyników. Do sprawdzania poprawności samego nume
 
 ## Film z przykładem administratora
 
-Kiedy używam karty, gdzie ją znaleźć i jak wykrywać brakujące numery faktur. Administrator, biuro i głos są wygenerowane syntetycznie; obsługa przedstawia rzeczywisty interfejs DocBits na koncie testowym. Przykłady pokazują oczekiwane wyniki.
+Kiedy używam karty, gdzie ją znaleźć i jak wykrywać brakujące numery faktur. Przykłady pokazują oczekiwane wyniki.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl.mp4" %}
 
-[Otwórz film z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl.html)
+[Otwórz film z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl-theme-v4.html)
 
 [Przeczytaj transkrypcję](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl.txt)

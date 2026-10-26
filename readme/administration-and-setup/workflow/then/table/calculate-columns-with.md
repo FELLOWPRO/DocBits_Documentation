@@ -4,64 +4,52 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-pl-pl.png" alt="Oblicz kolumny za pomocą, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-## **Cel:**
+## Cel:
 
-Karta przepływu pracy **„Oblicz kolumny w tabeli”** służy do wykonywania obliczeń między kolumnami w wybranej tabeli. Umożliwia użytkownikom wybór kolumn, zastosowanie operacji matematycznej i zapisanie wyniku w określonej kolumnie wynikowej.
+Ta karta przepływu pracy oblicza, wiersz po wierszu, wartość z dwóch kolumn tabeli w dokumencie i zapisuje wynik w kolumnie wyniku. Może być używana na przykład do obliczania sum pozycji na podstawie ilości i ceny jednostkowej.
 
-## **Komponenty karty:**
+## Film administratora:
 
-1. **Nazwa tabeli**
-   * **Opis:** Określa **tabelę**, w której kolumny będą obliczane.
-   * **Szczegóły:** Do wyboru udostępniana jest lista rozwijana wszystkich dostępnych **tabel**.
-2. **Nazwa kolumny (pierwsza kolumna)**
-   * **Opis:** Określa **pierwszą kolumnę**, która ma być uwzględniona w obliczeniach.
-   * **Szczegóły:** Do wyboru udostępniana jest lista wszystkich dostępnych **kolumna**.
-3. **Działanie**
-   * **Opis:** Definiuje operację matematyczną, która ma być zastosowana między wybranymi kolumnami.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pl.mp4" %}
+
+[Obejrzyj film z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pl.html) · [Przeczytaj transkrypcję](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pl.txt)
+
+## Komponenty karty:
+
+1. **Tabela**
+   * **Opis:** Tabela w dokumencie, w której wykonywane jest obliczenie.
+2. **Pierwsza kolumna**
+   * **Opis:** Kolumna z pierwszą wartością każdego wiersza.
+3. **Operacja**
    * **Opcje:**
-     * **Add (+):** Dodaje wartość drugiej kolumny do wartości pierwszej kolumny.
-     * **Odejmij (-):** Odejmuje wartość drugiej kolumny od wartości pierwszej kolumny.
-     * **Multiply (\*):** Mnoży wartość w pierwszej kolumnie przez wartość w drugiej kolumnie.
-     * **Podziel (/):** Dzieli wartość w pierwszej kolumnie przez wartość w drugiej kolumnie.
-4. **Nazwa kolumny (druga kolumna)**
-   * **Opis:** Określa **drugą kolumnę**, która ma być uwzględniona w obliczeniach.
-   * **Szczegóły:** Do wyboru udostępniana jest lista dostępnych **kolumna**.
-5. **Kolumna wyników**
-   * **Opis:** Określa **kolumnę**, w której zostanie zapisany wynik obliczeń.
-   * **Szczegóły:** Udostępniana jest lista dostępnych **kolumna**, w których zostanie zapisana obliczona wartość.
+     * **+** dodaje drugą wartość do pierwszej.
+     * **-** odejmuje drugą wartość od pierwszej.
+     * **\*** mnoży obie wartości.
+     * **/** dzieli pierwszą wartość przez drugą.
+4. **Druga kolumna**
+   * **Opis:** Kolumna z drugą wartością każdego wiersza.
+5. **Kolumna wyniku**
+   * **Opis:** Kolumna, w której zapisywany jest wynik każdego wiersza.
+   * **Szczegóły:** Nazwa jest zapisywana wielkimi literami, a spacje są zastępowane podkreśleniami (`total amount` staje się `TOTAL_AMOUNT`). Jeśli kolumna jeszcze nie istnieje, karta ją dodaje; jeśli istnieje, jej wartości są zastępowane.
 
-## **Funkcjonalność:**
+Wersje 1 i 2 karty mają te same ustawienia i działają tak samo.
 
-* **Ocena warunku:**\
-  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **„Kiedy”**, jak i **„I sekcje”** są prawdziwe.
-* **Obliczanie kolumn:**\
-  Karta wykonuje wybraną operację matematyczną między dwiema wybranymi kolumnami.
-* **Przechowywanie wyniku:**\
-  Wynik obliczeń jest przechowywany w wybranej **kolumnie wynikowej**.
+## Funkcjonalność:
 
-## **Konfiguracja:**
+* **Obliczenie:** Dla każdego wiersza tabeli karta odczytuje obie kolumny (wielkość liter w nazwach kolumn nie ma znaczenia), stosuje operację i zapisuje wynik w kolumnie wyniku. Wyniki są zaokrąglane do czterech miejsc po przecinku. Następnie dokument jest zapisywany z nowymi wartościami.
+  * Pusta lub brakująca wartość jest liczona jako `0`. Jeśli obie wartości wiersza są puste, wynik tego wiersza pozostaje pusty.
+  * Dzielenie przez zero pozostawia wynik tego wiersza pusty.
+  * Przy **+** dwie wartości, które nie są liczbami, są łączone spacją zamiast dodawane. Przy pozostałych operacjach wartość, która nie jest liczbą, powoduje błąd i żadne wyniki nie są zapisywane.
+* **Wykonanie akcji:** Jeśli obliczenie i zapis się powiodą, przepływ pracy jest kontynuowany kolejnymi kartami. Jeśli tabela nie istnieje w dokumencie, nie można obliczyć wartości lub nie można zapisać dokumentu, karta zgłasza błąd w dzienniku przepływu pracy.
+* **Karta testowa:** Gdy karta jest uruchamiana za pomocą **Karta testowa**, obliczenie jest tylko symulowane, a dokument nie jest zmieniany.
 
-* **Wybierz tabelę:**\
-  Wybierz **tabelę**, w której kolumny będą obliczane.
-* **Wybierz kolumny:**\
-  Wybierz **pierwszą kolumnę** i **drugą kolumnę**, które zostaną użyte w obliczeniach.
-* **Wybierz operację:**\
-  Wybierz operację matematyczną (**Add (+)**, **Odejmij (-)**, **Multiply (\*)**, **Divide (/)**), która ma być zastosowana między kolumnami.
-* **Wybierz kolumnę wyników:**\
-  Wybierz **kolumnę wynikową**, w której zostanie zapisane obliczenie.
+## Instalacja i konfiguracja:
 
-## **Podsumowanie:**
+* Kartę można dodać jako akcję Then z kategorii **Tabela**. Następnie wybiera się tabelę, obie kolumny, operację i kolumnę wyniku.
+* **Przykład:** Tabela `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, kolumna wyniku `TOTAL_AMOUNT`. Wiersz z ilością 2 i ceną jednostkową 10 otrzymuje 20, wiersz z 3 i 4 otrzymuje 12.
+* Ponieważ pusta wartość jest liczona jako `0`, brakująca cena daje wynik `0`. Sprawdzenie, czy kolumny wejściowe są wypełnione, na przykład za pomocą warunku przed tą kartą, może pomóc uniknąć błędnych sum.
+* Przy odejmowaniu i dzieleniu kolejność obu kolumn ma znaczenie.
 
-Karta przepływu pracy **„Oblicz kolumny w tabeli”** umożliwia użytkownikom wykonywanie dynamicznych obliczeń między kolumnami w tabeli i przechowywanie wyników w wyznaczonej kolumnie. Karta oferuje elastyczność stosowania różnych operacji matematycznych i zapewnia zapisanie wyniku w określonej kolumnie.
+## Podsumowanie:
 
-<!-- workflow-card-practical-example-20261021 -->
-
-## Praktyczny przykład
-
-**Kiedy używać:** Oblicz sumę wierszy na podstawie ilości i ceny jednostkowej.
-
-**Konfiguracja:** Wybierz tabelę `lines`, kolumny `quantity` i `unit_price`, mnożenie i kolumnę wynikową `line_total`.
-
-**Oczekiwany wynik i kontrprzykład:** Wiersz zawierający `2` i `10` daje `20`. Przetestuj niezależnie inny wiersz i zdiagnozuj brakujące lub nienumeryczne dane wejściowe, zamiast traktować je jako prawidłową sumę.
-
-To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.
+Karta przepływu pracy „Calculate Columns with” automatycznie dodaje obliczone wartości do wierszy tabeli. Sumy pozycji i podobne wartości są dostępne dla kolejnych kart i dla eksportu bez ręcznego obliczania.

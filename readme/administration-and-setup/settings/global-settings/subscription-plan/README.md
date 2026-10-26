@@ -1,5 +1,13 @@
 # Plan subskrypcji
 
+## Samouczek wideo: Firma, subskrypcja i audyt
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/pl.mp4" %}
+Informacje o firmie, plan subskrypcji i dzienniki audytu w DocBits
+{% endembed %}
+
+Film pokazuje informacje i preferencje firmy, plan subskrypcji, aktywność logowania oraz dzienniki audytu.
+
 <figure><img src="../../../../.gitbook/assets/subscriptions_overview.png" alt="Plan subskrypcji"><figcaption><p>Strona Plan subskrypcji</p></figcaption></figure>
 
 Strona **Plan subskrypcji** zapewnia pełny przegląd Twojej subskrypcji DocBits w jednym miejscu: sam plan, subskrypcje aplikacji i funkcji włączone dla Twojej organizacji oraz zużycie tokenów. Otwórz ją z **Ustawienia → Organizacja i dostęp → Plan subskrypcji**.

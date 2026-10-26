@@ -1,5 +1,13 @@
 # Ustawienia danych głównych
 
+## Samouczek wideo: Dane główne i listy wartości
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/pl.mp4" %}
+Źródła danych głównych, listy wartości i ustawienia danych głównych w DocBits
+{% endembed %}
+
+Film pokazuje źródła danych głównych, listy wartości oraz ustawienia danych głównych typu dokumentu.
+
 Ustawienia danych głównych łączą pola walidacji dokumentu z danymi przechowywanymi na stronie [Wyszukiwanie danych podstawowych](../../../document-processing/master-data-lookup.md). Użyj **Wyszukaj dane główne**, aby znaleźć i wypełnić pasujące rekordy. Użyj **Dane główne LOV**, aby zaproponować listę wartości z zestawu danych.
 
 ## Otwórz ustawienia

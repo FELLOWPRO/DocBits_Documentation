@@ -1,87 +1,28 @@
-# Contabilidade automática
+# Contabilidade automática — teste
 
-Depois de configurar a contabilidade automática, teste as funcionalidades para preparar a utilização do ambiente DocBits.&#x20;
+Auto Accounting precisa de um módulo ativado, dados mestres contábeis e uma fatura com valores ou itens de linha utilizáveis. Este guia separa as configurações que você pode verificar antes de abrir uma fatura das verificações que exigem uma conexão LN ou M3 configurada.
 
-## Como ativar a contabilidade automática
+## Verificar as configurações do módulo
 
-* No painel, abra Configurações → Processamento de documentos → Módulo.
-* No separador Pedido de compra / Contabilidade automática, ative a funcionalidade e selecione LN ou M3 na lista suspensa.
+1. Abra **Configurações → Módulo → Ordem e Finanças** e expanda **Contabilidade automática**. O caminho mais antigo **Processamento de Documentos → Módulo → Purchase Order / Auto Accounting** não é mais o caminho exibido na aplicação atual.
+2. Escolha o **Tipo** do seu sistema conectado (**LN** ou **M3**). Ative a **Contabilidade automática** somente quando os dados mestres necessários e a conexão estiverem prontos.
+3. Quando ativado, selecione a lista **Contas** e as listas de dimensões apropriadas ao seu sistema. Para LN, os campos visíveis incluem **Menu suspenso de intervalo de dimensões** e **Nome da lista de dimensões**. O M3 tem campos diferentes. Use **Redefinir dados contábeis na alteração do elemento** apenas se o recálculo após a alteração de um elemento for intencional.
 
-&#x20;![](https://lh7-us.googleusercontent.com/c3aUKad-\_Wl1-wdhTGAweIe4LGsYZx5Bor8FDKAhALTm8UeO544o7w3VwDBYFSCgzzq37Jce5yKbRaQytI0nz95Ja73rLEAZHIuoTk0V7tn6q7F6Efx6pPlHll1Ek1ZItnmcnGUtgm3Y0GA8pbbshYU)
+<figure><img src="../../../../.gitbook/assets/dbdc-624-auto-accounting-off-pt.png" alt="Configurações do módulo Ordem e Finanças em português com a Contabilidade automática desativada e o Tipo definido como LN"><figcaption><p>A Contabilidade automática está desativada na organização de teste do Sandbox em português.</p></figcaption></figure>
 
-## Aceder à contabilidade automática
+<figure><img src="../../../../.gitbook/assets/dbdc-624-auto-accounting-on-pt.png" alt="Configurações do módulo Ordem e Finanças em português ativadas temporariamente, mostrando os seletores de contas e dimensões"><figcaption><p>Os campos exibidos quando a configuração está ativada. Ela foi desativada novamente após esta captura; nenhuma conta ou dimensão foi configurada.</p></figcaption></figure>
 
-Depois de carregar o documento e abrir o ecrã de validação, selecione o ícone seguinte para entrar na contabilidade automática.
+## Testar com uma fatura configurada
 
-![](https://lh7-us.googleusercontent.com/y-GgwfK7QdmuvVLGxaLhzgA-AhUNHaWfEin8iEdOFCJQE9brJzoXdIIa6B\_E0B2fXR9ahQ7ukllz\_rmI72P4Sujv0cWjEns-u0ro2EqthuwHGN8XVVnaP9or\_c3XzTQ46ZUKf84LMxvl\_yOc5BBE3qc)
+Use uma fatura cujos itens de linha e dados mestres contábeis estejam disponíveis. Abra-a na tela de validação e selecione **Contabilidade automática**. Se a ação estiver ausente, verifique a configuração do módulo e se esta fatura é elegível. Valide a fatura antes de navegar; a aplicação salva e valida quando a ação é selecionada.
 
-Será apresentado o ecrã seguinte, desde que a tabela esteja treinada para distinguir corretamente os itens de linha.
+Na tela de contabilidade, verifique o seguinte com seus próprios dados LN ou M3:
 
-![](https://lh7-us.googleusercontent.com/1z8qvnZJoqk2bhjah6HJ7E9Z\_Dhrmi6kTZuXAKSmXT7T-pWnI176DQbliroCPvCEIIhYYnezL5ae\_Az\_O2MWTeOTC6qZvtJ5rlThPYnKnDTIHoDIi6zsahnUuvsD7YtZROXZ4U44L2aWufBsE7QqbiA)
+1. Execute **Validate Setup** onde disponível e resolva a configuração ausente de contas ou dimensões antes de prosseguir. Um resultado verde descreve apenas as verificações do seu ambiente.
+2. Verifique se a fatura deve ser atribuída pelo **total** ou por **itens de linha individuais**. Compare os valores contábeis com a fatura original.
+3. Se você dividir um valor, selecione a conta pretendida para cada linha da divisão. Insira valores ou porcentagens e verifique se os valores alocados somam o valor principal. Adicione ou remova uma linha apenas quando necessário.
+4. Revise qualquer **Unsettled amount** ou aviso de validação e corrija-o antes de salvar ou exportar. Confirme o resultado no sistema conectado separadamente.
 
-Tem duas opções:
+A organização de teste do Sandbox usada para as capturas de tela acima não tem listas de contas e dimensões configuradas nem itens de linha de fatura para este fluxo. A tela de contabilidade, a divisão e a exportação, portanto, **não foram testadas ou mostradas aqui**. Não use as capturas de tela de configurações como prova de que a contabilização ou a exportação foi bem-sucedida.
 
-* Repartir a fatura pelo valor total
-* Repartir a fatura por cada item de linha
-
-Clique na opção pretendida para a selecionar.
-
-![](https://lh7-us.googleusercontent.com/Mbusr1kisZSjyU\_YJJ-8sLfwcyBOutRPUymIuuiynvEjjD1-iY\_3kACHdf9g3VcfYtHS6\_eMSFX-3RuA2Wyhq3JDjw7VsuxOijT2q9ey6DWrLzBAK7wPFXUiyapbSEK97E2Rpbop42ZAvW4zJkD-Rz4)
-
-## Pré-requisitos
-
-A contabilidade automática exige a configuração de determinados dados. O botão «Validate Setup» (validar configuração), indicado abaixo, ajuda a identificar o que está em falta.
-
-![](https://lh7-us.googleusercontent.com/zCqiu\_\_deFqdYih9yBGQhxbgXYuBvLFhSd48k-gA9sQoxoBibeyUAEc9k9HQCnmuddIU2Bws7IfK3JCuXylCo6sCdyuUNOeUHRLGGH3Jvz5MJRJU5cmsyzrH5lTo0eH\_ygFTuXc9dI3BZ\_wW-ybzHKw)
-
-Ao clicar, o DocBits verifica se o ambiente está configurado corretamente.
-
-Aparecerá um menu semelhante ao seguinte.
-
-![](https://lh7-us.googleusercontent.com/v2UhbvTVO7pw29xeRb1kjWlVq8xPmYQNeoXpUZpztcvuWdpFR01u46yRaS3rKeTIhr9k0wor46wwUcoOaOwoP49CGW5VlsLI6fd15DvfnykRC9lFJkY8RN\_Y6DlHP7t4ldPROsdCqIjgg7e3dIK5J9s)
-
-Os elementos com marca de verificação verde estão configurados e operacionais. A imagem é apenas um exemplo: não copie as configurações item a item, porque cada organização tem contas, dimensões e opções de dimensão próprias.
-
-Repartir valores
-
-Clique no ícone seguinte, junto ao total ou ao item de linha específico.
-
-![](https://lh7-us.googleusercontent.com/SzOTCQ8pox0UPXhlCeSLuqzeD\_gOfmFBkxzmae4Ms2JYLU\_GeQPgd5iITPiedpV12bNozVTFI8Z3cRtacEogkb5OU5OAiKJ4HV7li2HqDsZjYzES8WcCpPDWlYPjRrPfBo5LCGaxtd8uerJqUbmMQcg)
-
-Ao selecionar o ícone de repartição, aparece um novo menu por baixo do item.
-
-![](https://lh7-us.googleusercontent.com/NMyfsDFrPh7NwQNXF1FHP-oHDkBTUqoniwq48Pri7ULHiZRHuYVJ\_RTiSqt12LG1Q7ut9UTmmlQC0-y2Le5cMJ-c\_OwpWJ7s09r3kHS8I2wca75EiKfa4u2uBkYudgJ-gkEC7yK8OtweSyuqOZ2hh2Y)
-
-Contas
-
-O primeiro bloco tem uma lista suspensa para selecionar as contas ou departamentos previamente configurados pelos quais pretende repartir o valor. O DocBits agrupa tipos de conta semelhantes para facilitar a pesquisa.
-
-Valores
-
-O segundo bloco permite introduzir manualmente os valores em que o montante original será repartido.
-
-Repartição por percentagem
-
-O terceiro bloco permite introduzir a percentagem de repartição. O valor inicial é 50%, mas pode alterá-lo. Quando introduz uma percentagem, o montante correspondente é calculado no segundo bloco.
-
-O novo montante só é calculado depois de premir Enter. As outras percentagens não são alteradas automaticamente, pelo que a soma pode diferir do montante original. O indicador «Unsettled amount» (valor por repartir), descrito adiante, ajuda a detetar a diferença.
-
-Outras funcionalidades
-
-Adicionar linha
-
-O ícone de adição, junto ao ícone de repartição, permite repartir um montante por mais de duas contas ou departamentos.
-
-![](https://lh7-us.googleusercontent.com/AzrPkawLROoACG3XpIpXXyRgVXa8giIkgOZ8sYc4LAHwuZRqmoiFas-oYUbR04vtPWiTPAwV\_tu-idfLG57VfaC9fvQl3Zpjdm-tNxVW7YK6-Kf-UeuYpkIenmJbQhdWfg71UezLIIG5\_4bhoSRZdtk)
-
-Eliminar linha
-
-O ícone de caixote do lixo elimina linhas incorretas ou desnecessárias.
-
-![](https://lh7-us.googleusercontent.com/2gAuz4KkU3xQuYZ-6w5p8T43JTJu\_aUdYfWHGBpQc\_LNPXjNu7BgN3maRgfqCzSsWyZ27j8BNn7PNzA2Tj6ZZx5T5rcJjmaFlPQZ5ioXRMoB8zSbGDawsopPoxlX2yZU\_-rh-\_D02iuzCjWDYOCJ7KE)
-
-Valor por repartir
-
-O indicador «Unsettled amount» na parte inferior apresenta qualquer valor do montante original ainda por repartir.
-
-![](https://lh7-us.googleusercontent.com/xZ2RqteuST79CFiKJRBDLwIBBLMa2E\_vdaMmpTM3NN2qxuwCr8j208wZVHgY1Q9bg46EhRPeQpM\_K1V85yIzU88D7tGRPiP3pkpzXUBv\_vZbPrIM1S41ZeRcMMVW60nf5Whngnpbluw9M30bjDwcoQ0)
+Para a configuração específica do sistema, continue com o [guia LN](ln.md) ou o [guia M3](m3.md).

@@ -4,6 +4,12 @@ description: India GST E-Rechnung – Unterstützung elektronischer Dokumente in
 
 # 🇮🇳 Indien GST E-Rechnung
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Indien](countries/india.md). Der dokumentierte Adapter verarbeitet SignedInvoice-XML. Setzen Sie nicht voraus, dass unbearbeitetes IRP-JSON, ein QR-Bild oder ein PDF-Scan denselben Extraktionspfad verwendet.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
 | **Land / Region** | Indien |
@@ -34,7 +40,7 @@ Die Steuerpflichtige-Kennung ist die **GSTIN** (Goods and Services Tax Identific
 
 ## Standardvorschau
 
-<figure><img src="india-gst-e-invoice-preview.png" alt="Indien GST E-Rechnung Vorschau in DocBits"><figcaption><p>Standardvorschau von DocBits für eine Indien GST E-Rechnung</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/india-gst-e-invoice-preview.png" alt="Indien GST E-Rechnung Vorschau in DocBits"><figcaption><p>Standardvorschau von DocBits für eine Indien GST E-Rechnung</p></figcaption></figure>
 
 ## Feldzuordnung
 
@@ -96,5 +102,5 @@ DocBits erkennt Indien GST E-Rechnungsdokumente anhand des Wurzelelements:
 
 ## Verwandte Themen
 
-- [Derzeit unterstützte E-Invoice-Standards](../../currently-supported-e-invoice-standards/)
+- [Derzeit unterstützte E-Invoice-Standards](../currently-supported-e-invoice-standards/README.md)
 - [Unterstützte elektronische Dokumente](./)

@@ -1,19 +1,18 @@
 # Lieferantenspezifisches KI-Modell für Feld- und Tabellenextraktion
 
 Im Werkzeugbereich des **Validierungsbildschirms** können Sie das KI-Modell für die **Feldextraktion** und **Tabellenextraktion** auswählen.\
-Das ausgewählte **KI-Modell** wird nur auf alle Dokumente des aktuellen Lieferanten angewendet.
+Dieser Einstieg ändert die Überschreibung im aktuellen Extraktionsvorlagen-Kontext. Sie wird je Organisation und Vorlage (`tfidf_id`) gespeichert. Die Lieferantenzuordnung bedeutet nicht, dass damit sämtliche Vorlagen oder historischen Dokumente dieses Lieferanten geändert werden. Ohne Überschreibung gilt die anwendbare Organisationseinstellung.
 
-Um das Modell zu ändern, öffnen Sie das Optionsmenü, indem Sie auf die **drei Punkte** auf der rechten Seite des Bildschirms klicken, und wählen Sie dann eines der verfügbaren Modelle:<br>
+Um das Modell zu ändern, öffnen Sie das Optionsmenü, indem Sie auf die Schaltfläche **Mehr Optionen** (drei Punkte) auf der rechten Seite des Bildschirms klicken, und wählen Sie dann eines der verfügbaren Modelle:<br>
 
-* **Full** – Kostet 2 Token
-* **Fast** – Kostet 1 Token
-* **Nexus** – Kostet 1 Token
+Das Menü bietet **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** und **Auto Nexus**. Verfügbarkeit und Kosten richten sich nach Ihrer aktuellen Umgebung und den vereinbarten Konditionen. Keine Option ist für jedes Dokument grundsätzlich die genaueste oder schnellste; „Fast“ ist kein allgemeingültiger Organisationsstandard.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png)
+Ein Modellwechsel kann eine Bestätigung erfordern und die Extraktion erneut starten. Prüfen Sie deshalb Dokument und Geltungsbereich vor dem Bestätigen. Das bloße Öffnen des Menüs ändert die Einstellung nicht; die Abbildungen belegen keinen ausgeführten Modellwechsel.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/selecting_a_supplier_specific_ai_model_2.png)
+<figure><img src="../../../.gitbook/assets/dbdc859-supplier-ai-model-menu-de-20261012.png" alt="Vorhandene Beispielansicht mit synthetischer Rechnung: „Mehr Optionen“ öffnet das Menü „KI-Modell“. Die Auswahl gehört zum aktuellen Vorlagenkontext. Englische Gruppenüberschriften und „Go to Layout Template“ bleiben im Beispiel sichtbar."><figcaption><p>Vorhandene Beispielansicht mit synthetischer Rechnung: „Mehr Optionen“ öffnet das Menü „KI-Modell“. Die Auswahl gehört zum aktuellen Vorlagenkontext. Englische Gruppenüberschriften und „Go to Layout Template“ bleiben im Beispiel sichtbar.</p></figcaption></figure>
 
-Wenn die Ergebnisse der **Feldextraktion** oder **Tabellenextraktion** nicht zufriedenstellend sind, versuchen Sie, zu einem anderen Modell zu wechseln, um die Genauigkeit zu verbessern.
+<figure><img src="../../../.gitbook/assets/dbdc859-supplier-ai-model-options-de-20261012.png" alt="Vorhandene Beispielansicht des Menüs „KI-Modell“ mit Full, Fast, Nexus, Nexus Flash, Auto und Auto Nexus. Die Modellnamen sind Produktbezeichnungen; englische Gruppenüberschriften bleiben im Beispiel sichtbar. Es wurde kein Modellwechsel ausgeführt."><figcaption><p>Vorhandene Beispielansicht des Menüs „KI-Modell“ mit Full, Fast, Nexus, Nexus Flash, Auto und Auto Nexus. Die Modellnamen sind Produktbezeichnungen; englische Gruppenüberschriften bleiben im Beispiel sichtbar. Es wurde kein Modellwechsel ausgeführt.</p></figcaption></figure>
 
-Um das KI-Modell **global für Lieferanten ohne benutzerdefiniertes Modell** zu konfigurieren oder um zu **verwalten, welches Modell für jeden Lieferanten aktiv ist**, lesen Sie bitte die entsprechende Dokumentation [**hier**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+Vergleichen Sie verfügbare Modelle mit freigegebenen Testdokumenten und prüfen Sie extrahierte Werte, Laufzeit und Kosten. Ein Wechsel kann ein Dokument erneut verarbeiten und garantiert keine Verbesserung.
 
+Um den **Organisationsstandard** zu konfigurieren oder **vorlagenbezogene Überschreibungen** zu prüfen, lesen Sie bitte die entsprechende Dokumentation [**hier**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).

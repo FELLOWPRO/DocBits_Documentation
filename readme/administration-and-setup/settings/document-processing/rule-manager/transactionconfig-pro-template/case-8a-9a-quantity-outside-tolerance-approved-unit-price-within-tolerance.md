@@ -1,34 +1,37 @@
-# Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance
+# Fall 8a, 9a: Menge außerhalb der Toleranz (genehmigt), Stückpreis innerhalb der Toleranz
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
 
-## Action:
+## Szenario:
 
-The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+Die Rechnungsmenge liegt außerhalb der zulässigen Toleranz, wurde jedoch genehmigt. Der Stückpreis liegt innerhalb der Toleranz.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Quantity: 150 units
-  * Unit Price: $12.00 per unit
-  * Total Amount: $1,800.00
-* **Invoice Received:**
-  * Quantity: 160 units (outside tolerance of 6.67% but approved)
-  * Unit Price: $12.00 per unit (within tolerance)
-  * Total Amount: $1,920.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+Das System akzeptiert die genehmigte Menge und den Stückpreis aus der Rechnung und verarbeitet die Transaktion entsprechend.
 
-Since the quantity (160 units) exceeds the acceptable tolerance limit but has been approved, and the unit price ($12.00) is within the acceptable range, the system will:
+## Beispiel:
 
-1. **Accept the Approved Quantity:** The system acknowledges that the quantity has been approved despite being outside the normal tolerance range.
-2. **Accept the Unit Price:** The unit price of $12.00 per unit is within the acceptable tolerance, so it is accepted as invoiced.
-3. **Process the Transaction:** The system calculates the total amount using the approved quantity and unit price:
-   * **Total Amount = Quantity × Unit Price**
-   * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** The system processes the invoice with the total amount of $1,920.00, reflecting the approved quantity and accepted unit price.
+* **Bestellung (PO):**
+  * Menge: 150 Einheiten
+  * Stückpreis: $12.00 je Einheit
+  * Gesamtbetrag: $1,800.00
+* **Eingegangene Rechnung:**
+  * Menge: 160 Einheiten (Abweichung außerhalb der Toleranz: 6.67%, jedoch genehmigt)
+  * Stückpreis: $12.00 je Einheit (innerhalb der Toleranz)
+  * Gesamtbetrag: $1,920.00
+* **Toleranzgrenzen:**
+  * Mengentoleranz: ±5%
+  * Stückpreistoleranz: ±2%
 
-This approach allows the system to accommodate approved variances in quantity while ensuring the unit price remains within the expected range, facilitating smooth transaction processing.
+Die Menge (160 Einheiten) überschreitet die zulässige Toleranzgrenze, wurde jedoch genehmigt. Der Stückpreis ($12.00) liegt innerhalb des zulässigen Bereichs. Das System führt folgende Schritte aus:
+
+1. **Genehmigte Menge akzeptieren:** Das System berücksichtigt, dass die Menge trotz Überschreitung des normalen Toleranzbereichs genehmigt wurde.
+2. **Stückpreis akzeptieren:** Der Stückpreis von $12.00 je Einheit liegt innerhalb der zulässigen Toleranz und wird daher aus der Rechnung übernommen.
+3. **Transaktion verarbeiten:** Das System berechnet den Gesamtbetrag anhand der genehmigten Menge und des Stückpreises:
+   * **Gesamtbetrag = Menge × Stückpreis**
+   * **Gesamtbetrag = 160 Einheiten × $12.00 je Einheit = $1,920.00**
+4. **Rechnung abschließen:** Das System verarbeitet die Rechnung mit dem Gesamtbetrag von $1,920.00, der die genehmigte Menge und den akzeptierten Stückpreis widerspiegelt.
+
+Damit berücksichtigt das System genehmigte Mengenabweichungen, während der Stückpreis im erwarteten Bereich bleibt. Das ermöglicht eine reibungslose Transaktionsverarbeitung.

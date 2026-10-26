@@ -2,7 +2,7 @@
 
 Nachfolgend finden Sie die erforderlichen Feldzuordnungen für den Import von Stammdaten aus Infor in DocBits.
 
-## Auto Accounting (LN)
+## Automatische Kontierung (LN)
 
 ### ChartOfAccounts
 
@@ -42,7 +42,7 @@ Nachfolgend finden Sie die erforderlichen Feldzuordnungen für den Import von St
 }
 ```
 
-## Auto Accounting (M3)
+## Automatische Kontierung (M3)
 
 ### ChartOfAccounts
 
@@ -82,9 +82,9 @@ Nachfolgend finden Sie die erforderlichen Feldzuordnungen für den Import von St
 }
 ```
 
-## Tax Code
+## Steuercode
 
-### Full
+### Regelsatz (Full)
 
 ```javascript
 {
@@ -98,7 +98,7 @@ Nachfolgend finden Sie die erforderlichen Feldzuordnungen für den Import von St
 }
 ```
 
-### Reduced
+### Ermäßigter Satz (Reduced)
 
 ```javascript
 {
@@ -112,7 +112,7 @@ Nachfolgend finden Sie die erforderlichen Feldzuordnungen für den Import von St
 }
 ```
 
-### Free
+### Steuerfrei (Free)
 
 ```javascript
 {

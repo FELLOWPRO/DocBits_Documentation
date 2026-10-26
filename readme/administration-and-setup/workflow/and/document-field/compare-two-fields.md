@@ -1,6 +1,6 @@
-# Compare two Fields
+# Vergleichen Sie zwei Felder
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e8895ad20ae3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -35,10 +35,22 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 * **Bedingung nicht erfüllt (False):**\
   Stimmen die Werte der beiden Felder nicht mit der angegebenen Bedingung überein, werden je nach Konfiguration der Workflows alternative oder keine Aktionen ausgeführt.
 
-## **Einrichtung und Konfiguration:**&#x20;
+## **Einrichtung und Konfiguration:**
 
 * Benutzer konfigurieren die Karte, indem sie die beiden zu vergleichenden Felder aus einer Liste der im System verfügbaren Felder auswählen. Der Operator wird aus einer Dropdown-Liste der verfügbaren Vergleichsoptionen ausgewählt.
 
 ## **Fazit:**
 
 Die Workflow-Karte "Compare Two Fields" ist ein unverzichtbares Werkzeug, um Daten zwischen Feldern innerhalb von Dokumenten zu vergleichen. Indem sie Aktionen auf Basis von Feldvergleichen automatisiert, hilft diese Karte, die Entscheidungsfindung zu optimieren, unterstützt die Datenvalidierung und steigert die Workflow-Automatisierung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Überprüfen Sie, ob eine kopierte Referenz mit der Originalreferenz übereinstimmt.
+
+**Konfiguration:** Wählen Sie die Textfelder `purchase_order_number` und `confirmed_order_number` und den Gleichheitsoperator aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Werte `PO-DEMO-001` und `PO-DEMO-001` bestehen. Ein zweiter Wert von `PO-DEMO-002` schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

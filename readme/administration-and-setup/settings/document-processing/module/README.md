@@ -1,5 +1,13 @@
 # Module
 
+## Tutoriel vidéo : aperçu des paramètres et modules
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/fr.mp4" %}
+Aperçu des paramètres et modules dans DocBits
+{% endembed %}
+
+La vidéo présente les cinq groupes de l'aperçu des paramètres, la recherche et les liens rapides, ainsi que ce que contrôlent les trois pages Module.
+
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-fr.png" alt="Modules — commande et financement. Les interrupteurs sont affichés dans leur état existant ; aucune option n’a été modifiée."><figcaption><p>Modules — commande et financement. Les interrupteurs sont affichés dans leur état existant ; aucune option n’a été modifiée.</p></figcaption></figure>
 
 La page Module vous permet d'activer ou de désactiver des fonctionnalités optionnelles dans DocBits. Chaque section regroupe des modules apparentés qui peuvent être activés ou désactivés.

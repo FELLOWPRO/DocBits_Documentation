@@ -1,5 +1,13 @@
 # Paramètres
 
+## Tutoriel vidéo : aperçu des paramètres et modules
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/fr.mp4" %}
+Aperçu des paramètres et modules dans DocBits
+{% endembed %}
+
+La vidéo présente les cinq groupes de l'aperçu des paramètres, la recherche et les liens rapides, ainsi que ce que contrôlent les trois pages Module.
+
 <figure><img src="../../.gitbook/assets/site-extra-settings-overview-fr.png" alt="Paramètres de l’organisation : informations d’identification masquées ; les sections restent accessibles dans le menu."><figcaption><p>Paramètres de l’organisation : informations d’identification masquées ; les sections restent accessibles dans le menu.</p></figcaption></figure>
 
 La zone Settings est votre point central pour configurer DocBits. Elle est organisée en cinq sections principales :

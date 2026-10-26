@@ -1,21 +1,25 @@
-# Convalida e punteggio di corrispondenza
+# Impostazioni di Convalida e Punteggio della Partita
 
-Obbligatorietà, convalida forzata, OCR e Match Score sono proprietà diverse di un campo. Consultare i campi del tipo di documento per verificarle.
+In **Campi** puoi impostare le soglie di convalida e di riconoscimento di un tipo di documento. Questa pagina usa **Fattura** in un'organizzazione di prova della documentazione. Spiega l'attuale casella **CONVALIDA DELLA FORZA** e i controlli **PUNTEGGIO DELLA PARTITA**.
 
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_choose_column_type-it.png" alt="Colonne separate per convalida forzata, OCR e Match Score. L’etichetta Punteggio della partita indica Match Score. L’etichetta CONVALIDA DELLA FORZA indica la convalida forzata."><figcaption><p>Colonne separate per convalida forzata, OCR e Match Score. L’etichetta Punteggio della partita indica Match Score. L’etichetta CONVALIDA DELLA FORZA indica la convalida forzata.</p></figcaption></figure>
+## Aprire le impostazioni dei campi
 
-## Convalida forzata
+1. Vai a **Impostazioni → Tipi di Documento → Fattura → Campi**.
+2. Usa **Ricerca per nome** per trovare un campo, ad esempio `invoice_id` (mostrato come **Numero fattura**).
+3. Controlla la riga del campo prima di modificare un'impostazione. **OBBLIGATORIO**, **Solo Lettura**, **Nascosto** e **CONVALIDA DELLA FORZA** sono caselle di controllo separate.
 
-La convalida forzata richiede una verifica esplicita del campo. Da sola non crea un’espressione regolare né una regola di confronto. Le regole di convalida personalizzate si configurano separatamente.
+<figure><img src="../../../../../.gitbook/assets/dbdc-677-fields-overview-it.png" alt="Pagina Campi della Sandbox in italiano con Impostazioni di riconoscimento, i controlli OCR e PUNTEGGIO DELLA PARTITA, le colonne dei campi e il pulsante Salva le impostazioni"><figcaption><p>I controlli di riconoscimento compaiono sopra l'elenco dei campi.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s150-image-120-it.png" alt="Convalida e riconoscimento configurati separatamente per ogni campo. L’etichetta Punteggio della partita indica Match Score. L’etichetta CONVALIDA DELLA FORZA indica la convalida forzata."><figcaption><p>Convalida e riconoscimento configurati separatamente per ogni campo. L’etichetta Punteggio della partita indica Match Score. L’etichetta CONVALIDA DELLA FORZA indica la convalida forzata.</p></figcaption></figure>
+## CONVALIDA DELLA FORZA
 
-## OCR e Match Score
+Seleziona **CONVALIDA DELLA FORZA** nella riga del campo per applicare a quel campo una convalida più rigorosa. La casella è separata da **OBBLIGATORIO**: contrassegnare un campo come obbligatorio non seleziona automaticamente CONVALIDA DELLA FORZA. La casella può non essere disponibile quando un campo è nascosto o di sola lettura. Dopo aver modificato la configurazione del campo, fai clic su **Salva le impostazioni**.
 
-OCR definisce la soglia di riconoscimento del campo. Match Score è una soglia numerica di corrispondenza; non è un testo di riferimento né un selettore del valore da confrontare.
+Le istruzioni precedenti suggerivano di inserire qui limiti numerici o espressioni regolari. L'attuale tabella Campi non mostra un editor di regole nella cella CONVALIDA DELLA FORZA. Per le regole specifiche di un campo, consulta [Configurazione delle Proprietà del Campo](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_decide_column_necessity-it.png" alt="Numero di fattura filtrato con convalida forzata e Match Score. L’etichetta Punteggio della partita indica Match Score. L’etichetta CONVALIDA DELLA FORZA indica la convalida forzata."><figcaption><p>Numero di fattura filtrato con convalida forzata e Match Score. L’etichetta Punteggio della partita indica Match Score. L’etichetta CONVALIDA DELLA FORZA indica la convalida forzata.</p></figcaption></figure>
+## PUNTEGGIO DELLA PARTITA
 
-Verificare il comportamento con documenti rappresentativi prima di salvare le impostazioni. L’obbligatorietà di un campo non sostituisce la convalida forzata.
+**PUNTEGGIO DELLA PARTITA** è una soglia numerica, non un valore di riferimento fisso. Il cursore **PUNTEGGIO DELLA PARTITA** in **IMPOSTAZIONI DI RICONOSCIMENTO** applica il proprio valore alle righe dei campi del tipo di documento; per un valore individuale usa l'input **PUNTEGGIO DELLA PARTITA** della singola riga di campo. Nell'organizzazione di prova, il cursore e `invoice_id` mostrano entrambi **50**. Verifica i campi interessati, poi fai clic su **Salva le impostazioni**.
 
-L’etichetta italiana Punteggio della partita indica Match Score: è una traduzione inesatta del punteggio di corrispondenza. La voce Convalida della forza indica la convalida forzata.
+<figure><img src="../../../../../.gitbook/assets/dbdc-677-invoice-id-settings-it.png" alt="Riga del campo invoice_id nella Sandbox in italiano con CONVALIDA DELLA FORZA selezionata e PUNTEGGIO DELLA PARTITA pari a 50"><figcaption><p>Cerca un campo per verificarne la casella CONVALIDA DELLA FORZA e il valore PUNTEGGIO DELLA PARTITA.</p></figcaption></figure>
+
+**OCR** è una soglia di riconoscimento separata, accanto a PUNTEGGIO DELLA PARTITA. **RIPRISTINARE LE IMPOSTAZIONI PREDEFINITE** reimposta le configurazioni; usalo solo se intendi scartare le tue soglie personalizzate. Per le altre opzioni dei campi, consulta la panoramica di [Campi](README.md).

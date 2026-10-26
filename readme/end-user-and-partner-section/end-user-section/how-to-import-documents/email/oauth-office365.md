@@ -2,32 +2,34 @@
 
 {% embed url="https://youtu.be/Vvy38N_5g3Y" %}
 
-Tutaj wystarczy, że wpiszesz swoją pożądaną podorganizację i naciśniesz „Authenticate”
+Tutaj wystarczy wpisać swoją podorganizację i nacisnąć **Uwierzytelniać**
 
-![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-authenticate-pl-20261009.png" alt="Okno »Konfiguracja serwera poczty e-mail« z protokołem OAuth Office365, trasowaniem dokumentów i przyciskiem »Uwierzytelniać«."><figcaption><p>Wybierz trasowanie i naciśnij Uwierzytelniać.</p></figcaption></figure>
 
 Zostaniesz przeniesiony na tę stronę Microsoft i będziesz musiał wprowadzić kod.
 
 ![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
-Ten kod można znaleźć, wracając do DocBits, a kod zostanie tam wyświetlony jak poniżej, po prostu skopiuj kod i wprowadź go na stronie Microsoft. Następnie będziesz musiał wprowadzić swoje własne dane logowania do Microsoft.
+Ten kod znajdziesz, wracając do DocBits — kod zostanie tam wyświetlony tak jak poniżej. Skopiuj kod i wprowadź go na stronie Microsoft. Następnie musisz podać własne dane logowania Microsoft.
 
-![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-code-pl-20261009.png" alt="Okno »Konfiguracja serwera poczty e-mail« z kodem uwierzytelniania firmy Microsoft, przyciskiem »Kopia« i przyciskiem »Zakończ uwierzytelnianie«."><figcaption><p>Kod Microsoft jest wyświetlany w DocBits.</p></figcaption></figure>
 
-Naciśnij przycisk FINISH AUTHENTICATION i zostaniesz przeniesiony do tego menu
+Naciśnij przycisk **Zakończ uwierzytelnianie**, a zostaniesz przeniesiony do tego menu
 
-![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-options-pl-20261009.png" alt="Okno »Konfiguracja serwera poczty e-mail« po uwierzytelnieniu z przełącznikami »Użyj folderu«, »Użyj udostępnionej skrzynki pocztowej« i »Przenieś wiadomości e-mail do innego folderu«."><figcaption><p>Opcje po zakończeniu uwierzytelniania.</p></figcaption></figure>
 
 **Użyj folderu**
 
-Jeśli używasz folderu innego niż skrzynka odbiorcza, wpisz nazwę folderu po włączeniu suwaka.
+Jeśli używasz folderu innego niż skrzynka odbiorcza, wpisz nazwę folderu po włączeniu przełącznika.
 
-**Użyj współdzielonej skrzynki pocztowej**
+**Użyj udostępnionej skrzynki pocztowej**
 
-Jeśli chcesz, aby import e-maili uzyskał dostęp do skrzynki odbiorczej lub folderu współdzielonej skrzynki pocztowej, wpisz tutaj adres e-mail po włączeniu suwaka.
+Jeśli chcesz, aby import e-maili miał dostęp do skrzynki odbiorczej lub folderu udostępnionej skrzynki pocztowej, wpisz tutaj adres e-mail po włączeniu przełącznika.
 
 **Przenieś zaimportowane e-maile do kosza**
 
-Jeśli chcesz zaimportować wszystkie e-maile, a nie tylko nieprzeczytane, i przenieść je do kosza, to aktywuj tę opcję. W przeciwnym razie sprawdzi tylko nieprzeczytane e-maile, zaimportuje dokumenty, ustawi e-mail jako przeczytany i pozostawi go w jego obecnym miejscu.
+(W oknie przełącznik nazywa się **Przenieś wiadomości e-mail do innego folderu**.)
+
+Jeśli chcesz zaimportować wszystkie e-maile, a nie tylko nieprzeczytane, i przenieść je do innego folderu (na przykład do kosza), włącz tę opcję. W przeciwnym razie sprawdzane będą tylko nieprzeczytane e-maile: dokumenty zostaną zaimportowane, e-mail oznaczony jako przeczytany i pozostawiony na swoim miejscu. Ta sama opcja jest opisana na stronie [Importowanie](../../../../administration-and-setup/settings/document-processing/import.md).
 
 W przypadku otrzymania komunikatu o błędzie wskazującego, że nie masz uprawnień do ustanowienia takiego połączenia, ktoś z uprawnieniami administratora w Azure musi autoryzować to połączenie. Aby uzyskać więcej informacji, odwiedź następującą stronę: [https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps)

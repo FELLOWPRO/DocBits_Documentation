@@ -1,8 +1,8 @@
 # Combined Price of Quantity Difference
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-03-de-20261023.png" alt="Mit Bestellung vergleichen Kombinierter Preis der Mengendifferenz Operator Wert , vergleichen Vergleichsdaten" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-03-de-20261023.png" alt="Mit Bestellung vergleichen Kombinierter Preis der Mengendifferenz Operator Wert , vergleichen Vergleichsdaten" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**:
 

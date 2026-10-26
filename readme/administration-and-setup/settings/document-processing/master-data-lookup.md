@@ -1,5 +1,13 @@
 # Ricerca dei dati anagrafici
 
+## Video tutorial: Dati anagrafici ed elenchi di valori
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/it.mp4" %}
+Fonti dei dati anagrafici, elenchi di valori e impostazioni dei dati master in DocBits
+{% endembed %}
+
+Il video mostra le fonti dei dati anagrafici, gli elenchi di valori e le impostazioni dei dati master di un tipo di documento.
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 

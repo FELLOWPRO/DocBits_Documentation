@@ -1,5 +1,13 @@
 # Elenchi di valori
 
+## Video tutorial: Dati anagrafici ed elenchi di valori
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/it.mp4" %}
+Fonti dei dati anagrafici, elenchi di valori e impostazioni dei dati master in DocBits
+{% endembed %}
+
+Il video mostra le fonti dei dati anagrafici, gli elenchi di valori e le impostazioni dei dati master di un tipo di documento.
+
 Gli elenchi di valori contengono opzioni predefinite per i campi del documento. Un campo può usare un elenco per presentare le opzioni nella convalida. Le etichette possono essere tradotte; il valore tecnico resta uguale in tutte le lingue.
 
 ## Aprire gli elenchi

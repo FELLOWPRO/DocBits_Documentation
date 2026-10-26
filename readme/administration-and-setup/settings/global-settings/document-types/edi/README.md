@@ -1,36 +1,72 @@
 # e-docs
 
-{% embed url="https://youtu.be/AxrHNEmmXtg" %}
-DocBits Poradnik dotyczący e-faktury: Przetwarzaj XRechnung / ZUGFeRD (Factur-X), sprawdzaj poprawność danych i automatyzuj przepływy pracy
-{% endembed %}
+Dokumenty elektroniczne, takie jak XRechnung, ZUGFeRD/Factur-X, CFDI czy FatturaPA, przychodzą jako XML lub hybrydowy plik PDF. DocBits odczytuje plik, wyodrębnia dane faktury i tworzy z nich czytelny plik PDF. W ustawieniach **E-Doc** znajdują się reguły dla każdego formatu używanego w Twojej organizacji.
 
-<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
+## Otwieranie administracji E-Doc
 
-#### Przegląd
+1. Otwórz **Ustawienia → Typy dokumentów**.
+2. Wybierz typ dokumentu, na przykład **Faktura**, i otwórz **E-Doc**.
 
-W Docbits ustawienia EDI zapewniają narzędzia do definiowania i zarządzania strukturą i formatem wiadomości EDI, które odpowiadają różnym typom dokumentów, takim jak faktury lub zamówienia. Ustawienia umożliwiają dostosowanie wiadomości EDI do standardów i wymagań specyficznych dla różnych partnerów handlowych i branż.
+Formaty są pogrupowane według krajów. Każdy kraj pokazuje swoją flagę, nazwę i liczbę zawartych formatów.
 
-#### Najważniejsze funkcje i opcje
+<figure><img src="../../../../../.gitbook/assets/edoc-format-list-pl.png" alt="Administracja E-Doc z formatami pogrupowanymi według krajów, każdy kraj z flagą, nazwą i liczbą formatów"><figcaption><p>Formaty są pogrupowane według krajów i początkowo zwinięte.</p></figcaption></figure>
 
-1. **EDI Configuration Elements**:
-   * **Deskryptor struktury**: Definiuje podstawową strukturę dokumentu EDI, w tym kolejność segmentów, pola obowiązkowe i kwalifikatory niezbędne, aby dokument EDI był ważny.
-   * **Transformacja**: Określa transformacje zastosowane do konwersji danych dokumentu na wiadomość w formacie EDI. Zwykle obejmuje to określenie odwzorowań pól dokumentu na segmenty i elementy EDI.
-   * **Podgląd**: Umożliwia administratorom sprawdzenie, jak wiadomość EDI będzie wyglądać po transformacji, pomagając zapewnić dokładność przed transmisją.
-   * **Ścieżki wyodrębniania**: Pokazuje ścieżki używane do wyodrębniania wartości z dokumentu, które są następnie wykorzystywane do wypełnienia komunikatu EDI.
-2. **XSLT Editor**:
-   * Używane do edycji i sprawdzania poprawności XSLT (eXtensible Stylesheet Language Transformations) używanego w procesie transformacji. XSLT to potężny język przeznaczony do przekształcania dokumentów XML na inne dokumenty XML lub inne formaty, takie jak HTML, tekst, a nawet inne struktury XML.
+Wybierz kraj, aby otworzyć jego formaty. W ramach kraju najnowsza wersja znajduje się na początku. Formaty łączone, takie jak Factur-X / ZUGFeRD, znajdują się pod Niemcami. Pole wyszukiwania przeszukuje jednocześnie nazwy formatów i krajów.
 
-<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-pl.png" alt="Aktywny atrybut STRUCTUREDESCRIPTOR: deskryptor struktury JSON w edytorze tylko do odczytu."><figcaption><p>Aktywny atrybut STRUCTUREDESCRIPTOR: deskryptor struktury JSON w edytorze tylko do odczytu.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/edoc-country-germany-pl.png" alt="Niemcy otwarte w administracji E-Doc, z niemieckimi formatami i ich liczbą kroków"><figcaption><p>Otwórz kraj, aby zobaczyć jego formaty.</p></figcaption></figure>
 
-## Faktycznie używane reguły i aktywacja
+## Formaty i ich kroki
 
-Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](credit-note-recognized-as-invoice.md). Opisuje on faktycznie używane źródło niestandardowe lub domyślne, kody typów, Extraction Paths i bezpieczną aktywację.
+Każdy format pokazuje swoje kroki jako trzy karty połączone strzałkami, w kolejności, w jakiej DocBits je wykonuje:
 
-## Przewodniki krajowe
+| Krok | Co robi |
+| --- | --- |
+| **Transformacja** | Mapuje przychodzący XML na XML DocBits. |
+| **Ścieżki ekstrakcji** | Określa, jakie wartości DocBits pobiera z przekształconego XML. |
+| **Podgląd** | Określa układ czytelnego pliku PDF, który generuje DocBits. |
 
-Przewodniki krajowe zawierają dokładne oznaczenia formatów, składnię, ograniczenia wersji i sprawdzony stan konfiguracji. [Formaty eDocs, wersje i przewodniki krajowe](supported-electronic-documents/README.md).
+Pozostałe atrybuty formatu są wymienione pod kartami.
 
+<figure><img src="../../../../../.gitbook/assets/edoc-format-pipeline-pl.png" alt="Rozwinięty format w administracji E-Doc z kartami Transformacja, Ścieżki ekstrakcji i Podgląd połączonymi strzałkami"><figcaption><p>Trzy kroki formatu: Transformacja, Ścieżki ekstrakcji i Podgląd.</p></figcaption></figure>
 
-Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
+Wybierz kartę, aby otworzyć ten krok.
 
-Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.
+## Edytowanie kroku
+
+Strona szczegółów ma tę samą strukturę dla wszystkich trzech kroków:
+
+* Nagłówek pokazuje format i rozwijaną listę z jego wersjami, w tym status każdej wersji. Z rozwijanej listy możesz aktywować, edytować lub usunąć wersję.
+* **Kreator**, **Kod** i **Przepływ** przełączają między edytorem wizualnym, podstawowym arkuszem stylów lub plikiem JSON oraz wynikiem potoku.
+* **Dokument przykładowy** oferuje najnowsze dokumenty tego formatu; możesz też wkleić identyfikator lub adres URL dokumentu.
+* **Uruchom wszystkie kroki** wykonuje transformację, ekstrakcję i podgląd dla dokumentu przykładowego za jednym razem.
+* **Ctrl + S** zapisuje wersję roboczą.
+
+Edycja aktywnej lub już używanej wersji jej nie zmienia: DocBits tworzy kopię roboczą i ją otwiera. Nieużywana wersja robocza jest edytowana bezpośrednio. Krok napisany ręcznie pozostaje w **Kod** do czasu, gdy kreator będzie mógł przejąć go bez zmian.
+
+<figure><img src="../../../../../.gitbook/assets/edoc-transformation-detail-pl.png" alt="Strona szczegółów transformacji z rozwijaną listą wersji, kartami Kreator, Kod i Przepływ, selektorem dokumentu przykładowego i arkuszem stylów w edytorze kodu"><figcaption><p>Strona szczegółów: rozwijana lista wersji w nagłówku, karty Kreator, Kod i Przepływ, dokument przykładowy i sam krok.</p></figcaption></figure>
+
+### Transformacja
+
+**Kreator** pokazuje źródłowy XML po lewej, mapowanie na środku i wynikowy XML po prawej. Wybierz element w drzewie źródłowym i przeciągnij go na pole albo dodaj stałą wartość tekstową.
+
+Pole może składać się z kilku części, a każda część może mieć warunek: **istnieje**, **brak**, **równe**, **nierówne** lub dowolne wyrażenie XPath, połączone za pomocą **wszystkie** lub **dowolne**. Trzy panele można zmieniać rozmiar, a obszar wyników ma listę **Pola** i widok **XML**.
+
+### Ścieżki ekstrakcji
+
+Kreator ścieżek ekstrakcji pokazuje XML DocBits po lewej, pola na środku i ścieżkę używaną przez każde pole po prawej. Wybierz pole i ustaw jego ścieżkę; istniejące wpisy, w tym starsze wpisy płaskie, nadal działają.
+
+<figure><img src="../../../../../.gitbook/assets/edoc-extraction-paths-builder-pl.png" alt="Kreator ścieżek ekstrakcji z drzewem XML DocBits po lewej, listą pól na środku i XPath każdego pola po prawej"><figcaption><p>Kreator ścieżek ekstrakcji: XML DocBits, pola i ich ścieżki.</p></figcaption></figure>
+
+### Podgląd
+
+Kreator podglądu układa PDF za pomocą bloków przeciąganych myszą i pokazuje obok wynik. Rozmiar strony, marginesy, rozmiar czcionki, kolory i odstępy bloków ustawia się dla całego dokumentu i obowiązują one każdy blok.
+
+### Przepływ
+
+**Przepływ** pokazuje cały potok dla wybranego dokumentu przykładowego: co wyprodukowała transformacja, jakie wartości znalazły ścieżki ekstrakcji i jak podgląd je prezentuje. Użyj tego, aby sprawdzić zmianę od początku do końca bez opuszczania strony.
+
+## Powiązane strony
+
+* [Formaty eDocs, wersje i przewodniki krajowe](supported-electronic-documents/README.md)
+
+Zrzuty ekranu na tej stronie pokazują interfejs w języku polskim.

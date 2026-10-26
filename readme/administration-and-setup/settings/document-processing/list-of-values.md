@@ -1,5 +1,13 @@
 # Listas de valores
 
+## Vídeo tutorial: Dados mestres e listas de valores
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/pt.mp4" %}
+Fontes de dados mestres, listas de valores e configurações de dados mestre no DocBits
+{% endembed %}
+
+O vídeo mostra as fontes de dados mestres, as listas de valores e as configurações de dados mestre de um tipo de documento.
+
 As listas de valores contêm opções predefinidas para os campos dos documentos. Um campo pode utilizar uma lista para apresentar opções durante a validação. Os rótulos podem ser traduzidos; o valor técnico é igual em todos os idiomas.
 
 ## Abrir as listas

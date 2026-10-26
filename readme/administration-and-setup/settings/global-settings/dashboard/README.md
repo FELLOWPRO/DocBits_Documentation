@@ -1,67 +1,21 @@
-# Dashboard
+# Dashboard settings
 
-## Overview
+Administrators use **Settings → Dashboard** to choose how the document dashboard refreshes, which actions users can perform, and which document statuses appear in its filters.
 
-The Dashboard settings are designed to help administrators control the data presentation and interaction within the DocBits dashboard. These settings determine what information is immediately available upon logging in, ensuring that users have quick access to the most relevant data for their tasks.
+## General and export history
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt="Dashboard Settings"><figcaption><p>Dashboard Settings Page</p></figcaption></figure>
+Under **Reset filters**, choose whether the dashboard clears its current filters after a document is uploaded, restarted, or exported. **Auto refresh dashboard on document updates** controls whether the list refreshes when documents change. Turn on **Export Dashboard Data** to make the dashboard's data export available.
 
-## Accessing the Dashboard Settings
+**Export History** lists export requests and their email address, status, request and completion times, format, and filters. An empty table means this organization has no export record to show.
 
-To access the dashboard settings, navigate to:\
-**Settings → Global Settings → Dashboard**
+<figure><img src="../../../../.gitbook/assets/dashboard-settings-general-en-2026.png" alt="English Dashboard settings showing Reset filters, Auto refresh dashboard on document updates, Export Dashboard Data, and an empty Export History table"><figcaption><p>General dashboard behavior and export history in the synthetic Sandbox organization.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt=""><figcaption></figcaption></figure>
+## Actions and status filters
 
-## **General**
+Under **Action**, choose who can **Assign to** and **Restart** documents. **Return to Validation (Exported Docs)** is a separate switch. Choose these permissions to match the employees who handle documents in your organization.
 
-* **Reset filters**: Allows for the configuration of when dashboard filters should reset, such as after document upload, document restart, or document export. This helps in maintaining a clean slate for data viewing according to specific workflow stages.
-* **Dashboard data**:
-  * **Auto load dashboard upload**: Controls whether the dashboard should automatically load data upon user access, which can help in reducing load times and improving user experience by only loading data when needed.
-  *   **Export Dashboard Data**: This feature adds a new **Export** button to the dashboard toolbar, allowing you to export the current dashboard view as a **.csv** or **.xlsx** file.
+Under **Filters**, **Status filter style** offers **All**, **Static**, and **Custom**. Choose **Custom** to select the document statuses you want to display, then select **Apply**. The custom status selector is shown only after Custom is chosen.
 
-      <figure><img src="../../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>
+Under **Advance Shipment Dashboard**, **Delivered Orders Visibility** sets how many days delivered orders remain visible.
 
-## **Export History**
-
-In the **Export History**, you will see a table listing all past exports along with key information about each request.
-
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_4.png" alt=""><figcaption></figcaption></figure>
-
-The following details are included:
-
-* **Email**: The email address from which the export was requested.
-* **Status**: The current status of the export (Pending, Completed).
-* **Requested At**: The date and time when the export was initiated.
-* **Completed At**: The date and time when the export was completed.
-* **Format**: The file format used for the export (CSV, XLSX).
-* **Filters Used**: Any filters that were applied to the dashboard at the time of export.
-
-<mark style="color:red;">**Note**</mark>: To export tables the option Export Dashboard data in the [General](./#general) Section must be active
-
-## **Action**
-
-* **Assign to**: This feature allows users to define permissions for document assignment
-  * **Only for Admin**: Only admin-users can assign documents, regardless of permissions granted to non-admin users.
-  * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can assign documents.
-* **Restart**: This feature allows users to define permissions for restarting documents
-  * **Only for Admin**: Only users with Admin privileges can restart documents, regardless of permissions granted to non-admin users.
-  * **Only Admin and Assignee**: Only users with Admin privileges and the assigned user can restart the document.
-  * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can restart documents.
-
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
-
-## **Filters**
-
-* **Status filter style**: Determines the presentation style of status filters, which can be set to default or customized according to the operational focus of the users.
-* **Custom status filter**: Enables the creation and application of custom filters that can target specific document statuses like "New", "Validating", or "Exporting". This allows users to quickly access documents in specific stages of processing.
-
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_5.png" alt=""><figcaption></figcaption></figure>
-
-## Advance Shipment Dashboard
-
-* **Delivered Orders Visibility**: This feature allows the user to specify the duration for which delivered orders will be visible.
-
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_6.png" alt=""><figcaption></figcaption></figure>
-
-These dashboard settings are crucial for ensuring that the DocBits platform is as responsive and useful as possible, providing users with a powerful tool to monitor and manage document processing activities directly from the dashboard.
+<figure><img src="../../../../.gitbook/assets/dashboard-settings-filters-en-2026.png" alt="English Dashboard settings showing the Assign to and Restart permissions, Return to Validation switch, Status filter style menu, and Delivered Orders Visibility"><figcaption><p>Action permissions, filters, and delivered-order visibility farther down the same settings page.</p></figcaption></figure>

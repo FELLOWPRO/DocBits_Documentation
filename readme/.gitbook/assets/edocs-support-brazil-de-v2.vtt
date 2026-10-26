@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.490
+Für Brasilien gibt es Einträge für NF-e,
+NFC-e, CT-e, NFS-e und SPED NFS-e. NFS-e
+
+formats_02
+00:00:06.490 --> 00:00:12.806
+umfasst die Versionen 1.00 und 2.00 bis
+2.04, SPED die Versionen 1.00.02 und 1.01.
+
+formats_03
+00:00:12.806 --> 00:00:17.659
+Dies sind unterschiedliche
+Dokumentfamilien. Eine konfigurierte
+
+formats_04
+00:00:17.659 --> 00:00:23.283
+NFS-e-Version bestätigt nicht jedes
+kommunale Schema oder jedes nationale
+
+formats_05
+00:00:23.283 --> 00:00:26.133
+Format für Dienstleistungsrechnungen.
+
+workflow_01
+00:00:26.883 --> 00:00:32.189
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:32.189 --> 00:00:38.899
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:38.899 --> 00:00:40.533
+aktiviert ihn nicht.
+
+accept_01
+00:00:41.283 --> 00:00:45.915
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:45.915 --> 00:00:52.045
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:52.045 --> 00:00:55.167
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

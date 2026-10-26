@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Best Practices für effiziente und präzise Beleglayouts.
 

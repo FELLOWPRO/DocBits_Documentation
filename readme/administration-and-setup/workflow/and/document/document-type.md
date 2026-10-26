@@ -1,6 +1,6 @@
-# Document Type
+# Dokumenttyp
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3a6901be7256-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -12,10 +12,10 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein Dokument einem bes
    * **Beschreibung**: Legt fest, ob das Dokument vom angegebenen Typ sein soll oder nicht.
    * **Optionen**:
      * **Is**: Das Dokument muss dem angegebenen Typ entsprechen, damit die Bedingung erfüllt ist.
-     * **Is Not**: Das Dokument darf nicht dem angegebenen Typ entsprechen, damit die Bedingung erfüllt ist.
+     * **Ist nicht**: Das Dokument darf nicht dem angegebenen Typ entsprechen, damit die Bedingung erfüllt ist.
 2. **Typ**
    * **Beschreibung**: Gibt den Dokumenttyp an, mit dem verglichen wird.
-   * **Detail**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
+   * **Detailliert**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
 
 ## Funktionalität:
 
@@ -31,3 +31,15 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob ein Dokument einem bes
 ## Fazit:
 
 Die Workflow-Karte "Document Type Comparison" ist unverzichtbar, um sicherzustellen, dass Workflows auf Basis des Typs des verarbeiteten Dokuments ablaufen. Durch den Vergleich des Dokumenttyps hilft sie Organisationen, die Weiterleitung und Verarbeitung von Dokumenten zu automatisieren, und stellt sicher, dass Dokumente entsprechend ihrem Typ angemessen behandelt werden.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Führen Sie eine rechnungsspezifische Prüfung durch.
+
+**Konfiguration:** Wählen Sie den Dokumenttyp `Invoice` und den Gleichheitsoperator.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine Rechnung wird angenommen. Eine Gutschrift erfüllt diese Bedingung nicht.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

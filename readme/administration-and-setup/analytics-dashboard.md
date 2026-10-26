@@ -1,8 +1,8 @@
-# Analytics Dashboard
+# Analyse-Dashboard
 
 ## Übersicht
 
-Das **Analytics Dashboard** bietet vollständige Transparenz über die Leistung Ihrer Dokumentenverarbeitung. Es verfolgt, wie lange Dokumente in jeder Phase ihres Wegs verbleiben – vom Import bis zum Export – und hilft Ihnen, Engpässe zu identifizieren, die Leistung über Organisationen, Dokumenttypen und Lieferanten hinweg zu vergleichen und Ihre Ergebnisse mit dem **DocBits Global Average** zu vergleichen.
+Das **Analyse-Dashboard** bietet vollständige Transparenz über die Leistung Ihrer Dokumentenverarbeitung. Es verfolgt, wie lange Dokumente in jeder Phase ihres Wegs verbleiben – vom Import bis zum Export – und hilft Ihnen, Engpässe zu identifizieren, die Leistung über Organisationen, Dokumenttypen und Lieferanten hinweg zu vergleichen und Ihre Ergebnisse mit dem **globalen DocBits-Durchschnitt** zu vergleichen.
 
 Jedes Dokument durchläuft verschiedene Phasen:
 
@@ -19,10 +19,10 @@ Das Dashboard hilft Ihnen, zwischen folgenden zu unterscheiden:
 
 ## So aktivieren Sie es
 
-Das Analytics Dashboard wird über eine Moduleinstellung gesteuert. Nach der Aktivierung erscheint ein Eintrag **Analytics Dashboard** in der linken Seitenleiste.
+Das Analytics Dashboard wird über eine Moduleinstellung gesteuert. Nach der Aktivierung erscheint ein Eintrag **Analyse-Dashboard** in der linken Seitenleiste.
 
 1. Navigieren Sie zu **Einstellungen → Dokumentenverarbeitung → Modul → Dashboard und Analytics**.
-2. Aktivieren Sie die Option **Analytics Dashboard**.
+2. Aktivieren Sie die Option **Analyse-Dashboard**.
 
 <mark style="color:red;">**Hinweis**</mark>: Das Analytics Dashboard erfordert ein **AI Dashboard Abonnement**.
 
@@ -38,27 +38,27 @@ Wählen Sie die passende Perspektive für Ihre Analyse. Jeder Flow-Typ bietet Ih
 | **Verarbeitung** | Technische Modul-Leistungsanalyse | *"Welche Verarbeitungsschritte sind Engpässe?"* |
 | **Benutzerinteraktion** | Menschliche Berührungspunkte und Wartezeiten | *"Wie lange warten Dokumente auf Benutzer?"* |
 
-Verwenden Sie den Schalter **Flow-Typ** oben im Dashboard, um zwischen den Perspektiven zu wechseln.
+Verwenden Sie die Registerkarten **Verarbeitung**, **Benutzerinteraktion** und **Status** oben im Dashboard, um zwischen den Perspektiven zu wechseln.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-de.png" alt="Auswahl der Analyseansichten Module, Status und Benutzer."><figcaption><p>Auswahl der Analyseansichten Module, Status und Benutzer.</p></figcaption></figure>
 
 ### Status-Flow
 
 Verfolgt den Dokumentenweg von **Neu** bis **Exportiert** – nützlich für eine End-to-End-Lebenszyklusanalyse.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-de.png" alt="Statusansicht der Analyse."><figcaption><p>Statusansicht der Analyse.</p></figcaption></figure>
 
 ### Verarbeitungs-Flow
 
 Analysiert die Leistung über alle **technischen Verarbeitungsmodule** (OCR, Klassifizierung, Extraktion, Validierung) hinweg – nützlich zur Identifizierung systemseitiger Engpässe.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-de.png" alt="Modulansicht mit aggregierten Schritten des Verarbeitungsablaufs."><figcaption><p>Modulansicht mit aggregierten Schritten des Verarbeitungsablaufs.</p></figcaption></figure>
 
 ### Benutzerinteraktions-Flow
 
 Konzentriert sich auf **menschliche Berührungspunkte** – Wartezeit in der Warteschlange, manuelle Validierung, Prüfung und Genehmigung – nützlich zur Identifizierung von Workflow- und Personal-Engpässen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-de.png" alt="Benutzeransicht der Analyse; für die gewählten Filter liegen keine Daten vor."><figcaption><p>Benutzeransicht der Analyse; für die gewählten Filter liegen keine Daten vor.</p></figcaption></figure>
 
 ## Filteroptionen
 
@@ -68,13 +68,13 @@ Das Dashboard unterstützt leistungsstarke mehrdimensionale Filterung. Alle Diag
 
 Lokalisieren Sie sofort jedes Dokument anhand des **Namens** oder der **eindeutigen ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-de.png" alt="Analyse nach dem Begriff Validierung filtern."><figcaption><p>Analyse nach dem Begriff Validierung filtern.</p></figcaption></figure>
 
 ### Flow-Schritte
 
 Wählen Sie bestimmte Schritte aus, um Ihre Analyse zu fokussieren. Das Ein-/Ausschalten von Schritten berechnet auch die Zeitmetriken der anderen Komponenten des Dashboards neu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-de.png" alt="Filter für Ablaufschritte oberhalb der Analyse."><figcaption><p>Filter für Ablaufschritte oberhalb der Analyse.</p></figcaption></figure>
 
 ### Unterorganisation, Dokumenttyp, Lieferant, Gruppe
 
@@ -85,7 +85,7 @@ Vergleichen Sie die Leistung über:
 * **Lieferanten** – um zu identifizieren, welche Lieferanten die längsten Verarbeitungszeiten verursachen
 * **Gruppen** – um die Leistung über zugewiesene Benutzergruppen zu vergleichen (verfügbar für die Flow-Typen **Status** und **Benutzerinteraktion**)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-de.png" alt="Analysefilter für Ablaufschritte, Unterorganisation, Dokumenttyp und Lieferant."><figcaption><p>Analysefilter für Ablaufschritte, Unterorganisation, Dokumenttyp und Lieferant.</p></figcaption></figure>
 
 <mark style="color:red;">**Hinweis**</mark>: Der Filter **Gruppe** gilt nur für Dokumente, die **direkt einer Gruppe zugewiesen** sind. Dokumente, die einem einzelnen Benutzer zugewiesen sind – selbst wenn dieser Benutzer Mitglied einer Gruppe ist – sind **nicht** in den Gruppenfilterergebnissen enthalten.
 
@@ -95,13 +95,13 @@ Standardmäßig aktiviert – nur Dokumente, die den Export abgeschlossen haben,
 
 <mark style="color:red;">**Hinweis**</mark>: Das Deaktivieren dieser Option kann zu ungenauen Durchschnittswerten führen, da auch Dokumente, die noch nicht abgeschlossen sind, in die Berechnungen einbezogen werden.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-de.png" alt="Schalter Nur exportierte Dokumente in der Analyse."><figcaption><p>Schalter Nur exportierte Dokumente in der Analyse.</p></figcaption></figure>
 
 ### Zeitbereich
 
 Analysieren Sie einen beliebigen Zeitraum von **7 Tagen** bis zu einem **vollen Jahr**, oder legen Sie einen **benutzerdefinierten Bereich** mit der Datumsauswahl fest.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-de.png" alt="Benutzerdefinierter Zeitraum in der deutschen Filterleiste."><figcaption><p>Benutzerdefinierter Zeitraum in der deutschen Filterleiste.</p></figcaption></figure>
 
 ## Flow-Schritt-Karten
 
@@ -110,24 +110,24 @@ Jede Karte repräsentiert einen Flow-Schritt basierend auf dem ausgewählten **F
 Jede Karte zeigt:
 
 * **Min, Durchschnitt, Max**-Zeiten für den Schritt
-* Einen Vergleich zwischen **Ihrer durchschnittlichen Zeit** und dem **DocBits Global Average** (wenn der Vergleichsumschalter aktiviert ist)
+* Einen Vergleich zwischen **Ihrer durchschnittlichen Zeit** und dem **globalen DocBits-Durchschnitt** (wenn der Vergleichsumschalter aktiviert ist)
 * Einen Auswahlkreis, um den Schritt aus den aggregierten Zeitberechnungen, die vom Durchschnittszeit-Diagramm, Zeittrend-Diagramm und der Datentabelle verwendet werden, **einzubeziehen oder auszuschließen**
 
 Ein **Alle auswählen**-Schalter im Header ermöglicht es Ihnen, alle Schritte gleichzeitig ein- oder auszuschließen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-de.png" alt="Karte Ablaufschritte mit aggregierten Verarbeitungszeiten."><figcaption><p>Karte Ablaufschritte mit aggregierten Verarbeitungszeiten.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Mit Global Average vergleichen
 
-Der Schalter **Mit Global Average vergleichen** steuert, ob der DocBits Global Average auf den Karten und im Diagramm angezeigt wird. Wenn aktiviert, wird die durchschnittliche Zeit auf jeder Karte farblich codiert:
+Der Schalter **Vergleich mit dem globalen Durchschnitt** steuert, ob der DocBits Global Average auf den Karten und im Diagramm angezeigt wird. Wenn aktiviert, wird die durchschnittliche Zeit auf jeder Karte farblich codiert:
 
 * **Grün** – Ihre durchschnittliche Zeit liegt bei oder unter dem Global Average
 * **Orange** – Ihre durchschnittliche Zeit liegt bis zu **+25 %** über dem Global Average
 * **Rot** – Ihre durchschnittliche Zeit liegt **+25 %** oder mehr über dem Global Average
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-de.png" alt="Vergleich der durchschnittlichen Verarbeitungszeit mit dem globalen Durchschnitt."><figcaption><p>Vergleich der durchschnittlichen Verarbeitungszeit mit dem globalen Durchschnitt.</p></figcaption></figure>
 
 ## Durchschnittszeit-Diagramm
 
@@ -139,7 +139,7 @@ Das Durchschnittszeit-Diagramm visualisiert, wie sich die Verarbeitungszeit auf 
 * **Lieferant** – entdecken Sie, welche Lieferanten die längsten Verarbeitungszeiten haben
 * **Gruppe** – vergleichen Sie über zugewiesene Benutzergruppen (nur Flow-Typen Status und Benutzerinteraktion)
 
-Wenn **Mit Global Average vergleichen** aktiviert ist, zeigt das Diagramm auch den DocBits Global Average als Benchmark an.
+Wenn **Vergleich mit dem globalen Durchschnitt** aktiviert ist, zeigt das Diagramm auch den DocBits Global Average als Benchmark an.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
@@ -179,8 +179,12 @@ Die Datentabelle bietet vollständigen Zugriff auf alle zugrunde liegenden Zeile
 * **Sortieren** Sie durch Klicken auf Spaltenüberschriften und **ordnen Sie Spalten neu** per Drag-and-Drop.
 * **CSV herunterladen** über die Schaltfläche im Karten-Header – nur die aktuell sichtbaren Spalten werden exportiert.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-de.png" alt="Datentabelle der Analyse mit deutschen Spaltenüberschriften; Dokumentwerte sind ausgeblendet."><figcaption><p>Datentabelle der Analyse mit deutschen Spaltenüberschriften; Dokumentwerte sind ausgeblendet.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+Der Tab **Touchless Intelligence** zeigt, wie viele Dokumente ohne menschliches Zutun durch DocBits laufen und warum die anderen stehen bleiben. Siehe [Touchless Intelligence](touchless-intelligence.md).

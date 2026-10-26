@@ -1,115 +1,115 @@
-# LN Configuration
+# LN-Konfiguration
 
-## Prerequisites
+## Voraussetzungen
 
-You have created:
+Sie haben Folgendes erstellt:
 
-* An ION API Endpoint
-* An ION API File
-* A BOD Mapping File
-* An IDM Mapping File
+* einen ION-API-Endpunkt;
+* eine ION-API-Datei;
+* eine BOD-Zuordnungsdatei;
+* eine IDM-Zuordnungsdatei.
 
-## Import Mapping Files
+## Zuordnungsdateien importieren
 
-Before you set up the data flow, you need to import the mapping files into InforOS
+Importieren Sie die Zuordnungsdateien in Infor OS, bevor Sie den Datenfluss einrichten.
 
-In ION Desk → Connect and open Mappings
+Öffnen Sie in **ION Desk → Connect** den Bereich **Mappings**.
 
-![](https://lh7-us.googleusercontent.com/fAUUcBUSxIWqLjYEHH78O2Mfq0P4d4D42OgCNFPdpUQTM5ZHu_BcKz9DmWe0AlHe3--ff7z9mfYTrt7oAkf2uknBwkV2VWayEpiJ_aAIxcJil5LNiep4U6KZr3_tBfs1RRwXoW749q3FUxurXy_pT_k)
+![ION Desk Navigation mit aufgeklappter Gruppe Connect und den Einträgen Data Flows, API Flows, Connection Points, File Templates und Enterprise Locations](https://lh7-us.googleusercontent.com/fAUUcBUSxIWqLjYEHH78O2Mfq0P4d4D42OgCNFPdpUQTM5ZHu_BcKz9DmWe0AlHe3--ff7z9mfYTrt7oAkf2uknBwkV2VWayEpiJ_aAIxcJil5LNiep4U6KZr3_tBfs1RRwXoW749q3FUxurXy_pT_k)
 
-Click on the Import icon
+Klicken Sie auf das Importsymbol.
 
-![](https://lh7-us.googleusercontent.com/d_KYA9LgiiW1A95CH9hwU1AC1u5x25T4ET-4sAqpZkVOexHc4WcbwPXUaKt3O9fR3Btvv-NEGbCWwnnb8SfomnnO22M8YTIqWdvan-SkbG0cu1MWkjwOn_Vd_b6rJaQng8A92JTa5YKBms4RuIvwmb0)
+![Symbolleiste der Seite Mappings in ION Desk mit dem grünen runden Import-Symbol](https://lh7-us.googleusercontent.com/d_KYA9LgiiW1A95CH9hwU1AC1u5x25T4ET-4sAqpZkVOexHc4WcbwPXUaKt3O9fR3Btvv-NEGbCWwnnb8SfomnnO22M8YTIqWdvan-SkbG0cu1MWkjwOn_Vd_b6rJaQng8A92JTa5YKBms4RuIvwmb0)
 
-* From here you need to select the various mapping files you will need which include: SyncCaptDoc\_SyncSuppInv, SyncSupplierInvoice\_LoadSupplierInvoice, and LoadSupplierInvoice\_ProcessSupplierInvoice.
-* Once you have imported all the mappings files, make sure to approve each of them by clicking the tick icon within each of their squares on the Mapping dashboard.
+* Wählen Sie die benötigten Zuordnungsdateien aus: SyncCaptDoc\_SyncSuppInv, SyncSupplierInvoice\_LoadSupplierInvoice und LoadSupplierInvoice\_ProcessSupplierInvoice.
+* Genehmigen Sie nach dem Import jede Zuordnung über das Häkchensymbol in ihrer Kachel im Zuordnungs-Dashboard.
 
-## DocBits to LN
+## Von DocBits nach LN
 
-The next step is to setup the Data Flow in ION Desk, navigate to the ION Desk application and select Data Flow → + ADD → Document Flow like below
+Richten Sie anschließend den Datenfluss in ION Desk ein. Öffnen Sie die Anwendung und wählen Sie **Data Flow → + ADD → Document Flow**, wie unten gezeigt.
 
-![](https://lh7-us.googleusercontent.com/rjPVR1EFKw_gZI1Ztg9Aqt4pFw10rii7WU-yddLIz22a_Fn3s1HSYDRmQVvgZtX_85nb2ipNqJ1JU49NIE8a57TIur7jqoMuKFKlb-RrfnRFxiA1TefzofKPJ32fzIdDWI8PmnD-aDw4qhQj4e0dd9I)
+![Seite Data Flows in ION Desk mit der Navigation links, dem Flow DF_SLTStAPI in der Liste und den Menüeinträgen Document Flow und Data Lake Flow](https://lh7-us.googleusercontent.com/rjPVR1EFKw_gZI1Ztg9Aqt4pFw10rii7WU-yddLIz22a_Fn3s1HSYDRmQVvgZtX_85nb2ipNqJ1JU49NIE8a57TIur7jqoMuKFKlb-RrfnRFxiA1TefzofKPJ32fzIdDWI8PmnD-aDw4qhQj4e0dd9I)
 
-You will then see this page, this is where you will build the flow of information from DocBits to M3
+Auf der folgenden Seite erstellen Sie den Informationsfluss von DocBits nach LN.
 
-![](https://lh7-us.googleusercontent.com/9C7BaoiHWRaav0ytCbYkxEYG12f-64qyagsl8H2eq5TXUySRE1s3x_-lVRbK6tpTxvbRYKvwyWO_6ASSQ6Rn62LQR9ZvMRpRXq9UymZLS0I8IZ-hOzX58iYtTruqSo5WdgIXwEPjMlb1dnuFuhN8IS8)
+![Neuer Document Flow mit leerem Eigenschaftenbereich und den Meldungen Document flow name must be specified und The document flow has no activities](https://lh7-us.googleusercontent.com/9C7BaoiHWRaav0ytCbYkxEYG12f-64qyagsl8H2eq5TXUySRE1s3x_-lVRbK6tpTxvbRYKvwyWO_6ASSQ6Rn62LQR9ZvMRpRXq9UymZLS0I8IZ-hOzX58iYtTruqSo5WdgIXwEPjMlb1dnuFuhN8IS8)
 
-An LN data flow will look similar to what is shown below (there are multiple paths due to each individual path being meant for a specific document type, for this explanation we will focus on the invoice data flow).
+Ein LN-Datenfluss sieht etwa wie unten gezeigt aus. Die verschiedenen Pfade dienen jeweils einem bestimmten Dokumenttyp. Diese Anleitung konzentriert sich auf den Rechnungsdatenfluss.
 
-![](https://lh7-us.googleusercontent.com/gltDE9JxeGb7Ufg9Ldl-JIJ95zfWHnQtyOqys2QKCiTlIn_PdAyBLFYmTVCh9c-TxF5xNQR3G8Hmn4EXK94t6MJ-1WzlZg1Zl7HNoxfR56zC8dT1skmxLTj7rtnSl0JTQJD_3myQY4Qcd9motySYh9U)
+![Datenfluss-Arbeitsfläche mit mehreren Pfaden für verschiedene Dokumenttypen, jeder Pfad aus einem DocBits-Verbindungspunkt, einem Mapping und einem LN-Verbindungspunkt](https://lh7-us.googleusercontent.com/gltDE9JxeGb7Ufg9Ldl-JIJ95zfWHnQtyOqys2QKCiTlIn_PdAyBLFYmTVCh9c-TxF5xNQR3G8Hmn4EXK94t6MJ-1WzlZg1Zl7HNoxfR56zC8dT1skmxLTj7rtnSl0JTQJD_3myQY4Qcd9motySYh9U)
 
-All parts of the chain are dragged and dropped from the top section
+Ziehen Sie die Bestandteile der Verarbeitungskette aus dem oberen Bereich an die gewünschte Position.
 
-In the chain, DocBits and LN are both Applications whereas in between them there are mappings that convert the data into a form that can be understood by the next section of the dataflow and “map” the information so that it goes to where it is needed or meant too.
+In der Kette sind DocBits und LN als Anwendungen eingebunden. Die dazwischenliegenden Zuordnungen wandeln die Daten in das Format um, das der jeweils nächste Abschnitt erwartet, und ordnen die Informationen ihren Zielpositionen zu.
 
-![](https://lh7-us.googleusercontent.com/Gwk0C0gsnMSlgEwRx0_1GDMJEu8Z1TAhKo8gxHN8GxFFKGgb257a684Hj0eNSLTIK5v8F7yzJ1hIHrC_3I9RLY0S-u3ZDhmkD6iJbYAvtCAeFPWHBVLOqyCH7FKsl2SKAfXL-AdtNowqdol9PzS4qJM)
+![Ausschnitt der Datenfluss-Arbeitsfläche mit den Knoten DocBits-DEV, MappingDeliver, Load Supplier, PurchaseOrder und den LN-Verbindungspunkten LN-200-41 und LN-200-4](https://lh7-us.googleusercontent.com/Gwk0C0gsnMSlgEwRx0_1GDMJEu8Z1TAhKo8gxHN8GxFFKGgb257a684Hj0eNSLTIK5v8F7yzJ1hIHrC_3I9RLY0S-u3ZDhmkD6iJbYAvtCAeFPWHBVLOqyCH7FKsl2SKAfXL-AdtNowqdol9PzS4qJM)
 
-### DocBits Application
+### DocBits-Anwendung
 
-Give it the appropriate name such as “DocBits” then select the plus sign and search for the connection point you created earlier such as DocBits\_Export or similar and click on it.
+Vergeben Sie einen passenden Namen, beispielsweise „DocBits“. Klicken Sie auf das Pluszeichen, suchen Sie den zuvor erstellten Verbindungspunkt, etwa DocBits\_Export, und wählen Sie ihn aus.
 
-To create this connection point, go to ION Desk → Connect → Connection Points
+Um diesen Verbindungspunkt zu erstellen, öffnen Sie **ION Desk → Connect → Connection Points**.
 
-![](https://lh7-us.googleusercontent.com/1SZJN-GW7BP-fvUHZ-tCJ4xNXx0ABRP3J9eMzF3BTKIY54J-pK4bYy4fOVHCaI6A2sdrYekWJsY9ky8dXz36l_FwwzzEnO1IjxNkMqlV-Y4UvyFIei73Z9C19m9bzTr3gCL3IpTUqiV280id1vJE530)
+![ION Desk Navigation mit aufgeklappter Gruppe Connect und den Einträgen Data Flows, API Flows, Mappings und Connection Points](https://lh7-us.googleusercontent.com/1SZJN-GW7BP-fvUHZ-tCJ4xNXx0ABRP3J9eMzF3BTKIY54J-pK4bYy4fOVHCaI6A2sdrYekWJsY9ky8dXz36l_FwwzzEnO1IjxNkMqlV-Y4UvyFIei73Z9C19m9bzTr3gCL3IpTUqiV280id1vJE530)
 
-Click “+ Add”
+Klicken Sie auf **+ Add**.
 
-![](https://lh7-us.googleusercontent.com/ZJ1212Gwdk-b2-LVbEd2ZDzc_AqaEEYtIN0fC6d6P4EaWdTKj6nOzGDbA5sxdBtMcTrWopfDmd7GTahbwkDpj3uvmMYgvEUQa6qmi58NFGvtcgAtIwYr952Yu7Lcj802iHtQ_vj_-XPdegP1P0ySdos)
+![Seite Connection Points in ION Desk mit geöffneter Gruppe Connect in der Navigation](https://lh7-us.googleusercontent.com/ZJ1212Gwdk-b2-LVbEd2ZDzc_AqaEEYtIN0fC6d6P4EaWdTKj6nOzGDbA5sxdBtMcTrWopfDmd7GTahbwkDpj3uvmMYgvEUQa6qmi58NFGvtcgAtIwYr952Yu7Lcj802iHtQ_vj_-XPdegP1P0ySdos)
 
-Select “IMS via API Gateway” and fill in the following information
+Wählen Sie **IMS via API Gateway** und tragen Sie die folgenden Informationen ein.
 
-![](https://lh7-us.googleusercontent.com/H4YCH-324EzrxKkrbRs0SFTsHch5eK74gXleSpfI03uJ5frIEFjwofu7p6bsYO1lS7sVqamWDZMXrGfEgewdROyhTYLkn7MuCgwb7oQxOLJoH3NsnMsqTOgT3WxlihUkJdNy-WTai5kPz8ZjdtTDQ9I)
+![Dialog Infor Application Connection Point für IMS via API Gateway mit dem Namen DocBits-Sandbox-Export, der ION API Client Id und der Logical ID infor.ims.docbits-sandbox-export](https://lh7-us.googleusercontent.com/H4YCH-324EzrxKkrbRs0SFTsHch5eK74gXleSpfI03uJ5frIEFjwofu7p6bsYO1lS7sVqamWDZMXrGfEgewdROyhTYLkn7MuCgwb7oQxOLJoH3NsnMsqTOgT3WxlihUkJdNy-WTai5kPz8ZjdtTDQ9I)
 
-The ION API Client ID is in the ION API File you created at How to Create an ION API File under the “ci” value.
+Die ION-API-Client-ID finden Sie in der zuvor erstellten ION-API-Datei unter dem Schlüssel „ci“. Die zugehörige Anleitung beschreibt das Erstellen einer ION-API-Datei.
 
-Switch to the document tab, and add the Sync.CaptureDocument BOD to the DocBits connection point like below.
+Öffnen Sie die Registerkarte für Dokumente und fügen Sie dem DocBits-Verbindungspunkt das BOD **Sync.CaptureDocument** hinzu, wie unten gezeigt.
 
-![](https://lh7-us.googleusercontent.com/Wy2BIr1z_RqU-yMkXo6vOu64QC6c66OdHOxdI6PPy0yJv1jIAJF0OYITULxTFoPUK93SK3jvNm67tcxqjiEBIk0Wbu1Q1s-mSIUuPjJorcYyXY7vjsHOnoutn6tE8r6yE_333uCWuKvKiVoo99FrXVg)
+![Verbindungspunkt DocBits-Sandbox-Export mit geöffnetem Tab Documents und dem zugeordneten Dokument Sync.CaptureDocument](https://lh7-us.googleusercontent.com/Wy2BIr1z_RqU-yMkXo6vOu64QC6c66OdHOxdI6PPy0yJv1jIAJF0OYITULxTFoPUK93SK3jvNm67tcxqjiEBIk0Wbu1Q1s-mSIUuPjJorcYyXY7vjsHOnoutn6tE8r6yE_333uCWuKvKiVoo99FrXVg)
 
-Then save the connection point by pressing the disk icon in the upper-left corner.
+Speichern Sie den Verbindungspunkt über das Diskettensymbol oben links.
 
-Navigate back to the Dataflow section of ION Desk to access your dataflow. Your DocBits application should look similar to what is shown below.
+Kehren Sie zum Bereich **Dataflow** in ION Desk zurück und öffnen Sie Ihren Datenfluss. Die DocBits-Anwendung sollte etwa wie unten gezeigt aussehen.
 
-![](https://lh7-us.googleusercontent.com/cDWHmRP85YNLu7JRzq4CSezncTgP2ZOkEfZSqXK9JEq4bSwsddU7VKg8leoxaJ5zeFAbDzXrNkztmeWDIXbHwjxfUa_IpATDDwykv-OlZ2zaOVGHVqRZZpVLJ5Cq5Qla1pZk5sBV39I98lUfGao65Mw)
+![Bereich Application Activity Properties der DocBits-Anwendung mit dem Namen DocBits-Sandbox-Export und der Beschreibung DocBits-Sandbox-Export](https://lh7-us.googleusercontent.com/cDWHmRP85YNLu7JRzq4CSezncTgP2ZOkEfZSqXK9JEq4bSwsddU7VKg8leoxaJ5zeFAbDzXrNkztmeWDIXbHwjxfUa_IpATDDwykv-OlZ2zaOVGHVqRZZpVLJ5Cq5Qla1pZk5sBV39I98lUfGao65Mw)
 
-### Mapping 1
+### Zuordnung 1
 
-The first mapping node should look as follows
+Der erste Zuordnungsknoten sollte so aussehen:
 
-![](https://lh7-us.googleusercontent.com/9tlIun_ipbTp15aMX3xN2DGlDjAZ1oI4AFWXwbP7yoFLeQNqcw_L3Z1djaqcbxP1tsp1R-nq6ZJqEzsoKe1-SmLrJNmYrJ4HJircLEwMxfmif-p2T8nqbuuxHLLLzQJ6E6tNG6MzghOpoEAt41ea2GY)
+![Bereich Mapping Properties des ersten Mapping-Knotens mit den Feldern Name und Description sowie der Auswahlliste Mapping](https://lh7-us.googleusercontent.com/9tlIun_ipbTp15aMX3xN2DGlDjAZ1oI4AFWXwbP7yoFLeQNqcw_L3Z1djaqcbxP1tsp1R-nq6ZJqEzsoKe1-SmLrJNmYrJ4HJircLEwMxfmif-p2T8nqbuuxHLLLzQJ6E6tNG6MzghOpoEAt41ea2GY)
 
-### Mapping 2
+### Zuordnung 2
 
-The second mapping node should look as follows
+Der zweite Zuordnungsknoten sollte so aussehen:
 
-![](https://lh7-us.googleusercontent.com/ZDYzTAfm3MHnEIKHa2tDl7NPbjzxv8jH-KL8O0pRhi1JYtqiiVz0-GQv5N4roVWi1STopQkFV9YHbEXdyzwYxK2Oq6mUv6tuqKDp-2bc-aPVgEXdEBd2hmW-6j6JRhEympyw9yUTrCDQRKlDQ41C5Ao)
+![Bereich Mapping Properties des zweiten Mapping-Knotens mit den Feldern Name und Description sowie der Auswahlliste Mapping](https://lh7-us.googleusercontent.com/ZDYzTAfm3MHnEIKHa2tDl7NPbjzxv8jH-KL8O0pRhi1JYtqiiVz0-GQv5N4roVWi1STopQkFV9YHbEXdyzwYxK2Oq6mUv6tuqKDp-2bc-aPVgEXdEBd2hmW-6j6JRhEympyw9yUTrCDQRKlDQ41C5Ao)
 
-### LN Application
+### LN-Anwendung
 
-There should already be an LN or similarly named connection point (for the appropriate LN company) created in INFOR so, just like the DocBits Application you select it by clicking the “+” sign and it should look as follows
+In Infor sollte bereits ein Verbindungspunkt für die entsprechende LN-Gesellschaft vorhanden sein, beispielsweise mit dem Namen „LN“. Wählen Sie ihn wie bei der DocBits-Anwendung über das Pluszeichen aus. Das Ergebnis sollte so aussehen:
 
-![](https://lh7-us.googleusercontent.com/mRXL11f68EtQHHjl40QmCisy7S1aUezqCzufPTZWgYHhWLK2Yw0UY82O_dgbAhBChFHHYUMBDSWWb-PEKyohJWOp5gvufat431ezpA2cIHMtry7XEDxhnNzPB68uSMkFAXhX1x4GyiH6Cxp-USxDnHE)
+![Bereich Application Activity Properties der LN-Anwendung mit dem Namen LN-200 und der Beschreibung In01_0200 LN Farm](https://lh7-us.googleusercontent.com/mRXL11f68EtQHHjl40QmCisy7S1aUezqCzufPTZWgYHhWLK2Yw0UY82O_dgbAhBChFHHYUMBDSWWb-PEKyohJWOp5gvufat431ezpA2cIHMtry7XEDxhnNzPB68uSMkFAXhX1x4GyiH6Cxp-USxDnHE)
 
 ### BODs
 
-![](https://lh7-us.googleusercontent.com/de8OyDF4yMoHaXsxM9weJdm8mKDzL97kFRr00fhoHAxxKXb2BgMcMM2shyxi1S7cBwzSAUy2u8bZV4sJOVqgXt8Mcge6L2CXxbfVGiqXUwKwF6A5mgt4zfGPYltaZuLazOJYu2u7arszJE6IonMOskk)
+![Datenfluss-Arbeitsfläche mit den Knoten DocBits-DEV, MappingDeliver, Load Supplier, PurchaseOrder, SalesOrder und AdvancedShip über dem Eintrag End](https://lh7-us.googleusercontent.com/de8OyDF4yMoHaXsxM9weJdm8mKDzL97kFRr00fhoHAxxKXb2BgMcMM2shyxi1S7cBwzSAUy2u8bZV4sJOVqgXt8Mcge6L2CXxbfVGiqXUwKwF6A5mgt4zfGPYltaZuLazOJYu2u7arszJE6IonMOskk)
 
-The following configurations should look as follows:
+Die folgenden Konfigurationen sollten so aussehen:
 
-#### First
+#### Erste Konfiguration
 
-![](https://lh7-us.googleusercontent.com/rj_qpiML1a2dNxj6ItiRxescymVtD6LHIAum3UPrPERAavhkt81lpjcyAFmn_lmxtqUDVTm_kiZ9f02Lqh9w-SAWmcxvGuxWITVvhv9qg04HaJXGH7VfRiO4Iv1LtDxfKYFyUWPLzCE4L3yP4hcdGnY)
+![Auswahlliste Documents des ersten Knotens mit dem Eintrag Sync.CaptureDocument](https://lh7-us.googleusercontent.com/rj_qpiML1a2dNxj6ItiRxescymVtD6LHIAum3UPrPERAavhkt81lpjcyAFmn_lmxtqUDVTm_kiZ9f02Lqh9w-SAWmcxvGuxWITVvhv9qg04HaJXGH7VfRiO4Iv1LtDxfKYFyUWPLzCE4L3yP4hcdGnY)
 
-#### Second
+#### Zweite Konfiguration
 
-![](https://lh7-us.googleusercontent.com/TCxMS-RhoJcUyBko36Lfpa8D71qk-ZSN-lME7Oq8cfPACVV0Ci7Lnv6y_MF_53U763ZA74xq6icEfgDUwYYJ9UJK0kCiLHQZpJYmc_ywjB32UGrpDnh7AjoHpI5AtWd3yZR3RsMaki1AYenpdG4X9X8)
+![Auswahlliste Documents des zweiten Knotens mit dem Eintrag Load.SupplierInvoice](https://lh7-us.googleusercontent.com/TCxMS-RhoJcUyBko36Lfpa8D71qk-ZSN-lME7Oq8cfPACVV0Ci7Lnv6y_MF_53U763ZA74xq6icEfgDUwYYJ9UJK0kCiLHQZpJYmc_ywjB32UGrpDnh7AjoHpI5AtWd3yZR3RsMaki1AYenpdG4X9X8)
 
-#### Third
+#### Dritte Konfiguration
 
-![](https://lh7-us.googleusercontent.com/VPYJyfpO0RZueW46s2Y8W2H-tQFlMfIdP1Sf8qMB8BfTxefgQ5dhsaAxL36R7cdvmKR26Q_epAj9_i6CzUO6C-PHjStEynBDkjtwId4BSuH6-zJklmsr25XcNH2AY7pSwOQ_rbCCixhWcaJg2kHyyYw)
+![Auswahlliste Documents des dritten Knotens mit dem Eintrag Process.SupplierInvoice](https://lh7-us.googleusercontent.com/VPYJyfpO0RZueW46s2Y8W2H-tQFlMfIdP1Sf8qMB8BfTxefgQ5dhsaAxL36R7cdvmKR26Q_epAj9_i6CzUO6C-PHjStEynBDkjtwId4BSuH6-zJklmsr25XcNH2AY7pSwOQ_rbCCixhWcaJg2kHyyYw)
 
-The last icon should be empty as it is not carrying any document or information.
+Das letzte Symbol sollte leer sein, da es weder ein Dokument noch Informationen überträgt.
 
-Once you have added all necessary nodes to the data flow, press this button to activate the data flow
+Wenn alle erforderlichen Knoten hinzugefügt wurden, aktivieren Sie den Datenfluss über die folgende Schaltfläche:
 
-![](https://lh7-us.googleusercontent.com/WjQeGz_effl_RlkWC4CdJS9Dg_9DpsIz3meKOsa7GbU9RFSrYMw3PpbXFat6cGsA4gvEGS-0D-YFrZj9K2wK3Irap-30mcQ5kr5k4Gy2gm7DLJdYpzJgeBRVInyAYfGmGXu2dCQvmX9ballRbSwyq3o)
+![Symbolleiste des Document Flow mit den Schaltflächen zum Hinzufügen und Entfernen von Verbindungspunkten und der Schaltfläche zum Aktivieren des Datenflusses unter dem Namen DocBits-Export-M3](https://lh7-us.googleusercontent.com/WjQeGz_effl_RlkWC4CdJS9Dg_9DpsIz3meKOsa7GbU9RFSrYMw3PpbXFat6cGsA4gvEGS-0D-YFrZj9K2wK3Irap-30mcQ5kr5k4Gy2gm7DLJdYpzJgeBRVInyAYfGmGXu2dCQvmX9ballRbSwyq3o)

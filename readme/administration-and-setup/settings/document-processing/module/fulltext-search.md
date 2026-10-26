@@ -1,8 +1,10 @@
 # Volltextsuche
 
+Die neuen Aufnahmen verwenden die deutsche UI-Sprache. Einzelne Registerkarten, Statusmeldungen und Wartungsaktionen wie **Index out of sync** und **Kompletter Neuaufbau** sind im Produkt noch englisch. Dokumentdaten sind ausgeblendet.
+
 Mit der Volltextsuche können Benutzer den tatsächlichen Inhalt von Dokumenten und jedes extrahierte Feld durchsuchen — nicht nur Dateinamen und IDs.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Dialog „Volltext-Modul erforderlich“, wenn das Modul deaktiviert ist"><figcaption><p>Der Dialog „Fulltext Module Required“ erscheint auf Seiten, die das Modul voraussetzen.</p></figcaption></figure>
+Ist das Volltextmodul nicht verfügbar, prüfen Sie mit Ihrer Administration die Freischaltung und Berechtigungen. Ein entsprechender Hinweis ersetzt dann die angeforderte Funktion.
 
 ## Ohne das Modul
 
@@ -19,7 +21,7 @@ Alles außerhalb dieser Felder wird ignoriert. Es gibt keine inhaltsbasierte Suc
 
 Die Aktivierung der Volltextsuche schaltet die Suche über jedes extrahierte Feld eines Dokuments frei und ersetzt die Suchleiste im Dashboard durch eine erweiterte Abfragesprache. Abfragen können Feldfilter, Bereichsvergleiche, logische Operatoren, relative Datumsangaben und Smart-Filter-Kurzschreibweisen kombinieren.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Suchleiste im Dashboard mit einer Bereichsabfrage und der gefilterten Dokumentliste"><figcaption><p>Die Suchleiste im Dashboard akzeptiert die erweiterte Abfragesprache. Geben Sie eine Abfrage ein und drücken Sie <kbd>Enter</kbd>, um die Dokumentliste zu filtern.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s50-fulltext-search-dashboard-query-de.png" alt="Abfrage total_amount &gt; 1000 mit deutschen Tabellenüberschriften. Dokumentwerte sind ausgeblendet."><figcaption><p>Abfrage total_amount &gt; 1000 mit deutschen Tabellenüberschriften. Dokumentwerte sind ausgeblendet.</p></figcaption></figure>
 
 ### Feldbezogene Abfragen
 
@@ -102,7 +104,7 @@ ai: invoices from Ruiz over 1000 last quarter
 
 KI-Suche und Vektorsuche sind nicht austauschbar: Die Vektorsuche findet ähnliche Inhalte, die KI-Suche übersetzt Sprache in Filter. Die KI-Suche hat keinen eigenen Schalter — sie nutzt den vorhandenen Volltext- und Vektor-Index.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="Seite „Volltextsuche-Einstellungen“ mit den Sub-Indizes Documents, Vector Index und Fulltext (Text)"><figcaption><p>Volltextsuche-Einstellungen. Der Vektor-Index hat einen eigenen Schalter; der Volltext-Textindex läuft, sobald das Modul aktiviert ist.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s50-fulltext-search-settings-page-de.png" alt="Volltexteinstellungen bei deutscher UI-Sprache. Dokumentenindizierung und Abdeckung sind übersetzt; einzelne Statusmeldungen und Wartungsaktionen bleiben englisch."><figcaption><p>Volltexteinstellungen bei deutscher UI-Sprache. Dokumentenindizierung und Abdeckung sind übersetzt; einzelne Statusmeldungen und Wartungsaktionen bleiben englisch.</p></figcaption></figure>
 
 ## Voraussetzungen
 
@@ -113,11 +115,11 @@ KI-Suche und Vektorsuche sind nicht austauschbar: Die Vektorsuche findet ähnlic
 ## So aktivieren Sie das Modul
 
 1. Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Module**.
-2. Aktivieren Sie unter der Gruppe **Dashboards** den Schalter **Full text search**.
+2. Aktivieren Sie unter der Gruppe **Dashboards** den Schalter **Volltextsuche**.
 3. Bestätigen Sie den Abonnement-Dialog, sofern er erscheint.
 4. Warten Sie auf den Abschluss der ersten Neuindizierung, bevor Sie Volltext-Abfragen nutzen.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Seite „Module“ mit dem Schalter „Full text search“ unter der Gruppe Dashboards"><figcaption><p>Der Schalter <strong>Full text search</strong> befindet sich unter <strong>Module → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s50-fulltext-search-module-toggle-de.png" alt="Deutsche Dashboard-Konfiguration mit dem Schalter Volltextsuche. Es wurde kein Modulschalter verändert."><figcaption><p>Deutsche Dashboard-Konfiguration mit dem Schalter Volltextsuche. Es wurde kein Modulschalter verändert.</p></figcaption></figure>
 
 {% hint style="info" %}
 Die Preisgestaltung für das Volltext-Modul wird über Ihren DocBits-Vertriebskontakt abgewickelt. Der Abonnement-Hinweis erscheint beim ersten Aktivieren des Moduls.
@@ -126,5 +128,5 @@ Die Preisgestaltung für das Volltext-Modul wird über Ihren DocBits-Vertriebsko
 ## Siehe auch
 
 * [Volltextsuche-Einstellungen](../../log-settings/fulltext-search-settings.md) — Indexverwaltung und der Schalter für den Vektor-Index.
-* [Fulltext & Vector Search Funktionen](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — Scripting-API für `fulltext_search()` und `vector_search()`.
+* [Funktionen für Volltext- und Vektorsuche](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — Scripting-API für `fulltext_search()` und `vector_search()`.
 * [Modulübersicht](README.md) — vollständige Liste der optionalen DocBits-Module.

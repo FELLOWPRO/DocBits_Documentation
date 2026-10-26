@@ -1,6 +1,6 @@
-# Items Have Shelf Life
+# Artikel haben eine Haltbarkeitsdauer
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -11,7 +11,7 @@ Diese DocBits-Karte überprüft, ob Artikel in einem Datensatz angegebene Beding
 * **Haltbarkeitsvalidierung:** Diese Karte prüft die Haltbarkeit von Artikeln anhand einer angegebenen Bedingung. Benutzer können wählen, ob sie **irgendeinen** Artikel oder **alle** Artikel im Datensatz validieren, und verschiedene Vergleichsoperatoren anwenden, um die Bedingung zu definieren.
 * **Artikelauswahl:** Benutzer können wählen zwischen:
   * **Any Item:** Die Karte wird ausgelöst, wenn mindestens ein Artikel die angegebene Haltbarkeitsbedingung erfüllt.
-  * **All Items:** Die Karte wird nur ausgelöst, wenn alle Artikel die angegebene Haltbarkeitsbedingung erfüllen.
+  * **Alle Artikel:** Die Karte wird nur ausgelöst, wenn alle Artikel die angegebene Haltbarkeitsbedingung erfüllen.
 * **Operatoren:** Die folgenden Operatoren stehen zur Festlegung der Haltbarkeitsbedingung zur Verfügung:
   * **Gleich (=):** Prüft, ob die Haltbarkeit exakt dem angegebenen Wert entspricht.
   * **Ungleich (≠):** Stellt sicher, dass die Haltbarkeit nicht dem angegebenen Wert entspricht.
@@ -19,8 +19,6 @@ Diese DocBits-Karte überprüft, ob Artikel in einem Datensatz angegebene Beding
   * **Größer oder gleich (≥):** Stellt sicher, dass die Haltbarkeit größer oder gleich dem angegebenen Wert ist.
   * **Kleiner als (<):** Prüft, ob die Haltbarkeit kleiner als der angegebene Wert ist.
   * **Kleiner oder gleich (≤):** Stellt sicher, dass die Haltbarkeit kleiner oder gleich dem angegebenen Wert ist.
-
-
 
 ## **Verwendung:**
 

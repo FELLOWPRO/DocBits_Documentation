@@ -1,4 +1,4 @@
-# Auto Accounting BOD Mapping
+# Auto-Accounting-BOD-Zuordnung
 
 Der DocBits Auto-Accounting-Workflow konsumiert zwei BODs aus Infor M3, um Kostenrechnungen mit gültigen Buchhaltungsdimensionen anzureichern:
 

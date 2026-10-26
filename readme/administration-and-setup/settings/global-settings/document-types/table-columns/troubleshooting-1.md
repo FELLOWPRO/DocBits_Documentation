@@ -1,53 +1,42 @@
 # Fehlerbehebung
 
-## Hier sind Lösungen für häufige Probleme im Zusammenhang mit Tabellenspalten-Konfigurationen:
+## Die neue Spalte erscheint nicht in der Validierungsmaske
 
+* Das Dokument wurde verarbeitet, bevor die Spalte hinzugefügt wurde. Änderungen gelten für Dokumente, die danach hochgeladen oder neu gestartet werden, daher **starten Sie das Dokument neu** (Dashboard → Dokumentmenü → Restart).
+* Die Spalte ist **Hidden**. Prüfen Sie das Flag in der Liste Table Columns.
+* Die Spalte wurde einer **anderen Tabelle** hinzugefügt als der angezeigten. Die Validierungsmaske zeigt die Tabellen des Dokumenttyps; vergleichen Sie die Spalte *Table name*.
+* Das Dokument gehört nicht zu dem Dokumenttyp, den Sie konfiguriert haben.
 
+## Die Spalte ist vorhanden, aber immer leer
 
-**Fehlerhafte Spaltenkonfigurationen:**
+* Der Lieferant hat **trainierte Regeln**, und die neue Spalte ist darin nicht zugeordnet. Öffnen Sie eines der Dokumente des Lieferanten im Tabellentraining und ordnen Sie die Spalte zu, oder setzen Sie *Use AI* für die Spalte.
+* Bei der KI-Extraktion ist der Wert auf dem Dokument nicht erkennbar (keine Kopfzeile, abgekürzt, in einer anderen Sprache). Fügen Sie einen [AI-Table-Tag](../../../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md) hinzu, der die Spalte benennt, oder ordnen Sie sie im Training zu.
 
-* **Problem:** Daten werden nicht korrekt angezeigt oder gespeichert, möglicherweise aufgrund falscher Datentypen, fehlender Einschränkungen oder unzureichender Spaltennamen.
-*   **Lösung:**
+## „Column name already exists“
 
-    Überprüfen Sie die Spaltenkonfigurationen in der Datenbanktabelle und stellen Sie sicher, dass die Datentypen für jede Spalte angemessen sind.
+Eine Spalte mit demselben technischen Namen ist bereits in der Tabelle vorhanden. Steht sie nicht in der Liste, handelt es sich um eine ausgeblendete Standardspalte: Die Meldung lautet *Please activate it in Table Column settings*. Entfernen Sie das Flag *Hidden* bei dieser Spalte, statt eine neue anzulegen.
 
-    Fügen Sie fehlende Einschränkungen wie NOT NULL oder UNIQUE hinzu, um die Datenintegrität zu verbessern.
+## Die Freigabe ist durch eine erforderliche Spalte blockiert
 
-    Benennen Sie Spalten um, um aussagekräftigere und eindeutigere Namen zu verwenden, die den Inhalt der Spalte genau beschreiben.
+Die Meldung an der Tabelle nennt die Spalte. Füllen Sie entweder die Zelle in jeder Zeile, oder (wenn der Wert auf diesem Dokument nicht existiert) deaktivieren Sie *Is Required* für die Spalte, starten Sie das Dokument neu und versuchen Sie es erneut. Überlegen Sie, ob die Spalte überhaupt erforderlich sein sollte (siehe [Bewährte Vorgehensweisen](best-practices-2.md)).
 
+## Die KI füllt eine Spalte mit dem falschen Wert
 
+Typischer Fall: `CHARGES` erhält die Zeilensumme, und jede Zeile scheitert dann an der Zeilensummenprüfung mit *Line total does not match quantity x unit price (expected …, got …)*, weil Nebenkosten Teil der Formel `Menge × Einzelpreis + Nebenkosten` sind.
 
-**Probleme durch gelöschte Spalten:**
+* Deaktivieren Sie *Use AI* für die Spalte, wenn die trainierten Regeln sie korrekt erfassen.
+* Hat der Lieferant keine Regeln, trainieren Sie die Tabelle einmal (Tabellentraining), damit die Spalte an die richtige Position gebunden wird, oder blenden Sie die Spalte aus, wenn der Lieferant diesen Wert nie druckt.
+* Als letzten Ausweg schaltet *Skip table validation* in den More Settings des Dokumenttyps jede Tabellenprüfung für den gesamten Dokumenttyp ab; die Abweichung wird dann nicht mehr erkannt, ebenso wenig leere erforderliche Spalten.
 
-* **Problem:** Nach dem Löschen einer Spalte aus einer Tabelle treten Probleme auf, da Berichte, Abfragen oder die Anwendungslogik noch auf diese Spalte verweisen.
-*   **Lösung:**
+## Bestellabgleich: „Line Item Table is missing Mandatory column“
 
-    Überprüfen Sie alle Berichte, Abfragen und die Anwendungslogik, um sicherzustellen, dass keine Verweise mehr auf die gelöschte Spalte vorhanden sind.
+Der Bestellabgleich benötigt die Standardspalten Artikelnummer, Einzelpreis, Menge und Gesamtbetrag. Eine davon ist ausgeblendet oder wurde durch eine eigene Spalte ersetzt. Blenden Sie die Standardspalte wieder ein, oder ordnen Sie den Wert im Tabellentraining ihr zu.
 
-    Aktualisieren Sie alle betroffenen Berichte, Abfragen und die Anwendungslogik, um die gelöschte Spalte widerzuspiegeln oder zu entfernen. Falls erforderlich, stellen Sie die gelöschte Spalte vorübergehend wieder her und migrieren Sie die Daten in eine neue Struktur, bevor Sie sie endgültig löschen.
+## Ein Skript oder Export schlägt nach dem Löschen einer Spalte fehl
 
+Das Skript oder Export-Mapping verweist noch auf den gelöschten *Column name*. Entfernen Sie den Verweis, oder fügen Sie die Spalte mit demselben Titel erneut hinzu; der technische Name wird aus dem Titel abgeleitet und passt dann wieder.
 
+## Wo Sie weiter suchen können
 
-**Fehlende oder inkonsistente Daten:**
-
-* **Problem:** Daten sind unvollständig oder inkonsistent aufgrund fehlender Pflichtfelder oder falscher Datentypen.
-*   **Lösung:**&#x20;
-
-    Überprüfen Sie die Tabellenstruktur und stellen Sie sicher, dass alle erforderlichen Felder als NOT NULL markiert sind, um sicherzustellen, dass wichtige Daten nicht fehlen.
-
-    Führen Sie eine Datenbereinigung durch, um inkonsistente oder ungültige Daten zu korrigieren, und aktualisieren Sie bei Bedarf die Datentypen, um die Konsistenz zu verbessern.
-
-
-
-**Leistungsprobleme durch fehlende Indizes:**
-
-* **Problem:** Abfragen auf großen Tabellen sind langsam, da wichtige Spalten nicht indiziert sind.
-*   **Lösung:**&#x20;
-
-    Identifizieren Sie die am häufigsten abgefragten Spalten und fügen Sie Indizes hinzu, um die Abfrageleistung zu verbessern.
-
-    Beachten Sie, dass zu viele Indizes auch die Schreib- und Aktualisierungsleistung beeinträchtigen können, daher ist eine ausgewogene Indizierung wichtig.
-
-
-
-Durch die Anwendung dieser Lösungen können Sie häufige Probleme im Zusammenhang mit Tabellenspalten beheben und die Effizienz, Konsistenz und Leistung Ihrer Datenbank verbessern.
+* [Fehlerbehebung bei der Tabellenextraktion](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): Extraktionsqualität, OCR, E-Text
+* [Positionsfelder und Tabellen trainieren](../../../../setup/document-training/training-line-fields-table-training/README.md)

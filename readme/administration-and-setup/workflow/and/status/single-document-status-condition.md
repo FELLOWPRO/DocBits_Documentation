@@ -1,6 +1,6 @@
-# Single Document Status Condition
+# Statusbedingung für ein einzelnes Dokument
 
-<figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 **Zweck**
 
@@ -12,11 +12,11 @@ Diese Workflow-Karte ist darauf zugeschnitten, Operationen an Dokumenten auf Bas
    * **Beschreibung**: Gibt die Methode zur Auswertung des Dokumentstatus anhand der ausgewählten Bedingung an.
    * **Optionen**:
      * **is**: Löst die Operation aus, wenn der aktuelle Status des Dokuments mit dem ausgewählten Status übereinstimmt.
-     * **is not**: Löst die Operation aus, wenn der aktuelle Status des Dokuments nicht mit dem ausgewählten Status übereinstimmt.
+     * **ist nicht**: Löst die Operation aus, wenn der aktuelle Status des Dokuments nicht mit dem ausgewählten Status übereinstimmt.
 2. **Status**
    * **Beschreibung**: Ermöglicht die Auswahl eines einzelnen Dokumentstatus zur Festlegung der Bedingung.
-   * **Statusbeispiele**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
-   * **Detail**: Benutzer wählen einen Status aus einem Dropdown oder einer Reihe von Optionsfeldern. Dieser Status dient dann als Kriterium für die Operation der Karte.
+   * **Statusbeispiele**: „Fehler“, „Exportfehler“, „Bereit zur Validierung“, „Bereit zur Überprüfung“, „Genehmigung ausstehend“, „Zweite Genehmigung ausstehend“.
+   * **Detailliert**: Benutzer wählen einen Status aus einem Dropdown oder einer Reihe von Optionsfeldern. Dieser Status dient dann als Kriterium für die Operation der Karte.
 
 **Funktionalität**
 
@@ -37,3 +37,27 @@ Diese Workflow-Karte ist darauf zugeschnitten, Operationen an Dokumenten auf Bas
 #### Fazit
 
 Die Workflow-Karte "Single Document Status Condition" vereinfacht das Dokumentenmanagement, indem sie sich auf einzelne Statusbedingungen konzentriert. Diese Spezifikation hilft in Fällen, in denen eine präzise Kontrolle über Dokumentflüsse erforderlich ist, insbesondere in Umgebungen mit strengen Verarbeitungskriterien. Eine klare Dokumentation dieser Version der Karte stellt sicher, dass Benutzer ihre Anwendung vollständig verstehen und sie effektiv in ihre täglichen Abläufe integrieren können, und steigert so sowohl die Compliance als auch die Effizienz bei der Dokumentverarbeitung.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann nutzen:** Eine Folgeregel auf Belege in der ersten Freigabestufe begrenzen.
+
+**Wo:** Standard-Workflow-Designer → Und → Status.
+
+**Konfiguration:** Wählen Sie in Version 2 den Operator „ist“ (`is`) und den vorhandenen Status Genehmigung ausstehend (`validated_pending_approval`).
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Beleg mit genau diesem Status erfüllt die Bedingung. Ein bereits exportierter Beleg erfüllt sie nicht. Die Karte prüft den Status und ändert ihn nicht. Für mehrere zulässige Status verwenden Sie die gesonderte Statuslisten-Karte.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann ich eine Bedingung auf einen bestimmten Belegstatus beschränke und wie ich den vorhandenen Status auswähle. Die Beispiele zeigen erwartete Ergebnisse.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de-theme-v4.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.txt)

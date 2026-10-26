@@ -1,5 +1,13 @@
 # Auditoria de Acesso
 
+## Vídeo tutorial: Empresa, assinatura e auditoria
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/pt.mp4" %}
+Informações da empresa, plano de assinatura e registros de auditoria no DocBits
+{% endembed %}
+
+O vídeo mostra as informações e as preferências da empresa, o plano de assinatura, a atividade de login e os registros de auditoria.
+
 <figure><img src="../../../.gitbook/assets/access_audit_settings_page_pt.png" alt="Audit Logs com a trilha de auditoria desativada; a página mostra a troca de organização, os filtros, Enable Now, Auto-refresh, Refresh e Export"><figcaption><p>A página Sandbox em português antes de a gravação de auditoria ser ativada.</p></figcaption></figure>
 
 A Auditoria de Acesso registra quem criou, alterou ou excluiu um recurso e quando. Abra **Configurações → Registro de atividades → Auditoria de Acesso** para consultar o registro. Ative o serviço para uma organização apenas quando você pretender coletar eventos de auditoria.

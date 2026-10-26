@@ -20,7 +20,7 @@ Lorsque l’option est activée, le résultat du rapprochement du document coura
    * Accédez à **Paramètres** → **Traitement des documents** → **Module** → **Commande d’achat**.
    * Activez le curseur **Auto Export if PO matched 100%**.
 
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/po-match-100.png" alt=""><figcaption></figcaption></figure>
 
 2. **Surveiller le traitement :**
    * Vérifiez les états de rapprochement, de validation et d’export de la facture courante.

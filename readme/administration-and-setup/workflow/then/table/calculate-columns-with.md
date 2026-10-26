@@ -4,64 +4,52 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-fr-fr.png" alt="Calculer les colonnes avec, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## **Objectif :**
+## Objectif :
 
-La carte de workflow **« Calculer les colonnes dans le tableau »** sert à effectuer des calculs entre les colonnes d'un tableau sélectionné. Elle permet aux utilisateurs de sélectionner des colonnes, d'appliquer une opération mathématique et de stocker le résultat dans une colonne de résultat spécifiée.
+Cette carte de workflow calcule, ligne par ligne, une valeur à partir de deux colonnes d'un tableau du document et enregistre le résultat dans une colonne de résultat. Elle peut servir, par exemple, à calculer des totaux de ligne à partir de la quantité et du prix unitaire.
 
-## **Composants de la carte :**
+## Vidéo d’administration :
 
-1. **Nom de la table**
-   * **Descriptif :** spécifie la **table** dans laquelle les colonnes seront calculées.
-   * **Détail :** une liste déroulante de toutes les **tables** disponibles est proposée pour la sélection.
-2. **Column Name (1re colonne)**
-   * **Descriptif :** spécifie la **première colonne** à impliquer dans le calcul.
-   * **Détail :** une liste de toutes les **colonnes** disponibles est proposée pour la sélection.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.mp4" %}
+
+[Lire la vidéo avec des sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.html) · [Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.txt)
+
+## Composants de la carte :
+
+1. **Tableau**
+   * **Description :** le tableau du document dans lequel le calcul est effectué.
+2. **Première colonne**
+   * **Description :** la colonne contenant la première valeur de chaque ligne.
 3. **Opération**
-   * **Descriptif :** définit l'opération mathématique à appliquer entre les colonnes sélectionnées.
-   * **Possibilités :**
-     * **Add (+) :** ajoute la valeur de la seconde colonne à la valeur de la première colonne.
-     * **Soustraire (-) :** soustrait la valeur de la seconde colonne de la valeur de la première colonne.
-     * **Multiply (\*) :** multiplie la valeur de la première colonne par la valeur de la seconde colonne.
-     * **Diviser (/) :** divise la valeur de la première colonne par la valeur de la seconde colonne.
-4. **Column Name (2e colonne)**
-   * **Descriptif :** spécifie la **seconde colonne** à impliquer dans le calcul.
-   * **Détail :** une liste des **colonnes** disponibles est proposée pour la sélection.
+   * **Options :**
+     * **+** ajoute la deuxième valeur à la première.
+     * **-** soustrait la deuxième valeur de la première.
+     * **\*** multiplie les deux valeurs.
+     * **/** divise la première valeur par la deuxième.
+4. **Deuxième colonne**
+   * **Description :** la colonne contenant la deuxième valeur de chaque ligne.
 5. **Colonne de résultat**
-   * **Descriptif :** spécifie la **colonne** où le résultat du calcul sera stocké.
-   * **Détail :** une liste des **colonnes** disponibles est proposée, où la valeur calculée sera enregistrée.
+   * **Description :** la colonne dans laquelle le résultat de chaque ligne est enregistré.
+   * **Détail :** le nom est enregistré en majuscules, les espaces étant remplacés par des traits de soulignement (`total amount` devient `TOTAL_AMOUNT`). Si la colonne n'existe pas encore, la carte l'ajoute ; si elle existe, ses valeurs sont remplacées.
 
-## **Fonctionnalité :**
+Les versions 1 et 2 de la carte ont les mêmes paramètres et fonctionnent de la même manière.
 
-* **Évaluation de la condition :**\
-  La carte n'exécute son action que si les sections **« Quand »** et **« Et »** sont toutes deux évaluées comme vraies.
-* **Calcul de colonnes :**\
-  La carte effectue l'opération mathématique sélectionnée entre les deux colonnes choisies.
-* **Stockage du résultat :**\
-  Le résultat du calcul est stocké dans la **colonne de résultat** sélectionnée.
+## Fonctionnalité :
 
-## **Mise en place et configuration :**
+* **Calcul :** pour chaque ligne du tableau, la carte lit les deux colonnes (la casse des noms de colonnes n'a pas d'importance), applique l'opération et écrit le résultat dans la colonne de résultat. Les résultats sont arrondis à quatre décimales. Le document est ensuite enregistré avec les nouvelles valeurs.
+  * Une valeur vide ou manquante compte comme `0`. Si les deux valeurs d'une ligne sont vides, le résultat de cette ligne reste vide.
+  * Une division par zéro laisse vide le résultat de cette ligne.
+  * Avec **+**, deux valeurs qui ne sont pas des nombres sont jointes par une espace au lieu d'être additionnées. Avec les autres opérations, une valeur qui n'est pas un nombre provoque une erreur, et aucun résultat n'est enregistré.
+* **Exécution de l'action :** si le calcul et l'enregistrement réussissent, le workflow continue avec les cartes suivantes. Si le tableau n'existe pas sur le document, si une valeur ne peut pas être calculée ou si le document ne peut pas être enregistré, la carte signale une erreur dans le journal du workflow.
+* **Tester la carte :** lorsque la carte est exécutée avec **Tester la carte**, le calcul est seulement simulé et le document n'est pas modifié.
 
-* **Sélectionner la table :**\
-  Choisissez la **table** où les colonnes seront calculées.
-* **Choisir les colonnes :**\
-  Sélectionnez la **première colonne** et la **seconde colonne** qui seront utilisées dans le calcul.
-* **Sélectionner l'opération :**\
-  Choisissez l'opération mathématique (**Add (+)**, **Soustraire (-)**, **Multiply (\*)**, **Divide (/)**) à appliquer entre les colonnes.
-* **Sélectionner la colonne de résultat :**\
-  Choisissez la **colonne de résultat** où le calcul sera stocké.
+## Mise en place et configuration :
 
-## **Conclusion :**
+* La carte peut être ajoutée comme action Then depuis la catégorie **Tableau**. Ensuite, le tableau, les deux colonnes, l'opération et la colonne de résultat sont sélectionnés.
+* **Exemple :** tableau `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, colonne de résultat `TOTAL_AMOUNT`. Une ligne avec une quantité de 2 et un prix unitaire de 10 obtient 20, une ligne avec 3 et 4 obtient 12.
+* Comme une valeur vide compte comme `0`, un prix manquant donne un résultat de `0`. Vérifier que les colonnes d'entrée sont renseignées, par exemple avec une condition avant cette carte, peut aider à éviter des totaux erronés.
+* Pour la soustraction et la division, l'ordre des deux colonnes est important.
 
-La carte de workflow **« Calculer les colonnes dans le tableau »** permet aux utilisateurs d'effectuer des calculs dynamiques entre les colonnes d'un tableau et de stocker les résultats dans une colonne désignée. La carte offre la flexibilité d'appliquer différentes opérations mathématiques et garantit que le résultat est stocké dans la colonne spécifiée.
+## Conclusion :
 
-<!-- workflow-card-practical-example-20261021 -->
-
-## Exemple pratique
-
-**Quand utiliser :** Calculez les totaux de ligne à partir de la quantité et du prix unitaire.
-
-**Configuration :** Sélectionnez le tableau `lines`, les colonnes `quantity` et `unit_price`, la colonne de multiplication et de résultat `line_total`.
-
-**Résultat attendu et contre-exemple :** Une ligne contenant `2` et `10` produit `20`. Testez une autre ligne indépendamment et diagnostiquez les entrées manquantes ou non numériques plutôt que de les traiter comme un total valide.
-
-Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.
+La carte de workflow « Calculate Columns with » ajoute automatiquement des valeurs calculées aux lignes du tableau. Les totaux de ligne et les valeurs similaires sont disponibles pour les cartes suivantes et pour l'export, sans calcul manuel.

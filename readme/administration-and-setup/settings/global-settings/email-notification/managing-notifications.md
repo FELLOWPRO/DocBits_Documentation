@@ -1,35 +1,28 @@
-# Gérer les notifications
+# Gestion des notifications
 
-Pour modifier, désactiver ou supprimer des notifications existantes et les adapter aux changements des flux de traitement des documents ou des responsabilités des utilisateurs, vous pouvez procéder comme suit :
+Ouvrez **Paramètres → Notification par e-mail** pour afficher les règles de votre organisation. Une règle relie un statut de document à un modèle d'e-mail et à un destinataire. L'exemple ci-dessous utilise une règle de démonstration pour les factures et reste **inactive** dans le bac à sable DocBits.
 
-**Accédez aux paramètres de notification :** Rendez-vous dans les paramètres de votre système où vous pouvez gérer les notifications. Vous les trouverez dans la section « Paramètres », « Paramètres globaux », puis sous « Notification par e-mail ».
+## Exemple : une facture est prête pour la validation
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Avant de créer une règle, préparez un modèle d'e-mail pour **Facture** sous **Paramètres → Modèles d'e-mails**. Dans cet exemple, le modèle s'appelle **Docs Demo Invoice Notification**. Le modèle fournit l'objet et le message de l'e-mail.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Sélectionnez **+ Nouveau** sur la page **Notification par e-mail**.
+2. Saisissez **Docs Demo Invoice Validation** comme nom, sélectionnez **Facture** comme type de document et choisissez le modèle d'e-mail préparé.
+3. Choisissez **Prêt pour la validation** comme statut et **Moyen** comme priorité. Définissez **Unité de temps** sur **MINUTES** et **Délai** sur **10**. Le délai minimum en minutes est de cinq.
+4. Sélectionnez **Envoi d'un courrier électronique à l'utilisateur/groupe désigné**. Activez **Ne pas répéter** si le message ne doit être envoyé qu'une seule fois. Vérifiez le destinataire et le minutage, puis sélectionnez **Enregistrer**.
 
-**Recherchez la liste des notifications existantes :** Dans les paramètres de notification, vous trouverez une liste des notifications existantes. Cette liste vous montre toutes les notifications actuellement configurées.
+<figure><img src="../../../../.gitbook/assets/dbdc-641-edit-fr.png" alt="Règle de notification remplie pour Facture, Prêt pour la validation, un délai de dix minutes et l'utilisateur ou le groupe désigné"><figcaption><p>La règle d'exemple enregistrée, ouverte pour modification. Ses valeurs montrent quand et à qui la notification serait envoyée.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+La règle apparaît désormais dans la liste. L'exemple de documentation a ensuite été désactivé, de sorte que son menu **Actions** propose **Activer**. Vérifiez le nom, le type de document, le statut, le délai et le destinataire dans votre propre liste avant d'activer une règle.
 
-**Modifier une notification :** Pour modifier une notification existante, recherchez la notification dans la liste et sélectionnez l'option de modification. Cela vous permet de modifier les paramètres de la notification, tels que le type de document, le statut, les événements déclencheurs ou les destinataires.
+<figure><img src="../../../../.gitbook/assets/dbdc-641-list-fr.png" alt="Liste Notification par e-mail avec la règle d'exemple Docs Demo Invoice Validation au lieu d'un tableau vide"><figcaption><p>L'exemple enregistré vous donne une règle à retrouver et à gérer dans la liste.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="192"><figcaption></figcaption></figure>
+## Modifier, activer ou supprimer une règle
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+Ouvrez le menu **Actions** de la ligne. **Éditer** ouvre la règle et ses valeurs actuelles. **Activer** active cette règle inactive ; une règle active propose **Désactiver** à la place. **Journaux** ouvre l'historique de ses notifications. **Supprimer** supprime la règle après confirmation. Vérifiez les destinataires et le minutage avant d'activer ou de modifier une règle.
 
-**Désactiver une notification :** Si vous souhaitez désactiver temporairement une notification, recherchez la notification dans la liste et sélectionnez l'option pour la désactiver. Cela arrêtera temporairement la notification sans la supprimer, ce qui vous permet de la réactiver ultérieurement si nécessaire.
+<figure><img src="../../../../.gitbook/assets/dbdc-641-actions-fr.png" alt="Menu Actions de la notification inactive avec Éditer, Activer, Journaux et Supprimer"><figcaption><p>Les actions disponibles dépendent de l'état actif de la règle.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="116"><figcaption></figcaption></figure>
+Si la liste affiche **No Record Found!**, créez d'abord une règle. Si les listes **Type de document** ou de modèles d'e-mail sont vides, configurez un type de document actif et un modèle correspondant avant de revenir à ce formulaire.
 
-**Supprimer une notification :** Pour supprimer définitivement une notification, recherchez la notification dans la liste et sélectionnez l'option de suppression. Cela supprimera complètement la notification du système et elle ne pourra pas être restaurée.
-
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="106"><figcaption></figcaption></figure>
-
-**Adaptez-vous aux changements :** Examinez périodiquement vos paramètres de notification et ajustez-les si nécessaire pour refléter les changements des flux de traitement des documents ou des responsabilités des utilisateurs. Cela peut inclure la mise à jour des notifications en raison de nouveaux événements, de responsabilités modifiées ou d'autres changements organisationnels.
-
-**Enregistrez les modifications :** Après avoir effectué vos modifications, n'oubliez pas de les enregistrer pour qu'elles prennent effet.
-
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" width="150"><figcaption></figcaption></figure>
-
-En examinant et en ajustant régulièrement vos paramètres de notification, vous pouvez vous assurer que vos notifications répondent toujours aux besoins et flux de travail actuels. Cela contribue à garantir une communication efficace et à ce que les bonnes personnes soient informées des événements importants en temps opportun.
+Pour la configuration initiale, voir [Configuration des Notifications](configuration-des-notifications.md). Si les e-mails n'arrivent pas comme prévu, voir [Dépannage](depannage.md).

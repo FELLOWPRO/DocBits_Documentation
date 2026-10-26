@@ -4,9 +4,11 @@
 
 ***
 
-Vous construisez ce modèle dans le **Générateur de flux de travail** (Workflow Dashboard → Workflow List → Add Workflow). Cliquez sur **Ajouter une carte** et ouvrez la catégorie **Champ de document** — elle contient les cartes de lecture, d'écriture, de calcul et de formatage que ce modèle enchaîne :
+Dans le concepteur Standard, ouvrez **Ajouter une carte** dans le groupe adapté à l’opération. Les vues partielles suivantes montrent deux exemples de la catégorie **Champ du document** : une action de copie entre champs dans **Dans ce cas....**, puis une condition de comparaison de deux champs dans **Et....**. Ces cartes sont affichées dans la bibliothèque, avant leur sélection et leur configuration. Elles illustrent deux opérations distinctes ; les calculs et les autres transformations décrits dans ce modèle nécessitent leurs propres cartes et paramètres.
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-field-copy-library-current-fr.png" alt="Carte de copie de champs dans la bibliothèque « Champ du document », ouverte depuis « Dans ce cas.... », avant sa sélection et sa configuration. Les champs source et cible restent à renseigner."><figcaption><p>Carte de copie de champs dans la bibliothèque « Champ du document », ouverte depuis « Dans ce cas.... », avant sa sélection et sa configuration. Les champs source et cible restent à renseigner.</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/workflow-field-compare-library-current-fr.png" alt="Carte de comparaison de deux champs dans la bibliothèque « Champ du document », ouverte depuis « Et.... », avant sa sélection et sa configuration. Les deux champs et l’opérateur restent à renseigner."><figcaption><p>Carte de comparaison de deux champs dans la bibliothèque « Champ du document », ouverte depuis « Et.... », avant sa sélection et sa configuration. Les deux champs et l’opérateur restent à renseigner.</p></figcaption></figure>
 
 ***
 

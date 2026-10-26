@@ -5,7 +5,7 @@ Les outils se trouvent à côté de la recherche. Survolez une icône pour affic
 | Outil | Utilisation |
 | --- | --- |
 | Actualiser | Rechargez la liste et les statuts. Un indicateur signale la disponibilité de données plus récentes. |
-| Paramètres avancés (engrenage) | Ouvrez les paramètres des colonnes, les raccourcis et le journal d’import des courriels. Les paramètres de l’organisation nécessitent des droits d’administration. |
+| Paramètres avancés (engrenage) | Ouvrez **Plus de paramètres**, la référence **Raccourcis clavier**, le **Journal d’importation** et la boîte de dialogue **Paramètres de colonnes**. Les paramètres de toute l’organisation nécessitent des droits d’administration. |
 | Numériser un document | Ouvrez la boîte de dialogue si la numérisation est activée et un scanner compatible est disponible. Choisissez l’appareil et les paramètres avant de commencer. |
 | Analyse | Affichez les statistiques de statut et sélectionnez une catégorie pour filtrer la liste. |
 | Démarrer l’import de courriels | Lancez un import avec la configuration de messagerie existante. Cette action ne configure pas de boîte mail. |

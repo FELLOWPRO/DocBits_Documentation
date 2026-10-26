@@ -1,5 +1,13 @@
 # Plan d'abonnement
 
+## Tutoriel vidéo : entreprise, abonnement et audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/fr.mp4" %}
+Informations sur l'entreprise, formule d'abonnement et journaux d'audit dans DocBits
+{% endembed %}
+
+La vidéo présente les informations et les préférences de l'entreprise, la formule d'abonnement, l'activité de connexion et les journaux d'audit.
+
 <figure><img src="../../../../.gitbook/assets/subscriptions_overview.png" alt="Plan d'abonnement"><figcaption><p>Page Plan d'abonnement</p></figcaption></figure>
 
 La page **Plan d'abonnement** offre une vue d'ensemble complète de votre abonnement DocBits en un seul endroit : le plan lui-même, les abonnements aux applications et fonctionnalités activés pour votre organisation, ainsi que votre consommation de jetons. Ouvrez-la depuis **Paramètres → Organisation et accès → Plan d'abonnement**.

@@ -3,47 +3,19 @@ hidden: true
 noIndex: true
 ---
 
-# M3\_OLD
+# Legacy M3 setup (archived)
 
-## Importing an API Connection Template in Infor M3
+This page used to offer a connection-point XML template tied to a DocBits development logical ID. It is not a reusable template for a customer or production environment. Do not import it into Infor ION: an incorrect logical ID or service account can route data to the wrong destination.
 
-This guide explains how to import an API Connection Template to quickly configure key settings for integration with Infor M3. Using a template allows you to establish a predefined connection setup, simplifying the process and ensuring consistency.
+Use the current, tenant-specific guides instead:
 
-<mark style="color:red;">**Note**</mark>: For detailed configuration of specific areas such as Auto Accounting, Supplier Integration, Purchase Orders, or Table Extraction for costing elements, refer to the corresponding documentation:
+* [M3 integration overview](m3/README.md) — choose the integration path for your environment.
+* [Suppliers and Purchase Orders](m3/suppliers-and-purchase-orders.md) — review the ION route and verify delivered records.
+* [Start a supplier initial load](m3/how-to-import-all-suppliers.md) — check EVS006/EVS007 selection, history and ION delivery.
+* [Auto Accounting](m3/auto-accounting.md) and [Table Extraction](m3/table-extraction-for-costing-element.md) — feature-specific setup.
 
-* [Auto Accounting](m3/auto-accounting.md)
-* [Suppliers and Purchase Order](m3/suppliers-and-purchase-orders.md)
-* [How to import all suppliers](m3/how-to-import-all-suppliers.md)
-* [Table Extraction for costing element](m3/table-extraction-for-costing-element.md)
+Your Infor administrator must create or import a connection point with the correct tenant credentials, logical ID, company and division. Confirm the resulting BOD in ION, then look for an expected supplier in **Settings → Lookup Master Data → Supplier** in the intended DocBits organisation.
 
-### **Download the Template**
+![Current English DocBits Sandbox Lookup Master Data Supplier tab with search controls and synthetic demo rows.](../../.gitbook/assets/dbdc-149-supplier-verification-en.png)
 
-Before importing, download the required connection template using the file below:
-
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
-
-### Importing Template
-
-#### Steps to Import a Connection Template
-
-1. **Access Infor ION Desk:**
-   *   Navigate to **InforOS** → **ION Desk** → **Connect** → **Connection Points**.
-
-       ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
-2. **Import the Template:**
-   *   Click on the **Import** button.
-
-       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt=""><figcaption></figcaption></figure>
-   * Select the appropriate **Template File** from your local system.
-   *   Click **OK** to begin the import process.
-
-       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="" width="327"><figcaption></figcaption></figure>
-3. **Confirmation:**
-   *   If the import is successful, a confirmation message will be displayed.
-
-       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt=""><figcaption></figcaption></figure>
-4. **Post-Import Configuration:**
-   * After importing the template, you can customize specific connection settings as needed.
-   * Don’t forget to import or configure your **Service Account** for authentication and access control.
-
-<figure><img src="../../.gitbook/assets/m3_import_5.png" alt=""><figcaption></figcaption></figure>
+The screenshot shows existing synthetic Sandbox Test A data. No M3 connection or supplier import was tested for this page update.

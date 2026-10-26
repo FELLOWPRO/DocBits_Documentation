@@ -1,86 +1,31 @@
-# Faktura
+# FatturaPA: mostrar un atributo en las líneas de factura
 
-## Mostrar atributo en cada partida
+FatturaPA es el formato italiano de factura electrónica. Esta página explica dónde comprobar un atributo de línea, como el número de pedido de compra, antes de modificar su mapeo o la vista previa de la factura. **No añada una segunda columna `PURCHASE_ORDER` sin comprobar antes el mapeo activo:** el mapeo actual de Sandbox ya contiene una.
 
-Si desea mostrar un atributo específico (como el número de Orden de Compra) en cada partida, siga los pasos a continuación. El enfoque variará dependiendo de si necesita el atributo en la extracción JSON o en la salida XSL.
+## Encontrar los tres archivos de FatturaPA
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.33.16.png" alt=""><figcaption></figcaption></figure>
+Abra **Ajustes → Tipos de Documento → E-Doc**, seleccione **Invoice** y despliegue **FATTURAPA**. La lista actual contiene tres archivos diferentes:
 
-### Método 1: Mostrar Atributo en la Extracción JSON (configuración de DocBits)
+* **TRANSFORMATION (XSLT)** lee el XML de origen de FatturaPA y produce los datos de factura normalizados.
+* **PREVIEW (XSLT)** genera a partir de esos datos la vista previa visual de la factura, similar a HTML/PDF.
+* **EXTRACTION PATHS (JSON)** mapea los valores normalizados a los campos y columnas de tabla de DocBits.
 
-1. Vaya a **Configuración**
-2. Vaya a **Tipos de Documento**
-3. Seleccione **Invoice/E-Doc**
+<figure><img src="../../../../../.gitbook/assets/dbdc-626-fatturapa-list-es-20261010.png" alt="Ajustes de E-Doc de la Sandbox en español que muestran FATTURAPA con Transformation, Preview y Extraction Paths"><figcaption><p>La lista actual de archivos FATTURAPA en la Sandbox en español.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.07.58.png" alt=""><figcaption></figcaption></figure>
+## Comprobar el valor de línea extraído
 
-4. Abra la pestaña **"FATTURAPA"**
-5. Haga clic en **JSON**
+Abra **EXTRACTION PATHS (JSON)**. En la versión activa, busque el array `tables` y sus `columns`. La versión visible de Sandbox ya incluye `{"name": "PURCHASE_ORDER", "path": "PURCHASE_ORDER"}`. Compruebe el valor en una factura de prueba real antes de editarlo. Si necesita otro atributo, identifique su valor en los datos normalizados y, a continuación, añada un nombre de columna distinto y la ruta correspondiente en una versión de borrador.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.01.13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-626-fatturapa-json-es-20261010.png" alt="EXTRACTION PATHS JSON de FATTURAPA con la versión activa y una columna de tabla PURCHASE_ORDER existente"><figcaption><p>El mapeo de extracción JSON activo ya tiene una columna de pedido de compra.</p></figcaption></figure>
 
-6. Para crear un borrador, haga clic en el icono del **lápiz**
+## Cambiar la transformación o la vista previa solo cuando sea necesario
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
+Si falta el valor normalizado, examine **TRANSFORMATION (XSLT)** y la ruta XML de origen que debería producirlo. Un cambio aquí afecta a los datos que utilizan los pasos posteriores de mapeo y vista previa. Si el valor se extrae correctamente pero no aparece en la factura visual, examine **PREVIEW (XSLT)** y la fila de tabla correspondiente en esa plantilla. Los dos archivos XSLT tienen propósitos diferentes.
 
-7. Dentro de la matriz `"tables"`, agregue la columna específica que desea mostrar proporcionando un nombre y una ruta:
+<figure><img src="../../../../../.gitbook/assets/dbdc-626-fatturapa-transformation-es-20261010.png" alt="Transformation XSLT activa de FATTURAPA que produce datos INVOICE normalizados"><figcaption><p>Transformation lee el XML de origen y genera los campos de factura normalizados.</p></figcaption></figure>
 
-```
-{ 
-"name": "PURCHASE_ORDER",    
-"path":"path_to_source" 
-}
-```
+<figure><img src="../../../../../.gitbook/assets/dbdc-626-fatturapa-preview-es-20261010.png" alt="Preview XSLT activa de FATTURAPA con salida HTML y estilos de la tabla de factura"><figcaption><p>Preview controla la salida visual de la factura.</p></figcaption></figure>
 
-**NOTA:** Los documentos electrónicos siempre tendrán el origen establecido en **Gran Bretaña**, por lo que los importes se guardarán en formato internacional, utilizando un **punto (.)** como separador decimal.
+Utilice el lápiz de una tarjeta de versión para preparar un cambio. Revise el borrador y use **Preview** con una factura FatturaPA representativa antes de activarlo. Las capturas muestran las versiones actualmente activas; en esta sesión de Sandbox no se guardó ningún borrador ni se ejecutó ninguna prueba de vista previa.
 
-8. Guarde el borrador
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
-
-9. Asegúrese de que su borrador sea el **activo**.
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>
-
-### Método 2: Mostrar Atributo en la Salida XSL (vista previa HTML/PDF)
-
-1. Vaya a **Configuración**
-2. Vaya a **Tipos de Documento**
-3. Seleccione **Invoice/E-Doc**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.07.58.png" alt=""><figcaption></figcaption></figure>
-
-4. Abra la pestaña **"FATTURAPA"**
-5. **Haga clic en XLST**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.23.06.png" alt=""><figcaption></figcaption></figure>
-
-6. Para crear un borrador, haga clic en el icono del **lápiz**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
-
-7. En el bloque `<xsl:for-each select="path">` que genera las filas de la tabla, agregue un fragmento como este donde desee que aparezca el atributo (por ejemplo, en su propia columna):
-
-```
-<tr>
-    <!-- Otras columnas ... -->
-
-    <td>
-        <!-- PO number -->
-        <xsl:variable name="variable_name" select="value" />
-        <xsl:value-of 
-            select="path_to_attribute" 
-        />
-    </td>
-</tr>
-```
-
-**NOTA:** Los documentos electrónicos siempre tendrán el origen establecido en **Gran Bretaña**, por lo que los importes se guardarán en formato internacional, utilizando un **punto (.)** como separador decimal.
-
-8. Guarde el borrador
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
-
-9. Asegúrese de que su borrador sea el **activo**.
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>
+La instrucción anterior de que todos los documentos electrónicos tienen Gran Bretaña como origen no es una regla general segura. Compruebe el país, la moneda y el formato numérico de la factura con el documento de origen y la configuración de su organización.

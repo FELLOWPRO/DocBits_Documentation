@@ -1,17 +1,33 @@
-# Activación y administración de scripts
+# Activación y gestión de scripts
 
-## Videotutorial: administrar scripts
+Los administradores pueden usar **Scripts** para gestionar las reglas de procesamiento de un tipo de documento. Esta guía muestra dónde encontrar los scripts, cómo activarlos o desactivarlos y cómo cambiar de forma segura un script ya publicado.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v4/es.mp4" %}
-Administrar los scripts de un tipo de documento
-{% endembed %}
+## Buscar un script
 
-El vídeo muestra la lista de scripts con filtro y orden, cómo activar y desactivar, copiar, el historial de versiones y la eliminación con confirmación.
+1. Abra **Ajustes → Tipos de Documento**.
+2. En el tipo de documento que quiera gestionar, seleccione **Guiones**. La página muestra la lista de scripts de ese tipo de documento.
+3. Busque por nombre o use **Todo**, **Activo** e **Inactivo** para acotar la lista. También puede ordenarla por nombre o por fecha de modificación.
 
-Abra el tipo de documento y su administración de scripts. La lista muestra los scripts disponibles y los controles de edición, duplicación y estado. Los nombres están ocultos en este ejemplo.
+Cada tarjeta muestra el nombre del script, el disparador, la versión y el estado. El lápiz abre el editor; el icono de copiar duplica el script. **Nuevo** abre el editor para crear un script nuevo.
 
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon-es.png" alt="Administración de scripts con controles de edición y nombres ocultos."><figcaption><p>Administración de scripts con controles de edición y nombres ocultos.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc654-script-scripts-list-inactive-es-20261011.png" alt="Lista de scripts del tipo de documento Factura con un ejemplo inactivo y los filtros Todo, Activo e Inactivo"><figcaption><p>Compruebe el estado a la derecha de la tarjeta del script antes de cambiarlo.</p></figcaption></figure>
 
-Filtre por estado o busque el script previsto antes de abrirlo. Revise el tipo de documento, el evento de ejecución y el código antes de guardar cambios. No active, duplique ni elimine un script solo para comprobar el aspecto de la interfaz.
+## Activar o desactivar un script
 
-Los controles y la disponibilidad dependen de sus permisos. Pruebe cualquier cambio previsto con documentos representativos antes de usarlo en un flujo real.
+Use el interruptor **Activo/Inactivo** de la tarjeta del script. El cambio se guarda de inmediato; los contadores de la lista se actualizan para mostrar el resultado. Un script inactivo sigue disponible para consultarlo o editarlo, pero no se ejecuta durante el procesamiento de documentos.
+
+**Compruebe el estado después de crear un script.** En la interfaz actual del Sandbox, al guardar un script nuevo se crea una versión activa y la tarjeta queda en **Activo**. Páselo a **Inactivo** si solo es un borrador o un ejemplo de prueba.
+
+## Cambiar un script existente
+
+1. Seleccione la tarjeta del script o su icono de lápiz. Una versión publicada es de solo lectura, así que no puede escribir sobre ella directamente.
+2. En **Historial de versiones**, seleccione el icono de lápiz de la versión que quiera cambiar. Esto crea un **Borrador** a partir de esa versión.
+3. Edite el borrador y seleccione el icono **Guardar**. Revise el nombre, el tipo de documento, el disparador y el código antes de guardar.
+4. Pruebe el script modificado con documentos representativos en un entorno de pruebas. Cuando esté listo, seleccione el icono de verificación del borrador en **Historial de versiones** para convertir esa versión en la activa.
+5. Vuelva a la lista de Scripts y compruebe el interruptor **Activo/Inactivo** de la tarjeta. La versión marcada como **ACTIVO** en el Historial de versiones indica la versión seleccionada; el interruptor de la tarjeta controla si el script se ejecuta.
+
+<figure><img src="../../../../../.gitbook/assets/dbdc654-script-script-published-version-es-20261011.png" alt="Versión publicada del script mostrada como solo lectura con un mensaje para clonarla como borrador"><figcaption><p>Una versión publicada no se puede editar directamente. Use el lápiz del Historial de versiones para crear un borrador.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/dbdc654-script-script-editable-draft-es-20261011.png" alt="Borrador editable en el Historial de versiones junto a la versión activa del script"><figcaption><p>Guarde y revise el borrador antes de convertirlo en la versión activa.</p></figcaption></figure>
+
+Para ver ejemplos de scripts y las funciones disponibles, consulte [Programación en DocBits](scripting-in-docbits/README.md).

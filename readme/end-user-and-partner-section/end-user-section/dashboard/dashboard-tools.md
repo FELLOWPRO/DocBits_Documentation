@@ -5,7 +5,7 @@ De hulpmiddelen staan naast het zoekvak. Beweeg de aanwijzer over een pictogram 
 | Hulpmiddel | Gebruik |
 | --- | --- |
 | Vernieuwen | Laad de lijst en statussen opnieuw. Een wijzigingsindicator betekent dat nieuwere gegevens beschikbaar zijn. |
-| Geavanceerde instellingen (tandwiel) | Open kolominstellingen, sneltoetsen en het e-mailimportlogboek. Organisatie-instellingen vereisen beheerdersrechten. |
+| Geavanceerde instellingen (tandwiel) | Open **Meer instellingen**, de lijst **Sneltoetsen**, het **Importlogboek** en het venster **Kolommeninstellingen**. Instellingen voor de hele organisatie vereisen beheerdersrechten. |
 | Document scannen | Open het scanvenster wanneer scannen is ingeschakeld en een geschikte scanner beschikbaar is. Kies apparaat en instellingen voordat u begint. |
 | Analyse | Toon statusstatistieken en kies een categorie om de lijst te filteren. |
 | E-mailimport starten | Start een import met de bestaande postvakconfiguratie. Deze actie stelt geen postvak in. |

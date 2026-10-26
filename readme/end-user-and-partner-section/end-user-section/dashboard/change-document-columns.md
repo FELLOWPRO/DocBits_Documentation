@@ -1,7 +1,7 @@
 # Documentkolommen wijzigen
 
-1. Open het tandwiel naast het zoekvak.
-2. Open de kolominstellingen.
+1. Kies het tandwiel **Geavanceerde instellingen** rechts van de zoekbalk van het dashboard.
+2. Kies de knop **Kolommeninstellingen** in het menu.
 3. Zoek in de verborgen of zichtbare kolommen. Selecteer kolommen en verplaats ze met de pijlen.
 4. Versleep de handgrepen van zichtbare kolommen om ze te ordenen.
 5. Voeg zo nodig velden toe door een documenttype en de gewenste velden te kiezen.

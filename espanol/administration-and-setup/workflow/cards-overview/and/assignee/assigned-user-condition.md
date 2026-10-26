@@ -1,6 +1,6 @@
 # Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-assignee-01-es-20261023.png" alt="Asignado a El usuario asignado Operador es uno de Usuarios" width="552"><figcaption></figcaption></figure>
 
 **Propósito**
 

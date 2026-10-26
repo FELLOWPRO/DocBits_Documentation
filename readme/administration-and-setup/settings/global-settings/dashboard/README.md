@@ -48,6 +48,7 @@ The following details are included:
   * **Only for Admin**: Only users with Admin privileges can restart documents, regardless of permissions granted to non-admin users.
   * **Only Admin and Assignee**: Only users with Admin privileges and the assigned user can restart the document.
   * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can restart documents.
+* **Pending Input access (days)**: How many days a user who was asked for input in the Activity Stream can open the document read-only, after which the link no longer works. The default is 14 days; access also ends as soon as the document moves on. See [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
 

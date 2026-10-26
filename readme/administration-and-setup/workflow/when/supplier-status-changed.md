@@ -12,7 +12,7 @@ Diese Workflow-Karte startet einen Workflow (Auslöser), wenn sich der Status ei
    * **Beschreibung:** Legt fest, ob der neue Lieferantenstatus einer der ausgewählten Status sein soll oder keiner von ihnen.
    * **Optionen:**
      * **Ist:** Die Bedingung ist wahr, wenn der neue Status einer der ausgewählten Status ist.
-     * **Ist nicht:** Die Bedingung ist wahr, wenn der neue Status keiner der ausgewählten Status ist.
+     * **Ist nicht:** Die Bedingung ist wahr, wenn eine Änderung des Lieferantenstatus den Workflow gestartet hat und der neue Status keiner der ausgewählten Status ist.
 2. **Status**
    * **Beschreibung:** Die Lieferantenstatus, mit denen der neue Status verglichen wird.
    * **Optionen:** Einer oder mehrere der folgenden:
@@ -28,10 +28,10 @@ Diese Workflow-Karte startet einen Workflow (Auslöser), wenn sich der Status ei
 * **Bedingungsauswertung:** Die Karte vergleicht den an den Workflow übergebenen Status mit den auf der Karte ausgewählten Status.
 * **Ausführung der Aktion:**
   * **True-Bedingung:**\
-    Mit **Ist** ist der neue Status einer der ausgewählten Status, mit **Ist nicht** ist er es nicht. Der Workflow wird mit den nächsten Karten fortgesetzt.
+    Mit **Ist** ist der neue Status einer der ausgewählten Status. Mit **Ist nicht** hat eine Änderung des Lieferantenstatus den Workflow gestartet und der neue Status ist keiner der ausgewählten Status. Der Workflow wird mit den nächsten Karten fortgesetzt.
   * **False-Bedingung:**\
     Ist die Bedingung nicht erfüllt, ist die Karte nicht erfüllt und die nachfolgenden Schritte werden nicht ausgeführt.
-* **Hinweis zu „Ist nicht“:** Auch ein Bestellimport startet alle dokumentunabhängigen Workflows, einschließlich Workflows mit dieser Karte. Ein Bestellimport übergibt keinen Lieferantenstatus, daher macht mit **Ist nicht** auch ein Bestellimport die Karte wahr und der Workflow läuft. Die Kombination von **Ist nicht** mit weiteren Bedingungen kann helfen, den Workflow auf Lieferantenereignisse zu beschränken.
+* **Andere dokumentunabhängige Ereignisse:** Auch ein Bestellimport startet alle dokumentunabhängigen Workflows, einschließlich Workflows mit dieser Karte. Ein solcher Lauf erfüllt die Karte mit keinem der beiden Operatoren, daher laufen die Schritte danach nur bei Änderungen des Lieferantenstatus.
 * **Fehlende Daten:** Ist auf der Karte kein Status ausgewählt, wertet die Karte die Bedingung nicht aus. Sie meldet die fehlende Eingabe (oder einen Fehler) im Workflow-Protokoll, und die nachfolgenden Schritte werden nicht ausgeführt.
 * **Ungültiger Operator:** Ist der Operator weder **Ist** noch **Ist nicht**, meldet die Karte einen Fehler in der Kartenkonfiguration im Workflow-Protokoll.
 

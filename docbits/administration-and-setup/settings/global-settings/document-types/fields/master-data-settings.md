@@ -1,5 +1,13 @@
 # Master Data Settings
 
+## Video tutorial: Master data and lists of values
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/en.mp4" %}
+Master data sources, lists of values and master data settings in DocBits
+{% endembed %}
+
+The video shows the master data sources, the lists of values and the master data settings of a document type.
+
 Master Data Settings connect a document's validation fields to data stored under [Lookup Master Data](../../../document-processing/master-data-lookup.md). Use **Lookup Master Data** to find and fill matching records. Use **LOV Master Data** to offer a list of values from a dataset.
 
 ## Open the settings

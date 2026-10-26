@@ -1,57 +1,29 @@
-# Call Api
+# API aufrufen
 
-<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-## Zweck:
+<!-- workflow-card-call-api-contract-20261022 -->
 
-Die Workflow-Karte **"Call API"** ermöglicht es Benutzern, HTTP-Anfragen direkt aus dem Workflow an angegebene API-Endpunkte zu senden. Diese Karte unterstützt verschiedene HTTP-Methoden und ermöglicht eine dynamische Interaktion mit externen Systemen durch das Senden von Parametern und Daten. Sie optimiert die Integration mit Drittanbieterdiensten und benutzerdefinierten APIs und gewährleistet eine nahtlose Kommunikation.
+## Zweck
 
-## Bestandteile der Karte:
+Mit `call_api` rufe ich einen Endpunkt innerhalb der konfigurierten DocBits-API auf. Der Endpunkt ist ein relativer Pfad, der an die Basisadresse der DocBits-API angehängt wird. Eine beliebige externe URL richtet keine Integration zu einer fremden API ein.
 
-1. **API-Endpunkt**
-   * **Beschreibung:** Der Ziel-Endpunkt der **DocBits API**, mit dem diese Karte interagiert.
-   * **Detail:** Ein Textfeld, in dem Benutzer den Endpunkt für die API-Anfrage angeben.
-2. **HTTP-Methode**
-   * **Beschreibung:** Die Art der durchzuführenden HTTP-Anfrage.
-   * **Optionen:**
-     1. **GET:** Ruft Daten vom angegebenen Endpunkt ab.
-     2. **POST:** Sendet Daten an den Endpunkt.
-     3. **PUT:** Aktualisiert vorhandene Daten am Endpunkt.
-     4. **DELETE:** Entfernt Daten am Endpunkt.
-3. **Parameter**
-   * **Beschreibung:** Abfrageparameter, die in die API-Anfrage aufgenommen werden.
-   * **Detail:** Ein Textfeld oder eine Liste zur Eingabe von Schlüssel-Wert-Paaren für die Anfrage-URL.
-4. **Daten**
-   1. **Beschreibung:** Die im Body der API-Anfrage zu sendende Nutzlast (gilt für die Methoden POST und PUT).
-   2. **Detail:** Ein Feld zur Eingabe der Daten in JSON.
+## Konfiguration
 
-## Funktionalität:
+Tragen Sie Endpunktpfad, HTTP-Methode, Abfrageparameter und die vom Endpunkt unterstützten Anfragedaten ein. Die Anfrage verwendet den aktuellen DocBits-Benutzerkontext. Fehlende Werte für `org_id` und `triggered_by_docflow` werden automatisch ergänzt. Parameter- und Datenobjekte beziehungsweise ihre unterstützte Textdarstellung müssen zum Format dieser Kartenversion passen. Die Version bietet keine allgemeine Zuordnung von JSON-Antwortfeldern.
 
-**Bedingungsauswertung:** Das System wertet die in den Abschnitten "Where" und "And" definierten Bedingungen aus:
+## Ergebnis und Grenzen
 
-* Sind beide Bedingungen **erfüllt**, wird die API-Anfrage wie konfiguriert ausgeführt.
-* Ist eine der Bedingungen **nicht erfüllt**, wird die Karte nicht ausgeführt, und es erfolgt kein API-Aufruf.
+Der Antworttext wird in einen Wahrheitswert umgewandelt: Reines `true`, `1`, `yes` oder `on` ergibt wahr; unbekannte Antworten einschließlich beliebiger JSON-Objekte ergeben standardmäßig falsch. Der HTTP-Status allein bestimmt diesen Wahrheitswert nicht. Zeitüberschreitungen oder Anfragefehler ergeben falsch. Im Kartentest wird der Aufruf nur simuliert und ohne Anfrage wahr zurückgegeben; das belegt weder Anmeldung noch Erreichbarkeit oder Endpunktverhalten.
 
-**Ausführung der API-Anfrage:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* Die Karte sendet die HTTP-Anfrage mit der ausgewählten Methode an den angegebenen Endpunkt.
-* Alle angegebenen Parameter werden an die URL angehängt, und die Daten werden (falls zutreffend) in den Anfrage-Body aufgenommen.
+## Praxisbeispiel
 
-## Einrichtung und Konfiguration:
+Wenn ich einen Wahrheitswert von einem konfigurierten DocBits-API-Endpunkt benötige, verwende ich diese Karte nach den erforderlichen Bedingungen. Wählen Sie für einen isolierten Test einen vorhandenen, dokumentierten, nur lesenden DocBits-Endpunkt mit passendem Wahrheitswert-Vertrag und die passende Methode, etwa `GET`. Verwenden Sie ausschließlich dessen unterstützte Demo-Parameter.
 
-1. **API-Endpunkt definieren:**\
-   Geben Sie die URL der API ein, die Sie aufrufen möchten.
-2. **HTTP-Methode auswählen:**\
-   Wählen Sie eine der unterstützten Methoden (GET, POST, PUT, DELETE) entsprechend den Anforderungen Ihrer API.
-3. **Parameter angeben:**\
-   Fügen Sie die erforderlichen Abfrageparameter als Schlüssel-Wert-Paare hinzu.
-4. **Daten einfügen (falls zutreffend):**\
-   Geben Sie bei den Methoden POST oder PUT die im Anfrage-Body zu sendenden Daten an.
-5. **Bedingungskonfiguration:**\
-   Konfigurieren Sie die Abschnitte "Where" und "And", um festzulegen, wann der API-Aufruf erfolgen soll.
+Erwartetes Ergebnis und Gegenbeispiel: Bei einer hypothetischen HTTP-Antwort `200` mit dem vollständigen Text `true` ist das Kartenergebnis wahr. Bei `false` ist es falsch. Ein Objekt wie `{"approved": true}` wird nicht automatisch zu wahr zugeordnet. Prüfen Sie die tatsächliche Antwort und die Protokolle getrennt. Dieses Beispiel wurde am Ausführungscode geprüft; es wurde keine Anfrage und kein Workflow ausgeführt.
 
-## Fazit:
+## Lernweg und Rückschreibvertrag
 
-Die Workflow-Karte **"Call API"** verbessert die Workflow-Automatisierung, indem sie eine direkte Interaktion mit externen Systemen ermöglicht. Durch flexible Konfigurationen für Endpunkte, Methoden und Daten stellt sie sicher, dass Workflows nahtlos in Drittanbieter-APIs oder benutzerdefinierte Backends integriert werden können. Die Möglichkeit, API-Aufrufe bedingt auszuführen, gewährleistet Präzision und Effizienz bei der Automatisierung externer Kommunikation.
-
-***
+[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md) erklärt Simulation, Antwortauswertung und den ausdrücklich zu vereinbarenden Rückschreibweg. Eine erfolgreiche Anfrage stellt nicht automatisch ein Feld wie `api.response.cost_center` bereit.

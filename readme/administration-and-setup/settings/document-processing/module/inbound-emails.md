@@ -19,7 +19,7 @@ Gehen Sie zu **Einstellungen → Dokumentverarbeitung → Import** und öffnen S
 
 Der Einrichtungsassistent öffnet sich. Das erste Feld, **Protokoll**, bestimmt, wie DocBits sich verbindet — wählen Sie **IMAP**, **OAuth Office365** oder **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Protokoll-Auswahl mit IMAP, OAuth Office365 und OAuth Office365 - Tenant"><figcaption><p>Die Auswahl <strong>Protokoll</strong> bietet die drei Verbindungsarten.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-de.png" alt="Protokollauswahl im deutschen Assistenten für eingehende E-Mails."><figcaption><p>Protokollauswahl im deutschen Assistenten für eingehende E-Mails.</p></figcaption></figure>
 
 #### IMAP
 
@@ -51,7 +51,7 @@ Die **Dokumentenweiterleitung** legt fest, wohin die importierten Dokumente gehe
 
 Für diese Methode muss zuerst das Modul **Eingehende E-Mails** aktiviert sein. Gehen Sie zu **Einstellungen → Dokumentverarbeitung → Modul**, öffnen Sie den Abschnitt **Dokumenttyp**, suchen Sie **Eingehende E-Mails** und aktivieren Sie den Schalter.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt="Aktivieren des Moduls Eingehende E-Mails"><figcaption><p>Aktivieren Sie <strong>Eingehende E-Mails</strong> unter Einstellungen → Dokumentverarbeitung → Modul.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_1-de.png" alt="Aktivieren des Moduls Eingehende E-Mails"><figcaption><p>Aktivieren Sie <strong>Eingehende E-Mails</strong> unter Einstellungen → Dokumentverarbeitung → Modul.</p></figcaption></figure>
 
 Sobald es aktiviert ist, erscheint unter **Einstellungen → Dokumentverarbeitung → Import** ein Abschnitt **Eingehende E-Mails**. Er enthält alles, was zum Empfang weitergeleiteter Dokumente nötig ist:
 

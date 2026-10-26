@@ -1,19 +1,19 @@
-# Create a New Task and assign it to the User in Document Field
+# Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer im Dokumentfeld zu
 
-<figure><img src="../../../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f325db80cf3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Create Field-Based Task or Notification"** wird verwendet, um Aufgaben oder Benachrichtigungen zu erstellen, die dynamisch Benutzern zugewiesen werden, die innerhalb bestimmter Dokumentfelder identifiziert werden. Diese Karte bietet einen optionalen Ersatzmechanismus, um einen reibungslosen Workflow-Ablauf auch dann sicherzustellen, wenn das Dokumentfeld keinen gültigen Benutzer angibt.
+Die Workflow-Karte **„Feldbasierte Aufgabe oder Benachrichtigung erstellen“** wird verwendet, um Aufgaben oder Benachrichtigungen zu erstellen, die dynamisch Benutzern zugewiesen werden, die innerhalb bestimmter Dokumentfelder identifiziert werden. Diese Karte bietet einen optionalen Ersatzmechanismus, um einen reibungslosen Workflow-Ablauf auch dann sicherzustellen, wenn das Dokumentfeld keinen gültigen Benutzer angibt.
 
-## **Bestandteile der Karte:**&#x20;
+## **Bestandteile der Karte:**
 
 1. **Titel**
    * **Beschreibung**: Gibt den Titel der Aufgabe oder Benachrichtigung an.
-   * **Detail**: Wird verwendet, um die erstellte Aufgabe oder Benachrichtigung zu benennen und zu kennzeichnen.
+   * **Detailliert**: Wird verwendet, um die erstellte Aufgabe oder Benachrichtigung zu benennen und zu kennzeichnen.
 2. **Beschreibung**
    * **Beschreibung**: Liefert zusätzliche Details zur Aufgabe oder Benachrichtigung.
-   * **Detail**: Stellt sicher, dass der Empfänger den Zweck und Kontext der Aufgabe oder Benachrichtigung versteht.
+   * **Detailliert**: Stellt sicher, dass der Empfänger den Zweck und Kontext der Aufgabe oder Benachrichtigung versteht.
 3. **Priorität**
    * **Beschreibung**: Legt die Dringlichkeit der Aufgabe oder Benachrichtigung fest.
    * **Optionen**:
@@ -22,7 +22,7 @@ Die Workflow-Karte **"Create Field-Based Task or Notification"** wird verwendet,
      * **Niedrig**: Kann zu einem späteren Zeitpunkt bearbeitet werden.
 4. **Feldname**
    * **Beschreibung**: Gibt das Dokumentfeld an, das zur Zuweisung der Aufgabe oder Benachrichtigung verwendet wird.
-   * **Detail**: Das ausgewählte Feld bestimmt dynamisch den Benutzer, dem die Aufgabe oder Benachrichtigung zugewiesen wird. Ist das Feld leer oder ungültig, wird die Aufgabe oder Benachrichtigung dem aus der Dropdown-Liste ausgewählten Ersatzbenutzer zugewiesen.
+   * **Detailliert**: Das ausgewählte Feld bestimmt dynamisch den Benutzer, dem die Aufgabe oder Benachrichtigung zugewiesen wird. Ist das Feld leer oder ungültig, wird die Aufgabe oder Benachrichtigung dem aus der Dropdown-Liste ausgewählten Ersatzbenutzer zugewiesen.
 5. **E-Mail-Benachrichtigung**
    * **Beschreibung**: Konfiguriert, ob der zugewiesene Benutzer per E-Mail benachrichtigt wird.
    * **Optionen**:
@@ -30,20 +30,20 @@ Die Workflow-Karte **"Create Field-Based Task or Notification"** wird verwendet,
      * **False**: Es wird keine E-Mail-Benachrichtigung gesendet.
 6. **Ersatzbenutzer**
    * **Beschreibung**: Ermöglicht die Auswahl eines Benutzers aus einer Dropdown-Liste, um die Aufgabe oder Benachrichtigung zuzuweisen, wenn im Dokumentfeld kein gültiger Benutzer gefunden wird.
-   * **Detail**: Stellt sicher, dass die Aufgabe oder Benachrichtigung auch dann zugewiesen wird, wenn das Dokumentfeld leer oder ungültig ist.
+   * **Detailliert**: Stellt sicher, dass die Aufgabe oder Benachrichtigung auch dann zugewiesen wird, wenn das Dokumentfeld leer oder ungültig ist.
 
 ## **Zusätzliche Komponenten in Version 3:**
 
-1. **Benachrichtigungstyp**&#x20;
+1. **Benachrichtigungstyp**
    * **Beschreibung**: Gibt an, ob die Karte eine Aufgabe oder eine Benachrichtigung erstellt.
    * **Optionen**:
-     * **Task**: Erstellt eine Aufgabe, die dem angegebenen Benutzer zugewiesen wird.
+     * **Aufgabe**: Erstellt eine Aufgabe, die dem angegebenen Benutzer zugewiesen wird.
      * **Notification**: Sendet eine Benachrichtigung, anstatt eine Aufgabe zu erstellen.
 
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Erstellung von Aufgabe oder Benachrichtigung**:
   * Weist die Aufgabe oder Benachrichtigung dem im Dokumentfeld identifizierten Benutzer zu.
   * In Version 3 ist die Erstellung entweder einer Aufgabe oder einer Benachrichtigung möglich.
@@ -62,4 +62,16 @@ Die Workflow-Karte **"Create Field-Based Task or Notification"** wird verwendet,
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Create Field-Based Task or Notification"** optimiert das Management von Aufgaben und Benachrichtigungen, indem sie Verantwortlichkeiten dynamisch auf Basis von Dokumentfeldern zuweist. Ihr Ersatzbenutzer-Mechanismus und die erweiterten Optionen in Version 3 bieten Flexibilität und stellen sicher, dass Aufgaben oder Benachrichtigungen stets zugewiesen werden, auch wenn die Dokumentdaten unvollständig sind.
+Die Workflow-Karte **„Feldbasierte Aufgabe oder Benachrichtigung erstellen“** optimiert das Management von Aufgaben und Benachrichtigungen, indem sie Verantwortlichkeiten dynamisch auf Basis von Dokumentfeldern zuweist. Ihr Ersatzbenutzer-Mechanismus und die erweiterten Optionen in Version 3 bieten Flexibilität und stellen sicher, dass Aufgaben oder Benachrichtigungen stets zugewiesen werden, auch wenn die Dokumentdaten unvollständig sind.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Erstellen Sie eine Überprüfungsaufgabe für den in den Dokumentdaten genannten Benutzer.
+
+**Konfiguration:** Wählen Sie `reviewer_name`, Ersatzbenutzer `Demo Reviewer A`, Titel `Review invoice` und Priorität.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein auflösbarer Benutzer im Feld erhält die Aufgabe. Ein leeres oder nicht auflösbares Feld verwendet den konfigurierten Fallback; Testen Sie beide Pfade.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

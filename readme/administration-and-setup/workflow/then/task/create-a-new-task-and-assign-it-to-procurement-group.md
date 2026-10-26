@@ -1,10 +1,10 @@
-# Create a New Task and assign it to Procurement Group
+# Erstellen Sie eine neue Aufgabe und weisen Sie sie der Beschaffungsgruppe zu
 
-<figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Create Task for Procurement Group"** erstellt eine neue Aufgabe, die dynamisch der in der Konfiguration angegebenen Beschaffungsgruppe zugewiesen wird. Diese Aufgabe kann mit unterschiedlichen Prioritätsstufen zugewiesen werden, und es kann eine optionale E-Mail-Benachrichtigung gesendet werden, um die Gruppe über die Aufgabe zu informieren. Diese Karte stellt sicher, dass das richtige Team auf Basis der Workflow-Bedingungen benachrichtigt wird.
+Die Workflow-Karte **„Aufgabe für Beschaffungsgruppe erstellen“** erstellt eine neue Aufgabe, die dynamisch der in der Konfiguration angegebenen Beschaffungsgruppe zugewiesen wird. Diese Aufgabe kann mit unterschiedlichen Prioritätsstufen zugewiesen werden, und es kann eine optionale E-Mail-Benachrichtigung gesendet werden, um die Gruppe über die Aufgabe zu informieren. Diese Karte stellt sicher, dass das richtige Team auf Basis der Workflow-Bedingungen benachrichtigt wird.
 
 ## **Bestandteile der Karte:**
 
@@ -32,7 +32,7 @@ Die Workflow-Karte **"Create Task for Procurement Group"** erstellt eine neue Au
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Aufgabenerstellung:**\
   Die Karte erstellt eine neue Aufgabe und weist sie der im Feld "Gruppenname" definierten Beschaffungsgruppe zu. Diese Aufgabe enthält den angegebenen Titel, die Beschreibung und die Prioritätsstufe.
 * **E-Mail-Benachrichtigung:**\
@@ -50,3 +50,15 @@ Die Workflow-Karte **"Create Task for Procurement Group"** erstellt eine neue Au
 ## **Fazit:**
 
 Die Workflow-Karte "Create Task for Procurement Group" stellt sicher, dass Aufgaben automatisch der passenden Beschaffungsgruppe mit definierten Prioritäten zugewiesen werden. Diese Karte kann die Gruppe außerdem per E-Mail benachrichtigen, um sicherzustellen, dass Aufgaben zeitnah bearbeitet werden, und steigert so die Workflow-Effizienz und das Aufgabenmanagement.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Bitten Sie das Einkaufsteam, eine Rechnungsausnahme zu überprüfen.
+
+**Konfiguration:** Wählen Sie `Demo Procurement`, Titel `Review order variance`, Beschreibung und Priorität.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Für die ausgewählte Beschaffungsgruppe wird eine Aufgabe erstellt. Überprüfen Sie den Aufgabenempfänger und die Beschreibung. Die Erstellung allein bestätigt nicht, dass die Abweichung behoben wurde.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

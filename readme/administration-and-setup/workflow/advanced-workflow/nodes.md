@@ -1,18 +1,56 @@
 # Knoten
 
+## Aktueller Konfigurations- und Ergebnisvertrag
+
+ALL verlangt einen passenden verbundenen Ausgang von **jeder unterschiedlichen Quelle**. ANY und OR benötigen mindestens eine passende Quelle. Verbinden Sie eine Quelle über Grün und Orange, zählt sie weiterhin einmal. OR erzeugt keine exklusive Verzweigung und beendet andere Aktionen nicht. Auch ANY ist keine Zusage „der schnellste Zweig gewinnt“.
+
+Im geprüften Scheduler warten diese Knoten zunächst auf alle eingehenden Vorgänger. Bleibt eine Quelle wegen eines nicht gewählten Zweigs unerreichbar, überspringt der echte Ablauf die wartende Zusammenführung. Der Testmodus kann sie mit den vorhandenen Ergebnissen trotzdem auswerten. **Ein grüner Teiltest beweist deshalb nicht, dass derselbe Graph im Dokumentlauf weiterläuft.**
+
+Für zwei verpflichtende Prüfungen führen Sie beide Prüfungen tatsächlich aus und verbinden passende Ergebnisse mit ALL. Für alternative Routen in dieser Version verwenden Sie die direkte gemeinsame Then-Abschlusskarte aus dem v2-Geschäftsfall. Diese Zusammenführung ist für gegenseitig ausschließende Routen gedacht; sie ersetzt keine Schranke für mehrere gleichzeitig ausgeführte Aktionen.
+
+Prüfen Sie Quelle, verbundenen Ausgang, gewählten Ausgang und tatsächliche Erreichbarkeit getrennt. Eine Quelle mit Error bleibt ein Fehler im Gesamtlauf, auch wenn ANY/OR anschließend erfolgreich sind. Ein nicht erfülltes ALL besitzt im geprüften Code zusätzlich einen Fehlerhinweis; nur auf seine orange Farbe zu schauen genügt nicht.
+
+[P0: Wait ALL, Wait ANY und OR richtig verbinden](../masterclass/control-nodes.md)
+
+
+## Video: Knoten und Routen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.mp4" %}
+
+[Untertitel (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/de.vtt)
+
+<details>
+<summary>Transkript</summary>
+
+Start ist der manuelle Einstieg. When reagiert auf Ereignisse. Beide haben keinen Eingang. And prüft Bedingungen, Then führt Aktionen aus. Beide Editoren verwenden denselben Kartenkatalog.
+
+Ziehen Sie einen Ausgang zum nächsten Eingang. Blau ist im Editor der Erfolgsweg. Orange bedeutet Bedingung falsch, Rot einen Ausführungsfehler. And hat drei Ergebnisse. Then hat Erfolg und Fehler. In Ergebnisansichten ist Erfolg grün.
+
+Prüfen Sie, ob ein Rechnungsbetrag einen Grenzwert überschreitet. Verbinden Sie Blau mit einer Freigabeaufgabe, Orange mit normaler Verarbeitung und Rot mit einer Fehlerbehandlung. Eine falsche Bedingung folgt ihrem verbundenen Weg. Sie stoppt nicht alle Zweige.
+
+Wait ALL führt Zweige zusammen. Jede Quelle muss einen zum Kontrollknoten verbundenen Weg genommen haben. Verbinden Sie beide Prüfungen und die nächste Aktion. Ein nicht gewählter Weg kann kein erforderliches Ergebnis liefern.
+
+Wait ANY und OR führen Zweige zusammen. Mindestens eine Quelle muss einen verbundenen Weg genommen haben. OR benötigt zwei verschiedene Quellknoten. Diese Knoten erzeugen keine exklusive Auswahl und brechen andere Aktionen nicht ab.
+
+Verarbeitungsknoten müssen von einem Einstieg erreichbar sein. Vermeiden Sie Schleifen und eingehende Verbindungen an Einstiegsknoten. Fügen Sie eine Then Aktion hinzu und validieren Sie. Importierte Delay Knoten brauchen eine positive Dauer. Das aktuelle Hinzufügen Menü bietet Delay nicht an.
+
+</details>
+
+[Alle fünf Kapitel ansehen](../advanced-workflow-videos.md)
+
 Ein Advanced Workflow ist ein Graph aus **Knoten**, die durch Kanten verbunden sind. Sie fügen Knoten über das Menü **+ Add** hinzu (oder per Rechtsklick auf die Arbeitsfläche) und verbinden sie, um den Ausführungsablauf festzulegen.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Menü zum Hinzufügen von Knoten mit den verfügbaren Knotentypen"><figcaption><p>Das Menü <strong>+ Add</strong> für Knoten — die verfügbaren Knotentypen.</p></figcaption></figure>
 
 ## Knotentypen
 
-- **Start** — der Einstiegspunkt des Workflows. Wird automatisch hinzugefügt; jeder Ablauf beginnt hier.
+* **Start** — manueller Einstieg; in der geprüften Oberfläche benötigt der gespeicherte Graph zusätzlich einen When-Einstieg.
 - **When** — eine Trigger-Karte, identisch mit der im Standard-Builder.
 - **And** — eine Bedingungskarte. Sie wird zu wahr oder falsch ausgewertet und kann den Ablauf verzweigen.
 - **Then** — eine Aktionskarte, die Arbeit ausführt (Felder setzen, Aufgaben erstellen, APIs aufrufen, …).
-- **Wait ALL** — wartet, bis *alle* eingehenden Zweige abgeschlossen sind, bevor fortgefahren wird.
-- **Wait ANY** — fährt fort, sobald *ein beliebiger* eingehender Zweig abgeschlossen ist.
-- **OR** — verzweigt den Ablauf auf alternative Pfade.
+* **Wait ALL** — jede unterschiedliche Quelle muss einen verbundenen Ausgang gewählt haben. Der Scheduler wartet auf alle Vorgänger.
+* **Wait ANY** — mindestens eine Quelle muss einen verbundenen Ausgang gewählt haben. Der Scheduler wartet trotzdem auf alle Vorgänger; kein Wettlauf.
+* **OR** — mindestens eine passende Quelle; keine exklusive Auswahl. Weniger als zwei Quellen erzeugen im Backend eine Warnung.
 - **Note** — eine Freitext-Anmerkung auf der Arbeitsfläche; sie hat keinen Einfluss auf die Ausführung.
 
 Die Knoten **When / And / Then** verwenden exakt dieselben Karten, die im Abschnitt [Karten](../cards-overview.md) beschrieben sind.

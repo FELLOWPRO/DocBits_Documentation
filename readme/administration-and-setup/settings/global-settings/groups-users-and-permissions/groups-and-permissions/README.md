@@ -1,26 +1,39 @@
 # Gruppen und Berechtigungen
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
+DocBits-Anleitung zu Gruppen und Berechtigungen: Benutzerrollen und Zugriffsrechte festlegen und den Arbeitsbereich absichern
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/docbits_purchase_order_permission.png" alt="Bestellung Berechtigung Übersicht"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/groups_and_permissions-de.png" alt="Gruppen und Berechtigungen"><figcaption><p>Details einer ausgewählten Gruppe in der deutschen Oberfläche. Namen und Beschreibungen sind ausgeblendet.</p></figcaption></figure>
 
-**Komponenten des Abschnitts Gruppen und Berechtigungen**
+Mit Gruppen und Berechtigungen steuern Sie, welche Benutzer auf bestimmte Dokumenttypen zugreifen und welche Aktionen sie ausführen dürfen.
 
-**Gruppen und Berechtigungen aktivieren/deaktivieren:** Ein Schalter, der es dem Systemadministrator ermöglicht, die Nutzung von Gruppen und Berechtigungen über die Plattform zu aktivieren oder zu deaktivieren. Wenn dieser deaktiviert ist, kann das System standardmäßig auf ein weniger granulareres Zugriffssteuerungsmodell zurückgreifen.
+## Gruppen und Berechtigungen aktivieren/deaktivieren
 
-**Gruppenliste:** Zeigt die Liste der verfügbaren Benutzergruppen innerhalb der Organisation. Jede Gruppe kann mit spezifischen Berechtigungen konfiguriert werden. Administratoren können neue Gruppen erstellen, indem sie auf die Schaltfläche „+ Neu“ klicken.
+Verwenden Sie den Schalter oben auf der Seite, um das System für Gruppen und Berechtigungen ein- oder auszuschalten. Wenn es deaktiviert ist, verwendet das System ein einfacheres Zugriffsmodell ohne gruppenbasierte Einschränkungen.
 
-**Berechtigungstabelle:**
+## Gruppenliste
 
-* Wird angezeigt, sobald eine Gruppe ausgewählt oder eine neue Gruppe konfiguriert wird.
-* Listet alle vom System erkannten Dokumenttypen auf (z. B. RECHNUNG, GUTSCHRIFT, LIEFERSCHEIN).
-* Für jeden Dokumenttyp gibt es Kontrollkästchen für verschiedene Berechtigungen:
-  * **Ansehen:** Berechtigung, das Dokument zu sehen.
-  * **Aktualisieren:** Berechtigung, das Dokument zu ändern.
-  * **Löschen:** Berechtigung, das Dokument aus dem System zu entfernen.
-  * **Erste Genehmigung:** Berechtigung, die erste Genehmigung des Dokuments durchzuführen.
-  * **Zweite Genehmigung:** Berechtigung, eine sekundäre Genehmigung (falls zutreffend) durchzuführen.
+Links sehen Sie die konfigurierten Gruppen. Verwenden Sie **Gruppe suchen**, um eine Gruppe nach ihrem Namen zu finden. Mit **+ Neu** öffnen Sie das Formular für eine neue Gruppe. Wenn Sie eine Gruppe auswählen, erscheinen rechts ihre Details, die Gruppenmitglieder und die verfügbaren Aktionen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_approval_permission.png" alt="Genehmigung Berechtigung Übersicht"><figcaption></figcaption></figure>
+## Gruppenberechtigungen konfigurieren
+
+Wählen Sie eine Gruppe links aus und öffnen Sie in ihren Details die Zugriffskontrolle über das Schildsymbol. Dort können Sie den Zugriff pro Dokumenttyp konfigurieren:
+
+| Berechtigung | Beschreibung |
+|------------|-------------|
+| **Anzeigen** | Berechtigung, Dokumente dieses Typs zu sehen. |
+| **Aktualisieren** | Berechtigung, Dokumente dieses Typs zu ändern. |
+| **Löschen** | Berechtigung, Dokumente dieses Typs zu entfernen. |
+| **Erste Genehmigung** | Berechtigung, die erste Genehmigung durchzuführen. |
+| **Zweite Genehmigung** | Berechtigung, eine zweite Genehmigungsstufe durchzuführen (falls zutreffend). |
+
+Jede Zeile der Berechtigungstabelle steht für einen Dokumenttyp (z. B. Rechnung, Gutschrift, Lieferschein). Aktivieren oder deaktivieren Sie die Kontrollkästchen, um der Gruppe Berechtigungen zu erteilen oder zu entziehen.
+
+## Eine neue Gruppe erstellen
+
+1. Klicken Sie in der Gruppenliste auf **+ Neu**.
+2. Geben Sie einen **Gruppennamen** und optional eine **Beschreibung** ein.
+3. Konfigurieren Sie die Berechtigungen für jeden Dokumenttyp.
+4. Weisen Sie der Gruppe Benutzer zu.
+5. Klicken Sie auf **Speichern**, um die Änderungen zu übernehmen.

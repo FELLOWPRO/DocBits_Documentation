@@ -2,44 +2,30 @@
 
 Nutzen Sie die Suchleiste des Dashboards, den Filterbereich, den Datumsbereich und die Dokumenttyp-Tabs, um die Dokumentliste einzugrenzen. Die Steuerungen greifen zusammen: Ein Dokument muss sowohl der aktiven Suche als auch den aktiven Filtern entsprechen, um in der Tabelle zu bleiben.
 
-## Ein Dokument anhand des Namens suchen
+Über die Suchleiste im Dashboard suchen Sie nach Dokumenten. Weitere Möglichkeiten und Suchausdrücke erklärt die [Schnellsuche](quick-search.md).
 
-1. Öffnen Sie das **Dashboard**.
-2. Geben Sie einen Teil eines Dokumentnamens in die Suchleiste über der Tabelle ein und drücken Sie **Enter**. Die Zahl im Dashboard-Abzeichen und die Tabelle aktualisieren sich und zeigen die passenden Dokumente an.
-3. Ersetzen Sie den Suchbegriff, wenn Sie ein anderes Dokument suchen möchten. Für Feldsuchen und Suchsyntax siehe [Schnellsuche](quick-search.md).
+Wählen Sie das Symbol **Filter** (drei Schieberegler) am rechten Ende der Suchleiste. Im aktuellen Filterdialog stehen **Status**, **Zugewiesen An** und **Neustart Erforderlich** zur Verfügung.
 
-<figure><img src="../../../.gitbook/assets/dbdc167_search_result_de_20261010.png" alt="Deutsches Dashboard mit einem passenden Testdokument nach der Suche nach einem Dokumentnamen"><figcaption>Die Suche nach einem Dokumentnamen grenzt die Liste der Testdokumente ein.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dashboard_filters-de.png" alt="Deutscher Filterdialog mit Status, Zugewiesen An, Neustart Erforderlich, Filter löschen und Anwenden"><figcaption><p>Der Filterdialog der deutschen DocBits-Oberfläche. Die Auswahllisten sind geschlossen; Personen- und Dokumentdaten werden nicht gezeigt.</p></figcaption></figure>
 
-## Nach Status, Zuständigkeit oder Neustart-Anforderung filtern
+* **Status**: Beschränken Sie die Liste auf einen Verarbeitungsstatus, zum Beispiel „Bereit zur Validierung“.
+* **Zugewiesen An**: Filtern Sie nach der zuständigen Person. Abhängig von der Organisationskonfiguration kann die Auswahl auch Gruppen enthalten.
+* **Neustart Erforderlich**: Zeigen Sie Dokumente an, die einen Neustart erfordern.
 
-1. Wählen Sie das **Filtersymbol** (Schieberegler) am rechten Ende der Suchleiste.
-2. Wählen Sie einen oder mehrere **Status**-Werte aus. Sie können mehrere Status gleichzeitig auswählen.
-3. Wählen Sie unter **Zugewiesen An** die Benutzer aus, deren Dokumente Sie sehen möchten. Wenn in Ihrer Organisation Gruppenberechtigungen aktiviert sind, können Gruppen in derselben Liste erscheinen. Ein separates Feld **Der Gruppe zugewiesen** gibt es in diesem Bereich nicht.
-4. Wählen Sie **Neustart Erforderlich** aus, um Dokumente anzuzeigen, die einen Neustart benötigen.
-5. Wählen Sie **Anwenden**. Wählen Sie in diesem Bereich **Filter löschen**, um diese Auswahlen zu entfernen; Suchtext und Datumsbereich sind davon unabhängige Steuerungen.
-
-<figure><img src="../../../.gitbook/assets/dbdc167_filter_panel_de_20261010.png" alt="Filterbereich des deutschen Dashboards mit Status, Zugewiesen An, Neustart Erforderlich, Filter löschen und Anwenden"><figcaption>Der aktuelle Filterbereich hat drei Kriterien und zwei Aktionen.</figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dbdc167_status_options_de_20261010.png" alt="Status-Dropdown im Filterbereich des deutschen Dashboards mit auswählbaren Verarbeitungsstatus"><figcaption>Wählen Sie die benötigten Verarbeitungsstatus aus.</figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dbdc167_assignee_options_de_20261010.png" alt="Dropdown Zugewiesen An mit den synthetischen Benutzern der Testorganisation"><figcaption>Wählen Sie unter Zugewiesen An einen Benutzer aus.</figcaption></figure>
-
-Eine Erklärung, was die einzelnen Verarbeitungsstatus bedeuten, finden Sie unter [Dokumentstatus](document-status.md).
+Wählen Sie **Anwenden**, um die Filter zu übernehmen. Mit **Filter löschen** setzen Sie die Filter zurück.
 
 ## Importzeitraum wählen
 
-Wählen Sie oberhalb der Suchleiste **30T**, **90T**, **180T**, **365T** oder **Alle**, um den Importzeitraum zu ändern. Wählen Sie **Benutzerdefiniert**, legen Sie **Start** und **Ende** fest und wählen Sie dann **Anwenden**, um einen bestimmten Zeitraum einzustellen. Die aktuelle Auswahl ist hervorgehoben.
+Je nach Suchkonfiguration zeigt das Dashboard zusätzlich Schaltflächen für voreingestellte Zeiträume und einen benutzerdefinierten Zeitraum. Bei aktivierter Volltextsuche können diese Schaltflächen ausgeblendet sein.
 
-<figure><img src="../../../.gitbook/assets/dbdc167_custom_dates_de_20261010.png" alt="Benutzerdefinierter Zeitraum im deutschen Dashboard mit Start, Ende und Anwenden"><figcaption>Benutzen Sie Benutzerdefiniert, wenn die voreingestellten Zeiträume nicht passen.</figcaption></figure>
+Wenn die Zeitauswahl sichtbar ist, können Sie den Importzeitraum auf 30, 90, 180 oder 365 Tage begrenzen oder alle Dokumente anzeigen. Für einen eigenen Zeitraum öffnen Sie **Benutzerdefiniert**, geben Start- und Enddatum an und wählen **Anwenden**.
 
-## Dokumenttyp-Tabs verwenden
+> **Hinweis:** Größere Zeiträume können die Ladezeit erhöhen.
 
-1. Wählen Sie **+** neben **Alle**. Das Menü listet die Dokumenttypen auf, die Ihrer Organisation zur Verfügung stehen.
-2. Wählen Sie einen Typ, z. B. **Rechnung**, um dessen Tab hinzuzufügen. Wählen Sie dann den neuen Tab an, um die Tabelle auf diesen Typ zu filtern. **Alle** entfernt die Typ-Beschränkung, ohne den Tab zu löschen.
-3. Um einen Typ-Tab zu entfernen, wählen Sie sein **×** an. Der Tab **Alle** kann nicht entfernt werden.
+## Nach Dokumenttyp filtern
 
-<figure><img src="../../../.gitbook/assets/dbdc167_document_type_menu_de_20261010.png" alt="Plus-Menü des deutschen Dashboards mit Rechnung als verfügbarem Dokumenttyp"><figcaption>Fügen Sie über das Plus-Menü einen Dokumenttyp-Tab hinzu.</figcaption></figure>
+1. Öffnen Sie das Plus-Symbol neben den Dokumenttyp-Registerkarten im Dashboard.
+2. Wählen Sie den gewünschten Dokumenttyp aus der Liste.
+3. Wechseln Sie über die Registerkarten zwischen den Dokumenttypen.
 
-<figure><img src="../../../.gitbook/assets/dbdc167_invoice_tab_de_20261010.png" alt="Ausgewählter Rechnung-Tab als Dokumenttyp im deutschen Dashboard mit sichtbarem Entfernen-Symbol"><figcaption>Wählen Sie den Tab an, um den Typfilter anzuwenden; mit × entfernen Sie den Tab.</figcaption></figure>
-
-Wenn das **+**-Menü keine Typen enthält, bitten Sie einen Administrator zu prüfen, welche Dokumenttypen für Ihre Organisation aktiv sind. Siehe [Dokumenttypen](../../../administration-and-setup/settings/global-settings/document-types/README.md). Um eine Kombination von Filtern für später zu speichern, siehe [Persönliche Dashboards](personal-dashboards.md).
+Um eine Dokumenttyp-Registerkarte zu entfernen, bewegen Sie den Mauszeiger darüber und wählen das eingeblendete rote X.

@@ -1,10 +1,10 @@
-# Assign document to matching sub organization
+# Ordnen Sie das Dokument der passenden Unterorganisation zu
 
-<figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5dbe455ae32f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Assign Document to Matching Sub-Organization Based on Field"** weist ein Dokument dynamisch einer Unterorganisation zu, basierend auf einem angegebenen Feld im Dokument. Wird keine passende Unterorganisation gefunden, verwendet die Karte eine vordefinierte Ersatz-Unterorganisation.
+Die Workflow-Karte **„Dokument basierend auf Feld einer passenden Unterorganisation zuordnen“** weist ein Dokument dynamisch einer Unterorganisation zu, basierend auf einem angegebenen Feld im Dokument. Wird keine passende Unterorganisation gefunden, verwendet die Karte eine vordefinierte Ersatz-Unterorganisation.
 
 ## **Bestandteile der Karte:**
 
@@ -18,7 +18,7 @@ Die Workflow-Karte **"Assign Document to Matching Sub-Organization Based on Fiel
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dynamische Zuweisung:**\
   Die Karte prüft den Wert des angegebenen Feldes und weist das Dokument der Unterorganisation zu, die diesem Wert entspricht.
 * **Ersatzmechanismus:**\
@@ -33,4 +33,16 @@ Die Workflow-Karte **"Assign Document to Matching Sub-Organization Based on Fiel
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Assign Document to Matching Sub-Organization Based on Field"** bietet Flexibilität, indem sie Dokumente dynamisch an die passende Unterorganisation weiterleitet, mit einer zusätzlichen Ersatzoption, um sicherzustellen, dass kein Dokument unzugewiesen bleibt.
+Die Workflow-Karte **„Dokument basierend auf Feld einer passenden Unterorganisation zuordnen“** bietet Flexibilität, indem sie Dokumente dynamisch an die passende Unterorganisation weiterleitet, mit einer zusätzlichen Ersatzoption, um sicherzustellen, dass kein Dokument unzugewiesen bleibt.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Wählen Sie eine Geschäftseinheit aus einem extrahierten Routing-Feld aus.
+
+**Konfiguration:** Setzen Sie das Routing-Feld `business_unit` auf den konfigurierten Unterorganisationsnamen `Demo North` und wählen Sie `Demo Default` als Fallback.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein passender Feldwert wählt `Demo North` aus. Ein unbekannter Name verwendet `Demo Default`; Testen Sie den Fallback, bevor Sie den Workflow aktivieren.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

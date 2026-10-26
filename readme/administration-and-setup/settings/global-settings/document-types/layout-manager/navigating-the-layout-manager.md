@@ -1,84 +1,47 @@
-# Navigieren im Layout-Manager
+# Im Layout Builder navigieren
 
-## Die Navigation im Layout-Manager von DocBits und das Bearbeiten von Gruppen und Feldern ist entscheidend für die Kontrolle über die Struktur und das Erscheinungsbild von Dokumenten.
+Verwenden Sie den **Layout Builder**, um die Gruppen und Felder anzuordnen, die Benutzer in einem Dokument sehen. Die Aufnahmen in diesem Artikel zeigen die deutsche Oberfläche am Beispiel des Rechnungs-Layouts in einer Sandbox-Organisation.
 
-## Hier sind die Schritte zur Verwendung des Layout-Managers und zum Bearbeiten von Gruppen und Feldern:
+## Das Rechnungs-Layout öffnen
 
-### Navigieren im Layout-Manager:
+1. Gehen Sie zu **Einstellungen → Dokumenttypen**.
+2. Suchen Sie die Karte **Rechnung** und wählen Sie darunter **Layouts**. Der Layout Builder öffnet sich für diesen Dokumenttyp.
+3. In der Kopfzeile sehen Sie den Namen des Layouts (umbenennen mit dem Stift-Symbol), den **Dokumenttyp** und den **Layouttyp**. Über den **Layouttyp** wechseln Sie zu einem anderen Layout desselben Dokumenttyps.
 
-### Öffnen des Layout-Managers:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-de.png" alt="Liste der Dokumenttypen mit der Karte Rechnung und ihrem Link Layouts"><figcaption><p>Öffnen Sie <strong>Layouts</strong> auf der Karte Rechnung.</p></figcaption></figure>
 
-* Melden Sie sich bei DocBits an und navigieren Sie zu dem Bereich, in dem Sie den Layout-Manager verwenden möchten.
-* Diese Option finden Sie unter "Dokumenttypen verwalten".
+## Mit den drei Tabs arbeiten
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FeebqP176qG5bOQ6YLJDX%252FBildschirmfoto%25202024-05-23%2520um%252013.35.39.png%3Falt%3Dmedia%26token%3D6aa09cc2-2df5-4495-aefe-36dec3123b51\&width=768\&dpr=4\&quality=100\&sign=82c501bb\&sv=2)
+Das Panel auf der linken Seite hat drei Tabs: **Struktur**, **Felder** und **Elemente**. Der Layout Builder öffnet mit dem Tab **Felder**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5z8cVvWqARCkXx4AER4B%252FBildschirmfoto%25202024-05-24%2520um%252010.12.05.png%3Falt%3Dmedia%26token%3De0f8301a-9aaa-4e4a-9568-a2c372355538\&width=768\&dpr=4\&quality=100\&sign=66865b41\&sv=2)
+**Struktur** zeigt das Layout als Baum, in derselben Reihenfolge, in der Gruppen und Felder im Dokument erscheinen. Klappen Sie eine Gruppe über das Chevron-Symbol auf, um ihre Felder zu sehen; den technischen Feldnamen zeigt das Panel **Eigenschaften**. Das Suchfeld filtert den Baum, und wenn Sie eine Zeile auswählen, wird dasselbe Element auf der Arbeitsfläche ausgewählt.
 
-Auswählen des Dokumenttyps:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-de.png" alt="Layout Builder mit geöffnetem Tab Struktur: der aufgeklappte Gruppenbaum mit dem ausgewählten Feld supplier_id, das Rechnungs-Layout auf der Arbeitsfläche und das Eigenschaften-Panel auf der rechten Seite"><figcaption><p>Der Struktur-Baum, die Arbeitsfläche und das Eigenschaften-Panel.</p></figcaption></figure>
 
-* Wählen Sie den Dokumenttyp aus, den Sie bearbeiten möchten.
-* Der Layout-Manager zeigt die Struktur dieses Dokumenttyps an.
+**Felder** listet alle Felder, die der Dokumenttyp anbietet, gruppiert nach ihren Gruppen. Der Zähler neben einem Gruppennamen zeigt, wie viele ihrer Felder bereits platziert sind, zum Beispiel **4/14**. Die drei Symbolschalter unter dem Suchfeld begrenzen die Liste: alle Felder, nur die noch nicht platzierten Felder oder nur die ausgeblendeten Felder. Jede Zeile zeigt die Feldbezeichnung; ein grünes Häkchen rechts markiert Felder, die bereits im Layout stehen, und platzierte Felder erscheinen ausgegraut.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-overview-2026.png" alt=""><figcaption><p>Layout Builder Invoice</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-de.png" alt="Tab Felder mit den drei Filterschaltern unter dem Suchfeld, der geöffneten Gruppe Details der Rechnung mit dem Zähler 4/14 und Feldern, die bereits platziert sind (ausgegraut, mit Häkchen)"><figcaption><p>Filtern Sie die Felder und erkennen Sie platzierte Felder am Häkchen.</p></figcaption></figure>
 
+**Elemente** enthält die Bausteine, die Sie auf die Arbeitsfläche ziehen: **Gruppen** mit den Gruppen dieses Layouts und **Formular-Elemente** mit Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields und Sub Group.
 
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-de.png" alt="Tab Elemente mit dem Bereich Gruppen, der die Gruppen dieses Layouts auflistet, und dem Bereich Formular-Elemente mit den Bausteinen"><figcaption><p>Die Paletten Gruppen und Formular-Elemente.</p></figcaption></figure>
 
-Navigieren durch Gruppen und Felder:
+## Elemente platzieren und anordnen
 
-* Im Layout-Manager sehen Sie eine Baumstruktur, die die Gruppen und Felder des ausgewählten Dokumenttyps darstellt.
+- Ziehen Sie ein Feld aus **Felder** oder ein Element aus **Elemente** in die Gruppe, in der es erscheinen soll. Bereits platzierte Felder tragen im Tab **Felder** ein Häkchen.
+- Ziehen Sie ein Feld innerhalb einer Gruppe oder zwischen Gruppen, um es neu anzuordnen.
+- Das **+** über der Arbeitsfläche fügt eine leere Gruppe hinzu; das JSON-Symbol daneben erzeugt eine Gruppe aus einer JSON-Definition.
+- In der Kopfzeile einer Gruppe benennen Sie die Gruppe im Feld **Titel der Gruppe** um, kopieren ihr JSON, verschieben sie nach unten oder oben oder löschen sie. Mit dem Ziehgriff am rechten Rand der Kopfzeile verschieben Sie die Gruppe.
+- Wählen Sie ein Feld auf der Arbeitsfläche aus, um rechts seine Eigenschaften zu öffnen. Die kleine Symbolleiste unter dem ausgewählten Feld entfernt es aus dem Layout.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjtiMNhQqN859bxtLsoth%252Fimage.png%3Falt%3Dmedia%26token%3Dc3224b66-3f2a-4aa2-81ee-6cde5719cf3f\&width=768\&dpr=4\&quality=100\&sign=57e2b59\&sv=2)
+## Das Eigenschaften-Panel
 
-* Sie können durch diese Struktur navigieren, um die Bereiche zu bearbeiten, die Sie möchten.
+Das Panel **Eigenschaften** auf der rechten Seite ist immer geöffnet und folgt dem Element, das Sie ausgewählt haben. Seine Einstellungen sind in vier Abschnitte gegliedert: **Darstellung**, **Verhalten**, **Werte & Listen** und **Automatisierung**. Unter **Darstellung** finden Sie die Bezeichnung, den Feldtyp und die **Elementbreite in Prozenten**, die Sie aus den Werten 25, 33, 50, 66, 75 und 100 Prozent wählen. Die einzelnen Optionen beschreibt [Feldeigenschaften konfigurieren](configuring-field-properties.md).
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5UpYc7uZEQzEt2LEFHzo%252Fimage.png%3Falt%3Dmedia%26token%3D4203ac3a-5487-4bfc-8aa8-4c35fe70b14a\&width=768\&dpr=4\&quality=100\&sign=adc50420\&sv=2)
+Validierung, OCR und Abgleich gehören zum Feld selbst, nicht zum Layout: Konfigurieren Sie sie in den separaten [Fields-Einstellungen](../fields/configuring-field-properties-1.md).
 
-### Gruppen und Felder bearbeiten:
+## Vorschau und Speichern
 
-<mark style="color:red;">**Hinweis:**</mark> **Wenn der Titel eines Feldes geändert wurde, müssen Sie das Feld im Layout-Builder löschen und erneut hinzufügen, damit die Änderungen wirksam werden.**
+Die Arbeitsfläche zeigt das Layout so, wie es später im Dokument aussieht. Wechseln Sie mit den Tabs **Hauptlayout** und **Tabelle** zwischen der Seite und der Tabelle mit den Positionen, und öffnen Sie mit **Dokument** das Beispieldokument neben der Arbeitsfläche. Siehe [Die Vorlagenvorschau verwenden](using-the-template-preview.md).
 
-
-
-Hinzufügen einer Gruppe oder eines Feldes:
-
-* Klicken Sie auf die Schaltfläche "Neue Gruppe erstellen", je nachdem, ob Sie eine neue Gruppe oder ein neues Feld hinzufügen möchten.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FF9Soj6uDKKyYb8ciweHp%252FBildschirmfoto%25202024-05-24%2520um%252010.23.27.png%3Falt%3Dmedia%26token%3D797e975a-470b-4a0d-b1f1-a82b8aeb7267\&width=768\&dpr=4\&quality=100\&sign=d2e200b6\&sv=2)
-
-* Geben Sie den Namen der neuen Gruppe oder des neuen Feldes ein und wählen Sie alle gewünschten Einstellungen aus, wie z.B. den Feldtyp (Text, Zahl, Datum usw.).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7qcF5LK6yxbcRVm57Ejz%252Fimage.png%3Falt%3Dmedia%26token%3Dec75cf2f-a834-4eb3-89c3-75a6fc70c88c\&width=768\&dpr=4\&quality=100\&sign=e93f7652\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSM5IXOG5XYfGo3ee1xzP%252Fimage.png%3Falt%3Dmedia%26token%3D57a737f0-240c-4c23-9d4a-b92e86a92b47\&width=768\&dpr=4\&quality=100\&sign=456cdcec\&sv=2)
-
-#### Entfernen einer Gruppe oder eines Feldes:
-
-* Wählen Sie die Gruppe oder das Feld aus, das Sie entfernen möchten.
-* Klicken Sie auf die Schaltfläche "Löschen" oder verwenden Sie die entsprechende Tastenkombination (normalerweise "Entf" oder "Del").
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FQQjFkNb0ONiiklAQmBRU%252FBildschirmfoto%25202024-05-24%2520um%252010.35.24.png%3Falt%3Dmedia%26token%3D2fb8d92a-c5c9-449b-8179-786765ada10f\&width=768\&dpr=4\&quality=100\&sign=1ac2e12c\&sv=2)
-
-
-
-#### Ändern einer Gruppe oder eines Feldes:
-
-* Doppelklicken Sie auf die Gruppe oder das Feld, das Sie ändern möchten.
-* Ändern Sie alle gewünschten Eigenschaften, wie z.B. den Namen, die Position, die Größe oder die Einstellungen des Feldtyps.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FtdvSPyCEdIfj8j30DEe5%252Fimage.png%3Falt%3Dmedia%26token%3Dfaa32e5a-3492-499d-a0af-7fa99a583d09\&width=768\&dpr=4\&quality=100\&sign=865f9003\&sv=2)
-
-#### Anordnen von Gruppen und Feldern:
-
-* Ziehen Sie Gruppen oder Felder per Drag & Drop, um ihre Reihenfolge zu ändern oder sie innerhalb oder außerhalb anderer Gruppen zu platzieren.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fun2twvKa1n8VJrBZzjl3%252FBildschirmfoto%25202024-05-24%2520um%252010.45.28.png%3Falt%3Dmedia%26token%3Dc090597f-b693-4308-b0ac-badec6bec466\&width=768\&dpr=4\&quality=100\&sign=af0174ad\&sv=2)
-
-#### Änderungen speichern:
-
-* Vergessen Sie nicht, Ihre Änderungen zu speichern, bevor Sie den Layout-Manager verlassen.
-* Klicken Sie auf die Schaltfläche "Speichern".
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fu9c6MD2mZFuAsXp7n9Ai%252FBildschirmfoto%25202024-05-24%2520um%252010.51.06.png%3Falt%3Dmedia%26token%3D613ef982-9455-4832-b2a5-5644e3bd644c\&width=768\&dpr=4\&quality=100\&sign=fb7f99d5\&sv=2)
-
-Indem Sie diese Schritte befolgen, können Sie effektiv im Layout-Manager von DocBits navigieren und Gruppen sowie Felder innerhalb eines Dokumenttyps bearbeiten. Dies ermöglicht es Ihnen, die Struktur und das Erscheinungsbild Ihrer Dokumente entsprechend Ihren Bedürfnissen anzupassen.
+Wählen Sie abschließend **Speichern** in der Kopfzeile. Die weiteren Aktionen der Kopfzeile – darunter Vorlagenerzeugung, Standardvorlagen und das Anwenden eines Layouts auf Origins – beschreibt [Änderungen speichern und anwenden](save-and-apply-changes.md).

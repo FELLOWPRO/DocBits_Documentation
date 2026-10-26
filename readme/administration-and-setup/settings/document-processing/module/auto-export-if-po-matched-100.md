@@ -1,39 +1,32 @@
-# Auto Export if PO Matched 100%
+# Automatischer Export bei vollständiger Bestellübereinstimmung
 
-### Overview
+### Überblick
 
-The **Auto Export if PO matched 100%** setting is a feature within the Purchase Order (PO) module that automates the export process when a purchase order matches perfectly with its expected criteria. This functionality is designed to streamline the workflow by reducing manual intervention in the export process, ensuring that perfectly matched purchase orders are handled efficiently.
+Die Einstellung **Auto Export if PO matched 100%** steuert den automatischen Export des aktuellen Rechnungsdokuments nach dem Abgleich mit einer Bestellung (Purchase Order, PO). Exportiert wird das Dokument in DocBits; die referenzierte Bestellung dient als Vergleichsgrundlage.
 
-### What Does It Do?
+### Voraussetzungen und Funktionsweise
 
-When this setting is enabled, the system automatically exports the purchase order as soon as it matches 100% with the expected data. This means that if all items, quantities, prices, and other relevant details in the purchase order align with the predefined criteria, the order is immediately processed and exported without requiring additional steps from the user.
+Der Bestellabgleich des Dokuments muss vollständig erfolgreich sein. Zusätzlich müssen die konfigurierten Validierungs-, Genehmigungs- und Exportvoraussetzungen erfüllt sein. Eine vollständige Bestellübereinstimmung allein garantiert daher keinen sofortigen Export.
 
-### Benefits
+### Vorteile
 
-* **Efficiency**: By automating the export of perfectly matched POs, this feature saves time and reduces the workload on administrators and users.
-* **Accuracy**: Ensures that only those POs which have been verified to match 100% with the expected criteria are exported, reducing the risk of errors.
-* **Speed**: The immediate processing of matching POs allows for faster order handling and reduces delays in the supply chain.
+* **Effizienz**: Weniger manuelle Schritte für Dokumente mit vollständig erfolgreichem Bestellabgleich.
+* **Genauigkeit**: Der automatische Export berücksichtigt den Abgleichstatus und die weiteren konfigurierten Prüfungen.
+* **Geschwindigkeit**: Geeignete Dokumente können nach Erfüllung aller Voraussetzungen automatisch exportiert werden.
 
-### How to Use
+### Verwendung
 
-1. **Enable the Feature**:
-   * Go to Settings
-   * Select **Document Processing**.
-   * Select **Module**.
-   * Navigate to the **Purchase Order**.
-   * Activate the **Auto Export if PO matched 100%** by enabling the corresponding slider
+1. Öffnen Sie **Settings → Document Processing → Module → Purchase Order**.
+2. Aktivieren Sie **Auto Export if PO matched 100%** mit dem zugehörigen Schalter.
 
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/po-match-100.png" alt=""><figcaption></figcaption></figure>
 
-1. **Monitoring**:
-   * Once enabled, the system will automatically export POs that match 100% with their expected criteria.
-   * You can monitor the export activity through the PO dashboard or other related monitoring tools.
-2. **Considerations**:
-   * Ensure that your PO criteria are correctly defined and accurate to avoid any unwanted exports.
-   * Regularly review the POs processed through this feature to ensure that the automation is functioning as expected.
+3. Überwachen Sie die verarbeiteten Dokumente und den Exportstatus im zugehörigen Dashboard.
+4. Prüfen Sie, ob die Bestellkriterien sowie Validierungs-, Genehmigungs- und Exportregeln korrekt konfiguriert sind.
+5. Kontrollieren Sie regelmäßig, ob die Automatisierung wie erwartet arbeitet.
 
-### When to Use This Feature
+### Einsatzbereiche
 
-* **High Volume Processing**: Ideal for environments where a large number of POs are processed regularly, and there is a high confidence in the data matching.
-* **Routine Orders**: Useful for standard or routine orders where variations are minimal and accuracy is consistent.
-* **Time-Sensitive Orders**: Beneficial when time is of the essence, and you need to expedite the processing of matching POs.
+Die Funktion eignet sich für hohe Dokumentmengen, wiederkehrende Bestellungen und zeitkritische Vorgänge, wenn der Bestellabgleich zuverlässig ist und die übrigen Exportvoraussetzungen erfüllt sind.
+
+Wenn PO-Matching für den Dokumenttyp aktiv ist, lässt die separate Option `ALLOW_AUTO_EXPORT_FOR_NON_MATCHABLE_PO_LINES` zusätzlich den Status `NO_MATCHABLE_PO_LINES` zu. Sie gibt andere unvollständige Abgleiche nicht pauschal für den Export frei.

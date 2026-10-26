@@ -1,4 +1,4 @@
-# Regex Manager
+# Regex-Manager
 
 Diese Funktion von DocBits bietet Ihnen eine Alternative zur modellbasierten Klassifizierung, da Sie damit durchsuchbare reguläre Ausdrücke für einen Dokumenttyp schreiben können, zur Klassifizierung und für andere Zwecke.
 

@@ -12,7 +12,7 @@ Ta karta przepływu pracy uruchamia przepływ pracy (wyzwalacz), gdy zmienia si�
    * **Opis:** Określa, czy nowy status dostawcy powinien być jednym z wybranych statusów, czy żadnym z nich.
    * **Opcje:**
      * **Jest:** Warunek jest prawdziwy, jeśli nowy status jest jednym z wybranych statusów.
-     * **Nie jest:** Warunek jest prawdziwy, jeśli nowy status nie jest jednym z wybranych statusów.
+     * **Nie jest:** Warunek jest prawdziwy, jeśli przepływ pracy został uruchomiony przez zmianę statusu dostawcy, a nowy status nie jest jednym z wybranych statusów.
 2. **Status**
    * **Opis:** Statusy dostawcy, z którymi porównywany jest nowy status.
    * **Opcje:** Jeden lub kilka spośród:
@@ -28,10 +28,10 @@ Ta karta przepływu pracy uruchamia przepływ pracy (wyzwalacz), gdy zmienia si�
 * **Ocena warunku:** Karta porównuje status przekazany do przepływu pracy ze statusami wybranymi na karcie.
 * **Wykonanie akcji:**
   * **Warunek prawdziwy:**\
-    Przy **Jest** nowy status jest jednym z wybranych statusów. Przy **Nie jest** nim nie jest. Przepływ pracy jest kontynuowany z kolejnymi kartami.
+    Przy **Jest** nowy status jest jednym z wybranych statusów. Przy **Nie jest** przepływ pracy został uruchomiony przez zmianę statusu dostawcy, a nowy status nie jest jednym z wybranych statusów. Przepływ pracy jest kontynuowany z kolejnymi kartami.
   * **Warunek fałszywy:**\
     Jeśli warunek nie jest spełniony, karta nie jest spełniona, a kroki następujące po niej nie są wykonywane.
-* **Uwaga dotycząca „Nie jest”:** Import zamówienia zakupu również uruchamia wszystkie przepływy pracy niezależne od dokumentu, w tym przepływy pracy z tą kartą. Import zamówienia zakupu nie przekazuje statusu dostawcy, dlatego przy **Nie jest** import zamówienia zakupu również sprawia, że karta jest prawdziwa, a przepływ pracy zostaje wykonany. Połączenie **Nie jest** z dalszymi warunkami może pomóc ograniczyć przepływ pracy do zdarzeń dotyczących dostawców.
+* **Inne zdarzenia niezależne od dokumentu:** Import zamówienia zakupu również uruchamia wszystkie przepływy pracy niezależne od dokumentu, w tym przepływy pracy z tą kartą. Takie uruchomienie nie spełnia karty przy żadnym z operatorów, dlatego kolejne kroki są wykonywane tylko przy zmianach statusu dostawcy.
 * **Brakujące dane:** Jeśli na karcie nie wybrano żadnego statusu, karta nie ocenia warunku. Zgłasza brakujące dane wejściowe (lub błąd) w dzienniku przepływu pracy, a kroki następujące po niej nie są wykonywane.
 * **Nieprawidłowy operator:** Jeśli operator nie jest ani **Jest**, ani **Nie jest**, karta zgłasza w dzienniku przepływu pracy błąd konfiguracji karty.
 

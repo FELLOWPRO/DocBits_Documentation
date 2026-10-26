@@ -715,6 +715,7 @@
     * [WatchDog Configuration](administration-and-setup/setup/watchdog/watchdog-v2-configuration.md)
     * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Report Page](administration-and-setup/report-page.md)
+* [Performance Metrics](administration-and-setup/performance-metrics.md)
 * [Analytics Dashboard](administration-and-setup/analytics-dashboard.md)
   * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
 

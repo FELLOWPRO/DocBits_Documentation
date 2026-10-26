@@ -115,6 +115,7 @@
         * [Doğrulama Kuralları](overview/settings/global-settings/e-documents/validation-rules.md)
         * [Bildirim Yönlendirme](overview/settings/global-settings/e-documents/notification-routing.md)
       * [Document Types](overview/settings/global-settings/document-types.md)
+      * [Alan Özelliklerini Yapılandırma](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
       * [Email Notification](overview/settings/global-settings/email-notification.md)
       * [Custom Filters](overview/settings/global-settings/page-1.md)
       * [Groups, Users and Permissions](overview/settings/global-settings/groups-users-and-permissions/README.md)

@@ -1,5 +1,13 @@
 # Company Preferences
 
+## Video tutorial: Company, subscription and audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/en.mp4" %}
+Company information, subscription plan and audit logs in DocBits
+{% endembed %}
+
+The video shows the company information and preferences, the subscription plan, the login activity and the audit logs.
+
 ## Overview
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}

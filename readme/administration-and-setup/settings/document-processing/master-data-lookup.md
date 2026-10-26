@@ -1,5 +1,13 @@
 # Recherche de données de référence
 
+## Tutoriel vidéo : données de base et listes de valeurs
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/fr.mp4" %}
+Sources de données de base, listes de valeurs et paramètres des données de base dans DocBits
+{% endembed %}
+
+La vidéo présente les sources de données de base, les listes de valeurs et les paramètres des données de base d'un type de document.
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 

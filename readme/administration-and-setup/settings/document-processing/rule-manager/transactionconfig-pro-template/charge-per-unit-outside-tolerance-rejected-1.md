@@ -1,37 +1,40 @@
-# Charge Per Unit Outside Tolerance (Rejected)
+# Zuschlag je Einheit außerhalb der Toleranz (abgelehnt)
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-The charge per unit is outside tolerance and has not been approved.
 
-## Action:
+## Szenario:
 
-The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+Der Zuschlag je Einheit liegt außerhalb der Toleranz und wurde nicht genehmigt.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Charge Per Unit: $6.00
-  * Quantity: 800 units
-  * Total Charge Amount: $4,800.00
-* **Invoice Received:**
-  * Charge Per Unit: $7.00 (outside tolerance of 16.67%, rejected)
-  * Quantity: 800 units
-  * Total Charge Amount: $5,600.00
-* **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+Das System passt den Zuschlag je Einheit an die Bestellung oder den genehmigten Wert an und erstellt gegebenenfalls die erforderlichen Belastungsanzeigen oder Gutschriften.
 
-Since the charge per unit ($7.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+## Beispiel:
 
-1. **Reject the Invoiced Charge Per Unit:** The system does not accept the invoiced charge per unit of $7.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Charge Per Unit:** The system adjusts the charge per unit to match the purchase order or the approved charge per unit:
-   * Adjusted Charge Per Unit = $6.00 (from PO)
-3. **Recalculate the Total Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
-   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount:
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $4,800.00 and issues a debit note for $800.00 to account for the overcharged amount.
+* **Bestellung (PO):**
+  * Zuschlag je Einheit: $6.00
+  * Menge: 800 Einheiten
+  * Zuschlagsgesamtbetrag: $4,800.00
+* **Eingegangene Rechnung:**
+  * Zuschlag je Einheit: $7.00 (Abweichung außerhalb der Toleranz: 16.67%, abgelehnt)
+  * Menge: 800 Einheiten
+  * Zuschlagsgesamtbetrag: $5,600.00
+* **Toleranzgrenzen:**
+  * Toleranz für Zuschläge je Einheit: ±5%
 
-This approach ensures that financial transactions are consistent with the purchase order terms, rejecting unapproved variances and maintaining accurate billing practices.
+Der Zuschlag je Einheit ($7.00) überschreitet die zulässige Toleranz von 5% und wurde nicht genehmigt. Das System führt folgende Schritte aus:
+
+1. **Berechneten Zuschlag je Einheit ablehnen:** Das System akzeptiert den Zuschlag von $7.00 nicht, da die Abweichung die Toleranzgrenze überschreitet.
+2. **Zuschlag je Einheit anpassen:** Das System setzt den Zuschlag auf den Wert aus der Bestellung oder auf den genehmigten Wert:
+   * Angepasster Zuschlag je Einheit = $6.00 (aus der Bestellung)
+3. **Gesamten Zuschlagsbetrag neu berechnen:** Das System berechnet den gesamten Zuschlagsbetrag anhand des angepassten Zuschlags je Einheit neu:
+   * **Korrigierter Zuschlagsgesamtbetrag = Menge × Angepasster Zuschlag je Einheit**
+   * **Korrigierter Zuschlagsgesamtbetrag = 800 Einheiten × $6.00 = $4,800.00**
+4. **Belastungsanzeige erstellen:** Da der ursprüngliche Rechnungsbetrag höher als der korrigierte Gesamtbetrag war, erstellt das System eine Belastungsanzeige über den zu viel berechneten Betrag:
+   * **Betrag der Belastungsanzeige = Ursprünglicher Rechnungsbetrag - Korrigierter Zuschlagsgesamtbetrag**
+   * **Betrag der Belastungsanzeige = $5,600.00 - $4,800.00 = $800.00**
+5. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem korrigierten Zuschlagsgesamtbetrag von $4,800.00 und erstellt eine Belastungsanzeige über $800.00, um den zu viel berechneten Betrag auszugleichen.
+
+Damit entsprechen die Finanztransaktionen den Bestellbedingungen. Nicht genehmigte Abweichungen werden abgelehnt und eine korrekte Abrechnung wird sichergestellt.

@@ -1,105 +1,26 @@
-# Erstellen eines ION-API-Endpunkts
+# Erstellen eines Infor-ION-API-Endpunkts für DocBits-Exporte
 
-## Infor-Konfiguration
+Ein Infor-Administrator richtet den API-Gateway-Endpunkt für die **bestimmte DocBits-Umgebung und -Organisation** ein. Die alten Bilder auf dieser Seite zeigten einen einzelnen historischen Infor-Tenant, ein festes `api.docbits.com`-Beispiel und ein älteres DocBits-Exportformular. Verwenden Sie die freigegebene Ziel-URL, den freigegebenen API-Schlüssel und das OpenAPI-Dokument für Ihre tatsächliche Umgebung. Für diese Aktualisierung wurde kein Infor-Tenant verbunden und kein Endpunkt gespeichert.
 
-Klicken Sie auf dem Startbildschirm auf das Burger-Menü und wählen Sie ION API aus.
+## Vor dem Start
 
-![](https://lh7-us.googleusercontent.com/hSxKZMRZUv5SJc2tMxgD2aMcaAVPkmTJMEdIjPY4JoM3BWiN9BUCQSywdCNJUs54R4Df8Z6Im3Zy2TRfRQE\_bK-FU5R9DbRDF3\_drGNPPbHEYCXJzD3Go5pAbIX6mohTMDchY3q7jK6hRheoreVuT-g)
+Ermitteln Sie bei Ihrem Integrations-Administrator die Ziel-DocBits-API-URL, den freigegebenen API-Schlüssel samt seinem Header-Namen, die OpenAPI-URL sowie die vorgesehenen Infor- und DocBits-Umgebungen. Bewahren Sie Schlüssel und `.ionapi`-Dateien nicht in Tickets, Screenshots oder dem Git-Repository auf. Stellen Sie sicher, dass ein Test-Endpunkt nicht in die Produktion leiten kann.
 
-Klicken Sie nach dem Öffnen von ION API im linken Menü auf Available APIs.
+## Infor API Gateway konfigurieren
 
-![](https://lh7-us.googleusercontent.com/Ed2FRY1deP-21i-45Q3dUBdDrPOsnKnl6BzMq65FbUDk4kIW9jQClwWVFbuvPvR\_HGpNDOFHvXsy0RnJ\_KE1cLfgrDSoMg1\_\_Q1W0\_3bZs5sg35cCN2w4Fbc9oAy\_uH9VHwkg\_irA6AQ\_wU0q\_G4QRQ)
+1. Erstellen Sie in **Available APIs** eine API-Suite des Typs **Custom or Non-Infor** für die Zielumgebung. Siehe Infor-Anleitung [API suite instructions](https://docs.infor.com/inforos/2025.x/en-us/useradminlib_cloud/apigatewayag_cloud/gyy1489512842881.html).
+2. Fügen Sie der Suite einen Endpunkt mit der freigegebenen **Target Endpoint URL** hinzu. Wählen Sie den Authentifizierungstyp, den dieser Endpunkt verlangt. Bei **API Key** fragt Infor nach **Key Name** und **Key Value**; verwenden Sie den im DocBits-API-Vertrag festgelegten Namen und den für diese Organisation ausgestellten Schlüssel. Siehe Infor-Anleitung [endpoint fields](https://docs.infor.com/inforos/2024.x/en-us/useradminlib_cloud/apigatewayag_cloud/bmg1489588707659.html). Übernehmen Sie keinen Schlüssel aus einer anderen Umgebung.
+3. Tragen Sie die OpenAPI-/Swagger-URL der Umgebung unter den **Documentation**-Einstellungen des Endpunkts ein, gemäß Infor-Anleitung [documentation instructions](https://docs.infor.com/ionapi/2021-x/en-us/ionapiag_cloud/tzr1489597424134.html). Prüfen Sie, dass der Endpunkt in den [API metadata](https://docs.infor.com/ionapi/latest/en-us/ionapiag_cloud/tdr1489674063627.html) erscheint.
+4. Prüfen Sie gemeinsam mit dem Infor-Administrator die Ziel-URL, Authentifizierung, Proxy-Pfad und einen sicheren Aufruf außerhalb der Produktion, bevor Sie den Endpunkt in einem ION-Dokumentenfluss verwenden. Eine nur gespeicherte API-Suite belegt noch nicht, dass ein Dokument ausgeliefert wurde.
 
-Klicken Sie auf die Schaltfläche „+ADD“.
+## Export in DocBits konfigurieren
 
-![](https://lh7-us.googleusercontent.com/GdMApy9dnygxJwFTfYJ\_LDWOE9sOgeDdNkzhzHsxqpv-JUBYnPtB18U7nwLfnGXzyJs448gpztGdLNAKIC4jYmtc56wCbKRNqXsw5e-4ITNS5aeBJ30kAOVJzvPmu-idiSu-aEKKYvr4KblwBqs55nE)
+Öffnen Sie in der vorgesehenen DocBits-Organisation **Einstellungen → Export** und wählen Sie **Neu**. Die unten gezeigte deutsche Sandbox-Testorganisation hat keine gespeicherte Konfiguration.
 
-Klicken Sie dann auf „+ Create New“.
+<figure><img src="../../.gitbook/assets/dbdc590-export-list-de-20261010.png" alt="Aktuelle deutsche DocBits-Sandbox-Exportliste mit der Schaltfläche „Neu“ und ohne gespeicherte Konfiguration."><figcaption><p>Exportliste in den deutschen DocBits-Einstellungen: noch keine Konfiguration gespeichert, oben rechts die Schaltfläche „Neu“.</p></figcaption></figure>
 
-![](https://lh7-us.googleusercontent.com/\_MPsEXD4q7PsiAVXXbyfadZmwndAs8l3tEfPq97IqoRgk0QWdOeDV-rZwtWyhY3tUQ0uqhj1Wrr4xqDIHetzyOAnC0zAEy9j3D2uT3VJ8fJaik4HXII7Q70SdAJAVeHatuKYSlEttHCCmfa60VOgdWU)
+Geben Sie einen **Konfigurationstitel** ein, wählen Sie den **Dokumenttyp** und wählen Sie eine **Unterorganisation** nur bei Bedarf. Setzen Sie **Export** auf **Infor** und **Infotyp** auf **Infor IDM + ION BOD**. Das aktuelle Formular fragt dann nach **Deployment Type** (**CLOUD** oder **ON-PREMISE**), einer **ION API-Datei** (`.ionapi`, Pflicht), einer **IDM-Mapping-Datei** (`.properties`) und einer **BOD-Zuordnungsdatei** (`.properties`). Diese mandantenspezifischen Dateien erhalten Sie von Ihrem Administrator. Das Bild lässt die Uploads bewusst leer.
 
-Die von Ihnen eingegebenen Informationen sollten wie folgt aussehen.
+<figure><img src="../../.gitbook/assets/dbdc590-export-ion-bod-de-20261010.png" alt="Aktuelles deutsches DocBits-Sandbox-Exportformular „Infor IDM + ION BOD“ mit Deployment-Auswahl und leeren Uploads für ION API-, IDM- und BOD-Datei."><figcaption><p>Exportformular „Infor IDM + ION BOD“ in der deutschen Sandbox-Oberfläche mit den Deployment-Optionen CLOUD und ON-PREMISE; die Felder für ION API-, IDM- und BOD-Datei sind leer gelassen.</p></figcaption></figure>
 
-![](https://lh7-us.googleusercontent.com/gwvBDFrrA-vOihzWxa\_Ns1wMbXJKzz0Qds1vyJwc3cc1QrUAd3udV5oF7iW1riwS4fYgv7-fOAdxQvATtkPZ-HHbjOnmRv4QiUpAMUyXU0XlUBisMlOQPDiKH5guSw7T\_PxSmQTghiusyrv2-btGKDU)
-
-Hinweis: Die Beschreibung umfasst mehrere Umgebungen, da diese für mehrere Umgebungen verwendet wird; das Symbol und seine Farbe bleiben dabei stets gleich.
-
-Wählen Sie als Nächstes das „+“ am unteren Rand des Bildschirms aus.
-
-![](https://lh7-us.googleusercontent.com/dtYP0O6Abzd-9yDgqtLMJh\_4p1GNGqqtJMCySJEzw-3-hcvySwdXoznQBQ-6fkCGCHVrKXRFSint8\_HuL6BpjRizZ-zIpornm7F-JH\_jU48OQ1s1kPCQyV-9mKkQkPh1ge8xbINKuV0ps7gvKuddqDs)
-
-Diese Target Endpoint URL finden Sie unter api.docbits.com.
-
-![](https://lh7-us.googleusercontent.com/-olPQPbkiOSYtKh6JeDtVGDypj5xfS1vsb78vLAFDE3hETqHvzDC4VjiAwR0F3Le0seqxicUDNhXjOoOGrXgCe-cByPrp\_q-bg-nKG2Y1JngREWyekzdQ5Cbnxi0aWv\_VySw0LdcwpAElcXG\_b5Vmlo)
-
-Die Informationen unterhalb dieses Feldes sollten wie folgt aussehen.
-
-<figure><img src="../../.gitbook/assets/infor_api_gateway.png" alt=""><figcaption></figcaption></figure>
-
-Sobald Sie diese Informationen eingegeben haben, befindet sich rechts neben diesen Feldern ein Feld „Target Endpoint Security“ mit einem Dropdown-Menü. Wählen Sie aus diesem Dropdown-Menü API Key aus.
-
-![](https://lh7-us.googleusercontent.com/57rltIU4KnHAZ6wskQQHmn094UpRblxP\_-3Q14tVhKRT2M5uUdC4CuNINZqvy2NLjnwqDeWLIN6yr1ByNYHbV3SG1nH\_cf6zB-53I5k\_2zBeIjjQAR6BfGJBmDbh6uit5vYm0M8pGuLg0KFLXru\_N84)
-
-Unterhalb dieses Dropdown-Menüs erscheint dann eine Tabelle; geben Sie die folgenden Informationen ein. Der Schlüsselwert ist kunden- und umgebungsspezifisch und kann in DocBits gefunden werden.
-
-Vom Dashboard aus → Settings → Integration → API Key
-
-![](https://lh7-us.googleusercontent.com/SPs6Mw9-MeDAyXBgv5CK-CbKY-rEngzHVX9ruq3CcJnSuaqq76ibxuF-gbYS8VC2mv5TjsF48DLP8q2X2seN3J5voo7FP4dWipKVglWRHnWWQ3gtoBkCY6jrpUkQ1iLQ8huoWqku70LVZkcjUykp-w8)
-
-![](https://lh7-us.googleusercontent.com/W4-UD6i9ux7l2k8lG77daDMikVm-77npHw4EOQkrwagAjOBXqrJYeJ-5mn3UQzddPCWUDTcmoihVvLqK4uf8bKT-kQ4gWAAV7HdwxllwiqqbIi0fReynpvkhK78mlfJQLQxI\_csynJx0-rWI22G8Lgk)
-
-Kopieren Sie diesen Wert und fügen Sie ihn in das Feld Key Value in InforOS ein.
-
-![](https://lh7-us.googleusercontent.com/h\_wrZaNW70Vs3MkPOZMZk3lbfccMoJmcc6Q6ig8GeQcXY9owjyoydn4nSm-MZssXvPhDvE\_-TXr-mH73NNME28teQ1g0GsQMrWJvNFjBxJfRLWnl\_MET\_uHhFVL4ZRVdZiIaGbVsvx6esNjW8ot15n4)
-
-Sobald dies abgeschlossen ist, klicken Sie auf das folgende Symbol, um die Konfiguration zu speichern.
-
-![](https://lh7-us.googleusercontent.com/LxVzlEIhwd\_jf8VZlzOGuryjln03ZrojS2JSqdkMb-VYhp95NrRKUnNmTnm-n\_bY55W2cf4qH5Rdx2EsEKy\_NxjT8OpxISa2mXXVj1CQ22lSE0Tqt5iTWkiWXtda7TozXa3opnM5VT0i5VpN8rWaEcw)
-
-Die Konfiguration ist jedoch noch nicht vollständig abgeschlossen.
-
-Kehren Sie zu der soeben konfigurierten API zurück und geben Sie die Details wie unten dargestellt ein.
-
-![](https://lh7-us.googleusercontent.com/Tdqv5O2A-bKF7yD3JQCZkk64y1G7HEjesdUgndHv9seGDY8CCnG36T2kPy-hJqR758\_u1JSI\_LTXTkNI82H0Zlik7sKf3gByElMQGbk4bVgM2oM6lnNzJ\_gcj-57chiavEC4wHo58vorxmOHOl2sBBI)
-
-Gehen Sie zum Tab Documentation am unteren Rand und klicken Sie auf das „+“.
-
-![](https://lh7-us.googleusercontent.com/37S1zWf-RyHvhvyI-Gi9ud2FkLwASyGD\_IzskDjsKjyEQdIBc97Bfgqptg6-TLV3-mtM9yAzjmIRV5m9rAC2EW4WqVia\_lfTsvBIGo8uXx1EvgCp0m8DeYQQfPh2zSA8I6cRySfEircpl6IZG9h6xiY)
-
-Geben Sie die folgenden Details ein:
-
-* Name = DocBits-„environment“
-* Type = Swagger
-* URL = Gehen Sie zu api.docbits.com und öffnen Sie auf dieser Seite den folgenden Link.
-
-![](https://lh7-us.googleusercontent.com/tazrpqtgWhLRr5O08CVo\_gUjK1EuN\_vvRGTWnw89euSYQrQWd4Jnxx-1mdaydY56\_I2otnGdg6\_3dOJhBFp3OU8i9rIlXV5-1ApKYRRPqxVhBviUQ\_VhlQAWfAKe18NMtYBFXd3QVo5i6Za7315dqqQ)
-
-Kopieren Sie die URL und verwenden Sie sie für das URL-Feld in InforOS.
-
-Speichern Sie, sobald Sie die Informationen für alle Felder eingegeben haben. Es sollte eine Weile ein Lade-Symbol angezeigt werden, das Endergebnis sollte jedoch wie folgt aussehen.
-
-![](https://lh7-us.googleusercontent.com/odK5Oc3n8iLl45pG6Dgb1CmWFE30suuqVq5KfWP7FoqthPT93WApITIpMU6m4nndaQgnQbz3afneBYBzUrZc\_aTfyk-HUKKv6F3v5wmEvqYZ0TWYnE8\_3K-P7Gf7u5Fk7JPzbT-HUduMoecSsuoceKM)
-
-Mit demselben Verfahren werden die Endpunkte für andere Umgebungen erstellt.&#x20;
-
-Hinweis: Falls Sie diese Endpunkte zukünftig nicht finden können, gehen Sie in ION API zu API Metadata und klicken Sie auf dieses Symbol, um die API-Metadaten zu aktualisieren.
-
-![](https://lh7-us.googleusercontent.com/XCcuAbf4igf7O6oXECgt-\_veEcrrC065xeHHzNWKUjFZfEi-hUJLqYkRIn2PhmBtmS3UA1\_Wpf0YdCNWBPKlyDrtWgOHRKM03Xbtlucfpmg9ulB3guwj-kgzbZFnKN5i1AMq1Kd5m-ak-ljaz1e9V5g)
-
-## DocBits-Exporteinstellungen
-
-Gehen Sie vom DocBits-Dashboard des betreffenden Kunden aus zu Settings → Export. Um einen neuen Dokumenttyp für den Export hinzuzufügen, gehen Sie wie folgt vor:
-
-Klicken Sie auf die Schaltfläche „+ New“.
-
-![](https://lh7-us.googleusercontent.com/zT9L2Re22S5SdupyS-VVagJhk8sp38tVs-euioezvF-QzKxkr6R0wXz3sH3MK3dFvH1ZkdqmTlQg3z81P5duItUW8tnd\_Pdt3J4VezzMT6Rgk\_KEjvK4gzp1vjj6xzEaDiB5VvnFhUHW6bxNJg478\_8)
-
-Wählen Sie „Infor IDM + ION BOD“ aus.
-
-![](https://lh7-us.googleusercontent.com/6d04sh2VraR1919XKZSFnFr9QHf8YfpxTwLE-yXVEPtmejYPLcKO2CMekMXnzXDyOwh6Ml25BLCbVF9g7cv1I-jGrv3vUGugHEoxrl-BbBPnTL3nuCcN3ZNlYDuy0mXSNbH0AP-w-zTfKgcUCgQeIpE)
-
-Sie gelangen anschließend zu diesem Menü, in dem Sie dem neuen exportierbaren Dokumenttyp einen Titel geben, den Dokumenttyp aus dem Dropdown-Menü auswählen und alle erforderlichen Mapping-Dateien (ION, IDM und BOD) hinzufügen müssen.&#x20;
-
-![](https://lh7-us.googleusercontent.com/jlFJZHMeLSFSG3I-lN5tuThqieT1uCcfe\_Rj7rEQ2t9bnkbdUuyOhb9JhMBl50dn6seDmoFohtSHLU1TM9jkpPM8U7ZWpeGbD4SUFv7a0m7snpsPy33rVwus0Aub\_qXnNW3EG0IvARSzYhw7Hj6sLqY)
-
-
+Nachdem der Administrator die ION-Route geprüft hat, speichern Sie die Konfiguration und testen Sie ein Dokument außerhalb der Produktion. Prüfen Sie dessen Status in DocBits und in Infor ION. Ein gespeichertes Formular oder ein Eintrag in den API-Metadaten belegt keinen erfolgreichen Export.

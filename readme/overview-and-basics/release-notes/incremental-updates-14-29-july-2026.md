@@ -17,7 +17,7 @@ sichtbaren Änderungen._
   vertrauenswürdiges Gerät kann den zweiten Faktor eine Zeit lang überspringen.
   Jeder Benutzer kann die Funktion für sich selbst einschalten; Administratoren
   können sie für die gesamte Organisation verpflichtend machen. Siehe den
-  [Leitfaden zur Zwei-Faktor-Authentifizierung](../two-factor-authentication.md).
+  [Leitfaden zur Zwei-Faktor-Authentifizierung](../../security/two-factor-authentication.md).
 - **Support-Tickets direkt aus dem Fehlerbildschirm.** Wenn etwas schiefgeht,
   können Sie jetzt direkt aus dem Fehlereintrag ein Support-Ticket eröffnen.
   Das Ticket enthält den technischen Kontext bereits — Sie müssen ihn nicht

@@ -1,18 +1,49 @@
-# Zulassung
+# Rechnungsfreigaben konfigurieren und testen
 
-Mit den Zulassungsoptionen legen Sie fest, wie ein Dokument geprüft wird, bevor es DocBits verlässt. Die Optionen werden je Dokumenttyp eingerichtet. Beginnen Sie daher mit dem Typ, den Ihr Team nutzt, z. B. **Rechnung**.
+Dieses Video zeigt die Konfiguration und das Testen von Genehmigungen.
 
-1. Öffnen Sie **Einstellungen** → **Dokumenttypen**.
-2. Wählen Sie den Dokumenttyp und öffnen Sie **Weitere Einstellungen**.
-3. Scrollen Sie zu **Genehmigung & Ablehnung**. Prüfen Sie die vier Schalter, bevor Sie einen von ihnen ändern.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/de.mp4" %}
+Rechnungsfreigaben konfigurieren und testen
+{% endembed %}
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc224-approval-options-de-20261009.png" alt="Deutsche Ansicht der Optionen „Genehmigung &amp; Ablehnung“ im Dokumenttyp Rechnung in der Sandbox"><figcaption>Aktuelle Sandbox-Ansicht (Oberflächensprache Deutsch) für den Dokumenttyp Rechnung mit erfundenen Beispieldaten. Alle vier Schalter sind in diesem Beispiel ausgeschaltet.</figcaption></figure>
+[Video mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/de.html)
 
-| Option | Wofür sie da ist |
+Gezeigt wird die tatsächliche Anwendung. Die Bezeichnungen können je nach eingesetzter Version abweichen.
+
+Konfigurieren Sie die Genehmigung für den von Ihrem Prozess verwendeten Dokumenttyp. Identifizieren Sie die vorgesehenen Prüfer und entscheiden Sie, ob Sie eine zweite unabhängige Prüfung benötigen. Das Video verwendet einen separaten Dokumenttyp und temporäre Prüferkonten ohne Administratorrechte.
+
+## Dokumenttyp konfigurieren
+
+Öffnen Sie **Einstellungen → Dokumenttypen**, wählen Sie den vorgesehenen Typ und öffnen Sie **Weitere Einstellungen → Genehmigung & Ablehnung**. Wählen Sie die für Ihren Prozess erforderlichen Einstellungen und laden Sie die Seite neu, um zu prüfen, was gespeichert wurde.
+
+| Einstellung | Zweck |
 | --- | --- |
-| **Erste Genehmigung** | Verlangt eine Genehmigungsentscheidung, bevor das Dokument exportiert werden kann. Im Sandbox-UI ist zusätzlich die Bezeichnung **Vor dem Export genehmigen V2** sichtbar. |
-| **Zweite Genehmigung** | Fügt einen weiteren Genehmigungsschritt hinzu, wenn eine Entscheidung für Ihren Prozess nicht ausreicht. |
-| **Genehmigungsstempel** | Versieht ein genehmigtes Dokument mit einem Genehmigungsvermerk. Einrichtung und Download-Optionen siehe [Genehmigungsstempel](approval-stamp.md). |
-| **Genehmigungsverlauf** | Speichert eine Aufzeichnung der Genehmigungsentscheidungen. Die Einstellung und das Prüfen des Verlaufs siehe [Genehmigungsverlauf](approval-history.md). |
+| Erste Genehmigung | Erfordert eine Genehmigungsentscheidung, bevor das Dokument zum Export weitergeleitet wird. |
+| Zweite Genehmigung | Fügt dem konfigurierten Prozess eine zweite Genehmigungsstufe hinzu. |
+| Genehmigungsverlauf | Hält die erfassten Entscheidungen zur Überprüfung verfügbar. |
+| Genehmigungsstempel | Konfiguriert eine Markierung auf einem genehmigten Dokument; siehe die separate Stempelanleitung. |
 
-Wählen Sie die Optionen, die Ihr eigener Prozess verlangt. Prüfen Sie den Genehmigungspfad anschließend mit einem Testdokument ohne echten Kundenbezug und mit den dafür vorgesehenen Prüferrollen, bevor Sie ihn auf echte Dokumente anwenden. Das Bild zeigt die verfügbaren Einstellungen; während dieser Dokumentationsprüfung wurden kein Genehmigungsfluss durchlaufen und keine Exporte ausgeführt.
+Die zusätzliche V2-Option und die Formulardesigner sind separate Einstellungen. Dieses Tutorial verwendet vorbereitete Standard-Genehmigungsformulare.
+
+## Mit den vorgesehenen Rollen testen
+
+1. Ordnen Sie die beiden Prüfer getrennten Gruppen zu und gewähren Sie ihnen den vorgesehenen Zugriff auf die zugewiesenen Dokumente. In diesem Beispiel hat das erste Konto die Genehmigungsberechtigung für die erste Stufe und das zweite Konto die Berechtigung für die zweite Stufe. Ein Schalter allein weist keine Person zu oder erteilt diese Berechtigung.
+2. Verwenden Sie das erste normale Prüferkonto, um die zugewiesene, bereits validierte Rechnung zu prüfen, eine Notiz hinzuzufügen und die erste Genehmigung zu erteilen. Stellen Sie sicher, dass das gespeicherte Dokument noch auf die zweite Genehmigung wartet. Prüfen Sie, ob dieses Konto die zweite Stufe nicht ausführen kann, wenn seine Berechtigungen dies verbieten.
+3. Weisen Sie die wartende Rechnung dem anderen autorisierten Prüfer zu. Verwenden Sie dieses zweite normale Prüferkonto, um sie zu prüfen und die zweite Genehmigung mit einer separaten Notiz zu erteilen.
+4. Öffnen Sie den Verlauf erneut und überprüfen Sie beide unterschiedlichen Prüfer, Zeiten und Notizen. Lehnen Sie auch eine separate Testrechnung mit Begründung ab und überprüfen Sie diese Entscheidung nach dem Neuladen.
+
+<figure><img src="../../../../../../.gitbook/assets/admin-options-de-2885b7bd765c.png" alt="Gespeicherte Genehmigungseinstellungen im eigenen Testtyp."><figcaption><p>Gespeicherte Genehmigungseinstellungen im eigenen Testtyp.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/admin-second-de-2885b7bd765c.png" alt="Zwei verschiedene Prüfer und beide gespeicherten Notizen."><figcaption><p>Zwei verschiedene Prüfer und beide gespeicherten Notizen.</p></figcaption></figure>
+
+## Ergebnis überprüfen
+
+Unterscheiden Sie zwischen erster Freigabe, ausstehender zweiter Freigabe und Ablehnung. Prüfen Sie, dass die Rechnungswerte nach jeder Entscheidung unverändert erhalten bleiben. In diesem isolierten Test wartet der Testkanal auf den Datenabruf und hat kein externes ERP-Ziel. Der technische Status `pending_data_fetch`, wenn er angezeigt wird, bedeutet, dass auf den Datenabruf gewartet wird. Der Genehmigungsverlauf allein beweist keine ERP-Übertragung.
+
+Testen Sie die konfigurierten Rollen, die Zuweisung und den vollständigen Entscheidungspfad, bevor Sie den Prozess auf reale Geschäftsbelege anwenden.
+
+## Verwandte Seiten
+
+- [Gruppen, Benutzer und Berechtigungen](../../../groups-users-and-permissions/README.md)
+- [Genehmigungsverlauf](approval-history.md)
+- [Genehmigungsstempel](approval-stamp.md)

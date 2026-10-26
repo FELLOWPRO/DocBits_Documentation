@@ -1,5 +1,7 @@
 # Zuweisung & Status — Praxisbeispiele
 
+Die neuen Abbildungen zeigen ungespeicherte Entwürfe der jeweiligen Aktion. Rollen und Bedingungen in den Beispielen sind an die eigene Organisation anzupassen.
+
 Um den Überblick zu behalten, können Sie den Workflows verschiedene Überschriften geben, damit Sie sofort erkennen, worum es bei diesem Workflow geht.
 
 Erstellen Sie einen neuen Workflow: Klicken Sie auf + ADD WORKFLOW
@@ -12,65 +14,65 @@ Sie können diese Workflows (Test 1, 2, 3) verwenden, um verschiedene Dokumente 
 
 Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag überschreitet, der eine vorherige Prüfung und Genehmigung erfordert, können diese Dokumente sofort der richtigen Person zugewiesen werden.
 
-<figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Workflow Amount Check"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Betragsprüfung im Workflow"><figcaption></figcaption></figure>
 
-**Test 1: Logic Card**
+**Test 1: Logikkarte**
 
-When: **Assignee is:** Amier Haider
+Wenn: **Zugewiesen an:** Eingangsprüfung
 
-And: **Document type is:** Invoice
+Und: **Dokumenttyp ist:** Invoice
 
-Then: **Assign document to:** Stefan Reppermund
+Dann: **Dokument zuweisen an:** Rechnungsprüfung
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
-**Test 2: Logic Card**
+**Test 2: Logikkarte**
 
-When: **Assignee is:** Amier Haider
+Wenn: **Zugewiesen an:** Eingangsprüfung
 
-And: **Document type is:** Delivery Note
+Und: **Dokumenttyp ist:** Delivery Note
 
-Then: **Assign document to:** James Edwards
+Dann: **Dokument zuweisen an:** Lieferscheinprüfung
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
-**Test 3: Logic Card**
+**Test 3: Logikkarte**
 
-**When:** **Assignee is:** Amier Haider
+**Wenn:** **Zugewiesen an:** Eingangsprüfung
 
-**And:** **Document type is:** Order Confirmation
+**Und:** **Dokumenttyp ist:** Order Confirmation
 
-**Then:** **Assign document to:** Anian Sollinger
+**Dann:** **Dokument zuweisen an:** Auftragsprüfung
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
 Es ist auch möglich, ein Dokument von Anfang an einem bestimmten Mitarbeiter zuzuweisen, wenn es nicht einer einzelnen Person zugeordnet ist.
 
-<figure><img src="../../.gitbook/assets/workflow_assign_to_employee_start.png" alt="Workflow Assign to Employee Start" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_assign_to_employee_start.png" alt="Dokument zu Beginn des Workflows einem Mitarbeiter zuweisen" width="375"><figcaption></figcaption></figure>
 
 Für eine einfachere Übersicht darüber, was mit einem Dokument geschehen soll, können Sie in diesem Workflow den Status für eingehende Dokumente festlegen. Dieser Workflow ermöglicht es, sofort zu erkennen, ob beispielsweise eine ausstehende Genehmigung vorliegt.
 
-**Test 4: Logic Card**
+**Test 4: Logikkarte**
 
-**When:** **Document type is:** Delivery Note
+**Wenn:** **Dokumenttyp ist:** Delivery Note
 
-**And:** **Assignee is:** Amier Haider
+**Und:** **Zugewiesen an:** Eingangsprüfung
 
-**Then:** **Change Status to:** Pending Approval
+**Dann:** **Status ändern in:** Genehmigung ausstehend
 
-<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-de.png" alt="Ungespeicherter Workflow-Entwurf zum Ändern eines Dokumentstatus."><figcaption><p>Ungespeicherter Workflow-Entwurf zum Ändern eines Dokumentstatus.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
-**Test 5: Logic Card**
+**Test 5: Logikkarte**
 
-When: **Document type is:** Invoice
+Wenn: **Dokumenttyp ist:** Invoice
 
-And: **Assignee is:** Stefan Reppermund
+Und: **Zugewiesen an:** Rechnungsprüfung
 
-Then: **Change Status to:** Pending Second Approval
+Dann: **Status ändern in:** Zweite Genehmigung ausstehend
 
-<figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow-Test 5: Genehmigungsstatus der Rechnung"><figcaption></figcaption></figure>
 
 ![](<../../.gitbook/assets/10 (1).png>)
 
@@ -78,37 +80,37 @@ Wenn eine Rechnung oder ein anderes Dokument einen bestimmten Gesamtbetrag über
 
 ![](<../../.gitbook/assets/11 (1).png>)
 
-**Test 6: Logic Card**
+**Test 6: Logikkarte**
 
-When: **Assignee is:** Amier Haider
+Wenn: **Zugewiesen an:** Eingangsprüfung
 
-And: Docfield **total\_amount** is **Greater than 500**
+Und: Das Dokumentfeld **total\_amount** ist **größer als 500**
 
-Then: **Assign document to:** Asad Usman Khan
+Dann: **Dokument zuweisen an:** Freigabeverantwortliche
 
-<figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow-Test 6: Dokument anhand des Gesamtbetrags zuweisen"><figcaption></figcaption></figure>
 
 ![](<../../.gitbook/assets/13 (1).png>)
 
 Es ist auch möglich, den Status in den Workflow einzutragen, sodass die zugewiesene Person sofort erkennen kann, welchen Status dieses Dokument hat und was als Nächstes damit geschehen soll.
 
-**Test 7: Logic Card**
+**Test 7: Logikkarte**
 
-**When:** **Assignee is:** Amier Haider
+**Wenn:** **Zugewiesen an:** Eingangsprüfung
 
-**And:** Docfield **total\_amount** is **Greater then 500**
+**Und:** Das Dokumentfeld **total\_amount** ist **größer als 500**
 
-**Then:** **Assign document to:** Asad Usman Khan
+**Dann:** **Dokument zuweisen an:** Freigabeverantwortliche
 
-**Change Status to:** Pending Approval
+**Status ändern in:** Genehmigung ausstehend
 
-<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-de.png" alt="Statusänderung als Aktion in einem ungespeicherten Workflow-Entwurf."><figcaption><p>Statusänderung als Aktion in einem ungespeicherten Workflow-Entwurf.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
 Wenn beispielsweise bestimmte oder wichtige Informationen in einem Dokument fehlen, die aber für die weitere Verarbeitung wichtig sind und enthalten sein müssen, können Sie den Workflow so einrichten, dass diese Dokumente sofort an den Einkäufer und einen Stellvertreter (Ersatz) weitergeleitet werden.
 
-<figure><img src="../../.gitbook/assets/workflow_test8_missing_info.png" alt="Workflow Test 8 Missing Info"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test8_missing_info.png" alt="Workflow-Test 8: fehlende Informationen"><figcaption></figcaption></figure>
 
 **Test 9:**
 
@@ -116,11 +118,11 @@ Der Workflow mit diesen Logic Cards ist darauf ausgelegt, automatisch zu überpr
 
 Sie können diesen Dokumenten einen bestimmten Status geben oder sie einem bestimmten Mitarbeiter zuweisen.
 
-<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow Test 9 Match Check Overview"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_overview-de.png" alt="Ungespeicherter Workflow-Entwurf mit einer Bestellabgleich-Aktion."><figcaption><p>Ungespeicherter Workflow-Entwurf mit einer Bestellabgleich-Aktion.</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Workflow Test 9 Match Check Detail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-de.png" alt="Workflow-Baustein für den Bestellabgleich im deutschen Auswahldialog."><figcaption><p>Workflow-Baustein für den Bestellabgleich im deutschen Auswahldialog.</p></figcaption></figure>
 
-**Logic Card: Quantity or Unit Price or Discount Match**
+**Logikkarte: Übereinstimmung von Menge, Stückpreis oder Rabatt**
 
 Diese Logic Card ist darauf ausgelegt, automatisch zu überprüfen, ob die in einer Auftragsbestätigung angegebene Menge, der Stückpreis oder der Rabatt mit den entsprechenden Angaben in der Bestellung übereinstimmen. Diese Überprüfung gewährleistet Konsistenz und Genauigkeit zwischen dem, was bestellt wurde, und dem, was der Lieferant zu liefern bestätigt.
 
@@ -147,7 +149,7 @@ Oben sehen Sie ein Berechnungsbeispiel für MTZ mit einem Filter für Artikelnum
 
 Bei einer manuellen Einrichtung wird empfohlen, Berechnungen, die von neuen Spalten abhängen, in einen separaten Workflow auszulagern. Um mit der Berechnung fortzufahren, können Sie die Run Workflow Card verwenden.
 
-**Run Workflow**
+**Workflow ausführen**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -155,7 +157,7 @@ Mit dieser Card können Sie den Namen eines Workflows angeben, der nach dem aktu
 
 ### **Berechnete Zuschläge in eine bestehende Spalte einfügen** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 Wenn Sie alle Zuschläge als negativen Rabatt in die Rabattspalte einfügen möchten, können Sie die Berechnungs-Card verwenden. Es kann sein, dass in dieser Spalte bereits Einträge vorhanden sind; Sie können sie als eine der Variablen auf der Card festlegen, davon den MTZ abziehen und das Ergebnis wieder in diese Spalte einfügen. Falls leere Felder vorhanden sind (Zuschläge nur für einige Artikel), wird für die Berechnung ein Wert von 0 angenommen.
 
@@ -163,6 +165,6 @@ Wenn Sie alle Zuschläge als negativen Rabatt in die Rabattspalte einfügen möc
 
 Nach der Berechnung der Zuschläge möchten Sie möglicherweise einen bestimmten Benutzer benachrichtigen, um die Auftragsbestätigung zu autorisieren. Dafür können Sie die Benachrichtigungs-Card verwenden.
 
-<figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow Notification Card"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow-Benachrichtigungskarte"><figcaption></figcaption></figure>
 
 Je nach Einstellungen wird dem Benutzer eine neue Aufgabe in DocBits zugewiesen und optional eine E-Mail gesendet, um ihn über seine neue Aufgabe zu informieren.

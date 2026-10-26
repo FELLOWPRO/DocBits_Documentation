@@ -1,17 +1,17 @@
-# Assign Document and Create Task/Notification for Group
+# Dokument zuweisen und Aufgabe/Benachrichtigung für Gruppe erstellen
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-01f8137c5c7f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck**
 
-Die Workflow-Karte "**Assign Document and Create Task/Notification for Group**" weist ein Dokument einer angegebenen Gruppe zu, erstellt eine Aufgabe oder Benachrichtigung mit anpassbaren Details und sendet optional eine E-Mail-Benachrichtigung an die Gruppe. Diese Karte unterstützt außerdem die Zuweisung eines numerischen Prioritätswerts, um die Reihenfolge der Ausführung zu bestimmen.
+Die Workflow-Karte "**Dokument zuweisen und Aufgabe/Benachrichtigung für Gruppe erstellen**" weist ein Dokument einer angegebenen Gruppe zu, erstellt eine Aufgabe oder Benachrichtigung mit anpassbaren Details und sendet optional eine E-Mail-Benachrichtigung an die Gruppe. Diese Karte unterstützt außerdem die Zuweisung eines numerischen Prioritätswerts, um die Reihenfolge der Ausführung zu bestimmen.
 
 ## **Bestandteile der Karte**
 
 1. **Gruppenname**
    * **Beschreibung:** Gibt die Gruppe an, die die Aufgabe oder Benachrichtigung erhält.
    * **Detail:** Ein Dropdown zur Auswahl des Namens der Gruppe, der das Dokument und die Aufgabe/Benachrichtigung zugewiesen werden.
-2. **Task/Notification**
+2. **Aufgabe/Benachrichtigung**
    * **Beschreibung:** Gibt die Art der für die Gruppe zu erstellenden Aktion an.
    * **Detail:** Ein Dropdown zur Auswahl von entweder "Task" oder "Notification" je nach gewünschter Aktion.
 3. **Titel**
@@ -62,3 +62,15 @@ Die Workflow-Karte "**Assign Document and Create Task/Notification for Group**" 
 ## **Fazit**
 
 Die Workflow-Karte "Assign Document and Create Task/Notification for Group" stellt sicher, dass Dokumente der passenden Gruppe zugewiesen werden, und erstellt gleichzeitig Aufgaben oder Benachrichtigungen mit anpassbaren Optionen für Priorität und E-Mail-Benachrichtigung. Dies optimiert das Dokumentenmanagement und steigert die Workflow-Effizienz.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Erstellen Sie eine Teamaufgabe neben der priorisierten Dokumentenzuweisung.
+
+**Konfiguration:** Wählen Sie `Demo Finance`, den Titel `Review invoice` und die Aufgaben- und Zuweisungsprioritäten.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Überprüfen Sie die Gruppendokumentzuordnung und die Aufgabe/Benachrichtigung separat. Eine Aufgabe allein ist kein Beweis für eine abgeschlossene Dokumentenfreigabe.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

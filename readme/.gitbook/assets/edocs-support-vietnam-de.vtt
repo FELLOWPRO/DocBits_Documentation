@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.324
+Vietnam E-Invoice ist die konfigurierte
+Familie. Die Bezeichnung nennt keine
+
+formats_02
+00:00:05.324 --> 00:00:10.792
+Veröffentlichungsversion. Prüfen Sie
+Namespace und Schema der Quelldatei, statt
+
+formats_03
+00:00:10.792 --> 00:00:15.900
+vorauszusetzen, dass alle Exporte der
+Steuerplattform dieselbe Struktur haben.
+
+workflow_01
+00:00:16.650 --> 00:00:21.956
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:21.956 --> 00:00:28.666
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:28.666 --> 00:00:30.300
+aktiviert ihn nicht.
+
+accept_01
+00:00:31.050 --> 00:00:35.682
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:35.682 --> 00:00:41.812
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:41.812 --> 00:00:44.933
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

@@ -13,8 +13,8 @@ L'abbinamento dell'ordine di acquisto dovrebbe essere eseguito prima di questa s
 1. **Qualsiasi/Tutti**
    * **Descrizione:** Come i codici di struttura degli ordini di acquisto abbinati vengono valutati rispetto all'elenco.
    * **Opzioni:**
-     * **Qualsiasi:** Almeno una voce dell'elenco si trova tra i codici di struttura degli ordini di acquisto abbinati.
-     * **Tutti:** Ogni codice di struttura degli ordini di acquisto abbinati è presente nell'elenco. Se non è impostato alcun valore, la scheda utilizza **Tutti**.
+     * **Qualsiasi:** Almeno un ordine di acquisto abbinato soddisfa l'operatore.
+     * **Tutti:** Ogni ordine di acquisto abbinato con una struttura soddisfa l'operatore. Se non è impostato alcun valore, la scheda utilizza **Tutti**.
 2. **Operatore**
    * **Descrizione:** Se la struttura dovrebbe essere presente nell'elenco o no.
    * **Opzioni:**
@@ -27,10 +27,10 @@ L'abbinamento dell'ordine di acquisto dovrebbe essere eseguito prima di questa s
 ## Funzionalità:
 
 * **Valutazione della condizione:** La scheda legge i numeri degli ordini di acquisto abbinati al documento, carica questi ordini di acquisto e raccoglie la struttura (sede) di ciascuno di essi. Gli ordini di acquisto senza struttura vengono saltati. I codici di struttura raccolti vengono quindi confrontati con i **Codici del nome della struttura** indicati sulla scheda.
-  * Con **Qualsiasi** ed **È**, il confronto non distingue tra maiuscole e minuscole, e una voce dell'elenco conta anche quando fa parte di un codice di struttura più lungo (ad esempio, la voce `WH` viene trovata in `WH01`).
-  * Con **Tutti** ed **È**, ogni codice di struttura degli ordini di acquisto dovrebbe comparire nell'elenco esattamente con la stessa grafia, comprese maiuscole e minuscole.
+  * Un codice di struttura conta come elencato quando corrisponde per intero a uno dei codici inseriti. Maiuscole e minuscole e gli spazi attorno alle voci vengono ignorati, quindi `wh01` corrisponde a `WH01`, ma `WH` non corrisponde a `WH01`.
+  * Con **È**, un ordine di acquisto soddisfa la condizione quando il suo codice di struttura è elencato. Con **Non è**, la soddisfa quando il suo codice di struttura non è elencato.
+  * Con **Qualsiasi**, la condizione è soddisfatta se almeno un ordine di acquisto la soddisfa; con **Tutti**, se la soddisfa ogni ordine di acquisto con una struttura.
   * Se nessuno degli ordini di acquisto abbinati ha una struttura, **Tutti** è soddisfatto e **Qualsiasi** no.
-  * Con **Non è**, il risultato non è semplicemente l'opposto di **È**. Il log della scheda mostra quali codici sono stati trovati e quali non hanno trovato corrispondenza, il che aiuta a verificare il comportamento per una determinata configurazione.
 * **Esecuzione dell'azione:**
   * **Condizione vera:**\
     Se la condizione è soddisfatta, il workflow prosegue, ad esempio con un passaggio specifico per le strutture elencate.
@@ -40,7 +40,7 @@ L'abbinamento dell'ordine di acquisto dovrebbe essere eseguito prima di questa s
 
 ## Configurazione e impostazione:
 
-* La scheda può essere aggiunta come condizione And dopo l'abbinamento dell'ordine di acquisto, dalla categoria **Confronto con l'ordine di acquisto**. Successivamente è possibile impostare **Qualsiasi** o **Tutti**, l'operatore e i codici di struttura, separati da virgole. Inserire i codici con la stessa grafia dell'ordine di acquisto è la scelta più sicura, perché **Tutti** li confronta in modo esatto.
+* La scheda può essere aggiunta come condizione And dopo l'abbinamento dell'ordine di acquisto, dalla categoria **Confronto con l'ordine di acquisto**. Successivamente è possibile impostare **Qualsiasi** o **Tutti**, l'operatore e i codici di struttura, separati da virgole. Maiuscole e minuscole non contano, ma ogni codice dovrebbe essere inserito per intero, perché le parti di un codice non trovano corrispondenza.
 * Per provare la configurazione su un documento esistente è possibile utilizzare **Scheda di prova** nel menu della scheda del Workflow Builder. Il log della scheda elenca gli ordini di acquisto abbinati, i codici di struttura trovati su di essi e i codici che non hanno trovato corrispondenza.
 
 ## Conclusione:

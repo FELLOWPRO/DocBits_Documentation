@@ -12,7 +12,7 @@ Questa scheda del workflow avvia un workflow (trigger) quando lo stato di un for
    * **Descrizione:** Definisce se il nuovo stato del fornitore dovrebbe essere uno degli stati selezionati o nessuno di essi.
    * **Opzioni:**
      * **È:** La condizione è vera se il nuovo stato è uno degli stati selezionati.
-     * **Non è:** La condizione è vera se il nuovo stato non è uno degli stati selezionati.
+     * **Non è:** La condizione è vera se un cambio di stato del fornitore ha avviato il workflow e il nuovo stato non è uno degli stati selezionati.
 2. **Stato**
    * **Descrizione:** Gli stati del fornitore con cui viene confrontato il nuovo stato.
    * **Opzioni:** Uno o più tra:
@@ -28,10 +28,10 @@ Questa scheda del workflow avvia un workflow (trigger) quando lo stato di un for
 * **Valutazione della condizione:** La scheda confronta lo stato trasmesso al workflow con gli stati selezionati sulla scheda.
 * **Esecuzione dell'azione:**
   * **Condizione vera:**\
-    Con **È** il nuovo stato è uno degli stati selezionati, con **Non è** non lo è. Il workflow prosegue con le schede successive.
+    Con **È** il nuovo stato è uno degli stati selezionati. Con **Non è** un cambio di stato del fornitore ha avviato il workflow e il nuovo stato non è uno degli stati selezionati. Il workflow prosegue con le schede successive.
   * **Condizione falsa:**\
     Se la condizione non è soddisfatta, la scheda non è soddisfatta e i passaggi successivi non vengono eseguiti.
-* **Nota su "Non è":** Anche un'importazione di ordini di acquisto avvia tutti i workflow indipendenti dal documento, compresi quelli con questa scheda. Un'importazione di ordini di acquisto non trasmette alcuno stato del fornitore, quindi con **Non è** anche un'importazione di ordini di acquisto rende vera la scheda e il workflow viene eseguito. Combinare **Non è** con ulteriori condizioni può aiutare a limitare il workflow agli eventi relativi ai fornitori.
+* **Altri eventi indipendenti dal documento:** Anche un'importazione di ordini di acquisto avvia tutti i workflow indipendenti dal documento, compresi quelli con questa scheda. Un'esecuzione di questo tipo non soddisfa la scheda con nessuno dei due operatori, quindi i passaggi successivi vengono eseguiti solo per i cambi di stato del fornitore.
 * **Dati mancanti:** Se sulla scheda non è selezionato alcuno stato, la scheda non valuta la condizione. Segnala l'input mancante (o un errore) nel log del workflow e i passaggi successivi non vengono eseguiti.
 * **Operatore non valido:** Se l'operatore non è né **È** né **Non è**, la scheda segnala un errore di configurazione della scheda nel log del workflow.
 

@@ -10,6 +10,6 @@ Si la agrupación está disponible, seleccione un campo sobre la tabla. Para fec
 
 Use **+** junto a las pestañas de tipos de documento para mostrar otras pestañas. Puede reordenarlas arrastrándolas. Quitar una pestaña solo cambia la vista; no elimina documentos.
 
-Abra el engranaje y los ajustes de columnas. Mueva columnas entre las listas de ocultas y visibles y arrastre las visibles para ordenarlas. También puede añadir campos de un tipo de documento. Consulte [Cambiar columnas del documento](change-document-columns.md).
+Abra el engranaje **Ajustes avanzados** a la derecha de la barra de búsqueda y, en su menú, el botón **Configuración de columnas**. Mueva columnas entre las listas de ocultas y visibles y arrastre las visibles para ordenarlas. También puede añadir campos de un tipo de documento. Consulte [Cambiar columnas del documento](change-document-columns.md).
 
 Consulte búsqueda, acciones y vistas guardadas en la [guía del panel](README.md).

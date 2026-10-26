@@ -15,15 +15,17 @@ Dokumente wie Rechnungen oder Auftragsbestätigungen enthalten oft Tabelleneintr
 
 Nehmen Sie dieses Beispiel einer deutschen Rechnung - die Spalte "Bezeichnung" erstreckt sich über mehrere Zeilen:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FVino2M4Esor3IRHGqBd5Brx7_lKPIwEOlRYBHzMXw4WoacFNW39hbWuwoUNGocubx4Bh9_BvUBqZSWA4U_NmU8FBw4Q1_AiTASgMx-2MLKvsHLJY057oqyks0fQ5b7mI577JTX5rBKdEG90O9F5TcoU\&width=768\&dpr=4\&quality=100\&sign=ae0bd75a\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-multiline-doc-de-20261009.png" alt="Deutsche Rechnungstabelle, bei der sich die Bezeichnung jedes Artikels über mehrere Zeilen erstreckt."><figcaption><p>Eine Beschreibungsspalte, die sich über mehrere Zeilen erstreckt.</p></figcaption></figure>
 
 Zunächst extrahiert DocBits jede Zeile separat:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FUX5OdkW59HPVROnNzSeZbDw4NYTPbfayDLIXBQi0pwHzUEJ1B5t7I9uKBNc0dmOB3Cile8Xv6AdgVXuUd0aMbQFGWagBCEetw8P-N4zgG_cGTjWHhpDtGQZg27UZKdCDJ5FeEDJgFAYtTB8kZrMSdho\&width=768\&dpr=4\&quality=100\&sign=b6990876\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-de-20261009.png" alt="Extrahierte Tabelle, in der jede Textzeile der Beschreibung zu einer eigenen Zeile wurde."><figcaption><p>DocBits extrahiert zunächst jede Zeile separat.</p></figcaption></figure>
 
 Anschließend können Sie **Zeilen basierend auf einer Spalte gruppieren**, wie z. B. "Position". Dadurch werden zusammenhängende Zeilen zu einem einzigen strukturierten Eintrag zusammengeführt:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FPxA6h2udUuYd1YmHV97t-bzfZzipFpdA5t8gjpGXWx9sA-I4tW3tYwD28icv88UEmitz0EAaWuGkU5ZwqAjcQnoOkmg9u1AcBJW3nITU6eFa0foHB-AQPb0qv0AWaaEwM6WvwaEcAODEUzKtvRZOMN0\&width=768\&dpr=4\&quality=100\&sign=36b99bc7\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-de-20261009.png" alt="Extrahierte Tabelle, in der die zusammengehörigen Beschreibungszeilen pro Position zu einem Eintrag zusammengeführt sind."><figcaption><p>Nach der Gruppierung nach Position bilden die zusammengehörigen Zeilen einen Eintrag.</p></figcaption></figure>
+
+Wie viele Unterzeilen zu einem Eintrag zusammengefasst werden und wie die Gruppierung sich verhält, stellen Sie in den [erweiterten Einstellungen](advanced-settings.md) unter **Mindestanzahl gruppierte Zeilen** und **Umgekehrte Gruppierung** ein.
 
 ## 2. Manuelle Zeilenauswahl
 
@@ -31,7 +33,7 @@ In einigen Fällen ist der Text auf einem Dokument über mehrere Spalten in eine
 
 Hier ist ein Beispiel, bei dem die Zeile "PRAEF" **Bezeichnung**, **Menge**, **ME** und **Preis in EUR** überlappt:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FLbVbmfdOBpeCWDftPvW0qjEHjbLmWYRrAGTZHVW8VEHQTEvl5GoqH2wkFE5iUOySmF50b1V8CDAZhfMzPTeMQscmc61SDKaqSCW-y0Z7fjlwOjhtjxWD44oCsgHmwrgrBD4cuEGgn9JY_UX3t9jRlPs\&width=768\&dpr=4\&quality=100\&sign=5ff4a2e1\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-de-20261009.png" alt="Rechnungstabelle mit einer PRAEF-Zeile, deren Text über mehrere Spalten verläuft."><figcaption><p>Eine PRAEF-Zeile, die nicht zum Spaltenaufbau passt.</p></figcaption></figure>
 
 Zeilenverschiebung
 
@@ -39,18 +41,20 @@ Zeilenverschiebung
 
 1.  **Training-Modus aktivieren**
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F4D8iCXk0p_Mur8bX_11ne_2iA-GOxoFi2OQWlSEvrH1auoE0ksnYXpZx3Pw3PUJJRZJN85dnQlSSBB369FfafXAy8adjFZcnepQnODSaaIj69cxtUKFAXPgn5eyPE6jbJuzStJALMgumlt49Z1Pv3FY\&width=768\&dpr=4\&quality=100\&sign=232c58a9\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-de-20261009.png" alt="Ansicht der Tabellenauswertung mit aktiviertem Trainingsmodus."><figcaption><p>Trainingsmodus aktiviert.</p></figcaption></figure>
 2.  **Aktivieren des Zeilenbearbeitungsmodus**\
 
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8YQmo_WRuKKVjk1a_eoxSBiQr0GncuS4BmCA0aI9aOlrbsIvdj8dZlurxxBHp2lH4ozT4HPWw9qYDW7xLQ7u2DSyU8DrNzSBC7LjzKLTDJ2tudY9a_DENDoK5Aya6L1hcf1WF1RD92S_DzhGVV4Gh6Q\&width=768\&dpr=4\&quality=100\&sign=8fc5c089\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-de-20261009.png" alt="Ansicht der Tabellenauswertung mit aktiviertem Bearbeitungsmodus für Zeilendaten und sichtbarem Hinweistext."><figcaption><p>Bearbeitungsmodus für Zeilendaten aktiviert.</p></figcaption></figure>
 
 
 3.  **Text auswählen und zuordnen** Klicken Sie auf das richtige Textstück und weisen Sie es einem **blauen** Spaltenkopf zu.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fi2tlbwl9qFE0clthaoRPe7kcPRiURCvemuLEjBK4uAnfsR4auXbftMfEY1ZW5WXwezTBVSG5hbNRkddwIeLtrgJUvZoeKGdPKN8f75O_dPdIWkm4EFALfAj-evDUI3UKrgNOTNjF37C1bBLtE95OA1w\&width=768\&dpr=4\&quality=100\&sign=842a42\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-de-20261009.png" alt="Extrahierte Tabelle im Bearbeitungsmodus für Zeilendaten mit den blauen, noch nicht gefüllten Spaltenüberschriften, die manuell zugewiesen werden können."><figcaption><p>Blaue Spaltenüberschriften können manuell gefüllt werden.</p></figcaption></figure>
 
 > Hinweis: Violett markierte Spalten sind bereits systemmäßig zugeordnet und können nicht manuell bearbeitet werden.
+
+Dieses Vorgehen gehört zum **Korrekturmodus**, in dem Sie Werte manuell berichtigen. Was Sie dort tun können und wann Sie ihn statt des Trainingsmodus einsetzen, lesen Sie unter [Training Line Fields/Table Training](README.md).
 
 ## 3. Spaltenzuordnung
 
@@ -61,9 +65,11 @@ Um eine Spalte zuzuordnen oder neu zuzuordnen:
 1. Klicken Sie auf den Spaltenheader in der Extraktionsansicht.
 2. Wählen Sie die korrekte Zielspalte aus dem Dropdown-Menü.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FX_65pCWrI4HMFr_aiA0eoSDp-yIYy49lULzAZaiIgnr0aIowlLSed21MuehkGLs4UIdQousdfhiZi5pnQtpZ0uUn6dxlzii7WPQvov-kN1_Jimsi6U6zowOLxjBzZzZ47kaRhduAVBd_Ya9QQtXTpJ4\&width=768\&dpr=4\&quality=100\&sign=4e2a3bdc\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-de-20261009.png" alt="Extrahierte Tabelle mit geöffnetem Dropdown der Spaltenüberschrift, das die Zielspalten Beschreibung, Artikel Nummer, Nettobetrag, Position, Menge, Gesamtbetrag, Einheit und Einzelpreis auflistet."><figcaption><p>Wählen Sie die Zielspalte im Dropdown der Überschrift.</p></figcaption></figure>
 
 Sie können die Zuordnung so oft anpassen, wie es erforderlich ist.
+
+Mehr dazu, wie Tabellen und Spalten grundsätzlich angelegt werden, steht unter [Definieren von Tabellen und Spalten](defining-tables-and-columns.md).
 
 ## 4. Extrahieren von oben / unten
 
@@ -117,6 +123,8 @@ Diese Funktion ermöglicht es Ihnen, für jede Tabellenüberschrift ein Regex zu
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FC4R2o2W10ct1o0oesTLZ%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250303135153.jpg%3Falt%3Dmedia%26token%3D43e53a05-53fe-4503-ba51-55c85910bd82\&width=768\&dpr=4\&quality=100\&sign=9ec6eb7b\&sv=2)
 7. **Regel speichern und bestätigen**, um die Änderungen anzuwenden.
 
+Wie Sie Ihre trainierten Regeln dauerhaft speichern oder wieder löschen, ist unter [Regeln speichern und löschen](save-and-delete-rules.md) beschrieben.
+
 ## Wann Sie jedes Feature verwenden sollten
 
 Verwenden Sie diese Tools, um die Extraktionsgenauigkeit zu erhöhen und manuelle Arbeit zu reduzieren:
@@ -125,3 +133,9 @@ Verwenden Sie diese Tools, um die Extraktionsgenauigkeit zu erhöhen und manuell
 * **Manuelle Zeilenauswahl**: Wenn Zeilen nicht sauber strukturiert sind und Teile des Inhalts in falsche Spalten fallen.
 * **Spaltenzuordnung**: Wenn die automatisch erkannten Spaltennamen nicht mit Ihrer Struktur übereinstimmen oder verfeinert werden müssen.
 * **Regex-Regeln**: Wenn Tabellenüberschriften in Dokumenten desselben Lieferanten leicht variieren oder OCR Unstimmigkeiten einführt.
+
+Weiterführende Anleitungen in diesem Bereich:
+
+* [Erweiterte Einstellungen](advanced-settings.md) – Gruppierung, Kopfzeilen und Umgang mit zusätzlichen Zeilen.
+* [Definieren von Tabellen und Spalten](defining-tables-and-columns.md) – Tabellen und Spalten anlegen.
+* [Regeln speichern und löschen](save-and-delete-rules.md) – trainiertes Layout dauerhaft übernehmen oder verwerfen.

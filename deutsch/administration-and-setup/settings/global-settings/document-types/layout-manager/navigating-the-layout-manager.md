@@ -1,32 +1,47 @@
 # Im Layout Builder navigieren
 
-Verwenden Sie den **Layout-Editor**, um die Felder und Gruppen anzuordnen, die Benutzer in einem Dokument sehen. Die Aufnahmen zeigen die deutsche Oberfläche mit dem Layout **Standard** für Rechnungen. Eingabewerte sind ausgeblendet; die Dokumentvorschau liegt außerhalb des Bildausschnitts.
+Verwenden Sie den **Layout Builder**, um die Gruppen und Felder anzuordnen, die Benutzer in einem Dokument sehen. Die Aufnahmen in diesem Artikel zeigen die deutsche Oberfläche am Beispiel des Rechnungs-Layouts in einer Sandbox-Organisation.
 
 ## Das Rechnungs-Layout öffnen
 
 1. Gehen Sie zu **Einstellungen → Dokumenttypen**.
-2. Suchen Sie **Rechnung** und wählen Sie auf der Karte **Layouts**. Der Layout Builder öffnet sich für diesen Dokumenttyp.
-3. Prüfen Sie die Layout-Auswahl oben links. Im Beispiel ist der Auswahlwert aus Datenschutzgründen ausgeblendet.
+2. Suchen Sie die Karte **Rechnung** und wählen Sie darunter **Layouts**. Der Layout Builder öffnet sich für diesen Dokumenttyp.
+3. In der Kopfzeile sehen Sie den Namen des Layouts (umbenennen mit dem Stift-Symbol), den **Dokumenttyp** und den **Layouttyp**. Über den **Layouttyp** wechseln Sie zu einem anderen Layout desselben Dokumenttyps.
 
-<figure><img src="../../../../../.gitbook/assets/s50-dbdc177-document-types-de.png" alt="Deutsche Dokumenttypen: Öffnen Sie Layouts auf der Karte Rechnung."><figcaption><p>Deutsche Dokumenttypen: Öffnen Sie Layouts auf der Karte Rechnung.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-de.png" alt="Liste der Dokumenttypen mit der Karte Rechnung und ihrem Link Layouts"><figcaption><p>Öffnen Sie <strong>Layouts</strong> auf der Karte Rechnung.</p></figcaption></figure>
 
-## Gruppen und Felder finden
+## Mit den drei Tabs arbeiten
 
-Das linke Panel **Elemente** hat drei Bereiche. **Gruppen** listet die Dokumentabschnitte auf; die mittlere Arbeitsfläche zeigt deren aktuelle Anordnung. Wählen Sie ein Feld auf der Arbeitsfläche aus und öffnen Sie **Eigenschaften**, um dessen Anzeigeeinstellungen zu ändern. Die verfügbaren Optionen finden Sie unter [Feldeigenschaften konfigurieren](configuring-field-properties.md).
+Das Panel auf der linken Seite hat drei Tabs: **Struktur**, **Felder** und **Elemente**. Der Layout Builder öffnet mit dem Tab **Felder**.
 
-<figure><img src="../../../../../.gitbook/assets/s50-dbdc177-layout-elements-de.png" alt="Gruppen und Arbeitsfläche im deutschen Layout Builder. Eingabewerte sind ausgeblendet; die Dokumentvorschau liegt außerhalb des Bildausschnitts."><figcaption><p>Gruppen und Arbeitsfläche im deutschen Layout Builder. Eingabewerte sind ausgeblendet; die Dokumentvorschau liegt außerhalb des Bildausschnitts.</p></figcaption></figure>
+**Struktur** zeigt das Layout als Baum, in derselben Reihenfolge, in der Gruppen und Felder im Dokument erscheinen. Klappen Sie eine Gruppe über das Chevron-Symbol auf, um ihre Felder zu sehen; den technischen Feldnamen zeigt das Panel **Eigenschaften**. Das Suchfeld filtert den Baum, und wenn Sie eine Zeile auswählen, wird dasselbe Element auf der Arbeitsfläche ausgewählt.
 
-Öffnen Sie **Felder**, um die verfügbaren Dokumentfelder zu finden. Verwenden Sie bei langen Listen das Suchfeld und ziehen Sie das Feld dann auf der Arbeitsfläche in die gewünschte Gruppe. Felder, die bereits im Layout platziert sind, können in der Liste als nicht verfügbar erscheinen.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-de.png" alt="Layout Builder mit geöffnetem Tab Struktur: der aufgeklappte Gruppenbaum mit dem ausgewählten Feld supplier_id, das Rechnungs-Layout auf der Arbeitsfläche und das Eigenschaften-Panel auf der rechten Seite"><figcaption><p>Der Struktur-Baum, die Arbeitsfläche und das Eigenschaften-Panel.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s50-dbdc177-layout-fields-de.png" alt="Deutsches Panel Felder mit Suche und Feldbezeichnungen. Technische Feldschlüssel bleiben unverändert."><figcaption><p>Deutsches Panel Felder mit Suche und Feldbezeichnungen. Technische Feldschlüssel bleiben unverändert.</p></figcaption></figure>
+**Felder** listet alle Felder, die der Dokumenttyp anbietet, gruppiert nach ihren Gruppen. Der Zähler neben einem Gruppennamen zeigt, wie viele ihrer Felder bereits platziert sind, zum Beispiel **4/14**. Die drei Symbolschalter unter dem Suchfeld begrenzen die Liste: alle Felder, nur die noch nicht platzierten Felder oder nur die ausgeblendeten Felder. Jede Zeile zeigt die Feldbezeichnung; ein grünes Häkchen rechts markiert Felder, die bereits im Layout stehen, und platzierte Felder erscheinen ausgegraut.
 
-Einzelne Bausteinnamen bleiben auch bei deutscher UI-Sprache englisch. Öffnen Sie **Formular-Elemente** für visuelle Steuerelemente wie Text, Label, Check Box, Trennlinie, Button und Sub Group. Ziehen Sie das gewünschte Element auf die Arbeitsfläche und prüfen Sie anschließend dessen **Eigenschaften**.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-de.png" alt="Tab Felder mit den drei Filterschaltern unter dem Suchfeld, der geöffneten Gruppe Details der Rechnung mit dem Zähler 4/14 und Feldern, die bereits platziert sind (ausgegraut, mit Häkchen)"><figcaption><p>Filtern Sie die Felder und erkennen Sie platzierte Felder am Häkchen.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s50-dbdc177-layout-form-elements-de.png" alt="Panel Formular-Elemente in der deutschen Oberfläche. Bezeichnungen einzelner Bausteine wie Check Box bleiben im Produkt englisch."><figcaption><p>Panel Formular-Elemente in der deutschen Oberfläche. Bezeichnungen einzelner Bausteine wie Check Box bleiben im Produkt englisch.</p></figcaption></figure>
+**Elemente** enthält die Bausteine, die Sie auf die Arbeitsfläche ziehen: **Gruppen** mit den Gruppen dieses Layouts und **Formular-Elemente** mit Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields und Sub Group.
 
-## Anordnen und speichern
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-de.png" alt="Tab Elemente mit dem Bereich Gruppen, der die Gruppen dieses Layouts auflistet, und dem Bereich Formular-Elemente mit den Bausteinen"><figcaption><p>Die Paletten Gruppen und Formular-Elemente.</p></figcaption></figure>
 
-- Wählen Sie einen Gruppentitel auf der Arbeitsfläche aus, um den Titel zu ändern. Das **+** über der Arbeitsfläche fügt eine Gruppe hinzu; das danebenliegende Klammer-Symbol öffnet das erweiterte JSON-Gruppenformular.
-- Fahren Sie mit der Maus über eine Gruppe, um die Aktionen JSON kopieren, nach oben, nach unten, löschen und den Ziehgriff zu sehen. Um Felder neu anzuordnen, ziehen Sie sie innerhalb von Gruppen oder zwischen Gruppen.
-- Wählen Sie ein Feld auf der Arbeitsfläche aus, um **Eigenschaften** zu öffnen. Das Löschen-Symbol entfernt es aus diesem Layout. Für Validierung, OCR oder Abgleich verwenden Sie die separaten [Fields-Einstellungen](../fields/configuring-field-properties-1.md).
-- Wählen Sie nach dem Bearbeiten **Speichern** in der oberen Leiste. Lesen Sie [Änderungen speichern und anwenden](save-and-apply-changes.md), bevor Sie die anderen Aktionen der oberen Leiste verwenden, darunter Vorlagenerzeugung, Standardvorlagen und das Anwenden eines Layouts auf Origins.
+## Elemente platzieren und anordnen
+
+- Ziehen Sie ein Feld aus **Felder** oder ein Element aus **Elemente** in die Gruppe, in der es erscheinen soll. Bereits platzierte Felder tragen im Tab **Felder** ein Häkchen.
+- Ziehen Sie ein Feld innerhalb einer Gruppe oder zwischen Gruppen, um es neu anzuordnen.
+- Das **+** über der Arbeitsfläche fügt eine leere Gruppe hinzu; das JSON-Symbol daneben erzeugt eine Gruppe aus einer JSON-Definition.
+- In der Kopfzeile einer Gruppe benennen Sie die Gruppe im Feld **Titel der Gruppe** um, kopieren ihr JSON, verschieben sie nach unten oder oben oder löschen sie. Mit dem Ziehgriff am rechten Rand der Kopfzeile verschieben Sie die Gruppe.
+- Wählen Sie ein Feld auf der Arbeitsfläche aus, um rechts seine Eigenschaften zu öffnen. Die kleine Symbolleiste unter dem ausgewählten Feld entfernt es aus dem Layout.
+
+## Das Eigenschaften-Panel
+
+Das Panel **Eigenschaften** auf der rechten Seite ist immer geöffnet und folgt dem Element, das Sie ausgewählt haben. Seine Einstellungen sind in vier Abschnitte gegliedert: **Darstellung**, **Verhalten**, **Werte & Listen** und **Automatisierung**. Unter **Darstellung** finden Sie die Bezeichnung, den Feldtyp und die **Elementbreite in Prozenten**, die Sie aus den Werten 25, 33, 50, 66, 75 und 100 Prozent wählen. Die einzelnen Optionen beschreibt [Feldeigenschaften konfigurieren](configuring-field-properties.md).
+
+Validierung, OCR und Abgleich gehören zum Feld selbst, nicht zum Layout: Konfigurieren Sie sie in den separaten [Fields-Einstellungen](../fields/configuring-field-properties-1.md).
+
+## Vorschau und Speichern
+
+Die Arbeitsfläche zeigt das Layout so, wie es später im Dokument aussieht. Wechseln Sie mit den Tabs **Hauptlayout** und **Tabelle** zwischen der Seite und der Tabelle mit den Positionen, und öffnen Sie mit **Dokument** das Beispieldokument neben der Arbeitsfläche. Siehe [Die Vorlagenvorschau verwenden](using-the-template-preview.md).
+
+Wählen Sie abschließend **Speichern** in der Kopfzeile. Die weiteren Aktionen der Kopfzeile – darunter Vorlagenerzeugung, Standardvorlagen und das Anwenden eines Layouts auf Origins – beschreibt [Änderungen speichern und anwenden](save-and-apply-changes.md).

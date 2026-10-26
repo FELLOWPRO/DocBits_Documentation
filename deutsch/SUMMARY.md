@@ -46,6 +46,7 @@
 * [Endnutzerbereich](end-user-and-partner-section/end-user-section/README.md)
   * [Erste Schritte und Anmeldung](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Globale Schnellsuche](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Videos & Tutorials](end-user-and-partner-section/end-user-section/videos-and-tutorials.md)
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Änderungen der Webadressen](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [Anpassbare Seitenleiste](end-user-and-partner-section/end-user-section/customizable-sidebar.md)

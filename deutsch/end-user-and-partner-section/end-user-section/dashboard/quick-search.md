@@ -48,8 +48,8 @@ Am rechten Ende der Leiste:
 
 - **ⓘ Hilfe** — öffnet die in der App integrierte Referenz **Dashboard-Suche — Felder & Syntax**,
   die jedes Feld, jeden Operator und jede Kurzform auflistet, die in Ihrem Workspace verfügbar sind.
-- **Filter (Regler)** — ein Schnellbereich für die gängigen Filter Status / Benutzer / Neustart,
-  mit **Filter zurücksetzen** und **Anwenden**.
+- **Filter** (drei Schieberegler) — ein Schnellbereich für die gängigen Filter **Status**,
+  **Zugewiesen an** und **Neustart erforderlich**, mit **Filter löschen** und **Anwenden**.
 - **Index-Ring** — ein kleiner Fortschrittsring, der anzeigt, wie viel Ihres Volltext-Index
   bereits aufgebaut ist (wird nur angezeigt, wenn die Volltextsuche aktiviert ist).
 
@@ -222,28 +222,29 @@ ap_assignment_code=""
 
 ---
 
-## Smart-Filter — ein Klick
+## Schnellfilter — ein Klick
 
-Oben im Dropdown-Menü der Schnellsuche (klicken Sie in die Suchleiste) finden Sie
-**Smart-Filter**: fertige Suchen, die Sie mit einem einzigen Klick anwenden. Jeder davon
-ist lediglich eine Kurzform für eine Abfrage, die Sie auch selbst eingeben könnten:
+Das **Blitz**-Symbol am Anfang des Suchfelds öffnet die Feldauswahl. Oben in dieser
+Auswahl stehen die **Schnellfilter**: fertige Suchen, die Sie mit einem einzigen Klick
+anwenden. Jeder davon ist lediglich eine Kurzform für eine Abfrage, die Sie auch selbst
+eingeben könnten:
 
-| Smart-Filter | Findet | Entspricht der Eingabe |
+| Schnellfilter | Findet | Entspricht der Eingabe |
 |--------------|-------|----------------|
 | ⚠️ **Überfällig** | Über das Fälligkeitsdatum hinaus | `invoice_due_date<today()` |
 | 🕐 **Bald fällig** | Innerhalb der nächsten 7 Tage | `invoice_due_date<=today()+7` |
 | 👤 **Mir zugewiesen** | Elemente, die auf Ihre Aktion warten | `assigned_to=<you>` |
-| 📅 **Heutiger Posteingang** | Heute importiert | `imported_on>=today()` |
-| 📋 **Ausstehende Validierung** | Bereit zur Validierung | `status=ready_for_validation` |
+| 📅 **Heute eingegangen** | Heute importiert | `imported_on>=today()` |
+| 📋 **Wartet auf Validierung** | Bereit zur Validierung | `status=ready_for_validation` |
 | 🧾 **Elektronische Dokumente** | E-Rechnungen (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Vollständiger Bestellabgleich** | Vollständig mit einer Bestellung abgeglichen | `po_match_status=full_matched` |
-| ➗ **Teilweiser Bestellabgleich** | Teilweise mit einer Bestellung abgeglichen | `po_match_status=partial_matched` |
-| 📉 **Unter-Bestellabgleich** | Menge oder Stückpreis unter der Bestellung | `po_match_status=under_matched` |
+| ✅ **Voller PO-Abgleich** | Vollständig mit einer Bestellung abgeglichen | `po_match_status=full_matched` |
+| ➗ **Teilweiser PO-Abgleich** | Teilweise mit einer Bestellung abgeglichen | `po_match_status=partial_matched` |
+| 📉 **PO-Unterabgleich** | Menge oder Stückpreis unter der Bestellung | `po_match_status=under_matched` |
 
-Die drei **Bestellabgleich**-Filter und die Volltextfelder erfordern, dass die Volltextsuche
+Die drei **PO-Abgleich**-Filter und die Volltextfelder erfordern, dass die Volltextsuche
 für Ihre Organisation aktiviert ist.
 
-<figure><img src="../../../.gitbook/assets/s50-quick_search_11_smart_filters-de.png" alt="Deutsche Schnellfilter im Menü der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen."><figcaption><p>Deutsche Schnellfilter im Menü der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s50-quick_search_11_smart_filters-de.png" alt="Deutsche Schnellfilter in der Feldauswahl der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen."><figcaption><p>Deutsche Schnellfilter in der Feldauswahl der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen.</p></figcaption></figure>
 
 ---
 

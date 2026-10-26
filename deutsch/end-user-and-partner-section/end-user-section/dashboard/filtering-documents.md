@@ -4,7 +4,7 @@
 
 Über die Suchleiste im Dashboard suchen Sie nach Dokumenten. Weitere Möglichkeiten und Suchausdrücke erklärt die [Schnellsuche](quick-search.md).
 
-Öffnen Sie das Filtersymbol rechts in der Suchleiste. Im aktuellen Filterdialog stehen **Status**, **Zugewiesen An** und **Neustart Erforderlich** zur Verfügung.
+Wählen Sie das Symbol **Filter** (drei Schieberegler) am rechten Ende der Suchleiste. Im aktuellen Filterdialog stehen **Status**, **Zugewiesen An** und **Neustart Erforderlich** zur Verfügung.
 
 <figure><img src="../../../.gitbook/assets/dashboard_filters-de.png" alt="Deutscher Filterdialog mit Status, Zugewiesen An, Neustart Erforderlich, Filter löschen und Anwenden"><figcaption><p>Der Filterdialog der deutschen DocBits-Oberfläche. Die Auswahllisten sind geschlossen; Personen- und Dokumentdaten werden nicht gezeigt.</p></figcaption></figure>
 

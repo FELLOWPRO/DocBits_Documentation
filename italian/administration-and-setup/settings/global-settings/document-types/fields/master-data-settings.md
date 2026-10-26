@@ -1,5 +1,13 @@
 # Impostazioni dei dati master
 
+## Video tutorial: Dati anagrafici ed elenchi di valori
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/it.mp4" %}
+Fonti dei dati anagrafici, elenchi di valori e impostazioni dei dati master in DocBits
+{% endembed %}
+
+Il video mostra le fonti dei dati anagrafici, gli elenchi di valori e le impostazioni dei dati master di un tipo di documento.
+
 Le **Impostazioni dei dati master** collegano i campi di convalida di un documento ai dati archiviati in [Ricerca dei dati master](../../../document-processing/master-data-lookup.md). Usa **Ricerca di dati anagrafici** per trovare e riprendere un record corrispondente. Usa **Dati anagrafici LOV** per proporre un elenco di valori tratti da un set di dati.
 
 ## Aprire le impostazioni

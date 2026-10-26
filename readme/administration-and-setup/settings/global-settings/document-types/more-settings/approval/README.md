@@ -1,49 +1,18 @@
-# Factuurgoedkeuringen configureren en testen
+# Goedkeuring
 
-Deze video toont de configuratie en het testen van goedkeuringen.
+Gebruik de goedkeuringsopties om te bepalen hoe een document wordt gecontroleerd voordat het DocBits verlaat. De opties worden per documenttype ingesteld, dus begin met het type dat uw team gebruikt, bijvoorbeeld **Factuur**.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/nl.mp4" %}
-Factuurgoedkeuringen configureren en testen
-{% endembed %}
+1. Open **Instellingen** → **Documenttypen**.
+2. Selecteer het documenttype en open **Meer Instellingen**.
+3. Ga naar **Goedkeuring en afwijzing**. Bekijk de vier schakelaars voordat u er een wijzigt.
 
-[Bekijk video met ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-admin/v2/nl.html)
+<figure><img src="../../../../../../.gitbook/assets/dbdc224-approval-options-nl-20261009.png" alt="Goedkeuring en afwijzing in het Nederlands bij het documenttype Factuur in de Sandbox"><figcaption>Huidige Nederlandse Sandbox-weergave voor Factuur in de DocBits-documentatie. In dit voorbeeld staan alle vier schakelaars uit.</figcaption></figure>
 
-De echte applicatie wordt getoond. De namen van opties kunnen per gebruikte versie verschillen.
-
-Configureer goedkeuring voor het documenttype dat door uw proces wordt gebruikt. Identificeer de beoogde beoordelaars en beslis of u een tweede onafhankelijke beoordeling nodig heeft. De video gebruikt een apart documenttype en tijdelijke gewone beoordelaarsaccounts.
-
-## Configureer het documenttype
-
-Open **Instellingen → Documenttypen**, selecteer het beoogde type en open **Meer instellingen → Goedkeuring en afwijzing**. Kies de instellingen die uw proces nodig heeft en laad de pagina opnieuw om te controleren wat is opgeslagen.
-
-| Instelling | Doel |
+| Optie | Waarvoor deze dient |
 | --- | --- |
-| Goedkeuren vóór export | Vereis een goedkeuringsbeslissing voordat het document doorgaat naar export. |
-| Tweede goedkeuring | Voeg een tweede goedkeuringsfase toe aan het geconfigureerde proces. |
-| Goedkeuringsgeschiedenis | Houd de vastgelegde beslissingen beschikbaar voor beoordeling. |
-| Goedkeuringsstempel | Configureer een markering op een goedgekeurd document; zie de aparte stempelgids. |
+| **Goedkeuren vóór export** | Een goedkeuringsbeslissing vereisen voordat het document wordt geëxporteerd. |
+| **Tweede goedkeuring** | Een extra goedkeuringsstap toevoegen wanneer één beslissing niet genoeg is voor uw proces. |
+| **Goedkeuringsstempel** | Een goedkeuringsmarkering op een goedgekeurd document plaatsen. Zie [Goedkeuringsstempel](approval-stamp.md) voor de instelling en de downloadopties. |
+| **Goedkeuringsgeschiedenis** | Een overzicht van goedkeuringsbeslissingen bewaren. Zie [Goedkeuringsgeschiedenis](approval-history.md) voor de instelling en het bekijken van de geschiedenis. |
 
-De extra V2-optie en de formuliereditors zijn aparte instellingen. Deze tutorial gebruikt voorbereide standaardformulieren voor goedkeuring.
-
-## Test met de beoogde rollen
-
-1. Plaats de eerste en tweede beoordelaar in aparte groepen en geef hun de bedoelde toegang tot toegewezen documenten. In dit voorbeeld heeft het eerste account goedkeuringstoestemming voor de eerste fase en het tweede account toestemming voor de tweede fase. Een schakelaar alleen wijst geen persoon toe en verleent die rechten niet.
-2. Gebruik het eerste gewone account om de toegewezen, reeds gevalideerde factuur te controleren, voeg een notitie toe en geef de eerste goedkeuring. Controleer of het opgeslagen document nog steeds wacht op de tweede goedkeuring. Controleer of dit account de tweede fase niet kan uitvoeren wanneer de machtigingen dit verbieden.
-3. Wijs de wachtende factuur toe aan de andere geautoriseerde beoordelaar. Gebruik dat tweede gewone account om het te controleren en de tweede goedkeuring te geven met een aparte notitie.
-4. Heropen de geschiedenis en verifieer beide verschillende beoordelaars, tijden en notities. Wijs ook een aparte testfactuur af met een reden en verifieer die beslissing na het opnieuw laden.
-
-<figure><img src="../../../../../../.gitbook/assets/admin-options-nl-f45214fdcb2a.png" alt="Opgeslagen goedkeuringsinstellingen in eigen testtype."><figcaption><p>Opgeslagen goedkeuringsinstellingen in eigen testtype.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/admin-second-nl-f45214fdcb2a.png" alt="Twee verschillende beoordelaars en beide opgeslagen notities."><figcaption><p>Twee verschillende beoordelaars en beide opgeslagen notities.</p></figcaption></figure>
-
-## Verifieer de uitkomst
-
-Houd eerste goedkeuring, openstaande tweede goedkeuring en afwijzing als verschillende uitkomsten. Bevestig dat de factuurwaarden na elke beslissing ongewijzigd blijven. In deze test wacht het afzonderlijke kanaal op het ophalen van de gegevens en is er geen extern ERP-systeem als bestemming. De technische status `pending_data_fetch`, wanneer weergegeven, betekent wachten op het ophalen van gegevens. Goedkeuringsgeschiedenis alleen bewijst geen ERP-overdracht.
-
-Test de geconfigureerde rollen, toewijzing en het volledige beslissingspad voordat u het proces toepast op documenten in de echte bedrijfsomgeving.
-
-## Gerelateerde pagina's
-
-- [Groepen, gebruikers en machtigingen](../../../groups-users-and-permissions/README.md)
-- [Goedkeuringsgeschiedenis](approval-history.md)
-- [Goedkeuringsstempel](approval-stamp.md)
+Kies de opties die uw eigen proces vereist. Gebruik daarna een testdocument zonder klantgegevens en de beoogde beoordelaarsrollen om het goedkeuringstraject te controleren voordat u het op echte documenten toepast. De schermafbeelding toont de beschikbare instellingen; er is tijdens deze documentatiecontrole geen goedkeuringstraject of export uitgevoerd.

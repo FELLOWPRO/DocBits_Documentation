@@ -1,21 +1,25 @@
-# Validatie en overeenkomstscore
+# Instelling Validatie en Wedstrijdscore
 
-Verplicht, geforceerde validatie, OCR en Match Score zijn verschillende veldeigenschappen. Bekijk de velden van het documenttype om ze te controleren.
+In **Velden** kunt u de validatie- en herkenningsdrempels voor een documenttype instellen. Deze pagina gebruikt **Factuur** in een testorganisatie van de documentatie. Ze legt het huidige selectievakje **FORCE VALIDATIE** en de besturingselementen voor de **WEDSTRIJDSCORE** uit.
 
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_choose_column_type-nl.png" alt="Afzonderlijke kolommen voor geforceerde validatie, OCR en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Afzonderlijke kolommen voor geforceerde validatie, OCR en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
+## De veldinstellingen openen
 
-## Geforceerde validatie
+1. Ga naar **Instellingen → Documenttypen → Factuur → Velden**.
+2. Gebruik **Zoeken op naam** om een veld te vinden, bijvoorbeeld `invoice_number` (weergegeven als **Factuurnummer**).
+3. Controleer de veldrij voordat u een instelling wijzigt. **VEREIST**, **Alleen Lezen**, **Verborgen** en **FORCE VALIDATIE** zijn afzonderlijke selectievakjes.
 
-Geforceerde validatie vereist een expliciete controle van het veld. Deze optie maakt op zichzelf geen reguliere expressie of vergelijkingsregel. Aangepaste validatieregels stelt u afzonderlijk in.
+<figure><img src="../../../../../.gitbook/assets/dbdc-143-fields-overview-nl-20261011.png" alt="Nederlandse Sandbox-pagina Velden met herkenningsinstellingen, de besturingselementen OCR en WEDSTRIJDSCORE, veldkolommen en Instellingen opslaan"><figcaption><p>De herkenningsbesturingselementen staan boven de veldenlijst.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s150-image-120-nl.png" alt="Validatie en herkenning afzonderlijk per veld instellen. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Validatie en herkenning afzonderlijk per veld instellen. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
+## Force Validatie
 
-## OCR en Match Score
+Vink **FORCE VALIDATIE** aan in de veldrij om voor dat veld een strengere validatie toe te passen. Het selectievakje staat los van **VEREIST**: een veld als vereist markeren vinkt Force Validatie niet automatisch aan. Het selectievakje kan niet beschikbaar zijn wanneer een veld verborgen of alleen-lezen is. Klik op **Instellingen opslaan** nadat u de veldconfiguratie hebt gewijzigd.
 
-OCR bepaalt de herkenningsdrempel van het veld. Match Score is een numerieke drempel voor overeenkomst. Het is geen referentietekst of keuzelijst voor de te vergelijken waarde.
+De oude instructies stelden voor om hier numerieke grenzen of reguliere expressies in te voeren. De huidige Velden-tabel toont geen regeleditor in de cel FORCE VALIDATIE. Voor veldspecifieke regels zie [Veldeigenschappen configureren](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_decide_column_necessity-nl.png" alt="Gefilterd factuurnummer met geforceerde validatie en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Gefilterd factuurnummer met geforceerde validatie en Match Score. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
+## Wedstrijdscore
 
-Controleer het gedrag met representatieve documenten voordat u instellingen opslaat. Een verplicht veld vervangt geforceerde validatie niet.
+**WEDSTRIJDSCORE** is een numerieke drempelwaarde, geen vaste referentiewaarde. De schuifregelaars **OCR** en **WEDSTRIJDSCORE** onder **HERKENNINGSINSTELLINGEN** passen hun waarde toe op de veldrijen van het documenttype; gebruik de invoervelden **OCR** en **WEDSTRIJDSCORE** van een veldrij voor afzonderlijke waarden. In de testorganisatie tonen beide schuifregelaars **80**, terwijl de rij `invoice_number` **60** toont. Controleer de betrokken velden en klik vervolgens op **Instellingen opslaan**.
 
-Het productlabel Wedstrijdscore betekent hier de overeenkomstscore (Match Score), geen sportuitslag. FORCE VALIDATIE betekent geforceerde validatie.
+<figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-nl-20261011.png" alt="Nederlandse Sandbox-veldrij invoice_number met aangevinkte FORCE VALIDATIE en Wedstrijdscore 60"><figcaption><p>Zoek een veld om het selectievakje FORCE VALIDATIE en de wedstrijdscorewaarde te controleren.</p></figcaption></figure>
+
+**OCR** is een afzonderlijke herkenningsdrempel naast de Wedstrijdscore. **STANDAARDINSTELLINGEN HERSTELLEN** zet de instellingen terug; gebruik het alleen wanneer u uw eigen drempelwaarden wilt verwijderen. Voor andere veldopties zie het [Velden-overzicht](README.md).

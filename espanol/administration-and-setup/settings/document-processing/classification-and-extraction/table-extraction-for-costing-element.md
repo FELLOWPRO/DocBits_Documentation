@@ -1,43 +1,21 @@
-# Extracción de tablas para el elemento de coste
+# Extracción de tablas para el elemento de costos
 
-### **¿Qué hace?**
+Los elementos de costos son cargos u otros importes representados como líneas de la tabla de la factura. Si esta función está activada y el documento tiene líneas extraídas, DocBits puede clasificar esas líneas según los elementos de costos configurados para la organización. Un revisor puede corregir la clasificación de una línea en la tabla del documento.
 
-Cuando está habilitado, **DocBits** puede extraer **elementos de coste** de tablas en el **nivel de línea** y clasificarlos en consecuencia.
+## Activar el ajuste
 
-* Si el sistema no clasifica un artículo o lo clasifica incorrectamente, aparece un **icono** en el lado izquierdo.
-* Al hacer clic en este icono, se abre una lista de todos los **elementos de coste configurados**, lo que le permite:
-  * **Change the classification** if it is incorrect.
-  * **Establezca el artículo en "Uncategorized"** si es un artículo normal y no un elemento de costeo.
+1. Abra **Ajustes → Procesamiento de documentos → Clasificación y extracción**.
+2. Permanezca en **General** y despliegue **Extracción**.
+3. Busque **Extracción de tablas para el cálculo de costes** debajo de los campos solicitados para la extracción de tablas. Un administrador puede activar este interruptor para la organización.
 
-### **Cómo configurar elementos de costeo**
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-es-20261011.png" alt="Ajustes de Clasificación y extracción en español con el interruptor Extracción de tablas para el cálculo de costes visible y activado"><figcaption><p>El interruptor aparece activado en esta captura sintética. La imagen no demuestra el estado de una organización real.</p></figcaption></figure>
 
-Puede encontrar la guía **sobre cómo configurar elementos de coste** en **DocBits** aquí.
+{% hint style="info" %}
+El interruptor por sí solo no crea elementos de costos ni líneas de factura. Configure primero los elementos e importe los datos necesarios. La [guía de configuración de elementos de costos](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) vinculada explica el ejemplo de M3. Consulte [Clasificación y extracción](README.md) para ver los demás controles de extracción.
+{% endhint %}
 
-{% content-ref url="../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md" %}
-[table-extraction-for-costing-element.md](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
-{% endcontent-ref %}
+## Revisar o corregir una línea
 
-### **Dónde activarlo**
+Abra un documento cuya tabla de factura contenga líneas extraídas y observe el icono de elemento de costos junto a la línea correspondiente. Seleccione el icono para abrir las clasificaciones disponibles. Elija el elemento de costos configurado correcto, o elija **Uncategorize** si la línea es un artículo ordinario. Después revise la línea resultante y los totales antes de guardar el documento.
 
-1. Vaya a **Configuración → Procesamiento de documentos → Clasificación y extracción → Extracción de tablas**.
-2. Habilite **Extracción de elementos de costeo**.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
-
-### **Cómo establecer o cambiar la clasificación**
-
-1.  Click on the **box icon** next to the item.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
-2.  Aparecerá un menú desplegable  con todos los elementos de costeo configurados.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
-3.  Seleccione el **tipo de elemento de coste** correcto.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
-4. La clasificación ahora se actualiza en consecuencia.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+Si el icono o una clasificación falta, confirme primero que el documento tiene líneas extraídas, que la función está activada y que hay un elemento de costos configurado para la organización. El documento de prueba sintético usado para esta comprobación de la documentación no tenía líneas de factura extraídas, por lo que el menú de clasificación no pudo mostrarse ni probarse. Los pasos de arriba reflejan el control de documentos actual; no se guardó ninguna clasificación durante esta comprobación.

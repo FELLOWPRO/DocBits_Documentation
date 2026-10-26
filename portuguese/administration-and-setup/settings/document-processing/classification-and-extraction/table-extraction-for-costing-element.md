@@ -1,43 +1,21 @@
-# Extração de elementos de custo das tabelas
+# Extração de tabela para elemento de custeio
 
-### **O que faz?**
+Os elementos de custeio são encargos ou outros valores representados como linhas da tabela da fatura. Se esta função estiver ativada e o documento tiver linhas extraídas, o DocBits pode classificar essas linhas pelos elementos de custeio configurados para a organização. Um revisor pode corrigir a classificação de uma linha na tabela do documento.
 
-Quando esta opção está ativa, o **DocBits** pode extrair e classificar **elementos de custo** nas **linhas** das tabelas.
+## Ativar a configuração
 
-* Se o sistema não classificar um item ou o classificar incorretamente, aparece um **ícone** à esquerda.
-* Clique no ícone para abrir a lista dos **elementos de custo configurados** e:
-  * **Alterar a classificação**, se estiver incorreta.
-  * **Definir o item como «Sem categoria»**, se for um artigo normal e não um elemento de custo.
+1. Abra **Configurações → Processamento de documentos → Classificação e Extração**.
+2. Permaneça em **Em geral** e expanda **Extração**.
+3. Localize **Extração de tabela para elemento de custeio** abaixo dos campos solicitados para a extração de tabelas. Um administrador pode ativar este interruptor para a organização.
 
-### **Como configurar elementos de custo**
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-pt-20261011.png" alt="Configurações de Classificação e Extração em português, com o interruptor Extração de tabela para elemento de custeio visível e desativado"><figcaption><p>O interruptor está desativado na organização de teste sintética. Não foi alterado para este guia.</p></figcaption></figure>
 
-O guia de configuração de elementos de custo no **DocBits** está disponível aqui.
+{% hint style="info" %}
+O interruptor por si só não cria elementos de custeio nem linhas de fatura. Configure primeiro os elementos e importe os dados necessários. O [guia de configuração de elementos de custeio](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) explica o exemplo M3. Consulte [Classificação e Extração](README.md) para ver os outros controles de extração.
+{% endhint %}
 
-{% content-ref url="../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md" %}
-[Extração de elementos de custo das tabelas](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
-{% endcontent-ref %}
+## Revisar ou corrigir uma linha
 
-### **Onde ativar**
+Abra um documento cuja tabela da fatura contenha linhas extraídas e observe o ícone de elemento de custeio ao lado da linha correspondente. Selecione o ícone para abrir as classificações disponíveis. Escolha o elemento de custeio configurado correto, ou escolha **Uncategorize** se a linha for um artigo comum. Em seguida, reveja a linha resultante e os totais antes de guardar o documento.
 
-1. Abra **Configurações → Processamento de documentos → Classificação e extração → Extração de tabelas**.
-2. Ative **Extração de elementos de custo**.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
-
-### **Como definir ou alterar a classificação**
-
-1.  Clique no **ícone de caixa** junto ao item.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
-2.  Aparece uma **lista suspensa** com os elementos de custo configurados.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
-3.  Selecione o **tipo de elemento de custo** correto.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
-4. A classificação é atualizada.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+Se o ícone ou uma classificação estiver em falta, confirme primeiro que o documento tem linhas extraídas, que a função está ativada e que existe um elemento de custeio configurado para a organização. O documento de teste sintético usado para esta verificação da documentação não tinha linhas de fatura extraídas, pelo que o menu de classificação não pôde ser mostrado nem testado. Os passos acima refletem o controlo de documentos atual; nenhuma classificação foi guardada durante esta verificação.

@@ -1,23 +1,39 @@
-# Importer des données : entraînement du modèle
+# Importer des documents d'exemple pour l'entraînement du modèle
 
-Préparez des documents représentatifs des formats, langues et types traités par votre organisation. Utilisez les formats de fichiers acceptés par votre installation. Écartez les doublons et séparez les documents destinés à l’entraînement de ceux réservés à l’évaluation.
+Utilisez cette page pour ajouter des PDF d'exemple pour un type de document, puis entraîner ou tester son modèle de classification. Vous devez avoir accès aux **Paramètres** et aux **Types de Documents**. Pour l'objectif des fonctions d'entraînement, voir [Objectif et utilisation : entraînement du modèle](purpose-and-use-model-training.md).
 
-## Ouvrir l’importation
+## Ouvrir le type de document
 
-Ouvrez l’entraînement du modèle dans les réglages du type de document concerné, puis la fonction d’importation.
+1. Allez dans **Paramètres → Types de Documents**.
+2. Trouvez le type de document que vous souhaitez entraîner. Dans sa ligne, sélectionnez **Formation du modèle**. L'exemple ci-dessous utilise **Facture**.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-fr.png" alt="Vue générale de l’entraînement du modèle dans la version illustrée. Aucune importation, aucun entraînement ni test de performance n’a été lancé."><figcaption><p>Vue générale de l’entraînement du modèle dans la version illustrée. Aucune importation, aucun entraînement ni test de performance n’a été lancé.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc648-document-types-fr-20261011.png" alt="Ligne Facture sur la page Types de Documents avec le lien Formation du modèle"><figcaption><p>Ouvrez Formation du modèle depuis le type de document choisi.</p></figcaption></figure>
 
-## Choisir les formats et les fichiers
+Les autres commandes de cette carte servent à d'autres fins : **Activer** active le type de document, **Extraction** change son mode d'extraction, l'engrenage ouvre ses paramètres, et les autres liens ouvrent d'autres zones de configuration. Vous n'avez pas besoin de les modifier juste pour ouvrir Formation du modèle.
 
-Sélectionnez le format des montants et des dates adapté aux documents, puis les fichiers à importer. Par exemple, `1.234,56` et `1,234.56` utilisent des séparateurs différents ; `05/06/2026` doit également être interprété selon le format choisi.
+La page **Entraîner Le Modèle** affiche le nombre d'échantillons et la liste des documents d'entraînement téléchargés. Dans l'organisation d'exemple, la liste contient des documents ; votre organisation peut afficher d'autres documents et d'autres nombres.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-fr.png" alt="Formulaire d’importation sans fichier sélectionné. Le titre natif Téléchargeur de documents Téléchargeur contient une répétition ; il s’agit de l’importation des documents. Aucun fichier n’a été envoyé."><figcaption><p>Formulaire d’importation sans fichier sélectionné. Le titre natif Téléchargeur de documents Téléchargeur contient une répétition ; il s’agit de l’importation des documents. Aucun fichier n’a été envoyé.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc648-model-training-fr-20261011.png" alt="Page Entraîner Le Modèle de la Facture montrant le nombre d'échantillons, Importer, Entraîner le modèle, Test de classification et la liste des documents"><figcaption><p>Les trois actions se trouvent en haut à droite de la liste d'entraînement.</p></figcaption></figure>
 
-Vérifiez votre sélection avant de lancer l’importation. Attendez la fin du traitement et contrôlez les erreurs ainsi que le type de document affecté. Corrigez les erreurs de classification et d’extraction avant d’utiliser les exemples pour l’entraînement.
+## Importer des PDF d'exemple
 
-## Entraîner et évaluer
+1. Sélectionnez **Importer**.
+2. Choisissez le **Format des montants et des dates** qui correspond au document d'exemple. Par exemple, choisissez **Germany** pour les conventions de nombres et de dates allemandes. Cette sélection indique à DocBits comment interpréter les valeurs du document téléchargé ; elle ne modifie pas la langue de l'application.
+3. Glissez-déposez les fichiers PDF dans le dialogue ou utilisez **Télécharger** pour les sélectionner. L'importateur actuel de documents d'exemple accepte les **fichiers PDF** ; il refuse les autres types de fichiers. La sélection des fichiers démarre le téléchargement.
+4. Fermez le dialogue et vérifiez que les documents apparaissent dans la liste d'entraînement. Si DocBits signale une erreur de téléchargement ou un document déjà existant, corrigez le fichier ou choisissez un autre exemple avant de continuer.
 
-Utilisez les fonctions et autorisations disponibles dans votre version. Évaluez ensuite le résultat avec un échantillon indépendant. Ajouter des documents ne garantit pas à lui seul une amélioration de la précision. Consultez [Tester le modèle](testing-the-model.md).
+<figure><img src="../../../../../.gitbook/assets/dbdc648-import-dialog-fr-20261011.png" alt="Dialogue Téléchargeur avec le sélecteur Format des montants et des dates, la zone de glisser-déposer et le champ Télécharger"><figcaption><p>Choisissez un format avant de sélectionner les PDF d'exemple.</p></figcaption></figure>
 
-Les illustrations montrent les contrôles disponibles et un formulaire vide : aucun fichier n’a été envoyé, aucun entraînement n’a été lancé et aucun résultat de performance n’a été mesuré pendant cette vérification.
+<figure><img src="../../../../../.gitbook/assets/dbdc648-format-menu-fr-20261011.png" alt="Menu Format des montants et des dates avec des choix de pays et de régions, notamment Germany et United Kingdom"><figcaption><p>Choisissez le format utilisé dans le document, pas votre langue d'interface préférée.</p></figcaption></figure>
+
+Pour les actions sur les échantillons importés, voir [Gérer les données d'entraînement](manage-training-data.md).
+
+## Entraîner et vérifier le modèle
+
+Lorsque les PDF d'exemple souhaités sont dans la liste, sélectionnez **Entraîner le modèle**. DocBits peut traiter l'entraînement en arrière-plan ; attendez son message de fin avant de considérer le nouveau modèle comme prêt. Le nombre d'échantillons et toute limite de formule affichés sur cette page appartiennent à votre organisation.
+
+Pour vérifier la classification, sélectionnez **Test de classification**, puis téléchargez un fichier d'exemple distinct dans le dialogue. Après le traitement, DocBits indique si le type de document prédit correspond à cette page et rapporte les détails de la classification. Le dialogue de test vide ci-dessous est montré sans téléchargement de fichier.
+
+<figure><img src="../../../../../.gitbook/assets/dbdc648-test-dialog-fr-20261011.png" alt="Dialogue Test de classification avec zone de glisser-déposer et champ Télécharger"><figcaption><p>Utilisez Test de classification pour vérifier le modèle avec un autre document.</p></figcaption></figure>
+
+Pour interpréter le résultat, voir [Tester le modèle](testing-the-model.md). Si le résultat est mauvais, examinez les [données d'entraînement](manage-training-data.md) et le [guide de dépannage](troubleshooting.md) avant d'ajouter d'autres échantillons.

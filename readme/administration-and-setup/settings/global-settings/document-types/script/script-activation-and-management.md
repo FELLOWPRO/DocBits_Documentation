@@ -10,28 +10,27 @@ Das Video zeigt die Skriptliste mit Filter und Sortierung, das Aktivieren und De
 
 ## Hier ist eine Anleitung, wie Sie bestehende Skripte in DocBits aktivieren, deaktivieren und verwalten können, um sie an Ihre aktuellen Verarbeitungsanforderungen anzupassen:
 
-**Anmelden bei DocBits:**
+## Ein Skript finden
 
-* Öffnen Sie Ihren Webbrowser und melden Sie sich mit Ihren Zugangsdaten bei DocBits an.
+1. Öffnen Sie **Einstellungen → Dokumenttypen**.
+2. Wählen Sie beim gewünschten Dokumenttyp **Skripte** aus. Die Seite listet die Skripte für diesen Dokumenttyp auf.
+3. Suchen Sie nach Name oder grenzen Sie die Liste mit **Alle**, **Aktiv** und **Inaktiv** ein. Sie können sie auch nach Name oder Änderungsdatum sortieren.
 
 <figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_setting.png" alt="Match-Score-Einstellung eines Felds in DocBits"><figcaption></figcaption></figure>
 
-**Navigieren zur Skriptverwaltung:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-653-script-scripts-list-inactive-de-20261011.png" alt="Skriptliste für den Dokumenttyp Rechnung mit einem inaktiven Dokumentationsbeispiel und den Filtern Alle, Aktiv und Inaktiv"><figcaption><p>Prüfen Sie den Status rechts auf der Skriptkarte, bevor Sie ihn ändern.</p></figcaption></figure>
 
-* Suchen Sie in der DocBits-Oberfläche nach der Option zur Verwaltung von Skripten.
-* Dies kann je nach Setup und Konfiguration von DocBits variieren.
+## Ein Skript aktivieren oder deaktivieren
 
 **Anzeigen vorhandener Skripte:**
 
-* Sobald Sie sich in der Skriptverwaltungsoberfläche befinden, sehen Sie eine Liste aller vorhandenen Skripte.
-* Hier können Sie durch die Liste scrollen, um das gewünschte Skript zu finden, das Sie aktivieren, deaktivieren oder bearbeiten möchten.
+## Ein bestehendes Skript ändern
 
 <figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_threshold.png" alt="Match-Score-Schwellenwert eines Felds in DocBits"><figcaption></figcaption></figure>
 
-**Aktivieren oder Deaktivieren eines Skripts:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-653-script-script-published-version-de-20261011.png" alt="Veröffentlichte Skriptversion als schreibgeschützt dargestellt mit Hinweis, sie als Entwurf zu kopieren"><figcaption><p>Eine veröffentlichte Version kann nicht direkt bearbeitet werden. Verwenden Sie den Stift im Versionsverlauf, um einen Entwurf zu erstellen.</p></figcaption></figure>
 
-* Um ein Skript zu aktivieren oder zu deaktivieren, suchen Sie das entsprechende Skript in der Liste und betätigen Sie den entsprechenden Schalter.
-* Stellen Sie sicher, dass Sie die Änderungen nach Ihrer Auswahl speichern.
+<figure><img src="../../../../../.gitbook/assets/dbdc-653-script-script-editable-draft-de-20261011.png" alt="Bearbeitbarer Entwurf im Versionsverlauf neben der aktuell aktiven Skriptversion"><figcaption><p>Speichern und prüfen Sie den Entwurf, bevor Sie ihn zur aktiven Version machen.</p></figcaption></figure>
 
 **Bearbeiten eines Skripts:**
 

@@ -1,67 +1,31 @@
 # Rilevamento dei duplicati
 
-## Panoramica
+Usa **Rilevamento dei duplicati** per contrassegnare i documenti che corrispondono a un altro documento in base ai campi selezionati entro un intervallo di tempo scelto. Le opzioni appartengono a ciascun tipo di documento.
 
-In **DocBits**, puoi filtrare i documenti duplicati specificando quali campi devono corrispondere e definendo un intervallo di tempo durante il quale i duplicati devono essere rilevati.
+## Aprire le impostazioni
 
-Questa pagina fornisce una guida dettagliata su come abilitare e utilizzare efficacemente la funzionalità di **Rilevamento dei duplicati**.
+1. Apri **Impostazioni → Tipi di Documento**.
+2. Sul tipo di documento che vuoi configurare, seleziona **Impostazioni**.
+3. In **Altre impostazioni**, apri **Rilevamento dei duplicati**.
 
-## Abilitare il Rilevamento dei duplicati
+<figure><img src="../../../../../.gitbook/assets/dbdc663-duplicate-settings-off-it-20261011.png" alt="Altre impostazioni della fattura con la sezione Rilevamento dei duplicati aperta e le opzioni di rilevamento disattivate"><figcaption><p>Le impostazioni della fattura mostrano quattro interruttori separati. I selettori di campo e di intervallo compaiono quando il rilevamento è attivato.</p></figcaption></figure>
 
-Per abilitare il rilevamento di documenti doppi in **DocBits**, segui questi passaggi:
+## Scegliere cosa conta come duplicato
 
-1.  Naviga su **Impostazioni** → **Impostazioni globali** → **Tipi di documenti**.
+1. Attiva **Rilevamento di documenti doppi**. Compaiono i selettori **Campi di rilevamento dei duplicati** e **Intervallo di rilevamento duplicati**.
+2. Seleziona i campi che devono corrispondere. Per una fattura puoi scegliere **Nome del fornitore** e **Numero di fattura**. Scegli campi che distinguono i documenti nel tuo processo.
+3. Scegli un intervallo: **1 mese**, **3 mesi (consigliato)**, **6 mesi** o **1 anno**. Un intervallo più lungo controlla un periodo di date più ampio e può richiedere più tempo per il caricamento.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
-2.  Seleziona il **Tipo di documento** desiderato e fai clic su **Altre impostazioni**.
+Ogni modifica viene salvata quando la effettui; in questa sezione non esiste un pulsante di salvataggio separato. Se disattivi il rilevamento, i selettori di campo e di intervallo vengono nascosti.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
-3.  Vai alla sezione **Rilevamento dei duplicati**.
+<figure><img src="../../../../../.gitbook/assets/dbdc663-duplicate-settings-on-it-20261011.png" alt="Rilevamento di documenti doppi attivato, con i selettori dei campi e dell'intervallo"><figcaption><p>Attiva il rilevamento prima di selezionare i campi di confronto e l'intervallo di tempo.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-it.png" alt="Impostazioni di rilevamento dei documenti duplicati."><figcaption><p>Impostazioni di rilevamento dei documenti duplicati.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc663-duplicate-interval-options-it-20261011.png" alt="Menu Intervallo di rilevamento duplicati con un mese, tre mesi, sei mesi e un anno"><figcaption><p>Nel menu, l'intervallo di tre mesi è contrassegnato come consigliato.</p></figcaption></figure>
 
-DocBits fornisce due opzioni per identificare documenti duplicati:
+Per la **Fattura**, questa sezione offre anche **Rilevamento di fatture doppie**, **Blocca l'esportazione di documenti duplicati** e **Ignora la linea Tax Free**. Sono interruttori separati: attiva solo il comportamento necessario al tuo processo fatturario. Gli interruttori aggiuntivi non sono mostrati per gli altri tipi di documento.
 
-1. **Rilevamento di documenti doppi**:\
-   Questa funzionalità controlla i documenti duplicati caricati su **DocBits** in base ai criteri selezionati. Se un documento corrisponde ai criteri selezionati in altri documenti, verrà contrassegnato come duplicato.
-2.  **Rilevamento di fatture doppie** (Disponibile solo per il tipo di documento **Fattura**):\
-    Questa funzionalità richiede la sincronizzazione delle fatture dei fornitori da Infor a DocBits. Confronta i numeri di fattura nel cruscotto di DocBits con quelli in Infor. Se lo stesso numero di fattura appare più di una volta, verrà contrassegnato come duplicato.
+## Esaminare un documento contrassegnato
 
-    <mark style="color:red;">**Nota**</mark>: L'utilizzo della funzionalità di **Rilevamento di fatture doppie** comporterà un addebito di credito aggiuntivo.
+Quando DocBits trova una corrispondenza, la riga del documento nel **Cruscotto** mostra un'icona di duplicato. Seleziona l'icona per confrontare i record corrispondenti nel pannello laterale. L'icona appare solo quando esiste una corrispondenza.
 
-## Filtrare quali documenti devono essere rilevati come duplicati
-
-Una volta abilitato il **Rilevamento dei duplicati**, saranno disponibili due menu a discesa per la configurazione:
-
-*   **Campi di rilevamento dei duplicati**\
-    Seleziona i campi che devono essere utilizzati per identificare i duplicati (ad es., Id del fornitore, Data, Numero di fattura, ecc.). I documenti che corrispondono a questi campi verranno contrassegnati come duplicati.
-
-<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-it.png" alt="Campi disponibili per il rilevamento dei duplicati."><figcaption><p>Campi disponibili per il rilevamento dei duplicati.</p></figcaption></figure>
-
-*   **Intervallo di rilevamento duplicati**
-
-    Utilizza questa impostazione per definire l'intervallo di tempo entro il quale vengono rilevati i duplicati. I documenti caricati all'interno dell'intervallo selezionato verranno confrontati tra loro in base ai campi selezionati.
-
-    **Opzioni disponibili:**
-
-    * 1 mese
-    * 3 mesi (Consigliato)
-    * 6 mesi
-    * 1 anno
-
-    <mark style="color:red;">**Nota**</mark>: Si consiglia un intervallo di 3 mesi per garantire prestazioni ottimali. Selezionare un intervallo più lungo potrebbe portare a tempi di caricamento più lenti del cruscotto.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
-
-## Visualizzare documenti duplicati nel Cruscotto
-
-Una volta abilitato il **Rilevamento dei duplicati**, qualsiasi documento identificato come duplicato mostrerà un'icona indicativa di duplicato nel cruscotto.
-
-*   Fai clic su questa icona per aprire i record corrispondenti in una vista affiancata per un facile confronto.\
-    <mark style="color:red;">**Nota**</mark>: L'icona apparirà solo se è stato rilevato almeno un duplicato per il documento.
-
-*   Quando visualizzi un documento contrassegnato, apparirà una barra di avviso nella parte superiore, indicando che il documento è un duplicato.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
-
-Per esaminare possibili duplicati, confrontare numero di fattura, fornitore, data e importo. Usare l’avviso e i dettagli dei documenti per decidere le correzioni necessarie.
+Quando apri un documento contrassegnato, l'avviso di duplicato offre **Visualizza duplicato**, **Procedi comunque** e, se il documento non è già stato archiviato, **Archivia**. Esamina i record corrispondenti prima di scegliere un'azione. Consulta la [guida del Cruscotto](../../dashboard/README.md) per l'elenco dei documenti.

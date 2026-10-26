@@ -10,7 +10,7 @@ Konfiguruj i testuj zatwierdzenia faktur
 
 Pokazano rzeczywistą aplikację; sformułowanie opcji może zależeć od wdrożonej wersji.
 
-Skonfiguruj zatwierdzenie dla typu dokumentu używanego w Twoim procesie. Wskaż osoby odpowiedzialne za sprawdzanie faktur i zdecyduj, czy potrzebujesz drugiej niezależnej kontroli. Wideo wykorzystuje oddzielny testowy typ dokumentu, syntetyczne faktury i tymczasowe konta sprawdzające bez uprawnień administratora; jego prezenter jest fikcyjny.
+Skonfiguruj zatwierdzenie dla typu dokumentu używanego w Twoim procesie. Wskaż osoby odpowiedzialne za sprawdzanie faktur i zdecyduj, czy potrzebujesz drugiej niezależnej kontroli. Wideo wykorzystuje oddzielny typ dokumentu i tymczasowe konta sprawdzające bez uprawnień administratora.
 
 ## Skonfiguruj typ dokumentu
 

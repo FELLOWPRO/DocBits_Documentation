@@ -300,3 +300,30 @@ To create a new export:
 * **M3 toml Mapping File** Select a mapping file from the file manager or use the select Toml option to use a toml created with the rule manager. [Need help creating one? View the Rule Manager Guide](../rule-manager/)
 
 </details>
+
+
+## Video tutorial: Configure and test an ERP export
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/en.mp4" %}
+Configure and test an ERP export
+{% endembed %}
+
+[Watch with subtitles and chapter navigation](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/en.html)
+
+Some native product labels may remain in another language. Technical field IDs are preserved.
+
+I use a dedicated test configuration and document type. These invoices are synthetic. Our test receiver checks data transmission and makes no postings in a production ERP. I leave the other integrations alone.
+
+In the export configuration, I check the document type, the organization, and the export type. This example uses Generic API in the cloud. Credentials JSON and TOML field mapping are separate files. In real projects, the target system, permissions, and sub-organization must match the intended process.
+
+<figure><img src="../../../../.gitbook/assets/admin-configuration-en-recovery-export-v1.png" alt="Export configuration scoped to the training document type"><figcaption><p>Export configuration scoped to the training document type</p></figcaption></figure>
+
+In the corrected mapping, the DocBits field invoice_id supplies the invoice number sent to our test receiver. Supplier, total amount and currency are mapped too. This test covers header data. Line items and ERP postings need their own business checks for each project.
+
+I upload the corrected TOML file and save the configuration. Then I reopen it and check that the change was saved. I keep the prepared test credentials; production credentials must stay out of the recording.
+
+Now I return to the invoice with the failed export and restart the export exactly once. I wait for processing to finish. An accepted request alone would not prove a successful transfer.
+
+DocBits now shows the invoice as finished. I also check the receipt from our test receiver. The invoice number, supplier, amount and currency match the test invoice. Authentication and transfer succeeded. The test receiver does not confirm an ERP posting.
+
+<figure><img src="../../../../.gitbook/assets/admin-receipt-en-recovery-export-v1.png" alt="Actual receipt at the test receiver; no ERP posting"><figcaption><p>Actual receipt at the test receiver; no ERP posting</p></figcaption></figure>

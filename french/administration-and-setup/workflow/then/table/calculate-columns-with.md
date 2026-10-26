@@ -1,65 +1,51 @@
 # Calculer les colonnes avec
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aafc18d42905-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+La carte applique une opération à deux colonnes d’un tableau et enregistre le résultat dans une autre colonne, pour chaque ligne.
 
-## **Objectif :**
+## Quand et où l’utiliser
 
-La carte de workflow **« Calculer les colonnes dans le tableau »** sert à effectuer des calculs entre les colonnes d'un tableau sélectionné. Elle permet aux utilisateurs de sélectionner des colonnes, d'appliquer une opération mathématique et de stocker le résultat dans une colonne de résultat spécifiée.
+Utilisez-la pour calculer les montants des lignes avant l’action suivante du workflow, par exemple **quantité × prix unitaire**. Ajoutez-la dans la section **Dans ce cas**, catégorie **Tableau**. Vérifiez d’abord que les deux colonnes d’entrée contiennent des nombres et que les données sont complètes.
 
-## **Composants de la carte :**
+<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-v2-configured-fr-20261024.png" alt="Carte version 2 : INVOICE_TABLE, Quantité × Prix unitaire → TOTAL_AMOUNT. L’interface répète le nom du tableau." width="650"><figcaption><p>Carte version 2 : INVOICE_TABLE, Quantité × Prix unitaire → TOTAL_AMOUNT. L’interface répète le nom du tableau.</p></figcaption></figure>
 
-1. **Nom de la table**
-   * **Descriptif :** spécifie la **table** dans laquelle les colonnes seront calculées.
-   * **Détail :** une liste déroulante de toutes les **tables** disponibles est proposée pour la sélection.
-2. **Column Name (1re colonne)**
-   * **Descriptif :** spécifie la **première colonne** à impliquer dans le calcul.
-   * **Détail :** une liste de toutes les **colonnes** disponibles est proposée pour la sélection.
-3. **Opération**
-   * **Descriptif :** définit l'opération mathématique à appliquer entre les colonnes sélectionnées.
-   * **Possibilités :**
-     * **Add (+) :** ajoute la valeur de la seconde colonne à la valeur de la première colonne.
-     * **Soustraire (-) :** soustrait la valeur de la seconde colonne de la valeur de la première colonne.
-     * **Multiply (\*) :** multiplie la valeur de la première colonne par la valeur de la seconde colonne.
-     * **Diviser (/) :** divise la valeur de la première colonne par la valeur de la seconde colonne.
-4. **Column Name (2e colonne)**
-   * **Descriptif :** spécifie la **seconde colonne** à impliquer dans le calcul.
-   * **Détail :** une liste des **colonnes** disponibles est proposée pour la sélection.
-5. **Colonne de résultat**
-   * **Descriptif :** spécifie la **colonne** où le résultat du calcul sera stocké.
-   * **Détail :** une liste des **colonnes** disponibles est proposée, où la valeur calculée sera enregistrée.
+## Vidéo d’administration
 
-## **Fonctionnalité :**
+**41 secondes · français.** Alain explique quand utiliser la carte, configure la multiplication et montre les résultats enregistrés.
 
-* **Évaluation de la condition :**\
-  La carte n'exécute son action que si les sections **« Quand »** et **« Et »** sont toutes deux évaluées comme vraies.
-* **Calcul de colonnes :**\
-  La carte effectue l'opération mathématique sélectionnée entre les deux colonnes choisies.
-* **Stockage du résultat :**\
-  Le résultat du calcul est stocké dans la **colonne de résultat** sélectionnée.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.mp4" %}
 
-## **Mise en place et configuration :**
+[Lire la vidéo avec des sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.html) · [Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/fr.txt)
 
-* **Sélectionner la table :**\
-  Choisissez la **table** où les colonnes seront calculées.
-* **Choisir les colonnes :**\
-  Sélectionnez la **première colonne** et la **seconde colonne** qui seront utilisées dans le calcul.
-* **Sélectionner l'opération :**\
-  Choisissez l'opération mathématique (**Add (+)**, **Soustraire (-)**, **Multiply (\*)**, **Divide (/)**) à appliquer entre les colonnes.
-* **Sélectionner la colonne de résultat :**\
-  Choisissez la **colonne de résultat** où le calcul sera stocké.
+## Configuration de la carte
 
-## **Conclusion :**
+| Champ | Sélection de l’exemple |
+| --- | --- |
+| Tableau | `INVOICE_TABLE` |
+| Première colonne | `QUANTITY` — Quantité |
+| Opération | `*` — multiplication |
+| Deuxième colonne | `UNIT_PRICE` — Prix unitaire |
+| Colonne de résultat | `TOTAL_AMOUNT` — Montant total |
 
-La carte de workflow **« Calculer les colonnes dans le tableau »** permet aux utilisateurs d'effectuer des calculs dynamiques entre les colonnes d'un tableau et de stocker les résultats dans une colonne désignée. La carte offre la flexibilité d'appliquer différentes opérations mathématiques et garantit que le résultat est stocké dans la colonne spécifiée.
+Les opérations `+` (addition), `-` (soustraction) et `/` (division) sont également disponibles. L’ordre des colonnes compte pour la soustraction et la division. Sélectionnez les identifiants configurés dans votre organisation.
 
 <!-- workflow-card-practical-example-20261021 -->
 
 ## Exemple pratique
 
-**Quand utiliser :** Calculez les totaux de ligne à partir de la quantité et du prix unitaire.
+La facture contient deux lignes. La colonne de résultat n’existe pas encore avant le calcul :
 
-**Configuration :** Sélectionnez le tableau `lines`, les colonnes `quantity` et `unit_price`, la colonne de multiplication et de résultat `line_total`.
+| Ligne | Quantité | Prix unitaire | Résultat enregistré dans `TOTAL_AMOUNT` |
+| --- | ---: | ---: | ---: |
+| 1 | 2 | 10 | 20 |
+| 2 | 3 | 4 | 12 |
 
-**Résultat attendu et contre-exemple :** Une ligne contenant `2` et `10` produit `20`. Testez une autre ligne indépendamment et diagnostiquez les entrées manquantes ou non numériques plutôt que de les traiter comme un total valide.
+Dans la démonstration, la carte crée la colonne de résultat. Les valeurs **20,00** et **12,00** restent visibles après la réouverture de la facture. Les colonnes d’entrée et les montants d’origine de `NET_AMOUNT` sont conservés dans cet exemple. Si la colonne de résultat choisie contient déjà des valeurs, le calcul les remplace.
 
-Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.
+<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-fr-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-fr-light-20261025.png" alt="La même facture d’exemple et les résultats enregistrés après réouverture : Montant Total vaut 20,00 et 12,00. Les montants nets d’origine sont conservés." width="735"></picture><figcaption><p>La même facture d’exemple et les résultats enregistrés après réouverture : Montant Total vaut 20,00 et 12,00. Les montants nets d’origine sont conservés.</p></figcaption></figure>
+
+## Vérifications et contre-exemples
+
+- Contrôlez les deux colonnes d’entrée et vérifiez les résultats enregistrés après le calcul.
+- Dans l’exemple illustré, un prix manquant peut donner zéro. Ce zéro ne prouve pas que les données sont complètes : validez les entrées avant de calculer.
+- Un texte tel que `ABC` à la place d’un nombre provoque une erreur de calcul. Corrigez la saisie, puis vérifiez à nouveau le cas.
+- Les cas de prix manquant et de texte non numérique du schéma sont des résultats attendus pour illustrer les contrôles ; ce ne sont pas des exécutions de la facture à deux lignes montrée.

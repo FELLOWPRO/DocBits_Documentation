@@ -1,6 +1,6 @@
 # Export with Export Configuration
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-00-fr-20261023.png" alt="Exportation Document d&#x27;exportation avec configuration d&#x27;exportation : Configuration d&#x27;exportation . Ignorer les tâches en attente : Ignorer les tâches en attente . Statut après exportation : Statut ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

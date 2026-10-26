@@ -1,6 +1,6 @@
 # Assign to Procurement Group and Create a Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-06-es-20261023.png" alt="Tarea Asigna el documento secuencialmente al grupo de compras Nombre del grupo y crea un Tarea/Notificación con título: Título , descripción: Descripción de prioridad Prioridad . Notifica al grupo por correo electrónico Enviar correo electrónico . Asigna una prioridad de Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

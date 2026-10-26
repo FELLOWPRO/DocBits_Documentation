@@ -31,10 +31,10 @@ Estes exemplos mostram os resultados esperados. Para validar o próprio número,
 
 ## Vídeo de exemplo com um administrador
 
-Quando uso esta carta, onde a encontro e como deteto números de fatura em falta. O administrador, o escritório e a voz são sintéticos; a demonstração mostra a interface real do DocBits de uma conta de teste. Os exemplos mostram os resultados esperados.
+Quando uso esta carta, onde a encontro e como deteto números de fatura em falta. Os exemplos mostram os resultados esperados.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.mp4" %}
 
-[Abrir vídeo com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.html)
+[Abrir vídeo com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt-theme-v4.html)
 
 [Ler transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.txt)

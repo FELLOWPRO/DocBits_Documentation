@@ -43,6 +43,8 @@ from __future__ import annotations
 
 import argparse
 import re
+import string
+import urllib.parse
 import shutil
 import sys
 from dataclasses import dataclass, field
@@ -60,7 +62,11 @@ LANGS = {
     "zh": "chinese",
 }
 
-NAV_LINE = re.compile(r"^(\s*)\* \[([^\]]*)\]\(([^)\s]+\.md)\)\s*$")
+NAV_LINE = re.compile(r'^(\s*)\* \[([^\]]*)\]\(([^)\s]+\.md)(?:\s+"(?:\\.|[^"\\])*")?\)\s*$')
+PAGE_GROUP_IDS = {
+    "overview-and-basics", "end-user-and-partner-section", "administration-and-setup",
+    "infor-integration-and-configuration", "advanced-functions-and-tools", "security",
+}
 ASSET_REF = re.compile(r"\.gitbook/assets/([^\"'<>\n]+)")
 FILE_BLOCK = re.compile(r"\{%\s*file\s+src=\"([^\"]+)\"")
 STUB_HEADER = re.compile(r"^# [A-Z]{2} - TRANSLATED", re.M)
@@ -90,6 +96,33 @@ def parse_summary(text: str) -> list[tuple[int, str, str]]:
         if m:
             out.append((len(m.group(1)), m.group(2), m.group(3)))
     return out
+
+
+def page_group_errors(text: str) -> list[str]:
+    """Localized labels must retain the same URL group IDs in every space.
+
+    Without an explicit ID, GitBook derives the group path from the translated
+    title. The language picker then reuses that incompatible path in the next
+    space and falls back to its home page.
+    """
+    headings = re.findall(r"^##\s+(.+)$", text, re.M)
+    ids = []
+    errors = []
+    for heading in headings:
+        anchor = re.search(r'<a\b[^>]*\bid=["\x27]([^"\x27]+)["\x27]', heading)
+        if anchor:
+            ids.append(anchor.group(1))
+        else:
+            errors.append(f"page group has no stable URL id: {heading}")
+    missing = PAGE_GROUP_IDS - set(ids)
+    if missing:
+        errors.append("page group URL ids missing: " + ", ".join(sorted(missing)))
+    unknown = set(ids) - PAGE_GROUP_IDS
+    if unknown:
+        errors.append("unknown page group URL ids: " + ", ".join(sorted(unknown)))
+    if len(ids) != len(set(ids)):
+        errors.append("duplicate page group URL ids")
+    return errors
 
 
 def lexical_path(path: Path) -> Path:
@@ -147,7 +180,9 @@ def resolve_asset(candidate: str, *asset_dirs: Path) -> tuple[str, Path] | None:
     """A reference like `image (83).png" alt=...` has no clean delimiter, so
     shorten it until it names a file in one of the asset directories."""
     for k in range(len(candidate), 0, -1):
-        name = candidate[:k].replace("%20", " ")
+        name = urllib.parse.unquote(
+            re.sub(r"\\([" + re.escape(string.punctuation) + r"])", r"\1", candidate[:k])
+        )
         if not safe_rel(name):
             continue
         for d in asset_dirs:
@@ -199,7 +234,9 @@ def plan_sync(source_readme: Path, dest_dir: Path) -> tuple[Report, dict[Path, P
     if not contained(source_readme, summary_src):
         rep.errors.append("source has no readme/SUMMARY.md (or it is a symlink)")
         return rep, plan
-    nav = parse_summary(summary_src.read_text(encoding="utf-8"))
+    summary_text = summary_src.read_text(encoding="utf-8")
+    rep.errors.extend(page_group_errors(summary_text))
+    nav = parse_summary(summary_text)
     candidates = list(dict.fromkeys([p for _, _, p in nav] + ["README.md"]))
 
     pages: list[str] = []
@@ -246,7 +283,12 @@ def plan_sync(source_readme: Path, dest_dir: Path) -> tuple[Report, dict[Path, P
             if not (final.is_file() or (in_assets and (src_assets / final.name).is_file())):
                 rep.errors.append(f"{p}: {{% file %}} points to a missing file: {target}")
         # --- images and attachments
-        for cand in ASSET_REF.findall(text):
+        for asset_ref in ASSET_REF.finditer(text):
+            # An absolute image URL is fetched by GitBook itself. Its path
+            # may contain .gitbook/assets, but it is not a branch-local file.
+            if re.search(r"https?://[^\s\"'<>]*$", text[:asset_ref.start()]):
+                continue
+            cand = asset_ref.group(1)
             # Look in the BRANCH's assets first. The destination folder already
             # holds a copy of every asset from an earlier sync, so resolving
             # against it first made the branch's own version invisible: a

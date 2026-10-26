@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-00-it-20261023.png" alt="Compito Creare un&#x27;attività con il titolo: Titolo , description: Descrizione di priorità Priorità e assegnarlo a Destinatario . Informateli via e-mail Invia e-mail . Utilizzare Utente come ripiego se il destinatario non viene trovato." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

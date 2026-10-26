@@ -304,8 +304,6 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 
 ## Videoanleitung: ERP-Export einrichten und testen
 
-Figur und Stimme sind synthetisch. Die Aufnahme zeigt die echte DocBits-Testoberfläche mit synthetischen Schulungsrechnungen.
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/de.mp4" %}
 ERP-Export einrichten und testen
 {% endembed %}

@@ -296,3 +296,30 @@ Pour créer une nouvelle exportation :
 * **Fichier de mappage M3 TOML** Sélectionnez un fichier de mappage dans le gestionnaire de fichiers ou utilisez l'option sélectionner Toml pour utiliser un toml créé avec le gestionnaire de règles. [Besoin d'aide pour en créer un ? Consultez le Guide du Gestionnaire de Règles](rule-manager/)
 
 </details>
+
+
+## Tutoriel vidéo: Configurer et tester un export ERP
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/fr.mp4" %}
+Configurer et tester un export ERP
+{% endembed %}
+
+[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/fr.html)
+
+Certains libellés natifs peuvent rester dans une autre langue. Les identifiants techniques des champs sont conservés.
+
+J’utilise une configuration et un type de document réservés au test. Les factures contiennent des données fictives. Notre récepteur de test vérifie la transmission des données, sans effectuer de comptabilisation dans un ERP de production. Je ne modifie pas les autres intégrations.
+
+Dans la configuration d'exportation, je vérifie le type de document, l'organisation et le type d'exportation. Cet exemple utilise Generic API dans le cloud. Les identifiants JSON et le mappage de champs TOML sont des fichiers séparés. Dans les vrais projets, le système cible, les permissions et la sous-organisation doivent correspondre au processus prévu.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-fr-recovery-export-v1.png" alt="Configuration d’export limitée au type de document de formation"><figcaption><p>Configuration d’export limitée au type de document de formation</p></figcaption></figure>
+
+Dans le mappage corrigé, le champ DocBits invoice_id fournit le numéro de facture envoyé au récepteur de test. Le fournisseur, le montant total et la devise sont aussi associés. Ce test porte sur les données d’en-tête. Les lignes de facture et la comptabilisation ERP demandent des contrôles métier distincts pour chaque projet.
+
+J'importe le fichier TOML corrigé et j'enregistre la configuration. Ensuite, je la rouvre et je vérifie que la modification est enregistrée. Les identifiants de test restent inchangés ; les identifiants de production ne doivent pas apparaître dans la vidéo.
+
+Je reviens à la facture de test dont l’exportation a échoué et je redémarre l’exportation exactement une fois. J’attends la fin du traitement. L’acceptation de la demande ne prouve pas à elle seule que la transmission a réussi.
+
+DocBits affiche maintenant la facture comme terminée. Je vérifie aussi l'accusé de réception du récepteur de test. Le numéro de facture, le fournisseur, le montant et la devise correspondent à la facture de test. L’authentification et la transmission ont réussi. Le récepteur de test ne confirme aucune comptabilisation dans l’ERP.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-fr-recovery-export-v1.png" alt="Réception réelle par le destinataire de test ; aucune écriture dans l’ERP"><figcaption><p>Réception réelle par le destinataire de test ; aucune écriture dans l’ERP</p></figcaption></figure>

@@ -1,6 +1,6 @@
 # Assign Sequentially to User/Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-17-pt-20261023.png" alt="Responsável Atribua o documento sequencialmente ao Usuário/Grupo com base na tabela de decisão." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

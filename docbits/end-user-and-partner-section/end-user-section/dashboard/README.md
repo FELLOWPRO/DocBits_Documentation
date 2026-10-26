@@ -14,18 +14,16 @@ The controls you see depend on your permissions, the document status and the mod
 
 ## Search in everyday work — video
 
-This short example starts at the desk of a fictional customer in Austin, Texas. The US English DocBits interface then fills the screen: type part of a file name, press Enter, and check the result. The second example shows how to include document content when the full-text search module is enabled.
+This short example starts at the desk of a customer in Austin, Texas. The US English DocBits interface then fills the screen: type part of a file name, press Enter, and check the result. The second example shows how to include document content when the full-text search module is enabled.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.mp4" %}
 
 [Open the example with US English narration](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.mp4) · [English captions (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.vtt) · [English transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-search-customer/v1/en.txt)
 
-The customer and office are AI-generated. The actions and search results are real recordings from the DocBits test account.
-
 
 ## Dashboard tools — English walkthrough
 
-The same fictional customer from Austin shows how she works with the dashboard: find a test invoice, apply and clear a status filter, open the search help, inspect the column settings, check the status overview and refresh the worklist. The walkthrough uses the current US English interface. Available controls depend on your permissions and enabled modules.
+The same customer from Austin shows how she works with the dashboard: find a test invoice, apply and clear a status filter, open the search help, inspect the column settings, check the status overview and refresh the worklist. The walkthrough uses the current US English interface. Available controls depend on your permissions and enabled modules.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v2/en.mp4" %}
 
@@ -33,7 +31,7 @@ The same fictional customer from Austin shows how she works with the dashboard: 
 
 Use full-screen playback to read the interface on smaller screens.
 
-The customer, office opening and narration are AI-generated. The dashboard actions are real recordings from the DocBits test interface. Invoice numbers, supplier names, purchase orders and amounts come from a synthetic sample invoice; private account details are masked. The sample selection stays active throughout the walkthrough. The column settings are inspected and closed without saving changes.
+The sample selection stays active throughout the walkthrough. The column settings are inspected and closed without saving changes.
 
 
 ## Start your daily work

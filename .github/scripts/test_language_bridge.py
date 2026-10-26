@@ -13,11 +13,17 @@ import language_bridge as lb  # noqa: E402
 
 SUMMARY = """# Table of contents
 
-## Group
+## Group <a href="#overview-and-basics" id="overview-and-basics"></a>
 
 * [Home](README.md)
   * [Page A](a/page-a.md)
   * [Page B](b.md)
+
+## Users <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
+## Setup <a href="#administration-and-setup" id="administration-and-setup"></a>
+## Integration <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
+## Tools <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
+## Security <a href="#security" id="security"></a>
 """
 
 
@@ -46,6 +52,37 @@ def run(tmp: Path, pages: dict[str, str], **kw):
 def test_parse_summary_keeps_order_and_indent():
     nav = lb.parse_summary(SUMMARY)
     assert nav == [(0, "Home", "README.md"), (2, "Page A", "a/page-a.md"), (2, "Page B", "b.md")]
+
+
+def test_navigation_link_title_does_not_skip_the_page_or_its_assets(tmp_path):
+    summary = SUMMARY.replace('(a/page-a.md)', '(a/page-a.md "Short menu title")')
+    page = '# A\n\n![Diagram](../.gitbook/assets/diagram.png)\n'
+    (rep, plan), dest = run(tmp_path, {**GOOD, 'a/page-a.md': page},
+                            summary=summary, assets={'diagram.png': b'pixels'})
+    assert rep.errors == []
+    assert lb.parse_summary(summary)[1] == (2, 'Page A', 'a/page-a.md')
+    assert dest / 'a/page-a.md' in plan
+    assert dest / '.gitbook/assets/diagram.png' in plan
+
+
+def test_missing_page_with_navigation_link_title_blocks_sync(tmp_path):
+    summary = SUMMARY.replace('(b.md)', '(b.md "Short B")')
+    (rep, _), _ = run(tmp_path, {k: v for k, v in GOOD.items() if k != 'b.md'}, summary=summary)
+    assert any('navigation entry without file: b.md' in e for e in rep.errors)
+
+
+def test_translated_group_without_stable_id_blocks_sync(tmp_path):
+    summary = SUMMARY.replace('## Setup <a href="#administration-and-setup" id="administration-and-setup"></a>', '## 管理与设置')
+    (rep, _), _ = run(tmp_path, GOOD, summary=summary)
+    assert any('page group' in e and 'administration-and-setup' in e for e in rep.errors)
+
+
+def test_translated_group_with_stable_id_is_preserved(tmp_path):
+    summary = SUMMARY.replace('## Setup', '## 管理与设置')
+    (rep, plan), dest = run(tmp_path, GOOD, summary=summary)
+    assert rep.errors == []
+    lb.apply_plan(plan)
+    assert '## 管理与设置 <a href="#administration-and-setup" id="administration-and-setup"></a>' in (dest / 'SUMMARY.md').read_text()
 
 
 def test_good_branch_has_no_errors(tmp_path):
@@ -278,3 +315,23 @@ def test_asset_only_on_destination_still_resolves(tmp_path):
     rep, _ = lb.plan_sync(tmp_path / "src" / "readme", dest)
     assert not [w for w in rep.warnings if "shared.png" in w]
 
+
+def test_external_image_does_not_require_a_local_asset(tmp_path):
+    page = '# B\n\n![History](https://raw.githubusercontent.com/org/repo/main/readme/.gitbook/assets/approval_history_1.png)\n'
+    (rep, plan), dest = run(tmp_path, {**GOOD, 'b.md': page})
+    assert rep.warnings == []
+    assert rep.errors == []
+
+
+def test_markdown_escaped_asset_name_is_copied(tmp_path):
+    page = '# B\n\n![M3](.gitbook/assets/export_to_m3_from_docbits_11%20\\(1\\).png)\n'
+    (rep, plan), dest = run(tmp_path, {**GOOD, 'b.md': page}, assets={'export_to_m3_from_docbits_11 (1).png': b'image'})
+    assert rep.warnings == []
+    assert dest / '.gitbook/assets/export_to_m3_from_docbits_11 (1).png' in plan
+
+
+def test_url_encoded_percent_asset_name_is_copied(tmp_path):
+    page = '# B\n\n<img src=".gitbook/assets/100%25PO.png">\n'
+    (rep, plan), dest = run(tmp_path, {**GOOD, 'b.md': page}, assets={'100%PO.png': b'image'})
+    assert rep.warnings == []
+    assert dest / '.gitbook/assets/100%PO.png' in plan

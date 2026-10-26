@@ -1,6 +1,6 @@
 # Item Id on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-15-de-20261023.png" alt="Mit Bestellung vergleichen Beliebig/Alle Artikelbezeichnung in der Bestellung Operator Artikelbezeichnung im Beleg" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

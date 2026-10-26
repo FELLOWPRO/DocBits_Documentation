@@ -1,40 +1,29 @@
-# Registro de Proveedores
+# Registro de proveedores
 
-1.  Recibirá una invitación con un enlace por correo electrónico para comenzar el proceso de registro. Por favor, haga clic en “Ir al Registro”, envíe la información requerida y acepte los términos y condiciones para comenzar. \
+Esta guía está dirigida a proveedores invitados al portal DocBits de una organización. Utilice el enlace de su invitación. Dispone de una cuenta propia de proveedor; la organización que le invita determina la información disponible y los pasos de registro necesarios.
 
+## 1. Abrir la invitación
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/supplier_registration_1.png" alt="" width="287"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/supplier_registration_2.png" alt="" width="246"><figcaption></figcaption></figure></div>
-2.  **Detalles del Proveedor**
+Compruebe qué organización ha enviado la invitación y a qué dirección de correo va dirigida. Abra el enlace de registro de esa invitación. Si ha caducado o corresponde a otra persona, solicite una nueva invitación a la organización.
 
-    Por favor, verifique que el nombre del Proveedor sea correcto. Este es un detalle crítico para fines de identidad y legales que no puede ser cambiado. Proporcione toda la información aplicable, incluyendo los campos requeridos. Cuando haya terminado, haga clic en “Siguiente” para continuar a la sección de Datos de Dirección. Para guardar su progreso y continuar más tarde, haga clic en “Guardar.”\
+## 2. Configurar su propia cuenta
 
+Revise el nombre y el correo rellenados previamente. Introduzca los datos solicitados y siga las reglas de contraseña mostradas. Introduzca la contraseña y repítala en el segundo campo de contraseña. Lea las condiciones y la información de privacidad. Complete la creación de la cuenta mediante la función de registro. Una cuenta existente y un registro nuevo son casos distintos; siga el proceso previsto para su invitación.
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_3.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **Datos de Dirección** Por favor, proporcione toda la información aplicable, incluyendo los campos requeridos. Cuando haya terminado, haga clic en “Siguiente” para continuar a la sección de Contacto del Proveedor. Para guardar su progreso y continuar más tarde, haga clic en “Guardar.”\
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-es.png" alt="Formulario de registro de la cuenta de proveedor. Se muestra un formulario vacío; una invitación puede rellenar algunos datos previamente."><figcaption><p>Formulario de registro de la cuenta de proveedor. Se muestra un formulario vacío; una invitación puede rellenar algunos datos previamente.</p></figcaption></figure>
 
+## 3. Completar los datos del proveedor
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_4.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  **Contacto del Proveedor** Por favor, proporcione toda la información aplicable, incluyendo los campos requeridos. Cuando haya terminado, haga clic en “Siguiente” para continuar a la sección Financiera del Proveedor. Para guardar su progreso y continuar más tarde, haga clic en “Guardar.”\
+Complete los datos y, cuando corresponda, los documentos solicitados. Los campos y apartados dependen del diseño de proveedor configurado por la organización. Los indicadores y mensajes de validación señalan la información obligatoria. Guarde el progreso si la pantalla ofrece esa opción; guardar no equivale automáticamente al envío final.
 
+## 4. Comprobar el registro y la aprobación
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_5.png" alt="" width="404"><figcaption></figcaption></figure>
-5.  **Financiera del Proveedor** Por favor, proporcione toda la información aplicable. Cuando haya terminado, haga clic en “Siguiente” para continuar a la sección de Compras del Proveedor. Para guardar su progreso y continuar más tarde, haga clic en “Guardar.”\
+Envíe la información mediante la acción de finalización correspondiente. Si hay una revisión o aprobación configurada, espere el resultado. A continuación, inicie sesión con su propia cuenta. La organización determina qué pedidos, facturas y otra información puede consultar.
 
+## Si no puede acceder al portal
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_6.png" alt="" width="402"><figcaption></figcaption></figure>
-6.  **Compras del Proveedor** Por favor, proporcione toda la información aplicable. Cuando haya terminado, haga clic en “Siguiente” para continuar a la sección de Certificados del Proveedor. Para guardar su progreso y continuar más tarde, haga clic en “Guardar.”\
+Póngase en contacto con la organización que le invita si el enlace no es válido, faltan permisos o no están claros los datos obligatorios. Una ficha de proveedor interna no sustituye su registro ni la aprobación de acceso necesaria.
 
+[Configuración del portal de proveedores](README.md).
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_7.png" alt="" width="401"><figcaption></figcaption></figure>
-7.  **Certificados del Proveedor** Por favor, cargue todos los certificados requeridos (Impuesto, Seguro, Diversificación de Proveedores). Por favor, guarde su progreso si necesita regresar para completar el proceso de registro más tarde. Cuando haya terminado, haga clic en “Enviar para Aprobación.”\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_8.png" alt="" width="404"><figcaption></figcaption></figure>
-8.  Por favor, cargue todos los certificados requeridos (Impuesto, Seguro, Diversificación de Proveedores). Por favor, guarde su progreso si necesita regresar para completar el proceso de registro más tarde. Cuando haya terminado, haga clic en “Enviar para Aprobación.”\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_9.png" alt="" width="404"><figcaption></figcaption></figure>
-9.  Por favor, revise su correo electrónico para una confirmación de que ha completado el proceso de registro.\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_10.png" alt="" width="563"><figcaption></figcaption></figure>
+[Vídeo: preparar el acceso al portal y el registro – con subtítulos en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.html)

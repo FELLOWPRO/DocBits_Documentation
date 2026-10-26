@@ -5,7 +5,7 @@ Narzędzia znajdują się obok wyszukiwarki. Najedź na ikonę, aby zobaczyć je
 | Narzędzie | Zastosowanie |
 | --- | --- |
 | Odśwież | Wczytaj listę i statusy ponownie. Wskaźnik zmian informuje o dostępności nowszych danych. |
-| Ustawienia zaawansowane (koło zębate) | Otwórz ustawienia kolumn, skróty i dziennik importu poczty. Ustawienia organizacji wymagają uprawnień administratora. |
+| Ustawienia zaawansowane (koło zębate) | Otwórz **Więcej ustawień**, listę **Skróty klawiaturowe**, **Importuj dziennik** oraz okno **Ustawienia kolumn**. Ustawienia całej organizacji wymagają uprawnień administratora. |
 | Skanuj dokument | Otwórz okno, jeśli skanowanie jest aktywne i dostępny jest zgodny skaner. Wybierz urządzenie i ustawienia przed rozpoczęciem. |
 | Analiza | Pokaż statystyki statusów i wybierz kategorię, aby ograniczyć listę. |
 | Rozpocznij import poczty | Uruchom import według istniejącej konfiguracji skrzynki. To działanie nie konfiguruje skrzynki. |

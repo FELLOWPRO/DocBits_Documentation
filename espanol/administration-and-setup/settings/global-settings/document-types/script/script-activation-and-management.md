@@ -1,5 +1,13 @@
 # Activación y administración de scripts
 
+## Videotutorial: administrar scripts
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v4/es.mp4" %}
+Administrar los scripts de un tipo de documento
+{% endembed %}
+
+El vídeo muestra la lista de scripts con filtro y orden, cómo activar y desactivar, copiar, el historial de versiones y la eliminación con confirmación.
+
 Abra el tipo de documento y su administración de scripts. La lista muestra los scripts disponibles y los controles de edición, duplicación y estado. Los nombres están ocultos en este ejemplo.
 
 <figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon-es.png" alt="Administración de scripts con controles de edición y nombres ocultos."><figcaption><p>Administración de scripts con controles de edición y nombres ocultos.</p></figcaption></figure>

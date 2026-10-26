@@ -10,7 +10,7 @@ Configurar y probar aprobaciones de facturas
 
 Se muestra la aplicación real. Los nombres de las opciones pueden variar según la versión utilizada.
 
-Configure la aprobación para el tipo de documento utilizado por su proceso. Identifique a los revisores previstos y decida si necesita una segunda revisión independiente. El video utiliza un tipo de prueba separado, facturas sintéticas y cuentas temporales de revisión sin permisos de administración; su presentador es ficticio.
+Configure la aprobación para el tipo de documento utilizado por su proceso. Identifique a los revisores previstos y decida si necesita una segunda revisión independiente. El video utiliza un tipo de documento separado y cuentas temporales de revisión sin permisos de administración.
 
 ## Configurar el tipo de documento
 

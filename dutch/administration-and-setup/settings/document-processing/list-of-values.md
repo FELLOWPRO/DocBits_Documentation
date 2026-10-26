@@ -1,5 +1,13 @@
 # Waardenlijsten
 
+## Videotutorial: Stamgegevens en waardelijsten
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/nl.mp4" %}
+Bronnen voor stamgegevens, waardelijsten en mastergegevensinstellingen in DocBits
+{% endembed %}
+
+De video toont de bronnen voor stamgegevens, de waardelijsten en de mastergegevensinstellingen van een documenttype.
+
 Waardenlijsten bevatten vooraf ingestelde opties voor documentvelden. Een veld kan een lijst gebruiken om opties tijdens validatie te tonen. Labels kunnen worden vertaald; de technische waarde blijft in alle talen gelijk.
 
 ## Lijsten openen

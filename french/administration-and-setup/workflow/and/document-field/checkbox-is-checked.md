@@ -1,50 +1,44 @@
 # La case est cochée
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+## Quand et où utiliser cette carte
 
-## **Objectif :**
+Utilisez cette condition lorsqu’une action suivante dépend d’une case à cocher du document. Par exemple, autorisez la poursuite du traitement d’une facture uniquement lorsque son indicateur de contrôle est coché.
 
-Cette carte de workflow est conçue pour automatiser des actions en fonction de l'état (cochée ou décochée) d'une case à cocher dans votre système ERP. En évaluant l'état de la case à cocher, elle facilite le déclenchement de processus spécifiques ou l'application de certaines règles au sein de l'application.
+Dans l’éditeur de workflow, ajoutez la carte sous **Et… → Champ du document**. La carte compare la valeur du champ lors de l’exécution du workflow ; elle ne surveille pas en continu un champ de l’ERP et ne modifie pas la case.
 
-## **Composants de la carte :**
+## Prérequis
 
-* **Nom du champ**
-  * **Descriptif :** spécifie le nom du champ de type case à cocher qui sera évalué.
-  * **Détail :** il doit correspondre à l'identifiant exact du champ utilisé dans le système. Il détermine l'état de quelle case à cocher est surveillé.
-* **Booléen**
-  * **Descriptif :** définit la condition qui déclenche le workflow.
-  * **Possibilités :**
-    * **True :** le workflow se déclenche si la case est cochée.
-    * **False :** le workflow se déclenche si la case est décochée.
+Le type de document doit disposer d’un champ booléen pour cette case. Utilisez son identifiant technique exact. Cet exemple utilise `validation_complete` ; remplacez-le par le champ correspondant de votre organisation.
 
-#### **Fonctionnalité :**
+## Configurer la carte
 
-* **Détection de l'état :** la carte surveille en continu l'état du champ de case à cocher spécifié.
-* **Évaluation de la condition :** le système vérifie si la case à cocher est dans l'état (cochée ou décochée) spécifié par la condition booléenne.
-* **Exécution de l'action :**
-  * **Condition vraie :**\
-    Si l'état de la case à cocher correspond à la condition booléenne spécifiée (true pour cochée ou false pour décochée), le système déclenche les actions associées. Celles-ci peuvent inclure l'activation ou la désactivation de champs de formulaire, le déclenchement de notifications, le démarrage de workflows ou la mise à jour d'enregistrements.
-  * **Condition fausse :**\
-    Si l'état de la case à cocher ne correspond pas à la condition, des actions alternatives ou aucune action peuvent être effectuées, selon la configuration du workflow.
+1. Choisissez **La case à cocher … est cochée** dans **Champ du document**.
+2. Saisissez `validation_complete` dans **Nom du champ**, puis confirmez la valeur.
+3. Sélectionnez **Vrai** dans **Booléen** pour exiger une case cochée. Sélectionnez **Faux** pour vérifier qu’elle n’est pas cochée.
 
-## **Mise en place et configuration :**
+## Exemple pratique : poursuivre après un contrôle
 
-* Les utilisateurs configurent la carte en sélectionnant le champ de case à cocher dans une liste de champs disponibles et en définissant la condition booléenne.
+**Quand l’utiliser :** une facture nécessite un contrôle préalable et le processus enregistre sa réalisation dans `validation_complete`.
 
-## Conclusion :
+**Où la placer :** dans les conditions **Et…**, avant l’action de suivi configurée dans **Dans ce cas…**. Configurez séparément cette action et l’événement qui démarre le workflow.
 
-La carte de workflow « Checkbox Field Condition » est un outil fondamental pour gérer les formulaires et documents dynamiques au sein d'un système ERP, où les saisies de l'utilisateur peuvent dicter les processus de données ultérieurs. En automatisant des actions en fonction de l'état d'une case à cocher, cette carte améliore l'efficacité du workflow et garantit que les comportements du système sont alignés sur les saisies de l'utilisateur. Une documentation claire de cette carte aidera les utilisateurs à la mettre en œuvre efficacement dans leurs opérations, permettant un meilleur contrôle des comportements des formulaires et des automatisations de processus.
+**Configuration de l’exemple :** champ `validation_complete`, comparaison **Vrai** (`true`), carte version 2.
 
-**Note : tous les clients ne disposent pas de la case à cocher, mais elle peut être ajoutée si souhaité.**
+<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-fr-20261025.png" alt="Configuration de l’exemple, version 2 : validation complete comparé à Vrai." width="651"><figcaption><p>Configuration de l’exemple, version 2 : validation complete comparé à Vrai.</p></figcaption></figure>
 
-<!-- workflow-card-practical-example-20261021 -->
+Les résultats attendus pour cette configuration sont les suivants :
 
-## Exemple pratique
+| Valeur du champ dans le document | Résultat de la condition |
+| --- | --- |
+| Case existante et cochée (`true`) | La condition est remplie. |
+| Case existante et non cochée (`false`) | La condition n’est pas remplie. |
+| Case existante avec une valeur vide (`None`) | Interprétée comme non cochée ; la condition n’est pas remplie. |
+| Champ absent du document | Résultat `NOT_FOUND_IN_DOCUMENT` ; ce cas diffère d’une case existante non cochée. |
 
-**Quand utiliser :** Exécutez un suivi uniquement après qu'un indicateur de révision explicite a été défini.
+Si vous sélectionnez **Faux**, une case existante non cochée remplit la condition et une case cochée ne la remplit pas. Un champ absent produit toujours un résultat d’erreur distinct.
 
-**Configuration :** Sélectionnez le champ de case à cocher `review_complete` et le booléen `true`.
+## Vérifier avant l’activation
 
-**Résultat attendu et contre-exemple :** Une case cochée est réussie. Une case non cochée échoue ; n'utilisez pas un champ manquant comme preuve d'une révision terminée.
+Vérifiez que le champ choisi est booléen et correspond au type de document utilisé. Testez un document avec la case cochée, un autre avec la case non cochée, ainsi que le cas d’un champ absent. Contrôlez le résultat de la carte et le parcours suivant du workflow dans chaque cas.
 
-Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.
+Cette carte vérifie l’état de la case ; le processus précédent doit renseigner l’indicateur de contrôle. Le cocher automatiquement sans effectuer le contrôle ne prouve pas que celui-ci a été réalisé.

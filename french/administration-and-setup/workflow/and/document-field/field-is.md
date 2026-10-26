@@ -31,10 +31,10 @@ Ces exemples présentent les résultats attendus. Pour vérifier la validité du
 
 ## Vidéo d’exemple avec un administrateur
 
-Quand j’utilise cette carte, où la trouver et comment repérer les numéros de facture manquants. L’administrateur, le bureau et la voix sont synthétiques ; la démonstration présente la véritable interface DocBits d’un compte de test. Les exemples présentent les résultats attendus.
+Quand j’utilise cette carte, où la trouver et comment repérer les numéros de facture manquants. Les exemples présentent les résultats attendus.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.mp4" %}
 
-[Ouvrir la vidéo avec les sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.html)
+[Ouvrir la vidéo avec les sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr-theme-v4.html)
 
 [Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.txt)

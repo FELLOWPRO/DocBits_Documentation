@@ -1,6 +1,6 @@
 # Assign document to recipient
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-01-pl-20261023.png" alt="Osoba przypisana Przypisz dokument do Odbiorca , z Użytkownik jako opcją zapasową." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

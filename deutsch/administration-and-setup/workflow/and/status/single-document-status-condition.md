@@ -54,10 +54,10 @@ Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organ
 
 ## Admin-Beispielvideo
 
-Wann ich eine Bedingung auf einen bestimmten Belegstatus beschränke und wie ich den vorhandenen Status auswähle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann ich eine Bedingung auf einen bestimmten Belegstatus beschränke und wie ich den vorhandenen Status auswähle. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.mp4" %}
 
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.html)
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de-theme-v4.html)
 
 [Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.txt)

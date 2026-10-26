@@ -1,5 +1,13 @@
 # Informacje o firmie
 
+## Samouczek wideo: Firma, subskrypcja i audyt
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/pl.mp4" %}
+Informacje o firmie, plan subskrypcji i dzienniki audytu w DocBits
+{% endembed %}
+
+Film pokazuje informacje i preferencje firmy, plan subskrypcji, aktywność logowania oraz dzienniki audytu.
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-pl.png" alt="Dane firmy z ukrytymi wartościami organizacji."><figcaption><p>Dane firmy z ukrytymi wartościami organizacji.</p></figcaption></figure>
 
 Strona Company Information pozwala zarządzać profilem firmy, preferencjami i szczegółami subskrypcji. Jest podzielona na następujące sekcje:

@@ -1,6 +1,6 @@
 # Assign document to User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-00-es-20261023.png" alt="Asignado a Asignar documento a Usuario" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

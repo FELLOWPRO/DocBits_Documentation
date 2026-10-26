@@ -1,31 +1,42 @@
 # Layout Manager
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.46.24.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-en.png" alt="Layouts and Selection Rules for the Invoice document type: the Layouts and Selection rules tabs with their counts, the Document Type chip, the Field Validation, Approval, Reject and Review screen tabs, the layout cards with their Custom badge and Edit, Clone and Delete actions, and the New layout button"><figcaption>The Layout Manager for the Invoice document type.</figcaption></figure>
 
-#### Overview
+The **Layout Manager** decides how a document type looks to the people who validate, approve, reject and review documents: which fields and groups appear on the screen, in which order, and how each field behaves. Every document type has its own layouts.
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+The page opens as **Layouts & Selection Rules**: layouts are reusable field arrangements, independent of the document origin, and rules decide which layout a document gets.
 
-#### Key Components
+#### Screens and layout types
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
-2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
-3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+Validation, approval, reject and review are separate screens, and each of them has its own layouts, its own rules and its own default layout — an approval rule never changes the validation screen. Switch the screen with the **Field Validation**, **Approval**, **Reject** and **Review** tabs.
+
+#### Layout cards
+
+On the **Layouts** tab every layout of the selected screen is a card. A card shows the layout name, whether it belongs to your organisation (**Custom**) or is the **System default**, when it was last edited, and whether a selection rule targets it. **Edit** opens the layout in the Layout Builder, **Clone** copies it under a name you choose and **Delete** removes it — the system default can only be viewed, not changed or deleted. **New layout** asks for a name and opens the Layout Builder on the new, empty layout. The filter above the cards switches between **All**, **My layouts** and **System** layouts.
+
+#### The Layout Builder
+
+**Edit** opens the [Layout Builder](navigating-the-layout-manager.md):
+
+* **Structure**, **Fields** and **Elements** on the left — the layout as a tree, every field of the document type with a counter of the fields already placed, and the groups and form elements you can drag onto the canvas.
+* The **canvas** in the middle shows the layout as the user sees it. **Main layout** and **Table** switch between the page and a line-item table, **Document** opens the sample document beside it.
+* The **Properties** panel on the right follows the selected element, with its settings grouped into **Display**, **Behaviour**, **Values & lists**, **Automation** and **Borders & spacing**.
+
+**Save** in the header stores the layout. See [Save and Apply Changes](save-and-apply-changes.md) for the other header actions.
+
+#### Which layout a document gets
+
+The **Selection rules** tab of each screen holds the rules that pick the layout, and the **FALLBACK** row is the default layout used when no rule matches. See [Layout Selection Rules](layout-selection-rules.md).
+
+#### Related pages
+
+* [Purpose and Use](purpose-and-use.md)
+* [Navigating the Layout Builder](navigating-the-layout-manager.md)
+* [Configuring Field Properties](configuring-field-properties.md)
+* [Using the Template Preview](using-the-template-preview.md)
+* [Save and Apply Changes](save-and-apply-changes.md)
+* [Layout Selection Rules](layout-selection-rules.md)
+* [Best practices](best-practices.md)
+* [Troubleshooting](troubleshooting.md)
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
-
-

@@ -12,10 +12,6 @@ To configure your settings, click on the User Icon located in the bottom-left co
 
 **Language**
 
-{% embed url="https://youtu.be/h_knkUZkNyI" %}
-How to Change Language in DocBits (User Settings Tutorial)
-{% endembed %}
-
 * **Select Preferred Language:** Choose your desired language from the available options.
 
 **Dark Mode**

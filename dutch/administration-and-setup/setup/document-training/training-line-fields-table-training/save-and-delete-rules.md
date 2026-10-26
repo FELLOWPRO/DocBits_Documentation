@@ -2,7 +2,7 @@
 
 Zodra u de training of correctie van een tabel heeft voltooid, is het belangrijk om **uw regels op te slaan** zodat DocBits ze automatisch kan toepassen op toekomstige documenten van dezelfde leverancier.
 
-## Regels Opslaan
+### Regels Opslaan
 
 Nadat u alle kolommen en correcties heeft gedefinieerd:
 
@@ -11,12 +11,16 @@ Nadat u alle kolommen en correcties heeft gedefinieerd:
 
 Dit zorgt ervoor dat DocBits automatisch uw getrainde lay-out zal gebruiken de volgende keer dat het een vergelijkbaar document ziet.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FzVn_mYiL7PwiILj2gJ4sxaPKpEUNOfKwryiZJ2Umk2SpvGHZ8OVUznBReJHqCM7UstWTt6nq0azJrtPDK_2q4jVUZgsE7bf6toT9kl57wByn4EG3JqafBfZt5G54OZ8okUfpLUH1tvHb0mZIC119I4k\&width=768\&dpr=4\&quality=100\&sign=dc056624\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-save-rules-nl-20261009.png" alt="Scherm voor tabel-extractie in trainingsmodus met de knoppen Opslaan, Regels opslaan en Regels verwijderen en een regelteller van 3."><figcaption><p>Regels opslaan bewaart de regels; de teller laat zien hoeveel regels er zijn.</p></figcaption></figure>
 
-## Regels Verwijderen
+Hoe u de kolommen vooraf aanmaakt en toewijst, staat in [Tabellen en kolommen definiëren](defining-tables-and-columns.md); hoe u de extractie verbetert, in [Tabel-extractie structureren en verbeteren in DocBits](improving-table-extraction-with-regex.md).
+
+### Regels Verwijderen
 
 U kunt opgeslagen regels verwijderen met de knop **REGELS VERWIJDEREN** als ze verkeerd geconfigureerd waren of als de lay-out van het document aanzienlijk is gewijzigd.
 
-**Waarschuwing**: Het verwijderen van regels heeft invloed op alle documenten van dezelfde leverancier met dezelfde lay-out. U moet **de tabel extractie opnieuw trainen vanaf nul**.
+<mark style="color:red;">**Waarschuwing**</mark>: Het verwijderen van regels heeft invloed op alle documenten van dezelfde leverancier met dezelfde lay-out. U moet **de tabel extractie opnieuw trainen vanaf nul**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FKyfMBBv2ghBgSmqTZ4zMVsHKaoAVwcha8XRhUPNPrVMNwsmHXCDMDSsmkJYE2EYWynD1SzMcf57dmqvGIC4u3UpQohRxZW3A2RNICsNyI6Du0-jd3ZibupkTwRnYoD_XUAbfypZ5iQj-9Z0XN_SreUs\&width=768\&dpr=4\&quality=100\&sign=1a65fb86\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-delete-rules-nl-20261009.png" alt="Bevestigingsvenster dat verschijnt na het klikken op Regels verwijderen."><figcaption><p>Het verwijderen van regels moet worden bevestigd.</p></figcaption></figure>
+
+Hoe u de trainingsmodus start en de tabel extractie opnieuw traint, staat in [Training van regelvelden/tabel](README.md).

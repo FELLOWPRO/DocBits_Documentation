@@ -1,5 +1,13 @@
 # Configurações de dados mestre
 
+## Vídeo tutorial: Dados mestres e listas de valores
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/pt.mp4" %}
+Fontes de dados mestres, listas de valores e configurações de dados mestre no DocBits
+{% endembed %}
+
+O vídeo mostra as fontes de dados mestres, as listas de valores e as configurações de dados mestre de um tipo de documento.
+
 As **Configurações de dados mestre** ligam os campos de validação de um documento aos dados guardados em [Pesquisa de dados mestre](../../../document-processing/master-data-lookup.md). Use **Pesquisar Dados Mestres** para encontrar e preencher registos correspondentes. Use **Dados Mestres LOV** para oferecer uma lista de valores de um conjunto de dados.
 
 ## Abrir as configurações

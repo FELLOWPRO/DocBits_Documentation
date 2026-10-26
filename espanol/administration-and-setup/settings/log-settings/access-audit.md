@@ -1,5 +1,13 @@
 # Auditoría de Acceso
 
+## Tutorial en vídeo: Empresa, suscripción y auditoría
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/es.mp4" %}
+Información de la empresa, plan de suscripción y registros de auditoría en DocBits
+{% endembed %}
+
+El vídeo muestra la información y las preferencias de la empresa, el plan de suscripción, la actividad de inicio de sesión y los registros de auditoría.
+
 <figure><img src="../../../.gitbook/assets/access_audit_page_es.png" alt="Registro de Auditoría con el servicio de auditoría activado: filtro de Rango de tiempo, tipos de acción Crear, Actualizar y Eliminar, tipo de recurso, búsqueda, tarjetas de resumen y tabla de eventos"><figcaption><p>La página del Sandbox en español con el registro de auditoría activado y eventos recogidos.</p></figcaption></figure>
 
 La Auditoría de Acceso registra quién creó, modificó o eliminó un recurso y cuándo. Abra **Ajustes → Registro de Actividad → Auditoría de Acceso** para consultar el registro. Active el servicio para una organización solo cuando tenga previsto recopilar eventos de auditoría.

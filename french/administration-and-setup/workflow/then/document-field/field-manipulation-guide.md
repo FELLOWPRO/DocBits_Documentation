@@ -1,24 +1,20 @@
 # Cartes de manipulation de champs et de tables
 
-## Cartes de manipulation de terrain et de table - Guide complet
+## Cartes de manipulation de champs et de tableaux — Guide complet
 
-**Couvertures :** 9 cartes pour modifier les champs et les tableaux du document
-
-***
-
-Les cartes de champ et de table de cette page vont dans le groupe **Alors** du Workflow Builder — les actions qui s'exécutent une fois que les conditions Quand/Et correspondent :
-
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-fr.png" alt="Exemple non enregistré avec les cartes Quand, Et et Alors. Renseignez tous les champs avant exécution."><figcaption><p>Exemple non enregistré avec les cartes Quand, Et et Alors. Renseignez tous les champs avant exécution.</p></figcaption></figure>
+**Périmètre :** 9 cartes pour modifier les champs et les tableaux du document
 
 ***
 
-### 📌 Informations sur la version
+Les cartes de champ et de table de cette page vont dans le groupe **Dans ce cas** du Workflow Builder — les actions qui s'exécutent une fois que les conditions Quand/Et correspondent :
 
-**Cartes multi-versions :** CALC\_COLUMNS (v2), CALC\_COLUMNS\_REGEX (v2), EDIT\_COLUMN (v2), AI\_CALC\_MTZ\_ETZ (v2)
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-fr.png" alt="Exemple de cartes dans les groupes Quand, Et et Dans ce cas. Renseignez les paramètres avant exécution."><figcaption><p>Exemple de cartes dans les groupes Quand, Et et Dans ce cas. Renseignez les paramètres avant exécution.</p></figcaption></figure>
 
-**Modèle de version :** Toutes les cartes de manipulation de champ suivent le modèle v1 → v2 **Changement de clé :** v2 ajoute la prise en charge de l'internationalisation (i18n) avec les clés de traduction
+***
 
-📖 [Historique complet des versions](../../release.md) | [Versions et comportement des cartes](../../cards-overview/card-versions-guide.md)
+### 📌 Versions des cartes
+
+Les options dépendent de la carte et de sa version. L’exemple de copie ci-dessous utilise la **version 2**. Vérifiez le numéro affiché sur la carte et consultez le [guide des versions et de leur comportement](../../cards-overview/card-versions-guide.md) avant de reprendre un exemple.
 
 ***
 
@@ -206,75 +202,38 @@ Checkbox now unchecked (no longer priority)
 
 ***
 
-### Carte : ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / Copier la valeur du champ
+### Carte : ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / Copier la valeur d’un champ
 
-#### Objectif
+#### Quand et où utiliser cette carte
 
-Copie la valeur d'un champ vers un autre champ
+Utilisez cette carte lorsqu’une étape suivante a besoin d’une valeur existante dans un autre champ. Par exemple, recopiez le numéro de facture dans un champ texte supplémentaire destiné à une étape de contrôle.
 
-#### Quand utiliser
+Dans l’éditeur du workflow standard, ouvrez **Dans ce cas → Champ du document**, puis choisissez **Copier le contenu du champ de document**, version **2**.
 
-* Copier les informations du fournisseur dans les informations de facturation
-* Données en double dans les champs
-* Standardiser le format des données
-* Créer une sauvegarde de valeur
+#### Configurer le même exemple
 
-#### Comment ça marche
+Les deux champs existent déjà dans le type de document **INVOICE** et sont de type texte (`String`). Vérifiez les types et le champ de destination avant l’exécution.
 
-```
-Source Field: "Invoice_Supplier"  Value: "ABC Corp"
-    ↓
-COPY TO
-    ↓
-Target Field: "Billing_Partner"  Value: "ABC Corp"
+| Réglage | Sélection dans l’exemple |
+| --- | --- |
+| Champ source | **Numéro de facture** — `invoice_id` |
+| Champ de destination | **Champ personnalisé 1** — `custom_field_1` |
+| Valeur source | `WF-INV-1001` |
+| Ancienne valeur de destination | `ALT` |
 
-Both fields now have same value
-```
+<figure><img src="../../../../.gitbook/assets/workflow-card-copy-field-v2-configured-fr-20261025.png" alt="Carte de copie, version 2 : Numéro de facture vers Champ personnalisé 1, deux champs de texte."><figcaption><p>Carte de copie, version 2 : Numéro de facture vers Champ personnalisé 1, deux champs de texte.</p></figcaption></figure>
 
-#### Exemples réels
+#### Exemple attendu et contre-exemples
 
-**Exemple 1 : Copier l'adresse de livraison**
+Si la modification est acceptée, `custom_field_1` contient `WF-INV-1001` à la place de `ALT`. La valeur source reste inchangée.
 
-```
-Source: "Delivery_Address" = "123 Main St, Berlin"
-    ↓
-Copy to: "Billing_Address"
-    ↓
-Result: Both fields show "123 Main St, Berlin"
-```
+| Situation | Résultat attendu |
+| --- | --- |
+| La source contient `WF-INV-1001` et la modification est acceptée | La destination reçoit `WF-INV-1001` ; la carte réussit. |
+| Le champ source est absent du document | `NOT_FOUND_IN_DOCUMENT` ; aucune valeur n’est copiée. |
+| Le service de documents refuse la modification ou ne répond pas | Une erreur est renvoyée ; ne considérez pas la copie comme réussie. |
 
-**Exemple 2 : Copier le code du fournisseur**
-
-```
-Source: "Supplier_Code_External" = "SUPP-789"
-    ↓
-Copy to: "Supplier_Code_Internal"
-    ↓
-Result: Both codes match, system recognizes supplier
-```
-
-**Exemple 3 : Copier le montant pour validation**
-
-```
-Source: "Invoice_Total" = "€5000"
-    ↓
-Copy to: "Amount_to_Validate"
-    ↓
-Result: Validation field has correct amount
-```
-
-#### Paramètres
-
-```
-Source Field: [Choose field to copy FROM]
-Target Field: [Choose field to copy TO]
-```
-
-#### Remarques
-
-* Champ d'origine inchangé
-* Champ cible remplacé par la valeur source
-* Idéal pour standardiser les données
+Après l’exécution, contrôlez la valeur de destination et le journal du workflow. La capture montre la configuration de la carte ; le tableau décrit les résultats attendus de cet exemple.
 
 ***
 

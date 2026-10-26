@@ -1,6 +1,6 @@
 # Single Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-assignee-00-pl-20261023.png" alt="Osoba przypisana Przypisany użytkownik Operator Użytkownik" width="552"><figcaption></figcaption></figure>
 
 **Cel**
 

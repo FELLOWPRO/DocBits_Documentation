@@ -1,50 +1,44 @@
 # Het selectievakje is aangevinkt
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+## Wanneer en waar gebruikt u deze kaart?
 
-## **Doel:**
+Gebruik deze voorwaarde als een vervolghandeling afhangt van een selectievakje op het document. Laat een factuur bijvoorbeeld pas verder verwerken nadat de controlevlag is aangevinkt.
 
-Deze workflow-kaart is ontworpen om acties te automatiseren op basis van de status (aangevinkt of niet aangevinkt) van een selectievakje binnen uw ERP-systeem. Door de voorwaarde van het selectievakje te evalueren, faciliteert hij het triggeren van specifieke processen of het afdwingen van bepaalde regels binnen de applicatie.
+Voeg de kaart in de workflow-editor toe onder **En… → Documentveld**. De kaart vergelijkt de veldwaarde wanneer de workflow wordt uitgevoerd; ze bewaakt niet continu een ERP-veld en wijzigt het selectievakje niet.
 
-## **Onderdelen van de kaart:**
+## Voorwaarden vooraf
 
-* **Veldnaam**
-  * **Beschrijving:** Geeft de naam op van het selectievakjeveld dat wordt geëvalueerd.
-  * **Details:** Dit moet exact overeenkomen met de identifier van het veld die in het systeem wordt gebruikt. Het bepaalt van welk selectievakje de status wordt gemonitord.
-* **Booleaans**
-  * **Beschrijving:** Definieert de voorwaarde die de workflow triggert.
-  * **Opties:**
-    * **True:** De workflow wordt getriggerd als het selectievakje is aangevinkt.
-    * **False:** De workflow wordt getriggerd als het selectievakje niet is aangevinkt.
+Het documenttype moet een booleaans veld voor dit selectievakje bevatten. Gebruik de exacte technische veldnaam. Dit voorbeeld gebruikt `validation_complete`; vervang deze door het overeenkomstige veld in uw organisatie.
 
-#### **Functionaliteit:**
+## De kaart configureren
 
-* **Statusdetectie:** De kaart monitort continu de status van het opgegeven selectievakjeveld.
-* **Voorwaarde-evaluatie:** Het systeem controleert of het selectievakje zich in de status (aangevinkt of niet aangevinkt) bevindt die door de Boolean-voorwaarde is opgegeven.
-* **Actie-uitvoering:**
-  * **True-voorwaarde:**\
-    Als de status van het selectievakje overeenkomt met de opgegeven Boolean-voorwaarde (true voor aangevinkt of false voor niet aangevinkt), start het systeem de bijbehorende acties. Deze kunnen bestaan uit het in- of uitschakelen van formuliervelden, het triggeren van meldingen, het starten van workflows of het bijwerken van records.
-  * **False-voorwaarde:**\
-    Als de status van het selectievakje niet overeenkomt met de voorwaarde, kunnen alternatieve of geen acties worden uitgevoerd, afhankelijk van de workflow-opzet.
+1. Kies **Selectievakje … is aangevinkt** onder **Documentveld**.
+2. Voer `validation_complete` in bij **Veldnaam** en bevestig de waarde.
+3. Kies **WAAR** bij **Booleaans** om een aangevinkt selectievakje te vereisen. Kies **Onwaar** om te controleren of het niet is aangevinkt.
 
-## **Opzet en configuratie:**
+## Praktisch voorbeeld: doorgaan na controle
 
-* Gebruikers configureren de kaart door het selectievakjeveld uit een lijst van beschikbare velden te selecteren en de Boolean-voorwaarde in te stellen.
+**Wanneer gebruiken:** een factuur vereist een voorafgaande controle en het proces legt de voltooiing vast in `validation_complete`.
 
-## Conclusie:
+**Waar plaatsen:** bij de voorwaarden onder **En…**, vóór de vervolghandeling die u onder **Dan…** configureert. Configureer deze handeling en de gebeurtenis die de workflow start afzonderlijk.
 
-De workflow-kaart "Checkbox Field Condition" is een fundamenteel hulpmiddel voor het beheren van dynamische formulieren en documenten binnen een ERP-systeem, waarbij gebruikersinvoer de daaropvolgende gegevensprocessen kan bepalen. Door acties te automatiseren op basis van de status van een selectievakje verbetert deze kaart de workflow-efficiëntie en zorgt hij ervoor dat het systeemgedrag aansluit op de gebruikersinvoer. Een duidelijke documentatie van deze kaart helpt gebruikers hem effectief in hun werkzaamheden te implementeren, wat zorgt voor betere controle over formuliergedrag en procesautomatiseringen.
+**Voorbeeldconfiguratie:** veld `validation_complete`, vergelijking **WAAR** (`true`), kaartversie 2.
 
-**Note: Niet elke klant heeft het selectievakje, maar het kan desgewenst worden toegevoegd.**
+<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-nl-20261025.png" alt="Voorbeeld met versie 2: validation complete vergeleken met WAAR." width="651"><figcaption><p>Voorbeeld met versie 2: validation complete vergeleken met WAAR.</p></figcaption></figure>
 
-<!-- workflow-card-practical-example-20261021 -->
+De verwachte resultaten voor deze configuratie zijn:
 
-## Praktisch voorbeeld
+| Veldwaarde op het document | Resultaat van de voorwaarde |
+| --- | --- |
+| Bestaand, aangevinkt selectievakje (`true`) | Aan de voorwaarde is voldaan. |
+| Bestaand, niet-aangevinkt selectievakje (`false`) | Aan de voorwaarde is niet voldaan. |
+| Bestaand selectievakje met een lege waarde (`None`) | Wordt behandeld als niet aangevinkt; aan de voorwaarde is niet voldaan. |
+| Het veld ontbreekt op het document | `NOT_FOUND_IN_DOCUMENT`; dit verschilt van een bestaand, niet-aangevinkt selectievakje. |
 
-**Wanneer gebruiken:** Voer alleen een follow-up uit nadat een expliciete beoordelingsvlag is ingesteld.
+Als u **Onwaar** kiest, voldoet een bestaand, niet-aangevinkt selectievakje aan de voorwaarde en een aangevinkt selectievakje niet. Een ontbrekend veld geeft nog steeds een afzonderlijk foutresultaat.
 
-**Configuratie:** Selecteer het selectievakjeveld `review_complete` en Boolean `true`.
+## Controleren vóór activering
 
-**Verwacht resultaat en tegenvoorbeeld:** Een aangevinkt selectievakje passeert. Een niet-aangevinkt selectievakje mislukt; gebruik een ontbrekend veld niet als bewijs van voltooide beoordeling.
+Controleer of het gekozen veld booleaans is en bij het gebruikte documenttype hoort. Test een document met een aangevinkt selectievakje, een document met een niet-aangevinkt selectievakje en een document waarop het veld ontbreekt. Controleer telkens het kaartresultaat en het vervolgpad van de workflow.
 
-Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.
+Deze kaart controleert de status van het selectievakje; het voorafgaande proces moet de controlevlag instellen. De vlag automatisch aanvinken zonder de controle uit te voeren, bewijst niet dat de controle heeft plaatsgevonden.

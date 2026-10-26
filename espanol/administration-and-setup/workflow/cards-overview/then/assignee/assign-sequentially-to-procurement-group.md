@@ -1,6 +1,6 @@
 # Assign Sequentially to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-09-es-20261023.png" alt="Asignado a Asigne el documento secuencialmente al grupo de aprovisionamiento Nombre del grupo , con una prioridad de Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

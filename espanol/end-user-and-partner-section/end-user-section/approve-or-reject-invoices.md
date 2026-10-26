@@ -10,7 +10,7 @@ Aprobar o rechazar una factura
 
 Se muestra la aplicación real. Los nombres de las opciones pueden variar según la versión utilizada.
 
-Utilice la aprobación para dejar constancia de su decisión tras revisar una factura que ya ha sido validada. Necesita acceso al documento y permiso para su etapa de aprobación actual. El video utiliza una cuenta normal de revisión, facturas sintéticas preparadas y una presentadora ficticia.
+Utilice la aprobación para dejar constancia de su decisión tras revisar una factura que ya ha sido validada. Necesita acceso al documento y permiso para su etapa de aprobación actual. El video utiliza una cuenta normal de revisión.
 
 ## Revisar y decidir
 

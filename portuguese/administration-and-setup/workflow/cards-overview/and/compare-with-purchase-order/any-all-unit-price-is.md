@@ -1,8 +1,8 @@
 # Any / All Unit Price is
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-13-pt-20261023.png" alt="Comparar com a ordem de compra O preço unitário de Qualquer/Todos é Operador em relação ao pedido de compra, com tolerância de Quantidade de Tolerância Tipo de tolerância . Compare com Dados de comparação" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-13-pt-20261023.png" alt="Comparar com a ordem de compra O preço unitário de Qualquer/Todos é Operador em relação ao pedido de compra, com tolerância de Quantidade de Tolerância Tipo de tolerância . Compare com Dados de comparação" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

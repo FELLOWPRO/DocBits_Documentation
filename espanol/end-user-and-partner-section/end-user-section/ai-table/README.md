@@ -4,7 +4,7 @@ La **Tabla AI extraída** es la tabla de líneas de detalle que DocBits lee con 
 
 ## Serie de vídeos
 
-Vídeos cortos para el día a día. Míralos en orden o ve directamente al que necesites.
+Vídeos cortos para el día a día. Míralos en orden o ve directamente al que necesites. Las secciones 2 y 3 enlazan a las guías escritas; sus vídeos en español aún no están disponibles.
 
 ### 1. Leer la tabla AI
 
@@ -14,15 +14,15 @@ Qué ves en la tabla AI y qué hace cada botón. Unos 1,7 minutos.
 
 ### 2. Corregir una columna y enseñar a DocBits
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part2/v1/es.mp4" %}
+[Abrir la guía paso a paso para corregir una columna](#cambiar-una-columna).
 
-Elegir la columna correcta, dar instrucciones a la IA, probar un cambio y conservarlo para las próximas facturas. Unos 1,9 minutos.
+Elegir la columna correcta, dar instrucciones a la IA, probar un cambio y conservarlo para las próximas facturas.
 
 ### 3. Dos problemas típicos
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part3/v1/es.mp4" %}
+[Consultar los ejemplos prácticos](#ejemplos-practicos).
 
-Precio por 1.000 o 100 y un descuento restado dos veces. Qué ves, qué escribir y cómo comprobar. Unos 1,3 minutos.
+Precio por 1.000 o 100 y un descuento restado dos veces. Qué ves, qué escribir y cómo comprobar.
 
 ### 4. Lo que la IA lee bien
 

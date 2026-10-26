@@ -1,6 +1,6 @@
 # 子组织
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/zh.mp4" %}
 
 <figure><img src="../../../../../.gitbook/assets/site-complete-sub-organizations-zh.png" alt="中文子组织列表及搜索入口；组织数据已隐藏。顶部开关用于显示跨子组织选项，本图未切换该设置。"><figcaption><p>中文子组织列表及搜索入口；组织数据已隐藏。顶部开关用于显示跨子组织选项，本图未切换该设置。</p></figcaption></figure>
 

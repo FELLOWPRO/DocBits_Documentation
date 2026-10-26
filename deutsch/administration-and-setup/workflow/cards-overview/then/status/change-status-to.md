@@ -1,6 +1,6 @@
 # Change Status to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-status-00-de-20261023.png" alt="Status Status auf Status ändern, Workflows Workflows auslösen auslösen." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

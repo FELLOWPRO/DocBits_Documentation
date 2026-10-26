@@ -1,6 +1,6 @@
 # Checkbox is checked
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-08-de-20261023.png" alt="Dokument Feld Das Kontrollkästchen Feld Name ist aktiviert: Boolesche" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

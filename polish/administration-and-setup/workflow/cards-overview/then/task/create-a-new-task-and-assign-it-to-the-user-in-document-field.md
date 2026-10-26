@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User in Document Field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-02-pl-20261023.png" alt="Zadanie Utwórz nowy dokument Zadanie/Powiadomienie z tytułem: Tytuł , opisem: Opis i priorytetem Priorytet , a następnie przypisz go użytkownikowi w polu dokumentu Nazwa pola . Powiadom użytkownika za pomocą wiadomości e-mail Wyślij e-mail . Jako rozwiązanie awaryjne użyj Użytkownik ." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

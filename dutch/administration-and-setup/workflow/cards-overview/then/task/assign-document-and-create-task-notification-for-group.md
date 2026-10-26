@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-07-nl-20261023.png" alt="Taak Wijs het document sequentieel toe aan en maak een Taak/Melding voor Groepen met titel: Titel , beschrijving: Beschrijving van Prioriteit prioriteit. Breng de groep op de hoogte via e-mail E-mail verzenden . Stel de toewijzingsprioriteit in van Waarde ." width="563"><figcaption></figcaption></figure>
 
 ## **Doel**
 

@@ -1,6 +1,6 @@
 # Assign Sequentially to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-09-it-20261023.png" alt="Assegnatario Assegnare il documento in sequenza al gruppo di approvvigionamento Nome del gruppo , con priorità Valore ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo**
 

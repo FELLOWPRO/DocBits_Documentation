@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User in Document Field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-02-fr-20261023.png" alt="Tâche Créer une nouvelle Tâche/Notification avec le titre: Titre , description: Description , de priorité Priorité , et l&#x27;assigner à l&#x27;utilisateur dans le champ document Nom du champ . Notifiez l&#x27;utilisateur par courrier électronique Envoyer un courriel . Utiliser Utilisateur comme solution de repli." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

@@ -25,7 +25,7 @@ Klientka i biuro zostały wygenerowane przez AI. Czynności i wyniki wyszukiwani
 
 ## Pełna prezentacja pulpitu
 
-Fikcyjna klientka z Warszawy pokazuje wyszukiwanie z operatorem AND, filtry statusu, pomoc wyszukiwania, ustawienia kolumn, statystyki i odświeżanie. Polski interfejs nagrano w DocBits z syntetycznymi danymi testowymi. Postać i głos wygenerowano za pomocą AI.
+Klientka z Warszawy pokazuje wyszukiwanie z operatorem AND, filtry statusu, pomoc wyszukiwania, ustawienia kolumn, statystyki i odświeżanie.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/pl.mp4" %}
 
@@ -41,7 +41,9 @@ Fikcyjna klientka z Warszawy pokazuje wyszukiwanie z operatorem AND, filtry stat
 
 ## Wyszukiwanie i filtrowanie dokumentów
 
-Wpisz nazwę dokumentu, numer faktury lub inną wartość biznesową i naciśnij **Enter**. Ikona filtra w wyszukiwarce pozwala wybrać status, osobę przypisaną i dokumenty wymagające ponownego uruchomienia. Zatwierdź przyciskiem **Stosować**. Usuń pojedyncze filtry albo wyczyść filtry, gdy nie możesz znaleźć dokumentu. Karty typów dokumentów i zapisane widoki również zawężają listę.
+Wpisz nazwę dokumentu, numer faktury lub inną wartość biznesową i naciśnij **Enter**. Ikona **Filtry** (trzy suwaki) na prawym końcu paska wyszukiwania pozwala wybrać **Status**, **Przypisany do** i **Wymagane ponowne uruchomienie**; zatwierdź przyciskiem **Stosować**. Usuń pojedyncze filtry albo wyczyść filtry, gdy nie możesz znaleźć dokumentu. Karty typów dokumentów i zapisane widoki również zawężają listę.
+
+Ikona **błyskawicy** na początku pola wyszukiwania otwiera selektor pól. Najpierw pokazuje **Inteligentne filtry** — gotowe wyszukiwania, takie jak **Zaległy**, **Wkrótce**, **Przypisane do mnie**, **Dzisiejsza skrzynka odbiorcza**, **Oczekiwanie na walidację** lub **Dokumenty elektroniczne** — a następnie wszystkie przeszukiwalne pola. Wybór wstawia odpowiedni warunek do pola wyszukiwania.
 
 Pasek wyszukiwania udostępnia filtry strukturalne, widok bezpośredniego zapytania oraz pomoc dotyczącą pól i składni. Korzystaj z nazw pól i przykładów podanych w pomocy. Techniczne nazwy pól nie zmieniają się wraz z językiem. Funkcje zaawansowane zależą od włączonych możliwości wyszukiwania.
 
@@ -59,7 +61,7 @@ Jeśli grupowanie jest dostępne, wybierz pole nad tabelą. Dla pól daty wybier
 
 Przycisk **+** obok kart typów dokumentów pokazuje dodatkowe typy. Zmieniaj kolejność kart przez przeciąganie. Usunięcie karty zmienia tylko widok i nie usuwa dokumentów.
 
-Otwórz koło zębate i ustawienia kolumn. Przenoś kolumny między listą ukrytych i widocznych oraz przeciągaj widoczne kolumny, aby je uporządkować. Możesz także dodać pola typu dokumentu. Zobacz [Zmiana kolumn dokumentu](change-document-columns.md).
+Otwórz koło zębate **Ustawienia zaawansowane** po prawej stronie paska wyszukiwania, a w jego menu przycisk **Ustawienia kolumn**. Przenoś kolumny między listą ukrytych i widocznych oraz przeciągaj widoczne kolumny, aby je uporządkować. Możesz także dodać pola typu dokumentu. Zobacz [Zmiana kolumn dokumentu](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns-pl.png" alt="W ustawieniach kolumn wybierzesz i uporządkujesz informacje widoczne w tabeli."><figcaption><p>W ustawieniach kolumn wybierzesz i uporządkujesz informacje widoczne w tabeli.</p></figcaption></figure>
 
@@ -75,7 +77,7 @@ Zaznacz kilka dokumentów i otwórz menu w nagłówku tabeli, aby wykonać dozwo
 
 ## Zapisywanie osobistego pulpitu
 
-Otwórz niebieski przycisk widoku pod wyszukiwarką i utwórz nowy pulpit. Nadaj nazwę i wybierz widoczność prywatną, dla wszystkich albo dla określonych grup i użytkowników. Zapisz filtry, sortowanie i kolumny dla powtarzalnych zadań.
+Otwórz przycisk widoku pod wyszukiwarką i wybierz **Utwórz nowy pulpit nawigacyjny**. Nadaj nazwę i wybierz **Widoczne tylko dla mnie**, **Widoczne dla wszystkich użytkowników** albo **Udostępnij grupom i użytkownikom**. Zapisz filtry, sortowanie i kolumny dla powtarzalnych zadań.
 
 Zapisane widoki wybierzesz z tego samego menu. Zapisuj późniejsze zmiany, gdy widok należy do Ciebie i został zmodyfikowany. Nie możesz nadpisać widoku udostępnionego przez inną osobę: utwórz własny. Udostępnienie widoku nie zwiększa dostępu do dokumentów. Zobacz [Osobiste pulpity](personal-dashboards.md).
 
@@ -93,6 +95,6 @@ Pozostałe narzędzia odświeżają listę, otwierają ustawienia zaawansowane, 
 
 Najpierw sprawdź organizację, aktywny widok, typ dokumentu, szukany tekst i filtry. Odśwież listę i sprawdź kolejne strony wyników. Jeśli funkcja nadal jest niedostępna, poproś administratora o sprawdzenie uprawnień i modułów.
 
-**Ctrl/Cmd + K** otwiera globalne szybkie wyszukiwanie; **Ctrl/Cmd + Q** odświeża pulpit; **Ctrl/Cmd + H** otwiera pomoc. Menu koła zębatego zawiera listę skrótów. Widoczny czasem licznik oczekujących dokumentów całej organizacji jest wskaźnikiem administracyjnym, a nie osobistym licznikiem zadań.
+**Ctrl/Cmd + K** otwiera globalne szybkie wyszukiwanie; **Ctrl/Cmd + Q** odświeża pulpit; **Ctrl/Cmd + H** otwiera pomoc. Menu **Ustawienia zaawansowane** zawiera listę skrótów. Widoczny czasem licznik oczekujących dokumentów całej organizacji jest wskaźnikiem administracyjnym, a nie osobistym licznikiem zadań.
 
 Używaj Ctrl w Windows/Linux i Cmd w macOS. Skróty przeglądarki lub systemu mogą mieć pierwszeństwo.

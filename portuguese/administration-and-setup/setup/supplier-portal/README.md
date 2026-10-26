@@ -1,125 +1,50 @@
 # Portal do Fornecedor
 
-## Visão geral
+O **portal do fornecedor** permite que um administrador dê aos fornecedores da sua empresa acesso ao **DocBits**. O administrador ativa o portal e configura quais fornecedores podem utilizá-lo e quais informações podem consultar.
 
-Esta página explica como ativar e usar o **Portal do Fornecedor**, bem como onde encontrar todas as configurações relevantes. O Portal do Fornecedor permite que você convide fornecedores para o **DocBits**. Depois que o acesso é concedido, os fornecedores podem fazer login para visualizar o status de seus **Pedidos de Compra** e **Faturas** diretamente no **DocBits**.
+Um fornecedor convidado regista-se e inicia sessão com a sua própria conta. Pode então consultar as informações disponibilizadas, por exemplo o estado das suas encomendas de compra e faturas. As funcionalidades disponíveis dependem da configuração da organização.
 
-## Como ativar o Portal do Fornecedor
+## Vídeo: preparar o portal de fornecedores e o acesso
 
-1.  Acesse **Configurações → Processamento de Documentos → Módulo**.
+Um administrador explica a opção do portal, a seleção do plano, a preparação de um convite e a página de registo. A ativação, o envio, o registo e a aprovação são explicados como passos separados.
 
-    <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
-2.  Na seção **Envio e Fornecedor**, ative a opção **Portal do Fornecedor**.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pt.mp4" %}
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
+[Abrir o vídeo com legendas em português e seleção de capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pt.html)
 
-## Configurações do Fornecedor
+## Admin: ativar o portal
 
-Depois que o recurso **Portal do Fornecedor** estiver ativado, uma nova seção **Configurações do Fornecedor** aparecerá na parte inferior do menu **Configurações**.
+1. Nas configurações, abra os módulos e selecione **Integração de Documentos**.
+2. Expanda **Envio e Fornecedor** e ative **Portal do Fornecedor**.
+3. Se aparecer uma janela de ativação, verifique o plano apresentado e confirme a ativação pretendida.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/portal-module-20261024-pt.png" alt="Opção do portal no módulo de envios e fornecedores. Este interruptor ativa a função para a organização."><figcaption><p>Opção do portal no módulo de envios e fornecedores. Este interruptor ativa a função para a organização.</p></figcaption></figure>
 
-[**Configurações Gerais do Fornecedor**](../../settings/supplier-setting/supplier-general-settings.md): Aqui, você pode personalizar o **Portal do Fornecedor** enviando o logotipo da sua empresa—exibido no cabeçalho de todos os modelos de e-mail—e gerenciando documentos legais como os Termos de Uso e a Política de Privacidade.
+## Admin: configurar o portal
 
-[**Modelos de E-mail**](../../settings/supplier-setting/editing-email-templates.md)**:** Aqui você pode criar e testar os modelos de e-mail de convite que serão enviados aos fornecedores convidados.
+Configure o portal da sua organização antes de enviar os primeiros convites:
 
-[**Layout do Fornecedor**](../../settings/supplier-setting/supplier-layout.md)**:** Aqui você pode criar e gerenciar os layouts que definem quais informações os novos fornecedores devem fornecer durante o processo de registro.
+- [Configurações gerais de fornecedores](../../settings/supplier-setting/supplier-general-settings.md): Campos adicionais de convite, estados, logotipo e informações de privacidade.
+- [Modelos de e-mail](../../settings/supplier-setting/editing-email-templates.md): Conteúdo e apresentação das mensagens de convite.
+- [Layout de fornecedor](../../settings/supplier-setting/supplier-layout.md): Campos para o registro de fornecedores e a gestão interna. Selecione o tipo de layout adequado.
+- [Permissões de fornecedores](../../settings/supplier-setting/supplier-permissions.md): Atribuição de funcionários internos a grupos de fornecedores. Estas responsabilidades internas são distintas do acesso próprio de cada fornecedor ao portal.
 
-[**Configuração de Exportação**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Aqui você pode definir como os dados são mapeados e sincronizados entre o **Portal do Fornecedor** e o sistema **Infor M3** usando arquivos de mapeamento ION e IDM.
+<figure><img src="../../../.gitbook/assets/portal-general-20261024-pt.png" alt="Configurações gerais de fornecedores com a opção de campos adicionais de convite."><figcaption><p>Configurações gerais de fornecedores com a opção de campos adicionais de convite.</p></figcaption></figure>
 
-[**Permissões do Fornecedor**](../../settings/supplier-setting/supplier-permissions.md): Aqui você pode configurar as permissões que os fornecedores terão dentro do **Portal do Fornecedor**. Você também pode agrupar fornecedores, facilitando o gerenciamento de acesso e configurações entre vários fornecedores.
+## Admin: convidar fornecedores
 
-Um guia detalhado de todas as Configurações do Fornecedor pode ser encontrado [aqui](../../settings/supplier-setting/).
+Abra a gestão de fornecedores. Antes de enviar um convite, verifique a empresa, o grupo de fornecedores, a pessoa de contato e o e-mail. Ao criar um fornecedor, salvar solicita o envio do convite de registro; não apenas guarda um rascunho. Para um fornecedor existente, utilize a ação de convite correspondente. Uma confirmação de envio não comprova a entrega do e-mail nem a conclusão do registro.
 
-## Painel do Fornecedor <a href="#supplier-permissions" id="supplier-permissions"></a>
+<figure><img src="../../../.gitbook/assets/portal-suppliers-20261024-pt.png" alt="Gestão interna de três empresas fictícias. Os três estados indicam aqui um registro pendente."><figcaption><p>Gestão interna de três empresas fictícias. Os três estados indicam aqui um registro pendente.</p></figcaption></figure>
 
-Você pode acessar o **Painel do Fornecedor** pelo menu à esquerda, conforme mostrado abaixo.
+<figure><img src="../../../.gitbook/assets/portal-invitation-20261024-pt.png" alt="Formulário para criar e convidar um fornecedor. Verifique a empresa, o contato e o e-mail antes de salvar."><figcaption><p>Formulário para criar e convidar um fornecedor. Verifique a empresa, o contato e o e-mail antes de salvar.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
+## Fornecedor: registrar-se e acessar o DocBits
 
-Todos os Fornecedores que você criou são exibidos aqui.
+O fornecedor abre o convite, cria ou utiliza a conta própria prevista e segue as etapas de registro configuradas. Em seguida, pode consultar as informações disponibilizadas no DocBits. O processo exato e as funções disponíveis dependem da organização.
 
-## Filtrar por Fornecedores
+[Guia de registro de fornecedores](supplier-registration.md).
 
-Você pode pesquisar fornecedores por **Nome** ou **Número**, ou usar os filtros avançados para restringir os resultados por:
+## Compreender acesso e estados
 
-* **Grupos de Fornecedores**
-* **Status**
-* **Criado em**
-
-Você também pode especificar quantos fornecedores devem ser exibidos por página.
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
-
-Além disso, você pode filtrar rapidamente pelos status **Aprovação Pendente** ou **Registro Pendente** clicando na categoria correspondente à esquerda da barra de filtr&#x6f;**.**
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
-
-## Status do Fornecedor
-
-Se você está usando o **Portal do Fornecedor**, é importante entender os diferentes status que os fornecedores podem ter. Abaixo está uma lista de todos os status de fornecedor possíveis e seus significados:
-
-* **Aberto**: Fornecedor existente que ainda não foi convidado para o portal.
-* **Registro Pendente**: O fornecedor foi convidado, mas ainda não concluiu o processo de registro.
-* **Entrada do Fornecedor Pendente**: O registro está concluído, mas são necessárias mais informações ou alterações por parte do fornecedor.
-* **Aprovação Pendente**: O fornecedor concluiu o registro e está aguardando a primeira aprovação.
-* **Aprovação de Contas a Pagar Pendente**: O fornecedor recebeu a primeira aprovação e está aguardando uma segunda aprovação (Contas a Pagar).
-* **Aprovado**: O fornecedor concluiu o processo e foi totalmente aprovado.
-* **Rejeitado**: O registro ou a aprovação do fornecedor foi rejeitado.
-
-## Ferramentas no Painel do Fornecedor
-
-À direita da barra de pesquisa, você encontrará várias ferramentas que ajudam a interagir com o painel e gerenciá-lo de forma mais eficiente.
-
-### Atualizar tabela <a href="#refresh-table" id="refresh-table"></a>
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
-
-Clique neste botão para atualizar o painel e carregar os dados e status mais recentes.
-
-### Definir colunas da tabela para a organização <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
-
-Clique neste botão para abrir um menu onde você pode gerenciar a visibilidade das colunas na tabela de pedidos de compra. Use as caixas de seleção e os botões de seta para mover colunas entre as seções visível e oculta. Você também pode reordenar as colunas arrastando e soltando os nomes das colunas. Clique em **Concluído** para salvar suas alterações.
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
-
-### Análises <a href="#analytics" id="analytics"></a>
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
-
-Ao clicar neste botão, uma nova seção será aberta mostrando quantos fornecedores estão prestes a expirar e quando.\
-Clique em qualquer categoria para aplicar um filtro e visualizar apenas esses fornecedores.
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
-
-## Criar Fornecedor e Enviar E-mail de Registro
-
-### **Para criar um novo fornecedor:**
-
-1.  Clique no ícone de mais (+) no canto superior direito.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
-2.  Preencha os campos obrigatórios e clique em **Salvar**.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
-3. O fornecedor receberá automaticamente um e-mail com um link para criar sua conta.
-
-### **Para enviar um e-mail de registro a um fornecedor existente:**
-
-1. Localize o fornecedor no **Painel do Fornecedor**.
-2. Clique no menu de três pontos na coluna **Ações**.
-3.  Selecione **Magic Link**.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
-4. Verifique os detalhes do fornecedor.
-5.  Clique em **Enviar** para enviar o link de registro por e-mail.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
-
-## Como funciona o processo de registro para o fornecedor?
-
-Após o envio de um e-mail de convite, o fornecedor deve concluir o processo de registro para acessar o **Portal do Fornecedor**.
-
-Um guia detalhado, passo a passo, sobre o processo de registro pode ser encontrado [aqui](supplier-registration.md).
+Portal ativado, convite enviado, registro concluído e aprovação concedida são estados distintos. Uma ficha de fornecedor ou dados cadastrais salvos não comprovam que o acesso ao portal está pronto. A visão do fornecedor depende das permissões atribuídas e difere da visão interna do administrador.

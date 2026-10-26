@@ -286,7 +286,7 @@ De oorspronkelijke release-aankondigingen blijven hieronder ter referentie.
 *   **Standaard Layout toepassen op alle Origins:**\
     Een nieuwe **Apply Default Layout to Origins**-knop is geïntroduceerd in het layout-configuratiescherm. Beheerders kunnen nu het standaard layout met één enkele actie naar alle origins binnen een organisatie pushen, waardoor het tijdrovende handmatige proces van het kopiëren en plakken van layout-JSON per origin vervalt. Dit is vooral nuttig bij het onboarden van nieuwe klanten waarbij meerdere origins consistent moeten worden geconfigureerd.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-nl-20261023.png" alt="Layout Builder met Nederlandse interface en het geopende dialoogvenster om de standaardlay-out op meerdere Origins toe te passen."><figcaption><p>Het dialoogvenster om de standaardlay-out toe te passen op Origins. Voorbeeldgegevens; er is niets opgeslagen.</p></figcaption></figure>
 *   **Documenttype-selectie voor FTP-import:**\
     FTP-importconfiguraties ondersteunen nu documenttype-toewijzing per map. Bij het configureren van een FTP-import kunnen gebruikers specificeren welk documenttype — zoals Factuur of Orderbevestiging — moet worden toegepast op alle documenten die uit die map worden geïmporteerd. Documenten worden automatisch geclassificeerd bij import, waardoor handmatige documenttype-toewijzing na opname overbodig wordt. Dit ondersteunt organisaties die meerdere documenttypen beheren over verschillende suborganisaties en mappen.
 

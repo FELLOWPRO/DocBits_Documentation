@@ -19,7 +19,7 @@ Der Bestellabgleich des Dokuments muss vollständig erfolgreich sein. Zusätzlic
 1. Öffnen Sie **Settings → Document Processing → Module → Purchase Order**.
 2. Aktivieren Sie **Auto Export if PO matched 100%** mit dem zugehörigen Schalter.
 
-<figure><img src="../../../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/po-match-100.png" alt=""><figcaption></figcaption></figure>
 
 3. Überwachen Sie die verarbeiteten Dokumente und den Exportstatus im zugehörigen Dashboard.
 4. Prüfen Sie, ob die Bestellkriterien sowie Validierungs-, Genehmigungs- und Exportregeln korrekt konfiguriert sind.

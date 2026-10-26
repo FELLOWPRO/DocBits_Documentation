@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-01-it-20261023.png" alt="Compito Creare un nuovo Compito/Notifica con il titolo: Titolo , description: Descrizione , con priorità Priorità e assegnata al gruppo Gruppi . Avvisare il gruppo via e-mail Invia e-mail ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

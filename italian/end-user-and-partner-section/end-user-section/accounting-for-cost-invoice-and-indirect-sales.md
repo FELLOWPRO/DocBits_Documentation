@@ -99,3 +99,34 @@ Per le fatture non abbinate automaticamente:
 3. **Revisione degli Abbinamenti**: Gli utenti possono rivedere gli abbinamenti, verificare i dettagli e vedere gli indicatori di stato.
 4. **Risoluzione delle Discrepanze**: Eventuali disallineamenti o discrepanze sono evidenziati per la revisione e correzione manuale da parte dell'utente.
 5. **Esportazione dei Dati**: I dati abbinati possono essere esportati per ulteriori elaborazioni o registrazioni.
+
+
+## Video tutorial: Ripartizione di una fattura di spesa
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/it.mp4" %}
+Ripartizione di una fattura di spesa
+{% endembed %}
+
+[Guarda con sottotitoli e capitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/it.html)
+
+Alcune etichette native possono rimanere in un’altra lingua. Gli identificatori tecnici dei campi sono conservati.
+
+Nell’interfaccia registrata, « Prenotazioni registrate » indica il totale imputato e « Importo non regolato » il resto da assegnare: queste etichette non confermano prenotazioni o pagamenti. I nomi dei conti e dei centri di costo dimostrativi sono valori configurati. Questa ripartizione non conferma alcuna registrazione nell’ERP.
+
+Per prima cosa, controllo la nostra fattura di formazione originale. Il fornitore, il numero di fattura e l'importo devono corrispondere al documento. In questo esempio, sono mille euro senza tasse. La fattura non contiene alcun ordine di acquisto.
+
+Apro la contabilizzazione e lavoro con la ripartizione in base all'importo totale. I conti CoGe e i centri di costo disponibili sono stati configurati in precedenza dal nostro amministratore. Scelgo solo valori che hanno senso a livello aziendale per questa fattura.
+
+Con la funzione di ripartizione, creo due sottorighe. DocBits inizia qui con una distribuzione uniforme. Ma per il nostro esempio, mi servono il sessanta e il quaranta percento. L'importo originale della fattura rimane di mille euro.
+
+Per entrambe le sottorighe, seleziono il conto CoGe preparato per i servizi d'ufficio. La prima riga appartiene al centro di costo operativo, la seconda all'amministrazione. Il centro di costo è un campo obbligatorio in questo esempio. Aggiungo anche un testo contabile chiaro.
+
+Nella prima riga, inserisco il sessanta percento e confermo con Invio. Aspetto finché l'importo non mostra seicento euro. Poi confermo il quaranta percento nella seconda riga e aspetto i quattrocento euro. È così che controllo ogni ricalcolo prima di procedere.
+
+Ora controllo insieme i due importi, i conti CoGe e i centri di costo. Seicento più quattrocento fa mille euro. Anche il totale registrato deve mostrare mille euro e il saldo rimanente deve essere zero. Chiarisco qualsiasi differenza nei totali prima di salvare.
+
+<figure><img src="../../.gitbook/assets/customer-totals-it-accounting-email-v2.png" alt="Centri di costo con un totale verificato di 1.000 euro"><figcaption><p>Centri di costo con un totale verificato di 1.000 euro</p></figcaption></figure>
+
+Salvo la contabilizzazione e aspetto il riscontro. Successivamente, ricarico di nuovo la fattura. Entrambi i centri di costo, le percentuali e gli importi sono ancora lì. Controllo anche il totale e il saldo rimanente dopo il ricaricamento.
+
+<figure><img src="../../.gitbook/assets/customer-save-it-accounting-email-v2.png" alt="Imputazione salvata e verificata dopo la riapertura"><figcaption><p>Imputazione salvata e verificata dopo la riapertura</p></figcaption></figure>

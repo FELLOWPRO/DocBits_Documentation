@@ -4,52 +4,52 @@
 
 <figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2.png" alt="Calculate Columns with, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## **Purpose:**
+## Purpose:
 
-The **"Calculate Columns in Table"** workflow card is used to perform calculations between columns in a selected table. It allows users to select columns, apply a mathematical operation, and store the result in a specified result column.
+This workflow card calculates a value from two columns of a table on the document, row by row, and saves the result in a result column. It can be used, for example, to calculate line totals from quantity and unit price.
 
-## **Components of the Card:**
+## Admin video:
 
-1. **Table Name**
-   * **Description:** Specifies the **table** in which the columns will be calculated.
-   * **Detail:** A dropdown list of all available **tables** is provided for selection.
-2. **Column Name (1st Column)**
-   * **Description:** Specifies the **first column** to be involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/en.mp4" %}
+
+[Watch with English subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/en.html) · [Read the transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/en.txt)
+
+## Components of the Card:
+
+1. **Table**
+   * **Description:** The table on the document the calculation runs in.
+2. **First Column**
+   * **Description:** The column with the first value of each row.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be applied between the selected columns.
    * **Options:**
-     * **Add (+):** Adds the value of the second column to the value of the first column.
-     * **Subtract (-):** Subtracts the value of the second column from the value of the first column.
-     * **Multiply (\*):** Multiplies the value in the first column by the value in the second column.
-     * **Divide (/):** Divides the value in the first column by the value in the second column.
-4. **Column Name (2nd Column)**
-   * **Description:** Specifies the **second column** to be involved in the calculation.
-   * **Detail:** A list of available **columns** is provided for selection.
+     * **+** adds the second value to the first.
+     * **-** subtracts the second value from the first.
+     * **\*** multiplies the two values.
+     * **/** divides the first value by the second.
+4. **Second Column**
+   * **Description:** The column with the second value of each row.
 5. **Result Column**
-   * **Description:** Specifies the **column** where the result of the calculation will be stored.
-   * **Detail:** A list of available **columns** is provided where the calculated value will be saved.
+   * **Description:** The column the result of each row is saved in.
+   * **Detail:** The name is saved in capital letters, with spaces replaced by underscores (`total amount` becomes `TOTAL_AMOUNT`). If the column does not exist yet, the card adds it; if it exists, its values are replaced.
 
-## **Functionality:**
+Versions 1 and 2 of the card have the same settings and work the same way.
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Column Calculation:**\
-  The card performs the selected mathematical operation between the two chosen columns.
-* **Result Storage:**\
-  The result of the calculation is stored in the selected **result column**.
+## Functionality:
 
-## **Setup and Configuration:**
+* **Calculation:** For every row of the table, the card reads the two columns (capitalisation of the column names does not matter), applies the operation and writes the result into the result column. Results are rounded to four decimal places. Afterwards the document is saved with the new values.
+  * An empty or missing value counts as `0`. If both values of a row are empty, the result of that row stays empty.
+  * A division by zero leaves the result of that row empty.
+  * With **+**, two values that are not numbers are joined with a space instead of added. With the other operations, a value that is not a number causes an error, and no results are saved.
+* **Action Execution:** If the calculation and the save succeed, the workflow continues with the next cards. If the table does not exist on the document, a value cannot be calculated or the document cannot be saved, the card reports an error in the workflow log.
+* **Test Card:** When the card is run with **Test Card**, the calculation is only simulated and the document is not changed.
 
-* **Select Table:**\
-  Choose the **table** where the columns will be calculated.
-* **Choose Columns:**\
-  Select the **first column** and **second column** that will be used in the calculation.
-* **Select Operation:**\
-  Choose the mathematical operation (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) to be applied between the columns.
-* **Select Result Column:**\
-  Choose the **result column** where the calculation will be stored.
+## Setup and Configuration:
 
-## **Conclusion:**
+* The card can be added as a Then action from the **Table** category. Then the table, the two columns, the operation and the result column are selected.
+* **Example:** Table `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, result column `TOTAL_AMOUNT`. A row with quantity 2 and unit price 10 gets 20, a row with 3 and 4 gets 12.
+* Because an empty value counts as `0`, a missing price gives a result of `0`. Checking that the input columns are filled, for example with a condition before this card, can help to avoid wrong totals.
+* For subtraction and division, the order of the two columns matters.
 
-The **"Calculate Columns in Table"** workflow card enables users to perform dynamic calculations between columns in a table, and store the results in a designated column. The card offers flexibility to apply different mathematical operations and ensures the result is stored in the specified column.
+## Conclusion:
+
+The "Calculate Columns with" workflow card adds calculated values to table rows automatically. Line totals and similar values are available for the following cards and for the export without manual calculation.

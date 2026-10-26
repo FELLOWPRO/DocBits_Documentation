@@ -63,3 +63,24 @@ If both options are enabled, **DocBits** will perform extraction in the followin
 **Rules Extraction → AI Extraction**\
 \
 <mark style="color:red;">**Note**</mark>: For best results and consistent behavior, enable both options. This allows **DocBits** to use both rule-based and AI-based methods in combination during header extraction.
+
+## Extraction Insights
+
+At the bottom of the OCR settings page, the **Extraction Insights** section contains one switch, **Show extraction insights panel**. It is off by default and applies to the whole organisation.
+
+When you turn it on, the field validation page gets an extra icon (tooltip **Show extraction insights**) that opens the **Extraction insights** panel. The panel explains how each field of the open document was extracted, so users can see why DocBits chose a value:
+
+* **Extraction method** — a label on every field shows how the value was found: **Trained rule**, **AI extracted**, **Calculated** (computed from the supplier lookup) or **From e-invoice** (read directly from the XML of an electronic document).
+* **Confidence** — each field shows a confidence level from **Low confidence** and **Worth checking** up to **Likely correct**, **Confident** and **Highly confident**. Use **Sort by → Needs attention** to list the fields that deserve a second look first.
+* **Technical details** — **Show technical details** reveals the matched rule, its score and the components behind it (**Label match**, **Context pattern**, **Coordinates**, **Final confidence**), the training history and the competing candidate rules.
+* **Filter and sort** — type in **Filter fields…** to narrow the list, and sort by document order, field name, needs attention or most confident.
+* **Refresh** — reloads the insights of the current document.
+* **Clean up duplicates** — appears when fields have more than one rule. After you confirm, DocBits keeps the winning rule of each field and deletes the duplicates. An administrator can restore deleted rules.
+
+If a document has no extraction data yet, the panel shows **No extraction data available**.
+
+{% hint style="info" %}
+The panel only explains an extraction that already happened. Turning it on or off does not change how documents are processed.
+{% endhint %}
+
+The limit for the number of pages that are OCRed is not part of this page. It is the **Pages to process** setting in [Classification and Extraction](classification-and-extraction/README.md#document-processing).

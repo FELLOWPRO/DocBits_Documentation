@@ -1,5 +1,13 @@
 # Aanmeldingsanalyses
 
+## Videotutorial: Bedrijf, abonnement en audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/nl.mp4" %}
+Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
+{% endembed %}
+
+De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
+
 Met **Aanmeldingsanalyses** krijgen beheerders een alleen-lezen overzicht voor de hele organisatie van *wanneer* en *hoe vaak* mensen zich bij DocBits aanmelden. Het beantwoordt vragen als "stijgt het aantal aanmeldingen?", "hoeveel verschillende gebruikers waren deze maand actief?" en "wanneer treden de gebruikspieken op?" — zonder de inloggegevens of persoonlijke gegevens van een individuele gebruiker prijs te geven.
 
 > **Toegang:** Open **Instellingen → Organisatie & Toegang → Gebruikers** en klik op de knop **Aanmeldingsanalyses** rechtsboven (`/settings/login-analytics`).

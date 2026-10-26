@@ -38,12 +38,13 @@ PO Matching & Validation settings.
 
 ## AI Dashboard
 
+These toggles are grouped under the **AI Dashboard** section on the **Settings → Module → Dashboards & Analytics** page. **AI Document Warehouse** requires a Clickhouse subscription; **Clickhouse Direct Access** and **Supplier Statistics** only appear after **AI Document Warehouse** is turned on.
+
 | Setting | Description |
 |---------|-------------|
 | **AI Document Warehouse** | AI-powered document warehouse analytics. |
-| **Dashboard v2** | Updated dashboard with improved features. |
 | **Clickhouse Direct Access** | Enables direct Clickhouse database access. |
-| **Supplier Statistics** | Enables supplier-level statistics and reporting. |
+| **Supplier Statistics** | Enables supplier-level statistics and reporting. See the [Supplier Statistics](../../../../end-user-and-partner-section/end-user-section/supplier-statistics.md) user guide. |
 
 ## Shipping & Supplier
 

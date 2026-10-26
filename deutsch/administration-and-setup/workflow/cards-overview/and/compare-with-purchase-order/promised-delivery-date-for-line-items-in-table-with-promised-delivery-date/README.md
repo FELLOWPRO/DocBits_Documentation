@@ -1,6 +1,6 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../../.gitbook/assets/And1.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-07-de-20261023.png" alt="Mit Bestellung vergleichen Beliebig/Alle zugesagte(r) Liefertermin(e) für Positionen in Tabelle Operator Liefertermin laut Bestellung, mit Wert Tagen Toleranz und Erlaubte Toleranztage akzeptierten Toleranztagen" width="375"><figcaption></figcaption></figure>
 
 ## Zweck:
 

@@ -1,6 +1,6 @@
 # Field is
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-00-de-20261023.png" alt="Dokument Feld Dokumentenfeld Feld Name ist Feld Status" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

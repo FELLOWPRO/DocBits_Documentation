@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-07-pl-20261023.png" alt="Zadanie Przypisz dokument sekwencyjnie i utwórz Zadanie/Powiadomienie dla Grupy z tytułem: Tytuł , opisem: Opis o priorytecie Priorytet . Powiadom grupę za pomocą wiadomości e-mail Wyślij e-mail . Ustaw priorytet przypisania na Wartość" width="563"><figcaption></figcaption></figure>
 
 ## **Cel**
 

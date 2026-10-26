@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-07-pt-20261023.png" alt="Tarefa Atribua o documento sequencialmente e crie um Tarefa/Notificação para Grupos com título: Título , descrição: Descrição de Prioridade prioridade. Notifique o grupo por e-mail Enviar e-mail . Defina a prioridade de atribuição de Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

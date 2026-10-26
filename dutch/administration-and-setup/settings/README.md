@@ -1,5 +1,13 @@
 # Instellingen
 
+## Videotutorial: Instellingenoverzicht en modules
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/nl.mp4" %}
+Instellingenoverzicht en modules in DocBits
+{% endembed %}
+
+De video toont de vijf groepen van het Instellingenoverzicht, de zoekfunctie en snelkoppelingen en wat de drie modulepagina's regelen.
+
 <figure><img src="../../.gitbook/assets/site-extra-settings-overview-nl.png" alt="Organisatie-instellingen met afgeschermde identificatiegegevens. Het getoonde land is een ingestelde waarde."><figcaption><p>Organisatie-instellingen met afgeschermde identificatiegegevens. Het getoonde land is een ingestelde waarde.</p></figcaption></figure>
 
 Het gedeelte Instellingen is uw centrale punt voor het configureren van DocBits. Het is ingedeeld in vijf hoofdonderdelen:

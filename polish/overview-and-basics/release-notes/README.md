@@ -244,7 +244,7 @@ Oryginalne ogłoszenia dotyczące wydań pozostają poniżej w celach referencyj
 *   **Zastosuj domyślny Layout do wszystkich Origins:**\
     Nowy przycisk **Apply Default Layout to Origins** został wprowadzony na ekranie konfiguracji layoutu. Administratorzy mogą teraz przekazać domyślny layout do wszystkich origins w organizacji jedną akcją, eliminując czasochłonny ręczny proces kopiowania i wklejania JSON layoutu dla każdego origin osobno. Jest to szczególnie przydatne podczas wdrażania nowych klientów, gdzie wiele origins musi być skonfigurowanych spójnie.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-pl-20261023.png" alt="Kreator układów z polskim interfejsem i otwartym oknem do zastosowania domyślnego układu do wielu Origins."><figcaption><p>Okno zastosowania domyślnego układu do Origins. Dane przykładowe; nic nie zapisano.</p></figcaption></figure>
 *   **Wybór typu dokumentu dla importu FTP:**\
     Konfiguracje importu FTP obsługują teraz przypisywanie typu dokumentu na poziomie folderu. Podczas konfigurowania importu FTP użytkownicy mogą określić, jaki typ dokumentu — taki jak Faktura lub Potwierdzenie Zamówienia — powinien być stosowany do wszystkich dokumentów importowanych z danego folderu. Dokumenty są automatycznie klasyfikowane przy imporcie, eliminując potrzebę ręcznego przypisywania typu dokumentu po pozyskaniu. Wspiera to organizacje zarządzające wieloma typami dokumentów w różnych podorganizacjach i folderach.
 

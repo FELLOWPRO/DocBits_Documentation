@@ -1,5 +1,13 @@
 # 公司信息
 
+## 视频教程：公司、订阅与审计
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/zh.mp4" %}
+DocBits 中的公司信息、订阅计划与审计日志
+{% endembed %}
+
+视频演示了公司信息和偏好、订阅计划、登录活动以及审计日志。
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-zh.png" alt="公司信息；组织字段值已隐藏。 “姓名”在此表示公司名称，“节省”表示保存；公司资料已隐藏，本例未保存。"><figcaption><p>公司信息；组织字段值已隐藏。 “姓名”在此表示公司名称，“节省”表示保存；公司资料已隐藏，本例未保存。</p></figcaption></figure>
 
 公司信息页面用于管理公司资料、偏好设置和订阅详情。页面分为以下几个部分：

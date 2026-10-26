@@ -1,6 +1,6 @@
 # Calculate in
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-table-02-es-20261023.png" alt="Cuadro Calcular en Nombre de la tabla : Nombre de la columna Operador matemático Nombre de la columna , si columna column name dependency coincide con un patrón regex de Python Patrón Regex y añadir el resultado en Columna de resultados" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

@@ -12,7 +12,9 @@ Les anciens noms `ACTION_ASSIGN_TO_USER` et `CONDITION_TASK_STATUS` sont des dé
 
 [Cartes de tâches actuelles](../then/task/README.md) · [Protections d’export et tâches en attente](../cards-overview/export-cards-guide.md).
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-fr.png" alt="Illustration de la bibliothèque de cartes. La création de tâches, l’affectation de documents et les courriels aux groupes utilisent des catégories distinctes ; choisissez la version disponible dans votre organisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Illustration de la bibliothèque de cartes. La création de tâches, l’affectation de documents et les courriels aux groupes utilisent des catégories distinctes ; choisissez la version disponible dans votre organisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+La vue partielle ci-dessous présente une carte de création de tâche de la catégorie **Tâche**, ouverte depuis le groupe **Dans ce cas....**. La carte est affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres **Tâche/Notification**, **Titre**, **Description**, **Priorité**, **Utilisateur** et **Envoyer un courriel** restent à renseigner pour définir la création, l’affectation et la notification.
+
+<figure><img src="../../../.gitbook/assets/workflow-task-create-library-current-fr.png" alt="Carte de création de tâche dans la bibliothèque « Tâche », avant sa sélection et sa configuration. Les paramètres de création, d’affectation et de notification restent à renseigner."><figcaption><p>Carte de création de tâche dans la bibliothèque « Tâche », avant sa sélection et sa configuration. Les paramètres de création, d’affectation et de notification restent à renseigner.</p></figcaption></figure>
 
 ***
 

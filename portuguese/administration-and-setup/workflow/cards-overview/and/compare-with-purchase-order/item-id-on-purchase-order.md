@@ -1,6 +1,6 @@
 # Item Id on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-15-pt-20261023.png" alt="Comparar com a ordem de compra Qualquer/Todos id do item no pedido de compra Operador id do item no documento" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

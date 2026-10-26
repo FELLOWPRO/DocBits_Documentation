@@ -6,6 +6,8 @@ description: "Distinguir eventos, condiciones, orden de ejecución, pruebas y ac
 
 Un workflow necesita un motivo de ejecución y condiciones coincidentes. **El tipo de documento es Factura** selecciona documentos; no significa que cualquier cambio de una factura inicie otra ejecución automáticamente.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-es-v3.png" alt="Ejemplos conceptuales: una secuencia estándar lineal ejecuta acciones solo cuando se cumplen sus condiciones; de lo contrario, esa secuencia se detiene. Un nodo de condición avanzado puede utilizar rutas de resultado configuradas por separado. Una ruta continúa solo si está conectada. Se omiten las ramas estándar opcionales; no es una captura de la interfaz de DocBits."><figcaption>Ejemplos conceptuales: una secuencia estándar lineal ejecuta acciones solo cuando se cumplen sus condiciones; de lo contrario, esa secuencia se detiene. Un nodo de condición avanzado puede utilizar rutas de resultado configuradas por separado. Una ruta continúa solo si está conectada. Se omiten las ramas estándar opcionales; no es una captura de la interfaz de DocBits.</figcaption></figure>
+
 ## Del evento a la acción
 
 1. Compruebe la organización, los permisos y el módulo Workflow, además de la habilitación Advanced cuando corresponda.

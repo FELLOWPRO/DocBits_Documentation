@@ -63,3 +63,32 @@ Controlla sotto-organizzazione, cartella, casella condivisa facoltativa, cartell
 ### Registri di importazione
 
 I registri di connessione aiutano a indagare i problemi di comunicazione; quelli di importazione mostrano gli esiti precedenti. Il registro aggregato della sezione e-mail comprende le connessioni configurate. Puoi filtrare per oggetto o mittente, ordinare tramite le intestazioni e cambiare l’ordine delle colonne. Analizza il messaggio prima di ripetere l’importazione.
+
+
+## Video tutorial: Casella di posta e ricerca errori
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/it.mp4" %}
+Casella di posta e ricerca errori
+{% endembed %}
+
+[Guarda con sottotitoli e capitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/it.html)
+
+Alcune etichette native possono rimanere in un’altra lingua. Gli identificatori tecnici dei campi sono conservati.
+
+Sotto impostazioni e importazione, utilizzo l'indirizzo in entrata di DocBits in questo esempio. Una casella di posta collegata direttamente è un metodo di importazione separato. Per la formazione, lavoro in un'organizzazione demo dedicata con fatture sintetiche. Le notifiche rimangono disattivate.
+
+Per prima cosa controllo l'indirizzo di ricezione mostrato e l'ambito. L'indirizzo appartiene esattamente a questa organizzazione e al suo ambiente. Per un'altra azienda o un ambiente di produzione, utilizzo sempre l'indirizzo effettivamente mostrato lì.
+
+Qui limito l'ingresso al nostro mittente di test approvato. Seleziono l'assegnazione a una sotto-organizzazione solo se fa parte del processo previsto. Salvo l'impostazione e la apro di nuovo. Il mittente consentito è stato mantenuto; le e-mail di risposta automatica restano disattivate in questa formazione.
+
+<figure><img src="../../../../.gitbook/assets/admin-save-it-accounting-email-v2.png" alt="Mittente consentito salvato con le notifiche disattivate"><figcaption><p>Mittente consentito salvato con le notifiche disattivate</p></figcaption></figure>
+
+Per questa formazione, un messaggio di test è stato inviato direttamente all'elaborazione delle e-mail in entrata di DocBits. Questo test non conferma la consegna di e-mail esterne. Nel registro, controllo l'oggetto, il mittente e l'allegato importato. Poi verifico il documento effettivamente creato.
+
+Apro il documento corrispondente e confronto l'allegato PDF con la fattura in DocBits. Il nome del file, il numero di fattura, il fornitore e l'importo devono corrispondere. Un'importazione riuscita non dice nulla su un'approvazione o una registrazione ERP.
+
+Un secondo test controllato proviene da un mittente non autorizzato. Nel registro, cerco specificamente questo ingresso e attivo il filtro degli errori. I dettagli indicano il mittente rifiutato. Controllo la causa utilizzando l'oggetto e l'ID di tracciamento, invece di avviare l'importazione più volte.
+
+In un caso reale, chiarisco prima se questo mittente è persino autorizzato. Una modifica approvata all'elenco dei mittenti viene salvata e controllata di nuovo. Successivamente, verifico un nuovo ingresso di test univoco fino al documento creato. Per gli errori tecnici, consegno l'ID di tracciamento e il messaggio di errore concreto.
+
+<figure><img src="../../../../.gitbook/assets/admin-error-it-accounting-email-v2.png" alt="Importazione non riuscita con allegato, motivo e identificativo di tracciamento"><figcaption><p>Importazione non riuscita con allegato, motivo e identificativo di tracciamento</p></figcaption></figure>

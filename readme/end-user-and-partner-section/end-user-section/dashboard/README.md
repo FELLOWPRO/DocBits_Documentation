@@ -25,7 +25,7 @@ La cliente e l’ufficio sono generati con IA. Le azioni e i risultati di ricerc
 
 ## Visita completa della dashboard
 
-La cliente immaginaria di Milano mostra la ricerca combinata con AND, i filtri di stato, la guida alla ricerca, le impostazioni delle colonne, le statistiche e l’aggiornamento. L’interfaccia italiana è stata registrata in DocBits con dati di prova sintetici. Il personaggio e la voce sono generati dall’IA.
+La cliente di Milano mostra la ricerca combinata con AND, i filtri di stato, la guida alla ricerca, le impostazioni delle colonne, le statistiche e l’aggiornamento.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/it.mp4" %}
 
@@ -41,7 +41,9 @@ La cliente immaginaria di Milano mostra la ricerca combinata con AND, i filtri d
 
 ## Cercare e filtrare i documenti
 
-Inserisci un nome di documento, un numero di fattura o un altro valore aziendale e premi **Invio**. L’icona dei filtri nella ricerca permette di scegliere **Stato**, **Assegnato a** e i documenti che richiedono un riavvio. Conferma con **Applicare**. Rimuovi singoli filtri o cancella i filtri se un documento sembra mancare. Anche le schede dei tipi di documento e le viste salvate restringono l’elenco.
+Inserisci un nome di documento, un numero di fattura o un altro valore aziendale e premi **Invio**. L’icona **Filtri** (tre cursori) all’estremità destra della barra di ricerca permette di scegliere **Stato**, **Assegnato a** e **Riavvio richiesto**; conferma con **Applicare**. Rimuovi singoli filtri o cancella i filtri se un documento sembra mancare. Anche le schede dei tipi di documento e le viste salvate restringono l’elenco.
+
+L’icona **fulmine** all’inizio del campo di ricerca apre il selettore dei campi. Mostra prima i **Filtri rapidi** — ricerche pronte come **Scaduto**, **In scadenza**, **Assegnato a me**, **Posta in arrivo di oggi**, **In attesa di validazione** o **Documenti elettronici** — e poi tutti i campi ricercabili. Selezionando una voce, la condizione corrispondente viene inserita nel campo di ricerca.
 
 La barra offre filtri strutturati, una vista per la query diretta e una guida a campi e sintassi. Riprendi nomi dei campi ed esempi dalla guida. I nomi tecnici non cambiano con la lingua. Le funzioni avanzate dipendono dalle capacità di ricerca abilitate.
 
@@ -59,7 +61,7 @@ Se il raggruppamento è disponibile, seleziona un campo sopra la tabella. Per i 
 
 Usa **+** accanto alle schede per mostrare altri tipi di documento. Riordina le schede trascinandole. Rimuovere una scheda cambia solo la vista e non elimina documenti.
 
-Apri l’ingranaggio e le impostazioni delle colonne. Sposta le colonne tra gli elenchi nascosti e visibili e trascina quelle visibili per ordinarle. Puoi aggiungere anche campi di un tipo di documento. Vedi [Modificare le colonne del documento](change-document-columns.md).
+Apri l’ingranaggio **Impostazioni avanzate** a destra della barra di ricerca, poi il pulsante **Impostazioni delle colonne** nel suo menu. Sposta le colonne tra gli elenchi nascosti e visibili e trascina quelle visibili per ordinarle. Puoi aggiungere anche campi di un tipo di documento. Vedi [Modificare le colonne del documento](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns-it.png" alt="Scegli e ordina le informazioni della tabella nelle impostazioni delle colonne."><figcaption><p>Scegli e ordina le informazioni della tabella nelle impostazioni delle colonne.</p></figcaption></figure>
 
@@ -75,7 +77,7 @@ Seleziona più documenti con le caselle e apri il menu nell’intestazione per l
 
 ## Salvare una dashboard personale
 
-Apri il pulsante blu della vista sotto la ricerca e crea una nuova dashboard. Assegna un nome e scegli se renderla privata, visibile a tutti oppure condivisa con gruppi e utenti specifici. Salva filtri, ordinamento e colonne per attività ricorrenti.
+Apri il pulsante della vista sotto la ricerca e scegli **Crea una nuova Dashboard**. Assegna un nome e scegli **Visibile solo a me**, **Visibile a tutti gli utenti** oppure **Condividi con gruppi e utenti**. Salva filtri, ordinamento e colonne per attività ricorrenti.
 
 Seleziona le viste salvate dallo stesso menu. Salva le modifiche successive quando la vista è tua ed è stata modificata. Non puoi sovrascrivere una vista condivisa con te: creane una tua. Condividere una vista non concede ulteriori autorizzazioni sui documenti. Vedi [Dashboard personali](personal-dashboards.md).
 
@@ -93,6 +95,6 @@ Gli altri strumenti aggiornano l’elenco, aprono le impostazioni avanzate, avvi
 
 Controlla prima organizzazione, vista attiva, tipo di documento, testo cercato e filtri. Aggiorna l’elenco e consulta le altre pagine. Se una funzione manca ancora, chiedi all’amministratore di verificare autorizzazioni e moduli.
 
-**Ctrl/Cmd + K** apre la ricerca rapida globale; **Ctrl/Cmd + Q** aggiorna la dashboard; **Ctrl/Cmd + H** apre la guida. Il menu dell’ingranaggio contiene i riferimenti alle scorciatoie. Il contatore dei documenti in attesa dell’intera organizzazione, se visibile, è un indicatore per amministratori e non il tuo contatore personale di attività.
+**Ctrl/Cmd + K** apre la ricerca rapida globale; **Ctrl/Cmd + Q** aggiorna la dashboard; **Ctrl/Cmd + H** apre la guida. Il menu **Impostazioni avanzate** contiene i riferimenti alle scorciatoie. Il contatore dei documenti in attesa dell’intera organizzazione, se visibile, è un indicatore per amministratori e non il tuo contatore personale di attività.
 
 Usa Ctrl su Windows/Linux e Cmd su macOS. Le scorciatoie del browser o del sistema possono avere la precedenza.

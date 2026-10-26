@@ -33,10 +33,10 @@ Gli esempi mostrano risultati attesi. Per verificare la validità del numero ste
 
 ## Video di esempio con un amministratore
 
-Quando uso questa scheda, dove trovarla e come individuare i numeri di fattura mancanti. L’amministratore, l’ufficio e la voce sono sintetici; la dimostrazione mostra l’interfaccia reale di DocBits di un account di prova. Gli esempi mostrano i risultati attesi.
+Quando uso questa scheda, dove trovarla e come individuare i numeri di fattura mancanti. Gli esempi mostrano i risultati attesi.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/it.mp4" %}
 
-[Apri il video con sottotitoli italiani](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/it.html)
+[Apri il video con sottotitoli italiani](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/it-theme-v4.html)
 
 [Leggi la trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/it.txt)

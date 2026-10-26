@@ -10,7 +10,7 @@ Approvare o rifiutare una fattura
 
 Viene mostrata l'applicazione reale; la formulazione delle opzioni può dipendere dalla versione distribuita.
 
-Usa l’approvazione per registrare la tua decisione dopo aver verificato il contenuto di una fattura già validata. Hai bisogno dell'accesso al documento e dell'autorizzazione per la sua attuale fase di approvazione. Il video utilizza un normale account di verifica, fatture sintetiche preparate e una presentatrice fittizia.
+Usa l’approvazione per registrare la tua decisione dopo aver verificato il contenuto di una fattura già validata. Hai bisogno dell'accesso al documento e dell'autorizzazione per la sua attuale fase di approvazione. Il video utilizza un normale account di verifica.
 
 ## Rivedi e decidi
 

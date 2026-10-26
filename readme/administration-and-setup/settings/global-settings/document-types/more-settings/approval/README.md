@@ -10,7 +10,7 @@ Configurare e testare le approvazioni delle fatture
 
 Viene mostrata l'applicazione reale; la formulazione delle opzioni può dipendere dalla versione distribuita.
 
-Configura l'approvazione per il tipo di documento utilizzato dal tuo processo. Identifica i verificatori previsti e decidi se hai bisogno di una seconda revisione indipendente. Il video utilizza un tipo di test separato, fatture sintetiche e account di verifica temporanei senza privilegi amministrativi; il suo presentatore è fittizio.
+Configura l'approvazione per il tipo di documento utilizzato dal tuo processo. Identifica i verificatori previsti e decidi se hai bisogno di una seconda revisione indipendente. Il video utilizza un tipo di documento separato e account di verifica temporanei senza privilegi amministrativi.
 
 ## Configura il tipo di documento
 

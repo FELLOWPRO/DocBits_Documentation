@@ -1,5 +1,13 @@
 # Informazioni aziendali
 
+## Video tutorial: Società, abbonamento e controllo
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/it.mp4" %}
+Informazioni sulla società, piano di abbonamento e registri di controllo in DocBits
+{% endembed %}
+
+Il video mostra le informazioni e le preferenze della società, il piano di abbonamento, l'attività di accesso e i registri di controllo.
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-it.png" alt="Informazioni sull’azienda con i valori dell’organizzazione nascosti."><figcaption><p>Informazioni sull’azienda con i valori dell’organizzazione nascosti.</p></figcaption></figure>
 
 La pagina Company Information ti permette di gestire il profilo della tua azienda, le preferenze e i dettagli dell'abbonamento. È organizzata nelle sezioni seguenti:

@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-00-fr-20261023.png" alt="Tâche Attribuer une tâche avec le titre: Titre , description: Description de priorité Priorité et l&#x27;assigner à Bénéficiaire . Les avertir par courrier électronique Envoyer un courriel . Utiliser Utilisateur comme solution de repli si le destinataire n&#x27;est pas trouvé." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-09-fr-20261023.png" alt="Tâche Attribuez le document de manière séquentielle et créez un Tâche/Notification avec un titre: Titre , description: Description et priorité: Priorité à Type de cessionnaire retour de la table de décision. Notifiez-les par courrier électronique: Envoyer un courriel . Fixez une priorité d&#x27;affectation de Valeur ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif**
 

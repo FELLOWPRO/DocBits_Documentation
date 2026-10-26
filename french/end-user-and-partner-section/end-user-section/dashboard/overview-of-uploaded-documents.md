@@ -10,6 +10,6 @@ Si le regroupement est disponible, sélectionnez un champ au-dessus du tableau. 
 
 Le bouton **+** à côté des onglets permet d’afficher d’autres types de document. Réorganisez les onglets en les faisant glisser. Retirer un onglet modifie uniquement la vue et ne supprime aucun document.
 
-Ouvrez l’engrenage, puis les paramètres des colonnes. Déplacez les colonnes entre les listes masquées et visibles et faites glisser les colonnes visibles pour les ordonner. Vous pouvez aussi ajouter les champs d’un type de document. Voir [Modifier les colonnes de document](change-document-columns.md).
+Ouvrez l’engrenage **Paramètres avancés** à droite de la barre de recherche, puis le bouton **Paramètres de colonnes** de son menu. Déplacez les colonnes entre les listes masquées et visibles et faites glisser les colonnes visibles pour les ordonner. Vous pouvez aussi ajouter les champs d’un type de document. Voir [Modifier les colonnes de document](change-document-columns.md).
 
 Le [guide du tableau de bord](README.md) présente la recherche, les actions et les vues enregistrées.

@@ -18,6 +18,7 @@
 * [Yol Haritası](overview-and-basics/roadmap.md)
 * [End User Section](<README (1).md>)
   * [Global Hızlı Arama](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Videolar ve Eğitimler](end-user-and-partner-section/end-user-section/videos-and-tutorials.md)
   * [Site Haritası](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Özelleştirilebilir Kenar Çubuğu](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Fikir Panosu](end-user-and-partner-section/end-user-section/idea-board.md)

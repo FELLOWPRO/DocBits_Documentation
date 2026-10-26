@@ -12,7 +12,7 @@ Deze workflowkaart start een workflow (trigger) wanneer de status van een levera
    * **Beschrijving:** Bepaalt of de nieuwe leveranciersstatus een van de geselecteerde statussen hoort te zijn of geen van hen.
    * **Opties:**
      * **Is:** De voorwaarde is waar als de nieuwe status een van de geselecteerde statussen is.
-     * **Is niet:** De voorwaarde is waar als de nieuwe status geen van de geselecteerde statussen is.
+     * **Is niet:** De voorwaarde is waar als een wijziging van de leveranciersstatus de workflow heeft gestart en de nieuwe status geen van de geselecteerde statussen is.
 2. **Status**
    * **Beschrijving:** De leveranciersstatussen waarmee de nieuwe status wordt vergeleken.
    * **Opties:** Een of meer van:
@@ -28,10 +28,10 @@ Deze workflowkaart start een workflow (trigger) wanneer de status van een levera
 * **Voorwaarde-evaluatie:** De kaart vergelijkt de aan de workflow doorgegeven status met de op de kaart geselecteerde statussen.
 * **Actie-uitvoering:**
   * **True-voorwaarde:**\
-    Met **Is** is de nieuwe status een van de geselecteerde statussen, met **Is niet** is ze dat niet. De workflow gaat verder met de volgende kaarten.
+    Met **Is** is de nieuwe status een van de geselecteerde statussen. Met **Is niet** heeft een wijziging van de leveranciersstatus de workflow gestart en is de nieuwe status geen van de geselecteerde statussen. De workflow gaat verder met de volgende kaarten.
   * **False-voorwaarde:**\
     Is niet aan de voorwaarde voldaan, dan is niet aan de kaart voldaan en worden de stappen erna niet uitgevoerd.
-* **Opmerking over "Is niet":** Een inkooporderimport start ook alle documentonafhankelijke workflows, inclusief workflows met deze kaart. Een inkooporderimport geeft geen leveranciersstatus door, dus met **Is niet** maakt ook een inkooporderimport de kaart waar en wordt de workflow uitgevoerd. Door **Is niet** met verdere voorwaarden te combineren, kan de workflow tot leveranciersgebeurtenissen worden beperkt.
+* **Andere documentonafhankelijke gebeurtenissen:** Een inkooporderimport start ook alle documentonafhankelijke workflows, inclusief workflows met deze kaart. Zo'n run voldoet met geen van beide operators aan de kaart, dus de stappen erna worden alleen uitgevoerd bij wijzigingen van de leveranciersstatus.
 * **Ontbrekende gegevens:** Is er op de kaart geen status geselecteerd, dan evalueert de kaart de voorwaarde niet. Ze meldt de ontbrekende invoer (of een fout) in het workflowlogboek en de stappen erna worden niet uitgevoerd.
 * **Ongeldige operator:** Is de operator noch **Is** noch **Is niet**, dan meldt de kaart een fout in de kaartinstelling in het workflowlogboek.
 

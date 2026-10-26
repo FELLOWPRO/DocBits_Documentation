@@ -13,8 +13,8 @@ De inkoopordermatching hoort vóór deze kaart te lopen. Zonder gematchte inkoop
 1. **Elk/Alle**
    * **Beschrijving:** Hoe de faciliteitscodes van de gematchte inkooporders tegen de lijst worden geëvalueerd.
    * **Opties:**
-     * **Elk:** Minstens één item van de lijst komt voor in de faciliteitscodes van de gematchte inkooporders.
-     * **Alle:** Elke faciliteitscode van de gematchte inkooporders staat in de lijst. Is er geen waarde ingesteld, dan gebruikt de kaart **Alle**.
+     * **Elk:** Minstens één gematchte inkooporder voldoet aan de operator.
+     * **Alle:** Elke gematchte inkooporder met een faciliteit voldoet aan de operator. Is er geen waarde ingesteld, dan gebruikt de kaart **Alle**.
 2. **Operator**
    * **Beschrijving:** Of de faciliteit wel of niet in de lijst hoort te staan.
    * **Opties:**
@@ -27,10 +27,10 @@ De inkoopordermatching hoort vóór deze kaart te lopen. Zonder gematchte inkoop
 ## Functionaliteit:
 
 * **Voorwaarde-evaluatie:** De kaart leest de aan het document gematchte inkoopordernummers, laadt deze inkooporders en verzamelt van elk daarvan de faciliteit (locatie). Inkooporders zonder faciliteit worden overgeslagen. De verzamelde faciliteitscodes worden vervolgens vergeleken met de **Faciliteitsnaamcodes** op de kaart.
-  * Met **Elk** en **Is** wordt bij de vergelijking geen onderscheid gemaakt tussen hoofd- en kleine letters, en een item van de lijst telt ook mee wanneer het deel uitmaakt van een langere faciliteitscode (zo wordt het item `WH` gevonden in `WH01`).
-  * Met **Alle** en **Is** hoort elke faciliteitscode van de inkooporders in precies dezelfde schrijfwijze in de lijst voor te komen, inclusief hoofd- en kleine letters.
+  * Een faciliteitscode telt als vermeld wanneer die als geheel gelijk is aan een van de ingevoerde codes. Hoofd- en kleine letters en spaties rond de items worden genegeerd, dus `wh01` komt overeen met `WH01`, maar `WH` komt niet overeen met `WH01`.
+  * Met **Is** voldoet een inkooporder aan de voorwaarde wanneer de faciliteitscode ervan vermeld is. Met **Is niet** voldoet die aan de voorwaarde wanneer de faciliteitscode niet vermeld is.
+  * Met **Elk** is aan de voorwaarde voldaan als minstens één inkooporder eraan voldoet, met **Alle** als elke inkooporder met een faciliteit eraan voldoet.
   * Heeft geen van de gematchte inkooporders een faciliteit, dan is aan **Alle** voldaan en aan **Elk** niet.
-  * Met **Is niet** is het resultaat niet eenvoudigweg het omgekeerde van **Is**. Het kaartlogboek toont welke codes zijn gevonden en welke niet zijn gematcht, wat helpt om het gedrag bij een bepaalde instelling te controleren.
 * **Actie-uitvoering:**
   * **True-voorwaarde:**\
     Wordt aan de voorwaarde voldaan, dan gaat de workflow verder, bijvoorbeeld met een stap die specifiek is voor de vermelde faciliteiten.
@@ -40,7 +40,7 @@ De inkoopordermatching hoort vóór deze kaart te lopen. Zonder gematchte inkoop
 
 ## Opzet en configuratie:
 
-* De kaart kan als And-voorwaarde na de inkoopordermatching worden toegevoegd vanuit de categorie **Vergelijk met inkooporder**. Daarna kunnen **Elk** of **Alle**, de operator en de faciliteitscodes, gescheiden door komma's, worden ingesteld. De codes in dezelfde schrijfwijze invoeren als op de inkooporder is de veiligste keuze, omdat **Alle** ze exact vergelijkt.
+* De kaart kan als And-voorwaarde na de inkoopordermatching worden toegevoegd vanuit de categorie **Vergelijk met inkooporder**. Daarna kunnen **Elk** of **Alle**, de operator en de faciliteitscodes, gescheiden door komma's, worden ingesteld. Hoofd- en kleine letters maken niet uit, maar elke code hoort volledig te worden ingevoerd, omdat delen van een code niet overeenkomen.
 * Met **Testkaart** in het kaartmenu van de Workflow Builder kan de configuratie op een bestaand document worden uitgeprobeerd. Het kaartlogboek somt de gematchte inkooporders op, de daarop gevonden faciliteitscodes en de codes die niet zijn gematcht.
 
 ## Conclusie:

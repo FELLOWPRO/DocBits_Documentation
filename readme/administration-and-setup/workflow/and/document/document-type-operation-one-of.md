@@ -1,6 +1,6 @@
-# Document Type Operation one of
+# Dokumenttyp aus einer Liste prüfen
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -12,10 +12,10 @@ Diese Karte ist darauf ausgelegt, Aktionen an Dokumenten abhängig von ihrem Typ
    * **Beschreibung**: Bestimmt die auf die Dokumenttypen angewendete bedingte Logik.
    * **Optionen**:
      * **is**: Die Operation wird ausgelöst, wenn der Typ des Dokuments mit einem der angegebenen Typen in der Liste übereinstimmt.
-     * **is not**: Die Operation wird ausgelöst, wenn der Typ des Dokuments mit keinem der aufgeführten Typen übereinstimmt.
+     * **ist nicht**: Die Operation wird ausgelöst, wenn der Typ des Dokuments mit keinem der aufgeführten Typen übereinstimmt.
 2. **Dokumenttypenliste**
    * **Beschreibung**: Gibt eine Liste von Dokumenttypen an, für die die Bedingung gilt.
-   * **Detail**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
+   * **Detailliert**: Diese umfasst verschiedene Dokumenttypen wie "Invoice", "Purchase Order" usw., auf deren Grundlage die Bedingung (is/is not) ausgewertet wird.
 
 ## Funktionalität:
 
@@ -33,3 +33,15 @@ Diese Karte ist darauf ausgelegt, Aktionen an Dokumenten abhängig von ihrem Typ
 ## Fazit:
 
 Die Workflow-Karte "Document Type Condition" spielt eine entscheidende Rolle bei der präzisen und flexiblen Steuerung dokumentbasierter Vorgänge. Durch die Verwendung einer einfachen bedingten Logik hilft sie sicherzustellen, dass Dokumente angemessen verarbeitet werden, und steigert so die Effizienz und Compliance. Eine klare Dokumentation dieser Karte hilft Benutzern zu verstehen, wie sie sie effektiv einsetzen und nutzen können, und macht sie zu einem wertvollen Bestandteil der Dokumentation Ihres ERP-Systems.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Verwenden Sie dieselbe Validierung für mehrere Dokumenttypen.
+
+**Konfiguration:** Wählen Sie den Is-One-of-Operator und die Typen `Invoice` und `Credit Note`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein `Invoice` besteht; ein `Order` nicht.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

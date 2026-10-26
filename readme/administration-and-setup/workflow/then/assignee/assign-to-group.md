@@ -1,6 +1,6 @@
-# Assign to group
+# Einer Gruppe zuweisen
 
-<figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -12,8 +12,6 @@ Die Workflow-Karte **"Assign to Group"** ermöglicht die Zuweisung von Dokumente
    * **Beschreibung:** Gibt die **Gruppe** an, der das Dokument zugewiesen wird.
    * **Detail:** Wird aus einer Dropdown-Liste der verfügbaren **Gruppen** ausgewählt.
 
-
-
 ## **Zusätzliche Komponenten in Version 3**
 
 1. **Entscheidungsbaum (nur Version 3)**
@@ -24,7 +22,7 @@ Die Workflow-Karte **"Assign to Group"** ermöglicht die Zuweisung von Dokumente
 
 ## Funktionalität:
 
-* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Bedingungsauswertung:** Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:** Weist das Dokument der ausgewählten **Gruppe** zu. In **Version 3** bestimmt der **Entscheidungsbaum** die Zielgruppe dynamisch, sofern aktiviert.
 
 ## Einrichtung und Konfiguration:
@@ -35,3 +33,15 @@ Die Workflow-Karte **"Assign to Group"** ermöglicht die Zuweisung von Dokumente
 ## Fazit:
 
 Die Workflow-Karte **"Assign to Group"** automatisiert die Dokumentzuweisung an vordefinierte **Gruppen** und verbessert so die Teamkoordination. **Version 3** führt die Möglichkeit ein, Gruppen dynamisch auf Basis der Logik eines Entscheidungsbaums zuzuweisen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Stellen Sie ein Dokument in eine gemeinsame Überprüfungswarteschlange.
+
+**Konfiguration:** Wählen Sie die konfigurierte Gruppe `Demo Finance`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das Dokument wird der ausgewählten Gruppe zugeordnet. Hierbei handelt es sich um eine Dokumentenzuweisung, nicht um ein Versprechen, dass eine zusätzliche Aufgabe oder E-Mail erstellt wird.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

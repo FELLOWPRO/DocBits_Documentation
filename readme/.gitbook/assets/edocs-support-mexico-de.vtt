@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.680
+Für Mexico CFDI 3.3 und 4.0 gibt es
+separate Einträge. Prüfen Sie Namespace,
+
+formats_02
+00:00:07.680 --> 00:00:13.218
+Version und TipoDeComprobante. Ein
+negativer Betrag allein identifiziert
+
+formats_03
+00:00:13.218 --> 00:00:18.467
+keine Gutschrift. Das Einlesen bestätigt
+keine Freigabe durch SAT.
+
+workflow_01
+00:00:19.217 --> 00:00:24.523
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:24.523 --> 00:00:31.233
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:31.233 --> 00:00:32.867
+aktiviert ihn nicht.
+
+accept_01
+00:00:33.617 --> 00:00:38.249
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:38.249 --> 00:00:44.379
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:44.379 --> 00:00:47.500
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

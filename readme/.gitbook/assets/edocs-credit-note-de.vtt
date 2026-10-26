@@ -1,0 +1,107 @@
+WEBVTT
+
+symptom_01
+00:00:00.250 --> 00:00:05.324
+Eine elektronische Gutschrift erscheint
+als Invoice. Prüfen Sie die ursprüngliche
+
+symptom_02
+00:00:05.324 --> 00:00:11.267
+XML-Datei. Der Typcode 381 kennzeichnet
+eine Gutschrift.
+
+codes_01
+00:00:12.017 --> 00:00:21.351
+Die Standards für FACTURX und ZUGFeRD
+erkennen auch 261. Die Codes 383 und 384
+
+codes_02
+00:00:21.351 --> 00:00:26.646
+stehen für eine Belastungsanzeige und eine
+korrigierte Rechnung. Klassifizieren Sie
+
+codes_03
+00:00:26.646 --> 00:00:28.633
+diese nicht als Gutschriften.
+
+source_01
+00:00:29.383 --> 00:00:34.399
+Öffnen Sie E-Doc für das erkannte Format.
+Eine angepasste Transformation der
+
+source_02
+00:00:34.399 --> 00:00:40.433
+Organisation hat Vorrang vor dem Standard.
+Prüfen Sie die aktive Version.
+
+transform_01
+00:00:41.183 --> 00:00:47.209
+Suchen Sie bei FACTURX nach INVOICE_TYPE.
+Der konstante Wert Invoice kann den
+
+transform_02
+00:00:47.209 --> 00:00:51.446
+ursprünglichen Gutschriftcode verdrängen.
+Vergleichen Sie die angepasste
+
+transform_03
+00:00:51.446 --> 00:00:53.933
+Transformation mit dem Standard.
+
+paths_01
+00:00:54.683 --> 00:01:01.695
+Testen Sie das transformierte XML. Prüfen
+Sie, ob Extraction Paths invoice_type aus
+
+paths_02
+00:01:01.695 --> 00:01:07.001
+dem richtigen Knoten für dieses Format
+liest. Prüfen Sie spätere Skripte und den
+
+paths_03
+00:01:07.001 --> 00:01:08.500
+gespeicherten Wert.
+
+activate_01
+00:01:09.250 --> 00:01:14.231
+Erstellen Sie einen Entwurf. Speichern
+aktiviert ihn nicht. Testen Sie
+
+activate_02
+00:01:14.231 --> 00:01:18.503
+repräsentative Rechnungen und
+Gutschriften. Aktivieren Sie ihn erst nach
+
+activate_03
+00:01:18.503 --> 00:01:21.400
+erfolgreichen Prüfungen über das Häkchen.
+
+safety_01
+00:01:22.150 --> 00:01:26.665
+Prüfen Sie ein neues Dokument
+einschließlich der Beträge und des
+
+safety_02
+00:01:26.665 --> 00:01:31.815
+Exports. Erhalten Sie angepasste
+Zuordnungen. Prüfen Sie vor dem Neustart
+
+safety_03
+00:01:31.815 --> 00:01:36.400
+eines alten Dokuments Freigaben, Exporte
+und manuelle Änderungen.
+
+sign_01
+00:01:37.150 --> 00:01:42.084
+Die Einstellung für negative Vorzeichen
+ist standardmäßig aktiviert, kann aber
+
+sign_02
+00:01:42.084 --> 00:01:48.679
+deaktiviert werden. Prüfen Sie die
+Klassifizierung und die von Infor ERP oder
+
+sign_03
+00:01:48.679 --> 00:01:52.667
+SAP erwartete Vorzeichenkonvention.
+

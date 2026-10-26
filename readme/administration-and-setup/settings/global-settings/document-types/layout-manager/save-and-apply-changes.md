@@ -9,7 +9,7 @@
 * Nachdem Sie die gewünschten Anpassungen im Layout Manager vorgenommen haben, suchen Sie nach der Schaltfläche "Speichern", um die Änderungen zu speichern.
 * Klicken Sie auf diese Schaltfläche, um Ihre Änderungen im Layout Manager zu speichern. Dies sichert Ihre Layoutanpassungen und stellt sicher, dass sie für zukünftige Bearbeitungssitzungen verfügbar sind.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Zuordnung eines Skripts zu einem Dokumenttyp in DocBits"><figcaption></figcaption></figure>
 
 #### Anwenden der Änderungen auf den Belegverarbeitungs-Workflow:
 

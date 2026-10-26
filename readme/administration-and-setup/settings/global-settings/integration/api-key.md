@@ -1,6 +1,6 @@
 # API-Schlüssel
 
-<figure><img src="https://lh7-us.googleusercontent.com/ulCymk1gu-de14qTaFfJwTEmAUp7DY000A40P3nTgRIb7pYXolCbh_GPJvRib5haIH75dPFewY5tJQ0xNbGP3wdSOgCxu7gdVBwlvxkHFcP_3HM3R15zuuBOZM2jEdFxlp2CpV1VDfktmLFSSw4BuLs" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-api-key-list-row-de.png" alt="API-Schlüsselliste mit ausgeblendeten Schlüsseln und Kontodaten. Die Spaltenbezeichnung Actions ist in der Produktoberfläche noch englisch."><figcaption><p>API-Schlüsselliste mit ausgeblendeten Schlüsseln und Kontodaten. Die Spaltenbezeichnung Actions ist in der Produktoberfläche noch englisch.</p></figcaption></figure>
 
 ### API-Schlüssel
 

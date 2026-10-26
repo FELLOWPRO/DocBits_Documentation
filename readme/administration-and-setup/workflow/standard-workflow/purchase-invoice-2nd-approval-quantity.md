@@ -1,4 +1,4 @@
-# Purchase Invoice - 2nd Approval Quantity
+# Eingangsrechnung – zweite Mengengenehmigung
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.56.54 (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -1,17 +1,17 @@
-# Assign Document and Create Task/Notification
+# Dokument zuordnen und Aufgabe/Benachrichtigung erstellen
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7eb49fb37c93-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## **Zweck**
 
-Die Workflow-Karte "**Assign Document and Create Task/Notification Based on Decision Table**" weist ein Dokument zu und erstellt eine Aufgabe oder Benachrichtigung mit konfigurierbaren Details. Der Zuweisungsempfänger wird durch die Rückgabe einer Entscheidungstabelle bestimmt, und die Karte ermöglicht das Festlegen von Prioritäten und das Senden von E-Mail-Benachrichtigungen.
+Die Workflow-Karte "**Dokument zuweisen und Aufgabe/Benachrichtigung basierend auf der Entscheidungstabelle erstellen**" weist ein Dokument zu und erstellt eine Aufgabe oder Benachrichtigung mit konfigurierbaren Details. Der Zuweisungsempfänger wird durch die Rückgabe einer Entscheidungstabelle bestimmt, und die Karte ermöglicht das Festlegen von Prioritäten und das Senden von E-Mail-Benachrichtigungen.
 
 ## **Bestandteile der Karte**
 
 1. **Zuweisungstyp**
    * **Beschreibung:** Gibt an, ob die Rückgabe der Entscheidungstabelle das Dokument und die Aufgabe/Benachrichtigung einem Benutzer oder einer Gruppe zuweist.
    * **Detail:** Ein Feld zur Konfiguration des Zuweisungstyps als entweder "User" oder "Group" auf Basis der Ausgabe der Entscheidungstabelle.
-2. **Task/Notification**
+2. **Aufgabe/Benachrichtigung**
    * **Beschreibung:** Gibt die Art der für den Zuweisungsempfänger zu erstellenden Aktion an.
    * **Detail:** Ein Dropdown zur Auswahl von entweder "Task" oder "Notification" je nach Anforderung des Workflows.
 3. **Titel**
@@ -67,3 +67,15 @@ Die Workflow-Karte "**Assign Document and Create Task/Notification Based on Deci
 ## **Fazit**
 
 Die Workflow-Karte "Assign Document and Create Task/Notification Based on Decision Table" stellt sicher, dass Aufgaben oder Benachrichtigungen auf Basis der Ergebnisse der Entscheidungstabelle dynamisch dem passenden Benutzer oder der passenden Gruppe zugewiesen werden. Diese Karte ermöglicht eine effiziente Aufgabendelegation, anpassbare Prioritäten und optionale E-Mail-Benachrichtigungen, um die Reaktionsfähigkeit des Workflows zu verbessern.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Verwenden Sie ein Entscheidungstabellenergebnis, um ein Dokument zuzuweisen und nacheinander eine Überprüfungsaufgabe zu erstellen.
+
+**Konfiguration:** Wählen Sie die Demo-Entscheidungstabelle, den Aufgabentitel `Review invoice`, die Beschreibung und die Priorität aus. Konfigurieren Sie das Empfänger-Rückgabeformat und die E-Mail-Option, die für die ausgewählte Version erforderlich sind.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Der übereinstimmende zurückgegebene Beauftragte erhält die dokumentierte Dokumentzuweisung und Aufgabe/Benachrichtigung. Überprüfen Sie beide Ergebnisse. Eine leere Tabellenrückgabe ist keine erfolgreiche Zuweisung.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

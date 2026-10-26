@@ -1,6 +1,6 @@
-# Document Operator for Sub-Organizations
+# Dokument nach Unterorganisation prüfen
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -12,8 +12,8 @@ Diese Workflow-Karte wertet aus, ob ein Dokument Teil einer bestimmten Unterorga
    * **Beschreibung:** Legt fest, ob das Dokument Teil der angegebenen Unterorganisation sein muss oder nicht.
    * **Optionen:**
      * **Is:** Das Dokument muss Teil der angegebenen Unterorganisation sein, damit die Bedingung erfüllt ist.
-     * **Is Not:** Das Dokument darf nicht Teil der angegebenen Unterorganisation sein, damit die Bedingung erfüllt ist.
-2. **Sub-org**
+     * **Ist nicht:** Das Dokument darf nicht Teil der angegebenen Unterorganisation sein, damit die Bedingung erfüllt ist.
+2. **Unterorg**
    * **Beschreibung:** Gibt die Unterorganisation an, mit der das Dokument verglichen werden soll.
    * **Detail:** Dieser sollte mit dem Bezeichner der Unterorganisation übereinstimmen. Der Vergleich prüft, ob das Dokument zur angegebenen Unterorganisation gehört.
 
@@ -33,3 +33,15 @@ Diese Workflow-Karte wertet aus, ob ein Dokument Teil einer bestimmten Unterorga
 ## Fazit:
 
 Die Workflow-Karte "Document in Sub-organization" ist ein hilfreiches Werkzeug, um Aktionen darauf basieren zu lassen, ob ein Dokument zu einer bestimmten Unterorganisation gehört. Indem sie sicherstellt, dass Dokumente gemäß den unterorganisationsspezifischen Regeln verarbeitet werden, verbessert diese Karte die Workflow-Effizienz und stellt sicher, dass Aktionen im korrekten organisatorischen Kontext ausgeführt werden.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Leiten Sie Dokumente weiter, die zu einer Geschäftseinheit gehören.
+
+**Konfiguration:** Wählen Sie die Unterorganisation `Demo North` und den Gleichheitsoperator aus.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Dokument in `Demo North` besteht. Ein Dokument in `Demo South` schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

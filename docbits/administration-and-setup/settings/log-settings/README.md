@@ -2,6 +2,8 @@
 
 <figure><img src="../../../.gitbook/assets/prior-t011-en.png" alt="Activity-log filters with log entries hidden."><figcaption><p>Activity-log filters with log entries hidden.</p></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/activity_logging_service-en-20261012.png" alt="Activity Logging log table with the Service column"><figcaption><p>The log table shows a Service column (not Component) for the service that generated each log entry.</p></figcaption></figure>
+
 Activity Logging provides a real-time view of system events across all DocBits services. Use it to monitor processing activity, troubleshoot errors, and audit system behavior.
 
 ## Analytics Banner
@@ -23,7 +25,7 @@ At the top of the page, a banner links to the **Analytics Dashboard** for charts
 |--------|-------------|
 | **Timestamp** | Date and time the event occurred. Sortable. |
 | **Severity** | Color-coded badge: Info (blue), Warning (yellow), Error (red), Debug (gray). |
-| **Component** | The service or module that generated the log (e.g., api, auth, api-service). |
+| **Service** | The service that generated the log (e.g., api, auth, ocr, export). |
 | **Message** | The full log message with event details. |
 
 Results are paginated — use the controls at the bottom to navigate pages.

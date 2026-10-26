@@ -1,5 +1,13 @@
 # Modul
 
+## Video-Tutorial: Einstellungsübersicht und Module
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/de.mp4" %}
+Einstellungsübersicht und Module in DocBits
+{% endembed %}
+
+Das Video zeigt die fünf Gruppen der Einstellungsübersicht, die Suche und die Schnellzugriffe sowie was die drei Modulseiten steuern.
+
 <figure><img src="../../../../.gitbook/assets/module_settings-de.png" alt="Moduleinstellungen"><figcaption><p>Seite „Moduleinstellungen“</p></figcaption></figure>
 
 Auf der Seite „Module“ aktivieren oder deaktivieren Sie optionale Funktionen in DocBits. Jeder Abschnitt fasst zusammengehörige Module zusammen, die ein- oder ausgeschaltet werden können.

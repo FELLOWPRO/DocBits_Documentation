@@ -1,5 +1,13 @@
 # Einstellungen
 
+## Video-Tutorial: Einstellungsübersicht und Module
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/de.mp4" %}
+Einstellungsübersicht und Module in DocBits
+{% endembed %}
+
+Das Video zeigt die fünf Gruppen der Einstellungsübersicht, die Suche und die Schnellzugriffe sowie was die drei Modulseiten steuern.
+
 <figure><img src="../../.gitbook/assets/settings_overview-de.png" alt="Übersicht der Einstellungen"><figcaption><p>Übersichtsseite der Einstellungen</p></figcaption></figure>
 
 Der Bereich „Settings“ ist Ihre zentrale Anlaufstelle für die Konfiguration von DocBits. Er ist in fünf Hauptbereiche gegliedert:

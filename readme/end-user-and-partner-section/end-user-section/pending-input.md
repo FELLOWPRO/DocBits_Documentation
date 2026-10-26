@@ -1,13 +1,13 @@
 # Pending Input
 
-**Pending Input** pauses a document while you wait for an answer from a colleague. Instead of leaving a comment nobody notices, you ask the question in the document's Activity Stream and tag the people who should answer. The document leaves the active queue until they reply, and the people you tagged can open it read-only through a link in their e-mail.
+**Pending Input** pauses a document while you wait for an answer from a colleague. You ask the question in the document's Activity Stream and tag the people who should answer. The document leaves the active queue until they reply, and the people you tagged can open it read-only through a link in their e-mail.
 
 The status appears on the [dashboard](dashboard/README.md) as **Pending Input**, and you can filter the worklist by it.
 
 ## Ask for input
 
-1. Open the document and open the **Activity Stream** (the chat icon in the toolbar of the document screen).
-2. Write your question and type **@** followed by the name of the person you want to ask. Pick the person from the list that appears. Tagging is what grants access: somebody who is not tagged cannot open the document.
+1. Open the document in a screen that offers the **Activity Stream** - the approval and review screens do - and select the speech-bubble icon in the tool strip to open it.
+2. Write your question and type **@** followed by the name of the person you want to ask. Pick the person from the list that appears. Tagging is what grants access: only tagged people receive the link to the document.
 3. Once a person is tagged, a box appears under the editor with two choices:
 
 * **Comment only** – the question is posted in the Activity Stream, the status stays as it is. Use this when you only need an answer and do not want to hold the document.

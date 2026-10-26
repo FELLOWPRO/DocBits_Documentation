@@ -1,6 +1,6 @@
 # Quoted Item Price
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-03-it-20261023.png" alt="Logica Qualsiasi/Tutti prezzo dell&#x27;articolo quotato Operatore al prezzo contrattuale." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

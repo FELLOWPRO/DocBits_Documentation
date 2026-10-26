@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-04-it-20261023.png" alt="Logica La tabella delle decisioni Tabella delle decisioni contiene valori restituiti per il documento o per l&#x27;organizzazione fornitrice. Memorizza ha restituito dati da utilizzare nelle schede successive." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

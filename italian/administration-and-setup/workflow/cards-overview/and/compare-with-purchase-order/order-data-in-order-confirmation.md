@@ -1,6 +1,6 @@
 # Order Data in Order Confirmation
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-00-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto Dati dell&#x27;ordine nella conferma d&#x27;ordine Operatore dell&#x27;ordine di acquisto. Scrivere Testo nel campo Nome del campo sul risultato della condizione Risultato della condizione ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo**
 

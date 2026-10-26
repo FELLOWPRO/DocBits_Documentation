@@ -1,6 +1,6 @@
 # Export with Export Configuration
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-00-it-20261023.png" alt="Esportazione Documento di esportazione con configurazione di esportazione: Configurazione dell&#x27;esportazione . Ignora attività in sospeso: Ignora le attività in sospeso . Stato dopo l&#x27;esportazione: Stato ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

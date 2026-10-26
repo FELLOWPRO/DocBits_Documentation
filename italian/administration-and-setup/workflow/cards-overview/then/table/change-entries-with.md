@@ -1,6 +1,6 @@
 # Change Entries with
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-table-01-it-20261023.png" alt="Tabella In Nome della tabella , cambiare le voci con Nome della colonna Operatore matematico Valore ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

@@ -5,7 +5,7 @@ Gli strumenti sono accanto alla ricerca. Passa il puntatore su un’icona per le
 | Strumento | Utilizzo |
 | --- | --- |
 | Aggiorna | Ricarica elenco e stati. Un indicatore segnala che sono disponibili dati più recenti. |
-| Impostazioni avanzate (ingranaggio) | Apri impostazioni delle colonne, scorciatoie e registro delle importazioni email. Le impostazioni dell’organizzazione richiedono diritti amministrativi. |
+| Impostazioni avanzate (ingranaggio) | Apri **Altre impostazioni**, il riferimento **Scorciatoie da tastiera**, **Importa registro** e la finestra **Impostazioni delle colonne**. Le impostazioni dell’intera organizzazione richiedono diritti amministrativi. |
 | Scansiona documento | Apri la finestra se la scansione è abilitata e uno scanner compatibile è disponibile. Seleziona dispositivo e impostazioni prima di iniziare. |
 | Analisi | Mostra statistiche di stato e seleziona una categoria per filtrare l’elenco. |
 | Avvia importazione email | Avvia un’importazione con la configurazione di posta esistente. Questa azione non configura una casella. |

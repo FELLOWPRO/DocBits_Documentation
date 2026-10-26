@@ -1,65 +1,26 @@
 # EDI Transformation File Guide
 
-## 1. Overview
+The **TRANSFORMATION** configuration converts the EDI input into the structured XML used by DocBits. It is an **XSLT** stylesheet. This guide is for people who maintain an electronic document format; you need a representative EDI document to verify a change.
 
-The **Transformation File** defines how the structured XML—created using the **Structure Descriptor File**—is converted into a custom XML format that matches your organization's specific document type or form requirements.
+## Open the transformation
 
-This transformation is performed using **XSLT (Extensible Stylesheet Language Transformations)**, which can be authored and maintained through the **XSLT Editor** in the DocBits interface.
+1. Go to **Settings → Document Types** and open **E-Doc** for the document type you want to configure.
+2. Expand **EDI** and select **TRANSFORMATION**, marked **XSLT**. The screenshots use **Invoice** in a documentation test organization.
 
-## 2. Purpose and Function
+<figure><img src="../../../../../../.gitbook/assets/dbdc-139-edi-transformation-list-en.png" alt="English Sandbox EDI list with TRANSFORMATION XSLT above PREVIEW and EXTRACTION PATHS"><figcaption>Choose TRANSFORMATION (XSLT) in the EDI format list.</figcaption></figure>
 
-* Transforms the **intermediate XML** (output from the Structure Descriptor) into a **final XML** aligned with your document schema.
-* Enables flexibility to accommodate varying EDI partner formats and internal system requirements.
-* Built using **XSLT rules**, which allow you to define mappings, value formatting, conditional logic, and structure.
+## Read the stylesheet and version
 
-## 3. Access & Basic Editing
+The left side shows the selected document type, EDI format and versions. **Active** marks the version currently in use. The stylesheet appears in the editor on the right. The current invoice example uses `xsl:value-of` to copy values such as an invoice ID and date from the EDI input into an `INVOICE` XML structure. Your document may use different EDI paths. **Format** arranges the source for reading; it does not activate a version.
 
-#### Accessing the File
+<figure><img src="../../../../../../.gitbook/assets/dbdc-139-edi-transformation-detail-en.png" alt="English Sandbox TRANSFORMATION XSLT editor showing active version and invoice mapping"><figcaption>The active invoice EDI transformation in the test organization.</figcaption></figure>
 
-1.  Go to **Settings → Document Type** → \[Your Document (e.g., _Purchase Order_)] → **E-Doc.**\\
+The pencil beside the active version creates a **draft** for changes. Review and test the draft before activating it with its checkmark. An activated version replaces the previously active version. The trash icon deletes an unwanted draft.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Under the **E-Doc** tab, select your format (e.g., **EDI** ).
-3.  Click **Transformation** to view or edit.\\
+## Test before activation
 
-    <figure><img src="../../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Click **Preview** in the upper right to open the test panel. Enter the **Document ID** of an uploaded EDI document and click **Test**. Check the returned output against the original document and your expected XML fields. The screenshot shows only the empty panel; no successful transformation result is claimed.
 
-#### Draft Management
+<figure><img src="../../../../../../.gitbook/assets/dbdc-139-edi-transformation-panel-en.png" alt="English Sandbox transformation test panel with Document ID field and Test button"><figcaption>Test the selected transformation with a representative EDI document ID.</figcaption></figure>
 
-* **Create a Draft**: Click the ✏️ pencil icon.
-* **Delete Drafts**: Use the 🗑️ trashcan icon to remove unused drafts.
-* **Activate Changes**: Click the ✅ checkmark to publish a version.
-  * <mark style="color:red;">**Note**</mark>: Activating a new version will **automatically deactivate** the previous one.
-
-## 4. XSLT Editor
-
-The Transformation File is edited using an embedded **XSLT Editor** that supports syntax highlighting and validation.
-
-* Add templates to map specific paths from the input XML to the desired structure.
-* Use conditional logic (e.g., `<xsl:if>`, `<xsl:choose>`) to handle optional or varying data formats.
-* Apply formatting functions as needed (e.g., string manipulation, date formatting).
-
-## 5. Preview Function (Preview Transformed XML)
-
-The **Preview Function** allows you to test and preview how an uploaded EDI file is processed using the current **Transformation File**.
-
-#### Usage
-
-* Upload an EDI file via the standard upload flow.
-* Copy the **Document ID** of the uploaded file.
-* Navigate to the **Transformation File** interface.
-*   Open the **Preview Function**.\\
-
-    <div align="left"><figure><img src="../../../../../../.gitbook/assets/image (7) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
-* Enter the **Document ID** into the field and press **Test**.
-* The resulting **transformed XML output** will be displayed.
-
-This is especially useful for debugging XSLT mappings and ensuring the final XML structure meets your format requirements.
-
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-## 6. Video Walkthrough
-
-A video guide for this file type is available on the [Videos page.](edi-videos.md)\
-Use it to follow along with setup, editing, and previewing.\
-\\
+After transformation, DocBits uses [Extraction Paths](edi-extraction-paths-file-guide.md) to map XML values to fields. The [Preview file](edi-preview-file-guide.md) controls the readable display. See the [EDI video guide](edi-videos.md) for a walkthrough.

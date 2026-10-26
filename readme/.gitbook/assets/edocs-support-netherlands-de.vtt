@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.309
+Für SI-UBL 2.0 gibt es einen eigenen
+Eintrag. Eine UBL-Datei entspricht nicht
+
+formats_02
+00:00:07.309 --> 00:00:13.799
+automatisch SI-UBL 2.0. Prüfen Sie ihre
+Anpassungskennung und die passende
+
+formats_03
+00:00:13.799 --> 00:00:15.633
+nationale Zuordnung.
+
+workflow_01
+00:00:16.383 --> 00:00:21.689
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:21.689 --> 00:00:28.399
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:28.399 --> 00:00:30.033
+aktiviert ihn nicht.
+
+accept_01
+00:00:30.783 --> 00:00:35.415
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:35.415 --> 00:00:41.545
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:41.545 --> 00:00:44.667
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

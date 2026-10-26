@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.760
+Für Peru CPE gibt es generische Einträge
+sowie Einträge für UBL 2.0 und UBL 2.1.
+
+formats_02
+00:00:08.760 --> 00:00:14.275
+Factura Electronica ist eine weitere
+Bezeichnung. Wählen Sie die tatsächliche
+
+formats_03
+00:00:14.275 --> 00:00:20.149
+UBL-Version und Dokumentstruktur aus. Die
+Verarbeitung einer Datei belegt keine
+
+formats_04
+00:00:20.149 --> 00:00:21.833
+Annahme durch SUNAT.
+
+workflow_01
+00:00:22.583 --> 00:00:27.889
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:27.889 --> 00:00:34.599
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:34.599 --> 00:00:36.233
+aktiviert ihn nicht.
+
+accept_01
+00:00:36.983 --> 00:00:41.615
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:41.615 --> 00:00:47.745
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:47.745 --> 00:00:50.867
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

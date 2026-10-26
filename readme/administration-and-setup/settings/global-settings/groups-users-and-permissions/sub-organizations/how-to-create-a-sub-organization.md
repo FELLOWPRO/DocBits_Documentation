@@ -14,7 +14,7 @@ Klicken Sie auf die Schaltfläche `+ NEU`.
 
 Das folgende Menü wird angezeigt:
 
-<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Formular zum Erstellen einer Unterorganisation" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-edit_user_in_sub_organization-de.png" alt="Deutscher Dialog zum Anlegen einer Unterorganisation."><figcaption><p>Deutscher Dialog zum Anlegen einer Unterorganisation.</p></figcaption></figure>
 
 Geben Sie die Details der zu erstellenden Unterorganisation ein – Name und Beschreibung – und klicken Sie anschließend auf die Schaltfläche `SPEICHERN`. Die neu erstellte Unterorganisation finden Sie danach am Ende der Liste der vorhandenen Unterorganisationen.
 
@@ -35,8 +35,6 @@ Geben Sie die Details der zu erstellenden Unterorganisation ein – Name und Bes
 Sie können der Organisation einen neuen Benutzer hinzufügen und dabei wählen, ob der Benutzer aus anderen Gruppen entfernt werden soll.
 
 **Benutzer bearbeiten:**
-
-<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="Benutzer in einer Unterorganisation bearbeiten" width="375"><figcaption></figcaption></figure>
 
 * **Einstellungen der Unterorganisation bearbeiten:** Administratoren können die Einstellungen und Eigenschaften einer Unterorganisation bearbeiten, einschließlich Name, Beschreibung oder Hierarchieebene im System.
 * **Benutzerdetails bearbeiten:** Administratoren können die Details einzelner Benutzer innerhalb einer Unterorganisation bearbeiten, beispielsweise um deren Zugriffsrechte anzupassen oder Kontaktinformationen zu aktualisieren.

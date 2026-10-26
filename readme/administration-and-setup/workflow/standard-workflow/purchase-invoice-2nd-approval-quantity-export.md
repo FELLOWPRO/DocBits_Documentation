@@ -1,4 +1,4 @@
-# Purchase Invoice - 2nd Approval Quantity Export
+# Eingangsrechnung – zweite Mengengenehmigung und Export
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53 (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.167
+Der Katalog enthält Fapiao, E-Fapiao,
+General VAT Invoice und Special VAT
+
+formats_02
+00:00:06.167 --> 00:00:11.193
+Invoice. Der dokumentierte Adapter
+verwendet den XML-Namespace
+
+formats_03
+00:00:11.193 --> 00:00:18.002
+urn:china:tax:fapiao:1.0. Setzen Sie nicht
+voraus, dass jede native OFD-Datei, jedes
+
+formats_04
+00:00:18.002 --> 00:00:23.108
+PDF oder jeder Export einer
+Steuerplattform diesem Datenvertrag
+
+formats_05
+00:00:23.108 --> 00:00:24.000
+entspricht.
+
+workflow_01
+00:00:24.750 --> 00:00:30.056
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:30.056 --> 00:00:36.766
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:36.766 --> 00:00:38.400
+aktiviert ihn nicht.
+
+accept_01
+00:00:39.150 --> 00:00:43.782
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:43.782 --> 00:00:49.912
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:49.912 --> 00:00:53.033
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

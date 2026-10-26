@@ -1,32 +1,31 @@
-# Export with alternate Export
+# Export mit alternativem Export
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-## **Zweck**
+## Wann sollte diese Karte verwendet werden?
 
-Die Workflow-Karte **"Export Document with Alternate Export"** ermöglicht den Export eines Dokuments mithilfe einer alternativen Exportkonfiguration. Sie bietet Flexibilität, indem sie es Benutzern ermöglicht, die Standard-Exportkonfiguration zu umgehen und eine alternative zu verwenden, und so die Kompatibilität mit bestimmten Anforderungen oder Szenarien sicherstellt.
+Verwenden Sie diese Dann-Aktion für den alternativen Export, der für den aktuellen Dokumenttyp konfiguriert ist. Konfigurieren und validieren Sie diese Route, bevor Sie die Aktion hinzufügen.
 
-## **Bestandteile der Karte**
+## Die Konfiguration ergibt sich aus dem Dokumenttyp
 
-**Alternative Exportkonfiguration**
+Die Karte verfügt über keinen Exportkonfigurationsselektor. Es liest, ob der alternative Export aktiviert ist, die alternative Exportkonfiguration und den Status nach dem Export aus den Dokumenttypeinstellungen. Intern sind dies `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` und `DOC_ALTERNATE_EXPORT_STATUS`.
 
-* **Beschreibung**: Gibt die Exportkonfiguration an, die für das Dokument verwendet wird.
-* **Detail**: Diese Konfiguration überschreibt die Standardeinstellungen und wendet die im Workflow angegebene alternative Exportkonfiguration an.
+Ein explizit deaktivierter alternativer Export führt zu einer fehlgeschlagenen Bedingung. Fehlende Aktivierungsdaten, Konfigurationen oder Ergebnisstatus werden gemeldet, anstatt stillschweigend die Standardroute zu ersetzen. Der Exportauftrag prüft anstehende Aufgaben.
 
-## **Funktionalität**
+## Überprüfen Sie das Ergebnis
 
-* **Bedingungsauswertung**:\
-  Das System wertet die in den Abschnitten **"Where"** und **"And"** des Workflows festgelegten Bedingungen aus. Die Karte wird nur ausgeführt, wenn alle Bedingungen erfüllt sind.
-* **Dokumentexport**:\
-  Sobald sie ausgeführt wird, verwendet die Karte die alternative Exportkonfiguration, um das Dokument zu verarbeiten und zu exportieren. Dies ermöglicht eine maßgeschneiderte Exportbehandlung für bestimmte Workflows.
+Überprüfen Sie das Kartenprotokoll, den Exportverlauf, den Dokumentenstatus und das autorisierte Testziel. Eine Anfrage, ein Timeout oder eine Statusänderung allein beweist nicht, dass die Daten das Ziel erreicht haben. Überprüfen Sie den Exportverlauf, bevor Sie einen Vorgang wiederholen, der zu Duplikaten führen könnte.
 
-## **Einrichtung und Konfiguration**
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
 
-Um diese Karte zu konfigurieren:
+### Alternatives Exportbeispiel
 
-1. Stellen Sie sicher, dass die Abschnitte **"Where"** und **"And"** korrekt konfiguriert sind, da die Karte nur ausgeführt wird, wenn diese Bedingungen als erfüllt ausgewertet werden.
-2. Überprüfen Sie, ob die alternative Exportkonfiguration im System gültig und aktiv ist.
+**Konfiguration:** Bereiten Sie den synthetischen Dokumenttyp `DEMO_INVOICE` mit aktiviertem alternativen Export, einer autorisierten Testexportkonfiguration und dem gewünschten Ergebnisstatus in seinen Dokumenttypeinstellungen vor. Fügen Sie diese Dann-Aktion nach den erforderlichen Prüfungen hinzu. Diese Karte liest diese Einstellungen; Es bietet keinen Exportkonfigurationsselektor.
 
-## **Fazit**
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Aktion fordert den Export über diese alternative Konfiguration an und prüft ausstehende Aufgaben. Überprüfen Sie das Exportergebnis und das Testziel separat. Das Deaktivieren des alternativen Exports führt zu einer fehlgeschlagenen Bedingung. Eine fehlende Aktivierungseinstellung oder -konfiguration ist kein erfolgreicher Export. Führen Sie dieses Beispiel nicht für ein Buchhaltungsziel aus.
 
-Die Workflow-Karte **"Export Document with Alternate Export"** erhöht die Flexibilität und Kontrolle bei Dokumentexportprozessen. Indem sie die Auswahl einer alternativen Exportkonfiguration ermöglicht, berücksichtigt sie unterschiedliche Exportanforderungen und erhält gleichzeitig eine effiziente Workflow-Automatisierung.
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.
+
+## Lernweg und Wirkungsnachweis
+
+[P1: Exportvarianten, offene Aufgaben und Abschlussstatus](../../masterclass/export-lifecycle.md) trennt Konfigurationsauswahl, Vormerken, Exportanforderung, tatsächlichen Empfang und ERP-Verarbeitung. Eine grüne Simulation oder eine Statusänderung belegt den Empfang nicht.

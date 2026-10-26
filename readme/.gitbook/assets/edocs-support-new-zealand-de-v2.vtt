@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.730
+PINT A-NZ hat Regeleinträge für Rechnungen
+und Gutschriften, die gemeinsam mit
+
+formats_02
+00:00:05.730 --> 00:00:11.070
+Australien verwendet werden. Die aktive
+Familienbezeichnung enthält keine feste
+
+formats_03
+00:00:11.070 --> 00:00:16.516
+PINT-Veröffentlichungsnummer. Prüfen Sie
+die Anpassungs- und Profilkennungen. Die
+
+formats_04
+00:00:16.516 --> 00:00:20.833
+Netzwerkzustellung erfordert eine separate
+Integration.
+
+workflow_01
+00:00:21.583 --> 00:00:26.889
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:26.889 --> 00:00:33.599
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:33.599 --> 00:00:35.233
+aktiviert ihn nicht.
+
+accept_01
+00:00:35.983 --> 00:00:40.615
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:40.615 --> 00:00:46.745
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:46.745 --> 00:00:49.867
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Hier sind Best Practices für die Feldkonfiguration in einem Belegverarbeitungssystem, wobei die Bedeutung des Verständnisses des Beleg-Workflows und der Datenanforderungen hervorgehoben wird.
 

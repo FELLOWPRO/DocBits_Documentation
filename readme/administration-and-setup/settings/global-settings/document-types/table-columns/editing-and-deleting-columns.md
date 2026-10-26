@@ -1,73 +1,46 @@
-# Bearbeiten und Löschen von Spalten
+# Spalten bearbeiten und löschen
 
-Das Bearbeiten und Löschen von Spalten in einer Datenbanktabelle sind wichtige Operationen, die sorgfältig durchgeführt werden müssen, um die Datenintegrität zu gewährleisten und potenzielle Auswirkungen auf die Anwendungslogik und die Berichterstattung zu berücksichtigen.
+Alles außer dem Titel wird direkt in der Liste geändert; es gibt keinen Bearbeiten-Dialog.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_confirmation_dialog_generic.png" alt="Docbits Confirmation Dialog Generic"><figcaption></figcaption></figure>
+**Wo:** Settings → Global Settings → Document Types → Table Columns
 
-**Hier sind die detaillierten Schritte für beide Aktionen:**
+## Ein Flag umschalten
 
-## Bearbeiten einer Spalte:
+Aktivieren oder deaktivieren Sie das Kontrollkästchen in der Zeile. Die Änderung wird sofort gespeichert (*Successfully saved*).
 
-<figure><img src="../../../../../.gitbook/assets/docbits_sso_config_params.png" alt="Docbits Sso Config Params"><figcaption></figcaption></figure>
+| Flag | An | Aus |
+|---|---|---|
+| **Is Required** | Die Freigabe ist blockiert, solange die Spalte in einer beliebigen Zeile leer ist; die Validierungsmaske markiert die Zelle. | Leere Zellen sind erlaubt. |
+| **Read Only** | Der Wert wird angezeigt, kann aber nicht überschrieben werden. Verwenden Sie dies für Werte, die aus einem Lookup oder einem Skript stammen. | Benutzer können die Zelle bearbeiten. |
+| **Hidden** | Die Spalte verschwindet aus der Validierungsmaske und aus dem Export. Ihre Daten bleiben erhalten. | Die Spalte wird angezeigt und exportiert. |
+| **Use AI** | Die KI-Tabellenextraktion füllt diese Spalte, auch bei Lieferanten mit trainierten Regeln. | Die Spalte wird durch die trainierten Regeln gefüllt, oder durch die KI, wenn keine Regeln existieren. |
 
-**Titel ändern:**
+{% hint style="info" %}
+Flags gelten für Dokumente, die **nach** der Änderung hochgeladen oder neu gestartet werden. Offene Dokumente behalten ihre aktuelle Tabelle, bis sie neu gestartet werden.
+{% endhint %}
 
-* Klicken Sie auf den Titel der Spalte, die Sie ändern möchten. Es öffnet sich ein Fenster, in dem Sie den Titel der Spalte ändern können.
+## Den Titel umbenennen
 
-**Anforderungsanalyse:**
+Klicken Sie in der Spalte *Actions* auf das Übersetzungs-Symbol (*Update translation key*), geben Sie die neue Bezeichnung ein und bestätigen Sie. Das Info-Symbol daneben zeigt, welche Bezeichnung aktuell gilt und woher sie stammt. Nur die Bezeichnung ändert sich; der technische *Column name* bleibt gleich, sodass Skripte, Export-Mappings und trainierte Regeln weiter funktionieren.
 
-* Identifizieren Sie den Grund für die Bearbeitung der Spalte. Möglicherweise müssen Sie den Datentyp ändern, Einschränkungen hinzufügen oder entfernen oder den Spaltennamen ändern.
+## Typ oder Tabelle ändern
 
-**Überprüfung der Auswirkungen:**
+Nicht möglich. Blenden Sie die Spalte aus (oder löschen Sie sie, wenn es Ihre eigene ist) und fügen Sie eine neue mit dem richtigen Typ hinzu.
 
-* Bevor Sie Änderungen vornehmen, prüfen Sie, wie sich diese auf bestehende Daten und die Anwendungslogik auswirken. Beispielsweise können Änderungen am Datentyp dazu führen, dass Daten konvertiert werden oder verloren gehen.
+## Eine Spalte löschen
 
-**Datenbanksicherung:**
+Die Löschen-Aktion wird nur für Spalten angeboten, die Ihre Organisation angelegt hat. Standardspalten können nicht gelöscht werden; blenden Sie sie aus.
 
-* Sichern Sie Ihre Datenbank, um sicherzustellen, dass Sie über eine funktionierende Version verfügen, auf die Sie im Falle von Problemen zurückgreifen können.
+1. Öffnen Sie das Drei-Punkte-Menü in der Spalte *Actions* und wählen Sie **Delete**. Bei Standardspalten fehlt dieser Eintrag.
+2. Bestätigen Sie.
 
-**Ausführen der SQL-Anweisung:**
+Was passiert:
 
-* Verwenden Sie die SQL-Anweisung ALTER TABLE, um die gewünschten Änderungen an der Spalte vorzunehmen. Die genaue Syntax hängt von der verwendeten Datenbankplattform und den gewünschten Änderungen ab.
+* Die Spalte wird aus der Konfiguration entfernt. Dokumente, die **ab jetzt** verarbeitet werden, haben sie nicht mehr.
+* Bereits extrahierte Dokumente behalten die Spalte und ihre Werte, bis sie neu gestartet werden.
+* Trainierte Regeln, die diese Spalte zugeordnet hatten, funktionieren für die anderen Spalten weiter; die Zuordnung zur gelöschten Spalte wird ignoriert.
+* Wird die Spalte in einem Export-Mapping oder einem Skript referenziert, entfernen Sie diesen Verweis; andernfalls schlägt der Export oder das Skript mit einem Fehler wegen einer fehlenden Spalte fehl.
 
-**Datenmigration:**
+## Ein Löschen rückgängig machen
 
-* Wenn Sie den Datentyp einer Spalte ändern, müssen Sie möglicherweise eine Datenmigration durchführen, um vorhandene Daten in das neue Format zu konvertieren.
-
-**Testen und Validieren:**
-
-* Überprüfen Sie nach der Bearbeitung der Spalte gründlich, ob Ihre Anwendung ordnungsgemäß funktioniert und ob die Daten korrekt gespeichert und abgerufen werden.
-
-## Löschen einer Spalte:
-
-<figure><img src="../../../../../.gitbook/assets/docbits_delete_column_example.png" alt="Docbits Delete Column Example"><figcaption></figcaption></figure>
-
-**Anforderungsanalyse:**
-
-* Stellen Sie sicher, dass Sie die Gründe für das Löschen der Spalte verstehen. Ist die Spalte nicht mehr relevant oder gibt es andere Möglichkeiten, sie zu konsolidieren?
-
-**Überprüfung der Auswirkungen:**
-
-* Analysieren Sie, wie sich das Löschen der Spalte auf bestehende Daten, die Anwendungslogik und die Berichterstattung auswirkt. Dies kann zu Datenverlust führen oder Abfragen und Berichte beeinträchtigen.
-
-**Datenbanksicherung:**
-
-* Erstellen Sie eine vollständige Sicherung Ihrer Datenbank, um sicherzustellen, dass Sie diese im Falle unerwarteter Probleme wiederherstellen können.
-
-**Ausführen der SQL-Anweisung:**
-
-* Verwenden Sie die SQL-Anweisung ALTER TABLE, um die Spalte zu entfernen. Die genaue Syntax variiert je nach Datenbankplattform.
-
-**Datenmigration (falls erforderlich):**
-
-* Wenn Sie wichtige Daten in der zu löschenden Spalte haben, müssen Sie möglicherweise eine Datenmigration durchführen, um diese Daten an einen anderen Ort zu verschieben oder sie zu löschen.
-
-**Anpassung der Anwendungslogik:**
-
-* Stellen Sie sicher, dass Ihre Anwendungslogik entsprechend angepasst wird, um sicherzustellen, dass sie nicht mehr auf die gelöschte Spalte zugreift.
-
-**Testen und Validieren:**
-
-* Überprüfen Sie gründlich, ob Ihre Anwendung korrekt funktioniert und ob alle Daten- und Berichtsfunktionen wie erwartet arbeiten.
-
-Beim Bearbeiten oder Löschen von Spalten ist es entscheidend, dass Sie die Auswirkungen dieser Aktionen vollständig verstehen und angemessene Vorsichtsmaßnahmen treffen, um die Integrität Ihrer Datenbank zu wahren und sicherzustellen, dass Ihre Anwendung reibungslos läuft.
+Eine gelöschte Spalte kann nicht aus der Liste wiederhergestellt werden. Fügen Sie sie mit demselben Titel erneut hinzu: Der technische Name wird aus dem Titel abgeleitet, daher erhält eine Spalte mit demselben Titel denselben *Column name*, und bestehende Mappings passen wieder.

@@ -8,7 +8,7 @@ Die Rolle eines Administrators ist entscheidend für die Verwaltung von IT-Syste
 
 Neben diesen Aufgaben sind Administratoren auch dafür zuständig, sensible Einstellungen zu verwalten und sicherzustellen, dass die Systeme den Compliance-Anforderungen und den bewährten Verfahren der Informationssicherheit entsprechen. Dazu gehören die Verwaltung sensibler Daten, die Konfiguration von Zugriffskontrollen und Berechtigungen sowie die Überwachung und Analyse von Systemprotokollen, um potenzielle Sicherheitsrisiken zu erkennen und zu beheben.
 
-## Admin vs System Admin
+## Administrator und Systemadministrator <a href="#admin-vs-system-admin" id="admin-vs-system-admin"></a>
 
 DocBits kennt zwei Administratorrollen: **Admin** und **System Admin**. Sie klingen ähnlich, erfüllen aber unterschiedliche Aufgaben. Hier die einfache Erklärung.
 

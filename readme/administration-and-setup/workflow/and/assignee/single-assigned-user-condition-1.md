@@ -1,6 +1,6 @@
-# Single Assigned User Condition
+# Bedingung für eine einzelne zugewiesene Gruppe
 
-<figure><img src="../../../../.gitbook/assets/image (16) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 **Zweck:**\
 Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe oder ein Dokument einer bestimmten Gruppe zugewiesen ist. Sie verwendet eine einfache Bedingung, um Aktionen je nach Gruppenzuweisung auszulösen oder zu verhindern.
@@ -11,7 +11,7 @@ Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe ode
    * **Beschreibung:** Legt die logische Bedingung fest, die auf die Gruppenzuweisung angewendet wird.
    * **Optionen:**
      * **IS:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe mit der angegebenen Gruppe übereinstimmt.
-     * **IS NOT:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe nicht mit der angegebenen Gruppe übereinstimmt.
+     * **IST NICHT:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe nicht mit der angegebenen Gruppe übereinstimmt.
 2. **Gruppe**
    * **Beschreibung:** Gibt die Gruppe an, die mit der zugewiesenen Gruppe verglichen wird.
    * **Detail:** In diesem Feld können Sie eine einzelne Gruppe auswählen, mit der die Zuweisung verglichen wird.
@@ -21,9 +21,9 @@ Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe ode
 * **Erkennung der Gruppenzuweisung:** Identifiziert automatisch die Gruppe, die einer bestimmten Aufgabe oder einem bestimmten Dokument zugewiesen ist.
 * **Bedingungsauswertung:**
   * Mit dem Operator **IS** prüft die Karte, ob die zugewiesene Gruppe mit der angegebenen Gruppe übereinstimmt.
-  * Mit dem Operator **IS NOT** stellt die Karte sicher, dass die zugewiesene Gruppe nicht mit der angegebenen Gruppe übereinstimmt.
+  * Mit dem Operator **IST NICHT** stellt die Karte sicher, dass die zugewiesene Gruppe nicht mit der angegebenen Gruppe übereinstimmt.
 * **Ausführung der Aktion:**
-  * **Bedingung erfüllt (True):** Erfüllt die Gruppenzuweisung die Bedingung (entweder **IS** oder **IS NOT**), werden relevante Aktionen ausgelöst, etwa Benachrichtigungen, das Anlegen von Aufgaben, Freigaben oder andere Workflow-Schritte.
+  * **Bedingung erfüllt (True):** Erfüllt die Gruppenzuweisung die Bedingung (entweder **IS** oder **IST NICHT**), werden relevante Aktionen ausgelöst, etwa Benachrichtigungen, das Anlegen von Aufgaben, Freigaben oder andere Workflow-Schritte.
   * **Bedingung nicht erfüllt (False):** Ist die Bedingung nicht erfüllt, kann das Dokument oder die Aufgabe über eine andere Weiterleitung laufen, oder es können alternative Aktionen festgelegt werden.
 
 **Benutzerinteraktionen:**
@@ -37,3 +37,15 @@ Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe ode
 
 **Fazit:**\
 Die Workflow-Karte "Assigned Group Condition" ist unverzichtbar für die Verwaltung von Dokument- und Aufgaben-Workflows auf Basis von Gruppenzuweisungen. Indem sie Bedingungen darauf basieren lässt, ob eine Aufgabe oder ein Dokument einer bestimmten Gruppe zugewiesen ist, stellt sie sicher, dass Workflows nur durch passende Gruppeninteraktionen ausgelöst werden, und verbessert so das Aufgabenmanagement und die Workflow-Effizienz.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Wenden Sie eine Regel auf die Finanzüberprüfungswarteschlange an.
+
+**Konfiguration:** Wählen Sie den Gleichheitsoperator und die Gruppe `Demo Finance`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Dokument, das `Demo Finance` zugewiesen ist, besteht. Die Zuweisung zu einem einzelnen Benutzer allein stellt noch keine Zugehörigkeit zu dieser ausgewählten Dokumentzuweisungsgruppe her.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

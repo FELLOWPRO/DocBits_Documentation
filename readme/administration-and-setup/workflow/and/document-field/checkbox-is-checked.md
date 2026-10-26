@@ -1,40 +1,54 @@
-# Checkbox is checked
+# Das Kontrollkästchen ist aktiviert
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+## Wann und wo diese Karte verwenden
 
-## **Zweck:**
+Verwenden Sie diese Bedingung, wenn eine Folgeaktion von einem Kontrollkästchen im Dokument abhängt. Beispielsweise darf eine Rechnung erst weiterverarbeitet werden, nachdem ihre Prüfmarkierung gesetzt wurde.
 
-Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Zustands (aktiviert oder deaktiviert) eines Kontrollkästchens innerhalb Ihres ERP-Systems zu automatisieren. Indem sie den Zustand des Kontrollkästchens auswertet, ermöglicht sie das Auslösen bestimmter Prozesse oder die Durchsetzung bestimmter Regeln innerhalb der Anwendung.
+Fügen Sie die Karte im Workflow-Designer unter **Und… → Dokument Feld** hinzu. Die Karte vergleicht den Feldwert bei der Ausführung des Workflows; sie überwacht kein ERP-Feld dauerhaft und verändert das Kontrollkästchen nicht.
 
-## **Bestandteile der Karte:**
+## Voraussetzungen
 
-* **Feldname**
-  * **Beschreibung:** Gibt den Namen des Kontrollkästchenfelds an, das ausgewertet wird.
-  * **Detail:** Dieser sollte exakt mit dem im System verwendeten Feldbezeichner übereinstimmen. Er bestimmt, welcher Kontrollkästchenzustand überwacht wird.
-* **Boolean**
-  * **Beschreibung:** Legt die Bedingung fest, die den Workflow auslöst.
-  * **Optionen:**
-    * **True:** Der Workflow wird ausgelöst, wenn das Kontrollkästchen aktiviert ist.
-    * **False:** Der Workflow wird ausgelöst, wenn das Kontrollkästchen deaktiviert ist.
+Der Dokumenttyp muss ein Boolesches Feld für das Kontrollkästchen enthalten. Verwenden Sie dessen genaue technische Kennung. Dieses Beispiel nutzt `validation_complete`; ersetzen Sie die Kennung durch das entsprechende Feld Ihrer Organisation.
 
-#### **Funktionalität:**
+## Karte konfigurieren
 
-* **Zustandserkennung:** Die Karte überwacht kontinuierlich den Zustand des angegebenen Kontrollkästchenfelds.
-* **Bedingungsauswertung:** Das System prüft, ob sich das Kontrollkästchen in dem durch die Boolean-Bedingung angegebenen Zustand (aktiviert oder deaktiviert) befindet.
-* **Ausführung der Aktion:**
-  * **Bedingung erfüllt (True):**\
-    Stimmt der Zustand des Kontrollkästchens mit der angegebenen Boolean-Bedingung überein (entweder true für aktiviert oder false für deaktiviert), leitet das System die zugehörigen Aktionen ein. Dazu können das Aktivieren oder Deaktivieren von Formularfeldern, das Auslösen von Benachrichtigungen, das Starten von Workflows oder das Aktualisieren von Datensätzen gehören.
-  * **Bedingung nicht erfüllt (False):**\
-    Stimmt der Zustand des Kontrollkästchens nicht mit der Bedingung überein, werden je nach Workflow-Einrichtung alternative oder keine Aktionen ausgeführt.
+1. Wählen Sie **Das Kontrollkästchen … ist aktiviert** unter **Dokument Feld**.
+2. Geben Sie unter **Feldname** `validation_complete` ein und bestätigen Sie den Wert.
+3. Wählen Sie den Booleschen Vergleichswert **Wahr**, wenn das Kontrollkästchen gesetzt sein muss. Mit **Falsch** prüfen Sie, ob es nicht gesetzt ist.
 
-## **Einrichtung und Konfiguration:**
+## Praxisbeispiel: Nach einer Prüfung fortfahren
 
-* Benutzer konfigurieren die Karte, indem sie das Kontrollkästchenfeld aus einer Liste verfügbarer Felder auswählen und die Boolean-Bedingung festlegen.&#x20;
+**Wann verwenden:** Eine Rechnung benötigt eine vorgelagerte Prüfung. Der Prozess hält deren Abschluss in `validation_complete` fest.
 
-## Fazit:
+**Wo einfügen:** Unter den Bedingungen in **Und…**, vor der Folgeaktion, die Sie unter **Dann…** konfigurieren. Richten Sie diese Aktion und das Ereignis, das den Workflow startet, getrennt ein.
 
-Die Workflow-Karte "Checkbox Field Condition" ist ein grundlegendes Werkzeug für die Verwaltung dynamischer Formulare und Dokumente innerhalb eines ERP-Systems, in dem Benutzereingaben nachfolgende Datenprozesse bestimmen können. Indem sie Aktionen auf Basis des Zustands eines Kontrollkästchens automatisiert, steigert diese Karte die Workflow-Effizienz und stellt sicher, dass das Systemverhalten mit den Benutzereingaben übereinstimmt. Eine klare Dokumentation dieser Karte hilft Benutzern, sie effektiv in ihren Abläufen einzusetzen, und ermöglicht eine bessere Kontrolle über das Verhalten von Formularen und Prozessautomatisierungen.
+**Beispielkonfiguration:** Feld `validation_complete`, Vergleich **Wahr** (`true`), Kartenversion 2.
 
+<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-de-20261025.png" alt="Konfiguriertes Beispiel in Version 2: validation complete im Vergleich mit Wahr." width="651"><figcaption><p>Konfiguriertes Beispiel in Version 2: validation complete im Vergleich mit Wahr.</p></figcaption></figure>
 
+Für diese Konfiguration gelten die folgenden erwarteten Ergebnisse:
 
-**Hinweis: Nicht jeder Kunde verfügt über das Kontrollkästchen, es kann jedoch bei Bedarf hinzugefügt werden.**
+| Feldwert im Dokument | Ergebnis der Bedingung |
+| --- | --- |
+| Vorhandenes, gesetztes Kontrollkästchen (`true`) | Die Bedingung ist erfüllt. |
+| Vorhandenes, nicht gesetztes Kontrollkästchen (`false`) | Die Bedingung ist nicht erfüllt. |
+| Vorhandenes Kontrollkästchen mit leerem Wert (`None`) | Wird als nicht gesetzt gewertet; die Bedingung ist nicht erfüllt. |
+| Das Feld fehlt im Dokument | `NOT_FOUND_IN_DOCUMENT`; dieser Fall unterscheidet sich von einem vorhandenen, nicht gesetzten Kontrollkästchen. |
+
+Bei Auswahl von **Falsch** erfüllt ein vorhandenes, nicht gesetztes Kontrollkästchen die Bedingung und ein gesetztes Kontrollkästchen nicht. Ein fehlendes Feld liefert weiterhin ein eigenes Fehlerergebnis.
+
+## Vor der Aktivierung prüfen
+
+Prüfen Sie, ob das gewählte Feld Boolesch ist und zum verwendeten Dokumenttyp gehört. Testen Sie ein Dokument mit gesetztem Kontrollkästchen, eines mit nicht gesetztem Kontrollkästchen und den Fall eines fehlenden Felds. Kontrollieren Sie jeweils das Kartenergebnis und den weiteren Workflow-Pfad.
+
+Diese Karte prüft den Zustand des Kontrollkästchens; der vorgelagerte Prozess muss die Prüfmarkierung setzen. Ein automatisches Setzen ohne tatsächliche Prüfung belegt keinen abgeschlossenen Prüfschritt.
+
+## Admin-Beispielvideo
+
+Wann ich ein angehaktes Kontrollkästchen als Bedingung verwende und wie ich den Booleschen Wert prüfe. Die Beispiele zeigen erwartete Ergebnisse.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de-theme-v4.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v1/de.txt)

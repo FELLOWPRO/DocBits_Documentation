@@ -6,7 +6,7 @@ Die Seitenleiste lässt sich an Ihre Arbeitsweise anpassen. Ziehen Sie Einträge
 
 Klappen Sie die Seitenleiste auf (im Mini-Modus klicken Sie oben auf den Umschalter), scrollen Sie nach unten und klicken Sie auf **Anpassen**. Die Seitenleiste wechselt in den Bearbeitungsmodus.
 
-<figure><img src="../../.gitbook/assets/customizable-sidebar-edit-mode.png" alt="Seitenleiste im Bearbeitungsmodus"><figcaption><p>Im Bearbeitungsmodus zeigt jeder Eintrag einen Anfasspunkt und einen Sichtbarkeitsschalter.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/customizable-sidebar-edit-mode-de.png" alt="Seitenleiste im Bearbeitungsmodus"><figcaption><p>Im Bearbeitungsmodus zeigt jeder Eintrag einen Anfasspunkt und einen Sichtbarkeitsschalter.</p></figcaption></figure>
 
 ## Einträge neu anordnen
 

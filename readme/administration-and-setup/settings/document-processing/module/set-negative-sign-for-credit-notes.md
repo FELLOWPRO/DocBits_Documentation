@@ -35,3 +35,7 @@ Dies gilt nur für Dokumente, die als **Gutschrift** erkannt werden. Normale Rec
 
 * **Aktiviert lassen**, wenn Ihr Buchhaltungs- oder ERP-System erwartet, dass Gutschriften mit negativen Beträgen ankommen (dies ist die häufigste Konfiguration).
 * **Deaktivieren** Sie sie nur, wenn Ihr nachgelagertes System das Vorzeichen bereits selbst handhabt oder Gutschriftsbeträge positiv bleiben sollen.
+
+## Falscher Dokumenttyp?
+
+Diese Einstellung setzt eine korrekte Klassifizierung als Gutschrift voraus. Wenn ein eDoc als Invoice gespeichert wird, prüfen Sie zuerst die Transformation, Extraction Paths und spätere Skripte. Folgen Sie der [Anleitung zur Fehlerbehebung bei der Klassifizierung](../../global-settings/document-types/edi/credit-note-recognized-as-invoice.md), bevor Sie Vorzeichen ändern oder vorhandene Dokumente neu starten.

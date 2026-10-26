@@ -1,5 +1,9 @@
-# Infor LN (LN Integration)
+# Infor ERP / SAP (LN Integration)
 
 {% content-ref url="export-error-error-exporting-document-to-ln.-status-code-500/" %}
 [export-error-error-exporting-document-to-ln.-status-code-500](export-error-error-exporting-document-to-ln.-status-code-500/)
+{% endcontent-ref %}
+
+{% content-ref url="../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/configuring-the-default-tax-country-for-export-ln.md" %}
+[Standard-Steuerland für den Export LN konfigurieren](../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/configuring-the-default-tax-country-for-export-ln.md)
 {% endcontent-ref %}

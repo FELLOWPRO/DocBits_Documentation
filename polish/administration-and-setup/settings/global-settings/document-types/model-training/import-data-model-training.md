@@ -1,21 +1,39 @@
 # Import danych: Trenowanie modelu
 
-Przygotuj dokumenty reprezentatywne dla formatów, języków i typów dokumentów przetwarzanych w organizacji. Używaj wyłącznie formatów plików obsługiwanych przez swoją instalację. Usuń duplikaty i oddziel dokumenty treningowe od dokumentów przeznaczonych do oceny.
+Ta strona służy do dodawania przykładowych plików PDF dla typu dokumentu, a następnie do trenowania lub testowania jego modelu klasyfikacji. Wymagany jest dostęp do **Ustawienia** i **Typy dokumentów**. O celu funkcji szkoleniowych przeczytaj w sekcji [Cel i zastosowanie: Trenowanie modelu](purpose-and-use-model-training.md).
 
-## Otwieranie importu
+## Otwórz typ dokumentu
 
-W ustawieniach odpowiedniego typu dokumentu otwórz trenowanie modelu i wybierz funkcję importu.
+1. Przejdź do **Ustawienia → Typy dokumentów**.
+2. Znajdź typ dokumentu, który chcesz wytrenować. W jego wierszu wybierz **Szkolenie modelowe**. Poniższy przykład używa typu **Faktura**.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-pl.png" alt="Import, trenowanie modelu i test klasyfikacji. W przedstawionej wersji przycisk testu klasyfikacji ma błędny podpis „Klasyfikacja testów”. Nie uruchomiono treningu ani testu."><figcaption><p>Import, trenowanie modelu i test klasyfikacji. W przedstawionej wersji przycisk testu klasyfikacji ma błędny podpis „Klasyfikacja testów”. Nie uruchomiono treningu ani testu.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc651-document-types-pl-20261011.png" alt="Wiersz Faktura na stronie Typy dokumentów z linkiem Szkolenie modelowe"><figcaption><p>Otwórz Szkolenie modelowe z wybranego typu dokumentu.</p></figcaption></figure>
 
-## Wybór formatu i plików
+Pozostałe elementy tej karty służą innym celom: **Aktywować** włącza typ dokumentu, **Extraction** przełącza jego tryb ekstrakcji, ikona zębatki otwiera jego ustawienia, a pozostałe linki prowadzą do innych obszarów konfiguracji. Nie musisz ich zmieniać, aby otworzyć Szkolenie modelowe.
 
-Wybierz format liczb i dat zgodny z plikami, a następnie wybierz dokumenty do importu. Na przykład `1.234,56` i `1,234.56` używają różnych separatorów. Datę taką jak `05/06/2026` również należy interpretować zgodnie z wybranym formatem.
+Strona **Model Pociągu** pokazuje liczbę próbek oraz listę przesłanych dokumentów szkoleniowych. W organizacji przykładowej lista zawiera dokumenty; Twoja organizacja może wyświetlać inne dokumenty i inne liczby.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-pl.png" alt="Import dokumentów z wyborem formatu kwot i dat; nie przesłano pliku."><figcaption><p>Import dokumentów z wyborem formatu kwot i dat; nie przesłano pliku.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc651-model-training-pl-20261011.png" alt="Strona Model Pociągu typu Faktura z liczbą próbek, Import, Model pociągu, Klasyfikacja testów oraz listą dokumentów"><figcaption><p>Trzy akcje znajdują się w prawym górnym rogu listy szkoleniowej.</p></figcaption></figure>
 
-Sprawdź wybór przed uruchomieniem importu. Poczekaj na zakończenie przetwarzania i sprawdź błędy oraz przypisany typ dokumentu. Popraw błędnie sklasyfikowane dokumenty i nieprawidłowo wyodrębnione dane przed użyciem przykładów do treningu.
+## Importuj przykładowe pliki PDF
 
-## Trenowanie i ocena
+1. Wybierz **Import**.
+2. Wybierz **Format kwoty i daty** pasujący do przykładowego dokumentu. Na przykład wybierz **Germany** dla konwencji liczb i dat niemieckich. Ten wybór mówi DocBits, jak interpretować wartości w przesłanym dokumencie; nie zmienia języka aplikacji.
+3. Przeciągnij pliki PDF i upuść je w oknie dialogowym lub użyj przycisku **Wgrywać**, aby je wybrać. Obecny importer dokumentów przykładowych akceptuje **pliki PDF**; odrzuca inne typy plików. Wybranie plików rozpoczyna przesyłanie.
+4. Zamknij okno dialogowe i sprawdź, czy dokumenty pojawiły się na liście szkoleniowej. Jeśli DocBits zgłosi błąd przesyłania lub dokument już istnieje, popraw plik lub wybierz inny przykład przed kontynuowaniem.
 
-Wytrenuj model zgodnie z funkcjami i uprawnieniami dostępnymi w swojej wersji. Następnie oceń wynik na osobnej próbie. Samo dodanie dokumentów nie gwarantuje większej dokładności. Zobacz [Testowanie modelu](testing-the-model.md).
+<figure><img src="../../../../../.gitbook/assets/dbdc651-import-dialog-pl-20261011.png" alt="Okno dialogowe Wgrywać z selektorem Format kwoty i daty, obszarem przeciągnij i upuść oraz polem Wgrywać"><figcaption><p>Wybierz format przed wybraniem przykładowych plików PDF.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/dbdc651-format-menu-pl-20261011.png" alt="Menu Format kwoty i daty z wyborami krajów i regionów, w tym Germany i United Kingdom"><figcaption><p>Wybierz format użyty w dokumencie, a nie preferowany język interfejsu.</p></figcaption></figure>
+
+Informacje o działaniach na zaimportowanych próbkach znajdziesz w sekcji [Zarządzanie danymi treningowymi](manage-training-data.md).
+
+## Wytrenuj i sprawdź model
+
+Gdy wybrane przykładowe pliki PDF znajdą się na liście, wybierz **Model pociągu**. DocBits może przetwarzać szkolenie w tle; poczekaj na komunikat o zakończeniu, zanim uznasz nowy model za gotowy. Liczba próbek i ewentualny limit planu wyświetlane na tej stronie należą do Twojej organizacji.
+
+Aby sprawdzić klasyfikację, wybierz **Klasyfikacja testów**, a następnie prześlij osobny plik przykładowy w oknie dialogowym. Po przetworzeniu DocBits pokazuje, czy przewidziany typ dokumentu odpowiada tej stronie, i raportuje szczegóły klasyfikacji. Poniższe puste okno dialogowe testu pokazano bez przesyłania pliku.
+
+<figure><img src="../../../../../.gitbook/assets/dbdc651-test-dialog-pl-20261011.png" alt="Okno dialogowe Klasyfikacja testów z obszarem przeciągnij i upuść oraz polem Wgrywać"><figcaption><p>Użyj Klasyfikacja testów, aby sprawdzić model na innym dokumencie.</p></figcaption></figure>
+
+Informacje o interpretacji wyniku znajdziesz w sekcji [Testowanie modelu](testing-the-model.md). Jeśli wynik jest słaby, przejrzyj [dane treningowe](manage-training-data.md) i [przewodnik rozwiązywania problemów](troubleshooting.md), zanim dodasz więcej próbek.

@@ -1,43 +1,21 @@
-# Wyodrębnianie tabel dla elementu kosztowego
+# Ekstrakcja tabeli dla elementu kosztowego
 
-### **Do czego służy ta funkcja?**
+Elementy kosztowe to opłaty lub inne kwoty przedstawione jako pozycje w tabeli faktury. Jeśli ta funkcja jest włączona i dokument ma wyodrębnione pozycje, DocBits może klasyfikować te pozycje względem elementów kosztowych skonfigurowanych dla organizacji. Osoba weryfikująca może poprawić klasyfikację pozycji w tabeli dokumentu.
 
-Gdy ta opcja jest włączona, **DocBits** może wyodrębnić **elementy kosztów** z tabel na **poziomie pozycji** i odpowiednio je sklasyfikować.
+## Włączanie ustawienia
 
-* Jeśli system nie zaklasyfikuje elementu lub zaklasyfikuje go niepoprawnie, po lewej stronie pojawi się **ikona**.
-* Kliknięcie tej ikony otwiera listę wszystkich **skonfigurowanych elementów wyceny**, umożliwiając:
-  * **Change the classification** if it is incorrect.
-  * **Ustaw pozycję na "Uncategorized"**, jeśli jest to zwykła pozycja, a nie element kosztowy.
+1. Otwórz **Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja**.
+2. Pozostań na karcie **Ogólny** i rozwiń sekcję **Ekstrakcja**.
+3. Znajdź **Ekstrakcja tabeli dla elementu kosztowego** poniżej pól wymaganych do ekstrakcji tabeli. Administrator może włączyć ten przełącznik dla organizacji.
 
-### **Jak skonfigurować elementy kosztów**
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-pl-20261011.png" alt="Polskie ustawienia Klasyfikacja i ekstrakcja z widocznym, wyłączonym przełącznikiem Ekstrakcja tabeli dla elementu kosztowego"><figcaption><p>Przełącznik jest wyłączony w syntetycznej organizacji testowej. Nie został zmieniony na potrzeby tego przewodnika.</p></figcaption></figure>
 
-**przewodnik dotyczący konfigurowania elementów wyceny** w **DocBits** znajdziesz tutaj.
+{% hint style="info" %}
+Sam przełącznik nie tworzy elementów kosztowych ani pozycji faktury. Najpierw skonfiguruj elementy i zaimportuj wymagane dane. Połączony [przewodnik konfiguracji elementów kosztowych](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) pokazuje przykład M3. Inne ustawienia ekstrakcji opisuje sekcja [Klasyfikacja i ekstrakcja](README.md).
+{% endhint %}
 
-{% content-ref url="../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md" %}
-[table-extraction-for-costing-element.md](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
-{% endcontent-ref %}
+## Sprawdzanie lub poprawianie pozycji
 
-### **Gdzie włączyć tę funkcję**
+Otwórz dokument, którego tabela faktury zawiera wyodrębnione pozycje, i odszukaj ikonę elementu kosztowego obok odpowiedniej pozycji. Wybierz ikonę, aby otworzyć dostępne klasyfikacje. Wybierz właściwy skonfigurowany element kosztowy albo wybierz opcję **Niekategoryzowane**, jeśli pozycja jest zwykłym artykułem. Następnie sprawdź wynikową pozycję i sumy przed zapisaniem dokumentu.
 
-1. Przejdź do **Ustawienia → Przetwarzanie dokumentu → Klasyfikacja i wyodrębnianie → Wyodrębnianie tabeli**.
-2. Włącz **Wyodrębnianie elementów kosztów**.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
-
-### **Ustawianie lub zmiana klasyfikacji**
-
-1.  Click on the **box icon** next to the item.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
-2.  Pojawi się menu rozwijane  ze wszystkimi skonfigurowanymi elementami wyceny.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
-3.  Wybierz właściwy **typ elementu kosztorysowego**.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
-4. Klasyfikacja została obecnie odpowiednio zaktualizowana.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+Jeśli ikona lub klasyfikacja jest niedostępna, najpierw upewnij się, że dokument ma wyodrębnione pozycje, funkcja jest włączona, a dla organizacji skonfigurowano element kosztowy. Syntetyczny dokument testowy użyty do tej kontroli dokumentacji nie miał wyodrębnionych pozycji faktury, więc menu klasyfikacji nie mogło zostać przedstawione ani przetestowane. Powyższe kroki odzwierciedlają bieżącą obsługę dokumentu; podczas tej kontroli nie zapisano żadnej klasyfikacji.

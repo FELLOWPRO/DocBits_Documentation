@@ -1,5 +1,13 @@
 # Stammdaten-Einstellungen
 
+## Video-Tutorial: Stammdaten und Wertelisten
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/de.mp4" %}
+Stammdatenquellen, Wertelisten und Stammdaten-Einstellungen in DocBits
+{% endembed %}
+
+Das Video zeigt die Stammdatenquellen, die Wertelisten und die Stammdaten-Einstellungen eines Dokumenttyps.
+
 Die **Stammdaten-Einstellungen** verbinden die Validierungsfelder eines Dokuments mit Daten aus [Stammdaten-Lookup](../../../document-processing/master-data-lookup.md). Nutzen Sie **Stammdaten** (Lookup Master Data), um passende Datensätze zu finden und zu übernehmen. Nutzen Sie **LOV-Stammdaten**, um eine Werteliste aus einem Dataset als Auswahl anzubieten.
 
 ## Einstellungen öffnen

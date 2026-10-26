@@ -1,5 +1,13 @@
 # Audit d'Accès
 
+## Tutoriel vidéo : entreprise, abonnement et audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/fr.mp4" %}
+Informations sur l'entreprise, formule d'abonnement et journaux d'audit dans DocBits
+{% endembed %}
+
+La vidéo présente les informations et les préférences de l'entreprise, la formule d'abonnement, l'activité de connexion et les journaux d'audit.
+
 <figure><img src="../../../.gitbook/assets/dbdc756-access-audit-page-fr-20261011.png" alt="Journal d'audit avec la piste d'audit désactivée ; la page montre le sélecteur d'organisation, les filtres, Enable Now, Auto-refresh, Refresh et Export"><figcaption><p>La page Sandbox en français avant l'activation de la journalisation d'audit.</p></figcaption></figure>
 
 Audit d'Accès enregistre qui a créé, modifié ou supprimé une ressource, et quand. Ouvrez **Paramètres → Journal d'Activité → Audit d'Accès** pour consulter le journal. N'activez le service pour une organisation que si vous avez l'intention de collecter des événements d'audit.

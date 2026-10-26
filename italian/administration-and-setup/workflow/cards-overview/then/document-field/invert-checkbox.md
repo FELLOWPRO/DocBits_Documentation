@@ -1,6 +1,6 @@
 # Invert Checkbox
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-document-field-01-it-20261023.png" alt="Campo del documento Invertire la casella di controllo Nome del campo"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

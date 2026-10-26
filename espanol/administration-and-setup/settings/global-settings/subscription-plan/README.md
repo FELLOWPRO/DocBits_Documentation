@@ -1,5 +1,13 @@
 # Plan de suscripción
 
+## Tutorial en vídeo: Empresa, suscripción y auditoría
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/es.mp4" %}
+Información de la empresa, plan de suscripción y registros de auditoría en DocBits
+{% endembed %}
+
+El vídeo muestra la información y las preferencias de la empresa, el plan de suscripción, la actividad de inicio de sesión y los registros de auditoría.
+
 <figure><img src="../../../../.gitbook/assets/subscriptions_overview.png" alt="Plan de suscripción"><figcaption><p>Página Plan de suscripción</p></figcaption></figure>
 
 La página **Plan de suscripción** ofrece una visión general completa de su suscripción de DocBits en un solo lugar: el plan en sí, las suscripciones de aplicaciones y funciones habilitadas para su organización y el uso de tokens. Ábrala desde **Configuración → Organización y acceso → Plan de suscripción**.

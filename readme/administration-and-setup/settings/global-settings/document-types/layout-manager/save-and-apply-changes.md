@@ -1,25 +1,46 @@
 # Save and apply changes
 
-## Saving and applying changes made in the Layout Manager is an important step to ensure that your layout customizations are effectively applied in the document processing workflow.
+Changes made in the Layout Builder are not live until you save them. Saving stores the layout for the document type so that new documents use it.
 
-### Here are the steps to save and apply changes:
+## Saving your changes
 
-#### Saving the changes:
+After you edit the layout, select **Save** in the header at the top right.
 
-* After you have made the desired customizations in the Layout Manager, look for the "Save" button to save the changes.
-* Click this button to save your changes in the Layout Manager. This backs up your layout customizations and ensures that they are available for future editing sessions.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-header-en.png" alt="Layout Builder header with the layout selectors on the left and the Save button and More menu on the right"><figcaption>The **Save** button sits at the top right of the Layout Builder.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+While you work, the header shows the state of your changes:
 
-#### Applying the changes to the document processing workflow:
+- A **Save** button without a message next to it means the layout is unchanged.
+- **Unsaved changes** appears as soon as you modify the layout. Select **Save** to store the changes.
 
-* Once your changes are saved in the Layout Manager, they are usually automatically applied to the document processing workflow that uses that specific document type.
-* New documents based on this template will inherit the updated layout settings when they are created. This means that the new documents will include the new groups, fields, or other layout customizations you made in Layout Manager.
-* Existing documents already created using this template may be treated differently depending on your software and configuration. In some cases, changes may be automatically applied to pre-existing documents, while in other cases, manual adjustments may be required to bring existing documents into line with the updated layout settings.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-unsaved-changes-en.png" alt="Layout Builder header showing the Unsaved changes indicator next to the Save button"><figcaption>The **Unsaved changes** indicator appears while the layout has not been saved yet.</figcaption></figure>
 
-#### Testing the changes:
+After a successful save, the indicator is replaced by the time the layout was last saved. Selecting **Save** again is safe: if nothing has changed since the last save, nothing is written.
 
-* After you have saved the layout changes and they have been applied to the document processing workflow, it is advisable to test the changes to ensure that they work as intended.
-* Create new test documents or review existing documents to ensure that the updated layout settings are applied correctly and that data is captured and displayed as expected.
+If you try to leave the Layout Builder with unsaved changes, DocBits asks whether to discard them. Select **Cancel** to stay and save, or **OK** to leave without saving.
 
-By following these steps, you can effectively save changes in Layout Manager and apply them to the document processing workflow. This ensures a smooth integration of your layout customizations into the document creation and processing process.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-leave-prompt-en.png" alt="Dialog asking to confirm leaving the Layout Builder with unsaved changes"><figcaption>Confirmation shown when leaving with unsaved changes.</figcaption></figure>
+
+## Other header actions
+
+The **More** menu (three dots) next to **Save** holds the remaining layout actions:
+
+- **Auto generate template** — build a layout automatically from the fields of the document type.
+- **Apply Default layout to Origins** — copy the default layout to the layouts of the individual origins.
+- **Use default template** — reset the layout to the default template.
+- **Edit JSON** — edit the raw layout definition as JSON.
+- **Copy JSON** — copy the layout definition to the clipboard.
+- **Layout settings** — open the general layout settings.
+
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-more-menu-en.png" alt="Layout Builder More menu with Auto Generate template, Apply Default layout to Origins, Use default template, Edit JSON, Copy JSON and Layout settings"><figcaption>The actions available under the **More** menu.</figcaption></figure>
+
+## Applying the changes
+
+Once saved, the layout is used by the document processing workflow for that document type:
+
+- New documents processed with this document type use the updated layout.
+- Documents that were already processed keep the layout they were captured with.
+
+## Testing the changes
+
+After saving, open a document of that document type and check that the fields and groups appear as intended. If something is missing, return to the Layout Builder, adjust the layout and save again.

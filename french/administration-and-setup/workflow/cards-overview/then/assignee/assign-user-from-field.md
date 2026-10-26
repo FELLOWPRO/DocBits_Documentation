@@ -1,6 +1,6 @@
 # Assign user from field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-02-fr-20261023.png" alt="Attribué à Assigner un utilisateur à partir du champ Nom du champ , utiliser l&#x27;utilisateur Utilisateur comme solution de repli" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

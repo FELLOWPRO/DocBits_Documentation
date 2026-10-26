@@ -244,7 +244,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Standard-Layout auf alle Origins anwenden:**\
     Ein neuer **Apply Default Layout to Origins**-Button wurde im Layout-Konfigurationsbildschirm eingeführt. Administratoren können jetzt das Standard-Layout mit einer einzigen Aktion auf alle Origins innerhalb einer Organisation übertragen, wodurch der zeitaufwändige manuelle Prozess des Kopierens und Einfügens von Layout-JSON für jede Origin einzeln entfällt. Dies ist besonders nützlich beim Onboarding neuer Kunden, bei dem mehrere Origins konsistent konfiguriert werden müssen.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-de-20261023.png" alt="Layout Builder in deutscher Oberfläche mit dem geöffneten Dialog zum Anwenden des Standardlayouts auf mehrere Origins."><figcaption><p>Der Dialog zum Anwenden des Standardlayouts auf Origins. Beispieldaten, es wurde nichts gespeichert.</p></figcaption></figure>
 *   **Dokumenttyp-Auswahl für FTP-Import:**\
     FTP-Import-Konfigurationen unterstützen jetzt die ordnerspezifische Dokumenttyp-Zuweisung. Bei der Konfiguration eines FTP-Imports können Benutzer angeben, welcher Dokumenttyp — wie Rechnung oder Auftragsbestätigung — auf alle aus diesem Ordner importierten Dokumente angewendet werden soll. Dokumente werden beim Import automatisch klassifiziert, wodurch eine manuelle Dokumenttyp-Zuweisung nach der Aufnahme entfällt. Dies unterstützt Organisationen, die mehrere Dokumenttypen über verschiedene Unterorganisationen und Ordner verwalten.
 

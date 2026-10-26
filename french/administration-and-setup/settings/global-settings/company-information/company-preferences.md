@@ -1,5 +1,13 @@
 # Préférences de l’entreprise
 
+## Tutoriel vidéo : entreprise, abonnement et audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/fr.mp4" %}
+Informations sur l'entreprise, formule d'abonnement et journaux d'audit dans DocBits
+{% endembed %}
+
+La vidéo présente les informations et les préférences de l'entreprise, la formule d'abonnement, l'activité de connexion et les journaux d'audit.
+
 Dans les informations de l’entreprise, ouvrez les préférences pour définir les formats de date et de montant de votre organisation.
 
 <figure><img src="../../../../.gitbook/assets/prior-i003-fr.png" alt="Préférences de l’entreprise et formats des montants et dates."><figcaption><p>Préférences de l’entreprise et formats des montants et dates.</p></figcaption></figure>

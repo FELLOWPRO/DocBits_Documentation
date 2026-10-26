@@ -1,6 +1,6 @@
 # Assign a Task with Title
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-04-it-20261023.png" alt="Compito Assegnare Compito/Notifica con titolo: Titolo , description: Descrizione e priority: Priorità al Tipo di assegnatario restituito dalla tabella decisionale. Informateli via e-mail: Invia e-mail ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

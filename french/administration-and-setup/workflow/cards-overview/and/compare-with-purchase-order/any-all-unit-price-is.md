@@ -1,8 +1,8 @@
 # Any / All Unit Price is
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-13-fr-20261023.png" alt="Comparaison des bons de commande Le prix unitaire de N&#x27;importe quel/Tous est Opérateur par rapport au bon de commande, avec une tolérance de Tolérance Montant Type de tolérance . Comparer à Données comparatives" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-13-fr-20261023.png" alt="Comparaison des bons de commande Le prix unitaire de N&#x27;importe quel/Tous est Opérateur par rapport au bon de commande, avec une tolérance de Tolérance Montant Type de tolérance . Comparer à Données comparatives" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

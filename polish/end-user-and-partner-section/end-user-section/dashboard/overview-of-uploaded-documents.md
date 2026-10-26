@@ -10,6 +10,6 @@ Jeśli grupowanie jest dostępne, wybierz pole nad tabelą. Dla pól daty wybier
 
 Przycisk **+** obok kart typów dokumentów pokazuje dodatkowe typy. Zmieniaj kolejność kart przez przeciąganie. Usunięcie karty zmienia tylko widok i nie usuwa dokumentów.
 
-Otwórz koło zębate i ustawienia kolumn. Przenoś kolumny między listą ukrytych i widocznych oraz przeciągaj widoczne kolumny, aby je uporządkować. Możesz także dodać pola typu dokumentu. Zobacz [Zmiana kolumn dokumentu](change-document-columns.md).
+Otwórz koło zębate **Ustawienia zaawansowane** po prawej stronie paska wyszukiwania, a w jego menu przycisk **Ustawienia kolumn**. Przenoś kolumny między listą ukrytych i widocznych oraz przeciągaj widoczne kolumny, aby je uporządkować. Możesz także dodać pola typu dokumentu. Zobacz [Zmiana kolumn dokumentu](change-document-columns.md).
 
 Wyszukiwanie, działania i widoki opisuje [przewodnik po pulpicie](README.md).

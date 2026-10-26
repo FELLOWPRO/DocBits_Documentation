@@ -1,5 +1,13 @@
 # Preferenze aziendali
 
+## Video tutorial: Società, abbonamento e controllo
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/it.mp4" %}
+Informazioni sulla società, piano di abbonamento e registri di controllo in DocBits
+{% endembed %}
+
+Il video mostra le informazioni e le preferenze della società, il piano di abbonamento, l'attività di accesso e i registri di controllo.
+
 Nelle informazioni sull’azienda, aprire le preferenze per definire i formati di data e importo dell’organizzazione.
 
 <figure><img src="../../../../.gitbook/assets/prior-i003-it.png" alt="Preferenze dell’azienda e formati di importi e date."><figcaption><p>Preferenze dell’azienda e formati di importi e date.</p></figcaption></figure>

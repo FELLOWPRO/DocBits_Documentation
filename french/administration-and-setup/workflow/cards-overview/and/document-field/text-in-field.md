@@ -1,6 +1,6 @@
 # Text in Field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-01-fr-20261023.png" alt="Champ du document Texte Opérateur dans le champ Nom du champ" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

@@ -1,5 +1,13 @@
 # Zugriffsprotokoll
 
+## Video-Tutorial: Unternehmen, Abonnement und Audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/de.mp4" %}
+Unternehmensinformationen, Abonnement-Plan und Audit-Protokoll in DocBits
+{% endembed %}
+
+Das Video zeigt die Unternehmensinformationen und -präferenzen, den Abonnement-Plan, die Anmeldeaktivität und das Audit-Protokoll.
+
 Das Zugriffsprotokoll zeichnet auf, wer eine Ressource erstellt, geändert oder gelöscht hat und wann das geschehen ist. Öffnen Sie die Audit-Protokolle in den Einstellungen.
 
 <figure><img src="../../../.gitbook/assets/access-audit-current-de.png" alt="Aktuelle deutsche Ansicht der Audit-Protokolle mit Zeitbereich, Aktionsfilter und Übersichtskarten. Im gezeigten Beispiel ist der Audit-Trail-Dienst bereits aktiviert; dies ist keine Aussage über die Standardeinstellung."><figcaption><p>Aktuelle deutsche Ansicht der Audit-Protokolle mit Zeitbereich, Aktionsfilter und Übersichtskarten. Im gezeigten Beispiel ist der Audit-Trail-Dienst bereits aktiviert; dies ist keine Aussage über die Standardeinstellung.</p></figcaption></figure>

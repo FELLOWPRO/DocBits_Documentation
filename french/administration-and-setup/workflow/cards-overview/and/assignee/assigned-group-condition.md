@@ -1,6 +1,6 @@
 # Assigned Group Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-assignee-02-fr-20261023.png" alt="Attribué à Le groupe attribué Opérateur l&#x27;un de Groupes" width="563"><figcaption></figcaption></figure>
 
 **Objectif :**
 

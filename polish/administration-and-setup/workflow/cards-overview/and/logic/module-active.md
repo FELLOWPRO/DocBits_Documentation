@@ -1,6 +1,6 @@
 # Module active
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-02-pl-20261023.png" alt="Logika Moduł Moduł Operator jest aktywny." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

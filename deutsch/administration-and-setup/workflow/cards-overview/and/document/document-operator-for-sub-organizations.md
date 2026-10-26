@@ -1,6 +1,6 @@
 # Document Operator for Sub-Organizations
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-01-de-20261023.png" alt="Dokument Dokument Operator Teil der Unterorganisation Sub-Org" width="563"><figcaption></figcaption></figure>
 
 ## Zweck:
 

@@ -1,5 +1,13 @@
 # Listes de valeurs
 
+## Tutoriel vidéo : données de base et listes de valeurs
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/fr.mp4" %}
+Sources de données de base, listes de valeurs et paramètres des données de base dans DocBits
+{% endembed %}
+
+La vidéo présente les sources de données de base, les listes de valeurs et les paramètres des données de base d'un type de document.
+
 Les listes de valeurs proposent des options prédéfinies pour les champs des documents. Un champ peut utiliser une liste pendant la validation. Les libellés peuvent être traduits ; la valeur technique reste identique dans toutes les langues.
 
 ## Ouvrir les listes

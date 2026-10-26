@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-14-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Porównaj całkowite opłaty w polu Nazwa pola Operator odpowiadającą opłacie w zamówieniu zakupu z tolerancją Ilość tolerancji Typ tolerancji . Identyfikator opłaty jako końcówka nazwy pola po separatorze Wartość ." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

@@ -1,6 +1,6 @@
 # Assign user from field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-02-it-20261023.png" alt="Assegnatario Assegnare l&#x27;utente dal campo Nome del campo , usare l&#x27;utente Utente come fallback" width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

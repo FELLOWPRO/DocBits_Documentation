@@ -1,5 +1,13 @@
 # Informações da empresa
 
+## Vídeo tutorial: Empresa, assinatura e auditoria
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/pt.mp4" %}
+Informações da empresa, plano de assinatura e registros de auditoria no DocBits
+{% endembed %}
+
+O vídeo mostra as informações e as preferências da empresa, o plano de assinatura, a atividade de login e os registros de auditoria.
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-pt.png" alt="Dados da empresa com valores da organização ocultos."><figcaption><p>Dados da empresa com valores da organização ocultos.</p></figcaption></figure>
 
 A página Company Information permite gerenciar o perfil da sua empresa, as preferências e os detalhes da assinatura. Ela é organizada nas seguintes seções:

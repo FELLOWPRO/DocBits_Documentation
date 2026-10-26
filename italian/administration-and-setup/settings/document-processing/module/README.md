@@ -1,5 +1,13 @@
 # Modulo
 
+## Video tutorial: Panoramica impostazioni e moduli
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/it.mp4" %}
+Panoramica delle impostazioni e moduli in DocBits
+{% endembed %}
+
+Il video mostra i cinque gruppi della Panoramica delle impostazioni, la ricerca e i collegamenti rapidi e ciò che controllano le tre pagine Moduli.
+
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-it.png" alt="Moduli per ordini e finanze. L’opzione con il testo «ordine di pagamento» riguarda il confronto con l’ordine di acquisto (PO). Nessuna opzione è stata modificata."><figcaption><p>Moduli per ordini e finanze. L’opzione con il testo «ordine di pagamento» riguarda il confronto con l’ordine di acquisto (PO). Nessuna opzione è stata modificata.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-it.png" alt="Moduli di integrazione dei documenti, inclusi i dati anagrafici personalizzati e DocBits Operator. Nessun modulo è stato attivato durante la cattura."><figcaption><p>Moduli di integrazione dei documenti, inclusi i dati anagrafici personalizzati e DocBits Operator. Nessun modulo è stato attivato durante la cattura.</p></figcaption></figure>

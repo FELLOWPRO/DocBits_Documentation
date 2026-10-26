@@ -1,6 +1,6 @@
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-08-fr-20261023.png" alt="Comparaison des bons de commande N&#x27;importe quel/Tous type de commande de la commande d&#x27;achat Opérateur Type de commande ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

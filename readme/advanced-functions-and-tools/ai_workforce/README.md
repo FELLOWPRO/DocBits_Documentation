@@ -26,6 +26,47 @@ AI Workforce is enabled per organization from the main settings.
 
 Once enabled, **AI Workforce** appears in the main navigation sidebar and the workspace becomes available to your organization.
 
+## Mission Control
+
+**Mission Control** is the command center where you **start missions and watch them live**. Open it from the AI Workforce sidebar. The page has three parts:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-1-mission-control-en-20261012.png" alt="Mission Control with mission cards, the Orchestrator chat, and the open Inbox panel"><figcaption><p>Mission Control: mission cards on top, the Orchestrator chat in the middle, and the Inbox panel on the right</p></figcaption></figure>
+
+* **Mission cards** — the strip at the top shows the currently active missions with their status, progress, and number of issues. Click a card to open the mission.
+* **Orchestrator chat** — the center of the page. Describe in plain language what you want done, for example _"Process all supplier invoices that arrived this week and match them against their purchase orders"_, and press **Send**. The Orchestrator plans the work and starts the mission; you watch its replies in the same chat.
+* **Inbox panel** — the collapsible panel on the right shows pending approval requests (see [Inbox](./#inbox)). Click a request to read it and **Approve**, **Reject**, or reply to the agent; a request that needs no decision can be set aside. The number on the panel shows how many requests are waiting. The same requests also appear under **Inbox** in the sidebar.
+
+To create a mission, you can also press **New Mission** in the AI Workforce sidebar — it leads to the same chat.
+
+## Agent List
+
+The **Agent List** shows every agent in your organization at a glance — the **Router**, your **Orchestrators**, and all **Specialists** — grouped in that order.
+
+<figure><img src="../../.gitbook/assets/ai-workforce-2-agent-list-en-20261012.png" alt="Agent List with Router, Orchestrator and Specialist sections and the Create Agent button"><figcaption><p>Agent List: Router on top, then Orchestrators, then Specialists; the legend marks system and custom agents</p></figcaption></figure>
+
+Each card shows the agent's **name**, its **role**, the **skills** it may use, and its current status. From the card you can:
+
+* **Open the agent** — click the card to open its full profile with all [Agent settings](./#agent-settings).
+* **Enable or disable** — use the switch on orchestrator cards. The system only lets you switch off an orchestrator while at least one other orchestrator stays enabled, and with two or more active orchestrators the **Router** takes over dispatching (see [Hierarchy and activation rules](./#hierarchy-and-activation-rules)).
+* **Edit or delete** — custom agents (marked by the legend as **Custom**) have a menu with these two actions; system agents can be configured but not deleted.
+* **Create Agent** — the button at the top right starts the wizard for a new agent (see [Creating custom agents](./#creating-custom-agents)).
+
+The legend at the top shows the difference between **System** and **Custom** agents, so you can always tell what came with DocBits and what you built yourself.
+
+## Activities
+
+**Activities** is the log of what has happened in your AI Workforce. Every change — a mission created, an issue updated, an approval request raised — appears here as a row with three pieces of information:
+
+<figure><img src="../../.gitbook/assets/ai-workforce-3-activities-en-20261012.png" alt="Activities log with entity, action and actor filters and a list of recent changes"><figcaption><p>Activities: each row shows the affected area, what happened, who did it, and when</p></figcaption></figure>
+
+* the **area** the change belongs to — Inbox, Issues, Missions, Projects, Agents, or Agent runs — shown as a colored badge on the left;
+* the **action** that was performed — for example created, updated, approved, or rejected — as a second badge;
+* the **summary** of the change, the **actor** who caused it (an agent or a person), and the **time**.
+
+Use the **search field** to find a specific entry, and the three dropdowns above the list to filter by **area** (entity), **action**, and **actor**. Click a row to jump to the related item — for example the mission or issue the entry is about. With **Records per Page** you choose how many entries are shown at once, and the arrows at the bottom right move through longer histories.
+
+The Activity log answers the question _"what did the AI Workforce just do, and who did it?"_ — useful after an approval, when checking why a document was classified a certain way, or when reviewing what your custom agents have been doing.
+
 ## Dashboard
 
 The **Dashboard** is your overview of the AI Workforce — KPIs, charts, and activity lists at a glance. You choose which metrics are shown.

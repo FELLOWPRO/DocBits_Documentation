@@ -1,6 +1,6 @@
 # Assign to group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-07-it-20261023.png" alt="Assegnatario Assegnare al gruppo Gruppi ." width="563"><figcaption></figcaption></figure>
 
 ## Scopo:
 

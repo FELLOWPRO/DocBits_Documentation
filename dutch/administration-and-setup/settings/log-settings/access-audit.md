@@ -1,5 +1,13 @@
 # Toegangsaudit
 
+## Videotutorial: Bedrijf, abonnement en audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/nl.mp4" %}
+Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
+{% endembed %}
+
+De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
+
 <figure><img src="../../../.gitbook/assets/dbdc758-access-audit-page-nl-20261011.png" alt="Audit Logs met uitgeschakelde auditregistratie; de pagina toont de organisatieschakelaar, filters, Enable Now, Auto-refresh, Refresh en Export"><figcaption><p>De Nederlandse Sandbox-pagina voordat auditregistratie is ingeschakeld.</p></figcaption></figure>
 
 Toegangsaudit registreert wie een bron heeft aangemaakt, gewijzigd of verwijderd, en wanneer. Open **Instellingen → Activiteitenlogboek → Toegangsaudit** om het logboek te bekijken. Schakel de dienst voor een organisatie alleen in wanneer u auditgebeurtenissen wilt verzamelen.

@@ -46,6 +46,7 @@
 * [Eindgebruikerssectie](end-user-and-partner-section/end-user-section/README.md)
   * [Toegang verkrijgen en inloggen](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Globale Snelzoek](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Video's en tutorials](end-user-and-partner-section/end-user-section/videos-and-tutorials.md)
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Wijzigingen in webadressen](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [Aanpasbare Zijbalk](end-user-and-partner-section/end-user-section/customizable-sidebar.md)

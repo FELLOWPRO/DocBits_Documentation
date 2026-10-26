@@ -1,6 +1,6 @@
 # Set to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-document-field-02-fr-20261023.png" alt="Champ du document Fixer Nom du champ à Texte" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

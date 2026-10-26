@@ -1,6 +1,6 @@
 # Item Receiving Method
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-table-03-it-20261023.png" alt="Tabella Qualsiasi/Tutti metodo di ricezione degli articoli Operatore Valore" width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

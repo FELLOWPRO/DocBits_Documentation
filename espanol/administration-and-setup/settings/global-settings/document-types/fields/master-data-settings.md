@@ -1,5 +1,13 @@
 # Ajustes de datos maestros
 
+## Tutorial en vídeo: Datos maestros y listas de valores
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/es.mp4" %}
+Fuentes de datos maestros, listas de valores y ajustes de datos maestros en DocBits
+{% endembed %}
+
+El vídeo muestra las fuentes de datos maestros, las listas de valores y los ajustes de datos maestros de un tipo de documento.
+
 Los **Ajustes de datos maestros** conectan los campos de validación de un documento con los datos almacenados en [Búsqueda de datos maestros](../../../document-processing/master-data-lookup.md). Use **Búsqueda de datos maestros** para encontrar y rellenar registros coincidentes. Use **Datos maestros LOV** para ofrecer una lista de valores de un conjunto de datos.
 
 ## Abrir los ajustes

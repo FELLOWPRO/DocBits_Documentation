@@ -1,6 +1,6 @@
 # Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-assignee-01-pt-20261023.png" alt="Responsável Usuário atribuído Operador um de Usuários" width="552"><figcaption></figcaption></figure>
 
 **Propósito**
 

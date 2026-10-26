@@ -1,6 +1,6 @@
 # Item Receiving Method
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-table-03-pt-20261023.png" alt="Tabela Qualquer/Todos método de recebimento do item Operador Valor" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

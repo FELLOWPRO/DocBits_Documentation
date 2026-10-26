@@ -51,6 +51,7 @@
 * [终端用户部分](end-user-and-partner-section/end-user-section/README.md)
   * [获取访问权限并登录](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [全局快速搜索](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [视频和教程](end-user-and-partner-section/end-user-section/videos-and-tutorials.md)
   * [站点地图](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Web 地址变更](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [可自定义侧边栏](end-user-and-partner-section/end-user-section/customizable-sidebar.md)

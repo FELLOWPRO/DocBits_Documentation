@@ -1,6 +1,6 @@
 # Invert Checkbox
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-document-field-01-es-20261023.png" alt="Campo del documento Invertir casilla Nombre del campo"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

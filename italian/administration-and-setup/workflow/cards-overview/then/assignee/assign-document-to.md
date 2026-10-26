@@ -1,6 +1,6 @@
 # Assign document to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-05-it-20261023.png" alt="Assegnatario Assegnare il documento a Tipo di assegnatario in base alla tabella delle decisioni." width="563"><figcaption></figcaption></figure>
 
 ## Scopo:
 

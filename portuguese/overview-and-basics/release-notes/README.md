@@ -244,7 +244,7 @@ Os anúncios de lançamento originais permanecem abaixo para referência.
 *   **Aplicar o layout padrão a todos os origins:**\
     Um novo botão **Apply Default Layout to Origins** foi introduzido na tela de configuração de layout. Os administradores agora podem enviar o layout padrão a todos os origins de uma organização em uma única ação, eliminando o trabalhoso processo manual de copiar e colar o JSON do layout em cada origin individualmente. Isso é especialmente útil na integração de novos clientes, quando vários origins precisam ser configurados de forma consistente.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-pt-20261023.png" alt="Layout Builder com a interface em português e a caixa de diálogo aberta para aplicar o layout predefinido a vários Origins."><figcaption><p>A caixa de diálogo para aplicar o layout predefinido aos Origins. Dados de exemplo; nada foi guardado.</p></figcaption></figure>
 *   **Seleção do tipo de documento para importação via FTP:**\
     As configurações de importação via FTP agora oferecem suporte à atribuição do tipo de documento por pasta. Ao configurar uma importação via FTP, os usuários podem especificar qual tipo de documento — como Invoice ou Order Confirmation — deve ser aplicado a todos os documentos importados dessa pasta. Os documentos são classificados automaticamente na importação, eliminando a necessidade de atribuir manualmente o tipo de documento após a ingestão. Isso atende organizações que gerenciam vários tipos de documento em diferentes suborganizações e pastas.
 

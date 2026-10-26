@@ -11,7 +11,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Liste von Werten**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-de.png" alt="Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet."><figcaption><p>Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet.</p></figcaption></figure>
 2.  Klicken Sie auf **Neu**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -32,7 +32,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
     * Wenn Sie mehrere Werte haben, können Sie auf **Weitere Werte hinzufügen** klicken, um diese hinzuzufügen.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-de.png" alt="Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert."><figcaption><p>Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert.</p></figcaption></figure></div>
 
     * **HINWEIS:** Sie finden die Steuercodes in LN unter: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -42,7 +42,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
     <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="DocBits Bild"><figcaption></figcaption></figure>
@@ -64,7 +64,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 1.  Gehen Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -101,7 +101,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Liste von Werten**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-de.png" alt="Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet."><figcaption><p>Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet.</p></figcaption></figure>
 2.  Klicken Sie auf **Neu**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -122,7 +122,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
     * Wenn Sie mehrere Werte haben, können Sie auf **Weitere Werte hinzufügen** klicken, um diese hinzuzufügen.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-de.png" alt="Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert."><figcaption><p>Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert.</p></figcaption></figure></div>
 
     * **HINWEIS:** Sie finden die Steuercodes in LN unter: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -132,7 +132,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
     <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="DocBits Bild"><figcaption></figcaption></figure>
@@ -154,7 +154,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 1.  Gehen Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>

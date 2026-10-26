@@ -1,6 +1,6 @@
-# Compare two Fields with Tolerance
+# Vergleichen Sie zwei Felder mit Toleranz
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-19d9a4d5e71d-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -22,7 +22,7 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
      * **Kleiner oder gleich (≤):** Stellt sicher, dass der Wert des ersten Feldes kleiner oder gleich dem des zweiten Feldes ist.
 3. **Feldname (2)**
    * **Beschreibung:** Gibt das zweite Dokumentfeld an, das mit dem ersten Feld verglichen wird.
-   * **Detail:** Dieser sollte exakt mit dem Bezeichner des zweiten Feldes innerhalb des Dokuments übereinstimmen.&#x20;
+   * **Detail:** Dieser sollte exakt mit dem Bezeichner des zweiten Feldes innerhalb des Dokuments übereinstimmen.
 4. **Toleranzbetrag**
    * **Beschreibung:** Legt die zulässige Fehlertoleranz für den Vergleich fest.
    * **Detail:** Der Toleranzbetrag ist ein numerischer Wert, der die maximal zulässige Differenz zwischen den beiden Feldwerten angibt, damit der Vergleich als erfüllt gilt.
@@ -43,8 +43,32 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 
 ## **Einrichtung und Konfiguration:**
 
-* Benutzer konfigurieren die Karte, indem sie die beiden zu vergleichenden Felder aus einer Liste der im System verfügbaren Felder auswählen. Der Operator wird aus einer Dropdown-Liste der verfügbaren Vergleichsoptionen ausgewählt. Benutzer geben den Toleranzbetrag ein und wählen den Toleranztyp (Wert oder Prozent).&#x20;
+* Benutzer konfigurieren die Karte, indem sie die beiden zu vergleichenden Felder aus einer Liste der im System verfügbaren Felder auswählen. Der Operator wird aus einer Dropdown-Liste der verfügbaren Vergleichsoptionen ausgewählt. Benutzer geben den Toleranzbetrag ein und wählen den Toleranztyp (Wert oder Prozent).
 
 ## **Fazit:**
 
 Die Workflow-Karte "Compare Two Fields with Tolerance" ist ein leistungsstarkes Werkzeug, um Dokumentfelder zu vergleichen und dabei zulässige Datenabweichungen zu berücksichtigen. Indem sie Toleranz auf Feldvergleiche anwendet, verleiht diese Karte dem Workflow Flexibilität und ermöglicht es ihm, reale Datenabweichungen zu handhaben. Sie verbessert die Entscheidungsfindung, unterstützt die Datenvalidierung und steigert die Workflow-Automatisierung insgesamt.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann nutzen:** Bei einer kontrollierten Rechnung mit genau einer Nettogruppe ohne weitere Nettobestandteile zwei fachlich gleichartige Beträge abgleichen.
+
+**Wo:** Standard-Workflow-Designer → Und → Dokumentenfeld.
+
+**Konfiguration:** Wählen Sie in Version 2 die vorhandenen Betragsfelder `net_amount` und `total_net_amount`, Gleichheit (`eq`), Toleranz `5` und den absoluten Typ Wert (`value`).
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Bei `103` gegenüber `100` beträgt die Differenz `3`; die Bedingung ist erfüllt. Bei `110` gegenüber `100` beträgt sie `10`; die Bedingung ist nicht erfüllt. Bei mehreren Steuergruppen oder unterschiedlichen fachlichen Bedeutungen müssen andere passende Felder gewählt werden. Fehlende oder nicht numerische Werte sind getrennte Fehlerfälle.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann ich zwei Beträge mit einer zulässigen Abweichung vergleiche und wie ich die Felder und Toleranzen einstelle. Die Beispiele zeigen erwartete Ergebnisse.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-two-fields-tolerance-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-two-fields-tolerance-admin/v1/de-theme-v4.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-two-fields-tolerance-admin/v1/de.txt)

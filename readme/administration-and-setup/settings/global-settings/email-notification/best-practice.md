@@ -1,4 +1,4 @@
-# Best Practice
+# Bewährte Vorgehensweisen
 
 ## Hier sind einige Best Practices für die effektive Nutzung von E-Mail-Benachrichtigungen:
 

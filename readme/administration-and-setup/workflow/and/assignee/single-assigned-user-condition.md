@@ -1,6 +1,6 @@
-# Single Assigned User Condition
+# Bedingung für einen einzelnen zugewiesenen Benutzer
 
-<figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 **Zweck**
 
@@ -12,17 +12,17 @@ Diese Workflow-Karte ermöglicht Operationen auf Basis der Zuweisung einer Aufga
    * **Beschreibung**: Gibt die Logik an, die auf die Benutzerzuweisung angewendet wird.
    * **Optionen**:
      * **IS**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit dem angegebenen Benutzer übereinstimmt.
-     * **IS NOT**: Löst die Operation aus, wenn der zugewiesene Benutzer nicht mit dem angegebenen Benutzer übereinstimmt.
+     * **IST NICHT**: Löst die Operation aus, wenn der zugewiesene Benutzer nicht mit dem angegebenen Benutzer übereinstimmt.
 2. **Benutzer**
    * **Beschreibung**: Ermöglicht die Auswahl eines einzelnen Benutzers, mit dem der zugewiesene Benutzer verglichen wird.
-   * **Detail**: Dies erfolgt über ein einfaches Dropdown- oder Autovervollständigungsfeld, in dem jeweils ein Benutzer ausgewählt werden kann.
+   * **Detailliert**: Dies erfolgt über ein einfaches Dropdown- oder Autovervollständigungsfeld, in dem jeweils ein Benutzer ausgewählt werden kann.
 
 **Funktionalität**
 
 * **Erkennung der Benutzerzuweisung**: Identifiziert den Benutzer, der einer bestimmten Aufgabe oder einem bestimmten Dokument aktuell zugewiesen ist.
 * **Bedingungsauswertung**:
   * Beim Operator **IS** prüft die Karte, ob der zugewiesene Benutzer mit dem ausgewählten Benutzer identisch ist.
-  * Beim Operator **IS NOT** überprüft sie, ob sich der zugewiesene Benutzer vom ausgewählten Benutzer unterscheidet.
+  * Beim Operator **IST NICHT** überprüft sie, ob sich der zugewiesene Benutzer vom ausgewählten Benutzer unterscheidet.
 * **Ausführung der Aktion**:
   * **Bedingung erfüllt (True)**: Erfüllt die Zuweisung die festgelegte Bedingung (IS oder IS NOT), löst sie vordefinierte Aktionen aus, etwa das Fortfahren mit Freigaben, das Anstoßen weiterer Aufgaben, das Senden von Benachrichtigungen oder andere zugehörige Workflows.
   * **Bedingung nicht erfüllt (False)**: Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.
@@ -36,3 +36,15 @@ Diese Workflow-Karte ermöglicht Operationen auf Basis der Zuweisung einer Aufga
 #### Fazit
 
 Die Workflow-Karte "Single Assigned User Condition" ist unverzichtbar für ein präzises, benutzerspezifisches Dokument- und Aufgabenmanagement innerhalb eines ERP-Systems. Sie vereinfacht Workflows, indem sie sich auf einzelne Benutzerzuweisungen konzentriert, und stellt so sicher, dass Aktionen nur dann ausgeführt werden, wenn es angemessen ist – basierend auf der Rolle und den Verantwortlichkeiten des Benutzers. Eine klare Dokumentation dieser Karte unterstützt die Benutzer dabei, ihre Anwendung zu verstehen, und ermöglicht es ihnen, sie effektiv in ihren täglichen Abläufen einzusetzen und zu verwalten. Diese Dokumentation stellt sicher, dass alle potenziellen Benutzer den Zweck der Karte leicht erfassen und sie nahtlos in ihre Workflows integrieren können.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Behandeln Sie die Warteschlange eines bestimmten Prüfers.
+
+**Konfiguration:** Wählen Sie den Gleichheitsoperator und `Demo Reviewer A`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein diesem Benutzer zugewiesenes Dokument besteht; ein anderer zugewiesener Benutzer schlägt fehl.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

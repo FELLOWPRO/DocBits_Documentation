@@ -1,131 +1,139 @@
-# WatchDog Admin FAQ & Troubleshooting
+# WatchDog Admin-FAQ und Fehlerbehebung
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-de.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog-Kurzreferenz zur Fehlerbehebung"><figcaption></figcaption></figure>
 
-This documentation helps administrators understand WatchDog error messages and troubleshoot issues.
+Diese Dokumentation hilft Administratoren, WatchDog-Fehlermeldungen zu verstehen und Probleme zu beheben.
 
-**UI Location:** Settings → Document Processing → WatchDog
-
----
-
-## 1. WatchDog Settings Pages (UI)
-
-### 1.1 General Tab
-
-* **Download:** Get the latest WatchDog.exe
-* **API Key:** Copy the configuration command
-* **Auto-Update Schedule:** Configure update frequency
-* **Installation Guide:** Step-by-step setup instructions
-
-### 1.2 Configurations Tab
-
-* **Import Configurations:** Define watch folders and document types
-* **Export Configurations:** Define export destinations and methods
-* **Bulk Copy:** Copy configurations across sub-organisations
-* **Import/Export:** Import/export configs as JSON
-
-> **Important:** Export configurations now **require a document type** (`doc_type`). Configurations without a valid document type will be rejected.
-
-### 1.3 Status Tab
-
-* Shows real-time WatchDog connection status
-* **New fields:** `last_restart`, `version_first_seen`, `latest_version_checked_at`
-* **System info:** Installation path, free RAM, free disk space
-
-### 1.4 Logs Tab
-
-* Shows all WatchDog events from OpenSearch
-* Filterable by event type, time period, etc.
-* **Event Types:**
-  * `FILE_IMPORT_STARTED`: File import started
-  * `FILE_IMPORT_COMPLETED`: Import successful
-  * `FILE_IMPORT_FAILED`: Import failed
-  * `EXPORT_STARTED`: Export started
-  * `EXPORT_COMPLETED`: Export successful
-  * `EXPORT_FAILED`: Export failed
-  * `FOLDER_VALIDATION_FAILED`: Folder not reachable
-  * `CONFIG_LOADED`: Configuration loaded
-  * `SERVICE_RESTART_INITIATED`: Service restart requested
-  * `SERVICE_RESTART_COMPLETED`: Service restarted
-
-### 1.5 XSLT Templates Tab
-
-* Upload and manage XSLT transformation templates
-* Live validation with field analysis
-* Link templates to export configurations
+**Ort in der Oberfläche:** Settings → Document Processing → WatchDog
 
 ---
 
-## 2. Folder Validation Error Messages
+## 1. WatchDog-Einstellungsseiten (Oberfläche)
 
-| Error | Meaning | Solution |
+### 1.1 Registerkarte „General“
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Registerkarte „General“ von WatchDog"><figcaption></figcaption></figure>
+
+* **Download:** Die neueste WatchDog.exe herunterladen
+* **API Key:** Den Konfigurationsbefehl kopieren
+* **Auto-Update Schedule:** Die Häufigkeit der Updates konfigurieren
+* **Installation Guide:** Schritt-für-Schritt-Anleitung zur Einrichtung
+
+### 1.2 Registerkarte „Configurations“
+
+* **Import Configurations:** Überwachungsordner und Dokumenttypen definieren
+* **Export Configurations:** Exportziele und Exportmethoden definieren
+* **Bulk Copy:** Konfigurationen auf Unterorganisationen kopieren
+* **Import/Export:** Konfigurationen als JSON importieren/exportieren
+
+> **Wichtig:** Export-Konfigurationen **erfordern jetzt einen Dokumenttyp** (`doc_type`). Konfigurationen ohne gültigen Dokumenttyp werden abgelehnt.
+
+### 1.3 Registerkarte „Status“
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog-Dienststatus"><figcaption></figcaption></figure>
+
+* Zeigt den Verbindungsstatus von WatchDog in Echtzeit an
+* **Neue Felder:** `last_restart`, `version_first_seen`, `latest_version_checked_at`
+* **Systeminformationen:** Installationspfad, freier Arbeitsspeicher, freier Festplattenspeicher
+
+### 1.4 Registerkarte „Logs“
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="WatchDog-Protokolle"><figcaption></figcaption></figure>
+
+* Zeigt alle WatchDog-Ereignisse aus OpenSearch an
+* Filterbar nach Ereignistyp, Zeitraum usw.
+* **Ereignistypen:**
+  * `FILE_IMPORT_STARTED`: Dateiimport gestartet
+  * `FILE_IMPORT_COMPLETED`: Import erfolgreich
+  * `FILE_IMPORT_FAILED`: Import fehlgeschlagen
+  * `EXPORT_STARTED`: Export gestartet
+  * `EXPORT_COMPLETED`: Export erfolgreich
+  * `EXPORT_FAILED`: Export fehlgeschlagen
+  * `FOLDER_VALIDATION_FAILED`: Ordner nicht erreichbar
+  * `CONFIG_LOADED`: Konfiguration geladen
+  * `SERVICE_RESTART_INITIATED`: Dienstneustart angefordert
+  * `SERVICE_RESTART_COMPLETED`: Dienst neu gestartet
+
+### 1.5 Registerkarte „XSLT Templates“
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Liste der XSLT-Vorlagen"><figcaption></figcaption></figure>
+
+* XSLT-Transformationsvorlagen hochladen und verwalten
+* Live-Validierung mit Feldanalyse
+* Vorlagen mit Export-Konfigurationen verknüpfen
+
+---
+
+## 2. Fehlermeldungen bei der Ordnervalidierung
+
+| Fehler | Bedeutung | Lösung |
 | :--- | :--- | :--- |
-| `not_found` | Folder does not exist | Create folder or correct path |
-| `no_read_access` | No read permission | Set permissions for WatchDog Service Account |
-| `no_write_access` | No write permission | Grant write rights to Service Account |
-| `not_configured` | Folder path not configured | Enter path in configuration |
+| `not_found` | Ordner existiert nicht | Ordner anlegen oder Pfad korrigieren |
+| `no_read_access` | Keine Leseberechtigung | Berechtigungen für das WatchDog-Dienstkonto setzen |
+| `no_write_access` | Keine Schreibberechtigung | Dem Dienstkonto Schreibrechte erteilen |
+| `not_configured` | Ordnerpfad nicht konfiguriert | Pfad in der Konfiguration eintragen |
 
-**Affected Folders:**
+**Betroffene Ordner:**
 
-* **Watch Folder (Import):** Where WatchDog looks for new files
-* **Success Folder:** Where successfully imported files are moved
-* **Export Folder:** Where exported XML/PDF files are written
+* **Watch Folder (Import):** Hier sucht WatchDog nach neuen Dateien
+* **Success Folder:** Hierhin werden erfolgreich importierte Dateien verschoben
+* **Export Folder:** Hier werden exportierte XML-/PDF-Dateien abgelegt
 
 ---
 
-## 3. Import Error Messages
+## 3. Fehlermeldungen beim Import
 
-| Error | Meaning | Solution |
+| Fehler | Bedeutung | Lösung |
 | :--- | :--- | :--- |
-| `file_not_found` | File was deleted before import | Provide file again |
-| `invalid_file_type` | Only PDF files are supported | Remove other file types |
-| `api_not_accessible` | DocBits API not reachable | Check network/firewall, verify API URL |
-| `api_check_failed` | API Health Check failed | Check API Key and connection |
-| `upload_failed` | Upload to API failed | Check API Key, network, server status |
+| `file_not_found` | Datei wurde vor dem Import gelöscht | Datei erneut bereitstellen |
+| `invalid_file_type` | Es werden nur PDF-Dateien unterstützt | Andere Dateitypen entfernen |
+| `api_not_accessible` | DocBits-API nicht erreichbar | Netzwerk/Firewall prüfen, API-URL verifizieren |
+| `api_check_failed` | API-Health-Check fehlgeschlagen | API-Schlüssel und Verbindung prüfen |
+| `upload_failed` | Upload zur API fehlgeschlagen | API-Schlüssel, Netzwerk und Serverstatus prüfen |
 
 ---
 
-## 4. Export Error Messages
+## 4. Fehlermeldungen beim Export
 
-| Error | Meaning | Solution |
+| Fehler | Bedeutung | Lösung |
 | :--- | :--- | :--- |
-| `transformation_error` | XSLT Transformation failed | Check XSLT Template, validate XML structure |
-| `folder_error` | Export folder not reachable | Create folder, check permissions |
-| `file_write_error` | File could not be written | Check disk space, permissions, file locks |
-| `permission_denied` | No write permission | Set Service Account permissions |
-| `creation_failed` | Folder could not be created | Check parent folder permissions |
-| `no_config_match` | No matching export configuration | Create export config with correct document type |
+| `transformation_error` | XSLT-Transformation fehlgeschlagen | XSLT-Vorlage prüfen, XML-Struktur validieren |
+| `folder_error` | Exportordner nicht erreichbar | Ordner anlegen, Berechtigungen prüfen |
+| `file_write_error` | Datei konnte nicht geschrieben werden | Speicherplatz, Berechtigungen und Dateisperren prüfen |
+| `permission_denied` | Keine Schreibberechtigung | Berechtigungen des Dienstkontos setzen |
+| `creation_failed` | Ordner konnte nicht erstellt werden | Berechtigungen des übergeordneten Ordners prüfen |
+| `no_config_match` | Keine passende Export-Konfiguration | Export-Konfiguration mit dem richtigen Dokumenttyp anlegen |
 
-> **Note:** Export configurations require a `doc_type`. If you see `no_config_match`, verify that an active export configuration exists for the document's type.
+> **Hinweis:** Export-Konfigurationen erfordern einen `doc_type`. Wenn Sie `no_config_match` sehen, prüfen Sie, ob für den Typ des Dokuments eine aktive Export-Konfiguration existiert.
 
 ---
 
-## 5. Configuration Disabled — Reasons
+## 5. Konfiguration deaktiviert — Gründe
 
-When a configuration is disabled, one of these reasons appears:
+Wenn eine Konfiguration deaktiviert ist, wird einer dieser Gründe angezeigt:
 
-| Disabled Reason | Meaning |
+| Deaktivierungsgrund | Bedeutung |
 | :--- | :--- |
-| `Watch folder: not_found` | Import folder does not exist |
-| `Watch folder: no_read_access` | Import folder not readable |
-| `Export folder: not_found` | Export folder does not exist |
-| `Export folder: no_write_access` | Export folder not writable |
-| `Success folder: not_found` | Success folder does not exist |
-| `Success folder: no_write_access` | Success folder not writable |
+| `Watch folder: not_found` | Importordner existiert nicht |
+| `Watch folder: no_read_access` | Importordner nicht lesbar |
+| `Export folder: not_found` | Exportordner existiert nicht |
+| `Export folder: no_write_access` | Exportordner nicht beschreibbar |
+| `Success folder: not_found` | Success-Ordner existiert nicht |
+| `Success folder: no_write_access` | Success-Ordner nicht beschreibbar |
 
-**Automatic Reactivation:** WatchDog checks folders regularly (every 60 seconds). As soon as the folder is reachable again, the configuration is automatically reactivated.
+**Automatische Reaktivierung:** WatchDog prüft die Ordner regelmäßig (alle 60 Sekunden). Sobald der Ordner wieder erreichbar ist, wird die Konfiguration automatisch reaktiviert.
 
 ---
 
-## 6. Error Folder (`_error`)
+## 6. Fehlerordner (`_error`)
 
-Failed files are moved to the `_error` folder:
+Fehlgeschlagene Dateien werden in den Ordner `_error` verschoben:
 
-**Location:** `{import_folder}/_error/{error_type}/`
+**Speicherort:** `{import_folder}/_error/{error_type}/`
 
-**File Format:** `{original_name}_{YYYYMMDD_HHMMSS}.pdf`
+**Dateiformat:** `{original_name}_{YYYYMMDD_HHMMSS}.pdf`
 
-**Sidecar File:** Each failed file has a `.error` companion file with:
+**Sidecar-Datei:** Zu jeder fehlgeschlagenen Datei gibt es eine zugehörige `.error`-Datei mit:
 
 ```
 Error Type: transformation_error
@@ -137,78 +145,78 @@ Original Path: C:\WatchDog\Import\invoice_001.pdf
 
 ---
 
-## 7. Heartbeat & Connection Status
+## 7. Heartbeat und Verbindungsstatus
 
-WatchDog sends a heartbeat to DocBits every ~10 seconds with system information:
+WatchDog sendet etwa alle 10 Sekunden einen Heartbeat mit Systeminformationen an DocBits:
 
-| Data Sent | Description |
+| Gesendete Daten | Beschreibung |
 | :--- | :--- |
-| Timestamp | Current time |
-| Version | Installed WatchDog version |
-| Last Restart | Last service restart time |
-| Auto-Update Enabled | Whether auto-update is active |
-| Latest Version | Newest available version |
-| Installation Path | Where WatchDog is installed |
-| Free RAM / Disk | Available system resources |
+| Timestamp | Aktuelle Uhrzeit |
+| Version | Installierte WatchDog-Version |
+| Last Restart | Zeitpunkt des letzten Dienstneustarts |
+| Auto-Update Enabled | Ob Auto-Update aktiv ist |
+| Latest Version | Neueste verfügbare Version |
+| Installation Path | Installationsort von WatchDog |
+| Free RAM / Disk | Verfügbare Systemressourcen |
 
-### Connection Status
+### Verbindungsstatus
 
-| Status | Meaning |
+| Status | Bedeutung |
 | :--- | :--- |
-| ✅ **Online** | WatchDog is connected and active |
-| ⚠️ **Offline** | No heartbeat for 30+ seconds |
-| ❌ **Not Installed** | WatchDog has never connected |
+| ✅ **Online** | WatchDog ist verbunden und aktiv |
+| ⚠️ **Offline** | Seit mehr als 30 Sekunden kein Heartbeat |
+| ❌ **Not Installed** | WatchDog hat sich noch nie verbunden |
 
-**Heartbeat Errors:**
+**Heartbeat-Fehler:**
 
-* `Heartbeat failed - invalid API key` → API Key is invalid
-* `Heartbeat failed: 401` → Authentication failed
-* `Heartbeat failed: 5xx` → Server problem
+* `Heartbeat failed - invalid API key` → API-Schlüssel ist ungültig
+* `Heartbeat failed: 401` → Authentifizierung fehlgeschlagen
+* `Heartbeat failed: 5xx` → Serverproblem
 
 ---
 
-## 8. Common Problems & Solutions
+## 8. Häufige Probleme und Lösungen
 
-### Problem: WatchDog does not import files
+### Problem: WatchDog importiert keine Dateien
 
-1. Check if service is running: `services.msc` → WatchDog
-2. Check logs: Settings → WatchDog → Logs Tab
-3. Check folder permissions for WatchDog Service Account
-4. Test API connection: `WatchDog.exe debug` in CMD
-5. Verify file type is PDF
+1. Prüfen Sie, ob der Dienst läuft: `services.msc` → WatchDog
+2. Prüfen Sie die Protokolle: Settings → WatchDog → Registerkarte „Logs“
+3. Prüfen Sie die Ordnerberechtigungen für das WatchDog-Dienstkonto
+4. Testen Sie die API-Verbindung: `WatchDog.exe debug` in der Eingabeaufforderung
+5. Prüfen Sie, ob der Dateityp PDF ist
 
-### Problem: Export does not work
+### Problem: Export funktioniert nicht
 
-1. Export configuration exists with correct document type?
-2. Document type matches between document and config?
-3. XSLT Template linked (for folder export)?
-4. Export folder writable by Service Account?
-5. For Infor exports: ION credentials configured correctly?
+1. Existiert eine Export-Konfiguration mit dem richtigen Dokumenttyp?
+2. Stimmt der Dokumenttyp zwischen Dokument und Konfiguration überein?
+3. Ist die XSLT-Vorlage verknüpft (beim Ordnerexport)?
+4. Ist der Exportordner für das Dienstkonto beschreibbar?
+5. Bei Infor-Exporten: Sind die ION-Zugangsdaten korrekt konfiguriert?
 
-### Problem: Configuration is disabled
+### Problem: Konfiguration ist deaktiviert
 
-1. Folder path exists?
-2. Permissions for `NT AUTHORITY\LOCAL SERVICE` or Service Account?
-3. Network drive reachable? (Check UNC paths)
-4. WatchDog will auto-reactivate when folders become available again
+1. Existiert der Ordnerpfad?
+2. Sind die Berechtigungen für `NT AUTHORITY\LOCAL SERVICE` oder das Dienstkonto gesetzt?
+3. Ist das Netzlaufwerk erreichbar? (UNC-Pfade prüfen)
+4. WatchDog reaktiviert die Konfiguration automatisch, sobald die Ordner wieder verfügbar sind
 
-### Problem: XSLT Transformation fails
+### Problem: XSLT-Transformation schlägt fehl
 
-1. XSLT Template is valid? (use XSLT Templates Tab → Validate)
-2. Template fits document type?
-3. Check XML structure of the document
-4. V3 Folder Export uses server-side transformation — check API connectivity
+1. Ist die XSLT-Vorlage gültig? (Registerkarte „XSLT Templates“ → Validate verwenden)
+2. Passt die Vorlage zum Dokumenttyp?
+3. Prüfen Sie die XML-Struktur des Dokuments
+4. Der V3-Ordnerexport verwendet serverseitige Transformation — prüfen Sie die API-Konnektivität
 
-### Problem: REST API Export fails
+### Problem: REST-API-Export schlägt fehl
 
-1. ION OAuth credentials configured in export configuration?
-2. Target API endpoint reachable from WatchDog server?
-3. Check payload format matches target API expectations
-4. Review request chain configuration for JSONPath errors
+1. Sind die ION-OAuth-Zugangsdaten in der Export-Konfiguration konfiguriert?
+2. Ist der Ziel-API-Endpunkt vom WatchDog-Server aus erreichbar?
+3. Prüfen Sie, ob das Payload-Format den Erwartungen der Ziel-API entspricht
+4. Prüfen Sie die Konfiguration der Request-Kette auf JSONPath-Fehler
 
 ---
 
-## 9. Command Line Commands
+## 9. Befehlszeilenbefehle
 
 ```bash
 # Configure API connection
@@ -245,15 +253,15 @@ sc query WatchDog
 
 ---
 
-## 10. Log Files
+## 10. Protokolldateien
 
-**Location:** `C:\WatchDog\logs\{module}\`
+**Speicherort:** `C:\WatchDog\logs\{module}\`
 
-**Log Format:**
+**Protokollformat:**
 ```
 INFO  - 2026-03-26 10:00:00 - module_name - Message - function=func_name - line=42
 ```
 
-**Log Level:** DEBUG, INFO, WARNING, ERROR
+**Protokollebene:** DEBUG, INFO, WARNING, ERROR
 
-**Remote Logs:** WatchDog also sends logs to DocBits (viewable in Logs Tab) and optionally to Logtail cloud logging.
+**Remote-Protokolle:** WatchDog sendet Protokolle auch an DocBits (einsehbar auf der Registerkarte „Logs“) und optional an das Cloud-Logging Logtail.

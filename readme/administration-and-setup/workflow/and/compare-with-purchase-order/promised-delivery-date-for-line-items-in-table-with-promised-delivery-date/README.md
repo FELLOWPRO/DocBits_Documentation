@@ -1,6 +1,6 @@
-# Zugesagtes Lieferdatum für Positionen in Tabelle mit zugesagtem Lieferdatum
+# Zugesagter Liefertermin für Positionen in der Tabelle mit versprochenem Liefertermin
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -45,4 +45,4 @@ Diese Workflow-Karte ist darauf ausgelegt, das **zugesagte Lieferdatum von Posit
 
 ### Fazit:
 
-Die Workflow-Karte **Compare with Purchase Order – Promised Delivery Date for Line Items** bietet eine flexible Möglichkeit, Regeln für Lieferdaten durchzusetzen. Durch die Kombination von Operatoren mit einer wochentagsbewussten Toleranzbehandlung ermöglicht sie eine präzise Validierung von Lieferzusagen und reduziert gleichzeitig manuelle Prüfungen und Ausnahmen.
+Die Workflow-Karte **Vergleichen Sie mit der Bestellung – Zugesagter Liefertermin für Einzelposten** bietet eine flexible Möglichkeit, Regeln für Lieferdaten durchzusetzen. Durch die Kombination von Operatoren mit einer wochentagsbewussten Toleranzbehandlung ermöglicht sie eine präzise Validierung von Lieferzusagen und reduziert gleichzeitig manuelle Prüfungen und Ausnahmen.

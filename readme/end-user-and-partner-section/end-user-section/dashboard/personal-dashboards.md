@@ -1,103 +1,36 @@
 # Persönliche Dashboards
 
-## Übersicht
+Ein gespeichertes Dashboard ist eine benannte Ansicht Ihrer Arbeitsliste: Suche, Filter, Dokumenttyp, Sortierung und sichtbare Spalten. Beim Öffnen wird alles gleichzeitig wiederhergestellt, sodass wiederkehrende Aufgaben nicht erneut eingerichtet werden müssen. Ein Dashboard ändert nur die Anzeige der Dokumente und nie die Dokumente selbst.
 
-Sie können benutzerdefinierte Dashboards erstellen und verwalten, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind. Diese Dashboards ermöglichen Ihnen:
+## Ein Dashboard erstellen
 
-* Eine benutzerdefinierte Spaltenreihenfolge festzulegen
-* Nur die für Ihren Anwendungsfall relevanten Spalten auszuwählen
-* Personalisierte Filter anzuwenden und zu speichern
-* Dashboards mit Teammitgliedern zu teilen
+1. Stellen Sie die Ansicht zusammen, die Sie behalten möchten. Geben Sie die Suche in die Suchleiste ein, verwenden Sie die **Schnellfilter** aus der Feldauswahl, die **Filter**, einen Dokumenttyp-Reiter, die Sortierung der Tabelle und die Spalten.
 
-## Neues Dashboard erstellen
+2. Öffnen Sie die Ansichts-Schaltfläche unter dem Suchfeld. Sie zeigt die aktive Ansicht und wie viele Dokumente gerade dazu passen, zum Beispiel **Alle Dokumente (5986)**.
 
-So erstellen Sie ein neues Dashboard:
+3. Wählen Sie **Neues Dashboard erstellen**.
 
-1.  Klicken Sie auf die Filter-Schaltfläche unterhalb der Suchleiste.
+4. Vergeben Sie einen eindeutigen Namen und legen Sie fest, wer die Ansicht verwenden kann:
+   * **Nur für mich sichtbar** hält die Ansicht privat.
+   * **Für alle Benutzer sichtbar** stellt sie allen Personen Ihrer Organisation zur Verfügung.
+   * **Mit Gruppen und Benutzern teilen** blendet die beiden Auswahlen **Gruppe** und **Benutzer auswählen** ein, sodass Sie bestimmte Gruppen oder einzelne Personen benennen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Klicken Sie auf **Neues Dashboard erstellen**.
+5. Wählen Sie **Speichern**. Die Ansichts-Schaltfläche wechselt zum neuen Dashboard und zeigt dessen Namen und Dokumentanzahl.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_2.png)
-3.  Geben Sie einen Namen für Ihr Dashboard ein.
+<figure><img src="../../../.gitbook/assets/dashboard-saved-view-de.png" alt="Ein benanntes Dashboard erstellen und seine Sichtbarkeit festlegen."><figcaption><p>Ein benanntes Dashboard erstellen und seine Sichtbarkeit festlegen.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_3.png)
-4. Legen Sie die gewünschte Sichtbarkeit fest. Sie können wählen zwischen:
-   * **Nur für mich sichtbar**: Nur Sie (der aktuell angemeldete Benutzer) können dieses Dashboard sehen.
-   * **Für alle Benutzer sichtbar**: Alle Benutzer in Ihrer Organisation haben Leserechte.
-   *   **Mit Gruppen und Benutzern teilen**: Wählen Sie bestimmte Benutzer oder Benutzergruppen aus, die Leserechte für das Dashboard erhalten.
+Die Sichtbarkeit legt fest, wer die Ansicht **verwenden** kann. Sie gewährt keinen Zugriff auf Dokumente: Jede Person sieht weiterhin nur Dokumente, für die sie berechtigt ist.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_4.png)
-5.  Klicken Sie auf **Speichern**, um Ihr Dashboard zu erstellen und zu speichern.
+## Ansichten wechseln oder ändern
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_5.png)
+Wählen Sie über die Ansichts-Schaltfläche ein gespeichertes Dashboard oder kehren Sie zum **Standard-Dashboard** zurück, der ungespeicherten Ansicht aller Dokumente. Das zuletzt geöffnete Dashboard bleibt beim Neuladen der Seite aktiv.
 
-## Zwischen Dashboards wechseln
+Nach Änderungen an einem geladenen Dashboard – auch wenn Sie nur Spalten ändern – wird **Dashboard-Änderungen speichern** in der Ansichts-Schaltfläche verfügbar. Damit speichern Sie die Änderung unter demselben Namen. Die Aktion bleibt deaktiviert, wenn sich nichts geändert hat oder das Dashboard einer anderen Person gehört; eine geteilte Ansicht lässt sich nicht überschreiben, erstellen Sie stattdessen eine eigene.
 
-So wechseln Sie zwischen Dashboards:
+## Ein Dashboard umbenennen oder neu teilen
 
-1. Klicken Sie auf die Filter-Schaltfläche unterhalb der Suchleiste.
-2.  Wählen Sie im Dropdown-Menü ein Dashboard aus der Liste der persönlichen oder geteilten Dashboards aus.
+Bewegen Sie den Mauszeiger über ein eigenes Dashboard in der Ansichts-Schaltfläche, um seine Symbole **Bearbeiten** und **Löschen** einzublenden. Wählen Sie das Stiftsymbol, um **Dashboard bearbeiten** zu öffnen und den Namen oder die Sichtbarkeit zu ändern. Der Dialog zeigt dieselben drei Optionen wie beim Erstellen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_6.png)
+## Ein Dashboard löschen
 
-<mark style="color:red;">**Hinweis**</mark>: Anhand des Symbols vor dem Dashboard-Namen können Sie erkennen, ob ein Dashboard persönlich oder geteilt ist.
-
-## Bearbeiten/Löschen eines persönlichen Dashboards
-
-So bearbeiten Sie Ihr persönliches oder geteiltes Dashboard:
-
-1.  Klicken Sie auf die Filter-Schaltfläche unterhalb der Suchleiste.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Klicken Sie auf den Namen des persönlichen Dashboards, das Sie bearbeiten möchten.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3. Nehmen Sie die gewünschten Änderungen vor, zum Beispiel:
-   * Ändern der Spaltenreihenfolge
-   * Anpassen der Sichtbarkeit von Spalten
-   * Bearbeiten von Filtern
-
-### **Dashboard änderungen speichern**
-
-Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie auf die Filter-Schaltfläche unterhalb der Suchleiste und wählen Sie anschließend **Dashboard änderungen speichern**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_11.png)
-
-<mark style="color:red;">**Hinweis**</mark>: Nur persönliche Dashboards können bearbeitet werden. Geteilte Dashboards können nur von ihrem ursprünglichen Ersteller bearbeitet werden.
-
-### **Ein Dashboard umbenennen**
-
-So benennen Sie ein persönliches oder geteiltes Dashboard um:
-
-1.  Klicken Sie auf die Filter-Schaltfläche unterhalb der Suchleiste.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Wählen Sie das Dashboard aus, das Sie umbenennen möchten.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3.  Wählen Sie **Aktuelles Dashboard umbenennen**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_8.png)
-4.  Geben Sie den neuen Namen ein und klicken Sie anschließend auf **Speichern**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_9.png)
-
-<mark style="color:red;">**Hinweis**</mark>: Nur persönliche Dashboards können umbenannt werden. Geteilte Dashboards können nur von ihrem ursprünglichen Ersteller umbenannt werden.
-
-### Ein Dashboard löschen
-
-So löschen Sie ein persönliches Dashboard:
-
-1.  Klicken Sie auf die Filter-Schaltfläche unterhalb der Suchleiste.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2. Bewegen Sie den Mauszeiger über das Dashboard, das Sie löschen möchten.
-3.  Klicken Sie auf das Papierkorb-Symbol daneben.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_12.png)
-4.  Bestätigen Sie das Löschen, indem Sie auf **Löschen** klicken.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_13.png)
-
-<mark style="color:red;">**Hinweis**</mark>: Nur persönliche Dashboards können gelöscht werden. Geteilte Dashboards können nur von ihrem ursprünglichen Ersteller gelöscht werden.
+Wählen Sie das Papierkorbsymbol für ein eigenes Dashboard und bestätigen Sie mit **Löschen**. Das Entfernen einer Ansicht löscht nicht die Dokumente, auf die sie verwiesen hat. Ein Dashboard, das eine andere Person mit Ihnen geteilt hat, können Sie öffnen und verwenden, aber nicht in Ihrem Konto bearbeiten oder löschen.

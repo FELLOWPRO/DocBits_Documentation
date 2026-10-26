@@ -1,8 +1,8 @@
 # Dokument-Untertypen
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_sub_types_list.png" alt="Docbits Document Sub Types List"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-docbits_document_sub_types_list-de.png" alt="Untertypen eines Dokumenttyps in der deutschen Verwaltung."><figcaption><p>Untertypen eines Dokumenttyps in der deutschen Verwaltung.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_sub_types_overview.png" alt="Docbits Document Sub Types Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-docbits_document_sub_types_overview-de.png" alt="Übersicht der Dokumentuntertypen in deutscher Sprache."><figcaption><p>Übersicht der Dokumentuntertypen in deutscher Sprache.</p></figcaption></figure>
 
 #### Übersicht
 
@@ -25,7 +25,7 @@ Dokument-Untertypen in Docbits ermöglichen eine flexiblere und maßgeschneidert
     *   Enthält den Namen des Untertyps und eine Reihe von Aktionen, die darauf ausgeführt werden können.
 2.  **Aktionen**:
 
-<figure><img src="../../../../.gitbook/assets/docbits_sub_organizations_nav.png" alt="Docbits Sub Organizations Nav"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_sub_organizations_nav.png" alt="Navigation zu den Unterorganisationen in DocBits"><figcaption></figcaption></figure>
 
 *   **Felder**: Konfigurieren Sie, welche Datenfelder im Untertyp enthalten sind und wie sie verwaltet werden.
 *   **Layout bearbeiten**: Ändern Sie das visuelle Layout, wie Informationen für diesen Untertyp angezeigt und eingegeben werden.

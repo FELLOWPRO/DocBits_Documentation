@@ -1,36 +1,36 @@
-# XRechnung 3.0.2 CII Field Mapping
+# XRechnung 3.0.2 CII – Feldzuordnung
 
-## Overview
+## Überblick
 
-This document describes the complete field mapping flow for XRechnung 3.0.2 CII (Cross-Industry Invoice) format.
+Dieses Dokument beschreibt den vollständigen Ablauf der Feldzuordnung für XRechnung 3.0.2 im CII-Format (Cross-Industry Invoice).
 
-## 1. CII XML Structure
+## 1. CII-XML-Struktur
 
-XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces:
+XRechnung CII verwendet das Cross-Industry-Invoice-Format von UN/CEFACT mit folgenden Namensräumen:
 
-| Prefix | Namespace | Purpose |
+| Präfix | Namensraum | Zweck |
 | :--- | :--- | :--- |
-| `rsm` | `urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100` | Root container |
-| `ram` | `urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100` | Business entities |
-| `qdt` | `urn:un:unece:uncefact:data:standard:QualifiedDataType:100` | Qualified types |
-| `udt` | `urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100` | Unqualified types |
+| `rsm` | `urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100` | Wurzelelement |
+| `ram` | `urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100` | Geschäftsobjekte |
+| `qdt` | `urn:un:unece:uncefact:data:standard:QualifiedDataType:100` | Qualifizierte Datentypen |
+| `udt` | `urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100` | Unqualifizierte Datentypen |
 
-**Classification URN**: `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0.2`
+**Klassifizierungs-URN**: `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0.2`
 
-## 2. CII XML → DocBits Field Extraction
+## 2. CII-XML → Feldextraktion in DocBits
 
-### Header Fields
+### Kopffelder
 
-| CII XML Path | DocBits Field | Data Type |
+| CII-XML-Pfad | DocBits-Feld | Datentyp |
 | :--- | :--- | :--- |
-| `ExchangedDocument/ID` | `invoice_id` | String |
-| `ExchangedDocument/TypeCode` | `invoice_type` | String |
-| `ExchangedDocument/IssueDateTime/DateTimeString` | `invoice_date` | Date (YYYYMMDD) |
-| `ApplicableHeaderTradeAgreement/BuyerReference` | `buyer_reference` | String |
-| `BuyerOrderReferencedDocument/IssuerAssignedID` | `purchase_order` | String |
-| `ActualDeliverySupplyChainEvent/.../DateTimeString` | `ship_date` | Date |
-| `SpecifiedTradePaymentTerms/DueDateDateTime/DateTimeString` | `due_date` | Date |
-| `ApplicableHeaderTradeSettlement/InvoiceCurrencyCode` | `currency` | String |
+| `ExchangedDocument/ID` | `invoice_id` | Zeichenfolge |
+| `ExchangedDocument/TypeCode` | `invoice_type` | Zeichenfolge |
+| `ExchangedDocument/IssueDateTime/DateTimeString` | `invoice_date` | Datum (YYYYMMDD) |
+| `ApplicableHeaderTradeAgreement/BuyerReference` | `buyer_reference` | Zeichenfolge |
+| `BuyerOrderReferencedDocument/IssuerAssignedID` | `purchase_order` | Zeichenfolge |
+| `ActualDeliverySupplyChainEvent/.../DateTimeString` | `ship_date` | Datum |
+| `SpecifiedTradePaymentTerms/DueDateDateTime/DateTimeString` | `due_date` | Datum |
+| `ApplicableHeaderTradeSettlement/InvoiceCurrencyCode` | `currency` | Zeichenfolge |
 
 ### Dokumenttyp-Klassifizierung
 
@@ -41,9 +41,9 @@ Das TRANSFORMATION-XSLT ersetzt den numerischen `TypeCode`-Wert durch eine sprec
 | `381` / `261` | Gutschrift / Selbst ausgestellte Gutschrift | **Credit Note** |
 | Jeder andere Code (`380`, `383`, `384`, `386`, `389`, `325`, …) | Rechnung / Lastschrift / Proforma / etc. | **Invoice** |
 
-### Supplier Fields
+### Lieferantenfelder
 
-| CII XML Path | DocBits Field |
+| CII-XML-Pfad | DocBits-Feld |
 | :--- | :--- |
 | `SellerTradeParty/ID` | `supplier_id` |
 | `SellerTradeParty/Name` | `supplier_name` |
@@ -55,18 +55,18 @@ Das TRANSFORMATION-XSLT ersetzt den numerischen `TypeCode`-Wert durch eine sprec
 | `PayeePartyCreditorFinancialAccount/IBANID` | `iban` |
 | `PayeeSpecifiedCreditorFinancialInstitution/BICID` | `bic` |
 
-### Customer Fields
+### Kundenfelder
 
-| CII XML Path | DocBits Field |
+| CII-XML-Pfad | DocBits-Feld |
 | :--- | :--- |
 | `BuyerTradeParty/ID` | `customer_id` |
 | `BuyerTradeParty/Name` | `customer_name` |
 | `BuyerTradeParty/PostalTradeAddress/LineOne` | `customer_address` |
 | `BuyerTradeParty/SpecifiedTaxRegistration/ID` | `customer_vat` |
 
-### Amount Fields
+### Betragsfelder
 
-| CII XML Path | DocBits Field |
+| CII-XML-Pfad | DocBits-Feld |
 | :--- | :--- |
 | `SpecifiedTradeSettlementHeaderMonetarySummation/TaxBasisTotalAmount` | `net_amount` |
 | `SpecifiedTradeSettlementHeaderMonetarySummation/TaxTotalAmount` | `tax_amount` |
@@ -74,9 +74,9 @@ Das TRANSFORMATION-XSLT ersetzt den numerischen `TypeCode`-Wert durch eine sprec
 | `ApplicableTradeTax/RateApplicablePercent` | `tax_rate` |
 | `ApplicableTradeTax/BasisAmount` | `taxable_amount` |
 
-### Line Item Fields
+### Positionsfelder
 
-| CII XML Path | DocBits Table Column |
+| CII-XML-Pfad | DocBits-Tabellenspalte |
 | :--- | :--- |
 | `AssociatedDocumentLineDocument/LineID` | `POSITION` |
 | `SpecifiedTradeProduct/GlobalID` | `ITEM_NUMBER` |
@@ -90,11 +90,11 @@ Das TRANSFORMATION-XSLT ersetzt den numerischen `TypeCode`-Wert durch eine sprec
 | `ApplicableTradeTax/RateApplicablePercent` | `VAT_RATE` |
 | `ApplicableTradeTax/CategoryCode` | `VAT_CATEGORY` |
 
-## 3. DocBits → Infor BOD Export (SyncSupplierInvoice)
+## 3. DocBits → Infor-BOD-Export (SyncSupplierInvoice)
 
-### Header Mapping
+### Zuordnung der Kopffelder
 
-| DocBits Field | BOD XML Path |
+| DocBits-Feld | BOD-XML-Pfad |
 | :--- | :--- |
 | `INVOICE_NUMBER` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/DocumentID/ID` |
 | `INVOICE_DATE` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/DocumentDateTime` |
@@ -102,14 +102,14 @@ Das TRANSFORMATION-XSLT ersetzt den numerischen `TypeCode`-Wert durch eine sprec
 | `VENDOR_NAME` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/SupplierParty/Name` |
 | `TOTAL_AMOUNT` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/TotalAmount` |
 | `NET_AMOUNT` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/ExtendedBaseAmount` |
-| `TAX_AMOUNT` | (Calculated from ExtendedAmount - ExtendedBaseAmount) |
+| `TAX_AMOUNT` | (Berechnet als ExtendedAmount - ExtendedBaseAmount) |
 | `CURRENCY` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/CurrencyExchangeRate/SourceCurrencyCode` |
 | `PAYMENT_TERMS` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/PaymentTerm/Term/Description` |
 | `PURCHASE_ORDER` | `UserArea/Property/NameValue[@name='PONumber']` |
 
-### Line Item Mapping
+### Zuordnung der Positionsfelder
 
-| DocBits Column | BOD XML Path |
+| DocBits-Spalte | BOD-XML-Pfad |
 | :--- | :--- |
 | `POSITION` | `SupplierInvoiceDetail/LineNumber` |
 | `ITEM_NUMBER` | `SupplierInvoiceDetail/Item/ItemID/ID` |

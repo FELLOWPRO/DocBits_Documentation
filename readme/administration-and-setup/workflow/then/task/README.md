@@ -1,7 +1,5 @@
-# Task
+# Aufgabe
 
+Die Karten dieser Kategorie im **Karte hinzufügen**-Picker des Workflow-Builders:
 
-Die Karten dieser Kategorie im **Add Card**-Picker des Workflow-Builders:
-
-<figure><img src="../../../../.gitbook/assets/workflow_cards_then_tasks.png" alt="Workflow Builder card category"><figcaption><p>Die Karten dieser Kategorie.</p></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>

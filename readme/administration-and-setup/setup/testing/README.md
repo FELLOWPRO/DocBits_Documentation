@@ -1,5 +1,5 @@
-# Testing
+# Tests
 
-A guide on testing DocBits features once they are configured.
+Eine Anleitung zum Testen der DocBits-Funktionen nach ihrer Konfiguration.
 
 

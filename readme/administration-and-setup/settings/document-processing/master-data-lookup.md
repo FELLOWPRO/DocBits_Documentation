@@ -1,5 +1,13 @@
 # 主数据查询
 
+## 视频教程：主数据与值列表
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/zh.mp4" %}
+DocBits 中的主数据来源、值列表与主数据设置
+{% endembed %}
+
+视频演示了主数据来源、值列表以及文档类型的主数据设置。
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 

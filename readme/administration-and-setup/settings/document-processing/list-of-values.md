@@ -1,5 +1,13 @@
 # 值列表
 
+## 视频教程：主数据与值列表
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/zh.mp4" %}
+DocBits 中的主数据来源、值列表与主数据设置
+{% endembed %}
+
+视频演示了主数据来源、值列表以及文档类型的主数据设置。
+
 值列表为文档字段提供预定义选项。字段可以使用列表在验证时显示选项。标签可以有翻译，技术值在各语言中保持一致。
 
 ## 打开列表

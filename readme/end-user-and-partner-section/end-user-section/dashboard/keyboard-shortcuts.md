@@ -8,4 +8,4 @@ Utilisez Ctrl sous Windows/Linux et Cmd sous macOS. Les raccourcis du navigateur
 | Ctrl/Cmd + Q | Actualiser la liste du tableau de bord. |
 | Ctrl/Cmd + H | Ouvrir la documentation/l’aide. |
 
-Ouvrez l’engrenage et le bouton du clavier pour consulter les raccourcis dans l’application. Le point d’interrogation dans la recherche ouvre l’aide sur les champs et la syntaxe.
+Ouvrez le menu de l’engrenage **Paramètres avancés**, puis **Raccourcis clavier** pour consulter les raccourcis dans l’application. Le bouton avec le point d’interrogation à l’extrémité droite de la barre de recherche ouvre l’aide sur les champs et la syntaxe.

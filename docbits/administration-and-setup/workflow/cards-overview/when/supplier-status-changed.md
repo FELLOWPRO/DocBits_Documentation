@@ -12,7 +12,7 @@ This workflow card starts a workflow (trigger) when the status of a supplier cha
    * **Description:** Defines whether the new supplier status should be one of the selected statuses or none of them.
    * **Options:**
      * **Is:** The condition is true if the new status is one of the selected statuses.
-     * **Is Not:** The condition is true if the new status is not one of the selected statuses.
+     * **Is Not:** The condition is true if a supplier status change started the workflow and the new status is not one of the selected statuses.
 2. **Status**
    * **Description:** The supplier statuses the new status is compared with.
    * **Options:** One or more of:
@@ -28,10 +28,10 @@ This workflow card starts a workflow (trigger) when the status of a supplier cha
 * **Condition Evaluation:** The card compares the status passed to the workflow with the statuses selected on the card.
 * **Action Execution:**
   * **True Condition:**\
-    With **Is**, the new status is one of the selected statuses. With **Is Not**, it is not. The workflow continues with the next cards.
+    With **Is**, the new status is one of the selected statuses. With **Is Not**, a supplier status change started the workflow and the new status is not one of the selected statuses. The workflow continues with the next cards.
   * **False Condition:**\
     If the condition is not met, the card is not met and the steps after it are not run.
-* **Note on "Is Not":** A purchase order import also starts all document-independent workflows, including workflows with this card. A purchase order import passes no supplier status, so with **Is Not** a purchase order import also makes the card true and the workflow runs. Combining **Is Not** with further conditions can help to limit the workflow to supplier events.
+* **Other document-independent events:** A purchase order import also starts all document-independent workflows, including workflows with this card. Such a run does not meet the card with either operator, so the steps after it only run for supplier status changes.
 * **Missing Data:** If no status is selected on the card, the card does not evaluate the condition. It reports the missing input (or an error) in the workflow log, and the steps after it are not run.
 * **Invalid Operator:** If the operator is neither **Is** nor **Is Not**, the card reports a card setup error in the workflow log.
 

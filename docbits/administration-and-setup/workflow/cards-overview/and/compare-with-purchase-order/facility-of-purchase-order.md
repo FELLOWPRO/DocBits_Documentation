@@ -13,8 +13,8 @@ Purchase order matching should run before this card. Without a matched purchase 
 1. **Any / All**
    * **Description:** How the facility codes of the matched purchase orders are evaluated against the list.
    * **Options:**
-     * **Any:** At least one entry of the list is found in the facility codes of the matched purchase orders.
-     * **All:** Every facility code of the matched purchase orders is in the list. If no value is set, the card uses **All**.
+     * **Any:** At least one matched purchase order meets the operator.
+     * **All:** Every matched purchase order with a facility meets the operator. If no value is set, the card uses **All**.
 2. **Operator**
    * **Description:** Whether the facility should be in the list or not.
    * **Options:**
@@ -27,10 +27,10 @@ Purchase order matching should run before this card. Without a matched purchase 
 ## Functionality:
 
 * **Condition Evaluation:** The card reads the purchase order numbers matched to the document, loads these purchase orders and collects the facility (location) of each of them. Purchase orders without a facility are skipped. The collected facility codes are then compared with the **Facility Name Codes** on the card.
-  * With **Any** and **Is**, the comparison ignores capitalisation, and an entry of the list also counts when it is part of a longer facility code (for example, the entry `WH` is found in `WH01`).
-  * With **All** and **Is**, each facility code of the purchase orders should appear in the list with exactly the same spelling, including capitalisation.
+  * A facility code counts as listed when it equals one of the entered codes as a whole. Capitalisation and spaces around the entries are ignored, so `wh01` matches `WH01`, but `WH` does not match `WH01`.
+  * With **Is**, a purchase order meets the condition when its facility code is listed. With **Is Not**, it meets the condition when its facility code is not listed.
+  * With **Any**, at least one purchase order has to meet the condition; with **All**, every purchase order with a facility.
   * If none of the matched purchase orders has a facility, **All** is met and **Any** is not.
-  * With **Is Not**, the result is not simply the opposite of **Is**. The card log shows which codes were found and which were not matched, which helps to check the behaviour for a given setup.
 * **Action Execution:**
   * **True Condition:**\
     If the condition is met, the workflow continues, for example with a step that is specific to the listed facilities.
@@ -40,7 +40,7 @@ Purchase order matching should run before this card. Without a matched purchase 
 
 ## Setup and Configuration:
 
-* The card can be added as an And condition after purchase order matching, from the **Compare with Purchase Order** category. After that, **Any** or **All**, the operator and the facility codes, separated by commas, can be set. Entering the codes in the same spelling as on the purchase order is the safest choice, because **All** compares them exactly.
+* The card can be added as an And condition after purchase order matching, from the **Compare with Purchase Order** category. After that, **Any** or **All**, the operator and the facility codes, separated by commas, can be set. Capitalisation does not matter, but each code should be entered in full, because parts of a code do not match.
 * **Test Card** in the card menu of the Workflow Builder can be used to try the configuration on an existing document. The card log lists the matched purchase orders, the facility codes found on them and the codes that were not matched.
 
 ## Conclusion:

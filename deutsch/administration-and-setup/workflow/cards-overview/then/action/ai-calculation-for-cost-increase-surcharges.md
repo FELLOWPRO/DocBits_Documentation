@@ -1,35 +1,29 @@
-# AI Calculation for Cost Increase Surcharges
+# KI-Berechnung für Kostensteigerungszuschläge
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-then-action-03-de-20261023.png" alt="Aktion AI-Berechnung für Kostensteigerungszuschläge" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
-## Zweck:
+## Wann sollte diese Karte verwendet werden?
 
-Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** nutzt KI, um Zuschlagsbeträge auf Basis von Kostensteigerungen automatisch zu berechnen. Sie sorgt für konsistente und präzise Zuschlagsberechnungen, optimiert Workflows und reduziert den manuellen Aufwand.
+Mit dieser Aktion fordern Sie die konfigurierte MTZ/ETZ-Material- und Energiezuschlagsberechnung für das aktuelle Dokument an. Bereiten Sie zunächst die für Ihre Organisation erforderlichen Dokumentdaten und Berechnungsdienstkonfigurationen vor.
 
-## Bestandteile der Karte:
+## Tatsächliche Konfiguration
 
-* **Kostensteigerungsfaktor**
-  * **Beschreibung:** Der Multiplikator oder Prozentsatz, der auf die Basiskosten angewendet wird, um den Zuschlag zu berechnen.
-  * **Detail:** Bestimmt den Zuschlagsbetrag auf Basis der Kostensteigerung (z. B. ein Faktor von 1,10 für eine Steigerung um 10 %).
-* **Basiskostenfeld**
-  * **Beschreibung:** Das Feld, das den ursprünglichen Kostenwert enthält, der als Grundlage für die Zuschlagsberechnung dient.
-  * **Detail:** Wird automatisch ausgewählt oder innerhalb des Workflows definiert, um während der Berechnung als Referenz zu dienen.
-* **Zuschlagsfeld**
-  * **Beschreibung:** Das Feld, in dem der per KI berechnete Zuschlagswert gespeichert wird.
-  * **Detail:** Dieses Feld spiegelt den berechneten Zuschlag wider und macht ihn für die weitere Verarbeitung oder Berichterstattung verfügbar.
+Die angezeigte Karte verfügt über keine Eingaben für Kostensteigerungsfaktor, Grundkostenfeld oder Zuschlagsfeld. Es delegiert die Berechnung an den konfigurierten Dienst. Suchen Sie nicht nach diesen nicht vorhandenen Kartenkontrollen und gehen Sie nicht von einer festen Prozentformel aus dem Kartennamen aus.
 
-## Funktionalität:
+## Ergebnis und Überprüfung
 
-**Bedingungsauswertung:**
+Eine erfolgreiche Serviceantwort markiert die Karte als erfolgreich. Eine Zeitüberschreitung oder eine erfolglose Antwort führt zu einem Kartenfehler. Überprüfen Sie das Kartenprotokoll und die daraus resultierenden Zuschlagsdaten des Dokuments. Der Erfolg des Aufrufs allein dokumentiert noch keinen bestimmten Betrag.
 
-* Die Karte wird nur aktiviert, wenn sowohl die Bedingungen im **"Where"**- als auch im **"And"**-Abschnitt als erfüllt ausgewertet werden.
-* Wird eine der beiden Bedingungen als nicht erfüllt ausgewertet, wird keine Zuschlagsberechnung durchgeführt.
+Im Kartentestmodus wird der Aufruf übersprungen und ein Erfolg simuliert. Dies ist zum Testen der Workflow-Struktur nützlich, beweist aber nicht, dass der Dienst ausgeführt wurde oder ein Aufpreis berechnet wurde.
 
-**KI-gestützte Berechnung:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* Das System wendet den **Kostensteigerungsfaktor** auf das **Basiskostenfeld** an, um den Zuschlag zu berechnen.
-* Das Ergebnis wird im **Zuschlagsfeld** gespeichert und stellt so die Verfügbarkeit für nachfolgende Workflow-Schritte sicher.
+## Praxisbeispiel
 
-## Fazit:
+**Verwendungszweck:** Fordern Sie die konfigurierte Material-/Energiezuschlagsberechnung für eine vorbereitete Rechnung an.
 
-Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** automatisiert die Anwendung von Zuschlägen auf Basis von Kostensteigerungen. Indem sie KI für Präzision und Konsistenz nutzt, eliminiert diese Karte manuelle Berechnungen, steigert die Effizienz und unterstützt ein präzises Kostenmanagement in automatisierten Workflows.
+**Konfiguration:** Verwenden Sie die synthetische Rechnung `DEMO-001` mit den Daten, die für Ihren konfigurierten MTZ/ETZ-Dienst erforderlich sind. Fügen Sie diese Aktion nach den Dokumentvalidierungsbedingungen hinzu.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Eine erfolgreiche Serviceantwort markiert die Karte als erfolgreich; Eine Zeitüberschreitung oder eine erfolglose Antwort führt zu einem Kartenfehler. Überprüfen Sie die Dokumentfelder und das Berechnungsergebnis separat. Der Kartentestmodus simuliert den Erfolg und ruft den Dienst nicht auf, sodass kein echtes Zuschlagsergebnis nachgewiesen werden kann.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

@@ -1,5 +1,13 @@
 # Stamgegevens opzoeken
 
+## Videotutorial: Stamgegevens en waardelijsten
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/nl.mp4" %}
+Bronnen voor stamgegevens, waardelijsten en mastergegevensinstellingen in DocBits
+{% endembed %}
+
+De video toont de bronnen voor stamgegevens, de waardelijsten en de mastergegevensinstellingen van een documenttype.
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 

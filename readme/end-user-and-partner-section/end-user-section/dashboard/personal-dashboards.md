@@ -1,21 +1,36 @@
 # Osobiste pulpity
 
-Zapisz powtarzalną listę pracy z filtrami, sortowaniem i widocznymi kolumnami. Zapisany pulpit jest widokiem istniejących dokumentów.
+Zapisany pulpit to nazwany widok listy pracy: wyszukiwanie, filtry, typ dokumentu, sortowanie i widoczne kolumny. Po otwarciu wszystko jest przywracane jednocześnie, więc powtarzalnych zadań nie trzeba konfigurować od nowa. Pulpit zmienia tylko sposób wyświetlania dokumentów i nigdy samych dokumentów.
 
-## Tworzenie i udostępnianie widoku
+## Tworzenie pulpitu
 
-1. Ustaw wyszukiwanie, filtry, typ dokumentu, sortowanie i kolumny.
-2. Otwórz niebieski przycisk widoku pod wyszukiwarką.
-3. Utwórz nowy pulpit i nadaj mu jasną nazwę.
-4. Wybierz widoczność prywatną, wszystkich użytkowników albo konkretne grupy i osoby.
-5. Wybierz **Zapisz**.
+1. Przygotuj widok, który chcesz zachować. Wpisz wyszukiwanie w pasku wyszukiwania, użyj **Inteligentnych filtrów** z selektora pól, **Filtrów**, karty typu dokumentu, sortowania tabeli i kolumn.
 
-Widoczność określa, kto może korzystać z widoku. Każda osoba nadal widzi tylko dokumenty dozwolone przez jej uprawnienia.
+2. Otwórz przycisk widoku pod polem wyszukiwania. Pokazuje aktywny widok i liczbę pasujących teraz dokumentów, na przykład **Wszystkie dokumenty (5986)**.
+
+3. Wybierz **Utwórz nowy pulpit nawigacyjny**.
+
+4. Nadaj jasną nazwę i zdecyduj, kto może korzystać z widoku:
+   * **Widoczne tylko dla mnie** zachowuje widok jako prywatny.
+   * **Widoczne dla wszystkich użytkowników** udostępnia go wszystkim osobom w organizacji.
+   * **Udostępnij grupom i użytkownikom** pokazuje dwie listy **Grupa** i **Wybierz użytkownika**, aby wskazać konkretne grupy lub pojedyncze osoby.
+
+5. Wybierz **Zapisz**. Przycisk widoku przełącza się na nowy pulpit i pokazuje jego nazwę oraz liczbę dokumentów.
 
 <figure><img src="../../../.gitbook/assets/dashboard-saved-view-pl.png" alt="Utwórz pulpit z nazwą i wybierz osoby, które mogą go zobaczyć."><figcaption><p>Utwórz pulpit z nazwą i wybierz osoby, które mogą go zobaczyć.</p></figcaption></figure>
 
-## Przełączanie, aktualizowanie i usuwanie widoku
+Widoczność określa, kto może **korzystać** z widoku. Nie przyznaje dostępu do dokumentów: każda osoba nadal widzi tylko dokumenty, do których ma uprawnienia.
 
-Wybierz zapisany pulpit lub wróć do widoku domyślnego przyciskiem widoku. Po zmianie własnego widoku zapisz zmiany, gdy działanie stanie się dostępne. Jest wyłączone przy braku zmian lub w widoku udostępnionym przez inną osobę.
+## Przełączanie widoków i zmiany
 
-Użyj edycji własnego widoku, aby zmienić nazwę lub udostępnianie. Użyj usuwania i potwierdź tylko wtedy, gdy chcesz usunąć zapisany widok. Dokumenty pozostaną. Aby dostosować cudzy udostępniony widok, utwórz własny.
+Wybierz zapisany pulpit w przycisku widoku albo wróć do **Domyślnego panelu**, niezapisanego widoku wszystkich dokumentów. Ostatnio otwarty pulpit pozostaje aktywny po odświeżeniu strony.
+
+Po zmianie wczytanego pulpitu — także gdy zmieniasz tylko kolumny — przycisk widoku udostępnia **Zapisz zmiany w panelu**. Zapisujesz wtedy zmianę pod tą samą nazwą. Działanie pozostaje wyłączone, gdy nic się nie zmieniło lub gdy pulpit należy do innej osoby; udostępnionego widoku nie można nadpisać, utwórz własny.
+
+## Zmiana nazwy pulpitu lub ponowne udostępnienie
+
+Najedź na własny pulpit w przycisku widoku, aby zobaczyć ikony **Edytuj** i **Usuwać**. Wybierz ołówek, aby otworzyć **Edytuj pulpit nawigacyjny** i zmienić nazwę lub widoczność. Okno pokazuje te same trzy opcje co przy tworzeniu.
+
+## Usuwanie pulpitu
+
+Wybierz ikonę kosza przy własnym pulpicie i potwierdź przez **Usuwać**. Usunięcie widoku nie usuwa dokumentów, do których się odwoływał. Pulpit udostępniony Ci przez inną osobę możesz otworzyć i używać, ale nie możesz go zmienić ani usunąć na swoim koncie.

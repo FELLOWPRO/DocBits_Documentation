@@ -1,5 +1,13 @@
 # Moduł
 
+## Samouczek wideo: Przegląd ustawień i moduły
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/pl.mp4" %}
+Przegląd ustawień i moduły w DocBits
+{% endembed %}
+
+Film pokazuje pięć grup przeglądu ustawień, wyszukiwarkę i szybkie linki oraz to, czym sterują trzy strony modułów.
+
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-pl.png" alt="Moduły zamówień i finansów w istniejącym stanie konfiguracji. Opis integracji Vertex zawiera błędne określenie „podatku wierzchołkowego”; dotyczy on usługi podatkowej Vertex."><figcaption><p>Moduły zamówień i finansów w istniejącym stanie konfiguracji. Opis integracji Vertex zawiera błędne określenie „podatku wierzchołkowego”; dotyczy on usługi podatkowej Vertex.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-pl.png" alt="Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska."><figcaption><p>Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska.</p></figcaption></figure>

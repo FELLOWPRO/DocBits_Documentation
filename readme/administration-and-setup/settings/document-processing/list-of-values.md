@@ -1,5 +1,13 @@
 # Listy wartości
 
+## Samouczek wideo: Dane główne i listy wartości
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/pl.mp4" %}
+Źródła danych głównych, listy wartości i ustawienia danych głównych w DocBits
+{% endembed %}
+
+Film pokazuje źródła danych głównych, listy wartości oraz ustawienia danych głównych typu dokumentu.
+
 Listy wartości zawierają wstępnie zdefiniowane opcje pól dokumentu. Pole może korzystać z listy, aby wyświetlać opcje podczas walidacji. Etykiety mogą mieć tłumaczenia; wartość techniczna jest taka sama we wszystkich językach.
 
 ## Otwieranie list

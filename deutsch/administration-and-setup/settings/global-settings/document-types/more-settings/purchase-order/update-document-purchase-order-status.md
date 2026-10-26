@@ -1,41 +1,37 @@
 # Aktualisieren des Dokuments Bestellstatus
 
-## Überblick
+Diese Einstellung gilt für Dokumententypen, die Bestellungen (Purchase Orders) verwenden. Sie steuert, ob ein Dokument Statusaktualisierungen aus der verknüpften Bestellung erhalten kann. Der Schalter wird je Dokumententyp eingerichtet. Damit ein PO-Status im Dashboard sichtbar ist, muss das passende Feld außerdem als Spalte verfügbar und sichtbar sein.
 
-Wenn aktiviert, wird die **PO-Status**-Spalte im Dashboard automatisch aktualisiert, wenn sich der Status der Bestellung ändert.
+Wählen Sie vor der Änderung die richtige Organisation und den richtigen Dokumententyp aus. Sie benötigen Administratorzugriff, um die Dokumententyp-Einstellungen zu bearbeiten. Eine Bestellung muss mit einem Dokument verknüpft sein, bevor eine Statusänderung geprüft werden kann.
 
-## Wo zu aktivieren
+## Einstellung einschalten
 
-1. Gehe zu: **Einstellungen** → **globale Einstellungen** → **Dokumententyp**
-2.  Wähle den gewünschten Dokumententyp aus und klicke auf **Weitere Einstellungen**.\
+1. Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Dokumenttypen**.
+2. Suchen Sie den Dokumententyp der mit Bestellungen verknüpften Dokumente, zum Beispiel **Rechnung**, und wählen Sie das Zahnrad-Symbol auf seiner Karte, um **Weitere Einstellungen** zu öffnen.
+3. Klappen Sie **Bestellung** auf. Finden Sie **Dokumentstatus für Einkaufsbestellung aktualisieren** und schalten Sie ihn ein. Das Hilfe-Symbol daneben erklärt die Option in der Anwendung. Das Umschalten dieses Schalters ändert nicht die anderen PO-Einstellungen im selben Abschnitt.
 
+<figure><img src="../../../../../../.gitbook/assets/update-document-purchase-order-status-document-types-de-20261011.png" alt="Dokumenttypen-Seite mit der Rechnung-Karte und ihrem Zahnrad-Symbol für Weitere Einstellungen"><figcaption>Öffnen Sie die Einstellungen des Dokumenttyps, den Sie verwenden.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  Gehe im Abschnitt **Bestellung** zu der Option **Dokument Bestellstatus aktualisieren**.\
+<figure><img src="../../../../../../.gitbook/assets/update-document-purchase-order-status-po-settings-de-20261011.png" alt="Abschnitt Bestellung der Weitere-Einstellungen-Seite mit dem Schalter Dokumentstatus für Einkaufsbestellung aktualisieren"><figcaption>Der Statusaktualisierungs-Schalter in den Bestellung-Einstellungen.</figcaption></figure>
 
+## PO-Status im Dashboard anzeigen
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSsFkQ46Jd4tn0WGqNSjk%252Fimage.png%3Falt%3Dmedia%26token%3D51ee4f2d-76ae-42b4-a748-f0e9d340b329\&width=768\&dpr=4\&quality=100\&sign=e0f4b1af\&sv=2)
+1. Kehren Sie zum Dashboard zurück und wählen Sie das Zahnrad-Symbol über der Dokumententabelle.
+2. Öffnen Sie **Einstellungen für Spalten**.
+3. Wählen Sie **Feld aus Dokumenttyp hinzufügen**, wählen Sie den Dokumententyp und suchen Sie nach dem PO-Status-Feld. Wenn das Feld verfügbar ist, wählen Sie es aus, wählen Sie **Zu sichtbaren Spalten hinzufügen** und danach **Fertig**.
 
-## Wie es funktioniert
+Das Spaltendialog-Fenster enthält **Unsichtbare Spalten** und **Sichtbare Spalten**. Mit den Pfeilen verschieben Sie eine ausgewählte Spalte zwischen beiden Listen. Die vollständige Spaltenanleitung finden Sie unter [Dokumentspalten ändern](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md). Wenn das PO-Status-Feld für den gewählten Typ fehlt, bitten Sie eine Administratorperson, das Feld und die Lookup-Konfiguration zu prüfen; der Anzeige-Schalter allein erzeugt kein fehlendes Feld.
 
-Wenn diese Einstellung aktiviert ist, wird die **PO-Status**-Spalte im Dashboard automatisch den aktuellen Status der Bestellung widerspiegeln. Wenn beispielsweise der PO-Status auf _Empfangen_ oder _In Rechnung gestellt_ aktualisiert wird, wird die Dashboard-Spalte entsprechend aktualisiert, um diesen neuen Status anzuzeigen.
+<figure><img src="../../../../../../.gitbook/assets/update-document-purchase-order-status-dashboard-columns-de-20261011.png" alt="Dialog Einstellungen für Spalten im Dashboard mit Unsichtbare Spalten, Sichtbare Spalten und Feld aus Dokumenttyp hinzufügen"><figcaption>Legen Sie fest, welche Spalten im Dashboard erscheinen.</figcaption></figure>
 
-<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FmWZIOi5pqWyeagCfiXgy%252FStatus%2520on%2520Dashboard.jpg%3Falt%3Dmedia%26token%3D3aad59e7-d249-4f07-afa3-c68429128cec&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6cde440e&#x26;sv=2" alt="" width="375"></div>
+## Lookup für die Bestellung prüfen
 
-## Einrichtung
+Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Dokumenttypen → Felder → Stammdaten-Einstellungen**, klappen Sie **Stammdaten** und dann **Order Header Lookup** auf. Prüfen Sie, dass die nötige PO-Feldzuordnung existiert und der relevante Lookup **Auto-Trigger** hat, wenn ein automatischer Lookup nötig ist. Das Bild unten zeigt die Konfigurationsliste; die roten Kreuze bedeuten, dass Auto-Trigger für diese Beispielzeilen ausgeschaltet ist. Es zeigt keine aktualisierte PO-Statusanzeige.
 
-1. **Aktiviere die Einstellung** Gehe zu der oben genannten Stelle und schalte die Einstellung ein.
-2. **Füge die PO-Status-Spalte hinzu (falls nicht sichtbar)** Wenn die **PO-Status**-Spalte noch nicht im Dashboard sichtbar ist:
-   *   Gehe zu: **Erweiterte Einstellungen** → **Tabellenspalten für Organisationen festlegen**\
+<figure><img src="../../../../../../.gitbook/assets/update-document-purchase-order-status-lookup-po-header-de-20261011.png" alt="Order-Header-Lookup-Konfiguration mit Suchbar- und Auto-Trigger-Status für jedes Feld"><figcaption>Prüfen Sie die tatsächlichen Lookup-Zeilen des Dokumenttyps.</figcaption></figure>
 
+Hilfe zum Einrichten eines Lookups finden Sie unter [Fuzzy Data Konfiguration mit Masterdaten](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fn6GyECCtvUeKLYd6FkEH%252Fimage.png%3Falt%3Dmedia%26token%3Da023deba-748f-4140-bb33-17483c91f2cf\&width=768\&dpr=4\&quality=100\&sign=164eb544\&sv=2)
-   * Füge das Feld aus dem Dokumententyp hinzu, indem du nach **PO-Status** suchst
-3. **Konfiguriere die Suchkonfiguration**
-   *   Konfiguriere das Statusfeld im Bestellkopf nach folgendem Muster:\
+## Mit einem bekannten Dokument prüfen
 
-
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Folrh285NuJO787Udc80C%252Fimage.png%3Falt%3Dmedia%26token%3Def5abe46-fe94-4946-a893-66f7ca21322b\&width=768\&dpr=4\&quality=100\&sign=415e657e\&sv=2)
-   * **Hinweis:** **Die Bestellung muss auf Auto Trigger stehen, da Statusaktualisierungen sonst möglicherweise nicht korrekt aktualisiert werden**
-   * Weißt du nicht, wie man die **Suchkonfiguration konfiguriert? Hier ist der** [**Suchkonfigurationsleitfaden**](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
-4. **Überprüfen** Empfange oder stelle eine Bestellung in Rechnung und überprüfe dann das Dashboard, um zu bestätigen, dass der Status korrekt aktualisiert wurde.
+Verwenden Sie ein Dokument, das bereits mit einer Testbestellung verknüpft ist. Ändern Sie den Status dieser Bestellung über Ihren normalen Prozess, aktualisieren Sie das Dashboard und prüfen Sie das Dokument und das sichtbare PO-Status-Feld. Wenn der Status sich nicht aktualisiert, prüfen Sie die PO-Verknüpfung des Dokuments, die Lookup-Konfiguration und ob das passende Feld zum Dashboard hinzugefügt wurde. Schließen Sie eine erfolgreiche Aktualisierung nicht allein aus dem Schalter.

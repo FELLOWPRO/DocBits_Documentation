@@ -1,21 +1,36 @@
 # Persoonlijke dashboards
 
-Bewaar een terugkerende werklijst met filters, sortering en zichtbare kolommen. Een opgeslagen dashboard is een weergave van bestaande documenten.
+Een opgeslagen dashboard is een benoemde weergave van uw werklijst: zoekopdracht, filters, documenttype, sortering en zichtbare kolommen. Bij openen wordt alles tegelijk hersteld, zodat terugkerende taken niet opnieuw hoeven te worden ingesteld. Een dashboard wijzigt alleen de weergave van documenten en nooit de documenten zelf.
 
-## Een weergave maken en delen
+## Een dashboard maken
 
-1. Stel zoekopdracht, filters, documenttype, sortering en kolommen in.
-2. Open de blauwe weergaveknop onder het zoekvak.
-3. Maak een nieuw dashboard en geef het een duidelijke naam.
-4. Kies privé, alle gebruikers of bepaalde groepen en gebruikers.
-5. Kies **Opslaan**.
+1. Stel de weergave samen die u wilt bewaren. Voer de zoekopdracht in de zoekbalk in, gebruik de **Slimme filters** uit de veldkeuze, de **Filters**, een tabblad voor het documenttype, de sortering van de tabel en de kolommen.
 
-De zichtbaarheid bepaalt wie de weergave kan gebruiken. Iedereen ziet nog steeds alleen de documenten die de eigen rechten toestaan.
+2. Open de weergaveknop onder het zoekvak. Deze toont de actieve weergave en het aantal documenten dat er nu bij past, bijvoorbeeld **Alle documenten (5986)**.
+
+3. Kies **Nieuw dashboard maken**.
+
+4. Geef een duidelijke naam op en bepaal wie de weergave kan gebruiken:
+   * **Alleen zichtbaar voor mij** houdt de weergave privé.
+   * **Zichtbaar voor alle gebruikers** stelt deze beschikbaar aan iedereen in uw organisatie.
+   * **Delen met groepen en gebruikers** toont de twee lijsten **Groep** en **Selecteer gebruiker**, zodat u specifieke groepen of afzonderlijke personen aanwijst.
+
+5. Kies **Opslaan**. De weergaveknop schakelt naar het nieuwe dashboard en toont de naam en het aantal documenten.
 
 <figure><img src="../../../.gitbook/assets/dashboard-saved-view-nl.png" alt="Maak een dashboard met een naam en kies wie het kan zien."><figcaption><p>Maak een dashboard met een naam en kies wie het kan zien.</p></figcaption></figure>
 
-## Een weergave kiezen, wijzigen of verwijderen
+De zichtbaarheid bepaalt wie de weergave kan **gebruiken**. Deze geeft geen toegang tot documenten: iedereen ziet nog steeds alleen de documenten waarvoor de eigen rechten gelden.
 
-Kies een opgeslagen dashboard of ga terug naar de standaardweergave via de weergaveknop. Sla wijzigingen in uw eigen weergave op wanneer de actie beschikbaar wordt. Deze is uitgeschakeld als er niets is gewijzigd of als iemand anders de weergave met u heeft gedeeld.
+## Van weergave wisselen of deze wijzigen
 
-Gebruik het bewerkingspictogram van een eigen weergave om naam of deelinstellingen te wijzigen. Gebruik verwijderen en bevestig alleen als u de opgeslagen weergave wilt weghalen. De documenten blijven bestaan. Maak een eigen weergave om de gedeelde weergave van iemand anders aan te passen.
+Kies een opgeslagen dashboard in de weergaveknop of ga terug naar het **Standaard Dashboard**, de niet-opgeslagen weergave van alle documenten. Het laatst geopende dashboard blijft actief na het vernieuwen van de pagina.
+
+Na een wijziging in een geladen dashboard — ook als u alleen kolommen wijzigt — biedt de weergaveknop **Dashboardwijzigingen opslaan**. Zo slaat u de wijziging onder dezelfde naam op. De actie blijft uitgeschakeld als er niets is gewijzigd of als het dashboard van iemand anders is; een gedeelde weergave kan niet worden overschreven, maak een eigen weergave.
+
+## Een dashboard hernoemen of opnieuw delen
+
+Beweeg de aanwijzer over een eigen dashboard in de weergaveknop om de pictogrammen **Bewerking** en **Verwijderen** te tonen. Kies het potlood om **Dashboard bewerken** te openen en de naam of zichtbaarheid te wijzigen. Het venster toont dezelfde drie opties als bij het maken.
+
+## Een dashboard verwijderen
+
+Kies het prullenbakpictogram van een eigen dashboard en bevestig met **Verwijderen**. Een weergave verwijderen verwijdert niet de documenten waarnaar deze verwees. Een dashboard dat iemand anders met u heeft gedeeld, kunt u openen en gebruiken, maar niet in uw account wijzigen of verwijderen.

@@ -4,13 +4,19 @@
 
 ***
 
-U bouwt dit patroon in de **Workflow-bouwer** (Workflow Dashboard → Workflow List → Add Workflow). Klik op **Kaart toevoegen** en open de categorie **Logica**. Deze bevat de voorwaarde- en vertakkingskaarten die de beslissingsboom aansturen en die u combineert met de groep **En** om meerdere voorwaarden te evalueren:
+Kies in de ontwerper in de modus Standard «Kaart toevoegen» in de groep «En....» en open de categorie «Logica». Het scherm toont een voorwaarde op basis van een beslissingstabel; er is nog geen tabel geselecteerd en de opslag van de resultaten is nog niet ingesteld. Selecteer de tabel en stel de opslag in van de resultaten voor het document of de leveranciersorganisatie. Configureer daarna de overige voorwaarden, acties en verbindingen in de workflow en test het gedrag.
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-decision-condition-library-current-nl.png" alt="Ontwerper in de modus Standard: categorie «Logica» geopend via «Kaart toevoegen» in de groep «En....»; de beslissingstabel voor de voorwaarde is nog niet geselecteerd en de opslag van de resultaten is nog niet ingesteld."><figcaption><p>Ontwerper in de modus Standard: categorie «Logica» geopend via «Kaart toevoegen» in de groep «En....»; de beslissingstabel voor de voorwaarde is nog niet geselecteerd en de opslag van de resultaten is nog niet ingesteld.</p></figcaption></figure>
 
 ***
 
 ## Patroonoverzicht
+
+#### Schema: Overzicht
+
+<figure><img src="../../../.gitbook/assets/decision-flow-overview-nl.png" alt="Overzicht van het volledige voorbeeld: controleer kritieke uitzonderingen, het documenttype en de urgentie voordat u de goedkeuringsroute kiest. Elke verwerking en elke verbinding moeten worden geconfigureerd; het schema toont geen automatisch productgedrag."><figcaption><p>Overzicht van het volledige voorbeeld: controleer kritieke uitzonderingen, het documenttype en de urgentie voordat u de goedkeuringsroute kiest. Elke verwerking en elke verbinding moeten worden geconfigureerd; het schema toont geen automatisch productgedrag.</p></figcaption></figure>
+
+Deze schema’s verklaren te configureren bedrijfsregels. Ze vullen de bestaande bibliotheekafbeelding hierboven aan. Verbind in Advanced elke route expliciet. Bepaal in een lineaire Standard-reeks de voorwaarden waaronder acties mogen plaatsvinden.
 
 Dit patroon laat zien hoe u complexe beslissingslogica implementeert in DocBits-workflows. Met voorwaardekaarten routeert u documenten via verschillende verwerkingspaden op basis van documentkenmerken, veldwaarden en bedrijfsregels.
 
@@ -46,89 +52,153 @@ Gebruik dit patroon wanneer u het volgende moet doen:
 
 ## Soorten beslissingslogica
 
+De onderstaande IF-THEN-, AND-, OR- en geneste voorbeelden zijn onafhankelijk. Hun drempels verklaren elk principe; ze vormen geen gezamenlijke goedkeuringsmatrix. De volledige matrix verderop gebruikt vier niet-overlappende banden. Een onbekende waarde of evaluatiefout is niet automatisch False: bepaal en test de afhandeling afzonderlijk.
+
 ### 1. Eenvoudige IF-THEN-logica
+
+#### Schema: Eenvoudige voorwaarde
+
+<figure><img src="../../../.gitbook/assets/decision-simple-if-nl.png" alt="Onafhankelijk IF-THEN-voorbeeld: een bedrag strikt hoger dan €10.000 kiest de directeur; anders de manager. Gelijkheid blijft in de tweede tak. Bestemmingen moeten worden geconfigureerd."><figcaption><p>Onafhankelijk IF-THEN-voorbeeld: een bedrag strikt hoger dan €10.000 kiest de directeur; anders de manager. Gelijkheid blijft in de tweede tak. Bestemmingen moeten worden geconfigureerd.</p></figcaption></figure>
+
+<details>
+<summary>IF-THEN-principe: één voorwaarde, twee resultaten</summary>
 
 ```
 IF condition:
-  → Action A
+  → Actie A
 ELSE:
-  → Action B
+  → Actie B
 ```
 
+</details>
+
 **Voorbeeld:**
+
+Visuele uitleg: [eenvoudige voorwaarde](#schema-eenvoudige-voorwaarde).
+
+<details>
+<summary>IF-THEN-voorbeeld: bedragdrempel</summary>
 
 ```
 IF Amount > €10,000:
-  → Assign to Director
+  → Toewijzen aan directeur
 ELSE:
-  → Assign to Manager
+  → Toewijzen aan manager
 ```
+
+</details>
+
+#### Schema: Criteria EN en OF
+
+<figure><img src="../../../.gitbook/assets/decision-conditions-and-or-nl.png" alt="Twee onafhankelijke voorbeelden: EN vereist alle drie de criteria; OF vereist er minstens één. De voorbeelddrempels vervangen de bedragscategorieën van de volledige matrix niet. De uitgangen en de afhandeling van onbekende gegevens of evaluatiefouten moeten worden geconfigureerd."><figcaption><p>Twee onafhankelijke voorbeelden: EN vereist alle drie de criteria; OF vereist er minstens één. De voorbeelddrempels vervangen de bedragscategorieën van de volledige matrix niet. De uitgangen en de afhandeling van onbekende gegevens of evaluatiefouten moeten worden geconfigureerd.</p></figcaption></figure>
 
 ### 2. Meerdere criteria (AND-logica)
 
+<details>
+<summary>AND-principe: alle criteria</summary>
+
 ```
 IF condition1 AND condition2 AND condition3:
-  → Action A
+  → Actie A
 ELSE:
-  → Action B
+  → Actie B
 ```
 
+</details>
+
 **Voorbeeld:**
+
+Visuele uitleg: [criteria en en of](#schema-criteria-en-en-of).
+
+<details>
+<summary>AND-voorbeeld: drie criteria</summary>
 
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
-  → Assign to IT Director + CFO (dual approval)
+  → Toewijzen aan IT-directeur + CFO (dubbele goedkeuring)
 ELSE:
-  → Standard approval workflow
+  → Gebruikelijke goedkeuringsworkflow
 ```
+
+</details>
 
 ### 3. Alternatieve criteria (OR-logica)
 
+Visuele uitleg: [criteria en en of](#schema-criteria-en-en-of).
+
+<details>
+<summary>OR-principe: minstens één criterium</summary>
+
 ```
 IF condition1 OR condition2 OR condition3:
-  → Action A
+  → Actie A
 ELSE:
-  → Action B
+  → Actie B
 ```
+
+</details>
 
 **Voorbeeld:**
 
+Visuele uitleg: [criteria en en of](#schema-criteria-en-en-of).
+
+<details>
+<summary>OR-voorbeeld: bedrag, blokkering of urgentie</summary>
+
 ```
-IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
-  → Escalate immediately
+IF Amount > €50,000 OR Supplier is "Blocked" OR Document heeft de markering "Urgent":
+  → Onmiddellijk escaleren
 ELSE:
-  → Standard processing
+  → Gebruikelijke verwerking
 ```
 
+</details>
+
 ### 4. Geneste beslissingsboom
+
+#### Schema: Geneste beslissingen
+
+<figure><img src="../../../.gitbook/assets/decision-nested-type-amount-nl.png" alt="Onafhankelijk genest voorbeeld: het documenttype bepaalt de bedragstoets. De drempels zijn strikt: €10.000 voor een factuur en €5.000 voor een creditnota voldoen niet aan ‘groter dan’. Bepaal de afhandeling voor andere typen en onbekende gegevens."><figcaption><p>Onafhankelijk genest voorbeeld: het documenttype bepaalt de bedragstoets. De drempels zijn strikt: €10.000 voor een factuur en €5.000 voor een creditnota voldoen niet aan ‘groter dan’. Bepaal de afhandeling voor andere typen en onbekende gegevens.</p></figcaption></figure>
+
+<details>
+<summary>Principe van geneste beslissingen</summary>
 
 ```
 IF condition1:
   IF condition2:
-    → Action A
+    → Actie A
   ELSE:
-    → Action B
+    → Actie B
 ELSE:
   IF condition3:
-    → Action C
+    → Actie C
   ELSE:
-    → Action D
+    → Actie D
 ```
 
+</details>
+
 **Voorbeeld:**
+
+Visuele uitleg: [geneste beslissingen](#schema-geneste-beslissingen).
+
+<details>
+<summary>Genest voorbeeld: factuur en creditnota</summary>
 
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
-    → High-value invoice workflow
+    → Workflow voor facturen met een hoog bedrag
   ELSE:
-    → Standard invoice workflow
+    → Gebruikelijke factuurworkflow
 ELSE IF Document_Type = "Credit Note":
   IF Amount > €5,000:
-    → High-value credit workflow
+    → Workflow voor creditnota’s met een hoog bedrag
   ELSE:
-    → Standard credit workflow
+    → Gebruikelijke creditnotaworkflow
 ```
+
+</details>
 
 ***
 
@@ -138,51 +208,94 @@ ELSE IF Document_Type = "Credit Note":
 
 **Bedrijfsregels:**
 
-1. Bedrag < €1.000: automatisch goedkeuren
-2. Bedrag €1.000-€10.000: goedkeuring door de manager
-3. Bedrag > €10.000 EN nieuwe leverancier: goedkeuring door directeur + CFO
-4. Bedrag > €10.000 EN bestaande leverancier: alleen goedkeuring door de directeur
-5. Elk bedrag met een afwijking ten opzichte van de inkooporder: eerst goedkeuring door Inkoop
-6. Urgente facturen (gemarkeerd): versnelde workflow
+1. Stop vóór routering op bedrag bij kritieke uitzonderingen, waaronder een geblokkeerde leverancier, en handel deze af. Een PO-afwijking is niet altijd kritiek: na oplossing door inkoop kan de route volgens configuratie doorgaan. Controleer vervolgens het documenttype.
+2. Volg voor een urgente factuur de versnelde route van dit voorbeeld in plaats van de gewone bedragbanden.
+3. Voor een niet-urgente factuur met een geldig bedrag:
+   * bedrag < €1.000: automatische goedkeuring;
+   * €1.000 ≤ bedrag < €10.000: goedkeuring door manager;
+   * €10.000 ≤ bedrag < €50.000: leverancierscontroles gevolgd door directeursgoedkeuring; bij een niet-geblokkeerde leverancier met een relatie korter dan 180 dagen volgt na goedkeuring door de directeur ook goedkeuring door de CFO; voor andere leveranciers wordt eveneens het risico gecontroleerd;
+   * bedrag ≥ €50.000: directiegoedkeuring volgens route D.
+4. Een ontbrekend of ongeldig bedrag gaat in dit voorbeeld naar expliciet geconfigureerde handmatige beoordeling. Dit is voorbeeldbeleid en geen automatische terugvalfunctie van het product.
+5. Wacht na het aanmaken van een taak op het resultaat. Afwijzing stopt de keten en volgt de geconfigureerde afhandeling; een resultaat in afwachting staat doorgaan niet toe. Maak de CFO-taak pas aan na positieve goedkeuring door de directeur.
 
-**Implementatie:**
+#### Schema: Bedragbanden
+
+<figure><img src="../../../.gitbook/assets/decision-amount-routing-nl.png" alt="Voorbeelddrempels op niveau 2: minder dan € 1.000; vanaf € 1.000 (inclusief) tot € 10.000 (exclusief); vanaf € 10.000 (inclusief) tot € 50.000 (exclusief); € 50.000 of meer. Elke test volgt op het negatieve resultaat van de vorige test. Handmatige controle bij een ontbrekend of ongeldig bedrag moet expliciet worden geconfigureerd."><figcaption><p>Voorbeelddrempels op niveau 2: minder dan € 1.000; vanaf € 1.000 (inclusief) tot € 10.000 (exclusief); vanaf € 10.000 (inclusief) tot € 50.000 (exclusief); € 50.000 of meer. Elke test volgt op het negatieve resultaat van de vorige test. Handmatige controle bij een ontbrekend of ongeldig bedrag moet expliciet worden geconfigureerd.</p></figcaption></figure>
+
+Grenswaarden €1.000, €10.000 en €50.000 vallen in de hogere band. Configureer en test eerdere controles, wachten op resultaten en verbindingen tussen routes. Een aangemaakte taak bewijst geen goedkeuring of documentexport.
+
+**Illustratieve implementatie:** pas technische namen en pseudocode aan de werkelijk beschikbare kaarten in uw versie aan. De blokken beschrijven een te configureren voorbeeld, geen importeerbaar bestand. Controleer uitvoeringsresultaten en neveneffecten.
+
+Visuele uitleg: [overzicht](#schema-overzicht), [bedragbanden](#schema-bedragbanden), [leveranciersanalyse](#schema-leveranciersanalyse), [automatische route](#schema-automatische-route), [managertaak](#schema-managertaak), [directiegoedkeuring](#schema-directiegoedkeuring), [regelregister](#schema-regelregister).
+
+<details>
+<summary>Pseudocode van de volledige matrix</summary>
 
 ```
-STEP 1: Check for PO Mismatch
+VOORCONTROLE: kritieke uitzonderingen
+  IF Critical_Exception = TRUE OR Supplier_Status = "BLOCKED":
+    → Stoppen en de uitzondering afhandelen vóór routering
+
+STAP 1: controleren op afwijkingen van de inkooporder
   IF PO_Match_Status = "FAIL":
-    → Route to Procurement for PO resolution
-    → After resolution, continue below
+    → Routeren naar inkoop om de afwijking van de inkooporder op te lossen
+    → Na oplossing hieronder doorgaan volgens de configuratie
 
-STEP 2: Check Urgent Flag
+STAP 1b: het documenttype controleren
+  IF Document_Type = "Credit Note":
+    → Geconfigureerde creditnotaworkflow
+  ELSE IF Document_Type is not "Invoice":
+    → Geconfigureerde workflow voor dit documenttype
+  ELSE:
+    → Hieronder doorgaan
+
+STAP 2: de urgentiemarkering controleren
   IF Urgent_Flag = TRUE:
-    → Skip amount checks
-    → Direct to highest approver
-    → Set priority = HIGH
-    → 1-day deadline
+    → Bedragcontroles overslaan
+    → Doorsturen naar de hoogste goedkeurder
+    → Prioriteit instellen = URGENT
+    → Termijn van 1 dag
 
-STEP 3: Amount-Based Routing (if not urgent)
-  IF Amount < €1,000:
-    → Auto-approve
-    → Export immediately
+STAP 3: routering op bedrag (Invoice, indien niet urgent)
+  IF Amount ontbreekt of is ongeldig:
+    → Handmatige beoordeling (expliciet voorbeeldbeleid)
+    → Niet doorgaan naar de bedragcategorieën
+
+  ELSE IF Amount < €1,000:
+    → Automatisch goedkeuren
+    → Onmiddellijk exporteren
 
   ELSE IF Amount < €10,000:
-    → Create task for Manager
+    → Taak voor de manager aanmaken
     → Priority: Medium
-    → Deadline: 3 days
+    → Deadline: 3 dagen
 
-  ELSE IF Amount ≥ €10,000:
-    CHECK Supplier Status:
-      IF Supplier_Age < 180 days (New):
-        → Create task for Director (Task 1)
-        → After approval, create task for CFO (Task 2)
+  ELSE IF Amount < €50,000:
+    CONTROLE van leveranciersstatus en risico:
+      IF Supplier_Status = "BLOCKED":
+        → Stoppen en de uitzondering afhandelen
+      ELSE IF Supplier_Age < 180 dagen (nieuw):
+        → Taak voor de directeur aanmaken (taak 1)
+        → Wachten op positieve goedkeuring door de directeur voordat de CFO-taak wordt aangemaakt (taak 2)
+        → Wachten op positieve goedkeuring door de CFO voordat de verwerking doorgaat
+        → Elke afwijzing: de keten stoppen en de afwijzing volgens de configuratie afhandelen
+        → In afwachting: niet doorgaan
         → Priority: High
-        → Deadline: 2 days each
+        → Deadline: 2 dagen per taak
+      ELSE IF Supplier_Risk_Rating = "HIGH":
+        → Extra controles en voorafgaande goedkeuring door de manager
+        → Wachten op positieve goedkeuring door de manager vóór goedkeuring door de directeur
+        → In afwachting of afgewezen: niet doorgaan met de goedkeuringsketen
+      ELSE (bestaande leverancier):
+        → Alleen een taak voor de directeur aanmaken
+        → Priority: High
+        → Deadline: 2 dagen
 
-      ELSE (Existing Supplier):
-        → Create task for Director only
-        → Priority: High
-        → Deadline: 2 days
+  ELSE (Amount ≥ €50,000):
+    → Goedkeuringsroute voor de directie (zie route D)
 ```
+
+</details>
 
 ***
 
@@ -192,6 +305,13 @@ STEP 3: Amount-Based Routing (if not urgent)
 
 **Voorwaarde 1: bedragsdrempel**
 
+#### Schema: Onafhankelijke parameters
+
+<figure><img src="../../../.gitbook/assets/decision-parameter-checks-nl.png" alt="Twee onafhankelijke voorwaarden: een bedrag strikt lager dan EUR 1.000 en een leverancier met status ACTIVE. Gelijkheid van het bedrag geeft Nee; een inactieve leverancier is niet noodzakelijk geblokkeerd. Technische parameters zijn illustratief en moeten aan de werkelijke configuratie worden aangepast."><figcaption><p>Twee onafhankelijke voorwaarden: een bedrag strikt lager dan EUR 1.000 en een leverancier met status ACTIVE. Gelijkheid van het bedrag geeft Nee; een inactieve leverancier is niet noodzakelijk geblokkeerd. Technische parameters zijn illustratief en moeten aan de werkelijke configuratie worden aangepast.</p></figcaption></figure>
+
+<details>
+<summary>Illustratieve parameters: bedragdrempel</summary>
+
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
 Field: Total_Amount
@@ -200,7 +320,16 @@ Value: 1000
 Currency: EUR
 ```
 
+</details>
+
 **Voorwaarde 2: controle van het documenttype**
+
+#### Schema: Documenttypen
+
+<figure><img src="../../../.gitbook/assets/decision-document-type-nl.png" alt="Het Invoice-filter en de typerouter tonen aanvullende aspecten van dit voorbeeld. De router onderscheidt factuur, creditnota, bon en onbekend type. Kaart- en workflownamen zijn illustratief; elke bestemming moet worden geconfigureerd."><figcaption><p>Het Invoice-filter en de typerouter tonen aanvullende aspecten van dit voorbeeld. De router onderscheidt factuur, creditnota, bon en onbekend type. Kaart- en workflownamen zijn illustratief; elke bestemming moet worden geconfigureerd.</p></figcaption></figure>
+
+<details>
+<summary>Illustratieve parameters: documenttype</summary>
 
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
@@ -208,7 +337,14 @@ Document Type: IS
 Type: Invoice
 ```
 
+</details>
+
 **Voorwaarde 3: leveranciersstatus**
+
+Visuele uitleg: [onafhankelijke parameters](#schema-onafhankelijke-parameters).
+
+<details>
+<summary>Illustratieve parameters: actieve status</summary>
 
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
@@ -216,7 +352,18 @@ Supplier Status: IS
 Status: ACTIVE
 ```
 
+</details>
+
 **Voorwaarde 4: controle op nieuwe leverancier**
+
+Bereken voor dit voorbeeld de datum 180 dagen vóór de beoordelingsdatum en vergelijk daarmee de eerste transactiedatum. ‘IS AFTER’ betekent strikt na: gelijkheid geeft Nee. Kies het werkelijke veld en bereken de grensdatum of vul deze in; kaart- en veldnamen en de aanduiding {{TODAY_MINUS_180_DAYS}} zijn illustratief. Controleer afzonderlijk dat de eerste transactiedatum geldig is en niet na de beoordelingsdatum ligt; configureer de afhandeling voor ontbrekende of ongeldige waarden.
+
+#### Schema: Voorwaarde van 180 dagen
+
+<figure><img src="../../../.gitbook/assets/decision-supplier-date-180-days-nl.png" alt="Vergelijkingsvoorbeeld: op 25 oktober 2026 is de grensdatum 28 april 2026. IS AFTER sluit gelijkheid uit: 29 april geeft Ja, 28 en 27 april geven Nee. De kaart- en veldnamen en de aanduiding {{TODAY_MINUS_180_DAYS}} zijn illustratief: kies het werkelijke veld en bereken de grensdatum of vul deze in. Dit voorbeeld gaat uit van geldige datums die niet in de toekomst liggen; controleer dit afzonderlijk. De afhandeling van een ontbrekende of ongeldige datum moet nog worden geconfigureerd."><figcaption><p>Vergelijkingsvoorbeeld: op 25 oktober 2026 is de grensdatum 28 april 2026. IS AFTER sluit gelijkheid uit: 29 april geeft Ja, 28 en 27 april geven Nee. De kaart- en veldnamen en de aanduiding {{TODAY_MINUS_180_DAYS}} zijn illustratief: kies het werkelijke veld en bereken de grensdatum of vul deze in. Dit voorbeeld gaat uit van geldige datums die niet in de toekomst liggen; controleer dit afzonderlijk. De afhandeling van een ontbrekende of ongeldige datum moet nog worden geconfigureerd.</p></figcaption></figure>
+
+<details>
+<summary>Illustratieve parameters van het voorbeeld kopiëren</summary>
 
 ```
 Card: CONDITION_DOC_FIELD_DATE
@@ -225,7 +372,10 @@ Operator: IS AFTER
 Value: {{TODAY_MINUS_180_DAYS}}
 ```
 
-**Verwijzing naar de handleiding:** [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)
+</details>
+
+
+**Verwijzing naar de handleiding:** [Volledige handleiding voor voorwaardekaarten](../and/condition-cards-complete-guide.md)
 
 ***
 
@@ -233,61 +383,85 @@ Value: {{TODAY_MINUS_180_DAYS}}
 
 **Niveau 1: documenttype**
 
+Visuele uitleg: [documenttypen](#schema-documenttypen).
+
+<details>
+<summary>Illustratieve router per documenttype</summary>
+
 ```
 Workflow: "Invoice Processing"
 
 IF Document_Type = "Invoice":
-  → Continue to Level 2
+  → Doorgaan naar niveau 2
 
 ELSE IF Document_Type = "Credit Note":
-  → Branch to "Credit Note Processing"
+  → Aftakken naar "Credit Note Processing"
 
 ELSE IF Document_Type = "Receipt":
-  → Branch to "Receipt Processing"
+  → Aftakken naar "Receipt Processing"
 
 ELSE:
-  → Route to "Unknown Document Type" handling
+  → Routeren naar de afhandeling "Unknown Document Type"
 ```
 
-**Niveau 2: bedragsdrempels (voor facturen)**
+</details>
+
+**Niveau 2: bedragdrempels (niet-urgente facturen, geldig bedrag)**
+
+Visuele uitleg: [bedragbanden](#schema-bedragbanden).
+
+<details>
+<summary>Vier bedragbanden: pseudocode</summary>
 
 ```
 IF Amount < €1,000:
-  → Branch to "Auto-Approve Path"
+  → Aftakken naar "Auto-Approve Path"
 
 ELSE IF Amount < €10,000:
-  → Branch to "Manager Approval Path"
+  → Aftakken naar "Manager Approval Path"
 
 ELSE IF Amount < €50,000:
-  → Branch to "Director Approval Path"
-  → Check Level 3 conditions
+  → Aftakken naar "Director Approval Path"
+  → Voorwaarden van niveau 3 controleren
 
 ELSE (Amount ≥ €50,000):
-  → Branch to "Executive Approval Path"
-  → Dual or triple approval required
+  → Aftakken naar "Executive Approval Path"
+  → Dubbele of drievoudige goedkeuring vereist
 ```
+
+</details>
 
 **Niveau 3: leveranciersanalyse (voor facturen met hoge waarde)**
 
+#### Schema: Leveranciersanalyse
+
+<figure><img src="../../../.gitbook/assets/decision-supplier-analysis-nl.png" alt="Detail van de leveranciersroute: behandel blokkering, daarna de duur van de relatie en vervolgens risico. De tak voor relaties korter dan 180 dagen verwijst naar twee opeenvolgende goedkeuringen. Configureer taken, termijnen, meldingen en acties van route C."><figcaption><p>Detail van de leveranciersroute: behandel blokkering, daarna de duur van de relatie en vervolgens risico. De tak voor relaties korter dan 180 dagen verwijst naar twee opeenvolgende goedkeuringen. Configureer taken, termijnen, meldingen en acties van route C.</p></figcaption></figure>
+
+<details>
+<summary>Leveranciersanalyse: blokkering, relatieduur en risico</summary>
+
 ```
 IF Supplier_Status = "BLOCKED":
-  → STOP processing
-  → Create urgent escalation task
-  → Notify procurement and finance
+  → Verwerking STOPPEN
+  → Urgente escalatietaak aanmaken
+  → Inkoop en financiën informeren
 
-ELSE IF Supplier_Age < 180 days (New):
-  → Additional approval required
-  → Add CFO to approval chain
-  → Enhanced verification
+ELSE IF Supplier_Age < 180 dagen (nieuw):
+  → Extra goedkeuring vereist
+  → CFO aan de goedkeuringsketen toevoegen
+  → Versterkte verificatie
 
 ELSE IF Supplier_Risk_Rating = "HIGH":
-  → Additional checks required
-  → Fraud detection review
-  → Manager pre-approval
+  → Extra controles vereist
+  → Fraudecontroles beoordelen
+  → Voorafgaande goedkeuring door de manager; op positieve goedkeuring wachten
+  → Goedkeuring door de directeur; op positieve goedkeuring wachten
 
 ELSE:
-  → Standard high-value workflow
+  → Gebruikelijke workflow voor hoge bedragen
 ```
+
+</details>
 
 ***
 
@@ -295,107 +469,173 @@ ELSE:
 
 **Pad A: automatisch goedkeuren (bedrag < €1.000)**
 
+#### Schema: Automatische route
+
+<figure><img src="../../../.gitbook/assets/decision-action-auto-nl.png" alt="Voorbeeld van route A: stel goedkeuringsvelden in, keur het document goed en exporteer daarna. De bevestigingsmail is optioneel. Dit schema beschrijft te configureren acties en geen waargenomen uitvoering."><figcaption><p>Voorbeeld van route A: stel goedkeuringsvelden in, keur het document goed en exporteer daarna. De bevestigingsmail is optioneel. Dit schema beschrijft te configureren acties en geen waargenomen uitvoering.</p></figcaption></figure>
+
+<details>
+<summary>Acties van route A: automatische goedkeuring</summary>
+
 ```
-Actions:
-1. Set field "Approval_Type" = "AUTO"
-2. Set field "Approval_Level" = "0"
+Acties:
+1. Veld instellen "Approval_Type" = "AUTO"
+2. Veld instellen "Approval_Level" = "0"
 3. ACTION_APPROVE_DOCUMENT
-4. Export to ERP
-5. Send confirmation email (optional)
+4. Exporteren naar ERP
+5. Bevestigingsmail versturen (optioneel)
 ```
 
-**Pad B: goedkeuring door de manager (€1.000-€10.000)**
+</details>
+
+**Route B: goedkeuring door manager (€1.000 ≤ bedrag < €10.000)**
+
+#### Schema: Managertaak
+
+<figure><img src="../../../.gitbook/assets/decision-action-manager-nl.png" alt="Voorbeeld van route B: maak een managertaak aan, stuur een melding en wacht op het resultaat. Alleen goedkeuring maakt export mogelijk; afwijzing stuurt het document hier terug naar de leverancier. De termijn van drie dagen en ontvangers zijn configuratiekeuzes."><figcaption><p>Voorbeeld van route B: maak een managertaak aan, stuur een melding en wacht op het resultaat. Alleen goedkeuring maakt export mogelijk; afwijzing stuurt het document hier terug naar de leverancier. De termijn van drie dagen en ontvangers zijn configuratiekeuzes.</p></figcaption></figure>
+
+<details>
+<summary>Acties van route B: managertaak</summary>
 
 ```
-Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "1"
+Acties:
+1. Veld instellen "Approval_Type" = "MANUAL"
+2. Veld instellen "Approval_Level" = "1"
 3. tasks_create:
-   - Title: "Approve Invoice {{DOCUMENT_NUMBER}}"
+   - Title: "Factuur {{DOCUMENT_NUMBER}} goedkeuren"
    - Assign to: Department_Manager
    - Priority: Medium
-   - Deadline: 3 days
-4. Send email notification to manager
-5. Wait for task completion
-6. If approved: Export to ERP
-7. If rejected: Return to supplier
+   - Deadline: 3 dagen
+4. E-mailmelding naar de manager versturen
+5. Wachten tot de taak is afgerond
+6. Indien goedgekeurd: exporteren naar ERP
+7. Indien afgewezen: terugsturen naar de leverancier
 ```
 
-**Pad C: goedkeuring door de directeur (€10.000-€50.000)**
+</details>
+
+**Route C: goedkeuring door directeur (€10.000 ≤ bedrag < €50.000)**
+
+Visuele uitleg: [leveranciersanalyse](#schema-leveranciersanalyse), [opeenvolgende goedkeuringen](#schema-opeenvolgende-goedkeuringen).
+
+<details>
+<summary>Acties van route C: controles en vereiste goedkeuringen</summary>
 
 ```
-Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "2"
-3. Check Supplier_Age:
-   IF New (< 180 days):
-     - Create Task 1: Director approval
-     - After Task 1: Create Task 2: CFO approval
-     - Dual approval required
+Acties:
+1. Veld instellen "Approval_Type" = "MANUAL"
+2. Veld instellen "Approval_Level" = "2"
+3. Supplier_Age en Supplier_Risk_Rating controleren:
+   IF nieuw (< 180 dagen):
+     - Taak 1 aanmaken: goedkeuring door de directeur
+     - Wachten op positieve goedkeuring van taak 1 voordat taak 2 wordt aangemaakt: goedkeuring door de CFO
+     - Wachten op positieve goedkeuring van taak 2 voordat de verwerking doorgaat
+     - In afwachting: niet doorgaan
+     - Elke afwijzing: de keten stoppen en de afwijzing volgens de configuratie afhandelen
+     - Beide positieve goedkeuringen vereist
+   ELSE IF Supplier_Risk_Rating = "HIGH":
+     - Extra risicocontroles en voorafgaande goedkeuring door de manager
+     - Wachten op positieve goedkeuring door de manager vóór goedkeuring door de directeur
+     - Wachten op positieve goedkeuring door de directeur vóór export
+     - In afwachting of afgewezen: de voortgang stoppen en het resultaat volgens de configuratie afhandelen
    ELSE:
-     - Create Task: Director approval only
+     - Taak aanmaken: alleen goedkeuring door de directeur
 4. Priority: High
-5. Deadline: 2 days
-6. Send email notifications
-7. Wait for completion
-8. If all approved: Export
-9. If any rejected: Return to supplier
+5. Deadline: 2 dagen voor goedkeuringstaken van route C; termijnen voor risicocontroles afzonderlijk configureren
+6. E-mailmeldingen versturen
+7. Wachten op afronding
+8. Indien alles is goedgekeurd: exporteren
+9. Bij een afwijzing: terugsturen naar de leverancier
 ```
+
+</details>
+
+#### Schema: Opeenvolgende goedkeuringen
+
+<figure><img src="../../../.gitbook/assets/decision-approvals-sequence-nl.png" alt="Voorbeeld van opeenvolgende goedkeuringen: maak de taak voor de financiële directie pas aan na goedkeuring door de directeur. Wacht daarna op de uitkomst van de financiële directie. Ga alleen door na beide goedkeuringen. Bij afwijzing stopt de reeks en volgt de geconfigureerde afhandeling; bij een openstaande goedkeuring gaat de reeks niet verder."><figcaption><p>Voorbeeld van opeenvolgende goedkeuringen: maak de taak voor de financiële directie pas aan na goedkeuring door de directeur. Wacht daarna op de uitkomst van de financiële directie. Ga alleen door na beide goedkeuringen. Bij afwijzing stopt de reeks en volgt de geconfigureerde afhandeling; bij een openstaande goedkeuring gaat de reeks niet verder.</p></figcaption></figure>
+
+Afhankelijk van de configuratie kan afwijzing het document terugsturen naar de leverancier of een andere route volgen. Het schema vereist alleen het stoppen van deze goedkeuringsketen; het schrijft niet in alle gevallen handmatige beoordeling voor.
 
 **Pad D: goedkeuring door het topmanagement (≥ €50.000)**
 
+#### Schema: Directiegoedkeuring
+
+<figure><img src="../../../.gitbook/assets/decision-action-executive-nl.png" alt="Voorbeeld van route D: twee opeenvolgende goedkeuringen vanaf €50.000, met een derde uitsluitend boven €100.000. Elke volgende taak wacht op de vorige goedkeuring. Configureer rollen, termijnen, meldingen en afhandeling van afwijzing."><figcaption><p>Voorbeeld van route D: twee opeenvolgende goedkeuringen vanaf €50.000, met een derde uitsluitend boven €100.000. Elke volgende taak wacht op de vorige goedkeuring. Configureer rollen, termijnen, meldingen en afhandeling van afwijzing.</p></figcaption></figure>
+
+<details>
+<summary>Acties van route D: directiegoedkeuring</summary>
+
 ```
-Actions:
-1. Set field "Approval_Type" = "EXECUTIVE"
-2. Set field "Approval_Level" = "3"
-3. Sequential approvals:
-   - Task 1: Finance Director
-   - Task 2: CFO
-   - Task 3: CEO (if > €100,000)
+Acties:
+1. Veld instellen "Approval_Type" = "EXECUTIVE"
+2. Veld instellen "Approval_Level" = "3"
+3. Opeenvolgende goedkeuringen:
+   - Taak 1: financieel directeur
+   - Taak 2: CFO
+   - Taak 3: CEO (indien > €100,000)
 4. Priority: Urgent
-5. Deadline: 1 day each
-6. Send urgent notifications
-7. Executive dashboard update
-8. Wait for all approvals
-9. If all approved: Export
-10. If any rejected: Executive review meeting
+5. Deadline: 1 dag per taak
+6. Urgente meldingen versturen
+7. Directiedashboard bijwerken
+8. Wachten op alle goedkeuringen
+9. Indien alles is goedgekeurd: exporteren
+10. Bij een afwijzing: beoordelingsvergadering van de directie
 ```
+
+</details>
 
 ***
 
 ## Geavanceerde patronen voor beslissingslogica
 
+De volgende patronen zijn onafhankelijke varianten. Scores, afdelingsdrempels en tijdregels worden niet automatisch aan de volledige matrix hierboven toegevoegd; kies en configureer de regels voor uw situatie.
+
 ### Patroon 1: routeren op basis van scores
 
-**Bereken een risicoscore en route dienovereenkomstig:**
+**Bereken in dit voorbeeld een gehele risicoscore en routeer op basis daarvan:**
+
+#### Schema: Risicoscore
+
+<figure><img src="../../../.gitbook/assets/decision-risk-score-nl.png" alt="Onafhankelijke variant: vijf bekende bijdragen leveren een gehele score van 0 tot 100 op, daarna een route. De grenzen 51 en 76 bepalen categorieën; deze vijf gewichten produceren die scores niet. Bepaal afzonderlijk de afhandeling van onbekende gegevens."><figcaption><p>Onafhankelijke variant: vijf bekende bijdragen leveren een gehele score van 0 tot 100 op, daarna een route. De grenzen 51 en 76 bepalen categorieën; deze vijf gewichten produceren die scores niet. Bepaal afzonderlijk de afhandeling van onbekende gegevens.</p></figcaption></figure>
+
+<details>
+<summary>Risicoscore berekenen en intervallen</summary>
 
 ```
-Risk Score Calculation:
+Berekening van de risicoscore:
   Score = 0
 
   IF Amount > €50,000: Score += 30
-  IF Supplier_Age < 180 days: Score += 25
+  IF Supplier_Age < 180 dagen: Score += 25
   IF PO_Variance > 10%: Score += 20
   IF Supplier_Country = "High Risk Country": Score += 15
-  IF Payment_Terms < 30 days: Score += 10
+  IF Payment_Terms < 30 dagen: Score += 10
 
-  Total Score Range: 0-100
+  Totaal bereik van Score: 0-100
 
-Routing:
-  IF Score < 20: Auto-approve
-  IF Score 20-50: Manager approval
-  IF Score 51-75: Director approval
-  IF Score > 75: Executive approval + fraud check
+Routering:
+  IF Score < 20: Automatisch goedkeuren
+  IF Score 20-50: Goedkeuring door de manager
+  IF Score 51-75: Goedkeuring door de directeur
+  IF Score > 75: Goedkeuring door de directie + fraudecontrole
 ```
+
+</details>
 
 **Implementatie:**
 
+Visuele uitleg: [risicoscore](#schema-risicoscore).
+
+<details>
+<summary>Illustratieve score-implementatie</summary>
+
 ```
-1. ACTION_CALCULATE_FIELD: Calculate risk score
-2. ACTION_SET_FIELD_TO_NUMBER: Store score
-3. CONDITION_DOC_FIELD_NUMBER: Check score thresholds
-4. Route based on score
+1. ACTION_CALCULATE_FIELD: Risicoscore berekenen
+2. ACTION_SET_FIELD_TO_NUMBER: Score opslaan
+3. CONDITION_DOC_FIELD_NUMBER: Scoregrenzen controleren
+4. Routeren op basis van de score
 ```
+
+</details>
 
 ***
 
@@ -403,34 +643,50 @@ Routing:
 
 **Verschillende goedkeuringsregels per afdeling:**
 
+#### Schema: Afdelingsmatrix
+
+<figure><img src="../../../.gitbook/assets/decision-department-matrix-nl.png" alt="Onafhankelijke afdelingsmatrix: drempels verschillen voor IT, financiën, operations en de algemene situatie. Gelijkheid kiest de hogere band. Meerdere rollen moeten worden geconfigureerd; hun aanwezigheid bewijst geen opeenvolgende goedkeuring."><figcaption><p>Onafhankelijke afdelingsmatrix: drempels verschillen voor IT, financiën, operations en de algemene situatie. Gelijkheid kiest de hogere band. Meerdere rollen moeten worden geconfigureerd; hun aanwezigheid bewijst geen opeenvolgende goedkeuring.</p></figcaption></figure>
+
+<details>
+<summary>Drempelmatrix per afdeling</summary>
+
 ```
-Department Matrix:
+Afdelingsmatrix:
 
-  IT Department:
-    Amount < €5,000: IT Manager
-    Amount ≥ €5,000: IT Director + CIO
+  IT-afdeling:
+    Amount < €5,000: IT-manager
+    Amount ≥ €5,000: IT-directeur + CIO
 
-  Finance Department:
-    Amount < €10,000: Finance Manager
+  Afdeling financiën:
+    Amount < €10,000: Financieel manager
     Amount ≥ €10,000: CFO
 
-  Operations Department:
-    Amount < €3,000: Operations Manager
+  Afdeling operations:
+    Amount < €3,000: Operationsmanager
     Amount ≥ €3,000: COO
 
-  General:
-    Amount < €2,000: Department Manager
-    Amount ≥ €2,000: Department Director
+  Algemeen:
+    Amount < €2,000: Afdelingsmanager
+    Amount ≥ €2,000: Afdelingsdirecteur
 ```
+
+</details>
 
 **Implementatie:**
 
+Visuele uitleg: [afdelingsmatrix](#schema-afdelingsmatrix).
+
+<details>
+<summary>Illustratieve implementatie van de afdelingsmatrix</summary>
+
 ```
-1. Check Department field
-2. Based on department, check amount threshold
-3. Route to appropriate approver
-4. Different thresholds per department
+1. Veld Department controleren
+2. Op basis van de afdeling de bedraggrens controleren
+3. Routeren naar de juiste goedkeurder
+4. Verschillende grenzen per afdeling
 ```
+
+</details>
 
 ***
 
@@ -438,33 +694,46 @@ Department Matrix:
 
 **Verschillende regels op basis van het tijdstip:**
 
+#### Schema: Tijdvarianten
+
+<figure><img src="../../../.gitbook/assets/decision-time-variants-nl.png" alt="Drie onafhankelijke varianten: maandultimo, werktijden en boekingsperiode. Wachtrij en oproepbare goedkeurder zijn alternatieven om uit te kiezen. Een datum buiten de huidige periode is niet noodzakelijk eerder; controleer de situatie afzonderlijk."><figcaption><p>Drie onafhankelijke varianten: maandultimo, werktijden en boekingsperiode. Wachtrij en oproepbare goedkeurder zijn alternatieven om uit te kiezen. Een datum buiten de huidige periode is niet noodzakelijk eerder; controleer de situatie afzonderlijk.</p></figcaption></figure>
+
+<details>
+<summary>Drie onafhankelijke tijdvarianten</summary>
+
 ```
-Month-End Processing (Last 3 days of month):
-  IF Today in last 3 days of month:
+Maandeindeverwerking (laatste 3 dagen van de maand):
+  IF Today valt in de laatste 3 dagen van de maand:
     - Priority: URGENT
-    - Deadline: 1 day
-    - Approver: On-duty finance manager
-    - Expedited workflow
+    - Deadline: 1 dag
+    - Goedkeurder: dienstdoende financieel manager
+    - Versnelde workflow
   ELSE:
-    - Standard priority
-    - Standard deadline
-    - Standard workflow
+    - Gebruikelijke prioriteit
+    - Gebruikelijke termijn
+    - Gebruikelijke workflow
 
-Business Hours vs After Hours:
-  IF Time between 9 AM - 5 PM:
-    - Assign to current shift
+Binnen en buiten werktijd:
+  IF Time ligt tussen 9.00 en 17.00 uur:
+    - Toewijzen aan de huidige dienst
   ELSE:
-    - Queue for next business day
-    - OR route to on-call approver
+    - In de wachtrij voor de volgende werkdag plaatsen
+    - OR routeren naar de oproepbare goedkeurder
 
-Fiscal Period:
-  IF Document_Date in Current_Fiscal_Period:
-    - Standard processing
+Boekingsperiode (onafhankelijk voorbeeldbeleid):
+  IF Document_Date ontbreekt of is ongeldig:
+    - Ongeldige of onbekende datum volgens de configuratie afhandelen
+  ELSE IF Document_Date in Current_Fiscal_Period:
+    - Gebruikelijke verwerking
+  ELSE IF Document_Date valt in een Fiscal_Period vóór Current_Fiscal_Period:
+    - Markeren als "Prior Period"
+    - Goedkeuring van de boekhouding vereisen
+    - Extra controles
   ELSE:
-    - Flag as "Prior Period"
-    - Require accounting approval
-    - Additional checks
+    - Toekomstige of andere boekingsperiode: afhandelen volgens de configuratie
 ```
+
+</details>
 
 ***
 
@@ -472,167 +741,201 @@ Fiscal Period:
 
 **Route uitzonderingen afzonderlijk:**
 
+#### Schema: Ernst van uitzonderingen
+
+<figure><img src="../../../.gitbook/assets/decision-exception-severity-nl.png" alt="Voorbeeldbeleid naar ernst: ga pas door na de geconfigureerde correctie of vereiste oplossing. Een kritieke uitzondering stopt de verwerking. Detectievoorbeelden bepalen op zichzelf niet de ernst."><figcaption><p>Voorbeeldbeleid naar ernst: ga pas door na de geconfigureerde correctie of vereiste oplossing. Een kritieke uitzondering stopt de verwerking. Detectievoorbeelden bepalen op zichzelf niet de ernst.</p></figcaption></figure>
+
+<details>
+<summary>Beleid naar ernst van uitzonderingen</summary>
+
 ```
-Exception Detection:
+Detectie van uitzonderingen:
 
-  No Exception:
-    → Standard workflow
+  Geen uitzondering:
+    → Gebruikelijke workflow
 
-  Minor Exception (Auto-fixable):
-    → Auto-correct
-    → Log correction
-    → Continue standard workflow
+  Kleine uitzondering (automatisch te corrigeren):
+    → Automatisch corrigeren
+    → Correctie registreren
+    → Doorgaan met de gebruikelijke workflow
 
-  Medium Exception (Needs review):
-    → Create review task
-    → Flag document
-    → After fix: Continue workflow
+  Middelzware uitzondering (beoordeling nodig):
+    → Beoordelingstaak aanmaken
+    → Document markeren
+    → Na oplossing: doorgaan met de workflow
 
-  Major Exception (Requires escalation):
-    → Stop processing
-    → Create urgent task
-    → Notify multiple levels
-    → Manual intervention required
+  Ernstige uitzondering (escalatie nodig):
+    → Verwerking stoppen
+    → Urgente taak aanmaken
+    → Meerdere niveaus informeren
+    → Handmatig ingrijpen vereist
 
-Exception Types:
-  - Missing required field
-  - Invalid field value
-  - PO mismatch
-  - Duplicate invoice
-  - Supplier mismatch
-  - Amount discrepancy
+Typen uitzonderingen:
+  - Vereist veld ontbreekt
+  - Ongeldige veldwaarde
+  - Afwijking van de inkooporder
+  - Dubbele factuur
+  - Leverancier komt niet overeen
+  - Bedragafwijking
 ```
+
+</details>
 
 ***
 
 ## Volledig beslissingslogicadiagram
 
+De schema’s tonen de belangrijkste stappen. De gedetailleerde tekstboom hieronder behoudt het technische voorbeeld; de bestemmingen moeten nog worden geconfigureerd.
+
+
+Visuele uitleg: [overzicht](#schema-overzicht), [bedragbanden](#schema-bedragbanden), [leveranciersanalyse](#schema-leveranciersanalyse), [opeenvolgende goedkeuringen](#schema-opeenvolgende-goedkeuringen), [automatische route](#schema-automatische-route), [managertaak](#schema-managertaak), [directiegoedkeuring](#schema-directiegoedkeuring).
+
+<details>
+<summary>Volledig voorbeeld: gedetailleerde tekstboom</summary>
+
 ```
-INVOICE ARRIVES
+FACTUUR KOMT BINNEN
 │
-├─ LEVEL 1: EXCEPTION CHECK
+├─ NIVEAU 1: UITZONDERINGEN CONTROLEREN
 │  │
-│  ├─ Has Critical Exception? (Missing PO, Duplicate, etc.)
+│  ├─ Kritieke uitzondering of leverancier met status BLOCKED?
+│  │  (Ernst configureren; niet elke afwijking van de inkooporder is kritiek.)
 │  │  │
-│  │  ├─ YES → Stop & Escalate
-│  │  │        Create urgent task
-│  │  │        Notify admin
-│  │  │        → END (Exception Handling)
+│  │  ├─ JA → stoppen en escaleren
+│  │  │        Urgente taak aanmaken
+│  │  │        Beheerder informeren
+│  │  │        → EINDE (afhandeling van uitzonderingen)
 │  │  │
-│  │  └─ NO → Continue to Level 2
+│  │  └─ NEE → doorgaan naar niveau 2
 │
-├─ LEVEL 2: DOCUMENT TYPE
+├─ NIVEAU 2: DOCUMENTTYPE
 │  │
 │  ├─ Type = Invoice?
-│  │  └─ YES → Continue to Level 3
+│  │  └─ JA → doorgaan naar niveau 3
 │  │
 │  ├─ Type = Credit Note?
-│  │  └─ YES → Branch to Credit Note workflow
-│  │           → END (Credit Note Path)
+│  │  └─ JA → aftakken naar de creditnotaworkflow
+│  │           → EINDE (creditnotaroute)
 │  │
-│  └─ Other Type?
-│     └─ YES → Branch to appropriate workflow
-│              → END (Other Type Path)
+│  └─ Ander type?
+│     └─ JA → aftakken naar de juiste workflow
+│              → EINDE (route voor ander type)
 │
-├─ LEVEL 3: URGENCY CHECK (for Invoices)
+├─ NIVEAU 3: URGENTIE CONTROLEREN (voor facturen)
 │  │
-│  ├─ Urgent Flag = TRUE?
+│  ├─ Urgentiemarkering = TRUE?
 │  │  │
-│  │  ├─ YES → Expedited Workflow
+│  │  ├─ JA → versnelde workflow
 │  │  │        Priority: URGENT
-│  │  │        Deadline: 1 day
-│  │  │        Assign to: Senior Approver
-│  │  │        → END (Expedited Path)
+│  │  │        Deadline: 1 dag
+│  │  │        Toewijzen aan: hogere goedkeurder
+│  │  │        → EINDE (versnelde route)
 │  │  │
-│  │  └─ NO → Continue to Level 4
+│  │  └─ NEE → doorgaan naar niveau 4
 │
-├─ LEVEL 4: AMOUNT THRESHOLDS
+├─ NIVEAU 4: BEDRAGGRENZEN
+│  │
+│  ├─ Amount ontbreekt of is ongeldig?
+│  │  ├─ JA → handmatige beoordeling (expliciet voorbeeldbeleid)
+│  │  └─ NEE → doorgaan naar de onderstaande bedraggrenzen
 │  │
 │  ├─ Amount < €1,000?
 │  │  │
-│  │  ├─ YES → AUTO-APPROVE PATH
-│  │  │        Set Approval_Type = "AUTO"
-│  │  │        Approve immediately
-│  │  │        Export to ERP
-│  │  │        → END (Auto-Approved)
+│  │  ├─ JA → AUTOMATISCHE GOEDKEURINGSROUTE
+│  │  │        Approval_Type instellen = "AUTO"
+│  │  │        Onmiddellijk goedkeuren
+│  │  │        Exporteren naar ERP
+│  │  │        → EINDE (automatisch goedgekeurd)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NEE → doorgaan
 │  │
 │  ├─ Amount < €10,000?
 │  │  │
-│  │  ├─ YES → MANAGER APPROVAL PATH
-│  │  │        Create task for Manager
+│  │  ├─ JA → GOEDKEURINGSROUTE VOOR MANAGER
+│  │  │        Taak voor de manager aanmaken
 │  │  │        Priority: Medium
-│  │  │        Deadline: 3 days
-│  │  │        → WAIT for approval
-│  │  │           → END (Manager Path)
+│  │  │        Deadline: 3 dagen
+│  │  │        → WACHTEN op resultaat; bij een wachtend resultaat niet doorgaan
+│  │  │           → Goedgekeurd: doorgaan met de geconfigureerde verwerking
+│  │  │           → Afgewezen: de keten stoppen en de afwijzing volgens de configuratie afhandelen
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NEE → doorgaan
 │  │
 │  ├─ Amount < €50,000?
 │  │  │
-│  │  ├─ YES → DIRECTOR APPROVAL PATH
-│  │  │        Continue to Level 5 (Supplier Check)
+│  │  ├─ JA → GOEDKEURINGSROUTE VOOR DIRECTEUR
+│  │  │        Doorgaan naar niveau 5 (leverancier controleren)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NEE → doorgaan
 │  │
 │  └─ Amount ≥ €50,000?
 │     │
-│     └─ YES → EXECUTIVE APPROVAL PATH
-│              Create sequential tasks:
-│              - Finance Director
+│     └─ JA → GOEDKEURINGSROUTE VOOR DIRECTIE
+│              Opeenvolgende taken aanmaken:
+│              - Financieel directeur
 │              - CFO
-│              - CEO (if > €100,000)
+│              - CEO (indien > €100,000)
 │              Priority: URGENT
-│              Deadline: 1 day each
-│              → WAIT for all approvals
-│                 → END (Executive Path)
+│              Deadline: 1 dag per taak
+│              → WACHTEN op alle vereiste resultaten
+│                 → Alles goedgekeurd: doorgaan met de geconfigureerde verwerking
+│                 → In afwachting: niet doorgaan
+│                 → Elke afwijzing: de keten stoppen en de afwijzing volgens de configuratie afhandelen
 │
-├─ LEVEL 5: SUPPLIER ANALYSIS (for €10k-€50k range)
+├─ NIVEAU 5: LEVERANCIERANALYSE (€10,000 ≤ Amount < €50,000)
 │  │
 │  ├─ Supplier Status = "BLOCKED"?
 │  │  │
-│  │  ├─ YES → BLOCK & ESCALATE
-│  │  │        Stop processing
-│  │  │        Create urgent task
-│  │  │        Notify procurement & finance
-│  │  │        → END (Blocked Supplier)
+│  │  ├─ JA → BLOKKEREN EN ESCALEREN
+│  │  │        Verwerking stoppen
+│  │  │        Urgente taak aanmaken
+│  │  │        Inkoop en financiën informeren
+│  │  │        → EINDE (geblokkeerde leverancier)
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NEE → doorgaan
 │  │
-│  ├─ Supplier Age < 180 days (New)?
+│  ├─ Supplier Age < 180 dagen (nieuw)?
 │  │  │
-│  │  ├─ YES → DUAL APPROVAL REQUIRED
-│  │  │        Task 1: Director (2 days)
-│  │  │        → WAIT for Task 1
-│  │  │           IF Task 1 Approved:
-│  │  │             Task 2: CFO (2 days)
-│  │  │             → WAIT for Task 2
-│  │  │                → END (Dual Approved)
-│  │  │           IF Task 1 Rejected:
-│  │  │             → END (Rejected at Level 1)
+│  │  ├─ JA → DUBBELE GOEDKEURING VEREIST
+│  │  │        Taak 1: directeur (2 dagen)
+│  │  │        → WACHTEN op taak 1
+│  │  │           IF taak 1 goedgekeurd:
+│  │  │             Taak 2: CFO (2 dagen)
+│  │  │             → WACHTEN op taak 2
+│  │  │                → In afwachting: niet doorgaan
+│  │  │                → Goedgekeurd: pas doorgaan na beide positieve goedkeuringen
+│  │  │                → Afgewezen: de keten stoppen en de afwijzing volgens de configuratie afhandelen
+│  │  │           IF taak 1 afgewezen:
+│  │  │             → De keten stoppen en de afwijzing volgens de configuratie afhandelen
+│  │  │           IF taak 1 in afwachting:
+│  │  │             → Taak 2 niet aanmaken en niet doorgaan
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ NEE → doorgaan
 │  │
 │  ├─ Supplier Risk Rating = "HIGH"?
 │  │  │
-│  │  ├─ YES → ENHANCED APPROVAL
-│  │  │        Additional fraud checks
-│  │  │        Director approval required
-│  │  │        Extended deadline
-│  │  │        → END (Enhanced Path)
+│  │  ├─ JA → VERSTERKTE GOEDKEURING
+│  │  │        Extra fraudecontroles
+│  │  │        Voorafgaande goedkeuring door de manager, daarna goedkeuring door de directeur
+│  │  │        Wachten op elk positief resultaat; bij een wachtend resultaat of afwijzing niet doorgaan
+│  │  │        Termijnen voor risicocontroles configureren; goedkeuringstaken van route C vermelden 2 dagen
+│  │  │        → EINDE (versterkte route)
 │  │  │
-│  │  └─ NO → STANDARD DIRECTOR APPROVAL
-│  │           Create task for Director
+│  │  └─ NEE → GEBRUIKELIJKE GOEDKEURING DOOR DIRECTEUR
+│  │           Taak voor de directeur aanmaken
 │  │           Priority: High
-│  │           Deadline: 2 days
-│  │           → WAIT for approval
-│  │              → END (Standard High-Value)
+│  │           Deadline: 2 dagen
+│  │           → WACHTEN op resultaat; bij een wachtend resultaat niet doorgaan
+│  │              → Goedgekeurd: doorgaan met de geconfigureerde verwerking
+│  │              → Afgewezen: de keten stoppen en de afwijzing volgens de configuratie afhandelen
 │  │
-│  └─ [Supplier analysis complete]
+│  └─ [Leverancieranalyse afgerond]
 │
-└─ [All decision levels processed]
+└─ [Alle beslisniveaus verwerkt]
 ```
+
+</details>
+
 
 ***
 
@@ -640,30 +943,59 @@ INVOICE ARRIVES
 
 ### 1. Houd de logica duidelijk en onderhoudbaar
 
+De vergelijking hieronder toont een eenvoudige voorwaarde, een samengestelde voorwaarde en ander beleid in fasen. Het schema onderscheidt hun doelen zonder equivalentie te claimen.
+
+#### Schema: Leesbare beslissingen
+
+<figure><img src="../../../.gitbook/assets/decision-staged-maintainability-nl.png" alt="Het voorbeeld met vier stappen toont ander beleid dan de samengestelde voorwaarde. Elk negatief resultaat is zichtbaar; het is geen bewezen equivalente logische omzetting. Bepaal toegestane lijsten en afhandeling van uitkomsten."><figcaption><p>Het voorbeeld met vier stappen toont ander beleid dan de samengestelde voorwaarde. Elk negatief resultaat is zichtbaar; het is geen bewezen equivalente logische omzetting. Bepaal toegestane lijsten en afhandeling van uitkomsten.</p></figcaption></figure>
+
 ✅ **Goed:**
+
+Visuele uitleg: [eenvoudige voorwaarde](#schema-eenvoudige-voorwaarde).
+
+<details>
+<summary>Eenvoudig voorbeeld: route voor hoge bedragen</summary>
 
 ```
 IF Amount > 10000:
-  → High value path
+  → Route voor hoge bedragen
 ELSE:
-  → Standard path
+  → Gebruikelijke route
 ```
+
+</details>
 
 ❌ **Slecht (te complex):**
 
+Visuele uitleg: [leesbare beslissingen](#schema-leesbare-beslissingen).
+
+<details>
+<summary>Voorbeeld van een samengestelde voorwaarde</summary>
+
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
-  → Complex path
+  → Complexe route
 ```
 
-**Beter: splits het op in stappen:**
+</details>
+
+**Ander voorbeeld: afzonderlijk beleid in vier fasen:**
+
+Dit voorbeeld onderscheidt de uitkomsten per fase. Het is geen logisch equivalente herschrijving van de samengestelde voorwaarde hierboven: leverancierslijsten, geldige statussen, toegestane afdelingen en afhandeling van negatieve resultaten moeten voor dit tweede voorbeeld worden bepaald.
+
+Visuele uitleg: [leesbare beslissingen](#schema-leesbare-beslissingen).
+
+<details>
+<summary>Ander voorbeeld: beleid in vier stappen</summary>
 
 ```
-Step 1: IF Amount > 10000: Continue, ELSE: Standard path
-Step 2: IF Supplier in allowed list: Continue, ELSE: Review
-Step 3: IF Status valid: Continue, ELSE: Reject
-Step 4: IF Department authorized: Approve, ELSE: Escalate
+Stap 1: IF Amount > 10000: Doorgaan, ELSE: Gebruikelijke route
+Stap 2: IF Supplier staat op de toegestane lijst: Doorgaan, ELSE: Beoordelen
+Stap 3: IF Status is geldig: Doorgaan, ELSE: Afwijzen
+Stap 4: IF Department is bevoegd: Goedkeuren, ELSE: Escaleren
 ```
+
+</details>
 
 ***
 
@@ -678,33 +1010,55 @@ Step 4: IF Department authorized: Approve, ELSE: Escalate
 
 **Voorbeeld van documentatie:**
 
+#### Schema: Regelregister
+
+<figure><img src="../../../.gitbook/assets/decision-rule-documentation-nl.png" alt="Illustratieve registratie van regel BR-INV-001: doel, drempels, uitzondering, eigenaar en referentiedatum. Verwijzen naar de vier banden voorkomt dubbele regels; deze registratie bewijst geen goedkeuring of uitvoering."><figcaption><p>Illustratieve registratie van regel BR-INV-001: doel, drempels, uitzondering, eigenaar en referentiedatum. Verwijzen naar de vier banden voorkomt dubbele regels; deze registratie bewijst geen goedkeuring of uitvoering.</p></figcaption></figure>
+
+<details>
+<summary>Illustratief register van regel BR-INV-001</summary>
+
 ```
-Decision Point: Amount Threshold Check
-Business Rule: BR-INV-001 (Invoice Approval Matrix)
-Purpose: Route invoices based on amount thresholds per company policy
-Thresholds:
-  < €1,000: Auto-approve (CFO approved threshold)
-  €1,000-€10,000: Manager approval (Delegation matrix)
-  > €10,000: Director approval (Signature authority)
-Exceptions: Urgent invoices skip to highest level
-Updated: 2025-10-23
-Owner: Finance Department
+Beslispunt: bedraggrens controleren
+Bedrijfsregel: BR-INV-001 (factuurgoedkeuringsmatrix)
+Doel: facturen routeren op basis van bedraggrenzen volgens het bedrijfsbeleid
+Grenzen:
+  < €1,000: Automatisch goedkeuren (door de CFO goedgekeurde grens in dit voorbeeld)
+  €1,000 ≤ Amount < €10,000: Goedkeuring door de manager (delegatiematrix)
+  €10,000 ≤ Amount < €50,000: Goedkeuring door de directeur met leverancierscontroles
+  Amount ≥ €50,000: Goedkeuring door de directie
+Uitzonderingen: urgente facturen gaan direct naar het hoogste niveau
+Bijgewerkt: 2025-10-23
+Eigenaar: afdeling financiën
 ```
+
+</details>
 
 ***
 
 ### 3. Test alle paden
 
-**Testmatrix:**
+**Voorgestelde testmatrix — verwachte resultaten, geen uitgevoerde tests:**
 
-| Testgeval | Bedrag   | Typ       | Leverancier | Verwacht pad           | Status |
-| --------- | -------- | ---------- | ----------- | ---------------------- | ------ |
-| TC1       | €500     | Factuur    | Bestaand    | Automatisch goedkeuren | ✅      |
-| TC2       | €5.000   | Factuur    | Bestaand    | Beheerder                | ✅      |
-| TC3       | €15.000  | Factuur    | Nieuw       | Directeur+CFO          | ✅      |
-| TC4       | €60.000  | Factuur    | Bestaand    | Topmanagement          | ✅      |
-| TC5       | €2.000   | Creditnota | Bestaand    | Creditnota-workflow    | ✅      |
-| TC6       | €100.000 | Factuur    | Geblokkeerd | Stoppen en escaleren   | ✅      |
+Controleer deze verwachte resultaten in uw configuratie en leg waarnemingen vast.
+
+| Testgeval | Bedrag | Type | Leverancier | Verwachte route | Verificatie |
+| --- | --- | --- | --- | --- | --- |
+| TC1 | €500 | Factuur | Bestaand | Automatische goedkeuring | Te testen |
+| TC2 | €5.000 | Factuur | Bestaand | Manager | Te testen |
+| TC3 | €15.000 | Factuur | Nieuw | Directeur, daarna CFO | Te testen |
+| TC4 | €60.000 | Factuur | Bestaand | Directie | Te testen |
+| TC5 | €2.000 | Creditnota | Bestaand | Creditnotaworkflow | Te testen |
+| TC6 | €100.000 | Factuur | Geblokkeerd | Stoppen en escaleren | Te testen |
+| TC7 | €999,99 | Factuur | Bestaand | Automatische goedkeuring | Te testen |
+| TC8 | €1.000 | Factuur | Bestaand | Manager | Te testen |
+| TC9 | €9.999,99 | Factuur | Bestaand | Manager | Te testen |
+| TC10 | €10.000 | Factuur | Bestaand | Directeur + leverancierscontroles | Te testen |
+| TC11 | €49.999,99 | Factuur | Bestaand | Directeur + leverancierscontroles | Te testen |
+| TC12 | €50.000 | Factuur | Bestaand | Directie | Te testen |
+| TC13 | Ontbrekend of ongeldig | Factuur | Bestaand | Gekozen handmatige beoordeling | Te testen |
+| TC14 | €15.000 | Factuur | Nieuw | Directeur in afwachting: volgende taak niet aanmaken | Te testen |
+| TC15 | €15.000 | Factuur | Nieuw | Directeur of CFO wijst af: keten stoppen en afwijzing afhandelen | Te testen |
+| TC16 | €15.000 | Factuur | Nieuw | Beide goedkeuringen positief: geconfigureerde verwerking vervolgen | Te testen |
 
 ***
 
@@ -719,26 +1073,35 @@ Owner: Finance Department
 * Percentage uitzonderingen
 * Gebruik per pad
 
-**Voorbeeldstatistieken:**
+**Fictieve voorbeeldcijfers:** deze waarden illustreren een rapport; ze bewijzen geen huidige prestaties of uitvoering van deze workflow.
+
+#### Schema: Fictieve cijfers
+
+<figure><img src="../../../.gitbook/assets/decision-fictional-metrics-nl.png" alt="Fictief voorbeeld: de vier routes tellen samen 1.250 facturen. Routepercentages zijn afgerond. De 15 uitzonderingen, ofwel 1,2%, kunnen dezelfde facturen betreffen; ze vormen geen vijfde route. Doorlooptijden zijn geen gemeten DocBits-prestaties."><figcaption><p>Fictief voorbeeld: de vier routes tellen samen 1.250 facturen. Routepercentages zijn afgerond. De 15 uitzonderingen, ofwel 1,2%, kunnen dezelfde facturen betreffen; ze vormen geen vijfde route. Doorlooptijden zijn geen gemeten DocBits-prestaties.</p></figcaption></figure>
+
+<details>
+<summary>Fictief voorbeeld van verdeling en doorlooptijden</summary>
 
 ```
-Month: October 2025
-Total Invoices: 1,250
+Maand: oktober 2025
+Totaal facturen: 1250
 
-Decision Path Distribution:
-- Auto-approved (< €1k): 680 (54%)
-- Manager path (€1k-€10k): 420 (34%)
-- Director path (€10k-€50k): 120 (10%)
-- Executive path (> €50k): 30 (2%)
+Verdeling over beslisroutes:
+- Automatisch goedgekeurd (< €1k): 680 (54%)
+- Managerroute (€1k ≤ Amount < €10k): 420 (34%)
+- Directeursroute (€10k ≤ Amount < €50k): 120 (10%)
+- Directieroute (Amount ≥ €50k): 30 (2%)
 
-Processing Time:
-- Auto-approve: < 1 minute
-- Manager path: 2.5 days average
-- Director path: 1.8 days average
-- Executive path: 3.2 days average
+Verwerkingstijd:
+- Automatisch goedkeuren: < 1 minuut
+- Managerroute: gemiddeld 2,5 dagen
+- Directeursroute: gemiddeld 1,8 dagen
+- Directieroute: gemiddeld 3,2 dagen
 
-Exceptions: 15 (1.2%)
+Uitzonderingen: 15 (1,2%)
 ```
+
+</details>
 
 ***
 
@@ -757,8 +1120,8 @@ Exceptions: 15 (1.2%)
 
 ### Vereisten
 
-* [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md) - Alle voorwaardekaarten
-* [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Veldbewerkingen
+* [Volledige handleiding voor voorwaardekaarten](../and/condition-cards-complete-guide.md) - Alle voorwaardekaarten
+* [Handleiding voor veldbewerkingen](../then/document-field/field-manipulation-guide.md) - Veldbewerkingen
 * [Gebruikershandleiding toewijzing](../then/assignee/assignment-user-guide.md) - Routeringslogica
 
 ### Gerelateerde kaarten
@@ -771,10 +1134,12 @@ Exceptions: 15 (1.2%)
 
 ### Volgende stappen
 
-* Gemaakt maken: [Taakbeheerpatroon](task-management-pattern.md)
-* Complexe matching toevoegen: [PO Matching Pattern](po-matching-pattern.md)
-* API's integreren: [API Integration Pattern](api-integration-pattern.md)
+* Taken aanmaken: [Taakbeheerpatroon](task-management-pattern.md)
+* Complexe matching toevoegen: [Patroon voor PO-matching](po-matching-pattern.md)
+* API's integreren: [API-integratiepatroon](api-integration-pattern.md)
 
 ***
 
-**Patroonversie:** 1.0 **Laatst bijgewerkt:** 23 oktober 2025 **Moeilijkheidsgraad:** Gemiddeld **Geschatte tijd:** 30-45 minuten **Slagingspercentage:** Hoog
+**Historische voorbeeldmetadata:**
+
+**Patroonversie:** 1.0 **Laatst bijgewerkt:** 23 oktober 2025 **Moeilijkheid:** gemiddeld **Geschatte tijd:** 30–45 minuten

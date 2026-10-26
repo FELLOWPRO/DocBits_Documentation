@@ -1,32 +1,72 @@
 # e-docs
 
-<figure><img src="../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
+Elektronische documenten zoals XRechnung, ZUGFeRD/Factur-X, CFDI of FatturaPA komen binnen als XML of als hybride PDF. DocBits leest het bestand, extraheert de factuurgegevens en maakt daar een leesbare PDF van. In de **E-Doc**-instellingen staan de regels voor elk formaat dat uw organisatie gebruikt.
 
-## **Overzicht**
+## De E-Doc-beheer openen
 
-In Docbits bieden de EDI-instellingen tools voor het definiëren en beheren van de structuur en het formaat van EDI-berichten die overeenkomen met verschillende documenttypes, zoals facturen of inkooporders. De instellingen maken het mogelijk om EDI-berichten aan te passen aan de normen en vereisten die specifiek zijn voor verschillende handelspartners en industrieën.
+1. Open **Instellingen → Documenttypen**.
+2. Selecteer het documenttype, bijvoorbeeld **Factuur**, en open **E-Doc**.
 
-## **Belangrijkste Kenmerken en Opties**
+De formaten zijn per land gegroepeerd. Elk land toont zijn vlag, zijn naam en hoeveel formaten het bevat.
 
-1. **EDI Configuratie-elementen**:
-   * **Structuur Descriptor**: Definieert de basisstructuur van het EDI-document, inclusief segmentvolgorde, verplichte velden en kwalificaties die nodig zijn voor de geldigheid van het EDI-document.
-   * **Transformatie**: Specificeert de transformaties die worden toegepast om de documentgegevens om te zetten in een EDI-geformatteerd bericht. Dit houdt doorgaans in dat er mappings worden gespecificeerd van documentvelden naar EDI-segmenten en -elementen.
-   * **Voorbeeld**: Hiermee kunnen beheerders zien hoe het EDI-bericht eruit zal zien na transformatie, wat helpt om de nauwkeurigheid vóór verzending te waarborgen.
-   * **Extractiepaden**: Toont de paden die worden gebruikt om waarden uit het document te extraheren, die vervolgens worden gebruikt om het EDI-bericht in te vullen.
-2. **XSLT-editor**:
-   * Gebruikt voor het bewerken en valideren van de XSLT (eXtensible Stylesheet Language Transformations) die wordt gebruikt in het transformatieproces. XSLT is een krachtige taal die is ontworpen voor het transformeren van XML-documenten naar andere XML-documenten of andere formaten zoals HTML, tekst of zelfs andere XML-structuren.
+<figure><img src="../../../../../.gitbook/assets/edoc-format-list-nl.png" alt="Het E-Doc-beheer met per land gegroepeerde formaten, elk land met vlag, naam en aantal formaten"><figcaption><p>De formaten zijn per land gegroepeerd en staan aanvankelijk ingeklapt.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/site-all-edi-detail-nl.png" alt="Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor."><figcaption><p>Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor.</p></figcaption></figure>
+Selecteer een land om de formaten te openen. Binnen een land staat de nieuwste versie vooraan. Gecombineerde formaten zoals Factur-X / ZUGFeRD staan onder Duitsland. Het zoekveld doorzoekt formaat- en landnamen tegelijk.
 
-## Effectieve regels en activering
+<figure><img src="../../../../../.gitbook/assets/edoc-country-germany-nl.png" alt="Duitsland geopend in het E-Doc-beheer, met de Duitse formaten en hun aantal stappen"><figcaption><p>Open een land om de formaten te zien.</p></figcaption></figure>
 
-Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](credit-note-recognized-as-invoice.md). Deze behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilige activering.
+## Formaten en hun stappen
 
-## Landengidsen
+Elk formaat toont zijn stappen als drie kaarten met pijlen, in de volgorde waarin DocBits ze uitvoert:
 
-Raadpleeg de landengidsen voor exacte formaatlabels, syntaxis, versiebeperkingen en de onderzochte configuratiestatus. [eDocs-formaten, versies en landengidsen](supported-electronic-documents/README.md).
+| Stap | Wat hij doet |
+| --- | --- |
+| **Transformatie** | Zet de inkomende XML om naar de DocBits-XML. |
+| **Extractiepaden** | Bepaalt welke waarden DocBits uit de getransformeerde XML haalt. |
+| **Voorbeeld** | Bepaalt de lay-out van de leesbare PDF die DocBits maakt. |
 
+De overige attributen van het formaat staan onder de kaarten.
 
-De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
+<figure><img src="../../../../../.gitbook/assets/edoc-format-pipeline-nl.png" alt="Een uitgeklapt formaat in het E-Doc-beheer met de kaarten Transformatie, Extractiepaden en Voorbeeld, verbonden door pijlen"><figcaption><p>De drie stappen van een formaat: Transformatie, Extractiepaden en Voorbeeld.</p></figcaption></figure>
 
-De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.
+Selecteer een kaart om die stap te openen.
+
+## Een stap bewerken
+
+De detailpagina heeft voor alle drie de stappen dezelfde opbouw:
+
+* De kop toont het formaat en een dropdown met zijn versies, inclusief de status van elke versie. Via de dropdown kunt u een versie activeren, bewerken of verwijderen.
+* **Builder**, **Code** en **Stroom** schakelen tussen de visuele editor, het onderliggende stylesheet of JSON, en het pijplijnresultaat.
+* **Voorbeelddocument** biedt de nieuwste documenten van dit formaat aan; u kunt ook een document-ID of URL plakken.
+* **Alle stappen uitvoeren** voert transformatie, extractie en voorbeeld voor het voorbeelddocument in één keer uit.
+* **Ctrl + S** slaat een concept op.
+
+Een actieve of al gebruikte versie bewerken verandert haar niet: DocBits maakt een conceptkopie en opent die. Een ongebruikt concept wordt ter plekke bewerkt. Een handgeschreven stap blijft in **Code** totdat de builder hem ongewijzigd kan overnemen.
+
+<figure><img src="../../../../../.gitbook/assets/edoc-transformation-detail-nl.png" alt="De detailpagina van een transformatie met de versie-dropdown, de tabbladen Builder, Code en Stroom, de voorbeelddocumentkiezer en het stylesheet in de code-editor"><figcaption><p>De detailpagina: versie-dropdown in de kop, tabbladen Builder, Code en Stroom, voorbeelddocument en de stap zelf.</p></figcaption></figure>
+
+### Transformatie
+
+De **Builder** toont de bron-XML links, de mapping in het midden en de resulterende XML rechts. Selecteer een element in de bronboom en sleep het naar een veld, of voeg een vaste tekstwaarde toe.
+
+Een veld kan uit meerdere delen bestaan, en elk deel kan een voorwaarde hebben: **bestaat**, **ontbreekt**, **is gelijk aan**, **is niet gelijk aan** of een vrije XPath-expressie, gekoppeld met **alle** of **een**. De drie deelvensters zijn in grootte aan te passen, en het resultaatgebied heeft een **Velden**-lijst en de **XML**-weergave.
+
+### Extractiepaden
+
+De extractiepaden-builder toont de DocBits-XML links, de velden in het midden en het pad dat elk veld gebruikt rechts. Selecteer een veld en stel het pad in; bestaande invoer, ook oudere platte invoer, blijft werken.
+
+<figure><img src="../../../../../.gitbook/assets/edoc-extraction-paths-builder-nl.png" alt="De extractiepaden-builder met de DocBits-XML-boom links, de veldenlijst in het midden en het XPath van elk veld rechts"><figcaption><p>De extractiepaden-builder: DocBits-XML, velden en hun paden.</p></figcaption></figure>
+
+### Voorbeeld
+
+De voorbeeld-builder rangschikt de PDF met sleepblokken en toont het resultaat ernaast. Paginagrootte, marges, lettergrootte, kleuren en blokafstand worden voor het hele document ingesteld en gelden voor elk blok.
+
+### Stroom
+
+**Stroom** toont de hele pijplijn voor het gekozen voorbeelddocument: wat de transformatie heeft opgeleverd, welke waarden de extractiepaden vonden en hoe het voorbeeld ze weergeeft. Gebruik dit om een wijziging van begin tot eind te controleren zonder de pagina te verlaten.
+
+## Gerelateerde pagina's
+
+* [eDocs-formaten, versies en landengidsen](supported-electronic-documents/README.md)
+
+De schermafbeeldingen op deze pagina tonen de interface in het Nederlands.

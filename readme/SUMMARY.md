@@ -86,6 +86,7 @@
         * [Models & Labels](overview/settings/document-processing/module/models-and-labels.md)
         * [Show Report](overview/settings/document-processing/module/show-report.md)
         * [ZUGFeRD + Swiss QR Code Field Mapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)
+        * [e-dokumenti](administration-and-setup/settings/global-settings/document-types/edi/README.md)
         * [Pregled ZUGFeRD-a](administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)
           * [ZUGFeRD konfiguracija](administration-and-setup/settings/global-settings/document-types/edi/zugferd/configuration.md)
           * [ZUGFeRD 1.0 mapiranje](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-1-0.md)

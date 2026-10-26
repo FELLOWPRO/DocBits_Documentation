@@ -1,17 +1,26 @@
-# Documents Expiry
+# Dokumentenablauf
 
-<figure><img src="../../../.gitbook/assets/docbits_documents_expiry_settings.png" alt="Docbits Documents Expiry Settings"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Einstellungen für den Dokumentenablauf"><figcaption><p>Einstellungen für den Dokumentenablauf</p></figcaption></figure>
 
-In the "Documents Expiry" setting under the "DOCUMENT PROCESSING" section, you can configure the automatic deletion schedules for your documents within the system. This feature is particularly useful for managing data retention policies and ensuring compliance with legal or organizational standards regarding document storage.
+Unter **Document Processing → Documents Expiry** steuern Sie, wie lange DocBits Ihre Dokumente aufbewahrt, bevor sie automatisch gelöscht werden. Das hilft Ihnen, Speicherplatz zu verwalten, Richtlinien zur Datenaufbewahrung durchzusetzen und gesetzliche oder organisatorische Vorgaben zur Dauer der Dokumentenspeicherung einzuhalten.
 
-Here’s what each setting does:
+Zwei Einstellungen steuern die automatische Löschung:
 
-1. **Delete document after**: This dropdown allows you to set the time frame after which a document that has been processed will be automatically deleted from the system. You can choose from predefined options like 48 Hours, 1 Week, 2 Weeks, or 4 Weeks. This helps in managing space and maintaining document lifecycle policies.
-2. **Delete finished document after**: Similar to the previous setting, but specifically targets the finished or fully processed documents. It allows the same time frame options for deletion, ensuring that completed documents are not stored longer than necessary.
+| Einstellung | Was sie steuert |
+|---------|------------------|
+| **Delete document after** | Wie lange ein verarbeitetes Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
+| **Delete finished document after** | Wie lange ein abgeschlossenes (vollständig verarbeitetes und exportiertes) Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
 
-Both settings ensure that documents are not kept indefinitely on your system, helping to avoid unnecessary storage use and keeping the document processing workflow clutter-free. These settings are vital for organizations needing to adhere to specific regulatory requirements about document retention.
+Für jede Einstellung wählen Sie im Dropdown-Menü einen Zeitraum:
 
-<figure><img src="../../../.gitbook/assets/docbits_documents_retention_policy.png" alt="Docbits Documents Retention Policy"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Optionen für den Dokumentenablauf"><figcaption><p>Verfügbare Aufbewahrungszeiträume</p></figcaption></figure>
 
+| Option | Bedeutung |
+|--------|---------|
+| **Default** | Der Standard-Aufbewahrungszeitraum des Systems wird verwendet (keine benutzerdefinierte Abweichung). |
+| **48 Hours** | Löschung 48 Stunden nach der Verarbeitung. |
+| **1 Week** | Löschung nach einer Woche. |
+| **2 Weeks** | Löschung nach zwei Wochen. |
+| **4 Weeks** | Löschung nach vier Wochen. |
 
-
+Beide Einstellungen stellen sicher, dass Dokumente nicht länger als nötig im System verbleiben. So vermeiden Sie unnötigen Speicherverbrauch und halten den Dokumenten-Workflow übersichtlich. Besonders wichtig sind sie für Organisationen, die bestimmte regulatorische Anforderungen an die Dokumentenaufbewahrung erfüllen müssen.

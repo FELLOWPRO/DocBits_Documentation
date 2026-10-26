@@ -1,6 +1,6 @@
-# Compare Total Charges
+# Vergleichen Sie die Gesamtgebühren
 
-<figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -10,7 +10,7 @@ Diese Workflow-Karte vergleicht die Gesamtkosten in einem Dokumentfeld mit den e
 
 1. **Feldname:**
    * **Beschreibung**: Gibt das Dokumentfeld an, das die Gesamtkostenwerte enthält, die mit den Kosten in der Bestellung verglichen werden.
-   * **Detail**: Der Wert in diesem Feld stellt die im Dokument (z. B. Rechnung) angewendeten Gesamtkosten dar und wird mit den Kosten der Bestellung verglichen.
+   * **Detailliert**: Der Wert in diesem Feld stellt die im Dokument (z. B. Rechnung) angewendeten Gesamtkosten dar und wird mit den Kosten der Bestellung verglichen.
 2. **Operator:**
    * **Beschreibung**: Legt die Bedingung fest, die auf den Vergleich zwischen den Gesamtkosten im Dokument und den Kosten in der Bestellung angewendet wird.
    * **Optionen**:
@@ -22,7 +22,7 @@ Diese Workflow-Karte vergleicht die Gesamtkosten in einem Dokumentfeld mit den e
      * **Kleiner oder gleich (≤)**: Überprüft, ob die Gesamtkosten im Dokument kleiner oder gleich den Kosten in der Bestellung sind.
 3. **Toleranzbetrag**
    * **Beschreibung**: Gibt den Toleranzschwellenwert für den Vergleich der Gesamtkosten an.
-   * **Detail**: Dieser numerische Wert stellt die zulässige Abweichung der Kosten zwischen dem Dokument und der Bestellung dar.
+   * **Detailliert**: Dieser numerische Wert stellt die zulässige Abweichung der Kosten zwischen dem Dokument und der Bestellung dar.
 4. **Toleranztyp:**
    * **Beschreibung**: Gibt die Art der angewendeten Toleranz an.
    * **Optionen**:
@@ -30,7 +30,7 @@ Diese Workflow-Karte vergleicht die Gesamtkosten in einem Dokumentfeld mit den e
      * **Wert**: Die Toleranz wird als fester numerischer Betrag angewendet.
 5. **Trennzeichen:**
    * **Beschreibung**: Gibt das Trennzeichen an, das verwendet wird, um die Charge-ID am Ende des Feldnamens zu unterscheiden.
-   * **Detail**: Das Trennzeichen trennt das Kostenfeld von der eindeutigen Charge-ID, die verwendet wird, um die Dokumentkosten mit den entsprechenden Kosten in der Bestellung zu verknüpfen.
+   * **Detailliert**: Das Trennzeichen trennt das Kostenfeld von der eindeutigen Charge-ID, die verwendet wird, um die Dokumentkosten mit den entsprechenden Kosten in der Bestellung zu verknüpfen.
 
 ## **Funktionalität:**
 

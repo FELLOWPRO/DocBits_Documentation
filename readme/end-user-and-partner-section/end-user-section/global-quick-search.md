@@ -6,7 +6,7 @@ Die Globale Schnellsuche ist ein über die Tastatur aufrufbarer Starter, der Sei
 
 Drücken Sie <kbd>Cmd</kbd> + <kbd>K</kbd> unter macOS oder <kbd>Ctrl</kbd> + <kbd>K</kbd> unter Windows und Linux. Die Tastenkombination funktioniert von jedem Bildschirm aus.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Globale Schnellsuche"><figcaption><p>Die Schnellsuche öffnet sich oberhalb der aktuellen Seite.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/quick-search-modal-de.png" alt="Globale Schnellsuche"><figcaption><p>Die Schnellsuche öffnet sich oberhalb der aktuellen Seite.</p></figcaption></figure>
 
 ## Suchen
 

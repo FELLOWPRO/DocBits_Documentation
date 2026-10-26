@@ -1,4 +1,4 @@
-# Purchase Invoice - 2nd Approval Unit Price
+# Eingangsrechnung – zweite Stückpreisgenehmigung
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09 (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -37,7 +37,7 @@ Klicken Sie im Kopfbereich auf **Neue Idee**. Der Dialog fragt nach:
 
 Drücken Sie **Absenden**, um zu veröffentlichen. Die Idee erscheint mit dem Status **Neu** in der Liste.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Dialog Neue Idee"><figcaption><p>Der Dialog „Neue Idee" mit Kategorie- und Kanalauswahl.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea-de.png" alt="Deutscher Dialog für eine neue Idee ohne persönliche Angaben."><figcaption><p>Deutscher Dialog für eine neue Idee ohne persönliche Angaben.</p></figcaption></figure>
 
 ## Abstimmen
 

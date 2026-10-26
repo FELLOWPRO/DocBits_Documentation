@@ -6,7 +6,7 @@ Die Sitemap ist der vollständige, durchsuchbare Index aller Bereiche in DocBits
 
 Öffnen Sie die Sitemap über die Seitenleiste (Eintrag im unteren Bereich) oder drücken Sie <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> und wählen Sie **Alle Ergebnisse anzeigen**. Die direkte URL ist `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Übersicht der Sitemap"><figcaption><p>Sitemap mit Kategorieübersicht und Suchkopf.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sitemap-overview-de.png" alt="Übersicht der Sitemap"><figcaption><p>Sitemap mit Kategorieübersicht und Suchkopf.</p></figcaption></figure>
 
 ## Den Katalog durchstöbern
 

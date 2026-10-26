@@ -20,7 +20,7 @@ Lookups, PO-Matching, Aufgaben, Benutzer-/Gruppenverwaltung und Statusänderunge
 
 Python-Built-ins, String-Operationen, Mathematik, Regex, Datum/Uhrzeit und Datenstrukturen — `re_search()`, `strptime()`, `levenshtein_distance()`, `parse_decimal()` und mehr.
 
-### [Fulltext & Vector Search Funktionen](fulltext-search-functions.md)
+### [Funktionen für Volltext- und Vektorsuche](fulltext-search-functions.md)
 
 Dokumentarchive durchsuchen, ähnliche Dokumente finden und ERP-Stammdaten abfragen — `fulltext_search()`, `vector_search()`, `fulltext_search_erp()`, `fulltext_suggestions()`. **Verfügbar ab Version 11.48.0**, erfordert `OPENSEARCH_ENABLED` Lizenz.
 

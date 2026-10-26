@@ -4,21 +4,21 @@
 
 Die M3-Export-Mapping-Datei ist in 5 Abschnitte unterteilt, und jeder Abschnitt ist wiederum in 2 Unterabschnitte unterteilt.
 
-* Header
-  * Header Static Fields
-  * Header Fields
-* Tax Lines
-  * Tax Line Static Fields
-  * Tax Line Fields
-* Receipt Lines
-  * Receipt Line Static Fields
-  * Receipt Line Fields
-* Order Charge Lines (Additional Amounts)
-  * Order Charge Static Fields
-  * Order Charge Fields
-* Cost Lines
-  * Cost Line Static Fields
-  * Cost Line Fields
+* Kopfbereich
+  * Statische Kopffelder
+  * Kopffelder
+* Steuerpositionen
+  * Statische Steuerpositionsfelder
+  * Steuerpositionsfelder
+* Wareneingangspositionen
+  * Statische Wareneingangspositionsfelder
+  * Wareneingangspositionsfelder
+* Bestellzuschlagspositionen (zusätzliche Beträge)
+  * Statische Bestellzuschlagsfelder
+  * Bestellzuschlagsfelder
+* Kostenpositionen
+  * Statische Kostenpositionsfelder
+  * Kostenpositionsfelder
 
 ### Felder hinzufügen und entfernen
 
@@ -43,7 +43,7 @@ Feld entfernen:
 
 * Auf ähnliche Weise können Sie die Feldnamen für Zeilen abrufen.
 
-### Header:
+### Kopfbereich:
 
 <figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,9 +61,9 @@ Abschnitts-Feldpräfix: HF\_
 
 Verfügbare Felder: Sie können jedes DocBits-Feld jedem M3-API-Feld zuordnen.
 
-### Tax Line:
+### Steuerposition:
 
-#### Tax Line Static Fields:
+#### Statische Felder der Steuerposition:
 
 Felderlisten-Eigenschaft: InvoiceTaxStaticFields
 
@@ -73,7 +73,7 @@ Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
 Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
-#### Tax Line Fields:
+#### Felder der Steuerposition:
 
 Felderlisten-Eigenschaft: InvoiceTaxFields
 
@@ -85,9 +85,9 @@ Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
 Verfügbare DocBits-Felder: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
 
-### Receipt Line:
+### Wareneingangsposition:
 
-#### Receipt Line Static Fields:
+#### Statische Felder der Wareneingangsposition:
 
 Felderlisten-Eigenschaft: InvoiceReceiptStaticFields
 
@@ -97,7 +97,7 @@ Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
 Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
-#### Receipt Line Fields:
+#### Felder der Wareneingangsposition:
 
 Felderlisten-Eigenschaft: InvoiceReceiptFields
 
@@ -109,9 +109,9 @@ Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
 Verfügbare DocBits-Felder: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
 
-### Order Charge Line:
+### Bestellzuschlagsposition:
 
-#### Order Charge Static Fields:
+#### Statische Felder der Bestellzuschläge:
 
 Felderlisten-Eigenschaft: OrderChargeStaticFields
 
@@ -121,7 +121,7 @@ Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
 Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
-#### Order Charge Fields:
+#### Felder der Bestellzuschläge:
 
 Felderlisten-Eigenschaft: OrderChargeFields
 
@@ -133,9 +133,9 @@ Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
 Verfügbare DocBits-Felder: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
 
-### Cost Line:
+### Kostenposition:
 
-#### Cost Line Static Fields:
+#### Statische Felder der Kostenposition:
 
 Felderlisten-Eigenschaft: InvoiceCostStaticFields
 
@@ -145,7 +145,7 @@ Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
 Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
-#### Cost Line Fields:
+#### Felder der Kostenposition:
 
 Felderlisten-Eigenschaft: InvoiceCostFields
 

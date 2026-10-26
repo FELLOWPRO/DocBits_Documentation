@@ -1,5 +1,13 @@
 # 订阅计划
 
+## 视频教程：公司、订阅与审计
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/zh.mp4" %}
+DocBits 中的公司信息、订阅计划与审计日志
+{% endembed %}
+
+视频演示了公司信息和偏好、订阅计划、登录活动以及审计日志。
+
 <figure><img src="../../../.gitbook/assets/site-complete-subscriptions-zh.png" alt="中文订阅计划页面和功能订阅表头；组织的计划与用量数据已隐藏，未购买或更改订阅。"><figcaption><p>中文订阅计划页面和功能订阅表头；组织的计划与用量数据已隐藏，未购买或更改订阅。</p></figcaption></figure>
 
 **订阅计划**页面集中展示 DocBits 订阅的完整概览：订阅计划本身、为组织启用的应用和功能订阅，以及令牌使用情况。前往 **设置 → 组织与访问权限 → 订阅计划**即可打开此页面。

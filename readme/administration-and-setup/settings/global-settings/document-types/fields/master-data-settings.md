@@ -1,5 +1,13 @@
 # 主数据设置
 
+## 视频教程：主数据与值列表
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/zh.mp4" %}
+DocBits 中的主数据来源、值列表与主数据设置
+{% endembed %}
+
+视频演示了主数据来源、值列表以及文档类型的主数据设置。
+
 主数据设置将文档的验证字段连接到存储在[查找主数据](../../../document-processing/master-data-lookup.md)中的数据。使用 **Lookup Master Data** 查找并填入匹配的记录。使用 **LOV Master Data** 提供来自数据集的值列表。
 
 ## 打开设置

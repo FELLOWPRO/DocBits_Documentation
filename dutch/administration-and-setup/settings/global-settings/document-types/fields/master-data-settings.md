@@ -1,5 +1,13 @@
 # Mastergegevensinstellingen
 
+## Videotutorial: Stamgegevens en waardelijsten
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/nl.mp4" %}
+Bronnen voor stamgegevens, waardelijsten en mastergegevensinstellingen in DocBits
+{% endembed %}
+
+De video toont de bronnen voor stamgegevens, de waardelijsten en de mastergegevensinstellingen van een documenttype.
+
 Met **Mastergegevensinstellingen** koppelt u de validatievelden van een document aan gegevens uit [Stamgegevens opzoeken](../../../document-processing/master-data-lookup.md). Gebruik **Stamgegevens opzoeken** om een overeenkomend record te vinden en in te vullen. Gebruik **LOV-stamgegevens** om een lijst met waarden uit een dataset aan te bieden.
 
 ## De instellingen openen

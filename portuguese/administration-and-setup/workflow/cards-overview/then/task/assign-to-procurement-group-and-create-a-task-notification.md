@@ -1,6 +1,6 @@
 # Assign to Procurement Group and Create a Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-06-pt-20261023.png" alt="Tarefa Atribua o documento sequencialmente ao grupo de compras Nome do grupo e crie um título Tarefa/Notificação : Título , descrição: Descrição de prioridade Prioridade . Notifique o grupo por e-mail Enviar e-mail . Atribua prioridade a Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

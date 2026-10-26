@@ -1,8 +1,8 @@
 # Compare Order Confirmation with Purchase order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-02-pt-20261023.png" alt="Comparar com a ordem de compra Qualquer/Todos Dados do pedido na confirmação do pedido Operador ordem de compra. Compare com Dados de comparação ." width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-02-pt-20261023.png" alt="Comparar com a ordem de compra Qualquer/Todos Dados do pedido na confirmação do pedido Operador ordem de compra. Compare com Dados de comparação ." width="563"><figcaption></figcaption></figure>
 
 ## Propósito:
 

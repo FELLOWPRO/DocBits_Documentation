@@ -1,6 +1,6 @@
 # Assign document to procurement group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-06-pt-20261023.png" alt="Responsável Atribuir documento ao grupo de compras Nome do grupo" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

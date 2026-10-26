@@ -1,73 +1,39 @@
 # Annotation Mode
 
-## Overview
+Annotation Mode lets you place notes directly on a document during validation. You can edit, move, or delete a note before downloading an annotated PDF. Your administrator must enable the feature for the organization first.
 
-The **Annotation Mode** setting allows users to create and manage annotations directly on the PDF. If a document contains annotations, they will be included when **exporting to IDM**.
+## Turn on Annotation Mode
 
-## Location
+An administrator opens **Settings → Modules → Document Integration** and turns on **Annotation Mode**. If you cannot see the annotation button during validation, ask an administrator to check this setting and your access.
 
-You can find this setting under: **Settings → Document Processing → Module → Document Type → Annotation Mode**
+<figure><img src="../../../../.gitbook/assets/annotation-mode-settings-en.png" alt="Annotation Mode switch in the Document Integration settings" /><figcaption><p>Enable Annotation Mode in Document Integration.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt=""><figcaption></figcaption></figure>
+## Add a note during validation
 
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
+1. Open the document on the [Validation Screen](../../../../end-user-and-partner-section/end-user-section/validation-screen/README.md).
+2. Select the **speech bubble** in the toolbar on the right. Its tooltip says **Activate annotation-mode**. Select it again to leave Annotation Mode.
+3. Drag across the part of the PDF where the note should appear. A small toolbar appears next to the selected area.
+4. Select the **pen** to open **Create/Edit Annotation**. Enter the note in **Annotation-Text**. You can choose the font and size, use **Bold** or *Italic*, and set **Text-Color**. **Cancel** closes the dialog without applying the text; **Save** applies it to the selected annotation.
+5. Use the **disk** button on the annotation toolbar to save your change. Use the **trash** button to remove the annotation if it is no longer needed.
 
-## How to Use Annotation Mode
+<figure><img src="../../../../.gitbook/assets/annotation-mode-toolbar-en.png" alt="Speech-bubble button in the validation toolbar for entering Annotation Mode" /><figcaption><p>Open Annotation Mode from the validation toolbar.</p></figcaption></figure>
 
-### 1. Enabling Annotation Mode
+<figure><img src="../../../../.gitbook/assets/annotation-mode-edit-toolbar-en.png" alt="Annotation toolbar with pen to edit, disk to save, and trash to delete" /><figcaption><p>The toolbar appears after you select an area on the PDF.</p></figcaption></figure>
 
-* Navigate to the **Validation Screen**.
-* Click on the **speech bubble** icon on the right to enter Annotation Mode.
+<figure><img src="../../../../.gitbook/assets/annotation-mode-dialog-en.png" alt="Create/Edit Annotation dialog with font, size, bold, italic, text color, text box, Cancel and Save" /><figcaption><p>Write and format the note in the annotation dialog.</p></figcaption></figure>
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../../../.gitbook/assets/annotation-mode-dialog-filled-en.png" alt="Annotation dialog with example text Please check this amount entered before saving" /><figcaption><p>Review the note before selecting Save.</p></figcaption></figure>
 
-### 2. Creating an Annotation
+## Manage an existing note
 
-* Select an area on the PDF where you want to place an annotation.
-* Click the **pen** icon to write text.
-* Click the **document** icon to save the annotation.
-* Click the **trash can** icon to delete the annotation.
+Select a note in Annotation Mode to show its toolbar. Use the **pen** to change the text or formatting, drag the selected note to move it, or use **trash** to delete it. The annotation appears on the PDF after it is saved. The speech-bubble button does not show a separate badge when a note exists.
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt=""><figcaption></figcaption></figure></div>
+<figure><img src="../../../../.gitbook/assets/annotation-mode-saved-en.png" alt="Saved English example note on a synthetic invoice with edit, save, and delete buttons beneath it" /><figcaption><p>A saved note remains visible on the document in Annotation Mode.</p></figcaption></figure>
 
-*   Customize the text using:
+Annotations are also available during [document approval](../../global-settings/document-types/more-settings/approval/README.md). For output through Infor IDM, see [Exporting to IDM](../../../../infor-integration-and-configuration/exporting-to-infor/exporting-to-idm.md).
 
-    * **Size** adjustment
-    * **Bold**
-    * _**Italic**_
-    * <mark style="color:purple;">**Color**</mark>
-    * **Font selection**
+## Download the original or annotated PDF
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt=""><figcaption></figcaption></figure></div>
+On the **Dashboard**, open the document's three-dot action menu. Choose **Download** for the original PDF or **Download annotated PDF** for the version with saved notes. The annotated option appears after an annotation has been saved. The menu also offers **Validate** (open the validation screen), **Assign to** (choose a person), **Document flow** (view the [document flow](../../../../end-user-and-partner-section/end-user-section/dashboard/document-flow.md)), **Restart** (process the document again), **Document Logs** (view activity), and **Delete** (remove the document). Use those actions only when you intend to change or inspect the document.
 
-### 3. Managing Annotations
-
-* **Move an annotation** by clicking and holding the left mouse button.
-* **Create multiple annotations** within the same document.
-* **Annotations are only visible** when Annotation Mode is enabled.
-* Annotations **will be included** when exporting the document to **IDM.**
-* If a document contains annotations, the **speech bubble icon** will display a small **exclamation mark** to indicate their presence.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt=""><figcaption></figcaption></figure>
-
-*
-
-<mark style="color:red;">**Note:**</mark> Annotations can also be viewed, added, and modified directly within the **Approval Screen**, allowing users to make necessary adjustments during the approval process.
-
-### 4. Downloading PDFs with or without Annotations
-
-* If a document has annotations, you can choose to download the PDF either with or without the annotations.
-* To do this, go to the **Dashboard**.
-* Click on the **three dots** in the **Action** column.
-* Select one of the two available download options:
-  * **Download with Annotations**
-  * **Download without Annotations**
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt=""><figcaption></figcaption></figure>
-
-By enabling and using Annotation Mode, users can efficiently add, edit, and manage annotations directly on PDFs, enhancing document collaboration and review.
-
-
-
+<figure><img src="../../../../.gitbook/assets/annotation-mode-download-menu-en.png" alt="Dashboard action menu with Download for the original PDF and Download annotated PDF for the saved notes" /><figcaption><p>Choose the PDF version you need from the document's action menu.</p></figcaption></figure>

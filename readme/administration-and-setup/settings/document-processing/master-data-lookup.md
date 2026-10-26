@@ -1,5 +1,13 @@
 # Stammdaten-Lookup
 
+## Video-Tutorial: Stammdaten und Wertelisten
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/de.mp4" %}
+Stammdatenquellen, Wertelisten und Stammdaten-Einstellungen in DocBits
+{% endembed %}
+
+Das Video zeigt die Stammdatenquellen, die Wertelisten und die Stammdaten-Einstellungen eines Dokumenttyps.
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 

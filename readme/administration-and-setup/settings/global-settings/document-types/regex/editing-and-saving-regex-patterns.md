@@ -1,12 +1,10 @@
 # Bearbeiten und Speichern von Regex-Mustern
 
-## Anleitung zum Ändern bestehender Muster und die Bedeutung des Testens dieser Änderungen, um sicherzustellen, dass sie wie erwartet funktionieren, ohne bestehende Funktionen zu beeinträchtigen.
+## Bestehende Muster sicher ändern
+
+Der frühere Regex-Link auf der Dokumenttypkarte ist in der aktuellen Oberfläche nicht mehr vorhanden. Prüfen Sie zunächst mit Ihrer Administration den für Ihre Version verfügbaren Konfigurationsweg.
 
 **Um bestehende Regex-Muster zu bearbeiten und sicherzustellen, dass die Änderungen wie erwartet funktionieren, ohne bestehende Funktionen zu beeinträchtigen, können Sie sich an der folgenden Anleitung orientieren:**
-
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_edit_settings.png" alt="Docbits Regex Edit Settings"><figcaption><p>Einstellungen: Belegtyp</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_pattern_analysis.png" alt="Docbits Regex Pattern Analysis"><figcaption></figcaption></figure>
 
 **Bestehendes Muster analysieren:**
 
@@ -28,8 +26,6 @@
     (?<=InvoiceDate )[\s]*P\d{5}
 
     Customer number Invoice number Invoice date P32180 613976 05/13/2019
-
-<figure><img src="../../../../../.gitbook/assets/docbits_import_start_process.png" alt="Docbits Import Start Process"><figcaption></figcaption></figure>
 
 **Änderungen dokumentieren:**
 
@@ -65,6 +61,6 @@
 
 * Sobald Sie sicher sind, dass die Änderungen erfolgreich sind und wie erwartet funktionieren, speichern Sie das aktualisierte Regex-Muster in Ihrer Codebasis oder Ihren Konfigurationsdateien, um sicherzustellen, dass sie für die zukünftige Verwendung verfügbar sind.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_training_continuous.png" alt="Docbits Model Training Continuous"><figcaption><p>Änderungen speichern</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_model_training_continuous.png" alt="Kontinuierliches Modelltraining in DocBits"><figcaption><p>Änderungen speichern</p></figcaption></figure>
 
 Durch Befolgen dieser Schritte und sorgfältiges Testen von Änderungen an Regex-Mustern können Sie sicherstellen, dass Ihr Regex-Muster weiterhin korrekt funktioniert, während es neue Anforderungen erfüllt.

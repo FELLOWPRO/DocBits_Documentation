@@ -1,24 +1,17 @@
 # Genehmigungsverlauf
 
-Um die Funktion **Genehmigungsverlauf** zu aktivieren:
+Der Genehmigungsverlauf dient dazu, vorhandene Genehmigungs- und Ablehnungsentscheidungen eines Dokuments nachzuvollziehen. Welche Einträge verfügbar sind, hängt von der bisherigen Verarbeitung und Ihren Berechtigungen ab.
 
-1. Gehe zu **Einstellungen** → **Allgemeine Einstellungen** → **Dokumenttypen** → **Weitere Einstellungen** → **Genehmigung**.
-2. Aktiviere **Genehmigungsverlauf**.
+## Einstellung finden
 
-Sobald aktiviert, wird der Genehmigungsverlauf im Bildschirm **Genehmigung ausstehend** sichtbar sein. Du kannst zum Bildschirm **Genehmigungsverlauf** wechseln, indem du auf die Schaltfläche in der oberen linken Ecke klickst.
+1. Öffnen Sie **Einstellungen → Dokumenttypen**.
+2. Öffnen Sie über das Zahnrad den betreffenden Dokumenttyp.
+3. Wechseln Sie zum Bereich **Genehmigung & Ablehnung** und prüfen Sie **Genehmigungsverlauf**. Ändern Sie die Einstellung nur, wenn dies für Ihren Ablauf vorgesehen ist.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_1.png)
+<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-approval-settings-de.png" alt="Aktuelle deutsche Einstellungen „Genehmigung &amp; Ablehnung“ mit dem Schalter „Genehmigungsverlauf“. Die Abbildung zeigt den vorgefundenen Zustand; es wurde nichts geändert und keine Genehmigungsentscheidung ausgeführt."><figcaption><p>Aktuelle deutsche Einstellungen „Genehmigung &amp; Ablehnung“ mit dem Schalter „Genehmigungsverlauf“. Die Abbildung zeigt den vorgefundenen Zustand; es wurde nichts geändert und keine Genehmigungsentscheidung ausgeführt.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_2.png)
+## Entscheidungen prüfen
 
-Im Bildschirm **Genehmigungsverlauf** siehst du die folgenden Details:
+Öffnen Sie das betroffene Dokument und den dort angebotenen Genehmigungsverlauf, sofern verfügbar. Prüfen Sie die aufgezeichnete Entscheidung, den Bearbeiter sowie Zeitpunkt und Reihenfolge. Kommentare können ergänzende Gründe enthalten, wenn sie erfasst wurden.
 
-* **Wer** das Dokument genehmigt oder abgelehnt hat.
-* Die **Zeit** und **Reihenfolge** der Genehmigungen oder Ablehnungen.
-* Falls eingerichtet, **Kommentare**, die die Gründe für die Entscheidungen erklären.
-* **Rot** zeigt eine **Ablehnung** an.
-* Die Farbe, die der Umgebung entspricht (z. B. grün), zeigt **Genehmigung** an.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/approval_history_3.png)
-
-Diese Funktion bietet verbesserte Transparenz, indem sie den Genehmigungsprozess verfolgt und visualisiert.
+Beurteilen Sie das Ergebnis anhand des Entscheidungstexts und nicht allein nach einer Farbe. Eine leere Historie belegt keine Genehmigung. Die Abbildung zeigt nur die Konfiguration; für diese Anleitung wurde weder ein Dokument genehmigt oder abgelehnt noch eine tatsächliche Entscheidungshistorie erzeugt.

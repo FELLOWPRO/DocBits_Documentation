@@ -1,12 +1,14 @@
-# Any / All Charges
+# Beliebige oder alle Gebühren
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="Die Karte in der Kartenbibliothek, Version 2 und Version 3"><figcaption><p>Die Karte in der Kartenbibliothek. Version 2 oben, Version 3 unten.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v2-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## **Zweck:**
 
 Diese Workflow-Karte vergleicht die Zusatzkosten eines Dokuments mit den Zusatzkosten der zugeordneten Bestellung, innerhalb einer festgelegten Toleranz. Sie beantwortet eine einzige Frage: Stimmen Dokument und Bestellung in den Zusatzkosten überein? Verglichen wird jede Gebühr, die der Bestellabgleich einander zugeordnet hat, weshalb auf der Karte kein Feldname angegeben werden muss.
 
-Diese Karte unterscheidet sich von **Compare Total Charges**, die ein einzelnes benanntes Dokumentfeld mit einer über eine Charge ID bestimmten Gebühr vergleicht. Verwenden Sie diese Karte, wenn alle zugeordneten Gebühren eines Dokuments gemeinsam geprüft werden sollen.
+Diese Karte unterscheidet sich von **Vergleichen Sie die Gesamtgebühren**, die ein einzelnes benanntes Dokumentfeld mit einer über eine Charge ID bestimmten Gebühr vergleicht. Verwenden Sie diese Karte, wenn alle zugeordneten Gebühren eines Dokuments gemeinsam geprüft werden sollen.
 
 Der Bestellabgleich muss vor dieser Karte laufen. Hat das Dokument keine zugeordnete Bestellung, stoppt die Karte den Workflow und meldet fehlende Daten.
 

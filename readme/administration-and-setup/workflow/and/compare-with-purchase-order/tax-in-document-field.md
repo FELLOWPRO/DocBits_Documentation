@@ -1,6 +1,6 @@
-# Tax in document field
+# Steuer im Belegfeld
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c8c9a92d10ce-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -10,7 +10,7 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der Steuerwert in eine
 
 1. **Feldname**
    * **Beschreibung**: Gibt das Dokumentfeld an, das den mit dem Steuerwert in der Bestellung zu vergleichenden Steuerwert enthält.
-   * **Detail**: Dieses Feld muss exakt mit dem Bezeichner für den Steuerwert im Dokument übereinstimmen.
+   * **Detailliert**: Dieses Feld muss exakt mit dem Bezeichner für den Steuerwert im Dokument übereinstimmen.
 2. **Operator**
    * **Beschreibung**: Legt die Bedingung fest, die auf den Vergleich zwischen dem Steuerwert des Dokuments und dem Steuerwert der Bestellung angewendet wird.
    * **Optionen**:
@@ -22,10 +22,10 @@ Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der Steuerwert in eine
      * **Kleiner oder gleich (≤)**: Prüft, ob die Steuer im Dokumentfeld kleiner oder gleich der Steuer in der Bestellung ist.
 3. **Stammdatentabelle**
    * **Beschreibung**: Die Tabelle, die die Bestelldetails einschließlich der Charge-ID und der Steuerwerte enthält.
-   * **Detail**: Diese Tabelle muss einen Verweis auf die Charge-ID enthalten, die mit dem Steuerwert der Bestellung verknüpft ist.
+   * **Detailliert**: Diese Tabelle muss einen Verweis auf die Charge-ID enthalten, die mit dem Steuerwert der Bestellung verknüpft ist.
 4. **Toleranzbetrag**
    * **Beschreibung**: Der Schwellenbetrag, innerhalb dessen die Steuerwerte variieren dürfen. Er wird verwendet, um geringfügige Abweichungen bei Steuerberechnungen zu berücksichtigen.
-   * **Detail**: Der Toleranzbetrag sollte ein numerischer Wert sein, der die maximal zulässige Differenz zwischen den Steuerwerten definiert.
+   * **Detailliert**: Der Toleranzbetrag sollte ein numerischer Wert sein, der die maximal zulässige Differenz zwischen den Steuerwerten definiert.
 5. **Toleranztyp**
    * **Beschreibung**: Gibt die Art der angewendeten Toleranz an, entweder absolut oder prozentual.
    * **Optionen**:

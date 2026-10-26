@@ -7,7 +7,7 @@
 
 Als Administrator haben Sie die Möglichkeit, die Zuordnungen (Mappings) zwischen internen Artikelnummern und Lieferantenartikelnummern einzusehen und zu verwalten. Diese Funktion stellt sicher, dass Unstimmigkeiten zwischen Ihrem System und den Systemen Ihrer Lieferanten effizient gehandhabt werden. Sie können fehlerhafte Zuordnungen überprüfen, bearbeiten und löschen, um die Datengenauigkeit aufrechtzuerhalten.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_supplier_item_map_admin_view.png" alt="Docbits Supplier Item Map Admin View"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_supplier_item_map_admin_view.png" alt="Administrationsansicht der Lieferantenartikelnummern-Zuordnung in DocBits"><figcaption></figcaption></figure>
 
 **Zugriff auf die Lieferantenartikelnummer-Zuordnung**
 

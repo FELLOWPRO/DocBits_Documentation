@@ -1,21 +1,30 @@
 # API-Aufrufe und Beispiele
 
-In der Dokumentenverarbeitung können APIs verwendet werden, um verschiedene Aufgaben wie das Extrahieren von Text aus Dokumenten, das Analysieren von Dokumenteninhalten, das Konvertieren zwischen verschiedenen Dateiformaten und mehr zu automatisieren. Hier sind einige Beispiele für APIs in der Dokumentenverarbeitung:
+Mit einer API-Anfrage kann ein anderes Programm Informationen in DocBits lesen oder aktualisieren. Beginnen Sie mit einer rein lesenden Anfrage, damit Sie die Verbindung prüfen können, ohne Dokumente zu verändern.
 
-* **OCR (Optical Character Recognition) API:** Diese Art von API ermöglicht es Ihnen, Text aus Bildern oder gescannten Dokumenten zu extrahieren. Zum Beispiel:
+## Bevor Sie eine Anfrage senden
 
-<figure><img src="https://lh7-us.googleusercontent.com/PMTSWY9TbPtvDQYJ_6irKyUGKdYvojdi4Is_imdFyGDffbHMR6nB8K6DBzmJlJhXdbB6HtOY2jGW-B5UbgtpNEG9_LnkjbiKBdI0iP7BH-8M4mFNbA2EfGWqPgjDmdMuCTX2mA73oXk_YN0Kdqu5rIo" alt=""><figcaption><p>Diese Anfrage sendet ein Bild mit Text an die OCR-API, um den Text zu extrahieren.</p></figcaption></figure>
+1. Bitten Sie einen Organisationsadministrator um Zugriff und [erstellen Sie einen API-Schlüssel](api-key-management.md) für die Integration. Bewahren Sie den Schlüssel in einem Secret Store auf; legen Sie ihn nicht in einem Screenshot, Dokument oder einer Quelldatei ab.
+2. Öffnen Sie die [aktuelle API-Referenz der Sandbox](https://sandbox.api.docbits.com/docs). Sie listet die verfügbaren Operationen, erforderlichen Werte und Beispielantworten für diese Umgebung auf. Verwenden Sie die Referenz Ihrer eigenen Umgebung, wenn Sie die Sandbox verlassen.
 
-* **NLP (Natural Language Processing) API:** Diese API ermöglicht die Analyse von Textinhalten in Dokumenten, einschließlich Schlüsselwortidentifizierung, Entitätserkennung, Stimmungsanalyse usw. Zum Beispiel:
+<figure><img src="../../../../.gitbook/assets/api-calls-key-context-en.png" alt="Englischer Bereich API Key von DocBits mit der Schaltfläche Create API Key; es ist kein Schlüsselwert sichtbar"><figcaption><p>API-Schlüssel finden Sie unter Settings → Integration &amp; SSO. Das Bild enthält keinen Schlüsselwert.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/7lrjDlrXL5gVCAokA4R7DdA5GfAhQ1mlKp4LMa0V18nvjLVNRIrJMqr75bMAvoocWMb--7s8ksi8rd0BSM1jRD2Aw8tnOTxGTUbUx1yhg6pFr7r171ICuub92JGblwKbOiD0L4EdZqA_v8NzkjZlJNE" alt=""><figcaption><p>Diese Anfrage sendet den Text eines Dokuments zur Analyse an die NLP-API.</p></figcaption></figure>
+## Beispiel: Dokumenttypen lesen
 
-* **Konvertierungs-API:** Diese Art von API ermöglicht die Konvertierung zwischen verschiedenen Dateiformaten, zum Beispiel von PDF nach Word oder von Word nach PDF. Zum Beispiel:
+Die Sandbox-Referenz listet **GET `/document_type/get_document_types`** auf. Der Aufruf liefert die Dokumenttypen, die Ihrer Organisation zur Verfügung stehen. `GET` liest Informationen; es erstellt oder ändert kein Dokument.
 
-<figure><img src="https://lh7-us.googleusercontent.com/0wbf26KXgcsnqvfTY4q35K6xK8e3Ema1spoA9Z7tlkQmnAZVJ3M_A7wlkXPlQbkUTHOTlejYusRhpQb456l5zkMEqBmf4WMITFksDY94Rp6Y5_YilcL6MbA9t-JKLGCMayP9dIcKTLaYqQKMhr97Pv4" alt=""><figcaption><p>Diese Anfrage sendet eine PDF-Datei an die Konvertierungs-API, um sie in ein Word-Dokument zu konvertieren.</p></figcaption></figure>
+Setzen Sie Ihren API-Schlüssel als lokale Umgebungsvariable und senden Sie dann die Anfrage:
 
-* **Dokumentenmanagement-API:** Diese API ermöglicht es Ihnen, Dokumente in einem Dokumentenmanagementsystem hochzuladen, herunterzuladen und zu verwalten. Zum Beispiel:
+```sh
+curl --fail-with-body \
+  -H "X-API-KEY: ${DOCBITS_API_KEY}" \
+  "https://sandbox.api.docbits.com/sandbox-api/document_type/get_document_types"
+```
 
-<figure><img src="https://lh7-us.googleusercontent.com/wkZTLICbpBPKiSbZGN_rmF9gt47eTYRdkKWnAiuwMESzvsB0SBxok_VNjVc-FjyJmBIjBxUerBlnKzqhmMcPcs6Rg2BE2VlMTZLP4wBwBv3lWvHn426BfznfUbvhRi4cBR8Zlz-VDRH6a0c3FA_lNr4" alt=""><figcaption><p>Diese Anfrage lädt ein Dokument in das Dokumentenmanagementsystem hoch.</p></figcaption></figure>
+Eine erfolgreiche Antwort enthält `success: true` und eine `data`-Liste mit Dokumenttypen. Eine Antwort `401` bedeutet, dass die Anfrage nicht authentifiziert war; prüfen Sie den Schlüssel und die Umgebung, bevor Sie es erneut versuchen. Die obige URL gilt nur für die Sandbox.
 
-Diese Beispiele zeigen, wie APIs in der Dokumentenverarbeitung verwendet werden können, um verschiedene Aufgaben zu automatisieren und die Effizienz zu verbessern. Die genaue Funktionalität und Syntax der API hängt von der jeweiligen API und ihren spezifischen Funktionen ab.
+## Die nächste Operation finden
+
+Suchen Sie in der API-Referenz nach dem, was Sie tun möchten, lesen Sie die Beschreibung und die erforderlichen Felder der Operation und prüfen Sie, ob sie `GET`, `POST` oder eine andere Methode verwendet. Verwenden Sie die Beispielantwort der Referenz, um das Ergebnis zu bestätigen. Eine Anleitung für Postman finden Sie unter [Postman für DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/README.md); prüfen Sie die dortigen älteren Beispiel-URLs anhand der aktuellen API-Referenz, bevor Sie eine Anfrage senden.
+
+Die vier älteren Bilder auf dieser Seite beschrieben allgemeine APIs für OCR, NLP, Dateikonvertierung und Dokumentenmanagement, ohne verifizierte DocBits-Endpunkte zu zeigen. Sie wurden entfernt; als ausführbares Beispiel wird nur die oben dokumentierte DocBits-Operation gezeigt.

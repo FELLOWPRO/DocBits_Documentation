@@ -1,40 +1,43 @@
-# Tax Lines
+# Steuerzeilen
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-Handles discrepancies in tax amounts between the invoice and purchase order.
 
-## Action:
+## Szenario:
 
-The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+Behandelt Abweichungen zwischen den Steuerbeträgen der Rechnung und der Bestellung.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Subtotal Amount: $10,000.00
-  * Tax Rate: 8%
-  * Expected Tax Amount: $800.00
-  * Total Amount with Tax: $10,800.00
-* **Invoice Received:**
-  * Subtotal Amount: $10,000.00
-  * Tax Rate: 10% (discrepancy)
-  * Invoiced Tax Amount: $1,000.00
-  * Total Amount with Tax: $11,000.00
+Die Beispielzuordnung passt die Steuerzeilen an die konfigurierten genehmigten Steuersätze und -beträge an. Die fachliche und steuerliche Richtigkeit dieser Vorgaben muss gesondert geprüft werden.
 
-Since the tax rate on the invoice (10%) differs from the expected tax rate (8%) and is not approved, the system will:
+## Beispiel:
 
-1. **Reject the Invoiced Tax Rate:** The system does not accept the 10% tax rate because it does not match the approved rate in the purchase order.
-2. **Adjust the Tax Rate:** The system adjusts the tax rate to match the approved rate from the purchase order.
-   * Adjusted Tax Rate = 8% (from PO)
-3. **Recalculate the Tax Amount:** The system recalculates the tax amount based on the adjusted tax rate:
-   * **Corrected Tax Amount = Subtotal Amount × Adjusted Tax Rate**
-   * **Corrected Tax Amount = $10,000.00 × 8% = $800.00**
-4. **Recalculate the Total Amount:** The system recalculates the total amount including tax:
-   * **Corrected Total Amount with Tax = Subtotal Amount + Corrected Tax Amount**
-   * **Corrected Total Amount with Tax = $10,000.00 + $800.00 = $10,800.00**
-5. **Generate a Credit Note:** The system generates a credit note to correct the overcharged tax:
-   * **Credit Note Amount = Original Invoice Tax Amount - Corrected Tax Amount**
-   * **Credit Note Amount = $1,000.00 - $800.00 = $200.00**
-6. **Process the Invoice:** The system processes the invoice with the corrected tax amount of $800.00 and the total amount of $10,800.00, issuing a credit note for the $200.00 tax discrepancy.
+* **Bestellung (PO):**
+  * Zwischensumme: $10,000.00
+  * Steuersatz: 8%
+  * Erwarteter Steuerbetrag: $800.00
+  * Gesamtbetrag einschließlich Steuer: $10,800.00
+* **Eingegangene Rechnung:**
+  * Zwischensumme: $10,000.00
+  * Steuersatz: 10% (Abweichung)
+  * Berechneter Steuerbetrag: $1,000.00
+  * Gesamtbetrag einschließlich Steuer: $11,000.00
 
-This approach ensures that the invoice tax is consistent with the purchase order and complies with applicable tax regulations, preventing overpayment and ensuring accuracy in financial records.
+Der Steuersatz der Rechnung (10%) weicht vom erwarteten Steuersatz (8%) ab und wurde nicht genehmigt. Das System führt folgende Schritte aus:
+
+1. **Berechneten Steuersatz ablehnen:** Das System akzeptiert den Steuersatz von 10% nicht, da er nicht dem genehmigten Satz aus der Bestellung entspricht.
+2. **Steuersatz anpassen:** Das System setzt den Steuersatz auf den genehmigten Wert aus der Bestellung.
+   * Angepasster Steuersatz = 8% (aus der Bestellung)
+3. **Steuerbetrag neu berechnen:** Das System berechnet den Steuerbetrag anhand des angepassten Steuersatzes neu:
+   * **Korrigierter Steuerbetrag = Zwischensumme × Angepasster Steuersatz**
+   * **Korrigierter Steuerbetrag = $10,000.00 × 8% = $800.00**
+4. **Gesamtbetrag neu berechnen:** Das System berechnet den Gesamtbetrag einschließlich Steuer neu:
+   * **Korrigierter Gesamtbetrag einschließlich Steuer = Zwischensumme + Korrigierter Steuerbetrag**
+   * **Korrigierter Gesamtbetrag einschließlich Steuer = $10,000.00 + $800.00 = $10,800.00**
+5. **Gutschrift erstellen:** Das System erstellt eine Gutschrift, um die zu viel berechnete Steuer zu korrigieren:
+   * **Gutschriftsbetrag = Ursprünglicher Rechnungssteuerbetrag - Korrigierter Steuerbetrag**
+   * **Gutschriftsbetrag = $1,000.00 - $800.00 = $200.00**
+6. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem korrigierten Steuerbetrag von $800.00 und dem Gesamtbetrag von $10,800.00. Über die Steuerdifferenz von $200.00 wird eine Gutschrift erstellt.
+
+Damit verwendet das Beispiel den konfigurierten erwarteten Steuersatz. Ob die Zuordnung im konkreten Anwendungsfall fachlich und steuerlich richtig ist, muss gesondert geprüft werden.

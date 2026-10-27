@@ -86,3 +86,6 @@ An invoice should be assigned through a decision table only when the organizatio
 ## Adapt the examples to your configuration
 
 Define the appropriate fields, groups and decision tables in your own organization. Do not assume that the neutral names refer to existing product fields. Check every positive and negative condition case, as well as action errors, in a suitable test environment. Verify approvals and exports against their actual results; enable a workflow only after business acceptance.
+
+
+[Advanced production workflow examples](advanced-production-workflow-examples.md)

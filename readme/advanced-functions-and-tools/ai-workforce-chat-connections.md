@@ -2,6 +2,8 @@
 
 Servono un abbonamento AI Workforce attivo, diritti di gestione delle connessioni e accesso al tenant Teams o server Discord previsto. Risolvere prima eventuali requisiti di abbonamento con l'amministratore.
 
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-chat-integrations-menu-it.png" alt="In Integrazioni, + apre le opzioni per collegare Teams, aggiungere un bot personalizzato o collegare Discord. Il nome della connessione esistente è nascosto. L’opzione «Connetti i team» corrisponde a Microsoft Teams; la traduzione attuale del nome del prodotto è errata."><figcaption><p>In Integrazioni, + apre le opzioni per collegare Teams, aggiungere un bot personalizzato o collegare Discord. Il nome della connessione esistente è nascosto. L’opzione «Connetti i team» corrisponde a Microsoft Teams; la traduzione attuale del nome del prodotto è errata.</p></figcaption></figure>
+
 ## Microsoft Teams
 
 1. Aprire **AI Workforce → Impostazioni → Integrazioni**.
@@ -14,6 +16,8 @@ Servono un abbonamento AI Workforce attivo, diritti di gestione delle connession
 Per un bot aziendale scegliere l'opzione personalizzata e inserire nome, ID tenant, ID applicazione e relativo segreto. Conservare i segreti nel modulo credenziali, fuori da prompt e screenshot.
 
 ## Discord
+
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-discord-connect-form-it.png" alt="Modulo di connessione Discord prima dell’invio. L’ID del server identifica il server Discord (Guild ID); non è stata creata alcuna connessione."><figcaption><p>Modulo di connessione Discord prima dell’invio. L’ID del server identifica il server Discord (Guild ID); non è stata creata alcuna connessione.</p></figcaption></figure>
 
 1. Sotto **Integrazioni → +**, scegliere Discord.
 2. Se proposto, aggiungere il bot al server corretto con un amministratore autorizzato.

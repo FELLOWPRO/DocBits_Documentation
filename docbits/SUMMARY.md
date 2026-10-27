@@ -744,6 +744,7 @@
     * [PO comparisons: direction, tolerance and card versions](administration-and-setup/workflow/cards-overview/po-comparison-versions-guide.md)
     * [Quote comparison cards](administration-and-setup/workflow/cards-overview/quote-comparison-guide.md)
     * [Card versions and availability](administration-and-setup/workflow/cards-overview/card-versions-guide.md)
+    * [Partner cards: custom extensions](administration-and-setup/workflow/cards-overview/partner-cards.md)
     * [Condition Cards - Complete Guide](administration-and-setup/workflow/cards-overview/condition-cards-complete-guide.md)
     * [PO Matching Cards - Complete Guide](administration-and-setup/workflow/cards-overview/po-matching-complete-guide.md)
     * [Document Assignment & User Cards](administration-and-setup/workflow/cards-overview/assignment-user-guide.md)

@@ -1,6 +1,6 @@
 # Asignar categorías de IVA de facturas electrónicas a códigos ERP
 
-<figure><img src="../../../../.gitbook/assets/edoc-tax-mapping-form-es.png" alt="Formulario de asignación fiscal antes de guardar un registro."><figcaption><p>Formulario de asignación fiscal antes de guardar un registro.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/edoc-tax-mapping-form-es.png" alt="Formulario de asignación fiscal antes de guardar un registro. Algunas descripciones de categorías aparecen en inglés en la interfaz actual; los códigos técnicos no cambian."><figcaption><p>Formulario de asignación fiscal antes de guardar un registro. Algunas descripciones de categorías aparecen en inglés en la interfaz actual; los códigos técnicos no cambian.</p></figcaption></figure>
 
 Una factura electrónica puede contener una categoría de IVA como **S** en lugar del código fiscal del ERP. La asignación define su conversión; es independiente de corregir importes fiscales o reglas de validación.
 

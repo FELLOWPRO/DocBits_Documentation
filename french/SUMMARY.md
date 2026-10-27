@@ -624,6 +624,7 @@
     * [Comparaison avec la commande : sens, tolérance et versions des cartes](administration-and-setup/workflow/cards-overview/po-comparison-versions-guide.md)
     * [Cartes de comparaison de devis](administration-and-setup/workflow/cards-overview/quote-comparison-guide.md)
     * [Versions et disponibilité des cartes](administration-and-setup/workflow/cards-overview/card-versions-guide.md)
+    * [Cartes partenaires : extensions personnalisées](administration-and-setup/workflow/cards-overview/partner-cards.md)
     * [Quand](administration-and-setup/workflow/when/README.md)
       * [Description de la carte](administration-and-setup/workflow/when/card-description.md)
       * [Opération de Type de Document](administration-and-setup/workflow/when/page.md)

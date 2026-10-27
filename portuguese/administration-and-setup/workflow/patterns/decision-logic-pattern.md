@@ -1143,3 +1143,5 @@ Exceções: 15 (1,2%)
 **Metadados históricos do exemplo:**
 
 **Versão do padrão:** 1.0 **Última atualização:** 23 de outubro de 2025 **Dificuldade:** média **Tempo estimado:** 30–45 minutos
+
+[Exemplos reais de workflows na prática](production-workflow-examples.md)

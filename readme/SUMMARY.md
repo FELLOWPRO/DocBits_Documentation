@@ -755,6 +755,7 @@
       * [Modèle de correspondance de bon de commande](administration-and-setup/workflow/patterns/po-matching-pattern.md)
       * [Modèle logique de décision](administration-and-setup/workflow/patterns/decision-logic-pattern.md)
       * [Exemples concrets de workflows utilisés en production](administration-and-setup/workflow/patterns/production-workflow-examples.md)
+      * [Exemples réels de workflows Advanced en production](administration-and-setup/workflow/patterns/advanced-production-workflow-examples.md)
       * [Modèle de transformation des données](administration-and-setup/workflow/patterns/data-transformation-pattern.md)
   * [Gestion des tests](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

@@ -763,6 +763,7 @@
       * [Task Management Pattern](administration-and-setup/workflow/cards-overview/patterns/task-management-pattern.md)
       * [PO Matching Pattern](administration-and-setup/workflow/cards-overview/patterns/po-matching-pattern.md)
       * [Decision Logic Pattern](administration-and-setup/workflow/cards-overview/patterns/decision-logic-pattern.md)
+      * [Real workflow examples from production](administration-and-setup/workflow/cards-overview/patterns/production-workflow-examples.md)
       * [Data Transformation Pattern](administration-and-setup/workflow/cards-overview/patterns/data-transformation-pattern.md)
   * [Test Manager](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

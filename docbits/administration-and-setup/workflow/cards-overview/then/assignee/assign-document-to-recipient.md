@@ -1,6 +1,6 @@
 # Assign document to recipient
 
-<figure><img src="../../../../../.gitbook/assets/image (374).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (374).png" alt="Assignee card Assign document to a recipient with a user as fallback" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Above Max Amount
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42.png" alt="Above Max Amount workflow: pending approval invoice with total above approver max amount is assigned to the Next Level Approver"><figcaption></figcaption></figure>
 
 This title indicates that the rule is designed to manage cases where the invoice total is greater than the maximum amount an approver is authorized to handle.
 

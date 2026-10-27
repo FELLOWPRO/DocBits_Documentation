@@ -1,6 +1,6 @@
 # Text in Field
 
-<figure><img src="../../../../../.gitbook/assets/image (52).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (52).png" alt="Document Field condition card with text, operator and field name placeholders: text in field" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

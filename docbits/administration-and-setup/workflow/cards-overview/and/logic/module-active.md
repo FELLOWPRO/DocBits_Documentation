@@ -1,6 +1,6 @@
 # Module active
 
-<figure><img src="../../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (44).png" alt="Logic condition card Module with module and operator placeholders, active" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

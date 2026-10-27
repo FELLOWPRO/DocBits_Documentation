@@ -1,6 +1,6 @@
 # Assign Sequentially to User
 
-<figure><img src="../../../../../.gitbook/assets/image (142).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (142).png" alt="Assignee card Assign the document sequentially to a user with priority value placeholders" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

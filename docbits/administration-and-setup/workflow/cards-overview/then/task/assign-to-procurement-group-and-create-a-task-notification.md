@@ -1,6 +1,6 @@
 # Assign to Procurement Group and Create a Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/image (138).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (138).png" alt="Task card assigning the document to a procurement group and creating a task or notification with title, description, priority and email" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

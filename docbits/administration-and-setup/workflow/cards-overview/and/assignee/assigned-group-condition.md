@@ -1,6 +1,6 @@
 # Assigned Group Condition
 
-<figure><img src="../../../../../.gitbook/assets/image (148).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (148).png" alt="Assignee condition card: assigned group with operator, one of the selected groups" width="563"><figcaption></figcaption></figure>
 
 **Purpose:**
 

@@ -2,6 +2,8 @@
 
 Utilice esta vista cuando falte un proveedor, pedido u otro registro maestro. Muestra la fecha de sincronización registrada por tipo de datos en la organización actual, no el contenido de todos los registros importados.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-es.png" alt="Horas de sincronización registradas para dos tipos de datos y aviso sobre datos de más de dos semanas. Este extracto no demuestra que los registros importados estén completos. Los encabezados de las columnas aún aparecen en inglés. El aviso y sus botones también se muestran actualmente en inglés."><figcaption><p>Horas de sincronización registradas para dos tipos de datos y aviso sobre datos de más de dos semanas. Este extracto no demuestra que los registros importados estén completos. Los encabezados de las columnas aún aparecen en inglés. El aviso y sus botones también se muestran actualmente en inglés.</p></figcaption></figure>
+
 ## Paso a paso
 
 1. Confirme organización, suborganización pertinente y empresa de origen del ERP.

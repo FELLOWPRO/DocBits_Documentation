@@ -1,35 +1,29 @@
-# AI Calculation for Cost Increase Surcharges
+# Obliczanie AI dla dopłat za wzrost kosztów
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-then-action-03-pl-20261023.png" alt="Działanie Obliczenia AI dla dopłat za wzrost kosztów" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
 
-## Cel:
+## Kiedy używać tej karty
 
-Karta przepływu pracy **"AI Calculation for Cost Increase Surcharges"** wykorzystuje AI do automatycznego obliczania kwot dopłat na podstawie wzrostu kosztów. Zapewnia spójne i dokładne obliczenia dopłat, usprawniając przepływy pracy i redukując ręczny wysiłek.
+Użyj tej akcji, aby zażądać skonfigurowanej kalkulacji dopłaty materiałowej i energetycznej MTZ/ETZ dla bieżącego dokumentu. Najpierw przygotuj dane dokumentu i konfigurację usługi obliczeniowej wymaganą przez Twoją organizację.
 
-## Komponenty karty:
+## Rzeczywista konfiguracja
 
-* **Cost Increase Factor**
-  * **Opis:** Mnożnik lub procent stosowany do kosztu bazowego w celu obliczenia dopłaty.
-  * **Szczegóły:** Określa kwotę dopłaty na podstawie wzrostu kosztów (np. współczynnik 1,10 dla wzrostu o 10%).
-* **Base Cost Field**
-  * **Opis:** Pole zawierające pierwotną wartość kosztu używaną jako podstawa obliczenia dopłaty.
-  * **Szczegóły:** Wybierane automatycznie lub definiowane w przepływie pracy w celu odniesienia podczas obliczeń.
-* **Surcharge Field**
-  * **Opis:** Pole, w którym przechowywana jest obliczona przez AI wartość dopłaty.
-  * **Szczegóły:** Pole to odzwierciedla obliczoną dopłatę, udostępniając ją do dalszego przetwarzania lub raportowania.
+Wyświetlana karta nie ma danych wejściowych Współczynnik wzrostu kosztu, Pole kosztu podstawowego ani Pole dopłaty. Deleguje obliczenia do skonfigurowanej usługi. Nie szukaj tych nieistniejących kontrolek kart ani nie zakładaj stałej formuły procentowej na podstawie nazwy karty.
 
-## Funkcjonalność:
+## Wynik i weryfikacja
 
-**Ocena warunku:**
+Pomyślna odpowiedź serwisu oznacza, że karta powiodła się. Przekroczenie limitu czasu lub nieudana odpowiedź powoduje błąd karty. Sprawdź rejestr karty i wynikające z niego dane dotyczące dopłaty; Samo pomyślne wywołanie usługi nie dokumentuje konkretnej kwoty.
 
-* Karta aktywuje się tylko wtedy, gdy zarówno warunki **"Where"**, jak i **"And Sections"** są prawdziwe.
-* Jeśli którykolwiek z warunków jest fałszywy, obliczenie dopłaty nie jest wykonywane.
+W trybie testowania kart połączenie jest pomijane i symulowany jest sukces. Jest to przydatne do testowania struktury przepływu pracy, ale nie stanowi dowodu na to, że usługa została wykonana ani że naliczona została jakakolwiek dopłata.
 
-**Obliczenia napędzane AI:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* System stosuje **Cost Increase Factor** do **Base Cost Field** w celu obliczenia dopłaty.
-* Wynik jest przechowywany w **Surcharge Field**, zapewniając dostępność dla kolejnych kroków przepływu pracy.
+## Praktyczny przykład
 
-## Podsumowanie:
+**Kiedy używać:** Poproś o skonfigurowaną kalkulację dopłaty materiałowej/energetycznej dla przygotowanej faktury.
 
-Karta przepływu pracy **"AI Calculation for Cost Increase Surcharges"** automatyzuje stosowanie dopłat na podstawie wzrostu kosztów. Wykorzystując AI do precyzji i spójności, karta ta eliminuje ręczne obliczenia, zwiększa efektywność i wspiera dokładne zarządzanie kosztami w zautomatyzowanych przepływach pracy.
+**Konfiguracja:** Użyj faktury syntetycznej `DEMO-001` z danymi wymaganymi przez skonfigurowaną usługę MTZ/ETZ. Dodaj tę akcję po warunkach sprawdzania poprawności dokumentu.
+
+**Oczekiwany wynik i kontrprzykład:** Pomyślna odpowiedź serwisu oznacza pomyślność karty; przekroczenie limitu czasu lub nieudana odpowiedź powoduje błąd karty. Sprawdź oddzielnie pola dokumentu i wynik obliczeń. Tryb testowania karty symuluje sukces i nie wywołuje serwisu, więc nie może udowodnić rzeczywistego wyniku dopłaty.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

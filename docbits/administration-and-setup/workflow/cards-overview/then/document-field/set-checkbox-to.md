@@ -1,6 +1,6 @@
 # Set Checkbox to
 
-<figure><img src="../../../../../.gitbook/assets/image (355).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (355).png" alt="Workflow document field card: set checkbox for a field name to a boolean value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

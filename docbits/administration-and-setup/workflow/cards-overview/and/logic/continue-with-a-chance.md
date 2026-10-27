@@ -1,6 +1,6 @@
 # Continue with a chance
 
-<figure><img src="../../../../../.gitbook/assets/image (103).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (103).png" alt="Workflow logic card: continue with a chance of a percentage value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

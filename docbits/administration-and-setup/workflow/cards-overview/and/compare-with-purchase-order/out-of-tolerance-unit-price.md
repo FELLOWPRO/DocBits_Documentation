@@ -1,6 +1,6 @@
 # Out of Tolerance Unit Price
 
-<figure><img src="../../../../../.gitbook/assets/image (348).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (348).png" alt="Workflow purchase order comparison card: out of tolerance unit prices combined with fields, operator and value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Assign Sequentially to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/image (143).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (143).png" alt="Workflow assignee card: assign the document sequentially to a procurement group with a priority value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

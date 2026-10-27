@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (45).png" alt="Workflow And card Logic: decision table has returns for document, use return data in later cards, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

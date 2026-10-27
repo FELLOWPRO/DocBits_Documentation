@@ -1,6 +1,6 @@
 # Compare Field with tolerances
 
-<figure><img src="../../../../../.gitbook/assets/image (57).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (57).png" alt="Workflow And card Document Field: compare a field with a value using tolerance amount and tolerance type, version 2" width="563"><figcaption></figcaption></figure>
 
 ## When to use this card
 

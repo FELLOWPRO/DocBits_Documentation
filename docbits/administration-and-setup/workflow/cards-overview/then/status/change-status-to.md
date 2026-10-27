@@ -1,6 +1,6 @@
 # Change Status to
 
-<figure><img src="../../../../../.gitbook/assets/image (359).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (359).png" alt="Workflow Then card Status: change status to a chosen status and trigger workflows, version 3" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

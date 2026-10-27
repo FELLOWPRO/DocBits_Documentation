@@ -1,6 +1,6 @@
 # Assign Sequentially to User/Group
 
-<figure><img src="../../../../../.gitbook/assets/image (144).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (144).png" alt="Workflow Then card Assignee: assign the document sequentially to a user or group based on a decision table, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

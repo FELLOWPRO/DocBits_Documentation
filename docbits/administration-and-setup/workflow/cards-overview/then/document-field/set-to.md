@@ -1,6 +1,6 @@
 # Set to
 
-<figure><img src="../../../../../.gitbook/assets/image (354).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (354).png" alt="Workflow Then card Document Field: set a field name to a text value, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

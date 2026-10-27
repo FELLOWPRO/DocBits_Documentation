@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/image (147).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (147).png" alt="Workflow Then card Task: assign the document and create a task or notification based on a decision table, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

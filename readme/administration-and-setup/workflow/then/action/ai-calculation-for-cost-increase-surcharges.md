@@ -2,34 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Amaç:
+## Bu kart ne zaman kullanılır
 
-**"AI Calculation for Cost Increase Surcharges"** iş akışı kartı, maliyet artışlarına göre ek ücret tutarlarını otomatik olarak hesaplamak için yapay zekayı kullanır. Tutarlı ve doğru ek ücret hesaplamaları sağlar, iş akışlarını kolaylaştırır ve manuel çabayı azaltır.
+Bu eylemi, geçerli belge için yapılandırılmış MTZ/ETZ malzeme ve enerji ek ücreti hesaplamasını talep etmek için kullanın. Önce kuruluşunuzun gerektirdiği belge verilerini ve hesaplama hizmeti yapılandırmasını hazırlayın.
 
-## Kartın Bileşenleri:
+## Gerçek yapılandırma
 
-* **Maliyet Artış Faktörü (Cost Increase Factor)**
-  * **Açıklama:** Ek ücreti hesaplamak için temel maliyete uygulanan çarpan veya yüzde.
-  * **Ayrıntı:** Maliyet artışına göre ek ücret tutarını belirler (örn. %10 artış için 1.10 faktörü).
-* **Temel Maliyet Alanı (Base Cost Field)**
-  * **Açıklama:** Ek ücret hesaplamasının temeli olarak kullanılan orijinal maliyet değerini içeren alan.
-  * **Ayrıntı:** Hesaplama sırasında referans için otomatik olarak seçilir veya iş akışı içinde tanımlanır.
-* **Ek Ücret Alanı (Surcharge Field)**
-  * **Açıklama:** Yapay zeka tarafından hesaplanan ek ücret değerinin depolandığı alan.
-  * **Ayrıntı:** Bu alan, hesaplanan ek ücreti yansıtır ve onu daha fazla işleme veya raporlama için kullanılabilir hale getirir.
+Görüntülenen kartta Cost Increase Factor, Base Cost Field veya Surcharge Field girdileri yoktur. Hesaplamayı yapılandırılmış hizmete devreder. Var olmayan bu kart denetimlerini aramayın ve kart adından sabit bir yüzde formülü varsaymayın.
 
-## İşlevsellik:
+## Sonuç ve doğrulama
 
-**Koşul Değerlendirmesi:**
+Hizmetten gelen başarılı yanıt kartı başarılı olarak işaretler. Zaman aşımı veya başarısız yanıt kart hatası üretir. Kart günlüğünü ve belgede oluşan ek ücret verilerini inceleyin; çağrının başarılı olması tek başına belirli bir tutarı belgelemez.
 
-* Kart yalnızca hem **"Where"** hem de **"And Bölümleri"** koşulları doğru olarak değerlendirilirse etkinleşir.
-* Koşullardan biri yanlış olarak değerlendirilirse, hiçbir ek ücret hesaplaması yapılmaz.
+Kart test modunda çağrı atlanır ve başarı simüle edilir. Bu, iş akışı yapısını test etmek için yararlıdır, ancak hizmetin çalıştığını veya herhangi bir ek ücretin hesaplandığını kanıtlamaz.
 
-**Yapay Zeka Odaklı Hesaplama:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* Sistem, ek ücreti hesaplamak için **Maliyet Artış Faktörü**'nü **Temel Maliyet Alanı**'na uygular.
-* Sonuç **Ek Ücret Alanı**'nda depolanır ve sonraki iş akışı adımları için erişilebilirliği sağlar.
+## Uygulamalı örnek
 
-## Sonuç:
+**Ne zaman kullanılır:** Hazırlanmış bir fatura için yapılandırılmış malzeme/enerji ek ücreti hesaplamasını talep edin.
 
-**"AI Calculation for Cost Increase Surcharges"** iş akışı kartı, maliyet artışlarına göre ek ücretlerin uygulanmasını otomatikleştirir. Hassasiyet ve tutarlılık için yapay zekadan yararlanarak, bu kart manuel hesaplamaları ortadan kaldırır, verimliliği artırır ve otomatik iş akışlarında doğru maliyet yönetimini destekler.
+**Yapılandırma:** Yapılandırılmış MTZ/ETZ hizmetinizin gerektirdiği verilere sahip `DEMO-001` sentetik faturasını kullanın. Bu eylemi belge doğrulama koşullarından sonra ekleyin.
+
+**Beklenen sonuç ve karşı örnek:** Hizmetten gelen başarılı yanıt kartı başarılı olarak işaretler; zaman aşımı veya başarısız yanıt kart hatası üretir. Belge alanlarını ve hesaplama sonucunu ayrı ayrı inceleyin. Kart test modu başarıyı simüle eder ve hizmeti çağırmaz; bu nedenle gerçek bir ek ücret sonucunu kanıtlayamaz.
+
+Bu, açıklayıcı bir yapılandırma ve beklenen sonuçtur. Test kuruluşunuzda yapılandırılmış alanları, kullanıcıları ve grupları kullanın; örneğin yürütüldüğü iddiası değildir.

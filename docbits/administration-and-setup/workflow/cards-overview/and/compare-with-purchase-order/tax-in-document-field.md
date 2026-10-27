@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/image (344).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (344).png" alt="Workflow card Compare with Purchase Order: tax in document field compared to tax in purchase order with tolerances, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

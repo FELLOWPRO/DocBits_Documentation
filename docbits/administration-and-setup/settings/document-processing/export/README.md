@@ -110,7 +110,7 @@ To create a new export:
 * **Filename Export Mode** Specifies whether the exported file retains its original filename or is renamed using the DocBits document ID.
 * **Include Document History** When enabled, the exported file will include the document history based on the logs available on the dashboard.
 
-<figure><img src="../../../../.gitbook/assets/export_sftp_2.png" alt="" width="316"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/export_sftp_2.png" alt="Dashboard row actions menu with the Document Logs entry highlighted by an arrow" width="316"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/prior-u016-en.png" alt="Unsaved advanced SFTP export options."><figcaption><p>Unsaved advanced SFTP export options.</p></figcaption></figure>
 

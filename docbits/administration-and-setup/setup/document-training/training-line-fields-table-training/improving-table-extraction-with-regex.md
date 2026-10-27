@@ -100,17 +100,17 @@ This feature allows you to define a regex for each table header, improving extra
 1. Open a document from the supplier for which you want to define a regex.
 2.  Navigate to the **Table Extraction** view.\\
 
-    <figure><img src="../../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (420).png" alt="Table extraction view with an arrow pointing to the Go to table extraction view button in the bottom toolbar"><figcaption></figcaption></figure>
 3. Enable **Training Mode**.
 4.  Select the table header you want to refine, then choose **Regex**.\\
 
-    <figure><img src="../../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (419).png" alt="Column menu of the Net Amount column with the Regex option highlighted"><figcaption></figcaption></figure>
 5.  A popup will appear where you can enter and define your regex.\\
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135020.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135020.jpg" alt="Manage regexes dialog with the pattern \d+ and the Validate button highlighted"><figcaption></figcaption></figure>
 6.  Click **Validate** to check the regex, then **Save Changes** to apply it.\\
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135153.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135153.jpg" alt="Manage regexes dialog with the pattern \d+ and the Save Changes button highlighted"><figcaption></figcaption></figure>
 7. **Save the rule and confirm** to apply the changes.
 
 ### When to Use Each Feature

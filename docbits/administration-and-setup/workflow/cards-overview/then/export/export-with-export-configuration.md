@@ -1,6 +1,6 @@
 # Export with Export Configuration
 
-<figure><img src="../../../../../.gitbook/assets/image (360).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (360).png" alt="Workflow card Export: export document with an export configuration and optionally ignore pending tasks, version 1" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

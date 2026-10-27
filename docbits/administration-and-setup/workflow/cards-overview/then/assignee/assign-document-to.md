@@ -1,6 +1,6 @@
 # Assign document to
 
-<figure><img src="../../../../../.gitbook/assets/image (379).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (379).png" alt="Workflow card Assignee: assign document to an assignee type based on decision table, version 2" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

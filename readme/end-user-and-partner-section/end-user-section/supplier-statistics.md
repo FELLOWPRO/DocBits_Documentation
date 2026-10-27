@@ -2,6 +2,8 @@
 
 Estas estatísticas ajudam a identificar desempenhos que exigem análise. O administrador deve ativar o módulo e os dados de expedição relevantes devem existir. Os indicadores dependem dos registos da organização.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-pt.png" alt="Colunas das estatísticas de fornecedores numa organização sem registos de expedições. Uma tabela vazia não comprova um bom desempenho de entrega."><figcaption><p>Colunas das estatísticas de fornecedores numa organização sem registos de expedições. Uma tabela vazia não comprova um bom desempenho de entrega.</p></figcaption></figure>
+
 ## Analisar um fornecedor
 
 1. Abra **Estatísticas de fornecedores**. Se a opção faltar, peça a verificação do módulo e acesso.

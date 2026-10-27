@@ -1178,3 +1178,6 @@ Ausnahmen: 15 (1,2%)
 **Historische Metadaten des Beispiels:**
 
 **Pattern-Version:** 1.0 **Zuletzt aktualisiert:** 23. Oktober 2025 **Schwierigkeit:** Mittel **Geschätzte Zeit:** 30–45 Minuten
+
+
+[Echte Workflow-Beispiele aus der Praxis](production-workflow-examples.md)

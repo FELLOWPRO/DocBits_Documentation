@@ -757,6 +757,7 @@
       * [Aufgabenverwaltungsmuster](administration-and-setup/workflow/patterns/task-management-pattern.md)
       * [PO-Übereinstimmungsmuster](administration-and-setup/workflow/patterns/po-matching-pattern.md)
       * [Entscheidungslogikmuster](administration-and-setup/workflow/patterns/decision-logic-pattern.md)
+      * [Echte Workflow-Beispiele aus der Praxis](administration-and-setup/workflow/patterns/production-workflow-examples.md)
       * [Datentransformationsmuster](administration-and-setup/workflow/patterns/data-transformation-pattern.md)
   * [Testverwaltung](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

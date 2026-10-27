@@ -1,6 +1,6 @@
 # Assign document to matching sub organization
 
-<figure><img src="../../../../../.gitbook/assets/image (376).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (376).png" alt="Workflow assignee card: assign the document to a matching sub organisation based on a field, with a fallback sub-org" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

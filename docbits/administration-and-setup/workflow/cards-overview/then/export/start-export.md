@@ -1,6 +1,6 @@
 # Start Export
 
-<figure><img src="../../../../../.gitbook/assets/image (361).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (361).png" alt="Workflow export card reading Start Export" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

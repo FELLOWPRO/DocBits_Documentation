@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User in Document Field
 
-<figure><img src="../../../../../.gitbook/assets/image (366).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (366).png" alt="Workflow task card: create a new task with title, description and priority and assign it to the user in a document field" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

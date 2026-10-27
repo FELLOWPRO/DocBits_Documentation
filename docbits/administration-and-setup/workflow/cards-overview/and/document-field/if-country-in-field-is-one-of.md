@@ -1,6 +1,6 @@
 # If Country in Field is One of
 
-<figure><img src="../../../../../.gitbook/assets/image (56).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (56).png" alt="Workflow document field condition card: if country in a field is one of the listed countries, continue" width="563"><figcaption></figcaption></figure>
 
 Use this condition when an additional processing step should apply to documents from selected countries, for example Germany and France. The card compares the country read from a document field with a configured country list.
 

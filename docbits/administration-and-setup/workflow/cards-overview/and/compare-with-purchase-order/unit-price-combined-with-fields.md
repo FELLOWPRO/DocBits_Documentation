@@ -1,6 +1,6 @@
 # Unit Price Combined with Fields
 
-<figure><img src="../../../../../.gitbook/assets/image (63).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (63).png" alt="Workflow purchase order comparison card: unit price combined with fields is operator and value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

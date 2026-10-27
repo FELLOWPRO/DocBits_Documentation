@@ -1,6 +1,6 @@
 # Items Have Shelf Life
 
-<figure><img src="../../../../../.gitbook/assets/image (98).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (98).png" alt="Workflow table condition card: any or all items have shelf life, with operator and value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

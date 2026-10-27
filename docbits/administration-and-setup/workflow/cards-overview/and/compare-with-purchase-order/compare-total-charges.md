@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/image (347).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (347).png" alt="Workflow purchase order comparison card: compare total charges in a field with tolerance amount, tolerance type and charge ID separator" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

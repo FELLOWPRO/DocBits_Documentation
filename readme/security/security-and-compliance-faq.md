@@ -6,6 +6,8 @@ Die Angaben zur Speicherung von Zugangsdaten und zu TLS an öffentlichen Endpunk
 
 Die Angaben zur Verschlüsselung gespeicherter Daten wurden am **16. Oktober 2026** anhand der DigitalOcean-Sicherheitsdokumentation und Dienst-Metadaten geprüft. Siehe [Verschlüsselung gespeicherter Daten](encryption-at-rest.md).
 
+Eine Übersicht zu Speicherorten, Fristen und Löschung bietet [Datenspeicherung, Aufbewahrung und Löschung](data-storage-and-retention.md).
+
 Weitere Informationen zur Sicherheit bieten [Cookies und Browserspeicher](cookies-and-browser-storage.md), [Schwachstellenmanagement](vulnerability-management.md) und [Weitere Sicherheitsmaßnahmen](other-security-controls.md).
 
 ---
@@ -179,11 +181,11 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 
 ### 15. Wie lange werden hochgeladene Dokumente / extrahierte Daten in DocBits beibehalten?
 
-**Antwort:** Kunden können die Datenspeicherung in den Einstellungen konfigurieren. Optionen: 30 Tage oder 3 Monate. Nach dem konfigurierten Zeitraum werden Dokumente und extrahierte Daten automatisch von DocBits-Servern gelöscht.
+**Antwort:** Die Aufbewahrung wird unter **Dokumentenverarbeitung → Dokumentenablauf** konfiguriert, getrennt für Dokumente und abgeschlossene Dokumente. Die [Einstellungsdokumentation](../administration-and-setup/settings/document-processing/documents-expiry.md) beschreibt Default, 48 Stunden, 1 Woche, 2 Wochen und 4 Wochen. Die frühere pauschale Angabe „30 Tage oder 3 Monate“ beschreibt diese Optionen nicht vollständig. Maßgeblich sind die tatsächlich gewählten Werte und der wirksame Systemstandard Ihrer Organisation.
 
-**Status:** ✅ Bestätigt
+**Status:** ✅ Teilweise bestätigt
 
-**Notizen:** Kundenkonfigurierbare Aufbewahrung (30 Tage / 3 Monate). Bestätigen Sie: Umfasst die Löschung alle Kopien (DigitalOcean Spaces, OpenSearch, KI-Trainingsdaten)?
+**Notizen:** Systemstandard, Fristbeginn, Bereinigungsrhythmus und Löschumfang einschließlich Dateispeicher, Suchindizes, abgeleiteter Daten und Backups müssen für die Bereitstellung bestätigt werden. Siehe [Datenspeicherung, Aufbewahrung und Löschung](data-storage-and-retention.md).
 
 ---
 

@@ -623,6 +623,7 @@
     * [PO-vergelijkingen: richting, tolerantie en kaartversies](administration-and-setup/workflow/cards-overview/po-comparison-versions-guide.md)
     * [Citeer vergelijkingskaarten](administration-and-setup/workflow/cards-overview/quote-comparison-guide.md)
     * [Kaartversies en beschikbaarheid](administration-and-setup/workflow/cards-overview/card-versions-guide.md)
+    * [Partnerkaarten: eigen uitbreidingen](administration-and-setup/workflow/cards-overview/partner-cards.md)
     * [Als](administration-and-setup/workflow/when/README.md)
       * [Kaartbeschrijving](administration-and-setup/workflow/when/card-description.md)
       * [Documenttypebewerking](administration-and-setup/workflow/when/page.md)

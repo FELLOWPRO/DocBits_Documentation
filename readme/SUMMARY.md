@@ -748,6 +748,7 @@
       * [Padrão de gerenciamento de tarefas](administration-and-setup/workflow/patterns/task-management-pattern.md)
       * [Padrão de correspondência PO](administration-and-setup/workflow/patterns/po-matching-pattern.md)
       * [Padrão Lógico de Decisão](administration-and-setup/workflow/patterns/decision-logic-pattern.md)
+      * [Exemplos reais de workflows na prática](administration-and-setup/workflow/patterns/production-workflow-examples.md)
       * [Padrão de transformação de dados](administration-and-setup/workflow/patterns/data-transformation-pattern.md)
   * [Gestão de testes](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

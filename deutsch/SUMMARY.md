@@ -628,6 +628,7 @@
     * [PO-Vergleiche: Richtung, Toleranz und Kartenversionen](administration-and-setup/workflow/cards-overview/po-comparison-versions-guide.md)
     * [Angebotsvergleichskarten](administration-and-setup/workflow/cards-overview/quote-comparison-guide.md)
     * [Kartenversionen und Verfügbarkeit](administration-and-setup/workflow/cards-overview/card-versions-guide.md)
+    * [Partnerkarten: eigene Erweiterungen](administration-and-setup/workflow/cards-overview/partner-cards.md)
     * [Wenn](administration-and-setup/workflow/when/README.md)
       * [Kartenbeschreibung](administration-and-setup/workflow/when/card-description.md)
       * [Dokumenttyp als Auslöser prüfen](administration-and-setup/workflow/when/page.md)

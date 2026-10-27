@@ -2,7 +2,13 @@
 
 La vue des devis concerne les documents configurés pour ce traitement. Type, présentation, droits et workflow déterminent les champs et actions proposés. Elle est distincte du rapprochement des commandes.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-fr.png" alt="En-tête d’un devis fictif français de trois pages dans DocBits : fournisseur, référence, date, devise et total. Cet extrait montre les six premiers champs."><figcaption><p>En-tête d’un devis fictif français de trois pages dans DocBits : fournisseur, référence, date, devise et total. Cet extrait montre les six premiers champs.</p></figcaption></figure>
+
+[Télécharger le devis fictif de trois pages (PDF)](../../.gitbook/assets/docbits-training-quote-fr-20261027.pdf)
+
 ## Examiner et corriger
+
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-line-editor-fr.png" alt="Description et prix unitaire de la première ligne sélectionnée. Aucune valeur n’a été modifiée ni enregistrée."><figcaption><p>Description et prix unitaire de la première ligne sélectionnée. Aucune valeur n’a été modifiée ni enregistrée.</p></figcaption></figure>
 
 1. Ouvrez le bon devis. Comparez fournisseur, référence, date et devise à l'original.
 2. Vérifiez articles, descriptions, quantités, unités, prix et montants. Un identifiant article identique ne prouve pas un prix ou une unité identique.

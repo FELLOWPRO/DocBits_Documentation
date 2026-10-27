@@ -2,6 +2,8 @@
 
 Potrzebujesz aktywnej subskrypcji AI Workforce, uprawnień do połączeń i dostępu do właściwej dzierżawy Teams lub serwera Discord. Najpierw uzgodnij z administratorem wyświetlone wymagania subskrypcji.
 
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-chat-integrations-menu-pl.png" alt="W sekcji Integracje przycisk + otwiera opcje połączenia z Teams, dodania własnego bota lub połączenia z Discord. Nazwa istniejącego połączenia jest ukryta. W obecnym interfejsie opcja Microsoft Teams jest błędnie przetłumaczona jako „Połącz zespoły”."><figcaption><p>W sekcji Integracje przycisk + otwiera opcje połączenia z Teams, dodania własnego bota lub połączenia z Discord. Nazwa istniejącego połączenia jest ukryta. W obecnym interfejsie opcja Microsoft Teams jest błędnie przetłumaczona jako „Połącz zespoły”.</p></figcaption></figure>
+
 ## Microsoft Teams
 
 1. Otwórz **AI Workforce → Ustawienia → Integracje**.
@@ -14,6 +16,8 @@ Potrzebujesz aktywnej subskrypcji AI Workforce, uprawnień do połączeń i dost
 Dla bota firmowego wybierz opcję niestandardową i wpisz nazwę, ID dzierżawy, ID aplikacji oraz jej sekret. Sekrety przechowuj w formularzu poświadczeń, poza promptami i zrzutami.
 
 ## Discord
+
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-discord-connect-form-pl.png" alt="Formularz połączenia z Discord przed wysłaniem. Identyfikator serwera wskazuje serwer Discord (Guild ID); nie utworzono żadnego połączenia."><figcaption><p>Formularz połączenia z Discord przed wysłaniem. Identyfikator serwera wskazuje serwer Discord (Guild ID); nie utworzono żadnego połączenia.</p></figcaption></figure>
 
 1. W **Integracje → +** wybierz Discord.
 2. Jeśli jest taka opcja, dodaj bota do właściwego serwera z uprawnionym administratorem.

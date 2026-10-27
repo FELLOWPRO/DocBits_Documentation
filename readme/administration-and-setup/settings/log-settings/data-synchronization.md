@@ -2,6 +2,8 @@
 
 Ten widok pomaga, gdy brakuje dostawcy, zamówienia lub innych danych podstawowych. Pokazuje zarejestrowany czas synchronizacji każdego typu w bieżącej organizacji, nie zawartość wszystkich importowanych rekordów.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-pl.png" alt="Zapisane czasy synchronizacji dwóch typów danych i ostrzeżenie o danych starszych niż dwa tygodnie. Ten fragment nie potwierdza kompletności zaimportowanych danych. Nagłówki kolumn są nadal wyświetlane po angielsku. Ostrzeżenie i jego przyciski również są obecnie wyświetlane po angielsku."><figcaption><p>Zapisane czasy synchronizacji dwóch typów danych i ostrzeżenie o danych starszych niż dwa tygodnie. Ten fragment nie potwierdza kompletności zaimportowanych danych. Nagłówki kolumn są nadal wyświetlane po angielsku. Ostrzeżenie i jego przyciski również są obecnie wyświetlane po angielsku.</p></figcaption></figure>
+
 ## Kolejne kroki
 
 1. Potwierdź organizację, właściwą podorganizację i firmę źródłową ERP.

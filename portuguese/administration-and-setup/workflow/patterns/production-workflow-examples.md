@@ -86,3 +86,6 @@ Uma fatura só deve ser atribuída através de uma tabela de decisão quando a o
 ## Do exemplo à sua própria configuração
 
 Defina os campos, grupos e tabelas de decisão adequados na sua própria organização. Não interprete as designações neutras como campos já existentes no produto. Teste cada condição, tanto nos casos positivos como nos negativos, e os erros das ações num ambiente de teste adequado. Verifique as aprovações e as exportações pelos resultados efetivos; só ative um workflow após a validação funcional.
+
+
+[Exemplos avançados de workflows em produção](advanced-production-workflow-examples.md)

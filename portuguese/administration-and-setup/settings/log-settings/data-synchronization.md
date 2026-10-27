@@ -2,6 +2,8 @@
 
 Utilize esta vista quando faltar um fornecedor, uma encomenda ou outro dado mestre. Mostra a hora de sincronização registada por tipo na organização atual, não o conteúdo de todos os registos importados.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-pt.png" alt="Horas de sincronização registadas para dois tipos de dados e aviso de dados com mais de duas semanas. Este excerto não comprova a integridade dos dados importados. Os cabeçalhos das colunas continuam em inglês. O aviso e os respetivos botões também são atualmente apresentados em inglês."><figcaption><p>Horas de sincronização registadas para dois tipos de dados e aviso de dados com mais de duas semanas. Este excerto não comprova a integridade dos dados importados. Os cabeçalhos das colunas continuam em inglês. O aviso e os respetivos botões também são atualmente apresentados em inglês.</p></figcaption></figure>
+
 ## Passo a passo
 
 1. Confirme organização, suborganização relevante e empresa de origem do ERP.

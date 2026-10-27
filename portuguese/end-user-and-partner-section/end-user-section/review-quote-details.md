@@ -2,7 +2,15 @@
 
 A vista de propostas aplica-se a documentos configurados para esse processo. Tipo, esquema, permissões e fluxo determinam os campos e ações. É distinta da correspondência de encomendas.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-pt.png" alt="Cabeçalho de um orçamento fictício português de três páginas no DocBits: fornecedor, referência, data, moeda e total. O recorte mostra os primeiros seis campos."><figcaption><p>Cabeçalho de um orçamento fictício português de três páginas no DocBits: fornecedor, referência, data, moeda e total. O recorte mostra os primeiros seis campos.</p></figcaption></figure>
+
+Descarregar o orçamento fictício de três páginas (PDF)
+
+{% file src="../../.gitbook/assets/docbits-training-quote-pt-20261027.pdf" %}
+
 ## Analisar e corrigir
+
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-line-editor-pt.png" alt="Descrição e preço unitário da primeira linha selecionada. Nenhum valor foi alterado ou guardado."><figcaption><p>Descrição e preço unitário da primeira linha selecionada. Nenhum valor foi alterado ou guardado.</p></figcaption></figure>
 
 1. Abra a proposta correta. Compare fornecedor, referência, data e moeda com o original.
 2. Verifique artigos, descrições, quantidades, unidades, preços e montantes. Um artigo coincidente não comprova preço ou unidade coincidentes.

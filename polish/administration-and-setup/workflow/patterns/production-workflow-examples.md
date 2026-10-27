@@ -86,3 +86,6 @@ Faktura ma zostać przypisana za pomocą tabeli decyzyjnej dopiero wtedy, gdy or
 ## Od przykładu do własnej konfiguracji
 
 Określ odpowiednie pola, grupy i tabele decyzyjne we własnej organizacji. Nie traktuj neutralnych nazw jako istniejących pól produktu. W odpowiednim środowisku testowym sprawdź przypadki spełnienia i niespełnienia każdego warunku oraz błędy działań. Weryfikuj zatwierdzenia i eksporty na podstawie ich rzeczywistych wyników; włącz przepływ pracy dopiero po odbiorze merytorycznym.
+
+
+[Przykłady workflow Advanced ze środowiska produkcyjnego](advanced-production-workflow-examples.md)

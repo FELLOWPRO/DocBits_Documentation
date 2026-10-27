@@ -2,6 +2,8 @@
 
 Statystyki pomagają wskazać dostawy wymagające analizy. Administrator musi włączyć moduł, a odpowiednie dane wysyłek muszą być dostępne. Wskaźniki zależą od rekordów organizacji.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-pl.png" alt="Kolumny statystyk dostawców w organizacji bez danych o wysyłkach. Pusta tabela nie potwierdza dobrej terminowości dostaw."><figcaption><p>Kolumny statystyk dostawców w organizacji bez danych o wysyłkach. Pusta tabela nie potwierdza dobrej terminowości dostaw.</p></figcaption></figure>
+
 ## Ocena dostawcy
 
 1. Otwórz **Statystyki dostawców**. Jeśli brak tej opcji, poproś o kontrolę modułu i dostępu.

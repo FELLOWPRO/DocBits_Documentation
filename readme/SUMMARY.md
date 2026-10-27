@@ -107,6 +107,7 @@
       * [OAuth Office365](end-user-and-partner-section/end-user-section/how-to-import-documents/email/oauth-office365.md)
   * [Error](end-user-and-partner-section/end-user-section/error-page.md)
   * [Technical Support in DocBits](end-user-and-partner-section/end-user-section/technical-support-in-docbits/README.md)
+    * [Support page](end-user-and-partner-section/end-user-section/technical-support-in-docbits/support-page.md)
     * [Create a ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Help Icons](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
     * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)

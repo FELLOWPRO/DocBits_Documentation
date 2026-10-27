@@ -1,6 +1,6 @@
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (353).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (353).png" alt="Workflow card Compare with Purchase Order: Any/All order type of purchase order with Operator and Order Type, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

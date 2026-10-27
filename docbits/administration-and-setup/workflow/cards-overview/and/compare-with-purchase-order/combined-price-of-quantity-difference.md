@@ -1,8 +1,8 @@
 # Combined Price of Quantity Difference
 
-<figure><img src="../../../../../.gitbook/assets/image (59).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (59).png" alt="Workflow card Compare with Purchase Order: Combined price of quantity difference with Operator and Value, version 3" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (62).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62).png" alt="Workflow card Compare with Purchase Order: Combined price of quantity difference with Operator, Value and Comparison Data, version 4" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**:
 

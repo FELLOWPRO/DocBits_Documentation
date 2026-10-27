@@ -14,13 +14,13 @@ To activate this feature:
     \
 
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-Setting.jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-Setting.jpg" alt="PO Shipment Order setting with the toggle switched on" width="563"><figcaption></figcaption></figure></div>
 
 ## **Where It Appears**
 
 Once enabled, the PO Shipment Order section becomes visible in the Purchase Order Matching interface.
 
-<figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt="PO Shipment Order table with shipped, invoiced and open quantity, a 76 percent progress bar and the delivery date"><figcaption></figcaption></figure>
 
 ### **PO Shipment Order – Field Descriptions**
 

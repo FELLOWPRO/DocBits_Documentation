@@ -1,6 +1,6 @@
 # Document Type
 
-<figure><img src="../../../../../.gitbook/assets/image (58).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58).png" alt="Workflow card Document: Document type with Operator and Type, version 2" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

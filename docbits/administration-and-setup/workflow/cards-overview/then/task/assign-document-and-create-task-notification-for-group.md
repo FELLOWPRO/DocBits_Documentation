@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for Group
 
-<figure><img src="../../../../../.gitbook/assets/image (145).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (145).png" alt="Workflow card Task: assign the document and create a task or notification for groups with title, description and priority, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

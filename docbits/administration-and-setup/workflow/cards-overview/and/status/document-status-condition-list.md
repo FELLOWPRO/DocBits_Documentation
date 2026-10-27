@@ -1,6 +1,6 @@
 # Document Status Condition List
 
-<figure><img src="../../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605.png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605.png" alt="Workflow card Status: Document status with Operator in Status" width="521"><figcaption></figcaption></figure>
 
 **Purpose**
 

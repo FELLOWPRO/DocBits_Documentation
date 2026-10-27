@@ -1,6 +1,6 @@
 # Run Workflow
 
-<figure><img src="../../../../../.gitbook/assets/image (380).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (380).png" alt="Workflow card Action: Run workflow with a Workflow parameter, version 2" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

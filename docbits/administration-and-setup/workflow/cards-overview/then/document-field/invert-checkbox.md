@@ -1,6 +1,6 @@
 # Invert Checkbox
 
-<figure><img src="../../../../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (356).png" alt="Workflow card Document Field: Invert checkbox with a Field Name parameter, version 2"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

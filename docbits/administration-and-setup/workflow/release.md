@@ -6,7 +6,7 @@ hidden: true
 
 ## Version Control Principles
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 13.41.53.png" alt=""><figcaption><p>Workflow Version Control System</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 13.41.53.png" alt="Workflow editor with the card version dropdown open showing versions 1 and 2 on a Document type card"><figcaption><p>Workflow Version Control System</p></figcaption></figure>
 
 ### Version 8.5.2024 - Core Versioning Features
 

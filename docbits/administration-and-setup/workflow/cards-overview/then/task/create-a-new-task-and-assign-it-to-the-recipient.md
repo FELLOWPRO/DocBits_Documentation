@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../../.gitbook/assets/image (364).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (364).png" alt="Workflow card Task: create a task with title, description, priority and recipient, optionally notify by email, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

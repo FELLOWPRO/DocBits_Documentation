@@ -2,7 +2,15 @@
 
 De offerteweergave geldt voor documenten die daarvoor zijn geconfigureerd. Type, indeling, rechten en workflow bepalen velden en acties. Deze weergave staat los van inkoopordermatching.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-nl.png" alt="Kop van een fictieve Nederlandse offerte van drie pagina’s in DocBits: leverancier, referentie, datum, valuta en totaal. De uitsnede toont de eerste zes velden."><figcaption><p>Kop van een fictieve Nederlandse offerte van drie pagina’s in DocBits: leverancier, referentie, datum, valuta en totaal. De uitsnede toont de eerste zes velden.</p></figcaption></figure>
+
+Download de fictieve offerte van drie pagina’s (PDF)
+
+{% file src="../../.gitbook/assets/docbits-training-quote-nl-20261027.pdf" %}
+
 ## Regels beoordelen en corrigeren
+
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-line-editor-nl.png" alt="Omschrijving en eenheidsprijs van de geselecteerde eerste regel. Er zijn geen waarden gewijzigd of opgeslagen."><figcaption><p>Omschrijving en eenheidsprijs van de geselecteerde eerste regel. Er zijn geen waarden gewijzigd of opgeslagen.</p></figcaption></figure>
 
 1. Open de juiste offerte. Vergelijk leverancier, referentie, datum en valuta met het origineel.
 2. Controleer artikelen, omschrijvingen, aantallen, eenheden, prijzen en bedragen. Een gelijk artikelnummer bewijst geen gelijke prijs of eenheid.

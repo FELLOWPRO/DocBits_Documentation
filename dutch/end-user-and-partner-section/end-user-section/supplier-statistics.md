@@ -2,6 +2,8 @@
 
 Gebruik deze statistieken om leverprestaties te onderzoeken. De beheerder moet de module inschakelen en relevante verzendgegevens moeten beschikbaar zijn. De cijfers hangen af van de gegevens van uw organisatie.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-nl.png" alt="Kolommen van de leveranciersstatistieken in een organisatie zonder verzendgegevens. Een lege tabel bewijst geen goede leveringsprestaties."><figcaption><p>Kolommen van de leveranciersstatistieken in een organisatie zonder verzendgegevens. Een lege tabel bewijst geen goede leveringsprestaties.</p></figcaption></figure>
+
 ## Een leverancier beoordelen
 
 1. Open **Leveranciersstatistieken**. Laat bij een ontbrekende optie module en toegang controleren.

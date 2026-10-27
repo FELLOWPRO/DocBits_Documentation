@@ -37,15 +37,15 @@ Removing Field:
 
 * Available M3 fields can be checked by opening appropriate screen in M3.
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt="M3 supplier invoice batch screen showing batch status and detailed information fields such as supplier invoice number, supplier and PO number"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt="M3 Field Information dialog for field WEEORN showing table FAPIBH, field E5EORN, type String and max length 30"><figcaption></figcaption></figure>
 
 * Similarly you can get field names for lines
 
 ### Header:
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt="Mapping file excerpt with the Header Static Fields section listing StaticFields and SF_ entries such as SF_DIVI=PJA and SF_TEPY=J30"><figcaption></figcaption></figure>
 
 Fields List Property: StaticFields
 

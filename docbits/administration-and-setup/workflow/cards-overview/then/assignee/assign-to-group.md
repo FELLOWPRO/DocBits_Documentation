@@ -1,6 +1,6 @@
 # Assign to group
 
-<figure><img src="../../../../../.gitbook/assets/image (377).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (377).png" alt="Workflow Assignee card reading Assign to group with a Groups placeholder" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

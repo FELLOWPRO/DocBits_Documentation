@@ -1,6 +1,6 @@
 # Quoted Item Price
 
-<figure><img src="../../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (46).png" alt="Workflow Logic card reading Quoted item price Equals contracted price" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Compare In
 
-<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="Workflow Table card comparing two columns of a table with an operator and a dependency column matching a Python regex pattern" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

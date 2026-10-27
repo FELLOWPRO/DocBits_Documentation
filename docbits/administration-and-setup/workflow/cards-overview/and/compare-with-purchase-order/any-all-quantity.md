@@ -1,8 +1,8 @@
 # Any / All Quantity
 
-<figure><img src="../../../../../.gitbook/assets/image (345).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (345).png" alt="Compare with Purchase Order card, version 3, with Any/All, Operator, Tolerance Amount and Tolerance Type placeholders" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (346).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (346).png" alt="Compare with Purchase Order card, version 4, with the same placeholders plus a Comparison Data placeholder" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

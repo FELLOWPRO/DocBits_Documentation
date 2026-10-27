@@ -1,6 +1,6 @@
 # Change Entries with
 
-<figure><img src="../../../../../.gitbook/assets/image (369).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (369).png" alt="Workflow Table card with placeholders for table name, column name, math operator and value" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Document Type One of
 
-<figure><img src="../../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (88).png" alt="Workflow When card version 2 reading Document type, Operator placeholder, one of, Type placeholder"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

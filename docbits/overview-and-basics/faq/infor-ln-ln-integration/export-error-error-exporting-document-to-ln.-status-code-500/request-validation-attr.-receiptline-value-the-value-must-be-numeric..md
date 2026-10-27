@@ -49,7 +49,7 @@ If the **Purchase Order** appears correct and contains the necessary details, yo
 
 It should look like the following:
 
-<figure><img src="../../../../.gitbook/assets/image (117).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (117).png" alt="Mapping file excerpt with InvoiceReceiptFields and IRF_ entries, with the ReceiptLine field mapped to TF_delivery_line highlighted" width="563"><figcaption></figcaption></figure>
 
 ## **Step 4: Add the Updated File Back to DocBits**
 

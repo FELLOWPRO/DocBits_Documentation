@@ -1146,3 +1146,6 @@ IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" 
 ***
 
 **模式版本：**1.0 **最后更新：**2025 年 10 月 23 日 **难度：**中等 **预计时间：**30-45 分钟
+
+
+[来自实际生产环境的工作流示例](production-workflow-examples.md)

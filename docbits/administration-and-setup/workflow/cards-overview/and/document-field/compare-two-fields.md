@@ -1,6 +1,6 @@
 # Compare two Fields
 
-<figure><img src="../../../../../.gitbook/assets/image (53).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (53).png" alt="Workflow Document Field card reading Compare two fields with two field name placeholders and an operator" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

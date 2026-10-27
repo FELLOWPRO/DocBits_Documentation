@@ -1,6 +1,6 @@
 # Order Data in Order Confirmation
 
-<figure><img src="../../../../../.gitbook/assets/image (341).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (341).png" alt="Compare with Purchase Order card comparing order data in an order confirmation, with operator, text, field name and result placeholders" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

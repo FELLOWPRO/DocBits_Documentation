@@ -1,6 +1,6 @@
 # Create a New Task and assign it to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/image (368).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (368).png" alt="Workflow Task card with placeholders for title, description, priority, procurement group name and send email" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

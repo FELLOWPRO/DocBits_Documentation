@@ -18,7 +18,7 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
 * Select **PostgreSQL Unicode(x64)** driver from the list and click **Finish**.
 * Fill in the required fields with credentials from:\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
-<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt="DocBits Database Access settings with DB Access enabled, credential fields for username, password, database, host and port, and a list of available tables"><figcaption></figcaption></figure>
 
 **Required Fields:**
 
@@ -38,7 +38,7 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
     <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI Get Data ODBC"><figcaption></figcaption></figure>
 * From the DSN list, select your configured source (e.g., `Sandbox-Read_Only`).
 
-<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt="Power BI From ODBC dialog with the data source name Sandbox-Read_Only selected and the OK button"><figcaption></figcaption></figure>
 
 * Click **OK**. Enter credentials again if prompted.
   * If `password authentication failed for user` appears, verify the host, database, username and password. Enter the actual password in the credential dialog. Curly-brace escaping in an ODBC connection string is driver syntax; it is not a general fix for failed authentication.
@@ -49,9 +49,9 @@ This guide walks you through connecting **DocBits’ Read-Only Database to Power
 * Open the **`public`** schema.
 * Select the tables you want to import.
 
-![](../../.gitbook/assets/connect_read_only_1.png)
+![Power BI Navigator listing the public schema tables of the sandbox-doc2api database with no items selected for preview](../../.gitbook/assets/connect_read_only_1.png)
 
-![](../../.gitbook/assets/connect_read_only_2.png)
+![Power BI Navigator with the task table checked and its data previewed, with Load and Transform Data buttons](../../.gitbook/assets/connect_read_only_2.png)
 
 * Choose:
   * **Load** → Import directly into Power BI

@@ -86,3 +86,6 @@ Una fattura deve essere assegnata tramite una tabella decisionale solo quando or
 ## Dall’esempio alla propria configurazione
 
 Definisci i campi, i gruppi e le tabelle decisionali appropriati nella tua organizzazione. Non considerare le denominazioni neutre come campi già presenti nel prodotto. Verifica ogni caso positivo e negativo delle condizioni, oltre agli errori delle azioni, in un ambiente di test adeguato. Verifica approvazioni ed esportazioni in base ai loro risultati effettivi; attiva un workflow solo dopo la validazione funzionale.
+
+
+[Esempi di workflow Advanced di produzione](advanced-production-workflow-examples.md)

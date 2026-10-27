@@ -144,3 +144,5 @@ Cada agente — de sistema ou personalizado — tem um menu de configurações c
 ### Criando agentes personalizados
 
 Além dos padrões, você pode criar seus próprios **orquestradores** e **especialistas** para se adequar aos seus processos. Abra **Agentes → Criar agente** para iniciar o assistente, que percorre a mesma configuração descrita acima: escolha o **papel** (Orquestrador ou Especialista), dê ao agente um **nome** e uma **descrição** clara (um orquestrador é escolhido a partir desse texto, e um orquestrador escolhe seus especialistas a partir dos deles), escreva seu prompt, escolha suas habilidades, defina seu esforço de raciocínio e — para orquestradores — escolha os especialistas em seu agent pool. Os agentes personalizados podem ser totalmente editados ou excluídos a qualquer momento.
+
+Guias detalhados: [Ligar Teams e Discord](../ai-workforce-chat-connections.md) · [Verificar a memória do agente](../ai-workforce-agent-memory.md).

@@ -57,6 +57,10 @@ Bestanden ist die Übung, wenn die gespeicherten Rechnungswerte dem PDF entsprec
 
 ## Screenshots und Video
 
+<figure><img src="../.gitbook/assets/academy-ln-invoice-saved-de-v1.png" alt="Die echte Academy-Rechnung IT-2026-1042 in der deutschen Feldvalidierung mit 1.000 Euro netto, 190 Euro Steuer und 1.190 Euro brutto"><figcaption><p>Eigener Übungsbeleg auf Sandbox, VESTA, Oberfläche 11.7.3, geprüft am 27.10.2026. Die korrigierten Werte wurden gespeichert und nach erneutem Laden bestätigt. Der Organisationsname ist ausgeblendet. Die Lieferanten-ID fehlt noch; eine vollständige Validierung oder ERP-Übernahme ist damit nicht belegt. Invoice und Cost Invoice sind die hier konfigurierten Typwerte.</p></figcaption></figure>
+
+Die folgenden Medien ergänzen die Kontierung. Sie verwenden einen anderen Schulungsfall:
+
 <figure><img src="../.gitbook/assets/customer-totals-de-accounting-email-v2.png" alt="Bestehender Schulungsfall mit 1.000 EUR und zwei Kostenstellen"><figcaption><p>Vorhandener Kontierungsfall über 1.000 EUR ohne Steuer. Er veranschaulicht die Aufteilung, zeigt aber nicht die neue steuerpflichtige Rechnung IT-2026-1042.</p></figcaption></figure>
 
 Kurzanleitung zur Bedienung der Kontierung. Der Film verwendet den bestehenden steuerfreien Fall mit zwei Kostenstellen.
@@ -69,4 +73,4 @@ Kurzanleitung zur Bedienung der Kontierung. Der Film verwendet den bestehenden s
 
 [Manueller Import](../end-user-and-partner-section/end-user-section/how-to-import-documents/manual-import.md) · [Felder validieren](../end-user-and-partner-section/end-user-section/validation-screen/README.md) · [Kostenrechnung kontieren](../end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md) · [Exportfehler klären](erp-export-fehler.md)
 
-**Stand:** 27.10.2026 · **Übungsversion:** 1.0. Die Medien zeigen die jeweils beschriebenen bestehenden Schulungsfälle. Die neuen Übungsbelege sind synthetisch. Ein erfolgreicher Lauf mit diesen Belegen und Ihrer ERP-Konfiguration muss anhand der Prüfkriterien bestätigt werden. [Voraussetzungen und Übungspaket](vorbereitung.md) · [Abnahme](qualitaet-und-abnahme.md) · [Academy](README.md)
+**Stand:** 27.10.2026 · **Übungsversion:** 1.0. Import, Kopfdaten, Eingabekorrektur, Speicherung und Werte nach erneutem Laden wurden mit diesem synthetischen Beleg auf Sandbox/VESTA 11.7.3 geprüft. Kontierung, Freigabe, ERP-Übernahme und selbständige Key-User-Abnahme sind noch offen. [Voraussetzungen und Übungspaket](vorbereitung.md) · [Abnahme](qualitaet-und-abnahme.md) · [Academy](README.md)

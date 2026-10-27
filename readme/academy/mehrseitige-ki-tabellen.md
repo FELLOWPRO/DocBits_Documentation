@@ -57,6 +57,10 @@ Alle 30 Positionen sind in richtiger Reihenfolge vorhanden. Die Langtexte gehör
 
 ## Screenshots und Video
 
+<figure><img src="../.gitbook/assets/academy-m3-three-pages-de-v1.png" alt="Die echte dreiseitige Academy-Rechnung mit erkanntem Bestellbezug und 3.005 Euro netto sowie 3.575,95 Euro brutto"><figcaption><p>Eigener Übungsbeleg auf Sandbox/VESTA 11.7.3, geprüft am 27.10.2026. Drei Seiten, Bestellbezug und Kopfsummen wurden erkannt. Rechts ist die Originalrechnung zu sehen. Die KI-Tabellenansicht war in dieser Testorganisation ausgeschaltet; diese Aufnahme belegt daher keine geprüfte Positionstabelle im Editor. Der Organisationskontext ist ausgeblendet.</p></figcaption></figure>
+
+Die strukturierte Extraktion enthielt in diesem Lauf alle 30 Positionen mit den richtigen Artikelnummern, Mengen, Einzelpreisen und Nettobeträgen. Die zusätzlichen Langtextzeilen an Position 10, 11, 20 und 21 fehlten jedoch in den Beschreibungen dieses Zwischenergebnisses. Prüfen Sie diese Texte nach eingerichteter KI-Tabellenansicht ausdrücklich gegen das Original. Der vollständige Tabellenfall ist damit noch nicht abgenommen.
+
 <figure><img src="../.gitbook/assets/ai-table-map-column-de.png" alt="Vorhandenes deutsches Menü zur Zuordnung einer KI-Tabellenspalte"><figcaption><p>Bestehende echte Oberfläche zur Spaltenzuordnung. Das Bild zeigt nicht die neue Rechnung mit 30 Positionen.</p></figcaption></figure>
 
 Kurze Bedienungsanleitung zum Korrigieren und Testen einer Tabellenspalte. Der Film verwendet einen bestehenden Schulungsfall.
@@ -69,4 +73,4 @@ Kurze Bedienungsanleitung zum Korrigieren und Testen einer Tabellenspalte. Der F
 
 [KI-Tabelle vollständig erklärt](../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Drei Abweichungen erkennen](dreissig-positionen-abgleichen.md) · [Zehn Tabellenübungen](ki-tabellen.md)
 
-**Stand:** 27.10.2026 · **Übungsversion:** 1.0. Die Medien zeigen die jeweils beschriebenen bestehenden Schulungsfälle. Die neuen Übungsbelege sind synthetisch. Ein erfolgreicher Lauf mit diesen Belegen und Ihrer ERP-Konfiguration muss anhand der Prüfkriterien bestätigt werden. [Voraussetzungen und Übungspaket](vorbereitung.md) · [Abnahme](qualitaet-und-abnahme.md) · [Academy](README.md)
+**Stand:** 27.10.2026 · **Übungsversion:** 1.0. Drei Seiten, Kopfdaten und die 30 numerischen Positionsergebnisse wurden mit dem neuen Beleg geprüft. Vollständige Langtexte, die Positionstabelle im Editor, PO-Abgleich, ERP-Ergebnis und selbständige Key-User-Abnahme sind noch offen. [Voraussetzungen und Übungspaket](vorbereitung.md) · [Abnahme](qualitaet-und-abnahme.md) · [Academy](README.md)

@@ -2,6 +2,8 @@
 
 U hebt een actief AI Workforce-abonnement, verbindingsbeheerrechten en toegang tot de bedoelde Teams-tenant of Discord-server nodig. Los een getoonde abonnementseis eerst met de beheerder op.
 
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-chat-integrations-menu-nl.png" alt="Onder Integraties opent + de opties om Teams te verbinden, een eigen bot toe te voegen of Discord te verbinden. De naam van de bestaande verbinding is verborgen."><figcaption><p>Onder Integraties opent + de opties om Teams te verbinden, een eigen bot toe te voegen of Discord te verbinden. De naam van de bestaande verbinding is verborgen.</p></figcaption></figure>
+
 ## Microsoft Teams
 
 1. Open **AI Workforce → Instellingen → Integraties**.
@@ -14,6 +16,8 @@ U hebt een actief AI Workforce-abonnement, verbindingsbeheerrechten en toegang t
 Kies voor een eigen bedrijfsbot de aangepaste optie en voer naam, tenant-ID, app-ID en app-geheim in. Geheimen horen uitsluitend in het inloggegevensformulier, buiten prompts en screenshots.
 
 ## Discord
+
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-discord-connect-form-nl.png" alt="Discord-verbindingsformulier vóór verzending. De server-ID identificeert de Discord-server (Guild ID); er is geen verbinding aangemaakt."><figcaption><p>Discord-verbindingsformulier vóór verzending. De server-ID identificeert de Discord-server (Guild ID); er is geen verbinding aangemaakt.</p></figcaption></figure>
 
 1. Kies onder **Integraties → +** de Discord-verbinding.
 2. Voeg de bot indien aangeboden met een bevoegde beheerder aan de juiste server toe.

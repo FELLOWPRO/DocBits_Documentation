@@ -2,6 +2,8 @@
 
 Mit den Lieferantenstatistiken erkennen Sie auffällige Lieferleistungen. Der Administrator muss das Modul aktivieren; passende Versanddaten müssen vorliegen. Die Kennzahlen hängen von den Daten Ihrer Organisation ab.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-de.png" alt="Spalten der Lieferantenstatistik in einer Organisation ohne Lieferdatensätze. Eine leere Tabelle belegt keine gute Lieferleistung."><figcaption><p>Spalten der Lieferantenstatistik in einer Organisation ohne Lieferdatensätze. Eine leere Tabelle belegt keine gute Lieferleistung.</p></figcaption></figure>
+
 ## Einen Lieferanten prüfen
 
 1. Öffnen Sie **Lieferantenstatistiken**. Fehlt der Eintrag, lassen Sie Modul und Zugriff prüfen.

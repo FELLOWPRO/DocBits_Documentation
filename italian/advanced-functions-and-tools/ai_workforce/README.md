@@ -144,3 +144,5 @@ Ogni agente — di sistema o personalizzato — dispone di un menu di impostazio
 ### Creazione di agenti personalizzati
 
 Oltre a quelli predefiniti, puoi creare i tuoi **Orchestratori** e **Specialisti** per adattarli ai tuoi processi. Apri **Agenti → Crea agente** per avviare la procedura guidata, che ripercorre la stessa configurazione descritta sopra: scegli il **ruolo** (Orchestratore o Specialista), assegna all'agente un **nome** e una chiara **descrizione** (un Orchestratore viene scelto in base a questo testo, e un Orchestratore seleziona i propri Specialisti in base al loro), scrivi il suo prompt, scegli le sue competenze, imposta il suo sforzo di ragionamento e — per gli Orchestratori — scegli gli Specialisti nel suo Agent Pool. Gli agenti personalizzati possono essere modificati o eliminati completamente in qualsiasi momento.
+
+Guide dettagliate: [Collegare Teams e Discord](../ai-workforce-chat-connections.md) · [Verificare la memoria dell’agente](../ai-workforce-agent-memory.md).

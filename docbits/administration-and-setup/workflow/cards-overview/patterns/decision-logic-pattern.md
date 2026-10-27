@@ -1143,3 +1143,6 @@ Exceptions: 15 (1.2%)
 **Historical example metadata:**
 
 **Pattern Version:** 1.0 **Last Updated:** October 23, 2025 **Difficulty:** Medium **Estimated Time:** 30-45 minutes
+
+
+[Real workflow examples from production](production-workflow-examples.md)

@@ -144,3 +144,5 @@ Każdy agent — systemowy lub niestandardowy — ma menu ustawień z następuj�
 ### Tworzenie niestandardowych agentów
 
 Poza domyślnymi możesz tworzyć własnych **orkiestratorów** i **specjalistów**, dopasowanych do Twoich procesów. Otwórz **Agenci → Utwórz agenta**, aby uruchomić kreatora, który przeprowadzi przez tę samą konfigurację opisaną powyżej: wybierz **rolę** (Orkiestrator lub Specjalista), nadaj agentowi **nazwę** i jasny **opis** (orkiestrator jest wybierany na podstawie tego tekstu, a orkiestrator wybiera swoich specjalistów na podstawie ich opisów), napisz jego prompt, wybierz jego umiejętności, ustaw jego poziom rozumowania oraz — w przypadku orkiestratorów — wybierz specjalistów w jego puli agentów. Niestandardowych agentów można w dowolnym momencie w pełni edytować lub usunąć.
+
+Szczegółowe instrukcje: [Łączenie Teams i Discord](../ai-workforce-chat-connections.md) · [Sprawdzanie pamięci agenta](../ai-workforce-agent-memory.md).

@@ -2,6 +2,8 @@
 
 Gebruik dit overzicht wanneer een leverancier, inkooporder of ander stamgegeven ontbreekt. Het toont de geregistreerde synchronisatietijd per gegevenstype in de huidige organisatie, niet de inhoud van elk geïmporteerd record.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-nl.png" alt="Vastgelegde synchronisatietijden voor twee gegevenstypen en de waarschuwing voor gegevens ouder dan twee weken. Dit fragment bewijst niet dat alle gegevens volledig zijn geïmporteerd. De kolomkoppen worden nog in het Engels weergegeven. Ook de waarschuwing en de bijbehorende knoppen worden momenteel in het Engels weergegeven."><figcaption><p>Vastgelegde synchronisatietijden voor twee gegevenstypen en de waarschuwing voor gegevens ouder dan twee weken. Dit fragment bewijst niet dat alle gegevens volledig zijn geïmporteerd. De kolomkoppen worden nog in het Engels weergegeven. Ook de waarschuwing en de bijbehorende knoppen worden momenteel in het Engels weergegeven.</p></figcaption></figure>
+
 ## Stappen
 
 1. Controleer organisatie, relevante suborganisatie en ERP-bronbedrijf.

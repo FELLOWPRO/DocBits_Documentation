@@ -20,7 +20,7 @@ Synthetischer Übungsbeleg. Weitere Formate und Sollwerte im Übungspaket.
 
 ## Konfiguration
 
-Verwenden Sie eine eigene Trainingskopie und bearbeiten Sie keine freigegebenen oder exportierten Belege. Bei automatischer Vollständigkeit wird ein Fehler nur für die Übung bewusst erzeugt.
+Verwenden Sie einen Beleg mit einer tatsächlich festgestellten Abweichung zum Original und bearbeiten Sie keine freigegebenen oder exportierten Belege. Ist die Tabelle bereits vollständig und richtig, bestätigen Sie dieses Ergebnis. Erzeugen Sie keinen Erkennungsfehler, um eine Korrektur vorzuführen.
 
 ## Ausführung
 

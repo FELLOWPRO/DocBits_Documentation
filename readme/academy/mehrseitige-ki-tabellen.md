@@ -53,7 +53,7 @@ Alle 30 Positionen sind in richtiger Reihenfolge vorhanden. Die Langtexte gehör
 | Menge/Preis vertauscht | Konfigurierte Spalten neu zuordnen und alle Zeilen erneut kontrollieren. |
 | Falsche Betragslesung | Dezimal-/Tausendertrennzeichen, Währung und Preiseinheit prüfen. |
 
-Üben Sie einen doppelten oder fehlenden Eintrag nur in Ihrer Trainingskopie. **Tabellenvalidierung ignorieren** erfüllt das Lernziel nicht.
+Korrigieren Sie doppelte oder fehlende Einträge nur, wenn der Vergleich mit dem Original eine solche Abweichung belegt. Ist die Tabelle vollständig, lassen Sie sie unverändert. **Tabellenvalidierung ignorieren** erfüllt das Lernziel nicht.
 
 ## Screenshots und Video
 

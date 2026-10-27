@@ -2,7 +2,15 @@
 
 报价视图适用于配置了报价处理的单据。文档类型、布局、权限与工作流决定可用字段和操作；该视图与采购订单匹配不同。
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-zh.png" alt="DocBits中一份虚构中国三页报价单的抬头，包含供应商、编号、日期、币种和总额。截图显示前六个抬头字段。"><figcaption><p>DocBits中一份虚构中国三页报价单的抬头，包含供应商、编号、日期、币种和总额。截图显示前六个抬头字段。</p></figcaption></figure>
+
+下载虚构三页报价单（PDF）
+
+{% file src="../../.gitbook/assets/docbits-training-quote-zh-20261027.pdf" %}
+
 ## 检查和修正明细
+
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-line-editor-zh.png" alt="选中第一条明细后的描述和单价字段。未修改或保存任何数值。"><figcaption><p>选中第一条明细后的描述和单价字段。未修改或保存任何数值。</p></figcaption></figure>
 
 1. 打开正确报价，核对供应商、参考号、日期和币种与原件是否一致。
 2. 比较物料号、说明、数量、单位、价格与金额。物料号相同并不能证明价格或单位相同。

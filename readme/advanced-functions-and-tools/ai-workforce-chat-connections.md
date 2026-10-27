@@ -2,6 +2,8 @@
 
 需要有效的 AI Workforce 订阅、连接管理权限，以及目标 Teams 租户或 Discord 服务器的访问权限。如界面提示订阅要求，先与管理员处理。
 
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-chat-integrations-menu-zh.png" alt="在集成区域点击 +，可选择连接 Teams、添加自定义机器人或连接 Discord。现有连接的名称已隐藏。 当前界面把 Microsoft Teams 选项误译为“连接团队”。"><figcaption><p>在集成区域点击 +，可选择连接 Teams、添加自定义机器人或连接 Discord。现有连接的名称已隐藏。 当前界面把 Microsoft Teams 选项误译为“连接团队”。</p></figcaption></figure>
+
 ## Microsoft Teams
 
 1. 打开 **AI Workforce → 设置 → 集成**。
@@ -14,6 +16,8 @@
 使用企业自己的机器人时，选择自定义机器人选项，填写连接名称、租户 ID、应用 ID 和应用密钥。密钥只填写在凭据表单中，不放入提示词或截图。
 
 ## Discord
+
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-discord-connect-form-zh.png" alt="提交前的 Discord 连接表单。服务器 ID 指 Discord 服务器的标识（Guild ID）；尚未创建任何连接。"><figcaption><p>提交前的 Discord 连接表单。服务器 ID 指 Discord 服务器的标识（Guild ID）；尚未创建任何连接。</p></figcaption></figure>
 
 1. 在“集成 → +”中选择连接 Discord。
 2. 如果提供添加机器人选项，由有权限的服务器管理员将其加入正确服务器。

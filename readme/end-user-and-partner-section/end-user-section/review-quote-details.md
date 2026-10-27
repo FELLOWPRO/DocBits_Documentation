@@ -2,7 +2,15 @@
 
 La vista offerte riguarda documenti configurati per questo processo. Tipo, layout, permessi e workflow determinano campi e azioni. È distinta dall'abbinamento degli ordini.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-it.png" alt="Intestazione di un preventivo fittizio italiano di tre pagine in DocBits: fornitore, riferimento, data, valuta e totale. L’immagine mostra i primi sei campi."><figcaption><p>Intestazione di un preventivo fittizio italiano di tre pagine in DocBits: fornitore, riferimento, data, valuta e totale. L’immagine mostra i primi sei campi.</p></figcaption></figure>
+
+Scarica il preventivo fittizio di tre pagine (PDF)
+
+{% file src="../../.gitbook/assets/docbits-training-quote-it-20261027.pdf" %}
+
 ## Verificare e correggere
+
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-line-editor-it.png" alt="Descrizione e prezzo unitario della prima riga selezionata. Nessun valore è stato modificato o salvato."><figcaption><p>Descrizione e prezzo unitario della prima riga selezionata. Nessun valore è stato modificato o salvato.</p></figcaption></figure>
 
 1. Aprire l'offerta corretta. Confrontare fornitore, riferimento, data e valuta con l'originale.
 2. Verificare articoli, descrizioni, quantità, unità, prezzi e importi. Un articolo corrispondente non prova prezzo o unità corrispondenti.

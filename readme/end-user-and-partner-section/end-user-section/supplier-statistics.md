@@ -2,6 +2,8 @@
 
 Le statistiche individuano prestazioni da approfondire. L'amministratore deve attivare il modulo e devono esistere dati di spedizione pertinenti. Gli indicatori dipendono dai record dell'organizzazione.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-it.png" alt="Colonne delle statistiche fornitori in un’organizzazione priva di dati sulle spedizioni. Una tabella vuota non dimostra buone prestazioni di consegna."><figcaption><p>Colonne delle statistiche fornitori in un’organizzazione priva di dati sulle spedizioni. Una tabella vuota non dimostra buone prestazioni di consegna.</p></figcaption></figure>
+
 ## Analizzare un fornitore
 
 1. Aprire **Statistiche fornitori**. Se assente, fare verificare modulo e accesso.

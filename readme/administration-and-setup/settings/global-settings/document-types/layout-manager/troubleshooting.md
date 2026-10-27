@@ -26,7 +26,7 @@
 
 ### A layout change does not reach the documents:
 
-* Select **Save** in the header of the Layout Builder. Unsaved changes are lost when you leave the screen.
+* Select **Save** in the header of the Layout Builder — a layout is only stored when you save it.
 * Each screen has its own layouts and its own rules: the **Field Validation**, **Approval**, **Reject** and **Review** tabs hold separate layouts, so a rule on the approval screen never changes the validation screen.
 * Check that the document really gets this layout. Open **Selection rules** for the screen and look at the rule that matches the document's origin — rules are evaluated by priority and the first match wins. The **FALLBACK** row is the layout used when no rule matches.
 * The **System default** layout can be viewed but not changed. Select **Clone** on its card, edit the copy and point a selection rule at it.

@@ -755,6 +755,7 @@
       * [Wzór dopasowania PO](administration-and-setup/workflow/patterns/po-matching-pattern.md)
       * [Wzór logiki decyzji](administration-and-setup/workflow/patterns/decision-logic-pattern.md)
       * [Przykłady rzeczywistych przepływów pracy](administration-and-setup/workflow/patterns/production-workflow-examples.md)
+      * [Przykłady workflow Advanced ze środowiska produkcyjnego](administration-and-setup/workflow/patterns/advanced-production-workflow-examples.md)
       * [Wzór transformacji danych](administration-and-setup/workflow/patterns/data-transformation-pattern.md)
   * [Zarządzanie testami](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

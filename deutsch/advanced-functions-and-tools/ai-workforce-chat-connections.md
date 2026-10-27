@@ -2,6 +2,8 @@
 
 Sie benötigen ein aktives AI-Workforce-Abonnement, Rechte zur Verbindungsverwaltung und Zugriff auf den vorgesehenen Teams-Mandanten oder Discord-Server. Klären Sie eine angezeigte Abonnementanforderung zuerst mit dem Administrator.
 
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-chat-integrations-menu-de.png" alt="Unter Integrationen öffnet + die Auswahl für Teams, einen eigenen Bot oder Discord. Der Name der bestehenden Verbindung ist ausgeblendet."><figcaption><p>Unter Integrationen öffnet + die Auswahl für Teams, einen eigenen Bot oder Discord. Der Name der bestehenden Verbindung ist ausgeblendet.</p></figcaption></figure>
+
 ## Microsoft Teams
 
 1. Öffnen Sie **AI Workforce → Einstellungen → Integrationen**.
@@ -14,6 +16,8 @@ Sie benötigen ein aktives AI-Workforce-Abonnement, Rechte zur Verbindungsverwal
 Für einen unternehmenseigenen Bot wählen Sie stattdessen die entsprechende Option. Geben Sie Verbindungsname, Mandanten-ID, App-ID und App-Geheimnis ein. Geheimnisse gehören in das Zugangsdatenformular, nicht in Prompts oder Screenshots.
 
 ## Discord
+
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-discord-connect-form-de.png" alt="Discord-Verbindungsformular vor dem Absenden. Die Server-ID bezeichnet den Discord-Server (Guild ID); es wurde keine Verbindung erstellt."><figcaption><p>Discord-Verbindungsformular vor dem Absenden. Die Server-ID bezeichnet den Discord-Server (Guild ID); es wurde keine Verbindung erstellt.</p></figcaption></figure>
 
 1. Wählen Sie unter **Integrationen → +** die Discord-Verbindung.
 2. Fügen Sie den Bot bei angebotener Option mit einem berechtigten Serveradministrator zum richtigen Server hinzu.

@@ -2,6 +2,8 @@
 
 Diese Übersicht hilft, wenn ein Lieferant, eine Bestellung oder andere erwartete Stammdaten fehlen. Sie zeigt je Datentyp den erfassten Synchronisationszeitpunkt der aktuellen Organisation, nicht den Inhalt jedes importierten Datensatzes.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-de.png" alt="Erfasste Synchronisationszeiten für zwei Datentypen und die Warnung vor mehr als zwei Wochen alten Daten. Der Ausschnitt belegt keine vollständigen Importdaten. Die Spaltenüberschriften werden derzeit auf Englisch angezeigt. Auch die Warnung und ihre Schaltflächen werden derzeit auf Englisch angezeigt."><figcaption><p>Erfasste Synchronisationszeiten für zwei Datentypen und die Warnung vor mehr als zwei Wochen alten Daten. Der Ausschnitt belegt keine vollständigen Importdaten. Die Spaltenüberschriften werden derzeit auf Englisch angezeigt. Auch die Warnung und ihre Schaltflächen werden derzeit auf Englisch angezeigt.</p></figcaption></figure>
+
 ## Schritt für Schritt
 
 1. Prüfen Sie Organisation, relevante Unterorganisation und ERP-Quellmandant.

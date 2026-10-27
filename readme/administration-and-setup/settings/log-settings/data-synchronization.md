@@ -2,6 +2,8 @@
 
 Utilisez cette vue lorsqu'un fournisseur, une commande ou une autre donnée de référence manque. Elle présente la date de synchronisation enregistrée par type de données dans l'organisation courante, pas le contenu de chaque enregistrement importé.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-fr.png" alt="Dates de synchronisation enregistrées pour deux types de données et avertissement concernant des données de plus de deux semaines. Cet extrait ne prouve pas que les données importées sont complètes. Les en-têtes des colonnes restent affichés en anglais. L’avertissement et ses boutons restent également affichés en anglais."><figcaption><p>Dates de synchronisation enregistrées pour deux types de données et avertissement concernant des données de plus de deux semaines. Cet extrait ne prouve pas que les données importées sont complètes. Les en-têtes des colonnes restent affichés en anglais. L’avertissement et ses boutons restent également affichés en anglais.</p></figcaption></figure>
+
 ## Étapes
 
 1. Confirmez organisation, sous-organisation concernée et société ERP d'origine.

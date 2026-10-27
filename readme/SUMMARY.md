@@ -938,6 +938,7 @@
 ## Sicherheit <a href="#security" id="security"></a>
 
 * [Sicherheit & Compliance FAQ](security/security-and-compliance-faq.md)
+* [Datenspeicherung, Aufbewahrung und Löschung](security/data-storage-and-retention.md)
 * [Sichere Speicherung von Zugangsdaten](security/secure-storage-of-credentials.md)
 * [Verschlüsselung gespeicherter Daten](security/encryption-at-rest.md)
 * [Cookies und Browserspeicher](security/cookies-and-browser-storage.md)

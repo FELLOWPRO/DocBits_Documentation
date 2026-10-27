@@ -2,7 +2,15 @@
 
 Use **Quote Details** for a document configured for quote processing. Its document type, layout, permissions and workflow determine available fields and actions. This view is separate from purchase-order matching.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-en.png" alt="Header of a fictional three-page US quotation in DocBits: supplier, reference, date, currency and total. This crop shows the first six header fields."><figcaption><p>Header of a fictional three-page US quotation in DocBits: supplier, reference, date, currency and total. This crop shows the first six header fields.</p></figcaption></figure>
+
+Download the fictional three-page quotation (PDF)
+
+{% file src="../../.gitbook/assets/docbits-training-quote-en-20261027.pdf" %}
+
 ## Review and correct lines
+
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-line-editor-en.png" alt="Description and unit price of the selected first line. No values have been changed or saved."><figcaption><p>Description and unit price of the selected first line. No values have been changed or saved.</p></figcaption></figure>
 
 1. Open the intended quote. Compare supplier, reference, date and currency with the original.
 2. Compare line-item numbers, descriptions, quantities, units, prices and amounts with the original. An item-number match does not establish a price or unit match.

@@ -2,6 +2,8 @@
 
 Use **Supplier Statistics** to identify delivery performance that needs investigation. Your administrator must enable the module and provide the relevant shipment data. The figures depend on the records supplied to your organization.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-en.png" alt="The delivery-statistics columns in an organization without shipment records. An empty table does not demonstrate good delivery performance."><figcaption><p>The delivery-statistics columns in an organization without shipment records. An empty table does not demonstrate good delivery performance.</p></figcaption></figure>
+
 ## Review a supplier
 
 1. Open **Supplier Statistics**. If unavailable, ask your administrator to check the module and access.

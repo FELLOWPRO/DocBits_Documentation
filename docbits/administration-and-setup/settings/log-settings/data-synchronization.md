@@ -2,6 +2,8 @@
 
 Use this overview when DocBits cannot find a supplier, purchase order or other expected master-data record. It shows the recorded synchronization time per data type in the current organization, rather than the contents of every imported record.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-en.png" alt="Recorded synchronization times for two data types and the warning about data older than two weeks. This is an excerpt, not a completeness check of the imported records."><figcaption><p>Recorded synchronization times for two data types and the warning about data older than two weeks. This is an excerpt, not a completeness check of the imported records.</p></figcaption></figure>
+
 ## Check synchronization
 
 1. Confirm the intended organization, relevant sub-organization and source ERP company.

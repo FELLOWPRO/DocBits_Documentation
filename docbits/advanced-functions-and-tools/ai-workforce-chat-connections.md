@@ -2,6 +2,8 @@
 
 You need an active **AI Workforce** subscription, permission to manage connections and access to the intended Teams tenant or Discord server. If DocBits shows a subscription requirement, arrange activation with your administrator first.
 
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-chat-integrations-menu-en.png" alt="Integrations: use + to choose Connect Teams, Add Custom Bot or Connect Discord. The existing connection name is hidden."><figcaption><p>Integrations: use + to choose Connect Teams, Add Custom Bot or Connect Discord. The existing connection name is hidden.</p></figcaption></figure>
+
 ## Microsoft Teams
 
 1. Open **AI Workforce → Settings → Integrations**.
@@ -14,6 +16,8 @@ You need an active **AI Workforce** subscription, permission to manage connectio
 For a company-managed bot, choose **Add custom bot** instead. Enter its connection name, tenant ID, app ID and app secret. Keep secrets in the credential form, outside prompts and screenshots.
 
 ## Discord
+
+<figure><img src="../.gitbook/assets/guide-screenshots-20261027-discord-connect-form-en.png" alt="Discord connection form before submission. Server ID identifies the Discord server (Guild ID); no connection was created."><figcaption><p>Discord connection form before submission. Server ID identifies the Discord server (Guild ID); no connection was created.</p></figcaption></figure>
 
 1. Under **Integrations**, choose **+ → Connect Discord**.
 2. If offered, use **Add bot to Discord** with an authorized server administrator.

@@ -1,6 +1,6 @@
 # Call the DocBits API
 
-<figure><img src="../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Then_Call_API.png" alt="Workflow Then card Action: Call Api with API endpoint, method, parameters and data fields, version 2" width="563"><figcaption></figcaption></figure>
 
 <!-- workflow-card-api-guide-contract-20261022 -->
 

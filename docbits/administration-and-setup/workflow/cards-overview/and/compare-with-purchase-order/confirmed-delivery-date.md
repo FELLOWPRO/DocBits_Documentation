@@ -1,6 +1,6 @@
 # Confirmed Delivery Date
 
-<figure><img src="../../../../../.gitbook/assets/image (342).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (342).png" alt="Workflow And card Compare with Purchase Order: confirmed delivery date versus accepted delivery date in master data lookup table, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

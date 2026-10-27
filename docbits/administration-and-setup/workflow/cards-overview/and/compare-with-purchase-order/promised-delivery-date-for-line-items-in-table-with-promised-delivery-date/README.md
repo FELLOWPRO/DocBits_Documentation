@@ -1,6 +1,6 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt="Workflow And card Compare with Purchase Order: promised delivery date for line items in table versus purchase order with tolerance days, version 3" width="375"><figcaption></figcaption></figure>
 
 ## Purpose:
 

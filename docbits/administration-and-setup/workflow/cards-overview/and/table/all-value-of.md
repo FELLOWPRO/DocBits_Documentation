@@ -1,6 +1,6 @@
 # All Value of
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="Workflow And card Table: if all values of a column in a table match a regex pattern, continue, version 2" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

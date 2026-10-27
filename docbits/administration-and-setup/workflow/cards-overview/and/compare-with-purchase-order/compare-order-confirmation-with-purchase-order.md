@@ -1,8 +1,8 @@
 # Compare Order Confirmation with Purchase order
 
-<figure><img src="../../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (69).png" alt="Workflow card Compare with Purchase Order: Any/All Order Data in order confirmation Operator purchase order, version 3" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (343).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (343).png" alt="Workflow card Compare with Purchase Order: Any/All Order Data in order confirmation Operator purchase order, compare as Comparison Data, version 4" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

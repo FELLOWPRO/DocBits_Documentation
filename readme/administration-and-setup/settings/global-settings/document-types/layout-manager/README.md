@@ -1,29 +1,29 @@
 # Lay-outbeheer
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-nl.png" alt="Indelingen en selectieregels voor documenttype INVOICE: de tabbladen Indelingen en Selectieregels met hun tellers, het documenttype, de tabbladen Veldvalidatie, Goedkeuring, Afwijzen en Beoordeling, de lay-outkaarten met het label Aangepast en de acties Bewerking, Kloon en Verwijderen, en de knop Nieuwe lay-out"><figcaption>Het lay-outbeheer voor documenttype Invoice.</figcaption></figure>
 
-#### Overzicht
+Het **lay-outbeheer** bepaalt hoe een documenttype eruitziet voor de mensen die documenten valideren, goedkeuren, afwijzen en beoordelen: welke velden en groepen op het scherm verschijnen, in welke volgorde en hoe elk veld zich gedraagt. Elk documenttype heeft zijn eigen lay-outs.
 
-Met de Layout Manager kunnen beheerders de lay-out van documenttypen visueel configureren en wijzigen door eigenschappen in te stellen voor verschillende gegevensvelden en groepen binnen een document. Deze interface zorgt ervoor dat de extractiemodellen en handmatige gegevensinvoerpunten precies aansluiten op de structuur van het document zoals gescand of geüpload naar Docbits.
+De pagina opent als **Indelingen en selectieregels**: lay-outs zijn herbruikbare veldindelingen, onafhankelijk van de herkomst van het document, en regels bepalen welke lay-out een document krijgt.
 
-#### Belangrijkste onderdelen
+#### Schermen en lay-outtypen
 
-1. **Groepen en velden**:
-   * **Groepen**: Organisatie-eenheden binnen een documenttype die gerelateerde velden categoriseren (bijvoorbeeld Factuurgegevens, Betalingsgegevens). Deze kunnen worden uitgevouwen of samengevouwen en zo worden gerangschikt dat ze de logische groepering in het daadwerkelijke document weerspiegelen.
-   * **Velden**: individuele gegevenspunten binnen elke groep (bijvoorbeeld factuurnummer, betalingsvoorwaarden). Elk veld kan worden aangepast voor de manier waarop gegevens worden vastgelegd, weergegeven en verwerkt.
-2. **Properties Panel**:
-   * Dit paneel toont de eigenschappen van het geselecteerde veld of de geselecteerde groep, waardoor gedetailleerde configuratie mogelijk is, zoals:
-     * **Label**: Het zichtbare label voor het veld in de gebruikersinterface.
-     * **Veldnaam**: de technische identificatie die binnen het systeem wordt gebruikt.
-     * **Elementbreedte in percentage**: Bepaalt de breedte van het veld in relatie tot de documentindeling.
-     * **Tabindex**: regelt de tabvolgorde voor navigatie.
-     * **Script uitvoeren bij wijziging**: Of een script moet worden uitgevoerd wanneer de veldwaarde verandert.
-     * **Label links weergeven**: Of het label links van het veld of erboven wordt weergegeven.
-     * **Is Tekstgebied**: Specificeert of het veld een tekstgebied moet zijn, waarin grotere hoeveelheden tekst kunnen worden geplaatst.
-     * **Selecteer modeltype**: Optie om te selecteren welk modeltype de extractie van dit veld afhandelt.
-     * **Veldlengte**: Maximale lengte van de gegevens die in dit veld worden geaccepteerd.
-     * **Verboden trefwoorden**: trefwoorden die niet zijn toegestaan binnen het veld.
-3. **Template Preview**:
-   * Toont een realtime voorbeeld van hoe het document eruit zal zien op basis van de huidige lay-outconfiguratie. Dit helpt ervoor te zorgen dat de lay-out overeenkomt met de daadwerkelijke documentstructuur en is van cruciaal belang voor het testen en verfijnen van de documentverwerkingsinstellingen.
+Validatie, goedkeuring, afwijzing en beoordeling zijn afzonderlijke schermen, en elk scherm heeft eigen lay-outs, eigen regels en een eigen standaardlay-out — een goedkeuringsregel verandert nooit het validatiescherm. Wissel van scherm met de tabbladen **Veldvalidatie**, **Goedkeuring**, **Afwijzen** en **Beoordeling**.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
+#### Lay-outkaarten
+
+Op het tabblad **Indelingen** is elke lay-out van het gekozen scherm een kaart. Een kaart toont de naam van de lay-out, of deze van uw organisatie is (**Aangepast**) of de standaardlay-out van het systeem, wanneer hij voor het laatst is bewerkt en of een selectieregel hem gebruikt. **Bewerking** opent de lay-out in de Layout Builder, **Kloon** kopieert hem onder een naam die u kiest en **Verwijderen** haalt hem weg — de standaardlay-out van het systeem kunt u alleen bekijken, niet wijzigen of verwijderen. **Nieuwe lay-out** vraagt om een naam en opent de Layout Builder op de nieuwe, lege lay-out. Het filter boven de kaarten schakelt tussen **Alle**, **Mijn lay-outs** en **Systeem**.
+
+#### De Layout Builder
+
+**Bewerking** opent de [Layout Builder](navigating-the-layout-manager.md):
+
+* **Structuur**, **Velden** en **Elementen** aan de linkerkant — de lay-out als boomstructuur, elk veld van het documenttype met een teller van de al geplaatste velden, en de groepen en formulierelementen die u naar het werkvlak sleept.
+* Het **werkvlak** in het midden toont de lay-out zoals de gebruiker hem ziet. **Hoofdlay-out** en **Tabel** wisselen tussen de pagina en een regeltabel, **Document** opent het voorbeelddocument ernaast.
+* Het paneel **Eigenschappen** aan de rechterkant volgt het geselecteerde element; de instellingen zijn gegroepeerd in weergave, gedrag, waarden en lijsten, automatisering, en randen en tussenruimte.
+
+**Opslaan** in de kopbalk bewaart de lay-out. Voor de overige acties in de kopbalk, zie [Wijzigingen opslaan en toepassen](save-and-apply-changes.md).
+
+#### Welke lay-out een document krijgt
+
+Het tabblad **Selectieregels** van elk scherm bevat de regels die de lay-out kiezen: ze worden geëvalueerd op prioriteit, de eerste overeenkomst wint, en er geldt een standaard terugvaloptie als geen enkele regel past. Zie [Lay-outselectieregels](layout-selection-rules.md).

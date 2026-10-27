@@ -86,3 +86,6 @@ Een factuur mag pas via een beslistabel worden toegewezen als de organisatie, de
 ## Van voorbeeld naar eigen configuratie
 
 Bepaal de passende velden, groepen en beslistabellen in je eigen organisatie. Neem de neutrale aanduidingen niet over alsof het bestaande productvelden zijn. Controleer zowel situaties waarin elke voorwaarde wel als niet wordt vervuld, en ook actiefouten, in een geschikte testomgeving. Controleer goedkeuringen en exports aan de hand van hun daadwerkelijke resultaten; schakel een workflow pas in na inhoudelijke acceptatie.
+
+
+[Echte Advanced-workflowvoorbeelden uit productie](advanced-production-workflow-examples.md)

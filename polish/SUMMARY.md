@@ -624,6 +624,7 @@
     * [Porównania PO: kierunek, tolerancja i wersje kart](administration-and-setup/workflow/cards-overview/po-comparison-versions-guide.md)
     * [Karty porównawcze cytatów](administration-and-setup/workflow/cards-overview/quote-comparison-guide.md)
     * [Wersje i dostępność kart](administration-and-setup/workflow/cards-overview/card-versions-guide.md)
+    * [Karty partnerskie: własne rozszerzenia](administration-and-setup/workflow/cards-overview/partner-cards.md)
     * [Gdy](administration-and-setup/workflow/when/README.md)
       * [Opis karty](administration-and-setup/workflow/when/card-description.md)
       * [Operacja typu dokumentu](administration-and-setup/workflow/when/page.md)

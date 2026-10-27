@@ -1,6 +1,6 @@
 # Calculate in
 
-<figure><img src="../../../../../.gitbook/assets/image (371).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (371).png" alt="Table card Calculate in with table, column, math operator, regex dependency and result column placeholders" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Compare two Fields with Tolerance
 
-<figure><img src="../../../../../.gitbook/assets/image (54).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54).png" alt="Document Field condition card comparing two fields with tolerance amount and tolerance type placeholders" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

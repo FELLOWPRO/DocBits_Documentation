@@ -8,7 +8,7 @@ Each document type has its own default configurations and must be set up separat
 
 Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → Lookup Master Data
 
-<div align="center"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_1.png" alt="" width="454"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_1.png" alt="Settings menu with the Lookup Master Data entry highlighted above LOV Master Data" width="454"><figcaption></figcaption></figure></div>
 
 ### **Default Lookups**
 
@@ -19,7 +19,7 @@ There are **four default lookup groups** for invoices:
 3. **Supplier**
 4. **Tax Code**
 
-<figure><img src="../../../.gitbook/assets/fuzzy_data_config_2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fuzzy_data_config_2.png" alt="Lookup Master Data section listing Company Data, Purchase Order Header, Supplier, Taxcode and Test configs with Create Lookup Config button" width="563"><figcaption></figcaption></figure>
 
 Each group contains specific fields. Click on a group to **expand** it and view the fields. Default lookup groups are labeled with a **"Default" tag**.
 
@@ -55,14 +55,14 @@ There are **two ways** to create a lookup configuration:
 
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_3.png" alt="Purchase Order Header lookup config with its three-dot menu open showing Deactivate, Duplicate and View"><figcaption></figcaption></figure>
 
     * This copies all information and fields from an existing group.
     * You only need to provide a **new name**.
 2.  **Create a lookup from scratch**\
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_4.png" alt="Lookup Master Data section with an arrow pointing to the Create Lookup Config button"><figcaption></figcaption></figure>
 
     * Click **"Create Lookup Configuration"**.
     * Fill in the required details:
@@ -83,7 +83,7 @@ Each group contains fields that can be **added, removed, edited, or viewed**, de
 *   Marked with a **"Default" tag**.\
 
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_5.png" alt="" width="251"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_5.png" alt="Lookup Field column with the Supplier Id row marked with a highlighted default badge" width="251"><figcaption></figcaption></figure></div>
 * **Can only be viewed**, not edited or deleted.
 
 #### **Non-Default Fields**
@@ -99,7 +99,7 @@ To add a new field within a group:
 1.  Click **"Create"** inside the relevant group.\
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_6.png" alt="Purchase Order Header config with an arrow pointing to the Create button above the lookup field table"><figcaption></figcaption></figure>
 2. Provide the following details:
    * **Lookup Field** → Column name from the master data lookup table.
    * **Validation Field** → Corresponding DocBits field.

@@ -1,6 +1,6 @@
 # Promised Delivery Date on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (68).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (68).png" alt="Compare with Purchase Order card for promised delivery date with operator and tolerance in days placeholders" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

@@ -18,7 +18,7 @@ In the **Import** settings, you can configure document-specific options for impo
 * **Payment Terms Days**: Defines the default payment terms (in days) that can be applied to documents.
 * **Date Pattern**: Sets the pattern for how dates should be recognized and formatted within imported documents.
 
-<figure><img src="../../../../.gitbook/assets/document_settins_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document_settins_1.png" alt="Document Settings panel with Restrict to pages 100, Payment Terms Days 0 and Date Pattern %d.%m.%Y"><figcaption></figcaption></figure>
 
 ## **FTP Import**
 
@@ -34,7 +34,7 @@ To use FTP for importing data automatically, ensure the following requirements a
 
 1.  To add a new connection, click the **Add** button in the FTP section.
 
-    <figure><img src="../../../../.gitbook/assets/ftp_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/ftp_7.png" alt="FTP Import section with an empty connection table and an arrow pointing to the New button"><figcaption></figcaption></figure>
 2.  Enter your FTP credentials in the designated fields. The API Key field will be filled in automatically.
 
     * **Type:** Specifies the FTP protocol to use. You can choose between **FTP**, **FTPS**, or **SFTP**.
@@ -50,7 +50,7 @@ To use FTP for importing data automatically, ensure the following requirements a
     * **Archive After Import:** Allows you to archive files after import. Once activated, you can specify the directory where files should be moved after a successful import.
     * **Include Subfolder Files:** When enabled, subdirectories within the main directory will also be searched for files to import.
 
-    <figure><img src="../../../../.gitbook/assets/email_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/email_4.png" alt="Edit Data dialog with protocol OAuth Office365, Finish Authentication button and Microsoft authentication code field"><figcaption></figcaption></figure>
 3. Once you have entered all the necessary details of your FTP, click **SAVE**.
 4. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
 
@@ -96,7 +96,7 @@ If an attachment cannot be imported and the option **“Reply to this email if i
 
 1.  To add a new IMAP connection, click the **Add** button in the **Email Import** section.
 
-    <figure><img src="../../../../.gitbook/assets/email_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/email_1.png" alt="Email Import section with an empty connection table, arrow pointing to the New button and a Log button"><figcaption></figcaption></figure>
 2. Select IMAP as the protocol.
 3. Enter your email credentials in the designated fields. The API Key field will be filled automatically.
    * **Encryption:** Select the type of encryption to use — either **SSL** or **TLS**.
@@ -121,7 +121,7 @@ If an attachment cannot be imported and the option **“Reply to this email if i
 
 You can click the three dots in the **Action** column to access the following options for your connection:
 
-<figure><img src="../../../../.gitbook/assets/email_7.png" alt="" width="145"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_7.png" alt="Action menu of an email connection with Test connection, Connection Logs, Import Log, Activate, Edit and Delete" width="145"><figcaption></figcaption></figure>
 
 * **Test Connection:** Tests the connection to your IMAP client.
 * **Connection Logs:** Opens the logs for your email connection, including any error messages that occur during the process.
@@ -134,13 +134,13 @@ You can click the three dots in the **Action** column to access the following op
 
 1.  To add a new OAuth Office365 connection, click the **Add** button in the **Email Import** section.
 
-    <figure><img src="../../../../.gitbook/assets/email_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/email_1.png" alt="Email Import section with an empty connection table, arrow pointing to the New button and a Log button"><figcaption></figcaption></figure>
 2.  Select **OAuth Office365** as the protocol, then click on **Authenticate**.
 
-    <figure><img src="../../../../.gitbook/assets/email_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/email_3.png" alt="Add new Data dialog with protocol OAuth Office365 and the Authenticate button highlighted by an arrow"><figcaption></figcaption></figure>
 3.  You will be redirected to a Microsoft page where you’ll be asked to enter a code. To retrieve this code, return to DocBits—the code will be displayed there, as shown below. Copy the code and enter it on the Microsoft page. Afterward, you will be prompted to enter your Microsoft credentials.
 
-    <figure><img src="../../../../.gitbook/assets/email_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/email_4.png" alt="Edit Data dialog with protocol OAuth Office365, Finish Authentication button and Microsoft authentication code field"><figcaption></figcaption></figure>
 4. Follow the steps on the Microsoft page. Once you're done, return to DocBits and click **Finish Authentication**.
 5.  You can now configure the following settings:
 
@@ -150,7 +150,7 @@ You can click the three dots in the **Action** column to access the following op
     * **Move Email to other folder:** Specify a folder to which emails should be moved after a successful import.
     * **Send Import Error Notice to this Email-Address:** Specify an email address to receive error notifications if something goes wrong during the import process.
 
-    <figure><img src="../../../../.gitbook/assets/email_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/email_5.png" alt="Edit Data dialog for OAuth Office365 with folder, shared mailbox, move emails and error notice options and Save button"><figcaption></figcaption></figure>
 6. Once you’ve configured the desired behavior, you can either start importing emails by clicking **Import** or save your changes by clicking **Save**.
 7. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
 
@@ -158,7 +158,7 @@ You can click the three dots in the **Action** column to access the following op
 
 You can click the three dots in the **Action** column to access the following options for your connection:
 
-<figure><img src="../../../../.gitbook/assets/email_6.png" alt="" width="148"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_6.png" alt="Action menu of an OAuth connection with Connection Logs, Import Log, Activate, Edit and Delete" width="148"><figcaption></figcaption></figure>
 
 * **Connection Logs:** Opens the logs for your email connection, including any error messages that occur during the process.
 * **Import Log:** Opens the logs of past imports for the respective connection, including any error messages that occurred during the process.
@@ -170,7 +170,7 @@ You can click the three dots in the **Action** column to access the following op
 
 You can view the import log of all created email connections, including any error messages that occurred during the process, by clicking the **Import Log** button in the top-right corner of the Email Import section.
 
-<figure><img src="../../../../.gitbook/assets/email_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_8.png" alt="Email Import table listing IMAP and OAuth Office365 connections with the Import Log button highlighted"><figcaption></figcaption></figure>
 
 You can filter the logs by subject or sender, sort columns in ascending or descending order by clicking the column headers, and rearrange columns using drag-and-drop.
 

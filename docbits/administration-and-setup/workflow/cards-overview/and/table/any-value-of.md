@@ -1,6 +1,6 @@
 # Any Value of
 
-<figure><img src="../../../../../.gitbook/assets/image (100).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (100).png" alt="Table condition card: if any value of a column in a table matches a regex pattern, only one entry has to match" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

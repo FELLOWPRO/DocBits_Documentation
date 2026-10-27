@@ -1,6 +1,6 @@
 # Item Id on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (351).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (351).png" alt="Compare with Purchase Order card comparing item id on the purchase order with item id on the document" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

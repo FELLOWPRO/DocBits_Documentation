@@ -86,3 +86,6 @@ Eine Rechnung soll erst dann über eine Entscheidungstabelle zugewiesen werden, 
 ## Vom Beispiel zur eigenen Konfiguration
 
 Lege die passenden Felder, Gruppen und Entscheidungstabellen in deiner eigenen Organisation fest. Übernimm die neutralen Bezeichnungen nicht als vorhandene Produktfelder. Prüfe jeden positiven und negativen Bedingungsfall sowie Aktionsfehler in einer geeigneten Testumgebung. Prüfe Freigaben und Exporte anhand ihrer tatsächlichen Ergebnisse; aktiviere einen Workflow erst nach fachlicher Abnahme.
+
+
+[Advanced-Workflows aus der Produktion: echte Beispiele](advanced-production-workflow-examples.md)

@@ -1,6 +1,6 @@
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/image (352).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (352).png" alt="Compare with Purchase Order card reading Supplier on Invoice Operator Supplier on Purchase Order" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Document Type Operation one of
 
-<figure><img src="../../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f.png" alt="Document card reading Document type Operator one of Type" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

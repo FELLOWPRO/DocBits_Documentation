@@ -1,6 +1,6 @@
 # Call Api
 
-<figure><img src="../../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Then_Call_API.png" alt="Action card Call Api with API Endpoint, Method, Parameters and Data placeholders" width="563"><figcaption></figcaption></figure>
 
 <!-- workflow-card-call-api-contract-20261022 -->
 

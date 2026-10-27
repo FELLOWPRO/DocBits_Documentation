@@ -1,6 +1,6 @@
 # Export with alternate Export
 
-<figure><img src="../../../../../.gitbook/assets/image (362).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (362).png" alt="Export card reading Export document with alternate export, version 2" width="563"><figcaption></figcaption></figure>
 
 ## When to use this card
 

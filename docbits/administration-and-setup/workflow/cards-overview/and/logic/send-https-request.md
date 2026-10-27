@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47).png" alt="Logic card Send HTTPS request with Url, Headers, Method, Parameters, Data and Status Code placeholders" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

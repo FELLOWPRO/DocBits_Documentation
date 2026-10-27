@@ -1,6 +1,6 @@
 # Compare values in table
 
-<figure><img src="../../../../../.gitbook/assets/image (102).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (102).png" alt="Table card Compare values in table with Table Name, Column Name, Operator and Column Name placeholders" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

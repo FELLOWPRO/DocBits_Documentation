@@ -16,7 +16,7 @@ All connections between components are secured using industry-standard encryptio
 
 **On Premise:**&#x20;
 
-<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt="DocAgent on-premises architecture diagram with Doc2API, DocFlow, Prefect API work pool and a client machine worker running browsers"><figcaption></figcaption></figure>
 
 {% content-ref url="prefect-local-setup-requirements.md" %}
 [prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
@@ -24,7 +24,7 @@ All connections between components are secured using industry-standard encryptio
 
 **Cloud**:
 
-<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt="Cloud architecture diagram of DocFlow, DocBits Operator, Operator AI with cloud Chrome and the user with Chrome extension"><figcaption></figcaption></figure>
 
 ## Exporting Data to Infor
 
@@ -38,7 +38,7 @@ Export to [Infor](../../infor-integration-and-configuration/exporting-to-infor/)
 
 To identify the supplier or compare/match purchase order lines, we activate a trigger in LN/M3 that sends the Sync.RemitToPartyMaster, Sync.SupplierPartyMaster, and Sync.PurchaseOrder BODs to Doc**Bits**. We configure this process in ION Desk by defining the dataflow to a specific connection point to Doc**Bits**.
 
-<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt="DocBits infrastructure diagram: user, load balancer, Kubernetes cluster, and Spaces, Redis and PostgreSQL storage"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Master Data Validation](../../infor-integration-and-configuration/importing-customer-master-data/)
@@ -46,4 +46,4 @@ To identify the supplier or compare/match purchase order lines, we activate a tr
 
 ## Email Import OAuth Office365
 
-<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt="O365 mail import diagram with the app, DocBits Mail-Service, Microsoft Graph API, database and main system"><figcaption></figcaption></figure>

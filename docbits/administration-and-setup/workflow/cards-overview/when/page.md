@@ -1,6 +1,6 @@
 # Document Type Operation
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt="Document card reading Document type with Operator and Type placeholders"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

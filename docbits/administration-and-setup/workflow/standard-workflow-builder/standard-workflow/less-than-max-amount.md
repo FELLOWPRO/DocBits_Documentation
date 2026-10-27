@@ -1,6 +1,6 @@
 # Less than Max Amount
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55.png" alt="Workflow with When document type is Invoice, And pending approval and Total Amount less or equal Approver Max Amount, Then assign user from field Approver Name"><figcaption></figcaption></figure>
 
 This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
 

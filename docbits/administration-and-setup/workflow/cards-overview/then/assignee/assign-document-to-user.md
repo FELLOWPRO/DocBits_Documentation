@@ -1,6 +1,6 @@
 # Assign document to User
 
-<figure><img src="../../../../../.gitbook/assets/image (373).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (373).png" alt="Assignee card reading Assign document to User" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

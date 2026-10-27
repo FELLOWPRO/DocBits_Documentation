@@ -4,7 +4,9 @@ La vue des devis concerne les documents configurés pour ce traitement. Type, pr
 
 <figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-fr.png" alt="En-tête d’un devis fictif français de trois pages dans DocBits : fournisseur, référence, date, devise et total. Cet extrait montre les six premiers champs."><figcaption><p>En-tête d’un devis fictif français de trois pages dans DocBits : fournisseur, référence, date, devise et total. Cet extrait montre les six premiers champs.</p></figcaption></figure>
 
-[Télécharger le devis fictif de trois pages (PDF)](../../.gitbook/assets/docbits-training-quote-fr-20261027.pdf)
+Télécharger le devis fictif de trois pages (PDF)
+
+{% file src="../../.gitbook/assets/docbits-training-quote-fr-20261027.pdf" %}
 
 ## Examiner et corriger
 

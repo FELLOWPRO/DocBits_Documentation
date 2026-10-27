@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the group
 
-<figure><img src="../../../../../.gitbook/assets/image (365).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (365).png" alt="Task card to create a new task with title, description, priority and group, notifying the group by email" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

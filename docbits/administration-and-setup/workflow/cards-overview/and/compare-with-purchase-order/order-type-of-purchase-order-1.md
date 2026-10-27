@@ -4,7 +4,7 @@ hidden: true
 
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (104).png" alt="Compare with Purchase Order card reading Any/All order type of purchase order with Operator and Order Type"><figcaption></figcaption></figure>
 
 ## **Purpose**:
 

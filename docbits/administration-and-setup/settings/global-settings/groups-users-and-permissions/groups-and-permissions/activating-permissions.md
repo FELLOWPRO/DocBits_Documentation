@@ -16,17 +16,17 @@ Enabling or disabling the permission system using the switch has various effects
 
 ## **Enabling the permission system:**
 
-<figure><img src="../../../../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (274).png" alt="Groups And Permissions page with the activation toggle switched on and a list of groups"><figcaption></figcaption></figure>
 
 * When the permission system is enabled, the access permissions for users and groups are applied.
 * Users are only granted access to the resources they are explicitly authorized to access based on the permissions assigned.
 * Administrators can manage the permissions for individual users and groups and ensure that only authorized people can view or edit the data.
 
-<figure><img src="../../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (276).png" alt="Group permission dialog with View, Update, Delete and approval checkboxes per document type"><figcaption></figcaption></figure>
 
 ## Only Assigned Documents
 
-<figure><img src="../../../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (171).png" alt="Group permission dialog footer with the Only assigned documents toggle switched on"><figcaption></figcaption></figure>
 
 The **Only Assigned Documents** toggle button controls the visibility of documents for users based on their group assignments. When enabled, users can only view documents that are specifically assigned to them or a group they belong to. When disabled, users with the appropriate view permission can see all documents, regardless of assignment.
 
@@ -46,7 +46,7 @@ The **Only Assigned Documents** toggle button controls the visibility of documen
 
 ## Disabling the permission system:
 
-<figure><img src="../../../../../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (273).png" alt="Groups And Permissions page with the activation toggle switched off"><figcaption></figcaption></figure>
 
 * When the permission system is disabled, all access permissions are removed and users typically have unrestricted access to all resources.
 * This can be useful when open collaboration is temporarily required without the restrictions of access control.

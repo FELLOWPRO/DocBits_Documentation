@@ -1,6 +1,6 @@
 # Assign a Task with Title
 
-<figure><img src="../../../../../.gitbook/assets/image (367).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (367).png" alt="Task card to assign a task with title, description and priority to an assignee type and optionally send an email" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

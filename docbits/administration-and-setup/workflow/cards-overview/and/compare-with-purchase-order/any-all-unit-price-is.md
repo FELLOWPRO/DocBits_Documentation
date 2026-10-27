@@ -1,8 +1,8 @@
 # Any / All Unit Price is
 
-<figure><img src="../../../../../.gitbook/assets/image (350).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (350).png" alt="Compare with Purchase Order card version 3 reading Any/All unit price is Operator to purchase order" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (349).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (349).png" alt="Compare with Purchase Order card version 4 with an additional Compare as Comparison Data field" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

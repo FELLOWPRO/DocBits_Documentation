@@ -754,6 +754,7 @@
       * [Patrón de coincidencia de orden de compra](administration-and-setup/workflow/patterns/po-matching-pattern.md)
       * [Patrón de lógica de decisión](administration-and-setup/workflow/patterns/decision-logic-pattern.md)
       * [Ejemplos reales de workflows en la práctica](administration-and-setup/workflow/patterns/production-workflow-examples.md)
+      * [Ejemplos de workflows Advanced de producción](administration-and-setup/workflow/patterns/advanced-production-workflow-examples.md)
       * [Patrón de transformación de datos](administration-and-setup/workflow/patterns/data-transformation-pattern.md)
   * [Gestión de pruebas](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

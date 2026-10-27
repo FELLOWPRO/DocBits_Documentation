@@ -86,3 +86,6 @@ Une facture ne doit être affectée à partir d’une table de décision que si 
 ## De l’exemple à votre propre configuration
 
 Définissez les champs, groupes et tables de décision adaptés dans votre propre organisation. Ne considérez pas les désignations neutres comme des champs existants du produit. Vérifiez chaque cas où une condition est remplie ou non, ainsi que les erreurs d’action, dans un environnement de test adapté. Vérifiez les approbations et les exports à partir de leurs résultats réels ; n’activez un workflow qu’après validation métier.
+
+
+[Exemples réels de workflows Advanced en production](advanced-production-workflow-examples.md)

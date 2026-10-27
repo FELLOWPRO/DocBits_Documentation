@@ -628,6 +628,7 @@
     * [PO 比较：方向、公差和卡版本](administration-and-setup/workflow/cards-overview/po-comparison-versions-guide.md)
     * [报价比较卡](administration-and-setup/workflow/cards-overview/quote-comparison-guide.md)
     * [卡版本和可用性](administration-and-setup/workflow/cards-overview/card-versions-guide.md)
+    * [合作伙伴卡：自定义扩展](administration-and-setup/workflow/cards-overview/partner-cards.md)
     * [当](administration-and-setup/workflow/cards-overview/when/README.md)
       * [卡片描述](administration-and-setup/workflow/cards-overview/when/card-description.md)
       * [文档类型操作](administration-and-setup/workflow/cards-overview/when/page.md)

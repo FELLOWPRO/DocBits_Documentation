@@ -15,7 +15,7 @@ Servono autorizzazione alla modifica e un documento con più pagine. Conservare 
 3. Controllare le miniature numerate. Posizionare i separatori dopo l'ultima pagina di ciascun documento: **3** e **7** nell'esempio.
 4. Trascinare le miniature per correggere l'ordine. Ricontrollare ordine e separatori.
 5. Rimuovere una pagina con la **croce rossa** solo se va esclusa. Una pagina separatrice vuota può essere superflua; un dettaglio fiscale o un allegato può essere essenziale.
-6. Scegliere **Confermare**, leggere la richiesta e procedere quando i gruppi sono corretti. **Annullamento** esce senza inviare la divisione.
+6. Scegliere **Confermare**, leggere la richiesta e procedere quando i gruppi sono corretti. **Annulla** esce senza inviare la divisione.
 7. Aprire ogni documento risultante nella dashboard. Verificare prima/ultima pagina, numero di pagine, tipo e valori estratti.
 
 ## Controllo e problemi

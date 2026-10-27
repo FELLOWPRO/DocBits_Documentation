@@ -2,34 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Svrha:
+## Kada koristiti ovu karticu
 
-Kartica radnog toka **"AI Calculation for Cost Increase Surcharges"** koristi AI za automatsko izračunavanje iznosa doplata na osnovu povećanja troškova. Obezbeđuje dosledne i tačne obračune doplata, pojednostavljujući radne tokove i smanjujući ručni rad.
+Koristite ovu akciju da zatražite konfigurisani MTZ/ETZ obračun doplate za materijal i energiju za trenutni dokument. Prvo pripremite podatke dokumenta i konfiguraciju servisa za obračun koji su potrebni vašoj organizaciji.
 
-## Komponente kartice:
+## Stvarna konfiguracija
 
-* **Cost Increase Factor**
-  * **Opis:** Množilac ili procenat koji se primenjuje na osnovni trošak za izračunavanje doplate.
-  * **Detalj:** Određuje iznos doplate na osnovu povećanja troškova (npr. faktor 1.10 za povećanje od 10%).
-* **Base Cost Field**
-  * **Opis:** Polje koje sadrži originalnu vrednost troška koja se koristi kao osnova za obračun doplate.
-  * **Detalj:** Bira se automatski ili se definiše unutar radnog toka radi reference tokom obračuna.
-* **Surcharge Field**
-  * **Opis:** Polje u kojem se čuva vrednost doplate izračunata pomoću AI.
-  * **Detalj:** Ovo polje odražava izračunatu doplatu, čineći je dostupnom za dalju obradu ili izveštavanje.
+Prikazana kartica nema unose Cost Increase Factor, Base Cost Field ili Surcharge Field. Ona delegira obračun konfigurisanom servisu. Ne tražite ove nepostojeće kontrole kartice i ne pretpostavljajte fiksnu procentnu formulu na osnovu naziva kartice.
 
-## Funkcionalnost:
+## Rezultat i provera
 
-**Procena uslova:**
+Uspešan odgovor servisa označava karticu kao uspešnu. Istek vremena (timeout) ili neuspešan odgovor proizvodi grešku kartice. Proverite log kartice i rezultujuće podatke o doplati u dokumentu; sam uspeh poziva ne dokumentuje određeni iznos.
 
-* Kartica se aktivira samo ako se uslovi u oba odeljka, **"Where"** i **"And"**, procene kao tačni.
-* Ako se bilo koji uslov proceni kao netačan, ne vrši se nikakav obračun doplate.
+U režimu testiranja kartice poziv se preskače i uspeh se simulira. Ovo je korisno za testiranje strukture radnog toka, ali ne dokazuje da je servis pokrenut niti da je doplata izračunata.
 
-**Obračun vođen AI:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* Sistem primenjuje **Cost Increase Factor** na **Base Cost Field** da izračuna doplatu.
-* Rezultat se čuva u **Surcharge Field**, obezbeđujući dostupnost za naredne korake radnog toka.
+## Praktičan primer
 
-## Zaključak:
+**Kada koristiti:** Zatražite konfigurisani obračun doplate za materijal/energiju za pripremljenu fakturu.
 
-Kartica radnog toka **"AI Calculation for Cost Increase Surcharges"** automatizuje primenu doplata na osnovu povećanja troškova. Korišćenjem AI za preciznost i doslednost, ova kartica eliminiše ručne obračune, poboljšava efikasnost i podržava tačno upravljanje troškovima u automatizovanim radnim tokovima.
+**Konfiguracija:** Koristite sintetičku fakturu `DEMO-001` sa podacima koje zahteva vaš konfigurisani MTZ/ETZ servis. Dodajte ovu akciju nakon uslova validacije dokumenta.
+
+**Očekivani rezultat i kontraprimer:** Uspešan odgovor servisa označava karticu kao uspešnu; istek vremena ili neuspešan odgovor proizvodi grešku kartice. Proverite polja dokumenta i rezultat obračuna zasebno. Režim testiranja kartice simulira uspeh i ne poziva servis, pa ne može dokazati stvaran rezultat doplate.
+
+Ovo je ilustrativna konfiguracija i očekivani ishod. Koristite polja, korisnike i grupe konfigurisane u vašoj test organizaciji; ovo nije tvrdnja da je primer izvršen.

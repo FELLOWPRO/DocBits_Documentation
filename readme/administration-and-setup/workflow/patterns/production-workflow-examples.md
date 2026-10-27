@@ -86,3 +86,6 @@ Una factura solo debe asignarse mediante una tabla de decisión cuando coincidan
 ## Del ejemplo a tu propia configuración
 
 Define los campos, grupos y tablas de decisión adecuados en tu propia organización. No utilices las denominaciones neutras como si fueran campos existentes del producto. Comprueba cada caso de cumplimiento e incumplimiento de las condiciones, así como los errores de las acciones, en un entorno de pruebas adecuado. Verifica las aprobaciones y exportaciones según sus resultados reales; activa un workflow solo después de su aceptación funcional.
+
+
+[Ejemplos de workflows Advanced de producción](advanced-production-workflow-examples.md)

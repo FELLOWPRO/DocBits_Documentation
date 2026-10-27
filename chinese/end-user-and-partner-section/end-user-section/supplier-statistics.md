@@ -2,6 +2,8 @@
 
 使用供应商统计找出需要调查的交付表现。管理员必须启用模块，并提供相应发运数据；指标取决于组织中实际存在的记录。
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-zh.png" alt="没有发货记录的组织中的供应商统计列。空表不能证明交付表现良好。"><figcaption><p>没有发货记录的组织中的供应商统计列。空表不能证明交付表现良好。</p></figcaption></figure>
+
 ## 检查供应商
 
 1. 打开**供应商统计**。如果入口不可用，请管理员检查模块和访问权限。

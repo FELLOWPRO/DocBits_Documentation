@@ -2,6 +2,8 @@
 
 Usare questa vista quando mancano un fornitore, un ordine o altri dati anagrafici. Mostra l'ora di sincronizzazione registrata per tipo nell'organizzazione corrente, non il contenuto di ogni record importato.
 
+<figure><img src="../../../.gitbook/assets/guide-screenshots-20261027-data-sync-overview-it.png" alt="Orari di sincronizzazione registrati per due tipi di dati e avviso relativo a dati più vecchi di due settimane. Questo estratto non dimostra la completezza dei dati importati. Le intestazioni delle colonne sono ancora visualizzate in inglese. Anche l’avviso e i relativi pulsanti sono attualmente visualizzati in inglese."><figcaption><p>Orari di sincronizzazione registrati per due tipi di dati e avviso relativo a dati più vecchi di due settimane. Questo estratto non dimostra la completezza dei dati importati. Le intestazioni delle colonne sono ancora visualizzate in inglese. Anche l’avviso e i relativi pulsanti sono attualmente visualizzati in inglese.</p></figcaption></figure>
+
 ## Procedura
 
 1. Confermare organizzazione, eventuale sotto-organizzazione e società ERP di origine.

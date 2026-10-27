@@ -1,25 +1,46 @@
 # Zapisywanie i stosowanie zmian
 
-## Zapisywanie i stosowanie zmian wprowadzonych w Layout Managerze to ważny krok zapewniający skuteczne zastosowanie dostosowań układu w przepływie pracy przetwarzania dokumentów.
+Zmiany wprowadzone w Layout Builderze zaczynają obowiązywać dopiero po ich zapisaniu. Zapis przypisuje układ do typu dokumentu, dzięki czemu nowe dokumenty z niego korzystają.
 
-### Oto kroki zapisu i stosowania zmian:
+## Zapisywanie zmian
 
-#### Zapisywanie zmian:
+Po edycji układu wybierz **Zapisz** w prawym górnym rogu nagłówka.
 
-* Po wprowadzeniu żądanych dostosowań w Layout Managerze poszukaj przycisku „Zapisz”, aby zapisać zmiany.
-* Kliknij ten przycisk, aby zapisać zmiany w Layout Managerze. Powoduje to utworzenie kopii zapasowej dostosowań układu i zapewnia ich dostępność w przyszłych sesjach edycji.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-header-pl.png" alt="Nagłówek Layout Buildera z selektorami układu po lewej stronie oraz przyciskiem Zapisz i menu z trzema kropkami po prawej"><figcaption>Przycisk **Zapisz** znajduje się w prawym górnym rogu Layout Buildera.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+Podczas pracy nagłówek pokazuje stan Twoich zmian:
 
-#### Stosowanie zmian w przepływie pracy przetwarzania dokumentów:
+- Przycisk **Zapisz** bez komunikatu obok oznacza, że układ nie został zmieniony.
+- Komunikat **Niezapisane zmiany** pojawia się, gdy tylko zmodyfikujesz układ. Wybierz **Zapisz**, aby zachować zmiany.
 
-* Po zapisaniu zmian w Layout Managerze są one zazwyczaj automatycznie stosowane w przepływie pracy przetwarzania dokumentów, który korzysta z tego konkretnego typu dokumentu.
-* Nowe dokumenty oparte na tym szablonie odziedziczą zaktualizowane ustawienia układu podczas ich tworzenia. Oznacza to, że nowe dokumenty będą zawierać nowe grupy, pola lub inne dostosowania układu wprowadzone w Layout Managerze.
-* Istniejące dokumenty już utworzone przy użyciu tego szablonu mogą być traktowane inaczej w zależności od oprogramowania i konfiguracji. W niektórych przypadkach zmiany mogą zostać automatycznie zastosowane do istniejących już dokumentów, podczas gdy w innych przypadkach mogą być wymagane ręczne korekty w celu dostosowania istniejących dokumentów do zaktualizowanych ustawień układu.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-unsaved-changes-pl.png" alt="Nagłówek Layout Buildera z komunikatem Niezapisane zmiany obok przycisku Zapisz"><figcaption>Komunikat **Niezapisane zmiany** jest widoczny, dopóki układ nie zostanie zapisany.</figcaption></figure>
 
-#### Testowanie zmian:
+Po udanym zapisie komunikat zastępuje godzina ostatniego zapisu. Ponowne wybranie **Zapisz** jest bezpieczne: jeśli od ostatniego zapisu nic się nie zmieniło, nic nie zostanie zapisane.
 
-* Po zapisaniu zmian układu i ich zastosowaniu w przepływie pracy przetwarzania dokumentów zaleca się przetestowanie zmian, aby upewnić się, że działają zgodnie z przeznaczeniem.
-* Utwórz nowe dokumenty testowe lub przejrzyj istniejące dokumenty, aby upewnić się, że zaktualizowane ustawienia układu są poprawnie stosowane, a dane są przechwytywane i wyświetlane zgodnie z oczekiwaniami.
+Jeśli spróbujesz opuścić Layout Builder z niezapisanymi zmianami, DocBits zapyta **Odrzucić zmiany?**. Wybierz **Anuluj**, aby zostać i zapisać, albo **OK**, aby wyjść bez zapisywania.
 
-Wykonując te kroki, możesz skutecznie zapisywać zmiany w Layout Managerze i stosować je w przepływie pracy przetwarzania dokumentów. Zapewnia to płynną integrację dostosowań układu z procesem tworzenia i przetwarzania dokumentów.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-leave-prompt-pl.png" alt="Okno dialogowe z prośbą o potwierdzenie wyjścia z Layout Buildera z niezapisanymi zmianami"><figcaption>Potwierdzenie wyświetlane przy wyjściu z niezapisanymi zmianami.</figcaption></figure>
+
+## Pozostałe akcje w nagłówku
+
+Menu z trzema kropkami obok przycisku **Zapisz** zawiera pozostałe akcje dotyczące układu:
+
+- **Automatyczne generowanie szablonu** – tworzy układ automatycznie na podstawie pól typu dokumentu.
+- **Edytuj JSON** – pozwala edytować definicję układu bezpośrednio w formacie JSON.
+- **Kopiuj JSON** – kopiuje definicję układu do schowka.
+- **Ustawienia układu** – otwiera ogólne ustawienia układu.
+
+**Automatyczne generowanie szablonu** zastępuje istniejący układ, więc najpierw sprawdź, który układ jest otwarty. **Edytuj JSON** jest przeznaczone dla zaawansowanych użytkowników i warto z niego korzystać tylko wtedy, gdy znasz format szablonu.
+
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-more-menu-pl.png" alt="Menu z trzema kropkami w Layout Builderze z pozycjami Automatyczne generowanie szablonu, Edytuj JSON, Kopiuj JSON i Ustawienia układu"><figcaption>Akcje dostępne w menu z trzema kropkami.</figcaption></figure>
+
+## Stosowanie zmian
+
+Po zapisaniu układ jest używany przez przepływ pracy przetwarzania dokumentów dla tego typu dokumentu:
+
+- Nowe dokumenty przetwarzane z tym typem dokumentu korzystają ze zaktualizowanego układu.
+- Dokumenty już przetworzone zachowują układ, z którym zostały zarejestrowane.
+
+## Testowanie zmian
+
+Po zapisaniu otwórz dokument tego typu i sprawdź, czy pola i grupy wyglądają zgodnie z oczekiwaniami. Jeśli czegoś brakuje, wróć do Layout Buildera, popraw układ i zapisz ponownie.

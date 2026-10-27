@@ -753,6 +753,7 @@
       * [Patroon voor taakbeheer](administration-and-setup/workflow/patterns/task-management-pattern.md)
       * [PO-overeenkomend patroon](administration-and-setup/workflow/patterns/po-matching-pattern.md)
       * [Beslissingslogicapatroon](administration-and-setup/workflow/patterns/decision-logic-pattern.md)
+      * [Echte workflowvoorbeelden uit de praktijk](administration-and-setup/workflow/patterns/production-workflow-examples.md)
       * [Patroon voor gegevenstransformatie](administration-and-setup/workflow/patterns/data-transformation-pattern.md)
   * [Testbeheer](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

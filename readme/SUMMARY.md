@@ -178,6 +178,7 @@
     * [Document Types](setup/document-types/README.md)
       * [EDI Data Transformation Process](setup/document-types/edi-data-transformation-process.md)
       * [Layout Builder](setup/document-types/layout-builder.md)
+      * [Değişiklikleri Kaydetme ve Uygulama](setup/document-types/save-and-apply-changes.md)
       * [Origin Layouts](setup/document-types/origin-layouts.md)
       * [Regex Manager](setup/document-types/regex-manager.md)
     * [Importing Master Data](setup/importing-customer-master-data/README.md)

@@ -1,5 +1,0 @@
----
-hidden: true
----
-
-# Exemplo SQL

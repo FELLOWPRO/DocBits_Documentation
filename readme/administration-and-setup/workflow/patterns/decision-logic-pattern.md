@@ -1143,3 +1143,5 @@ Uitzonderingen: 15 (1,2%)
 **Historische voorbeeldmetadata:**
 
 **Patroonversie:** 1.0 **Laatst bijgewerkt:** 23 oktober 2025 **Moeilijkheid:** gemiddeld **Geschatte tijd:** 30–45 minuten
+
+[Echte workflowvoorbeelden uit de praktijk](production-workflow-examples.md)

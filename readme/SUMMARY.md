@@ -623,6 +623,7 @@
     * [Confronti PO: direzione, tolleranza e versioni della carta](administration-and-setup/workflow/cards-overview/po-comparison-versions-guide.md)
     * [Schede di confronto preventivi](administration-and-setup/workflow/cards-overview/quote-comparison-guide.md)
     * [Versioni e disponibilità delle carte](administration-and-setup/workflow/cards-overview/card-versions-guide.md)
+    * [Schede partner: estensioni personalizzate](administration-and-setup/workflow/cards-overview/partner-cards.md)
     * [Quando](administration-and-setup/workflow/when/README.md)
       * [Descrizione della carta](administration-and-setup/workflow/when/card-description.md)
       * [Operazione di Tipo di Documento](administration-and-setup/workflow/when/page.md)

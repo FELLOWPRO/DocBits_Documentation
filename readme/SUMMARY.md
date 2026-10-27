@@ -759,6 +759,7 @@
       * [采购订单匹配模式](administration-and-setup/workflow/cards-overview/patterns/po-matching-pattern.md)
       * [决策逻辑模式](administration-and-setup/workflow/cards-overview/patterns/decision-logic-pattern.md)
       * [来自实际生产环境的工作流示例](administration-and-setup/workflow/cards-overview/patterns/production-workflow-examples.md)
+      * [生产环境中的高级工作流示例](administration-and-setup/workflow/cards-overview/patterns/advanced-production-workflow-examples.md)
       * [数据转换模式](administration-and-setup/workflow/cards-overview/patterns/data-transformation-pattern.md)
   * [测试管理器](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)

@@ -2,6 +2,8 @@
 
 Utilice las estadísticas de proveedores para detectar entregas que requieren investigación. El administrador debe activar el módulo y deben existir datos de envíos pertinentes. Los indicadores dependen de los registros de su organización.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-es.png" alt="Columnas de las estadísticas de proveedores en una organización sin registros de envíos. Una tabla vacía no demuestra un buen rendimiento de entrega."><figcaption><p>Columnas de las estadísticas de proveedores en una organización sin registros de envíos. Una tabla vacía no demuestra un buen rendimiento de entrega.</p></figcaption></figure>
+
 ## Revisar un proveedor
 
 1. Abra **Estadísticas de proveedores**. Si no está disponible, solicite comprobar módulo y acceso.

@@ -1,6 +1,6 @@
 # E-Rechnungs-Steuerkategorien ERP-Steuercodes zuordnen
 
-<figure><img src="../../../../.gitbook/assets/edoc-tax-mapping-form-de.png" alt="Formular für die Steuercode-Zuordnung vor dem Speichern eines Eintrags."><figcaption><p>Formular für die Steuercode-Zuordnung vor dem Speichern eines Eintrags.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/edoc-tax-mapping-form-de.png" alt="Formular für die Steuercode-Zuordnung vor dem Speichern eines Eintrags. Einige Kategorienbeschreibungen erscheinen in der aktuellen Oberfläche auf Englisch; die technischen Kategoriecodes bleiben unverändert."><figcaption><p>Formular für die Steuercode-Zuordnung vor dem Speichern eines Eintrags. Einige Kategorienbeschreibungen erscheinen in der aktuellen Oberfläche auf Englisch; die technischen Kategoriecodes bleiben unverändert.</p></figcaption></figure>
 
 E-Rechnungen können eine Umsatzsteuerkategorie wie **S** statt des benötigten ERP-Steuercodes enthalten. Die Steuercode-Zuordnung definiert diese Umsetzung. Sie ist von Steuerbetragskorrekturen und E-Rechnungs-Prüfregeln getrennt.
 

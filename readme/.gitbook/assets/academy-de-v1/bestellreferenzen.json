@@ -1,0 +1,249 @@
+{
+  "format": "Academy reference data, not a DocBits API import schema",
+  "supplier_key": "ACADEMY-SUP-001",
+  "orders": [
+    {
+      "number": "ACADEMY-PO-003",
+      "currency": "EUR",
+      "rows": [
+        {
+          "position": 1,
+          "item": "ART-A",
+          "description": "Artikel A",
+          "quantity": 10,
+          "unit_price": 50
+        },
+        {
+          "position": 2,
+          "item": "ART-B",
+          "description": "Artikel B",
+          "quantity": 5,
+          "unit_price": 100
+        },
+        {
+          "position": 3,
+          "item": "ART-C",
+          "description": "Artikel C",
+          "quantity": 20,
+          "unit_price": 15
+        }
+      ]
+    },
+    {
+      "number": "ACADEMY-PO-030",
+      "currency": "EUR",
+      "rows": [
+        {
+          "position": 1,
+          "item": "ACA-001",
+          "description": "Servicepaket 01",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 2,
+          "item": "ACA-002",
+          "description": "Servicepaket 02",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 3,
+          "item": "ACA-003",
+          "description": "Servicepaket 03",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 4,
+          "item": "ACA-004",
+          "description": "Servicepaket 04",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 5,
+          "item": "ACA-005",
+          "description": "Servicepaket 05",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 6,
+          "item": "ACA-006",
+          "description": "Servicepaket 06",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 7,
+          "item": "ACA-007",
+          "description": "Servicepaket 07",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 8,
+          "item": "ACA-008",
+          "description": "Servicepaket 08",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 9,
+          "item": "ACA-009",
+          "description": "Servicepaket 09",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 10,
+          "item": "ACA-010",
+          "description": "Servicepaket 10",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 11,
+          "item": "ACA-011",
+          "description": "Servicepaket 11",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 12,
+          "item": "ACA-012",
+          "description": "Servicepaket 12",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 13,
+          "item": "ACA-013",
+          "description": "Servicepaket 13",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 14,
+          "item": "ACA-014",
+          "description": "Servicepaket 14",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 15,
+          "item": "ACA-015",
+          "description": "Servicepaket 15",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 16,
+          "item": "ACA-016",
+          "description": "Servicepaket 16",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 17,
+          "item": "ACA-017",
+          "description": "Servicepaket 17",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 18,
+          "item": "ACA-018",
+          "description": "Servicepaket 18",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 19,
+          "item": "ACA-019",
+          "description": "Servicepaket 19",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 20,
+          "item": "ACA-020",
+          "description": "Servicepaket 20",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 21,
+          "item": "ACA-021",
+          "description": "Servicepaket 21",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 22,
+          "item": "ACA-022",
+          "description": "Servicepaket 22",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 23,
+          "item": "ACA-023",
+          "description": "Servicepaket 23",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 24,
+          "item": "ACA-024",
+          "description": "Servicepaket 24",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 25,
+          "item": "ACA-025",
+          "description": "Servicepaket 25",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 26,
+          "item": "ACA-026",
+          "description": "Servicepaket 26",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 27,
+          "item": "ACA-027",
+          "description": "Servicepaket 27",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 28,
+          "item": "ACA-028",
+          "description": "Servicepaket 28",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 29,
+          "item": "ACA-029",
+          "description": "Servicepaket 29",
+          "quantity": 10,
+          "unit_price": 10
+        },
+        {
+          "position": 30,
+          "item": "ACA-030",
+          "description": "Servicepaket 30",
+          "quantity": 10,
+          "unit_price": 10
+        }
+      ]
+    }
+  ]
+}

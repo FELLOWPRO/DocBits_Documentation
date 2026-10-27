@@ -144,3 +144,5 @@ Every agent — system or custom — has a settings menu with the following sect
 ### Creating custom agents
 
 Beyond the defaults, you can create your own **orchestrators** and **specialists** to match your processes. Open **Agents → Create Agent** to launch the wizard, which walks through the same configuration described above: pick the **role** (Orchestrator or Specialist), give the agent a **name** and a clear **description** (an orchestrator is chosen from this text, and an orchestrator picks its specialists from theirs), write its prompt, choose its skills, set its reasoning effort, and — for orchestrators — pick the specialists in its agent pool. Custom agents can be fully edited or deleted at any time.
+
+Detailed guides: [Teams and Discord connections](ai-workforce-chat-connections.md) and [Agent memory](ai-workforce-agent-memory.md).

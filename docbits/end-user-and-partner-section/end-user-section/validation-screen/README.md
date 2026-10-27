@@ -101,3 +101,5 @@ For invoices, **More options → Document Flow** opens the processing flow. Depe
 ## If you cannot edit or continue
 
 Read the displayed reason: the document may be locked, read-only, in another processing status or restricted by your role. Resolve validation messages and ask the responsible colleague or administrator about access or configuration. For an error that remains, use [Troubleshooting](troubleshooting/README.md) or prepare a support ticket with the document and the exact message.
+
+For page organization, see [Split a PDF and organize its pages](../dashboard/manual-pdf-splitting.md).

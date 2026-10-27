@@ -2,6 +2,8 @@
 
 Ces statistiques permettent de repérer les performances de livraison à examiner. L'administrateur doit activer le module et les données d'expédition appropriées doivent exister. Les indicateurs dépendent des enregistrements de votre organisation.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-supplier-statistics-overview-fr.png" alt="Colonnes des statistiques fournisseurs dans une organisation sans données de livraison. Une table vide ne prouve pas une bonne performance de livraison."><figcaption><p>Colonnes des statistiques fournisseurs dans une organisation sans données de livraison. Une table vide ne prouve pas une bonne performance de livraison.</p></figcaption></figure>
+
 ## Examiner un fournisseur
 
 1. Ouvrez **Statistiques des fournisseurs**. Si l'option manque, faites vérifier module et accès.

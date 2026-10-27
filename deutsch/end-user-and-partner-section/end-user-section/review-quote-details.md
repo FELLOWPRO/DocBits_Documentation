@@ -2,7 +2,15 @@
 
 Die Angebotsansicht gilt für entsprechend konfigurierte Dokumente. Dokumenttyp, Layout, Rechte und Workflow bestimmen die sichtbaren Felder und Aktionen. Die Ansicht ist vom Bestellabgleich getrennt.
 
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-header-de.png" alt="Kopf eines fiktiven dreiseitigen deutschen Angebots in DocBits: Lieferant, Referenz, Datum, Währung und Gesamtbetrag. Der Ausschnitt zeigt die ersten sechs Kopffelder."><figcaption><p>Kopf eines fiktiven dreiseitigen deutschen Angebots in DocBits: Lieferant, Referenz, Datum, Währung und Gesamtbetrag. Der Ausschnitt zeigt die ersten sechs Kopffelder.</p></figcaption></figure>
+
+Fiktives dreiseitiges Angebot herunterladen (PDF)
+
+{% file src="../../.gitbook/assets/docbits-training-quote-de-20261027.pdf" %}
+
 ## Positionen bearbeiten
+
+<figure><img src="../../.gitbook/assets/guide-screenshots-20261027-quote-line-editor-de.png" alt="Beschreibung und Einzelpreis der ausgewählten ersten Position. Es wurden keine Werte geändert oder gespeichert."><figcaption><p>Beschreibung und Einzelpreis der ausgewählten ersten Position. Es wurden keine Werte geändert oder gespeichert.</p></figcaption></figure>
 
 1. Öffnen Sie das richtige Angebot. Vergleichen Sie Lieferant, Referenz, Datum und Währung mit dem Original.
 2. Prüfen Sie Artikelnummern, Beschreibungen, Mengen, Einheiten, Preise und Beträge. Eine passende Artikelnummer belegt weder gleichen Preis noch gleiche Einheit.

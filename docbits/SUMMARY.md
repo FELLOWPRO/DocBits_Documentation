@@ -462,6 +462,7 @@
       * [Rule Conditions (Applies when)](administration-and-setup/settings/global-settings/document-types/rule-conditions-applies-when.md)
       * [Custom Validation Rules](administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md)
       * [Transformation Rules](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
+        * [Correct an OCR error in a PO number](administration-and-setup/settings/global-settings/document-types/transformation-rules/correct-po-number-ocr-error.md)
       * [More Settings](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [Best practices](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)

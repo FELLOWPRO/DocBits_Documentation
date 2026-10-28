@@ -22,7 +22,7 @@ Strona **Model Pociągu** pokazuje liczbę próbek oraz listę przesłanych doku
 3. Przeciągnij pliki PDF i upuść je w oknie dialogowym lub użyj przycisku **Wgrywać**, aby je wybrać. Obecny importer dokumentów przykładowych akceptuje **pliki PDF**; odrzuca inne typy plików. Wybranie plików rozpoczyna przesyłanie.
 4. Zamknij okno dialogowe i sprawdź, czy dokumenty pojawiły się na liście szkoleniowej. Jeśli DocBits zgłosi błąd przesyłania lub dokument już istnieje, popraw plik lub wybierz inny przykład przed kontynuowaniem.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc651-import-dialog-pl-20261011.png" alt="Okno dialogowe Wgrywać z selektorem Format kwoty i daty, obszarem przeciągnij i upuść oraz polem Wgrywać"><figcaption><p>Wybierz format przed wybraniem przykładowych plików PDF.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-pl.png" alt="Okno dialogowe Wgrywać z selektorem Format kwoty i daty, obszarem przeciągnij i upuść oraz polem Wgrywać"><figcaption><p>Wybierz format przed wybraniem przykładowych plików PDF.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc651-format-menu-pl-20261011.png" alt="Menu Format kwoty i daty z wyborami krajów i regionów, w tym Germany i United Kingdom"><figcaption><p>Wybierz format użyty w dokumencie, a nie preferowany język interfejsu.</p></figcaption></figure>
 

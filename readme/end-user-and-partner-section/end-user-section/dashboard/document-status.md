@@ -1,5 +1,23 @@
 # Stato dei documenti
 
+## Tre domande sullo stato invece di un'unica catena di stato
+
+<figure><img src="../../../.gitbook/assets/process-status-it-20261028.png" alt="Classificare correttamente lo stato del documento: Elaborazione, approvazione ed esportazione sono stati diversi."><figcaption><p>Elaborazione, approvazione ed esportazione sono stati diversi. Il diagramma è schematico; le impostazioni attive della tua organizzazione determinano il comportamento effettivo.</p></figcaption></figure>
+
+Un documento potrebbe ancora attendere una decisione di approvazione aziendale anche se il riconoscimento è terminato. Leggere lo stato visualizzato nel contesto della fase di elaborazione e del processo di approvazione.
+
+| Domanda | Significato | Prossimo passo |
+| --- | --- | --- |
+| **L'elaborazione è completa?** | OCR, classificazione ed estrazione preparano il documento per la revisione. "Pronto per la convalida" non è un'approvazione aziendale. | Apri il documento, confronta le informazioni con l'originale e modifica gli errori dei campi obbligatori. |
+| **La decisione di approvazione è stata completata?** | Un'approvazione può avere diversi livelli. L'approvazione iniziale non completa automaticamente tutte le fasi. | Controlla il livello attuale, il revisore responsabile e la cronologia delle approvazioni. |
+| **Il documento è stato trasferito?** | Lo stato dell'esportazione e il feedback descrivono la consegna tecnica. Un valore memorizzato o una voce di approvazione non dimostra l'elaborazione ERP. | Leggere i dettagli dell'esportazione e, se necessario, riprodurre il processo nel sistema di destinazione. |
+
+Il grafico organizza queste domande in tre tracce. Non è un elenco esaustivo di codici di stato tecnico e non stabilisce un ordine universale. Le transizioni effettive dipendono dal tipo di documento, dal flusso di lavoro e dal percorso di esportazione.
+
+### Se si verificano errori, iniziare dal passaggio interessato
+
+Aprire lo stato dell'errore e leggere il messaggio. Se manca un valore richiesto, controllarlo e correggerlo rispetto all'originale. Se il destinatario segnala un errore di esportazione, risolvine la causa prima di riprovare. Utilizza [Flusso di documenti](document-flow.md) per le fasi di elaborazione e la guida [Approvazione](../approve-or-reject-invoices.md) per le decisioni di approvazione aziendale.
+
 Gli stati di elaborazione indicano passaggi come OCR, classificazione o esportazione. **Pronto per la convalida** indica che il documento può essere verificato. Gli stati di approvazione indicano un’approvazione in attesa. **Esportato** indica che l’esportazione del documento è terminata. Fai clic sullo stato **Errore** per consultare i dettagli disponibili.
 
 Se sono disponibili i tempi di elaborazione, passa il puntatore sullo stato per vedere le fasi e la loro durata. Per i documenti con possibili duplicati compare un’icona: aprila per confrontare i documenti correlati.

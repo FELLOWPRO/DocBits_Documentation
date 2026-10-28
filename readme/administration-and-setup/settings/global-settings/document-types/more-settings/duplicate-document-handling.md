@@ -1,5 +1,12 @@
 # Duplicaatdetectie
 
+## Detecteer duplicaten en neem een weloverwogen beslissing
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-nl-20261028.png" alt="Detecteer duplicaten en neem een weloverwogen beslissing"><figcaption><p>Detecteer duplicaten en neem een weloverwogen beslissing</p></figcaption></figure>
+
+DocBits vergelijkt de geconfigureerde velden binnen het geselecteerde tijdvenster. Wanneer er een match wordt gevonden, opent u de duplicaatwaarschuwing en vergelijkt u de documenten voordat u doorgaat of archiveert. Het blokkeren van dubbele exporten is een aparte instelling; een match archiveert niet automatisch een document.
+
+
 Gebruik **Duplicaatdetectie** om documenten te markeren die binnen een gekozen periode overeenkomen met een ander document op geselecteerde velden. De opties behoren bij elk documenttype.
 
 ## De instellingen openen

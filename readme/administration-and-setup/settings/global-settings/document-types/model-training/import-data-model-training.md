@@ -12,7 +12,7 @@ Nelle impostazioni del tipo di documento interessato, apri l’addestramento del
 
 Seleziona il formato degli importi e delle date corrispondente ai file, poi scegli i documenti da importare. Per esempio, `1.234,56` e `1,234.56` usano separatori diversi; una data come `05/06/2026` deve essere interpretata secondo il formato selezionato.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-it.png" alt="Modulo di importazione vuoto con formato degli importi e delle date. Il titolo nativo Caricatore di documenti Caricatore è duplicato. Nessun file è stato selezionato o caricato e nessun addestramento è stato avviato."><figcaption><p>Modulo di importazione vuoto con formato degli importi e delle date. Il titolo nativo Caricatore di documenti Caricatore è duplicato. Nessun file è stato selezionato o caricato e nessun addestramento è stato avviato.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-it.png" alt="Modulo di importazione vuoto con formato degli importi e delle date. Il titolo della finestra è Caricatore di documenti. Nessun file è stato selezionato o caricato e nessun addestramento è stato avviato."><figcaption><p>Modulo di importazione vuoto con formato degli importi e delle date. Il titolo della finestra è Caricatore di documenti. Nessun file è stato selezionato o caricato e nessun addestramento è stato avviato.</p></figcaption></figure>
 
 Controlla la selezione prima di avviare l’importazione. Attendi la fine dell’elaborazione e verifica gli errori e il tipo di documento assegnato. Correggi gli esempi classificati o estratti in modo errato prima di usarli per l’addestramento.
 

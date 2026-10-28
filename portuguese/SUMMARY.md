@@ -928,6 +928,7 @@
 ## Segurança <a href="#security" id="security"></a>
 
 * [FAQ Segurança e Conformidade](security/security-and-compliance-faq.md)
+* [Armazenamento, retenção e eliminação de dados](security/data-storage-and-retention.md)
 * [Armazenamento seguro de credenciais](security/secure-storage-of-credentials.md)
 * [Cifragem em repouso](security/encryption-at-rest.md)
 * [Cookies e armazenamento do navegador](security/cookies-and-browser-storage.md)

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">Wygaśnięcie i usunięcie dokumentu</title>
+<desc id="desc">Wyświetl osobno dwa ustawienia przechowywania. Grafika nie podaje daty rozpoczęcia. W przypadku wdrożenia należy potwierdzić standard systemu, częstotliwość czyszczenia i zakres usuwania.</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOCBITS / PRZEGLĄD PROCESÓW</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">Wygaśnięcie i usunięcie dokumentu</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">Wyświetl osobno dwa ustawienia przechowywania.</text>
+<rect x="90" y="300" width="570" height="180" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="114" y="347.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Dokumenty ogólnie</text>
+<text x="114" y="402.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Delete document after</text>
+<rect x="790" y="300" width="470" height="180" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="814" y="347.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Wybrana wartość</text>
+<text x="814" y="402.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Default lub jawny czas trwania</text>
+<rect x="1390" y="300" width="520" height="180" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1414" y="347.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Automatyczne usuwanie</text>
+<text x="1414" y="402.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Zgodnie z obowiązującymi</text>
+<text x="1414" y="444.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">zasadami sprzątania</text>
+<polyline points="660,385 770,385" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="770,385 756.8362615716444,392.19138307906303 756.8362615716444,377.80861692093697" fill="#126a8a"/>
+<polyline points="1260,385 1370,385" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1370,385 1356.8362615716444,392.19138307906303 1356.8362615716444,377.80861692093697" fill="#126a8a"/>
+<rect x="90" y="520" width="570" height="180" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="114" y="567.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Zakończone dokumenty</text>
+<text x="114" y="622.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Delete finished document after</text>
+<rect x="790" y="520" width="470" height="180" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="814" y="567.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Wybrana wartość</text>
+<text x="814" y="622.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Default lub jawny czas trwania</text>
+<rect x="1390" y="520" width="520" height="180" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1414" y="567.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Automatyczne usuwanie</text>
+<text x="1414" y="622.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Zgodnie z obowiązującymi</text>
+<text x="1414" y="664.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">zasadami sprzątania</text>
+<polyline points="660,605 770,605" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="770,605 756.8362615716444,612.191383079063 756.8362615716444,597.808616920937" fill="#126a8a"/>
+<polyline points="1260,605 1370,605" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1370,605 1356.8362615716444,612.191383079063 1356.8362615716444,597.808616920937" fill="#126a8a"/>
+<text x="90" y="753.96" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#126a8a">Mapowanie schematyczne – a nie skalowana oś czasu.</text>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">Grafika nie podaje daty rozpoczęcia. W przypadku wdrożenia należy potwierdzić standard systemu, częstotliwość czyszczenia i zakres</text>
+<text x="118" y="909.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">usuwania.</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">Schematyczne objaśnienie · Proces i opcje zależą od konfiguracji.</text>
+</svg>

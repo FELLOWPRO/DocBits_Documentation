@@ -1,5 +1,26 @@
 # Zatwierdź lub odrzuć fakturę
 
+## Co następuje po decyzji o zatwierdzeniu działalności gospodarczej
+
+<figure><img src="../../.gitbook/assets/process-approval-pl-20261028.png" alt="Zatwierdź lub odrzuć fakturę: Rozróżnij weryfikację, decyzję i dalsze przekazanie."><figcaption><p>Rozróżnij weryfikację, decyzję i dalsze przekazanie. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
+
+Walidacja techniczna sprawdza dane dokumentu; zatwierdzenie rejestruje decyzję biznesową autoryzowanego recenzenta. Nawet technicznie ważna faktura może nadal wymagać jednego lub większej liczby zatwierdzeń.
+
+1. **Sprawdź odpowiedzialność:** Otwórz przypisaną fakturę i sprawdź, na jaki poziom zatwierdzenia możesz zdecydować.
+2. **Przejrzyj fakturę:** porównaj wartości nagłówka, pozycje i podatek z oryginalnym dokumentem i wymaganiami firmy.
+3. **Decyzja dotycząca dokumentu:** Zatwierdź prawidłową fakturę lub odrzuć ją z konkretnego powodu. Poczekaj na odpowiedź, a następnie sprawdź historię zatwierdzeń.
+4. **Określ kolejny krok:** Jeśli skonfigurowane są dodatkowe etapy zatwierdzania, faktura oczekuje na ich decyzję. Po odrzuceniu, wyjaśnieniu, poprawieniu i ponownym przesłaniu postępuj zgodnie ze skonfigurowanym procesem. Oddzielny proces eksportu sprawdza, czy dane dotarły do ​​systemu docelowego.
+
+### Trzy stwierdzenia, które nie oznaczają tego samego
+
+| oświadczenie | Czego nie dowodzi automatycznie |
+| --- | --- |
+| **Dane zostały zweryfikowane.** | Czy autoryzowany recenzent biznesowy go zatwierdził. |
+| **Zatwierdzony przez recenzenta.** | Czy wszystkie wymagane etapy zatwierdzania zostały zakończone. |
+| **Zatwierdzenia zostały zakończone.** | Fakt, że faktura została już wyeksportowana lub zaksięgowana w ERP. |
+
+Użyj [Zadania dokumentujące](tasks.md) do przetwarzania przydzielonych prac, a [Stan dokumentu](dashboard/document-status.md) do klasyfikowania bieżącego statusu.
+
 Film pokazuje zatwierdzanie z perspektywy osoby sprawdzającej.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-customer/v1/pl.mp4" %}

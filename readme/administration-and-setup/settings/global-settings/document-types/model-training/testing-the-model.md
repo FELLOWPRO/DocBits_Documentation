@@ -1,5 +1,12 @@
 # Testando o modelo
 
+## Avalie com documentos de teste independentes
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-pt-20261028.png" alt="Avalie com documentos de teste independentes"><figcaption><p>Avalie com documentos de teste independentes</p></figcaption></figure>
+
+Os dados de treinamento e os documentos de teste têm finalidades diferentes. Para documentos de teste independentes, defina os tipos de documentos e valores de campo esperados e compare-os com as previsões. Registre a versão do modelo, amostra, discrepâncias e falhas técnicas. Faça melhorias direcionadas e repita o teste com o mesmo protocolo de avaliação. Os valores mostrados são um exemplo e não uma medida de precisão.
+
+
 O teste deve avaliar os resultados em documentos representativos que não tenham sido usados no treino. Prepare as respostas esperadas para cada documento: o tipo e, para avaliar a extração, os valores dos campos.
 
 ## Executar o teste

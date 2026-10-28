@@ -1,5 +1,12 @@
 # Detecção de duplicatas
 
+## Detecte duplicatas e tome uma decisão informada
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-pt-20261028.png" alt="Detecte duplicatas e tome uma decisão informada"><figcaption><p>Detecte duplicatas e tome uma decisão informada</p></figcaption></figure>
+
+DocBits compara os campos configurados dentro da janela de tempo selecionada. Quando uma correspondência for encontrada, abra o aviso de duplicata e compare os documentos antes de continuar ou arquivar. O bloqueio de exportações duplicadas é uma configuração separada; uma correspondência não arquiva automaticamente um documento.
+
+
 Use a **Detecção de duplicatas** para marcar documentos que coincidem com outro documento em campos selecionados dentro de um período escolhido. As opções pertencem a cada tipo de documento.
 
 ## Abrir as configurações

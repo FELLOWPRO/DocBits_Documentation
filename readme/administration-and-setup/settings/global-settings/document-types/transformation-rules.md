@@ -1,5 +1,7 @@
 # Transformationsregeln
 
+Für alle Schritte, Varianten, Gegenbeispiele und das Zusammenspiel der Regeln siehe den [vollständigen Praxisüberblick](transformation-rules/praxisueberblick.md).
+
 ## Vom extrahierten Wert zur nachgelagerten Prüfung
 
 <figure><img src="../../../../.gitbook/assets/process-transformation-de-20261028.png" alt="Wie Transformationsregeln wirken: Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert."><figcaption><p>Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
@@ -37,13 +39,13 @@ Transformationsregeln ersetzen die meisten der kleinen Skripte, die Organisation
 | Ein Lieferant druckt die Rechnungsnummer ohne das Präfix `INV-`, das unser ERP erwartet | Kopffeld *Invoice Number*, nur für diesen Lieferanten: Trimmen → UPPERCASE → Affix: Präfix `INV-` hinzufügen |
 | Lieferanten senden deutsche Einheitencodes (`STK`, `Std`), das ERP erwartet UN/ECE-Codes (`PCE`, `HUR`) | Tabellenspalte *UNIT*: Map values `STK → PCE`, `KG → KGM`, `Std → HUR` |
 | Artikelnummern kommen mit einem Präfix wie `Art.-Nr. 4711` | Tabellenspalte *ITEM_NUMBER*: Affix: Präfix `Art.-Nr. ` entfernen |
-| Steuernummern enthalten Leerzeichen und Punkte | Kopffeld *Supplier Tax ID*: Desinfektionsmittel (Sanitise), nur alphanumerische Zeichen behalten |
+| Steuernummern enthalten Leerzeichen und Punkte | Kopffeld *Supplier Tax ID*: Zeichen bereinigen (Sanitise), nur alphanumerische Zeichen behalten |
 | Ein Lieferant wird auf den Gesamtbetrag abgeglichen, nicht auf Zeilen | Tabellenzeilen: Clear all rows → Add a row mit dem Nettobetrag |
 | Alle Dokumente bestimmter Lieferanten gehören zu einer Unterorganisation | Routing: Unterorganisation setzen, wenn *Supplier ID is one of …* |
 | Datumsangaben müssen in einem festen Format in ein Freitextfeld geschrieben werden | Kopffeld: Reformat date `%d.%m.%Y` |
 | Die Bestellnummer steht im falschen Feld (zum Beispiel in *Invoice Number*) | Kopffeld *Purchase Order*: aus *Invoice Number* lesen, nur wenn *Purchase Order is empty* |
 | Die Bestellnummer hat führende Nullen oder ein Präfix, das die Bestellung nicht hat | Kopffeld *Purchase Order*: Trimmen von `0` auf der linken Seite oder Affix: Präfix entfernen |
-| Artikelnummern unterscheiden sich von den Bestellzeilen in Groß-/Kleinschreibung, Leerzeichen oder Präfixen | Tabellenspalte *ITEM_NUMBER*: Affix: Präfix entfernen → Desinfektionsmittel (Sanitise) → UPPERCASE |
+| Artikelnummern unterscheiden sich von den Bestellzeilen in Groß-/Kleinschreibung, Leerzeichen oder Präfixen | Tabellenspalte *ITEM_NUMBER*: Affix: Präfix entfernen → Zeichen bereinigen (Sanitise) → UPPERCASE |
 
 ## Transformationsregeln aktivieren
 
@@ -91,7 +93,7 @@ Zwei Optionen unter **Verarbeitungsoptionen** steuern, wie oft die Regel angewen
 
 | Option | Wirkung |
 | --- | --- |
-| **Nur einmal pro Dokument ausführen** | Normalerweise laufen Regeln bei jedem Speichern erneut. Ist die Option eingeschaltet, wird die Regel **höchstens einmal** auf ein Dokument angewendet und ist damit für dieses Dokument abgeschlossen. Ein Durchlauf, bei dem die Bedingungen nicht zutreffen, zählt nicht, sodass die Regel bei einem späteren Speichern noch angewendet werden kann. Erforderlich für Schritte, die den Wert bei jedem Speichern erneut ändern würden (siehe [Idempotenz](#einmal-ausfuhren-und-idempotenz)) und für Tabellenregeln, die die Zeilen nicht erneut aufbauen sollen. |
+| **Nur einmal pro Dokument ausführen** | Normalerweise laufen Regeln bei jedem Speichern erneut. Ist die Option eingeschaltet, wird die Regel **höchstens einmal** auf ein Dokument angewendet und ist damit für dieses Dokument abgeschlossen. Ein Durchlauf, bei dem die Bedingungen nicht zutreffen, zählt nicht, sodass die Regel bei einem späteren Speichern noch angewendet werden kann. Relevant beispielsweise für das einmalige Hinzufügen einer Zeile ohne vorheriges Löschen. Für Teilstück- und Regex-Schritte bleibt eine getrennte Quelle erforderlich (siehe [Idempotenz](#einmal-ausfuhren-und-idempotenz)). |
 | **Run after lookup population (before PO match)** | *(neuere Versionen)* Führt die Regel in einem zusätzlichen Durchlauf aus, nachdem die Lookup-Daten (zum Beispiel Lieferantenstammdaten) befüllt wurden und bevor der Bestellabgleich stattfindet. Verwenden Sie die Option, wenn die Regel einen Wert benötigt, den ein Lookup liefert. Die Regel läuft weiterhin auch in den üblichen Phasen; eine Regel mit „Nur einmal pro Dokument ausführen“ und dieser Option wartet auf diesen Durchlauf, statt direkt nach der Extraktion zu laufen. |
 
 ### Schritt 3 — Die Pipeline
@@ -108,18 +110,18 @@ Zwei Optionen unter **Verarbeitungsoptionen** steuern, wie oft die Regel angewen
 
 | Schritt | Einstellungen | Beispiel Eingabe → Ausgabe |
 | --- | --- | --- |
-| **Fall ändern** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Groß-/Kleinschreibung ändern** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
 | **Trimmen** (Trim) | Seite (beide, links, rechts); Zeichen (leer = Leerraum) | `  4711 ` → `4711`; mit Zeichen `0` und Seite links: `004711` → `4711` |
-| **Unterlage** | Länge, Füllzeichen, Seite | Länge 10, `0`, links: `4711` → `0000004711` |
+| **Auffüllen** (im geprüften Editor: „Unterlage“)  | Länge, Füllzeichen, Seite | Länge 10, `0`, links: `4711` → `0000004711` |
 | **Kürzen** | maximale Länge | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
 | **Affix** | Präfix hinzufügen, Suffix hinzufügen, Präfix entfernen, Suffix entfernen; Text | Präfix `INV-` hinzufügen: `4711` → `INV-4711`; Präfix `Art.-Nr. ` entfernen: `Art.-Nr. 4711` → `4711` |
-| **Desinfektionsmittel** (Sanitise) | nur behalten (alphanumerisch, Buchstaben, Ziffern, alphanumerisch + Leerzeichen) oder angegebene Zeichen entfernen | alphanumerisch behalten: `DE 123.456.789` → `DE123456789` |
-| **Nimm dir ein Stück** | Start, Länge oder Ende | Start 0, Länge 4: `2026-09-29` → `2026` |
+| **Zeichen bereinigen** (Sanitise) | nur behalten (alphanumerisch, Buchstaben, Ziffern, alphanumerisch + Leerzeichen) oder angegebene Zeichen entfernen | alphanumerisch behalten: `DE 123.456.789` → `DE123456789` |
+| **Teilstück** | Start, Länge oder Ende | Start 0, Länge 4: `2026-09-29` → `2026` |
 | **Extrakt** | Muster, Erfassungsgruppe | Muster `PO[- ]?(\d+)`, Gruppe 1: `Order PO-45001234` → `45001234` |
 | **Suchen und ersetzen** | Muster, Ersetzen durch, Anzahl (0 = alle) | Muster `\s+`, ersetzen durch ` `: `ACME    GmbH` → `ACME GmbH` |
-| **Kartenwerte** | Zuordnungen (von → nach), Wert ohne Treffer (leer = Eingabe behalten), Groß-/Kleinschreibung ignorieren | `STK → PCE`: `stk` → `PCE` |
+| **Werte zuordnen** | Zuordnungen (von → nach), Wert ohne Treffer (leer = Eingabe behalten), Groß-/Kleinschreibung ignorieren | `STK → PCE`: `stk` → `PCE` |
 | **Datum neu formatieren** | Ausgabemuster (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
-| **Formatnummer** | Locale (de_DE, en_US, en_GB, fr_FR), min. und max. Nachkommastellen | de_DE, 2 Nachkommastellen: `1234.5` → `1.234,50` |
+| **Zahl formatieren** | Locale (de_DE, en_US, en_GB, fr_FR), min. und max. Nachkommastellen | de_DE, 2 Nachkommastellen: `1234.5` → `1234,50` |
 | **Festwert** | der Wert | schreibt immer den Wert, egal was das Feld enthielt |
 | **Leeren** | – | leert das Feld |
 
@@ -131,7 +133,7 @@ Regeln mit dem Umfang **Tabellenzeilen** verwenden zwei andere Schritte, die auf
 | **Zeile hinzufügen** | fügt eine Zeile **nach der letzten Zeile** oder **vor der ersten Zeile** hinzu. Wählen Sie für jede Spalte **Wert** (ein fester Wert) oder **Feld** (der Wert eines Kopffelds). Spalten, die Sie weglassen, bleiben leer. |
 
 {% hint style="info" %}
-**Datum neu formatieren** erwartet das Datum so, wie DocBits es intern speichert (`YYYY-MM-DD`). Wenden Sie es auf das Feld selbst an, nicht auf einen Text, der bereits ein formatiertes Datum enthält.
+**Datum neu formatieren:** Verwenden Sie für den ersten Test ein eindeutiges ISO-Datum (`YYYY-MM-DD`). Aktuelle Versionen berücksichtigen auch den gespeicherten Formatkontext. Ein DATE-Kopffeld kann intern ISO behalten, während die Anzeige dem Muster folgt; ein Textziel oder eine Tabellenzelle kann formatierten Text enthalten. Unlesbare Werte bleiben im geprüften Servertest unverändert und erhalten einen Fehlergrund. Testen Sie Speicherung und Wiederholung separat.
 {% endhint %}
 
 ### Live-Vorschau
@@ -148,7 +150,7 @@ Während Sie die Vorschau verwenden, wird nichts gespeichert. Klicken Sie auf **
 
 ### Die Rechnungsnummer eines Lieferanten bereinigen
 
-Kopffeld **Rechnungsnummer** · nur wenn *Supplier ID is HP0000278* · Trimmen → Fall ändern UPPERCASE → Affix Präfix `INV-` hinzufügen.
+Kopffeld **Rechnungsnummer** · nur wenn *Supplier ID is HP0000278* · Trimmen → Großschreibung UPPERCASE → Affix Präfix `INV-` hinzufügen.
 Beispiel `  230620-03a ` → `INV-230620-03A`. Siehe den Screenshot der Pipeline oben.
 
 ### Einheitencodes abbilden
@@ -167,7 +169,7 @@ Die Reihenfolge ist wichtig: **Alle Zeilen löschen** muss **vor** **Zeile hinzu
 
 ### Die Bestellnummer aus dem Feld Rechnungsnummer befüllen
 
-Kopffeld **Bestellung** · nur wenn *Purchase Order is empty* · **Lesen Sie von** *Invoice Number* → Trimmen → Fall ändern UPPERCASE.
+Kopffeld **Bestellung** · nur wenn *Purchase Order is empty* · **Lesen Sie von** *Invoice Number* → Trimmen → Großschreibung UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-de.png" alt="Der Regel-Builder für die Regel, die Purchase Order aus Invoice Number befüllt, mit der Live-Vorschau"><figcaption><p>Die Regel und ihre Live-Vorschau: <code>po-4711</code> wird in <code>purchase_order</code> zu <code>PO-4711</code>. Beispielregel auf einem Test-Dokumenttyp.</p></figcaption></figure>
 
@@ -175,7 +177,7 @@ Manche Lieferanten drucken die Bestellnummer dorthin, wo die Extraktion die Rech
 
 ### Artikelnummern für den Bestellabgleich vergleichbar machen
 
-Tabellenspalte **INVOICE_TABLE / ITEM_NUMBER** · stets · Affix: Präfix `Art.-Nr. ` entfernen → Desinfektionsmittel (Sanitise): alphanumerisch behalten → Fall ändern UPPERCASE.
+Tabellenspalte **INVOICE_TABLE / ITEM_NUMBER** · stets · Affix: Präfix `Art.-Nr. ` entfernen → Zeichen bereinigen (Sanitise): alphanumerisch behalten → Großschreibung UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-item-number-compare-de.png" alt="Der Regel-Builder für die Artikelnummern-Regel mit der Live-Vorschau"><figcaption><p>Die Live-Vorschau zeigt jeden Schritt: <code>Art.-Nr. ab-12/3</code> wird zu <code>AB123</code></p></figcaption></figure>
 
@@ -185,7 +187,7 @@ Schreibt die Rechnung `Art.-Nr. ab-12/3` und die Bestellung hat `AB123`, stimmen
 
 | Ziel | Umfang | Bedingung | Schritte |
 | --- | --- | --- | --- |
-| Leerzeichen und Punkte aus der Steuernummer entfernen | Kopffeld *Supplier Tax ID* | stets | Desinfektionsmittel (Sanitise): alphanumerisch behalten |
+| Leerzeichen und Punkte aus der Steuernummer entfernen | Kopffeld *Supplier Tax ID* | stets | Zeichen bereinigen (Sanitise): alphanumerisch behalten |
 | Das Artikelpräfix entfernen | Spalte *ITEM_NUMBER* | stets | Affix: Präfix `Art.-Nr. ` entfernen |
 | 10-stellige Lieferantennummern | Kopffeld *Supplier ID* | stets | Trimmen → Pad Länge 10 mit `0`, links |
 | Die Bestellnummer aus einem Referenztext herausziehen | Kopffeld *Purchase Order*, aus einem anderen Feld lesen | nur wenn *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, Gruppe 1 |
@@ -194,12 +196,12 @@ Schreibt die Rechnung `Art.-Nr. ab-12/3` und die Bestellung hat `AB123`, stimmen
 | Preisbasis pro Einheit | Spalte *UNIT_PRICE_PER* | nur wenn *row.UNIT_PRICE_PER is empty* | Fix value `1` |
 | Lieferanten an eine Unterorganisation weiterleiten | Routing | *Supplier ID is one of* `10040, 10041` | eine feste Unterorganisation zuweisen |
 | Führende Nullen aus der Bestellnummer entfernen | Kopffeld *Purchase Order* | stets | Trimmen: Zeichen `0`, Seite links |
-| Nur die Ziffern der Bestellnummer behalten | Kopffeld *Purchase Order* | stets | Desinfektionsmittel (Sanitise): nur Ziffern behalten (`PO-45001234` → `45001234`) |
+| Nur die Ziffern der Bestellnummer behalten | Kopffeld *Purchase Order* | stets | Zeichen bereinigen (Sanitise): nur Ziffern behalten (`PO-45001234` → `45001234`) |
 | Eine zu lange Bestellreferenz kürzen | Kopffeld *Purchase Order* | nur wenn *Supplier ID is 20723* | Truncate auf 10 Zeichen |
 | Der Bestellnummer das Präfix hinzufügen, das Ihr ERP erwartet | Kopffeld *Purchase Order* | nur wenn *Supplier ID is 10040* | Affix: Präfix `4500` hinzufügen |
 | Beträge so schreiben, wie Ihr ERP sie liest | Kopffeld *Total Amount* | stets | Format number, Locale `de_DE`, 2 Nachkommastellen |
-| Leerzeichen in Artikelnummern entfernen | Spalte *ITEM_NUMBER* | stets | Desinfektionsmittel (Sanitise): die Zeichen ` ` (Leerzeichen) entfernen |
-| Artikelnummern in Großbuchstaben schreiben | Spalte *ITEM_NUMBER* | stets | Fall ändern UPPERCASE |
+| Leerzeichen in Artikelnummern entfernen | Spalte *ITEM_NUMBER* | stets | Zeichen bereinigen (Sanitise): die Zeichen ` ` (Leerzeichen) entfernen |
+| Artikelnummern in Großbuchstaben schreiben | Spalte *ITEM_NUMBER* | stets | Großschreibung UPPERCASE |
 | Bestellungen eines Werks an eine Unterorganisation senden | Routing | *Purchase Order starts with* `4500` | eine feste Unterorganisation zuweisen |
 
 ## Routing-Regeln (Unterorganisation)
@@ -216,10 +218,9 @@ Eine **Routing**-Regel ändert kein Feld. Sie setzt ein Attribut am Dokument, we
 
 Die meisten Schritte liefern dasselbe Ergebnis, wenn sie auf ihre eigene Ausgabe angewendet werden — einen getrimmten Wert erneut trimmen, `PCE` erneut abbilden, ein Präfix hinzufügen, das schon vorhanden ist. Diese Regeln können bei jedem Speichern gefahrlos laufen.
 
-**Nimm dir ein Stück**, **Extrakt** und **Suchen und ersetzen** sind anders: Auf ihr eigenes Ergebnis erneut angewendet, ändern sie es weiter (ein Ausschnitt nimmt die ersten vier Zeichen der ersten vier Zeichen …). DocBits lässt Sie daher keine Regel speichern, die diese Schritte auf ihr eigenes Zielfeld anwendet. Entweder:
+**Teilstück**, **Extrahieren** und **Suchen und ersetzen** benötigen im geprüften Serververtrag eine getrennte Originalquelle. Der Server lehnt diese Schritte auf ihrem eigenen Zielfeld ab, weil erneutes Verarbeiten den Wert ungewollt verändern kann. **Nur einmal pro Dokument ausführen** hebt diese Quellvorgabe nicht auf. Wählen Sie **Lesen Sie von → Ein anderes Feld** und behalten Sie die Originalquelle unverändert.
 
-* schalten Sie **Nur einmal pro Dokument ausführen** ein, oder
-* lesen Sie aus einem anderen Feld (**Lesen Sie von** → ein anderes Feld), damit die Eingabe unverändert bleibt.
+Prüfen Sie die vollständige Pipeline auch bei anderen Schritten zweimal: Eine Zuordnung `A→B, B→C` kann beim zweiten Durchlauf weiter zuordnen; das Entfernen eines doppelt vorhandenen Präfixes kann bei jedem Durchlauf ein weiteres Präfix entfernen. Details und geprüfte Gegenfälle stehen im [Praxisüberblick](transformation-rules/praxisueberblick.md).
 
 ## Transformationsregeln und Bestellabgleich
 
@@ -256,7 +257,7 @@ Ist **Ausführung protokollieren** eingeschaltet, wird jede Anwendung der Regel 
 | Symptom | Was zu prüfen ist |
 | --- | --- |
 | Die Regel hat nichts geändert | Ist sie aktiv, und ist die Funktion für den Dokumenttyp aktiviert? Ist die Bedingung für dieses Dokument wahr (exakter Wert, einschließlich Leerzeichen und Groß-/Kleinschreibung)? Wurde eine Regel mit **Nur einmal pro Dokument ausführen** bereits auf das Dokument angewendet? Prüfen Sie die Spur im Protokoll. |
-| Der Wert ändert sich bei jedem Speichern erneut | Die Pipeline enthält Take a slice, Extract oder Find & replace. Schalten Sie **Nur einmal pro Dokument ausführen** ein oder lesen Sie aus einem anderen Feld. |
+| Der Wert ändert sich bei jedem Speichern erneut | Die Pipeline enthält Take a slice, Extract oder Find & replace. Lesen Sie bei diesen Schritten aus einem getrennten Originalfeld; „Nur einmal pro Dokument ausführen“ ersetzt diese Vorgabe nicht. |
 | Eine Tabelle erhält bei jedem Speichern eine weitere Zeile | Ein Schritt **Zeile hinzufügen** ohne vorheriges **Alle Zeilen löschen**. Fügen Sie zuerst den Clear-Schritt hinzu oder schalten Sie „Nur einmal pro Dokument ausführen“ ein. |
 | Die Bestellübereinstimmung geht nach dem Speichern verloren | Eine Tabellenregel hat die abgeglichenen Zeilen ersetzt. Der Grund im Dokument nennt die Regel; sorgen Sie dafür, dass die Regel dieselben Zeilen reproduziert, oder stellen Sie sie auf „Nur einmal pro Dokument ausführen“. |
 | Eine Matching-Regel läuft nach der Transformation nie | Die Regel hat die Anzahl der Zeilen geändert; passen Sie die Aktivierungsbedingung der Matching-Regel an. |

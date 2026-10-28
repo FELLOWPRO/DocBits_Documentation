@@ -1,0 +1,41 @@
+# Grundlagen, Geltungsbereiche und sichere Tests
+
+[Zurück zum vollständigen Praxisüberblick](praxisueberblick.md)
+
+Kopffeld · Ziel Ergebnis · Quelle Originaltext · Trimmen → Großschreibung → Präfix INV-.
+
+## Vorgehen im Editor
+
+1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
+2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
+3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
+4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
+5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+
+<figure><img src="../../../../../.gitbook/assets/transformation-series-01-steps-de-20261028.png" alt="Konfiguration der Schritte – Grundlagen, Geltungsbereiche und sichere Tests"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/transformation-series-01-preview-de-20261028.png" alt="Live-Vorschau mit Schulungswert – Grundlagen, Geltungsbereiche und sichere Tests"><figcaption><p>Live-Vorschau mit Schulungswert. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
+
+## 1. Geltungsbereich
+
+Eine Transformation verändert bereits extrahierte Daten. Sie ersetzt keine Texterkennung. Im Editor wähle ich zuerst den Geltungsbereich. Ein Kopffeld wird einmal pro Dokument bearbeitet. Eine Tabellenspalte wird für jede Zeile bearbeitet. Tabellenregeln verändern ganze Positionen. Routing ordnet das Dokument einer Unterorganisation zu. Diese vier Aufgaben haben unterschiedliche Ziele und unterschiedliche Schritte. Ich lege meine Beispiele auf einem eigenen Testdokumenttyp an, damit keine produktiven Rechnungen verändert werden.
+
+## 2. Quelle und Verarbeitung
+
+Danach wähle ich das Zielfeld. Die Quelle kann dieses Feld selbst oder ein anderes Feld sein. Die Schritte laufen von oben nach unten. Jeder Zwischenwert wird zur Eingabe des nächsten Schritts. Mein Beispiel liest eine Rechnungsnummer, entfernt äußere Leerzeichen und schreibt Großbuchstaben. Aus einem kleinen Buchstaben wird ein großer. Mit einer Bedingung begrenze ich die Regel auf den passenden Lieferanten. Bei einer Tabellenspalte kann die Bedingung außerdem Werte der aktuellen Zeile prüfen. Mehrere Bedingungen lassen sich mit Und, Oder und Gruppen kombinieren.
+
+## 3. Wirkung überprüfen
+
+Die Live-Vorschau speichert noch nichts. Ich prüfe einen passenden Wert, einen Gegenfall und ein bereits korrigiertes Ergebnis. Anschließend speichere ich die Regel, öffne sie erneut und kontrolliere die gespeicherten Einstellungen. Für die tatsächliche Dokumentwirkung brauche ich zusätzlich ein Testdokument, einen Speichervorgang und das neu geladene Ergebnis. Eine Vorschau beweist weder einen erfolgten Export noch einen erfolgreichen Bestellabgleich. Ausführungsprotokolle helfen mir, angewendete und übersprungene Bedingungen auseinanderzuhalten. In den nächsten Folgen gehen wir die einzelnen Transformationen und ihre Grenzen durch.
+
+## Geprüfte Beispiele und Gegenfälle
+
+Diese Werte wurden serverseitig als trockener Test geprüft. Ein solcher Test verändert keine gespeicherten Dokumente.
+
+| Fall | Eingabe | Serverergebnis |
+| --- | --- | --- |
+| copy | `  po-4711  ` | `PO-4711` |
+
+## Abnahme
+
+Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein bereits verarbeitetes Ergebnis. Wiederholen Sie den Dokument-Speichervorgang. Prüfen Sie PO-Abgleich und ERP-Empfang zusätzlich, wenn sie zum fachlichen Ziel gehören.

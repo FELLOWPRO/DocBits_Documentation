@@ -1,5 +1,12 @@
 # Correos electrónicos entrantes
 
+## Del correo electrónico entrante a un documento listo para revisión
+
+<figure><img src="../../../../.gitbook/assets/intro-process-01-email-es-20261028.png" alt="Del correo electrónico entrante a un documento listo para revisión"><figcaption><p>Del correo electrónico entrante a un documento listo para revisión</p></figcaption></figure>
+
+La ilustración muestra dos formas de entrada: un buzón conectado y el reenvío a una dirección de importación DocBits. Se importan los documentos adjuntos admitidos. Verifique las restricciones, la organización y el enrutamiento del remitente, luego verifique la importación real. Enviar un correo electrónico no prueba que sus documentos se hayan importado correctamente.
+
+
 ### Descripción general
 
 DocBits puede recoger documentos directamente del correo electrónico, sin necesidad de subirlos manualmente. Hay **dos formas** de incorporar documentos por correo, ambas en **Configuración → Procesamiento de documentos → Importar**:

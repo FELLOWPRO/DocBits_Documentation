@@ -22,7 +22,7 @@ A página **Modelo De Trem** mostra a contagem de amostras e a lista de document
 3. Arraste os arquivos PDF para a caixa de diálogo ou use **Carregar** para selecioná-los. O importador atual de documentos de exemplo aceita **arquivos PDF**; ele rejeita outros tipos de arquivo. Selecionar os arquivos inicia o envio.
 4. Feche a caixa de diálogo e verifique se os documentos aparecem na lista de treinamento. Se o DocBits relatar um erro de envio ou um documento já existente, corrija o arquivo ou escolha outro exemplo antes de continuar.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc652-import-dialog-pt-20261011.png" alt="Caixa de diálogo Carregador de documentos com o seletor Formato de valor e data, a área de arrastar e soltar e o campo Carregar"><figcaption><p>Escolha um formato antes de selecionar os PDFs de exemplo.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-pt.png" alt="Caixa de diálogo Carregador de documentos com o seletor Formato de valor e data, a área de arrastar e soltar e o campo Carregar"><figcaption><p>Escolha um formato antes de selecionar os PDFs de exemplo.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc652-format-menu-pt-20261011.png" alt="Menu Formato de valor e data com opções de países e regiões, incluindo Germany e United Kingdom"><figcaption><p>Escolha o formato usado no documento, não o seu idioma de interface preferido.</p></figcaption></figure>
 

@@ -21,8 +21,6 @@ Ihre Daten sind bei DocBits gut aufgehoben. Wir betreiben DocBits in zwei Region
 
 **Sicherungen in der EU:** Frankfurt ist der primäre Sicherungsstandort, Amsterdam (Niederlande) der sekundäre. So bleiben auch Ihre Sicherungskopien innerhalb der EU.
 
-**Sicherungen in den USA:** Den Sicherungsstandort Ihrer US-Umgebung nennen wir Ihnen gern auf Anfrage über compliance@fellowpro.com.
-
 **Angebundene Systeme:** Exportieren Sie Dokumente in Ihr ERP, nach Infor IDM oder in ein anderes Zielsystem, liegen die Kopien dort nach den Regeln und am Standort dieses Systems. Das behalten Sie in Ihrer eigenen Hand.
 
 ## Wie lange bleiben Daten erhalten?

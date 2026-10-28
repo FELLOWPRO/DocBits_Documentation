@@ -21,8 +21,6 @@ Your data is in good hands with DocBits. We operate DocBits in two regions, **Fr
 
 **Backups in the EU:** Frankfurt is the primary backup location and Amsterdam (Netherlands) the secondary one, so your backup copies also stay within the EU.
 
-**Backups in the USA:** We are glad to tell you the backup location of your US environment on request at compliance@fellowpro.com.
-
 **Connected systems:** If you export documents to your ERP, Infor IDM or another target system, those copies are stored there under that system's rules and at that system's location. That stays in your own hands.
 
 ## How long is data kept?

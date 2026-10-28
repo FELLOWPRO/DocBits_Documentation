@@ -61,7 +61,7 @@ Calendario dei backup: Backup giornalieri, settimanali, trimestrali e annuali.
 
 **Risposta:** Due aree del data center disponibili:
 - **Francoforte, Germania** — per tutti i clienti dell'UE
-- **New York, USA** — solo per clienti USA
+- **San Francisco, USA** — solo per clienti USA
 
 I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmente non è disponibile un'opzione solo per il Regno Unito.
 

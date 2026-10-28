@@ -1,5 +1,12 @@
 # Datenimport: Modelltraining
 
+## Beispiele vorbereiten, importieren und prüfen
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-de-20261028.png" alt="Beispiele vorbereiten, importieren und prüfen"><figcaption><p>Beispiele vorbereiten, importieren und prüfen</p></figcaption></figure>
+
+Wählen Sie repräsentative Beispielbelege, bereiten Sie die verfügbaren Importoptionen vor und kontrollieren Sie den Importstatus. Erst erfolgreich importierte Beispiele stehen für das weitere Training bereit. Klären Sie Importfehler vor dem nächsten Schritt und halten Sie unabhängige Testbelege vom Trainingsdatensatz getrennt.
+
+
 Verwenden Sie diese Seite, um Beispiel-PDFs für einen Dokumenttyp hinzuzufügen und anschließend sein Klassifizierungsmodell zu trainieren oder zu testen. Sie benötigen Zugriff auf **Einstellungen** und **Dokumenttypen**. Den Zweck der Trainingsfunktionen finden Sie unter [Zweck und Verwendung: Modelltraining](purpose-and-use-model-training.md).
 
 ## Den Dokumenttyp öffnen

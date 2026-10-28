@@ -1,5 +1,26 @@
 # Approvare o rifiutare una fattura
 
+## Ciò che segue una decisione di approvazione aziendale
+
+<figure><img src="../../.gitbook/assets/process-approval-it-20261028.png" alt="Approvare o rifiutare la fattura: Distinguere verifica, decisione e trasmissione successiva."><figcaption><p>Distinguere verifica, decisione e trasmissione successiva. Il diagramma è schematico; le impostazioni attive della tua organizzazione determinano il comportamento effettivo.</p></figcaption></figure>
+
+La validazione tecnica verifica i dati del documento; l'approvazione registra la decisione commerciale di un revisore autorizzato. Anche una fattura tecnicamente valida può comunque richiedere una o più approvazioni.
+
+1. **Verifica responsabilità:** Apri la fattura assegnata e verifica su quale livello di approvazione puoi decidere.
+2. **Esamina la fattura:** confronta i valori dell'intestazione, delle voci e delle imposte con il documento originale e i requisiti della tua azienda.
+3. **Decisione sul documento:** Approvare una fattura corretta o rifiutarla con una motivazione specifica. Attendi la risposta e poi controlla la cronologia delle approvazioni.
+4. **Identificare il passaggio successivo:** Se sono configurate fasi di approvazione aggiuntive, la fattura attende le loro decisioni. Dopo il rifiuto, il chiarimento, la correzione e l'eventuale reinvio, seguire il processo configurato. Il processo di esportazione separato determina se i dati hanno raggiunto il sistema di destinazione.
+
+### Tre affermazioni che non significano la stessa cosa
+
+| dichiarazione | Ciò che non dimostra automaticamente |
+| --- | --- |
+| **I dati sono validati.** | Che un revisore aziendale autorizzato lo abbia approvato. |
+| **Un revisore ha approvato.** | Che tutte le fasi di approvazione richieste sono state completate. |
+| **Le approvazioni sono state completate.** | Che la fattura è già stata esportata o registrata in ERP. |
+
+Utilizza [Attività di documento](tasks.md) per elaborare il lavoro assegnato e [Stato del documento](dashboard/document-status.md) per classificare lo stato attuale.
+
 Il video mostra l’approvazione dal punto di vista di una verificatrice.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-customer/v1/it.mp4" %}

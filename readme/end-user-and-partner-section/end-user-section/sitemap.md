@@ -21,6 +21,14 @@ Girişler türe göre renklendirilmiştir:
 
 Doğrudan oraya atlamak için herhangi bir girişe tıklayın. Bir parametre gerektiren girişler (belge türü veya kimliği gibi) yerleşik bir seçici içerir — tıklamadan önce değeri seçin.
 
+## Listede eğitim videoları
+
+Eğitim videosu olan sayfaların girişleri, adın ardından bir video simgesi gösterir — yalnızca Ayarlar'da değil, kataloğun tamamında, örneğin Panel, Alan doğrulama veya İş akışı sayfalarında. Bu sayfanın videosunu **Videolar ve Eğitimler** panelinde oynatmak için simgeyi seçin; site haritasından ayrılmanız gerekmez.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-tr.png" alt="Birkaç girişin yanında video simgeleri bulunan Site Haritası ve alan doğrulama videosu açık Videolar ve Eğitimler paneli"><figcaption><p>Eğitim videosu olan girişlerde video simgesi bulunur; seçildiğinde video panelde açılır.</p></figcaption></figure>
+
+Panel her videoyu konuya göre listelemeye devam eder; tüm kütüphaneye üst çubuktaki simgeden de göz atabilir ve arayabilirsiniz. Bkz. [Videolar ve Eğitimler](videos-and-tutorials.md).
+
 ## Arama ve filtreler
 
 Üstteki sabit başlık, arama kutusunu ve filtre haplarını barındırır. Listeyi adı ve açıklamasına göre canlı filtrelemek için birkaç karakter yazın. Tek bir giriş türüne — örneğin yalnızca **Diyalog** — daraltmak için tür haplarını kullanın.

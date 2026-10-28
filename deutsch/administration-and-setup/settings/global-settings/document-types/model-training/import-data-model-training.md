@@ -22,7 +22,7 @@ Die Seite **Trainingsmodel** zeigt die Anzahl der Beispiele und eine Liste der h
 3. Ziehen Sie PDF-Dateien in den Dialog oder wählen Sie sie über **Upload** aus. Der aktuelle Import für Beispieldokumente akzeptiert **PDF-Dateien**; andere Dateitypen werden abgelehnt. Mit der Auswahl der Dateien beginnt der Upload.
 4. Schließen Sie den Dialog und prüfen Sie, ob die Dokumente in der Trainingsliste erscheinen. Meldet DocBits einen Upload-Fehler oder dass ein Dokument bereits existiert, korrigieren Sie die Datei oder wählen Sie ein anderes Beispiel, bevor Sie fortfahren.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc646-import-dialog-de-20261011.png" alt="Import-Dialog mit Auswahlfeld für Betrag und Datumsformat, Ablehn-Bereich für Dateien und Upload-Feld"><figcaption><p>Wählen Sie das Format, bevor Sie Beispiel-PDFs auswählen.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-de.png" alt="Import-Dialog mit Auswahlfeld für Betrag und Datumsformat, Ablehn-Bereich für Dateien und Upload-Feld"><figcaption><p>Wählen Sie das Format, bevor Sie Beispiel-PDFs auswählen.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc646-format-menu-de-20261011.png" alt="Menü Betrag und Datumsformat mit Ländern und Regionen, darunter Germany und United Kingdom"><figcaption><p>Wählen Sie das Format des Dokuments, nicht Ihre bevorzugte Oberflächensprache.</p></figcaption></figure>
 

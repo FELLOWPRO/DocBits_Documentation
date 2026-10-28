@@ -1,5 +1,22 @@
 # Automatische boekhouding met Infor LN
 
+## Van het stamgegevensrecord LN tot de gecontroleerde rekeningtoewijzing
+
+<figure><img src="../../../.gitbook/assets/process-accounting-nl-20261028.png" alt="Financiële stamgegevens voor Auto Accounting: Gegevenspad en controlepunten voor een Infor LN-integratie."><figcaption><p>Gegevenspad en controlepunten voor een Infor LN-integratie. Het diagram is schematisch; de actieve instellingen van uw organisatie bepalen het daadwerkelijke gedrag.</p></figcaption></figure>
+
+Deze handleiding behandelt het aanleveren van financiële stamgegevens voor een LN-integratie. Het selecteren van **LN** of het inschakelen van **Auto Accounting** vervangt niet het verstrekken van de gegevens of het controleren van het resultaat van de accounttoewijzing.
+
+| Overdracht | Wat je moet bewijzen |
+| --- | --- |
+| **LN → BOD publicatie** | Correcte bedrijfs- en benodigde account- of dimensiegegevens; Tel of simuleer eerst de selectie. |
+| **BOD → ION** | Matchen van documentversie, bron, filters en mapping; traceer de test-ID in ION OneView. |
+| **ION → DocBits** | Ontvangen van eindpuntreactie, correcte organisatie en geaccepteerd record. Een geactiveerde stroom alleen is niet voldoende. |
+| **DocBits → Resultaat accounttoewijzing** | Na goedgekeurde activatie gebruikt u representatieve testdocumenten om te controleren of de rekeningen en dimensies correct zijn voor het bedrijfsproces. |
+
+**Voorbeeld van traceerbaarheid:** Gebruik een niet-gevoelige test-ID uit een goedgekeurde testgegevensset. Zoek dezelfde identificatie in de bron BOD, in ION en in de ontvangstlogboeken van de DocBits. Dit helpt bij het lokaliseren van een ontbrekende mapping bij een specifieke overdracht in plaats van het herhaaldelijk wijzigen van de schakelaar.
+
+De daaropvolgende export en ERP-boeking moeten afzonderlijk worden geverifieerd. De bestaande afbeeldingen in deze handleiding tonen de DocBits-bedieningselementen; ze bewijzen niet dat er een LN-overdracht is uitgevoerd. In het volgende gedeelte worden de voorbereiding en de end-to-end-verificatie door de verantwoordelijke beheerders beschreven. Voor de technische overdracht zie [Exporteren vanuit DocBits](../../exporting-in-docbits/README.md).
+
 Gebruik deze handleiding wanneer een Infor-LN-beheerder wil dat DocBits geïmporteerde financiële stamgegevens gebruikt voor automatische boekhouding (Auto Accounting). De oude pagina toonde 48 schermen uit één specifieke Infor-tenant. Verbindingspunt-namen, mappings, inloggegevens en eindpuntadressen van die tenant zijn geen herbruikbare configuratie.
 
 ## De instelling in DocBits vinden

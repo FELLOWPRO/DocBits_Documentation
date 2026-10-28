@@ -1,5 +1,26 @@
 # Een factuur goedkeuren of afwijzen
 
+## Wat volgt op een goedkeuringsbesluit van een bedrijf
+
+<figure><img src="../../.gitbook/assets/process-approval-nl-20261028.png" alt="Factuur goedkeuren of afwijzen: Controle, beslissing en verdere overdracht onderscheiden."><figcaption><p>Controle, beslissing en verdere overdracht onderscheiden. Het diagram is schematisch; de actieve instellingen van uw organisatie bepalen het daadwerkelijke gedrag.</p></figcaption></figure>
+
+Technische validatie controleert documentgegevens; goedkeuring registreert de zakelijke beslissing van een geautoriseerde beoordelaar. Zelfs voor een technisch geldige factuur kan het zijn dat er nog één of meerdere goedkeuringen nodig zijn.
+
+1. **Controleer verantwoordelijkheid:** Open de toegewezen factuur en controleer welk goedkeuringsniveau u mag bepalen.
+2. **Bekijk de factuur:** Vergelijk kopwaarden, regelitems en belasting met het originele document en uw bedrijfsvereisten.
+3. **Documentbeslissing:** Een correcte factuur goedkeuren of afkeuren met een specifieke reden. Wacht op het antwoord en controleer vervolgens de goedkeuringsgeschiedenis.
+4. **Identificeer de volgende stap:** Als er aanvullende goedkeuringsfasen zijn geconfigureerd, wacht de factuur op hun beslissingen. Na afwijzing, verduidelijking, correctie en eventuele herindiening volgt u uw geconfigureerde proces. Het afzonderlijke exportproces bepaalt of gegevens het doelsysteem hebben bereikt.
+
+### Drie uitspraken die niet hetzelfde betekenen
+
+| verklaring | Wat het niet automatisch bewijst |
+| --- | --- |
+| **De gegevens zijn gevalideerd.** | Dat een geautoriseerde bedrijfsreviewer het heeft goedgekeurd. |
+| **Een recensent heeft het goedgekeurd.** | Dat alle vereiste goedkeuringsfasen zijn voltooid. |
+| **Goedkeuringen zijn voltooid.** | Dat de factuur al is geëxporteerd of geboekt in ERP. |
+
+Gebruik [Documenteer taken](tasks.md) om toegewezen werk te verwerken en [Documentstatus](dashboard/document-status.md) om de huidige status te classificeren.
+
 Deze video toont het goedkeuringsproces vanuit het perspectief van een beoordelaar.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-customer/v1/nl.mp4" %}

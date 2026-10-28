@@ -1,5 +1,12 @@
 # Email in entrata
 
+## Dall'e-mail in arrivo a un documento pronto per la revisione
+
+<figure><img src="../../../../.gitbook/assets/intro-process-01-email-it-20261028.png" alt="Dall&#x27;e-mail in arrivo a un documento pronto per la revisione"><figcaption><p>Dall&#x27;e-mail in arrivo a un documento pronto per la revisione</p></figcaption></figure>
+
+L'illustrazione mostra due modalità di accesso: una casella di posta connessa e l'inoltro a un indirizzo di importazione DocBits. Gli allegati ai documenti supportati vengono importati. Controlla le restrizioni del mittente, l'organizzazione e il routing, quindi verifica l'effettiva importazione. L'invio di un'e-mail non dimostra che i suoi documenti siano stati importati correttamente.
+
+
 ### Panoramica
 
 DocBits può acquisire i documenti direttamente dall'e-mail, senza caricamento manuale. Esistono **due modi** per importare documenti via e-mail, entrambi in **Impostazioni → Elaborazione documenti → Importazione**:

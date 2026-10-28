@@ -1,10 +1,25 @@
 # Transformationsregeln
 
+## Vom extrahierten Wert zur nachgelagerten Prüfung
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-de-20261028.png" alt="Wie Transformationsregeln wirken: Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert."><figcaption><p>Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
+
+Eine Transformation ist eine Änderung vorhandener Daten, nicht eine neue OCR-Erkennung. Sie liest eine Eingabe, prüft ihre Bedingung, führt die konfigurierten Schritte aus und schreibt das Ergebnis zurück. Trifft die Bedingung nicht zu, wird die Regel übersprungen.
+
+**Beispiel:** Eine Tabellenzelle enthält `STK`. Eine für den betreffenden Lieferanten geltende Wertzuordnung schreibt `PCE`. Der nachgelagerte PO-Abgleich sieht dann den aufbereiteten Einheitencode. Testen Sie auch einen bereits aufbereiteten Wert und einen Wert, für den die Regel nicht gelten soll.
+
+1. **Auslöser:** Während der Verarbeitung laufen die Regeln nach der Extraktion. Auch beim Speichern geänderter Extraktionsdaten können sie erneut ausgeführt werden.
+2. **Reihenfolge:** Innerhalb eines Durchlaufs gelten die Umfänge **Kopffeld → Routing → Tabellenzeilen → Tabellenspalte**. Innerhalb eines Umfangs bestimmen Priorität und Schlüssel die Reihenfolge.
+3. **Auswirkung:** Eine Tabellenregel kann Positionen verändern oder entfernen. Dadurch können sich die Zeilenzahl und die Voraussetzungen für den Bestellabgleich ändern. Werden bereits abgeglichene Zeilen ersetzt, kann eine bestehende Zuordnung verloren gehen.
+4. **Kontrolle:** Vergleichen Sie Eingabe, Vorschau und gespeichertes Ergebnis. Bei aktivierter Ausführungsprotokollierung zeigt die Bedingungsspur, warum eine Regel angewendet oder übersprungen wurde.
+
+**Wiederholungen mitprüfen:** Eine Regel sollte ihren bereits aufbereiteten Wert nicht bei jedem Speichern weiter verändern. Nutzen Sie passende idempotente Schritte, eine unveränderte Quelle oder die vorgesehene Einmal-Ausführung. Die Details und Beispiele folgen unten; [PO-Abgleichsregeln](more-settings/purchase-order/purchase-order-matching-rules.md) erklären die nachgelagerte Zuordnung.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4" %}
 
 ## Überblick
 
-Transformationsregeln bereinigen oder schreiben extrahierte Daten **automatisch** um, jedes Mal, wenn ein Dokument verarbeitet und jedes Mal, wenn es gespeichert wird. Eine Regel kann Folgendes ändern:
+Transformationsregeln bereinigen oder schreiben extrahierte Daten **automatisch** um, während der Dokumentenverarbeitung und beim Speichern geänderter Extraktionsdaten nach den Ausführungsbedingungen der Regel. Eine Regel kann Folgendes ändern:
 
 * ein **Kopffeld** (Rechnungsnummer, Währung, Steuernummer des Lieferanten …),
 * eine **Spalte** in jeder Zeile einer Tabelle (Einheit, Artikelnummer, Preisbasis …),

@@ -1,5 +1,23 @@
 # Dokumentstatus
 
+## Drei Statusfragen statt einer einzigen Statuskette
+
+<figure><img src="../../../.gitbook/assets/process-status-de-20261028.png" alt="Dokumentstatus richtig einordnen: Verarbeitung, Genehmigung und Export sind unterschiedliche Zustände."><figcaption><p>Verarbeitung, Genehmigung und Export sind unterschiedliche Zustände. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
+
+Ein Dokument kann fachlich noch auf eine Entscheidung warten, obwohl seine Erkennung bereits abgeschlossen ist. Lesen Sie den angezeigten Status deshalb im Zusammenhang mit dem Verarbeitungsschritt und Ihrem Freigabeprozess.
+
+| Frage | Bedeutung | Nächster Schritt |
+| --- | --- | --- |
+| **Ist die Verarbeitung abgeschlossen?** | OCR, Klassifizierung und Extraktion bereiten das Dokument zur Prüfung vor. „Bereit zur Validierung“ ist keine fachliche Genehmigung. | Dokument öffnen, Angaben mit dem Original vergleichen und Pflichtfeldfehler bearbeiten. |
+| **Ist die fachliche Entscheidung abgeschlossen?** | Eine Genehmigung kann mehrere Stufen haben. Eine erste Zustimmung schließt nicht automatisch alle Stufen ab. | Aktuelle Stufe, zuständigen Prüfer und Genehmigungsverlauf kontrollieren. |
+| **Wurde das Dokument übertragen?** | Exportstatus und Rückmeldung beschreiben die technische Übergabe. Ein gespeicherter Wert oder ein Genehmigungseintrag beweist keine ERP-Verarbeitung. | Exportdetails lesen und bei Bedarf den Vorgang im Zielsystem nachvollziehen. |
+
+Die Grafik ordnet diese Fragen in drei Spuren. Sie ist keine vollständige Liste technischer Statuscodes und legt keine universelle Reihenfolge fest. Die tatsächlichen Übergänge hängen von Dokumenttyp, Workflow und Exportweg ab.
+
+### Bei Fehlern am betroffenen Schritt beginnen
+
+Öffnen Sie den Fehlerstatus und lesen Sie die Meldung. Fehlt ein Pflichtwert, prüfen und korrigieren Sie ihn am Original. Meldet der Empfänger einen Exportfehler, klären Sie dessen Ursache, bevor Sie einen erneuten Export starten. Nutzen Sie den [Dokument-Flow](document-flow.md) für die Verarbeitungsschritte und die Anleitung zur [Genehmigung](../approve-or-reject-invoices.md) für fachliche Entscheidungen.
+
 Verarbeitungsstatus zeigen Schritte wie OCR, Klassifizierung oder Export an. **Bereit zur Validierung** bedeutet, dass Sie das Dokument prüfen können. Freigabestatus zeigen einen ausstehenden Genehmigungsschritt an. **Exportiert** kennzeichnet den abgeschlossenen Dokumentexport. Klicken Sie bei **Fehler** auf den Fehlerstatus, um verfügbare Fehlerdetails zu öffnen.
 
 Wenn Verarbeitungszeiten vorliegen, bewegen Sie den Mauszeiger über den Status, um Phasen und Dauer zu sehen. Bei möglichen Duplikaten erscheint ein Duplikatsymbol; öffnen Sie es, um die zugehörigen Dokumente zu vergleichen.

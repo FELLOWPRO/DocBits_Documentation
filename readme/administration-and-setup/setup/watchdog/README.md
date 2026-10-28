@@ -4,6 +4,14 @@
 
 **WatchDog** es un servicio local basado en Windows que supervisa carpetas locales en busca de documentos entrantes, los carga en la nube de DocBits para su procesamiento y exporta los documentos terminados de vuelta a carpetas locales o a sistemas ERP.
 
+## Vídeo paso a paso
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/watchdog/2026-10-28/v1/es.mp4" %}
+
+*1:42 min · Interfaz del producto en español · Voz y escena de introducción generadas con IA*
+
+[Subtítulos (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/watchdog/2026-10-28/v1/es.vtt) · [Descargar el vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/watchdog/2026-10-28/v1/es.mp4)
+
 ## Funciones principales
 
 * **Supervisión automática de carpetas** — vigila rutas locales y rutas de red UNC en busca de nuevos PDF
@@ -76,3 +84,25 @@ Para iniciar WatchDog automáticamente al arrancar el sistema:
 * [Instalación de WatchDog](watchdog-installation.md)
 * [Configuración de WatchDog](watchdog-v2-configuration.md)
 * [Preguntas frecuentes de administración de WatchDog](watchdog-admin-faq.md)
+
+## Capturas de pantalla
+
+<figure><img src="../../../.gitbook/assets/watchdog-general-es.png" alt="Estado y primeros pasos"><figcaption><p>Estado y primeros pasos</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-configurations-es.png" alt="Resumen de configuraciones"><figcaption><p>Resumen de configuraciones</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-import-dialog-es.png" alt="Nueva configuración de importación"><figcaption><p>Nueva configuración de importación</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-import-filled-es.png" alt="Configuración de importación rellenada"><figcaption><p>Configuración de importación rellenada</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-import-saved-es.png" alt="Configuración de importación guardada"><figcaption><p>Configuración de importación guardada</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-export-dialog-es.png" alt="Nueva configuración de exportación"><figcaption><p>Nueva configuración de exportación</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-export-filled-es.png" alt="Configuración de exportación con un webhook como destino"><figcaption><p>Configuración de exportación con un webhook como destino</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-xslt-es.png" alt="Plantillas XSLT"><figcaption><p>Plantillas XSLT</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-xslt-new-es.png" alt="Gestionar plantillas XSLT"><figcaption><p>Gestionar plantillas XSLT</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-logs-es.png" alt="Registros de WatchDog"><figcaption><p>Registros de WatchDog</p></figcaption></figure>

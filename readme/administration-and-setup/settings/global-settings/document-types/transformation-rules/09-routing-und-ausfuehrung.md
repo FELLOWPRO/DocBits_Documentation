@@ -4,6 +4,8 @@
 
 Routing · Ziel Unterorganisation · vorhandenes Ziel verwenden; Bedingungen, Ausführungsphasen und Wiederholung gesondert prüfen.
 
+In der Videoaufnahme sind Name und interne Kennung des vorhandenen Routingziels ausgeblendet. Für die eigene Konfiguration muss das Ziel aus der tatsächlich vorhandenen Unterorganisationen-Auswahl stammen.
+
 ## Vorgehen im Editor
 
 1. Für **Routing** das angebotene Dokumentattribut `sub_org_id` wählen. Ausschließlich eine tatsächlich vorhandene Unterorganisation als festes Ziel oder als Ergebnis einer Wertzuordnung verwenden.

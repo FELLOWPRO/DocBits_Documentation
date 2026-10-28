@@ -21,6 +21,14 @@ Wpisy są kolorowane według typu:
 
 Kliknij dowolny wpis, aby przejść do niego bezpośrednio. Wpisy wymagające parametru (np. typu dokumentu lub identyfikatora) zawierają wbudowany selektor — wybierz wartość przed kliknięciem.
 
+## Filmy szkoleniowe na liście
+
+Pozycje stron, które mają film szkoleniowy, pokazują ikonę filmu za nazwą — nie tylko w Ustawieniach, ale w całym katalogu, na przykład na Pulpicie, w Walidacji pól czy na stronach Workflow. Wybierz ikonę, aby odtworzyć film tej strony w panelu **Filmy i samouczki**, nie opuszczając mapy witryny.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-pl.png" alt="Mapa Witryny z ikonami filmów przy kilku pozycjach i otwartym panelem Filmy i samouczki z filmem o walidacji pól"><figcaption><p>Pozycje z filmem szkoleniowym mają ikonę filmu; jej wybranie otwiera film w panelu.</p></figcaption></figure>
+
+Panel nadal wymienia każdy film według tematu, więc całą bibliotekę możesz też przeglądać i wyszukiwać za pomocą ikony na górnym pasku. Zobacz [Filmy i samouczki](videos-and-tutorials.md).
+
 ## Wyszukiwanie i filtry
 
 Stały nagłówek u góry strony zawiera pole wyszukiwania i pigułki filtrów. Wpisz kilka znaków, aby filtrować listę na żywo po nazwie i opisie. Użyj pigułek typu, aby ograniczyć do jednego typu wpisu — na przykład tylko **Okno dialogowe**.

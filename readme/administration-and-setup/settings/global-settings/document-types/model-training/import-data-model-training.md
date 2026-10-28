@@ -1,5 +1,12 @@
 # Importar documentos de muestra para el entrenamiento del modelo
 
+## Preparar, importar y comprobar documentos de muestra.
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-20261028.png" alt="Preparar, importar y comprobar documentos de muestra."><figcaption><p>Preparar, importar y comprobar documentos de muestra.</p></figcaption></figure>
+
+Elija documentos de muestra representativos, prepare las opciones de importación disponibles y verifique el estado de la importación. Sólo las muestras importadas con éxito están listas para una entrenamiento posterior. Resuelva los errores de importación antes del siguiente paso y mantenga los documentos de prueba independientes separados del conjunto de datos de entrenamiento.
+
+
 Use esta página para añadir PDFs de muestra a un tipo de documento y luego entrenar o probar su modelo de clasificación. Necesita acceso a **Ajustes** y **Tipos de Documento**. Para el propósito de las funciones de entrenamiento, consulte [Propósito y uso: Entrenamiento del Modelo](purpose-and-use-model-training.md).
 
 ## Abrir el tipo de documento

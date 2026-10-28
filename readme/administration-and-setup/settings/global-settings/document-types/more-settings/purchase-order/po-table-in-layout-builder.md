@@ -1,50 +1,41 @@
 # PO Table in Layout Builder
 
-This setting controls the accessibility of the **Purchase Order (PO) table** in the **Layout Builder** and the **Validation Screen**.
+This setting controls whether the **purchase order (PO) table** is available in the **Layout Builder** and on the **Validation Screen**.
 
-### **How to Enable the PO Table**
+## Enabling the PO table
 
-To enable this feature:
+1. Go to **Settings → Document Types** and open the settings of the **Invoice** document type.
+2. Open the **Purchase Order** section.
+3. Switch on **PO table in layout builder**.
 
-1. Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → PO Table in Layout Builder**.
-2. Enable the setting to make the **Purchase Order table** visible.
+<figure><img src="../../../../../../.gitbook/assets/po-table-setting-en.png" alt="Settings page of the Invoice document type with the Purchase Order section open and the PO table in layout builder toggle switched on"><figcaption>The setting is the entry **PO table in layout builder** in the **Purchase Order** section.</figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210131953.jpg" alt=""><figcaption></figcaption></figure>
+## Where the PO table appears in the Layout Builder
 
-### **Functionality:**
+With the setting on, the layout of the document type carries the PO table. Open the layout in the **Layout Builder** (**Settings → Document Types → Invoice → Layouts**, then **Edit** on a layout) and select the **Table** tab on the canvas. The table on the canvas has three tabs:
 
-* **When enabled**:
-  * The **Purchase Order table** appears inside the **Table Section** in the **Layout Builder**.
-  *   No notification about the module being disabled will be shown.\
+* **AI Extracted table** — the table that the AI extraction fills.
+* **Extracted table** — the table that the extraction rules fill.
+* **PO Tables** — the purchase order table.
 
+<figure><img src="../../../../../../.gitbook/assets/po-table-layout-builder-table-en.png" alt="Layout Builder with the Table tab of the canvas open and the PO Tables tab selected next to AI Extracted table and Extracted table"><figcaption>The **PO Tables** tab appears in the **Table** tab of the layout canvas.</figcaption></figure>
 
-      <figure><img src="../../../../../../.gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
-* **When disabled**:
-  * A hint will indicate that the module is disabled.
-  *   The **PO table** will not be visible in the **Validation Screen**.\
+## Adding the PO table back to the layout
 
+If the PO table no longer shows up in the layout:
 
-      <figure><img src="../../../../../../.gitbook/assets/image (403).png" alt=""><figcaption></figcaption></figure>
+1. Open the layout in the **Layout Builder**.
+2. Open the **Elements** tab on the left and add **Extracted Tables** from the **Form Elements** list.
+3. Save the layout.
 
-**How to Access the Layout Builder**
+<figure><img src="../../../../../../.gitbook/assets/po-table-layout-builder-elements-en.png" alt="Elements tab of the Layout Builder with the Form Elements list, including Extracted Tables, and the PO Tables tab on the canvas"><figcaption>**Extracted Tables** is part of the **Form Elements** list on the **Elements** tab.</figcaption></figure>
 
-1. Navigate to **Settings → General Settings → Document Types → Edit Layout**.
+## When the setting is off
 
-<figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210135142.jpg" alt=""><figcaption></figcaption></figure>
+* The **PO Tables** tab in the Layout Builder is marked with a warning.
+* The PO table is not shown on the **Validation Screen**, so the purchase order lines cannot be checked there.
 
-**Adding the PO Table Back to the Layout**
-
-If the **PO table** is missing or has been removed, follow these steps:
-
-1. Open the **Layout Builder**.
-2. Under **Form Elements**, select **Extracted Tables**.
-3. Add the **PO table** to your layout.
-
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210135437.jpg" alt=""><figcaption></figcaption></figure></div>
-
-Once added and enabled, the **PO table** will be visible in the **Layout Builder** and the **Validation Screen** when a **purchase order** is available for an invoice.
-
-<div align="center"><figure><img src="../../../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250210133655.jpg" alt=""><figcaption></figcaption></figure></div>
+Once the setting is on again and the layout saved, the PO table is available in both places as soon as a purchase order is matched to the document.
 
 ## Display per-item charge price in approval layouts
 

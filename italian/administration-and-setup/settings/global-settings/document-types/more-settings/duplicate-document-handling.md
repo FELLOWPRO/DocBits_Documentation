@@ -1,5 +1,12 @@
 # Rilevamento dei duplicati
 
+## Rileva i duplicati e prendi una decisione informata
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-it-20261028.png" alt="Rileva i duplicati e prendi una decisione informata"><figcaption><p>Rileva i duplicati e prendi una decisione informata</p></figcaption></figure>
+
+DocBits confronta i campi configurati all'interno della finestra temporale selezionata. Quando viene trovata una corrispondenza, apri l'avviso di duplicato e confronta i documenti prima di continuare o archiviare. Il blocco delle esportazioni duplicate è un'impostazione separata; una corrispondenza non archivia automaticamente un documento.
+
+
 Usa **Rilevamento dei duplicati** per contrassegnare i documenti che corrispondono a un altro documento in base ai campi selezionati entro un intervallo di tempo scelto. Le opzioni appartengono a ciascun tipo di documento.
 
 ## Aprire le impostazioni

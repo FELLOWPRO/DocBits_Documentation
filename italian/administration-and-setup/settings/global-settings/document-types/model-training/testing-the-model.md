@@ -1,5 +1,12 @@
 # Test del modello
 
+## Valutare con documenti di test indipendenti
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-it-20261028.png" alt="Valutare con documenti di test indipendenti"><figcaption><p>Valutare con documenti di test indipendenti</p></figcaption></figure>
+
+I dati di addestramento e i documenti di test hanno scopi diversi. Per i documenti di test indipendenti, definire i tipi di documenti e i valori dei campi previsti, quindi confrontarli con le previsioni. Registrare la versione del modello, il campione, le discrepanze e i guasti tecnici. Apporta miglioramenti mirati e ripeti il test con lo stesso protocollo di valutazione. I valori mostrati sono un esempio, non una misurazione di precisione.
+
+
 Il test deve misurare i risultati su documenti rappresentativi non usati per l’addestramento. Prepara le risposte attese per ciascuno: tipo di documento e, per valutare l’estrazione, valori dei campi.
 
 ## Eseguire il test

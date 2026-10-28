@@ -1,5 +1,22 @@
 # Comptabilité automatique avec Infor LN
 
+## De l'enregistrement de données de base LN à l'imputation contrôlée
+
+<figure><img src="../../../.gitbook/assets/process-accounting-fr-20261028.png" alt="Données de base financières pour Auto Accounting: Chemin de données et points de contrôle pour une intégration Infor LN."><figcaption><p>Chemin de données et points de contrôle pour une intégration Infor LN. Le diagramme est schématique ; les paramètres actifs de votre organisation déterminent le comportement réel.</p></figcaption></figure>
+
+Ce guide couvre la fourniture de données de base financières pour une intégration LN. La sélection de **LN** ou l'activation de **Auto Accounting** ne remplace pas la fourniture des données ni la vérification du résultat de l'imputation.
+
+| Remise de transfert | Ce que vous devez prouver |
+| --- | --- |
+| **LN → Publication BOD** | Corriger les données de l'entreprise et des comptes ou dimensions requises ; Commencez par compter ou simuler la sélection. |
+| **BOD → ION** | Faire correspondre la version du document, la source, les filtres et le mappage ; tracez l'identifiant du test dans ION OneView. |
+| **ION → DocBits** | Réception de la réponse du point final, organisation correcte et enregistrement accepté. Un flux activé seul ne suffit pas. |
+| **DocBits → Résultat de l'imputation** | Après l'activation approuvée, utilisez des documents de test représentatifs pour vérifier que les comptes et les dimensions sont corrects pour le processus métier. |
+
+**Exemple de traçabilité :** Utilisez un identifiant de test non sensible provenant d'un ensemble de données de test approuvé. Retrouvez le même identifiant dans la source BOD, dans ION et dans les logs de réception DocBits. Cela permet de localiser un mappage manquant lors d'un transfert spécifique au lieu de modifier le commutateur à plusieurs reprises.
+
+L'exportation ultérieure et la comptabilisation ERP doivent être vérifiées séparément. Les images existantes dans ce guide montrent les commandes DocBits ; ils ne prouvent pas qu'un transfert LN a été effectué. La section suivante décrit la préparation et la vérification de bout en bout par les administrateurs responsables. Pour la remise technique, voir [Exporter depuis DocBits](../../exporting-in-docbits/README.md).
+
 Utilisez ce guide lorsqu'un administrateur Infor LN souhaite que DocBits utilise les données maîtres financières importées pour la comptabilité automatique. L'ancienne page montrait 48 écrans d'un mandant Infor particulier. Les noms de points de connexion, les mappages, les identifiants et les adresses d'endpoint de ce mandant ne constituent pas une configuration réutilisable.
 
 ## Trouver le paramètre dans DocBits

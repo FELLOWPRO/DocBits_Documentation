@@ -1,5 +1,12 @@
 # 重复检测
 
+## 识别重复单据并核对处理
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-zh-20261028.png" alt="识别重复单据并核对处理"><figcaption><p>识别重复单据并核对处理</p></figcaption></figure>
+
+DocBits 在所选时间范围内比较配置的字段。发现匹配项时，请打开重复提示，核对两份单据后再决定继续处理或归档。阻止重复单据导出是独立设置；发现重复不会自动归档单据。
+
+
 <figure><img src="../../../../../.gitbook/assets/site-complete-duplicate-controls-zh.png" alt="当前中文发票重复检测设置，显示检测字段、检测间隔和四个开关。“忽略免税热线”在此实际指忽略免税发票行；未更改设置，图示值不是推荐配置。"><figcaption><p>当前中文发票重复检测设置，显示检测字段、检测间隔和四个开关。“忽略免税热线”在此实际指忽略免税发票行；未更改设置，图示值不是推荐配置。</p></figcaption></figure>
 
 

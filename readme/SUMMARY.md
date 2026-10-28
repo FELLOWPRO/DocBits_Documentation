@@ -933,6 +933,7 @@
 ## 安全 <a href="#security" id="security"></a>
 
 * [DocBits (FELLOWPRO AG) — 安全与合规问卷](security/security-and-compliance-faq.md)
+* [数据存储、保留与删除](security/data-storage-and-retention.md)
 * [凭据的安全存储](security/secure-storage-of-credentials.md)
 * [静态数据加密](security/encryption-at-rest.md)
 * [Cookie 与浏览器存储](security/cookies-and-browser-storage.md)

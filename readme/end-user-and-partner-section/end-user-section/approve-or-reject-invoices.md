@@ -1,5 +1,26 @@
 # Aprovar ou rejeitar uma fatura
 
+## O que se segue a uma decisão de aprovação comercial
+
+<figure><img src="../../.gitbook/assets/process-approval-pt-20261028.png" alt="Aprovar ou rejeitar fatura: Distinguir verificação, decisão e transmissão posterior."><figcaption><p>Distinguir verificação, decisão e transmissão posterior. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
+
+A validação técnica verifica os dados do documento; a aprovação registra a decisão comercial de um revisor autorizado. Mesmo uma fatura tecnicamente válida pode ainda exigir uma ou mais aprovações.
+
+1. **Verifique a responsabilidade:** Abra a fatura atribuída e verifique qual nível de aprovação você pode decidir.
+2. **Revise a fatura:** compare os valores do cabeçalho, itens de linha e impostos com o documento original e os requisitos da sua empresa.
+3. **Decisão do documento:** Aprovar uma fatura correta ou rejeitá-la com um motivo específico. Aguarde a resposta e verifique o histórico de aprovações.
+4. **Identifique o próximo passo:** Caso sejam configuradas etapas adicionais de aprovação, a fatura aguarda suas decisões. Após rejeição, esclarecimento, correção e qualquer reenvio siga o processo configurado. O processo de exportação separado determina se os dados chegaram ao sistema de destino.
+
+### Três afirmações que não significam a mesma coisa
+
+| declaração | O que não prova automaticamente |
+| --- | --- |
+| **Os dados são validados.** | Que um revisor de negócios autorizado o aprovou. |
+| **Um revisor aprovado.** | Que todas as etapas de aprovação necessárias foram concluídas. |
+| **As aprovações foram concluídas.** | Que a fatura já foi exportada ou lançada em ERP. |
+
+Use [Documentar tarefas](tasks.md) para processar o trabalho atribuído e [Status do documento](dashboard/document-status.md) para classificar o status atual.
+
 O vídeo mostra a aprovação na perspetiva de uma pessoa responsável pela revisão.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-customer/v1/pt.mp4" %}

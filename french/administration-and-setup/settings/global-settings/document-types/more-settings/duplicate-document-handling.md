@@ -1,5 +1,12 @@
 # Détection des doublons
 
+## Détectez les doublons et prenez une décision éclairée
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-fr-20261028.png" alt="Détectez les doublons et prenez une décision éclairée"><figcaption><p>Détectez les doublons et prenez une décision éclairée</p></figcaption></figure>
+
+DocBits compare les champs configurés dans la période sélectionnée. Lorsqu'une correspondance est trouvée, ouvrez l’avertissement de doublon et comparez les documents avant de continuer ou d'archiver. Le blocage des exportations en double est un paramètre distinct ; une correspondance n’archive pas automatiquement un document.
+
+
 Utilisez la **Détection des doublons** pour signaler les documents qui correspondent à un autre document sur des champs choisis, dans une période donnée. Les options appartiennent à chaque type de document.
 
 ## Ouvrir les paramètres

@@ -1,5 +1,12 @@
 # Tester le modèle
 
+## Évaluez avec des documents de test indépendants
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-fr-20261028.png" alt="Évaluez avec des documents de test indépendants"><figcaption><p>Évaluez avec des documents de test indépendants</p></figcaption></figure>
+
+Les données d’entraînement et les documents de test servent à des fins différentes. Pour les documents de test indépendants, définissez les types de documents et les valeurs de champ attendus, puis comparez-les aux prédictions. Enregistrez la version du modèle, l'échantillon, les écarts et les défaillances techniques. Apportez des améliorations ciblées et répétez le test avec le même protocole d’évaluation. Les valeurs indiquées sont un exemple et non une mesure de précision.
+
+
 Utilisez des documents représentatifs qui n’ont pas servi à entraîner le modèle. Préparez pour chacun les réponses attendues : type de document et, si vous évaluez l’extraction, valeurs des champs.
 
 ## Réaliser l’évaluation

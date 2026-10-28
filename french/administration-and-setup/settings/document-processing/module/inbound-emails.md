@@ -1,5 +1,12 @@
 # E-mails entrants
 
+## Du courrier électronique entrant au document prêt à être vérifié
+
+<figure><img src="../../../../.gitbook/assets/intro-process-01-email-fr-20261028.png" alt="Du courrier électronique entrant au document prêt à être vérifié"><figcaption><p>Du courrier électronique entrant au document prêt à être vérifié</p></figcaption></figure>
+
+L'illustration montre deux manières d'entrer : une boîte aux lettres connectée et un transfert vers une adresse d'importation DocBits. Les pièces jointes de documents prises en charge sont importées. Vérifiez les restrictions de l'expéditeur, l'organisation et le routage, puis vérifiez l'importation réelle. L'envoi d'un email ne prouve pas que ses documents ont été importés avec succès.
+
+
 ### Aperçu
 
 DocBits peut récupérer les documents directement depuis l'e-mail, sans téléversement manuel. Il existe **deux façons** d'importer des documents par e-mail, toutes deux dans **Paramètres → Traitement des documents → Importer** :

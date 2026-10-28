@@ -1,5 +1,12 @@
 # Eksport niepasujących linii PO
 
+## Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia
+
+<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-pl-20261028.png" alt="Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia"><figcaption><p>Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia</p></figcaption></figure>
+
+W tym przykładzie zamówienie zakupu składa się z trzech wierszy i tylko jeden jest dopasowany do wiersza potwierdzenia zamówienia. Jeśli opcja „Export Not Matched PO Lines” jest wyłączona, eksportowana jest tylko dopasowana pozycja zamówienia zakupu. Po włączeniu tej opcji uwzględnione zostaną również dwa niedopasowane wiersze zamówienia zakupu. Nie tworzy to dodatkowych dopasowań.
+
+
 ## **Gdzie to znaleźć**
 
 Przejdź do **Ustawienia → Ustawienia ogólne → Typy dokumentów → Więcej ustawień → Sekcja zamówienia zakupu → Eksport niepasujących linii PO**. Przełącz przycisk, aby włączyć to ustawienie.

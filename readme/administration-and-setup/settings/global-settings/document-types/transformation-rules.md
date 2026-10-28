@@ -1,10 +1,25 @@
 # Règles de transformation
 
+## De la valeur extraite à la vérification en aval
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-fr-20261028.png" alt="Comment fonctionnent les règles de transformation: Une valeur extraite devient une valeur spécifiquement traitée."><figcaption><p>Une valeur extraite devient une valeur spécifiquement traitée. Le diagramme est schématique ; les paramètres actifs de votre organisation déterminent le comportement réel.</p></figcaption></figure>
+
+Une transformation modifie les données existantes ; il n'exécute plus OCR. Il lit une entrée, vérifie son état, exécute les étapes configurées et réécrit le résultat. Si la condition n'est pas remplie, la règle est ignorée.
+
+**Exemple :** Une cellule de tableau contient `STK`. Un mappage de valeurs qui s'applique au fournisseur écrit `PCE`. La correspondance PO en aval utilise ensuite le code d'unité normalisé. Testez également une valeur déjà normalisée et une valeur à laquelle la règle ne doit pas s'appliquer.
+
+1. **Déclencheur :** Lors du traitement du document, les règles s'exécutent après l'extraction. Ils peuvent également être réexécutés lorsque les données d'extraction modifiées sont enregistrées.
+2. **Ordre :** Au cours d'une exécution, les étendues sont traitées dans cet ordre : **Champ d'en-tête → Routage → Lignes du tableau → Colonne du tableau**. Dans chaque portée, la priorité et la clé déterminent l'ordre.
+3. **Effet :** Une règle de tableau peut modifier ou supprimer des lignes de facture. Cela peut modifier le nombre de lignes et les conditions préalables au rapprochement des bons de commande. Le remplacement de lignes qui ont déjà été mises en correspondance peut supprimer une affectation existante.
+4. **Contrôle :** Comparez l'entrée, l'aperçu et le résultat enregistré. Lorsque la journalisation des exécutions est activée, la trace des conditions indique pourquoi une règle a été appliquée ou ignorée.
+
+**Vérifiez les répétitions :** Une règle ne doit pas modifier sa valeur déjà préparée à chaque fois qu'elle est enregistrée. Utilisez des étapes idempotentes appropriées, une source inchangée ou l'exécution unique prévue. Les détails et les exemples suivent ci-dessous ; [Règles de correspondance PO](more-settings/purchase-order/purchase-order-matching-rules.md) explique le mappage en aval.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/fr.mp4" %}
 
 ## Vue d'ensemble
 
-Les règles de transformation nettoient ou réécrivent les données extraites **automatiquement**, à chaque traitement d'un document et à chaque enregistrement. Une règle peut modifier :
+**Déclencheur :** Lors du traitement du document, les règles s'exécutent après l'extraction. Ils peuvent également être réexécutés lorsque les données d'extraction modifiées sont enregistrées.
 
 * un **champ d'en-tête** (numéro de facture, devise, numéro d'identification fiscale du fournisseur …),
 * une **colonne** dans chaque ligne d'un tableau (unité, numéro d'article, base de prix …),

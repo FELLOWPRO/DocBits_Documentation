@@ -1,5 +1,22 @@
 # Clasificación y extracción
 
+## ¿Qué configuración funciona en qué paso del proceso?
+
+<figure><img src="../../../../.gitbook/assets/process-extraction-es-20261028.png" alt="Del archivo a los datos reconocidos: Vea el tipo de documento, la fuente de datos y la ruta de extracción por separado."><figcaption><p>Vea el tipo de documento, la fuente de datos y la ruta de extracción por separado. El diagrama es esquemático; La configuración activa de su organización determina el comportamiento real.</p></figcaption></figure>
+
+La clasificación responde a la pregunta **“¿Qué tipo de documento es este?”**. Respuestas de extracción **“¿Qué valores contiene?”**. La configuración de esta página afecta a diferentes puntos de procesamiento y no debe entenderse como un único interruptor de IA.
+
+1. **Preparar entrada:** Para PDFs, se puede usar texto existente o OCR; Los documentos electrónicos compatibles pueden proporcionar valores estructurados. Una división activada puede separar un documento entrante según el código de barras configurado o los criterios QR.
+2. **Determinar tipo de documento:** Las reglas y modelos de clasificación asignan los documentos a un tipo y, si es necesario, a un subtipo. Esta asignación debe diferenciarse de la posterior extracción de campos y tablas.
+3. **Extraer valores:** Las tablas pueden seguir diferentes rutas según la configuración y las reglas guardadas aplicables. Los campos de encabezado tienen sus propios indicadores de origen. Por lo tanto, el modelo de IA seleccionado por sí solo no explica cada valor de fila o campo.
+4. **Rastree el resultado:** En la pantalla de validación, verifique qué pestaña de la tabla contiene las filas y qué indicador de fuente tiene un campo de encabezado. Si falta un paso de procesamiento, lea los registros del documento antes de cambiar la configuración.
+
+### Distinguir entre ruta de reglas y ruta de IA
+
+Las reglas de tabla guardadas apropiadas pueden determinar la extracción de la tabla para la plantilla o proveedor relevante. Sin reglas adecuadas, la ruta de IA se puede utilizar cuando se activa la extracción de tablas de IA. Las columnas individuales pueden tener sus propias opciones de IA. Una fuente de IA para un campo de encabezado no significa que toda la tabla provenga de la IA.
+
+La guía de diagnóstico [¿Qué ruta de extracción se utilizó?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) explica pestañas, identificadores de fuente y protocolos. La página [modelo de IA](ai-model.md) explica el estándar de la organización y las configuraciones específicas relacionadas con las plantillas.
+
 ## Descripción general
 
 En la configuración de **Clasificación y extracción** puedes:
@@ -93,7 +110,7 @@ Más información sobre este ajuste [aquí](auto-extract-tax-code.md).
 
 **Guardar reglas de extracción (solo administradores):** Solo los administradores pueden hacer clic en *Guardar reglas* en el entrenamiento de tablas. Actívalo cuando los usuarios guarden una y otra vez reglas que rompen la extracción de un proveedor.
 
-**Modelo de IA:** Selecciona el nivel de IA que se usa para la extracción de tablas. Hay seis opciones disponibles: **Full** (máxima precisión, la más lenta, 2 tokens por documento), **Fast** (predeterminado; 1 token por documento), **Nexus** y **Nexus Flash** (familia de modelos alternativa, opcional), además de **Auto** y **Auto Nexus**, en los que DocBits decide por documento cuánta potencia de modelo hace falta. La tabla debajo del selector muestra:
+**Modelo AI:** Establece el modelo de organización para la extracción de campos y tablas. El menú ofrece Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Verifique disponibilidad, calidad, tiempo de ejecución y costo con documentos representativos. Un nivel no siempre es el más preciso o el más rápido para cada documento. Las anulaciones de plantillas pueden reemplazar la configuración de la organización. La tabla debajo del selector muestra:
 
 * Qué **proveedores** usan qué modelo de IA
 * Si usan extracción estructurada (IA) y E-Text
@@ -103,11 +120,11 @@ Este ajuste se explica en detalle [aquí](ai-model.md).
 
 ### ¿Por qué la tabla se ve distinta según el proveedor?
 
-Todo lo que DocBits aprende sobre una tabla se guarda **por proveedor**:
+El procesamiento de tablas depende de las reglas y configuraciones guardadas en el contexto de plantilla o proveedor relevante:
 
 * **Reglas guardadas** (entrenamiento de tablas): posición de la tabla y asignación de sus columnas en el diseño de ese proveedor.
 * **Etiquetas de la tabla AI y reglas de formato**: indicaciones que el usuario guardó para la tabla AI de ese proveedor.
-* **Modelo de IA específico del proveedor**: el nivel elegido para ese proveedor en *Más ajustes* de la pantalla de validación.
+* **Modelo de IA específico de la plantilla:** La selección realizada en la pantalla de validación se guarda por organización y plantilla de extracción actual. No cambia automáticamente todas las plantillas del mismo proveedor. Sin una anulación, se utiliza la configuración de organización aplicable.
 
 Así, el proveedor A con reglas guardadas muestra una tabla determinista en la pestaña *Tabla extraída* de la pantalla de validación, mientras que el proveedor B sin reglas recibe la *Tabla extraída por IA*. Para que el proveedor B se comporte como A, entrena la tabla de B una vez. Para restablecer un proveedor, elimina sus reglas en la pantalla de validación o restablece sus datos de entrenamiento en la tabla del Modelo de IA.
 
@@ -136,7 +153,7 @@ Notas:
 * `AI_MODEL` sin establecer equivale a **Fast**.
 * Un `TABLE_EXTRACTION_VISION_MODE` sin definir se deduce del interruptor anterior `TABLE_EXTRACTION_USE_VISION`: `true` equivale a `vision`, cualquier otro valor a `off`.
 * Cambiar una clave surte efecto en los documentos procesados a partir de ese momento. Reinicia un documento para volver a extraerlo con el nuevo ajuste.
-* Las elecciones por proveedor (E-Text, modelo de IA, reglas guardadas) no son preferencias de la organización; se establecen en la pantalla de validación, en *Más ajustes*, sobre un documento de ese proveedor.
+* Las anulaciones de plantillas difieren de las preferencias de la organización. La guía del modelo AI explica el alcance exacto.
 
 ## Documento electrónico
 

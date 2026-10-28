@@ -1,10 +1,25 @@
 # Transformatieregels
 
+## Van geëxtraheerde waarde tot downstream-verificatie
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-nl-20261028.png" alt="Hoe transformatieregels werken: Een geëxtraheerde waarde wordt een specifiek verwerkte waarde."><figcaption><p>Een geëxtraheerde waarde wordt een specifiek verwerkte waarde. Het diagram is schematisch; de actieve instellingen van uw organisatie bepalen het daadwerkelijke gedrag.</p></figcaption></figure>
+
+Een transformatie verandert bestaande data; OCR wordt niet opnieuw uitgevoerd. Het leest een invoer, controleert de staat ervan, voert de geconfigureerde stappen uit en schrijft het resultaat terug. Als niet aan de voorwaarde wordt voldaan, wordt de regel overgeslagen.
+
+**Voorbeeld:** Een tabelcel bevat `STK`. Een waardetoewijzing die van toepassing is op de leverancier schrijft `PCE`. Stroomafwaartse PO-matching gebruikt vervolgens de genormaliseerde eenheidscode. Test ook een waarde die al genormaliseerd is en een waarde waarop de regel niet van toepassing zou moeten zijn.
+
+1. **Trigger:** Tijdens de documentverwerking worden de regels na extractie uitgevoerd. Ze kunnen ook opnieuw worden uitgevoerd wanneer gewijzigde extractiegegevens worden opgeslagen.
+2. **Volgorde:** Binnen een run worden de scopes in deze volgorde verwerkt: **Kopveld → Routing → Tabelrijen → Tabelkolom**. Binnen elke scope bepalen prioriteit en sleutel de volgorde.
+3. **Effect:** Een tabelregel kan regelitems wijzigen of verwijderen. Hierdoor kunnen het aantal rijen en de vereisten voor het matchen van inkooporders worden gewijzigd. Door rijen te vervangen die al zijn gematcht, kan een bestaande toewijzing worden verwijderd.
+4. ** Controle: ** Vergelijk invoer, voorbeeld en opgeslagen resultaat. Wanneer uitvoeringsregistratie is ingeschakeld, laat de conditietracering zien waarom een ​​regel is toegepast of overgeslagen.
+
+**Controleer herhalingen:** Een regel mag de reeds voorbereide waarde niet elke keer veranderen wanneer deze wordt opgeslagen. Gebruik passende idempotente stappen, een ongewijzigde bron of de beoogde eenmalige uitvoering. De details en voorbeelden volgen hieronder; [PO-matchingsregels](more-settings/purchase-order/purchase-order-matching-rules.md) legt de stroomafwaartse mapping uit.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/nl.mp4" %}
 
 ## Overzicht
 
-Transformatieregels maken geëxtraheerde gegevens **automatisch** schoon of herschrijven ze, telkens wanneer een document wordt verwerkt en telkens wanneer het wordt opgeslagen. Een regel kan het volgende wijzigen:
+**Trigger:** Tijdens de documentverwerking worden de regels na extractie uitgevoerd. Ze kunnen ook opnieuw worden uitgevoerd wanneer gewijzigde extractiegegevens worden opgeslagen.
 
 * een **headerveld** (factuurnummer, valuta, btw-nummer van de leverancier …),
 * een **kolom** in elke rij van een tabel (eenheid, artikelnummer, prijsbasis …),

@@ -1,5 +1,23 @@
 # Documentstatus
 
+## Drie statusvragen in plaats van één statusketen
+
+<figure><img src="../../../.gitbook/assets/process-status-nl-20261028.png" alt="Classificeer de documentstatus correct: Verwerking, goedkeuring en export zijn verschillende toestanden."><figcaption><p>Verwerking, goedkeuring en export zijn verschillende toestanden. Het diagram is schematisch; de actieve instellingen van uw organisatie bepalen het daadwerkelijke gedrag.</p></figcaption></figure>
+
+Het kan zijn dat een document nog steeds wacht op een zakelijke goedkeuringsbeslissing, ook al is de erkenning voltooid. Lees de weergegeven status in de context van de verwerkingsstap en uw goedkeuringsproces.
+
+| Vraag | Betekenis | Volgende stap |
+| --- | --- | --- |
+| **Is de verwerking voltooid?** | OCR, classificatie en extractie bereiden het document voor op beoordeling. “Klaar voor validatie” is geen zakelijke goedkeuring. | Open het document, vergelijk de informatie met het origineel en bewerk verplichte veldfouten. |
+| **Is de inhoudelijke goedkeuringsbeslissing afgerond?** | Een goedkeuring kan verschillende niveaus hebben. Een eerste goedkeuring doorloopt niet automatisch alle fasen. | Controleer het huidige niveau, de verantwoordelijke beoordelaar en de goedkeuringsgeschiedenis. |
+| **Is het document overgedragen?** | Exportstatus en feedback beschrijven de technische overdracht. Een opgeslagen waarde of goedkeuringsinvoer bewijst geen ERP-verwerking. | Lees de exportdetails en reproduceer indien nodig het proces in het doelsysteem. |
+
+De afbeelding organiseert deze vragen in drie sporen. Het is geen uitputtende lijst van technische statuscodes en vestigt geen universele orde. De daadwerkelijke transities zijn afhankelijk van het documenttype, de workflow en het exportpad.
+
+### Als er fouten optreden, begin dan met de betreffende stap
+
+Open de foutstatus en lees het bericht. Als een vereiste waarde ontbreekt, controleer deze dan en corrigeer deze met het origineel. Als de ontvanger een exportfout meldt, los dan de oorzaak ervan op voordat u het opnieuw probeert. Gebruik [Documentstroom](document-flow.md) voor verwerkingsstappen en de [Goedkeuring](../approve-or-reject-invoices.md)-handleiding voor zakelijke goedkeuringsbeslissingen.
+
 Verwerkingsstatussen tonen stappen zoals OCR, classificatie of export. **Klaar voor validatie** betekent dat het document kan worden gecontroleerd. Goedkeuringsstatussen geven aan dat goedkeuring nog nodig is. **Geëxporteerd** geeft aan dat de documentexport klaar is. Klik op de status **Fout** voor beschikbare foutdetails.
 
 Als verwerkingstijden beschikbaar zijn, houdt u de aanwijzer boven een status om de fasen en hun duur te zien. Documenten met mogelijke duplicaten tonen een duplicaatpictogram; open dit om de gerelateerde documenten te vergelijken.

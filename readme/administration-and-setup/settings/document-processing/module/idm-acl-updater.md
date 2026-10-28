@@ -2,29 +2,30 @@
 
 ## Overview
 
-The ACL-Updater module is responsible for updating and managing Access Control Lists (ACLs) within DocBits. This ensures that appropriate permissions and security measures are in place for document access and handling.
+The IDM ACL Updater module manages the Access Control Lists (ACLs) of documents that DocBits exports to Infor IDM. The module keeps a mapping from an Infor document type and its old ACL status to the new ACL status, so that the exported document receives the correct access rights.
 
 ## Activation Instructions
 
-To activate the ACL-Updater module, follow these steps:
+To activate the IDM ACL Updater module:
 
-1. Navigate to **Settings**.
-2. Select **Document Processing**.
-3. Select **Module**.
-4. Go to **Document Type**.
-5. Activate the **IDM ACL-Updater** by enabling the corresponding slider.
+1. Go to **Settings → Module → Document Integration**.
+2. In the **Document Type** section, switch on **IDM ACL Updater**.
+3. Select the **ION-Mapping File** to use.
 
-Once the module is activated, you can select an **ION Mapping File** to use.
+The settings search finds the entry quickly: enter `IDM ACL`.
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/idm-acl-updater-module-en.png" alt="Document Integration settings with the IDM ACL Updater switch on, the ION-Mapping File field and the table of ACL mappings"><figcaption>The module sits in the **Document Type** section of **Document Integration**. Once it is on, the **ION-Mapping File** field and the table of mappings appear.</figcaption></figure>
 
-### Adding ACL Information
+### Adding ACL information
 
-To add ACL information, click the **Add** button. You can then specify the following details:
+Below the switch, the table lists the mappings that exist for the organization. It has the columns **Infor-Doctype**, **Old-ACL** and **New-ACL**, and a delete action on each row.
+
+To add a mapping, select **Add** and fill in the dialog:
 
 * **IDM Document Type**
-* **Current IDM ACL Status**
-* **New IDM ACL Status**
+* **Current IDM ACL status**
+* **New IDM ACL status**
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2.png" alt="" width="563"><figcaption></figcaption></figure>
+Select **Save** to store the mapping, or **Cancel** to close the dialog without saving.
 
+<figure><img src="../../../../.gitbook/assets/idm-acl-mapping-dialog-en.png" alt="Add IDM ACL Mapping dialog with the fields IDM Document Type, Current IDM ACL status and New IDM ACL status, and the buttons Cancel and Save"><figcaption>A new mapping is entered in the **Add IDM ACL Mapping** dialog.</figcaption></figure>

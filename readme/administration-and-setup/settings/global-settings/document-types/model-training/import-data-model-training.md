@@ -22,7 +22,7 @@ La page **Entraîner Le Modèle** affiche le nombre d'échantillons et la liste 
 3. Glissez-déposez les fichiers PDF dans le dialogue ou utilisez **Télécharger** pour les sélectionner. L'importateur actuel de documents d'exemple accepte les **fichiers PDF** ; il refuse les autres types de fichiers. La sélection des fichiers démarre le téléchargement.
 4. Fermez le dialogue et vérifiez que les documents apparaissent dans la liste d'entraînement. Si DocBits signale une erreur de téléchargement ou un document déjà existant, corrigez le fichier ou choisissez un autre exemple avant de continuer.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc648-import-dialog-fr-20261011.png" alt="Dialogue Téléchargeur avec le sélecteur Format des montants et des dates, la zone de glisser-déposer et le champ Télécharger"><figcaption><p>Choisissez un format avant de sélectionner les PDF d'exemple.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-fr.png" alt="Dialogue Téléchargeur avec le sélecteur Format des montants et des dates, la zone de glisser-déposer et le champ Télécharger"><figcaption><p>Choisissez un format avant de sélectionner les PDF d'exemple.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc648-format-menu-fr-20261011.png" alt="Menu Format des montants et des dates avec des choix de pays et de régions, notamment Germany et United Kingdom"><figcaption><p>Choisissez le format utilisé dans le document, pas votre langue d'interface préférée.</p></figcaption></figure>
 

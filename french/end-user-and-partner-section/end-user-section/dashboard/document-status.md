@@ -1,5 +1,23 @@
 # Statut des documents
 
+## Trois questions de statut au lieu d'une seule chaîne de statut
+
+<figure><img src="../../../.gitbook/assets/process-status-fr-20261028.png" alt="Classer correctement le statut du document: Le traitement, l&#x27;approbation et l&#x27;exportation sont des états différents."><figcaption><p>Le traitement, l&#x27;approbation et l&#x27;exportation sont des états différents. Le diagramme est schématique ; les paramètres actifs de votre organisation déterminent le comportement réel.</p></figcaption></figure>
+
+Un document peut encore attendre une décision d'approbation commerciale même si la reconnaissance est terminée. Lisez le statut affiché dans le contexte de l'étape de traitement et de votre processus d'approbation.
+
+| Question | Signification | Étape suivante |
+| --- | --- | --- |
+| **Le traitement est-il terminé ?** | OCR, la classification et l'extraction préparent le document pour révision. « Prêt pour la validation » n'est pas une approbation commerciale. | Ouvrez le document, comparez les informations avec l'original et modifiez les erreurs des champs obligatoires. |
+| **La décision d’approbation métier est-elle terminée ?** | Une approbation peut avoir plusieurs niveaux. Une première approbation ne complète pas automatiquement toutes les étapes. | Vérifiez le niveau actuel, l’examinateur responsable et l’historique des approbations. |
+| **Le document a-t-il été transféré ?** | Le statut de l'exportation et les commentaires décrivent le transfert technique. Une valeur stockée ou une entrée d'approbation ne prouve pas le traitement ERP. | Lisez les détails de l'exportation et, si nécessaire, reproduisez le processus dans le système cible. |
+
+Le graphique organise ces questions en trois pistes. Il ne s'agit pas d'une liste exhaustive des codes d'état technique et n'établit pas un ordre universel. Les transitions réelles dépendent du type de document, du flux de travail et du chemin d'exportation.
+
+### Si des erreurs se produisent, commencez à l’étape concernée
+
+Ouvrez l'état d'erreur et lisez le message. Si une valeur requise est manquante, vérifiez-la et corrigez-la par rapport à l'original. Si le destinataire signale une erreur d’exportation, résolvez-en la cause avant de réessayer. Utilisez [Flux de documents](document-flow.md) pour les étapes de traitement et le guide [Approbation](../approve-or-reject-invoices.md) pour les décisions d'approbation commerciale.
+
 Les statuts de traitement indiquent des étapes telles que l’OCR, la classification ou l’export. **Prêt pour la validation** signifie que le document peut être vérifié. Les statuts d’approbation indiquent une approbation en attente. **Terminé** indique que l’export du document est achevé. Cliquez sur le statut **Erreur** pour consulter les détails disponibles.
 
 Si des durées de traitement sont disponibles, survolez un statut pour voir les phases et leur durée. Une icône de doublon apparaît pour les documents ayant des doublons possibles ; ouvrez-la pour comparer les documents associés.

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">Rechnung genehmigen oder ablehnen</title>
+<desc id="desc">Prüfung, Entscheidung und nachgelagerte Übergabe unterscheiden. Eine erste Genehmigung kann weitere Prüfer erfordern. Ein Genehmigungseintrag ist kein Nachweis für einen ERP-Export.</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOCBITS  /  PROZESSÜBERSICHT</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">Rechnung genehmigen oder ablehnen</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">Prüfung, Entscheidung und nachgelagerte Übergabe unterscheiden.</text>
+<rect x="90" y="380" width="440" height="190" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="114" y="427.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Beleg prüfen</text>
+<text x="114" y="482.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Original und Angaben</text>
+<text x="114" y="524.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">fachlich vergleichen.</text>
+<rect x="650" y="380" width="410" height="190" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="674" y="427.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Entscheidung</text>
+<text x="674" y="482.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Berechtigter Prüfer</text>
+<text x="674" y="524.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">entscheidet.</text>
+<polyline points="530,475 630,475" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="630,475 616.8362615716444,482.19138307906303 616.8362615716444,467.80861692093697" fill="#126a8a"/>
+<rect x="1260" y="280" width="650" height="175" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1284" y="327.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Genehmigen</text>
+<text x="1284" y="382.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Weitere Stufe? Nächster autorisierter Prüfer.</text>
+<rect x="1260" y="520" width="650" height="175" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1284" y="567.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">Ablehnen</text>
+<text x="1284" y="622.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Klärung und erneute Einreichung nach Ihrem</text>
+<text x="1284" y="664.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">Prozess.</text>
+<polyline points="1060,475 1150,475 1150,367 1240,367" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1240,367 1226.8362615716444,374.19138307906303 1226.8362615716444,359.80861692093697" fill="#126a8a"/>
+<polyline points="1150,475 1150,607 1240,607" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1240,607 1226.8362615716444,614.191383079063 1226.8362615716444,599.808616920937" fill="#126a8a"/>
+<text x="1260" y="746.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">Verlauf nach der Entscheidung kontrollieren.</text>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">Eine erste Genehmigung kann weitere Prüfer erfordern. Ein Genehmigungseintrag ist kein Nachweis für einen ERP-Export.</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">Schematische Erklärung · Ablauf und Optionen richten sich nach Ihrer Konfiguration.</text>
+</svg>

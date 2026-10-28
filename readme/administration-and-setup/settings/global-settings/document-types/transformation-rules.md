@@ -28,7 +28,7 @@ Transformationsregeln bereinigen oder schreiben extrahierte Daten **automatisch*
 * die **Zeilen** einer Tabelle (löschen, eine Zeile hinzufügen),
 * ein **Attribut des Dokuments** — derzeit die Unterorganisation, zu der es gehört (**Routing**).
 
-Jede Regel **liest** einen Wert, schickt ihn durch eine kurze **Pipeline** aus Schritten und **schreibt** das Ergebnis zurück. Regeln laufen **vor** Validierung, Skripten und Bestellabgleich, sodass alles Nachgelagerte bereits die korrigierten Werte sieht.
+Jede Regel **liest** einen Wert, schickt ihn durch eine kurze **Pipeline** aus Schritten und **schreibt** das Ergebnis zurück. Die passenden Verarbeitungsphasen bereiten Werte für nachgelagerte Prüfungen und den Bestellabgleich auf. Regeln können zusätzlich nach dem Bestellabgleich und beim Speichern erneut laufen; beachten Sie die Phasenanzeige und die Optionen Ihrer Regel.
 
 Transformationsregeln ersetzen die meisten der kleinen Skripte, die Organisationen früher für „dieses Feld immer trimmen“, „die Einheitencodes dieses Lieferanten abbilden“, „das Präfix hinzufügen, das unser ERP erwartet“ oder „die Positionen dieses Lieferanten zu einer Gesamtzeile zusammenfassen“ geschrieben haben — mit einem Formular, einer Live-Vorschau und ohne Code.
 
@@ -216,7 +216,7 @@ Eine **Routing**-Regel ändert kein Feld. Sie setzt ein Attribut am Dokument, we
 
 ### Einmal ausführen und Idempotenz
 
-Die meisten Schritte liefern dasselbe Ergebnis, wenn sie auf ihre eigene Ausgabe angewendet werden — einen getrimmten Wert erneut trimmen, `PCE` erneut abbilden, ein Präfix hinzufügen, das schon vorhanden ist. Diese Regeln können bei jedem Speichern gefahrlos laufen.
+Viele einzelne Schritte können auf ihrer eigenen Ausgabe stabil bleiben, zum Beispiel Trimmen oder das Ergänzen eines bereits vorhandenen exakten Präfixes. Ob die gesamte Pipeline bei erneutem Speichern stabil bleibt, muss jedoch mit der konkreten Konfiguration geprüft werden. Eine Wertzuordnung oder ein mehrfach vorhandenes Präfix kann bei einem späteren Durchlauf weitere Änderungen auslösen.
 
 **Teilstück**, **Extrahieren** und **Suchen und ersetzen** benötigen im geprüften Serververtrag eine getrennte Originalquelle. Der Server lehnt diese Schritte auf ihrem eigenen Zielfeld ab, weil erneutes Verarbeiten den Wert ungewollt verändern kann. **Nur einmal pro Dokument ausführen** hebt diese Quellvorgabe nicht auf. Wählen Sie **Lesen Sie von → Ein anderes Feld** und behalten Sie die Originalquelle unverändert.
 
@@ -224,7 +224,7 @@ Prüfen Sie die vollständige Pipeline auch bei anderen Schritten zweimal: Eine 
 
 ## Transformationsregeln und Bestellabgleich
 
-Regeln laufen **vor** dem Bestellabgleich, sodass sie genau das vorbereiten können, was der Matcher liest:
+Passend konfigurierte Regeln bereiten die Werte vor, die der Bestellabgleich liest. Zusätzliche Durchläufe nach dem Bestellabgleich und beim Speichern müssen ebenfalls geprüft werden:
 
 | Der Matcher liest | Eine Regel kann | Beispiel |
 | --- | --- | --- |

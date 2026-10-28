@@ -18,7 +18,7 @@ Kopffeld · Ziel Ergebnis · Schritte einzeln testen: case, trim, sanitize.
 
 ## 1. Schreibweise
 
-Großschreibung vereinheitlicht beispielsweise eine Rechnungsnummer. Kleinschreibung kann einen technischen Vergleichsschlüssel vereinheitlichen. Title Case und die Großschreibung des ersten Zeichens verändern auch den Rest des Wortes. Aus einer vollständig groß geschriebenen Firmenabkürzung kann deshalb eine andere Schreibweise werden. Für Eigennamen und rechtlich relevante Bezeichnungen verwende ich diese Varianten nur mit einer klaren fachlichen Vorgabe. Ich prüfe alle vier Modi an derselben Beispieleingabe und vergleiche die Ausgabe.
+Großschreibung vereinheitlicht beispielsweise eine Rechnungsnummer. Kleinschreibung kann einen technischen Vergleichsschlüssel vereinheitlichen. Title Case und die Großschreibung des ersten Zeichens können auch den Rest des Wortes verändern. Aus einer Firmenabkürzung kann deshalb eine andere Schreibweise werden. Für Eigennamen verwende ich diese Varianten nur mit einer klaren fachlichen Vorgabe. Beim Modus Capitalise first gibt es im geprüften Stand eine Abweichung: Die Browservorschau lässt die übrige Schreibweise stehen, während der Server den Rest kleinschreibt. Ich verlasse mich hier deshalb nicht allein auf die Vorschau, sondern vergleiche ausdrücklich den Serverwert.
 
 ## 2. Trimmen
 

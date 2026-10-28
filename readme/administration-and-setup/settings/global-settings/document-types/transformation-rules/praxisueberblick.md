@@ -19,7 +19,7 @@ Der geprüfte Editor bietet 14 Wertschritte für Kopf/Spalte, zwei Schritte für
 
 | Schritt | Varianten und Parameter | Beispiel | Grenze und Gegenprobe |
 | --- | --- | --- | --- |
-| Groß-/Kleinschreibung ändern (`case`) | upper, lower, title, capitalize | `inv-4711` → `INV-4711` | Title: `acme gmbh` → `Acme Gmbh`; capitalize: `aCME GMBH` → `Acme gmbh`. Eigennamen/Abkürzungen können sich fachlich unerwünscht ändern. |
+| Groß-/Kleinschreibung ändern (`case`) | upper, lower, title, capitalize | `inv-4711` → `INV-4711` | Title: `acme gmbh` → `Acme Gmbh`; capitalize: `aCME GMBH` → `Acme gmbh`. Eigennamen/Abkürzungen können sich fachlich unerwünscht ändern. Bei `capitalize` lässt die geprüfte Browservorschau den Rest unverändert, während der Server ihn kleinschreibt; Serverwert gesondert prüfen. |
 | Trimmen (`trim`) | beide / links / rechts; Zeichen leer = Leerraum | `  4711  ` → `4711` | `47 11` bleibt erhalten. Links Zeichen `0`: `004711` → `4711`, aber `000` → leer. Zeichen sind eine Menge, kein vollständiger Präfixtext. |
 | Auffüllen (`pad`) | Mindestlänge, ein Füllzeichen, links/rechts | Länge 10, links `0`: `4711` → `0000004711` | Bereits 11 Zeichen bleiben 11 Zeichen. Rechts `_`, Länge 6: `ABC` → `ABC___`. |
 | Kürzen (`truncate`) | maximale Länge | Länge 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` | `ABC` bleibt `ABC`. Abschneiden verliert Informationen und kann Nummern zusammenfallen lassen. |

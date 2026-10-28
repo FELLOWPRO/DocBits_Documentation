@@ -30,3 +30,9 @@ Nur einmal pro Dokument ausführen begrenzt eine tatsächlich angewendete Regel.
 ## Abnahme
 
 Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein bereits verarbeitetes Ergebnis. Wiederholen Sie den Dokument-Speichervorgang. Prüfen Sie PO-Abgleich und ERP-Empfang zusätzlich, wenn sie zum fachlichen Ziel gehören.
+
+<figure><img src="../../../../../.gitbook/assets/transformation-run-once-persistence-de-20261028.png" alt="Verifizierte Serverergebnisse der Schulungsprüfung"><figcaption><p>Tatsächliche Ergebnisse am isolierten Schulungsbeispiel, als Protokollgrafik dargestellt. Dies ist keine nachgezeichnete Editor-Oberfläche.</p></figcaption></figure>
+
+Im gespeicherten Integrationstest verbrauchte eine nicht passende Bedingung die Einmalausführung nicht. Beim ersten passenden Speichern wurde EINMAL geschrieben. Beim zweiten passenden Speichern blieb der vorbereitete Operatorwert erhalten, und der gespeicherte Anwendungsnachweis war weiterhin gesetzt. Der Testbeleg wurde anschließend wiederhergestellt. Der trockene Servertest kann weiterhin ein hypothetisches Ergebnis berechnen; prüfen Sie deshalb zusätzlich seinen Hinweis `already_applied` und das tatsächlich gespeicherte Dokument.
+
+<figure><img src="../../../../../.gitbook/assets/transformation-routing-phases-de-20261028.png" alt="Deutsche Phasenanzeige bei kombinierter Einmal- und Lookup-Option"><figcaption><p>Einmalausführung und zusätzliche Lookup-Phase gemeinsam im echten Editor. Die nicht passende Beispielbedingung wird übersprungen; interne Zielkennungen sind ausgeblendet. Die Optionen sind hier eine ungespeicherte Vorschau.</p></figcaption></figure>

@@ -928,6 +928,7 @@
 ## Seguridad <a href="#security" id="security"></a>
 
 * [Preguntas Frecuentes de Seguridad y Cumplimiento](security/security-and-compliance-faq.md)
+* [Almacenamiento, conservación y eliminación de datos](security/data-storage-and-retention.md)
 * [Almacenamiento seguro de credenciales](security/secure-storage-of-credentials.md)
 * [Cifrado en reposo](security/encryption-at-rest.md)
 * [Cookies y almacenamiento del navegador](security/cookies-and-browser-storage.md)

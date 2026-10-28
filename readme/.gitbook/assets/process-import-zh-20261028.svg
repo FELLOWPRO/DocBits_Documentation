@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">导入文档</title>
+<desc id="desc">从接收到处理再到审核。 没有可见的文档？首先检查导入通道和日志。对于处理错误，请打开文档状态。</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOBCITS / 流程概述</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">导入文档</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">从接收到处理再到审核。</text>
+<rect x="90" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="116" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">01</text>
+<text x="116" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">选择导入通道</text>
+<text x="116" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">上传、电子邮件、FTP 或 </text>
+<text x="116" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">API / Webhook。</text>
+<polyline points="510,485 541,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="541,485 527.8362615716444,492.19138307906303 527.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="556" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="582" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">02</text>
+<text x="582" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">检查输入</text>
+<text x="582" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">确认文档已接收，并核对</text>
+<text x="582" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">所属组织。</text>
+<polyline points="976,485 1007,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1007,485 993.8362615716444,492.19138307906303 993.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="1022" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1048" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">03</text>
+<text x="1048" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">处理文档</text>
+<text x="1048" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">识别类型、页眉字段和表</text>
+<text x="1048" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">格。</text>
+<polyline points="1442,485 1473,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1473,485 1459.8362615716444,492.19138307906303 1459.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="1488" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1514" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">04</text>
+<text x="1514" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">检查结果</text>
+<text x="1514" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">打开进行验证并与原始版</text>
+<text x="1514" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">本进行比较。</text>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">没有可见的文档？首先检查导入通道和日志。对于处理错误，请打开文档状态。</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">原理图说明 · 过程和选项取决于您的配置。</text>
+</svg>

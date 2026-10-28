@@ -1,5 +1,12 @@
 # Import sample documents for model training
 
+## Prepare, import and check sample documents
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-en-20261028.png" alt="Prepare, import and check sample documents"><figcaption><p>Prepare, import and check sample documents</p></figcaption></figure>
+
+Choose representative sample documents, prepare the available import options and check the import status. Only successfully imported samples are ready for subsequent training. Resolve import errors before the next step and keep independent test documents separate from the training dataset.
+
+
 Prepare documents that represent the formats, languages and document types your organization processes. Use only file formats accepted by your installation. Remove duplicates and keep training documents separate from documents reserved for evaluation.
 
 ## Open the import

@@ -12,7 +12,7 @@ Open de modeltraining bij het gewenste documenttype en kies de importfunctie.
 
 Kies het getal- en datumformaat dat bij de bestanden past en selecteer vervolgens de documenten. `1.234,56` en `1,234.56` gebruiken bijvoorbeeld verschillende scheidingstekens. Ook een datum zoals `05/06/2026` moet volgens het gekozen formaat worden geïnterpreteerd.
 
-<figure><img src="../../../../../.gitbook/assets/s150-image-85-1-nl.png" alt="Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload."><figcaption><p>Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-nl.png" alt="Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload."><figcaption><p>Documentimport met de keuze voor bedrag- en datumnotatie; er is geen bestand geüpload.</p></figcaption></figure>
 
 Controleer de selectie voordat je de import start. Wacht tot de verwerking klaar is en controleer fouten en het toegewezen documenttype. Corrigeer onjuiste classificaties en extracties voordat je de voorbeelden voor training gebruikt.
 

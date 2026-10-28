@@ -928,6 +928,7 @@
 ## Beveiliging <a href="#security" id="security"></a>
 
 * [DocBits (FELLOWPRO AG) — Questionnaire betreffende beveiliging en naleving](security/security-and-compliance-faq.md)
+* [Gegevensopslag, bewaartermijnen en verwijdering](security/data-storage-and-retention.md)
 * [Veilige opslag van inloggegevens](security/secure-storage-of-credentials.md)
 * [Versleuteling van opgeslagen gegevens](security/encryption-at-rest.md)
 * [Cookies en browseropslag](security/cookies-and-browser-storage.md)

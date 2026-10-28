@@ -1,10 +1,25 @@
 # Reglas de transformación
 
+## Del valor extraído a la verificación posterior
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-es-20261028.png" alt="Cómo funcionan las reglas de transformación: Un valor extraído se convierte en un valor específicamente procesado."><figcaption><p>Un valor extraído se convierte en un valor específicamente procesado. El diagrama es esquemático; La configuración activa de su organización determina el comportamiento real.</p></figcaption></figure>
+
+Una transformación cambia los datos existentes; no vuelve a realizar OCR. Lee una entrada, verifica su condición, ejecuta los pasos configurados y escribe el resultado. Si no se cumple la condición, se omite la regla.
+
+**Ejemplo:** Una celda de la tabla contiene `STK`. Una asignación de valores que se aplica al proveedor escribe `PCE`. La coincidencia descendente PO utiliza el código de unidad normalizado. Pruebe también un valor que ya esté normalizado y un valor al que no se debería aplicar la regla.
+
+1. **Activador:** Durante el procesamiento de documentos, las reglas se ejecutan después de la extracción. También pueden volver a ejecutarse cuando se guardan los datos de extracción modificados.
+2. **Orden:** Dentro de una ejecución, los ámbitos se procesan en este orden: **Campo de encabezado → Enrutamiento → Filas de la tabla → Columna de la tabla**. Dentro de cada ámbito, la prioridad y la clave determinan el orden.
+3. **Efecto:** Una regla de tabla puede cambiar o eliminar elementos de línea. Esto puede cambiar el recuento de filas y los requisitos previos para la conciliación de órdenes de compra. Reemplazar filas que ya han coincidido puede eliminar una asignación existente.
+4. **Control:** Compare la entrada, obtenga una vista previa y el resultado guardado. Cuando el registro de ejecución está habilitado, el seguimiento de condición muestra por qué se aplicó u omitió una regla.
+
+**Verificar repeticiones:** Una regla no debe cambiar su valor ya preparado cada vez que se guarda. Utilice pasos idempotentes apropiados, una fuente sin cambios o la ejecución única prevista. Los detalles y ejemplos siguen a continuación; [Reglas de coincidencia PO](more-settings/purchase-order/purchase-order-matching-rules.md) explica el mapeo descendente.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/es.mp4" %}
 
 ## Descripción general
 
-Las reglas de transformación limpian o reescriben los datos extraídos **automáticamente**, cada vez que se procesa un documento y cada vez que se guarda. Una regla puede cambiar:
+**Activador:** Durante el procesamiento de documentos, las reglas se ejecutan después de la extracción. También pueden volver a ejecutarse cuando se guardan los datos de extracción modificados.
 
 * un **campo de encabezado** (número de factura, moneda, NIF/ID fiscal del proveedor …),
 * una **columna** en cada fila de una tabla (unidad, número de artículo, base de precio …),

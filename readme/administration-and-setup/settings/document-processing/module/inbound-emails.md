@@ -1,5 +1,12 @@
 # Inkomende e-mails
 
+## Van binnenkomende e-mail tot een document dat klaar is om te beoordelen
+
+<figure><img src="../../../../.gitbook/assets/intro-process-01-email-nl-20261028.png" alt="Van binnenkomende e-mail tot een document dat klaar is om te beoordelen"><figcaption><p>Van binnenkomende e-mail tot een document dat klaar is om te beoordelen</p></figcaption></figure>
+
+De afbeelding laat twee manieren zien: een aangesloten mailbox en doorsturen naar een DocBits-importadres. Ondersteunde documentbijlagen worden geïmporteerd. Controleer afzenderbeperkingen, organisatie en routering en verifieer vervolgens de daadwerkelijke import. Het verzenden van een e-mail bewijst niet dat de documenten met succes zijn geïmporteerd.
+
+
 ### Overzicht
 
 DocBits kan documenten rechtstreeks uit e-mail ophalen — geen handmatig uploaden nodig. Er zijn **twee manieren** om e-maildocumenten binnen te halen, beide onder **Instellingen → Documentverwerking → Importeren**:

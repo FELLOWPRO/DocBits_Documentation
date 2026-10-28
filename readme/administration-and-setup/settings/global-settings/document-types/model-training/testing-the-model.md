@@ -1,5 +1,12 @@
 # Het model testen
 
+## Evalueer met onafhankelijke testdocumenten
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-nl-20261028.png" alt="Evalueer met onafhankelijke testdocumenten"><figcaption><p>Evalueer met onafhankelijke testdocumenten</p></figcaption></figure>
+
+Trainingsgegevens en testdocumenten dienen verschillende doeleinden. Voor onafhankelijke testdocumenten definieert u de verwachte documenttypen en veldwaarden en vergelijkt u deze vervolgens met de voorspellingen. Registreer de modelversie, de steekproef, afwijkingen en technische storingen. Breng gerichte verbeteringen aan en herhaal de test met hetzelfde evaluatieprotocol. De weergegeven waarden zijn een voorbeeld en geen nauwkeurigheidsmeting.
+
+
 Test met representatieve documenten die niet voor de training zijn gebruikt. Leg voor elk document de verwachte antwoorden vast: het documenttype en, bij een evaluatie van de extractie, de veldwaarden.
 
 ## Test uitvoeren

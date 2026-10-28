@@ -61,7 +61,7 @@ Back-upschema: Dagelijkse, wekelijkse, driemaandelijkse en jaarlijkse back-ups.
 
 **Antwoord:** Twee datacentregio's beschikbaar:
 - **Frankfurt, Duitsland** — voor alle EU-klanten
-- **San Francisco, USA** — alleen voor Amerikaanse klanten
+- **New York, USA** — alleen voor Amerikaanse klanten
 
 Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is geen optieuitsluiting UK beschikbaar.
 

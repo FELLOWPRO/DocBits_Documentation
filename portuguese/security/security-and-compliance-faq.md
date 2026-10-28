@@ -61,7 +61,7 @@ Cronograma de backup: Backups diários, semanais, trimestrais e anuais.
 
 **Resposta:** Duas regiões de data center disponíveis:
 - **Frankfurt, Alemanha** — para todos os clientes da EU
-- **São Francisco, EUA** — apenas para clientes dos EUA
+- **Nova York, EUA** — apenas para clientes dos EUA
 
 Dados de clientes da EU são hospedados exclusivamente em Frankfurt. Nenhuma opção apenas para UK disponível atualmente.
 

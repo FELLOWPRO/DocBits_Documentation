@@ -61,7 +61,7 @@ Calendrier de sauvegarde: Sauvegardes quotidiennes, hebdomadaires, trimestrielle
 
 **Réponse:** Deux régions de centre de données disponibles:
 - **Francfort, Allemagne** — pour tous les clients de l'UE
-- **San Francisco, USA** — pour les clients américains uniquement
+- **New York, USA** — pour les clients américains uniquement
 
 Les données des clients de l'UE sont hébergées exclusivement à Francfort. Aucune option uniquement pour le UK n'est actuellement disponible.
 

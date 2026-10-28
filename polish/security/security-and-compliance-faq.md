@@ -61,7 +61,7 @@ Harmonogram kopii zapasowych: Codziennie, Co tydzień, Co kwartał i Co roku.
 
 **Odpowiedź:** Dostępne dwa regiony centrów danych:
 - **Frankfurt, Niemcy** — dla wszystkich klientów UE
-- **San Francisco, USA** — wyłącznie dla klientów z USA
+- **Nowy Jork, USA** — wyłącznie dla klientów z USA
 
 Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostępna jest opcja zarezerwowana wyłącznie dla UK.
 

@@ -63,7 +63,7 @@ Backup-Zeitplan: Tägliche, wöchentliche, vierteljährliche und jährliche Sich
 
 **Antwort:** Zwei Datencenter-Regionen sind verfügbar:
 - **Frankfurt, Deutschland** — für alle EU-Kunden
-- **San Francisco, USA** — nur für US-Kunden
+- **New York, USA** — nur für US-Kunden
 
 EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine Nur-UK-Option verfügbar.
 

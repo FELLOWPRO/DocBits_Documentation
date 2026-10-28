@@ -21,6 +21,14 @@ Le voci sono colorate per tipo:
 
 Clicca su qualsiasi voce per saltarvi direttamente. Le voci che richiedono un parametro (un tipo di documento o un identificativo) includono un selettore incorporato — scegli il valore prima di cliccare.
 
+## Video di formazione nell'elenco
+
+Le voci delle pagine che hanno un video di formazione mostrano un'icona video dopo il nome — non solo nelle Impostazioni, ma in tutto il catalogo, per esempio nella Dashboard, nella Validazione dei campi o nelle pagine del Workflow. Selezioni l'icona per riprodurre il video di quella pagina nel pannello **Video e tutorial**, restando sulla mappa del sito.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-it.png" alt="Mappa del Sito con icone video accanto a diverse voci e il pannello Video e tutorial aperto sul video della validazione dei campi"><figcaption><p>Le voci con un video di formazione riportano un'icona video; selezionandola si apre il video nel pannello.</p></figcaption></figure>
+
+Il pannello continua a elencare ogni video per tema, quindi può anche sfogliare e cercare l'intera raccolta dall'icona nella barra superiore. Vedi [Video e tutorial](videos-and-tutorials.md).
+
 ## Cerca e filtra
 
 L'intestazione fissa in alto contiene la casella di ricerca e i filtri a forma di pillola. Digita pochi caratteri per filtrare la lista in tempo reale per nome e descrizione. Usa le pillole di tipo per restringere a un singolo tipo di voce — per esempio solo **Finestra**.

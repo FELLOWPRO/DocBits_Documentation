@@ -22,7 +22,7 @@ La página **Modelo de tren** muestra el número de muestras y una lista de los 
 3. Arrastre los archivos PDF al diálogo o use **Subir** para seleccionarlos. El importador actual de documentos de muestra acepta **archivos PDF**; rechaza otros tipos de archivo. Al seleccionar los archivos se inicia la subida.
 4. Cierre el diálogo y compruebe que los documentos aparecen en la lista de entrenamiento. Si DocBits informa de un error de subida o de que un documento ya existe, corrija el archivo o elija otra muestra antes de continuar.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-647-import-dialog-es-20261011.png" alt="Diálogo de importación con el selector Formato de cantidad y fecha, el área de arrastrar y soltar y el campo Subir"><figcaption><p>Elija un formato antes de seleccionar los PDFs de muestra.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-es.png" alt="Diálogo de importación con el selector Formato de cantidad y fecha, el área de arrastrar y soltar y el campo Subir"><figcaption><p>Elija un formato antes de seleccionar los PDFs de muestra.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-647-format-menu-es-20261011.png" alt="Menú Formato de cantidad y fecha con opciones de países y regiones, incluidos Germany, United Kingdom, France y Spain"><figcaption><p>Elija el formato del documento, no su idioma de interfaz preferido.</p></figcaption></figure>
 

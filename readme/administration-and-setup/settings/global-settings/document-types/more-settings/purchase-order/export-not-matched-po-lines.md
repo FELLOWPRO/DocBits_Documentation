@@ -1,5 +1,12 @@
 # Esporta righe di PO non corrispondenti
 
+## Comprendere l'ambito dell'esportazione con tre righe di ordine di acquisto
+
+<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-it-20261028.png" alt="Comprendere l&#x27;ambito dell&#x27;esportazione con tre righe di ordine di acquisto"><figcaption><p>Comprendere l&#x27;ambito dell&#x27;esportazione con tre righe di ordine di acquisto</p></figcaption></figure>
+
+In questo esempio, l'ordine di acquisto ha tre righe e solo una è abbinata a una riga di conferma dell'ordine. Con "Export Not Matched PO Lines" disattivato, viene esportata solo la riga dell'ordine di acquisto abbinata. Con l'opzione attivata, vengono incluse anche le due righe dell'ordine di acquisto senza corrispondenza. Ciò non crea corrispondenze aggiuntive.
+
+
 ## **Dove Trovarlo**
 
 Vai su **Impostazioni → Impostazioni Generali → Tipi di Documento → Ulteriori Impostazioni → Sezione Ordine di Acquisto → Esporta Righe di PO Non Corrispondenti**. Attiva il pulsante per abilitare questa impostazione.

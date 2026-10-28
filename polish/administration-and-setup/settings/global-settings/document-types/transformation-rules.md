@@ -1,10 +1,25 @@
 # Zasady transformacji
 
+## Od wyodrębnionej wartości do dalszej weryfikacji
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-pl-20261028.png" alt="Jak działają reguły transformacji: Wyodrębniona wartość staje się wartością specjalnie przetworzoną."><figcaption><p>Wyodrębniona wartość staje się wartością specjalnie przetworzoną. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
+
+Transformacja zmienia istniejące dane; nie wykonuje ponownie OCR. Odczytuje dane wejściowe, sprawdza ich stan, wykonuje skonfigurowane kroki i zapisuje wynik. Jeśli warunek nie jest spełniony, reguła jest pomijana.
+
+**Przykład:** Komórka tabeli zawiera `STK`. Mapowanie wartości, które ma zastosowanie do dostawcy, zapisuje `PCE`. Następnie dopasowywanie PO w dalszej części wykorzystuje znormalizowany kod jednostki. Przetestuj także wartość, która jest już znormalizowana, i wartość, do której reguła nie powinna mieć zastosowania.
+
+1. **Wyzwalacz:** Podczas przetwarzania dokumentu reguły działają po wyodrębnieniu. Można je także uruchomić ponownie po zapisaniu zmodyfikowanych danych ekstrakcji.
+2. **Kolejność:** W ramach przebiegu zakresy są przetwarzane w następującej kolejności: **Pole nagłówka → Trasowanie → Wiersze tabeli → Kolumna tabeli**. W obrębie każdego zakresu priorytet i klucz określają kolejność.
+3. **Efekt:** Reguła tabeli może zmieniać lub usuwać elementy zamówienia. Może to zmienić liczbę wierszy i wymagania wstępne dotyczące uzgadniania zamówienia zakupu. Zastąpienie wierszy, które zostały już dopasowane, może spowodować usunięcie istniejącego przypisania.
+4. **Kontrola:** Porównaj dane wejściowe, podgląd i zapisane wyniki. Gdy włączone jest rejestrowanie wykonania, ślad stanu pokazuje, dlaczego reguła została zastosowana lub pominięta.
+
+**Sprawdź powtórzenia:** Reguła nie powinna zmieniać już przygotowanej wartości przy każdym zapisie. Użyj odpowiednich idempotentnych kroków, niezmienionego źródła lub zamierzonego jednorazowego wykonania. Szczegóły i przykłady znajdują się poniżej; [Reguły dopasowywania PO](more-settings/purchase-order/purchase-order-matching-rules.md) wyjaśnia dalsze mapowanie.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pl.mp4" %}
 
 ## Przegląd
 
-Zasady transformacji **automatycznie** oczyszczają lub przepisują wyodrębnione dane, za każdym razem, gdy dokument jest przetwarzany i za każdym razem, gdy jest zapisywany. Zasada może zmieniać:
+**Wyzwalacz:** Podczas przetwarzania dokumentu reguły działają po wyodrębnieniu. Można je także uruchomić ponownie po zapisaniu zmodyfikowanych danych ekstrakcji.
 
 * **pole nagłówka** (numer faktury, walutę, numer NIP dostawcy …),
 * **kolumnę** w każdym wierszu tabeli (jednostkę, numer artykułu, podstawę ceny …),

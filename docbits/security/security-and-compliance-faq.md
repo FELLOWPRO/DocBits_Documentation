@@ -61,7 +61,7 @@ Backup schedule: Daily, Weekly, Quarterly, and Yearly backups.
 
 **Response:** Two data center regions available:
 - **Frankfurt, Germany** — for all EU customers
-- **New York, USA** — for US customers only
+- **San Francisco, USA** — for US customers only
 
 EU customer data is hosted exclusively in Frankfurt. No UK-only option currently available.
 

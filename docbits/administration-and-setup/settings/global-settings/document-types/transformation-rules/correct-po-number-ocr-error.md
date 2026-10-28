@@ -4,6 +4,20 @@ The third character of `06O123` is the **letter O**. If extraction produces `060
 
 
 
+## Video walkthrough
+
+{% hint style="info" %}
+**Review version:** This corrected English administrator edition is awaiting final voice and visual review.
+{% endhint %}
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-number-ocr-correction-preview-admin/v2/en.mp4" %}
+Mike demonstrates the prefix correction, five preview cases and the saved document result.
+{% endembed %}
+
+[Watch with English captions, chapters and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-number-ocr-correction-preview-admin/v2/en.html).
+
+The walkthrough uses a synthetic invoice with a deliberately prepared extraction error. Processing waits are shortened.
+
 ## Configure the prefix correction
 
 1. Open **Settings → Document Types → settings (gear) → Transformation Rules → Manage transformation rules**. An organisation administrator must enable transformation rules for the selected document type.

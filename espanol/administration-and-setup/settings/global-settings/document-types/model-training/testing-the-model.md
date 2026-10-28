@@ -1,5 +1,12 @@
 # Probando el modelo
 
+## Evalúe con documentos de prueba independientes
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-es-20261028.png" alt="Evalúe con documentos de prueba independientes"><figcaption><p>Evalúe con documentos de prueba independientes</p></figcaption></figure>
+
+Los datos de entrenamiento y los documentos de prueba sirven para diferentes propósitos. Para documentos de prueba independientes, defina los tipos de documentos y valores de campo esperados y luego compárelos con las predicciones. Registre la versión del modelo, muestra, discrepancias y fallas técnicas. Realice mejoras específicas y repita la prueba con el mismo protocolo de evaluación. Los valores mostrados son un ejemplo, no una medida de precisión.
+
+
 Realiza la prueba con documentos representativos que no se hayan utilizado para entrenar el modelo. Prepara las respuestas esperadas para cada documento: su tipo y, para evaluar la extracción, los valores de los campos.
 
 ## Ejecutar la prueba

@@ -1,5 +1,23 @@
 # Estado dos documentos
 
+## Três perguntas de status em vez de uma única cadeia de status
+
+<figure><img src="../../../.gitbook/assets/process-status-pt-20261028.png" alt="Classifique o status do documento corretamente: Processamento, aprovação e exportação são estados diferentes."><figcaption><p>Processamento, aprovação e exportação são estados diferentes. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
+
+Um documento ainda pode aguardar uma decisão de aprovação comercial mesmo que o reconhecimento tenha terminado. Leia o status exibido no contexto da etapa de processamento e do seu processo de aprovação.
+
+| Pergunta | Significado | Próxima etapa |
+| --- | --- | --- |
+| **O processamento foi concluído?** | OCR, classificação e extração preparam o documento para revisão. “Pronto para validação” não é uma aprovação comercial. | Abra o documento, compare as informações com o original e edite os erros dos campos obrigatórios. |
+| **A decisão de aprovação foi concluída?** | Uma aprovação pode ter vários níveis. Uma aprovação inicial não conclui automaticamente todas as etapas. | Verifique o nível atual, o revisor responsável e o histórico de aprovação. |
+| **O documento foi transferido?** | O status da exportação e o feedback descrevem a transferência técnica. Um valor armazenado ou entrada de aprovação não comprova o processamento de ERP. | Leia os detalhes da exportação e, se necessário, reproduza o processo no sistema de destino. |
+
+O gráfico organiza essas questões em três faixas. Não é uma lista exaustiva de códigos de situação técnica e não estabelece uma ordem universal. As transições reais dependem do tipo de documento, do fluxo de trabalho e do caminho de exportação.
+
+### Se ocorrerem erros, comece na etapa afetada
+
+Abra o status de erro e leia a mensagem. Se um valor obrigatório estiver faltando, verifique e corrija-o em relação ao original. Se o destinatário relatar um erro de exportação, resolva a causa antes de tentar novamente. Use [Fluxo de documentos](document-flow.md) para etapas de processamento e o guia [Aprovação](../approve-or-reject-invoices.md) para decisões de aprovação comercial.
+
 Os estados de processamento indicam passos como OCR, classificação ou exportação. **Pronto para validação** significa que pode verificar o documento. Os estados de aprovação indicam uma aprovação pendente. **Exportado** indica que a exportação do documento terminou. Clique no estado **Erro** para consultar os detalhes disponíveis.
 
 Se houver tempos de processamento, passe o ponteiro sobre um estado para ver as fases e a sua duração. Os documentos com possíveis duplicados apresentam um ícone de duplicado; abra-o para comparar os documentos relacionados.

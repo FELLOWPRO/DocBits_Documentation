@@ -940,6 +940,7 @@
 ## Security <a href="#security" id="security"></a>
 
 * [Security & Compliance FAQ](security/security-and-compliance-faq.md)
+* [Data Storage, Retention and Deletion](security/data-storage-and-retention.md)
 * [Secure Storage of Credentials](security/secure-storage-of-credentials.md)
 * [Encryption at Rest](security/encryption-at-rest.md)
 * [Cookies and Browser Storage](security/cookies-and-browser-storage.md)

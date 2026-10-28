@@ -1,5 +1,23 @@
 # Document Status
 
+## Three status questions instead of a single status chain
+
+<figure><img src="../../../.gitbook/assets/process-status-en-20261028.png" alt="Classify document status correctly: Processing, approval and export are different states."><figcaption><p>Processing, approval and export are different states. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+
+A document may still await a business approval decision even though recognition has finished. Read the displayed status in the context of the processing step and your approval process.
+
+| Question | Meaning | Next step |
+| --- | --- | --- |
+| **Is processing complete?** | OCR, classification and extraction prepare the document for review. “Ready for validation” is not a business approval. | Open the document, compare the information with the original and edit mandatory field errors. |
+| **Is the business approval decision complete?** | An approval can have several levels. An initial approval does not automatically complete all stages. | Check current level, responsible reviewer and approval history. |
+| **Has the document been transferred?** | Export status and feedback describe the technical handover. A stored value or approval entry does not prove ERP processing. | Read export details and, if necessary, reproduce the process in the target system. |
+
+The graphic organizes these questions into three tracks. It is not an exhaustive list of technical status codes and does not establish a universal order. The actual transitions depend on the document type, workflow and export path.
+
+### If errors occur, start at the affected step
+
+Open the error status and read the message. If a required value is missing, check and correct it against the original. If the recipient reports an export error, resolve its cause before trying again. Use [Document flow](document-flow.md) for processing steps and the [Approval](../approve-or-reject-invoices.md) guide for business approval decisions.
+
 Processing statuses show steps such as OCR, classification or export. **Ready for validation** means the document is ready for review; approval statuses indicate that an approval step is pending. **Exported** means the document’s export has completed. For **Error**, click the error status to inspect the available error details.
 
 If processing times are available, hover over a status to see the phases and their durations. A duplicate icon appears for documents with possible duplicates; open it to compare the related documents.

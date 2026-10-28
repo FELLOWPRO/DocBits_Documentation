@@ -1,5 +1,22 @@
 # Classification and Extraction
 
+## Which setting works at which process step?
+
+<figure><img src="../../../../.gitbook/assets/process-extraction-en-20261028.png" alt="From file to recognized data: View document type, data source and extraction path separately."><figcaption><p>View document type, data source and extraction path separately. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+
+Classification answers the question **“What kind of document is this?”**. Extraction answers **“What values ​​does it contain?”**. The settings on this page affect different points of processing and should not be understood as a single AI switch.
+
+1. **Prepare input:** For PDFs, existing text or OCR can be used; supported electronic documents can provide structured values. An activated split can separate an incoming document based on the configured barcode or QR criteria.
+2. **Determine document type:** Classification rules and models assign documents to a type and, if necessary, a subtype. This assignment is to be distinguished from the later field and table extraction.
+3. **Extract values:** Tables can follow different paths depending on the configuration and applicable saved rules. Header fields have their own source indicators. The selected AI model alone therefore does not explain every row or field value.
+4. **Trace the result:** In the validation screen, check which table tab contains the rows and which source indicator a header field has. If a processing step is missing, read the document logs before changing settings.
+
+### Distinguish between rule path and AI path
+
+Appropriate saved table rules can determine the table extraction for the relevant template or supplier. Without suitable rules, the AI ​​path can be used when AI table extraction is activated. Individual columns can have their own AI options. An AI source for a header field does not mean that the entire table comes from the AI.
+
+The [Which extraction path was used?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) diagnostic guide explains tabs, source identifiers and protocols. The page [AI model](ai-model.md) explains the organization standard and template-related overrides.
+
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="Classification and Extraction settings page with the General, Classification Rules and AI Models tabs and the Document Splitting section open"><figcaption><p>Classification and Extraction settings</p></figcaption></figure>
 
 ## Overview
@@ -104,7 +121,7 @@ More information on this setting [here](auto-extract-tax-code.md).
 
 **Extract hidden fields:** Fields marked as hidden in the field settings are extracted as well. Use it when a value is needed for a rule or an export but should not be shown on the validation screen.
 
-**AI Model:** Selects the AI tier used for table extraction. Six options are available: **Full** (highest accuracy, slowest, 2 tokens per document), **Fast** (default; 1 token per document), **Nexus** and **Nexus Flash** (alternative model family, opt-in), plus **Auto** and **Auto Nexus**, where DocBits decides per document how strong a model is needed. The table below the selector shows:
+**AI Model:** Sets the organization model for field and table extraction. The menu offers Full, Fast, Nexus, Nexus Flash, Auto and Auto Nexus. Check availability, quality, runtime and cost with representative documents. A tier is not always the most accurate or fastest for every document. Template overrides can replace the organization setting. The table below the selector shows:
 
 * Which **suppliers** use which AI model
 * Whether they use structured extraction (AI) and E-Text
@@ -114,11 +131,11 @@ This setting is explained in detail [here](ai-model.md).
 
 #### Why does the table look different per supplier?
 
-Everything that DocBits learns about a table is stored **per supplier**:
+Table processing depends on saved rules and settings in the relevant supplier or template context:
 
 * **Saved rules** (table training): position of the table and mapping of its columns on that supplier's layout.
 * **AI table tags and formatting rules**: hints the user saved for that supplier's AI table.
-* **Supplier-specific AI model**: the tier chosen for that supplier under *More settings* on the validation screen.
+* **Template-specific AI model:** The selection made on the validation screen is saved per organization and current extraction template. It does not automatically change every template of the same supplier. Without an override, the applicable organization setting is used.
 
 So supplier A with saved rules shows a deterministic table in the *Extracted table* tab of the validation screen, while supplier B without rules gets the *AI Extracted table*. To make supplier B behave like A, train B's table once. To reset a supplier, delete its rules on the validation screen or reset its training data in the AI Model table.
 
@@ -154,7 +171,7 @@ Notes:
 * `AI_MODEL` unset means **Fast**.
 * `TABLE_EXTRACTION_VISION_MODE` unset is resolved from the legacy `TABLE_EXTRACTION_USE_VISION` switch: `true` resolves to `vision`, anything else to `off`.
 * Changing a key takes effect for documents processed afterwards. Restart a document to re-extract it with the new setting.
-* Per-supplier choices (E-Text, AI model, saved rules) are not organization preferences; they are set on the validation screen under *More settings* for a document of that supplier.
+* Template overrides differ from organization preferences. The AI Model guide explains the exact scope.
 
 ### Electronic Document
 

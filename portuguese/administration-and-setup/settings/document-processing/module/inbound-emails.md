@@ -1,5 +1,12 @@
 # E-mails recebidos
 
+## Do e-mail recebido a um documento pronto para revisão
+
+<figure><img src="../../../../.gitbook/assets/intro-process-01-email-pt-20261028.png" alt="Do e-mail recebido a um documento pronto para revisão"><figcaption><p>Do e-mail recebido a um documento pronto para revisão</p></figcaption></figure>
+
+A ilustração mostra duas formas de entrada: uma caixa postal conectada e encaminhamento para um endereço de importação DocBits. Os anexos de documentos suportados são importados. Verifique as restrições, organização e roteamento do remetente e, em seguida, verifique a importação real. O envio de um e-mail não prova que seus documentos foram importados com sucesso.
+
+
 ### Visão geral
 
 O DocBits pode buscar documentos diretamente do e-mail — sem upload manual. Há **duas formas** de trazer documentos por e-mail, ambas em **Configurações → Processamento de Documentos → Importar**:

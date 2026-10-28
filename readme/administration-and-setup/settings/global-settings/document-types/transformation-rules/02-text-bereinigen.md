@@ -6,11 +6,11 @@ Kopffeld · Ziel Ergebnis · Schritte einzeln testen: case, trim, sanitize.
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+1. Für das Schulungs-Kopffeld einen einzelnen Schritt **Groß-/Kleinschreibung ändern** anlegen. Die Modi upper, lower, title und capitalize nacheinander mit den Beispielen der Tabelle prüfen.
+2. Für die Rechnungsnummer eine neue Pipeline mit **Trimmen** beginnen. Seite beide und ein leeres Zeichenfeld entfernen äußeren Leerraum; `47 11` muss seine innere Lücke behalten.
+3. Als getrennte Gegenprobe beim Trimmen Seite links und Zeichen `0` einstellen: `004711` wird `4711`, `000` wird leer. Diesen Schritt nicht ungeprüft für echte Kennungen übernehmen.
+4. Bei einer Steuerkennung **Zeichen bereinigen** mit alphanumerisch behalten verwenden. `DE 123.456.789` muss `DE123456789` ergeben. Die weiteren Behaltemodi mit `DE-123` bzw. `ACME GmbH!` prüfen.
+5. Für capitalize ausdrücklich Vorschau und Server vergleichen: Beim geprüften `aCME GMBH` sind diese Ergebnisse unterschiedlich. Das Serverergebnis ist `Acme gmbh`; eine passende Browserdarstellung allein genügt nicht.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-02-steps-de-20261028.png" alt="Konfiguration der Schritte – Text bereinigen: Schreibweise, Trimmen und Zeichen"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
 

@@ -6,11 +6,12 @@ Kopffeld · Quelle header.input · Ziel output · regex_extract: PO[- ]?(\d+), G
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+1. Für alle drei Schritte ein Ziel wie `output` und eine **getrennte Originalquelle** wie `header.input` wählen. Auch „Nur einmal pro Dokument“ erlaubt keine Selbstquelle.
+2. Für **Teilstück** zunächst Start 0 und Länge 4 einstellen: `2026-10-28` ergibt `2026`. Danach Start 3 und Ende 7 mit `DE-4711-X` prüfen; das Ende zählt nicht mit.
+3. Als eigene Variante Start −4 ohne Länge/Ende testen: `INV-4711` ergibt `4711`. Eine kürzere Eingabe ist ein notwendiger Gegenfall.
+4. Für **Extrahieren** Muster `PO[- ]?(\d+)` und Erfassungsgruppe 1 verwenden. `Order PO-45001234` ergibt `45001234`; `Invoice 4711` ergibt leer. Gruppe 0 liefert dagegen den gesamten Treffer.
+5. Für **Suchen und Ersetzen** Muster `\s+`, Ersatz ein Leerzeichen und Anzahl 0 konfigurieren. `ACME    GmbH` muss `ACME GmbH` ergeben. Danach Muster `-`, Ersatz `/`, Anzahl 1 mit `AB-CD-EF` prüfen: Nur der erste Bindestrich wird ersetzt.
+6. Die konkreten Muster auch serverseitig testen. Ein erfolgreiches Browsermuster allein belegt bei komplexen Ausdrücken keine identische Serververarbeitung.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-04-steps-de-20261028.png" alt="Konfiguration der Schritte – Teilstücke und Muster: Ausschneiden, Extrahieren, Ersetzen"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
 

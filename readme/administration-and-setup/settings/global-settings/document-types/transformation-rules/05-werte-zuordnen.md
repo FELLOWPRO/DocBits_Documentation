@@ -6,11 +6,12 @@ Tabellenspalte UNIT · Trimmen → value_map: STK→PCE, KG→KGM, Std→HUR · 
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+1. Geltungsbereich **Tabellenspalte**, Tabelle `INVOICE_TABLE` und Zielspalte `UNIT` auswählen. Hier wird jede Tabellenzeile einzeln verarbeitet.
+2. **Trimmen** vor **Werte zuordnen** setzen. Paare `STK→PCE`, `KG→KGM` und `Std→HUR` erfassen und Groß-/Kleinschreibung ignorieren aktivieren.
+3. Das Feld für den Ersatz ohne Treffer leer lassen, damit unbekannte Codes erhalten bleiben. `stk` muss `PCE` ergeben, `BOX` muss `BOX` bleiben.
+4. Eine Vorschau mit passender Zeilenbedingung und mit nicht passender Bedingung prüfen. Die Bedingung darf die anderen Zeilen nicht ungewollt erfassen.
+5. Für eine echte Mehrzeilenprobe Ausgangswerte `STK`, `STK`, `BOX` vorbereiten. Im geprüften Servertest entsteht `PCE`, `PCE`, `BOX`; Menge und Preis bleiben fachlich gesondert zu prüfen.
+6. Jeden Zielcode erneut als Eingabe prüfen. Ein pauschaler Ersatz wie `C62` und verkettete Zuordnungen können unbekannte Werte verdecken oder bei späteren Durchläufen weiter verändern.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-05-steps-de-20261028.png" alt="Konfiguration der Schritte – Wertzuordnungen und Regeln pro Tabellenzeile"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
 

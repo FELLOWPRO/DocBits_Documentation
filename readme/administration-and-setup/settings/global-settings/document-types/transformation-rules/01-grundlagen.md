@@ -6,11 +6,11 @@ Kopffeld · Ziel Ergebnis · Quelle Originaltext · Trimmen → Großschreibung 
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+1. Im isolierten Schulungs-Dokumenttyp eine neue Regel für ein **Kopffeld** anlegen. Als Ziel `output` und als getrennte Quelle `header.input` wählen; die tatsächlichen Feldnamen Ihrer Organisation können abweichen.
+2. Die Schritte **Trimmen**, Seite beide, Zeichen leer und danach **Groß-/Kleinschreibung ändern**, Modus upper, hinzufügen. Die Reihenfolge muss Trimmen → Großschreibung sein.
+3. Den Testwert `  inv-4711  ` eingeben. Der letzte Vorschauwert muss `INV-4711` lauten; die Zwischenwerte zeigen zuerst `inv-4711`.
+4. Die Regel ausschließlich für den Schulungsumfang aktivieren und speichern. Den Eintrag erneut öffnen und Quelle, Ziel und beide Schritte kontrollieren.
+5. Den Übungsbeleg speichern, neu laden und beide Felder prüfen: Die Quelle enthält weiterhin die ursprünglichen Leerzeichen, die Ausgabe lautet `INV-4711`. Nochmals speichern und dieselbe Prüfung wiederholen.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-01-steps-de-20261028.png" alt="Konfiguration der Schritte – Grundlagen, Geltungsbereiche und sichere Tests"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
 

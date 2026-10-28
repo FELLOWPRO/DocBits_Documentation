@@ -6,11 +6,12 @@ Kopffeld · pad: Länge 10, Zeichen 0, links; truncate: Länge 10; affix: exakte
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+1. Für die Nummer **Auffüllen** wählen; der aktuelle deutsche Editor nennt diesen Schritt „Unterlage“. Mindestlänge 10, Füllzeichen `0`, Seite links setzen. `4711` muss `0000004711` ergeben.
+2. Mit einer bereits elfstelligen Eingabe gegenprüfen: Auffüllen darf nichts abschneiden. Für Ergänzungen rechts separat Länge 6, Zeichen `_` und Eingabe `ABC` testen.
+3. In einer eigenen Regel **Kürzen** mit Maximallänge 10 einstellen. `ABCDEFGHIJKL` wird `ABCDEFGHIJ`, `ABC` bleibt erhalten. Prüfen, ob unterschiedliche Eingaben dadurch dieselbe Kennung ergeben könnten.
+4. **Affix** mit Präfix hinzufügen `INV-` testen. Anschließend `INV-4711` als Eingabe prüfen: Das exakte vorhandene Präfix darf nicht erneut ergänzt werden.
+5. Die anderen Affix-Varianten getrennt konfigurieren: Suffix hinzufügen `-DE`, Präfix entfernen `Art.-Nr. ` und Suffix entfernen ` EUR`. Beim Entfernen auch einen nicht passenden Rand und abweichende Großschreibung testen.
+6. Die Ausgabe erneut als Eingabe verwenden. Besonders beim Entfernen mehrfach vorhandener Affixe kann ein zweiter Durchlauf weiter verändern.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-03-steps-de-20261028.png" alt="Konfiguration der Schritte – Nummern formen: Auffüllen, Kürzen, Präfix und Suffix"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente. Der Editor nennt Auffüllen derzeit „Unterlage“; gemeint ist die Ergänzung auf eine Mindestlänge.</p></figcaption></figure>
 

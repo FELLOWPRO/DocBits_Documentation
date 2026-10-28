@@ -6,13 +6,12 @@ Routing · Ziel Unterorganisation · vorhandenes Ziel verwenden; Bedingungen, Au
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
-
-Das Routingbeispiel verwendet in der internen Prüfung ein vorhandenes Ziel. Die öffentliche Anleitung enthält keine internen Unterorganisationskennungen.
+1. Für **Routing** das angebotene Dokumentattribut `sub_org_id` wählen. Ausschließlich eine tatsächlich vorhandene Unterorganisation als festes Ziel oder als Ergebnis einer Wertzuordnung verwenden.
+2. Eine passende Lieferanten- oder Kennungsbedingung ergänzen. Im Übungsbeispiel muss `NORD` die Bedingung erfüllen und `SUED` sie überspringen. Die Aufnahme zeigt nur die Vorschau und verschiebt keine produktiven Dokumente.
+3. Die Phasenanzeige mit dem Ablauf Kopffeld → Routing → Tabellenzeilen → Tabellenspalte vergleichen. Priorität und Regelschlüssel ordnen nur innerhalb desselben Bereichs.
+4. **Auch nach der Stammdatensuche ausführen** aktivieren und die zusätzliche Phase vor dem Bestellabgleich beachten. Eine Quelle, die erst aus Stammdaten kommt, benötigt einen passenden Durchlauf.
+5. **Nur einmal pro Dokument** zuerst mit nicht passender Bedingung prüfen, dann erstmalig passend ausführen. Im verifizierten Schulungsfall verbraucht der erste übersprungene Durchlauf die Anwendung nicht.
+6. Nach der ersten passenden Anwendung einen Operatorwert einsetzen und erneut speichern. Der Test muss zeigen, dass die Einmalregel diesen Wert nicht nochmals überschreibt; Bedingung, Ergebnis, Phase und Anwendungsnachweis im Protokoll kontrollieren.
 
 ## 1. Unterorganisation
 

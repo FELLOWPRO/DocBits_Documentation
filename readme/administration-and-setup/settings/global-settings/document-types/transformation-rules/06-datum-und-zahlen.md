@@ -6,11 +6,12 @@ Textziel · date_format: %d.%m.%Y; number_format: de_DE, min. 2, max. 2 Nachkomm
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+1. Für einen gut lesbaren ersten Versuch ein **Textziel** und den Schritt **Datum formatieren** verwenden. Ausgabemuster `%d.%m.%Y` und Eingabe `2026-10-28` einstellen; erwartet wird `28.10.2026`.
+2. Die Varianten `%m/%d/%Y`, `%Y-%m-%d` und `%d %b %Y` jeweils mit derselben eindeutigen Eingabe vergleichen. Die Muster sind keine verlässliche Erkennung jedes beliebigen Datumsformats.
+3. Mit `kein Datum` sowie einer mehrdeutigen Eingabe gegenprüfen. Beim echten DATE-Kopffeld zusätzlich den gespeicherten ISO-Wert und die sichtbare Darstellung getrennt kontrollieren.
+4. In einer eigenen Regel **Zahl formatieren**, Gebietsschema `de_DE`, minimale und maximale Nachkommastellen jeweils 2 wählen. Die Servereingabe `1234.5` muss `1234,50` ergeben.
+5. Mit `en_US` dieselbe Eingabe prüfen: Serverergebnis `1234.50`. Das Tausendertrennzeichen der geprüften Browservorschau wird serverseitig nicht geschrieben.
+6. Null, einen negativen Betrag und zusätzliche Nachkommastellen prüfen. Anschließend Ausgabe erneut verarbeiten und den tatsächlich gespeicherten Wert kontrollieren.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-06-steps-de-20261028.png" alt="Konfiguration der Schritte – Datum und Zahlen richtig formatieren"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
 

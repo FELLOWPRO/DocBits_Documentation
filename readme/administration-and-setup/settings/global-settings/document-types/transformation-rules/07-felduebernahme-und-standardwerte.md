@@ -6,11 +6,12 @@ Ziel Ergebnis · Quelle Originaltext für Feldübernahme; Festwert nur unter eng
 
 ## Vorgehen im Editor
 
-1. Den vorgesehenen Dokumenttyp öffnen und den Geltungsbereich wählen.
-2. Ziel und gegebenenfalls eine getrennte Quelle einstellen.
-3. Die unten beschriebenen Schritte in der passenden Reihenfolge konfigurieren.
-4. Eingabe und Gegenfall in der Vorschau prüfen und mit dem Servertest vergleichen.
-5. Eine gespeicherte Regel erneut öffnen; die Dokumentwirkung mit einem isolierten Beleg prüfen.
+1. Für eine **Feldübernahme** ein anderes Quellfeld als das Zielfeld wählen. Im Übungsumfang ist das Ziel `output`, die Quelle `header.input`.
+2. Die Schritte Trimmen → Großschreibung konfigurieren und `  po-4711  ` testen. Die Ausgabe wird `PO-4711`; die Originalquelle darf dabei nicht geleert werden.
+3. Für eine produktive Bestellnummer eine zusätzliche Bedingung verwenden, die nur bei leerem Ziel greift. Einen bereits vorhandenen korrekten Zielwert als Gegenfall testen.
+4. In einer eigenen Regel **Festwert** mit `EUR` anlegen. Auch eine Eingabe `USD` wird dadurch überschrieben; das ist keine Währungsumrechnung.
+5. **Leeren** separat mit `Altwert` prüfen. Die Ausgabe ist die leere Zeichenfolge. Den fachlichen Unterschied zwischen absichtlichem Leeren und einem fehlenden Ausgangswert beachten.
+6. Den Schnittstellenschritt `default` nur über den dafür vorgesehenen API-Vertrag testen; im geprüften normalen Schrittmenü gibt es dafür keinen eigenen Eintrag. Die Protokollgrafik zeigt: fehlend und leer werden ergänzt, `0` und `100` bleiben erhalten.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-07-steps-de-20261028.png" alt="Konfiguration der Schritte – Felder übernehmen, Festwerte, Leeren und Standardwerte"><figcaption><p>Konfiguration der Schritte. Originalaufnahme der deutschen Oberfläche. Die Vorschau verändert keine gespeicherten Dokumente.</p></figcaption></figure>
 

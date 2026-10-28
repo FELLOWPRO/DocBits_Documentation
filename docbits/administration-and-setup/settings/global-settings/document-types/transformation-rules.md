@@ -108,21 +108,21 @@ Two options control how often the rule applies:
 
 ### The steps
 
-In the examples below, `␠` marks one space so that leading, trailing and repeated spaces remain visible. Enter a real space in DocBits, not the `␠` symbol.
+In the examples below, `·` marks one space so that leading, trailing and repeated spaces remain visible. Enter a real space in DocBits, not the `·` symbol.
 
 <figure><img src="../../../../.gitbook/assets/transformation-step-menu.png" alt="The step menu"><figcaption><p>All steps, grouped by purpose</p></figcaption></figure>
 
 | Step | Settings | Example input → output |
 | --- | --- | --- |
 | **Change case** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
-| **Trim** | side (both, left, right); characters (blank = whitespace) | `␠␠4711␠` → `4711`; with characters `0` and side left: `004711` → `4711` |
+| **Trim** | side (both, left, right); characters (blank = whitespace) | `··4711·` → `4711`; with characters `0` and side left: `004711` → `4711` |
 | **Pad** | length, fill character, side | length 10, `0`, left: `4711` → `0000004711` |
 | **Truncate** | maximum length | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
 | **Affix** | add prefix, add suffix, strip prefix, strip suffix; text | add prefix `INV-`: `4711` → `INV-4711`; strip prefix `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
 | **Sanitise** | keep only (alphanumeric, letters, digits, alphanumeric + space) or strip given characters | keep alphanumeric: `DE 123.456.789` → `DE123456789` |
 | **Take a slice** | start, length or end | start 0, length 4: `2026-09-29` → `2026` |
 | **Extract** | pattern, capture group | pattern `PO[- ]?(\d+)`, group 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | pattern, replace with, count (0 = all) | pattern `\s+`, replace with one space: `ACME␠␠␠␠GmbH` → `ACME␠GmbH` |
+| **Find & replace** | pattern, replace with, count (0 = all) | pattern `\s+`, replace with one space: `ACME····GmbH` → `ACME·GmbH` |
 | **Map values** | mappings (from → to), value when no match (blank = keep input), ignore case | `STK → PCE`: `stk` → `PCE` |
 | **Reformat date** | output pattern (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
 | **Format number** | locale (de_DE, en_US, en_GB, fr_FR), min. and max. decimals | de_DE, 2 decimals: `1234.5` → `1.234,50` |
@@ -148,12 +148,12 @@ The live preview runs the rule on a sample while you build it:
 * **Condition values** — for rules with a condition, type the values of the condition fields. The preview shows **Conditions match — rule runs** or **Conditions do not match — rule is skipped**.
 * Below, you see the value after **every step** and the final result that would be written ("invoice_id → INV-230620-03A", or "unchanged").
 
-**Spaces in sample values:** `␠` below represents one ordinary space. The markers make the input readable; enter actual spaces in **Sample input**.
+**Spaces in sample values:** `·` below represents one ordinary space. The markers make the input readable; enter actual spaces in **Sample input**.
 
-| Step | Sample input (spaces shown as `␠`) | Result |
+| Step | Sample input (spaces shown as `·`) | Result |
 | --- | --- | --- |
-| Trim, both sides | `␠␠4711␠` | `4711` |
-| Find & replace: `\s+` with one space | `ACME␠␠␠␠GmbH` | `ACME␠GmbH` |
+| Trim, both sides | `··4711·` | `4711` |
+| Find & replace: `\s+` with one space | `ACME····GmbH` | `ACME·GmbH` |
 
 Trim removes whitespace at the ends; it does not collapse spaces between words. For Find & replace, enter one actual space in **Replace with**.
 
@@ -164,7 +164,7 @@ Nothing is saved while you use the preview. Click **Save** to store the rule.
 ### Clean up a supplier's invoice number
 
 Header field **Invoice Number** · only when *Supplier ID is HP0000278* · Trim → Change case UPPERCASE → Affix add prefix `INV-`.
-Sample `␠␠230620-03a␠` → `INV-230620-03A` (`␠` = one space). See the screenshot of the pipeline above.
+Sample `··230620-03a·` → `INV-230620-03A` (`·` = one space). See the screenshot of the pipeline above.
 
 ### Map unit codes
 

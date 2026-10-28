@@ -17,6 +17,33 @@ A transformation changes existing data; it does not perform OCR again. It reads 
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4" %}
 
+## Video tutorial: Correct an OCR error in a PO prefix
+
+The third character of `06O123` is the **letter O**. If extraction produces `060123`, use a conditional prefix transformation to correct the known pattern without a custom script.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/tutorials/po-number-ocr-correction/v1/en.mp4" %}
+
+[Watch with English captions, chapters and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/tutorials/po-number-ocr-correction/v1/en.html).
+
+1. Open **Settings → Document Types → settings (gear) → Transformation Rules → Manage transformation rules**. An organisation administrator must enable transformation rules for the selected document type.
+2. Create a **Header field** rule with **Purchase Order** as its target. Read from **the field itself**.
+3. Under **Only when…**, select **Purchase Order → starts with → `060`**.
+4. Remove the initial Trim step. Add **Affix → Strip prefix → `060`**, then **Affix → Add prefix → `06O`**. Enter a capital letter O in the second step. The condition limits both steps to the affected prefix; the remaining characters stay unchanged.
+5. Check the live preview, save the rule and reopen it. Test a document, save it, then reload it to verify the persisted purchase order value.
+
+| Sample input | Expected result | Reason |
+| --- | --- | --- |
+| `060123` | `06O123` | Affected prefix |
+| `060987` | `06O987` | Another affected value; suffix preserved |
+| `06O123` | `06O123` | Already correct; condition does not match |
+| `160123` | `160123` | Different prefix; condition does not match |
+| `1060123` | `1060123` | `060` inside the value is not a matching prefix |
+
+The video uses a synthetic invoice and a deliberately prepared extraction error. Processing and reload waits are shortened. It demonstrates the saved transformation result, not automatic OCR accuracy or successful PO matching. Use this rule only where the expected numbering convention requires `06O`; a legitimate `060` prefix would also be changed. Add supplier conditions when the convention applies only to particular suppliers.
+
+**Why two Affix steps?** The current editor requires a separate source field for position-dependent steps such as **Find & replace**, even when **Run only once per document** is on. The two prefix steps above work on the same field. After correction, its value no longer starts with `060`, so the condition skips it on subsequent saves.
+
+
 ## Overview
 
 **Trigger:** During document processing, the rules run after extraction. They can also run again when modified extraction data is saved.
@@ -216,10 +243,7 @@ A **Routing** rule does not change a field. It stamps an attribute on the docume
 
 Most steps give the same result when they run on their own output — trimming a trimmed value, mapping `PCE` again, adding a prefix that is already there. These rules can safely run on every save.
 
-**Take a slice**, **Extract** and **Find & replace** are different: run again on their own result, they keep changing it (a slice takes the first four characters of the first four characters …). DocBits therefore does not let you save a rule that applies these steps to its own target field. Either:
-
-* switch on **Run only once per document**, or
-* **Read from another field**, so the input stays unchanged.
+The current editor treats **Take a slice**, **Extract** and **Find & replace** as position-dependent steps and requires **Read from another field**, so their input stays separate from the target. **Run only once per document** does not remove this restriction. Where the requirement is a conditional prefix replacement, use the [two Affix steps in the PO prefix tutorial](#video-tutorial-correct-an-ocr-error-in-a-po-prefix).
 
 ## Transformation rules and purchase order matching
 
@@ -256,7 +280,7 @@ With **Log execution** on, every application of the rule is written to **Documen
 | Symptom | What to check |
 | --- | --- |
 | The rule did not change anything | Is it active, and is the feature enabled for the document type? Is the condition true for this document (exact value, including spaces and case)? Has a **run once** rule already been applied to the document? Check the log trace. |
-| The value changes again on every save | The pipeline contains Take a slice, Extract or Find & replace. Switch on **Run only once per document**, or read from another field. |
+| The value changes again on every save | Check the steps and their conditions. Position-dependent steps require a separate source field in the current editor; Run only once does not remove that restriction. |
 | A table gets one more row on every save | An **Add a row** step without **Clear all rows** before it. Add the clear step first, or switch on run once. |
 | The purchase order match is lost after saving | A table rule replaced the matched lines. The reason on the document names the rule; make the rule reproduce the same lines, or set it to run once. |
 | A matching rule never runs after the transformation | The rule changed the number of lines; adjust the activation condition of the matching rule. |

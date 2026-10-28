@@ -1,5 +1,23 @@
 # Architectuur
 
+## De architectuur als drie afzonderlijke datapaden
+
+<figure><img src="../../.gitbook/assets/process-architecture-nl-20261028.png" alt="Drie datapaden tussen DocBits en Infor: Documentontvangst, stamgegevensaanlevering en export afzonderlijk lezen."><figcaption><p>Documentontvangst, stamgegevensaanlevering en export afzonderlijk lezen. Het diagram is schematisch; de actieve instellingen van uw organisatie bepalen het daadwerkelijke gedrag.</p></figcaption></figure>
+
+De architectuur bevat meerdere datastromen met verschillende doeleinden. Documenten worden geïmporteerd voor verwerking; stamgegevens zijn afkomstig van de ERP-integratie; herkende en beoordeelde resultaten worden geretourneerd via het geconfigureerde exportpad. Deze paden zijn afzonderlijke verbindingen en moeten tijdens de diagnose afzonderlijk worden getraceerd.
+
+| Gegevenspad | Richting en doel | Controlepunt |
+| --- | --- | --- |
+| **Documentontvangst** | E-mailen, uploaden of interface → DocBits. Documenten worden naar het beoogde verwerkingsproces gestuurd. | Is het juiste document bij de juiste organisatie terechtgekomen? |
+| **Stamdatavoorziening** | LN/M3 → BODs en ION gegevensstroom → DocBits. Leveranciers en bestellingen worden beschikbaar gesteld voor identificatie en afstemming. | Is de benodigde dataset overgedragen en geaccepteerd door DocBits? |
+| **Resultaatexport** | DocBits → geconfigureerde Infor-verbinding → IDM of ION en ERP. Document- en bedrijfsgegevens kunnen verschillende stroomafwaartse paden volgen. | Zijn de overdracht en de respectieve verwerking op de bestemming bewezen? |
+
+In de hier beschreven Infor-export worden de PDF en zijn attributen naar IDM verzonden, en wordt `Sync.CaptureDocument` naar ION Desk verzonden. ION transformeert het in de vereiste doel-BODs, afhankelijk van het documenttype. Acceptatie door LN of M3 moet worden geverifieerd in het betreffende doelsysteem; een DocBits-stap alleen bewijst niet elke stroomafwaartse verwerkingsstap.
+
+**Gebruik het overzicht om fouten te onderzoeken:** Ontbreekt een document, begin dan met importeren. Als leveranciers of inkooporderregels ontbreken, volgt u het stamgegevenspad. Als de retouroverdracht mislukt, controleer dan de exportconfiguratie, het antwoord van de ontvanger en de ION/ERP-verwerking. De onderstaande architectuurdiagrammen voegen implementatie- en componentdetails toe aan dit procesoverzicht.
+
+Verder: [Documenten importeren](../../end-user-and-partner-section/end-user-section/how-to-import-documents/README.md), [Importeer stamgegevens van klanten](../../infor-integration-and-configuration/importing-customer-master-data/README.md) en [Exporteren vanuit DocBits](../../infor-integration-and-configuration/exporting-in-docbits/README.md).
+
 ## **DocBits Cloud-klant**
 
 <figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="Architectuur voor DocBits Cloud-klanten"><figcaption></figcaption></figure>

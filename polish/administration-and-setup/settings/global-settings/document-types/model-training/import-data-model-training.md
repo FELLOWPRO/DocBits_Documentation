@@ -1,5 +1,12 @@
 # Import danych: Trenowanie modelu
 
+## Przygotuj, importuj i sprawdzaj przykładowe dokumenty
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pl-20261028.png" alt="Przygotuj, importuj i sprawdzaj przykładowe dokumenty"><figcaption><p>Przygotuj, importuj i sprawdzaj przykładowe dokumenty</p></figcaption></figure>
+
+Wybierz reprezentatywne przykładowe dokumenty, przygotuj dostępne opcje importu i sprawdź status importu. Tylko pomyślnie zaimportowane próbki są gotowe do dalszego treningu modelu. Rozwiąż błędy importu przed następnym krokiem i przechowuj niezależne dokumenty testowe oddzielnie od zbioru danych treningowych.
+
+
 Ta strona służy do dodawania przykładowych plików PDF dla typu dokumentu, a następnie do trenowania lub testowania jego modelu klasyfikacji. Wymagany jest dostęp do **Ustawienia** i **Typy dokumentów**. O celu funkcji szkoleniowych przeczytaj w sekcji [Cel i zastosowanie: Trenowanie modelu](purpose-and-use-model-training.md).
 
 ## Otwórz typ dokumentu

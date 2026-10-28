@@ -61,7 +61,7 @@ Programa de copias de seguridad: Diarias, semanales, trimestrales y anuales.
 
 **Respuesta:** Dos regiones de centro de datos disponibles:
 - **Fráncfort, Alemania** — para todos los clientes de la UE
-- **Nueva York, EE. UU.** — solo para clientes de EE. UU.
+- **San Francisco, EE. UU.** — solo para clientes de EE. UU.
 
 Los datos de clientes de la UE se alojan exclusivamente en Fráncfort. Actualmente no hay opción solo para Reino Unido.
 

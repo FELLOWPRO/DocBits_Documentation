@@ -1,10 +1,25 @@
 # Regras de transformação
 
+## Do valor extraído à verificação downstream
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-pt-20261028.png" alt="Como funcionam as regras de transformação: Um valor extraído torna-se um valor especificamente processado."><figcaption><p>Um valor extraído torna-se um valor especificamente processado. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
+
+Uma transformação altera os dados existentes; ele não executa OCR novamente. Ele lê uma entrada, verifica sua condição, executa as etapas configuradas e grava o resultado de volta. Se a condição não for atendida, a regra será ignorada.
+
+**Exemplo:** Uma célula da tabela contém `STK`. Um mapeamento de valor que se aplica ao fornecedor grava `PCE`. A correspondência PO downstream usa então o código de unidade normalizado. Teste também um valor que já esteja normalizado e um valor ao qual a regra não deve ser aplicada.
+
+1. **Acionador:** Durante o processamento do documento, as regras são executadas após a extração. Eles também podem ser executados novamente quando os dados de extração modificados são salvos.
+2. **Ordem:** Dentro de uma execução, os escopos são processados nesta ordem: **Campo de cabeçalho → Roteamento → Linhas da tabela → Coluna da tabela**. Dentro de cada escopo, a prioridade e a chave determinam a ordem.
+3. **Efeito:** uma regra de tabela pode alterar ou remover itens de linha. Isso pode alterar a contagem de linhas e os pré-requisitos para correspondência de pedidos de compra. A substituição de linhas que já foram correspondidas pode remover uma atribuição existente.
+4. **Controle:** Compare a entrada, visualize e resultado salvo. Quando o log de execução está habilitado, o rastreamento de condição mostra por que uma regra foi aplicada ou ignorada.
+
+**Verificar repetições:** Uma regra não deve alterar seu valor já preparado cada vez que for salva. Use etapas idempotentes apropriadas, uma fonte inalterada ou a execução única pretendida. Os detalhes e exemplos seguem abaixo; [Regras de correspondência PO](more-settings/purchase-order/purchase-order-matching-rules.md) explica o mapeamento downstream.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pt.mp4" %}
 
 ## Visão geral
 
-As regras de transformação limpam ou reescrevem os dados extraídos **automaticamente**, toda vez que um documento é processado e toda vez que é salvo. Uma regra pode alterar:
+**Acionador:** Durante o processamento do documento, as regras são executadas após a extração. Eles também podem ser executados novamente quando os dados de extração modificados são salvos.
 
 * um **campo de cabeçalho** (número da fatura, moeda, ID fiscal do fornecedor …),
 * uma **coluna** em cada linha de uma tabela (unidade, número do item, base de preço …),

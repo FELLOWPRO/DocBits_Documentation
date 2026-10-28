@@ -1,5 +1,26 @@
 # Rechnung genehmigen oder ablehnen
 
+## Wie die fachliche Entscheidung weiterwirkt
+
+<figure><img src="../../.gitbook/assets/process-approval-de-20261028.png" alt="Rechnung genehmigen oder ablehnen: Prüfung, Entscheidung und nachgelagerte Übergabe unterscheiden."><figcaption><p>Prüfung, Entscheidung und nachgelagerte Übergabe unterscheiden. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
+
+Die technische Validierung prüft Dokumentdaten; die Genehmigung hält die fachliche Entscheidung eines berechtigten Prüfers fest. Auch eine technisch valide Rechnung kann noch eine oder mehrere Genehmigungen benötigen.
+
+1. **Zuständigkeit prüfen:** Öffnen Sie die zugewiesene Rechnung und kontrollieren Sie, für welche Genehmigungsstufe Sie entscheiden dürfen.
+2. **Beleg fachlich prüfen:** Vergleichen Sie Kopfwerte, Positionen und Steuer mit dem Original und den Vorgaben Ihres Unternehmens.
+3. **Entscheidung dokumentieren:** Genehmigen Sie eine korrekte Rechnung oder lehnen Sie sie mit einer konkreten Begründung ab. Warten Sie auf die Rückmeldung und prüfen Sie anschließend den Genehmigungsverlauf.
+4. **Nächsten Schritt unterscheiden:** Sind weitere Stufen eingerichtet, wartet die Rechnung auf deren Entscheidung. Bei Ablehnung folgen Klärung, Korrektur und gegebenenfalls erneute Einreichung nach Ihrem eingerichteten Prozess. Erst die getrennte Exportverarbeitung beantwortet, ob Daten das Zielsystem erreicht haben.
+
+### Drei Aussagen, die nicht dasselbe bedeuten
+
+| Aussage | Was sie nicht automatisch belegt |
+| --- | --- |
+| **Die Daten sind validiert.** | Dass ein fachlich berechtigter Prüfer zugestimmt hat. |
+| **Ein Prüfer hat genehmigt.** | Dass alle erforderlichen Genehmigungsstufen abgeschlossen sind. |
+| **Die Genehmigungen sind abgeschlossen.** | Dass die Rechnung bereits exportiert oder im ERP gebucht wurde. |
+
+Nutzen Sie [Dokumentenaufgaben](tasks.md) für die Bearbeitung zugewiesener Arbeit und [Dokumentstatus](dashboard/document-status.md) zur Einordnung des aktuellen Zustands.
+
 Das Video zeigt die Freigabe aus Sicht einer Prüferin.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-customer/v1/de.mp4" %}

@@ -1,6 +1,6 @@
 # Supplier Type
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_specify_supplier_type_v2.png" alt="Supplier Type, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_specify_supplier_type_v2.png" alt="Workflow card Compare with Quote Price: The supplier type is Supplier Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

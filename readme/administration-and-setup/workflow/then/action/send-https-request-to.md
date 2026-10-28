@@ -1,6 +1,6 @@
 # Send HTTPS request to
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_https_request_v2.png" alt="Send HTTPS request to, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_https_request_v2.png" alt="Workflow card Action: Send HTTPS request to URL with headers, method, parameters and data, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

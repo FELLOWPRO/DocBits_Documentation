@@ -1,8 +1,8 @@
 # Unit of Measure
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condiiton_unit_of_measure_equal_v2.png" alt="Unit of Measure, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condiiton_unit_of_measure_equal_v2.png" alt="Workflow card Compare with Quote Price: Any/All unit of measure of items in the document table Operator the item stored in supplier item price table, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condiiton_unit_of_measure_equal_v3.png" alt="Unit of Measure, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condiiton_unit_of_measure_equal_v3.png" alt="Workflow card Compare with Quote Price: Any/All unit of measure of items in the document table Operator equal to item stored in Comparison Data, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## Purpose:
 

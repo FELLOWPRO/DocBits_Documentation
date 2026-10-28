@@ -1,6 +1,6 @@
 # Assigned Group Condition
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_in_list_v2.png" alt="Assigned Group Condition, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_in_list_v2.png" alt="Workflow card Assignee: Assigned group Operator one of Groups, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Purpose:**
 

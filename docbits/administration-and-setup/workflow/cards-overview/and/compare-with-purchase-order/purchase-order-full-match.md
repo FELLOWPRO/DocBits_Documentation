@@ -1,6 +1,6 @@
 # Purchase Order Full Match
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_purchase_order_full_match_v2.png" alt="Purchase Order Full Match, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_purchase_order_full_match_v2.png" alt="Workflow card Compare with Purchase Order: The purchase order Operator within tolerance to the document (Invoice), version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

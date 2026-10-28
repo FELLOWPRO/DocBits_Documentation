@@ -1,6 +1,6 @@
 # Single Assigned Group Condition
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_v2.png" alt="Single Assigned Group Condition, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_v2.png" alt="Workflow card Assignee: Assigned group Operator Groups, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Purpose:**\
 This workflow card executes operations based on whether a task or document is assigned to a particular group. It uses a straightforward condition to trigger or prevent actions based on group assignment.

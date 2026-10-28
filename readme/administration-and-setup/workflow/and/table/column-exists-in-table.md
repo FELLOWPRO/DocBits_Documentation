@@ -1,6 +1,6 @@
 # Column Exists in Table
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_exists_v2.png" alt="Column Exists in Table, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_exists_v2.png" alt="Workflow card Table: The column Column Name in the table Table Name Operator in the document table, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

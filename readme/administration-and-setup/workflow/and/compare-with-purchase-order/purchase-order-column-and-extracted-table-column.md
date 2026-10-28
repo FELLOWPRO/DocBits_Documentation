@@ -1,8 +1,8 @@
 # Purchase Order Column and Extracted Table Column
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_po_extracted_table_column_v2.png" alt="Purchase Order Column and Extracted Table Column, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_po_extracted_table_column_v2.png" alt="Workflow card Compare with Purchase Order: Any/All of the purchase order column Column Operator extracted table column Column Name, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_po_extracted_table_column_v3.png" alt="Purchase Order Column and Extracted Table Column, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_po_extracted_table_column_v3.png" alt="Workflow card Compare with Purchase Order: Any/All purchase order column Column Operator extracted table column Column Name, use lookup table Master Data Lookup Table for replacement of value in id with lookup table property name Property Name, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## Purpose:
 

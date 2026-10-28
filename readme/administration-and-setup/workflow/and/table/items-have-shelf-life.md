@@ -1,6 +1,6 @@
 # Items Have Shelf Life
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_shelf_life_operator_value_v2.png" alt="Items Have Shelf Life, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_shelf_life_operator_value_v2.png" alt="Workflow card Table: Any/All items have shelf life Operator Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

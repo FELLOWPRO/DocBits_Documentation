@@ -1,6 +1,6 @@
 # Assign Document to First Decision Table User and Create Tasks
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_doc_to_first_user_and_tasks_v2.png" alt="Assign Document to First Decision Table User and Create Tasks, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_doc_to_first_user_and_tasks_v2.png" alt="Workflow card Assignee: Assign the document based on the first user return of the decision table and create a Task/Notification for all with title, description and priority, notify them via email, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

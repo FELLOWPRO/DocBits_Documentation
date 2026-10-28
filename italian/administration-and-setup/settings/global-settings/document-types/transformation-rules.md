@@ -1,10 +1,25 @@
 # Regole di Trasformazione
 
+## Dal valore estratto alla verifica a valle
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-it-20261028.png" alt="Come funzionano le regole di trasformazione: Un valore estratto diventa un valore appositamente elaborato."><figcaption><p>Un valore estratto diventa un valore appositamente elaborato. Il diagramma è schematico; le impostazioni attive della tua organizzazione determinano il comportamento effettivo.</p></figcaption></figure>
+
+Una trasformazione modifica i dati esistenti; non esegue nuovamente OCR. Legge un input, ne controlla le condizioni, esegue i passaggi configurati e riscrive il risultato. Se la condizione non è soddisfatta, la regola viene saltata.
+
+**Esempio:** una cella di tabella contiene `STK`. Una mappatura valori che si applica al fornitore scrive `PCE`. La corrispondenza PO a valle utilizza quindi il codice unità normalizzato. Testare anche un valore già normalizzato e un valore a cui la regola non dovrebbe applicarsi.
+
+1. **Trigger:** durante l'elaborazione del documento, le regole vengono eseguite dopo l'estrazione. Possono anche essere eseguiti nuovamente quando vengono salvati i dati di estrazione modificati.
+2. **Ordine:** All'interno di un'esecuzione, gli ambiti vengono elaborati in questo ordine: **Campo intestazione → Instradamento → Righe tabella → Colonna tabella**. All'interno di ciascun ambito, la priorità e la chiave determinano l'ordine.
+3. **Effetto:** una regola della tabella può modificare o rimuovere righe della fattura. Ciò può modificare il conteggio delle righe e i prerequisiti per la corrispondenza degli ordini d'acquisto. La sostituzione di righe già abbinate può rimuovere un'assegnazione esistente.
+4. **Controllo:** Confronta input, anteprima e risultati salvati. Quando la registrazione dell'esecuzione è abilitata, la traccia delle condizioni mostra il motivo per cui una regola è stata applicata o ignorata.
+
+**Controlla ripetizioni:** una regola non deve modificare il valore già preparato ogni volta che viene salvata. Utilizzare passaggi idempotenti appropriati, un'origine invariata o l'esecuzione una tantum prevista. I dettagli e gli esempi seguono di seguito; [Regole di corrispondenza PO](more-settings/purchase-order/purchase-order-matching-rules.md) spiega la mappatura downstream.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/it.mp4" %}
 
 ## Panoramica
 
-Le regole di trasformazione puliscono o riscrivono i dati estratti **automaticamente**, ogni volta che un documento viene elaborato e ogni volta che viene salvato. Una regola può modificare:
+**Trigger:** durante l'elaborazione del documento, le regole vengono eseguite dopo l'estrazione. Possono anche essere eseguiti nuovamente quando vengono salvati i dati di estrazione modificati.
 
 * un **campo dell'intestazione** (numero fattura, valuta, partita IVA del fornitore …),
 * una **colonna** in ogni riga di una tabella (unità, numero articolo, base prezzo …),

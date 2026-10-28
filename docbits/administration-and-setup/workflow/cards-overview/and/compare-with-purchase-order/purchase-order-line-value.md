@@ -1,6 +1,6 @@
 # Purchase Order Line Value
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_po_line_value_v2.png" alt="Purchase Order Line Value, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_po_line_value_v2.png" alt="Workflow card Compare with Purchase Order: The purchase order line value of Column Equals Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

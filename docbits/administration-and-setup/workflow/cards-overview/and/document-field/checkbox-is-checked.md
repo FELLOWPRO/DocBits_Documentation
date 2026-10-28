@@ -1,6 +1,6 @@
 # Checkbox is checked
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2.png" alt="Checkbox is checked, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2.png" alt="Workflow card Document Field: Checkbox Field Name is checked: Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

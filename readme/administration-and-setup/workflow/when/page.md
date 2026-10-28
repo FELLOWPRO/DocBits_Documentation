@@ -1,8 +1,8 @@
 # Document Type Operation
 
-<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1.png" alt="Document Type Operation, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1.png" alt="Workflow card Document: Document type Operator Type, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2.png" alt="Document Type Operation, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2.png" alt="Workflow card Document: Document type Operator Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Facility of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_check_facility_in_po_v2.png" alt="Facility of Purchase Order, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_check_facility_in_po_v2.png" alt="Workflow card Compare with Purchase Order: Any/All facility of purchase order Operator in facility name codes Facility Name Codes, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

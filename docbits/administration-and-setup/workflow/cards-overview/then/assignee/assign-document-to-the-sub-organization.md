@@ -1,6 +1,6 @@
 # Assign document to the sub organization
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_change_doc_suborg_v2.png" alt="Assign document to the sub organization, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_change_doc_suborg_v2.png" alt="Workflow card Assignee: Assign the document to the sub organization Sub-Org, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

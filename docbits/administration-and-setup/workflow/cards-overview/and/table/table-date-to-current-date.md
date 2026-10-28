@@ -1,6 +1,6 @@
 # Table Date to Current Date
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_table_date_to_current_date_v2.png" alt="Table Date to Current Date, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_table_date_to_current_date_v2.png" alt="Workflow card Table: Any/All line(s) for date in table Table Name column Column Name are Operator to current date with Value days as tolerance and Allowed Tolerance Days as accepted days, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 How the tolerance window is calculated, with examples such as "today or tomorrow", is explained on [Date Tolerances](../../date-tolerances.md).
 

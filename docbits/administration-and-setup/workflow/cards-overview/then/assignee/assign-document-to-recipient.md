@@ -1,8 +1,8 @@
 # Assign document to recipient
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_oc_assign_doc_v1.png" alt="Assign document to recipient, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_oc_assign_doc_v1.png" alt="Workflow card Assignee: Assign document to Recipient, with User as fallback, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_oc_assign_doc_v2.png" alt="Assign document to recipient, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_oc_assign_doc_v2.png" alt="Workflow card Assignee: Assign document to Recipient, with User as fallback, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

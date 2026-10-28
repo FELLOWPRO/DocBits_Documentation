@@ -1,8 +1,8 @@
 # Assign a Task with Title
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v2.png" alt="Assign a Task with Title, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v2.png" alt="Workflow card Task: Assign a task with title, description and priority to the assignee type return of decision table, notify them via email, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v3.png" alt="Assign a Task with Title, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v3.png" alt="Workflow card Task: Assign Task/Notification with title, description and priority to the assignee type return of decision table, notify them via email, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

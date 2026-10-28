@@ -1,6 +1,6 @@
 # Unit Price to Supplier Item Price
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_quote_price_match_v2.png" alt="Unit Price to Supplier Item Price, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_quote_price_match_v2.png" alt="Workflow card Compare with Quote Price: Any/All unit price is Operator to supplier item, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

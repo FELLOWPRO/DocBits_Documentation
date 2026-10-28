@@ -1,12 +1,12 @@
 # Create a New Task and assign it to the User
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v1.png" alt="Create a New Task and assign it to the User, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v1.png" alt="Workflow card Task: Create a new Task with title, description and priority and assign to user User, notify the user via email, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v2.png" alt="Create a New Task and assign it to the User, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v2.png" alt="Workflow card Task: Create a new Task with title, description and priority and assign it to the user User, notify the user via email, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v3.png" alt="Create a New Task and assign it to the User, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v3.png" alt="Workflow card Task: Create a new Task with title, description and priority and assign it to the user User, notify the user via email, use decision tree if available, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v4.png" alt="Create a New Task and assign it to the User, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_tasks_create_v4.png" alt="Workflow card Task: Create a new Task/Notification with title, description and priority and assign to user User, notify the user via email, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Purpose**
 

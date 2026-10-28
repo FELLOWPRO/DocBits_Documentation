@@ -1,83 +1,85 @@
 # Editing Email Templates
 
-<figure><img src="../../../.gitbook/assets/prior-t013-en.png" alt="Supplier email-template list."><figcaption><p>Supplier email-template list.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-list-en-20261011.png" alt="Supplier Email Templates list with the columns Name, Type, Subject, Last Modified By and Last Modified At"><figcaption><p>Supplier Email Templates list</p></figcaption></figure>
 
-### Overview
+The **Email Templates** page under **Settings → Supplier → Email Templates** lets administrators design the emails that DocBits sends to suppliers automatically. Each template is assigned to one of four fixed email types, so the right message always goes out when a supplier is invited, completes registration, or is approved or rejected in the supplier portal.
 
-The Email Templates feature allows administrators to create and customize email communications that are automatically sent to suppliers. One of the key elements used in these templates is the `{{magic_link}}`, which provides a dynamic link tailored to each recipient.
+Access requires an administrator account. See [Supplier Permissions](supplier-permissions.md) for the roles suppliers themselves receive.
 
-#### What is `{{magic_link}}`?
+## Template List
 
-The `{{magic_link}}` is a placeholder that is dynamically replaced with a unique URL when the email is sent. This URL usually directs the recipient to complete an action, such as registration, approval, or accessing a specific part of the supplier portal.
+The list shows one row per template with these columns:
 
-### Editing Email Templates
+| Column | Description |
+|--------|-------------|
+| **Name** | The internal name of the template. |
+| **Type** | The email type the template is used for, e.g. Supplier Invitation Email. |
+| **Subject** | The subject line recipients see. |
+| **Last Modified By** | The user who last edited the template. |
+| **Last Modified At** | When the template was last changed. |
 
-<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53.png" alt="English editor for a new supplier email template."><figcaption><p>English editor for a new supplier email template.</p></figcaption></figure>
+You can sort the list by any column. The **Name**, **Type** and **Subject** columns also offer a filter via their column menus; active filters appear as removable badges above the table. You can drag column headers into your preferred order, and that order is remembered for your next visit.
 
-#### Accessing the Email Template Editor
+**Row actions**: every row has an **Edit** action (the pencil icon in the last column) that opens the template in the editor, and a **Delete** action (the trash icon) that removes the template after a confirmation dialog. Clicking anywhere in a row also opens the template for editing.
 
-1. **Navigate to Email Templates**:
-   * Go to the **Email Templates** section from the main menu.
-2. **Select a Template to Edit**:
-   * Choose the email template you want to edit by clicking on the template name (e.g., "Supplier Invitation Email").
-3. **Edit the Template**:
-   * The editor allows you to modify both the HTML code and the visual design of the email.
-   * You can switch between visual editing and code editing using the provided tabs.
+**New**: the **New** button above the table creates a new template.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+## Creating or Editing a Template
 
-#### Defining `{{magic_link}}` as a Link
+<figure><img src="../../../.gitbook/assets/supplier-email-templates-editor-en-20261011.png" alt="Editor for a supplier email template with the fields Name, Subject, Select email template and CC on the left and the rich-text editor on the right"><figcaption><p>Creating a new supplier email template</p></figcaption></figure>
 
-To define `{{magic_link}}` as a clickable link in the email, you need to ensure that it is properly formatted in the HTML code of the template. Follow these steps:
+Click **New** (or **Edit** on an existing template) to open the template editor:
 
-1. **Locate the Link Section in the HTML Code**:
-   * In the code editor, find the section where you want the magic link to appear. This is usually within an `<a>` (anchor) tag.
-2.  **Insert the `{{magic_link}}` Placeholder**:
+1. **Name** — enter an internal name for the template. This name appears in the list, not in the email.
+2. **Subject** — enter the subject line of the email. You can use placeholders such as `{{supplier_name}}`.
+3. **Select email template** — choose the email type. There are exactly four types:
+   * **Supplier Invitation Email** — sent when you invite a supplier to the supplier portal.
+   * **Supplier Registration Completion Email** — sent when a supplier completes their registration.
+   * **Supplier Approval Email** — sent when the supplier's account is approved.
+   * **Supplier Rejection Email** — sent when the supplier's account is rejected.
 
-    * Replace the `href` attribute of the anchor tag with `{{magic_link}}`.
-    * Ensure the link is styled appropriately for the email template. Here's an example:
+   The type of an existing template cannot be changed later; the field is read-only when editing. Create a new template instead.
+4. **CC** — optionally select who else receives a copy: **Assigned User** (the user responsible for the supplier) and/or **Referrer** (the user who invited the supplier). Leave empty to send to the supplier only.
+5. Design the email body in the rich-text editor on the right. You can format text, insert lists and quotes, and align content. The **Upload** toolbar button inserts an uploaded image directly into the email or attaches other files as a link. The code icon switches to the HTML source view, where you can edit the underlying HTML directly and format it.
+6. **Placeholders**: the properties menu in the toolbar inserts the available placeholders for the selected email type, e.g. `{{magic_link}}` and `{{supplier_name}}`.
+7. Click **Save** to store the template.
 
-    ```html
-    <a href="{{magic_link}}" target="_blank" style="
-        background-color: #B7184B;
-        border-radius: 25px;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 12px 25px;
-        color: #FFFFFF;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;">
-        Complete Registration
-    </a>
-    ```
+### The `{{magic_link}}` Placeholder
 
-### 3. Customize the Link Text:
+The `{{magic_link}}` placeholder is replaced with a unique sign-in URL when the email is sent. It directs the recipient to an action in the supplier portal, such as completing their registration. To make it a clickable button, format it as a link in the HTML source view:
 
-• Modify the text between the opening \<a> and closing \</a> tags to reflect the action you want the user to take. For example, “Complete Registration” or “Access Your Account”.
+```html
+<a href="{{magic_link}}" target="_blank" style="
+    background-color: #B7184B;
+    border-radius: 25px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;">
+    Complete Registration
+</a>
+```
 
-4\. Save and Test the Template:
+Adjust the text between the `<a>` and `</a>` tags to tell the recipient what to do, for example "Complete Registration" or "Access Your Account".
 
-• After making the changes, click the Save button.
+## Sending a Test Email
 
-• You can use the Send Test button to send a test email to ensure that the link is working as expected.
+Before putting a template into use, check how it looks:
 
-## Best Practices for Using \{{magic\_link\}}
+1. Click **Send Test** in the top-right corner of the editor.
+2. Enter the **Receiver Email** address the test email should go to.
+3. Fill in the sample values shown for the placeholders (e.g. a sample supplier name and a sample link).
+4. Click **Send**. DocBits sends the email with the sample values so you can verify the layout, the placeholder replacement and the magic link.
 
-• Link Placement: Place the \{{magic\_link\}} prominently in the email to ensure it is easily accessible to recipients.
+The test email does not go to a supplier and does not change any data.
 
-• Clear Call to Action: The text within the link should be a clear call to action, such as “Complete Registration” or “Confirm Your Email.”
+## Related Pages
 
-• Styling: Ensure that the link is styled consistently with the rest of the email template and stands out visually.
-
-• Testing: Always send a test email after editing the template to verify that the \{{magic\_link\}} resolves correctly and the styling is appropriate.
-
-## Conclusion
-
-By properly defining the \{{magic\_link\}} in your email templates, you can ensure that recipients receive a personalized and actionable email that guides them to the appropriate task within your supplier portal. This enhances the user experience and ensures smooth onboarding and communication processes.
-
-\
-
-
-This documentation provides step-by-step instructions for administrators on how to define and use the \{{magic\_link\}} in email templates, ensuring that emails are both functional and visually appealing.
+* [Email Notification](../global-settings/email-notification/README.md) — notifications for internal document events
+* [Supplier General Settings](supplier-general-settings.md)
+* [Supplier Permissions](supplier-permissions.md)
+* [Supplier Portal](../../setup/supplier-portal/README.md) — activating the portal and inviting suppliers

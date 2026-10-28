@@ -1,6 +1,6 @@
 # Create a New Task and assign it to Facility Group
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_task_to_facility_group_v2.png" alt="Create a New Task and assign it to Facility Group, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_task_to_facility_group_v2.png" alt="Workflow card Task: Create a Task/Notification for the facility group Group Name with title, description and priority, notify the group via email, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

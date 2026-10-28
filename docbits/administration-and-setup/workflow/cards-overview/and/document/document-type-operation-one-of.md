@@ -1,6 +1,6 @@
 # Document Type Operation one of
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2.png" alt="Document Type Operation one of, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2.png" alt="Workflow card Document: Document type Operator one of the following Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

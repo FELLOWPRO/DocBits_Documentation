@@ -1,6 +1,6 @@
 # Assign User to Supplier
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_user_to_supplier_v2.png" alt="Assign User to Supplier, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_user_to_supplier_v2.png" alt="Workflow card Assignee: Assign the user User to the given supplier, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

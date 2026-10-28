@@ -1,6 +1,6 @@
 # Purchase Order Column Empty
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_po_update_empty_column_check_v2.png" alt="Purchase Order Column Empty, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_po_update_empty_column_check_v2.png" alt="Workflow card Compare with Purchase Order: The value for the purchase order in the column Column Operator empty in the table Table, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

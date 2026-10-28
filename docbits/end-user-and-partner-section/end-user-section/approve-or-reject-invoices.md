@@ -1,5 +1,26 @@
 # Approve or reject an invoice
 
+## What follows a business approval decision
+
+<figure><img src="../../.gitbook/assets/process-approval-en-20261028.png" alt="Approve or reject invoice: Distinguish between examination, decision and subsequent handover."><figcaption><p>Distinguish between examination, decision and subsequent handover. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+
+Technical validation checks document data; approval records the business decision of an authorized reviewer. Even a technically valid invoice may still require one or more approvals.
+
+1. **Check responsibility:** Open the assigned invoice and check which approval level you are allowed to decide on.
+2. **Review the invoice:** Compare header values, line items and tax with the original document and your company requirements.
+3. **Document decision:** Approve a correct invoice or reject it with a specific reason. Wait for the response and then check the approval history.
+4. **Identify the next step:** If additional approval stages are configured, the invoice awaits their decisions. After rejection, clarification, correction and any resubmission follow your configured process. The separate export process determines whether data has reached the target system.
+
+### Three statements that don't mean the same thing
+
+| statement | What it does not automatically prove |
+| --- | --- |
+| **The data is validated.** | That an authorized business reviewer has approved it. |
+| **A reviewer approved.** | That all required approval stages have been completed. |
+| **Approvals have been completed.** | That the invoice has already been exported or posted in ERP. |
+
+Use [Document tasks](tasks.md) to process assigned work and [Document status](dashboard/document-status.md) to classify current status.
+
 Follow an ordinary reviewer checking an invoice, recording a decision and verifying the saved result.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-customer/v1/en.mp4" %}

@@ -1,8 +1,8 @@
 # Confirmed Delivery Date
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v2.png" alt="Confirmed Delivery Date, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v2.png" alt="Workflow card Compare with Purchase Order: Confirmed delivery date Operator accepted delivery date in master data lookup table Master Data Table, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v3.png" alt="Confirmed Delivery Date, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v3.png" alt="Workflow card Compare with Purchase Order: Delivery Date Type delivery date Operator accepted delivery date in master data lookup table Master Data Table, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose**
 

@@ -1,6 +1,6 @@
 # Supplier Item ID in Item Price Table
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_quote_supplier_item_number_exists_v2.png" alt="Supplier Item ID in Item Price Table, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_quote_supplier_item_number_exists_v2.png" alt="Workflow card Compare with Quote Price: Any/All supplier item id Operator in item price table, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

@@ -1,10 +1,25 @@
 # Transformation Rules
 
+## From extracted value to downstream verification
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-en-20261028.png" alt="How transformation rules work: An extracted value becomes a specifically processed value."><figcaption><p>An extracted value becomes a specifically processed value. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+
+A transformation changes existing data; it does not perform OCR again. It reads an input, checks its condition, runs the configured steps and writes the result back. If the condition is not met, the rule is skipped.
+
+**Example:** A table cell contains `STK`. A value mapping that applies to the supplier writes `PCE`. Downstream PO matching then uses the normalized unit code. Also test a value that is already normalized and a value to which the rule should not apply.
+
+1. **Trigger:** During document processing, the rules run after extraction. They can also run again when modified extraction data is saved.
+2. **Order:** Within a run, the scopes are processed in this order: **Header field → Routing → Table rows → Table column**. Within each scope, priority and key determine the order.
+3. **Effect:** A table rule can change or remove line items. This can change the row count and the prerequisites for purchase order matching. Replacing rows that have already been matched can remove an existing assignment.
+4. **Control:** Compare input, preview and saved result. When execution logging is enabled, the condition trace shows why a rule was applied or skipped.
+
+**Check repetitions:** A rule should not change its already prepared value each time it is saved. Use appropriate idempotent steps, an unchanged source or the intended one-time execution. The details and examples follow below; [PO matching rules](more-settings/purchase-order/purchase-order-matching-rules.md) explain the downstream mapping.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4" %}
 
 ## Overview
 
-Transformation rules clean up or rewrite extracted data **automatically**, every time a document is processed and every time it is saved. A rule can change:
+**Trigger:** During document processing, the rules run after extraction. They can also run again when modified extraction data is saved.
 
 * a **header field** (invoice number, currency, supplier tax ID …),
 * a **column** in every row of a table (unit, item number, price basis …),

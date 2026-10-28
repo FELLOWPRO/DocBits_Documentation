@@ -1,10 +1,10 @@
 # Change Status to
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v1.png" alt="Change Status to, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v1.png" alt="Workflow card Status: Change Status to Status, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v2.png" alt="Change Status to, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v2.png" alt="Workflow card Status: Change Status to Status, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v3.png" alt="Change Status to, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v3.png" alt="Workflow card Status: Change Status to Status, trigger Workflows, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

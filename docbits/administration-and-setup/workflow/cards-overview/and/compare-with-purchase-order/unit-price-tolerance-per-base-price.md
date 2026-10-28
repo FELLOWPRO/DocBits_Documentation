@@ -1,6 +1,6 @@
 # Unit Price Tolerance per Base Price
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_unit_price_percent_per_v2.png" alt="Unit Price Tolerance per Base Price, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_unit_price_percent_per_v2.png" alt="Workflow card Compare with Purchase Order: Any/All unit price on document is Operator unit price on purchase order with tolerance of Value percent per a base unit price of Value Per, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

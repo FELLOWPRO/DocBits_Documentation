@@ -1,6 +1,6 @@
 # Send Email to Groups
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_send_email_to_groups_v2.png" alt="Send Email to Groups, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_send_email_to_groups_v2.png" alt="Workflow card Email: With email templates of Email Templates, send an email to the following groups Groups, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ---
 

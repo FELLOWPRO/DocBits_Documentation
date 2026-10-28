@@ -1,6 +1,6 @@
 # Item ID to Quote Item ID
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_quotes_item_number_comparison_v2.png" alt="Item ID to Quote Item ID, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_quotes_item_number_comparison_v2.png" alt="Workflow card Compare with Quote Price: Any/All item id Operator to quote item id, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

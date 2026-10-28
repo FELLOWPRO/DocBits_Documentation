@@ -1,6 +1,6 @@
 # Scheduled workflow start
 
-<figure><img src="../../../.gitbook/assets/workflow_card_celery_beat_v2.png" alt="Scheduled workflow start, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_celery_beat_v2.png" alt="Workflow card Scheduler: Start the workflow on every minute, hour, day of week, day of month and month of year for all documents that changed since it last ran, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

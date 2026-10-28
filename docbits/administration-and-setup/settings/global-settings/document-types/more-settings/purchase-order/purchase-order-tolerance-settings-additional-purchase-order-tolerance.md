@@ -30,7 +30,7 @@ When enabled, this setting allows you to define tolerances for **Quantity** and/
      * **Percent:** Indicates a percentage tolerance.
      * **Value:** Indicates a fixed amount by which the value can differ.
 
-<figure><img src="../../../../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (407).png" alt="PO Tolerance Setting toggle enabled with Quantity Tolerance 5 percent and Unit Price Tolerance 5 as value"><figcaption></figcaption></figure>
 
 ### **Example Scenario:**
 
@@ -45,7 +45,7 @@ When enabled, this setting allows you to define tolerances for **Quantity** and/
   * Line 1 is **not flagged** as a mismatch because $4.80 is within 5% of $5.00.
   * Line 2 **is flagged** as a mismatch because $2.20 exceeds the allowed 5% deviation from $2.00. The user is now required to take action to resolve the mismatch before the invoice can be processed further.
 
-<figure><img src="../../../../../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (408).png" alt="Line items table comparing PO and invoice quantities and unit prices with the second line (2.00 vs 2.20) highlighted"><figcaption></figcaption></figure>
 
 ## Setting to configure Additional Purchase Order Tolerance Settings
 
@@ -68,4 +68,4 @@ When enabled, this setting allows you to define tolerances for **Freight**, **Ch
      * **Percent:** The tolerance is defined as a percentage.
      * **Value:** The tolerance is defined as a fixed amount.
 
-<figure><img src="../../../../../../.gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (409).png" alt="Additional PO Tolerance Setting enabled with Freight, Charges and Tax Tolerance each set to 5 percent"><figcaption></figcaption></figure>

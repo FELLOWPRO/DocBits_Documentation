@@ -2,7 +2,7 @@
 
 <figure><img src="../../../../.gitbook/assets/s150-docbits_document_sub_types_overview.png" alt="English document-subtype overview."><figcaption><p>English document-subtype overview.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.54.08.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.54.08.png" alt="Document Sub Types settings page with an empty list showing No Record Found and a New button"><figcaption></figcaption></figure>
 
 #### Overview
 

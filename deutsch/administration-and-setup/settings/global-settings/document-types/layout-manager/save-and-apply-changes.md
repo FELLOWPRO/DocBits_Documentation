@@ -1,25 +1,46 @@
 # Änderungen speichern und anwenden
 
-## Das Speichern und Anwenden von im Layout Manager vorgenommenen Änderungen ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Layoutanpassungen effektiv im Belegverarbeitungs-Workflow angewendet werden.
+Änderungen im Layout Builder werden erst wirksam, wenn Sie sie speichern. Beim Speichern wird das Layout für den Belegtyp hinterlegt, sodass neue Belege es verwenden.
 
-### Hier sind die Schritte zum Speichern und Anwenden von Änderungen:
+## Ihre Änderungen speichern
 
-#### Speichern der Änderungen:
+Nachdem Sie das Layout bearbeitet haben, wählen Sie oben rechts in der Kopfzeile **Speichern**.
 
-* Nachdem Sie die gewünschten Anpassungen im Layout Manager vorgenommen haben, suchen Sie nach der Schaltfläche "Speichern", um die Änderungen zu speichern.
-* Klicken Sie auf diese Schaltfläche, um Ihre Änderungen im Layout Manager zu speichern. Dies sichert Ihre Layoutanpassungen und stellt sicher, dass sie für zukünftige Bearbeitungssitzungen verfügbar sind.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-header-de.png" alt="Kopfzeile des Layout Builders mit den Layout-Auswahlfeldern links sowie der Schaltfläche Speichern und dem Menü mit den drei Punkten rechts"><figcaption>Die Schaltfläche **Speichern** befindet sich oben rechts im Layout Builder.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Zuordnung eines Skripts zu einem Dokumenttyp in DocBits"><figcaption></figcaption></figure>
+Während Sie arbeiten, zeigt die Kopfzeile den Stand Ihrer Änderungen:
 
-#### Anwenden der Änderungen auf den Belegverarbeitungs-Workflow:
+- Eine Schaltfläche **Speichern** ohne Hinweis daneben bedeutet, dass das Layout unverändert ist.
+- **Nicht gespeicherte Änderungen** erscheint, sobald Sie das Layout ändern. Wählen Sie **Speichern**, um die Änderungen zu sichern.
 
-* Sobald Ihre Änderungen im Layout Manager gespeichert sind, werden sie normalerweise automatisch auf den Belegverarbeitungs-Workflow angewendet, der diesen spezifischen Belegtyp verwendet.
-* Neue Belege, die auf dieser Vorlage basieren, erben die aktualisierten Layouteinstellungen, wenn sie erstellt werden. Dies bedeutet, dass die neuen Belege die neuen Gruppen, Felder oder andere Layoutanpassungen enthalten, die Sie im Layout Manager vorgenommen haben.
-* Vorhandene Belege, die bereits mit dieser Vorlage erstellt wurden, können je nach Software und Konfiguration unterschiedlich behandelt werden. In einigen Fällen werden Änderungen automatisch auf bereits vorhandene Belege angewendet, während in anderen Fällen manuelle Anpassungen erforderlich sein können, um vorhandene Belege mit den aktualisierten Layouteinstellungen in Einklang zu bringen.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-unsaved-changes-de.png" alt="Kopfzeile des Layout Builders mit dem Hinweis Nicht gespeicherte Änderungen neben der Schaltfläche Speichern"><figcaption>Der Hinweis **Nicht gespeicherte Änderungen** erscheint, solange das Layout noch nicht gespeichert ist.</figcaption></figure>
 
-#### Testen der Änderungen:
+Nach dem erfolgreichen Speichern ersetzt der Zeitpunkt der letzten Speicherung den Hinweis. **Speichern** erneut zu wählen ist unbedenklich: Hat sich seit dem letzten Speichern nichts geändert, wird auch nichts geschrieben.
 
-* Nachdem Sie die Layoutänderungen gespeichert haben und diese auf den Belegverarbeitungs-Workflow angewendet wurden, ist es ratsam, die Änderungen zu testen, um sicherzustellen, dass sie wie beabsichtigt funktionieren.
-* Erstellen Sie neue Testbelege oder überprüfen Sie vorhandene Belege, um sicherzustellen, dass die aktualisierten Layouteinstellungen korrekt angewendet werden und dass die Daten wie erwartet erfasst und angezeigt werden.
+Wenn Sie den Layout Builder mit nicht gespeicherten Änderungen verlassen wollen, fragt DocBits unter **Änderungen verwerfen?** nach. Wählen Sie **Abbrechen**, um zu bleiben und zu speichern, oder **Ok**, um ohne Speichern zu gehen.
 
-Durch Befolgen dieser Schritte können Sie Änderungen im Layout Manager effektiv speichern und auf den Belegverarbeitungs-Workflow anwenden. Dies gewährleistet eine reibungslose Integration Ihrer Layoutanpassungen in den Prozess der Belegerstellung und -verarbeitung.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-leave-prompt-de.png" alt="Dialog, der das Verlassen des Layout Builders mit nicht gespeicherten Änderungen bestätigen lässt"><figcaption>Rückfrage beim Verlassen mit nicht gespeicherten Änderungen.</figcaption></figure>
+
+## Weitere Aktionen in der Kopfzeile
+
+Das Menü mit den drei Punkten neben **Speichern** enthält die übrigen Layout-Aktionen:
+
+- **Vorlage automatisch generieren** – erzeugt ein Layout automatisch aus den Feldern des Belegtyps.
+- **JSON bearbeiten** – bearbeitet die Layout-Definition direkt als JSON.
+- **JSON kopieren** – kopiert die Layout-Definition in die Zwischenablage.
+- **Layout-Einstellungen** – öffnet die allgemeinen Layout-Einstellungen.
+
+**Vorlage automatisch generieren** ersetzt das bestehende Layout. Prüfen Sie daher vorher, welches Layout geöffnet ist. **JSON bearbeiten** richtet sich an fortgeschrittene Anwender und sollte nur verwendet werden, wenn Ihnen das Format der Vorlage vertraut ist.
+
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-more-menu-de.png" alt="Menü mit den drei Punkten im Layout Builder mit den Einträgen Vorlage automatisch generieren, JSON bearbeiten, JSON kopieren und Layout-Einstellungen"><figcaption>Die Aktionen im Menü mit den drei Punkten.</figcaption></figure>
+
+## Die Änderungen anwenden
+
+Nach dem Speichern verwendet der Belegverarbeitungs-Workflow das Layout für diesen Belegtyp:
+
+- Neue Belege, die mit diesem Belegtyp verarbeitet werden, nutzen das aktualisierte Layout.
+- Bereits verarbeitete Belege behalten das Layout, mit dem sie erfasst wurden.
+
+## Die Änderungen testen
+
+Öffnen Sie nach dem Speichern einen Beleg dieses Belegtyps und prüfen Sie, ob die Felder und Gruppen wie gewünscht erscheinen. Fehlt etwas, kehren Sie in den Layout Builder zurück, passen das Layout an und speichern erneut.

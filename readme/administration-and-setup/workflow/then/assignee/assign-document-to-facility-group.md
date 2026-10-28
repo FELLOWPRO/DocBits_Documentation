@@ -1,6 +1,6 @@
 # Assign Document to Facility Group
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_facility_group_v2.png" alt="Assign Document to Facility Group, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_facility_group_v2.png" alt="Workflow card Assignee: Assign the document to the facility group Group Name, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

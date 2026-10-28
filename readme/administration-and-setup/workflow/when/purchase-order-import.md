@@ -1,6 +1,6 @@
 # Purchase order import
 
-<figure><img src="../../../.gitbook/assets/workflow_card_condition_purchase_order_import_v2.png" alt="Purchase order import, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_purchase_order_import_v2.png" alt="Workflow card Document Independent: New purchase order import is Purchase order import type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

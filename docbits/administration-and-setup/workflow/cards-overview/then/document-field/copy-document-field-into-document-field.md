@@ -1,6 +1,6 @@
 # Copy Document Field into Document Field
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_copy_docfield_to_docfield_v2.png" alt="Copy Document Field into Document Field, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_copy_docfield_to_docfield_v2.png" alt="Workflow card Document Field: Copy the content of the document field Field Name into the document field Field Name, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

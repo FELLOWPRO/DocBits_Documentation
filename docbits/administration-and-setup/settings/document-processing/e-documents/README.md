@@ -25,3 +25,5 @@ Go to **Settings → Document Types → Invoice → Advanced Settings** and open
 You can also jump straight here with **Global Quick Search**: press <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> on Windows and Linux) anywhere in DocBits and type _e-invoice_.
 
 <figure><img src="../../../../.gitbook/assets/einvoice-quicksearch.png" alt="Global Quick Search jumping to E-Invoice Validation"><figcaption><p>Type "e-invoice" in Quick Search to jump straight to the toggle.</p></figcaption></figure>
+
+For ERP tax conversion, see [Map e-invoice VAT categories to ERP tax codes](tax-code-mapping.md).

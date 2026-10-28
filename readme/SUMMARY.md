@@ -107,6 +107,7 @@
       * [OAuth Office365](end-user-and-partner-section/end-user-section/how-to-import-documents/email/oauth-office365.md)
   * [Error](end-user-and-partner-section/end-user-section/error-page.md)
   * [Technical Support in DocBits](end-user-and-partner-section/end-user-section/technical-support-in-docbits/README.md)
+    * [Support page](end-user-and-partner-section/end-user-section/technical-support-in-docbits/support-page.md)
     * [Create a ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Help Icons](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
     * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)
@@ -880,6 +881,7 @@
 ## Security <a href="#security" id="security"></a>
 
 * [Security & Compliance FAQ](security/security-and-compliance-faq.md)
+* [Data Storage, Retention and Deletion](security/data-storage-and-retention.md)
 * [Secure Storage of Credentials](security/secure-storage-of-credentials.md)
 * [Encryption at Rest](security/encryption-at-rest.md)
 * [Cookies and Browser Storage](security/cookies-and-browser-storage.md)

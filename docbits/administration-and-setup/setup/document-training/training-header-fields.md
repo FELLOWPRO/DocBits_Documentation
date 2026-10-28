@@ -20,6 +20,6 @@ You can help train DocBits to recognize these fields by manually identifying the
 Repeat this process for all required fields.\
 Once all necessary fields have been populated, **click "Save Rules"** to store the training. This ensures that DocBits learns where to find each piece of information for similar documents in the future.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/header_field_training_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/header_field_training_2.png" alt="Validation screen with an arrow pointing to the Save Rules button next to Export and PO Match" width="375"><figcaption></figcaption></figure></div>
 
 After saving training, test further documents from the same supplier. Export readiness also depends on validation and the configured workflow.

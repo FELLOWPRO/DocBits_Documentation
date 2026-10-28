@@ -1,8 +1,8 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v2.png" alt="Decision Table has Returns, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v2.png" alt="Workflow card Logic: Decision table Decision Table has returns for the document or supplier organisation, use return data in later cards: Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3.png" alt="Decision Table has Returns, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3.png" alt="Workflow card Logic: Decision table Decision Table has returns for the document or supplier organisation, store returned data for use in subsequent cards, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

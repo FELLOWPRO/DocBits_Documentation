@@ -4,11 +4,11 @@ To keep an overview, you can give the workflows different headings so that you c
 
 Create a new Workflow: Click on + ADD WORKFLOW
 
-![](<../../../.gitbook/assets/0 (1).png>)
+![My Workflows list with a search field, Add Workflow button and workflows Test 10 to Test 7](<../../../.gitbook/assets/0 (1).png>)
 
 You can use these workflows (Test 1,2,3) to automatically assign various documents to the right employee in the company.
 
-![](<../../../.gitbook/assets/1 (3).png>)
+![Document list with three documents in Ready for validation status: an invoice, an order confirmation and a delivery note](<../../../.gitbook/assets/1 (3).png>)
 
 If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be immediately assigned to the correct person.
 
@@ -22,7 +22,7 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Invoice reviewer
 
-![](<../../../.gitbook/assets/3 (2).png>)
+![Document row for Banana_invoice_de (1).pdf, type Invoice, status Ready for validation, assigned to Stefan Reppermund](<../../../.gitbook/assets/3 (2).png>)
 
 **Test 2: Logic Card**
 
@@ -32,7 +32,7 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** Delivery-note reviewer
 
-![](<../../../.gitbook/assets/4 (2).png>)
+![Document row for Lieferschein_Dum (1) (1).pdf, type Delivery Note, status Ready for validation, assigned to James Edwards](<../../../.gitbook/assets/4 (2).png>)
 
 **Test 3: Logic Card**
 
@@ -42,7 +42,7 @@ Then: **Assign document to:** Delivery-note reviewer
 
 **Then:** **Assign document to:** Order reviewer
 
-![](<../../../.gitbook/assets/5 (2).png>)
+![Document row for Order_Confirmation_444.pdf, type Order Confirmation, status Ready for validation, assigned to Anian Sollinger](<../../../.gitbook/assets/5 (2).png>)
 
 It is also possible, if the document is not assigned to a single person, to assign it to a specific employee from the start.
 
@@ -60,7 +60,7 @@ For an easier overview of what should happen to a document, you can set the stat
 
 <figure><img src="../../../.gitbook/assets/s150-workflow_test4_delivery_note_status.png" alt="Unsaved workflow draft for changing a document status."><figcaption><p>Unsaved workflow draft for changing a document status.</p></figcaption></figure>
 
-![](<../../../.gitbook/assets/8 (2).png>)
+![Document row for a delivery note with status Pending approval, assigned to Amier Haider](<../../../.gitbook/assets/8 (2).png>)
 
 **Test 5: Logic Card**
 
@@ -72,11 +72,11 @@ Then: **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/10 (2).png>)
+![Document list row for Banana_invoice_de (1).pdf, type Invoice, status Pending second approval, assigned to Stefan Reppermund](<../../../.gitbook/assets/10 (2).png>)
 
 If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be assigned to the right person immediately.
 
-![](<../../../.gitbook/assets/11 (2).png>)
+![Invoice totals section showing net 860,00 EUR, 16% VAT 137,60 EUR and total 997,60 EUR with highlighted amounts](<../../../.gitbook/assets/11 (2).png>)
 
 **Test 6: Logic Card**
 
@@ -88,7 +88,7 @@ Then: **Assign document to:** Approval owner
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/13 (1).png>)
+![Document list with Banana_invoice_de (1).pdf in Ready for validation, assigned to Asad Usman Khan, above a second invoice in Pending approval](<../../../.gitbook/assets/13 (1).png>)
 
 It is also possible to enter the status into the workflow, so the assigned person can immediately see what status this document is and what should happen next with it.
 
@@ -104,7 +104,7 @@ It is also possible to enter the status into the workflow, so the assigned perso
 
 <figure><img src="../../../.gitbook/assets/s150-workflow_test7_status_update.png" alt="Status-change action in an unsaved workflow draft."><figcaption><p>Status-change action in an unsaved workflow draft.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (1).png" alt="Document row for Banana_invoice_de (1).pdf with status Pending approval, assigned to Asad Usman Khan"><figcaption></figcaption></figure>
 
 For example, if certain or important information is missing from a document, but is important and must be included for further processing, you can set up the workflow so that these documents are immediately forwarded to the buyer and a substitute (replacement).
 
@@ -141,7 +141,7 @@ This logic card is vital for ensuring that the details of an order confirmation 
 
 If you have a different calculation for surcharges, or only have them on some items, you can use the generic table calculation cards, some of them also allow to filter for regular expressions.
 
-<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19.png" alt="Workflow Then card: calculate Material Surcharge in the order confirmation table for item numbers matching a regex and add the result into MTZ"><figcaption></figcaption></figure>
 
 Above is a calculation example for MTZ with a filter for item numbers starting with 01, 06, 9, 001 or 000.
 
@@ -149,7 +149,7 @@ With a manual setup it’s advised to split calculations that depend on new colu
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20.png" alt="Workflow Then card with the Run workflow action set to the workflow Mtz Into Discount"><figcaption></figcaption></figure>
 
 With this card you can specify the name of a workflow that is to be run after the current workflow if its conditions are met and after previous then cards of the current workflow. While it prioritises runnable, active workflows, it also allows you to run deactivated workflows if the document fulfills the workflows conditions.
 

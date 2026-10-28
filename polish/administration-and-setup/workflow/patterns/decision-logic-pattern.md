@@ -1143,3 +1143,5 @@ Wyjątki: 15 (1,2%)
 **Historyczne metadane przykładu:**
 
 **Wersja wzorca:** 1.0 **Ostatnia aktualizacja:** 23 października 2025 **Trudność:** Średnia **Szacowany czas:** 30–45 minut
+
+[Przykłady rzeczywistych przepływów pracy](production-workflow-examples.md)

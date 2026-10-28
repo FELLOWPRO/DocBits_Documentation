@@ -1,6 +1,6 @@
 # Single Document Status Condition
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_v2.png" alt="Single Document Status Condition, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_v2.png" alt="Workflow card Status: Document status Operator Status, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Purpose**
 

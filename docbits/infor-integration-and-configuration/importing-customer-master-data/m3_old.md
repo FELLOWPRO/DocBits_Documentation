@@ -29,21 +29,21 @@ Before importing, download the required connection template using the file below
 1. **Access Infor ION Desk:**
    *   Navigate to **InforOS** → **ION Desk** → **Connect** → **Connection Points**.
 
-       ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
+       ![Infor ION Desk menu with Connect expanded and Connection Points highlighted](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 2. **Import the Template:**
    *   Click on the **Import** button.
 
-       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt="Connection Points toolbar with the Import button highlighted"><figcaption></figcaption></figure>
    * Select the appropriate **Template File** from your local system.
    *   Click **OK** to begin the import process.
 
-       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="" width="327"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="Upload Local File dialog with the template file selected and OK highlighted" width="327"><figcaption></figcaption></figure>
 3. **Confirmation:**
    *   If the import is successful, a confirmation message will be displayed.
 
-       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt="Import result dialog reporting that the DocBits import template was imported successfully"><figcaption></figcaption></figure>
 4. **Post-Import Configuration:**
    * After importing the template, you can customize specific connection settings as needed.
    * Don’t forget to import or configure your **Service Account** for authentication and access control.
 
-<figure><img src="../../.gitbook/assets/m3_import_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/m3_import_5.png" alt="API Connection Point page with the Service Account field and Import button on the Connection tab"><figcaption></figcaption></figure>

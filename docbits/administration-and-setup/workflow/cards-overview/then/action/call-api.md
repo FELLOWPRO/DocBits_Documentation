@@ -1,8 +1,8 @@
 # Call Api
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_call_api_v1.png" alt="Call Api, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_call_api_v1.png" alt="Workflow card Action: Call API: API Endpoint with method, params and data, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_call_api_v2.png" alt="Call Api, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_call_api_v2.png" alt="Workflow card Action: Call API: API Endpoint with method, params and data, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 <!-- workflow-card-call-api-contract-20261022 -->
 

@@ -1,6 +1,6 @@
 # Document Operator for Sub-Organizations
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2.png" alt="Document Operator for Sub-Organizations, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2.png" alt="Workflow card Document: Document Operator part of suborganization Sub-Org, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

@@ -4,7 +4,7 @@
 
 The validation screen in DocBits is designed to verify the accuracy and completeness of data contained within documents before they are processed or saved. This functionality is crucial for ensuring that all data is correctly read and processed, thereby maintaining data integrity and quality.
 
-<figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt="Staircase diagram titled Validation with six steps: data quality, data integrity, error prevention, user friendliness, compliance and efficiency"><figcaption></figcaption></figure>
 
 ## Detailed Description of the Validation Screen's Purpose and Use
 

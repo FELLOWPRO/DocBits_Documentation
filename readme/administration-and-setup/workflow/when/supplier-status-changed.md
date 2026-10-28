@@ -1,6 +1,6 @@
 # Supplier status changed
 
-<figure><img src="../../../.gitbook/assets/workflow_card_condition_supplier_status_is_isnot_v2.png" alt="Supplier status changed, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_supplier_status_is_isnot_v2.png" alt="Workflow card Document Independent: A supplier&#x27;s status changed and now Operator one of the following Status, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

@@ -1,8 +1,8 @@
 # Run DocOperator Prompt (Automation Script)
 
-<figure><img src="../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v2.png" alt="Run DocOperator Prompt (Automation Script), Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v2.png" alt="Workflow card Prompts and Scripts: Run the DocOperator prompt script with variables Script Data, maximum steps and maximum retries, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v3.png" alt="Run DocOperator Prompt (Automation Script), Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v3.png" alt="Workflow card Prompts and Scripts: Run the DocOperator prompt script with variables Script Data, maximum steps and maximum retries, execute the prompt in DocOperator Environment, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ***
 

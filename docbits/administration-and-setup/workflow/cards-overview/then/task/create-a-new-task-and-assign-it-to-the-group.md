@@ -1,10 +1,10 @@
 # Create a New Task and assign it to the group
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_task_for_group_v2.png" alt="Create a New Task and assign it to the group, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_task_for_group_v2.png" alt="Workflow card Task: Create a new Task with title, description and priority and assign it to the group Groups, notify the group via email, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_task_for_group_v3.png" alt="Create a New Task and assign it to the group, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_task_for_group_v3.png" alt="Workflow card Task: Create a new Task with title, description and priority and assign it to the group Groups, notify the group via email, use decision tree if available, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_task_for_group_v4.png" alt="Create a New Task and assign it to the group, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_task_for_group_v4.png" alt="Workflow card Task: Create a new Task/Notification with title, description and priority and assign it to group Groups, notify the group via email, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,21 +1,39 @@
-# Importar Dados: Treinamento do Modelo
+# Importar documentos de exemplo para o treinamento do modelo
 
-Prepare documentos representativos dos formatos, idiomas e tipos que a organização precisa de processar. Use apenas os formatos de ficheiro aceites pela sua instalação. Evite duplicados e separe os documentos de treino dos documentos reservados para avaliação.
+Use esta página para adicionar PDFs de exemplo a um tipo de documento e, em seguida, treinar ou testar seu modelo de classificação. Você precisa de acesso a **Configurações** e **Tipos de Documentos**. Para a finalidade das funções de treinamento, consulte [Propósito e uso: Treinamento do Modelo](purpose-and-use-model-training.md).
 
-## Abrir a importação
+## Abrir o tipo de documento
 
-Nas configurações do tipo de documento pretendido, abra o treino do modelo e escolha a função de importação.
+1. Vá para **Configurações → Tipos de Documentos**.
+2. Encontre o tipo de documento que deseja treinar. Em sua linha, selecione **Treinamento de modelo**. O exemplo abaixo usa **Fatura**.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-pt.png" alt="Importação, treino do modelo e teste de classificação. Na versão ilustrada, a ação de teste apresenta a designação confusa Classificação do teste. Não foi iniciado nenhum treino ou teste."><figcaption><p>Importação, treino do modelo e teste de classificação. Na versão ilustrada, a ação de teste apresenta a designação confusa Classificação do teste. Não foi iniciado nenhum treino ou teste.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc652-document-types-pt-20261011.png" alt="Linha Fatura na página Tipos de Documentos com o link Treinamento de modelo"><figcaption><p>Abra o Treinamento de modelo a partir do tipo de documento escolhido.</p></figcaption></figure>
 
-## Escolher o formato e os ficheiros
+Os outros controles deste cartão servem para outras finalidades: **Ativar** habilita o tipo de documento, **Extraction** alterna o modo de extração, a engrenagem abre suas configurações, e os demais links abrem outras áreas de configuração. Você não precisa alterá-los apenas para abrir o Treinamento de modelo.
 
-Selecione os formatos de números e datas correspondentes aos ficheiros e escolha os documentos a importar. Por exemplo, `1.234,56` e `1,234.56` usam separadores diferentes. Uma data como `05/06/2026` também deve ser interpretada segundo o formato selecionado.
+A página **Modelo De Trem** mostra a contagem de amostras e a lista de documentos de treinamento enviados. Na organização de exemplo, a lista contém documentos; sua organização pode exibir outros documentos e contagens.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-pt.png" alt="Importação de documentos com seleção do formato dos montantes e das datas; nenhum ficheiro foi enviado."><figcaption><p>Importação de documentos com seleção do formato dos montantes e das datas; nenhum ficheiro foi enviado.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc652-model-training-pt-20261011.png" alt="Página Modelo De Trem da Fatura mostrando a contagem de amostras, Importar, Modelo de trem, Classificação do teste e a lista de documentos"><figcaption><p>As três ações ficam no canto superior direito da lista de treinamento.</p></figcaption></figure>
 
-Verifique a seleção antes de iniciar a importação. Aguarde o fim do processamento e verifique os erros e o tipo de documento atribuído. Corrija as classificações e extrações incorretas antes de utilizar os exemplos no treino.
+## Importar PDFs de exemplo
 
-## Treinar e avaliar
+1. Selecione **Importar**.
+2. Escolha o **Formato de valor e data** que corresponde ao documento de exemplo. Por exemplo, escolha **Germany** para as convenções alemãs de números e datas. Esta seleção informa ao DocBits como interpretar os valores no documento enviado; ela não altera o idioma do aplicativo.
+3. Arraste os arquivos PDF para a caixa de diálogo ou use **Carregar** para selecioná-los. O importador atual de documentos de exemplo aceita **arquivos PDF**; ele rejeita outros tipos de arquivo. Selecionar os arquivos inicia o envio.
+4. Feche a caixa de diálogo e verifique se os documentos aparecem na lista de treinamento. Se o DocBits relatar um erro de envio ou um documento já existente, corrija o arquivo ou escolha outro exemplo antes de continuar.
 
-Treine o modelo de acordo com as funções e permissões da sua versão. Depois, avalie o resultado numa amostra separada. Adicionar documentos não garante, por si só, maior exatidão. Consulte [Testar o modelo](testing-the-model.md).
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-pt.png" alt="Caixa de diálogo Carregador de documentos com o seletor Formato de valor e data, a área de arrastar e soltar e o campo Carregar"><figcaption><p>Escolha um formato antes de selecionar os PDFs de exemplo.</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/dbdc652-format-menu-pt-20261011.png" alt="Menu Formato de valor e data com opções de países e regiões, incluindo Germany e United Kingdom"><figcaption><p>Escolha o formato usado no documento, não o seu idioma de interface preferido.</p></figcaption></figure>
+
+Para ações sobre as amostras importadas, consulte [Gerenciar dados de treinamento](manage-training-data.md).
+
+## Treinar e verificar o modelo
+
+Quando os PDFs de exemplo desejados estiverem na lista, selecione **Modelo de trem**. O DocBits pode processar o treinamento em segundo plano; aguarde a mensagem de conclusão antes de considerar o novo modelo pronto. A contagem de amostras e qualquer limite de plano exibidos nesta página pertencem à sua organização.
+
+Para verificar a classificação, selecione **Classificação do teste** e, em seguida, envie um arquivo de exemplo separado na caixa de diálogo. Após o processamento, o DocBits mostra se o tipo de documento previsto corresponde a esta página e relata os detalhes da classificação. A caixa de diálogo de teste vazia abaixo é mostrada sem enviar um arquivo.
+
+<figure><img src="../../../../../.gitbook/assets/dbdc652-test-dialog-pt-20261011.png" alt="Caixa de diálogo Classificação do teste com área de arrastar e soltar e campo Carregar"><figcaption><p>Use a Classificação do teste para verificar o modelo com outro documento.</p></figcaption></figure>
+
+Para interpretar o resultado, consulte [Testando o modelo](testing-the-model.md). Se o resultado for ruim, revise os [dados de treinamento](manage-training-data.md) e o [guia de solução de problemas](troubleshooting.md) antes de adicionar mais amostras.

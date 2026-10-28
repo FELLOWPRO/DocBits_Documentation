@@ -1,6 +1,6 @@
 # Assign First Decision Table User to Supplier
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_supplier_user_first_return_of_dt_v2.png" alt="Assign First Decision Table User to Supplier, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_supplier_user_first_return_of_dt_v2.png" alt="Workflow card Assignee: Assign the first returned user of the decision table to the registered supplier, notify them via email with Email Templates, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

@@ -1,6 +1,6 @@
 # If Country in Field
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2.png" alt="If Country in Field, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2.png" alt="Workflow card Document Field: If country in field Field Name Operator part of Region, continue: Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

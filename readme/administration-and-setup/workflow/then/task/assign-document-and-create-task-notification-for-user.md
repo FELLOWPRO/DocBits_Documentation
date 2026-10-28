@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for User
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_user_sequential_v2.png" alt="Assign Document and Create Task/Notification for User, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_user_sequential_v2.png" alt="Workflow card Task: Assign the document sequentially to and create a Task/Notification for User with title, description and priority, notify the user via email, set assignment priority of Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose**
 

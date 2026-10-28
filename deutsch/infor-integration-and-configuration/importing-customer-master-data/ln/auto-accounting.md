@@ -1,5 +1,22 @@
 # Auto Accounting mit Infor LN
 
+## Vom LN-Stammdatensatz zur geprüften Kontierung
+
+<figure><img src="../../../.gitbook/assets/process-accounting-de-20261028.png" alt="Finanzstammdaten für Auto Accounting: Datenweg und Kontrollpunkte für eine Infor-LN-Integration."><figcaption><p>Datenweg und Kontrollpunkte für eine Infor-LN-Integration. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
+
+Diese Anleitung behandelt die Bereitstellung der Finanzstammdaten für eine LN-Integration. Die Auswahl **LN** oder das Einschalten von **Auto Accounting** ersetzt weder die Datenversorgung noch die Prüfung des Kontierungsergebnisses.
+
+| Übergabe | Was Sie nachweisen sollten |
+| --- | --- |
+| **LN → BOD-Veröffentlichung** | Richtige Gesellschaft und benötigte Konten- beziehungsweise Dimensionsdaten; Auswahl zunächst zählen oder simulieren. |
+| **BOD → ION** | Passende Dokumentversion, Quelle, Filter und Mapping; den Testbezeichner in ION OneView verfolgen. |
+| **ION → DocBits** | Antwort des Empfangsendpunkts, richtige Organisation und akzeptierter Datensatz. Ein aktivierter Flow allein reicht nicht. |
+| **DocBits → Kontierungsergebnis** | Nach freigegebener Aktivierung an repräsentativen Testbelegen kontrollieren, ob Konten und Dimensionen fachlich richtig sind. |
+
+**Beispiel für die Nachverfolgung:** Verwenden Sie einen nicht sensiblen Testbezeichner aus einem freigegebenen Testdatensatz. Suchen Sie denselben Bezeichner im Quell-BOD, in ION und in den DocBits-Empfangsprotokollen. So lässt sich eine fehlende Zuordnung einer Übergabe zuordnen, statt den Schalter wiederholt zu ändern.
+
+Der anschließende Export und eine Buchung im ERP müssen separat nachgewiesen werden. Die vorhandenen Abbildungen dieser Anleitung zeigen die DocBits-Steuerungen; sie belegen keine durchgeführte LN-Übertragung. Der folgende Abschnitt beschreibt die Vorbereitung und Ende-zu-Ende-Prüfung durch die zuständigen Administratoren. Für die technische Weitergabe siehe [Export aus DocBits](../../exporting-in-docbits/README.md).
+
 Verwenden Sie diese Anleitung, wenn ein Infor-LN-Administrator DocBits so konfigurieren möchte, dass importierte Finanzstammdaten für die automatische Kontierung (Auto Accounting) verwendet werden. Die alte Seite zeigte 48 Bildschirme aus einem bestimmten Infor-Mandanten. Verbindungspunkt-Namen, Zuordnungen, Zugangsdaten und Endpunktadressen dieses Mandanten sind keine wiederverwendbare Konfiguration.
 
 ## Einstellung in DocBits finden

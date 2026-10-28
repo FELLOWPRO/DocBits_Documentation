@@ -39,6 +39,10 @@ Open supplier administration. Before inviting someone, check the company, suppli
 
 <figure><img src="../../../.gitbook/assets/portal-invitation-20261024-en.png" alt="Form for creating and inviting a supplier. Check the company, contact person and email address before saving."><figcaption><p>Form for creating and inviting a supplier. Check the company, contact person and email address before saving.</p></figcaption></figure>
 
+## Admin: open Supplier Details from the Supplier Dashboard
+
+Internal staff open the same **Supplier Details** view that a supplier fills in. In the Supplier Dashboard, click a supplier's row. Supplier Details opens with its six sections and the supplier's status. Use it to review the submitted data, maintain it afterwards and approve the supplier.
+
 ## Supplier: register and access DocBits
 
 The supplier opens their invitation, creates or uses the intended personal account, and follows the configured registration steps. They can then view the information made available to them in DocBits. The exact process and available functions depend on the organisation.

@@ -4,7 +4,7 @@ hidden: true
 
 # Order Type of Purchase Order
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_check_order_type_in_po_v2.png" alt="Order Type of Purchase Order, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_check_order_type_in_po_v2.png" alt="Workflow card Compare with Purchase Order: Any/All order type of purchase order Operator Order Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose**:
 

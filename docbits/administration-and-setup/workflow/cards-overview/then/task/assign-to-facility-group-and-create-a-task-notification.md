@@ -1,6 +1,6 @@
 # Assign to Facility Group and Create a Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_task_to_facility_group_sequential_v2.png" alt="Assign to Facility Group and Create a Task/Notification, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_task_to_facility_group_sequential_v2.png" alt="Workflow card Task: Assign the document sequentially to and create a Task/Notification for the facility group Group Name with title, description and priority, notify the group via email, assign a priority of Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Purpose:
 

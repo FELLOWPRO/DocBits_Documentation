@@ -12,7 +12,7 @@
 
 选择与文件内容一致的数字和日期格式，再选择要导入的文档。例如，`1.234,56` 和 `1,234.56` 使用不同的分隔符；`05/06/2026` 这样的日期也必须按所选格式解释。
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-zh.png" alt="中文训练数据上传窗口，可选择金额和日期格式；未选择文件，未导入任何数据。"><figcaption><p>中文训练数据上传窗口，可选择金额和日期格式；未选择文件，未导入任何数据。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-zh.png" alt="中文训练数据上传窗口，可选择金额和日期格式；未选择文件，未导入任何数据。"><figcaption><p>中文训练数据上传窗口，可选择金额和日期格式；未选择文件，未导入任何数据。</p></figcaption></figure>
 
 启动导入前检查所选文件。等待处理完成，并检查错误和分配的文档类型。将示例用于训练前，先纠正分类和数据提取错误。
 

@@ -1,5 +1,23 @@
 # Status dokumentów
 
+## Trzy pytania o status zamiast jednego łańcucha statusu
+
+<figure><img src="../../../.gitbook/assets/process-status-pl-20261028.png" alt="Prawidłowo klasyfikuj status dokumentu: Przetwarzanie, zatwierdzanie i eksport to różne stany."><figcaption><p>Przetwarzanie, zatwierdzanie i eksport to różne stany. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
+
+Dokument może nadal oczekiwać na decyzję biznesową o zatwierdzeniu, nawet jeśli uznawanie zostało zakończone. Przeczytaj wyświetlany status w kontekście etapu przetwarzania i procesu zatwierdzania.
+
+| Pytanie | Znaczenie | Następny krok |
+| --- | --- | --- |
+| **Czy przetwarzanie zostało zakończone?** | OCR, klasyfikacja i ekstrakcja przygotowują dokument do przeglądu. „Gotowy do zatwierdzenia” nie jest zatwierdzeniem biznesowym. | Otwórz dokument, porównaj informacje z oryginałem i edytuj obowiązkowe błędy w polach. |
+| **Czy zakończono zatwierdzanie merytoryczne?** | Zatwierdzenie może mieć kilka poziomów. Wstępne zatwierdzenie nie kończy automatycznie wszystkich etapów. | Sprawdź aktualny poziom, odpowiedzialnego recenzenta i historię zatwierdzeń. |
+| **Czy dokument został przekazany?** | Stan eksportu i informacje zwrotne opisują przekazanie techniczne. Zapisana wartość lub wpis zatwierdzenia nie potwierdzają przetwarzania ERP. | Przeczytaj szczegóły eksportu i jeśli to konieczne, odtwórz proces w systemie docelowym. |
+
+Grafika dzieli te pytania na trzy ścieżki. Nie jest to wyczerpująca lista kodów stanu technicznego i nie ustanawia uniwersalnego porządku. Rzeczywiste przejścia zależą od typu dokumentu, przepływu pracy i ścieżki eksportu.
+
+### Jeśli wystąpią błędy, rozpocznij od odpowiedniego kroku
+
+Otwórz status błędu i przeczytaj wiadomość. Jeżeli brakuje wymaganej wartości, sprawdź ją i skoryguj z oryginałem. Jeśli odbiorca zgłosi błąd eksportu, usuń jego przyczynę przed ponowną próbą. Użyj [Przepływ dokumentów](document-flow.md) do etapów przetwarzania i przewodnika [Zatwierdzenie](../approve-or-reject-invoices.md) do podejmowania decyzji biznesowych.
+
 Statusy przetwarzania wskazują etapy takie jak OCR, klasyfikacja i eksport. **Gotowy do walidacji** oznacza możliwość sprawdzenia dokumentu. Statusy zatwierdzania wskazują oczekiwanie na akceptację. **Eksportowano** oznacza zakończenie eksportu dokumentu. Kliknij status **Błąd**, aby zobaczyć dostępne szczegóły.
 
 Jeśli dostępne są czasy przetwarzania, najedź na status, aby zobaczyć etapy i czas ich trwania. Dokumenty z możliwymi duplikatami mają ikonę duplikatu; otwórz ją, aby porównać powiązane dokumenty.

@@ -1,5 +1,12 @@
 # Erkennung von Duplikaten
 
+## Dubletten erkennen und bewusst entscheiden
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-de-20261028.png" alt="Dubletten erkennen und bewusst entscheiden"><figcaption><p>Dubletten erkennen und bewusst entscheiden</p></figcaption></figure>
+
+DocBits vergleicht die konfigurierten Felder innerhalb des gewählten Zeitraums. Öffnen Sie bei einem Treffer den Dublettenhinweis und vergleichen Sie die Belege, bevor Sie fortfahren oder archivieren. Die Exportblockierung ist eine eigene Einstellung; ein Treffer archiviert einen Beleg nicht automatisch.
+
+
 Mit der **Erkennung von Duplikaten** markieren Sie Dokumente, die innerhalb eines gewählten Zeitraums mit einem anderen Dokument in ausgewählten Feldern übereinstimmen. Die Optionen gehören zu jedem Dokumenttyp.
 
 ## Einstellungen öffnen

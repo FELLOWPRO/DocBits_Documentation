@@ -1,5 +1,12 @@
 # Eingehende E-Mails
 
+## Vom E-Mail-Eingang zum prüfbaren Dokument
+
+<figure><img src="../../../../.gitbook/assets/intro-process-01-email-de-20261028.png" alt="Vom E-Mail-Eingang zum prüfbaren Dokument"><figcaption><p>Vom E-Mail-Eingang zum prüfbaren Dokument</p></figcaption></figure>
+
+Die Grafik zeigt zwei Eingangswege: ein verbundenes Postfach und die Weiterleitung an eine DocBits-Importadresse. Übernommen werden unterstützte Dokumentanhänge. Kontrollieren Sie Absenderregeln, Organisation und Routing sowie anschließend den tatsächlichen Eingang. Eine versendete E-Mail ist noch kein Nachweis eines erfolgreichen Imports.
+
+
 ### Überblick
 
 DocBits kann Dokumente direkt aus E-Mails übernehmen — ohne manuelles Hochladen. Es gibt **zwei Wege**, E-Mail-Dokumente einzuspielen, beide unter **Einstellungen → Dokumentverarbeitung → Import**:

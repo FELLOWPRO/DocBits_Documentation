@@ -1,5 +1,12 @@
 # Export not matched PO lines
 
+## Understand export scope with three purchase order lines
+
+<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-en-20261028.png" alt="Understand export scope with three purchase order lines"><figcaption><p>Understand export scope with three purchase order lines</p></figcaption></figure>
+
+In this example, the purchase order has three lines and only one is matched to an order confirmation line. With “Export Not Matched PO Lines” off, only the matched purchase order line is exported. With the option on, the two unmatched purchase order lines are included as well. This does not create additional matches.
+
+
 ## **Where to Find It**
 
 Go to **Settings → General Settings → Document Types → More Settings → Purchase Order Section → Export Not Matched PO Lines**.\

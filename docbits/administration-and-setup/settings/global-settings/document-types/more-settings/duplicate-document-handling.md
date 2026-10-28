@@ -1,5 +1,12 @@
 # Duplicate Detection
 
+## Detect duplicates and make an informed decision
+
+<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-en-20261028.png" alt="Detect duplicates and make an informed decision"><figcaption><p>Detect duplicates and make an informed decision</p></figcaption></figure>
+
+DocBits compares the configured fields within the selected time window. When a match is found, open the duplicate warning and compare the documents before continuing or archiving. Blocking duplicate exports is a separate setting; a match does not automatically archive a document.
+
+
 
 
 Use **Duplicate Detection** to flag documents that match another document on selected fields within a chosen time period. The options belong to each document type.

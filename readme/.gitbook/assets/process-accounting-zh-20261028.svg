@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">Auto Accounting 的财务主数据</title>
+<desc id="desc">Infor LN 集成的数据路径和检查点。 启用 ION 数据流并不能证明数据已成功接收。Auto Accounting 不代表获准记账，也不能证明已导出至 ERP。</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOBCITS / 流程概述</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">Auto Accounting 的财务主数据</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">Infor LN 集成的数据路径和检查点。</text>
+<rect x="90" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="116" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">01</text>
+<text x="116" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">准备LN</text>
+<text x="116" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">核对公司、会计科目及待</text>
+<text x="116" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">发布的 BOD。</text>
+<polyline points="510,485 541,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="541,485 527.8362615716444,492.19138307906303 527.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="556" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="582" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">02</text>
+<text x="582" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">配置ION</text>
+<text x="582" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">匹配源、过滤器和映射。</text>
+<polyline points="976,485 1007,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1007,485 993.8362615716444,492.19138307906303 993.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="1022" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1048" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">03</text>
+<text x="1048" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">核对接收情况</text>
+<text x="1048" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">证明DocBits中已接受的</text>
+<text x="1048" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">记录。</text>
+<polyline points="1442,485 1473,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1473,485 1459.8362615716444,492.19138307906303 1459.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="1488" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1514" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">04</text>
+<text x="1514" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">验证科目分配</text>
+<text x="1514" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">启用后核对会计科目和维</text>
+<text x="1514" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">度。</text>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">启用 ION 数据流并不能证明数据已成功接收。Auto Accounting 不代表获准记账，也不能证明已导出至 ERP。</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">原理图说明 · 过程和选项取决于您的配置。</text>
+</svg>

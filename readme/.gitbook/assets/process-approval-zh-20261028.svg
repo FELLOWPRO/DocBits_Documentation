@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">批准或拒绝发票</title>
+<desc id="desc">区分数据检查、审批决定和后续传输。 首次批准后可能仍需其他审核人审批。审批记录不能证明已导出至 ERP。</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOBCITS / 流程概述</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">批准或拒绝发票</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">区分数据检查、审批决定和后续传输。</text>
+<rect x="90" y="380" width="440" height="190" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="114" y="427.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">审查文件</text>
+<text x="114" y="482.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">对照原始文档，按业务要求核</text>
+<text x="114" y="524.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">对数据。</text>
+<rect x="650" y="380" width="410" height="190" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="674" y="427.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">决定</text>
+<text x="674" y="482.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">由授权审阅者决定。</text>
+<polyline points="530,475 630,475" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="630,475 616.8362615716444,482.19138307906303 616.8362615716444,467.80861692093697" fill="#126a8a"/>
+<rect x="1260" y="280" width="650" height="175" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1284" y="327.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">批准</text>
+<text x="1284" y="382.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">另一个阶段？下一个授权审稿人。</text>
+<rect x="1260" y="520" width="650" height="175" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1284" y="567.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#1c1d1e">拒绝</text>
+<text x="1284" y="622.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">根据您的流程进行澄清并重新提交。</text>
+<polyline points="1060,475 1150,475 1150,367 1240,367" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1240,367 1226.8362615716444,374.19138307906303 1226.8362615716444,359.80861692093697" fill="#126a8a"/>
+<polyline points="1150,475 1150,607 1240,607" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1240,607 1226.8362615716444,614.191383079063 1226.8362615716444,599.808616920937" fill="#126a8a"/>
+<text x="1260" y="734.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">决定后检查历史记录。</text>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">首次批准后可能仍需其他审核人审批。审批记录不能证明已导出至 ERP。</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">原理图说明 · 过程和选项取决于您的配置。</text>
+</svg>

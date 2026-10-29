@@ -6,7 +6,7 @@ Use as **Configurações** para gerenciar a organização e a forma como os docu
 2. Em **Organização e Acesso**, escolha a área de que precisa, como **Informações da empresa** ou **Usuários**.
 3. Em **Processamento de Documentos**, escolha **Tipos de documentos** para configurar um tipo específico de documento.
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-pt.png" alt="Menu Configurações e tela Informações da empresa em português"><figcaption>Vista atual da Sandbox (idioma da interface: português) com dados de exemplo inventados. Informações da empresa está selecionado; nenhum valor foi alterado.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-pt.png" alt="Visão geral das configurações em português com navegação e links rápidos"><figcaption>Visão geral das configurações em português com o menu de navegação e links rápidos para informações da empresa, usuários, tipos de documentos, importação, exportação e integração e SSO. Nenhuma configuração foi alterada.</figcaption></figure>
 
 Comece pelo guia que corresponde à sua tarefa:
 

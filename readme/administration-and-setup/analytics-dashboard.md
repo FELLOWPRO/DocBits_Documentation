@@ -103,6 +103,16 @@ Analizza qualsiasi periodo, da **7 giorni** fino a un **anno intero**, oppure im
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-it.png" alt="Opzione di periodo personalizzato nella barra dei filtri di analisi."><figcaption><p>Opzione di periodo personalizzato nella barra dei filtri di analisi.</p></figcaption></figure>
 
+### I filtri vengono ricordati
+
+La dashboard salva i filtri e l'intervallo di tempo in questo browser, separatamente per ogni utente e ogni organizzazione. Ri aprendo la dashboard viene ripristinata l'ultima selezione, compreso un intervallo di date personalizzato nel selettore delle date.
+
+Selezionate **Ripristina impostazioni predefinite** in alto a destra nella dashboard per cancellare la selezione salvata: filtri, intervallo di tempo e date personalizzate tornano ai valori predefiniti.
+
+<mark style="color:red;">**Nota**</mark>: la selezione è memorizzata nel browser, non sul server. Non viene sincronizzata con altri dispositivi o browser.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-it.png" alt="Dashboard Analytics nella vista Stato, con la riga dei filtri e il pulsante Ripristina impostazioni predefinite in alto a destra"><figcaption><p>I filtri vengono ripristinati quando si torna alla dashboard. Ripristina impostazioni predefinite li cancella.</p></figcaption></figure>
+
 ## Schede delle fasi del flusso
 
 Ogni scheda rappresenta una fase del flusso in base al **Tipo di flusso** selezionato. Le schede si adattano alla tua selezione — mostrando le fasi del ciclo di vita per *Stato*, i moduli di elaborazione per *Elaborazione*, o i punti di contatto utente per *Interazione dell'utente*.

@@ -6,12 +6,12 @@ Depois de concluir o treinamento ou a correção de uma tabela, é importante **
 
 Após definir todas as colunas e correções:
 
-1. Clique no botão **Salvar regras** na parte superior.
+1. Clique no botão **Salvar regras** abaixo da tabela.
 2. Um contador de regras confirmará quantas regras de extração foram salvas.
 
 Isso garante que o DocBits usará automaticamente o layout treinado na próxima vez que encontrar um documento semelhante.
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-save-rules-pt-20261009.png" alt="Tela de extração de tabelas no modo de treinamento com os botões Salvar, Salvar regras e Excluir regras e um contador de regras igual a 3."><figcaption><p>**Salvar regras** grava as regras; o contador mostra quantas regras existem.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-save-rules-pt-20261009.png" alt="Tela de extração de tabelas no modo de treinamento com os botões Salvar, Salvar regras e Excluir regras e um contador de regras igual a 3."><figcaption><p>Salvar regras grava as regras; o contador mostra quantas regras existem.</p></figcaption></figure>
 
 O botão **Salvar** grava as alterações no documento aberto, enquanto **Salvar regras** armazena o layout para documentos futuros do mesmo fornecedor. Como definir e mapear colunas está descrito em [Definindo Tabelas e Colunas](defining-tables-and-columns.md).
 

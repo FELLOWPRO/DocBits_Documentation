@@ -6,10 +6,6 @@ The third character of `06O123` is the **letter O**. If extraction produces `060
 
 ## Video walkthrough
 
-{% hint style="info" %}
-**Review version:** This corrected English administrator edition is awaiting final voice and visual review.
-{% endhint %}
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-number-ocr-correction-preview-admin/v2/en.mp4" %}
 Mike demonstrates the prefix correction, five preview cases and the saved document result.
 {% endembed %}

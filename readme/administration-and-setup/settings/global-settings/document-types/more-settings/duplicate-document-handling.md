@@ -2,7 +2,7 @@
 
 ## Détectez les doublons et prenez une décision éclairée
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-fr-20261028.png" alt="Détectez les doublons et prenez une décision éclairée"><figcaption><p>Détectez les doublons et prenez une décision éclairée</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-fr-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-fr-light-20261029.png" alt="Détectez les doublons et prenez une décision éclairée"></picture><figcaption><p>Détectez les doublons et prenez une décision éclairée</p></figcaption></figure>
 
 DocBits compare les champs configurés dans la période sélectionnée. Lorsqu'une correspondance est trouvée, ouvrez l’avertissement de doublon et comparez les documents avant de continuer ou d'archiver. Le blocage des exportations en double est un paramètre distinct ; une correspondance n’archive pas automatiquement un document.
 

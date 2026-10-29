@@ -6,7 +6,7 @@
 2. Wählen Sie unter **Organisation & Zugang** den Bereich, den Sie benötigen, z. B. **Unternehmensinformationen** oder **Benutzer**.
 3. Wählen Sie unter **Dokumentenverarbeitung** die Option **Dokumenttypen**, um eine bestimmte Art von Dokument zu konfigurieren.
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-de.png" alt="Deutsches Einstellungen-Menü und Bildschirm Unternehmensinformationen"><figcaption>Aktuelle Sandbox-Ansicht (Oberflächensprache Deutsch) mit erfundenen Beispieldaten. Unternehmensinformationen ist ausgewählt; es wurden keine Werte geändert.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-de.png" alt="Deutschsprachige Einstellungsübersicht mit Navigation und Schnellzugriffen"><figcaption>Deutschsprachige Einstellungsübersicht mit linkem Navigationsmenü und Schnellzugriffen auf Unternehmensinformationen, Benutzer, Dokumenttypen, Import, Export sowie Integration und SSO. Es wurden keine Einstellungen geändert.</figcaption></figure>
 
 Beginnen Sie mit der Anleitung, die zu Ihrer Aufgabe passt:
 

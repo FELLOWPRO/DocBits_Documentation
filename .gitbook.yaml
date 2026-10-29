@@ -1,4 +1,4 @@
-root: ./readme/
+root: ./docbits/
 
 redirects:
     administration-and-setup/setup/watchdog-installation: administration-and-setup/setup/watchdog/watchdog-installation.md

@@ -218,3 +218,15 @@ def test_cli_reports_invalid_ref_without_traceback(checker, repository, capsys):
     output = capsys.readouterr().err
     assert "missing-ref" in output
     assert "Traceback" not in output
+
+
+def test_script_entrypoint_rejects_unpublished_change(repository):
+    repo, base = repository
+    write(repo, "readme/page.md", "# Requires a published counterpart\n")
+    head = commit(repo)
+    result = subprocess.run(
+        [sys.executable, str(SCRIPT), "--repo", str(repo), "--base", base, "--head", head],
+        capture_output=True, text=True,
+    )
+    assert result.returncode == 1
+    assert "docbits/page.md" in result.stderr

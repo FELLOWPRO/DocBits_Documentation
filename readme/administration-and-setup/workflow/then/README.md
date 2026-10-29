@@ -1,6 +1,6 @@
 # Entonces
 
-Una tarjeta **Entonces** le indica a un flujo de trabajo qué hacer después de su activador **Cuando** y cualquier condición **Y**. En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Luego...**. Elija una categoría a la izquierda o escriba un nombre en **Tarjeta de búsqueda**. Seleccione una vista previa de la tarjeta para agregarla, complete los campos que se muestran en la tarjeta y guarde el flujo de trabajo. Desplázate dentro del selector para ver más tarjetas. Seleccione **×** para cerrarlo sin agregar una tarjeta. Consulte [Flujo de trabajo](..) para ver la secuencia completa.
+Una tarjeta **Entonces** le indica a un flujo de trabajo qué hacer después de su activador **Cuando** y cualquier condición **Y**. En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Entonces...**. Elija una categoría a la izquierda o escriba un nombre en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla, complete los campos que se muestran en la tarjeta y guarde el flujo de trabajo. Desplázate dentro del selector para ver más tarjetas. Seleccione **×** para cerrarlo sin agregar una tarjeta. Consulte [Flujo de trabajo](..) para ver la secuencia completa.
 
 Las vistas previas a continuación muestran las acciones disponibles, no las configuraciones completadas. Elija la acción que coincida con el resultado que desea.
 
@@ -42,7 +42,7 @@ Inicie una exportación, exporte con una configuración elegida o ponga en cola 
 
 ## Tarea
 
-Cree una tarea o notificación y asígnela a un usuario o grupo. Ingrese la configuración de título, descripción, prioridad y notificación solicitada por la tarjeta. Algunas tarjetas se asignan secuencialmente. Consulte [Tarea](task)].
+Cree una tarea o notificación y asígnela a un usuario o grupo. Ingrese la configuración de título, descripción, prioridad y notificación solicitada por la tarjeta. Algunas tarjetas se asignan secuencialmente. Consulte [Tarea](task).
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
@@ -52,7 +52,7 @@ Envíe un correo electrónico utilizando una plantilla seleccionada, ya sea a de
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-## tabla
+## Tabla
 
 Cambie entradas o calcule valores en una tabla de documentos. Seleccione la tabla, columnas, operador y columna de resultados solicitada por la tarjeta. Consulte la [Tabla](table).
 
@@ -64,9 +64,9 @@ Asigne el documento a un usuario, grupo, destinatario o suborganización. Alguna
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
-## acción
+## Acción
 
-Ejecute otro flujo de trabajo, envíe una solicitud HTTPS, llame a una API o utilice la tarjeta de cálculo de aumento de costos. Estas acciones pueden afectar a otros sistemas; Pregúntele a su administrador qué punto final y configuración usar. Consulte [Acción](action).
+Ejecute otro flujo de trabajo, envíe una solicitud HTTPS, llame a una API o utilice la tarjeta de cálculo de aumento de costos. Estas acciones pueden afectar a otros sistemas; pregúntele a su administrador qué punto final y configuración usar. Consulte [Acción](action).
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 

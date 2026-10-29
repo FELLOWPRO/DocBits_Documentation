@@ -2,7 +2,7 @@
 
 ## Beispiele vorbereiten, importieren und prüfen
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-de-20261028.png" alt="Beispiele vorbereiten, importieren und prüfen"><figcaption><p>Beispiele vorbereiten, importieren und prüfen</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-de-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-de-light-20261029.png" alt="Beispiele vorbereiten, importieren und prüfen"></picture><figcaption><p>Beispiele vorbereiten, importieren und prüfen</p></figcaption></figure>
 
 Wählen Sie repräsentative Beispielbelege, bereiten Sie die verfügbaren Importoptionen vor und kontrollieren Sie den Importstatus. Erst erfolgreich importierte Beispiele stehen für das weitere Training bereit. Klären Sie Importfehler vor dem nächsten Schritt und halten Sie unabhängige Testbelege vom Trainingsdatensatz getrennt.
 

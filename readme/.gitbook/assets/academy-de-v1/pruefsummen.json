@@ -1,0 +1,15 @@
+{
+  "belege-und-sollwerte.json": "ff971e9b9db42047b89842e62f75b5892d106363e03db79d486e63066075b3bb",
+  "bestellreferenzen.json": "b1ad1a5b8eb0edd4f32b45e2a5f822f8081c6b208db8802fac533c910a4a7310",
+  "konfigurationsreferenz.json": "51a2f36f24e6e965d78d9501d6f333b1d4ba9dd0fd39e9f104c62ef68ff913c5",
+  "rechnung-30-positionen-scan.pdf": "d657f98d67b116afd169029abfd3cd773b15ac68dd46863d7c67d3c64451c2de",
+  "rechnung-30-positionen.pdf": "cf2860b8e83d9084730797cbdaba9cdcc8139c020c787f1a849d8e043cf7a421",
+  "rechnung-30-positionen.xlsx": "6d9e431925a9c2a7b70ee7322e3a5aeeaa142e7a1840ada90e0addd44a415b7b",
+  "rechnung-freigabe.pdf": "0a4cafcd0429f8abf91ddfe4239c842cc0bdad4cf29b36e4c2609e5dcfee8ed6",
+  "rechnung-kostenstellen.pdf": "f19fd115ee24d555b441efeeeee633ee58fbb832f19b7b53cc53fbdd9729ef0c",
+  "rechnung-ohne-bestellung.pdf": "ce0fcb21c790a665d413c5d1d68ea276a0234ebc4b7f650d09902c7f7005c82f",
+  "rechnung-ohne-linien.pdf": "d6e2d863dee464d20ce27f54ebe5c2d75c0da4a1517cc55f3f64b31908f08a23",
+  "rechnung-preisabweichung.pdf": "a820b2f8052b9293ba2f57370e88467447d9775540c8e876ec6cfe356490e09e",
+  "rechnung-rabatt-zuschlag.pdf": "9998987c3cf19e50e7ca7a28ef545e15b4e5cc07157d18889b947a4dfdac8ade",
+  "rechnung-spaltenreihenfolge.pdf": "b39fc72862a8f711a5050fa382e572eb433a8677d6320f20a37e61e0bca9b1fa"
+}

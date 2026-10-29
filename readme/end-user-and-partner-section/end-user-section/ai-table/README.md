@@ -2,6 +2,10 @@
 
 Die **KI Extrahierte Tabelle** ist die Positionstabelle, die DocBits mit KI liest, wenn ein Lieferant keine trainierten Tabellenregeln hat. Sie erscheint im Validierungsbildschirm unterhalb der Kopffelder. Diese Seite erklärt jedes Bedienelement rund um die Tabelle: wie Sie eine falsche Spalte korrigieren, wie Sie der KI Anweisungen geben, wie Sie eine Änderung testen, bevor Sie sie behalten, wie Sie sehen, was die KI getan hat, was der Assistent für Sie tun kann und was nicht, und wer was speichern darf.
 
+## Mit einer Rechnung üben
+
+[DocBits Academy: zehn Tabellenfälle](../../../academy/ki-tabellen.md) · [30 Positionen über drei Seiten](../../../academy/mehrseitige-ki-tabellen.md) · [Zwei Mengenfehler und einen Preisfehler erkennen](../../../academy/dreissig-positionen-abgleichen.md). Zu jeder Übung gibt es Beispieldaten, Sollwerte und Fehlerbehebung.
+
 ## Videoserie
 
 Kurze Videos für den Alltag. Schauen Sie sie der Reihe nach oder springen Sie zu dem, das Sie brauchen.

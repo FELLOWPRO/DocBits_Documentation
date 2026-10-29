@@ -10,6 +10,10 @@ Von OCR und IDP zu Geschäftslogik, Freigaben und Advanced Workflows.
 
 [Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/de-transcript.md) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/de.mp4)
 
+## Neu bei DocBits? Starten Sie mit einem Geschäftsfall
+
+In der [DocBits Academy – Learn by Example](academy/README.md) lernen Sie anhand von Testrechnungen: ohne Bestellung verarbeiten, Preisabweichungen klären, Kostenstellen aufteilen und mehrseitige Tabellen prüfen. [Übungspaket und Voraussetzungen](academy/vorbereitung.md).
+
 Willkommen bei DocBits
 
 Willkommen bei **DocBits**, Ihrer umfassenden Quelle für Dokumentationsstrategien und Einblicke. Bei DocBits stellen wir klare, prägnante und aktuelle Dokumentationsressourcen für [Endanwender](end-user-and-partner-section/end-user-section/), [Administratoren](administration-and-setup/settings/) und [Partner](end-user-and-partner-section/partner-section/) bereit.

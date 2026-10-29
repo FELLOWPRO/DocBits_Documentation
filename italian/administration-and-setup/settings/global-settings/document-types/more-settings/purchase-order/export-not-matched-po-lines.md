@@ -2,7 +2,7 @@
 
 ## Comprendere l'ambito dell'esportazione con tre righe di ordine di acquisto
 
-<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-it-20261028.png" alt="Comprendere l&#x27;ambito dell&#x27;esportazione con tre righe di ordine di acquisto"><figcaption><p>Comprendere l&#x27;ambito dell&#x27;esportazione con tre righe di ordine di acquisto</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../../.gitbook/assets/intro-process-03-po-export-it-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-it-light-20261029.png" alt="Comprendere l&#x27;ambito dell&#x27;esportazione con tre righe di ordine di acquisto"></picture><figcaption><p>Comprendere l&#x27;ambito dell&#x27;esportazione con tre righe di ordine di acquisto</p></figcaption></figure>
 
 In questo esempio, l'ordine di acquisto ha tre righe e solo una è abbinata a una riga di conferma dell'ordine. Con "Export Not Matched PO Lines" disattivato, viene esportata solo la riga dell'ordine di acquisto abbinata. Con l'opzione attivata, vengono incluse anche le due righe dell'ordine di acquisto senza corrispondenza. Ciò non crea corrispondenze aggiuntive.
 

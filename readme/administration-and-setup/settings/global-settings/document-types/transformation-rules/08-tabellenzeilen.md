@@ -9,7 +9,7 @@ Tabelle INVOICE_TABLE · clear_rows → add_row am Ende · POSITION=001, QUANTIT
 1. Geltungsbereich **Tabellenzeilen** und die konkrete Tabelle `INVOICE_TABLE` wählen. Eine passende Lieferantenbedingung begrenzt den vollständigen Neuaufbau.
 2. Zuerst **Alle Zeilen löschen**, danach **Zeile hinzufügen** konfigurieren. Für die neue Zeile Festwerte `POSITION=001`, `QUANTITY=1` und für `NET_AMOUNT` die Quelle `header.total_net_amount` einstellen.
 3. Mit Kopfbetrag `2500.00` und zwei vorhandenen Zeilen testen: Es bleibt genau die neu definierte Gesamtzeile. Auch einen fehlenden Kopfbetrag prüfen, bevor die Regel aktiv wird.
-4. Beim Hinzufügen die Position vor bzw. nach der ersten Zeile vergleichen. Für diese Positionsprobe das vorherige Löschen entfernen oder gesondert testen, sonst gibt es keine vorhandene Zeile als Bezug.
+4. Beim Hinzufügen die Position vor der ersten bzw. nach der letzten Zeile vergleichen. Für diese Positionsprobe das vorherige Löschen entfernen oder gesondert testen, sonst gibt es keine vorhandene Zeile als Bezug.
 5. Die umgekehrte Schrittreihenfolge **Hinzufügen → Löschen** absichtlich als Gegenfall prüfen: Das Ergebnis ist leer. Danach wieder die beabsichtigte Reihenfolge herstellen.
 6. Zweimaliges Speichern prüfen. Hinzufügen ohne vorheriges Löschen kann Zeilen vervielfachen; ein Neuaufbau kann Lieferantenpositionen fachlich unwiederbringlich aus dem Arbeitsergebnis entfernen. Den Bestellabgleich separat abnehmen.
 

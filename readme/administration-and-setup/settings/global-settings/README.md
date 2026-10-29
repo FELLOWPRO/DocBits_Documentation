@@ -6,7 +6,7 @@ Utilizza le **Impostazioni** per gestire l'organizzazione e il modo in cui vengo
 2. In **Organizzazione e accesso**, scegli l'area che ti serve, ad esempio **Informazioni sulla società** o **Utenti**.
 3. In **Elaborazione documenti**, scegli **Tipi di Documento** per configurare un determinato tipo di documento.
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-it.png" alt="Menu Impostazioni e schermata Informazioni sulla società in italiano"><figcaption>Vista attuale della Sandbox (lingua dell'interfaccia: italiano) con dati di esempio inventati. Informazioni sulla società è selezionata; non è stato modificato alcun valore.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-it.png" alt="Panoramica delle impostazioni in italiano con navigazione e collegamenti rapidi"><figcaption>Panoramica delle impostazioni in italiano con il menu di navigazione e i collegamenti rapidi a Informazioni sulla società, Utenti, Tipi di Documento, Importazione, Esportazione e Integrazione e SSO. Non è stata modificata alcuna impostazione.</figcaption></figure>
 
 Inizia dalla guida che corrisponde alla tua attività:
 

@@ -68,6 +68,7 @@
     * [Fehlerbehebung](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
     * [Tastenkürzel](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
   * [Aufgaben](end-user-and-partner-section/end-user-section/tasks.md)
+  * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Avis-Dashboard](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Dashboard für Bestellungen](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
   * [Dashboard für Rechnungen](end-user-and-partner-section/end-user-section/invoice-dashboard.md)

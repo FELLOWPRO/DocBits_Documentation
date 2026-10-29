@@ -49,6 +49,8 @@ Die folgenden Details sind enthalten:
   * **Nur Admin und Zuweisung**: Nur Benutzer mit Administratorrechten und der zugewiesene Benutzer können das Dokument neu starten.
   * **Alle Benutzer**: Alle Benutzer, die die erforderlichen [Berechtigungen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) erhalten haben, können Dokumente neu starten.
 
+* **Ausstehender Eingabezugriff (Tage)**: Legt fest, wie viele Tage eine Person, die im Aktivitätsprotokoll um eine Eingabe gebeten wurde, das Dokument schreibgeschützt öffnen kann; danach funktioniert der Link nicht mehr. Standard sind 14 Tage, und der Zugriff endet auch, sobald das Dokument weitergeht. Siehe [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
+
 <figure><img src="../../../../.gitbook/assets/dashboard-settings_2-de.png" alt="Die Optionen Zuweisen an und Neustart im Abschnitt Aktion"><figcaption><p>Der Abschnitt Aktion steuert, wer Dokumente zuweisen und neu starten darf.</p></figcaption></figure>
 
 ## **Filter**

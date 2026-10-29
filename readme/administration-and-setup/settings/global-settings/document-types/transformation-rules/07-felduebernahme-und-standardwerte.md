@@ -50,3 +50,11 @@ Diese Werte wurden serverseitig als trockener Test geprüft. Ein solcher Test ve
 Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein bereits verarbeitetes Ergebnis. Wiederholen Sie den Dokument-Speichervorgang. Prüfen Sie PO-Abgleich und ERP-Empfang zusätzlich, wenn sie zum fachlichen Ziel gehören.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-default-api-de-20261028.png" alt="Verifizierte Serverergebnisse der Schulungsprüfung"><figcaption><p>Tatsächliche Ergebnisse am isolierten Schulungsbeispiel, als Protokollgrafik dargestellt. Dies ist keine nachgezeichnete Editor-Oberfläche.</p></figcaption></figure>
+
+## Videoanleitung
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v1/de.mp4" %}
+Felder übernehmen, Festwerte, Leeren und Standardwerte – Konfiguration, Beispiele und Gegenfälle.
+{% endembed %}
+
+[Video mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v1/de.html). Die fachliche und vollständige Hörprüfung dieser Reviewfassung steht noch aus.

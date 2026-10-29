@@ -43,3 +43,11 @@ Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein ber
 ## Gespeicherte Wirkung am Übungsbeleg
 
 <figure><img src="../../../../../.gitbook/assets/transformation-document-persisted-de-20261028.png" alt="Originalwert und dauerhaft umgeschriebenes Ergebnis am fiktiven Rechnungsbeleg"><figcaption><p>Der vorbereitete Originalwert bleibt erhalten; Ausgabe zeigt INV-4711. Zwei native Speichervorgänge, erneutes Laden und eine separate Serverabfrage bestätigen das stabile Ergebnis. Dies belegt die Regelwirkung auf vorbereiteten Testwerten, nicht die Genauigkeit einer automatischen Extraktion.</p></figcaption></figure>
+
+## Videoanleitung
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v1/de.mp4" %}
+Grundlagen, Geltungsbereiche und sichere Tests – Konfiguration, Beispiele und Gegenfälle.
+{% endembed %}
+
+[Video mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v1/de.html). Die fachliche und vollständige Hörprüfung dieser Reviewfassung steht noch aus.

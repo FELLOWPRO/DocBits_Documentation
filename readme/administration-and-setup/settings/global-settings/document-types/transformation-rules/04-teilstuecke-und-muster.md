@@ -47,3 +47,11 @@ Diese Werte wurden serverseitig als trockener Test geprüft. Ein solcher Test ve
 ## Abnahme
 
 Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein bereits verarbeitetes Ergebnis. Wiederholen Sie den Dokument-Speichervorgang. Prüfen Sie PO-Abgleich und ERP-Empfang zusätzlich, wenn sie zum fachlichen Ziel gehören.
+
+## Videoanleitung
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-04-substrings-and-patterns-preview-admin/v1/de.mp4" %}
+Teilstücke und Muster: Ausschneiden, Extrahieren, Ersetzen – Konfiguration, Beispiele und Gegenfälle.
+{% endembed %}
+
+[Video mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-04-substrings-and-patterns-preview-admin/v1/de.html). Die fachliche und vollständige Hörprüfung dieser Reviewfassung steht noch aus.

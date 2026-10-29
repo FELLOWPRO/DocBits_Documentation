@@ -45,3 +45,11 @@ Diese Werte wurden serverseitig als trockener Test geprüft. Ein solcher Test ve
 Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein bereits verarbeitetes Ergebnis. Wiederholen Sie den Dokument-Speichervorgang. Prüfen Sie PO-Abgleich und ERP-Empfang zusätzlich, wenn sie zum fachlichen Ziel gehören.
 
 Im geprüften Stand unterscheiden sich Zahlenvorschau und Server bei Tausendertrennzeichen. Die Tabelle nennt den tatsächlichen Serverwert.
+
+## Videoanleitung
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-06-dates-and-numbers-preview-admin/v1/de.mp4" %}
+Datum und Zahlen richtig formatieren – Konfiguration, Beispiele und Gegenfälle.
+{% endembed %}
+
+[Video mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-06-dates-and-numbers-preview-admin/v1/de.html). Die fachliche und vollständige Hörprüfung dieser Reviewfassung steht noch aus.

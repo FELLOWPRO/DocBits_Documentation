@@ -37,3 +37,11 @@ Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein ber
 Im gespeicherten Integrationstest verbrauchte eine nicht passende Bedingung die Einmalausführung nicht. Beim ersten passenden Speichern wurde EINMAL geschrieben. Beim zweiten passenden Speichern blieb der vorbereitete Operatorwert erhalten, und der gespeicherte Anwendungsnachweis war weiterhin gesetzt. Der Testbeleg wurde anschließend wiederhergestellt. Der trockene Servertest kann weiterhin ein hypothetisches Ergebnis berechnen; prüfen Sie deshalb zusätzlich seinen Hinweis `already_applied` und das tatsächlich gespeicherte Dokument.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-routing-phases-de-20261028.png" alt="Deutsche Phasenanzeige bei kombinierter Einmal- und Lookup-Option"><figcaption><p>Einmalausführung und zusätzliche Lookup-Phase gemeinsam im echten Editor. Die nicht passende Beispielbedingung wird übersprungen; interne Zielkennungen sind ausgeblendet. Die Optionen sind hier eine ungespeicherte Vorschau.</p></figcaption></figure>
+
+## Videoanleitung
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-09-routing-and-execution-preview-admin/v1/de.mp4" %}
+Routing, Reihenfolge, Stammdaten und Wiederholungen – Konfiguration, Beispiele und Gegenfälle.
+{% endembed %}
+
+[Video mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-09-routing-and-execution-preview-admin/v1/de.html). Die fachliche und vollständige Hörprüfung dieser Reviewfassung steht noch aus.

@@ -2,7 +2,7 @@
 
 ## Del correo electrónico entrante a un documento listo para revisión
 
-<figure><img src="../../../../.gitbook/assets/intro-process-01-email-es-20261028.png" alt="Del correo electrónico entrante a un documento listo para revisión"><figcaption><p>Del correo electrónico entrante a un documento listo para revisión</p></figcaption></figure>
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-es-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-es-light-20261029.png" alt="Del correo electrónico entrante a un documento listo para revisión"></picture><figcaption><p>Del correo electrónico entrante a un documento listo para revisión</p></figcaption></figure>
 
 La ilustración muestra dos formas de entrada: un buzón conectado y el reenvío a una dirección de importación DocBits. Se importan los documentos adjuntos admitidos. Verifique las restricciones, la organización y el enrutamiento del remitente, luego verifique la importación real. Enviar un correo electrónico no prueba que sus documentos se hayan importado correctamente.
 

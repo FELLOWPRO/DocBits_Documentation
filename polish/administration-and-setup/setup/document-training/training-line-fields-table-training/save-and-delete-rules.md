@@ -6,7 +6,7 @@ Po zakończeniu szkolenia lub korekty tabeli ważne jest **zapisanie swoich regu
 
 Po zdefiniowaniu wszystkich kolumn i korekt:
 
-1. Kliknij przycisk **Zapisz zasady** na górze.
+1. Kliknij przycisk **Zapisz zasady** pod tabelą.
 2. Licznik reguł potwierdzi, ile reguł ekstrakcji zostało zapisanych.
 
 To zapewnia, że DocBits automatycznie użyje Twojego przeszkolonego układu, gdy następnym razem zobaczy podobny dokument.

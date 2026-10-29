@@ -4,6 +4,14 @@
 How to Create a Decision Tree in DocBits (Conditions, Policies, Testing & Export)
 {% endembed %}
 
+## Video walkthrough
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/en.mp4" %}
+
+*2:22 min · Product UI in English · AI-generated voice and intro scene*
+
+[Captions (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/en.vtt) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/en.mp4)
+
 ## Overview
 
 Decision Trees are a powerful feature that allows for the automated routing and decision-making process based on predefined rules. This feature is especially useful in complex environments where various conditions need to be evaluated to determine the correct course of action, such as assigning prices, determining quantities, or routing documents.
@@ -119,3 +127,31 @@ The Decision Tree Policy defines how multiple rules within a decision tree are p
 * **Approval workflows** — route invoices to different approvers based on amount thresholds (for example, amounts over 10,000 require manager approval).
 * **Validation rules** — automatically validate field values and flag documents that do not meet the configured criteria.
 * **Sequential assignment** — assign documents to users in a specific order based on conditions.
+
+## Screenshots
+
+<figure><img src="../../../../.gitbook/assets/decision-trees-list-en.png" alt="List of decision trees"><figcaption><p>List of decision trees</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-create-name-en.png" alt="Create a tree: enter the name"><figcaption><p>Create a tree: enter the name</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-create-doctype-en.png" alt="Create a tree: choose the document type"><figcaption><p>Create a tree: choose the document type</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-designer-empty-en.png" alt="Empty designer with one rule row"><figcaption><p>Empty designer with one rule row</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-source-en.png" alt="Rule: choose the source"><figcaption><p>Rule: choose the source</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-field-en.png" alt="Rule: choose the document field"><figcaption><p>Rule: choose the document field</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-operator-en.png" alt="Rule: choose the operator"><figcaption><p>Rule: choose the operator</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-rule-en.png" alt="Rule: enter the comparison value"><figcaption><p>Rule: enter the comparison value</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-policy-en.png" alt="Choose the tree policy"><figcaption><p>Choose the tree policy</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-return-type-en.png" alt="Result: choose the return type"><figcaption><p>Result: choose the return type</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-result-en.png" alt="Result: enter the return value"><figcaption><p>Result: enter the return value</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-test-input-en.png" alt="Test the tree with a sample value"><figcaption><p>Test the tree with a sample value</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-test-result-en.png" alt="Test result: number of matching rows"><figcaption><p>Test result: number of matching rows</p></figcaption></figure>

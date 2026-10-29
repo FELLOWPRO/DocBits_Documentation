@@ -49,6 +49,8 @@ De volgende details zijn inbegrepen:
   * **Alleen Admin en Toegewezen**: Alleen gebruikers met Admin-rechten en de toegewezen gebruiker kunnen het document opnieuw starten.
   * **Alle gebruikers**: Alle gebruikers die de nodige [machtigingen](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) hebben gekregen, kunnen documenten opnieuw starten.
 
+* **In afwachting van invoertoegang (dagen)**: stelt in hoeveel dagen iemand die in het activiteitenlogboek om invoer is gevraagd het document alleen-lezen kan openen; daarna werkt de link niet meer. De standaardwaarde is 14 dagen en de toegang eindigt ook zodra het document verdergaat. Zie [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
+
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filters**

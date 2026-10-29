@@ -288,7 +288,7 @@
         * [Peppol BIS Billing 3.0](administration-and-setup/settings/global-settings/document-types/edi/peppol-bis-billing-3.0/README.md)
           * [Archivo de Transformación y Mapeo](administration-and-setup/settings/global-settings/document-types/edi/peppol-bis-billing-3.0/transformation-file-and-mapping.md)
         * [Faktura](administration-and-setup/settings/global-settings/document-types/edi/faktura.md)
-        * [ZUGFeRD Feldzuordnung Überblick](administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)
+        * [Descripción general de la asignación de campos de ZUGFeRD](administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)
           * [Configuración de ZUGFeRD](administration-and-setup/settings/global-settings/document-types/edi/zugferd/configuration.md)
           * [Mapeo de campos de ZUGFeRD 1.0](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-1-0.md)
           * [Mapeo de campos de ZUGFeRD 2.0](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-0.md)

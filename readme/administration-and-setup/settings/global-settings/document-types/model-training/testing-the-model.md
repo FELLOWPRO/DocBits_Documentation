@@ -2,7 +2,7 @@
 
 ## Évaluez avec des documents de test indépendants
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-fr-20261028.png" alt="Évaluez avec des documents de test indépendants"><figcaption><p>Évaluez avec des documents de test indépendants</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-05-modelltest-fr-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-fr-light-20261029.png" alt="Évaluez avec des documents de test indépendants"></picture><figcaption><p>Évaluez avec des documents de test indépendants</p></figcaption></figure>
 
 Les données d’entraînement et les documents de test servent à des fins différentes. Pour les documents de test indépendants, définissez les types de documents et les valeurs de champ attendus, puis comparez-les aux prédictions. Enregistrez la version du modèle, l'échantillon, les écarts et les défaillances techniques. Apportez des améliorations ciblées et répétez le test avec le même protocole d’évaluation. Les valeurs indiquées sont un exemple et non une mesure de précision.
 

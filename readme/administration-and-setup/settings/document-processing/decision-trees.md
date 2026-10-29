@@ -4,6 +4,14 @@
 So erstellen Sie einen Entscheidungsbaum in DocBits (Bedingungen, Policies, Testen & Export)
 {% endembed %}
 
+## Video-Anleitung
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/de.mp4" %}
+
+*2:05 Min. · Produktoberfläche auf Deutsch · Stimme und Einstiegsszene KI-generiert*
+
+[Untertitel (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/de.vtt) · [Video herunterladen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/de.mp4)
+
 ## Überblick
 
 Entscheidungsbäume sind eine leistungsstarke Funktion, die eine automatisierte Weiterleitung und Entscheidungsfindung auf Basis vordefinierter Regeln ermöglicht. Diese Funktion ist besonders nützlich in komplexen Umgebungen, in denen verschiedene Bedingungen ausgewertet werden müssen, um die richtige Vorgehensweise zu bestimmen, etwa das Zuweisen von Preisen, das Ermitteln von Mengen oder das Weiterleiten von Dokumenten.
@@ -120,3 +128,31 @@ Der Entscheidungsbaum-Designer enthält eine Testfunktion, um die Logik der konf
 * **Genehmigungs-Workflows** — Rechnungen je nach Betragsschwellen an verschiedene Genehmiger weiterleiten (zum Beispiel erfordern Beträge über 10.000 die Genehmigung durch einen Manager).
 * **Validierungsregeln** — Feldwerte automatisch validieren und Dokumente markieren, die die konfigurierten Kriterien nicht erfüllen.
 * **Sequenzielle Zuweisung** — Dokumente auf Basis von Bedingungen Benutzern in einer bestimmten Reihenfolge zuweisen.
+
+## Bildschirmfotos
+
+<figure><img src="../../../.gitbook/assets/decision-trees-list-de.png" alt="Liste der Entscheidungsbäume"><figcaption><p>Liste der Entscheidungsbäume</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-name-de.png" alt="Baum erstellen: Namen eingeben"><figcaption><p>Baum erstellen: Namen eingeben</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-doctype-de.png" alt="Baum erstellen: Dokumenttyp wählen"><figcaption><p>Baum erstellen: Dokumenttyp wählen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-designer-empty-de.png" alt="Leerer Designer mit einer Regelzeile"><figcaption><p>Leerer Designer mit einer Regelzeile</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-source-de.png" alt="Regel: Quelle wählen"><figcaption><p>Regel: Quelle wählen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-field-de.png" alt="Regel: Dokumentfeld wählen"><figcaption><p>Regel: Dokumentfeld wählen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-operator-de.png" alt="Regel: Operator wählen"><figcaption><p>Regel: Operator wählen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-rule-de.png" alt="Regel: Vergleichswert eingeben"><figcaption><p>Regel: Vergleichswert eingeben</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-policy-de.png" alt="Policy des Baums wählen"><figcaption><p>Policy des Baums wählen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-return-type-de.png" alt="Ergebnis: Rückgabeart wählen"><figcaption><p>Ergebnis: Rückgabeart wählen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-result-de.png" alt="Ergebnis: Rückgabewert eingeben"><figcaption><p>Ergebnis: Rückgabewert eingeben</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-input-de.png" alt="Baum mit einem Beispielwert testen"><figcaption><p>Baum mit einem Beispielwert testen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-result-de.png" alt="Testergebnis: Anzahl übereinstimmender Zeilen"><figcaption><p>Testergebnis: Anzahl übereinstimmender Zeilen</p></figcaption></figure>

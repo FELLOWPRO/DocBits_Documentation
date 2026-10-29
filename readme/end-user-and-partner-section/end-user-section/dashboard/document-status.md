@@ -22,6 +22,8 @@ Gli stati di elaborazione indicano passaggi come OCR, classificazione o esportaz
 
 Se sono disponibili i tempi di elaborazione, passa il puntatore sullo stato per vedere le fasi e la loro durata. Per i documenti con possibili duplicati compare un’icona: aprila per confrontare i documenti correlati.
 
+Un documento può anche attendere la risposta di un collega. In quel caso mostra lo stato **Pending Input** e resta fuori dalla coda attiva finché la persona interpellata non ha risposto e la persona assegnata non chiude la richiesta. Vedi [Pending Input](../pending-input.md).
+
 Apri una riga per lavorare nella schermata di convalida. Il menu delle azioni offre le operazioni consentite, come assegnazione, download, cronologia o riavvio dell’elaborazione. Le varianti di download dipendono dal documento e possono includere annotazioni o formati di fattura elettronica.
 
 Seleziona più documenti con le caselle e apri il menu nell’intestazione per le azioni collettive consentite: assegnazione, unione, riavvio, riavvio dell’esportazione o eliminazione. Controlla selezione e conferme. Queste azioni possono modificare i documenti; salvare una vista cambia solo la presentazione dell’elenco.

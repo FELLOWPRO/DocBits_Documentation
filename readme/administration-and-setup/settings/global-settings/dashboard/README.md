@@ -49,6 +49,8 @@ Sono inclusi i seguenti dettagli:
   * **Solo Admin e Assegnatario**: Solo gli utenti con privilegi di Admin e l'utente assegnato possono riavviare il documento.
   * **Tutti gli Utenti**: Tutti gli utenti a cui sono state concesse le necessarie [autorizzazioni](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) possono riavviare i documenti.
 
+* **Accesso ai dati in sospeso (giorni)**: stabilisce per quanti giorni la persona a cui è stata chiesta un'informazione nel flusso di attività può aprire il documento in sola lettura; dopo, il link non funziona più. Il valore predefinito è 14 giorni e l'accesso termina anche appena il documento prosegue. Vedi [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
+
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
 
 ## **Filtri**

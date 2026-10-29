@@ -42,6 +42,16 @@ Five unusual invoice layouts that DocBits reads right without any help, and what
 
 How the Assistant helps with the AI table, how to suggest an improvement, and what only admins can change.
 
+## Administrator video: change a column
+
+**Review version 2 · English · 3 minutes 11 seconds.** This administrator video is available for review; final approval is pending.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-change-column-review-preview-admin/v1/en.mp4" %}
+
+Correct an AI-table column mapping, save and reopen the invoice, then verify the saved layout training on a new invoice. The film also shows why a mapping correction does not resolve missing price bases, discounts or other validation warnings.
+
+[Review with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-change-column-review-preview-admin/v1/en.html).
+
 ## When you get the AI table
 
 * An admin has switched on **AI Table extraction** (Settings → Document Processing → Classification and Extraction, see [Settings for admins](./#settings-for-admins)). If it is off, the table area shows _AI Table will display here. Enable in …_.

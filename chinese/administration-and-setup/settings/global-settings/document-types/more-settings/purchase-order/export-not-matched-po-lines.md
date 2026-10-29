@@ -2,7 +2,7 @@
 
 ## 通过三个采购订单行了解导出范围
 
-<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-zh-20261028.png" alt="通过三个采购订单行了解导出范围"><figcaption><p>通过三个采购订单行了解导出范围</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../../.gitbook/assets/intro-process-03-po-export-zh-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-zh-light-20261029.png" alt="通过三个采购订单行了解导出范围"></picture><figcaption><p>通过三个采购订单行了解导出范围</p></figcaption></figure>
 
 本例中，采购订单有三行，只有一行与订单确认单的某一行匹配。关闭“Export Not Matched PO Lines”时，仅导出已匹配行。开启该选项时，还会包含另外两个未匹配行。该设置不会创建新的匹配关系。
 

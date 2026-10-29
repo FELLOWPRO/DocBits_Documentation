@@ -6,7 +6,7 @@ Una volta completato l'addestramento o la correzione di una tabella, è importan
 
 Dopo aver definito tutte le colonne e le correzioni:
 
-1. Fare clic sul pulsante **Salva le regole** in alto.
+1. Fare clic sul pulsante **Salva le regole** sotto la tabella.
 2. Un contatore delle regole conferma quante regole di estrazione sono state salvate.
 
 In questo modo DocBits utilizzerà automaticamente il layout addestrato la prossima volta che riceve un documento simile.

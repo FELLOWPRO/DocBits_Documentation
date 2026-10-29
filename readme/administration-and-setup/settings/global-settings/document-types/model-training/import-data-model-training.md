@@ -2,7 +2,7 @@
 
 ## Przygotuj, importuj i sprawdzaj przykładowe dokumenty
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pl-20261028.png" alt="Przygotuj, importuj i sprawdzaj przykładowe dokumenty"><figcaption><p>Przygotuj, importuj i sprawdzaj przykładowe dokumenty</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pl-light-20261029.png" alt="Przygotuj, importuj i sprawdzaj przykładowe dokumenty"></picture><figcaption><p>Przygotuj, importuj i sprawdzaj przykładowe dokumenty</p></figcaption></figure>
 
 Wybierz reprezentatywne przykładowe dokumenty, przygotuj dostępne opcje importu i sprawdź status importu. Tylko pomyślnie zaimportowane próbki są gotowe do dalszego treningu modelu. Rozwiąż błędy importu przed następnym krokiem i przechowuj niezależne dokumenty testowe oddzielnie od zbioru danych treningowych.
 

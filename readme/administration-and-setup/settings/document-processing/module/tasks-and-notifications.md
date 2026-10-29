@@ -6,27 +6,26 @@ L'impostazione **Attività e notifiche** (Tasks & Notifications) attiva la gesti
 
 Questa impostazione è **disattivata per impostazione predefinita**. Quando è attivata, sotto di essa compaiono altre quattro opzioni:
 
-* **Cruscotto Conteggio attività**: mostra nel cruscotto quali documenti hanno attività aperte.
+* **Conteggio attività nel cruscotto**: mostra nel cruscotto quali documenti hanno attività aperte.
 * **Consenti il filtro "Tutti" per gli utenti non amministratori**: permette agli utenti che non sono amministratori di vedere tutte le attività.
-* **Eliminazione attività non amministrative**: stabilisce quali attività possono eliminare gli utenti che non sono amministratori.
-* **Completamento delle attività non amministrative**: stabilisce quali attività possono chiudere gli utenti che non sono amministratori.
+* **Eliminazione attività da parte di non amministratori**: stabilisce quali attività possono eliminare gli utenti che non sono amministratori.
+* **Completamento attività da parte di non amministratori**: stabilisce quali attività possono chiudere gli utenti che non sono amministratori.
 
 Queste opzioni non limitano mai gli amministratori dell'organizzazione.
 
 ### Cosa fa?
 
 * **Attivata** — Le funzioni Attività e notifiche diventano disponibili in DocBits. Gli utenti possono assegnare attività, monitorarne lo stato e ricevere notifiche quando qualcosa richiede la loro attenzione.
-* **Disattivata** — L'assegnazione delle attività e le notifiche correlate vengono disattivate. La disattivazione disattiva anche **Cruscotto Conteggio attività**.
+* **Disattivata** — L'assegnazione delle attività e le notifiche correlate vengono disattivate. La disattivazione disattiva anche **Conteggio attività nel cruscotto**.
 
-### Cruscotto Conteggio attività
-
-L'opzione **Cruscotto Conteggio attività** stabilisce se il cruscotto indica quali documenti hanno attività aperte. Non si tratta di un contatore complessivo: l'indicazione compare per ogni singolo documento.
+### Conteggio attività nel cruscotto
+L'opzione **Conteggio attività nel cruscotto** stabilisce se il cruscotto indica quali documenti hanno attività aperte. Non si tratta di un contatore complessivo: l'indicazione compare per ogni singolo documento.
 
 * **Attivata** — Un documento con attività nello stato **Aperto** o **In corso** mostra un'icona delle attività nell'elenco del cruscotto. Passando il mouse sopra l'icona viene mostrato quante attività aperte ha il documento, ad esempio "2 Attività aperte". Le attività completate, rifiutate o eliminate non vengono conteggiate.
 * **Disattivata** — L'icona viene nascosta. Le attività continuano a funzionare normalmente.
 
 {% hint style="info" %}
-**Cruscotto Conteggio attività** dipende da **Attività e notifiche**. Se disattivi Attività e notifiche, viene disattivata anche l'indicazione delle attività nel cruscotto.
+**Conteggio attività nel cruscotto** dipende da **Attività e notifiche**. Se disattivi Attività e notifiche, viene disattivata anche l'indicazione delle attività nel cruscotto.
 {% endhint %}
 
 ### Consenti il filtro "Tutti" per gli utenti non amministratori
@@ -36,26 +35,24 @@ La panoramica delle attività ha un filtro **Assegnato a** con le opzioni **Tutt
 * **Attivata** — Anche gli utenti che non sono amministratori possono scegliere **Tutti** e vedere tutte le attività dell'organizzazione.
 * **Disattivata** (predefinito) — Gli utenti che non sono amministratori dispongono solo di **Assegnato a me**, quindi la panoramica mostra le attività assegnate a loro.
 
-### Eliminazione attività non amministrative
-
-**Eliminazione attività non amministrative** stabilisce quali attività e notifiche possono eliminare gli utenti che non sono amministratori. Nonostante l'etichetta, l'opzione non riguarda un tipo di attività, ma gli utenti senza diritti di amministratore. Gli amministratori possono sempre eliminare tutte le attività.
+### Eliminazione attività da parte di non amministratori
+**Eliminazione attività da parte di non amministratori** stabilisce quali attività e notifiche possono eliminare gli utenti che non sono amministratori. Gli amministratori possono sempre eliminare tutte le attività.
 
 | Opzione | Gli utenti non amministratori possono eliminare |
 | --- | --- |
-| **None** | Nessuna attività. |
-| **Attività create soltanto** | Le attività che hanno creato. |
-| **Compiti creati e assegnati** | Le attività che hanno creato e quelle assegnate a loro o a uno dei loro gruppi. Questa regola vale finché l'opzione non è mai stata modificata. |
-| **Tutti i compiti** | Tutte le attività. |
+| **Nessuna** | Nessuna attività. |
+| **Solo attività create** | Le attività che hanno creato. |
+| **Attività create e assegnate** | Le attività che hanno creato e quelle assegnate a loro o a uno dei loro gruppi. Questa regola vale finché l'opzione non è mai stata modificata. |
+| **Tutte le attività** | Tutte le attività. |
 
-Gli utenti possono sempre eliminare le attività che hanno creato, tranne con **None**. Un'attività non assegnata a nessuno può quindi essere eliminata solo dall'utente che l'ha creata, dagli amministratori o con **Tutti i compiti**. Un'attività di cui non è registrato chi l'ha creata, ad esempio una creata dal sistema, può essere eliminata solo dagli utenti a cui è assegnata (con **Compiti creati e assegnati**), dagli amministratori o con **Tutti i compiti**.
+Gli utenti possono sempre eliminare le attività che hanno creato, tranne con **Nessuna**. Un'attività non assegnata a nessuno può quindi essere eliminata solo dall'utente che l'ha creata, dagli amministratori o con **Tutte le attività**. Un'attività di cui non è registrato chi l'ha creata, ad esempio una creata dal sistema, può essere eliminata solo dagli utenti a cui è assegnata (con **Attività create e assegnate**), dagli amministratori o con **Tutte le attività**.
 
 {% hint style="warning" %}
-Eliminare un'attività la rimuove dall'elenco delle attività senza che venga presa una decisione. Se le attività devono essere chiuse solo tramite una decisione, imposta **Eliminazione attività non amministrative** su **None** e **Completamento delle attività non amministrative** (vedi sotto) su **Solo per amministratori**.
+Eliminare un'attività la rimuove dall'elenco delle attività senza che venga presa una decisione. Se le attività devono essere chiuse solo tramite una decisione, imposta **Eliminazione attività da parte di non amministratori** su **Nessuna** e **Completamento attività da parte di non amministratori** (vedi sotto) su **Solo per amministratori**.
 {% endhint %}
 
-### Completamento delle attività non amministrative
-
-**Completamento delle attività non amministrative** stabilisce quali utenti non amministratori possono chiudere un'attività, cioè impostarla su **Fatto** o **Rifiutato**. Anche qui l'etichetta si riferisce agli utenti che non sono amministratori, non a un tipo di attività. Gli amministratori possono sempre chiudere le attività, qualunque sia l'opzione selezionata.
+### Completamento attività da parte di non amministratori
+**Completamento attività da parte di non amministratori** stabilisce quali utenti non amministratori possono chiudere un'attività, cioè impostarla su **Fatto** o **Rifiutato**. Gli amministratori possono sempre chiudere le attività, qualunque sia l'opzione selezionata.
 
 | Opzione | Chi può chiudere un'attività |
 | --- | --- |
@@ -90,7 +87,7 @@ Con **Comportamento predefinito**, le attività aperte restano aperte quando un 
 
 * **Responsabilità chiare**: I documenti possono essere assegnati alla persona giusta invece di affidarsi alle e-mail.
 * **Niente viene dimenticato**: Le notifiche ricordano agli utenti i documenti che richiedono un loro intervento.
-* **Lavoro aperto a colpo d'occhio**: Con Cruscotto Conteggio attività, il cruscotto mostra quali documenti hanno ancora attività aperte.
+* **Lavoro aperto a colpo d'occhio**: Con Conteggio attività nel cruscotto, il cruscotto mostra quali documenti hanno ancora attività aperte.
 * **Decisioni tracciabili**: Con le opzioni di eliminazione e completamento, le attività escono dalla coda solo tramite una decisione o un amministratore.
 
 ### Come usarla
@@ -100,16 +97,16 @@ Con **Comportamento predefinito**, le attività aperte restano aperte quando un 
 3. Seleziona **Modulo**.
 4. Apri la sezione **Tipo di documento**.
 5. Attiva **Attività e notifiche**.
-6. (Facoltativo) Attiva **Cruscotto Conteggio attività** per mostrare l'icona delle attività nel cruscotto.
+6. (Facoltativo) Attiva **Conteggio attività nel cruscotto** per mostrare l'icona delle attività nel cruscotto.
 7. (Facoltativo) Attiva **Consenti il filtro "Tutti" per gli utenti non amministratori** se tutti gli utenti devono vedere tutte le attività.
-8. (Facoltativo) Scegli in **Eliminazione attività non amministrative** quali attività possono eliminare gli utenti.
-9. (Facoltativo) Scegli in **Completamento delle attività non amministrative** chi può chiudere le attività.
+8. (Facoltativo) Scegli in **Eliminazione attività da parte di non amministratori** quali attività possono eliminare gli utenti.
+9. (Facoltativo) Scegli in **Completamento attività da parte di non amministratori** chi può chiudere le attività.
 
 Le opzioni di eliminazione e completamento vengono salvate non appena scegli un valore.
 
 ### Quando usare questa funzione
 
 * **Team che condividono il lavoro sui documenti**: Attivala quando più persone validano o approvano documenti e devono passarsi il lavoro a vicenda.
-* **Visibilità del carico di lavoro**: Attiva anche Cruscotto Conteggio attività quando il team deve vedere nel cruscotto quali documenti hanno ancora attività aperte.
-* **Attività che solo un amministratore o una decisione devono chiudere**: Imposta **Completamento delle attività non amministrative** su **Solo per amministratori** o **Amministratori e utenti assegnati**, ed **Eliminazione attività non amministrative** su **None**, quando gli utenti non devono rimuovere attività che non sono state effettivamente svolte.
+* **Visibilità del carico di lavoro**: Attiva anche Conteggio attività nel cruscotto quando il team deve vedere nel cruscotto quali documenti hanno ancora attività aperte.
+* **Attività che solo un amministratore o una decisione devono chiudere**: Imposta **Completamento attività da parte di non amministratori** su **Solo per amministratori** o **Amministratori e utenti assegnati**, ed **Eliminazione attività da parte di non amministratori** su **Nessuna**, quando gli utenti non devono rimuovere attività che non sono state effettivamente svolte.
 * **Configurazioni a utente singolo o completamente automatizzate**: Puoi lasciarla disattivata se nessuno deve assegnare documenti o monitorare attività.

@@ -2,7 +2,7 @@
 
 ## 准备、导入并检查样本单据
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-zh-20261028.png" alt="准备、导入并检查样本单据"><figcaption><p>准备、导入并检查样本单据</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-zh-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-zh-light-20261029.png" alt="准备、导入并检查样本单据"></picture><figcaption><p>准备、导入并检查样本单据</p></figcaption></figure>
 
 选择有代表性的样本单据，设置可用的导入选项，并检查导入状态。只有成功导入的样本才能用于后续训练。进入下一步前应排查导入错误，并将独立测试单据与训练数据集分开保留。
 

@@ -2,7 +2,7 @@
 
 ## 使用独立测试单据评估模型
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-zh-20261028.png" alt="使用独立测试单据评估模型"><figcaption><p>使用独立测试单据评估模型</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-05-modelltest-zh-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-zh-light-20261029.png" alt="使用独立测试单据评估模型"></picture><figcaption><p>使用独立测试单据评估模型</p></figcaption></figure>
 
 训练数据与测试单据承担不同任务。请为独立测试单据设定预期的单据类型和字段值，并与模型预测进行比较。记录模型版本、样本、偏差和技术错误。针对问题改进后，使用相同的评估方法重新测试。图中数值仅为示例，并非准确率测量结果。
 

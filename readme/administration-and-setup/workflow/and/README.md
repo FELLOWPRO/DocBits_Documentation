@@ -20,7 +20,7 @@ Algunas etiquetas del producto siguen en inglés o tienen traducciones incorrect
 
 
 
-Utilice una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activación **Cuando**. Agregue las comprobaciones que necesita antes de la acción **Entonces**. Cada tarjeta muestra campos para completar, como **Operador**, **Nombre de campo** o **Valor**; Las capturas de pantalla muestran las plantillas de tarjetas disponibles, no las reglas completadas.
+Utilice una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activación **Cuando**. Agregue las comprobaciones que necesita antes de la acción **Entonces**. Cada tarjeta muestra campos para completar, como **Operador**, **Nombre de campo** o **Valor**; las capturas de pantalla muestran las plantillas de tarjetas disponibles, no las reglas completadas.
 
 En **Generador de flujo de trabajo**, seleccione **Agregar tarjeta** en **Y...**. Elija una categoría a la izquierda o escriba el nombre de una tarjeta en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla al flujo de trabajo. Puede desplazarse por la lista de vista previa para ver más tarjetas. Utilice **×** para cerrar el selector sin elegir otra tarjeta. Después de configurar las tarjetas, guarde el flujo de trabajo. Consulte [Flujo de trabajo](..) para conocer los pasos circundantes **Cuando**, **Y** y **Entonces**.
 
@@ -32,7 +32,7 @@ Utilice estas tarjetas para comparar datos de pedidos o facturas con una orden d
 
 ## Campo de documento
 
-Elija esta categoría para marcar una casilla de verificación o el estado de un campo, comparar un campo con un valor o comparar dos campos. Complete los marcadores de posición **Nombre de campo** y **Operador** en la tarjeta elegida. Algunas comparaciones también piden tolerancia. Consulte [Campo del documento](document-field).
+Elija esta categoría para comprobar si una casilla de verificación está marcada o consultar el estado de un campo, comparar un campo con un valor o comparar dos campos. Complete los marcadores de posición **Nombre de campo** y **Operador** en la tarjeta elegida. Algunas comparaciones también piden tolerancia. Consulte [Campo del documento](document-field).
 
 <figure><img src="../../../.gitbook/assets/prior-u036-es.png" alt="Categoría de condiciones sobre campos del documento."><figcaption><p>Categoría de condiciones sobre campos del documento.</p></figcaption></figure>
 
@@ -60,7 +60,7 @@ Utilice **Estado** para comprobar si un documento tiene un estado elegido o si s
 
 <figure><img src="../../../.gitbook/assets/prior-u040-es.png" alt="Categoría de condiciones de estado."><figcaption><p>Categoría de condiciones de estado.</p></figcaption></figure>
 
-## tabla
+## Tabla
 
 Estas tarjetas examinan las filas de la tabla de documentos. Las opciones visibles incluyen verificaciones de fechas, patrones de texto, vida útil y comparaciones entre columnas. Seleccione **Nombre de tabla** y **Nombre de columna** antes de elegir un operador o patrón. Consulte la [Tabla](table).
 

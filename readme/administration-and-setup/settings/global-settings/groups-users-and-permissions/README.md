@@ -12,9 +12,9 @@ Estos ajustes responden a tres preguntas distintas: quién puede iniciar sesión
 
 | Si necesita… | Abra… |
 | --- | --- |
-| Añadir o editar la cuenta de una persona | **Ajustes** → **Usuarios**; después lea [Users](users/README.md). |
-| Organizar el acceso entre unidades de la empresa | **Ajustes** → **Suborganizaciones**; después lea [Sub-Organizations](sub-organizations/README.md). |
-| Controlar el acceso por grupo | **Ajustes** → **Grupos y Permisos**; después lea [Groups and Permissions](groups-and-permissions/README.md). |
+| Añadir o editar la cuenta de una persona | **Ajustes** → **Usuarios**; después lea [Usuarios](users/README.md). |
+| Organizar el acceso entre unidades de la empresa | **Ajustes** → **Suborganizaciones**; después lea [Suborganizaciones](sub-organizations/README.md). |
+| Controlar el acceso por grupo | **Ajustes** → **Grupos y Permisos**; después lea [Grupos y permisos](groups-and-permissions/README.md). |
 
 <figure><img src="../../../../.gitbook/assets/prior-t008-es.png" alt="Panel de selección de grupos."><figcaption><p>Panel de selección de grupos.</p></figcaption></figure>
 

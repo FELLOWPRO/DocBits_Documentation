@@ -4,6 +4,14 @@
 Comment créer un arbre de décision dans DocBits (conditions, politiques, test et export)
 {% endembed %}
 
+## Vidéo pas à pas
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/fr.mp4" %}
+
+*2:11 min · Interface du produit en français · Voix et scène d'introduction générées par IA*
+
+[Sous-titres (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/fr.vtt) · [Télécharger la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/fr.mp4)
+
 ## Vue d'ensemble
 
 Les arbres de décision sont une fonctionnalité puissante qui permet d'automatiser le processus de routage et de prise de décision en s'appuyant sur des règles prédéfinies. Cette fonctionnalité est particulièrement utile dans les environnements complexes où diverses conditions doivent être évaluées pour déterminer la marche à suivre appropriée, comme attribuer des prix, déterminer des quantités ou router des documents.
@@ -120,3 +128,31 @@ Le concepteur d'arbre de décision inclut une fonctionnalité de test pour valid
 * **Workflows d'approbation** — routez les factures vers différents approbateurs en fonction de seuils de montant (par exemple, les montants supérieurs à 10 000 nécessitent l'approbation d'un responsable).
 * **Règles de validation** — validez automatiquement les valeurs des champs et signalez les documents qui ne répondent pas aux critères configurés.
 * **Attribution séquentielle** — attribuez des documents aux utilisateurs dans un ordre spécifique en fonction de conditions.
+
+## Captures d'écran
+
+<figure><img src="../../../.gitbook/assets/decision-trees-list-fr.png" alt="Liste des arbres de décision"><figcaption><p>Liste des arbres de décision</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-name-fr.png" alt="Créer un arbre : saisir le nom"><figcaption><p>Créer un arbre : saisir le nom</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-doctype-fr.png" alt="Créer un arbre : choisir le type de document"><figcaption><p>Créer un arbre : choisir le type de document</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-designer-empty-fr.png" alt="Concepteur vide avec une ligne de règle"><figcaption><p>Concepteur vide avec une ligne de règle</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-source-fr.png" alt="Règle : choisir la source"><figcaption><p>Règle : choisir la source</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-field-fr.png" alt="Règle : choisir le champ du document"><figcaption><p>Règle : choisir le champ du document</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-operator-fr.png" alt="Règle : choisir l'opérateur"><figcaption><p>Règle : choisir l'opérateur</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-rule-fr.png" alt="Règle : saisir la valeur de comparaison"><figcaption><p>Règle : saisir la valeur de comparaison</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-policy-fr.png" alt="Choisir la politique de l'arbre"><figcaption><p>Choisir la politique de l'arbre</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-return-type-fr.png" alt="Résultat : choisir le type de retour"><figcaption><p>Résultat : choisir le type de retour</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-result-fr.png" alt="Résultat : saisir la valeur de retour"><figcaption><p>Résultat : saisir la valeur de retour</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-input-fr.png" alt="Tester l'arbre avec une valeur d'exemple"><figcaption><p>Tester l'arbre avec une valeur d'exemple</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-result-fr.png" alt="Résultat du test : nombre de lignes correspondantes"><figcaption><p>Résultat du test : nombre de lignes correspondantes</p></figcaption></figure>

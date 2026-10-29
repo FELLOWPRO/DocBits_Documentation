@@ -49,6 +49,8 @@ Les détails suivants sont inclus :
   * **Uniquement Admin et Attribué** : Seuls les utilisateurs ayant des privilèges d'administrateur et l'utilisateur attribué peuvent redémarrer le document.
   * **Tous les utilisateurs** : Tous les utilisateurs qui ont reçu les [autorisations](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) nécessaires peuvent redémarrer des documents.
 
+* **En attente d'accès aux données (jours)** : définit pendant combien de jours une personne interrogée dans le flux d'activité peut ouvrir le document en lecture seule ; ensuite, le lien ne fonctionne plus. La valeur par défaut est de 14 jours, et l'accès se termine aussi dès que le document avance. Voir [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
+
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtres**

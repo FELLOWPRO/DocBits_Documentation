@@ -2,7 +2,7 @@
 
 **Pending Input** pauzira dokument dok čekate odgovor kolege. Pitanje postavljate u toku aktivnosti dokumenta i označavate osobe koje treba da odgovore. Dokument napušta aktivni red dok ne odgovore, a označene osobe mogu ga otvoriti samo za čitanje preko linka u svojoj e-pošti.
 
-Status se pojavljuje na [kontrolnoj tabli](dashboard/README.md) kao **Pending Input**, a radnu listu možete filtrirati po njemu.
+Status se pojavljuje na [kontrolnoj tabli](../../overview/dashboard/README.md) kao **Pending Input**, a radnu listu možete filtrirati po njemu.
 
 ## Traženje unosa
 

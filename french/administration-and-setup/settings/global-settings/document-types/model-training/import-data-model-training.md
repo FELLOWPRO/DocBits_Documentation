@@ -2,7 +2,7 @@
 
 ## Préparer, importer et vérifier des exemples de documents
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-fr-20261028.png" alt="Préparer, importer et vérifier des exemples de documents"><figcaption><p>Préparer, importer et vérifier des exemples de documents</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-fr-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-fr-light-20261029.png" alt="Préparer, importer et vérifier des exemples de documents"></picture><figcaption><p>Préparer, importer et vérifier des exemples de documents</p></figcaption></figure>
 
 Choisissez des exemples de documents représentatifs, préparez les options d’importation disponibles et vérifiez le statut de l’importation. Seuls les échantillons importés avec succès sont prêts pour un entraînement ultérieur. Résolvez les erreurs d’importation avant l’étape suivante et conservez les documents de test indépendants séparés de l’ensemble de données d’entraînement.
 

@@ -2,7 +2,7 @@
 
 ## Comprendre la portée des exportations avec trois lignes de bon de commande
 
-<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-fr-20261028.png" alt="Comprendre la portée des exportations avec trois lignes de bon de commande"><figcaption><p>Comprendre la portée des exportations avec trois lignes de bon de commande</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../../.gitbook/assets/intro-process-03-po-export-fr-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-fr-light-20261029.png" alt="Comprendre la portée des exportations avec trois lignes de bon de commande"></picture><figcaption><p>Comprendre la portée des exportations avec trois lignes de bon de commande</p></figcaption></figure>
 
 Dans cet exemple, le bon de commande comporte trois lignes et une seule est mise en correspondance avec une ligne de confirmation de commande. Avec « Export Not Matched PO Lines » désactivé, seule la ligne de bon de commande correspondante est exportée. Lorsque l'option est activée, les deux lignes de bon de commande sans correspondance sont également incluses. Cela ne crée pas de correspondances supplémentaires.
 

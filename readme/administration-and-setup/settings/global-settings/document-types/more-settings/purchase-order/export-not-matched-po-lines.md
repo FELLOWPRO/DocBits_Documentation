@@ -2,7 +2,7 @@
 
 ## Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia
 
-<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-pl-20261028.png" alt="Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia"><figcaption><p>Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../../.gitbook/assets/intro-process-03-po-export-pl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-pl-light-20261029.png" alt="Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia"></picture><figcaption><p>Zrozumienie zakresu eksportu dzięki trzem wierszom zamówienia</p></figcaption></figure>
 
 W tym przykładzie zamówienie zakupu składa się z trzech wierszy i tylko jeden jest dopasowany do wiersza potwierdzenia zamówienia. Jeśli opcja „Export Not Matched PO Lines” jest wyłączona, eksportowana jest tylko dopasowana pozycja zamówienia zakupu. Po włączeniu tej opcji uwzględnione zostaną również dwa niedopasowane wiersze zamówienia zakupu. Nie tworzy to dodatkowych dopasowań.
 

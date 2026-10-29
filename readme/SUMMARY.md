@@ -68,6 +68,7 @@
     * [Risoluzione dei problemi](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
     * [Scorciatoie da tastiera](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
   * [Attività](end-user-and-partner-section/end-user-section/tasks.md)
+  * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Dashboard Spedizioni Anticipate](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Dashboard degli ordini di acquisto](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
   * [Dashboard Fatture](end-user-and-partner-section/end-user-section/invoice-dashboard.md)

@@ -62,6 +62,9 @@ jobs:
       group: DocBits Documentation
       labels: k9s
     timeout-minutes: 30
+    env:
+      # Tracked Python caches must stay unchanged so push retries can rebase.
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v6
         with:

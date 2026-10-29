@@ -2,7 +2,7 @@
 
 **Pending Input**, bir meslektaşınızın yanıtını beklerken belgeyi duraklatır. Soruyu belgenin aktivite akışında sorar ve yanıtlaması gereken kişileri etiketlersiniz. Yanıt gelene kadar belge etkin kuyruktan çıkar ve etiketlenen kişiler, e-postalarındaki bağlantı üzerinden belgeyi salt okunur olarak açabilir.
 
-Durum, [gösterge panelinde](dashboard/README.md) **Pending Input** olarak görünür ve çalışma listesini bu duruma göre filtreleyebilirsiniz.
+Durum, [gösterge panelinde](../../overview/dashboard/README.md) **Pending Input** olarak görünür ve çalışma listesini bu duruma göre filtreleyebilirsiniz.
 
 ## Girdi isteme
 

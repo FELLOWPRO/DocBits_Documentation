@@ -281,3 +281,7 @@ With **Log execution** on, every application of the rule is written to **Documen
 * [Custom Validation Rules](custom-validation-rules.md) — check the transformed values
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — choose the layout a document uses
 * [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+## Detailed practical training
+
+[Complete practical overview and nine administrator tutorials](transformation-rules/complete-practical-guide.md) cover all reviewed transformation operations, tested examples, counterexamples and current preview limitations.

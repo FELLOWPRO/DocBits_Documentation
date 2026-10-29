@@ -8,8 +8,8 @@ Esta configuração está **desativada por padrão**. Quando ativada, mais quatr
 
 * **Contagem de tarefas do painel**: mostra no painel quais documentos têm tarefas em aberto.
 * **Permitir filtro "Todos" para usuários não administradores**: permite que usuários que não são administradores vejam todas as tarefas.
-* **Exclusão de tarefas não administrativas**: define quais tarefas os usuários que não são administradores podem excluir.
-* **Conclusão de tarefas não administrativas**: define quais tarefas os usuários que não são administradores podem encerrar.
+* **Exclusão de tarefas por não administradores**: define quais tarefas os usuários que não são administradores podem excluir.
+* **Conclusão de tarefas por não administradores**: define quais tarefas os usuários que não são administradores podem encerrar.
 
 Os administradores da organização nunca são restringidos por essas opções.
 
@@ -36,26 +36,24 @@ A visão geral de tarefas tem um filtro **Atribuído a** com as opções **Todos
 * **Ativada** — Usuários que não são administradores também podem escolher **Todos** e ver todas as tarefas da organização.
 * **Desativada** (padrão) — Usuários que não são administradores têm apenas **Atribuído a mim**, de modo que a visão geral mostra as tarefas atribuídas a eles.
 
-### Exclusão de tarefas não administrativas
-
-Apesar do nome exibido no aplicativo, a opção **Exclusão de tarefas não administrativas** não se refere a um tipo de tarefa: ela define quais tarefas e notificações os **usuários que não são administradores** podem excluir. Os administradores sempre podem excluir todas as tarefas.
+### Exclusão de tarefas por não administradores
+A opção **Exclusão de tarefas por não administradores** define quais tarefas e notificações os **usuários que não são administradores** podem excluir. Os administradores sempre podem excluir todas as tarefas.
 
 | Opção | Usuários que não são administradores podem excluir |
 | --- | --- |
 | **Nenhum** | Nenhuma tarefa. |
 | **Somente tarefas criadas** | As tarefas que eles mesmos criaram. |
-| **Criou e atribuiu tarefas** | As tarefas que eles criaram e as tarefas atribuídas a eles ou a um de seus grupos. É o comportamento aplicado enquanto a opção nunca tiver sido alterada. |
+| **Tarefas criadas e atribuídas** | As tarefas que eles criaram e as tarefas atribuídas a eles ou a um de seus grupos. É o comportamento aplicado enquanto a opção nunca tiver sido alterada. |
 | **Todas as tarefas** | Todas as tarefas. |
 
-Os usuários sempre podem excluir as tarefas que criaram, exceto com **Nenhum**. Por isso, uma tarefa que não está atribuída a ninguém só pode ser excluída pelo usuário que a criou, por administradores ou com **Todas as tarefas**. Uma tarefa sem criador registrado, por exemplo uma criada pelo sistema, só pode ser excluída pelos usuários aos quais está atribuída (com **Criou e atribuiu tarefas**), por administradores ou com **Todas as tarefas**.
+Os usuários sempre podem excluir as tarefas que criaram, exceto com **Nenhum**. Por isso, uma tarefa que não está atribuída a ninguém só pode ser excluída pelo usuário que a criou, por administradores ou com **Todas as tarefas**. Uma tarefa sem criador registrado, por exemplo uma criada pelo sistema, só pode ser excluída pelos usuários aos quais está atribuída (com **Tarefas criadas e atribuídas**), por administradores ou com **Todas as tarefas**.
 
 {% hint style="warning" %}
-Excluir uma tarefa a remove da lista de tarefas sem uma decisão. Se as tarefas só puderem ser encerradas por meio de uma decisão, configure a **Exclusão de tarefas não administrativas** como **Nenhum** e a **Conclusão de tarefas não administrativas** (veja abaixo) como **Apenas para administradores**.
+Excluir uma tarefa a remove da lista de tarefas sem uma decisão. Se as tarefas só puderem ser encerradas por meio de uma decisão, configure a **Exclusão de tarefas por não administradores** como **Nenhum** e a **Conclusão de tarefas por não administradores** (veja abaixo) como **Apenas para administradores**.
 {% endhint %}
 
-### Conclusão de tarefas não administrativas
-
-Apesar do nome exibido no aplicativo, a opção **Conclusão de tarefas não administrativas** não se refere a um tipo de tarefa: ela define quais **usuários que não são administradores** podem encerrar uma tarefa, ou seja, defini-la como **Feito** ou **Rejeitado**. Os administradores sempre podem encerrar tarefas, independentemente do que for selecionado aqui.
+### Conclusão de tarefas por não administradores
+A opção **Conclusão de tarefas por não administradores** define quais **usuários que não são administradores** podem encerrar uma tarefa, ou seja, defini-la como **Feito** ou **Rejeitado**. Os administradores sempre podem encerrar tarefas, independentemente do que for selecionado aqui.
 
 | Opção | Quem pode encerrar uma tarefa |
 | --- | --- |
@@ -102,8 +100,8 @@ Com **Comportamento padrão**, as tarefas em aberto permanecem abertas quando um
 5. Ative **Tarefas e Notificações**.
 6. (Opcional) Ative **Contagem de tarefas do painel** para exibir o ícone de tarefa no painel.
 7. (Opcional) Ative **Permitir filtro "Todos" para usuários não administradores** se todos os usuários devem ver todas as tarefas.
-8. (Opcional) Escolha em **Exclusão de tarefas não administrativas** quais tarefas os usuários podem excluir.
-9. (Opcional) Escolha em **Conclusão de tarefas não administrativas** quem pode encerrar tarefas.
+8. (Opcional) Escolha em **Exclusão de tarefas por não administradores** quais tarefas os usuários podem excluir.
+9. (Opcional) Escolha em **Conclusão de tarefas por não administradores** quem pode encerrar tarefas.
 
 As opções de exclusão e conclusão são salvas assim que você escolhe um valor.
 
@@ -111,5 +109,5 @@ As opções de exclusão e conclusão são salvas assim que você escolhe um val
 
 * **Equipes que compartilham o trabalho com documentos**: Ative quando várias pessoas validam ou aprovam documentos e precisam repassar o trabalho entre si.
 * **Visibilidade da carga de trabalho**: Ative também a Contagem de tarefas do painel quando a equipe precisar ver no painel quais documentos ainda têm tarefas em aberto.
-* **Tarefas que só um administrador ou uma decisão devem encerrar**: Defina **Conclusão de tarefas não administrativas** como **Apenas para administradores** ou **Administradores e usuários atribuídos**, e **Exclusão de tarefas não administrativas** como **Nenhum**, quando os usuários não puderem remover tarefas que não foram realmente realizadas.
+* **Tarefas que só um administrador ou uma decisão devem encerrar**: Defina **Conclusão de tarefas por não administradores** como **Apenas para administradores** ou **Administradores e usuários atribuídos**, e **Exclusão de tarefas por não administradores** como **Nenhum**, quando os usuários não puderem remover tarefas que não foram realmente realizadas.
 * **Configurações de usuário único ou totalmente automatizadas**: Você pode deixar desativado se ninguém precisar atribuir documentos ou acompanhar tarefas.

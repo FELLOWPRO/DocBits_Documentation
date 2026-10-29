@@ -2,7 +2,7 @@
 
 ## Wykrywaj duplikaty i podejmuj świadomą decyzję
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-pl-20261028.png" alt="Wykrywaj duplikaty i podejmuj świadomą decyzję"><figcaption><p>Wykrywaj duplikaty i podejmuj świadomą decyzję</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-pl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-pl-light-20261029.png" alt="Wykrywaj duplikaty i podejmuj świadomą decyzję"></picture><figcaption><p>Wykrywaj duplikaty i podejmuj świadomą decyzję</p></figcaption></figure>
 
 DocBits porównuje skonfigurowane pola w wybranym oknie czasowym. Po znalezieniu dopasowania otwórz ostrzeżenie dotyczące duplikatów i porównaj dokumenty przed kontynuowaniem lub archiwizacją. Blokowanie zduplikowanych eksportów to osobne ustawienie; dopasowanie nie powoduje automatycznej archiwizacji dokumentu.
 

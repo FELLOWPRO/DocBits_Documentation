@@ -2,7 +2,7 @@
 
 ## Oceń na podstawie niezależnych dokumentów testowych
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-pl-20261028.png" alt="Oceń na podstawie niezależnych dokumentów testowych"><figcaption><p>Oceń na podstawie niezależnych dokumentów testowych</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-05-modelltest-pl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-pl-light-20261029.png" alt="Oceń na podstawie niezależnych dokumentów testowych"></picture><figcaption><p>Oceń na podstawie niezależnych dokumentów testowych</p></figcaption></figure>
 
 Dane treningowe i dokumenty testowe służą różnym celom. W przypadku niezależnych dokumentów testowych zdefiniuj oczekiwane typy dokumentów i wartości pól, a następnie porównaj je z przewidywaniami. Zapisz wersję modelu, próbkę, rozbieżności i awarie techniczne. Wprowadź ukierunkowane ulepszenia i powtórz test, stosując ten sam protokół oceny. Przedstawione wartości stanowią przykład, a nie pomiar dokładności.
 

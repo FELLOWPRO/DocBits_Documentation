@@ -6,7 +6,7 @@ Une fois que vous avez terminé la formation ou la correction d'un tableau, il e
 
 Après avoir défini toutes les colonnes et corrections :
 
-1. Cliquez sur le bouton **Règles de sauvegarde** en haut.
+1. Cliquez sur le bouton **Règles de sauvegarde** sous le tableau.
 2. Un compteur de règles confirmera combien de règles d'extraction ont été enregistrées.
 
 Cela garantit que DocBits utilisera automatiquement votre mise en page entraînée la prochaine fois qu'il verra un document similaire.

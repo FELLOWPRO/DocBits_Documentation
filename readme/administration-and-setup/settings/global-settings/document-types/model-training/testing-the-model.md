@@ -2,7 +2,7 @@
 
 ## Evalueer met onafhankelijke testdocumenten
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-nl-20261028.png" alt="Evalueer met onafhankelijke testdocumenten"><figcaption><p>Evalueer met onafhankelijke testdocumenten</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-05-modelltest-nl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-nl-light-20261029.png" alt="Evalueer met onafhankelijke testdocumenten"></picture><figcaption><p>Evalueer met onafhankelijke testdocumenten</p></figcaption></figure>
 
 Trainingsgegevens en testdocumenten dienen verschillende doeleinden. Voor onafhankelijke testdocumenten definieert u de verwachte documenttypen en veldwaarden en vergelijkt u deze vervolgens met de voorspellingen. Registreer de modelversie, de steekproef, afwijkingen en technische storingen. Breng gerichte verbeteringen aan en herhaal de test met hetzelfde evaluatieprotocol. De weergegeven waarden zijn een voorbeeld en geen nauwkeurigheidsmeting.
 

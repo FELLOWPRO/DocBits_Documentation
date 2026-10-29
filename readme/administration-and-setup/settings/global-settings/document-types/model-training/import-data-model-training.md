@@ -2,7 +2,7 @@
 
 ## Opstellen, importeren en controleren van voorbeelddocumenten
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-nl-20261028.png" alt="Opstellen, importeren en controleren van voorbeelddocumenten"><figcaption><p>Opstellen, importeren en controleren van voorbeelddocumenten</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-nl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-nl-light-20261029.png" alt="Opstellen, importeren en controleren van voorbeelddocumenten"></picture><figcaption><p>Opstellen, importeren en controleren van voorbeelddocumenten</p></figcaption></figure>
 
 Kies representatieve voorbeelddocumenten, bereid de beschikbare importopties voor en controleer de importstatus. Alleen succesvol geïmporteerde voorbeelden zijn klaar voor verdere training. Los importfouten op vóór de volgende stap en houd onafhankelijke testdocumenten gescheiden van de trainingsdataset.
 

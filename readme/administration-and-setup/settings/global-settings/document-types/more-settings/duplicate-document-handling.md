@@ -2,7 +2,7 @@
 
 ## Dubletten erkennen und bewusst entscheiden
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-de-20261028.png" alt="Dubletten erkennen und bewusst entscheiden"><figcaption><p>Dubletten erkennen und bewusst entscheiden</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-de-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-de-light-20261029.png" alt="Dubletten erkennen und bewusst entscheiden"></picture><figcaption><p>Dubletten erkennen und bewusst entscheiden</p></figcaption></figure>
 
 DocBits vergleicht die konfigurierten Felder innerhalb des gewählten Zeitraums. Öffnen Sie bei einem Treffer den Dublettenhinweis und vergleichen Sie die Belege, bevor Sie fortfahren oder archivieren. Die Exportblockierung ist eine eigene Einstellung; ein Treffer archiviert einen Beleg nicht automatisch.
 

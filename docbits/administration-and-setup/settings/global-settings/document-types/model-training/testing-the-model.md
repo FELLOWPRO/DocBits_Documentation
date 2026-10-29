@@ -2,7 +2,7 @@
 
 ## Evaluate with independent test documents
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-en-20261028.png" alt="Evaluate with independent test documents"><figcaption><p>Evaluate with independent test documents</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-05-modelltest-en-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-en-light-20261029.png" alt="Evaluate with independent test documents"></picture><figcaption><p>Evaluate with independent test documents</p></figcaption></figure>
 
 Training data and test documents serve different purposes. For independent test documents, define the expected document types and field values, then compare them with the predictions. Record the model version, sample, discrepancies and technical failures. Make targeted improvements and repeat the test with the same evaluation protocol. The values shown are an example, not an accuracy measurement.
 

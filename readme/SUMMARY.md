@@ -454,6 +454,7 @@
       * [Condizioni delle regole (Applies when)](administration-and-setup/settings/global-settings/document-types/rule-conditions-applies-when.md)
       * [Regole di convalida personalizzate](administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md)
       * [Regole di Trasformazione](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
+        * [Correggere un errore OCR in un numero d'ordine](administration-and-setup/settings/global-settings/document-types/transformation-rules/correct-po-number-ocr-error.md)
       * [Altre impostazioni](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [Buone pratiche](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [Risoluzione dei problemi](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)

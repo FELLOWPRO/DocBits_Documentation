@@ -22,6 +22,12 @@ Utilize o resumo de tarefas para encontrar o trabalho atribuído e acompanhar o 
 
 O vídeo utiliza uma conta de teste normal e documentos sintéticos. Concluir uma tarefa é um passo distinto da aprovação ou exportação da respetiva fatura. As ações disponíveis dependem das permissões da conta.
 
+## Quando não consegue marcar uma tarefa como concluída
+
+A sua organização pode limitar quem pode encerrar tarefas, ou seja, defini-las como **Feito** ou **Rejeitado**. Nesse caso, o botão **Feito**, os estados **Feito** e **Rejeitado** e a ação **Marcar como concluído** não são apresentados para as tarefas que não pode encerrar, e o quadro de tarefas não permite largar essas tarefas na coluna **Feito** ou **Rejeitado**. As tarefas atribuídas a si podem continuar a ser editadas, guardadas e movidas entre **Aberto** e **Em andamento**.
+
+Um administrador da sua organização define quem pode encerrar e eliminar tarefas. Consulte [Tarefas e Notificações](../../administration-and-setup/settings/document-processing/module/tasks-and-notifications.md).
+
 <figure><img src="../../.gitbook/assets/customer-overview-pt-c97150e0b98d.png" alt="Quadro de tarefas com dados de exemplo sintéticos."><figcaption><p>Quadro de tarefas com dados de exemplo sintéticos.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/customer-find-pt-c97150e0b98d.png" alt="Lista de tarefas com dados de demonstração sintéticos."><figcaption><p>Lista de tarefas com dados de demonstração sintéticos.</p></figcaption></figure>

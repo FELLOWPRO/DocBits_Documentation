@@ -454,6 +454,7 @@
       * [Regelvoorwaarden (Applies when)](administration-and-setup/settings/global-settings/document-types/rule-conditions-applies-when.md)
       * [Aangepaste validatieregels](administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md)
       * [Transformatieregels](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
+        * [Een OCR-fout in een bestelnummer herstellen](administration-and-setup/settings/global-settings/document-types/transformation-rules/correct-po-number-ocr-error.md)
       * [Meer Instellingen](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [Aanbevolen werkwijzen](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [Problemen oplossen](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)

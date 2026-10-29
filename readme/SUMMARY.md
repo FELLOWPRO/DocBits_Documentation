@@ -73,6 +73,7 @@
     * [故障排除](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
     * [键盘快捷键](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
   * [任务](end-user-and-partner-section/end-user-section/tasks.md)
+  * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [预发货仪表板](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [采购订单仪表板](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
   * [发票仪表板](end-user-and-partner-section/end-user-section/invoice-dashboard.md)

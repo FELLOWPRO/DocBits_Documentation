@@ -2,7 +2,7 @@
 
 ## Preparare, importare e controllare documenti campione
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-it-20261028.png" alt="Preparare, importare e controllare documenti campione"><figcaption><p>Preparare, importare e controllare documenti campione</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-it-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-it-light-20261029.png" alt="Preparare, importare e controllare documenti campione"></picture><figcaption><p>Preparare, importare e controllare documenti campione</p></figcaption></figure>
 
 Scegli documenti campione rappresentativi, prepara le opzioni di importazione disponibili e controlla lo stato dell'importazione. Solo i campioni importati con successo sono pronti per il successivo addestramento. Risolvi gli errori di importazione prima del passaggio successivo e mantieni i documenti di test indipendenti separati dal set di dati di training.
 

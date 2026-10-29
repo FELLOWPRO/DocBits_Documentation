@@ -8,10 +8,10 @@ To ustawienie jest **domyślnie wyłączone**. Po jego włączeniu poniżej poja
 
 * **Liczba zadań na pulpicie**: pokazuje na stronie **Panel**, które dokumenty mają otwarte zadania.
 * **Zezwalaj na filtr „Wszystkie” dla użytkowników niebędących administratorami**: pozwala użytkownikom, którzy nie są administratorami, widzieć wszystkie zadania.
-* **Usuwanie zadań niebędących zadaniami administracyjnymi**: określa, które zadania mogą usuwać użytkownicy niebędący administratorami.
-* **Ukończenie zadania nieadministracyjnego**: określa, które zadania mogą zamykać użytkownicy niebędący administratorami.
+* **Usuwanie zadań przez użytkowników niebędących administratorami**: określa, które zadania mogą usuwać użytkownicy niebędący administratorami.
+* **Zamykanie zadań przez użytkowników niebędących administratorami**: określa, które zadania mogą zamykać użytkownicy niebędący administratorami.
 
-Etykiety dwóch ostatnich opcji mówią o zadaniach „nieadministracyjnych”, ale w rzeczywistości dotyczą uprawnień użytkowników, którzy nie są administratorami. Administratorów organizacji te opcje nigdy nie ograniczają.
+Administratorów organizacji te opcje nigdy nie ograniczają.
 
 ### Co robi to ustawienie?
 
@@ -22,7 +22,7 @@ Etykiety dwóch ostatnich opcji mówią o zadaniach „nieadministracyjnych”, 
 
 **Liczba zadań na pulpicie** określa, czy strona **Panel** pokazuje, które dokumenty mają otwarte zadania.
 
-* **Włączone**: Dokument, który ma zadania o statusie **Otwarte** lub **W toku**, ma ikonę zadania na liście na stronie **Panel**. Po najechaniu kursorem na ikonę widać, ile otwartych zadań ma dokument, np. „2 Otwórz zadanie(a)” (tak brzmi ten tekst w aplikacji; oznacza on liczbę otwartych zadań). Zadania wykonane, odrzucone lub usunięte nie są liczone.
+* **Włączone**: Dokument, który ma zadania o statusie **Otwarte** lub **W toku**, ma ikonę zadania na liście na stronie **Panel**. Po najechaniu kursorem na ikonę widać, ile otwartych zadań ma dokument, np. „2 Otwarte zadanie(a)”. Zadania wykonane, odrzucone lub usunięte nie są liczone.
 * **Wyłączone**: Ikona jest ukryta. Zadania nadal działają normalnie.
 
 {% hint style="info" %}
@@ -36,26 +36,24 @@ Przegląd zadań ma filtr **Przypisany do** z opcjami **Wszystko** i **Przypisan
 * **Włączone**: Również użytkownicy, którzy nie są administratorami, mogą wybrać **Wszystko** i widzieć wszystkie zadania organizacji.
 * **Wyłączone** (domyślnie): Użytkownicy, którzy nie są administratorami, mają tylko opcję **Przypisane do mnie**, więc przegląd pokazuje zadania przypisane do nich.
 
-### Usuwanie zadań niebędących zadaniami administracyjnymi
-
-**Usuwanie zadań niebędących zadaniami administracyjnymi** określa, które zadania i powiadomienia mogą usuwać użytkownicy niebędący administratorami. Administratorzy zawsze mogą usunąć każde zadanie.
+### Usuwanie zadań przez użytkowników niebędących administratorami
+**Usuwanie zadań przez użytkowników niebędących administratorami** określa, które zadania i powiadomienia mogą usuwać użytkownicy niebędący administratorami. Administratorzy zawsze mogą usunąć każde zadanie.
 
 | Opcja | Użytkownicy niebędący administratorami mogą usuwać |
 | --- | --- |
-| **Nic** | Żadnych zadań. |
+| **Żadne** | Żadnych zadań. |
 | **Tylko utworzone zadania** | Zadania, które sami utworzyli. |
-| **Utworzono i przypisano zadania** | Zadania, które sami utworzyli, oraz zadania przypisane do nich lub do jednej z ich grup. Obowiązuje, jeśli opcja nigdy nie była zmieniana. |
+| **Utworzone i przypisane zadania** | Zadania, które sami utworzyli, oraz zadania przypisane do nich lub do jednej z ich grup. Obowiązuje, jeśli opcja nigdy nie była zmieniana. |
 | **Wszystkie zadania** | Każde zadanie. |
 
-Użytkownicy zawsze mogą usuwać zadania, które sami utworzyli, z wyjątkiem opcji **Nic**. Zadanie, które nie jest nikomu przypisane, może więc usunąć tylko użytkownik, który je utworzył, administratorzy albo użytkownicy przy opcji **Wszystkie zadania**. Zadanie bez zapisanego twórcy, na przykład utworzone przez system, mogą usunąć tylko użytkownicy, do których jest przypisane (przy opcji **Utworzono i przypisano zadania**), administratorzy albo użytkownicy przy opcji **Wszystkie zadania**.
+Użytkownicy zawsze mogą usuwać zadania, które sami utworzyli, z wyjątkiem opcji **Żadne**. Zadanie, które nie jest nikomu przypisane, może więc usunąć tylko użytkownik, który je utworzył, administratorzy albo użytkownicy przy opcji **Wszystkie zadania**. Zadanie bez zapisanego twórcy, na przykład utworzone przez system, mogą usunąć tylko użytkownicy, do których jest przypisane (przy opcji **Utworzone i przypisane zadania**), administratorzy albo użytkownicy przy opcji **Wszystkie zadania**.
 
 {% hint style="warning" %}
-Usunięcie zadania usuwa je z listy zadań bez podjęcia decyzji. Jeśli zadania mają być zamykane wyłącznie na podstawie decyzji, ustaw w **Usuwanie zadań niebędących zadaniami administracyjnymi** opcję **Nic**, a w **Ukończenie zadania nieadministracyjnego** (patrz niżej) opcję **Tylko dla administratorów**.
+Usunięcie zadania usuwa je z listy zadań bez podjęcia decyzji. Jeśli zadania mają być zamykane wyłącznie na podstawie decyzji, ustaw w **Usuwanie zadań przez użytkowników niebędących administratorami** opcję **Żadne**, a w **Zamykanie zadań przez użytkowników niebędących administratorami** (patrz niżej) opcję **Tylko dla administratorów**.
 {% endhint %}
 
-### Ukończenie zadania nieadministracyjnego
-
-**Ukończenie zadania nieadministracyjnego** określa, którzy użytkownicy niebędący administratorami mogą zamknąć zadanie, czyli ustawić je na **Zrobione** lub **Odrzucony**. Administratorzy zawsze mogą zamykać zadania, niezależnie od wybranej tu opcji.
+### Zamykanie zadań przez użytkowników niebędących administratorami
+**Zamykanie zadań przez użytkowników niebędących administratorami** określa, którzy użytkownicy niebędący administratorami mogą zamknąć zadanie, czyli ustawić je na **Zrobione** lub **Odrzucony**. Administratorzy zawsze mogą zamykać zadania, niezależnie od wybranej tu opcji.
 
 | Opcja | Kto może zamknąć zadanie |
 | --- | --- |
@@ -102,8 +100,8 @@ Przy opcji **Domyślne zachowanie** otwarte zadania pozostają otwarte po odesł
 5. Włącz **Zadania i powiadomienia**.
 6. (Opcjonalnie) Włącz opcję **Liczba zadań na pulpicie**, aby wyświetlać ikonę zadania na stronie **Panel**.
 7. (Opcjonalnie) Włącz opcję **Zezwalaj na filtr „Wszystkie” dla użytkowników niebędących administratorami**, jeśli wszyscy użytkownicy mają widzieć wszystkie zadania.
-8. (Opcjonalnie) W **Usuwanie zadań niebędących zadaniami administracyjnymi** wybierz, które zadania użytkownicy mogą usuwać.
-9. (Opcjonalnie) W **Ukończenie zadania nieadministracyjnego** wybierz, kto może zamykać zadania.
+8. (Opcjonalnie) W **Usuwanie zadań przez użytkowników niebędących administratorami** wybierz, które zadania użytkownicy mogą usuwać.
+9. (Opcjonalnie) W **Zamykanie zadań przez użytkowników niebędących administratorami** wybierz, kto może zamykać zadania.
 
 Opcje usuwania i zamykania zadań są zapisywane, gdy tylko wybierzesz wartość.
 
@@ -111,5 +109,5 @@ Opcje usuwania i zamykania zadań są zapisywane, gdy tylko wybierzesz wartość
 
 * **Zespoły dzielące się pracą nad dokumentami**: Włącz, gdy kilka osób waliduje lub zatwierdza dokumenty i musi przekazywać sobie pracę.
 * **Widoczność obciążenia**: Włącz również opcję Liczba zadań na pulpicie, gdy zespół ma widzieć na stronie Panel, które dokumenty wciąż mają otwarte zadania.
-* **Zadania, które może zamknąć tylko administrator lub decyzja**: Ustaw **Ukończenie zadania nieadministracyjnego** na **Tylko dla administratorów** lub **Administratorzy i przypisani użytkownicy**, a **Usuwanie zadań niebędących zadaniami administracyjnymi** na **Nic**, jeśli użytkownicy nie mogą usuwać zadań, które w rzeczywistości nie zostały wykonane.
+* **Zadania, które może zamknąć tylko administrator lub decyzja**: Ustaw **Zamykanie zadań przez użytkowników niebędących administratorami** na **Tylko dla administratorów** lub **Administratorzy i przypisani użytkownicy**, a **Usuwanie zadań przez użytkowników niebędących administratorami** na **Żadne**, jeśli użytkownicy nie mogą usuwać zadań, które w rzeczywistości nie zostały wykonane.
 * **Konfiguracje jednoosobowe lub w pełni zautomatyzowane**: Możesz pozostawić wyłączone, jeśli nikt nie musi przypisywać dokumentów ani śledzić zadań.

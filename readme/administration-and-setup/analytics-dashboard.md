@@ -103,6 +103,16 @@ Analise qualquer período, de **7 dias** até **um ano completo**, ou defina um 
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-pt.png" alt="Opção de período personalizado nos filtros da análise."><figcaption><p>Opção de período personalizado nos filtros da análise.</p></figcaption></figure>
 
+### Os filtros são memorizados
+
+O painel guarda os seus filtros e o intervalo de tempo neste navegador, separadamente para cada utilizador e cada organização. Ao reabrir o painel, a última seleção é reposta, incluindo um intervalo de datas personalizado no seletor de datas.
+
+Selecione **Restaurar padrões de fábrica** no canto superior direito do painel para limpar a seleção guardada: os filtros, o intervalo de tempo e as datas personalizadas voltam aos valores predefinidos.
+
+<mark style="color:red;">**Nota**</mark>: a seleção é guardada no navegador, não no servidor. Não é sincronizada com outros dispositivos ou navegadores.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-pt.png" alt="Painel Analytics na vista Estado, com a linha de filtros e o botão Restaurar padrões de fábrica no canto superior direito"><figcaption><p>Os filtros são repostos quando regressa ao painel. Restaurar padrões de fábrica limpa-os.</p></figcaption></figure>
+
 ## Cartões de Etapas do Fluxo
 
 Cada cartão representa uma etapa do fluxo com base no **Tipo de Fluxo** selecionado. Os cartões se adaptam à sua seleção — mostrando estágios do ciclo de vida para *Status*, módulos de processamento para *Processamento* ou pontos de contato do usuário para *Interação do Usuário*.

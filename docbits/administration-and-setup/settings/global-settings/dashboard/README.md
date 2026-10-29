@@ -56,6 +56,8 @@ The following details are included:
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_5.png" alt="Filter settings with status filter style and custom status filter"><figcaption><p>Filters</p></figcaption></figure>
 
+For the steps to choose **Custom**, select statuses, apply the selection or return to **All**, see [Custom status filters](page-1.md).
+
 ## Advance Shipment Dashboard
 
 * **Delivered Orders Visibility**: This feature allows the user to specify the duration for which delivered orders will be visible.

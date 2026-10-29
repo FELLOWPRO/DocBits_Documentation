@@ -493,7 +493,7 @@
     * [E-Mail templates](administration-and-setup/settings/global-settings/e-mail-templates.md)
     * [Dashboard](administration-and-setup/settings/global-settings/dashboard/README.md)
       * [Customizing Filters](administration-and-setup/settings/global-settings/dashboard/customizing-filters.md)
-      * [Custom Filters](administration-and-setup/settings/global-settings/dashboard/page-1.md)
+      * [Custom status filters](administration-and-setup/settings/global-settings/dashboard/page-1.md)
   * [Document Processing](administration-and-setup/settings/document-processing/README.md)
     * [Due Date Calculation](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [Documents Expiry](administration-and-setup/settings/document-processing/documents-expiry.md)

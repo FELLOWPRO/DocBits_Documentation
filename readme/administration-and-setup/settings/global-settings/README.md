@@ -6,7 +6,7 @@ Użyj **Ustawień**, aby zarządzać organizacją oraz sposobem przetwarzania do
 2. W sekcji **Organizacja i dostęp** wybierz potrzebną dziedzinę, na przykład **Informacje o firmie** lub **Użytkownicy**.
 3. W sekcji **Przetwarzanie dokumentów** wybierz **Typy dokumentów**, aby skonfigurować określony rodzaj dokumentu.
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-pl.png" alt="Polskie menu Ustawienia i ekran Informacje o firmie"><figcaption>Aktualny widok Sandbox w języku polskim z wymyślonymi danymi przykładowymi. Wybrana jest pozycja Informacje o firmie; żadna wartość nie została zmieniona.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-pl.png" alt="Polski przegląd ustawień z nawigacją i szybkimi linkami"><figcaption>Przegląd ustawień w języku polskim z menu nawigacji i szybkimi linkami do informacji o firmie, użytkowników, typów dokumentów, importu, eksportu oraz integracji i SSO. Nie zmieniono żadnych ustawień.</figcaption></figure>
 
 Zacznij od przewodnika, który odpowiada Twojemu zadaniu:
 

@@ -4,6 +4,14 @@
 如何在 DocBits 中创建决策树（条件、策略、测试和导出）
 {% endembed %}
 
+## 视频演示
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/zh.mp4" %}
+
+*1:54 分钟 · 中文产品界面 · 语音和开场画面由 AI 生成*
+
+[字幕 (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/zh.vtt) · [下载视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/zh.mp4)
+
 ## 概述
 
 决策树是一项强大的功能，可根据预定义规则自动执行路由和决策流程。此功能尤其适用于复杂环境，需要评估各种条件以确定正确的操作，例如分配价格、确定数量或路由文档。
@@ -119,3 +127,31 @@
 * **审批工作流** — 根据金额阈值将发票路由给不同的审批人（例如，金额超过 10,000 时需要经理审批）。
 * **验证规则** — 自动验证字段值，并标记不符合已配置条件的文档。
 * **顺序分配** — 根据条件，按特定顺序将文档分配给用户。
+
+## 截图
+
+<figure><img src="../../../../.gitbook/assets/decision-trees-list-zh.png" alt="决策树列表"><figcaption><p>决策树列表</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-create-name-zh.png" alt="创建决策树：输入名称"><figcaption><p>创建决策树：输入名称</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-create-doctype-zh.png" alt="创建决策树：选择文档类型"><figcaption><p>创建决策树：选择文档类型</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-designer-empty-zh.png" alt="带一行规则的空设计器"><figcaption><p>带一行规则的空设计器</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-source-zh.png" alt="规则：选择来源"><figcaption><p>规则：选择来源</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-field-zh.png" alt="规则：选择文档字段"><figcaption><p>规则：选择文档字段</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-operator-zh.png" alt="规则：选择运算符"><figcaption><p>规则：选择运算符</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-rule-zh.png" alt="规则：输入比较值"><figcaption><p>规则：输入比较值</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-policy-zh.png" alt="选择决策树策略"><figcaption><p>选择决策树策略</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-return-type-zh.png" alt="结果：选择返回类型"><figcaption><p>结果：选择返回类型</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-result-zh.png" alt="结果：输入返回值"><figcaption><p>结果：输入返回值</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-test-input-zh.png" alt="用示例值测试决策树"><figcaption><p>用示例值测试决策树</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/decision-tree-test-result-zh.png" alt="测试结果：匹配的行数"><figcaption><p>测试结果：匹配的行数</p></figcaption></figure>

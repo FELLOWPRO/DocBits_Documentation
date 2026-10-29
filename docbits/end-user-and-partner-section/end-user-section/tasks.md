@@ -22,6 +22,12 @@ Use the task overview to find assigned work and follow its progress. The board g
 
 The video uses an ordinary test user and synthetic documents. Completing a task is separate from approving or exporting its invoice. Available actions depend on the account's permissions.
 
+## When you cannot mark a task as done
+
+Your organisation can limit who may close tasks, that is, set them to **Done** or **Rejected**. If it does, the **Done** button, the **Done** and **Rejected** statuses and **Mark as done** are not offered for tasks you may not close, and the task board does not let you drop such a task into the **Done** or **Rejected** column. Tasks assigned to you can still be edited, saved and moved between **Open** and **In progress**.
+
+An admin of your organisation chooses who may close and delete tasks. See [Tasks & Notifications](../../administration-and-setup/settings/document-processing/module/tasks-and-notifications.md#non-admin-task-completion).
+
 <figure><img src="../../.gitbook/assets/customer-overview-en-91b31c626e68.png" alt="Task board with synthetic demonstration data."><figcaption><p>Task board with synthetic demonstration data.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/customer-find-en-91b31c626e68.png" alt="Task list with synthetic demonstration data."><figcaption><p>Task list with synthetic demonstration data.</p></figcaption></figure>

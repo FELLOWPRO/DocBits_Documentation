@@ -2,7 +2,7 @@
 
 ## Do e-mail recebido a um documento pronto para revisão
 
-<figure><img src="../../../../.gitbook/assets/intro-process-01-email-pt-20261028.png" alt="Do e-mail recebido a um documento pronto para revisão"><figcaption><p>Do e-mail recebido a um documento pronto para revisão</p></figcaption></figure>
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-pt-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-pt-light-20261029.png" alt="Do e-mail recebido a um documento pronto para revisão"></picture><figcaption><p>Do e-mail recebido a um documento pronto para revisão</p></figcaption></figure>
 
 A ilustração mostra duas formas de entrada: uma caixa postal conectada e encaminhamento para um endereço de importação DocBits. Os anexos de documentos suportados são importados. Verifique as restrições, organização e roteamento do remetente e, em seguida, verifique a importação real. O envio de um e-mail não prova que seus documentos foram importados com sucesso.
 

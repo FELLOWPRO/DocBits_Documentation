@@ -22,6 +22,8 @@ Los estados de procesamiento indican pasos como OCR, clasificación o exportaci�
 
 Si hay tiempos de procesamiento, sitúe el puntero sobre el estado para ver las fases y su duración. Los documentos con posibles duplicados muestran un icono de duplicado; ábralo para comparar los documentos relacionados.
 
+Un documento también puede esperar la respuesta de un compañero. En ese caso muestra el estado **Pending Input** y permanece fuera de la cola activa hasta que la persona consultada haya respondido y la persona asignada cierre la solicitud. Consulte [Pending Input](../pending-input.md).
+
 Abra la fila para trabajar en la pantalla de validación. El menú de acciones ofrece las operaciones permitidas, como asignar, descargar, consultar el historial o reiniciar el procesamiento. Las variantes de descarga dependen del documento y pueden incluir anotaciones o formatos de factura electrónica.
 
 Marque varios documentos y abra el menú de la cabecera para las acciones masivas permitidas, como asignar, fusionar, reiniciar, reiniciar la exportación o eliminar. Compruebe la selección y cada confirmación. Estas acciones pueden modificar documentos; guardar una vista solo cambia la presentación de la lista.

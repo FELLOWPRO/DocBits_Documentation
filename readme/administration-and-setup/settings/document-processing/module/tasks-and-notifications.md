@@ -7,11 +7,11 @@ De instelling **Taken en meldingen** schakelt het ingebouwde taakbeheer van DocB
 Deze instelling is **standaard uitgeschakeld**. Wanneer deze is ingeschakeld, verschijnen eronder vier extra opties:
 
 * **Aantal taken op het dashboard**: toont op het Dashboard welke documenten openstaande taken hebben.
-* **Schakel het filter "Alles" in voor niet-beheerders.**: laat gebruikers die geen beheerder zijn alle taken zien.
-* **Niet-beheerderstaak verwijderen**: bepaalt welke taken gebruikers die geen beheerder zijn mogen verwijderen.
-* **Voltooiing van niet-administratieve taken**: bepaalt welke taken gebruikers die geen beheerder zijn mogen afsluiten.
+* **Schakel het filter "Alles" in voor niet-beheerders**: laat gebruikers die geen beheerder zijn alle taken zien.
+* **Taken verwijderen door niet-beheerders**: bepaalt welke taken gebruikers die geen beheerder zijn mogen verwijderen.
+* **Taken voltooien door niet-beheerders**: bepaalt welke taken gebruikers die geen beheerder zijn mogen afsluiten.
 
-De labels van de laatste twee opties spreken van "niet-beheerderstaken" en "niet-administratieve taken", maar bedoeld zijn de rechten van gebruikers die geen beheerder zijn. Beheerders van de organisatie worden door deze opties nooit beperkt.
+Beheerders van de organisatie worden door deze opties nooit beperkt.
 
 ### Wat doet het?
 
@@ -36,9 +36,8 @@ Het takenoverzicht heeft een filter **Toegewezen aan** met de opties **Alle** en
 * **Ingeschakeld**: Ook gebruikers die geen beheerder zijn, kunnen **Alle** kiezen en alle taken van de organisatie zien.
 * **Uitgeschakeld** (standaard): Gebruikers die geen beheerder zijn, krijgen alleen **Aan mij toegewezen**, zodat het overzicht de taken toont die aan hen zijn toegewezen.
 
-### Niet-beheerderstaak verwijderen
-
-**Niet-beheerderstaak verwijderen** bepaalt welke taken en meldingen gebruikers die geen beheerder zijn mogen verwijderen. Beheerders kunnen altijd elke taak verwijderen.
+### Taken verwijderen door niet-beheerders
+**Taken verwijderen door niet-beheerders** bepaalt welke taken en meldingen gebruikers die geen beheerder zijn mogen verwijderen. Beheerders kunnen altijd elke taak verwijderen.
 
 | Optie | Gebruikers die geen beheerder zijn, mogen verwijderen |
 | --- | --- |
@@ -50,12 +49,11 @@ Het takenoverzicht heeft een filter **Toegewezen aan** met de opties **Alle** en
 Gebruikers kunnen de taken die ze zelf hebben aangemaakt altijd verwijderen, behalve met **Geen**. Een taak die aan niemand is toegewezen, kan daarom alleen worden verwijderd door de gebruiker die haar heeft aangemaakt, door beheerders of met **Alle taken**. Een taak zonder vastgelegde maker, bijvoorbeeld een taak die door het systeem is aangemaakt, kan alleen worden verwijderd door de gebruikers aan wie ze is toegewezen (met **Aangemaakte en toegewezen taken**), door beheerders of met **Alle taken**.
 
 {% hint style="warning" %}
-Een taak verwijderen haalt deze uit de takenlijst zonder dat er een beslissing is genomen. Als taken alleen via een beslissing mogen worden afgesloten, stel dan **Niet-beheerderstaak verwijderen** in op **Geen** en **Voltooiing van niet-administratieve taken** (zie hieronder) op **Alleen voor beheerders**.
+Een taak verwijderen haalt deze uit de takenlijst zonder dat er een beslissing is genomen. Als taken alleen via een beslissing mogen worden afgesloten, stel dan **Taken verwijderen door niet-beheerders** in op **Geen** en **Taken voltooien door niet-beheerders** (zie hieronder) op **Alleen voor beheerders**.
 {% endhint %}
 
-### Voltooiing van niet-administratieve taken
-
-**Voltooiing van niet-administratieve taken** bepaalt welke gebruikers die geen beheerder zijn een taak mogen afsluiten, dat wil zeggen op **Klaar** of **Afgewezen** zetten. Beheerders kunnen altijd taken afsluiten, wat hier ook is geselecteerd.
+### Taken voltooien door niet-beheerders
+**Taken voltooien door niet-beheerders** bepaalt welke gebruikers die geen beheerder zijn een taak mogen afsluiten, dat wil zeggen op **Klaar** of **Afgewezen** zetten. Beheerders kunnen altijd taken afsluiten, wat hier ook is geselecteerd.
 
 | Optie | Wie een taak mag afsluiten |
 | --- | --- |
@@ -101,9 +99,9 @@ Met **Standaardgedrag** blijven openstaande taken open wanneer een document word
 4. Open de sectie **Documenttype**.
 5. Zet **Taken en meldingen** aan.
 6. (Optioneel) Zet **Aantal taken op het dashboard** aan om het taakpictogram op het Dashboard te tonen.
-7. (Optioneel) Zet **Schakel het filter "Alles" in voor niet-beheerders.** aan als alle gebruikers alle taken moeten zien.
-8. (Optioneel) Kies bij **Niet-beheerderstaak verwijderen** welke taken gebruikers mogen verwijderen.
-9. (Optioneel) Kies bij **Voltooiing van niet-administratieve taken** wie taken mag afsluiten.
+7. (Optioneel) Zet **Schakel het filter "Alles" in voor niet-beheerders** aan als alle gebruikers alle taken moeten zien.
+8. (Optioneel) Kies bij **Taken verwijderen door niet-beheerders** welke taken gebruikers mogen verwijderen.
+9. (Optioneel) Kies bij **Taken voltooien door niet-beheerders** wie taken mag afsluiten.
 
 De opties voor verwijderen en afsluiten worden opgeslagen zodra u een waarde kiest.
 
@@ -111,5 +109,5 @@ De opties voor verwijderen en afsluiten worden opgeslagen zodra u een waarde kie
 
 * **Teams die documentwerk delen**: Schakel in wanneer meerdere mensen documenten valideren of goedkeuren en werk aan elkaar moeten overdragen.
 * **Zicht op werklast**: Schakel ook Aantal taken op het dashboard in wanneer het team op het Dashboard moet zien welke documenten nog openstaande taken hebben.
-* **Taken die alleen beheerders of een beslissing mogen afsluiten**: Stel **Voltooiing van niet-administratieve taken** in op **Alleen voor beheerders** of **Beheerders en toegewezen gebruikers**, en **Niet-beheerderstaak verwijderen** op **Geen**, wanneer gebruikers geen taken mogen verwijderen die niet echt zijn afgehandeld.
+* **Taken die alleen beheerders of een beslissing mogen afsluiten**: Stel **Taken voltooien door niet-beheerders** in op **Alleen voor beheerders** of **Beheerders en toegewezen gebruikers**, en **Taken verwijderen door niet-beheerders** op **Geen**, wanneer gebruikers geen taken mogen verwijderen die niet echt zijn afgehandeld.
 * **Eén-gebruiker- of volledig geautomatiseerde opstellingen**: U kunt deze uitgeschakeld laten als niemand documenten hoeft toe te wijzen of taken hoeft te volgen.

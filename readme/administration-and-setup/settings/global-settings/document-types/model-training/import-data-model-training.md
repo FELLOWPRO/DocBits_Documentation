@@ -2,7 +2,7 @@
 
 ## Preparar, importar y comprobar documentos de muestra.
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-20261028.png" alt="Preparar, importar y comprobar documentos de muestra."><figcaption><p>Preparar, importar y comprobar documentos de muestra.</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-es-light-20261029.png" alt="Preparar, importar y comprobar documentos de muestra."></picture><figcaption><p>Preparar, importar y comprobar documentos de muestra.</p></figcaption></figure>
 
 Elija documentos de muestra representativos, prepare las opciones de importación disponibles y verifique el estado de la importación. Sólo las muestras importadas con éxito están listas para una entrenamiento posterior. Resuelva los errores de importación antes del siguiente paso y mantenga los documentos de prueba independientes separados del conjunto de datos de entrenamiento.
 

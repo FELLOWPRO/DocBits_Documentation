@@ -1,5 +1,7 @@
 # Nummern formen: Auffüllen, Kürzen, Präfix und Suffix
 
+> Bekannte Grenze der Vorschau (geprüft am 29.10.2026, Version 11.15.2): Beim Hinzufügen des Präfixes `INV-` zeigt die Vorschau für `INV-4711` fälschlich `INV-INV-4711`. Der separat geprüfte Server-Test liefert unverändert `INV-4711`. Prüfe Wiederholungen deshalb zusätzlich mit einem Server-Test; ein korrektes Vorschauergebnis allein belegt keine vollständige Ausführung beim Speichern.
+
 [Zurück zum vollständigen Praxisüberblick](praxisueberblick.md)
 
 Kopffeld · pad: Länge 10, Zeichen 0, links; truncate: Länge 10; affix: exakte Präfix-/Suffixoperation.
@@ -9,7 +11,7 @@ Kopffeld · pad: Länge 10, Zeichen 0, links; truncate: Länge 10; affix: exakte
 1. Für die Nummer **Auffüllen** wählen; der aktuelle deutsche Editor nennt diesen Schritt „Unterlage“. Mindestlänge 10, Füllzeichen `0`, Seite links setzen. `4711` muss `0000004711` ergeben.
 2. Mit einer bereits elfstelligen Eingabe gegenprüfen: Auffüllen darf nichts abschneiden. Für Ergänzungen rechts separat Länge 6, Zeichen `_` und Eingabe `ABC` testen.
 3. In einer eigenen Regel **Kürzen** mit Maximallänge 10 einstellen. `ABCDEFGHIJKL` wird `ABCDEFGHIJ`, `ABC` bleibt erhalten. Prüfen, ob unterschiedliche Eingaben dadurch dieselbe Kennung ergeben könnten.
-4. **Affix** mit Präfix hinzufügen `INV-` testen. Anschließend `INV-4711` als Eingabe prüfen: Das exakte vorhandene Präfix darf nicht erneut ergänzt werden.
+4. **Affix** mit Präfix hinzufügen `INV-` testen. Anschließend `INV-4711` als Eingabe prüfen: Das exakte vorhandene Präfix darf im Server-Test nicht erneut ergänzt werden; die bekannte Abweichung der Vorschau steht im Hinweis oben.
 5. Die anderen Affix-Varianten getrennt konfigurieren: Suffix hinzufügen `-DE`, Präfix entfernen `Art.-Nr. ` und Suffix entfernen ` EUR`. Beim Entfernen auch einen nicht passenden Rand und abweichende Großschreibung testen.
 6. Die Ausgabe erneut als Eingabe verwenden. Besonders beim Entfernen mehrfach vorhandener Affixe kann ein zweiter Durchlauf weiter verändern.
 
@@ -22,6 +24,8 @@ Kopffeld · pad: Länge 10, Zeichen 0, links; truncate: Länge 10; affix: exakte
 Auffüllen ergänzt links oder rechts ein einzelnes Füllzeichen bis zur Mindestlänge. Mit zehn Stellen und Null links wird aus einer vierstelligen Nummer eine zehnstellige Kennung. Eine bereits längere Nummer bleibt länger. Auffüllen ist also keine Längenprüfung. Kürzen behält dagegen nur die ersten Zeichen bis zur gewählten Höchstlänge. Diese Information geht verloren. Vor einem ERP-Einsatz prüfe ich, ob verschiedene Nummern nach dem Kürzen identisch werden könnten. Kurze Werte bleiben unverändert.
 
 ## 2. Präfix und Suffix
+
+Die folgenden Affix-Ergebnisse beschreiben die geprüfte Serverausführung.
 
 Affix bietet vier Varianten: Präfix hinzufügen, Suffix hinzufügen, Präfix entfernen und Suffix entfernen. Ein hinzugefügtes Präfix wird nicht noch einmal ergänzt, wenn der Wert bereits genau damit beginnt. Das gilt entsprechend für ein Suffix. Entfernen prüft dagegen genau den Anfang oder das Ende. Eine abweichende Großschreibung wird nicht automatisch gleichgesetzt. Steht der Text mitten im Wert, bleibt er erhalten. Für beliebige Fundstellen verwende ich Suchen und Ersetzen.
 
@@ -56,8 +60,8 @@ Prüfen Sie einen passenden Fall, einen Gegenfall, einen leeren Wert und ein ber
 
 ## Videoanleitung
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-03-numbers-and-affixes-preview-admin/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-03-numbers-and-affixes-preview-admin/v2/de.mp4" %}
 Nummern formen: Auffüllen, Kürzen, Präfix und Suffix – Konfiguration, Beispiele und Gegenfälle.
 {% endembed %}
 
-[Video mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-03-numbers-and-affixes-preview-admin/v1/de.html). Die fachliche und vollständige Hörprüfung dieser Reviewfassung steht noch aus.
+[Video mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-03-numbers-and-affixes-preview-admin/v2/de.html). Die fachliche und vollständige Hörprüfung dieser Reviewfassung steht noch aus.

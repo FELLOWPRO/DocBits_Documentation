@@ -1,5 +1,7 @@
 # Transformationsregeln: vollständiger Praxisüberblick
 
+> Bekannte Grenze der Vorschau (geprüft am 29.10.2026, Version 11.15.2): Beim Hinzufügen des Präfixes `INV-` zeigt die Vorschau für `INV-4711` fälschlich `INV-INV-4711`. Der separat geprüfte Server-Test liefert unverändert `INV-4711`. Prüfe Wiederholungen deshalb zusätzlich mit einem Server-Test; ein korrektes Vorschauergebnis allein belegt keine vollständige Ausführung beim Speichern.
+
 Stand der Prüfung: 28. Oktober 2026. Die Beispiele wurden mit synthetischen Schulungswerten auf Dev NOVA geprüft. Eine Vorschau ist kein Nachweis einer gespeicherten Dokumentänderung, eines Bestellabgleichs oder eines ERP-Exports.
 
 ## Vier Geltungsbereiche
@@ -23,7 +25,7 @@ Der geprüfte Editor bietet 14 Wertschritte für Kopf/Spalte, zwei Schritte für
 | Trimmen (`trim`) | beide / links / rechts; Zeichen leer = Leerraum | `  4711  ` → `4711` | `47 11` bleibt erhalten. Links Zeichen `0`: `004711` → `4711`, aber `000` → leer. Zeichen sind eine Menge, kein vollständiger Präfixtext. |
 | Auffüllen (`pad`) | Mindestlänge, ein Füllzeichen, links/rechts | Länge 10, links `0`: `4711` → `0000004711` | Bereits 11 Zeichen bleiben 11 Zeichen. Rechts `_`, Länge 6: `ABC` → `ABC___`. |
 | Kürzen (`truncate`) | maximale Länge | Länge 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` | `ABC` bleibt `ABC`. Abschneiden verliert Informationen und kann Nummern zusammenfallen lassen. |
-| Affix (`affix`) | Präfix/Suffix hinzufügen/entfernen | `INV-` + `4711` → `INV-4711` | Vorhandenes exaktes Affix wird nicht doppelt hinzugefügt. Entfernen wirkt nur am passenden Rand und beachtet Großschreibung. |
+| Affix (`affix`) | Präfix/Suffix hinzufügen/entfernen | `INV-` + `4711` → `INV-4711` | Der Server fügt ein vorhandenes exaktes Affix nicht doppelt hinzu; die Vorschau weicht beim Präfix derzeit ab. Entfernen wirkt nur am passenden Rand und beachtet Großschreibung. |
 | Zeichen bereinigen (`sanitize`) | alphanumerisch / Buchstaben / Ziffern / alphanumerisch + Leerzeichen behalten; alternativ Zeichenklasse entfernen | `DE 123.456.789` → `DE123456789` | Kennzeichen können bedeutungstragend sein. Beim Entfernen ist die Eingabe eine Regex-Zeichenklasse; Bindestrich korrekt schützen, z. B. `.\-/`. |
 | Teilstück (`substring`) | Start + Länge **oder** Start + Ende; negative Indizes möglich | Start 3, Ende 7: `DE-4711-X` → `4711` | Start zählt ab 0, Ende ist exklusiv. Start −4: letzte vier Zeichen. Getrennte Originalquelle erforderlich. |
 | Extrahieren (`regex_extract`) | regulärer Ausdruck, Erfassungsgruppe | `PO[- ]?(\d+)`, Gruppe 1: `Order PO-45001234` → `45001234` | Erster Treffer; Gruppe 0 = vollständiger Treffer. Ohne Treffer: leer. Getrennte Quelle erforderlich. |
@@ -80,7 +82,7 @@ Mit „Stets“ gilt die Regel ohne fachliche Einschränkung für den Dokumentty
 Regeln können in mehreren Verarbeitungsdurchläufen und beim Speichern erneut laufen. Prüfen Sie immer **die ganze Pipeline**, nicht nur die Stabilität eines einzelnen Schritts.
 
 * `substring`, `regex_extract` und `regex_replace` dürfen im geprüften Serververtrag nicht ihren eigenen Zielwert lesen. Eine getrennte Quelle ist erforderlich; `run_once` hebt diese Vorgabe nicht auf.
-* Ergänzen eines bereits vorhandenen exakten Affixes ist stabil. Entfernen eines mehrfach vorhandenen Präfixes kann dagegen bei jedem Durchlauf weiter entfernen.
+* Serverseitiges Ergänzen eines bereits vorhandenen exakten Affixes ist stabil; die Vorschau ist separat zu prüfen. Entfernen eines mehrfach vorhandenen Präfixes kann dagegen bei jedem Durchlauf weiter entfernen.
 * `A→B` und `B→C` in derselben Wertzuordnung können bei zwei Durchläufen aus `A` schließlich `C` machen. Testen Sie Ausgaben erneut als Eingaben.
 * `clear_rows → add_row` baut eine Tabelle begrenzt neu auf. `add_row` ohne vorheriges Löschen benötigt eine geeignete Einmalausführung, sonst wächst die Tabelle bei jedem Speichern.
 * „Nur einmal pro Dokument“ markiert eine tatsächlich angewendete Regel. Nicht erfüllte Bedingungen verbrauchen die Anwendung nicht. Ohne verlässlich lesbaren Dokument-/Anwendungsnachweis wird eine Einmalregel zurückgestellt.

@@ -2,7 +2,7 @@
 
 ## Detecte duplicatas e tome uma decisão informada
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-pt-20261028.png" alt="Detecte duplicatas e tome uma decisão informada"><figcaption><p>Detecte duplicatas e tome uma decisão informada</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-pt-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-pt-light-20261029.png" alt="Detecte duplicatas e tome uma decisão informada"></picture><figcaption><p>Detecte duplicatas e tome uma decisão informada</p></figcaption></figure>
 
 DocBits compara os campos configurados dentro da janela de tempo selecionada. Quando uma correspondência for encontrada, abra o aviso de duplicata e compare os documentos antes de continuar ou arquivar. O bloqueio de exportações duplicadas é uma configuração separada; uma correspondência não arquiva automaticamente um documento.
 

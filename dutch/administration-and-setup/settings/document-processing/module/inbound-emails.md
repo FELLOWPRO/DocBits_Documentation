@@ -2,7 +2,7 @@
 
 ## Van binnenkomende e-mail tot een document dat klaar is om te beoordelen
 
-<figure><img src="../../../../.gitbook/assets/intro-process-01-email-nl-20261028.png" alt="Van binnenkomende e-mail tot een document dat klaar is om te beoordelen"><figcaption><p>Van binnenkomende e-mail tot een document dat klaar is om te beoordelen</p></figcaption></figure>
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-nl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-nl-light-20261029.png" alt="Van binnenkomende e-mail tot een document dat klaar is om te beoordelen"></picture><figcaption><p>Van binnenkomende e-mail tot een document dat klaar is om te beoordelen</p></figcaption></figure>
 
 De afbeelding laat twee manieren zien: een aangesloten mailbox en doorsturen naar een DocBits-importadres. Ondersteunde documentbijlagen worden geïmporteerd. Controleer afzenderbeperkingen, organisatie en routering en verifieer vervolgens de daadwerkelijke import. Het verzenden van een e-mail bewijst niet dat de documenten met succes zijn geïmporteerd.
 

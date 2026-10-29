@@ -6,7 +6,7 @@ Die Einstellung **Aufgaben und Benachrichtigungen** aktiviert die integrierte Au
 
 Diese Einstellung ist **standardmäßig deaktiviert**. Wenn sie aktiviert ist, erscheinen darunter vier weitere Optionen:
 
-* **Dashboard-Aufgaben zählen**: zeigt im Dashboard an, welche Dokumente offene Aufgaben haben.
+* **Aufgabenanzahl im Dashboard**: zeigt im Dashboard an, welche Dokumente offene Aufgaben haben.
 * **„Alle“-Filter für Nicht-Admins erlauben**: Benutzer ohne Administratorrechte dürfen alle Aufgaben sehen.
 * **Aufgabenlöschung durch Nicht-Administratoren**: legt fest, welche Aufgaben Benutzer ohne Administratorrechte löschen dürfen.
 * **Erledigung von Aufgaben ohne Administratorrechte**: legt fest, welche Aufgaben Benutzer ohne Administratorrechte abschließen dürfen.
@@ -16,17 +16,16 @@ Für Administratoren der Organisation gelten diese Einschränkungen nie.
 ### Was bewirkt die Einstellung?
 
 * **Aktiviert**: Die Funktionen für Aufgaben und Benachrichtigungen werden in DocBits verfügbar. Benutzer können Aufgaben zuweisen, ihren Status verfolgen und benachrichtigt werden, wenn etwas ihre Aufmerksamkeit erfordert.
-* **Deaktiviert**: Aufgabenzuweisung und die zugehörigen Benachrichtigungen sind ausgeschaltet. Dabei wird auch **Dashboard-Aufgaben zählen** ausgeschaltet.
+* **Deaktiviert**: Aufgabenzuweisung und die zugehörigen Benachrichtigungen sind ausgeschaltet. Dabei wird auch **Aufgabenanzahl im Dashboard** ausgeschaltet.
 
-### Dashboard-Aufgaben zählen
-
-Die Option **Dashboard-Aufgaben zählen** steuert, ob das Dashboard anzeigt, welche Dokumente offene Aufgaben haben. Sie blendet keinen Zähler ein, sondern ein Aufgabensymbol am jeweiligen Dokument.
+### Aufgabenanzahl im Dashboard
+Die Option **Aufgabenanzahl im Dashboard** steuert, ob das Dashboard anzeigt, welche Dokumente offene Aufgaben haben. Sie blendet keinen Zähler ein, sondern ein Aufgabensymbol am jeweiligen Dokument.
 
 * **Aktiviert**: Ein Dokument mit Aufgaben im Status **Offen** oder **In Arbeit** zeigt in der Dashboard-Liste ein Aufgabensymbol. Wenn Sie mit der Maus über das Symbol fahren, sehen Sie, wie viele offene Aufgaben das Dokument hat, z. B. „2 Offene Aufgabe(n)“. Erledigte, abgelehnte und gelöschte Aufgaben werden nicht mitgezählt.
 * **Deaktiviert**: Das Symbol wird ausgeblendet. Aufgaben funktionieren weiterhin normal.
 
 {% hint style="info" %}
-**Dashboard-Aufgaben zählen** hängt von **Aufgaben und Benachrichtigungen** ab. Wenn Sie Aufgaben und Benachrichtigungen ausschalten, wird auch die Aufgabenanzeige im Dashboard ausgeschaltet.
+**Aufgabenanzahl im Dashboard** hängt von **Aufgaben und Benachrichtigungen** ab. Wenn Sie Aufgaben und Benachrichtigungen ausschalten, wird auch die Aufgabenanzeige im Dashboard ausgeschaltet.
 {% endhint %}
 
 ### „Alle“-Filter für Nicht-Admins erlauben
@@ -44,10 +43,10 @@ Die Aufgabenübersicht hat einen Filter **Zugewiesen an** mit den Optionen **All
 | --- | --- |
 | **Keine** | Keine Aufgaben. |
 | **Nur erstellte Aufgaben** | Aufgaben, die sie selbst erstellt haben. |
-| **Aufgaben erstellt und zugewiesen** | Aufgaben, die sie selbst erstellt haben, sowie Aufgaben, die ihnen oder einer ihrer Gruppen zugewiesen sind. Das gilt, solange die Option nie geändert wurde. |
+| **Erstellte und zugewiesene Aufgaben** | Aufgaben, die sie selbst erstellt haben, sowie Aufgaben, die ihnen oder einer ihrer Gruppen zugewiesen sind. Das gilt, solange die Option nie geändert wurde. |
 | **Alle Aufgaben** | Alle Aufgaben. |
 
-Benutzer können die Aufgaben, die sie selbst erstellt haben, immer löschen, außer bei **Keine**. Eine Aufgabe, die niemandem zugewiesen ist, können daher nur der Benutzer, der sie erstellt hat, Administratoren oder Benutzer bei **Alle Aufgaben** löschen. Eine Aufgabe ohne gespeicherten Ersteller, zum Beispiel eine vom System erstellte, können nur die Benutzer, denen sie zugewiesen ist (bei **Aufgaben erstellt und zugewiesen**), Administratoren oder Benutzer bei **Alle Aufgaben** löschen.
+Benutzer können die Aufgaben, die sie selbst erstellt haben, immer löschen, außer bei **Keine**. Eine Aufgabe, die niemandem zugewiesen ist, können daher nur der Benutzer, der sie erstellt hat, Administratoren oder Benutzer bei **Alle Aufgaben** löschen. Eine Aufgabe ohne gespeicherten Ersteller, zum Beispiel eine vom System erstellte, können nur die Benutzer, denen sie zugewiesen ist (bei **Erstellte und zugewiesene Aufgaben**), Administratoren oder Benutzer bei **Alle Aufgaben** löschen.
 
 {% hint style="warning" %}
 Wird eine Aufgabe gelöscht, verschwindet sie ohne Entscheidung aus der Aufgabenliste. Sollen Aufgaben nur durch eine Entscheidung abgeschlossen werden, stellen Sie **Aufgabenlöschung durch Nicht-Administratoren** auf **Keine** und **Erledigung von Aufgaben ohne Administratorrechte** (siehe unten) auf **Nur für Administratoren**.
@@ -90,7 +89,7 @@ Bei **Standardverhalten** bleiben offene Aufgaben offen, wenn ein Dokument zurü
 
 * **Klare Zuständigkeiten**: Dokumente können der richtigen Person zugewiesen werden, statt sich auf E-Mails zu verlassen.
 * **Nichts wird vergessen**: Benachrichtigungen erinnern Benutzer an Dokumente, die ihr Handeln erfordern.
-* **Offene Arbeit auf einen Blick**: Mit **Dashboard-Aufgaben zählen** zeigt das Dashboard, welche Dokumente noch offene Aufgaben haben.
+* **Offene Arbeit auf einen Blick**: Mit **Aufgabenanzahl im Dashboard** zeigt das Dashboard, welche Dokumente noch offene Aufgaben haben.
 * **Entscheidungen bleiben nachvollziehbar**: Mit den Optionen zum Löschen und Abschließen verlassen Aufgaben die Warteschlange nur durch eine Entscheidung oder durch einen Administrator.
 
 ### Verwendung
@@ -100,7 +99,7 @@ Bei **Standardverhalten** bleiben offene Aufgaben offen, wenn ein Dokument zurü
 3. Wählen Sie **Module**.
 4. Öffnen Sie den Abschnitt **Dokumenttyp**.
 5. Schalten Sie **Aufgaben und Benachrichtigungen** ein.
-6. (Optional) Schalten Sie **Dashboard-Aufgaben zählen** ein, um das Aufgabensymbol im Dashboard anzuzeigen.
+6. (Optional) Schalten Sie **Aufgabenanzahl im Dashboard** ein, um das Aufgabensymbol im Dashboard anzuzeigen.
 7. (Optional) Schalten Sie **„Alle“-Filter für Nicht-Admins erlauben** ein, wenn alle Benutzer alle Aufgaben sehen sollen.
 8. (Optional) Wählen Sie unter **Aufgabenlöschung durch Nicht-Administratoren**, welche Aufgaben Benutzer löschen dürfen.
 9. (Optional) Wählen Sie unter **Erledigung von Aufgaben ohne Administratorrechte**, wer Aufgaben abschließen darf.
@@ -110,6 +109,6 @@ Die Optionen zum Löschen und Abschließen werden gespeichert, sobald Sie einen 
 ### Wann diese Funktion nutzen
 
 * **Teams, die sich Dokumentarbeit teilen**: Aktivieren Sie sie, wenn mehrere Personen Dokumente validieren oder genehmigen und Arbeit aneinander übergeben müssen.
-* **Sichtbarkeit der Arbeitslast**: Aktivieren Sie zusätzlich **Dashboard-Aufgaben zählen**, wenn das Team im Dashboard sehen soll, welche Dokumente noch offene Aufgaben haben.
+* **Sichtbarkeit der Arbeitslast**: Aktivieren Sie zusätzlich **Aufgabenanzahl im Dashboard**, wenn das Team im Dashboard sehen soll, welche Dokumente noch offene Aufgaben haben.
 * **Aufgaben, die nur Administratoren oder eine Entscheidung abschließen sollen**: Stellen Sie **Erledigung von Aufgaben ohne Administratorrechte** auf **Nur für Administratoren** oder **Administratoren und zugewiesene Benutzer** und **Aufgabenlöschung durch Nicht-Administratoren** auf **Keine**, wenn Benutzer Aufgaben, die nicht tatsächlich erledigt wurden, nicht entfernen dürfen.
 * **Einzelnutzer- oder vollautomatische Setups**: Sie können sie ausgeschaltet lassen, wenn niemand Dokumente zuweisen oder Aufgaben verfolgen muss.

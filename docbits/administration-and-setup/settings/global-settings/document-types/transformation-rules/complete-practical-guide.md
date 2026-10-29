@@ -108,4 +108,8 @@ No new OCR recognition, no mathematical unit or currency conversion, no arbitrar
 
 ## Consistent Practice Document
 
-[Download training invoice](../../../../../.gitbook/assets/transformation-training-invoice-en-20261028.pdf). The fictitious document contains two positions, different cases of the unit, and a purchase order reference in free text. For reproducible rule tests, the initial values are prepared deliberately; this is not proof of an automatically error-free OCR extraction.
+{% file src="../../../../../.gitbook/assets/transformation-training-invoice-en-20261028.pdf" %}
+Download training invoice
+{% endfile %}
+
+The fictitious document contains two positions, different cases of the unit, and a purchase order reference in free text. For reproducible rule tests, the initial values are prepared deliberately; this is not proof of an automatically error-free OCR extraction.

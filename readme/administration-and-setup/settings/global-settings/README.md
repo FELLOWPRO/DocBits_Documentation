@@ -6,7 +6,7 @@ Gebruik **Instellingen** om de organisatie en de manier waarop documenten worden
 2. Kies onder **Organisatie & toegang** het onderdeel dat u nodig hebt, bijvoorbeeld **Bedrijfsinformatie** of **Gebruikers**.
 3. Kies onder **Documentverwerking** de optie **Documenttypen** om een bepaald soort document te configureren.
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-nl.png" alt="Nederlands instellingenmenu met het scherm Bedrijfsinformatie"><figcaption>Huidige weergave van de Sandbox (interface in het Nederlands) met fictieve voorbeeldgegevens. Bedrijfsinformatie is geselecteerd; er zijn geen waarden gewijzigd.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-nl.png" alt="Nederlands instellingenoverzicht met navigatie en snelle links"><figcaption>Nederlandstalig instellingenoverzicht met het navigatiemenu en snelle links naar bedrijfsinformatie, gebruikers, documenttypen, importeren, exporteren en integratie en SSO. Er zijn geen instellingen gewijzigd.</figcaption></figure>
 
 Begin met de gids die bij uw taak past:
 

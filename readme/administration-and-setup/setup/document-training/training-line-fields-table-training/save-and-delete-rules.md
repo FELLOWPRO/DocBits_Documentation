@@ -6,7 +6,7 @@ Nachdem Sie das Training oder die Korrektur einer Tabelle abgeschlossen haben, i
 
 Nachdem alle Spalten und Korrekturen definiert wurden:
 
-1. Klicken Sie oben auf die Schaltfläche **Regeln speichern**.
+1. Klicken Sie unterhalb der Tabelle auf die Schaltfläche **Regeln speichern**.
 2. Ein Regelzähler bestätigt, wie viele Extraktionsregeln gespeichert wurden.
 
 Dies stellt sicher, dass DocBits Ihr trainiertes Layout automatisch beim nächsten Mal verwendet, wenn es ein ähnliches Dokument sieht.

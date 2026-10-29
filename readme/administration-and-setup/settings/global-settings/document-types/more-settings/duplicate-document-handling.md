@@ -2,7 +2,7 @@
 
 ## Rileva i duplicati e prendi una decisione informata
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-it-20261028.png" alt="Rileva i duplicati e prendi una decisione informata"><figcaption><p>Rileva i duplicati e prendi una decisione informata</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-it-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-it-light-20261029.png" alt="Rileva i duplicati e prendi una decisione informata"></picture><figcaption><p>Rileva i duplicati e prendi una decisione informata</p></figcaption></figure>
 
 DocBits confronta i campi configurati all'interno della finestra temporale selezionata. Quando viene trovata una corrispondenza, apri l'avviso di duplicato e confronta i documenti prima di continuare o archiviare. Il blocco delle esportazioni duplicate è un'impostazione separata; una corrispondenza non archivia automaticamente un documento.
 

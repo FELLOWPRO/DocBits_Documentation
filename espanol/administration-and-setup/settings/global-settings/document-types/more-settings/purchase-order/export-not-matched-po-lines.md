@@ -2,7 +2,7 @@
 
 ## Comprender el alcance de las exportaciones con tres líneas de orden de compra
 
-<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-es-20261028.png" alt="Comprender el alcance de las exportaciones con tres líneas de orden de compra"><figcaption><p>Comprender el alcance de las exportaciones con tres líneas de orden de compra</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../../.gitbook/assets/intro-process-03-po-export-es-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-es-light-20261029.png" alt="Comprender el alcance de las exportaciones con tres líneas de orden de compra"></picture><figcaption><p>Comprender el alcance de las exportaciones con tres líneas de orden de compra</p></figcaption></figure>
 
 En este ejemplo, la orden de compra tiene tres líneas y solo una coincide con una línea de confirmación de orden. Con “Export Not Matched PO Lines” desactivado, solo se exporta la línea de orden de compra coincidente. Con la opción activada, también se incluyen las dos líneas de orden de compra no coincidentes. Esto no crea coincidencias adicionales.
 

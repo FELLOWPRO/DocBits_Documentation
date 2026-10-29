@@ -2,7 +2,7 @@
 
 ## Detecteer duplicaten en neem een weloverwogen beslissing
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-nl-20261028.png" alt="Detecteer duplicaten en neem een weloverwogen beslissing"><figcaption><p>Detecteer duplicaten en neem een weloverwogen beslissing</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-nl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-nl-light-20261029.png" alt="Detecteer duplicaten en neem een weloverwogen beslissing"></picture><figcaption><p>Detecteer duplicaten en neem een weloverwogen beslissing</p></figcaption></figure>
 
 DocBits vergelijkt de geconfigureerde velden binnen het geselecteerde tijdvenster. Wanneer er een match wordt gevonden, opent u de duplicaatwaarschuwing en vergelijkt u de documenten voordat u doorgaat of archiveert. Het blokkeren van dubbele exporten is een aparte instelling; een match archiveert niet automatisch een document.
 

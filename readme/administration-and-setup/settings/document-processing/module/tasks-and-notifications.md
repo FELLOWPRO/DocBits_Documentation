@@ -8,8 +8,8 @@ Esta opción está **desactivada de forma predeterminada**. Cuando se activa, ap
 
 * **Recuento de tareas del cuadro de mando**: muestra en el Panel qué documentos tienen tareas abiertas.
 * **Permitir el filtro "Todos" para usuarios que no sean administradores**: permite que los usuarios que no son administradores vean todas las tareas.
-* **Eliminación de tareas no administrativas**: determina qué tareas pueden eliminar los usuarios que no son administradores.
-* **Finalización de tareas no administrativas**: determina qué tareas pueden cerrar los usuarios que no son administradores.
+* **Eliminación de tareas por no administradores**: determina qué tareas pueden eliminar los usuarios que no son administradores.
+* **Cierre de tareas por no administradores**: determina qué tareas pueden cerrar los usuarios que no son administradores.
 
 Estas opciones nunca restringen a los administradores de la organización.
 
@@ -29,16 +29,14 @@ Estas opciones nunca restringen a los administradores de la organización.
 **Recuento de tareas del cuadro de mando** depende de **Tareas y notificaciones**. Si desactiva Tareas y notificaciones, el icono de tareas del Panel también se desactiva.
 {% endhint %}
 
-### Permitir el filtro "Todos" para usuarios que no sean administradores.
-
+### Permitir el filtro "Todos" para usuarios que no sean administradores
 El resumen de tareas tiene un filtro **Asignado a** con las opciones **Todo** y **Asignado a mí**. Los administradores siempre disponen de ambas opciones.
 
 * **Activada**: Los usuarios que no son administradores también pueden elegir **Todo** y ver todas las tareas de la organización.
 * **Desactivada** (predeterminado): Los usuarios que no son administradores solo disponen de **Asignado a mí**, por lo que el resumen les muestra las tareas que tienen asignadas.
 
-### Eliminación de tareas no administrativas
-
-Pese a su nombre, **Eliminación de tareas no administrativas** no se refiere a un tipo de tarea: determina qué tareas y notificaciones pueden eliminar los usuarios que no son administradores. Los administradores siempre pueden eliminar todas las tareas.
+### Eliminación de tareas por no administradores
+**Eliminación de tareas por no administradores** determina qué tareas y notificaciones pueden eliminar los usuarios que no son administradores. Los administradores siempre pueden eliminar todas las tareas.
 
 | Opción | Los usuarios que no son administradores pueden eliminar |
 | --- | --- |
@@ -50,12 +48,11 @@ Pese a su nombre, **Eliminación de tareas no administrativas** no se refiere a 
 Los usuarios siempre pueden eliminar las tareas que han creado, salvo con **Ninguno**. Por eso, una tarea que no está asignada a nadie solo pueden eliminarla el usuario que la creó, los administradores o los usuarios cuando está seleccionada **Todas las tareas**. Una tarea sin creador registrado, por ejemplo una creada por el sistema, solo pueden eliminarla los usuarios a los que está asignada (con **Tareas creadas y asignadas**), los administradores o los usuarios cuando está seleccionada **Todas las tareas**.
 
 {% hint style="warning" %}
-Eliminar una tarea la quita de la lista de tareas sin que se tome ninguna decisión. Si las tareas solo deben cerrarse mediante una decisión, configure **Eliminación de tareas no administrativas** en **Ninguno** y **Finalización de tareas no administrativas** (ver más abajo) en **Solo para administradores**.
+Eliminar una tarea la quita de la lista de tareas sin que se tome ninguna decisión. Si las tareas solo deben cerrarse mediante una decisión, configure **Eliminación de tareas por no administradores** en **Ninguno** y **Cierre de tareas por no administradores** (ver más abajo) en **Solo para administradores**.
 {% endhint %}
 
-### Finalización de tareas no administrativas
-
-**Finalización de tareas no administrativas** determina qué usuarios que no son administradores pueden cerrar una tarea, es decir, ponerla en **Hecho** o **Rechazado**. Los administradores siempre pueden cerrar tareas, sea cual sea la opción seleccionada aquí.
+### Cierre de tareas por no administradores
+**Cierre de tareas por no administradores** determina qué usuarios que no son administradores pueden cerrar una tarea, es decir, ponerla en **Hecho** o **Rechazado**. Los administradores siempre pueden cerrar tareas, sea cual sea la opción seleccionada aquí.
 
 | Opción | Quién puede cerrar una tarea |
 | --- | --- |
@@ -78,7 +75,7 @@ En los tipos de documento con **Historial de aprobaciones** activado, **Aprobar*
 
 Como con **Administradores y usuarios asignados** o **Solo para administradores** los usuarios no pueden cerrar sus propias tareas, DocBits cierra por sí mismo las tareas abiertas de un documento cuando un documento pendiente de aprobación se devuelve a validación:
 
-* **Restart workflow** en la pantalla de aprobación: se rechazan todas las tareas abiertas del documento.
+* **Reiniciar workflow** en la pantalla de aprobación: se rechazan todas las tareas abiertas del documento.
 * **Rechazar y corregir**: se rechazan todas las tareas abiertas del documento.
 * **Aprobar y corregir**: se completan las tareas que completaría **Aprobar** (ver más arriba), solo en los tipos de documento con **Historial de aprobaciones** activado. Se rechazan todas las demás tareas abiertas.
 
@@ -102,8 +99,8 @@ Con **Comportamiento predeterminado**, las tareas abiertas siguen abiertas cuand
 5. Active **Tareas y notificaciones**.
 6. (Opcional) Active **Recuento de tareas del cuadro de mando** para mostrar el icono de tarea en el Panel.
 7. (Opcional) Active **Permitir el filtro "Todos" para usuarios que no sean administradores** si todos los usuarios deben ver todas las tareas.
-8. (Opcional) Elija en **Eliminación de tareas no administrativas** qué tareas pueden eliminar los usuarios.
-9. (Opcional) Elija en **Finalización de tareas no administrativas** quién puede cerrar tareas.
+8. (Opcional) Elija en **Eliminación de tareas por no administradores** qué tareas pueden eliminar los usuarios.
+9. (Opcional) Elija en **Cierre de tareas por no administradores** quién puede cerrar tareas.
 
 Las opciones de eliminación y finalización se guardan en cuanto elige un valor.
 
@@ -111,5 +108,5 @@ Las opciones de eliminación y finalización se guardan en cuanto elige un valor
 
 * **Equipos que comparten el trabajo con documentos**: Actívela cuando varias personas validan o aprueban documentos y necesitan pasarse el trabajo entre sí.
 * **Visibilidad de la carga de trabajo**: Active también **Recuento de tareas del cuadro de mando** cuando el equipo deba ver en el Panel qué documentos siguen teniendo tareas abiertas.
-* **Tareas que solo deben cerrar los administradores o una decisión**: Ponga **Finalización de tareas no administrativas** en **Solo para administradores** o **Administradores y usuarios asignados**, y **Eliminación de tareas no administrativas** en **Ninguno**, cuando los usuarios no deban quitar tareas que en realidad no se han hecho.
+* **Tareas que solo deben cerrar los administradores o una decisión**: Ponga **Cierre de tareas por no administradores** en **Solo para administradores** o **Administradores y usuarios asignados**, y **Eliminación de tareas por no administradores** en **Ninguno**, cuando los usuarios no deban quitar tareas que en realidad no se han hecho.
 * **Configuraciones de un solo usuario o totalmente automatizadas**: Puede dejarla desactivada si nadie necesita asignar documentos ni seguir tareas.

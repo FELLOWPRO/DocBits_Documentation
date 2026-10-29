@@ -28,10 +28,6 @@ Rules are defined per **document type** and run on every document of that type: 
 | Only currencies your ERP knows are allowed | export errors in the ERP | **List of Values** on Currency |
 | Tell users about unusual values without blocking them | not possible | any rule with the severity **Warning** |
 
-{% hint style="info" %}
-While the feature is in beta, the settings described below only appear when the **Document Types** settings page is opened with `?beta=true` appended to the address.
-{% endhint %}
-
 ## Enable custom validation rules
 
 Custom validation rules are switched on **per document type**. There is no organisation-wide switch.

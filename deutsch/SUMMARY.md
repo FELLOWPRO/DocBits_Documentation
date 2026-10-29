@@ -464,6 +464,7 @@
         * [07 · Felder übernehmen, Festwerte, Leeren und Standardwerte](administration-and-setup/settings/global-settings/document-types/transformation-rules/07-felduebernahme-und-standardwerte.md)
         * [08 · Tabellenzeilen neu aufbauen](administration-and-setup/settings/global-settings/document-types/transformation-rules/08-tabellenzeilen.md)
         * [09 · Routing, Reihenfolge, Stammdaten und Wiederholungen](administration-and-setup/settings/global-settings/document-types/transformation-rules/09-routing-und-ausfuehrung.md)
+        * [OCR-Fehler in einer Bestellnummer korrigieren](administration-and-setup/settings/global-settings/document-types/transformation-rules/correct-po-number-ocr-error.md)
       * [Weitere Einstellungen](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [Bewährte Vorgehensweisen](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [Fehlerbehebung](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)

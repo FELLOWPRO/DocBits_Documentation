@@ -6,7 +6,7 @@ Zodra u de training of correctie van een tabel heeft voltooid, is het belangrijk
 
 Nadat u alle kolommen en correcties heeft gedefinieerd:
 
-1. Klik op de knop **REGELS OPSLAAN** bovenaan.
+1. Klik op de knop **Regels opslaan** onder de tabel.
 2. Een regelteller bevestigt hoeveel extractieregels er zijn opgeslagen.
 
 Dit zorgt ervoor dat DocBits automatisch uw getrainde lay-out zal gebruiken de volgende keer dat het een vergelijkbaar document ziet.

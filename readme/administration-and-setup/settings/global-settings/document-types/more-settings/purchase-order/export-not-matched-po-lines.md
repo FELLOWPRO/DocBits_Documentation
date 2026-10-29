@@ -2,7 +2,7 @@
 
 ## Begrijp het exportbereik met drie inkooporderregels
 
-<figure><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-nl-20261028.png" alt="Begrijp het exportbereik met drie inkooporderregels"><figcaption><p>Begrijp het exportbereik met drie inkooporderregels</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../../.gitbook/assets/intro-process-03-po-export-nl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-nl-light-20261029.png" alt="Begrijp het exportbereik met drie inkooporderregels"></picture><figcaption><p>Begrijp het exportbereik met drie inkooporderregels</p></figcaption></figure>
 
 In dit voorbeeld heeft de inkooporder drie regels en wordt er slechts één gekoppeld aan een orderbevestigingsregel. Als “Export Not Matched PO Lines” is uitgeschakeld, wordt alleen de overeenkomende inkooporderregel geëxporteerd. Als de optie is ingeschakeld, worden de twee niet-gekoppelde inkooporderregels ook opgenomen. Hierdoor ontstaan er geen extra matches.
 

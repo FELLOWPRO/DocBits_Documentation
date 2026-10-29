@@ -68,6 +68,7 @@
     * [Problemen oplossen](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
     * [Sneltoetsen](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
   * [Taken](end-user-and-partner-section/end-user-section/tasks.md)
+  * [Pending Input](end-user-and-partner-section/end-user-section/pending-input.md)
   * [Dashboard voor verzendberichten](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Dashboard voor inkooporders](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
   * [Factuurdashboard](end-user-and-partner-section/end-user-section/invoice-dashboard.md)

@@ -459,6 +459,7 @@
       * [规则条件（应用条件）](administration-and-setup/settings/global-settings/document-types/rule-conditions-applies-when.md)
       * [自定义验证规则](administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md)
       * [转换规则](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
+        * [纠正采购订单号中的OCR错误](administration-and-setup/settings/global-settings/document-types/transformation-rules/correct-po-number-ocr-error.md)
       * [更多设置](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [最佳实践](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [故障排除](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)

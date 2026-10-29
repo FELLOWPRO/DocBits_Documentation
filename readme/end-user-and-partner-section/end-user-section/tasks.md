@@ -22,6 +22,12 @@ Usa la panoramica delle attività per trovare il lavoro assegnato e seguirne i p
 
 Il video utilizza un normale utente di test e documenti sintetici. Il completamento di un'attività è separato dall'approvazione o dall'esportazione della relativa fattura. Le azioni disponibili dipendono dalle autorizzazioni dell'account.
 
+## Quando non puoi contrassegnare un'attività come completata
+
+La tua organizzazione può limitare chi può chiudere le attività, cioè impostarle su **Fatto** o **Rifiutato**. In tal caso, per le attività che non puoi chiudere non vengono offerti il pulsante **Fatto**, gli stati **Fatto** e **Rifiutato** né **Contrassegnare come fatto**, e la bacheca delle attività non ti permette di trascinare un'attività di questo tipo nella colonna **Fatto** o **Rifiutato**. Le attività assegnate a te puoi comunque modificarle, salvarle e spostarle tra **Aperto** e **In corso**.
+
+Un amministratore della tua organizzazione stabilisce chi può chiudere ed eliminare le attività. Vedi [Attività e notifiche](../../administration-and-setup/settings/document-processing/module/tasks-and-notifications.md).
+
 <figure><img src="../../.gitbook/assets/customer-overview-it-b4f434add43a.png" alt="Panoramica delle attività con dati sintetici. Open resta in inglese nella colonna iniziale della versione illustrata; il completamento di un’attività è distinto dall’approvazione o esportazione della fattura. Immagine conservata, non una nuova esecuzione durante questa revisione."><figcaption><p>Panoramica delle attività con dati sintetici. Open resta in inglese nella colonna iniziale della versione illustrata; il completamento di un’attività è distinto dall’approvazione o esportazione della fattura. Immagine conservata, non una nuova esecuzione durante questa revisione.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/customer-find-it-b4f434add43a.png" alt="Elenco delle attività con dati dimostrativi sintetici. I valori Open e high restano in inglese nella versione illustrata. Immagine conservata da una pubblicazione indipendente; questa revisione non ha eseguito nuove attività."><figcaption><p>Elenco delle attività con dati dimostrativi sintetici. I valori Open e high restano in inglese nella versione illustrata. Immagine conservata da una pubblicazione indipendente; questa revisione non ha eseguito nuove attività.</p></figcaption></figure>

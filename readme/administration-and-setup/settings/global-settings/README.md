@@ -6,7 +6,7 @@ Utilisez les **Paramètres** pour gérer l'organisation et la manière dont les 
 2. Sous **Organisation et accès**, choisissez le domaine dont vous avez besoin, par exemple **Informations sur l'entreprise** ou **Utilisateurs**.
 3. Sous **Traitement des documents**, choisissez **Types de Documents** pour configurer un type de document précis.
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-fr.png" alt="Menu Paramètres et écran Informations sur l'entreprise en français"><figcaption>Vue actuelle de la Sandbox (interface en français) avec des données d'exemple fictives. Informations sur l'entreprise est sélectionné ; aucune valeur n'a été modifiée.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-fr.png" alt="Aperçu des paramètres de DocBits en français, avec navigation et liens rapides"><figcaption>Aperçu des paramètres en français avec le menu de navigation et les liens rapides vers les informations sur l’entreprise, les utilisateurs, les types de documents, l’importation, l’exportation et l’intégration SSO. Aucun paramètre n’a été modifié.</figcaption></figure>
 
 Commencez par le guide qui correspond à votre tâche :
 

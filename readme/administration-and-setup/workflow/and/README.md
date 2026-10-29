@@ -22,7 +22,7 @@ Algunas etiquetas del producto siguen en inglés o tienen traducciones incorrect
 
 Utilice una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activación **Cuando**. Agregue las comprobaciones que necesita antes de la acción **Entonces**. Cada tarjeta muestra campos para completar, como **Operador**, **Nombre de campo** o **Valor**; Las capturas de pantalla muestran las plantillas de tarjetas disponibles, no las reglas completadas.
 
-En **Generador de flujo de trabajo**, seleccione **Agregar tarjeta** en **Y...**. Elija una categoría a la izquierda o escriba el nombre de una tarjeta en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla al flujo de trabajo. Puede desplazarse por la lista de vista previa para ver más tarjetas. Utilice **×** para cerrar el selector sin elegir otra tarjeta. Después de configurar las tarjetas, guarde el flujo de trabajo. Consulte [Flujo de trabajo](..) para conocer los pasos circundantes **Cuando**, **Y** y **Entonces**.
+En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Y...**. Elija una categoría a la izquierda o escriba el nombre de una tarjeta en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla al flujo de trabajo. Puede desplazarse por la lista de vista previa para ver más tarjetas. Utilice **×** para cerrar el selector sin elegir otra tarjeta. Después de configurar las tarjetas, guarde el flujo de trabajo. Consulte [Flujo de trabajo](..) para conocer los pasos circundantes **Cuando**, **Y** y **Entonces**.
 
 ## Comparar con orden de compra
 

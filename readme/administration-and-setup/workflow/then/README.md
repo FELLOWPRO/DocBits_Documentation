@@ -1,6 +1,6 @@
 # Entonces
 
-Una tarjeta **Entonces** le indica a un flujo de trabajo qué hacer después de su activador **Cuando** y cualquier condición **Y**. En **Generador de flujo de trabajo**, seleccione **Agregar tarjeta** en **Luego...**. Elija una categoría a la izquierda o escriba un nombre en **Tarjeta de búsqueda**. Seleccione una vista previa de la tarjeta para agregarla, complete los campos que se muestran en la tarjeta y guarde el flujo de trabajo. Desplázate dentro del selector para ver más tarjetas. Seleccione **×** para cerrarlo sin agregar una tarjeta. Consulte [Flujo de trabajo](..) para ver la secuencia completa.
+Una tarjeta **Entonces** le indica a un flujo de trabajo qué hacer después de su activador **Cuando** y cualquier condición **Y**. En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Luego...**. Elija una categoría a la izquierda o escriba un nombre en **Tarjeta de búsqueda**. Seleccione una vista previa de la tarjeta para agregarla, complete los campos que se muestran en la tarjeta y guarde el flujo de trabajo. Desplázate dentro del selector para ver más tarjetas. Seleccione **×** para cerrarlo sin agregar una tarjeta. Consulte [Flujo de trabajo](..) para ver la secuencia completa.
 
 Las vistas previas a continuación muestran las acciones disponibles, no las configuraciones completadas. Elija la acción que coincida con el resultado que desea.
 

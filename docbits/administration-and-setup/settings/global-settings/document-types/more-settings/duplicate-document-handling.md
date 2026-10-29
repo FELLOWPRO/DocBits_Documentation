@@ -2,7 +2,7 @@
 
 ## Detect duplicates and make an informed decision
 
-<figure><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-en-20261028.png" alt="Detect duplicates and make an informed decision"><figcaption><p>Detect duplicates and make an informed decision</p></figcaption></figure>
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-en-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-en-light-20261029.png" alt="Detect duplicates and make an informed decision"></picture><figcaption><p>Detect duplicates and make an informed decision</p></figcaption></figure>
 
 DocBits compares the configured fields within the selected time window. When a match is found, open the duplicate warning and compare the documents before continuing or archiving. Blocking duplicate exports is a separate setting; a match does not automatically archive a document.
 

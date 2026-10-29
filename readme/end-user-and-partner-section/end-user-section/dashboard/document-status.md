@@ -22,6 +22,8 @@ Les statuts de traitement indiquent des étapes telles que l’OCR, la classific
 
 Si des durées de traitement sont disponibles, survolez un statut pour voir les phases et leur durée. Une icône de doublon apparaît pour les documents ayant des doublons possibles ; ouvrez-la pour comparer les documents associés.
 
+Un document peut aussi attendre la réponse d'un collègue. Il affiche alors le statut **Pending Input** et reste hors de la file active jusqu'à ce que la personne interrogée ait répondu et que la personne assignée clôture la demande. Voir [Pending Input](../pending-input.md).
+
 Ouvrez une ligne pour travailler dans l’écran de validation. Le menu d’actions propose les opérations autorisées : attribution, téléchargement, historique ou redémarrage du traitement. Les variantes de téléchargement dépendent du document et peuvent inclure des annotations ou des formats de facture électronique.
 
 Cochez plusieurs documents et ouvrez le menu de l’en-tête pour les actions groupées autorisées : attribution, fusion, redémarrage, relance d’export ou suppression. Vérifiez la sélection et chaque confirmation. Ces actions peuvent modifier les documents ; enregistrer une vue change uniquement la présentation de la liste.

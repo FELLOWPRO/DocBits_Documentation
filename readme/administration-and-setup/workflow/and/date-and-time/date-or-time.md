@@ -28,8 +28,8 @@ Diese Workflow-Karte prüft, ob das aktuelle Datum und die aktuelle Uhrzeit inne
 * **Bedingungsauswertung:** Wenn der Workflow die Karte erreicht, nimmt sie das aktuelle Datum und die aktuelle Uhrzeit in UTC und prüft, ob sie zwischen den beiden Werten auf der Karte liegen. Der frühere Wert wird als Beginn verwendet, die Reihenfolge der beiden Felder spielt also keine Rolle.
   * Ein Wert nur mit Uhrzeit (zum Beispiel `09:00`) wird mit dem heutigen Datum verwendet, sodass sich das Zeitfenster jeden Tag wiederholt.
   * Beginn und Ende gehören zum Zeitfenster: Genau zur Beginn- oder Endzeit ist **Ist** wahr.
-  * Ein Zeitfenster über Mitternacht kann nur mit Uhrzeiten eingetragen werden, zum Beispiel `22:00` bis `04:00`. Die Karte prüft dann auf die Zeit von 22:00 bis 04:00; die genauen Beginn- und Endzeiten gehören in diesem Fall nicht zum Zeitfenster.
-  * Ein Zeitfenster über Mitternacht mit vollständigen Daten (zum Beispiel `2026-11-01 22:00` bis `2026-11-02 04:00`) wird derzeit nicht korrekt ausgewertet und sollte nicht verwendet werden.
+  * Ein Zeitfenster über Mitternacht kann nur mit Uhrzeiten eingetragen werden, zum Beispiel `22:00` bis `04:00`. Die Karte prüft dann jeden Tag auf die Zeit von 22:00 bis 04:00, einschließlich der genauen Beginn- und Endzeit.
+  * Mit vollständigen Daten an zwei verschiedenen Tagen (zum Beispiel `2026-11-01 22:00` bis `2026-11-02 04:00`) prüft die Karte den gesamten Zeitraum vom ersten bis zum zweiten Zeitpunkt, einschließlich Beginn und Ende.
 * **Ausführung der Aktion:**
   * **True-Bedingung:**\
     Ist die Bedingung erfüllt, wird der Workflow mit den nächsten Karten fortgesetzt.

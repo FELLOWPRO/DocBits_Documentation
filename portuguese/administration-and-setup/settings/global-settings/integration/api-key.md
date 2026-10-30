@@ -2,10 +2,14 @@
 
 <figure><img src="../../../../.gitbook/assets/s150-api-key-list-row-pt.png" alt="Lista de chaves de API com chaves e dados da conta ocultos."><figcaption><p>Lista de chaves de API com chaves e dados da conta ocultos.</p></figcaption></figure>
 
-### API Key
+### Lista de chaves de API
 
-* **Key:** Este é o identificador único utilizado por aplicações externas para acessar a API do DocBits. É essencial para autenticar as requisições feitas ao DocBits a partir de outros softwares.
-* Ações como visualizar, regenerar ou copiar a chave de API podem ser realizadas aqui, dependendo das necessidades específicas e dos protocolos de segurança.
+Uma chave de API permite que outros sistemas acedam ao DocBits sem iniciar uma sessão de utilizador. A imagem acima oculta as chaves e os dados da conta.
+
+* **Chave:** A lista mostra apenas o prefixo, seguido de `****`. O ícone de cópia copia esse prefixo, não a chave completa. A chave completa é apresentada uma única vez, logo após a sua criação.
+* **Nome / Expira / Último Uso / Status:** As colunas mostram o nome, a data de expiração, a última utilização e o estado da chave.
+* **Criar chave de API:** Abre o diálogo para uma nova chave. A chave só é criada após a confirmação no diálogo. Consulte [Gestão de chaves de API](api-key-management.md) para conhecer os campos e a apresentação única da chave completa.
+* **Actions (menu de três pontos):** Para chaves ativas, o menu permite editar o nome e a descrição ou revogar a chave. Para chaves inativas ou revogadas, apresenta a opção de eliminar. A alteração é confirmada no diálogo seguinte.
 
 ### Configurações do fornecedor de serviços SSO (Single Sign-On)
 

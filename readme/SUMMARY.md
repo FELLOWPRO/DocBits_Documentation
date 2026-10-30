@@ -705,6 +705,7 @@
       * [Structuring and Improving Table Extraction in DocBits](administration-and-setup/setup/document-training/training-line-fields-table-training/improving-table-extraction-with-regex.md)
       * [Save and Delete Rules](administration-and-setup/setup/document-training/training-line-fields-table-training/save-and-delete-rules.md)
   * [Testing](administration-and-setup/setup/testing/README.md)
+    * [Live Testing](administration-and-setup/setup/testing/live-testing.md)
     * [PO Matching](administration-and-setup/setup/testing/po-matching.md)
     * [Auto Accounting](administration-and-setup/setup/testing/auto-accounting/README.md)
       * [LN](administration-and-setup/setup/testing/auto-accounting/ln.md)

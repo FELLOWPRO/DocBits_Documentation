@@ -1,6 +1,6 @@
 # Chiave API
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-it.png" alt="Pannello Chiavi API con il pulsante Crea chiave API, le colonne dell'elenco delle chiavi e il prefisso della chiave nascosto per la documentazione"><figcaption><p>Impostazioni → Integrazione e SSO → Chiave API. Il prefisso della chiave è nascosto in questo screenshot.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-it.png" alt="Pannello Chiavi API con il pulsante Crea chiave API, le colonne dell’elenco e chiavi di esempio con un prefisso visibile seguito da caratteri mascherati."><figcaption><p>Impostazioni → Integrazione e SSO → Chiave API. Le chiavi di esempio mostrano un prefisso seguito da caratteri mascherati.</p></figcaption></figure>
 
 La sezione **Chiave API** in cima alla pagina Integrazione e SSO elenca tutte le chiavi API create dalla propria organizzazione. Una chiave API consente a un altro sistema — il proprio ERP, uno script o un'applicazione partner — di accedere a DocBits senza che un utente effettui l'accesso. Per le istruzioni passo passo, vedere [Gestione delle Chiavi API](api-key-management.md).
 

@@ -269,3 +269,6 @@ Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Ti
 * [Custom Validation Rules](custom-validation-rules.md) — verifique os valores transformados
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — escolha o layout que um documento usa
 * [Regras de correspondência de pedidos de compra](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+
+[Regras de Transformação: visão geral prática completa](transformation-rules/complete-practical-guide.md)

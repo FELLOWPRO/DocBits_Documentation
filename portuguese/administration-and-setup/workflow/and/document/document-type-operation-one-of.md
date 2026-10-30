@@ -1,6 +1,6 @@
 # Tipo de documento Operação um dos
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f6993281dacc-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-pt-pt.png" alt="Tipo de documento Operação um dos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 

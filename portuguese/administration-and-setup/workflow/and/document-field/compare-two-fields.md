@@ -1,6 +1,6 @@
 # Compare dois campos
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e8895ad20ae3-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_two_docfield_values_v2-pt-pt.png" alt="Compare dois campos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 

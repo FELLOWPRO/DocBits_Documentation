@@ -1,6 +1,12 @@
 # Data de entrega prometida no pedido de compra
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-604866ed54fe-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-pt-pt.png" alt="Data de entrega prometida no pedido de compra, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-pt-pt.png" alt="Data de entrega prometida no pedido de compra, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-pt-pt.png" alt="Data de entrega prometida no pedido de compra, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
+
+A forma como a janela de tolerância é calculada, com exemplos como "hoje ou amanhã", é explicada em [Date Tolerances](../date-tolerances.md).
 
 ## **Propósito**
 

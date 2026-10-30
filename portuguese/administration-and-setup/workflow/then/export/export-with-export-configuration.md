@@ -1,6 +1,12 @@
 # Exportar com configuração de exportação
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v1-pt-pt.png" alt="Exportar com configuração de exportação, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v3-pt-pt.png" alt="Exportar com configuração de exportação, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-pt-pt.png" alt="Exportar documento em fila com a seguinte configuração: … para a exportação final ao término da execução. Ignorar tarefas pendentes: …. — Versão 2" width="634"><figcaption><p>Exportar documento em fila com a seguinte configuração: … para a exportação final ao término da execução. Ignorar tarefas pendentes: …. — Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-pt-pt.png" alt="Exportar documento em fila com a seguinte configuração: … para a exportação final ao término da execução. Ignorar tarefas pendentes: …. Status após a exportação: …. — Versão 3" width="634"><figcaption><p>Exportar documento em fila com a seguinte configuração: … para a exportação final ao término da execução. Ignorar tarefas pendentes: …. Status após a exportação: …. — Versão 3</p></figcaption></figure>
 
 ## **Objetivo:**
 

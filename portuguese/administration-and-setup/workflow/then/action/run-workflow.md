@@ -1,6 +1,8 @@
 # Executar fluxo de trabalho
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-359c9c1abe8c-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_run_workflow_v1-pt-pt.png" alt="Executar fluxo de trabalho, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_run_workflow_v2-pt-pt.png" alt="Executar fluxo de trabalho, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## Propósito:
 

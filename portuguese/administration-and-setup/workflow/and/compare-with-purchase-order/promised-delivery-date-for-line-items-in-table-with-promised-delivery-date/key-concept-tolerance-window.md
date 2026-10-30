@@ -2,6 +2,8 @@
 
 Antes de analisar os operadores, é importante compreender como a janela de tolerância é calculada.
 
+A forma como a janela de tolerância é calculada, com exemplos como "hoje ou amanhã", é explicada em [Date Tolerances](../../date-tolerances.md).
+
 ## O que é uma janela de tolerância?
 
 A janela de tolerância define um intervalo de datas aceitáveis em torno da data de entrega prometida da ordem de compra.

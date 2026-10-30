@@ -1,6 +1,12 @@
 # Crie uma nova tarefa e atribua-a ao usuário
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v1-pt-pt.png" alt="Crie uma nova tarefa e atribua-a ao usuário, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v2-pt-pt.png" alt="Crie uma nova tarefa e atribua-a ao usuário, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v3-pt-pt.png" alt="Crie uma nova tarefa e atribua-a ao usuário, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v4-pt-pt.png" alt="Crie uma nova tarefa e atribua-a ao usuário, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
 
 ## **Propósito**
 

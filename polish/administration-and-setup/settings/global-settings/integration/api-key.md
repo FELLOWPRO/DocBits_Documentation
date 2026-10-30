@@ -16,8 +16,8 @@ Sekcja **Klucz API** na górze strony Integracja i SSO wymienia wszystkie klucze
 Są to wartości, których Twój dostawca tożsamości potrzebuje, aby użytkownicy mogli logować się do DocBits firmowym loginem. Pełny przewodnik konfiguracji znajdziesz w sekcji [Konfiguracja logowania jednokrotnego (SSO)](configuring-single-sign-on-sso/).
 
 * **Identyfikator jednostki:** Identyfikator DocBits jako dostawcy usług w konfiguracji SSO. Ikona kopiowania kopiuje tę wartość do schowka.
-* **Adres URL SLO:** Adres URL używany do jednoczesnego wylogowania użytkownika ze wszystkich aplikacji połączonych przez SSO. Ikona kopiowania kopiuje tę wartość.
-* **Adres URL logowania jednokrotnego:** Adres URL używany do rozpoczęcia procesu logowania jednokrotnego. Ikona kopiowania kopiuje tę wartość.
+* **Adres URL SLO:** Adres usługi pojedynczego wylogowania SAML w DocBits. Ikona kopiowania kopiuje tę wartość.
+* **Adres URL logowania jednokrotnego:** Adres usługi odbioru asercji (ACS) DocBits, która odbiera odpowiedzi SAML od dostawcy tożsamości. Użyj go jako adresu URL odpowiedzi (ACS) w konfiguracji dostawcy tożsamości. Ikona kopiowania kopiuje tę wartość.
 * **Pobierz certyfikat:** Pobiera certyfikat zabezpieczeń, którego Twój dostawca tożsamości potrzebuje, aby zaufać DocBits.
 * **Pobierz metadane:** Pobiera plik metadanych SAML, który można zaimportować bezpośrednio w większości dostawców tożsamości.
 
@@ -26,5 +26,5 @@ Są to wartości, których Twój dostawca tożsamości potrzebuje, aby użytkown
 Skonfiguruj DocBits tak, aby do logowania używał Twojego zewnętrznego dostawcy tożsamości (IdP). Pełny przewodnik, na razie tylko w języku angielskim, znajdziesz tutaj: [Identity Service Provider Configuration](https://docs.docbits.com/administration-and-setup/settings/global-settings/integration/identity-service-provider-configuration).
 
 * **ID najemcy:** Identyfikator najemcy Twojego dostawcy tożsamości, używany, gdy DocBits integruje się z usługami chmurowymi zarządzającymi dostępem w podziale na najemców.
-* **Prześlij plik:** Przesyła plik metadanych lub konfiguracji otrzymany od Twojego dostawcy tożsamości.
-* **Konfiguruj:** Zapisuje ustawienia i stosuje przesłaną konfigurację. Najpierw wpisz ID najemcy albo prześlij plik, a następnie kliknij **Konfiguruj**.
+* **Prześlij plik:** Wybierz plik XML z metadanymi otrzymany od dostawcy tożsamości.
+* **Konfiguruj:** Po wybraniu pliku XML kliknij Konfiguruj, aby go przesłać i zapisać konfigurację dostawcy tożsamości.

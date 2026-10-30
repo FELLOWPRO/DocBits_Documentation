@@ -1,6 +1,6 @@
 # Clé API
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-fr.png" alt="Panneau Clés API avec le bouton Créer une clé API, les colonnes de la liste de clés et le préfixe de clé masqué pour la documentation"><figcaption><p>Paramètres → Intégration et SSO → Clé API. Le préfixe de la clé est masqué dans cette capture d'écran.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-fr.png" alt="Panneau Clés API avec le bouton Créer une clé API, les colonnes de la liste et des clés d’exemple dont le préfixe reste visible et la suite est masquée."><figcaption><p>Paramètres → Intégration et SSO → Clé API. Les clés d’exemple affichent un préfixe suivi de caractères masqués.</p></figcaption></figure>
 
 La section **Clé API** en haut de la page Intégration et SSO liste toutes les clés API créées par votre organisation. Une clé API permet à un autre système — votre ERP, un script ou une application partenaire — d'accéder à DocBits sans qu'un utilisateur ne se connecte. Pour les instructions étape par étape, consultez [Gestion des Clés API](api-key-management.md).
 

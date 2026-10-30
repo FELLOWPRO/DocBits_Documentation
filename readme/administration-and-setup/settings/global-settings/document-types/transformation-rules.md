@@ -269,3 +269,6 @@ Con **Registra l’esecuzione** (Log execution) attivo, ogni applicazione della 
 * [Regole di convalida personalizzate](custom-validation-rules.md) — controlla i valori trasformati
 * [Regole di selezione del layout](layout-manager/layout-selection-rules.md) — scegli il layout usato da un documento
 * [Regole di Corrispondenza degli Ordini di Acquisto](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+
+[Regole di trasformazione: panoramica pratica completa](transformation-rules/complete-practical-guide.md)

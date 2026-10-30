@@ -160,7 +160,7 @@
         * [Infor SSO Configuration](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/README.md)
           * [V1](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v1.md)
           * [V2](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v2.md)
-          * [Azure SSO](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/azure-sso.md)
+          * [Microsoft Entra SSO](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/azure-sso.md)
       * [Identity Service Provider Configuration](administration-and-setup/settings/global-settings/integration/identity-service-provider-configuration.md)
       * [Best practices](administration-and-setup/settings/global-settings/integration/best-practices.md)
       * [Troubleshooting Common Issues](administration-and-setup/settings/global-settings/integration/troubleshooting-common-issues.md)

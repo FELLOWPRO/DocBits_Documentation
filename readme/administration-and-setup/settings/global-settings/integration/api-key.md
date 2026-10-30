@@ -1,6 +1,6 @@
 # Clave de API
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-es.png" alt="Panel de Claves API con el botón Crear clave API, las columnas de la lista de claves y el prefijo de la clave oculto para la documentación"><figcaption><p>Ajustes → Integración y SSO → Clave de API. El prefijo de la clave está oculto en esta captura.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-es.png" alt="Panel de Claves API con el botón Crear clave API, las columnas de la lista y claves de ejemplo con un prefijo visible seguido de caracteres ocultos."><figcaption><p>Ajustes → Integración y SSO → Clave de API. Las claves de ejemplo muestran un prefijo seguido de caracteres ocultos.</p></figcaption></figure>
 
 La sección **Clave API** de la parte superior de la página Integración y SSO lista todas las claves API que ha creado su organización. Una clave API permite que otro sistema — su ERP, un script o una aplicación de un socio — acceda a DocBits sin que inicie sesión ningún usuario. Para instrucciones paso a paso, consulte [Gestión de Claves API](api-key-management.md).
 

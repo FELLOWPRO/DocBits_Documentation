@@ -1,6 +1,12 @@
 # Iniciar exportación
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f55f53ace7e0-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v1-es-es.png" alt="Iniciar exportación, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v2-es-es.png" alt="Iniciar exportación, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v3-es-es.png" alt="Iniciar exportación, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v4-es-es.png" alt="Iniciar exportación, Versión 4" width="634"><figcaption><p>Versión 4</p></figcaption></figure>
 
 ## **Propósito:**
 

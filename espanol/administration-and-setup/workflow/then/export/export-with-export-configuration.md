@@ -1,6 +1,12 @@
 # Exportar con configuración de exportación
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v1-es-es.png" alt="Exportar con configuración de exportación, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v3-es-es.png" alt="Exportar con configuración de exportación, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-es-es.png" alt="Poner en cola la exportación del documento con la configuración de exportación: … para la exportación final al final de la ejecución. Ignorar las tareas pendientes: …. — Versión 2" width="634"><figcaption><p>Poner en cola la exportación del documento con la configuración de exportación: … para la exportación final al final de la ejecución. Ignorar las tareas pendientes: …. — Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-es-es.png" alt="Poner en cola la exportación del documento con la configuración de exportación: … para la exportación final al final de la ejecución. Ignorar las tareas pendientes: …. Estado después de la exportación: …. — Versión 3" width="634"><figcaption><p>Poner en cola la exportación del documento con la configuración de exportación: … para la exportación final al final de la ejecución. Ignorar las tareas pendientes: …. Estado después de la exportación: …. — Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 

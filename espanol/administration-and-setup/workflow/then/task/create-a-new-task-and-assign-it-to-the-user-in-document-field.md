@@ -1,6 +1,8 @@
 # Cree una nueva tarea y asígnela al usuario en el campo del documento
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f325db80cf3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v1-es-es.png" alt="Cree una nueva tarea y asígnela al usuario en el campo del documento, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v3-es-es.png" alt="Cree una nueva tarea y asígnela al usuario en el campo del documento, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 

@@ -8,9 +8,23 @@ Os administradores podem usar **Scripts** para gerir regras de processamento de 
 2. No tipo de documento que pretende gerir, selecione **Roteiros**. A página lista os scripts desse tipo de documento.
 3. Pesquise pelo nome ou use **Todos**, **Ativo** e **Inativo** para limitar a lista. Também pode ordená-la por nome ou data de modificação.
 
-Cada cartão mostra o nome do script, o gatilho, a versão e o estado. O ícone de lápis abre o editor; o ícone de cópia duplica o script. **Novo** abre o editor para um novo script.
+Cada cartão mostra o nome do script, a sua ordem de execução como uma etiqueta numerada, o gatilho, a versão e o estado. O ícone de lápis abre o editor; o ícone de cópia duplica o script. **Novo** abre o editor para um novo script.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list-pt.png" alt="Lista de scripts ordenada por ordem de execução; cada cartão mostra junto ao nome uma etiqueta numerada com a ordem de execução"><figcaption><p>A etiqueta numerada em cada cartão é a ordem de execução do script.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-659-script-scripts-list-inactive-pt-20261011.png" alt="Lista de scripts para o tipo de documento Fatura com um exemplo de documentação inativo e os filtros Todos, Ativo e Inativo"><figcaption><p>Verifique o estado à direita do cartão do script antes de o alterar.</p></figcaption></figure>
+
+## Definir a ordem de execução
+
+O campo **Execution order** controla a ordem em que os scripts são executados: os números mais baixos são executados primeiro. O campo mantém a etiqueta em inglês também na interface em português.
+
+1. Abra o script no editor.
+2. Introduza um número inteiro a partir de 0 no campo **Execution order**. Deixe o campo vazio para manter 0.
+3. Guarde o script. Letras, decimais e números negativos são rejeitados com uma mensagem de erro no campo e nada é guardado.
+
+Se alterar a ordem de execução e depois ativar uma versão, o DocBits guarda primeiro o script e só ativa a versão quando esse registo é bem-sucedido.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor-pt.png" alt="Editor de scripts com o campo Execution order à direita do seletor do gatilho"><figcaption><p>A ordem de execução no editor de scripts.</p></figcaption></figure>
 
 ## Ativar ou desativar um script
 

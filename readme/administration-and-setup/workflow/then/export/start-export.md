@@ -1,6 +1,12 @@
 # Starten Sie den Export
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f55f53ace7e0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v1-de-de.png" alt="Starten Sie den Export, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v2-de-de.png" alt="Starten Sie den Export, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v3-de-de.png" alt="Starten Sie den Export, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v4-de-de.png" alt="Starten Sie den Export, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Zweck:**
 

@@ -1,6 +1,8 @@
 # Genehmigen Sie das Dokument
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-1b26323eab7c-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_approve_v1-de-de.png" alt="Genehmigen Sie das Dokument, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_approve_v2-de-de.png" alt="Genehmigen Sie das Dokument, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

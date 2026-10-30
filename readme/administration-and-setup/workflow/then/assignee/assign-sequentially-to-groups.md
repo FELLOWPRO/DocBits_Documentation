@@ -1,5 +1,7 @@
 # Nacheinander Gruppen zuweisen
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_group_sequential_v2-de-de.png" alt="Nacheinander Gruppen zuweisen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
 ## **Zweck**
 
 Die Workflow-Karte "**Ordnen Sie das Dokument der Reihe nach den Gruppen zu**" ermöglicht die sequenzielle Zuweisung von Dokumenten an eine oder mehrere ausgewählte Gruppen. Der Prioritätswert bestimmt die Reihenfolge der Zuweisung, wobei niedrigere Zahlen eine höhere Priorität darstellen.

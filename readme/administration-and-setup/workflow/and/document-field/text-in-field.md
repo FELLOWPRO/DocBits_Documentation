@@ -1,6 +1,6 @@
 # Text im Feld
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_field_contains_v2-de-de.png" alt="Text im Feld, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

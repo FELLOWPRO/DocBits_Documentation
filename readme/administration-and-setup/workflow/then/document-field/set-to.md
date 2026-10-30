@@ -1,6 +1,6 @@
 # Feldwert setzen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-12fec1de4cae-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-de-de.png" alt="Feldwert setzen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

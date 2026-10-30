@@ -1,52 +1,41 @@
 # Heute mit einem Datum vergleichen
 
-Die Karte **Today** (`condition_today_is_isnot`, Version 2) vergleicht das aktuelle Datum der Ausführung mit einem eingetragenen Datum. Im geprüften Dev-Stand wird „heute“ aus UTC gebildet. Die Karte startet keinen Workflow zu einem Termin und wartet nicht bis zum eingetragenen Datum.
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_today_is_isnot_v2-de-de.png" alt="Heute mit einem Datum vergleichen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/wf-practice-20261022-today-card-de.png" alt="Heute-Karte mit Gleich-Vergleich und konkretem Datum."><figcaption><p>Heute-Karte mit Gleich-Vergleich und konkretem Datum.</p></figcaption></figure>
+## Zweck:
 
-<figure><img src="../../../../.gitbook/assets/wf-practice-20261022-today-result-de.png" alt="Tatsächlicher Vergleich am 22. Oktober 2026: wahr."><figcaption><p>Tatsächlicher Vergleich am 22. Oktober 2026: wahr.</p></figcaption></figure>
+Diese Workflow-Karte vergleicht das heutige Datum mit einem auf der Karte eingetragenen Datum. Sie kann für Regeln verwendet werden, die erst ab oder nur bis zu einem bestimmten Datum gelten sollen, zum Beispiel für eine Prozessänderung ab einem geplanten Starttermin.
 
-## Beispiel vollständig ausfüllen
+## Bestandteile der Karte:
 
-Nutzen Sie einen eigenen inaktiven Trainingsworkflow mit dem Dokumenttyp Rechnung und der synthetischen Rechnungsnummer `WF-TRAINING-001`. Fügen Sie unter **UND → Datum und Uhrzeit** die Heute-Karte hinzu.
+1. **Operator**
+   * **Beschreibung:** Wie das heutige Datum mit dem Datum auf der Karte verglichen wird.
+   * **Optionen:**
+     * **Entspricht:** Heute ist das Datum auf der Karte.
+     * **Ungleich:** Heute ist ein beliebiger anderer Tag.
+     * **Größer als:** Heute liegt nach dem Datum auf der Karte.
+     * **Größer oder gleich:** Heute ist das Datum auf der Karte oder später.
+     * **Weniger als:** Heute liegt vor dem Datum auf der Karte.
+     * **Weniger oder gleich:** Heute ist das Datum auf der Karte oder früher.
+2. **Datum**
+   * **Beschreibung:** Das Datum, mit dem heute verglichen wird.
 
-| Parameter | Beispielwert | Bedeutung |
-| --- | --- | --- |
-| Datum (`date`) | `2026-10-22` | Vergleichsdatum im Format Jahr-Monat-Tag |
-| Operator | `eq` / Gleich | Heute muss auf dasselbe Kalenderdatum fallen. |
-| Kartenversion | `2` | Geprüfter Katalogstand des Beispiels |
+## Funktionalität:
 
-Führen Sie **Test → Benutzerdefinierte Daten** aus und öffnen Sie **Details**. Klappen Sie die Heute-Karte auf. Das Protokoll nennt das tatsächliche heutige Datum, das Vergleichsdatum, den Operator und das Ergebnis. Am 22. Oktober 2026 war der Vergleich mit `2026-10-22` erfolgreich.
+* **Bedingungsauswertung:** Wenn der Workflow die Karte erreicht, nimmt sie das aktuelle Datum in UTC und vergleicht es mit dem Operator mit dem Datum auf der Karte. Verglichen werden nur die Daten; Uhrzeiten werden ignoriert. Die Daten auf dem Dokument spielen keine Rolle.
+* **Ausführung der Aktion:**
+  * **True-Bedingung:**\
+    Trifft der Vergleich zu, wird der Workflow mit den nächsten Karten fortgesetzt.
+  * **False-Bedingung:**\
+    Trifft er nicht zu, stoppt der Workflow mit einer nicht erfüllten Bedingung.
+* **Fehlende Daten:** Ist auf der Karte kein Datum eingetragen, wertet die Karte die Bedingung nicht aus und meldet die fehlende Eingabe im Workflow-Protokoll.
 
-Ein späterer Test desselben gespeicherten Beispiels darf ein anderes Ergebnis liefern: „Heute“ wird bei jeder Ausführung neu ermittelt. Passen Sie für eine neue Übung das Datum bewusst an und notieren Sie das tatsächliche Testdatum.
+## Einrichtung und Konfiguration:
 
-## Die Operatoren wählen
+* Die Karte kann als And-Bedingung aus der Kategorie **Datum und Uhrzeit** hinzugefügt werden. Danach werden ein Operator und ein Datum ausgewählt.
+* **Beispiel:** Mit **Größer oder gleich** und `2026-11-01` ist die Karte ab dem 1. November 2026 (UTC) erfüllt und am 31. Oktober 2026 nicht erfüllt.
+* Da das Datum in UTC ermittelt wird, kann es um Mitternacht vom lokalen Datum abweichen: In Europa sieht die Karte kurz nach Mitternacht noch den Vortag, in Amerika sieht sie am Abend bereits den nächsten Tag.
 
-| Operator | Bedeutung von links nach rechts |
-| --- | --- |
-| `eq` | Heute ist gleich dem Vergleichsdatum. |
-| `neq` | Heute ist ungleich dem Vergleichsdatum. |
-| `gt` | Heute liegt nach dem Vergleichsdatum. |
-| `ge` | Heute liegt auf oder nach dem Vergleichsdatum. |
-| `lt` | Heute liegt vor dem Vergleichsdatum. |
-| `le` | Heute liegt auf oder vor dem Vergleichsdatum. |
+## Fazit:
 
-Für „Frist ist ab heute abgelaufen“ wählen Sie den Operator nach Ihrer fachlichen Grenze: `gt` schließt das Fristdatum aus, `ge` schließt es ein. Verbinden Sie den passenden Bedingungsausgang mit der Folgeaktion.
-
-## Tatsächlich geprüfte Fälle
-
-| Eingabe bei Ausführung am 22.10.2026 | Operator | Knotenpfad |
-| --- | --- | --- |
-| `2026-10-22` | `eq` | `success` |
-| `2026-10-23` | `eq` | `failed_condition` |
-| `2026-10-22 23:59:59` | `eq` | `success` |
-
-Die dritte Prüfung zeigt: Die Karte vergleicht die **Datumsanteile**. Sie eignet sich nicht für eine sekundengenaue Fristprüfung. Verwenden Sie für Uhrzeitgrenzen die entsprechende Zeitkarte und prüfen Sie ihre Zeitzone separat.
-
-Ein unlesbares oder fehlendes Datum ist ein Eingabefehler. Verwenden Sie eindeutige ISO-Datumswerte. Zeitzonenangaben werden im geprüften Parser nicht als Umrechnungsauftrag behandelt. Rund um Mitternacht kann das UTC-Datum vom lokal angezeigten Datum abweichen.
-
-## Vor einer produktiven Nutzung
-
-Prüfen Sie jeweils den Tag vor der Grenze, den Grenztag und den Tag danach. Erfassen Sie aktuelles Ausführungsdatum, Kartenversion, Parameter und Knotenpfad. Ein grünes Ergebnis am Erstellungstag garantiert kein dauerhaft grünes Ergebnis an späteren Tagen.
-
-[Datum oder Uhrzeit prüfen](date-or-time.md) · [Test und Echtlauf unterscheiden](../../workflow-logs.md) · [Sicher aktivieren](../../workflow-go-live.md)
+Die Workflow-Karte „Today“ macht das Kalenderdatum zu einer Workflow-Bedingung. Datumsbasierte Regeln, etwa ein Start- oder Enddatum für einen Prozess, können einmal eingerichtet werden und greifen dann automatisch.

@@ -1,6 +1,6 @@
 # Zugewiesene Benutzerbedingung
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3e450ede5dea-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_user_is_isnot_in_list_v2-de-de.png" alt="Zugewiesene Benutzerbedingung, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Zweck**
 

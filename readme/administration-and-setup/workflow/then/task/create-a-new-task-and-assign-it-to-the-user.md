@@ -1,6 +1,12 @@
 # Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer zu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v1-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer zu, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v2-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer zu, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v3-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer zu, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v4-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Benutzer zu, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Zweck**
 

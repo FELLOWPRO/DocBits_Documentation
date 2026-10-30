@@ -1,6 +1,6 @@
 # Bedingung für einen einzelnen zugewiesenen Benutzer
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_user_is_isnot_v2-de-de.png" alt="Bedingung für einen einzelnen zugewiesenen Benutzer, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Zweck**
 

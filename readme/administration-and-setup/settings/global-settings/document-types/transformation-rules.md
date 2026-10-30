@@ -269,3 +269,6 @@ Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven n
 * [Aangepaste validatieregels](custom-validation-rules.md) — controleer de getransformeerde waarden
 * [Lay-outselectieregels](layout-manager/layout-selection-rules.md) — kies de lay-out die een document gebruikt
 * [Regels voor het Matchen van Inkooporders](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+
+[Transformatieregels: volledig praktisch overzicht](transformation-rules/complete-practical-guide.md)

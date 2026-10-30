@@ -43,6 +43,17 @@ Es ist jedoch möglich:
 * **Einen aktiven Infor-Export** _und_ **einen aktiven Nicht-Infor-Export** gleichzeitig für denselben Dokumententyp zu haben
 * **Unterschiedliche Exportkonfigurationen für verschiedene Unterorganisationen** — zum Beispiel einen Infor-Export für Unter-Org A und einen anderen Infor-Export für Unter-Org B
 
+## Aktivierung im Bearbeitungsformular
+
+Eine bestehende Exportkonfiguration hat im Fußbereich ihres Bearbeitungsformulars einen Schalter **Aktiv** direkt neben **Speichern**.
+
+1. Öffnen Sie die Konfiguration über **Bearbeiten**.
+2. Stellen Sie den Schalter **Aktiv** auf den gewünschten Zustand und wählen Sie **Speichern**.
+
+DocBits aktiviert oder deaktiviert die Konfiguration danach mit derselben Prüfung, die auch die Liste verwendet: Ist für denselben Dokumententyp bereits eine andere Konfiguration aktiv, wird das Aktivieren abgelehnt. Das Speichern des Formulars ändert den gespeicherten Status nicht mehr von selbst; der Schalter im Fußbereich und die Statusanzeige in der Liste zeigen immer denselben Zustand.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-de.png" alt="Bearbeitungsformular einer Exportkonfiguration mit dem Schalter Aktiv im Fußbereich zwischen Abbrechen und Speichern"><figcaption><p>Der Schalter Aktiv neben Speichern im Bearbeitungsformular der Exportkonfiguration.</p></figcaption></figure>
+
 ## **Erstellen eines neuen Exports**
 
 Um einen neuen Export zu erstellen:

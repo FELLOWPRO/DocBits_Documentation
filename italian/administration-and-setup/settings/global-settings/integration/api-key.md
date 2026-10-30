@@ -16,8 +16,8 @@ La sezione **Chiave API** in cima alla pagina Integrazione e SSO elenca tutte le
 Questi sono i valori di cui il proprio provider di identità ha bisogno per consentire agli utenti di accedere a DocBits con le credenziali aziendali. Per la guida completa alla configurazione, vedere [Configurazione Single Sign-On (SSO)](configuring-single-sign-on-sso/).
 
 * **ID entità:** L'identificatore di DocBits come fornitore di servizi nella configurazione SSO. L'icona di copia copia il valore negli appunti.
-* **URL SLO (Single Logout):** L'URL utilizzato per disconnettere un utente da tutte le applicazioni collegate tramite SSO allo stesso tempo. L'icona di copia copia il valore.
-* **URL SSO:** L'URL utilizzato per avviare il processo di single sign-on. L'icona di copia copia il valore.
+* **URL SLO (Single Logout):** L’endpoint del servizio di disconnessione singola SAML di DocBits. L’icona di copia copia il valore.
+* **URL SSO:** L’endpoint del servizio di consumo delle asserzioni (ACS) di DocBits riceve le risposte SAML dal provider di identità. Usarlo come URL di risposta (URL ACS) nella configurazione del provider di identità. L’icona di copia copia il valore.
 * **Scarica il certificato:** Scarica il certificato di sicurezza di cui il proprio provider di identità ha bisogno per considerare attendibile DocBits.
 * **Scarica i metadati:** Scarica il file di metadati SAML che può essere importato direttamente nella maggior parte dei provider di identità.
 
@@ -26,5 +26,5 @@ Questi sono i valori di cui il proprio provider di identità ha bisogno per cons
 Configurare DocBits per l'uso del proprio provider di identità (IdP) esterno per l'accesso. Per la guida completa, vedere la [Configurazione Single Sign-On (SSO)](configuring-single-sign-on-sso/).
 
 * **ID inquilino:** L'identificatore del tenant del proprio provider di identità, utilizzato quando DocBits si integra con servizi cloud che gestiscono l'accesso per tenant.
-* **Caricare il file:** Carica il file di metadati o di configurazione ricevuto dal proprio provider di identità.
-* **Configurare:** Salva le impostazioni e applica la configurazione caricata. Immettere prima l'ID inquilino o caricare il file, quindi fare clic su **Configurare**.
+* **Caricare il file:** Selezionare il file XML dei metadati fornito dal proprio provider di identità.
+* **Configurare:** Dopo aver selezionato il file XML, fare clic su Configurare per caricarlo e salvare la configurazione del provider di identità.

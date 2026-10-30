@@ -17,7 +17,7 @@ Appropriate saved table rules can determine the table extraction for the relevan
 
 The [Which extraction path was used?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) diagnostic guide explains tabs, source identifiers and protocols. The page [AI model](ai-model.md) explains the organization standard and template-related overrides.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="Classification and Extraction settings page with the General, Classification Rules and AI Models tabs and the Document Splitting section open"><figcaption><p>Classification and Extraction settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-general-overview-en-20261030.png" alt="Classification and Extraction with General, Classification Rules and AI Models, plus Document Splitting and Document Processing"><figcaption><p>General contains processing settings. AI Models is visible here because the module is enabled; its custom classification models are separate from the extraction-tier selector. The stored barcode pattern is obscured.</p></figcaption></figure>
 
 ## Overview
 
@@ -30,7 +30,7 @@ In the **Classification and Extraction** settings, you can:
 * Define **classification rules** that assign a document type automatically
 * Review the **AI Models** and their trained labels
 
-The page has three tabs: **General**, **Classification Rules** and **AI Models**. The *AI Models* tab is only shown when the model and label module is enabled for your organization.
+The page has **General** and **Classification Rules**, plus **AI Models** when the model and label module is enabled for your organization. Custom classification models and labels in **AI Models** are separate from the extraction-tier selector under **General → Extraction**.
 
 | Tab | Contents |
 |---|---|
@@ -44,7 +44,7 @@ Go to **Settings → Document Types → Classification and Extraction**.
 
 ## General
 
-The **General** tab groups the settings into collapsible sections. All changes are saved immediately when you change a value; there is no separate save button.
+The **General** tab groups settings into collapsible sections. Most controls save when their value changes. A changed nonempty **Barcode Pattern** uses its validation/**Save** action, and a table-extraction version change requires confirmation. Review the organization and intended behavior before editing a control.
 
 ### Document Splitting
 
@@ -53,7 +53,7 @@ The **General** tab groups the settings into collapsible sections. All changes a
 * **Do not split uploaded documents** – the default; the document is processed as one file.
 * **Split by Barcode/QR-Code** – the document is split at every detected barcode.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_splitting.png" alt="Document Splitting section with the Split dropdown set to Split by Barcode/QR-Code and the Barcode Type and Barcode Pattern fields"><figcaption><p>Split options in the Document Splitting section</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-document-splitting-en-20261030.png" alt="Document Splitting with barcode and QR-code splitting, selected barcode types and the obscured Barcode Pattern field"><figcaption><p>Review the split method and barcode types before changing them. The organization-specific pattern is obscured; no value has been changed.</p></figcaption></figure>
 
 When **Split by Barcode/QR-Code** is selected, two more fields appear:
 
@@ -66,7 +66,7 @@ After a successful split, the parent document is deleted and the pages continue 
 
 **Pages to process** limits how many pages are OCRed, classified and extracted per document.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_document_processing.png" alt="Document Processing section with the Pages to process field above the amount and table extraction settings"><figcaption><p>Pages to process in the Document Processing section</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-document-processing-en-20261030.png" alt="Document Processing showing Pages to process set to 10 and the explanation that later pages remain stored and read-only"><figcaption><p>This example has a limit of 10 processed pages. The field explains that empty or 0 means all pages; the displayed value has not been changed.</p></figcaption></figure>
 
 * Empty or **0** means all pages are processed.
 * A number *N* limits OCR, classification and extraction to the first *N* pages. The complete document is still stored, displayed and exported; pages beyond the limit are shown read-only.
@@ -75,7 +75,7 @@ After a successful split, the parent document is deleted and the pages continue 
 
 Two switches control how amounts are compared against master data and purchase orders.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_amount_formatting.png" alt="Amount Formatting section with the switches Allow Rounding During Amount Comparison and Require Exact Match for Amount Comparison"><figcaption><p>Amount Formatting section</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-amount-formatting-en-20261030.png" alt="Amount Formatting with Allow Rounding During Amount Comparison and Require Exact Match for Amount Comparison"><figcaption><p>The two amount-comparison switches are shown off in this example. Inspect the intended policy before changing either switch.</p></figcaption></figure>
 
 * **Allow Rounding During Amount Comparison** – when enabled, a tolerance of ±0.5 is allowed. When disabled, ±0.05 applies.
 * **Require Exact Match for Amount Comparison** – when enabled, amounts must match exactly, with zero tolerance. When disabled, ±0.05 applies.
@@ -95,7 +95,7 @@ Only one of the two switches can be active at a time; enabling one disables the 
 
 You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table (whether AI-based or manual) is always linked to a specific supplier.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_extraction.png" alt="Table Extraction section with the switches Table Extraction, AI Table Extraction and Use Table Extraction Vision with its mode dropdown"><figcaption><p>Table extraction switches</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-table-extraction-en-20261030.png" alt="Extraction controls for rule and AI table extraction, vision mode, structured extraction, hidden fields and the AI model selector"><figcaption><p>The extraction-tier selector is inside General → Extraction. The supplier-override table header is shown below; existing row data is obscured and no setting has been changed.</p></figcaption></figure>
 
 **Table Extraction:** Activates rule-based table extraction. Tables are trained per supplier on the validation screen (*Go to table extraction view*).\
 Learn more about training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
@@ -109,7 +109,7 @@ Learn more about training [here](../../../setup/document-training/training-line-
 * **Hybrid (text and images)** – Text layer and page image are combined in the same request.
 * **Auto (decided per document)** – DocBits decides per document whether the text layer suffices.
 
-**Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot. Clicking the setting opens a preview of exactly which fields and columns the AI will be asked for: header fields and line columns are listed with their source (requested or disabled standard fields), and the expected output mode (e.g. *strict* – no additional columns). Fields that are configured for the document type but switched off are not requested from the AI.
+**Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot. When structured extraction is already enabled, the **What the AI requests** preview appears below the control and shows which fields and columns the AI will be asked for: header fields and line columns are listed with their source (requested or disabled standard fields), and the expected output mode (e.g. *strict* – no additional columns). Fields that are configured for the document type but switched off are not requested from the AI.
 
 **Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
 Detailed explanation available [here](table-extraction-for-costing-element.md).
@@ -167,7 +167,7 @@ Every toggle in this section is stored as an organization preference. Use the ke
 
 Notes:
 
-* Boolean preferences are stored as the strings `true` / `false`; a key that was never set counts as `false`. If you send `1` or `0`, DocBits stores `true` / `false`.
+* Boolean preferences are stored as the strings `true` / `false`. An unset key uses the default for that setting; the UI shows **Extract hidden fields** as on when unset. Do not assume every absent key means false. If you send `1` or `0`, DocBits stores `true` / `false`.
 * `AI_MODEL` unset means **Fast**.
 * `TABLE_EXTRACTION_VISION_MODE` unset is resolved from the legacy `TABLE_EXTRACTION_USE_VISION` switch: `true` resolves to `vision`, anything else to `off`.
 * Changing a key takes effect for documents processed afterwards. Restart a document to re-extract it with the new setting.
@@ -179,13 +179,15 @@ Notes:
 
 The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
 
+<figure><img src="../../../../.gitbook/assets/dbdc-193-electronic-document-en-20261030.png" alt="Electronic Document with the Process Unsupported ZUGFeRD PDF switch"><figcaption><p>Electronic Document contains the option for unsupported ZUGFeRD PDFs. Its displayed state is an existing setting; no document processing was performed for this capture.</p></figcaption></figure>
+
 ## Classification Rules
 
 The **Classification Rules** tab lists the rules that assign a document type automatically during processing. Each rule matches a **regex pattern** against the source name of the document and, on a match, sets the document type and optionally a sub document type.
 
 Switch to the tab by clicking **Classification Rules** at the top of the page.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules.png" alt="Classification Rules tab with the search field, the Add button and the rule table with the columns Type, Pattern, Document Type, Sub Document Type, Sub Organization and Actions"><figcaption><p>Classification Rules tab with the rule table</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-rules-list-en-20261030.png" alt="Classification Rules with Search by column, Add and the rule-table headings"><figcaption><p>Search existing rules or choose Add to prepare a rule. Existing rule rows are obscured; this is not an empty-list example.</p></figcaption></figure>
 
 The table has one row per rule with these columns:
 
@@ -202,7 +204,7 @@ The search field above the table filters all columns, including the display labe
 
 1.  Click **Add** above the table.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_add.png" alt="Configure classification Rule dialog with the empty Pattern field, the Show help button and the Type, Sub Organization, Document Type and Sub Document Type dropdowns"><figcaption><p>Configure classification Rule dialog</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/dbdc-193-rule-add-en-20261030.png" alt="Blank Configure classification Rule dialog with Pattern, Show help, Type, organization, document type, Cancel and Save"><figcaption><p>Add opens this blank rule form. Check the pattern and target type before Save; Cancel closes it without creating a rule.</p></figcaption></figure>
 2. Fill in the fields:
    * **Pattern** (required) – the regex the rule looks for.
    * **Type** (required) – **Barcode** or **E-Mail**. This decides which source name the pattern is matched against.
@@ -220,7 +222,7 @@ The **Show help** switch below the pattern field opens an inline reference with 
 * **O365** – `Shared Email + Folder › Shared Email › Folder › Email › Id`
 * **Gmail** – `Email + Folder › Folder › Email › Id`
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_pattern_help.png" alt="Configure classification Rule dialog with the Show help panel open and the O365 and Gmail source name formats next to the pattern examples"><figcaption><p>Pattern help panel inside the rule dialog</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-rule-pattern-help-en-20261030.png" alt="Pattern help showing O365 and Gmail source-name formats, regular-expression examples and matching tips"><figcaption><p>Show help explains which source name the regex matches. The reference and examples are displayed without entering or saving a rule.</p></figcaption></figure>
 
 Examples given in the panel:
 
@@ -234,11 +236,7 @@ If you use the **E-Mail** type, the pattern is matched against the mailbox and f
 ### Edit a Classification Rule
 
 1.  Click the three dots in the **Actions** column of the rule you want to change.
-
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_row_menu.png" alt="Classification rule table with the three-dot Actions menu of a row open and the Edit entry highlighted"><figcaption><p>Row menu with Edit and Delete</p></figcaption></figure>
 2.  Select **Edit**. The dialog opens with the rule's current values.
-
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_rules_edit.png" alt="Configure classification Rule dialog in edit mode with the existing pattern, Type E-Mail, Document Type Invoice and the assigned Sub Document Type"><figcaption><p>Editing an existing classification rule</p></figcaption></figure>
 3. Make your changes to the pattern, type, sub organization, document type or sub document type.
 4.  Click **Save**.
 
@@ -255,7 +253,7 @@ The rule is removed from the list immediately. Deleting a rule does not change d
 
 The **AI Models** tab shows the custom-trained models available for document classification and their labels. It only appears when the model and label module is enabled for your organization.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_ai_models.png" alt="AI Models tab with the No Record Found! message because no custom model exists for the organization"><figcaption><p>AI Models tab</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-ai-models-empty-en-20261030.png" alt="AI Models tab selected with No Record Found in the current organization"><figcaption><p>AI Models is an optional tab for custom classification models and labels. In this organization its successful list read returned no models; this does not describe the extraction-tier setting.</p></figcaption></figure>
 
 If no custom model is available for the organization, the tab shows *No Record Found!*.
 

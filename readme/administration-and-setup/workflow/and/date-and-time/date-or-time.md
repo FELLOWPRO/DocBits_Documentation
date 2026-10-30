@@ -22,8 +22,8 @@ Deze workflowkaart controleert of de huidige datum en tijd binnen of buiten een 
 * **Voorwaarde-evaluatie:** Wanneer de workflow de kaart bereikt, neemt de kaart de huidige datum en tijd in UTC en controleert of die tussen de twee waarden op de kaart liggen. De vroegste waarde wordt als begin gebruikt, dus de volgorde van de twee velden maakt niet uit.
   * Een waarde met alleen een tijd (bijvoorbeeld `09:00`) wordt gebruikt met de datum van vandaag, zodat het tijdvenster zich elke dag herhaalt.
   * Begin en einde horen bij het tijdvenster: precies op de begin- of eindtijd is **Is** waar.
-  * Een tijdvenster over middernacht kan alleen met tijden worden ingevoerd, bijvoorbeeld `22:00` tot `04:00`. De kaart controleert dan op de tijd van 22:00 tot 04:00; de exacte begin- en eindtijden horen in dit geval niet bij het tijdvenster.
-  * Een tijdvenster over middernacht met volledige datums (bijvoorbeeld `2026-11-01 22:00` tot `2026-11-02 04:00`) wordt momenteel niet correct geëvalueerd en hoort niet te worden gebruikt.
+  * Een tijdvenster over middernacht kan alleen met tijden worden ingevoerd, bijvoorbeeld `22:00` tot `04:00`. De kaart controleert dan elke dag op de tijd van 22:00 tot 04:00, inclusief de exacte begin- en eindtijd.
+  * Met volledige datums op twee verschillende dagen (bijvoorbeeld `2026-11-01 22:00` tot `2026-11-02 04:00`) controleert de kaart de hele periode van het eerste tot het tweede tijdstip, inclusief begin en einde.
 * **Actie-uitvoering:**
   * **True-voorwaarde:**\
     Als aan de voorwaarde is voldaan, gaat de workflow verder met de volgende kaarten.

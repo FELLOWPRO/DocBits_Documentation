@@ -22,8 +22,8 @@ This workflow card checks whether the current date and time lie inside or outsid
 * **Condition Evaluation:** When the workflow reaches the card, it takes the current date and time in UTC and checks whether they lie between the two values on the card. The earlier value is used as the start, so the order of the two fields does not matter.
   * A value with only a time (for example `09:00`) is used with today's date, so the window repeats every day.
   * Start and end belong to the window: at exactly the start or end time, **Is** is true.
-  * A window across midnight can be entered as times only, for example `22:00` to `04:00`. The card then checks for the time from 22:00 until 04:00; the exact start and end times do not belong to the window in this case.
-  * A window across midnight with full dates (for example `2026-11-01 22:00` to `2026-11-02 04:00`) is currently not evaluated correctly and should not be used.
+  * A window across midnight can be entered as times only, for example `22:00` to `04:00`. The card then checks every day for the time from 22:00 until 04:00, including the exact start and end times.
+  * With full dates on two different days (for example `2026-11-01 22:00` to `2026-11-02 04:00`), the card checks the whole period from the first to the second point in time, including start and end.
 * **Action Execution:**
   * **True Condition:**\
     If the condition is met, the workflow continues with the next cards.

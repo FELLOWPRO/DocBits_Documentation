@@ -22,8 +22,8 @@ Esta tarjeta de flujo de trabajo comprueba si la fecha y la hora actuales están
 * **Evaluación de la condición:** Cuando el flujo de trabajo llega a la tarjeta, esta toma la fecha y la hora actuales en UTC y comprueba si están entre los dos valores de la tarjeta. El valor anterior se utiliza como inicio, por lo que el orden de los dos campos no importa.
   * Un valor que solo contiene una hora (por ejemplo `09:00`) se utiliza con la fecha de hoy, de modo que el intervalo se repite cada día.
   * El inicio y el fin forman parte del intervalo: exactamente a la hora de inicio o de fin, **Es** es verdadero.
-  * Un intervalo que cruza la medianoche se puede introducir solo con horas, por ejemplo de `22:00` a `04:00`. En ese caso, la tarjeta comprueba el tiempo desde las 22:00 hasta las 04:00; las horas exactas de inicio y de fin no forman parte del intervalo en este caso.
-  * Un intervalo que cruza la medianoche con fechas completas (por ejemplo de `2026-11-01 22:00` a `2026-11-02 04:00`) actualmente no se evalúa correctamente y no debería utilizarse.
+  * Un intervalo que cruza la medianoche se puede introducir solo con horas, por ejemplo de `22:00` a `04:00`. En ese caso, la tarjeta comprueba cada día el tiempo desde las 22:00 hasta las 04:00, incluidas las horas exactas de inicio y de fin.
+  * Con fechas completas en dos días distintos (por ejemplo de `2026-11-01 22:00` a `2026-11-02 04:00`), la tarjeta comprueba todo el periodo desde el primer hasta el segundo momento, incluidos el inicio y el fin.
 * **Ejecución de la acción:**
   * **Condición verdadera:**\
     Si la condición se cumple, el flujo de trabajo continúa con las siguientes tarjetas.

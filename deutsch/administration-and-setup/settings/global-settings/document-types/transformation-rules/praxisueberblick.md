@@ -4,6 +4,82 @@
 
 Stand der Prüfung: 28. Oktober 2026. Die Beispiele wurden mit synthetischen Schulungswerten auf Dev NOVA geprüft. Eine Vorschau ist kein Nachweis einer gespeicherten Dokumentänderung, eines Bestellabgleichs oder eines ERP-Exports.
 
+## Videos direkt ansehen
+
+Alle neun Praxisfolgen können Sie hier direkt abspielen. Die einzelnen Lektionsseiten enthalten zusätzlich die Schrittanleitungen, Beispiele und Gegenproben. Die vollständige menschliche Hörprüfung der Reviewfassungen steht noch aus.
+
+### 01 · Grundlagen, Geltungsbereiche und sichere Tests
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v1/de.mp4" %}
+Grundlagen, Geltungsbereiche und sichere Tests
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](01-grundlagen.md)
+
+### 02 · Text bereinigen: Schreibweise, Trimmen und Zeichen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-02-text-cleaning-preview-admin/v1/de.mp4" %}
+Text bereinigen: Schreibweise, Trimmen und Zeichen
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-02-text-cleaning-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](02-text-bereinigen.md)
+
+### 03 · Nummern formen: Auffüllen, Kürzen, Präfix und Suffix
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-03-numbers-and-affixes-preview-admin/v2/de.mp4" %}
+Nummern formen: Auffüllen, Kürzen, Präfix und Suffix
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-03-numbers-and-affixes-preview-admin/v2/de.html) · [Schrittanleitung und Beispiele](03-nummern-und-affixe.md)
+
+### 04 · Teilstücke und Muster: Ausschneiden, Extrahieren, Ersetzen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-04-substrings-and-patterns-preview-admin/v1/de.mp4" %}
+Teilstücke und Muster: Ausschneiden, Extrahieren, Ersetzen
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-04-substrings-and-patterns-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](04-teilstuecke-und-muster.md)
+
+### 05 · Wertzuordnungen und Regeln pro Tabellenzeile
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-05-value-mapping-preview-admin/v1/de.mp4" %}
+Wertzuordnungen und Regeln pro Tabellenzeile
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-05-value-mapping-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](05-werte-zuordnen.md)
+
+### 06 · Datum und Zahlen richtig formatieren
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-06-dates-and-numbers-preview-admin/v1/de.mp4" %}
+Datum und Zahlen richtig formatieren
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-06-dates-and-numbers-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](06-datum-und-zahlen.md)
+
+### 07 · Felder übernehmen, Festwerte, Leeren und Standardwerte
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v1/de.mp4" %}
+Felder übernehmen, Festwerte, Leeren und Standardwerte
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](07-felduebernahme-und-standardwerte.md)
+
+### 08 · Tabellenzeilen neu aufbauen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-08-table-rows-preview-admin/v1/de.mp4" %}
+Tabellenzeilen neu aufbauen
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-08-table-rows-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](08-tabellenzeilen.md)
+
+### 09 · Routing, Reihenfolge, Stammdaten und Wiederholungen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-09-routing-and-execution-preview-admin/v1/de.mp4" %}
+Routing, Reihenfolge, Stammdaten und Wiederholungen
+{% endembed %}
+
+[Mit deutschen Untertiteln und Kapiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-09-routing-and-execution-preview-admin/v1/de.html) · [Schrittanleitung und Beispiele](09-routing-und-ausfuehrung.md)
+
 ## Vier Geltungsbereiche
 
 | Bereich | Eingabe und Ziel | Typische Aufgabe |

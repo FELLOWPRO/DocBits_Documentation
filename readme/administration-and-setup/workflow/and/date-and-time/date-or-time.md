@@ -22,8 +22,8 @@ Questa scheda del workflow verifica se la data e l'ora attuali si trovano all'in
 * **Valutazione della condizione:** Quando il workflow raggiunge la scheda, questa prende la data e l'ora attuali in UTC e verifica se si trovano tra i due valori della scheda. Il valore precedente viene usato come inizio, quindi l'ordine dei due campi non ha importanza.
   * Un valore con solo un'ora (ad esempio `09:00`) viene usato con la data di oggi, quindi la finestra si ripete ogni giorno.
   * Inizio e fine fanno parte della finestra: esattamente all'ora di inizio o di fine, **È** è vero.
-  * Una finestra a cavallo della mezzanotte può essere inserita solo con orari, ad esempio da `22:00` a `04:00`. La scheda verifica quindi l'intervallo dalle 22:00 alle 04:00; in questo caso gli orari esatti di inizio e di fine non fanno parte della finestra.
-  * Una finestra a cavallo della mezzanotte con date complete (ad esempio da `2026-11-01 22:00` a `2026-11-02 04:00`) attualmente non viene valutata correttamente e non dovrebbe essere utilizzata.
+  * Una finestra a cavallo della mezzanotte può essere inserita solo con orari, ad esempio da `22:00` a `04:00`. La scheda verifica quindi ogni giorno l'intervallo dalle 22:00 alle 04:00, compresi gli orari esatti di inizio e di fine.
+  * Con date complete su due giorni diversi (ad esempio da `2026-11-01 22:00` a `2026-11-02 04:00`), la scheda verifica l'intero periodo dal primo al secondo momento, inizio e fine compresi.
 * **Esecuzione dell'azione:**
   * **Condizione vera:**\
     Se la condizione è soddisfatta, il workflow prosegue con le schede successive.

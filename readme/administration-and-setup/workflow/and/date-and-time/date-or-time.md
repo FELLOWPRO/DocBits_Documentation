@@ -22,8 +22,8 @@ Cette carte de workflow vérifie si la date et l'heure actuelles se situent à l
 * **Évaluation de la condition :** lorsque le workflow atteint la carte, celle-ci prend la date et l'heure actuelles en UTC et vérifie si elles se situent entre les deux valeurs de la carte. La valeur la plus ancienne est utilisée comme début, l'ordre des deux champs n'a donc pas d'importance.
   * Une valeur contenant uniquement une heure (par exemple `09:00`) est utilisée avec la date du jour, de sorte que la plage se répète chaque jour.
   * Le début et la fin font partie de la plage : exactement à l'heure de début ou de fin, **Est** est vrai.
-  * Une plage qui passe minuit peut être saisie avec des heures seules, par exemple de `22:00` à `04:00`. La carte vérifie alors la période de 22:00 à 04:00 ; dans ce cas, les heures exactes de début et de fin ne font pas partie de la plage.
-  * Une plage qui passe minuit avec des dates complètes (par exemple de `2026-11-01 22:00` à `2026-11-02 04:00`) n'est actuellement pas évaluée correctement et ne devrait pas être utilisée.
+  * Une plage qui passe minuit peut être saisie avec des heures seules, par exemple de `22:00` à `04:00`. La carte vérifie alors chaque jour la période de 22:00 à 04:00, heures exactes de début et de fin comprises.
+  * Avec des dates complètes sur deux jours différents (par exemple de `2026-11-01 22:00` à `2026-11-02 04:00`), la carte vérifie toute la période du premier au second moment, début et fin compris.
 * **Exécution de l'action :**
   * **Condition vraie :**\
     Si la condition est remplie, le workflow continue avec les cartes suivantes.

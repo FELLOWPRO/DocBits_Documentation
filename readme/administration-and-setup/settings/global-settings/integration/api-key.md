@@ -2,10 +2,14 @@
 
 <figure><img src="../../../../.gitbook/assets/s150-api-key-list-row-de.png" alt="API-Schlüsselliste mit ausgeblendeten Schlüsseln und Kontodaten. Die Spaltenbezeichnung Actions ist in der Produktoberfläche noch englisch."><figcaption><p>API-Schlüsselliste mit ausgeblendeten Schlüsseln und Kontodaten. Die Spaltenbezeichnung Actions ist in der Produktoberfläche noch englisch.</p></figcaption></figure>
 
-### API-Schlüssel
+### API-Schlüsselliste
 
-* **Schlüssel:** Dies ist die eindeutige Kennung, die von externen Anwendungen verwendet wird, um auf die API von DocBits zuzugreifen. Sie ist entscheidend für die Authentifizierung von Anfragen, die von anderer Software an DocBits gestellt werden.
-* Aktionen wie Anzeigen, Neugenerieren oder Kopieren des API-Schlüssels können hier durchgeführt werden, abhängig von den spezifischen Bedürfnissen und Sicherheitsprotokollen.
+Ein API-Schlüssel erlaubt anderen Systemen den Zugriff auf DocBits ohne Benutzeranmeldung. Die Abbildung oben verbirgt Schlüssel und Kontodaten.
+
+* **Schlüssel:** Die Liste zeigt nur das Präfix, gefolgt von `****`. Das Kopiersymbol kopiert dieses Präfix, nicht den vollständigen Schlüssel. Der vollständige Schlüssel wird nur einmal direkt nach seiner Erstellung angezeigt.
+* **Name / Läuft Ab / Zuletzt Verwendet / Status:** Die Spalten zeigen Namen, Ablaufdatum, letzte Verwendung und Zustand des Schlüssels.
+* **API-Schlüssel erstellen:** Öffnet den Dialog für einen neuen Schlüssel. Erst die Bestätigung im Dialog erstellt ihn. Die Anleitung [API-Schlüsselverwaltung](api-key-management.md) erklärt die Felder und die einmalige Anzeige des vollständigen Schlüssels.
+* **Actions (Dreipunktmenü):** Für aktive Schlüssel bietet das Menü Bearbeiten von Name und Beschreibung sowie Widerrufen an. Für inaktive beziehungsweise widerrufene Schlüssel bietet es Löschen an. Die jeweilige Änderung wird im folgenden Dialog bestätigt.
 
 ### Einstellungen für SSO (Single Sign-On) Dienstanbieter
 

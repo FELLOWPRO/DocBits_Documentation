@@ -1,6 +1,12 @@
 # Exporteren met exportconfiguratie
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v1-nl-nl.png" alt="Exporteren met exportconfiguratie, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v3-nl-nl.png" alt="Exporteren met exportconfiguratie, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-nl-nl.png" alt="Documentexport in de wachtrij plaatsen met exportconfiguratie: … voor de uiteindelijke export aan het einde van de run. Lopende taken negeren: …. — Versie 2" width="634"><figcaption><p>Documentexport in de wachtrij plaatsen met exportconfiguratie: … voor de uiteindelijke export aan het einde van de run. Lopende taken negeren: …. — Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-nl-nl.png" alt="Documentexport in de wachtrij plaatsen met exportconfiguratie: … voor de uiteindelijke export aan het einde van de run. Lopende taken negeren: …. Status na export: …. — Versie 3" width="634"><figcaption><p>Documentexport in de wachtrij plaatsen met exportconfiguratie: … voor de uiteindelijke export aan het einde van de run. Lopende taken negeren: …. Status na export: …. — Versie 3</p></figcaption></figure>
 
 ## **Doel:**
 

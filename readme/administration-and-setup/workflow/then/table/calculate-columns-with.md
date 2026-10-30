@@ -1,52 +1,55 @@
-# Kolommen berekenen
+# Bereken kolommen met
 
-## Wanneer en waar gebruiken
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v1-nl-nl.png" alt="Bereken kolommen met, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
 
-Gebruik deze kaart als elke rij in een tabel een berekende waarde nodig heeft. Een veelvoorkomend voorbeeld is het regeltotaal van een factuur: **hoeveelheid × eenheidsprijs**. De kaart berekent de gekozen bewerking per rij en schrijft het resultaat naar de resultaatkolom.
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-nl-nl.png" alt="Bereken kolommen met, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
-Voeg de actie in de standaardworkflow toe onder **Dan → Tabel**. Stel de gewenste voorwaarden in bij **Wanneer** en **En**, en controleer de invoer voordat een volgende workflowstap de berekende bedragen gebruikt.
+## Doel:
 
-## Beheerdersvideo
+Deze workflowkaart berekent rij voor rij een waarde uit twee kolommen van een tabel op het document en slaat het resultaat op in een resultaatkolom. De kaart kan bijvoorbeeld worden gebruikt om regeltotalen te berekenen uit hoeveelheid en eenheidsprijs.
 
-**36 seconden · Nederlands.** Jan legt het gebruik uit, kiest hoeveelheid × eenheidsprijs en toont de opgeslagen resultaten op dezelfde voorbeeldfactuur.
+## Beheerdersvideo:
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/nl.mp4" %}
 
 [Video met Nederlandse ondertiteling](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/nl.html) · [Transcript lezen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/nl.txt)
 
-## Kaart instellen
+## Onderdelen van de kaart:
 
-| Instelling | Keuze in het voorbeeld |
-| --- | --- |
-| Tabel | `INVOICE_TABLE` |
-| Eerste kolom | `QUANTITY` — Hoeveelheid |
-| Rekenbewerking | `*` — vermenigvuldigen |
-| Tweede kolom | `UNIT_PRICE` — Eenheidsprijs |
-| Resultaatkolom | `TOTAL_AMOUNT` — Totaalbedrag |
+1. **Tabel**
+   * **Beschrijving:** De tabel op het document waarin de berekening wordt uitgevoerd.
+2. **Eerste kolom**
+   * **Beschrijving:** De kolom met de eerste waarde van elke rij.
+3. **Bewerking**
+   * **Opties:**
+     * **+** telt de tweede waarde op bij de eerste.
+     * **-** trekt de tweede waarde af van de eerste.
+     * **\*** vermenigvuldigt de twee waarden.
+     * **/** deelt de eerste waarde door de tweede.
+4. **Tweede kolom**
+   * **Beschrijving:** De kolom met de tweede waarde van elke rij.
+5. **Resultaatkolom**
+   * **Beschrijving:** De kolom waarin het resultaat van elke rij wordt opgeslagen.
+   * **Detail:** De naam wordt in hoofdletters opgeslagen, waarbij spaties worden vervangen door underscores (`total amount` wordt `TOTAL_AMOUNT`). Als de kolom nog niet bestaat, voegt de kaart die toe; als ze bestaat, worden de waarden ervan vervangen.
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-configured-nl-20261024.png" alt="Ingestelde Nederlandse kaart met tabel INVOICE_TABLE, Hoeveelheid maal Eenheidsprijs en Totaalbedrag als resultaatkolom."><figcaption><p>Hoeveelheid × Eenheidsprijs → Totaalbedrag in de werkelijke Nederlandse interface.</p></figcaption></figure>
+Versie 1 en 2 van de kaart hebben dezelfde instellingen en werken op dezelfde manier.
 
-In de getoonde interface staat de tabelnaam tweemaal. De selectie in dit voorbeeld betreft één tabel: `INVOICE_TABLE`.
+## Functionaliteit:
 
-Naast vermenigvuldigen zijn **optellen (`+`)**, **aftrekken (`-`)** en **delen (`/`)** beschikbaar. Bij aftrekken en delen is de volgorde van de kolommen bepalend: de eerste kolom staat links van het bewerkingsteken. Controleer bij deling ook de noemer.
+* **Berekening:** Voor elke rij van de tabel leest de kaart de twee kolommen (hoofdletters en kleine letters in de kolomnamen maken niet uit), past de bewerking toe en schrijft het resultaat in de resultaatkolom. Resultaten worden afgerond op vier decimalen. Daarna wordt het document met de nieuwe waarden opgeslagen.
+  * Een lege of ontbrekende waarde geldt als `0`. Als beide waarden van een rij leeg zijn, blijft het resultaat van die rij leeg.
+  * Een deling door nul laat het resultaat van die rij leeg.
+  * Met **+** worden twee waarden die geen getallen zijn met een spatie samengevoegd in plaats van opgeteld. Bij de andere bewerkingen veroorzaakt een waarde die geen getal is een fout, en worden er geen resultaten opgeslagen.
+* **Actie-uitvoering:** Als de berekening en het opslaan slagen, gaat de workflow verder met de volgende kaarten. Als de tabel niet op het document bestaat, een waarde niet kan worden berekend of het document niet kan worden opgeslagen, meldt de kaart een fout in het workflowlogboek.
+* **Testkaart:** Wanneer de kaart met **Testkaart** wordt uitgevoerd, wordt de berekening alleen gesimuleerd en wordt het document niet gewijzigd.
 
-## Praktisch voorbeeld
+## Opzet en configuratie:
 
-Dezelfde voorbeeldfactuur bevat twee regels. De bronkolommen hebben deze waarden:
+* De kaart kan als Then-actie worden toegevoegd vanuit de categorie **Tabel**. Daarna worden de tabel, de twee kolommen, de bewerking en de resultaatkolom geselecteerd.
+* **Voorbeeld:** Tabel `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, resultaatkolom `TOTAL_AMOUNT`. Een rij met hoeveelheid 2 en eenheidsprijs 10 krijgt 20, een rij met 3 en 4 krijgt 12.
+* Omdat een lege waarde als `0` geldt, geeft een ontbrekende prijs een resultaat van `0`. Controleren of de invoerkolommen gevuld zijn, bijvoorbeeld met een voorwaarde vóór deze kaart, kan helpen om verkeerde totalen te voorkomen.
+* Bij aftrekken en delen is de volgorde van de twee kolommen van belang.
 
-| Rij | Hoeveelheid | Eenheidsprijs | Totaalbedrag na de berekening |
-| --- | ---: | ---: | ---: |
-| 1 | 2 | 10,00 | 20,00 |
-| 2 | 3 | 4,00 | 12,00 |
+## Conclusie:
 
-Na het uitvoeren van de kaart zijn **20,00** en **12,00** in de resultaatkolom opgeslagen. De hoeveelheid en eenheidsprijs blijven gelijk. Het gaat om afzonderlijke berekeningen per rij; de kaart maakt hiervan geen gezamenlijke factuursom.
-
-<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-nl-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-nl-light-20261025.png" alt="Na het heropenen van dezelfde factuur bevat TOTAL_AMOUNT voor de twee regels 20,00 en 12,00. De oorspronkelijke bedragen in NET_AMOUNT blijven behouden." width="735"></picture><figcaption><p>Na het heropenen van dezelfde factuur bevat TOTAL_AMOUNT voor de twee regels 20,00 en 12,00. De oorspronkelijke bedragen in NET_AMOUNT blijven behouden.</p></figcaption></figure>
-
-## Controleren en tegenvoorbeelden
-
-- Controleer of de juiste tabel, bronkolommen, bewerking en resultaatkolom zijn gekozen.
-- Controleer of beide bronkolommen numerieke waarden bevatten. Tekst zoals `ABC` in plaats van een getal leidt tot een rekenfout.
-- Een ontbrekende eenheidsprijs kan in dit voorbeeld een resultaat van **0** opleveren. Dat bewijst niet dat de invoer volledig is; controleer ontbrekende waarden afzonderlijk.
-- Bestaande waarden in de resultaatkolom worden vervangen. Kies daarom bewust de kolom die de kaart mag bijwerken.
-- Controleer meerdere rijen afzonderlijk en vergelijk de opgeslagen resultaten met de bronwaarden.
+De workflowkaart "Calculate Columns with" voegt automatisch berekende waarden toe aan tabelrijen. Regeltotalen en vergelijkbare waarden zijn beschikbaar voor de volgende kaarten en voor de export, zonder handmatige berekening.

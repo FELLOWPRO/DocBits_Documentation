@@ -1,6 +1,8 @@
 # Aanwezigheid en inhoud van een documentveld controleren
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1-nl-nl.png" alt="Aanwezigheid en inhoud van een documentveld controleren, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-nl-nl.png" alt="Aanwezigheid en inhoud van een documentveld controleren, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## Wanneer gebruiken
 

@@ -1,6 +1,10 @@
 # Document toewijzen aan gebruiker
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e7f92cca6e9d-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v1-nl-nl.png" alt="Document toewijzen aan gebruiker, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v2-nl-nl.png" alt="Document toewijzen aan gebruiker, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-nl-nl.png" alt="Document toewijzen aan gebruiker, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
 ## **Doel:**
 

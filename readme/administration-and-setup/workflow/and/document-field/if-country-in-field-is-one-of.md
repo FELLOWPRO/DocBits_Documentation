@@ -1,6 +1,6 @@
 # Als Land in veld één van is
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-nl-nl.png" alt="Als Land in veld één van is, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 Gebruik deze voorwaarde wanneer een extra verwerkingsstap moet gelden voor documenten uit bepaalde landen, bijvoorbeeld Duitsland en Frankrijk. De kaart vergelijkt het land uit een documentveld met een ingestelde landenlijst.
 

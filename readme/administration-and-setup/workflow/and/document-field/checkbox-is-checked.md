@@ -1,44 +1,40 @@
 # Het selectievakje is aangevinkt
 
-## Wanneer en waar gebruikt u deze kaart?
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-nl-nl.png" alt="Het selectievakje is aangevinkt, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
-Gebruik deze voorwaarde als een vervolghandeling afhangt van een selectievakje op het document. Laat een factuur bijvoorbeeld pas verder verwerken nadat de controlevlag is aangevinkt.
+## Doel:
 
-Voeg de kaart in de workflow-editor toe onder **En… → Documentveld**. De kaart vergelijkt de veldwaarde wanneer de workflow wordt uitgevoerd; ze bewaakt niet continu een ERP-veld en wijzigt het selectievakje niet.
+Deze workflowkaart controleert of een selectievakjeveld op het document aangevinkt of niet aangevinkt is. De kaart kan worden gebruikt om een workflow pas verder te laten gaan nadat op het document een markering is gezet, bijvoorbeeld een controlemarkering.
 
-## Voorwaarden vooraf
+## Onderdelen van de kaart:
 
-Het documenttype moet een booleaans veld voor dit selectievakje bevatten. Gebruik de exacte technische veldnaam. Dit voorbeeld gebruikt `validation_complete`; vervang deze door het overeenkomstige veld in uw organisatie.
+1. **Veldnaam**
+   * **Beschrijving:** De technische naam van het selectievakjeveld op het document.
+   * **Detail:** Het veld hoort een selectievakjeveld (Boolean) van het documenttype te zijn.
+2. **Boolean**
+   * **Beschrijving:** De status die het selectievakje hoort te hebben.
+   * **Opties:**
+     * **WAAR:** Het selectievakje hoort aangevinkt te zijn.
+     * **Onwaar:** Het selectievakje hoort niet aangevinkt te zijn.
 
-## De kaart configureren
+## Functionaliteit:
 
-1. Kies **Selectievakje … is aangevinkt** onder **Documentveld**.
-2. Voer `validation_complete` in bij **Veldnaam** en bevestig de waarde.
-3. Kies **WAAR** bij **Booleaans** om een aangevinkt selectievakje te vereisen. Kies **Onwaar** om te controleren of het niet is aangevinkt.
+* **Voorwaarde-evaluatie:** Wanneer de workflow de kaart bereikt, leest de kaart de huidige waarde van het veld op het document en vergelijkt die met **Boolean**. De kaart houdt het veld niet in de gaten over langere tijd en wijzigt het niet.
+  * Een lege selectievakjewaarde geldt als niet aangevinkt.
+  * Als er geen waarde voor **Boolean** is geselecteerd, controleert de kaart op een niet aangevinkt selectievakje.
+  * Als het veld geen selectievakjeveld is, vermeldt de kaart dit in het workflowlogboek en vergelijkt ze de waarde toch.
+* **Actie-uitvoering:**
+  * **True-voorwaarde:**\
+    Als de status van het selectievakje overeenkomt met **Boolean**, gaat de workflow verder met de volgende kaarten.
+  * **False-voorwaarde:**\
+    Als die niet overeenkomt, stopt de workflow met een niet voldane voorwaarde.
+* **Ontbrekende gegevens:** Als het veld niet op het document bestaat, evalueert de kaart de voorwaarde niet. Ze meldt dat het veld niet op het document is gevonden. Dat is een ander resultaat dan een niet aangevinkt selectievakje.
 
-## Praktisch voorbeeld: doorgaan na controle
+## Opzet en configuratie:
 
-**Wanneer gebruiken:** een factuur vereist een voorafgaande controle en het proces legt de voltooiing vast in `validation_complete`.
+* De kaart kan als And-voorwaarde worden toegevoegd vanuit de categorie **Documentveld**. Daarna wordt de technische naam van het selectievakjeveld ingevoerd bij **Veldnaam** en wordt **WAAR** of **Onwaar** geselecteerd.
+* Met **Testkaart** in het kaartmenu van de Workflow Builder kan de configuratie worden gecontroleerd op een document met het selectievakje aangevinkt, een document met het selectievakje niet aangevinkt en een document zonder het veld.
 
-**Waar plaatsen:** bij de voorwaarden onder **En…**, vóór de vervolghandeling die u onder **Dan…** configureert. Configureer deze handeling en de gebeurtenis die de workflow start afzonderlijk.
+## Conclusie:
 
-**Voorbeeldconfiguratie:** veld `validation_complete`, vergelijking **WAAR** (`true`), kaartversie 2.
-
-<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-nl-20261025.png" alt="Voorbeeld met versie 2: validation complete vergeleken met WAAR." width="651"><figcaption><p>Voorbeeld met versie 2: validation complete vergeleken met WAAR.</p></figcaption></figure>
-
-De verwachte resultaten voor deze configuratie zijn:
-
-| Veldwaarde op het document | Resultaat van de voorwaarde |
-| --- | --- |
-| Bestaand, aangevinkt selectievakje (`true`) | Aan de voorwaarde is voldaan. |
-| Bestaand, niet-aangevinkt selectievakje (`false`) | Aan de voorwaarde is niet voldaan. |
-| Bestaand selectievakje met een lege waarde (`None`) | Wordt behandeld als niet aangevinkt; aan de voorwaarde is niet voldaan. |
-| Het veld ontbreekt op het document | `NOT_FOUND_IN_DOCUMENT`; dit verschilt van een bestaand, niet-aangevinkt selectievakje. |
-
-Als u **Onwaar** kiest, voldoet een bestaand, niet-aangevinkt selectievakje aan de voorwaarde en een aangevinkt selectievakje niet. Een ontbrekend veld geeft nog steeds een afzonderlijk foutresultaat.
-
-## Controleren vóór activering
-
-Controleer of het gekozen veld booleaans is en bij het gebruikte documenttype hoort. Test een document met een aangevinkt selectievakje, een document met een niet-aangevinkt selectievakje en een document waarop het veld ontbreekt. Controleer telkens het kaartresultaat en het vervolgpad van de workflow.
-
-Deze kaart controleert de status van het selectievakje; het voorafgaande proces moet de controlevlag instellen. De vlag automatisch aanvinken zonder de controle uit te voeren, bewijst niet dat de controle heeft plaatsgevonden.
+De workflowkaart "Checkbox is checked" maakt van een selectievakje op het document een workflowvoorwaarde. Zo kan een workflow wachten op een handmatige stap, zoals een afgeronde controle, voordat de volgende acties worden uitgevoerd.

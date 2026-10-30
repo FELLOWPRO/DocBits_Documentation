@@ -1,8 +1,12 @@
 # Vergelijk Orderbevestiging met Inkooporder
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4bbb1060027b-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1-nl-nl.png" alt="Vergelijk Orderbevestiging met Inkooporder, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2-nl-nl.png" alt="Vergelijk Orderbevestiging met Inkooporder, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3-nl-nl.png" alt="Vergelijk Orderbevestiging met Inkooporder, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4-nl-nl.png" alt="Vergelijk Orderbevestiging met Inkooporder, Versie 4" width="634"><figcaption><p>Versie 4</p></figcaption></figure>
 
 ## Doel:
 

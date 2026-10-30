@@ -1,6 +1,12 @@
 # Maak een nieuwe taak en wijs deze toe aan de gebruiker
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v1-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de gebruiker, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v2-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de gebruiker, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v3-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de gebruiker, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v4-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de gebruiker, Versie 4" width="634"><figcaption><p>Versie 4</p></figcaption></figure>
 
 ## **Doel**
 

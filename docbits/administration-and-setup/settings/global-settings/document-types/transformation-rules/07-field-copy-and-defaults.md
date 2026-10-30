@@ -53,8 +53,8 @@ Verify a matching case, a counter-case, an empty value, and an already processed
 
 ## Video tutorial
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v2/en.mp4" %}
 Configuration, worked examples and counterexamples.
 {% endembed %}
 
-[Open the video with English captions and chapters](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v1/en.html). This review version is awaiting the subject-matter and complete listening review.
+[Open the video with English captions and chapters](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-07-field-copy-and-defaults-preview-admin/v2/en.html). This review version is awaiting the subject-matter and complete listening review.

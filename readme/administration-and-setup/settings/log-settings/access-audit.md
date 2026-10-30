@@ -8,7 +8,7 @@ Informacje o firmie, plan subskrypcji i dzienniki audytu w DocBits
 
 Film pokazuje informacje i preferencje firmy, plan subskrypcji, aktywność logowania oraz dzienniki audytu.
 
-<figure><img src="../../../.gitbook/assets/dbdc759-access-audit-page-pl-20261012.png" alt="Dziennik audytu z wyłączoną usługą śledzenia audytu; strona pokazuje przełącznik organizacji, filtry, Enable Now, Auto-refresh, Refresh i Export"><figcaption><p>Strona Sandbox w języku polskim przed włączeniem rejestrowania audytu.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc759-access-audit-page-pl-20261012.png" alt="Przykładowy włączony dziennik audytu z filtrami, kartami podsumowania i zapisanymi zdarzeniami. Elementy sterujące dziennika na ilustracji są po angielsku."><figcaption><p>Przykład włączonego dziennika audytu. Nawigacja jest po polsku, a elementy sterujące dziennika na ilustracji pozostają po angielsku.</p></figcaption></figure>
 
 Audyt Dostępu rejestruje, kto utworzył, zmodyfikował lub usunął zasób i kiedy. Otwórz **Ustawienia → Rejestrowanie aktywności → Audyt dostępu**, aby przejrzeć dziennik. Włącz usługę dla organizacji tylko wtedy, gdy zamierzasz zbierać zdarzenia audytu.
 

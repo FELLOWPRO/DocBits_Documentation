@@ -269,3 +269,6 @@ Gdy **Wykonywanie dziennika** jest włączone, każde zastosowanie zasady jest z
 * [Custom Validation Rules](custom-validation-rules.md) — sprawdzanie przekształconych wartości
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — wybór layoutu używanego przez dokument
 * [Zasady dopasowywania zamówień zakupu](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+
+[Reguły transformacji: pełny przegląd praktyczny](transformation-rules/complete-practical-guide.md)

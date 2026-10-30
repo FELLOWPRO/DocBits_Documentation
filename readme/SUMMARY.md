@@ -219,6 +219,7 @@
     * [SSO Configuration](setup/sso-configuration.md)
     * [Postman for DocBits](setup/postman-for-docbits.md)
     * [Özel Doğrulama Kuralını Çoğaltma](administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md)
+    * [Script Etkinleştirme ve Yönetimi](administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md)
     * [DocBits'te Scripting](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)
       * [Bağlam Değişkenleri](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/context-variables.md)
       * [Fonksiyonlar](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/functions.md)

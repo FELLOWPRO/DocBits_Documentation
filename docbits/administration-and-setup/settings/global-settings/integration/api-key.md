@@ -16,8 +16,8 @@ The **API Key** section at the top of the Integration & SSO page lists every API
 These are the values your Identity Provider needs in order to let users sign in to DocBits with your company login. For the full setup guide, see [Configuring Single Sign-On (SSO)](configuring-single-sign-on-sso/).
 
 * **Entity ID:** The identifier for DocBits as a service provider in the SSO configuration. The copy icon copies the value to your clipboard.
-* **SLO (Single Logout) URL:** The URL used to log a user out of all applications connected through SSO at the same time. The copy icon copies the value.
-* **SSO URL:** The URL used for initiating the single sign-on process. The copy icon copies the value.
+* **SLO (Single Logout) URL:** The DocBits SAML single logout service endpoint. The copy icon copies the value.
+* **SSO URL:** The DocBits Assertion Consumer Service (ACS) endpoint, which receives SAML responses from the identity provider. Use it as the Reply URL (ACS URL) in the identity provider configuration. The copy icon copies the value.
 * **Download Certificate:** Downloads the security certificate your Identity Provider needs to trust DocBits.
 * **Download Metadata:** Downloads the SAML metadata file that can be imported directly into most Identity Providers.
 

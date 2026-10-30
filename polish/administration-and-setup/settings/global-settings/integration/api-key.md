@@ -1,6 +1,6 @@
 # Klucz API
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-pl.png" alt="Panel Klucze API z przyciskiem Utwórz klucz API, kolumnami listy kluczy i przedrostkiem klucza ukrytym na potrzeby dokumentacji"><figcaption><p>Ustawienia → Integracja i SSO → Klucz API. Przedrostek klucza jest na tym zrzucie ukryty.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-pl.png" alt="Panel Klucze API z przyciskiem Utwórz klucz API, kolumnami listy i przykładowymi kluczami z widocznym przedrostkiem oraz zamaskowaną dalszą częścią."><figcaption><p>Ustawienia → Integracja i SSO → Klucz API. Przykładowe klucze mają widoczny przedrostek i zamaskowaną dalszą część.</p></figcaption></figure>
 
 Sekcja **Klucz API** na górze strony Integracja i SSO wymienia wszystkie klucze API utworzone przez Twoją organizację. Klucz API pozwala innemu systemowi — Twojemu ERP, skryptowi albo aplikacji partnera — uzyskać dostęp do DocBits bez logowania użytkownika. Instrukcje krok po kroku znajdziesz w sekcji [Zarządzanie Kluczami API](api-key-management.md).
 

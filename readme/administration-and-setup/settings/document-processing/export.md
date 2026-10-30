@@ -41,6 +41,17 @@ Jednak możliwe jest posiadanie:
 * **Jednego aktywnego eksportu Infor** _i_ **jednego aktywnego eksportu nie-Infor** jednocześnie dla tego samego typu dokumentu
 * **Różnych konfiguracji eksportu dla różnych podorganizacji** — na przykład jeden eksport Infor dla Pod-Org A i inny eksport Infor dla Pod-Org B
 
+## Aktywacja na ekranie edycji
+
+Istniejąca konfiguracja ma przełącznik **Aktywny** w stopce ekranu edycji, obok przycisku **Zapisz**.
+
+1. Otwórz konfigurację do edycji (**Edytuj**).
+2. Ustaw przełącznik **Aktywny** w żądanym położeniu i wybierz **Zapisz**.
+
+DocBits aktywuje lub dezaktywuje konfigurację tak samo jak lista: jeśli dla tego samego typu dokumentu jest już aktywna inna konfiguracja, aktywacja zostaje odrzucona. Zapisanie formularza nie zmienia już samego stanu; przełącznik w stopce i status na liście zawsze pokazują ten sam stan.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-pl.png" alt="Ekran edycji konfiguracji eksportu z przełącznikiem Aktywny w stopce między Anuluj i Zapisz"><figcaption><p>Przełącznik Aktywny obok przycisku Zapisz na ekranie edycji konfiguracji eksportu.</p></figcaption></figure>
+
 ## **Tworzenie nowego eksportu**
 
 Aby utworzyć nowy eksport:

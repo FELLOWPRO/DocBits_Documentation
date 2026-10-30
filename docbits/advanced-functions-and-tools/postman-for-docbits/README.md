@@ -1,162 +1,55 @@
+---
+description: Use Postman with the matching DocBits API environment and start with a read-only request.
+---
+
 # Postman for DocBits
 
-This guide will show you how to make HTTP requests to your DocBits organization via Postman. It is easy to use and very useful for organization administrators.
+Use Postman to send HTTP requests to the DocBits API. Begin with a read-only request in an environment you are authorized to use. Keep credentials in private variables or a vault, and use separate Postman environments for testing and production.
 
-## Setup
+## 1. Choose the API environment and base URL
 
-First, download Postman to your system and sign in/register.
+Open the interactive API documentation for your organization’s environment, such as the [Sandbox API documentation](https://sandbox.api.docbits.com/docs) or [Production API documentation](https://api.docbits.com/docs). Use the current operation paths and the **Servers** value shown there.
 
-Now follow this step-by-step guide to learn how HTTP requests work in Postman.
+A relative server path belongs after the API origin. In the [Dev documentation illustrated here](https://eu.dev.api.docbits.com/docs), the server is `/dev-api`, so the corresponding base URL is `https://eu.dev.api.docbits.com/dev-api`. Other environments can have a different server value.
 
-Authorization in Postman
+<figure><img src="../../.gitbook/assets/dbdc-195-dev-api-overview-en-20261030.png" alt="Current English Dev DocBits API documentation showing the API version, Servers value /dev-api, Authorize button and GET version operation"><figcaption><p>Current Dev API documentation. This is a native API documentation view, not a Postman application screenshot.</p></figcaption></figure>
 
-Before you can create your HTTP requests, you need to enter your API key from DocBits to authorize them.
+Create a Postman environment variable named `base_url` and give it the complete base URL for your chosen environment, including its server path. Select that environment before sending a request. Postman’s [environment guide](https://learning.postman.com/docs/use/send-requests/variables/managing-environments/) explains how environment variables are selected and used.
 
-* Click on the \`Authorization\` tab and choose \`API Key\` as authorization type.
+## 2. Send a read-only first request
 
-![Postman request with the Authorization tab open and the Type dropdown showing Inherit auth from parent, Bearer Token, Basic Auth, Digest Auth, OAuth 1.0 and OAuth 2.0](https://lh7-us.googleusercontent.com/L3GaBZJvReeINaKbkq3VYQ9UHTBoKUA3nJkfyLqk61q5xaOJnmMLhbrEbgUgLEyYRkewHuLIAVzoYCZ6quHq0pwx\_69FEYJjzYllivB8WzdAtTFSrzl8VeFthbMsEB9sGjcGlVN38DXEXUwuNEPL6hg)
+Create a request with method **GET** and URL `{{base_url}}/version`. In the request’s **Authorization** tab, select **No Auth**, then choose **Send**.
 
-* Fill in the values. Enter “X-API-key” in the \`Key\` field and your API Key as value (found in DocBits Settings menu under Integration) Select Add to \`Header\`.
+For the illustrated Dev environment, the checked request was:
 
-&#x20;
+```http
+GET https://eu.dev.api.docbits.com/dev-api/version
+```
 
-* It should look like this:
+This endpoint returned HTTP 200 without an API key. It checks API reachability and returns version information; it does not verify access to an organization’s documents or users. Check the response status and body. If the request fails, confirm the selected environment, origin and server path before adding credentials.
 
-![Postman Authorization tab with the type API Key, the Key x-api-key, the Value field for the API key and the Add to dropdown set to Header](https://lh7-us.googleusercontent.com/SmNfci4z8ECTeXzFPE9YQ8nCzCRHglc\_7RR1cN8a8F7KvYWjJcBnY5wpl7q0AV8bfNLkMk8F4F4aw8j4xMK50HJweBRBPo8EasTn-FG-fmlUJQ41aUX-dvTeWP\_xJQThi8A6EwJl3qIc-Dw1B5W9fVE)
+## 3. Use the credentials required by the operation
 
-### DocBits API
+Open the operation you intend to use and read its parameters and authorization information. The API specification includes these distinct header schemes:
 
-Available at https://api.polydocs.io
+| Header | Purpose |
+|--------|---------|
+| `X-ORG-ID` | Identifies the target organization when required. |
+| `Authorization` | Carries the authorization value required by the relevant authentication mechanism. |
+| `X-API-KEY` | Carries an API key for operations that use that scheme. |
 
-* Click on Authorize in the upper right corner
+These headers are not interchangeable. The global **Authorize** dialog lists available schemes; it does not mean every operation needs all of them. Additional schemes can be specific to particular operations.
 
-![Authorize button in the upper right corner of the Postman API view](https://lh7-us.googleusercontent.com/kuztHpkmRWlOYSU27r97KH15SJHPF\_hn\_eX3C1DYLVYCwMHXfLjYSyFubUCvlQiBt5q3xY0XBPmkcP6AnKF2C0Mdtx3tg\_dU\_qxqAmI6axYIsXR36\_YBz6j455K3-c2SBu4YzmYIXq8VXQxzgL-0j90)
+<figure><img src="../../.gitbook/assets/dbdc-195-dev-api-org-token-headers-en-20261030.png" alt="Native English Dev API authorization dialog showing X-ORG-ID and Authorization as separate header schemes with blank Value fields"><figcaption><p>The organization and authorization header sections, with no values entered.</p></figcaption></figure>
 
-* Enter your API Key and confirm by clicking \`Authorize\`
+For an operation that uses an API key, select **Authorization → API Key** in Postman. Set **Key** to `X-API-KEY`, use a private secret for **Value**, and select **Header** under **Add to**. See Postman’s [API key authorization instructions](https://learning.postman.com/docs/use/send-requests/authorization/authorization-types/#api-key) and [vault secret guide](https://learning.postman.com/docs/use/postman-vault/use-vault-secrets/). Add `X-ORG-ID` in **Headers** if the operation requires it. Obtain the appropriate credentials and organization value from your administrator.
 
-![Available authorizations dialog with the entry APIKeyHeader of type apiKey, the Name X-API-KEY, In header, an empty Value field and the Authorize button](https://lh7-us.googleusercontent.com/zLhgpdjMnxqNBdjgtDxFEKglICIZul7dgmfFFm2hSnsDQ-HsZHRKRikZ0lcanGYkkZj4waC85mEUFO951ydVnY\_\_m\_TrMrsK3vrDv9FKL-adgWL4lJqp3cSxPeClBm9IHG2cXinRsv12xTeh3psQfO4)
+<figure><img src="../../.gitbook/assets/dbdc-195-dev-api-key-form-en-20261030.png" alt="Native English Dev API X-API-KEY authorization section showing Name X-API-KEY, In header and an empty Value field"><figcaption><p>The API key section of the Dev API documentation. No key was entered and the form was not submitted.</p></figcaption></figure>
 
-### Create a new Workspace in Postman
+## 4. Build further requests from the current specification
 
-* Click on Workspaces and create a new workspace (you can name it whatever you want
+Use the operation’s exact HTTP method, path, required parameters and request body schema. For file uploads, select the body type required by that operation, such as multipart form data when specified. Do not infer current fields from screenshots of an older API version.
 
-![Postman Workspaces overview with the Create Workspace button and the list of recently visited workspaces](https://lh7-us.googleusercontent.com/3rZw7jhOgVpkZuer58fPEKqDspJjK3S1lp3XpQuvE4c9212a0ALB-p7oLRwPqEbj10MpoCWsb7V9fPqiAdVvigE00x9mN5-lHFXZVVxlkeroBJd2ratgkJVJDM4LJkUJsycyl6tnFKazcFPY-vWtH2Q)
+Start with an authorized read-only **GET** operation. **POST**, **PUT** and **DELETE** can change data; use them only for the intended, authorized task. A successful `/version` response does not demonstrate that an authenticated request, upload or data change will succeed.
 
-* You have to select the visibility which determines who can access this workspace.
-
-![Create workspace dialog with the fields Name and Summary, the visibility options Personal, Private, Team, Partner and Public, and the buttons Create Workspace and Cancel](https://lh7-us.googleusercontent.com/ZajvDtMvfM5J\_Go3n\_PgzD3RXTMQAlST8\_3WnsTQ4-iw7e0QdAa3wqFk7Y0gt78IJVjNTN-5E72c1127CpXJWb8WbfDolxENLqxg5VZLPEK7-hxsNwbAyMceSHfeVy6v-b9QT0kFwnMibWndEAJ2lXA)
-
-* After making your selection and clicking \`Create Workspace\` select Collections on the left side of the application and create a new collection for your HTTP requests by clicking \`+\`.
-
-![Postman sidebar with the Collections group and the entry New Collection that creates a new collection](https://lh7-us.googleusercontent.com/mbC5t86vaB2G7FQp-40XN-SHc019LKitfUeXRzbcG4HpNai5FPapShx9swHX3mz0va8QFsUQiYn-bhjvER0XYOEDRJpI9x3wG4NgRZCd4beU1NyKJd86bSGubxVbRCtz8HkTDZd28Z7Ice3rmscFMMo)
-
-In this collection, you can add multiple HTTP requests. To do this, click on the 3 points of the collection and select \`Add request\`.
-
-![Context menu of a collection in Postman with the entries Share, Move, Run collection, Edit, Add request, Add folder, Monitor collection, Mock collection, Create a fork, Create pull request, Merge changes and Pull changes](https://lh7-us.googleusercontent.com/S5W75clJz7JqoIWPbKBjrJqpTAwjS51Pu4dTU160Q7i6oW-HPnb7aN8WRK2AyAb6-HEqTYMZTy9563P0sq53MAjGpVg1JivZX2ATHa6GeFbTX2UCjud7ot8Y\_ksBuUbUfyEfxIDziV8TN3zDfX9Se58)
-
-## "GET" Method example
-
-The GET method is very useful for getting information about users, sub-organizations, processed documents, and much more.
-
-* Choose the GET method in your HTTP request.
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL. For example:
-
-![API documentation page for the GET operation /users/get_users titled Get Users with the sections Parameters without entries and Responses with the code 200 Successful Response](https://lh7-us.googleusercontent.com/pIdgyqP7g1UwZbY5yaz1KAnKe\_ESs\_kQyiWAXXM-ukRKakS\_\_OL\_LS9J-07hZnZDf8QqtoN\_lKyuhvOIIIF-4Wp0dkofZYQwXZ0hu2RM0YogRxJah-zf8W\_cDNFf8xsec1tYIsfe0SpBuvdCG4WHMU0)
-
-* Now paste this link in the text box next to the GET method in Postman.
-
-Click \`Send\` and you should receive all the information about every user in your organization.
-
-## "POST" Method example
-
-The POST method is usually used to create users or organizations, for example. This method inserts information into the database.
-
-Create User
-
-* Select the POST Method.
-* Authorize yourself as described above
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL. In this case:
-
-![API documentation page for the POST operation /users/create titled Create User with the required request body fields first_name, last_name, email, password and the boolean field is_admin](https://lh7-us.googleusercontent.com/Gwabl4pN0k0NanHsFOzJj9s2H7ExS-JcWr-Y4EW0FLUYHfnaOZoMWvldJ6yDI33p\_DThVx0Rd5bi59XdOK11l1knc5rd-E5HXMw6v5E3qvHvKVWHlp21S728SVye6KU2W5ZeXtCIOzxBAcMlA2UNFfQ)
-
-* Now paste this link into the text box next to the POST method in Postman.
-* Select the \`Body\` tab in your HTTP request and enter the keys and the values ​​for each credential that has a red asterisk next to its name.
-
-When you’re done, it should look like this:
-
-![Postman Body tab with form-data selected and the rows first_name with First_Name, lastname with Last_Name, email with test@test.com, password and is_admin with False](https://lh7-us.googleusercontent.com/lSExzZSbTcSRvuLDw0HNYE62yI7xs0eUewKuOcABCGYfsRBRbGz1lJxopR4QdUEoniCnZ83FKpz-AHLORP5cXGPrPhgouzE6zO920jA7A3r-Y14wY\_Gc3C98R2fcxXsWRMcle9qT981YWhCnjlUukPE)
-
-If you want to create an admin account, set the \`is\_admin\` value to true.
-
-&#x20;Finally, click \`Send\` and you can see all the credentials you set in the response below. This means the user has been created.
-
-### Upload Document
-
-You can also use the POST method to upload a document to DocBits.
-
-* Select the POST Method.
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL.&#x20;
-
-In this case:
-
-![API documentation page for the POST operation /document/process titled Process with the optional request body fields source, org_id, priority, sub_org_id and metadata and the required file field of type string binary](https://lh7-us.googleusercontent.com/-EwhMeH\_WXYVmMKus1-IZKLZNyTcYktcf\_YUT\_m2nfStfKXuBxKBb1MZfUIQCN4ZxNKQkNhvO\_pgnt1EUhNB34qG5AOe4wM0OxGRMQsV9a8h0XUgabqq8mLQhza\_AE7gxBetmb9bJmaWBQqEXrWT0VI)
-
-* Now paste this link into the text box next to the POST method in Postman.
-* Select the \`Body\` tab in your HTTP request and choose \`form-data\`
-
-![Postman request POST https://api.polydocs.io/document/process with the Body tab open, form-data selected and an empty KEY row for the file](https://lh7-us.googleusercontent.com/TNrKlyorn\_5YrIu5r4vcfyYgAnfhsl-SRVqWg9RoN0X1pUjXtn6J0EI7aeQ-oc2ZtFeTj8POcMXy6CwXzI1jhv-ufb2u7d80SC-lbGXmnx\_jVDunAbRw1jqAsB4PPsEzcFIOPeH5PJZvytUW2kIDYZ4)
-
-![Postman request POST https://api.polydocs.io/document/process with the Body tab open, form-data selected and the row file with the value Mango_invoice.pdf](https://lh7-us.googleusercontent.com/scAJpTSCqYSKYNNGPIrEsL0zDJIa7Dhe9tpqv\_zDjdLyAydugzdGA1s93njbFOOVbVbQf7oDEtRc14Kt4p1TXX8A--WjvRgeXWsAxDNWdrCN2-QDeya6-FFEG4\_-dhYgrj4yrVYllJs8eZsUgKOPvzo)
-
-Enter file into the \`KEY\` field where you will find the hidden File dropdown. Select \`File\` and move to the \`VALUE\` field where you are able to select your file by clicking \`Select Files\`.
-
-When you click \`Send\`, you should see “success”: true in the response.
-
-It should look like this:
-
-![Postman request POST https://api.polydocs.io/document/process with Status 200 OK and the JSON response containing success true, the doc_id and the filename Mango_invoice.pdf](https://lh7-us.googleusercontent.com/hNtG\_uTWgxww7iOmHLhnDqdrTlHCI1rk31LozG4l2DLPqxzSn9HoKn8CQIjeBgJLV4bxrGCjWOMRykJ3qBdZLYwxrZJGq\_S3tjVwSZmGTiMgVoqM97TTQjmW8CegEL2FV309NBmV0Fv\_vciSdQRFiOI)
-
-## "DELETE" Method example
-
-The DELETE method is used to delete, for example, users, organizations and so on.
-
-* Select the DELETE Method
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL.
-
-&#x20;For example:
-
-![API documentation page for the DELETE operation /users/delete/{user_id} titled Delete User with the path parameter user_id](https://lh7-us.googleusercontent.com/-QqSVIELl1IkxYK\_gGDa7nIv\_B1IvO3OjT3Ge6bAXwPl6jVDETuzXwtYJdRSmqLEP2d6B0L6MuwZvgJpI968pzp1APmJmuQ\_qlqYgZZhesocYCJVMCHhIZAKmlvMybUkUGXYZtySrnEbRTwWTritvKo)
-
-* Now paste this link in the text box next to the DELETE method in Postman.
-* Replace the {user\_id} at the end of the URL with the actual user ID you want to delete. (You can get the user\_id using the GET method).
-* If you included the user\_id in the URL, you don’t need to add a body key and value for it.
-* When you click \`Send\`, you should see “success”: true in the response.
-
-&#x20;It should look like this:
-
-![Postman request DELETE https://api.polydocs.io/users/delete/508 with Status 200 OK and the JSON response success true](https://lh7-us.googleusercontent.com/X8WNtsC9v7jqDIiaVhauJUgZK0yTC1GVz9rBptdiCxyLUiEEfbpIoYHpK7NvlDMTkhgiPyBb22H9GOfDdvmL-dakouTjuRDPwX4YX0Jz5IIo6eHu-wnw1S4jJd5ylHyffUXWKwX6ovDnp\_2WEAtSha4)
-
-## "PUT" Method example
-
-The PUT method is mainly used to update user or organization data. It is very easy to understand and use.
-
-* Select the PUT Method.
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL.
-
-&#x20;For example:
-
-![API documentation page for the PUT operation /users/update/{user_id} titled Update User with the path parameter user_id and the request body fields first_name, last_name, email, is_organisation_admin and password](https://lh7-us.googleusercontent.com/tC3qtPbFb1GsK6dBmB5Jrv5HqFOYLxNR1XB0PEuA8ipkHnH2ZQ6xrrkImNgbGSMoA6aAGvLr6K3cI4u\_qM96BOvR7AnQzmX17HBMBneNpLBc6RIzspfTYgrCWSj0fSE9mSWLIex3hc\_R-m-PI6zT6Rs)
-
-* Now paste this link in the text box next to the PUT method in Postman.
-* Replace the {user\_id} at the end of the URL with the actual user ID you want to delete. (You can get the user\_id using the GET method).
-
-## Change Email Address of a User
-
-* In the body, enter “email” as the key and the new email address as the value.
-* Then just press \`Send\` and you should see “success” in the response.
-
-
+The current Dev documentation, its empty authorization controls and the unauthenticated `/version` response were checked. No API key, organization data or document was used. Authenticated reads, uploads, user creation, updates and deletions were not executed, and no request was tested in the Postman application.

@@ -1,6 +1,6 @@
 # Bedingungsliste für den Dokumentstatus
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_in_list_v2-de-de.png" alt="Bedingungsliste für den Dokumentstatus, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Zweck**
 

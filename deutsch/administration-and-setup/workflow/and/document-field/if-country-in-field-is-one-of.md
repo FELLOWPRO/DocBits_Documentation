@@ -1,6 +1,6 @@
 # Land im Feld mit einer Länderliste vergleichen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-de-de.png" alt="Land im Feld mit einer Länderliste vergleichen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 Nutzen Sie diese Bedingung, wenn ein zusätzlicher Verarbeitungsschritt für Dokumente aus ausgewählten Ländern gelten soll, zum Beispiel Deutschland und Frankreich. Die Karte vergleicht das Land aus einem Dokumentfeld mit einer konfigurierten Länderliste.
 

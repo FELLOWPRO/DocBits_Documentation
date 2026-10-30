@@ -1,8 +1,12 @@
 # Vergleichen Sie die Auftragsbestätigung mit der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4bbb1060027b-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1-de-de.png" alt="Vergleichen Sie die Auftragsbestätigung mit der Bestellung, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2-de-de.png" alt="Vergleichen Sie die Auftragsbestätigung mit der Bestellung, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3-de-de.png" alt="Vergleichen Sie die Auftragsbestätigung mit der Bestellung, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4-de-de.png" alt="Vergleichen Sie die Auftragsbestätigung mit der Bestellung, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## Zweck:
 

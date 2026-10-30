@@ -1,6 +1,6 @@
 # Auftragsart der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8a1cb3a5f80f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_check_order_type_in_po_v2-de-de.png" alt="Auftragsart der Bestellung, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

@@ -2,6 +2,8 @@
 
 Bevor wir uns die Operatoren ansehen, ist es wichtig zu verstehen, wie das Toleranzfenster berechnet wird.
 
+Wie das Toleranzfenster berechnet wird, mit Beispielen wie „heute oder morgen“, wird unter [Date Tolerances](../../date-tolerances.md) erklärt.
+
 ## Was ist ein Toleranzfenster?
 
 Das Toleranzfenster definiert einen Bereich akzeptabler Daten rund um das zugesagte Lieferdatum der Bestellung.

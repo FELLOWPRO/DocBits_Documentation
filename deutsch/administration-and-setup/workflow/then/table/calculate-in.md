@@ -1,6 +1,8 @@
 # Werte in einer Tabelle berechnen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-78729c8beae3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_regex_v1-de-de.png" alt="Werte in einer Tabelle berechnen, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_regex_v2-de-de.png" alt="Werte in einer Tabelle berechnen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

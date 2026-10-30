@@ -1,6 +1,8 @@
 # Erstellen Sie eine neue Aufgabe und weisen Sie sie der Beschaffungsgruppe zu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v2-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie der Beschaffungsgruppe zu, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v3-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie der Beschaffungsgruppe zu, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Zweck:**
 

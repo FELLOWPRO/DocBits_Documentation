@@ -1,6 +1,12 @@
 # Exportieren mit Exportkonfiguration
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v1-de-de.png" alt="Exportieren mit Exportkonfiguration, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v3-de-de.png" alt="Exportieren mit Exportkonfiguration, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-de-de.png" alt="Dokumentenexport mit der Exportkonfiguration … für den finalen Export am Ende des Laufs in die Warteschlange stellen. Ausstehende Aufgaben ignorieren: …. — Version 2" width="634"><figcaption><p>Dokumentenexport mit der Exportkonfiguration … für den finalen Export am Ende des Laufs in die Warteschlange stellen. Ausstehende Aufgaben ignorieren: …. — Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-de-de.png" alt="Dokumentenexport mit folgender Exportkonfiguration in die Warteschlange stellen: … für den finalen Export am Ende des Laufs. Ausstehende Aufgaben ignorieren: …. Status nach dem Export: …. — Version 3" width="634"><figcaption><p>Dokumentenexport mit folgender Exportkonfiguration in die Warteschlange stellen: … für den finalen Export am Ende des Laufs. Ausstehende Aufgaben ignorieren: …. Status nach dem Export: …. — Version 3</p></figcaption></figure>
 
 ## **Zweck:**
 

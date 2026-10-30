@@ -1,6 +1,8 @@
 # Entscheidungstabelle liefert Ergebnisse
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3db6e383828c-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v2-de-de.png" alt="Entscheidungstabelle liefert Ergebnisse, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-de-de.png" alt="Entscheidungstabelle liefert Ergebnisse, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Zweck:**
 

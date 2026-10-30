@@ -1,51 +1,55 @@
-# Spalten berechnen
+# Berechnen Sie Spalten mit
 
-Die Karte wendet eine Rechenoperation auf zwei Spalten derselben Tabelle an und speichert das Ergebnis für jede Zeile in einer Ergebnisspalte.
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v1-de-de.png" alt="Berechnen Sie Spalten mit, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-## Wann und wo einsetzen
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-de-de.png" alt="Berechnen Sie Spalten mit, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-Nutzen Sie die Karte, wenn der nächste Workflowschritt berechnete Zeilenwerte benötigt, zum Beispiel **Menge × Einzelpreis**. Sie finden sie im Bereich **Dann**, Kategorie **Tabelle**. Prüfen Sie vorher, dass beide Eingabespalten Zahlen enthalten und die benötigten Werte vollständig sind.
+## Zweck:
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-v2-configured-de-20261024.png" alt="Karte Version 2: INVOICE_TABLE, Menge × Einzelpreis → TOTAL_AMOUNT. Die Oberfläche zeigt den Tabellennamen doppelt an." width="651"><figcaption><p>Karte Version 2: INVOICE_TABLE, Menge × Einzelpreis → TOTAL_AMOUNT. Die Oberfläche zeigt den Tabellennamen doppelt an.</p></figcaption></figure>
+Diese Workflow-Karte berechnet Zeile für Zeile einen Wert aus zwei Spalten einer Tabelle auf dem Dokument und speichert das Ergebnis in einer Ergebnisspalte. Sie kann zum Beispiel verwendet werden, um Zeilensummen aus Menge und Stückpreis zu berechnen.
 
-## Admin-Video
-
-**34 Sekunden · Deutsch.** Thomas erklärt den Einsatz, wählt die Multiplikation und zeigt die gespeicherten Ergebnisse auf derselben Beispielrechnung.
+## Admin-Video:
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/de.mp4" %}
 
 [Video mit deutschen Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/de.html) · [Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v2/de.txt)
 
-## Karte konfigurieren
+## Bestandteile der Karte:
 
-| Einstellung | Auswahl im Beispiel |
-| --- | --- |
-| Tabelle | `INVOICE_TABLE` |
-| Erste Spalte | `QUANTITY` — Menge |
-| Rechenoperation | `*` — Multiplikation |
-| Zweite Spalte | `UNIT_PRICE` — Einzelpreis |
-| Ergebnisspalte | `TOTAL_AMOUNT` — Gesamtbetrag |
+1. **Tabelle**
+   * **Beschreibung:** Die Tabelle auf dem Dokument, in der die Berechnung ausgeführt wird.
+2. **Erste Spalte**
+   * **Beschreibung:** Die Spalte mit dem ersten Wert jeder Zeile.
+3. **Operation**
+   * **Optionen:**
+     * **+** addiert den zweiten Wert zum ersten.
+     * **-** subtrahiert den zweiten Wert vom ersten.
+     * **\*** multipliziert die beiden Werte.
+     * **/** dividiert den ersten Wert durch den zweiten.
+4. **Zweite Spalte**
+   * **Beschreibung:** Die Spalte mit dem zweiten Wert jeder Zeile.
+5. **Ergebnisspalte**
+   * **Beschreibung:** Die Spalte, in der das Ergebnis jeder Zeile gespeichert wird.
+   * **Detail:** Der Name wird in Großbuchstaben gespeichert, Leerzeichen werden durch Unterstriche ersetzt (`total amount` wird zu `TOTAL_AMOUNT`). Existiert die Spalte noch nicht, fügt die Karte sie hinzu; existiert sie, werden ihre Werte ersetzt.
 
-Außerdem stehen `+` (Addition), `-` (Subtraktion) und `/` (Division) zur Verfügung. Bei Subtraktion und Division ist die Reihenfolge der beiden Spalten entscheidend. Wählen Sie die in Ihrer Organisation konfigurierten Tabellen- und Spaltenkennungen.
+Die Versionen 1 und 2 der Karte haben dieselben Einstellungen und arbeiten gleich.
 
-<!-- workflow-card-practical-example-20261021 -->
+## Funktionalität:
 
-## Praxisbeispiel
+* **Berechnung:** Für jede Zeile der Tabelle liest die Karte die beiden Spalten (Groß- und Kleinschreibung der Spaltennamen spielt keine Rolle), wendet die Operation an und schreibt das Ergebnis in die Ergebnisspalte. Ergebnisse werden auf vier Nachkommastellen gerundet. Anschließend wird das Dokument mit den neuen Werten gespeichert.
+  * Ein leerer oder fehlender Wert gilt als `0`. Sind beide Werte einer Zeile leer, bleibt das Ergebnis dieser Zeile leer.
+  * Eine Division durch null lässt das Ergebnis dieser Zeile leer.
+  * Mit **+** werden zwei Werte, die keine Zahlen sind, mit einem Leerzeichen verbunden statt addiert. Bei den anderen Operationen verursacht ein Wert, der keine Zahl ist, einen Fehler, und es werden keine Ergebnisse gespeichert.
+* **Ausführung der Aktion:** Sind Berechnung und Speichern erfolgreich, wird der Workflow mit den nächsten Karten fortgesetzt. Existiert die Tabelle auf dem Dokument nicht, kann ein Wert nicht berechnet oder das Dokument nicht gespeichert werden, meldet die Karte einen Fehler im Workflow-Protokoll.
+* **Testkarte:** Wird die Karte mit **Testkarte** ausgeführt, wird die Berechnung nur simuliert und das Dokument nicht geändert.
 
-Die Beispielrechnung enthält zwei Zeilen. Vor der Berechnung ist die Ergebnisspalte noch nicht vorhanden:
+## Einrichtung und Konfiguration:
 
-| Zeile | Menge | Einzelpreis | Gespeichertes Ergebnis in `TOTAL_AMOUNT` |
-| --- | --- | --- | --- |
-| 1 | 2 | 10 | 20 |
-| 2 | 3 | 4 | 12 |
+* Die Karte kann als Then-Aktion aus der Kategorie **Tabelle** hinzugefügt werden. Danach werden die Tabelle, die beiden Spalten, die Operation und die Ergebnisspalte ausgewählt.
+* **Beispiel:** Tabelle `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, Ergebnisspalte `TOTAL_AMOUNT`. Eine Zeile mit Menge 2 und Stückpreis 10 erhält 20, eine Zeile mit 3 und 4 erhält 12.
+* Da ein leerer Wert als `0` gilt, ergibt ein fehlender Preis das Ergebnis `0`. Eine Prüfung, ob die Eingabespalten gefüllt sind, zum Beispiel mit einer Bedingung vor dieser Karte, kann helfen, falsche Summen zu vermeiden.
+* Bei Subtraktion und Division ist die Reihenfolge der beiden Spalten wichtig.
 
-Im gezeigten Test legt die Karte die Ergebnisspalte an. Nach dem erneuten Öffnen der Rechnung sind **20,00** und **12,00** sichtbar. Die Eingabespalten und die ursprünglichen Werte in `NET_AMOUNT` bleiben in diesem Beispiel erhalten. Enthält die ausgewählte Ergebnisspalte bereits Werte, werden diese durch die Berechnung ersetzt.
+## Fazit:
 
-<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-de-dark-20261024.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-de-light-20261024.png" alt="Dieselbe Beispielrechnung und das nach erneutem Öffnen gespeicherte Ergebnis: Gesamtbetrag 20,00 und 12,00. Die ursprünglichen Nettobeträge bleiben erhalten." width="735"></picture><figcaption><p>Dieselbe Beispielrechnung und das nach erneutem Öffnen gespeicherte Ergebnis: Gesamtbetrag 20,00 und 12,00. Die ursprünglichen Nettobeträge bleiben erhalten.</p></figcaption></figure>
-
-## Prüfen und Gegenbeispiele
-
-- Prüfen Sie beide Eingabespalten und kontrollieren Sie nach der Berechnung die gespeicherten Ergebniswerte.
-- Ein fehlender Preis kann im dargestellten Beispielfall null ergeben. Null belegt daher keine vollständigen Eingaben: Prüfen Sie die Daten vor der Berechnung.
-- Ein Text wie `ABC` anstelle einer Zahl führt zu einem Berechnungsfehler. Korrigieren Sie den Wert und prüfen Sie den Fall erneut.
-- Die Grafik zeigt für den fehlenden Preis und den nicht numerischen Text erwartete Beispielfälle. Diese beiden Gegenbeispiele sind keine weiteren Ausführungen der gezeigten Rechnung.
+Die Workflow-Karte „Calculate Columns with“ ergänzt Tabellenzeilen automatisch um berechnete Werte. Zeilensummen und ähnliche Werte stehen den folgenden Karten und dem Export ohne manuelle Berechnung zur Verfügung.

@@ -22,8 +22,8 @@ Ta karta przepływu pracy sprawdza, czy bieżąca data i godzina mieszczą się 
 * **Ocena warunku:** Gdy przepływ pracy dociera do karty, karta pobiera bieżącą datę i godzinę w UTC i sprawdza, czy mieszczą się one między dwiema wartościami na karcie. Wcześniejsza wartość jest używana jako początek, więc kolejność obu pól nie ma znaczenia.
   * Wartość zawierająca tylko godzinę (na przykład `09:00`) jest używana z dzisiejszą datą, dzięki czemu przedział powtarza się codziennie.
   * Początek i koniec należą do przedziału: dokładnie w czasie początku lub końca **Jest** jest prawdziwe.
-  * Przedział obejmujący północ można wprowadzić w postaci samych godzin, na przykład od `22:00` do `04:00`. Karta sprawdza wtedy czas od 22:00 do 04:00; w tym przypadku dokładne godziny początku i końca nie należą do przedziału.
-  * Przedział obejmujący północ z pełnymi datami (na przykład od `2026-11-01 22:00` do `2026-11-02 04:00`) nie jest obecnie oceniany poprawnie i nie powinien być używany.
+  * Przedział obejmujący północ można wprowadzić w postaci samych godzin, na przykład od `22:00` do `04:00`. Karta sprawdza wtedy codziennie czas od 22:00 do 04:00, łącznie z dokładną godziną początku i końca.
+  * Przy pełnych datach w dwóch różnych dniach (na przykład od `2026-11-01 22:00` do `2026-11-02 04:00`) karta sprawdza cały okres od pierwszego do drugiego momentu, łącznie z początkiem i końcem.
 * **Wykonanie akcji:**
   * **Warunek prawdziwy:**\
     Jeśli warunek jest spełniony, przepływ pracy jest kontynuowany kolejnymi kartami.

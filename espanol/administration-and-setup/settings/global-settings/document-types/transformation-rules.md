@@ -269,3 +269,6 @@ Con **Ejecución de registro** activado, cada aplicación de la regla se escribe
 * [Custom Validation Rules](custom-validation-rules.md) — compruebe los valores transformados
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — elija el layout que usa un documento
 * [Reglas de conciliación de órdenes de compra](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+
+[Reglas de transformación: panorama práctico completo](transformation-rules/complete-practical-guide.md)

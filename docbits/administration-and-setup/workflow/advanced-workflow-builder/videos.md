@@ -218,9 +218,10 @@ Short English videos on single workflow topics, from Standard workflows to the A
 | [10. Keyboard shortcuts in the Advanced Workflow designer](#keyboard-shortcuts-in-the-advanced-workflow-designer) | 1:06 |
 | [11. Validate a workflow](#validate-a-workflow) | 0:50 |
 | [12. Testing a workflow](#testing-a-workflow) | 1:42 |
-| [13. Decision tables in assignment cards](#decision-tables-in-assignment-cards) | 1:59 |
-| [14. Date tolerances and range checks](#date-tolerances-and-range-checks) | 2:13 |
-| [15. Workflow execution limits](#workflow-execution-limits) | 0:49 |
+| [13. AND and OR: combining conditions](#and-and-or-combining-conditions) | 2:28 |
+| [14. Decision tables in assignment cards](#decision-tables-in-assignment-cards) | 1:59 |
+| [15. Date tolerances and range checks](#date-tolerances-and-range-checks) | 2:13 |
+| [16. Workflow execution limits](#workflow-execution-limits) | 0:49 |
 
 ### Building a Standard workflow
 
@@ -293,6 +294,12 @@ Short English videos on single workflow topics, from Standard workflows to the A
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4" %}
 
 [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.vtt) · 1:42
+
+### AND and OR: combining conditions
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.vtt) · 2:28
 
 ### Decision tables in assignment cards
 

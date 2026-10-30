@@ -269,3 +269,6 @@ Avec **Exécution du journal** activé, chaque application de la règle est écr
 * [Custom Validation Rules](custom-validation-rules.md) — vérifier les valeurs transformées
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — choisir la mise en page utilisée par un document
 * [Règles de correspondance des bons de commande](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+
+[Règles de transformation : aperçu pratique complet](transformation-rules/complete-practical-guide.md)

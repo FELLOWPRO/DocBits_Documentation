@@ -41,6 +41,17 @@ Tuttavia, è possibile avere:
 * **Un'esportazione Infor attiva** _e_ **un'esportazione non-Infor attiva** contemporaneamente per lo stesso tipo di documento
 * **Diverse configurazioni di esportazione per diverse sotto-organizzazioni** — ad esempio, un'esportazione Infor per la Sotto-Org A e un'altra esportazione Infor per la Sotto-Org B
 
+## Attivazione dalla schermata di modifica
+
+Una configurazione esistente ha un interruttore **Attivo** nel piè di pagina della schermata di modifica, accanto a **Salva**.
+
+1. Aprite la configurazione in modifica (**Modifica**).
+2. Portate l'interruttore **Attivo** nello stato desiderato e selezionate **Salva**.
+
+DocBits attiva o disattiva quindi la configurazione con lo stesso controllo usato dall'elenco: se per lo stesso tipo di documento è già attiva un'altra configurazione, l'attivazione viene rifiutata. Salvare il modulo non modifica più da solo lo stato memorizzato; l'interruttore nel piè di pagina e lo stato mostrato nell'elenco coincidono sempre.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-it.png" alt="Schermata di modifica di una configurazione di esportazione con l'interruttore Attivo nel piè di pagina tra Annulla e Salva"><figcaption><p>L'interruttore Attivo accanto a Salva nella schermata di modifica della configurazione di esportazione.</p></figcaption></figure>
+
 ## **Creazione di una nuova esportazione**
 
 Per creare una nuova esportazione:

@@ -1,6 +1,6 @@
 # Gli articoli hanno una durata di conservazione
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_shelf_life_operator_value_v2-it-it.png" alt="Gli articoli hanno una durata di conservazione, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 

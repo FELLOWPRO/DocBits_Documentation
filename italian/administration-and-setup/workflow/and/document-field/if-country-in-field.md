@@ -1,6 +1,6 @@
 # Se Paese nel campo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2-it-it.png" alt="Se Paese nel campo, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 Uso previsto: un passaggio di elaborazione aggiuntivo dipende da un gruppo di paesi. L’esempio seguente descrive una regola di appartenenza all’Unione europea.
 

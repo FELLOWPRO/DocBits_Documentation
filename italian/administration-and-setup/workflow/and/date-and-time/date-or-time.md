@@ -1,25 +1,41 @@
 # Data o ora
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-it-it.png" alt="Data o ora, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
-## **Scopo:**
+## Scopo:
 
-Questa scheda DocBits verifica se un valore data/ora specificato rientra in un intervallo definito. Consente ai workflow di proseguire o arrestarsi a seconda che la condizione sia soddisfatta, rendendola adatta a operazioni sensibili al tempo o alla pianificazione dei workflow.
+Questa scheda del workflow verifica se la data e l'ora attuali si trovano all'interno o all'esterno di una finestra impostata sulla scheda. Può essere utilizzata per limitare dei passaggi a determinati orari, ad esempio all'orario di lavoro o a una finestra di manutenzione pianificata.
 
-## **Funzionalità:**
+## Componenti della scheda:
 
-* **Validazione data/ora:** Questa scheda valuta se una determinata data/ora rientra in un intervallo specificato utilizzando le seguenti condizioni:
-  * **Is:** Verifica se la data/ora rientra nell'intervallo definito di inizio e fine (inclusi).
-  * **Non è:** Garantisce che la data/ora ricada al di fuori dell'intervallo definito.
+1. **Operatore**
+   * **Opzioni:**
+     * **È:** La data e l'ora attuali si trovano all'interno della finestra.
+     * **Non è:** La data e l'ora attuali si trovano all'esterno della finestra.
+2. **Prima data/ora**
+   * **Descrizione:** Un estremo della finestra, come data e ora oppure solo come ora.
+3. **Seconda data/ora**
+   * **Descrizione:** L'altro estremo della finestra.
 
-**Intervallo data/ora:** Gli utenti specificano i valori di data/ora di inizio e fine per definire l'intervallo di confronto.
+## Funzionalità:
 
-## **Utilizzo:**
+* **Valutazione della condizione:** Quando il workflow raggiunge la scheda, questa prende la data e l'ora attuali in UTC e verifica se si trovano tra i due valori della scheda. Il valore precedente viene usato come inizio, quindi l'ordine dei due campi non ha importanza.
+  * Un valore con solo un'ora (ad esempio `09:00`) viene usato con la data di oggi, quindi la finestra si ripete ogni giorno.
+  * Inizio e fine fanno parte della finestra: esattamente all'ora di inizio o di fine, **È** è vero.
+  * Una finestra a cavallo della mezzanotte può essere inserita solo con orari, ad esempio da `22:00` a `04:00`. La scheda verifica quindi ogni giorno l'intervallo dalle 22:00 alle 04:00, compresi gli orari esatti di inizio e di fine.
+  * Con date complete su due giorni diversi (ad esempio da `2026-11-01 22:00` a `2026-11-02 04:00`), la scheda verifica l'intero periodo dal primo al secondo momento, inizio e fine compresi.
+* **Esecuzione dell'azione:**
+  * **Condizione vera:**\
+    Se la condizione è soddisfatta, il workflow prosegue con le schede successive.
+  * **Condizione falsa:**\
+    Se non è soddisfatta, il workflow si ferma con una condizione non soddisfatta.
+* **Dati mancanti:** Se uno dei due valori manca sulla scheda, la scheda non valuta la condizione e segnala l'input mancante nel log del workflow.
 
-Questa scheda è ideale per la pianificazione, i controlli di conformità o la validazione di condizioni basate sul tempo nei workflow. Ad esempio, può essere utilizzata per garantire che le attività vengano eseguite solo durante intervalli temporali predefiniti o per verificare le scadenze.
+## Configurazione e impostazione:
 
-## **Scenario di esempio:**
+* La scheda può essere aggiunta come condizione And dalla categoria **Data e ora**. Successivamente si impostano i due valori e l'operatore. Tutti gli orari dovrebbero essere inseriti in UTC.
+* **Esempio:** Con **È**, `09:00` e `17:00`, la scheda è soddisfatta quando il workflow viene eseguito tra le 09:00 e le 17:00 UTC di qualsiasi giorno.
 
-* Un utente configura la scheda per verificare se la **data di invio** di una fattura **è compresa tra** **"2024-11-01"** e **"2024-11-30"**. Se la data di invio rientra in questo intervallo, il workflow procede all'elaborazione del pagamento. In caso contrario, il workflow attiva una notifica per un'ulteriore revisione.
+## Conclusione:
 
-Utilizzando la scheda "Date/Time Range Validation", le organizzazioni possono garantire una pianificazione accurata, migliorare la conformità e semplificare i workflow aderendo a vincoli temporali predefiniti.
+La scheda del workflow "Date or Time" rende il momento dell'esecuzione una condizione del workflow. I passaggi possono essere limitati a orari fissi o a un'unica finestra pianificata senza modificare ogni volta il workflow.

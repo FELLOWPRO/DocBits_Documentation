@@ -1,6 +1,8 @@
 # Esegui flusso di lavoro
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-359c9c1abe8c-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_run_workflow_v1-it-it.png" alt="Esegui flusso di lavoro, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_run_workflow_v2-it-it.png" alt="Esegui flusso di lavoro, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## Scopo:
 

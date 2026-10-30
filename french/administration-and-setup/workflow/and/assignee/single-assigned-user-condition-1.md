@@ -1,6 +1,6 @@
 # Condition sur un groupe assigné unique
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_v2-fr-fr.png" alt="Condition sur un groupe assigné unique, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Objectif :**\
 Cette carte de workflow exécute des opérations selon qu'une tâche ou un document est assigné à un groupe particulier. Elle utilise une condition simple pour déclencher ou empêcher des actions en fonction de l'attribution de groupe.

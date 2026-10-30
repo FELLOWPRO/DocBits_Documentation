@@ -1,6 +1,8 @@
 # Date de livraison confirmée
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-63b0722ae913-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v2-fr-fr.png" alt="Date de livraison confirmée, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v3-fr-fr.png" alt="Date de livraison confirmée, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Objectif**
 

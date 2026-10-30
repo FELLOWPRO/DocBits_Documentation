@@ -1,6 +1,6 @@
 # Condition d'utilisateur attribué unique
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-901c3b37bac4-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_user_is_isnot_v2-fr-fr.png" alt="Condition d&#x27;utilisateur attribué unique, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Objectif**
 

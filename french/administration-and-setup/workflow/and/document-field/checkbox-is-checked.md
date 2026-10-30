@@ -1,44 +1,40 @@
 # La case est cochée
 
-## Quand et où utiliser cette carte
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-fr-fr.png" alt="La case est cochée, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-Utilisez cette condition lorsqu’une action suivante dépend d’une case à cocher du document. Par exemple, autorisez la poursuite du traitement d’une facture uniquement lorsque son indicateur de contrôle est coché.
+## Objectif :
 
-Dans l’éditeur de workflow, ajoutez la carte sous **Et… → Champ du document**. La carte compare la valeur du champ lors de l’exécution du workflow ; elle ne surveille pas en continu un champ de l’ERP et ne modifie pas la case.
+Cette carte de workflow vérifie si un champ case à cocher du document est coché ou non. Elle peut servir à ne poursuivre un workflow qu'après qu'un indicateur a été défini sur le document, par exemple un indicateur de révision.
 
-## Prérequis
+## Composants de la carte :
 
-Le type de document doit disposer d’un champ booléen pour cette case. Utilisez son identifiant technique exact. Cet exemple utilise `validation_complete` ; remplacez-le par le champ correspondant de votre organisation.
+1. **Nom du champ**
+   * **Description :** le nom technique du champ case à cocher du document.
+   * **Détail :** le champ devrait être un champ case à cocher (booléen) du type de document.
+2. **Booléen**
+   * **Description :** l'état que la case à cocher devrait avoir.
+   * **Options :**
+     * **Vrai :** la case à cocher devrait être cochée.
+     * **Faux :** la case à cocher devrait être décochée.
 
-## Configurer la carte
+## Fonctionnalité :
 
-1. Choisissez **La case à cocher … est cochée** dans **Champ du document**.
-2. Saisissez `validation_complete` dans **Nom du champ**, puis confirmez la valeur.
-3. Sélectionnez **Vrai** dans **Booléen** pour exiger une case cochée. Sélectionnez **Faux** pour vérifier qu’elle n’est pas cochée.
+* **Évaluation de la condition :** lorsque le workflow atteint la carte, celle-ci lit la valeur actuelle du champ sur le document et la compare à **Booléen**. La carte ne surveille pas le champ dans le temps et ne le modifie pas.
+  * Une valeur de case à cocher vide est considérée comme décochée.
+  * Si aucune valeur **Booléen** n'est sélectionnée, la carte vérifie que la case à cocher est décochée.
+  * Si le champ n'est pas un champ case à cocher, la carte le signale dans le journal du workflow et compare tout de même sa valeur.
+* **Exécution de l'action :**
+  * **Condition vraie :**\
+    Si l'état de la case à cocher correspond à **Booléen**, le workflow continue avec les cartes suivantes.
+  * **Condition fausse :**\
+    S'il ne correspond pas, le workflow s'arrête avec une condition non remplie.
+* **Données manquantes :** si le champ n'existe pas sur le document, la carte n'évalue pas la condition. Elle signale que le champ n'a pas été trouvé sur le document, ce qui est un résultat différent d'une case à cocher décochée.
 
-## Exemple pratique : poursuivre après un contrôle
+## Mise en place et configuration :
 
-**Quand l’utiliser :** une facture nécessite un contrôle préalable et le processus enregistre sa réalisation dans `validation_complete`.
+* La carte peut être ajoutée comme condition And depuis la catégorie **Champ du document**. Ensuite, le nom technique du champ case à cocher est saisi dans **Nom du champ** et **Vrai** ou **Faux** est sélectionné.
+* **Tester la carte** dans le menu de la carte du Workflow Builder peut être utilisé pour vérifier la configuration sur un document avec la case cochée, un document avec la case décochée et un document sans le champ.
 
-**Où la placer :** dans les conditions **Et…**, avant l’action de suivi configurée dans **Dans ce cas…**. Configurez séparément cette action et l’événement qui démarre le workflow.
+## Conclusion :
 
-**Configuration de l’exemple :** champ `validation_complete`, comparaison **Vrai** (`true`), carte version 2.
-
-<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-fr-20261025.png" alt="Configuration de l’exemple, version 2 : validation complete comparé à Vrai." width="651"><figcaption><p>Configuration de l’exemple, version 2 : validation complete comparé à Vrai.</p></figcaption></figure>
-
-Les résultats attendus pour cette configuration sont les suivants :
-
-| Valeur du champ dans le document | Résultat de la condition |
-| --- | --- |
-| Case existante et cochée (`true`) | La condition est remplie. |
-| Case existante et non cochée (`false`) | La condition n’est pas remplie. |
-| Case existante avec une valeur vide (`None`) | Interprétée comme non cochée ; la condition n’est pas remplie. |
-| Champ absent du document | Résultat `NOT_FOUND_IN_DOCUMENT` ; ce cas diffère d’une case existante non cochée. |
-
-Si vous sélectionnez **Faux**, une case existante non cochée remplit la condition et une case cochée ne la remplit pas. Un champ absent produit toujours un résultat d’erreur distinct.
-
-## Vérifier avant l’activation
-
-Vérifiez que le champ choisi est booléen et correspond au type de document utilisé. Testez un document avec la case cochée, un autre avec la case non cochée, ainsi que le cas d’un champ absent. Contrôlez le résultat de la carte et le parcours suivant du workflow dans chaque cas.
-
-Cette carte vérifie l’état de la case ; le processus précédent doit renseigner l’indicateur de contrôle. Le cocher automatiquement sans effectuer le contrôle ne prouve pas que celui-ci a été réalisé.
+La carte de workflow « Checkbox is checked » transforme une case à cocher du document en condition de workflow. Un workflow peut ainsi attendre une étape manuelle, comme une révision terminée, avant que les actions suivantes ne s'exécutent.

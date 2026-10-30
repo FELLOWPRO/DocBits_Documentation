@@ -1,6 +1,6 @@
 # Prix unitaire hors tolérance
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_separat_unit_price_operator_field_values_v3-fr-fr.png" alt="Prix unitaire hors tolérance, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Objectif :**
 

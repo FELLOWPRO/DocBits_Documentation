@@ -1,6 +1,8 @@
 # La table de décision renvoie des résultats
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3db6e383828c-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v2-fr-fr.png" alt="La table de décision renvoie des résultats, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-fr-fr.png" alt="La table de décision renvoie des résultats, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Objectif :**
 

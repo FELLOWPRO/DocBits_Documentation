@@ -26,5 +26,5 @@ Voici les valeurs dont votre fournisseur d'identité a besoin pour permettre aux
 Configurez DocBits pour utiliser votre fournisseur d'identité (IdP) externe pour la connexion.
 
 * **ID du locataire :** L'identifiant de locataire de votre fournisseur d'identité, utilisé lorsque DocBits s'intègre à des services cloud qui gèrent l'accès par locataire.
-* **Téléverser un fichier :** Téléverse le fichier de métadonnées ou de configuration reçu de votre fournisseur d'identité.
-* **Configure :** Enregistre les paramètres et applique la configuration téléversée. Saisissez d'abord l'ID du locataire ou téléversez le fichier, puis cliquez sur **Configure**.
+* **Téléverser un fichier :** Sélectionnez le fichier de métadonnées XML fourni par votre fournisseur d’identité.
+* **Configure :** Après avoir sélectionné le fichier XML, cliquez sur Configure pour le téléverser et enregistrer la configuration du fournisseur d’identité.

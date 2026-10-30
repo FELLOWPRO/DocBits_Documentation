@@ -1,6 +1,8 @@
 # Calculer en
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-78729c8beae3-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_regex_v1-fr-fr.png" alt="Calculer en, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_regex_v2-fr-fr.png" alt="Calculer en, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 

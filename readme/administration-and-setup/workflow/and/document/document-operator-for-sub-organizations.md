@@ -1,6 +1,6 @@
 # Operatore documentale per le sotto-organizzazioni
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-it-it.png" alt="Operatore documentale per le sotto-organizzazioni, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## Scopo:
 

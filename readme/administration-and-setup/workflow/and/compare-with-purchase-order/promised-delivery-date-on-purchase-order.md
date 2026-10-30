@@ -1,6 +1,12 @@
 # Data di consegna promessa sull'ordine di acquisto
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-604866ed54fe-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-it-it.png" alt="Data di consegna promessa sull&#x27;ordine di acquisto, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-it-it.png" alt="Data di consegna promessa sull&#x27;ordine di acquisto, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-it-it.png" alt="Data di consegna promessa sull&#x27;ordine di acquisto, Versione 4" width="634"><figcaption><p>Versione 4</p></figcaption></figure>
+
+Il modo in cui viene calcolata la finestra di tolleranza, con esempi come "oggi o domani", è spiegato in [Date Tolerances](../date-tolerances.md).
 
 ## **Scopo**
 

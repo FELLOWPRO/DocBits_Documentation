@@ -1,6 +1,6 @@
 # Elenco delle condizioni dello stato del documento
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_in_list_v2-it-it.png" alt="Elenco delle condizioni dello stato del documento, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 **Scopo**
 

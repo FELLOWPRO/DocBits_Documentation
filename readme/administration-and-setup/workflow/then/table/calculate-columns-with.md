@@ -1,51 +1,55 @@
 # Calcola colonne con
 
-La scheda applica un’operazione a due colonne di una tabella e salva il risultato in un’altra colonna, per ogni riga.
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v1-it-it.png" alt="Calcola colonne con, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
 
-## Quando e dove utilizzarla
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-it-it.png" alt="Calcola colonne con, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
-Usala per calcolare gli importi delle righe prima dell’azione successiva del workflow, per esempio **quantità × prezzo unitario**. Aggiungila nella sezione **Poi**, categoria **Tabella**. Prima verifica che le due colonne di ingresso contengano numeri e che i dati siano completi.
+## Scopo:
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-v2-configured-it-20261024.png" alt="Scheda versione 2: INVOICE_TABLE, Quantità × Prezzo unitario → TOTAL_AMOUNT. L’interfaccia ripete il nome della tabella." width="650"><figcaption><p>Scheda versione 2: INVOICE_TABLE, Quantità × Prezzo unitario → TOTAL_AMOUNT. L’interfaccia ripete il nome della tabella.</p></figcaption></figure>
+Questa scheda del workflow calcola, riga per riga, un valore a partire da due colonne di una tabella del documento e salva il risultato in una colonna risultato. Può essere utilizzata, ad esempio, per calcolare i totali di riga a partire da quantità e prezzo unitario.
 
-## Video di amministrazione
-
-**40 secondi · italiano.** Roberto spiega quando usare la scheda, configura la moltiplicazione e mostra i risultati salvati.
+## Video di amministrazione:
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/it.mp4" %}
 
 [Guarda il video con sottotitoli italiani](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/it.html) · [Leggi la trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/it.txt)
 
-## Configurazione della scheda
+## Componenti della scheda:
 
-| Campo | Selezione dell’esempio |
-| --- | --- |
-| Tabella | `INVOICE_TABLE` |
-| Prima colonna | `QUANTITY` — Quantità |
-| Operazione | `*` — moltiplicazione |
-| Seconda colonna | `UNIT_PRICE` — Prezzo unitario |
-| Colonna del risultato | `TOTAL_AMOUNT` — Importo totale |
+1. **Tabella**
+   * **Descrizione:** La tabella del documento in cui viene eseguito il calcolo.
+2. **Prima colonna**
+   * **Descrizione:** La colonna con il primo valore di ogni riga.
+3. **Operazione**
+   * **Opzioni:**
+     * **+** somma il secondo valore al primo.
+     * **-** sottrae il secondo valore dal primo.
+     * **\*** moltiplica i due valori.
+     * **/** divide il primo valore per il secondo.
+4. **Seconda colonna**
+   * **Descrizione:** La colonna con il secondo valore di ogni riga.
+5. **Colonna risultato**
+   * **Descrizione:** La colonna in cui viene salvato il risultato di ogni riga.
+   * **Dettaglio:** Il nome viene salvato in lettere maiuscole, con gli spazi sostituiti da trattini bassi (`total amount` diventa `TOTAL_AMOUNT`). Se la colonna non esiste ancora, la scheda la aggiunge; se esiste, i suoi valori vengono sostituiti.
 
-Sono disponibili anche `+` (addizione), `-` (sottrazione) e `/` (divisione). L’ordine delle colonne conta per sottrazione e divisione. Seleziona gli identificativi configurati nella tua organizzazione.
+Le versioni 1 e 2 della scheda hanno le stesse impostazioni e funzionano allo stesso modo.
 
-<!-- workflow-card-practical-example-20261021 -->
+## Funzionalità:
 
-## Esempio pratico
+* **Calcolo:** Per ogni riga della tabella, la scheda legge le due colonne (maiuscole e minuscole nei nomi delle colonne non hanno importanza), applica l'operazione e scrive il risultato nella colonna risultato. I risultati vengono arrotondati a quattro cifre decimali. Successivamente il documento viene salvato con i nuovi valori.
+  * Un valore vuoto o mancante conta come `0`. Se entrambi i valori di una riga sono vuoti, il risultato di quella riga resta vuoto.
+  * Una divisione per zero lascia vuoto il risultato di quella riga.
+  * Con **+**, due valori che non sono numeri vengono uniti con uno spazio anziché sommati. Con le altre operazioni, un valore che non è un numero provoca un errore e non viene salvato alcun risultato.
+* **Esecuzione dell'azione:** Se il calcolo e il salvataggio riescono, il workflow prosegue con le schede successive. Se la tabella non esiste sul documento, se un valore non può essere calcolato o se il documento non può essere salvato, la scheda segnala un errore nel log del workflow.
+* **Scheda di prova:** Quando la scheda viene eseguita con **Scheda di prova**, il calcolo viene solo simulato e il documento non viene modificato.
 
-La fattura contiene due righe. Prima del calcolo la colonna del risultato non esiste ancora:
+## Configurazione e impostazione:
 
-| Riga | Quantità | Prezzo unitario | Risultato salvato in `TOTAL_AMOUNT` |
-| --- | ---: | ---: | ---: |
-| 1 | 2 | 10 | 20 |
-| 2 | 3 | 4 | 12 |
+* La scheda può essere aggiunta come azione Then dalla categoria **Tabella**. Successivamente si selezionano la tabella, le due colonne, l'operazione e la colonna risultato.
+* **Esempio:** Tabella `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, colonna risultato `TOTAL_AMOUNT`. Una riga con quantità 2 e prezzo unitario 10 ottiene 20, una riga con 3 e 4 ottiene 12.
+* Poiché un valore vuoto conta come `0`, un prezzo mancante dà come risultato `0`. Verificare che le colonne di input siano compilate, ad esempio con una condizione prima di questa scheda, può aiutare a evitare totali errati.
+* Per sottrazione e divisione, l'ordine delle due colonne è importante.
 
-Nella dimostrazione, la scheda crea la colonna del risultato. I valori **20,00** e **12,00** restano visibili dopo aver riaperto la fattura. In questo esempio le colonne di ingresso e gli importi originali di `NET_AMOUNT` vengono conservati. Se la colonna del risultato scelta contiene già valori, il calcolo li sostituisce.
+## Conclusione:
 
-<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-it-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-it-light-20261025.png" alt="Dopo aver riaperto la stessa fattura, TOTAL_AMOUNT contiene 20,00 e 12,00 per le due righe. Gli importi originali di NET_AMOUNT sono conservati." width="735"></picture><figcaption><p>Dopo aver riaperto la stessa fattura, TOTAL_AMOUNT contiene 20,00 e 12,00 per le due righe. Gli importi originali di NET_AMOUNT sono conservati.</p></figcaption></figure>
-
-## Controlli e controesempi
-
-- Controlla entrambe le colonne di ingresso e verifica i risultati salvati dopo il calcolo.
-- Nell’esempio illustrato, un prezzo mancante può dare zero. Questo zero non dimostra che i dati siano completi: verifica gli ingressi prima di calcolare.
-- Un testo come `ABC` al posto di un numero provoca un errore di calcolo. Correggi il valore e verifica di nuovo il caso.
-- I casi del prezzo mancante e del testo non numerico nello schema sono risultati attesi per illustrare i controlli; non sono esecuzioni della fattura a due righe mostrata.
+La scheda del workflow "Calculate Columns with" aggiunge automaticamente valori calcolati alle righe della tabella. I totali di riga e valori simili sono disponibili per le schede successive e per l'esportazione senza calcolo manuale.

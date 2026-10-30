@@ -1,6 +1,8 @@
 # Crea una nuova attività e assegnala al gruppo di approvvigionamento
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v2-it-it.png" alt="Crea una nuova attività e assegnala al gruppo di approvvigionamento, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v3-it-it.png" alt="Crea una nuova attività e assegnala al gruppo di approvvigionamento, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
 ## **Scopo:**
 

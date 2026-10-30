@@ -1,5 +1,7 @@
 # Assegna in sequenza ai gruppi
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_group_sequential_v2-it-it.png" alt="Assegna in sequenza ai gruppi, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
 ## **Scopo**
 
 La scheda di workflow "**Assegnare il documento in sequenza ai gruppi**" consente l'assegnazione sequenziale dei documenti a uno o più gruppi selezionati. Il valore di priorità determina l'ordine di assegnazione, dove i numeri più bassi rappresentano una priorità più alta.

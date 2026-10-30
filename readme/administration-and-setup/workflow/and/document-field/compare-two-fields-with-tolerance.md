@@ -1,6 +1,6 @@
 # Confronta due campi con tolleranza
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-19d9a4d5e71d-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_docfield_tolerances_v2-it-it.png" alt="Confronta due campi con tolleranza, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 

@@ -1,53 +1,55 @@
 # Calcular colunas com
 
-O cartão aplica uma operação matemática a duas colunas da mesma tabela e guarda o resultado numa coluna de destino em cada linha.
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v1-pt-pt.png" alt="Calcular colunas com, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
 
-## Quando e onde usar
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-pt-pt.png" alt="Calcular colunas com, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-Use o cartão quando o passo seguinte do workflow precisar de valores calculados por linha, por exemplo **quantidade × preço unitário**. Adicione-o na secção **Então**, categoria **Tabela**. Verifique primeiro se ambas as colunas de entrada contêm números e se os valores necessários estão completos.
+## Propósito:
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-configured-v2-20261024-pt.png" alt="Cartão versão 2: INVOICE_TABLE, Quantidade × Preço unitário → TOTAL_AMOUNT. A interface apresenta o nome da tabela duas vezes." width="563"><figcaption><p>Cartão versão 2: INVOICE_TABLE, Quantidade × Preço unitário → TOTAL_AMOUNT. A interface apresenta o nome da tabela duas vezes.</p></figcaption></figure>
+Este cartão de fluxo de trabalho calcula, linha a linha, um valor a partir de duas colunas de uma tabela do documento e guarda o resultado numa coluna de resultado. Pode ser utilizado, por exemplo, para calcular totais de linha a partir da quantidade e do preço unitário.
 
-## Vídeo de administração
-
-**37 segundos · Português.** João explica quando utilizar o cartão, configura a multiplicação e mostra os resultados guardados na mesma fatura de exemplo.
+## Vídeo de administração:
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.mp4" %}
 
 [Ver com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.html) · [Ler a transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pt.txt)
 
-## Configurar o cartão
+## Componentes do cartão:
 
-| Definição | Seleção no exemplo |
-| --- | --- |
-| Tabela | `INVOICE_TABLE` |
-| Primeira coluna | `QUANTITY` — Quantidade |
-| Operação | `*` — multiplicação |
-| Segunda coluna | `UNIT_PRICE` — Preço unitário |
-| Coluna de resultado | `TOTAL_AMOUNT` — Montante total |
+1. **Tabela**
+   * **Descrição:** A tabela do documento na qual o cálculo é executado.
+2. **Primeira coluna**
+   * **Descrição:** A coluna com o primeiro valor de cada linha.
+3. **Operação**
+   * **Opções:**
+     * **+** soma o segundo valor ao primeiro.
+     * **-** subtrai o segundo valor do primeiro.
+     * **\*** multiplica os dois valores.
+     * **/** divide o primeiro valor pelo segundo.
+4. **Segunda coluna**
+   * **Descrição:** A coluna com o segundo valor de cada linha.
+5. **Coluna de resultado**
+   * **Descrição:** A coluna na qual o resultado de cada linha é guardado.
+   * **Detalhe:** O nome é guardado em maiúsculas, com os espaços substituídos por sublinhados (`total amount` passa a `TOTAL_AMOUNT`). Se a coluna ainda não existir, o cartão adiciona-a; se existir, os seus valores são substituídos.
 
-Também estão disponíveis `+` (adição), `-` (subtração) e `/` (divisão). Na subtração e na divisão, a ordem das duas colunas é importante. Selecione os identificadores de tabela e coluna configurados na sua organização.
+As versões 1 e 2 do cartão têm as mesmas definições e funcionam da mesma forma.
 
-<!-- workflow-card-practical-example-20261021 -->
+## Funcionalidade:
 
-## Exemplo prático verificado
+* **Cálculo:** Para cada linha da tabela, o cartão lê as duas colunas (maiúsculas e minúsculas nos nomes das colunas não importam), aplica a operação e escreve o resultado na coluna de resultado. Os resultados são arredondados a quatro casas decimais. Em seguida, o documento é guardado com os novos valores.
+  * Um valor vazio ou em falta conta como `0`. Se ambos os valores de uma linha estiverem vazios, o resultado dessa linha fica vazio.
+  * Uma divisão por zero deixa vazio o resultado dessa linha.
+  * Com **+**, dois valores que não são números são unidos com um espaço em vez de somados. Com as outras operações, um valor que não é um número provoca um erro e nenhum resultado é guardado.
+* **Execução da ação:** Se o cálculo e a gravação forem bem-sucedidos, o fluxo de trabalho continua com os cartões seguintes. Se a tabela não existir no documento, se não for possível calcular um valor ou se não for possível guardar o documento, o cartão comunica um erro no registo do fluxo de trabalho.
+* **Test Card:** Quando o cartão é executado com **Test Card**, o cálculo é apenas simulado e o documento não é alterado.
 
-A fatura de exemplo contém duas linhas. Antes do cálculo, a coluna de resultado ainda não existe:
+## Configuração:
 
-| Linha | Quantidade | Preço unitário | Valor guardado em `TOTAL_AMOUNT` |
-| --- | --- | --- | --- |
-| 1 | 2 | 10 | 20 |
-| 2 | 3 | 4 | 12 |
+* O cartão pode ser adicionado como ação Then a partir da categoria **Tabela**. Em seguida, selecionam-se a tabela, as duas colunas, a operação e a coluna de resultado.
+* **Exemplo:** Tabela `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, coluna de resultado `TOTAL_AMOUNT`. Uma linha com quantidade 2 e preço unitário 10 obtém 20; uma linha com 3 e 4 obtém 12.
+* Como um valor vazio conta como `0`, um preço em falta dá um resultado de `0`. Verificar se as colunas de entrada estão preenchidas, por exemplo com uma condição antes deste cartão, pode ajudar a evitar totais errados.
+* Na subtração e na divisão, a ordem das duas colunas é importante.
 
-No teste apresentado, o cartão cria a coluna de resultado. Depois de reabrir a mesma fatura, os valores `20.00` e `12.00` estão visíveis na coluna **Montante total**. As colunas de entrada e os valores originais em `NET_AMOUNT` permanecem inalterados neste exemplo. Se a coluna de resultado selecionada já contiver valores, o cálculo substitui-os.
+## Conclusão:
 
-<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pt-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pt-light-20261025.png" alt="Depois de reabrir a mesma fatura, TOTAL_AMOUNT contém 20,00 e 12,00 nas duas linhas. Os valores originais em NET_AMOUNT permanecem inalterados." width="735"></picture><figcaption><p>Depois de reabrir a mesma fatura, TOTAL_AMOUNT contém 20,00 e 12,00 nas duas linhas. Os valores originais em NET_AMOUNT permanecem inalterados.</p></figcaption></figure>
-
-## Verificações e contraexemplos
-
-Verifique ambas as colunas de entrada e confirme os valores guardados depois do cálculo.
-
-- Um preço em falta pode produzir zero neste exemplo. Zero não prova que os dados estejam completos: verifique os dados antes do cálculo.
-- Um texto como `ABC` em vez de um número provoca um erro de cálculo. Corrija o valor e volte a verificar o caso.
-
-Estes dois contraexemplos descrevem resultados esperados; não são execuções adicionais da fatura apresentada.
+O cartão de fluxo de trabalho "Calculate Columns with" acrescenta automaticamente valores calculados às linhas da tabela. Os totais de linha e valores semelhantes ficam disponíveis para os cartões seguintes e para a exportação, sem cálculo manual.

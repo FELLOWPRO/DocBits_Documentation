@@ -1,6 +1,8 @@
 # Cálculo de IA para sobretaxas de aumento de custos
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1-pt-pt.png" alt="Cálculo de IA para sobretaxas de aumento de custos, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2-pt-pt.png" alt="Cálculo de IA para sobretaxas de aumento de custos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## Quando usar este cartão
 

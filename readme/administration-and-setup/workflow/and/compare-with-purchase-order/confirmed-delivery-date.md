@@ -1,6 +1,8 @@
 # Data de entrega confirmada
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-63b0722ae913-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v2-pt-pt.png" alt="Data de entrega confirmada, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v3-pt-pt.png" alt="Data de entrega confirmada, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
 ## **Propósito**
 

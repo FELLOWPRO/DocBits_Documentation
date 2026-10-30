@@ -2,6 +2,16 @@
 
 The **Purchase Order** card in a document type's **More Settings** controls how documents of that type are matched against purchase orders. Settings apply to one document type at a time, so open the document type you want to change under **Settings → Document Types** first.
 
+To find the settings for an invoice:
+
+1. Open **Settings → Document Types**.
+2. Find the **Invoice** card and select its gear icon (**More Settings**).
+3. Open the **Purchase Order** section to review its matching and validation options.
+
+<figure><img src="../../../../../../.gitbook/assets/dbdc226228-invoice-card-en-20261030.png" alt="English Invoice document type card with the More Settings gear at the upper right"><figcaption>The Invoice card in the current English Dev test environment. Use the gear icon to open More Settings; the other controls apply to the document type.</figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/dbdc226-po-section-en-20261030.png" alt="Closed Purchase Order section labelled PO Matching and Validation"><figcaption>The Purchase Order section in More Settings, shown closed. Expand its header to see the options; no setting was changed for this capture.</figcaption></figure>
+
 Start with the matching rules and tolerances, then adjust the behaviour around matching and export:
 
 * [Purchase Order Matching Rules](purchase-order-matching-rules.md) and [Purchase order tolerance settings](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) define how invoice and purchase order lines are compared.
@@ -11,3 +21,5 @@ Start with the matching rules and tolerances, then adjust the behaviour around m
 * [Supplier Item Number Map](supplier-item-number-map-admin-documentation.md) and the general [Purchase Order](purchase-order.md) page provide further background.
 
 Settings can affect live documents. Check changes with a test document before saving them in production.
+
+This overview shows where to find the settings. It does not verify a completed PO match or export.

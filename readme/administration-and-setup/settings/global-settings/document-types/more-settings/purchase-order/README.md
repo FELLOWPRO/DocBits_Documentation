@@ -2,11 +2,13 @@
 
 Use this section when invoices should be checked against purchase orders (POs). Start with the invoice document type used by your team; the options for other document types may differ.
 
-1. Open **Settings** → **Document Types**.
-2. Select **Invoice**, then open **More Settings**.
-3. Expand **Purchase Order** to review the available matching and validation options.
+1. Open **Settings → Document Types**.
+2. Find the **Invoice** card and select its gear icon (**More Settings**).
+3. Open the **Purchase Order** section to review its matching and validation options.
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc226-purchase-order-settings-en.png" alt="Purchase Order section in the English Invoice document type settings"><figcaption>Current English Sandbox view in DocBits Documentation Test A. The Purchase Order section is closed here; no setting was changed.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc226228-invoice-card-en-20261030.png" alt="English Invoice document type card with the More Settings gear at the upper right"><figcaption>The Invoice card in the current English Dev test environment. Use the gear icon to open More Settings; the other controls apply to the document type.</figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/dbdc226-po-section-en-20261030.png" alt="Closed Purchase Order section labelled PO Matching and Validation"><figcaption>The Purchase Order section in More Settings, shown closed. Expand its header to see the options; no setting was changed for this capture.</figcaption></figure>
 
 Choose the guide for the task you need:
 

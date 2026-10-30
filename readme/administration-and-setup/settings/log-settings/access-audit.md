@@ -8,7 +8,7 @@ Informações da empresa, plano de assinatura e registros de auditoria no DocBit
 
 O vídeo mostra as informações e as preferências da empresa, o plano de assinatura, a atividade de login e os registros de auditoria.
 
-<figure><img src="../../../.gitbook/assets/access_audit_settings_page_pt.png" alt="Audit Logs com a trilha de auditoria desativada; a página mostra a troca de organização, os filtros, Enable Now, Auto-refresh, Refresh e Export"><figcaption><p>A página Sandbox em português antes de a gravação de auditoria ser ativada.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/access_audit_settings_page_pt.png" alt="Exemplo de registo de auditoria ativado, com filtros, cartões de resumo e eventos registados. Os controlos do registo estão em inglês na ilustração."><figcaption><p>Exemplo de registo de auditoria ativado. A navegação está em português; os controlos do registo permanecem em inglês na ilustração.</p></figcaption></figure>
 
 A Auditoria de Acesso registra quem criou, alterou ou excluiu um recurso e quando. Abra **Configurações → Registro de atividades → Auditoria de Acesso** para consultar o registro. Ative o serviço para uma organização apenas quando você pretender coletar eventos de auditoria.
 

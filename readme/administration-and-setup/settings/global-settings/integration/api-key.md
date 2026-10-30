@@ -25,5 +25,5 @@ Siehe SSO einrichten
 ### Einstellungen für Identitätsdienstanbieter
 
 * **Tenant-ID:** Dies kann verwendet werden, wenn DocBits in Cloud-Dienste integriert wird, die eine Tenant-Kennung erfordern, um Daten und Zugriffskonfigurationen zu verwalten, die spezifisch für das Unternehmen sind, das DocBits verwendet.
-* **Datei hochladen:** Ermöglicht es dem Administrator, Konfigurationsdateien oder andere notwendige Dateien hochzuladen, die die Integration mit einem Identitätsanbieter erleichtern.
-* **Konfigurieren:** Eine Schaltfläche, um die Einstellungen nach dem Vornehmen von Änderungen oder dem Hochladen neuer Konfigurationen anzuwenden oder zu aktualisieren.
+* **Datei hochladen:** Wählen Sie die XML-Metadatendatei Ihres Identitätsanbieters aus.
+* **Konfigurieren:** Wählen Sie zuerst die XML-Datei aus und klicken Sie anschließend auf Konfigurieren, um sie hochzuladen und die Konfiguration des Identitätsanbieters zu speichern.

@@ -1,8 +1,6 @@
 # Field is
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1.png" alt="Workflow card Document Field: Field Field Name is Field Status, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2.png" alt="Workflow card Document Field: Field Field Name is Field Status, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

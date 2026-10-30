@@ -1,8 +1,6 @@
 # Assign to group
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v2.png" alt="Workflow card Assignee: Assign to group Groups, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3.png" alt="Workflow card Assignee: Assign to group Groups, use decision tree if available, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

@@ -1,6 +1,6 @@
 # Set to
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2.png" alt="Workflow card Document Field: Set Field Name to Text, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (278).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

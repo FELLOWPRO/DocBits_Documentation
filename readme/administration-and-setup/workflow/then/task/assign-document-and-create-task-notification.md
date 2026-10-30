@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_decision_tree_tasks_sequential_v2.png" alt="Workflow card Task: Assign the document sequentially to and create a Task/Notification with title, description and priority to the assignee type return of decision table, notify them via email, set an assignment priority of Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

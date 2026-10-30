@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_https_request_status_v2.png" alt="Workflow card Logic: Send HTTPS request to URL with headers, method, parameters and data and receiving status code is in Status Code, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

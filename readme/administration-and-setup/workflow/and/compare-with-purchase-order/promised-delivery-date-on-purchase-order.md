@@ -1,12 +1,6 @@
 # Promised Delivery Date on Purchase Order
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2.png" alt="Workflow card Compare with Purchase Order: Promised delivery date for line items in table Operator promised delivery date on purchase order, with Value days as tolerance, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3.png" alt="Workflow card Compare with Purchase Order: Promised delivery date for line items in table Operator promised delivery date on purchase order, with Value days as tolerance and Allowed Tolerance Days as accepted tolerance days, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4.png" alt="Workflow card Compare with Purchase Order: Any/All promised delivery date(s) for line items in table Operator delivery date on purchase order, with Value days as tolerance and Allowed Tolerance Days as accepted tolerance days, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
-
-How the tolerance window is calculated, with examples such as "today or tomorrow", is explained on [Date Tolerances](../date-tolerances.md).
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

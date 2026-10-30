@@ -1,41 +1,25 @@
 # Date or Time
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2.png" alt="Workflow card Date &amp; Time: Date/Time Operator between Date/Time and Date/Time, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## **Purpose:**
 
-This workflow card checks whether the current date and time lie inside or outside a window set on the card. It can be used to limit steps to certain hours, for example to working hours or a planned maintenance window.
+This DocBits card checks if a specified date/time value falls within a defined range. It enables workflows to proceed or halt based on whether the condition is met, making it suitable for time-sensitive operations or scheduling workflows.
 
-## Components of the Card:
+## **Functionality:**
 
-1. **Operator**
-   * **Options:**
-     * **Is:** The current date and time are inside the window.
-     * **Is Not:** The current date and time are outside the window.
-2. **First date/time**
-   * **Description:** One end of the window, as date and time or as a time only.
-3. **Second date/time**
-   * **Description:** The other end of the window.
+* **Date/Time Validation:** This card evaluates whether a given date/time is within a specified range using the following conditions:
+  * **Is:** Checks if the date/time is within the defined start and end range (inclusive).
+  * **Is Not:** Ensures the date/time falls outside the defined range.
 
-## Functionality:
+**Date/Time Range:** Users specify the start and end date/time values to define the range for comparison.
 
-* **Condition Evaluation:** When the workflow reaches the card, it takes the current date and time in UTC and checks whether they lie between the two values on the card. The earlier value is used as the start, so the order of the two fields does not matter.
-  * A value with only a time (for example `09:00`) is used with today's date, so the window repeats every day.
-  * Start and end belong to the window: at exactly the start or end time, **Is** is true.
-  * A window across midnight can be entered as times only, for example `22:00` to `04:00`. The card then checks every day for the time from 22:00 until 04:00, including the exact start and end times.
-  * With full dates on two different days (for example `2026-11-01 22:00` to `2026-11-02 04:00`), the card checks the whole period from the first to the second point in time, including start and end.
-* **Action Execution:**
-  * **True Condition:**\
-    If the condition is met, the workflow continues with the next cards.
-  * **False Condition:**\
-    If it is not met, the workflow stops with an unmet condition.
-* **Missing Data:** If one of the two values is missing on the card, the card does not evaluate the condition and reports the missing input in the workflow log.
+## **Usage:**
 
-## Setup and Configuration:
+This card is ideal for scheduling, compliance checks, or validating time-based conditions in workflows. For example, it can be used to ensure tasks are executed only during predefined timeframes or verify deadlines.
 
-* The card can be added as an And condition from the **Date & Time** category. Then the two values and the operator are set. All times should be entered in UTC.
-* **Example:** With **Is**, `09:00` and `17:00`, the card is met when the workflow runs between 09:00 and 17:00 UTC on any day.
+## **Example Scenario:**
 
-## Conclusion:
+* A user configures the card to check if the **submission date** of an invoice **is between** **"2024-11-01"** and **"2024-11-30"**. If the submission date falls within this range, the workflow proceeds to payment processing. If not, the workflow triggers a notification for further review.
 
-The "Date or Time" workflow card makes the time of the run a workflow condition. Steps can be limited to fixed hours or a single planned window without changing the workflow each time.
+By using the "Date/Time Range Validation" card, organizations can ensure accurate scheduling, enhance compliance, and streamline workflows by adhering to predefined time constraints.

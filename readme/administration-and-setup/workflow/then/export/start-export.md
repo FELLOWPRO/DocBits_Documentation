@@ -1,12 +1,6 @@
 # Start Export
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_export_v1.png" alt="Workflow card Export: Start Export, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_export_v2.png" alt="Workflow card Export: Start Export, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_export_v3.png" alt="Workflow card Export: Start Export, with Validation set to Boolean, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_export_v4.png" alt="Workflow card Export: Start Export, with Validation set to Boolean, status after export, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (285).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

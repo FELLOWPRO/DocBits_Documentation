@@ -1,6 +1,6 @@
 # Assigned User Condition
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_user_is_isnot_in_list_v2.png" alt="Workflow card Assignee: Assigned user Operator one of Users, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513.png" alt="" width="552"><figcaption></figcaption></figure>
 
 **Purpose**
 

@@ -1,8 +1,6 @@
 # Create a New Task and assign it to Procurement Group
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v2.png" alt="Workflow card Task: Create a new task with title, description and priority and assign it to the procurement group Group Name, notify the group via email, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v3.png" alt="Workflow card Task: Create a new Task/Notification with title, description and priority and assign it to the procurement group Group Name, notify the group via email, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -4,8 +4,6 @@ hidden: true
 
 # Compare an order confirmation with a purchase order
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_text_on_result_v2.png" alt="Workflow card Compare with Purchase Order: Order Data in order confirmation Operator purchase order, write Text into field Field Name on condition result Result of condition, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
-
 Use **Compare with Purchase Order** in the Workflow Builder when an order confirmation needs to be checked against its purchase order. Add the card under **And...**, then choose the order data, an operator, and what should happen with the result. The screenshots below show two available card versions in the English interface. Their fields are still placeholders; set them for your own workflow before saving.
 
 ## Write the result into a field

@@ -27,10 +27,6 @@ Transformation rules replace most of the small scripts organisations used to wri
 | All documents of certain suppliers belong to a sub-organisation | Routing: set the sub-organisation when *Supplier ID is one of …* |
 | Dates must be written in a fixed format into a free-text field | Header field: Reformat date `%d.%m.%Y` |
 
-{% hint style="info" %}
-While the feature is in beta, the settings described below only appear when the **Document Types** settings page is opened with `?beta=true` appended to the address.
-{% endhint %}
-
 ## Enable transformation rules
 
 Transformation rules are switched on **per document type** by an **organisation administrator**.

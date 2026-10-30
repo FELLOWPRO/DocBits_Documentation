@@ -1,8 +1,6 @@
 # Unit Price Combined with Fields
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v2.png" alt="Workflow card Compare with Purchase Order: Unit price combined with fields Field Name is Operator Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v3.png" alt="Workflow card Compare with Purchase Order: Unit price combined with fields Field Name is Operator Value, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

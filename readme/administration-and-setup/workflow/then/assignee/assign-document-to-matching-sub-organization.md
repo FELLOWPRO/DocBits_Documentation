@@ -1,6 +1,6 @@
 # Assign document to matching sub organization
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_change_doc_suborg_by_field_text_v2.png" alt="Workflow card Assignee: Assign the document to a matching sub organisation based on field Field Name, use Sub-Org as fallback, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

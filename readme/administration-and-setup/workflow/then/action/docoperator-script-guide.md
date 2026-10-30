@@ -1,9 +1,5 @@
 # Run DocOperator Prompt (Automation Script)
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v2.png" alt="Workflow card Prompts and Scripts: Run the DocOperator prompt script with variables Script Data, maximum steps and maximum retries, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_run_docoperator_script_v3.png" alt="Workflow card Prompts and Scripts: Run the DocOperator prompt script with variables Script Data, maximum steps and maximum retries, execute the prompt in DocOperator Environment, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
-
 ---
 
 Add this card to the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:

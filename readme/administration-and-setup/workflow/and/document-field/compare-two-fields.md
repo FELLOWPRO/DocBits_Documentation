@@ -1,6 +1,6 @@
 # Compare two Fields
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_two_docfield_values_v2.png" alt="Workflow card Document Field: Compare two fields: Field Name Operator Field Name, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

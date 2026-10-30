@@ -1,6 +1,6 @@
 # Assign document to procurement group
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_procurement_group_v2.png" alt="Workflow card Assignee: Assign document to procurement group Group Name, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

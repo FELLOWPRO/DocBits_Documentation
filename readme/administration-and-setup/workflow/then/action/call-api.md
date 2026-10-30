@@ -1,8 +1,6 @@
 # Call Api
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1.png" alt="Workflow card Action: Call API: API Endpoint with method, params and data, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2.png" alt="Workflow card Action: Call API: API Endpoint with method, params and data, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Purpose:
 

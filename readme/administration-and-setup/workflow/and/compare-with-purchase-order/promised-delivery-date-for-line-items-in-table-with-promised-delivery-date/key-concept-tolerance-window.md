@@ -2,8 +2,6 @@
 
 Before looking at operators, it is important to understand how the tolerance window is calculated.
 
-How the tolerance window is calculated, with examples such as "today or tomorrow", is explained on [Date Tolerances](../../date-tolerances.md).
-
 ## What is a tolerance window?
 
 The tolerance window defines a range of acceptable dates around the purchase order promised delivery date.

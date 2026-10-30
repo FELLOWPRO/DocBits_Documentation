@@ -1,8 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v1.png" alt="Workflow card Task: Assign Task with title, description and priority and assign to Recipient, notify them via email, use User as fallback if recipient not found, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v2.png" alt="Workflow card Task: Create a Task with title, description and priority and assign it to Recipient, notify them via email, use User as fallback if recipient not found, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

@@ -16,8 +16,8 @@ La section **Clé API** en haut de la page Intégration et SSO liste toutes les 
 Voici les valeurs dont votre fournisseur d'identité a besoin pour permettre aux utilisateurs de se connecter à DocBits avec leur identifiant d'entreprise. Pour le guide de configuration complet, consultez [Configuration de l'authentification unique (SSO)](configuring-single-sign-on-sso/).
 
 * **ID d'entité :** L'identifiant de DocBits en tant que fournisseur de services dans la configuration SSO. L'icône de copie copie la valeur dans votre presse-papiers.
-* **URL SLO (déconnexion unique) :** L'URL utilisée pour déconnecter un utilisateur de toutes les applications connectées via SSO en même temps. L'icône de copie copie la valeur.
-* **URL SSO :** L'URL utilisée pour lancer le processus d'authentification unique. L'icône de copie copie la valeur.
+* **URL SLO (déconnexion unique) :** Le point de terminaison du service de déconnexion unique SAML de DocBits. L’icône de copie copie la valeur.
+* **URL SSO :** Le point de terminaison du service consommateur d’assertions (ACS) de DocBits reçoit les réponses SAML du fournisseur d’identité. Utilisez cette adresse comme URL de réponse (URL ACS) dans sa configuration. L’icône de copie copie la valeur.
 * **Télécharger le certificat :** Télécharge le certificat de sécurité dont votre fournisseur d'identité a besoin pour faire confiance à DocBits.
 * **Télécharger les métadonnées :** Télécharge le fichier de métadonnées SAML qui peut être importé directement dans la plupart des fournisseurs d'identité.
 

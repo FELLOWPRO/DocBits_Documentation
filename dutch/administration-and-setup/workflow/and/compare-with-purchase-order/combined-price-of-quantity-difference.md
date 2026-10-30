@@ -1,8 +1,10 @@
 # Gecombineerde prijs van hoeveelheidsverschil
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5e9d809dfde3-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v2-nl-nl.png" alt="Gecombineerde prijs van hoeveelheidsverschil, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-313edcefbea2-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v3-nl-nl.png" alt="Gecombineerde prijs van hoeveelheidsverschil, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v4-nl-nl.png" alt="Gecombineerde prijs van hoeveelheidsverschil, Versie 4" width="634"><figcaption><p>Versie 4</p></figcaption></figure>
 
 ## **Doel**:
 

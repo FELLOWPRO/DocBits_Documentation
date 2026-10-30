@@ -1,6 +1,6 @@
 # Eenheidsprijs buiten tolerantie
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_separat_unit_price_operator_field_values_v3-nl-nl.png" alt="Eenheidsprijs buiten tolerantie, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
 ## **Doel:**
 

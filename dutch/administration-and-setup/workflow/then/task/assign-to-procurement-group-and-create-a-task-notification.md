@@ -1,6 +1,6 @@
 # Wijs toe aan de inkoopgroep en maak een taak/melding aan
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-a3770fb3e57d-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_procurement_group_sequential_v2-nl-nl.png" alt="Wijs toe aan de inkoopgroep en maak een taak/melding aan, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel**
 

@@ -1,6 +1,8 @@
 # Bel Api
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-nl-nl.png" alt="Bel Api, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-nl-nl.png" alt="Bel Api, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 <!-- workflow-card-call-api-contract-20261022 -->
 

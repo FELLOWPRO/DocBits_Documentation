@@ -26,5 +26,5 @@ These are the values your Identity Provider needs in order to let users sign in 
 Configure DocBits to use your external Identity Provider (IdP) for login. For the full guide, see [Identity Service Provider Configuration](identity-service-provider-configuration.md).
 
 * **Tenant ID:** Your Identity Provider's tenant identifier, used when DocBits integrates with cloud services that manage access per tenant.
-* **Upload file:** Uploads the metadata or configuration file you received from your Identity Provider.
-* **Configure:** Saves the settings and applies the uploaded configuration. Enter the Tenant ID or upload the file first, then click **Configure**.
+* **Upload file:** Select the XML metadata file supplied by your identity provider.
+* **Configure:** After selecting the XML file, click Configure to upload it and save the identity provider configuration.

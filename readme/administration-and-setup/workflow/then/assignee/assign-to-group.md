@@ -1,6 +1,8 @@
 # Attribuer au groupe
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v2-fr-fr.png" alt="Attribuer au groupe, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-fr-fr.png" alt="Attribuer au groupe, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## Objectif :
 

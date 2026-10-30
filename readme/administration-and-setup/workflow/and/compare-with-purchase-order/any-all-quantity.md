@@ -1,8 +1,10 @@
 # N'importe quelle/toute quantité
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b9da38d5468f-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v2-fr-fr.png" alt="N&#x27;importe quelle/toute quantité, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8fb535fd03a4-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v3-fr-fr.png" alt="N&#x27;importe quelle/toute quantité, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v4-fr-fr.png" alt="N&#x27;importe quelle/toute quantité, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Objectif :**
 

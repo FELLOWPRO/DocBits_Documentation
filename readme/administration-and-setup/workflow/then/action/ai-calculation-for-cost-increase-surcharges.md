@@ -1,6 +1,8 @@
 # Calcul IA pour les suppléments d’augmentation des coûts
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1-fr-fr.png" alt="Calcul IA pour les suppléments d’augmentation des coûts, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2-fr-fr.png" alt="Calcul IA pour les suppléments d’augmentation des coûts, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Quand utiliser cette carte
 

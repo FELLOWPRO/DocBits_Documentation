@@ -2,7 +2,7 @@
 
 Use this guide to connect an organisation-owned Microsoft 365 mailbox through a Microsoft Entra application. An administrator needs access to the intended Entra tenant and the matching DocBits organisation. Agree on the mailbox, document destination and credential owner before enabling import.
 
-## 1. Prepare the Entra application
+## 1. Prepare the Entra application {#register-app-on-azure-a-d}
 
 In the [Microsoft Entra admin center](https://entra.microsoft.com/), open **Identity → Applications → App registrations → New registration** in the intended tenant. Choose a recognisable name and the account type approved by your identity administrator. An application used only within your organisation normally uses the single-tenant account option. Record its **Directory (tenant) ID** and **Application (client) ID**. Follow Microsoft's [current registration instructions](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) for the portal steps.
 

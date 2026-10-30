@@ -875,7 +875,7 @@
 * [Export nach Infor](infor-integration-and-configuration/exporting-to-infor/README.md)
   * [BOD-Zuordnungsdatei erstellen](infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
   * [Erstellen einer IDM-Mapping-Datei](infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-  * [Erstellen eines ION-API-Endpunkts](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
+  * [Erstellen eines Infor-ION-API-Endpunkts für DocBits-Exporte](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
   * [ION-API-Datei erstellen](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-file.md)
   * [Export nach M3 Mapping (API)](infor-integration-and-configuration/exporting-to-infor/export-to-m3-mapping-api.md)
   * [Export nach IDM](infor-integration-and-configuration/exporting-to-infor/exporting-to-idm.md)

@@ -14,8 +14,8 @@ Ein API-Schlüssel erlaubt anderen Systemen den Zugriff auf DocBits ohne Benutze
 ### Einstellungen für SSO (Single Sign-On) Dienstanbieter
 
 * **Entitäts-ID:** Dies ist die Kennung für DocBits als Dienstanbieter in der SSO-Konfiguration. Sie identifiziert DocBits eindeutig innerhalb des SSO-Frameworks.
-* **SLO (Single Logout) URL:** Die URL, an die SSO-Sitzungen gesendet werden, um sich gleichzeitig von allen über SSO verbundenen Anwendungen abzumelden.
-* **SSO URL:** Die URL, die zum Initiieren des Single Sign-On-Prozesses verwendet wird.
+* **SLO (Single Logout) URL:** Der SAML-Endpunkt von DocBits für Single Logout.
+* **SSO URL:** Der Assertion Consumer Service (ACS) von DocBits empfängt SAML-Antworten des Identitätsanbieters. Verwenden Sie diese Adresse als Antwort-URL (ACS-URL) in dessen Konfiguration.
 * Aktionen wie "Zertifikat herunterladen" und "Metadaten herunterladen" sind verfügbar, um notwendige Sicherheitszertifikate und Metadateninformationen zu erhalten, die beim Einrichten und Warten der SSO-Integration verwendet werden.
 
 {% hint style="info" %}

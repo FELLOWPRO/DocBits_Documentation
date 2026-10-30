@@ -469,6 +469,7 @@
         * [字段复制、固定值、清空与默认值](administration-and-setup/settings/global-settings/document-types/transformation-rules/07-field-copy-and-defaults.md)
         * [重建表格行](administration-and-setup/settings/global-settings/document-types/transformation-rules/08-table-rows.md)
         * [路由、顺序、主数据和重复执行](administration-and-setup/settings/global-settings/document-types/transformation-rules/09-routing-and-execution.md)
+        * [纠正采购订单号中的OCR错误](administration-and-setup/settings/global-settings/document-types/transformation-rules/correct-po-number-ocr-error.md)
       * [更多设置](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [最佳实践](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [故障排除](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)

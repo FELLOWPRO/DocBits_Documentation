@@ -22,8 +22,8 @@ Este cartão de fluxo de trabalho verifica se a data e a hora atuais se encontra
 * **Avaliação da condição:** Quando o fluxo de trabalho chega ao cartão, este obtém a data e a hora atuais em UTC e verifica se se encontram entre os dois valores do cartão. O valor mais antigo é utilizado como início, pelo que a ordem dos dois campos não importa.
   * Um valor apenas com uma hora (por exemplo `09:00`) é utilizado com a data de hoje, pelo que o intervalo se repete todos os dias.
   * O início e o fim pertencem ao intervalo: exatamente à hora de início ou de fim, **É** é verdadeiro.
-  * Um intervalo que atravessa a meia-noite pode ser introduzido apenas com horas, por exemplo de `22:00` a `04:00`. O cartão verifica então o período das 22:00 às 04:00; neste caso, as horas exatas de início e de fim não pertencem ao intervalo.
-  * Um intervalo que atravessa a meia-noite com datas completas (por exemplo de `2026-11-01 22:00` a `2026-11-02 04:00`) atualmente não é avaliado corretamente e não deverá ser utilizado.
+  * Um intervalo que atravessa a meia-noite pode ser introduzido apenas com horas, por exemplo de `22:00` a `04:00`. O cartão verifica então, todos os dias, o período das 22:00 às 04:00, incluindo as horas exatas de início e de fim.
+  * Com datas completas em dois dias diferentes (por exemplo de `2026-11-01 22:00` a `2026-11-02 04:00`), o cartão verifica todo o período do primeiro ao segundo momento, incluindo o início e o fim.
 * **Execução da ação:**
   * **Condição Verdadeira:**\
     Se a condição for cumprida, o fluxo de trabalho continua com os cartões seguintes.

@@ -1,6 +1,8 @@
 # Obiecana data dostawy dla pozycji w tabeli z obiecaną datą dostawy
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2-pl-pl.png" alt="Obiecana data dostawy dla pozycji w tabeli z obiecaną datą dostawy, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+Sposób obliczania okna tolerancji, wraz z przykładami takimi jak „dziś lub jutro”, wyjaśniono na stronie [Date Tolerances](../../date-tolerances.md).
 
 ## Cel:
 

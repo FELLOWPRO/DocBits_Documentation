@@ -1,6 +1,6 @@
 # Przypisany warunek użytkownika
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3e450ede5dea-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_user_is_isnot_in_list_v2-pl-pl.png" alt="Przypisany warunek użytkownika, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 **Cel**
 

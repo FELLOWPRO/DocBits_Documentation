@@ -1,5 +1,7 @@
 # Przypisz sekwencyjnie do grup
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_group_sequential_v2-pl-pl.png" alt="Przypisz sekwencyjnie do grup, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
 ## **Cel**
 
 Karta przepływu pracy "**Przypisz dokument sekwencyjnie do grup**" umożliwia sekwencyjne przypisywanie dokumentów do jednej lub więcej wybranych grup. Wartość priorytetu określa kolejność przypisywania, przy czym niższe liczby reprezentują wyższy priorytet.

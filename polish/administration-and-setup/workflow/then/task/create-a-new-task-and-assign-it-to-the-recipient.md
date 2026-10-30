@@ -1,6 +1,8 @@
 # Utwórz Nowe Zadanie i przypisz je Odbiorcy
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2e92980da837-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v1-pl-pl.png" alt="Utwórz Nowe Zadanie i przypisz je Odbiorcy, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v2-pl-pl.png" alt="Utwórz Nowe Zadanie i przypisz je Odbiorcy, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

@@ -1,8 +1,10 @@
 # Dowolna/wszystkie ilości
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b9da38d5468f-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v2-pl-pl.png" alt="Dowolna/wszystkie ilości, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8fb535fd03a4-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v3-pl-pl.png" alt="Dowolna/wszystkie ilości, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v4-pl-pl.png" alt="Dowolna/wszystkie ilości, Wersja 4" width="634"><figcaption><p>Wersja 4</p></figcaption></figure>
 
 ## **Cel:**
 

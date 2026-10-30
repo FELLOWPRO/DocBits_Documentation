@@ -1,6 +1,6 @@
 # Porównaj całkowite opłaty
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charge_field_with_po_v2-pl-pl.png" alt="Porównaj całkowite opłaty, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

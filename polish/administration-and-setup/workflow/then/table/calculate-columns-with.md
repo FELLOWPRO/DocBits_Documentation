@@ -1,53 +1,55 @@
-# Obliczanie kolumn w tabeli
+# Oblicz kolumny za pomocą
 
-## Kiedy i gdzie używać
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v1-pl-pl.png" alt="Oblicz kolumny za pomocą, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
 
-Użyj tej karty, gdy następny krok wymaga wyniku obliczenia dla każdego wiersza tabeli, na przykład iloczynu ilości i ceny jednostkowej. Dodaj ją w standardowym workflow w sekcji **Następnie**, w kategorii **Tabela**, po sprawdzeniu danych wejściowych.
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_v2-pl-pl.png" alt="Oblicz kolumny za pomocą, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-Karta oblicza wartości między dwiema kolumnami tego samego wiersza i zapisuje wynik w wybranej kolumnie. Nie sumuje wszystkich wierszy do jednej kwoty faktury.
+## Cel:
 
-## Film administratora
+Ta karta przepływu pracy oblicza, wiersz po wierszu, wartość z dwóch kolumn tabeli w dokumencie i zapisuje wynik w kolumnie wyniku. Może być używana na przykład do obliczania sum pozycji na podstawie ilości i ceny jednostkowej.
 
-**35 sekund · polski.** Piotr wyjaśnia zastosowanie karty, wybiera mnożenie i pokazuje zapisane wyniki na tej samej przykładowej fakturze.
+## Film administratora:
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pl.mp4" %}
 
 [Obejrzyj film z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pl.html) · [Przeczytaj transkrypcję](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/pl.txt)
 
-## Konfiguracja karty
+## Komponenty karty:
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-calc-columns-configured-pl-20261024.png" alt="Polska karta obliczania kolumn: Ilość razy Cena jednostkowa daje Całkowitą kwotę, wersja 2." width="651"><figcaption><p>Skonfigurowana karta w polskim interfejsie. Nazwa INVOICE TABLE jest wyświetlana dwukrotnie mimo jednego wyboru tabeli; pola wejściowe i kolumna wyniku pozostają widoczne.</p></figcaption></figure>
+1. **Tabela**
+   * **Opis:** Tabela w dokumencie, w której wykonywane jest obliczenie.
+2. **Pierwsza kolumna**
+   * **Opis:** Kolumna z pierwszą wartością każdego wiersza.
+3. **Operacja**
+   * **Opcje:**
+     * **+** dodaje drugą wartość do pierwszej.
+     * **-** odejmuje drugą wartość od pierwszej.
+     * **\*** mnoży obie wartości.
+     * **/** dzieli pierwszą wartość przez drugą.
+4. **Druga kolumna**
+   * **Opis:** Kolumna z drugą wartością każdego wiersza.
+5. **Kolumna wyniku**
+   * **Opis:** Kolumna, w której zapisywany jest wynik każdego wiersza.
+   * **Szczegóły:** Nazwa jest zapisywana wielkimi literami, a spacje są zastępowane podkreśleniami (`total amount` staje się `TOTAL_AMOUNT`). Jeśli kolumna jeszcze nie istnieje, karta ją dodaje; jeśli istnieje, jej wartości są zastępowane.
 
-| Ustawienie | Wybór w przykładzie |
-| --- | --- |
-| Tabela | `INVOICE_TABLE` |
-| Pierwsza kolumna | `QUANTITY` — Ilość |
-| Działanie | `*` — mnożenie |
-| Druga kolumna | `UNIT_PRICE` — Cena jednostkowa |
-| Kolumna wyniku | `TOTAL_AMOUNT` — Całkowita kwota |
+Wersje 1 i 2 karty mają te same ustawienia i działają tak samo.
 
-Dostępne są także `+` (dodawanie), `-` (odejmowanie) i `/` (dzielenie). Przy odejmowaniu i dzieleniu kolejność kolumn ma znaczenie. Wybierz rzeczywiste kolumny skonfigurowane w swojej organizacji; klucze w tabeli pochodzą z tego przykładu.
+## Funkcjonalność:
 
-Istniejące wartości w kolumnie wyniku zostają zastąpione. Przed uruchomieniem sprawdź, czy wybrana kolumna jest właściwym miejscem na obliczony wynik.
+* **Obliczenie:** Dla każdego wiersza tabeli karta odczytuje obie kolumny (wielkość liter w nazwach kolumn nie ma znaczenia), stosuje operację i zapisuje wynik w kolumnie wyniku. Wyniki są zaokrąglane do czterech miejsc po przecinku. Następnie dokument jest zapisywany z nowymi wartościami.
+  * Pusta lub brakująca wartość jest liczona jako `0`. Jeśli obie wartości wiersza są puste, wynik tego wiersza pozostaje pusty.
+  * Dzielenie przez zero pozostawia wynik tego wiersza pusty.
+  * Przy **+** dwie wartości, które nie są liczbami, są łączone spacją zamiast dodawane. Przy pozostałych operacjach wartość, która nie jest liczbą, powoduje błąd i żadne wyniki nie są zapisywane.
+* **Wykonanie akcji:** Jeśli obliczenie i zapis się powiodą, przepływ pracy jest kontynuowany kolejnymi kartami. Jeśli tabela nie istnieje w dokumencie, nie można obliczyć wartości lub nie można zapisać dokumentu, karta zgłasza błąd w dzienniku przepływu pracy.
+* **Karta testowa:** Gdy karta jest uruchamiana za pomocą **Karta testowa**, obliczenie jest tylko symulowane, a dokument nie jest zmieniany.
 
-<!-- workflow-card-practical-example-20261021 -->
+## Instalacja i konfiguracja:
 
-## Praktyczny przykład
+* Kartę można dodać jako akcję Then z kategorii **Tabela**. Następnie wybiera się tabelę, obie kolumny, operację i kolumnę wyniku.
+* **Przykład:** Tabela `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, kolumna wyniku `TOTAL_AMOUNT`. Wiersz z ilością 2 i ceną jednostkową 10 otrzymuje 20, wiersz z 3 i 4 otrzymuje 12.
+* Ponieważ pusta wartość jest liczona jako `0`, brakująca cena daje wynik `0`. Sprawdzenie, czy kolumny wejściowe są wypełnione, na przykład za pomocą warunku przed tą kartą, może pomóc uniknąć błędnych sum.
+* Przy odejmowaniu i dzieleniu kolejność obu kolumn ma znaczenie.
 
-Faktura szkoleniowa `DOCBITS-CALC-PL-20261024-01` ma dwa wiersze. W pierwszym ilość wynosi `2`, a cena jednostkowa `10`; w drugim ilość wynosi `3`, a cena jednostkowa `4`.
+## Podsumowanie:
 
-Po wykonaniu mnożenia i ponownym otwarciu tego samego dokumentu kolumna **Całkowita kwota** zawiera odpowiednio `20.00` i `12.00`. W filmie pokazano te zapisane komórki. Kolumny wejściowe pozostają bez zmian.
-
-Kolumna `NET_AMOUNT` — Kwota Netto — była już obecna przed obliczeniem. W tym przykładzie wynikiem działania karty jest `TOTAL_AMOUNT`, a nie wcześniej wyodrębniona kwota netto.
-
-Pomarańczowy wskaźnik przy kolumnie wyniku pozostaje widoczny. Zapisanie obliczenia nie potwierdza kompletności danych, zatwierdzenia faktury ani eksportu do innego systemu.
-
-<figure><picture><source srcset="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pl-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-pl-light-20261025.png" alt="Po ponownym otwarciu tej samej faktury kolumna TOTAL_AMOUNT zawiera 20.00 i 12.00 dla dwóch pozycji. Oryginalne kwoty w NET_AMOUNT pozostają bez zmian." width="735"></picture><figcaption><p>Po ponownym otwarciu tej samej faktury kolumna TOTAL_AMOUNT zawiera 20.00 i 12.00 dla dwóch pozycji. Oryginalne kwoty w NET_AMOUNT pozostają bez zmian.</p></figcaption></figure>
-
-## Sprawdzanie i kontrprzykłady
-
-Sprawdź oba wiersze niezależnie: `2 × 10 = 20` oraz `3 × 4 = 12`. Nie traktuj poprawnego wyniku jednego wiersza jako potwierdzenia całej tabeli.
-
-Brak ceny może w tym przykładzie dać `0`; nie oznacza to, że dane są kompletne. Tekst, na przykład `ABC` zamiast ilości, powoduje błąd obliczenia. Te dwa przypadki graniczne są oczekiwanymi wynikami przykładu; film przedstawia rzeczywiście zapisane wyniki dla dwóch poprawnych wierszy.
-
-Przed użyciem w swoim workflow przetestuj brakujące i nienumeryczne dane oraz zachowanie dzielenia przez zero. Dobierz warunki uruchomienia do swojego procesu.
+Karta przepływu pracy „Calculate Columns with” automatycznie dodaje obliczone wartości do wierszy tabeli. Sumy pozycji i podobne wartości są dostępne dla kolejnych kart i dla eksportu bez ręcznego obliczania.

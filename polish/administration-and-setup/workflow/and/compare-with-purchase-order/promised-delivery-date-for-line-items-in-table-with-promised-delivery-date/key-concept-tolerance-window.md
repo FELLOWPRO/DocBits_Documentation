@@ -2,6 +2,8 @@
 
 Przed przyjrzeniem się operatorom ważne jest zrozumienie, w jaki sposób obliczane jest okno tolerancji.
 
+Sposób obliczania okna tolerancji, wraz z przykładami takimi jak „dziś lub jutro”, wyjaśniono na stronie [Date Tolerances](../../date-tolerances.md).
+
 ## Czym jest okno tolerancji?
 
 Okno tolerancji definiuje zakres akceptowalnych dat wokół przyrzeczonej daty dostawy w zamówieniu zakupu.

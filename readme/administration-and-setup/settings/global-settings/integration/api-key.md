@@ -1,6 +1,6 @@
 # API-sleutel
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-nl.png" alt="Paneel API-sleutels met de knop API-sleutel aanmaken, de kolommen van de sleutellijst en het verborgen sleutelprefix voor documentatie"><figcaption><p>Instellingen → Integratie &amp; SSO → API-sleutel. Het sleutelprefix is verborgen in deze schermafbeelding.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-nl.png" alt="Paneel API-sleutels met de knop API-sleutel aanmaken, de lijstkolommen en voorbeeldsleutels met een zichtbaar prefix gevolgd door afgeschermde tekens."><figcaption><p>Instellingen → Integratie &amp; SSO → API-sleutel. De voorbeeldsleutels tonen een prefix gevolgd door afgeschermde tekens.</p></figcaption></figure>
 
 De sectie **API-sleutel** bovenaan de pagina Integratie & SSO toont elke API-sleutel die uw organisatie heeft aangemaakt. Met een API-sleutel kan een ander systeem — uw ERP, een script of een partnerapplicatie — toegang krijgen tot DocBits zonder dat een gebruiker inlogt. Voor stapsgewijze instructies raadpleegt u [API-sleutelbeheer](api-key-management.md).
 

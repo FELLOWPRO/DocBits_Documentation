@@ -208,17 +208,19 @@ Short English videos on single workflow topics, from Standard workflows to the A
 | --- | --- |
 | [1. Building a Standard workflow](#building-a-standard-workflow) | 1:09 |
 | [2. Searching and filtering on the workflow dashboard](#searching-and-filtering-on-the-workflow-dashboard) | 0:54 |
-| [3. Reading the workflow logs](#reading-the-workflow-logs) | 1:34 |
-| [4. Success, failed condition and error in a workflow run](#success-failed-condition-and-error-in-a-workflow-run) | 1:28 |
-| [5. Workflow execution order](#workflow-execution-order) | 1:14 |
-| [6. Converting a Standard workflow to Advanced](#converting-a-standard-workflow-to-advanced) | 1:15 |
-| [7. Advanced Workflow Designer: cards and paths](#advanced-workflow-designer-cards-and-paths) | 2:19 |
-| [8. Workflow descriptions and notes](#workflow-descriptions-and-notes) | 0:57 |
-| [9. Validate a workflow](#validate-a-workflow) | 0:50 |
-| [10. Testing a workflow](#testing-a-workflow) | 1:42 |
-| [11. Decision tables in assignment cards](#decision-tables-in-assignment-cards) | 1:59 |
-| [12. Date tolerances and range checks](#date-tolerances-and-range-checks) | 2:13 |
-| [13. Workflow execution limits](#workflow-execution-limits) | 0:49 |
+| [3. When a workflow starts](#when-a-workflow-starts) | 0:42 |
+| [4. Reading the workflow logs](#reading-the-workflow-logs) | 1:34 |
+| [5. Success, failed condition and error in a workflow run](#success-failed-condition-and-error-in-a-workflow-run) | 1:28 |
+| [6. Workflow execution order](#workflow-execution-order) | 1:14 |
+| [7. Converting a Standard workflow to Advanced](#converting-a-standard-workflow-to-advanced) | 1:15 |
+| [8. Advanced Workflow Designer: cards and paths](#advanced-workflow-designer-cards-and-paths) | 2:19 |
+| [9. Workflow descriptions and notes](#workflow-descriptions-and-notes) | 0:57 |
+| [10. Keyboard shortcuts in the Advanced Workflow designer](#keyboard-shortcuts-in-the-advanced-workflow-designer) | 1:06 |
+| [11. Validate a workflow](#validate-a-workflow) | 0:50 |
+| [12. Testing a workflow](#testing-a-workflow) | 1:42 |
+| [13. Decision tables in assignment cards](#decision-tables-in-assignment-cards) | 1:59 |
+| [14. Date tolerances and range checks](#date-tolerances-and-range-checks) | 2:13 |
+| [15. Workflow execution limits](#workflow-execution-limits) | 0:49 |
 
 ### Building a Standard workflow
 
@@ -231,6 +233,12 @@ Short English videos on single workflow topics, from Standard workflows to the A
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.mp4" %}
 
 [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.vtt) · 0:54
+
+### When a workflow starts
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.vtt) · 0:42
 
 ### Reading the workflow logs
 
@@ -267,6 +275,12 @@ Short English videos on single workflow topics, from Standard workflows to the A
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.mp4" %}
 
 [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.vtt) · 0:57
+
+### Keyboard shortcuts in the Advanced Workflow designer
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.vtt) · 1:06
 
 ### Validate a workflow
 

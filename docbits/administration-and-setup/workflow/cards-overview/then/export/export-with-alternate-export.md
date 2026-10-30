@@ -1,6 +1,6 @@
 # Export with alternate Export
 
-<figure><img src="../../../../../.gitbook/assets/image (362).png" alt="Export card reading Export document with alternate export, version 2" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_alternate_export_v2.png" alt="Workflow card Export: Export document with alternate export, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## When to use this card
 

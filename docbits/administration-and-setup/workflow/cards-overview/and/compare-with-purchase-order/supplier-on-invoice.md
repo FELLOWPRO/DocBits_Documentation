@@ -1,6 +1,6 @@
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/image (352).png" alt="Compare with Purchase Order card reading Supplier on Invoice Operator Supplier on Purchase Order" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_invoice_to_po_supplier_v2.png" alt="Workflow card Compare with Purchase Order: Supplier on Invoice Operator Supplier on Purchase Order, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

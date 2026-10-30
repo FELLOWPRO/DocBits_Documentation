@@ -1,6 +1,8 @@
 # Create a New Task and assign it to the User in Document Field
 
-<figure><img src="../../../../../.gitbook/assets/image (366).png" alt="Workflow task card: create a new task with title, description and priority and assign it to the user in a document field" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v1.png" alt="Workflow card Task: Create a new Task with title, description and priority and assign it to the user in document field Field Name, notify the user via email, use User as fallback, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v3.png" alt="Workflow card Task: Create a new Task/Notification with title, description and priority and assign it to the user in document field Field Name, notify the user via email, use User as fallback, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

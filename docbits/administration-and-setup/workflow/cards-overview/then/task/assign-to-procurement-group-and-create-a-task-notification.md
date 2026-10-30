@@ -1,6 +1,6 @@
 # Assign to Procurement Group and Create a Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/image (138).png" alt="Task card assigning the document to a procurement group and creating a task or notification with title, description, priority and email" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_task_procurement_group_sequential_v2.png" alt="Workflow card Task: Assign the document sequentially to the procurement group Group Name and create a Task/Notification with title, description and priority, notify the group via email, assign priority of Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose**
 

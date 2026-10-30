@@ -1,6 +1,6 @@
 # If Country in Field
 
-<figure><img src="../../../../../.gitbook/assets/image (55).png" alt="Workflow And card Document Field: if country in a field is part of a region, continue, version 2" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2.png" alt="Workflow card Document Field: If country in field Field Name Operator part of Region, continue: Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 Intended use: an additional processing step depends on a country group. The example below describes a rule for membership of the European Union.
 

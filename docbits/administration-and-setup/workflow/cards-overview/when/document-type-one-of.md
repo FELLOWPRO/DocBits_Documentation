@@ -1,6 +1,6 @@
 # Document Type One of
 
-<figure><img src="../../../../.gitbook/assets/image (88).png" alt="Workflow When card version 2 reading Document type, Operator placeholder, one of, Type placeholder"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2.png" alt="Workflow card Document: Document type Operator one of the following Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

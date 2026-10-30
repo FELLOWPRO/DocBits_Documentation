@@ -1,6 +1,8 @@
 # Change Entries with
 
-<figure><img src="../../../../../.gitbook/assets/image (369).png" alt="Workflow Table card with placeholders for table name, column name, math operator and value" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_edit_column_v1.png" alt="Workflow card Table: In Table Name, change entries with Column Name Math Operator Value, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_edit_column_v2.png" alt="Workflow card Table: In Table Name, change entries with Column Name Math Operator Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

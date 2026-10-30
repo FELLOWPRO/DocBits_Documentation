@@ -1,44 +1,40 @@
 # Checkbox is checked
 
-## When and where to use it
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2.png" alt="Workflow card Document Field: Checkbox Field Name is checked: Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-Use this condition when a later action depends on a checkbox on the document. For example, let an invoice continue only after its review flag has been checked.
+## Purpose:
 
-In the workflow designer, add the card under **And… → Document Field**. The card compares the field value when the workflow runs; it does not continuously monitor an ERP field or change the checkbox.
+This workflow card checks whether a checkbox field on the document is checked or unchecked. It can be used to let a workflow continue only after a flag has been set on the document, for example a review flag.
 
-## Prerequisites
+## Components of the Card:
 
-The document type must contain a Boolean field for the checkbox. Use its exact technical identifier. This example uses `validation_complete`; replace it with the corresponding field in your organization.
+1. **Field Name**
+   * **Description:** The technical name of the checkbox field on the document.
+   * **Detail:** The field should be a checkbox (Boolean) field of the document type.
+2. **Boolean**
+   * **Description:** The state the checkbox should have.
+   * **Options:**
+     * **True:** The checkbox should be checked.
+     * **False:** The checkbox should be unchecked.
 
-## Configure the card
+## Functionality:
 
-1. Choose **Checkbox … is checked** under **Document Field**.
-2. Enter `validation_complete` in **Field Name** and confirm the value.
-3. Select **True** in **Boolean** to require a checked checkbox. Select **False** to check that it is unchecked.
+* **Condition Evaluation:** When the workflow reaches the card, it reads the current value of the field on the document and compares it with **Boolean**. The card does not watch the field over time and does not change it.
+  * An empty checkbox value counts as unchecked.
+  * If no **Boolean** value is selected, the card checks for an unchecked checkbox.
+  * If the field is not a checkbox field, the card notes this in the workflow log and still compares its value.
+* **Action Execution:**
+  * **True Condition:**\
+    If the checkbox state matches **Boolean**, the workflow continues with the next cards.
+  * **False Condition:**\
+    If it does not match, the workflow stops with an unmet condition.
+* **Missing Data:** If the field does not exist on the document, the card does not evaluate the condition. It reports that the field was not found on the document, which is a different result from an unchecked checkbox.
 
-## Practical example: continue after review
+## Setup and Configuration:
 
-**When to use it:** an invoice needs a prior review, and the process records completion in `validation_complete`.
+* The card can be added as an And condition from the **Document Field** category. Then the technical name of the checkbox field is entered in **Field Name** and **True** or **False** is selected.
+* **Test Card** in the card menu of the Workflow Builder can be used to check the configuration on a document with the checkbox checked, one with it unchecked, and one without the field.
 
-**Where to put it:** in the **And…** conditions, before the follow-up action configured in **Then…**. Configure the action and the event that starts the workflow separately.
+## Conclusion:
 
-**Example configuration:** field `validation_complete`, comparison **True** (`true`), card version 2.
-
-<figure><img src="../../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-en-20261025.png" alt="Version 2 example: validation complete compared with True." width="651"><figcaption><p>Version 2 example: validation complete compared with True.</p></figcaption></figure>
-
-The expected results for this configuration are:
-
-| Field value on the document | Condition result |
-| --- | --- |
-| Existing, checked checkbox (`true`) | The condition passes. |
-| Existing, unchecked checkbox (`false`) | The condition does not pass. |
-| Existing checkbox with an empty value (`None`) | Treated as unchecked; the condition does not pass. |
-| The field is missing from the document | `NOT_FOUND_IN_DOCUMENT`; this differs from an existing, unchecked checkbox. |
-
-If you select **False**, an existing unchecked checkbox passes and a checked checkbox does not. A missing field still produces a different error result.
-
-## Check before activating
-
-Check that the selected field is Boolean and belongs to the document type in use. Test a document with the checkbox checked, another with it unchecked, and the missing-field case. Inspect the card result and subsequent workflow path in each case.
-
-This card checks the checkbox state; the preceding process must set the review flag. Checking it automatically without performing the review does not demonstrate that a review was completed.
+The "Checkbox is checked" workflow card turns a checkbox on the document into a workflow condition. This lets a workflow wait for a manual step, such as a completed review, before the following actions run.

@@ -1,6 +1,8 @@
 # Compare values in table
 
-<figure><img src="../../../../../.gitbook/assets/image (102).png" alt="Table card Compare values in table with Table Name, Column Name, Operator and Column Name placeholders" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v1.png" alt="Workflow card Table: Compare values in table Table Name: Column Name Operator Column Name, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v2.png" alt="Workflow card Table: Compare values in table Table Name: Column Name Operator Column Name, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

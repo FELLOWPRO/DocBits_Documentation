@@ -1,6 +1,8 @@
 # AI Calculation for Cost Increase Surcharges
 
-<figure><img src="../../../../../.gitbook/assets/image (381).png" alt="Workflow Action card labelled AI Calculation for Cost Increase Surcharges" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1.png" alt="Workflow card Action: AI Calculation for Cost Increase Surcharges, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2.png" alt="Workflow card Action: AI Calculation for Cost Increase Surcharges, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## When to use this card
 

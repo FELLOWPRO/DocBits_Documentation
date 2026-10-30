@@ -1,6 +1,6 @@
 # Item Id on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/image (351).png" alt="Compare with Purchase Order card comparing item id on the purchase order with item id on the document" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_item_id_column_po_v2.png" alt="Workflow card Compare with Purchase Order: Any/All item id on purchase order Operator item id on document, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

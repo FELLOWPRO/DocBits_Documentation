@@ -1,8 +1,10 @@
 # Combined Price of Quantity Difference
 
-<figure><img src="../../../../../.gitbook/assets/image (59).png" alt="Workflow card Compare with Purchase Order: Combined price of quantity difference with Operator and Value, version 3" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v2.png" alt="Workflow card Compare with Purchase Order: Combined price of quantity difference Operator Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (62).png" alt="Workflow card Compare with Purchase Order: Combined price of quantity difference with Operator, Value and Comparison Data, version 4" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v3.png" alt="Workflow card Compare with Purchase Order: Combined price of quantity difference Operator Value, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v4.png" alt="Workflow card Compare with Purchase Order: Combined price of quantity difference Operator Value, compare Comparison Data, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Purpose**:
 

@@ -1,23 +1,41 @@
 # Today
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-current-date-20261023-en.png" alt="Version 2 example: Greater or Equals, 2026-11-01. The comparison uses today&#x27;s UTC date." width="650"><figcaption>Version 2 example: Greater or Equals, 2026-11-01. The comparison uses today&#x27;s UTC date.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_today_is_isnot_v2.png" alt="Workflow card Date &amp; Time: Today Operator Date, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## What this card checks
+## Purpose:
 
-This condition compares **today's UTC date at workflow execution** with a configured date. The time of day is ignored. Use it under **And → Date & Time** for a date cutoff or rollout rule.
+This workflow card compares today's date with a date set on the card. It can be used for rules that should only apply from or until a certain date, for example a process change from a planned start date.
 
-## Configuration
+## Components of the Card:
 
-Select the required comparison: equals (`eq`), not equals (`neq`), after (`gt`), on or after (`ge`), before (`lt`), or on or before (`le`). Enter an explicit date such as `2026-11-01`.
+1. **Operator**
+   * **Description:** How today's date is compared with the date on the card.
+   * **Options:**
+     * **Equals:** Today is the date on the card.
+     * **Not Equals:** Today is any other day.
+     * **Greater Than:** Today is after the date on the card.
+     * **Greater or Equals:** Today is the date on the card or later.
+     * **Less Than:** Today is before the date on the card.
+     * **Less or Equals:** Today is the date on the card or earlier.
+2. **Date**
+   * **Description:** The date today is compared with.
 
-## Practical example
+## Functionality:
 
-<!-- workflow-card-practical-example-20261023 -->
+* **Condition Evaluation:** When the workflow reaches the card, it takes the current date in UTC and compares it with the date on the card using the operator. Only the dates are compared; times of day are ignored. The dates on the document play no part.
+* **Action Execution:**
+  * **True Condition:**\
+    If the comparison is true, the workflow continues with the next cards.
+  * **False Condition:**\
+    If it is not true, the workflow stops with an unmet condition.
+* **Missing Data:** If no date is set on the card, the card does not evaluate the condition and reports the missing input in the workflow log.
 
-**When to use:** Allow a following action only from a planned rollout date onward.
+## Setup and Configuration:
 
-**Configuration:** Choose **Greater or Equals** (`ge`) and `2026-11-01`.
+* The card can be added as an And condition from the **Date & Time** category. Then an operator and a date are selected.
+* **Example:** With **Greater or Equals** and `2026-11-01`, the card is met from 1 November 2026 (UTC) onward and not met on 31 October 2026.
+* Because the date is taken in UTC, it can differ from the local date around midnight: in Europe the card still sees the previous day shortly after midnight, in America it already sees the next day in the evening.
 
-**Expected result:** On `2026-11-01` UTC the condition is met, and it remains met on `2026-11-02` UTC. On `2026-10-31` UTC it is not met. The document's own dates do not determine this comparison.
+## Conclusion:
 
-Configure the workflow trigger and the following action separately. To evaluate a time window, use the separate Date or Time card.
+The "Today" workflow card makes the calendar date a workflow condition. Date-based rules, such as a start or end date for a process, can be set up once and take effect automatically.

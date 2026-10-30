@@ -1,51 +1,55 @@
-# Calculate columns
+# Calculate Columns with
 
-This card applies a calculation to two columns of the same table and saves the result in a destination column for each row.
+<figure><img src="../../../../../.gitbook/assets/workflow_card_calc_columns_v1.png" alt="Workflow card Table: In table Table Name, calculate columns with Column Name Math Operator Column Name = Result Column, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-## When and where to use it
+<figure><img src="../../../../../.gitbook/assets/workflow_card_calc_columns_v2.png" alt="Workflow card Table: In table Table Name, calculate columns with Column Name Math Operator Column Name = Result Column, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-Use the card when the next workflow step needs calculated line values, such as **quantity × unit price**. Add it under **Then**, in **Table**. First check that both input columns contain numbers and that the required values are complete.
+## Purpose:
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-calc-columns-v2-configured-en-20261024.png" alt="Version 2 card: INVOICE_TABLE, Quantity × Unit price → TOTAL_AMOUNT. The interface displays the table name twice." width="651"><figcaption><p>Version 2 card: INVOICE_TABLE, Quantity × Unit price → TOTAL_AMOUNT. The interface displays the table name twice.</p></figcaption></figure>
+This workflow card calculates a value from two columns of a table on the document, row by row, and saves the result in a result column. It can be used, for example, to calculate line totals from quantity and unit price.
 
-## Admin video
-
-**40 seconds · English.** Mike explains when to use the card, configures multiplication and shows the saved results on the same example invoice.
+## Admin video:
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/en.mp4" %}
 
 [Watch with English subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/en.html) · [Read the transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/en.txt)
 
-## Configure the card
+## Components of the Card:
 
-| Setting | Example selection |
-| --- | --- |
-| Table | `INVOICE_TABLE` |
-| First column | `QUANTITY` — Quantity |
-| Operation | `*` — multiplication |
-| Second column | `UNIT_PRICE` — Unit price |
-| Result column | `TOTAL_AMOUNT` — Total Amount |
+1. **Table**
+   * **Description:** The table on the document the calculation runs in.
+2. **First Column**
+   * **Description:** The column with the first value of each row.
+3. **Operation**
+   * **Options:**
+     * **+** adds the second value to the first.
+     * **-** subtracts the second value from the first.
+     * **\*** multiplies the two values.
+     * **/** divides the first value by the second.
+4. **Second Column**
+   * **Description:** The column with the second value of each row.
+5. **Result Column**
+   * **Description:** The column the result of each row is saved in.
+   * **Detail:** The name is saved in capital letters, with spaces replaced by underscores (`total amount` becomes `TOTAL_AMOUNT`). If the column does not exist yet, the card adds it; if it exists, its values are replaced.
 
-You can also select `+` (addition), `-` (subtraction) or `/` (division). Column order matters for subtraction and division. Select the table and column identifiers configured in your organization.
+Versions 1 and 2 of the card have the same settings and work the same way.
 
-<!-- workflow-card-practical-example-20261021 -->
+## Functionality:
 
-## Practical example
+* **Calculation:** For every row of the table, the card reads the two columns (capitalisation of the column names does not matter), applies the operation and writes the result into the result column. Results are rounded to four decimal places. Afterwards the document is saved with the new values.
+  * An empty or missing value counts as `0`. If both values of a row are empty, the result of that row stays empty.
+  * A division by zero leaves the result of that row empty.
+  * With **+**, two values that are not numbers are joined with a space instead of added. With the other operations, a value that is not a number causes an error, and no results are saved.
+* **Action Execution:** If the calculation and the save succeed, the workflow continues with the next cards. If the table does not exist on the document, a value cannot be calculated or the document cannot be saved, the card reports an error in the workflow log.
+* **Test Card:** When the card is run with **Test Card**, the calculation is only simulated and the document is not changed.
 
-The example invoice contains two rows. The destination column does not exist before the calculation:
+## Setup and Configuration:
 
-| Row | Quantity | Unit price | Saved result in `TOTAL_AMOUNT` |
-| --- | --- | --- | --- |
-| 1 | 2 | 10 | 20 |
-| 2 | 3 | 4 | 12 |
+* The card can be added as a Then action from the **Table** category. Then the table, the two columns, the operation and the result column are selected.
+* **Example:** Table `INVOICE_TABLE`, `QUANTITY` **\*** `UNIT_PRICE`, result column `TOTAL_AMOUNT`. A row with quantity 2 and unit price 10 gets 20, a row with 3 and 4 gets 12.
+* Because an empty value counts as `0`, a missing price gives a result of `0`. Checking that the input columns are filled, for example with a condition before this card, can help to avoid wrong totals.
+* For subtraction and division, the order of the two columns matters.
 
-In the demonstrated test, the card creates the destination column. After reopening the invoice, **20.00** and **12.00** remain visible. The input columns and the original `NET_AMOUNT` values are preserved in this example. If the selected destination column already contains values, the calculation replaces them.
+## Conclusion:
 
-<figure><picture><source srcset="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-en-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-en-light-20261025.png" alt="After reopening the same invoice, TOTAL_AMOUNT contains 20.00 and 12.00 for the two lines. The original NET_AMOUNT values are preserved. The AI hint describes the original extraction; the workflow fills the result column afterward." width="735"></picture><figcaption><p>After reopening the same invoice, TOTAL_AMOUNT contains 20.00 and 12.00 for the two lines. The original NET_AMOUNT values are preserved. The AI hint describes the original extraction; the workflow fills the result column afterward.</p></figcaption></figure>
-
-## Checks and counterexamples
-
-- Check both input columns and verify the saved results after calculating.
-- A missing price can produce zero in the illustrated example. Zero does not establish that the input is complete: check the source values before calculating.
-- Text such as `ABC` instead of a number causes a calculation error. Correct the value and check the case again.
-- The missing-price and nonnumeric-text cases in the diagram show expected example outcomes. They are not additional executions of the invoice demonstrated in the video.
+The "Calculate Columns with" workflow card adds calculated values to table rows automatically. Line totals and similar values are available for the following cards and for the export without manual calculation.

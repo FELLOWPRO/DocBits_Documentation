@@ -1,6 +1,6 @@
 # Module active
 
-<figure><img src="../../../../../.gitbook/assets/image (44).png" alt="Logic condition card Module with module and operator placeholders, active" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_module_is_isnot_active_v2.png" alt="Workflow card Logic: Module Module Operator active, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

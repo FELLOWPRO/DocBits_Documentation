@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/image (347).png" alt="Workflow purchase order comparison card: compare total charges in a field with tolerance amount, tolerance type and charge ID separator" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_charge_field_with_po_v2.png" alt="Workflow card Compare with Purchase Order: Compare total charges in field Field Name Operator corresponding charge in purchase order with tolerances of Tolerance Amount Tolerance Type, charge ID as ending of field name after separator Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

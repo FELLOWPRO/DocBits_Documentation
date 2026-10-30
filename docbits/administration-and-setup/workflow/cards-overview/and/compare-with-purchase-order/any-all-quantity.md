@@ -1,8 +1,10 @@
 # Any / All Quantity
 
-<figure><img src="../../../../../.gitbook/assets/image (345).png" alt="Compare with Purchase Order card, version 3, with Any/All, Operator, Tolerance Amount and Tolerance Type placeholders" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v2.png" alt="Workflow card Compare with Purchase Order: Any/All quantity Operator tolerance of purchase order, with tolerance of Tolerance Amount Tolerance Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (346).png" alt="Compare with Purchase Order card, version 4, with the same placeholders plus a Comparison Data placeholder" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v3.png" alt="Workflow card Compare with Purchase Order: Any/All quantity Operator tolerance of purchase order, with tolerance of Tolerance Amount Tolerance Type, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v4.png" alt="Workflow card Compare with Purchase Order: Any/All quantity Operator tolerance of purchase order, with tolerance of Tolerance Amount Tolerance Type, compare Comparison Data, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## **Purpose:**
 

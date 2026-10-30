@@ -1,6 +1,6 @@
 # Compare Field with tolerances
 
-<figure><img src="../../../../../.gitbook/assets/image (57).png" alt="Workflow And card Document Field: compare a field with a value using tolerance amount and tolerance type, version 2" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_tolerances_v2.png" alt="Workflow card Document Field: Compare field Field Name Operator Value with tolerances Tolerance Amount Tolerance Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## When to use this card
 

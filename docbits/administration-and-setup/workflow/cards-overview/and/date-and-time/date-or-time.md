@@ -1,27 +1,41 @@
 # Date or Time
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-runtime-window-20261023-en.png" alt="Version 2 example: Is, 2026-11-01 09:00:00 to 2026-11-01 17:00:00 (UTC)." width="650"><figcaption>Version 2 example: Is, 2026-11-01 09:00:00 to 2026-11-01 17:00:00 (UTC).</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2.png" alt="Workflow card Date &amp; Time: Date/Time Operator between Date/Time and Date/Time, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## What this card checks
+## Purpose:
 
-This condition compares the **current UTC date and time when the workflow reaches the card** with two configured bounds. Use it under **And → Date & Time** to restrict a following action to a planned time window.
+This workflow card checks whether the current date and time lie inside or outside a window set on the card. It can be used to limit steps to certain hours, for example to working hours or a planned maintenance window.
 
-## Configuration
+## Components of the Card:
 
-Choose `is` for a time inside the window or `isnot` for a time outside it. Enter the start and end as explicit UTC date/time values. For a same-day window with the start before the end, both bounds are included.
+1. **Operator**
+   * **Options:**
+     * **Is:** The current date and time are inside the window.
+     * **Is Not:** The current date and time are outside the window.
+2. **First date/time**
+   * **Description:** One end of the window, as date and time or as a time only.
+3. **Second date/time**
+   * **Description:** The other end of the window.
 
-## Practical example
+## Functionality:
 
-<!-- workflow-card-practical-example-20261023 -->
+* **Condition Evaluation:** When the workflow reaches the card, it takes the current date and time in UTC and checks whether they lie between the two values on the card. The earlier value is used as the start, so the order of the two fields does not matter.
+  * A value with only a time (for example `09:00`) is used with today's date, so the window repeats every day.
+  * Start and end belong to the window: at exactly the start or end time, **Is** is true.
+  * A window across midnight can be entered as times only, for example `22:00` to `04:00`. The card then checks every day for the time from 22:00 until 04:00, including the exact start and end times.
+  * With full dates on two different days (for example `2026-11-01 22:00` to `2026-11-02 04:00`), the card checks the whole period from the first to the second point in time, including start and end.
+* **Action Execution:**
+  * **True Condition:**\
+    If the condition is met, the workflow continues with the next cards.
+  * **False Condition:**\
+    If it is not met, the workflow stops with an unmet condition.
+* **Missing Data:** If one of the two values is missing on the card, the card does not evaluate the condition and reports the missing input in the workflow log.
 
-**When to use:** Allow a maintenance follow-up only during a planned window.
+## Setup and Configuration:
 
-**Configuration:** Select `is`, start `2026-11-01 09:00:00` and end `2026-11-01 17:00:00`, all in UTC.
+* The card can be added as an And condition from the **Date & Time** category. Then the two values and the operator are set. All times should be entered in UTC.
+* **Example:** With **Is**, `09:00` and `17:00`, the card is met when the workflow runs between 09:00 and 17:00 UTC on any day.
 
-**Expected result:** A workflow reaching this card at `2026-11-01 10:00:00` UTC meets the condition. At `2026-11-01 18:00:00` UTC it does not. Configure the workflow trigger and the following action separately.
+## Conclusion:
 
-## Timezone and overnight limits
-
-Use UTC values throughout. Adding a timezone suffix does not convert a local time to UTC in the reviewed version 2 parser.
-
-For an overnight window such as `22:00:00` to `04:00:00`, the reviewed version 2 implementation excludes the exact start and end instants from `is`. Check both boundaries before using an overnight rule. The example above uses a same-day window.
+The "Date or Time" workflow card makes the time of the run a workflow condition. Steps can be limited to fixed hours or a single planned window without changing the workflow each time.

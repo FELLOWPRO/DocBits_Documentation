@@ -1,6 +1,6 @@
 # Text in Field
 
-<figure><img src="../../../../../.gitbook/assets/image (52).png" alt="Document Field condition card with text, operator and field name placeholders: text in field" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_doc_field_contains_v2.png" alt="Workflow card Document Field: Text Operator in field Field Name, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/image (344).png" alt="Workflow card Compare with Purchase Order: tax in document field compared to tax in purchase order with tolerances, version 2" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_po_operator_tax_charge_id_v2.png" alt="Workflow card Compare with Purchase Order: Tax in document field Field Name is Operator to tax in purchase order with charge id in table Master Data Table with tolerances Tolerance Amount Tolerance Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

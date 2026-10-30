@@ -1,6 +1,8 @@
 # Any Value of
 
-<figure><img src="../../../../../.gitbook/assets/image (100).png" alt="Table condition card: if any value of a column in a table matches a regex pattern, only one entry has to match" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_table_column_regex_any_v1.png" alt="Workflow card Table: If ANY value of Column Name in table Table Name match the regex pattern Search Pattern, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_table_column_regex_any_v2.png" alt="Workflow card Table: If ANY value of Column Name in table Table Name match the regex pattern Search Pattern, only ONE column entry has to match to continue, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

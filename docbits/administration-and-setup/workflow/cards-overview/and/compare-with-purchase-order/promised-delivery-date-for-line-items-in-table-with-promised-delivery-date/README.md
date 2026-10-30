@@ -1,6 +1,8 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt="Workflow And card Compare with Purchase Order: promised delivery date for line items in table versus purchase order with tolerance days, version 3" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2.png" alt="Workflow card Compare with Purchase Order: Promised delivery date for line items in table Operator current date, with Value days as tolerance and Allowed Tolerance Days as accepted tolerance days, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+How the tolerance window is calculated, with examples such as "today or tomorrow", is explained on [Date Tolerances](../../../date-tolerances.md).
 
 ## Purpose:
 

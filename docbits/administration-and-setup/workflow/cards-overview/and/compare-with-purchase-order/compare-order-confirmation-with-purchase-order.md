@@ -1,8 +1,12 @@
 # Compare Order Confirmation with Purchase order
 
-<figure><img src="../../../../../.gitbook/assets/image (69).png" alt="Workflow card Compare with Purchase Order: Any/All Order Data in order confirmation Operator purchase order, version 3" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1.png" alt="Workflow card Compare with Purchase Order: Order Data in order confirmation Operator purchase order, version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (343).png" alt="Workflow card Compare with Purchase Order: Any/All Order Data in order confirmation Operator purchase order, compare as Comparison Data, version 4" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2.png" alt="Workflow card Compare with Purchase Order: Any/All Order Data in order confirmation Operator purchase order, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3.png" alt="Workflow card Compare with Purchase Order: Any/All Order Data in order confirmation Operator purchase order, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4.png" alt="Workflow card Compare with Purchase Order: Any/All Order Data in order confirmation Operator purchase order, compare as Comparison Data, version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
 
 ## Purpose:
 

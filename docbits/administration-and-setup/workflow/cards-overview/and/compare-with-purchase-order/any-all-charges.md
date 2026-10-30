@@ -1,6 +1,8 @@
 # Any / All Charges
 
-<figure><img src="../../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="The card in the Add Card library, version 2 and version 3"><figcaption><p>The card in the Add Card library. Version 2 above, version 3 below.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v2.png" alt="Workflow card Compare with Purchase Order: Any/All charges are Operator tolerances compared with purchase order and tolerances of Tolerance Amount Tolerance Type, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v3.png" alt="Workflow card Compare with Purchase Order: Any/All charges must be Operator tolerances of Tolerance Amount Tolerance Type compared to the matched purchase order&#x27;s charge, with a setting for charges that exist on only one side, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

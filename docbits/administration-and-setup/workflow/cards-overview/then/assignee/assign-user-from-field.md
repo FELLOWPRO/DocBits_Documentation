@@ -1,6 +1,6 @@
 # Assign user from field
 
-<figure><img src="../../../../../.gitbook/assets/image (372).png" alt="Assignee card reading Assign user from field with a Field Name and a fallback User" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_user_from_field_with_fallback_v2.png" alt="Workflow card Assignee: Assign user from field Field Name, use user User as fallback, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose:**
 

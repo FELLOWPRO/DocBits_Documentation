@@ -1,6 +1,8 @@
 # Quoted Item Price
 
-<figure><img src="../../../../../.gitbook/assets/image (46).png" alt="Workflow Logic card reading Quoted item price Equals contracted price" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_item_quotes_to_contracted_price_v2.png" alt="Workflow card Logic: Quoted item price Operator contracted price, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_item_quotes_to_contracted_price_v3.png" alt="Workflow card Logic: Any/All quoted item price Operator to contracted price, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Purpose:**
 

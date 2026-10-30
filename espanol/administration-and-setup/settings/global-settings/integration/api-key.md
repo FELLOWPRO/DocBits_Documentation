@@ -16,8 +16,8 @@ La sección **Clave API** de la parte superior de la página Integración y SSO 
 Estos son los valores que necesita su proveedor de identidad para permitir que los usuarios inicien sesión en DocBits con el inicio de sesión de su empresa. Para ver la guía de configuración completa, consulte [Configuración de inicio de sesión único (SSO)](configuring-single-sign-on-sso/).
 
 * **ID de entidad:** El identificador de DocBits como proveedor de servicios en la configuración de SSO. El icono de copiar copia el valor al portapapeles.
-* **URL SLO:** La URL que se usa para cerrar la sesión de un usuario en todas las aplicaciones conectadas a través de SSO (cierre de sesión único) al mismo tiempo. El icono de copiar copia el valor.
-* **URL SSO:** La URL que se usa para iniciar el proceso de inicio de sesión único. El icono de copiar copia el valor.
+* **URL SLO:** El endpoint del servicio de cierre de sesión único SAML de DocBits. El icono de copiar copia el valor.
+* **URL SSO:** El endpoint del servicio consumidor de aserciones (ACS) de DocBits recibe las respuestas SAML del proveedor de identidad. Úselo como URL de respuesta (URL ACS) en la configuración del proveedor de identidad. El icono de copiar copia el valor.
 * **Certificado de descarga:** Descarga el certificado de seguridad que su proveedor de identidad necesita para confiar en DocBits.
 * **Descargar metadatos:** Descarga el archivo de metadatos SAML que se puede importar directamente en la mayoría de los proveedores de identidad.
 

@@ -1,6 +1,6 @@
 # 设置为
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-12fec1de4cae-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-zh-cn.png" alt="设置为, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 ## **用途：**
 

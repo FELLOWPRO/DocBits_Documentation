@@ -1,6 +1,10 @@
 # 将状态更改为
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-2da4ec250da9-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v1-zh-cn.png" alt="将状态更改为, 版本 1" width="634"><figcaption><p>版本 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v2-zh-cn.png" alt="将状态更改为, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_staus_change_v3-zh-cn.png" alt="将状态更改为, 版本 3" width="634"><figcaption><p>版本 3</p></figcaption></figure>
 
 ## **用途：**
 

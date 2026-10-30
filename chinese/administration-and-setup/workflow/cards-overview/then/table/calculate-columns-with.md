@@ -1,53 +1,55 @@
 # 使用以下方式计算列
 
-此卡片对同一表格中的两列执行数学运算，并把每一行的结果保存到目标列。
+<figure><img src="../../../../../.gitbook/assets/workflow_card_calc_columns_v1-zh-cn.png" alt="使用以下方式计算列, 版本 1" width="634"><figcaption><p>版本 1</p></figcaption></figure>
 
-## 何时何处使用
+<figure><img src="../../../../../.gitbook/assets/workflow_card_calc_columns_v2-zh-cn.png" alt="使用以下方式计算列, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
-当工作流的下一步需要计算每一行的值时使用此卡片，例如 **数量 × 单价**。在 **然后** 区域的 **表格** 类别中添加卡片。计算前，先确认两列输入都是数字，并且所需数据完整。
+## 用途：
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-calc-columns-configured-v2-20261024-zh.png" alt="卡片版本 2：INVOICE_TABLE，数量 × 单价 → TOTAL_AMOUNT。界面会重复显示表格名称。" width="563"><figcaption><p>卡片版本 2：INVOICE_TABLE，数量 × 单价 → TOTAL_AMOUNT。界面会重复显示表格名称。</p></figcaption></figure>
+此工作流卡片逐行根据文档上某个表格的两列计算一个值，并将结果保存到结果列中。例如，可以用它根据数量和单价计算行合计。
 
-## 管理员视频
-
-**37 秒 · 简体中文。** 陈伟说明何时使用这张卡片，演示乘法配置，并展示同一张示例发票中保存的结果。
+## 管理员视频：
 
 {% embed url="https://docbits-videos.fra1.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/zh.mp4" %}
 
 [观看带中文字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/zh.html) · [阅读文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-calc-columns-admin/v1/zh.txt)
 
-## 配置卡片
+## 卡片组件：
 
-| 设置 | 示例中的选择 |
-| --- | --- |
-| 表格 | `INVOICE_TABLE` |
-| 第一列 | `QUANTITY` — 数量 |
-| 运算 | `*` — 乘法 |
-| 第二列 | `UNIT_PRICE` — 单价 |
-| 结果列 | `TOTAL_AMOUNT` — 总金额 |
+1. **表格**
+   * **描述：** 文档上执行计算的表格。
+2. **第一列**
+   * **描述：** 包含每行第一个值的列。
+3. **运算**
+   * **选项：**
+     * **+** 将第二个值加到第一个值上。
+     * **-** 从第一个值中减去第二个值。
+     * **\*** 将两个值相乘。
+     * **/** 用第一个值除以第二个值。
+4. **第二列**
+   * **描述：** 包含每行第二个值的列。
+5. **结果列**
+   * **描述：** 保存每行结果的列。
+   * **详细信息：** 列名以大写字母保存，空格替换为下划线（`total amount` 变为 `TOTAL_AMOUNT`）。如果该列尚不存在，卡片会添加该列；如果已存在，则替换其值。
 
-还可以使用 `+`（加法）、`-`（减法）和 `/`（除法）。使用减法或除法时，两列的先后顺序会影响结果。请选择您的组织中配置的表格和列标识。
+该卡片的版本 1 和版本 2 设置相同，工作方式也相同。
 
-<!-- workflow-card-practical-example-20261021 -->
+## 功能：
 
-## 已验证的实际示例
+* **计算：** 卡片针对表格的每一行读取两列的值（列名不区分大小写），执行运算，并将结果写入结果列。结果四舍五入到四位小数。随后，文档会以新值保存。
+  * 空值或缺失值按 `0` 计算。如果一行的两个值都为空，该行的结果保持为空。
+  * 除以零时，该行的结果保持为空。
+  * 使用 **+** 时，两个非数字值会用空格连接，而不是相加。使用其他运算时，非数字值会导致错误，并且不会保存任何结果。
+* **执行操作：** 如果计算和保存成功，工作流将继续执行后续卡片。如果文档上不存在该表格、某个值无法计算或文档无法保存，卡片会在工作流日志中报告错误。
+* **测试卡片：** 使用 **测试卡片** 运行此卡片时，计算仅为模拟，文档不会被更改。
 
-示例发票包含两行。计算前，结果列尚不存在：
+## 设置和配置：
 
-| 行 | 数量 | 单价 | `TOTAL_AMOUNT` 中保存的值 |
-| --- | --- | --- | --- |
-| 1 | 2 | 10 | 20 |
-| 2 | 3 | 4 | 12 |
+* 可以从 **表格** 类别中添加此卡片作为 Then 操作，然后选择表格、两列、运算和结果列。
+* **示例：** 表格 `INVOICE_TABLE`，`QUANTITY` **\*** `UNIT_PRICE`，结果列 `TOTAL_AMOUNT`。数量为 2、单价为 10 的行得到 20，值为 3 和 4 的行得到 12。
+* 由于空值按 `0` 计算，缺少价格时结果为 `0`。检查输入列是否已填写（例如在此卡片之前使用一个条件）有助于避免错误的合计。
+* 对于减法和除法，两列的顺序很重要。
 
-在所示测试中，卡片创建了结果列。重新打开同一张发票后，**总金额** 列中显示 `20.00` 和 `12.00`。本例中的输入列和 `NET_AMOUNT` 原有值保持不变。如果所选结果列已经有值，计算结果会覆盖这些值。
+## 结论：
 
-<figure><picture><source srcset="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-zh-dark-20261025.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/workflow-card-calc-columns-saved-result-zh-light-20261025.png" alt="重新打开同一张发票后，两行的 TOTAL_AMOUNT 仍为 20.00 和 12.00，原始 NET_AMOUNT 金额保持不变。" width="735"></picture><figcaption><p>重新打开同一张发票后，两行的 TOTAL_AMOUNT 仍为 20.00 和 12.00，原始 NET_AMOUNT 金额保持不变。</p></figcaption></figure>
-
-## 检查和反例
-
-计算前检查两列输入，计算后核对保存的结果。
-
-- 本例中缺少单价时，结果可能为零。零并不表示数据完整：请在计算前检查输入。
-- 输入 `ABC` 等文字而非数字时，会出现计算错误。请修正输入并再次检查。
-
-这两个反例描述的是预期结果，并不是对所示发票的额外执行。
+“使用以下方式计算列”工作流卡片会自动为表格行添加计算值。行合计及类似的值无需手动计算，即可供后续卡片和导出使用。

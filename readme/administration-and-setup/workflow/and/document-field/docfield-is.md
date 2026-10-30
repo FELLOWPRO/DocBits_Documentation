@@ -1,6 +1,8 @@
 # Porównanie pola dokumentu z wartością odniesienia
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f38fe175443d-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v1-pl-pl.png" alt="Porównanie pola dokumentu z wartością odniesienia, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-pl-pl.png" alt="Porównanie pola dokumentu z wartością odniesienia, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

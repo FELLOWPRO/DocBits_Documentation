@@ -1,45 +1,46 @@
 # Pole wyboru jest zaznaczone
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-pl-20261025.png" alt="Przykład w wersji 2: validation complete porównane z wartością PRAWDA."><figcaption><p>Przykład w wersji 2: validation complete porównane z wartością PRAWDA.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-pl-pl.png" alt="Pole wyboru jest zaznaczone, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-## Kiedy używać
+## Cel:
 
-Użyj tej karty, gdy dalsza akcja ma zależeć od stanu pola wyboru w dokumencie, na przykład od zaznaczenia zakończenia kontroli. Karta sprawdza warunek podczas wykonania workflow. Nie zmienia pola i nie uruchamia samodzielnie procesu; wyzwalacz oraz dalsze akcje konfiguruje się osobno.
+Ta karta przepływu pracy sprawdza, czy pole wyboru w dokumencie jest zaznaczone, czy niezaznaczone. Może być używana do tego, aby przepływ pracy był kontynuowany dopiero po ustawieniu znacznika w dokumencie, na przykład znacznika weryfikacji.
 
-**Gdzie:** Standardowy workflow → dodatkowe warunki (AND) → Pole dokumentu → warunek pola wyboru.
-
-## Konfiguracja — wersja 2
-
-| Ustawienie | Wartość w filmie |
-| --- | --- |
-| Nazwa pola | `validation_complete` — istniejące pole oznaczające zakończenie kontroli |
-| Wartość logiczna | `true` — pole ma być zaznaczone |
-
-Wpisz dokładny identyfikator pola i zatwierdź go klawiszem Enter, a następnie wybierz wartość porównania. Użyj pola rzeczywiście skonfigurowanego w Twojej organizacji. `validation_complete` jest identyfikatorem z przykładu, a nie obowiązkową nazwą pola.
-
-Wybór `false` sprawdza pole niezaznaczone. Przed włączeniem reguły upewnij się, że wybrane pole jest polem logicznym. Dla istniejącego pola wartość `null` jest w wersji 2 traktowana jak `false`; brak całego pola jest odrębnym przypadkiem.
-
-<!-- workflow-card-practical-example-20261021 -->
-
-## Praktyczny przykład
-
-Kontynuuj obsługę faktury dopiero po zaznaczeniu pola zakończenia kontroli. Dla konfiguracji `validation_complete` i `true`:
-
-| Wartość dokumentu | Oczekiwany wynik |
-| --- | --- |
-| Istniejące pole ma wartość `true` — zaznaczone | Warunek spełniony |
-| Istniejące pole ma wartość `false` — niezaznaczone | Warunek niespełniony |
-| Istniejące pole ma wartość `null` | Warunek niespełniony — oceniane jako `false` |
-| Pole nie istnieje w dokumencie | `NOT_FOUND_IN_DOCUMENT` — odrębny wynik błędu |
-
-Są to oczekiwane wyniki przykładu. Brak pola nie potwierdza zakończenia kontroli i nie jest tym samym co istniejące niezaznaczone pole.
-
-## Film z przykładem administratora
-
-Kiedy używam karty, gdzie ją znaleźć i jak porównać stan pola wyboru. Przykłady pokazują oczekiwane wyniki.
+## Film administratora:
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v2/pl.mp4" %}
 
 [Otwórz film z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v2/pl-theme-v4.html)
 
-[Przeczytaj transkrypcję](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-checkbox-admin/v2/pl.txt)
+## Komponenty karty:
+
+1. **Nazwa pola**
+   * **Opis:** Techniczna nazwa pola wyboru w dokumencie.
+   * **Szczegóły:** Pole powinno być polem wyboru (logicznym) danego typu dokumentu.
+2. **Wartość logiczna**
+   * **Opis:** Stan, jaki powinno mieć pole wyboru.
+   * **Opcje:**
+     * **PRAWDA:** Pole wyboru powinno być zaznaczone.
+     * **FAŁSZ:** Pole wyboru powinno być niezaznaczone.
+
+## Funkcjonalność:
+
+* **Ocena warunku:** Gdy przepływ pracy dociera do karty, karta odczytuje bieżącą wartość pola w dokumencie i porównuje ją z ustawieniem **Wartość logiczna**. Karta nie obserwuje pola w czasie i go nie zmienia.
+  * Pusta wartość pola wyboru jest uznawana za niezaznaczoną.
+  * Jeśli nie wybrano żadnej wartości w **Wartość logiczna**, karta sprawdza, czy pole wyboru jest niezaznaczone.
+  * Jeśli pole nie jest polem wyboru, karta odnotowuje to w dzienniku przepływu pracy i mimo to porównuje jego wartość.
+* **Wykonanie akcji:**
+  * **Warunek prawdziwy:**\
+    Jeśli stan pola wyboru odpowiada ustawieniu **Wartość logiczna**, przepływ pracy jest kontynuowany kolejnymi kartami.
+  * **Warunek fałszywy:**\
+    Jeśli nie odpowiada, przepływ pracy zatrzymuje się z niespełnionym warunkiem.
+* **Brakujące dane:** Jeśli pole nie istnieje w dokumencie, karta nie ocenia warunku. Zgłasza, że pola nie znaleziono w dokumencie, co jest innym wynikiem niż niezaznaczone pole wyboru.
+
+## Instalacja i konfiguracja:
+
+* Kartę można dodać jako warunek And z kategorii **Pole dokumentu**. Następnie w polu **Nazwa pola** wpisuje się techniczną nazwę pola wyboru i wybiera **PRAWDA** lub **FAŁSZ**.
+* Za pomocą opcji **Karta testowa** w menu karty w Workflow Builder można sprawdzić konfigurację na dokumencie z zaznaczonym polem wyboru, na dokumencie z niezaznaczonym polem wyboru i na dokumencie bez tego pola.
+
+## Podsumowanie:
+
+Karta przepływu pracy „Checkbox is checked” zamienia pole wyboru w dokumencie w warunek przepływu pracy. Dzięki temu przepływ pracy może poczekać na krok ręczny, taki jak zakończona weryfikacja, zanim zostaną wykonane kolejne akcje.

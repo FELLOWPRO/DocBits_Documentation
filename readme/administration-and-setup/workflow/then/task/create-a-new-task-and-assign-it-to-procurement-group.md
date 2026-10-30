@@ -1,6 +1,8 @@
 # Utwórz nowe zadanie i przypisz je do grupy zaopatrzenia
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v2-pl-pl.png" alt="Utwórz nowe zadanie i przypisz je do grupy zaopatrzenia, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v3-pl-pl.png" alt="Utwórz nowe zadanie i przypisz je do grupy zaopatrzenia, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
 ## **Cel:**
 

@@ -1,6 +1,6 @@
 # Jeśli kraj w polu jest jednym z
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-pl-pl.png" alt="Jeśli kraj w polu jest jednym z, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 Użyj tego warunku, gdy dodatkowy etap przetwarzania ma dotyczyć dokumentów z wybranych krajów, na przykład Niemiec i Francji. Karta porównuje kraj odczytany z pola dokumentu ze skonfigurowaną listą krajów.
 

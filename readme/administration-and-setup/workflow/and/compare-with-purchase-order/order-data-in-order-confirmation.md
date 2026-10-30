@@ -1,6 +1,12 @@
 # Dane zamówienia w potwierdzeniu zamówienia
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-77711a53d4d0-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1-pl-pl.png" alt="Dane zamówienia w potwierdzeniu zamówienia, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2-pl-pl.png" alt="Dane zamówienia w potwierdzeniu zamówienia, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3-pl-pl.png" alt="Dane zamówienia w potwierdzeniu zamówienia, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4-pl-pl.png" alt="Dane zamówienia w potwierdzeniu zamówienia, Wersja 4" width="634"><figcaption><p>Wersja 4</p></figcaption></figure>
 
 ## **Cel**
 

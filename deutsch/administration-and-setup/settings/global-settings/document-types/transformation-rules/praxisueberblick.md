@@ -108,4 +108,8 @@ Keine neue OCR-Erkennung, keine mathematische Einheiten- oder Währungsumrechnun
 
 ## Durchgängiger Übungsbeleg
 
-[Schulungsrechnung herunterladen](../../../../../.gitbook/assets/transformation-schulungsrechnung-20261028.pdf). Der fiktive Beleg enthält zwei Positionen, unterschiedliche Schreibweisen der Einheit und eine Bestellreferenz im Freitext. Für reproduzierbare Regeltests werden die Ausgangswerte gezielt vorbereitet; dies ist kein Nachweis einer automatisch fehlerfreien OCR-Extraktion.
+{% file src="../../../../../.gitbook/assets/transformation-schulungsrechnung-20261028.pdf" %}
+Schulungsrechnung herunterladen
+{% endfile %}
+
+Der fiktive Beleg enthält zwei Positionen, unterschiedliche Schreibweisen der Einheit und eine Bestellreferenz im Freitext. Für reproduzierbare Regeltests werden die Ausgangswerte gezielt vorbereitet; dies ist kein Nachweis einer automatisch fehlerfreien OCR-Extraktion.

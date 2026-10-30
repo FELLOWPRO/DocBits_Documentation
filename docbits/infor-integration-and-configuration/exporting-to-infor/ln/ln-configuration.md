@@ -17,11 +17,11 @@ Before you set up the data flow, you need to import the mapping files into Infor
 
 In ION Desk → Connect and open Mappings
 
-<figure><img src="https://lh7-us.googleusercontent.com/fAUUcBUSxIWqLjYEHH78O2Mfq0P4d4D42OgCNFPdpUQTM5ZHu_BcKz9DmWe0AlHe3--ff7z9mfYTrt7oAkf2uknBwkV2VWayEpiJ_aAIxcJil5LNiep4U6KZr3_tBfs1RRwXoW749q3FUxurXy_pT_k" alt="Historical example: iON Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Connection Points, File Templates and Enterprise Locations."><figcaption><p>Historical example: iON Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Connection Points, File Templates and Enterprise Locations. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/fAUUcBUSxIWqLjYEHH78O2Mfq0P4d4D42OgCNFPdpUQTM5ZHu_BcKz9DmWe0AlHe3--ff7z9mfYTrt7oAkf2uknBwkV2VWayEpiJ_aAIxcJil5LNiep4U6KZr3_tBfs1RRwXoW749q3FUxurXy_pT_k" alt="Historical example: ION Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Connection Points, File Templates and Enterprise Locations."><figcaption><p>Historical example: ION Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Connection Points, File Templates and Enterprise Locations. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 Click on the Import icon
 
-<figure><img src="https://lh7-us.googleusercontent.com/d_KYA9LgiiW1A95CH9hwU1AC1u5x25T4ET-4sAqpZkVOexHc4WcbwPXUaKt3O9fR3Btvv-NEGbCWwnnb8SfomnnO22M8YTIqWdvan-SkbG0cu1MWkjwOn_Vd_b6rJaQng8A92JTa5YKBms4RuIvwmb0" alt="Historical example: mappings toolbar in historical ION Desk with the import control circled."><figcaption><p>Historical example: mappings toolbar in historical ION Desk with the import control circled. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/d_KYA9LgiiW1A95CH9hwU1AC1u5x25T4ET-4sAqpZkVOexHc4WcbwPXUaKt3O9fR3Btvv-NEGbCWwnnb8SfomnnO22M8YTIqWdvan-SkbG0cu1MWkjwOn_Vd_b6rJaQng8A92JTa5YKBms4RuIvwmb0" alt="Historical example: Mappings toolbar in historical ION Desk with the import control circled."><figcaption><p>Historical example: Mappings toolbar in historical ION Desk with the import control circled. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 * From here you need to select the various mapping files you will need which include: SyncCaptDoc\_SyncSuppInv, SyncSupplierInvoice\_LoadSupplierInvoice, and LoadSupplierInvoice\_ProcessSupplierInvoice.
 * Once you have imported all the mappings files, make sure to approve each of them by clicking the tick icon within each of their squares on the Mapping dashboard.
@@ -30,15 +30,15 @@ Click on the Import icon
 
 The next step is to setup the Data Flow in ION Desk, navigate to the ION Desk application and select Data Flow → + ADD → Document Flow like below
 
-<figure><img src="https://lh7-us.googleusercontent.com/rjPVR1EFKw_gZI1Ztg9Aqt4pFw10rii7WU-yddLIz22a_Fn3s1HSYDRmQVvgZtX_85nb2ipNqJ1JU49NIE8a57TIur7jqoMuKFKlb-RrfnRFxiA1TefzofKPJ32fzIdDWI8PmnD-aDw4qhQj4e0dd9I" alt="Historical example: data Flows page in ION Desk with the navigation on the left, the flow DF_SLTStAPI in the list and the menu entries Document Flow and Data Lake Flow."><figcaption><p>Historical example: data Flows page in ION Desk with the navigation on the left, the flow DF_SLTStAPI in the list and the menu entries Document Flow and Data Lake Flow. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/rjPVR1EFKw_gZI1Ztg9Aqt4pFw10rii7WU-yddLIz22a_Fn3s1HSYDRmQVvgZtX_85nb2ipNqJ1JU49NIE8a57TIur7jqoMuKFKlb-RrfnRFxiA1TefzofKPJ32fzIdDWI8PmnD-aDw4qhQj4e0dd9I" alt="Historical example: Data Flows page in ION Desk with the navigation on the left, the flow DF_SLTStAPI in the list and the menu entries Document Flow and Data Lake Flow."><figcaption><p>Historical example: Data Flows page in ION Desk with the navigation on the left, the flow DF_SLTStAPI in the list and the menu entries Document Flow and Data Lake Flow. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 Use this canvas to build the flow of information from DocBits to LN.
 
-<figure><img src="https://lh7-us.googleusercontent.com/9C7BaoiHWRaav0ytCbYkxEYG12f-64qyagsl8H2eq5TXUySRE1s3x_-lVRbK6tpTxvbRYKvwyWO_6ASSQ6Rn62LQR9ZvMRpRXq9UymZLS0I8IZ-hOzX58iYtTruqSo5WdgIXwEPjMlb1dnuFuhN8IS8" alt="Historical example: new Document Flow with the empty properties panel and the messages Document flow name must be specified and The document flow has no activities."><figcaption><p>Historical example: new Document Flow with the empty properties panel and the messages Document flow name must be specified and The document flow has no activities. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/9C7BaoiHWRaav0ytCbYkxEYG12f-64qyagsl8H2eq5TXUySRE1s3x_-lVRbK6tpTxvbRYKvwyWO_6ASSQ6Rn62LQR9ZvMRpRXq9UymZLS0I8IZ-hOzX58iYtTruqSo5WdgIXwEPjMlb1dnuFuhN8IS8" alt="Historical example: New Document Flow with the empty properties panel and the messages Document flow name must be specified and The document flow has no activities."><figcaption><p>Historical example: New Document Flow with the empty properties panel and the messages Document flow name must be specified and The document flow has no activities. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 An LN data flow will look similar to what is shown below (there are multiple paths due to each individual path being meant for a specific document type, for this explanation we will focus on the invoice data flow).
 
-<figure><img src="https://lh7-us.googleusercontent.com/gltDE9JxeGb7Ufg9Ldl-JIJ95zfWHnQtyOqys2QKCiTlIn_PdAyBLFYmTVCh9c-TxF5xNQR3G8Hmn4EXK94t6MJ-1WzlZg1Zl7HNoxfR56zC8dT1skmxLTj7rtnSl0JTQJD_3myQY4Qcd9motySYh9U" alt="Historical example: data Flow canvas with several paths for different document types, each path built from a DocBits connection point, a mapping and an LN connection point."><figcaption><p>Historical example: data Flow canvas with several paths for different document types, each path built from a DocBits connection point, a mapping and an LN connection point. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/gltDE9JxeGb7Ufg9Ldl-JIJ95zfWHnQtyOqys2QKCiTlIn_PdAyBLFYmTVCh9c-TxF5xNQR3G8Hmn4EXK94t6MJ-1WzlZg1Zl7HNoxfR56zC8dT1skmxLTj7rtnSl0JTQJD_3myQY4Qcd9motySYh9U" alt="Historical example: Data Flow canvas with several paths for different document types, each path built from a DocBits connection point, a mapping and an LN connection point."><figcaption><p>Historical example: Data Flow canvas with several paths for different document types, each path built from a DocBits connection point, a mapping and an LN connection point. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 All parts of the chain are dragged and dropped from the top section
 
@@ -52,11 +52,11 @@ Give it the appropriate name such as “DocBits” then select the plus sign and
 
 To create this connection point, go to ION Desk → Connect → Connection Points
 
-<figure><img src="https://lh7-us.googleusercontent.com/1SZJN-GW7BP-fvUHZ-tCJ4xNXx0ABRP3J9eMzF3BTKIY54J-pK4bYy4fOVHCaI6A2sdrYekWJsY9ky8dXz36l_FwwzzEnO1IjxNkMqlV-Y4UvyFIei73Z9C19m9bzTr3gCL3IpTUqiV280id1vJE530" alt="Historical example: iON Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Mappings and Connection Points."><figcaption><p>Historical example: iON Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Mappings and Connection Points. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/1SZJN-GW7BP-fvUHZ-tCJ4xNXx0ABRP3J9eMzF3BTKIY54J-pK4bYy4fOVHCaI6A2sdrYekWJsY9ky8dXz36l_FwwzzEnO1IjxNkMqlV-Y4UvyFIei73Z9C19m9bzTr3gCL3IpTUqiV280id1vJE530" alt="Historical example: ION Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Mappings and Connection Points."><figcaption><p>Historical example: ION Desk navigation with the Connect group expanded and the entries Data Flows, API Flows, Mappings and Connection Points. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 Click “+ Add”
 
-<figure><img src="https://lh7-us.googleusercontent.com/ZJ1212Gwdk-b2-LVbEd2ZDzc_AqaEEYtIN0fC6d6P4EaWdTKj6nOzGDbA5sxdBtMcTrWopfDmd7GTahbwkDpj3uvmMYgvEUQa6qmi58NFGvtcgAtIwYr952Yu7Lcj802iHtQ_vj_-XPdegP1P0ySdos" alt="Historical example: connection Points page in ION Desk with the Connect group open in the navigation."><figcaption><p>Historical example: connection Points page in ION Desk with the Connect group open in the navigation. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/ZJ1212Gwdk-b2-LVbEd2ZDzc_AqaEEYtIN0fC6d6P4EaWdTKj6nOzGDbA5sxdBtMcTrWopfDmd7GTahbwkDpj3uvmMYgvEUQa6qmi58NFGvtcgAtIwYr952Yu7Lcj802iHtQ_vj_-XPdegP1P0ySdos" alt="Historical example: Connection Points page in ION Desk with the Connect group open in the navigation."><figcaption><p>Historical example: Connection Points page in ION Desk with the Connect group open in the navigation. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 Select “IMS via API Gateway” and fill in the following information
 
@@ -66,7 +66,7 @@ The ION API client ID is the `ci` value in your `.ionapi` file. Obtain the tenan
 
 Switch to the document tab, and add the Sync.CaptureDocument BOD to the DocBits connection point like below.
 
-<figure><img src="https://lh7-us.googleusercontent.com/Wy2BIr1z_RqU-yMkXo6vOu64QC6c66OdHOxdI6PPy0yJv1jIAJF0OYITULxTFoPUK93SK3jvNm67tcxqjiEBIk0Wbu1Q1s-mSIUuPjJorcYyXY7vjsHOnoutn6tE8r6yE_333uCWuKvKiVoo99FrXVg" alt="Historical example: connection point DocBits-Sandbox-Export with the Documents tab open and the document Sync.CaptureDocument assigned."><figcaption><p>Historical example: connection point DocBits-Sandbox-Export with the Documents tab open and the document Sync.CaptureDocument assigned. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/Wy2BIr1z_RqU-yMkXo6vOu64QC6c66OdHOxdI6PPy0yJv1jIAJF0OYITULxTFoPUK93SK3jvNm67tcxqjiEBIk0Wbu1Q1s-mSIUuPjJorcYyXY7vjsHOnoutn6tE8r6yE_333uCWuKvKiVoo99FrXVg" alt="Historical example: Connection point DocBits-Sandbox-Export with the Documents tab open and the document Sync.CaptureDocument assigned."><figcaption><p>Historical example: Connection point DocBits-Sandbox-Export with the Documents tab open and the document Sync.CaptureDocument assigned. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 Then save the connection point by pressing the disk icon in the upper-left corner.
 
@@ -94,7 +94,7 @@ There should already be an LN or similarly named connection point (for the appro
 
 ### BODs
 
-<figure><img src="https://lh7-us.googleusercontent.com/de8OyDF4yMoHaXsxM9weJdm8mKDzL97kFRr00fhoHAxxKXb2BgMcMM2shyxi1S7cBwzSAUy2u8bZV4sJOVqgXt8Mcge6L2CXxbfVGiqXUwKwF6A5mgt4zfGPYltaZuLazOJYu2u7arszJE6IonMOskk" alt="Historical example: data Flow canvas with the nodes DocBits-DEV, MappingDeliver, Load Supplier, PurchaseOrder, SalesOrder and AdvancedShip above the entry End."><figcaption><p>Historical example: data Flow canvas with the nodes DocBits-DEV, MappingDeliver, Load Supplier, PurchaseOrder, SalesOrder and AdvancedShip above the entry End. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/de8OyDF4yMoHaXsxM9weJdm8mKDzL97kFRr00fhoHAxxKXb2BgMcMM2shyxi1S7cBwzSAUy2u8bZV4sJOVqgXt8Mcge6L2CXxbfVGiqXUwKwF6A5mgt4zfGPYltaZuLazOJYu2u7arszJE6IonMOskk" alt="Historical example: Data Flow canvas with the nodes DocBits-DEV, MappingDeliver, Load Supplier, PurchaseOrder, SalesOrder and AdvancedShip above the entry End."><figcaption><p>Historical example: Data Flow canvas with the nodes DocBits-DEV, MappingDeliver, Load Supplier, PurchaseOrder, SalesOrder and AdvancedShip above the entry End. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
 The following configurations should look as follows:
 

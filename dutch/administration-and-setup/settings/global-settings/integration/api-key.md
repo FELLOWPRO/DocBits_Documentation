@@ -16,8 +16,8 @@ De sectie **API-sleutel** bovenaan de pagina Integratie & SSO toont elke API-sle
 Dit zijn de waarden die uw identiteitsprovider nodig heeft om gebruikers met uw bedrijfsaanmelding te laten inloggen op DocBits. Voor de volledige installatiegids raadpleegt u [Configuring Single Sign-On (SSO)](configuring-single-sign-on-sso/).
 
 * **Entiteits-ID:** De identificatie van DocBits als serviceprovider in de SSO-configuratie. Het kopieerpictogram kopieert de waarde naar uw klembord.
-* **SLO-URL (Single Logout):** De URL waarmee een gebruiker tegelijk wordt uitgelogd bij alle via SSO verbonden applicaties. Het kopieerpictogram kopieert de waarde.
-* **SSO-URL:** De URL die wordt gebruikt om het single sign-on proces te starten. Het kopieerpictogram kopieert de waarde.
+* **SLO-URL (Single Logout):** Het eindpunt van de SAML-service voor Single Logout van DocBits. Het kopieerpictogram kopieert de waarde.
+* **SSO-URL:** Het Assertion Consumer Service-eindpunt (ACS) van DocBits ontvangt SAML-antwoorden van de identiteitsprovider. Gebruik dit als antwoord-URL (ACS-URL) in de configuratie van de identiteitsprovider. Het kopieerpictogram kopieert de waarde.
 * **Certificaat downloaden:** Downloadt het beveiligingscertificaat dat uw identiteitsprovider nodig heeft om DocBits te vertrouwen.
 * **Metagegevens downloaden:** Downloadt het SAML-metadatabestand dat direct in de meeste identiteitsproviders kan worden geïmporteerd.
 
@@ -26,5 +26,5 @@ Dit zijn de waarden die uw identiteitsprovider nodig heeft om gebruikers met uw 
 Configureer DocBits om uw externe identiteitsprovider (IdP) voor het inloggen te gebruiken. Voor de volledige gids raadpleegt u [Identity Service Provider Configuration](identity-service-provider-configuration.md).
 
 * **Huurder-ID:** De tenant-identificatie van uw identiteitsprovider, gebruikt wanneer DocBits integreert met clouddiensten die toegang per tenant beheren.
-* **Bestand uploaden:** Uploadt het metadata- of configuratiebestand dat u van uw identiteitsprovider heeft ontvangen.
-* **Configure:** Slaat de instellingen op en past de geüploade configuratie toe. Voer eerst de Huurder-ID in of upload het bestand en klik vervolgens op **Configure**.
+* **Bestand uploaden:** Selecteer het XML-metadatabestand dat uw identiteitsprovider heeft verstrekt.
+* **Configure:** Selecteer eerst het XML-bestand en klik daarna op Configure om het te uploaden en de configuratie van de identiteitsprovider op te slaan.

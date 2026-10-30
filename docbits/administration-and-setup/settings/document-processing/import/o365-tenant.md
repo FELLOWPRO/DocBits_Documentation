@@ -1,110 +1,42 @@
-# O365 Tenant
+# Microsoft 365 tenant email import
 
-## Register App on Azure AD
+Use this guide to connect an organisation-owned Microsoft 365 mailbox through a Microsoft Entra application. An administrator needs access to the intended Entra tenant and the matching DocBits organisation. Agree on the mailbox, document destination and credential owner before enabling import.
 
-<mark style="color:red;">**Note**</mark>: The permissions may require authorization from an administrator.
+## 1. Prepare the Entra application
 
-1. Sign in to the [Azure Portal](https://portal.azure.com/) using your credentials.
-2. From Azure services, locate and open Azure Active Directory (also known as Azure AD).
+In the [Microsoft Entra admin center](https://entra.microsoft.com/), open **Identity → Applications → App registrations → New registration** in the intended tenant. Choose a recognisable name and the account type approved by your identity administrator. An application used only within your organisation normally uses the single-tenant account option. Record its **Directory (tenant) ID** and **Application (client) ID**. Follow Microsoft's [current registration instructions](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) for the portal steps.
 
-<figure><img src="../../../../.gitbook/assets/o365_tenant_1.png" alt="Azure Active Directory service icon in the Azure portal"><figcaption></figcaption></figure>
+The DocBits tenant form asks for a client secret. Under **Certificates & secrets**, create the secret using the approved expiry policy and record its **Value** while it is available. Store it securely and assign responsibility for rotation before expiry. Enter this Value into **Client App Value** in DocBits. Keep secrets out of screenshots, tickets and documentation.
 
-3. Under the **Manage** section, select **App registrations**.
+Leave public-client flows disabled for this secret-based setup unless your identity administrator has established a separate requirement. Microsoft's [client-type guidance](https://learn.microsoft.com/en-us/entra/identity-platform/msal-client-applications) explains why public-client applications cannot safely hold application secrets.
 
-<figure><img src="../../../../.gitbook/assets/o365_tenant_2.png" alt="Azure Active Directory menu with the App registrations entry under Manage"><figcaption></figcaption></figure>
+## 2. Approve permission and mailbox scope
 
-4. In the App registrations screen, click **+ New registration**.
+Have the Microsoft 365 administrator approve the mail operations and mailbox scope for this application. The Microsoft Graph **Mail.ReadWrite application permission** allows mail access and changes without a signed-in user and requires administrator consent. An unscoped grant covers mailboxes across the organisation. Mail.ReadWrite does not grant permission to send mail; sending features require a separate permission review. See the [Microsoft Graph permission reference](https://learn.microsoft.com/en-us/graph/permissions-reference#mailreadwrite).
 
-<figure><img src="../../../../.gitbook/assets/o365_tenant_3.png" alt="New registration button"><figcaption></figcaption></figure>
+Review restricted mailbox access with the Exchange administrator using [RBAC for Applications](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac). Entra permission grants and Exchange RBAC grants combine: adding a scoped RBAC grant alone does not narrow an existing tenant-wide Entra grant. Have the administrator confirm the effective access to the intended mailbox before enabling the source.
 
-5. The **Register an application** screen displays. Enter the user-facing display name for the App in **Name**.
+## 3. Configure the DocBits tenant connection
 
-<figure><img src="../../../../.gitbook/assets/o365_tenant_4.png" alt="Name field for the user-facing display name of the application"><figcaption></figcaption></figure>
+Open **Settings → Import → Email Import** in the intended DocBits organisation and select **New**.
 
-6. Select one of the following account types depending on your needs:
+<figure><img src="../../../../.gitbook/assets/dbdc-198-email-import-list-en-20261030.png" alt="Current English Email Import section with New, the import-log control and table headings; table data and the generated inbound address are covered."><figcaption><p>New opens the email setup wizard. Existing table data and the generated inbound address are covered in this documentation image.</p></figcaption></figure>
 
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**
-* **Accounts in any organizational directory (Any Azure AD directory Multitenant)**
+Select **OAuth Office365 - Tenant** under **Protocol** and choose **Document Routing** for the intended destination. Complete the tenant fields supplied by your administrator:
 
-<figure><img src="../../../../.gitbook/assets/o365_tenant_5.png" alt="Supported account types with the multitenant and personal Microsoft accounts option selected"><figcaption></figcaption></figure>
+| DocBits field | Enter |
+| --- | --- |
+| Tenant ID | Directory (tenant) ID of the intended Entra tenant. |
+| Client App ID | Application (client) ID of the registered application. |
+| Client App Value | The client secret Value from that registration. |
+| Tenant Type | The cloud environment for the tenant, such as Commercial or GCC High. |
 
-7. Leave the option **Redirect URI (optional)** as is.
+<figure><img src="../../../../.gitbook/assets/dbdc-198-email-tenant-wizard-en-20261030.png" alt="Current English wizard with OAuth Office365 - Tenant, DocBits routing, three blank credential fields, Commercial tenant type, Test connection and Save."><figcaption><p>The Tenant variant has its own credential form. This example uses the DocBits route and Commercial tenant type; all three credential fields are blank. Test connection and Save were not used for this documentation capture.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/o365_tenant_6.png" alt="Supported account types with the multitenant organizational directory option selected"><figcaption></figcaption></figure>
+Use **Test connection** with the authorised tenant credentials before **Save**. Testing contacts the configured service; Save submits the tenant configuration. A successful connection test does not prove that a message or document was imported. If you are only inspecting the form, use **Cancel** or the close control.
 
-8. Click **Register** to complete the App registration. This will return you to the screen for the new App.
-9. In the App screen, locate the **Application (client) ID**. Copy it to be used when configuring email import for **DocBits**.
+## 4. Verify the saved source
 
-<figure><img src="../../../../.gitbook/assets/o365_tenant_7.png" alt="Register button below the Microsoft Platform Policies notice"><figcaption></figcaption></figure>
+For an authorised rollout, use a designated test mailbox and a harmless sample attachment. After saving the source, send a test message to that mailbox, inspect the Email Import list and import logs, and confirm that the document arrives at the selected destination. Review shared-mailbox and message-move options with the administrator as needed. Record the route, mailbox and secret-expiry owner in the internal runbook without the secret.
 
-10. From left panel, select **Certificates & secrets**:
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_8.png" alt="App overview showing the Application (client) ID with a Copy to clipboard tooltip"><figcaption></figcaption></figure>
-
-11. In the **Certificates & secrets** screen, click on **+ New client secret** button under **Client secrets** section:
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_9.png" alt="Certificates & secrets entry in the left menu"><figcaption></figcaption></figure>
-
-12. In the **Add a client secret** dialog box, click the **Add** button:
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_10.png" alt="Client secrets section with the New client secret button and no secrets yet"><figcaption></figcaption></figure>
-
-It is recommended to fill in a description to identify this secret among many (as of now the limit is 2 secrets per App).
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_11.png" alt="Add a client secret dialog with description, expiry options and Add button"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Note**</mark>: Select this expiration date according to your company policy. Once expired, a new client secret will need to be created and specified for each email configuration where it was used previously.
-
-13. The newly generated client secret will be visible. Copy this client secret to be used when configuring email import for DocBits
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_12.png" alt="Client secrets list with the new secret and a Copy to clipboard button for its value"><figcaption></figcaption></figure>
-
-**Important:** Ensure that you have copied the client secret as the client secret will not display again once it is closed.
-
-14. Select **Authentication** on the left panel. This will present the **Authentication** screen on the right-hand side.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_13.png" alt="Authentication entry in the left menu"><figcaption></figcaption></figure>
-
-15. In the **Advanced settings** section, click **Yes** for **Default client type**.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_14.png" alt="Advanced settings with the Default client type toggle for treating the app as a public client"><figcaption></figcaption></figure>
-
-16. Click **Save** to confirm changes.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_15.png" alt="Authentication page toolbar with the Save button"><figcaption></figcaption></figure>
-
-17. Select **API permissions** on the left panel. This will present the API permissions screen.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_16.png" alt="API permissions entry in the left menu"><figcaption></figcaption></figure>
-
-18. By default the **User.Read** permission from **Microsoft Graph** is present, leave this as is.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_17.png" alt="API permissions list with the default Microsoft Graph User.Read delegated permission"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Note**</mark>: This is a required permission. If this permission is not available, then add the permission with the steps mentioned below for **Mail.ReadWrite** permission.
-
-19. Click **+ Add a permission**.This will open the **Request API permissions** panel.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_18.png" alt="Configured permissions section with the Add a permission button"><figcaption></figcaption></figure>
-
-20. Click **Microsoft Graph**.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_19.png" alt="Request API permissions panel with Microsoft Graph selected"><figcaption></figcaption></figure>
-
-21. From the two sub-categories, select **App Permissions**.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_20.png" alt="Microsoft Graph permission types with Application permissions highlighted"><figcaption></figcaption></figure>
-
-22. Type **Mail.ReadWrite** in the search box. Select the **Mail.ReadWrite** checkbox for the permission.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_21.png" alt="Permission search for Mail.ReadWrite with the permission checkbox"><figcaption></figcaption></figure>
-
-23. This will enable the **Add permissions** button at the bottom of the panel. Click **Add permissions**.
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_22.png" alt="Mail.ReadWrite checked and the Add permissions button enabled"><figcaption></figcaption></figure>
-
-24. This will add the **Mail.ReadWrite** permission to the list of **Configured permissions** for the App.
-
-<mark style="color:red;">**Note**</mark>: Administrator permissions may be required. The administrator will have to authorize the App for using these permissions. Once authorized the granted status will be indicated as follows:
-
-<figure><img src="../../../../.gitbook/assets/o365_tenant_23.png" alt="Configured permissions list with Mail.ReadWrite and User.Read and the grant admin consent button"><figcaption></figcaption></figure>
+The documentation check covered the current English menu path, list and blank Tenant wizard. No Entra application, credential, permission, mailbox or import source was created or changed. No connection, tenant authentication or mail-import test was performed. Use the linked Microsoft instructions for its current administration interface.

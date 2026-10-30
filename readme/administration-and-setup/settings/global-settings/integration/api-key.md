@@ -26,5 +26,5 @@ Estos son los valores que necesita su proveedor de identidad para permitir que l
 Configure DocBits para que use su proveedor de identidad (IdP) externo para el inicio de sesión. Consulte [Configuración de inicio de sesión único (SSO)](configuring-single-sign-on-sso/) para configurar estos valores. La guía detallada "Identity Service Provider Configuration" está disponible actualmente solo en inglés: [abrir la guía en inglés](https://docs.docbits.com/administration-and-setup/settings/global-settings/integration/identity-service-provider-configuration).
 
 * **ID de inquilino:** El identificador de inquilino de su proveedor de identidad, que se usa cuando DocBits se integra con servicios en la nube que gestionan el acceso por inquilino.
-* **Subir archivo:** Sube el archivo de metadatos o de configuración que ha recibido de su proveedor de identidad.
-* **Configurar:** Guarda la configuración y aplica el archivo subido. Introduzca primero el ID de inquilino o suba el archivo y, a continuación, haga clic en **Configurar**.
+* **Subir archivo:** Seleccione el archivo XML de metadatos proporcionado por su proveedor de identidad.
+* **Configurar:** Después de seleccionar el archivo XML, haga clic en Configurar para subirlo y guardar la configuración del proveedor de identidad.

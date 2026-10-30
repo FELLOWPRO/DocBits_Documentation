@@ -8,9 +8,23 @@ Los administradores pueden usar **Scripts** para gestionar las reglas de procesa
 2. En el tipo de documento que quiera gestionar, seleccione **Guiones**. La página muestra la lista de scripts de ese tipo de documento.
 3. Busque por nombre o use **Todo**, **Activo** e **Inactivo** para acotar la lista. También puede ordenarla por nombre o por fecha de modificación.
 
-Cada tarjeta muestra el nombre del script, el disparador, la versión y el estado. El lápiz abre el editor; el icono de copiar duplica el script. **Nuevo** abre el editor para crear un script nuevo.
+Cada tarjeta muestra el nombre del script, su orden de ejecución como una etiqueta numerada, el disparador, la versión y el estado. El lápiz abre el editor; el icono de copiar duplica el script. **Nuevo** abre el editor para crear un script nuevo.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list-es.png" alt="Lista de scripts ordenada por orden de ejecución; cada tarjeta muestra junto al nombre una etiqueta numerada con el orden de ejecución"><figcaption><p>La etiqueta numerada de cada tarjeta es el orden de ejecución del script.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc654-script-scripts-list-inactive-es-20261011.png" alt="Lista de scripts del tipo de documento Factura con un ejemplo inactivo y los filtros Todo, Activo e Inactivo"><figcaption><p>Compruebe el estado a la derecha de la tarjeta del script antes de cambiarlo.</p></figcaption></figure>
+
+## Definir el orden de ejecución
+
+El campo **Execution order** controla el orden en que se ejecutan los scripts: los números más bajos se ejecutan primero. El campo mantiene la etiqueta en inglés también en la interfaz en español.
+
+1. Abra el script en el editor.
+2. Introduzca un número entero a partir de 0 en el campo **Execution order**. Deje el campo vacío para mantener 0.
+3. Guarde el script. Las letras, los decimales y los números negativos se rechazan con un mensaje de error en el campo y no se guarda nada.
+
+Si cambia el orden de ejecución y después activa una versión, DocBits guarda primero el script y solo activa la versión cuando ese guardado se ha realizado correctamente.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor-es.png" alt="Editor de scripts con el campo Execution order a la derecha del selector del disparador"><figcaption><p>El orden de ejecución en el editor de scripts.</p></figcaption></figure>
 
 ## Activar o desactivar un script
 

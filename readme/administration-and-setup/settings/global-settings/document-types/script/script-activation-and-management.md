@@ -8,9 +8,23 @@ Administratorzy mogą używać **Skryptów** do zarządzania regułami przetwarz
 2. Dla typu dokumentu, którym chcesz zarządzać, wybierz **Skrypty**. Strona wyświetla listę skryptów tego typu dokumentu.
 3. Szukaj według nazwy lub zawęź listę, używając opcji **Wszystko**, **Aktywny** i **Nieaktywny**. Listę można też sortować według nazwy lub daty modyfikacji.
 
-Każda karta pokazuje nazwę skryptu, wyzwalacz, wersję i status. Ikona ołówka otwiera edytor; ikona kopiowania duplikuje skrypt. **Nowy** otwiera edytor dla nowego skryptu.
+Każda karta pokazuje nazwę skryptu, jego kolejność wykonania jako numerowaną etykietę, wyzwalacz, wersję i status. Ikona ołówka otwiera edytor; ikona kopiowania duplikuje skrypt. **Nowy** otwiera edytor dla nowego skryptu.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list-pl.png" alt="Lista skryptów posortowana według kolejności wykonania; każda karta pokazuje obok nazwy numerowaną etykietę z kolejnością wykonania"><figcaption><p>Numerowana etykieta na każdej karcie to kolejność wykonania skryptu.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc658-script-scripts-list-inactive-pl-20261011.png" alt="Lista skryptów dla typu dokumentu Faktura z nieaktywnym przykładem dokumentacji oraz filtrami Wszystko, Aktywny i Nieaktywny"><figcaption><p>Sprawdź status po prawej stronie karty skryptu, zanim coś zmienisz.</p></figcaption></figure>
+
+## Ustawianie kolejności wykonania
+
+Pole **Execution order** określa kolejność uruchamiania skryptów: niższe liczby są uruchamiane jako pierwsze. Etykieta pola pozostaje angielska również w polskim interfejsie.
+
+1. Otwórz skrypt w edytorze.
+2. Wpisz liczbę całkowitą od 0 w polu **Execution order**. Pozostaw pole puste, aby zachować 0.
+3. Zapisz skrypt. Litery, liczby dziesiętne i liczby ujemne są odrzucane z komunikatem błędu przy polu i nic nie zostaje zapisane.
+
+Jeśli zmienisz kolejność wykonania, a następnie aktywujesz wersję, DocBits najpierw zapisuje skrypt i aktywuje wersję dopiero wtedy, gdy ten zapis się powiedzie.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor-pl.png" alt="Edytor skryptu z polem Execution order po prawej stronie selektora wyzwalacza"><figcaption><p>Kolejność wykonania w edytorze skryptu.</p></figcaption></figure>
 
 ## Włączanie lub wyłączanie skryptu
 

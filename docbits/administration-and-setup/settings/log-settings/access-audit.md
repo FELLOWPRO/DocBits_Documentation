@@ -8,7 +8,7 @@ Company information, subscription plan and audit logs in DocBits
 
 The video shows the company information and preferences, the subscription plan, the login activity and the audit logs.
 
-<figure><img src="../../../.gitbook/assets/access_audit.png" alt="Audit Logs with audit trail disabled; the page shows the organization switch, filters, Enable Now, Auto-refresh, Refresh, and Export"><figcaption><p>The English Sandbox page before audit logging is enabled.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/access_audit.png" alt="Example audit log with logging enabled, filters, summary cards and recorded events."><figcaption><p>An English audit-log example with logging enabled, filters, summary cards and recorded events.</p></figcaption></figure>
 
 Access Audit records who created, changed, or deleted a resource and when. Open **Settings → Activity Logging → Access Audit** to review the log. Only enable the service for an organization when you intend to collect audit events.
 

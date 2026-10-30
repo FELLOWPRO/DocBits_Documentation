@@ -8,19 +8,19 @@ Company information, subscription plan and audit logs in DocBits
 
 The video shows the company information and preferences, the subscription plan, the login activity and the audit logs.
 
-<figure><img src="../../../.gitbook/assets/access_audit.png" alt="Example audit log with logging enabled, filters, summary cards and recorded events."><figcaption><p>An English audit-log example with logging enabled, filters, summary cards and recorded events.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-11-audit-overview-en-20261030.png" alt="English audit log controls with the service enabled, filters and summary cards; individual event rows are outside the view"><figcaption><p>The audit trail service is already enabled in this example. The summary cards describe the selected time range.</p></figcaption></figure>
 
 Access Audit records who created, changed, or deleted a resource and when. Open **Settings → Activity Logging → Access Audit** to review the log. Only enable the service for an organization when you intend to collect audit events.
 
 ## When audit logging is off
-
-<figure><img src="../../../.gitbook/assets/access_audit_disabled_dialog.png" alt="Audit Trail is Disabled dialog with Close and Enable Audit Trail buttons"><figcaption><p>The dialog explains what will be recorded before you turn the service on.</p></figcaption></figure>
 
 The first visit in a browser session may show **Audit Trail is Disabled**. **Close** dismisses the dialog and leaves audit logging off. **Enable Audit Trail** turns it on for the current organization. On the page behind the dialog, **Enable Now** and the **Enable Audit Trail Service** switch also turn it on. These controls change the organization setting; they do not merely preview the feature.
 
 While the service is off, the filters and log table cannot show events. The empty state explains how to enable logging. After enabling, use the switch to disable it again if required. Events are available only when the service is enabled and has collected data.
 
 ## Find an event
+
+<figure><img src="../../../.gitbook/assets/dbdc-11-audit-filters-en-20261030.png" alt="Detail of the English Time Range, action type, Resource Type and Search logs filters"><figcaption><p>Time range, action type, resource type and Search logs filters.</p></figcaption></figure>
 
 | Control | What it does |
 |---|---|

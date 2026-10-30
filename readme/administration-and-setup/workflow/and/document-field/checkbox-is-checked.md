@@ -1,46 +1,40 @@
 # La casilla de verificación está marcada
 
-## Cuándo y dónde utilizarla
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_checkbox_is_v2-es-es.png" alt="La casilla de verificación está marcada, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
-Utilice esta condición cuando una acción posterior dependa de una casilla de verificación del documento. Por ejemplo, permita continuar una factura únicamente cuando su indicador de revisión esté marcado.
+## Propósito:
 
-En el diseñador de flujos de trabajo, añada la tarjeta en **Y… → Campo del documento**. La tarjeta compara el valor del campo al ejecutarse el flujo; no supervisa continuamente un campo del ERP ni modifica la casilla.
+Esta tarjeta de flujo de trabajo comprueba si un campo de casilla de verificación del documento está marcado o desmarcado. Se puede utilizar para que un flujo de trabajo continúe solo después de que se haya establecido un indicador en el documento, por ejemplo un indicador de revisión.
 
-## Requisitos
+## Componentes de la tarjeta:
 
-El tipo de documento debe disponer de un campo booleano para la casilla. Utilice su identificador técnico exacto. En este ejemplo se usa `validation_complete`; sustitúyalo por el campo correspondiente de su organización.
+1. **Nombre del campo**
+   * **Descripción:** El nombre técnico del campo de casilla de verificación del documento.
+   * **Detalle:** El campo debería ser un campo de casilla de verificación (booleano) del tipo de documento.
+2. **Booleano**
+   * **Descripción:** El estado que debería tener la casilla de verificación.
+   * **Opciones:**
+     * **Verdadero:** La casilla de verificación debería estar marcada.
+     * **Falso:** La casilla de verificación debería estar desmarcada.
 
-## Configurar la tarjeta
+## Funcionalidad:
 
-1. Seleccione **La casilla … está marcada** dentro de **Campo del documento**.
-2. En **Nombre del campo**, introduzca `validation_complete` y confirme el valor.
-3. En **Boolean**, seleccione **Verdadero** para exigir una casilla marcada. Seleccione **Falso** si desea comprobar que no está marcada.
+* **Evaluación de la condición:** Cuando el flujo de trabajo llega a la tarjeta, esta lee el valor actual del campo en el documento y lo compara con **Booleano**. La tarjeta no vigila el campo a lo largo del tiempo y no lo modifica.
+  * Un valor de casilla de verificación vacío cuenta como desmarcado.
+  * Si no se ha seleccionado ningún valor en **Booleano**, la tarjeta comprueba si la casilla de verificación está desmarcada.
+  * Si el campo no es un campo de casilla de verificación, la tarjeta lo indica en el registro del flujo de trabajo y aun así compara su valor.
+* **Ejecución de la acción:**
+  * **Condición verdadera:**\
+    Si el estado de la casilla de verificación coincide con **Booleano**, el flujo de trabajo continúa con las siguientes tarjetas.
+  * **Condición falsa:**\
+    Si no coincide, el flujo de trabajo se detiene con una condición no cumplida.
+* **Datos que faltan:** Si el campo no existe en el documento, la tarjeta no evalúa la condición. Informa de que el campo no se ha encontrado en el documento, lo que es un resultado distinto de una casilla de verificación desmarcada.
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6ae1b0fb29dd-es.png" alt="Tarjeta de condición de casilla en español, antes de seleccionar el campo y el valor booleano." width="563"><figcaption><p>Tarjeta de condición de casilla en español, antes de seleccionar el campo y el valor booleano.</p></figcaption></figure>
+## Configuración:
 
-## Ejemplo práctico: continuar después de una revisión
+* La tarjeta se puede añadir como condición And desde la categoría **Campo del documento**. A continuación se introduce el nombre técnico del campo de casilla de verificación en **Nombre del campo** y se selecciona **Verdadero** o **Falso**.
+* Para comprobar la configuración, se puede utilizar **Tarjeta de prueba** en el menú de la tarjeta del Workflow Builder con un documento con la casilla marcada, otro con la casilla desmarcada y otro sin el campo.
 
-**Cuándo utilizarla:** una factura requiere una revisión previa y el proceso deja constancia de ella en `validation_complete`.
+## Conclusión:
 
-**Dónde colocarla:** en las condiciones **Y…**, antes de la acción de seguimiento configurada en **Entonces…**. La acción posterior y el evento que inicia el flujo se configuran por separado.
-
-**Configuración del ejemplo:** campo `validation_complete`, comparación **Verdadero** (`true`), tarjeta versión 2.
-
-<figure><img src="../../../../.gitbook/assets/workflow-card-checkbox-v2-configured-es-20261025.png" alt="Configuración del ejemplo, versión 2: campo validation complete y comparación Verdadero." width="651"><figcaption><p>Configuración del ejemplo, versión 2: campo validation complete y comparación Verdadero.</p></figcaption></figure>
-
-Los resultados esperados para esta configuración son:
-
-| Valor del campo en el documento | Resultado de la condición |
-| --- | --- |
-| Casilla existente y marcada (`true`) | La condición se cumple. |
-| Casilla existente y sin marcar (`false`) | La condición no se cumple. |
-| Casilla existente con valor vacío (`None`) | Se interpreta como no marcada; la condición no se cumple. |
-| El campo no existe en el documento | Resultado `NOT_FOUND_IN_DOCUMENT`; no equivale a una casilla existente sin marcar. |
-
-Si selecciona **Falso**, una casilla existente sin marcar cumple la condición y una marcada no la cumple. Un campo ausente sigue siendo un error distinto.
-
-## Comprobar antes de activar
-
-Compruebe que el campo seleccionado es booleano y que corresponde al tipo de documento utilizado. Pruebe un documento con la casilla marcada, otro sin marcar y el caso de un campo ausente. Revise el resultado de la tarjeta y el recorrido posterior del flujo en cada caso.
-
-La tarjeta comprueba el estado de la casilla; el proceso anterior debe establecer el indicador de revisión. Marcarla automáticamente sin efectuar la revisión no demuestra que esta se haya completado.
+La tarjeta de flujo de trabajo «Checkbox is checked» convierte una casilla de verificación del documento en una condición del flujo de trabajo. Así, un flujo de trabajo puede esperar a un paso manual, como una revisión completada, antes de que se ejecuten las acciones siguientes.

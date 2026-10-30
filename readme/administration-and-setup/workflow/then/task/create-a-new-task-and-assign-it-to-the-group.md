@@ -1,6 +1,10 @@
 # Crea una nueva tarea y asígnala al grupo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-502380adb65e-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v2-es-es.png" alt="Crea una nueva tarea y asígnala al grupo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v3-es-es.png" alt="Crea una nueva tarea y asígnala al grupo, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v4-es-es.png" alt="Crea una nueva tarea y asígnala al grupo, Versión 4" width="634"><figcaption><p>Versión 4</p></figcaption></figure>
 
 ## **Propósito:**
 

@@ -1,5 +1,7 @@
 # Asignar secuencialmente a grupos
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_group_sequential_v2-es-es.png" alt="Asignar secuencialmente a grupos, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
 ## **Propósito**
 
 La tarjeta de flujo de trabajo "**Asignar el documento secuencialmente a los grupos**" posibilita la asignación secuencial de documentos a uno o varios grupos seleccionados. El valor de prioridad determina el orden de asignación, donde los números más bajos representan una mayor prioridad.

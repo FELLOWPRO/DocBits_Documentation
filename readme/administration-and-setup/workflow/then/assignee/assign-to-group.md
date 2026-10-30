@@ -1,6 +1,8 @@
 # Asignar al grupo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v2-es-es.png" alt="Asignar al grupo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-es-es.png" alt="Asignar al grupo, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## Propósito:
 

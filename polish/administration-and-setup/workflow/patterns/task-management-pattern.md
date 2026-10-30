@@ -792,7 +792,7 @@ Day 5: IF still not completed:
 
 * Dodaj powiadomienia e-mail: [Przewodnik po e-mailach](../then/action/send-email-groups-guide.md)
 * Wdróż złożony routing: [Wzorzec logiki decyzyjnej](decision-logic-pattern.md)
-* Rozwiąż błędy zadań: [Obsługa błędów](task-management-pattern.md) powyżej
+* Rozwiąż błędy zadań: [Obsługa błędów](task-management-pattern.md#obsluga-bledow) powyżej
 
 ***
 

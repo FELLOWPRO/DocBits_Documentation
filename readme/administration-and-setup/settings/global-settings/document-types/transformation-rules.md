@@ -28,10 +28,6 @@ Dönüşüm kuralları, kuruluşların eskiden "bu alanı her zaman kırp", "bu 
 | Satın alma siparişi numarasında, siparişte bulunmayan baştaki sıfırlar veya bir önek var | *Satın Alma Siparişi* başlık alanı: Soldan `0` karakterini buda veya Takmak: öneki çıkar |
 | Kalem numaraları, satın alma siparişi satırlarından büyük/küçük harf, boşluk veya önek bakımından farklı | *ITEM_NUMBER* tablo sütunu: Takmak: öneki çıkar → Dezenfekte edin → BÜYÜK HARF |
 
-{% hint style="info" %}
-Özellik beta aşamasındayken, aşağıda açıklanan ayarlar yalnızca **Belge Türleri** ayar sayfası adresin sonuna `?beta=true` eklenerek açıldığında görünür.
-{% endhint %}
-
 ## Dönüşüm kurallarını etkinleştirme
 
 Dönüşüm kuralları **belge türü başına** bir **kuruluş yöneticisi** tarafından açılır.

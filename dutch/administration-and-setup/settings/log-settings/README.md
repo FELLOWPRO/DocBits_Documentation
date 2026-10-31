@@ -19,11 +19,13 @@ Bovenaan de pagina verwijst een banner naar het **Analysedashboard** voor grafie
 
 ## Logtabel
 
+<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-nl-20261031.png" alt="Werkelijke Nederlandstalige logweergave: de kolom Dienst geeft de service aan die het logbericht heeft gegenereerd en komt overeen met het filter Dienst. Logregels en exportmetadata vallen buiten deze weergave."><figcaption><p>Werkelijke Nederlandstalige logweergave: de kolom Dienst geeft de service aan die het logbericht heeft gegenereerd en komt overeen met het filter Dienst. Logregels en exportmetadata vallen buiten deze weergave.</p></figcaption></figure>
+
 | Kolom | Beschrijving |
 |--------|-------------|
 | **Tijdstempel** | Datum en tijdstip waarop de gebeurtenis plaatsvond. Sorteerbaar. |
 | **Ernst** | Kleurgecodeerde badge: Info (blauw), Warning (geel), Error (rood), Debug (grijs). |
-| **Onderdeel** | De service of module die het logbericht heeft gegenereerd (bijv. api, auth, api-service). |
+| **Dienst** | De service of module die het logbericht heeft gegenereerd (bijv. api, auth, api-service). |
 | **Bericht** | Het volledige logbericht met details van de gebeurtenis. |
 
 De resultaten zijn gepagineerd — gebruik de bedieningselementen onderaan om door de pagina's te navigeren.

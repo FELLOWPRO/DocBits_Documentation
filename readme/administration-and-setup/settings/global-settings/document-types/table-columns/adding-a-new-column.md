@@ -24,7 +24,11 @@ Añada una columna cuando deba capturarse por línea un valor que las columnas p
 | **Select column type** | Consulte la lista de tipos anterior. |
 | **Select Table** | La tabla que recibe la columna. |
 
-4. Haga clic en **Proceed**. La columna aparece en la lista con *Read Only*, *Hidden* y *Use AI* sin marcar. Cambie esos indicadores en la lista si es necesario; consulte [Editar y eliminar columnas](editing-and-deleting-columns.md).
+4. Haga clic en **Proceder**. Un cuadro de confirmación recuerda que la nueva columna se aplica a **todas las facturas futuras de todos los proveedores**, no solo al documento abierto.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-es.png" alt="Cuadro de confirmación «¿Crear una nueva columna de tabla?» con los botones Cancelar y Crear columna"><figcaption><p>Confirme antes de que la columna se cree para todos los proveedores.</p></figcaption></figure>
+
+5. Seleccione **Crear columna** para guardar, o **Cancelar** para volver sin crear nada. La columna aparece en la lista con *Read Only*, *Hidden* y *Use AI* sin marcar. Cambie esos indicadores en la lista si es necesario; consulte [Editar y eliminar columnas](editing-and-deleting-columns.md).
 
 ## Después de añadirla
 

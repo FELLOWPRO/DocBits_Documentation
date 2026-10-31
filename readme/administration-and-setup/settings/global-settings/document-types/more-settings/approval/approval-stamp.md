@@ -1,23 +1,27 @@
 # Cachet d'approbation
 
-Un cachet d'approbation est une annotation ajoutée lors de l'approbation d'un document lorsque l'option est activée pour ce type de document. C'est utile lorsqu'une personne chargée de la validation doit voir qui a approuvé un document et quand. La page précédente montrait six captures d'écran d'une ancienne interface et présentait le cachet, l'export IDM et le téléchargement PDF comme déjà vérifiés ensemble. Vérifiez chaque résultat dans votre propre processus avant de vous y fier.
+Un cachet d'approbation est une annotation du flux d'approbation lorsque l'option est activée pour ce type de document. Il aide la personne chargée de la validation à vérifier qui a approuvé un document et quand. Vérifiez l'annotation et le résultat PDF avec une facture de test dans le processus réellement utilisé par votre organisation.
 
 ## Trouver l'option
 
-1. Avec un compte administrateur, ouvrez **Paramètres → Types de Documents**. Trouvez le type à configurer, par exemple **Facture**, et sélectionnez l'**icône d'engrenage** sur sa carte. L'engrenage ouvre **Plus de Paramètres** pour ce type de document ; **Plans** et **Champs** ouvrent d'autres éditeurs.
+1. Avec un compte administrateur, ouvrez **Types de Documents** dans les paramètres d'administration. Trouvez le type à configurer, par exemple **Facture**, et sélectionnez l'**icône d'engrenage** sur sa carte. L'engrenage ouvre **Plus de paramètres** pour ce type de document.
 
-   <figure><img src="../../../../../../.gitbook/assets/dbdc704-document-types-fr-20261011.png" alt="Page Types de Documents de DocBits en français, avec la carte Facture et son icône d'engrenage pour Plus de Paramètres"><figcaption><p>Ouvrez l'engrenage sur le type de document concerné.</p></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-86-document-type-card-fr-20261031.png" alt="Carte Facture de l'interface française actuelle avec Activer, Extraction et l'engrenage de Plus de paramètres"><figcaption><p>Carte Facture réelle dans Dev en français. L'engrenage ouvre Plus de paramètres ; aucun contrôle n'a été modifié.</p></figcaption></figure>
 
-2. Dans **Plus de Paramètres**, dépliez **Approbation et rejet**. Repérez le commutateur **Cachet d'approbation** à côté de **Approuver avant l'exportation**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation**. La capture montre l'organisation synthétique **DocBits Documentation Test A** avec le cachet **désactivé**. Elle ne montre pas de document cacheteté.
+   **Activer** contrôle la disponibilité du type de document et **Extraction** son mode d'extraction. Les liens au bas de la carte ouvrent des espaces distincts : **Plans**, **Champs**, **Tables**, **Règles de validation**, **Règles de transformation**, **Scénarios**, **Formation du modèle**, **E-Doc**, **Sous-types de documents** et **Journaux**. Les liens disponibles dépendent des modules et des réglages du type. Pour accéder au cachet, utilisez l'engrenage.
 
-   <figure><img src="../../../../../../.gitbook/assets/dbdc704-approval-stamp-fr-20261011.png" alt="Page Plus de Paramètres de la Facture en français, avec Approbation et rejet déplié et le Cachet d'approbation désactivé"><figcaption><p>Vérifiez le réglage du Cachet d'approbation pour le type de document sélectionné.</p></figcaption></figure>
+2. Dans **Plus de paramètres**, dépliez **Approbation et rejet**. Repérez **Cachet d'approbation** à côté de **Approuver avant l'exportation**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation**. L'image montre le réglage existant du cachet **désactivé** ; ce réglage peut être différent dans votre organisation. Elle ne montre pas de document approuvé.
 
-3. Activez le commutateur seulement après avoir convenu dans votre organisation du fonctionnement des approbations et des exports. Conservez une trace du réglage précédent afin de pouvoir vérifier son effet sur une facture de test.
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-86-approval-stamp-panel-fr-20261031.png" alt="Section française actuelle Approbation et rejet de Facture avec Cachet d'approbation désactivé et les autres options du flux"><figcaption><p>Vue réelle d'Approbation et rejet dans Dev en français. Les états des contrôles ont uniquement été consultés.</p></figcaption></figure>
+
+   **Approuver avant l'exportation**, **Approuver avant l'exportation V2**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation** sont des réglages du flux distincts du cachet. Les liens de conception ouvrent les éditeurs des formulaires d'approbation, d'examen ou de rejet correspondants. Il n'est pas nécessaire d'ouvrir ces éditeurs pour consulter le réglage du cachet.
+
+3. Modifiez **Cachet d'approbation** seulement après avoir convenu dans votre organisation du fonctionnement des approbations et des exports. **La modification du commutateur enregistre immédiatement le réglage.** Conservez une trace de l'état précédent afin de vérifier son effet sur une facture de test.
 
 ## Vérifier une approbation
 
-Envoyez une facture synthétique de ce type de document dans le flux d'approbation configuré. Sur l'écran **En attente d'approbation**, approuvez-la avec un compte de test autorisé. Le client web DocBits actuel vérifie l'option Cachet d'approbation lors de l'approbation et ajoute une annotation de cachet avec le nom de l'approbateur et la date. Rouvrez le document approuvé et examinez l'annotation ainsi que le PDF téléchargé que votre processus utilise réellement. Si le cachet est absent, vérifiez le type de document, le statut d'approbation, le réglage et la configuration d'export.
+Envoyez une facture synthétique de ce type de document dans le flux d'approbation configuré. À l'étape d'approbation de ce flux, approuvez-la avec un compte de test autorisé. Rouvrez le document approuvé et vérifiez que l'annotation contient le nom et la date attendus. Examinez également le PDF téléchargé que votre processus utilise réellement. Si le cachet est absent, vérifiez le type de document, le statut d'approbation, le réglage et la configuration d'export.
 
 Un cachet d'approbation est distinct de la **Deuxième approbation** et de l'**Historique de l'approbation**. Activer l'un ne prouve pas que les autres sont configurés. Les actions de téléchargement disponibles dans le tableau de bord et le format d'export IDM dépendent de l'environnement et n'ont pas été vérifiés pour cette page ; ce guide ne promet donc pas de libellés précis dans le menu de téléchargement ni de sortie IDM automatique.
 
-Les deux nouvelles captures ont été vérifiées visuellement dans le bac à sable Test A en français. Aucun commutateur n'a été modifié et aucun document n'a été approuvé ni exporté pendant cette vérification ; l'état final avec cachet nécessite une facture approuvée synthétique dédiée.
+Les deux captures montrent des vues réelles de Dev en français. Aucun commutateur n'a été modifié et aucun document n'a été approuvé ni exporté pendant cette vérification. Le résultat final avec cachet nécessite une facture synthétique approuvée dédiée au test.

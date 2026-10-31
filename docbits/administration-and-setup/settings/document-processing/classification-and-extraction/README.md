@@ -102,12 +102,14 @@ Learn more about training [here](../../../setup/document-training/training-line-
 
 **AI Table Extraction:** Uses AI to extract the table of any supplier without training. If the results for one supplier are not accurate enough, train that supplier's table; the saved rules then take precedence over the AI for that supplier.
 
-**Use Table Extraction Vision (AI):** The AI reads the page image instead of the text layer. Helps with scanned documents and tables without clear text structure; slower. The dropdown next to the switch chooses how aggressively the page image is used:
+**Use Table Extraction Vision (AI):** Choose the input for AI table extraction from a four-mode dropdown. This is a mode selection, rather than a separate on/off switch. Changing the selected mode saves the setting immediately:
 
-* **Off (text only)** – Only the text layer is used. This is the default.
+* **Off (text only)** – Only OCR text is used.
 * **Images only** – Only the page image is read.
 * **Hybrid (text and images)** – Text layer and page image are combined in the same request.
-* **Auto (decided per document)** – DocBits decides per document whether the text layer suffices.
+* **Auto (decided per document)** – DocBits chooses text only or hybrid input for each document.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-3-four-vision-options-en-20261031.png" alt="Current English Vision dropdown showing Off (text only), Images only, Hybrid (text and images) and Auto (decided per document)"><figcaption><p>The four input modes in the current English Dev menu. The menu was opened and closed without selecting a different mode; no extraction was run.</p></figcaption></figure>
 
 **Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot. When structured extraction is already enabled, the **What the AI requests** preview appears below the control and shows which fields and columns the AI will be asked for: header fields and line columns are listed with their source (requested or disabled standard fields), and the expected output mode (e.g. *strict* – no additional columns). Fields that are configured for the document type but switched off are not requested from the AI.
 
@@ -153,7 +155,7 @@ Every toggle in this section is stored as an organization preference. Use the ke
 | Require Exact Match for Amount Comparison | `AMOUNTS_NO_ROUNDING` | `true` / `false` |
 | Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (default), `vision`, `hybrid`, `auto` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off`, `vision`, `hybrid`, `auto`; when unset, the legacy preference determines the mode |
 | Use Table Extraction Vision (AI) – legacy switch | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; effectively means `vision` |
 | Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |

@@ -12,38 +12,42 @@ As listas de valores contêm opções predefinidas para os campos dos documentos
 
 ## Abrir as listas
 
-Abra os dados mestre e as listas de valores nas definições. Selecione uma lista para consultar os valores. Os nomes configurados estão ocultos.
+Nas definições, abra os dados mestre e selecione as listas de valores. O campo **Listas de pesquisa**, à esquerda, permite encontrar uma lista. Selecione o nome para abrir os valores à direita. Uma pasta com uma estrela identifica uma lista do sistema; o número junto ao nome indica a quantidade de valores carregados.
 
 <figure><img src="../../../.gitbook/assets/s150-list_of_values_1-pt.png" alt="Listas de valores com nomes configurados ocultos."><figcaption><p>Listas de valores com nomes configurados ocultos.</p></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/dbdc-36-selected-system-list-pt-20261031.png" alt="A lista do sistema selecionada abre a tabela de valores. A-Z e Z-A ordenam os valores; Adicionar linha abre o formulário. Valores e nomes próprios estão ocultos; os nomes de listas do sistema, como ISO Currency, são dados existentes."><figcaption><p>A lista do sistema selecionada abre a tabela de valores. A-Z e Z-A ordenam os valores; Adicionar linha abre o formulário. Valores e nomes próprios estão ocultos; os nomes de listas do sistema, como ISO Currency, são dados existentes.</p></figcaption></figure>
+
 ## Criar uma lista
 
-1. Escolha a opção de criar uma lista.
-2. Introduza um nome e limite a lista a uma suborganização, se necessário.
-3. Verifique os dados antes de guardar.
+1. Selecione **Novo** acima dos nomes das listas.
+2. Introduza o **Nome** e, se necessário, selecione **Suborganizações** para limitar o âmbito da lista.
+3. **Salvar** cria a lista. O **X** fecha a janela sem criar uma lista.
 
-As listas predefinidas são fornecidas pelo sistema e não podem ser eliminadas. Antes de eliminar uma lista própria, verifique os campos que a utilizam: a ação pode ter efeito imediato.
+<figure><img src="../../../.gitbook/assets/dbdc-36-new-list-pt-20261031.png" alt="Novo abre a janela vazia Criar nova lista com Nome, Suborganizações, X e Salvar. Esta vista não apresenta uma lista guardada."><figcaption><p>Novo abre a janela vazia Criar nova lista com Nome, Suborganizações, X e Salvar. Esta vista não apresenta uma lista guardada.</p></figcaption></figure>
+
+Para eliminar uma lista criada pela sua organização, utilize a opção de eliminação no menu de três pontos junto ao nome e confirme apenas a lista pretendida. As listas do sistema não apresentam esse menu de eliminação e não podem ser eliminadas.
 
 ## Adicionar e alterar valores
 
-Abra a lista pretendida e adicione uma linha. Verifique cada propriedade:
+1. Selecione a lista à esquerda e depois **Adicionar linha** acima da tabela.
+2. Introduza o **Valor** técnico e, se necessário, a **Suborganização**.
+3. Adicione os **Sinônimos** pretendidos. Confirme cada um com **Enter** para o adicionar ao campo.
+4. Em **Traduções**, selecione **Linguagem** e preencha um **Rótulo** não vazio. Um novo valor exige pelo menos uma tradução completa.
+5. **Salvar** cria o valor. **Cancelar** ou o **X** fecha o formulário sem guardar.
 
-| Propriedade | Significado |
-| --- | --- |
-| Valor | Valor técnico guardado pelo DocBits, igual para todos os idiomas. |
-| Rótulo | Texto do idioma selecionado. Sem rótulo para o idioma ativo, aparece o valor técnico. |
-| Idioma | Idioma do rótulo. |
-| Suborganizações | Âmbito de disponibilidade; sem restrição, o valor aplica-se a todas as suborganizações. |
-| Sinónimos | Variantes do valor, como EURO e € para EUR. Confirme cada sinónimo no campo previsto. |
+<figure><img src="../../../.gitbook/assets/dbdc-36-add-row-pt-20261031.png" alt="Adicionar linha abre Criar valores abaixo da tabela: Valor, Suborganização, Sinônimos, Linguagem, Rótulo e Adicionar tradução. Salvar cria o valor; Cancelar descarta o rascunho não guardado."><figcaption><p>Adicionar linha abre Criar valores abaixo da tabela: Valor, Suborganização, Sinônimos, Linguagem, Rótulo e Adicionar tradução. Salvar cria o valor; Cancelar descarta o rascunho não guardado.</p></figcaption></figure>
 
-Verifique todas as propriedades antes de guardar. As ações de edição e eliminação dependem das permissões e do valor selecionado. Os valores do sistema não podem ser eliminados.
+Para editar um valor, selecione a linha ou a opção de edição em **Ações**. Os campos protegidos permanecem apenas de leitura; o valor técnico também pode estar bloqueado quando já existem traduções. **Cancelar** descarta alterações não guardadas.
+
+A opção de duplicação no menu da linha cria outro valor. Para copiar vários valores, selecione as respetivas caixas e utilize o botão de cópia acima da tabela. A eliminação está disponível para valores da sua organização e remove o valor selecionado; os valores do sistema não apresentam esta ação. Uma lista do sistema pode conter valores protegidos e valores da sua organização.
 
 ## Importar CSV
 
-Abra as ações da lista e escolha a importação CSV. Selecione o ficheiro e o separador correto, como `;` ou `,`. Verifique a estrutura e o conteúdo antes de importar.
+Esta interface não oferece a antiga importação CSV a partir do menu **Ações**. Os passos antigos de carregamento de CSV não se aplicam a este ecrã; utilize **Adicionar linha** para introduzir valores aqui.
 
 ## Adicionar traduções
 
-Adicione um idioma ao valor e introduza o rótulo pretendido. Repita para os outros idiomas necessários, verifique tudo e guarde. Pode adicionar rótulos traduzidos aos valores do sistema que não podem ser eliminados.
+No formulário do valor, selecione **Linguagem** e introduza o **Rótulo**. Utilize **Adicionar tradução** para acrescentar outro idioma e o respetivo rótulo. Preencha ou remova as linhas de tradução adicionais vazias antes de guardar. Quando uma linha de tradução pode ser removida, o respetivo caixote do lixo retira-a primeiro do formulário; guarde para aplicar a alteração.
 
-Um rótulo traduzido não altera o valor técnico. Após as alterações pretendidas, verifique o campo na validação e no idioma escolhido. A imagem mostra a consulta das listas e não comprova alterações guardadas nem uma importação executada.
+O texto apresentado pode variar conforme o idioma, mas o valor técnico permanece igual. Sem um rótulo para o idioma ativo, aparece o valor técnico. Os valores do sistema e as traduções herdadas podem ter campos protegidos; altere apenas dados da sua organização cujos campos sejam editáveis.

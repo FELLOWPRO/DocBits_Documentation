@@ -2,7 +2,7 @@
 
 Met een API-aanvraag kan een ander programma informatie in DocBits lezen of bijwerken. Begin met een alleen-lezen-aanvraag, zodat u de verbinding kunt controleren zonder documenten te wijzigen.
 
-## Voordat u een aanvraag verzendt
+## Voordat u een aanvraag verzendt <a href="#voordat-u-een-aanraag-verzendt" id="voordat-u-een-aanraag-verzendt"></a>
 
 1. Vraag een organisatiebeheerder om toegang en [maak een API-sleutel](api-key-management.md) voor de integratie. Bewaar de sleutel in een kluis voor geheime gegevens; zet hem niet in een screenshot, document of bronbestand.
 2. Open de [actuele Sandbox API-referentie](https://sandbox.api.docbits.com/docs). Daar staan de beschikbare bewerkingen, de vereiste waarden en voorbeeldantwoorden voor die omgeving. Gebruik de referentie van uw eigen omgeving zodra u de Sandbox verlaat.

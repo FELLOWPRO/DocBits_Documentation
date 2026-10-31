@@ -24,7 +24,11 @@ Fügen Sie eine Spalte hinzu, wenn pro Position ein Wert erfasst werden muss, de
 | **Select column type** | Siehe die Typenliste oben. |
 | **Select Table** | Die Tabelle, die die Spalte erhält. |
 
-4. Klicken Sie auf **Proceed**. Die Spalte erscheint in der Liste, wobei *Read Only*, *Hidden* und *Use AI* nicht gesetzt sind. Schalten Sie diese Flags bei Bedarf in der Liste um, siehe [Spalten bearbeiten und löschen](editing-and-deleting-columns.md).
+4. Klicken Sie auf **Weiter**. Ein Bestätigungsdialog weist darauf hin, dass die neue Spalte für **alle zukünftigen Rechnungen aller Lieferanten** gilt, nicht nur für das gerade geöffnete Dokument.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-de.png" alt="Bestätigungsdialog „Neue Tabellenspalte anlegen?“ mit den Schaltflächen Abbrechen und Spalte anlegen"><figcaption><p>Bestätigung, bevor die Spalte für alle Lieferanten angelegt wird.</p></figcaption></figure>
+
+5. Wählen Sie **Spalte anlegen**, um zu speichern, oder **Abbrechen**, um ohne Änderung zurückzugehen. Die Spalte erscheint in der Liste, wobei *Read Only*, *Hidden* und *Use AI* nicht gesetzt sind. Schalten Sie diese Flags bei Bedarf in der Liste um, siehe [Spalten bearbeiten und löschen](editing-and-deleting-columns.md).
 
 ## Nach dem Hinzufügen
 

@@ -5,3 +5,8 @@ Korzystaj ze strony [Formaty eDocs, wersje i przewodniki krajowe](../supported-e
 Obejmuje ona rodziny formatów, składnię XML, wersje publikacji, profile biznesowe oraz sprawdzone komponenty klasyfikacji, Transformation, Preview i Extraction Paths. Otwórz przewodnik krajowy, aby sprawdzić dokładne oznaczenia oraz dostępne zrzuty ekranu i filmy.
 
 Wpisy katalogowe opisują dostępną konfigurację. Sprawdź obowiązujące reguły organizacji i przetestuj reprezentatywne pliki źródłowe, zanim zaczniesz polegać na danym formacie. Przetwarzanie plików, walidacja prawna i transmisja sieciowa wymagają osobnych kontroli.
+
+## Odnośniki do wersji
+
+- [ZUGFeRD 2.5](../supported-electronic-documents/zugferd-2-5.md)
+- [Factur-X 1.09 / ZUGFeRD 2.5](../supported-electronic-documents/facturx-1-09-zugferd-2-5.md)

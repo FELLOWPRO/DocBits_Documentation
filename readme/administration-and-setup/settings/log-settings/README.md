@@ -19,11 +19,13 @@ En la parte superior de la página, un banner enlaza con el **Panel de análisis
 
 ## Tabla de registros
 
+<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-es-20261031.png" alt="Registro de actividad en la interfaz española: las columnas son Marca de tiempo, Gravedad, Servicio y Mensaje. Servicio identifica el servicio que genera el registro y coincide con el filtro Servicio. Las entradas y los metadatos de exportación quedan fuera de esta vista."><figcaption><p>Registro de actividad en la interfaz española: las columnas son Marca de tiempo, Gravedad, Servicio y Mensaje. Servicio identifica el servicio que genera el registro y coincide con el filtro Servicio. Las entradas y los metadatos de exportación quedan fuera de esta vista.</p></figcaption></figure>
+
 | Columna | Descripción |
 |--------|-------------|
 | **Marca de tiempo** | Fecha y hora en que ocurrió el evento. Se puede ordenar. |
 | **Gravedad** | Insignia de color: Info (azul), Warning (amarillo), Error (rojo), Debug (gris). |
-| **Componente** | El servicio o módulo que generó el registro (por ejemplo, api, auth, api-service). |
+| **Servicio** | El servicio o módulo que generó el registro (por ejemplo, api, auth, api-service). |
 | **Mensaje** | El mensaje de registro completo con los detalles del evento. |
 
 Los resultados están paginados: utilice los controles de la parte inferior para navegar por las páginas.

@@ -13,22 +13,30 @@ Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte confi
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Frankrijk / Duitsland |
-| **Documenttypen** | Factuur, Creditnota |
-| **Formaat** | CII (ingesloten in PDF/A-3) |
+| **Documenttypen** | Factuur, creditnota (controleer de daadwerkelijke toewijzing) |
+| **Formaat** | CII-XML ingesloten in een PDF/A-3 |
 | **Standaard** | Factur-X 1.09 / ZUGFeRD 2.5 |
 | **Gebaseerd op** | EN 16931 |
 
-Factur-X 1.09 is de Franse publicatie die equivalent is aan ZUGFeRD 2.5 (gezamenlijke FeRD/FNFE-MPE-publicatie, juni 2026). De CII-XML gebruikt de UN/CEFACT-basis D22B, die achterwaarts compatibel is met D16B, waardoor het volledige extractie- en transformatiecontract van Factur-X 1.08 / ZUGFeRD 2.4 van toepassing blijft. Het EXTENDED-profiel voegt nieuwe velden toe voor betaalmiddelen en BIC, een derde ontvanger (factor) en de reden voor btw-vrijstelling van kortingen/toeslagen.
+ZUGFeRD 2.5 en Factur-X 1.09 zijn gelijkwaardige publicaties. Het hybride formaat sluit CII-XML D22B in een PDF/A-3 in; UBL is niet de XML-syntaxis van dit formaat. Raadpleeg de [FeRD-publicatiereferentie](https://www.ferd-net.de/publikationen-produkte/publikationen/detailseite/zugferd-25-english).
 
-Alle vijf profielen worden ondersteund: MINIMUM, BASIC WL, BASIC, EN 16931 (COMFORT) en EXTENDED.
+De standaard definieert de profielen MINIMUM, BASIC WL, BASIC, EN16931 en EXTENDED. Een profielnaam in de catalogus bewijst geen automatische herkenning of volledige dekking van alle velden. MINIMUM en BASIC WL kunnen regelgegevens weglaten die voor uw integratie nodig zijn.
+
+Deze pagina beschrijft de publicatie van juni 2026. De [latere publicatie Factur-X 1.09.2 / ZUGFeRD 2.5.2](https://fnfe-mpe.org/factur-x/factur-x_en/) moet afzonderlijk worden geïdentificeerd; alleen de familieaanduiding `1p0` is onvoldoende.
 
 ## Ondersteuningsstatus
 
-| Component | Status |
-|-----------|--------|
-| Voorbeeld | ✅ Ondersteund |
-| Veldextractie | ✅ Ondersteund |
-| Transformatie | ✅ Ondersteund |
+De controle van de ontwikkelcatalogus op 31 oktober 2026, uitsluitend via leesacties, toonde `FACTURX 1.09 - ZUGFERD 2.5` voor `INVOICE`.
+
+| Component | Waargenomen configuratie |
+|-----------|--------------------------|
+| Voorbeeldweergave | `PREVIEW` (XSLT) |
+| Veldextractie | `EXTRACTION_PATHS` (JSON) |
+| Transformatie | `TRANSFORMATION` (XSLT) |
+
+Deze vermeldingen bevestigen beschikbare configuratie, geen geslaagde verwerking van ieder bestand of profiel. Controleer de standaardbron of aangepaste bron en de actieve versie in uw organisatie. Achterwaartse compatibiliteit van de standaard garandeert geen ongewijzigde extractie- of transformatieresultaten. Test representatieve facturen en creditnota’s, de benodigde velden en de ERP-export afzonderlijk; wettelijke validatie en eisen van het overdrachtsnetwerk vereisen eigen acceptatietests.
+
+<figure><img src="../../../../../../.gitbook/assets/dbdc-213-facturx-nl-20261031.png" alt="Nederlandse DocBits-ontwikkelinterface: FACTURX 1.09 - ZUGFERD 2.5 en de drie standaardcomponenten"><figcaption><p>Nederlandse ontwikkelinterface, uitsluitend gelezen op 31 oktober 2026: de catalogusvermelding voor INVOICE en de beschikbare standaardcomponenten. Deze schermafbeelding toont geen test van bestandsverwerking.</p></figcaption></figure>
 
 ## Gerelateerd
 

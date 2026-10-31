@@ -19,11 +19,13 @@ In cima alla pagina, un banner rimanda alla **Dashboard di analisi** per grafici
 
 ## Tabella dei Log
 
+<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-it-20261031.png" alt="Registro attività nell’interfaccia italiana: la colonna Servizio identifica il servizio che ha generato il log e corrisponde al filtro Servizio. Le voci e i metadati di esportazione sono esclusi da questa vista."><figcaption><p>Registro attività nell’interfaccia italiana: la colonna Servizio identifica il servizio che ha generato il log e corrisponde al filtro Servizio. Le voci e i metadati di esportazione sono esclusi da questa vista.</p></figcaption></figure>
+
 | Colonna | Descrizione |
 |--------|-------------|
 | **Marca temporale** | Data e ora in cui si è verificato l'evento. Ordinabile. |
 | **Gravità** | Badge colorato: Info (blu), Warning (giallo), Error (rosso), Debug (grigio). |
-| **Componente** | Il servizio o il modulo che ha generato il log (ad es. api, auth, api-service). |
+| **Servizio** | Il servizio o il modulo che ha generato il log (ad es. api, auth, api-service). |
 | **Messaggio** | Il messaggio di log completo con i dettagli dell'evento. |
 
 I risultati sono paginati — usa i controlli in basso per scorrere le pagine.

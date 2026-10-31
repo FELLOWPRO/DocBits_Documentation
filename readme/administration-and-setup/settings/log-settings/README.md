@@ -19,11 +19,13 @@ En haut de la page, une bannière renvoie vers l'**Tableau de bord analytique** 
 
 ## Tableau des journaux
 
+<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-fr-20261031.png" alt="Vue réelle du journal d’activité en français : la colonne « Service » identifie le service à l’origine du journal et correspond au filtre Service. Les entrées et les métadonnées d’exportation sont hors cadre."><figcaption><p>Vue réelle du journal d’activité en français : la colonne « Service » identifie le service à l’origine du journal et correspond au filtre Service. Les entrées et les métadonnées d’exportation sont hors cadre.</p></figcaption></figure>
+
 | Colonne | Description |
 |--------|-------------|
 | **Horodatage** | Date et heure de l'événement. Triable. |
 | **Gravité** | Badge de couleur : Info (bleu), Warning (jaune), Error (rouge), Debug (gris). |
-| **Composant** | Le service ou le module qui a généré le journal (par exemple api, auth, api-service). |
+| **Service** | Le service ou le module qui a généré le journal (par exemple api, auth, api-service). |
 | **Message** | Le message de journal complet avec les détails de l'événement. |
 
 Les résultats sont paginés — utilisez les commandes en bas de page pour naviguer entre les pages.

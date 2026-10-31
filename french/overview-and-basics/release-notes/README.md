@@ -553,7 +553,7 @@ DocBits inclut désormais une prise en charge complète des versions 2.1 et sup�
 * **Flexibilité** : que vous travailliez avec les profils basic, comfort ou extended de la norme ZUGFeRD, DocBits fournit des outils pour gérer chaque niveau de complexité des factures.
 * **Pérennité** : grâce à la prise en charge des versions plus récentes, DocBits garantit que les entreprises restent conformes aux réglementations évolutives en matière de facturation électronique dans les États membres de l'UE et au-delà.
 
-En intégrant ZUGFeRD 2.1 et les normes plus récentes, DocBits simplifie les transactions transfrontalières et répond aux besoins des entreprises modernes, ce qui en fait un outil essentiel pour les organisations qui privilégient la transformation numérique et la conformité réglementaire. [Découvrez les versions de ZUGFeRD et leurs mappings DocBits](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+En intégrant ZUGFeRD 2.1 et les normes plus récentes, DocBits simplifie les transactions transfrontalières et répond aux besoins des entreprises modernes, ce qui en fait un outil essentiel pour les organisations qui privilégient la transformation numérique et la conformité réglementaire. [Découvrez les versions de ZUGFeRD et leurs mappings DocBits](https://docs.docbits.com/french/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Intégration d'API externes pour un traitement amélioré des documents
 

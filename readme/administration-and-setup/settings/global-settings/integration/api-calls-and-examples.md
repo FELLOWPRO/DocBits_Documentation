@@ -7,7 +7,7 @@ Mit einer API-Anfrage kann ein anderes Programm Informationen in DocBits lesen o
 1. Bitten Sie einen Organisationsadministrator um Zugriff und [erstellen Sie einen API-Schlüssel](api-key-management.md) für die Integration. Bewahren Sie den Schlüssel in einem Secret Store auf; legen Sie ihn nicht in einem Screenshot, Dokument oder einer Quelldatei ab.
 2. Öffnen Sie die [aktuelle API-Referenz der Sandbox](https://sandbox.api.docbits.com/docs). Sie listet die verfügbaren Operationen, erforderlichen Werte und Beispielantworten für diese Umgebung auf. Verwenden Sie die Referenz Ihrer eigenen Umgebung, wenn Sie die Sandbox verlassen.
 
-<figure><img src="../../../../.gitbook/assets/api-calls-key-context-en.png" alt="Englischer Bereich API Key von DocBits mit der Schaltfläche Create API Key; es ist kein Schlüsselwert sichtbar"><figcaption><p>API-Schlüssel finden Sie unter Settings → Integration &amp; SSO. Das Bild enthält keinen Schlüsselwert.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-20-api-key-context-de-20261031.png" alt="Deutscher DocBits-Bereich API-Schlüssel mit der Schaltfläche API-Schlüssel erstellen; keine Schlüsselwerte sichtbar"><figcaption><p>Aktuelle deutsche Dev-Ansicht des API-Schlüsselbereichs. Das Bild enthält keine Schlüsselwerte.</p></figcaption></figure>
 
 ## Beispiel: Dokumenttypen lesen
 

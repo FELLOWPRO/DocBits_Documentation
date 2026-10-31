@@ -24,7 +24,11 @@ Ajoutez une colonne lorsqu'une valeur doit être saisie pour chaque ligne et que
 | **Select column type** | Voir la liste des types ci-dessus. |
 | **Select Table** | La table qui reçoit la colonne. |
 
-4. Cliquez sur **Proceed**. La colonne apparaît dans la liste avec *Read Only*, *Hidden* et *Use AI* désactivés. Modifiez ces indicateurs dans la liste si nécessaire, voir [Modifier et supprimer des colonnes](editing-and-deleting-columns.md).
+4. Cliquez sur **Continuer**. Une boîte de confirmation rappelle que la nouvelle colonne s'applique à **toutes les futures factures de chaque fournisseur**, et pas seulement au document ouvert.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-fr.png" alt="Boîte de confirmation « Créer une nouvelle colonne de tableau ? » avec les boutons Annuler et Créer une colonne"><figcaption><p>Confirmez avant que la colonne ne soit créée pour tous les fournisseurs.</p></figcaption></figure>
+
+5. Sélectionnez **Créer une colonne** pour enregistrer, ou **Annuler** pour revenir sans rien créer. La colonne apparaît dans la liste avec *Read Only*, *Hidden* et *Use AI* désactivés. Modifiez ces indicateurs dans la liste si nécessaire, voir [Modifier et supprimer des colonnes](editing-and-deleting-columns.md).
 
 ## Après l'ajout
 

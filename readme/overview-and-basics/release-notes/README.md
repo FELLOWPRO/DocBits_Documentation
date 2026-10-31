@@ -561,13 +561,13 @@ DocBits wprowadza zaawansowaną możliwość wykorzystania zewnętrznych API pod
 
 ### Dostęp Cross Sub-Organizations
 
-Dla organizacji z włączonymi wieloma podorganizacjami DocBits wprowadza funkcję Cross Sub-Organizations. To ulepszenie umożliwia użytkownikom administracyjnym usprawnienie zarządzania dokumentami we wszystkich podorganizacjach pod jednym parasolem. Administratorzy mogą teraz uzyskiwać dostęp do wszystkich dokumentów z każdej podorganizacji i je przeglądać bez konieczności przełączania podorganizacji. Ta scentralizowana widoczność pozwala administratorom zobaczyć wszystkie dokumenty wszystkich podorganizacji, co ułatwia znajdowanie konkretnych plików przy jednoczesnym zachowaniu widoku z lotu ptaka. [Dowiedz się więcej](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
+Dla organizacji z włączonymi wieloma podorganizacjami DocBits wprowadza funkcję Cross Sub-Organizations. To ulepszenie umożliwia użytkownikom administracyjnym usprawnienie zarządzania dokumentami we wszystkich podorganizacjach pod jednym parasolem. Administratorzy mogą teraz uzyskiwać dostęp do wszystkich dokumentów z każdej podorganizacji i je przeglądać bez konieczności przełączania podorganizacji. Ta scentralizowana widoczność pozwala administratorom zobaczyć wszystkie dokumenty wszystkich podorganizacji, co ułatwia znajdowanie konkretnych plików przy jednoczesnym zachowaniu widoku z lotu ptaka. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#opcja-pokaz-organizacje-krzyzowa-cross)
 
 <figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt=""><figcaption></figcaption></figure>
 
 ### Widoczność dokumentów na podstawie uprawnień grup
 
-DocBits wprowadza rozszerzone mechanizmy kontroli widoczności dokumentów, umożliwiające precyzyjniejsze zarządzanie dostępem dla użytkowników niebędących administratorami za pomocą uprawnień opartych na grupach. Funkcja ta pozwala administratorom określać, które dokumenty są widoczne dla określonych użytkowników lub grup, co zapewnia uporządkowane przepływy pracy i lepsze bezpieczeństwo danych. Administratorzy mogą przypisywać dokumenty do konkretnych grup, nadając widoczność wyłącznie użytkownikom z tych grup. Dzięki temu użytkownicy widzą tylko dokumenty istotne dla ich roli lub zespołu, co ogranicza bałagan i poprawia koncentrację. [Dowiedz się więcej](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
+DocBits wprowadza rozszerzone mechanizmy kontroli widoczności dokumentów, umożliwiające precyzyjniejsze zarządzanie dostępem dla użytkowników niebędących administratorami za pomocą uprawnień opartych na grupach. Funkcja ta pozwala administratorom określać, które dokumenty są widoczne dla określonych użytkowników lub grup, co zapewnia uporządkowane przepływy pracy i lepsze bezpieczeństwo danych. Administratorzy mogą przypisywać dokumenty do konkretnych grup, nadając widoczność wyłącznie użytkownikom z tych grup. Dzięki temu użytkownicy widzą tylko dokumenty istotne dla ich roli lub zespołu, co ogranicza bałagan i poprawia koncentrację. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
 
 <figure><img src="../../.gitbook/assets/Group Based Permission.png" alt=""><figcaption></figcaption></figure>
 
@@ -585,13 +585,13 @@ DocBits wprowadza zaawansowaną funkcję Sequential Workflow i Approval History,
   * Działania użytkowników (np. „approved", „rejected")
   * Znaczniki czasu każdego działania
   * Komentarze lub notatki dodane przez użytkowników podczas przeglądu
-* Historia zapewnia przejrzystość i stanowi ślad audytu na potrzeby zgodności i rozwiązywania problemów. [Dowiedz się więcej](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/approval-history)
+* Historia zapewnia przejrzystość i stanowi ślad audytu na potrzeby zgodności i rozwiązywania problemów. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history)
 
 <figure><img src="../../.gitbook/assets/Approval History.png" alt=""><figcaption></figcaption></figure>
 
 ### Ulepszenie archiwum dokumentów SFTP/FTP
 
-Ulepszenie archiwum dokumentów SFTP/FTP w DocBits rozwija istniejącą funkcję importu, wprowadzając płynną metodę archiwizowania plików po ich przetworzeniu. Nowe ustawienie w konfiguracji importu FTP pozwala włączyć lub wyłączyć archiwizację plików. Gdy pliki zostaną pomyślnie pobrane i przetworzone w DocBits, są automatycznie archiwizowane w wyznaczonym folderze na serwerze SFTP/FTP, jeśli opcja jest włączona. Dzięki temu przetworzone pliki są zachowane do celów ewidencyjnych bez zaśmiecania aktywnych katalogów importu. [Dowiedz się więcej](https://docs.docbits.com/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
+Ulepszenie archiwum dokumentów SFTP/FTP w DocBits rozwija istniejącą funkcję importu, wprowadzając płynną metodę archiwizowania plików po ich przetworzeniu. Nowe ustawienie w konfiguracji importu FTP pozwala włączyć lub wyłączyć archiwizację plików. Gdy pliki zostaną pomyślnie pobrane i przetworzone w DocBits, są automatycznie archiwizowane w wyznaczonym folderze na serwerze SFTP/FTP, jeśli opcja jest włączona. Dzięki temu przetworzone pliki są zachowane do celów ewidencyjnych bez zaśmiecania aktywnych katalogów importu. [Dowiedz się więcej](https://docs.docbits.com/polish/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
 
 <figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt=""><figcaption></figcaption></figure>
 

@@ -24,7 +24,11 @@
 | **Select column type**  | 参见上方的类型列表。                                                                                                                                                |
 | **Select Table**        | 添加该列的表格。                                                                                                                                         |
 
-4. 点击 **Proceed**。该列会出现在列表中，且 _Read Only_、_Hidden_ 和 _Use AI_ 标记均未设置。如有需要，可在列表中切换这些标记，参见[编辑和删除列](editing-and-deleting-columns.md)。
+4. 点击 **继续**。确认对话框会提示：新列适用于**所有供应商今后的所有发票**，而不仅仅是当前打开的文档。
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-zh.png" alt="确认对话框“创建新的表格列？”及“取消”和“创建列”按钮"><figcaption><p>在为所有供应商创建该列之前进行确认。</p></figcaption></figure>
+
+5. 选择**创建列**保存，或选择**取消**返回且不创建任何内容。该列会出现在列表中，且 _Read Only_、_Hidden_ 和 _Use AI_ 标记均未设置。如有需要，可在列表中切换这些标记，参见[编辑和删除列](editing-and-deleting-columns.md)。
 
 ## 添加后
 

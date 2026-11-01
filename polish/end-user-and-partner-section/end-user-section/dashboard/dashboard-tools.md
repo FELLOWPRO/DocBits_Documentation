@@ -10,9 +10,9 @@ Narzędzia znajdują się obok wyszukiwarki. Najedź na ikonę, aby zobaczyć je
 | Analiza | Pokaż statystyki statusów i wybierz kategorię, aby ograniczyć listę. |
 | Rozpocznij import poczty | Uruchom import według istniejącej konfiguracji skrzynki. To działanie nie konfiguruje skrzynki. |
 | Eksportuj tabelę | Zleć CSV lub Excel, jeśli opcja jest aktywna. Najpierw zapisz zmiany kolumn widoku osobistego: eksport odczytuje zapisaną konfigurację. |
-| Wgrywać | Wybierz lub przeciągnij pliki, opcjonalnie wskaż typ dokumentu i rozpocznij przesyłanie. |
+| Prześlij | Wybierz lub przeciągnij pliki, opcjonalnie wskaż typ dokumentu i rozpocznij przesyłanie. |
 
-<figure><img src="../../../.gitbook/assets/dashboard-upload-pl.png" alt="Prześlij pliki i w razie potrzeby wybierz typ dokumentu przed importem."><figcaption><p>Prześlij pliki i w razie potrzeby wybierz typ dokumentu przed importem.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-37-upload-current-pl-20261101.png" alt="Puste okno przesyłania dokumentów: opcja „Klasyfikować jako” wyłączona, pole „Typ” i przycisk „Prześlij” nieaktywne, „Anulować” dostępne."><figcaption><p>Nie wybrano żadnych plików. Opcja „Klasyfikować jako” jest wyłączona, a pole „Typ” jest nieaktywne; „Anulować” zamyka okno.</p></figcaption></figure>
 
 Dziennik pozwala sprawdzać importy poczty. Filtruj według tematu lub nadawcy i przeglądaj dostępne informacje. Potwierdzenie zlecenia eksportu tabeli oznacza wysłanie zadania, a nie wyeksportowanie dokumentu do ERP.
 

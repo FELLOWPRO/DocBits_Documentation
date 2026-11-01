@@ -2,9 +2,13 @@
 
 ## What the Testing module is for
 
-The Testing module checks that DocBits behaves correctly **in your organisation**: pages open, lists show data,
-a document has the expected status, an upload is classified as expected. A test clicks through the real
-application in a browser tab, exactly as a person would, and records the result of every step.
+The **Testing** module runs browser tests inside your own signed-in DocBits session. A test drives the real
+screens instead of a mock: it opens the dashboard, uploads a sample invoice, checks that a new document reaches
+validation, or confirms that an export reports the expected status. It checks that DocBits behaves correctly
+**in your organisation**, and it records the result of every step.
+
+You find the module in **Settings → Testing**. It is meant for administrators who look after the test suites of an
+organisation.
 
 Use it when you want to:
 
@@ -35,6 +39,9 @@ DocBits applies extra protection: tests that change data need an explicit confir
 approve steps are blocked unless the template declares that it writes data.
 
 ## How it works: template, input, start, log
+
+The page has three tabs: **Templates**, **Inputs** and **Logs**. A template describes the flow, an input decides
+what it runs with, and the log shows the result.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram.png" alt="Diagram: Template plus Input gives a test; it is started in the browser, by an AI assistant or from outside; every run ends in the Logs"><figcaption><p>Diagram: Template plus Input gives a test; it is started in the browser, by an AI assistant or from outside; every run ends in the Logs.</p></figcaption></figure>
 

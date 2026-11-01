@@ -1,8 +1,10 @@
 # Obliczanie terminu płatności
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Ustawienia obliczania terminu płatności"><figcaption><p>Ustawienia obliczania terminu płatności</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-pl.png" alt="Ustawienia obliczania terminu płatności"><figcaption><p>Ustawienia obliczania terminu płatności</p></figcaption></figure>
 
 Strona **Obliczanie terminu płatności** (**Przetwarzanie dokumentów → Obliczanie terminu płatności**) kontroluje, w jaki sposób DocBits oblicza terminy płatności faktur, terminy płatności rabatu (Skonto) oraz warunki płatności na podstawie kodów warunków płatności znalezionych na fakturach.
+
+Karta **Invoice Due Date Calculation** zawiera ustawienia ogólne. Zmiany zapisz przyciskiem **Zapisz** w jej nagłówku. Niżej znajdują się tabele nadpisań warunków rabatu i płatności oraz opis obsługiwanych formatów.
 
 ## Pokaż obliczone pola
 
@@ -12,9 +14,7 @@ Włącz **Pokaż obliczone pola**, aby automatycznie obliczone pola faktury — 
 
 ### Obsługa weekendów
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Opcje konwencji weekendowej"><figcaption><p>Opcje konwencji weekendowej</p></figcaption></figure>
-
-Wybierz, jak dostosowywany jest termin płatności przypadający w sobotę lub niedzielę. Dotyczy to **zarówno** terminu płatności faktury, jak i terminu płatności rabatu (Skonto).
+Wybierz **Obsługę weekendów**, aby określić, jak dostosowywany jest termin płatności przypadający w sobotę lub niedzielę. Dotyczy to **zarówno** terminu płatności faktury, jak i terminu płatności rabatu (Skonto).
 
 | Konwencja | Efekt |
 |-----------|-------|
@@ -30,13 +30,19 @@ Przypisz warunki płatności dostawcy do kodów przypisania AP dla zautomatyzowa
 
 ## Nadpisania warunków rabatu
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Nadpisania warunków rabatu"><figcaption><p>Nadpisania warunków rabatu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-pl.png" alt="Nadpisania warunków rabatu"><figcaption><p>Nadpisania warunków rabatu</p></figcaption></figure>
 
-Użyj **Nadpisań warunków rabatu**, aby przypisać określony prefiks do procentu rabatu i liczby dni. Kliknij **+ Dodaj mapowanie**, aby dodać wiersz z polami **Prefiks**, **Procent** i **Dni**.
+Użyj **Nadpisań warunków rabatu**, aby przypisać określony prefiks do procentu rabatu i liczby dni. Kliknij **Dodaj mapowanie**, aby dodać wiersz z polami **Prefiks**, **Procent** i **Dni**. Aby zmienić lub usunąć istniejące mapowanie, użyj menu (⋮) na końcu wiersza.
+
+## Nadpisania warunków płatności
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-pl.png" alt="Nadpisania warunków płatności"><figcaption><p>Nadpisania warunków płatności</p></figcaption></figure>
+
+Użyj **Nadpisań warunków płatności**, aby przypisać kod warunków płatności do typu terminu, liczby dni i opisu. Kliknij **Dodaj mapowanie**, aby dodać wiersz, a do zmiany lub usunięcia użyj menu (⋮) na końcu wiersza.
 
 ## Obsługiwane formaty
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Obsługiwane formaty warunków płatności i rabatu"><figcaption><p>Obsługiwane formaty warunków płatności i rabatu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-pl.png" alt="Obsługiwane formaty warunków płatności i rabatu"><figcaption><p>Obsługiwane formaty warunków płatności i rabatu</p></figcaption></figure>
 
 DocBits rozpoznaje następujące kody warunków płatności i rabatu.
 

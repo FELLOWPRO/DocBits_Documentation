@@ -1,8 +1,10 @@
 # Calcolo della data di scadenza
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Impostazioni del calcolo della data di scadenza"><figcaption><p>Impostazioni del calcolo della data di scadenza</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-it.png" alt="Impostazioni del calcolo della data di scadenza"><figcaption><p>Impostazioni del calcolo della data di scadenza</p></figcaption></figure>
 
 La pagina **Calcolo della data di scadenza** (**Elaborazione dei documenti → Calcolo della data di scadenza**) controlla come DocBits calcola le date di scadenza delle fatture, le date di scadenza dello sconto (Skonto) e le condizioni di pagamento a partire dai codici delle condizioni di pagamento trovati sulle fatture.
+
+La scheda **Invoice Due Date Calculation** raccoglie le impostazioni generali. Usa **Salva** nella sua intestazione per memorizzare le modifiche. Più in basso ci sono le tabelle delle condizioni di sconto e di pagamento e un riferimento dei formati supportati.
 
 ## Mostra campi calcolati
 
@@ -12,9 +14,7 @@ Attiva **Mostra campi calcolati** affinché i campi della fattura calcolati auto
 
 ### Gestione dei fine settimana
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Opzioni della convenzione di fine settimana"><figcaption><p>Opzioni della convenzione di fine settimana</p></figcaption></figure>
-
-Scegli come viene rettificata una data di scadenza che cade di sabato o di domenica. Questo vale **sia** per la data di scadenza della fattura sia per quella dello sconto (Skonto).
+Scegli la **Gestione dei fine settimana** per controllare come viene rettificata una data di scadenza che cade di sabato o di domenica. Questo vale **sia** per la data di scadenza della fattura sia per quella dello sconto (Skonto).
 
 | Convenzione | Effetto |
 |-------------|---------|
@@ -30,13 +30,19 @@ Associa le condizioni di pagamento del fornitore ai codici di assegnazione AP pe
 
 ## Sostituzioni delle condizioni di sconto
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Sostituzioni delle condizioni di sconto"><figcaption><p>Sostituzioni delle condizioni di sconto</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-it.png" alt="Sostituzioni delle condizioni di sconto"><figcaption><p>Sostituzioni delle condizioni di sconto</p></figcaption></figure>
 
-Usa le **Sostituzioni delle condizioni di sconto** per associare un prefisso specifico a una percentuale di sconto e a un numero di giorni. Fai clic su **+ Aggiungi associazione** per aggiungere una riga con **Prefisso**, **Percentuale** e **Giorni**.
+Usa le **Sostituzioni delle condizioni di sconto** per associare un prefisso specifico a una percentuale di sconto e a un numero di giorni. Fai clic su **Aggiungi associazione** per aggiungere una riga con **Prefisso**, **Percentuale** e **Giorni**. Per modificare o eliminare un’associazione esistente, usa il menu (⋮) a fine riga.
+
+## Sostituzioni dei termini di pagamento
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-it.png" alt="Sostituzioni dei termini di pagamento"><figcaption><p>Sostituzioni dei termini di pagamento</p></figcaption></figure>
+
+Usa le **Sostituzioni dei termini di pagamento** per associare un codice di condizione di pagamento a un tipo di termine, a un numero di giorni e a una descrizione. Fai clic su **Aggiungi associazione** per aggiungere una riga e usa il menu (⋮) a fine riga per modificarla o eliminarla.
 
 ## Formati supportati
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Formati di condizioni di pagamento e sconto supportati"><figcaption><p>Formati di condizioni di pagamento e sconto supportati</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-it.png" alt="Formati di condizioni di pagamento e sconto supportati"><figcaption><p>Formati di condizioni di pagamento e sconto supportati</p></figcaption></figure>
 
 DocBits riconosce i seguenti codici di condizioni di pagamento e di sconto.
 

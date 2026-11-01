@@ -10,9 +10,9 @@ Die Anmeldung mit einem bestehenden Konto und die Zwei-Faktor-Authentifizierung 
 
 ## Registrierung
 
-Sie können selbst ein DocBits-Konto auf der Registrierungsseite erstellen. Öffnen Sie sie über den **Register**-Link auf dem Anmeldebildschirm oder rufen Sie `https://app.docbits.com/register` auf (verwenden Sie die Webadresse, die Ihre Organisation erhalten hat).
+Sie können selbst ein DocBits-Konto auf der Registrierungsseite erstellen. Öffnen Sie sie über den Registrierungslink auf dem Anmeldebildschirm oder rufen Sie `https://app.docbits.com/register` auf (verwenden Sie die Webadresse, die Ihre Organisation erhalten hat).
 
-<figure><img src="../../.gitbook/assets/getting-access-register-form-de.png" alt="Das DocBits-Registrierungsformular mit leeren Feldern"><figcaption><p>Das Registrierungsformular. Alle Felder sind Pflichtfelder, sofern nicht anders angegeben.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-register-native-de-20261101.png" alt="Deutsches DocBits-Registrierungsformular mit fünf leeren Feldern, nicht markiertem reCAPTCHA, Zustimmung zu den Geschäftsbedingungen, Los geht&#x27;s, Google und Microsoft sowie Anmelden"><figcaption><p>Geben Sie Namen, geschäftliche E-Mail-Adresse und Passwort ein. Lösen Sie reCAPTCHA, falls es angezeigt wird, stimmen Sie den Geschäftsbedingungen zu und wählen Sie Los geht&#x27;s. Anmelden führt zurück zur Anmeldung.</p></figcaption></figure>
 
 Füllen Sie das Formular aus:
 
@@ -53,7 +53,7 @@ Wenn Sie Ihr Passwort vergessen haben:
 1. Klicken Sie auf dem Anmeldebildschirm auf **Passwort vergessen?**.
 2. Geben Sie auf der Seite **Passwort vergessen** Ihre **E-Mail**-Adresse ein und klicken Sie auf **Passwort zurücksetzen**. Falls ein reCAPTCHA-Widget angezeigt wird, lösen Sie es zuerst.
 
-   <figure><img src="../../.gitbook/assets/getting-access-forget-password-form-de.png" alt="Die Seite Passwort vergessen mit dem E-Mail-Feld"><figcaption><p>Die Seite Passwort vergessen. Geben Sie Ihre Konto-E-Mail-Adresse ein, und DocBits sendet Ihnen einen Reset-Link.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-de-20261101.png" alt="Deutsches Formular Passwort vergessen mit leerem E-Mail-Feld, nicht markiertem reCAPTCHA, Passwort zurücksetzen und Zurück zu Login"><figcaption><p>Fordern Sie mit Ihrer E-Mail-Adresse und Passwort zurücksetzen einen Reset-Link an oder kehren Sie mit Zurück zu Login zur Anmeldung zurück. Lösen Sie reCAPTCHA, wenn es angezeigt wird.</p></figcaption></figure>
 
    Wenn Sie Ihr Passwort nicht zurücksetzen wollen, klicken Sie auf **Zurück zu Login**, um zur Anmeldung zurückzukehren.
 
@@ -69,7 +69,7 @@ Reset-Links laufen nach kurzer Zeit ab. Wenn der Link nicht mehr funktioniert, w
 
 Wenn Ihr Administrator Sie als Benutzer anlegt (siehe [Benutzer](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), erhalten Sie eine E-Mail mit Ihren Anmeldedaten und einem Link zum Festlegen Ihres **ersten Passworts**. Der Link öffnet die Seite **Passwort festlegen**:
 
-<figure><img src="../../.gitbook/assets/getting-access-set-password-form-de.png" alt="Die Seite Passwort festlegen mit der Willkommensnachricht"><figcaption><p>Die Seite Passwort festlegen, angezeigt nachdem ein Administrator Ihr Konto erstellt hat.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-de-20261101.png" alt="Deutsches Formular Passwort festlegen mit Willkommensnachricht, zwei leeren Passwortfeldern, Augensymbolen, Passwort festlegen und Zum Login"><figcaption><p>Das Formular zum Festlegen des ersten Passworts für ein vom Administrator angelegtes Konto. Geben Sie das Passwort zweimal ein und wählen Sie Passwort festlegen. Zum Login führt zur Anmeldung zurück.</p></figcaption></figure>
 
 1. Klicken Sie auf den Link in der Einladungs-E-Mail. Die Seite begrüßt Sie mit „Willkommen bei DocBits! Ihr Konto wurde erstellt. Bitte legen Sie Ihr Passwort fest, um zu beginnen."
 2. Geben Sie Ihr Passwort zweimal ein — es gelten dieselben [Passwortregeln](#passwortregeln).

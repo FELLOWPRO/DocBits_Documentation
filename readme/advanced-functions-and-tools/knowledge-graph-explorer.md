@@ -1,8 +1,8 @@
 # Knowledge Graph Explorer (Graphe de connaissances)
 
-L'Explorateur de graphe de connaissances vous aide à visualiser les connexions entre les fournisseurs, les documents, les commandes d'achat et d'autres enregistrements. Utilisez-le lorsque vous souhaitez suivre une relation ou vérifier combien d'éléments connectés sont disponibles. L'exemple ci-dessous montre un graphe vide dans l'organisation de test Sandbox anglaise.
+L'Explorateur de graphe de connaissances vous aide à visualiser les connexions entre les fournisseurs, les documents, les commandes d'achat et d'autres enregistrements. Utilisez-le lorsque vous souhaitez suivre une relation ou vérifier combien d'éléments connectés sont disponibles. L'illustration ci-dessous présente un graphe peuplé avec des données de démonstration.
 
-<figure><img src="../.gitbook/assets/graph-explorer-fr.png" alt="Explorateur de graphe de connaissances dans DocBits Documentation Test A avec un graphe vide, champ de recherche, sélecteur de vues, filtres de types, compteurs de nœuds et de liens, section de confiance, bouton Reconstruire le graphe et onglet Analytique"><figcaption><p>Un graphe vide ne contient aucun nœud ni lien. Recherchez un élément ou reconstruisez le graphe pour commencer.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/graph-explorer-fr.png" alt="Illustration du Graph Explorer avec des données de démonstration, des fournisseurs reliés, un champ de recherche, un sélecteur de vues, des filtres de types, 215 nœuds et 342 liens, une section Confiance, le bouton Reconstruire le graphe et l’onglet Analytique"><figcaption><p>Illustration avec des données de démonstration : le graphe présenté contient 215 nœuds et 342 liens.</p></figcaption></figure>
 
 ## Démarrer
 

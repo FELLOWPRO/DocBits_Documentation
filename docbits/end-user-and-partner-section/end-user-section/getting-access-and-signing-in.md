@@ -12,7 +12,7 @@ Signing in with an existing account, and Two-Factor Authentication, are covered 
 
 You can create a DocBits account yourself on the registration page. Open it from the **Register** link on the login screen, or navigate to `https://app.docbits.com/register` (use the web address your organisation was given).
 
-<figure><img src="../../.gitbook/assets/register-form.png" alt="The DocBits registration form with empty fields"><figcaption><p>The registration form. All fields are required except where noted.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-register-native-en-20261101.png" alt="English DocBits registration form with five empty fields, unchecked reCAPTCHA and Terms and Conditions, Get Started, Google and Microsoft, and the Login link"><figcaption><p>Create your account with your name, work email and password. Complete reCAPTCHA when shown, accept the terms and choose Get Started; Login returns to sign-in.</p></figcaption></figure>
 
 Fill in the form:
 
@@ -53,7 +53,7 @@ If you forgot your password:
 1. On the login screen, click **Forgot password?**.
 2. On the **Forgot Password** page, enter your **E-Mail** address and click **Reset Password**. If a reCAPTCHA widget is shown, complete it first.
 
-   <figure><img src="../../.gitbook/assets/forget-password-form.png" alt="The Forgot Password page with the email field"><figcaption><p>The Forgot Password page. Enter your account email and DocBits will send you a reset link.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-en-20261101.png" alt="English Forgot Password form with an empty E-Mail field, unchecked reCAPTCHA, Reset Password and Back to Login"><figcaption><p>Request a password reset link with your email address and Reset Password, or return with Back to Login. Complete reCAPTCHA when it appears.</p></figcaption></figure>
 
    If you do not want to reset your password, click **Back to Login** to return to sign-in.
 
@@ -69,7 +69,7 @@ Reset links expire after a short time. If the link no longer works, repeat the s
 
 When your administrator adds you as a user (see [Users](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), you receive an email with your login details and a link to set your **first password**. The link opens the **Set Password** page:
 
-<figure><img src="../../.gitbook/assets/set-password-form.png" alt="The Set Password page with the welcome message"><figcaption><p>The Set Password page, shown after an administrator created your account.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-en-20261101.png" alt="English Set Password form with the Welcome to DocBits message, two empty password fields, eye icons, Set Password and Go to Login"><figcaption><p>The Set Password form for the first password of an administrator-created account. Enter the password twice and choose Set Password; Go to Login returns to sign-in.</p></figcaption></figure>
 
 1. Click the link in the invitation email. The page greets you with "Welcome to DocBits! Your account has been created. Please set your password to get started."
 2. Enter your password twice — the same [password rules](#password-rules) apply.

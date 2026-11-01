@@ -4,7 +4,7 @@ Diese Seite erklärt, wie Sie ein DocBits-Konto erhalten und wie Sie sich anmeld
 
 * [Registrierung](#registrierung) — erstellen Sie Ihr eigenes DocBits-Konto.
 * [Passwort vergessen](#passwort-vergessen) — setzen Sie Ihr Passwort mit einem Reset-Link zurück.
-* [Erstes Passwort für vom Administrator angelegte Konten](#erstes-passwort-für-vom-administrator-angelegte-konten) — legen Sie das erste Passwort für ein Konto fest, das Ihr Administrator für Sie erstellt hat.
+* [Erstes Passwort für vom Administrator angelegte Konten](#erstes-passwort-fur-vom-administrator-angelegte-konten) — legen Sie das erste Passwort für ein Konto fest, das Ihr Administrator für Sie erstellt hat.
 
 Die Anmeldung mit einem bestehenden Konto und die Zwei-Faktor-Authentifizierung werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../security/two-factor-authentication.md) behandelt. Verwenden Sie das Sprachmenü oben rechts auf diesen Formularen, wenn Sie eine andere Anzeigesprache benötigen.
 

@@ -12,7 +12,7 @@ La connexion avec un compte existant et l'authentification à deux facteurs sont
 
 Vous pouvez créer vous-même un compte DocBits sur la page d'inscription. Ouvrez-la depuis le lien **Registre** sur l'écran de connexion, ou accédez à `https://app.docbits.com/register` (utilisez l'adresse web communiquée à votre organisation).
 
-<figure><img src="../../.gitbook/assets/dbdc742-getting-access-register-form-fr-20261011.png" alt="Le formulaire d'inscription DocBits avec des champs vides"><figcaption><p>Le formulaire d'inscription. Tous les champs sont obligatoires sauf indication contraire.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-register-native-fr-20261101.png" alt="Formulaire français d’inscription DocBits avec cinq champs vides, reCAPTCHA non coché, conditions générales, Commencer, Google, Microsoft et Se connecter"><figcaption><p>Inscription : renseignez Prénom, Nom de famille, E-mail, Mot de passe et Confirmer le mot de passe. Résolvez reCAPTCHA s’il apparaît, acceptez les conditions générales et choisissez Commencer. Se connecter revient à la connexion.</p></figcaption></figure>
 
 Remplissez le formulaire :
 
@@ -53,7 +53,7 @@ Si vous avez oublié votre mot de passe :
 1. Sur l'écran de connexion, cliquez sur **Mot de passe oublié ?**.
 2. Sur la page **Mot de passe oublié**, saisissez votre adresse **E-mail** et cliquez sur **Réinitialiser le mot de passe**. Si un widget reCAPTCHA est affiché, complétez-le d'abord.
 
-   <figure><img src="../../.gitbook/assets/dbdc742-getting-access-forgot-password-form-fr-20261011.png" alt="La page Mot de passe oublié avec le champ e-mail"><figcaption><p>La page Mot de passe oublié. Saisissez l'e-mail de votre compte et DocBits vous enverra un lien de réinitialisation.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-fr-20261101.png" alt="Formulaire français Mot de passe oublié avec le champ E-mail vide, reCAPTCHA non coché, Réinitialiser le mot de passe et Retour à la connexion"><figcaption><p>Saisissez votre E-mail et choisissez Réinitialiser le mot de passe pour demander un lien, ou utilisez Retour à la connexion. Résolvez reCAPTCHA lorsqu’il apparaît.</p></figcaption></figure>
 
    Si vous ne souhaitez pas réinitialiser votre mot de passe, cliquez sur **Retour à la connexion** pour revenir à la page de connexion.
 
@@ -69,7 +69,7 @@ Les liens de réinitialisation expirent après un court délai. Si le lien ne fo
 
 Lorsque votre administrateur vous ajoute comme utilisateur (voir [Utilisateurs](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), vous recevez un e-mail avec vos identifiants de connexion et un lien pour définir votre **premier mot de passe**. Le lien ouvre la page **Définir le mot de passe** :
 
-<figure><img src="../../.gitbook/assets/dbdc742-getting-access-set-password-form-fr-20261011.png" alt="La page Définir le mot de passe avec le message de bienvenue"><figcaption><p>La page Définir le mot de passe, affichée après la création de votre compte par un administrateur.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-fr-20261101.png" alt="Formulaire français Définir le mot de passe avec le message de bienvenue, les deux champs vides, les icônes d’œil, Définir le mot de passe et Aller à la connexion"><figcaption><p>Définition du premier mot de passe d’un compte créé par un administrateur : renseignez Mot de passe et Confirmer le mot de passe, puis choisissez Définir le mot de passe. Aller à la connexion revient à l’identification.</p></figcaption></figure>
 
 1. Cliquez sur le lien dans l'e-mail d'invitation. La page vous accueille avec « Bienvenue sur DocBits ! Votre compte a été créé. Veuillez définir votre mot de passe pour commencer. »
 2. Saisissez votre mot de passe deux fois — les mêmes [règles de mot de passe](#regles-de-mot-de-passe) s'appliquent.

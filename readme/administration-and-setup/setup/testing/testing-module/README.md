@@ -2,9 +2,13 @@
 
 ## Wofür das Testing-Modul da ist
 
-Das Testing-Modul prüft, ob DocBits **in Ihrer Organisation** richtig arbeitet: Seiten öffnen sich, Listen zeigen
-Daten, ein Dokument hat den erwarteten Status, ein Upload wird wie erwartet klassifiziert. Ein Test klickt sich in
-einem Browser-Tab durch die echte Anwendung, genau wie ein Mensch, und hält das Ergebnis jedes Schritts fest.
+Das **Testing**-Modul führt Browser-Tests in Ihrer eigenen angemeldeten DocBits-Sitzung aus. Ein Test steuert die
+echten Oberflächen statt einer Attrappe: Er öffnet das Dashboard, lädt eine Beispielrechnung hoch, prüft, ob ein neues
+Dokument die Validierung erreicht, oder bestätigt, dass ein Export den erwarteten Status meldet. So prüft das Modul,
+ob DocBits **in Ihrer Organisation** richtig arbeitet, und hält das Ergebnis jedes Schritts fest.
+
+Sie finden das Modul unter **Einstellungen → Testing**. Es richtet sich an Administratoren, die sich um die
+Testsammlungen einer Organisation kümmern.
 
 Nutzen Sie es, wenn Sie
 
@@ -35,6 +39,9 @@ DocBits schützt zusätzlich: Tests, die Daten ändern, brauchen eine ausdrückl
 oder Freigabeschritte sind gesperrt, solange das Template nicht erklärt, dass es Daten schreibt.
 
 ## So funktioniert es: Template, Eingabe, Start, Protokoll
+
+Die Seite hat drei Reiter: **Templates**, **Eingaben** und **Protokolle**. Ein Template beschreibt den Ablauf, eine
+Eingabe bestimmt, womit er läuft, und das Protokoll zeigt das Ergebnis.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram-de.png" alt="Schaubild: Template plus Eingabe ergibt einen Test; er wird im Browser, von einem KI-Assistenten oder von außen gestartet; jeder Lauf landet in den Protokollen"><figcaption><p>Schaubild: Template plus Eingabe ergibt einen Test; er wird im Browser, von einem KI-Assistenten oder von außen gestartet; jeder Lauf landet in den Protokollen.</p></figcaption></figure>
 

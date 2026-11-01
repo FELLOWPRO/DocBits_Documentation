@@ -38,7 +38,7 @@ Runs are never started on this tab.
 
 ### Own templates
 
-Templates your organisation creates or imports are listed with the shipped ones, in their own category. Unlike the built-in templates they can be changed, and their row actions also offer **Delete**. Deleting a template removes it and all of its versions; saved inputs and past logs stay. DocBits asks for confirmation first, and built-in templates cannot be deleted.
+Templates your organisation creates or imports appear in the same list. Their category row carries no **· built-in** suffix. Unlike the built-in templates they can be changed, and their row actions also offer **Delete**. Deleting a template removes it and all of its versions; saved inputs and past logs stay. DocBits asks for confirmation first, and built-in templates cannot be deleted.
 
 ## Inputs
 

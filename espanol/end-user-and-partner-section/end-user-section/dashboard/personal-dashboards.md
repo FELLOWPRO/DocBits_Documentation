@@ -13,7 +13,7 @@ Un panel guardado es una vista con nombre de su lista de trabajo: búsqueda, fil
 4. Asigne un nombre claro y decida quién puede usar la vista:
    * **Visible sólo para mí** mantiene la vista privada.
    * **Visible para todos los usuarios** la pone a disposición de todas las personas de su organización.
-   * **Compartir con grupos y usuarios** muestra las dos listas **Grupo** y **Seleccionar usuario**, para que indique grupos concretos o personas individuales.
+   * **Compartir con grupos y usuarios** muestra las dos listas **Grupos** y **Seleccionar usuario**, para que indique grupos concretos o personas individuales.
 
 5. Elija **Guardar**. El botón de vista cambia al nuevo panel y muestra su nombre y el número de documentos.
 

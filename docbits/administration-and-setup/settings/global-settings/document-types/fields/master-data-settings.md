@@ -10,13 +10,15 @@ The video shows the master data sources, the lists of values and the master data
 
 Master Data Settings connect a document's validation fields to data stored under [Lookup Master Data](../../../document-processing/master-data-lookup.md). Use **Lookup Master Data** to find and fill matching records. Use **LOV Master Data** to offer a list of values from a dataset.
 
+The form screenshots show the initial values before any entries are made. Existing mapping values are hidden in the table screenshot.
+
 ## Open the settings
 
 1. In **Settings**, open **Document Processing → Document Types**.
 2. Open the document type you want to configure, such as **Invoice**, and select **Fields**.
 3. Select **Master Data Settings**. The page contains separate **Lookup Master Data** and **LOV Master Data** sections. Select a section heading to expand it.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-overview-en.png" alt="Invoice Master Data Settings in the current DocBits Sandbox, showing Lookup Master Data and LOV Master Data"><figcaption>Choose the section that matches the type of field you want to configure.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-overview-en-20261101.png" alt="Collapsed Lookup Master Data and LOV Master Data sections on the Invoice Master Data Settings page"><figcaption><p>Select a section heading to expand the lookup or list-of-values settings.</p></figcaption></figure>
 
 ## Match a record with Lookup Master Data
 
@@ -33,15 +35,15 @@ Master Data Settings connect a document's validation fields to data stored under
 4. Choose **HEADER** for document fields or **LINE** for fields in a document table. For **LINE**, also choose **Context Detail**, the table where the lookup applies.
 5. Turn on **Match All** if every configured search field must match a record. Leave it off if one matching field is enough. Select **Create**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-lookup-config-en.png" alt="Create Master Data Config dialog with dataset, conflict handler, context type and Match All options"><figcaption>The lookup configuration form for an Invoice header.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lookup-config-en-20261101.png" alt="Empty Create Master Data Config form showing Document Type, Lookup Name, dataset, Conflict Handler, Context Type, Match All, Cancel and Create"><figcaption><p>The lookup form initially shows INVOICE, Best Score and HEADER; complete the fields for your intended configuration.</p></figcaption></figure>
 
 **Match All** and **Conflict Handler** affect automatic supplier recognition. See [Fuzzy data configuration with master data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md) for worked examples.
 
 ### Map fields in a configuration
 
-Expand a configuration to see its mapped fields. In the example below, **Supplier Name** is searchable, while **Supplier Number** is set to trigger the lookup automatically. Your organisation's mappings may differ.
+Expand a configuration to see its mapped fields. The columns identify the dataset field, the document validation field, an optional parent field, and whether the mapping is searchable or triggers a lookup automatically. Your organisation's mappings may differ.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-supplier-fields-en.png" alt="Expanded Supplier lookup showing Lookup Field, Validation Field, Parent Field, Searchable, Auto Trigger and Actions columns"><figcaption>Expand a lookup to inspect the fields that participate in matching.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-mapped-fields-en-20261101.png" alt="Expanded lookup mapping table with Lookup Field, Validation Field, Parent Field, Searchable, Auto Trigger and Actions columns; existing mapping values are hidden"><figcaption><p>Inspect the mapping columns before adding a field. Existing values are hidden in this screenshot.</p></figcaption></figure>
 
 Select **Create** inside the expanded configuration to add a mapping:
 
@@ -53,7 +55,7 @@ Select **Create** inside the expanded configuration to add a mapping:
 
 Select **Create** to add the mapping. Use the three-dot **Actions** menu on a row to edit or delete an editable mapping. Default mappings can only be viewed.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-create-field-en.png" alt="Create Master Data Fields dialog with Lookup Field, Validation Field, Parent Field, Search Operator, Auto Trigger and Searchable"><figcaption>Choose how a dataset column maps to a document field.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-en-20261101.png" alt="Empty Create Master Data Fields form with Lookup Field, Validation Field, Parent Field, Search Operator, Auto Trigger, Searchable, Cancel and Create"><figcaption><p>Choose how a dataset column maps to a document field.</p></figcaption></figure>
 
 Use the three-dot menu on a configuration to activate or deactivate it, duplicate it, or edit it. A default configuration offers **View** in place of **Edit** and cannot be deleted. Deleting a custom configuration or field removes its mapping; check which document fields depend on it first.
 
@@ -63,7 +65,7 @@ Use the three-dot menu on a configuration to activate or deactivate it, duplicat
 
 Expand **LOV Master Data**, then select **Create Lov Lookup Config**. If no configuration exists, the section shows only this button.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-overview-en.png" alt="Expanded LOV Master Data section with the Create Lov Lookup Config button"><figcaption>Open this section when a document field should offer dataset values as choices.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lov-overview-en-20261101.png" alt="Expanded LOV Master Data section showing the Create Lov Lookup Config control"><figcaption><p>Use Create Lov Lookup Config to open the list-of-values configuration form.</p></figcaption></figure>
 
 In the form, enter **Lookup Lov Name**, choose **Lookup Lov Dataset Name**, and set **Context Type** to **HEADER** or **LINE**. For **LINE**, select **Context Detail** to identify the document table. Then choose:
 
@@ -73,6 +75,6 @@ In the form, enter **Lookup Lov Name**, choose **Lookup Lov Dataset Name**, and 
 
 Select **Create** to save the configuration. Expand it to inspect its fields, or use its three-dot menu to activate, duplicate, edit or delete it.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-config-en.png" alt="Create LOV Master Data Config dialog with dataset, context, label field, value field and out field"><figcaption>Connect a dataset value and its visible label to a document field.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lov-config-en-20261101.png" alt="Empty Create Master Data Config form for LOV with dataset, context, Lookup Label Field, Lookup Value Field, Out Field, Cancel and Create"><figcaption><p>Connect a dataset value and its visible label to a document field.</p></figcaption></figure>
 
 To make dependent dropdowns, select **Create** inside an expanded LOV configuration and choose a **Lookup Field** and **Filter Field**. The filter field's value narrows the choices returned by the lookup. You can also set a static **Filter Value** and mark a field **Required**. Use the row's three-dot menu to edit or delete a custom filter field.

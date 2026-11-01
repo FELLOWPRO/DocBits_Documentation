@@ -36,7 +36,9 @@ Neuladen beendet die Registrierung.
 ## Der Lauf bricht ab oder zeigt Abgebrochen / Nicht zustellbar
 
 Der ausführende Tab wurde neu geladen, geschlossen oder hat die Verbindung verloren, oder kein Tab hat rechtzeitig
-geantwortet. Lassen Sie den Tab offen und im Vordergrund, bis der Lauf endet, und starten Sie erneut.
+geantwortet. Lassen Sie den Tab offen und im Vordergrund, bis der Lauf endet, und starten Sie erneut. Ein Test mit einem Schritt
+**Seite neu laden** endet ebenfalls so, wenn die Seite nicht innerhalb von etwa zwei Minuten zurückkommt
+(siehe [Neu laden und fortsetzen](reload-and-resume.md)).
 
 ## „Playwright-Templates lassen sich hier noch nicht starten"
 

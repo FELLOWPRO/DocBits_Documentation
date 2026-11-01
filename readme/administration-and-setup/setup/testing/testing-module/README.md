@@ -71,6 +71,9 @@ anlegen und wieder löschen.
 Weiterlesen:
 
 * [Templates](templates.md): Standard-Templates, eigene Templates, Import und Löschen
+* [Schritte und fertige Bausteine](steps-and-blocks.md): Schrittgruppen, erweiterte Einstellungen, Aufräumen, gemerkte Werte
+* [Element in der App auswählen](pick-in-app.md): ein Element durch Zeigen wählen
+* [Neu laden und fortsetzen](reload-and-resume.md): die Seite mitten im Test neu laden
 * [Eingaben](inputs.md): Werte Ihrer Organisation speichern
 * [Test starten](start-a-test.md): im Browser, über einen KI-Assistenten oder mit Playwright
 * [Protokolle und Verlauf](logs.md): Ergebnisse, Diagramm und CSV-Export

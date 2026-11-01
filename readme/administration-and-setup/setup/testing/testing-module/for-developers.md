@@ -4,7 +4,7 @@ Diese Seite richtet sich an Entwickler und CI-Verantwortliche, die Templates als
 
 ## Template-JSON im Überblick
 
-Ein Template ist ein JSON-Dokument (Schemaversion 1). Exportieren Sie ein beliebiges Template über das Download-Symbol, um ein
+Ein Template ist ein JSON-Dokument (Schemaversion 1; die Schemaversionen 1.1 bis 1.3 ergänzen weitere Schritte und Einstellungen). Exportieren Sie ein beliebiges Template über das Download-Symbol, um ein
 vollständiges Beispiel zu sehen.
 
 ```json
@@ -27,7 +27,8 @@ vollständiges Beispiel zu sehen.
 ```
 
 * `id` und `version` bestimmen ein Template; eine gespeicherte Version ändert sich nie, Änderungen erhalten eine neue `version`.
-* `params` erklärt die Werte, die eine Eingabe liefert; Schritte verweisen darauf mit `{{params.<name>}}`.
+* `params` erklärt die Werte, die eine Eingabe liefert; Schritte verweisen darauf mit `{{params.<name>}}`. Ab Schema 1.3 kann ein Schritt einen Wert merken (`captureValue`, `as`), den spätere Schritte als `{{vars.<name>}}` verwenden.
+* `section` (`prepare`, `check`, `cleanup`) ordnet einen Schritt einer Phase zu. Ab Schema 1.3 müssen `cleanup`-Schritte die letzten Schritte sein und laufen auch nach einem Fehlschlag. `reload` (Schema 1.3) lädt die Seite neu, und der Lauf geht danach weiter.
 * `allowWrites: true` ist Pflicht für Templates, die hochladen, exportieren, löschen oder freigeben.
 * Schritte sprechen Elemente über stabile Test-IDs an (`target`), nie über sichtbaren Text; so läuft ein Template in jeder Oberflächensprache.
 * Vor dem Speichern prüfen: **JSON importieren → Prüfen** oder `POST /live-tests/validate`.
@@ -73,7 +74,7 @@ Vertrauliche Werte gelten nur für den Lauf und werden nie gespeichert.
 ## Grenzen des Browser-Runners
 
 * Tests laufen als die Person, die den Tab registriert hat: keine Anmeldung, kein Rollenwechsel.
-* Ein vollständiges Neuladen der Seite beendet den Lauf.
+* Ein vollständiges Neuladen der Seite beendet den Lauf, außer dem `reload`-Schritt des Templates selbst (Schema 1.3).
 * Native Browserdialoge (Dateiauswahl, Drucken, Hinweisfenster) lassen sich nicht bedienen; Uploads nutzen Dateien der
   Organisation oder Testdateien des Servers.
 * Screenshot-Schritte werden übersprungen (der Lauf wird **Blockiert**).

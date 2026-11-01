@@ -29,6 +29,25 @@ Testplanfall, falls es einen gibt.
 
 <figure><img src="../../../../.gitbook/assets/testing-18-log-detail-fail-de.png" alt="Protokolldetails eines fehlgeschlagenen Laufs"><figcaption><p>Protokolldetails eines fehlgeschlagenen Laufs.</p></figcaption></figure>
 
+### Erwarteter und tatsächlicher Wert
+
+Unter einer fehlgeschlagenen Prüfung zeigen die **Protokolldetails**, was die Prüfung erwartet hat und was sie gefunden hat:
+
+* **Erwartet**: der Wert, den das Template verlangt.
+* **Tatsächlich**: der Wert, der auf der Seite stand.
+
+Beides erscheint nur auf **Entwicklungs- und Testumgebungen**, ist auf 120 Zeichen gekürzt und entfällt, wenn der Schritt einen
+vertraulichen Wert verwendet. Auf einer Kundenumgebung (Sandbox, Produktion) behält das Protokoll nur den Fehlercode.
+
+### Aufräumen
+
+Hat das Template [Aufräumschritte](steps-and-blocks.md), zeigt der Chip neben dem Ergebnis, wie sie endeten:
+**Aufräumen: bestanden**, **Aufräumen: fehlgeschlagen** oder **Aufräumen: übersprungen** (zum Beispiel weil der Lauf gestoppt wurde).
+Aufräumschritte laufen auch nach einer fehlgeschlagenen Prüfung. Ein fehlgeschlagenes Aufräumen ändert das Ergebnis des Laufs nicht, aber
+Testdaten, etwa ein hochgeladenes Dokument, können zurückbleiben. Öffnen Sie das Protokoll, um zu sehen, welcher Aufräumschritt fehlschlug.
+
+<figure><img src="../../../../.gitbook/assets/testing-34-log-expected-actual-de.png" alt="Protokolldetails: die fehlgeschlagene Prüfung mit Erwartet und Tatsächlich und der Chip Aufräumen: bestanden"><figcaption><p>Protokolldetails: die fehlgeschlagene Prüfung mit Erwartet und Tatsächlich und der Chip Aufräumen: bestanden.</p></figcaption></figure>
+
 ## Verlauf
 
 Über der Liste zeigt **Verlauf**, wie die Tests über die Zeit gelaufen sind. Wechseln Sie zwischen **Als Diagramm zeigen**

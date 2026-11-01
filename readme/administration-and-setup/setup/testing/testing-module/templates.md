@@ -44,11 +44,15 @@ Im Template-Editor:
 1. Geben Sie den **Namen des Templates** ein und optional, wofür es da ist.
 2. Wählen Sie **+ Schritt hinzufügen** und einen Baustein, zum Beispiel **Seite öffnen**, **Klicken**, **Ausfüllen**,
    **Auswählen**, **Warten auf**, **Text prüfen**, **Feld prüfen** oder **Status prüfen**. **Fertige Bausteine** fügen einen
-   üblichen Ablauf auf einmal ein, etwa **Dokument hochladen** oder **Dokumentfeld prüfen**.
+   üblichen Ablauf auf einmal ein, etwa **Dokument hochladen** oder **Dokument hochladen und warten, bis es verarbeitet ist**. Die Schrittgruppen, die
+   **Erweitert**-Einstellungen und die Aufräumschritte beschreibt [Schritte und fertige Bausteine](steps-and-blocks.md).
 3. Machen Sie jeden Wert, der je Organisation oder Lauf anders ist, über die Parameter-Schaltfläche neben dem Wert zum
    Parameter. Er erscheint unter **Eingaben · ändern sich je Lauf**, mit Typ (**Text**, **Zahl**, **Ja/Nein**,
    **Server-Testdatei**), **Standardwert** und **Pflicht**, wenn er ausgefüllt werden muss.
 4. Wählen Sie **Speichern**. Um den Entwurf einmal ohne Speichern zu testen, wählen Sie **Einmal ausführen**.
+
+Um das Element eines Schritts durch Zeigen in der Anwendung zu wählen, nutzen Sie **In der App auswählen**
+([Element in der App auswählen](pick-in-app.md)).
 
 Schritte, die Daten ändern (etwa ein Dokument hochladen), sind mit **schreibt Daten** markiert. Ein Template mit solchen
 Schritten fragt bei jedem Start nach einer Bestätigung.

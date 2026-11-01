@@ -10,7 +10,8 @@ Die drei Wege sind gleichwertig, und jeder Lauf landet in den [Protokollen](logs
 | **Von außen (Playwright oder REST)** | Ihre Testautomatisierung oder CI-Pipeline startet Prüfungen, etwa nach einem Deployment. | **Playwright** |
 
 In jedem Fall wird in einem **DocBits-Browser-Tab eines Organisations-Admins** geklickt, mit dessen Rechten. Der Tab muss
-offen bleiben; Neuladen oder Schließen beendet den Lauf.
+offen bleiben; Neuladen oder Schließen beendet den Lauf. Einzige Ausnahme ist ein Schritt **Seite neu laden** des Tests selbst
+(siehe [Neu laden und fortsetzen](reload-and-resume.md)).
 
 ## Im Browser starten
 
@@ -28,6 +29,13 @@ offen bleiben; Neuladen oder Schließen beendet den Lauf.
 <figure><img src="../../../../.gitbook/assets/testing-13-live-run-de.png" alt="Bereich Laufender Test nach einem bestandenen Lauf"><figcaption><p>Bereich Laufender Test nach einem bestandenen Lauf.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/testing-14-run-indicator-de.png" alt="Laufanzeige unten rechts auf einer anderen Seite"><figcaption><p>Laufanzeige unten rechts auf einer anderen Seite.</p></figcaption></figure>
+
+{% hint style="info" %}
+**Uploads während eines Tests:** Hat Ihre Organisation Unterorganisationen und zeigt das Dashboard alle an, fragt der Upload-Dialog
+normalerweise, zu welcher Unterorganisation das Dokument gehört. Während ein Test läuft, geht der Upload ohne Rückfrage an die **erste
+Unterorganisation, die der Dialog anbietet**. Um in eine bestimmte Unterorganisation hochzuladen, starten Sie den Test aus der Ansicht
+dieser Unterorganisation.
+{% endhint %}
 
 ## Start von außen erlauben
 

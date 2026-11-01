@@ -1,6 +1,6 @@
 # Strumenti della dashboard
 
-Gli strumenti sono accanto alla ricerca. Passa il puntatore su un’icona per leggerne l’etichetta. Nelle finestre desktop più strette, apri **Altro**.
+Gli strumenti sono accanto alla ricerca. Passa il puntatore su un’icona per leggerne l’etichetta. Nelle finestre desktop più strette, apri **Di più**.
 
 | Strumento | Utilizzo |
 | --- | --- |
@@ -12,7 +12,7 @@ Gli strumenti sono accanto alla ricerca. Passa il puntatore su un’icona per le
 | Esporta tabella | Richiedi CSV o Excel se abilitato. Salva prima le modifiche alle colonne della vista personale: l’esportazione legge la configurazione salvata. |
 | Caricare | Seleziona o trascina file, scegli eventualmente un tipo di documento e avvia il caricamento. |
 
-<figure><img src="../../../.gitbook/assets/dashboard-upload-it.png" alt="Carica file e, se necessario, scegli il loro tipo di documento prima dell’importazione."><figcaption><p>Carica file e, se necessario, scegli il loro tipo di documento prima dell’importazione.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-37-upload-current-it-20261101.png" alt="Caricatore di documenti vuoto: area di rilascio, «Classificare come» disattivato, campo «Tipo» e pulsante «Caricare» inattivi, «Annulla» disponibile."><figcaption><p>Nessun file è selezionato. «Classificare come» è disattivato e il campo «Tipo» è inattivo; «Annulla» chiude la finestra.</p></figcaption></figure>
 
 Il registro permette di verificare le importazioni email. Filtra per oggetto o mittente e consulta le informazioni disponibili. La conferma di una richiesta di esportazione della tabella indica che il lavoro è stato inviato, non che un documento sia stato esportato verso l’ERP.
 

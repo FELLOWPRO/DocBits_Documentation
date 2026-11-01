@@ -12,7 +12,7 @@ De hulpmiddelen staan naast het zoekvak. Beweeg de aanwijzer over een pictogram 
 | Tabel exporteren | Vraag CSV of Excel aan als dit is ingeschakeld. Sla kolomwijzigingen van uw persoonlijke weergave eerst op: de export leest de opgeslagen configuratie. |
 | Uploaden | Kies of sleep bestanden, stel eventueel een documenttype in en start de upload. |
 
-<figure><img src="../../../.gitbook/assets/dashboard-upload-nl.png" alt="Upload bestanden en kies zo nodig vóór de import een documenttype."><figcaption><p>Upload bestanden en kies zo nodig vóór de import een documenttype.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-37-upload-current-nl-20261101.png" alt="Lege documentuploader: sleepzone, ‘Classificeer als’ uitgeschakeld, veld ‘Type’ en knop ‘Uploaden’ niet actief, ‘Annuleren’ beschikbaar."><figcaption><p>Er zijn nog geen bestanden geselecteerd. ‘Classificeer als’ is uitgeschakeld en het veld ‘Type’ is niet actief; ‘Annuleren’ sluit het venster.</p></figcaption></figure>
 
 Controleer e-mailimports in het importlogboek. Filter op onderwerp of afzender en bekijk de beschikbare informatie. Een geslaagde aanvraag voor een tabelexport bevestigt dat de opdracht is verstuurd; dit betekent niet dat een document naar uw ERP is geëxporteerd.
 

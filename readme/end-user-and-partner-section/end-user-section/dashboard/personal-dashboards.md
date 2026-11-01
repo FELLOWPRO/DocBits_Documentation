@@ -13,7 +13,7 @@ Un tableau de bord enregistré est une vue nommée de votre liste de travail : r
 4. Donnez un nom explicite et décidez qui peut utiliser la vue :
    * **Visible seulement par moi** garde la vue privée.
    * **Visible par tous les utilisateurs** la met à disposition de toutes les personnes de votre organisation.
-   * **Partager avec des groupes et des utilisateurs** affiche les deux listes **Groupe** et **Sélectionner l’utilisateur**, pour désigner des groupes ou des personnes précises.
+   * **Partager avec des groupes et des utilisateurs** affiche les deux listes **Groupes** et **Sélectionner l’utilisateur**, pour désigner des groupes ou des personnes précises.
 
 5. Choisissez **Enregistrer**. Le bouton de vue bascule sur le nouveau tableau de bord et affiche son nom et le nombre de documents.
 

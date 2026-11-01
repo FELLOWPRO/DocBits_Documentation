@@ -48,7 +48,7 @@ The DocBits Workflow Engine implements robust version control for all workflow c
 
 **Versions:** v1, v2 (Current: v2)
 
-📖 **Guide:** [Call External API Guide](cards-overview/call-api-guide.md)
+📖 **Guide:** [Call the DocBits API](cards-overview/call-api-guide.md)
 
 | Version | Translation | Status    | Key Changes                                        |
 | ------- | ----------- | --------- | -------------------------------------------------- |
@@ -683,9 +683,9 @@ v4: + "Compare as [param1] [param2]"
 
 ## Related Documentation
 
-* 📖 [Card Versioning Reference](cards-overview/po-comparison-versions-guide.md) - Detailed version information
+* 📖 [PO comparison card versions](cards-overview/po-comparison-versions-guide.md) - Comparison directions, tolerances and card versions
 * 📚 [Workflow Guides](README.md) - Step-by-step card usage
-* 🔄 [Card Version Database](cards-overview/po-comparison-versions-guide.md) - Complete version history
+* 🔄 [Card Versioning Overview](#card-versioning-overview) - Summary on this page
 * 📋 [Workflow Logs](workflow-logs.md) - Execution and debugging
 
 ***

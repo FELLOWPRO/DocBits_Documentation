@@ -10,13 +10,13 @@ Gebruik **Vergelijk met inkooporder** in de Workflow Builder wanneer een orderbe
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-77711a53d4d0-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
-Kies **Bestelgegevens** uit de orderbevestiging en een **Exploitant** voor de vergelijking met de inkooporder. Voer de **Tekst** in die u wilt schrijven, selecteer de **Veldnaam** en kies het **Resultaat van de conditie** dat het schrijven moet activeren.
+Kies **Bestelgegevens** uit de orderbevestiging en een **Operator** voor de vergelijking met de inkooporder. Voer de **Tekst** in die u wilt schrijven, selecteer de **Veldnaam** en kies het **Resultaat van de conditie** dat het schrijven moet activeren.
 
 ## De gegevens vergelijken
 
 <figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
-Kies **Elk/Alle** om te bepalen of een of alle geselecteerde voorwaarden moeten overeenkomen. Selecteer daarna de **Bestelgegevens**, de **Exploitant** en de **Vergelijkingsgegevens** voor de vergelijking met de inkooporder.
+Kies **Elk/Alle** om te bepalen of een of alle geselecteerde voorwaarden moeten overeenkomen. Selecteer daarna de **Bestelgegevens**, de **Operator** en de **Vergelijkingsgegevens** voor de vergelijking met de inkooporder.
 
 Zie [Workflow](../..) en [Vergelijk met inkooporder](.) voor de stappen ervoor en erna.
 

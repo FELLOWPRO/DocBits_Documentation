@@ -44,10 +44,10 @@ Then add an export configuration of type **Vertex** for the document type (**Set
 
 The fields that users see on the verification screen are designed per document type.
 
-1. Open **Settings** → **Global Settings** → **Document Types**, select the document type and click **More Settings**.
+1. Open **Settings** → **Document Types**, select the document type and click **More Settings**.
 2. Open the **Vertex Tax Verification** card and click **Design Vertex Tax Verification**.
 
-<figure><img src="../../../../../.gitbook/assets/doc-type-settings-vertex-tax-verification.png" alt="The Vertex Tax Verification card in the document type settings"><figcaption><p>The Vertex Tax Verification card.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-805-vertex-tax-verification-en-20261101.png" alt="The Vertex Tax Verification card in the document type settings"><figcaption><p>Current English Invoice More Settings card with Design Vertex Tax Verification.</p></figcaption></figure>
 
 The Layout Builder opens with the layout type **Vertex Tax Verification**. Drag groups and fields into the form, for example **Invoice details** with invoice number, date and delivery date. The **Vertex Tables Panel** shows the tax comparison and the line items with the Vertex tax per line. It is part of the layout.
 

@@ -8,7 +8,7 @@
 
 ## How to Access
 
-1. Navigate to **Settings** → **Global Settings** → **Document Types**.
+1. Navigate to **Settings** → **Document Types**.
 2. Select the document type and click **More Settings**.
 
 The breadcrumb at the top of the page shows **Settings / Document Types / More Settings**. The Settings Assistant on the right of the page explains the settings of the open card.
@@ -110,7 +110,11 @@ For the **Layout Builder** see the [Layout Manager](../layout-manager/).
 
 ## Vertex Tax Verification
 
-The **Vertex Tax Verification** card holds **Design Vertex Tax Verification**. It opens the Layout Builder for the form that users see when DocBits compares the vendor tax with the tax calculated by Vertex. See [Vertex Tax Verification](vertex-tax-verification.md) for the integration, the tolerance and the result.
+For the Invoice document type, expand the **Vertex Tax Verification** card and use **Design Vertex Tax Verification** to open the Layout Builder for the verification form. The form defines the fields shown alongside the comparison of vendor tax and Vertex tax.
+
+<figure><img src="../../../../../.gitbook/assets/dbdc-805-vertex-tax-verification-en-20261101.png" alt="Current English Vertex Tax Verification card for the Invoice document type with its Design link"><figcaption><p>Current English Invoice More Settings card with Design Vertex Tax Verification.</p></figcaption></figure>
+
+The **Vertex Tax Integration** switch is in **Settings → Module → Order & Finance**. See [Vertex Tax Verification](vertex-tax-verification.md) for integration setup, the **Before Export** or **Before Approval** trigger, tolerance settings and the verification result screen.
 
 ## E-Invoice Validation
 

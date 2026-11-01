@@ -35,7 +35,8 @@ the Inputs tab in a tab that stays open, switch it on and use its session ID. A 
 ## The run stopped or shows Cancelled / Undeliverable
 
 The tab that ran the test was reloaded, closed or lost its connection, or no tab answered in time. Keep the tab open
-and in the foreground until the run ends, then start again.
+and in the foreground until the run ends, then start again. A test with a **Reload page** step also ends this way if the page does not come back within about two minutes
+(see [Reload and Resume](reload-and-resume.md)).
 
 ## "Playwright templates cannot be started here yet"
 

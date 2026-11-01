@@ -4,7 +4,7 @@ This page is for developers and CI owners who write templates as JSON or start t
 
 ## Template JSON at a glance
 
-A template is a JSON document (schema version 1). Export any template with the download icon to see a complete example.
+A template is a JSON document (schema version 1; schema 1.1 to 1.3 add further steps and settings). Export any template with the download icon to see a complete example.
 
 ```json
 {
@@ -26,7 +26,8 @@ A template is a JSON document (schema version 1). Export any template with the d
 ```
 
 * `id` and `version` identify a template; a saved version never changes, save changes under a new `version`.
-* `params` declares the values an input supplies; steps refer to them as `{{params.<name>}}`.
+* `params` declares the values an input supplies; steps refer to them as `{{params.<name>}}`. From schema 1.3, a step can remember a value (`captureValue`, `as`) and later steps use it as `{{vars.<name>}}`.
+* `section` (`prepare`, `check`, `cleanup`) sorts a step into a phase. From schema 1.3, `cleanup` steps must be the last steps and run even after a failure. `reload` (schema 1.3) reloads the page and the run continues afterwards.
 * `allowWrites: true` is required for templates that upload, export, delete or approve.
 * Steps address elements by stable test IDs (`target`), never by visible text, so a template works in every UI language.
 * Validate before saving: **Import JSON → Validate**, or `POST /live-tests/validate`.
@@ -72,7 +73,7 @@ only and never stored.
 ## Limits of the in-browser runner
 
 * Tests run as the person who registered the tab: no login, no role switch.
-* A full page reload ends the run.
+* A full page reload ends the run, except the template's own `reload` step (schema 1.3).
 * Native browser dialogs (file chooser, print, alerts) cannot be driven; file uploads use organisation or server test files.
 * Screenshot steps are skipped (the run becomes **Blocked**).
 For anything beyond this, use Playwright directly.

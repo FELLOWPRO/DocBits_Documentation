@@ -44,11 +44,15 @@ In the template editor:
 1. Enter a **Template name** and, optionally, what the template is for.
 2. Select **+ Add step** and choose a block, for example **Open page**, **Click**, **Fill in**, **Select**,
    **Wait for**, **Check text**, **Check field** or **Check status**. **Ready-made blocks** add a common sequence in one go, for example
-   **Upload a document** or **Check a document field**.
+   **Upload a document** or **Upload document and wait until processed**. See [Steps and Ready-made Blocks](steps-and-blocks.md)
+   for the step groups, the **Advanced** settings and cleanup steps.
 3. For every value that differs per organisation or per run, use the parameter button next to the value. The value
    becomes a parameter under **Inputs · change for each run**, with a type (**Text**, **Number**, **Yes/No**,
    **Server test file**), a default value and **Required** if it must be filled in.
 4. Select **Save**. To try the draft once without saving, select **Run once**.
+
+To choose the element of a step by pointing at it in the application, use **Pick in app**
+([Pick an Element in the App](pick-in-app.md)).
 
 Steps that change data (for example uploading a document) are marked **writes data**. A template with such steps
 asks for a confirmation every time it starts.

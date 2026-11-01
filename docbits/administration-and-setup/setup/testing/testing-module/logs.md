@@ -29,6 +29,25 @@ there is one.
 
 <figure><img src="../../../../.gitbook/assets/testing-18-log-detail-fail.png" alt="Log details of a failed run"><figcaption><p>Log details of a failed run.</p></figcaption></figure>
 
+### Expected and actual value
+
+Under a check that failed, **Log details** shows what the check expected and what it found:
+
+* **Expected**: the value the template asks for.
+* **Actual**: the value that was on the page.
+
+Both appear on **development and test environments** only, are shortened to 120 characters and are left out when the
+step uses a sensitive value. On a customer environment (sandbox, production) the log keeps only the error code.
+
+### Cleanup
+
+If the template has [cleanup steps](steps-and-blocks.md), the chip next to the result shows how they ended:
+**Cleanup: passed**, **Cleanup: failed** or **Cleanup: skipped** (for example because the run was stopped). Cleanup steps
+run even after a failed check. A failed cleanup does not change the result of the run, but test data, for example an
+uploaded document, may be left behind. Open the log to see which cleanup step failed.
+
+<figure><img src="../../../../.gitbook/assets/testing-34-log-expected-actual.png" alt="Log details: the failed check with Expected and Actual, and the chip Cleanup: passed"><figcaption><p>Log details: the failed check with Expected and Actual, and the chip Cleanup: passed.</p></figcaption></figure>
+
 ## History chart
 
 Above the list, **History** shows how tests ran over time. Switch between **Show as chart** and **Show as table**.

@@ -70,6 +70,9 @@ input supplies what is specific to yours. You can also create your own templates
 Read on:
 
 * [Templates](templates.md): defaults, your own templates, import and delete
+* [Steps and Ready-made Blocks](steps-and-blocks.md): step groups, advanced settings, cleanup, remembered values
+* [Pick an Element in the App](pick-in-app.md): choose an element by pointing at it
+* [Reload and Resume](reload-and-resume.md): reload the page in the middle of a test
 * [Inputs](inputs.md): save your organisation's values
 * [Start a Test](start-a-test.md): in the browser, from an AI assistant or from Playwright
 * [Logs and History](logs.md): results, chart and CSV export

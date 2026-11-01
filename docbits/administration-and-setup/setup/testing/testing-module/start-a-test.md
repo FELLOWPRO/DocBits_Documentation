@@ -10,7 +10,8 @@ ways are equal and every run ends up in the [Logs](logs.md).
 | **From outside (Playwright or REST)** | Your test automation or CI pipeline starts checks, for example after a deployment. | **Playwright** |
 
 In every case the clicks happen in a **DocBits browser tab of an organisation admin**, with that person's
-permissions. The tab must stay open; reloading or closing it ends the run.
+permissions. The tab must stay open; reloading or closing it ends the run. The only exception is a **Reload page** step of
+the test itself (see [Reload and Resume](reload-and-resume.md)).
 
 ## Start in the browser
 
@@ -28,6 +29,13 @@ permissions. The tab must stay open; reloading or closing it ends the run.
 <figure><img src="../../../../.gitbook/assets/testing-13-live-run.png" alt="Live run panel after the test passed"><figcaption><p>Live run panel after the test passed.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/testing-14-run-indicator.png" alt="Run indicator in the bottom right corner on another page"><figcaption><p>Run indicator in the bottom right corner on another page.</p></figcaption></figure>
+
+{% hint style="info" %}
+**Uploads during a test:** if your organisation has sub-organisations and the dashboard shows all of them, the upload
+dialog normally asks which sub-organisation the document belongs to. While a test runs, the upload goes to the
+**first sub-organisation the dialog offers**, without asking. To upload into a particular sub-organisation, start the
+test from that sub-organisation's view.
+{% endhint %}
 
 ## Allow starts from outside
 

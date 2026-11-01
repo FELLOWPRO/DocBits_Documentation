@@ -12,7 +12,7 @@ Les outils se trouvent à côté de la recherche. Survolez une icône pour affic
 | Exporter le tableau | Demandez un CSV ou un fichier Excel si l’option est activée. Enregistrez d’abord les changements de colonnes de votre vue personnelle : l’export lit la configuration enregistrée. |
 | Télécharger des fichiers | Choisissez ou déposez des fichiers, précisez éventuellement leur type et lancez l’importation. |
 
-<figure><img src="../../../.gitbook/assets/dashboard-upload-fr.png" alt="Importez des fichiers et choisissez leur type de document avant l’importation si nécessaire."><figcaption><p>Importez des fichiers et choisissez leur type de document avant l’importation si nécessaire.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-37-upload-current-fr-20261101.png" alt="Téléchargeur de documents vide : zone de dépôt, « Classer comme » désactivé, champ « Type » et bouton « Télécharger » inactifs, « Annuler » disponible."><figcaption><p>Aucun fichier n’est sélectionné. « Classer comme » est désactivé et le champ « Type » est inactif ; « Annuler » ferme la boîte de dialogue.</p></figcaption></figure>
 
 Le journal aide à vérifier les imports de courriels. Filtrez par objet ou expéditeur et consultez les informations disponibles. La confirmation d’une demande d’export du tableau signifie que la demande a été soumise ; elle ne signifie pas qu’un document a été exporté vers l’ERP.
 

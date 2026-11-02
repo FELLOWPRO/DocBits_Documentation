@@ -1,6 +1,6 @@
 # Condição de grupo atribuído único
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_v2-pt-pt.png" alt="Condição de grupo atribuído único, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 **Propósito:**\
 Este cartão de fluxo de trabalho executa operações com base no facto de uma tarefa ou documento estar atribuído a um determinado grupo. Utiliza uma condição simples para acionar ou impedir ações com base na atribuição de grupo.

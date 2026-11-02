@@ -1,6 +1,8 @@
 # Verificar a presença e o conteúdo de um campo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1-pt-pt.png" alt="Verificar a presença e o conteúdo de um campo, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-pt-pt.png" alt="Verificar a presença e o conteúdo de um campo, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## Quando utilizar
 
@@ -31,10 +33,10 @@ Estes exemplos mostram os resultados esperados. Para validar o próprio número,
 
 ## Vídeo de exemplo com um administrador
 
-Quando uso esta carta, onde a encontro e como deteto números de fatura em falta. O administrador, o escritório e a voz são sintéticos; a demonstração mostra a interface real do DocBits de uma conta de teste. Os exemplos mostram os resultados esperados.
+Quando uso esta carta, onde a encontro e como deteto números de fatura em falta. Os exemplos mostram os resultados esperados.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.mp4" %}
 
-[Abrir vídeo com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.html)
+[Abrir vídeo com legendas em português](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt-theme-v4.html)
 
 [Ler transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pt.txt)

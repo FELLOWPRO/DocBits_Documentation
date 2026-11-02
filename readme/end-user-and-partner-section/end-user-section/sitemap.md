@@ -21,6 +21,14 @@ As entradas são coloridas por tipo:
 
 Clique em qualquer entrada para pular diretamente até ela. Entradas que precisam de um parâmetro (como um tipo ou identificador de documento) incluem um seletor embutido — escolha o valor antes de clicar.
 
+## Vídeos de formação na lista
+
+As entradas de páginas com vídeo de formação mostram um ícone de vídeo depois do nome — não só em Definições, mas em todo o catálogo, por exemplo no Painel, na Validação de campos ou nas páginas de Workflow. Selecione o ícone para reproduzir o vídeo dessa página no painel **Vídeos e tutoriais** sem sair do mapa do site.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-pt.png" alt="Mapa do Site com ícones de vídeo junto a várias entradas e o painel Vídeos e tutoriais aberto no vídeo da validação de campos"><figcaption><p>As entradas com vídeo de formação têm um ícone de vídeo; ao selecioná-lo, o vídeo abre no painel.</p></figcaption></figure>
+
+O painel continua a listar cada vídeo por tema, pelo que também pode percorrer e pesquisar toda a biblioteca a partir do ícone da barra superior. Ver [Vídeos e tutoriais](videos-and-tutorials.md).
+
 ## Pesquisa e filtros
 
 O cabeçalho fixo na parte superior contém a caixa de pesquisa e os filtros em forma de pílulas. Digite alguns caracteres para filtrar a lista ao vivo por nome e descrição. Use as pílulas de tipo para restringir a um único tipo de entrada — por exemplo, apenas **Diálogo**.

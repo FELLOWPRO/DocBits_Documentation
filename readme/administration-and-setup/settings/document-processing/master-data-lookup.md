@@ -1,5 +1,13 @@
 # Pesquisa de dados mestre
 
+## Vídeo tutorial: Dados mestres e listas de valores
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/pt.mp4" %}
+Fontes de dados mestres, listas de valores e configurações de dados mestre no DocBits
+{% endembed %}
+
+O vídeo mostra as fontes de dados mestres, as listas de valores e as configurações de dados mestre de um tipo de documento.
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 

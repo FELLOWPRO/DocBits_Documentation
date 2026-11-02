@@ -1,6 +1,6 @@
 # Definir caixa de seleção como
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-bab00fc455aa-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_set_boolean_field_v2-pt-pt.png" alt="Definir caixa de seleção como, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 

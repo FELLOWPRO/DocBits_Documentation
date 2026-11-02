@@ -1,8 +1,12 @@
 # Qualquer / todo o preço unitário é
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6c572102504a-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v2-pt-pt.png" alt="Qualquer / todo o preço unitário é, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2a7bdfe3ffe9-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v3-pt-pt.png" alt="Qualquer / todo o preço unitário é, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v4-pt-pt.png" alt="Qualquer / todo o preço unitário é, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_to_po_unit_price_v5-pt-pt.png" alt="Qualquer / todo o preço unitário é, Versão 5" width="634"><figcaption><p>Versão 5</p></figcaption></figure>
 
 ## **Objetivo:**
 

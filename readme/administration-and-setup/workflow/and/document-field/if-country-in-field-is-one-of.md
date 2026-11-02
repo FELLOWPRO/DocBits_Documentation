@@ -1,6 +1,6 @@
 # Se o país no campo for um dos
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-pt-pt.png" alt="Se o país no campo for um dos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 Use esta condição quando uma etapa adicional de processamento deva ser aplicada a documentos de países específicos, por exemplo Alemanha e França. O cartão compara o país lido de um campo do documento com uma lista de países configurada.
 

@@ -1,34 +1,36 @@
-# Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance
+# Caso 8a, 9a: Quantità fuori tolleranza (Approvato), Prezzo unitario entro la tolleranza
+
+Lo scenario seguente illustra una mappatura configurata, non un modello predefinito di cui sia stata verificata la distribuzione. L’output effettivo, gli importi, i segni e i tipi di documento dipendono dalle regole e dalle espressioni `conflict_resolution` attive, dalla mappatura di esportazione e dalle decisioni di approvazione. Qualsiasi nota di debito o di credito descritta è subordinata a tale configurazione; l’esempio non ne garantisce l’emissione automatica né la conformità legale.
 
 ## Scenario:
 
-The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
+La quantità sulla fattura non rientra nella tolleranza accettabile ma è stata approvata, mentre il prezzo unitario rimane entro la tolleranza.
 
-## Action:
+## Azione:
 
-The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+Il sistema accetta la quantità approvata e il prezzo unitario come da fattura ed elabora la transazione di conseguenza.
 
-## Example:
+## Esempio:
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Unit Price: $12.00 per unit
+  * Prezzo unitario: $12.00 per unità
   * Total Amount: $1,800.00
 * **Invoice Received:**
-  * Quantity: 160 units (outside tolerance of 6.67% but approved)
-  * Unit Price: $12.00 per unit (within tolerance)
+  * Quantità: 160 unità (tolleranza esterna del 6.67% ma approvata)
+  * Prezzo unitario: $12.00 per unità (entro la tolleranza)
   * Total Amount: $1,920.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolleranza prezzo unitario: ±2%
 
-Since the quantity (160 units) exceeds the acceptable tolerance limit but has been approved, and the unit price ($12.00) is within the acceptable range, the system will:
+Poiché la quantità (160 unità) supera il limite di tolleranza accettabile ma è stata approvata e il prezzo unitario ($12.00) rientra nell'intervallo accettabile, il sistema:
 
-1. **Accept the Approved Quantity:** The system acknowledges that the quantity has been approved despite being outside the normal tolerance range.
-2. **Accept the Unit Price:** The unit price of $12.00 per unit is within the acceptable tolerance, so it is accepted as invoiced.
-3. **Process the Transaction:** The system calculates the total amount using the approved quantity and unit price:
-   * **Total Amount = Quantity × Unit Price**
-   * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** The system processes the invoice with the total amount of $1,920.00, reflecting the approved quantity and accepted unit price.
+1. **Accetta la quantità approvata:** Il sistema riconosce che la quantità è stata approvata nonostante sia al di fuori del normale intervallo di tolleranza.
+2. **Accetta il prezzo unitario:** Il prezzo unitario di $12.00 per unità rientra nella tolleranza accettabile, quindi viene accettato come fatturato.
+3. **Elabora la transazione:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario:
+   * **Importo totale = Quantità × Prezzo unitario**
+   * **Importo totale = 160 unità × $12.00 per unitàà = $1,920.00**
+4. **Finalizza la fattura:** Il sistema elabora la fattura con l'importo totale di $1,920.00, riflettendo la quantità approvata e il prezzo unitario accettato.
 
-This approach allows the system to accommodate approved variances in quantity while ensuring the unit price remains within the expected range, facilitating smooth transaction processing.
+Questo approccio consente al sistema di accogliere le variazioni approvate nella quantità garantendo al tempo stesso che il prezzo unitario rimanga all'interno dell'intervallo previsto, facilitando l'elaborazione regolare delle transazioni.

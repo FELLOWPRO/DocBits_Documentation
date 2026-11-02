@@ -2,7 +2,7 @@
 description: Come importare un Receive Delivery BOD in DocBits manualmente tramite API
 ---
 
-# Importare Entrate Merci (Receive Delivery BOD)
+# Importare ricevimenti merci (Ricevi Consegna BOD)
 
 Le entrate merci arrivano normalmente in DocBits in automatico attraverso il flusso di dati ION. Questa pagina descrive come inviare un **Receive Delivery BOD** manualmente — utile quando si vuole reimportare un'entrata, caricare un lotto che non è mai arrivato o testare una mappatura dei campi prima di attivare il flusso automatico.
 
@@ -167,7 +167,7 @@ Se qualcosa non andava nella richiesta, si ottiene `"success": false` insieme a 
 
 ### 5. Verificare che i dati siano arrivati
 
-* In DocBits, andare in **Settings → Document Processing → Lookup Master Data**.
+* In DocBits, vai in **Impostazioni → Elaborazione documenti → Ricerca dati anagrafici**.
 * Selezionare **BOD Input Data** a sinistra, poi aprire la scheda dei dati importati.
 * Cercare l'entrata merci o l'ordine di acquisto a cui appartiene.
 

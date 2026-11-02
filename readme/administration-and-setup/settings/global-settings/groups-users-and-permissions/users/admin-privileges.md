@@ -8,7 +8,7 @@ Il ruolo di un amministratore è fondamentale per la gestione dei sistemi IT, de
 
 Oltre a queste responsabilità, gli amministratori hanno anche il compito di gestire le impostazioni sensibili e di garantire che i sistemi soddisfino i requisiti di conformità e le migliori pratiche di sicurezza delle informazioni. Ciò include la gestione dei dati sensibili, la configurazione dei controlli di accesso e dei permessi, e il monitoraggio e l'analisi dei registri di sistema per identificare e affrontare potenziali rischi per la sicurezza.
 
-## Admin vs System Admin
+## Amministratore e amministratore di sistema
 
 DocBits dispone di due ruoli di amministratore: **Admin** e **System Admin**. Sembrano simili, ma svolgono compiti diversi. Ecco la versione semplice.
 

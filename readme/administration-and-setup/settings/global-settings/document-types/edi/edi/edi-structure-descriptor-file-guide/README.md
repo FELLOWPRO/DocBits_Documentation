@@ -51,3 +51,13 @@ Questo è particolarmente utile per il debug dei mapping e la convalida dei ragg
 ## 6. Video Guida
 
 Una guida video per questo tipo di file è disponibile nella [pagina dei Video.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Usala per seguire la configurazione, la modifica e l'anteprima.
+
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-list-it.png" alt="Formato EDI esistente con i quattro attributi configurati."><figcaption><p>Formato EDI esistente con i quattro attributi configurati.</p></figcaption></figure>
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-detail-it.png" alt="Attributo STRUCTUREDESCRIPTOR attivo: descrittore di struttura JSON nell’editor di sola lettura."><figcaption><p>Attributo STRUCTUREDESCRIPTOR attivo: descrittore di struttura JSON nell’editor di sola lettura.</p></figcaption></figure>
+
+
+Le viste mostrano una configurazione e una versione esistenti. Le impostazioni variano in base al tipo di documento e al formato. Convalidare le modifiche in una bozza prima dell’attivazione.
+
+Nella versione dell’interfaccia illustrata, l’intestazione Version del pannello delle versioni resta in inglese. Gli identificatori tecnici degli attributi e il codice di configurazione restano invariati.

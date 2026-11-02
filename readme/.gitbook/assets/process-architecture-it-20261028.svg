@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">Tre percorsi dati tra DocBits e Infor</title>
+<desc id="desc">Leggere separatamente la ricezione dei documenti, la fornitura dei dati anagrafici e l&#x27;esportazione. Schema di integrazione Infor. Posizione, connessioni, BODs e sistemi di destinazione dipendono dalla tua specifica implementazione.</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOCBITS/PANORAMICA DEL PROCESSO</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">Tre percorsi dati tra DocBits e Infor</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">Leggere separatamente la ricezione dei documenti, la fornitura dei dati anagrafici e l&#x27;esportazione.</text>
+<rect x="90" y="275" width="290" height="140" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="114" y="333.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#126a8a">Ricezione del</text>
+<text x="114" y="374.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#126a8a">documento</text>
+<rect x="435" y="275" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="458" y="336.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">E-mail/Carica/API</text>
+<polyline points="910,345 925,345" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="925,345 911.8362615716444,352.19138307906303 911.8362615716444,337.80861692093697" fill="#126a8a"/>
+<rect x="933" y="275" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="956" y="336.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">Elaborazione DocBits</text>
+<polyline points="1408,345 1423,345" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1423,345 1409.8362615716444,352.19138307906303 1409.8362615716444,337.80861692093697" fill="#126a8a"/>
+<rect x="1431" y="275" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1454" y="336.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">Convalida/Approvazione</text>
+<polyline points="380,345 420,345" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="420,345 406.8362615716444,352.19138307906303 406.8362615716444,337.80861692093697" fill="#126a8a"/>
+<rect x="90" y="448" width="290" height="140" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="114" y="506.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#126a8a">Dati anagrafici</text>
+<rect x="435" y="448" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="458" y="509.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">Infor LN / M3</text>
+<polyline points="910,518 925,518" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="925,518 911.8362615716444,525.191383079063 911.8362615716444,510.80861692093697" fill="#126a8a"/>
+<rect x="933" y="448" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="956" y="509.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">BOD tramite ION</text>
+<polyline points="1408,518 1423,518" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1423,518 1409.8362615716444,525.191383079063 1409.8362615716444,510.80861692093697" fill="#126a8a"/>
+<rect x="1431" y="448" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1454" y="509.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">Ricerca DocBits / PO</text>
+<polyline points="380,518 420,518" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="420,518 406.8362615716444,525.191383079063 406.8362615716444,510.80861692093697" fill="#126a8a"/>
+<rect x="90" y="621" width="290" height="140" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="114" y="679.78" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#126a8a">Risultati</text>
+<rect x="435" y="621" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="458" y="682.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">Esportazione DocBits</text>
+<polyline points="910,691 925,691" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="925,691 911.8362615716444,698.191383079063 911.8362615716444,683.808616920937" fill="#126a8a"/>
+<rect x="933" y="621" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="956" y="682.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">Elaborazione IDM / ION</text>
+<polyline points="1408,691 1423,691" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1423,691 1409.8362615716444,698.191383079063 1409.8362615716444,683.808616920937" fill="#126a8a"/>
+<rect x="1431" y="621" width="475" height="140" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1454" y="682.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">Destinazione di tipo</text>
+<text x="1454" y="724.6" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#1c1d1e">documento in ERP</text>
+<polyline points="380,691 420,691" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="420,691 406.8362615716444,698.191383079063 406.8362615716444,683.808616920937" fill="#126a8a"/>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">Schema di integrazione Infor. Posizione, connessioni, BODs e sistemi di destinazione dipendono dalla tua specifica implementazione.</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">Spiegazione schematica · Il processo e le opzioni dipendono dalla configurazione.</text>
+</svg>

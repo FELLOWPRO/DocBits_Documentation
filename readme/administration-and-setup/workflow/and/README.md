@@ -1,64 +1,63 @@
-# And
+# E
 
-## Comprendere le schede "And"
+Utilizza una carta **E** per decidere se un flusso di lavoro deve continuare dopo l'attivazione **Quando**. Aggiungi i controlli necessari prima dell'azione **Allora**. Ogni scheda mostra i campi da compilare, come **Operatore**, **Nome campo** o **Valore**; gli screenshot mostrano i modelli di carte disponibili, non le regole completate.
 
-### **Scopo delle schede 'And':**
+Nel **Costruttore di flussi di lavoro**, seleziona **Aggiungi carta** sotto **E...**. Scegli una categoria a sinistra o digita il nome di una carta in **Cerca carta**. Seleziona l'anteprima di una carta per aggiungerla al flusso di lavoro. Puoi scorrere l'elenco di anteprima per vedere più carte. Usa **×** per chiudere il selettore senza scegliere un'altra carta. Dopo aver configurato le carte, salva il flusso di lavoro. Vedi [Flusso di lavoro](..) per i passaggi circostanti **Quando**, **E** e **Allora**.
 
-* Le schede **And** fungono da schede di condizione che specificano i criteri che devono essere soddisfatti affinché il workflow prosegua. Agiscono di fatto come operatori logici "AND", il che significa che tutte le condizioni specificate in queste schede devono essere soddisfatte affinché l'azione successiva venga attivata.
+## Confronta con Ordine d'Acquisto
 
-#### Categorie di schede 'And'
+Utilizzare queste schede per confrontare i dati dell'ordine o della fattura con un ordine di acquisto, ad esempio il prezzo unitario, la data di consegna promessa, le spese o la quantità. Scegli i campi, l'operatore e l'eventuale tolleranza richiesta dalla carta selezionata. Vedi [Confronta con ordine d'acquisto](compare-with-purchase-order) per le singole carte.
 
-Dagli screenshot risulta chiaro che queste schede coprono un'ampia gamma di condizioni, tra cui:
+<figure><img src="../../../.gitbook/assets/prior-u035-it.png" alt="Condizioni di confronto con gli ordini di acquisto. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni di confronto con gli ordini di acquisto. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-* **Compare with Purchase Order**:
-  * Condizioni relative alla validazione e al confronto con gli ordini d'acquisto, come il confronto delle date di consegna, dei prezzi unitari o delle differenze di quantità. Sono fondamentali per garantire che le transazioni siano conformi ai termini concordati.
+## Campo documento
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Scegli questa categoria per selezionare una casella di controllo o lo stato di un campo, confrontare un campo con un valore o confrontare due campi. Compila i segnaposto **Nome del campo** e **Operatore** sulla scheda scelta. Alcuni confronti richiedono anche una tolleranza. Vedi [Campo documento](document-field).
 
-* **Document Field**:
-  * Riguardano condizioni basate su campi specifici all'interno dei documenti, come caselle di controllo selezionate, confronto dei valori dei campi o la verifica che un campo del documento rientri in una determinata tolleranza. Questo è particolarmente importante per l'integrità dei dati e i controlli automatizzati all'interno di moduli o sistemi di gestione documentale.
+<figure><img src="../../../.gitbook/assets/prior-u036-it.png" alt="Condizioni sui campi del documento. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sui campi del documento. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Data e ora
 
-* **Date & Time:**
-  * Condizioni basate su date e orari
+Utilizza **Data e ora** per confrontare una data o un'ora con un intervallo o confronta **Oggi** con una data scelta. Seleziona **Operatore** e i valori della data nella scheda. Vedi [Data e ora](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u037-it.png" alt="Condizioni di data e ora. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni di data e ora. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-* **Document**:
-  * Condizioni basate sulle caratteristiche del documento, come il tipo o l'associazione a una particolare sotto-organizzazione. Queste condizioni possono indirizzare i workflow in base alla categorizzazione del documento o al coinvolgimento di un reparto.
+## Documento
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Utilizza queste schede quando un flusso di lavoro deve dipendere dal **tipo di documento** o **sub-organizzazione**. Scegli il tipo o l'organizzazione nominata nella carta. Vedi [Documento](document).
 
-* **Logic**:
-  * Condizioni logiche che possono comportare valutazioni come "Continua con una probabilità di X%" o l'esecuzione di richieste HTTPS, fondamentali per le integrazioni e per il processo decisionale probabilistico all'interno dei workflow.
+<figure><img src="../../../.gitbook/assets/prior-u038-it.png" alt="Condizioni sui documenti. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sui documenti. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Logica
 
-* **Status**:
-  * Concentrandosi sullo stato di documenti o attività, queste condizioni garantiscono che solo gli elementi in determinati stati attivino workflow specifici, aspetto cruciale per la gestione dei processi basata sullo stato.
+Questa categoria include i controlli utilizzando una tabella decisionale, una risposta HTTPS, la disponibilità del modulo, il prezzo di un articolo quotato, un valore casuale o due valori. Apri la scheda specifica e inserisci i segnaposto nominati; ad esempio, la scheda HTTPS richiede un URL, un metodo e un codice di stato accettato. Vedi [Logica](logic).
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u039-it.png" alt="Condizioni logiche. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni logiche. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-* **Table**:
-  * Riguardano condizioni basate sui dati di tabella, come la corrispondenza con pattern regex o il confronto di valori all'interno di una tabella. Tali condizioni sono essenziali per validare e manipolare grandi insiemi di dati.
+## Stato
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Usa **Stato** per verificare se un documento ha uno stato scelto o se il suo stato è in un set selezionato. Scegli **Operatore** e **Stato** nella scheda. Vedi [Stato](status).
 
-* **Assignee**:
-  * Condizioni basate sugli assegnatari di attività o documenti. Questo garantisce che le azioni vengano intraprese solo quando sono coinvolti determinati utenti, migliorando la responsabilità e la specificità delle attività.
+<figure><img src="../../../.gitbook/assets/prior-u040-it.png" alt="Condizioni sullo stato. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sullo stato. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Tabella
 
-### Applicazione pratica
+Queste schede esaminano le righe della tabella dei documenti. Le opzioni visibili includono controlli della data, modelli di testo, durata di conservazione e confronti tra colonne. Seleziona **Nome tabella** e **Nome colonna** prima di scegliere un operatore o un modello. Vedi [Tabella](table).
 
-Queste schede "And" vengono configurate all'interno del workflow per eseguire controlli e validazioni che garantiscono che il processo rispetti rigorosamente le regole aziendali e gli standard di integrità dei dati. Ad esempio:
+<figure><img src="../../../.gitbook/assets/prior-u041-it.png" alt="Condizioni sulle tabelle di dati. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sulle tabelle di dati. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-* **Un workflow potrebbe usare una scheda 'And' per verificare che l'importo totale di una fattura corrisponda all'ordine d'acquisto prima di attivare il pagamento.**
-* **Un altro workflow potrebbe usare una scheda 'And' per garantire che un documento venga revisionato da specifici membri del team prima di passare alla fase successiva.**
+## Confronta con il prezzo preventivo
 
-### Conclusione
+Utilizza queste schede per confrontare un articolo con i dati del prezzo quotato. Le scelte visibili riguardano ID articolo, tipo fornitore, ID articolo fornitore, prezzo unitario e unità di misura. Il **Operatore** e i segnaposto dei dati dipendono dalla carta selezionata.
 
-Le schede "And" sono un componente fondamentale dei sistemi di workflow che richiedono un controllo preciso sull'esecuzione del processo in base a più condizioni. Garantiscono che ogni passaggio di un workflow proceda solo quando tutti i criteri necessari sono pienamente soddisfatti, automatizzando così alberi decisionali complessi all'interno dei processi aziendali.
+<figure><img src="../../../.gitbook/assets/prior-u042-it.png" alt="Condizioni sui prezzi dei preventivi. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sui prezzi dei preventivi. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-Comprendere e configurare correttamente queste schede è cruciale per sfruttare appieno le capacità del tuo sistema di gestione dei workflow, al fine di migliorare efficienza, accuratezza e conformità nei processi organizzativi.
+## Assegnatario
+
+Utilizzare **Assegnatario** quando la condizione dipende dall'utente o dal gruppo assegnato. Scegli se confrontare con un utente o un gruppo o un set selezionato. Vedi [Assegnatario](assignee).
+
+<figure><img src="../../../.gitbook/assets/prior-u043-it.png" alt="Condizioni sulle assegnazioni. La categoria Cessionario riguarda l’assegnazione a utenti e gruppi; alcune schede restano in inglese. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sulle assegnazioni. La categoria Cessionario riguarda l’assegnazione a utenti e gruppi; alcune schede restano in inglese. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
+
+[Schede di confronto dettagliate delle citazioni e comportamento Qualsiasi/Tutto](../cards-overview/quote-comparison-guide.md).
+
+Alcune etichette del prodotto restano in inglese o presentano traduzioni inesatte. Le tabelle sono tabelle di dati; i valori restituiti non sono rendimenti finanziari. Gli identificatori tecnici restano invariati.

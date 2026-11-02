@@ -18,7 +18,7 @@ Scripts de ejemplo listos para producción para casos de uso comunes de automati
 - [Tarea para Monto Elevado](task-high-amount.md) — Crear tarea de aprobación para facturas grandes
 - [Campos Obligatorios Dinámicos](dynamic-required-fields.md) — Ajustar campos obligatorios según la moneda
 
-### Fulltext & Vector Search
+### Ricerca a testo completo e vettoriale
 - [Detección de Facturas Duplicadas](duplicate-invoice-detection.md) — Encontrar duplicados de facturas mediante búsqueda fulltext
 - [Detección de Documentos Similares](similar-document-detection.md) — Marcar documentos similares mediante búsqueda vectorial
 - [Búsqueda de Texto de Cumplimiento](compliance-text-search.md) — Buscar palabras clave de cumplimiento (ej. Reverse Charge)

@@ -1,6 +1,8 @@
 # Chiama l'Api
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-it-it.png" alt="Chiama l&#x27;Api, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-it-it.png" alt="Chiama l&#x27;Api, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 <!-- workflow-card-call-api-contract-20261022 -->
 

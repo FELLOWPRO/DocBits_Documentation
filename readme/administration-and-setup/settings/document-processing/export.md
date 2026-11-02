@@ -41,6 +41,17 @@ Tuttavia, è possibile avere:
 * **Un'esportazione Infor attiva** _e_ **un'esportazione non-Infor attiva** contemporaneamente per lo stesso tipo di documento
 * **Diverse configurazioni di esportazione per diverse sotto-organizzazioni** — ad esempio, un'esportazione Infor per la Sotto-Org A e un'altra esportazione Infor per la Sotto-Org B
 
+## Attivazione dalla schermata di modifica
+
+Una configurazione esistente ha un interruttore **Attivo** nel piè di pagina della schermata di modifica, accanto a **Salva**.
+
+1. Aprite la configurazione in modifica (**Modifica**).
+2. Portate l'interruttore **Attivo** nello stato desiderato e selezionate **Salva**.
+
+DocBits attiva o disattiva quindi la configurazione con lo stesso controllo usato dall'elenco: se per lo stesso tipo di documento è già attiva un'altra configurazione, l'attivazione viene rifiutata. Salvare il modulo non modifica più da solo lo stato memorizzato; l'interruttore nel piè di pagina e lo stato mostrato nell'elenco coincidono sempre.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-it.png" alt="Schermata di modifica di una configurazione di esportazione con l'interruttore Attivo nel piè di pagina tra Annulla e Salva"><figcaption><p>L'interruttore Attivo accanto a Salva nella schermata di modifica della configurazione di esportazione.</p></figcaption></figure>
+
 ## **Creazione di una nuova esportazione**
 
 Per creare una nuova esportazione:
@@ -296,3 +307,30 @@ Per creare una nuova esportazione:
 * **File di mappatura M3 TOML** Seleziona un file di mapping dal file manager o usa l'opzione seleziona Toml per usare un toml creato con il gestore delle regole. [Hai bisogno di aiuto per crearne uno? Consulta la Guida al Gestore delle Regole](rule-manager/)
 
 </details>
+
+
+## Video tutorial: Configurare e testare l’esportazione verso l’ERP
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/it.mp4" %}
+Configurare e testare l’esportazione verso l’ERP
+{% endembed %}
+
+[Guarda con sottotitoli e capitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/it.html)
+
+Alcune etichette native possono rimanere in un’altra lingua. Gli identificatori tecnici dei campi sono conservati.
+
+Utilizzo una configurazione e un tipo di documento dedicati al test. Le fatture contengono dati fittizi. Il destinatario di prova verifica la trasmissione, senza effettuare registrazioni in un ERP di produzione. Non modifico le altre integrazioni.
+
+Nella configurazione di esportazione, controllo il tipo di documento, l'organizzazione e il tipo di esportazione. Questo esempio utilizza Generic API nel cloud. Le credenziali JSON e la mappatura dei campi TOML sono file separati. Nei progetti reali, il sistema di destinazione, le autorizzazioni e la sottorganizzazione devono corrispondere al processo previsto.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-it-recovery-export-v1.png" alt="Configurazione di esportazione limitata al tipo di documento di formazione"><figcaption><p>Configurazione di esportazione limitata al tipo di documento di formazione</p></figcaption></figure>
+
+Nella mappatura corretta, il campo DocBits invoice_id fornisce il numero di fattura inviato al destinatario di prova. Sono associati anche il fornitore, l’importo totale e la valuta. Questo test controlla i dati di intestazione. Le righe di fattura e la registrazione nell’ERP richiedono verifiche aziendali separate per ogni progetto.
+
+Carico il file TOML corretto e salvo la configurazione. Poi la riapro e verifico che la modifica sia stata salvata. Le credenziali di test restano invariate; quelle di produzione non devono comparire nella registrazione.
+
+Torno alla fattura di test con errore di esportazione e riavvio l'esportazione esattamente una volta. Attendo che il processo sia concluso. La sola accettazione della richiesta non dimostra che la trasmissione sia riuscita.
+
+DocBits mostra ora la fattura come completata. Inoltre, controllo la conferma di ricezione del destinatario di prova. Il numero di fattura, il fornitore, l’importo e la valuta coincidono con la fattura di test. L’autenticazione e la trasmissione sono riuscite. Il destinatario di prova non conferma alcuna registrazione nell’ERP.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-it-recovery-export-v1.png" alt="Ricezione effettiva presso il destinatario di test; nessuna registrazione nell’ERP"><figcaption><p>Ricezione effettiva presso il destinatario di test; nessuna registrazione nell’ERP</p></figcaption></figure>

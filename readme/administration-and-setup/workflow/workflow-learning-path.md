@@ -32,6 +32,10 @@ Leggere e costruire: [Quando viene eseguito il mio workflow?](workflow-execution
 
 ## 2. Prima regola propria <a id="level-2"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/it.html).
+
 **Esercizio:** Creare When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW. Lasciarla inattiva. Provare dati completi per 999, 1000 e 1000.01. Non serve ancora un nodo di controllo.
 
 **Criterio di completamento:** REVIEW si raggiunge solo oltre 1000. Registrare tipo, operatore e uscita scelta. Gestire separatamente l’input assente.
@@ -39,6 +43,10 @@ Leggere e costruire: [Quando viene eseguito il mio workflow?](workflow-execution
 Leggere e costruire: [Caso Advanced: instradamento delle fatture](advanced-workflow-case-study.md) · [Pacchetto di formazione sui workflow](workflow-training-kit.md).
 
 ## 3. Campi, tipi e limiti <a id="level-3"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/it.html).
 
 **Esercizio:** Provare assente, null, testo vuoto, spazi, false, 0 e numeri testuali. Calcolare tolleranze con riferimento ordine e documento. Confrontare una e tutte le righe effettivamente abbinate.
 
@@ -48,6 +56,10 @@ Leggere e costruire: [P1: scegliere Field is, Docfield is o Compare two Fields](
 
 ## 4. Regole aziendali e approvazioni <a id="level-4"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/it.html).
+
 **Esercizio:** Configurare due regole di importo senza sovrapposizione. Seguire il risultato utente salvato fino all’assegnazione. Pianificare A con ordine 10 e B con 20, rifiuto e ripiego.
 
 **Criterio di completamento:** Distinguere responsabilità, attività, notifica e approvazione reale. Il passaggio a B richiede una decisione di A elaborata.
@@ -55,6 +67,10 @@ Leggere e costruire: [P1: scegliere Field is, Docfield is o Compare two Fields](
 Leggere e costruire: [P1: seguire la tabella decisionale fino all’assegnazione](masterclass/decision-table-routing.md) · [P1: distinguere assegnazione, attività e approvazione sequenziale](masterclass/assignment-task-sequential.md).
 
 ## 5. Controllo Advanced e sotto-workflow <a id="level-5"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/it.html).
 
 **Esercizio:** Confrontare ALL, ANY e OR con due controlli raggiunti. Esaminare un ramo non scelto. Eseguire i sette casi v2 e provare Run Workflow con un proprio destinatario inattivo.
 
@@ -64,6 +80,10 @@ Leggere e costruire: [P0: collegare correttamente Wait ALL, Wait ANY e OR](maste
 
 ## 6. Calcolo, integrazione ed export <a id="level-6"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/it.html).
+
 **Esercizio:** Confrontare tutta la tabella prima/dopo, inclusi regex senza corrispondenza e divisione per zero. Definire il contratto reale di scrittura dei risultati. Pianificare export dopo approvazione con una propria configurazione di test.
 
 **Criterio di completamento:** Provare separatamente valori successivi, ricezione ed elaborazione ERP. Non registrare simulazione o richiesta di export come consegna.
@@ -71,6 +91,10 @@ Leggere e costruire: [P0: collegare correttamente Wait ALL, Wait ANY e OR](maste
 Leggere e costruire: [P1: calcolare colonne e verificare dipendenze regex](masterclass/table-calculations.md) · [P1: verificare chiamate API e uso successivo delle risposte](masterclass/api-response-contract.md) · [P1: scegliere export, attività aperte e stato finale](masterclass/export-lifecycle.md).
 
 ## 7. Modifiche e gestione esperta <a id="level-7"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/it.mp4" %}
+
+[Apri il video con sottotitoli in italiano e trascrizione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/it.html).
 
 **Esercizio:** Salvare l’export del workflow e le versioni prima di modificarlo. Ripetere casi positivi, negativi, errori, limiti e una seconda esecuzione. Collegare il primo errore a input e configurazione precisi.
 

@@ -30,7 +30,7 @@ Rule-based layouts are switched on **per document type** by an **organisation ad
 2. Click the **settings** (gear) icon on the document type card.
 3. Open **Manage Layouts** and turn the toggle on.
 
-<figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="The Manage Layouts toggle"><figcaption><p>The Manage Layouts toggle in the additional settings of a document type</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/lsr-manage-layouts-toggle-en-20261102.png" alt="The Manage Layouts section in the additional settings of a document type, subtitled Enable Layout Management, with the Manage Layouts toggle switched on."><figcaption><p>The Manage Layouts toggle in the additional settings of a document type</p></figcaption></figure>
 
 The **Layouts** link on the document type card now opens **Layouts & Selection Rules**.
 
@@ -41,7 +41,7 @@ DocBits converts your existing origin-based layouts into rules — once, for thi
 * The layout of the origin **DEFAULT** becomes the **default layout** (the fallback).
 * Every layout of a specific origin becomes a rule **"Layout for XX"** with the condition *Document Origin is XX*, pointing to that layout. These rules get priorities in steps of 10 (for example 2000, 2010, 2020 …), so you can place your own rules before, between or after them.
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-default-row.png" alt="Origin rules created on activation and the default layout"><figcaption><p>The origin rules created on activation, followed by the default layout (FALLBACK)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/lsr-default-layout-row-en-20261102.png" alt="The bottom of the Selection rules list: the last origin rules Layout for UY and Layout for VN, followed by the FALLBACK row Default layout marked is_default, which is used when no rule above matches."><figcaption><p>The origin rules created on activation, followed by the default layout (FALLBACK)</p></figcaption></figure>
 
 Nothing is deleted or changed in the layouts themselves. Right after activation every document therefore gets exactly the layout it got before. Only when you add or change rules does the behaviour change.
 
@@ -49,9 +49,9 @@ Nothing is deleted or changed in the layouts themselves. Right after activation 
 
 ## The Layouts & Selection Rules screen
 
-<figure><img src="../../../../../.gitbook/assets/layouts-overview.png" alt="The Layouts tab"><figcaption><p>The Layouts tab: every layout of the document type as a card</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/lsr-layouts-overview-en-20261102.png" alt="The Layouts tab of Layouts and Selection Rules for the INVOICE document type: the screen tabs Field Validation, Approval, Reject and Review, the All, My layouts and System filter, the New layout button and layout cards with Edit, Clone and Delete."><figcaption><p>The Layouts tab: every layout of the document type as a card</p></figcaption></figure>
 
-* **Layouts / Selection rules** (top right) switch between the list of layouts and the list of rules. The numbers show how many there are.
+* **Layouts / Selection rules** (below the page description) switch between the list of layouts and the list of rules. The numbers show how many there are.
 * **Field Validation / Approval / Reject / Review** switch the **screen**. Every screen has its own layouts, its own rules and its own default layout — an Approval rule never changes the validation screen.
 * On the **Layouts** tab you can create, edit, clone and delete layouts. Each card shows whether a rule uses the layout ("Not targeted by rules" when none does). Filter with **All / My layouts / System**; system layouts are shipped with DocBits and can be viewed and cloned, but not changed.
 
@@ -97,7 +97,7 @@ The layout is always chosen from the **current** values of the document. If a us
 
 ## Manage selection rules
 
-<figure><img src="../../../../../.gitbook/assets/layout-selection-rules-list.png" alt="The Selection rules tab"><figcaption><p>The Selection rules tab of the Field Validation screen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/lsr-rules-list-en-20261102.png" alt="The Selection rules tab of the Field Validation screen: a table with the columns Priority, Rule and conditions, Target layout, Source and Active, the first row marked FIRST, drag grips on the left and a three-dots menu on each row."><figcaption><p>The Selection rules tab of the Field Validation screen</p></figcaption></figure>
 
 Each row shows the **priority** (the first row is marked **FIRST**), the **rule name and key** with its **conditions**, the **target layout**, the **source** badge and an **Active** switch.
 

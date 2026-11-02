@@ -1,5 +1,7 @@
 # Atribuir sequencialmente a grupos
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_group_sequential_v2-pt-pt.png" alt="Atribuir sequencialmente a grupos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
 ## **Propósito**
 
 O cartão de fluxo de trabalho "**Atribuir o documento sequencialmente aos grupos**" permite a atribuição sequencial de documentos a um ou mais grupos selecionados. O valor de prioridade determina a ordem de atribuição, sendo que números mais baixos representam uma prioridade mais elevada.

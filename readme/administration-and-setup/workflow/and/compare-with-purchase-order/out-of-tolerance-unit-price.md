@@ -1,6 +1,6 @@
 # Preço unitário fora da tolerância
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_separat_unit_price_operator_field_values_v3-pt-pt.png" alt="Preço unitário fora da tolerância, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
 ## **Propósito:**
 

@@ -1,26 +1,23 @@
 # Creare un nuovo Sottotipo
 
-## Ecco le istruzioni passo dopo passo per creare un nuovo sottotipo:
+Creare un sottotipo di documento quando uno stesso tipo di documento richiede impostazioni dei campi, un layout di convalida o script propri. È necessario avere accesso a **Impostazioni → Tipi di Documento**.
 
-* **Navigare nell'area Impostazioni:** Accedi a DocBits come amministratore e naviga nell'area Gestione Tipi di Documento.
+## 1. Aprire il tipo di documento
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_type_settings_nav.png" alt="Docbits Document Type Settings Nav"><figcaption></figcaption></figure>
+Aprire **Impostazioni → Tipi di Documento**. Nella scheda del tipo di documento interessato, selezionare **Sottotipi di documento**. L'esempio seguente usa **Fattura**; scegliere il tipo che corrisponde ai propri documenti. Gli altri link della scheda portano alle impostazioni dell'intero tipo di documento.
 
-* **Selezionare l'opzione per aggiungere un sottotipo:** Clicca sul pulsante "+ Nuovo" per aggiungere un nuovo sottotipo.
+<figure><img src="../../../../.gitbook/assets/new-subtype-document-type-it.png" alt="Scheda Fattura nelle impostazioni italiane dei Tipi di Documento, con il link Sottotipi di documento"><figcaption><p>Aprire i sottotipi del tipo di documento che si desidera configurare.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_add_subtype_button.png" alt="Docbits Add Subtype Button"><figcaption></figcaption></figure>
+## 2. Avviare un nuovo sottotipo
 
-* **Assegnare un nome al sottotipo:** Inserisci un nome descrittivo per il nuovo sottotipo. Questo nome dovrebbe descrivere chiaramente lo scopo del sottotipo in modo che gli utenti possano capire facilmente quale tipo di documenti rappresenta.
+In **Sottotipi di documento**, selezionare **+ Nuovo**. I sottotipi esistenti compaiono nell'elenco; il menu **Azioni** (i tre puntini) si riferisce a una riga esistente. Se **+ Nuovo** non reagisce a un clic del mouse, portare il focus sul pulsante con la tastiera e premere **Invio**.
 
-<figure><img src="https://lh7-us.googleusercontent.com/hFxoJh9mFR52IbFtRGTstXUGjUc2u9fBzlya5kPj18REi9ampOKfek6NPaNje_fGash3brlAZkEw8MHqDPpNEPCvnb122xYiHMqwVzV35FQdoev8XLXiu7DogUuGjsoun51sum8Z8PLZo2xw9bvImRc" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-list-it.png" alt="Elenco italiano Sottotipi di documento con il pulsante Nuovo e un sottotipo di esempio sintetico"><figcaption><p>L'organizzazione di test della documentazione contiene solo un sottotipo di esempio sintetico.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/EjBS5qKWAm0SoZhLkhT2KW1q5F89vZ6FCLZ2ZzvxfJPmVE9DyyAUXieHA_56guDbKsuEvNDY9DyA-uUMx8Q1UDMSohmhyIVnnLfZaPiXrVSGsXpnjEgtpF7GtOOiRX8VsXBpu2-3lpqc0zu2LdzIYZk" alt=""><figcaption></figcaption></figure>
+## 3. Denominarlo e salvarlo
 
-* **Configurare le impostazioni iniziali:** Imposta le configurazioni iniziali per il nuovo sottotipo, inclusi i campi predefiniti, le opzioni e i modelli da utilizzare per questo sottotipo. Ciò può includere l'aggiunta di campi di metadati specifici, la specifica di flussi di lavoro di approvazione o la configurazione delle autorizzazioni utente.
-* **Effettuare configurazioni opzionali:** A seconda dei requisiti della tua azienda o della natura dei documenti, puoi effettuare configurazioni aggiuntive per personalizzare il nuovo sottotipo in base alle tue esigenze specifiche. Ciò può includere l'impostazione di valori predefiniti, regole di convalida o azioni personalizzate.
+Inserire un **Name** con lettere e caratteri di sottolineatura, quindi inserire un **Title** descrittivo. Entrambi i campi sono obbligatori. I nomi in questo screenshot sono solo esempi. Selezionare **Salva** per creare il sottotipo oppure **Annullamento** per uscire senza crearlo.
 
-<figure><img src="https://lh7-us.googleusercontent.com/d3-6iNTABnLH9KbWlM1NMu8Nsy2-KbqTd2elHgZYF1jwZOKqP17qttUCD4j676VJN3t7J0I85wHjr8TIfv3UGgLVxNvV4ns2I82EfCKHbyfIAUA8ML6IbLzoLH4Ucn57XzgUNZLO9LeCLzlk_m-M3EQ" alt=""><figcaption><p>Azione</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-it.png" alt="Dialogo Creare un nuovo sottotipo di documento con Name, Title, Annullamento e Salva in italiano"><figcaption><p>Alla creazione vengono inseriti solo Name e Title.</p></figcaption></figure>
 
-* **Salvare il nuovo sottotipo:** Una volta inserite tutte le informazioni richieste, salva il nuovo sottotipo per crearlo nel sistema di gestione dei documenti.
-
-Dopo che il nuovo sottotipo è stato creato, gli utenti possono aggiungere e gestire documenti di quel tipo in base alle impostazioni iniziali specificate. Assicurati di informare gli utenti sul nuovo sottotipo e di fornire formazione o guida, se necessario, per aiutarli a utilizzarlo in modo efficace.
+Dopo il salvataggio, il nuovo sottotipo compare nell'elenco. Per definirne campi, layout o script, aprire il suo menu **Azioni** e seguire [Configurare sottotipi](configure-subtypes.md). Queste impostazioni vengono effettuate dopo la creazione, non nella finestra **+ Nuovo**.

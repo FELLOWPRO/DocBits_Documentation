@@ -10,7 +10,7 @@ ai clienti._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Supporto FacturaE.** Le fatture elettroniche spagnole FacturaE 3.1 vengono
   classificate ed estratte senza alcuna configurazione, con mappature dei
@@ -74,7 +74,7 @@ ai clienti._
   nel contesto della vostra sotto-organizzazione, non nel contesto del
   documento che si trova aperto in quel momento.
 
-### Workflow Builder
+### Editor dei flussi di lavoro
 
 - L'elenco dei workflow conserva ricerca, ordinamento, pagina e dimensione
   della pagina quando aprite un workflow e tornate indietro, anche tramite il

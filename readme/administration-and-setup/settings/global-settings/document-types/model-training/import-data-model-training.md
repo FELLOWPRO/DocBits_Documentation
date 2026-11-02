@@ -1,39 +1,30 @@
 # Importare documenti di esempio per l'addestramento del modello
 
-Usa questa pagina per aggiungere PDF di esempio a un tipo di documento e poi addestrare o testare il suo modello di classificazione. Serve accesso a **Impostazioni** e **Tipi di Documento**. Per lo scopo delle funzioni di addestramento, vedi [Scopo e utilizzo: Addestramento del Modello](purpose-and-use-model-training.md).
+## Preparare, importare e controllare documenti campione
 
-## Aprire il tipo di documento
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-it-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-it-light-20261029.png" alt="Preparare, importare e controllare documenti campione"></picture><figcaption><p>Preparare, importare e controllare documenti campione</p></figcaption></figure>
 
-1. Vai a **Impostazioni → Tipi di Documento**.
-2. Trova il tipo di documento che vuoi addestrare. Nella sua riga, seleziona **Modello di formazione**. L'esempio seguente usa **Fattura**.
+Scegli documenti campione rappresentativi, prepara le opzioni di importazione disponibili e controlla lo stato dell'importazione. Solo i campioni importati con successo sono pronti per il successivo addestramento. Risolvi gli errori di importazione prima del passaggio successivo e mantieni i documenti di test indipendenti separati dal set di dati di training.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-649-document-types-it-20261011.png" alt="Riga di Fattura nella pagina Tipi di Documento con il link Modello di formazione"><figcaption><p>Apri Modello di formazione dal tipo di documento scelto.</p></figcaption></figure>
 
-Gli altri controlli di questa scheda hanno uno scopo diverso: **Attivare** abilita il tipo di documento, **Extraction** cambia la sua modalità di estrazione, l'ingranaggio apre le sue impostazioni e i link rimanenti aprono altre aree di configurazione. Non serve modificarli solo per aprire l'Addestramento del Modello.
+Prepara documenti rappresentativi dei formati, delle lingue e dei tipi che l’organizzazione deve elaborare. Usa soltanto i formati accettati dalla tua installazione. Evita i duplicati e separa i documenti di addestramento da quelli riservati alla valutazione.
 
-La pagina **Modello di treno** mostra il numero di campioni e un elenco dei documenti di addestramento caricati. Nell'organizzazione di esempio, l'elenco contiene cinque documenti; la tua organizzazione può mostrare altri documenti e cifre.
+## Accedere all’importazione
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-649-model-training-it-20261011.png" alt="Pagina Modello di treno di Fattura con il numero di campioni, Importazione, Modello di treno, Classificazione del test e l'elenco dei documenti"><figcaption><p>Le tre azioni sono in alto a destra dell'elenco di addestramento.</p></figcaption></figure>
+Nelle impostazioni del tipo di documento interessato, apri l’addestramento del modello e la funzione di importazione.
 
-## Importare PDF di esempio
+<figure><img src="../../../../../.gitbook/assets/site-extra-model-training-overview-it.png" alt="Comandi di importazione, addestramento e test del modello. Non è stato eseguito alcun addestramento o test: questa vista non mostra un risultato di accuratezza. La colonna Name resta in inglese nella versione illustrata."><figcaption><p>Comandi di importazione, addestramento e test del modello. Non è stato eseguito alcun addestramento o test: questa vista non mostra un risultato di accuratezza. La colonna Name resta in inglese nella versione illustrata.</p></figcaption></figure>
 
-1. Seleziona **Importazione**.
-2. Scegli l'**Importo e formato della data** che corrisponde al documento di esempio. Ad esempio, scegli **Germany** per le convenzioni tedesche di numero e data. Questa selezione indica a DocBits come interpretare i valori del documento caricato; non cambia la lingua dell'app.
-3. Trascina i file PDF nella finestra di dialogo o usa **Caricare** per selezionarli. L'attuale importer di documenti di esempio accetta **file PDF**; rifiuta altri tipi di file. Selezionando i file parte il caricamento.
-4. Chiudi la finestra di dialogo e verifica che i documenti compaiano nell'elenco di addestramento. Se DocBits segnala un errore di caricamento o che un documento esiste già, correggi il file o scegli un altro esempio prima di continuare.
+## Scegliere formato e file
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-649-import-dialog-it-20261011.png" alt="Finestra di dialogo di importazione con il selettore Importo e formato della data, l'area di trascina e rilascia e il pulsante Caricare"><figcaption><p>Scegli un formato prima di selezionare i PDF di esempio.</p></figcaption></figure>
+Seleziona il formato degli importi e delle date corrispondente ai file, poi scegli i documenti da importare. Per esempio, `1.234,56` e `1,234.56` usano separatori diversi; una data come `05/06/2026` deve essere interpretata secondo il formato selezionato.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-649-format-menu-it-20261011.png" alt="Menu Importo e formato della data con opzioni di paesi e regioni, inclusi Germany, United Kingdom, France e Spain"><figcaption><p>Scegli il formato del documento, non la tua lingua preferita dell'interfaccia.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-it.png" alt="Modulo di importazione vuoto con formato degli importi e delle date. Il titolo della finestra è Caricatore di documenti. Nessun file è stato selezionato o caricato e nessun addestramento è stato avviato."><figcaption><p>Modulo di importazione vuoto con formato degli importi e delle date. Il titolo della finestra è Caricatore di documenti. Nessun file è stato selezionato o caricato e nessun addestramento è stato avviato.</p></figcaption></figure>
 
-Per le azioni sui campioni importati, vedi [Gestire i dati di addestramento](manage-training-data.md).
+Controlla la selezione prima di avviare l’importazione. Attendi la fine dell’elaborazione e verifica gli errori e il tipo di documento assegnato. Correggi gli esempi classificati o estratti in modo errato prima di usarli per l’addestramento.
 
-## Addestrare e verificare il modello
+## Addestrare e valutare
 
-Quando i PDF di esempio previsti sono nell'elenco, seleziona **Modello di treno**. DocBits può elaborare l'addestramento in background; attendi il suo messaggio di completamento prima di considerare il nuovo modello pronto. Il numero di campioni e gli eventuali limiti del piano mostrati in questa pagina appartengono alla tua organizzazione.
+Dopo aver controllato i dati, usa **Addestra il modello** secondo le funzioni e i permessi della tua versione. Valuta poi il risultato su un campione separato: aggiungere documenti non garantisce di per sé una maggiore accuratezza. Vedi [Testare il modello](testing-the-model.md).
 
-Per verificare la classificazione, seleziona **Classificazione del test** e carica un file di esempio separato nella finestra di dialogo. Dopo l'elaborazione, DocBits indica se il tipo di documento previsto corrisponde a questa pagina e mostra i dettagli della classificazione. La finestra di test vuota qui sotto è mostrata senza inviare alcun file.
-
-<figure><img src="../../../../../.gitbook/assets/dbdc-649-test-dialog-it-20261011.png" alt="Finestra di dialogo Classificazione del test con l'area di trascina e rilascia e il pulsante Caricare"><figcaption><p>Usa Classificazione del test per verificare il modello con un altro documento.</p></figcaption></figure>
-
-Per interpretare il risultato, vedi [Test del modello](testing-the-model.md). Se il risultato è scarso, controlla i [dati di addestramento](manage-training-data.md) e la [guida alla risoluzione dei problemi](troubleshooting.md) prima di aggiungere altri campioni.
+Le immagini mostrano i comandi disponibili e un modulo vuoto: non è stato caricato alcun file, non è stato avviato alcun addestramento e non sono state misurate prestazioni durante questa verifica.

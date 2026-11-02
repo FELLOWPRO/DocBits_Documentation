@@ -1,6 +1,8 @@
-# Compare In
+# Confronta dentro
 
-<figure><img src="../../../../.gitbook/assets/image (43).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_regex_v1-it-it.png" alt="Confronta dentro, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_regex_v2-it-it.png" alt="Confronta dentro, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -10,12 +12,12 @@ Questa scheda DocBits esegue un confronto tra due colonne di una tabella specifi
 
 * **Confronto di colonne con dipendenza:** Questa scheda confronta i valori di due colonne specificate in base a una condizione impostata, che viene applicata solo se il valore in una terza colonna di "dipendenza" corrisponde a un pattern regex Python definito.
 * **Operatori:** Gli utenti possono scegliere i seguenti operatori per il confronto delle colonne:
-  * **Equals (=):** Verifica se i valori nelle due colonne sono esattamente uguali.
-  * **Not Equals (≠):** Garantisce che i valori nelle due colonne non siano uguali.
-  * **Greater Than (>):** Conferma che i valori nella prima colonna siano maggiori di quelli nella seconda colonna.
-  * **Greater or Equals (≥):** Garantisce che i valori nella prima colonna siano maggiori o uguali a quelli nella seconda colonna.
-  * **Lesser Than (<):** Verifica se i valori nella prima colonna sono minori di quelli nella seconda colonna.
-  * **Less or Equals (≤):** Garantisce che i valori nella prima colonna siano minori o uguali a quelli nella seconda colonna.
+  * **Uguale (=):** Verifica se i valori nelle due colonne sono esattamente uguali.
+  * **Diverso (≠):** Garantisce che i valori nelle due colonne non siano uguali.
+  * **Maggiore di (>):** Conferma che i valori nella prima colonna siano maggiori di quelli nella seconda colonna.
+  * **Maggiore o uguale (≥):** Garantisce che i valori nella prima colonna siano maggiori o uguali a quelli nella seconda colonna.
+  * **Minore di (<):** Verifica se i valori nella prima colonna sono minori di quelli nella seconda colonna.
+  * **Minore o uguale (≤):** Garantisce che i valori nella prima colonna siano minori o uguali a quelli nella seconda colonna.
 * **Dipendenza regex:** Questa scheda include una funzionalità di dipendenza che consente agli utenti di definire un pattern regex per una terza colonna. La condizione di confronto viene applicata solo se almeno un valore nella colonna di dipendenza corrisponde al pattern regex.
 
 ## **Utilizzo:**
@@ -26,6 +28,6 @@ Questa scheda è particolarmente utile negli scenari in cui è richiesta una log
 
 ## **Scenario di esempio:**
 
-* Un utente configura la scheda per confrontare le colonne "Quantity" e "Threshold" in una tabella "Stock" con la condizione **Quantity ≥ Threshold**. Questo confronto avviene solo se la colonna "Item Code" corrisponde al pattern regex per formati di codice specifici, come **^A\d{3}$** (che indica un codice articolo che inizia con "A" seguito da tre cifre).
+* Un utente configura la scheda per confrontare le colonne "Quantity" e "Threshold" in una tabella "Stock" con la condizione **Quantità ≥ Soglia**. Questo confronto avviene solo se la colonna "Item Code" corrisponde al pattern regex per formati di codice specifici, come **^A\d{3}$** (che indica un codice articolo che inizia con "A" seguito da tre cifre).
 
 Utilizzando la scheda "Conditional Column Comparison", le organizzazioni possono creare confronti avanzati e dipendenti da pattern all'interno dei dataset, consentendo un'elaborazione dei dati ottimizzata e una maggiore accuratezza nei workflow condizionali.

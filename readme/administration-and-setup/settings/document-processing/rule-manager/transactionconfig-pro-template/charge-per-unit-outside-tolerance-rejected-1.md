@@ -1,37 +1,39 @@
-# Charge Per Unit Outside Tolerance (Rejected)
+# Encargo por unidade fora da tolerância (Rejeitado)
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-The charge per unit is outside tolerance and has not been approved.
+## Cenário:
 
-## Action:
+O encargo por unidade está fora da tolerância e não foi aprovado.
 
-The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+## Ação:
 
-## Example:
+O sistema ajusta o encargo por unidade ao pedido de compra ou aos valores aprovados e gera as notas de débito ou crédito necessárias.
 
-* **Purchase Order (PO):**
-  * Charge Per Unit: $6.00
-  * Quantity: 800 units
-  * Total Charge Amount: $4,800.00
-* **Invoice Received:**
-  * Charge Per Unit: $7.00 (outside tolerance of 16.67%, rejected)
-  * Quantity: 800 units
-  * Total Charge Amount: $5,600.00
-* **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+## Exemplo:
 
-Since the charge per unit ($7.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+* **Pedido de compra (PO):**
+  * Encargo por unidade: $6.00
+  * Quantidade: 800 unidades
+  * Valor total dos encargos: $4,800.00
+* **Fatura recebida:**
+  * Encargo por unidade: $7.00 (fora da tolerância de 16.67%, rejeitado)
+  * Quantidade: 800 unidades
+  * Valor total dos encargos: $5,600.00
+* **Níveis de tolerância:**
+  * Tolerância do encargo por unidade: ±5%
 
-1. **Reject the Invoiced Charge Per Unit:** The system does not accept the invoiced charge per unit of $7.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Charge Per Unit:** The system adjusts the charge per unit to match the purchase order or the approved charge per unit:
-   * Adjusted Charge Per Unit = $6.00 (from PO)
-3. **Recalculate the Total Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
-   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount:
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $4,800.00 and issues a debit note for $800.00 to account for the overcharged amount.
+Como o encargo por unidade ($7.00) excede a tolerância de 5% e não foi aprovado, o sistema irá:
 
-This approach ensures that financial transactions are consistent with the purchase order terms, rejecting unapproved variances and maintaining accurate billing practices.
+1. **Rejeitar o encargo faturado por unidade:** o sistema não aceita o valor de $7.00 porque o desvio excede o limite de tolerância.
+2. **Ajustar o encargo por unidade:** o sistema ajusta o valor ao pedido de compra ou ao encargo por unidade aprovado:
+   * Encargo ajustado por unidade = $6.00 (do pedido de compra)
+3. **Recalcular o total dos encargos:** o sistema recalcula o total com o encargo por unidade ajustado:
+   * **Valor total corrigido dos encargos = Quantidade × Encargo ajustado por unidade**
+   * **Valor total corrigido dos encargos = 800 unidades × $6.00 = $4,800.00**
+4. **Gerar uma nota de débito:** como o total original da fatura é superior ao total corrigido, o sistema gera uma nota de débito para o valor cobrado em excesso:
+   * **Valor da nota de débito = Total original da fatura - Valor total corrigido dos encargos**
+   * **Valor da nota de débito = $5,600.00 - $4,800.00 = $800.00**
+5. **Processar a fatura:** o sistema processa a fatura com o total corrigido dos encargos de $4,800.00 e emite uma nota de débito de $800.00 para refletir o valor cobrado em excesso.
+
+Esta abordagem mantém a transação alinhada com as condições do pedido de compra e rejeita os desvios não aprovados.

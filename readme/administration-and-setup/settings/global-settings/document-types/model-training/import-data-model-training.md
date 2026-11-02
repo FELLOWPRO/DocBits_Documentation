@@ -1,56 +1,46 @@
-# Importar Dados: Treinamento do Modelo
+# Importar documentos de exemplo para o treinamento do modelo
 
-Forneça instruções detalhadas sobre como importar documentos de amostra para treinamento, incluindo o formato e os tipos de documentos a serem usados.
+## Preparar, importar e verificar documentos de amostra
 
-**Para importar documentos de amostra para treinamento, siga estas etapas:**
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pt-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pt-light-20261029.png" alt="Preparar, importar e verificar documentos de amostra"></picture><figcaption><p>Preparar, importar e verificar documentos de amostra</p></figcaption></figure>
 
-* **Prepare os documentos de amostra:** Certifique-se de que os documentos de amostra estejam em um formato compatível, como PDF, Word, Excel, etc. Esses documentos devem cobrir uma variedade de tipos e formatos que podem ser encontrados nas operações de produção do sistema de processamento de documentos.
-* **Navegue até a função de importação:** Faça login na área de administração do sistema de processamento de documentos e navegue até a área onde você pode importar novos documentos.
+Escolha documentos de amostra representativos, prepare as opções de importação disponíveis e verifique o status da importação. Somente amostras importadas com sucesso estão prontas para treinamento subsequente. Resolva erros de importação antes da próxima etapa e mantenha os documentos de teste independentes separados do conjunto de dados de treinamento.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_global_settings_import_nav.png" alt="Docbits Global Settings Import Nav"><figcaption><p>Configurações Globais</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_function_area.png" alt="Docbits Import Function Area"><figcaption></figcaption></figure>
+Use esta página para adicionar PDFs de exemplo a um tipo de documento e, em seguida, treinar ou testar seu modelo de classificação. Você precisa de acesso a **Configurações** e **Tipos de Documentos**. Para a finalidade das funções de treinamento, consulte [Propósito e uso: Treinamento do Modelo](purpose-and-use-model-training.md).
 
-* **Selecione a opção para importar documentos:** Clique no botão ou link para importar documentos. Pode haver uma opção como "Importar".
+## Abrir o tipo de documento
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_documents_button.png" alt="Docbits Import Documents Button"><figcaption></figcaption></figure>
+1. Vá para **Configurações → Tipos de Documentos**.
+2. Encontre o tipo de documento que deseja treinar. Em sua linha, selecione **Treinamento de modelo**. O exemplo abaixo usa **Fatura**.
 
-* **Selecione o formato de valor e data:**
+<figure><img src="../../../../../.gitbook/assets/dbdc652-document-types-pt-20261011.png" alt="Linha Fatura na página Tipos de Documentos com o link Treinamento de modelo"><figcaption><p>Abra o Treinamento de modelo a partir do tipo de documento escolhido.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_manage_users_button.png" alt="Docbits Manage Users Button"><figcaption></figcaption></figure>
+Os outros controles deste cartão servem para outras finalidades: **Ativar** habilita o tipo de documento, **Extraction** alterna o modo de extração, a engrenagem abre suas configurações, e os demais links abrem outras áreas de configuração. Você não precisa alterá-los apenas para abrir o Treinamento de modelo.
 
-**Formato de Valor:**
+A página **Modelo De Trem** mostra a contagem de amostras e a lista de documentos de treinamento enviados. Na organização de exemplo, a lista contém documentos; sua organização pode exibir outros documentos e contagens.
 
-O formato de valor pode variar por região, mas em geral existem algumas convenções comuns:
+<figure><img src="../../../../../.gitbook/assets/dbdc652-model-training-pt-20261011.png" alt="Página Modelo De Trem da Fatura mostrando a contagem de amostras, Importar, Modelo de trem, Classificação do teste e a lista de documentos"><figcaption><p>As três ações ficam no canto superior direito da lista de treinamento.</p></figcaption></figure>
 
-1. Símbolo da moeda: O símbolo da moeda geralmente é fornecido antes do valor, por exemplo, "$" para dólares americanos, "€" para euros, "£" para libras esterlinas, etc.
-2. Separador de milhar: Em alguns países, números longos são separados por um separador de milhar para melhor legibilidade. Nos EUA, uma vírgula é comumente usada (por exemplo, 1,000), enquanto em muitos países europeus um ponto é usado (por exemplo, 1.000).
-3. Separador decimal: O separador decimal é usado para separar a parte inteira das casas decimais. A maioria dos países de língua inglesa usa um ponto (por exemplo, 10.99), enquanto muitos países europeus usam uma vírgula (por exemplo, 10,99).
+## Importar PDFs de exemplo
 
-#### Formato de Data:
+1. Selecione **Importar**.
+2. Escolha o **Formato de valor e data** que corresponde ao documento de exemplo. Por exemplo, escolha **Germany** para as convenções alemãs de números e datas. Esta seleção informa ao DocBits como interpretar os valores no documento enviado; ela não altera o idioma do aplicativo.
+3. Arraste os arquivos PDF para a caixa de diálogo ou use **Carregar** para selecioná-los. O importador atual de documentos de exemplo aceita **arquivos PDF**; ele rejeita outros tipos de arquivo. Selecionar os arquivos inicia o envio.
+4. Feche a caixa de diálogo e verifique se os documentos aparecem na lista de treinamento. Se o DocBits relatar um erro de envio ou um documento já existente, corrija o arquivo ou escolha outro exemplo antes de continuar.
 
-O formato de data também varia por região, com diferentes países tendo convenções diferentes. Aqui estão os formatos mais comuns:
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-pt.png" alt="Caixa de diálogo Carregador de documentos com o seletor Formato de valor e data, a área de arrastar e soltar e o campo Carregar"><figcaption><p>Escolha um formato antes de selecionar os PDFs de exemplo.</p></figcaption></figure>
 
-1. Dia-Mês-Ano (DD-MM-AA ou DD.MM.AA): Em muitos países europeus, a data é especificada no formato dia-mês-ano. Por exemplo, "21.05.24" representa 21 de maio de 2024.
-2. Mês-Dia-Ano (MM-DD-AA ou MM/DD/AA): Nos Estados Unidos, o formato mês-dia-ano é frequentemente usado. Por exemplo, "05/21/24" representa 21 de maio de 2024.
-3. Ano-Mês-Dia (AA-MM-DD ou AA/MM/DD): Em alguns outros países, o formato ano-mês-dia é preferido. Por exemplo, "24/05/21" representa 21 de maio de 2024.
+<figure><img src="../../../../../.gitbook/assets/dbdc652-format-menu-pt-20261011.png" alt="Menu Formato de valor e data com opções de países e regiões, incluindo Germany e United Kingdom"><figcaption><p>Escolha o formato usado no documento, não o seu idioma de interface preferido.</p></figcaption></figure>
 
-É importante observar o formato específico para evitar mal-entendidos, especialmente em comunicações internacionais ou transações financeiras.
+Para ações sobre as amostras importadas, consulte [Gerenciar dados de treinamento](manage-training-data.md).
 
-* **Selecione os documentos de amostra:** Selecione os documentos de amostra que deseja importar. Isso pode ser feito carregando os arquivos do seu computador local ou selecionando documentos de um local já conectado.
+## Treinar e verificar o modelo
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt=""><figcaption></figcaption></figure>
+Quando os PDFs de exemplo desejados estiverem na lista, selecione **Modelo de trem**. O DocBits pode processar o treinamento em segundo plano; aguarde a mensagem de conclusão antes de considerar o novo modelo pronto. A contagem de amostras e qualquer limite de plano exibidos nesta página pertencem à sua organização.
 
-* **Configure os tipos e subtipos de documentos (se necessário):** Se o seu sistema suportar diferentes tipos ou subtipos de documentos, atribua o tipo apropriado a cada documento importado. Isso ajudará o sistema a categorizar e processar os documentos corretamente.
-* **Inicie o processo de importação:** Confirme a seleção dos documentos e inicie o processo de importação. Dependendo do tamanho e do número de documentos, esse processo pode levar algum tempo.
+Para verificar a classificação, selecione **Classificação do teste** e, em seguida, envie um arquivo de exemplo separado na caixa de diálogo. Após o processamento, o DocBits mostra se o tipo de documento previsto corresponde a esta página e relata os detalhes da classificação. A caixa de diálogo de teste vazia abaixo é mostrada sem enviar um arquivo.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_user_settings_menu.png" alt="Docbits User Settings Menu"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc652-test-dialog-pt-20261011.png" alt="Caixa de diálogo Classificação do teste com área de arrastar e soltar e campo Carregar"><figcaption><p>Use a Classificação do teste para verificar o modelo com outro documento.</p></figcaption></figure>
 
-* **Verifique o status da importação:** Verifique o status do processo de importação para garantir que todos os documentos foram importados com sucesso. Certifique-se de que nenhum erro ocorreu e que os documentos foram processados corretamente.
-* **Treine o modelo:** Após a importação dos documentos, use-os para treinar o modelo do sistema de processamento de documentos. Realize o treinamento de acordo com as instruções do sistema para garantir que ele possa processar os dados de amostra de forma eficaz.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_user_role_edit.png" alt="Docbits User Role Edit"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/docbits_select_user_list.png" alt="Docbits Select User List" width="284"><figcaption></figcaption></figure>
-
-Ao adicionar regularmente documentos de amostra para treinamento, você pode garantir que seu sistema de processamento de documentos esteja sempre atualizado e forneça um processamento preciso e eficiente.
+Para interpretar o resultado, consulte [Testando o modelo](testing-the-model.md). Se o resultado for ruim, revise os [dados de treinamento](manage-training-data.md) e o [guia de solução de problemas](troubleshooting.md) antes de adicionar mais amostras.

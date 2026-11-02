@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.891
+Chile DTE tem entradas para faturas, notas
+de crédito e guias de expedição. Selecione
+
+formats_02
+00:00:06.891 --> 00:00:12.591
+o tipo de documento de negócio antes de
+verificar os campos. Faturas, notas de
+
+formats_03
+00:00:12.591 --> 00:00:17.433
+crédito e informações de entrega utilizam
+mapeamentos diferentes.
+
+workflow_01
+00:00:18.183 --> 00:00:23.570
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:23.570 --> 00:00:30.641
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:30.641 --> 00:00:31.567
+ativa.
+
+accept_01
+00:00:32.317 --> 00:00:38.273
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:38.273 --> 00:00:44.136
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:44.136 --> 00:00:48.667
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

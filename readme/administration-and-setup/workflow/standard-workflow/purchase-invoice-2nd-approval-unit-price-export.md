@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Unit Price Export
+# Fatura de compra — Exportação após segunda aprovação do preço unitário
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_5.png" alt="DocBits Compra Pedido Exportar 5"><figcaption></figcaption></figure>
+
 
 Este título indica que a regra está configurada para gerir a fase de segunda aprovação de faturas de compra, com enfoque no preço unitário, garantindo que este corresponde aos termos acordados.
 

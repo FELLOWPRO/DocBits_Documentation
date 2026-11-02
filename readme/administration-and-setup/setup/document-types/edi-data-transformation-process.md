@@ -1,13 +1,16 @@
-# EDI Data Transformation Process
+# Processo de transformação de dados EDI
 
-####
 
-<figure><img src="../../../../.gitbook/assets/docbits_docbits_image_4.png" alt="DocBits DocBits Imagem 4"><figcaption></figcaption></figure>
 
-#### Step 1: Structure Descriptor
+<figure><img src="../../../.gitbook/assets/site-all-edi-list-pt.png" alt="Formato EDI existente com os seus quatro atributos configurados."><figcaption><p>Formato EDI existente com os seus quatro atributos configurados.</p></figcaption></figure>
 
-* **Format**: JSON
-* **Purpose**: This step involves defining the structure of the EDI data. It includes specifying segments such as `SAC`, `N1`, and `PO1`, and details the fields contained within each segment. For segments that contain nested structures, loops are defined to properly organize the data hierarchy.
+O DocBits analisa a mensagem EDI original e converte-a em JSON através de um descritor de estrutura JSON. Depois, cria XML intermédio, aplica XSLT para produzir o XML padrão e utiliza esse XML para extrair campos e tabelas e gerar a pré-visualização.
+
+Os exemplos abaixo são fragmentos ilustrativos, não configurações completas prontas a importar. Alguns omitem conteúdo ou contêm marcadores como `...`. Adapte-os e teste-os com a sua mensagem EDI real, o XML intermédio e o resultado transformado; mantenha os identificadores de campos exigidos pela sua configuração.
+
+## Passo 1: Descrever a estrutura EDI
+
+O descritor de estrutura JSON define segmentos como SAC, N1 e PO1, os respetivos campos e os ciclos aninhados. Determina como a mensagem EDI original é analisada para obter JSON estruturado.
 
 ```json
 {
@@ -22,10 +25,9 @@
 }
 ```
 
-#### Step 2: Transformation Using XSLT
+## Passo 2: Transformar o XML intermédio com XSLT
 
-* **Format**: XSLT
-* **Purpose**: This step involves transforming the structured JSON data into a structured XML format, specifically tailoring the output to meet the requirements for further processing or integration. This transformation helps in extracting precise information like acknowledgement types, order details, and conditional elements based on specific values.
+O DocBits converte o JSON analisado em XML intermédio antes de aplicar a folha de transformação. O XSLT lê este XML intermédio, não o JSON diretamente, e produz a estrutura XML padrão para o processamento seguinte. O exemplo seleciona dados de confirmação e condições a partir de nós XML.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -49,10 +51,9 @@
 
 ```
 
-#### Step 3: Preview (HTML Conversion)
+## Passo 3: Criar uma pré-visualização HTML
 
-* **Format**: XSLT (outputting HTML)
-* **Purpose**: Converts the XML data from Step 2 into an HTML format for previewing the transformed data in a readable and visually appealing format. The HTML layout includes styles for presentation and structures data like purchase orders, supplier details, and order terms for easy viewing.
+Uma folha de estilo de pré-visualização converte em HTML o XML transformado no passo 2. Adapte a apresentação e as ligações de dados ao tipo de documento e verifique se a pré-visualização representa corretamente os dados transformados.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -77,10 +78,9 @@
 
 ```
 
-#### Step 4: Extraction Paths
+## Passo 4: Configurar a extração com XPath
 
-* **Format**: JSON
-* **Purpose**: Specifies JSON paths for extracting key values from the XML data produced in Step 2. These paths are used to retrieve specific data points such as purchase orders and currency, which are crucial for downstream processing and integration into other systems.
+A configuração de extração é guardada em JSON, mas os seus caminhos são expressões XPath avaliadas sobre o XML transformado no passo 2. Os caminhos de campos selecionam valores; o caminho de linhas de uma tabela seleciona linhas, e os caminhos de colunas selecionam valores dentro de cada linha. Não são expressões JSONPath.
 
 ```json
 {
@@ -102,4 +102,9 @@
 }
 ```
 
-This updated sequence ensures a thorough process, transforming raw EDI data into structured, actionable information using JSON for data structuring, XSLT for transformation and HTML preview, followed by JSON paths for data extraction and integration.
+O fluxo completo é: EDI original → JSON estruturado → XML intermédio → XML padrão através de XSLT → extração de campos e tabelas com XPath e pré-visualização HTML. Valide o resultado e os valores extraídos com mensagens representativas antes de utilizar uma configuração em produção.
+
+
+As vistas mostram uma configuração e uma versão existentes. As definições variam consoante o tipo de documento e o formato. Valide as alterações num rascunho antes da ativação.
+
+As imagens mostram as etapas em português e a versão ativa da configuração em modo só de leitura. Os nomes técnicos dos editores, os identificadores de atributos e o código de configuração mantêm-se como na versão ilustrada.

@@ -1,5 +1,19 @@
 # Testing Module
 
+## Video tutorial: run your first browser test
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/en.mp4" %}
+
+[Open the English video with captions, chapters and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/en.html).
+
+The walkthrough uses the built-in **Live testing self-check** in the development environment: inspect its three steps, create and save a named input, start it in the browser, then open the same run's saved log. The template has no parameters and does not change business data. Passing it confirms those three checks; it does not establish invoice extraction, approval or ERP export.
+
+**Review version:** complete listening and subject-matter acceptance are still pending.
+
+{% hint style="info" %}
+**Check the saved result.** In the recorded build (11.21.2), an input's result badge showed *Blocked* although both the live run and its saved log showed *Passed*. Reopening that input restored the matching badge. Use the saved log for the same run when investigating a discrepancy; reopening is an observed workaround, not a confirmed fix.
+{% endhint %}
+
 ## What the Testing module is for
 
 The **Testing** module runs browser tests inside your own signed-in DocBits session. A test drives the real

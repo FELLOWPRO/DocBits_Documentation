@@ -8,7 +8,7 @@ Aquí tienes una guía sobre cómo utilizar correctamente las acciones "Copiar" 
 * Selecciona el subtipo que quieres copiar, haz clic en "Copiar" e introduce un nuevo nombre para el subtipo copiado si es necesario.
 * Confirma la acción y el sistema creará una copia del subtipo seleccionado con todas las configuraciones, campos, diseños y scripts existentes.
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Editor de reglas de flujo de trabajo con lista de condiciones, desplegable de acciones y barra de herramientas del resumen de validación"><figcaption></figcaption></figure>
 
 ## Eliminar un subtipo:
 

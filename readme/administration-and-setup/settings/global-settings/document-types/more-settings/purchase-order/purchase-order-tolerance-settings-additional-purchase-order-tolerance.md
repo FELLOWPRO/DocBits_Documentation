@@ -30,7 +30,7 @@ Cuando está habilitado, este ajuste permite definir tolerancias para la **Canti
      * **Percent:** Indica una tolerancia porcentual.
      * **Value:** Indica un importe fijo en el que puede diferir el valor.
 
-<figure><img src="../../../../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (394).png" alt="Página de ajustes de la sección Purchase Order con la opción PO Tolerance Setting"><figcaption></figcaption></figure>
 
 ### **Escenario de ejemplo:**
 
@@ -45,7 +45,7 @@ Cuando está habilitado, este ajuste permite definir tolerancias para la **Canti
   * La línea 1 **no se marca** como discrepancia porque $4.80 está dentro del 5 % de $5.00.
   * La línea 2 **se marca** como discrepancia porque $2.20 supera la desviación permitida del 5 % respecto a $2.00. Ahora el usuario debe actuar para resolver la discrepancia antes de que la factura pueda seguir procesándose.
 
-<figure><img src="../../../../../../.gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (395).png" alt="Tabla de tolerancias del pedido de compra con las columnas UNIT, PO: QUANTITY, INVOICE: QUANTITY, PO: UNITPRICE e INVOICE: UNIT PRICE"><figcaption></figcaption></figure>
 
 ## Ajuste para configurar la tolerancia adicional de órdenes de compra
 
@@ -68,4 +68,4 @@ Cuando está habilitado, este ajuste permite definir tolerancias para el **Flete
      * **Percent:** La tolerancia se define como un porcentaje.
      * **Value:** La tolerancia se define como un importe fijo.
 
-<figure><img src="../../../../../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (396).png" alt="Campos de configuración para Freight Tolerance % y Additional PO Tolerance Setting con valores porcentuales y un interruptor"><figcaption></figcaption></figure>

@@ -91,7 +91,7 @@ Para acceder a los registros del flujo de trabajo:
    * <mark style="color:red;">**Nota**</mark>**:** La función de flujo de trabajo debe estar habilitada para acceder a esta opción.
 4.  Se abre un **panel lateral** que muestra un resumen de los flujos de trabajo ejecutados.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
+    ![Página Export Configuration en los ajustes de DocBits con los campos de Basic Information y las áreas de carga del archivo de la API de ION y del TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
 
 ## **Componentes del Panel de Registros del Flujo de Trabajo**
 
@@ -118,7 +118,7 @@ Cada fila en la tabla representa una ejecución de flujo de trabajo e incluye:
 
 Al hacer clic en la **flecha** a la izquierda de cada fila se expande la **vista detallada del flujo de trabajo**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Vista de detalle de Workflow que expande el flujo de trabajo Purchase Invoice - Approval con tarjetas When, And y Then y resultados de condiciones marcados con marcas de verificación y guiones" width="563"><figcaption></figcaption></figure></div>
 
 ### **Vista Detallada del Flujo de Trabajo**
 

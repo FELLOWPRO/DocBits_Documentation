@@ -8,7 +8,7 @@ La configuración **Modo de anotación** permite a los usuarios crear y administ
 
 Puede encontrar esta configuración en: **Configuración → Procesamiento de documentos → Módulo → Tipo de documento → Modo de anotación**
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt="Página de ajustes de Document Type en DocBits con el interruptor Annotation Mode resaltado en la lista de módulos"><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 DocBits Tutorial del modo de anotación: agregar notas en validación y descargar con o sin anotaciones
@@ -21,7 +21,7 @@ DocBits Tutorial del modo de anotación: agregar notas en validación y descarga
 * Navegue hasta **Pantalla de validación**.
 * Haga clic en el icono **burbuja de diálogo** a la derecha para ingresar al modo de anotación.
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt="Pantalla de validación en DocBits con el icono de globo de diálogo en la barra de herramientas derecha para activar el modo de anotación"><figcaption></figcaption></figure></div>
 
 ### 2. Crear una anotación
 
@@ -30,7 +30,7 @@ DocBits Tutorial del modo de anotación: agregar notas en validación y descarga
 * Haga clic en el icono **document** para guardar la anotación.
 * Haga clic en el icono **papelera** para eliminar la anotación.
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt="Pantalla de validación con un PDF y la anotación Here is a annotation además de los iconos de bolígrafo, guardar y eliminar"><figcaption></figcaption></figure></div>
 
 *   Personaliza el texto usando:
 
@@ -40,7 +40,7 @@ DocBits Tutorial del modo de anotación: agregar notas en validación y descarga
     * <mark style="color:purple;">**Color**</mark>
     * **Font selection**
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt="Diálogo Create/Edit Annotation con la fuente Helvetica, tamaño 12, negrita, cursiva, Text-Color y el campo Annotation-Text"><figcaption></figcaption></figure></div>
 
 ### 3. Gestionar anotaciones
 
@@ -50,7 +50,7 @@ DocBits Tutorial del modo de anotación: agregar notas en validación y descarga
 * Las anotaciones **se incluirán** al exportar el documento a **IDM.**
 * Si un documento contiene anotaciones, el **icono de burbuja de diálogo** mostrará un pequeño **signo de exclamación** para indicar su presencia.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt="Barra de herramientas derecha de la pantalla de validación que muestra el icono de globo de diálogo con un signo de exclamación que indica anotaciones existentes"><figcaption></figcaption></figure>
 
 *
 
@@ -65,7 +65,7 @@ DocBits Tutorial del modo de anotación: agregar notas en validación y descarga
   * **Descargar con Anotaciones**
   * **Descargar sin Anotaciones**
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt="Menú de acciones del dashboard en DocBits abierto con las opciones Download, Download annotated PDF, Document Logs y Workflow Logs"><figcaption></figcaption></figure>
 
 Al habilitar y utilizar el modo de anotación, los usuarios pueden agregar, editar y administrar de manera eficiente anotaciones directamente en archivos PDF, mejorando la colaboración y revisión de documentos.
 

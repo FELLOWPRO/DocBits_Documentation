@@ -4,7 +4,7 @@
 
 La configuración de **Color de la Aplicación** permite a los administradores definir el esquema de color de la interfaz de la aplicación. Esta función es particularmente útil para distinguir entre diferentes entornos como pruebas, sandbox y producción. Al asignar colores distintos a cada entorno, los usuarios pueden identificar fácilmente en qué entorno están trabajando, reduciendo el riesgo de realizar acciones críticas en el entorno equivocado.
 
-<figure><img src="../../../../.gitbook/assets/AppColor.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/AppColor.png" alt="Página de configuración Company Information con la sección App-Color que muestra el campo App-Color establecido en #faa5d2"><figcaption></figcaption></figure>
 
 ## Acceder a la Configuración de Color de la Aplicación
 

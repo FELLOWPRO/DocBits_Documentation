@@ -8,7 +8,7 @@ DocBits es operado por **Fellowpro AG** bajo un programa integral de seguridad d
 
 ## 1. ISO/IEC 27001
 
-<figure><img src="../../.gitbook/assets/certifications1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications1.png" alt="Página de resumen de certificaciones que enumera certificados de conformidad con nombres de documento, fechas de emisión e iconos de descarga"><figcaption></figcaption></figure>
 
 Esta norma internacional define los requisitos para establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de Seguridad de la Información (SGSI). Ayuda a las organizaciones a proteger los datos de manera sistemática y rentable, incluyendo procesos para la gestión de riesgos y controles de seguridad de la información.
 
@@ -20,7 +20,7 @@ Esta norma internacional define los requisitos para establecer, implementar, man
 
 ## 2. SOC 1 (Control de organización de servicios 1)
 
-<figure><img src="../../.gitbook/assets/certifications2.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications2.avif" alt="Fila de insignias de certificación con los sellos de conformidad SOC 2 Type II y GDPR sobre un fondo oscuro"><figcaption></figcaption></figure>
 
 Los informes SOC 1 están diseñados para organizaciones que necesitan demostrar la efectividad de los controles internos sobre la información financiera. Es particularmente relevante para los proveedores de servicios que afectan la información financiera de sus clientes.
 
@@ -32,7 +32,7 @@ Los informes SOC 1 están diseñados para organizaciones que necesitan demostrar
 
 ## 3. SOC 2 (Control de organización de servicios 2)
 
-<figure><img src="../../.gitbook/assets/certifications3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications3.png" alt="Página de certificaciones que muestra distintivos de cumplimiento de SOC 2 Type II, ISO 27001 y GDPR con texto descriptivo breve"><figcaption></figcaption></figure>
 
 SOC 2 se centra en los controles de una organización de servicios relevantes para la seguridad, disponibilidad, integridad del procesamiento, confidencialidad y privacidad de los datos. Es crucial para las empresas de tecnología y computación en la nube que manejan información sensible.
 
@@ -44,7 +44,7 @@ SOC 2 se centra en los controles de una organización de servicios relevantes pa
 
 ## 4. Cumplimiento GDPR (Reglamento General de Protección de Datos)
 
-<figure><img src="../../.gitbook/assets/certifications4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications4.png" alt="Insignia GDPR circular en azul marino con letras blancas, puntos decorativos amarillos y un fondo blanco"><figcaption></figcaption></figure>
 
 El GDPR es un reglamento en la ley de la UE sobre la protección de datos y la privacidad en la Unión Europea y el Espacio Económico Europeo. También aborda la transferencia de datos personales fuera de las áreas de la UE y el EEE.
 

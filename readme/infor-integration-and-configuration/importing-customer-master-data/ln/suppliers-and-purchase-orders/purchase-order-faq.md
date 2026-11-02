@@ -7,7 +7,7 @@ Navegue a la sesión _BOD Implementation Registration (bobod1100m000)_ en Infor 
 \
 
 
-<figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO.png" alt="Sesión de LN BOD Implementation Registration (bobod1100m000) que muestra implementaciones BOD con las casillas Public, Standard y Staging"><figcaption></figcaption></figure>
 
 **¿Cómo identifico la implementación de BOD concreta que necesito verificar?**
 

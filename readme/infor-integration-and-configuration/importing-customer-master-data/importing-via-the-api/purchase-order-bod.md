@@ -10,7 +10,7 @@ Los pedidos de compra normalmente llegan a DocBits automáticamente a través de
 
 Hay dos endpoints y hacen lo mismo. La única diferencia está en cómo entrega el BOD:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
+![Lista de endpoints de Swagger que muestra Import Purchase Order Bod e Import Purchase Order Bod Xml](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
 
 | Endpoint | Cuándo usarlo |
 | --- | --- |
@@ -29,7 +29,7 @@ Necesitará:
 
 Para encontrar el Org ID, vaya a **Settings → Integration & SSO** y abra la sección **ID**. Haga clic en el icono de copiar junto al campo.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Campos Org ID y Sub Org ID rellenados con valores UUID de ejemplo](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** muestra la suborganización que esté seleccionada en la cabecera. Con **CROSS** seleccionado — la vista de todas las suborganizaciones — muestra el mismo valor que **Org ID**, que es la razón por la que los dos campos coinciden en la captura de arriba. Cambie primero a una suborganización concreta si necesita su ID.
@@ -62,22 +62,22 @@ Todo lo que hay bajo **import** está bloqueado hasta que se autorice. Hay dos c
 
 * Haga clic en el **icono del candado** a la derecha del endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-swagger-lock.png)
+![Barra del endpoint Import Purchase Order Bod con el icono de candado junto a ella](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-swagger-lock.png)
 
 * Se abre el diálogo **Available authorizations** con dos entradas.
 * Pegue su **Org ID** en **X-ORG-ID** y haga clic en **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Diálogo Available authorizations con el campo de encabezado X-ORG-ID que muestra el valor del ID de organización](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
 * La entrada muestra ahora **Authorized** y oculta el valor.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![Diálogo Available authorizations que muestra la entrada de encabezado X-ORG-ID marcada como Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Baje hasta **X-API-KEY**, pegue su API key y haga clic en **Authorize**. En DocBits la encontrará en **Settings → Integration & SSO**, en la sección **API Key**, o puede [crear una clave nueva](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#crear-una-clave-api).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Diálogo Available authorizations con el campo de encabezado X-API-KEY a la espera del valor de la clave de API](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![Diálogo Available authorizations que muestra la entrada de encabezado X-API-KEY marcada como Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Haga clic en **Close**.
 
@@ -87,13 +87,13 @@ Pegue la clave sola — no escriba `Bearer` delante. Ambas autorizaciones siguen
 
 ### 3. Rellenar los campos
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-po.png)
+![Entrada del endpoint Purchase Order Bod en Swagger sin parámetros](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-po.png)
 
 Haga clic en **Try it out** y rellene el formulario del endpoint que haya elegido.
 
 #### Subir un archivo — `/import/purchase_order_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
+![Formulario del cuerpo de la solicitud completado con org_id, sub_org_id, el archivo seleccionado SyncPurchaseOrder_4711.xml y asignaciones de campos personalizados](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
 
 | Campo | |
 | --- | --- |
@@ -127,7 +127,7 @@ Las asignaciones de línea usan los mismos nombres `custom_field_1` … `custom_
 
 #### Pegar el XML — `/import/purchase_order_bod_xml`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-xml-form.png)
+![Formulario del cuerpo de la solicitud para import_purchase_order_bod_xml con los campos xml, org_id, sub_org_id y custom_fields_mapping](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-xml-form.png)
 
 Este endpoint no acepta el BOD como un pegado simple. El campo **xml** es un objeto, precargado con:
 
@@ -163,11 +163,11 @@ Antes de ejecutar, revise el desplegable **Servers** al final del formulario. De
 
 Haga clic en **Execute**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![Desplegable Servers en la parte inferior del formulario con una nota de que las opciones a nivel de operación anulan las opciones globales del servidor](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
 
 **Si ha subido un archivo**, la respuesta es:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-response.png)
+![Resultado de Execute con el comando curl y un cuerpo de respuesta 200 que muestra BOD processing started](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-response.png)
 
 ```json
 {

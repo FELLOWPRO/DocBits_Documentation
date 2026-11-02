@@ -13,7 +13,7 @@ Cuando se trata de probar su configuración de conciliación con órdenes de com
 
 Una vez que haya creado su orden de compra, vaya a Configuración → Búsqueda de datos maestros y busque el número de orden de compra del PO que acaba de crear, como debería aparecer ahora en los datos maestros de su orden de compra en DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+![Tabla Purchase order en los datos maestros de DocBits con las columnas Warehouse Id, Supplier Name, Purchase Order Number, Line Number y Quantity](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
 Deberías ver tu número PO único aquí, esto significa que DocBits y INFOR están sincronizados correctamente.
 

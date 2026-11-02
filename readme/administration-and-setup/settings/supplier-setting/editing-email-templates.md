@@ -24,7 +24,7 @@ El `{{magic_link}}` es un marcador de posición que se sustituye dinámicamente 
    * El editor permite modificar tanto el código HTML como el diseño visual del correo electrónico.
    * Puede alternar entre la edición visual y la edición de código mediante las pestañas disponibles.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Página Edit Template para el Supplier Invitation Email con los campos Name, Subject, Sender Name y Magic Link y el código fuente HTML"><figcaption></figcaption></figure>
 
 #### Definir `{{magic_link}}` como enlace
 

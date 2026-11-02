@@ -14,7 +14,7 @@ Quando si tratta di comunicazione con il database, non prendiamo rischi. La nost
 
 La gestione dei documenti è semplice con Docbits. Tutti i documenti caricati sono archiviati in modo sicuro in uno ‘Spazio’ dedicato. Utilizziamo la crittografia SSL per il traffico dati e richiediamo più chiavi per l'accesso ai file, assicurandoci che i tuoi documenti siano sicuri come una cassaforte.
 
-### Traffic Security
+### Sicurezza del traffico di rete
 
 Consentiamo solo connessioni protette da HTTPS per comunicare con i nostri server. Questo garantisce che tutti i dati trasferiti siano crittografati, mantenendo le tue informazioni sensibili al sicuro. È come avere una guardia di sicurezza per i tuoi dati, 24 ore su 24, 7 giorni su 7.
 

@@ -35,3 +35,7 @@ Questo vale solo per i documenti identificati come **note di credito**. Le fattu
 
 * **Lasciala attivata** se il tuo sistema contabile o ERP si aspetta che le note di credito arrivino con importi negativi (questa è la configurazione più comune).
 * **Disattivala** solo se il tuo sistema a valle gestisce già il segno da sé o si aspetta che gli importi delle note di credito rimangano positivi.
+
+## Tipo di documento errato?
+
+Questa impostazione dipende dalla corretta classificazione delle note di credito. Se un eDoc viene memorizzato come Invoice, verificate prima la trasformazione, Extraction Paths e gli script successivi. Seguite la [guida alla diagnosi della classificazione](../../global-settings/document-types/edi/credit-note-recognized-as-invoice.md) prima di modificare i segni o riavviare l’elaborazione dei documenti esistenti.

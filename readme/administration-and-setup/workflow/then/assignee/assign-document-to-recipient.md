@@ -1,36 +1,19 @@
-# Assign document to recipient
+# Assegnare il documento al destinatario
 
-<figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
+La scheda mostrata è la **versione 2**. I campi visibili sono **Destinatario** e **Utente** come ripiego. Non identifica il destinatario come una scelta universale fra Disponente e Acquirente.
 
-## **Scopo:**
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-1b1b68dfdcad-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-La scheda di workflow **"Assign Document to Disponent / Purchaser"** assegna un documento a un **Disponent** oppure a un **Purchaser**. Se non viene trovato alcun utente valido, viene selezionato un utente di riserva per garantire che il documento sia sempre assegnato a qualcuno.
+## Configurazione
 
-## **Componenti della scheda:**
+Seleziona la fonte del destinatario e un utente di ripiego valido per l’organizzazione. La scheda assegna il **documento** quando il workflow raggiunge l’azione e soddisfa le condizioni configurate. L’assegnazione non equivale alla creazione di un’attività né a un’approvazione.
 
-1. **Disponent / Purchaser**
-   * **Descrizione:** Specifica se il documento verrà assegnato a un Disponent o a un Purchaser.
-   * **Opzioni:**
-     * **Disponent:** Assegna il documento al Disponent.
-     * **Purchaser:** Assegna il documento al Purchaser.
-2. **Fallback User**
-   * **Descrizione:** Specifica un utente di riserva nel caso in cui il documento non possa essere assegnato al Disponent o Purchaser selezionato.
-   * **Dettaglio:** Il menu a discesa degli utenti disponibili ti consente di scegliere un utente di riserva per garantire che il documento venga assegnato anche se l'utente principale non può essere determinato.
+Se il destinatario non può essere risolto, verifica l’uso del ripiego configurato nella versione in uso. Non esiste qui una prova di assegnazione garantita: anche l’utente di ripiego deve essere valido e lo stato del documento deve consentire l’operazione. Non presumere che il ripiego sia automaticamente un amministratore.
 
-## **Funzionalità:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* **Valutazione della condizione:**\
-  La scheda esegue la sua azione solo se sia la sezione **"Where"** che la sezione **"And"** risultano vere.
-* **Assegnazione del documento:**\
-  La scheda assegna il documento al **Disponent** o al **Purchaser** selezionato. Se la persona selezionata non è disponibile o non è valida, il documento viene assegnato all'utente di riserva.
+## Esempio pratico
 
-## **Configurazione e impostazione:**
+In un’organizzazione di prova configura la fonte del destinatario e l’utente sintetico `Demo Reviewer A` come ripiego. Verifica separatamente un destinatario risolvibile e uno non risolvibile, controllando assegnazione finale e log del workflow.
 
-* **Seleziona Disponent / Purchaser:**\
-  Scegli se assegnare il documento al **Disponent** o al **Purchaser**.
-* **Seleziona Fallback User:**\
-  Scegli un utente di riserva dal menu a discesa che riceverà il documento se l'assegnazione principale non è possibile.
-
-## **Conclusione:**
-
-La scheda di workflow **"Assign Document to Disponent / Purchaser"** garantisce che il documento sia sempre assegnato, al Disponent/Purchaser selezionato o, se necessario, all'utente di riserva. Ciò riduce al minimo le interruzioni del workflow e garantisce che l'elaborazione dei documenti prosegua senza problemi.
+L’immagine mostra campi non configurati. Questo è un esempio da eseguire e verificare nella propria organizzazione di test; durante la revisione non è stata eseguita alcuna assegnazione.

@@ -1,59 +1,63 @@
-# And: scegliere una scheda di condizione
+# E
 
-Usare una scheda **And** per decidere se un workflow deve continuare dopo il trigger **Quando**. Aggiungere i controlli necessari prima dell'azione **Poi**. Ogni scheda mostra i campi da compilare, ad esempio **Operatore**, **Nome del campo** o **Valore**; gli screenshot mostrano i modelli di scheda disponibili, non regole completate.
+Utilizza una carta **E** per decidere se un flusso di lavoro deve continuare dopo l'attivazione **Quando**. Aggiungi i controlli necessari prima dell'azione **Allora**. Ogni scheda mostra i campi da compilare, come **Operatore**, **Nome campo** o **Valore**; gli screenshot mostrano i modelli di carte disponibili, non le regole completate.
 
-Nel **Costruttore Di Flussi Di Lavoro**, selezionare **Aggiungi scheda** sotto **E....**. Scegliere una categoria a sinistra oppure digitare il nome di una scheda in **Scheda di ricerca**. Selezionare un'anteprima di scheda per aggiungerla al workflow. È possibile scorrere l'elenco delle anteprime per vedere altre schede. Usare **×** per chiudere il selettore senza scegliere un'altra scheda. Dopo aver configurato le schede, salvare il workflow. Vedere [Workflow](../README.md) per i passaggi circostanti **Quando**, **E** e **Poi**.
+Nel **Costruttore di flussi di lavoro**, seleziona **Aggiungi carta** sotto **E...**. Scegli una categoria a sinistra o digita il nome di una carta in **Cerca carta**. Seleziona l'anteprima di una carta per aggiungerla al flusso di lavoro. Puoi scorrere l'elenco di anteprima per vedere più carte. Usa **×** per chiudere il selettore senza scegliere un'altra carta. Dopo aver configurato le carte, salva il flusso di lavoro. Vedi [Flusso di lavoro](..) per i passaggi circostanti **Quando**, **E** e **Allora**.
 
-## Confronto con l'ordine di acquisto
+## Confronta con Ordine d'Acquisto
 
-Usare queste schede per confrontare i dati dell'ordine o della fattura con un ordine di acquisto, ad esempio prezzo unitario, data di consegna promessa, spese o quantità. Scegliere i campi, l'operatore e l'eventuale tolleranza richiesti dalla scheda selezionata. Vedere [Confronto con l'ordine di acquisto](compare-with-purchase-order/README.md) per le singole schede.
+Utilizzare queste schede per confrontare i dati dell'ordine o della fattura con un ordine di acquisto, ad esempio il prezzo unitario, la data di consegna promessa, le spese o la quantità. Scegli i campi, l'operatore e l'eventuale tolleranza richiesta dalla carta selezionata. Vedi [Confronta con ordine d'acquisto](compare-with-purchase-order) per le singole carte.
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Confronto con l'ordine di acquisto selezionata; le anteprime visibili includono confronti su prezzo unitario, data di consegna, spese e quantità."><figcaption>Categoria Confronto con l'ordine di acquisto nel Sandbox in italiano.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u035-it.png" alt="Condizioni di confronto con gli ordini di acquisto. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni di confronto con gli ordini di acquisto. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-## Campo del documento
+## Campo documento
 
-Scegliere questa categoria per verificare lo stato di una casella di controllo o di un campo, confrontare un campo con un valore oppure confrontare due campi. Compilare i segnaposto **Nome del campo** e **Operatore** sulla scheda scelta. Alcuni confronti richiedono anche una tolleranza. Vedere [Campo del documento](document-field/README.md).
+Scegli questa categoria per selezionare una casella di controllo o lo stato di un campo, confrontare un campo con un valore o confrontare due campi. Compila i segnaposto **Nome del campo** e **Operatore** sulla scheda scelta. Alcuni confronti richiedono anche una tolleranza. Vedi [Campo documento](document-field).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Campo del documento selezionata; le anteprime visibili controllano una casella di controllo, lo stato di un campo, i valori di un campo e confronti tra due campi."><figcaption>I controlli Campo del documento usano i valori del documento corrente.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u036-it.png" alt="Condizioni sui campi del documento. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sui campi del documento. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
 ## Data e ora
 
-Usare **Data e ora** per confrontare una data o un'ora con un intervallo oppure confrontare **Oggi** con una data scelta. Selezionare **Operatore** e valori della data nella scheda. Vedere [Data e ora](date-and-time/README.md).
+Utilizza **Data e ora** per confrontare una data o un'ora con un intervallo o confronta **Oggi** con una data scelta. Seleziona **Operatore** e i valori della data nella scheda. Vedi [Data e ora](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Data e ora selezionata; due anteprime confrontano una data o un'ora con un intervallo e confrontano Oggi con una data."><figcaption>Data e ora offre un controllo su intervallo e un confronto con oggi.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u037-it.png" alt="Condizioni di data e ora. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni di data e ora. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
 ## Documento
 
-Usare queste schede quando un workflow dipende dal **tipo di documento** o dalla **sotto-organizzazione**. Scegliere il tipo o l'organizzazione indicati nella scheda. Vedere [Documento](document/README.md).
+Utilizza queste schede quando un flusso di lavoro deve dipendere dal **tipo di documento** o **sub-organizzazione**. Scegli il tipo o l'organizzazione nominata nella carta. Vedi [Documento](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Documento selezionata; le anteprime controllano il tipo di documento e l'appartenenza a una sotto-organizzazione."><figcaption>Le condizioni Documento controllano tipo o sotto-organizzazione.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u038-it.png" alt="Condizioni sui documenti. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sui documenti. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
 ## Logica
 
-Questa categoria include controlli che usano una tabella decisionale, una risposta HTTPS, la disponibilità di un modulo, un prezzo dell'articolo quotato, un valore di probabilità o due valori. Aprire la scheda specifica e compilare i segnaposto indicati; ad esempio, la scheda HTTPS richiede un URL, un metodo e un codice di stato accettato. Vedere [Logica](logic/README.md).
+Questa categoria include i controlli utilizzando una tabella decisionale, una risposta HTTPS, la disponibilità del modulo, il prezzo di un articolo quotato, un valore casuale o due valori. Apri la scheda specifica e inserisci i segnaposto nominati; ad esempio, la scheda HTTPS richiede un URL, un metodo e un codice di stato accettato. Vedi [Logica](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Logica selezionata; le anteprime includono schede per tabella decisionale, richiesta HTTPS, modulo attivo, prezzo quotato, probabilità e confronto di valori."><figcaption>Logica offre diversi tipi di condizioni; scegliere quella adatta alla propria regola.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u039-it.png" alt="Condizioni logiche. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni logiche. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
 ## Stato
 
-Usare **Stato** per verificare se un documento ha uno stato scelto o se il suo stato appartiene a un insieme selezionato. Scegliere **Operatore** e **Stato** nella scheda. Vedere [Stato](status/README.md).
+Usa **Stato** per verificare se un documento ha uno stato scelto o se il suo stato è in un set selezionato. Scegli **Operatore** e **Stato** nella scheda. Vedi [Stato](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Stato selezionata; due anteprime confrontano lo Stato del documento con uno Stato o con un insieme di stati."><figcaption>Le condizioni Stato controllano lo stato corrente del documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u040-it.png" alt="Condizioni sullo stato. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sullo stato. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
 ## Tabella
 
-Queste schede esaminano le righe della tabella di un documento. Le opzioni visibili includono controlli su date, pattern di testo, scadenza e confronti tra colonne. Selezionare **Nome della tabella** e **Nome della colonna** prima di scegliere un operatore o un pattern. Vedere [Tabella](table/README.md).
+Queste schede esaminano le righe della tabella dei documenti. Le opzioni visibili includono controlli della data, modelli di testo, durata di conservazione e confronti tra colonne. Seleziona **Nome tabella** e **Nome colonna** prima di scegliere un operatore o un modello. Vedi [Tabella](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Tabella selezionata; le anteprime visibili includono data, pattern regex, scadenza e confronti tra colonne di tabella."><figcaption>Le condizioni Tabella usano righe e colonne della tabella di un documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u041-it.png" alt="Condizioni sulle tabelle di dati. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sulle tabelle di dati. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-## Confronta con il prezzo dell'offerta
+## Confronta con il prezzo preventivo
 
-Usare queste schede per confrontare un articolo con i dati del prezzo quotato. Le scelte visibili riguardano ID articolo, tipo di fornitore, ID articolo del fornitore, prezzo unitario e unità di misura. **Operatore** e segnaposto dei dati dipendono dalla scheda selezionata.
+Utilizza queste schede per confrontare un articolo con i dati del prezzo quotato. Le scelte visibili riguardano ID articolo, tipo fornitore, ID articolo fornitore, prezzo unitario e unità di misura. Il **Operatore** e i segnaposto dei dati dipendono dalla carta selezionata.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Confronta con il prezzo dell'offerta selezionata; cinque anteprime coprono ID articolo, tipo di fornitore, ID articolo del fornitore, prezzo unitario e unità di misura."><figcaption>Confronta con il prezzo dell'offerta è una categoria separata nell'attuale selettore di schede.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u042-it.png" alt="Condizioni sui prezzi dei preventivi. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sui prezzi dei preventivi. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
 
-## Cessionario
+## Assegnatario
 
-Usare **Cessionario** quando la condizione dipende dall'utente o dal gruppo assegnato. Scegliere se confrontare con un solo utente o gruppo oppure con un insieme selezionato. Vedere [Cessionario](assignee/README.md).
+Utilizzare **Assegnatario** quando la condizione dipende dall'utente o dal gruppo assegnato. Scegli se confrontare con un utente o un gruppo o un set selezionato. Vedi [Assegnatario](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-it-20261008.png" alt="Selettore di schede And in italiano con la categoria Cessionario selezionata; le anteprime confrontano l'utente o il gruppo assegnato con una o più scelte."><figcaption>Le condizioni Cessionario controllano l'utente o il gruppo assegnato al documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u043-it.png" alt="Condizioni sulle assegnazioni. La categoria Cessionario riguarda l’assegnazione a utenti e gruppi; alcune schede restano in inglese. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto."><figcaption><p>Condizioni sulle assegnazioni. La categoria Cessionario riguarda l’assegnazione a utenti e gruppi; alcune schede restano in inglese. Alcuni testi delle schede restano in inglese o presentano traduzioni inesatte nel prodotto.</p></figcaption></figure>
+
+[Schede di confronto dettagliate delle citazioni e comportamento Qualsiasi/Tutto](../cards-overview/quote-comparison-guide.md).
+
+Alcune etichette del prodotto restano in inglese o presentano traduzioni inesatte. Le tabelle sono tabelle di dati; i valori restituiti non sono rendimenti finanziari. Gli identificatori tecnici restano invariati.

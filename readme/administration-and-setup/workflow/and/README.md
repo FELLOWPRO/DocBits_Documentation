@@ -1,68 +1,63 @@
----
-description: Configuração das condições E nos fluxos de trabalho DocBits
----
+# E
 
-# And
+Use um cartão **E** para decidir se um fluxo de trabalho deve continuar após seu acionador **Quando**. Adicione as verificações necessárias antes da ação **Então**. Cada cartão mostra campos para preencher, como **Operador**, **Nome do campo** ou **Valor**; as capturas de tela mostram os modelos de cartão disponíveis, não as regras concluídas.
 
-## Compreender os cartões "And"
+No **Construtor de fluxo de trabalho**, selecione **Adicionar cartão** em **E...**. Escolha uma categoria à esquerda ou digite o nome do cartão em **Cartão de pesquisa**. Selecione uma visualização do cartão para adicioná-lo ao fluxo de trabalho. Você pode rolar a lista de visualização para ver mais cartões. Use **×** para fechar o seletor sem escolher outro cartão. Após configurar os cartões, salve o fluxo de trabalho. Consulte [Fluxo de trabalho](..) para as etapas **Quando**, **E** e **Então** circundantes.
 
-### **Propósito dos cartões "And":**
+## Comparar com pedido de compra
 
-* Os cartões **And** funcionam como cartões de condição que especificam critérios que têm de ser cumpridos para que o fluxo de trabalho continue. Atuam efetivamente como operadores lógicos "AND", ou seja, todas as condições especificadas nestes cartões têm de ser satisfeitas para que a ação seguinte seja acionada.
+Use esses cartões para comparar dados de pedidos ou faturas com um pedido de compra, como preço unitário, data de entrega prometida, encargos ou quantidade. Escolha os campos, a operadora e qualquer tolerância que o cartão selecionado solicite. Consulte [Comparar com pedido de compra](compare-with-purchase-order) para cartões individuais.
 
-#### Categorias de cartões "And"
+<figure><img src="../../../.gitbook/assets/prior-u035-pt.png" alt="Condições de comparação com ordens de compra."><figcaption><p>Condições de comparação com ordens de compra.</p></figcaption></figure>
 
-A partir das capturas de ecrã, é claro que estes cartões abrangem uma vasta gama de condições, que incluem:
+## Campo do documento
 
-* **Compare with Purchase Order**:
-  * Condições relacionadas com a validação e comparação face a ordens de compra, tais como comparar datas de entrega, preços unitários ou diferenças de quantidade. São cruciais para garantir que as transações estão de acordo com os termos acordados.
+Escolha esta categoria para marcar uma caixa de seleção ou status de campo, comparar um campo com um valor ou comparar dois campos. Preencha os espaços reservados **Nome do campo** e **Operador** no cartão escolhido. Algumas comparações também pedem tolerância. Consulte [Campo do Documento](document-field).
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u036-pt.png" alt="Condições de campos do documento."><figcaption><p>Condições de campos do documento.</p></figcaption></figure>
 
-* **Document Field**:
-  * Envolvem condições baseadas em campos específicos dentro dos documentos, como caixas de verificação assinaladas, comparação de valores de campos ou garantir que um campo de documento cumpre uma tolerância especificada. Isto é particularmente importante para a integridade dos dados e verificações automáticas em formulários ou sistemas de gestão documental.
+## Data e hora
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Use **Data e Hora** para comparar uma data ou hora com um intervalo, ou compare **Hoje** com uma data escolhida. Selecione o **Operador** e os valores de data no cartão. Consulte [Data e Hora](date-and-time).
 
-* **Date & Time:**
-  * Condições baseadas em datas e horas
+<figure><img src="../../../.gitbook/assets/prior-u037-pt.png" alt="Condições de data e hora."><figcaption><p>Condições de data e hora.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Documento
 
-* **Document**:
-  * Condições baseadas nas características do documento, como o tipo ou a associação a uma sub-organização específica. Estas condições podem orientar os fluxos de trabalho com base na categorização do documento ou no envolvimento de departamentos.
+Use esses cartões quando um fluxo de trabalho depender do **tipo de documento** ou **suborganização**. Escolha o tipo ou organização indicada no cartão. Veja [Documento](document).
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u038-pt.png" alt="Condições de documentos."><figcaption><p>Condições de documentos.</p></figcaption></figure>
 
-* **Logic**:
-  * Condições lógicas que podem envolver avaliações como "Continuar com uma probabilidade de X%" ou a execução de pedidos HTTPS, que são vitais para integrações e tomada de decisões probabilística dentro dos fluxos de trabalho.
+## Lógica
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Esta categoria inclui verificações usando uma tabela de decisão, uma resposta HTTPS, disponibilidade de módulo, preço de item cotado, valor de chance ou dois valores. Abra o cartão específico e preencha os espaços reservados nomeados; por exemplo, o cartão HTTPS solicita um URL, um método e um código de status aceito. Veja [Lógica](logic).
 
-* **Status**:
-  * Focando-se no estado dos documentos ou tarefas, estas condições garantem que apenas os itens em determinados estados acionam fluxos de trabalho específicos, o que é crucial para a gestão de processos orientada por estado.
+<figure><img src="../../../.gitbook/assets/prior-u039-pt.png" alt="Condições lógicas. Loja significa aqui guardar os valores retornados, não uma loja comercial."><figcaption><p>Condições lógicas. Loja significa aqui guardar os valores retornados, não uma loja comercial.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Estado
 
-* **Table**:
-  * Envolvem condições baseadas em dados de tabelas, como a correspondência de padrões regex ou a comparação de valores dentro de uma tabela. Tais condições são essenciais para validar e manipular grandes conjuntos de dados.
+Use **Estado** para verificar se um documento tem um status escolhido ou se seu status está em um conjunto selecionado. Escolha **Operador** e **Estado** no cartão. Consulte [Status](status).
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u040-pt.png" alt="Condições de estado."><figcaption><p>Condições de estado.</p></figcaption></figure>
 
-* **Assignee**:
-  * Condições baseadas nos responsáveis de tarefas ou documentos. Isto garante que as ações só são realizadas quando determinados utilizadores estão envolvidos, reforçando a responsabilização e a especificidade das tarefas.
+## Tabela
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Esses cartões examinam as linhas da tabela do documento. As opções visíveis incluem verificações de data, padrões de texto, prazo de validade e comparações entre colunas. Selecione **Nome da tabela** e **Nome da coluna** antes de escolher um operador ou padrão. Veja [Tabela](table).
 
-### Aplicação prática
+<figure><img src="../../../.gitbook/assets/prior-u041-pt.png" alt="Condições de tabelas de dados. Mesa significa tabela de dados."><figcaption><p>Condições de tabelas de dados. Mesa significa tabela de dados.</p></figcaption></figure>
 
-Estes cartões "And" são configurados dentro do fluxo de trabalho para realizar verificações e validações que garantem que o processo cumpre rigorosamente as regras de negócio e os padrões de integridade de dados. Por exemplo:
+## Compare com o preço de cotação
 
-* **Um fluxo de trabalho pode usar um cartão "And" para verificar se o valor total de uma fatura corresponde à ordem de compra antes de acionar o pagamento.**
-* **Outro fluxo de trabalho pode usar um cartão "And" para garantir que um documento é revisto por membros específicos da equipa antes de avançar para a fase seguinte.**
+Use esses cartões para comparar um item com dados de preços cotados. As opções visíveis abrangem ID do item, tipo de fornecedor, ID do item do fornecedor, preço unitário e unidade de medida. O **Operador** e os espaços reservados para dados dependem do cartão selecionado.
 
-### Conclusão
+<figure><img src="../../../.gitbook/assets/prior-u042-pt.png" alt="Condições de preços de propostas. Parte do texto dos cartões permanece em inglês."><figcaption><p>Condições de preços de propostas. Parte do texto dos cartões permanece em inglês.</p></figcaption></figure>
 
-Os cartões "And" são um componente fundamental dos sistemas de fluxo de trabalho que exigem um controlo preciso da execução do processo com base em múltiplas condições. Garantem que cada passo de um fluxo de trabalho só avança quando todos os critérios necessários são plenamente cumpridos, automatizando assim árvores de decisão complexas dentro dos processos de negócio.
+## Responsável
 
-Compreender e configurar corretamente estes cartões é crucial para aproveitar todas as capacidades do seu sistema de gestão de fluxos de trabalho, de modo a aumentar a eficiência, a precisão e a conformidade nos processos da organização.
+Use **Responsável** quando a condição depender do usuário ou grupo atribuído. Escolha se deseja comparar com um usuário ou grupo ou com um conjunto selecionado. Consulte [Responsável](assignee).
+
+<figure><img src="../../../.gitbook/assets/prior-u043-pt.png" alt="Condições de atribuição. Cessionário refere-se à atribuição a um responsável."><figcaption><p>Condições de atribuição. Cessionário refere-se à atribuição a um responsável.</p></figcaption></figure>
+
+[Cartões detalhados de comparação de cotações e comportamento Qualquer/Todo](../cards-overview/quote-comparison-guide.md).
+
+Alguns rótulos do produto permanecem em inglês ou estão incorretamente traduzidos. As tabelas são tabelas de dados; valores devolvidos não representam retorno financeiro. Os identificadores técnicos permanecem inalterados.

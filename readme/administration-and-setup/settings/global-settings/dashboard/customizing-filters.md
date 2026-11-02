@@ -16,7 +16,7 @@ Usar filtros permite que os usuários encontrem rapidamente informações releva
 
 * Clique no ícone de filtro ou no campo de pesquisa.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_2.png)
+<figure><img src="../../../../.gitbook/assets/prior-u030-pt.png" alt="Pesquisa de documentos e filtros rápidos com os dados dos documentos ocultos."><figcaption><p>Pesquisa de documentos e filtros rápidos com os dados dos documentos ocultos.</p></figcaption></figure>
 
 ### Personalizando filtros
 
@@ -30,23 +30,23 @@ Usar filtros permite que os usuários encontrem rapidamente informações releva
 
 * Abra o menu de filtro nas configurações sob Painel e clique em "Filtros".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+<figure><img src="../../../../.gitbook/assets/prior-u015-pt.png" alt="Estilo do filtro de estado e filtro personalizado do painel."><figcaption><p>Estilo do filtro de estado e filtro personalizado do painel.</p></figcaption></figure>
 
 * Selecione o campo a ser filtrado (por exemplo, Status).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Defina os critérios do filtro, por exemplo: estilo de filtro de Status.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Menus suspensos: Escolha entre opções predefinidas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_6.png)
+
 
 * Salve o filtro personalizado clicando em "Aplicar".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_7.png)
+
 
 #### **Use filtros combinados**
 
@@ -66,10 +66,10 @@ Usar filtros permite que os usuários encontrem rapidamente informações releva
 * Abra o menu de Filtros.
 * Passo 2: Limpe ou remova os filtros aplicados clicando em "Limpar filtros", no ícone X ao lado do filtro selecionado, seja no menu de Filtros ou abaixo da barra de Filtros.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_8.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
+
+
+
 
 * Os dados são exibidos novamente sem os critérios de filtro anteriores.

@@ -1,82 +1,47 @@
-# Navegando no Gerenciador de Layout
+# Navegando no Construtor de Layout
 
-## Ser capaz de navegar no Gerenciador de Layout no DocBits e editar grupos e campos é crucial para controlar a estrutura e a aparência dos documentos.
+Use o **Construtor de Layout** para organizar os grupos e os campos que as pessoas veem num documento. Este guia usa o layout de Fatura numa organização de teste, e as capturas de ecrã mostram a interface em português.
 
-## Aqui estão os passos para usar o Gerenciador de Layout e editar grupos e campos:
+## Abrir o layout de Fatura
 
-## Navegando no Gerenciador de Layout:
+1. Acesse **Configurações → Tipos de documentos**.
+2. Encontre a Fatura e selecione **Layouts** no cartão dela. O Construtor de Layout abre para esse tipo de documento.
+3. A barra superior mostra o nome do layout (editável com o lápis), o **Tipo de documento** e o **Tipo de layout**. Use **Tipo de layout** para mudar para outro layout do mesmo tipo de documento.
 
-#### Abrindo o Gerenciador de Layout:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-pt.png" alt="Lista de tipos de documento com o cartão da Fatura e o link Layouts"><figcaption><p>Abra <strong>Layouts</strong> no cartão da Fatura.</p></figcaption></figure>
 
-* Faça login no DocBits e navegue até a área onde deseja usar o Gerenciador de Layout.
-* Você pode encontrar essa opção em "Gerenciar Tipos de Documentos".
+## Trabalhar com os três separadores do painel
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FeebqP176qG5bOQ6YLJDX%252FBildschirmfoto%25202024-05-23%2520um%252013.35.39.png%3Falt%3Dmedia%26token%3D6aa09cc2-2df5-4495-aefe-36dec3123b51\&width=768\&dpr=4\&quality=100\&sign=82c501bb\&sv=2)
+O painel à esquerda tem três separadores: **Estrutura**, **Campos** e **Elementos**. O Construtor de Layout abre em **Campos**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5z8cVvWqARCkXx4AER4B%252FBildschirmfoto%25202024-05-24%2520um%252010.12.05.png%3Falt%3Dmedia%26token%3De0f8301a-9aaa-4e4a-9568-a2c372355538\&width=768\&dpr=4\&quality=100\&sign=66865b41\&sv=2)
+**Estrutura** mostra o layout em árvore, na mesma ordem em que os grupos e os campos aparecem no documento. Expanda um grupo pela seta para ver os campos que ele contém; o nome técnico do campo aparece no painel **Propriedades**. A caixa **Procurar** filtra a árvore, e selecionar uma linha seleciona o mesmo elemento no canvas.
 
-Selecionando o Tipo de Documento:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-pt.png" alt="Construtor de Layout com o separador Estrutura aberto: a árvore de grupos expandida em Delivery Details com o campo Supplier ID selecionado, o layout da Fatura no canvas e o painel Propriedades à direita"><figcaption><p>A árvore de Estrutura, o canvas e o painel Propriedades.</p></figcaption></figure>
 
-* Selecione o tipo de documento que deseja editar.
-* O Gerenciador de Layout exibirá a estrutura desse tipo de documento.
+**Campos** lista todos os campos que o tipo de documento oferece, organizados pelos seus grupos. O contador ao lado do nome de um grupo indica quantos dos seus campos já estão colocados, por exemplo **4/14**. Os três botões por baixo da caixa de pesquisa são apenas ícones e alternam entre todos os campos, apenas os campos ainda não utilizados e apenas os campos ocultos. Cada linha mostra o rótulo do campo; um visto verde à direita assinala os campos que já estão no layout, que aparecem a cinzento.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-overview-2026.png" alt=""><figcaption><p>Layout Builder Invoice</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-pt.png" alt="Separador Campos do Construtor de Layout com os três botões de filtro em ícone, o grupo INVOICE DETAIL aberto com o contador 4/14 e os campos já colocados, a cinzento e com visto"><figcaption><p>Filtre os campos e identifique os já colocados pelo visto.</p></figcaption></figure>
 
-Navegando por Grupos e Campos:
+**Elementos** contém os blocos que arrasta para o canvas: **Grupos**, com os grupos deste layout, e **Elementos de formulário**, com Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields e Sub Group. Os nomes destes elementos aparecem em inglês na interface em português.
 
-* No Gerenciador de Layout, você verá uma estrutura em árvore que representa os grupos e campos do tipo de documento selecionado.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-pt.png" alt="Separador Elementos do Construtor de Layout com a secção Grupos a listar os grupos da Fatura e a secção Elementos de formulário a listar os doze elementos de formulário"><figcaption><p>As paletas Grupos e Elementos de formulário.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjtiMNhQqN859bxtLsoth%252Fimage.png%3Falt%3Dmedia%26token%3Dc3224b66-3f2a-4aa2-81ee-6cde5719cf3f\&width=768\&dpr=4\&quality=100\&sign=57e2b59\&sv=2)
+## Colocar e organizar elementos
 
-* Você pode navegar por essa estrutura para editar as áreas que deseja.
+- Arraste um campo de **Campos**, ou um elemento de **Elementos**, para o grupo onde deve aparecer. Os campos já colocados ficam assinalados com um visto no separador **Campos**.
+- Arraste um campo dentro de um grupo ou entre grupos para alterar a ordem.
+- O **+** acima do canvas adiciona um grupo vazio; o ícone de JSON ao lado cria um grupo a partir de uma definição em JSON.
+- No cabeçalho de um grupo pode mudar o nome do grupo em **Título do grupo**, copiar o JSON dele, mover o grupo para baixo ou para cima, ou eliminá-lo. Use a alça de arrastar à direita do cabeçalho para deslocar o grupo.
+- Selecione um campo no canvas para abrir as propriedades dele à direita. A pequena barra de ferramentas que aparece por baixo do campo selecionado remove-o do layout.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5UpYc7uZEQzEt2LEFHzo%252Fimage.png%3Falt%3Dmedia%26token%3D4203ac3a-5487-4bfc-8aa8-4c35fe70b14a\&width=768\&dpr=4\&quality=100\&sign=adc50420\&sv=2)
+## O painel Propriedades
 
-#### Editando grupos e campos:
+O painel à direita está sempre aberto e acompanha o elemento que selecionou. As configurações dele estão organizadas em **Mostrar**, **Comportamento**, **Valores e listas** e **Automação**. **Mostrar** contém o rótulo, o tipo de campo e a **Largura do elemento em porcentagem**, que escolhe entre os valores predefinidos 25, 33, 50, 66, 75 e 100. Veja [Configurando Propriedades de Campos](configuring-field-properties.md) para cada uma das opções.
 
-<mark style="color:red;">**Nota:**</mark> **quando o Título de um campo for alterado, você deve excluir e re-adicionar o campo no construtor de layout para que as alterações tenham efeito.**
+As configurações de validação, OCR e correspondência pertencem ao próprio campo e não ao layout: configure-as nas [Configurações de Campos](../fields/configuring-field-properties-1.md) separadas.
 
+## Pré-visualizar e salvar
 
+O canvas mostra o layout tal como ficará no documento. Use os separadores **Layout principal** e **Tabela** para alternar entre a página e a tabela de itens, e **Documento** para abrir o documento de exemplo ao lado do canvas. Veja [Usando a Pré-visualização do Modelo](using-the-template-preview.md).
 
-Adicionando um grupo ou campo:
-
-* Clique no botão "Criar novo grupo", dependendo se você deseja adicionar um novo grupo ou campo.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FF9Soj6uDKKyYb8ciweHp%252FBildschirmfoto%25202024-05-24%2520um%252010.23.27.png%3Falt%3Dmedia%26token%3D797e975a-470b-4a0d-b1f1-a82b8aeb7267\&width=768\&dpr=4\&quality=100\&sign=d2e200b6\&sv=2)
-
-* Insira o nome do novo grupo ou campo e selecione quaisquer configurações que desejar, como o tipo de campo (texto, número, data, etc.).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7qcF5LK6yxbcRVm57Ejz%252Fimage.png%3Falt%3Dmedia%26token%3Dec75cf2f-a834-4eb3-89c3-75a6fc70c88c\&width=768\&dpr=4\&quality=100\&sign=e93f7652\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSM5IXOG5XYfGo3ee1xzP%252Fimage.png%3Falt%3Dmedia%26token%3D57a737f0-240c-4c23-9d4a-b92e86a92b47\&width=768\&dpr=4\&quality=100\&sign=456cdcec\&sv=2)
-
-Removendo um grupo ou campo:
-
-* Selecione o grupo ou campo que deseja remover.
-* Clique no botão "Excluir" ou use o atalho de teclado apropriado (geralmente "Delete" ou "Del").
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FQQjFkNb0ONiiklAQmBRU%252FBildschirmfoto%25202024-05-24%2520um%252010.35.24.png%3Falt%3Dmedia%26token%3D2fb8d92a-c5c9-449b-8179-786765ada10f\&width=768\&dpr=4\&quality=100\&sign=1ac2e12c\&sv=2)
-
-
-
-Modificando um grupo ou campo:
-
-* Clique duas vezes no grupo ou campo que deseja alterar.
-* Altere quaisquer propriedades que desejar, como o nome, posição, tamanho ou configurações do tipo de campo.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FtdvSPyCEdIfj8j30DEe5%252Fimage.png%3Falt%3Dmedia%26token%3Dfaa32e5a-3492-499d-a0af-7fa99a583d09\&width=768\&dpr=4\&quality=100\&sign=865f9003\&sv=2)
-
-Organizando grupos e campos:
-
-* Arraste e solte grupos ou campos para alterar sua ordem ou colocá-los dentro ou fora de outros grupos.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fun2twvKa1n8VJrBZzjl3%252FBildschirmfoto%25202024-05-24%2520um%252010.45.28.png%3Falt%3Dmedia%26token%3Dc090597f-b693-4308-b0ac-badec6bec466\&width=768\&dpr=4\&quality=100\&sign=af0174ad\&sv=2)
-
-Salvando alterações:
-
-* Não se esqueça de salvar suas alterações antes de sair do Gerenciador de Layout.
-* Clique no botão "Salvar".
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fu9c6MD2mZFuAsXp7n9Ai%252FBildschirmfoto%25202024-05-24%2520um%252010.51.06.png%3Falt%3Dmedia%26token%3D613ef982-9455-4832-b2a5-5644e3bd644c\&width=768\&dpr=4\&quality=100\&sign=fb7f99d5\&sv=2)
-
-Seguindo esses passos, você pode navegar efetivamente pelo Gerenciador de Layout do DocBits e editar grupos, bem como campos dentro de um tipo de documento. Isso permite que você personalize a estrutura e a aparência de seus documentos de acordo com suas necessidades.
+Selecione **Salvar** na barra superior quando terminar. Veja [Salvar e Aplicar Alterações](save-and-apply-changes.md) para as outras ações da barra superior, incluindo a geração de modelos, os modelos padrão e a aplicação de um layout às origens.

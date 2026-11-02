@@ -1,254 +1,103 @@
-# Tela de Validação
+# Ecrã de validação
 
-{% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
+## Corrigir e guardar uma fatura como revisora
 
-## Visão Geral
+Compare a fatura original com os campos e as três linhas, corrija o número, guarde e recarregue para verificar o valor conservado. A gravação utiliza uma fatura eletrónica sintética e uma conta normal de revisão. Guardar esta correção é distinto do treino de extração, da aprovação e da exportação.
 
-<figure><img src="../../../.gitbook/assets/validation_screen1.png" alt=""><figcaption></figcaption></figure>
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/pt.mp4" %}
 
-### Origem do Documento (Document Origin)
+[Ver com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/pt.html)
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
-{% endembed %}
+## Verificar uma fatura e concluir a conferência
 
-Na Tela de Validação, você pode selecionar a Origem do documento no topo da tela. Com base na sua escolha, o DocBits aplica automaticamente os padrões regionais para:
-*   **Formatos de data**
-*   **Separadores numéricos** (vírgula vs ponto)
+Acompanhe uma fatura do painel até à passagem à etapa seguinte: compare fornecedor, datas, número, montantes e moeda com o original e leia um aviso de campo obrigatório. Selecione o número diretamente no documento, confirme a associação e conserve a regra de extração com **Save Rules**. Neste exemplo, a fatura verificada é depois submetida para aprovação. As ações disponíveis dependem das permissões e do processo da sua empresa.
 
-Quando você altera a origem, o documento será reiniciado para reaplicar a formatação e garantir que as regras regionais corretas sejam usadas.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-review-customer/v2/pt.mp4" %}
 
-### **Botão Salvar:**
+## Abrir e utilizar o ecrã de validação
 
-<figure><img src="../../../.gitbook/assets/validation_screen2.png" alt=""><figcaption></figcaption></figure>
+Abra um documento no painel. Na vista **Validação de campo**, compare os campos editáveis com o documento original apresentado ao lado. O tipo de documento e o esquema configurado determinam os campos, tabelas e botões disponíveis. Mova o separador para dar mais espaço aos campos ou ao documento.
 
-* **Botão Salvar:**
-  * **Propósito:** Salva o estado atual do documento ou script em que se está trabalhando.
-  * **Caso de Uso:** Após fazer alterações ou anotações em um documento, use este botão para garantir que todas as modificações sejam salvas.
+Utilize os controlos de página nos documentos com várias páginas e o zoom para ler texto pequeno. As setas inferiores mudam de documento e são diferentes dos controlos de página.
 
-### **Adicionar Regras Especiais:**
+### Origem do documento
 
-<figure><img src="../../../.gitbook/assets/validation_screen3.png" alt=""><figcaption></figcaption></figure>
+Confira a **origem do documento** antes das datas e dos montantes. Determina como são interpretados os formatos de data e número; não traduz o documento nem altera o idioma da interface. Escolha a origem correspondente ao documento e compare os valores com o original.
 
-<figure><img src="../../../.gitbook/assets/validation_screen4.png" alt=""><figcaption></figcaption></figure>
+A alteração da origem abre uma caixa de diálogo de confirmação. Ao continuar, o processamento do documento recomeça. No final, confira os valores extraídos novamente.
 
-* **Adicionar Regras Especiais / Adicionar Script em DocBits:**
-  * **Propósito:** Permite que os usuários implementem regras ou scripts específicos que personalizam como os documentos são processados.
-  * **Caso de Uso:** Use este recurso para automatizar tarefas como extração de dados ou validação de formato, aumentando a eficiência do fluxo de trabalho.
+## Corrigir um campo e ensinar ao DocBits onde o ler
 
-{% hint style="info" %}
-Veja aqui adicionar [Script em DocBits](../../../administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/)
-{% endhint %}
+Se o número da fatura não tiver sido lido corretamente:
 
-### **Campos Fuzzy:**
+1. Selecione o campo **Número da fatura**.
+2. Faça duplo clique no número completo no original ou selecione a área que o contém.
+3. Verifique o campo proposto e confirme a associação com o visto quando solicitado.
+4. Confira o valor e a área de origem realçada. Repita a seleção se o número estiver incompleto ou associado ao campo errado.
+5. Guarde o documento. Para conservar a aprendizagem de extração, utilize também **Save Rules** e confirme a caixa de diálogo.
 
-<figure><img src="../../../.gitbook/assets/validation_screen5.png" alt=""><figcaption></figcaption></figure>
-
-* **Campos Fuzzy:**
-  * **Propósito:** Ajuda a identificar e corrigir campos onde os dados podem não ser uma correspondência perfeita, mas são suficientemente próximos.
-  * **Caso de Uso:** Útil em processos de validação de dados onde correspondências exatas nem sempre são possíveis, como nomes ou endereços levemente incorretos.
-
-### **Campos Obrigatórios:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
-
-Existem campos que são obrigatórios para edições futuras, estes podem ser editados nas configurações.
-
-Use a dica de ferramenta para descobrir se:
-
-* É um campo obrigatório (required)
-* Validação necessária
-* Baixa confiança
-* Descompasso no valor total de impostos
-
-**Campos Obrigatórios:**
-
-* **Propósito:** Identifica campos obrigatórios dentro dos documentos que devem ser preenchidos ou corrigidos antes de um processamento adicional.
-* **Caso de Uso:** Garante que dados essenciais sejam capturados com precisão, mantendo a integridade dos dados e conformidade com as regras de negócios.
-
-## Tabela extraída (itens de linha)
-
-<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Tabela de itens de linha no ecrã de validação com a barra de ferramentas da tabela"><figcaption><p>A tabela extraída por baixo dos campos de cabeçalho</p></figcaption></figure>
-
-Por baixo dos campos de cabeçalho, o DocBits mostra a tabela de itens de linha do documento: uma linha por linha da fatura, uma coluna por [coluna de tabela](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md) configurada para o tipo de documento. Quando um tipo de documento tem várias tabelas (por exemplo, artigos e encargos), cada tabela tem o seu próprio separador por cima da grelha.
-
-### De onde vem a tabela
-
-Por cima da grelha existe um separador por cada caminho de extração que a organização ativou:
-
-| Separador | Significado |
-|---|---|
-| **Tabela extraída** | Extração baseada em regras (definição *Extração de tabelas*). Para um fornecedor com tabela treinada, estas linhas vêm das regras guardadas e são extraídas da mesma forma em todos os documentos desse fornecedor; para um fornecedor sem treino, o separador pode estar vazio. |
-| **Tabela extraída por IA** | A extração de tabelas por IA (definição *Extração de tabelas por IA*). Preenchida quando o fornecedor não tem regras guardadas e, para as colunas marcadas como *Usar IA*, mesmo quando existem regras. Uma dica *AI table not found* no separador significa que a IA não devolveu nada para este documento. |
-| **PO Tables** | Apenas no construtor de layouts: as linhas da ordem de compra usadas para a correspondência. |
-
-Se nenhum dos separadores aparecer, ambas as definições de tabela estão desativadas para a organização (Definições → Processamento de Documentos → Classificação e Extração). O nível de IA que lê a tabela é definido por organização e pode ser substituído por fornecedor, ver [Modelo de IA específico do fornecedor](supplier-specific-ai-model-for-field-and-table-extraction.md).
-
-### Trabalhar na tabela
-
-* **Editar uma célula**: clique nela e escreva. As colunas de valor, número e data são validadas enquanto escreve.
-* **Adicionar nova linha à tabela**: acrescenta uma linha vazia no fim. Use-a quando uma linha não foi reconhecida.
-* **Eliminar uma linha**: o ícone do caixote do lixo no fim da linha.
-* **Adicionar colunas mapeadas vazias**: mostra as colunas configuradas que a IA deixou vazias, para que as possa preencher manualmente.
-* **Restaurar coluna da tabela**: repõe uma coluna que removeu da vista neste documento.
-* **Eliminar tabela**: limpa todas as linhas desta tabela neste documento. A configuração não é alterada.
-* **Adicionar nova coluna de tabela** (administradores): a mesma caixa de diálogo das definições de colunas da tabela, sem sair do documento.
-* **Tags** (apenas tabela de IA): breves indicações em texto para a IA, por exemplo *"a última coluna é o valor líquido"*. Ver [Tags da tabela de IA](../ai-table/ai-table-tags.md).
-* **Aplicar** / **Guardar** / **Eliminar** ao lado das tags: *Aplicar* volta a executar a tabela de IA neste documento com as tags e as alterações de colunas que fez, sem guardar nada (se o documento tiver linhas com correspondência de PO, o DocBits avisa que as correspondências são removidas); *Guardar regras* guarda o mapeamento de colunas e as tags atuais para este fornecedor; *Eliminar regras* remove-os e volta a executar a extração por IA neste documento.
-* **Exportar**: descarrega a tabela como ficheiro CSV.
-* **Ir para a vista de extração de tabelas**: abre o treino de tabelas para este documento. Use-a quando o mesmo fornecedor sai sempre errado: desenhe a tabela uma vez, mapeie as colunas e clique em *Guardar regras*; a partir daí, as linhas aparecem no separador *Tabela extraída*. Ver [Treino de campos de linha / Treino de tabelas](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+<figure><img src="../../../.gitbook/assets/validation-source-selection-pt-2026-v2.png" alt="O número selecionado no original e a associação ao campo. Confirme a associação antes de guardar a regra."><figcaption><p>O número selecionado no original e a associação ao campo. Confirme a associação antes de guardar a regra.</p></figcaption></figure>
 
 {% hint style="info" %}
-Se a tabela foi extraída pela IA e abrir o treino de tabelas, o DocBits pergunta *Table is already extracted by AI. Do you want to train manually?* Depois de guardar regras, a tabela de IA deixa de ser usada para este fornecedor.
+Escrever um valor de substituição corrige este documento, mas não cria a associação à área de origem necessária para esta aprendizagem. Selecione o valor no original, confirme a associação e guarde a regra para a reutilizar em documentos correspondentes deste fornecedor. A aprendizagem a partir da imagem não está disponível para documentos lidos diretamente como dados de fatura eletrónica.
 {% endhint %}
 
-### Extrair novamente a tabela
+## Guardar, conservar regras e prosseguir
 
-* **Mesmo documento, tabela de IA:** adicione ou altere tags e clique em **Aplicar**; a tabela de IA é reconstruída apenas para este documento. Para descartar também as tags e a formatação guardadas do fornecedor, clique em **Eliminar** (*Eliminar regras*): o DocBits confirma *Rules has been deleted successfully* e volta a executar a extração por IA.
-* **Mesmo documento, regras treinadas:** abra *Ir para a vista de extração de tabelas*, corrija a tabela e clique em *Guardar e extrair novamente*.
-* **Documento inteiro de novo (cabeçalho e tabela):** Dashboard → menu do documento → *Reiniciar*. Necessário depois de um administrador alterar as colunas da tabela ou as definições de extração.
+| Ação | Resultado |
+| --- | --- |
+| **Salvar** — ícone de disquete acima dos campos | Guarda alterações no documento atual. Por si só, não o aprova nem o exporta. |
+| **Save Rules** | Conserva regras de extração com base no documento e nas associações às áreas de origem. É diferente de guardar os valores. |
+| **Exportar / Export**, aprovação ou outra ação configurada | Envia o documento para a etapa seguinte configurada após os controlos relevantes. A ação e o estado obtido dependem do processo e das permissões. |
 
-### O que bloqueia a aprovação
+No vídeo, a fatura conferida é submetida para aprovação. Um botão **Export** não garante que a fatura já chegou ao ERP de destino. Confira o novo estado no painel e eventuais erros de processamento.
 
-A tabela é verificada quando guarda ou aprova. Uma célula a vermelho ou uma mensagem por baixo da tabela significa uma destas situações:
+## Campos obrigatórios e mensagens de validação
 
-| Mensagem | Causa | O que fazer |
-|---|---|---|
-| Coluna obrigatória vazia | Uma coluna marcada como *Obrigatória* não tem valor nesta linha. | Preencha a célula ou pergunte a um administrador se a coluna tem mesmo de ser obrigatória. |
-| *Line total does not match quantity x unit price (expected …, got …)* | `quantidade × preço unitário + encargos − desconto` difere do total da linha em mais de 0,02. Muitas vezes, um dos quatro valores foi lido para a coluna errada. | Corrija o valor que está errado face ao documento; se uma coluna como *Encargos* é sistematicamente preenchida com o valor errado, informe o seu administrador (ver a secção Resolução de problemas em [Colunas da Tabela](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md)). |
-| *Line items add up to … but the net total is …* | A soma dos totais das linhas difere do valor líquido no cabeçalho. | Procure uma linha em falta ou duplicada, ou um valor do cabeçalho lido incorretamente. |
-| *Line Item Table is missing Mandatory column for PO* | A correspondência de PO precisa de número do artigo, preço unitário, quantidade e valor total; uma dessas colunas está oculta. | Administrador: torne a coluna visível em Colunas da Tabela. |
+Um contorno vermelho ou ícone de aviso chama a atenção para um campo. Leia a mensagem: pode faltar um valor obrigatório, ser necessário conferir a extração ou ter falhado um controlo configurado. A presença de um valor não comprova, por si só, a sua validade.
 
-Um administrador pode desativar todas as verificações de tabela de um tipo de documento com *Ignorar validação da tabela* (Tipos de Documento → Mais definições); as discrepâncias nas linhas e as colunas obrigatórias vazias deixam então de ser comunicadas.
+Compare fornecedor, número, datas, montantes e moeda com o original. Nos totais, confira os campos de cabeçalho afetados e as linhas correspondentes. Corrija a causa indicada antes de prosseguir. Os controlos dependem do tipo de documento e da configuração da organização; consulte [Verificações automáticas](automatic-checks-on-the-validation-screen.md).
 
-Mais sobre as verificações: [Verificações automáticas no ecrã de validação](automatic-checks-on-the-validation-screen.md) e [Resolução de Problemas de Extração de Tabelas](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
+## Utilizar o assistente
 
-### **Lupa:**
+O botão **Assistente** acima dos campos apresenta os problemas de validação pendentes. Abra-o e utilize **Ir para o campo** para conferir o campo afetado. As perguntas e sugestões IA dependem da ativação para a organização e das suas permissões. Se não estiverem disponíveis, leia o aviso no painel. As sugestões alteram o formulário: confira-as e guarde o documento para conservar as alterações.
 
-<figure><img src="../../../.gitbook/assets/validation_screen7.png" alt="" width="118"><figcaption></figcaption></figure>
+## Selecionar dados mestre
 
-* **Lupa:**
-  * **Propósito:** Fornece uma visão ampliada de uma área selecionada do documento.
-  * **Caso de Uso:** Ajuda a examinar detalhes finos ou texto pequeno em documentos, garantindo precisão na entrada ou revisão de dados.
+Os campos com uma pesquisa configurada podem consultar fornecedores, encomendas ou outros dados mestre. Abra a pesquisa do campo, filtre os resultados e selecione o registo correto. A seleção pode preencher vários campos relacionados: confira-os também. Estes valores vêm dos dados mestre e podem diferir do texto impresso. Consulte [Dados fuzzy](fuzzy-data.md).
 
-<figure><img src="../../../.gitbook/assets/validation_screen8.png" alt="" width="329"><figcaption></figcaption></figure>
+## Conferir as linhas da fatura
 
-### **Abrir nova janela:**
+Se o esquema incluir tabelas, compare linhas, descrições, quantidades, preços e montantes com o documento. **Tabela extraída** e **Tabela extraída de IA** são vistas de extração diferentes. A disponibilidade depende dos métodos ativos e do esquema. Um separador vazio ou ausente não explica, por si só, um problema de extração.
 
-<figure><img src="../../../.gitbook/assets/validation_screen9.png" alt="" width="130"><figcaption></figcaption></figure>
+Corrija células e linhas em falta ou duplicadas com os controlos disponíveis. As alterações dizem respeito ao documento atual. O treino reutilizável de tabelas, as etiquetas de IA e o treino dos campos de cabeçalho são operações distintas. Consulte [Etiquetas das tabelas IA](../ai-table/ai-table-tags.md) e [Treino de tabelas](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
-* **Abrir Nova Janela:**
-  * **Propósito:** Abre uma nova janela para comparação lado a lado de documentos ou multitarefa.
-  * **Caso de Uso:** Útil ao comparar dois documentos ou ao consultar informações adicionais sem sair do documento atual.
+Leia os avisos sobre colunas obrigatórias, cálculos de linha e totais. Antes de aplicar outra extração IA ou voltar a extrair uma tabela, leia a confirmação: pode ser necessário remover e recriar associações existentes a encomendas.
 
-### **Atalhos de teclado:**
+## Visualização e colaboração
 
-<figure><img src="../../../.gitbook/assets/validation_screen10.png" alt="" width="145"><figcaption></figcaption></figure>
+Passe o ponteiro sobre um ícone para ler o nome. Algumas ferramentas dependem dos módulos, do tipo de documento ou das permissões.
 
-* **Atalhos de Teclado:**
-  * **Propósito:** Permite que os usuários realizem ações rapidamente usando combinações de teclado.
-  * **Caso de Uso:** Aumenta a velocidade e eficiência na navegação e processamento de documentos, minimizando a dependência da navegação com o mouse.
+| Ferramenta | Utilização |
+| --- | --- |
+| **Lupa** e zoom | Examinar pequenos detalhes do original. |
+| **Abrir imagem em nova janela** | Mostrar a mesma imagem noutra janela, por exemplo num segundo monitor. A interface identifica-a como funcionalidade do Chrome. |
+| **Atalhos de teclado** | Abrir a ajuda; consulte [Atalhos de teclado](keyboard-shortcuts.md). |
+| **Tarefas** | Criar e acompanhar trabalho interno atribuído a uma pessoa ou grupo. |
+| **Fluxo de atividades** | Consultar atividades registadas no documento. |
+| **Histórico de aprovação** | Consultar aprovações e rejeições quando a funcionalidade está ativa. |
+| **Modo de anotação** | Adicionar notas ao documento se as anotações estiverem ativas. |
+| **Unir / adicionar páginas** | Unir documentos ou adicionar páginas em falta através da caixa de diálogo disponível. Conferir as páginas selecionadas antes de confirmar. |
+| **Visualização OCR** | Consultar texto já reconhecido. A abertura não inicia uma nova extração OCR. Não está disponível para certos documentos eletrónicos. |
+| **Criar tíquete** | Preparar um pedido de suporte com o contexto do documento e a descrição do problema. As tarefas internas são tratadas separadamente. |
+| **Registros de script** | Consultar mensagens dos scripts do documento se o módulo estiver ativo. É uma vista de registos, não um editor de scripts. |
 
-<figure><img src="../../../.gitbook/assets/validation_screen11.png" alt="" width="239"><figcaption></figcaption></figure>
+## Mais opções e definições de administração
 
-### **Tarefas:**
+Nas faturas, **Mais opções → Fluxo de documentos** abre o percurso de processamento. Consoante as permissões e a configuração, o menu também pode incluir divisão de documentos, acesso ao modelo de esquema e preferências de extração do fornecedor.
 
-<figure><img src="../../../.gitbook/assets/validation_screen12.png" alt="" width="55"><figcaption></figcaption></figure>
+**Use E-Text se disponível**, **Utilizar Extração Estruturada (IA)** e **Modelo de IA** são definições de extração do fornecedor, não correções normais de campos. Apenas administradores autorizados as podem alterar. Siga a confirmação de reinício quando for necessário voltar a processar o documento. Um modelo de esquema configura o formulário de validação; não altera a apresentação impressa da fatura. Consulte [Modelo IA por fornecedor](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
-Para compartilhar informações internas, você pode criar tarefas e atribuí-las a um funcionário específico ou grupo dentro da empresa.
+## Se não conseguir editar ou prosseguir
 
-* **Tarefas:**
-  * **Propósito:** Permite que os usuários criem tarefas relacionadas a documentos e as atribuam a membros da equipe.
-  * **Caso de Uso:** Facilita a colaboração e gestão de tarefas dentro das equipes, garantindo que todos saibam suas responsabilidades.
-
-<figure><img src="../../../.gitbook/assets/validation_screen13.png" alt="" width="218"><figcaption></figcaption></figure>
-
-### **Modo de Anotação:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen_annotation_mode.png" alt="Annotation Mode Button" width="187"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
-
-{% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
-{% endembed %}
-
-You can leave annotations on a document. This can be helpful to leave information for other users who further edit this document.
-
-* **Modo de Anotação:**
-  * **Propósito:** Permite que os usuários deixem notas ou anotações diretamente no documento.
-  * **Caso de Uso:** Útil para fornecer feedback, instruções ou notas importantes para outros membros da equipe que trabalharão no documento mais tarde.
-
-### **Mesclar:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen16.png" alt="" width="60"><figcaption></figcaption></figure>
-
-Documentos podem ser mesclados aqui, por exemplo, se uma página de uma fatura estava faltando, essas páginas podem ser mescladas posteriormente desta forma sem que o documento inteiro precise ser excluído ou reenviado.
-
-* **Mesclar Documentos:**
-  * **Propósito:** Combina vários documentos em um único arquivo.
-  * **Caso de Uso:** Útil em cenários onde partes de um documento são digitalizadas separadamente e precisam ser consolidadas.
-
-### **Visualização OCR:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen17.png" alt="" width="77"><figcaption></figcaption></figure>
-
-Na visualização OCR, o texto é automaticamente filtrado do documento. Isso é usado para reconhecer características relevantes, como o código postal, número do contrato, número da fatura e a ordenação de um documento.
-
-* **Visualização OCR:**
-  * **Propósito:** Reconhece automaticamente o texto dentro dos documentos usando tecnologia de Reconhecimento Óptico de Caracteres.
-  * **Caso de Uso:** Simplifica o processo de digitalização de textos impressos ou manuscritos, tornando-os pesquisáveis e editáveis.
-
-<figure><img src="../../../.gitbook/assets/validation_screen18.png" alt=""><figcaption></figcaption></figure>
-
-### **Criar ticket:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen19.png" alt="" width="97"><figcaption></figcaption></figure>
-
-Ao contrário das tarefas que são passadas internamente dentro da empresa, este ticket de suporte é importante para nos notificar e criar imediatamente um ticket em caso de erros e/ou discrepâncias. Isso torna o processo muito mais fácil porque você pode enviar imediatamente o bug com o documento apropriado. Também há a opção de definir prioridade, tirar uma captura de tela do documento ou fazer upload de uma.
-
-* **Criar Ticket:**
-  * **Propósito:** Permite que os usuários relatem problemas ou discrepâncias criando um ticket de suporte.
-  * **Caso de Uso:** Essencial para a rápida resolução de problemas e bugs, ajudando a manter a integridade e o funcionamento suave do sistema.
-
-<figure><img src="../../../.gitbook/assets/validation_screen20.png" alt="" width="237"><figcaption></figcaption></figure>
-
-### **Logs de Script do Documento:**
-
-<figure><img src="../../../.gitbook/assets/validation_screen21.png" alt="" width="160"><figcaption></figcaption></figure>
-
-Scripts podem ser criados nas configurações sob Tipos de Documento; esta informação será então exibida aqui.
-
-* **Logs de Script do Documento:**
-  * **Propósito:** Exibe logs relacionados a scripts que foram implementados para diferentes tipos de documentos.
-  * **Caso de Uso:** Útil para rastrear e depurar ações de script em documentos, ajudando os usuários a entender os processos automatizados e corrigir quaisquer problemas.
-
-<figure><img src="../../../.gitbook/assets/validation_screen22.png" alt=""><figcaption></figcaption></figure>
-
-### **Mais configurações:**
-
-<figure><img src="../../../.gitbook/assets/docbits_validation_screen_more_settings_menu.jpg" alt="Docbits Validation Screen More Settings Menu"><figcaption></figcaption></figure>
-
-### **Fluxo do Documento:**
-
-Lá você encontrará o fluxo do documento
-
-* **Propósito:** Mostra a sequência e progressão do processamento de documentos dentro do sistema.
-* **Caso de Uso:** Ajuda a rastrear o status do documento através de diferentes estágios, garantindo que todas as etapas necessárias de processamento sejam seguidas.
-
-### **Ir para o Modelo de Layout:**
-
-* Com esta opção você será redirecionado e poderá editar seu layout ou usar o modelo padrão
-* **Ir para o Modelo de Layout:**
-  * **Propósito:** Redireciona os usuários para um editor de layout onde eles podem modificar modelos existentes ou aplicar um padrão.
-  * **Caso de Uso:** Permite a personalização dos layouts de documentos para atender a necessidades ou preferências específicas de negócios, melhorando o alinhamento visual e funcional do documento com os padrões da empresa.
-
-### Use E-Text if Available
-
-* **Propósito:** Permite que o DocBits utilize e-text para todos os documentos de um fornecedor específico, se disponível, melhorando a precisão da extração.
-* **Caso de Uso:** Melhora a extração de texto aproveitando o texto incorporado em vez de OCR, o que pode levar a resultados mais precisos para este fornecedor.
-
-### [Modelo de IA Baseado no Fornecedor](supplier-specific-ai-model-for-field-and-table-extraction.md)
-
-* **Propósito:** Permite a seleção entre três modelos de IA diferentes para otimizar os resultados de extração para um fornecedor específico.
-* **Caso de Uso:** Garante melhor precisão na extração ao escolher o modelo de IA mais adequado para a estrutura e conteúdo dos documentos de cada fornecedor.
+Leia o motivo apresentado: o documento pode estar bloqueado, ser só de leitura, estar noutro estado ou ter restrições associadas ao seu papel. Resolva as mensagens e consulte a pessoa responsável ou o administrador sobre acesso e configuração. Se o erro persistir, consulte a [Resolução de problemas](troubleshooting/README.md) ou prepare um ticket com o documento e a mensagem exata.

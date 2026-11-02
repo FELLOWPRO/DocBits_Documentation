@@ -1,38 +1,36 @@
-# Fluxo de Documentos
+# Fluxo do documento
 
-## **Visão Geral:**
+O fluxo do documento mostra a sequência, o estado e a duração das etapas de processamento. O exemplo utiliza uma fatura fictícia.
 
-Esta página fornece uma visão gráfica das várias etapas que um documento passou até este ponto.
+## Abrir o fluxo
 
-## **Como Acessar:**
+Encontre o documento no painel. Os valores do documento estão ocultos.
 
-### **Opção 1:**
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-pt.png" alt="Pesquisa do documento fictício no painel; valores ocultos."><figcaption><p>Pesquisa do documento fictício no painel; valores ocultos.</p></figcaption></figure>
 
-1.  Navegue até a coluna de ações no painel e clique nos três pontos ao lado do documento para o qual você deseja visualizar o fluxo de documentos.
+Abra a validação de campos e o menu de opções na barra de ferramentas direita para consultar o fluxo do documento.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1.png" alt=""><figcaption></figcaption></figure>
-2.  Selecione **Fluxo de Documentos**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-pt.png" alt="Menu de validação para abrir o fluxo do documento."><figcaption><p>Menu de validação para abrir o fluxo do documento.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2.png" alt="" width="248"><figcaption></figcaption></figure>
+## Ler as etapas
 
-### **Opção 2:**
+Cada cartão representa uma etapa, como importação, OCR, classificação ou extração de campos. Siga a numeração.
 
-1. Abra o documento para o qual você deseja visualizar o fluxo de documentos.
-2.  Clique nos três pontos no lado direito da Validação de Campo.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-pt.png" alt="Etapas de processamento de uma fatura fictícia; códigos técnicos inalterados."><figcaption><p>Etapas de processamento de uma fatura fictícia; códigos técnicos inalterados.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3.png" alt=""><figcaption></figcaption></figure>
-3.  Selecione **Fluxo de Documentos**.
+Os códigos técnicos DOCUMENT_IMPORTED e COMPLETE permanecem inalterados. COMPLETE significa que uma etapa terminou.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4.png" alt="" width="288"><figcaption></figcaption></figure>
+## Consultar detalhes
 
-## **Descrição:**
+Selecione um cartão para consultar os detalhes e registos disponíveis.
 
-No lado esquerdo da tela, você verá as etapas individuais do fluxo de documentos, listadas da esquerda para a direita.
+| Detalhe | Significado |
+| --- | --- |
+| Módulo | Componente que processa a etapa |
+| Estado | Situação atual da etapa |
+| Duração | Tempo de processamento registado |
+| Registos | Mensagens técnicas disponíveis |
 
-<figure><img src="../../../.gitbook/assets/DocumentFlow_6.png" alt=""><figcaption></figcaption></figure>
+Investigue as mensagens de uma etapa em espera ou com erro antes de reiniciar o processamento. Alguns títulos de diagnóstico podem permanecer em inglês no produto.
 
-* As etapas que iniciam o processo de fluxo de documentos (como importação ou reinício) aparecerão em verde.
-* Para navegar pelas etapas, basta arrastá-las e soltá-las na tela.
-*   Quando você clica em uma etapa, o nome do módulo e informações sobre se a etapa foi bem-sucedida ou não aparecerão no lado direito da tela.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_7.png" alt=""><figcaption></figcaption></figure>
+Os detalhes de uma etapa mostram o componente de processamento, o estado, a duração e os registos técnicos disponíveis.

@@ -1,37 +1,39 @@
-# Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)
+# Caso 15: Encargo de cabeçalho - Encargo por unidade fora da tolerância (Rejeitado)
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-The header charge per unit is outside tolerance and has not been approved.
+## Cenário:
 
-## Action:
+O encargo de cabeçalho por unidade está fora da tolerância e não foi aprovado.
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+## Ação:
 
-## Example:
+O sistema ajusta o encargo de cabeçalho ao pedido de compra, processa a transação e gera as notas necessárias.
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+## Exemplo:
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+* **Pedido de compra (PO):**
+  * Encargo de cabeçalho por unidade: $4.00
+  * Quantidade: 1,500 unidades
+  * Valor total do encargo de cabeçalho: $6,000.00
+* **Fatura recebida:**
+  * Encargo de cabeçalho por unidade: $5.00 (fora da tolerância de 25%, rejeitado)
+  * Quantidade: 1,500 unidades
+  * Valor total do encargo de cabeçalho: $7,500.00
+* **Níveis de tolerância:**
+  * Tolerância do encargo de cabeçalho por unidade: ±5%
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+Como o encargo de cabeçalho por unidade ($5.00) excede a tolerância de 5% e não foi aprovado, o sistema irá:
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+1. **Rejeitar o encargo de cabeçalho faturado por unidade:** o sistema não aceita o valor de $5.00 porque o desvio excede o limite de tolerância.
+2. **Ajustar o encargo de cabeçalho por unidade:** o sistema ajusta o valor ao pedido de compra original ou ao encargo por unidade aprovado:
+   * Encargo de cabeçalho ajustado por unidade = $4.00 (do pedido de compra)
+3. **Recalcular o total do encargo de cabeçalho:** o sistema recalcula o total com o encargo por unidade ajustado:
+   * **Valor total corrigido do encargo de cabeçalho = Quantidade × Encargo de cabeçalho ajustado por unidade**
+   * **Valor total corrigido do encargo de cabeçalho = 1,500 unidades × $4.00 = $6,000.00**
+4. **Gerar uma nota de crédito:** como o total original da fatura é superior ao total corrigido, o sistema gera uma nota de crédito para o valor cobrado em excesso:
+   * **Valor da nota de crédito = Total original da fatura - Valor total corrigido do encargo de cabeçalho**
+   * **Valor da nota de crédito = $7,500.00 - $6,000.00 = $1,500.00**
+5. **Processar a fatura:** o sistema processa a fatura com o total corrigido de $6,000.00 e emite uma nota de crédito de $1,500.00 para refletir o valor cobrado em excesso.
+
+Esta abordagem alinha a transação com as condições originais do pedido de compra, corrigindo os valores cobrados em excesso nos registos financeiros.

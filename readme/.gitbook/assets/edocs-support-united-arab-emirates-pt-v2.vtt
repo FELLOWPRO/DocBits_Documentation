@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.473
+UAE VAT Invoice é a designação
+configurada. Um mapeamento de faturas de
+
+formats_02
+00:00:06.473 --> 00:00:12.615
+IVA não comprova o suporte de todas as
+edições Peppol ou PINT dos Emirados Árabes
+
+formats_03
+00:00:12.615 --> 00:00:18.333
+Unidos. Confirme o contrato de dados e a
+integração de entrega necessária.
+
+workflow_01
+00:00:19.083 --> 00:00:24.470
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:24.470 --> 00:00:31.541
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:31.541 --> 00:00:32.467
+ativa.
+
+accept_01
+00:00:33.217 --> 00:00:39.173
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:39.173 --> 00:00:45.036
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:45.036 --> 00:00:49.567
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

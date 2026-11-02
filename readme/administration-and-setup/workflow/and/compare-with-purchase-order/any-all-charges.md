@@ -1,12 +1,14 @@
-# Any / All Charges
+# Qualquer/todas as cobranças
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="O cartão na biblioteca de cartões, versão 2 e versão 3"><figcaption><p>O cartão na biblioteca de cartões. Versão 2 acima, versão 3 abaixo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v2-pt-pt.png" alt="Qualquer/todas as cobranças, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v3-pt-pt.png" alt="Qualquer/todas as cobranças, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
 ## **Objetivo:**
 
 Este cartão de fluxo de trabalho compara os encargos adicionais de um documento com os encargos adicionais da ordem de compra correspondente, dentro de uma tolerância definida. Responde a uma única pergunta: o documento e a ordem de compra concordam quanto aos encargos adicionais? É comparado cada encargo que a correspondência da ordem de compra emparelhou, pelo que não é necessário indicar qualquer nome de campo no cartão.
 
-Este cartão distingue-se de **Compare Total Charges**, que compara um único campo do documento com um só encargo identificado por um Charge ID. Utilize este cartão quando todos os encargos emparelhados do documento devam ser verificados de uma só vez.
+Este cartão distingue-se de **Comparar cobranças totais**, que compara um único campo do documento com um só encargo identificado por um Charge ID. Utilize este cartão quando todos os encargos emparelhados do documento devam ser verificados de uma só vez.
 
 A correspondência da ordem de compra tem de ser executada antes deste cartão. Se o documento não tiver uma ordem de compra correspondente, o cartão interrompe o fluxo de trabalho e comunica dados ausentes.
 

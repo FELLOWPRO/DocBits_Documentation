@@ -1,4 +1,10 @@
-# Notas de versão do DocBits — 14 de outubro de 2026
+# Hotfix VESTA — 14 de outubro de 2026
+
+> **Canal de lançamento:** VESTA · **Versão:** R1.0.15.
+>
+> **A comparar com a NOVA?** A [comparação de funcionalidades da versão menor NOVA](nova-minor-release-4-november-2026.md#what-nova-adds-for-customers) abrange o Assistente de validação, melhorias de automação revistas, relatórios de faturas eletrónicas expandidos, novos controlos de importação e outras adições além desta versão VESTA.
+>
+> **Próximo hotfix VESTA: [11 de novembro de 2026 (planeado)](vesta-hotfix-11-november-2026.md).** Todas as funcionalidades anteriormente disponíveis como beta na VESTA são agora funcionalidades regulares da NOVA e tornar-se-ão funcionalidades regulares da VESTA com esse hotfix.
 
 _O que muda no hotfix de produção do DocBits a 14 de outubro de 2026 (versão
 R1.0.15), cobrindo tudo desde o [hotfix de 15 de setembro](incremental-updates-15-september-2026.md).
@@ -80,7 +86,7 @@ alterações visíveis para o cliente._
 
 ## Web App — `10.78.9.4`
 
-**Settings Assistant**
+**Assistente de Configurações**
 - Uma gaveta de chat do lado direito, com um interruptor, está presente em
   todas as páginas de definições. A conversa sobrevive à mudança de página, é
   limitada a 20 mensagens e mostra as alterações que aplicou, com opção de
@@ -161,7 +167,7 @@ alterações visíveis para o cliente._
 
 ## API Service — `12.83.293`
 
-**Settings Assistant e MCP**
+**Assistente de Configurações e MCP**
 - Endpoint de chat com salvaguardas: apenas perguntas sobre o DocBits,
   nenhuma alteração sem confirmação, perguntas pouco claras ou meta recebem
   ajuda em vez de uma recusa, e as respostas transmitem primeiro os cartões e

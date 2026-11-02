@@ -14,7 +14,7 @@ Clique no botão `+ NOVO`.
 
 Será apresentado o seguinte menu:
 
-<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Formulário para criar uma suborganização" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-edit_user_in_sub_organization-pt.png" alt="Janela para criar uma suborganização antes de guardar."><figcaption><p>Janela para criar uma suborganização antes de guardar.</p></figcaption></figure>
 
 Introduza os dados da suborganização que pretende criar — o nome e a descrição — e, em seguida, clique no botão `GUARDAR`. Encontrará depois a suborganização recém-criada no final da lista de suborganizações existentes.
 
@@ -35,8 +35,6 @@ Introduza os dados da suborganização que pretende criar — o nome e a descri�
 Pode adicionar um novo utilizador à organização e escolher se este deve ser removido de outros grupos.
 
 **Editar utilizador:**
-
-<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="Editar um utilizador numa suborganização" width="375"><figcaption></figcaption></figure>
 
 * **Editar as definições da suborganização:** os administradores podem editar as definições e propriedades de uma suborganização, incluindo o nome, a descrição ou o nível hierárquico no sistema.
 * **Editar os dados do utilizador:** os administradores podem editar os dados de utilizadores individuais dentro de uma suborganização, por exemplo para ajustar os seus direitos de acesso ou atualizar as suas informações de contacto.

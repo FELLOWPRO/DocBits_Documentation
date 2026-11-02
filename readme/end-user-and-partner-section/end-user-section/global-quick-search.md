@@ -6,7 +6,7 @@ A Pesquisa Rápida Global é um lançador acessível pelo teclado que encontra p
 
 Pressione <kbd>Cmd</kbd> + <kbd>K</kbd> no macOS ou <kbd>Ctrl</kbd> + <kbd>K</kbd> no Windows e Linux. O atalho funciona em qualquer tela.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Pesquisa Rápida Global"><figcaption><p>A Pesquisa Rápida abre sobre a página atual.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-pt.png" alt="Pesquisa global de páginas com resultados das configurações."><figcaption><p>Pesquisa global de páginas com resultados das configurações.</p></figcaption></figure>
 
 ## Pesquisando
 

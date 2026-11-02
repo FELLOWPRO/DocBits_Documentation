@@ -1,39 +1,27 @@
 # Selo de Aprovação
 
-## **Visão Geral:**
+Um selo de aprovação é uma anotação usada no fluxo de aprovação do documento quando a opção está ativada para esse tipo de documento. Ajuda o revisor a verificar quem aprovou o documento e quando. Confirme a anotação e o resultado do PDF com uma fatura de teste no fluxo de trabalho que a sua organização utiliza.
 
-Este recurso adiciona automaticamente um selo de aprovação a um documento quando ele é aprovado na tela de aprovação. Se um documento contiver um selo de aprovação, ele será incluído ao **exportar para IDM**.
+## Encontrar a opção
 
-## Ativando o Recurso de Selo de Aprovação
+1. Com uma conta de administrador, abra **Configurações → Tipos de Documentos**. Encontre o tipo que deseja configurar, como **Fatura**, e selecione o **ícone de engrenagem** nesse cartão. A engrenagem abre **Mais configurações** para esse tipo de documento.
 
-Para ativar o recurso de Selo de Aprovação, siga estas etapas:
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-708-document-type-card-pt-20261031.png" alt="Cartão Fatura da interface portuguesa atual com os controlos Ativar e Extração e a engrenagem de Mais configurações"><figcaption><p>Cartão real de Fatura no ambiente Dev em português. A engrenagem abre Mais configurações; nenhum controlo foi alterado.</p></figcaption></figure>
 
-1.  Vá para **Configurações** → **Configurações Globais** → **Tipos de Documentos**.
+   **Ativar** controla a disponibilidade do tipo e **Extração** ajusta o seu modo de extração. Os links no rodapé abrem áreas próprias: **Layouts**, **Campos**, **Tabelas**, **Regras de Validação**, **Regras de Transformação**, **Roteiros**, **Treinamento de modelo**, **E-Doc**, **Subtipos de documentos** e **Registros**. Os links disponíveis dependem dos módulos e das definições do tipo. Para localizar o selo, utilize a engrenagem.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_1.png" alt=""><figcaption></figcaption></figure>
-2.  **Selecione o Tipo de Documento** para o qual você deseja habilitar o selo de aprovação e clique em **Mais Configurações**.
+2. Em **Mais configurações**, expanda **Aprovação e Rejeição**. Localize **Selo de aprovação** junto a **Aprovar antes de exportar**, **Segunda Aprovação** e **Histórico de aprovação**. A imagem mostra a definição existente do selo **desativada**; este estado pode ser diferente na sua organização. A imagem não mostra um documento aprovado.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_2.png" alt=""><figcaption></figcaption></figure>
-3.  Na seção **Aprovação**, ative a opção **Selo de Aprovação**.
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-708-approval-stamp-panel-pt-20261031.png" alt="Secção Aprovação e Rejeição da Fatura na interface portuguesa atual com Selo de aprovação desativado e as outras opções do fluxo"><figcaption><p>Vista real da secção Aprovação e Rejeição no ambiente Dev em português. O estado dos controlos foi apenas lido.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_3.png" alt=""><figcaption></figcaption></figure>
+   **Aprovar antes de exportar**, a opção **Aprovar antes da exportação V2**, **Segunda Aprovação** e **Histórico de aprovação** são definições do fluxo separadas do selo. Os links de design apresentados abrem os editores dos formulários de aprovação, revisão ou rejeição correspondentes. Não é necessário abrir esses editores para consultar a definição do selo.
 
-## Após a Ativação:
+3. Altere **Selo de aprovação** somente depois de acordar como as aprovações e exportações funcionam na sua organização. **A mudança do interruptor guarda a definição imediatamente.** Guarde um registo da definição anterior para poder verificar o efeito numa fatura de teste.
 
-Uma vez que o recurso esteja ativado, qualquer documento no estado "pendente de aprovação" receberá automaticamente um selo de aprovação assim que for aprovado. O selo incluirá o logotipo "Aprovado", o nome do usuário que aprovou o documento e o horário em que o documento foi aprovado.
+## Verificar uma aprovação
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_4.png" alt=""><figcaption></figcaption></figure>
+Envie uma fatura sintética deste tipo de documento pelo fluxo de trabalho de aprovação configurado. No passo de aprovação desse fluxo, aprove-a com uma conta de teste autorizada. Reabra o documento aprovado e verifique se a anotação apresenta o nome do aprovador e a data esperados. Examine também o PDF transferido que o seu fluxo de trabalho realmente utiliza. Se o selo estiver ausente, verifique o tipo de documento, o estado de aprovação, a definição e a configuração de exportação.
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_5.png" alt=""><figcaption></figcaption></figure>
+Um selo de aprovação é separado de **Segunda Aprovação** e **Histórico de aprovação**. Ativar um não prova que os outros estão configurados. As ações de download disponíveis no painel e o formato de exportação IDM dependem do ambiente e não foram verificados para esta página, por isso este guia não promete etiquetas específicas de menu de download nem saída IDM automática.
 
-### Baixando PDFs com ou sem o **Selo de Aprovação** <a href="#id-4.-downloading-pdfs-with-or-without-annotations" id="id-4.-downloading-pdfs-with-or-without-annotations"></a>
-
-* Se um documento tiver um selo de aprovação, você pode escolher baixar o PDF com ou sem o selo de aprovação.
-* Para fazer isso, vá para o **Painel**.
-* Clique nos **três pontos** na coluna **Ação**.
-*   Selecione uma das duas opções de download disponíveis:
-
-    * **Baixar com Anotações**
-    * **Baixar sem Anotações**
-
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_6.png" alt="" width="247"><figcaption></figcaption></figure>
+As duas capturas mostram vistas reais do ambiente Dev em português. Nenhum interruptor foi alterado e nenhum documento foi aprovado ou exportado durante esta verificação. O resultado final com selo precisa de uma fatura sintética aprovada dedicada ao teste.

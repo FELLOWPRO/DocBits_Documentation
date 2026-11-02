@@ -1,61 +1,63 @@
-# Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)
+# Caso 4, 5: Quantidade dentro da tolerância, Preço unitário fora da tolerância (Aprovado)
 
-## Scenario:
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-The quantity on the invoice is within tolerance, but the unit price is outside the acceptable tolerance range. However, this variance in the unit price has been reviewed and approved by the appropriate authorities.
+## Cenário:
 
-## Action:
+A quantidade da fatura está dentro da tolerância, mas o preço unitário está fora do intervalo aceite. No entanto, o desvio de preço foi revisto e aprovado pelos responsáveis.
 
-The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+## Ação:
 
-## Example:
+O sistema ajusta o preço unitário ao pedido de compra e aplica os encargos de linha necessários para refletir a diferença.
 
-**Purchase Order (PO):**
+## Exemplo:
 
-Quantity: <mark style="color:green;">100</mark> units
+**Pedido de compra (PO):**
 
-Unit Price: $10.00 per unit
+Quantidade: <mark style="color:green;">100</mark> unidades
 
-Total Amount: <mark style="color:purple;">$1,000.00</mark>
+Preço unitário: $10.00 por unidade
 
-**Invoice Received:**
+Valor total: <mark style="color:purple;">$1,000.00</mark>
 
-Quantity: <mark style="color:green;">100</mark> units (within tolerance)
+**Fatura recebida:**
 
-Unit Price: <mark style="color:red;">$11.00</mark> per unit (outside tolerance of ±5%)
+Quantidade: <mark style="color:green;">100</mark> unidades (dentro da tolerância)
 
-Total Amount: <mark style="color:red;">$1,100.00</mark>
+Preço unitário: <mark style="color:red;">$11.00</mark> por unidade (fora da tolerância de ±5%)
 
-**Tolerance Levels:**
+Valor total: <mark style="color:red;">$1,100.00</mark>
 
-Quantity Tolerance: ±2%
+**Níveis de tolerância:**
 
-Unit Price Tolerance: ±5% (expected range: $9.50 to $10.50)
+Tolerância da quantidade: ±2%
 
-**Approval:**
+Tolerância do preço unitário: ±5% (intervalo esperado: $9.50 a $10.50)
 
-• The $11.00 unit price is outside the tolerance range but has been manually approved by the appropriate department.
+**Aprovação:**
 
-Since the quantity is within tolerance but the unit price is outside tolerance (yet approved), the system will:
+• O preço unitário de $11.00 está fora da tolerância, mas foi aprovado manualmente pelo departamento responsável.
 
-1\. **Adjust the Unit Price**: The system adjusts the unit price back to the PO’s unit price because the variance was approved:
+Como a quantidade está dentro da tolerância e o desvio do preço unitário foi aprovado, o sistema irá:
 
-• **Adjusted Unit Price = $10.00 per unit**
+1\. **Ajustar o preço unitário**: o sistema repõe o preço unitário do pedido de compra, uma vez que o desvio foi aprovado:
 
-• **Adjusted Total Amount = 100 units × $10.00 per unit = $1,000.00**
+• **Preço unitário ajustado = $10.00 por unidade**
 
-2\. **Apply a Line Charge for the Difference**: Since the approved unit price of $11.00 is higher than the PO unit price of $10.00, the system applies a line charge to account for this difference:
+• **Valor total ajustado = 100 unidades × $10.00 por unidade = $1,000.00**
 
-• **Line Charge Amount = (Approved Invoice Unit Price - PO Unit Price) × Quantity**
+2\. **Aplicar um encargo de linha para a diferença**: como o preço aprovado de $11.00 é superior ao preço de $10.00 do pedido de compra, o sistema aplica um encargo de linha para refletir a diferença:
 
-• **Line Charge Amount = ($11.00 - $10.00) × 100 units = $100.00**
+• **Valor do encargo da linha = (Preço unitário aprovado da fatura - Preço unitário do pedido de compra) × Quantidade**
 
-3\. **Process the Invoice**: The system processes the invoice with:
+• **Valor do encargo da linha = ($11.00 - $10.00) × 100 unidades = $100.00**
 
-• **Base Amount:** $1,000.00
+3\. **Processar a fatura**: o sistema processa a fatura com:
 
-• **Line Charge:** $100.00
+• **Valor base:** $1,000.00
 
-• **Total Processed Amount:** $1,100.00
+• **Encargo da linha:** $100.00
 
-This ensures that while the base PO values are maintained for consistency, the approved variance in the unit price is accounted for through an additional line charge, resulting in accurate financial processing and record-keeping.
+• **Valor total processado:** $1,100.00
+
+Os valores base do pedido de compra são mantidos, enquanto o desvio aprovado do preço unitário é refletido num encargo adicional de linha, preservando os registos financeiros da transação.

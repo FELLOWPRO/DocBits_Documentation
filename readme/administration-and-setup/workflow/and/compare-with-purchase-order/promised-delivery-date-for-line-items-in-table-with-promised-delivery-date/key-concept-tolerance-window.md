@@ -2,6 +2,8 @@
 
 Avant d'examiner les opérateurs, il est important de comprendre comment la fenêtre de tolérance est calculée.
 
+Le calcul de la fenêtre de tolérance, avec des exemples tels que « aujourd'hui ou demain », est expliqué sur la page [Date Tolerances](../../date-tolerances.md).
+
 ## Qu'est-ce qu'une fenêtre de tolérance ?
 
 La fenêtre de tolérance définit une plage de dates acceptables autour de la date de livraison promise du bon de commande.
@@ -12,7 +14,7 @@ La fenêtre de tolérance définit une plage de dates acceptables autour de la d
 * Jours de tolérance : **3**
 * Fenêtre de tolérance : **6 janvier → 12 janvier**
 
-> <mark style="color:red;">Seuls les</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">sélectionnés (jours de la semaine) sont comptabilisés lors du calcul de cette fenêtre.</mark>
+> <mark style="color:red;">Seuls les</mark> <mark style="color:red;"></mark><mark style="color:red;">**Jours de tolérance autorisés**</mark> <mark style="color:red;"></mark><mark style="color:red;">sélectionnés (jours de la semaine) sont comptabilisés lors du calcul de cette fenêtre.</mark>
 
 ### Exemple de chronologie visuelle
 
@@ -25,7 +27,7 @@ La fenêtre de tolérance définit une plage de dates acceptables autour de la d
 
 ### Comportement des opérateurs expliqué par l'exemple
 
-* **Equals (=)**
+* **Égal à (=)**
   * **Signification :**\
     La date de livraison de la ligne doit se situer _à l'intérieur_ de la fenêtre de tolérance.
   * **Dates valides :**
@@ -33,7 +35,7 @@ La fenêtre de tolérance définit une plage de dates acceptables autour de la d
   * **Dates invalides :**
     * Toute date **antérieure au 6 janv.**
     * Toute date **postérieure au 12 janv.**
-* **Not Equals (≠)**
+* **Pas égal à (≠)**
   * **Signification :**\
     La date de livraison de la ligne doit se situer _en dehors_ de la fenêtre de tolérance.
   * **Dates valides :**
@@ -41,7 +43,7 @@ La fenêtre de tolérance définit une plage de dates acceptables autour de la d
     * Toute date **postérieure au 12 janv.**
   * **Dates invalides :**
     * Les dates entre le **6 janv. et le 12 janv.**
-* **Greater or Equals (≥)**
+* **Supérieur ou égal à (≥)**
   * **Signification :**\
     La date de livraison de la ligne doit être égale ou postérieure au **début de la fenêtre de tolérance**.
   * **Dates valides :**
@@ -50,21 +52,21 @@ La fenêtre de tolérance définit une plage de dates acceptables autour de la d
     * Toute date **antérieure au 6 janv.**
   * <mark style="color:red;">**Important :**</mark>\
     Cet opérateur autorise les dates _à l'intérieur_ de la fenêtre de tolérance **et au-delà**.
-* **Lesser or Equals (≤)**
+* **Inférieur ou égal à (≤)**
   * **Signification :**\
     La date de livraison de la ligne doit être égale ou antérieure à la **fin de la fenêtre de tolérance**.
   * **Dates valides :**
     * Toute date passée jusqu'au **12 janv.**
   * **Dates invalides :**
     * Toute date **postérieure au 12 janv.**
-* **Greater Than (>)**
+* **Supérieur à (>)**
   * **Signification :**\
     La date de livraison de la ligne doit être _strictement postérieure_ à la fenêtre de tolérance.
   * **Dates valides :**
     * **13 janv. → toute date future**
   * **Dates invalides :**
     * Toute date **égale ou antérieure au 12 janv.**
-* **Lesser Than (<)**
+* **Inférieur à (<)**
   * **Signification :**\
     La date de livraison de la ligne doit être _strictement antérieure_ à la fenêtre de tolérance.
   * **Dates valides :**
@@ -83,7 +85,7 @@ Les jours non sélectionnés (comme les week-ends ou les jours de semaine exclus
 
 * Date du bon de commande : **mercredi 9 janvier**
 * Jours de tolérance : **3**
-* Allowed Tolerance Days : **lundi, mardi, mercredi, jeudi, vendredi**
+* Jours de tolérance autorisés : **lundi, mardi, mercredi, jeudi, vendredi**
 * Week-ends (samedi, dimanche) : **non sélectionnés**
 
 #### Calcul étape par étape

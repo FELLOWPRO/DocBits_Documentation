@@ -1,36 +1,38 @@
-# Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)
+# Cas 11b: Quantité excédentaire rejetée et prix unitaire hors tolérance rejeté
 
-## Scenario:
+Le scénario suivant illustre un mappage configuré ; il ne constitue pas un modèle par défaut dont le déploiement aurait été vérifié. La sortie réelle, les montants, les signes et les types de documents dépendent des règles et expressions `conflict_resolution` actives, du mappage d’export et des décisions d’approbation. Toute note de débit ou de crédit décrite ci-dessous est soumise à cette configuration ; cet exemple ne garantit ni son émission automatique ni la conformité juridique.
 
-The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
+## Scénario :
 
-## Action:
+La quantité dépasse la plage acceptable (positive) et est rejetée, et le prix unitaire est également hors tolérance et rejeté.
 
-The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+## Action :
 
-## Example:
+Le système ajuste la quantité et le prix unitaire pour qu'ils correspondent aux niveaux approuvés du bon de commande, rejetant tout excédent, et traite la transaction.
+
+## Exemple :
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $50.00 per unit
+  * Prix unitaire : $50.00 par unité
   * Total Amount: $10,000.00
 * **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, rejected)
-  * Unit Price: $55.00 per unit (outside tolerance of 10%, rejected)
+  * Quantité : 220 unités (hors tolérance de 10%, rejeté)
+  * Prix unitaire : $55.00 par unité (hors tolérance de 10 %, rejeté)
   * Total Amount: $12,100.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
   * Unit Price Tolerance: ±2%
 
-Since both the quantity (220 units) and unit price ($55.00) exceed the acceptable tolerance limits and neither has been approved, the system will:
+Étant donné que la quantité (220 unités) et le prix unitaire ($55.00) dépassent les limites de tolérance acceptables et qu'aucun des deux n'a été approuvé, le système :
 
-1. **Reject the Excess Quantity:** The system does not accept the invoiced quantity of 220 units and adjusts it to match the original purchase order.
-   * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $55.00 and adjusts it to match the original purchase order.
-   * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:** The system calculates the total amount using the adjusted quantity and unit price:
-   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:** The system processes the invoice with the corrected total amount of $10,000.00, rejecting the excess quantity and higher unit price.
+1. **Rejeter la quantité excédentaire :** Le système n'accepte pas la quantité facturée de 220 unités et l'ajuste pour qu'elle corresponde au bon de commande d'origine.
+   * Quantité ajustée = 200 unités (à partir de PO)
+2. **Rejeter le prix unitaire facturé :** Le système n'accepte pas le prix unitaire facturé de $55.00 et l'ajuste pour qu'il corresponde au bon de commande d'origine.
+   * Prix unitaire ajusté = $50.00 par unité (à partir de PO)
+3. **Recalculer le montant total :** Le système calcule le montant total en utilisant la quantité ajustée et le prix unitaire :
+   * **Montant total corrigé = Quantité ajustée × Prix unitaire ajusté**
+   * **Montant total corrigé = 200 unités × $50.00 par unité = $10,000.00**
+4. **Traiter la facture :** Le système traite la facture pour un montant total corrigé de $10,000.00, en rejetant la quantité excédentaire et le prix unitaire supérieur.
 
-This approach ensures that the transaction aligns with the original terms of the purchase order, maintaining consistent pricing and quantity controls while rejecting unapproved variances.
+Cette approche garantit que la transaction est conforme aux conditions initiales du bon de commande, en maintenant des contrôles cohérents en matière de prix et de quantité tout en rejetant les écarts non approuvés.

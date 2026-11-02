@@ -24,7 +24,11 @@ Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die d
 | **Selecteer kolomtype** | Zie de typelijst hierboven. |
 | **Selecteer tabel** | De tabel die de kolom krijgt. |
 
-4. Klik op **Doorgaan**. De kolom verschijnt in de lijst met *Alleen-lezen*, *Verborgen* en *AI gebruiken* uitgeschakeld. Schakel die vlaggen indien nodig in de lijst om, zie [Kolommen bewerken en verwijderen](editing-and-deleting-columns.md).
+4. Klik op **Doorgaan**. Een bevestigingsvenster wijst erop dat de nieuwe kolom geldt voor **alle toekomstige facturen van elke leverancier**, niet alleen voor het geopende document.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-nl.png" alt="Bevestigingsvenster ‘Een nieuwe tabelkolom aanmaken?’ met de knoppen Annuleren en Kolom maken"><figcaption><p>Bevestig voordat de kolom voor alle leveranciers wordt aangemaakt.</p></figcaption></figure>
+
+5. Kies **Kolom maken** om op te slaan, of **Annuleren** om terug te gaan zonder iets aan te maken. De kolom verschijnt in de lijst met *Alleen-lezen*, *Verborgen* en *AI gebruiken* uitgeschakeld. Schakel die vlaggen indien nodig in de lijst om, zie [Kolommen bewerken en verwijderen](editing-and-deleting-columns.md).
 
 ## Na het toevoegen
 

@@ -41,6 +41,17 @@ Het is echter mogelijk om:
 * **Eén actieve Infor-export** _en_ **één actieve niet-Infor-export** tegelijkertijd te hebben voor hetzelfde documenttype
 * **Verschillende exportconfiguraties voor verschillende sub-organisaties** — bijvoorbeeld een Infor-export voor Sub-Org A en een andere Infor-export voor Sub-Org B
 
+## Activeren vanuit het bewerkscherm
+
+Een bestaande configuratie heeft een schakelaar **Actief** in de voettekst van het bewerkscherm, direct naast **Opslaan**.
+
+1. Open de configuratie om te bewerken (**Bewerken**).
+2. Zet de schakelaar **Actief** in de gewenste stand en kies **Opslaan**.
+
+DocBits activeert of deactiveert de configuratie daarna met dezelfde controle als de lijst: is er voor hetzelfde documenttype al een andere configuratie actief, dan wordt activeren geweigerd. Opslaan van het formulier verandert de opgeslagen status niet meer op zichzelf; de schakelaar in de voettekst en de status in de lijst tonen altijd dezelfde stand.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-nl.png" alt="Bewerkscherm van een exportconfiguratie met de schakelaar Actief in de voettekst tussen Annuleren en Opslaan"><figcaption><p>De schakelaar Actief naast Opslaan in het bewerkscherm van de exportconfiguratie.</p></figcaption></figure>
+
 ## **Een nieuwe export maken**
 
 Om een nieuwe export te maken:

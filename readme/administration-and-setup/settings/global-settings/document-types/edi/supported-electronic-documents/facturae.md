@@ -33,7 +33,7 @@ Facturae ist der spanische E-Rechnungsstandard, der für B2G-Transaktionen über
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)
 * [Facturae 3.2](facturae-3-2.md)
 * [Facturae 3.2.1](facturae-3-2-1.md)
 * [Facturae 3.2.2](facturae-3-2-2.md)

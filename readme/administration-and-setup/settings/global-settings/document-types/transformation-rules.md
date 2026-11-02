@@ -1,17 +1,34 @@
 # Transformationsregeln
 
+Für alle Schritte, Varianten, Gegenbeispiele und das Zusammenspiel der Regeln siehe den [vollständigen Praxisüberblick](transformation-rules/praxisueberblick.md).
+
+## Vom extrahierten Wert zur nachgelagerten Prüfung
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-de-20261028.png" alt="Wie Transformationsregeln wirken: Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert."><figcaption><p>Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
+
+Eine Transformation ist eine Änderung vorhandener Daten, nicht eine neue OCR-Erkennung. Sie liest eine Eingabe, prüft ihre Bedingung, führt die konfigurierten Schritte aus und schreibt das Ergebnis zurück. Trifft die Bedingung nicht zu, wird die Regel übersprungen.
+
+**Beispiel:** Eine Tabellenzelle enthält `STK`. Eine für den betreffenden Lieferanten geltende Wertzuordnung schreibt `PCE`. Der nachgelagerte PO-Abgleich sieht dann den aufbereiteten Einheitencode. Testen Sie auch einen bereits aufbereiteten Wert und einen Wert, für den die Regel nicht gelten soll.
+
+1. **Auslöser:** Während der Verarbeitung laufen die Regeln nach der Extraktion. Auch beim Speichern geänderter Extraktionsdaten können sie erneut ausgeführt werden.
+2. **Reihenfolge:** Innerhalb eines Durchlaufs gelten die Umfänge **Kopffeld → Routing → Tabellenzeilen → Tabellenspalte**. Innerhalb eines Umfangs bestimmen Priorität und Schlüssel die Reihenfolge.
+3. **Auswirkung:** Eine Tabellenregel kann Positionen verändern oder entfernen. Dadurch können sich die Zeilenzahl und die Voraussetzungen für den Bestellabgleich ändern. Werden bereits abgeglichene Zeilen ersetzt, kann eine bestehende Zuordnung verloren gehen.
+4. **Kontrolle:** Vergleichen Sie Eingabe, Vorschau und gespeichertes Ergebnis. Bei aktivierter Ausführungsprotokollierung zeigt die Bedingungsspur, warum eine Regel angewendet oder übersprungen wurde.
+
+**Wiederholungen mitprüfen:** Eine Regel sollte ihren bereits aufbereiteten Wert nicht bei jedem Speichern weiter verändern. Nutzen Sie passende idempotente Schritte, eine unveränderte Quelle oder die vorgesehene Einmal-Ausführung. Die Details und Beispiele folgen unten; [PO-Abgleichsregeln](more-settings/purchase-order/purchase-order-matching-rules.md) erklären die nachgelagerte Zuordnung.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4" %}
 
 ## Überblick
 
-Transformationsregeln bereinigen oder schreiben extrahierte Daten **automatisch** um, jedes Mal, wenn ein Dokument verarbeitet und jedes Mal, wenn es gespeichert wird. Eine Regel kann Folgendes ändern:
+Transformationsregeln bereinigen oder schreiben extrahierte Daten **automatisch** um, während der Dokumentenverarbeitung und beim Speichern geänderter Extraktionsdaten nach den Ausführungsbedingungen der Regel. Eine Regel kann Folgendes ändern:
 
 * ein **Kopffeld** (Rechnungsnummer, Währung, Steuernummer des Lieferanten …),
 * eine **Spalte** in jeder Zeile einer Tabelle (Einheit, Artikelnummer, Preisbasis …),
 * die **Zeilen** einer Tabelle (löschen, eine Zeile hinzufügen),
 * ein **Attribut des Dokuments** — derzeit die Unterorganisation, zu der es gehört (**Routing**).
 
-Jede Regel **liest** einen Wert, schickt ihn durch eine kurze **Pipeline** aus Schritten und **schreibt** das Ergebnis zurück. Regeln laufen **vor** Validierung, Skripten und Bestellabgleich, sodass alles Nachgelagerte bereits die korrigierten Werte sieht.
+Jede Regel **liest** einen Wert, schickt ihn durch eine kurze **Pipeline** aus Schritten und **schreibt** das Ergebnis zurück. Die passenden Verarbeitungsphasen bereiten Werte für nachgelagerte Prüfungen und den Bestellabgleich auf. Regeln können zusätzlich nach dem Bestellabgleich und beim Speichern erneut laufen; beachten Sie die Phasenanzeige und die Optionen Ihrer Regel.
 
 Transformationsregeln ersetzen die meisten der kleinen Skripte, die Organisationen früher für „dieses Feld immer trimmen“, „die Einheitencodes dieses Lieferanten abbilden“, „das Präfix hinzufügen, das unser ERP erwartet“ oder „die Positionen dieses Lieferanten zu einer Gesamtzeile zusammenfassen“ geschrieben haben — mit einem Formular, einer Live-Vorschau und ohne Code.
 
@@ -22,13 +39,13 @@ Transformationsregeln ersetzen die meisten der kleinen Skripte, die Organisation
 | Ein Lieferant druckt die Rechnungsnummer ohne das Präfix `INV-`, das unser ERP erwartet | Kopffeld *Invoice Number*, nur für diesen Lieferanten: Trimmen → UPPERCASE → Affix: Präfix `INV-` hinzufügen |
 | Lieferanten senden deutsche Einheitencodes (`STK`, `Std`), das ERP erwartet UN/ECE-Codes (`PCE`, `HUR`) | Tabellenspalte *UNIT*: Map values `STK → PCE`, `KG → KGM`, `Std → HUR` |
 | Artikelnummern kommen mit einem Präfix wie `Art.-Nr. 4711` | Tabellenspalte *ITEM_NUMBER*: Affix: Präfix `Art.-Nr. ` entfernen |
-| Steuernummern enthalten Leerzeichen und Punkte | Kopffeld *Supplier Tax ID*: Desinfektionsmittel (Sanitise), nur alphanumerische Zeichen behalten |
+| Steuernummern enthalten Leerzeichen und Punkte | Kopffeld *Supplier Tax ID*: Zeichen bereinigen (Sanitise), nur alphanumerische Zeichen behalten |
 | Ein Lieferant wird auf den Gesamtbetrag abgeglichen, nicht auf Zeilen | Tabellenzeilen: Clear all rows → Add a row mit dem Nettobetrag |
 | Alle Dokumente bestimmter Lieferanten gehören zu einer Unterorganisation | Routing: Unterorganisation setzen, wenn *Supplier ID is one of …* |
 | Datumsangaben müssen in einem festen Format in ein Freitextfeld geschrieben werden | Kopffeld: Reformat date `%d.%m.%Y` |
 | Die Bestellnummer steht im falschen Feld (zum Beispiel in *Invoice Number*) | Kopffeld *Purchase Order*: aus *Invoice Number* lesen, nur wenn *Purchase Order is empty* |
 | Die Bestellnummer hat führende Nullen oder ein Präfix, das die Bestellung nicht hat | Kopffeld *Purchase Order*: Trimmen von `0` auf der linken Seite oder Affix: Präfix entfernen |
-| Artikelnummern unterscheiden sich von den Bestellzeilen in Groß-/Kleinschreibung, Leerzeichen oder Präfixen | Tabellenspalte *ITEM_NUMBER*: Affix: Präfix entfernen → Desinfektionsmittel (Sanitise) → UPPERCASE |
+| Artikelnummern unterscheiden sich von den Bestellzeilen in Groß-/Kleinschreibung, Leerzeichen oder Präfixen | Tabellenspalte *ITEM_NUMBER*: Affix: Präfix entfernen → Zeichen bereinigen (Sanitise) → UPPERCASE |
 
 ## Transformationsregeln aktivieren
 
@@ -36,23 +53,23 @@ Transformationsregeln werden **pro Dokumenttyp** von einem **Organisationsadmini
 
 1. Navigieren Sie zu **Einstellungen → Globale Einstellungen → Dokumenttypen**.
 2. Klicken Sie auf das **Einstellungen**-Symbol (Zahnrad) auf der Karte des Dokumenttyps.
-3. Öffnen Sie **Transformation Rules** und schalten Sie den Schalter ein. Klicken Sie auf **Manage transformation rules**, um die Liste zu öffnen.
+3. Öffnen Sie **Transformationsregeln** und schalten Sie den Schalter ein. Klicken Sie auf **Transformationsregeln verwalten**, um die Liste zu öffnen.
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles-de.png" alt="Der Schalter Transformation Rules"><figcaption><p>Der Schalter Transformation Rules in den zusätzlichen Einstellungen eines Dokumenttyps</p></figcaption></figure>
 
-Die Karte des Dokumenttyps zeigt nun einen Link **Transformation Rules** und einen Link **Logs** für die Ausführungsprotokolle.
+Die Karte des Dokumenttyps zeigt nun einen Link **Transformationsregeln** und einen Link **Protokolle** für die Ausführungsprotokolle.
 
 ## Die Regelliste
 
 Die Liste zeigt alle Regeln des Dokumenttyps in der Reihenfolge, in der sie laufen, jeweils mit einer einzeiligen Zusammenfassung („When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back.“), ihrem Umfang (**Kopffeld**, **Tabellenzeilen**, **Tabellenspalte**, **Routing**), der Anzahl der Schritte, ihrer Quelle und ob **Ausführung protokollieren** eingeschaltet ist. Filtern Sie nach Umfang und nach **Active / Inactive**, durchsuchen Sie die Liste und verwenden Sie das Menü **⋮**, um eine Regel zu duplizieren oder zu löschen.
 
-Regeln stammen wie bei den Validierungsregeln aus drei Quellen: **System default**-Regeln, die mit DocBits ausgeliefert werden (klicken Sie auf **Customize**, um eine bearbeitbare Kopie zu erhalten), **Customized** Systemregeln (**Reset to Default** stellt das Original wieder her) und **Custom**-Regeln, die Sie selbst erstellt haben.
+Regeln stammen wie bei den Validierungsregeln aus drei Quellen: **Systemstandard**-Regeln, die mit DocBits ausgeliefert werden (klicken Sie auf **Anpassen**, um eine bearbeitbare Kopie zu erhalten), **Maßgeschneidert** Systemregeln (**Auf Standard zurücksetzen** stellt das Original wieder her) und **BENUTZERDEFINIERT**-Regeln, die Sie selbst erstellt haben.
 
 ## Eine Regel erstellen
 
-Klicken Sie auf **New rule**. Der Builder hat links drei Schritte und rechts eine **Live-Vorschau**. Oben fasst er die Regel in einem Satz zusammen, während Sie sie aufbauen.
+Klicken Sie auf **Neue Regel**. Der Builder hat links drei Schritte und rechts eine **Live-Vorschau**. Oben fasst er die Regel in einem Satz zusammen, während Sie sie aufbauen.
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Schritt 1 des Transformationsregel-Builders"><figcaption><p>Schritt 1: Was die Regel ändert. Der Satz oben beschreibt die Regel in einfacher Sprache</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-scope-de.png" alt="Geltungsbereiche einer Transformationsregel: Kopf, Tabelle, Spalte und Dokument."><figcaption><p>Geltungsbereiche einer Transformationsregel: Kopf, Tabelle, Spalte und Dokument.</p></figcaption></figure>
 
 ### Schritt 1 — Was und wo
 
@@ -76,16 +93,16 @@ Zwei Optionen unter **Verarbeitungsoptionen** steuern, wie oft die Regel angewen
 
 | Option | Wirkung |
 | --- | --- |
-| **Nur einmal pro Dokument ausführen** | Normalerweise laufen Regeln bei jedem Speichern erneut. Ist die Option eingeschaltet, wird die Regel **höchstens einmal** auf ein Dokument angewendet und ist damit für dieses Dokument abgeschlossen. Ein Durchlauf, bei dem die Bedingungen nicht zutreffen, zählt nicht, sodass die Regel bei einem späteren Speichern noch angewendet werden kann. Erforderlich für Schritte, die den Wert bei jedem Speichern erneut ändern würden (siehe [Idempotenz](#einmal-ausfuhren-und-idempotenz)) und für Tabellenregeln, die die Zeilen nicht erneut aufbauen sollen. |
+| **Nur einmal pro Dokument ausführen** | Normalerweise laufen Regeln bei jedem Speichern erneut. Ist die Option eingeschaltet, wird die Regel **höchstens einmal** auf ein Dokument angewendet und ist damit für dieses Dokument abgeschlossen. Ein Durchlauf, bei dem die Bedingungen nicht zutreffen, zählt nicht, sodass die Regel bei einem späteren Speichern noch angewendet werden kann. Relevant beispielsweise für das einmalige Hinzufügen einer Zeile ohne vorheriges Löschen. Für Teilstück- und Regex-Schritte bleibt eine getrennte Quelle erforderlich (siehe [Idempotenz](#einmal-ausfuhren-und-idempotenz)). |
 | **Run after lookup population (before PO match)** | *(neuere Versionen)* Führt die Regel in einem zusätzlichen Durchlauf aus, nachdem die Lookup-Daten (zum Beispiel Lieferantenstammdaten) befüllt wurden und bevor der Bestellabgleich stattfindet. Verwenden Sie die Option, wenn die Regel einen Wert benötigt, den ein Lookup liefert. Die Regel läuft weiterhin auch in den üblichen Phasen; eine Regel mit „Nur einmal pro Dokument ausführen“ und dieser Option wartet auf diesen Durchlauf, statt direkt nach der Extraktion zu laufen. |
 
 ### Schritt 3 — Die Pipeline
 
-<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="Die Pipeline mit drei Schritten und die Live-Vorschau"><figcaption><p>Read → Trim → Change case → Affix → Write, mit dem Wert nach jedem Schritt in der Live-Vorschau</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-rule-pipeline-de.png" alt="Verarbeitungsschritte einer Transformationsregel im deutschen Editor."><figcaption><p>Verarbeitungsschritte einer Transformationsregel im deutschen Editor.</p></figcaption></figure>
 
-* **Read from** — **das Feld (oder die Spalte) selbst** oder **ein anderes Feld**. Wenn Sie aus einem anderen Feld lesen, können Sie ein Feld aus einem anderen befüllen, zum Beispiel die Bestellnummer aus einem Freitextfeld kopieren.
-* **Steps** — der Wert durchläuft die Schritte **von oben nach unten**; die Ausgabe eines Schritts ist die Eingabe des nächsten. Fügen Sie Schritte mit **+ Add a step** hinzu, ordnen Sie sie mit den Pfeilen neu an und entfernen Sie sie mit **✕**. Jeder Schritt zeigt rechts den Zwischenwert des Beispiels an.
-* **Write to** — das Ziel aus Schritt 1. DocBits schreibt den gespeicherten Wert und aktualisiert danach automatisch den Anzeigewert.
+* **Lesen Sie von** — **das Feld (oder die Spalte) selbst** oder **ein anderes Feld**. Wenn Sie aus einem anderen Feld lesen, können Sie ein Feld aus einem anderen befüllen, zum Beispiel die Bestellnummer aus einem Freitextfeld kopieren.
+* **Schritte** — der Wert durchläuft die Schritte **von oben nach unten**; die Ausgabe eines Schritts ist die Eingabe des nächsten. Fügen Sie Schritte mit **+ Add a step** hinzu, ordnen Sie sie mit den Pfeilen neu an und entfernen Sie sie mit **✕**. Jeder Schritt zeigt rechts den Zwischenwert des Beispiels an.
+* **Schreiben Sie an** — das Ziel aus Schritt 1. DocBits schreibt den gespeicherten Wert und aktualisiert danach automatisch den Anzeigewert.
 
 ### Die Schritte
 
@@ -93,38 +110,38 @@ Zwei Optionen unter **Verarbeitungsoptionen** steuern, wie oft die Regel angewen
 
 | Schritt | Einstellungen | Beispiel Eingabe → Ausgabe |
 | --- | --- | --- |
-| **Fall ändern** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Groß-/Kleinschreibung ändern** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
 | **Trimmen** (Trim) | Seite (beide, links, rechts); Zeichen (leer = Leerraum) | `  4711 ` → `4711`; mit Zeichen `0` und Seite links: `004711` → `4711` |
-| **Pad** | Länge, Füllzeichen, Seite | Länge 10, `0`, links: `4711` → `0000004711` |
-| **Truncate** | maximale Länge | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
+| **Auffüllen** (im geprüften Editor: „Unterlage“)  | Länge, Füllzeichen, Seite | Länge 10, `0`, links: `4711` → `0000004711` |
+| **Kürzen** | maximale Länge | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
 | **Affix** | Präfix hinzufügen, Suffix hinzufügen, Präfix entfernen, Suffix entfernen; Text | Präfix `INV-` hinzufügen: `4711` → `INV-4711`; Präfix `Art.-Nr. ` entfernen: `Art.-Nr. 4711` → `4711` |
-| **Desinfektionsmittel** (Sanitise) | nur behalten (alphanumerisch, Buchstaben, Ziffern, alphanumerisch + Leerzeichen) oder angegebene Zeichen entfernen | alphanumerisch behalten: `DE 123.456.789` → `DE123456789` |
-| **Take a slice** | Start, Länge oder Ende | Start 0, Länge 4: `2026-09-29` → `2026` |
-| **Extract** | Muster, Erfassungsgruppe | Muster `PO[- ]?(\d+)`, Gruppe 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | Muster, Ersetzen durch, Anzahl (0 = alle) | Muster `\s+`, ersetzen durch ` `: `ACME    GmbH` → `ACME GmbH` |
-| **Map values** | Zuordnungen (von → nach), Wert ohne Treffer (leer = Eingabe behalten), Groß-/Kleinschreibung ignorieren | `STK → PCE`: `stk` → `PCE` |
-| **Reformat date** | Ausgabemuster (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
-| **Format number** | Locale (de_DE, en_US, en_GB, fr_FR), min. und max. Nachkommastellen | de_DE, 2 Nachkommastellen: `1234.5` → `1.234,50` |
-| **Fix value** | der Wert | schreibt immer den Wert, egal was das Feld enthielt |
-| **Clear** | – | leert das Feld |
+| **Zeichen bereinigen** (Sanitise) | nur behalten (alphanumerisch, Buchstaben, Ziffern, alphanumerisch + Leerzeichen) oder angegebene Zeichen entfernen | alphanumerisch behalten: `DE 123.456.789` → `DE123456789` |
+| **Teilstück** | Start, Länge oder Ende | Start 0, Länge 4: `2026-09-29` → `2026` |
+| **Extrakt** | Muster, Erfassungsgruppe | Muster `PO[- ]?(\d+)`, Gruppe 1: `Order PO-45001234` → `45001234` |
+| **Suchen und ersetzen** | Muster, Ersetzen durch, Anzahl (0 = alle) | Muster `\s+`, ersetzen durch ` `: `ACME    GmbH` → `ACME GmbH` |
+| **Werte zuordnen** | Zuordnungen (von → nach), Wert ohne Treffer (leer = Eingabe behalten), Groß-/Kleinschreibung ignorieren | `STK → PCE`: `stk` → `PCE` |
+| **Datum neu formatieren** | Ausgabemuster (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
+| **Zahl formatieren** | Locale (de_DE, en_US, en_GB, fr_FR), min. und max. Nachkommastellen | de_DE, 2 Nachkommastellen: `1234.5` → `1234,50` |
+| **Festwert** | der Wert | schreibt immer den Wert, egal was das Feld enthielt |
+| **Leeren** | – | leert das Feld |
 
 Regeln mit dem Umfang **Tabellenzeilen** verwenden zwei andere Schritte, die auf Zeilen statt auf Werten arbeiten:
 
 | Schritt | Wirkung |
 | --- | --- |
-| **Clear all rows** | löscht jede extrahierte Zeile. Zeilen, die ein späterer Schritt hinzufügt, bleiben erhalten. |
-| **Add a row** | fügt eine Zeile **nach der letzten Zeile** oder **vor der ersten Zeile** hinzu. Wählen Sie für jede Spalte **Value** (ein fester Wert) oder **Field** (der Wert eines Kopffelds). Spalten, die Sie weglassen, bleiben leer. |
+| **Alle Zeilen löschen** | löscht jede extrahierte Zeile. Zeilen, die ein späterer Schritt hinzufügt, bleiben erhalten. |
+| **Zeile hinzufügen** | fügt eine Zeile **nach der letzten Zeile** oder **vor der ersten Zeile** hinzu. Wählen Sie für jede Spalte **Wert** (ein fester Wert) oder **Feld** (der Wert eines Kopffelds). Spalten, die Sie weglassen, bleiben leer. |
 
 {% hint style="info" %}
-**Reformat date** erwartet das Datum so, wie DocBits es intern speichert (`YYYY-MM-DD`). Wenden Sie es auf das Feld selbst an, nicht auf einen Text, der bereits ein formatiertes Datum enthält.
+**Datum neu formatieren:** Verwenden Sie für den ersten Test ein eindeutiges ISO-Datum (`YYYY-MM-DD`). Aktuelle Versionen berücksichtigen auch den gespeicherten Formatkontext. Ein DATE-Kopffeld kann intern ISO behalten, während die Anzeige dem Muster folgt; ein Textziel oder eine Tabellenzelle kann formatierten Text enthalten. Unlesbare Werte bleiben im geprüften Servertest unverändert und erhalten einen Fehlergrund. Testen Sie Speicherung und Wiederholung separat.
 {% endhint %}
 
 ### Live-Vorschau
 
 Die Live-Vorschau führt die Regel an einem Beispiel aus, während Sie sie aufbauen:
 
-* **Beispieleingabe** — geben Sie einen Wert so ein, wie er aus dem Dokument käme. Bei Tabellenregeln geben Sie die Anzahl der extrahierten Zeilen (**Sample table**) und Werte für die Felder ein, die neue Zeilen lesen (**Row source values**).
-* **Bedingungswerte** — geben Sie bei Regeln mit Bedingung die Werte der Bedingungsfelder ein. Die Vorschau zeigt **Bedingungen treffen zu — Regel wird ausgeführt** oder **Conditions do not match — rule is skipped**.
+* **Beispieleingabe** — geben Sie einen Wert so ein, wie er aus dem Dokument käme. Bei Tabellenregeln geben Sie die Anzahl der extrahierten Zeilen (**Beispieltabelle**) und Werte für die Felder ein, die neue Zeilen lesen (**Zeilenquellenwerte**).
+* **Bedingungswerte** — geben Sie bei Regeln mit Bedingung die Werte der Bedingungsfelder ein. Die Vorschau zeigt **Bedingungen treffen zu — Regel wird ausgeführt** oder **Bedingungen treffen nicht zu — Regel wird übersprungen**.
 * Darunter sehen Sie den Wert nach **jedem Schritt** und das Endergebnis, das geschrieben würde („invoice_id → INV-230620-03A“ oder „unchanged“).
 
 Während Sie die Vorschau verwenden, wird nichts gespeichert. Klicken Sie auf **Speichern**, um die Regel zu speichern.
@@ -133,34 +150,34 @@ Während Sie die Vorschau verwenden, wird nichts gespeichert. Klicken Sie auf **
 
 ### Die Rechnungsnummer eines Lieferanten bereinigen
 
-Kopffeld **Invoice Number** · nur wenn *Supplier ID is HP0000278* · Trimmen → Fall ändern UPPERCASE → Affix Präfix `INV-` hinzufügen.
+Kopffeld **Rechnungsnummer** · nur wenn *Supplier ID is HP0000278* · Trimmen → Großschreibung UPPERCASE → Affix Präfix `INV-` hinzufügen.
 Beispiel `  230620-03a ` → `INV-230620-03A`. Siehe den Screenshot der Pipeline oben.
 
 ### Einheitencodes abbilden
 
-Tabellenspalte **INVOICE_TABLE / UNIT** · stets · Trimmen → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** eingeschaltet, Wert ohne Treffer leer (Eingabe behalten).
+Tabellenspalte **INVOICE_TABLE / UNIT** · stets · Trimmen → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Groß-/Kleinschreibung beim Abgleich ignorieren** eingeschaltet, Wert ohne Treffer leer (Eingabe behalten).
 
-<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Eine Tabellenspaltenregel mit Map values"><figcaption><p>Map values auf der Spalte UNIT: <code>stk</code> wird zu <code>PCE</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-column-value-map-de.png" alt="Wertzuordnung für eine Tabellenspalte im Transformationseditor."><figcaption><p>Wertzuordnung für eine Tabellenspalte im Transformationseditor.</p></figcaption></figure>
 
 ### Eine Gesamtzeile für einen Lieferanten, der auf den Gesamtbetrag abgeglichen wird
 
 Tabellenzeilen **INVOICE_TABLE** · nur wenn *Supplier ID is HP0000278* · Clear all rows → Add a row mit `POSITION` = Wert `001`, `QUANTITY` = Wert `1`, `NET_AMOUNT` = Feld *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Eine Regel für Tabellenzeilen: alle Zeilen löschen, dann eine Zeile hinzufügen"><figcaption><p>Drei extrahierte Zeilen werden durch eine Zeile mit dem Nettobetrag ersetzt</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-transformation-add-row-columns-de.png" alt="Ungespeicherter Transformationsschritt zum Hinzufügen einer Tabellenzeile."><figcaption><p>Ungespeicherter Transformationsschritt zum Hinzufügen einer Tabellenzeile.</p></figcaption></figure>
 
-Die Reihenfolge ist wichtig: **Clear all rows** muss **vor** **Add a row** stehen. Der Builder warnt Sie, wenn das nicht der Fall ist („Clear all rows runs after Add a row …“), und er warnt auch, wenn einem Schritt **Add a row** kein **Clear all rows** vorausgeht, weil die Regel dann bei jedem Speichern eine weitere Kopie der Zeile anhängen würde. Kombinieren Sie diese Regel mit einer Bestellabgleich-Regel „Match on total“, die für Ein-Zeilen-Dokumente aktiv ist.
+Die Reihenfolge ist wichtig: **Alle Zeilen löschen** muss **vor** **Zeile hinzufügen** stehen. Der Builder warnt Sie, wenn das nicht der Fall ist („Clear all rows runs after Add a row …“), und er warnt auch, wenn einem Schritt **Zeile hinzufügen** kein **Alle Zeilen löschen** vorausgeht, weil die Regel dann bei jedem Speichern eine weitere Kopie der Zeile anhängen würde. Kombinieren Sie diese Regel mit einer Bestellabgleich-Regel „Match on total“, die für Ein-Zeilen-Dokumente aktiv ist.
 
 ### Die Bestellnummer aus dem Feld Rechnungsnummer befüllen
 
-Kopffeld **Purchase Order** · nur wenn *Purchase Order is empty* · **Read from** *Invoice Number* → Trimmen → Fall ändern UPPERCASE.
+Kopffeld **Bestellung** · nur wenn *Purchase Order is empty* · **Lesen Sie von** *Invoice Number* → Trimmen → Großschreibung UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-de.png" alt="Der Regel-Builder für die Regel, die Purchase Order aus Invoice Number befüllt, mit der Live-Vorschau"><figcaption><p>Die Regel und ihre Live-Vorschau: <code>po-4711</code> wird in <code>purchase_order</code> zu <code>PO-4711</code>. Beispielregel auf einem Test-Dokumenttyp.</p></figcaption></figure>
 
-Manche Lieferanten drucken die Bestellnummer dorthin, wo die Extraktion die Rechnungsnummer erwartet. Dann enthält **Invoice Number** die Bestellnummer und **Purchase Order** ist leer, sodass der Bestellabgleich nichts zum Abgleichen findet. Diese Regel kopiert den Wert hinüber, bevor der Abgleich beginnt. In einem Test auf einem Entwicklungssystem wechselte ein Dokument mit genau diesem Problem von *nicht abgeglichen* zu *vollständig abgeglichen* (2 von 2 Zeilen), als es mit der Regel gespeichert wurde. Die Regel läuft nur, solange **Purchase Order** leer ist, und überschreibt daher nie eine Nummer, die korrekt extrahiert wurde.
+Manche Lieferanten drucken die Bestellnummer dorthin, wo die Extraktion die Rechnungsnummer erwartet. Dann enthält **Rechnungsnummer** die Bestellnummer und **Bestellung** ist leer, sodass der Bestellabgleich nichts zum Abgleichen findet. Diese Regel kopiert den Wert hinüber, bevor der Abgleich beginnt. In einem Test auf einem Entwicklungssystem wechselte ein Dokument mit genau diesem Problem von *nicht abgeglichen* zu *vollständig abgeglichen* (2 von 2 Zeilen), als es mit der Regel gespeichert wurde. Die Regel läuft nur, solange **Bestellung** leer ist, und überschreibt daher nie eine Nummer, die korrekt extrahiert wurde.
 
 ### Artikelnummern für den Bestellabgleich vergleichbar machen
 
-Tabellenspalte **INVOICE_TABLE / ITEM_NUMBER** · stets · Affix: Präfix `Art.-Nr. ` entfernen → Desinfektionsmittel (Sanitise): alphanumerisch behalten → Fall ändern UPPERCASE.
+Tabellenspalte **INVOICE_TABLE / ITEM_NUMBER** · stets · Affix: Präfix `Art.-Nr. ` entfernen → Zeichen bereinigen (Sanitise): alphanumerisch behalten → Großschreibung UPPERCASE.
 
 <figure><img src="../../../../.gitbook/assets/transformation-item-number-compare-de.png" alt="Der Regel-Builder für die Artikelnummern-Regel mit der Live-Vorschau"><figcaption><p>Die Live-Vorschau zeigt jeden Schritt: <code>Art.-Nr. ab-12/3</code> wird zu <code>AB123</code></p></figcaption></figure>
 
@@ -170,7 +187,7 @@ Schreibt die Rechnung `Art.-Nr. ab-12/3` und die Bestellung hat `AB123`, stimmen
 
 | Ziel | Umfang | Bedingung | Schritte |
 | --- | --- | --- | --- |
-| Leerzeichen und Punkte aus der Steuernummer entfernen | Kopffeld *Supplier Tax ID* | stets | Desinfektionsmittel (Sanitise): alphanumerisch behalten |
+| Leerzeichen und Punkte aus der Steuernummer entfernen | Kopffeld *Supplier Tax ID* | stets | Zeichen bereinigen (Sanitise): alphanumerisch behalten |
 | Das Artikelpräfix entfernen | Spalte *ITEM_NUMBER* | stets | Affix: Präfix `Art.-Nr. ` entfernen |
 | 10-stellige Lieferantennummern | Kopffeld *Supplier ID* | stets | Trimmen → Pad Länge 10 mit `0`, links |
 | Die Bestellnummer aus einem Referenztext herausziehen | Kopffeld *Purchase Order*, aus einem anderen Feld lesen | nur wenn *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, Gruppe 1 |
@@ -179,17 +196,17 @@ Schreibt die Rechnung `Art.-Nr. ab-12/3` und die Bestellung hat `AB123`, stimmen
 | Preisbasis pro Einheit | Spalte *UNIT_PRICE_PER* | nur wenn *row.UNIT_PRICE_PER is empty* | Fix value `1` |
 | Lieferanten an eine Unterorganisation weiterleiten | Routing | *Supplier ID is one of* `10040, 10041` | eine feste Unterorganisation zuweisen |
 | Führende Nullen aus der Bestellnummer entfernen | Kopffeld *Purchase Order* | stets | Trimmen: Zeichen `0`, Seite links |
-| Nur die Ziffern der Bestellnummer behalten | Kopffeld *Purchase Order* | stets | Desinfektionsmittel (Sanitise): nur Ziffern behalten (`PO-45001234` → `45001234`) |
+| Nur die Ziffern der Bestellnummer behalten | Kopffeld *Purchase Order* | stets | Zeichen bereinigen (Sanitise): nur Ziffern behalten (`PO-45001234` → `45001234`) |
 | Eine zu lange Bestellreferenz kürzen | Kopffeld *Purchase Order* | nur wenn *Supplier ID is 20723* | Truncate auf 10 Zeichen |
 | Der Bestellnummer das Präfix hinzufügen, das Ihr ERP erwartet | Kopffeld *Purchase Order* | nur wenn *Supplier ID is 10040* | Affix: Präfix `4500` hinzufügen |
 | Beträge so schreiben, wie Ihr ERP sie liest | Kopffeld *Total Amount* | stets | Format number, Locale `de_DE`, 2 Nachkommastellen |
-| Leerzeichen in Artikelnummern entfernen | Spalte *ITEM_NUMBER* | stets | Desinfektionsmittel (Sanitise): die Zeichen ` ` (Leerzeichen) entfernen |
-| Artikelnummern in Großbuchstaben schreiben | Spalte *ITEM_NUMBER* | stets | Fall ändern UPPERCASE |
+| Leerzeichen in Artikelnummern entfernen | Spalte *ITEM_NUMBER* | stets | Zeichen bereinigen (Sanitise): die Zeichen ` ` (Leerzeichen) entfernen |
+| Artikelnummern in Großbuchstaben schreiben | Spalte *ITEM_NUMBER* | stets | Großschreibung UPPERCASE |
 | Bestellungen eines Werks an eine Unterorganisation senden | Routing | *Purchase Order starts with* `4500` | eine feste Unterorganisation zuweisen |
 
 ## Routing-Regeln (Unterorganisation)
 
-Eine **Routing**-Regel ändert kein Feld. Sie setzt ein Attribut am Dokument, wenn ihre Bedingungen zutreffen — derzeit die **Unterorganisation**. Wählen Sie **Assign a fixed sub-organisation** und wählen Sie die Unterorganisation aus der Liste aus, oder wählen Sie **Map from a field**, um Werte eines extrahierten Felds Unterorganisationen zuzuordnen. Das Dokument gehört dann zu dieser Unterorganisation, mit ihren Benutzern, Berechtigungen und Einstellungen. Ein Wert, der keine gültige Unterorganisation ist, wird nie geschrieben.
+Eine **Routing**-Regel ändert kein Feld. Sie setzt ein Attribut am Dokument, wenn ihre Bedingungen zutreffen — derzeit die **Unterorganisation**. Wählen Sie **Weisen Sie eine feste Unterorganisation zu.** und wählen Sie die Unterorganisation aus der Liste aus, oder wählen Sie **Karte von einem Feld**, um Werte eines extrahierten Felds Unterorganisationen zuzuordnen. Das Dokument gehört dann zu dieser Unterorganisation, mit ihren Benutzern, Berechtigungen und Einstellungen. Ein Wert, der keine gültige Unterorganisation ist, wird nie geschrieben.
 
 ## Wann Regeln laufen
 
@@ -199,16 +216,15 @@ Eine **Routing**-Regel ändert kein Feld. Sie setzt ein Attribut am Dokument, we
 
 ### Einmal ausführen und Idempotenz
 
-Die meisten Schritte liefern dasselbe Ergebnis, wenn sie auf ihre eigene Ausgabe angewendet werden — einen getrimmten Wert erneut trimmen, `PCE` erneut abbilden, ein Präfix hinzufügen, das schon vorhanden ist. Diese Regeln können bei jedem Speichern gefahrlos laufen.
+Viele einzelne Schritte können auf ihrer eigenen Ausgabe stabil bleiben, zum Beispiel Trimmen oder das Ergänzen eines bereits vorhandenen exakten Präfixes. Ob die gesamte Pipeline bei erneutem Speichern stabil bleibt, muss jedoch mit der konkreten Konfiguration geprüft werden. Eine Wertzuordnung oder ein mehrfach vorhandenes Präfix kann bei einem späteren Durchlauf weitere Änderungen auslösen.
 
-**Take a slice**, **Extract** und **Find & replace** sind anders: Auf ihr eigenes Ergebnis erneut angewendet, ändern sie es weiter (ein Ausschnitt nimmt die ersten vier Zeichen der ersten vier Zeichen …). DocBits lässt Sie daher keine Regel speichern, die diese Schritte auf ihr eigenes Zielfeld anwendet. Entweder:
+**Teilstück**, **Extrahieren** und **Suchen und ersetzen** benötigen im geprüften Serververtrag eine getrennte Originalquelle. Der Server lehnt diese Schritte auf ihrem eigenen Zielfeld ab, weil erneutes Verarbeiten den Wert ungewollt verändern kann. **Nur einmal pro Dokument ausführen** hebt diese Quellvorgabe nicht auf. Wählen Sie **Lesen Sie von → Ein anderes Feld** und behalten Sie die Originalquelle unverändert.
 
-* schalten Sie **Nur einmal pro Dokument ausführen** ein, oder
-* lesen Sie aus einem anderen Feld (**Read from** → ein anderes Feld), damit die Eingabe unverändert bleibt.
+Prüfen Sie die vollständige Pipeline auch bei anderen Schritten zweimal: Eine Zuordnung `A→B, B→C` kann beim zweiten Durchlauf weiter zuordnen; das Entfernen eines doppelt vorhandenen Präfixes kann bei jedem Durchlauf ein weiteres Präfix entfernen. Details und geprüfte Gegenfälle stehen im [Praxisüberblick](transformation-rules/praxisueberblick.md).
 
 ## Transformationsregeln und Bestellabgleich
 
-Regeln laufen **vor** dem Bestellabgleich, sodass sie genau das vorbereiten können, was der Matcher liest:
+Passend konfigurierte Regeln bereiten die Werte vor, die der Bestellabgleich liest. Zusätzliche Durchläufe nach dem Bestellabgleich und beim Speichern müssen ebenfalls geprüft werden:
 
 | Der Matcher liest | Eine Regel kann | Beispiel |
 | --- | --- | --- |
@@ -225,9 +241,9 @@ Tabellen- und Spaltenregeln ändern, was der PO-Matcher sieht:
 
 ## Protokolle
 
-Ist **Ausführung protokollieren** eingeschaltet, wird jede Anwendung der Regel unter **Document Types → (Dokumenttyp) → Logs** protokolliert, mit dem Ergebnis (angewendet, keine Änderung, übersprungen), dem Dokument und — bei übersprungenen Regeln — der Bedingungsspur, die erklärt, warum. Siehe [Die Bedingungsspur in den Protokollen lesen](rule-conditions-applies-when.md#die-bedingungsspur-in-den-protokollen-lesen).
+Ist **Ausführung protokollieren** eingeschaltet, wird jede Anwendung der Regel unter **Dokumenttypen → (Dokumenttyp) → Protokolle** protokolliert, mit dem Ergebnis (angewendet, keine Änderung, übersprungen), dem Dokument und — bei übersprungenen Regeln — der Bedingungsspur, die erklärt, warum. Siehe [Die Bedingungsspur in den Protokollen lesen](rule-conditions-applies-when.md#die-bedingungsspur-in-den-protokollen-lesen).
 
-## Best Practices
+## Bewährte Vorgehensweisen
 
 * **Ein Zweck pro Regel.** „Rechnungsnummer bereinigen“ und „Einheitencodes abbilden“ sind zwei Regeln, nicht eine.
 * **Bauen Sie mit der Live-Vorschau**, mit echten Werten aus Dokumenten, auch mit ungewöhnlichen (Leerzeichen, Kleinschreibung, Präfixe).
@@ -241,8 +257,8 @@ Ist **Ausführung protokollieren** eingeschaltet, wird jede Anwendung der Regel 
 | Symptom | Was zu prüfen ist |
 | --- | --- |
 | Die Regel hat nichts geändert | Ist sie aktiv, und ist die Funktion für den Dokumenttyp aktiviert? Ist die Bedingung für dieses Dokument wahr (exakter Wert, einschließlich Leerzeichen und Groß-/Kleinschreibung)? Wurde eine Regel mit **Nur einmal pro Dokument ausführen** bereits auf das Dokument angewendet? Prüfen Sie die Spur im Protokoll. |
-| Der Wert ändert sich bei jedem Speichern erneut | Die Pipeline enthält Take a slice, Extract oder Find & replace. Schalten Sie **Nur einmal pro Dokument ausführen** ein oder lesen Sie aus einem anderen Feld. |
-| Eine Tabelle erhält bei jedem Speichern eine weitere Zeile | Ein Schritt **Add a row** ohne vorheriges **Clear all rows**. Fügen Sie zuerst den Clear-Schritt hinzu oder schalten Sie „Nur einmal pro Dokument ausführen“ ein. |
+| Der Wert ändert sich bei jedem Speichern erneut | Die Pipeline enthält Take a slice, Extract oder Find & replace. Lesen Sie bei diesen Schritten aus einem getrennten Originalfeld; „Nur einmal pro Dokument ausführen“ ersetzt diese Vorgabe nicht. |
+| Eine Tabelle erhält bei jedem Speichern eine weitere Zeile | Ein Schritt **Zeile hinzufügen** ohne vorheriges **Alle Zeilen löschen**. Fügen Sie zuerst den Clear-Schritt hinzu oder schalten Sie „Nur einmal pro Dokument ausführen“ ein. |
 | Die Bestellübereinstimmung geht nach dem Speichern verloren | Eine Tabellenregel hat die abgeglichenen Zeilen ersetzt. Der Grund im Dokument nennt die Regel; sorgen Sie dafür, dass die Regel dieselben Zeilen reproduziert, oder stellen Sie sie auf „Nur einmal pro Dokument ausführen“. |
 | Eine Matching-Regel läuft nach der Transformation nie | Die Regel hat die Anzahl der Zeilen geändert; passen Sie die Aktivierungsbedingung der Matching-Regel an. |
 | Die Regel braucht einen Wert aus den Lieferantenstammdaten, der aber noch leer ist | Schalten Sie **Run after lookup population (before PO match)** ein. |

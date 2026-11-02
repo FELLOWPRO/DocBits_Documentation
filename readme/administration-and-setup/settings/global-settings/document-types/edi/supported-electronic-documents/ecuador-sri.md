@@ -39,7 +39,7 @@ Die Rechnungsnummer setzt sich aus drei Feldern zusammen: `estab-ptoEmi-secuenci
 
 ## Standardvorschau
 
-<figure><img src="ecuador-sri-preview.png" alt="Ecuador SRI Factura Vorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine Ecuador SRI Factura Electrónica (Version 2.1.0)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ecuador-sri-preview.png" alt="Ecuador SRI Factura Vorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine Ecuador SRI Factura Electrónica (Version 2.1.0)</p></figcaption></figure>
 
 ## Feldzuordnung
 
@@ -93,5 +93,5 @@ Das Wurzelelement ist `<factura>` mit `id="comprobante"`. Das `version`-Attribut
 
 ## Verwandte Themen
 
-- [Aktuell unterstützte E-Rechnungsstandards](../../currently-supported-e-invoice-standards/)
+- [Aktuell unterstützte E-Rechnungsstandards](../currently-supported-e-invoice-standards/README.md)
 - [Unterstützte elektronische Dokumente](./)

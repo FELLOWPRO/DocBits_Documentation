@@ -1,23 +1,23 @@
-# Lookup table
+# Nachschlagetabelle
 
 ## Tabelle `public.lookup_table`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `data_key`: internal
-* `rec_id`: internal
-* `prop_name`: internal
-* `prop_value`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `data_key`: intern
+* `rec_id`: intern
+* `prop_name`: intern
+* `prop_value`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `prop_value_clean`: internal
+* `prop_value_clean`: intern
 * `version`: integer
 * `deleted_on`: timestamp with time zone
-* `sub_org_id`: internal
+* `sub_org_id`: intern
 
 ### Analyse & Beschreibung
 

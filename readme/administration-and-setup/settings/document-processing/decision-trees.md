@@ -74,7 +74,7 @@ Die Entscheidungsbaum-Policy legt fest, wie mehrere Regeln innerhalb eines Entsc
 * [Priorität](decision-trees/priority-policy.md)
 * [Sammeln (Summe)](decision-trees/collect-sum-policy.md)
 * [Sammeln (Min/Max/Zählen)](decision-trees/collect-min-max-count-policy.md)
-* [Regel Bestellung](decision-trees/rule-order-policy.md)
+* [Regelreihenfolge](decision-trees/rule-order-policy.md)
 * [Irgendeine](decision-trees/any-policy.md)
 * [Erste & Angrenzende](decision-trees/first-and-adjacent-policy.md)
 

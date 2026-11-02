@@ -1,23 +1,23 @@
-# Electronic document extraction attributes
+# Extraktionsattribute elektronischer Dokumente
 
 ## Tabelle `public.electronic_document_extraction_attributes`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_key`: internal
-* `sub_doc_type_key`: internal
-* `electronic_document_type`: internal
-* `attribute_name`: internal
-* `attribute_type`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_type_key`: intern
+* `sub_doc_type_key`: intern
+* `electronic_document_type`: intern
+* `attribute_name`: intern
+* `attribute_type`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `last_modified_by`: intern
+* `deleted_by`: intern
 
 ### Analyse & Beschreibung
 

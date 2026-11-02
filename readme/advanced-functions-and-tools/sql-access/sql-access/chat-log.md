@@ -1,21 +1,21 @@
-# Chat Log
+# Chatprotokoll
 
 ## Tabelle `public.chat_log`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `supplier_as_org_id`: internal
-* `message`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `supplier_as_org_id`: intern
+* `message`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
-* `last_modified_by`: internal
-* `deleted_by`: internal
-* `chat_type`: internal
+* `last_modified_by`: intern
+* `deleted_by`: intern
+* `chat_type`: intern
 
 ### Analyse & Beschreibung
 

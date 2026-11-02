@@ -6,7 +6,7 @@ description: "Fünf Erklärvideos zu Advanced Workflows und Workflow Logs auf De
 
 Alle fünf Kapitel haben eine deutsche Tonspur, eine Untertiteldatei und ein Transkript. Das erste Kapitel zeigt die Erstellung des Beispielworkflows Schritt für Schritt; die weiteren Kapitel vertiefen die einzelnen Themen.
 
-Die ersten drei Kapitel zeigen den echten DocBits-Designer mit Demonstrationsentwürfen. Die Testfassung zur Ausführungssuche zeigt echte Dokumentverarbeitung und Protokollfunktionen mit leeren Ergebnissen. Das Diagnosekapitel verwendet weiterhin gekennzeichnete Lehrgrafiken. Die [Advanced-Workflow-Anleitung](advanced-workflow-builder.md) und die [Workflow Logs](workflow-logs.md) ergänzen die Videos.
+Die ersten drei Kapitel zeigen den echten DocBits-Designer mit Demonstrationsentwürfen. Die Testfassung zur Ausführungssuche zeigt echte Dokumentverarbeitung und Protokollfunktionen mit leeren Ergebnissen. Das Diagnosekapitel verwendet weiterhin gekennzeichnete Lehrgrafiken. Die [Advanced-Workflow-Anleitung](advanced-workflow-builder.md) und die [Workflow-Protokolle](workflow-logs.md) ergänzen die Videos.
 ## Builder und Canvas
 
 Lernen Sie Thomas kennen und folgen Sie seiner Erklärung direkt in der deutschen DocBits-Oberfläche. Er prüft Workflow-Dashboard, Workflow-Liste und Lizenz und öffnet anschließend einen ungespeicherten Designerentwurf. Schritt für Schritt benennt er den Workflow, konfiguriert die Betragsprüfung und zwei Aktionen, ordnet die Karten an und verbindet beide Routen. Danach zeigt er die Testvorbereitung mit Dokumenten und eigenen Daten. Das Demokonto besitzt kein Advanced-Workflow-Abonnement und blockiert die Validierung; der Entwurf bleibt ungespeichert und inaktiv.

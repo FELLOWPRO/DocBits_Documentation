@@ -1,25 +1,25 @@
-# Lookup Configuration
+# Abfragekonfiguration
 
 ## Tabelle `public.lookup_configuration`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type`: DOC Type
-* `lookup_dataset_name`: internal
-* `lookup_name`: internal
-* `conflict_handle`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_type`: Dokumenttyp
+* `lookup_dataset_name`: intern
+* `lookup_name`: intern
+* `conflict_handle`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
 * `match_all`: boolean
-* `last_modified_by`: internal
-* `deleted_by`: internal
-* `context`: internal
-* `context_detail`: internal
+* `last_modified_by`: intern
+* `deleted_by`: intern
+* `context`: intern
+* `context_detail`: intern
 
 ### Analyse & Beschreibung
 

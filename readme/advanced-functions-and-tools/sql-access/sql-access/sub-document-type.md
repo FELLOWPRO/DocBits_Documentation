@@ -1,14 +1,14 @@
-# Sub document type
+# Dokumentuntertyp
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type_key`: internal
-* `sub_doc_type_key`: internal
-* `name`: internal
-* `title`: internal
-* `translation_key`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_type_key`: intern
+* `sub_doc_type_key`: intern
+* `name`: intern
+* `title`: intern
+* `translation_key`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone

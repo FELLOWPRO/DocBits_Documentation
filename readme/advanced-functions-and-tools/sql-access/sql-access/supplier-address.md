@@ -1,25 +1,25 @@
-# Supplier address
+# Lieferantenadresse
 
 ## Spalten
 
-* `org_id`: ID to organisation
-* `customer_number`: internal
-* `supplier_number`: internal
-* `address_id`: internal
-* `supplier_name`: Supplier Name
-* `address_1`: internal
-* `address_2`: internal
-* `address_3`: internal
-* `address_4`: internal
-* `zip_code`: internal
-* `town_city`: internal
-* `country_code`: internal
+* `org_id`: ID der Organisation
+* `customer_number`: intern
+* `supplier_number`: intern
+* `address_id`: intern
+* `supplier_name`: Lieferantenname
+* `address_1`: intern
+* `address_2`: intern
+* `address_3`: intern
+* `address_4`: intern
+* `zip_code`: intern
+* `town_city`: intern
+* `country_code`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `sub_org_id`: internal
-* `id`: internal
+* `sub_org_id`: intern
+* `id`: intern
 
 ## Analyse & Beschreibung
 

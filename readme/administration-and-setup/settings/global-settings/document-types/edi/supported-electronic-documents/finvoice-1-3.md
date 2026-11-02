@@ -33,4 +33,4 @@ Finvoice 1.3 ist eine frühere Version des finnischen E-Rechnungsstandards, der 
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

@@ -1,21 +1,21 @@
-# Field validation rules
+# Feldvalidierungsregeln
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `field_id`: internal
-* `doc_type`: DOC Type
+* `id`: intern
+* `org_id`: ID der Organisation
+* `field_id`: intern
+* `doc_type`: Dokumenttyp
 * `is_sub_doc_type_field`: boolean
-* `profile`: internal
-* `field_name`: internal
+* `profile`: intern
+* `field_name`: intern
 * `field_length`: integer
-* `field_label`: internal
+* `field_label`: intern
 * `is_required`: boolean
 * `is_readonly`: boolean
 * `is_hidden`: boolean
 * `force_validation`: boolean
-* `validation_pattern`: internal
+* `validation_pattern`: intern
 * `confidence_threshold`: integer
 * `match_score_threshold`: integer
 * `created_by`: integer

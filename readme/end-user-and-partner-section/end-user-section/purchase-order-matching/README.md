@@ -4,15 +4,17 @@ DocBits übernimmt eine auf der Rechnung erkannte **Bestellnummer** automatisch 
 
 ## Rechnungspositionen prüfen und mit einer Bestellung abgleichen
 
-Der Rundgang beginnt mit dem Normalfall: DocBits hat die Bestellnummer aus der Rechnung übernommen, lädt die passende Bestellung ohne manuelle Suche und hat die drei Positionen automatisch abgeglichen. Die Anwenderin prüft Artikel, Mengen, Preise und Summen, erklärt Full Match und Partial Match an konkreten Beispielen und speichert das Ergebnis. Erst danach zeigt sie Sonderfälle: eine nicht erkannte Bestellnummer manuell suchen sowie eine falsche Verbindung lösen und korrigieren. Diese manuellen Schritte sind keine Pflichtschritte bei jeder Rechnung.
+Der Rundgang beginnt mit einer erkannten Bestellnummer und drei abgeglichenen Rechnungspositionen. Danach zeigt er die manuelle Suche als Sonderfall, eine absichtlich falsche Verbindung, einen Teilabgleich, den automatischen Abgleich und das Speichern. Prüfen Sie das Ergebnis nach dem Neuladen; Speichern allein gibt die Rechnung weder frei noch exportiert es sie.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v2/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/de.mp4" %}
+
+[Video mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/de.html)
 
 {% hint style="info" %}
 Bestelldaten müssen in der Organisation verfügbar und der PO-Abgleich für den Dokumenttyp eingerichtet sein. Die Regeln, Toleranzen und verfügbaren Freigabe- oder Exportaktionen hängen von Ihrer Konfiguration und Ihren Berechtigungen ab.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/po-matching-matched-de.png" alt="Gespeicherter deutscher Bestellabgleich: drei erfolgreich zugeordnete Rechnungspositionen, 118 Euro abgestimmt und 0 Euro offen"><figcaption><p>Das Beispiel enthält Papier, Archivboxen und Lieferung. Alle drei Positionen sind erfolgreich zugeordnet; der offene Betrag ist null.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-de.png" alt="Vollständiger Abgleich: Alle drei Rechnungspositionen sind verbunden, 118 Euro abgestimmt und 0 Euro offen."><figcaption><p>Vollständiger Abgleich: Alle drei Rechnungspositionen sind verbunden, 118 Euro abgestimmt und 0 Euro offen.</p></figcaption></figure>
 
 ## Full Match, Partial Match und Abweichungen verstehen
 
@@ -22,7 +24,7 @@ Bestelldaten müssen in der Organisation verfügbar und der PO-Abgleich für den
 | **Partial Match – teilweiser Abgleich** | Ein Teil der Rechnungspositionen ist zugeordnet, weitere Positionen sind noch offen. Im Video ist Papier mit 50 Euro zugeordnet; Archivboxen und Lieferung mit zusammen 68 Euro sind offen. | Offene Positionen und die Ursache prüfen; bei Bedarf die korrekte Zuordnung ergänzen oder die Angaben klären. |
 | **Abweichung / Unpassend** | Eine Verbindung besteht, aber ein geprüfter Wert wie Menge, Einzelpreis oder Artikelkennung passt nicht. | Abweichungsdetails lesen. Eine falsche Verbindung lösen; eine tatsächliche Differenz nach Ihrem Prüfprozess klären. |
 
-<figure><img src="../../../.gitbook/assets/po-matching-partial-de.png" alt="Teilweiser Bestellabgleich: Papier erfolgreich zugeordnet, zwei Rechnungspositionen offen, 50 Euro abgestimmt und 68 Euro offen"><figcaption><p>Partial Match: Eine von drei Rechnungspositionen ist erfolgreich zugeordnet. Das ist keine feste 50-Prozent-Grenze.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-de.png" alt="Teilabgleich: Papier ist mit 50 Euro abgestimmt; 68 Euro bleiben offen. Teilabgleich bedeutet keine feste 50-Prozent-Grenze."><figcaption><p>Teilabgleich: Papier ist mit 50 Euro abgestimmt; 68 Euro bleiben offen. Teilabgleich bedeutet keine feste 50-Prozent-Grenze.</p></figcaption></figure>
 
 „Half Match“ ist keine feste 50-Prozent-Grenze. Verwenden Sie für einen unvollständigen Abgleich den Begriff **Partial Match**. Eine passende Bestellnummer oder Gesamtsumme allein ergibt noch keinen Full Match. Umgekehrt darf die Bestellung weitere, noch nicht berechnete Positionen enthalten: Entscheidend sind die relevanten Positionen dieser Rechnung. Ein Full Match bestätigt den Abgleich; Freigabe und Export bleiben eigene Prozessschritte.
 
@@ -36,7 +38,9 @@ Mengen- und Einzelpreistoleranzen können als Prozent oder fester Wert eingerich
 
 Der Administrator zeigt die drei Regeltypen, Prioritäten innerhalb der Verarbeitungsstufen, Spaltenvergleiche, automatische und manuelle Anwendung sowie erweiterte Optionen. Er bearbeitet und speichert einen Entwurf und richtet im Testbeispiel eine Einzelpreistoleranz von fünf Prozent ein. Er erklärt außerdem feste Werte, artikelbezogene Ausnahmen und die getrennten Grenzen für Fracht, Zusatzkosten und Steuern. Die Aktivierung eines geänderten Regelwerks folgt erst nach fachlichen Tests.
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v1/de.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/de.mp4" %}
+
+[Video mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/de.html)
 
 Die einzelnen Einstellungen sind unter [PO-Abgleichsregeln](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) und [PO-Toleranzen](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) beschrieben.
 
@@ -54,7 +58,7 @@ Ist keine passende Bestellnummer erkannt oder muss eine andere Bestellung geprü
 2. Wählen Sie bei Bedarf das Filtersymbol neben dem Suchfeld für **Schlüsselwort**, **Lieferant**, **Status**, **Status der Bestellung**, Datums- und Betragsbereiche, Sortierung und die Anzahl der angezeigten Datensätze. Wählen Sie **Mehr** für zusätzliche Kriterien, **Anwenden** zum Suchen oder **Löschen** zum Zurücksetzen.
 3. Prüfen Sie anschließend die geladenen Bestellpositionen und das Abgleichergebnis. Eine manuelle Suche ersetzt die Prüfung der Bestellnummer auf dem Originalbeleg nicht. Wird kein Treffer gefunden, prüfen Sie außerdem den Import der Bestellung in diese Organisation. Die Suche legt keine fehlende Bestellung an.
 
-<figure><img src="../../../.gitbook/assets/po-matching-search-de.png" alt="Deutsche Bestell-Suchfilter mit Lieferant, Status, Datums- und Betragsgrenzen, Sortierung sowie Anwenden- und Löschen-Schaltflächen"><figcaption><p>Die manuelle Suche und ihre Filter helfen bei Sonderfällen. Eine bereits erkannte Bestellnummer müssen Sie hier nicht nochmals eingeben.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-de.png" alt="Die manuelle Suche zeigt die drei Positionen der Testbestellung. Nutzen Sie die Filter bei Bedarf; eine erkannte Bestellnummer müssen Sie nicht nochmals suchen."><figcaption><p>Die manuelle Suche zeigt die drei Positionen der Testbestellung. Nutzen Sie die Filter bei Bedarf; eine erkannte Bestellnummer müssen Sie nicht nochmals suchen.</p></figcaption></figure>
 
 ## Positionen abgleichen und das Ergebnis prüfen
 

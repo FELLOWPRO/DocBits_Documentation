@@ -1,39 +1,39 @@
-# Receive delivery line
+# Wareneingangsposition
 
 ## Tabelle `public.receive_delivery_line`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `receive_delivery_id`: internal
-* `delivery_number`: internal
-* `line_number`: internal
-* `item_id`: internal
-* `description`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `receive_delivery_id`: intern
+* `delivery_number`: intern
+* `line_number`: intern
+* `item_id`: intern
+* `description`: intern
 * `shipped_quantity`: double precision
-* `status`: internal
+* `status`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `deleted_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `purchase_order`: internal
-* `sequence_number`: internal
-* `sub_org_id`: internal
-* `shipped_quantity_unit_code`: internal
+* `purchase_order`: intern
+* `sequence_number`: intern
+* `sub_org_id`: intern
+* `shipped_quantity_unit_code`: intern
 * `packing_slip_quantity`: double precision
-* `packing_slip_quantity_unit_code`: internal
+* `packing_slip_quantity_unit_code`: intern
 * `received_quantity`: double precision
-* `received_quantity_unit_code`: internal
-* `purchase_order_line_number`: internal
+* `received_quantity_unit_code`: intern
+* `purchase_order_line_number`: intern
 * `status_effective_from`: timestamp with time zone
-* `purchase_order_sub_line_number`: internal
+* `purchase_order_sub_line_number`: intern
 * `invoiced_quantity`: double precision
-* `invoice_matching_status`: internal
+* `invoice_matching_status`: intern
 * `open_quantity`: double precision
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `last_modified_by`: intern
+* `deleted_by`: intern
 
 ### Analyse & Beschreibung
 

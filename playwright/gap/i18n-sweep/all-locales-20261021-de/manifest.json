@@ -1,0 +1,3274 @@
+{
+  "locale": "de",
+  "all_passed": true,
+  "case_count": 225,
+  "page_count": 82,
+  "replacement_cases": 206,
+  "distinct_capture_hashes": 194,
+  "text_replacement_cases": 19,
+  "cleanup": {
+    "restored": true,
+    "owned_fixtures_deleted": true,
+    "baseline_layouts_preserved": true
+  },
+  "owned_fixture_deletion_count": 2,
+  "capture_environment": "dev.docbits.com",
+  "ui_code": "de",
+  "note": "Alignment of the latest150 cases plus75 changes from the first5,20 and50 screenshot rounds. Equivalent localized source names and current navigation paths were checked. Source captures use the actual native UI, including separately reported untranslated or inaccurate product labels. No configuration changes were saved; own synthetic documents were removed and account language restored.",
+  "cases": [
+    {
+      "id": "S001",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_data_table-de.png",
+      "sha256": "c078ec32149c3d80eb826b9d6c4d5d75e1f95a6881c50c528a1c122ee2e8aa4a",
+      "caption": "Datentabelle der Analyse mit deutschen Spaltenüberschriften; Dokumentwerte sind ausgeblendet.",
+      "old_source_sha256": "569b271a8b62c6a5a59dc28f6cac57cdc5b0d2f8e3b26a96644abbf71b96e0b9"
+    },
+    {
+      "id": "S002",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_filter_dimensions-de.png",
+      "sha256": "9f4c915736830a75c428527b4c5ae76605548b1c0834a488c901ae88305caf4c",
+      "caption": "Analysefilter für Ablaufschritte, Unterorganisation, Dokumenttyp und Lieferant.",
+      "old_source_sha256": "838cb0e6f698f6628dfc3390d0c687dbd6a760bab0e107c8702ec6ebec9c09b9"
+    },
+    {
+      "id": "S003",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_filter_flow_steps-de.png",
+      "sha256": "73480a65eb3897bd09fdaba6ecd4e7ce9f7587c095e5d36a15b6ba7a178fdd9a",
+      "caption": "Filter für Ablaufschritte oberhalb der Analyse.",
+      "old_source_sha256": "0e89e8088e9312ea728cd232a77b8cc89496fc37ab6a69c3599e1f4343ea9a6a"
+    },
+    {
+      "id": "S004",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_filter_search-de.png",
+      "sha256": "c50768a1a3a8364d540bb0ff2cec0a8a7e05277f7eaff951914bd7328eeb7d53",
+      "caption": "Analyse nach dem Begriff Validierung filtern.",
+      "old_source_sha256": "026404915b3b1ad92ed62e8108f0a957b9d20c1e9cfa859ec82dba884060c2a4"
+    },
+    {
+      "id": "S005",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_filter_time_range-de.png",
+      "sha256": "cc196ce5d05f035e9043c8852ece15524359b611db04e75fa97dfc0f860a8e10",
+      "caption": "Benutzerdefinierter Zeitraum in der deutschen Filterleiste.",
+      "old_source_sha256": "68782c8b7918d943600c547fc95fb48b02ee134d4e06f19ac384d7ce5876f72c"
+    },
+    {
+      "id": "S006",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_flow_steps_card-de.png",
+      "sha256": "34c9f8e3e7f3176e0cf4ca18bbab986e3f6d29f1772acd2b6143888659546bbe",
+      "caption": "Karte Ablaufschritte mit aggregierten Verarbeitungszeiten.",
+      "old_source_sha256": "6e70d07e4d5dcc12409e0ea3b74b53de83076d37050f50257a36c5d0a51b0f84"
+    },
+    {
+      "id": "S007",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_flow_types-de.png",
+      "sha256": "b503136f7fe5648647344d84ef710f335e8791885bd00265a52af2fce2f71265",
+      "caption": "Auswahl der Analyseansichten Module, Status und Benutzer.",
+      "old_source_sha256": "2609d389002b027c1b8663c651e7b2b88839273e0cfde50fec14645d38913667"
+    },
+    {
+      "id": "S008",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_global_average_comparison-de.png",
+      "sha256": "4b798f04a19046abd6c26aac671ceb4fdf243daa0a584df260afa4e806d45843",
+      "caption": "Vergleich der durchschnittlichen Verarbeitungszeit mit dem globalen Durchschnitt.",
+      "old_source_sha256": "f5563c26058218023f0759bfd99f409febafac393413c7e5fe0f2548431b61e5"
+    },
+    {
+      "id": "S009",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_only_exported_toggle-de.png",
+      "sha256": "dc80de97b1c457c69f1bffa58baf637cd1d7310624650cc87cc76e0a414f0b6d",
+      "caption": "Schalter Nur exportierte Dokumente in der Analyse.",
+      "old_source_sha256": "9f31ee3c0173c95ea3da29ac868eb85549b7d67d14bcff4d7868f3c5fe3d7e26"
+    },
+    {
+      "id": "S010",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_processing_flow-de.png",
+      "sha256": "b503136f7fe5648647344d84ef710f335e8791885bd00265a52af2fce2f71265",
+      "caption": "Modulansicht mit aggregierten Schritten des Verarbeitungsablaufs.",
+      "old_source_sha256": "4a3de57e020777d5f95895c4fa8734472ebbe813c24044da8d52a67589e41d93"
+    },
+    {
+      "id": "S011",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_status_flow-de.png",
+      "sha256": "c9360e9c326f5cc870fa44552b34ce1ab51674de9f663aa507a9e4f080b9498c",
+      "caption": "Statusansicht der Analyse.",
+      "old_source_sha256": "e12e016c0b48f19f03f83b796c9b6444134937fcb7f07f54cae8974979afc195"
+    },
+    {
+      "id": "S012",
+      "doc": "readme/administration-and-setup/analytics-dashboard.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-analytics_dashboard_user_interaction_flow-de.png",
+      "sha256": "00dda15504f2a2f3bb92167fb09cbc75e9e170fe388166740acac28ca39e02e2",
+      "caption": "Benutzeransicht der Analyse; für die gewählten Filter liegen keine Daten vor.",
+      "old_source_sha256": "89410ad7f0c5053230e7cb9117184dc8d0bfbacd8b270fa1c7c5c4cae81a7233"
+    },
+    {
+      "id": "S013",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": "13f319403e43fbcb80ebd1adb386dfc562bcafb1",
+      "original_references": [
+        "export_create_new_button.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-export_create_new_button-de.png",
+      "sha256": "65960497507b728cfe7710c4a85c78489d0e941993f300caa1b372d1ef866c5c",
+      "caption": "Entwurf einer neuen Exportkonfiguration mit dem Beispielnamen Beispiel-Rechnungsexport.",
+      "old_source_sha256": "e4abf5ea9b4509de5d1f50ed03c3bcc4d5b1188d61c5802d05c8bc9f63ea7d1d"
+    },
+    {
+      "id": "S014",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": "4dbb926c4114dc86b385d8f6881f2ed65f3140d0",
+      "original_references": [
+        "export_settings_menu_access.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-export_settings_menu_access-de.png",
+      "sha256": "75ebf6b9722690d13998f0dd0fe1f8124f7fedc614bafa41bcd37c9e16077e60",
+      "caption": "Exportkonfiguration über die deutschen Einstellungen öffnen.",
+      "old_source_sha256": "b41153a0a194cf55551222c966a35603b1eaf6fc885ab8db1c84f42704100b17"
+    },
+    {
+      "id": "S015",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "dd0d7022b2260d09d175ad8e858b29de5e47dc95",
+      "original_references": [
+        "barcode_assignment_dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-barcode_assignment_dialog-de.png",
+      "sha256": "e59943d977d0a9e981651470dced75ceba208a8fc13aa2b6f69ec11b3f8a1f42",
+      "caption": "Dialog zur Zuordnung erkannter Barcodes zu Dokumentfeldern.",
+      "old_source_sha256": "eb93811163c91027390b95718b420f6981578fe61b7f63e3992cd880c745c5eb"
+    },
+    {
+      "id": "S016",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "86d1d50ff5dcd0173c00b554ba2eed49cfe98591",
+      "original_references": [
+        "barcode_assignment_field_mapped.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-barcode_assignment_field_mapped-de.png",
+      "sha256": "f1c9186196c5d7ea7e76e0549a448cb2b29577bfddb66e1792d4b8591e654851",
+      "caption": "Entwurf einer Barcode-Zuordnung zum Feld Bestellung.",
+      "old_source_sha256": "3965e318bfb4b081fb9ce9a4cb348518e7c17f54ec9a12342aa76fd7237c4b1c"
+    },
+    {
+      "id": "S017",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "9e145851326dcdab875629e2ffa01f21e2597124",
+      "original_references": [
+        "barcode_assignment_field_options.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-barcode_assignment_field_options-de.png",
+      "sha256": "64249c8e75485c97d227bcc5e0fa4ca261ce2d9898beaf6d40adee20c13a6395",
+      "caption": "Verfügbare Dokumentfelder in der Barcode-Zuordnung.",
+      "old_source_sha256": "8f5addddead4b48760069e0da74c44e6ca9a30951c6e13535e53249cfc35caea"
+    },
+    {
+      "id": "S018",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/barcode-assignment.md",
+      "action": "replace",
+      "old_blob": "aa7bf673ec02b386c8164f346031e02447b41b7d",
+      "original_references": [
+        "barcode_assignment_validation_screen.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-barcode_assignment_validation_screen-de.png",
+      "sha256": "18d5af1aef0c638805c7e3d6980bbed72ec0ea43b808871abf586953e9495e62",
+      "caption": "Deutsche Validierungsansicht einer fiktiven Rechnung mit Barcode und QR-Code.",
+      "old_source_sha256": "781a5dc0e3de4d339fcb05f85e107803bd8352bd72eda59ed02552d5a14df80c"
+    },
+    {
+      "id": "S019",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "remove",
+      "old_blob": "6360a3977345d81c519e7475cfab7b06f463efe8",
+      "original_references": [
+        "fulltext-search-required-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-fulltext-search-required-dialog-de.png",
+      "old_source_sha256": "4bc127b1d96a61baef8c7c030d6eba17f5da7185a480436c2dc5da9fe4db660c"
+    },
+    {
+      "id": "S020",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bb5a84f82f3f82fae8c6a1ba436c5f44e3b29cb4",
+      "original_references": [
+        "rule_detailed_editing.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-rule_detailed_editing-de.png",
+      "sha256": "11ae88b0432350fd5dde14d6d44e73ea0bedd2e64c13b8d8c37bc116f27d154a",
+      "caption": "Deutscher Editor eines TOML-basierten Regelwerks.",
+      "old_source_sha256": "44ccde9fea669577b760fca83969f73a3ae832b5cc3b0c03662293dc2d59db50"
+    },
+    {
+      "id": "S021",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "bdca306615d93d33e45d5f5981196194eb14de89",
+      "original_references": [
+        "rule_management.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-rule_management-de.png",
+      "sha256": "6606104eba3840dbf3a37e658d0dc7547c52dd4c7b380c6edd5161f9efb6dbee",
+      "caption": "Deutsche Regelverwaltung für den Bestellabgleich und Export.",
+      "old_source_sha256": "e126032390973a286c27cade1222a0ffe123d6975cab1bc9c675b475bc72c988"
+    },
+    {
+      "id": "S022",
+      "doc": "readme/administration-and-setup/settings/document-processing/rule-manager/README.md",
+      "action": "replace",
+      "old_blob": "1d2dd9e4027df8807c577f9250e13c25fcb1ceff",
+      "original_references": [
+        "rule_management_interface.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-rule_management_interface-de.png",
+      "sha256": "c4b071e41d8b2e2712b745499ab2d3a405c4b42c8d523b4e401e07591eaeaccb",
+      "caption": "Übersicht der Regelwerke und ihrer Aktionen.",
+      "old_source_sha256": "1ea2d42c9e00adf74bb0af3f42b3cf2245e5624e910433a46605aaa406d2842e"
+    },
+    {
+      "id": "S023",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md",
+      "action": "replace",
+      "old_blob": "e10552cb9beb16e3eddb0cfd501a492389606530",
+      "original_references": [
+        "custom_validation_rule_duplicate_en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-custom_validation_rule_duplicate_en-de.png",
+      "sha256": "c2171c967e09b79f39994bedbba56ede9fd3433b31f808255c2cca3f018e2b6c",
+      "caption": "Aktion zum Duplizieren einer Validierungsregel; konfigurierte Namen sind ausgeblendet.",
+      "old_source_sha256": "9adf7d7f987531abfe0c01217e2b9dcf20d0f9562b5efef9244b68e8c18ae4a5"
+    },
+    {
+      "id": "S024",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "9a345f19ca91e9d6959233bdbbd54872ec2e8f33",
+      "original_references": [
+        "dbdc155-field-properties-filtered-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-dbdc155-field-properties-filtered-de.png",
+      "sha256": "dcd1f0efde9ea1c0dbdd7757732825395aaf42dbb86ba0c38bd0f3f78afab367",
+      "caption": "Feldeinstellungen nach invoice_id gefiltert; OCR und Match Score bleiben sichtbar.",
+      "old_source_sha256": "26b62d507350f358bc527ae9fe05c00e1afee91b9b8c918bd034dd7aaaa15102"
+    },
+    {
+      "id": "S025",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md",
+      "action": "replace",
+      "old_blob": "3eee090d25fd183ab7958ab5c1fdd8c5400a6d06",
+      "original_references": [
+        "dbdc155-field-properties-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-dbdc155-field-properties-overview-de.png",
+      "sha256": "7b9d635fa17d6f032199df4b04b6cfc37400db6c23c1812340252a01657fae84",
+      "caption": "Deutsche Feldeinstellungen mit Pflichtfeld, Schreibschutz, Sichtbarkeit und Überprüfung.",
+      "old_source_sha256": "11fea4a0d01f5a0f396df44cf372dc90a986b61aaa0fa646148c8ec1e366d989"
+    },
+    {
+      "id": "S026",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ccd76cdf95a3639351d2bd98628b802ab8df0ded",
+      "original_references": [
+        "layout-rule-approval-status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-layout-rule-approval-status-de.png",
+      "sha256": "9b6561dc885cb55d83db21735fb4cef91f675e9022570fb4f84f8fe720b5d4ae",
+      "caption": "Ungespeicherter Entwurf im Editor für Layout-Auswahlregeln.",
+      "old_source_sha256": "198e7132fc5871b3d9f14cf480af356869a709bbe41bea7bcb5fe30a52675979"
+    },
+    {
+      "id": "S027",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "ea5c82f992a63888b28465c13b079fa154bc316b",
+      "original_references": [
+        "layout-rule-editor.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-layout-rule-editor-de.png",
+      "sha256": "fbfa4aa504e1d0eb1832a8367819186a991e1160312247cf5e47662361b5bf58",
+      "caption": "Geltungsbereich, Bedingungen und Ziellayout im deutschen Regeleditor.",
+      "old_source_sha256": "c3246c7323af9a88952eee52463f433a41b4426b9a5a3c873df9d8d3eee58a47"
+    },
+    {
+      "id": "S028",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "c7feb2371122d30dc88f9ea678bff4e5e3ae78b9",
+      "original_references": [
+        "layout-selection-default-row.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-layout-selection-default-row-de.png",
+      "sha256": "a7d499d8200bc54e79b450e28fc03a112e9c2905ff0c41bf1e538c042699b310",
+      "caption": "Standardlayout am Ende der Layout-Auswahlregeln.",
+      "old_source_sha256": "dca992d008739a344a991acb6a2f48f22064f5e88c4981d1efda31b4603bd297"
+    },
+    {
+      "id": "S029",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "db7c1b42719e0ca04e68edd75b15018ac2356963",
+      "original_references": [
+        "layout-selection-rules-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-layout-selection-rules-list-de.png",
+      "sha256": "91370f3b1330f51e4292661a2c61fd84dbc328fcadeb44194ab62bf9277748de",
+      "caption": "Deutsche Liste der Layout-Auswahlregeln; konfigurierte Namen sind ausgeblendet.",
+      "old_source_sha256": "2911d0b19c361c02cc8f1f3475e386202e9278b521eaa7a76309949860da8df0"
+    },
+    {
+      "id": "S030",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md",
+      "action": "replace",
+      "old_blob": "b21fa250b06842decb0f1315ab880a28a9398e18",
+      "original_references": [
+        "layouts-overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-layouts-overview-de.png",
+      "sha256": "ac46a1791cf827c758ea97f71b3073e52b46b5d0acd0450a063cba1c4f956eb0",
+      "caption": "Layoutübersicht mit den Registerkarten Layouts und Auswahlregeln.",
+      "old_source_sha256": "06aec7f3e1f91ea047b3e8be548ccf8a4f79398278cfa16260312c820c80b641"
+    },
+    {
+      "id": "S031",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-duplicatedocument_3-de.png",
+      "sha256": "dbe74baa34ddd3c66c5d7d0cf1f31dbfd0acaee112c9bc1982c45a06111b9012",
+      "caption": "Deutsche Einstellungen zur Erkennung doppelter Dokumente.",
+      "old_source_sha256": "675784633acca40266eeead974819fea5dbd1c617adeb96ec7ce1ea53ac1f5da"
+    },
+    {
+      "id": "S032",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-duplicatedocument_4-de.png",
+      "sha256": "c6f1accb61aad3dc27e23776fc9f68526880fba487097662816a49a90c542edd",
+      "caption": "Feldauswahl für die Erkennung doppelter Dokumente.",
+      "old_source_sha256": "f9e51368f3114015899349a4df3946c61ac5afec34e3f2fb373c127dd91f6373"
+    },
+    {
+      "id": "S033",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md",
+      "action": "remove",
+      "old_blob": "f46238d16030439b84cba791bb89ffa10468aaa6",
+      "original_references": [
+        "DuplicateDocument_7.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-duplicatedocument_7-de.png",
+      "old_source_sha256": "13fc1427976fdcea06828fd9f9ab89183da20ebc4c22bb0fbceba5bb69dffb3e"
+    },
+    {
+      "id": "S034",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+      "action": "remove",
+      "old_blob": "1393267cdcb91a3f940e79195ef8ced95942b9ee",
+      "original_references": [
+        "Calculate_PO_unit_price_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-calculate_po_unit_price_4-de.png",
+      "old_source_sha256": "b8f159ffbee3418b1a45340efee59666598b390b7903d4c2c1c396e6928dbcc7"
+    },
+    {
+      "id": "S035",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "8e035c26b6df9e2fc957dd4dce320a02d8cfbe42",
+      "original_references": [
+        "consumed_po_line_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-consumed_po_line_status-de.png",
+      "old_source_sha256": "b6128ddbfade7a0ddb2587a26c47848b69256e3eb2bc4cfb131c5757c4b28de9"
+    },
+    {
+      "id": "S036",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "1ba43fcd136bad48c2ed5ff72e80e322dd621c74",
+      "original_references": [
+        "image (470).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-image-470-de.png",
+      "old_source_sha256": "2573ae602b79f2027cb34cbc0614108e8fe3afea91d988fc34c89c656909212f"
+    },
+    {
+      "id": "S037",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "faed71d8a697c751cdf7b7b0f9b80d4dcd2bdd20",
+      "original_references": [
+        "image (472).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-image-472-de.png",
+      "old_source_sha256": "9ef1833425581a777e48cc77386340d3634dd417d684e2fa3ad7b14e2c94fef8"
+    },
+    {
+      "id": "S038",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "remove",
+      "old_blob": "4ef0056a8af4f751f21dbe0b8414d590354fdc17",
+      "original_references": [
+        "image (473).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-image-473-de.png",
+      "old_source_sha256": "dae0f1e3779c46eafb92a0f49fa7a7f08511b17985e948a05c4b60dbe79a27f6"
+    },
+    {
+      "id": "S039",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-25-de.png",
+      "sha256": "b46a8e0a808812dc41984e51245f3e67e078a7abe15df23e2a9db78c1616e3e2",
+      "caption": "Skriptübersicht in deutscher Sprache; Namen und Datumsangaben sind ausgeblendet.",
+      "old_source_sha256": "dc04f6352dd4a872ee6ffaf488faf33c7eafe1329f064ca200bd8c0737c9b47a"
+    },
+    {
+      "id": "S040",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/README.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-bildschirmfoto-2024-05-08-um-09-43-37-de.png",
+      "sha256": "0138d61d7c77c817ead80abfc391469ef99418dd0274cfd465f535315480b0f0",
+      "caption": "Deutscher Skripteditor mit einem technischen Python-Beispiel.",
+      "old_source_sha256": "e60c9d3a543c216c795c4e931d0cd59d768a4340f46736154694d2d6c48e0d4c"
+    },
+    {
+      "id": "S041",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "9d6324f98d2040977290a0b6c097dfe0db33aa78",
+      "original_references": [
+        "transformation-add-row-columns.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-transformation-add-row-columns-de.png",
+      "sha256": "0518cd811da4a7929698c23c61da07190591d43985fb749828de21f5cac3b276",
+      "caption": "Ungespeicherter Transformationsschritt zum Hinzufügen einer Tabellenzeile.",
+      "old_source_sha256": "3ff1f1c09e5a26261e4f61f161d8ed82060d3bcae6057ded35eda821c8f9cce3"
+    },
+    {
+      "id": "S042",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "472b72c6804ca4a1a4f5a0fe540eed23c843195a",
+      "original_references": [
+        "transformation-column-value-map.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-transformation-column-value-map-de.png",
+      "sha256": "4d354ed9482ae6640db706967256a4b830aacdd452546ac36b29f5d2de51be5d",
+      "caption": "Wertzuordnung für eine Tabellenspalte im Transformationseditor.",
+      "old_source_sha256": "24959baa80001c7b25983e92ad9728a7681b0d0305ab054738fbac47fc1c183c"
+    },
+    {
+      "id": "S043",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "bb71b4d92fb7e578b5b898d094302b5fd94fdaf9",
+      "original_references": [
+        "transformation-rule-pipeline.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-transformation-rule-pipeline-de.png",
+      "sha256": "8eb23085b5d91ead83309a06a45f34f4c72a0218bda5c8ea21e3da74a449e33c",
+      "caption": "Verarbeitungsschritte einer Transformationsregel im deutschen Editor.",
+      "old_source_sha256": "b7e5839fbf697fc3a6e39d0a16206f2ad47ca21f3181c2ed515c8a7b8c10136b"
+    },
+    {
+      "id": "S044",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/transformation-rules.md",
+      "action": "replace",
+      "old_blob": "525a2cb7224758b9df24a4434cfbadbd7dc7c217",
+      "original_references": [
+        "transformation-rule-scope.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-transformation-rule-scope-de.png",
+      "sha256": "704c57446eef1dd559bae6fb00f30c9d76a8757dd16f3e0e26a5de0adff1acab",
+      "caption": "Geltungsbereiche einer Transformationsregel: Kopf, Tabelle, Spalte und Dokument.",
+      "old_source_sha256": "bacf6c5bc95bfafdfdac491cfd8d5c23086bb5ddc24d5f741dfa59e559e20d0e"
+    },
+    {
+      "id": "S045",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md",
+      "action": "replace",
+      "old_blob": "e90879645ac0010e0d74de076232cbe52e10fbc5",
+      "original_references": [
+        "edit_user_in_sub_organization.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-edit_user_in_sub_organization-de.png",
+      "sha256": "f2caa5367804a304fc8f5b217a1e913d5fc715a0593eb6c343186a640ec08cfe",
+      "caption": "Deutscher Dialog zum Anlegen einer Unterorganisation.",
+      "old_source_sha256": "6a6a5606010b4432999c55feaf547164a047ed8440f537730084b2936fc5af9d"
+    },
+    {
+      "id": "S046",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-api-key-created-de.png",
+      "old_source_sha256": "dcb9f1df8497e538abd01ed3d58f165d118987721beb6d3e41d14e02583e085c"
+    },
+    {
+      "id": "S047",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-api-key-list-row-de.png",
+      "sha256": "a5b9a0a8528eb5b42dcfe639cee3488bef4b1b1e540ca3900b569a74358cf980",
+      "caption": "API-Schlüsselliste mit ausgeblendeten Schlüsseln und Kontodaten.",
+      "old_source_sha256": "a75c0acdc8643dc76aafb25a7d6204d6e496b01dea327c469db9e9538d4a2ff3"
+    },
+    {
+      "id": "S048",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "c147e91766c155c4d0b445768987b2409fc5276b",
+      "original_references": [
+        "infrastructure_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-infrastructure_overview-de.png",
+      "sha256": "a49ad09cfb56ebee59b8d1595db3901a36c77fb8857c716f575eeaab55ade6e3",
+      "caption": "Infrastrukturübersicht in deutscher Sprache.",
+      "old_source_sha256": "d085430e355d16aa7d2bbdca7ac06c9efa98399371329ec8c03d84fcb04d1a60"
+    },
+    {
+      "id": "S049",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+      "action": "replace",
+      "old_blob": "646ee5343fabc7e8a269167255751e21bc1a643a",
+      "original_references": [
+        "Bildschirmfoto 2024-08-25 um 12.35.53.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-bildschirmfoto-2024-08-25-um-12-35-53-de.png",
+      "sha256": "ed538e1ab5d632ebfec64f1a88a750eead077b12db3afae602ec079ac3d063d3",
+      "caption": "Deutscher Editor für eine neue Lieferanten-E-Mail-Vorlage.",
+      "old_source_sha256": "4828623de93aca6b4e5b2ab278be451bd8140f95590b6cadefcda2a5ad63da64"
+    },
+    {
+      "id": "S050",
+      "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-header_field_training_0-de.png",
+      "sha256": "e1a10328f575082994dc29c8d6656da7207995962d9f97cd60541031dccd6dc4",
+      "caption": "Feldvalidierung mit einer fiktiven deutschen Rechnung vor dem Feldtraining.",
+      "old_source_sha256": "4e047a1d65da073fa2514b0229f06d3f4f1e0990e6804696d7e4acafb96fb18b"
+    },
+    {
+      "id": "S051",
+      "doc": "readme/administration-and-setup/setup/document-training/training-header-fields.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-header_field_training_1-de.png",
+      "sha256": "6220135d06952c49d7d8c78e11f320d7fc4e99299cfaf714ec836cba567c64aa",
+      "caption": "Rechnungsnummer als Ausgangspunkt für das Training eines Kopffelds auswählen.",
+      "old_source_sha256": "d4c753119b414a464e16a4e77069e7d5444d9e9ac69ae86978dddef1bd3d00e9"
+    },
+    {
+      "id": "S052",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "7b9b3aa2b9ce093be324d9a9c21dfcb1ff316c5f",
+      "original_references": [
+        "define_tables_and_columns_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_1-de.png",
+      "sha256": "16f95ad977176e1b5ce520044f1804789daa745db96c89a0732ddb5ec23dc75f",
+      "caption": "Deutsche Oberfläche zum Definieren von Tabellen und Spalten.",
+      "old_source_sha256": "dc2215b7d75620bf4955b96e86a5a1d3eb36c50e922720e7c9468552996a230d"
+    },
+    {
+      "id": "S053",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "bce1b9d5a01319091c246da720599bc1bcfb84fe",
+      "original_references": [
+        "define_tables_and_columns_10.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_10-de.png",
+      "sha256": "2ecfe7799cf4d5bafddc0af769decae14631ebd960b19a36d411ecb5c006ef7e",
+      "caption": "Extrahierte Positionen der fiktiven Rechnung in der deutschen Validierungsansicht.",
+      "old_source_sha256": "a24e96c8d32615616eebd1ed5b35736374df24ecaa20f3624a45f9dfb4691ca9"
+    },
+    {
+      "id": "S054",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "95e6358348a1ef553692a41cf761cae10145a872",
+      "original_references": [
+        "define_tables_and_columns_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_2-de.png",
+      "sha256": "3126dbf4424a540694d896917dccc9958a0b80057781bcfc4f18299369f4b3b1",
+      "caption": "Tabellentraining mit aktiviertem Trainingsmodus.",
+      "old_source_sha256": "b67cfdad441b9a1ea09c72387abc6486c51f98a78d93f5f4b360e6ea86fa1d3a"
+    },
+    {
+      "id": "S055",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "41129ebb6eae74f2b32a19f02564acf860801a3d",
+      "original_references": [
+        "define_tables_and_columns_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_3-de.png",
+      "sha256": "3126dbf4424a540694d896917dccc9958a0b80057781bcfc4f18299369f4b3b1",
+      "caption": "Werkzeuge des Tabellentrainings einschließlich der automatischen Erkennung.",
+      "old_source_sha256": "659b03aefab4502fd728baea15120212f9504453f73a97331f36cb01d4290468"
+    },
+    {
+      "id": "S056",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "5aa31ae86aeeead17f9eae6c8f04bebeb235c647",
+      "original_references": [
+        "define_tables_and_columns_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_4-de.png",
+      "sha256": "9c31c2e9bae4a5f947be3ea280176e7a6a92fa2d4b98bdeb97e37f4bb9f98c04",
+      "caption": "Ungespeicherter Tabellenbereich um die Positionen der fiktiven Rechnung.",
+      "old_source_sha256": "793c293b18927885cdad01b34e9f3ec9ab7ec421e49295c4b181ec0920bad31f"
+    },
+    {
+      "id": "S057",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "4240ac3b80e3e5265c22d72a6230e758376038af",
+      "original_references": [
+        "define_tables_and_columns_5.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_5-de.png",
+      "sha256": "a87b68fc23a9b301158605e035f6f8ba2b5f670da9e76b43f5455d2587021237",
+      "caption": "Tabellenbereich im Bearbeitungsmodus mit senkrechten Spaltentrennern.",
+      "old_source_sha256": "bf1cd522c688182345b325f11a5d2d4e3914176b66c2e41158695310c2da5ab7"
+    },
+    {
+      "id": "S058",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "d9b39626458c7eca8899435394bce46ee807ed29",
+      "original_references": [
+        "define_tables_and_columns_8.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_8-de.png",
+      "sha256": "88bb06a6de0b9e402a21bea47829f5eb1cc20e5fe24a9cdf752fecd28b9a4216",
+      "caption": "Tabellenbereich mit Spaltentrennern in einem ungespeicherten Trainingsentwurf.",
+      "old_source_sha256": "3967825e45a180f6dbbfbdbac394f558b1178ffbbab3fe8bef35bfe90c408fa8"
+    },
+    {
+      "id": "S059",
+      "doc": "readme/administration-and-setup/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md",
+      "action": "replace",
+      "old_blob": "caaf11d993b2aa1ac2375d0ead818454229f4e1b",
+      "original_references": [
+        "define_tables_and_columns_9.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-define_tables_and_columns_9-de.png",
+      "sha256": "88bb06a6de0b9e402a21bea47829f5eb1cc20e5fe24a9cdf752fecd28b9a4216",
+      "caption": "Tabellenbereich mit gesetzten Spaltentrennern im Trainingsentwurf.",
+      "old_source_sha256": "6f2d5fb78256187482e7377d4be739b2235a021e524e0ce07d8a63f1d260bc7c"
+    },
+    {
+      "id": "S060",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "17891ff3051160ae164fdb82cdcdeee24836ab03",
+      "original_references": [
+        "document-types-invoice-fields-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-document-types-invoice-fields-de.png",
+      "sha256": "0dd3bd9e43edfe0798ef23bae9f5dbdeb3fd4ffedf178bcbd207c6132c62f3e6",
+      "caption": "Felder des Dokumenttyps Rechnung in der deutschen Verwaltung.",
+      "old_source_sha256": "ae5ac3e3eb2d2dc52a231c54d1fabaf158116b87ec7619359a2a17a5095f73b2"
+    },
+    {
+      "id": "S061",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "43a1da9852f3ef2ab887501fb50176aa6f5e513f",
+      "original_references": [
+        "origin_layout_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-origin_layout_1-de.png",
+      "sha256": "0a4851f5e42db7dd2e4ca95f495130daa0d18f22cad9d319f8244021147c8787",
+      "caption": "Layout-Builder mit deutschen Bedienelementen.",
+      "old_source_sha256": "618aa21f2b57eb64d66d3599a12a89b42b62a4bd11bf13f7a4fbaff2a18f80f6"
+    },
+    {
+      "id": "S062",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "5fe6d5bf2d79d8b2dad302d77bb67db548398c64",
+      "original_references": [
+        "origin_layout_3.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-origin_layout_3-de.png",
+      "sha256": "b1d5e4fbaf2d25ab9824b2a5c6abb77801dbe3997db569de91234f60386edcf2",
+      "caption": "Herkunftsauswahl im Layout-Builder; Herkunftscodes bleiben unverändert.",
+      "old_source_sha256": "ccfc61016ac7bd244c536a04f01a48b514eb39fb4a5d67ae556a2fa7c5e4d4a1"
+    },
+    {
+      "id": "S063",
+      "doc": "readme/administration-and-setup/setup/document-types/origin-layouts.md",
+      "action": "replace",
+      "old_blob": "01830f3300af552b84f1900e55de25fbcc426050",
+      "original_references": [
+        "origin_layout_4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-origin_layout_4-de.png",
+      "sha256": "c3c2471b753b1d0c92abee26ae385026a4cc47338f4a20ce694301fb5a63e3a1",
+      "caption": "Dialog zum Anwenden eines Standardlayouts auf ausgewählte Herkünfte.",
+      "old_source_sha256": "1f6ed5d9b356be092112520ca1a7462301cff35e128902158ba210c2c88f86bc"
+    },
+    {
+      "id": "S064",
+      "doc": "readme/administration-and-setup/workflow/card-sdk.md",
+      "action": "replace",
+      "old_blob": "85e251c7b975d5ec09d78d7ec75c470e1d7c8bfa",
+      "original_references": [
+        "workflow_card_sdk.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-workflow_card_sdk-de.png",
+      "sha256": "571239fca74259358af60b3b65d72f002b388636fef638bad04d668f432d6c68",
+      "caption": "Card SDK im deutschen Workflow-Dashboard mit dem Hinweis auf das erforderliche Abonnement.",
+      "old_source_sha256": "d11580c0ac374ef75066ffbc766a43c84ac3c0ba019c774cd6c22553bfbc2612"
+    },
+    {
+      "id": "S065",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "5b56c6edc6e7acc8343c009add46a0f2654d9035",
+      "original_references": [
+        "workflow_test4_delivery_note_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-workflow_test4_delivery_note_status-de.png",
+      "sha256": "4c36d0d7baa81c0d6be4ece1fb4d7573e0bbf986f016dde2a45fac25a9d480ae",
+      "caption": "Ungespeicherter Workflow-Entwurf zum Ändern eines Dokumentstatus.",
+      "old_source_sha256": "11d7198059ecd0f3dff606cf1089b6b82ceaf1af7642727a79ba4ac3b2c1e7fa"
+    },
+    {
+      "id": "S066",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "bc14a2fac0b062396ebc1248f7c1c1537c92e6e2",
+      "original_references": [
+        "workflow_test7_status_update.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-workflow_test7_status_update-de.png",
+      "sha256": "ac4b05df75535ae5824d12ed4358bb68b146bc0533e0ad4fca89f5e17eb28f48",
+      "caption": "Statusänderung als Aktion in einem ungespeicherten Workflow-Entwurf.",
+      "old_source_sha256": "3332146c96d8a574a7651b5b362d6a60b33cc3939ddcc880f73b3ec83a75acc4"
+    },
+    {
+      "id": "S067",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "da6a133492c46304bda67e1f6162504bcd8262cf",
+      "original_references": [
+        "workflow_test9_match_check_detail.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-workflow_test9_match_check_detail-de.png",
+      "sha256": "b54d17c584e64df43b1b48e47229f8aa592e50af4930d2b7c65609031e1dff8f",
+      "caption": "Workflow-Baustein für den Bestellabgleich im deutschen Auswahldialog.",
+      "old_source_sha256": "3718ea595ae4fb605107cd13cfea684b84178855ec00d76573ae35499249f006"
+    },
+    {
+      "id": "S068",
+      "doc": "readme/administration-and-setup/workflow/workflow-documentation.md",
+      "action": "replace",
+      "old_blob": "2c70bbc084befb579accd057538c54d2dd7673d7",
+      "original_references": [
+        "workflow_test9_match_check_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-workflow_test9_match_check_overview-de.png",
+      "sha256": "2a1eef4d3891102f8b7b3bc223143e8044e2df03ddefb02b38be3f5d2111ef93",
+      "caption": "Ungespeicherter Workflow-Entwurf mit einer Bestellabgleich-Aktion.",
+      "old_source_sha256": "bf6713fbb1e308ce5c6b04a2f1de351e5019f157d73884794e33ee826446bb98"
+    },
+    {
+      "id": "S069",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "a5e795181fa7e8537e1f768499a686cd1dbd575d",
+      "original_references": [
+        "document-flow-dashboard-menu-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-document-flow-dashboard-menu-de.png",
+      "sha256": "291a547ffdd85be260352816e46d2975fe30392a04f92724a42f4812304773ac",
+      "caption": "Synthetisches Beispieldokument im deutschen Dashboard finden; Dokumentwerte sind ausgeblendet.",
+      "old_source_sha256": "adb6fd3e591b6e917578a1a507920b0101232d3b2d7e695ab140c914d1d6de68"
+    },
+    {
+      "id": "S070",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "44e6c24e25c0bb4371cab63787ffd7f3c348da27",
+      "original_references": [
+        "document-flow-overview-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-document-flow-overview-de.png",
+      "sha256": "b20f39d00193af15edb743a7ea16147e9937d64bc114ba073064ec5b998d1ad1",
+      "caption": "Prozesskarten im Dokumentenfluss einer fiktiven Rechnung; technische Statuscodes bleiben unverändert.",
+      "old_source_sha256": "e1566efe3f6516356914cca481b79844fdde94cac6f5d2d6dd463c321c6e2856"
+    },
+    {
+      "id": "S071",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "remove",
+      "old_blob": "e2418c8bb4e3c9f90979eee87377da5e483621d8",
+      "original_references": [
+        "document-flow-step-details-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-document-flow-step-details-de.png",
+      "old_source_sha256": "449e36efce6b5e8535c4361240afee85fd0be4142f424c5f89853b2949c494c8"
+    },
+    {
+      "id": "S072",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/document-flow.md",
+      "action": "replace",
+      "old_blob": "c39d76787089aee30b1e3f7d728f01ce388d66fd",
+      "original_references": [
+        "document-flow-validation-menu-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-document-flow-validation-menu-de.png",
+      "sha256": "aeed51c287b85c4b6ba4654244e5ed2d0eec59fb49fb6eafe4db9371dbafdc65",
+      "caption": "Menü Weitere Optionen in der deutschen Feldvalidierung mit dem Eintrag Dokumentenfluss.",
+      "old_source_sha256": "43a1cae037ca8466c0c64c8b41beeaed482faa917eab39a144994cf97c482a3e"
+    },
+    {
+      "id": "S073",
+      "doc": "readme/end-user-and-partner-section/end-user-section/debug-collector.md",
+      "action": "remove",
+      "old_blob": "a25517b079dde1a6e425518b5e8417c57b135697",
+      "original_references": [
+        "debug-collector-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-debug-collector-dialog-de.png",
+      "old_source_sha256": "cd80bf7975c6fffec6c0250cb7af6eb350c5fe8cba565acbda0b3670c0c626c3"
+    },
+    {
+      "id": "S074",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-error_1-de.png",
+      "sha256": "5d6a4bee3848f0cb2fc9f19f4678799096b0c6d79d1c52885aa644ea5d3ab541",
+      "caption": "Fehleransicht mit Aktionen; im Beispiel sind keine Fehlerdetails hinterlegt.",
+      "old_source_sha256": "22f997cb0235d800640b63211c38dcb5882302777f8da009a1b5cf4d3d160736"
+    },
+    {
+      "id": "S075",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-error_2-de.png",
+      "sha256": "29cfadef4577a7795eda220cf7305bda1b9ced923e38226e61ff1ae8a8bb184e",
+      "caption": "Bereich für Nachricht und Ausnahme in der Fehleransicht; das Beispiel enthält keine Detailmeldung.",
+      "old_source_sha256": "eec0fde5c53c6da85a56002aefb9fc9a6130f8a44a82c3ba3e9883dc6250e032"
+    },
+    {
+      "id": "S076",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-error_4-de.png",
+      "old_source_sha256": "4c696311876bd719c5777bfacd8f721a5191d0d310df8d4ce0a6f0dc3ca6cb51"
+    },
+    {
+      "id": "S077",
+      "doc": "readme/end-user-and-partner-section/end-user-section/error-page.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-error_5-de.png",
+      "old_source_sha256": "1146e3e984bf213a45444564340a815495d8ced239ff9e8a47c443b96b6376cb"
+    },
+    {
+      "id": "S078",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": "e0806ff62231c6dedd8e99f0074d50dd817c31cc",
+      "original_references": [
+        "ftp1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-ftp1-de.png",
+      "sha256": "567ba484dcafcb5fa02599854db9615fd78af0053825b1fd5be0080c8f7b98db",
+      "caption": "Deutsche Übersicht der Importverbindungen; Verbindungsdaten sind ausgeblendet.",
+      "old_source_sha256": "8411609e6684658767b6df5840a7910bca785a681eacab25d06c9eb542ccb872"
+    },
+    {
+      "id": "S079",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "remove",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-ftp_file_archiving_settings-de.png",
+      "old_source_sha256": "86a163ea03fef756b5d0ee62e8aa189fb84cdf1277f2eb67b76c357deb37f860"
+    },
+    {
+      "id": "S080",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-ftp_import_configuration_form-de.png",
+      "sha256": "a7a0a5a749ca99971b7eadfb556c497660362c6145450d9f4a50b77c0a05249e",
+      "caption": "Erster Schritt des FTP-Importassistenten: Serverkonfiguration.",
+      "old_source_sha256": "ada08eb1a15c843ec593d830dbf745e23d2c1f16aef2f433eb9f45e925769c92"
+    },
+    {
+      "id": "S081",
+      "doc": "readme/end-user-and-partner-section/end-user-section/how-to-import-documents/manual-import.md",
+      "action": "replace",
+      "old_blob": "0611b1068bf8f4129f1c077414ce4d58d10faae4",
+      "original_references": [
+        "manual-import1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-manual-import1-de.png",
+      "sha256": "bd7bb39e7ae787a7c3a6dfe316130f0be4bc09d2690379f9ed21fdf9cca22a33",
+      "caption": "Deutscher Dialog zum manuellen Dokumentimport.",
+      "old_source_sha256": "8efe4ce9afa693ecef527e09c745622d4950c5a1c16d19a869a37e883333b59d"
+    },
+    {
+      "id": "S082",
+      "doc": "readme/end-user-and-partner-section/end-user-section/idea-board.md",
+      "action": "replace",
+      "old_blob": "2c4848092bb54346ed300879742fab72e643db7a",
+      "original_references": [
+        "idea-board-new-idea.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-idea-board-new-idea-de.png",
+      "sha256": "32ee6e4d4b6020524af113a46aa400081f8367ff5f05670e2c6d9c011c7221fc",
+      "caption": "Deutscher Dialog für eine neue Idee ohne persönliche Angaben.",
+      "old_source_sha256": "4b0f6d0cd3adeceafd00058cdd95d616a9089111ec43a5907915a1d28cc4b14b"
+    },
+    {
+      "id": "S083",
+      "doc": "readme/end-user-and-partner-section/end-user-section/invoice-dashboard.md",
+      "action": "remove",
+      "old_blob": "cb29d7263370f66a465f221931d90a8d8fa937f6",
+      "original_references": [
+        "invoice-dashboard.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-invoice-dashboard-de.png",
+      "old_source_sha256": "8fdabd006d0e6c8ebe205a9cde6c5c89b64a61fb981b54aae7423a3aab1cb5cb"
+    },
+    {
+      "id": "S084",
+      "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-dashboard.md",
+      "action": "replace",
+      "old_blob": "660b75b002d3ac86841d47fb630a19d4a9a998fc",
+      "original_references": [
+        "purchase-order.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-purchase-order-de.png",
+      "sha256": "d766eb05de8ae7d82919d6ab6039ff28d294b4c79249fcf8a39abd7628e0ba0e",
+      "caption": "Bestellübersicht mit deutschen Spaltenüberschriften und ausgeblendeten Bestelldaten.",
+      "old_source_sha256": "8fb43517f578d4057fe85b8a734feee4c57fbdc33818f10a0dd9fb1a8ef577e4"
+    },
+    {
+      "id": "S085",
+      "doc": "readme/end-user-and-partner-section/end-user-section/purchase-order-matching/supplier-item-number-map.md",
+      "action": "replace",
+      "old_blob": "64ca9a777d534c3fd2aeef3235a6ce5abb359b50",
+      "original_references": [
+        "supplier-item-number-map.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-supplier-item-number-map-de.png",
+      "sha256": "ec51184f61ec6be775f52e8fb273c74ab6fbc9ef8df88b414d4b8b3c523b44a8",
+      "caption": "Zuordnung von Lieferantenartikelnummern mit deutschen Spaltenüberschriften.",
+      "old_source_sha256": "f67c8b52389084399debdd40de2d199e55341a8e83dc1d70e1695d2aaa4ca121"
+    },
+    {
+      "id": "S086",
+      "doc": "readme/end-user-and-partner-section/end-user-section/ressources-and-support/user-support.md",
+      "action": "replace",
+      "old_blob": "920bc9aad80086ebb4536fa7140ee625c8517e55",
+      "original_references": [
+        "user-support4.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-user-support4-de.png",
+      "sha256": "97f83c5090c6aca5001f2910dce9bc106425e1fac291e19fb676fcdefd813cc8",
+      "caption": "Deutsches Supportformular vor dem Absenden.",
+      "old_source_sha256": "8ba0012f2db7bae336fb658f9b66c5b65f7b1812b7e9e99c82131d23a386a4da"
+    },
+    {
+      "id": "S087",
+      "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "dafbde24bee224321fad075490749ee8fb08b4c1",
+      "original_references": [
+        "tasks1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-tasks1-de.png",
+      "sha256": "02ffdd3b74d2a7d90bab82ef9da8e21ef31b10a634c1114a17fd02631456b0bc",
+      "caption": "Deutsche Aufgabenliste; Inhalte und Bearbeiter sind ausgeblendet.",
+      "old_source_sha256": "c4750890fe3171bfb5df66ddea23f9b358c6903af21293ca8ed62e64484ec391"
+    },
+    {
+      "id": "S088",
+      "doc": "readme/end-user-and-partner-section/end-user-section/tasks.md",
+      "action": "replace",
+      "old_blob": "72c1c34a7cc85f7b5e76ac82512a2604dc4d8f6d",
+      "original_references": [
+        "tasks2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-tasks2-de.png",
+      "sha256": "b751da296112c3f1bc50d87d066a8997a6e3b395600ca1378ea9aa6ed249531e",
+      "caption": "Aufgabenübersicht als Board; persönliche Aufgabeninhalte sind ausgeblendet.",
+      "old_source_sha256": "b0e429d3bfc44bdd9a7c231285e7eaa28b7b58b9173c028b15b236d918af20b9"
+    },
+    {
+      "id": "S089",
+      "doc": "readme/end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md",
+      "action": "replace",
+      "old_blob": "2a17c40c3689fef6b3a0ff38e8c33eed8c74ec91",
+      "original_references": [
+        "help-icon.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-help-icon-de.png",
+      "sha256": "114653f4e4f76c81444a24011e52af0c21b3ff7bb8ce458c685accd14e58c924",
+      "caption": "Hilfesymbol oben rechts in den deutschen Einstellungen.",
+      "old_source_sha256": "5a0bac6e3e712151d5241f49bd33514806a1254ae1e8c0cc9e4b5484c60ecf55"
+    },
+    {
+      "id": "S090",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md",
+      "action": "replace",
+      "old_blob": "03adade5d0c10860149dd13b2abaab03ddb53ac9",
+      "original_references": [
+        "fuzzy_data_selection_window.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-fuzzy_data_selection_window-de.png",
+      "sha256": "75942e62b4983d7a6ecf6cea16f9ad3b3c121d88b5a7e3377a45d660f6bb2fc2",
+      "caption": "Auswahldialog für einen Stammdatenabgleich; Datensätze sind ausgeblendet.",
+      "old_source_sha256": "ad92e8f49877cdd29213ede1fee785349801759f8838aad69db558c9182d4969"
+    },
+    {
+      "id": "S091",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": "5e4e9155074b8280c88c986c815e8c90d36e0d83",
+      "original_references": [
+        "settings_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-settings_ocr-de.png",
+      "sha256": "34b6186870a9919a1e6da192a5e852a968864aab1249ec96714fcfa8b8738e5d",
+      "caption": "OCR-Einstellungen in der deutschen Oberfläche.",
+      "old_source_sha256": "e15dc0f35f03b4b1a8419ec87f18a88d310e754ad7f18ba72e5e6b896b3df96c"
+    },
+    {
+      "id": "S092",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-troubleshooting_ocr_1-de.png",
+      "sha256": "32c3a140e18b49c7ca98e94dac507eb3d2cbc5f26bb3318300abab5696ead06e",
+      "caption": "Allgemeine OCR-Einstellungen mit der Option zur Verwendung von E-Text.",
+      "old_source_sha256": "5389d78bbc4b7599a838a586004aaf82c94e05fbb44d37cf6bc0d8003f02d7ba"
+    },
+    {
+      "id": "S093",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-troubleshooting_ocr_2-de.png",
+      "sha256": "aeed51c287b85c4b6ba4654244e5ed2d0eec59fb49fb6eafe4db9371dbafdc65",
+      "caption": "Weitere Optionen der Feldvalidierung öffnen.",
+      "old_source_sha256": "1c8145eaaa431a39f2d8a9392bd259d4f0e32eeb4975894bd03e29ba4dea51f6"
+    },
+    {
+      "id": "S094",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-troubleshooting_ocr_3-de.png",
+      "sha256": "aeed51c287b85c4b6ba4654244e5ed2d0eec59fb49fb6eafe4db9371dbafdc65",
+      "caption": "Option E-Text verwenden, falls verfügbar im Dokumentmenü.",
+      "old_source_sha256": "6178ed3f26caca4bb41f39180b2a21e86b2a5453c506a082611e726c511e49c3"
+    },
+    {
+      "id": "S095",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-troubleshooting_ocr_4-de.png",
+      "sha256": "2073e699778dfe21981631d42adae2905b81e4f93bf1f2c05a5c413fbd950012",
+      "caption": "Bestätigungsdialog vor einer Änderung der E-Text-Verwendung.",
+      "old_source_sha256": "09fd74f051f41ec228b2b771c21edaa5be3da83dbca17e2d0a358633fa1e008f"
+    },
+    {
+      "id": "S096",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-troubleshooting_ocr_5-de.png",
+      "sha256": "6220135d06952c49d7d8c78e11f320d7fc4e99299cfaf714ec836cba567c64aa",
+      "caption": "Validierungsansicht zur Kontrolle erkannter Felder an einer fiktiven deutschen Rechnung.",
+      "old_source_sha256": "9d7bd8b82989a70290f7645649426f449181c8a0d85da96e3e073d2b4fa25ec0"
+    },
+    {
+      "id": "S097",
+      "doc": "readme/end-user-and-partner-section/end-user-section/validation-screen/troubleshooting/missing-text-in-ocr-extraction.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-troubleshooting_ocr_6-de.png",
+      "sha256": "ad844888c418c251f57df328d41da8840125151737717777b9f1a074939fafbf",
+      "caption": "OCR-Ansicht mit erkanntem Text der fiktiven deutschen Rechnung.",
+      "old_source_sha256": "b40b71c269ab21989f48c71e970000f998f5bb443693ef51634802cf4d6622c8"
+    },
+    {
+      "id": "S098",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "dd8b851701c0d1f78d1f34822d5ece134d7fe31a",
+      "original_references": [
+        "mfa-backup-codes.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-mfa-backup-codes-de.png",
+      "old_source_sha256": "28b1f9e121d4600933dd2580b605bec5383fb8692bbeedc86f718a1080bcf185"
+    },
+    {
+      "id": "S099",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "bc74a9e955a382dd95b72dc7254ced621d07ea12",
+      "original_references": [
+        "mfa-email-otp.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-mfa-email-otp-de.png",
+      "old_source_sha256": "c9d6ecc5f37070991819a1bae0359b4c9fb42e8d766067e34688ceacbc9e6a17"
+    },
+    {
+      "id": "S100",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "remove",
+      "old_blob": "3099913ebc3a73a099e667e68defdd86b31836c5",
+      "original_references": [
+        "mfa-totp-setup.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-mfa-totp-setup-de.png",
+      "old_source_sha256": "917c4c18808d6b7dbeada8aa0f4f8cc960f0ea2d166ed300e6dd6521f5902270"
+    },
+    {
+      "id": "S101",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/configuring-field-properties.md",
+      "action": "replace",
+      "old_blob": "875021c184af2e1f44263acf39a7671396aced84",
+      "original_references": [
+        "image (146).png"
+      ],
+      "retired_aliases": 7,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-image-146-de.png",
+      "sha256": "61c7212240ea6f2e2a957e2f12256064ceff2c3247a7a1735d793be794603c46",
+      "caption": "Feldeigenschaften im deutschen Layout-Builder.",
+      "old_source_sha256": "8a9a315deaf2516aadbbec24114486245b85aaa0be97aedc8818705fdde08c9e"
+    },
+    {
+      "id": "S102",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/using-the-template-preview.md",
+      "action": "replace",
+      "old_blob": "fab22ea0d2aee17b11a3e34669abf1866e8bd239",
+      "original_references": [
+        "docbits_script_example_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_script_example_2-de.png",
+      "sha256": "0a4851f5e42db7dd2e4ca95f495130daa0d18f22cad9d319f8244021147c8787",
+      "caption": "Vorlagenvorschau im deutschen Layout-Builder.",
+      "old_source_sha256": "3563c31591468adf0ca10aa2675b3b4e6ab134eb221fdd37cd1355e6a7bce96b"
+    },
+    {
+      "id": "S103",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md",
+      "action": "replace",
+      "old_blob": "61e8fa887bd625ea5cb7c132e210ef678fb6f749",
+      "original_references": [
+        "validation-rules-list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-validation-rules-list-de.png",
+      "sha256": "c2171c967e09b79f39994bedbba56ede9fd3433b31f808255c2cca3f018e2b6c",
+      "caption": "Verwaltung benutzerdefinierter Validierungsregeln mit ausgeblendeten Konfigurationsnamen.",
+      "old_source_sha256": "1fa400fcc4250495b0e5d88a711d66632e6a9b360e357baf360a47f51ed8209c"
+    },
+    {
+      "id": "S104",
+      "doc": "readme/administration-and-setup/settings/document-processing/list-of-values.md",
+      "action": "replace",
+      "old_blob": "438fa0389306874485d19466d60346c299ed4fd3",
+      "original_references": [
+        "list_of_values_1.png"
+      ],
+      "retired_aliases": 23,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-list_of_values_1-de.png",
+      "sha256": "217efa32be9f9cb2bf8775b99275759d64a5807f32c2770080b4c3e9f38b5f1d",
+      "caption": "Deutsche Wertelistenübersicht; konfigurierte Listennamen sind ausgeblendet.",
+      "old_source_sha256": "fd20acf4c23e3233f68b91288ee9dd79d196f0608cd7ac7fbf25d461ada223f5"
+    },
+    {
+      "id": "S105",
+      "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "336a9fde08f3a0b55fc577b07c6f74e430f88e0b",
+      "original_references": [
+        "ftp_0.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-ftp_0-de.png",
+      "sha256": "567ba484dcafcb5fa02599854db9615fd78af0053825b1fd5be0080c8f7b98db",
+      "caption": "Deutsche Importübersicht für E-Mail- und FTP-Verbindungen.",
+      "old_source_sha256": "3dc1149226609d4847e71092901445d133b8b46c18ea19880cf668675154ef8e"
+    },
+    {
+      "id": "S106",
+      "doc": "readme/administration-and-setup/settings/document-processing/import/README.md",
+      "action": "replace",
+      "old_blob": "804848930bff3c7c8f3dcc2316cfde48ebe8cf74",
+      "original_references": [
+        "ftp_5.png"
+      ],
+      "retired_aliases": 10,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-ftp_5-de.png",
+      "sha256": "a7a0a5a749ca99971b7eadfb556c497660362c6145450d9f4a50b77c0a05249e",
+      "caption": "Serverkonfiguration im deutschen FTP-Importassistenten.",
+      "old_source_sha256": "d90c749afd13c936507b2a731b4758b3cff854eda7694c2fc4225faf57041dc5"
+    },
+    {
+      "id": "S107",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "18e481174850e53677d4126908a751a977cb749b",
+      "original_references": [
+        "quick_search_01_entry.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_01_entry-de.png",
+      "sha256": "419995e615d84f69403122d28bf57bae397e976260c128f5ac7abacfe2eef757",
+      "caption": "Schnellsuche im deutschen Dashboard.",
+      "old_source_sha256": "5b8721302b2abe85c8bcae93ada6f84336bb555a613784e78926998a4a4381d6"
+    },
+    {
+      "id": "S108",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "47fd8f09025a928da8867ea12619ec83be2c0184",
+      "original_references": [
+        "quick_search_03_filename_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_03_filename_contains-de.png",
+      "sha256": "336851ebd07851745dcc7ada69c72a25aa0963ed5a8d1a9876c46d654bb9d212",
+      "caption": "Schnellsuche nach einem Teil des Dateinamens: filename:invoice.",
+      "old_source_sha256": "654c6bc5c5bc984d31ec24e0cd35a0b12e5ef04cb395a3abf7217197de2dd0b3"
+    },
+    {
+      "id": "S109",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "3ad91f0593b4107d988dbcf2cba812b385d77c9f",
+      "original_references": [
+        "quick_search_05_status.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_05_status-de.png",
+      "sha256": "c455e228fb6551f229fd90b2c75b32fc3d227e76e5e93a4721a3adebba94dc85",
+      "caption": "Nach dem technischen Status ready_for_validation filtern.",
+      "old_source_sha256": "018d6314854dce6a45f7e30d2aa154864080b0ce8aeab75622cf626fadab30c9"
+    },
+    {
+      "id": "S110",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "df84eb1e62c895c955dba135d2d1427f671a75f0",
+      "original_references": [
+        "quick_search_06_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_06_date-de.png",
+      "sha256": "b191e629ec6aaab423dc1a45e941b985fa1f8b0a1685a7f23b0389e9644bcc7a",
+      "caption": "Dokumente mit created_on nach dem 25. Mai 2026 suchen.",
+      "old_source_sha256": "b265d5af45754a20b96c40f14ca249e69ff773c17ccbb53948bfd161db9dd11e"
+    },
+    {
+      "id": "S111",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "038032ddb8c5fcc2aa8fff68389e24a290cb00c2",
+      "original_references": [
+        "quick_search_09_supplier.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_09_supplier-de.png",
+      "sha256": "4b9a5d92d9fdff6666ac4f2682f0980561571d60697a61c331a2981a981516b8",
+      "caption": "Beispiel einer Lieferantenabfrage: supplier_name=Test.",
+      "old_source_sha256": "de7c065f2ada6a77424f222566f7fd4e83e53042b3b030da713f89def3d71062"
+    },
+    {
+      "id": "S112",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "7299e982ebb6decc9d0d8b4785235f1a413c4403",
+      "original_references": [
+        "quick_search_10_purchase_order.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_10_purchase_order-de.png",
+      "sha256": "e15184c562b14b4cae24665ace3c5f88495cf91170044678ca6b265ab416252e",
+      "caption": "Beispiel einer Bestellabfrage: purchase_order=PO.",
+      "old_source_sha256": "a785c28f5d96a3383d74f585e4f7323954af3c4f50ca9d9a28355806321da592"
+    },
+    {
+      "id": "S113",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "b5b8f8770b8adadf8a127d1584e6935c8c4691a9",
+      "original_references": [
+        "quick_search_07_amount.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_07_amount-de.png",
+      "sha256": "5897994fa89a2cf9d39c39d0c6c874b649fdd48c8a2e3f690760d9163dd65541",
+      "caption": "Dokumente mit einem Gesamtbetrag über 5000 suchen.",
+      "old_source_sha256": "bf35e6503343543140eb2dc8cf2c7864658998d5da8b9d697970d24d16427190"
+    },
+    {
+      "id": "S114",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "16eb08277c160c52609e728cdd49d93b3ec49c01",
+      "original_references": [
+        "quick_search_14_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_14_between-de.png",
+      "sha256": "f0183df9249d8891e80ef98716bd5b430bc52a8e9acecb386cd8393baef46906",
+      "caption": "Gesamtbetrag zwischen 1000 und 5000 eingrenzen.",
+      "old_source_sha256": "38bc27233b311cd3a7fb1b72419dccbe55be7ff904264626fa3311d3a8ed999f"
+    },
+    {
+      "id": "S115",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "b156309c9e7fd9a940655e06ad537b999967effa",
+      "original_references": [
+        "quick_search_12_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_12_empty-de.png",
+      "sha256": "9e9430daeaa4579457ccb6f51c308a9135c07e573c9063cc85df978f044578fa",
+      "caption": "Dokumente mit leerem Lieferantennamen suchen.",
+      "old_source_sha256": "1b9fca2afd4d58a97e44dc803159e02f19a245507bc2b0736a8c37694a3637a0"
+    },
+    {
+      "id": "S116",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c0d3747da19614ab257a8b8ae83634ee059c7d7b",
+      "original_references": [
+        "quick_search_15_ap_empty.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_15_ap_empty-de.png",
+      "sha256": "17fd14b6328f049e109bf25f4a91ec249d5c4e494b14ef70fa6f73fd832b2c38",
+      "caption": "Dokumente ohne AP-Zuordnung suchen.",
+      "old_source_sha256": "ffc2b12fa6b4a78cdda42c1fe57b00c4a694dd41b3a1288090a4d0f49367e680"
+    },
+    {
+      "id": "S117",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "9a409d234f45dd899df4b7d08f8d583fe34aa81f",
+      "original_references": [
+        "quick_search_13_combined.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_13_combined-de.png",
+      "sha256": "fa5d6c22e84878f381e46b88dad866fa0d19e7b21b4eeec1eeee9edee097e201",
+      "caption": "Status- und Lieferantenfilter mit AND kombinieren.",
+      "old_source_sha256": "fd4dd680e1a43406354be1ba32f4b27c3e628324f758621af52c300c0cde252f"
+    },
+    {
+      "id": "S118",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "cfc415c68d9e5d2078b8e35dfdac6991901c83bd",
+      "original_references": [
+        "quick_search_shortcut_01_operator_aliases.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_01_operator_aliases-de.png",
+      "sha256": "7bfe1cbdf578fd5010823c4c022424c87268f4aed6f76867fc5dfedb8d02d145",
+      "caption": "Vergleichsoperator gt in einer Datumsabfrage verwenden.",
+      "old_source_sha256": "12e3218171bdee1341cd028309786060a9e803c0ac383d88f3d860683f0333ee"
+    },
+    {
+      "id": "S119",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "7d095d6f3408d71312504d412f83e388e716ed65",
+      "original_references": [
+        "quick_search_shortcut_02_bare_date.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_02_bare_date-de.png",
+      "sha256": "92bd076bcddcf4f8d1db9e9fe4aa2d61a139d09b67fdb35a47ef70ddc95cb834",
+      "caption": "created_on mit today() vergleichen.",
+      "old_source_sha256": "324e9c430966cc49847432b44851b2be12f950cccb9ea47317904482d3496c5b"
+    },
+    {
+      "id": "S120",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6208c0757c1b83cbe77a33fc94bdb36e3cb1974e",
+      "original_references": [
+        "quick_search_shortcut_03_period.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_03_period-de.png",
+      "sha256": "cc486e9e50de85400e08b4c1c0a9a30d78c5935c800125e80e2cc9934d34ed3d",
+      "caption": "Erstellungsdatum ab dem 1. Juni 2026 filtern.",
+      "old_source_sha256": "a75048c14537558912327e328a99882c6fecbc0879e4af30bca39f65111a4f46"
+    },
+    {
+      "id": "S121",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "6664be37f74e4f6af0f0c3d7621318c1bb837177",
+      "original_references": [
+        "quick_search_shortcut_04_presence.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_04_presence-de.png",
+      "sha256": "cc50d444fab051ee2bbe26bd5d43d6021fef33040722059877ab9edc18bc3e33",
+      "caption": "Dokumente ohne zugewiesenen Bearbeiter suchen.",
+      "old_source_sha256": "77340358adbe6a9e5d91bb338146266b41d9d9e4ae0b06e828b970949661fe43"
+    },
+    {
+      "id": "S122",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "fe978ff78ec4ae1bb94cc73be523cbc6222b6444",
+      "original_references": [
+        "quick_search_shortcut_05_status_open.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_05_status_open-de.png",
+      "sha256": "b2df4b6b762731d97af2a2afdfdaa4e19ba9694faecd05b1b1b4dc41eb7f477c",
+      "caption": "Beispiel einer Statusabfrage in der deutschen Schnellsuche.",
+      "old_source_sha256": "42a068de21667297a431094ab0c5d276ff3baf877fe43f82b8c6d8aad89b21d6"
+    },
+    {
+      "id": "S123",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "ba6e98b9bc1692d26aa72b9fbf1a9c32be92c658",
+      "original_references": [
+        "quick_search_shortcut_06_not_between.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_06_not_between-de.png",
+      "sha256": "dc5681af526d18e65cb30be0de332c38691383ca48796460295edfade78b6839",
+      "caption": "Erstellungsdatum außerhalb eines angegebenen Zeitraums suchen.",
+      "old_source_sha256": "5d4eb223bf484d262c0f413ca5db534fa448f95f5222b475fae022dc245361a1"
+    },
+    {
+      "id": "S124",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c6dc7885d5917997134a4f7bfc5e72d43525012a",
+      "original_references": [
+        "quick_search_shortcut_07_in_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_07_in_list-de.png",
+      "sha256": "633b01b78a5e970e849aa440caf11eef93f0057253bd331ef8580eb018293b29",
+      "caption": "Zwei technische Dokumentstatus mit OR kombinieren.",
+      "old_source_sha256": "8f106ba6c5325e9f5720d806da434ef609467ea2e9ed2d4184127eeb3a39252a"
+    },
+    {
+      "id": "S125",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "ff156fd6592e9c635c440dc0983a4f0715fba7e5",
+      "original_references": [
+        "quick_search_shortcut_08_negation.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_08_negation-de.png",
+      "sha256": "dc174450a775572ae8b4c6348e4b8261e5e2a9ef4cc9f06a8babf257cba81994",
+      "caption": "Einen Lieferantenfilter mit NOT ausschließen.",
+      "old_source_sha256": "538c41e7a3291d2ffddc68f3b2ec6dc1022519e3acdfe80e001f9293c961ff4b"
+    },
+    {
+      "id": "S126",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "df469d2a4d654a6e305e7096450d0fcb6e248770",
+      "original_references": [
+        "quick_search_shortcut_09_contains.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_09_contains-de.png",
+      "sha256": "711ac3280930c1789f39f099612fa1ae34ad949ef5c9d402b797c4da09035a09",
+      "caption": "Dateinamen mit einem enthaltenen Suchbegriff finden.",
+      "old_source_sha256": "09ee065811105676e2a27cd5bcdb642ac9f1550c6957e93bac48b30fb6ca7cde"
+    },
+    {
+      "id": "S127",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "502ec571bade9d8b0c791ce19ae65063773d704b",
+      "original_references": [
+        "quick_search_shortcut_12_invoice_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_12_invoice_prefix-de.png",
+      "sha256": "9efc4cee3bbe2b2368b3232b8e17fdae634869c6849a71973874dcb35807b7ce",
+      "caption": "Beispiel einer Abfrage nach invoice_number.",
+      "old_source_sha256": "5399b2f045a5772125c33b8b36ff28a33b4d1a4b924679152074bc0950d17916"
+    },
+    {
+      "id": "S128",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "35ec3551100efc62bef868c2a018d53bbb17de53",
+      "original_references": [
+        "quick_search_shortcut_13_assignee_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_13_assignee_prefix-de.png",
+      "sha256": "b0b3c8f73a3bdd609b7f79b32984ee9cb171d33627f48f1619bab445889961a4",
+      "caption": "Nach leerer Bearbeiterzuordnung filtern: assigned_to=\"\".",
+      "old_source_sha256": "ccd0ac15fa4d250a9c4d64174d41dde8643993ea2f54d2541a806e91103ea201"
+    },
+    {
+      "id": "S129",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "703079d025d40f6a359b185f5b73c408eba11c7a",
+      "original_references": [
+        "quick_search_shortcut_10_currency_suffix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_10_currency_suffix-de.png",
+      "sha256": "0d7112ecb8a610476b3e27eef9f5fb07546ca1ae9240453f165deb0275092710",
+      "caption": "Dokumente in Euro suchen: currency=EUR.",
+      "old_source_sha256": "db7fd164c92d069334d3534543cb06017bff001c8d62ea9e224a0e3b45f87a70"
+    },
+    {
+      "id": "S130",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "aee079a246ce86696a81685908b0ebb19ad2922f",
+      "original_references": [
+        "quick_search_shortcut_11_overdue.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_11_overdue-de.png",
+      "sha256": "d7a745d406e583562234240482c0b45781d958ec2c84668738d721d16f62038e",
+      "caption": "Nach einem Fälligkeitsdatum vor today() suchen.",
+      "old_source_sha256": "dd36f7b67bed73ed2fa3acc68e3544e392b847141ea77370c192c549e2386e16"
+    },
+    {
+      "id": "S131",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "b0de32d98b149ce167027ebc79e792bc95a97e1b",
+      "original_references": [
+        "quick_search_shortcut_14_amount_prefix.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_shortcut_14_amount_prefix-de.png",
+      "sha256": "f2ab355d232689cff750c4bd22a3cb46546aaff8db5a6e0718cf8bded4aed7c1",
+      "caption": "Gesamtbetrag ab 1000 filtern.",
+      "old_source_sha256": "1aff84cd47086b9de12abb103140fd108b789d556eb2c598143e0797c49dc427"
+    },
+    {
+      "id": "S132",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "0f2cdc853c13b4c2e33f2322b44cea3b0c45b83b",
+      "original_references": [
+        "quick_search_17_vector.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_17_vector-de.png",
+      "sha256": "a7c1bce5e5be97fe693de37760983076d15a9c5e3e79de8a1cfe2edb0b110741",
+      "caption": "Dokumentinhalt bei der Schnellsuche automatisch einbeziehen.",
+      "old_source_sha256": "f867afaa9d475ba90b9bdbd1532899363633fbcf17860134fa6a483abd198c7d"
+    },
+    {
+      "id": "S133",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "712ba566e7e3bc22012772adf9c4fd599696af9f",
+      "original_references": [
+        "quick_search_18_ocr.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_18_ocr-de.png",
+      "sha256": "3f5a85193789f59b14a48d0896d0d814d1524df5c764f362118bf4021a2956b7",
+      "caption": "Dokumentinhalt bei der Schnellsuche immer einbeziehen.",
+      "old_source_sha256": "f5191480b36a836c3796ee36c335a74a7b83dc8c54da3cece43c6e4fb1a9a0e9"
+    },
+    {
+      "id": "S134",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "600a7debd2fe0821a6ad2666364da19ff44822c1",
+      "original_references": [
+        "quick_search_19_ai.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-quick_search_19_ai-de.png",
+      "sha256": "4797395d1d1e19914c82969e3e5e5d0c40100a5f8f6a1dc2116d2453b6529b2b",
+      "caption": "Schnellsuche auf sichtbare Spalten begrenzen.",
+      "old_source_sha256": "f1735eb8b067504bc013bc45250487d918574cb1677540c9c3666b9f16e512a9"
+    },
+    {
+      "id": "S135",
+      "doc": "readme/administration-and-setup/settings/global-settings/email-notification/configuring-notifications.md",
+      "action": "replace",
+      "old_blob": "62990876d45817eb85bc7c230604b0d61859cc28",
+      "original_references": [
+        "image (41) (1).png"
+      ],
+      "retired_aliases": 12,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-image-41-1-de.png",
+      "sha256": "e93450822a2cc08d999af351da97e84dd1eb998377f6a40e9f03c3c5385ed9a8",
+      "caption": "Deutscher Dialog für eine E-Mail-Benachrichtigung.",
+      "old_source_sha256": "9b78738c45e7fff22aa22fd2a76695774b64c1b23839c7f216723904514882d2"
+    },
+    {
+      "id": "S136",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/inbound-emails.md",
+      "action": "replace",
+      "old_blob": "ef9f261ce82eac372db147c2c385fb71c03cb673",
+      "original_references": [
+        "inbound_emails_protocol_select.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-inbound_emails_protocol_select-de.png",
+      "sha256": "e7cdcbf14ac8096ccbee77528d1deed166fd2c8b5d594a9a2d3a89559990a79a",
+      "caption": "Protokollauswahl im deutschen Assistenten für eingehende E-Mails.",
+      "old_source_sha256": "708544a988a8b07059f40dcbd10f55d0d5eb8f8e89916c36fa8f93932a859b40"
+    },
+    {
+      "id": "S137",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/editing-and-saving-regex-patterns.md",
+      "action": "remove",
+      "old_blob": "b6b1b6fb1d5c0f488a698e6148cfd6d4c7930329",
+      "original_references": [
+        "docbits_regex_edit_settings.png"
+      ],
+      "retired_aliases": 2,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_regex_edit_settings-de.png",
+      "old_source_sha256": "e0886d0bfa87fc85121cb61cdeb8251e207aa6466dcae647475b0a598763f814"
+    },
+    {
+      "id": "S138",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "edf001aa8e61445bc75337a7f7362fd858eb5f3e",
+      "original_references": [
+        "docbits_document_sub_types_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_document_sub_types_list-de.png",
+      "sha256": "63348d9417ef688dab56a9a1a5bdab40f5acf1d8e6ff38484f5d6697f47cd2e5",
+      "caption": "Untertypen eines Dokumenttyps in der deutschen Verwaltung.",
+      "old_source_sha256": "4453de27ce3044f431015aecc38cfd2179afc0d835f1654d52c77b5f8cfa67ec"
+    },
+    {
+      "id": "S139",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/document-sub-types.md",
+      "action": "replace",
+      "old_blob": "ab7d1755422095e47119a390f2d5c51674c4da5e",
+      "original_references": [
+        "docbits_document_sub_types_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_document_sub_types_overview-de.png",
+      "sha256": "63348d9417ef688dab56a9a1a5bdab40f5acf1d8e6ff38484f5d6697f47cd2e5",
+      "caption": "Übersicht der Dokumentuntertypen in deutscher Sprache.",
+      "old_source_sha256": "e091898c234d8079b5491b176171a9f555a157039202aeb8e8b0ed19308ba679"
+    },
+    {
+      "id": "S140",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/regex/README.md",
+      "action": "remove",
+      "old_blob": "f3e72bf22290bff49efd720c12362b9cc20df7f8",
+      "original_references": [
+        "docbits_regex_management.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_regex_management-de.png",
+      "old_source_sha256": "4b43617324157fc4e95030ebe7ee7832560b59c07981aaca3ed4a11dc70b2f58"
+    },
+    {
+      "id": "S141",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md",
+      "action": "replace",
+      "old_blob": "96a827ba47b76bfc6d3ecf17e66b5b4ab45992fe",
+      "original_references": [
+        "image (85) (1).png"
+      ],
+      "retired_aliases": 7,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-image-85-1-de.png",
+      "sha256": "333f100fac12628434bd8af4a8780dc7ead552d19ed12584ac4827741e997e87",
+      "caption": "Deutscher Importdialog für das Modelltraining mit Betrags- und Datumsformat.",
+      "old_source_sha256": "6bcb513eabaf24bb90584f48d62f169698a3c6402ed7597e064d6b3516081f17"
+    },
+    {
+      "id": "S142",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md",
+      "action": "replace",
+      "old_blob": "198b66f74a49a1d46b9300628b6b5afca15de9bb",
+      "original_references": [
+        "docbits_edit_script_icon.png"
+      ],
+      "retired_aliases": 2,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_edit_script_icon-de.png",
+      "sha256": "9cf647bdb5b0ca6aed75f304a11775efc72c0777fea6cd89e4911c6b2ff271a0",
+      "caption": "Deutsche Skriptverwaltung mit der Aktion zum Bearbeiten; Skriptnamen sind ausgeblendet.",
+      "old_source_sha256": "d6895024ec66090a9584dac5fff79e8cac5be82bcd06f7de2c1df227453cc8ae"
+    },
+    {
+      "id": "S143",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "cc866f8726bd38bea8895b6f80f3b33ac6980591",
+      "original_references": [
+        "docbits_choose_column_type.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_choose_column_type-de.png",
+      "sha256": "0dd3bd9e43edfe0798ef23bae9f5dbdeb3fd4ffedf178bcbd207c6132c62f3e6",
+      "caption": "Feldeinstellungen mit den getrennten Spalten Überprüfung erforderlich, OCR und Match Score.",
+      "old_source_sha256": "b40bc923fbe348132c32253628f529fec34a04956694e815b3f1133727f90b3c"
+    },
+    {
+      "id": "S144",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "cb3d91a891a5bcf7892e2b3e25b40396a4aee469",
+      "original_references": [
+        "image (120).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-image-120-de.png",
+      "sha256": "599f4dc8aa95e5a5bc76b77d523510a8eb5f04989152e9fe69730700f357ccdf",
+      "caption": "Übersicht der feldbezogenen Validierungs- und Erkennungseinstellungen.",
+      "old_source_sha256": "69175db7a01299bdc086b20b275df34ae5adfd1850d7bd15964bd42dc44b72d9"
+    },
+    {
+      "id": "S145",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md",
+      "action": "replace",
+      "old_blob": "eb6665a71ff39841238b24491f20340103ff8126",
+      "original_references": [
+        "docbits_decide_column_necessity.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_decide_column_necessity-de.png",
+      "sha256": "931f32eff5fa7023b3d3ade3997577d05bf3531137631be370ecf62c85845aa1",
+      "caption": "Gefilterte Rechnungsnummer mit den Einstellungen zur Überprüfung und zum Match Score.",
+      "old_source_sha256": "751b2cbc9baef2bde8b611f37ae7dc70ed2fe45b5170e67e62884168c3f0f3ca"
+    },
+    {
+      "id": "S146",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "f84738fefc288660c9d8f2f6edb49f2ac57c1688",
+      "original_references": [
+        "docbits_add_field_with_charges_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_add_field_with_charges_1-de.png",
+      "sha256": "826ed7ce334ffd3f515e54ae61b941533484a88708df42911d998943d179e14d",
+      "caption": "Deutscher Dialog Details zum Dokumentenfeld vor dem Anlegen eines Feldes.",
+      "old_source_sha256": "abe88ba6cf7af8b2d4af40cf91364b7d7ae5230439c5d499b422bde39797f52a"
+    },
+    {
+      "id": "S147",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md",
+      "action": "replace",
+      "old_blob": "3b0a9c5bcff08bf57891a7c14597aeabeefeff54",
+      "original_references": [
+        "docbits_add_field_with_charges_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_add_field_with_charges_2-de.png",
+      "sha256": "24cf3a4977607e4c155227c9a090ad5f539cdf6ce12060e7d7399a41e52c74c3",
+      "caption": "Ungespeicherter Feldentwurf mit aktivierter Option Zusatzkosten aktivieren.",
+      "old_source_sha256": "67c31519ebb1e94e08e80009ece1b791ea616e437d97927fb88dc8a576d0b12f"
+    },
+    {
+      "id": "S148",
+      "doc": "readme/administration-and-setup/settings/document-processing/classification-and-extraction/auto-extract-tax-code.md",
+      "action": "replace",
+      "old_blob": "a5dceb213a6ec95dfdcbfb9d64bf6a315af81755",
+      "original_references": [
+        "auto_extract_tax_code_1.png"
+      ],
+      "retired_aliases": 1,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-auto_extract_tax_code_1-de.png",
+      "sha256": "843ebecf60dc9e023f11362b173d6f5d56eb6502506748cafd45683522aa3c81",
+      "caption": "Deutsche Einstellungen zur automatischen Steuercode-Erkennung.",
+      "old_source_sha256": "671e802c6136e1a156fc15f3fc99e967e9ea6995f579c1f1605952e582492194"
+    },
+    {
+      "id": "S149",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/fields/README.md",
+      "action": "replace",
+      "old_blob": "64e9ca7e31b27f3fecee19c9eaefe912b6352de6",
+      "original_references": [
+        "docbits_fields_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_fields_overview-de.png",
+      "sha256": "d9e07ba4e1cf970dc79ee8c28793e03e2548d6dd83d247262c4e70d444d0ba4e",
+      "caption": "Deutsche Feldübersicht für den Dokumenttyp Rechnung.",
+      "old_source_sha256": "af5a9c828788533a364828365f63529aa9514378e4d2a201a0be65158eb29aa5"
+    },
+    {
+      "id": "S150",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/model-training/README.md",
+      "action": "replace",
+      "old_blob": "e1f480a78eaa5e1beaae1068df6d241e8f2e719f",
+      "original_references": [
+        "docbits_model_training_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s150-docbits_model_training_overview-de.png",
+      "sha256": "153f7e78d91a8332a9511e68440de26712388895e5637f5744d3f08857121dd1",
+      "caption": "Deutsche Übersicht zum Modelltraining.",
+      "old_source_sha256": "39beb4dadbeea268b2cdd71e56783dd999bd63d7c83e74b24a1ee09d52283e4c"
+    },
+    {
+      "id": "T001",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md",
+      "action": "replace",
+      "old_blob": "db5668e3345c19c2de9e500b2e76daa2355671b6",
+      "original_references": [
+        "mfa-admin-requirement.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "mfa-admin-requirement-de.png",
+      "sha256": "d5c047a40f114ebf0fadc048e668f9118b6b82f27e180f8e08a424acc34397d6",
+      "caption": "Deutsche Einstellung zur organisationsweiten Zwei-Faktor-Authentifizierung",
+      "old_source_sha256": "43582a950a9c8d9655f025583afdfc9d6bdb60b92f7c6ab6121023397f5d4e3e"
+    },
+    {
+      "id": "T002",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "45603395938ceba8bdb0a9cff732bd27ea123505",
+      "original_references": [
+        "groups_settings_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "groups_settings_overview-de.png",
+      "sha256": "e81e10412d3a92027e7d1ac4dddbea2a638276c8b8939cbe1aeff44ee724450a",
+      "caption": "Übersicht der Gruppeneinstellungen",
+      "old_source_sha256": "34ec8aa0dc135b4c4da290ee173bc0ba74607d9e0de4c4391532dabcc2a9d424"
+    },
+    {
+      "id": "T003",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "dbdc2b35f363a3fbbaca91a62a7d1a23881bb505",
+      "original_references": [
+        "groups_list_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "groups_list_overview-de.png",
+      "sha256": "6d7d361e25e99c2fa3826b2cfb9b819f67ccb4cb6820b95d95cd11778b9eb42b",
+      "caption": "Übersicht der Gruppenliste",
+      "old_source_sha256": "29c43f69278baf084eced3f6a594dbf4c540aebbfb5914370da4c5c3ff15f7b0"
+    },
+    {
+      "id": "T004",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "b04449025ed99ca237f89ec0b6921a95c8097223",
+      "original_references": [
+        "infrastructure_processing.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "infrastructure_processing-de.png",
+      "sha256": "dc66bd6030358ba227310ec588537c8b98d2816a24eb26ef90e9b15b9591b651",
+      "caption": "Deutsche Registerkarte Verarbeitung mit Letzte Ausführung und Status",
+      "old_source_sha256": "507fab601c4d767901b130dc244107a73396fbc99fdf379bf7ca3d1708e07ccf"
+    },
+    {
+      "id": "T005",
+      "doc": "readme/administration-and-setup/settings/infrastructure.md",
+      "action": "replace",
+      "old_blob": "e3bc37387b0fa2dd217da2a1c62c1a3d9d1de1e8",
+      "original_references": [
+        "infrastructure_scheduled.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "infrastructure_scheduled-de.png",
+      "sha256": "d925bf870dec13a47570f39d395aa7631d904283c116719758787c42fff8764d",
+      "caption": "Deutsche Registerkarte Geplante Aufgaben mit Ausführungszeiten und Planmäßig-Status",
+      "old_source_sha256": "6a72edbf410bf771e0ec9ad033ebec4e81aa7aacb03c599c7f984c88a458c3bb"
+    },
+    {
+      "id": "T006",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "export_webhook_configuration-de.png",
+      "sha256": "8f2d0fc6a0983e34c82ff986d2af321d20cf1cbcb532c0bbd01696107bd02428",
+      "caption": "Deutsches Formular für einen neuen Webhook-Export",
+      "old_source_sha256": "f8016a40f459f1c29f923040eae579caad195758da9593f7bb24a9300f0fd60b"
+    },
+    {
+      "id": "T007",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "export_sftp_configuration-de.png",
+      "sha256": "0b6064a9af3dd7f376b8c2017fa75990cf7ad5cf44c37c6e8317de0a63ea7e72",
+      "caption": "Deutsches Formular für einen neuen SFTP-Export",
+      "old_source_sha256": "f4ef8c19c6b04738ec6aa81ecb5f60da10ef16e9041206fcd4b5d9e77e862bfa"
+    },
+    {
+      "id": "T008",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md",
+      "action": "replace",
+      "old_blob": "b00f0eb9450c24fe4f83ed6edd26c1fec9c5c168",
+      "original_references": [
+        "dbdc232-groups-permissions-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "dbdc232-groups-permissions-de.png",
+      "sha256": "17cfc28adfc6a87b9d877514cd66f22442f3cdb3958635c0eb41cf52cbb6e543",
+      "caption": "Deutsche Gruppenübersicht mit Suche und Schaltfläche Neu",
+      "old_source_sha256": "e5e0fc1de56efd1cc0a36a8622c59061bf6c14c30b6bfecfefcbf90d8105119d"
+    },
+    {
+      "id": "T009",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md",
+      "action": "replace",
+      "old_blob": "82a8276a37a242d1c4c6a72fc6b4038a67edaefa",
+      "original_references": [
+        "groups_and_permissions.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "groups_and_permissions-de.png",
+      "sha256": "1c051151d3d316b649d5f71ff99788cc32803e0a26e4574664e0516837d25ebd",
+      "caption": "Gruppen und Berechtigungen",
+      "old_source_sha256": "b38ed919a64a799cd63c92567d502e7018e848a3417e161b3f367d2a4cc59bb0"
+    },
+    {
+      "id": "T010",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/README.md",
+      "action": "replace",
+      "old_blob": "f1dfbbce72a065d248b72b69506dc3c2a285b69b",
+      "original_references": [
+        "integration_sso.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "integration_sso-de.png",
+      "sha256": "bcf46445024ba5380c69296dd21044aec4f44ae88611c19b6f09dde33413c38e",
+      "caption": "Integration & SSO",
+      "old_source_sha256": "faceec34fc029457097da5db9d351846a11bc5b8fcf800aa24b0e5e286075c48"
+    },
+    {
+      "id": "T011",
+      "doc": "readme/administration-and-setup/settings/log-settings/README.md",
+      "action": "replace",
+      "old_blob": "98fb206c2f8d0c58df6db354d9f2f9ae815c9adf",
+      "original_references": [
+        "activity_logging.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "activity_logging-de.png",
+      "sha256": "c86aa060a3ab1170abf20df8b63e6a265bd9d0d309a219d0cb1738907c6d997a",
+      "caption": "Deutsche Protokollfilter für Zeitbereich, Schweregrad und Service",
+      "old_source_sha256": "4dd2598b48bfe58a3fdc5889bc534cf2481c744e2138069d64b1a06d525c1c3b"
+    },
+    {
+      "id": "T012",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-general-settings.md",
+      "action": "replace",
+      "old_blob": "40957d816bec6947c2664bbed8b3807a1f1abf7d",
+      "original_references": [
+        "supplier_general_settings.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "supplier_general_settings-de.png",
+      "sha256": "d7c4cc3ce5ed2957dc6be30ba1fe7c4626f9924ac697e2a1ec2f86865a1f9dcc",
+      "caption": "Allgemeine Lieferanteneinstellungen",
+      "old_source_sha256": "7aa7a47bf46d63fab9a6adacf272d5176b9c153764919658e24666dab89efd14"
+    },
+    {
+      "id": "T013",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/editing-email-templates.md",
+      "action": "replace",
+      "old_blob": "66db8452b61a72b3657b223053cd2503ee33032a",
+      "original_references": [
+        "supplier_email_templates.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "supplier_email_templates-de.png",
+      "sha256": "6434c4f65dc7f9ce3afed9ada57506a7cac3e5d18f8aa33fa07cb5e2363c0d4b",
+      "caption": "E-Mail-Vorlagen für Lieferanten",
+      "old_source_sha256": "08a8ba22c5042f1e2455fc73ef8ce34a93e7b51f71755a8c1907fb1409c71730"
+    },
+    {
+      "id": "T014",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md",
+      "action": "replace",
+      "old_blob": "281f20b531de808ca7ad2b0fce4f95389481bee7",
+      "original_references": [
+        "supplier_export_configuration.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "supplier_export_configuration-de.png",
+      "sha256": "790027587cbf5f7bf52cbc77547a3cc284c39c9a55f0a8fccb1860321008df33",
+      "caption": "Exportkonfiguration für Lieferanten",
+      "old_source_sha256": "bc463199ceeed6ead2933151e73edcd070412621ce8c9678066951229e82bac1"
+    },
+    {
+      "id": "T015",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md",
+      "action": "replace",
+      "old_blob": "8ec3b3a270de246771e620514964e1d378466b6a",
+      "original_references": [
+        "supplier_group.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "supplier_group-de.png",
+      "sha256": "d59ede64712528b3f5755dc0ffb9108e6654b418b9e75c29ce4d0f2f05ba6ba3",
+      "caption": "Lieferantengruppe",
+      "old_source_sha256": "af9416dae085e4d670e84b3e1e9b57ac7239d282a63cf36ba451100fc4686dcb"
+    },
+    {
+      "id": "T016",
+      "doc": "readme/administration-and-setup/settings/supplier-setting/supplier-permissions.md",
+      "action": "replace",
+      "old_blob": "8062257be3429210a78a3d2f946b02c221816083",
+      "original_references": [
+        "user_supplier_group_mapping.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "user_supplier_group_mapping-de.png",
+      "sha256": "a686115398d2d6d374e5f2b176d19e2e55c531e4552da30e284bb9d2038a8dfa",
+      "caption": "Zuordnung von Benutzern zu Lieferantengruppen",
+      "old_source_sha256": "3c2eaaa75f7071cebe78c46a037145e83faf9dd9a770977d9c3f27153da8b6f0"
+    },
+    {
+      "id": "T017",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "api-key-list-de.png",
+      "sha256": "9bfd6f9e75769524d7ad1c23f9beb7309d7f1110a8dd97b6137ad98b8dbb2972",
+      "caption": "Deutsche API-Schlüsselliste; Schlüsselwerte und Organisationsdaten sind ausgeblendet",
+      "old_source_sha256": "d2d202c9cd759e3e1901057446bb2a1f11148be2001379bc82936018bde2fc97"
+    },
+    {
+      "id": "T018",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "api-key-create-dialog-de.png",
+      "sha256": "521cd213c330d746a6c921c9b4f4783f5883b51ce49fdca4ea06ad2275cad87f",
+      "caption": "Deutscher Dialog API-Schlüssel erstellen mit Schlüsselname, Beschreibung und Ablauf",
+      "old_source_sha256": "bb7b95903f795f58e3cec5f325cd7f6373da69f81b753a29e6d5ffabc66bab01"
+    },
+    {
+      "id": "T019",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/activation.md",
+      "action": "replace",
+      "old_blob": "4261b17251bf67f7284a186141461fa0b9ffec78",
+      "original_references": [
+        "document-type-activation-en-2026.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "document-type-activation-de.png",
+      "sha256": "8bb99b6a3a62b7cf5cb7d026aa9d7fa656fe6c8af218720047c4fb76c514495e",
+      "caption": "Deutsche Standard-Dokumenttypen mit Aktivieren-Schaltern bei Rechnung und Gutschrift",
+      "old_source_sha256": "461183418364af977a506ea8142f5baa83cb064cfb60728a2fd4e823e124f342"
+    },
+    {
+      "id": "T020",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/api-key-management.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "api-key-settings-overview-de.png",
+      "sha256": "8c4e41a8ab23392cfc923fe0846f30f3510a1ea7e8aed6bd8fbe1bc7a2e3ad1d",
+      "caption": "Deutscher Abschnitt API-Schlüssel mit Schaltfläche API-Schlüssel erstellen",
+      "old_source_sha256": "446ebd833c7e986142eaddddcbe8b185154e8f8e797c5111af0ed12aa491ae73"
+    },
+    {
+      "id": "U001",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md",
+      "action": "replace",
+      "old_blob": "a0d93065a0019dfb027ee15a83239be840ca4bf8",
+      "original_references": [
+        "user_settings_menu_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-user_settings_menu_overview-de.png",
+      "sha256": "d83616fae88b918ea07022c979b3153d03a4398fc7aef7cca55b4a6d3505388d",
+      "caption": "Deutsche Benutzerübersicht mit Suche und Benutzer hinzufügen. Personenbezogene Tabellenwerte sind ausgeblendet.",
+      "old_source_sha256": "955a9c5ec8fb0f61b78a501f041fe8fb4353f0f0ee06b7be445b996cacaa85f7"
+    },
+    {
+      "id": "U002",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md",
+      "action": "replace",
+      "old_blob": "0e06df6a17da2e914339e14a6a7868d02d72f223",
+      "original_references": [
+        "user_edit_details_form.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-user_edit_details_form-de.png",
+      "sha256": "70e6afa6e76326afee5f8246af43c0366c6a485ae9626711ff3ff2bec64b4b58",
+      "caption": "Benutzer bearbeiten mit Vorname, Nachname, Passwort und Kontostatus. Bestehende Eingabewerte sind ausgeblendet.",
+      "old_source_sha256": "54e818cfe886ca4afa3559a2e3862c1b0594e262a5cb3d65f672cad41aa3c230"
+    },
+    {
+      "id": "U003",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md",
+      "action": "replace",
+      "old_blob": "797160cd9bdfdf0b174c8e17b96009325b3d9683",
+      "original_references": [
+        "login_analytics_overview.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-login_analytics_overview-de.png",
+      "sha256": "0dca1ab82bb48be8e42feacaaf907359fa7d8ec0322d9a31202eacae61c08955",
+      "caption": "Deutsche Anmelde-Analyse mit Zeitraum, Anmeldeaktivität und zusammengefassten Kennzahlen.",
+      "old_source_sha256": "e82d13e61bbc87c6a4224552bbc05b50e95ff578a32e2379455cd81c75b63e2c"
+    },
+    {
+      "id": "U004",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "262ef60adf964bc5ed82ba7ea8d804a6489e65ed",
+      "original_references": [
+        "image (176).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-image-176-de.png",
+      "sha256": "a2be9c1d26b36a04e6d363751a08447b7abc26c2f14df61fd0a191d0d7a01de8",
+      "caption": "Zugriffskontrolle einer Gruppe mit deutschen Spaltenüberschriften. Die Produktwerte Owner, Everyone und No Access bleiben englisch.",
+      "old_source_sha256": "d4ea1afb3299e6806ca784ebd5e5944f59aa0b5adf527059ddded7cfeec85de3"
+    },
+    {
+      "id": "U005",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "e385081cdbeb86035c28cf6028b40efa36ae3480",
+      "original_references": [
+        "add_new_group_button.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-add_new_group_button-de.png",
+      "sha256": "9d15bc0a303dda507b4a9f40fbf3b6181638eba79dd073da49f3573dcfda4840",
+      "caption": "Deutsches Formular Neue Gruppe erstellen mit Gruppenname und Beschreibung.",
+      "old_source_sha256": "606d4792bfa414834046bf0d3b762db9a92b9b63bcb12c8feee52653bdd9d0c9"
+    },
+    {
+      "id": "U006",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/adding-editing-groups.md",
+      "action": "replace",
+      "old_blob": "f40847e59865482d89c87744260b72ba57f7be1a",
+      "original_references": [
+        "new_group_form_save.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-new_group_form_save-de.png",
+      "sha256": "ad2c4b48765eb063113554d1a32678380ff5fda47fbe008da7abf378996c07a3",
+      "caption": "Gruppenübersicht nach dem Schließen des Formulars. Gruppennamen sind ausgeblendet; die Aufnahme belegt keine neu gespeicherte Gruppe.",
+      "old_source_sha256": "834e7d88bc75c15f176c5ce23df73ff94ced41c01223f9a3c4d410d3e83cd9bc"
+    },
+    {
+      "id": "U007",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "89d583db47bad01e00870095cac250b2c96a36be",
+      "original_references": [
+        "image (174).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-image-174-de.png",
+      "sha256": "8f724438feca3484b096ee33d0449f088cbeb7aeddb5b3b36ccbd0ea72248aff",
+      "caption": "Deutsche Gruppenauswahl. Gruppennamen sind ausgeblendet; wählen Sie eine Gruppe, um ihre Zugriffskontrolle zu öffnen.",
+      "old_source_sha256": "2cad1a70534fc0efeba49b63de0ccdc89f46571ca034c1ccf52853a9c0be7b22"
+    },
+    {
+      "id": "U008",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "3fe4148c63af21d6733f49d3539e998fb89a8786",
+      "original_references": [
+        "image (346).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-image-346-de.png",
+      "sha256": "92f69891d167c18f7c81cbcae932c74bd276a3befd9ddd1802950c52e933ed5d",
+      "caption": "Aktuelle Zugriffskontrolle pro Dokumenttyp. Die Auswahl für Anzeigen und Bearbeiten bestimmt den Zugriffsumfang; die Produktwerte sind teilweise englisch.",
+      "old_source_sha256": "bf27f48293ee45bf3fb7fa6013b37e21f1dc9d0a527ca69e8cb5104b863a465d"
+    },
+    {
+      "id": "U009",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md",
+      "action": "replace",
+      "old_blob": "6b64baf7172948a09f1da5b3338efe7e0ffb2f9e",
+      "original_references": [
+        "image (173).png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-image-173-de.png",
+      "sha256": "373edb766b9a04cad65fdf3461f46a5e3cbac24f37604561d1e7fe7bdc7734c7",
+      "caption": "Deutscher Schalter zum Aktivieren oder Deaktivieren von Gruppen und Berechtigungen. Im Beispiel ist er eingeschaltet.",
+      "old_source_sha256": "352c9b74be8befd20151037ca5b45665038dbb82f53aa034ead88f74888e9176"
+    },
+    {
+      "id": "U010",
+      "doc": "readme/administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v2.md",
+      "action": "replace",
+      "old_blob": "372b0db6b5030b8e8df3011b1b3940cab8e9594f",
+      "original_references": [
+        "dbdc-182-infor-v2-sso-settings-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-dbdc-182-infor-v2-sso-settings-de.png",
+      "sha256": "32d278f340d9d587d43b7a9d7fa32b7ed93667db0865f5de7b73e6bb55e838cb",
+      "caption": "SSO-Einstellungen mit Zertifikat und Metadaten in der deutschen Oberfläche. Organisationskennungen und Eingabewerte sind ausgeblendet.",
+      "old_source_sha256": "279736eff4ab806da418336abae58e068ac5745d0cddc164d73c7c12a804172e"
+    },
+    {
+      "id": "U011",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "af5549d806a46d7d3cee72d5ba99ad860ccce580",
+      "original_references": [
+        "dbdc177-document-types-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-dbdc177-document-types-de.png",
+      "sha256": "7c6a0dbf208b9fa41ac142daed32c60d6ce6c3096ce1909a3770ae8813d1c805",
+      "caption": "Deutsche Dokumenttypen: Öffnen Sie Layouts auf der Karte Rechnung.",
+      "old_source_sha256": "92da8bd205ee1e9d9becda161186067adf1a49ac28fcdaa77bcfd9a16a6ac110"
+    },
+    {
+      "id": "U012",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "8a7883d30a3aed3573e8ce2c45c3955aec529926",
+      "original_references": [
+        "dbdc177-layout-elements-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-dbdc177-layout-elements-de.png",
+      "sha256": "a2254ee6edd4249c2428679e31d0ebbe7536ccf9eecf2ecdc0e6efb37521e44a",
+      "caption": "Gruppen und Arbeitsfläche im deutschen Layout Builder. Eingabewerte sind ausgeblendet; die Dokumentvorschau liegt außerhalb des Bildausschnitts.",
+      "old_source_sha256": "8441d34ad79c25a7d4655bdb21917d4e1a94ea0030902eb889e27c07255c2b63"
+    },
+    {
+      "id": "U013",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "63a236607758685a97b8d969bba1f9426992226d",
+      "original_references": [
+        "dbdc177-layout-fields-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-dbdc177-layout-fields-de.png",
+      "sha256": "255497978277f23f8ae15d35d85c87dfa515297aedadc47f2e168104060d91db",
+      "caption": "Deutsches Panel Felder mit Suche und Feldbezeichnungen. Technische Feldschlüssel bleiben unverändert.",
+      "old_source_sha256": "c4c2e5d4424d11e2c76e6bfd6860a6ed4d7c079ea2470121529b0f2589c621b1"
+    },
+    {
+      "id": "U014",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md",
+      "action": "replace",
+      "old_blob": "b833bc2e313d5c2e6c5a10373c907c12e4eb3439",
+      "original_references": [
+        "dbdc177-layout-form-elements-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-dbdc177-layout-form-elements-de.png",
+      "sha256": "a102b30eeb35cb04dba295c7f010de72eaa0f817c4c03ebc0d20b6a0042222c3",
+      "caption": "Panel Formular-Elemente in der deutschen Oberfläche. Bezeichnungen einzelner Bausteine wie Check Box bleiben im Produkt englisch.",
+      "old_source_sha256": "c65d7a8852dbcc70cfa8985407a93c96686b4c66b0958a65f538c767d995d77d"
+    },
+    {
+      "id": "U015",
+      "doc": "readme/administration-and-setup/settings/global-settings/dashboard/customizing-filters.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-customizing_filters_3-de.png",
+      "sha256": "f99d9e2f07af489d838c91ed4aa015ae8fce7b6dd007b458b7d6f895fd3a8cb2",
+      "caption": "Deutscher Abschnitt Filter mit Statusfilter-Stil, benutzerdefiniertem Statusfilter und Anwenden.",
+      "old_source_sha256": "859fabb087c06b851cc101e7784379ba5d46d7099923198aecaa88576f94dd53"
+    },
+    {
+      "id": "U016",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_sftp_3-de.png",
+      "sha256": "d3900a86c90dcd4598d42f403fedf09032d9f4b51766d15621fbfc8beb63a4a6",
+      "caption": "Erweiterte SFTP-Einstellungen für Dateinamen und Dokumentenverlauf in der deutschen Oberfläche.",
+      "old_source_sha256": "3cf817733a3a9da1c5258f6cd7e80111ed28fdf812d0cebec153e707b6440a20"
+    },
+    {
+      "id": "U017",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_infor_sftp_configuration-de.png",
+      "sha256": "89f14320281e644c25cadc6c687826080b12e16eee48842513fd1fc85017a3d0",
+      "caption": "Deutsches Formular Infor Export nach SFTP mit Exportordnerpfad, BOD- und IDM-Mapping.",
+      "old_source_sha256": "13128e515321785e9a5484c22ff44b31d85918451d7f3647bb3a4f84a3e457c5"
+    },
+    {
+      "id": "U018",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_smb_configuration-de.png",
+      "sha256": "7aa72d7b0c7dde626d8e3ce426e5a9fc6ab534283720b0226c9cf8e25eebf1fe",
+      "caption": "Deutsches SMB-Exportformular. Die Exportauswahl heißt im Produkt derzeit KMU; gemeint ist die SMB-Freigabe.",
+      "old_source_sha256": "4420ed4a4cf5a8a83e9fca08adbd0e4f732542e068ca3767ede9869947b5b2f2"
+    },
+    {
+      "id": "U019",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_infor_idm_configuration-de.png",
+      "sha256": "21d3a6fc55e2f9463d928d9bbd8ecc0ad1e25ef9e56f35a3e6fe42efbf31b732",
+      "caption": "Deutsches Exportformular für Infor IDM. Deployment Type und technische Formatbezeichnungen bleiben englisch.",
+      "old_source_sha256": "ffc79819620732c68c29a9f611ad14687d79e409d8bb329799d586ee3cb82e79"
+    },
+    {
+      "id": "U020",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_infor_ion_configuration-de.png",
+      "sha256": "58017b08c66237af86afdfc877934e257643ee17683c9f3491d6cf86c37852c4",
+      "caption": "Deutsches Exportformular für Infor ION BOD mit ION-API und BOD-Zuordnungsdatei.",
+      "old_source_sha256": "d868a753cee785e6a4d54f2c422f133bfa20c6c7142cf962d718ec6a8a5918b8"
+    },
+    {
+      "id": "U021",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_infor_idm_ion_bod_configuration-de.png",
+      "sha256": "35362fd833f2f56cc517be99c551e8b1a8968280c7f9efd297102b0e707d9926",
+      "caption": "Deutsches Exportformular für Infor IDM + ION BOD mit ION-, IDM- und BOD-Dateien.",
+      "old_source_sha256": "708af3f6ed9c08df7db3afc0f57c7b7b687c886c34725c8feb3f2564e3ccf3e4"
+    },
+    {
+      "id": "U022",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_infor_idm_ln_configuration-de.png",
+      "sha256": "4ab13e78353720e2324af033a001eb8c701f3c9807a3f1b52ffdf47a77b060a3",
+      "caption": "Deutsches Exportformular für die Infor-ERP-Variante mit zusätzlicher LN-Mapping-Datei.",
+      "old_source_sha256": "bd402c3e8a718de2ccb39dbfab03f2b52fab8ca2765264457215f6cc1c7b6567"
+    },
+    {
+      "id": "U023",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_infor_idm_m3_configuration-de.png",
+      "sha256": "2dd1e17830fb64eff0b2b189be690f24333076e1d8c875159d9e007f2dc66091",
+      "caption": "Deutsches Exportformular für Infor IDM + M3 mit zusätzlicher M3-Mapping-Datei.",
+      "old_source_sha256": "b7c312cd6a9586792c9b15d8e05702c2dfb781b98e86d01c9d0ec42c671abbe3"
+    },
+    {
+      "id": "U024",
+      "doc": "readme/administration-and-setup/settings/document-processing/export.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-export_infor_idm_m3_toml_configuration-de.png",
+      "sha256": "094988637c821d7bcfbec452e5c39edd8f40b2bbde2866b6f54117e2469488a2",
+      "caption": "Deutsches Exportformular für Infor IDM + M3 (TOML) mit TOML-Zuordnungsdatei.",
+      "old_source_sha256": "03dfb46e7a1fc593b20dafcc6506d517eb6778a7a015fc4f0b7fd49f636c08ad"
+    },
+    {
+      "id": "U025",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "3e9f5855f6411d7aea92c05eab7913fd89529fe8",
+      "original_references": [
+        "document-types-overview-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-document-types-overview-de.png",
+      "sha256": "446149051444ae71c2d6bf417e26a320c4bd4c7373b9eeeb0d774b595327ea20",
+      "caption": "Deutsche Standard-Dokumenttypen mit Aktivieren, Layouts, Feldern und Tabellen. Extraction ist ein fester Produktbegriff.",
+      "old_source_sha256": "df7dc164238c222ae6df3d2e20a281bb51e15616921ad70fa029cbfee4498620"
+    },
+    {
+      "id": "U026",
+      "doc": "readme/administration-and-setup/setup/document-types/README.md",
+      "action": "replace",
+      "old_blob": "b92b2de1e2e71cce7175e757f9b737af04d67153",
+      "original_references": [
+        "document-types-custom-new-en-20260928.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-document-types-custom-new-de.png",
+      "sha256": "a2c6d7e09423f4a2400f18065c3c223c0f1812e5233c2e2c3d30791bcfeb1af4",
+      "caption": "Erster Schritt Neue Dokumentart erstellen mit Name, Beschreibung, Tabelle verfügbar und Weiter.",
+      "old_source_sha256": "677e09f8fb616f0a078b12bf0e5495bf6983c6129bc7f76a5eed45940109304e"
+    },
+    {
+      "id": "U027",
+      "doc": "readme/administration-and-setup/workflow/test-manager.md",
+      "action": "replace",
+      "old_blob": "4147771e443b84e311b51802544f5daac5a44aec",
+      "original_references": [
+        "workflow_test_manager_detail.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-workflow-test-manager-detail-de.png",
+      "sha256": "617c1fa2387e1df6fffbda0d5a9f220cabe434f92c7445f341b31bca1060a824",
+      "caption": "Deutsche Details zum Workflow-Testszenario. Szenarioname, Workflow, Ergebniswerte und Dokumentdaten sind ausgeblendet.",
+      "old_source_sha256": "d254c42eb7adc5323c8800fa3db4ac850a99f16939d93581b02b7462ab688e33"
+    },
+    {
+      "id": "U028",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "c1d3c2a94db7f13d7748180c8f4d98ed3007e359",
+      "original_references": [
+        "quick_search_02_filename_starts.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-quick_search_02_filename_starts-de.png",
+      "sha256": "e5084ec7d793d42606a45d0efbf599e42176b5152dc1e66710ca46b26b931833",
+      "caption": "Suche filename = invoice mit deutschen Tabellenüberschriften. Dieses Beispiel hat keine Treffer.",
+      "old_source_sha256": "9f4fa422c23ea3aa317f6d998d4c1391d6e535df28d20ede8abb847a834f2708"
+    },
+    {
+      "id": "U029",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": "8e8399d8889188fa225e7e8e44f3c31b8d5fb8c9",
+      "original_references": [
+        "quick_search_16_grouping.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-quick_search_16_grouping-de.png",
+      "sha256": "12afa0c805b740808ad11a58d42d4365d95dd6df9a2c331351ac5ef2299da347",
+      "caption": "Gruppieren nach Lieferantenname in der deutschen Oberfläche. Lieferantendaten und Tabellenwerte sind ausgeblendet.",
+      "old_source_sha256": "470a051ac2071ea709ed7dc91a16801b3adb5e4f09c81c309bc4930a606522a9"
+    },
+    {
+      "id": "U030",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/quick-search.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-quick_search_11_smart_filters-de.png",
+      "sha256": "7ec68987ca6407975d1fa86b77d7bff3b7da34e0c9dcd8ef3fa7298bc84dd521",
+      "caption": "Deutsche Schnellfilter im Menü der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen.",
+      "old_source_sha256": "de1ec5ab950818b57c1da91f7de1f262512616a38dc5e9dac02d7aae99bc9e18"
+    },
+    {
+      "id": "U031",
+      "doc": "readme/end-user-and-partner-section/end-user-section/user-configuration-options.md",
+      "action": "replace",
+      "old_blob": "83e0469136b2c09056298e383ba0d2ec6315a26d",
+      "original_references": [
+        "user_config_options_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-user_config_options_2-de.png",
+      "sha256": "5703403142e42f1a67d9b6c575ac6c7d07ff088a948509063d3e3d08da353fe3",
+      "caption": "Deutsches Benutzermenü mit Sprache, Dunkelmodus, Einstellungen und Abmelden. Kontoname und Initialen sind ausgeblendet.",
+      "old_source_sha256": "7408db983a69b490986240ae50a5aa2b8c7d308a11a288c59e310d9a5711871b"
+    },
+    {
+      "id": "U032",
+      "doc": "readme/administration-and-setup/workflow/workflow-dashboard.md",
+      "action": "replace",
+      "old_blob": "71ecf4fcc3f27f3e658a6469943d66becf582cb3",
+      "original_references": [
+        "workflow_test_manager.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-workflow_test_manager-de.png",
+      "sha256": "3c6524882e017e7aee6438245a95ff64dc6efa1b167ab338ddc3cf3f228c5c03",
+      "caption": "Deutsche Testmanagerliste mit Alle Tests ausführen und Testszenario hinzufügen. Szenariodaten sind ausgeblendet; Actions bleibt ein Produktbegriff.",
+      "old_source_sha256": "c4aabb0a45444b07ecf62d37519185dc5d52269993415413cbb66ad3c8919456"
+    },
+    {
+      "id": "U033",
+      "doc": "readme/administration-and-setup/workflow/standard-workflow-builder.md",
+      "action": "replace",
+      "old_blob": "e03d935c4ca6f76217e406a6b320b46306166ee5",
+      "original_references": [
+        "workflow_list.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-workflow_list-de.png",
+      "sha256": "b9c33790ad4d3f9f1f5c976c642ec19f0a9dd1b5988bcace5a4909677c2d87f3",
+      "caption": "Deutsche Workflow-Liste mit Suche, Typ und Workflow-Ausführungsreihenfolge. Konfigurierte Workflowdaten sind ausgeblendet.",
+      "old_source_sha256": "35f4d4d89654bfb1130470524765071363ccc3bc0a0c6753be34e98dc4a1c012"
+    },
+    {
+      "id": "U034",
+      "doc": "readme/administration-and-setup/workflow/advanced-workflow-builder.md",
+      "action": "replace",
+      "old_blob": "def1766fe506cd28e275fefb9e97accfaa554b27",
+      "original_references": [
+        "workflow_advanced_add_menu.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-workflow_advanced_add_menu-de.png",
+      "sha256": "0cd24a3612e38403289ff7133a8faa7345c5be47a57e10f349fb1cbd68903992",
+      "caption": "Deutsches Hinzufügen-Menü des Advanced Workflow Builders mit Wenn, Und, Dann, Warten und Notiz.",
+      "old_source_sha256": "478f02cc5486dd3aeb06d45c257672c3ae18d959b740725d4729ad9f53b01321"
+    },
+    {
+      "id": "U035",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "5674879ca781360e2f3ae5c17dd6b26808f0c027",
+      "original_references": [
+        "and-category-po-comparison-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-72e8f3204ac8-de.png",
+      "sha256": "d4cb9aa5b280a12f8a7fc2d14bdd00c4db9a41d5d298381afa1e11443eaa694a",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "735c73e42b1909fbd067d1e14cffd53ee0d8294c191d4603db3587da78d9bf43"
+    },
+    {
+      "id": "U036",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "2c4de967e24975ce63c579a45aa1a39c265358db",
+      "original_references": [
+        "and-category-document-field-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-833c7249ffc8-de.png",
+      "sha256": "0ba42670c1662b9d8b926f3d71ea0c0dcbfa7824e52e8af0bb156f3f820415cc",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "8f1cd6ddc4e80f5517b16cd07c63abdb32b73a51f9eaf6d5c83840327bc2bdc9"
+    },
+    {
+      "id": "U037",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "29d42329ba34ce316ec990d9d8a1e895f3d86b2e",
+      "original_references": [
+        "and-category-date-time-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-1ee68574d713-de.png",
+      "sha256": "5b12c4a28f4833928c9adbe8164c46542e3d3a50bc5219db0b7d2abcef2ea0dd",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "c42fdf5351c66fd9a91892443fede3f98a2fbb3bbc7ceefa8cb0199680c369a4"
+    },
+    {
+      "id": "U038",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "8a00856629a2950551c057566c67f5c3df60bb08",
+      "original_references": [
+        "and-category-document-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-3c1a15fa2e11-de.png",
+      "sha256": "b2aa5e4f347d67a86fa5e514c21482704373889f87a06a173b95b107dc4de650",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "589d563bea875cde1267abc73c95b6670e7f4902925d66fbdd34415efc3426da"
+    },
+    {
+      "id": "U039",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "be91b58b75afb6dccbe385817ab07ca9eb62fa29",
+      "original_references": [
+        "and-category-logic-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-6b17199fc268-de.png",
+      "sha256": "134f5ee8f1a6d62094c440eb4555ab4e85623d0c7f5eac223e56d5c3f76e15b9",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "1ab66e5e133d0278b8607d43f1fb05462bf40235b5aaf8d5f9ecfbad8ff812e9"
+    },
+    {
+      "id": "U040",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "40b7c30e451752ad64b564629211f2ce7b0a4e9c",
+      "original_references": [
+        "and-category-status-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-ff11a606e5a1-de.png",
+      "sha256": "3a774fd3556ec01745a69b4d8fef5b1418cb91384753d82e563508aa22fd87af",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "e5b1b7b0fb50f4ae1381979f4ba86ac64314e4ee6ce993bf3f2a0c2842c097b0"
+    },
+    {
+      "id": "U041",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "95de9cc2dc1b7ec761c97125ce7579bc335fe57b",
+      "original_references": [
+        "and-category-table-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-526dc164847b-de.png",
+      "sha256": "05e309ec9203620452919d84ab1ee2f39efcaac15812503abc884a6d5cfa7bf8",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "3f015bd7c6b52ed53cc8ef43ab693ff37601a1c655fa3047c2edd14cb8fa2b6c"
+    },
+    {
+      "id": "U042",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "5372750e89e6a8b012ed7f64643dadf42e849815",
+      "original_references": [
+        "and-category-quote-price-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-4a7af1d99c73-de.png",
+      "sha256": "cf4df2b6c73b11e54ff8dbc677ded29c640795f810e62085ce9c3bea0942c399",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "4c4a90834f6a556c92fe9727c488377e0cb3ad5c76e224778bd414fadf34d33c"
+    },
+    {
+      "id": "U043",
+      "doc": "readme/administration-and-setup/workflow/and/README.md",
+      "action": "replace",
+      "old_blob": "8fb39d3833dfdf3d49ddd7096962d6a847029941",
+      "original_references": [
+        "and-category-assignee-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "preserved_concurrent_native_workflow_QA",
+      "new": "workflow-card-qa-20261021-category-08cbb6fd429c-de.png",
+      "sha256": "d7fc712e087fe4ca4d21b4e1c61cb566b838020f3c24edd71b9797fd3b2f80c6",
+      "caption": "Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.",
+      "capture_source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+      "old_source_sha256": "2a5eea6b0529b3de5755ed343eb5ba45ea3b579a81b848bc5f1eb508080f49f8"
+    },
+    {
+      "id": "U044",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "replace",
+      "old_blob": "ff08a56aa625366824b7fd015bf91a67abfb0bbf",
+      "original_references": [
+        "consumed-po-line-document-types-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-consumed-po-line-document-types-de.png",
+      "sha256": "f91e404d04a0f53ae2e53d63f8b80ab7aa531e8917c43dc1df52464d812145d1",
+      "caption": "Deutsche Dokumenttypenübersicht. Über das Zahnrad der Rechnung öffnen Sie die weiteren Einstellungen.",
+      "old_source_sha256": "68106a63326bad20449ad1b98a7ee32b22161510adc6962b257114582a32746b"
+    },
+    {
+      "id": "U045",
+      "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md",
+      "action": "replace",
+      "old_blob": "edbe3c3f367809c4a41422e27bb5859bb2b18deb",
+      "original_references": [
+        "consumed-po-line-settings-en.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-consumed-po-line-settings-de.png",
+      "sha256": "d90d994d07a8973340d3caf2dfbce6f63b1f117a784d41af4cad31a0923fc1ec",
+      "caption": "Deutsche Bestelleinstellungen mit Status der verbrauchten Bestellposition. Die Schalter zeigen den vorgefundenen Zustand.",
+      "old_source_sha256": "57a7160b65f01729aae4562e227eb2681cc20f6f0da999f5bf307884213f737e"
+    },
+    {
+      "id": "U046",
+      "doc": "readme/administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md",
+      "action": "replace",
+      "old_blob": "9b208cde2f6bf27e1692404be72ce4f60f1493b0",
+      "original_references": [
+        "users_settings.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-users_settings-de.png",
+      "sha256": "b26b4d9e0b04dcc3e56c7b06edc4f91fc1056e9fbe7fd541c800a223918bcad6",
+      "caption": "Deutsche Benutzerverwaltung. Namen, E-Mail-Adressen und weitere Personenwerte sind ausgeblendet.",
+      "old_source_sha256": "f7d5f4d4127ece691483aed4728e023b887a5462f7421d968b30ec2145fd5472"
+    },
+    {
+      "id": "U047",
+      "doc": "readme/security/two-factor-authentication.md",
+      "action": "replace",
+      "old_blob": "cb309224b86e2bf441e0cb5a36e65e153e953a68",
+      "original_references": [
+        "mfa-2fa-dialog.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-mfa-2fa-dialog-de.png",
+      "sha256": "5ab0d7bca42d1ca3d4800b0aba7d986cf9443eee3487454b3bb7b71c0fb3446a",
+      "caption": "Deutscher 2FA-Dialog vor der Einrichtung. Es wurde keine Authentifizierungsmethode aktiviert.",
+      "old_source_sha256": "fb1af46c05f21ec1d0e8778e6d029faf0fb4f8897d3f1b3d1f1782784ec73047"
+    },
+    {
+      "id": "U048",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "33cee82ed2d7ea5a4a8c662831bb7e697e49b4d9",
+      "original_references": [
+        "fulltext-search-settings-page.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-fulltext-search-settings-page-de.png",
+      "sha256": "dac5865b9b2f4bf2ec8a1cd063b926f62365d1f6b379aebcbfcfa10ab333b043",
+      "caption": "Volltexteinstellungen bei deutscher UI-Sprache. Dokumentenindizierung und Abdeckung sind übersetzt; einzelne Statusmeldungen und Wartungsaktionen bleiben englisch.",
+      "old_source_sha256": "873a5188cfb4f781b2838d59e5fb77f9419b60aa375c4f6b57e3d51baa35193f"
+    },
+    {
+      "id": "U049",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "8dd964ab7d9de0e342ca03e2e95f69612f074841",
+      "original_references": [
+        "fulltext-search-dashboard-query.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-fulltext-search-dashboard-query-de.png",
+      "sha256": "5f8b04356051986e20075ad59498ca3a7cbdcfc78d3458a1793ef7f499545dad",
+      "caption": "Abfrage total_amount > 1000 mit deutschen Tabellenüberschriften. Dokumentwerte sind ausgeblendet.",
+      "old_source_sha256": "067a5e5b5896b257c6dc4fd2cdd9686c831ad18e25397987852dab63e769e76d"
+    },
+    {
+      "id": "U050",
+      "doc": "readme/administration-and-setup/settings/document-processing/module/fulltext-search.md",
+      "action": "replace",
+      "old_blob": "2b318378b05da8897b253a17d9ac80fad7bfc801",
+      "original_references": [
+        "fulltext-search-module-toggle.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "s50-fulltext-search-module-toggle-de.png",
+      "sha256": "65a66c957d25e6fc9dafeb5b9c78652d1b6ee003fda9f1c4492f528bec5478a6",
+      "caption": "Deutsche Dashboard-Konfiguration mit dem Schalter Volltextsuche. Es wurde kein Modulschalter verändert.",
+      "old_source_sha256": "afeef1499adcb08083f83375a26e3df18315475a081d9a98fdd548c240117f5b"
+    },
+    {
+      "id": "I001",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/README.md",
+      "action": "replace",
+      "old_blob": "f0dd18856a640b509b1c4989b19d42f26e3ad0d6",
+      "original_references": [
+        "company_information.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "company_information-de.png",
+      "sha256": "7104a6df58833b6128b607fa7738b16b1be11956db354047654488f10faca9f9",
+      "caption": "Deutschsprachiges Formular „Unternehmensinformationen“; Organisations- und Kontaktdaten ausgeblendet",
+      "old_source_sha256": null
+    },
+    {
+      "id": "I002",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/README.md",
+      "action": "replace",
+      "old_blob": "a8f2a8bc3af902e22cd6e81e213877fa25b2a6c7",
+      "original_references": [
+        "company_email_domains-de.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "company_email_domains-de.png",
+      "sha256": "f0d44a5cfb9091e2cc56221f07e8b868c6a10251a9df00610e526e42ee5c4d4b",
+      "caption": "Aufgeklappter Abschnitt „E-Mail-Domains“ mit leerer Domänenliste, Eingabefeld und Schaltfläche „Domain hinzufügen“",
+      "old_source_sha256": null
+    },
+    {
+      "id": "I003",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md",
+      "action": "replace",
+      "old_blob": "86da015b5790bcb664c3b9588925619d00da1ea7",
+      "original_references": [
+        "company_preferences_1.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "company_preferences-de.png",
+      "sha256": "e0d3279284a894ed254da66bec869ace0a10f5bdd70e7d77b10e1b8d37ca9a8f",
+      "caption": "Deutsche Unternehmenspräferenzen mit Datum Muster, Betragsformatierung und Speichern",
+      "old_source_sha256": null
+    },
+    {
+      "id": "I004",
+      "doc": "readme/administration-and-setup/settings/global-settings/company-information/company-preferences.md",
+      "action": "replace",
+      "old_blob": "baed6c83af23be2a24b108e2125c69146bda6838",
+      "original_references": [
+        "company_preferences_2.png"
+      ],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "company_date_pattern-de.png",
+      "sha256": "9bf4b244f921b8678f6e744e97cd46e3b33de7803f908a5b97d04d19325f9495",
+      "caption": "Geöffnete Auswahl Datum Muster mit den verfügbaren Datumsformaten",
+      "old_source_sha256": null
+    },
+    {
+      "id": "I005",
+      "doc": "readme/end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md",
+      "action": "replace",
+      "old_blob": null,
+      "original_references": [],
+      "retired_aliases": 0,
+      "mapping": "consolidated_prior_verified_rounds",
+      "new": "dashboard_filters-de.png",
+      "sha256": "9729f00d17d5ede55486eb3858a623ae7b5fbd9a0d38bb51218bbbe154507e18",
+      "caption": "Deutscher Filterdialog mit Status, Zugewiesen An, Neustart Erforderlich, Filter löschen und Anwenden",
+      "old_source_sha256": null
+    }
+  ],
+  "additional_native_image_reuses": 2,
+  "preserved_upstream_native_captures": {
+    "count": 9,
+    "source_commit": "a8be23bf9743fe8171f7d4893eca844de51a2526",
+    "note": "Unchanged current upstream native screenshots were retained, visually reviewed and OCR-checked; they are not claimed as new captures from this followup."
+  }
+}

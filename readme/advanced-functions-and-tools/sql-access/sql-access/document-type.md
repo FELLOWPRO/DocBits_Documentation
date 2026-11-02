@@ -1,15 +1,15 @@
-# Document type
+# Dokumenttyp
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `document_key`: internal
-* `document_name`: internal
-* `title`: internal
-* `translation_key`: internal
-* `extraction_type`: internal
-* `document_type_category`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `document_key`: intern
+* `document_name`: intern
+* `title`: intern
+* `translation_key`: intern
+* `extraction_type`: intern
+* `document_type_category`: intern
 * `has_table`: boolean
 * `sort_order`: integer
 * `created_by`: integer

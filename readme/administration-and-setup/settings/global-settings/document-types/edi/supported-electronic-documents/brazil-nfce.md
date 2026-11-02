@@ -30,7 +30,7 @@ NFC-e (Nota Fiscal de Consumidor Eletrônica, `<mod>65</mod>`) ist die brasilian
 
 ## Standard-Vorschau
 
-<figure><img src="brazil-nfce-preview.png" alt="Brazil NFC-e Vorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für ein BRAZIL NFC-E Dokument</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfce-preview.png" alt="Brazil NFC-e Vorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für ein BRAZIL NFC-E Dokument</p></figcaption></figure>
 
 ## Feldzuordnung
 

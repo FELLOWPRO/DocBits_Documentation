@@ -1,4 +1,4 @@
-# Fulltext & Vector Search Funktionen
+# Funktionen für Volltext- und Vektorsuche
 
 {% hint style="info" %}
 **Verfügbar ab Version 11.48.0**

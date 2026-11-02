@@ -18,7 +18,7 @@ Eine Spalte mit demselben technischen Namen ist bereits in der Tabelle vorhanden
 
 ## Die Freigabe ist durch eine erforderliche Spalte blockiert
 
-Die Meldung an der Tabelle nennt die Spalte. Füllen Sie entweder die Zelle in jeder Zeile, oder (wenn der Wert auf diesem Dokument nicht existiert) deaktivieren Sie *Is Required* für die Spalte, starten Sie das Dokument neu und versuchen Sie es erneut. Überlegen Sie, ob die Spalte überhaupt erforderlich sein sollte (siehe [Best Practices](best-practices-2.md)).
+Die Meldung an der Tabelle nennt die Spalte. Füllen Sie entweder die Zelle in jeder Zeile, oder (wenn der Wert auf diesem Dokument nicht existiert) deaktivieren Sie *Is Required* für die Spalte, starten Sie das Dokument neu und versuchen Sie es erneut. Überlegen Sie, ob die Spalte überhaupt erforderlich sein sollte (siehe [Bewährte Vorgehensweisen](best-practices-2.md)).
 
 ## Die KI füllt eine Spalte mit dem falschen Wert
 
@@ -38,5 +38,5 @@ Das Skript oder Export-Mapping verweist noch auf den gelöschten *Column name*. 
 
 ## Wo Sie weiter suchen können
 
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): Extraktionsqualität, OCR, E-Text
-* [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md)
+* [Fehlerbehebung bei der Tabellenextraktion](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): Extraktionsqualität, OCR, E-Text
+* [Positionsfelder und Tabellen trainieren](../../../../setup/document-training/training-line-fields-table-training/README.md)

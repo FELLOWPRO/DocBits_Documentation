@@ -9,7 +9,7 @@ Willkommen auf der FAQ-Seite! Unten finden Sie Links zu verschiedenen Kategorien
 Für häufig gestellte Fragen und Anleitungen zur Funktionsweise von DocBits, zur Einrichtung Ihres Kontos und grundlegenden Problembehebungstipps.
 
 {% content-ref url="general-information.md" %}
-[general-information.md](general-information.md)
+[Allgemeine Informationen](general-information.md)
 {% endcontent-ref %}
 
 ## **2. Dokumentenverarbeitung**

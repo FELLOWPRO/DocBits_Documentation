@@ -1,13 +1,13 @@
-# Sub Organisation Cache
+# Unterorganisationscache
 
 ## Tabelle `public.sub_organisation_cache`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `name`: internal
-* `description`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `name`: intern
+* `description`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone

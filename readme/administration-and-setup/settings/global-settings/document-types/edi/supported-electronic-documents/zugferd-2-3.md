@@ -12,8 +12,8 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 
 | Eigenschaft | Wert |
 |---|---|
-| **Land / Region** | Germany |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Deutschland |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | CII (PDF/A-3 eingebettet) |
 | **Standard** | ZUGFeRD 2.3 |
 | **Basiert auf** | EN 16931 |
@@ -24,9 +24,9 @@ ZUGFeRD 2.3, veröffentlicht im September 2024, entspricht Factur-X 1.0.07. Es a
 
 | Komponente | Status |
 | ---------- | ------ |
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
@@ -35,5 +35,5 @@ ZUGFeRD 2.3, veröffentlicht im September 2024, entspricht Factur-X 1.0.07. Es a
 ## Verwandte Seiten
 
 * [ZUGFeRD-Konfiguration](../zugferd/)
-* [ZUGFeRD-Feldzuordnung](../zugferd/versions/)
+* [ZUGFeRD-Feldzuordnung](../zugferd/README.md)
 * [Unterstützte elektronische Dokumente](./)

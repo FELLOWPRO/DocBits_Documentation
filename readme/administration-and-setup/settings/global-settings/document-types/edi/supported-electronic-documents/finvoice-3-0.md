@@ -33,4 +33,4 @@ Finvoice 3.0 ist die aktuelle Version des finnischen E-Rechnungsstandards. Sie f
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

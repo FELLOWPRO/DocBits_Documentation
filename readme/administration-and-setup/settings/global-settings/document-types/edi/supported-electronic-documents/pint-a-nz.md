@@ -30,7 +30,7 @@ PINT A-NZ (Peppol International Model for Australia-New Zealand) ist die lokalis
 
 ## Standardvorschau
 
-<figure><img src="aunz-pint-preview.png" alt="PINT A-NZ Rechnungsvorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine PINT A-NZ-Rechnung</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="PINT A-NZ Rechnungsvorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine PINT A-NZ-Rechnung</p></figcaption></figure>
 
 ## Feldzuordnung
 

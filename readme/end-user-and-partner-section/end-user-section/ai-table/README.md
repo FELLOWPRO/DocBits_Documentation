@@ -247,5 +247,5 @@ Die KI errät diese Spalte dann aus der gesamten Zeile. Setzt sie dort durchgehe
 ## Verwandte Seiten
 
 * [KI-Tabellen-Tags und Anweisungen](ai-table-tags.md)
-* [Training Line Fields/Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)
+* [Positionsfelder und Tabellen trainieren](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)
 * [Touchless Intelligence](../../../administration-and-setup/touchless-intelligence.md)

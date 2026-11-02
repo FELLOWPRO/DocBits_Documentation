@@ -12,8 +12,8 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 
 | Eigenschaft | Wert |
 |---|---|
-| **Land / Region** | Germany |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Deutschland |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | CII (PDF/A-3 eingebettet) |
 | **Standard** | ZUGFeRD 1.0 |
 | **Basiert auf** | ZUGFeRD 1.0 Spezifikation |
@@ -24,9 +24,9 @@ ZUGFeRD 1.0 war der ursprüngliche deutsche Hybrid-Rechnungsstandard und wurde 2
 
 | Komponente | Status |
 | ---------- | ------ |
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
@@ -35,5 +35,5 @@ ZUGFeRD 1.0 war der ursprüngliche deutsche Hybrid-Rechnungsstandard und wurde 2
 ## Verwandte Seiten
 
 * [ZUGFeRD-Konfiguration](../zugferd/)
-* [ZUGFeRD-Feldzuordnung](../zugferd/versions/)
+* [ZUGFeRD-Feldzuordnung](../zugferd/README.md)
 * [Unterstützte elektronische Dokumente](./)

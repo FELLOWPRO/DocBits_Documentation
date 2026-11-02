@@ -33,4 +33,4 @@ Facturae 3.2 ist eine weit verbreitete Version des spanischen E-Rechnungsstandar
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)

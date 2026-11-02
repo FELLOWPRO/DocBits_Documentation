@@ -1,4 +1,4 @@
-# Troubleshooting Common Issues
+# Häufige Probleme beheben
 
 Hier finden Sie Schritte zur Fehlerbehebung bei häufigen Problemen während der Integration von DocBits mit einem Identity Service Provider (IdP) oder anderen Diensten:
 

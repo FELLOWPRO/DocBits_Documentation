@@ -12,8 +12,8 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 
 | Eigenschaft | Wert |
 |---|---|
-| **Land / Region** | Saudi Arabia |
-| **Dokumenttypen** | Standard Tax Invoice |
+| **Land / Region** | Saudi-Arabien |
+| **Dokumenttypen** | Standard-Steuerrechnung |
 | **Format** | UBL 2.1 XML |
 | **Standard** | ZATCA Standard Tax Invoice |
 
@@ -23,9 +23,9 @@ Die ZATCA Tax Invoice ist das standardmäßige B2B-Steuerrechnungsformat im saud
 
 | Komponente | Status |
 | ---------- | ------ |
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 

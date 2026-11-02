@@ -1,5 +1,13 @@
 # Validierungsbildschirm
 
+## Rechnung als Prüfer korrigieren und speichern
+
+Vergleichen Sie die Originalrechnung mit den Feldern und drei Positionen, korrigieren Sie die Rechnungsnummer und prüfen Sie den gespeicherten Wert nach dem Neuladen. Die Aufnahme verwendet eine synthetische elektronische Rechnung und ein normales Prüferkonto. Diese Korrektur zu speichern ist getrennt von Extraktionstraining, Freigabe und Export.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/de.mp4" %}
+
+[Mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-validation-customer/v1/de.html)
+
 ## Eine Rechnung prüfen und abschließen
 
 Prüfe eine Rechnung vom Dashboard bis zur Übergabe: Vergleiche Lieferant, Datum, Rechnungsnummer, Beträge und Währung mit dem Original und lies einen Pflichtfeldhinweis. Übernimm die Rechnungsnummer direkt aus dem Beleg, bestätige die Zuordnung und speichere die Extraktionsregel mit **Save Rules**. Im Beispiel wird die geprüfte Rechnung anschließend zur Freigabe weitergegeben. Die verfügbaren Aktionen hängen von deinen Berechtigungen und deinem Ablauf ab.

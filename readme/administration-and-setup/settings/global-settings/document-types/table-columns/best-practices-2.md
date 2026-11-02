@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Standardspalten für Beträge und Mengen beibehalten
 

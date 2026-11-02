@@ -18,7 +18,7 @@ Wenn Sie Ihren ersten Faktor aktivieren, stellt DocBits Ihnen außerdem **zehn B
 
 Öffnen Sie Ihre **Profil-/Kontoeinstellungen** (Kontomenü oben rechts → **Profil bearbeiten**) und wählen Sie **Zwei-Faktor-Authentifizierung**. Der 2FA-Dialog zeigt Ihren aktuellen Status und die Methoden an, die Sie hinzufügen können.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>Der Dialog Zwei-Faktor-Authentifizierung. Von hier aus können Sie eine Authenticator-App oder die E-Mail-Verifizierung aktivieren, einen Passkey hinzufügen oder <strong>Verwalten</strong> öffnen.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/s50-mfa-2fa-dialog-de.png" alt="Deutscher 2FA-Dialog vor der Einrichtung. Es wurde keine Authentifizierungsmethode aktiviert."><figcaption><p>Deutscher 2FA-Dialog vor der Einrichtung. Es wurde keine Authentifizierungsmethode aktiviert.</p></figcaption></figure>
 
 ## Authenticator-App einrichten (TOTP)
 
@@ -26,8 +26,6 @@ Wenn Sie Ihren ersten Faktor aktivieren, stellt DocBits Ihnen außerdem **zehn B
 2. Scannen Sie den QR-Code mit Ihrer Authenticator-App (Google Authenticator, 1Password, Authy, …). Wenn Sie nicht scannen können, verwenden Sie den **manuellen Schlüssel**, der unterhalb des QR-Codes angezeigt wird.
 3. Geben Sie den 6-stelligen Code ein, den Ihre App anzeigt, und bestätigen Sie.
 4. DocBits aktiviert die 2FA und zeigt Ihre **Backup-Codes** an (siehe unten).
-
-<figure><img src="../.gitbook/assets/mfa-totp-setup.png" alt="The authenticator-app setup screen with QR code"><figcaption><p>Scannen Sie den QR-Code mit Ihrer Authenticator-App oder geben Sie den manuellen Schlüssel ein. Bestätigen Sie anschließend mit dem 6-stelligen Code, den die App anzeigt.</p></figcaption></figure>
 
 ## E-Mail-Verifizierung einrichten
 
@@ -48,8 +46,6 @@ Wenn Sie Ihren **ersten** Faktor aktivieren, zeigt DocBits **zehn Backup-Codes**
 * Bewahren Sie sie an einem sicheren Ort auf (ein Passwort-Manager ist ideal).
 * Sie können jederzeit einen neuen Satz mit **Backup-Codes neu generieren** erstellen (dadurch wird der alte Satz ungültig).
 
-<figure><img src="../.gitbook/assets/mfa-backup-codes.png" alt="The backup codes screen"><figcaption><p>Ihre zehn Backup-Codes, einmalig angezeigt. Jeder funktioniert nur ein einziges Mal — bewahren Sie sie an einem sicheren Ort auf.</p></figcaption></figure>
-
 {% hint style="warning" %}
 Backup-Codes werden nur im Moment ihrer Erstellung angezeigt. DocBits kann sie nicht erneut anzeigen — speichern Sie sie sofort.
 {% endhint %}
@@ -58,21 +54,18 @@ Backup-Codes werden nur im Moment ihrer Erstellung angezeigt. DocBits kann sie n
 
 1. Geben Sie wie gewohnt Ihre E-Mail-Adresse und Ihr Passwort ein.
 
-    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Der Anmeldebildschirm. Sie können sich auch ohne Passwort über <strong>Mit Passkey anmelden</strong> anmelden.</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/mfa-login.png" alt="Der DocBits-Anmeldebildschirm"><figcaption><p>Der Anmeldebildschirm. Sie können sich auch ohne Passwort über <strong>Mit Passkey anmelden</strong> anmelden.</p></figcaption></figure>
 2. DocBits fragt nach Ihrem zweiten Faktor. Wählen Sie Ihre Methode:
-   * **Authenticator** — geben Sie den aktuellen 6-stelligen Code aus Ihrer App ein.
+   * **Authentifikator** — geben Sie den aktuellen 6-stelligen Code aus Ihrer App ein.
    * **E-Mail** — klicken Sie auf **Code per E-Mail senden**, um einen Code per E-Mail zu erhalten, und geben Sie ihn dann ein.
    * **Passkey** — klicken Sie auf **Passkey verwenden** und bestätigen Sie mit Touch ID / Windows Hello / Ihrem Schlüssel.
    * **Backup-Code** — falls Sie Ihre übliche Methode nicht verwenden können.
 
-    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Nach Ihrem Passwort fragt DocBits nach Ihrem zweiten Faktor. Wechseln Sie die Methode mit <strong>Passkey verwenden</strong> oder <strong>Code per E-Mail senden</strong> und stufen Sie das Gerät optional für 30 Tage als vertrauenswürdig ein.</p></figcaption></figure>
 3. Bei Erfolg sind Sie angemeldet.
 
 ### Wie der E-Mail-Code aussieht
 
 Wenn Sie **E-Mail** wählen, sendet DocBits eine Nachricht mit einem 6-stelligen Code, der nach 10 Minuten abläuft:
-
-<figure><img src="../.gitbook/assets/mfa-email-otp.png" alt="The DocBits verification-code email"><figcaption><p>Die E-Mail mit dem Verifizierungscode. Der Code läuft nach 10 Minuten ab und kann einmal verwendet werden.</p></figcaption></figure>
 
 ## Diesem Gerät vertrauen
 
@@ -84,8 +77,6 @@ Auf dem Bildschirm für den zweiten Faktor können Sie **Dieses Gerät merken** 
 
 * **Passkeys** — benennen Sie einen Passkey um (klicken Sie auf seinen Namen) oder löschen Sie ihn. Das Löschen Ihres letzten verbleibenden Faktors deaktiviert die 2FA.
 * **Vertrauenswürdige Geräte** — widerrufen Sie ein einzelnes Gerät oder verwenden Sie **Alle Geräte widerrufen**, um überall eine erneute 2FA-Abfrage zu erzwingen.
-
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>Die Verwaltungsansicht listet Ihre eingerichteten Passkeys und vertrauenswürdigen Geräte auf, wo Sie sie umbenennen oder entfernen können.</p></figcaption></figure>
 
 ## 2FA deaktivieren
 

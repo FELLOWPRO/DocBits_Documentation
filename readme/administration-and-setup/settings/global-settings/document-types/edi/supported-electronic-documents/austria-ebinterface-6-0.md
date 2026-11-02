@@ -12,8 +12,8 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 
 | Eigenschaft | Wert |
 |-------------|------|
-| **Land / Region** | Austria |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Österreich |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | XML |
 | **Standard** | ebInterface 6.0 |
 | **Locale** | `de_AT` |
@@ -24,13 +24,13 @@ ebInterface 6.0 führte die Angleichung an den europäischen Standard EN 16931 e
 
 | Komponente | Status |
 |------------|--------|
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
-<figure><img src="austria-ebinterface-preview.png" alt="Austria ebInterface 6.0 Rechnungsvorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine AUSTRIA EBINTERFACE 6.0-Rechnung</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Austria ebInterface 6.0 Rechnungsvorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine AUSTRIA EBINTERFACE 6.0-Rechnung</p></figcaption></figure>
 
 ## Feldzuordnung
 

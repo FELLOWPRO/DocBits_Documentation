@@ -38,7 +38,7 @@ Nachfolgend finden Sie eine Zusammenfassung der besonderen Funktionen und Vortei
    * Ermöglicht die automatische Buchung auf Sachkonten.
    * Erlaubt die Aufteilung von Beträgen nach Abteilung.
    * Unterstützt die Definition von Sachkonten durch das Kreditorenbuchhaltungsteam.
-5. **Integrierte Validierungs- und** [**Freigabeprozesse**](broken-reference)
+5. **Integrierte Validierungs- und** [**Freigabeprozesse**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Bietet integrierte Validierungsprozesse, um die Datengenauigkeit sicherzustellen.
    * Enthält Freigabe-[Workflows](administration-and-setup/workflow/), um die Dokumentenbearbeitung zu optimieren.
 6. **Nahtlose Integration**

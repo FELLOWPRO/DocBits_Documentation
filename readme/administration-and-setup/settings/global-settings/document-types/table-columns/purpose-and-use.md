@@ -32,4 +32,4 @@ Eine Tabellenspalte ist ein Feld der Positionstabelle. Alles, was DocBits mit ei
 
 * [Neue Spalte hinzufügen](adding-a-new-column.md)
 * [Spalten bearbeiten und löschen](editing-and-deleting-columns.md)
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)
+* [Fehlerbehebung bei der Tabellenextraktion](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)

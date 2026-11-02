@@ -1,20 +1,20 @@
-# Fellow kv table column rule
+# Fellow-Regel für Schlüssel-Wert-Tabellenspalten
 
 ## Tabelle `public.fellow_kv_table_column_rule`
 
 ### Spalten
 
-* `id`: internal
-* `docType`: internal
-* `tableName`: internal
-* `dlfName`: internal
+* `id`: intern
+* `docType`: intern
+* `tableName`: intern
+* `dlfName`: intern
 * `multi_line`: boolean
-* `filterID1`: internal
-* `filterID2`: internal
-* `filterID3`: internal
-* `tfidf_doc_id`: internal
-* `tfidf_id`: internal
-* `valuePattern`: internal
+* `filterID1`: intern
+* `filterID2`: intern
+* `filterID3`: intern
+* `tfidf_doc_id`: intern
+* `tfidf_id`: intern
+* `valuePattern`: intern
 * `coordsY0`: integer
 * `coordsY1`: integer
 * `coordsX0`: integer
@@ -25,15 +25,15 @@
 * `normalizedX1`: numeric
 * `width`: integer
 * `height`: integer
-* `patternLeft`: internal
-* `patternRight`: internal
-* `patternAbove`: internal
-* `patternBelow`: internal
-* `wordLeft`: internal
-* `wordAbove`: internal
+* `patternLeft`: intern
+* `patternRight`: intern
+* `patternAbove`: intern
+* `patternBelow`: intern
+* `wordLeft`: intern
+* `wordAbove`: intern
 * `ruleWeight`: integer
 * `user_id`: integer
-* `org_id`: ID to organisation
+* `org_id`: ID der Organisation
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean

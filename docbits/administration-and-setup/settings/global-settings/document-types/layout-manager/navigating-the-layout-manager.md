@@ -8,7 +8,7 @@ Use the **Layout Builder** to arrange the groups and fields that people see on a
 2. Find **Invoice** and select **Layouts** in the row of links under its name.
 3. In the list of layouts, select **Edit** on the layout you want to work on. The Layout Builder opens for that document type.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-en-20261102.png" alt="Settings page Default Document Types with the Invoice card showing its Standard badge, the Activate and Extraction toggles and the links Layouts, Fields, Tables, Validation Rules, Transformation Rules, Scripts, Model Training, E-Doc, Document Sub Types and Logs"><figcaption>Select **Layouts** on the Invoice card.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-en-20261102.png" alt="Settings page Default Document Types with the Invoice card showing its Standard badge, the Activate and Extraction toggles and the links Layouts, Fields, Tables, Validation Rules, Transformation Rules, Scripts, Model Training, E-Doc, Document Sub Types and Logs"><figcaption><p>Select <strong>Layouts</strong> on the Invoice card.</p></figcaption></figure>
 
 The header of the builder shows the name of the layout with a pencil icon to rename it, the **Document Type** and the **Layout type** of the layout.
 

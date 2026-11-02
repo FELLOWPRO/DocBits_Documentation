@@ -1,6 +1,6 @@
 # Condición de grupo asignado único
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_v2-es-es.png" alt="Condición de grupo asignado único, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 **Propósito:**\
 Esta tarjeta de flujo de trabajo ejecuta operaciones en función de si una tarea o documento está asignado a un grupo en particular. Utiliza una condición sencilla para disparar o impedir acciones según la asignación de grupo.

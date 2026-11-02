@@ -1,92 +1,49 @@
-# DocBits Operator
+# Operador de DocBits
 
-## Resumen
+DocBits Operator ejecuta tareas a partir de las instrucciones del usuario. Cada instrucción describe los pasos; las variables aportan los datos necesarios para una ejecución concreta.
 
-El **DocBits Operator** es un asistente de automatización basado en IA, diseñado para simplificar las tareas repetitivas de sus flujos de trabajo. Los usuarios crean _prompts_: instrucciones paso a paso enriquecidas con variables que guían a la IA para navegar, introducir datos y hacer clic en las interfaces de forma automática. Esto reduce el esfuerzo manual y acelera las operaciones rutinarias.
+## Activación y acceso
 
-## Activar el DocBits Operator
+1. Abra **Ajustes → Módulo → Integración de documentos**.
+2. Desplácese hasta **DocBits Operator** y active la función si dispone de los permisos necesarios.
+3. Abra **DocBits Operator** desde la navegación principal de la aplicación.
 
-Para activar el DocBits Operator, siga estos pasos:
+<figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-es.png" alt="Módulos de integración de documentos: scripts, escaneo, extracción de códigos de barras y datos maestros personalizados."><figcaption><p>Módulos de integración de documentos: scripts, escaneo, extracción de códigos de barras y datos maestros personalizados.</p></figcaption></figure>
 
-1. **Vaya a Settings**:
-   * Desde el Dashboard, vaya a **Settings**.
-   *   Seleccione **Document Processing** y, a continuación, elija **Module**.
+## Introducir una instrucción
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="Selección del módulo DocBits Operator"><figcaption></figcaption></figure>
-2. **Active la función**:
-   * Desplácese hacia abajo hasta encontrar la opción **DocBits Operator**.
-   *   Mueva el interruptor para activar el **DocBits Operator**.
+Describa el resultado esperado y los pasos en el campo situado en la parte inferior de la pantalla. Escriba las variables entre llaves, por ejemplo `{invoice_number}` o `{url}`. El engranaje abre la ventana para definir sus nombres y valores.
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="Interruptor de activación del DocBits Operator" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/site-extra-docbits-operator-es.png" alt="Pantalla inicial real de DocBits Operator en español, con el campo para introducir una instrucción. No se envió ni ejecutó ninguna instrucción."><figcaption><p>Pantalla inicial real de DocBits Operator en español, con el campo para introducir una instrucción. No se envió ni ejecutó ninguna instrucción.</p></figcaption></figure>
 
-## Acceder a la interfaz
+La flecha inicia la ejecución. El icono de descarga abre el diálogo para guardar la instrucción, y la papelera borra la conversación. Abrir el diálogo no guarda ninguna plantilla.
 
-* Una vez activada la función, abra el **DocBits Operator** desde el menú de navegación principal.
+Consulte los ejemplos de la [guía para escribir instrucciones](prompt-writing-guide.md).
 
-### **1. Entrada del prompt**
+## Guardar una instrucción
 
-En la parte inferior de la pantalla hay un campo de entrada con la etiqueta _“Enter your prompt here…”_. Aquí es donde los usuarios escriben las instrucciones que debe seguir el operador.
+El diálogo se titula **Guardar aviso** en la versión mostrada; aquí «aviso» se refiere a una instrucción o prompt. Introduzca su nombre en **Nombre del mensaje**. La opción de publicación determina cómo se comparte la plantilla. Al preparar una plantilla compartida, use nombres de variables en el texto y complete los valores necesarios antes de cada ejecución.
 
-Junto al campo de entrada hay varios botones de control:
+<figure><img src="../../.gitbook/assets/site-extra-operator-prompt-dialog-es.png" alt="Diálogo real para guardar una instrucción, con los campos vacíos. La etiqueta «Guardar aviso» se refiere aquí a una instrucción o prompt, no a una notificación. No se guardó ni compartió ninguna plantilla."><figcaption><p>Diálogo real para guardar una instrucción, con los campos vacíos. La etiqueta «Guardar aviso» se refiere aquí a una instrucción o prompt, no a una notificación. No se guardó ni compartió ninguna plantilla.</p></figcaption></figure>
 
-* **Prompt Variables** – Abre una ventana emergente en la que puede introducir pares clave-valor que se utilizan en el prompt. Las variables se escriben entre llaves, como `{invoice_number}` o `{url}`. Estos valores se aplican únicamente al prompt actual del campo de entrada.
-* **Save Prompt** – Guarda el prompt actual. Puede guardarlo como:
-  * **Organization Prompt** – Editable dentro de su organización; incluye tanto el prompt como los valores de variable definidos.
-  * **Global Prompt** – Compartido entre todos los tenants; incluye solo el prompt y los marcadores de posición de las variables (no se guarda ningún valor).
-* **Clear Chat** – Borra la conversación actual con el operador, pero deja sin cambios el prompt del campo de entrada. Resulta útil al reutilizar o refinar un prompt.
+El botón para editar variables abre sus definiciones. El botón de guardado guarda la plantilla. Para cerrar el diálogo sin guardar, use la cruz de la esquina superior derecha.
 
-Para obtener una guía detallada sobre cómo escribir prompts eficaces, incluidas la sintaxis, las variables y los ejemplos, consulte la [**Guía para escribir prompts**](prompt-writing-guide.md).
+El botón Cancelar cierra este diálogo sin guardar; también puede usar la cruz. La etiqueta Guardar aviso corresponde a guardar una instrucción. Para esta imagen no se escribió ni guardó ninguna plantilla.
 
-### **2. Navegación de la barra lateral**
+## Instrucciones guardadas
 
-Utilice el icono de la parte superior izquierda para abrir o cerrar la barra lateral. La barra lateral muestra los prompts guardados, organizados en dos categorías:
+El menú de la esquina superior derecha abre el panel de instrucciones guardadas. Contiene secciones separadas para las instrucciones de la organización y las públicas, además de una búsqueda por nombre.
 
-* **Organization Prompts**: editables y reutilizables dentro de su organización.
-* **Global Prompts**: compartidos entre todos los tenants. No pueden almacenar variables y no se pueden editar ni eliminar.
-  * Un prompt global sigue siendo editable y eliminable por la **organización que lo creó**, donde aparece en Organization Prompts.
-* **Función de búsqueda:** una barra de búsqueda en la parte superior de la barra lateral permite encontrar rápidamente los prompts guardados por nombre o palabra clave.
-* **Referencia de iconos:** cada prompt guardado tiene un conjunto de iconos de acción
-  * **Flecha** – Iniciar el prompt
-  * **Lápiz** – Editar el prompt (solo disponible para los prompts de su propia organización)
-  * **Papelera** – Eliminar el prompt (solo disponible para los prompts de su propia organización)
+Las instrucciones de la organización tienen iconos para ejecutar, editar y eliminar. En la sección pública, la flecha ejecuta la plantilla seleccionada. Complete sus variables antes de iniciarla.
 
-### 3. Guardar el prompt
+## Controlar la ejecución
 
-Al hacer clic en el botón **Save Prompt** se abre una ventana emergente en la que puede guardar el prompt actual para usarlo más adelante.
+Durante la ejecución puede pausar, reanudar, cancelar o tomar el control. La pausa detiene los pasos siguientes para comprobar el estado actual. Reanudar continúa el trabajo; cancelar finaliza la ejecución. Tomar el control permite interactuar manualmente con la vista del navegador.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Ventana emergente Save Prompt"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="Ejemplo de iconos para reanudar y detener."><figcaption><p>Ejemplo de iconos para reanudar y detener.</p></figcaption></figure>
 
-#### **Campos de la ventana emergente Save Prompt**
+## Vista detallada
 
-* **Prompt Name:** introduzca un nombre para identificar el prompt.
-* **Save Prompt Publicly (casilla de verificación):** si está marcada, el prompt se guardará como **Global Prompt**. Los Global Prompts se comparten entre todos los tenants y no pueden almacenar **valores** de variable (solo **nombres** de variable).
-* **Edit Variables:** abre la [**ventana emergente Prompt Variables**](prompt-writing-guide.md#ventana-emergente-de-variables-de-prompt) para revisar o ajustar las definiciones de las variables antes de guardar.
+El botón de ampliación abre la vista detallada de la ejecución. Permite seguir las acciones, el paso actual y los mensajes del operador, y utilizar los controles de ejecución.
 
-**Acciones**
-
-* **Cancel:** cierra la ventana emergente sin guardar.
-* **Save:** guarda el prompt con el nombre y el ajuste de visibilidad especificados.
-
-### 4. Controles de ejecución del prompt
-
-Cuando se está ejecutando un prompt, los usuarios disponen de varias opciones de control para gestionar el proceso de ejecución o intervenir en él:
-
-* **Pause Prompt:** detiene temporalmente la ejecución actual. Resulta útil si desea observar el estado actual o preparar el sistema para los pasos siguientes.&#x20;
-* **Resume Prompt:** continúa la ejecución desde el punto en el que se pausó. ![](<../../.gitbook/assets/image (3) (1).png>)
-* **Cancel Prompt:** detiene la ejecución por completo y restablece la sesión. Es útil si hay que abortar o reiniciar el prompt por un comportamiento incorrecto o por cambios en la entrada.&#x20;
-* **Take Control:** permite al usuario intervenir manualmente interactuando directamente con el sistema. Es útil si el operador se queda atascado o interpreta mal un paso. Al tomar el control, el prompt se **pausa automáticamente** y se pasa al modo manual hasta que usted decida reanudarlo o cancelarlo.
-
-### 5. Vista de detalle del Operator
-
-Una vez iniciado un prompt, aparece un botón adicional que permite a los usuarios cambiar a una **vista de ejecución detallada**. ![](<../../.gitbook/assets/Detailed view .jpg>)
-
-* **Open Detail View:** este botón le lleva a una vista dedicada que muestra, paso a paso, lo que el operador está haciendo en tiempo real.
-
-En la vista de detalle, los usuarios pueden:
-
-* Supervisar cada acción que se realiza (por ejemplo, clics, entradas, esperas).
-* Ver qué paso está activo en ese momento.
-* Identificar dónde se producen los problemas si el prompt encuentra dificultades.
-* Utilizar las mismas acciones **Pause**, **Resume**, **Cancel** y **Take Control**.
-
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Detailed view .jpg" alt="Icono para ampliar la vista detallada."><figcaption><p>Icono para ampliar la vista detallada.</p></figcaption></figure>

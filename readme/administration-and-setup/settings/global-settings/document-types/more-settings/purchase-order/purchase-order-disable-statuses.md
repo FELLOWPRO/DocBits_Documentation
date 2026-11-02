@@ -1,50 +1,23 @@
-# PO desactivar estados
+# Estados de pedidos excluidos de la conciliación
 
-## **Descripción general**
+El ajuste **PO desactivar estados** permite excluir de la conciliación las órdenes de compra que tienen determinados estados. Esta configuración controla la elegibilidad del pedido para la conciliación; no constituye por sí sola un bloqueo general de pagos o de todas las exportaciones.
 
-La configuración de **PO Desactivar Estados** permite a los usuarios especificar estados de órdenes de compra (PO) que impiden que las facturas se emparejen con esas POs. Si una orden de compra tiene un estado listado en esta configuración, **no puede** ser utilizada para el emparejamiento de facturas en la pantalla de emparejamiento de PO, deteniendo el procesamiento de facturas relacionadas hasta que el estado de la PO cambie a uno que no esté deshabilitado.\
-\
-Al utilizar esta configuración, los usuarios pueden asegurarse de que las órdenes de compra con estados específicos no pasen por un procesamiento adicional de facturas, reduciendo errores y evitando pagos innecesarios.
+## Encontrar la configuración
 
-## **Pasos de activación**
+1. Abra **Ajustes → Tipos de Documento** y el engranaje del tipo correspondiente.
 
-1.  Ir a **Ajustes → Ajustes globales → Tipos de documentos**
+<figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1_es.png" alt=""><figcaption></figcaption></figure>
-2.  Seleccionar el tipo de documento deseado y hacer clic en **Más ajustes**.
+2. Despliegue **Orden de compra**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2_es.png" alt=""><figcaption></figcaption></figure>
-3.  En la sección de **Orden de compra**, navegar a la opción de **PO Desactivar Estados**.
+<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-po-settings-es.png" alt="Configuración actual de Orden de compra, incluido Calcular el precio unitario del pedido. Los valores privados están ocultos; no se cambió la configuración ni se ejecutó una conciliación."><figcaption><p>Configuración actual de Orden de compra, incluido Calcular el precio unitario del pedido. Los valores privados están ocultos; no se cambió la configuración ni se ejecutó una conciliación.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_3_es.png" alt=""><figcaption></figcaption></figure>
+3. Localice **PO desactivar estados** y abra el selector.
 
-### **Cómo identificar una orden de compra deshabilitada**
+<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-disabled-po-statuses-es.png" alt="Selector actual PO desactivar estados. Open, Partially Invoiced y Partially Received siguen en inglés y corresponden a abierto, parcialmente facturado y parcialmente recibido. No se seleccionó ningún estado ni se pulsó Aplicar."><figcaption><p>Selector actual PO desactivar estados. Open, Partially Invoiced y Partially Received siguen en inglés y corresponden a abierto, parcialmente facturado y parcialmente recibido. No se seleccionó ningún estado ni se pulsó Aplicar.</p></figcaption></figure>
 
-En la pantalla de **Emparejamiento de PO**, una orden de compra deshabilitada aparece **tachada**. Esto indica visualmente que la PO está actualmente restringida para ser emparejada debido a su estado.
+## Seleccionar los estados
 
-<figure><img src="../../../../../../.gitbook/assets/disable_po_status_6.png" alt=""><figcaption></figcaption></figure>
+Seleccione los estados que su proceso debe excluir y utilice **Aplicar** para guardar un cambio deliberado. En la versión mostrada, Open, Partially Invoiced y Partially Received siguen en inglés; significan abierto, parcialmente facturado y parcialmente recibido. Utilice las opciones que ofrezca su versión.
 
-### **Cómo configurarlo**
-
-1. En la configuración de **PO Desactivar Estados**, verás un campo de selección en el lado izquierdo.
-2.  Hacer clic en este campo abre una lista desplegable de estados de PO disponibles.
-
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_4_es.png" alt="" width="261"><figcaption></figcaption></figure>
-3. Selecciona uno o más estados haciendo clic en ellos. Haz clic nuevamente para deseleccionar.
-4.  Haz clic en el botón **Aplicar** para guardar tus cambios.
-
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_5_es.png" alt=""><figcaption></figcaption></figure>
-
-**Estados disponibles**
-
-* Canceled
-* Deleted
-* Invoiced
-* Open
-* Partially Invoiced
-* Partially Received
-* Received
-* Rejected
-* Unapproved
-* Hold
-* Closed
+Compruebe el pedido y su estado cuando no esté disponible para la conciliación. Una restricción de conciliación no demuestra por sí misma que el documento esté pagado, aprobado o exportado. Durante la captura no se seleccionó ningún estado ni se pulsó Aplicar.

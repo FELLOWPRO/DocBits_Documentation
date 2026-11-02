@@ -1,5 +1,13 @@
 # Información de la empresa
 
+## Tutorial en vídeo: Empresa, suscripción y auditoría
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/es.mp4" %}
+Información de la empresa, plan de suscripción y registros de auditoría en DocBits
+{% endembed %}
+
+El vídeo muestra la información y las preferencias de la empresa, el plan de suscripción, la actividad de inicio de sesión y los registros de auditoría.
+
 
 
 <figure><img src="../../../../.gitbook/assets/prior-i001-es.png" alt="Información de la empresa con los valores de la organización ocultos."><figcaption><p>Información de la empresa con los valores de la organización ocultos.</p></figcaption></figure>

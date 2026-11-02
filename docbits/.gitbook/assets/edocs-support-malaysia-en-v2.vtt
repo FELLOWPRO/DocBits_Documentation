@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.881
+MyInvois has invoice and credit-note rule
+entries. The inspected extraction path is
+
+formats_02
+00:00:05.881 --> 00:00:11.628
+XML based. The national platform also
+accepts JSON, but that does not establish
+
+formats_03
+00:00:11.628 --> 00:00:14.800
+JSON import support in this DocBits
+mapping.
+
+workflow_01
+00:00:15.550 --> 00:00:20.043
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:20.043 --> 00:00:25.105
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:25.105 --> 00:00:26.133
+activate it.
+
+accept_01
+00:00:26.883 --> 00:00:31.643
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:31.643 --> 00:00:36.647
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:36.647 --> 00:00:37.600
+delivery.
+

@@ -1,0 +1,2 @@
+# Secção de parceiros
+

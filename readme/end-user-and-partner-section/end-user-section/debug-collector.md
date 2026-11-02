@@ -35,3 +35,7 @@ If you want a local copy of the snapshot, use **Copy Debug Data** to copy the JS
 * Nothing leaves your browser until you press **Send Report** — the shortcut only opens the dialog.
 
 <mark>Review the snapshot before sending if you were handling documents containing customer data. Document IDs visible in URLs will appear in the report.</mark>
+
+## See also
+
+If DocBits opens to a blank screen instead of the normal interface, the cached application files may be out of date. See [PWA Cache Status](pwa-cache-status.md) to inspect the cache and clear it.

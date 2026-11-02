@@ -1,5 +1,7 @@
 # Transformation Rules
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4" %}
+
 ## Overview
 
 Transformation rules clean up or rewrite extracted data **automatically**, every time a document is processed and every time it is saved. A rule can change:
@@ -24,10 +26,6 @@ Transformation rules replace most of the small scripts organisations used to wri
 | A supplier is matched on the total, not on lines | Table rows: Clear all rows → Add a row with the net amount |
 | All documents of certain suppliers belong to a sub-organisation | Routing: set the sub-organisation when *Supplier ID is one of …* |
 | Dates must be written in a fixed format into a free-text field | Header field: Reformat date `%d.%m.%Y` |
-
-{% hint style="info" %}
-While the feature is in beta, the settings described below only appear when the **Document Types** settings page is opened with `?beta=true` appended to the address.
-{% endhint %}
 
 ## Enable transformation rules
 

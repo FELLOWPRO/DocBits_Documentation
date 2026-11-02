@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.043
+Thailand E-Tax Invoice is the configured
+family. The label does not name a release.
+
+formats_02
+00:00:06.043 --> 00:00:10.664
+Confirm the source XML structure;
+signature verification and
+
+formats_03
+00:00:10.664 --> 00:00:13.867
+revenue-platform delivery need separate
+checks.
+
+workflow_01
+00:00:14.617 --> 00:00:19.110
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:19.110 --> 00:00:24.172
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:24.172 --> 00:00:25.200
+activate it.
+
+accept_01
+00:00:25.950 --> 00:00:30.710
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:30.710 --> 00:00:35.714
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:35.714 --> 00:00:36.667
+delivery.
+

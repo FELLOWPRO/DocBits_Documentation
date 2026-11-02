@@ -1,7 +1,5 @@
-# Date & Time
+# Data e ora
 
+Le schede di questa categoria nel selettore **Aggiungi carta** del Workflow Builder:
 
-Le schede di questa categoria nel selettore **Add Card** del Workflow Builder:
-
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_datetime.png" alt="Workflow Builder card category"><figcaption><p>Le schede di questa categoria.</p></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>

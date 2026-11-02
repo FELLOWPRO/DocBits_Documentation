@@ -1,43 +1,34 @@
-# Configuring Single Sign-On (SSO)
+# Configurare il Single Sign-On (SSO)
 
-Configuring Single Sign-On (SSO) in DocBits requires a few steps to set up and configure. Here is a step-by-step guide:
+Configurare DocBits come fornitore di servizi SAML (SP) e collegare il proprio provider di identità (IdP). È necessario l’accesso amministratore alle impostazioni pertinenti di entrambi i sistemi.
 
-**Accessing SSO settings:**
+## Aprire le impostazioni SSO
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_form.png" alt="Docbits New Sub Organization Form"><figcaption></figcaption></figure>
+Accedere a DocBits come amministratore e aprire Single Sign-On nelle impostazioni di integrazione.
 
-* Log in to your DocBits account as an administrator.
-* Navigate to settings and look for Single Sign-On or SSO.
+<figure><img src="../../../../../.gitbook/assets/site-extra-sso-settings-it.png" alt="Impostazioni del fornitore di servizi SSO: valori dell’organizzazione nascosti; nessuna configurazione è stata salvata."><figcaption><p>Impostazioni del fornitore di servizi SSO: valori dell’organizzazione nascosti; nessuna configurazione è stata salvata.</p></figcaption></figure>
 
-**Configuring SSO parameters:**
+## Consultare i valori del fornitore di servizi DocBits
 
-<figure><img src="../../../../../.gitbook/assets/docbits_sub_organizations_list.png" alt="Docbits Sub Organizations List"><figcaption><p>SSO Service Provider Settings</p></figcaption></figure>
 
-* Enter the required SSO parameters such as the Entity ID, Single Log-Out (SLO) URL, and Single Sign-On (SSO) URL.
-* The Entity ID is a unique identifier for your service or application.
-* The SLO URL is the URL used for Single Log-Out to log users out of all services when needed.
-* The SSO URL is the URL that will redirect users to the Identity Provider for authentication.
 
-**Download certificates and metadata:**
+DocBits mostra Entity ID, SSO URL e SLO URL come valori di sola lettura. Copiarli o utilizzare i metadati SP per configurare l’applicazione DocBits presso l’IdP; non inserire valori sostitutivi in questi campi di DocBits. Entity ID identifica il fornitore di servizi. Utilizzare gli endpoint visualizzati secondo i requisiti SAML dell’IdP.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_button.png" alt="Docbits New Sub Organization Button"><figcaption></figcaption></figure>
+## Scaricare il certificato e i metadati SP
 
-* The identity provider (IdP) typically provides a certificate that DocBits uses to verify the SAML authentication response.
-* Download the certificate and store it securely.
-* The metadata download contains all the necessary configuration information for SSO integration. This includes information such as the entity ID, SSO URL, certificate information, and more.
-* Download the metadata and store it locally or provide it to the identity provider.
 
-**Identity provider (IdP) configuration:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_menu.png" alt="Docbits New Sub Organization Menu"><figcaption><p>Identity Service Provider Settings</p></figcaption></figure>
+Utilizzare Download Certificate e il download dei metadati nelle impostazioni del fornitore di servizi DocBits. Questi file descrivono DocBits come SP. Fornire all’IdP i metadati SP e, se richiesto, il certificato SP scaricato. Questo certificato è distinto dai metadati IdP da caricare in DocBits.
 
-* Log in to the identity provider and configure the application or service for SAML integration.
-* Use the downloaded metadata or the manually entered SSO parameters to add DocBits as a trusted application or service.
-* Make sure the IdP's configuration matches the SSO parameters specified in DocBits.
+## Configurare il provider di identità
 
-**Testing SSO integration:**
 
-* After the configuration is complete, perform a test of the SSO integration to ensure that users can successfully log in to DocBits using SSO.
-* Also, verify that Single Log-Out is working properly by logging out of DocBits and ensuring that you are logged out of other connected services as well.
 
-Setting up SSO properly allows users to seamlessly log in to Docbits using their existing credentials, improving the user experience and increasing security.
+1. Configurare DocBits presso l’IdP con i valori SP visualizzati in DocBits o con i metadati SP scaricati.
+2. Utilizzare la Tenant ID di DocBits se richiesta dal provider. Verificare il contesto del tenant e del provider nelle impostazioni del provider di identità di DocBits.
+3. Ottenere dall’IdP i metadati SAML XML dell’applicazione configurata e caricare questi metadati XML dell’IdP in DocBits. Non sostituirli con i metadati SP di DocBits scaricati in precedenza.
+4. Salvare la configurazione tramite l’azione Configure/Save nelle impostazioni del provider di identità di DocBits.
+
+## Verificare accesso e disconnessione supportata
+
+Verificare che un utente possa accedere a DocBits tramite l’IdP configurato. Provare Single Log-Out solo se DocBits e l’IdP lo supportano ed è configurato su entrambi i sistemi. La disconnessione da DocBits da sola non garantisce la disconnessione da tutte le altre applicazioni collegate.

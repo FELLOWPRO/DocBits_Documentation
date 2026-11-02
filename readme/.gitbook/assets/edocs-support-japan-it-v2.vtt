@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.261
+JP PINT e JP PINT Self-Billing hanno voci
+separate. La fatturazione da parte del
+
+formats_02
+00:00:08.261 --> 00:00:12.916
+cliente è una variante del processo
+aziendale, non una scelta di lingua.
+
+formats_03
+00:00:12.916 --> 00:00:16.852
+Verificate l’identificatore di
+personalizzazione e la variante
+
+formats_04
+00:00:16.852 --> 00:00:18.067
+configurata.
+
+workflow_01
+00:00:18.817 --> 00:00:24.576
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:24.576 --> 00:00:31.611
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:31.611 --> 00:00:32.533
+attiva.
+
+accept_01
+00:00:33.283 --> 00:00:39.262
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:39.262 --> 00:00:44.254
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:44.254 --> 00:00:47.933
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

@@ -4,6 +4,12 @@ description: Supporto al documento elettronico Ecuador SRI (Factura Electrónica
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Ecuador](countries/ecuador.md). La voce di classificazione delle note di credito non ha un insieme di componenti di estrazione dedicato nello stato esaminato. Verificate la mappatura effettivamente utilizzata e il tipo di documento sorgente.
+{% endhint %}
+
 | Proprietà | Valore |
 |----------|-------|
 | **Paese / Regione** | Ecuador |
@@ -33,7 +39,7 @@ Il numero di fattura è un campo composito di tre elementi: `estab-ptoEmi-secuen
 
 ## Anteprima Predefinita
 
-<figure><img src="ecuador-sri-preview.png" alt="Anteprima Ecuador SRI Factura in DocBits"><figcaption><p>Anteprima predefinita DocBits per una Factura Electrónica Ecuador SRI (versione 2.1.0)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ecuador-sri-preview.png" alt="Anteprima Ecuador SRI Factura in DocBits"><figcaption><p>Anteprima predefinita DocBits per una Factura Electrónica Ecuador SRI (versione 2.1.0)</p></figcaption></figure>
 
 ## Mappatura dei Campi
 
@@ -87,5 +93,5 @@ L'elemento radice è `<factura>` con `id="comprobante"`. L'attributo `version` d
 
 ## Correlati
 
-- [Standard di Fattura Elettronica Attualmente Supportati](../../currently-supported-e-invoice-standards/)
+- [Standard di Fattura Elettronica Attualmente Supportati](../currently-supported-e-invoice-standards/README.md)
 - [Documenti Elettronici Supportati](./)

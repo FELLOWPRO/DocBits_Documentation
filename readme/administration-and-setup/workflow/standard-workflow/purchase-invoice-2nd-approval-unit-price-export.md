@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Unit Price Export
+# Fattura di acquisto: esportazione dopo la seconda approvazione del prezzo unitario
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_5.png" alt="DocBits Acquisto Ordine Esporta 5"><figcaption></figcaption></figure>
+
 
 Questo titolo indica che la regola è configurata per gestire la seconda fase di approvazione delle fatture d'acquisto con particolare attenzione al prezzo unitario, garantendo che corrisponda ai termini concordati.
 
@@ -19,8 +19,8 @@ Questo titolo indica che la regola è configurata per gestire la seconda fase di
 
 #### Scopo di Questa Regola:
 
-* **Ensure Accuracy and Consistency**: verificando che i prezzi unitari corrispondano tra la conferma d'ordine e l'ordine di acquisto, il sistema aiuta a mantenere l'accuratezza finanziaria e previene sovrafatturazioni o sottofatturazioni.
-* **Streamline Financial Processing**: l'automazione dell'esportazione dei dati una volta confermati i prezzi riduce la gestione manuale e accelera il ciclo di elaborazione finanziaria.
-* **Enhance Compliance and Oversight**: richiedere una seconda approvazione per la verifica dei prezzi aggiunge un ulteriore livello di supervisione, fondamentale per la conformità alle politiche e ai controlli finanziari.
+* **Garantire precisione e coerenza**: verificando che i prezzi unitari corrispondano tra la conferma d'ordine e l'ordine di acquisto, il sistema aiuta a mantenere l'accuratezza finanziaria e previene sovrafatturazioni o sottofatturazioni.
+* **Semplificare l’elaborazione finanziaria**: l'automazione dell'esportazione dei dati una volta confermati i prezzi riduce la gestione manuale e accelera il ciclo di elaborazione finanziaria.
+* **Migliorare conformità e supervisione**: richiedere una seconda approvazione per la verifica dei prezzi aggiunge un ulteriore livello di supervisione, fondamentale per la conformità alle politiche e ai controlli finanziari.
 
 Questa regola è un esempio di come l'automazione dei workflow possa essere utilizzata efficacemente per garantire una gestione precisa ed efficiente dei documenti finanziari all'interno di un'organizzazione, in particolare nel contesto di grandi volumi di transazioni che richiedono una convalida meticolosa.

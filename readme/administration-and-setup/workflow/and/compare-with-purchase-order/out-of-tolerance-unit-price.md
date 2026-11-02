@@ -1,6 +1,6 @@
 # Stückpreis außerhalb der Toleranz
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_separat_unit_price_operator_field_values_v3-de-de.png" alt="Stückpreis außerhalb der Toleranz, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Zweck:**
 

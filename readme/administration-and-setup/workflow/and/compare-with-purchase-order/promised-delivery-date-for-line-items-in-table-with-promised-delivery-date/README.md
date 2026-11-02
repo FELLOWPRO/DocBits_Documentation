@@ -1,6 +1,8 @@
 # Zugesagter Liefertermin für Positionen in der Tabelle mit versprochenem Liefertermin
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2-de-de.png" alt="Zugesagter Liefertermin für Positionen in der Tabelle mit versprochenem Liefertermin, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+Wie das Toleranzfenster berechnet wird, mit Beispielen wie „heute oder morgen“, wird unter [Date Tolerances](../../date-tolerances.md) erklärt.
 
 ## Zweck:
 

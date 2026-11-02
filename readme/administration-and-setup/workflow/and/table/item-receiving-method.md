@@ -1,6 +1,6 @@
 # Artikelempfangsmethode
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-ba8550d6feb0-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_receiving_method_is_isnot_v2-de-de.png" alt="Artikelempfangsmethode, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

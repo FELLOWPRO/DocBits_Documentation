@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.005
+Mexico CFDI 3.3 et 4.0 possèdent des
+entrées distinctes. Vérifiez l’espace de
+
+formats_02
+00:00:08.005 --> 00:00:14.472
+noms, la version et TipoDeComprobante. Un
+montant négatif ne suffit pas à identifier
+
+formats_03
+00:00:14.472 --> 00:00:19.633
+un avoir ; l’analyse du fichier ne
+certifie pas la validation par le SAT.
+
+workflow_01
+00:00:20.383 --> 00:00:26.153
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:26.153 --> 00:00:32.063
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:32.063 --> 00:00:33.133
+l’active pas.
+
+accept_01
+00:00:33.883 --> 00:00:38.864
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:38.864 --> 00:00:44.541
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:44.541 --> 00:00:47.733
+la validation fiscale ni la transmission
+réseau.
+

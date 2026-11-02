@@ -1,35 +1,49 @@
-# Cartes de manipulation des champs et des tableaux - Guide complet
+# Cartes de manipulation de champs et de tables
 
-Ces cartes se placent dans le groupe **Then** du Concepteur de workflow — les actions exécutées une fois les conditions When/And remplies :
+## Cartes de manipulation de champs et de tableaux — Guide complet
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Les cartes sont ajoutées au groupe <strong>Then</strong> via <strong>Add Card</strong>.</p></figcaption></figure>
+**Périmètre :** 9 cartes pour modifier les champs et les tableaux du document
 
-**Couvre :** 9 cartes pour modifier les champs et les tableaux des documents
+***
 
----
+Les cartes de champ et de table de cette page vont dans le groupe **Dans ce cas** du Workflow Builder — les actions qui s'exécutent une fois que les conditions Quand/Et correspondent :
 
-# Manipulation des champs de document
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-fr.png" alt="Exemple de cartes dans les groupes Quand, Et et Dans ce cas. Renseignez les paramètres avant exécution."><figcaption><p>Exemple de cartes dans les groupes Quand, Et et Dans ce cas. Renseignez les paramètres avant exécution.</p></figcaption></figure>
 
-## Carte : ACTION_SET_FIELD_TO_TEXT / Set Field to Text Value
+***
 
-### Objectif
+### 📌 Versions des cartes
+
+Les options dépendent de la carte et de sa version. L’exemple de copie ci-dessous utilise la **version 2**. Vérifiez le numéro affiché sur la carte et consultez le [guide des versions et de leur comportement](../../cards-overview/card-versions-guide.md) avant de reprendre un exemple.
+
+***
+
+## Manipulation des champs de documents
+
+### Carte : ACTION\_SET\_FIELD\_TO\_TEXT / Définir le champ sur la valeur du texte
+
+#### Objectif
+
 Remplit automatiquement un champ de document avec un texte spécifique
 
-### Quand l'utiliser
-- Renseigner un champ à partir d'une décision
-- Définir des valeurs par défaut
-- Remplir des informations standardisées
-- Mettre à jour un champ en fonction de conditions
+#### Quand utiliser
 
-### Comment ça fonctionne
+* Remplir le champ à partir de la décision
+* Définir les valeurs par défaut
+* Remplir des informations standardisées
+* Mettre à jour le champ en fonction des conditions
+
+#### Comment ça marche
+
 ```
 IF Condition is true
     THEN Set Field "Category" to Value "Premium"
 ```
 
-### Exemples de scénarios
+#### Exemples de scénarios
 
-**Scénario 1 : Définir la catégorie d'approbation**
+**Scénario 1 : Définir la catégorie d'approbation**
+
 ```
 Condition: Invoice amount > €10,000
     ↓
@@ -38,7 +52,8 @@ Action: Set "Approval_Category" field to "High Value"
 Result: Document now shows "Approval_Category: High Value"
 ```
 
-**Scénario 2 : Définir la catégorie du fournisseur**
+**Scénario 2 : Définir la catégorie de fournisseur**
+
 ```
 Condition: Supplier name contains "ABC"
     ↓
@@ -47,7 +62,8 @@ Action: Set "Supplier_Type" field to "Preferred Supplier"
 Result: Document marked as "Preferred Supplier"
 ```
 
-**Scénario 3 : Définir les notes de traitement**
+**Scénario 3 : Définir les notes de traitement**
+
 ```
 Condition: Document has been rejected
     ↓
@@ -56,50 +72,55 @@ Action: Set "Processing_Notes" to "Requires supplier revision"
 Result: Note appears for next processor
 ```
 
-### Paramètres
+#### Paramètres
 
-**Field Name**
-Quel champ mettre à jour
+**Nom du champ** Quel champ mettre à jour
+
 ```
 Examples: Category, Type, Status, Comment, Notes
 ```
 
-**Text Value**
-Quoi mettre dans le champ
+**Valeur du texte** Que mettre dans le champ
+
 ```
 Examples: "Approved", "Pending Review", "High Priority"
 ```
 
-### Étapes de configuration
+#### Étapes de configuration
+
 1. Choisissez le champ à remplir
-2. Saisissez la valeur textuelle
-3. Définissez les conditions (quand remplir)
-4. Enregistrez
+2. Entrez la valeur du texte
+3. Définir les conditions (quand remplir)
+4. Enregistrer
 
----
+***
 
-## Carte : ACTION_SET_BOOLEAN_FIELD / Set Checkbox Field
+### Carte : ACTION\_SET\_BOOLEAN\_FIELD / Définir le champ de la case à cocher
 
-### Objectif
-Coche ou décoche automatiquement un champ case à cocher
+#### Objectif
 
-### Quand l'utiliser
-- Marquer comme traité
-- Définir des indicateurs d'approbation
-- Activer/désactiver des options
-- Marquer pour l'exportation
+Coche ou décoche automatiquement un champ de case à cocher
 
-### Comment ça fonctionne
+#### Quand utiliser
+
+* Marquer comme traité
+* Définir des indicateurs d'approbation
+* Activer/désactiver les options
+* Marquer pour l'exportation
+
+#### Comment ça marche
+
 ```
 IF Condition is true
     THEN Check/Uncheck the "Approved" box
 ```
 
-### True = Coché, False = Décoché
+#### Vrai = Coché, Faux = Non coché
 
-**Exemples :**
+**Exemples :**
 
-**Exemple 1 : Marquer comme vérifié**
+**Exemple 1 : Marquer comme vérifié**
+
 ```
 Condition: PO matches perfectly
     ↓
@@ -108,7 +129,8 @@ Action: Check "Verified" checkbox
 Result: ✅ Verified (checked)
 ```
 
-**Exemple 2 : Signaler pour révision manuelle**
+**Exemple 2 : indicateur pour révision manuelle**
+
 ```
 Condition: Price variance > 10%
     ↓
@@ -117,7 +139,8 @@ Action: Check "Requires_Manual_Review" checkbox
 Result: ✅ Requires_Manual_Review (marked)
 ```
 
-**Exemple 3 : Décocher une case pré-remplie**
+**Exemple 3 : Décochez la case pré-remplie**
+
 ```
 Condition: Supplier is blacklisted
     ↓
@@ -126,27 +149,31 @@ Action: Uncheck "Approved_for_Payment" checkbox
 Result: ☐ Approved_for_Payment (unchecked - blocked)
 ```
 
-### Paramètres
+#### Paramètres
+
 ```
 Checkbox Field: [Choose field]
 Set To: ☑ Checked (✅ True)
    or: ☐ Unchecked (❌ False)
 ```
 
----
+***
 
-## Carte : ACTION_INVERT_BOOLEAN_FIELD / Toggle Checkbox
+### Carte : ACTION\_INVERT\_BOOLEAN\_FIELD / Basculer la case à cocher
 
-### Objectif
-Inverse l'état de la case à cocher (cochée → décochée, et vice versa)
+#### Objectif
 
-### Quand l'utiliser
-- Inverser le statut d'approbation
-- Changer de mode de traitement
-- Inverser l'état précédent
-- Mettre à jour des indicateurs booléens
+Inverse l'état de la case à cocher (cochée → décochée, vice versa)
 
-### Comment ça fonctionne
+#### Quand utiliser
+
+* Changer le statut d'approbation
+* Changer de mode de traitement
+* Inverser l'état précédent
+* Mettre à jour les indicateurs booléens
+
+#### Comment ça marche
+
 ```
 Current state: ✅ (Checked)
     ↓
@@ -163,7 +190,8 @@ ACTION_INVERT: Toggle the box
 New state: ✅ (Checked)
 ```
 
-### Exemple
+#### Exemple
+
 ```
 Invoice received with "Priority" checked
     ↓
@@ -172,86 +200,60 @@ After processing, invert "Priority" checkbox
 Checkbox now unchecked (no longer priority)
 ```
 
----
+***
 
-## Carte : ACTION_COPY_DOCFIELD_TO_DOCFIELD / Copy Field Value
+### Carte : ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD / Copier la valeur d’un champ
 
-### Objectif
-Copie la valeur d'un champ vers un autre champ
+#### Quand et où utiliser cette carte
 
-### Quand l'utiliser
-- Copier les infos du fournisseur vers les infos de facturation
-- Dupliquer des données entre champs
-- Standardiser le format des données
-- Créer une sauvegarde d'une valeur
+Utilisez cette carte lorsqu’une étape suivante a besoin d’une valeur existante dans un autre champ. Par exemple, recopiez le numéro de facture dans un champ texte supplémentaire destiné à une étape de contrôle.
 
-### Comment ça fonctionne
-```
-Source Field: "Invoice_Supplier"  Value: "ABC Corp"
-    ↓
-COPY TO
-    ↓
-Target Field: "Billing_Partner"  Value: "ABC Corp"
+Dans l’éditeur du workflow standard, ouvrez **Dans ce cas → Champ du document**, puis choisissez **Copier le contenu du champ de document**, version **2**.
 
-Both fields now have same value
-```
+#### Configurer le même exemple
 
-### Exemples concrets
+Les deux champs existent déjà dans le type de document **INVOICE** et sont de type texte (`String`). Vérifiez les types et le champ de destination avant l’exécution.
 
-**Exemple 1 : Copier l'adresse de livraison**
-```
-Source: "Delivery_Address" = "123 Main St, Berlin"
-    ↓
-Copy to: "Billing_Address"
-    ↓
-Result: Both fields show "123 Main St, Berlin"
-```
+| Réglage | Sélection dans l’exemple |
+| --- | --- |
+| Champ source | **Numéro de facture** — `invoice_id` |
+| Champ de destination | **Champ personnalisé 1** — `custom_field_1` |
+| Valeur source | `WF-INV-1001` |
+| Ancienne valeur de destination | `ALT` |
 
-**Exemple 2 : Copier le code fournisseur**
-```
-Source: "Supplier_Code_External" = "SUPP-789"
-    ↓
-Copy to: "Supplier_Code_Internal"
-    ↓
-Result: Both codes match, system recognizes supplier
-```
+<figure><img src="../../../../.gitbook/assets/workflow-card-copy-field-v2-configured-fr-20261025.png" alt="Carte de copie, version 2 : Numéro de facture vers Champ personnalisé 1, deux champs de texte."><figcaption><p>Carte de copie, version 2 : Numéro de facture vers Champ personnalisé 1, deux champs de texte.</p></figcaption></figure>
 
-**Exemple 3 : Copier le montant pour validation**
-```
-Source: "Invoice_Total" = "€5000"
-    ↓
-Copy to: "Amount_to_Validate"
-    ↓
-Result: Validation field has correct amount
-```
+#### Exemple attendu et contre-exemples
 
-### Paramètres
-```
-Source Field: [Choose field to copy FROM]
-Target Field: [Choose field to copy TO]
-```
+Si la modification est acceptée, `custom_field_1` contient `WF-INV-1001` à la place de `ALT`. La valeur source reste inchangée.
 
-### Remarques
-- Le champ d'origine reste inchangé
-- Le champ cible est écrasé par la valeur source
-- Idéal pour standardiser les données
+| Situation | Résultat attendu |
+| --- | --- |
+| La source contient `WF-INV-1001` et la modification est acceptée | La destination reçoit `WF-INV-1001` ; la carte réussit. |
+| Le champ source est absent du document | `NOT_FOUND_IN_DOCUMENT` ; aucune valeur n’est copiée. |
+| Le service de documents refuse la modification ou ne répond pas | Une erreur est renvoyée ; ne considérez pas la copie comme réussie. |
 
----
+Après l’exécution, contrôlez la valeur de destination et le journal du workflow. La capture montre la configuration de la carte ; le tableau décrit les résultats attendus de cet exemple.
 
-# Manipulation des tableaux
+***
 
-## Carte : EDIT_COLUMN / Edit Table Column
+## Manipulation des tableaux
 
-### Objectif
-Modifie les valeurs d'une colonne de tableau en fonction de conditions
+### Carte : EDIT\_COLUMN / Modifier la colonne du tableau
 
-### Quand l'utiliser
-- Corriger des erreurs de tarification dans les lignes d'articles
-- Mettre à jour des quantités
-- Corriger les descriptions d'articles
-- Standardiser des valeurs
+#### Objectif
 
-### Comment ça fonctionne
+Modifie les valeurs dans une colonne de tableau en fonction des conditions
+
+#### Quand utiliser
+
+* Corriger les erreurs de tarification dans les lignes du document
+* Mettre à jour les quantités
+* Corriger les descriptions des articles
+* Standardiser les valeurs
+
+#### Comment ça marche
+
 ```
 Table Column: "Unit_Price"
 Original Values: [100, 105, 103]
@@ -262,9 +264,10 @@ REPLACE: With new value
 Updated Column: [100, 110, 110] (example)
 ```
 
-### Exemple : Corriger la tarification
+#### Exemple : Fixer le prix
 
-**Scénario : Prix dans la mauvaise devise**
+**Scénario : Prix dans une mauvaise devise**
+
 ```
 Table "Line_Items" with column "Price"
 
@@ -277,7 +280,8 @@ Action: Replace with 95 (corrected price)
 Result: [95, 95, 95] (prices corrected)
 ```
 
-### Paramètres
+#### Paramètres
+
 ```
 Table: [Choose table]
 Column: [Choose column to edit]
@@ -286,26 +290,30 @@ Replace with: [New value]
 Condition: [When to apply]
 ```
 
-### Utilisations courantes
-- Corriger les prix unitaires
-- Standardiser les descriptions
-- Corriger les quantités
-- Mettre à jour les numéros de SKU
+#### Utilisations courantes
 
----
+* Fixer les prix unitaires
+* Standardiser les descriptions
+* Quantités correctes
+* Mettre à jour les numéros SKU
 
-## Carte : CALC_COLUMNS / Calculate Column Values
+***
 
-### Objectif
-Effectue un calcul sur les colonnes d'un tableau et stocke le résultat
+### Carte : CALC\_COLUMNS / Calculer les valeurs des colonnes
 
-### Quand l'utiliser
-- Calculer les totaux de ligne (Qté × Prix unitaire)
-- Additionner des colonnes
-- Calculer des remises
-- Calculer des pourcentages
+#### Objectif
 
-### Comment ça fonctionne
+Effectue le calcul sur les colonnes du tableau et stocke le résultat
+
+#### Quand utiliser
+
+* Calculer les totaux de ligne (Qté × Prix unitaire)
+* Colonnes de somme
+* Calculer les remises
+* Calculer des pourcentages
+
+#### Comment ça marche
+
 ```
 Column A (Quantity): 100
 Column B (Unit Price): €50
@@ -315,9 +323,10 @@ CALCULATE: A × B
 Column C (Line Total): €5000
 ```
 
-### Types de calcul
+#### Types de calcul
 
-**Type 1 : Multiplication simple**
+**Type 1 : Multiplication simple**
+
 ```
 Formula: Qty × Unit Price = Line Total
 
@@ -331,7 +340,8 @@ Config:
   Result Column: Line Total
 ```
 
-**Type 2 : Addition**
+**Type 2 : Ajout**
+
 ```
 Formula: Base Price + Shipping + Tax = Total
 
@@ -347,7 +357,8 @@ Config:
   Result Column: Total
 ```
 
-**Type 3 : Calcul de pourcentage**
+**Type 3 : Calcul du pourcentage**
+
 ```
 Formula: Amount × (1 + Tax%) = Total with Tax
 
@@ -360,7 +371,8 @@ Config:
   Result Column: Amount_with_Tax
 ```
 
-**Type 4 : Soustraction**
+**Type 4 : Soustraction**
+
 ```
 Formula: Original Price - Discount = Final Price
 
@@ -374,9 +386,10 @@ Config:
   Result Column: Final Price
 ```
 
-### Exemple concret
+#### Exemple concret
 
-**Calcul des lignes d'articles de facture :**
+**Calcul des éléments de ligne de facture :**
+
 ```
 Table: Invoice_Lines
 
@@ -401,7 +414,8 @@ Shipping: €100.00
 TOTAL: €7835.00
 ```
 
-### Paramètres
+#### Paramètres
+
 ```
 Table: [Select table]
 Column 1: [First column]
@@ -410,22 +424,25 @@ Column 2: [Second column] (if needed)
 Result Column: [Where to put answer]
 ```
 
----
+***
 
-## Carte : CALC_COLUMNS_REGEX / Calculate with Regex Pattern
+### Carte : CALC\_COLUMNS\_REGEX / Calculer avec le modèle Regex
 
-### Objectif
-Calcule les valeurs de colonne en fonction de la correspondance de motifs
+#### Objectif
 
-### Quand l'utiliser
-- Extraire des valeurs d'un texte à l'aide de motifs
-- Formater des données selon des règles
-- Convertir des valeurs selon des motifs
-- Analyser du texte structuré
+Calcule les valeurs des colonnes en fonction de la correspondance de modèles
 
-### Comment ça fonctionne
+#### Quand utiliser
 
-**Correspondance de motifs regex :**
+* Extraire des valeurs du texte à l'aide de modèles
+* Formater les données en fonction de règles
+* Convertir les valeurs en fonction de modèles
+* Analyser du texte structuré
+
+#### Comment ça marche
+
+**Correspondance de modèles Regex :**
+
 ```
 Original Value: "ABC-12345-XYZ"
 Pattern: Extract numbers only
@@ -433,9 +450,10 @@ Calculation: Convert to "12345"
 Result: "12345"
 ```
 
-### Exemple : Extraire le code fournisseur
+#### Exemple : Extraire le code du fournisseur
 
-**Scénario : Les numéros d'article contiennent des infos sur le fournisseur**
+**Scénario : les numéros d'article contiennent des informations sur le fournisseur**
+
 ```
 Table Column: "Article_Code"
 Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
@@ -451,25 +469,28 @@ Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
 
-### Exemple : Formater les numéros de téléphone
+#### Exemple : formater les numéros de téléphone
 
-**Scénario : Numéros de téléphone non formatés**
+**Scénario : Numéros de téléphone non formatés**
+
 ```
 Original: "491234567890"
 Pattern: Format as: +49 123 4567 890
 Result: "+49 123 4567 890"
 ```
 
-### Exemple : Extraire les prix d'un texte
+#### Exemple : Extraire les prix du texte
 
 **Scénario : Prix au format texte**
+
 ```
 Original: "Price is 99.99 EUR"
 Pattern: Extract number only
 Result: "99.99"
 ```
 
-### Paramètres
+#### Paramètres
+
 ```
 Table: [Select table]
 Column: [Column to analyze]
@@ -478,7 +499,8 @@ Replacement: [What to replace with]
 Result Column: [Where to store result]
 ```
 
-### Motifs regex courants
+#### Modèles d'expression régulière courants
+
 ```
 Numbers only: [0-9]+
 Letters only: [a-zA-Z]+
@@ -487,11 +509,12 @@ Extract €: €(\d+\.\d{2})
 Date format: \d{4}-\d{2}-\d{2}
 ```
 
----
+***
 
-# Exemples de calcul
+## Exemples de calcul
 
-## Exemple 1 : Calcul du total de la facture
+### Exemple 1 : calcul du total de la facture
+
 ```
 Step 1: Calculate line totals
   Each row: Qty × Unit Price
@@ -506,7 +529,8 @@ Step 4: Add shipping
   Final: €6500 + €1235 + €100 = €7835
 ```
 
-## Exemple 2 : Calcul de l'écart
+### Exemple 2 : calcul de l'écart
+
 ```
 PO Price: €100
 Invoice Price: €103
@@ -517,7 +541,8 @@ Variance = |3| / 100 × 100 = 3%
 Store in "Price_Variance%" column
 ```
 
-## Exemple 3 : Application d'une remise
+### Exemple 3 : Application de réduction
+
 ```
 Original Price: €100
 Discount %: 10%
@@ -525,9 +550,9 @@ Discount Amount: €100 × 0.10 = €10
 Final Price: €100 - €10 = €90
 ```
 
----
+***
 
-# Exemple de flux de travail de manipulation des champs
+## Exemple de workflow de manipulation de champs
 
 ```
 Document arrives
@@ -549,61 +574,69 @@ In table: Calculate total with tax
 Document now has all calculated and populated fields
 ```
 
----
+***
 
-# Bonnes pratiques
+## Meilleures pratiques
 
-✅ **À faire :**
-- Garder les formules simples
-- Tester les calculs avec des données d'exemple
-- Vérifier que les résultats ont du sens
-- Documenter pourquoi vous modifiez les champs
-- Utiliser la copie de champ lorsque les données sont identiques
+✅ **Faire :**
 
-❌ **À ne pas faire :**
-- Créer des références circulaires (A=B, B=A)
-- Écraser des données importantes sans raison
-- Créer des motifs regex trop complexes
-- Oublier de vérifier les résultats de calcul
-- Calculer sur le mauvais tableau/les mauvaises colonnes
+* Gardez les formules simples
+* Tester les calculs avec des exemples de données
+* Vérifier que les résultats ont du sens
+* Documentez pourquoi vous modifiez les champs
+* Utiliser le champ de copie lorsque les données sont identiques
 
----
+❌ **À ne pas faire :**
 
-# Dépannage
+* Créer des références circulaires (A=B, B=A)
+* Écraser les données importantes sans raison
+* Créer des modèles d'expressions régulières trop complexes
+* Oublier de vérifier les résultats des calculs
+* Calculer sur une mauvaise table/colonne
 
-## « Le champ ne se met pas à jour »
-**Cause :** Condition non remplie ou carte non déclenchée
+***
 
-**Solution :**
-- Vérifiez que la condition est vraie
-- Vérifiez que la carte est dans le flux de travail
-- Testez avec des données d'exemple
-- Vérifiez les fautes de frappe dans le nom du champ
+## Dépannage
 
-## « Résultat de calcul incorrect »
-**Cause :** Mauvaises colonnes sélectionnées ou formule incorrecte
+### "Le champ ne se met pas à jour"
 
-**Solution :**
-- Vérifiez les colonnes source
-- Vérifiez que la formule est correcte
-- Testez manuellement
-- Vérifiez le nombre de décimales/l'arrondi
+**Cause :** Condition non remplie ou carte non déclenchée
 
-## « Le tableau affiche une erreur »
-**Cause :** La colonne référencée n'existe pas
+**Solution :**
 
-**Solution :**
-- Vérifiez l'orthographe du nom de la colonne
-- Vérifiez que la colonne contient des données
-- Assurez-vous que le type de données de la colonne correspond au calcul
-- Ajoutez les colonnes manquantes si nécessaire
+* Vérifier que la condition est vraie
+* Vérifier que la carte est en cours de travail
+* Test avec des exemples de données
+* Vérifiez les fautes de frappe dans le nom du champ
 
----
+### "Résultat du calcul erroné"
 
-# Cartes associées
+**Cause :** Mauvaises colonnes sélectionnées ou formule incorrecte
 
-- **ACTION_COPY_DOCFIELD_TO_DOCFIELD** - Copier des valeurs
-- **EDIT_COLUMN** - Modifier les valeurs d'un tableau
-- **CALC_COLUMNS** - Calculer des formules
-- **ACTION_SET_FIELD_TO_TEXT** - Définir des valeurs textuelles
-- **ACTION_SET_BOOLEAN_FIELD** - Cocher des cases
+**Solution :**
+
+* Vérifier les colonnes source
+* Vérifier que la formule est correcte
+* Tester manuellement
+* Vérifier les décimales/arrondis
+
+### "Le tableau affiche une erreur"
+
+**Cause :** La colonne référencée n'existe pas
+
+**Solution :**
+
+* Vérifier l'orthographe du nom de la colonne
+* Vérifier que la colonne contient des données
+* Assurez-vous que le type de données de la colonne correspond au calcul
+* Ajoutez les colonnes manquantes si nécessaire
+
+***
+
+## Cartes associées
+
+* **ACTION\_COPY\_DOCFIELD\_TO\_DOCFIELD** - Copier les valeurs
+* **EDIT\_COLUMN** - Modifier les valeurs du tableau
+* **CALC\_COLUMNS** - Calculer des formules
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - Définir les valeurs du texte
+* **ACTION\_SET\_BOOLEAN\_FIELD** - Cases à cocher

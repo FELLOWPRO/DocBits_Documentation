@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.930
+Argentina AFIP et Factura Electronica sont
+des libellés configurés. L’entrée de
+
+formats_02
+00:00:05.930 --> 00:00:11.826
+classification des avoirs ne possède pas
+d’ensemble d’extraction dédié dans l’état
+
+formats_03
+00:00:11.826 --> 00:00:16.931
+examiné. Vérifiez la correspondance
+effectivement utilisée et testez un
+
+formats_04
+00:00:16.931 --> 00:00:18.800
+véritable exemple d’avoir.
+
+workflow_01
+00:00:19.550 --> 00:00:25.320
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:25.320 --> 00:00:31.230
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:31.230 --> 00:00:32.300
+l’active pas.
+
+accept_01
+00:00:33.050 --> 00:00:38.031
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:38.031 --> 00:00:43.708
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:43.708 --> 00:00:46.900
+la validation fiscale ni la transmission
+réseau.
+

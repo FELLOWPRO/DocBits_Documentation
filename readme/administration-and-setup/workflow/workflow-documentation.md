@@ -16,31 +16,31 @@ Si une facture ou un autre document dépasse un certain montant total qui néces
 
 **Test 1 : Logic Card**
 
-When : **Assignee is:** Amier Haider
+When : **Assignee is:** Responsable de réception
 
 And : **Document type is:** Invoice
 
-Then : **Assign document to:** Stefan Reppermund
+Then : **Assign document to:** Réviseur des factures
 
 ![](<../../.gitbook/assets/3 (1).png>)
 
 **Test 2 : Logic Card**
 
-When : **Assignee is:** Amier Haider
+When : **Assignee is:** Responsable de réception
 
-And : **Document type is:** Delivery Note
+Et : **Le type de document est :** Bon de livraison
 
-Then : **Assign document to:** James Edwards
+Then : **Assign document to:** Réviseur des livraisons
 
 ![](<../../.gitbook/assets/4 (1).png>)
 
 **Test 3 : Logic Card**
 
-**When :** **Assignee is:** Amier Haider
+**When :** **Assignee is:** Responsable de réception
 
 **And :** **Document type is:** Order Confirmation
 
-**Then :** **Assign document to:** Anian Sollinger
+**Then :** **Assign document to:** Réviseur des commandes
 
 ![](<../../.gitbook/assets/5 (1).png>)
 
@@ -52,13 +52,13 @@ Pour avoir une vue d'ensemble plus facile de ce qui doit arriver à un document,
 
 **Test 4 : Logic Card**
 
-**When :** **Document type is:** Delivery Note
+**Quand :Le type de document est :** Bon de livraison
 
-**And :** **Assignee is:** Amier Haider
+**And :** **Assignee is:** Responsable de réception
 
-**Then :** **Change Status to:** Pending Approval
+**Puis :Changer le statut en :** En attente d'approbation
 
-<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Statut du bon de livraison du test 4 du flux de travail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test4_delivery_note_status-fr.png" alt="Brouillon non enregistré d’un workflow de changement de statut."><figcaption><p>Brouillon non enregistré d’un workflow de changement de statut.</p></figcaption></figure>
 
 ![](<../../.gitbook/assets/8 (1).png>)
 
@@ -66,9 +66,9 @@ Pour avoir une vue d'ensemble plus facile de ce qui doit arriver à un document,
 
 When : **Document type is:** Invoice
 
-And : **Assignee is:** Stefan Reppermund
+And : **Assignee is:** Réviseur des factures
 
-Then : **Change Status to:** Pending Second Approval
+Ensuite : **Changer le statut en :** En attente de la deuxième approbation
 
 <figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Statut d'approbation de la facture du test 5 du flux de travail"><figcaption></figcaption></figure>
 
@@ -80,11 +80,11 @@ Si une facture ou un autre document dépasse un certain montant total qui néces
 
 **Test 6 : Logic Card**
 
-When : **Assignee is:** Amier Haider
+When : **Assignee is:** Responsable de réception
 
-And : Docfield **total\_amount** is **Greater than 500**
+Et : Docfield **total\_amount** est **Supérieur à 500**
 
-Then : **Assign document to:** Asad Usman Khan
+Then : **Assign document to:** Responsable des approbations
 
 <figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Assignation par montant total du test 6 du flux de travail"><figcaption></figcaption></figure>
 
@@ -94,15 +94,15 @@ Il est également possible de saisir le statut dans le flux de travail, afin que
 
 **Test 7 : Logic Card**
 
-**When :** **Assignee is:** Amier Haider
+**When :** **Assignee is:** Responsable de réception
 
-**And :** Docfield **total\_amount** is **Greater then 500**
+**Et :** Docfield **total\_amount** est **Supérieur à 500**
 
-**Then :** **Assign document to:** Asad Usman Khan
+**Then :** **Assign document to:** Responsable des approbations
 
-**Change Status to:** Pending Approval
+**Changer le statut en :** En attente d'approbation
 
-<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Mise à jour du statut du test 7 du flux de travail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test7_status_update-fr.png" alt="Action de changement de statut dans un brouillon de workflow."><figcaption><p>Action de changement de statut dans un brouillon de workflow.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,11 +116,11 @@ Le flux de travail avec ces logic cards est conçu pour vérifier automatiquemen
 
 Vous pouvez donner à ces documents un statut spécifique ou les assigner à un employé spécifique.
 
-<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Vue d'ensemble de la vérification de correspondance du test 9 du flux de travail"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_overview-fr.png" alt="Brouillon de workflow avec une condition de comparaison de commande."><figcaption><p>Brouillon de workflow avec une condition de comparaison de commande.</p></figcaption></figure></div>
 
-<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Détail de la vérification de correspondance du test 9 du flux de travail"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-workflow_test9_match_check_detail-fr.png" alt="Sélection des conditions de comparaison avec une commande."><figcaption><p>Sélection des conditions de comparaison avec une commande.</p></figcaption></figure>
 
-**Logic Card : Quantity or Unit Price or Discount Match**
+**Carte Logique : Quantité ou Prix Unitaire ou Correspondance de Remise**
 
 Cette logic card est conçue pour vérifier automatiquement que la quantité, le prix unitaire ou la remise détaillés dans une confirmation de commande correspondent aux chiffres correspondants de la commande d'achat. Cette vérification garantit la cohérence et l'exactitude entre ce qui a été commandé et ce que le fournisseur confirme livrer.
 
@@ -128,9 +128,9 @@ Cette logic card est conçue pour vérifier automatiquement que la quantité, le
 
 La logique est activée lorsque l'une des conditions suivantes est remplie dans une confirmation de commande par rapport à la commande d'achat d'origine :
 
-* **Quantity** : La quantité d'articles commandés correspond à la quantité confirmée par le fournisseur.
-* **Unit Price** : Le prix par article convenu correspond à la confirmation du fournisseur.
-* **Discount** : Toutes les remises appliquées sont cohérentes entre la commande d'achat et la confirmation de commande.
+* **Tolérance de quantité** : La quantité d'articles commandés correspond à la quantité confirmée par le fournisseur.
+* **Tolérance de prix unitaire** : Le prix par article convenu correspond à la confirmation du fournisseur.
+* **Rabais** : Toutes les remises appliquées sont cohérentes entre la commande d'achat et la confirmation de commande.
 * **Définir les paramètres de comparaison** : Configurez les champs spécifiques (quantité, prix unitaire, remise) que la logic card vérifiera pour une correspondance.
 * **Automatiser la vérification** : Configurez le système pour comparer automatiquement ces détails à la réception d'une confirmation de commande.
 * **Personnaliser les alertes** : Décidez du flux de travail pour la gestion des divergences, y compris la personnalisation des alertes pour révision manuelle.
@@ -147,7 +147,7 @@ Ci-dessus se trouve un exemple de calcul pour MTZ avec un filtre pour les numér
 
 Avec une configuration manuelle, il est conseillé de séparer les calculs qui dépendent de nouvelles colonnes dans un flux de travail distinct. Pour poursuivre le calcul, vous pouvez utiliser la carte Run Workflow.
 
-**Run Workflow**
+**Exécuter le flux**
 
 <figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -155,7 +155,7 @@ Avec cette carte, vous pouvez spécifier le nom d'un flux de travail à exécute
 
 ### **Ajouter des surcharges calculées dans une colonne existante** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
-<figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
+
 
 Si vous souhaitez ajouter toutes les surcharges comme une remise négative dans la colonne de remise, vous pouvez utiliser la carte de calcul. Il peut y avoir des entrées dans cette colonne ; vous pouvez la définir comme l'une des variables de la carte, y soustraire le MTZ et ajouter le résultat à nouveau dans cette colonne. Au cas où il y aurait des champs vides (surcharges uniquement pour certains articles), il supposera une valeur de 0 pour son calcul.
 
@@ -166,3 +166,5 @@ Après avoir calculé les surcharges, vous pouvez vouloir notifier un utilisateu
 <figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Carte de notification du flux de travail"><figcaption></figcaption></figure>
 
 Selon les paramètres, l'utilisateur se voit assigner une nouvelle tâche dans DocBits et, en option, un e-mail pour l'informer de sa nouvelle tâche.
+
+Les images actualisées montrent des brouillons non enregistrés de conditions et d’actions. Adaptez les rôles et conditions à votre organisation.

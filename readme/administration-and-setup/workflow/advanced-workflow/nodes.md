@@ -1,5 +1,42 @@
 # Nœuds
 
+## Vidéo: Nœuds et chemins
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/fr.mp4" %}
+
+[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_logic/v2/fr.vtt) · 1:49
+
+<details>
+<summary>Transcription</summary>
+
+**Le rôle de chaque nœud**
+
+Start lance manuellement. When définit un événement. Aucun des deux ne reçoit de connexion entrante. And vérifie une condition. Then exécute une action. Les deux constructeurs partagent le catalogue de cartes. Les notes expliquent sans être exécutées.
+
+**Trois résultats distincts**
+
+Reliez une sortie à l’entrée suivante. Dans le concepteur, bleu signifie succès, orange condition fausse, rouge erreur. And possède trois résultats ; Then, succès et erreur. Les vues d’exécution affichent le succès en vert.
+
+**Construisez une alternative**
+
+Vérifiez si une facture dépasse le seuil. Reliez bleu à l’approbation, orange au traitement normal et rouge à la gestion des erreurs. Une condition fausse continue par son chemin connecté ; elle n’arrête pas toutes les branches.
+
+**Joindre avec Wait ALL**
+
+Wait ALL réunit des branches. Chaque nœud source doit avoir suivi un chemin relié à la jonction. Connectez les deux contrôles requis et l’action suivante. Un chemin non sélectionné ne fournit pas le résultat attendu.
+
+**Alternatives avec ANY et OR**
+
+Wait ANY et OR réunissent les branches si au moins une source suit un chemin connecté. OR exige deux nœuds sources distincts. Ces jonctions ne rendent pas les choix exclusifs et n’annulent pas d’autres actions. Testez le graphe entier.
+
+**Gardez un graphe exécutable**
+
+Rendez les nœuds accessibles depuis une entrée. Évitez les cycles et les connexions entrantes vers Start ou When. Incluez une action Then et validez les chemins. Les nœuds Delay importés exigent une durée positive ; Ajouter ne propose pas Delay.
+
+</details>
+
+[Voir les cinq chapitres](../advanced-workflow-videos.md)
+
 Un Workflow Avancé est un graphe de **nœuds** reliés par des arêtes. Vous ajoutez des nœuds depuis le menu **+ Add** (ou par un clic droit sur le canevas) et vous les reliez pour définir le flux d'exécution.
 
 <figure><img src="../../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Menu d'ajout de nœud avec les types de nœuds disponibles"><figcaption><p>Le menu de nœud <strong>+ Add</strong> — les types de nœuds disponibles.</p></figcaption></figure>

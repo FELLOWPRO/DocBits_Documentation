@@ -35,3 +35,7 @@ Cela ne s'applique qu'aux documents identifiés comme des **avoirs**. Les factur
 
 * **Laissez-le activé** si votre système comptable ou ERP attend que les avoirs arrivent avec des montants négatifs (c'est la configuration la plus courante).
 * **Désactivez-le** uniquement si votre système en aval gère déjà le signe lui-même ou attend que les montants des avoirs restent positifs.
+
+## Type de document incorrect ?
+
+Ce paramètre dépend de la classification correcte des avoirs. Si un eDoc est enregistré comme Invoice, vérifiez d’abord la transformation, Extraction Paths et les scripts suivants. Suivez le [guide de diagnostic de la classification](../../global-settings/document-types/edi/credit-note-recognized-as-invoice.md) avant de modifier les signes ou de relancer le traitement de documents existants.

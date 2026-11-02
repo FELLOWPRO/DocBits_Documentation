@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych PINT A-NZ w DocBits
 
 # 🇦🇺 PINT A-NZ
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Australia](countries/australia.md). Aktywne oznaczenie rodziny nie ma stałego numeru wydania PINT. Sprawdź identyfikatory dostosowania i profilu; dostarczenie przez sieć wymaga osobnej integracji.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj / Region** | Australia / Nowa Zelandia |
@@ -24,7 +30,7 @@ PINT A-NZ (Peppol International Model for Australia-New Zealand) to zlokalizowan
 
 ## Domyślny podgląd
 
-<figure><img src="aunz-pint-preview.png" alt="Podgląd faktury PINT A-NZ w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury PINT A-NZ</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Podgląd faktury PINT A-NZ w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury PINT A-NZ</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -90,5 +96,5 @@ Oba są klasyfikowane pod elektronicznym typem dokumentu `PINT A-NZ`.
 ## Zobacz także
 
 - [AUNZ PINT](aunz-pint.md) — Przegląd i funkcje specyficzne dla A-NZ
-- [AUNZ PINT Self-Billing](aunz-pint-self-billing.md) — Wariant self-billing
+- [AUNZ PINT Samofakturowanie](aunz-pint-self-billing.md) — Wariant samofakturowania
 - [Obsługiwane dokumenty elektroniczne](./)

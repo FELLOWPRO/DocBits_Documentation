@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych Ecuador SRI (Factura Electrón
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Ekwador](countries/ecuador.md). Wpis klasyfikacji not kredytowych nie ma dedykowanego pakietu ekstrakcji w sprawdzonym stanie. Sprawdź faktycznie używane mapowanie i typ dokumentu źródłowego.
+{% endhint %}
+
 | Właściwość | Wartość |
 |-----------|---------|
 | **Kraj / Region** | Ekwador |
@@ -33,7 +39,7 @@ Numer faktury jest złożeniem trzech pól: `estab-ptoEmi-secuencial` (np. `001-
 
 ## Domyślny podgląd
 
-<figure><img src="ecuador-sri-preview.png" alt="Podgląd Ecuador SRI Factura w DocBits"><figcaption><p>Domyślny podgląd DocBits dla Factura Electrónica Ecuador SRI (wersja 2.1.0)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ecuador-sri-preview.png" alt="Podgląd Ecuador SRI Factura w DocBits"><figcaption><p>Domyślny podgląd DocBits dla Factura Electrónica Ecuador SRI (wersja 2.1.0)</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -87,5 +93,5 @@ Elementem głównym jest `<factura>` z `id="comprobante"`. Atrybut `version` okr
 
 ## Powiązane
 
-- [Aktualnie obsługiwane standardy e-faktur](../../currently-supported-e-invoice-standards/)
+- [Aktualnie obsługiwane standardy e-faktur](../currently-supported-e-invoice-standards/README.md)
 - [Obsługiwane dokumenty elektroniczne](./)

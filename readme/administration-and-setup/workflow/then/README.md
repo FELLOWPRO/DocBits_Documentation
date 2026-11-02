@@ -1,80 +1,73 @@
-# Then
+# Wtedy
 
-## Przegląd kart akcji "Then..."
+Karta **Wtedy** informuje przepływ pracy, co ma zrobić po wyzwoleniu **Kiedy** i wszelkich warunkach **I**. W **Kreatorze przepływu pracy** wybierz **Dodaj kartę** w obszarze **Następnie...**. Wybierz kategorię po lewej stronie lub wpisz nazwę w **Karta wyszukiwania**. Wybierz podgląd karty, aby go dodać, wypełnij pola widoczne na karcie i zapisz przepływ pracy. Przewiń selektor, aby zobaczyć więcej kart. Wybierz **×**, aby zamknąć bez dodawania karty. Pełną sekwencję można znaleźć w [Przebieg pracy](..).
 
-### **1. Akcje Document Field:**
+Poniższe podglądy pokazują dostępne działania, a nie ukończone ustawienia. Wybierz działanie, które odpowiada pożądanemu wynikowi.
 
-* **Invert Checkbox:** Ta akcja przełącza stan pola wyboru w dokumencie.
-* **Set Checkbox:** Ustawia stan pola wyboru na true (zaznaczone) lub false (niezaznaczone).
-* **Set Field to Text:** Ta akcja ustawia określone pole dokumentu na podaną wartość tekstową.
+## Pole dokumentu
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Ustaw lub odwróć pole wyboru, umieść tekst w polu lub skopiuj jedno pole do drugiego. Wybierz nazwy pól i wartość wymaganą przez kartę. Zobacz [Pole dokumentu](document-field).
 
-### **2. Akcje Document:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-* **Approve the Document:** Oznacza dokument jako zatwierdzony w systemie.
-* **Reject the Document:** Oznacza dokument jako odrzucony.
+## Dokument
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Wybierz **Zatwierdź dokument** lub **Odrzuć dokument**, gdy przepływ pracy powinien podjąć tę decyzję. Jeśli zatwierdzenie ma zależeć od sprawdzenia, użyj najpierw warunku **I**. Zobacz [Dokument](document).
 
-### **3. Akcje Export:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-* **Export document with export configuration:** Uruchamia proces eksportu z określoną konfiguracją eksportu.
-* **Start Export:** Uruchamia proces eksportu.
+## Logika
 
+Użyj tych kart, aby przekonwertować wartości między formatami liczbowymi, tekstowymi i boolowskimi lub odczytać wartość z formatu JSON. Wybierz pola wejściowe i wyjściowe na wybranej karcie.
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Stan
 
-### **4. Akcje Status:**
+Wybierz **Zmień status**, aby przenieść dokument do wybranego statusu. Karta może także uruchomić inny przepływ pracy. Zobacz [Status](status).
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
+## Podpowiedzi i skrypty
 
-* **Change Status:** Zmienia status dokumentu lub zadania na określony nowy status.
+Wybierz tę kategorię, aby uruchomić skrypt zachęty DocOperator. Wybierz skrypt i zmienne wymagane przez kartę. Karta oferuje również ustawienia wykonywania, takie jak ponowne próby.
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-### **5. Akcje Task:**
+## Eksportuj
 
-* Przypisania i powiadomienia:
-  * **Assign Task:** Tworzy i przypisuje zadanie z określonymi szczegółami do osoby lub grupy, z opcjami powiadomienia ich za pośrednictwem wiadomości e-mail.
-  * **Create a New Task:** Podobne do przypisywania, ale skupione na utworzeniu całkowicie nowego zadania w systemie.
+Rozpocznij eksport, eksportuj z wybraną konfiguracją lub wstaw do kolejki końcowy eksport. Wybierz opcję eksportu konfiguracji i zadania oczekującego widoczną na Twojej karcie. Zobacz [Eksport](export).
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-### **6. Akcje Table:**
+## Zadanie
 
-* **Calculate in Table:** Wykonuje obliczenia na danych tabelarycznych na podstawie określonych warunków i zapisuje wyniki w wyznaczonej kolumnie.
-* **Change Entries:** Aktualizuje wpisy w tabeli na podstawie określonych warunków.
+Utwórz zadanie lub powiadomienie i przypisz je do użytkownika lub grupy. Wprowadź tytuł, opis, priorytet i ustawienia powiadomień wymagane przez kartę. Niektóre karty przydzielane są sekwencyjnie. Zobacz [Zadanie](task).
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-### **7. Akcje Assignee:**
+## E-mail
 
-* **Assign User from Field:** Przypisuje użytkownika do zadania lub dokumentu na podstawie danych użytkownika zapisanych w określonym polu, z opcją użytkownika zapasowego, jeśli podstawowy jest niedostępny.
-* **Assign Document to User or Group:** Bezpośrednio przypisuje dokument do użytkownika lub grupy, zapewniając właściwe przypisanie odpowiedzialności.
+Wyślij wiadomość e-mail przy użyciu wybranego szablonu do odbiorców lub grup. Wybierz szablon i miejsce docelowe na karcie.
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-### **8. Akcje interakcji zewnętrznych:**
+## Tabela
 
-* **Call API:** Wysyła żądanie do zewnętrznego API, które można dostosować za pomocą określonych metod, parametrów i danych.
-* **Send HTTPS Request:** Podobne do wywołań API, ale specjalnie sformatowane dla protokołów HTTPS.
+Zmień wpisy lub oblicz wartości w tabeli dokumentu. Wybierz tabelę, kolumny, operator i kolumnę wynikową żądaną przez kartę. Zobacz [Tabela](table).
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-### **9. Przetwarzanie zaawansowane:**
+## Osoba przypisana
 
-* **Run Workflow:** Wyzwala inny przepływ pracy w systemie, umożliwiając łączenie złożonych procesów.
+Przypisz dokument do użytkownika, grupy, odbiorcy lub organizacji podrzędnej. Niektóre karty wykorzystują pola lub tabelę decyzyjną i oferują rozwiązanie awaryjne. Wybierz właściwe miejsce docelowe i rezerwuj na wybranej karcie. Zobacz [Cesjonariusz](assignee).
 
-#### Praktyczne zastosowanie
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-Te karty akcji służą do automatyzacji reakcji na podstawie określonych wyzwalaczy zidentyfikowanych we wcześniejszych częściach konfiguracji przepływu pracy. Na przykład:
+## Akcja
 
-* Jeśli dokument zostanie zidentyfikowany jako wymagający przeglądu, akcja "Approve the Document" może zostać automatycznie wyzwolona po spełnieniu wszystkich określonych warunków.
-* W przypadku zadań zarządzania danymi akcje "Set Checkbox" lub "Set Field to Text" zapewniają automatyczną aktualizację pól dokumentu, redukując ręczne wprowadzanie danych i ryzyko błędów.
-* Złożone zadania, takie jak interakcje z API czy zmiany statusu, usprawniają interakcje nie tylko w ramach systemu ERP, ale także z usługami i narzędziami zewnętrznymi, zwiększając integrację i funkcjonalność.
+Uruchom inny przepływ pracy, wyślij żądanie HTTPS, wywołaj API lub skorzystaj z karty kalkulacyjnej zwiększającej koszty. Działania te mogą mieć wpływ na inne systemy; zapytaj administratora, jakiego punktu końcowego i ustawień użyć. Zobacz [Akcja](action).
 
-### Podsumowanie
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-Sekcja "Then..." w systemie przepływu pracy zapewnia rozbudowane narzędzia do definiowania precyzyjnych akcji, które powinny nastąpić w wyniku spełnienia warunków w przepływie pracy. Dzięki skutecznemu wykorzystaniu tych akcji firmy mogą automatyzować rutynowe procesy, zapewniać dokładność danych i dynamicznie reagować na zmieniające się informacje oraz stany systemu. Zrozumienie, jak konfigurować i wykorzystywać te akcje, jest kluczem do maksymalizacji wydajności i skuteczności możliwości przepływu pracy systemu ERP.
+[Szczegółowe pola karty logicznej, ścieżki JSON, wyzwalacze i testy](../cards-overview/logic-cards-guide.md).

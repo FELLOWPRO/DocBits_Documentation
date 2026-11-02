@@ -1,7 +1,5 @@
-# Compare with Purchase Order
+# Porównaj z zamówieniem zakupu
 
+Karty tej kategorii w przeglądarce **Dodaj kartę** Kreatora przepływów:
 
-Karty tej kategorii w przeglądarce **Add Card** Kreatora przepływów:
-
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare.png" alt="Workflow Builder card category"><figcaption><p>Karty tej kategorii.</p></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>

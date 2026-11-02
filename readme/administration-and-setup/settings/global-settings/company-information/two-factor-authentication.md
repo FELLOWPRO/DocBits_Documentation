@@ -12,9 +12,9 @@ Diese Einstellung finden Sie unter **Einstellungen → Globale Einstellungen →
 
 1. Gehen Sie zu **Einstellungen → Globale Einstellungen → Unternehmensinformationen**.
 2. Öffnen Sie den Abschnitt **Zwei-Faktor-Authentifizierung**.
-3. Aktivieren Sie **Zwei-Faktor-Authentifizierung für alle Mitglieder verlangen** und klicken Sie auf **Speichern**.
+3. Aktivieren Sie **Zwei-Faktor-Authentifizierung für alle Mitglieder erzwingen** und klicken Sie auf **Speichern**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="The organisation MFA requirement toggle and adoption report"><figcaption><p>Aktivieren Sie die Anforderung für alle Mitglieder und überwachen Sie die Verbreitung darunter.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement-de.png" alt="Deutsche Einstellung zur organisationsweiten Zwei-Faktor-Authentifizierung"><figcaption><p>Deutschsprachiger Abschnitt zur MFA-Anforderung. Der Schalter ist in dieser Ansicht deaktiviert; Voraussetzungen und verfügbare Steuerelemente hängen vom Zustand der Organisation ab.</p></figcaption></figure>
 
 Nach dem Speichern wird die Änderung innerhalb einer Minute wirksam. Ab diesem Zeitpunkt gilt:
 
@@ -32,15 +32,15 @@ Unterhalb des Schalters zeigt das Panel **MFA-Verbreitung**, wie verbreitet die 
 
 * den gesamten **Verbreitungsprozentsatz** und einen Fortschrittsbalken,
 * wie viele Ihrer Mitglieder die 2FA aktiviert haben (z. B. *0 von 74 Mitgliedern*),
-* eine Aufschlüsselung nach Faktor — **Authenticator**, **E-Mail** und **Passkey**.
+* eine Aufschlüsselung nach Faktor — **Authentifikator**, **E-Mail** und **Passkey**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>Der MFA-Verbreitungsbericht: Gesamtprozentsatz, eingerichtete Mitglieder und eine Aufschlüsselung nach Faktor.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="Bericht zur Nutzung der Mehrfaktor-Authentifizierung"><figcaption><p>Der MFA-Verbreitungsbericht: Gesamtprozentsatz, eingerichtete Mitglieder und eine Aufschlüsselung nach Faktor.</p></figcaption></figure>
 
 Nutzen Sie ihn, um die Bereitschaft einzuschätzen: Steigern Sie zunächst die Verbreitung und aktivieren Sie dann die Anforderung, sodass weniger Mitglieder beim Einrichtungsschritt blockiert werden.
 
 ## Was Mitglieder sehen
 
-Ein Mitglied, das zur Einrichtung verpflichtet ist, wird bei seiner nächsten Anmeldung zur 2FA-Einrichtung geleitet und wählt eine Methode (Authenticator-App, E-Mail-Code oder Passkey). Die Schritte für Endbenutzer werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../../../overview-and-basics/two-factor-authentication.md) beschrieben.
+Ein Mitglied, das zur Einrichtung verpflichtet ist, wird bei seiner nächsten Anmeldung zur 2FA-Einrichtung geleitet und wählt eine Methode (Authenticator-App, E-Mail-Code oder Passkey). Die Schritte für Endbenutzer werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../../../security/two-factor-authentication.md) beschrieben.
 
 ## Verwandte Sicherheitskontrollen
 

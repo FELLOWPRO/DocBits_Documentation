@@ -4,9 +4,15 @@ description: Unterstützung für elektronische Dokumente aus Kolumbien (DIAN) in
 
 # 🇨🇴 Colombia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Kolumbien](countries/colombia.md). Für den Gutschrift-Klassifizierungseintrag ist im geprüften Status kein eigenes Extraktionspaket ausgewiesen. Bestätigen Sie die tatsächlich verwendete Zuordnung, statt die Unterstützung aus dem Rechnungseintrag abzuleiten.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
-| **Land / Region** | Colombia |
+| **Land / Region** | Kolumbien |
 | **Dokumenttypen** | Rechnung (Factura Electrónica), Gutschrift (Nota de Crédito), Documento Soporte |
 | **Format** | XML (UBL 2.1) |
 | **Standard** | DIAN 2.1 (Dirección de Impuestos y Aduanas Nacionales) |
@@ -34,7 +40,7 @@ Der DIAN-Identifikator (**NIT** — Número de Identificación Tributaria) verwe
 
 ## Standardvorschau
 
-<figure><img src="colombia-dian-preview.png" alt="Vorschau der Colombia DIAN Factura Electrónica in DocBits"><figcaption><p>Standardvorschau in DocBits für eine COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/colombia-dian-preview.png" alt="Vorschau der Colombia DIAN Factura Electrónica in DocBits"><figcaption><p>Standardvorschau in DocBits für eine COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
 
 ## Feldzuordnung
 
@@ -79,5 +85,5 @@ Das Wurzelelement ist `<Invoice>` (UBL 2.1) für Rechnungen und `<CreditNote>` f
 
 ## Verwandte Themen
 
-- [Aktuell unterstützte E-Rechnungsstandards](../../currently-supported-e-invoice-standards/)
+- [Aktuell unterstützte E-Rechnungsstandards](../currently-supported-e-invoice-standards/README.md)
 - [Unterstützte elektronische Dokumente](./)

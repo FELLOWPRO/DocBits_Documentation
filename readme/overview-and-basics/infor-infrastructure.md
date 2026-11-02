@@ -4,7 +4,7 @@
 
 Wir verstehen, wie wichtig eine sichere Datenübertragung ist. Deshalb verwenden wir den offenen Port 443, den Standardport für HTTPS, um sicherzustellen, dass alle übertragenen Daten verschlüsselt und sicher sind. Unsere SSL-gesicherten Verbindungen garantieren, dass Ihre Daten bei jedem Schritt des Prozesses geschützt sind.
 
-<figure><img src="../.gitbook/assets/secure.svg" alt="Open Port 443 &#x26; Secure Communication - DocBits"><figcaption><p>Sichere Datenübertragung</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/secure.svg" alt="Port 443 öffnen und sichere Kommunikation mit DocBits"><figcaption><p>Sichere Datenübertragung</p></figcaption></figure>
 
 ### Kommunikation mit der Datenbank
 

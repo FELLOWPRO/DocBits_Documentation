@@ -1,81 +1,57 @@
-# Test: Email Import and Handling Tests
+# Test: E-Mail-Import und -Verarbeitung
 
-## What's Being Tested?
+## Was wird getestet?
 
-These tests ensure that our email import system works correctly. The main goals are to:
+Diese Tests prüfen, ob der E-Mail-Import korrekt funktioniert. Die wichtigsten Ziele sind:
 
-1. **Send emails** with attachments.
-2. **Receive and move emails** to specific folders.
-3. **Check if emails are read or unread.**
-4. **Import emails into our system.**
-5. **Clean up** by deleting emails and imported documents afterward.
+1. E-Mails mit Anhängen senden.
+2. E-Mails empfangen und in bestimmte Ordner verschieben.
+3. Prüfen, ob die E-Mails gelesen oder ungelesen sind.
+4. E-Mails ins System importieren.
+5. Anschließend E-Mails und importierte Dokumente entfernen.
 
-## Steps Involved
+## Testablauf
 
-1. **Setup:**
-   * **Get Environment Settings:** Load the email server details and credentials from environment variables.
-   * **Encrypt Email Password:** Securely encrypt the email password.
-2. **Send and Manage Emails:**
-   * **Send Emails:** Use an SMTP function to send emails with specific subjects and attachments.
-   * **Move Emails:** Use IMAP functions to move emails to the target folder.
-   * **List Folders:** Check if the target folder exists.
-   * **Delete Emails:** Clean up emails by deleting them from folders.
-   * **Check Email Status:** Verify if emails are marked as unread or read.
-3.  **Test Sequence**
+1. **Vorbereitung:**
+   * E-Mail-Serverdaten und Zugangsdaten aus den Umgebungsvariablen laden.
+   * Das E-Mail-Passwort sicher verschlüsseln.
+2. **E-Mails senden und verwalten:**
+   * Mit einer SMTP-Funktion E-Mails mit festgelegten Betreffzeilen und Anhängen senden.
+   * Die E-Mails mit IMAP-Funktionen in den Zielordner verschieben.
+   * Über die Ordnerliste prüfen, ob der Zielordner vorhanden ist.
+   * E-Mails zum Aufräumen aus den Ordnern löschen.
+   * Prüfen, ob die E-Mails als ungelesen oder gelesen markiert sind.
+3. **Testsequenz:**
 
-    **Initial Setup:**
+   **Initialisierung:**
+   * Die Verbindung zum E-Mail-Server prüfen und die Verbindungs-ID abrufen.
+   * Prüfen, ob die Anmeldung mit den gespeicherten Zugangsdaten funktioniert.
+   * Prüfen, ob der Zielordner auf dem Server vorhanden ist.
 
-    * **Check Connection:** Verify connection to the email server and get the connection ID.
-    * **Login Test:** Confirm that logging in with stored credentials works.
-    * **Folder Check:** Ensure the target folder exists on the email server.
+   **E-Mail-Vorgänge:**
+   * Drei Test-E-Mails mit jeweils eindeutigem Betreff senden.
+   * Die IDs der gesendeten E-Mails aus dem Posteingang abrufen.
+   * Die E-Mails aus dem Posteingang in den Zielordner verschieben.
+   * Prüfen, ob die E-Mails im Zielordner als ungelesen markiert sind.
 
-    **Email Operations:**
+   **E-Mail-Import:**
+   * Die E-Mails aus dem Zielordner ins System importieren.
+   * Prüfen, ob die importierten E-Mails korrekt abgerufen und protokolliert wurden.
 
-    * **Send Test Emails:** Send three emails with unique subjects.
-    * **Retrieve Email IDs:** Get the IDs of the sent emails from the inbox.
-    * **Move Emails:** Move these emails from the inbox to the target folder.
-    * **Check Email Status:** Ensure the emails in the target folder are marked as unread.
+   **Protokollprüfung:**
+   * Prüfen, ob die Betreffzeilen der gesendeten E-Mails in den Importprotokollen erfasst wurden.
 
-    **Email Importing:**
+   **Bereinigung:**
+   * Die aus den E-Mails importierten Dokumente entfernen.
+   * Die gesendeten und verschobenen E-Mails aus den Ordnern löschen.
 
-    * **Fetch Emails:** Import emails from the target folder into our system.
-    * **Check Imported Emails:** Ensure the imported emails are correctly fetched and logged.
+### Erläuterung der einzelnen Tests
 
-    **Log Verification:**
-
-    * **Check Import Logs:** Verify that the subjects of the sent emails are recorded in the import logs.
-
-    **Cleanup:**
-
-    * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-    * **Delete Emails:** Clean up by deleting the sent and moved emails from the folders.
-
-### Detailed Explanation of Each Test
-
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
-* **Email Connection Tests:**
-  * **Get Connection ID:** Check if we can connect to the email server and get an ID for the connection.
-  * **Login Verification:** Ensure that logging in to the email server works properly.
-* **Folder Verification Tests:**
-  * **Check Target Folder:** Make sure the target folder exists on the email server.
-  * **Verify Folder Listing:** Ensure the list of folders from the server matches our expectations.
-* **Email Sending and ID Retrieval:**
-  * **Send Emails:** Send three test emails with specific subjects and attachments.
-  * **Get Email IDs:** Retrieve the unique IDs of these sent emails from the inbox.
-* **Email Moving and Status Checking:**
-  * **Move Emails to Folder:** Move the test emails from the inbox to the target folder.
-  * **Check Unread Status:** Ensure the emails are marked as unread after moving.
-* **Email Fetching and Response Validation:**
-  * **Fetch Emails from Folder:** Import the emails from the target folder into our system.
-  * **Validate Fetched Emails:** Confirm that the fetched emails match the sent emails.
-* **Import Log Verification:**
-  * **Fetch Import Log:** Retrieve the log of imported emails.
-  * **Check Email Subjects in Log:** Ensure the subjects of the test emails are present in the import log.
-* **Cleanup:**
-  * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-  * **Delete Emails:** Delete the test emails from the inbox and the target folder to keep everything clean.
-
-\
-
-
+* **Vorbereitung und Initialisierung:** Gemeinsame Testdaten vorbereiten.
+* **Verbindungstests:** Die Verbindung zum E-Mail-Server und den Abruf einer Verbindungs-ID prüfen. Sicherstellen, dass die Anmeldung funktioniert.
+* **Ordnerprüfung:** Sicherstellen, dass der Zielordner vorhanden ist und die vom Server gelieferte Ordnerliste den Erwartungen entspricht.
+* **Versand und ID-Abruf:** Drei E-Mails mit festgelegten Betreffzeilen und Anhängen senden. Ihre eindeutigen IDs aus dem Posteingang abrufen.
+* **Verschieben und Statusprüfung:** Die Test-E-Mails in den Zielordner verschieben und anschließend ihren Ungelesen-Status prüfen.
+* **Abruf und Antwortprüfung:** Die E-Mails aus dem Zielordner importieren und prüfen, ob die abgerufenen E-Mails mit den gesendeten übereinstimmen.
+* **Importprotokoll prüfen:** Das Protokoll der importierten E-Mails abrufen und sicherstellen, dass die Betreffzeilen der Test-E-Mails darin vorkommen.
+* **Bereinigung:** Die importierten Dokumente entfernen und die Test-E-Mails aus Posteingang und Zielordner löschen.

@@ -1,35 +1,38 @@
-# Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)
+# Fall 8b, 9b: Menge außerhalb der Toleranz (genehmigt), Stückpreis außerhalb der Toleranz (genehmigt)
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-Both the quantity and unit price are outside the tolerance range but have been approved.
 
-## Action:
+## Szenario:
 
-The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+Sowohl die Menge als auch der Stückpreis liegen außerhalb der Toleranz, wurden jedoch genehmigt.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Quantity: 200 units
-  * Unit Price: $25.00 per unit
-  * Total Amount: $5,000.00
-* **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, approved)
-  * Unit Price: $27.00 per unit (outside tolerance of 8%, approved)
-  * Total Amount: $5,940.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+Das System verarbeitet die Transaktion anhand der Rechnungswerte für Menge und Stückpreis und berücksichtigt gegebenenfalls erforderliche Anpassungen oder Positionszuschläge.
 
-Since both the quantity (220 units) and unit price ($27.00) are outside the acceptable tolerance limits but have been approved, the system will:
+## Beispiel:
 
-1. **Accept the Approved Quantity:** The system accepts the invoiced quantity of 220 units as it has been approved despite being outside the tolerance range.
-2. **Accept the Approved Unit Price:** The system accepts the invoiced unit price of $27.00 per unit as it has been approved despite being outside the tolerance range.
-3. **Calculate the Total Amount:** The system calculates the total amount based on the approved invoice values:
-   * **Total Amount = Quantity × Unit Price**
-   * **Total Amount = 220 units × $27.00 per unit = $5,940.00**
-4. **Apply Necessary Adjustments or Line Charges:** If applicable, the system may apply any additional line charges or adjustments based on the organization's policies for handling approved variances.
-5. **Process the Invoice:** The system processes the invoice using the approved values for both quantity and unit price, finalizing the transaction at the total amount of $5,940.00.
+* **Bestellung (PO):**
+  * Menge: 200 Einheiten
+  * Stückpreis: $25.00 je Einheit
+  * Gesamtbetrag: $5,000.00
+* **Eingegangene Rechnung:**
+  * Menge: 220 Einheiten (Abweichung außerhalb der Toleranz: 10%, genehmigt)
+  * Stückpreis: $27.00 je Einheit (Abweichung außerhalb der Toleranz: 8%, genehmigt)
+  * Gesamtbetrag: $5,940.00
+* **Toleranzgrenzen:**
+  * Mengentoleranz: ±5%
+  * Stückpreistoleranz: ±2%
 
-This approach ensures that the transaction is processed according to the approved variances, allowing flexibility while maintaining accurate financial records.
+Sowohl die Menge (220 Einheiten) als auch der Stückpreis ($27.00) liegen außerhalb der zulässigen Toleranzgrenzen, wurden jedoch genehmigt. Das System führt folgende Schritte aus:
+
+1. **Genehmigte Menge akzeptieren:** Das System akzeptiert die berechnete Menge von 220 Einheiten, da sie trotz Überschreitung des Toleranzbereichs genehmigt wurde.
+2. **Genehmigten Stückpreis akzeptieren:** Das System akzeptiert den berechneten Stückpreis von $27.00 je Einheit, da er trotz Überschreitung des Toleranzbereichs genehmigt wurde.
+3. **Gesamtbetrag berechnen:** Das System berechnet den Gesamtbetrag anhand der genehmigten Rechnungswerte:
+   * **Gesamtbetrag = Menge × Stückpreis**
+   * **Gesamtbetrag = 220 Einheiten × $27.00 je Einheit = $5,940.00**
+4. **Erforderliche Anpassungen oder Positionszuschläge berücksichtigen:** Je nach den Organisationsrichtlinien zum Umgang mit genehmigten Abweichungen kann das System zusätzliche Positionszuschläge oder Anpassungen berücksichtigen.
+5. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit den genehmigten Werten für Menge und Stückpreis und schließt die Transaktion mit dem Gesamtbetrag von $5,940.00 ab.
+
+Damit wird die Transaktion entsprechend den genehmigten Abweichungen flexibel verarbeitet und die Finanzdaten bleiben korrekt.

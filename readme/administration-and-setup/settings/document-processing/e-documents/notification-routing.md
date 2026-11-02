@@ -1,6 +1,6 @@
 # Benachrichtigungsrouting
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_routing.png" alt="Benachrichtigungs-Routen"><figcaption><p>Zuordnung von Validierungs-Findings zu Agenten</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-routing-de.png" alt="Benachrichtigungs-Routen"><figcaption><p>Zuordnung von Validierungs-Findings zu Agenten</p></figcaption></figure>
 
 Die Seite **Benachrichtigungsrouting** (**E-Dokumente → Aktionen**) ordnet Validierungs-Findings den **KI-Workforce-Agenten** zu. Jedes blockierende Finding löst genau einen Agenten aus – denjenigen, dessen Code-Präfix am längsten übereinstimmt. Alles ohne Treffer fällt auf den Standard-Agenten für Lieferantenbenachrichtigungen zurück.
 
@@ -20,7 +20,7 @@ Wählen Sie für jede Route den bearbeitenden Agenten aus dem Dropdown. Über **
 
 ## Verfügbare Agenten
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_agents.png" alt="Registry der verfügbaren Agenten"><figcaption><p>Schreibgeschützte Registry der KI-Workforce-Agenten</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-agents-de.png" alt="Registry der verfügbaren Agenten"><figcaption><p>Schreibgeschützte Registry der KI-Workforce-Agenten</p></figcaption></figure>
 
 Der Abschnitt **Verfügbare Agenten** ist eine schreibgeschützte Registry der mit Ihrer Installation ausgelieferten KI-Workforce-Agenten, zum Beispiel:
 

@@ -1,6 +1,6 @@
 # AI Workforce
 
-<figure><img src="../../.gitbook/assets/docnet-agents-infographic-en.png" alt="AI Workforce Agents Infographic"><figcaption><p>DocBits Multi-Agenten-System für die autonome Dokumentenverarbeitung</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docnet-agents-infographic-en.png" alt="Infografik der AI-Workforce-Agenten"><figcaption><p>DocBits Multi-Agenten-System für die autonome Dokumentenverarbeitung</p></figcaption></figure>
 
 ## Überblick
 
@@ -144,3 +144,5 @@ Jeder Agent – ob System- oder benutzerdefinierter Agent – verfügt über ein
 ### Erstellen benutzerdefinierter Agenten
 
 Über die Standardagenten hinaus können Sie eigene **Orchestratoren** und **Spezialisten** erstellen, die zu Ihren Prozessen passen. Öffnen Sie **Agenten → Agent erstellen**, um den Assistenten zu starten, der durch dieselbe oben beschriebene Konfiguration führt: Wählen Sie die **Rolle** (Orchestrator oder Spezialist), geben Sie dem Agenten einen **Namen** und eine klare **Beschreibung** (ein Orchestrator wird anhand dieses Textes ausgewählt, und ein Orchestrator wählt seine Spezialisten anhand deren Beschreibungen aus), schreiben Sie seinen Prompt, wählen Sie seine Skills, legen Sie sein Reasoning Effort fest und – bei Orchestratoren – wählen Sie die Spezialisten in seinem Agent Pool aus. Benutzerdefinierte Agenten können jederzeit vollständig bearbeitet oder gelöscht werden.
+
+Ausführliche Anleitungen: [Teams und Discord verbinden](../ai-workforce-chat-connections.md) und [Lernspeicher prüfen](../ai-workforce-agent-memory.md).

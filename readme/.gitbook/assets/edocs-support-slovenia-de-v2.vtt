@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.485
+Für e-SLOG 1.6 und 2.0 gibt es separate
+Einträge. Die beiden Versionen haben
+
+formats_02
+00:00:06.485 --> 00:00:11.407
+unterschiedliche XML-Strukturen.
+Orientieren Sie sich am Quellschema, statt
+
+formats_03
+00:00:11.407 --> 00:00:14.467
+eine Regel anhand des Dateinamens
+auszuwählen.
+
+workflow_01
+00:00:15.217 --> 00:00:20.523
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:20.523 --> 00:00:27.233
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:27.233 --> 00:00:28.867
+aktiviert ihn nicht.
+
+accept_01
+00:00:29.617 --> 00:00:34.249
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:34.249 --> 00:00:40.379
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:40.379 --> 00:00:43.500
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

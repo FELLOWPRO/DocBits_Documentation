@@ -1,16 +1,24 @@
-# Login Analytics
+# Anmelde-Analyse
+
+## Video-Tutorial: Unternehmen, Abonnement und Audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/de.mp4" %}
+Unternehmensinformationen, Abonnement-Plan und Audit-Protokoll in DocBits
+{% endembed %}
+
+Das Video zeigt die Unternehmensinformationen und -präferenzen, den Abonnement-Plan, die Anmeldeaktivität und das Audit-Protokoll.
 
 Die **Anmelde-Analyse** bietet Administratoren einen schreibgeschützten, organisationsweiten Überblick darüber, *wann* und *wie oft* sich Personen bei DocBits anmelden. Sie beantwortet Fragen wie „Steigt die Zahl der Anmeldungen?“, „Wie viele unterschiedliche Benutzer waren in diesem Monat aktiv?“ und „Wann treten die Nutzungsspitzen auf?“ – ganz ohne die Anmeldedaten oder personenbezogenen Daten einzelner Benutzer offenzulegen.
 
-> **Zugriff:** Öffnen Sie **Einstellungen → Organisation & Zugriff → Users** und klicken Sie oben rechts auf die Schaltfläche **Anmelde-Analyse** (`/settings/login-analytics`).
+> **Zugriff:** Öffnen Sie **Einstellungen → Organisation & Zugriff → Benutzer** und klicken Sie oben rechts auf die Schaltfläche **Anmelde-Analyse** (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Login Analytics page with the activity chart and summary cards"><figcaption><p>Anmeldeaktivität der Organisation über den ausgewählten Zeitraum</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-login_analytics_overview-de.png" alt="Deutsche Anmelde-Analyse mit Zeitraum, Anmeldeaktivität und zusammengefassten Kennzahlen."><figcaption><p>Deutsche Anmelde-Analyse mit Zeitraum, Anmeldeaktivität und zusammengefassten Kennzahlen.</p></figcaption></figure>
 
 ## Zeitraum
 
-Wählen Sie mit dem Auswahlfeld oben rechts den auszuwertenden Zeitraum: **7D**, **30D**, **90D**, **180D**, **Year** oder **Custom** für einen frei wählbaren Datumsbereich. Alles auf der Seite – das Diagramm und die Übersichtskarten – wird für den von Ihnen gewählten Zeitraum neu berechnet.
+Wählen Sie mit dem Auswahlfeld oben rechts den auszuwertenden Zeitraum: **7D**, **30T**, **90T**, **180T**, **Jahr** oder **BENUTZERDEFINIERT** für einen frei wählbaren Datumsbereich. Alles auf der Seite – das Diagramm und die Übersichtskarten – wird für den von Ihnen gewählten Zeitraum neu berechnet.
 
-Das Banner **Data Information** gibt das genau angezeigte Zeitfenster erneut wieder (z. B. *Showing data from 19.05.2026 to 18.06.2026*), sodass stets klar ist, welche Daten die Zahlen abdecken.
+Das Banner **Dateninformation** gibt das genau angezeigte Zeitfenster erneut wieder (z. B. *Showing data from 19.05.2026 to 18.06.2026*), sodass stets klar ist, welche Daten die Zahlen abdecken.
 
 ## Diagramm der Anmeldeaktivität
 
@@ -18,10 +26,10 @@ Das Diagramm stellt über den ausgewählten Zeitraum zwei Datenreihen dar:
 
 | Datenreihe | Bedeutung |
 |--------|-------------|
-| **Total Logins** | Die Anzahl der Anmeldungen pro Tag, einschließlich wiederholter Anmeldungen derselben Person. |
-| **Unique Users** | Wie viele *unterschiedliche* Benutzer sich an diesem Tag angemeldet haben. |
+| **Anmeldungen gesamt** | Die Anzahl der Anmeldungen pro Tag, einschließlich wiederholter Anmeldungen derselben Person. |
+| **Eindeutige Benutzer** | Wie viele *unterschiedliche* Benutzer sich an diesem Tag angemeldet haben. |
 
-Bewegen Sie den Mauszeiger über einen beliebigen Punkt, um den genauen Wert für diesen Tag abzulesen. Spitzen zeigen Ihre Tage mit der höchsten Aktivität; eine flache **Unique Users**-Linie unter einer stark schwankenden **Total Logins**-Linie bedeutet, dass sich wenige Personen viele Male angemeldet haben.
+Bewegen Sie den Mauszeiger über einen beliebigen Punkt, um den genauen Wert für diesen Tag abzulesen. Spitzen zeigen Ihre Tage mit der höchsten Aktivität; eine flache **Eindeutige Benutzer**-Linie unter einer stark schwankenden **Anmeldungen gesamt**-Linie bedeutet, dass sich wenige Personen viele Male angemeldet haben.
 
 ## Übersichtskarten
 
@@ -29,9 +37,9 @@ Unterhalb des Diagramms fassen drei Karten den gesamten ausgewählten Zeitraum z
 
 | Karte | Bedeutung |
 |------|-------------|
-| **Total Logins** | Alle Anmeldungen über den gesamten Zeitraum. |
-| **Unique Users** | Unterschiedliche Benutzer, die sich mindestens einmal angemeldet haben. |
-| **Avg/Day** | Durchschnittliche Anzahl der Anmeldungen pro Tag über den Zeitraum. |
+| **Anmeldungen gesamt** | Alle Anmeldungen über den gesamten Zeitraum. |
+| **Eindeutige Benutzer** | Unterschiedliche Benutzer, die sich mindestens einmal angemeldet haben. |
+| **Durchschn./Tag** | Durchschnittliche Anzahl der Anmeldungen pro Tag über den Zeitraum. |
 
 ## Datenschutz
 

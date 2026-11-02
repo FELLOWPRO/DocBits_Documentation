@@ -1,13 +1,5 @@
 # Aufgabenzähler
 
-Der Aufgabenzähler befindet sich in der oberen rechten Ecke der Startseite des Dashboards.
+Die optionale Anzeige ausstehender Dokumente zeigt Administratoren die Verarbeitungswarteschlange der Organisation. Sie zählt nicht die Ihnen zugewiesenen Dokumente. Filtern Sie für Ihre eigene Arbeit nach zuständiger Person und Status und prüfen Sie die aktive Organisation.
 
-<figure><img src="../../../.gitbook/assets/task-counter1.png" alt=""><figcaption></figcaption></figure>
-
-Hier sehen Sie, wie viele Dokumente sich in Ihrer Warteschlange zur Verarbeitung befinden
-
-<figure><img src="../../../.gitbook/assets/task-counter2.png" alt="" width="563"><figcaption></figcaption></figure>
-
-und wie viele Dokumente nun zur Validierung bereit sind.
-
-<figure><img src="../../../.gitbook/assets/task-counter3.png" alt="" width="563"><figcaption></figcaption></figure>
+Suche, Dokumentaktionen und gespeicherte Ansichten erklärt die [Dashboard-Anleitung](README.md).

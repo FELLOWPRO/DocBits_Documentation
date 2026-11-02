@@ -1,125 +1,128 @@
-# TransactionConfig Pro Template
+# TransactionConfig-Pro-Vorlage
 
-## Comprehensive Configuration Tool for Financial Document Processing
-
-_TransactionConfig Pro Template_ is a powerful configuration tool designed for enterprise environments to manage the processing of financial documents, such as invoices, debit notes, and credit notes. The tool provides detailed mapping and field definitions that allow businesses to automate and customize their financial workflows with precision. Integrating seamlessly with existing Infor ERP systems, _TransactionConfig Pro Template_ ensures accurate handling of complex transactions while maintaining compliance with global financial standards.
-
-### Key Features
-
-• Detailed Mapping: Allows for precise mapping of fields across various transaction types, ensuring data consistency and accuracy.
-
-• Customization: Supports customization of financial document workflows to meet specific business needs.
-
-• Automation: Automates the handling of financial transactions, reducing manual errors and increasing efficiency.
-
-• Integration: Easily integrates with existing Infor M3/LN ERP systems, enhancing the overall financial processing capabilities of the organization.
-
-• Compliance: Ensures compliance with international financial standards and regulations, helping businesses manage global transactions effectively.
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
 
+## Umfassendes Konfigurationswerkzeug für die Verarbeitung von Finanzdokumenten
 
-## Detailed Explanation of Conflict Resolution Cases
+_TransactionConfig Pro Template_ ist ein Konfigurationswerkzeug für die Verarbeitung von Finanzdokumenten wie Rechnungen, Belastungsanzeigen und Gutschriften in Unternehmen. Detaillierte Zuordnungen und Felddefinitionen ermöglichen es, Finanzabläufe gezielt zu automatisieren und anzupassen. Das Werkzeug integriert sich in bestehende Infor-ERP-Systeme. Welche Transaktions- und Korrekturdaten entstehen, bestimmt die konkrete Konfiguration.
 
-_TransactionConfig Pro Template_ includes a series of predefined rules to handle common discrepancies between invoice data and purchase order (PO) data. These rules are designed to automate decision-making when variances occur, ensuring consistency and accuracy in financial processing.
+### Hauptfunktionen
 
-### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
+• Detaillierte Zuordnung: Felder lassen sich für unterschiedliche Transaktionsarten präzise zuordnen, um konsistente und genaue Daten sicherzustellen.
 
-**Scenario:** Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+• Anpassung: Finanzdokumenten-Workflows können an die Anforderungen des Unternehmens angepasst werden.
 
-• **Action:** The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+• Automatisierung: Die automatische Bearbeitung von Finanztransaktionen verringert manuelle Fehler und erhöht die Effizienz.
 
-### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
+• Integration: Die Anbindung an bestehende Infor-M3/LN-ERP-Systeme erweitert die Möglichkeiten der Finanzverarbeitung.
 
-**Scenario:** The quantity on the invoice is within tolerance, but the unit price is outside tolerance, and this variance has been approved.
+• Regelpflege: Unternehmen können Zuordnungen und Verarbeitungsregeln an ihre Anforderungen anpassen. Ob die konkrete Konfiguration die einschlägigen steuerlichen und rechtlichen Vorgaben erfüllt, muss für den jeweiligen Anwendungsfall und Rechtsraum geprüft werden.
 
-• **Action:** The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
 
-### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-**Scenario:** The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+## Fallbeschreibungen zur Behandlung von Abweichungen
 
-• **Action:** The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+_TransactionConfig Pro Template_ enthält vordefinierte Regeln für häufige Abweichungen zwischen Rechnungs- und Bestelldaten (Purchase Order, PO). Diese Regeln automatisieren Entscheidungen bei Abweichungen und sollen eine konsistente, genaue Finanzverarbeitung sicherstellen.
 
-### [Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
+### [Fall 1, 2, 3: Menge und Stückpreis innerhalb der Toleranz](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
-**Scenario:** The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+**Szenario:** Sowohl die Rechnungsmenge als auch der Stückpreis liegen im Vergleich zur Bestellung innerhalb der zulässigen Toleranz.
 
-• **Action:** The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+• **Aktion:** Das System akzeptiert die Rechnungswerte und berechnet den Gesamtbetrag anhand der angegebenen Menge und des Stückpreises.
 
-### [Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
+### [Fall 4, 5: Menge innerhalb der Toleranz, Stückpreis außerhalb der Toleranz (genehmigt)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
 
-**Scenario:** The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
+**Szenario:** Die Rechnungsmenge liegt innerhalb der Toleranz. Der Stückpreis liegt außerhalb der Toleranz; diese Abweichung wurde jedoch genehmigt.
 
-• **Action:** The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+• **Aktion:** Das System passt den Stückpreis an die Bestellung an und berücksichtigt die Differenz gegebenenfalls über Positionszuschläge.
 
-### [Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
+### [Fall 6: Menge innerhalb der Toleranz, Stückpreis unterhalb der Toleranzgrenze (abgelehnt)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-**Scenario:** The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+**Szenario:** Die Menge liegt innerhalb der Toleranz. Der Stückpreis unterschreitet jedoch den zulässigen Bereich (negative Toleranz); die Abweichung wurde nicht genehmigt.
 
-• **Action:** The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+• **Aktion:** Die Beispielzuordnung setzt den Stückpreis auf den Bestellwert zurück. Ob weitere Kopfzuschläge oder Korrekturbelege entstehen, hängt von den aktiven Konfliktregeln und Exportaktionen ab.
 
-### [Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
+### [Fall 7: Menge innerhalb der Toleranz, Stückpreis oberhalb der Toleranz abgelehnt](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
 
-**Scenario:** The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+**Szenario:** Die Menge liegt innerhalb der Toleranz. Der Stückpreis überschreitet jedoch den zulässigen Bereich (positive Toleranz); die Abweichung wurde nicht genehmigt.
 
-• **Action:** The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+• **Aktion:** Das System lehnt den Rechnungsstückpreis ab und passt ihn an die Bestellung an. Es kann eine Belastungsanzeige erstellen, um den zu viel berechneten Betrag auszugleichen.
 
-### [Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
+### [Fall 8a, 9a: Menge außerhalb der Toleranz (genehmigt), Stückpreis innerhalb der Toleranz](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
 
-**Scenario:** Both the quantity and unit price are outside the tolerance range but have been approved.
+**Szenario:** Die Rechnungsmenge liegt außerhalb der zulässigen Toleranz, wurde jedoch genehmigt. Der Stückpreis liegt innerhalb der Toleranz.
 
-• **Action:** The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+• **Aktion:** Das System akzeptiert die genehmigte Menge und den Stückpreis aus der Rechnung und verarbeitet die Transaktion entsprechend.
 
-### [Case 10b: Quantity Outside Tolerance (Negative Rejected), Unit Price Outside Tolerance (Rejected)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
+### [Fall 11a: Menge oberhalb der Toleranz abgelehnt, Stückpreis innerhalb der Toleranz](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
 
-**Scenario:** Both the quantity and unit price are outside tolerance, and neither has been approved.
+**Szenario:** Die Rechnungsmenge überschreitet den zulässigen Bereich (positive Abweichung) und wird abgelehnt. Der Stückpreis liegt innerhalb der Toleranz.
 
-• **Action:** The system rejects the invoice data, adjusts the values to match the purchase order, and generates necessary debit or credit notes.
+• **Aktion:** Das System setzt die Menge auf den genehmigten Wert, behält den Stückpreis bei und verarbeitet die Transaktion. Die Mehrmenge wird abgelehnt und nicht berechnet.
 
-### [Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
+### [Fall 10a: Menge unterhalb der Toleranz abgelehnt, Stückpreis innerhalb der Toleranz](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
 
-**Scenario:** The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
+**Szenario:** Die Menge unterschreitet den zulässigen Bereich (negative Toleranz) und wurde nicht genehmigt. Der Stückpreis liegt dagegen innerhalb der Toleranz.
 
-• **Action:** The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+• **Aktion:** Das System passt die Menge an den genehmigten Wert an und behält den Stückpreis bei. Anschließend wird die Transaktion entsprechend verarbeitet.
 
-### [Case 12, 13: Charge Line - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+### [Fall 8b, 9b: Menge außerhalb der Toleranz (genehmigt), Stückpreis außerhalb der Toleranz (genehmigt)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
 
-**Scenario:** The charge per unit on the invoice is within the acceptable tolerance range compared to the purchase order.
+**Szenario:** Sowohl die Menge als auch der Stückpreis liegen außerhalb der Toleranz, wurden jedoch genehmigt.
 
-• **Action:** The system accepts the charge per unit as invoiced and processes the transaction without adjustments.
+• **Aktion:** Das System verarbeitet die Transaktion anhand der Rechnungswerte für Menge und Stückpreis und berücksichtigt gegebenenfalls erforderliche Anpassungen oder Positionszuschläge.
 
-### [Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved-1.md)
+### [Fall 10b: Menge unterhalb der Toleranz abgelehnt, Stückpreisabweichung abgelehnt](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
 
-**Scenario:** The charge per unit is outside tolerance but has been approved.
+**Szenario:** Sowohl die Menge als auch der Stückpreis liegen außerhalb der Toleranz; keiner der Werte wurde genehmigt.
 
-• **Action:** The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+• **Aktion:** Das System lehnt die Rechnungsdaten ab, passt die Werte an die Bestellung an und erstellt die erforderlichen Belastungsanzeigen oder Gutschriften.
 
-### [Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)](charge-per-unit-outside-tolerance-rejected.md)
+### [Fall 11b: Menge oberhalb der Toleranz abgelehnt, Stückpreisabweichung abgelehnt](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
 
-**Scenario:** The charge per unit is outside tolerance and has not been approved.
+**Szenario:** Die Menge überschreitet den zulässigen Bereich (positive Abweichung) und wird abgelehnt. Auch der Stückpreis liegt außerhalb der Toleranz und wird abgelehnt.
 
-• **Action:** The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+• **Aktion:** Das System passt Menge und Stückpreis an die genehmigten Bestellwerte an, lehnt darüber hinausgehende Werte ab und verarbeitet die Transaktion.
 
-### [Case 12, 13: Header Charge - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+### [Fall 12, 13: Positionszuschlag – Zuschlag je Einheit innerhalb der Toleranz](charge-per-unit-within-tolerance.md)
 
-**Scenario:** The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+**Szenario:** Der Zuschlag je Einheit auf der Rechnung liegt im Vergleich zur Bestellung innerhalb der zulässigen Toleranz.
 
-• **Action:** The system processes the header charge as invoiced, applying it without adjustments.
+• **Aktion:** Das System übernimmt den Zuschlag je Einheit aus der Rechnung und verarbeitet die Transaktion ohne Anpassungen.
 
-### [Case 14: Header Charge - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved.md)
+### [Fall 14: Positionszuschlag – Zuschlag je Einheit außerhalb der Toleranz (genehmigt)](charge-per-unit-outside-tolerance-approved-1.md)
 
-**Scenario:** The header charge per unit is outside tolerance but has been approved.
+**Szenario:** Der Zuschlag je Einheit liegt außerhalb der Toleranz, wurde jedoch genehmigt.
 
-• **Action:** The system processes the approved charge per unit, applying it to the transaction.
+• **Aktion:** Das System akzeptiert den Zuschlag je Einheit, berücksichtigt die genehmigten Zuschläge und verarbeitet die Transaktion entsprechend.
 
-### [Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
+### [Fall 15: Positionszuschlag – Zuschlag je Einheit außerhalb der Toleranz (abgelehnt)](charge-per-unit-outside-tolerance-rejected.md)
 
-**Scenario:** The header charge per unit is outside tolerance and has not been approved.
+**Szenario:** Der Zuschlag je Einheit liegt außerhalb der Toleranz und wurde nicht genehmigt.
 
-• **Action:** The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+• **Aktion:** Das System passt den Zuschlag je Einheit an die Bestellung oder den genehmigten Wert an und erstellt gegebenenfalls die erforderlichen Belastungsanzeigen oder Gutschriften.
 
-### [tax-lines.md](tax-lines.md "mention")
+### [Fall 12, 13: Kopfzuschlag – Zuschlag je Einheit innerhalb der Toleranz](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
 
-**Scenario:** Handles discrepancies in tax amounts between the invoice and purchase order.
+**Szenario:** Der Zuschlag auf Kopfebene je Einheit liegt im Vergleich zur Bestellung innerhalb der zulässigen Toleranz.
 
-• **Action:** The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+• **Aktion:** Das System übernimmt den Zuschlag auf Kopfebene aus der Rechnung ohne Anpassungen.
+
+### [Fall 14: Kopfzuschlag – Zuschlag je Einheit außerhalb der Toleranz (genehmigt)](charge-per-unit-outside-tolerance-approved.md)
+
+**Szenario:** Der Zuschlag auf Kopfebene je Einheit liegt außerhalb der Toleranz, wurde jedoch genehmigt.
+
+• **Aktion:** Das System übernimmt den genehmigten Zuschlag je Einheit in die Transaktion.
+
+### [Fall 15: Kopfzuschlag – Zuschlag je Einheit außerhalb der Toleranz (abgelehnt)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
+
+**Szenario:** Der Zuschlag auf Kopfebene je Einheit liegt außerhalb der Toleranz und wurde nicht genehmigt.
+
+• **Aktion:** Das System passt den Kopfzuschlag an die Bestellung an, verarbeitet die Transaktion entsprechend und erstellt gegebenenfalls die erforderlichen Korrekturbelege.
+
+### [Steuerzeilen](tax-lines.md "mention")
+
+**Szenario:** Behandelt Abweichungen zwischen den Steuerbeträgen der Rechnung und der Bestellung.
+
+• **Aktion:** Das System passt die Steuerzeilen an die genehmigten Steuersätze und -beträge an, um die geltenden Steuervorschriften einzuhalten.

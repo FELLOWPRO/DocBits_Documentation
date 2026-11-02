@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Hier sind einige bewährte Empfehlungen für die effektive Nutzung von Einstellungen zur Optimierung der Belegverarbeitung, zur Verbesserung der Datengenauigkeit und zur Gewährleistung der Compliance.
 

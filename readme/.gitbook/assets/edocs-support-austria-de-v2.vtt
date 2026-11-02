@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.271
+Für ebInterface 4.3, 5.0, 6.0 und 6.1 gibt
+es separate Einträge. Gleichen Sie den
+
+formats_02
+00:00:09.271 --> 00:00:14.553
+XML-Namespace mit der konfigurierten
+Version ab. Ein anderer Namespace kann
+
+formats_03
+00:00:14.553 --> 00:00:16.933
+eine andere Zuordnung erfordern.
+
+workflow_01
+00:00:17.683 --> 00:00:22.989
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:22.989 --> 00:00:29.699
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:29.699 --> 00:00:31.333
+aktiviert ihn nicht.
+
+accept_01
+00:00:32.083 --> 00:00:36.715
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:36.715 --> 00:00:42.845
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:42.845 --> 00:00:45.967
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

@@ -91,7 +91,7 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
 - Dokumente, die zurück in die Validierung geschickt wurden, zeigen während
   der Vorbereitung einen Ladeindikator statt eines toten Bildschirms.
 
-### Accounting
+### Kontierung
 
 - Gesplittete Positionen behalten nach Drücken von Enter ihr %-Zeichen, und
   0 % wird als Wert akzeptiert.
@@ -139,7 +139,7 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
   erneut, und das Datum „zugewiesen am“ bleibt das Datum der Zuweisung.
   Aufgaben-E-Mails werden außerdem in Outlook korrekt dargestellt.
 
-### Workflow Builder
+### Workflow-Editor
 
 - Suche, Sortierung und Seitennavigation der Workflow-Liste bleiben beim
   Filtern konsistent.

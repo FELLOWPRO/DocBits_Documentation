@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# Best Practices
+# Bewährte Vorgehensweisen
 
 Best Practices für das Verwalten von EDI-Konfigurationen umfassen regelmäßige Updates zur Anpassung an sich ändernde Standards, gründliches Testen von EDI-Vorlagen und die Pflege einer klaren Dokumentation aller Transformationen und Strukturbeschreibungen.
 

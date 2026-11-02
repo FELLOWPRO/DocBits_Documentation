@@ -1,6 +1,6 @@
 # 文档类型之一
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-da4216631693-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-zh-cn.png" alt="文档类型之一, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 ## **用途：**
 

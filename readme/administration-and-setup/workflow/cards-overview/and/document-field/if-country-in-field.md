@@ -1,6 +1,6 @@
 # 字段中的国家/地区
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2-zh-cn.png" alt="字段中的国家/地区, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 预期用途：根据国家分组决定是否进行额外处理。以下示例描述一条判断国家是否属于欧盟的业务规则。
 

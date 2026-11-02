@@ -1,5 +1,13 @@
 # 登录分析
 
+## 视频教程：公司、订阅与审计
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/zh.mp4" %}
+DocBits 中的公司信息、订阅计划与审计日志
+{% endembed %}
+
+视频演示了公司信息和偏好、订阅计划、登录活动以及审计日志。
+
 **登录分析**为管理员提供一个只读的组织级视图，展示用户*何时*以及*多久*登录一次 DocBits。它可以回答“登录量是否在增长？”“本月有多少位不同的用户处于活跃状态？”以及“使用高峰出现在什么时候？”等问题，同时不会暴露任何用户的凭据或个人数据。
 
 > **访问方式：**打开 **设置 → 组织与访问权限 → 用户**，然后点击右上角的 **登录分析** 按钮（`/settings/login-analytics`）。

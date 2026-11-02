@@ -10,10 +10,6 @@
 
 **语言**
 
-{% embed url="https://youtu.be/h_knkUZkNyI" %}
-如何在 DocBits 中更改语言（用户设置教程）
-{% endembed %}
-
 * **选择首选语言：** 从可用选项中选择您希望使用的语言。
 
 **深色模式**

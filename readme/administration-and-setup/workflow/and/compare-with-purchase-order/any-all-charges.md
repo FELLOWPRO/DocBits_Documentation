@@ -1,8 +1,8 @@
 # Cualquier/Todos los cargos
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v2-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v2-es-es.png" alt="Cualquier/Todos los cargos, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-420a0e403552-v3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v3-es-es.png" alt="Cualquier/Todos los cargos, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 

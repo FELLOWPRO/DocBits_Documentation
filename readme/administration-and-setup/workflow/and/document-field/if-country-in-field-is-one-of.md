@@ -1,6 +1,6 @@
 # Si el país en el campo es uno de
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-es-es.png" alt="Si el país en el campo es uno de, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 Utilice esta condición cuando un paso de procesamiento adicional deba aplicarse a documentos de determinados países, por ejemplo Alemania y Francia. La tarjeta compara el país leído de un campo del documento con una lista de países configurada.
 

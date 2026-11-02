@@ -1,48 +1,63 @@
-# Compare Field with tolerances
+# Porównaj pole z tolerancjami
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_tolerances_v2-pl-pl.png" alt="Porównaj pole z tolerancjami, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-## **Cel:**
+## Kiedy używać tej karty
 
-Ta karta przepływu pracy służy do porównania wartości pola z określoną wartością referencyjną, dopuszczając tolerancje. Umożliwia precyzyjne przetwarzanie warunkowe w przepływach pracy, w których akceptowalne są niewielkie odchylenia, co czyni ją idealną dla scenariuszy takich jak zapewnienie jakości, analiza finansowa lub akcje oparte na progach.
+Użyj tego warunku, aby porównać pole liczbowe dokumentu ze stałą wartością odniesienia i dopuścić określone odchylenie. Na przykład kwota całkowita może odpowiadać wartości 100, jeśli różnica nie przekracza 5.
 
-## **Komponenty karty:**
+## Gdzie znaleźć kartę
 
-1. **Field Name**
-   * **Opis:** Pole, które ma być oceniane w porównaniu.
-   * **Szczegóły:** Musi to odpowiadać dokładnemu identyfikatorowi pierwszego pola w dokumencie.
-2. **Comparison Operator**
-   * **Opis:** Określa, w jaki sposób wartość wybranego pola zostanie porównana z wartością referencyjną.
-   * **Opcje:**
-     * **Equals (=):** Weryfikuje, czy wartość pola dokładnie odpowiada wartości referencyjnej.
-     * **Not Equals (≠):** Weryfikuje, czy wartość pola nie odpowiada wartości referencyjnej.
-     * **Greater Than (>):** Sprawdza, czy wartość pola jest większa niż wartość referencyjna.
-     * **Greater or Equals (≥):** Sprawdza, czy wartość pola jest większa lub równa wartości referencyjnej.
-     * **Lesser Than (<):** Sprawdza, czy wartość pola jest mniejsza niż wartość referencyjna.
-     * **Lesser or Equals (≤):** Sprawdza, czy wartość pola jest mniejsza lub równa wartości referencyjnej.
-3. **Reference Value**
-   * **Opis:** Wartość, z którą porównywane jest pole.
-   * **Szczegóły:** Wartość ta może być liczbowa, tekstowa lub oparta na dacie, w zależności od kontekstu porównania.
-4. **Tolerance Amount**
-   * **Opis:** Definiuje akceptowalny margines błędu dla porównania.
-   * **Szczegóły:** Kwota tolerancji jest wartością liczbową wskazującą maksymalną dopuszczalną różnicę między dwiema wartościami pól, aby porównanie zostało uznane za prawdziwe.
-5. **Tolerance Type**
-   * **Opis:** Określa jednostkę miary dla kwoty tolerancji.
-   * **Opcje:**
-     * **Value:** Tolerancja jest wartością bezwzględną, co oznacza, że dwa pola mogą różnić się o określoną kwotę tolerancji.
-     * **Percent:** Tolerancja jest obliczana jako procent wartości drugiego pola, dopuszczając względny margines błędu.
+W standardowym projektancie workflow dodaj kartę w sekcji **I**, otwórz **Pole dokumentu** i wybierz porównanie jednego pola z wartością odniesienia i tolerancjami. Poniższy przykład używa wersji 2.
 
-## **Funkcjonalność:**
+## Ustawienia
 
-* **Ocena warunku:** System ocenia wartość pola względem wartości referencyjnej za pomocą wybranego operatora porównania. Jeśli skonfigurowana jest tolerancja, system uznaje porównanie za pomyślne, jeśli wartość pola mieści się w zdefiniowanym zakresie tolerancji.
-* **Wykonanie akcji:**
-  * **W zakresie tolerancji:** Jeśli wartość pola spełnia warunek w ramach określonej tolerancji, przepływ pracy jest kontynuowany, wyzwalając powiązane akcje.
-  * **Poza tolerancją:** Jeśli wartość pola nie spełnia warunku lub znajduje się poza zakresem tolerancji, mogą zostać wykonane alternatywne akcje, takie jak rejestrowanie, wysyłanie alertów lub zatrzymanie przepływu pracy.
+Użyj pola liczbowego skonfigurowanego w organizacji. Wartość pola, wartość odniesienia i tolerancja są oceniane liczbowo. Zachowaj zgodność jednostek.
 
-## **Konfiguracja:**
+| Ustawienie | Znaczenie |
+| --- | --- |
+| Nazwa pola | Skonfigurowane pole dokumentu, np. `total_amount`. |
+| Operator | Porównanie: `eq`, `neq`, `gt`, `ge`, `lt` lub `le`. |
+| Wartość odniesienia | Stała liczba, z którą porównywane jest pole. |
+| Tolerancja | Dopuszczalne odchylenie liczbowe. |
+| Typ tolerancji | **Wartość** (`value`) oznacza odchylenie bezwzględne, a **Procent** (`percent`) — odchylenie względne. |
 
-* Użytkownicy konfigurują kartę, wybierając pole do oceny z listy dostępnych pól i wybierając operator porównania (np. równe, większe niż) z listy rozwijanej. Następnie określają wartość referencyjną do porównania i definiują kwotę tolerancji, a potem wybierają typ tolerancji (np. procent lub wartość).&#x20;
+Przy dodatniej wartości odniesienia 200 tolerancja procentowa 5 dopuszcza odchylenie 10. Tolerancja bezwzględna 5 dopuszcza odchylenie 5. Sprawdź odpowiednie przypadki graniczne dla wybranego operatora i wartości.
 
-## **Podsumowanie:**
+## Jak tolerancja zmienia porównanie
 
-Karta "Field Comparison with Tolerances" jest wszechstronnym narzędziem dla przepływów pracy wymagających elastycznych ocen. Umożliwiając porównania z tolerancjami, zapewnia, że przepływy pracy pozostają wydajne i elastyczne, uwzględniając rzeczywiste różnice bez utraty dokładności.
+Przy wartości odniesienia **100** i tolerancji bezwzględnej **5** dolna granica wynosi **95**, a górna **105**.
+
+| Operator | Warunek jest spełniony, gdy wartość pola… |
+| --- | --- |
+| `eq` (=) | Mieści się między 95 a 105, łącznie z obiema granicami. |
+| `neq` (≠) | Jest mniejsza od 95 lub większa od 105. |
+| `gt` (>) | Jest większa od 105. |
+| `ge` (≥) | Wynosi co najmniej 95. |
+| `lt` (<) | Jest mniejsza od 95. |
+| `le` (≤) | Wynosi co najwyżej 105. |
+
+Karta zwraca wynik warunku. Kolejne kroki zależą od wyzwalacza, pozostałych warunków i akcji skonfigurowanych w workflow.
+
+<!-- workflow-card-complete-example-20261021 condition_docfield_operator_value_tolerances -->
+
+## Przykład praktyczny
+
+1. Wybierz skonfigurowane pole liczbowe **Całkowita kwota** (`total_amount`).
+2. Wybierz **Równa się** (`eq`).
+3. Wprowadź wartość odniesienia **100** i tolerancję **5**.
+4. Wybierz typ tolerancji **Wartość** (`value`).
+
+| Wartość pola | Różnica bezwzględna względem 100 | Oczekiwany wynik |
+| --- | --- | --- |
+| 103 | 3 | Warunek spełniony. |
+| 110 | 10 | Warunek niespełniony. |
+| 95 lub 105 | 5 | Warunek spełniony: porównanie równości obejmuje granice tolerancji. |
+
+Są to oczekiwane wyniki obliczeń dla przykładowej konfiguracji. Na potrzeby tego przykładu nie uruchomiono workflow.
+
+## Przed aktywacją reguły
+
+Sprawdź przypadek spełniający warunek, przypadek niespełniający go oraz granice, używając odpowiednich danych testowych. Oddzielnie zbadaj brakujące pola, wartości nieliczbowe i błędy konfiguracji. W dzienniku wykonania sprawdź faktycznie użyte wartości, operator, tolerancję i wynik.
+
+Jeśli obie kwoty pochodzą z pól dokumentu, użyj osobnej karty do [porównywania dwóch pól z tolerancją](compare-two-fields-with-tolerance.md).

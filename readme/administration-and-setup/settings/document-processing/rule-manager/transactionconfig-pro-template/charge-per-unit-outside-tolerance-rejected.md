@@ -1,37 +1,33 @@
-# Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)
+# Przypadek 15: Opłata pozycji za jednostkę poza tolerancją (odrzucona)
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The header charge per unit is outside tolerance and has not been approved.
+## Scenariusz
 
-## Action:
+Opłata za jednostkę w pozycji jest poza tolerancją, a odchylenie nie zostało zatwierdzone. Ten przypadek dotyczy opłaty pozycji, a nie opłaty nagłówka.
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+## Przykładowe działanie
 
-## Example:
+Mapowanie skonfigurowane tak, aby po odrzuceniu używać opłaty z PO, zastąpiłoby opłatę jednostkową z faktury wartością z PO. Każda osobna korekta, nota obciążeniowa lub uznaniowa zależy od mapowania eksportu i decyzji zatwierdzających.
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+## Przykład
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+* **Zamówienie zakupu (PO):**
+  * Opłata pozycji za jednostkę: $4.00
+  * Ilość: 1,500 sztuk
+  * Łączna opłata pozycji: $6,000.00
+* **Otrzymana faktura:**
+  * Opłata pozycji za jednostkę: $5.00 — o 25% wyższa od wartości PO, poza skonfigurowaną tolerancją ±5%; odrzucona.
+  * Ilość: 1,500 sztuk
+  * Łączna opłata pozycji: $7,500.00
+* **Skonfigurowana tolerancja:** Opłata za jednostkę ±5%.
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+W tym przykładowym mapowaniu:
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+1. Odrzuć zafakturowaną opłatę $5.00 za jednostkę, ponieważ odchylenie 25% przekracza ±5% i nie zostało zatwierdzone.
+2. Użyj opłaty z PO wynoszącej $4.00 za jednostkę.
+3. Przelicz łączną opłatę pozycji: **1,500 sztuk × $4.00 = $6,000.00**.
+4. Oblicz nadwyżkę na fakturze: **$7,500.00 - $6,000.00 = $1,500.00**.
+5. Zastosuj skonfigurowaną obsługę różnicy. Nota uznaniowa na $1,500.00 jest jednym z możliwych wyników mapowania, a nie gwarantowanym działaniem systemu. Jej kwota, znak, typ dokumentu i wystawienie zależą od aktywnych reguł, mapowania eksportu i zatwierdzeń.
+
+Sprawdź mapowanie opłat pozycji oraz wynikowe dokumenty księgowe przed użyciem scenariusza w środowisku produkcyjnym.

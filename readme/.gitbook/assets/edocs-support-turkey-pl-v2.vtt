@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.053
+Turkey E-Fatura i E-Arsiv to osobne
+skonfigurowane rodziny. Sprawdź profil
+
+formats_02
+00:00:07.053 --> 00:00:13.543
+źródłowy i strukturę dokumentu. Oznaczenie
+rodziny nie określa każdego wydania UBL-TR
+
+formats_03
+00:00:13.543 --> 00:00:17.400
+ani nie potwierdza dostarczenia przez
+platformę podatkową.
+
+workflow_01
+00:00:18.150 --> 00:00:23.618
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:23.618 --> 00:00:29.191
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:29.191 --> 00:00:32.000
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:32.750 --> 00:00:38.776
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:38.776 --> 00:00:44.708
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:44.708 --> 00:00:47.533
+podatkowego ani dostarczenia przez sieć.
+

@@ -1,23 +1,27 @@
-# Wzorzec zarządzania zadaniami
+# Wzór zarządzania zadaniami
 
-**Typ wzorca:** Zarządzanie workflow
-**Złożoność:** Niska-Średnia
-**Szacowana konfiguracja:** 30–45 minut
-**Typowe przypadki użycia:** Workflow zatwierdzania, zadania przeglądu, obsługa wyjątków, eskalacja
+**Typ wzorca:** Zarządzanie workflow **Złożoność:** Niska-Średnia **Szacowana konfiguracja:** 30–45 minut **Typowe przypadki użycia:** Workflow zatwierdzania, zadania przeglądu, obsługa wyjątków, eskalacja
 
----
+***
 
-Ten wzorzec budujesz w **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Kliknij **Add Card**, aby otworzyć bibliotekę kart, i wybierz karty używane przez ten wzorzec — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` oraz `CONDITION_TASK_STATUS` (kategoria **Assignee** zawiera karty zadań i przypisań):
+<!-- workflow-card-task-pattern-scope-20261022 -->
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteka Add Card w Workflow Builder, pogrupowana według kategorii"><figcaption><p>Biblioteka <strong>Add Card</strong> — karty zadań, przypisań i powiadomień znajdziesz w kategoriach <strong>Assignee</strong> i <strong>Status</strong>.</p></figcaption></figure>
+**Zweryfikowany zakres:** Jest to koncepcyjny wzorzec koordynacji, a nie konfiguracja przepływu pracy gotowa do importu. W zweryfikowanej bibliotece `tasks_create` należy do kategorii **Zadanie**, `doc_user_assign` do **Osoba przypisana**, a `action_send_email_to_groups` do **E-mail**.
 
----
+Wcześniejsze nazwy `ACTION_ASSIGN_TO_USER` i `CONDITION_TASK_STATUS` są oznaczeniami poglądowymi, a nie zarejestrowanymi kartami dostępnymi do wyboru w tej bibliotece. Poniższy JSON jest schematem. Samo utworzenie zadania nie wstrzymuje przepływu pracy ani nie konfiguruje jego automatycznego wznowienia. Kierowanie po zakończeniu zadania, oczekiwanie i eskalacja wymagają oddzielnej konfiguracji i weryfikacji.
+
+[Aktualne karty zadań](../then/task/README.md) · [Zabezpieczenia eksportu i oczekujące zadania](../cards-overview/export-cards-guide.md).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pl.png" alt="Widok biblioteki kart. Tworzenie zadań, przypisywanie dokumentów i wiadomości do grup należą do różnych kategorii; wybierz wersję dostępną w swojej organizacji. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Widok biblioteki kart. Tworzenie zadań, przypisywanie dokumentów i wiadomości do grup należą do różnych kategorii; wybierz wersję dostępną w swojej organizacji. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+
+***
 
 ## Przegląd wzorca
 
-Ten wzorzec pokazuje, jak tworzyć, przypisywać, śledzić i zarządzać zadaniami w workflow DocBits. Zadania to wykonalne kroki pracy przypisywane użytkownikom lub grupom, które muszą zostać ukończone, zanim workflow dokumentu będzie mógł być kontynuowany.
+Ten wzorzec ilustruje tworzenie i przypisywanie zadań oraz powiadamianie odbiorców. Kroki po zakończeniu zadania opisują projekt docelowy; utworzenie zadania samo w sobie nie jest operacją oczekiwania.
 
 **Co robi ten wzorzec:**
+
 1. Tworzy zadania na podstawie warunków workflow
 2. Przypisuje zadania odpowiednim użytkownikom lub grupom
 3. Ustawia właściwości zadań (priorytet, termin, opis)
@@ -25,54 +29,59 @@ Ten wzorzec pokazuje, jak tworzyć, przypisywać, śledzić i zarządzać zadani
 5. Śledzi status i ukończenie zadań
 6. Routuje dokumenty na podstawie wyników zadań
 
----
+***
 
 ## Kiedy stosować ten wzorzec
 
 Stosuj ten wzorzec, gdy potrzebujesz:
-- ✅ Tworzyć workflow zatwierdzania
-- ✅ Przypisywać zadania przeglądu użytkownikom
-- ✅ Obsługiwać wyjątki wymagające interwencji człowieka
-- ✅ Eskalować problemy do przełożonych
-- ✅ Tworzyć wielopoziomowe łańcuchy zatwierdzania
-- ✅ Śledzić, kto co musi zrobić
-- ✅ Ustawiać terminy dla działań
+
+* ✅ Tworzyć workflow zatwierdzania
+* ✅ Przypisywać zadania przeglądu użytkownikom
+* ✅ Obsługiwać wyjątki wymagające interwencji człowieka
+* ✅ Eskalować problemy do przełożonych
+* ✅ Tworzyć wielopoziomowe łańcuchy zatwierdzania
+* ✅ Śledzić, kto co musi zrobić
+* ✅ Ustawiać terminy dla działań
 
 **Nie stosuj tego wzorca, gdy:**
-- ❌ żadne działanie ręczne nie jest wymagane (zamiast tego użyj przetwarzania automatycznego)
-- ❌ chcesz jedynie powiadomić (zamiast tego użyj e-maila)
-- ❌ wystarcza proste routowanie dokumentów (zamiast tego użyj przypisania)
 
----
+* ❌ żadne działanie ręczne nie jest wymagane (zamiast tego użyj przetwarzania automatycznego)
+* ❌ chcesz jedynie powiadomić (zamiast tego użyj e-maila)
+* ❌ wystarcza proste routowanie dokumentów (zamiast tego użyj przypisania)
+
+***
 
 ## Kompletny przykład workflow
 
 ### Scenariusz: Zatwierdzanie faktur z routingiem opartym na kwocie
 
 **Wymaganie biznesowe:**
-- Faktury < 1 000 €: Zatwierdzaj automatycznie (zadanie niepotrzebne)
-- Faktury 1 000–10 000 €: Zadanie zatwierdzenia do kierownika
-- Faktury > 10 000 €: Podwójne zatwierdzenie (kierownik + dyrektor)
-- Wszyscy zatwierdzający otrzymują powiadomienie e-mail
-- Zadania mają termin 3 dni
+
+* Faktury < 1 000 €: Zatwierdzaj automatycznie (zadanie niepotrzebne)
+* Faktury 1 000–10 000 €: Zadanie zatwierdzenia do kierownika
+* Faktury > 10 000 €: Podwójne zatwierdzenie (kierownik + dyrektor)
+* Wszyscy zatwierdzający otrzymują powiadomienie e-mail
+* Zadania mają termin 3 dni
 
 **Użyte karty workflow:**
-1. CONDITION_DOC_FIELD_AMOUNT – Sprawdź kwotę faktury
-2. tasks_create – Utwórz zadanie zatwierdzenia
-3. ACTION_ASSIGN_TO_USER – Przypisz zadanie zatwierdzającemu
-4. ACTION_SEND_EMAIL_TO_GROUPS – Wyślij powiadomienie
-5. CONDITION_TASK_STATUS – Sprawdź, czy zadanie zostało ukończone
-6. ACTION_APPROVE_DOCUMENT – Zatwierdź po ukończeniu zadania
 
----
+1. CONDITION\_DOC\_FIELD\_AMOUNT – Sprawdź kwotę faktury
+2. tasks\_create – Utwórz zadanie zatwierdzenia
+3. ACTION\_ASSIGN\_TO\_USER – Przypisz zadanie zatwierdzającemu
+4. ACTION\_SEND\_EMAIL\_TO\_GROUPS – Wyślij powiadomienie
+5. CONDITION\_TASK\_STATUS – Sprawdź, czy zadanie zostało ukończone
+6. ACTION\_APPROVE\_DOCUMENT – Zatwierdź po ukończeniu zadania
+
+***
 
 ## Wdrożenie krok po kroku
 
 ### Krok 1: Sprawdź próg kwotowy
 
-**Karta:** CONDITION_DOC_FIELD_AMOUNT lub podobny warunek pola
+**Karta:** CONDITION\_DOC\_FIELD\_AMOUNT lub podobny warunek pola
 
 **Konfiguracja dla ścieżki 1 (< 1 000 €):**
+
 ```
 Field: Total_Amount
 Operator: IS LESS THAN
@@ -81,6 +90,7 @@ Currency: EUR
 ```
 
 **Konfiguracja dla ścieżki 2 (1 000–10 000 €):**
+
 ```
 Field: Total_Amount
 Operator: IS BETWEEN
@@ -90,6 +100,7 @@ Currency: EUR
 ```
 
 **Konfiguracja dla ścieżki 3 (> 10 000 €):**
+
 ```
 Field: Total_Amount
 Operator: IS GREATER THAN
@@ -99,27 +110,31 @@ Currency: EUR
 
 **Referencja przewodnika:** [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Krok 2A: Automatycznie zatwierdzaj małe faktury (< 1 000 €)
 
 **Dla małych kwot zadanie nie jest potrzebne**
 
 **Karty:**
-- ACTION_SET_FIELD_TO_TEXT
-  - Ustaw „Approval_Type" = „AUTO"
-  - Ustaw „Approval_Reason" = „Amount below threshold"
-- ACTION_APPROVE_DOCUMENT
+
+* ACTION\_SET\_FIELD\_TO\_TEXT
+  * Ustaw „Approval\_Type" = „AUTO"
+  * Ustaw „Approval\_Reason” = „Kwota poniżej progu”
+* ACTION\_APPROVE\_DOCUMENT
 
 **Wynik:** Dokument zatwierdzony automatycznie, zadanie nie zostało utworzone
 
----
+***
 
 ### Krok 2B: Utwórz zadanie zatwierdzenia dla kierownika (1 000–10 000 €)
 
-**Karta:** tasks_create (zalecana v4)
+**Karta:** tasks\_create (zalecana v4)
 
 **Konfiguracja:**
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "task_type": "Approval",
@@ -134,22 +149,26 @@ Currency: EUR
 ```
 
 **Mapowanie pól:**
-- `{{DOCUMENT_NUMBER}}` – Automatyczny identyfikator dokumentu
-- `{{Total_Amount}}` – Pole: Total_Amount
-- `{{Supplier_Name}}` – Pole: Supplier_Name
-- `{{Invoice_Number}}` – Pole: Invoice_Number
-- `{{Invoice_Date}}` – Pole: Invoice_Date
-- `{{Approving_Manager}}` – Pole lub stały użytkownik
+
+* `{{DOCUMENT_NUMBER}}` – Automatyczny identyfikator dokumentu
+* `{{Total_Amount}}` – Biegun: Total\_Amount
+* `{{Supplier_Name}}` – Polak: Supplier\_Name
+* `{{Invoice_Number}}` – Polak: Invoice\_Number
+* `{{Invoice_Date}}` – Polak: Invoice\_Date
+* `{{Approving_Manager}}` – Pole lub stały użytkownik
 
 **Referencja przewodnika:** [Przewodnik po przypisywaniu zadań](../then/task/task-assignment-guide.md)
 
----
+***
 
 ### Krok 2C: Utwórz zadania podwójnego zatwierdzenia (> 10 000 €)
 
 **Dwa kolejne zadania dla faktur o wysokiej wartości**
 
 **Zadanie 1: Zatwierdzenie przez kierownika**
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "task_type": "First Approval",
@@ -164,6 +183,9 @@ Currency: EUR
 ```
 
 **Zadanie 2: Zatwierdzenie przez dyrektora (tworzone po ukończeniu zadania 1)**
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "task_type": "Second Approval",
@@ -177,13 +199,14 @@ Currency: EUR
 }
 ```
 
----
+***
 
 ### Krok 3: Przypisz zadanie użytkownikowi/grupie
 
-**Karta:** ACTION_ASSIGN_TO_USER lub ACTION_ASSIGN_TO_GROUP
+**Karta:** ACTION\_ASSIGN\_TO\_USER lub ACTION\_ASSIGN\_TO\_GROUP
 
 **Opcja 1: Przypisz do konkretnego użytkownika**
+
 ```
 User: John.Smith@company.com
 OR
@@ -191,6 +214,7 @@ User Field: {{DOCUMENT_FIELD:Approving_Manager}}
 ```
 
 **Opcja 2: Przypisz do grupy**
+
 ```
 Group: Finance Managers
 Assignment Mode: First Available
@@ -201,6 +225,7 @@ Assignment Mode: All (everyone in group gets task)
 ```
 
 **Opcja 3: Przypisanie sekwencyjne**
+
 ```
 Card: ACTION_ASSIGN_SEQUENTIALLY_TO_USER
 
@@ -211,13 +236,16 @@ User 3: CFO (only if User 2 approves)
 
 **Referencja przewodnika:** [Przewodnik po przypisaniu](../then/assignee/assignment-user-guide.md)
 
----
+***
 
 ### Krok 4: Wyślij powiadomienie e-mail
 
-**Karta:** ACTION_SEND_EMAIL_TO_GROUPS
+**Karta:** ACTION\_SEND\_EMAIL\_TO\_GROUPS
 
 **Konfiguracja:**
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
+
 ```json
 {
   "recipients": [
@@ -230,38 +258,42 @@ User 3: CFO (only if User 2 approves)
 ```
 
 **Zmienne e-mail:**
-- `{{TASK_ASSIGNEE_EMAIL}}` – E-mail odbiorcy zadania
-- `{{TASK_ASSIGNEE_NAME}}` – Nazwa odbiorcy zadania
-- `{{DOCUMENT_NUMBER}}` – Identyfikator dokumentu
-- `{{TASK_DEADLINE}}` – Termin zadania
-- `{{TASK_PRIORITY}}` – Poziom priorytetu zadania
-- `{{DOCUMENT_LINK}}` – Bezpośredni link do dokumentu
+
+* `{{TASK_ASSIGNEE_EMAIL}}` – E-mail odbiorcy zadania
+* `{{TASK_ASSIGNEE_NAME}}` – Nazwa odbiorcy zadania
+* `{{DOCUMENT_NUMBER}}` – Identyfikator dokumentu
+* `{{TASK_DEADLINE}}` – Termin zadania
+* `{{TASK_PRIORITY}}` – Poziom priorytetu zadania
+* `{{DOCUMENT_LINK}}` – Bezpośredni link do dokumentu
 
 **Referencja przewodnika:** [Przewodnik po wysyłaniu e-maili do grup](../then/action/send-email-groups-guide.md)
 
----
+***
 
 ### Krok 5: Śledź status zadania
 
-**Karta:** CONDITION_TASK_STATUS lub podobny weryfikator statusu zadania
+**Karta:** CONDITION\_TASK\_STATUS lub podobny weryfikator statusu zadania
 
 **Konfiguracja:**
+
 ```
 Task ID: {{CREATED_TASK_ID}}
 Status Check: IS COMPLETED
 ```
 
 **Opcje statusu:**
-- CREATED – Zadanie właśnie utworzone
-- ASSIGNED – Zadanie przypisane użytkownikowi
-- IN_PROGRESS – Użytkownik rozpoczął zadanie
-- COMPLETED – Zadanie ukończone
-- APPROVED – Zadanie zatwierdzone
-- REJECTED – Zadanie odrzucone
-- CANCELLED – Zadanie anulowane
-- OVERDUE – Zadanie przeterminowane
+
+* CREATED – Zadanie właśnie utworzone
+* ASSIGNED – Zadanie przypisane użytkownikowi
+* IN\_PROGRESS – Użytkownik rozpoczął zadanie
+* COMPLETED – Zadanie ukończone
+* APPROVED – Zadanie zatwierdzone
+* REJECTED – Zadanie odrzucone
+* CANCELLED – Zadanie anulowane
+* OVERDUE – Zadanie przeterminowane
 
 **Logika:**
+
 ```
 IF TASK_STATUS = COMPLETED AND TASK_RESULT = APPROVED:
   → Continue to next step (or next approval level)
@@ -279,13 +311,14 @@ IF TASK_STATUS = OVERDUE:
   → Create escalation task
 ```
 
----
+***
 
 ### Krok 6: Zakończ workflow na podstawie wyniku zadania
 
 **Po ukończeniu zadania:**
 
 **Scenariusz A: Zadanie zatwierdzone**
+
 ```
 1. Set field "Approval_Status" = "APPROVED"
 2. Set field "Approved_By" = {{TASK_COMPLETED_BY}}
@@ -295,6 +328,7 @@ IF TASK_STATUS = OVERDUE:
 ```
 
 **Scenariusz B: Zadanie odrzucone**
+
 ```
 1. Set field "Approval_Status" = "REJECTED"
 2. Set field "Rejected_By" = {{TASK_COMPLETED_BY}}
@@ -305,6 +339,7 @@ IF TASK_STATUS = OVERDUE:
 ```
 
 **Scenariusz C: Zadanie przeterminowane**
+
 ```
 1. Set field "Task_Status" = "OVERDUE"
 2. Create escalation task for manager
@@ -313,9 +348,9 @@ IF TASK_STATUS = OVERDUE:
 5. Log overdue event
 ```
 
----
+***
 
-## Kompletny diagram workflow
+## Kompletny schemat przepływu pracy
 
 ```
 INVOICE ARRIVES
@@ -418,11 +453,13 @@ INVOICE ARRIVES
 └─ [Amount check complete]
 ```
 
----
+***
 
 ## Szablony konfiguracji
 
 ### Szablon 1: Proste zadanie zatwierdzenia
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
 
 ```json
 {
@@ -436,9 +473,11 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ### Szablon 2: Zadanie przeglądu ze szczegółami
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
 
 ```json
 {
@@ -452,9 +491,11 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ### Szablon 3: Zadanie eskalacji
+
+**Schematyczny JSON:** Wyłącznie ilustracja struktury; nie importuj go jako wykonywalnego przepływu pracy.
 
 ```json
 {
@@ -469,7 +510,7 @@ INVOICE ARRIVES
 }
 ```
 
----
+***
 
 ## Zaawansowane wzorce
 
@@ -488,6 +529,7 @@ Level 1: Accounts Clerk (verify data)
 ```
 
 **Wdrożenie:**
+
 ```
 1. Create Task 1 for Clerk
 2. Wait for Task 1 completion
@@ -501,7 +543,7 @@ Level 1: Accounts Clerk (verify data)
      Approve Document
 ```
 
----
+***
 
 ### Wzorzec 2: Równoległe zatwierdzanie przez wiele osób
 
@@ -517,6 +559,7 @@ Document approved only when ALL approve
 ```
 
 **Wdrożenie:**
+
 ```
 1. Create 3 tasks simultaneously
 2. Track all 3 task statuses
@@ -527,7 +570,7 @@ Document approved only when ALL approve
      Reject Document
 ```
 
----
+***
 
 ### Wzorzec 3: Warunkowe tworzenie zadań
 
@@ -544,7 +587,7 @@ ELSE:
   → Create "Standard Approval" task
 ```
 
----
+***
 
 ### Wzorzec 4: Eskalacja oparta na terminie
 
@@ -562,7 +605,7 @@ Day 5: IF still not completed:
          → High priority notification
 ```
 
----
+***
 
 ## Obsługa błędów
 
@@ -571,6 +614,7 @@ Day 5: IF still not completed:
 **Problem:** Użytkownik nie istnieje lub jest nieaktywny
 
 **Rozwiązanie:**
+
 ```
 1. Check user status with CONDITION_USER_IS_ISNOT
 2. IF User = INACTIVE:
@@ -580,13 +624,14 @@ Day 5: IF still not completed:
 3. Send notification to admin
 ```
 
----
+***
 
 ### Scenariusz 2: Tworzenie zadania nie powiodło się
 
 **Problem:** Błąd systemowy podczas tworzenia zadania
 
 **Rozwiązanie:**
+
 ```
 1. Check task creation status
 2. IF Failed:
@@ -596,13 +641,14 @@ Day 5: IF still not completed:
      → Log error details
 ```
 
----
+***
 
 ### Scenariusz 3: Brak reakcji na zadanie
 
 **Problem:** Użytkownik nie ukończy zadania w terminie
 
 **Rozwiązanie:**
+
 ```
 1. Monitor task deadline
 2. Day before deadline:
@@ -615,25 +661,25 @@ Day 5: IF still not completed:
      → Log overdue event
 ```
 
----
+***
 
 ## Lista kontrolna testów
 
-- [ ] Zadanie utworzone pomyślnie
-- [ ] Zadanie przypisane właściwemu użytkownikowi/grupie
-- [ ] Powiadomienie e-mail wysłane
-- [ ] Zadanie pojawia się na liście zadań użytkownika
-- [ ] Właściwości zadania poprawne (tytuł, opis, priorytet, termin)
-- [ ] Użytkownik może ukończyć zadanie
-- [ ] Workflow jest kontynuowany po ukończeniu zadania
-- [ ] Workflow zatwierdzania działa poprawnie
-- [ ] Workflow odrzucenia działa poprawnie
-- [ ] Eskalacja jest wyzwalana we właściwym momencie
-- [ ] Obsługa przeterminowania działa
-- [ ] Wszystkie powiadomienia e-mail wysłane
-- [ ] Aktualizacje pól działają poprawnie
+* [ ] Zadanie utworzone pomyślnie
+* [ ] Zadanie przypisane właściwemu użytkownikowi/grupie
+* [ ] Powiadomienie e-mail wysłane
+* [ ] Zadanie pojawia się na liście zadań użytkownika
+* [ ] Właściwości zadania poprawne (tytuł, opis, priorytet, termin)
+* [ ] Użytkownik może ukończyć zadanie
+* [ ] Workflow jest kontynuowany po ukończeniu zadania
+* [ ] Workflow zatwierdzania działa poprawnie
+* [ ] Workflow odrzucenia działa poprawnie
+* [ ] Eskalacja jest wyzwalana we właściwym momencie
+* [ ] Obsługa przeterminowania działa
+* [ ] Wszystkie powiadomienia e-mail wysłane
+* [ ] Aktualizacje pól działają poprawnie
 
----
+***
 
 ## Przykłady z praktyki
 
@@ -653,7 +699,7 @@ Day 5: IF still not completed:
    IF Rejected: Return to supplier
 ```
 
----
+***
 
 ### Przykład 2: Zatwierdzanie faktury dostawcy
 
@@ -671,7 +717,7 @@ Day 5: IF still not completed:
      Continue normal workflow
 ```
 
----
+***
 
 ### Przykład 3: Przetwarzanie na zamknięcie miesiąca
 
@@ -689,63 +735,65 @@ Day 5: IF still not completed:
 4. Track completion
 ```
 
----
+***
 
 ## Wskazówki dotyczące wydajności
 
 ✅ **Najlepsze praktyki:**
-- Ustawiaj realistyczne terminy
-- Używaj jasnych tytułów i opisów zadań
-- Umieszczaj w zadaniu wszystkie niezbędne informacje
-- Powiadamiaj na czas
-- Monitoruj wskaźniki ukończenia zadań
-- Automatycznie eskaluj przeterminowane zadania
-- Rejestruj wszystkie aktywności zadań
-- Przeglądaj wzorce zadań co miesiąc
+
+* Ustawiaj realistyczne terminy
+* Używaj jasnych tytułów i opisów zadań
+* Umieszczaj w zadaniu wszystkie niezbędne informacje
+* Powiadamiaj na czas
+* Monitoruj wskaźniki ukończenia zadań
+* Automatycznie eskaluj przeterminowane zadania
+* Rejestruj wszystkie aktywności zadań
+* Przeglądaj wzorce zadań co miesiąc
 
 ❌ **Unikaj:**
-- Tworzenia zadań do wszystkiego
-- Niejasnych opisów zadań
-- Nierealistycznych terminów
-- Zbyt wielu e-maili powiadomień
-- Braku ścieżki eskalacji
-- Ignorowania przeterminowanych zadań
-- Nieśledzenia wskaźników zadań
 
----
+* Tworzenia zadań do wszystkiego
+* Niejasnych opisów zadań
+* Nierealistycznych terminów
+* Zbyt wielu e-maili powiadomień
+* Braku ścieżki eskalacji
+* Ignorowania przeterminowanych zadań
+* Nieśledzenia wskaźników zadań
+
+***
 
 ## Powiązane wzorce
 
 ### Wzorce, które dobrze ze sobą współgrają:
 
-- **[Wzorzec integracji API](api-integration-pattern.md)** – Tworzenie zadań dla błędów API
-- **[Wzorzec PO Matching](po-matching-pattern.md)** – Tworzenie zadań przy odchyleniach PO
-- **[Wzorzec logiki decyzyjnej](decision-logic-pattern.md)** – Routing do odpowiedniego typu zadania
-- **[Wzorzec transformacji danych](data-transformation-pattern.md)** – Transformacja danych przed utworzeniem zadania
+* [**Wzorzec integracji API**](api-integration-pattern.md) – Tworzenie zadań dla błędów API
+* [**Wzorzec PO Matching**](po-matching-pattern.md) – Tworzenie zadań przy odchyleniach PO
+* [**Wzorzec logiki decyzyjnej**](decision-logic-pattern.md) – Routing do odpowiedniego typu zadania
+* [**Wzorzec transformacji danych**](data-transformation-pattern.md) – Transformacja danych przed utworzeniem zadania
 
----
+***
 
 ## Powiązane przewodniki
 
 ### Wymagania wstępne
-- [Przewodnik po przypisywaniu zadań](../then/task/task-assignment-guide.md) – Dokumentacja karty zadania
-- [Przewodnik po przypisaniu](../then/assignee/assignment-user-guide.md) – Przypisanie użytkownika
-- [Przewodnik po wysyłaniu e-maili do grup](../then/action/send-email-groups-guide.md) – Powiadomienia e-mail
+
+* [Przewodnik po przypisywaniu zadań](../then/task/task-assignment-guide.md) – Dokumentacja karty zadania
+* [Przewodnik po przypisaniu](../then/assignee/assignment-user-guide.md) – Przypisanie użytkownika
+* [Przewodnik po wysyłaniu e-maili do grup](../then/action/send-email-groups-guide.md) – Powiadomienia e-mail
 
 ### Powiązane karty
-- **tasks_create** – [Przewodnik po przypisywaniu zadań](../then/task/task-assignment-guide.md)
-- **ACTION_ASSIGN_TO_USER** – [Przewodnik po przypisaniu](../then/assignee/assignment-user-guide.md)
-- **ACTION_SEND_EMAIL_TO_GROUPS** – [Przewodnik po e-mailach](../then/action/send-email-groups-guide.md)
-- **CONDITION_TASK_STATUS** – [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md)
+
+* **tasks\_create** – [Przewodnik po przypisywaniu zadań](../then/task/task-assignment-guide.md)
+* **ACTION\_ASSIGN\_TO\_USER** – [Przewodnik po przypisaniu](../then/assignee/assignment-user-guide.md)
+* **ACTION\_SEND\_EMAIL\_TO\_GROUPS** – [Przewodnik po e-mailach](../then/action/send-email-groups-guide.md)
+* **CONDITION\_TASK\_STATUS** – [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md)
 
 ### Następne kroki
-- Dodaj powiadomienia e-mail: [Przewodnik po e-mailach](../then/action/send-email-groups-guide.md)
-- Wdróż złożony routing: [Wzorzec logiki decyzyjnej](decision-logic-pattern.md)
 
----
+* Dodaj powiadomienia e-mail: [Przewodnik po e-mailach](../then/action/send-email-groups-guide.md)
+* Wdróż złożony routing: [Wzorzec logiki decyzyjnej](decision-logic-pattern.md)
+* Rozwiąż błędy zadań: [Obsługa błędów](task-management-pattern.md#obsluga-bledow) powyżej
 
-**Wersja wzorca:** 1.0
-**Ostatnia aktualizacja:** 23 października 2025
-**Trudność:** Niska-Średnia
-**Szacowany czas:** 30–45 minut
-**Wskaźnik sukcesu:** Bardzo wysoki
+***
+
+**Wersja wzorca:** 1.0 **Ostatnia aktualizacja:** 23 października 2025 **Trudność:** Niska-Średnia **Szacowany czas:** 30–45 minut **Wskaźnik sukcesu:** Bardzo wysoki

@@ -1,25 +1,45 @@
 # Modyfikowanie szczegółów użytkownika
 
+<figure><img src="../../../../../.gitbook/assets/prior-u001-pl.png" alt="Zarządzanie użytkownikami z ukrytymi danymi osobowymi."><figcaption><p>Zarządzanie użytkownikami z ukrytymi danymi osobowymi.</p></figcaption></figure>
+
 * **Logowanie jako administrator:** Zaloguj się z uprawnieniami administratora.
-* **Dostęp do zarządzania użytkownikami:** Przejdź do ustawień użytkownika, gdzie możesz edytować istniejących użytkowników.
-* **Wybieranie użytkowników:** Znajdź i wybierz użytkownika, którego szczegóły chcesz zmienić. Można to zrobić, klikając na nazwę użytkownika lub przycisk edycji obok użytkownika.
-* **Edycja szczegółów użytkownika:** Pojawi się formularz zawierający aktualne szczegóły użytkownika. Edytuj wymagane pola zgodnie z wprowadzanymi zmianami. Typowe szczegóły do edytowania to:
-  * Imię i nazwisko
-  * Adres e-mail
-  * Rola użytkownika lub poziom uprawnień
-* **Zapisz zmiany:** Przejrzyj wszelkie wprowadzone zmiany i kliknij Zapisz, aby zapisać nowe szczegóły użytkownika.
-* **Przejrzyj wpływ zmian ról:** Jeśli zmieniłeś rolę użytkownika, przejrzyj wpływ tej zmiany na poziomy dostępu do zabezpieczeń. Upewnij się, że po zmianie roli użytkownik ma wymagane uprawnienia do kontynuowania wykonywania swoich obowiązków.
-* **Wyślij powiadomienie (opcjonalnie):** Możesz wysłać powiadomienie do użytkownika, aby poinformować go o wprowadzonych zmianach.
+* **Dostęp do zarządzania użytkownikami:** Przejdź do ustawień użytkowników, gdzie możesz edytować istniejących użytkowników.
+* **Wybieranie użytkowników:** Znajdź i wybierz użytkownika, którego szczegóły chcesz zmienić. Można to zrobić, klikając nazwę użytkownika lub przycisk edycji obok użytkownika.
+
+<figure><img src="../../../../../.gitbook/assets/user_selection_list.png" alt="Lista wyboru użytkowników"><figcaption></figcaption></figure>
+
+*   **Edycja szczegółów użytkownika:** Pojawi się formularz zawierający aktualne szczegóły użytkownika. Edytuj wymagane pola zgodnie z wprowadzanymi zmianami. Typowe szczegóły do edytowania to:
+
+    * Imię i nazwisko
+    * Adres e-mail
+    * Rola użytkownika lub poziom uprawnień
+
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-pl.png" alt="Formularz edycji użytkownika z ukrytymi wartościami."><figcaption><p>Formularz edycji użytkownika z ukrytymi wartościami.</p></figcaption></figure>
+* **Zapisywanie zmian:** Przejrzyj wprowadzone zmiany i kliknij Save, aby zapisać nowe szczegóły użytkownika.
+
+<figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="Przycisk zapisywania zmian użytkownika"><figcaption></figcaption></figure>
+
+* **Przejrzyj wpływ zmian roli:** Jeśli zmieniono rolę użytkownika, przejrzyj wpływ tej zmiany na poziomy dostępu. Upewnij się, że po zmianie roli użytkownik ma uprawnienia wymagane do dalszego wykonywania swoich obowiązków.
+* **Wyślij powiadomienie (opcjonalnie):** Możesz wysłać użytkownikowi powiadomienie, aby poinformować go o wprowadzonych zmianach.
 
 Po zakończeniu tych kroków szczegóły użytkownika zostaną pomyślnie zaktualizowane, a użytkownik będzie miał nowe informacje i uprawnienia zgodnie z wprowadzonymi zmianami.
 
-### Usuwanie użytkowników:
+## Usuwanie użytkowników:
 
-* **Wybieranie użytkowników:** Znajdź i wybierz użytkownika, którego dostęp chcesz usunąć. Można to zrobić, klikając na nazwę użytkownika lub przycisk edycji obok użytkownika.
-* **Usuwanie dostępu:** Kliknij "usuń", aby usunąć użytkownika.
+* **Wybieranie użytkowników:** Znajdź i wybierz użytkownika, którego dostęp chcesz usunąć. Można to zrobić, klikając nazwę użytkownika lub przycisk edycji obok użytkownika.
+
+<figure><img src="../../../../../.gitbook/assets/user_delete_selection.png" alt="Wybór użytkownika do usunięcia"><figcaption></figcaption></figure>
+
+* **Usuwanie dostępu:** Kliknij „delete”, aby usunąć użytkownika.
+
+<figure><img src="../../../../../.gitbook/assets/user_delete_button.png" alt="Przycisk usuwania użytkownika"><figcaption></figcaption></figure>
+
 * **Potwierdzenie:** Zostaniesz poproszony o potwierdzenie usunięcia użytkownika.
-* **Opcjonalne powiadomienie:** Możesz opcjonalnie wysłać powiadomienie do użytkownika, aby poinformować go o usunięciu jego dostępu.
-* **Przejrzyj zadania i dokumenty:** Przed usunięciem użytkownika przejrzyj, jakie zadania lub dokumenty są przypisane do użytkownika. Przenieś lub przekaż odpowiedzialność za te zadania lub dokumenty innemu użytkownikowi, aby upewnić się, że nic nie zostanie zgubione ani niedokończone.
+
+<figure><img src="../../../../../.gitbook/assets/user_delete_confirmation_dialog.png" alt="Okno potwierdzenia usunięcia użytkownika"><figcaption></figcaption></figure>
+
+* **Opcjonalne powiadomienie:** Możesz opcjonalnie wysłać użytkownikowi powiadomienie, aby poinformować go o usunięciu jego dostępu.
+* **Przejrzyj zadania i dokumenty:** Przed usunięciem użytkownika przejrzyj, jakie zadania lub dokumenty są mu przypisane. Przenieś lub przekaż odpowiedzialność za te zadania lub dokumenty innemu użytkownikowi, aby upewnić się, że nic nie zostanie zgubione ani niedokończone.
 * **Zapisz zmiany:** Potwierdź usunięcie użytkownika i zapisz zmiany.
 
 Postępując zgodnie z tymi krokami, możesz zapewnić, że dostęp użytkownika zostanie bezpiecznie usunięty, jednocześnie właściwie zarządzając wszystkimi istotnymi zadaniami i dokumentami.

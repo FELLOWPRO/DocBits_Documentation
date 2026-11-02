@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych AUNZ PINT SELF-BILLING w DocBi
 
 # 🇦🇺 AUNZ PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Australia](countries/australia.md). Aktywne oznaczenie rodziny nie ma stałego numeru wydania PINT. Sprawdź identyfikatory dostosowania i profilu; dostarczenie przez sieć wymaga osobnej integracji.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj / Region** | Australia / Nowa Zelandia |
@@ -24,7 +30,7 @@ AUNZ PINT Self-Billing to wariant self-billing modelu fakturowania Peppol Intern
 
 ## Domyślny podgląd
 
-<figure><img src="aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT Self-Billing w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT Self-Billing</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT Self-Billing w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT Self-Billing</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -33,7 +39,7 @@ Mapowanie pól jest identyczne jak w [AUNZ PINT](aunz-pint.md) z następującą 
 - **Role stron są odwrócone**: W self-billing kupujący jest stroną fakturowaną, a dostawca jest stroną fakturowaną
 - `CustomizationID` zawiera `urn:peppol.org:pint:selfbilling-1@aunz` zamiast `billing-1@aunz`
 
-Pełną tabelę mapowania pól znajdziesz w [AUNZ PINT](aunz-pint.md#field-mapping).
+Pełną tabelę mapowania pól znajdziesz w [AUNZ PINT](aunz-pint.md#mapowanie-pol).
 
 ## Reguła klasyfikacji
 

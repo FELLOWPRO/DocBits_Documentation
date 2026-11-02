@@ -1,5 +1,12 @@
 # Wiadomości e-mail przychodzące
 
+## Od przychodzącej wiadomości e-mail po dokument gotowy do weryfikacji
+
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-pl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-pl-light-20261029.png" alt="Od przychodzącej wiadomości e-mail po dokument gotowy do weryfikacji"></picture><figcaption><p>Od przychodzącej wiadomości e-mail po dokument gotowy do weryfikacji</p></figcaption></figure>
+
+Ilustracja przedstawia dwa sposoby wejścia: do podłączonej skrzynki pocztowej i przekazania na adres importowy DocBits. Obsługiwane załączniki dokumentów są importowane. Sprawdź ograniczenia nadawcy, organizację i routing, a następnie zweryfikuj rzeczywisty import. Wysłanie wiadomości e-mail nie oznacza, że jej dokumenty zostały pomyślnie zaimportowane.
+
+
 ### Przegląd
 
 DocBits może pobierać dokumenty bezpośrednio z poczty e-mail — bez ręcznego przesyłania. Istnieją **dwa sposoby** wprowadzania dokumentów z e-maili, oba w **Ustawienia → Przetwarzanie dokumentów → Import**:
@@ -19,7 +26,7 @@ Przejdź do **Ustawienia → Przetwarzanie dokumentów → Import** i otwórz se
 
 Otworzy się kreator konfiguracji. Pierwsze pole, **Protokół**, decyduje o sposobie połączenia DocBits — wybierz **IMAP**, **OAuth Office365** lub **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Lista rozwijana Protokół z IMAP, OAuth Office365 i OAuth Office365 - Tenant"><figcaption><p>Lista <strong>Protokół</strong> oferuje trzy typy połączeń.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-pl.png" alt="Wybór protokołu w kreatorze poczty przychodzącej."><figcaption><p>Wybór protokołu w kreatorze poczty przychodzącej.</p></figcaption></figure>
 
 #### IMAP
 
@@ -44,7 +51,7 @@ Aby połączyć się na poziomie dzierżawy (organizacji) przez rejestrację apl
 <figure><img src="../../../../.gitbook/assets/inbound_emails_o365_tenant.png" alt="Konfiguracja dzierżawy Azure z Identyfikatorem dzierżawy, Identyfikatorem aplikacji klienckiej i Wartością aplikacji klienckiej"><figcaption><p>OAuth Office365 – Tenant używa rejestracji aplikacji Azure (Identyfikator dzierżawy, Identyfikator aplikacji klienckiej, klucz tajny klienta).</p></figcaption></figure>
 
 {% hint style="info" %}
-**Routing dokumentów** decyduje, dokąd trafiają importowane dokumenty — **DocBits** (standardowy panel) lub **AI Workforce**. Po połączeniu kolejne kroki kreatora pozwalają wybrać, z którego **folderu** importować, opcjonalną **skrzynkę współdzieloną** oraz czy przetworzone e-maile mają być **przenoszone** do innego folderu.
+**Routing dokumentów** decyduje, dokąd trafiają importowane dokumenty — **DocBits** (standardowy panel) lub **Siła robocza AI**. Po połączeniu kolejne kroki kreatora pozwalają wybrać, z którego **folderu** importować, opcjonalną **skrzynkę współdzieloną** oraz czy przetworzone e-maile mają być **przenoszone** do innego folderu.
 {% endhint %}
 
 ### Metoda 2 — Przekazywanie e-maili do DocBits (Wiadomości przychodzące)

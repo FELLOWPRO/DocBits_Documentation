@@ -11,7 +11,7 @@
 
 它是[分析仪表板](../)中的一个标签页。它不会给您的团队增加任何工作：DocBits 会记录处理流水线中每份文档的处理情况，并每 15 分钟评估一次结果。
 
-<figure><img src="../../../.gitbook/assets/touchless-overview.png" alt="无接触智能标签页，显示五项关键指标、改进建议和无接触率图表"><figcaption><p>无接触智能标签页：关键指标、改进项、随时间变化的无接触率以及首次流失图表。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-touchless-overview-zh.png" alt="当前中文 Touchless Intelligence 总览。指标和图表是测试环境实际数据；“美联社协助”指应付账款辅助处理，“非接触式费率”指免人工处理率，“学术规则提案”指已学习规则提案。Compare suppliers 按钮仍为英文。未运行诊断或应用提案。"><figcaption><p>当前中文 Touchless Intelligence 总览。指标和图表是测试环境实际数据；“美联社协助”指应付账款辅助处理，“非接触式费率”指免人工处理率，“学术规则提案”指已学习规则提案。Compare suppliers 按钮仍为英文。未运行诊断或应用提案。</p></figcaption></figure>
 
 ### 您可以用它做什么
 
@@ -83,7 +83,7 @@ rate = (Pure touchless + AP touchless)
 
 点击右上方的**无接触率的计算方式**，即可在 DocBits 中打开此说明，并查看所选期间的实际数字（期间内的文档、仍在处理中的文档、已排除文档和已计量文档）。
 
-<figure><img src="../../../.gitbook/assets/touchless-methodology.png" alt="“无接触率的计算方式”侧边栏，显示期间内的数字"><figcaption><p><strong>无接触率的计算方式</strong>侧边栏：计算公式、<strong>您在此期间的数据</strong>（此处为 2,425 份文档、2,115 份仍在处理、310 份已计量）以及每种结果的含义。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-touchless-methodology-zh.png" alt="中文 Touchless 计算方法窗口的可见部分：5314 份文档中减去 5212 份仍在处理的文档，计量范围为 102。界面中的“利率”在此指处理率，“美联社协助”指应付账款辅助处理；数据仅为当前测试环境示例。"><figcaption><p>中文 Touchless 计算方法窗口的可见部分：5314 份文档中减去 5212 份仍在处理的文档，计量范围为 102。界面中的“利率”在此指处理率，“美联社协助”指应付账款辅助处理；数据仅为当前测试环境示例。</p></figcaption></figure>
 
 ### 数字的更新时间
 
@@ -104,7 +104,7 @@ rate = (Pure touchless + AP touchless)
 
 ### 五项关键指标
 
-<figure><img src="../../../.gitbook/assets/touchless-kpi-cards.png" alt="五项关键指标：纯无接触、AP 无接触、AP 辅助处理、流程异常和诊断覆盖率"><figcaption><p>五项关键指标。此处纯无接触率为 50.3 %（156 份文档），比 70 % 的目标低 19.7 个百分点，诊断覆盖率为 100 %。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+
 
 | 卡片                   | 显示内容                                           | 示例（说明性数据）                                                        |
 | ---------------------- | -------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -120,7 +120,7 @@ rate = (Pure touchless + AP touchless)
 
 ### 无接触率随时间变化
 
-<figure><img src="../../../.gitbook/assets/touchless-trend.png" alt="按日显示纯无接触率和 AP 无接触率的折线图，并带有 70% 目标线"><figcaption><p>按日显示无接触率及目标线。此处无接触率维持在 40 % 至 60 % 之间，并从 10 月 10 日开始急剧下降。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+
 
 图表中有一条**纯无接触**折线、一条 **AP 无接触**折线和一条**目标线**。较短的统计期间显示每日数据点，较长的统计期间显示每周数据点。
 
@@ -128,7 +128,7 @@ rate = (Pure touchless + AP touchless)
 
 ### 无接触首次流失位置
 
-<figure><img src="../../../.gitbook/assets/touchless-blocking-stages.png" alt="按首次阻塞阶段和原因显示受阻文档数量的柱状图"><figcaption><p>按文档首次停下的阶段和原因显示受阻文档。此处，<strong>字段验证：缺少必填字段</strong>影响的文档最多（58 份），其次是<strong>导出映射失败</strong>（46 份）和 <strong>PO 行项目不匹配</strong>（27 份）。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+
 
 柱状图按处理流水线阶段显示**受阻文档**数量，每份文档只显示最先阻止其继续处理的阶段。
 
@@ -136,7 +136,7 @@ rate = (Pure touchless + AP touchless)
 
 ### 供应商改进机会
 
-<figure><img src="../../../.gitbook/assets/touchless-supplier-queue.png" alt="“供应商改进机会”表格，显示文档量、纯无接触率、流失文档、根本原因、可挽回文档、预期提升、置信度和状态"><figcaption><p>供应商队列（仅显示前四行）。第一个供应商有 106 份文档，纯无接触率为 38.7 %，有 65 份可挽回文档，因此修复后可提升<strong>21 个百分点</strong>。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+
 
 此队列回答**“我们应该先修复哪个供应商？”**队列按**可挽回文档**数量从高到低排序，每页 25 行。
 
@@ -163,7 +163,7 @@ rate = (Pure touchless + AP touchless)
 
 ### 比较供应商
 
-<figure><img src="../../../.gitbook/assets/touchless-compare-suppliers.png" alt="“比较供应商”页面并排显示三家供应商及其处理结果柱状图"><figcaption><p>并排比较三家供应商：纯无接触率、流失和可挽回文档、根本原因、预期提升，以及处理结果柱状图。每个<strong>打开</strong>链接都会跳转到供应商诊断。示例组织使用演示数据；供应商名称均为虚构。</p></figcaption></figure>
+
 
 点击**比较供应商**，勾选**两到五家**供应商（每家旁边都列有受阻文档数），然后点击**比较**。
 

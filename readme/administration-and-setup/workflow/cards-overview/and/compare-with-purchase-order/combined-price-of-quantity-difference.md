@@ -1,8 +1,10 @@
 # 数量差异合并价格
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-5e9d809dfde3-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v2-zh-cn.png" alt="数量差异合并价格, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-313edcefbea2-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v3-zh-cn.png" alt="数量差异合并价格, 版本 3" width="634"><figcaption><p>版本 3</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v4-zh-cn.png" alt="数量差异合并价格, 版本 4" width="634"><figcaption><p>版本 4</p></figcaption></figure>
 
 ## **目的**：
 

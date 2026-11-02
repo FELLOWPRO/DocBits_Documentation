@@ -15,3 +15,20 @@ After pressing NEW, the following menu will be shown to you.
 Here you can select which Protocol you would like.
 
 ![](https://lh7-us.googleusercontent.com/nikZZGemqPpldbGBirUP7d4QAoBikHCay9Ptk8PSVft9zPkZeKuoH9gfK2ar53MpslTjw4GhldbrCw6phn1VV1Y7MMfgaZLnXaXjjERJV8pFUoyIG8Z760P3\_2DjQFUKZYMCagXBzaTm52ii5tPl8C0)
+
+## Desteklenen belge ekleri
+
+Her iki e-posta içe aktarma yöntemi de şu belge eklerini kabul eder:
+
+| Biçim | Dosya uzantıları | Tipik kullanım |
+| --- | --- | --- |
+| PDF | `.pdf` | Fatura ve diğer PDF belgeler |
+| TIFF | `.tif`, `.tiff` | Taranan belgeler |
+| XML | `.xml` | Yapılandırılmış elektronik belgeler |
+| EDI / sipariş verisi | `.edi`, `.purchaseorder` | Elektronik veri değişimi ve satın alma siparişleri |
+
+Bir iletme hizmeti PDF, TIFF veya XML dosyasını genel (generic) ek olarak etiketlerse, DocBits bu dosyayı içerikten veya bilinen bir dosya uzantısından tanıyabilir. İletilen `.eml` mesajları da desteklenen belgeler içerebilir; DocBits bu iç içe geçmiş ekleri içe aktarmadan önce çıkarır.
+
+PNG, JPG, GIF ve BMP gibi görseller belge olarak içe aktarılmaz. İletilen e-postalardaki imza görselleri ve logolar atlanır. Word, Excel ve PowerPoint gibi Office dosyaları bu e-posta içe aktarma yöntemleri tarafından desteklenmez.
+
+İletilen e-postalarda bir belge eksikse **Inbound Emails** altındaki **Logs** bölümünü kontrol edin. **Notify sender when import fails** etkin olduğunda, gönderene bir açıklama ve bu sayfanın bağlantısı içeren bir bildirim gönderilir. Bağlı bir posta kutusu için [IMAP](imap.md) veya [OAuth (Office 365)](oauth-office365.md) kurulum rehberini kullanın.

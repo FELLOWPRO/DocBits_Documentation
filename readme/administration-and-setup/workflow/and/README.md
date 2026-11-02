@@ -1,64 +1,59 @@
-# And
+# And: bir koşul kartı seçin
 
-## "And" Kartlarını Anlamak
+İş akışının **Ne zaman** tetikleyicisinden sonra devam edip etmeyeceğine karar vermek için bir **Ve** kartı kullanın. **Daha sonra** eyleminden önce ihtiyaç duyduğunuz kontrolleri ekleyin. Her kart, **Operatör**, **Alan Adı** veya **Değer** gibi doldurulacak alanlar gösterir; ekran görüntüleri tamamlanmış kuralları değil, kullanılabilir kart şablonlarını gösterir.
 
-### **'And' Kartlarının Amacı:**
+**İş Akışı Oluşturucu** bölümünde **Ve....** altındaki **Kart Ekle** seçeneğini seçin. Soldan bir kategori seçin veya **Arama Kartı** alanına bir kart adı yazın. İş akışına eklemek için bir kart önizlemesi seçin. Daha fazla kart görmek için önizleme listesini kaydırabilirsiniz. Başka bir kart seçmeden seçiciyi kapatmak için **×** kullanın. Kartları yapılandırdıktan sonra iş akışını kaydedin. Çevreleyen **Ne zaman**, **Ve** ve **Daha sonra** adımları için [İş Akışı](../README.md) sayfasına bakın.
 
-* **And** kartları, iş akışının devam etmesi için karşılanması gereken ölçütleri belirten koşul kartları olarak hizmet eder. Etkili bir şekilde mantıksal "AND" operatörleri olarak işlev görürler, yani sonraki eylemin tetiklenmesi için bu kartlarda belirtilen tüm koşulların karşılanması gerekir.
+## Satınalma Siparişi ile Karşılaştır
 
-#### 'And' Kartlarının Kategorileri
+Sipariş veya fatura verilerini bir satınalma siparişiyle karşılaştırmak için bu kartları kullanın; örneğin birim fiyat, vaat edilen teslimat tarihi, masraflar veya miktar. Seçilen kartın istediği alanları, operatörü ve varsa toleransı seçin. Tek tek kartlar için [Satınalma Siparişi ile Karşılaştır](compare-with-purchase-order/README.md) sayfasına bakın.
 
-Ekran görüntülerinden, bu kartların aşağıdakileri içeren geniş bir koşul yelpazesini kapsadığı açıktır:
+<figure><img src="../../../.gitbook/assets/and-category-po-comparison-tr-20261008.png" alt="Türkçe And kart seçicisi, Satınalma Siparişi ile Karşılaştır seçili; görünen önizlemeler birim fiyatı, teslimat tarihi, masraflar ve miktar karşılaştırmalarını içerir."><figcaption><p>Türkçe Sandbox'ta Satınalma Siparişi ile Karşılaştır kategorisi.</p></figcaption></figure>
 
-* **Compare with Purchase Order**:
-  * Teslimat tarihlerini, birim fiyatlarını veya miktar farklarını karşılaştırma gibi satınalma siparişlerine karşı doğrulama ve karşılaştırmayla ilgili koşullar. Bunlar, işlemlerin üzerinde anlaşılan koşullarla uyumlu olmasını sağlamak için çok önemlidir.
+## Belge Alanı
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Bir onay kutusunu veya alan durumunu denetlemek, bir alanı bir değerle karşılaştırmak ya da iki alanı karşılaştırmak için bu kategoriyi seçin. Seçilen kartta **Alan Adı** ve **Operatör** yer tutucularını doldurun. Bazı karşılaştırmalar ayrıca bir tolerans ister. Bkz. [Belge Alanı](document-field/README.md).
 
-* **Document Field**:
-  * Bunlar, onay kutularının işaretlenmesi, alan değerlerinin karşılaştırılması veya bir belge alanının belirtilen bir toleransı karşılamasını sağlama gibi belgeler içindeki belirli alanlara dayalı koşulları içerir. Bu, özellikle formlar veya belge yönetimi sistemleri içinde veri bütünlüğü ve otomatik kontroller için önemlidir.
+<figure><img src="../../../.gitbook/assets/and-category-document-field-tr-20261008.png" alt="Türkçe And kart seçicisi, Belge Alanı seçili; görünen önizlemeler bir onay kutusunu, alan durumunu, alan değerlerini ve iki alan karşılaştırmasını denetler."><figcaption><p>Belge Alanı kontrolleri geçerli belgedeki değerleri kullanır.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Tarih ve Saat
 
-* **Date & Time:**
-  * Tarihlere ve saatlere dayalı koşullar
+Bir tarih veya saati bir aralıkla karşılaştırmak ya da **Bugün** ile seçilen bir tarihi karşılaştırmak için **Tarih ve Saat** kullanın. Kartta **Operatör** ve tarih değerlerini seçin. Bkz. [Tarih ve Saat](date-and-time/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-date-time-tr-20261008.png" alt="Türkçe And kart seçicisi, Tarih ve Saat seçili; iki önizleme bir tarih veya saati bir aralıkla karşılaştırır ve Bugün ile bir Tarihi karşılaştırır."><figcaption><p>Tarih ve Saat bir aralık kontrolü ve bugüne göre bir kontrol sunar.</p></figcaption></figure>
 
-* **Document**:
-  * Tür veya belirli bir alt kuruluşla ilişki gibi belge özelliklerine dayalı koşullar. Bu koşullar, iş akışlarını belge kategorilendirmesine veya departman katılımına göre yönlendirebilir.
+## Belge
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Bir iş akışı **belge türüne** veya **alt kuruluşa** bağlı olması gerektiğinde bu kartları kullanın. Kartta adı geçen türü veya kuruluşu seçin. Bkz. [Belge](document/README.md).
 
-* **Logic**:
-  * "%X olasılıkla devam et" gibi değerlendirmeleri veya iş akışları içindeki entegrasyonlar ve olasılıksal karar verme için hayati öneme sahip HTTPS isteklerini yürütmeyi içerebilen mantıksal koşullar.
+<figure><img src="../../../.gitbook/assets/and-category-document-tr-20261008.png" alt="Türkçe And kart seçicisi, Belge seçili; önizlemeler belge türünü ve bir alt kuruluşa üyeliği denetler."><figcaption><p>Belge koşulları türü veya alt kuruluşu denetler.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Mantık
 
-* **Status**:
-  * Belgelerin veya görevlerin durumuna odaklanan bu koşullar, yalnızca belirli durumlardaki öğelerin belirli iş akışlarını tetiklemesini sağlar, bu da durum odaklı süreç yönetimi için çok önemlidir.
+Bu kategori karar tablosu, bir HTTPS yanıtı, modül kullanılabilirliği, teklif edilen bir ürün fiyatı, bir şans değeri veya iki değer kullanan kontrolleri içerir. İlgili kartı açın ve adlandırılmış yer tutucularını doldurun; örneğin HTTPS kartı URL, yöntem ve kabul edilen durum kodunu sorar. Bkz. [Mantık](logic/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-logic-tr-20261008.png" alt="Türkçe And kart seçicisi, Mantık seçili; önizlemeler karar tablosu, HTTPS isteği, etkin modül, teklif edilen fiyat, şans ve değer karşılaştırma kartlarını içerir."><figcaption><p>Mantık birkaç farklı koşul türü sunar; kuralınıza uyanı seçin.</p></figcaption></figure>
 
-* **Table**:
-  * Bunlar, regex kalıplarını eşleştirme veya bir tablo içindeki değerleri karşılaştırma gibi tablo verilerine dayalı koşulları içerir. Bu tür koşullar, büyük veri kümelerini doğrulamak ve işlemek için gereklidir.
+## Durum
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Bir belgenin seçilen bir duruma sahip olup olmadığını veya durumunun seçili bir küme içinde olup olmadığını denetlemek için **Durum** kullanın. Kartta **Operatör** ve **Durum** seçin. Bkz. [Durum](status/README.md).
 
-* **Assignee**:
-  * Görev veya belge atananlarına dayalı koşullar. Bu, eylemlerin yalnızca belirli kullanıcılar dahil olduğunda gerçekleştirilmesini sağlar, hesap verebilirliği ve görev özgüllüğünü artırır.
+<figure><img src="../../../.gitbook/assets/and-category-status-tr-20261008.png" alt="Türkçe And kart seçicisi, Durum seçili; iki önizleme Belge durumunu bir Durumla veya bir durum kümesiyle karşılaştırır."><figcaption><p>Durum koşulları belgenin geçerli durumunu denetler.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Masa
 
-### Pratik Uygulama
+Bu kartlar belge tablosu satırlarını inceler. Görünen seçenekler tarih kontrollerini, metin kalıplarını, raf ömrünü ve sütunlar arası karşılaştırmaları içerir. Bir operatör veya kalıp seçmeden önce **Tablo adı** ve **Sütun Adı** seçin. Bkz. [Masa](table/README.md).
 
-Bu "And" kartları, sürecin iş kurallarına ve veri bütünlüğü standartlarına sıkı sıkıya uymasını sağlayan kontroller ve doğrulamalar gerçekleştirmek için iş akışı içinde yapılandırılır. Örneğin:
+<figure><img src="../../../.gitbook/assets/and-category-table-tr-20261008.png" alt="Türkçe And kart seçicisi, Masa seçili; görünen önizlemeler tarih, regex kalıbı, raf ömrü ve tablo sütunu karşılaştırmalarını içerir."><figcaption><p>Masa koşulları bir belge tablosunun satırlarını ve sütunlarını kullanır.</p></figcaption></figure>
 
-* **Bir iş akışı, ödemeyi tetiklemeden önce bir faturanın toplam tutarının satınalma siparişiyle eşleştiğini doğrulamak için bir 'And' kartı kullanabilir.**
-* **Başka bir iş akışı, bir belgenin bir sonraki aşamaya ilerlemeden önce belirli ekip üyeleri tarafından incelenmesini sağlamak için bir 'And' kartı kullanabilir.**
+## Teklif Fiyatı ile Karşılaştır
 
-### Sonuç
+Bir ürünü teklif fiyatı verileriyle karşılaştırmak için bu kartları kullanın. Görünen seçenekler ürün kimliği, tedarikçi türü, tedarikçi ürün kimliği, birim fiyat ve ölçü birimini kapsar. **Operatör** ve veri yer tutucuları seçtiğiniz karta bağlıdır.
 
-"And" kartları, birden fazla koşula dayalı süreç yürütmesi üzerinde hassas kontrol gerektiren iş akışı sistemlerinin temel bir bileşenidir. Bir iş akışının her adımının yalnızca tüm gerekli ölçütler tam olarak karşılandığında ilerlemesini sağlar, böylece iş süreçleri içindeki karmaşık karar ağaçlarını otomatikleştirir.
+<figure><img src="../../../.gitbook/assets/and-category-quote-price-tr-20261008.png" alt="Türkçe And kart seçicisi, Teklif Fiyatı ile Karşılaştır seçili; beş önizleme ürün kimliği, tedarikçi türü, tedarikçi ürün kimliği, birim fiyat ve ölçü birimini kapsar."><figcaption><p>Teklif Fiyatı ile Karşılaştır, geçerli kart seçicide ayrı bir kategoridir.</p></figcaption></figure>
 
-Bu kartları doğru bir şekilde anlamak ve yapılandırmak, kurumsal süreçler içinde verimliliği, doğruluğu ve uyumluluğu artırmak için iş akışı yönetim sisteminizin tüm yeteneklerinden yararlanmak açısından çok önemlidir.
+## Atanan kişi
+
+Koşul atanan kullanıcıya veya gruba bağlı olduğunda **Atanan kişi** kullanın. Tek bir kullanıcı ya da grupla mı yoksa seçili bir kümeyle mi karşılaştırılacağını seçin. Bkz. [Atanan kişi](assignee/README.md).
+
+<figure><img src="../../../.gitbook/assets/and-category-assignee-tr-20261008.png" alt="Türkçe And kart seçicisi, Atanan kişi seçili; önizlemeler atanan kullanıcıyı veya grubu bir ya da birkaç seçenekle karşılaştırır."><figcaption><p>Atanan kişi koşulları belgeye atanan kullanıcıyı veya grubu denetler.</p></figcaption></figure>

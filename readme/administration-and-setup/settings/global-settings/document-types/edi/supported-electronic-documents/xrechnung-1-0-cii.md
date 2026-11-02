@@ -4,6 +4,12 @@ description: Ondersteuning voor XRECHNUNG 1.0 CII elektronisch document in DocBi
 
 # 🇩🇪 XRECHNUNG 1.0 CII
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Duitsland](countries/germany.md). Syntaxis, publicatieversie en profiel zijn verschillende keuzes. Leid geen Factur-X-publicatie af uit de gedeelde 1p0-markering.
+{% endhint %}
+
 | Eigenschap | Waarde |
 | ---------- | ------ |
 | **Land / Regio** | Duitsland |

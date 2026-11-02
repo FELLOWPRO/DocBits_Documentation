@@ -1,79 +1,79 @@
-# Test: Multi Email Import and Handling Tests
+# Test: import en verwerking van meerdere e-mails
 
-## What's Being Tested?
+## Wat wordt getest?
 
-These tests ensure that our email import system works correctly. The main goals are to:
+Deze tests zorgen ervoor dat ons e-mailimportsysteem correct werkt. De belangrijkste doelstellingen zijn:
 
-1. **Send emails** with attachments.
-2. **Receive and move emails** to specific folders.
-3. **Check if emails are read or unread.**
-4. **Import emails into our system.**
-5. **Clean up** by deleting emails and imported documents afterward.
+1. **E-mails verzenden** met bijlagen.
+2. **E-mails ontvangen en verplaatsen** naar specifieke mappen.
+3. **Controleer of e-mails gelezen of ongelezen zijn.**
+4. **E-mails importeren in ons systeem.**
+5. **Opschonen** door e-mails en geïmporteerde documenten achteraf te verwijderen.
 
-## Steps Involved
+## Benodigde stappen
 
 1. **Setup:**
-   * **Get Environment Settings:** Load the email server details and credentials from environment variables.
-   * **Encrypt Email Password:** Securely encrypt the email password.
-2. **Send and Manage Emails:**
-   * **Send Emails:** Use an SMTP function to send emails with specific subjects and attachments.
-   * **Move Emails:** Use IMAP functions to move emails to the target folder.
-   * **List Folders:** Check if the target folder exists.
-   * **Delete Emails:** Clean up emails by deleting them from folders.
-   * **Check Email Status:** Verify if emails are marked as unread or read.
+   * **Omgevingsinstellingen ophalen:** Laad de details en inloggegevens van de e-mailserver uit omgevingsvariabelen.
+   * **E-mailwachtwoord coderen:** Codeer het e-mailwachtwoord veilig.
+2. **E-mails verzenden en beheren:**
+   * **E-mails verzenden:** Gebruik een SMTP-functie om e-mails met specifieke onderwerpen en bijlagen te verzenden.
+   * **E-mails verplaatsen:** Gebruik de functies IMAP om e-mails naar de doelmap te verplaatsen.
+   * **Lijstmappen:** Controleer of de doelmap bestaat.
+   * **E-mails verwijderen:** Ruim e-mails op door ze uit mappen te verwijderen.
+   * **E-mailstatus controleren:** Controleer of e-mails zijn gemarkeerd als ongelezen of gelezen.
 3.  **Test Sequence**
 
     **Initial Setup:**
 
-    * **Check Connection:** Verify connection to the email server and get the connection ID.
-    * **Login Test:** Confirm that logging in with stored credentials works.
-    * **Folder Check:** Ensure the target folder exists on the email server.
+    * **Verbinding controleren:** Controleer de verbinding met de e-mailserver en verkrijg de verbinding ID.
+    * **Inlogtest:** Bevestig dat inloggen met opgeslagen inloggegevens werkt.
+    * **Mapcontrole:** Zorg ervoor dat de doelmap op de e-mailserver bestaat.
 
     **Email Operations:**
 
-    * **Send Test Emails:** Send three emails with unique subjects.
-    * **Retrieve Email IDs:** Get the IDs of the sent emails from the inbox.
-    * **Move Emails:** Move these emails from the inbox to the target folder.
-    * **Check Email Status:** Ensure the emails in the target folder are marked as unread.
+    * **Test-e-mails verzenden:** Stuur drie e-mails met unieke onderwerpen.
+    * **E-mail-ID's ophalen:** Haal de ID's van de verzonden e-mails op uit de inbox.
+    * **E-mails verplaatsen:** Verplaats deze e-mails van de inbox naar de doelmap.
+    * **E-mailstatus controleren:** Zorg ervoor dat de e-mails in de doelmap als ongelezen zijn gemarkeerd.
 
     **Email Importing:**
 
-    * **Fetch Emails:** Import emails from the target folder into our system.
-    * **Check Imported Emails:** Ensure the imported emails are correctly fetched and logged.
+    * **E-mails ophalen:** Importeer e-mails uit de doelmap in ons systeem.
+    * **Controleer geïmporteerde e-mails:** Zorg ervoor dat de geïmporteerde e-mails correct worden opgehaald en geregistreerd.
 
     **Log Verification:**
 
-    * **Check Import Logs:** Verify that the subjects of the sent emails are recorded in the import logs.
+    * **Importlogboeken controleren:** Controleer of de onderwerpen van de verzonden e-mails zijn vastgelegd in de importlogboeken.
 
     **Cleanup:**
 
-    * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-    * **Delete Emails:** Clean up by deleting the sent and moved emails from the folders.
+    * **Geïmporteerde documenten verwijderen:** Verwijder de documenten die uit de e-mails zijn geïmporteerd.
+    * **E-mails verwijderen:** Ruim op door de verzonden en verplaatste e-mails uit de mappen te verwijderen.
 
-### Detailed Explanation of Each Test
+### Gedetailleerde uitleg van elke test
 
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
-* **Email Connection Tests:**
-  * **Get Connection ID:** Check if we can connect to the email server and get an ID for the connection.
-  * **Login Verification:** Ensure that logging in to the email server works properly.
-* **Folder Verification Tests:**
-  * **Check Target Folder:** Make sure the target folder exists on the email server.
-  * **Verify Folder Listing:** Ensure the list of folders from the server matches our expectations.
-* **Email Sending and ID Retrieval:**
-  * **Send Emails:** Send three test emails with specific subjects and attachments.
-  * **Get Email IDs:** Retrieve the unique IDs of these sent emails from the inbox.
-* **Email Moving and Status Checking:**
-  * **Move Emails to Folder:** Move the test emails from the inbox to the target folder.
-  * **Check Unread Status:** Ensure the emails are marked as unread after moving.
-* **Email Fetching and Response Validation:**
-  * **Fetch Emails from Folder:** Import the emails from the target folder into our system.
-  * **Validate Fetched Emails:** Confirm that the fetched emails match the sent emails.
-* **Import Log Verification:**
-  * **Fetch Import Log:** Retrieve the log of imported emails.
-  * **Check Email Subjects in Log:** Ensure the subjects of the test emails are present in the import log.
+* **Installatie en initialisatie:**
+  * **Initialiseer gedeelde gegevens:** Bereid gedeelde gegevens voor op tests.
+* **E-mailverbindingstests:**
+  * **Get Connection ID:** Controleer of we verbinding kunnen maken met de e-mailserver en een ID krijgen voor de verbinding.
+  * **Inlogverificatie:** Zorg ervoor dat het inloggen op de e-mailserver correct werkt.
+* **Mapverificatietests:**
+  * **Controleer doelmap:** Zorg ervoor dat de doelmap op de e-mailserver bestaat.
+  * **Mappenlijst verifiëren:** Zorg ervoor dat de lijst met mappen op de server overeenkomt met onze verwachtingen.
+* **E-mail verzenden en ID Ophalen:**
+  * **E-mails verzenden:** Verzend drie test-e-mails met specifieke onderwerpen en bijlagen.
+  * **E-mail-ID's ophalen:** Haal de unieke ID's van deze verzonden e-mails op uit de inbox.
+* **E-mail verplaatsen en statuscontrole:**
+  * **E-mails naar map verplaatsen:** Verplaats de test-e-mails van de inbox naar de doelmap.
+  * **Ongelezen status controleren:** Zorg ervoor dat de e-mails na het verplaatsen als ongelezen worden gemarkeerd.
+* **E-mail ophalen en antwoordvalidatie:**
+  * **E-mails ophalen uit map:** Importeer de e-mails uit de doelmap in ons systeem.
+  * **Opgehaalde e-mails valideren:** Bevestig dat de opgehaalde e-mails overeenkomen met de verzonden e-mails.
+* **Logboekverificatie importeren:**
+  * **Importlogboek ophalen:** Haal het logbestand van geïmporteerde e-mails op.
+  * **Controleer e-mailonderwerpen in logboek:** Zorg ervoor dat de onderwerpen van de test-e-mails aanwezig zijn in het importlogboek.
 * **Cleanup:**
-  * **Delete Imported Documents:** Remove the documents that were imported from the emails.
-  * **Delete Emails:** Delete the test emails from the inbox and the target folder to keep everything clean.
+  * **Geïmporteerde documenten verwijderen:** Verwijder de documenten die uit de e-mails zijn geïmporteerd.
+  * **E-mails verwijderen:** Verwijder de test-e-mails uit de inbox en de doelmap om alles schoon te houden.
 
 \\

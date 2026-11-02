@@ -1,5 +1,7 @@
 # DocBits MCP
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/docbits-mcp-admin/v1/nl.mp4" %}
+
 DocBits biedt een **Model Context Protocol (MCP)**-server waarmee AI-assistenten met uw documenten, extractie, zoekopdrachten, analyses en configuratie kunnen werken — rechtstreeks vanuit een chat- of codeersessie. Elke MCP-compatibele client kan verbinding maken: **Claude Code**, **Claude Desktop**, **Google Gemini CLI**, **OpenAI Codex** of een eigen integratie.
 
 De server is gekoppeld aan de DocBits API op `/v3/mcp` en is afgebakend tot uw organisatie — elke aanroep wordt uitgevoerd met de rechten van de gebruiker (of API-sleutel) die de verbinding heeft gemaakt.
@@ -161,3 +163,5 @@ Waarom documenten menselijke tussenkomst nodig hebben en wat u kunt wijzigen zod
 {% hint style="info" %}
 **Eén MCP voor alles.** De eDoc-tools en de tools voor **Workflows en kaarten (DocFlow)** draaien op **hetzelfde** endpoint `api.docbits.com/v3/mcp` met dezelfde DocBits-aanmelding. DocFlow-tools verschijnen daar met het voorvoegsel `docflow_` (bijvoorbeeld `docflow_list_workflows`); de DocFlow-pagina documenteert ze onder hun kale namen. Rechtstreeks verbinden met de DocFlow-host is nog steeds mogelijk, maar niet langer nodig.
 {% endhint %}
+
+[DocBits configureren met Claude of Codex](configuration-with-claude-or-codex.md): verbinding, prompts, voorbeelden, wijzigingen met versiebeheer, controles en terugdraaien.

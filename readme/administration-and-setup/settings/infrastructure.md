@@ -4,7 +4,7 @@ De pagina **Infrastructuur** biedt beheerders een live overzicht van waar elk on
 
 > **Toegang:** Infrastructuur is een pagina alleen voor beheerders. Open **Instellingen → Organisatie en Toegang → Infrastructuur**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Infrastructuurpagina met het tabblad Topologie geopend"><figcaption><p>De Infrastructuurpagina, tabblad Topologie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-nl.png" alt="Overzicht van de infrastructuur."><figcaption><p>Overzicht van de infrastructuur.</p></figcaption></figure>
 
 De pagina is verdeeld in drie tabbladen:
 
@@ -16,7 +16,7 @@ De pagina is verdeeld in drie tabbladen:
 
 ## Topologie
 
-Het tabblad Topologie tekent het volledige DocBits-platform als een diagram, gegroepeerd in lagen — **Edge / Web**, **Core API**, **Import**, **Achtergronddiensten**, **Datastores** en **Authenticatie**. Elk vak is één onderdeel (de Web-app/CDN, de API-gateway, de OCR-worker, de database, enzovoort).
+Het tabblad Topologie tekent het volledige DocBits-platform als een diagram, gegroepeerd in lagen — **Edge / Web**, **Core API**, **Importeren**, **Achtergronddiensten**, **Datastores** en **Authenticatie**. Elk vak is één onderdeel (de Web-app/CDN, de API-gateway, de OCR-worker, de database, enzovoort).
 
 <figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topologiediagram met regiobadges"><figcaption><p>Elk onderdeel is gelabeld met de regio waarin het draait</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Onderdelen die bij een optionele module horen (Volledige-tekst zoeken, DocFlow, 
 
 Het tabblad Verwerking toont de documentverwerkings-pijplijn voor **uw organisatie** — wanneer elke stap voor het laatst draaide en of het werk doorstroomt of zich opstapelt.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Verwerkingstabel met statusbadges"><figcaption><p>Verwerkingsstatus per stap voor uw organisatie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-nl.png" alt="Infrastructuurprocessen en laatste uitvoering. Relatieve tijdsaanduidingen blijven Duitstalig in het product."><figcaption><p>Infrastructuurprocessen en laatste uitvoering. Relatieve tijdsaanduidingen blijven Duitstalig in het product.</p></figcaption></figure>
 
 | Kolom | Beschrijving |
 |-------|--------------|
@@ -71,7 +71,7 @@ Fouten en *bezig* zijn onafhankelijke signalen, dus een stap kan beide badges te
 
 Het tabblad Geplande taken somt de terugkerende achtergrondtaken op die DocBits draaiende houden (cache-verversingen, statuswaarschuwingen, document-time-outs, uitgaande synchronisaties en meer) en bevestigt dat elke taak op tijd wordt uitgevoerd.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Tabel met geplande taken"><figcaption><p>Terugkerende achtergrondtaken en hun planningsstatus</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-nl.png" alt="Geplande infrastructuurtaken. Relatieve tijdsaanduidingen blijven Duitstalig in het product."><figcaption><p>Geplande infrastructuurtaken. Relatieve tijdsaanduidingen blijven Duitstalig in het product.</p></figcaption></figure>
 
 | Kolom | Beschrijving |
 |-------|--------------|

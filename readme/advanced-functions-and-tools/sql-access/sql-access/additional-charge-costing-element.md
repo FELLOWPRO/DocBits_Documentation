@@ -1,4 +1,4 @@
-# Additional charge costing element
+# Kostenelement voor aanvullende toeslagen
 
 ## Tabel `public.additional_charge_costing_element`
 
@@ -12,10 +12,10 @@
 * `distribution_method`: intern
 * `distribution_type`: intern
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: tijdstempel met tijdzone
 * `sub_org_id`: intern
 * `charge_count`: integer
 * `charge_icon`: intern

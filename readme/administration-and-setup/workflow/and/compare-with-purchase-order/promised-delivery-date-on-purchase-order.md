@@ -1,6 +1,12 @@
-# Promised Delivery Date on Purchase Order
+# Beloofde leveringsdatum op aankooporder
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-nl-nl.png" alt="Beloofde leveringsdatum op aankooporder, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-nl-nl.png" alt="Beloofde leveringsdatum op aankooporder, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-nl-nl.png" alt="Beloofde leveringsdatum op aankooporder, Versie 4" width="634"><figcaption><p>Versie 4</p></figcaption></figure>
+
+Hoe het tolerantievenster wordt berekend, met voorbeelden zoals "vandaag of morgen", wordt uitgelegd op [Date Tolerances](../date-tolerances.md).
 
 ## **Doel**
 
@@ -8,18 +14,18 @@ Deze DocBits-kaart is ontworpen om de nauwkeurige vergelijking te faciliteren va
 
 ## **Onderdelen van de kaart**
 
-1. **Operator**
+1. **Exploitant**
    * **Beschrijving:** Definieert de voorwaarde die wordt toegepast om leverdata te vergelijken.
    * **Opties:**
-     * **Equals (=):** Controleert of de toegezegde leverdatum op het regelitem overeenkomt met de leverdatum van de inkooporder.
-     * **Not Equal (≠):** Zorgt ervoor dat de toegezegde leverdatum op het regelitem niet overeenkomt met de datum op de inkooporder.
-     * **Greater Than (>):** Verifieert of de toegezegde leverdatum van het regelitem later is dan de leverdatum van de inkooporder.
-     * **Greater or Equals (≥):** Controleert of de toegezegde leverdatum van het regelitem gelijk is aan of later is dan de leverdatum van de inkooporder.
+     * **Is gelijk aan (=):** Controleert of de toegezegde leverdatum op het regelitem overeenkomt met de leverdatum van de inkooporder.
+     * **Niet gelijk (≠):** Zorgt ervoor dat de toegezegde leverdatum op het regelitem niet overeenkomt met de datum op de inkooporder.
+     * **Groter dan (>):** Verifieert of de toegezegde leverdatum van het regelitem later is dan de leverdatum van de inkooporder.
+     * **Groter of gelijk aan (≥):** Controleert of de toegezegde leverdatum van het regelitem gelijk is aan of later is dan de leverdatum van de inkooporder.
      * **Less Than (<):** Bevestigt of de toegezegde leverdatum van het regelitem eerder is dan de leverdatum van de inkooporder.
-     * **Less or Equals (≤):** Valideert of de toegezegde leverdatum van het regelitem gelijk is aan of eerder is dan de leverdatum van de inkooporder.
-2. **Value**
+     * **Minder of gelijk aan (≤):** Valideert of de toegezegde leverdatum van het regelitem gelijk is aan of eerder is dan de leverdatum van de inkooporder.
+2. **Waarde**
    * **Beschrijving:** Geeft een toegestane foutmarge in de vergelijking van leverdata op.
-   * **Detail:** Gebruikers definiëren het aantal dagen waarmee de leverdatum van het regelitem mag afwijken van de toegezegde leverdatum.
+   * **Details:** Gebruikers definiëren het aantal dagen waarmee de leverdatum van het regelitem mag afwijken van de toegezegde leverdatum.
 
 ## **Functionaliteit**
 

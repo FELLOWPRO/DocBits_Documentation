@@ -4,6 +4,12 @@ description: Ondersteuning voor SPS COMMERCE RSX 7.7.4 elektronische documenten 
 
 # SPS COMMERCE RSX 7.7.4
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Internationaal](countries/international.md). Toewijzingen voor facturen, orders, antwoorden en verzendberichten staan los van elkaar. Bestandsverwerking biedt op zichzelf geen Peppol-toegangspunt of verbinding met handelspartners.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |----------|-------|
 | **Land / Regio** | Internationaal (voornamelijk Noord-Amerika) |

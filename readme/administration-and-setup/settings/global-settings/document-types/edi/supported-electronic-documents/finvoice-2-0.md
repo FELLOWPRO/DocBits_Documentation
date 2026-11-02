@@ -4,6 +4,12 @@ description: Ondersteuning voor FINVOICE 2.0 elektronisch document in DocBits
 
 # 🇫🇮 FINVOICE 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Finland](countries/finland.md). Controleer de bronversie voordat u een toewijzing kiest. Het TEAPPSXML-label vermeldt geen versie.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Finland |

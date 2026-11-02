@@ -1,4 +1,4 @@
-# Custom classification document
+# Document voor aangepaste classificatie
 
 ## Tabel `public.custom_classification_document`
 
@@ -9,8 +9,8 @@
 * `first_page_content`: text
 * `content`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
 
 ### Analyse & beschrijving

@@ -4,6 +4,12 @@ description: Ondersteuning voor PARAGUAY SIFEN elektronische documenten in DocBi
 
 # 🇵🇾 PARAGUAY SIFEN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Paraguay](countries/paraguay.md). Classificatievermeldingen voor creditnota’s hebben in de onderzochte status geen eigen extractiebundels. Controleer de daadwerkelijk gebruikte toewijzing en beschouw de labels niet als onderling uitwisselbaar.
+{% endhint %}
+
 | Eigenschap           | Waarde                                                        |
 | -------------------- | ------------------------------------------------------------- |
 | **Land / Regio**     | Paraguay                                                      |

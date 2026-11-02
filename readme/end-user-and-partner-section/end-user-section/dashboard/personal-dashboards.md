@@ -1,103 +1,36 @@
-# Persoonlijke Dashboards
+# Persoonlijke dashboards
 
-## Overzicht
+Een opgeslagen dashboard is een benoemde weergave van uw werklijst: zoekopdracht, filters, documenttype, sortering en zichtbare kolommen. Bij openen wordt alles tegelijk hersteld, zodat terugkerende taken niet opnieuw hoeven te worden ingesteld. Een dashboard wijzigt alleen de weergave van documenten en nooit de documenten zelf.
 
-Je kunt aangepaste Dashboards maken en beheren die zijn afgestemd op jouw specifieke behoeften. Met deze Dashboards kun je:
+## Een dashboard maken
 
-* Een aangepaste kolomvolgorde definiëren
-* Alleen de kolommen selecteren die relevant zijn voor jouw use case
-* Gepersonaliseerde filters toepassen en opslaan
-* Dashboards delen met teamleden
+1. Stel de weergave samen die u wilt bewaren. Voer de zoekopdracht in de zoekbalk in, gebruik de **Slimme filters** uit de veldkeuze, de **Filters**, een tabblad voor het documenttype, de sortering van de tabel en de kolommen.
 
-## Nieuw dashboard maken
+2. Open de weergaveknop onder het zoekvak. Deze toont de actieve weergave en het aantal documenten dat er nu bij past, bijvoorbeeld **Alle documenten (5986)**.
 
-Om een nieuw Dashboard te maken:
+3. Kies **Nieuw dashboard maken**.
 
-1.  Klik op de filterknop onder de zoekbalk.
+4. Geef een duidelijke naam op en bepaal wie de weergave kan gebruiken:
+   * **Alleen zichtbaar voor mij** houdt de weergave privé.
+   * **Zichtbaar voor alle gebruikers** stelt deze beschikbaar aan iedereen in uw organisatie.
+   * **Delen met groepen en gebruikers** toont de twee lijsten **Groepen** en **Selecteer gebruiker**, zodat u specifieke groepen of afzonderlijke personen aanwijst.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Klik op **Nieuw dashboard maken**.
+5. Kies **Opslaan**. De weergaveknop schakelt naar het nieuwe dashboard en toont de naam en het aantal documenten.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_2.png)
-3.  Voer een naam in voor je Dashboard.
+<figure><img src="../../../.gitbook/assets/dashboard-saved-view-nl.png" alt="Maak een dashboard met een naam en kies wie het kan zien."><figcaption><p>Maak een dashboard met een naam en kies wie het kan zien.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_3.png)
-4. Stel het gewenste zichtbaarheidsniveau in. Je kunt kiezen uit:
-   * **Alleen zichtbaar voor mij**: Alleen jij (de momenteel ingelogde gebruiker) kunt dit Dashboard bekijken.
-   * **Zichtbaar voor alle gebruikers**: Alle gebruikers in je organisatie hebben weergavetoegang.
-   *   **Delen met groepen en gebruikers**: Selecteer specifieke gebruikers of gebruikersgroepen die weergavetoegang tot het Dashboard krijgen.
+De zichtbaarheid bepaalt wie de weergave kan **gebruiken**. Deze geeft geen toegang tot documenten: iedereen ziet nog steeds alleen de documenten waarvoor de eigen rechten gelden.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_4.png)
-5.  Klik op **Opslaan** om je Dashboard te maken en op te slaan.
+## Van weergave wisselen of deze wijzigen
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_5.png)
+Kies een opgeslagen dashboard in de weergaveknop of ga terug naar het **Standaard Dashboard**, de niet-opgeslagen weergave van alle documenten. Het laatst geopende dashboard blijft actief na het vernieuwen van de pagina.
 
-## Tussen Dashboards wisselen
+Na een wijziging in een geladen dashboard — ook als u alleen kolommen wijzigt — biedt de weergaveknop **Dashboardwijzigingen opslaan**. Zo slaat u de wijziging onder dezelfde naam op. De actie blijft uitgeschakeld als er niets is gewijzigd of als het dashboard van iemand anders is; een gedeelde weergave kan niet worden overschreven, maak een eigen weergave.
 
-Om tussen Dashboards te wisselen:
+## Een dashboard hernoemen of opnieuw delen
 
-1. Klik op de filterknop onder de zoekbalk.
-2.  Selecteer in het vervolgkeuzemenu een Dashboard uit de lijst met persoonlijke of gedeelde Dashboards.
+Beweeg de aanwijzer over een eigen dashboard in de weergaveknop om de pictogrammen **Bewerking** en **Verwijderen** te tonen. Kies het potlood om **Dashboard bewerken** te openen en de naam of zichtbaarheid te wijzigen. Het venster toont dezelfde drie opties als bij het maken.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_6.png)
+## Een dashboard verwijderen
 
-<mark style="color:red;">**Opmerking**</mark>: Je kunt zien of een Dashboard persoonlijk of gedeeld is door het pictogram vóór de Dashboardnaam te controleren.
-
-## Een persoonlijk Dashboard bewerken/verwijderen
-
-Een persoonlijk of gedeeld Dashboard bewerken:
-
-1.  Klik op de filterknop onder de zoekbalk.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Klik op de naam van het persoonlijke Dashboard dat je wilt bewerken.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3. Breng de gewenste wijzigingen aan, zoals:
-   * Het wijzigen van de kolomvolgorde
-   * Het aanpassen van de zichtbaarheid van kolommen
-   * Het bewerken van filters
-
-### **Dashboardwijzigingen opslaan**
-
-Zodra je je wijzigingen hebt aangebracht, klik je op de filterknop onder de zoekbalk en kies je vervolgens **Dashboardwijzigingen opslaan**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_11.png)
-
-<mark style="color:red;">**Opmerking**</mark>: Alleen persoonlijke Dashboards kunnen worden bewerkt. Gedeelde Dashboards kunnen alleen worden bewerkt door hun oorspronkelijke maker.
-
-### **Een Dashboard hernoemen**
-
-Een persoonlijk of gedeeld Dashboard hernoemen:
-
-1.  Klik op de filterknop onder de zoekbalk.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Selecteer het Dashboard dat je wilt hernoemen.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3.  Selecteer **Hernoem huidig dashboard**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_8.png)
-4.  Voer de nieuwe naam in en klik vervolgens op **Opslaan**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_9.png)
-
-<mark style="color:red;">**Opmerking**</mark>: Alleen persoonlijke Dashboards kunnen worden hernoemd. Gedeelde Dashboards kunnen alleen worden hernoemd door hun oorspronkelijke maker.
-
-### Een Dashboard verwijderen
-
-Een persoonlijk Dashboard verwijderen:
-
-1.  Klik op de filterknop onder de zoekbalk.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2. Beweeg de muis over het Dashboard dat je wilt verwijderen.
-3.  Klik op het prullenbakpictogram ernaast.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_12.png)
-4.  Bevestig het verwijderen door op **Verwijderen** te klikken.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_13.png)
-
-<mark style="color:red;">**Opmerking**</mark>: Alleen persoonlijke Dashboards kunnen worden verwijderd. Gedeelde Dashboards kunnen alleen worden verwijderd door hun oorspronkelijke maker.
+Kies het prullenbakpictogram van een eigen dashboard en bevestig met **Verwijderen**. Een weergave verwijderen verwijdert niet de documenten waarnaar deze verwees. Een dashboard dat iemand anders met u heeft gedeeld, kunt u openen en gebruiken, maar niet in uw account wijzigen of verwijderen.

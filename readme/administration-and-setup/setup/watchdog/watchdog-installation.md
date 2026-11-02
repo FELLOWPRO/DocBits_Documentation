@@ -1,6 +1,6 @@
 # WatchDog Installatie
 
-<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog Installation Steps"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-nl.svg" alt="Installatie van WatchDog en de belangrijkste vereisten."><figcaption><p>Installatie van WatchDog en de belangrijkste vereisten.</p></figcaption></figure>
 
 > **Aanbevolen:** Gebruik de moderne installatie die hieronder wordt beschreven. WatchDog-configuraties worden nu rechtstreeks in de DocBits-applicatie aangemaakt, lokale configuratiebestanden zijn niet meer nodig.
 
@@ -26,7 +26,7 @@ C:\WatchDog\Export\        ← Export folder for exported files
 
 > **Opmerking:** Het wordt aanbevolen om lokale paden te gebruiken. UNC-netwerkpaden (bijv. `\\server\share`) worden ondersteund, maar kunnen een Polling Observer vereisen voor betrouwbare bestandsdetectie.
 
-### 2. Download WatchDog
+### 2. WatchDog downloaden
 
 Download `WatchDog.exe` uit de DocBits-applicatie:
 

@@ -4,6 +4,12 @@ description: Ondersteuning voor elektronisch document ZUGFERD 1.0 BASIC in DocBi
 
 # 🇩🇪 ZUGFERD 1.0 BASIC
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Duitsland](countries/germany.md). Syntaxis, publicatieversie en profiel zijn verschillende keuzes. Leid geen Factur-X-publicatie af uit de gedeelde 1p0-markering.
+{% endhint %}
+
 | Eigenschap | Waarde |
 | ---------- | ------ |
 | **Land / Regio** | Duitsland |
@@ -29,5 +35,5 @@ Het Basic-profiel van ZUGFeRD 1.0 bevat essentiële factuurvelden zoals factuurn
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

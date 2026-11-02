@@ -1,7 +1,5 @@
-# Logic
+# Logica
 
+De kaarten van deze categorie in de **Kaart toevoegen**-kiezer van de Workflow Builder:
 
-De kaarten van deze categorie in de **Add Card**-kiezer van de Workflow Builder:
-
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_logic.png" alt="Workflow Builder card category"><figcaption><p>De kaarten van deze categorie.</p></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-6b17199fc268-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>

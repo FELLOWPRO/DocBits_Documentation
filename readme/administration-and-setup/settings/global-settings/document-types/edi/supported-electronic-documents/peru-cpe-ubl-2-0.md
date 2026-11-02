@@ -4,6 +4,12 @@ description: Ondersteuning voor PERU CPE UBL 2.0 elektronische documenten in Doc
 
 # 🇵🇪 PERU CPE UBL 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Peru](countries/peru.md). Selecteer de werkelijke UBL-versie en documentstructuur. Het verwerken van een bestand bewijst geen acceptatie door SUNAT.
+{% endhint %}
+
 | Eigenschap           | Waarde                           |
 | -------------------- | -------------------------------- |
 | **Land / Regio**     | Peru                             |

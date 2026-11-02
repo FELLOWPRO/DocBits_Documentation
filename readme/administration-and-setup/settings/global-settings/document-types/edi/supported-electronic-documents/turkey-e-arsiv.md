@@ -4,6 +4,12 @@ description: Ondersteuning voor TURKEY E-ARSIV elektronisch document in DocBits
 
 # 🇹🇷 TURKEY E-ARSIV
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Turkije](countries/turkey.md). Controleer het bronprofiel en de documentstructuur. Het familielabel identificeert niet elke UBL-TR-versie en bevestigt geen aflevering via het belastingplatform.
+{% endhint %}
+
 | Eigenschap | Waarde |
 | ---------- | ------ |
 | **Land / Regio** | Turkije |

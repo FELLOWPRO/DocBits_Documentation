@@ -1,4 +1,4 @@
-# Sub document type
+# Documentsubtype
 
 ## Kolommen
 

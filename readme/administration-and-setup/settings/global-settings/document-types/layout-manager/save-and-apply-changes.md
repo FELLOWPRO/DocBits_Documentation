@@ -1,25 +1,46 @@
-# Save and apply changes
+# Wijzigingen opslaan en toepassen
 
-## Saving and applying changes made in the Layout Manager is an important step to ensure that your layout customizations are effectively applied in the document processing workflow.
+Wijzigingen in de Layout Builder worden pas van kracht wanneer u ze opslaat. Bij het opslaan wordt de lay-out aan het documenttype gekoppeld, zodat nieuwe documenten deze gebruiken.
 
-### Here are the steps to save and apply changes:
+## Uw wijzigingen opslaan
 
-#### Saving the changes:
+Nadat u de lay-out hebt bewerkt, selecteert u **Opslaan** rechtsboven in de kopbalk.
 
-* After you have made the desired customizations in the Layout Manager, look for the "Save" button to save the changes.
-* Click this button to save your changes in the Layout Manager. This backs up your layout customizations and ensures that they are available for future editing sessions.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-header-nl.png" alt="Kopbalk van de Layout Builder met links de lay-outkiezers en rechts de knop Opslaan en het menu met drie puntjes"><figcaption>De knop **Opslaan** staat rechtsboven in de Layout Builder.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_save_changes.png" alt="Docbits Layout Manager Save Changes"><figcaption></figcaption></figure>
+Terwijl u werkt, toont de kopbalk de status van uw wijzigingen:
 
-#### Applying the changes to the document processing workflow:
+- Een knop **Opslaan** zonder melding ernaast betekent dat de lay-out ongewijzigd is.
+- **Niet-opgeslagen wijzigingen** verschijnt zodra u de lay-out aanpast. Selecteer **Opslaan** om de wijzigingen te bewaren.
 
-* Once your changes are saved in the Layout Manager, they are usually automatically applied to the document processing workflow that uses that specific document type.
-* New documents based on this template will inherit the updated layout settings when they are created. This means that the new documents will include the new groups, fields, or other layout customizations you made in Layout Manager.
-* Existing documents already created using this template may be treated differently depending on your software and configuration. In some cases, changes may be automatically applied to pre-existing documents, while in other cases, manual adjustments may be required to bring existing documents into line with the updated layout settings.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-unsaved-changes-nl.png" alt="Kopbalk van de Layout Builder met de melding Niet-opgeslagen wijzigingen naast de knop Opslaan"><figcaption>De melding **Niet-opgeslagen wijzigingen** verschijnt zolang de lay-out nog niet is opgeslagen.</figcaption></figure>
 
-#### Testing the changes:
+Na een geslaagde opslag wordt de melding vervangen door het tijdstip waarop de lay-out voor het laatst is opgeslagen. Opnieuw **Opslaan** selecteren kan geen kwaad: als er sinds de laatste keer niets is gewijzigd, wordt er ook niets weggeschreven.
 
-* After you have saved the layout changes and they have been applied to the document processing workflow, it is advisable to test the changes to ensure that they work as intended.
-* Create new test documents or review existing documents to ensure that the updated layout settings are applied correctly and that data is captured and displayed as expected.
+Verlaat u de Layout Builder met niet-opgeslagen wijzigingen, dan vraagt DocBits **Wijzigingen negeren?**. Selecteer **Annuleer** om te blijven en op te slaan, of **OK** om weg te gaan zonder op te slaan.
 
-By following these steps, you can effectively save changes in Layout Manager and apply them to the document processing workflow. This ensures a smooth integration of your layout customizations into the document creation and processing process.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-leave-prompt-nl.png" alt="Dialoogvenster dat vraagt om het verlaten van de Layout Builder met niet-opgeslagen wijzigingen te bevestigen"><figcaption>Bevestiging bij het weggaan met niet-opgeslagen wijzigingen.</figcaption></figure>
+
+## Overige acties in de kopbalk
+
+Het menu met drie puntjes naast **Opslaan** bevat de overige lay-outacties:
+
+- **Automatisch sjabloon genereren** – bouwt automatisch een lay-out op uit de velden van het documenttype.
+- **JSON bewerken** – bewerkt de lay-outdefinitie rechtstreeks als JSON.
+- **JSON kopiëren** – kopieert de lay-outdefinitie naar het klembord.
+- **Indelingsinstellingen** – opent de algemene lay-outinstellingen.
+
+**Automatisch sjabloon genereren** vervangt de bestaande lay-out, dus controleer vooraf welke lay-out geopend is. **JSON bewerken** is bedoeld voor gevorderde gebruikers en gebruikt u alleen als u het formaat van het sjabloon kent.
+
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-more-menu-nl.png" alt="Menu met drie puntjes in de Layout Builder met de items Automatisch sjabloon genereren, JSON bewerken, JSON kopiëren en Indelingsinstellingen"><figcaption>De acties in het menu met drie puntjes.</figcaption></figure>
+
+## De wijzigingen toepassen
+
+Zodra de lay-out is opgeslagen, gebruikt de documentworkflow hem voor dat documenttype:
+
+- Nieuwe documenten die met dit documenttype worden verwerkt, gebruiken de bijgewerkte lay-out.
+- Al verwerkte documenten behouden de lay-out waarmee ze zijn vastgelegd.
+
+## De wijzigingen testen
+
+Open na het opslaan een document van dat documenttype en controleer of de velden en groepen verschijnen zoals bedoeld. Ontbreekt er iets, ga dan terug naar de Layout Builder, pas de lay-out aan en sla opnieuw op.

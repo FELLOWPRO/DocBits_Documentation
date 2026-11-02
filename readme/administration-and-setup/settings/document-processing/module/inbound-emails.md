@@ -1,5 +1,12 @@
 # Inkomende e-mails
 
+## Van binnenkomende e-mail tot een document dat klaar is om te beoordelen
+
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-nl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-nl-light-20261029.png" alt="Van binnenkomende e-mail tot een document dat klaar is om te beoordelen"></picture><figcaption><p>Van binnenkomende e-mail tot een document dat klaar is om te beoordelen</p></figcaption></figure>
+
+De afbeelding laat twee manieren zien: een aangesloten mailbox en doorsturen naar een DocBits-importadres. Ondersteunde documentbijlagen worden geïmporteerd. Controleer afzenderbeperkingen, organisatie en routering en verifieer vervolgens de daadwerkelijke import. Het verzenden van een e-mail bewijst niet dat de documenten met succes zijn geïmporteerd.
+
+
 ### Overzicht
 
 DocBits kan documenten rechtstreeks uit e-mail ophalen — geen handmatig uploaden nodig. Er zijn **twee manieren** om e-maildocumenten binnen te halen, beide onder **Instellingen → Documentverwerking → Importeren**:
@@ -19,7 +26,7 @@ Ga naar **Instellingen → Documentverwerking → Importeren** en open de sectie
 
 De installatiewizard opent. Het eerste veld, **Protocol**, bepaalt hoe DocBits verbinding maakt — kies **IMAP**, **OAuth Office365** of **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Vervolgkeuzelijst Protocol met IMAP, OAuth Office365 en OAuth Office365 - Tenant"><figcaption><p>De lijst <strong>Protocol</strong> biedt de drie verbindingstypen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-nl.png" alt="Protocolselectie in de wizard voor inkomende e-mail."><figcaption><p>Protocolselectie in de wizard voor inkomende e-mail.</p></figcaption></figure>
 
 #### IMAP
 

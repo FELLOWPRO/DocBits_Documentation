@@ -4,6 +4,12 @@ description: Ondersteuning voor VIETNAM E-INVOICE elektronisch document in DocBi
 
 # 🇻🇳 VIETNAM E-INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Vietnam](countries/vietnam.md). Het label noemt geen versie. Controleer de naamruimte en het schema van de bron in plaats van aan te nemen dat alle belastingplatformexports dezelfde structuur hebben.
+{% endhint %}
+
 | Eigenschap | Waarde |
 | ---------- | ------ |
 | **Land / Regio** | Vietnam |

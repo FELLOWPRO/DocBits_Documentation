@@ -1,4 +1,4 @@
-# Batch instance
+# Batchinstantie
 
 ## Tabel `public.batch_instance`
 
@@ -7,8 +7,8 @@
 * `id`: intern
 * `org_id`: ID naar organisatie
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
 
 ### Analyse & beschrijving

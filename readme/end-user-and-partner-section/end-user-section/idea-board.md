@@ -37,7 +37,7 @@ Klik op **Nieuw idee** in de kop. Het dialoogvenster vraagt om:
 
 Druk op **Indienen** om te publiceren. Het idee verschijnt in de lijst met de status **Nieuw**.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Dialoogvenster Nieuw idee"><figcaption><p>Het dialoogvenster Nieuw idee, met de categorie- en kanaalkiezers.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea-nl.png" alt="Venster om een idee voor te stellen zonder persoonsgegevens. New Idea, Title, Description, Category en Submit blijven Engelstalig in het product."><figcaption><p>Venster om een idee voor te stellen zonder persoonsgegevens. New Idea, Title, Description, Category en Submit blijven Engelstalig in het product.</p></figcaption></figure>
 
 ## Stemmen
 

@@ -1,6 +1,8 @@
 # Eenheidsprijs gecombineerd met velden
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v2-nl-nl.png" alt="Eenheidsprijs gecombineerd met velden, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v3-nl-nl.png" alt="Eenheidsprijs gecombineerd met velden, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
 ## **Doel:**
 

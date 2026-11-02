@@ -1,6 +1,10 @@
 # Maak een nieuwe taak en wijs deze toe aan de groep
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-502380adb65e-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v2-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de groep, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v3-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de groep, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_task_for_group_v4-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de groep, Versie 4" width="634"><figcaption><p>Versie 4</p></figcaption></figure>
 
 ## **Doel:**
 

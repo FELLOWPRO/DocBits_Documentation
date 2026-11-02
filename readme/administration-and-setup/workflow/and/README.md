@@ -1,59 +1,81 @@
-# Y: elegir una tarjeta de condición
+# Y
 
-Use una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activador **En**. Añada las comprobaciones que necesite antes de la acción **Entonces**. Cada tarjeta muestra campos que se rellenan, como **Operador**, **Datos del pedido** o **Texto**; las capturas de pantalla muestran las plantillas de tarjetas disponibles, no reglas guardadas.
+Algunas etiquetas del producto siguen en inglés o tienen traducciones incorrectas. Las categorías de tablas se refieren a tablas de datos; los valores devueltos no son devoluciones comerciales. Los identificadores técnicos permanecen sin traducir.
 
-En el **Constructor De Flujo De Trabajo**, seleccione **Añadir tarjeta** bajo **Y....**. Elija una categoría a la izquierda en **Categorías** o escriba un nombre de tarjeta en **Buscar tarjeta**. Seleccione una vista previa de tarjeta para añadirla al flujo de trabajo. Puede desplazar la lista de vistas previas para ver más tarjetas. Use **×** para cerrar el selector sin elegir otra tarjeta. Tras configurar las tarjetas, guarde el flujo de trabajo. Consulte [Workflow](../README.md) para conocer los pasos **En**, **Y** y **Entonces** en conjunto.
 
-## Comparar con la orden de compra
 
-Use estas tarjetas para comparar datos del pedido o de la factura con una orden de compra, como el precio unitario, la fecha de entrega prometida, los cargos o la cantidad. Rellene los campos, el operador y la tolerancia que pida la tarjeta seleccionada. Consulte [Compare with Purchase Order](compare-with-purchase-order/README.md) para ver las tarjetas individuales.
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Comparar con la orden de compra seleccionada; se ven vistas previas de comparaciones de precio unitario, fecha de entrega, cargos y cantidad."><figcaption>Categoría Comparar con la orden de compra en el Sandbox en español.</figcaption></figure>
 
-## Campo del documento
 
-Elija esta categoría para comprobar una casilla o el estado de un campo, comparar un campo con un valor o comparar dos campos. Rellene los marcadores **Nombre del campo** y **Operador** de la tarjeta elegida. Algunas comparaciones también piden una tolerancia. Consulte [Document Field](document-field/README.md).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Campo del documento seleccionada; se ven vistas previas que comprueban una casilla, el estado de un campo, valores de campo y comparaciones entre dos campos."><figcaption>Las comprobaciones de Campo del documento usan valores del documento actual.</figcaption></figure>
 
-## Fecha & Hora
 
-Use **Fecha & Hora** para comparar una fecha u hora con un rango, o comparar el día de hoy con una fecha elegida. Seleccione el **Operador** y los valores de fecha en la tarjeta. Consulte [Date & Time](date-and-time/README.md).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Fecha & Hora seleccionada; dos vistas previas comparan una fecha u hora con un rango y comparan el día de hoy con una fecha."><figcaption>Fecha & Hora ofrece una comprobación de rango y una comparación con el día de hoy.</figcaption></figure>
+
+
+
+
+
+
+
+
+
+Utilice una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activación **Cuando**. Agregue las comprobaciones que necesita antes de la acción **Entonces**. Cada tarjeta muestra campos para completar, como **Operador**, **Nombre de campo** o **Valor**; las capturas de pantalla muestran las plantillas de tarjetas disponibles, no las reglas completadas.
+
+En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Y...**. Elija una categoría a la izquierda o escriba el nombre de una tarjeta en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla al flujo de trabajo. Puede desplazarse por la lista de vista previa para ver más tarjetas. Utilice **×** para cerrar el selector sin elegir otra tarjeta. Después de configurar las tarjetas, guarde el flujo de trabajo. Consulte [Flujo de trabajo](..) para conocer los pasos circundantes **Cuando**, **Y** y **Entonces**.
+
+## Comparar con orden de compra
+
+Utilice estas tarjetas para comparar datos de pedidos o facturas con una orden de compra, como precio unitario, fecha de entrega prometida, cargos o cantidad. Elija los campos, operador y cualquier tolerancia que solicite la tarjeta seleccionada. Consulte [Comparar con orden de compra](compare-with-purchase-order) para las tarjetas individuales.
+
+<figure><img src="../../../.gitbook/assets/prior-u035-es.png" alt="Categoría de condiciones para comparar con pedidos."><figcaption><p>Categoría de condiciones para comparar con pedidos.</p></figcaption></figure>
+
+## Campo de documento
+
+Elija esta categoría para comprobar si una casilla de verificación está marcada o consultar el estado de un campo, comparar un campo con un valor o comparar dos campos. Complete los marcadores de posición **Nombre de campo** y **Operador** en la tarjeta elegida. Algunas comparaciones también piden tolerancia. Consulte [Campo del documento](document-field).
+
+<figure><img src="../../../.gitbook/assets/prior-u036-es.png" alt="Categoría de condiciones sobre campos del documento."><figcaption><p>Categoría de condiciones sobre campos del documento.</p></figcaption></figure>
+
+## Fecha y hora
+
+Utilice **Fecha y hora** para comparar una fecha u hora con un rango, o compare **Hoy** con una fecha elegida. Seleccione el **Operador** y los valores de fecha en la tarjeta. Consulte [Fecha y hora](date-and-time).
+
+<figure><img src="../../../.gitbook/assets/prior-u037-es.png" alt="Categoría de condiciones de fecha y hora."><figcaption><p>Categoría de condiciones de fecha y hora.</p></figcaption></figure>
 
 ## Documento
 
-Use estas tarjetas cuando el flujo de trabajo deba depender del **tipo de documento** o de la **suborganización**. Elija el tipo u organización indicado en la tarjeta. Consulte [Document](document/README.md).
+Utilice estas tarjetas cuando un flujo de trabajo deba depender del **tipo de documento** o **suborganización**. Elija el tipo u organización mencionada en la tarjeta. Consulte el [Documento](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Documento seleccionada; las vistas previas comprueban el tipo de documento y la pertenencia a una suborganización."><figcaption>Las condiciones de Documento comprueban el tipo o la suborganización.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u038-es.png" alt="Categoría de condiciones sobre documentos."><figcaption><p>Categoría de condiciones sobre documentos.</p></figcaption></figure>
 
 ## Lógica
 
-Esta categoría incluye comprobaciones con una tabla de decisión, una respuesta HTTPS, la disponibilidad de un módulo, el precio de un artículo cotizado, un valor de probabilidad o dos valores. Abra la tarjeta concreta y rellene sus marcadores con nombre; por ejemplo, la tarjeta HTTPS pide una URL, un método y un código de estado aceptado. Consulte [Logic](logic/README.md).
+Esta categoría incluye comprobaciones utilizando una tabla de decisiones, una respuesta HTTPS, disponibilidad del módulo, el precio de un artículo cotizado, un valor de probabilidad o dos valores. Abra la tarjeta específica y complete los marcadores de posición con su nombre; por ejemplo, la tarjeta HTTPS solicita una URL, un método y un código de estado aceptado. Consulte [Lógica](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Lógica seleccionada; se ven vistas previas de tabla de decisión, solicitud HTTPS, módulo activo, precio cotizado, probabilidad y comparación de valores."><figcaption>Lógica ofrece varios tipos de condición; elija la que coincida con su regla.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u039-es.png" alt="Categoría de condiciones lógicas."><figcaption><p>Categoría de condiciones lógicas.</p></figcaption></figure>
 
 ## Estado
 
-Use **Estado** para comprobar si un documento tiene un estado elegido o si su estado está dentro de un conjunto seleccionado. Elija el **Operador** y el **Estado** en la tarjeta. Consulte [Status](status/README.md).
+Utilice **Estado** para comprobar si un documento tiene un estado elegido o si su estado está en un conjunto seleccionado. Elija **Operador** y **Estado** en la tarjeta. Consulte [Estado](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Estado seleccionada; dos vistas previas comparan el estado del documento con un estado o con un conjunto de estados."><figcaption>Las condiciones de Estado comprueban el estado actual del documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u040-es.png" alt="Categoría de condiciones de estado."><figcaption><p>Categoría de condiciones de estado.</p></figcaption></figure>
 
-## Cuadro
+## Tabla
 
-Estas tarjetas examinan las filas de una tabla del documento. Las opciones visibles incluyen comprobaciones de fecha, patrones de texto, vida útil y comparaciones entre columnas. Seleccione el nombre de la tabla y de la columna antes de elegir un operador o patrón. Consulte [Table](table/README.md).
+Estas tarjetas examinan las filas de la tabla de documentos. Las opciones visibles incluyen verificaciones de fechas, patrones de texto, vida útil y comparaciones entre columnas. Seleccione **Nombre de tabla** y **Nombre de columna** antes de elegir un operador o patrón. Consulte la [Tabla](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Cuadro seleccionada; se ven vistas previas de fecha, patrón de expresión regular, vida útil y comparaciones de columnas de tabla."><figcaption>Las condiciones de Cuadro usan filas y columnas de una tabla del documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u041-es.png" alt="Categoría de condiciones sobre tablas de datos."><figcaption><p>Categoría de condiciones sobre tablas de datos.</p></figcaption></figure>
 
 ## Comparar con el precio de cotización
 
-Use estas tarjetas para comparar un artículo con datos de precios cotizados. Las opciones visibles cubren el ID del artículo, el tipo de proveedor, el ID del artículo del proveedor, el precio unitario y la unidad de medida. El **Operador** y los marcadores de datos dependen de la tarjeta que seleccione.
+Utilice estas tarjetas para comparar un artículo con los datos de precios cotizados. Las opciones visibles cubren el ID del artículo, el tipo de proveedor, el ID del artículo del proveedor, el precio unitario y la unidad de medida. El **Operador** y los marcadores de posición de datos dependen de la tarjeta que seleccione.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Comparar con el precio de cotización seleccionada; cinco vistas previas cubren ID del artículo, tipo de proveedor, ID del artículo del proveedor, precio unitario y unidad de medida."><figcaption>Comparar con el precio de cotización es una categoría propia del selector de tarjetas actual.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u042-es.png" alt="Categoría de condiciones sobre precios de ofertas."><figcaption><p>Categoría de condiciones sobre precios de ofertas.</p></figcaption></figure>
 
-## Asignado a
+## Responsable
 
-Use **Asignado a** cuando la condición dependa del usuario o grupo asignado. Elija si se compara con un usuario o grupo concreto o con un conjunto seleccionado. Consulte [Assignee](assignee/README.md).
+Utilice **Responsable** cuando la condición dependa del usuario o grupo asignado. Elija si comparar con un usuario o grupo o un conjunto seleccionado. Consulte [Responsable](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Asignado a seleccionada; las vistas previas comparan el usuario o grupo asignado con una o varias opciones."><figcaption>Las condiciones de Asignado a comprueban el usuario o grupo asignado al documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u043-es.png" alt="Categoría de condiciones sobre asignaciones."><figcaption><p>Categoría de condiciones sobre asignaciones.</p></figcaption></figure>
+
+[Tarjetas de comparación de cotizaciones detalladas y comportamiento Cualquiera/Todos](../cards-overview/quote-comparison-guide.md).

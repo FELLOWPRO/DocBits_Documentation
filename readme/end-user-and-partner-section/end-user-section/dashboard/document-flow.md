@@ -1,38 +1,37 @@
-# Documento-Flujo
+# Flujo de documentos
 
-## **Descripción general:**
+El flujo de documentos muestra el orden, estado y duración de las etapas de procesamiento. El ejemplo utiliza una factura ficticia.
 
-Esta página proporciona una visión gráfica de los diversos pasos que un documento ha seguido hasta este punto.
+## Abrir el flujo
 
-## **Cómo acceder:**
+Localice el documento en el panel. La consulta visible busca el ejemplo; los valores de la tabla están ocultos.
 
-### **Opción 1:**
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-es.png" alt="Búsqueda del documento ficticio; los valores de la tabla están ocultos."><figcaption><p>Búsqueda del documento ficticio; los valores de la tabla están ocultos.</p></figcaption></figure>
 
-1.  Navega a la columna de comportamiento en el panel y haz clic en los tres puntos junto al documento para el cual deseas ver el documento-flujo.
+Abra el documento en **Validación de campos**, abra las opciones de la barra derecha y seleccione **Flujo de documentos**.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1_es.png" alt=""><figcaption></figcaption></figure>
-2.  Selecciona **Documento-Flujo**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-es.png" alt="Menú de opciones de validación con acceso al flujo del documento."><figcaption><p>Menú de opciones de validación con acceso al flujo del documento.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2_es.png" alt="" width="269"><figcaption></figcaption></figure>
+## Leer las etapas
 
-### **Opción 2:**
+Cada tarjeta representa una etapa, como importación, OCR, clasificación o extracción de campos. Siga los números para consultar su secuencia.
 
-1. Abre el documento para el cual deseas ver el documento-flujo.
-2.  Haz clic en los tres puntos en el lado derecho de la Validación De Campos.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-es.png" alt="Tarjetas de procesamiento; los códigos técnicos de estado no cambian."><figcaption><p>Tarjetas de procesamiento; los códigos técnicos de estado no cambian.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3_es.png" alt=""><figcaption></figcaption></figure>
-3.  Selecciona **Documento-Flujo**.
+Los identificadores técnicos, por ejemplo `DOCUMENT_IMPORTED` y `COMPLETE`, permanecen sin traducir. `COMPLETE` identifica una etapa completada.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4_es.png" alt="" width="339"><figcaption></figcaption></figure>
+## Consultar detalles
 
-## **Descripción:**
+Seleccione una tarjeta para consultar los detalles y registros disponibles.
 
-En el lado izquierdo de la pantalla, verás los pasos individuales del documento-flujo, listados de izquierda a derecha.
+| Detalle | Significado |
+| --- | --- |
+| Módulo | Componente de procesamiento de la etapa |
+| Estado | Estado actual de esa etapa |
+| Duración | Tiempo de procesamiento registrado |
+| Registros | Mensajes técnicos disponibles |
 
-<figure><img src="../../../.gitbook/assets/DocumentFlow_5_es.png" alt=""><figcaption></figcaption></figure>
+Revise los mensajes de una etapa pendiente o fallida antes de reiniciar el procesamiento. Algunos títulos de diagnóstico pueden seguir apareciendo en inglés en el producto.
 
-* Los pasos que inician el proceso de documento-flujo (como importar o reiniciar) aparecerán en verde.
-* Para navegar a través de los pasos, simplemente arrástralos y suéltalos en la pantalla.
-*   Cuando haces clic en un paso, el nombre del módulo y la información sobre si el paso fue exitoso o no aparecerán en el lado derecho de la pantalla.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_6_es.png" alt=""><figcaption></figcaption></figure>
+Los detalles de cada etapa muestran el componente de procesamiento, el estado, la duración y los registros técnicos disponibles.

@@ -1,58 +1,45 @@
 # Filtrado de documentos
 
-## Opciones de filtrado predeterminadas
+Usa la barra de búsqueda del Panel, el panel de filtros, el rango de fechas y las pestañas de tipo de documento para acortar la lista de documentos. Los controles funcionan juntos: un documento debe coincidir con la búsqueda y los filtros activos para permanecer en la tabla.
 
-Puedes buscar documentos específicos introduciendo el nombre del documento o su ID en la barra de búsqueda ubicada en la parte superior del Panel.
+## Buscar un documento por nombre
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_1.png)
+1. Abre el **Panel**.
+2. Escribe parte del nombre de un documento en la barra de búsqueda situada encima de la tabla y pulsa **Enter**. El contador de la insignia del Panel y la tabla se actualizan para mostrar los documentos coincidentes.
+3. Sustituye el término de búsqueda cuando quieras buscar otro documento. Para búsquedas por campo y la sintaxis de búsqueda, consulta [Búsqueda rápida](quick-search.md).
 
-Para un filtrado más preciso, haz clic en el icono de filtro ubicado en el lado derecho de la barra de búsqueda para seleccionar criterios específicos para buscar documentos.
+<figure><img src="../../../.gitbook/assets/filtering-documents-search-result-es-20261010.png" alt="Panel en español que muestra una factura de prueba coincidente tras una búsqueda por nombre de documento"><figcaption>Una búsqueda por nombre de documento acorta la lista de documentos de prueba.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_2.png)
+## Filtrar por estado, asignación o necesidad de reinicio
 
-Las siguientes opciones de filtro están disponibles:
+1. Selecciona el icono de **Filtros** (controles deslizantes) en el extremo derecho de la barra de búsqueda.
+2. Elige uno o varios valores de **Estado**. Puedes seleccionar varios estados a la vez.
+3. En **Asignado A**, selecciona los usuarios cuyos documentos quieres ver. Si tu organización tiene activados los permisos de grupo, los grupos también pueden aparecer en esta misma lista. No hay un campo **Asignado al grupo** aparte en este panel.
+4. Selecciona **Reinicio Necesario** para mostrar los documentos que necesitan un reinicio.
+5. Selecciona **Aplicar**. Selecciona **Borrar filtros** en este panel para quitar estas selecciones; el texto de búsqueda y el rango de fechas son controles independientes.
 
-* **Estado**: Filtra por estado de procesamiento (p. ej., Listo para validación, Rechazado).
-*   **Asignado a**: Filtra por los usuarios asignados al documento.
+<figure><img src="../../../.gitbook/assets/filtering-documents-filter-panel-es-20261010.png" alt="Panel de filtros del Panel en español con Estado, Asignado A, Reinicio Necesario, Borrar filtros y Aplicar"><figcaption>El panel de filtros actual tiene tres criterios y dos acciones.</figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_9.png)
-* **Asignado al grupo**: Filtra por los grupos asignados al documento.
-* **Reinicio necesario**: Filtra los documentos que requieren un reinicio.
+<figure><img src="../../../.gitbook/assets/filtering-documents-status-options-es-20261010.png" alt="Desplegable de Estado en el panel de filtros del Panel en español con los estados de procesamiento seleccionables"><figcaption>Selecciona los estados de procesamiento que necesites.</figcaption></figure>
 
-Haz clic en **Aplicar** para aplicar los filtros seleccionados, o en **Borrar Filtros** para restablecerlos.
+<figure><img src="../../../.gitbook/assets/filtering-documents-assignee-options-es-20261010.png" alt="Desplegable de Asignado A que muestra los usuarios sintéticos de la organización de prueba"><figcaption>Selecciona un usuario en Asignado A.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_3.png)
+Para saber qué significa cada estado de procesamiento, consulta [Estado del Documento](document-status.md).
 
-## Filtrado por tiempo
+## Elegir un rango de fechas de importación
 
-Para filtrar documentos por fecha de importación, usa el filtro de tiempo ubicado a la derecha de la barra de búsqueda. Puedes elegir entre los siguientes rangos de tiempo predefinidos:
+Encima de la barra de búsqueda, selecciona **30D**, **90D**, **180D**, **365D** o **Todo** para cambiar el rango de fechas de importación. Selecciona **A medida**, elige **Fecha De Inicio** y **Fecha Final** y, a continuación, selecciona **Aplicar** para un rango concreto. La opción actual aparece resaltada.
 
-* **30 Días**
-* **90 Días**
-* **180 Días**
-* **365 Días**
-* **Todo**
+<figure><img src="../../../.gitbook/assets/filtering-documents-custom-dates-es-20261010.png" alt="Rango de fechas personalizado en el Panel en español con Fecha De Inicio, Fecha Final y Aplicar"><figcaption>Usa A medida cuando los rangos de fechas predefinidos no encajen.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_4.png)
+## Usar las pestañas de tipo de documento
 
-También puedes seleccionar un rango de fechas personalizado haciendo clic en **A medida**, luego especificando una **Fecha de inicio** y una **Fecha final**. Después de eso, haz clic en **Aplicar** para activar el filtro.
+1. Selecciona **+** junto a **Todo**. El menú muestra los tipos de documento disponibles para tu organización.
+2. Selecciona un tipo, por ejemplo **Factura**, para añadir su pestaña. Después selecciona la nueva pestaña para filtrar la tabla por ese tipo. **Todo** elimina la restricción de tipo sin borrar la pestaña.
+3. Para quitar la pestaña de un tipo, selecciona su **×**. La pestaña **Todo** no se puede quitar.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_5.png)
+<figure><img src="../../../.gitbook/assets/filtering-documents-document-type-menu-es-20261010.png" alt="Menú del signo más en el Panel en español que muestra Factura como tipo de documento disponible"><figcaption>Añade una pestaña de tipo de documento desde el menú del signo más.</figcaption></figure>
 
-<mark style="color:red;">**Nota**</mark>: Seleccionar un período de tiempo más largo puede resultar en tiempos de carga más lentos.
+<figure><img src="../../../.gitbook/assets/filtering-documents-invoice-tab-es-20261010.png" alt="Pestaña del tipo de documento Factura seleccionada en el Panel en español, con su icono de eliminación visible"><figcaption>Elige la pestaña para aplicar el filtro de tipo; usa × para quitar la pestaña.</figcaption></figure>
 
-## Filtrar por tipo de documento
-
-Para filtrar por tipos específicos de documento:
-
-1.  Haz clic en el icono de más (+) en la parte superior del Panel.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_6.png)
-2. Selecciona un tipo de documento de la lista.
-3.  Después de seleccionar un tipo de documento, puedes alternar entre filtros usando las pestañas en la parte superior del Panel.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_7.png)
-
-Para eliminar un filtro específico, pase el cursor sobre la etiqueta del filtro y haga clic en la X roja. Esto eliminará el filtro de la lista de pestañas.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_8.png)
+Si el menú **+** no muestra tipos, pide a un administrador que compruebe qué tipos de documento están activos para tu organización. Consulta [Document Types](../../../administration-and-setup/settings/global-settings/document-types/README.md). Para guardar una combinación de filtros y reutilizarla más tarde, consulta [Paneles personales](personal-dashboards.md).

@@ -1,31 +1,29 @@
-# Layout Manager
+# Gestor de diseños
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-es.png" alt="Diseños y reglas de selección para el tipo de documento INVOICE: las pestañas Diseños y Reglas de selección con sus contadores, el tipo de documento, las pestañas Validación de campos, Aprobación, Rechazar y Revisar, las tarjetas de diseño con la etiqueta A medida y las acciones Editar, Clon y Borrar, y el botón Nuevo diseño"><figcaption>El gestor de diseños para el tipo de documento Invoice.</figcaption></figure>
 
-#### Overview
+El **gestor de diseños** determina cómo ve un tipo de documento quien valida, aprueba, rechaza y revisa documentos: qué campos y grupos aparecen en pantalla, en qué orden y cómo se comporta cada campo. Cada tipo de documento tiene sus propios diseños.
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+La página se abre como **Diseños y reglas de selección**: los diseños son disposiciones de campos reutilizables, independientes del origen del documento, y las reglas deciden qué diseño se le asigna a un documento.
 
-#### Key Components
+#### Pantallas y tipos de diseño
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
-2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
-3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+Validación, aprobación, rechazo y revisión son pantallas distintas, y cada una tiene sus propios diseños, sus propias reglas y su propio diseño predeterminado: una regla de aprobación nunca cambia la pantalla de validación. Cambie de pantalla con las pestañas **Validación de campos**, **Aprobación**, **Rechazar** y **Revisar**.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
+#### Tarjetas de diseño
 
+En la pestaña **Diseños**, cada diseño de la pantalla seleccionada es una tarjeta. La tarjeta muestra el nombre del diseño, si pertenece a su organización (**A medida**) o es el diseño predeterminado del sistema, cuándo se editó por última vez y si alguna regla de selección lo utiliza. **Editar** abre el diseño en el Layout Builder, **Clon** lo copia con el nombre que elija y **Borrar** lo elimina; el diseño predeterminado del sistema solo puede consultarse, no modificarse ni borrarse. **Nuevo diseño** pide un nombre y abre el Layout Builder con el diseño nuevo y vacío. El filtro situado sobre las tarjetas alterna entre **Todo**, **Mis diseños** y **Sistema**.
 
+#### El Layout Builder
+
+**Editar** abre el [Layout Builder](navigating-the-layout-manager.md):
+
+* **Estructura**, **Campos** y **Elementos** a la izquierda: el diseño como árbol, cada campo del tipo de documento con un contador de los campos ya colocados, y los grupos y elementos de formulario que puede arrastrar al lienzo.
+* El **lienzo** del centro muestra el diseño tal como lo ve el usuario. **Diseño principal** y **Tabla** alternan entre la página y una tabla de líneas, y **Documento** abre el documento de ejemplo al lado.
+* El panel **Propiedades** de la derecha sigue al elemento seleccionado; sus ajustes se agrupan en visualización, comportamiento, valores y listas, automatización, y bordes y espaciado.
+
+**Guardar** en la cabecera almacena el diseño. Para el resto de acciones de la cabecera, consulte [Guardar y aplicar cambios](save-and-apply-changes.md).
+
+#### Qué diseño recibe un documento
+
+La pestaña **Reglas de selección** de cada pantalla contiene las reglas que eligen el diseño: se evalúan por prioridad, prevalece la primera coincidencia y se aplica una alternativa por defecto cuando ninguna regla coincide. Consulte [Reglas de selección de diseño](layout-selection-rules.md).

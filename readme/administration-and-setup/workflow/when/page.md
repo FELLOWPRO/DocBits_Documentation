@@ -1,6 +1,8 @@
 # Operación de Tipo de Documento
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FPy27j6G21QsBB7O6rq7O%252Fuserlmn_5cc120c265b7a237929e829ce781b452.png%3Falt%3Dmedia%26token%3D1c0d9baf-4135-46d2-93c5-8feb4cdaf979\&width=768\&dpr=2\&quality=100\&sign=c54ef7b3\&sv=2)
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1-es-es.png" alt="Operación de Tipo de Documento, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-es-es.png" alt="Operación de Tipo de Documento, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 

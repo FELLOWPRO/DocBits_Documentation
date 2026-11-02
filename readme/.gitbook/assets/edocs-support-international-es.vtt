@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.380
+Las entradas internacionales incluyen
+Peppol BIS 3.0, UBL 2.1, CII puro, EDI,
+
+formats_02
+00:00:06.380 --> 00:00:12.749
+INVOIC02, cXML, OCI, BOD y SPS Commerce
+RSX 7.7.4. Las asignaciones de facturas,
+
+formats_03
+00:00:12.749 --> 00:00:18.959
+pedidos, respuestas y avisos de expedición
+son diferentes. El procesamiento de
+
+formats_04
+00:00:18.959 --> 00:00:25.487
+archivos no proporciona por sí mismo un
+punto de acceso Peppol ni conectividad con
+
+formats_05
+00:00:25.487 --> 00:00:27.000
+socios comerciales.
+
+workflow_01
+00:00:27.750 --> 00:00:33.102
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:33.102 --> 00:00:38.861
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:38.861 --> 00:00:39.700
+activa.
+
+accept_01
+00:00:40.450 --> 00:00:44.990
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:44.990 --> 00:00:50.249
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:50.249 --> 00:00:54.100
+no demuestra la autorización fiscal ni la
+entrega por red.
+

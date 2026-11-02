@@ -84,7 +84,7 @@ Al procesar facturas en PDF que contienen tanto datos XML ZUGFeRD como un Swiss 
 | **ED** | Documento Electrónico (ZUGFeRD/XRechnung/PEPPOL XML) |
 | **SWISS_QR** | Extracción de código de barras Swiss QR Code |
 | **OCR** | Reconocimiento Óptico de Caracteres |
-| **ML** | Extracción por Machine Learning |
+| **ML** | Extracción por aprendizaje automático |
 
 ## Prioridad de Fusión (Merge)
 

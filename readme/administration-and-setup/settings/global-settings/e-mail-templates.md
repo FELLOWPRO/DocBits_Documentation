@@ -2,59 +2,42 @@
 
 ## **Visión general**
 
-Las plantillas de correo electrónico le permiten personalizar las notificaciones por correo electrónico automatizadas enviadas desde DocBits. Las plantillas pueden incluir campos dinámicos (por ejemplo, `{{FieldID}}`), imágenes y formato HTML.
+Las plantillas de correo electrónico (Email Templates) le permiten personalizar los correos electrónicos automáticos que envía DocBits, por ejemplo recordatorios de aprobación o notificaciones de error. Una plantilla define la línea de asunto y el cuerpo, y puede incluir campos dinámicos (p. ej. `{{InvoiceNumber}}`), imágenes y formato de texto enriquecido.
 
 ## **Acceso a las plantillas de correo electrónico**
 
-1.  Navega a: **Configuración → Configuración global → Plantillas de correo electrónico**
+Vaya a **Settings → Communication & Notifications → Email Templates**. La lista muestra cada plantilla con su **Name**, **Subject**, **Document Type**, la fecha de **Last Modified** y **Actions** (editar o eliminar).
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FWzjaI1Jinpw0PQHCuwM0%252Fimage.png%3Falt%3Dmedia%26token%3D21f7af41-6ebe-4e25-952f-9ae0b11cade2\&width=768\&dpr=4\&quality=100\&sign=ae789081\&sv=2)
-2. El panel muestra todas las plantillas con:
-   * **Nombre**
-   * **Asunto**
-   * Fecha de **Última modificación**
-   * **Acciones** (Editar o Eliminar).
+<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list-es.png" alt="Lista de Email Templates"><figcaption><p>La lista de Email Templates</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FENN4zipGg75mpi2OooPP%252Fimage.png%3Falt%3Dmedia%26token%3Ddff6d8a8-e5b3-4e52-bee1-e311daba7b64\&width=768\&dpr=4\&quality=100\&sign=4202a84f\&sv=2)
+## **Crear una plantilla**
 
-## **Creación de una nueva plantilla**
+1. Haga clic en **+ New** en la esquina superior derecha.
+2. Rellene los campos:
+   * **Name** — un identificador descriptivo (p. ej. "Document Error Notification").
+   * **Document Type** — el tipo de documento al que se aplica la plantilla (p. ej. `INVOICE`).
+   * **Include Document As Attachment** — active este interruptor para adjuntar el documento de origen al correo electrónico.
+   * **Subject** — la línea de asunto del correo. Haga clic en el botón **+** situado junto al campo para insertar un campo dinámico, o escriba `{{FieldID}}` directamente.
+3. Diseñe el cuerpo en el editor de texto enriquecido: dé formato al texto (negrita, cursiva, listas, alineación), inserte imágenes con **Upload**, edite el HTML sin procesar con el botón `<>` y use el botón **+** para insertar campos dinámicos.
+4. Haga clic en **Save**.
 
-### **1 Configuración básica**
+<figure><img src="../../../.gitbook/assets/email_templates_4-es.png" alt="Editor de plantillas de correo electrónico"><figcaption><p>El editor de plantillas: nombre, tipo de documento, interruptor de adjunto, asunto y cuerpo de texto enriquecido</p></figcaption></figure>
 
-* Haz clic en **Nuevo**.
-* Completa los campos a la derecha:
-  * **Nombre**: Identificador de la plantilla (por ejemplo, "Error de documento").
-  * **Asunto**: Línea de asunto del correo electrónico (por ejemplo, "Acción requerida: Error de documento").
-  *   **Tipo de documento**: Selecciona del menú desplegable (por ejemplo, "Factura").
+## **Campos dinámicos**
 
-      ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FXzmfZBIoyoDS7tTz1qo4%252Fimage.png%3Falt%3Dmedia%26token%3D24547984-2406-41b5-95d6-0f7f45e06258\&width=768\&dpr=4\&quality=100\&sign=f7aa9b89\&sv=2)
+Los campos dinámicos se sustituyen por los datos del documento cuando se envía el correo electrónico. Insértelos con el botón **+**, o escríbalos manualmente con dobles llaves:
 
-### **2 Editor de plantillas**
+* `{{invoice_id}}` — el número de factura
+* `{{supplier_name}}` — el nombre del proveedor
+* `{{total_amount}}` — el importe total
+* `{{status}}` — el estado actual del documento
 
-* **Menú**: Formatea texto, agrega enlaces o inserta tablas.
-* **Editor HTML**: Haz clic en el icono `<>` para editar HTML en bruto.
-* **Agregar imágenes**: Utiliza la función **Subir**.
-*   **Campos dinámicos:** Inserta valores de campo de documento mediante
+## **Enviar un correo electrónico de prueba**
 
-    * **Opción de campo variable**: Selecciona de un menú desplegable.
-    * **Entrada manual**: Escribe `{{FieldID}}` (por ejemplo, `{{NumeroFactura}}`).
+Haga clic en **Send Test** en el editor, introduzca una dirección en **Receiver Email** y haga clic en **Send**. DocBits envía una vista previa de la plantilla para que pueda comprobar el diseño y verificar que los campos dinámicos se resuelven correctamente antes de guardar.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/email_templates_4.png)
+<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog-es.png" alt="Cuadro de diálogo Send Test"><figcaption><p>El cuadro de diálogo Send Test</p></figcaption></figure>
 
-### **3 Guardar**
+## **Uso de plantillas en las notificaciones**
 
-* Haz clic en **Guardar** para almacenar la plantilla.
-
-## **Envío de un correo electrónico de prueba**
-
-1.  Abre la plantilla y haz clic en **Enviar prueba**.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZTskZNsVfWj6IwBmwoR5%252Fimage.png%3Falt%3Dmedia%26token%3D62229942-2ee7-4d58-833c-eb863b18f2d3\&width=768\&dpr=4\&quality=100\&sign=b804f787\&sv=2)
-2. Ingresa:
-   * **Correo electrónico del destinatario** (obligatorio).
-   * **Valores de campo** (opcional; datos simulados para marcadores de posición). ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FO2yw8EgefTPSCIhxUFH6%252Fimage.png%3Falt%3Dmedia%26token%3D2acc0067-3698-4565-92d8-6c4ddabe497c\&width=300\&dpr=4\&quality=100\&sign=461ae8e7\&sv=2)
-3. Revisa el correo electrónico de prueba y ajusta la plantilla si es necesario.
-
-## **Uso de plantillas en notificaciones**
-
-Las plantillas guardadas pueden vincularse a flujos de trabajo de [**Notificación por correo electrónico**](../supplier-setting/) (por ejemplo, recordatorios de aprobación, actualizaciones de estado).
+Las plantillas guardadas se pueden vincular a los flujos de trabajo de [**Email Notification**](email-notification/), por ejemplo recordatorios de aprobación o actualizaciones de cambio de estado.

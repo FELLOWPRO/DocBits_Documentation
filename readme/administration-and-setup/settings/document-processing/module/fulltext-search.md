@@ -2,7 +2,6 @@
 
 La búsqueda de texto completo permite a los usuarios buscar en el contenido real de los documentos y en todos los campos extraídos, no solo en los nombres de archivo e IDs.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Diálogo „Fulltext Module Required“ cuando el módulo está desactivado"><figcaption><p>El diálogo «Fulltext Module Required» aparece en las páginas que dependen del módulo.</p></figcaption></figure>
 
 ## Sin el módulo
 
@@ -19,7 +18,7 @@ Cualquier término fuera de estos campos se ignora. No existe búsqueda por cont
 
 Al activar la búsqueda de texto completo se habilita la búsqueda sobre cada campo extraído de un documento y la barra de búsqueda del panel pasa a aceptar un lenguaje de consulta enriquecido. Las consultas pueden combinar filtros por campo, rangos, operadores lógicos, fechas relativas y filtros inteligentes.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Barra de búsqueda del panel mostrando una consulta por rango y la lista de documentos filtrada"><figcaption><p>La barra de búsqueda del panel acepta el lenguaje de consulta extendido. Escriba una consulta y pulse <kbd>Enter</kbd> para filtrar la lista de documentos.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u049-es.png" alt="Entrada de una consulta por importe en el panel."><figcaption><p>Entrada de una consulta por importe en el panel.</p></figcaption></figure>
 
 ### Consultas por campo
 
@@ -102,7 +101,7 @@ ai: invoices from Ruiz over 1000 last quarter
 
 La búsqueda con IA y la búsqueda vectorial no son intercambiables: la vectorial encuentra contenido similar; la búsqueda con IA traduce el lenguaje a filtros. La búsqueda con IA no tiene un interruptor propio — se apoya en los índices de texto completo y vectorial existentes.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="Página „Configuración de búsqueda de texto completo“ mostrando los subíndices Documents, Vector Index y Fulltext (Text)"><figcaption><p>Configuración de búsqueda de texto completo. El índice vectorial tiene su propio interruptor; el índice de texto se ejecuta siempre que el módulo esté activo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u048-es.png" alt="Configuración e información de la indexación de texto completo."><figcaption><p>Configuración e información de la indexación de texto completo.</p></figcaption></figure>
 
 ## Requisitos previos
 
@@ -113,11 +112,11 @@ La búsqueda con IA y la búsqueda vectorial no son intercambiables: la vectoria
 ## Cómo activar el módulo
 
 1. Vaya a **Configuración → Procesamiento de documentos → Módulo**.
-2. Bajo el grupo **Dashboards**, active **Full text search**.
+2. Bajo el grupo **Tableros**, active **Búsqueda de texto completo**.
 3. Confirme el cuadro de diálogo de suscripción si aparece.
 4. Espere a que termine la reindexación inicial antes de utilizar consultas de texto completo.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Página „Módulos“ con el interruptor „Full text search“ bajo el grupo Dashboards"><figcaption><p>El interruptor <strong>Full text search</strong> se encuentra en <strong>Módulo → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u050-es.png" alt="Disponibilidad del módulo de búsqueda de texto completo."><figcaption><p>Disponibilidad del módulo de búsqueda de texto completo.</p></figcaption></figure>
 
 {% hint style="info" %}
 El precio del módulo de búsqueda de texto completo se gestiona a través de su contacto comercial de DocBits. La confirmación de suscripción se muestra la primera vez que se activa el módulo.
@@ -128,3 +127,6 @@ El precio del módulo de búsqueda de texto completo se gestiona a través de su
 * [Configuración de búsqueda de texto completo](../../log-settings/fulltext-search-settings.md) — gestión del índice e interruptor del índice vectorial.
 * [Funciones de Fulltext y Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API de scripting para `fulltext_search()` y `vector_search()`.
 * [Resumen de módulos](README.md) — lista completa de los módulos opcionales de DocBits.
+
+
+La búsqueda de texto completo requiere el módulo y los permisos correspondientes. Si aparece un aviso de módulo necesario, solicite a su administrador que compruebe la disponibilidad y el acceso.

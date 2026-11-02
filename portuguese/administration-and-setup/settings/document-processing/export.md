@@ -41,6 +41,17 @@ No entanto, é possível ter:
 * **Uma exportação Infor ativa** _e_ **uma exportação não-Infor ativa** ao mesmo tempo para o mesmo tipo de documento
 * **Diferentes configurações de exportação para diferentes sub-organizações** — por exemplo, uma exportação Infor para Sub-Org A e outra exportação Infor para Sub-Org B
 
+## Ativação a partir do ecrã de edição
+
+Uma configuração existente tem um interruptor **Ativo** no rodapé do seu ecrã de edição, junto a **Salvar**.
+
+1. Abra a configuração para editar (**Editar**).
+2. Coloque o interruptor **Ativo** no estado pretendido e selecione **Salvar**.
+
+O DocBits ativa ou desativa então a configuração com a mesma verificação que a lista usa: se já existir outra configuração ativa para o mesmo tipo de documento, a ativação é recusada. Guardar o formulário já não altera o estado guardado por si só; o interruptor do rodapé e o estado mostrado na lista coincidem sempre.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-pt.png" alt="Ecrã de edição de uma configuração de exportação com o interruptor Ativo no rodapé entre Cancelar e Salvar"><figcaption><p>O interruptor Ativo junto a Salvar no ecrã de edição da configuração de exportação.</p></figcaption></figure>
+
 ## **Criando uma nova exportação**
 
 Para criar uma nova exportação:

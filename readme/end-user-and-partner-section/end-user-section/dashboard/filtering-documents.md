@@ -12,7 +12,7 @@ Use the Dashboard search bar, filter panel, date range, and document type tabs t
 
 ## Filter by status, assignee, or restart requirement
 
-1. Select the **Filters** icon (sliders) at the right end of the search bar.
+1. Select the **Filters** icon (three slider bars) at the right end of the search bar.
 2. Choose one or more **Status** values. You can select several statuses at once.
 3. In **Assigned To**, select the users whose documents you want to see. If your organization has group permissions enabled, groups can appear in this same list. There is no separate **Assigned to Group** field in this panel.
 4. Select **Restart Required** to show documents that need a restart.

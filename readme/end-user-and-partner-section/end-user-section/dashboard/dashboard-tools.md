@@ -5,7 +5,7 @@ The toolbar is beside the dashboard search. Hover over an icon to see its label.
 | Tool | Use |
 | --- | --- |
 | Refresh | Reload the list and statuses. A change indicator on the refresh button means newer data is available. |
-| Advanced settings (gear) | Open column settings, the keyboard-shortcut reference and the email import log. Organization-wide settings require administrator access. |
+| Advanced settings (gear) | Open **More settings**, the **Keyboard shortcuts** reference, the **Import Log** and the **Column settings** dialog. Organization-wide settings require administrator access. |
 | Scan document | Open the scanner dialog when document scanning is enabled and a compatible scanner is available. Choose a device and scan settings before starting. |
 | Analytics | Show the dashboard status statistics. Select a status category to narrow the list. |
 | Start email import | Start an import using the organization's existing mailbox configuration. This does not configure a mailbox. |

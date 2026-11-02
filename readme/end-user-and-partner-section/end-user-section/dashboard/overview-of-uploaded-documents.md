@@ -10,6 +10,6 @@ If grouping is available, select a grouping field above the table. For date fiel
 
 Use the **+** next to the document-type tabs to show additional tabs. The tabs can be reordered by dragging. Removing a tab changes your view; it does not delete documents.
 
-Open the gear icon and the column-settings button to choose visible columns, move columns between the hidden and visible lists, and drag visible columns into order. You can also add fields from a document type. See [Change document columns](change-document-columns.md).
+Open the **Advanced settings** gear to the right of the search bar, then select the **Column settings** button in its menu to choose visible columns, move columns between the hidden and visible lists, and drag visible columns into order. You can also add fields from a document type. See [Change document columns](change-document-columns.md).
 
 For searching, document actions and saved views, return to the [dashboard guide](README.md).

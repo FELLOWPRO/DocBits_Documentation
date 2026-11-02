@@ -9,6 +9,7 @@
   * [Certifications](overview-and-basics/architecture/certifications.md)
   * [Prefect Local Setup Requirements](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
+* [When to use rules, workflows, or scripts](overview-and-basics/when-to-use-rules-workflows-and-scripts.md)
 * [Diagram Preview](overview-and-basics/diagram-preview/README.md)
   * [Processing Pipeline](overview-and-basics/diagram-preview/processing-pipeline.md)
   * [Document Status Lifecycle](overview-and-basics/diagram-preview/document-status-lifecycle.md)

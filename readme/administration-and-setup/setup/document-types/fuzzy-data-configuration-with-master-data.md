@@ -1,4 +1,4 @@
-# Fuzzy Data Konfiguration mit Masterdaten
+# Fuzzy-Daten mit Stammdaten konfigurieren
 
 ## **Überblick**
 
@@ -32,8 +32,8 @@ Jede Gruppe enthält spezifische Felder. Klicken Sie auf eine Gruppe, um sie zu 
 
 Damit Fuzzy-Daten korrekt funktionieren, müssen die relevanten **Masterdaten** importiert werden. Ohne dies hat das System keine Referenzdaten zur Verwendung. Hier erfahren Sie, wie Sie Masterdaten importieren:
 
-{% content-ref url="../../../setup/importing-customer-master-data/" %}
-[importing-customer-master-data](../../../setup/importing-customer-master-data/)
+{% content-ref url="../../../infor-integration-and-configuration/importing-customer-master-data/README.md" %}
+[importing-customer-master-data](../../../infor-integration-and-configuration/importing-customer-master-data/README.md)
 {% endcontent-ref %}
 
 ## **Verwalten von Nachschlagegruppen**

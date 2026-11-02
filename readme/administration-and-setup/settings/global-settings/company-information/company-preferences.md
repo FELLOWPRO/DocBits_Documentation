@@ -1,76 +1,48 @@
 # Unternehmenspräferenzen
 
+## Video-Tutorial: Unternehmen, Abonnement und Audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/de.mp4" %}
+Unternehmensinformationen, Abonnement-Plan und Audit-Protokoll in DocBits
+{% endembed %}
+
+Das Video zeigt die Unternehmensinformationen und -präferenzen, den Abonnement-Plan, die Anmeldeaktivität und das Audit-Protokoll.
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
 ## Übersicht
 
-In den **Unternehmenspräferenzen** können Sie wichtige Formatierungs- und Benachrichtigungseinstellungen für die Anwendung konfigurieren. Dazu gehören:
+Unter **Einstellungen → Unternehmensinformationen** öffnen Sie den Abschnitt **Unternehmenspräferenzen**. Hier legen Sie das Datumsformat und die Betragsformatierung für Ihre Organisation fest.
 
-* Auswahl des **Datum Musters**, das in der gesamten Anwendung verwendet werden soll
-* Festlegung der **Betragsformatierung** (z. B. Dezimaltrennzeichen, Zifferngruppierung)
-* Aktivierung oder Deaktivierung von Push-Benachrichtigungen, wenn ein neues Update verfügbar ist
-
-## So greifen Sie zu
-
-Um auf die **Unternehmenspräferenzen** zuzugreifen:
-
-1.  Navigieren Sie zu **Einstellungen** → **Globale Einstellungen** → **Infos**
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_company_information.png)
-2.  Scrollen Sie zum Abschnitt **Unternehmenspräferenzen**
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/company_preferences_1.png)
+<figure><img src="../../../../.gitbook/assets/company_preferences-de.png" alt="Deutsche Unternehmenspräferenzen mit Datum Muster, Betragsformatierung und Speichern"><figcaption><p>Die Unternehmenspräferenzen in der deutschen DocBits-Oberfläche.</p></figcaption></figure>
 
 ## Datum Muster
 
-In dieser Einstellung können Sie das **Datum Format** auswählen, das in **DocBits** verwendet werden soll. Es stehen mehrere Formatierungsoptionen zur Verfügung, mit denen Sie anpassen können, wie Daten angezeigt werden.
+Öffnen Sie die Auswahl **Datum Muster** und wählen Sie das gewünschte Datumsformat.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/company_preferences_2.png)
+<figure><img src="../../../../.gitbook/assets/company_date_pattern-de.png" alt="Geöffnete Auswahl Datum Muster mit den verfügbaren Datumsformaten"><figcaption><p>Die Auswahl zeigt die unterstützten Datumsformate.</p></figcaption></figure>
 
-Die folgenden Platzhalter werden im Datum Muster verwendet:
+Die Platzhalter bedeuten:
 
-* `%d` – Tag (z. B. 07)
-* `%m` – Monat (z. B. 07)
-* `%Y` – Vollständiges Jahr (z. B. 2025)
-* `%y` – Zweistelliges Jahr (z. B. 25)
+| Platzhalter | Bedeutung | Beispiel |
+|---|---|---|
+| `%d` | Tag | `07` |
+| `%m` | Monat | `07` |
+| `%Y` | Jahr mit vier Stellen | `2025` |
+| `%y` | Jahr mit zwei Stellen | `25` |
 
-#### **Beispiel Formate:**
-
-* `%d.%m.%Y` → 07.07.2025
-* `%m/%d/%y` → 07/07/25
-
-Wählen Sie das Format, das am besten zu Ihren organisatorischen oder regionalen Anforderungen passt.
-
-Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie auf die Schaltfläche **Speichern** in der unteren rechten Ecke, um sie anzuwenden.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/company_preferences_5.png)
+Beispielsweise ergibt `%d.%m.%Y` die Anzeige `07.07.2025`; `%m/%d/%y` ergibt `07/07/25`.
 
 ## Betragsformatierung
 
-Diese Einstellung ermöglicht es Ihnen, festzulegen, wie Beträge in der gesamten Anwendung formatiert werden – zum Beispiel, ob ein Komma ( , ) oder ein Punkt ( . ) als Dezimaltrennzeichen verwendet werden soll.
+Öffnen Sie die Auswahl **Betragsformatierung**. Sie bestimmt unter anderem Dezimaltrennzeichen und Zifferngruppierung für die Anzeige von Beträgen, beispielsweise `1.000,00` im deutschen und `1,000.00` im englischen Format.
 
-#### **Beispiel Formate:**
+> **Hinweis:** Die Betragsformatierung im Validierungsbildschirm wird durch die Herkunftseinstellung des Dokuments bestimmt.
 
-* `1,000.00` (US-Format)
-* `1.000,00` (europäisches Format)
+## Änderungen speichern
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/company_preferences_3.png)
-
-Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie auf die Schaltfläche **Speichern** in der unteren rechten Ecke, um sie anzuwenden.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/company_preferences_5.png)
-
-<mark style="color:red;">**Hinweis**</mark>: Diese Einstellung steuert, wie Beträge in **DocBits** angezeigt werden. Das **Betragsformat** im **Feldvalidierung Bildschirm** wird durch die **Herkunft**-Einstellung des Dokuments bestimmt.
+Wählen Sie nach Ihren Änderungen **Speichern** im Abschnitt **Unternehmenspräferenzen**. Wenn Sie keine Änderung übernehmen möchten, verlassen Sie die Seite ohne zu speichern.
 
 ## Neuer Versionsinfo-Dialog
 
-Diese Einstellung ermöglicht es Ihnen, eine Popup-Benachrichtigung zu aktivieren, wenn eine neue Version der Anwendung veröffentlicht wird. Wenn aktiviert, erscheint automatisch ein Dialog, wenn ein Update verfügbar ist. Um das Update anzuwenden:
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/company_preferences_4.png)
-
-Klicken Sie im Dialogfenster auf **Aktualisieren zum Schließen**. **DocBits** wird neu geladen und mit der neuesten Version geöffnet. Dies stellt sicher, dass die Benutzer immer mit den neuesten Funktionen, Verbesserungen und Fehlerbehebungen arbeiten.
-
-Nachdem Sie die Einstellung ein- oder ausgeschaltet haben, klicken Sie auf die Schaltfläche **Speichern** in der unteren rechten Ecke, um Ihre Änderungen anzuwenden.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/company_preferences_5.png)
+Die gezeigte Oberfläche enthält in diesem Abschnitt die Datums- und Betragsformatierung. Informationen zu verfügbaren Versionen und Release-Kanälen finden Sie unter [Release-Lebenszyklus](../../../../overview-and-basics/docbits-release-lifecycle-strategy.md).

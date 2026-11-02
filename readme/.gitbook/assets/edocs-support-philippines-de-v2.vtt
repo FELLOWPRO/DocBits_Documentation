@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.877
+Philippines EIS ist die konfigurierte
+Familie. Die Bezeichnung nennt keine
+
+formats_02
+00:00:04.877 --> 00:00:09.440
+Veröffentlichungsversion. Prüfen Sie das
+Datenschema und den betreffenden
+
+formats_03
+00:00:09.440 --> 00:00:14.067
+Dokumenttyp, bevor Sie sich auf eine
+generische EIS-Bezeichnung verlassen.
+
+workflow_01
+00:00:14.817 --> 00:00:20.123
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:20.123 --> 00:00:26.833
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:26.833 --> 00:00:28.467
+aktiviert ihn nicht.
+
+accept_01
+00:00:29.217 --> 00:00:33.849
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:33.849 --> 00:00:39.979
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:39.979 --> 00:00:43.100
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

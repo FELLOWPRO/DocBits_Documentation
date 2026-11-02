@@ -1,7 +1,5 @@
 # Status
 
+Die **Status**-Karten im **Karte hinzufügen**-Picker des Workflow-Builders (öffnen über die **Und**-Gruppe → **Karte hinzufügen**):
 
-Die **Status**-Karten im **Add Card**-Picker des Workflow-Builders (öffnen über die **Und**-Gruppe → **Karte hinzufügen**):
-
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_status.png" alt="Status Karten im Workflow-Builder"><figcaption><p>Die Karten der Kategorie <strong>Status</strong>.</p></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-ff11a606e5a1-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>

@@ -1,5 +1,12 @@
 # Export nicht übereinstimmender PO-Zeilen
 
+## Den Exportumfang an drei Positionen verstehen
+
+<figure><picture><source srcset="../../../../../../.gitbook/assets/intro-process-03-po-export-de-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../../.gitbook/assets/intro-process-03-po-export-de-light-20261029.png" alt="Den Exportumfang an drei Positionen verstehen"></picture><figcaption><p>Den Exportumfang an drei Positionen verstehen</p></figcaption></figure>
+
+Im Beispiel hat die Bestellung drei Positionen; nur eine ist einer Position der Auftragsbestätigung zugeordnet. Ist „Export Not Matched PO Lines“ ausgeschaltet, wird nur die zugeordnete Bestellposition exportiert. Ist die Option eingeschaltet, werden auch die beiden offenen Bestellpositionen mitgegeben. Das erzeugt keine zusätzliche Zuordnung.
+
+
 ## **Wo Sie es Finden**
 
 Gehen Sie zu **Einstellungen → Allgemeine Einstellungen → Dokumenttypen → Weitere Einstellungen → Einkaufsbestellabschnitt → Export nicht übereinstimmender PO-Zeilen**. Schalten Sie den Schalter um, um diese Einstellung zu aktivieren.

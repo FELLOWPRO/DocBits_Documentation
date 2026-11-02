@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument BRAZIL NFC-E in DocB
 
 # 🇧🇷 BRAZIL NFC-E
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Brasilien](countries/brazil.md). Dies sind unterschiedliche Dokumentfamilien. Eine konfigurierte NFS-e-Version bestätigt nicht jedes kommunale Schema oder jedes nationale Format für Dienstleistungsrechnungen.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
 | **Land / Region** | Brasilien |
@@ -24,7 +30,7 @@ NFC-e (Nota Fiscal de Consumidor Eletrônica, `<mod>65</mod>`) ist die brasilian
 
 ## Standard-Vorschau
 
-<figure><img src="brazil-nfce-preview.png" alt="Brazil NFC-e Vorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für ein BRAZIL NFC-E Dokument</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfce-preview.png" alt="Brazil NFC-e Vorschau in DocBits"><figcaption><p>Standard-DocBits-Vorschau für ein BRAZIL NFC-E Dokument</p></figcaption></figure>
 
 ## Feldzuordnung
 

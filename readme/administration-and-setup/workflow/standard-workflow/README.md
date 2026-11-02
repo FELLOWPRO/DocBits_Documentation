@@ -1,12 +1,12 @@
-# Standard Workflow
+# Standard-Workflow
 
 <figure><img src="../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1) (1).svg" alt=""><figcaption></figcaption></figure>
 
 #### Überblick über die Workflow-Komponenten:
 
-* **AP Invoice Email**: Der Prozess beginnt in der Regel mit einer per E-Mail eingegangenen Rechnung.
+* **Rechnungseingang per E-Mail**: Der Prozess beginnt in der Regel mit einer per E-Mail eingegangenen Rechnung.
 * **DocBits**: Dieses Tool wird für erste Dokumentenmanagement-Aufgaben wie das Erfassen und Digitalisieren von Rechnungen verwendet.
-* **Finance Review**: Rechnungen durchlaufen eine Finanzprüfung, bei der über ihre Gültigkeit und Richtigkeit entschieden wird.
+* **Prüfung durch die Finanzabteilung**: Rechnungen durchlaufen eine Finanzprüfung, bei der über ihre Gültigkeit und Richtigkeit entschieden wird.
 
 #### Schritte im Workflow:
 

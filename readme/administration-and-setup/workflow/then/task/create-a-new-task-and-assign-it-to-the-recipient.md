@@ -1,19 +1,21 @@
-# Create a New Task and assign it to the Recipient
+# Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Empfänger zu
 
-<figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v1-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Empfänger zu, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_task_v2-de-de.png" alt="Erstellen Sie eine neue Aufgabe und weisen Sie sie dem Empfänger zu, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 
-Die Workflow-Karte **"Create Task with Fallback"** sorgt für eine effiziente Aufgabendelegation, indem sie Aufgaben bestimmten Rollen – Disponent oder Einkäufer – zuweist und dabei einen Ersatzmechanismus einbindet, um fehlgeschlagene Aufgabenzuweisungen zu verhindern. Diese Karte verbessert die Zuverlässigkeit und Anpassungsfähigkeit des Workflows in dynamischen Szenarien.
+Die Workflow-Karte **„Aufgabe mit Fallback erstellen“** sorgt für eine effiziente Aufgabendelegation, indem sie Aufgaben bestimmten Rollen – Disponent oder Einkäufer – zuweist und dabei einen Ersatzmechanismus einbindet, um fehlgeschlagene Aufgabenzuweisungen zu verhindern. Diese Karte verbessert die Zuverlässigkeit und Anpassungsfähigkeit des Workflows in dynamischen Szenarien.
 
 ## **Bestandteile der Karte:**
 
 1. **Titel**
    * **Beschreibung**: Gibt den Titel der erstellten Aufgabe an.
-   * **Detail**: Liefert einen prägnanten Bezeichner für die Aufgabe.
+   * **Detailliert**: Liefert einen prägnanten Bezeichner für die Aufgabe.
 2. **Beschreibung**
    * **Beschreibung**: Beschreibt den Zweck oder Kontext der Aufgabe.
-   * **Detail**: Verdeutlicht die Details der Aufgabe.
+   * **Detailliert**: Verdeutlicht die Details der Aufgabe.
 3. **Priorität**
    * **Beschreibung**: Legt die Dringlichkeitsstufe der Aufgabe fest.
    * **Optionen**:
@@ -32,12 +34,12 @@ Die Workflow-Karte **"Create Task with Fallback"** sorgt für eine effiziente Au
      * **False**: Es wird keine E-Mail-Benachrichtigung gesendet.
 6. **Ersatzbenutzer**
    * **Beschreibung**: Bietet eine Ersatzoption für die Aufgabenzuweisung, falls die Empfängerrolle nicht gefunden wird.
-   * **Detail**: Ermöglicht die Auswahl eines Benutzers aus einer Dropdown-Liste, um die Aufgabendelegation sicherzustellen.
+   * **Detailliert**: Ermöglicht die Auswahl eines Benutzers aus einer Dropdown-Liste, um die Aufgabendelegation sicherzustellen.
 
 ## **Funktionalität:**
 
 * **Bedingungsauswertung**:\
-  Die Karte wird nur ausgeführt, wenn die Bedingungen in den Abschnitten **"Where"** und **"And"** erfüllt sind.
+  Die Karte wird nur ausgeführt, wenn die Bedingungen in den Abschnitten **„Wenn“** und **„Und“** erfüllt sind.
 * **Aufgabenzuweisung**:
   * Die Aufgabe wird der ausgewählten Rolle (Disponent oder Einkäufer) zugewiesen.
   * Wird die angegebene Rolle nicht gefunden, wird die Aufgabe einem Benutzer aus der Ersatz-Dropdown-Liste zugewiesen.
@@ -53,4 +55,14 @@ Die Workflow-Karte **"Create Task with Fallback"** sorgt für eine effiziente Au
 
 ## **Fazit:**
 
-Die Workflow-Karte **"Create Task with Fallback"** sorgt durch die Integration eines Ersatzmechanismus für eine nahtlose Aufgabendelegation. Indem sie Aufgaben auf Basis von Rollen zuweist und eine alternative Benutzeroption bietet, erhöht sie die Zuverlässigkeit und Flexibilität in den Prozessen des Aufgabenmanagements.
+Die Workflow-Karte **„Aufgabe mit Fallback erstellen“** sorgt durch die Integration eines Ersatzmechanismus für eine nahtlose Aufgabendelegation. Indem sie Aufgaben auf Basis von Rollen zuweist und eine alternative Benutzeroption bietet, erhöht sie die Zuverlässigkeit und Flexibilität in den Prozessen des Aufgabenmanagements.
+
+<!-- workflow-card-complete-example-20261021 oc_task -->
+
+### Beispiel für eine Empfängeraufgabe
+
+**Konfiguration:** Geben Sie den Titel `Review delivery date`, eine Beschreibung zur Identifizierung des synthetischen Dokuments, eine Priorität, die Rolle „Käufer“ und den konfigurierten Fallback-Benutzer `DEMO_REVIEWER` ein. Deaktivieren Sie die E-Mail-Benachrichtigung für diese beispielhafte Einrichtung.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Wenn ein Käufer gelöst werden kann, wird die neue Aufgabe diesem Benutzer zugewiesen. Wenn die Rolle nicht aufgelöst werden kann, wird der konfigurierte Fallback verwendet. Überprüfen Sie den tatsächlichen Aufgabeneigentümer. Ein fehlender primärer Empfänger ist kein Beweis dafür, dass der Fallback-Benutzer existiert oder dass eine Aufgabe erstellt wurde.
+
+Dies ist eine beispielhafte Testkonfiguration und das erwartete Ergebnis. es wurde nicht ausgeführt. Verwenden Sie die in Ihrer Testorganisation konfigurierten Daten und Empfänger.

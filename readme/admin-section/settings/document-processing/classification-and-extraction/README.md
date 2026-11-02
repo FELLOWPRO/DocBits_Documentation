@@ -18,7 +18,7 @@ Diese Seite bietet eine detaillierte Erklärung aller verfügbaren Einstellungen
 Um auf die **Klassifizierung und Extraktion**-Einstellungen zuzugreifen, gehen Sie zu:\
 **Einstellungen → Verarbeitung von Dokumenten → Klassifizierung und Extraktion**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_classification_and_extraction.png)
+<figure><img src="../../../../.gitbook/assets/dbdc859-settings-nav-de-20261012.png" alt="Einstellungen-Navigation mit Dokumentenverarbeitung und Klassifizierung und Extraktion"><figcaption><p>Öffnen Sie <strong>Einstellungen → Verarbeitung von Dokumenten → Klassifizierung und Extraktion</strong>.</p></figcaption></figure>
 
 ## Aufteilung von Dokumenten
 
@@ -72,9 +72,16 @@ Mehr über das Training erfahren Sie [hier](../../../../administration-and-setup
 
 **AI-Tabellen-Extraktion:** Verwendet AI, um die Tabelle jedes Lieferanten ohne Training zu extrahieren. Sind die Ergebnisse für einen Lieferanten nicht genau genug, trainieren Sie die Tabelle dieses Lieferanten; die gespeicherten Regeln haben für diesen Lieferanten dann Vorrang vor der AI.
 
-**Tabellenextraktions-Vision (KI) verwenden:** Die AI liest das Seitenbild statt der Textebene. Hilft bei gescannten Dokumenten und Tabellen ohne klare Textstruktur; langsamer.
+**Tabellenextraktions-Vision (KI) verwenden:** Die AI liest das Seitenbild statt der Textebene. Hilft bei gescannten Dokumenten und Tabellen ohne klare Textstruktur; langsamer. Das Dropdown neben dem Schalter legt fest, wie stark das Seitenbild genutzt wird:
 
-**Strukturierte Extraktion nutzen (KI):** Die AI liefert die Tabelle in einer festen Struktur, die direkt auf die konfigurierten Tabellenspalten abgebildet wird. Empfohlen, wenn die Spaltenüberschriften auf den Dokumenten stark variieren.
+* **Aus (nur Text)** – Nur die Textebene wird verwendet. Dies ist der Standard.
+* **Nur Bilder** – Nur das Seitenbild wird gelesen.
+* **Hybrid (Text und Bilder)** – Textebene und Seitenbild werden in derselben Anfrage kombiniert.
+* **Auto (je Dokument entschieden)** – DocBits entscheidet pro Dokument, ob die Textebene ausreicht.
+
+Der Modus wird unter dem Präferenzschlüssel `TABLE_EXTRACTION_VISION_MODE` gespeichert; der alte Schalter `TABLE_EXTRACTION_USE_VISION` bleibt erhalten und bedeutet effektiv *Nur Bilder*.
+
+**Strukturierte Extraktion nutzen (KI):** Die AI liefert die Tabelle in einer festen Struktur, die direkt auf die konfigurierten Tabellenspalten abgebildet wird. Empfohlen, wenn die Spaltenüberschriften auf den Dokumenten stark variieren. Ein Klick auf die Einstellung öffnet eine Vorschau, welche Felder und Spalten die AI genau angefragt werden: Kopffelder und Zeilenspalten werden mit ihrer Herkunft aufgelistet (angefragte oder deaktivierte Standardfelder), ebenso der erwartete Ausgabemodus (z. B. *strict* – keine zusätzlichen Spalten). Felder, die für den Dokumenttyp konfiguriert, aber ausgeschaltet sind, werden von der AI nicht angefragt.
 
 **Tabellenextraktion für Kalkulationselement:** Wenn aktiviert, kann DocBits Kalkulationselemente auf Zeilenebene aus Tabellen extrahieren und entsprechend klassifizieren.\
 Ausführliche Erläuterung [hier](table-extraction-for-costing-element.md).
@@ -84,11 +91,11 @@ Weitere Informationen zu dieser Einstellung [hier](../../../../administration-an
 
 **Extraktionsregeln speichern (nur für Administratoren):** Nur Administratoren können im Tabellentraining auf *Regeln speichern* klicken. Schalten Sie die Option ein, wenn Benutzer immer wieder Regeln speichern, die die Extraktion eines Lieferanten beschädigen.
 
-**AI-Modell:** Wählt die AI-Stufe für die Tabellenextraktion: **Fast** (Standard), **Full** (höchste Genauigkeit, langsamer) oder **Nexus** (optionale dritte Stufe). Die Tabelle unter der Auswahl zeigt:
+**AI-Modell:** Wählt die AI-Stufe für die Tabellenextraktion. Es stehen sechs Optionen zur Verfügung: **Full** (höchste Genauigkeit, langsamste, 2 Token pro Dokument), **Fast** (Standard; 1 Token pro Dokument), **Nexus** und **Nexus Flash** (alternative Modellfamilie, optional) sowie **Auto** und **Auto Nexus**, bei denen DocBits pro Dokument entscheidet, wie stark ein Modell sein muss. Die Tabelle unter der Auswahl zeigt:
 
 * Welche **Lieferanten** welches AI-Modell verwenden
-* Ob sie E-Text verwenden
-* Optionen, um einen Eintrag zu löschen oder die Trainingsdaten zurückzusetzen
+* Ob sie strukturierte Extraktion (KI) und E-Text verwenden
+* Optionen, um einen Eintrag zu löschen und damit den Lieferanten auf den Standard zurückzusetzen
 
 Diese Einstellung wird im Detail [hier](../../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) erklärt.
 
@@ -110,12 +117,13 @@ Jeder Schalter in diesem Abschnitt wird als Organisationspräferenz gespeichert.
 |---|---|---|
 | Tabelle Extraktion | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | AI-Tabellen-Extraktion | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Tabellenextraktions-Vision (KI) verwenden | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Tabellenextraktions-Vision (KI) verwenden | `TABLE_EXTRACTION_VISION_MODE` | `off` (Standard), `vision`, `hybrid`, `auto` |
+| Tabellenextraktions-Vision (KI) verwenden – alter Schalter | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; bedeutet effektiv `vision` |
 | Strukturierte Extraktion nutzen (KI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Tabellenextraktion für Kalkulationselement | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Steuercode automatisch extrahieren | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Extraktionsregeln speichern (nur für Administratoren) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| AI-Modell | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| AI-Modell | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Version der Tabellenextraktion (Bestätigungsdialog) | `TBL_EXT_VERSION` | Versionszeichenfolge |
 | OCR-Einstellungen → Verwenden Sie AI-Daten für Tabellen, falls verfügbar | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | OCR-Einstellungen → E-Text verwenden, falls verfügbar | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
@@ -124,6 +132,7 @@ Hinweise:
 
 * Boolesche Präferenzen werden als Zeichenfolgen `true` / `false` gespeichert; ein nie gesetzter Schlüssel zählt als `false`. Wenn Sie `1` oder `0` senden, speichert DocBits `true` / `false`.
 * Ein nicht gesetztes `AI_MODEL` bedeutet **Fast**.
+* Ein nicht gesetztes `TABLE_EXTRACTION_VISION_MODE` wird aus dem alten Schalter `TABLE_EXTRACTION_USE_VISION` abgeleitet: `true` ergibt `vision`, alles andere `off`.
 * Eine Änderung eines Schlüssels wirkt auf Dokumente, die danach verarbeitet werden. Starten Sie ein Dokument neu, um es mit der neuen Einstellung erneut zu extrahieren.
 * Lieferantenspezifische Entscheidungen (E-Text, AI-Modell, gespeicherte Regeln) sind keine Organisationspräferenzen; sie werden im Validierungsbildschirm unter *Weitere Einstellungen* für ein Dokument des jeweiligen Lieferanten gesetzt.
 

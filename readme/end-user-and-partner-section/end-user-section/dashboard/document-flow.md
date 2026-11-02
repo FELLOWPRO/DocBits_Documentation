@@ -1,38 +1,34 @@
-# Dokument-Flow
+# Dokumentenfluss
 
-## **Überblick:**
+Der **Dokumentenfluss** zeigt die Verarbeitungsschritte eines Dokuments. Die nummerierten Karten machen Reihenfolge, Zustand und Laufzeit sichtbar. Das Beispiel verwendet eine fiktive Rechnung.
 
-Diese Seite bietet eine grafische Übersicht über die verschiedenen Schritte, die ein Dokument bis zu diesem Punkt durchlaufen hat.
+## Dokument finden und Dokumentenfluss öffnen
 
-## **Zugriff:**
+Suchen Sie das Dokument zunächst im Dashboard. Die folgende Aufnahme zeigt die Suche nach dem Beispieldokument; Dokumentwerte in der Tabelle sind ausgeblendet.
 
-### **Option 1:**
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-de.png" alt="Synthetisches Beispieldokument im deutschen Dashboard finden; Dokumentwerte sind ausgeblendet."><figcaption><p>Synthetisches Beispieldokument im deutschen Dashboard finden; Dokumentwerte sind ausgeblendet.</p></figcaption></figure>
 
-1.  Navigieren Sie zur Aktionsspalte auf dem Dashboard und klicken Sie auf die drei Punkte neben dem Dokument, für das Sie den Dokument-Flow anzeigen möchten.
+Öffnen Sie das Dokument und wählen Sie in der **Feldvalidierung** das Drei-Punkte-Menü der rechten Aktionsleiste. Klicken Sie auf **Dokumentenfluss**.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1_de.png" alt=""><figcaption></figcaption></figure>
-2.  Wählen Sie **Dokument-Flow**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-de.png" alt="Menü Weitere Optionen in der deutschen Feldvalidierung mit dem Eintrag Dokumentenfluss."><figcaption><p>Menü Weitere Optionen in der deutschen Feldvalidierung mit dem Eintrag Dokumentenfluss.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2_de.png" alt="" width="326"><figcaption></figcaption></figure>
+## Prozesskarten lesen
 
-### **Option 2:**
+Jede Karte steht für einen Verarbeitungsschritt, etwa **Importiert**, **OCR**, **Klassifizierung** oder **Feldextraktion**. Folgen Sie den Nummern und scrollen Sie zu den späteren Schritten.
 
-1. Öffnen Sie das Dokument, für das Sie den Dokument-Flow anzeigen möchten.
-2.  Klicken Sie auf die drei Punkte auf der rechten Seite der Feldvalidierung.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-de.png" alt="Prozesskarten im Dokumentenfluss einer fiktiven Rechnung; technische Statuscodes bleiben unverändert."><figcaption><p>Prozesskarten im Dokumentenfluss einer fiktiven Rechnung; technische Statuscodes bleiben unverändert.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3_de.png" alt=""><figcaption></figcaption></figure>
-3.  Wählen Sie **Dokument-Flow**.
+Technische Bezeichnungen und Statuscodes wie `DOCUMENT_IMPORTED` oder `COMPLETE` werden unverändert angezeigt. `COMPLETE` kennzeichnet einen abgeschlossenen Schritt.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4_de.png" alt="" width="367"><figcaption></figcaption></figure>
+## Details eines Schritts
 
-## **Beschreibung:**
+Wählen Sie eine Prozesskarte, um die zugehörigen Details und gegebenenfalls Protokolle anzuzeigen. Einzelne Detailbereiche sind im Produkt derzeit noch englisch beschriftet. Die folgende Übersicht erklärt ihre Inhalte:
 
-Auf der linken Seite des Bildschirms sehen Sie die einzelnen Schritte des Dokument-Flows, aufgelistet von links nach rechts.
+| Angabe | Bedeutung |
+| --- | --- |
+| Modul | Verarbeitungskomponente des ausgewählten Schritts |
+| Status | Aktueller Zustand dieses Schritts |
+| Dauer | Für den Schritt erfasste Laufzeit |
+| Protokolle | Verfügbare technische Meldungen zur Aufgabe |
 
-<figure><img src="../../../.gitbook/assets/DocumentFlow_5_de.png" alt=""><figcaption></figcaption></figure>
-
-* Schritte, die den Dokument-Flow-Prozess initiieren (wie Import oder Neustart), werden grün angezeigt.
-* Um durch die Schritte zu navigieren, ziehen Sie sie einfach auf dem Bildschirm.
-*   Wenn Sie auf einen Schritt klicken, wird der Name des Moduls und Informationen darüber, ob der Schritt erfolgreich war oder nicht, auf der rechten Seite des Bildschirms angezeigt.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_6_de.png" alt=""><figcaption></figcaption></figure>
+Prüfen Sie bei einem wartenden oder fehlgeschlagenen Schritt die zugehörigen Meldungen, bevor Sie eine Verarbeitung erneut starten.

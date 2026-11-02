@@ -1,10 +1,10 @@
-# Best Practice
+# Bewährte Vorgehensweisen
 
 Das Konfigurieren von Dokumenttypen in Docbits erfordert Sorgfalt und Fachwissen, um sicherzustellen, dass die Dokumentenverarbeitung effizient und genau ist. Hier sind einige bewährte Methoden zum Konfigurieren von Dokumenttypen, einschließlich Empfehlungen zum Einrichten effektiver Regex-Muster und Tipps zum Trainieren von Modellen zur Verbesserung der Genauigkeit:
 
 ### **Planung und Analyse**&#x20;
 
-**Best Practices**
+**Bewährte Vorgehensweisen**
 
 **Anforderungsanalyse:**&#x20;
 
@@ -16,7 +16,7 @@ Das Konfigurieren von Dokumenttypen in Docbits erfordert Sorgfalt und Fachwissen
 
 ### Einrichten von Layouts&#x20;
 
-**Best Practices**
+**Bewährte Vorgehensweisen**
 
 **Konsistenz:**&#x20;
 
@@ -28,7 +28,7 @@ Das Konfigurieren von Dokumenttypen in Docbits erfordert Sorgfalt und Fachwissen
 
 ### Felddefinitionen und Metadaten&#x20;
 
-**Best Practices**
+**Bewährte Vorgehensweisen**
 
 **Eindeutige Feldnamen:**&#x20;
 
@@ -44,7 +44,7 @@ Das Konfigurieren von Dokumenttypen in Docbits erfordert Sorgfalt und Fachwissen
 
 ### Trainieren von Modellen zur Datenextraktion&#x20;
 
-**Best Practices**
+**Bewährte Vorgehensweisen**
 
 **Verwenden von Qualitätsdaten:**&#x20;
 
@@ -70,7 +70,7 @@ Das Konfigurieren von Dokumenttypen in Docbits erfordert Sorgfalt und Fachwissen
 
 ### Validierungs- und Extraktionsregeln&#x20;
 
-**Best Practices**&#x20;
+**Bewährte Vorgehensweisen**&#x20;
 
 **Mehrstufige Validierung:**&#x20;
 
@@ -86,7 +86,7 @@ Das Konfigurieren von Dokumenttypen in Docbits erfordert Sorgfalt und Fachwissen
 
 ### Automatisierungs-Workflows&#x20;
 
-**Best Practices**
+**Bewährte Vorgehensweisen**
 
 **Klar definierte Workflows:**&#x20;
 
@@ -102,7 +102,7 @@ Das Konfigurieren von Dokumenttypen in Docbits erfordert Sorgfalt und Fachwissen
 
 ### Benutzerrechte und Zugriffskontrolle&#x20;
 
-**Best Practices**&#x20;
+**Bewährte Vorgehensweisen**&#x20;
 
 **Rollenbasierter Zugriff:**&#x20;
 

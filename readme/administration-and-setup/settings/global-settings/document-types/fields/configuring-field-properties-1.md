@@ -1,95 +1,34 @@
-# Konfigurieren von Feldeigenschaften
+# Feldeigenschaften konfigurieren
 
-## Detaillierte Anweisungen zum Festlegen von Eigenschaften wie "Pflichtfeld", "Schreibgeschützt", "Ausgeblendet" und "OCR".
+Öffnen Sie **Einstellungen → Dokumenttypen → Felder** und wählen Sie den Dokumenttyp. Die Bilder zeigen Rechnungsfelder in der deutschen Oberfläche; technische Bezeichner wie `invoice_id` bleiben unverändert.
 
-### Pflichtfeld (Required):
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview-de.png" alt="Deutsche Feldeinstellungen mit Pflichtfeld, Schreibschutz, Sichtbarkeit und Überprüfung."><figcaption><p>Deutsche Feldeinstellungen mit Pflichtfeld, Schreibschutz, Sichtbarkeit und Überprüfung.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_configure_classification_rule.png" alt="Docbits Configure Classification Rule"><figcaption></figcaption></figure>
+## Ein Feld finden und seine Eigenschaften ändern
 
-Wenn ein Feld als Pflichtfeld markiert ist, bedeutet dies, dass dieses Feld ausgefüllt werden muss, bevor der Beleg gespeichert oder verarbeitet werden kann.
+1. Geben Sie unter **Suche nach Name** den Feldnamen oder die Bezeichnung ein. Dadurch wird die Liste gefiltert; das Feld selbst wird nicht verändert.
+2. Suchen Sie die Zeile des Feldes. **Rechnungsnummer** hat zum Beispiel den technischen Namen `invoice_id`.
+3. Passen Sie die Steuerelemente in dieser Zeile an und wählen Sie dann **Einstellungen speichern**. Dieselbe Speichern-Schaltfläche steht oberhalb und unterhalb der Tabelle zur Verfügung.
 
-**So legen Sie diese Eigenschaft fest:**
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-filtered-de.png" alt="Feldeinstellungen nach invoice_id gefiltert; OCR und Match Score bleiben sichtbar."><figcaption><p>Feldeinstellungen nach invoice_id gefiltert; OCR und Match Score bleiben sichtbar.</p></figcaption></figure>
 
-* Navigieren Sie zu den Einstellungen des Feldes in Ihrem DocBits-System.
-* Aktivieren Sie die Option "Pflichtfeld" für das entsprechende Feld.
+| Steuerelement | Wofür es verwendet wird |
+| --- | --- |
+| **Erforderlich** | Markieren Sie Informationen, die für die Validierung vorhanden sein müssen. Prüfen Sie nach dieser Änderung das Validierungsergebnis des Dokuments. |
+| **Schreibgeschützt** | Zeigt ein Feld an, ohne dass Benutzer seinen Wert bearbeiten können. |
+| **Versteckt** | Blendet das Feld in der normalen Dokumentansicht aus. |
+| **Validierung erzwingen** | Verlangt eine ausdrückliche Prüfung des Feldes. Diese Option erstellt keine Vergleichsregel und keinen regulären Ausdruck; benutzerdefinierte Validierungsregeln werden gesondert eingerichtet. |
+| **KI nutzen** | Fordert die KI-Extraktion für dieses Feld an oder beendet sie. Die Zeile zeigt an, ob die Extraktion angefordert ist. |
+| **OCR** | Geben Sie den OCR-Konfidenzschwellenwert des Feldes ein. Das ist eine Zahl, kein Ein/Aus-Schalter und keine Spracheinstellung. |
+| **Abgleichswert** | Geben Sie den Abgleichsschwellenwert des Feldes ein. Das ist eine Zahl, kein Ein/Aus-Schalter. |
 
-**Auswirkung:**
+Die Schieberegler **OCR** und **Abgleichswert** unter **Erkennungseinstellungen** wenden Werte auf die gesamte Feldliste an. Die Kontrollkästchen direkt unter den Spaltentiteln wenden **Erforderlich**, **Schreibgeschützt**, **Versteckt** oder **Validierung erzwingen** auf die gesamte Liste an. Prüfen Sie die betroffenen Zeilen, bevor Sie **Einstellungen speichern** wählen. **Standardwerte wiederherstellen** setzt die Feldkonfiguration zurück; verwenden Sie die Funktion nur, wenn Sie Ihre Änderungen ersetzen möchten.
 
-* Diese Einstellung stellt sicher, dass wichtige Informationen erfasst werden und keine Belege ohne die erforderlichen Daten verarbeitet werden können.
+## Weitere Steuerelemente in dieser Ansicht
 
-### Schreibgeschützt (Read Only):
+- **Neue Gruppe erstellen** und **Feld erstellen** fügen eine Gruppe oder ein Feld hinzu. Siehe [Felder hinzufügen und bearbeiten](adding-and-editing-fields.md).
+- **Stammdaten-Einstellungen** öffnet die [Stammdaten-Konfiguration](master-data-settings.md).
+- Die Kontrollkästchen ganz links wählen Felder aus. Das danebenliegende Menü bietet für die ausgewählten Felder **Feldgruppe neu zuordnen** an.
+- Die Plus-Schaltfläche **FORMEL** öffnet den Formel-Editor für das jeweilige Feld. Das **info**-Symbol zeigt Feldinformationen an. Das Löschen-Symbol ist für Standardfelder nicht verfügbar.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_prediction_test.png" alt="Docbits Model Prediction Test"><figcaption></figcaption></figure>
-
-Wenn ein Feld als schreibgeschützt markiert ist, bedeutet dies, dass Benutzer den Inhalt dieses Feldes sehen, aber keine Änderungen daran vornehmen können.
-
-**So legen Sie diese Eigenschaft fest:**
-
-* Gehen Sie zu den Feldoptionen. Aktivieren Sie die Option "Schreibgeschützt" für das gewünschte Feld.
-
-**Auswirkung:**
-
-* Diese Einstellung kann nützlich sein, um sensible Informationen zu schützen oder sicherzustellen, dass wichtige Daten nicht versehentlich geändert werden.
-
-### Ausgeblendet (Hidden):
-
-<figure><img src="../../../../../.gitbook/assets/docbits_classification_extraction_settings.png" alt="Docbits Classification Extraction Settings"><figcaption></figcaption></figure>
-
-Wenn ein Feld als "Ausgeblendet" markiert ist, bedeutet dies, dass das Feld in der Benutzeroberfläche ausgeblendet wird und Benutzer es nicht sehen oder darauf zugreifen können.
-
-**So legen Sie diese Eigenschaft fest:**
-
-* Gehen Sie zu den Feldoptionen.
-* Aktivieren Sie die Option "Ausgeblendet" für das entsprechende Feld.
-
-**Auswirkung:**
-
-* Diese Einstellung wird häufig verwendet, um interne oder technische Felder auszublenden, die für den Endbenutzer irrelevant sind oder nur für die interne Verarbeitung benötigt werden.
-
-### OCR (Optische Zeichenerkennung):
-
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
-
-Wenn ein Feld für OCR konfiguriert ist, bedeutet dies, dass das System versucht, den Text aus dem Beleg zu extrahieren und in dieses Feld einzufügen. Diese Einstellung wird normalerweise für Felder verwendet, die automatisch ausgefüllt werden sollen.
-
-**So richten Sie dies ein:**
-
-* Aktivieren Sie die OCR-Option für das entsprechende Feld.
-* Konfigurieren Sie bei Bedarf die OCR-Parameter wie Sprache, Schriftart usw.
-
-**Auswirkung:**
-
-* Die Verwendung von OCR ermöglicht die automatische Verarbeitung von Belegen, indem Informationen aus Texten extrahiert und in die entsprechenden Felder eingetragen werden, was den manuellen Aufwand reduziert und die Effizienz steigert.
-
-### Erzwungene Validierung (Forced validation):
-
-<figure><img src="../../../../../.gitbook/assets/docbits_sql_alter_table_syntax.png" alt="Docbits Sql Alter Table Syntax"><figcaption></figcaption></figure>
-
-Konfigurieren Sie die Validierungsregeln entsprechend, z. B. numerische Grenzwerte, reguläre Ausdrücke oder Beziehungen zu anderen Feldern.
-
-**So richten Sie dies ein:**
-
-* Speichern Sie die Änderungen.
-
-**Auswirkung:**
-
-* Die erzwungene Validierung prüft die eingegebenen Daten anhand der angegebenen Kriterien, um sicherzustellen, dass sie gültig sind. Dies hilft, Fehler frühzeitig zu erkennen und die Datenqualität zu verbessern.
-
-### Übereinstimmungswert (Match Score):
-
-<figure><img src="../../../../../.gitbook/assets/docbits_add_new_column_steps.png" alt="Docbits Add New Column Steps"><figcaption></figcaption></figure>
-
-Durch den Vergleich von Eingabedaten mit Referenzdaten kann der Match Score dazu beitragen, die Genauigkeit und Gültigkeit der Daten zu bestätigen. Wenn der Match Score einen bestimmten Schwellenwert überschreitet, gilt die Übereinstimmung als erfolgreich.
-
-**So richten Sie dies ein:**
-
-* Aktivieren Sie die Option "Match Score" und legen Sie den gewünschten Schwellenwert fest.
-* Speichern Sie die Änderungen.
-
-**Auswirkung:**
-
-* Der Match Score wird verwendet, um die Genauigkeit von Übereinstimmungen zwischen Eingabedaten und Referenzwerten zu bewerten. Wenn der erzielte Wert den festgelegten Schwellenwert überschreitet, gilt die Übereinstimmung als erfolgreich. Dies ist besonders nützlich für Felder, die eine Datenvalidierung oder einen Datenabgleich erfordern, wie z. B. Felder mit Name oder E-Mail-Adresse, z. B. bei der Überprüfung von Kundendaten.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_column_requirements_analysis.png" alt="Docbits Column Requirements Analysis" width="258"><figcaption></figcaption></figure>
-
-Durch die sorgfältige Konfiguration dieser Feldeigenschaften können Sie die Belegverarbeitungs-Workflows optimieren und sicherstellen, dass Ihre Daten korrekt erfasst, geschützt und effizient verarbeitet werden.
+Weitere Informationen zu Validierung und Abgleich finden Sie unter [Validierung und Match Score festlegen](setting-validation-and-match-score.md).

@@ -16,7 +16,7 @@ Het gebruik van filters stelt gebruikers in staat om snel relevante informatie t
 
 * Klik op het filterpictogram of het zoekveld.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_2.png)
+<figure><img src="../../../../.gitbook/assets/prior-u030-nl.png" alt="Documenten zoeken en snelfilters, met afgeschermde documentgegevens."><figcaption><p>Documenten zoeken en snelfilters, met afgeschermde documentgegevens.</p></figcaption></figure>
 
 ### Filters aanpassen
 
@@ -30,23 +30,23 @@ Het gebruik van filters stelt gebruikers in staat om snel relevante informatie t
 
 * Open het filtermenu in de instellingen onder Dashboard en klik op "Filters".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_3.png)
+<figure><img src="../../../../.gitbook/assets/prior-u015-nl.png" alt="Statusfilterstijl en aangepast dashboardfilter."><figcaption><p>Statusfilterstijl en aangepast dashboardfilter.</p></figcaption></figure>
 
 * Selecteer het veld dat gefilterd moet worden (bijv. Status).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Definieer de filtercriteria, bijv.: Status filterstijl.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Dropdownmenu's: Kies uit vooraf gedefinieerde opties.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_6.png)
+
 
 * Sla de aangepaste filter op door op "Toepassen" te klikken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_7.png)
+
 
 #### **Gebruik gecombineerde filters**
 
@@ -66,10 +66,10 @@ Het gebruik van filters stelt gebruikers in staat om snel relevante informatie t
 * Open het Filters-menu.
 * Stap 2: Wis of verwijder de toegepaste filters door op "Filters wissen" te klikken, het X-pictogram naast de geselecteerde filter, hetzij in het Filters-menu of onder de Filters-balk.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_8.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
+
+
+
 
 * De gegevens worden opnieuw weergegeven zonder de vorige filtercriteria.

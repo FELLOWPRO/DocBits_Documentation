@@ -1,27 +1,36 @@
-# Documentflow
+# Documentstroom
 
-**Documentflow** toont de verwerkingsstappen van één document. Zo ziet u welke stappen zijn voltooid, welke stap wacht en hoe lang de verwerking heeft geduurd. Het voorbeeld hieronder gebruikt een synthetische factuur in de Engelse Sandbox.
+De documentstroom toont volgorde, status en duur van de verwerkingsfasen. Het voorbeeld gebruikt een fictieve factuur.
 
-## Openen vanaf het dashboard
+## De documentstroom openen
 
-Zoek in het [Dashboard](../dashboard/) het document. Kies in de kolom **Acties** de drie puntjes en vervolgens **Documentstroom**. Deze optie opent de flow van dat document; het document zelf verandert niet.
+Zoek het document in het dashboard. Documentwaarden zijn afgeschermd.
 
-<figure><img src="../../../.gitbook/assets/document-flow-dashboard-menu-nl-20261008.png" alt="Nederlands dashboard met het geopende Acties-menu van een synthetische factuur; Documentstroom staat onder Toewijzen aan."><figcaption>Kies Documentstroom in het Acties-menu van het document.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-nl.png" alt="Het fictieve document zoeken in het dashboard; waarden zijn afgeschermd."><figcaption><p>Het fictieve document zoeken in het dashboard; waarden zijn afgeschermd.</p></figcaption></figure>
 
-## Openen vanaf de Veldvalidatie
+Open de veldvalidatie en het optiemenu in de rechterwerkbalk om de documentstroom te bekijken.
 
-Open het document. Kies in het [Validatiescherm](../validation-screen/) de drie puntjes in de actiebalk rechts en vervolgens onder **Meer opties** **Documentstroom**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-nl.png" alt="Validatiemenu om de documentstroom te openen."><figcaption><p>Validatiemenu om de documentstroom te openen.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-validation-menu-nl-20261008.png" alt="Nederlands Veldvalidatie-scherm met het menu Meer opties en de optie Documentstroom naast een synthetische factuur."><figcaption>Dezelfde flow is bereikbaar vanuit de documentweergave.</figcaption></figure>
+## De fasen lezen
 
-## De flow lezen
+Elke kaart vertegenwoordigt een fase, zoals import, OCR, classificatie of veldextractie. Volg de nummering.
 
-De **Process Statistics** links vat het aantal stappen samen, voltooide en wachtende stappen, herstarts, de totale tijd, de huidige status en de totale voortgang. Elke genummerde kaart toont een verwerkingsstap en de huidige staat ervan. Scroll naar beneden om latere stappen te zien.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-nl.png" alt="Verwerkingsfasen van een fictieve factuur; technische codes blijven ongewijzigd."><figcaption><p>Verwerkingsfasen van een fictieve factuur; technische codes blijven ongewijzigd.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document-flow-overview-nl-20261008.png" alt="Nederlandse Documentflow met Process Statistics links en de eerste genummerde stapkaarten: GEÏMPORTEERD, OCR_COMPLETED en GECLASSIFICEERD."><figcaption>De eerste stappen in de flow van een synthetische factuur.</figcaption></figure>
+Technische codes zoals DOCUMENT_IMPORTED en COMPLETE blijven ongewijzigd. COMPLETE betekent dat een fase is voltooid.
 
-<figure><img src="../../../.gitbook/assets/document-flow-later-steps-nl-20261008.png" alt="Nederlandse Documentflow na het scrollen; verdere kaarten zijn FIELDS_EXTRACTED, TABLES_EXTRACTED, TRANSFORMED, METADATA_POPULATED, LOOKUP_COMPLETED en wachten op validatie."><figcaption>Scroll om de volgorde tot de latere stappen te volgen.</figcaption></figure>
+## Details bekijken
 
-Kies een stapkaart om **Step Details** links te openen. Deze tonen de module en de status ervan. Rechts kan ook een paneel **Task Logs** openen; de logdetails hangen af van wat voor die taak beschikbaar is. Kies in Step Details het **×** om het paneel te sluiten.
+Selecteer een kaart om de beschikbare details en logboeken te bekijken.
 
-<figure><img src="../../../.gitbook/assets/document-flow-step-details-nl-20261008.png" alt="Nederlandse Documentflow met de geselecteerde OCR-kaart; Step Details onder Process Statistics toont de module ocr_completed en de status Completed."><figcaption>Step Details legt de status van de gekozen module uit.</figcaption></figure>
+| Detail | Betekenis |
+| --- | --- |
+| Module | Verwerkingscomponent van de fase |
+| Status | Huidige status van de fase |
+| Duur | Vastgelegde verwerkingstijd |
+| Logboeken | Beschikbare technische meldingen |
+
+Onderzoek meldingen van een wachtende of mislukte fase voordat u de verwerking opnieuw start. Sommige diagnostische titels kunnen in het product Engelstalig blijven.
+
+De details van een fase tonen de verwerkingscomponent, status, duur en beschikbare technische logboeken.

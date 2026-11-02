@@ -1,59 +1,33 @@
-# Script Activation and Management
+# Scripts activeren en beheren
 
-## Here is a guide on how to enable, disable and manage existing scripts in DocBits to suit your current processing needs:
+## Videohandleiding: scripts beheren
 
-**Logging into DocBits:**
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v4/nl.mp4" %}
+De scripts van een documenttype beheren
+{% endembed %}
 
-* Open your web browser and log into DocBits with your credentials.
+De video toont de scriptlijst met filter en sortering, activeren en deactiveren, kopiëren, de versiegeschiedenis en verwijderen met bevestiging.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_management_nav.png" alt="Docbits Script Management Nav"><figcaption></figcaption></figure>
+Open het documenttype en het bijbehorende scriptbeheer. De lijst toont scripts en acties voor bewerken, kopiëren en status. Namen zijn in het voorbeeld afgeschermd.
 
-**Navigate to Script Management:**
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon-nl.png" alt="Scriptbeheer en bewerkingsacties; namen zijn afgeschermd."><figcaption><p>Scriptbeheer en bewerkingsacties; namen zijn afgeschermd.</p></figcaption></figure>
 
-* Look for the option to manage scripts in the DocBits interface.
-* This may vary depending on your setup and configuration of DocBits.
+Filter op status of zoek het bedoelde script voordat u het opent. Controleer documenttype, uitvoeringsmoment en code voordat u opslaat.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_view_existing_scripts.png" alt="Docbits View Existing Scripts"><figcaption></figcaption></figure>
+De lijst staat standaard op uitvoeringsvolgorde; met de sorteerknoppen schakelt u naar naam (A-Z / Z-A) of naar de wijzigingsdatum. Elke kaart toont de uitvoeringsvolgorde als genummerd label naast de naam van het script.
 
-**Viewing existing scripts:**
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list-nl.png" alt="Scriptlijst gesorteerd op uitvoeringsvolgorde; elke kaart toont naast de naam een genummerd label met de uitvoeringsvolgorde"><figcaption><p>Het genummerde label op elke kaart is de uitvoeringsvolgorde van het script.</p></figcaption></figure>
 
-* Once you are in the script management interface, you will see a list of all existing scripts.
-* Here you can scroll through the list to find the desired script you want to enable, disable or edit.
+## Uitvoeringsvolgorde instellen
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_list_enable_disable.png" alt="Docbits Script List Enable Disable"><figcaption></figcaption></figure>
+Met het veld **Execution order** bepaalt u in welke volgorde scripts lopen: lagere nummers lopen eerst. Het veld blijft ook in de Nederlandse interface Engels gelabeld.
 
-**Enabling or disabling a script:**
+1. Open het script in de editor.
+2. Vul in het veld **Execution order** een heel getal vanaf 0 in. Laat het veld leeg om 0 te behouden.
+3. Sla het script op. Letters, decimalen en negatieve getallen worden met een foutmelding bij het veld geweigerd en er wordt niets opgeslagen.
 
-* To enable or disable a script, find the relevant script in the list and enable or disable the script.
-* Make sure to save changes after making your selections.
+Als u de uitvoeringsvolgorde wijzigt en daarna een versie activeert, slaat DocBits eerst het script op en activeert de versie pas als dat opslaan is gelukt.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_save_script_changes.png" alt="Docbits Save Script Changes"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor-nl.png" alt="Scripteditor met het veld Execution order rechts van de keuze van het uitvoeringsmoment"><figcaption><p>De uitvoeringsvolgorde in de scripteditor.</p></figcaption></figure>
 
-**Editing a script:**
-
-* If you need to edit an existing script, look for the button in the script management interface that allows editing the script.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_edit_script_icon.png" alt="Docbits Edit Script Icon" width="123"><figcaption></figcaption></figure>
-
-* Click it to open the editor where you can modify the script's code.
-* After making your changes, save the script again.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2"><figcaption></figcaption></figure>
-
-**Review and test:**
-
-* Before making changes to a script, carefully review the existing code and consider what impact your changes might have.
-* Test the script in a test environment to make sure it works as expected.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment"><figcaption></figcaption></figure>
-
-**Documentation:**
-
-* Don't forget to document your changes.
-* Write down what changes you made and why so that other users on the team can understand how the script works and what impact your changes might have.
-
-**Publishing changes:**
-
-* When you are satisfied with your changes, republish the script to the DocBits production environment for the updated version to take effect.
-
-These steps allow you to enable, disable and manage existing scripts in DocBits to adapt them to current processing needs and ensure that your documentation processes run efficiently and correctly.
+De beschikbare acties hangen af van uw rechten. Test bedoelde wijzigingen met representatieve documenten voordat u ze in een echte workflow gebruikt.

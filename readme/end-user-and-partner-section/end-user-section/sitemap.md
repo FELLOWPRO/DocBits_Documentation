@@ -6,7 +6,7 @@ De Sitemap is de complete, doorzoekbare index van alles wat DocBits biedt — el
 
 Open de Sitemap vanuit de zijbalk (vermelding nabij de onderkant) of druk op <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> en kies **Alle resultaten bekijken**. De directe URL is `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Sitemap overzicht"><figcaption><p>Sitemap met categorieoverzicht en zoekkop.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-nl.png" alt="Paginacatalogus in de geselecteerde interfacetaal. Enkele vaste filters en aanduidingen kunnen in de afgebeelde versie nog Engels zijn."><figcaption><p>Paginacatalogus in de geselecteerde interfacetaal. Enkele vaste filters en aanduidingen kunnen in de afgebeelde versie nog Engels zijn.</p></figcaption></figure>
 
 ## Door de catalogus bladeren
 
@@ -20,6 +20,14 @@ Vermeldingen zijn gekleurd op type:
 * **Actie** — een knop of sneltoets die iets uitvoert zonder te navigeren.
 
 Klik op een willekeurige vermelding om er direct heen te springen. Vermeldingen die een parameter nodig hebben (zoals een documenttype of document-ID) bevatten een inline-selector — kies de waarde voordat u klikt.
+
+## Trainingsvideo's in de lijst
+
+Items van pagina's met een trainingsvideo tonen een video-pictogram achter de naam — niet alleen in Instellingen, maar overal in de catalogus, bijvoorbeeld op het Dashboard, bij Veldvalidatie of op de workflowpagina's. Kies het pictogram om de video van die pagina in het paneel **Video's en tutorials** af te spelen zonder de sitemap te verlaten.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-nl.png" alt="Sitemap met video-pictogrammen naast meerdere items en het paneel Video's en tutorials geopend op de video over veldvalidatie"><figcaption><p>Items met een trainingsvideo hebben een video-pictogram; een klik opent de video in het paneel.</p></figcaption></figure>
+
+Het paneel blijft elke video per onderwerp tonen, dus u kunt de hele bibliotheek ook via het pictogram in de bovenbalk doorbladeren en doorzoeken. Zie [Video's en tutorials](videos-and-tutorials.md).
 
 ## Zoeken en filteren
 

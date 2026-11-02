@@ -1,6 +1,6 @@
 # Order Data in Order Confirmation
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-00-de-20261023.png" alt="Mit Bestellung vergleichen Bestellungsdaten in der Bestellbestätigung Operator der Bestellung. Schreibe Text in das Feld Feld Name bei Bedingungsergebnis Ergebnis der Bedingung" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 

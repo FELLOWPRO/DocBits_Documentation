@@ -1,0 +1,15 @@
+{
+  "name": "DocBits Documentation",
+  "visibility": "selected",
+  "selected_repository_ids": [
+    651575238
+  ],
+  "allows_public_repositories": true,
+  "restricted_to_workflows": true,
+  "selected_workflows": [
+    "FELLOWPRO/DocBits_Documentation/.github/workflows/docs-search-sync.yml@refs/heads/main",
+    "FELLOWPRO/DocBits_Documentation/.github/workflows/docs-search-rebuild.yml@refs/heads/main",
+    "FELLOWPRO/DocBits_Documentation/.github/workflows/sync-language-folders.yml@refs/heads/main",
+    "FELLOWPRO/DocBits_Documentation/.github/workflows/docs-search-sync.yml@refs/heads/de"
+  ]
+}

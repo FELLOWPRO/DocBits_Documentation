@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User in Document Field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-02-es-20261023.png" alt="Tarea Crear una nueva Tarea/Notificación con el título: Título , description: Descripción , de prioridad Prioridad , y asígnala al usuario en el campo de documento Nombre del campo . Notificar al grupo por correo electrónico Enviar correo electrónico . Utilice Usuario como alternativa." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

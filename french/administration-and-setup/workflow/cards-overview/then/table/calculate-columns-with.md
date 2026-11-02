@@ -1,6 +1,6 @@
 # Calculate Columns with
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-table-00-fr-20261023.png" alt="Tableau Dans le tableau: Nom de la table , calculer les colonnes avec: Nom de la colonne Opérateur mathématique Nom de la colonne = Colonne de résultats" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

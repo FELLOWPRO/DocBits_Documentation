@@ -1,6 +1,6 @@
 # Alors
 
-Une carte **Alors** indique à un flux de travail quoi faire après son déclencheur **Quand** et toutes les conditions **Et**. Dans **Générateur de flux de travail**, sélectionnez **Ajouter une carte** sous **Puis...**. Choisissez une catégorie sur la gauche ou tapez un nom dans **Carte de recherche**. Sélectionnez un aperçu de la carte pour l'ajouter, remplissez les champs affichés sur la carte et enregistrez le flux de travail. Faites défiler le sélecteur pour voir plus de cartes. Sélectionnez **×** pour le fermer sans ajouter de carte. Voir [Workflow](..) pour la séquence complète.
+Une carte **Alors** indique à un flux de travail quoi faire après son déclencheur **Quand** et toutes les conditions **Et**. Dans **Générateur de flux de travail**, sélectionnez **Ajouter une carte** sous **Dans ce cas...**. Choisissez une catégorie sur la gauche ou tapez un nom dans **Carte de recherche**. Sélectionnez un aperçu de la carte pour l'ajouter, remplissez les champs affichés sur la carte et enregistrez le flux de travail. Faites défiler le sélecteur pour voir plus de cartes. Sélectionnez **×** pour le fermer sans ajouter de carte. Voir [Workflow](..) pour la séquence complète.
 
 Les aperçus ci-dessous montrent les actions disponibles, et non les paramètres terminés. Choisissez l'action qui correspond au résultat souhaité.
 
@@ -24,7 +24,7 @@ Utilisez ces cartes pour convertir des valeurs entre les formats numérique, tex
 
 ## Statut
 
-Choisissez **Change Status** pour déplacer le document vers un statut sélectionné. La carte peut également déclencher un autre flux de travail. Voir [Statut](status).
+Choisissez **Modifier le statut en** pour déplacer le document vers un statut sélectionné. La carte peut également déclencher un autre flux de travail. Voir [Statut](status).
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 

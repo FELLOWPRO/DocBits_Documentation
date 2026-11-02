@@ -1,6 +1,6 @@
 # Document Status Condition List
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="521"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-status-01-it-20261023.png" alt="Stato Stato del documento Operatore in Stato" width="521"><figcaption></figcaption></figure>
 
 **Scopo**
 

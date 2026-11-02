@@ -1,6 +1,8 @@
 # La tabla de decisiones devuelve resultados
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3db6e383828c-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v2-es-es.png" alt="La tabla de decisiones devuelve resultados, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-es-es.png" alt="La tabla de decisiones devuelve resultados, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 

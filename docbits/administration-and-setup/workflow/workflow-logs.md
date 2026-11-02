@@ -16,7 +16,7 @@ To access workflow logs:
    * <mark style="color:red;">**Note**</mark>: The Workflow feature must be enabled to access this option.
 4.  A **side panel** opens showing a summary of executed workflows.\\
 
-    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="Dashboard with the workflow logs side panel showing summary counters and a table of executed workflows with result icons" width="563"><figcaption></figcaption></figure></div>
 
 ## **Components of the Workflow Logs Panel**
 
@@ -43,7 +43,7 @@ Each row in the table represents one workflow execution and includes:
 
 Clicking the **arrow** on the left of each row expands the **workflow detail view**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Expanded workflow log row showing When and And condition cards with green checks and a grayed card that was not met, plus card logs" width="563"><figcaption></figcaption></figure></div>
 
 ### **Workflow Detail View**
 

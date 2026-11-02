@@ -1,6 +1,6 @@
 # Change Status to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-status-00-it-20261023.png" alt="Stato Cambiare lo stato in Stato , attivare i flussi di lavoro Attivare i flussi di lavoro ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

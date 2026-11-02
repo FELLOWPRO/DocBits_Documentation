@@ -1,6 +1,6 @@
 # Today
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-date-time-01-nl-20261023.png" alt="Datum en tijd Vandaag Operator Datum" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

@@ -72,7 +72,7 @@
 
 从工作流区域（高级构建器画布）打开高级工作流设计器。你可以从 **开始** 节点开始，通过添加节点逐步构建流程。
 
-<figure><img src="../../../.gitbook/assets/workflow_advanced_canvas.png" alt="包含工具栏的高级工作流节点图画布"><figcaption><p>高级工作流画布——包含缩放、运行、网格和保存控件的节点图。请在工具栏中为工作流命名。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Duplicate obsolete English canvas retired; the already-present approved Chinese U034 canvas/Add-menu image is preserved on this page. -->
 
 ## 添加节点
 

@@ -1,6 +1,8 @@
 # Date de livraison promise des lignes : comparaison avec le bon de commande
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2-fr-fr.png" alt="Date de livraison promise des lignes : comparaison avec le bon de commande, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+Le calcul de la fenêtre de tolérance, avec des exemples tels que « aujourd'hui ou demain », est expliqué sur la page [Date Tolerances](../../date-tolerances.md).
 
 ## Objectif :
 

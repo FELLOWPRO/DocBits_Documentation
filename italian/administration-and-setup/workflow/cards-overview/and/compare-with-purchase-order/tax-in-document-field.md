@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-04-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto L&#x27;imposta nel campo del documento Nome del campo è Operatore all&#x27;imposta nell&#x27;ordine di acquisto con l&#x27;id di addebito nella tabella Tabella dati anagrafici with tolerances Tolleranza Importo Tipo di tolleranza ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

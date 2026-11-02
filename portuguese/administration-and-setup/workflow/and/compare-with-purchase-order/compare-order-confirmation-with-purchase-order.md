@@ -1,8 +1,12 @@
 # Compare a confirmação do pedido com o pedido de compra
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4bbb1060027b-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1-pt-pt.png" alt="Compare a confirmação do pedido com o pedido de compra, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d49578e0648e-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2-pt-pt.png" alt="Compare a confirmação do pedido com o pedido de compra, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3-pt-pt.png" alt="Compare a confirmação do pedido com o pedido de compra, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4-pt-pt.png" alt="Compare a confirmação do pedido com o pedido de compra, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
 
 ## Objetivo:
 

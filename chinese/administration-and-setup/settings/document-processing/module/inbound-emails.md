@@ -1,5 +1,12 @@
 # 入站电子邮件
 
+## 从邮件接收到可供审核的单据
+
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-zh-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-zh-light-20261029.png" alt="从邮件接收到可供审核的单据"></picture><figcaption><p>从邮件接收到可供审核的单据</p></figcaption></figure>
+
+图中展示两种导入方式：连接邮箱，或将邮件转发到 DocBits 导入地址。系统导入受支持的单据附件。请检查发件人限制、组织和路由设置，并确认单据实际导入成功。邮件发送成功并不代表单据已经导入。
+
+
 ### 概述
 
 DocBits 可以直接从电子邮件获取文档，无需手动上传。导入电子邮件文档有 **两种方式**，均在 **Settings → Document Processing → Import** 中管理：

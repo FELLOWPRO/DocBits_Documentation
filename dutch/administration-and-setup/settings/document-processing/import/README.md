@@ -175,3 +175,32 @@ U kunt het importlogboek van alle gemaakte e-mailverbindingen bekijken, inclusie
 <figure><img src="../../../../.gitbook/assets/email_8_nl.png" alt=""><figcaption></figcaption></figure>
 
 U kunt de logboeken filteren op onderwerp of afzender, kolommen sorteren in oplopende of aflopende volgorde door op de kolomkoppen te klikken, en kolommen herschikken met slepen en neerzetten.
+
+
+## Videohandleiding: Inbox en gericht fouten zoeken
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/nl.mp4" %}
+Inbox en gericht fouten zoeken
+{% endembed %}
+
+[Bekijken met ondertiteling en hoofdstukken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/nl.html)
+
+Sommige oorspronkelijke productlabels kunnen in een andere taal staan. Technische veld-ID’s blijven behouden.
+
+Onder instellingen en import gebruik ik in dit voorbeeld het inkomende DocBits-adres. Een direct gekoppelde mailbox is een aparte importmethode. Voor de training werk ik in een eigen demo-organisatie met synthetische facturen. Meldingen blijven uitgeschakeld.
+
+Eerst controleer ik het weergegeven ontvangstadres en het bereik. Het adres hoort precies bij deze organisatie en haar omgeving. Voor een ander bedrijf of een productieomgeving gebruik ik altijd het adres dat daar daadwerkelijk wordt weergegeven.
+
+Hier beperk ik de inkomende post tot onze goedgekeurde testafzender. Ik selecteer de toewijzing aan een suborganisatie alleen als deze bij het beoogde proces hoort. Ik sla de instelling op en open deze opnieuw. De toegestane afzender is behouden; automatische antwoordmails blijven in deze training uitgeschakeld.
+
+<figure><img src="../../../../.gitbook/assets/admin-save-nl-accounting-email-v2.png" alt="Toegestane afzender opgeslagen met meldingen uitgeschakeld"><figcaption><p>Toegestane afzender opgeslagen met meldingen uitgeschakeld</p></figcaption></figure>
+
+Voor deze training is een testbericht rechtstreeks aan de verwerking van inkomende e-mail in DocBits aangeboden. Deze test bevestigt geen externe e-mailbezorging. In het logboek controleer ik het onderwerp, de afzender en de geïmporteerde bijlage. Daarna controleer ik het document dat daadwerkelijk is aangemaakt.
+
+Ik open het bijbehorende document en vergelijk de PDF-bijlage met de factuur in DocBits. Bestandsnaam, factuurnummer, leverancier en bedrag moeten overeenkomen. Een succesvolle import zegt niets over een goedkeuring of een ERP-boeking.
+
+Ik test ook een afzender die niet is toegestaan. In het logboek zoek ik specifiek naar deze invoer en activeer ik het foutenfilter. De details noemen de afgewezen afzender.
+
+In een echt geval zoek ik eerst uit of deze afzender überhaupt bevoegd is. Een goedgekeurde wijziging in de afzenderlijst wordt opgeslagen en opnieuw gecontroleerd. Daarna verifieer ik een nieuwe unieke testinvoer tot aan het aangemaakte document. Voor technische fouten geef ik de trace-ID en de concrete foutmelding door.
+
+<figure><img src="../../../../.gitbook/assets/admin-error-nl-accounting-email-v2.png" alt="Mislukte import met bijlage, reden en trace-ID"><figcaption><p>Mislukte import met bijlage, reden en trace-ID</p></figcaption></figure>

@@ -1,6 +1,6 @@
 # Run Workflow
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-action-01-it-20261023.png" alt="Azione Eseguire il flusso di lavoro Flusso di lavoro" width="563"><figcaption></figcaption></figure>
 
 ## Scopo:
 

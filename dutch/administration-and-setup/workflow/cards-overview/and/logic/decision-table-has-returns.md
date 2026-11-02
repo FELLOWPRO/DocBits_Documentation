@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-04-nl-20261023.png" alt="Logica Beslissingstabel Beslissingstabel bevat resultaten voor het document of de leveranciersorganisatie. Bewaren heeft gegevens geretourneerd voor gebruik in volgende kaarten." width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

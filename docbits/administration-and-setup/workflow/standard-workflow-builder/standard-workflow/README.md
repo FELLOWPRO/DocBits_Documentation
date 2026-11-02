@@ -1,6 +1,6 @@
 # Workflow Examples
 
-<figure><img src="../../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1).svg" alt="Accounts payable workflow flowchart from invoice email through finance review, split into non-PO approval and PO matching paths, ending in Infor IDM and LN"><figcaption></figcaption></figure>
 
 #### Overview of Workflow Components:
 

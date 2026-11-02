@@ -10,6 +10,6 @@ Als groeperen beschikbaar is, kiest u boven de tabel een groepeerveld. Kies bij 
 
 Met **+** naast de documenttypetabbladen toont u andere typen. Versleep de tabbladen om ze te ordenen. Een tabblad verwijderen wijzigt alleen de weergave en verwijdert geen documenten.
 
-Open het tandwiel en de kolominstellingen. Verplaats kolommen tussen de verborgen en zichtbare lijst en versleep zichtbare kolommen om ze te ordenen. U kunt ook velden van een documenttype toevoegen. Zie [Documentkolommen wijzigen](change-document-columns.md).
+Open het tandwiel **Geavanceerde instellingen** rechts van de zoekbalk en daarin de knop **Kolommeninstellingen**. Verplaats kolommen tussen de verborgen en zichtbare lijst en versleep zichtbare kolommen om ze te ordenen. U kunt ook velden van een documenttype toevoegen. Zie [Documentkolommen wijzigen](change-document-columns.md).
 
 De [dashboardhandleiding](README.md) beschrijft zoeken, documentacties en opgeslagen weergaven.

@@ -1,6 +1,8 @@
 # Vérifier la présence et le contenu d’un champ
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-fieldstatus-fr-current-20261022.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1-fr-fr.png" alt="Vérifier la présence et le contenu d’un champ, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-fr-fr.png" alt="Vérifier la présence et le contenu d’un champ, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Quand l’utiliser
 
@@ -31,10 +33,10 @@ Ces exemples présentent les résultats attendus. Pour vérifier la validité du
 
 ## Vidéo d’exemple avec un administrateur
 
-Quand j’utilise cette carte, où la trouver et comment repérer les numéros de facture manquants. L’administrateur, le bureau et la voix sont synthétiques ; la démonstration présente la véritable interface DocBits d’un compte de test. Les exemples présentent les résultats attendus.
+Quand j’utilise cette carte, où la trouver et comment repérer les numéros de facture manquants. Les exemples présentent les résultats attendus.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.mp4" %}
 
-[Ouvrir la vidéo avec les sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.html)
+[Ouvrir la vidéo avec les sous-titres français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr-theme-v4.html)
 
 [Lire la transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/fr.txt)

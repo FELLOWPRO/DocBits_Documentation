@@ -46,4 +46,4 @@ This document outlines the workflow for ordering materials from suppliers, recei
 * Ensure all documents are verified and archived for record-keeping.
 * Discrepancies in order or invoice details must be resolved promptly to avoid delays.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed.svg" alt="Swimlane process diagram of ordering materials from suppliers across Purchasing-INFOR, DocBits, IDM and Supplier lanes"><figcaption></figcaption></figure>

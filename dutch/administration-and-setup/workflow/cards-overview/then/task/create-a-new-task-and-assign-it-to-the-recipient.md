@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-00-nl-20261023.png" alt="Taak Maak een taak met de titel: Titel , beschrijving: Beschrijving van prioriteit Prioriteit en wijs deze toe aan Ontvanger . Stuur een e-mail naar E-mail verzenden . Gebruik Gebruiker als terugvaloptie als de ontvanger niet is gevonden." width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

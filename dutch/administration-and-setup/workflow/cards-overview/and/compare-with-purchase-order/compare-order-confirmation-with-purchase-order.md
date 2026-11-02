@@ -1,8 +1,8 @@
 # Compare Order Confirmation with Purchase order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-02-nl-20261023.png" alt="Vergelijk met inkooporder Elk/Alle Bestelgegevens in orderbevestiging Operator inkooporder. Vergelijk met Vergelijkingsgegevens ." width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-02-nl-20261023.png" alt="Vergelijk met inkooporder Elk/Alle Bestelgegevens in orderbevestiging Operator inkooporder. Vergelijk met Vergelijkingsgegevens ." width="563"><figcaption></figcaption></figure>
 
 ## Doel:
 

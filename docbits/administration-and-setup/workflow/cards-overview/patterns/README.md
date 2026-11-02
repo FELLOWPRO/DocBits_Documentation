@@ -18,7 +18,13 @@ Workflow patterns are proven, reusable solutions to common documentation process
 
 Every pattern on this page is assembled in the **Workflow Builder**. You reach it from **Workflow Dashboard → Workflow List → Add Workflow** (or by opening an existing workflow). The dashboard gives you the run history and success/fail rates for all of your workflows:
 
-<figure><img src="../../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard showing run totals, success and fail rates, the workflow-runs chart and recent activity"><figcaption><p>The Workflow Dashboard — run totals, success/fail rates and recent activity for every workflow.</p></figcaption></figure>
+The partial views below show volume metrics, run outcomes and the runs chart. Recent activity and navigation controls are outside these crops.
+
+<figure><img src="../../../../.gitbook/assets/workflow-kpi-volume-current-en.png" alt="Volume metrics: workflows executed today, workflows created during the selected period, and total runs."><figcaption><p>Volume metrics: workflows executed today, workflows created during the selected period, and total runs.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-kpi-outcomes-current-en.png" alt="Run outcomes: successful runs, success rate and fail rate, including the displayed run-count context."><figcaption><p>Run outcomes: successful runs, success rate and fail rate, including the displayed run-count context.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow-chart-current-en.png" alt="Workflow runs over the seven displayed months, with Success and Failed series shown separately."><figcaption><p>Workflow runs over the seven displayed months, with Success and Failed series shown separately.</p></figcaption></figure>
 
 The **Workflow List** tab lists every workflow with its type, execution order and trigger. Use **Add Workflow** to create a new one, or click a workflow to open it in the builder:
 

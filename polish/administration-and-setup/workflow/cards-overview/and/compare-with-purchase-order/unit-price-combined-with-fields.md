@@ -1,6 +1,6 @@
 # Unit Price Combined with Fields
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-06-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Cena jednostkowa połączona z polami Nazwa pola wynosi Operator Wartość" width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

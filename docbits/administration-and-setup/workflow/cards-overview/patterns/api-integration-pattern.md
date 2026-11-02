@@ -1,6 +1,6 @@
 # API Integration Pattern
 
-<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="Action card Call Api with API endpoint, method, parameters and data placeholders" width="563"><figcaption></figcaption></figure>
 
 <!-- workflow-card-api-pattern-contract-20261022 -->
 

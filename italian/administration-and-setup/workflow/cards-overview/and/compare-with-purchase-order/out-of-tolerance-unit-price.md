@@ -1,6 +1,6 @@
 # Out of Tolerance Unit Price
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-10-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto I prezzi unitari fuori tolleranza combinati con i campi Nome del campo sono Operatore Valore" width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

@@ -91,7 +91,7 @@
 * Una vez que todos los nodos estén agregados y configurados, haga clic en **Save**.
 * Active el flujo para completar la configuración.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+<figure><img src="../../../.gitbook/assets/m3-historical-ion-activation-example.png" alt="Ejemplo histórico de Infor ION en inglés: la flecha señala el icono de activación de un flujo de demostración. La imagen no acredita una exportación realizada."><figcaption><p>Ejemplo histórico de Infor ION en inglés: la flecha señala el icono de activación de un flujo de demostración. La imagen no acredita una exportación realizada.</p></figcaption></figure>
 
 ## Paso 4: Configurar Export en DocBits
 

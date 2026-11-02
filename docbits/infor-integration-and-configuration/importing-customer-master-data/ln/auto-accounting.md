@@ -1,5 +1,22 @@
 # Auto Accounting
 
+## From the LN master data record to the checked account assignment
+
+<figure><img src="../../../.gitbook/assets/process-accounting-en-20261028.png" alt="Financial master data for Auto Accounting: Data path and checkpoints for an Infor LN integration."><figcaption><p>Data path and checkpoints for an Infor LN integration. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+
+This guide covers the supply of financial master data for an LN integration. Selecting **LN** or enabling **Auto Accounting** does not replace supplying the data or checking the account assignment result.
+
+| Handover | What you should prove |
+| --- | --- |
+| **LN → BOD publication** | Correct company and required account or dimension data; First count or simulate the selection. |
+| **BOD → ION** | Matching document version, source, filters and mapping; trace the test identifier in ION OneView. |
+| **ION → DocBits** | Receiving endpoint response, correct organization and accepted record. An activated flow alone is not enough. |
+| **DocBits → Account assignment result** | After approved activation, use representative test documents to check that the accounts and dimensions are correct for the business process. |
+
+**Traceability example:** Use a non-sensitive test identifier from an approved test dataset. Find the same identifier in the source BOD, in ION and in the DocBits reception logs. This helps locate a missing mapping at a specific handover instead of repeatedly changing the switch.
+
+The subsequent export and ERP posting must be verified separately. The existing images in this guide show the DocBits controls; they do not prove that an LN transfer was performed. The following section describes preparation and end-to-end verification by the responsible administrators. For the technical handover, see [Export from DocBits](../../exporting-in-docbits/README.md).
+
 Use this guide when an Infor LN administrator wants DocBits to use imported financial master data for auto accounting. The old page showed 48 screens from a particular Infor tenant. Connection-point names, mappings, credentials and endpoint addresses from that tenant are not a reusable configuration.
 
 ## Find the setting in DocBits

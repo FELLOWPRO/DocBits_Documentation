@@ -1,6 +1,8 @@
 # Alterar entradas com
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2186644bde72-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_edit_column_v1-pt-pt.png" alt="Alterar entradas com, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_edit_column_v2-pt-pt.png" alt="Alterar entradas com, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 

@@ -1,49 +1,59 @@
 # Analítica
 
-<figure><img src="../../../.gitbook/assets/analytics-settings-overview-es-20261012.png" alt="Analítica en la Sandbox en español con View Event Logs, cuatro pestañas, intervalo de tiempo, filtros de gravedad y de servicio, y cuatro tarjetas de resumen"><figcaption><p>Utilice las pestañas y los filtros para acotar las métricas que desea consultar.</p></figcaption></figure>
+Abra **Ajustes → Registro de Actividad → Analítica** con una cuenta de administrador de la organización. Esta página reúne la actividad de los registros, los eventos de autenticación, el uso de la API y una vista ejecutiva. Empiece por **Análisis de registros**. Seleccione **Ver registros de eventos** para abrir la lista de eventos e investigar una entrada concreta.
 
-La página Analítica le ayuda a examinar patrones de registro, eventos de autenticación, uso de la API y una vista general para la dirección. Empiece por **Logs Analytics**. Seleccione **View Event Logs** para abrir la lista de eventos subyacente cuando necesite investigar una entrada concreta.
+<figure><img src="../../../.gitbook/assets/dbdc-13-analytics-overview-es-20261030-final.png" alt="Vista actual de Analítica en Dev en español con cuatro pestañas, filtros de tiempo, gravedad y servicio, y cuatro tarjetas de resumen"><figcaption><p>Vista actual de Dev en español. Los contadores pertenecen al entorno de pruebas y serán distintos en su organización.</p></figcaption></figure>
 
 ## Pestañas
 
 | Pestaña | Descripción |
 |---------|-------------|
-| **Logs Analytics** | Distribución de la gravedad de los registros, gráficos de evolución temporal y desglose por servicio. |
-| **Auth Security** | Eventos de autenticación, intentos de inicio de sesión y métricas de seguridad. |
-| **API Metrics** | Volumen de solicitudes a la API, tiempos de respuesta y tasas de error. |
-| **Executive Dashboard** | Vista general de alto nivel para administradores de la organización; es posible que otros roles no vean esta pestaña. |
+| **Análisis de registros** | Distribución de la gravedad de los registros, evolución temporal y desglose por servicio. |
+| **Seguridad de autenticación** | Eventos de autenticación, intentos de inicio de sesión y métricas de seguridad. |
+| **Métricas de API** | Volumen de solicitudes a la API, tiempos de respuesta y tasas de error. |
+| **Panel de control ejecutivo** | Vista general para administradores de la organización; su disponibilidad depende del rol. |
 
-## Filtros
+Cada pestaña tiene sus propios controles de periodo. Compruebe de nuevo el periodo seleccionado al cambiar de pestaña.
+
+## Filtros de registros
 
 | Filtro | Descripción |
 |--------|-------------|
-| **Intervalo de tiempo** | Seleccione un periodo (por ejemplo, Hoy o Últimos 7 días) para las métricas mostradas. |
-| **Gravedad** | Haga clic en Debug, Info, Warning o Error para incluir o excluir ese nivel. Un número sobre cada chip muestra su recuento actual. |
-| **Servicio** | Elija el servicio cuyos eventos desea examinar. |
+| **Intervalo de tiempo** | Elija **Última hora**, **Hoy**, **Últimos 7 días**, **Últimos 30 días** o **A medida**. La opción personalizada muestra campos de fecha y hora de inicio y fin. |
+| **Gravedad** | Pulse **Depurar** (Debug), **Información**, **Advertencia** o **Error** para incluir o excluir ese nivel. El número de cada filtro muestra su recuento actual. |
+| **Servicio** | Seleccione uno o varios servicios cuyos eventos quiera consultar. |
 
 ## Tarjetas de resumen
 
-Debajo de los filtros aparecen cuatro tarjetas de resumen:
+Debajo de los filtros aparecen cuatro tarjetas:
 
 | Tarjeta | Descripción |
 |---------|-------------|
-| **PEAK ACTIVITY** | Momento del día con mayor volumen de registros y su recuento total. |
-| **ERRORES** | Número total de errores del periodo seleccionado. |
-| **ADVERTENCIAS** | Número total de advertencias del periodo seleccionado. |
-| **TOP SOURCE** | El servicio que genera más registros, con su recuento. |
+| **Actividad máxima** | Momento con mayor volumen de registros y su recuento. |
+| **Errores** | Número de errores del periodo seleccionado. |
+| **Advertencias** | Número de advertencias del periodo seleccionado. |
+| **Fuente principal** | Servicio que genera más registros, con su recuento. |
 
 ## Supervisión de usuarios reales (RUM)
 
-Debajo de las tarjetas de resumen, las métricas RUM muestran datos de rendimiento del frontend recogidos en sesiones reales de navegador de los usuarios.
+Cuando hay telemetría del navegador, la sección RUM muestra métricas de rendimiento del frontend. Los datos disponibles dependen del entorno y del periodo. Un gráfico vacío, un mensaje de falta de datos o un indicador de carga no constituye un resultado medido.
 
-## Gráficos de Analytics
+## Gráficos de registros y descargas
 
-En **Logs Analytics**, seleccione uno de los tres botones de gráfico para cambiar cómo se muestran los mismos registros filtrados:
+En **Análisis de registros**, elija una de estas vistas:
 
 | Vista | Descripción |
 |-------|-------------|
-| **Severity** | Gráfico circular con la distribución de los niveles de registro (Debug, Info, Warning, Error). |
-| **Timeline** | Gráfico de líneas con el volumen de registros a lo largo del tiempo. |
-| **Service** | Gráfico de barras que desglosa los registros por servicio. |
+| **Gravedad** | Gráfico circular con la distribución de los niveles de registro. |
+| **Línea de tiempo** | Gráfico de líneas con el volumen de registros a lo largo del tiempo. |
+| **Servicio** | Gráfico de barras con el desglose por servicio. |
 
-Si un gráfico indica que no hay datos disponibles, pruebe un **Intervalo de tiempo** más amplio o menos filtros de **Gravedad**. Las cifras de la imagen pertenecen a la organización sintética de la Sandbox y variarán en su organización.
+En el gráfico **Línea de tiempo**, abra el menú de la esquina superior derecha y elija **Download SVG**, **Download PNG** o **Download CSV**. Estas opciones corresponden al gráfico mostrado; otros gráficos pueden no ofrecer la misma barra de herramientas.
+
+Si no hay datos disponibles, pruebe un **Intervalo de tiempo** más amplio o menos filtros de **Gravedad**.
+
+## Errores de JavaScript con rastreos de pila
+
+Cuando esta tarjeta está disponible, su etiqueta de entorno indica el ámbito de los errores, por ejemplo **dev solamente**. La tarjeta enumera excepciones recientes del navegador, con un límite de 24 horas. **Copiar todo el JSON** copia las entradas cargadas actualmente en esta tarjeta, en lugar del registro completo de eventos. El botón está desactivado cuando no hay entradas.
+
+Si hay una entrada, pulse su mensaje para desplegar la traza de pila. Las acciones de la fila copian esa entrada como JSON o copian su traza de pila. El enlace a una traza solo aparece si la entrada tiene un identificador de traza.

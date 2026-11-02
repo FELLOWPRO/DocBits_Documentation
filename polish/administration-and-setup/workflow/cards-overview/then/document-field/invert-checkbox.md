@@ -1,6 +1,6 @@
 # Invert Checkbox
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-document-field-01-pl-20261023.png" alt="Pole dokumentu Odwróć pole wyboru Nazwa pola"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

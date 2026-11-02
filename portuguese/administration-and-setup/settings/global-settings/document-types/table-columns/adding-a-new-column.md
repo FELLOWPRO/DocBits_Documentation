@@ -24,7 +24,11 @@ Adicione uma coluna quando um valor precisar ser capturado por item de linha e a
 | **Select column type** | Consulte a lista de tipos acima. |
 | **Select Table** | A tabela que receberá a coluna. |
 
-4. Clique em **Proceed**. A coluna aparece na lista com *Read Only*, *Hidden* e *Use AI* desativados. Altere esses indicadores na lista, se necessário; consulte [Editando e excluindo colunas](editing-and-deleting-columns.md).
+4. Clique em **Prosseguir**. Uma caixa de confirmação lembra que a nova coluna vale para **todas as faturas futuras de todos os fornecedores**, não apenas para o documento aberto.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-pt.png" alt="Caixa de confirmação «Criar uma nova coluna na tabela?» com os botões Cancelar e Criar coluna"><figcaption><p>Confirme antes de a coluna ser criada para todos os fornecedores.</p></figcaption></figure>
+
+5. Selecione **Criar coluna** para salvar, ou **Cancelar** para voltar sem criar nada. A coluna aparece na lista com *Read Only*, *Hidden* e *Use AI* desativados. Altere esses indicadores na lista, se necessário; consulte [Editando e excluindo colunas](editing-and-deleting-columns.md).
 
 ## Depois de adicionar
 

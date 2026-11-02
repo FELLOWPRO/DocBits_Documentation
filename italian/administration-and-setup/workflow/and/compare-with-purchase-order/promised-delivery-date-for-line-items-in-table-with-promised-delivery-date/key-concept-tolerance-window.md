@@ -2,6 +2,8 @@
 
 Prima di esaminare gli operatori, è importante capire come viene calcolata la finestra di tolleranza.
 
+Il modo in cui viene calcolata la finestra di tolleranza, con esempi come "oggi o domani", è spiegato in [Date Tolerances](../../date-tolerances.md).
+
 ## Cos'è una finestra di tolleranza?
 
 La finestra di tolleranza definisce un intervallo di date accettabili attorno alla data di consegna promessa dell'ordine d'acquisto.

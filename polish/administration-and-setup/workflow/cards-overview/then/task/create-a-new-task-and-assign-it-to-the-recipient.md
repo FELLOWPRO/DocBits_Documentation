@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the Recipient
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-00-pl-20261023.png" alt="Zadanie Utwórz zadanie z tytułem: Tytuł , opisem: Opis priorytetu Priorytet i przypisz je do Odbiorca . Powiadom ich e-mailem o treści Wyślij e-mail . Jeśli adresat nie zostanie znaleziony, użyj Użytkownik jako opcji zapasowej." width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

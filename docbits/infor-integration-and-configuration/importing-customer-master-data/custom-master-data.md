@@ -4,64 +4,81 @@ description: How to Import Master Data directly within DocBits.
 
 # Custom Master Data
 
-#### Activating Custom Master Data <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
+Custom Master Data lets you connect DocBits to one of your own API endpoints and use the data it returns as master data — for example your own supplier or article table — alongside the data DocBits maintains for you.
 
-From the Dashboard navigate to Settings → Document Processing → Module.
+## Activating Custom Master Data
 
-![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
+Custom Master Data is a module. To switch it on, go to **Settings → DOCUMENT PROCESSING → Module → Document Integration** and activate the **Custom Master Data** toggle in the **Document type configuration** section.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/custom-master-data-module-en-20261012.png" alt="Settings Module page, Document Integration section, Document type configuration, with the Custom Master Data toggle"><figcaption><p>The Custom Master Data toggle in the Document type configuration section of Document Integration</p></figcaption></figure>
 
-In Module, activate Custom Master Data by pressing the slider as shown below.
+For more about modules, see [Module](../../administration-and-setup/settings/document-processing/module/README.md).
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+## Opening the Custom Master Data dialog
 
-#### Feature Overview <a href="#feature-overview" id="feature-overview"></a>
+Once the module is active, go to **Settings → DOCUMENT PROCESSING → Lookup Master Data**. In the list of master data groups on the left, click the **settings** icon next to **ERP API Data** to open the **Custom Master Data** dialog.
 
-In order to add your own master data into DocBits, navigate to Master Data Lookup in Settings.
+<figure><img src="../../.gitbook/assets/custom-master-data-lookup-en-20261012.png" alt="Lookup Master Data page with the master data group list on the left"><figcaption><p>Lookup Master Data — the settings icon next to ERP API Data opens the Custom Master Data dialog</p></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+The dialog lists your custom master data tables with their **Name**, **Method**, and **Body Type**, and offers two ways to add a new one:
 
-Click on “Custom Master Data”
+- **Create Template** — define a reusable preset that you can pick when creating endpoints.
+- **Create Endpoint** — connect a master data table that DocBits fills from your API.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/custom-master-data-actions-en-20261012.png" alt="Custom Master Data dialog with the Create Template and Create Endpoint buttons and the list of existing endpoints"><figcaption><p>The Custom Master Data dialog with Create Template and Create Endpoint</p></figcaption></figure>
 
-You then have the option to create a Template or an Endpoint.
+Existing entries can be opened, refreshed, or removed with the row actions in the **Actions** column. Refreshing runs the API call immediately instead of waiting for the next automatic lookup. Deleting removes the table from DocBits; the data source on your side is left unchanged.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
+## Creating a Template
 
-#### Create a Template <a href="#create-a-template" id="create-a-template"></a>
+Click **Create Template** to define a preset that you can reuse across several endpoints. Templates are managed on the **Create Preset** page (**Settings → Lookup Master Data → Create Preset**).
 
-The first step is to choose between using your organizations ION API file or to use OAuth2 and enter the necessary data.
+The first step is **Select Preset**: choose whether the preset should use your organization's **ION API** file or **OAUTH2**. With ION API you upload the organization's ION API JSON file in the next screen; with OAUTH2 you enter the credentials when configuring the preset.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/custom-master-data-template-en-20261012.png" alt="Create Preset page with the Select Preset step offering ION API and OAUTH2"><figcaption><p>Create Preset — Select Preset: ION API or OAUTH2</p></figcaption></figure>
 
-Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
+In the **Configure Preset** step, give the preset a name without spaces, choose the body type and the request method, and enter the base URL and the URL of the API call. The remaining tabs describe the call itself:
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+- **Params** — query parameters as key/value pairs.
+- **Headers** — HTTP header fields as key/value pairs.
+- **Authorization** — the authentication type and its JSON data; the upload field accepts an authentication JSON file.
+- **Body** — the request body, sent for methods that use one.
 
-You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+Continue with **Select Tabledata Path** and **Create Table with Response** as described for an endpoint below, and finish with **Done**. The saved preset then appears in the **Select Preset** step of the endpoint wizard.
 
-Lastly, you will need to map the data to the columns you would like to create like in the example below.
+## Creating an Endpoint
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+Click **Create Endpoint** to connect a master data table. The wizard has four steps.
 
-After you have done this, click on Done for your new master data to be created and populated .
+### Step 1 — Select Preset
 
-#### Create an Endpoint <a href="#create-an-endpoint" id="create-an-endpoint"></a>
+Choose the starting point: **Blank** to configure everything yourself, **ION API** to prefill the authentication from your organization's ION API file, **OAUTH2** to prefill OAuth2 authentication, or one of your saved templates.
 
-The first step is to choose between using your organizations ION API file, to use OAuth2 or to leave this blank and enter the necessary data.
+<figure><img src="../../.gitbook/assets/custom-master-data-create-en-20261012.png" alt="Create page with the Select Preset step offering Blank, ION API, OAuth2 and saved templates"><figcaption><p>Create Endpoint — Select Preset: Blank, ION API, OAuth2, or a saved template</p></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
+### Step 2 — Configure API Endpoint
 
-Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
+Enter an **Endpoint Name** without spaces; this name becomes the name of your master data table.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
+Activate **Dynamic Lookup Population Based on Document Fields** if the lookup should depend on the document being processed. DocBits then fills placeholders in the API call — in the URL, the query parameters, or the headers — with values taken from the current document, so the call can return data that matches that document.
 
-You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+Select the **Body Type** and the **Method** of the call, and enter the **Base URL**. The tabs below describe the call:
 
-Lastly, you will need to map the data to the columns you would like to create like in the example below.
+- **Params** — query parameters as key/value pairs; with dynamic lookup population the values can come from document fields.
+- **Headers** — HTTP header fields as key/value pairs, added with **Add New**.
+- **Authorization** — the authentication type and its JSON data. The available types depend on the selected preset.
+- **Body** — the request body for methods that send one. **Beautify** formats the JSON for easier reading.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/custom-master-data-endpoint-en-20261012.png" alt="Configure API Endpoint step with Endpoint Name, Dynamic Lookup Population Based on Document Fields, Body Type, Method, Base URL and the Params, Headers, Authorization and Body tabs"><figcaption><p>Create Endpoint — Configure API Endpoint</p></figcaption></figure>
 
-After you have done this, click on Done for your new master data to be created and populated .
+Use **Continue** to move on; **Back** returns to the previous step without losing your entries.
+
+### Step 3 — Select Tabledata Path
+
+Enter the **JSON path**, in dot notation, of the field in the API response that holds the table data. The page shows the API response next to the extracted data so that you can check whether the path selects the right entries. For more about dot notation, see [Writing JSONPath expressions](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
+
+### Step 4 — Create Table with Response
+
+Map the response values to the columns you would like to create: enter a name for the column and the matching value from the response, then click **Add**. Use **Test Extraction** to verify that DocBits reads the values you expect before you save.
+
+Lastly, click **Done** for your new master data table to be created and populated.

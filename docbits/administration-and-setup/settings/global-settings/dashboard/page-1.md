@@ -1,31 +1,24 @@
----
-hidden: true
----
+# Custom status filters
 
-# Custom Filters
+Use a custom status filter to choose which document statuses the Dashboard offers. This setting is separate from filtering the document list for an individual search.
 
-Navigate to SETTINGS → Dashboard
+## Who the setting affects
 
-![](https://lh7-us.googleusercontent.com/Umkm01cQlm0cHDj7fFtPKCEqXcwB0l-vTBUt68v5IyNruzkxRHbqwqfU9PvvsdpKJxq1SA2YVQW9DPmt30dbEMq87ZkIvpsvGl-YltMAo8k0S4D8NCQ2uuTv7aGnpuPXU3JhtOHnNoXFDfL0MNI4exc)
+Organization administrators update the organization default. Where these controls are available to other users, the selection is saved as their personal preference instead. A personal preference takes precedence over the organization default.
 
-![](https://lh7-us.googleusercontent.com/q2frPTJ74a2SgSFOB5JBUXgpQ0mk62I6piZL0Lz0T_LuJqx1XmRs6il99mInCjvfNdz6FgdxDmUE4gONmiEydB2PXxvhw73toOUa0dK1GQftZGk2LRDoFRlqNvTfhj5K9cZHhWcWktpfXv5LaHfIy24)
+## Choose the statuses
 
-**Customize your filter**
+1. Open **Settings → Dashboard** and expand **Filters**.
+2. Set **Status filter style** to **Custom**. The **Custom status filter** selector appears below it.
+3. Open the status selector and choose the document statuses your team needs.
+4. Select **Apply** to save the selected statuses. An empty selection restores **All**. Return to the Dashboard to use the configured status choices.
 
-Navigate to the Filters section
+<figure><img src="../../../../.gitbook/assets/prior-u015-en.png" alt="Dashboard status-filter settings with Custom selected, the status selector and the Apply button."><figcaption><p>Dashboard status-filter settings with Custom selected, the status selector and the Apply button.</p></figcaption></figure>
 
-![](https://lh7-us.googleusercontent.com/aEOmeKPrkuBe0aSRJKDi5QZ1UBaTjuq0xdfRkJWv78k6XZ42QKYccjaTRXVjrNPmn86-vTeKSNWmWuReYvn-ieD3A6aMoi_sVKTKSKMy992Dz-YXVmOSIHRsTTHeU50b4nwyLbwVWlG9F_3D6fO-GPU)
+## Restore the standard choices
 
-To create a Custom Filter, select CUSTOM in the “Status filter style”
+Return to **Status filter style** and choose **All**. A change to the style is saved as soon as you select it. The custom status selector and its **Apply** button disappear when **All** is selected. This restores the standard status choices; it does not change the documents themselves.
 
-Underneath that, you can select the various statuses a document can be in to create your custom filter. Once you press APPLY, this custom filter will be active on the Dashboard.
+The illustration shows the existing controls with English selected. No filter configuration was applied and no document was modified for this illustration.
 
-**Dashboard**
-
-Select ADVANCED SETTINGS
-
-![](https://lh7-us.googleusercontent.com/ORDZuJttHObIzK1BTo-r6rxM1nvU7ChKXcLrZbLKmy5NL5NBWC6CWt3NmIFpjSFGsxBKltta-_nlmDwHOfjgZVF3FeDcryyv4QtN2cgA6FktJOSG1aU3lfPuxD78PkPOsDG4-OEwTEW73QCCCw4vDtw)
-
-Custom Filters can then be accessed by selecting the MORE SETTINGS option.
-
-![](https://lh7-us.googleusercontent.com/L1QNlzUWbWmz4EzRZ5MBk_WYV_lUtghtN4QbvLL04r8CpTZebadNSRwgeRJX4KlB7JMPNOP0lgZUohJ5JZOMYaFt6zz91-sRv1PD4LXt0e3ayf7997FDhxNPLLZJx6-1ni3BXVNsTB2Gd8wx8dCphSI)
+For temporary search criteria and removing a filter from the document list, see [Customizing Filters](customizing-filters.md). For reset filters, exports and action permissions, see [Dashboard settings](README.md).

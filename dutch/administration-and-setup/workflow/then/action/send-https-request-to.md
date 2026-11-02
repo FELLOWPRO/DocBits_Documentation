@@ -1,6 +1,6 @@
 # Stuur een HTTPS-verzoek naar
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_https_request_v2-nl-nl.png" alt="Stuur een HTTPS-verzoek naar, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## Doel:
 

@@ -29,15 +29,15 @@
 
   <!-- Tab 2: Logs -->
   <rect x="216" y="74" width="172" height="34" rx="8" fill="none"></rect>
-  <text x="302" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Journaux</text>
+  <text x="302" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Configurations</text>
 
   <!-- Tab 3: XSLT Templates -->
   <rect x="396" y="74" width="172" height="34" rx="8" fill="none"></rect>
-  <text x="482" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Modèles XSLT</text>
+  <text x="482" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Journaux</text>
 
   <!-- Tab 4: Export Configs -->
   <rect x="576" y="74" width="188" height="34" rx="8" fill="none"></rect>
-  <text x="670" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Configurations d’export</text>
+  <text x="670" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Modèles XSLT</text>
 
   <!-- Tab 1 Content: General -->
   <rect x="32" y="118" width="172" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"></rect>
@@ -50,107 +50,107 @@
   <g transform="translate(48, 166)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Paramètres du dossier</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">État du service</text>
   </g>
-  <text x="70" y="188" fill="#44474e" font-size="10">Entrée / Succès / Export</text>
+  <text x="70" y="188" fill="#44474e" font-size="10">Connexion / version</text>
 
   <g transform="translate(48, 200)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Types de documents</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Téléchargement et API</text>
   </g>
-  <text x="70" y="222" fill="#44474e" font-size="8.9">PDF, factures, commandes…</text>
+  <text x="70" y="222" fill="#44474e" font-size="10">Installation et identifiants</text>
 
   <g transform="translate(48, 234)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="10.6" font-weight="500">Destination d'exportation</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Mise à jour</text>
   </g>
-  <text x="70" y="256" fill="#44474e" font-size="9.6">Sélection du système cible</text>
+  <text x="70" y="256" fill="#44474e" font-size="10">Fréquence de vérification</text>
 
   <!-- Tab 2 Content: Logs -->
   <rect x="216" y="118" width="172" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"></rect>
   <rect x="216" y="118" width="172" height="200" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"></rect>
   <rect x="216" y="118" width="172" height="36" rx="14" fill="#005cad" opacity="0.06"></rect>
   <rect x="216" y="140" width="172" height="14" fill="#005cad" opacity="0.06"></rect>
-  <text x="302" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Journaux</text>
+  <text x="302" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Configurations</text>
 
   <g transform="translate(232, 166)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="9.1" font-weight="500">Surveillance des événements</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Importer et exporter</text>
   </g>
-  <text x="254" y="188" fill="#44474e" font-size="10">Journaux en temps réel</text>
+  <text x="254" y="188" fill="#44474e" font-size="10">Gérer les configurations</text>
 
   <g transform="translate(232, 200)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Filtrer par type/date</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Dossiers et types</text>
   </g>
-  <text x="254" y="222" fill="#44474e" font-size="10">Affiner les résultats</text>
+  <text x="254" y="222" fill="#44474e" font-size="10">Selon la configuration</text>
 
   <g transform="translate(232, 234)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">OpenSearch</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Assistant d’export</text>
   </g>
-  <text x="254" y="256" fill="#44474e" font-size="10">Recherche plein texte</text>
+  <text x="254" y="256" fill="#44474e" font-size="9.6">Informations et destination</text>
 
   <!-- Tab 3 Content: XSLT Templates -->
   <rect x="396" y="118" width="172" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"></rect>
   <rect x="396" y="118" width="172" height="200" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"></rect>
   <rect x="396" y="118" width="172" height="36" rx="14" fill="#005cad" opacity="0.06"></rect>
   <rect x="396" y="140" width="172" height="14" fill="#005cad" opacity="0.06"></rect>
-  <text x="482" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Modèles XSLT</text>
+  <text x="482" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Journaux</text>
 
   <g transform="translate(412, 166)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Envoi d’un modèle</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Événements et niveaux</text>
   </g>
-  <text x="434" y="188" fill="#44474e" font-size="9.1">Envoyer et modifier un XSLT</text>
+  <text x="434" y="188" fill="#44474e" font-size="10">Journaux du service</text>
 
   <g transform="translate(412, 200)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Validation en direct</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Période de temps</text>
   </g>
-  <text x="434" y="222" fill="#44474e" font-size="9.3">Tester avant le déploiement</text>
+  <text x="434" y="222" fill="#44474e" font-size="10">Affiner la requête</text>
 
   <g transform="translate(412, 234)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="9.5" font-weight="500">Associer aux configurations</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">OpenSearch</text>
   </g>
-  <text x="434" y="256" fill="#44474e" font-size="10">Lier aux exports</text>
+  <text x="434" y="256" fill="#44474e" font-size="10">Stockage des journaux</text>
 
   <!-- Tab 4 Content: Export Configs -->
   <rect x="576" y="118" width="192" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"></rect>
   <rect x="576" y="118" width="192" height="200" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"></rect>
   <rect x="576" y="118" width="192" height="36" rx="14" fill="#005cad" opacity="0.06"></rect>
   <rect x="576" y="140" width="192" height="14" fill="#005cad" opacity="0.06"></rect>
-  <text x="672" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Configurations d’export</text>
+  <text x="672" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Modèles XSLT</text>
 
   <g transform="translate(592, 166)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Liste des configurations</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Gérer les modèles</text>
   </g>
-  <text x="614" y="188" fill="#44474e" font-size="9.1">Gérer les configurations d’export</text>
+  <text x="614" y="188" fill="#44474e" font-size="10">Créer et modifier les XSLT</text>
 
   <g transform="translate(592, 200)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">État de la connexion</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Validation d’exemple</text>
   </g>
-  <text x="614" y="222" fill="#44474e" font-size="9.5">Indicateurs d’état en temps réel</text>
+  <text x="614" y="222" fill="#44474e" font-size="9">Vérifier le XML avant sauvegarde</text>
 
   <g transform="translate(592, 234)">
     <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"></circle>
     <circle cx="6" cy="6" r="2" fill="#005cad"></circle>
-    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Télécharger la configuration</text>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Associer aux exports</text>
   </g>
-  <text x="614" y="256" fill="#44474e" font-size="8.9">Exporter le JSON pour WatchDog</text>
+  <text x="614" y="256" fill="#44474e" font-size="10">Selon le type d’exportation</text>
 
   <!-- Important callout -->
   <rect x="32" y="330" width="736" height="44" rx="12" fill="#d97706" opacity="0.06"></rect>
@@ -159,13 +159,13 @@
     <circle cx="10" cy="10" r="10" fill="#d97706" opacity="0.15"></circle>
     <text x="10" y="15" text-anchor="middle" fill="#d97706" font-size="13" font-weight="700">!</text>
   </g>
-  <text x="80" y="358" fill="#d97706" font-size="12" font-weight="700">NOTE</text>
+  <text x="80" y="358" fill="#d97706" font-size="12" font-weight="700">Note :</text>
   <text x="116" y="358" fill="#1a1c1e" font-size="12" font-weight="500">doc_type est désormais OBLIGATOIRE pour toutes les configurations d'exportation</text>
 
   <!-- Bottom export methods bar -->
   <rect x="32" y="388" width="736" height="48" rx="12" fill="#ffffff" filter="url(#shadow)"></rect>
   <rect x="32" y="388" width="736" height="48" rx="12" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"></rect>
-  <text x="52" y="410" fill="#44474e" font-size="10" font-weight="600" letter-spacing="0.8">6 MÉTHODES D'EXPORTATION</text>
+  <text x="52" y="410" fill="#44474e" font-size="10" font-weight="600" letter-spacing="0.8">EXEMPLES DE MÉTHODES D’EXPORT</text>
 
   <!-- Method badges -->
   <rect x="52" y="416" width="60" height="18" rx="9" fill="#005cad" opacity="0.08"></rect>

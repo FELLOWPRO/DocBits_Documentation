@@ -1,6 +1,6 @@
 # Assign document to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-05-nl-20261023.png" alt="Toegewezen persoon Wijs document toe aan Toegewezen type op basis van de beslissingstabel." width="563"><figcaption></figcaption></figure>
 
 ## Doel:
 

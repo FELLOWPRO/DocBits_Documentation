@@ -4,11 +4,11 @@ If you only require your document to be exported to IDM or Document Management i
 
 Select the following option for exporting.
 
-![](https://lh7-us.googleusercontent.com/ELtWrfGudPjyRoKqvszlrAlLX83byrejUsmJh0Z7VjBOQ2VNrVJ-B-o\_\_NoziePWk8HCMIBL2cvGo\_ORL\_oS6LluvfIUdNHuVOKzUQB\_HgxyPNgrjnIb3P5N24KvXiavFL7aBPQZ1gIimSyaxosm47c)
+![Select Integration dialog with Infor IDM highlighted among Webhook, SFTP, SMB, Flow, ZUGFeRD and other Infor options](https://lh7-us.googleusercontent.com/ELtWrfGudPjyRoKqvszlrAlLX83byrejUsmJh0Z7VjBOQ2VNrVJ-B-o\_\_NoziePWk8HCMIBL2cvGo\_ORL\_oS6LluvfIUdNHuVOKzUQB\_HgxyPNgrjnIb3P5N24KvXiavFL7aBPQZ1gIimSyaxosm47c)
 
 You will be required to upload an ION API file as well as an IDM Mapping file.
 
-![](https://lh7-us.googleusercontent.com/AVoWKz3ocf-1KTrXCGmUmxQzY8brTeR0aIaBAvaB6rV5Otb\_BjYOCm0rzoAXV-ZNxcs\_95yZARY\_MiKPm8-FXDU9oOSQslpc\_JmtiF6dLaaPTQ8TwslL8xySiz2FefX1op73oOQHOfEs\_Yq-RKcmdv4)
+![Infor IDM export dialog with Title, Sub-Organizations, Document Type, ION and IDM mapping files, and the Cloud toggle](https://lh7-us.googleusercontent.com/AVoWKz3ocf-1KTrXCGmUmxQzY8brTeR0aIaBAvaB6rV5Otb\_BjYOCm0rzoAXV-ZNxcs\_95yZARY\_MiKPm8-FXDU9oOSQslpc\_JmtiF6dLaaPTQ8TwslL8xySiz2FefX1op73oOQHOfEs\_Yq-RKcmdv4)
 
 How to obtain these has been discussed earlier in this documentation. ION API file and IDM Mapping file.
 

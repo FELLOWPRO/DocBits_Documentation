@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-01-nl-20261023.png" alt="Taak Maak een nieuwe Taak/Melding met de titel: Titel , beschrijving: Beschrijving , van prioriteit Prioriteit en wijs deze toe aan groep Groepen . Breng de groep op de hoogte via e-mail E-mail verzenden ." width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

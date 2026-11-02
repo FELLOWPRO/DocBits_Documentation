@@ -1,6 +1,6 @@
 # Assign Sequentially to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-09-pl-20261023.png" alt="Osoba przypisana Przypisz dokument sekwencyjnie do grupy zamówień Nazwa grupy , z priorytetem Wartość ." width="563"><figcaption></figcaption></figure>
 
 ## **Cel**
 

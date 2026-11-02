@@ -1,44 +1,44 @@
 # Document Sub Types
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 10.16.14.png" alt=""><figcaption></figcaption></figure>
+Document sub types are specialized versions of a document type. Under the main document type **Invoice**, for example, there might be sub types such as *Standard Invoice*, *Pro-forma Invoice* and *Credit Invoice*, each with slightly different data requirements or processing rules.
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.54.08.png" alt=""><figcaption></figcaption></figure>
+## Why sub types are useful
 
-#### Overview
+* **Specific processing requirements** — different variations of the same document type often need different fields, approval workflows or validation rules.
+* **Organizational customization** — sub types let you tailor document processing to your own processes instead of relying on a generic setup.
+* **Clear structuring** — users can move between the variations of a document type and only see the information that belongs to the one they are working on.
+* **Consistency and accuracy** — standardised sub types capture the same information in the same structure for every document of that variation.
+* **Efficient processing** — pre-built templates and workflows for a sub type reduce manual effort and errors.
 
-Document Sub Types are essentially specialized versions of the main document types. For example, under the main document type "Invoice", there might be sub-types like "Standard Invoice", "Pro-forma Invoice", and "Credit Invoice", each with slightly different data requirements or processing rules.
+## Open the sub types of a document type
 
-**Here are some reasons why subtypes are important:**
+1. Go to **Settings → Document Types**.
+2. On the card of the document type, select **Document Sub Types**.
 
-* **Specific processing requirements:** Often, different variations of the same document type require different processing requirements. For example, different types of invoices may require specific fields, approval workflows, or validation rules based on a company's internal policies or the requirements of external partners.
-* **Organizational customization:** Using subtypes allows organizations to customize their document processing to their specific needs. They can create subtypes that are tailored precisely to their individual business processes, rather than relying on generic solutions that may not meet all requirements.
-* **Clear structuring:** Using subtypes allows for clearer structuring of document management. Users can more easily navigate between different variations of a document type and find the specific information they need without being distracted by irrelevant data or options.
-* **Consistency and accuracy:** Subtypes can help ensure consistency and accuracy in document capture and processing. By standardizing subtypes, organizations can ensure that all relevant information is captured and that data is structured in a uniform manner.
-* **Efficient processing:** Using subtypes can increase efficiency in document processing because users have access to pre-built templates and workflows optimized for specific types of documents. This reduces manual effort and minimizes errors or delays in the process.
+<figure><img src="../../../../.gitbook/assets/document-types-list-en.png" alt="Document Types settings page with the Invoice card and its action row containing Layouts, Fields, Tables, Validation Rules, Transformation Rules, Scripts, Model Training, E-Doc, Document Sub Types and Logs"><figcaption>**Document Sub Types** is one of the actions on each document type card.</figcaption></figure>
 
-Document subtypes in Docbits allow for more flexible and tailored management of document variations, resulting in improved efficiency, accuracy and adaptability. They provide a powerful way to manage the complexity of document processing and increase productivity within an organization.
+The page lists the sub types of that document type with their **Name** and the **Actions** available for each one.
 
+<figure><img src="../../../../.gitbook/assets/document-sub-types-list-en.png" alt="Document Sub Types page with the New button, the columns Name and Actions and the empty state No Record Found"><figcaption>The sub types of the selected document type.</figcaption></figure>
 
+## Actions on a sub type
 
-#### Key Features and Options
+Each row offers the following actions:
 
-1. **List of Sub Types**:
-   * Each row represents a sub-type of a primary document type.
-   * Includes the name of the sub-type and a set of actions that can be performed on it.
-2. **Actions**:
+* **Fields** — configure which data fields belong to the sub type and how they are managed.
+* **Layout Builder** — open the layout of this sub type and change how the fields are arranged.
+* **Scripts** — attach or edit the scripts that run when a document of this sub type is processed.
+* **Copy** — duplicate the sub type as the starting point for a new one.
+* **Edit** — change the name or title of the sub type.
+* **Delete** — remove the sub type when it is no longer needed.
 
-<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+## Add a sub type
 
-* **Fields**: Configure which data fields are included in the sub-type and how they are managed.
-* **Edit Layout**: Modify the visual layout for how information is displayed and entered for this sub-type.
-* **Scripts**: Attach or edit scripts that execute specific operations when documents of this sub-type are processed.
-* **Copy**: Duplicate an existing sub-type configuration to use as a basis for a new one.
-* **Editing document Sub Type:** Edit the name or title of the sub-type.
-* **Delete**: Remove the sub-type if it is no longer needed.
+1. Select **New** above the table.
+2. Enter a **Name**. It may contain letters and underscores only.
+3. Enter a **Title** for the sub type.
+4. Select **Save**.
 
-**Adding New Sub Types**:
+<figure><img src="../../../../.gitbook/assets/document-sub-types-create-dialog-en.png" alt="Create New Sub Document Type dialog with the fields Name and Title and the buttons Cancel and Save"><figcaption>A new sub type is created in the **Create New Sub Document Type** dialog.</figcaption></figure>
 
-* The "+ New" button allows administrators to create new sub-types, defining unique properties and rules as needed.
-
-
-
+After a sub type exists, it is available wherever a document of that type is processed, for example in the fields and layouts of the document type.

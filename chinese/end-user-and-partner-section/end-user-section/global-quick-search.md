@@ -6,7 +6,7 @@
 
 在 macOS 上按 <kbd>Cmd</kbd> + <kbd>K</kbd>，或在 Windows 和 Linux 上按 <kbd>Ctrl</kbd> + <kbd>K</kbd>。在任何屏幕上都可以使用此快捷键。
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="全局快速搜索弹窗"><figcaption><p>快速搜索会在当前页面上方打开。</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-zh.png" alt="中文页面快捷搜索；PANEL 仍为英文。该窗口用于页面导航，与文档全文搜索不同。"><figcaption><p>中文页面快捷搜索；PANEL 仍为英文。该窗口用于页面导航，与文档全文搜索不同。</p></figcaption></figure>
 
 ## 搜索
 

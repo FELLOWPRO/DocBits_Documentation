@@ -1,6 +1,6 @@
 # Create a New Task and assign it to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-05-it-20261023.png" alt="Compito Creare un nuovo Compito/Notifica con il titolo: Titolo , description: Descrizione di priorità Priorità e assegnarlo al gruppo di acquisto per Nome del gruppo . Informare il gruppo via e-mail Invia e-mail ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

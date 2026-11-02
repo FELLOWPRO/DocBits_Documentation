@@ -1,5 +1,22 @@
 # Klassifizierung und Extraktion
 
+## Welche Einstellung wirkt an welchem Prozessschritt?
+
+<figure><img src="../../../../.gitbook/assets/process-extraction-de-20261028.png" alt="Von der Datei zu erkannten Daten: Dokumenttyp, Datenquelle und Extraktionspfad getrennt betrachten."><figcaption><p>Dokumenttyp, Datenquelle und Extraktionspfad getrennt betrachten. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
+
+Klassifizierung beantwortet die Frage **„Was für ein Dokument ist das?“**. Extraktion beantwortet **„Welche Werte enthält es?“**. Die Einstellungen dieser Seite beeinflussen unterschiedliche Stellen der Verarbeitung und sollten nicht als ein einzelner KI-Schalter verstanden werden.
+
+1. **Eingabe vorbereiten:** Bei PDFs kann vorhandener Text oder OCR verwendet werden; unterstützte elektronische Dokumente können strukturierte Werte liefern. Eine aktivierte Aufteilung kann ein Eingangsdokument anhand der konfigurierten Barcode- oder QR-Kriterien trennen.
+2. **Dokumenttyp bestimmen:** Klassifizierungsregeln und Modelle ordnen Dokumente einem Typ und gegebenenfalls einem Untertyp zu. Diese Zuordnung ist von der späteren Feld- und Tabellenextraktion zu unterscheiden.
+3. **Werte gewinnen:** Für Tabellen kommen abhängig von Konfiguration und passenden gespeicherten Regeln unterschiedliche Pfade infrage. Kopffelder besitzen eigene Quellenkennzeichen. Eine KI-Modellwahl allein erklärt daher nicht jede Zeile oder jeden Feldwert.
+4. **Ergebnis nachvollziehen:** Prüfen Sie im Validierungsbildschirm, welcher Tabellen-Tab die Zeilen enthält und welches Quellenkennzeichen ein Kopffeld trägt. Lesen Sie bei einem fehlenden Verarbeitungsschritt die Dokumentprotokolle, bevor Sie Einstellungen ändern.
+
+### Regelpfad und KI-Pfad unterscheiden
+
+Passende gespeicherte Tabellenregeln können für die betreffende Vorlage beziehungsweise den Lieferanten die Tabellenextraktion bestimmen. Ohne passende Regeln kann bei aktivierter KI-Tabellenextraktion der KI-Pfad verwendet werden. Einzelne Spalten können eigene KI-Optionen haben. Aus einer KI-Quelle bei einem Kopffeld folgt nicht, dass auch die gesamte Tabelle von der KI stammt.
+
+Die Diagnoseanleitung [Welcher Extraktionspfad wurde verwendet?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) erklärt Tabs, Quellenkennzeichen und Protokolle. Die Seite [KI-Modell](ai-model.md) erläutert den Organisationsstandard und vorlagenbezogene Überschreibungen.
+
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction-de.png" alt="Klassifizierung und Extraktion"><figcaption><p>Seite „Klassifizierung und Extraktion“</p></figcaption></figure>
 
 ## Übersicht
@@ -86,7 +103,7 @@ Weitere Informationen zu dieser Einstellung finden Sie [hier](auto-extract-tax-c
 
 **Save extraction rules (Admin only):** Nur Administratoren können im Tabellentraining auf *Save Rules* klicken. Schalten Sie diese Einstellung ein, wenn Benutzer immer wieder Regeln speichern, welche die Extraktion eines Lieferanten beeinträchtigen.
 
-**AI Model:** Wählt die KI-Stufe für die Tabellenextraktion: **Fast** (Standard), **Full** (höchste Genauigkeit, langsamer) oder **Nexus** (optionale dritte Stufe). Die Tabelle unterhalb der Auswahl zeigt:
+**AI Model:** Legt das Organisationsmodell für Feld- und Tabellenextraktion fest. Das aktuelle Menü bietet Full, Fast, Nexus, Nexus Flash, Auto und Auto Nexus. Verfügbarkeit, Qualität, Laufzeit und Kosten prüfen Sie mit repräsentativen Dokumenten; eine Stufe ist nicht für jeden Beleg die genaueste oder schnellste. Vorlagenbezogene Überschreibungen können die Organisationseinstellung ersetzen. Die Tabelle unterhalb der Auswahl zeigt:
 
 * welche **Lieferanten** welches KI-Modell verwenden
 * ob sie E-Text verwenden
@@ -96,11 +113,11 @@ Diese Einstellung wird [hier](ai-model.md) ausführlich erklärt.
 
 ### Warum sieht die Tabelle pro Lieferant anders aus?
 
-Alles, was DocBits über eine Tabelle lernt, wird **pro Lieferant** gespeichert:
+Die Tabellenverarbeitung hängt von gespeicherten Regeln und Einstellungen im jeweiligen Lieferanten- beziehungsweise Vorlagenkontext ab:
 
 * **Gespeicherte Regeln** (Tabellentraining): Position der Tabelle und Zuordnung ihrer Spalten im Layout dieses Lieferanten.
 * **KI-Tabellen-Tags und Formatierungsregeln**: Hinweise, die der Benutzer für die KI-Tabelle dieses Lieferanten gespeichert hat.
-* **Lieferantenspezifisches KI-Modell**: die Stufe, die für diesen Lieferanten unter *More settings* im Validierungsbildschirm gewählt wurde.
+* **Vorlagenbezogenes KI-Modell**: die Auswahl aus dem Validierungsbildschirm wird je Organisation und aktueller Extraktionsvorlage gespeichert. Sie ändert nicht automatisch jede Vorlage desselben Lieferanten; ohne Überschreibung gilt die anwendbare Organisationseinstellung.
 
 Lieferant A mit gespeicherten Regeln zeigt daher im Tab *Extracted table* des Validierungsbildschirms eine deterministische Tabelle, während Lieferant B ohne Regeln die *AI Extracted table* erhält. Damit sich Lieferant B wie A verhält, trainieren Sie die Tabelle von B einmal. Um einen Lieferanten zurückzusetzen, löschen Sie seine Regeln im Validierungsbildschirm oder setzen Sie seine Trainingsdaten in der Tabelle AI Model zurück.
 
@@ -127,7 +144,7 @@ Hinweise:
 * Boolesche Preferences werden als Zeichenfolgen `true` / `false` gespeichert; ein Schlüssel, der nie gesetzt wurde, gilt als `false`. Wenn Sie `1` oder `0` senden, speichert DocBits `true` / `false`.
 * Ein nicht gesetzter `AI_MODEL` bedeutet **Fast**.
 * Eine Änderung eines Schlüssels wirkt sich auf Dokumente aus, die danach verarbeitet werden. Starten Sie ein Dokument neu, um es mit der neuen Einstellung erneut zu extrahieren.
-* Lieferantenspezifische Auswahlen (E-Text, KI-Modell, gespeicherte Regeln) sind keine Organisations-Preferences; sie werden im Validierungsbildschirm unter *More settings* für ein Dokument dieses Lieferanten festgelegt.
+* Vorlagenbezogene Überschreibungen sind von Organisations-Preferences zu unterscheiden. Den genauen Geltungsbereich für das KI-Modell erklärt [KI-Modell](ai-model.md).
 
 ## Elektronisches Dokument
 

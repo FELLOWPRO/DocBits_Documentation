@@ -5,16 +5,12 @@ To configure your settings, click on the User Icon located in the bottom-left co
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
 
-<figure><img src="../../.gitbook/assets/User-Config.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/User-Config.png" alt="Left sidebar with the user icon highlighted below the settings and support icons"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/prior-u031-en.png" alt="User menu and language selection."><figcaption><p>User menu and language selection.</p></figcaption></figure>
 
 
 **Language**
-
-{% embed url="https://youtu.be/h_knkUZkNyI" %}
-How to Change Language in DocBits (User Settings Tutorial)
-{% endembed %}
 
 * **Select Preferred Language:** Choose your desired language from the available options.
 
@@ -33,7 +29,7 @@ In this section, you can adjust the following preferences:
 * **Font Size:** Adjust the text size for better readability.
 * **Dual Monitor Mode:** Enable this feature if you’re using two monitors.
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3.png" alt="Edit User dialog with date pattern, amount formatting, font size, dual monitor mode, name and password fields"><figcaption></figcaption></figure>
 
 **Logout**
 

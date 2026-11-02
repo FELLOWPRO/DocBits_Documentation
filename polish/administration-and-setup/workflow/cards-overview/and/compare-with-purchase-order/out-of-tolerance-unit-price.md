@@ -1,6 +1,6 @@
 # Out of Tolerance Unit Price
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-10-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Ceny jednostkowe poza tolerancją połączone z polami Nazwa pola wynoszą Operator Wartość" width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

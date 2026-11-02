@@ -1,5 +1,22 @@
 # Auto Accounting z Infor LN
 
+## Od rekordu danych podstawowych LN do sprawdzonego przypisania konta
+
+<figure><img src="../../../.gitbook/assets/process-accounting-pl-20261028.png" alt="Podstawowe dane finansowe dla Auto Accounting: Ścieżka danych i punkty kontrolne dla integracji Infor LN."><figcaption><p>Ścieżka danych i punkty kontrolne dla integracji Infor LN. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
+
+Ten przewodnik opisuje dostarczanie podstawowych danych finansowych dla integracji LN. Wybranie **LN** lub włączenie **Auto Accounting** nie zastępuje podania danych ani sprawdzenia wyniku przypisania rachunku.
+
+| Przekazanie | Co powinieneś udowodnić |
+| --- | --- |
+| **LN → Publikacja BOD** | Popraw dane firmy i wymagane dane konta lub wymiaru; Najpierw policz lub zasymuluj wybór. |
+| **BOD → ION** | Dopasowanie wersji dokumentu, źródła, filtrów i mapowania; prześledź identyfikator testu w ION OneView. |
+| **ION → DocBits** | Otrzymanie odpowiedzi z punktu końcowego, poprawna organizacja i zaakceptowany zapis. Sam aktywowany przepływ nie wystarczy. |
+| **DocBits → Wynik przypisania konta** | Po zatwierdzonej aktywacji użyj reprezentatywnych dokumentów testowych, aby sprawdzić, czy konta i wymiary są prawidłowe dla procesu biznesowego. |
+
+**Przykład identyfikowalności:** Użyj niewrażliwego identyfikatora testu z zatwierdzonego zestawu danych testowych. Znajdź ten sam identyfikator w źródle BOD, w ION i w logach odbiorczych DocBits. Pomaga to zlokalizować brakujące mapowanie przy konkretnym przekazaniu, zamiast wielokrotnie zmieniać przełącznik.
+
+Późniejszy eksport i zaksięgowanie ERP należy zweryfikować osobno. Istniejące obrazy w tym przewodniku przedstawiają elementy sterujące DocBits; nie dowodzą, że został wykonany przelew LN. W poniższej sekcji opisano przygotowanie i kompleksową weryfikację przeprowadzaną przez odpowiedzialnych administratorów. Informacje dotyczące przekazania technicznego można znaleźć w [Eksport z DocBits](../../exporting-in-docbits/README.md).
+
 Skorzystaj z tego przewodnika, gdy administrator Infor LN chce, aby DocBits używał zaimportowanych danych finansowych do automatycznej księgowości. Poprzednia strona pokazywała 48 ekranów z konkretnej dzierżawy Infor. Nazwy punktów połączeń, mapowania, dane logowania i adresy punktów końcowych z tej dzierżawy nie stanowią konfiguracji wielokrotnego użytku.
 
 ## Znajdowanie ustawienia w DocBits

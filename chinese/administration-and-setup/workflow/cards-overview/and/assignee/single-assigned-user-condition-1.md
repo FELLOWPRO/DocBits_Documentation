@@ -1,6 +1,6 @@
 # 单个分配组条件
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-d12f96578747-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_v2-zh-cn.png" alt="单个分配组条件, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 **用途：**\
 此工作流卡根据任务或文档是否分配给特定组来执行操作。它使用简单的条件，根据组分配情况触发或阻止操作。

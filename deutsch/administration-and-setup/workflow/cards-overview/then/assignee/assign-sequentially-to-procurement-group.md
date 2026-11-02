@@ -1,6 +1,6 @@
 # Assign Sequentially to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-09-de-20261023.png" alt="Zugewiesener Benutzer Ordnen Sie den Beleg sequentiell der Beschaffungsgruppe Name der Gruppe zu, mit der Priorität Wert ." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 

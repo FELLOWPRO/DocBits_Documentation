@@ -1,6 +1,18 @@
 # Module
 
-<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Module Settings"><figcaption><p>Module Settings Page</p></figcaption></figure>
+## Video tutorial: Settings hub and modules
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/en.mp4" %}
+Settings Overview and Modules in DocBits
+{% endembed %}
+
+The video shows the five groups of the Settings Overview, the search and Quick Links, and what the three Module pages control.
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-en.png" alt="Order and finance modules in their existing configuration."><figcaption><p>Order and finance modules in their existing configuration.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-en.png" alt="Document-integration modules: scripts, document scanning, barcode extraction and custom master data."><figcaption><p>Document-integration modules: scripts, document scanning, barcode extraction and custom master data.</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/site-extra-modules-dashboards-analytics-en.png" alt="Dashboard and analytics modules in their existing configuration."><figcaption><p>Dashboard and analytics modules in their existing configuration.</p></figcaption></figure>
 
 The Module page lets you enable or disable optional features in DocBits. Each section groups related modules that can be toggled on or off.
 

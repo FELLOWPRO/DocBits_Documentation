@@ -1,6 +1,6 @@
 # Assign Sequentially to User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-11-it-20261023.png" alt="Assegnatario Assegnare il documento in sequenza a Utente con priorità Valore ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo**
 

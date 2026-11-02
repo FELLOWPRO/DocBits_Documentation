@@ -1,5 +1,13 @@
 # Firmeninformationen
 
+## Video-Tutorial: Unternehmen, Abonnement und Audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/de.mp4" %}
+Unternehmensinformationen, Abonnement-Plan und Audit-Protokoll in DocBits
+{% endembed %}
+
+Das Video zeigt die Unternehmensinformationen und -präferenzen, den Abonnement-Plan, die Anmeldeaktivität und das Audit-Protokoll.
+
 <figure><img src="../../../../.gitbook/assets/company_information-de.png" alt="Deutschsprachiges Formular „Unternehmensinformationen“; Organisations- und Kontaktdaten ausgeblendet"><figcaption><p>Firmeninformationen: Bearbeiten Sie den Namen der Organisation, die Adresse, die rechtlichen Kennungen und die Kontaktdaten und wählen Sie anschließend Speichern. Die Feldwerte sind aus Datenschutzgründen ausgeblendet.</p></figcaption></figure>
 
 Auf der Seite „Unternehmensinformationen“ verwalten Sie Ihr Firmenprofil, Ihre Voreinstellungen und die Details Ihres Abonnements. Sie ist in die folgenden Abschnitte gegliedert:

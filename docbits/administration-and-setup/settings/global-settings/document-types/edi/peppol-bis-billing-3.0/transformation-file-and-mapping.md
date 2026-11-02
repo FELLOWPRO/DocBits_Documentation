@@ -55,7 +55,7 @@ This file is responsible for extracting data from a PEPPOL BIS Billing 3.0 XML f
   * **Can Appear Multiple Times**: No.
 * **Supplier Address Line 3**
   * **Source**:`//AccountingSupplierParty/Party/PostalAddress/AddressLine/Line/text()`
-  * **Mapped To**: `<InvoINVOICEice><SUPPLIER><ADDRESS_LINE_3>`
+  * **Mapped To**: `<INVOICE><SUPPLIER><ADDRESS_LINE_3>`
   * **Can Appear Multiple Times**: No.
 * **Supplier VAT ID**
   * **Source**:`//AccountingSupplierParty/Party/PartyTaxScheme/CompanyID/text()`

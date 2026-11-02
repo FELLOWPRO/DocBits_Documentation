@@ -14,9 +14,11 @@ O **Painel de fluxo de trabalho** é a página inicial da área de workflows. El
 
 A barra de ferramentas também oferece **Modelos**, que abre a biblioteca de [Modelos de workflow](standard-workflow-builder.md#workflow-templates), e **Fluxo de trabalho de importação**, que importa um workflow a partir de um arquivo JSON.
 
-O **Gestão de testes** permite salvar cenários de teste por workflow e executá-los em conjunto, para confirmar que seus workflows continuam se comportando corretamente após alterações:
+A **gestão de testes** permite salvar cenários de teste por workflow e executá-los em conjunto, para confirmar que seus workflows continuam se comportando corretamente após alterações:
 
-<figure><img src="../../.gitbook/assets/prior-u032-pt.png" alt="Lista de cenários de teste dos fluxos. O botão Claro limpa o filtro."><figcaption><p>Lista de cenários de teste dos fluxos. O botão Claro limpa o filtro.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-test-manager-current-pt.png" alt="Vista parcial da lista de cenários de teste, com os valores privados ocultos. O botão Limpar limpa o filtro."><figcaption><p>Vista parcial da lista de cenários de teste, com os valores privados ocultos. O botão Limpar limpa o filtro.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-test-manager-actions-detail-pt.png" alt="Pormenor das ações de teste: Executar todos os testes e Adicionar cenário de teste."><figcaption><p>Pormenor das ações de teste: Executar todos os testes e Adicionar cenário de teste.</p></figcaption></figure>
 
 ## Próximos passos
 

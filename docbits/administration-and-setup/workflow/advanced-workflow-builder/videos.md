@@ -199,3 +199,122 @@ Record workflow name, document reference, timestamp, node and exact message. Cor
 </details>
 
 Continue with the [Advanced Workflows guide](README.md) or [Workflow Logs](../workflow-logs.md).
+
+## Short videos
+
+Short English videos on single workflow topics, from Standard workflows to the Advanced designer.
+
+| Video | Duration |
+| --- | --- |
+| [1. Building a Standard workflow](#building-a-standard-workflow) | 1:09 |
+| [2. Searching and filtering on the workflow dashboard](#searching-and-filtering-on-the-workflow-dashboard) | 0:54 |
+| [3. When a workflow starts](#when-a-workflow-starts) | 0:42 |
+| [4. Reading the workflow logs](#reading-the-workflow-logs) | 1:34 |
+| [5. Success, failed condition and error in a workflow run](#success-failed-condition-and-error-in-a-workflow-run) | 1:28 |
+| [6. Workflow execution order](#workflow-execution-order) | 1:14 |
+| [7. Converting a Standard workflow to Advanced](#converting-a-standard-workflow-to-advanced) | 1:15 |
+| [8. Advanced Workflow Designer: cards and paths](#advanced-workflow-designer-cards-and-paths) | 2:19 |
+| [9. Workflow descriptions and notes](#workflow-descriptions-and-notes) | 0:57 |
+| [10. Keyboard shortcuts in the Advanced Workflow designer](#keyboard-shortcuts-in-the-advanced-workflow-designer) | 1:06 |
+| [11. Validate a workflow](#validate-a-workflow) | 0:50 |
+| [12. Testing a workflow](#testing-a-workflow) | 1:42 |
+| [13. AND and OR: combining conditions](#and-and-or-combining-conditions) | 2:28 |
+| [14. Decision tables in assignment cards](#decision-tables-in-assignment-cards) | 1:59 |
+| [15. Date tolerances and range checks](#date-tolerances-and-range-checks) | 2:13 |
+| [16. Workflow execution limits](#workflow-execution-limits) | 0:49 |
+
+### Building a Standard workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-standard/v1/en.vtt) · 1:09
+
+### Searching and filtering on the workflow dashboard
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-filtering/v1/en.vtt) · 0:54
+
+### When a workflow starts
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-start/v1/en.vtt) · 0:42
+
+### Reading the workflow logs
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-logs/v1/en.vtt) · 1:34
+
+### Success, failed condition and error in a workflow run
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-results/v1/en.vtt) · 1:28
+
+### Workflow execution order
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-order/v1/en.vtt) · 1:14
+
+### Converting a Standard workflow to Advanced
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-migration/v1/en.vtt) · 1:15
+
+### Advanced Workflow Designer: cards and paths
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced-workflow-designer/v1/en.vtt) · 2:19
+
+### Workflow descriptions and notes
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-notes/v1/en.vtt) · 0:57
+
+### Keyboard shortcuts in the Advanced Workflow designer
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-shortcuts/v1/en.vtt) · 1:06
+
+### Validate a workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-validate/v1/en.vtt) · 0:50
+
+### Testing a workflow
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-testing/v1/en.vtt) · 1:42
+
+### AND and OR: combining conditions
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-merge/v1/en.vtt) · 2:28
+
+### Decision tables in assignment cards
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/decision-tables/v1/en.vtt) · 1:59
+
+### Date tolerances and range checks
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/date-tolerances/v1/en.vtt) · 2:13
+
+### Workflow execution limits
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.mp4" %}
+
+[Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.mp4) · [Captions (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-limits/v1/en.vtt) · 0:49

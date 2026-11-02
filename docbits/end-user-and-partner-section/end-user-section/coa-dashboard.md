@@ -2,11 +2,11 @@
 
 The COA (Certificate of Analysis) Dashboard gives you a compact list view of all certificate-of-analysis documents in your organization. It shows each certificate with its key metadata so you can find and open quality documents quickly.
 
-<figure><img src="../../.gitbook/assets/coa-dashboard-overview-en-20261011.png" alt="COA Dashboard with the columns Document_id, Status, Filename, Created_on and Sub_org_name, the search bar and pagination controls"><figcaption>The COA Dashboard lists all certificate-of-analysis documents with their status, filename, creation date and sub-organization.</figcaption></figure>
+<figure><img src="../../.gitbook/assets/coa-dashboard-overview-en-20261011.png" alt="Illustrative mock of the COA Dashboard with synthetic document records, the columns Document_id, Status, Filename, Created_on and Sub_org_name, search and pagination"><figcaption>Illustrative mock with synthetic sample records showing the intended COA list layout. This image is not a capture of the current application.</figcaption></figure>
 
 ## Before you start
 
-The COA Dashboard is only available when the `COA_DASHBOARD` preference is enabled for your organization. If the dashboard has not been activated yet, the page shows an "Action not allowed" message instead of the document list. There is currently no self-service toggle for this preference in the settings; please contact DocBits support to have it activated (see [Technical Support in DocBits](technical-support-in-docbits/README.md)).
+The COA Dashboard is only available when the `COA_DASHBOARD` preference is enabled for your organization. If the dashboard has not been activated yet, the page shows an "Action not allowed" message instead of the document list. If the entry is unavailable or access is blocked, ask your administrator to confirm that the preference is enabled and your account has access. For further assistance, see [Technical Support in DocBits](technical-support-in-docbits/README.md).
 
 ## Table columns
 

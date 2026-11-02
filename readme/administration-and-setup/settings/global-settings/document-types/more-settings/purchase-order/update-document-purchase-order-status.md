@@ -1,41 +1,37 @@
 # Update Document Purchase Order Status
 
-## Overview
+This setting is for document types that use purchase orders. It controls whether a document can receive status updates from its linked purchase order. The switch is configured per document type. To see a PO status in the dashboard, the relevant field must also be available and visible as a column.
 
-When enabled, the **PO Status** column on the dashboard is automatically updated whenever the status of the purchase order changes.
+Before changing the setting, choose the correct organization and document type. You need administrator access to edit document type settings. A purchase order must be linked to a document before a status change can be checked.
 
-## Where to Activate
+## Turn on the setting
 
-1. Go to: **Settings** → **Global Settings** → **Document Type**
-2.  Select the desired document type and click on **More Settings**.\\
+1. Open **Settings → Document Processing → Document Types**.
+2. Find the document type used for the PO-linked documents, such as **Invoice**, and select the gear on its card to open **More Settings**.
+3. Expand **Purchase Order**. Find **Update Document Purchase Order Status** and turn it on. The nearby help icon explains the option in the application. Changing this switch does not change the other PO settings in the same section.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
-3.  In the **Purchase Order** section, navigate to the **Update Document Purchase Order Status** option.\\
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_document_types_en.png" alt="Document Types page with the Invoice card and its More Settings gear"><figcaption>Open the settings for the document type you use.</figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_po_settings_en.png" alt="Purchase Order section of More Settings with Update Document Purchase Order Status switch"><figcaption>The status update switch in the Purchase Order settings.</figcaption></figure>
 
-## How It Works
+## Show a PO status on the dashboard
 
-When this setting is enabled, the **PO Status** column on the dashboard will automatically reflect the current status of the purchase order.\
-For example, if the PO status is updated to _Received_ or _Invoiced_, the dashboard column will update accordingly to show this new status.
+1. Return to the dashboard and select the gear above the document table.
+2. Open **Columns settings** from the **Advanced settings** menu.
+3. Select **Add field from document type**, choose the document type, and search for **PO Status**. If that field is available, select it, choose **Add to visible columns**, then select **Done**.
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/Status on Dashboard.jpg" alt="" width="307"><figcaption></figcaption></figure></div>
+The column dialog contains **Hidden columns** and **Visible columns**. Use the arrows to move a selected column between them. See [Change Document Columns](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md) for the full column guide. If **PO Status** is absent for the selected type, ask an administrator to check its field and lookup configuration; the display switch alone does not create a missing field.
 
-## Setting It Up
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_dashboard_columns_en.png" alt="Dashboard Columns settings dialog with Hidden columns, Visible columns, and Add field from document type"><figcaption>Choose which columns appear in the dashboard.</figcaption></figure>
 
-1. **Enable the Setting**\
-   Navigate to the location mentioned above and toggle the setting on.
-2. **Add the PO Status Column (if not visible)**\
-   If the **PO Status** column is not already visible on the dashboard:
-   *   Go to: **Advanced Settings** → **Set Table Columns for Organizations**\\
+## Check the purchase order lookup
 
-       <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-   * Add the field from the document type by searching for **PO Status**
-3. **Configure lookup configuration**
-   *   Configure the Status field in the Purchase order header lookup like this:\\
+In **Settings → Document Processing → Document Types → Fields → Master Data Settings**, expand **Lookup Master Data**, then **Purchase Order Header**. Check that the required PO field mapping exists and that the relevant lookup has **Auto Trigger** when automatic lookup is needed. The screenshot below shows the configuration list; its red crosses mean Auto Trigger is off for those example rows. It does not demonstrate an updated PO status.
 
-       <figure><img src="../../../../../../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure>
-   * <mark style="color:red;">**Note:**</mark>**&#x20;Purchase order needs to be on Auto Trigger otherwise Status updates may not update properly**
-   * Don't know how to **Configure lookup configuration? Here is the** [**lookup configuration guide**](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)\\
-4. **Verify**\
-   Receive or invoice a PO, then check the dashboard to confirm that the status is updated correctly.\\
+<figure><img src="../../../../../../.gitbook/assets/dbdc125_lookup_po_header_en.png" alt="Purchase Order Header lookup configuration showing Searchable and Auto Trigger status for each field"><figcaption>Check the actual lookup rows for the document type.</figcaption></figure>
+
+For help setting up a lookup, see [Fuzzy Data Configuration with Master Data](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
+
+## Verify with a known document
+
+Use a document already linked to a test purchase order. Change that purchase order's status through your normal process, refresh the dashboard, and check the document and the visible PO status field. If the status does not update, check the document's PO link, the lookup configuration, and whether the relevant field was added to the dashboard. Do not infer a successful update from the switch alone.

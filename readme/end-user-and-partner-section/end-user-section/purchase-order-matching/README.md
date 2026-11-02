@@ -1,307 +1,61 @@
 # Purchase Order Matching Screen
 
-## Overview
-
-In the **Purchase Order Matching** screen, you can compare the line items extracted from your document with those stored in the **Infor system**, using the purchase order number as the reference.
-
-You can:
-
-* **Immediately identify** any differences between extracted and stored data
-* **Set tolerances** to allow acceptable deviations
-* **Ignore specific statuses** from Infor, if necessary
-* **Approve and export** the document after a successful match
-* **Reject** the document if the data does not meet the required validation criteria
-
-This page will guide you through the purchase order matching process and explain all related functionality available in this section.
-
-## Tools in the Purchase Order Matching Screen
-
-At the top of the Purchase Order Matching screen, you’ll find several tools—such as **Save**, **Auto-Match**, **Export**, and others—that assist with the matching process.\nA detailed description of each tool and its functionality can be found [here](purchase-order-matching-tools.md).
-
-<figure><img src="../../../.gitbook/assets/po_match_tools_0.png" alt=""><figcaption></figcaption></figure>
-
-## Filter and Add Purchase Order Numbers
-
-You can search for specific purchase order numbers by entering the number into the search field.\nFor more refined filtering, click the icon on the right side of the search bar to select specific criteria for your search.
-
-<figure><img src="../../../.gitbook/assets/po_match_3.png" alt=""><figcaption></figcaption></figure>
-
-The following filter options are available to help you refine your search for purchase orders:
-
-* **Keyword** – Filter by purchase order numbers.
-* **Supplier** – Filter by supplier name or ID.
-* **After Date** – Show purchase orders created after a specific date.
-* **Before Date** – Show purchase orders created before a specific date.
-* **Minimum Order Amount** – Filter by minimum order value.
-* **Maximum Order Amount** – Filter by maximum order value.
-* **Sort By** – Select the attribute to sort the results (e.g., date, amount).
-* **Sort Direction** – Choose the sort order: ascending or descending.
-* **Number of Records to Display** – Define how many results should be shown per page.
-* **More** – Additional filtering options include:
-  * **Delivery Number**
-  * **Packing Slip Number**
-  * **Item ID**
-
-After configuring your filters, click **Apply** to apply them or **Clear** to reset all filter settings.
-
-The matching purchase orders will be displayed based on the applied filters.\nYou can either:
-
-* Adjust the filters and search again, or
-* Double-click on a purchase order entry to add it to the Purchase Order Matching screen.
-
-<figure><img src="../../../.gitbook/assets/po_match_5 (2).png" alt=""><figcaption></figcaption></figure>
-
-## Select Purchase Order Numbers and Rearrange Columns
-
-You can switch between individual purchase orders to view their respective line items by clicking on the purchase order number at the top of the table.
-
-You can also rearrange the columns within each purchase order view by simply dragging and dropping them into your preferred order.
-
-<figure><img src="../../../.gitbook/assets/po_match_7.png" alt=""><figcaption></figcaption></figure>
-
-To permanently hide specific columns, use the [**Set PO Table Columns for Organizations**](./#set-po-table-columns-for-organizations) feature.
-
-## Set PO Table Columns for Organizations
-
-You have the option to hide or show specific columns in the purchase order table by clicking the column settings icon (shown below).\nThis setting is available in both the **Purchase Order Matching** screen and the **Advanced Purchase Order Search** menu.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_10.png" alt=""><figcaption></figcaption></figure>
-
-Additional details can be found [here](purchase-order-matching-tools.md#set-po-table-columns-for-organization).
-
-## Re-Sync purchase order number with Infor
-
-To resynchronize the data in **DocBits** with the data from **Infor**, click the **refresh button** next to the purchase order number above the table.
-
-<figure><img src="../../../.gitbook/assets/po_match_8 (1).png" alt=""><figcaption></figcaption></figure>
-
-If your matching process is based on the **Received Delivery Open Quantity** attribute, you also have the option to perform a **manual synchronization**, as described in detail [here](purchase-order-matching-tools.md#sync-data).
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_7.png" alt=""><figcaption></figcaption></figure>
-
-## How to match?
-
-To match a purchase order line item with a line item extracted from the document, you have three options:
-
-1. **Drag and Drop**\n Drag the desired purchase order line item and drop it onto the corresponding line item in the extracted table.
-2. **Right-Click and Connect**
-   * Right-click the purchase order line item you want to match and select **Select for match**.
-   * Then, right-click the corresponding line item in the extracted table and select **Connect**.
-3.  **Auto Match**
-
-    Click the **Auto Match** button to let the system automatically attempt to match all line items based on the extracted and purchase order data.
-
-    <figure><img src="../../../.gitbook/assets/po_tools_new_5.png" alt=""><figcaption></figcaption></figure>
-
-You can also select **multiple purchase order lines** and match them to a **single line** in the extracted table. For more details, click [here](./#multi-matches).
-
-## Why is there no match?
-
-When a document is not matched, the screen shows **one sentence above the purchase order area** that names the reason, and what to do about it:
-
-| Message                                                        | Meaning and next step                                                                                                                                                        |
-| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| No purchase order number                                       | The document has no purchase order number. Enter it in the header field and save — matching runs again on save.                                                              |
-| No purchase order was found in the ERP for …                   | The number on the document does not exist in the ERP. Check the number and save.                                                                                             |
-| … has not been looked up yet                                   | The number arrived after processing (for example from master data). Save the document or click **Auto Match**.                                                               |
-| … is loaded but not connected                                  | The purchase order lines are on screen but nothing is matched yet. Click **Auto Match** or connect the lines by hand.                                                       |
-| … was found, but none of the purchase order lines match        | Every line failed the matching rules. Open the **matching history** to see on which column, then match by hand or correct the document.                                    |
-| The document has no line items                                 | Nothing to match against; check the table extraction.                                                                                                                        |
-| The line-item table has no purchase order columns mapped       | Quantity, unit price and item number are not mapped for this table. Map them in the table settings.                                                                          |
-| The purchase order has no open lines left                      | Every line of the order is already consumed or disabled (see [Consumed PO Line Status](./#consumed-po-line-status) and [Disable statuses](./#disable-statuses)).             |
-
-Below the sentence the screen lists candidates that were **set aside**, for example _"Ignored: 2900233285 from the line-item column is the invoice number, not a purchase order"_ or _"… is excluded by configuration"_. The message disappears once the document is matched.
+Use **PO Matching** to compare the purchase order lines loaded for a document with its extracted invoice lines. The purchase order data may come from an ERP integration or another configured import. The screen shows the document alongside the two tables so you can check numbers, quantities, prices, and differences before saving or exporting.
 
 {% hint style="info" %}
-**Matching runs again when you save.** If the purchase order number changes, or it was never looked up before, the save itself matches the document. An existing match is never replaced by a save — and lines you removed by hand stay removed.
+The example below uses a synthetic FellowPro invoice and purchase order in **DocBits Documentation Test A**. Its invoice table currently says **No line items found**. This demonstrates navigation and search, but it cannot demonstrate a successful line match. Do not export this example as a matched invoice.
 {% endhint %}
 
-**If a match cannot be saved**, the screen does not report "saved": it restores the match on screen, marks the document as unsaved and shows why the server dropped it — for example _"The PO match could not be saved: the transformation rule "…" rebuilt the table"_. Administrators see a link to the rule in question. Ask an administrator to adjust the [transformation rule](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) or the [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+<figure><img src="../../../.gitbook/assets/dbdc-199-po-screen-en.png" alt="English PO Matching screen in the synthetic Sandbox organization: search, toolbar, purchase order lines, empty invoice line table, and invoice preview"><figcaption><p>The purchase order is loaded; the example invoice has no extracted lines to connect.</p></figcaption></figure>
 
-## Matching history
+## Find and inspect a purchase order
 
-The **Matching history** button (clock icon in the purchase order toolbar; it requires the Analytics permission) opens a read-only replay of how the last match was decided:
+1. Open an invoice in **PO Matching**. If your organization has several purchase orders, enter a number in **Search purchase order number**.
+2. Select the filter icon beside the search box for **Keyword**, **Supplier**, **Status**, **Order Status**, dates, amount range, sorting, and the number of records shown. Select **More** for additional criteria. Select **Apply** to search or **Clear** to reset the filters.
+3. Select a purchase order number above the table to inspect its lines. The refresh icon beside the number reloads that order's data. A reload may depend on the configured integration.
+4. Compare each purchase order line with the invoice and its extracted table. The **+** on a line expands matching details; it does not itself connect the line to the invoice. In the example it displays **No multi-match Information** because no such match exists.
 
-* the **transformation rules** that ran before matching, and whether one of them dropped a match,
-* the matching **stages and rules** that were tried — green where a match was found, red where a rule found nothing, grey where a rule was skipped by its activation condition (the tooltip says why),
-* for a failed rule, the **compared column** with the value on the document and the value on the purchase order.
+<figure><img src="../../../.gitbook/assets/dbdc-199-po-filters-en.png" alt="English purchase order search filters showing supplier, statuses, date and amount limits, sorting, and Apply and Clear buttons"><figcaption><p>Use the filter panel to narrow the purchase orders shown.</p></figcaption></figure>
 
-Opening and playing the history triggers neither matching nor export. Administrators find the same replay, with a document ID input, next to the rule set diagram in the document type's purchase order settings.
+<figure><img src="../../../.gitbook/assets/dbdc-199-po-line-en.png" alt="Expanded purchase order line with No multi-match Information and an empty invoice line table"><figcaption><p>The expanded line shows matching details when available.</p></figcaption></figure>
 
-## Which columns are being matched?
+## Match lines and review the result
 
-The Purchase Order Matching process matches only specific columns. The list below outlines which columns are matched, if available. If no [tolerance](./#accept-tolerances) is set, the columns will only match if they are an exact (100%) match.
+When both tables contain lines, connect an invoice line to the corresponding purchase order line by dragging it, or use the line context menu's matching actions. **Auto Match** attempts to connect eligible lines using your organization's rules. Check the result before saving: a matching item number alone does not prove that quantity, price, or delivery terms agree. See [Purchase Order Matching Tools](purchase-order-matching-tools.md) for the toolbar, column controls, and manual actions, and [Keyboard Shortcuts](keyboard-shortcuts.md) for keyboard actions.
 
-* [Quantity](./#quantity) (Quantity | Received Quantity | Received Delivery Open Quantity)
-* Unit Price
-* Purchase Order Number
-* Item Number/Supplier Item ID
-* Promised Delivery Date
+If a document is not matched, read the reason shown above the purchase order area. It may say that the PO number is missing, the order was not found, its lines are unavailable, or the invoice has no extracted lines. Correct the document or configuration indicated by that reason. An administrator can inspect [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) and [table extraction](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) when no invoice lines appear.
 
-### Quantity
+Common messages and next steps:
 
-You have three options for matching the quantity.&#x20;
+| What you see | What to check |
+| --- | --- |
+| No purchase order number | Enter or correct the PO number on the document, then save. |
+| No purchase order was found | Check the number and whether the order was imported into this organization. |
+| The order was found but is not connected | Try **Auto Match**, or connect the lines manually after checking both tables. |
+| No order lines match | Compare the invoice values with the order and check the matching history. |
+| No invoice line items | Check [table extraction](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) before trying to match. |
+| No open order lines | Check the [consumed-line statuses](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) and excluded statuses. |
 
-* Quantity&#x20;
-* Received Quantity
-* Received Delivery Open Quantity&#x20;
+{% hint style="warning" %}
+Saving can trigger matching again after a changed or newly detected PO number. Check the displayed result after saving. If a match cannot be saved, read the error shown on the screen and ask an administrator to check the [transformation](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) and [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+{% endhint %}
 
-You can set this option in **Settings → Global Settings → Document Types → More Settings → Purchase Order Section → Purchase Order**
+Use **Matching history** (clock icon, where your permissions allow it) to inspect how a previous match was decided. It is a read-only view. You can review which rules ran and why a candidate did not match; opening history does not export the document.
 
-The selected quantity option determines which **Purchase Order quantity column** is used for comparison during the matching process.
+### More than one line per match
 
-## **Consumed PO Line Status**
+A single invoice line may correspond to several order lines, or the other way around, where your matching rules allow it. Open the **+** details on a line to inspect any existing multi-match. Check the combined quantity and price, not just one line. An empty detail panel like the synthetic example above means there is no multi-match to inspect. See [Purchase Order Matching Tools](purchase-order-matching-tools.md) for changing connections.
 
-This feature adds color coding to PO lines, making it easier to identify their matching status at a glance.\nMore information is available on the [**Consumed PO Line Status**](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) settings page.
+### Quantities, differences, and discounts
 
-<figure><img src="../../../.gitbook/assets/consumed_po_line_status.png" alt="Consumed PO Line Status Indicator" width="563"><figcaption></figcaption></figure>
+Depending on configuration, matching can compare ordered, received, or remaining delivery quantity, as well as unit price, item number, and other mapped fields. A difference may be accepted if the document type has a configured tolerance. Check the displayed mismatch before accepting it. The [tolerance settings](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) and [discount guidance](discounts.md) explain these cases.
 
-## **PO Shipment Order Section**
+The totals area, when available, helps reconcile the net amount from the invoice with matched lines and charges. If **Unsettled amount** remains, inspect the individual line values and any [costing element](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md) before export.
 
-This section provides a visual overview of how much has been delivered and invoiced for each PO item.\nIt helps track invoicing progress using quantity values and a progress bar.
+## Check totals and save
 
-<div align="left"><figure><img src="../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt=""><figcaption></figcaption></figure></div>
+Review the invoice preview on the right and compare the line totals and any charges. For a full explanation of the actions in the top toolbar, see [Purchase Order Matching Tools](purchase-order-matching-tools.md). Select **Save** after changing matches. Select **Export** only after you have checked the document and the matching result; the arrow beside Export shows additional configured export choices. Your organization may have different export actions.
 
-More details can be found on the [**PO Shipment Order Setting**](../../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md) page.
+The preview toolbar lets you move between document pages, zoom, download the original, and open a larger view. Use it to verify that the purchase order number and line values really appear on the invoice. If you leave with unsaved matching changes, they may be lost.
 
-## Accept Tolerances
-
-You can specify acceptable tolerance levels during the matching process.\nBy default, only exact (100%) matches are considered valid.
-
-If tolerances are configured in the system settings, you can adjust them for the allowed attributes directly in the **Extracted Table** under the **Actions** column.
-
-<figure><img src="../../../.gitbook/assets/po_match_11.png" alt=""><figcaption></figcaption></figure>
-
-For more information on configuring and using tolerances, see the [detailed documentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
-
-## Discounts
-
-If discounts are present in your extracted table, they will be automatically applied to the **unit price** before matching—except when using [multi matches](./#multi-matches). More information on discounts can be found [here](./#discounts).
-
-## Disable statuses
-
-You can exclude specific lines with certain statuses from being matched. For more information, refer to the [detailed documentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md).
-
-## Verify matched lines
-
-Several indicators are available to help you verify whether a line item has been successfully matched or not.
-
-### Purchase Order Table
-
-<figure><img src="../../../.gitbook/assets/po_match_14.png" alt=""><figcaption></figcaption></figure>
-
-* This icon indicates that the purchase order line item has been successfully matched.
-
-<figure><img src="../../../.gitbook/assets/guide_po_2.png" alt=""><figcaption></figcaption></figure>
-
-* This icon indicates that the purchase order line item contains a mismatch.
-
-<figure><img src="../../../.gitbook/assets/guide_po_5.png" alt=""><figcaption></figcaption></figure>
-
-### Extracted Table from the Document
-
-*   This icon indicates that the line item has been successfully matched. You can hover over the icon to highlight the corresponding purchase order line.
-
-    <figure><img src="../../../.gitbook/assets/po_match_15.png" alt=""><figcaption></figcaption></figure>
-*   This icon indicates that the line item contains a mismatch. You can hover over the icon to highlight the corresponding purchase order line and view the columns where mismatches occur.
-
-    <figure><img src="../../../.gitbook/assets/po_match_new_4.png" alt=""><figcaption></figcaption></figure>
-
-## Multi Matches
-
-Multi-matching allows multiple lines from one table to be matched against a single line in the corresponding (opposite) table.
-
-<figure><img src="../../../.gitbook/assets/po_match_20.png" alt=""><figcaption></figcaption></figure>
-
-This feature is particularly useful for scenarios where details are split across several line items.
-
-### Matching Criteria
-
-Lines will be considered a match if the following aggregated conditions are met:
-
-* **Unit Price**:\n The average unit price of the multiple lines is calculated and compared against the unit price in the opposite table.
-* **Quantity**:\n The sum of the quantities across the matched lines must match the quantity in the opposite table.
-* **Additional Requirements**:\n Any additional [matching criteria](./#which-columns-are-being-matched) must also be satisfied.
-
-If a single line item is matched to multiple lines, you can view detailed information by clicking the plus (+) icon next to the respective line item.
-
-This expands the view to show all matched entries, helping you verify and manage multiple matches effectively.
-
-<figure><img src="../../../.gitbook/assets/po_match_19.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/po_match_18.png" alt=""><figcaption></figcaption></figure>
-
-## Remove PO Connections
-
-To remove a connection between a purchase order line item and an extracted line item, simply click the **X** icon next to the matched pair.\nOnce removed, the connection is canceled, and the line item becomes available for matching again.
-
-<figure><img src="../../../.gitbook/assets/po_match_new_2 (1).png" alt=""><figcaption></figcaption></figure>
-
-## Calculation
-
-Below the table containing the information extracted from your document, you can find simple calculations to verify whether the total bookings match.
-
-<figure><img src="../../../.gitbook/assets/po_matching_calculation_summary.png" alt="PO Matching Calculation Summary" width="423"><figcaption></figcaption></figure>
-
-### Recorded bookings:
-
-The recorded bookings value is derived from the net amount extracted from the document.
-
-```
-Recorded bookings = Total net amount (extracted from the document)
-```
-
-### Matched total:
-
-This value is calculated by summing the **Unit Price** × **Quantity** for all line items that successfully matched with the line items from the purchase order number.
-
-```
- Matched Total = Sum of (Unit Price × Quantity) for all matched line items
-```
-
-### **Charges:**
-
-Any applicable charges will be included in this section if present.\nFor more details, refer to the [detailed documentation](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md).
-
-```
-Charges = Costing element
-```
-
-### Unsettled amount:
-
-The resulting difference is displayed here and is calculated as follows:
-
-```
-Unsettled amount = Recorded bookings - Matched total - Costing element
-```
-
-## Viewing the Document for Validation
-
-On the right side of the **Purchase Order Matching** screen, you can view the document to assist with validation.
-
-<figure><img src="../../../.gitbook/assets/po_new_1.png" alt=""><figcaption></figcaption></figure>
-
-**Document Viewer Toolbar Features:**
-
-* Scroll through the document pages to review content.
-* Click the file name to open the full validation screen.
-* Enter a page number and press Enter to jump directly to that page.
-* Use the plus (+) and minus (–) buttons to zoom in or out of the document.
-*   Click the button on the far right to open the document in a separate window, which is especially useful when working with multiple screens.
-
-    <figure><img src="../../../.gitbook/assets/po_match_10.png" alt=""><figcaption></figcaption></figure>
-
-## Saving Changes:
-
-To save your changes, click the **Save** button in the toolbar.\nIf you leave the page without saving, all progress made during the matching process will be lost.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_6.png" alt=""><figcaption></figcaption></figure>
-
-## Exporting the Document
-
-After matching all line items and validating their correctness, you can export the document by clicking the **Export** button in the toolbar.
-
-* Clicking the small arrow next to the **Export** button reveals all available export options.
-* Clicking **Export** directly will trigger the default export option (the first one in the list).
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_8.png" alt=""><figcaption></figcaption></figure>
+The available comparisons and tolerance values depend on your document-type settings. Read [PO Matching Rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md), [Tolerance Settings](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md), [Disabled Statuses](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md), and [Consumed PO Line Status](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) for administrator settings. For many-to-one lines, see [Discounts](discounts.md) and the [Matching Tools](purchase-order-matching-tools.md).

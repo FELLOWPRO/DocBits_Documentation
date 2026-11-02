@@ -1,0 +1,20 @@
+# Correctifs urgents 8 septembre 2026
+
+> Correspondance des bons de commande : ce qui a changé avec les correctifs déployés le 8 septembre 2026. Le comportement ci-dessous est en production sur l’environnement de développement et sera déployé sur stage, sandbox et production lors des prochaines mises à jour.
+
+## Correspondance des bons de commande
+
+- **La correspondance survit à l’enregistrement.** Une correspondance de bon de commande qu’une règle de transformation faisait disparaître silencieusement à chaque enregistrement (règles qui reconstruisent les lignes) est désormais conservée tant que la règle produit les mêmes lignes. Lorsqu’une règle remplace réellement les lignes correspondantes, le document enregistre la règle et l’écran la nomme.
+- **La correspondance s’exécute à nouveau à l’enregistrement.** Lorsque le numéro de bon de commande sur le document change — ou lorsque les données de référence l’ont rempli après traitement et qu’aucune recherche de correspondance n’a encore été effectuée — l’enregistrement effectue immédiatement la correspondance du document. Une correspondance existante n’est jamais écrasée par un enregistrement.
+- **L’écran indique pourquoi il n’y a pas de correspondance.** L’écran de correspondance des bons de commande affiche une phrase au-dessus de la zone du bon de commande : pas de numéro de bon de commande, bon de commande non trouvé dans l’ERP, pas encore recherché, chargé mais non connecté, aucune ligne ne correspond, pas de tableau, colonnes du tableau non mappées, plus de lignes ouvertes. Les candidats mis de côté sont listés avec la raison (par exemple un numéro de facture qui avait été lu dans la colonne du bon de commande).
+- **Une correspondance abandonnée n’est jamais signalée comme enregistrée.** Si le serveur ne conserve pas une correspondance, l’écran la restaure, marque le document comme non enregistré et signale le rejet avec sa raison au lieu de « enregistré ».
+- **L’historique des correspondances affiche les règles de transformation.** L’historique des correspondances d’un document comporte désormais une étape _Règles de transformation_ avant la première étape de correspondance, listant les règles exécutées et indiquant si l’une d’elles a abandonné la correspondance. Les administrateurs ont un lien vers la règle.
+- **Prix unitaire du bon de commande à partir du montant net.** Avec l’option _Calculer le prix unitaire du bon de commande_ activée, le prix est désormais dérivé en priorité du montant **net** de la ligne du bon de commande, et du total uniquement lorsqu’il n’y a pas de montant net. Les bons de commande Infor incluent la taxe dans le total de la ligne ; les factures au prix net apparaissaient auparavant comme « prix unitaire sous-évalué » exactement du taux de taxe. Le prix calculé est actualisé à chaque correspondance, de sorte que les documents existants en bénéficient sans recharger le bon de commande.
+- **Les numéros de facture ne sont plus confondus avec les numéros de bon de commande.** Un candidat provenant d’une colonne de ligne ou d’une recherche antérieure égal au numéro de facture du document est mis de côté.
+
+## Documentation
+
+- Nouvelle page [Règles de transformation](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md).
+- [Règles de correspondance des bons de commande](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) couvre désormais les types de règles, conditions d’activation, règles de secours, ensemble de règles par défaut, types de tolérance et colonnes effectives.
+- [Calculer le prix unitaire du bon de commande](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md) décrit le calcul du montant net.
+- [Écran de correspondance des bons de commande](../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md) explique les messages « pourquoi il n’y a pas de correspondance » et l’historique des correspondances.

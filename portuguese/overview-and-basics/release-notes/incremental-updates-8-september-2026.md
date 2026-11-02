@@ -1,0 +1,20 @@
+# Hotfixes 8 de setembro de 2026
+
+> Correspondência de pedido de compra: o que mudou com os hotfixes implantados em 8 de setembro de 2026. O comportamento abaixo está ativo no ambiente de desenvolvimento e chega ao stage, sandbox e produção com as próximas atualizações.
+
+## Correspondência de pedido de compra
+
+- **A correspondência sobrevive ao salvamento.** Uma correspondência de pedido de compra que uma regra de transformação costumava descartar silenciosamente a cada salvamento (regras que reconstruem os itens da linha) agora é mantida desde que a regra produza as mesmas linhas. Quando uma regra realmente substitui as linhas correspondidas, o documento registra a regra e a tela a nomeia.
+- **A correspondência é executada novamente ao salvar.** Quando o número do pedido de compra no documento muda — ou quando os dados mestres o preencheram após o processamento e nenhuma execução de correspondência o consultou ainda — o salvamento corresponde ao documento imediatamente. Uma correspondência existente nunca é sobrescrita por um salvamento.
+- **A tela informa por que não há correspondência.** A tela de Correspondência de Pedido de Compra mostra uma frase acima da área do pedido de compra: número do pedido de compra ausente, pedido de compra não encontrado no ERP, ainda não consultado, carregado mas não conectado, nenhuma linha corresponde, sem tabela, colunas da tabela não mapeadas, nenhuma linha aberta restante. Candidatos que foram deixados de lado são listados com a razão (por exemplo, um número de fatura que havia sido lido na coluna do pedido de compra).
+- **Uma correspondência descartada nunca é reportada como salva.** Se o servidor não mantém uma correspondência, a tela a restaura, marca o documento como não salvo e reporta a rejeição com sua razão em vez de "salvo".
+- **O histórico de correspondência mostra as regras de transformação.** O histórico de correspondência de um documento agora tem uma etapa _Regras de transformação_ antes da primeira fase de correspondência, listando as regras que foram executadas e se alguma delas descartou a correspondência. Os administradores recebem um link para a regra.
+- **Preço unitário do PO a partir do valor líquido.** Com _Calcular preço unitário do PO_ ativado, o preço agora é derivado primeiro do valor **líquido** da linha do pedido de compra e do total somente quando não há valor líquido. Pedidos de compra da Infor carregam imposto no total da linha; faturas precificadas no líquido costumavam aparecer como "preço unitário subcorrespondido" exatamente pela taxa de imposto. O preço calculado é atualizado a cada correspondência, então documentos existentes se beneficiam sem recarregar o pedido de compra.
+- **Números de fatura não são mais confundidos com números de pedido de compra.** Um candidato de uma coluna de item da linha ou de uma consulta anterior que seja igual ao próprio número da fatura do documento é deixado de lado.
+
+## Documentação
+
+- Nova página [Regras de Transformação](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md).
+- [Regras de Correspondência de Pedido de Compra](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) agora cobre tipos de regras, condições de ativação, regras de fallback, o conjunto padrão de regras, tipos de tolerância e as colunas efetivas.
+- [Calcular preço unitário do PO](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md) descreve o cálculo do valor líquido.
+- [Tela de Correspondência de Pedido de Compra](../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md) explica as mensagens "por que não há correspondência" e o histórico de correspondência.

@@ -1,0 +1,38 @@
+{
+  "commit": "b633c3dde6e0716986d4babf321597542e347075",
+  "import_state": "success",
+  "overview": "https://docs.docbits.com/portuguese/~/revisions/loq5fxZsaK9YKTRtsdcT/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents?review=b633c3dde6e0",
+  "linked_country_guides": 40,
+  "attachments": [
+    {
+      "preview": "https://docs.docbits.com/portuguese/~/revisions/loq5fxZsaK9YKTRtsdcT/administration-and-setup/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=b633c3dde6e0",
+      "url": "https://4193417932-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuAz1Yhpnxw8Gd9kza0ch%2Fuploads%2Fgit-blob-2552907f9e5b616956482779a7ba978fd1c965ce%2Fedocs-credit-note-pt-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 4368218,
+      "sha256": "4377ce8fc47d114e7b0136fd3fca2dd7581a39f316c0a865d52fec177af32899",
+      "range206": true,
+      "content_range": "bytes 0-1023/4368218"
+    },
+    {
+      "preview": "https://docs.docbits.com/portuguese/~/revisions/loq5fxZsaK9YKTRtsdcT/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/germany?review=b633c3dde6e0",
+      "url": "https://4193417932-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuAz1Yhpnxw8Gd9kza0ch%2Fuploads%2Fgit-blob-21308708ae136c572ebc0be4e5fdc7d2fed53e56%2Fedocs-support-germany-pt-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 2475844,
+      "sha256": "d2044c299d5ef51fac023d0cfef639c21af4367f3399c30fa87a8ac3af66cb74",
+      "range206": true,
+      "content_range": "bytes 0-1023/2475844"
+    },
+    {
+      "preview": "https://docs.docbits.com/portuguese/~/revisions/loq5fxZsaK9YKTRtsdcT/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/costa-rica?review=b633c3dde6e0",
+      "url": "https://4193417932-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuAz1Yhpnxw8Gd9kza0ch%2Fuploads%2Fgit-blob-c947efba36ee8cec49fe6c603232ddc68cdde290%2Fedocs-support-costa-rica-pt-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 1135268,
+      "sha256": "f46638113bc75f836d76193fa3ae6c32e9ab7115b5c6cf47f862f8034211866b",
+      "range206": true,
+      "content_range": "bytes 0-1023/1135268"
+    }
+  ]
+}

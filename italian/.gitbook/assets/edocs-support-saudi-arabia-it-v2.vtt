@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.982
+ZATCA Fatoorah, Reporting, Simplified e
+Tax Invoice hanno voci separate. Queste
+
+formats_02
+00:00:07.982 --> 00:00:13.799
+etichette descrivono processi e varianti
+di fattura diversi. L’analisi del file non
+
+formats_03
+00:00:13.799 --> 00:00:19.267
+dimostra la firma, l’autorizzazione
+fiscale o la comunicazione tramite ZATCA.
+
+workflow_01
+00:00:20.017 --> 00:00:25.776
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:25.776 --> 00:00:32.811
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:32.811 --> 00:00:33.733
+attiva.
+
+accept_01
+00:00:34.483 --> 00:00:40.462
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:40.462 --> 00:00:45.454
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:45.454 --> 00:00:49.133
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

@@ -1,0 +1,8 @@
+FROM core6274-video AS binaries
+FROM python:3.11.11-slim-bookworm@sha256:081075da77b2b55c23c088251026fb69a7b2bf92471e491ff5fd75c192fd38e5
+ENV TZ=UTC LANG=C.UTF-8 LC_ALL=C.UTF-8 PYTHONHASHSEED=6274 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+RUN rm /etc/apt/sources.list.d/debian.sources
+COPY snapshot.sources /etc/apt/sources.list
+RUN apt-get -o Acquire::Check-Valid-Until=false update && apt-get install -y --no-install-recommends build-essential pkg-config libcairo2-dev libpango1.0-dev libx264-dev curl ca-certificates xz-utils fontconfig && rm -rf /var/lib/apt/lists/*
+COPY --from=binaries /usr/local /usr/local
+WORKDIR /repo/scripts/settings_assistant/explainer_videos

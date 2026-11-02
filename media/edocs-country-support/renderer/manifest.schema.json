@@ -1,0 +1,320 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DocBits page video manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "route_contract_version",
+    "media_origin",
+    "storage_bucket",
+    "object_prefix",
+    "pages"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "route_contract_version": {
+      "const": 1
+    },
+    "media_origin": {
+      "const": "https://docbits-videos.fra1.cdn.digitaloceanspaces.com"
+    },
+    "storage_bucket": {
+      "const": "docbits-videos"
+    },
+    "object_prefix": {
+      "const": "settings-assistant/"
+    },
+    "pages": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 49,
+      "propertyNames": {
+        "enum": [
+          "layouts",
+          "transformation_rules",
+          "custom_validation_rules",
+          "field_settings",
+          "lookup_configuration",
+          "master_data_mappings",
+          "users",
+          "sub_organizations",
+          "edocs_credit_note",
+          "edocs_country_austria",
+          "edocs_country_denmark",
+          "edocs_country_finland",
+          "edocs_country_france",
+          "edocs_country_germany",
+          "edocs_country_italy",
+          "edocs_country_netherlands",
+          "edocs_country_norway",
+          "edocs_country_poland",
+          "edocs_country_slovenia",
+          "edocs_country_spain",
+          "edocs_country_sweden",
+          "edocs_country_australia",
+          "edocs_country_new_zealand",
+          "edocs_country_india",
+          "edocs_country_indonesia",
+          "edocs_country_china",
+          "edocs_country_japan",
+          "edocs_country_korea",
+          "edocs_country_malaysia",
+          "edocs_country_philippines",
+          "edocs_country_singapore",
+          "edocs_country_taiwan",
+          "edocs_country_thailand",
+          "edocs_country_vietnam",
+          "edocs_country_argentina",
+          "edocs_country_brazil",
+          "edocs_country_chile",
+          "edocs_country_colombia",
+          "edocs_country_costa_rica",
+          "edocs_country_ecuador",
+          "edocs_country_mexico",
+          "edocs_country_paraguay",
+          "edocs_country_peru",
+          "edocs_country_uruguay",
+          "edocs_country_kazakhstan",
+          "edocs_country_saudi_arabia",
+          "edocs_country_turkey",
+          "edocs_country_united_arab_emirates",
+          "edocs_country_international"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/page"
+      }
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "locale": {
+      "enum": [
+        "en",
+        "de",
+        "it",
+        "fr",
+        "es",
+        "nl",
+        "zh",
+        "bg",
+        "cs",
+        "hu",
+        "ja",
+        "ko",
+        "pl",
+        "pt",
+        "pt-br",
+        "ro",
+        "sk",
+        "sl",
+        "sv",
+        "th",
+        "tr",
+        "vi"
+      ]
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "sha256",
+        "bytes",
+        "mime"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^settings-assistant/(edocs_country_austria|edocs_country_denmark|edocs_country_finland|edocs_country_france|edocs_country_germany|edocs_country_italy|edocs_country_netherlands|edocs_country_norway|edocs_country_poland|edocs_country_slovenia|edocs_country_spain|edocs_country_sweden|edocs_country_australia|edocs_country_new_zealand|edocs_country_india|edocs_country_indonesia|edocs_country_china|edocs_country_japan|edocs_country_korea|edocs_country_malaysia|edocs_country_philippines|edocs_country_singapore|edocs_country_taiwan|edocs_country_thailand|edocs_country_vietnam|edocs_country_argentina|edocs_country_brazil|edocs_country_chile|edocs_country_colombia|edocs_country_costa_rica|edocs_country_ecuador|edocs_country_mexico|edocs_country_paraguay|edocs_country_peru|edocs_country_uruguay|edocs_country_kazakhstan|edocs_country_saudi_arabia|edocs_country_turkey|edocs_country_united_arab_emirates|edocs_country_international|edocs_credit_note|transformation_rules|custom_validation_rules|field_settings|lookup_configuration|master_data_mappings|sub_organizations|users)/v[1-9][0-9]*/(en|de|it|fr|es|nl|zh|bg|cs|hu|ja|ko|pl|pt|pt-br|ro|sk|sl|sv|th|tr|vi)\\.(mp4|vtt|png)$"
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000000
+        },
+        "mime": {
+          "enum": [
+            "video/mp4",
+            "text/vtt; charset=utf-8",
+            "image/png"
+          ]
+        }
+      }
+    },
+    "cue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segment_id",
+        "cue_id",
+        "start_ms",
+        "end_ms",
+        "text"
+      ],
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{0,63}$"
+        },
+        "cue_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{0,63}_[0-9]{2}$"
+        },
+        "start_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 119999
+        },
+        "end_ms": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 120000
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "visual_locale",
+        "audio_locale",
+        "caption_locale",
+        "audio_mode",
+        "duration_ms",
+        "width",
+        "height",
+        "fps",
+        "assets",
+        "captions",
+        "transcript"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "visual_locale": {
+          "$ref": "#/$defs/locale"
+        },
+        "audio_locale": {
+          "$ref": "#/$defs/locale"
+        },
+        "caption_locale": {
+          "$ref": "#/$defs/locale"
+        },
+        "audio_mode": {
+          "enum": [
+            "localized",
+            "english_fallback"
+          ]
+        },
+        "duration_ms": {
+          "type": "integer",
+          "minimum": 30000,
+          "maximum": 120000
+        },
+        "width": {
+          "const": 1280
+        },
+        "height": {
+          "const": 720
+        },
+        "fps": {
+          "const": 30
+        },
+        "assets": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mp4",
+            "vtt",
+            "poster"
+          ],
+          "properties": {
+            "mp4": {
+              "$ref": "#/$defs/asset"
+            },
+            "vtt": {
+              "$ref": "#/$defs/asset"
+            },
+            "poster": {
+              "$ref": "#/$defs/asset"
+            }
+          }
+        },
+        "captions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 120,
+          "items": {
+            "$ref": "#/$defs/cue"
+          }
+        },
+        "transcript": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 12000
+        }
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "content_revision",
+        "build_inputs_sha256",
+        "route_patterns",
+        "variants"
+      ],
+      "properties": {
+        "content_revision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "build_inputs_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "route_patterns": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          }
+        },
+        "variants": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 22,
+          "propertyNames": {
+            "$ref": "#/$defs/locale"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/variant"
+          }
+        }
+      }
+    }
+  }
+}

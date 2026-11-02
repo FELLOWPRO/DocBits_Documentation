@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:10.792
+KSeF ha voci generiche, FA2 e FA3. FA2 e
+FA3 usano strutture diverse. Confermate lo
+
+formats_02
+00:00:10.792 --> 00:00:16.202
+schema sorgente e provate la mappatura
+appropriata; l’analisi del file non invia
+
+formats_03
+00:00:16.202 --> 00:00:18.467
+una fattura a KSeF.
+
+workflow_01
+00:00:19.217 --> 00:00:24.976
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:24.976 --> 00:00:32.011
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:32.011 --> 00:00:32.933
+attiva.
+
+accept_01
+00:00:33.683 --> 00:00:39.662
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:39.662 --> 00:00:44.654
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:44.654 --> 00:00:48.333
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

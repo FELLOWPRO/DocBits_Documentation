@@ -1,14 +1,14 @@
-# ZUGFeRD Feldzuordnung Überblick
+# ZUGFeRD Overview
 
-## Einführung
+## Introduction
 
-ZUGFeRD (Zentraler User Guide des Forums elektronische Rechnung Deutschland) ist ein deutscher E-Invoicing-Standard, der auf der UN/CEFACT Cross Industry Invoice (CII) und dem ISO-Standard 19005-3 (PDF/A-3) basiert. Er ermöglicht den Austausch strukturierter Rechnungsdaten in einer PDF-Datei.
+ZUGFeRD (Zentraler User Guide des Forums elektronische Rechnung Deutschland) is a German e-invoicing standard based on the UN/CEFACT Cross Industry Invoice (CII) and ISO 19005-3 (PDF/A-3). It combines structured invoice data with a PDF file.
 
-DocBits extrahiert Felder aus ZUGFeRD-Dokumenten und gleicht sie mit Infor ERP-Systemen (M3, LN) unter Verwendung von OAGIS BOD-Standards ab.
+DocBits extracts fields from ZUGFeRD documents and matches them with Infor ERP systems (M3, LN) using OAGIS BOD standards.
 
-## Unterstützte ZUGFeRD-Versionen
+## Supported ZUGFeRD Versions
 
-DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
+DocBits supports several versions of the ZUGFeRD standard:
 
 * [ZUGFeRD 1.0](versions/zugferd-1-0.md)
 * [ZUGFeRD 2.0](versions/zugferd-2-0.md)
@@ -17,7 +17,7 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 * [ZUGFeRD 2.3](versions/zugferd-2-3.md)
 * [ZUGFeRD 2.3.2](versions/zugferd-2-3-2.md)
 
-## Vollständige Header-Feldzuordnung
+## Complete Header Field Mapping
 
 ### Invoice Identification
 

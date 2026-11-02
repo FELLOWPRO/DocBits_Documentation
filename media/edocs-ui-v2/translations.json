@@ -1,0 +1,92 @@
+{
+  "en": {
+    "intro": "Local preview of the documentation attachments. Check the language, playback and captions here.",
+    "language": "Language",
+    "guide": "Documentation page",
+    "transcript": "Transcript",
+    "loading": "Loading local media…",
+    "error": "The local media file could not be loaded.",
+    "credit_scope": "The video shows a read-only check in DocBits using FACTURX 1.0.05 / ZUGFeRD 2.1 as an example. Mappings and versions can differ in your organisation. Always check the active Transformation for the detected format. The older example XSLT shown in the video contains branches for 381 and 389. Check the actual Transformation to establish which codes this specific version preserves; the general code list does not prove coverage in every historical mapping.",
+    "country_scope": "This read-only walkthrough shows the country’s existing DocBits configuration. Check the effective source and active version, then validate representative invoices, credit notes and exports in your own organisation."
+  },
+  "de": {
+    "intro": "Lokale Vorschau der Dokumentationsanhänge. Sprache, Wiedergabe und Untertitel können hier geprüft werden.",
+    "language": "Sprache",
+    "guide": "Dokumentationsseite",
+    "transcript": "Transkript",
+    "loading": "Lokale Mediendatei wird geladen …",
+    "error": "Die lokale Mediendatei konnte nicht geladen werden.",
+    "credit_scope": "Das Video zeigt eine lesende Prüfung in DocBits am Beispiel FACTURX 1.0.05 / ZUGFeRD 2.1. Zuordnungen und Versionen können in Ihrer Organisation abweichen. Prüfen Sie immer die aktive Transformation des erkannten Formats. Das gezeigte ältere XSLT-Beispiel enthält Zweige für 381 und 389. Prüfen Sie an der tatsächlichen Transformation, welche Codes diese konkrete Version erhält; die allgemeine Codeliste belegt keine Abdeckung in jeder historischen Zuordnung.",
+    "country_scope": "Dieser lesende Rundgang zeigt die in DocBits vorhandene Konfiguration für das Land. Prüfen Sie die verwendete Quelle und aktive Version und testen Sie repräsentative Rechnungen, Gutschriften und Exporte in Ihrer eigenen Organisation."
+  },
+  "es": {
+    "intro": "Vista previa local de los archivos de la documentación. Compruebe aquí el idioma, la reproducción y los subtítulos.",
+    "language": "Idioma",
+    "guide": "Página de documentación",
+    "transcript": "Transcripción",
+    "loading": "Cargando el archivo multimedia local…",
+    "error": "No se pudo cargar el archivo multimedia local.",
+    "credit_scope": "El vídeo muestra una revisión de solo lectura en DocBits con FACTURX 1.0.05 / ZUGFeRD 2.1 como ejemplo. Las asignaciones y versiones pueden variar en su organización. Compruebe siempre la Transformation activa del formato detectado. El ejemplo XSLT antiguo del vídeo contiene ramas para 381 y 389. Compruebe en la Transformation real qué códigos conserva esta versión concreta; la lista general de códigos no demuestra su cobertura en todas las asignaciones históricas.",
+    "country_scope": "Este recorrido de solo lectura muestra la configuración existente del país en DocBits. Compruebe la fuente utilizada y la versión activa y valide facturas, notas de crédito y exportaciones representativas en su organización."
+  },
+  "fr": {
+    "intro": "Aperçu local des fichiers joints à la documentation. Vérifiez ici la langue, la lecture et les sous-titres.",
+    "language": "Langue",
+    "guide": "Page de documentation",
+    "transcript": "Transcription",
+    "loading": "Chargement du fichier multimédia local…",
+    "error": "Le fichier multimédia local n’a pas pu être chargé.",
+    "credit_scope": "La vidéo montre une vérification en lecture seule dans DocBits, avec FACTURX 1.0.05 / ZUGFeRD 2.1 comme exemple. Les correspondances et les versions peuvent différer dans votre organisation. Vérifiez toujours la Transformation active du format détecté. L’ancien exemple XSLT montré dans la vidéo contient des branches pour 381 et 389. Vérifiez dans la Transformation réelle les codes conservés par cette version précise ; la liste générale ne prouve pas leur prise en charge dans toutes les anciennes correspondances.",
+    "country_scope": "Cette visite en lecture seule montre la configuration existante du pays dans DocBits. Vérifiez la source utilisée et la version active, puis testez des factures, des avoirs et des exports représentatifs dans votre organisation."
+  },
+  "it": {
+    "intro": "Anteprima locale degli allegati alla documentazione. Verificate qui la lingua, la riproduzione e i sottotitoli.",
+    "language": "Lingua",
+    "guide": "Pagina della documentazione",
+    "transcript": "Trascrizione",
+    "loading": "Caricamento del file multimediale locale…",
+    "error": "Impossibile caricare il file multimediale locale.",
+    "credit_scope": "Il video mostra una verifica in sola lettura in DocBits, usando FACTURX 1.0.05 / ZUGFeRD 2.1 come esempio. Le mappature e le versioni possono variare nella vostra organizzazione. Verificate sempre la Transformation attiva del formato rilevato. Il precedente esempio XSLT mostrato nel video contiene rami per 381 e 389. Verificate nella Transformation effettiva quali codici conserva questa versione specifica; l’elenco generale dei codici non ne dimostra la copertura in tutte le mappature storiche.",
+    "country_scope": "Questa panoramica in sola lettura mostra la configurazione esistente del paese in DocBits. Verificate la fonte utilizzata e la versione attiva, quindi provate fatture, note di credito ed esportazioni rappresentative nella vostra organizzazione."
+  },
+  "nl": {
+    "intro": "Lokaal voorbeeld van de documentatiebijlagen. Controleer hier de taal, het afspelen en de ondertiteling.",
+    "language": "Taal",
+    "guide": "Documentatiepagina",
+    "transcript": "Transcript",
+    "loading": "Lokaal mediabestand wordt geladen…",
+    "error": "Het lokale mediabestand kon niet worden geladen.",
+    "credit_scope": "De video toont een controle in DocBits zonder wijzigingen, met FACTURX 1.0.05 / ZUGFeRD 2.1 als voorbeeld. Toewijzingen en versies kunnen in uw organisatie verschillen. Controleer altijd de actieve Transformation voor het gedetecteerde formaat. Het oudere XSLT-voorbeeld in de video bevat vertakkingen voor 381 en 389. Controleer in de werkelijke Transformation welke codes deze specifieke versie behoudt; de algemene codelijst bewijst geen dekking in elke historische toewijzing.",
+    "country_scope": "Deze rondleiding zonder wijzigingen toont de bestaande DocBits-configuratie voor het land. Controleer de gebruikte bron en actieve versie en test representatieve facturen, creditnota’s en exports in uw eigen organisatie."
+  },
+  "pl": {
+    "intro": "Lokalny podgląd załączników do dokumentacji. Sprawdź tutaj język, odtwarzanie i napisy.",
+    "language": "Język",
+    "guide": "Strona dokumentacji",
+    "transcript": "Transkrypcja",
+    "loading": "Ładowanie lokalnego pliku multimedialnego…",
+    "error": "Nie udało się załadować lokalnego pliku multimedialnego.",
+    "credit_scope": "Film pokazuje sprawdzenie w DocBits bez wprowadzania zmian, na przykładzie FACTURX 1.0.05 / ZUGFeRD 2.1. Mapowania i wersje mogą się różnić w Twojej organizacji. Zawsze sprawdzaj aktywną Transformation dla wykrytego formatu. Starszy przykład XSLT pokazany w filmie zawiera gałęzie dla kodów 381 i 389. Sprawdź w rzeczywistej Transformation, które kody zachowuje ta konkretna wersja; ogólna lista kodów nie dowodzi ich obsługi w każdym historycznym mapowaniu.",
+    "country_scope": "Ten przegląd bez wprowadzania zmian pokazuje istniejącą konfigurację kraju w DocBits. Sprawdź używane źródło i aktywną wersję, a następnie przetestuj reprezentatywne faktury, noty kredytowe i eksporty we własnej organizacji."
+  },
+  "pt": {
+    "intro": "Pré-visualização local dos anexos da documentação. Verifique aqui o idioma, a reprodução e as legendas.",
+    "language": "Idioma",
+    "guide": "Página da documentação",
+    "transcript": "Transcrição",
+    "loading": "A carregar o ficheiro multimédia local…",
+    "error": "Não foi possível carregar o ficheiro multimédia local.",
+    "credit_scope": "O vídeo mostra uma verificação apenas de leitura no DocBits, usando FACTURX 1.0.05 / ZUGFeRD 2.1 como exemplo. Os mapeamentos e as versões podem variar na sua organização. Verifique sempre a Transformation ativa do formato detetado. O exemplo XSLT antigo apresentado no vídeo contém ramos para 381 e 389. Verifique na Transformation real quais os códigos preservados por esta versão específica; a lista geral de códigos não comprova a sua cobertura em todos os mapeamentos históricos.",
+    "country_scope": "Este percurso apenas de leitura mostra a configuração existente do país no DocBits. Verifique a fonte utilizada e a versão ativa e teste faturas, notas de crédito e exportações representativas na sua organização."
+  },
+  "zh": {
+    "intro": "文档附件的本地预览。您可以在此检查语言、播放和字幕。",
+    "language": "语言",
+    "guide": "文档页面",
+    "transcript": "文字稿",
+    "loading": "正在加载本地媒体文件…",
+    "error": "无法加载本地媒体文件。",
+    "credit_scope": "视频以 FACTURX 1.0.05 / ZUGFeRD 2.1 为例，展示在 DocBits 中进行只读检查的过程。您组织中的映射和版本可能不同。请始终检查所识别格式的活动 Transformation。 视频中的旧版 XSLT 示例包含针对 381 和 389 的分支。请检查实际的 Transformation，确认这一具体版本保留哪些代码；通用代码列表不能证明每个历史映射都支持这些代码。",
+    "country_scope": "此只读演示展示该国家或地区在 DocBits 中的现有配置。请检查实际使用的来源和活动版本，并在您自己的组织中测试有代表性的发票、贷项通知单和导出。"
+  }
+}

@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.647
+ZATCA Fatoorah, Reporting, Simplified en
+Tax Invoice hebben afzonderlijke
+
+formats_02
+00:00:06.647 --> 00:00:10.548
+vermeldingen. Deze labels beschrijven
+verschillende processen en
+
+formats_03
+00:00:10.548 --> 00:00:16.016
+factuurvarianten. Het parseren bewijst
+geen ondertekening, fiscale goedkeuring of
+
+formats_04
+00:00:16.016 --> 00:00:18.067
+rapportage via ZATCA.
+
+workflow_01
+00:00:18.817 --> 00:00:24.471
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:24.471 --> 00:00:29.893
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:29.893 --> 00:00:31.367
+activeert het niet.
+
+accept_01
+00:00:32.117 --> 00:00:37.806
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:37.806 --> 00:00:43.088
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:43.088 --> 00:00:46.467
+fiscale goedkeuring of aflevering via een
+netwerk.
+

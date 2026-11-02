@@ -1,78 +1,38 @@
 # Document Types
 
-If a customer requires a new document type or additional fields to be added to an existing document type layout, this section will go through all the information required to do so.
+Document types tell DocBits which kinds of documents your organisation works with. An administrator can find them under **Settings → Document Types** in the **Document Processing** section of the settings menu.
 
-In DocBits you will find the SETTINGS menu in the upper bar on the DASHBOARD.
+The page shows **Default Document Types**, which DocBits provides and you cannot delete, followed by **Custom Document Types** created for your organisation. Each type has its own card.
 
-![](https://lh7-us.googleusercontent.com/ZIJTRkBGeJ29Iw8XSbZKJ3GQifWbtWFYPhSg7v4LjCKWJ-szz7R7nlcbiom5ZB25p201BCnqoaaCsKH3UKQfqaAQlpgf4MCe1joA8OLV8dZ6r6v4-skFkGlUw8U51jwPeGqi59GPQMgpMaLGZGwnCk4)
+<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="Document Types page with Invoice and other default document type cards, activation and extraction switches, settings gear, and configuration links"><figcaption><p>Choose a document type card to configure that type.</p></figcaption></figure>
 
-If you are logged in to DocBits as an admin, you will find all fields of a document that can be extracted under the respective document type.
+## What you can do on a card
 
-Open the menu for Document Types.
+| Control | What it does |
+| --- | --- |
+| **Activate** | Makes this document type available or unavailable in your organisation. A blue switch is on; a grey switch is off. |
+| **Extraction** | Chooses the extraction mode: **Flex** when on or **Fix** when off. It does not simply switch extraction on or off. Hover over the switch to see its current mode. |
+| **Settings** (gear) | Opens **More Settings** for this type. Expand a category there to view its options. The categories depend on the document type. |
+| **Layouts** | Opens the layout configuration. See [Layout Builder](layout-builder.md) for the next steps. |
+| **Fields** | Opens the fields and recognition settings for this type. See [Fields](../../settings/global-settings/document-types/fields/README.md) for how to configure them. |
+| **Tables** | Opens the table column configuration for this type. |
+| **Scripts** | Opens processing scripts when this feature is available. |
+| **Model Training** | Opens model training for this type. |
+| **E-Doc** | Opens electronic document settings when the type supports them. |
+| **Document Sub Types** | Opens the subtypes for this document type. |
 
-![](https://lh7-us.googleusercontent.com/fqNQTnQSPJ19w3YBOf6-E\_sLmKo3LPBeGyRE0jqjhodZjtGxyi7YCg0yrMVfz1VQjsbyQ9S6Lllhn891A8yWD7YJ66pXJ\_EsBlf\_meTFf57snc3r5Ko88kmzgXUYA7DIzaPtxSJBNC3Z7Avh17l\_1fo)
+You may see more links, such as validation or transformation rules, depending on your organisation's features. Choose the link on the card for the type you want to change.
 
-In the following overview you will find all standard document types available for you
+## Edit fields and recognition settings
 
-![](https://lh7-us.googleusercontent.com/Syml6WLOpBNjz1NUcYv6ooJZXhqBKXYOUfWah2jdnTAceLTNr0RYYNW8mXM91wutSH7BAnQ7MVxcNaQE7mDiWtR6xlwVzz45hYzotHEEOPSzoTSFwzno9zrJe8dVCuTHiTftm7HpcSxj9YgcRXR65q0)
+Click **Fields** on a card to view its field groups. At the top of that page, **OCR** and **Match Score** set recognition thresholds, **Restore Defaults** resets those thresholds, and **Search by Name** finds a field. Use **Create new group** to organise fields and **Create field** within a group to add one. **Master Data Settings** opens the related master data configuration.
 
-**Activate/Extraction Type**
+Each field row has controls such as **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score and Formula. Review the [Fields guide](../../settings/global-settings/document-types/fields/README.md) before changing individual values. Click **Save Settings** on the Fields page to keep your changes.
 
-To the right of each document type, you will see Activate and Extraction Type sliders.
+<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="Invoice Fields page with recognition settings, field groups, per-field controls, and Save Settings"><figcaption><p>The Fields page has its own Save Settings button.</p></figcaption></figure>
 
-Activate: This document type is active in your DocBits environment.
+## Create a custom document type
 
-Extraction Type: This slider allows you to enable or disable a set of predefined rules for the document type when it is processed by DocBits. By selecting the gear icon to the right of the slider, the following menu will appear.
+Scroll to **Custom Document Types** and click **+ New**. Follow [Adding/Editing Document Types](../../settings/global-settings/document-types/adding-editing-document-types.md) to set up the new type.
 
-![](https://lh7-us.googleusercontent.com/VAf5NNfmfs\_EsV3-LzQmif4Vp\_hSjhWOgoehrzHya-8eXgeWSRz6tArWNtQZW4SPkelwufuXFkSl5jGywDnxh5Ll5BYLSXrTmUYi2AxBOj38suzgoJiLSqX2ENYJHpGbpkt1kUX7vcATShHfG0Jw20s)
-
-To see which fields can be extracted, for example from an invoice, click on FIELDS for this document type.
-
-![](https://lh7-us.googleusercontent.com/DRJV3CLSSHjjFrqQD0LtzvMRu4n-\_RZ\_w5d-2d9q7MsZur-2\_cj-\_9VYjeOCmDIZ6\_C\_dZKDonfyFUip8NCqeXEkw5gch0MaK2u-5\_kCGg6\_zNMhYj2gW-JUXoQORzoJdUmKwa7PuMz\_mnF3FuzkXDc)
-
-**Field Settings**
-
-Here you will find all the fields that can be extracted
-
-![](https://lh7-us.googleusercontent.com/NRhL2RPgVJqbdxoKnnEtcB8D1yYXfHqifMFttmiju6OQkMKdrndsZ17EFhYEOh5bJg2ctOPyzy60CwqKme0RQbDmKWhq3EBTuqGDzDzNdcx1PPMkC4a-N1yJFmbs-ZcM3kfFt\_j9Z3QdofcuXJqTN7U)
-
-You can also CREATE FIELDS like freight, postage or any field with an amount you want to extract from your invoices.
-
-For each field you can check the boxes if they are:
-
-* REQUIRED: Here you can define if the field must contain a value to continue.
-* READ ONLY: Here you can define if a field can only be displayed but not edited.
-* HIDDEN: Here you can define whether a field should be hidden or displayed in the extraction view.
-* FORCE VALIDATION: Here you can define whether a field must always be validated manually, even if it has been read 100% by DocBits.
-* OCR and MATCH SCORE: Setting as described below, per field.
-* FORMULA: Creation of a formula per field.
-
-![](https://lh7-us.googleusercontent.com/rbyXMCvWQx10lEGKb4xzu7eM6-l2yNZ3SO9Mj4pIIqfAZzt68on8j1KpSnrisMgVgKKB3QhymZNDpxYEVMVQplEsesk1gWAEAeriPDaQxL5v4eWPd9oFnyYN5QiA5uymT4ED6JHEew5FAlC\_bgU9Mho)
-
-If all settings are made and should be saved, please confirm this with the SAVE SETTINGS button at the bottom of the page, otherwise the settings will not be applied.
-
-![](https://lh7-us.googleusercontent.com/4nXll-tHCDUUbA\_hsi\_RXa7ll7qxkNFk2Htjx56-rBnIrZGu3H\_VJtjjtuUlXGBFUQUcXAa8WdJXFdWZN6geHCWsUnq0MUF1Q8\_RvpdpqYDq\_rNoFraomSK0sUTeKAyeOo7CZ1QiSs2rnIIXak4fGG4)
-
-**Recognition Settings**
-
-![](https://lh7-us.googleusercontent.com/nEAjFqWdbJci2U0lHCL8Bv-51Uur1QxT0etiKaR4kUNp2G4jtlsbR2ikAee--XvyoKDZ8Tx5l3hLa-a-FdY1lL35lxFegwg6D8xPw27ObwrZRRBhXDOmQOa3y\_1bhcwzXF418PsASkx3jjEIQXqtBnc)
-
-**OCR**
-
-Here you can set the sensitivity of the OCR (Optical Character Recognition) function for all fields at once. This value determines the sensitivity with which a field is marked in red if it could not be extracted with 100% certainty (OCR related!).
-
-**Match Score**
-
-This is where you can set the sensitivity of the MATCH SCORE function for all fields at once. This value determines when a field is marked in red if DocBits has not extracted the field with 100% probability. In this case the field needs to be validated manually.
-
-The button RESTORE DEFAULTS will set back both values to “50”.
-
-**Profile**
-
-Here you can define the profile that shall be used. Either Default or ZUGFeRD.\
-In profile ZUGFeRD there are predefined fields that are mandatory for this type of invoice.\
-If you do not explicitly use ZUGFeRD, please select “Default”.
-
-![](https://lh7-us.googleusercontent.com/jxQMt3SJdQcMD15ntBN2vowRpAZxybGYZtr\_6w8ANER4XgvkDf09tN-H9wZqApYj3ka1-E-KvALZp5dw4GFK5SswWWe3MAv3eiCWcRyb3lxk0f9erN4FfOTPkPK0lburKvib5hTntUHWUFikBGBQV1Y)
-
-
+<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="Bottom of Document Types page showing the Custom Document Types section and New button"><figcaption><p>Use New under Custom Document Types to begin creating a type.</p></figcaption></figure>

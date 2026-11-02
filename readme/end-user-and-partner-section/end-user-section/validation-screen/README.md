@@ -46,21 +46,11 @@ See here add[ Script in DocBits](../../../administration-and-setup/settings/glob
 
 <figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Required Fields"><figcaption></figcaption></figure>
 
-There are fields that are required for further editing, these can be edited in the settings.
+Fields that need attention show a colored border or an information icon. In the example below, the **Invoice number** field has a red border and warning icon. The value is visible on the invoice at the right, but DocBits did not extract it from the document. Select the number on the document or correct the field, then save the document.
 
-Use the tool tip to find out if:
+Hover over or select the information icon beside a field to read the specific reason. Depending on the field, the message can indicate missing extraction, a required value, low confidence, or a validation mismatch. If the warning concerns the totals, compare the amount fields with the invoice and use [Automatic Checks on the Validation Screen](automatic-checks-on-the-validation-screen.md) for the relevant check.
 
-* Is it a mandatory field (required)
-* Validation required
-* Low confidence
-* Full tax amount missmatch
-
-**Required Fields:**
-
-* **Purpose:** Identifies mandatory fields within documents that must be filled out or corrected before further processing.
-* **Use Case:** Ensures that essential data is captured accurately, maintaining data integrity and compliance with business rules.
-
-<figure><img src="https://lh7-us.googleusercontent.com/3-ZXi-fUcWlM0nUaOAQbY7bynchbIN30JReKRdijyMFvX_GIHrnbcismANdOi6UfYa6GCPvk9wnOixya0E_rBk3V8hQduS-gBZJi4k0Kq8jeN93DxC2w5J-YRqeV9IkVB6oiH8tm0-y7gWJO_8fBplo" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-required-field-en-2026.png" alt="English DocBits validation screen with a red warning on the invoice number and the matching number visible on a synthetic invoice"><figcaption><p>A field needing attention beside the invoice used to check its value.</p></figcaption></figure>
 
 ## Extracted table (line items)
 

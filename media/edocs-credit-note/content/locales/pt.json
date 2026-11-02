@@ -1,0 +1,93 @@
+{
+  "locale": "pt",
+  "title": "Verificar a classificação das notas de crédito eletrónicas",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "Uma nota de crédito eletrónica aparece como Invoice. Consulte o XML original. O código de tipo 381 identifica uma nota de crédito.",
+      "caption": "Uma nota de crédito eletrónica aparece como Invoice. Consulte o XML original. O código de tipo 381 identifica uma nota de crédito."
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "As regras predefinidas de FACTURX e ZUGFeRD também reconhecem o código 261. Os códigos 383 e 384 significam nota de débito e fatura corrigida. Não os classifique como notas de crédito.",
+      "caption": "As regras predefinidas de FACTURX e ZUGFeRD também reconhecem o código 261. Os códigos 383 e 384 significam nota de débito e fatura corrigida. Não os classifique como notas de crédito."
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "Abra E-Doc para o formato detetado. Uma transformação personalizada da organização tem prioridade sobre a predefinição. Verifique a versão ativa.",
+      "caption": "Abra E-Doc para o formato detetado. Uma transformação personalizada da organização tem prioridade sobre a predefinição. Verifique a versão ativa."
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "Para FACTURX, procure INVOICE_TYPE. Uma constante Invoice pode ignorar o código original de nota de crédito. Compare a transformação personalizada com a predefinida.",
+      "caption": "Para FACTURX, procure INVOICE_TYPE. Uma constante Invoice pode ignorar o código original de nota de crédito. Compare a transformação personalizada com a predefinida."
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "Teste o XML transformado. Verifique se os Extraction Paths leem invoice_type do nó correto para este formato. Reveja os scripts posteriores e o valor guardado.",
+      "caption": "Teste o XML transformado. Verifique se os Extraction Paths leem invoice_type do nó correto para este formato. Reveja os scripts posteriores e o valor guardado."
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "Crie um rascunho. Save não o ativa. Teste faturas e notas de crédito representativas. Ative através da marca de verificação apenas depois de as verificações serem bem-sucedidas.",
+      "caption": "Crie um rascunho. Save não o ativa. Teste faturas e notas de crédito representativas. Ative através da marca de verificação apenas depois de as verificações serem bem-sucedidas."
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "Verifique um novo documento, incluindo os montantes e a exportação. Preserve os mapeamentos personalizados. Antes de reiniciar um documento antigo, verifique as aprovações, as exportações e as alterações manuais.",
+      "caption": "Verifique um novo documento, incluindo os montantes e a exportação. Preserve os mapeamentos personalizados. Antes de reiniciar um documento antigo, verifique as aprovações, as exportações e as alterações manuais."
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "A definição de sinal negativo está ativada por predefinição, mas pode ser desativada. Confirme a classificação e a convenção de sinais esperada pelo Infor ERP ou SAP.",
+      "caption": "A definição de sinal negativo está ativada por predefinição, mas pode ser desativada. Confirme a classificação e a convenção de sinais esperada pelo Infor ERP ou SAP."
+    }
+  ],
+  "labels": {
+    "xml": "XML original",
+    "stored": "Valor guardado",
+    "invoice": "Invoice",
+    "credit": "Credit Note",
+    "credit_codes": "Nota de crédito",
+    "other_codes": "Outros tipos de documento",
+    "debit": "Nota de débito",
+    "corrected": "Fatura corrigida",
+    "source": "Origem efetiva",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "Versão ativa",
+    "transform": "Transformação",
+    "constant": "Valor fixo",
+    "compare": "Comparar origens",
+    "paths": "Extraction Paths",
+    "scripts": "Scripts posteriores",
+    "verify": "Verificar o valor guardado",
+    "draft": "Rascunho",
+    "save": "Guardar",
+    "test": "Testar",
+    "activate": "Ativar",
+    "saved": "Rascunho guardado",
+    "check": "Marca de verificação",
+    "safety": "Novo documento de teste",
+    "preserve": "Preservar os mapeamentos personalizados",
+    "history": "Verificar documentos históricos",
+    "approvals": "Aprovações",
+    "exports": "Exportações",
+    "edits": "Alterações manuais",
+    "sign": "Verificar os sinais dos montantes",
+    "enabled": "Ativada por predefinição",
+    "configurable": "Configurável",
+    "result": "Classificação + exportação",
+    "transformed": "XML transformado"
+  },
+  "notes": {}
+}

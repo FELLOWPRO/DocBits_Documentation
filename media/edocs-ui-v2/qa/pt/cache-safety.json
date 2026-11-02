@@ -1,0 +1,12 @@
+{
+  "locale": "pt",
+  "offline_only": true,
+  "unexcluded_adapter_refuses_ambiguous_checkpoint": true,
+  "selected_request_specs": 40,
+  "selected_missing_requests": 0,
+  "pending_checkpoints_unchanged": [
+    "austria",
+    "brazil",
+    "thailand"
+  ]
+}

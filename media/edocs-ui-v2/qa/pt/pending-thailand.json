@@ -1,0 +1,19 @@
+{
+  "locale": "pt",
+  "country": "thailand",
+  "request_hash": "ea354843f0c64ea286ecfd4fc4b77dd0031390b2c8c338b24e00df461c465f69",
+  "state": "submitting",
+  "request_id": null,
+  "submission_started_at": "2026-10-18T12:27:27.502158+00:00",
+  "failure": "Remote end closed connection without response",
+  "checkpoint_sha256": "26494f76acbe69a495cc459aa6d46f47cdd062af829de71c1bb76d407cb466b9",
+  "request_sha256": "2bb4acb0be13bed5e6b087c0e06de0ba8bdc4e68cc429d5b464f9f1783fa9250",
+  "resubmitted": false,
+  "status": "Unresolved; do not resubmit before reconciliation.",
+  "reconciliation": {
+    "provider_signals_enabled": false,
+    "session_window_start": "2026-10-18T12:25:00Z",
+    "session_window_end": "2026-10-18T12:30:00Z",
+    "matching_sessions": 0
+  }
+}

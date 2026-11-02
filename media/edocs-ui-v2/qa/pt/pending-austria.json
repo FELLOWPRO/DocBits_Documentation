@@ -1,0 +1,19 @@
+{
+  "locale": "pt",
+  "country": "austria",
+  "request_hash": "a170f3ae3625324f638265c2b6ddf15e39f631fbab8b2b4bdd17b1cc87236038",
+  "state": "submitting",
+  "request_id": null,
+  "submission_started_at": "2026-10-18T12:05:27.613470+00:00",
+  "failure": "Remote end closed connection without response",
+  "checkpoint_sha256": "26494f76acbe69a495cc459aa6d46f47cdd062af829de71c1bb76d407cb466b9",
+  "request_sha256": "280632511a3c548d7c3695e5fdccdf8dd7979bd71bddfef1686b257892c65e9a",
+  "resubmitted": false,
+  "reconciliation": {
+    "provider_signals_enabled": false,
+    "session_window_start": "2026-10-18T12:03:00Z",
+    "session_window_end": "2026-10-18T12:08:00Z",
+    "matching_sessions": 0
+  },
+  "status": "Unresolved; do not resubmit without reconciliation. Distinct country narration continues via the retained adapter."
+}

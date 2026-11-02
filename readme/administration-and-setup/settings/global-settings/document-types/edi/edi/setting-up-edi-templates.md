@@ -2,35 +2,40 @@
 hidden: true
 ---
 
-# Setting Up EDI Templates
+# EDI-sjablonen instellen
 
-## Here are step-by-step instructions for setting up EDI templates:
+## EDI-sjablonen stap voor stap instellen
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_cert_metadata.png" alt="Docbits Sso Cert Metadata"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
 
-**Define the structure descriptor:**
+**De structuur beschrijven:**
 
-* Identify the type of EDI message you are working with, e.g. ANSI X12, EDIFACT, or a custom format.
-* Determine the segments, elements, and subelements within the EDI structure.
-* Create a structure descriptor that accurately reflects the hierarchy and organization of the EDI message. This can be done using a special syntax such as XML or JSON.
+* Bepaal het type EDI-bericht waarmee u werkt, bijvoorbeeld ANSI X12, EDIFACT of een eigen formaat.
+* Bepaal de segmenten, elementen en subelementen binnen de EDI-structuur.
+* Maak een structuurbeschrijving die de hiërarchie en ordening van het EDI-bericht nauwkeurig weergeeft, bijvoorbeeld met XML- of JSON-syntaxis.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_access_settings.png" alt="Docbits Sso Access Settings" width="273"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-detail-nl.png" alt="Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor."><figcaption><p>Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor.</p></figcaption></figure>
 
-**Set up transformations:**
+**Transformaties instellen:**
 
-* Use an appropriate tool or software that supports EDI transformations, such as an EDI translator.
-* Define the rules for converting the EDI message to your system's internal format and vice versa.
-* Configure the transformations to interpret and process segments, elements, and subelements according to your system's requirements. Test the transformations thoroughly to ensure that the data is correctly interpreted and formatted.
+* Gebruik een geschikt hulpmiddel dat EDI-transformaties ondersteunt, zoals een EDI-vertaler.
+* Definieer de regels om het EDI-bericht naar het interne formaat van uw systeem om te zetten en omgekeerd.
+* Stel de transformaties zo in dat segmenten, elementen en subelementen volgens de systeemvereisten worden geïnterpreteerd en verwerkt. Test grondig of de gegevens correct worden geïnterpreteerd en opgemaakt.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_idp_config.png" alt="Docbits Sso Idp Config" width="268"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-nl.png" alt="Actief attribuut TRANSFORMATION: XSLT-broncode voor het transformeren van de tussenliggende XML."><figcaption><p>Actief attribuut TRANSFORMATION: XSLT-broncode voor het transformeren van de tussenliggende XML.</p></figcaption></figure>
 
-**Configure extraction paths for optimal data extraction and formatting:**
+**Extractiepaden instellen voor optimale gegevensextractie en opmaak:**
 
-* Identify the data fields to be extracted and transferred to your internal system.
-* Define extraction paths or rules to extract the relevant data fields from the EDI messages.
-* Consider the different variations and formats that may occur in the incoming EDI messages and ensure that the extraction paths are flexible enough to accommodate them.
-* Validate the extraction results to ensure that the correct data fields are extracted and correctly formatted.
+* Bepaal welke velden naar uw interne systeem moeten worden geëxtraheerd en overgedragen.
+* Definieer paden of regels om de relevante velden uit de EDI-berichten te halen.
+* Houd rekening met variaties en formaten in inkomende EDI-berichten en zorg dat de extractiepaden flexibel genoeg zijn om deze te verwerken.
+* Valideer de extractieresultaten om te controleren of de juiste velden correct worden geëxtraheerd en opgemaakt.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_edi_validate_extraction.png" alt="Docbits Edi Validate Extraction" width="92"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-nl.png" alt="Actief attribuut EXTRACTIONPATHS: JSON-configuratie met XPath-expressies voor extractie."><figcaption><p>Actief attribuut EXTRACTIONPATHS: JSON-configuratie met XPath-expressies voor extractie.</p></figcaption></figure>
 
-By carefully defining the structure descriptor, setting up transformations and configuring extraction paths, you can ensure that data extraction and formatting are performed optimally in your EDI templates. This will help improve the efficiency and accuracy of your electronic business communications.
+Door de structuur zorgvuldig te beschrijven en transformaties en extractiepaden goed in te stellen, kunt u de gegevensextractie en opmaak in uw EDI-sjablonen optimaliseren. Dit verbetert de efficiëntie en nauwkeurigheid van elektronische zakelijke communicatie.
+
+
+De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
+
+De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.

@@ -1,47 +1,47 @@
-# Purpose and Scope
+# Doel en reikwijdte
 
-## The purpose and scope of correctly setting up document types in DocBits is critical to ensure the accuracy and efficiency of document processing.&#x20;
+## Documenttypen correct instellen voor nauwkeurige en efficiënte verwerking
 
-### Here are some key points that explain the importance of this process:
+### Waarom een correcte inrichting belangrijk is:
 
-### Purpose of correctly setting up document types Improved document organization
+### Doel: documenten beter ordenen
 
-By accurately classifying documents into specific types, they can be easily categorized and managed. This makes it easier to find and retrieve documents when they are needed.
+Door documenten nauwkeurig in te delen in specifieke typen kunt u ze eenvoudig categoriseren en beheren. Zo zijn documenten gemakkelijker terug te vinden wanneer u ze nodig hebt.
 
-**Automated workflows:**
+**Geautomatiseerde workflows:**
 
-Many document management systems, including DocBits, use document types to drive automated workflows. For example, invoices can be automatically routed for approval while contract documents are sent for signature. Correct document type mapping allows these processes to be carried out efficiently and without errors.
+Veel documentbeheersystemen, waaronder DocBits, gebruiken documenttypen om geautomatiseerde workflows aan te sturen. Facturen kunnen bijvoorbeeld automatisch ter goedkeuring worden doorgestuurd en contracten ter ondertekening. Een correcte documenttypemapping ondersteunt een efficiënte en foutloze uitvoering van deze processen.
 
-**Rights management and security:**
+**Rechtenbeheer en beveiliging:**
 
-Different document types can be subject to different access controls and security levels. By correctly typecasting documents, it can be ensured that only authorized people have access to sensitive information.
+Voor verschillende documenttypen kunnen andere toegangsrechten en beveiligingsniveaus gelden. Door documenten correct in te delen, kunt u de toegang tot gevoelige informatie beperken tot bevoegde personen.
 
-**Compliance and legal requirements:**
+**Naleving en wettelijke vereisten:**
 
-Many industries are subject to strict legal and regulatory requirements regarding the handling of documents. Setting up document types correctly helps ensure that all necessary compliance requirements are met by handling and storing documents according to their category.
+In veel sectoren gelden strenge wettelijke en regelgevende vereisten voor de omgang met documenten. Een correcte inrichting van documenttypen helpt hierbij doordat documenten volgens hun categorie worden verwerkt en opgeslagen.
 
-### Scope of setting up document types correctly
+### Reikwijdte van een correcte inrichting van documenttypen
 
-**Defining specific document types:**
+**Specifieke documenttypen definiëren:**
 
-Every type of document managed in the system should have a clearly defined document type. This includes, for example, invoices, contracts, reports, emails and technical drawings.
+Elk soort document in het systeem moet een duidelijk gedefinieerd documenttype hebben. Denk aan facturen, contracten, rapporten, e-mails en technische tekeningen.
 
-**Attribution and metadata:**
+**Kenmerken en metadata:**
 
-Each document type should have specific attributes and metadata that facilitate its classification and processing. For example, invoices could contain attributes such as invoice number, date and amount, while contracts have attributes such as contract parties, term and conditions.
+Elk documenttype moet specifieke kenmerken en metadata hebben die de classificatie en verwerking ondersteunen. Facturen kunnen bijvoorbeeld een factuurnummer, datum en bedrag bevatten; contracten onder meer contractpartijen, looptijd en voorwaarden.
 
-**Automation rules and workflows:**
+**Automatiseringsregels en workflows:**
 
-Specific rules and workflows should be defined for each document type. This can include automatic notifications, approval processes or archiving policies.
+Definieer voor elk documenttype specifieke regels en workflows, zoals automatische meldingen, goedkeuringsprocessen en archiveringsbeleid.
 
-**Training and user guidance:**
+**Training en gebruikersbegeleiding:**
 
-Users should be trained to use the document types correctly and understand the importance of correct classification. This helps to minimize errors and maximize efficiency.
+Train gebruikers in het correcte gebruik van documenttypen en leg uit waarom een juiste classificatie belangrijk is. Dit helpt fouten te beperken en efficiënt te werken.
 
-**Regular review and adjustment:**
+**Regelmatige controle en aanpassing:**
 
-The document types and associated processes should be regularly reviewed and adjusted as necessary to ensure they continue to meet current business needs and processes.
+Controleer documenttypen en bijbehorende processen regelmatig. Pas ze zo nodig aan, zodat ze blijven aansluiten op de actuele bedrijfsbehoeften en processen.
 
 
 
-Setting up document types correctly is a key aspect of effectively using a document management system like DocBits. Not only does it make documents better organized and easier to find, it also enables automated processes, increases security, and ensures regulatory compliance. To fully realize the benefits, document types must be carefully defined, the corresponding processes implemented, and users trained regularly.
+Documenttypen correct instellen is essentieel voor een effectief gebruik van een documentbeheersysteem zoals DocBits. Het helpt documenten te ordenen en terug te vinden, processen te automatiseren, de beveiliging te verbeteren en regelgeving na te leven. Definieer de typen zorgvuldig, richt de bijbehorende processen in en train gebruikers regelmatig om deze voordelen te benutten.

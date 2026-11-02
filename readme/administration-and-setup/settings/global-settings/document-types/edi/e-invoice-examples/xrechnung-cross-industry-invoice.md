@@ -1,6 +1,6 @@
-# XRechnung Cross Industry Invoice
+# XRechnung Brancheoverschrijdende factuur
 
-Exports to the document management system (IDM):
+Exporteren naar het documentbeheersysteem (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (6) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 

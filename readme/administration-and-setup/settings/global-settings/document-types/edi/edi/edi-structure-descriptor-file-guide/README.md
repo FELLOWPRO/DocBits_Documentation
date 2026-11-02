@@ -51,3 +51,13 @@ Dit is vooral handig voor het debuggen van mappings en het valideren van structu
 ## 6. Video Doorloop
 
 Een videogids voor dit bestandstype is beschikbaar op de [Video's pagina.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Gebruik het om mee te doen met de installatie, bewerking en voorbeeldweergave.
+
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-detail-nl.png" alt="Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor."><figcaption><p>Actief attribuut STRUCTUREDESCRIPTOR: JSON-structuurbeschrijving in de alleen-lezen editor.</p></figcaption></figure>
+
+
+De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
+
+De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.

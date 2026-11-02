@@ -1,6 +1,8 @@
-# Document Type
+# Tipo de documento
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1-es-es.png" alt="Tipo de documento, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-es-es.png" alt="Tipo de documento, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## Propósito:
 
@@ -8,12 +10,12 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si un documento co
 
 ## Componentes de la tarjeta:
 
-1. **Operator**
+1. **Operador**
    * **Descripción**: Define si el documento debe ser del tipo especificado o no.
    * **Opciones**:
      * **Is**: El documento debe coincidir con el tipo especificado para que la condición sea verdadera.
-     * **Is Not**: El documento no debe coincidir con el tipo especificado para que la condición sea verdadera.
-2. **Type**
+     * **no es**: El documento no debe coincidir con el tipo especificado para que la condición sea verdadera.
+2. **Tipo**
    * **Descripción**: Especifica el tipo de documento con el que comparar.
    * **Detalle**: Incluye una variedad de tipos de documento como "Invoice", "Purchase Order", etc., en función de los cuales se evaluará la condición (is/is not).
 
@@ -31,3 +33,15 @@ Esta tarjeta de flujo de trabajo está diseñada para evaluar si un documento co
 ## Conclusión:
 
 La tarjeta de flujo de trabajo "Document Type Comparison" es esencial para garantizar que los flujos de trabajo continúen según el tipo de documento que se está procesando. Al comparar el tipo de documento, ayuda a las organizaciones a automatizar las tareas de enrutamiento y procesamiento de documentos, garantizando que los documentos se manejen de forma adecuada según su tipo.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Ejecute una verificación específica de la factura.
+
+**Configuración:** Seleccione el tipo de documento `Invoice` y el operador igual.
+
+**Resultado esperado y contraejemplo:** Se aprueba una factura. Una nota de crédito no pasa esta condición.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

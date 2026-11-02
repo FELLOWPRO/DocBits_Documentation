@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Quantity Export
+# Factura de compra: exportación tras la segunda aprobación de cantidad
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_6.png" alt="DocBits Compra Pedido Exportar 6"><figcaption></figcaption></figure>
+
 
 Este título indica que la regla está configurada para gestionar la segunda fase de aprobación de las facturas de compra, con énfasis en los detalles de cantidad, garantizando que las cantidades de la factura coincidan con las del pedido de compra original.
 
@@ -19,8 +19,8 @@ Este título indica que la regla está configurada para gestionar la segunda fas
 
 #### Propósito de esta regla:
 
-* **Ensure Accuracy and Consistency**: Al verificar que las cantidades coinciden entre la confirmación del pedido y el pedido de compra, el sistema ayuda a mantener la exactitud del inventario y evita discrepancias que podrían afectar a la generación de informes financieros o a la gestión de existencias.
-* **Streamline Financial Processing**: La automatización de la exportación de datos una vez confirmadas las cantidades reduce el tratamiento manual y acelera el ciclo de procesamiento financiero.
-* **Enhance Compliance and Oversight**: Exigir una segunda aprobación para la verificación de cantidades añade una capa adicional de supervisión, crucial para el cumplimiento de las políticas y controles financieros.
+* **Garantizar la precisión y la coherencia**: Al verificar que las cantidades coinciden entre la confirmación del pedido y el pedido de compra, el sistema ayuda a mantener la exactitud del inventario y evita discrepancias que podrían afectar a la generación de informes financieros o a la gestión de existencias.
+* **Agilizar el procesamiento financiero**: La automatización de la exportación de datos una vez confirmadas las cantidades reduce el tratamiento manual y acelera el ciclo de procesamiento financiero.
+* **Mejorar el cumplimiento y la supervisión**: Exigir una segunda aprobación para la verificación de cantidades añade una capa adicional de supervisión, crucial para el cumplimiento de las políticas y controles financieros.
 
 Esta regla es un claro ejemplo de cómo la automatización de flujos de trabajo puede utilizarse eficazmente para garantizar un tratamiento preciso y eficiente de los documentos financieros dentro de una organización, especialmente en el contexto de los procesos de compra que implican grandes volúmenes de transacciones que requieren una validación meticulosa.

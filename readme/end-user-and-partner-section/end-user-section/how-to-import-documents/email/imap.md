@@ -2,13 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
+Elija IMAP como protocolo e introduzca los datos de su proveedor de correo: nombre del servidor, puerto, encriptación, nombre de usuario, correo electrónico y contraseña. En los pasos siguientes define las opciones y la carpeta de correo.
 
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-es-20261006.png" alt="Cuadro de diálogo de configuración del servidor de correo con protocolo IMAP, nombre del servidor, puerto 993, encriptación SSL, usuario, correo electrónico y contraseña"><figcaption><p>Configuración del servidor con valores de ejemplo. Sustitúyalos por los datos de su proveedor de correo.</p></figcaption></figure>
 
-Aquí solo necesitas ingresar la información requerida para tu proveedor de correo electrónico, encriptación, nombre del servidor, puerto, nombre de usuario, dirección de correo electrónico, contraseña, así como la carpeta de correo electrónico.
+Aspectos a tener en cuenta
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
-
-Cosas a tener en cuenta
-
-* Ingresa toda la información necesaria en la interfaz de usuario. Otra información como el servidor, puerto, etc. Depende del proveedor (una búsqueda rápida en Google debería ayudar).
-* La carpeta y Mover-Importado tienen la misma función aquí. La carpeta no se puede desactivar, pero usará la Bandeja de entrada de forma predeterminada si se deja vacía.
+* Introduzca toda la información necesaria en la interfaz. Otros datos, como el servidor o el puerto, dependen del proveedor (una búsqueda rápida en Internet puede ayudar).
+* Carpeta y Mover importados cumplen aquí la misma función. La carpeta no se puede desactivar, pero si se deja vacía se usa la bandeja de entrada por defecto.

@@ -73,7 +73,7 @@ cambios visibles para el cliente._
   contexto de su suborganización, no en el contexto del documento que
   casualmente esté abierto.
 
-### Workflow Builder
+### Editor de flujos de trabajo
 
 - La lista de flujos de trabajo conserva su búsqueda, orden, página y tamaño
   de página cuando abre un flujo de trabajo y vuelve, incluso a través de la

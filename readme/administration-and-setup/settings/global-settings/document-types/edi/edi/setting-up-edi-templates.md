@@ -2,35 +2,22 @@
 hidden: true
 ---
 
-# Configuración de Plantillas EDI
+# Configurar atributos EDI
 
-## Aquí hay instrucciones paso a paso para configurar plantillas EDI:
+Seleccione el formato real del mensaje y el tipo de documento. Revise los atributos existentes y las versiones activas antes de modificar la configuración.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_cert_metadata.png" alt="Docbits Sso Cert Metadata"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-es.png" alt="Formato EDI existente con sus cuatro atributos configurados."><figcaption><p>Formato EDI existente con sus cuatro atributos configurados.</p></figcaption></figure>
 
-**Definir el descriptor de estructura:**
+Defina los segmentos, elementos y bucles en un descriptor de estructura JSON. Pruebe mensajes representativos e inspeccione el XML intermedio generado.
 
-* Identifique el tipo de mensaje EDI con el que está trabajando, por ejemplo, ANSI X12, EDIFACT o un formato personalizado.
-* Determine los segmentos, elementos y subelementos dentro de la estructura EDI.
-* Cree un descriptor de estructura que refleje con precisión la jerarquía y organización del mensaje EDI. Esto se puede hacer utilizando una sintaxis especial como XML o JSON.
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-detail-es.png" alt="Atributo STRUCTUREDESCRIPTOR activo: descriptor de estructura JSON en el editor de solo lectura."><figcaption><p>Atributo STRUCTUREDESCRIPTOR activo: descriptor de estructura JSON en el editor de solo lectura.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_access_settings.png" alt="Docbits Sso Access Settings" width="273"><figcaption></figcaption></figure>
+Utilice TRANSFORMATION con XSLT para convertir el XML intermedio en el XML estándar requerido. Configure PREVIEW por separado para la presentación; XSLT no transforma directamente el JSON.
 
-**Configurar transformaciones:**
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-es.png" alt="Atributo TRANSFORMATION activo: código XSLT para transformar el XML intermedio."><figcaption><p>Atributo TRANSFORMATION activo: código XSLT para transformar el XML intermedio.</p></figcaption></figure>
 
-* Utilice una herramienta o software adecuado que admita transformaciones EDI, como un traductor EDI.
-* Defina las reglas para convertir el mensaje EDI al formato interno de su sistema y viceversa.
-* Configure las transformaciones para interpretar y procesar segmentos, elementos y subelementos de acuerdo con los requisitos de su sistema. Pruebe las transformaciones a fondo para asegurarse de que los datos se interpreten y formateen correctamente.
+Configure EXTRACTIONPATHS como JSON con expresiones XPath para el XML resultante. Compruebe campos, filas e importes con ejemplos reales. Valide un borrador antes de activarlo; las capturas muestran una configuración activa existente.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_sso_idp_config.png" alt="Docbits Sso Idp Config" width="268"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-es.png" alt="Atributo EXTRACTIONPATHS activo: configuración JSON que contiene expresiones XPath de extracción."><figcaption><p>Atributo EXTRACTIONPATHS activo: configuración JSON que contiene expresiones XPath de extracción.</p></figcaption></figure>
 
-**Configurar rutas de extracción para una extracción y formato de datos óptimos:**
-
-* Identifique los campos de datos que se extraerán y transferirán a su sistema interno.
-* Defina rutas o reglas de extracción para extraer los campos de datos relevantes de los mensajes EDI.
-* Tenga en cuenta las diferentes variaciones y formatos que pueden ocurrir en los mensajes EDI entrantes y asegúrese de que las rutas de extracción sean lo suficientemente flexibles para acomodarlos.
-* Valide los resultados de la extracción para asegurarse de que se extraigan los campos de datos correctos y se formateen correctamente.
-
-<figure><img src="../../../../../../.gitbook/assets/docbits_edi_validate_extraction.png" alt="Docbits Edi Validate Extraction" width="92"><figcaption></figcaption></figure>
-
-Al definir cuidadosamente el descriptor de estructura, configurar las transformaciones y configurar las rutas de extracción, puede asegurarse de que la extracción y el formato de los datos se realicen de manera óptima en sus plantillas EDI. Esto ayudará a mejorar la eficiencia y precisión de sus comunicaciones comerciales electrónicas.
+Algunas etiquetas, como Custom, Default, Version y Last Modified At, siguen apareciendo en inglés en la interfaz actual del producto. Los identificadores técnicos de atributos y el código de configuración se conservan sin cambios.

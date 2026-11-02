@@ -1,70 +1,22 @@
 # eSLOG 1.6 y 2.0
 
-## Versiones de Factura eSLOG Soportadas
+**eSLOG 1.6** y **eSLOG 2.0** aparecen como formatos de factura electrónica separados en DocBits. Elija la versión que utiliza su factura eslovena entrante. Las capturas muestran la interfaz en español de una organización de pruebas de documentación. Los nombres, las versiones y las fechas existentes están enmascarados; las imágenes no demuestran que se haya procesado correctamente una factura de ninguna de las dos versiones.
 
-Actualmente, **se soportan las versiones de factura eSLOG 1.6 y 2.0**.
+## Buscar las configuraciones
 
-Para la documentación oficial de eSLOG, puedes consultar [este enlace](https://epos.si/en/eslog).
+1. Vaya a **Ajustes → Tipos de Documento → Factura → E-Doc**.
+2. Despliegue **E-SLOG 1.6** o **E-SLOG 2.0**. Cada formato tiene sus propias tres entradas.
 
-Ambas versiones de eSLOG están habilitadas por defecto.
+<figure><img src="../../../../../.gitbook/assets/dbdc-106-eslog-16-native-es-20261101.png" alt="Lista E-Doc en español para E-SLOG 1.6 con tres filas de configuración; nombres, versiones y fechas existentes enmascarados"><figcaption>E-SLOG 1.6: de arriba abajo, Transformación, Vista previa y Rutas de extracción. Esta vista de prueba contiene dos filas Defecto y una fila A medida existente. Los nombres, las versiones y las fechas están enmascarados.</figcaption></figure>
 
-## Pasos para Modificar la Configuración de eSLOG
+<figure><img src="../../../../../.gitbook/assets/dbdc-106-eslog-20-native-es-20261101.png" alt="Lista E-Doc en español para E-SLOG 2.0 con tres filas de configuración; nombres, versiones y fechas existentes enmascarados"><figcaption>E-SLOG 2.0: entradas separadas para los mismos tres pasos, aquí todas marcadas como Defecto. Los nombres, las versiones y las fechas están enmascarados.</figcaption></figure>
 
-**Configurar eSLOG:**
+| Entrada | Qué controla | Guía siguiente |
+| --- | --- | --- |
+| **TRANSFORMATION (XSLT)** | Convierte los datos fuente del formato en XML estructurado. | [Transformación](edi/edi-transformation-file-guide.md) |
+| **PREVIEW (XSLT)** | Define la vista legible del documento. | [Vista previa](edi/edi-preview-file-guide.md) |
+| **EXTRACTION PATHS (JSON)** | Asigna los valores XML a los campos y columnas de tabla de DocBits. | [Rutas de extracción](edi/edi-extraction-paths-file-guide.md) |
 
-* Navega a **Ajustes → Ajustes Global → Tipos de Documentos → Factura**.
-*   Haz clic en **E-Doc**.\
+Haga clic en una fila para ver sus versiones y su configuración. **Defecto** identifica la entrada proporcionada. **Fecha de última modificación** muestra cuándo se cambió por última vez esa entrada. El botón **Nuevo** abre el formulario para una entrada de configuración adicional. El menú de tres puntos de una fila **Defecto** ofrece **Personalizar**, que crea una copia específica de la organización, y **Borrar**; revise con atención la fila seleccionada antes de usar Borrar.
 
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_supplier_invoice.png" alt="DocBits Proveedor Factura"><figcaption></figcaption></figure>
-* Aparecerá una lista de todos los e-docs disponibles.
-*   Localiza la versión de eSLOG que deseas modificar.\
-
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_docbits_image_5.png" alt="DocBits DocBits Imagen 5"><figcaption></figcaption></figure>
-
-### **Configuración de Transformación y Ruta XML:**
-
-En la **configuración de transformación**, puedes definir la ruta para localizar información específica dentro del archivo XML y guardarla en una nueva estructura, facilitando el acceso a los datos. **Nota:** Si utilizas esta funcionalidad, debes usar las nuevas rutas XML creadas, no las rutas XML originales, en la **Vista Previa** y en la **Ruta de Extracción**.
-
-#### **Pasos para Modificar el Archivo de Transformación:**
-
-1. Abre la **Transformación**.
-2. Crea un nuevo borrador haciendo clic en el **icono de lápiz**.
-3. Selecciona el borrador recién creado.
-4. Crea un nuevo campo o modifica uno existente.
-5. Establece la ruta deseada para la extracción de datos.
-6. Haz clic en **Guardar**.
-
-### Configuración de Vista Previa PDF
-
-La **Configuración de Vista Previa PDF** se utiliza para generar una versión legible por el usuario del documento. Puedes personalizarla con HTML para adaptarla a tus necesidades.
-
-#### **Pasos para Modificar el Archivo de Vista Previa:**
-
-1. Abre la **Vista Previa**.
-2. Crea un nuevo borrador haciendo clic en el **icono de lápiz**.
-3. Selecciona el borrador recién creado.
-4. Crea un nuevo campo o modifica uno existente.
-5. Establece la ruta deseada para la extracción de datos.
-6. Haz clic en **Guardar**.
-
-### Configuración de Rutas de Extracción
-
-La **Configuración de Rutas de Extracción** se utiliza para extraer datos y llenar campos en la **pantalla de validación**, como la tabla de facturas o campos configurados en el diseño de la factura.
-
-#### **Pasos para Modificar las Rutas de Extracción**:
-
-1. Abre las **Rutas de Extracción**.
-2. Crea un nuevo borrador haciendo clic en el **icono de lápiz**.
-3. Selecciona el borrador recién creado.
-4. Crea un nuevo campo o modifica uno existente.
-5.  El lado izquierdo representa el **ID de campo de DocBits**, que se puede encontrar en **Configuración → Configuración Global → Tipos de Documentos → Factura → Campos**.\
-    \
-
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_error_approval.png" alt="DocBits Error Aprobación"><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Configuración Flujo de trabajo"><figcaption></figcaption></figure>
-6. El lado derecho representa la **ruta al campo** creado en la Transformación.
-7. Haz clic en **Guardar**.
+Dentro de una configuración, el lápiz junto a una versión activa crea un borrador. Compruebe el borrador con el panel de prueba **Preview** y un ID de documento subido representativo antes de activarlo con la marca de verificación. El icono de papelera de un borrador elimina ese borrador. Los nombres de campo y las rutas XML reales dependen de su archivo eSLOG; consulte la guía correspondiente de arriba para conocer los detalles del editor.

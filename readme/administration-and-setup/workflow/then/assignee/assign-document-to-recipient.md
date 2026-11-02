@@ -1,36 +1,36 @@
-# Assign document to recipient
+# Asignar documento al destinatario
 
-<figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_assign_doc_v1-es-es.png" alt="Asignar documento al destinatario, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
 
-## **Propósito:**
+<figure><img src="../../../../.gitbook/assets/workflow_card_oc_assign_doc_v2-es-es.png" alt="Asignar documento al destinatario, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
-La tarjeta de flujo de trabajo **"Assign Document to Disponent / Purchaser"** asigna un documento a un **Disponent** o a un **Purchaser**. Si no se encuentra ningún usuario válido, se selecciona un usuario alternativo para garantizar que el documento siempre se asigne a alguien.
+## Propósito
 
-## **Componentes de la tarjeta:**
+La tarjeta asigna un **documento** al destinatario que se resuelva según su configuración y permite indicar un usuario alternativo. La versión 2 mostrada contiene los campos **Destinatario** y **Usuario** como alternativa; ambos están sin configurar en la imagen.
 
-1. **Disponent / Purchaser**
-   * **Descripción:** Especifica si el documento se asignará a un Disponent o a un Purchaser.
-   * **Opciones:**
-     * **Disponent:** Asigna el documento al Disponent.
-     * **Purchaser:** Asigna el documento al Purchaser.
-2. **Fallback User**
-   * **Descripción:** Especifica un usuario alternativo en caso de que el documento no pueda asignarse al Disponent o Purchaser seleccionado.
-   * **Detalle:** La lista desplegable de usuarios disponibles le permite elegir un usuario alternativo para garantizar que el documento se asigne aunque no se pueda determinar el usuario principal.
+## Componentes de la tarjeta
 
-## **Funcionalidad:**
+* **Destinatario:** seleccione la opción que corresponda al flujo de su organización y compruebe cómo se resuelve en los documentos de prueba. La captura no muestra una selección ni una lista de opciones abierta.
+* **Usuario como alternativa:** configure un usuario autorizado para la ruta de respaldo. La tarjeta no selecciona por sí sola un administrador universal para todos los casos.
 
-* **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
-* **Asignación del documento:**\
-  La tarjeta asigna el documento al **Disponent** o al **Purchaser** según lo seleccionado. Si la persona seleccionada no está disponible o no es válida, el documento se asigna al usuario alternativo.
+## Configuración y comprobación
 
-## **Configuración:**
+1. Sitúe la acción en la ruta del flujo donde deba realizarse la asignación.
+2. Configure el destinatario principal y el usuario alternativo.
+3. Pruebe un documento que permita resolver al destinatario principal.
+4. Pruebe por separado un documento cuyo destinatario principal no pueda resolverse y compruebe el respaldo configurado.
+5. Revise la asignación almacenada y los registros. Si ninguna ruta proporciona un usuario válido, corrija la configuración; la presencia de un campo alternativo no garantiza una asignación correcta en cualquier situación.
 
-* **Seleccionar Disponent / Purchaser:**\
-  Elija si asignar el documento al **Disponent** o al **Purchaser**.
-* **Seleccionar el Fallback User:**\
-  Elija un usuario alternativo de la lista desplegable que recibirá el documento si la asignación principal no es posible.
+La acción se evalúa cuando el flujo alcanza su ruta configurada. Asignar un documento es independiente de aprobarlo, completar una tarea o exportarlo.
 
-## **Conclusión:**
+<!-- workflow-card-practical-example-20261021 -->
 
-La tarjeta de flujo de trabajo **"Assign Document to Disponent / Purchaser"** garantiza que el documento siempre se asigne, ya sea al Disponent/Purchaser seleccionado o, si es necesario, al usuario alternativo. Esto minimiza las interrupciones del flujo de trabajo y garantiza que el procesamiento de documentos continúe sin problemas.
+## Ejemplo práctico
+
+**Cuándo usarlo:** Dirija un documento a su destinatario resuelto y prepare una ruta de respaldo.
+
+**Configuración:** Seleccione el origen del destinatario y el usuario alternativo `Demo Reviewer A`.
+
+**Resultado esperado y contraejemplo:** Un destinatario que se puede resolver recibe el documento. Si no puede resolverse, pruebe que se utiliza el usuario alternativo configurado. Un usuario inexistente o sin acceso no constituye un respaldo válido.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos de su organización de prueba; este ejemplo no afirma que se haya ejecutado una asignación.

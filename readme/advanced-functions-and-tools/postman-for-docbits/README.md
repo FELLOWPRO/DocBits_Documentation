@@ -1,160 +1,69 @@
-# Postman for DocBits
+# Postman para DocBits
 
-This guide will show you how to make HTTP requests to your DocBits organization via Postman. It is easy to use and very useful for organization administrators.
+Con Postman puede enviar solicitudes HTTP a la API de DocBits. Empiece con una solicitud de solo lectura en un entorno que esté autorizado a usar. Separe los entornos de prueba y producción y guarde las credenciales en variables privadas o en un almacén de secretos.
 
-## Setup
+## Configuración
 
-First, download Postman to your system and sign in/register.
+### API de DocBits
 
-Now follow this step-by-step guide to learn how HTTP requests work in Postman.
+Abra la documentación de la API del entorno correspondiente, por ejemplo, la [API de Sandbox](https://sandbox.api.docbits.com/docs) o la [API de producción](https://api.docbits.com/docs). Utilice las rutas actuales de las operaciones y el valor **Servers** que aparece allí. Una ruta de servidor relativa se añade al origen de la API.
 
-Authorization in Postman
+En la [documentación de Dev comprobada aquí](https://eu.dev.api.docbits.com/docs), la ruta es `/dev-api`. Por tanto, la URL base completa es `https://eu.dev.api.docbits.com/dev-api`. Otros entornos pueden usar otra ruta de servidor.
 
-Before you can create your HTTP requests, you need to enter your API key from DocBits to authorize them.
+La especificación de la API enumera varios esquemas de cabecera distintos:
 
-* Click on the \`Authorization\` tab and choose \`API Key\` as authorization type.
+| Cabecera | Finalidad |
+| --- | --- |
+| `X-ORG-ID` | Identifica la organización de destino cuando la operación lo requiere. |
+| `Authorization` | Contiene el valor de autorización exigido por el mecanismo de autenticación correspondiente. |
+| `X-API-KEY` | Contiene una clave de API para las operaciones que usan ese esquema. |
 
-![](https://lh7-us.googleusercontent.com/L3GaBZJvReeINaKbkq3VYQ9UHTBoKUA3nJkfyLqk61q5xaOJnmMLhbrEbgUgLEyYRkewHuLIAVzoYCZ6quHq0pwx\_69FEYJjzYllivB8WzdAtTFSrzl8VeFthbMsEB9sGjcGlVN38DXEXUwuNEPL6hg)
+Estas cabeceras no son intercambiables. El diálogo global **Authorize** muestra los esquemas disponibles; no todas las operaciones necesitan todos ellos. Consulte los parámetros y la autorización de la operación concreta.
 
-* Fill in the values. Enter “X-API-key” in the \`Key\` field and your API Key as value (found in DocBits Settings menu under Integration) Select Add to \`Header\`.
+Solicite las credenciales adecuadas a su administrador. Los usuarios autorizados encuentran la gestión de claves en **Ajustes → Integración y SSO → Claves API**. La lista muestra el prefijo de clave, el nombre, la caducidad, el último uso y el estado. Las filas existentes están cubiertas en la captura.
 
-&#x20;
+<figure><img src="../../.gitbook/assets/dbdc-44-key-management-es-20261031.png" alt="Vista real de Dev en español de Claves API con Crear clave API y las columnas Llave, Nombre, Caduca, Último Uso, Estado y Acciones; las filas existentes están cubiertas."><figcaption><p>Vista real de Dev en español de Claves API con Crear clave API y las columnas Llave, Nombre, Caduca, Último Uso, Estado y Acciones; las filas existentes están cubiertas.</p></figcaption></figure>
 
-* It should look like this:
+**Crear clave API**, situado sobre la lista, abre primero un formulario vacío con **Nombre de la clave**, **Descripción** y **Vencimiento**. Solo al enviarlo se crea una clave. El formulario de la captura se cerró con **Cancelar**, sin enviarlo. No se creó, mostró, copió ni revocó ninguna clave. Cree claves únicamente según sus permisos y las normas de su organización.
 
-![](https://lh7-us.googleusercontent.com/SmNfci4z8ECTeXzFPE9YQ8nCzCRHglc\_7RR1cN8a8F7KvYWjJcBnY5wpl7q0AV8bfNLkMk8F4F4aw8j4xMK50HJweBRBPo8EasTn-FG-fmlUJQ41aUX-dvTeWP\_xJQThi8A6EwJl3qIc-Dw1B5W9fVE)
+<figure><img src="../../.gitbook/assets/dbdc-44-blank-key-form-es-20261031.png" alt="Formulario vacío Crear clave API en español con Nombre de la clave, Descripción, Vencimiento, Cancelar y Crear; Crear está desactivado mientras el nombre esté vacío."><figcaption><p>Formulario vacío Crear clave API en español con Nombre de la clave, Descripción, Vencimiento, Cancelar y Crear; Crear está desactivado mientras el nombre esté vacío.</p></figcaption></figure>
 
-### DocBits API
+### Crear un espacio de trabajo en Postman
 
-Available at https://api.polydocs.io
+Abra Postman y use un espacio de trabajo con la visibilidad adecuada para su organización. Cree un entorno con la variable `base_url` y asígnele la URL base completa, incluida la ruta del servidor. Seleccione ese entorno antes de enviar una solicitud. La [guía de entornos de Postman](https://learning.postman.com/docs/use/send-requests/variables/managing-environments/) explica cómo seleccionar y usar las variables.
 
-* Click on Authorize in the upper right corner
+Cree una solicitud o añádala a su colección. Los siguientes nombres de controles de Postman corresponden a las etiquetas técnicas de la aplicación; las imágenes anteriores muestran la gestión de claves de DocBits en español.
 
-![](https://lh7-us.googleusercontent.com/kuztHpkmRWlOYSU27r97KH15SJHPF\_hn\_eX3C1DYLVYCwMHXfLjYSyFubUCvlQiBt5q3xY0XBPmkcP6AnKF2C0Mdtx3tg\_dU\_qxqAmI6axYIsXR36\_YBz6j455K3-c2SBu4YzmYIXq8VXQxzgL-0j90)
+## Ejemplo del método "GET"
 
-* Enter your API Key and confirm by clicking \`Authorize\`
+Seleccione **GET** y la URL `{{base_url}}/version`. En **Authorization**, elija **No Auth** y después **Send**. La solicitud de Dev de solo lectura que se comprobó fue:
 
-![](https://lh7-us.googleusercontent.com/zLhgpdjMnxqNBdjgtDxFEKglICIZul7dgmfFFm2hSnsDQ-HsZHRKRikZ0lcanGYkkZj4waC85mEUFO951ydVnY\_\_m\_TrMrsK3vrDv9FKL-adgWL4lJqp3cSxPeClBm9IHG2cXinRsv12xTeh3psQfO4)
+```http
+GET https://eu.dev.api.docbits.com/dev-api/version
+```
 
-### Create a new Workspace in Postman
+El endpoint devolvió HTTP 200 sin clave de API. Comprueba la disponibilidad de la API y devuelve información de versión. No demuestra el acceso a documentos o usuarios de una organización. Revise el estado y el contenido de la respuesta; si falla, compruebe primero el entorno seleccionado, el origen de la API y la ruta del servidor.
 
-* Click on Workspaces and create a new workspace (you can name it whatever you want
+Para una operación que use una clave de API, seleccione **Authorization → API Key** en Postman. Introduzca `X-API-KEY` en **Key**, use un secreto privado como **Value** y seleccione **Header** en **Add to**. Añada `X-ORG-ID` en **Headers** si la operación lo requiere. Consulte las guías oficiales de [autorización con clave de API](https://learning.postman.com/docs/use/send-requests/authorization/authorization-types/#api-key) y [secretos de Vault](https://learning.postman.com/docs/use/postman-vault/use-vault-secrets/).
 
-![](https://lh7-us.googleusercontent.com/3rZw7jhOgVpkZuer58fPEKqDspJjK3S1lp3XpQuvE4c9212a0ALB-p7oLRwPqEbj10MpoCWsb7V9fPqiAdVvigE00x9mN5-lHFXZVVxlkeroBJd2ratgkJVJDM4LJkUJsycyl6tnFKazcFPY-vWtH2Q)
+## Ejemplo del método "POST"
 
-* You have to select the visibility which determines who can access this workspace.
+**POST** puede crear datos o iniciar un procesamiento. Copie el método, la ruta, los parámetros obligatorios y el esquema del cuerpo de la especificación actual de la API. Ejecute estas solicitudes solo para una tarea concreta y autorizada. Una consulta de versión correcta no demuestra que una solicitud de escritura vaya a funcionar.
 
-![](https://lh7-us.googleusercontent.com/ZajvDtMvfM5J\_Go3n\_PgzD3RXTMQAlST8\_3WnsTQ4-iw7e0QdAa3wqFk7Y0gt78IJVjNTN-5E72c1127CpXJWb8WbfDolxENLqxg5VZLPEK7-hxsNwbAyMceSHfeVy6v-b9QT0kFwnMibWndEAJ2lXA)
+### Cargar documento
 
-* After making your selection and clicking \`Create Workspace\` select Collections on the left side of the application and create a new collection for your HTTP requests by clicking \`+\`.
+Antes de cargar un documento, consulte la operación documentada actualmente. Si requiere datos de formulario multipart, seleccione ese tipo de cuerpo y use los nombres de campos y tipos de archivo indicados. No los deduzca de una captura de una versión anterior de la API. No se cargó ningún documento para esta guía.
 
-![](https://lh7-us.googleusercontent.com/mbC5t86vaB2G7FQp-40XN-SHc019LKitfUeXRzbcG4HpNai5FPapShx9swHX3mz0va8QFsUQiYn-bhjvER0XYOEDRJpI9x3wG4NgRZCd4beU1NyKJd86bSGubxVbRCtz8HkTDZd28Z7Ice3rmscFMMo)
+## Ejemplo del método "DELETE"
 
-In this collection, you can add multiple HTTP requests. To do this, click on the 3 points of the collection and select \`Add request\`.
+**DELETE** puede eliminar datos de forma permanente. Compruebe la operación concreta, el identificador de destino y los permisos necesarios. Aquí no se ejecutó ninguna eliminación ni se afirmó que se hubiera probado con éxito.
 
-![](https://lh7-us.googleusercontent.com/S5W75clJz7JqoIWPbKBjrJqpTAwjS51Pu4dTU160Q7i6oW-HPnb7aN8WRK2AyAb6-HEqTYMZTy9563P0sq53MAjGpVg1JivZX2ATHa6GeFbTX2UCjud7ot8Y\_ksBuUbUfyEfxIDziV8TN3zDfX9Se58)
+## Ejemplo del método "PUT"
 
-## "GET" Method example
+**PUT** puede modificar datos existentes. Utilice únicamente los parámetros y el esquema del cuerpo de la operación actual y confirme el alcance del cambio solicitado. Aquí no se ejecutó ninguna modificación.
 
-The GET method is very useful for getting information about users, sub-organizations, processed documents, and much more.
+## Cambiar la dirección de correo de un usuario
 
-* Choose the GET method in your HTTP request.
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL. For example:
+Obtenga la ruta y los campos obligatorios de la especificación actual de la API y haga revisar el cambio del usuario antes de ejecutarlo. Esta guía no utiliza datos reales de usuarios u organizaciones ni demuestra un cambio de correo electrónico realizado con éxito.
 
-![](https://lh7-us.googleusercontent.com/pIdgyqP7g1UwZbY5yaz1KAnKe\_ESs\_kQyiWAXXM-ukRKakS\_\_OL\_LS9J-07hZnZDf8QqtoN\_lKyuhvOIIIF-4Wp0dkofZYQwXZ0hu2RM0YogRxJah-zf8W\_cDNFf8xsec1tYIsfe0SpBuvdCG4WHMU0)
-
-* Now paste this link in the text box next to the GET method in Postman.
-
-Click \`Send\` and you should receive all the information about every user in your organization.
-
-## "POST" Method example
-
-The POST method is usually used to create users or organizations, for example. This method inserts information into the database.
-
-Create User
-
-* Select the POST Method.
-* Authorize yourself as described above
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL. In this case:
-
-![](https://lh7-us.googleusercontent.com/Gwabl4pN0k0NanHsFOzJj9s2H7ExS-JcWr-Y4EW0FLUYHfnaOZoMWvldJ6yDI33p\_DThVx0Rd5bi59XdOK11l1knc5rd-E5HXMw6v5E3qvHvKVWHlp21S728SVye6KU2W5ZeXtCIOzxBAcMlA2UNFfQ)
-
-* Now paste this link into the text box next to the POST method in Postman.
-* Select the \`Body\` tab in your HTTP request and enter the keys and the values ​​for each credential that has a red asterisk next to its name.
-
-When you’re done, it should look like this:
-
-![](https://lh7-us.googleusercontent.com/lSExzZSbTcSRvuLDw0HNYE62yI7xs0eUewKuOcABCGYfsRBRbGz1lJxopR4QdUEoniCnZ83FKpz-AHLORP5cXGPrPhgouzE6zO920jA7A3r-Y14wY\_Gc3C98R2fcxXsWRMcle9qT981YWhCnjlUukPE)
-
-If you want to create an admin account, set the \`is\_admin\` value to true.
-
-&#x20;Finally, click \`Send\` and you can see all the credentials you set in the response below. This means the user has been created.
-
-### Upload Document
-
-You can also use the POST method to upload a document to DocBits.
-
-* Select the POST Method.
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL.&#x20;
-
-In this case:
-
-![](https://lh7-us.googleusercontent.com/-EwhMeH\_WXYVmMKus1-IZKLZNyTcYktcf\_YUT\_m2nfStfKXuBxKBb1MZfUIQCN4ZxNKQkNhvO\_pgnt1EUhNB34qG5AOe4wM0OxGRMQsV9a8h0XUgabqq8mLQhza\_AE7gxBetmb9bJmaWBQqEXrWT0VI)
-
-* Now paste this link into the text box next to the POST method in Postman.
-* Select the \`Body\` tab in your HTTP request and choose \`form-data\`
-
-![](https://lh7-us.googleusercontent.com/TNrKlyorn\_5YrIu5r4vcfyYgAnfhsl-SRVqWg9RoN0X1pUjXtn6J0EI7aeQ-oc2ZtFeTj8POcMXy6CwXzI1jhv-ufb2u7d80SC-lbGXmnx\_jVDunAbRw1jqAsB4PPsEzcFIOPeH5PJZvytUW2kIDYZ4)
-
-![](https://lh7-us.googleusercontent.com/scAJpTSCqYSKYNNGPIrEsL0zDJIa7Dhe9tpqv\_zDjdLyAydugzdGA1s93njbFOOVbVbQf7oDEtRc14Kt4p1TXX8A--WjvRgeXWsAxDNWdrCN2-QDeya6-FFEG4\_-dhYgrj4yrVYllJs8eZsUgKOPvzo)
-
-Enter file into the \`KEY\` field where you will find the hidden File dropdown. Select \`File\` and move to the \`VALUE\` field where you are able to select your file by clicking \`Select Files\`.
-
-When you click \`Send\`, you should see “success”: true in the response.
-
-It should look like this:
-
-![](https://lh7-us.googleusercontent.com/hNtG\_uTWgxww7iOmHLhnDqdrTlHCI1rk31LozG4l2DLPqxzSn9HoKn8CQIjeBgJLV4bxrGCjWOMRykJ3qBdZLYwxrZJGq\_S3tjVwSZmGTiMgVoqM97TTQjmW8CegEL2FV309NBmV0Fv\_vciSdQRFiOI)
-
-## "DELETE" Method example
-
-The DELETE method is used to delete, for example, users, organizations and so on.
-
-* Select the DELETE Method
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL.
-
-&#x20;For example:
-
-![](https://lh7-us.googleusercontent.com/-QqSVIELl1IkxYK\_gGDa7nIv\_B1IvO3OjT3Ge6bAXwPl6jVDETuzXwtYJdRSmqLEP2d6B0L6MuwZvgJpI968pzp1APmJmuQ\_qlqYgZZhesocYCJVMCHhIZAKmlvMybUkUGXYZtySrnEbRTwWTritvKo)
-
-* Now paste this link in the text box next to the DELETE method in Postman.
-* Replace the {user\_id} at the end of the URL with the actual user ID you want to delete. (You can get the user\_id using the GET method).
-* If you included the user\_id in the URL, you don’t need to add a body key and value for it.
-* When you click \`Send\`, you should see “success”: true in the response.
-
-&#x20;It should look like this:
-
-![](https://lh7-us.googleusercontent.com/X8WNtsC9v7jqDIiaVhauJUgZK0yTC1GVz9rBptdiCxyLUiEEfbpIoYHpK7NvlDMTkhgiPyBb22H9GOfDdvmL-dakouTjuRDPwX4YX0Jz5IIo6eHu-wnw1S4jJd5ylHyffUXWKwX6ovDnp\_2WEAtSha4)
-
-## "PUT" Method example
-
-The PUT method is mainly used to update user or organization data. It is very easy to understand and use.
-
-* Select the PUT Method.
-* Authorize yourself as described above.
-* Open https://api.polydocs.io and add the path of the function behind the Polydocs URL.
-
-&#x20;For example:
-
-![](https://lh7-us.googleusercontent.com/tC3qtPbFb1GsK6dBmB5Jrv5HqFOYLxNR1XB0PEuA8ipkHnH2ZQ6xrrkImNgbGSMoA6aAGvLr6K3cI4u\_qM96BOvR7AnQzmX17HBMBneNpLBc6RIzspfTYgrCWSj0fSE9mSWLIex3hc\_R-m-PI6zT6Rs)
-
-* Now paste this link in the text box next to the PUT method in Postman.
-* Replace the {user\_id} at the end of the URL with the actual user ID you want to delete. (You can get the user\_id using the GET method).
-
-## Change Email Address of a User
-
-* In the body, enter “email” as the key and the new email address as the value.
-* Then just press \`Send\` and you should see “success” in the response.
+Se comprobaron la especificación actual de la API de Dev, la consulta de versión sin autenticación y las vistas reales de DocBits en español de la gestión de claves y del formulario vacío. Para comprobar las vistas se utilizaron la cuenta de prueba autorizada y lecturas de metadatos de la interfaz. No se ejecutaron creación de claves, cargas, altas de usuarios, modificaciones ni eliminaciones. No se probaron operaciones de negocio de la API sobre documentos o registros de usuarios. No se probó ninguna solicitud en la aplicación Postman.

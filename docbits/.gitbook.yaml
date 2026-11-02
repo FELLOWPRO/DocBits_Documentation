@@ -1,3 +1,5 @@
+root: ./
+
 redirects:
     gao-ji-gong-neng-yu-gong-ju/docbits-mcp: advanced-functions-and-tools/docbits-mcp/README.md
     administration-and-setup/setup/watchdog-installation: administration-and-setup/setup/watchdog/watchdog-installation.md

@@ -2,22 +2,30 @@
 
 Use **PO Matching** (Coincidencia de OC) para comparar las líneas de la orden de compra cargadas para un documento con las líneas de factura extraídas. Los datos de la orden de compra pueden provenir de una integración con el ERP o de otra importación configurada. La pantalla muestra el documento junto a las dos tablas para que pueda comprobar números, cantidades, precios y diferencias antes de guardar o exportar.
 
+## Comparar las líneas de una factura con un pedido
+
+El recorrido comienza con un número de pedido reconocido y tres líneas de factura conciliadas. Después muestra la búsqueda manual como excepción, una conexión incorrecta intencionada, una coincidencia parcial, la coincidencia automática y el guardado. Revise el resultado tras recargar: guardar la coincidencia no aprueba ni exporta por sí solo la factura.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/es.mp4" %}
+
+[Ver el vídeo con subtítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/es.html)
+
 {% hint style="info" %}
-El ejemplo siguiente usa una factura y una orden de compra sintéticas de FellowPro en **DocBits Documentation Test A**. Su tabla de facturas muestra actualmente **No se encuentran líneas de pedido**. Esto demuestra la navegación y la búsqueda, pero no puede demostrar una coincidencia de líneas correcta. No exporte este ejemplo como una factura coincidente.
+La grabación utiliza datos de prueba sintéticos con tres líneas de factura extraídas y su pedido. El papel, las cajas de archivo y el transporte suman 118 EUR netos. La coincidencia completa muestra 118 EUR conciliados y ningún importe pendiente.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-318-po-screen-es.png" alt="Pantalla de PO Matching en español en la organización sintética de Sandbox: búsqueda, barra de herramientas, líneas de la orden de compra, tabla de líneas de factura vacía y vista previa de la factura"><figcaption><p>La orden de compra está cargada; la factura de ejemplo no tiene líneas extraídas que conectar.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-es.png" alt="Coincidencia completa: las tres líneas están conectadas, con 118 EUR conciliados y 0 EUR pendientes."><figcaption><p>Coincidencia completa: las tres líneas están conectadas, con 118 EUR conciliados y 0 EUR pendientes.</p></figcaption></figure>
 
 ## Buscar e inspeccionar una orden de compra
 
-1. Abra una factura en **PO Matching**. Si su organización tiene varias órdenes de compra, introduzca un número en **Número de pedido de compra de búsqueda**.
+1. Abra la factura en **PO Matching**. Si se reconoce su número de pedido, DocBits carga el pedido correspondiente. Use la búsqueda manual cuando falte el número o necesite revisar otro pedido.
 2. Seleccione el icono de filtros junto al cuadro de búsqueda para **Palabra clave**, **Proveedor**, **Estado**, **Estado del pedido**, fechas, rango de importes, ordenación y número de registros mostrados. Seleccione **Más** para criterios adicionales. Seleccione **Aplicar** para buscar o **Borrar** para restablecer los filtros.
 3. Seleccione un número de orden de compra sobre la tabla para inspeccionar sus líneas. El icono de actualización junto al número vuelve a cargar los datos de ese pedido. Una recarga puede depender de la integración configurada.
-4. Compare cada línea de la orden de compra con la factura y su tabla extraída. El **+** de una línea amplía los detalles de coincidencia; por sí solo no conecta la línea con la factura. En el ejemplo muestra **No multi-match Information** porque no existe dicha coincidencia.
+4. Compare cada línea del pedido con la factura y su tabla extraída. El **+** abre los detalles de coincidencia existentes; no conecta por sí solo la línea con la factura.
 
-<figure><img src="../../../.gitbook/assets/dbdc-318-po-filters-es.png" alt="Filtros de búsqueda de órdenes de compra en español con proveedor, estados, límites de fecha e importe, ordenación y los botones Aplicar y Borrar"><figcaption><p>Use el panel de filtros para reducir las órdenes de compra mostradas.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-es.png" alt="La búsqueda manual muestra las tres líneas del pedido de prueba. Use los filtros cuando sea necesario; un número de pedido reconocido no requiere una segunda búsqueda."><figcaption><p>La búsqueda manual muestra las tres líneas del pedido de prueba. Use los filtros cuando sea necesario; un número de pedido reconocido no requiere una segunda búsqueda.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-318-po-line-es.png" alt="Línea de orden de compra expandida con No multi-match Information y una tabla de líneas de factura vacía"><figcaption><p>La línea expandida muestra los detalles de coincidencia cuando están disponibles.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-es.png" alt="Coincidencia parcial: hay 50 EUR de papel conciliados y 68 EUR pendientes. No significa un umbral fijo del cincuenta por ciento."><figcaption><p>Coincidencia parcial: hay 50 EUR de papel conciliados y 68 EUR pendientes. No significa un umbral fijo del cincuenta por ciento.</p></figcaption></figure>
 
 ## Coincidir líneas y revisar el resultado
 
@@ -44,7 +52,7 @@ Use **Historial de coincidencias** (icono de reloj, si sus permisos lo permiten)
 
 ### Más de una línea por coincidencia
 
-Una sola línea de factura puede corresponder a varias líneas de pedido, o al revés, donde sus reglas de coincidencia lo permitan. Abra los detalles **+** de una línea para inspeccionar cualquier coincidencia múltiple existente. Compruebe la cantidad y el precio combinados, no solo una línea. Un panel de detalles vacío como el ejemplo sintético anterior significa que no hay ninguna coincidencia múltiple que inspeccionar. Consulte [Herramientas de coincidencia de órdenes de compra](purchase-order-matching-tools.md) para cambiar las conexiones.
+Una sola línea de factura puede corresponder a varias líneas de pedido, o al revés, donde sus reglas de coincidencia lo permitan. Abra los detalles **+** de una línea para inspeccionar cualquier coincidencia múltiple existente. Compruebe la cantidad y el precio combinados, no solo una línea. Un panel de detalles vacío significa que no hay ninguna coincidencia múltiple que inspeccionar. Consulte [Herramientas de coincidencia de órdenes de compra](purchase-order-matching-tools.md) para cambiar las conexiones.
 
 ### Cantidades, diferencias y descuentos
 

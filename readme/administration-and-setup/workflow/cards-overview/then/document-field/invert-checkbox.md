@@ -1,6 +1,6 @@
 # 反转复选框
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-d1f382afe206-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_invert_boolean_field_v2-zh-cn.png" alt="反转复选框, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 ## **用途：**
 

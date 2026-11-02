@@ -20,6 +20,10 @@ description: "从入门到专家的学习路径"
 
 ## 1. 认识产品与执行模型 <a id="level-1"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/zh.html)。
+
 **练习:** 说明组织、权限、When–And–Then，以及线性规则与 Advanced 图的区别。区分文档类型过滤、执行事件、保存和启用。
 
 **完成标准:** 能够在搭建前说明何时会处理规则，以及哪些依据能区分模拟与实际文档运行。
@@ -27,6 +31,10 @@ description: "从入门到专家的学习路径"
 阅读并搭建: [我的工作流何时运行？](workflow-execution-model.md) · [P0：更改状态并限制重复执行](masterclass/status-and-reentry.md).
 
 ## 2. 构建第一条规则 <a id="level-2"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-02-admin/v1/zh.html)。
 
 **练习:** 创建 When Invoice → And invoice_id = WF-TRAINING-001 → And total_amount > 1000 → Then wf_training_route = REVIEW，保持未启用。使用 999、1000 和 1000.01 的完整数据测试。这条线性规则暂不需要控制节点。
 
@@ -36,6 +44,10 @@ description: "从入门到专家的学习路径"
 
 ## 3. 字段、类型与边界 <a id="level-3"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-03-admin/v1/zh.html)。
+
 **练习:** 检查缺失、null、空文本、空格、false、0 和文本数字。分别以订单及文档为参考计算容差，比较一个和全部实际匹配行。
 
 **完成标准:** 根据值、类型、参考侧和现有数据解释真、假与错误；没有可比较行不能当作成功批准。
@@ -43,6 +55,10 @@ description: "从入门到专家的学习路径"
 阅读并搭建: [P1：选择 Field is、Docfield is 或 Compare two Fields](masterclass/field-conditions.md) · [P1：明确容差参考侧与采购订单比较方向](masterclass/tolerances-and-po.md).
 
 ## 4. 业务规则与审批 <a id="level-4"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-04-admin/v1/zh.html)。
 
 **练习:** 配置两条不重叠的金额规则，追踪已保存的用户返回值直到分配。安排 A 的顺序值为 10、B 为 20，并设计拒绝与后备路径。
 
@@ -52,6 +68,10 @@ description: "从入门到专家的学习路径"
 
 ## 5. Advanced 控制流与子工作流 <a id="level-5"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/zh.html)。
+
 **练习:** 用两项实际执行的检查比较 ALL、ANY 和 OR，并检查未选择的分支。运行全部七个 v2 用例，使用自有未启用目标测试 Run Workflow。
 
 **完成标准:** 能解释测试与调度器差异、源节点计数和错误传递。v2 不依赖停滞的 OR 即可完成；绿色子调用仍要核对目标。
@@ -60,6 +80,10 @@ description: "从入门到专家的学习路径"
 
 ## 6. 计算、接口与导出 <a id="level-6"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/zh.html)。
+
 **练习:** 比较完整表格的计算前后结果，包含正则未命中和除零。明确接口真实回写契约，并使用自有测试配置设计审批后的导出。
 
 **完成标准:** 分别证明后续字段值、接收方收到和 ERP 已处理；不把模拟或导出请求记录为送达。
@@ -67,6 +91,10 @@ description: "从入门到专家的学习路径"
 阅读并搭建: [P1：计算表格列并检查正则依赖](masterclass/table-calculations.md) · [P1：验证 API 调用与后续响应使用](masterclass/api-response-contract.md) · [P1：选择导出方式、待办检查与最终状态](masterclass/export-lifecycle.md).
 
 ## 7. 变更与专家运维 <a id="level-7"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/zh.html)。
 
 **练习:** 修改前保存工作流导出并记录卡片版本。复测正例、反例、错误、边界和第二次运行，将第一个错误关联到具体输入与配置。
 

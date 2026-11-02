@@ -140,28 +140,28 @@ YYYY-MM-DD HH:MM:SS
 1. 访问：[https://api.docbits.com/](https://api.docbits.com/)
 2. 点击 **“Authorize”** 按钮。
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_1.png" alt="英文 Swagger/OpenAPI 技术界面的历史示例，箭头指向 Authorize（授权）。它不是中文 DocBits 设置页；实际 API 地址和版本以目标环境为准。"><figcaption><p>英文 Swagger/OpenAPI 技术界面的历史示例，箭头指向 Authorize（授权）。它不是中文 DocBits 设置页；实际 API 地址和版本以目标环境为准。</p></figcaption></figure>
 3. 输入 API-Key，然后点击 **“Authorize”**
 
-    * API-Key 可在 DocBits 的 Settings -> Global Settings -> Integration&#x20; 中找到。
+    * 在 DocBits **设置 → 全局设置 → 集成**中管理 API 密钥。完整密钥仅在创建时显示一次；使用已安全保存的完整值，列表前缀或遮蔽值不能用于认证。
     * **注意：** 请求中提供的 API key 决定目标组织，以及导入数据时使用的用户上下文。
 
 
 
-    <figure><img src="../.gitbook/assets/import_csv_api.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/site-complete-api-key-context-zh.png" alt="当前中文 API 密钥管理入口；密钥、前缀及账户数据已隐藏。完整密钥仅在创建时显示一次，应使用安全保存的完整密钥；列表中被遮蔽的值或前缀不是可用凭据。本次未创建或复制密钥。"><figcaption><p>当前中文 API 密钥管理入口；密钥、前缀及账户数据已隐藏。完整密钥仅在创建时显示一次，应使用安全保存的完整密钥；列表中被遮蔽的值或前缀不是可用凭据。本次未创建或复制密钥。</p></figcaption></figure>
 
 
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_2.png" width="563" alt="英文 OpenAPI 授权框示例，X-API-KEY 的 Value 为空，不含密钥。应输入安全保存的完整密钥；不要使用列表前缀或遮蔽值。"><figcaption><p>英文 OpenAPI 授权框示例，X-API-KEY 的 Value 为空，不含密钥。应输入安全保存的完整密钥；不要使用列表前缀或遮蔽值。</p></figcaption></figure>
 
 
 
 1. 按 **CTRL + F**（Mac 上按 **CMD + F**）打开搜索功能，然后搜索 `/master_data_lookup/import_data`。
 2. 点击该请求以查看详细信息，然后点击 **“Try it out”** 继续。
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_3.png" alt="英文 OpenAPI 端点列表示例，目标为 POST /master_data_lookup/import_data。技术路径保持原文；不要选择相邻的删除操作。"><figcaption><p>英文 OpenAPI 端点列表示例，目标为 POST /master_data_lookup/import_data。技术路径保持原文；不要选择相邻的删除操作。</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_6.png" alt="英文 OpenAPI 参数说明及 Try it out 入口的历史示例，只说明如何展开请求表单，不代表已执行 CSV 导入。"><figcaption><p>英文 OpenAPI 参数说明及 Try it out 入口的历史示例，只说明如何展开请求表单，不代表已执行 CSV 导入。</p></figcaption></figure>
 3. 现在可以在 Request Body 中输入所需参数。\
 
 
@@ -169,9 +169,9 @@ YYYY-MM-DD HH:MM:SS
 
     发起导入请求时，需要指定以下参数：
 
-    * **sub\_org\_id：** 删除文本字段中的所有文字，以确保启用“Send empty value”选项。
+    * **sub\_org\_id：** 明确目标子组织；只有确认使用组织级范围时才留空。不要为照搬示例而清空此值。尤其在 `replace_all=true` 时，空值可能使删除范围覆盖该组织下此数据类型的全部现有记录，而非仅根组织记录。
     * **data\_type：** 此参数指定要导入的数据类型。根据 .csv 文件的内容，可以是 `supplier` 或 `purchase_order`。
-    * **replace\_all：** 此布尔参数用于确定是否应在插入 .csv 文件中的新数据之前，删除指定组织相应数据库表（`supplier` 或 `purchase_order`）中的所有现有数据。设为 `true` 可替换所有现有数据；设为 `false` 则追加或使用新数据更新现有数据。
+    * **replace\_all：** 默认 `false`，用于插入或更新数据。`true` 会先删除所选数据范围内的现有记录，再导入 CSV：供应商还涉及地址和账户，采购订单还涉及订单行。仅在明确需要完整替换、已核对范围和完整数据集时使用 `true`；末图中的 `true` 是历史示例，不是增量导入的推荐设置。
     *   **delimiter：** 此参数指定用于分隔数据文件每一行中各个值的字符。**必须确认文件实际使用的分隔符。**常见分隔符包括逗号（`,`）和分号（`;`）。
 
         **如何检查分隔符：**
@@ -181,7 +181,7 @@ YYYY-MM-DD HH:MM:SS
         3. 在导入请求中，将 `delimiter` 参数设为识别出的字符（`,` 或 `;`）。使用错误的分隔符会导致数据无法正确解析，导入也会失败。
     * **on\_conflict & auto\_generate\_id：** 目前尚未为这些数据类型实现冲突处理功能（`on_conflict`）和自动生成 ID 功能（`auto_generate_id`）。
 
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
-4. 确认所有信息均正确后，点击 **“Execute”** 按钮即可启动导入过程。
+    <figure><img src="../.gitbook/assets/import_csv_4.png" alt="英文 OpenAPI 空白导入表单示例，replace_all 为 false。string 等为占位文字，不是有效组织或数据类型；执行前核对全部实际参数。"><figcaption><p>英文 OpenAPI 空白导入表单示例，replace_all 为 false。string 等为占位文字，不是有效组织或数据类型；执行前核对全部实际参数。</p></figcaption></figure>
+4. 核对环境、组织／子组织、完整密钥、数据类型、分隔符及替换范围后，点击 **“Execute”** 才会实际写入。检查响应中的成功状态、插入／更新数量，并在主数据列表核对代表性记录；本次文档检查未执行导入。
 
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_5.png" alt="历史英文 OpenAPI 表单中 replace_all=true 且 sub_org_id 为空，这是完整替换示例，可能删除组织范围内该类型的现有数据，切勿直接照搬。增量导入通常保持 false；本次未执行请求。"><figcaption><p>历史英文 OpenAPI 表单中 replace_all=true 且 sub_org_id 为空，这是完整替换示例，可能删除组织范围内该类型的现有数据，切勿直接照搬。增量导入通常保持 false；本次未执行请求。</p></figcaption></figure>

@@ -1,5 +1,7 @@
 # 顺序分配给组
 
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_assign_doc_to_group_sequential_v2-zh-cn.png" alt="顺序分配给组, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
+
 ## **用途**
 
 “**按顺序将文档分配给组**”工作流卡片可将文档依次分配给一个或多个选定的组。优先级值决定分配顺序，数值越小，优先级越高。

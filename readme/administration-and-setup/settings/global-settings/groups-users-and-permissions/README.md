@@ -1,15 +1,21 @@
-# Grupy, Użytkownicy i Uprawnienia
+# Grupy, użytkownicy i uprawnienia
 
-Te ustawienia odpowiadają na trzy różne pytania: kto może się zalogować, w jakiej podorganizacji pracuje dana osoba i co może robić jej grupa.
+## Tworzenie grupy i sprawdzanie dostępu do dokumentów
+
+Gdy uprawnienia grupowe są już włączone, utwórz grupę sprawdzającą i dodaj użytkownika testowego bez uprawnień administratora. Zezwól na wyświetlanie na liście, przeglądanie i edycję przypisanych faktur; pozostaw wyłączone usuwanie, zmiany zbiorcze i zatwierdzanie. Zapisz i ponownie otwórz ustawienia, a następnie zaloguj się jako zwykły użytkownik: przypisana faktura jest widoczna, a nieprzypisany dokument kontrolny nie jest.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pl.mp4" %}
+
+[Obejrzyj z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pl.html)
+
+Te ustawienia odpowiadają na trzy różne pytania: kto może się zalogować, w której podorganizacji pracuje oraz co może robić jego grupa.
 
 | Jeśli chcesz… | Otwórz… |
 | --- | --- |
 | Dodać lub edytować konto osoby | **Ustawienia** → **Użytkownicy**; następnie przeczytaj [Użytkownicy](users/README.md). |
-| Uporządkować dostęp w jednostkach firmy | **Ustawienia** → **Podorganizacje**; następnie przeczytaj [Podorganizacje](sub-organizations/README.md). |
-| Sterować dostępem przez grupy | **Ustawienia** → **Grupy i uprawnienia**; następnie przeczytaj [Grupy i uprawnienia](groups-and-permissions/README.md). |
+| Uporządkować dostęp między jednostkami firmy | **Ustawienia** → **Podorganizacje**; następnie przeczytaj [Podorganizacje](sub-organizations/README.md). |
+| Kontrolować dostęp według grup | **Ustawienia** → **Grupy i uprawnienia**; następnie przeczytaj [Grupy i uprawnienia](groups-and-permissions/README.md). |
 
-Na stronie **Grupy i uprawnienia** przełącznik **Aktywuj/dezaktywuj grupy i uprawnienia** włącza lub wyłącza korzystanie z grup i uprawnień w całej organizacji; szczegóły opisuje sekcja [Włącz/Wyłącz Grupy i Uprawnienia](groups-and-permissions/README.md).
+<figure><img src="../../../../.gitbook/assets/prior-t008-pl.png" alt="Panel wyboru grupy."><figcaption><p>Panel wyboru grupy.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/groups-users-and-permissions-overview-pl-20261008.png" alt="Polski ekran Grupy i uprawnienia w Sandboksie"><figcaption><p>Aktualny polski widok Sandboksa z organizacją przykładową Musterfirma GmbH. Grupy i uprawnienia są w tym przykładzie wyłączone; nie zmieniono żadnych uprawnień.</p></figcaption></figure>
-
-Jeśli użytkownik nie widzi dokumentu lub akcji, sprawdź najpierw jego konto i organizację. Następnie sprawdź uprawnienia odpowiedniej grupy. Zanim zmienisz organizację produkcyjną, potwierdź na koncie testowym bez uprawnień administratora, jaki dostęp będzie miał zwykły użytkownik.
+Jeśli użytkownik nie widzi dokumentu lub akcji, sprawdź najpierw jego konto i organizację. Następnie sprawdź uprawnienia odpowiedniej grupy. Zanim zmienisz działającą organizację, użyj konta testowego bez uprawnień administratora, aby potwierdzić dostęp, jaki faktycznie będzie miał zwykły użytkownik.

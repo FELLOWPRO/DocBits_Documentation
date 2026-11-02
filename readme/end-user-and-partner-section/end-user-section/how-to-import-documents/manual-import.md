@@ -3,7 +3,7 @@
 Jeśli chcesz ręcznie importować dokumenty do DocBits, postępuj zgodnie z tymi prostymi krokami:
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
-DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
+DocBits Samouczek importowania: przesyłanie dokumentów, przeciąganie i upuszczanie + klasyfikacja ręczna i automatyczna
 {% endembed %}
 
 * Kliknij przycisk Prześlij na pulpicie nawigacyjnym DocBits.
@@ -13,4 +13,4 @@ DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Cla
 * Po przesłaniu plików będą miały początkowy status „W toku”. W tym czasie przesyłanie jest przetwarzane i edytowanie pliku nie jest możliwe. Czas przetwarzania może się różnić w zależności od rozmiaru i złożoności pliku.
 * Po przetworzeniu pliku otrzyma on status „Gotowy do walidacji”. Możesz teraz rozpocząć proces walidacji.
 
-<figure><img src="../../../.gitbook/assets/manual-import1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-manual-import1-pl.png" alt="Okno ręcznego importu dokumentów."><figcaption><p>Okno ręcznego importu dokumentów.</p></figcaption></figure>

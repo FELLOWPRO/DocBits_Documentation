@@ -16,4 +16,4 @@ W ekranie walidacji możesz bezpośrednio tworzyć zgłoszenia dla konkretnego d
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-pl.png" alt="Formularz pomocy technicznej przed wysłaniem. Bilet wsparcia oznacza formularz zgłoszenia do pomocy technicznej."><figcaption><p>Formularz pomocy technicznej przed wysłaniem. Bilet wsparcia oznacza formularz zgłoszenia do pomocy technicznej.</p></figcaption></figure>

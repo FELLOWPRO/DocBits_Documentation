@@ -1,12 +1,12 @@
-# XRechnung 3.0 CII Field Mapping
+# XRechnung 3.0 mapowanie pól CII
 
-## Overview
+## Przegląd
 
-This document describes the complete field mapping flow for XRechnung 3.0 CII (Cross-Industry Invoice) format.
+W tym dokumencie opisano pełny proces mapowania pól dla formatu XRechnung 3.0 CII (faktura międzybranżowa).
 
-## 1. CII XML Structure
+## 1. Struktura XML CII
 
-XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces:
+XRechnung CII wykorzystuje format faktury międzybranżowej UN/CEFACT z następującymi przestrzeniami nazw:
 
 | Prefix | Namespace | Purpose |
 | :--- | :--- | :--- |
@@ -17,9 +17,9 @@ XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces
 
 **Classification URN**: `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0`
 
-## 2. CII XML → DocBits Field Extraction
+## 2. XML CII → wyodrębnianie pól DocBits
 
-### Header Fields
+### Pola nagłówka
 
 | CII XML Path | DocBits Field | Data Type |
 | :--- | :--- | :--- |
@@ -41,7 +41,7 @@ TRANSFORMATION XSLT zastępuje numeryczną wartość `TypeCode` przyjazną etyki
 | `381` / `261` | Nota kredytowa / Samowystawiona nota kredytowa | **Credit Note** |
 | Dowolny inny kod (`380`, `383`, `384`, `386`, `389`, `325`, …) | Faktura / debet / proforma / itp. | **Invoice** |
 
-### Supplier Fields
+### Pola dostawcy
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -55,7 +55,7 @@ TRANSFORMATION XSLT zastępuje numeryczną wartość `TypeCode` przyjazną etyki
 | `PayeePartyCreditorFinancialAccount/IBANID` | `iban` |
 | `PayeeSpecifiedCreditorFinancialInstitution/BICID` | `bic` |
 
-### Customer Fields
+### Pola klienta
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -64,7 +64,7 @@ TRANSFORMATION XSLT zastępuje numeryczną wartość `TypeCode` przyjazną etyki
 | `BuyerTradeParty/PostalTradeAddress/LineOne` | `customer_address` |
 | `BuyerTradeParty/SpecifiedTaxRegistration/ID` | `customer_vat` |
 
-### Amount Fields
+### Pola kwot
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -74,7 +74,7 @@ TRANSFORMATION XSLT zastępuje numeryczną wartość `TypeCode` przyjazną etyki
 | `ApplicableTradeTax/RateApplicablePercent` | `tax_rate` |
 | `ApplicableTradeTax/BasisAmount` | `taxable_amount` |
 
-### Line Item Fields
+### Pola pozycji
 
 | CII XML Path | DocBits Table Column |
 | :--- | :--- |
@@ -90,9 +90,9 @@ TRANSFORMATION XSLT zastępuje numeryczną wartość `TypeCode` przyjazną etyki
 | `ApplicableTradeTax/RateApplicablePercent` | `VAT_RATE` |
 | `ApplicableTradeTax/CategoryCode` | `VAT_CATEGORY` |
 
-## 3. DocBits → Infor BOD Export (SyncSupplierInvoice)
+## 3. DocBits → eksport BOD do Infor (SyncSupplierInvoice)
 
-### Header Mapping
+### Mapowanie nagłówka
 
 | DocBits Field | BOD XML Path |
 | :--- | :--- |
@@ -107,7 +107,7 @@ TRANSFORMATION XSLT zastępuje numeryczną wartość `TypeCode` przyjazną etyki
 | `PAYMENT_TERMS` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/PaymentTerm/Term/Description` |
 | `PURCHASE_ORDER` | `UserArea/Property/NameValue[@name='PONumber']` |
 
-### Line Item Mapping
+### Mapowanie pozycji
 
 | DocBits Column | BOD XML Path |
 | :--- | :--- |

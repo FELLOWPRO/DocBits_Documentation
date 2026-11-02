@@ -62,3 +62,17 @@ Jest to szczególnie przydatne do debugowania odwzorowań XSLT i zapewnienia, ż
 ## 6. Przewodnik Wideo
 
 Przewodnik wideo dla tego typu pliku jest dostępny na [Stronie z Filmami.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Użyj go, aby śledzić konfigurację, edycję i podgląd.
+
+## Faktycznie używane reguły i aktywacja
+
+Reguły specyficzne dla organizacji mają pierwszeństwo przed regułami domyślnymi dla wykrytego formatu eDoc. Sprawdź aktywną TRANSFORMATION i sprawdź, który węzeł dostarcza invoice_type w przekształconym pliku XML; ścieżka zależy od formatu. Save zapisuje wersję roboczą; po testach użyj znacznika wyboru, aby ją aktywować. Wygenerowany Preview nie potwierdza zapisanego typu dokumentu. [Przewodnik rozwiązywania problemów z klasyfikacją](../credit-note-recognized-as-invoice.md) opisuje kody 381/261, późniejsze skrypty i środki ostrożności przy ponownym przetwarzaniu.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-pl.png" alt="Aktywny atrybut TRANSFORMATION: kod źródłowy XSLT do transformacji pośredniego XML."><figcaption><p>Aktywny atrybut TRANSFORMATION: kod źródłowy XSLT do transformacji pośredniego XML.</p></figcaption></figure>
+
+
+Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
+
+Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.

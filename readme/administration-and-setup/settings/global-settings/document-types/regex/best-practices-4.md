@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Best Practices für Regex in der Belegverarbeitung.
 

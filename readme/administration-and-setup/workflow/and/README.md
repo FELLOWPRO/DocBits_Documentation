@@ -1,59 +1,63 @@
-# And: Bedingungskarte auswählen
+# Und
 
-Eine **And**-Karte entscheidet, ob ein Workflow nach seinem **When**-Auslöser fortgesetzt wird. Fügen Sie die benötigten Prüfungen vor der **Then**-Aktion hinzu. Jede Karte zeigt auszufüllende Felder wie **Operator**, **Feld Name** oder **Wert**; die Screenshots zeigen die verfügbaren Kartenvorlagen, keine fertigen Regeln.
+Die Aufnahmen zeigen die deutsche Und-Kartenauswahl. Einzelne Platzhalter wie **Search Pattern**, **data** und **Statuscode** sowie einige Sätze der Angebotspreis-Karten sind im Produkt noch englisch.
 
-Wählen Sie im **Workflow Builder** unter **Und...** die Option **Karte hinzufügen**. Wählen Sie links eine Kategorie oder geben Sie einen Kartennamen in **Karte suchen** ein. Wählen Sie eine Kartenvorschau aus, um sie dem Workflow hinzuzufügen. Sie können die Vorschau-Liste scrollen, um weitere Karten zu sehen. Wählen Sie **×**, um die Auswahl zu schließen, ohne eine weitere Karte zu wählen. Nach dem Konfigurieren der Karten speichern Sie den Workflow. Siehe [Workflow](../README.md) für die umgebenden Schritte **When**, **And** und **Then**.
+Verwenden Sie eine **Und**-Karte, um zu entscheiden, ob ein Workflow nach seinem **Wenn**-Auslöser fortgesetzt werden soll. Fügen Sie die erforderlichen Prüfungen vor der Aktion **Dann** hinzu. Auf jeder Karte werden die auszufüllenden Felder angezeigt, z. B. **Operator**, **Feldname** oder **Wert**; die Screenshots zeigen die verfügbaren Kartenvorlagen, keine abgeschlossenen Regeln.
 
-## Mit Bestellung vergleichen
+Wählen Sie im **Workflow-Builder** unter **Und...** **Karte hinzufügen** aus. Wählen Sie links eine Kategorie oder geben Sie einen Kartennamen in **Karte suchen** ein. Wählen Sie eine Kartenvorschau aus, um sie dem Workflow hinzuzufügen. Sie können durch die Vorschauliste scrollen, um weitere Karten anzuzeigen. Verwenden Sie **×**, um die Auswahl zu schließen, ohne eine andere Karte auszuwählen. Speichern Sie den Workflow nach der Konfiguration der Karten. Siehe [Workflow](..) für die umgebenden Schritte **Wenn**, **Und** und **Dann**.
 
-Nutzen Sie diese Karten, um Bestell- oder Rechnungsdaten mit einer Bestellung zu vergleichen, etwa Stückpreis, zugesagten Liefertermin, Nebenkosten oder Menge. Wählen Sie die Felder, den Operator und die Toleranz, die die gewählte Karte verlangt. Siehe [Compare with Purchase Order](compare-with-purchase-order/README.md) für die einzelnen Karten.
+## Vergleichen Sie mit der Bestellung
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Mit Bestellung vergleichen“; sichtbare Vorschauen vergleichen Stückpreis, Liefertermin, Nebenkosten und Menge."><figcaption>Die Kategorie <strong>Mit Bestellung vergleichen</strong> in der deutschen Sandbox.</figcaption></figure>
+Verwenden Sie diese Karten, um Bestell- oder Rechnungsdaten mit einer Bestellung zu vergleichen, z. B. Stückpreis, versprochenes Lieferdatum, Gebühren oder Menge. Wählen Sie die Felder, den Operator und alle Toleranzen aus, die für die ausgewählte Karte erforderlich sind. Die einzelnen Karten finden Sie unter [Mit Bestellung vergleichen](compare-with-purchase-order).
 
-## Dokument Feld
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-Wählen Sie diese Kategorie, um ein Kontrollkästchen oder einen Feldstatus zu prüfen, ein Feld mit einem Wert zu vergleichen oder zwei Felder zu vergleichen. Füllen Sie auf der gewählten Karte die Platzhalter **Feld Name** und **Operator** aus. Manche Vergleiche verlangen zusätzlich eine Toleranz. Siehe [Document Field](document-field/README.md).
+## Dokumentfeld
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Dokument Feld“; sichtbare Vorschauen prüfen ein Kontrollkästchen, einen Feldstatus, Feldwerte und Vergleiche zweier Felder."><figcaption>Prüfungen im Bereich <strong>Dokument Feld</strong> verwenden Werte aus dem aktuellen Dokument.</figcaption></figure>
+Wählen Sie diese Kategorie, um zu prüfen, ob ein Kontrollkästchen aktiviert ist, einen Feldstatus abzufragen, ein Feld mit einem Wert zu vergleichen oder zwei Felder zu vergleichen. Füllen Sie die Platzhalter **Feldname** und **Operator** auf der ausgewählten Karte aus. Manche Vergleiche verlangen auch eine Toleranz. Siehe [Dokumentfeld](document-field).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-833c7249ffc8-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
 ## Datum und Uhrzeit
 
-Mit **Datum und Uhrzeit** vergleichen Sie ein Datum oder eine Uhrzeit mit einem Bereich oder vergleichen **Heute** mit einem gewählten Datum. Wählen Sie **Operator** und Datumswerte in der Karte. Siehe [Date & Time](date-and-time/README.md).
+Verwenden Sie **Datum und Uhrzeit**, um ein Datum oder eine Uhrzeit mit einem Bereich zu vergleichen, oder vergleichen Sie **Heute** mit einem ausgewählten Datum. Wählen Sie den **Operator** und die Datumswerte auf der Karte aus. Siehe [Datum und Uhrzeit](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Datum und Uhrzeit“; zwei Vorschauen vergleichen ein Datum oder eine Uhrzeit mit einem Bereich und vergleichen Heute mit einem Datum."><figcaption><strong>Datum und Uhrzeit</strong> bietet eine Bereichsprüfung und eine Prüfung gegen heute.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1ee68574d713-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
 ## Dokument
 
-Nutzen Sie diese Karten, wenn ein Workflow vom **Dokumenttyp** oder von der **Unterorganisation** abhängen soll. Wählen Sie den Typ oder die Organisation, die in der Karte genannt wird. Siehe [Document](document/README.md).
+Verwenden Sie diese Karten, wenn ein Workflow vom **Dokumenttyp** oder von der **Unterorganisation** abhängen soll. Wählen Sie den auf der Karte genannten Typ oder die Organisation aus. Siehe [Dokument](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Dokument“; Vorschauen prüfen den Dokumenttyp und die Zugehörigkeit zu einer Unterorganisation."><figcaption>Bedingungen der Kategorie <strong>Dokument</strong> prüfen den Typ oder die Unterorganisation.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-3c1a15fa2e11-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
 ## Logik
 
-Diese Kategorie enthält Prüfungen mit einer Entscheidungstabelle, einer HTTPS-Antwort, der Verfügbarkeit eines Moduls, einem Angebotspreis eines Artikels, einem Zufallswert oder zwei Werten. Öffnen Sie die jeweilige Karte und füllen Sie ihre benannten Platzhalter aus; die HTTPS-Karte fragt zum Beispiel nach URL, Methode und akzeptiertem Statuscode. Siehe [Logic](logic/README.md).
+Diese Kategorie umfasst Prüfungen anhand einer Entscheidungstabelle, einer HTTPS-Antwort, der Modulverfügbarkeit, eines angegebenen Artikelpreises, eines Zufallswerts oder zweier Werte. Öffnen Sie die jeweilige Karte und füllen Sie die benannten Platzhalter aus; beispielsweise fragt die HTTPS-Karte nach einer URL, einer Methode und einem akzeptierten Statuscode. Siehe [Logik](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Logik“; Vorschauen zeigen Entscheidungstabelle, HTTPS-Anfrage, aktives Modul, Angebotspreis, Zufallswert und Wertvergleich."><figcaption><strong>Logik</strong> bietet mehrere Bedingungstypen; wählen Sie den passenden für Ihre Regel.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-6b17199fc268-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
 ## Status
 
-Mit **Status** prüfen Sie, ob ein Dokument einen gewählten Status hat oder ob sein Status in einer ausgewählten Menge liegt. Wählen Sie **Operator** und **Status** in der Karte. Siehe [Status](status/README.md).
+Verwenden Sie **Status**, um zu prüfen, ob ein Dokument einen ausgewählten Status hat oder ob sich sein Status in einem ausgewählten Satz befindet. Wählen Sie in der Karte den **Operator** und **Status**. Siehe [Status](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Status“; zwei Vorschauen vergleichen den Dokumentstatus mit einem Status oder einer Menge von Statuswerten."><figcaption>Status-Bedingungen prüfen den aktuellen Zustand des Dokuments.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ff11a606e5a1-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
 ## Tabelle
 
-Diese Karten untersuchen Zeilen einer Dokumenttabelle. Die sichtbaren Optionen umfassen Datumsprüfungen, Textmuster, Haltbarkeit und Vergleiche zwischen Spalten. Wählen Sie **Tabellenname** und **Spaltenname**, bevor Sie einen Operator oder ein Muster wählen. Siehe [Table](table/README.md).
+Diese Karten untersuchen Dokumenttabellenzeilen. Zu den sichtbaren Optionen gehören Datumsprüfungen, Textmuster, Haltbarkeit und Vergleiche zwischen Spalten. Wählen Sie **Tabellenname** und **Spaltenname** aus, bevor Sie einen Operator oder ein Muster auswählen. Siehe [Tabelle](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Tabelle“; sichtbare Vorschauen umfassen Datum, Regex-Muster, Haltbarkeit und Spaltenvergleiche."><figcaption>Tabellen-Bedingungen verwenden Zeilen und Spalten einer Dokumenttabelle.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-526dc164847b-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-## Mit Angebotspreis vergleichen
+## Vergleichen Sie mit dem Angebotspreis
 
-Nutzen Sie diese Karten, um einen Artikel mit Angebotspreis-Daten zu vergleichen. Die sichtbaren Optionen decken Artikel-ID, Lieferantentyp, Lieferanten-Artikel-ID, Stückpreis und Maßeinheit ab. Die Platzhalter für **Operator** und Daten hängen von der gewählten Karte ab.
+Verwenden Sie diese Karten, um einen Artikel mit den angegebenen Preisdaten zu vergleichen. Die sichtbaren Auswahlmöglichkeiten umfassen Artikel-ID, Lieferantentyp, Lieferantenartikel-ID, Stückpreis und Maßeinheit. Der **Operator** und die Datenplatzhalter hängen von der von Ihnen ausgewählten Karte ab.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Mit Angebotspreis vergleichen“; fünf Vorschauen decken Artikel-ID, Lieferantentyp, Lieferanten-Artikel-ID, Stückpreis und Maßeinheit ab."><figcaption><strong>Mit Angebotspreis vergleichen</strong> ist eine eigene Kategorie im aktuellen Karten-Picker.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-4a7af1d99c73-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-## Zugewiesener Benutzer
+## Zuweisung
 
-Nutzen Sie **Zugewiesener Benutzer**, wenn die Bedingung vom zugewiesenen Benutzer oder von der Gruppe abhängt. Wählen Sie, ob mit einem einzelnen Benutzer oder einer Gruppe oder mit einer ausgewählten Menge verglichen werden soll. Siehe [Assignee](assignee/README.md).
+Verwenden Sie **Zuständiger**, wenn die Bedingung vom zugewiesenen Benutzer oder der zugewiesenen Gruppe abhängt. Wählen Sie, ob Sie mit einem Benutzer oder einer Gruppe oder einem ausgewählten Satz vergleichen möchten. Siehe [Beauftragter](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-de.png" alt="Deutscher And-Karten-Picker mit ausgewählter Kategorie „Zugewiesener Benutzer“; Vorschauen vergleichen den zugewiesenen Benutzer oder die Gruppe mit einem oder mehreren Einträgen."><figcaption>Bedingungen der Kategorie <strong>Zugewiesener Benutzer</strong> prüfen den dem Dokument zugewiesenen Benutzer oder die Gruppe.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-08cbb6fd429c-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
+
+[Detaillierte Angebotsvergleichskarten und Beliebige/Alle-Verhalten](../cards-overview/quote-comparison-guide.md).

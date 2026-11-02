@@ -1,63 +1,63 @@
-# Training Line Fields/Table Training
+# Positionsfelder und Tabellen trainieren
 
-## Table Training: When and How to Use It
+## Tabellentraining: Einsatz und Vorgehensweise
 
-DocBits uses AI-based table extraction by default, which works across suppliers. However, when you need more control over how line items are extracted for a specific supplier, you can use **Table Training** to define the structure manually.
+DocBits verwendet standardmäßig eine KI-basierte Tabellenextraktion, die lieferantenübergreifend funktioniert. Wenn Sie die Extraktion von Positionen für einen bestimmten Lieferanten genauer steuern möchten, können Sie die Struktur mit dem **Tabellentraining** manuell festlegen.
 
-#### &#x20;**Important: Supplier-Specific Training**
+#### &#x20;**Wichtig: lieferantenspezifisches Training**
 
-Table training is **specific to each supplier**. If you train a table layout for one supplier, the rules apply only to that supplier’s documents.\
-Other suppliers will continue to use AI-based table extraction unless trained separately.
+Das Tabellentraining ist **lieferantenspezifisch**. Die Regeln eines trainierten Tabellenlayouts gelten nur für die Dokumente des jeweiligen Lieferanten.\
+Für andere Lieferanten wird weiterhin die KI-basierte Tabellenextraktion verwendet, sofern Sie deren Layouts nicht separat trainieren.
 
-#### When Should You Use Table Training?
+#### Wann ist Tabellentraining sinnvoll?
 
-Use Table Training **only when the document layout is stable**, and you want to ensure consistent, high-quality extraction. It is best suited for suppliers who:
+Verwenden Sie Tabellentraining **nur bei einem gleichbleibenden Dokumentlayout**, um eine einheitliche, hochwertige Extraktion zu erreichen. Es eignet sich besonders für Lieferanten, die:
 
-* Use a **fixed invoice format** over time.
-* Require **precise mapping** of line items to specific fields.
-* Are **high-volume suppliers**, where consistent automation is valuable.
+* dauerhaft ein **festes Rechnungsformat** verwenden;
+* eine **präzise Zuordnung** von Positionen zu bestimmten Feldern erfordern;
+* **viele Dokumente** liefern, sodass sich eine einheitliche Automatisierung lohnt.
 
-#### When Not to Use Table Training
+#### Wann sollten Sie auf Tabellentraining verzichten?
 
-Avoid using Table Training if:
+Verzichten Sie auf Tabellentraining, wenn:
 
-* The supplier **frequently changes their invoice layout** (e.g., every couple of months).
-* You do not regularly receive documents from that supplier.
-* The default AI extraction works **well enough** without manual training.
+* der Lieferant **sein Rechnungslayout häufig ändert**, beispielsweise alle paar Monate;
+* Sie nur selten Dokumente dieses Lieferanten erhalten;
+* die standardmäßige KI-Extraktion ohne manuelles Training bereits **ausreichend gute Ergebnisse** liefert.
 
-In such cases, retraining the table repeatedly would be inefficient and time-consuming.
-
-
-
-## How to use It:
-
-**Training Mode** is used to teach DocBits how to correctly extract line items from a specific supplier’s document layout.
-
-When you're in Training Mode, you define:
-
-* **Where the table is located** on the document.
-* **Which areas correspond to each column** (e.g., Quantity, Description, Unit Price).
-
-This mode creates a **reusable extraction template** for that supplier, so future documents with the same layout will be processed automatically — no need to retrain.
-
-**Key Characteristics:**
-
-* **Mapped columns are read-only** — you can’t manually change the text.
-* You **cannot add or delete rows**.
-* The focus is on **mapping positions**, not correcting values.
-* Once you’ve finished mapping the table and its columns, click **“Save Rules”** so DocBits learns and applies this training to similar documents from the same supplier.
+In diesen Fällen wäre ein wiederholtes Neutraining der Tabelle aufwendig und ineffizient.
 
 
 
-**Correction Mode** allows you to **fix extraction errors** in the table data for the current document. It’s used when DocBits has already attempted to extract the table, but the results need small corrections.
+## Vorgehensweise
 
-Use Correction Mode when:
+Im **Trainingsmodus (Training Mode)** legen Sie fest, wie DocBits die Positionen aus dem Dokumentlayout eines bestimmten Lieferanten extrahiert.
 
-* Some **values are missing or misaligned**.
-* An **empty or duplicate line** was extracted and needs to be removed.
+Im Trainingsmodus definieren Sie:
 
-**What You Can Do in Correction Mode:**
+* **wo sich die Tabelle** im Dokument befindet;
+* **welche Bereiche den einzelnen Spalten entsprechen**, beispielsweise Menge, Beschreibung und Stückpreis.
 
-* **Manually adjust values** in mapped columns (e.g., fix misplacements).
-* **Delete rows** that shouldn’t be part of the table.
-* **Add rows** that were missed entirely during extraction.
+Dabei entsteht eine **wiederverwendbare Extraktionsvorlage** für den Lieferanten. Künftige Dokumente mit demselben Layout werden damit automatisch verarbeitet, ohne das Layout erneut trainieren zu müssen.
+
+**Wichtige Merkmale:**
+
+* **Zugeordnete Spalten sind schreibgeschützt**; ihr Text lässt sich nicht manuell ändern.
+* Sie können **keine Zeilen hinzufügen oder löschen**.
+* Der Modus dient der **Zuordnung von Positionen** im Dokument. Werte korrigieren Sie im Korrekturmodus.
+* Klicken Sie nach dem Zuordnen der Tabelle und ihrer Spalten auf **„Save Rules“**, damit DocBits die Regeln auf ähnliche Dokumente desselben Lieferanten anwenden kann.
+
+
+
+Im **Korrekturmodus (Correction Mode)** beheben Sie **Extraktionsfehler** in den Tabellendaten des aktuellen Dokuments. Verwenden Sie ihn, wenn DocBits die Tabelle bereits extrahiert hat und das Ergebnis kleinere Korrekturen benötigt.
+
+Verwenden Sie den Korrekturmodus, wenn:
+
+* **Werte fehlen oder falsch zugeordnet sind**;
+* eine **leere oder doppelte Zeile** extrahiert wurde, die entfernt werden muss.
+
+**Möglichkeiten im Korrekturmodus:**
+
+* **Werte in zugeordneten Spalten manuell anpassen**, beispielsweise falsche Zuordnungen korrigieren.
+* **Zeilen löschen**, die nicht zur Tabelle gehören.
+* **Zeilen hinzufügen**, die bei der Extraktion vollständig übersehen wurden.

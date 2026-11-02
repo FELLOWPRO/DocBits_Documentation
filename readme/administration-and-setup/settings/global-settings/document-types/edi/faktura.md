@@ -1,86 +1,31 @@
-# Faktura
+# FatturaPA: Attribut in Rechnungspositionen anzeigen
 
-## Attribut in jedem Einzelposten anzeigen
+FatturaPA ist das italienische Format für elektronische Rechnungen. Diese Seite erklärt, wo Sie ein Positionsattribut, wie eine Bestellnummer, prüfen, bevor Sie dessen Mapping oder die Rechnungsvorschau ändern. **Fügen Sie keine zweite `PURCHASE_ORDER`-Spalte hinzu, ohne zuvor das aktive Mapping zu prüfen:** das aktuelle Sandbox-Mapping enthält bereits eine.
 
-Wenn Sie ein bestimmtes Attribut (wie die Bestellnummer) in jedem Einzelposten anzeigen möchten, befolgen Sie die folgenden Schritte. Die Vorgehensweise unterscheidet sich je nachdem, ob Sie das Attribut in der JSON-Extraktion oder in der XSL-Ausgabe benötigen.
+## Die drei FatturaPA-Dateien finden
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.33.16.png" alt=""><figcaption></figcaption></figure>
+Öffnen Sie **Einstellungen → Dokumenttypen → E-Doc**, wählen Sie **Invoice** und klappen Sie **FATTURAPA** auf. Die aktuelle Liste enthält drei verschiedene Dateien:
 
-### Methode 1: Attribut in der JSON-Extraktion anzeigen (DocBits-Konfiguration)
+* **TRANSFORMATION (XSLT)** liest die FatturaPA-XML-Quelldatei und erzeugt die normalisierten Rechnungsdaten.
+* **PREVIEW (XSLT)** erstellt aus diesen Daten die visuelle HTML/PDF-artige Rechnungsvorschau.
+* **EXTRACTION PATHS (JSON)** bildet die normalisierten Werte auf DocBits-Felder und Tabellenspalten ab.
 
-1. Gehen Sie zu **Einstellungen**
-2. Gehen Sie zu **Dokumenttypen**
-3. Wählen Sie **Invoice/E-Doc**
+<figure><img src="../../../../../.gitbook/assets/dbdc-625-fatturapa-list-de-20261010.png" alt="Deutsche Sandbox E-Doc-Einstellungen mit FATTURAPA und Transformation, Preview und Extraction Paths"><figcaption><p>Die aktuelle FATTURAPA-Dateiliste in der deutschen Sandbox.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.07.58.png" alt=""><figcaption></figcaption></figure>
+## Den extrahierten Positionswert prüfen
 
-4. Öffnen Sie den Reiter **"FATTURAPA"**
-5. Klicken Sie auf **JSON**
+Öffnen Sie **EXTRACTION PATHS (JSON)**. Suchen Sie in der aktiven Version das `tables`-Array und dessen `columns`. Die sichtbare Sandbox-Version enthält bereits `{"name": "PURCHASE_ORDER", "path": "PURCHASE_ORDER"}`. Prüfen Sie den Wert in einer echten Testrechnung, bevor Sie ihn ändern. Benötigen Sie ein weiteres Attribut, ermitteln Sie dessen Wert in den normalisierten Daten und fügen Sie dann in einer Entwurfsversion einen eigenen Spaltennamen und den zugehörigen Pfad hinzu.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.01.13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-625-fatturapa-json-de-20261010.png" alt="FATTURAPA Extraction Paths JSON mit aktiver Version und einer vorhandenen PURCHASE_ORDER-Tabellenspalte"><figcaption><p>Das aktive JSON-Extraktionsmapping enthält bereits eine Bestellnummer-Spalte.</p></figcaption></figure>
 
-6. Um einen Entwurf zu erstellen, klicken Sie auf das **Stift**-Symbol
+## Transformation oder Vorschau nur bei Bedarf ändern
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
+Wenn der normalisierte Wert fehlt, prüfen Sie **TRANSFORMATION (XSLT)** und den XML-Quellpfad, der ihn liefern soll. Eine Änderung hier wirkt sich auf die Daten aus, die nachfolgende Mapping- und Preview-Schritte verwenden. Wird der Wert korrekt extrahiert, in der visuellen Rechnung aber nicht angezeigt, prüfen Sie **PREVIEW (XSLT)** und die betreffende Tabellenzeile in dieser Vorlage. Die beiden XSLT-Dateien haben unterschiedliche Zwecke.
 
-7. Fügen Sie innerhalb des `"tables"`-Arrays die spezifische Spalte hinzu, die Sie anzeigen möchten, indem Sie einen Namen und einen Pfad angeben:
+<figure><img src="../../../../../.gitbook/assets/dbdc-625-fatturapa-transformation-de-20261010.png" alt="FATTURAPA aktive Transformation XSLT erzeugt normalisierte INVOICE-Daten"><figcaption><p>Die Transformation liest die XML-Quelldatei und erzeugt die normalisierten Rechnungsfelder.</p></figcaption></figure>
 
-```
-{ 
-"name": "PURCHASE_ORDER",    
-"path":"path_to_source" 
-}
-```
+<figure><img src="../../../../../.gitbook/assets/dbdc-625-fatturapa-preview-de-20261010.png" alt="FATTURAPA aktive Preview XSLT mit HTML-Ausgabe und Rechnungstabellen-Stilen"><figcaption><p>Die Preview steuert die visuelle Rechnungsausgabe.</p></figcaption></figure>
 
-**HINWEIS:** E-Dokumente haben immer den Ursprung **Großbritannien**, daher werden die Beträge im internationalen Format mit einem **Punkt (.)** als Dezimaltrennzeichen gespeichert.
+Verwenden Sie den Stift auf einer Versionskarte, um eine Änderung vorzubereiten. Prüfen Sie den Entwurf und verwenden Sie **Preview** mit einer repräsentativen FatturaPA-Rechnung, bevor Sie ihn aktivieren. Die Screenshots zeigen die aktuell aktiven Versionen; in dieser Sandbox-Sitzung wurde kein Entwurf gespeichert oder kein Preview-Test ausgeführt.
 
-8. Speichern Sie den Entwurf
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
-
-9. Stellen Sie sicher, dass Ihr Entwurf der **aktive** ist.
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>
-
-### Methode 2: Attribut in der XSL-Ausgabe anzeigen (HTML/PDF-Vorschau)
-
-1. Gehen Sie zu **Einstellungen**
-2. Gehen Sie zu **Dokumenttypen**
-3. Wählen Sie **Invoice/E-Doc**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.07.58.png" alt=""><figcaption></figcaption></figure>
-
-4. Öffnen Sie den Reiter **"FATTURAPA"**
-5. **Klicken Sie auf XSLT**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.23.06.png" alt=""><figcaption></figcaption></figure>
-
-6. Um einen Entwurf zu erstellen, klicken Sie auf das **Stift**-Symbol
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
-
-7. Fügen Sie im `<xsl:for-each select="path">`-Block, der die Tabellenzeilen generiert, ein Snippet wie dieses dort hinzu, wo das Attribut erscheinen soll (z. B. in einer eigenen Spalte):
-
-```
-<tr>
-    <!-- Andere Spalten ... -->
-
-    <td>
-        <!-- PO-Nummer -->
-        <xsl:variable name="variable_name" select="value" />
-        <xsl:value-of 
-            select="path_to_attribute" 
-        />
-    </td>
-</tr>
-```
-
-**HINWEIS:** E-Dokumente haben immer den Ursprung **Großbritannien**, daher werden die Beträge im internationalen Format mit einem **Punkt (.)** als Dezimaltrennzeichen gespeichert.
-
-8. Speichern Sie den Entwurf
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
-
-9. Stellen Sie sicher, dass Ihr Entwurf der **aktive** ist.
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>
+Die frühere Anweisung, alle E-Dokumente hätten Großbritannien als Ursprung, ist keine sichere allgemeine Regel. Prüfen Sie Land, Währung und Zahlenformat der Rechnung anhand des Quelldokuments und der Konfiguration Ihrer Organisation.

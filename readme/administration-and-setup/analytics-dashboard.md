@@ -120,6 +120,15 @@ Analice cualquier período desde **7 días** hasta un **año completo**, o estab
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-es.png" alt="Intervalo de tiempo personalizado en la barra de filtros."><figcaption><p>Intervalo de tiempo personalizado en la barra de filtros.</p></figcaption></figure>
 
+### Los filtros se recuerdan
+
+El panel guarda sus filtros y el intervalo de tiempo en este navegador, por separado para cada usuario y cada organización. Al volver a abrir el panel se restaura su última selección, incluido un intervalo de fechas personalizado en el selector de fechas.
+
+Seleccione **Restablecer valores predeterminados** en la esquina superior derecha del panel para borrar la selección guardada: los filtros, el intervalo de tiempo y las fechas personalizadas vuelven a sus valores predeterminados.
+
+<mark style="color:red;">**Nota**</mark>: la selección se guarda en el navegador, no en el servidor. No se sincroniza con otros dispositivos ni navegadores.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-es.png" alt="Panel Analytics en la vista Estado, con la fila de filtros y el botón Restablecer valores predeterminados arriba a la derecha"><figcaption><p>Los filtros se restauran al volver al panel. Restablecer valores predeterminados los borra.</p></figcaption></figure>
 
 ## Tarjetas de Pasos de flujo
 

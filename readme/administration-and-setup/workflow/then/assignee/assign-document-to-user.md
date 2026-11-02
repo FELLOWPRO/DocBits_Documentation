@@ -1,6 +1,10 @@
 # Asignar documento al usuario
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e7f92cca6e9d-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v1-es-es.png" alt="Asignar documento al usuario, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v2-es-es.png" alt="Asignar documento al usuario, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-es-es.png" alt="Asignar documento al usuario, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 

@@ -4,7 +4,7 @@ description: DocBits Workflow Engine
 
 # Flujo de trabajo
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Flujo de trabajo 3"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-search-detail-es.png" alt="Vista parcial de la búsqueda y de las columnas Nombre y Tipo de la lista de flujos de trabajo. Los valores privados están ocultos."><figcaption><p>Vista parcial de la búsqueda y de las columnas Nombre y Tipo de la lista de flujos de trabajo. Los valores privados están ocultos.</p></figcaption></figure>
 
 ## Motor de Flujo de Trabajo DocBits: Simplificación de la Automatización de Procesos
 

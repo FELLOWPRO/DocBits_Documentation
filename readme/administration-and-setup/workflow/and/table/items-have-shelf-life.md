@@ -1,6 +1,6 @@
 # Los artículos tienen vida útil
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4e7c22460ee3-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_shelf_life_operator_value_v2-es-es.png" alt="Los artículos tienen vida útil, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 

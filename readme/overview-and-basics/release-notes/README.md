@@ -244,7 +244,7 @@ Los anuncios de lanzamiento originales se mantienen a continuación como referen
 *   **Aplicar Layout predeterminado a todos los Origins:**\
     Se ha introducido un nuevo botón **Apply Default Layout to Origins** en la pantalla de configuración de layout. Los administradores ahora pueden enviar el layout predeterminado a todos los origins dentro de una organización en una sola acción, eliminando el laborioso proceso manual de copiar y pegar JSON de layout en cada origin individualmente. Esto es especialmente útil durante la incorporación de nuevos clientes donde múltiples origins necesitan ser configurados de manera consistente.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt="Diálogo Apply Default Layout to Origins con la lista de casillas Select Origins, la advertencia de que los diseños personalizados se reemplazarán y una opción SELECT ALL"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-es-20261023.png" alt="Layout Builder con la interfaz en español y el cuadro de diálogo abierto para aplicar el diseño predeterminado a varios Origins."><figcaption><p>El cuadro de diálogo para aplicar el diseño predeterminado a los Origins. Datos de ejemplo; no se guardó nada.</p></figcaption></figure>
 *   **Selección de tipo de documento para importación FTP:**\
     Las configuraciones de importación FTP ahora admiten la asignación de tipo de documento por carpeta. Al configurar una importación FTP, los usuarios pueden especificar qué tipo de documento — como Factura o Confirmación de Pedido — debe aplicarse a todos los documentos importados desde esa carpeta. Los documentos se clasifican automáticamente en la importación, eliminando la necesidad de asignación manual del tipo de documento después de la ingesta. Esto admite organizaciones que gestionan múltiples tipos de documentos en diferentes suborganizaciones y carpetas.
 
@@ -553,7 +553,7 @@ DocBits ahora incluye soporte completo para las versiones 2.1 y posteriores de Z
 * **Flexibilidad**: Ya trabaje con los perfiles básico, comfort o extendido del estándar ZUGFeRD, DocBits ofrece herramientas para gestionar cada nivel de complejidad de la factura.
 * **Preparación para el futuro**: Con el soporte de las versiones más recientes, DocBits garantiza que las empresas sigan cumpliendo la normativa cambiante de facturación electrónica en los Estados miembros de la UE y más allá.
 
-Al incorporar ZUGFeRD 2.1 y los estándares posteriores, DocBits simplifica las transacciones transfronterizas y se alinea con las necesidades empresariales modernas, convirtiéndose en una herramienta esencial para las organizaciones que priorizan la transformación digital y el cumplimiento normativo. [Explore las versiones de ZUGFeRD y sus mapeos en DocBits](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+Al incorporar ZUGFeRD 2.1 y los estándares posteriores, DocBits simplifica las transacciones transfronterizas y se alinea con las necesidades empresariales modernas, convirtiéndose en una herramienta esencial para las organizaciones que priorizan la transformación digital y el cumplimiento normativo. [Explore las versiones de ZUGFeRD y sus mapeos en DocBits](https://docs.docbits.com/espanol/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Integración de API externa para un procesamiento de documentos mejorado
 

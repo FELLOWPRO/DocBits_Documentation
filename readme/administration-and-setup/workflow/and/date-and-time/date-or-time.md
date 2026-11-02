@@ -1,25 +1,41 @@
 # Fecha u hora
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-es-es.png" alt="Fecha u hora, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
-## **Propósito:**
+## Propósito:
 
-Esta tarjeta de DocBits comprueba si un valor de fecha/hora especificado está dentro de un rango definido. Permite que los flujos de trabajo continúen o se detengan según si la condición se cumple, lo que la hace adecuada para operaciones sensibles al tiempo o para la programación de flujos de trabajo.
+Esta tarjeta de flujo de trabajo comprueba si la fecha y la hora actuales están dentro o fuera de un intervalo establecido en la tarjeta. Se puede utilizar para limitar pasos a determinadas horas, por ejemplo al horario laboral o a una ventana de mantenimiento prevista.
 
-## **Funcionalidad:**
+## Componentes de la tarjeta:
 
-* **Validación de fecha/hora:** Esta tarjeta evalúa si una fecha/hora determinada está dentro de un rango especificado usando las siguientes condiciones:
-  * **Is:** Comprueba si la fecha/hora está dentro del rango de inicio y fin definido (ambos incluidos).
-  * **No es:** Garantiza que la fecha/hora quede fuera del rango definido.
+1. **Operador**
+   * **Opciones:**
+     * **Es:** La fecha y la hora actuales están dentro del intervalo.
+     * **No Es:** La fecha y la hora actuales están fuera del intervalo.
+2. **Primera fecha/hora**
+   * **Descripción:** Un extremo del intervalo, como fecha y hora o solo como hora.
+3. **Segunda fecha/hora**
+   * **Descripción:** El otro extremo del intervalo.
 
-**Rango de fecha/hora:** Los usuarios especifican los valores de fecha/hora de inicio y fin para definir el rango de comparación.
+## Funcionalidad:
 
-## **Uso:**
+* **Evaluación de la condición:** Cuando el flujo de trabajo llega a la tarjeta, esta toma la fecha y la hora actuales en UTC y comprueba si están entre los dos valores de la tarjeta. El valor anterior se utiliza como inicio, por lo que el orden de los dos campos no importa.
+  * Un valor que solo contiene una hora (por ejemplo `09:00`) se utiliza con la fecha de hoy, de modo que el intervalo se repite cada día.
+  * El inicio y el fin forman parte del intervalo: exactamente a la hora de inicio o de fin, **Es** es verdadero.
+  * Un intervalo que cruza la medianoche se puede introducir solo con horas, por ejemplo de `22:00` a `04:00`. En ese caso, la tarjeta comprueba cada día el tiempo desde las 22:00 hasta las 04:00, incluidas las horas exactas de inicio y de fin.
+  * Con fechas completas en dos días distintos (por ejemplo de `2026-11-01 22:00` a `2026-11-02 04:00`), la tarjeta comprueba todo el periodo desde el primer hasta el segundo momento, incluidos el inicio y el fin.
+* **Ejecución de la acción:**
+  * **Condición verdadera:**\
+    Si la condición se cumple, el flujo de trabajo continúa con las siguientes tarjetas.
+  * **Condición falsa:**\
+    Si no se cumple, el flujo de trabajo se detiene con una condición no cumplida.
+* **Datos que faltan:** Si falta uno de los dos valores en la tarjeta, la tarjeta no evalúa la condición e informa de la entrada que falta en el registro del flujo de trabajo.
 
-Esta tarjeta es ideal para la programación, las comprobaciones de cumplimiento o la validación de condiciones basadas en el tiempo en los flujos de trabajo. Por ejemplo, se puede usar para garantizar que las tareas se ejecuten solo durante los plazos predefinidos o para verificar fechas límite.
+## Configuración:
 
-## **Ejemplo de escenario:**
+* La tarjeta se puede añadir como condición And desde la categoría **Fecha & Hora**. A continuación se establecen los dos valores y el operador. Todas las horas deberían introducirse en UTC.
+* **Ejemplo:** Con **Es**, `09:00` y `17:00`, la tarjeta se cumple cuando el flujo de trabajo se ejecuta entre las 09:00 y las 17:00 UTC de cualquier día.
 
-* Un usuario configura la tarjeta para comprobar si la **fecha de envío** de una factura **está entre** **"2024-11-01"** y **"2024-11-30"**. Si la fecha de envío está dentro de este rango, el flujo de trabajo continúa con el procesamiento del pago. Si no, el flujo de trabajo dispara una notificación para una revisión adicional.
+## Conclusión:
 
-Al usar la tarjeta "Date/Time Range Validation", las organizaciones pueden garantizar una programación precisa, mejorar el cumplimiento y agilizar los flujos de trabajo al ajustarse a las restricciones de tiempo predefinidas.
+La tarjeta de flujo de trabajo «Date or Time» convierte el momento de la ejecución en una condición del flujo de trabajo. Los pasos se pueden limitar a horas fijas o a un único intervalo previsto sin modificar el flujo de trabajo cada vez.

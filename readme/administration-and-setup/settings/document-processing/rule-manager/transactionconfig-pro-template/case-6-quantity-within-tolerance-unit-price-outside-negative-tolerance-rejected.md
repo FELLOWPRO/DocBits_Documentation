@@ -1,39 +1,41 @@
-# Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)
+# Fall 6: Menge innerhalb der Toleranz, Stückpreis unterhalb der Toleranzgrenze (abgelehnt)
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
 
-## Action:
+## Szenario:
 
-The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+Die Menge liegt innerhalb der Toleranz. Der Stückpreis unterschreitet jedoch den zulässigen Bereich (negative Toleranz); die Abweichung wurde nicht genehmigt.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Quantity: 100 units
-  * Unit Price: $10.00 per unit
-  * Total Amount: $1,000.00
-* **Invoice Received:**
-  * Quantity: 100 units (within tolerance of 0%)
-  * Unit Price: $9.00 per unit (outside negative tolerance of -10%)
-  * Total Amount: $900.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+Die Beispielzuordnung setzt den Stückpreis auf den Bestellwert zurück. Ob weitere Kopfzuschläge oder Korrekturbelege entstehen, hängt von den aktiven Konfliktregeln und Exportaktionen ab.
 
-Since the quantity (100 units) is within the acceptable tolerance range but the unit price ($9.00) is below the acceptable tolerance and is not approved, the system will:
+## Beispiel:
 
-1. **Reject the Unit Price:** The system does not accept the invoiced unit price of $9.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $10.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 100 units × $10.00 per unit = $1,000.00**
-4. **Generate a Credit Note:** The system generates a credit note for the difference between the incorrect total amount on the invoice and the corrected total amount.
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Credit Note Amount = $900.00 - $1,000.00 = -$100.00**
-   * The credit note will effectively reverse the undercharge.
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $1,000.00 and applies the credit note for $100.00 to account for the undercharged unit price.
+* **Bestellung (PO):**
+  * Menge: 100 Einheiten
+  * Stückpreis: $10.00 je Einheit
+  * Gesamtbetrag: $1,000.00
+* **Eingegangene Rechnung:**
+  * Menge: 100 Einheiten (Abweichung innerhalb der Toleranz: 0%)
+  * Stückpreis: $9.00 je Einheit (negative Abweichung außerhalb der Toleranz: -10%)
+  * Gesamtbetrag: $900.00
+* **Toleranzgrenzen:**
+  * Mengentoleranz: ±2%
+  * Stückpreistoleranz: ±1%
 
-This approach ensures that the pricing aligns with the purchase order terms, even when an incorrect, lower price is invoiced.
+Die Menge (100 Einheiten) liegt innerhalb der zulässigen Toleranz. Der Stückpreis ($9.00) unterschreitet dagegen die Toleranzgrenze und wurde nicht genehmigt. Das System führt folgende Schritte aus:
+
+1. **Stückpreis ablehnen:** Das System akzeptiert den berechneten Stückpreis von $9.00 nicht.
+2. **Stückpreis anpassen:** Das System setzt den Stückpreis auf den ursprünglichen Wert aus der Bestellung.
+   * Angepasster Stückpreis = $10.00 (aus der Bestellung)
+3. **Korrigierten Gesamtbetrag berechnen:** Das System berechnet den Gesamtbetrag mit dem angepassten Stückpreis neu.
+   * **Korrigierter Gesamtbetrag = Menge × Angepasster Stückpreis**
+   * **Korrigierter Gesamtbetrag = 100 Einheiten × $10.00 je Einheit = $1,000.00**
+4. **Vorzeichenbehaftete Abweichung berechnen:** Die Differenz zwischen dem ursprünglichen Rechnungsbetrag und dem korrigierten Betrag ist ein Rechenwert. Ob daraus ein Korrekturbeleg entsteht und welchen Typ sowie welches Vorzeichen er erhält, bestimmt die aktive Exportzuordnung.
+   * **Vorzeichenbehaftete Abweichung = Ursprünglicher Rechnungsbetrag - Korrigierter Gesamtbetrag**
+   * **Vorzeichenbehaftete Abweichung = $900.00 - $1,000.00 = -$100.00**
+5. **Dokument gemäß Zuordnung verarbeiten:** Der angepasste Gesamtbetrag beträgt $1,000.00; der Betrag der Abweichung beträgt $100.00. Die konkrete Korrekturbelegart und ihre Verarbeitung richten sich nach der aktiven Zuordnung.
+
+Damit wird der Preis an die Bestellbedingungen angepasst, auch wenn fälschlicherweise ein niedrigerer Preis berechnet wurde.

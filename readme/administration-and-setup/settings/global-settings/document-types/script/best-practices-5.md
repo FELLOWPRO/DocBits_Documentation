@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Hier sind einige Best Practices für die Skriptentwicklung in DocBits, wie z. B. die modulare Gestaltung von Skripten, die korrekte Fehlerbehandlung und die Dokumentation von Zweck und Funktion jedes Skripts.
 

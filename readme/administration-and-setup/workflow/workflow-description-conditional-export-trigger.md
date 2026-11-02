@@ -4,7 +4,7 @@
 
 Dieser Workflow beschreibt die Bedingungen, unter denen ein Export-Prozess gestartet werden soll. Er stellt sicher, dass nur Dokumente, die alle festgelegten Kriterien erfüllen, für den Export verarbeitet werden, wodurch die Datenintegrität und die Übereinstimmung mit Geschäftsregeln verbessert werden.
 
-### When:
+### Wenn (Auslöser):
 
 * Ein Dokument im System wird auf seine Export-Eignung geprüft.
 
@@ -20,7 +20,7 @@ Dieser Workflow beschreibt die Bedingungen, unter denen ein Export-Prozess gesta
      * Der Gesamtbetrag in der Auftragsbestätigung stimmt mit dem Gesamtbetrag in der Bestellung überein.
      * Die in der Auftragsbestätigung angegebenen Lieferdaten stimmen mit denen in der Bestellung überein.
 
-### Then:
+### Dann (Aktion):
 
 #### Aktion:
 

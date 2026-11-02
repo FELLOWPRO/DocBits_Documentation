@@ -160,7 +160,7 @@ wird aus dem Nettobetrag berechnet. Darüber hinaus:
 - Die Seite der Bestellabgleichregeln zeichnet das Regelwerk als
   Flussdiagramm, und die Abgleichhistorie ist in die Aktionsleiste umgezogen.
 
-### Auto Accounting
+### Automatische Kontierung
 
 - Organisationen mit mehr als 2.000 Konten durchsuchen die Kontenliste auf dem
   Server. Das Dropdown war auf Sandbox für solche Organisationen leer, und das
@@ -406,7 +406,7 @@ Für Organisationen, die in der API statt im PO Match Service abgleichen:
 - Eine korrigierte Bestellnummer wird in demselben Speichervorgang
   abgeglichen, der sie korrigiert.
 
-### Analytics
+### Analysen
 
 - Touchless: alle Backend-Änderungen hinter dem Web-App-Abschnitt oben,
   einschließlich der von jeder Pipeline-Stufe aufgezeichneten Belege, des

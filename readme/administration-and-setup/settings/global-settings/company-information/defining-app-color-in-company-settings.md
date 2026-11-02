@@ -4,7 +4,7 @@
 
 Die **App-Farbe**-Einstellung ermöglicht es Administratoren, das Farbschema der Benutzeroberfläche der Anwendung festzulegen. Diese Funktion ist besonders nützlich, um zwischen verschiedenen Umgebungen wie Test, Sandbox und Produktion zu unterscheiden. Durch die Zuweisung unterschiedlicher Farben zu jeder Umgebung können Benutzer leicht erkennen, in welcher Umgebung sie arbeiten, wodurch das Risiko verringert wird, kritische Aktionen in der falschen Umgebung auszuführen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/AppColor.png)
+<figure><img src="../../../../.gitbook/assets/AppColor-de.png" alt="App Color Abschnitt in den Unternehmenseinstellungen"><figcaption><p>Der Abschnitt App Color, in dem die Farbe der Anwendungsoberflaeche festgelegt wird.</p></figcaption></figure>
 
 ## Zugriff auf die App-Farbe-Einstellung
 

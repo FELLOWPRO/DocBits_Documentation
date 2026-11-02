@@ -1,6 +1,8 @@
-# Unit Price Combined with Fields
+# Stückpreis kombiniert mit Feldern
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v2-de-de.png" alt="Stückpreis kombiniert mit Feldern, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v3-de-de.png" alt="Stückpreis kombiniert mit Feldern, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Zweck:**
 

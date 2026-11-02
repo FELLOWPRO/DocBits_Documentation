@@ -1,80 +1,73 @@
-# Then
+# Dann
 
-## Überblick über die "Then..."-Aktionskarten
+Eine **Dann**-Karte teilt einem Workflow mit, was nach seinem **Wenn**-Trigger und allen **Und**-Bedingungen zu tun ist. Wählen Sie im **Workflow-Builder** unter **Then...** **Karte hinzufügen** aus. Wählen Sie links eine Kategorie oder geben Sie einen Namen in **Karte suchen** ein. Wählen Sie eine Kartenvorschau aus, um sie hinzuzufügen, füllen Sie die auf der Karte angezeigten Felder aus und speichern Sie den Workflow. Scrollen Sie in der Auswahl, um weitere Karten anzuzeigen. Wählen Sie **×**, um es zu schließen, ohne eine Karte hinzuzufügen. Die vollständige Sequenz finden Sie unter [Workflow](..)].
 
-### **1. Document Field-Aktionen:**
+Die Vorschauen unten zeigen verfügbare Aktionen, nicht abgeschlossene Einstellungen. Wählen Sie die Aktion aus, die dem gewünschten Ergebnis entspricht.
 
-* **Invert Checkbox:** Diese Aktion kehrt den Zustand eines Kontrollkästchenfelds in einem Dokument um.
-* **Set Checkbox:** Setzt den Zustand eines Kontrollkästchenfelds auf entweder wahr (aktiviert) oder falsch (deaktiviert).
-* **Set Field to Text:** Diese Aktion setzt ein angegebenes Dokumentfeld auf einen bestimmten Textwert.
+## Dokumentfeld
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Setzen oder invertieren Sie ein Kontrollkästchen, fügen Sie Text in ein Feld ein oder kopieren Sie ein Feld in ein anderes. Wählen Sie die von der Karte geforderten Feldnamen und Werte aus. Siehe [Dokumentfeld](document-field).
 
-### **2. Document-Aktionen:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-* **Approve the Document:** Markiert ein Dokument im System als freigegeben.
-* **Reject the Document:** Markiert ein Dokument als abgelehnt.
+## Dokument
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Wählen Sie **Das Dokument genehmigen** oder **Das Dokument ablehnen**, wenn der Workflow diese Entscheidung treffen soll. Verwenden Sie zuerst eine **Und**-Bedingung, wenn die Genehmigung von einer Prüfung abhängig sein soll. Siehe [Dokument](document).
 
-### **3. Export-Aktionen:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-* **Export document with export configuration:** Startet den Exportvorgang mit einer bestimmten Exportkonfiguration.
-* **Start Export:** Startet den Exportvorgang.
+## Logik
 
+Verwenden Sie diese Karten, um Werte zwischen Zahlen-, Text- und booleschen Formaten zu konvertieren oder einen Wert aus JSON zu lesen. Wählen Sie die Ein- und Ausgabefelder auf der ausgewählten Karte aus.
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Status
 
-### **4. Status-Aktionen:**
+Wählen Sie **Status ändern**, um das Dokument in einen ausgewählten Status zu verschieben. Die Karte kann auch einen anderen Workflow auslösen. Siehe [Status](status).
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
+## Eingabeaufforderungen und Skripte
 
-* **Change Status:** Ändert den Status eines Dokuments oder einer Aufgabe in einen angegebenen neuen Status.
+Wählen Sie diese Kategorie, um ein DocOperator-Eingabeaufforderungsskript auszuführen. Wählen Sie das Skript und die von der Karte angeforderten Variablen aus. Die Karte bietet auch Ausführungseinstellungen wie Wiederholungsversuche.
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-### **5. Task-Aktionen:**
+## Exportieren
 
-* Zuweisungen und Benachrichtigungen:
-  * **Assign Task:** Erstellt und weist eine Aufgabe mit bestimmten Details einer Einzelperson oder Gruppe zu, einschließlich der Option, diese per E-Mail zu benachrichtigen.
-  * **Create a New Task:** Ähnlich wie Zuweisen, jedoch mit dem Fokus auf das Einrichten einer völlig neuen Aufgabe im System.
+Starten Sie einen Export, exportieren Sie mit einer ausgewählten Konfiguration oder stellen Sie einen endgültigen Export in die Warteschlange. Wählen Sie die auf Ihrer Karte angezeigte Exportkonfiguration und Option für ausstehende Aufgaben. Siehe [Export](export).
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-### **6. Table-Aktionen:**
+## Aufgabe
 
-* **Calculate in Table:** Führt Berechnungen mit Tabellendaten auf Basis festgelegter Bedingungen durch und speichert die Ergebnisse in einer bestimmten Spalte.
-* **Change Entries:** Aktualisiert Einträge in einer Tabelle auf Basis festgelegter Bedingungen.
+Erstellen Sie eine Aufgabe oder Benachrichtigung und weisen Sie sie einem Benutzer oder einer Gruppe zu. Geben Sie den von der Karte geforderten Titel, die Beschreibung, die Priorität und die Benachrichtigungseinstellungen ein. Einige Karten werden nacheinander zugewiesen. Siehe [Aufgabe](task).
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-### **7. Assignee-Aktionen:**
+## E-Mail
 
-* **Assign User from Field:** Weist einer Aufgabe oder einem Dokument einen Benutzer auf Basis von Benutzerdaten zu, die in einem bestimmten Feld gespeichert sind, mit der Option eines Ersatzbenutzers, falls der primäre nicht verfügbar ist.
-* **Assign Document to User or Group:** Weist ein Dokument direkt einem Benutzer oder einer Gruppe zu und stellt so sicher, dass die Verantwortung angemessen festgelegt wird.
+Senden Sie eine E-Mail mit einer ausgewählten Vorlage entweder an Empfänger oder an Gruppen. Wählen Sie die Vorlage und das Ziel auf der Karte aus.
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-### **8. Aktionen für externe Interaktionen:**
+## Tabelle
 
-* **Call API:** Sendet eine Anfrage an eine externe API, die mit bestimmten Methoden, Parametern und Daten angepasst werden kann.
-* **Send HTTPS Request:** Ähnlich wie API-Aufrufe, jedoch speziell für HTTPS-Protokolle formatiert.
+Ändern Sie Einträge oder berechnen Sie Werte in einer Dokumententabelle. Wählen Sie die von der Karte angeforderte Tabelle, Spalten, den Operator und die Ergebnisspalte aus. Siehe [Tabelle](table).
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-### **9. Erweiterte Verarbeitung:**
+## Zuweisung
 
-* **Run Workflow:** Löst einen weiteren Workflow innerhalb des Systems aus und ermöglicht so die Verkettung komplexer Prozesse.
+Weisen Sie das Dokument einem Benutzer, einer Gruppe, einem Empfänger oder einer Unterorganisation zu. Einige Karten verwenden ein Feld oder eine Entscheidungstabelle und bieten einen Fallback. Wählen Sie das richtige Ziel und den richtigen Fallback für die ausgewählte Karte. Siehe [Beauftragter](assignee).
 
-#### Praktische Anwendung
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-Diese Aktionskarten werden verwendet, um Reaktionen auf Basis bestimmter Auslöser zu automatisieren, die in den früheren Teilen der Workflow-Einrichtung identifiziert wurden. Zum Beispiel:
+## Aktion
 
-* Wenn ein Dokument als prüfungsbedürftig identifiziert wird, kann die Aktion "Approve the Document" automatisch ausgelöst werden, sobald es alle festgelegten Bedingungen erfüllt.
-* Für Aufgaben der Datenverwaltung stellen Aktionen wie "Set Checkbox" oder "Set Field to Text" sicher, dass Dokumentfelder automatisch aktualisiert werden, wodurch manuelle Dateneingaben und das Fehlerpotenzial reduziert werden.
-* Komplexe Aufgaben wie API-Interaktionen oder Statusänderungen optimieren Interaktionen nicht nur innerhalb des ERP-Systems, sondern auch mit externen Diensten und Tools und verbessern so Integration und Funktionalität.
+Führen Sie einen anderen Workflow aus, senden Sie eine HTTPS-Anfrage, rufen Sie eine API auf oder verwenden Sie die Kostensteigerungsberechnungskarte. Diese Aktionen können sich auf andere Systeme auswirken; Fragen Sie Ihren Administrator, welchen Endpunkt und welche Einstellungen Sie verwenden möchten. Siehe [Aktion](action).
 
-### Fazit
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-Der Abschnitt "Then..." in Ihrem Workflow-System bietet robuste Werkzeuge, um präzise Aktionen zu definieren, die als Ergebnis erfüllter Workflow-Bedingungen erfolgen sollen. Durch den effektiven Einsatz dieser Aktionen können Unternehmen Routineprozesse automatisieren, die Datengenauigkeit sicherstellen und dynamisch auf sich ändernde Informationen und Systemzustände reagieren. Zu verstehen, wie diese Aktionen konfiguriert und genutzt werden, ist der Schlüssel, um die Effizienz und Wirksamkeit der Workflow-Funktionen Ihres ERP-Systems zu maximieren.
+[Detaillierte Logikkartenfelder, JSON-Pfade, Trigger und Tests](../cards-overview/logic-cards-guide.md).

@@ -35,7 +35,7 @@ Einstellungsseiten mit vielen Abschnitten (etwa Globale Einstellungen oder die K
 
 Auf den meisten Einstellungsseiten, Dialogen und Werkzeug-Bildschirmen sehen Sie jetzt ein kleines **?**-Symbol im Kopfbereich.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Hilfe-Symbol im Seitenkopf"><figcaption><p>Das Hilfe-Symbol öffnet die passende Dokumentationsseite in einem neuen Tab.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon-de.png" alt="Hilfe-Symbol im Seitenkopf"><figcaption><p>Das Hilfe-Symbol öffnet die passende Dokumentationsseite in einem neuen Tab.</p></figcaption></figure>
 
 Ein Klick öffnet die passende Seite auf `docs.docbits.com` in einem neuen Tab — ohne die Dokumentation nach der richtigen Seite durchsuchen zu müssen. Das Symbol berücksichtigt Ihre Oberflächensprache und öffnet die übersetzte Dokumentationsseite, sofern eine existiert; andernfalls weicht es auf Englisch aus.
 

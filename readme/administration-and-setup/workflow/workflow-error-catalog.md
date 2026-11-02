@@ -4,6 +4,10 @@ description: "Beobachtete Workflow- und SDK-Meldungen mit Prüfreihenfolge, Korr
 
 # Workflow-Meldungen richtig einordnen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-12-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-12-admin/v1/de.html).
+
 Beginnen Sie mit dem konkreten Knoten und seiner tatsächlichen Eingabe. Eine technische Meldung ist ein Diagnosehinweis; sie benennt nicht immer eindeutig die fachliche Ursache. Unterscheiden Sie `failed_condition`, `error`, einen übersprungenen Knoten und das Gesamtergebnis.
 
 Die folgenden Meldungen wurden in den genannten Prüfumgebungen tatsächlich beobachtet. Sie sind keine vollständige Liste aller möglichen Versionen. Variierende IDs und interne Diagnosedaten gehören nicht in einen öffentlich geteilten Fehlerbericht.

@@ -1,6 +1,8 @@
 # Bestätigter Liefertermin
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-63b0722ae913-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v2-de-de.png" alt="Bestätigter Liefertermin, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_confirmed_delivery_accepted_date_in_calendar_master_data_v3-de-de.png" alt="Bestätigter Liefertermin, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Zweck**
 

@@ -99,3 +99,30 @@ Für Rechnungen, die nicht automatisch abgeglichen wurden:
 3. **Abgleiche überprüfen**: Benutzer können die Abgleiche überprüfen, Details verifizieren und Statusanzeigen sehen.
 4. **Abweichungen beheben**: Alle Unstimmigkeiten oder Abweichungen werden hervorgehoben, damit der Benutzer sie manuell überprüfen und korrigieren kann.
 5. **Daten exportieren**: Abgeglichene Daten können für die weitere Verarbeitung oder Aufzeichnung exportiert werden.
+
+
+## Videoanleitung: Kostenrechnung kontieren und auf Kostenstellen aufteilen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v3/de.mp4" %}
+
+[Video mit Untertiteln, Kapitelwahl und Transkript öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v3/de.html).
+
+Einzelne native Produktbeschriftungen können abweichend übersetzt sein. Technische Feld-IDs bleiben erhalten.
+
+Zuerst prüfe ich unsere Schulungsrechnung im Original. Der Lieferant, die Rechnungsnummer und der Betrag müssen zum Beleg passen. In diesem Beispiel sind es tausend Euro ohne Steuer. Die Rechnung enthält keine Bestellung.
+
+Ich öffne die Kontierung und arbeite mit der Aufteilung nach dem Gesamtbetrag. Die verfügbaren Sachkonten und Kostenstellen wurden vorher von unserem Administrator eingerichtet. Ich wähle nur Werte, die fachlich zu dieser Rechnung passen.
+
+Mit der Aufteilungsfunktion lege ich zwei Teilzeilen an. DocBits beginnt hier mit einer gleichmäßigen Verteilung. Für unser Beispiel brauche ich aber sechzig und vierzig Prozent. Die ursprüngliche Rechnungssumme bleibt dabei tausend Euro.
+
+Für beide Teilzeilen wähle ich das vorbereitete Sachkonto für Bürodienstleistungen. Die erste Zeile gehört zur Kostenstelle für den operativen Bereich, die zweite zur Verwaltung. Die Kostenstelle ist in diesem Beispiel ein Pflichtfeld. Zusätzlich ergänze ich einen verständlichen Buchungstext.
+
+In der ersten Zeile trage ich sechzig Prozent ein und bestätige mit Enter. Ich warte, bis der Betrag sechshundert Euro zeigt. Danach bestätige ich in der zweiten Zeile vierzig Prozent und warte auf vierhundert Euro. So kontrolliere ich jede Neuberechnung, bevor ich weiterarbeite.
+
+Jetzt prüfe ich die beiden Beträge, Sachkonten und Kostenstellen zusammen. Sechshundert plus vierhundert ergibt tausend Euro. Auch die erfasste Summe muss tausend Euro zeigen, und der offene Restbetrag muss null sein. Eine abweichende Summenanzeige kläre ich vor dem Speichern.
+
+<figure><img src="../../.gitbook/assets/customer-totals-de-accounting-email-v2.png" alt="Kostenstellen mit abgestimmter Gesamtsumme von 1.000 Euro"><figcaption><p>Kostenstellen mit abgestimmter Gesamtsumme von 1.000 Euro</p></figcaption></figure>
+
+Ich speichere die Kontierung und warte auf die Rückmeldung. Anschließend lade ich die Rechnung erneut. Beide Kostenstellen, die Prozentwerte und die Beträge sind weiterhin vorhanden. Ich prüfe auch nach dem Neuladen die Summe und den Restbetrag.
+
+<figure><img src="../../.gitbook/assets/customer-save-de-accounting-email-v2.png" alt="Kontierung gespeichert und nach erneutem Öffnen geprüft"><figcaption><p>Kontierung gespeichert und nach erneutem Öffnen geprüft</p></figcaption></figure>

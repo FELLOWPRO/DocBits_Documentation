@@ -4,6 +4,10 @@ description: "P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz"
 
 # P1: Toleranzen und PO-Vergleich mit eindeutiger Referenz
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-05-admin/v1/de.mp4" %}
+
+[Vertiefungsvideo mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-05-admin/v1/de.html).
+
 Bei einer Prozenttoleranz zählt die **Referenzseite**. In der geprüften PO-Karte, Version 5, liest sich `document_po` als Dokumentwert gegen Bestellwert; der Bestellwert ist die Prozentbasis. `po_document` kehrt Vergleich und Basis um. Die sechs zulässigen Richtungen schließen auch den empfangenen Wert ein. Wählen Sie Richtung, Operator und Any/All ausdrücklich.
 
 Beispiel: Bestellung 100, Dokument 102.02, Gleichheit mit 2 Prozent. Mit Bestellreferenz liegt das zulässige Band bei 98 bis 102: außerhalb. Mit Dokumentreferenz liegt es bei 99.9796 bis 104.0604: der Bestellwert 100 liegt darin. Bei Dokument 102 ist die obere Grenze der ersten Richtung eingeschlossen. Eine absolute Toleranz 2 verwendet dieselbe Einheit wie der verglichene Wert.

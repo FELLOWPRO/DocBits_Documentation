@@ -1,7 +1,7 @@
 # Dokumentspalten ändern
 
-1. Öffnen Sie das Zahnrad neben der Dashboard-Suche.
-2. Öffnen Sie die Schaltfläche für Spalteneinstellungen.
+1. Wählen Sie das Zahnrad **Erweiterte Einstellungen** rechts neben der Dashboard-Suchleiste.
+2. Wählen Sie im Menü die Schaltfläche **Einstellungen für Spalten**.
 3. Suchen Sie in der ausgeblendeten oder sichtbaren Spaltenliste. Wählen Sie Spalten und verschieben Sie diese mit den Pfeilen zwischen den Listen.
 4. Ordnen Sie die sichtbaren Spalten über die Ziehgriffe an.
 5. Bei Bedarf wählen Sie **Feld aus Dokumenttyp hinzufügen**, einen Dokumenttyp und die benötigten Felder.

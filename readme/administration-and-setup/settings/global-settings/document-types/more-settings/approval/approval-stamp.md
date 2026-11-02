@@ -1,38 +1,27 @@
 # Genehmigungsstempel
 
-## **Übersicht:**
+Ein Genehmigungsstempel ist eine Anmerkung im Genehmigungsworkflow, wenn die Option für den betreffenden Dokumenttyp aktiviert ist. Er hilft dem Prüfer nachzuvollziehen, wer ein Dokument wann genehmigt hat. Prüfen Sie die Anmerkung und das PDF-Ergebnis mit einer Testrechnung in dem Workflow, den Ihre Organisation tatsächlich verwendet.
 
-Dieses Feature fügt automatisch einen Genehmigungsstempel zu einem Dokument hinzu, wenn es im Genehmigungsbildschirm genehmigt wird. Wenn ein Dokument einen Genehmigungsstempel enthält, wird es beim **Exportieren nach IDM** einbezogen.
+## Option finden
 
-## Aktivieren der Genehmigungsstempel-Funktion
+1. Öffnen Sie mit einem Administratorkonto **Einstellungen → Dokumenttypen**. Suchen Sie den Dokumenttyp, den Sie konfigurieren möchten, z. B. **Rechnung**, und wählen Sie das **Zahnradsymbol** auf dieser Karte. Es öffnet **Weitere Einstellungen** für diesen Dokumenttyp.
 
-Um die Genehmigungsstempel-Funktion zu aktivieren, folgen Sie diesen Schritten:
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-86-document-type-card-de-20261031.png" alt="Rechnungskarte der aktuellen deutschen Oberfläche mit Aktivieren, Extraktion und dem Zahnrad für Weitere Einstellungen"><figcaption><p>Echte Rechnungskarte aus der deutschen Dev-Oberfläche. Das Zahnrad öffnet Weitere Einstellungen; kein Steuerelement wurde geändert.</p></figcaption></figure>
 
-1.  Gehen Sie zu **Einstellungen** → **Globale Einstellungen** → **Dokumenttypen**.
+   **Aktivieren** steuert die Verfügbarkeit des Dokumenttyps, **Extraktion** dessen Extraktionsmodus. Die Links im Kartenfuß öffnen eigene Bereiche: **Layouts**, **Felder**, **Tabellen**, **Validierungsregeln**, **Transformationsregeln**, **Skripte**, **Modell Training**, **E-Doc**, **Untertypen von Dokumenten** und **Logs**. Welche Links verfügbar sind, hängt von den Modulen und Einstellungen des Dokumenttyps ab. Zum Genehmigungsstempel gelangen Sie über das Zahnrad.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_1_de.png" alt="Navigation der globalen Einstellungen mit Einträgen für Firmeninformationen, Gruppen Benutzer und Berechtigungen, Dokumenttypen, E-Mail Benachrichtigung und Dashboard"><figcaption></figcaption></figure>
-2.  **Wählen Sie den Dokumenttyp** aus, für den Sie die Stempelgenehmigung aktivieren möchten, und klicken Sie auf **Weitere Einstellungen**.
+2. Klappen Sie in **Weitere Einstellungen** den Bereich **Genehmigung & Ablehnung** auf. Suchen Sie **Genehmigungsstempel** neben **Erste Genehmigung**, **Zweite Genehmigung** und **Genehmigungsverlauf**. Die Aufnahme zeigt die vorhandene Einstellung des Stempels **ausgeschaltet**; in Ihrer Organisation kann ein anderer Zustand gelten. Sie zeigt kein genehmigtes Dokument.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_2_de.png" alt="Einstellungsseite Dokumenttypen mit Rechnung, Credit Note, Lieferschein, Medical Receipt und Patient Form sowie Optionen zum Bearbeiten des Layouts"><figcaption></figcaption></figure>
-3.  Aktivieren Sie im Abschnitt **Genehmigung** die Option **Genehmigungsstempel**.
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-86-approval-stamp-panel-de-20261031.png" alt="Aktueller deutscher Bereich Genehmigung und Ablehnung der Rechnung mit ausgeschaltetem Genehmigungsstempel und weiteren Workflow-Optionen"><figcaption><p>Echte deutsche Dev-Ansicht von Genehmigung &amp; Ablehnung. Die Schalterzustände wurden ausschließlich gelesen.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_3_de.png" alt="Bildschirm Weitere Einstellungen mit dem Bereich Genehmigung und Workflow-Karten wie Vor dem Export genehmigen und Genehmigungsstempel"><figcaption></figcaption></figure>
+   **Erste Genehmigung**, **Vor dem Export genehmigen V2**, **Zweite Genehmigung** und **Genehmigungsverlauf** sind vom Stempel getrennte Workflow-Einstellungen. Die angezeigten Design-Links öffnen die jeweiligen Editoren für Genehmigungs-, Überprüfungs- oder Ablehnungsformulare. Um die Stempel-Einstellung anzusehen, müssen Sie diese Editoren nicht öffnen.
 
-## Nach der Aktivierung:
+3. Ändern Sie **Genehmigungsstempel** erst, nachdem Sie den Ablauf von Genehmigungen und Exporten in Ihrer Organisation abgestimmt haben. **Eine Schalteränderung speichert die Einstellung sofort.** Halten Sie den vorherigen Zustand fest, damit Sie die Wirkung an einer Testrechnung überprüfen können.
 
-Sobald die Funktion aktiviert ist, erhält jedes Dokument im Status "ausstehende Genehmigung" automatisch einen Genehmigungsstempel, sobald es genehmigt wird. Der Stempel enthält das "Approved"-Logo, den Namen des Benutzers, der das Dokument genehmigt hat, und die Uhrzeit, zu der das Dokument genehmigt wurde.
+## Eine Genehmigung prüfen
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_4_de.png" alt="Genehmigungsbildschirm für Rechnung 911890158 mit dem Panel Genehmigungsdetails, das Genehmiger Fellowpro Test und Gesamt 997,60 EUR zeigt"><figcaption></figcaption></figure>
+Schicken Sie eine synthetische Rechnung dieses Dokumenttyps durch den konfigurierten Genehmigungsworkflow. Genehmigen Sie sie im Genehmigungsschritt dieses Workflows mit einem berechtigten Testkonto. Öffnen Sie das genehmigte Dokument erneut und prüfen Sie, ob die Anmerkung den erwarteten Namen und das Datum enthält. Prüfen Sie auch das heruntergeladene PDF, das Ihr Workflow tatsächlich verwendet. Fehlt der Stempel, prüfen Sie Dokumenttyp, Genehmigungsstatus, Einstellung und Exportkonfiguration.
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_5.png" alt="Rechnungsfußzeile mit dem Genehmigungsstempel, der Genehmiger Fellowpro Test und den Zeitstempel 05.03.2025 13:32:31 nennt"><figcaption></figcaption></figure>
+Ein Genehmigungsstempel ist von **Zweiter Genehmigung** und **Genehmigungsverlauf** getrennt. Das Aktivieren einer Option beweist nicht, dass die anderen konfiguriert sind. Die verfügbaren Dashboard-Downloadaktionen und das IDM-Exportformat hängen von der Umgebung ab und wurden für diese Seite nicht geprüft; dieser Leitfaden verspricht daher keine bestimmten Beschriftungen im Downloadmenü und keinen automatischen IDM-Output.
 
-### Herunterladen von PDFs mit oder ohne den **Genehmigungsstempel** <a href="#id-4.-downloading-pdfs-with-or-without-annotations" id="id-4.-downloading-pdfs-with-or-without-annotations"></a>
-
-* Wenn ein Dokument einen Genehmigungsstempel hat, können Sie wählen, ob Sie die PDF entweder mit oder ohne den Genehmigungsstempel herunterladen möchten.
-* Gehen Sie dazu zum **Dashboard**.
-* Klicken Sie auf die **drei Punkte** in der **Aktionen**-Spalte.
-* Wählen Sie eine der beiden verfügbaren Download-Optionen:
-  * **Herunterladen mit Anmerkungen**
-  * **Herunterladen ohne Anmerkungen**
-
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_6_de.png" alt="Menü Dokumentaktionen mit den Einträgen Validieren, Zuweisen an, Herunterladen und PDF mit Anmerkungen herunterladen" width="301"><figcaption></figcaption></figure>
+Die beiden Aufnahmen zeigen echte deutsche Dev-Ansichten. Bei dieser Prüfung wurde kein Schalter geändert und kein Dokument genehmigt oder exportiert. Der gestempelte Endzustand benötigt eine eigene synthetische Testrechnung im genehmigten Zustand.

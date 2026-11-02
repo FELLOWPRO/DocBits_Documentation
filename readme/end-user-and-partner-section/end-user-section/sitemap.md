@@ -21,6 +21,14 @@ Einträge sind nach Typ farblich gekennzeichnet:
 
 Klicken Sie auf einen beliebigen Eintrag, um direkt dorthin zu springen. Einträge, die einen Parameter benötigen (etwa einen Dokumenttyp oder eine Dokument-ID), zeigen eine eingebettete Auswahl — wählen Sie den Wert, bevor Sie klicken.
 
+## Trainingsvideos in der Liste
+
+Einträge von Seiten mit einem Trainingsvideo zeigen hinter dem Namen ein Video-Symbol — nicht nur in den Einstellungen, sondern überall im Katalog, zum Beispiel auf dem Dashboard, in der Feldvalidierung oder in den Workflow-Seiten. Wählen Sie das Symbol, um das Video dieser Seite im Bereich **Videos & Tutorials** abzuspielen und auf der Sitemap zu bleiben.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-de.png" alt="Sitemap mit Video-Symbolen neben mehreren Einträgen und geöffnetem Bereich Videos & Tutorials mit dem Video zur Feldvalidierung"><figcaption><p>Einträge mit Trainingsvideo tragen ein Video-Symbol; ein Klick öffnet das Video im Bereich.</p></figcaption></figure>
+
+Der Bereich listet weiterhin jedes Video nach Thema, sodass Sie die gesamte Bibliothek auch über das Symbol in der oberen Leiste durchsuchen können. Siehe [Videos & Tutorials](videos-and-tutorials.md).
+
 ## Suchen und Filtern
 
 Der oben angepinnte Kopfbereich enthält das Suchfeld und die Filterpillen. Tippen Sie einige Zeichen, um die Liste live nach Namen und Beschreibungen zu filtern. Nutzen Sie die Typ-Pillen, um auf einen einzelnen Eintragstyp zu beschränken — zum Beispiel nur **Dialog**-Einträge.

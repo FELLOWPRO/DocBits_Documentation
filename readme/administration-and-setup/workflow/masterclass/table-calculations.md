@@ -4,11 +4,15 @@ description: "P1: Tabellen berechnen und Regex-Abhängigkeit prüfen"
 
 # P1: Tabellen berechnen und Regex-Abhängigkeit prüfen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-08-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-08-admin/v1/de.html).
+
 **Calculate Columns** rechnet mit zwei Spalten derselben Zeile und schreibt die Ergebnisspalte. **Calculate in / CALC_COLUMNS_REGEX** ergänzt eine Regex-Bedingung auf einer dritten Spalte. Die Regex entscheidet, ob gerechnet wird; sie extrahiert oder ersetzt hier keinen Teil des Texts. Die frühere Ersetzungserklärung gehört nicht zu dieser Karte.
 
 Beispiel: `QTY=2`, `PRICE=10`, Operation `*`, Ergebnis `TOTAL=20.0`. Bei der Regex-Variante verwenden Sie `TYPE`, Muster `^A$`. Eine A-Zeile wird berechnet. Für eine nicht passende B-Zeile schreibt der geprüfte Code einen leeren Ergebniswert; ein vorhandener TOTAL-Wert bleibt dabei nicht automatisch erhalten.
 
-Die Rechenhilfe rundet numerische Ergebnisse auf vier Dezimalstellen. Leere Einzelwerte können als 0 behandelt werden; zwei leere Texte ergeben leer. Mit `+` können nicht numerische Texte als Text verbunden werden. Die aktuell geprüfte Rechenhilfe gibt bei Division durch null einen leeren Ergebniswert zurück. Im Dev-Advanced-Test blieb die Karte dabei erfolgreich; ein grüner Knoten ersetzt deshalb keine Prüfung des Ergebniswerts. Prüfen Sie Zahlen und erforderliche Zellen deshalb vor der Berechnung; definieren Sie einen Fehlerweg.
+Die Rechenhilfe rundet numerische Ergebnisse auf vier Dezimalstellen. Leere Einzelwerte können als 0 behandelt werden; zwei leere Texte ergeben leer. Mit `+` können nicht numerische Texte als Text verbunden werden. Im isolierten Test der geprüften Rechenhilfe erzeugt beispielsweise `2 / 0` einen `ZeroDivisionError`. Davon getrennt meldete die Rechenkarte im Dev-Advanced-Test nur „Card Test simulated success“: Dieser Test berechnete keinen nachgewiesenen Zellwert. Ein grüner Knoten belegt deshalb weder einen leeren Ergebniswert noch eine erfolgreiche echte Division durch null. Prüfen Sie Zahlen und erforderliche Zellen deshalb vor der Berechnung; definieren Sie einen Fehlerweg.
 
 Halten Sie eine vollständige Vorher-nachher-Tabelle fest: zwei passende Zeilen, eine unpassende Regex-Zeile, leere Eingabe, ungültiger Text und Division durch null. Bei A→B-abhängigen Berechnungen verbinden Sie die Karten ausdrücklich und prüfen Sie, welchen aktualisierten Wert die zweite Karte liest. Vergleichen Sie jede Zeile und vorhandene Fremdspalten, nicht nur den Dokumentstatus.
 
@@ -101,7 +105,7 @@ Identität: `dbf035c8-927b-444a-9e5a-18555f5deacf`
 | CALC-01 | QTY=2; PRICE=10; TYPE=A; ^A$ | TOTAL=20.0 |
 | CALC-02 | QTY=2; PRICE=10; TYPE=B; ^A$; TOTAL=99 | TOTAL="" |
 | CALC-03 | 10 / 3 | 3.3333 |
-| CALC-04 | 10 / 0 | leerer Ergebniswert; aktueller Advanced-Test weiterhin success |
+| CALC-04 | 10 / 0 | isolierte Rechenhilfe: ZeroDivisionError; Advanced-Test nur simulierter Erfolg, kein Zellwertnachweis |
 | CALC-05 | "" + 2 | 2.0 |
 | CALC-06 | x + y | "x y" |
 

@@ -4,6 +4,10 @@ description: "P1: Field is, Docfield is und zwei Felder vergleichen"
 
 # P1: Field is, Docfield is und zwei Felder vergleichen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-04-admin/v1/de.mp4" %}
+
+[Vertiefungsvideo mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-04-admin/v1/de.html).
+
 Verwenden Sie **Field is** für den Leerzustand, **Docfield is** für den Vergleich mit einem konfigurierten Wert und **Compare two Fields** für zwei Werte desselben Dokuments. Eine Leerprüfung beweist nicht, dass das Feld im Layout existiert oder fachlich korrekt ist.
 
 Für Field is, Version 2, ergeben fehlendes Feld, `null`, leerer Text, nur Leerzeichen und der boolesche Wert `false` den Zustand leer. Die Zahl `0`, der Text `"0"` und der Text `"false"` sind nicht leer. Diese acht Fälle wurden mit vollständigen Dokumentdaten im Dev-Test geprüft. Verwenden Sie eine explizite Checkbox-Bedingung, wenn wahr/falsch die Geschäftsentscheidung ist.

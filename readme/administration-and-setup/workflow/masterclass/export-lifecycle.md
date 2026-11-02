@@ -4,6 +4,10 @@ description: "P1: Exportvarianten, offene Aufgaben und Abschlussstatus"
 
 # P1: Exportvarianten, offene Aufgaben und Abschlussstatus
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-10-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-10-admin/v1/de.html).
+
 **Start Export** verwendet den eingerichteten Exportweg. **Export with Export Configuration** führt eine ausgewählte Konfiguration aus. Die verzögerte Variante merkt diese Konfiguration für den finalen Export am Ende des aktuellen Laufs vor. Vormerken heißt nicht „nach allen späteren Benutzerfreigaben automatisch senden“.
 
 Die geprüften neuen Versionen bieten `status=finished` oder `status=exported`: finished schließt das Dokument, exported lässt die weitere Bearbeitung zu. Start Export trägt die Auswahl ab v4, konfigurierter und verzögerter Export ab v3. Ältere Versionen verwenden finished. Fehlt die Auswahl in den neuen Versionen, sieht der Code ebenfalls finished vor; ein ungültiger Wert ist ein Konfigurationsfehler.

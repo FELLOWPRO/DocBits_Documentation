@@ -4,6 +4,10 @@ description: "Eine geprüfte Workflow-Regel gezielt aktivieren und ihren tatsäc
 
 # Vom Test zur kontrollierten Aktivierung
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-11-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-11-admin/v1/de.html).
+
 Eine gespeicherte Regel, ein bestandener Test und ein automatisch ausgelöster Dokumentlauf sind drei unterschiedliche Nachweise. Beginnen Sie mit genau einer eigenen Trainingsrechnung und einer Regel, deren Aktionen Sie vollständig überblicken. Verwenden Sie für Nachrichten und Exporte ausschließlich vorgesehene Testziele.
 
 ## 1. Den Ausgangszustand festhalten

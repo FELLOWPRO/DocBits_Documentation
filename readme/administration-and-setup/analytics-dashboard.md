@@ -103,6 +103,16 @@ Analysieren Sie einen beliebigen Zeitraum von **7 Tagen** bis zu einem **vollen 
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-de.png" alt="Benutzerdefinierter Zeitraum in der deutschen Filterleiste."><figcaption><p>Benutzerdefinierter Zeitraum in der deutschen Filterleiste.</p></figcaption></figure>
 
+### Filter werden gemerkt
+
+Das Dashboard speichert Ihre Filter und den Zeitbereich in diesem Browser, getrennt für jeden Benutzer und jede Organisation. Öffnen Sie das Dashboard erneut, wird Ihre letzte Auswahl wiederhergestellt, auch ein benutzerdefinierter Datumsbereich im Datumsfeld.
+
+Wählen Sie oben rechts im Dashboard **Auf Standardwerte zurücksetzen**, um die gespeicherte Auswahl zu löschen: Filter, Zeitbereich und benutzerdefinierte Daten kehren zu ihren Standardwerten zurück.
+
+<mark style="color:red;">**Hinweis**</mark>: Die Auswahl liegt im Browser, nicht auf dem Server. Sie wird nicht mit anderen Geräten oder Browsern synchronisiert.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-de.png" alt="Analytics-Dashboard in der Status-Ansicht mit der Filterzeile und der Schaltfläche Auf Standardwerte zurücksetzen oben rechts"><figcaption><p>Beim erneuten Öffnen des Dashboards werden die Filter wiederhergestellt. Auf Standardwerte zurücksetzen löscht sie.</p></figcaption></figure>
+
 ## Flow-Schritt-Karten
 
 Jede Karte repräsentiert einen Flow-Schritt basierend auf dem ausgewählten **Flow-Typ**. Die Karten passen sich Ihrer Auswahl an – sie zeigen Lebenszyklusphasen für *Status*, Verarbeitungsmodule für *Verarbeitung* oder Benutzerberührungspunkte für *Benutzerinteraktion*.

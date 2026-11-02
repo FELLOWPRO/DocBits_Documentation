@@ -1,12 +1,10 @@
-# Debug Collector
+# Kolektor danych debugowania
 
 Debug Collector wykonuje pełną migawkę twojej sesji DocBits — aktywność sieci, błędy, środowisko przeglądarki i metryki wydajności — pakuje ją jako raport JSON i opcjonalnie otwiera zgłoszenie wsparcia bezpośrednio z tego samego okna.
 
 ## Jak otworzyć
 
 Naciśnij <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> w Windows i Linux lub <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> w macOS. Okno Performance Report otwiera się natychmiast.
-
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Okno Debug Collector"><figcaption><p>Okno Performance Report pokazuje zarejestrowaną migawkę i wbudowany formularz tworzenia zgłoszenia.</p></figcaption></figure>
 
 ## Co jest rejestrowane
 
@@ -16,7 +14,7 @@ Naciśnij <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> w Windows i Linux lu
 * **Środowisko** — wersja przeglądarki, system operacyjny, rozmiar ekranu i aktywne flagi funkcji.
 * **Kontekst użytkownika** — twoja rola, organizacja i strona, na której byłeś podczas tworzenia migawki.
 * **Metryki wydajności** — czasy ładowania strony (LCP, FCP), użycie pamięci i rozmiar DOM.
-* **Trace ID** — identyfikatory korelacji łączące migawkę z logami backendu.
+* **Identyfikator śledzenia** — identyfikatory korelacji łączące migawkę z logami backendu.
 
 ## Tworzenie zgłoszenia wsparcia z okna
 
@@ -35,3 +33,5 @@ Jeśli chcesz mieć lokalną kopię migawki, użyj **Copy Debug Data**, aby skop
 * Nic nie opuszcza przeglądarki, dopóki nie klikniesz **Send Report** — skrót jedynie otwiera okno.
 
 <mark>Przejrzyj migawkę przed wysłaniem, jeśli pracowałeś z dokumentami zawierającymi dane klientów. Identyfikatory dokumentów widoczne w adresach URL pojawią się w raporcie.</mark>
+
+Otwórz raport diagnostyczny z opcji pomocy, opisz problem i sprawdź zebrane informacje przed udostępnieniem. Raport zbiera dowody; sam nie ustala przyczyny.

@@ -4,7 +4,7 @@ Strona **Infrastruktura** zapewnia administratorom bieżący wgląd w to, gdzie 
 
 > **Dostęp:** Infrastruktura to strona wyłącznie dla administratorów. Otwórz **Ustawienia → Organizacja i Dostęp → Infrastruktura**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Strona Infrastruktura z otwartą kartą Topologia"><figcaption><p>Strona Infrastruktura, karta Topologia</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-pl.png" alt="Przegląd infrastruktury."><figcaption><p>Przegląd infrastruktury.</p></figcaption></figure>
 
 Strona jest podzielona na trzy karty:
 
@@ -49,7 +49,7 @@ Komponenty należące do modułu opcjonalnego (Wyszukiwanie pełnotekstowe, DocF
 
 Karta Przetwarzanie pokazuje potok przetwarzania dokumentów dla **Twojej organizacji** — kiedy każdy etap był ostatnio uruchomiony i czy praca przebiega płynnie, czy się piętrzy.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Tabela przetwarzania z odznakami stanu"><figcaption><p>Stan przetwarzania według etapu dla Twojej organizacji</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-pl.png" alt="Procesy infrastruktury i ostatnie wykonanie. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie."><figcaption><p>Procesy infrastruktury i ostatnie wykonanie. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie.</p></figcaption></figure>
 
 | Kolumna | Opis |
 |---------|------|
@@ -71,7 +71,7 @@ Błędy i *w toku* to niezależne sygnały, więc etap może pokazywać obie odz
 
 Karta Zaplanowane zadania zawiera listę cyklicznych zadań w tle, które utrzymują działanie DocBits (odświeżanie pamięci podręcznej, alerty stanu, limity czasu dokumentów, synchronizacje wychodzące i inne) oraz potwierdza, że każde z nich uruchamia się o czasie.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Tabela zaplanowanych zadań"><figcaption><p>Cykliczne zadania w tle i ich stan harmonogramu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-pl.png" alt="Zaplanowane zadania infrastruktury. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie."><figcaption><p>Zaplanowane zadania infrastruktury. Względne daty pozostają po niemiecku; część nazw procesów i zadań jest angielska. Ostatni Bieg oznacza ostatnie uruchomienie.</p></figcaption></figure>
 
 | Kolumna | Opis |
 |---------|------|

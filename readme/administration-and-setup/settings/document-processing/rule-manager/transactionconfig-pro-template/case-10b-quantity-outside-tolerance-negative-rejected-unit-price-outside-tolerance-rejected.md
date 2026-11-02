@@ -1,40 +1,42 @@
-# Case 10b: Quantity Outside Tolerance (Negative Rejected), Unit Price Outside Tolerance (Rejected)
+# Przypadek 10b: Ilość za mała i cena poza tolerancją — odrzucenie
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-Both the quantity and unit price are outside tolerance, and neither has been approved.
+## Scenariusz:
 
-## Action:
+Zarówno ilość, jak i cena jednostkowa wykraczają poza tolerancję i żadna z nich nie została zatwierdzona.
 
-The system rejects the invoice data, adjusts the values to match the purchase order, and generates necessary debit or credit notes.
+## Działanie:
 
-## Example:
+System odrzuca dane do faktury, dostosowuje wartości do zamówienia i generuje niezbędne noty debetowe lub kredytowe.
+
+## Przykład:
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Unit Price: $30.00 per unit
+  * Cena jednostkowa: $30.00 za sztukę
   * Total Amount: $4,500.00
 * **Invoice Received:**
-  * Quantity: 140 units (outside tolerance of -6.67%, rejected)
-  * Unit Price: $33.00 per unit (outside tolerance of 10%, rejected)
+  * Ilość: 140 sztuk (poza tolerancją -6.67%, odrzucona)
+  * Cena jednostkowa: $33.00 za sztukę (poza tolerancją 10%, odrzucona)
   * Total Amount: $4,620.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerancja ceny jednostkowej: ±2%
 
-Since both the quantity (140 units) and unit price ($33.00) are outside the acceptable tolerance limits and neither has been approved, the system will:
+Ponieważ zarówno ilość (140 jednostek), jak i cena jednostkowa ($33.00) wykraczają poza dopuszczalne granice tolerancji i żadna z nich nie została zatwierdzona, system:
 
-1. **Reject the Invoice Data:** The system does not accept the invoiced quantity or unit price due to their deviation from the tolerance limits.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the original purchase order quantity.
-   * Adjusted Quantity = 150 units (from PO)
-3. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:** The system recalculates the total amount using the adjusted quantity and unit price:
-   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
-5. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount.
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
-6. **Process the Invoice:** The system processes the invoice with the corrected total amount of $4,500.00 and issues a debit note for $120.00 to offset the overcharged amount.
+1. **Odrzuć dane do faktury:** System nie akceptuje zafakturowanej ilości lub ceny jednostkowej ze względu na ich odchylenie od granic tolerancji.
+2. **Dostosuj ilość:** System dostosowuje ilość, aby odpowiadała pierwotnej ilości zamówienia.
+   * Skorygowana ilość = 150 jednostek (od PO)
+3. **Dostosuj cenę jednostkową:** System dostosowuje cenę jednostkową, aby odpowiadała cenie jednostkowej pierwotnego zamówienia zakupu.
+   * Skorygowana cena jednostkowa = $30.00 za jednostkę (od PO)
+4. **Przelicz kwotę całkowitą:** System przelicza całkowitą kwotę na podstawie skorygowanej ilości i ceny jednostkowej:
+   * **Skorygowana kwota całkowita = skorygowana ilość × skorygowana cena jednostkowa**
+   * **Skorygowana kwota całkowita = 150 jednostek × $30.00 za jednostkę = $4,500.00**
+5. **Wygeneruj notę debetową:** Ponieważ pierwotna suma faktury była wyższa niż suma skorygowana, system generuje notę debetową na zawyżoną kwotę.
+   * **Kwota noty debetowej = Suma oryginalnej faktury – Skorygowana kwota całkowita**
+   * **Kwota noty debetowej = $4,620.00 - $4,500.00 = $120.00**
+6. **Przetwórz fakturę:** System przetwarza fakturę na skorygowaną łączną kwotę $4,500.00 i wystawia notę debetową na kwotę $120.00 w celu skompensowania zawyżonej kwoty.
 
-This approach ensures that the financial transaction is corrected to match the purchase order terms, maintaining accurate and fair billing practices.
+Takie podejście gwarantuje, że transakcja finansowa zostanie skorygowana w celu dopasowania do warunków zamówienia, przy zachowaniu dokładnych i uczciwych praktyk rozliczeniowych.

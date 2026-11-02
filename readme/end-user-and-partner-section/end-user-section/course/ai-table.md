@@ -1,4 +1,4 @@
-# AI Table
+# Tabela AI
 
 Odkryj rewolucyjne możliwości **DocBits**, nowoczesnego narzędzia do obsługi dokumentów, które upraszcza złożoność ekstrakcji tabel, dopasowywania zamówień (PO) oraz zarządzania fakturami kosztowymi.
 

@@ -1,6 +1,8 @@
-# Any Value of
+# Dowolna wartość
 
-<figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_any_v1-pl-pl.png" alt="Dowolna wartość, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_any_v2-pl-pl.png" alt="Dowolna wartość, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -11,7 +13,7 @@ Ta karta DocBits służy do walidacji, czy dowolna wartość w określonej kolum
 * **Walidacja wzorca regex:** Ta karta sprawdza, czy dowolna wartość w danej kolumnie tabeli odpowiada podanemu wzorcowi wyrażenia regularnego. Karta zostanie wyzwolona i umożliwi kontynuację przepływu pracy, jeśli co najmniej jeden wpis w kolumnie spełnia warunek.
 * **Operator:** Użytkownicy definiują kolumnę i określają wzorzec regex. Dostępny warunek obejmuje:
   * **Matches Regex Pattern:** Weryfikuje, czy co najmniej jedna wartość w określonej kolumnie odpowiada wzorcowi regex.
-* **Table and Column Selection:** Użytkownicy określają tabelę i kolumnę, które chcą sprawdzić pod kątem dopasowania wzorca regex.
+* **Wybór tabeli i kolumny:** Użytkownicy określają tabelę i kolumnę, które chcą sprawdzić pod kątem dopasowania wzorca regex.
 
 ## **Zastosowanie:**
 

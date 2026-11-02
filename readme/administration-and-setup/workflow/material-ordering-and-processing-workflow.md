@@ -1,8 +1,8 @@
 ---
 description: >-
-  Explore the step-by-step workflow for material ordering, goods receipt, and
-  invoice processing with INFOR ERP and DocBits integration. Effective supplier
-  and document management in one.
+  Poznaj krok po kroku przepływ zamawiania materiałów, przyjmowania towarów
+  i przetwarzania faktur z integracją INFOR ERP i DocBits. Skutecznie zarządzaj
+  dostawcami i dokumentami w jednym miejscu.
 ---
 
 # Przepływ zamawiania i przetwarzania materiałów
@@ -46,4 +46,4 @@ Ten dokument przedstawia przepływ pracy dla zamawiania materiałów od dostawc�
 * Upewnij się, że wszystkie dokumenty są zweryfikowane i zarchiwizowane na potrzeby ewidencji.
 * Rozbieżności w szczegółach zamówienia lub faktury muszą zostać niezwłocznie rozwiązane, aby uniknąć opóźnień.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-material-pl.png" alt="Przykładowy obieg zamówień materiałowych, potwierdzeń, przyjęć towarów i faktur między dostawcą, zakupami, IDM, DocBits i księgowością. Dostosuj kontrole i integracje do własnej konfiguracji."><figcaption><p>Przykładowy obieg zamówień materiałowych, potwierdzeń, przyjęć towarów i faktur między dostawcą, zakupami, IDM, DocBits i księgowością. Dostosuj kontrole i integracje do własnej konfiguracji.</p></figcaption></figure>

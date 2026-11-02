@@ -53,6 +53,39 @@ The input editor reminds you of the three ways under **Start from outside:** **T
 
 <figure><img src="../../../../.gitbook/assets/testing-16-start-from-outside.png" alt="Start from outside line in the input editor"><figcaption><p>Start from outside line in the input editor.</p></figcaption></figure>
 
+## Share a start link
+
+A start link opens the start dialog of one template, already filled in, so that a colleague or a CI pipeline does
+not have to choose the template and its values again:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+| Part | What it does |
+|---|---|
+| **run** | The template that opens, by its key (the line under the template name in the dialog, for example `default-smoke-analytics`). Required. |
+| **version** | Opens this saved version. Without it, the latest version opens. |
+| **input** | Fills in a saved input, by its name or its ID. Parameters marked as sensitive are never filled in. |
+| **autostart=1** | Starts the test as soon as the page is open, but only when the template only reads data. A template that writes data still waits for the confirmation. |
+
+To get the link, open the start dialog of a template and switch to **Start from outside**. The block **Start link**
+holds the link of that template, and **Playwright with start link** a snippet that opens the link and waits for the
+result.
+
+<figure><img src="../../../../.gitbook/assets/testing-start-link-dialog.png" alt="Start dialog in the From outside view with the copyable Start link and a Playwright example"><figcaption><p>The start dialog in the <strong>Start from outside</strong> view: the copyable start link and a Playwright example that opens it. A session appears under <strong>Session that runs the test</strong> once a tab accepts starts from outside.</p></figcaption></figure>
+
+What the person who opens the link gets:
+
+* DocBits opens **Settings → Testing**, tab **Templates**, with the template's start dialog. The link works only for
+  someone who can open Settings → Testing, because the run uses their browser tab and their permissions.
+* An unknown template, version or input shows an error under the tabs and starts nothing.
+* With `autostart=1` a template that only reads data starts immediately. Every other case waits for **Start**, and a
+  template that writes data keeps its confirmation.
+* The parameters are removed from the address bar once they are read, so reloading the page does not start the test a
+  second time.
+
+The **?** next to the tabs and in the start dialog opens the matching page of this documentation in your interface
+language.
+
 ## Start from an AI assistant (MCP)
 
 If your AI assistant is connected to DocBits (see [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)

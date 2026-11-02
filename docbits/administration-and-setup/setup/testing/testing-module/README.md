@@ -57,7 +57,8 @@ approve steps are blocked unless the template declares that it writes data.
 ## How it works: template, input, start, log
 
 The page has three tabs: **Templates**, **Inputs** and **Logs**. A template describes the flow, an input decides
-what it runs with, and the log shows the result.
+what it runs with, and the log shows the result. The **?** next to the tabs opens the matching page of this
+documentation in your interface language.
 
 <figure><img src="../../../../.gitbook/assets/testing-00-diagram.png" alt="Diagram: Template plus Input gives a test; it is started in the browser, by an AI assistant or from outside; every run ends in the Logs"><figcaption><p>Diagram: Template plus Input gives a test; it is started in the browser, by an AI assistant or from outside; every run ends in the Logs.</p></figcaption></figure>
 
@@ -90,7 +91,7 @@ Read on:
 * [Pick an Element in the App](pick-in-app.md): choose an element by pointing at it
 * [Reload and Resume](reload-and-resume.md): reload the page in the middle of a test
 * [Inputs](inputs.md): save your organisation's values
-* [Start a Test](start-a-test.md): in the browser, from an AI assistant or from Playwright
+* [Start a Test](start-a-test.md): in the browser, from a start link, from an AI assistant or from Playwright
 * [Logs and History](logs.md): results, chart and CSV export
 * [Troubleshooting](troubleshooting.md)
 * [For Developers](for-developers.md)

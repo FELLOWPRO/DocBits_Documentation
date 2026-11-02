@@ -1,6 +1,6 @@
 # Odwróć pole wyboru
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d1f382afe206-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_invert_boolean_field_v2-pl-pl.png" alt="Odwróć pole wyboru, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

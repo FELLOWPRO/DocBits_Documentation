@@ -1,6 +1,8 @@
 # Sprawdzanie obecności i zawartości pola dokumentu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1-pl-pl.png" alt="Sprawdzanie obecności i zawartości pola dokumentu, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-pl-pl.png" alt="Sprawdzanie obecności i zawartości pola dokumentu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## Kiedy używać
 
@@ -31,10 +33,10 @@ Są to przykłady oczekiwanych wyników. Do sprawdzania poprawności samego nume
 
 ## Film z przykładem administratora
 
-Kiedy używam karty, gdzie ją znaleźć i jak wykrywać brakujące numery faktur. Administrator, biuro i głos są wygenerowane syntetycznie; obsługa przedstawia rzeczywisty interfejs DocBits na koncie testowym. Przykłady pokazują oczekiwane wyniki.
+Kiedy używam karty, gdzie ją znaleźć i jak wykrywać brakujące numery faktur. Przykłady pokazują oczekiwane wyniki.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl.mp4" %}
 
-[Otwórz film z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl.html)
+[Otwórz film z polskimi napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl-theme-v4.html)
 
 [Przeczytaj transkrypcję](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/pl.txt)

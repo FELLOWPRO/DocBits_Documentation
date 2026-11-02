@@ -1,6 +1,8 @@
 # Operacja typu dokumentu
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-d369b96a80e0-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1-pl-pl.png" alt="Operacja typu dokumentu, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-pl-pl.png" alt="Operacja typu dokumentu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

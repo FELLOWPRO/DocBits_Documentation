@@ -1,6 +1,8 @@
-# All Value of
+# Todo o valor de
 
-<figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v1-pt-pt.png" alt="Todo o valor de, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v2-pt-pt.png" alt="Todo o valor de, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 

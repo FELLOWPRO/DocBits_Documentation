@@ -51,3 +51,13 @@ Isso é especialmente útil para depurar mapeamentos e validar agrupamentos estr
 ## 6. Vídeo Tutorial
 
 Um guia em vídeo para este tipo de arquivo está disponível na [página de Vídeos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Use-o para acompanhar a configuração, edição e visualização.
+
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-list-pt.png" alt="Formato EDI existente com os seus quatro atributos configurados."><figcaption><p>Formato EDI existente com os seus quatro atributos configurados.</p></figcaption></figure>
+
+<figure><img src="../../../../../../../.gitbook/assets/site-all-edi-detail-pt.png" alt="Atributo STRUCTUREDESCRIPTOR ativo: descritor de estrutura JSON no editor só de leitura."><figcaption><p>Atributo STRUCTUREDESCRIPTOR ativo: descritor de estrutura JSON no editor só de leitura.</p></figcaption></figure>
+
+
+As vistas mostram uma configuração e uma versão existentes. As definições variam consoante o tipo de documento e o formato. Valide as alterações num rascunho antes da ativação.
+
+As imagens mostram as etapas em português e a versão ativa da configuração em modo só de leitura. Os nomes técnicos dos editores, os identificadores de atributos e o código de configuração mantêm-se como na versão ilustrada.

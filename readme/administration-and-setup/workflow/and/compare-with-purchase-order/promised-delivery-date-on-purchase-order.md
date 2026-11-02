@@ -1,6 +1,12 @@
-# Promised Delivery Date on Purchase Order
+# Data de entrega prometida no pedido de compra
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-pt-pt.png" alt="Data de entrega prometida no pedido de compra, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-pt-pt.png" alt="Data de entrega prometida no pedido de compra, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-pt-pt.png" alt="Data de entrega prometida no pedido de compra, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
+
+A forma como a janela de tolerância é calculada, com exemplos como "hoje ou amanhã", é explicada em [Date Tolerances](../date-tolerances.md).
 
 ## **Propósito**
 
@@ -11,13 +17,13 @@ Este cartão DocBits foi concebido para facilitar a comparação precisa das dat
 1. **Operador**
    * **Descrição:** Define a condição aplicada para comparar as datas de entrega.
    * **Opções:**
-     * **Equals (=):** Verifica se a data de entrega prometida na linha de item corresponde à data de entrega da ordem de compra.
-     * **Not Equal (≠):** Garante que a data de entrega prometida na linha de item não corresponde à data na ordem de compra.
-     * **Greater Than (>):** Verifica se a data de entrega prometida da linha de item é posterior à data de entrega da ordem de compra.
-     * **Greater or Equals (≥):** Verifica se a data de entrega prometida da linha de item é igual ou posterior à data de entrega da ordem de compra.
+     * **Igual a (=):** Verifica se a data de entrega prometida na linha de item corresponde à data de entrega da ordem de compra.
+     * **Diferente (≠):** Garante que a data de entrega prometida na linha de item não corresponde à data na ordem de compra.
+     * **Maior que (>):** Verifica se a data de entrega prometida da linha de item é posterior à data de entrega da ordem de compra.
+     * **Maior ou Igual (≥):** Verifica se a data de entrega prometida da linha de item é igual ou posterior à data de entrega da ordem de compra.
      * **Less Than (<):** Confirma se a data de entrega prometida da linha de item é anterior à data de entrega da ordem de compra.
-     * **Less or Equals (≤):** Valida se a data de entrega prometida da linha de item é igual ou anterior à data de entrega da ordem de compra.
-2. **Value**
+     * **Menor ou igual (≤):** Valida se a data de entrega prometida da linha de item é igual ou anterior à data de entrega da ordem de compra.
+2. **Valor**
    * **Descrição:** Especifica uma margem de erro admissível na comparação das datas de entrega.
    * **Detalhe:** Os utilizadores definem o número de dias em que a data de entrega da linha de item pode diferir da data de entrega prometida.
 

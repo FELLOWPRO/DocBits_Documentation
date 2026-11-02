@@ -1,6 +1,8 @@
-# Unit Price Combined with Fields
+# Preço unitário combinado com campos
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v2-pt-pt.png" alt="Preço unitário combinado com campos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v3-pt-pt.png" alt="Preço unitário combinado com campos, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,19 +10,19 @@ Este cartão de fluxo de trabalho foi concebido para avaliar se o preço unitár
 
 ## **Componentes do cartão:**
 
-1. **Field Name**
+1. **Nome do campo**
    * **Descrição:** Especifica o campo do documento que contém o valor a combinar com o preço unitário.
    * **Detalhe:** Tem de corresponder ao identificador exato do primeiro campo dentro do documento.
 2. **Operador**
    * **Descrição:** Define a condição que será aplicada à comparação entre o valor combinado e o valor especificado.
    * **Opções:**
-     * **Equals (=):** Verifica se o valor combinado do preço unitário e do campo corresponde ao valor especificado.
-     * **Not Equals (≠):** Garante que o valor combinado do preço unitário e do campo é diferente do valor especificado.
-     * **Greater Than (>):** Verifica se o valor combinado é superior ao valor especificado.
-     * **Greater or Equals (≥):** Verifica se o valor combinado é superior ou igual ao valor especificado.
-     * **Lesser Than (<):** Verifica se o valor combinado é inferior ao valor especificado.
-     * **Lesser or Equals (≤):** Verifica se o valor combinado é inferior ou igual ao valor especificado.
-3. **Value**
+     * **Igual a (=):** Verifica se o valor combinado do preço unitário e do campo corresponde ao valor especificado.
+     * **Não é igual (≠):** Garante que o valor combinado do preço unitário e do campo é diferente do valor especificado.
+     * **Maior que (>):** Verifica se o valor combinado é superior ao valor especificado.
+     * **Maior ou Igual (≥):** Verifica se o valor combinado é superior ou igual ao valor especificado.
+     * **Menor que (<):** Verifica se o valor combinado é inferior ao valor especificado.
+     * **Menor ou igual (≤):** Verifica se o valor combinado é inferior ou igual ao valor especificado.
+3. **Valor**
    * **Descrição:** Especifica o valor com o qual o valor combinado do preço unitário e do campo será comparado.
    * **Detalhe:** O valor tem de ser um valor numérico.
 

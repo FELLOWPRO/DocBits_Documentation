@@ -4,12 +4,11 @@
 
 Este recurso ajuda você a gerenciar e reconciliar números de itens entre seu sistema e seus fornecedores. Muitas vezes, os números de itens que você usa internamente podem não corresponder aos números de itens que seus fornecedores usam. O Docbits facilita o tratamento dessas discrepâncias criando um mapeamento entre seus números de itens e os de seus fornecedores.
 
-<figure><img src="../../../.gitbook/assets/supplier-item-number-map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map-pt.png" alt="Mapeamento dos números de artigos do fornecedor."><figcaption><p>Mapeamento dos números de artigos do fornecedor.</p></figcaption></figure>
 
 ## **Como Funciona**
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
-
 
 1. **Correspondência Manual:**
    * A primeira vez que você encontrar uma discrepância entre seu número de item e o número de item do seu fornecedor, você precisará correspondê-los manualmente.
@@ -26,7 +25,7 @@ Este recurso ajuda você a gerenciar e reconciliar números de itens entre seu s
 * **Ação:** Opções para gerenciar os mapeamentos, como excluir mapeamentos incorretos.
 
 {% hint style="info" %}
-Veja também a[ Seção de Administração](broken-reference)
+Veja também a[ Seção de Administração](../../../administration-and-setup/settings/README.md)
 {% endhint %}
 
 ## **Benefícios**

@@ -1,359 +1,89 @@
 ---
-description: Complete list of electronic document standards supported by DocBits across 30+ countries
+description: "Identifique a família eDocs, a sintaxe, a versão e o perfil configurados antes de testar o processamento de documentos."
 ---
 
-# Supported Electronic Documents
+# Formatos, versões e guias por país para eDocs
 
-DocBits supports **120+ electronic invoice and document standards** across **30+ countries**. Each format is automatically detected, parsed, and its fields extracted for seamless document processing.
-
-## How Electronic Documents Work in DocBits
-
-1. **Upload** — Drop an XML/EDI file or receive it via API/email
-2. **Auto-Detection** — DocBits identifies the exact standard and version
-3. **Preview** — A human-readable HTML preview is generated
-4. **Field Extraction** — Key fields (invoice number, amounts, line items) are extracted
-5. **Validation & Export** — Data is validated and exported to your ERP system
+Comece pelo documento de origem e pelo guia do país correspondente. O nome de um país, por si só, não identifica um formato de ficheiro. Uma designação de versão, uma sintaxe XML e um perfil de negócio descrevem aspetos diferentes.
 
 {% hint style="info" %}
-For detailed configuration, see [EDI Settings](../README.md). For Peppol, XRechnung, and ZUGFeRD deep dives, see the dedicated pages below.
+As tabelas registam uma verificação do catálogo de desenvolvimento realizada em 17 de outubro de 2026 e o código de processamento correspondente. Descrevem as regras e os componentes de configuração disponíveis; não certificam todos os ficheiros, requisitos legais ou implementações em produção. A sua organização pode sobrepor-se às predefinições.
 {% endhint %}
 
-## Quick Links
-
-| Topic | Link |
-|-------|------|
-| EDI Overview | [EDI Settings](../README.md) |
-| XRechnung (all versions) | [XRechnung](../xrechnung/) |
-| ZUGFeRD / Factur-X | [ZUGFeRD](../zugferd/) |
-| Peppol BIS 3.0 | [Peppol BIS Billing](../peppol-bis-billing-3.0/) |
-| E-Invoice Standards Overview | [Currently Supported Standards](../currently-supported-e-invoice-standards/) |
-
----
-
-## Europe
-
-<figure><img src="edocs-infographic-europe.png" alt="European Electronic Document Standards supported by DocBits"><figcaption><p>European E-Invoice Standards Overview</p></figcaption></figure>
-
-### 🇩🇪 Germany
-
-<figure><img src="edocs-infographic-germany-xrechnung.png" alt="XRechnung versions supported by DocBits"><figcaption><p>XRechnung — All 26 Versions (CII &amp; UBL)</p></figcaption></figure>
-
-<figure><img src="edocs-infographic-germany-zugferd.png" alt="ZUGFeRD and Factur-X versions supported by DocBits"><figcaption><p>ZUGFeRD / Factur-X — All Versions</p></figcaption></figure>
-
-### 🇦🇹 Austria
-
-| Standard | Page |
-|----------|------|
-| ebInterface (Overview) | [AUSTRIA EBINTERFACE](austria-ebinterface.md) |
-| ebInterface 6.0 | [AUSTRIA EBINTERFACE 6.0](austria-ebinterface-6-0.md) |
-| ebInterface 6.1 | [AUSTRIA EBINTERFACE 6.1](austria-ebinterface-6-1.md) |
-
-### 🇩🇰 Denmark
-
-| Standard | Page |
-|----------|------|
-| OIOUBL (Overview) | [DENMARK OIOUBL](denmark-oioubl.md) |
-| OIOUBL 2.1 | [OIOUBL 2.1](oioubl-2-1.md) |
-
-### 🇫🇮 Finland
-
-| Standard | Page |
-|----------|------|
-| Finvoice 1.3 | [FINVOICE 1.3](finvoice-1-3.md) |
-| Finvoice 2.0 | [FINVOICE 2.0](finvoice-2-0.md) |
-| Finvoice 2.01 | [FINVOICE 2.01](finvoice-2-01.md) |
-| Finvoice 3.0 | [FINVOICE 3.0](finvoice-3-0.md) |
-| TEAPPSXML | [TEAPPSXML](teappsxml.md) |
-
-### 🇫🇷 France
-
-| Standard | Page |
-|----------|------|
-| Factur-X (Generic) | [FACTURX](facturx.md) |
-| Factur-X 1.0.05 / ZUGFeRD 2.1 | [FACTURX 1.0.05](facturx-1-0-05-zugferd-2-1.md) |
-| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | [FACTURX 1.0.07.2](facturx-1-0-07-2-zugferd-2-3-2.md) |
-
-### 🇩🇪 Germany
-
-| Standard | Page |
-|----------|------|
-| XRechnung 1.0–3.0.2 (CII & UBL) | [26 versions](xrechnung-1-0-cii.md) — see full list below |
-| ZUGFeRD 1.0–2.3.2 | [7 versions](zugferd-1-0.md) — see full list below |
-
-<details>
-<summary>All 26 XRechnung versions</summary>
-
-| Version | CII | UBL |
-|---------|-----|-----|
-| 1.0 | [CII](xrechnung-1-0-cii.md) | [UBL](xrechnung-1-0-ubl.md) |
-| 1.1 | [CII](xrechnung-1-1-cii.md) | [UBL](xrechnung-1-1-ubl.md) |
-| 1.2 | [CII](xrechnung-1-2-cii.md) | [UBL](xrechnung-1-2-ubl.md) |
-| 1.2.1 | [CII](xrechnung-1-2-1-cii.md) | [UBL](xrechnung-1-2-1-ubl.md) |
-| 1.2.2 | [CII](xrechnung-1-2-2-cii.md) | [UBL](xrechnung-1-2-2-ubl.md) |
-| 2.0 | [CII](xrechnung-2-0-cii.md) | [UBL](xrechnung-2-0-ubl.md) |
-| 2.0.1 | [CII](xrechnung-2-0-1-cii.md) | [UBL](xrechnung-2-0-1-ubl.md) |
-| 2.1 | [CII](xrechnung-2-1-cii.md) | [UBL](xrechnung-2-1-ubl.md) |
-| 2.2 | [CII](xrechnung-2-2-cii.md) | [UBL](xrechnung-2-2-ubl.md) |
-| 2.3 | [CII](xrechnung-2-3-cii.md) | [UBL](xrechnung-2-3-ubl.md) |
-| 3.0 | [CII](xrechnung-3-0-cii.md) | [UBL](xrechnung-3-0-ubl.md) |
-| 3.0.1 | [CII](xrechnung-3-0-1-cii.md) | [UBL](xrechnung-3-0-1-ubl.md) |
-| 3.0.2 | [CII](xrechnung-3-0-2-cii.md) | [UBL](xrechnung-3-0-2-ubl.md) |
-
-</details>
-
-<details>
-<summary>All 7 ZUGFeRD versions</summary>
-
-| Version | Page |
-|---------|------|
-| ZUGFeRD 1.0 | [ZUGFERD 1.0](zugferd-1-0.md) |
-| ZUGFeRD 1.0 Basic | [ZUGFERD 1.0 BASIC](zugferd-1-0-basic.md) |
-| ZUGFeRD 1.0 Comfort | [ZUGFERD 1.0 COMFORT](zugferd-1-0-comfort.md) |
-| ZUGFeRD 1.0 Extended | [ZUGFERD 1.0 EXTENDED](zugferd-1-0-extended.md) |
-| ZUGFeRD 2.2 | [ZUGFERD 2.2](zugferd-2-2.md) |
-| ZUGFeRD 2.3 | [ZUGFERD 2.3](zugferd-2-3.md) |
-| ZUGFeRD 2.3.2 | [ZUGFERD 2.3.2](zugferd-2-3-2.md) |
-
-</details>
-
-### 🇮🇹 Italy
-
-| Standard | Page |
-|----------|------|
-| FatturaPA | [FATTURAPA](fatturapa.md) |
-
-### 🇳🇱 Netherlands
-
-| Standard | Page |
-|----------|------|
-| SI-UBL 2.0 | [SI-UBL 2.0](si-ubl-2-0.md) |
-
-### 🇳🇴 Norway
-
-| Standard | Page |
-|----------|------|
-| EHF Invoice 3.0 | [EHF INVOICE 3.0](ehf-invoice-3-0.md) |
-
-### 🇵🇱 Poland
-
-| Standard | Page |
-|----------|------|
-| KSeF | [KSEF](ksef.md) |
-| KSeF FA2 | [KSEF FA2](ksef-fa2.md) |
-| KSeF FA3 | [KSEF FA3](ksef-fa3.md) |
-
-### 🇪🇸 Spain
-
-| Standard | Page |
-|----------|------|
-| Facturae (Overview) | [FACTURAE](facturae.md) |
-| Facturae 3.2 | [FACTURAE 3.2](facturae-3-2.md) |
-| Facturae 3.2.1 | [FACTURAE 3.2.1](facturae-3-2-1.md) |
-| Facturae 3.2.2 | [FACTURAE 3.2.2](facturae-3-2-2.md) |
-
-### 🇸🇪 Sweden
-
-| Standard | Page |
-|----------|------|
-| Svefaktura 1.0 | [SVEFAKTURA 1.0](svefaktura-1-0.md) |
-
----
-
-## Asia-Pacific
-
-<figure><img src="edocs-infographic-apac.png" alt="Asia-Pacific Electronic Document Standards supported by DocBits"><figcaption><p>Asia-Pacific E-Invoice Standards Overview</p></figcaption></figure>
-
-### 🇦🇺 Australia / 🇳🇿 New Zealand
-
-| Standard | Page |
-|----------|------|
-| AUNZ PINT | [AUNZ PINT](aunz-pint.md) |
-| AUNZ PINT Self-Billing | [AUNZ PINT SELF-BILLING](aunz-pint-self-billing.md) |
-| PINT A-NZ | [PINT A-NZ](pint-a-nz.md) |
-
-### 🇮🇳 India
-
-| Standard | Page |
-|----------|------|
-| GST E-Invoice | [INDIA GST E-INVOICE](india-gst-e-invoice.md) |
-
-### 🇮🇩 Indonesia
-
-| Standard | Page |
-|----------|------|
-| E-Faktur | [INDONESIA E-FAKTUR](indonesia-e-faktur.md) |
-
-### 🇯🇵 Japan
-
-| Standard | Page |
-|----------|------|
-| JP PINT | [JP PINT](jp-pint.md) |
-| JP PINT Self-Billing | [JP PINT SELF-BILLING](jp-pint-self-billing.md) |
-
-### 🇰🇷 Korea
-
-| Standard | Page |
-|----------|------|
-| E-Tax Invoice | [KOREA E-TAX INVOICE](korea-e-tax-invoice.md) |
-| NTS | [KOREA NTS](korea-nts.md) |
-
-### 🇲🇾 Malaysia
-
-| Standard | Page |
-|----------|------|
-| MyInvois | [MYINVOIS](myinvois.md) |
-
-### 🇵🇭 Philippines
-
-| Standard | Page |
-|----------|------|
-| EIS | [PHILIPPINES EIS](philippines-eis.md) |
-
-### 🇸🇬 Singapore
-
-| Standard | Page |
-|----------|------|
-| InvoiceNow | [INVOICENOW](invoicenow.md) |
-| InvoiceNow SG | [INVOICENOW SG](invoicenow-sg.md) |
-
-### 🇹🇼 Taiwan
-
-| Standard | Page |
-|----------|------|
-| eGUI | [TAIWAN EGUI](taiwan-egui.md) |
-
-### 🇹🇭 Thailand
-
-| Standard | Page |
-|----------|------|
-| E-Tax Invoice | [THAILAND E-TAX INVOICE](thailand-e-tax-invoice.md) |
-
-### 🇻🇳 Vietnam
-
-| Standard | Page |
-|----------|------|
-| E-Invoice | [VIETNAM E-INVOICE](vietnam-e-invoice.md) |
-
----
-
-## Latin America
-
-<figure><img src="edocs-infographic-latam.png" alt="Latin American Electronic Document Standards supported by DocBits"><figcaption><p>Latin America E-Invoice Standards Overview</p></figcaption></figure>
-
-### 🇦🇷 Argentina
-
-| Standard | Page |
-|----------|------|
-| AFIP (Factura A) | [ARGENTINA AFIP](argentina-afip.md) |
-| Factura Electrónica (all other types) | [ARGENTINA FACTURA ELECTRONICA](argentina-factura-electronica.md) |
-
-### 🇧🇷 Brazil
-
-| Standard | Page |
-|----------|------|
-| NF-e | [BRAZIL NFE](brazil-nfe.md) |
-
-### 🇨🇱 Chile
-
-| Standard | Page |
-|----------|------|
-| DTE | [CHILE DTE](chile-dte.md) |
-
-### 🇨🇴 Colombia
-
-| Standard | Page |
-|----------|------|
-| DIAN | [COLOMBIA DIAN](colombia-dian.md) |
-
-### 🇨🇷 Costa Rica
-
-| Standard | Page |
-|----------|------|
-| Electronic Invoice | [COSTA RICA](costa-rica.md) |
-
-### 🇪🇨 Ecuador
-
-| Standard | Page |
-|----------|------|
-| SRI | [ECUADOR SRI](ecuador-sri.md) |
-
-### 🇲🇽 Mexico
-
-| Standard | Page |
-|----------|------|
-| CFDI 3.3 | [MEXICO CFDI 3.3](mexico-cfdi-3-3.md) |
-| CFDI 4.0 | [MEXICO CFDI 4.0](mexico-cfdi-4-0.md) |
-
-### 🇵🇾 Paraguay
-
-| Standard | Page |
-|----------|------|
-| DTE | [PARAGUAY DTE](paraguay-dte.md) |
-| SIFEN | [PARAGUAY SIFEN](paraguay-sifen.md) |
-| SIFEN 150 | [PARAGUAY SIFEN 150](paraguay-sifen-150.md) |
-
-### 🇵🇪 Peru
-
-| Standard | Page |
-|----------|------|
-| CPE | [PERU CPE](peru-cpe.md) |
-| CPE UBL 2.0 | [PERU CPE UBL 2.0](peru-cpe-ubl-2-0.md) |
-| CPE UBL 2.1 | [PERU CPE UBL 2.1](peru-cpe-ubl-2-1.md) |
-| Factura Electronica | [PERU FACTURA ELECTRONICA](peru-factura-electronica.md) |
-
-### 🇺🇾 Uruguay
-
-| Standard | Page |
-|----------|------|
-| CFE | [URUGUAY CFE](uruguay-cfe.md) |
-| CFE 24 | [URUGUAY CFE 24](uruguay-cfe-24.md) |
-| CFE 25 | [URUGUAY CFE 25](uruguay-cfe-25.md) |
-| E-Factura | [URUGUAY E-FACTURA](uruguay-e-factura.md) |
-| E-Nota Credito | [URUGUAY E-NOTA CREDITO](uruguay-e-nota-credito.md) |
-
----
-
-## Middle East & Central Asia
-
-<figure><img src="edocs-infographic-mena.png" alt="Middle East Electronic Document Standards supported by DocBits"><figcaption><p>Middle East &amp; Central Asia E-Invoice Standards Overview</p></figcaption></figure>
-
-### 🇰🇿 Kazakhstan
-
-| Standard | Page |
-|----------|------|
-| ESF | [KAZAKHSTAN ESF](kazakhstan-esf.md) |
-
-### 🇸🇦 Saudi Arabia
-
-| Standard | Page |
-|----------|------|
-| ZATCA Fatoorah | [ZATCA FATOORAH](zatca-fatoorah.md) |
-| ZATCA Reporting | [ZATCA REPORTING](zatca-reporting.md) |
-| ZATCA Simplified | [ZATCA SIMPLIFIED](zatca-simplified.md) |
-| ZATCA Tax Invoice | [ZATCA TAX INVOICE](zatca-tax-invoice.md) |
-
-### 🇹🇷 Turkey
-
-| Standard | Page |
-|----------|------|
-| E-Arsiv | [TURKEY E-ARSIV](turkey-e-arsiv.md) |
-| E-Fatura | [TURKEY E-FATURA](turkey-e-fatura.md) |
-
-### 🇦🇪 United Arab Emirates
-
-| Standard | Page |
-|----------|------|
-| VAT Invoice | [UAE VAT INVOICE](uae-vat-invoice.md) |
-
----
-
-## International Standards
-
-<figure><img src="edocs-infographic-international.png" alt="International Electronic Document Standards supported by DocBits"><figcaption><p>International Standards Overview (Peppol, UBL, EDIFACT, SPS Commerce)</p></figcaption></figure>
-
-| Standard | Page |
-|----------|------|
-| PEPPOL BIS 3.0 | [PEPPOL BIS 3.0](peppol-bis-3-0.md) |
-| UBL 2.1 | [UBL 2.1](ubl-2-1.md) |
-| INVOIC02 (EDIFACT) | [INVOIC02](invoic02.md) |
-| SPS Commerce RSX 7.7.4 | [SPS COMMERCE RSX 7.7.4](sps-commerce-rsx-7-7-4.md) |
+## Interpretar corretamente a matriz de suporte
+
+- Família: o formato de documento eletrónico, como XRechnung, Factur-X, KSeF ou CFDI.
+- Sintaxe: o conteúdo efetivo, como XML UBL, XML CII ou um PDF com XML incorporado. Um PDF digitalizado, uma exportação JSON ou uma imagem de código QR não equivalem a um conteúdo XML.
+- Versão: a edição da publicação ou do esquema declarada no documento. Uma designação genérica de família não comprova o suporte de todas as versões.
+- Perfil: um subconjunto de requisitos de negócio ou de dados, como BASIC, EN16931, EXTENDED ou autofaturação. Um perfil não é uma versão da publicação.
+- Regra e componentes: a classificação, Transformation, Preview e Extraction Paths são elementos distintos. Um perfil configurado não tem necessariamente uma regra de classificação própria.
+- Validação e transmissão: apresentar ou extrair dados de um ficheiro não verifica, por si só, todas as regras legais, assinaturas, aprovações fiscais ou entregas através da rede.
+
+## Guias por país
+
+A visão geral contém ligações para 39 guias nacionais e um guia internacional. Cada guia apresenta as designações exatas dos formatos e os componentes de configuração, juntamente com as capturas de ecrã do DocBits, os vídeos e as verificações de aceitação disponíveis.
+
+| País / região | Famílias e âmbito das versões | Resultado no catálogo |
+| --- | --- | --- |
+| [Áustria](countries/austria.md) | ebInterface 4.3, 5.0, 6.0 e 6.1 têm entradas distintas. | Entradas encontradas |
+| [Dinamarca](countries/denmark.md) | OIOUBL 2.1 é a entrada dinamarquesa identificada. | Entradas encontradas |
+| [Finlândia](countries/finland.md) | Finvoice 1.3, 2.0, 2.01 e 3.0 têm entradas distintas. TEAPPSXML é outra família. | Entradas encontradas |
+| [França](countries/france.md) | Factur-X tem entradas genéricas e específicas de cada edição, incluindo 1.0.05, 1.08 e 1.09. VRBL FR CIUS 1.0 é uma entrada distinta. | Entradas encontradas |
+| [Alemanha](countries/germany.md) | XRechnung tem treze designações de versão, de 1.0 a 3.0.2, cada uma em CII e UBL. ZUGFeRD inclui perfis antigos e entradas 2.5 em CII e UBL. | Entradas encontradas |
+| [Itália](countries/italy.md) | FatturaPA é a família italiana configurada. | Entradas encontradas |
+| [Países Baixos](countries/netherlands.md) | SI-UBL 2.0 tem uma entrada dedicada. | Entradas encontradas |
+| [Noruega](countries/norway.md) | EHF Invoice 3.0 está listado juntamente com EHF Order, Order Response e Despatch Advice. | Entradas encontradas |
+| [Polónia](countries/poland.md) | KSeF tem entradas genéricas, FA2 e FA3. | Entradas encontradas |
+| [Eslovénia](countries/slovenia.md) | e-SLOG 1.6 e 2.0 têm entradas distintas. | Entradas encontradas |
+| [Espanha](countries/spain.md) | Facturae tem entradas genéricas, 3.2, 3.2.1 e 3.2.2. | Entradas encontradas |
+| [Suécia](countries/sweden.md) | Svefaktura 1.0 é a entrada sueca identificada. | Entradas encontradas |
+| [Austrália](countries/australia.md) | PINT A-NZ tem entradas de regras para faturas e notas de crédito partilhadas com a Nova Zelândia. | Entradas encontradas |
+| [Nova Zelândia](countries/new-zealand.md) | PINT A-NZ tem entradas de regras para faturas e notas de crédito partilhadas com a Austrália. | Entradas encontradas |
+| [Índia](countries/india.md) | India GST E-Invoice e GST CreditNote têm entradas distintas. | Entradas encontradas |
+| [Indonésia](countries/indonesia.md) | Indonesia E-Faktur é a família configurada. | Entradas encontradas |
+| [China](countries/china.md) | O catálogo inclui Fapiao, E-Fapiao, General VAT Invoice e Special VAT Invoice. | Entradas encontradas |
+| [Japão](countries/japan.md) | JP PINT e JP PINT Self-Billing são entradas distintas. | Entradas encontradas |
+| [Coreia do Sul](countries/korea.md) | Korea E-Tax Invoice e Korea NTS são famílias configuradas. | Entradas encontradas |
+| [Malásia](countries/malaysia.md) | MyInvois tem entradas de regras para faturas e notas de crédito. | Entradas encontradas |
+| [Filipinas](countries/philippines.md) | Philippines EIS é a família configurada. | Entradas encontradas |
+| [Singapura](countries/singapore.md) | InvoiceNow tem entradas para faturas e notas de crédito; InvoiceNow SG é outra designação configurada. | Entradas encontradas |
+| [Taiwan](countries/taiwan.md) | Taiwan eGUI é a família configurada. | Entradas encontradas |
+| [Tailândia](countries/thailand.md) | Thailand E-Tax Invoice é a família configurada. | Entradas encontradas |
+| [Vietname](countries/vietnam.md) | Vietnam E-Invoice é a família configurada. | Entradas encontradas |
+| [Argentina](countries/argentina.md) | Argentina AFIP e Factura Electronica são designações configuradas. | Entradas encontradas |
+| [Brasil](countries/brazil.md) | O Brasil tem entradas NF-e, NFC-e, CT-e, NFS-e e SPED NFS-e. NFS-e inclui as versões 1.00 e 2.00 a 2.04; SPED inclui 1.00.02 e 1.01. | Entradas encontradas |
+| [Chile](countries/chile.md) | Chile DTE tem entradas para faturas, notas de crédito e guias de expedição. | Entradas encontradas |
+| [Colômbia](countries/colombia.md) | Colombia Factura Electronica e Documento Soporte têm entradas distintas. | Entradas encontradas |
+| [Costa Rica](countries/costa-rica.md) | A documentação anterior menciona a Costa Rica, mas não foi encontrada nenhuma entrada de classificação ou de configuração correspondente no catálogo de desenvolvimento examinado. | Não confirmado |
+| [Equador](countries/ecuador.md) | Ecuador SRI tem entradas genéricas, 1.0.0, 1.1.0, 2.0.0 e 2.1.0. A retenção na fonte é um tipo de documento distinto. | Entradas encontradas |
+| [México](countries/mexico.md) | Mexico CFDI 3.3 e 4.0 têm entradas distintas. | Entradas encontradas |
+| [Paraguai](countries/paraguay.md) | Paraguay DTE, SIFEN e SIFEN 150 são designações configuradas. | Entradas encontradas |
+| [Peru](countries/peru.md) | Peru CPE tem entradas genéricas, UBL 2.0 e UBL 2.1. Factura Electronica é outra designação. | Entradas encontradas |
+| [Uruguai](countries/uruguay.md) | Uruguay CFE tem entradas genéricas, 24 e 25. E-Factura e E-Nota Credito também estão listadas. | Entradas encontradas |
+| [Cazaquistão](countries/kazakhstan.md) | Kazakhstan ESF é a família configurada. | Entradas encontradas |
+| [Arábia Saudita](countries/saudi-arabia.md) | ZATCA Fatoorah, Reporting, Simplified e Tax Invoice têm entradas distintas. | Entradas encontradas |
+| [Turquia](countries/turkey.md) | Turkey E-Fatura e E-Arsiv são famílias configuradas distintas. | Entradas encontradas |
+| [Emirados Árabes Unidos](countries/united-arab-emirates.md) | UAE VAT Invoice é a designação configurada. | Entradas encontradas |
+| [Internacional](countries/international.md) | As entradas internacionais incluem Peppol BIS 3.0, UBL 2.1, CII puro, EDI, INVOIC02, cXML, OCI, BOD e SPS Commerce RSX 7.7.4. | Entradas encontradas |
+
+## Factur-X / ZUGFeRD: não inventar uma versão da publicação
+
+Um Guideline ID CII harmonizado pode identificar uma família e um perfil, embora várias edições partilhem o mesmo marcador 1p0. Factur-X XMP Version 1.0 é um marcador de esquema, não uma edição da publicação como 1.08 ou 1.09. O XMP do ZUGFeRD pode declarar a sua versão. Se não existirem metadados fiáveis, mantenha o resultado da família genérica e confirme o ficheiro original com o remetente.
+
+MINIMUM e BASIC WL podem omitir informações de linhas de detalhe necessárias nas etapas seguintes. BASIC, EN16931/COMFORT e EXTENDED oferecem diferentes coberturas de dados. Um perfil mais abrangente pode incluir campos que o seu mapeamento de extração não utiliza. Verifique os campos obrigatórios com exemplos reais.
+
+## Verificar um formato na sua organização
+
+1. Conserve o XML original ou o PDF com o XML incorporado. Consulte o espaço de nomes, o esquema ou o identificador de personalização e a versão ou o perfil declarados.
+
+2. Abra Definições → Tipos de documento → E-Doc para o documento de negócio aplicável. Procure o formato de documento eletrónico exato indicado no guia.
+
+3. Verifique a origem efetiva, Default ou Custom, e a respetiva versão de configuração ativa. Examine Transformation, Preview e Extraction Paths. Guardar um rascunho não o ativa.
+
+4. Teste ficheiros de origem representativos de cada sintaxe, versão e documento de negócio de que necessita. Verifique os campos principais, os montantes, os impostos, a classificação como fatura ou nota de crédito e a exportação para o ERP.
+
+5. Confirme separadamente a política de validação e a transmissão. Preserve os mapeamentos personalizados e verifique as aprovações e o histórico de exportação antes de reiniciar documentos existentes.
+
+[Verificações de aceitação](../credit-note-recognized-as-invoice.md)
+
+[Configurar o DocBits com Claude ou Codex](../../../../../../advanced-functions-and-tools/docbits-mcp/configuration-with-claude-or-codex.md): ligação, prompts, pré-visualizações, alterações versionadas, verificações e reversão.

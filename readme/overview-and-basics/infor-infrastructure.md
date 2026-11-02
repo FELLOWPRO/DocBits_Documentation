@@ -14,7 +14,7 @@ Quando se trata de comunicação com o banco de dados, não corremos riscos. Nos
 
 O manuseio de documentos é fácil com o Docbits. Todos os documentos enviados são armazenados com segurança em um ‘Espaço’ dedicado. Usamos criptografia SSL para o tráfego de dados e exigimos várias chaves para acesso aos arquivos, garantindo que seus documentos estejam tão seguros quanto um cofre.
 
-### Traffic Security
+### Segurança do tráfego
 
 Permitimos apenas conexões seguras por HTTPS para comunicar com nossos servidores. Isso garante que todos os dados transferidos sejam criptografados, mantendo suas informações sensíveis seguras e protegidas. É como ter um segurança para seus dados, 24 horas por dia, 7 dias por semana.
 

@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.765
+PINT A-NZ tem entradas de regras para
+faturas e notas de crédito partilhadas com
+
+formats_02
+00:00:05.765 --> 00:00:11.303
+a Nova Zelândia. A designação da família
+ativa não tem um número fixo de edição
+
+formats_03
+00:00:11.303 --> 00:00:16.736
+PINT. Verifique os identificadores de
+personalização e de perfil; a entrega
+
+formats_04
+00:00:16.736 --> 00:00:20.333
+através da rede exige uma integração
+separada.
+
+workflow_01
+00:00:21.083 --> 00:00:26.470
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:26.470 --> 00:00:33.541
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:33.541 --> 00:00:34.467
+ativa.
+
+accept_01
+00:00:35.217 --> 00:00:41.173
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:41.173 --> 00:00:47.036
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:47.036 --> 00:00:51.567
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

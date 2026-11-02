@@ -8,13 +8,12 @@ Você pode optar por calcular automaticamente o **preço unitário** de cada lin
 
 1.  Navegue até **Configurações** -> **Configurações Globais** -> **Tipos de Documento**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
 2.  Selecione o tipo de documento desejado e clique em **Mais Configurações**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-pt.png" alt="Acesso às definições adicionais do tipo de documento Fatura."><figcaption><p>Acesso às definições adicionais do tipo de documento Fatura.</p></figcaption></figure>
 3.  Na seção **Pedido de Compra**, ative a opção **Calcular Preço Unitário do PO**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-pt.png" alt="Definições de estado das linhas de ordens de compra já utilizadas."><figcaption><p>Definições de estado das linhas de ordens de compra já utilizadas.</p></figcaption></figure>
 
 ## Como o preço é calculado
 
@@ -40,11 +39,11 @@ O preço calculado é gravado no snapshot do pedido de compra que é armazenado 
 
 ## Exemplo:
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
-
 Neste caso, o preço unitário (sem o desconto) é extraído do documento, enquanto o pedido de compra no ERP armazena o preço unitário com o desconto aplicado. Isso resulta em uma discrepância no preço unitário. Com a configuração ativada, o preço unitário é obtido a partir do valor da linha e da quantidade, assim ambos os lados concordam.
 
 ## Configurações relacionadas
 
 * [Regras de Conciliação de Pedido de Compra](purchase-order-matching-rules.md) — as regras comparam o preço unitário **efetivo**, que é este preço calculado quando a configuração está ativada.
 * [Configurações de Tolerância de Pedido de Compra](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — o quanto o preço da fatura pode divergir do preço calculado.
+
+Exemplo com quantidade 9 e base de preço 1: 879,84 ÷ 9 × 1 = 97,76 de preço unitário líquido. O total 954,63 com imposto de 8,5% resulta em 106,07. Para uma fatura com preços líquidos, compare o preço unitário líquido.

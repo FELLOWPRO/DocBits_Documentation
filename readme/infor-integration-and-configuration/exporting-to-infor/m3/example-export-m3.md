@@ -1,236 +1,236 @@
-# Example Export M3
+# Voorbeeld van M3-export
 
 
 
-## General Overview
+## Algemeen overzicht
 
-The export to Infor M3 involves transferring invoice-related data from Docbits into Infor M3 in a structured manner. The data is organized into headers, tax lines, receipt lines, and cost lines. Each section includes static fields that remain constant across transactions and dynamic fields that vary based on the invoice or transaction details.
+Bij de export naar Infor M3 worden factuurgegevens gestructureerd vanuit DocBits overgedragen. De gegevens zijn verdeeld in kopgegevens, belastingregels, ontvangstregels en kostenregels. Elke sectie bevat statische velden die voor transacties gelijk blijven en dynamische velden die afhangen van de factuur of transactie.
 
 
 
-## Field Mappings
+## Veldmappings
 
-### Header Fields
+### Kopvelden
 
-| Field in Infor M3 | Mapped Field in Docbits    | Description                  |
+| Veld in Infor M3 | Gekoppeld veld in DocBits    | Beschrijving                  |
 | ----------------- | -------------------------- | ---------------------------- |
-| HF\_SUNO          | supplier\_id               | Supplier identifier          |
-| HF\_IVDT          | invoice\_date              | Invoice date                 |
-| HF\_SINO          | invoice\_id                | Invoice identifier           |
-| HF\_SPYN          | supplier\_id               | Supplier identifier          |
-| HF\_CUCD          | currency                   | Currency used in the invoice |
-| HF\_CUAM          | total\_amount              | Total amount                 |
-| HF\_VTAM          | total\_tax\_amount         | Total tax amount             |
-| HF\_ACDT          | accounting\_date           | Accounting Date              |
-| HF\_SERS          | invoice\_sub\_type         | Invoice sub type             |
-| HF\_FTCO          | supplier\_country\_code    | Supplier country code        |
-| HF\_PUNO          | purchase\_order            | Purchase order               |
-| HF\_TXAP          | tax\_country\_1            | Tax country                  |
-| HF\_CORI          | correlation\_id            | Correlation identifier       |
-| HF\_PAIN          | sqr\_field\_esr\_reference | Field Reference              |
-| HF\_TCHG          | additional\_amount         | Additional amount            |
-| HF\_CDC1          | negative\_amount           | Negative amount              |
-| HF\_APCD          | authorised\_user           | Authorised user              |
-| HF\_TEPY          | payment\_terms             | Payment terms                |
-| HF\_PYME          | payment\_method            | Payment method               |
-| HF\_BKID          | bank\_id                   | Bank identifier              |
-| HF\_GEOC          | geo\_code                  | Geo code                     |
-| HF\_TECD          | discount\_term             | Discount term                |
-| HF\_TXAP          | tax\_applicable            | Tax applicable               |
-| HF\_TXIN          | tax\_included              | Tax included                 |
+| HF\_SUNO          | supplier\_id               | Leveranciersidentificatie          |
+| HF\_IVDT          | invoice\_date              | Factuurdatum                 |
+| HF\_SINO          | invoice\_id                | Factuuridentificatie           |
+| HF\_SPYN          | supplier\_id               | Leveranciersidentificatie          |
+| HF\_CUCD          | currency                   | Valuta van de factuur |
+| HF\_CUAM          | total\_amount              | Totaalbedrag                 |
+| HF\_VTAM          | total\_tax\_amount         | Totaal belastingbedrag             |
+| HF\_ACDT          | accounting\_date           | Boekingsdatum              |
+| HF\_SERS          | invoice\_sub\_type         | Factuursubtype             |
+| HF\_FTCO          | supplier\_country\_code    | Landcode van de leverancier        |
+| HF\_PUNO          | purchase\_order            | Inkooporder               |
+| HF\_TXAP          | tax\_country\_1            | Belastingland                  |
+| HF\_CORI          | correlation\_id            | Correlatie-identificatie       |
+| HF\_PAIN          | sqr\_field\_esr\_reference | Veldreferentie              |
+| HF\_TCHG          | additional\_amount         | Aanvullend bedrag            |
+| HF\_CDC1          | negative\_amount           | Negatief bedrag              |
+| HF\_APCD          | authorised\_user           | Bevoegde gebruiker              |
+| HF\_TEPY          | payment\_terms             | Betalingsvoorwaarden                |
+| HF\_PYME          | payment\_method            | Betaalmethode               |
+| HF\_BKID          | bank\_id                   | Bankidentificatie              |
+| HF\_GEOC          | geo\_code                  | Geografische code                     |
+| HF\_TECD          | discount\_term             | Kortingsvoorwaarde                |
+| HF\_TXAP          | tax\_applicable            | Belasting van toepassing               |
+| HF\_TXIN          | tax\_included              | Inclusief belasting                 |
 
 
 
-## Tax Line Fields
+## Belastingregelvelden
 
-| Field in Infor M3 | Mapped Field in Docbits | Description         |
+| Veld in Infor M3 | Gekoppeld veld in DocBits | Beschrijving         |
 | ----------------- | ----------------------- | ------------------- |
-| ITF\_VTCD         | TF\_tax\_code           | Tax code            |
-| ITF\_VTA1         | TF\_tax\_amount         | Tax amount          |
-| ITF\_VTP1         | TF\_tax\_rate           | Tax rate            |
-| ITF\_CLAM         | TF\_gross\_amount       | Gross amount        |
-| ITF\_DIVI         | company\_id             | Company  identifier |
-| ITF\_TTXA         | TF\_amount              | Amount              |
-| ITF\_TAXC         | TF\_tax\_code           | Tax code            |
-| ITF\_GEOC         | TF\_geo\_code           | Geo code            |
+| ITF\_VTCD         | TF\_tax\_code           | Belastingcode            |
+| ITF\_VTA1         | TF\_tax\_amount         | Belastingbedrag          |
+| ITF\_VTP1         | TF\_tax\_rate           | Belastingtarief            |
+| ITF\_CLAM         | TF\_gross\_amount       | Brutobedrag        |
+| ITF\_DIVI         | company\_id             | Bedrijfsidentificatie |
+| ITF\_TTXA         | TF\_amount              | Bedrag              |
+| ITF\_TAXC         | TF\_tax\_code           | Belastingcode            |
+| ITF\_GEOC         | TF\_geo\_code           | Geografische code            |
 
-## Order Header Extra Charges Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Velden voor extra kosten op orderkopniveau <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3      | Mapped Field in Docbits | Description |
+| Veld in Infor M3      | Gekoppeld veld in DocBits | Beschrijving |
 | ---------------------- | ----------------------- | ----------- |
 | OrderExtraChargeFields | NLAM                    | NLAM        |
-| OECF\_NLAM             | TF\_amount              | Amount      |
+| OECF\_NLAM             | TF\_amount              | Bedrag      |
 
-## Receipt Line Fields
+## Ontvangstregelvelden
 
-| Field in Infor M3 | Mapped Field in Docbits | Description           |
+| Veld in Infor M3 | Gekoppeld veld in DocBits | Beschrijving           |
 | ----------------- | ----------------------- | --------------------- |
-| IRF\_IVQA         | TF\_quantity            | Invoiced quantity     |
-| IRF\_PUUN         | TF\_unit                | Unit number           |
-| IRF\_PUNO         | TF\_purchase\_order     | Purchase order number |
-| IRF\_PNLI         | TF\_line\_number        | Order line number     |
-| IRF\_ITNO         | TF\_item\_number        | Item number           |
-| IRF\_POPN         | TF\_item\_number        | Item number           |
-| IRF\_SUDO         | TF\_packing\_slip       | Packing slip          |
-| IRF\_NEPR         | TF\_net\_unit\_price    | Net unit price        |
-| IRF\_GRPR         | TF\_gross\_unit\_price  | Gross unit price      |
-| IRF\_PPUN         | TF\_unit\_code\_price   | Unit code price       |
-| IRF\_NLAM         | TF\_net\_amount         | Net amount            |
-| IRF\_GLAM         | TF\_gross\_amount       | Gross amount          |
-| IRF\_TCHG         | TF\_charges             | Charges               |
-| IRF\_CDC1         | TF\_discount            | Discount              |
-| IRF\_PNLS         | TF\_sub\_line\_number   | Sub line number       |
-| IRF\_REPN         | TF\_receipt\_number     | Receipt number        |
-| IRF\_DIVI         | company\_id             | Company  identifier   |
-| IRF\_IVCW         | TF\_catch\_weight       | Catch weight          |
-| IRF\_PUCD         | TF\_unit\_price\_per    | Unit price per        |
+| IRF\_IVQA         | TF\_quantity            | Gefactureerde hoeveelheid     |
+| IRF\_PUUN         | TF\_unit                | Eenheidsnummer           |
+| IRF\_PUNO         | TF\_purchase\_order     | Inkoopordernummer |
+| IRF\_PNLI         | TF\_line\_number        | Orderregelnummer     |
+| IRF\_ITNO         | TF\_item\_number        | Artikelnummer           |
+| IRF\_POPN         | TF\_item\_number        | Artikelnummer           |
+| IRF\_SUDO         | TF\_packing\_slip       | Pakbon          |
+| IRF\_NEPR         | TF\_net\_unit\_price    | Netto-eenheidsprijs        |
+| IRF\_GRPR         | TF\_gross\_unit\_price  | Bruto-eenheidsprijs      |
+| IRF\_PPUN         | TF\_unit\_code\_price   | Prijseenheidscode       |
+| IRF\_NLAM         | TF\_net\_amount         | Nettobedrag            |
+| IRF\_GLAM         | TF\_gross\_amount       | Brutobedrag          |
+| IRF\_TCHG         | TF\_charges             | Kosten               |
+| IRF\_CDC1         | TF\_discount            | Korting              |
+| IRF\_PNLS         | TF\_sub\_line\_number   | Subregelnummer       |
+| IRF\_REPN         | TF\_receipt\_number     | Ontvangstnummer        |
+| IRF\_DIVI         | company\_id             | Bedrijfsidentificatie   |
+| IRF\_IVCW         | TF\_catch\_weight       | Variabel gewicht          |
+| IRF\_PUCD         | TF\_unit\_price\_per    | Eenheidsprijs per        |
 
-## Order Line Charges Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Velden voor kosten op orderregelniveau <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description     |
+| Veld in Infor M3 | Gekoppeld veld in DocBits | Beschrijving     |
 | ----------------- | ----------------------- | --------------- |
-| OLCF\_GRPR        | TF\_unit\_price         | Unit price      |
-| OLCF\_CHGT        | TF\_voucher\_text       | Voucher text    |
-| OLCF\_CEID        | TF\_costing\_element    | Costing element |
-| OLCF\_PUNO        | TF\_purchase\_order     | Purchase order  |
-| OLCF\_PNLI        | TF\_line\_number        | Line number     |
-| OLCF\_ITNO        | TF\_item\_number        | Item number     |
-| OLCF\_CDSE        | TF\_charge\_sequence    | Charge sequence |
-| OLCF\_PNLS        | TF\_sub\_line\_number   | Sub line number |
-| OLCF\_REPN        | TF\_receipt\_number     | Receipt number  |
-| OLCF\_IVQA        | TF\_quantity            | Quantity        |
-| OLCF\_SUDO        | TF\_packing\_slip       | Packing slip    |
+| OLCF\_GRPR        | TF\_unit\_price         | Eenheidsprijs      |
+| OLCF\_CHGT        | TF\_voucher\_text       | Boekingstekst    |
+| OLCF\_CEID        | TF\_costing\_element    | Kostenelement |
+| OLCF\_PUNO        | TF\_purchase\_order     | Inkooporder  |
+| OLCF\_PNLI        | TF\_line\_number        | Regelnummer     |
+| OLCF\_ITNO        | TF\_item\_number        | Artikelnummer     |
+| OLCF\_CDSE        | TF\_charge\_sequence    | Kostenvolgnummer |
+| OLCF\_PNLS        | TF\_sub\_line\_number   | Subregelnummer |
+| OLCF\_REPN        | TF\_receipt\_number     | Ontvangstnummer  |
+| OLCF\_IVQA        | TF\_quantity            | Hoeveelheid        |
+| OLCF\_SUDO        | TF\_packing\_slip       | Pakbon    |
 
-## Order Charge Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Orderkostenregelvelden <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description     |
+| Veld in Infor M3 | Gekoppeld veld in DocBits | Beschrijving     |
 | ----------------- | ----------------------- | --------------- |
-| OCF\_NLAM         | TF\_amount              | Amount          |
-| OCF\_CEID         | TF\_costing\_element    | Costing element |
-| OCF\_CDSE         | TF\_charge\_sequence    | Charge sequence |
+| OCF\_NLAM         | TF\_amount              | Bedrag          |
+| OCF\_CEID         | TF\_costing\_element    | Kostenelement |
+| OCF\_CDSE         | TF\_charge\_sequence    | Kostenvolgnummer |
 
-### Cost Line Fields
+### Kostenregelvelden
 
-| Field in Infor M3 | Mapped Field in Docbits   | Description               |
+| Veld in Infor M3 | Gekoppeld veld in DocBits   | Beschrijving               |
 | ----------------- | ------------------------- | ------------------------- |
-| ICF\_NLAM         | TF\_amount                | Amount in the transaction |
-| ICF\_VTXT         | TF\_voucher\_text         | Voucher text              |
-| ICF\_AIT1         | TF\_ledger\_account       | Ledger account            |
-| ICF\_AIT2         | TF\_dimension\_2          | Dimension 2               |
-| ICF\_AIT3         | TF\_dimension\_3          | Dimension 3               |
-| ICF\_AIT4         | supplier\_id              | Supplier identifier       |
-| ICF\_AIT5         | TF\_dimension\_5          | Dimension 5               |
-| ICF\_AIT6         | TF\_dimension\_6          | Dimension 6               |
-| ICF\_AIT7         | TF\_dimension\_7          | Dimension 7               |
-| ICF\_AO01         | TF\_accounting\_object\_1 | Accounting object 1       |
-| ICF\_AO02         | TF\_accounting\_object\_2 | Accounting object 2       |
-| ICF\_AO03         | TF\_accounting\_object\_3 | Accounting object 3       |
-| ICF\_AO04         | TF\_accounting\_object\_4 | Accounting object 4       |
-| ICF\_AO05         | TF\_accounting\_object\_5 | Accounting object 5       |
-| ICF\_AO06         | TF\_accounting\_object\_6 | Accounting object 6       |
-| ICF\_AO07         | TF\_accounting\_object\_7 | Accounting object 7       |
+| ICF\_NLAM         | TF\_amount                | Bedrag in de transactie |
+| ICF\_VTXT         | TF\_voucher\_text         | Boekingstekst              |
+| ICF\_AIT1         | TF\_ledger\_account       | Grootboekrekening            |
+| ICF\_AIT2         | TF\_dimension\_2          | Dimensie 2               |
+| ICF\_AIT3         | TF\_dimension\_3          | Dimensie 3               |
+| ICF\_AIT4         | supplier\_id              | Leveranciersidentificatie       |
+| ICF\_AIT5         | TF\_dimension\_5          | Dimensie 5               |
+| ICF\_AIT6         | TF\_dimension\_6          | Dimensie 6               |
+| ICF\_AIT7         | TF\_dimension\_7          | Dimensie 7               |
+| ICF\_AO01         | TF\_accounting\_object\_1 | Boekingsobject 1       |
+| ICF\_AO02         | TF\_accounting\_object\_2 | Boekingsobject 2       |
+| ICF\_AO03         | TF\_accounting\_object\_3 | Boekingsobject 3       |
+| ICF\_AO04         | TF\_accounting\_object\_4 | Boekingsobject 4       |
+| ICF\_AO05         | TF\_accounting\_object\_5 | Boekingsobject 5       |
+| ICF\_AO06         | TF\_accounting\_object\_6 | Boekingsobject 6       |
+| ICF\_AO07         | TF\_accounting\_object\_7 | Boekingsobject 7       |
 
-## Debit Note Header Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Kopvelden voor debetnota’s <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits    | Description             |
+| Veld in Infor M3 | Gekoppeld veld in DocBits    | Beschrijving             |
 | ----------------- | -------------------------- | ----------------------- |
-| DN\_HF\_SUNO      | supplier\_id               | Supplier identifier     |
-| DN\_HF\_IVDT      | invoice\_date              | Invoice date            |
-| DN\_HF\_SINO      | invoice\_id                | Invoice  identifier     |
-| DN\_HF\_SPYN      | supplier\_id               | Supplier identifier     |
-| DN\_HF\_CUCD      | currency                   | Currency                |
-| DN\_HF\_CUAM      | total\_net\_amount\_us     | Total net amount us     |
-| DN\_HF\_VTAM      | total\_tax\_amount         | Total tax amount        |
+| DN\_HF\_SUNO      | supplier\_id               | Leveranciersidentificatie     |
+| DN\_HF\_IVDT      | invoice\_date              | Factuurdatum            |
+| DN\_HF\_SINO      | invoice\_id                | Factuuridentificatie     |
+| DN\_HF\_SPYN      | supplier\_id               | Leveranciersidentificatie     |
+| DN\_HF\_CUCD      | currency                   | Valuta                |
+| DN\_HF\_CUAM      | total\_net\_amount\_us     | Totaal nettobedrag VS     |
+| DN\_HF\_VTAM      | total\_tax\_amount         | Totaal belastingbedrag        |
 | DN\_HF\_ACDT      | invoice\_date              | Invoice\_date           |
-| DN\_HF\_SERS      | invoice\_sub\_type         | Invoice sub type        |
-| DN\_HF\_FTCO      | supplier\_country\_code    | Supplier country code   |
-| DN\_HF\_TXAP      | tax\_country\_1            | Tax country             |
-| DN\_HF\_CORI      | correlation\_id            | Correlation  identifier |
-| DN\_HF\_PAIN      | sqr\_field\_esr\_reference | Sqr field esr reference |
-| DN\_HF\_TCHG      | additional\_amount         | Additional amount       |
-| DN\_HF\_CDC1      | negative\_amount           | Negative amount         |
-| DN\_HF\_APCD      | buyer\_id                  | Buyer  identifier       |
-| DN\_HF\_TEPY      | payment\_terms             | Payment terms           |
-| DN\_HF\_PYME      | payment\_method            | Payment Method          |
-| DN\_HF\_BKID      | bank\_id                   | Bank identifier         |
-| DN\_HF\_GEOC      | geo\_code                  | Geo Code                |
+| DN\_HF\_SERS      | invoice\_sub\_type         | Factuursubtype        |
+| DN\_HF\_FTCO      | supplier\_country\_code    | Landcode van de leverancier   |
+| DN\_HF\_TXAP      | tax\_country\_1            | Belastingland             |
+| DN\_HF\_CORI      | correlation\_id            | Correlatie-identificatie |
+| DN\_HF\_PAIN      | sqr\_field\_esr\_reference | SQR-veld ESR-referentie |
+| DN\_HF\_TCHG      | additional\_amount         | Aanvullend bedrag       |
+| DN\_HF\_CDC1      | negative\_amount           | Negatief bedrag         |
+| DN\_HF\_APCD      | buyer\_id                  | Kopersidentificatie       |
+| DN\_HF\_TEPY      | payment\_terms             | Betalingsvoorwaarden           |
+| DN\_HF\_PYME      | payment\_method            | Betaalmethode          |
+| DN\_HF\_BKID      | bank\_id                   | Bankidentificatie         |
+| DN\_HF\_GEOC      | geo\_code                  | Geografische code                |
 
-## Debit Note Cost Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Kostenregelvelden voor debetnota’s <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-<table><thead><tr><th width="252">Field in Infor M3</th><th>Mapped Field in Docbits</th><th>Description</th></tr></thead><tbody><tr><td>DebitNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM,AIT5</td></tr><tr><td>DNCF_NLAM</td><td>TF_amount</td><td>Amount</td></tr><tr><td>DNCF_AIT5</td><td>purchase_order</td><td>Purchase Order</td></tr></tbody></table>
+<table><thead><tr><th width="252">Veld in Infor M3</th><th>Gekoppeld veld in DocBits</th><th>Beschrijving</th></tr></thead><tbody><tr><td>DebitNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM,AIT5</td></tr><tr><td>DNCF_NLAM</td><td>TF_amount</td><td>Bedrag</td></tr><tr><td>DNCF_AIT5</td><td>purchase_order</td><td>Inkooporder</td></tr></tbody></table>
 
-## Debit Note Receipt Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Ontvangstregelvelden voor debetnota’s <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description      |
+| Veld in Infor M3 | Gekoppeld veld in DocBits | Beschrijving      |
 | ----------------- | ----------------------- | ---------------- |
-| DNRF\_IVQA        | TF\_quantity            | Quantity         |
-| DNRF\_PUUN        | TF\_unit                | Unit             |
-| DNRF\_PUNO        | TF\_purchase\_order     | Purchase order   |
-| DNRF\_PNLI        | TF\_line\_number        | Line number      |
-| DNRF\_ITNO        | TF\_item\_number        | Item number      |
-| DNRF\_POPN        | TF\_item\_number        | Item number      |
-| DNRF\_SUDO        | TF\_packing\_slip       | Packing slip     |
-| DNRF\_NEPR        | TF\_net\_unit\_price    | Net unit price   |
-| DNRF\_GRPR        | TF\_gross\_unit\_price  | Gross unit price |
-| DNRF\_PPUN        | TF\_unit\_code\_price   | Unit code price  |
-| DNRF\_NLAM        | TF\_net\_amount         | Net amount       |
-| DNRF\_GLAM        | TF\_gross\_amount       | Gross amount     |
-| DNRF\_TCHG        | TF\_charges             | Charges          |
-| DNRF\_CDC1        | TF\_discount            | Discount         |
+| DNRF\_IVQA        | TF\_quantity            | Hoeveelheid         |
+| DNRF\_PUUN        | TF\_unit                | Eenheid             |
+| DNRF\_PUNO        | TF\_purchase\_order     | Inkooporder   |
+| DNRF\_PNLI        | TF\_line\_number        | Regelnummer      |
+| DNRF\_ITNO        | TF\_item\_number        | Artikelnummer      |
+| DNRF\_POPN        | TF\_item\_number        | Artikelnummer      |
+| DNRF\_SUDO        | TF\_packing\_slip       | Pakbon     |
+| DNRF\_NEPR        | TF\_net\_unit\_price    | Netto-eenheidsprijs   |
+| DNRF\_GRPR        | TF\_gross\_unit\_price  | Bruto-eenheidsprijs |
+| DNRF\_PPUN        | TF\_unit\_code\_price   | Prijseenheidscode  |
+| DNRF\_NLAM        | TF\_net\_amount         | Nettobedrag       |
+| DNRF\_GLAM        | TF\_gross\_amount       | Brutobedrag     |
+| DNRF\_TCHG        | TF\_charges             | Kosten          |
+| DNRF\_CDC1        | TF\_discount            | Korting         |
 
-## Credit Note Header <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Kop voor creditnota’s <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits    | Description             |
+| Veld in Infor M3 | Gekoppeld veld in DocBits    | Beschrijving             |
 | ----------------- | -------------------------- | ----------------------- |
-| CN\_HF\_SUNO      | supplier\_id               | Supplier  identifier    |
-| CN\_HF\_IVDT      | invoice\_date              | Invoice date            |
-| CN\_HF\_SINO      | invoice\_id                | Invoice identifier      |
-| CN\_HF\_SPYN      | supplier\_id               | Supplier identifier     |
-| CN\_HF\_CUCD      | currency                   | Currency                |
-| CN\_HF\_CUAM      | total\_net\_amount\_us     | Total net amount us     |
-| CN\_HF\_VTAM      | total\_tax\_amount         | Total tax amount        |
-| CN\_HF\_ACDT      | invoice\_date              | Invoice date            |
-| CN\_HF\_SERS      | invoice\_sub\_type         | Invoice sub type        |
-| CN\_HF\_FTCO      | supplier\_country\_code    | Supplier country code   |
-| CN\_HF\_TXAP      | tax\_country\_1            | Tax country             |
-| CN\_HF\_CORI      | correlation\_id            | Correlation identifier  |
-| CN\_HF\_PAIN      | sqr\_field\_esr\_reference | Sqr field esr reference |
-| CN\_HF\_TCHG      | additional\_amount         | Additional amount       |
-| CN\_HF\_CDC1      | negative\_amount           | Negative amount         |
-| CN\_HF\_APCD      | buyer\_id                  | Buyer identifier        |
-| CN\_HF\_TEPY      | payment\_terms             | Payment terms           |
-| CN\_HF\_PYME      | payment\_method            | Payment method          |
-| CN\_HF\_BKID      | bank\_id                   | Bank identifier         |
-| CN\_HF\_GEOC      | geo\_code                  | Geo code                |
+| CN\_HF\_SUNO      | supplier\_id               | Leveranciersidentificatie    |
+| CN\_HF\_IVDT      | invoice\_date              | Factuurdatum            |
+| CN\_HF\_SINO      | invoice\_id                | Factuuridentificatie      |
+| CN\_HF\_SPYN      | supplier\_id               | Leveranciersidentificatie     |
+| CN\_HF\_CUCD      | currency                   | Valuta                |
+| CN\_HF\_CUAM      | total\_net\_amount\_us     | Totaal nettobedrag VS     |
+| CN\_HF\_VTAM      | total\_tax\_amount         | Totaal belastingbedrag        |
+| CN\_HF\_ACDT      | invoice\_date              | Factuurdatum            |
+| CN\_HF\_SERS      | invoice\_sub\_type         | Factuursubtype        |
+| CN\_HF\_FTCO      | supplier\_country\_code    | Landcode van de leverancier   |
+| CN\_HF\_TXAP      | tax\_country\_1            | Belastingland             |
+| CN\_HF\_CORI      | correlation\_id            | Correlatie-identificatie  |
+| CN\_HF\_PAIN      | sqr\_field\_esr\_reference | SQR-veld ESR-referentie |
+| CN\_HF\_TCHG      | additional\_amount         | Aanvullend bedrag       |
+| CN\_HF\_CDC1      | negative\_amount           | Negatief bedrag         |
+| CN\_HF\_APCD      | buyer\_id                  | Kopersidentificatie        |
+| CN\_HF\_TEPY      | payment\_terms             | Betalingsvoorwaarden           |
+| CN\_HF\_PYME      | payment\_method            | Betaalmethode          |
+| CN\_HF\_BKID      | bank\_id                   | Bankidentificatie         |
+| CN\_HF\_GEOC      | geo\_code                  | Geografische code                |
 
-## Credit Note Cost Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Kostenregelvelden voor creditnota’s <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-<table><thead><tr><th width="257">Field in Infor M3</th><th>Mapped Field in Docbits</th><th>Description</th></tr></thead><tbody><tr><td>CreditNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM, AIT5</td></tr><tr><td>CNCF_NLAM</td><td>TF_amount</td><td>Amount</td></tr><tr><td>CNCF_AIT5</td><td>purchase_order</td><td>Purchase order</td></tr></tbody></table>
+<table><thead><tr><th width="257">Veld in Infor M3</th><th>Gekoppeld veld in DocBits</th><th>Beschrijving</th></tr></thead><tbody><tr><td>CreditNoteInvoiceCostFields</td><td>NLAM,AIT5</td><td>NLAM, AIT5</td></tr><tr><td>CNCF_NLAM</td><td>TF_amount</td><td>Bedrag</td></tr><tr><td>CNCF_AIT5</td><td>purchase_order</td><td>Inkooporder</td></tr></tbody></table>
 
-## Credit Note Receipt Line Fields <a href="#tax-line-fields" id="tax-line-fields"></a>
+## Ontvangstregelvelden voor creditnota’s <a href="#tax-line-fields" id="tax-line-fields"></a>
 
-| Field in Infor M3 | Mapped Field in Docbits | Description      |
+| Veld in Infor M3 | Gekoppeld veld in DocBits | Beschrijving      |
 | ----------------- | ----------------------- | ---------------- |
-| CNRF\_IVQA        | TF\_quantity            | Quantity         |
-| CNRF\_PUUN        | TF\_unit                | Unit             |
-| CNRF\_PUNO        | TF\_purchase\_order     | Purchase order   |
-| CNRF\_PNLI        | TF\_line\_number        | Line number      |
-| CNRF\_ITNO        | TF\_item\_number        | Item number      |
-| CNRF\_POPN        | TF\_item\_number        | Item number      |
-| CNRF\_SUDO        | TF\_packing\_slip       | Packing slip     |
-| CNRF\_NEPR        | TF\_net\_unit\_price    | Net unit price   |
-| CNRF\_GRPR        | TF\_gross\_unit\_price  | Gross unit price |
-| CNRF\_PPUN        | TF\_unit\_code\_price   | Unit code price  |
-| CNRF\_NLAM        | TF\_net\_amount         | Net amount       |
-| CNRF\_GLAM        | TF\_gross\_amount       | Gross amount     |
-| CNRF\_TCHG        | TF\_charges             | Charges          |
-| CNRF\_CDC1        | TF\_discount            | Discount         |
+| CNRF\_IVQA        | TF\_quantity            | Hoeveelheid         |
+| CNRF\_PUUN        | TF\_unit                | Eenheid             |
+| CNRF\_PUNO        | TF\_purchase\_order     | Inkooporder   |
+| CNRF\_PNLI        | TF\_line\_number        | Regelnummer      |
+| CNRF\_ITNO        | TF\_item\_number        | Artikelnummer      |
+| CNRF\_POPN        | TF\_item\_number        | Artikelnummer      |
+| CNRF\_SUDO        | TF\_packing\_slip       | Pakbon     |
+| CNRF\_NEPR        | TF\_net\_unit\_price    | Netto-eenheidsprijs   |
+| CNRF\_GRPR        | TF\_gross\_unit\_price  | Bruto-eenheidsprijs |
+| CNRF\_PPUN        | TF\_unit\_code\_price   | Prijseenheidscode  |
+| CNRF\_NLAM        | TF\_net\_amount         | Nettobedrag       |
+| CNRF\_GLAM        | TF\_gross\_amount       | Brutobedrag     |
+| CNRF\_TCHG        | TF\_charges             | Kosten          |
+| CNRF\_CDC1        | TF\_discount            | Korting         |
 
-## Static Fields
+## Statische velden
 
-In addition to the dynamic mappings, there are several static fields used for each type of line, which are predefined as follows:
+Naast de dynamische mappings zijn er per regeltype vooraf gedefinieerde statische velden:
 
-* **Header Static Fields**:
+* **Statische kopvelden**:
   * StaticFields=DIVI,IBTP,BSCD,IMCD,APCD,CRTP,CONO,PVLD
   * SF\_DIVI=RFP
   * SF\_IBTP=20
@@ -240,42 +240,42 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * SF\_APCD=MHIDALGO
   * SF\_CRTP=1
   * SF\_PVLD=1
-* **Tax Line Static Fields:**
+* **Statische belastingregelvelden:**
   * InvoiceTaxStaticFields=RDTP,DIVI,VTCD,CONO,TAXT
   * IT\_SF\_RDTP=3
   * IT\_SF\_DIVI=RFP
   * IT\_SF\_CONO=001
   * IT\_SF\_TAXT=2
-* **Order Header Extra Charge Static Static Fields:**
+* **Statische velden voor extra kosten op orderkopniveau:**
   * OrderExtraChargeStaticFields=RDTP,DIVI,CONO,CDSE,CEID
   * OEC\_SF\_RDTP=2
   * OEC\_SF\_DIVI=RFP
   * OEC\_SF\_CONO=001
   * OEC\_SF\_CEID=INVPD
   * OEC\_SF\_CDSE=99
-* **Receipt Line Static Fields**:
+* **Statische ontvangstregelvelden**:
   * InvoiceReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
   * IR\_SF\_RDTP=1
   * IR\_SF\_DIVI=RFP
   * IR\_SF\_RELP=1
   * IR\_SF\_VTCD=52
   * IR\_SF\_CONO=001
-* **Order Line Charge Static Fields:**
+* **Statische velden voor kosten op orderregelniveau:**
   * OrderLineChargeStaticFields=RDTP,DIVI,CONO
   * OLC\_SF\_RDTP=5
   * OLC\_SF\_DIVI=RFP
   * OLC\_SF\_CONO=001
-* **Order Charge Line Static Fields:**
+* **Statische orderkostenregelvelden:**
   * OrderChargeStaticFields=RDTP,DIVI,CONO
   * OC\_SF\_RDTP=2
   * OC\_SF\_DIVI=RFP
   * OC\_SF\_CONO=001
-* **Cost Line Static Fields**:
+* **Statische kostenregelvelden**:
   * InvoiceCostStaticFields=RDTP,DIVI,CONO
   * IC\_SF\_RDTP=8
   * IC\_SF\_DIVI=RFP
   * IC\_SF\_CONO=001
-* **Debit Note Header Static Fields:**
+* **Statische kopvelden voor debetnota's:**
   * DNStaticFields=DIVI,IBTP,BSCD,IMCD,TEPY,PYME,APCD,CRTP,CONO
   * DN\_SF\_DIVI=RFP
   * DN\_SF\_IBTP=20
@@ -287,7 +287,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * DN\_SF\_APCD=MHIDALGO
   * DN\_SF\_CRTP=1
   * DN\_SF\_BKID=DJ1
-* **Debit Note Cost Line Static Fields:**
+* **Statische kostenregelvelden voor debetnota's:**
   * DebitNoteCostStaticFields=RDTP,DIVI,CONO,AIT1,AIT2,AIT3,AIT4,AIT5,AIT6,AIT7
   * DNC\_SF\_RDTP=8
   * DNC\_SF\_DIVI=RFP
@@ -296,14 +296,14 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * DNC\_SF\_AIT3=100
   * DNC\_SF\_AIT6=INVDN
   * DNC\_SF\_AIT7=PP20230
-* **Debit Note Receipt Line Static Fields**
+* **Statische ontvangstregelvelden voor debetnota's**
   * DebitNoteReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
   * DNR\_SF\_RDTP=1
   * DNR\_SF\_DIVI=RFP
   * DNR\_SF\_RELP=1
   * DNR\_SF\_VTCD=52
   * DNR\_SF\_CONO=001
-* **Credit Note Header Static Fields:**
+* **Statische kopvelden voor creditnota's:**
   * CNStaticFields=DIVI,IBTP,BSCD,IMCD,TEPY,PYME,APCD,CRTP,CONO
   * CN\_SF\_DIVI=RFP
   * CN\_SF\_IBTP=20
@@ -315,7 +315,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * CN\_SF\_APCD=MHIDALGO
   * CN\_SF\_CRTP=1
   * CN\_SF\_BKID=DJ1
-* **Credit Note Cost Line Static Fields:**
+* **Statische kostenregelvelden voor creditnota's:**
   * CreditNoteCostStaticFields=RDTP,DIVI,CONO,AIT1,AIT2,AIT3,AIT4,AIT5,AIT6,AIT7
   * CNC\_SF\_RDTP=8
   * CNC\_SF\_DIVI=RFP
@@ -324,7 +324,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
   * CNC\_SF\_AIT3=100
   * CNC\_SF\_AIT6=INVDN
   * CNC\_SF\_AIT7=PP20230
-* **Credit Note Receipt Line Static Fields:**
+* **Statische ontvangstregelvelden voor creditnota's:**
   * CreditNoteReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
   * CNR\_SF\_RDTP=1
   * CNR\_SF\_DIVI=RFP
@@ -336,7 +336,7 @@ In addition to the dynamic mappings, there are several static fields used for ea
 
 
 
-## Full Example
+## Volledig voorbeeld
 
 ```
 ###########################

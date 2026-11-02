@@ -1,6 +1,6 @@
-# Document Type Een van
+# Documenttype is een van
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjKuMuMzIj26NMq60lKOZ%252Fimage.png%3Falt%3Dmedia%26token%3D02ce1a72-99ad-4b6f-a53a-476e46cc645d\&width=768\&dpr=2\&quality=100\&sign=99a9ad41\&sv=2)
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-nl-nl.png" alt="Documenttype is een van, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -9,7 +9,7 @@ Deze DocBits-kaart zorgt voor de juiste classificatie van een document door te c
 ## **Functionaliteit:**
 
 * **Validatie van meerdere documenttypen:** Met deze kaart kunnen gebruikers controleren of een document overeenkomt met een reeks gespecificeerde documenttypen, waardoor flexibele categorisering mogelijk is voor complexere documentworkflows.
-* **Operator:** Gebruikers kunnen voorwaarden definiëren om het document te valideren tegen meerdere typen. Beschikbare operators zijn onder andere:
+* **Exploitant:** Gebruikers kunnen voorwaarden definiëren om het document te valideren tegen meerdere typen. Beschikbare operators zijn onder andere:
   * **Is:** Bevestigt dat het document overeenkomt met een van de gespecificeerde documenttypen.
   * **Is Niet:** Zorgt ervoor dat het document niet overeenkomt met een van de geselecteerde documenttypen.
 * **Documenttypen:** Gebruikers kunnen kiezen uit meerdere ondersteunde documenttypen, waaronder:

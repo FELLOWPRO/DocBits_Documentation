@@ -1,19 +1,19 @@
-# Regex Manager
+# Beheer van reguliere expressies
 
-Deze functie van DocBits is een alternatief voor modelclassificatie: u kunt doorzoekbare reguliere expressies voor een documenttype schrijven, voor classificatie en andere doeleinden.
+Deze functie van DocBits biedt u een alternatief voor modelclassificatie: u kunt er doorzoekbare reguliere expressies voor een documenttype mee schrijven, voor classificatie en andere doeleinden.
 
-**Documenttype:** Met de Regex Manager schrijft u reguliere expressies, en DocBits zoekt het document op deze expressies. Als een document overeenkomt met de regex van een gedefinieerd document, wordt het in het bijbehorende documenttype ingedeeld. Schrijft u bijvoorbeeld een reguliere expressie die „Gutschrift” vindt, dan classificeert DocBits elk document met deze term als creditnota.
+Documenttype: met de Regex Manager schrijft u reguliere expressies die vervolgens in het document worden gezocht. Vindt DocBits een overeenkomst met de reguliere expressie van een gedefinieerd document, dan wijst het het document toe aan het bijbehorende documenttype. Als u bijvoorbeeld een reguliere expressie schrijft om “Gutschrift” te vinden en DocBits dit woord in een document vindt, wordt het document als creditnota geclassificeerd.
 
-**Herkomst van het document:** Hiermee weet DocBits via reguliere expressies uit welk land een document afkomstig is. Als de reguliere expressie voor een Spaans document bijvoorbeeld de term „Factura” bevat en DocBits vindt deze term in een document, dan weet DocBits dat het document Spaans van oorsprong is en classificeert het dienovereenkomstig.
+Documentoorsprong: met reguliere expressies herkent DocBits ook het land van herkomst van een document. Bevat een reguliere expressie voor een Spaans document bijvoorbeeld het woord “Factura” en vindt DocBits dit woord in het document, dan weet het dat het document van Spaanse oorsprong is en classificeert het dit dienovereenkomstig.
 
-## De Regex Manager openen
+## **De Regex Manager openen**
 
-Om deze functie te gebruiken, gaat u naar Instellingen → Documenttypen en klikt u op „Nieuw”. Voer in de wizard „Nieuw documenttype maken” een naam in voor het documenttype en selecteer als extractiemethode „Regex” in plaats van „Auto”; ga daarna verder met „Volgende”.
+Ga in DocBits naar Instellingen → Documenttypen. Klik onder “Aangepaste documenttypen” op “Nieuw”. Voer een naam voor het documenttype in, voeg eventueel een beschrijving toe en vink “Tafel beschikbaar” aan als het document een tabel bevat. Kies daarna “Regex” in plaats van “Auto” en klik op “Volgende”.
 
-<figure><img src="../../../.gitbook/assets/regex-manager-create-nl-20261006.png" alt="De DocBits-wizard om een nieuw documenttype te maken, met de ingevulde naam en de geselecteerde optie „Regex”."><figcaption><p>De wizard „Nieuw documenttype maken” met de naam van het documenttype en de keuze tussen „Auto” en „Regex”.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/regex-manager-create-nl-20261006.png" alt="Pagina voor het maken van een nieuw documenttype met naamveld, selectievakje voor een beschikbare tabel, beschrijving en de knoppen Auto en Regex"><figcaption><p>Kies “Regex” om het nieuwe documenttype met reguliere expressies te classificeren.</p></figcaption></figure>
 
-## Regex toevoegen en verwijderen
+## **Regex toevoegen en verwijderen**
 
-De Regex-stap toont een tabel met de bestaande reguliere expressies, met Oorsprong en Patroon, en de knop „Toevoegen” om nieuwe regex-regels te maken.
+De stap “Regex” toont de bestaande regexmodellen, elk met oorsprong en patroon, en een knop “Toevoegen” om een nieuw regexmodel te maken. Gebruik het actiemenu aan het einde van de rij om dat item te beheren. Klik op “Volgende” om verder te gaan met “Velden en groepen”.
 
-<figure><img src="../../../.gitbook/assets/regex-manager-list-nl-20261006.png" alt="De tabel van de Regex Manager met de bestaande reguliere expressies per oorsprong en patroon."><figcaption><p>De Regex-stap met de tabel van bestaande reguliere expressies en de knop „Toevoegen”.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/regex-manager-list-nl-20261006.png" alt="Stap Regex met de knop Toevoegen en een tabel met drie regexmodellen, met oorsprong, patroon en acties"><figcaption><p>Bestaande regexmodellen met oorsprong en patroon. “Toevoegen” maakt een nieuw model.</p></figcaption></figure>

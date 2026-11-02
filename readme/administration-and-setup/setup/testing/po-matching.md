@@ -1,8 +1,8 @@
-# PO Matching
+# Inkoopordermatching
 
-When it comes to testing your PO Matching configuration, you will need to create a Purchase order in LN/M3 in order to check whether INFOR is synced with DocBits.
+Als het gaat om het testen van uw PO Matching-configuratie, moet u een inkooporder aanmaken in LN/M3 om te controleren of INFOR is gesynchroniseerd met DocBits.
 
-## Creating a Purchase Order in INFOR
+## Een inkooporder maken in INFOR
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
@@ -11,14 +11,14 @@ When it comes to testing your PO Matching configuration, you will need to create
 * LN: https://docs.infor.com/ln/10.4/en-us/lnolh/docs/ln\_10.4\_procpoug\_\_en-us.pdf
 * M3: https://docs.infor.com/m3udi/16.x/en-us/m3beud/default.html?helpcontent=ois610.html
 
-Once you have created your purchase order, go to Settings → Master Data Lookup and search for the purchase order number of the PO you just created as it should now appear in your purchase order master data in DocBits.
+Nadat u uw inkooporder heeft aangemaakt, gaat u naar Instellingen → Stamgegevens opzoeken en zoekt u naar het inkoopordernummer van de PO die u zojuist hebt aangemaakt, zoals het nu zou moeten verschijnen in de stamgegevens van uw inkooporder in DocBits.
 
 ![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
-You should see your unique PO number here, this means that DocBits and INFOR are correctly synced.
+U zou hier uw unieke PO-nummer moeten zien, dit betekent dat DocBits en INFOR correct zijn gesynchroniseerd.
 
-Now upload your invoice that matches the quantity and unit prices of the purchase order you created. Validate the document and select PO Matching on the validation screen.
+Upload nu uw factuur die overeenkomt met het aantal en de eenheidsprijzen van de inkooporder die u heeft aangemaakt. Valideer het document en selecteer PO Matching op het validatiescherm.
 
-The PO and invoice line items should automatically match, then simply select the export option and check whether or not the document gets exported without any errors. If you do encounter an export error, create a ticket for the DocBits support team to assist you. If you are unsure of how to create a ticket within DocBits, please consult our DocBits Overview documentation for assistance.
+De PO en factuurregelitems moeten automatisch overeenkomen. Selecteer vervolgens eenvoudigweg de exportoptie en controleer of het document zonder fouten wordt geëxporteerd. Als u toch een exportfout tegenkomt, maak dan een ticket aan zodat het DocBits ondersteuningsteam u kan helpen. Als u niet zeker weet hoe u een ticket moet aanmaken in DocBits, raadpleeg dan onze DocBits Overzichtsdocumentatie voor hulp.
 
 \\

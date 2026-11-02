@@ -73,7 +73,7 @@ Ideas `0.3.1`, OCR `1.10.3`, Operator `1.42.1`, PO Match `1.59.3`, FTP
   suborganisatiecontext, niet in de context van het document dat toevallig
   openstaat.
 
-### Workflow Builder
+### Workfloweditor
 
 - De workflowlijst onthoudt uw zoekopdracht, sorteervolgorde, pagina en
   paginagrootte wanneer u een workflow opent en terugkeert, ook via het

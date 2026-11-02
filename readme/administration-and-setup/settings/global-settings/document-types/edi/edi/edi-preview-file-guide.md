@@ -67,3 +67,13 @@ Deze functie is cruciaal voor het debuggen van gegevensbindings, het verfijnen v
 ## 6. Video Walkthrough
 
 Een videogids voor dit bestandstype is beschikbaar op de [Videopagina.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Gebruik het om stap voor stap de installatie, bewerking en voorbeeldweergave te volgen.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-nl.png" alt="Actief attribuut PREVIEW: XSLT-broncode in de editor; deze weergave toont geen gerenderd documentvoorbeeld."><figcaption><p>Actief attribuut PREVIEW: XSLT-broncode in de editor; deze weergave toont geen gerenderd documentvoorbeeld.</p></figcaption></figure>
+
+
+De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
+
+De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.

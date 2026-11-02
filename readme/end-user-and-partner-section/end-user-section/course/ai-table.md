@@ -1,4 +1,4 @@
-# AI Table
+# AI-tabel
 
 Verken de revolutionaire mogelijkheden van **DocBits**, een geavanceerde documentverwerkingstool die de complexiteit van tabelextractie, inkooporder (PO) matching en kostenfactuurbeheer vereenvoudigt.
 

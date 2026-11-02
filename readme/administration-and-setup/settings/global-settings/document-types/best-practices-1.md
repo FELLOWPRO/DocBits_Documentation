@@ -1,24 +1,24 @@
-# Best Practices
+# Aanbevolen werkwijzen
 
-## Here are some best practices for organizing document types and subtypes:
+## Aanbevolen werkwijzen voor het ordenen van documenttypen en subtypen
 
-* Use naming conventions: Use consistent and meaningful naming conventions for your document types and subtypes. This makes it easier for users and administrators to navigate and identify the different types.
-* Use subtypes only when necessary: Create a subtype only when it is necessary to manage variations within a main document type. If the differences between the documents are minimal, it may be more efficient to treat them as separate instances of the main type.
-* Logically divide documents: Subtypes should be used to create logical groupings of documents that have similar processing requirements. This can make organization and management easier by grouping similar documents together.
-* Regularly review and clean up: Regularly review your document types and subtypes to ensure they are up to date and meet your organization's needs. Remove types or subtypes that are no longer needed to optimize system performance and improve the user experience.
-* Create documentation policies: Create clear documentation policies for the use of document types and subtypes in your organization. This can include guidance on creating new types, assigning permissions, and using metadata.
-* Train users: Regularly train your users on the use of document types and subtypes, including proven methods and best practices. This helps increase efficiency and reduce errors.
+* Gebruik naamgevingsregels: kies consistente en betekenisvolle namen voor documenttypen en subtypen, zodat gebruikers en beheerders de verschillende typen gemakkelijk kunnen herkennen en vinden.
+* Gebruik subtypen alleen waar nodig: maak alleen een subtype aan als u variaties binnen een hoofddocumenttype moet beheren. Bij minimale verschillen kunnen afzonderlijke exemplaren van het hoofdtype efficiënter zijn.
+* Deel documenten logisch in: gebruik subtypen om documenten met vergelijkbare verwerkingseisen te groeperen. Dit vereenvoudigt het ordenen en beheren.
+* Controleer en ruim regelmatig op: controleer of documenttypen en subtypen actueel zijn en aansluiten op de behoeften van uw organisatie. Verwijder overbodige typen en subtypen om de systeemprestaties en gebruikerservaring te verbeteren.
+* Stel documentatierichtlijnen op: leg het gebruik van documenttypen en subtypen in uw organisatie duidelijk vast, bijvoorbeeld hoe u nieuwe typen aanmaakt, rechten toekent en metadata gebruikt.
+* Train gebruikers: train gebruikers regelmatig in het gebruik van documenttypen en subtypen en in beproefde werkwijzen. Dit verhoogt de efficiëntie en vermindert fouten.
 
-By following these best practices, you can effectively organize and manage your document types and subtypes, resulting in better use of your document management system.
+Met deze werkwijzen kunt u documenttypen en subtypen effectief ordenen en beheren en uw documentbeheersysteem beter benutten.
 
-## Troubleshooting
+## Problemen oplossen
 
-Here are some troubleshooting tips for managing sub-types:
+Tips voor het oplossen van problemen bij subtypebeheer:
 
-* Resolve conflicts between similar subtypes: Check for conflicts between similar subtypes that could cause confusion. Make sure that the differences between subtypes are clearly defined and that they are different in their usage. If necessary, adjust configurations to resolve conflicts.
-* Resolve script execution errors: Check scripts configured to run when creating or editing subtypes for errors or inconsistencies. Check the syntax and logic of the scripts to make sure they work correctly. Test the scripts in a development environment to identify and fix problems before applying them to the production environment.
-* Ensure configuration consistency: Make sure that configurations for subtypes are consistent and do not have inconsistencies or contradictions. Check fields, layouts, permissions, and other settings to make sure they are configured correctly and meet the requirements of the subtypes.
-* Implement logging and auditing: Implement logging and auditing capabilities to identify and resolve subtype management errors and issues. Monitor subtype changes and track logs to identify and resolve potential issues early.
-* Provide user training and support: Provide training and support to users tasked with subtype management. Ensure they have the knowledge and skills required to effectively configure and manage subtypes. Provide support for any issues or questions that arise.
+* Los conflicten tussen vergelijkbare subtypen op: controleer of vergelijkbare subtypen verwarring veroorzaken. Definieer hun verschillen en gebruik duidelijk. Pas zo nodig de configuraties aan om conflicten op te lossen.
+* Los scriptfouten op: controleer scripts die worden uitgevoerd bij het aanmaken of bewerken van subtypen op fouten en inconsistenties. Controleer de syntaxis en logica. Test scripts in een ontwikkelomgeving voordat u ze in productie toepast.
+* Houd configuraties consistent: voorkom inconsistenties en tegenstrijdigheden in subtypeconfiguraties. Controleer of velden, lay-outs, rechten en overige instellingen correct zijn ingesteld en bij de vereisten van de subtypen passen.
+* Leg gebeurtenissen vast en voer controles uit: gebruik logboeken en controles om fouten bij subtypebeheer op te sporen en op te lossen. Bewaak wijzigingen en controleer de logboeken om problemen vroeg te herkennen.
+* Bied training en ondersteuning: zorg dat gebruikers die subtypen beheren de kennis en vaardigheden hebben om deze effectief in te stellen en te beheren. Bied ondersteuning bij vragen en problemen.
 
-By applying these troubleshooting tips, you can identify and resolve subtype management issues to ensure the efficiency and effectiveness of your document management system.
+Met deze tips kunt u problemen bij subtypebeheer herkennen en oplossen, zodat uw documentbeheersysteem efficiënt en effectief blijft werken.

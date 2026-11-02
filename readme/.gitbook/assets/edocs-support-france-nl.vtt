@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.323
+Factur-X heeft algemene en
+versiespecifieke vermeldingen, waaronder
+
+formats_02
+00:00:06.323 --> 00:00:13.485
+1.0.05, 1.08 en 1.09. VRBL FR CIUS 1.0
+staat hier los van. De XML-markering 1p0
+
+formats_03
+00:00:13.485 --> 00:00:21.099
+en Factur-X XMP Version 1.0 identificeren
+geen publicatieversie. Behoud het algemene
+
+formats_04
+00:00:21.099 --> 00:00:24.000
+label als de versie onbekend is.
+
+workflow_01
+00:00:24.750 --> 00:00:30.404
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:30.404 --> 00:00:35.826
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:35.826 --> 00:00:37.300
+activeert het niet.
+
+accept_01
+00:00:38.050 --> 00:00:43.739
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:43.739 --> 00:00:49.021
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:49.021 --> 00:00:52.400
+fiscale goedkeuring of aflevering via een
+netwerk.
+

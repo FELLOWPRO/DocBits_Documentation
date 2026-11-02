@@ -2,11 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-Hier hoeft u alleen de vereiste informatie van uw e-mailprovider in te voeren: protocol, encryptie, servernaam, port, gebruikersnaam, e-mailadres en wachtwoord, evenals de e-mailmap.
+Kies IMAP als protocol en voer de gegevens van uw e-mailprovider in: servernaam, poort, encryptie, gebruikersnaam, e-mailadres en wachtwoord. In de volgende stappen stelt u de opties en de e-mailmap in.
 
-<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-nl-20261006.png" alt="De dialoog E-mailserver instellen met het protocol IMAP, de servernaam, port 993, de encryptie SSL en de ingevulde gebruikersnaam en het ingevulde e-mailadres."><figcaption><p>De dialoog „E-mailserver instellen” met voorbeeldwaarden: protocol IMAP, server imap.example.com, port 993, encryptie SSL.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-nl-20261006.png" alt="Dialoogvenster voor het instellen van de e-mailserver met protocol IMAP, servernaam, poort 993, SSL-encryptie, gebruikersnaam, e-mailadres en wachtwoord"><figcaption><p>Serverinstelling met voorbeeldwaarden. Vervang deze door de gegevens van uw e-mailprovider.</p></figcaption></figure>
 
-## Opmerkingen
+Let op
 
-* Voer alle vereiste informatie in de interface in. De overige informatie, zoals server en port, hangt af van uw host (een snelle webzoekopdracht helpt meestal).
-* Map en Move-Imported hebben hier dezelfde functie. De map kan niet worden uitgeschakeld; als u deze leeg laat, wordt standaard Inbox gebruikt.
+* Voer alle benodigde informatie in de interface in. Andere gegevens, zoals server en poort, hangen af van de host (een snelle zoekopdracht op internet helpt).
+* Map en Geïmporteerde verplaatsen hebben hier dezelfde functie. De map kan niet worden uitgeschakeld; blijft deze leeg, dan wordt standaard de Postvak IN gebruikt.

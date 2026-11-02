@@ -4,6 +4,12 @@ description: Ondersteuning voor de Indiase GST e-factuur in DocBits
 
 # 🇮🇳 India GST E-Invoice
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [India](countries/india.md). De gedocumenteerde adapter verwerkt SignedInvoice XML. Ga er niet van uit dat ruwe IRP JSON, een QR-afbeelding of een PDF-scan dezelfde extractieroute volgt.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |----------|-------|
 | **Land / Regio** | India |
@@ -34,7 +40,7 @@ De belastingplichtige identificator is het **GSTIN** (Goods and Services Tax Ide
 
 ## Standaard voorbeeld
 
-<figure><img src="india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een Indiase GST e-factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een Indiase GST e-factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 
@@ -96,5 +102,5 @@ DocBits detecteert India GST E-Invoice-documenten door het rootelement te vergel
 
 ## Gerelateerd
 
-- [Momenteel ondersteunde e-factuurstandaarden](../../currently-supported-e-invoice-standards/)
+- [Momenteel ondersteunde e-factuurstandaarden](../currently-supported-e-invoice-standards/README.md)
 - [Ondersteunde elektronische documenten](./)

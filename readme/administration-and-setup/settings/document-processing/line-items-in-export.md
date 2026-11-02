@@ -6,7 +6,7 @@ Ce qu'il advient du tableau des éléments de ligne lorsqu'un document est appro
 
 | Méthode d'exportation | Ce qui est envoyé pour le tableau |
 |---|---|
-| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | Le tableau tel qu'il apparaît sur l'écran de validation : chaque [colonne de tableau](../global-settings/document-types/table-columns.md) non masquée de chaque ligne, avec la valeur, la valeur formatée et le niveau de confiance. |
+| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | Le tableau tel qu'il apparaît sur l'écran de validation : chaque [colonne de tableau](../global-settings/document-types/table-columns/README.md) non masquée de chaque ligne, avec la valeur, la valeur formatée et le niveau de confiance. |
 | **infor-m3-cloud**, **infor-m3-toml-cloud**, **infor-idm-***, **infor-gls840-onpremise**, **infor-m3-oc-charges-onpremise** (BOD Infor ERP / SAP) | Pas le tableau brut. DocBits en construit des **lignes de réception** et des **lignes de coût** (voir ci-dessous) et les mappe sur les champs du BOD avec le mappage configuré sous [Exportation vers INFOR](../../../infor-integration-and-configuration/exporting-to-infor/README.md). |
 
 ## Lignes de réception et lignes de coût (exportations Infor)
@@ -48,5 +48,5 @@ Les partenaires et le support disposant d'un accès API ou MCP peuvent demander 
 ## Pages associées
 
 * [Exportation](export.md) : configurations et méthodes d'exportation
-* [Colonnes de Tableau](../global-settings/document-types/table-columns.md)
+* [Colonnes de Tableau](../global-settings/document-types/table-columns/README.md)
 * [Exportation vers INFOR](../../../infor-integration-and-configuration/exporting-to-infor/README.md) : mappages des champs BOD pour les lignes de réception, de coût et de taxe

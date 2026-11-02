@@ -1,38 +1,36 @@
-# Flux De Documents
+# Flux du document
 
-## **Aperçu :**
+Le flux du document montre l’ordre, le statut et la durée des étapes de traitement. L’exemple utilise une facture fictive.
 
-Cette page fournit un aperçu graphique des différentes étapes qu'un document a traversées jusqu'à présent.
+## Ouvrir le flux
 
-## **Comment Accéder :**
+Recherchez le document dans le tableau de bord. Les valeurs des documents sont masquées.
 
-### **Option 1 :**
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-fr.png" alt="Recherche du document fictif dans le tableau de bord ; les valeurs sont masquées."><figcaption><p>Recherche du document fictif dans le tableau de bord ; les valeurs sont masquées.</p></figcaption></figure>
 
-1.  Naviguez vers la colonne des actions sur le tableau de bord et cliquez sur les trois points à côté du document pour lequel vous souhaitez voir le flux de documents.
+Ouvrez la validation des champs, puis le menu d’options de la barre droite pour consulter le flux du document.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1_fr.png" alt=""><figcaption></figcaption></figure>
-2.  Sélectionnez **Flux De Documents**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-fr.png" alt="Menu d’options de validation permettant d’ouvrir le flux du document."><figcaption><p>Menu d’options de validation permettant d’ouvrir le flux du document.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2_fr.png" alt="" width="261"><figcaption></figcaption></figure>
+## Lire les étapes
 
-### **Option 2 :**
+Chaque carte représente une étape, comme l’import, l’OCR, la classification ou l’extraction des champs. Suivez leur numérotation.
 
-1. Ouvrez le document pour lequel vous souhaitez voir le flux de documents.
-2.  Cliquez sur les trois points sur le côté droit de la Validation Des Champs.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-fr.png" alt="Étapes de traitement d’une facture fictive ; les codes techniques restent inchangés."><figcaption><p>Étapes de traitement d’une facture fictive ; les codes techniques restent inchangés.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3_fr.png" alt=""><figcaption></figcaption></figure>
-3.  Sélectionnez **Flux De Documents**.
+Les identifiants techniques comme `DOCUMENT_IMPORTED` et `COMPLETE` restent inchangés. `COMPLETE` indique une étape terminée.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4_fr.png" alt="" width="354"><figcaption></figcaption></figure>
+## Consulter les détails
 
-## **Description :**
+Sélectionnez une carte pour consulter ses détails et journaux disponibles.
 
-Sur le côté gauche de l'écran, vous verrez les étapes individuelles du flux de documents, listées de gauche à droite.
+| Détail | Signification |
+| --- | --- |
+| Module | Composant de traitement de l’étape |
+| Statut | État actuel de cette étape |
+| Durée | Temps de traitement enregistré |
+| Journaux | Messages techniques disponibles |
 
-<figure><img src="../../../.gitbook/assets/DocumentFlow_5_fr.png" alt=""><figcaption></figcaption></figure>
+Examinez les messages d’une étape en attente ou en échec avant de relancer le traitement. Certains titres de diagnostic peuvent rester en anglais dans le produit.
 
-* Les étapes qui initient le processus de flux de documents (comme l'importation ou le redémarrage) apparaîtront en vert.
-* Pour naviguer à travers les étapes, il suffit de les faire glisser et de les déposer sur l'écran.
-*   Lorsque vous cliquez sur une étape, le nom du module et des informations sur la réussite ou l'échec de l'étape apparaîtront sur le côté droit de l'écran.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_6_fr.png" alt=""><figcaption></figcaption></figure>
+Les détails de chaque étape présentent le composant de traitement, le statut, la durée et les journaux techniques disponibles.

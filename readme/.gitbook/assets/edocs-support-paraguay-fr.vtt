@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.691
+Paraguay DTE, SIFEN et SIFEN 150 sont des
+libellés configurés. Les entrées de
+
+formats_02
+00:00:05.691 --> 00:00:10.779
+classification des avoirs n’ont pas
+d’ensembles d’extraction dédiés dans
+
+formats_03
+00:00:10.779 --> 00:00:16.573
+l’état examiné. Vérifiez la correspondance
+effectivement utilisée et ne considérez
+
+formats_04
+00:00:16.573 --> 00:00:19.400
+pas ces libellés comme interchangeables.
+
+workflow_01
+00:00:20.150 --> 00:00:25.920
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:25.920 --> 00:00:31.830
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:31.830 --> 00:00:32.900
+l’active pas.
+
+accept_01
+00:00:33.650 --> 00:00:38.631
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:38.631 --> 00:00:44.308
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:44.308 --> 00:00:47.500
+la validation fiscale ni la transmission
+réseau.
+

@@ -1,31 +1,29 @@
-# Layout Manager
+# Gestionnaire de mise en page
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-fr.png" alt="Règles de mise en page et de sélection pour le type de document INVOICE : les onglets Plans et Règles de sélection avec leurs compteurs, le type de document, les onglets Validation des champs, Approbation, Rejeter et Revoir, les cartes de mise en page avec le badge Sur mesure et les actions Éditer, Cloner et Supprimer, ainsi que le bouton Nouvelle disposition"><figcaption>Le gestionnaire de mise en page pour le type de document Invoice.</figcaption></figure>
 
-#### Overview
+Le **gestionnaire de mise en page** détermine l'aspect d'un type de document pour les personnes qui valident, approuvent, rejettent et revoient les documents : quels champs et quels groupes apparaissent à l'écran, dans quel ordre, et comment chaque champ se comporte. Chaque type de document possède ses propres mises en page.
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+La page s'ouvre sur **Règles de mise en page et de sélection** : les mises en page sont des agencements de champs réutilisables, indépendants de l'origine du document, et les règles déterminent la mise en page appliquée à un document.
 
-#### Key Components
+#### Écrans et types de mise en page
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
-2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
-3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+La validation, l'approbation, le rejet et la revue sont des écrans distincts, et chacun possède ses propres mises en page, ses propres règles et sa propre mise en page par défaut : une règle d'approbation ne modifie jamais l'écran de validation. Changez d'écran avec les onglets **Validation des champs**, **Approbation**, **Rejeter** et **Revoir**.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
+#### Cartes de mise en page
 
+Dans l'onglet **Plans**, chaque mise en page de l'écran sélectionné est une carte. Une carte indique le nom de la mise en page, si elle appartient à votre organisation (**Sur mesure**) ou s'il s'agit de la mise en page système par défaut, la date de sa dernière modification et si une règle de sélection la cible. **Éditer** ouvre la mise en page dans le Layout Builder, **Cloner** la copie sous un nom de votre choix et **Supprimer** la retire — la mise en page système par défaut peut seulement être consultée, ni modifiée ni supprimée. **Nouvelle disposition** demande un nom et ouvre le Layout Builder sur la nouvelle mise en page vide. Le filtre au-dessus des cartes bascule entre **Tous**, **Mes mises en page** et **Système**.
 
+#### Le Layout Builder
+
+**Éditer** ouvre le [Layout Builder](navigating-the-layout-manager.md) :
+
+* **Structure**, **Champs** et **Éléments** à gauche — la mise en page sous forme d'arborescence, chaque champ du type de document avec un compteur des champs déjà placés, ainsi que les groupes et les éléments de formulaire à faire glisser sur le canevas.
+* Le **canevas** au centre montre la mise en page telle que l'utilisateur la voit. **Mise en page principale** et **Tableau** basculent entre la page et un tableau de postes, **Document** ouvre le document d'exemple à côté.
+* Le panneau **Propriétés** à droite suit l'élément sélectionné ; ses paramètres sont regroupés en affichage, comportement, valeurs et listes, automatisation, bordures et espacement.
+
+**Enregistrer** dans l'en-tête conserve la mise en page. Pour les autres actions de l'en-tête, voir [Enregistrer et appliquer les modifications](save-and-apply-changes.md).
+
+#### Quelle mise en page reçoit un document
+
+L'onglet **Règles de sélection** de chaque écran contient les règles qui choisissent la mise en page : elles sont évaluées par priorité, la première correspondance étant retenue, et une mise en page par défaut s'applique en cas de repli. Voir [Règles de sélection de mise en page](layout-selection-rules.md).

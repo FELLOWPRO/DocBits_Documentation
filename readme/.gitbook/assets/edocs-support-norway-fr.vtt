@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.749
+EHF Invoice 3.0 figure aux côtés d’EHF
+Order, Order Response et Despatch Advice.
+
+formats_02
+00:00:08.749 --> 00:00:13.625
+Choisissez la correspondance du document
+métier réel. Une commande ou un avis
+
+formats_03
+00:00:13.625 --> 00:00:16.100
+d’expédition n’est pas une facture.
+
+workflow_01
+00:00:16.850 --> 00:00:22.620
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:22.620 --> 00:00:28.530
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:28.530 --> 00:00:29.600
+l’active pas.
+
+accept_01
+00:00:30.350 --> 00:00:35.331
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:35.331 --> 00:00:41.008
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:41.008 --> 00:00:44.200
+la validation fiscale ni la transmission
+réseau.
+

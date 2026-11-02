@@ -20,13 +20,13 @@ Bevor Sie die Operator-Aufforderungskarte konfigurieren, stellen Sie sicher, das
 3. Definieren Sie die **Auslösebedingungen** - diese bestimmen, wann der Workflow gestartet wird (z. B. Dokumententyp, Status, Feldpräsenz usw.)
 4. Fügen Sie die erforderlichen **Aktionsschritte** bei Bedarf zu Ihrem Workflow hinzu
 
-<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fd3qJJhFDHTXDUfUedjaF%252Fimage.png%3Falt%3Dmedia%26token%3D310f9e9c-9e79-4987-af01-2d914f1abbe7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=873cf566&#x26;sv=2" alt="" width="375"></div>
+<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fd3qJJhFDHTXDUfUedjaF%252Fimage.png%3Falt%3Dmedia%26token%3D310f9e9c-9e79-4987-af01-2d914f1abbe7&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=873cf566&#x26;sv=2" alt="Workflow-Karte mit den When-Bedingungen Document type Is Invoice und Status Is Exported sowie einer Then-Aktion DocOperator prompt" width="375"></div>
 
 ## Schritt 3: Konfigurieren der Operator-Aufforderungskarte im Workflow
 
 Im Workflow-Builder verwenden Sie die **Operator-Aufforderungskarte**, um eine Aufforderung zu konfigurieren, die ausgeführt werden soll, wenn die Bedingungen des Workflows erfüllt sind.
 
-<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fg11jtpdL4j3mJveYvWSX%252Fimage.png%3Falt%3Dmedia%26token%3Db208669e-b6a8-4879-b08b-d9ba353e908d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=974876f7&#x26;sv=2" alt="" width="375"></div>
+<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fg11jtpdL4j3mJveYvWSX%252Fimage.png%3Falt%3Dmedia%26token%3Db208669e-b6a8-4879-b08b-d9ba353e908d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=974876f7&#x26;sv=2" alt="Konfiguration der DocOperator prompt-Karte mit Prompt, Variablen, maximalen Schritten, maximalen Wiederholungen und den Steuerungen für Execute the prompt" width="375"></div>
 
 ### Wichtige Konfigurationsoptionen
 

@@ -12,7 +12,7 @@ Die Export-Seite zeigt alle konfigurierten Export-Setups an, einschließlich der
 
 Sie finden es unter: **Settings** → **Document Processing** → **Export**
 
-<figure><img src="../../.gitbook/assets/export_settings_menu_access.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/export_settings_menu_access.png" alt="Main settings navigation with the Export entry highlighted in the left menu and the export overview page opened beside it"><figcaption></figcaption></figure>
 
 Ausführliche Anleitungen zur Konfiguration der einzelnen Exporttypen, einschließlich Screenshots und Feldbeschreibungen, finden Sie im vollständigen Leitfaden:
 

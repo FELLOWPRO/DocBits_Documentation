@@ -4,7 +4,7 @@
 
 Der Validierungsbildschirm in DocBits ist darauf ausgelegt, die Genauigkeit und Vollständigkeit der in Dokumenten enthaltenen Daten zu überprüfen, bevor sie verarbeitet oder gespeichert werden. Diese Funktionalität ist entscheidend, um sicherzustellen, dass alle Daten korrekt gelesen und verarbeitet werden, wodurch die Datenintegrität und -qualität erhalten bleibt.
 
-<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt="Diagramm gestapelter Pfeilschritte für den Validierungsbildschirm mit Validierung, Effizienz, Compliance, Benutzerfreundlichkeit, Fehlervermeidung, Datenintegration und Datenqualität"><figcaption></figcaption></figure>
 
 ## Detaillierte Beschreibung des Zwecks und der Verwendung des Validierungsbildschirms
 

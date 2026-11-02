@@ -1,6 +1,6 @@
 # Standard-Workflow
 
-<figure><img src="../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1) (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1) (1).svg" alt="AP-Workflow-Flussdiagramm mit lieferantenbasierter Freigabe, Finance und Buyer Review im PO Matching, Infor IDM LN-Routing und Exporten"><figcaption></figcaption></figure>
 
 #### Überblick über die Workflow-Komponenten:
 

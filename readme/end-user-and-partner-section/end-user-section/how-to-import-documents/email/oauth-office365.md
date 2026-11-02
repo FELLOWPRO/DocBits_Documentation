@@ -10,7 +10,7 @@
 
 Sie werden auf diese Microsoft-Seite weitergeleitet und müssen einen Code eingeben.
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
+![Microsoft Sign in-Seite mit Aufforderung zur Eingabe eines Codes, einem Code-Eingabefeld und einer Next-Schaltfläche](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
 Diesen Code finden Sie, indem Sie zu DocBits zurückwechseln; der Code wird dort wie unten dargestellt angezeigt. Kopieren Sie den Code einfach und geben Sie ihn auf der Microsoft-Seite ein. Anschließend müssen Sie Ihre eigenen Microsoft-Anmeldedaten eingeben.
 

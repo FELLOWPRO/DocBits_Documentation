@@ -1,6 +1,6 @@
 # Kostenrechnung – Export
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28 (1).png" alt="Infor ERP integration settings page with tabs for Connection, Pushback and Export plus credential input fields"><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel speziell für die Verwaltung von Kostenrechnungen konfiguriert ist und eine Export-Aktion umfasst, möglicherweise für Berichte, weitere Verarbeitung oder Integration mit anderen Systemen.
 

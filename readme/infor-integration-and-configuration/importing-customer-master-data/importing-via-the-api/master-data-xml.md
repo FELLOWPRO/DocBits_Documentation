@@ -10,7 +10,7 @@ Verwenden Sie das für Stammdaten, die nicht als BOD ankommen — Preislisten, K
 
 ## Zwei Wege, das XML zu senden
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
+![Swagger-Endpunktliste mit Import Xml File und Import Xml Data unter master_data_lookup](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
 
 | Endpunkt | Wann Sie ihn verwenden |
 | --- | --- |
@@ -29,7 +29,7 @@ Sie benötigen:
 * **Feldzuordnungen** — welcher XPath welche Spalte füllt.
 * **Ihre Org ID**, aus **Settings → Integration & SSO** im Abschnitt **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Felder Org ID und Sub Org ID, ausgefüllt mit Beispiel-UUID-Werten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 ## Schritt-für-Schritt-Anleitung
 
@@ -50,21 +50,21 @@ Verwenden Sie die Region, in der Ihre Organisation gehostet wird — dieselbe Re
 
 ### 2. Autorisieren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-lock.png)
+![Endpunktpfad master_data_lookup/xml/import_xml_file mit dem Titel Import Xml File in der Swagger UI](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-lock.png)
 
 Das Autorisieren funktioniert genau wie bei den BOD-Importen: Klicken Sie auf das **Schlosssymbol**, fügen Sie Ihre **Org ID** in **X-ORG-ID** ein, fügen Sie Ihren API Key in **X-API-KEY** ein und klicken Sie jeweils auf **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Dialog Available authorizations mit dem Header-Feld X-ORG-ID, das den Wert der Organisations-ID zeigt](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Dialog Available authorizations mit dem Header-Feld X-API-KEY, das auf den Wert des API-Schlüssels wartet](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
 ### 3. Die Felder ausfüllen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-xml.png)
+![Swagger-Endpunktbereich für import_xml_file mit dem Titel Import Xml File, einem Parameters-Bereich und der Schaltfläche Try it out](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-xml.png)
 
 Klicken Sie auf **Try it out** und füllen Sie dann das Formular aus.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
+![Request-Body-Formular mit org_id, sub_org_id, data_type, field_mappings und einem Choose file-Steuerelement für die Beispiel-XML](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
 
 | Feld | |
 | --- | --- |
@@ -124,7 +124,7 @@ Prüfen Sie vor dem Ausführen, auf welche Umgebung und welche Organisation Sie 
 
 Prüfen Sie vor dem Ausführen das Dropdown **Servers** unten im Formular.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![Dropdown Servers am unteren Rand des Formulars mit dem Hinweis, dass Optionen auf Operationsebene globale Serveroptionen überschreiben](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
 
 Klicken Sie auf **Execute**. Ein erfolgreicher Import liefert:
 
@@ -135,7 +135,7 @@ Klicken Sie auf **Execute**. Ein erfolgreicher Import liefert:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-response.png)
+![Swagger-Ergebnis nach Execute mit der curl-Anfrage, einer 200-Serverantwort und der Erfolgsmeldung Record(s) created/updated successfully](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-response.png)
 
 Anders als die BOD-Importe melden diese Endpunkte Probleme mit einem echten Fehlerstatus statt mit einem `200`, das `"success": false` trägt — ein **400** bedeutet, dass der Request abgelehnt wurde und nichts geschrieben worden ist.
 

@@ -8,7 +8,7 @@ Jeder Dokumententyp hat seine eigenen Standardkonfigurationen und muss separat e
 
 Einstellungen → Globale Einstellungen → Dokumententypen → Rechnung → Felder → Masterdateneinstellungen → Masterdaten nachschlagen
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fhnn2NcPGzVkUO0mLQWTy%252Fimage.png%3Falt%3Dmedia%26token%3De2f87385-fc48-4149-9bef-ca917a7328bd\&width=768\&dpr=4\&quality=100\&sign=116ee1da\&sv=2)
+![Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fhnn2NcPGzVkUO0mLQWTy%252Fimage.png%3Falt%3Dmedia%26token%3De2f87385-fc48-4149-9bef-ca917a7328bd\&width=768\&dpr=4\&quality=100\&sign=116ee1da\&sv=2)
 
 ## **Standardnachschlagen**
 
@@ -19,7 +19,7 @@ Es gibt **vier Standardnachschlagegruppen** für Rechnungen:
 3. **Lieferant**
 4. **Steuercode**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4VxYFu8M62dXi6qGsPl3%252Fimage.png%3Falt%3Dmedia%26token%3Db2bc4690-805b-4b19-aa89-73f315889d88\&width=768\&dpr=4\&quality=100\&sign=835f513a\&sv=2)
+![Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4VxYFu8M62dXi6qGsPl3%252Fimage.png%3Falt%3Dmedia%26token%3Db2bc4690-805b-4b19-aa89-73f315889d88\&width=768\&dpr=4\&quality=100\&sign=835f513a\&sv=2)
 
 Jede Gruppe enthält spezifische Felder. Klicken Sie auf eine Gruppe, um sie zu **erweitern** und die Felder anzuzeigen. Standardnachschlagegruppen sind mit einem **"Standard" Tag** gekennzeichnet.
 
@@ -54,14 +54,14 @@ Es gibt **zwei Möglichkeiten**, eine Nachschlagekonfiguration zu erstellen:
 1.  **Duplizieren einer vorhandenen Nachschlagegruppe**\
 
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZUlPcWGrx1oITQS3tgZP%252Fimage.png%3Falt%3Dmedia%26token%3D59fb300d-836e-40d0-84b7-4a405cf7f321\&width=768\&dpr=4\&quality=100\&sign=3442db8f\&sv=2)
+    ![Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZUlPcWGrx1oITQS3tgZP%252Fimage.png%3Falt%3Dmedia%26token%3D59fb300d-836e-40d0-84b7-4a405cf7f321\&width=768\&dpr=4\&quality=100\&sign=3442db8f\&sv=2)
 
     * Dies kopiert alle Informationen und Felder aus einer vorhandenen Gruppe.
     * Es muss nur ein **neuer Name** angegeben werden.
 2.  **Erstellen einer Nachschlagegruppe von Grund auf neu**\
 
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNbEpo2p5Q8D1d7DUchBF%252Fimage.png%3Falt%3Dmedia%26token%3D401314b5-44d0-47df-b3e6-69fea83cce82\&width=768\&dpr=4\&quality=100\&sign=1d0ce322\&sv=2)
+    ![Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNbEpo2p5Q8D1d7DUchBF%252Fimage.png%3Falt%3Dmedia%26token%3D401314b5-44d0-47df-b3e6-69fea83cce82\&width=768\&dpr=4\&quality=100\&sign=1d0ce322\&sv=2)
 
     * Klicken Sie auf **"Nachschlagekonfiguration erstellen"**.
     * Füllen Sie die erforderlichen Details aus:
@@ -80,7 +80,7 @@ Jede Gruppe enthält Felder, die je nachdem, ob es sich um Standardfelder oder b
 *   Gekennzeichnet mit einem **"Standard" Tag**.\
 
 
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fh37McVpB0tBo5wqiAttR%252Fimage.png%3Falt%3Dmedia%26token%3Dcabce083-83a5-4881-a64f-88a8757df49b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b3739019&#x26;sv=2" alt="" width="375"></div>
+    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fh37McVpB0tBo5wqiAttR%252Fimage.png%3Falt%3Dmedia%26token%3Dcabce083-83a5-4881-a64f-88a8757df49b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b3739019&#x26;sv=2" alt="Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File" width="375"></div>
 * **Kann nur angezeigt**, nicht bearbeitet oder gelöscht werden.
 
 ### **Nicht-Standardfelder**
@@ -96,7 +96,7 @@ Um ein neues Feld innerhalb einer Gruppe hinzuzufügen:
 1.  Klicken Sie innerhalb der relevanten Gruppe auf **"Erstellen"**.\
 
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvmIXTEQQHKKNbvTJj1b4%252Fimage.png%3Falt%3Dmedia%26token%3D8569867b-9f5b-4865-90bd-f2e41e846979\&width=768\&dpr=4\&quality=100\&sign=603cb7df\&sv=2)
+    ![Seite „Export Configuration“ in den DocBits-Einstellungen mit den Feldern unter Basic Information sowie den Upload-Bereichen für die ION-API-Datei und die TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvmIXTEQQHKKNbvTJj1b4%252Fimage.png%3Falt%3Dmedia%26token%3D8569867b-9f5b-4865-90bd-f2e41e846979\&width=768\&dpr=4\&quality=100\&sign=603cb7df\&sv=2)
 2. Geben Sie die folgenden Details an:
    * **Nachschlagefeld** → Spaltenname aus der Masterdaten-Nachschlagetabelle.
    * **Validierungsfeld** → Entsprechendes DocBits-Feld.

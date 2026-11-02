@@ -24,7 +24,7 @@ Der `{{magic_link}}` ist ein Platzhalter, der beim Versand der E-Mail dynamisch 
    * Mit dem Editor können Sie sowohl den HTML-Code als auch das visuelle Design der E-Mail ändern.
    * Über die bereitgestellten Registerkarten können Sie zwischen visueller Bearbeitung und Code-Bearbeitung wechseln.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Edit Template-Seite für die Supplier Invitation Email mit den Feldern Name, Subject, Sender Name und Magic Link sowie HTML-Quellcode"><figcaption></figcaption></figure>
 
 #### `{{magic_link}}` als Link definieren
 

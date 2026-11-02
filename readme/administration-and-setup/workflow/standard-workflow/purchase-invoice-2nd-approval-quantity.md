@@ -1,6 +1,6 @@
 # Eingangsrechnung – zweite Mengengenehmigung
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.56.54 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.56.54 (1).png" alt="Exporteinstellungen-Dialog mit dem Tab FTP-Export, der die Felder Host, Port, Benutzername und Passwort sowie den Schalter für den passiven Modus zeigt"><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass sich die Regel speziell auf die Behandlung von Einkaufsrechnungen während einer zweiten Genehmigungsphase bezieht, mit dem Schwerpunkt auf der Überprüfung der Richtigkeit der aufgeführten Mengen.
 

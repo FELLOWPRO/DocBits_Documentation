@@ -13,11 +13,11 @@
      * Suchen Sie nach `"ci"` innerhalb der Datei.
      * Kopieren Sie den Wert innerhalb der Anführungszeichen (ohne die Anführungszeichen).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_1.png)
+![Infor Application Connection Point-Seite für IMS via API Gateway mit Name DocBits_Export, Beschreibung und ION API Client ID-Feldern](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_1.png)
 
 4. Fügen Sie unter **Documents** `Sync.CaptureDocument` hinzu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_2.png)
+![Connection Point-Seite DocBits_Export mit dem Bereich Documents, der Sync.CaptureDocument auf Send from Application gesetzt auflistet](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_2.png)
 
 5. Klicken Sie auf **Save**, um die Konfiguration abzuschließen.
 
@@ -29,11 +29,11 @@
 2. Navigieren Sie zu **Infor** > **OS** > **ION** > **Connect** > **Mappings**.
 3. Klicken Sie auf **Import** und wählen Sie die entsprechende Mapping Datei für **M3**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_3.png)
+![Hinzufügen-Schaltfläche in der Symbolleiste der Infor ION Connect Mappings-Seite](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_3.png)
 
 4. Sobald die Dateien importiert sind, bestätigen Sie die Mappings, um sie zu aktivieren.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_4.png)
+![Mapping-Übersicht in ION Connect mit der freigegebenen Zuordnung von Sync.CaptureDocument zu ProcessSupplierInvoice](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_4.png)
 
 ## Schritt 3: Den Data Flow erstellen
 
@@ -49,12 +49,12 @@
    * **Name**: `DocBits` oder `DocBits-Export`.
 2. Klicken Sie auf **Add** und wählen Sie den **Connection Point**, der in Schritt 1 erstellt wurde.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_5.png)
+![Data-Flow-Editor mit geöffneter Knotenpalette und dem Panel Application Activity Properties, das den Knoten DocBits-Dev-Demo-Export benennt](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_5.png)
 
 3. Klicken Sie auf das **Document Icon** neben dem Application Node.
    * Klicken Sie auf **Add** und wählen Sie `Sync.CaptureDocument`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
+![Data-Flow-Editor mit der Liste Documents des Anwendungsknotens, in der Sync.CaptureDocument ergänzt wurde](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
 #### Mapping Node
 
@@ -62,7 +62,7 @@
    * **Name**: `Capt2process`.
    * **Mapping**: `CaptureDocument_to_ProcessSupplierInvoice`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
+![Data-Flow-Editor mit dem Panel Mapping Properties, das Name und ausgewähltes Mapping für den Knoten anzeigt](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
 #### Application Node
 
@@ -70,12 +70,12 @@
    * **Name**: `M3`.
 2. Klicken Sie auf **Add** und wählen Sie die **M3 Application** vom Kunden.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_8.png)
+![Data-Flow-Editor mit dem Panel Application Activity Properties und dem M3-Anwendungsknoten mit dem Namen M3 BODs](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_8.png)
 
 3. Klicken Sie auf das **Document Icon** neben dem Application Node.
    * Klicken Sie auf **Add** und wählen Sie `Acknowledge.SupplierInvoice`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
+![Data-Flow-Editor mit der Liste Documents des M3-Anwendungsknotens, in der Acknowledge.SupplierInvoice ergänzt wurde](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
 #### API Node
 
@@ -84,7 +84,7 @@
    * **ION API Connector**: `DocBits_Import`.
    * Wenn `DocBits_Import` nicht existiert, siehe **Schritt 1** und **Schritt 2** der Import from M3 Dokumentation, um den Connection Point zu erstellen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_10.png)
+![Data-Flow-Editor mit dem Panel ION API Activity Properties, das den Connector DocBits-Dev-Demo-Import für den API-Knoten benennt](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_10.png)
 
 #### Flow speichern und aktivieren
 
@@ -100,7 +100,7 @@
 1. Öffnen Sie **DocBits**.
 2.  Navigieren Sie zu **Einstellungen > Dokumentenverarbeitung > Export**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![Einstellungsseite in DocBits mit geöffneter Document-Processing-Navigation und den Einträgen Import, OCR Settings, Classification and Extraction und Module](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
 3. Erstellen Sie einen neuen Export:
    * **Auswählen**: **Infor IDM + ION BOD**.
    * **Titel**: Wählen Sie einen aussagekräftigen Titel.
@@ -116,7 +116,7 @@
 1. Öffnen Sie **DocBits**.
 2.  Navigieren Sie zu **Einstellungen > Dokumentenverarbeitung > Export**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![Einstellungsseite in DocBits mit geöffneter Document-Processing-Navigation und den Einträgen Import, OCR Settings, Classification and Extraction und Module](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
 3. Erstellen Sie einen neuen Export:
    * **Auswählen**: **Infor IDM + M3 (API)**.
    * **Titel**: Wählen Sie einen aussagekräftigen Titel.
@@ -132,7 +132,7 @@
 1. Öffnen Sie **DocBits**.
 2.  Navigieren Sie zu **Einstellungen > Dokumentenverarbeitung > Export**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![Einstellungsseite in DocBits mit geöffneter Document-Processing-Navigation und den Einträgen Import, OCR Settings, Classification and Extraction und Module](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
 3. Erstellen Sie einen neuen Export:
    * **Auswählen**: **Infor IDM + M3 (API)**.
    * **Titel**: Wählen Sie einen aussagekräftigen Titel.

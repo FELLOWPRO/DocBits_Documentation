@@ -17,6 +17,6 @@ Sie können DocBits dabei helfen, diese Felder zu erkennen, indem Sie die richti
 
 Wiederholen Sie diesen Vorgang für alle erforderlichen Felder. Sobald alle notwendigen Felder ausgefüllt sind, klicken Sie auf **"Regeln speichern"**, um das Training zu speichern. Dadurch lernt DocBits, wo es jedes Stück Information für ähnliche Dokumente in Zukunft finden kann.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![Kopffeld-Training auf Apple_invoice.pdf mit Company Name, Company Street und Company PLZ im Dokument hervorgehoben](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Prüfen Sie das gespeicherte Training an weiteren Dokumenten desselben Lieferanten. Ob das Dokument exportiert werden kann, hängt zusätzlich von seinen Validierungen und dem eingerichteten Workflow ab.

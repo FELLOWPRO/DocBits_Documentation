@@ -46,4 +46,4 @@ Dieses Dokument beschreibt den Workflow für die Bestellung von Materialien bei 
 * Stellen Sie sicher, dass alle Dokumente geprüft und zur Aufbewahrung archiviert werden.
 * Abweichungen bei Bestell- oder Rechnungsdetails müssen umgehend gelöst werden, um Verzögerungen zu vermeiden.
 
-<figure><img src="../../.gitbook/assets/embed (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/embed (1).svg" alt="Swimlane-Diagramm des Workflows für Materialbestellung und -verarbeitung über Supplier, DocBits, Purchasing-INFOR, IDM und FIBU"><figcaption></figcaption></figure>

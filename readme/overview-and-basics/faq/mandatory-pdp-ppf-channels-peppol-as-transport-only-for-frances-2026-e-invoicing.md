@@ -23,14 +23,14 @@ Für die praktische Integration ist deshalb zu klären, welche zugelassene Platt
 
 Die folgenden Schaubilder stammen aus der früheren Beschreibung des API-Serviceangebots und der Hub-Anbindung an den PPF. Sie veranschaulichen diesen technischen Kontext und sind **keine aktuelle Anleitung für den B2B-Rechnungsaustausch über den PPF**. Für den heutigen Rechnungsaustausch gilt die oben beschriebene Rolle der zugelassenen Plattformen.
 
-<figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 1.png" alt="Diagramm des Lebenszyklus einer Rechnung vom Lieferanten über die Zustände Submitted, Received by the platform und Made available bis zu den Ergebnissen Rejected, Refused, Disputed, Partially approved, In hand und Completed"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 6.png" alt="Diagramm eines Issuer OD-PDP und eines Receiver OD-PDP, die über Serviceportale und Drittanbietersoftware verbunden sind, mit einem Datenkontroll- und Wiederherstellungsschritt dazwischen"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 2.png" alt="Diagramm der drei nummerierten Kontrollebenen – technische Kontrollen, Anwendungskontrollen sowie funktionale und geschäftliche Kontrollen – die jeweils in einen nachfolgenden Prozessschritt einfließen"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 5.png" alt="Diagramm des Hub-Modells mit einem Partner, einem technischen Konto, dem Hub, einer Anwendung unter PISTE und einer Verbindung"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 3.png" alt="Diagramm des Empfangs eines EDI-Flusses und von Flow 2 via API, die funktionale Kontrollen für semantisches Format, Verzeichnis und Datenkonsistenz durchlaufen, bevor die Rechnungsdaten eingebunden werden und die Rechnung als eingereicht resultiert"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 4.png" alt="Diagramm eines EDI-Flusses und eines API-Flusses, die funktionale Kontrollen und spezifische Geschäftsregeln durchlaufen, bevor die Rechnung abgelehnt oder zurückgewiesen wird oder als empfangen und verfügbar gemacht resultiert"><figcaption></figcaption></figure>

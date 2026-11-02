@@ -1,6 +1,6 @@
 # Eingangsrechnung – zweite Stückpreisgenehmigung und Export
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02 (1).png" alt="Einstellungen Allgemein page with the Podleiter, Admin and Buchhaltung permissions and the enabled Texterkennung (OCR) aktivieren toggle"><figcaption></figcaption></figure>
 
 Dieser Titel weist darauf hin, dass die Regel zur Verwaltung der zweiten Genehmigungsphase von Einkaufsrechnungen mit Schwerpunkt auf dem Stückpreis eingerichtet ist und sicherstellt, dass dieser mit den vereinbarten Bedingungen übereinstimmt.
 

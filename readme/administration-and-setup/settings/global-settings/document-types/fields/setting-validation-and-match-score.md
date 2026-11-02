@@ -1,44 +1,25 @@
-# Ustawianie Walidacji i Wyniku Dopasowania
+# Ustawianie walidacji i wyniku dopasowania
 
-## Instrukcje dotyczące korzystania z ustawień Wymuszonej Walidacji i Wartości Dopasowania w celu poprawy integralności danych i dokładności rozpoznawania.
+W sekcji **Pola** można ustawić progi walidacji i rozpoznawania dla typu dokumentu. Strona używa typu **Faktura** w testowej organizacji dokumentacji. Opisuje aktualne pole wyboru **WYMUSZENIE WALIDACJI** oraz elementy sterujące **WYNIK MECZU**.
 
-Oto instrukcje dotyczące korzystania z ustawień Wymuszonej Walidacji i Wartości Dopasowania w celu poprawy integralności danych i dokładności rozpoznawania w systemie przetwarzania dokumentów:
+## Otwieranie ustawień pól
 
-### Wymuszona Walidacja (Force Validation):
+1. Przejdź do **Ustawienia → Typy dokumentów → Faktura → Pola**.
+2. Użyj pola **Szukaj według nazwy**, aby znaleźć pole, na przykład `invoice_number` (wyświetlane jako **Numer faktury**).
+3. Sprawdź wiersz pola przed zmianą ustawienia. **WYMAGANY**, **Tylko Do Odczytu**, **Ukryty** i **WYMUSZENIE WALIDACJI** to oddzielne pola wyboru.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_choose_column_type.png" alt="Docbits Choose Column Type" width="151"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-679-fields-overview-pl-20261011.png" alt="Polska strona Pola w Sandbox z ustawieniami rozpoznawania, elementami OCR i WYNIK MECZU, kolumnami pól i przyciskiem Zapisz ustawienia"><figcaption>Elementy sterujące rozpoznawaniem znajdują się nad listą pól.</figcaption></figure>
 
-To ustawienie pozwala zdefiniować reguły sprawdzające, czy wprowadzone dane spełniają określone kryteria.
+## WYMUSZENIE WALIDACJI (Force Validation)
 
-**Aby to skonfigurować:**
+Zaznacz **WYMUSZENIE WALIDACJI** w wierszu pola, aby zastosować dla tego pola surowszą walidację. Pole wyboru jest niezależne od opcji **WYMAGANY**: oznaczenie pola jako wymagane nie zaznacza automatycznie opcji WYMUSZENIE WALIDACJI. Pole wyboru może być niedostępne, gdy pole jest ukryte lub tylko do odczytu. Po zmianie konfiguracji pól kliknij **Zapisz ustawienia**.
 
-* Przejdź do ustawień danego pola.
-* Włącz opcję Wymuszona Walidacja (Force Validation).
-* Zdefiniuj reguły walidacji do sprawdzenia. Mogą to być na przykład limity numeryczne, wyrażenia regularne dla pól tekstowych lub relacje z innymi polami.
+Stare instrukcje sugerowały wpisywanie w tym miejscu limitów liczbowych lub wyrażeń regularnych. Aktualna tabela pól nie wyświetla edytora reguł w komórce WYMUSZENIE WALIDACJI. Reguły specyficzne dla pól opisuje strona [Konfigurowanie właściwości pola](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+## WYNIK MECZU (Match Score)
 
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+**WYNIK MECZU** to próg liczbowy, a nie stała wartość referencyjna. Suwaki **OCR** i **WYNIK MECZU** w sekcji **USTAWIENIA ROZPOZNAWANIA** stosują swoją wartość do wierszy pól typu dokumentu; aby ustawić wartość dla pojedynczego pola, użyj pola **WYNIK MECZU** w danym wierszu. W testowej organizacji oba suwaki pokazują **80**, a wiersz `invoice_number` pokazuje **60**. Przejrzyj objęte pola, a następnie kliknij **Zapisz ustawienia**.
 
-**Wpływ:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-679-invoice-id-settings-pl-20261011.png" alt="Polski wiersz pola invoice_number w Sandbox z zaznaczonym WYMUSZENIEM WALIDACJI i WYNIKIEM MECZU 60"><figcaption>Wyszukaj pole, aby sprawdzić jego pole wyboru WYMUSZENIE WALIDACJI i wartość WYNIK MECZU.</figcaption></figure>
 
-* Wymuszanie reguł walidacji pomaga wcześnie wykrywać błędy i poprawia jakość danych. Użytkownicy są proszeni o wprowadzanie poprawnych danych, co zwiększa integralność bazy danych.
-
-### Wynik dopasowania (Match Score):
-
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
-
-To ustawienie pozwala dopasować wprowadzoną wartość do predefiniowanej wartości referencyjnej.
-
-**Aby to skonfigurować:**
-
-* Przejdź do ustawień pola.
-* Włącz opcję Wartość Dopasowania (Match Value).
-* Wprowadź wartość referencyjną, z którą ma zostać porównana wprowadzona wartość.
-
-**Wpływ:**
-
-* Ustawienie wartości dopasowania pozwala upewnić się, że wprowadzone dane są zgodne ze znanym standardem lub predefiniowaną normą. Jest to szczególnie przydatne, gdy chcesz mieć pewność, że dane są spójne i spełniają określone kryteria.
-* Korzystanie z tych ustawień może poprawić integralność danych i dokładność rozpoznawania w systemie przetwarzania dokumentów.
-
-Zapewniasz, że przechwytywane są tylko poprawne i prawidłowe dane, co podnosi jakość bazy danych i poprawia wiarygodność analiz i raportów.
+**OCR** to oddzielny próg rozpoznawania obok wyniku dopasowania. **PRZYWRÓĆ USTAWIENIA DOMYŚLNE** resetuje ustawienia; użyj tej opcji tylko wtedy, gdy chcesz odrzucić własne progi. Inne opcje pól opisuje [Przegląd pól](README.md).

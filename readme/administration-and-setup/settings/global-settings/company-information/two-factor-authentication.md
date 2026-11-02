@@ -14,7 +14,7 @@ To ustawienie znajduje się w **Ustawienia → Ustawienia globalne → Informacj
 2. Otwórz sekcję **Uwierzytelnianie dwuskładnikowe**.
 3. Włącz **Wymagaj uwierzytelniania dwuskładnikowego od wszystkich członków** i kliknij **Zapisz**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="The organisation MFA requirement toggle and adoption report"><figcaption><p>Włącz wymóg dla wszystkich członków i monitoruj poziom wdrożenia poniżej.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t001-pl.png" alt="Wymóg uwierzytelniania dwuskładnikowego w organizacji. Licznik Klucz uniwersalny dotyczy zarejestrowanych kluczy dostępu (passkeys)."><figcaption><p>Wymóg uwierzytelniania dwuskładnikowego w organizacji. Licznik Klucz uniwersalny dotyczy zarejestrowanych kluczy dostępu (passkeys).</p></figcaption></figure>
 
 Po zapisaniu zmiana zaczyna obowiązywać w ciągu minuty. Od tego momentu:
 
@@ -40,7 +40,7 @@ Użyj go do oceny gotowości: najpierw zwiększ poziom wdrożenia, a następnie 
 
 ## Co widzą członkowie
 
-Członek, który musi się zarejestrować, zostaje przekierowany do konfiguracji 2FA przy następnym logowaniu i wybiera metodę (aplikacja uwierzytelniająca, kod e-mail lub klucz dostępu). Kroki dla użytkownika końcowego są opisane w [Uwierzytelnianie dwuskładnikowe (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Członek, który musi się zarejestrować, zostaje przekierowany do konfiguracji 2FA przy następnym logowaniu i wybiera metodę (aplikacja uwierzytelniająca, kod e-mail lub klucz dostępu). Kroki dla użytkownika końcowego są opisane w [Uwierzytelnianie dwuskładnikowe (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Powiązane mechanizmy zabezpieczeń
 

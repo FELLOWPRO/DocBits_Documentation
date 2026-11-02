@@ -1,4 +1,4 @@
-# Auto Accounting BOD Mapping
+# Mapowanie BOD automatycznego księgowania
 
 Przepływ Auto-Accounting DocBits korzysta z dwóch BOD-ów z Infor M3, aby wzbogacić faktury kosztowe o prawidłowe wymiary księgowe:
 

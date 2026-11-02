@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.859
+Svefaktura 1.0 est l’entrée suédoise
+nommée. Distinguez cette famille
+
+formats_02
+00:00:04.859 --> 00:00:09.596
+historique de Peppol BIS Billing 3.0.
+Vérifiez le profil attendu par le
+
+formats_03
+00:00:09.596 --> 00:00:10.800
+destinataire.
+
+workflow_01
+00:00:11.550 --> 00:00:17.320
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:17.320 --> 00:00:23.230
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:23.230 --> 00:00:24.300
+l’active pas.
+
+accept_01
+00:00:25.050 --> 00:00:30.031
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:30.031 --> 00:00:35.708
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:35.708 --> 00:00:38.900
+la validation fiscale ni la transmission
+réseau.
+

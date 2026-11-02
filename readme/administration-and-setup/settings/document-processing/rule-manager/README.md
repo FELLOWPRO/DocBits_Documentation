@@ -1,82 +1,98 @@
-# Rule Manager
+# Gestion des règles
 
-\
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-fr.png" alt="Gestion des règles avec les noms configurés masqués."><figcaption><p>Gestion des règles avec les noms configurés masqués.</p></figcaption></figure>
 
+Rule Management vous permet de créer et de gérer des règles de résolution de conflits basées sur TOML, utilisées lors du PO matching et de l'export des documents. Chaque jeu de règles définit la manière dont DocBits traite les écarts entre les données de la facture et celles du bon de commande.
 
-This document provides an in-depth explanation of the conflict resolution rules used in the DocBits invoicing system. These rules are designed to automatically handle discrepancies between invoice details and purchase order (PO) data, ensuring accurate financial reconciliation. The system applies these rules to process invoice lines, charges, and taxes, and generates appropriate adjustments or notes when necessary.
+## Liste des règles
 
-## Structure of the Rules
+Le tableau principal affiche toutes les configurations de règles :
 
-### &#x20;1. Metadata
+| Colonne | Description |
+|--------|-------------|
+| **Nom** | Le nom du jeu de règles. Les éléments marqués **défaut** sont des modèles fournis par le système. |
+| **Description** | Un résumé de ce que couvre le jeu de règles. |
+| **Dernière modification par** | L'utilisateur qui a modifié ce jeu de règles en dernier. |
+| **Dernière modification en date du** | Horodatage de la dernière modification. |
+| **Actes** | Menu à trois points pour modifier, copier ou supprimer. |
 
-• version: Identifies the version of the mapping file.
+Cliquez sur **+ New** pour créer un nouveau jeu de règles, ou cliquez sur un nom existant pour ouvrir l'éditeur de règles.
 
-• revision: Revision number for tracking changes.
+---
 
-• author: Indicates the creator of the mapping file.
+## Référence de la structure des règles
 
-• description: A brief description of the file’s purpose.
+Cette section fournit une explication détaillée des règles de résolution de conflits utilisées dans le système de facturation DocBits. Ces règles sont conçues pour traiter automatiquement les écarts entre les détails de la facture et les données du bon de commande (PO), afin de garantir un rapprochement financier exact. Le système applique ces règles pour traiter les lignes de facture, les frais et les taxes, et génère les ajustements ou notes appropriés si nécessaire.
 
-• created\_at & updated\_at: Timestamps for when the file was created and last updated.
+## Structure des règles
 
-### &#x20;2. Export Configuration
+### 1. Métadonnées
 
-The export configuration section defines the mapping between the data fields in the system and the corresponding fields in the export files.
+• version : identifie la version du fichier de mapping.
 
-• Header: Defines the header fields for the exported invoice data.
+• revision : numéro de révision pour le suivi des modifications.
 
-• Tax Lines: Specifies the fields for tax line items in the export.
+• author : indique le créateur du fichier de mapping.
 
-• Order Header Charges: Maps fields related to additional charges at the order header level.
+• description : brève description de l'objet du fichier.
 
-• Receipt Lines: Maps fields for individual line items in a receipt.
+• created_at & updated_at : horodatages de la création et de la dernière mise à jour du fichier.
 
-• Order Line Charges: Defines the fields for charges related to specific order lines.
+### 2. Configuration de l'export
 
-• Cost Lines: Specifies fields for cost allocation lines.
+La section de configuration de l'export définit le mapping entre les champs de données du système et les champs correspondants dans les fichiers d'export.
 
-• Debit Note & Credit Note: Defines fields for generating debit and credit notes in cases of discrepancies.
+• Header : définit les champs d'en-tête des données de facture exportées.
 
-### 3. Conflict Resolution Rules
+• Tax Lines : spécifie les champs des lignes de taxe dans l'export.
 
-These rules handle discrepancies between invoice data and the corresponding PO data. Each rule is composed of several components:
+• Order Header Charges : mappe les champs relatifs aux frais supplémentaires au niveau de l'en-tête de commande.
 
-• Name: The rule’s descriptive name, indicating the type of discrepancy it addresses.
+• Receipt Lines : mappe les champs des lignes individuelles d'une réception.
 
-• Section: Indicates which part of the invoice (e.g., receipt\_lines, line\_charges) the rule applies to.
+• Order Line Charges : définit les champs des frais liés à des lignes de commande spécifiques.
 
-• Active: Boolean value (true or false) indicating if the rule is currently active.
+• Cost Lines : spécifie les champs des lignes de répartition des coûts.
 
-• Match Criteria: Conditions that trigger the rule based on comparisons between actual invoice data and expected PO data.
+• Debit Note & Credit Note : définit les champs pour la génération de notes de débit et d'avoirs en cas d'écarts.
 
-• Actions: Defines what the system should do when the rule is triggered, including adjusting values, applying charges, or generating credit/debit notes.
+### 3. Règles de résolution de conflits
 
-## Common Elements in the Rules
+Ces règles traitent les écarts entre les données de la facture et les données correspondantes du bon de commande. Chaque règle se compose de plusieurs éléments :
 
-### Comparison Operators
+• Name : le nom descriptif de la règle, qui indique le type d'écart qu'elle traite.
 
-These operators define how the actual invoice values are compared to the expected PO values:
+• Section : indique à quelle partie de la facture (p. ex. receipt_lines, line_charges) la règle s'applique.
+
+• Active : valeur booléenne (true ou false) indiquant si la règle est actuellement active.
+
+• Match Criteria : conditions qui déclenchent la règle sur la base de comparaisons entre les données réelles de la facture et les données attendues du bon de commande.
+
+• Actions : définit ce que le système doit faire lorsque la règle est déclenchée, notamment ajuster des valeurs, appliquer des frais ou générer des avoirs/notes de débit.
+
+## Éléments communs des règles
+
+### Opérateurs de comparaison
+
+Ces opérateurs définissent la manière dont les valeurs réelles de la facture sont comparées aux valeurs attendues du bon de commande :
 
 • equal
 
 • greater than
 
-• greater than or equal to
+• supérieur ou égal à
 
 • less than
 
-• less than or equal to
+• inférieur ou égal à
 
 • within tolerance
 
 • outside tolerance
 
-\
+### Statut d'approbation
 
-
-### Approval Status
-
-Indicates whether a discrepancy is approved or not:
+Indique si un écart est approuvé ou non :
 
 • approved
 
@@ -84,14 +100,10 @@ Indicates whether a discrepancy is approved or not:
 
 • any
 
-\
+### Types d'action
 
+Définit les actions spécifiques à exécuter lorsqu'un écart est détecté :
 
-### Action Types
-
-Defines specific actions to take when a discrepancy is detected:
-
-\
 • receipt line
 
 • cost line
@@ -102,93 +114,82 @@ Defines specific actions to take when a discrepancy is detected:
 
 • tax line
 
-• debit note receipt line
+• ligne de reçu de note de débit
 
-• debit note cost line
+• ligne de coût de la note de débit
 
-• debit note header charge
+• frais d'en-tête de note de débit
 
-• debit note line charge
+• frais de ligne de note de débit
 
-• credit note receipt line
+• ligne de reçu de note de crédit
 
-• credit note cost line
+• ligne de coût de la note de crédit
 
-• credit note header charge
+• frais d'en-tête de note de crédit
 
 • credit note line charge
 
-• credit note tax line
+• ligne fiscale sur les notes de crédit
 
-\
+### Exemples de règles
 
+#### [Cas 1, 2, 3 : quantité et prix unitaire dans la tolérance](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
-### Rule Examples
+• Objectif : traite les scénarios où la quantité et le prix unitaire de la facture sont tous deux dans les limites de tolérance acceptées par rapport au bon de commande.
 
-#### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](transactionconfig-pro-template/case-1-2-3-quantity-and-unit-price-within-tolerance.md)
+• Action : le système accepte les valeurs de la facture et calcule le montant total.
 
-\
-• Purpose: Handles scenarios where both the quantity and unit price on the invoice are within the accepted tolerance limits compared to the PO.
+#### [Cas 4, 5 : quantité dans la tolérance, prix unitaire hors tolérance (approuvé)](#cas-4-5-quantite-dans-la-tolerance-prix-unitaire-hors-tolerance-approuve)
 
-• Action: The system accepts the invoice values and calculates the total amount.
+• Objectif : s'applique lorsque la quantité est dans la tolérance mais que le prix unitaire est hors tolérance et a été approuvé.
 
+• Action : le système ajuste le prix unitaire pour qu'il corresponde au bon de commande et applique les frais de ligne nécessaires.
 
+#### [Cas 6 : quantité dans la tolérance, prix unitaire hors tolérance négative (rejeté)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-#### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
+• Objectif : traite les cas où le prix unitaire est inférieur à celui attendu et hors de la plage de tolérance, ce qui entraîne un rejet.
 
-• Purpose: Applies when the quantity is within tolerance but the unit price is outside tolerance and has been approved.
+• Action : le système ajuste le prix unitaire pour qu'il corresponde au bon de commande, génère un avoir pour la différence et applique des frais d'en-tête si nécessaire.
 
-• Action: The system adjusts the unit price to match the PO and applies any necessary line charges.
+### Gestion des frais et des taxes
 
-\
+### Tolérance des frais par unité
 
+• Les règles de cette catégorie traitent les écarts de frais par unité, avec des actions spécifiques selon que les frais sont dans ou hors de la tolérance et qu'ils sont approuvés ou rejetés.
 
-#### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)&#x20;
+### Ajustements des lignes de taxe
 
-• Purpose: Deals with cases where the unit price is less than expected and outside the tolerance range, leading to rejection.
+• Ces règles gèrent les écarts de taxes en ajustant les lignes de taxe ou en générant les avoirs ou notes de débit correspondants, selon les différences entre les données de taxe de la facture et du bon de commande.
 
-• Action: The system adjusts the unit price to match the PO, generates a credit note for the difference, and applies header charges as needed.
+### Enums et options
 
+• Enums : listes de valeurs prédéfinies garantissant la cohérence entre les règles (p. ex. opérateurs de comparaison, types d'approbation).
 
+• Options : choix prédéfinis pour le traitement des quantités ou des prix unitaires, offrant de la flexibilité dans la définition des règles.
 
-### Handling Charges and Taxes
+## Explication des captures d'écran
 
-### Charge Per Unit Tolerance
+### Capture d'écran 1 : interface Rule Management
 
-• Rules under this category handle discrepancies in charges per unit, with specific actions based on whether the charge is within or outside the tolerance and whether it is approved or rejected.
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-fr.png" alt="Vue d’ensemble de la gestion des règles et de ses actions."><figcaption><p>Vue d’ensemble de la gestion des règles et de ses actions.</p></figcaption></figure>
 
-### Tax Line Adjustments
+Cette capture d'écran montre l'interface Rule Management, où les administrateurs peuvent consulter et gérer toutes les règles de résolution de conflits. Les éléments clés sont les suivants :
 
-• These rules manage tax discrepancies by adjusting the tax lines or generating corresponding credit or debit notes based on the differences between invoice and PO tax data.
+• Add Rule Button : permet d'ajouter de nouvelles règles.
 
-### Enums and Options
+• List of Rules : affiche toutes les règles actives avec des détails tels que le nom, la section et le statut d'activation.
 
-• Enums: Predefined lists of values ensuring consistency across the rules (e.g., comparison operators, approval types).
+• Section Dropdown : filtre les règles selon la section à laquelle elles s'appliquent (p. ex. Receipt Lines, Line Charges).
 
-• Options: Predefined choices for handling quantities or unit prices, offering flexibility in rule definitions.
+### Capture d'écran 2 : modification détaillée d'une règle
 
-## Screenshots Explanation
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-fr.png" alt="Éditeur de règles TOML avec un exemple de configuration technique."><figcaption><p>Éditeur de règles TOML avec un exemple de configuration technique.</p></figcaption></figure>
 
-### Screenshot 1: Rule Management Interface
+Cette capture d'écran illustre la vue détaillée d'une règle en cours de modification. Les éléments clés sont les suivants :
 
-<figure><img src="../../../../.gitbook/assets/docbits_rule_manager_interface.png" alt="Docbits Rule Manager Interface"><figcaption></figcaption></figure>
+• Criteria Section : définit les conditions dans lesquelles la règle est déclenchée. Par exemple, les critères peuvent préciser que si la quantité et le prix unitaire diffèrent du bon de commande mais restent dans la tolérance, la règle doit être appliquée.
 
-This screenshot shows the Rule Management interface where administrators can view and manage all conflict resolution rules. Key elements include:
+• Actions Section : spécifie les actions à exécuter lorsque les critères sont remplis. Cela peut inclure l'ajustement des lignes de facture, la génération d'avoirs ou de notes de débit, ou l'application de frais supplémentaires.
 
-• Add Rule Button: Allows adding new rules.
-
-• List of Rules: Displays all active rules with details such as name, section, and active status.
-
-• Section Dropdown: Filters the rules based on the section they apply to (e.g., Receipt Lines, Line Charges).
-
-### Screenshot 2: Detailed Rule Editing
-
-<figure><img src="../../../../.gitbook/assets/docbits_rule_editing_detail.png" alt="Docbits Rule Editing Detail"><figcaption></figcaption></figure>
-
-his screenshot illustrates the detailed view of a specific rule being edited. Key elements include:
-
-• Criteria Section: Defines the conditions under which the rule is triggered. For example, the criteria might specify that if the quantity and unit price differ from the PO but are within tolerance, the rule should be applied.
-
-• Actions Section: Specifies what actions should be taken when the criteria are met. This can include adjusting the invoice lines, generating credit or debit notes, or applying additional charges.
-
-• Document Type and Costing Elements: Allows the administrator to map specific actions to document types and costing elements, providing flexibility in handling different scenarios.
+• Document Type and Costing Elements : permet à l'administrateur de mapper des actions spécifiques à des types de documents et à des éléments de coût, ce qui offre de la flexibilité pour traiter différents scénarios.

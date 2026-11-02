@@ -1,31 +1,26 @@
 # Recherche rapide
 
-La **Recherche rapide** en haut du tableau de bord est le moyen le plus rapide de
-trouver des documents. Tapez ce que vous cherchez — un nom, un statut, un
-montant, une date — et la liste se filtre instantanément.
+La **Recherche rapide** est le moyen le plus rapide de trouver des documents sur le tableau de bord. Vous tapez ce que vous cherchez — un nom, un statut, un montant, une date — et la liste des documents se filtre instantanément.
 
-Ce guide est organisé comme la recherche se construit :
+Ce guide est organisé selon la façon dont la recherche se construit :
 
-1. **Champs standard** — les colonnes que possède chaque document (nom du
-   document, statut, dates). Toujours disponibles.
-2. **Champs plein texte** — contenu extrait (fournisseur, numéro de commande,
-   numéro de facture, montants, lignes). Disponibles quand la recherche plein
-   texte est activée.
-3. **Opérateurs, raccourcis et recettes** — la référence complète.
+1. **Champs standard** — les colonnes que possède chaque document (nom du document, statut, dates). Toujours disponibles.
+2. **Champs plein texte** — contenu extrait (fournisseur, commande d'achat, numéro de facture, montants, lignes). Disponibles lorsque la recherche plein texte est activée.
+3. **Opérateurs, raccourcis et recettes** — la référence complète, une fois que vous êtes à l'aise.
 
-> Rien à mémoriser : cliquez dans la barre de recherche et choisissez un champ et
-> une valeur dans la liste. Les exemples ci-dessous montrent aussi la forme
-> tapée, à copier directement.
+> Vous n'avez rien à mémoriser : cliquez dans la barre de recherche et choisissez un champ et une valeur dans la liste — la Recherche rapide construit la requête pour vous. Les exemples ci-dessous montrent aussi la forme saisie afin que vous puissiez les copier directement.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry-fr.png" alt="Recherche rapide dans le tableau de bord français."><figcaption><p>Recherche rapide dans le tableau de bord français.</p></figcaption></figure>
 
 ---
 
 ## Fonctionnement de la barre de recherche — chips, barre d'outils et vue brute
 
-À mesure que vous complétez une condition (un champ, un opérateur et une valeur),
-la Recherche rapide la transforme en **chip** — une pastille colorée dans la barre —
-et en commence une nouvelle. Un chip affiche le **champ**, l'**opérateur** et la
-**valeur**, avec un **×** pour le supprimer. Les chips sont colorés selon
-l'emplacement des données :
+Avant de voir les champs eux-mêmes, il est utile de savoir comment la barre est organisée.
+
+### Les conditions deviennent des chips
+
+Lorsque vous complétez une condition (un champ, un opérateur et une valeur), la Recherche rapide la transforme en **chip** — une pastille colorée dans la barre — et en commence une nouvelle. Un chip affiche le **champ**, l'**opérateur** et la **valeur**, avec un **×** pour le supprimer. Les chips sont colorés selon l'emplacement des données :
 
 | Couleur du chip | Type de champ |
 |-----------------|---------------|
@@ -34,58 +29,30 @@ l'emplacement des données :
 | **Violet** | Recherche vectorielle (sémantique) |
 | **Vert** | Recherche dans le texte OCR |
 
-Cliquez sur un chip pour le modifier ; cliquez sur **×** pour le supprimer.
+Cliquez sur un chip pour le modifier (il redevient du texte) ; cliquez sur **×** pour le supprimer.
 Plusieurs chips combinés sont lus comme un **AND** par défaut.
 
-**Barre d'outils** (à droite de la barre) : **ⓘ Aide** ouvre la référence
-intégrée des champs et de la syntaxe ; **Filtres** est un panneau rapide
-Statut / Utilisateur / Redémarrage ; l'**anneau d'index** indique quelle part de
-l'index plein texte est construite (uniquement quand la recherche plein texte est
-activée).
+### La barre d'outils
 
-**Vue standard ou brute :** la barre affiche votre requête sous forme de chips
-(standard). Passez en **vue brute** pour la voir et la modifier en texte simple —
-pratique pour copier ou taper une longue requête. Votre requête est conservée
-lorsque vous rechargez la page.
+À l'extrémité droite de la barre :
 
-### Trouver des documents par sous-type de facture
+- **ⓘ Aide** — ouvre la référence intégrée **Recherche dans le tableau de bord — Champs et syntaxe**, qui liste tous les champs, opérateurs et raccourcis disponibles dans votre espace de travail.
+- **Filtres** (trois curseurs) — un panneau rapide pour les filtres courants **Statut**, **Assigné à** et **Redémarrage nécessaire**, avec **Effacer les filtres** et **Appliquer**.
+- **Anneau d'index** — un petit anneau de progression indiquant quelle part de votre index plein texte est construite (affiché uniquement lorsque la recherche plein texte est activée).
 
-```
-invoice_sub_type="Cost Invoice"
-```
+### Vue standard ou vue brute
 
-Le sous-type de facture est une liste fixe (p. ex. **Cost Invoice**,
-**Purchase Invoice**), donc `=` est une correspondance exacte et la barre propose
-un sélecteur de valeurs. Utilisez `invoice_sub_type!="Cost Invoice"` pour tout
-sauf ce sous-type.
-
-## Grouper les résultats
-
-Au lieu d'une liste plate, vous pouvez **grouper** les résultats par n'importe
-quel champ — fournisseur, statut, type de document ou un intervalle de dates :
-
-```
-group by supplier_name
-```
-
-La liste affiche des **en-têtes de groupe** repliables, chacun avec un **compte**.
-Cliquez sur un en-tête pour le déplier ou le replier ; cliquez dans un groupe pour
-**explorer en détail** (appliquer cette valeur comme filtre). Le groupement se
-combine avec n'importe quel filtre.
-
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Résultats groupés par fournisseur"><figcaption><p><code>group by supplier_name</code> — les résultats se replient en un en-tête extensible par fournisseur.</p></figcaption></figure>
+La barre affiche normalement votre requête sous forme de chips (**vue standard**). Passez en **vue brute** pour voir et modifier la requête en texte simple (p. ex. `status=ready_for_validation AND supplier_name=Test`) — pratique pour copier, partager ou taper directement une longue requête. Votre requête est conservée lors du changement de vue et mémorisée lorsque vous rechargez le tableau de bord.
 
 ---
 
 ## Partie 1 — Champs standard
 
-Les champs standard sont les colonnes propres du document. Ils sont **toujours
-disponibles**, que la recherche plein texte soit activée ou non.
+Les champs standard sont les colonnes propres du document. Ils sont **toujours disponibles**, que la recherche plein texte soit activée ou non.
 
 ### Trouver des documents par nom
 
-Le nom du document est la recherche la plus courante. Trois façons de
-correspondre — toutes **insensibles à la casse** :
+Le nom du document est la recherche la plus courante. Il existe trois façons de le faire correspondre — toutes **insensibles à la casse** :
 
 #### `=` → commence par
 
@@ -93,17 +60,16 @@ correspondre — toutes **insensibles à la casse** :
 filename=invoice
 ```
 
-Trouve les documents dont le nom **commence par** « invoice ». La casse étant
-ignorée, tous ceux-ci correspondent à `filename=invoice` :
+Trouve les documents dont le nom **commence par** « invoice ». La casse étant ignorée, tous ceux-ci correspondent à `filename=invoice` :
 
 ```
 Invoice.pdf   iNVoice.pdf   iNvoiCE.pdf   INVOICE.pdf
 Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 ```
 
-Ne correspond **pas** à `XYZ_Invoice.pdf` (là « invoice » est au milieu — utilisez `:`).
+Ne correspond **pas** à `XYZ_Invoice.pdf` (ici « invoice » est au milieu — utilisez `:` dans ce cas).
 
-<figure><img src="../../../.gitbook/assets/fr_quick_search_02_filename_starts.png" alt="filename=invoice ne correspond qu'aux noms commençant par invoice"><figcaption><p><code>filename=invoice</code> — uniquement les noms qui <strong>commencent par</strong> « invoice », quelle que soit la casse (<code>INVOICE.pdf</code>, <code>iNvoiCE.pdf</code>, <code>iNVoice.pdf</code>, <code>Invoice.pdf</code> correspondent — 7 résultats).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u028-fr.png" alt="Saisie d’une requête par nom de fichier."><figcaption><p>Saisie d’une requête par nom de fichier.</p></figcaption></figure>
 
 #### `:` → contient (n'importe où)
 
@@ -111,10 +77,9 @@ Ne correspond **pas** à `XYZ_Invoice.pdf` (là « invoice » est au milieu — 
 filename:invoice
 ```
 
-Avec `:`, le mot correspond **n'importe où** dans le nom — `2026_Invoice.pdf`,
-`XYZ_Invoice ABC.pdf`, `123_Invoice ABC bla bla.pdf`.
+Utilisez `:` pour faire correspondre le mot **n'importe où** dans le nom — `2026_Invoice.pdf`, `vietnam_einvoice_sample.xml`, `scan_invoice_copy.pdf`.
 
-<figure><img src="../../../.gitbook/assets/fr_quick_search_03_filename_contains.png" alt="filename:invoice correspond au mot n'importe où dans le nom"><figcaption><p><code>filename:invoice</code> — correspond à « invoice » à n'importe quelle position du nom (aussi <code>XYZ_Invoice ABC.pdf</code>).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains-fr.png" alt="Saisie d’une recherche sur une partie du nom de fichier : filename:invoice."><figcaption><p>Saisie d’une recherche sur une partie du nom de fichier : filename:invoice.</p></figcaption></figure>
 
 #### `="…"` → commence *ou* finit par
 
@@ -122,57 +87,83 @@ Avec `:`, le mot correspond **n'importe où** dans le nom — `2026_Invoice.pdf`
 filename="invoice"
 ```
 
-Les guillemets font que `=` correspond aux noms qui **commencent ou finissent**
-par la valeur.
+Les guillemets font que `=` correspond aux noms qui **commencent ou finissent** par la valeur — pratique pour un code en tête ou une fin de fichier.
 
-> **Les trois en une ligne :** `=` → commence par · `:` → contient · `="…"` →
-> commence ou finit par. Toutes ignorent la casse.
+> **Les trois en une ligne :** `=` → commence par · `:` → contient · `="…"` → commence ou finit par. Toutes ignorent les majuscules/minuscules. Vous pouvez voir ce résumé à tout moment via l'**icône d'aide** dans la barre de recherche (section suivante).
 
-### Trouver par statut
+### Trouver des documents par statut
 
 ```
 status=ready_for_validation
 ```
 
-Le statut est une liste fixe, donc `=` est une correspondance **exacte** et la
-barre propose un sélecteur de valeurs.
+Le statut est une liste fixe, donc `=` est une correspondance **exacte** et la barre propose un sélecteur de valeurs lorsque vous tapez `status=`.
 
-### Trouver par date
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status-fr.png" alt="Saisie du filtre de statut technique ready_for_validation."><figcaption><p>Saisie du filtre de statut technique ready_for_validation.</p></figcaption></figure>
+
+### Trouver des documents par date
 
 ```
 created_on>2026-05-25
 ```
 
-Utilisez `>`, `<`, `>=`, `<=` pour des plages de dates. Aussi des dates
-**relatives** : `today()`, `today()-7` (7 derniers jours), `today()+30`.
+Utilisez `>`, `<`, `>=`, `<=` pour des plages de dates. Vous pouvez aussi utiliser des dates **relatives** : `today()`, `today()-7` (7 derniers jours), `today()+30` (30 prochains jours).
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date-fr.png" alt="Saisie d’une recherche de documents créés après le 25 mai 2026."><figcaption><p>Saisie d’une recherche de documents créés après le 25 mai 2026.</p></figcaption></figure>
+
+### Trouver des documents par sous-type de facture
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Le sous-type de facture est une liste fixe (par exemple **Facture de coût** ou **Facture d'achat**), donc `=` est une correspondance **exacte** et la barre propose un sélecteur de valeurs lorsque vous tapez `invoice_sub_type=`. Utilisez `invoice_sub_type!="Cost Invoice"` pour tout sauf ce sous-type.
 
 ---
 
 ## Partie 2 — Champs plein texte
 
-Les champs plein texte recherchent dans le **contenu extrait** — fournisseur,
-numéro de commande, numéro de facture, montants, lignes. Ils apparaissent en
-**orange** et nécessitent la **recherche plein texte activée**. Les règles de
-correspondance sont identiques aux champs texte standard (`=` commence-par,
-`:` contient, `="…"` commence-ou-finit).
+Les champs plein texte recherchent dans le **contenu extrait** de vos documents — fournisseur, commande d'achat, numéro de facture, montants, lignes. Ils apparaissent en **orange** et sont disponibles lorsque la **recherche plein texte est activée** pour votre organisation. Les règles de correspondance sont exactement les mêmes que pour les champs texte standard (`=` commence par, `:` contient, `="…"` commence ou finit par).
 
-### Trouver les documents d'un fournisseur
+### Trouver des documents d'un fournisseur
 
 ```
 supplier_name=Test
 ```
 
-Commence-par sur le nom de fournisseur extrait ; `supplier_name:fuji` correspond
-n'importe où ; `supplier_name:"Ruiz Foods"` met entre guillemets une valeur avec
-espaces.
+Commence par sur le nom de fournisseur extrait. Utilisez `supplier_name:Example` pour une correspondance n'importe où, ou `supplier_name:"Example"` pour mettre entre guillemets une valeur contenant des espaces.
 
-### Trouver par montant
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier-fr.png" alt="Exemple de requête fournisseur : supplier_name=Test."><figcaption><p>Exemple de requête fournisseur : supplier_name=Test.</p></figcaption></figure>
+
+### Trouver des documents par commande d'achat
+
+```
+purchase_order=PO
+```
+
+Commence par sur le numéro de commande extrait — idéal pour un préfixe de commande.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order-fr.png" alt="Exemple de requête de commande : purchase_order=PO."><figcaption><p>Exemple de requête de commande : purchase_order=PO.</p></figcaption></figure>
+
+### Trouver des documents par montant
 
 ```
 total_amount>5000
 ```
 
-Utilisez `>`, `<`, `>=`, `<=` ou `between 1000 and 5000` pour une fenêtre.
+Utilisez `>`, `<`, `>=`, `<=` ou `between 100 and 500` pour une plage.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount-fr.png" alt="Saisie d’un filtre sur un montant total supérieur à 5000."><figcaption><p>Saisie d’un filtre sur un montant total supérieur à 5000.</p></figcaption></figure>
+
+Pour une fenêtre, utilisez `between` :
+
+```
+total_amount between 1000 and 5000
+```
+
+C'est un raccourci pour `total_amount>=1000 AND total_amount<=5000`.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between-fr.png" alt="Saisie d’une requête de montant entre 1000 et 5000."><figcaption><p>Saisie d’une requête de montant entre 1000 et 5000.</p></figcaption></figure>
 
 ### Trouver ce qui manque
 
@@ -180,32 +171,58 @@ Utilisez `>`, `<`, `>=`, `<=` ou `between 1000 and 5000` pour une fenêtre.
 supplier_name=""
 ```
 
-`=""` signifie « ce champ **n'est pas renseigné** » ; `supplier_name!=""` signifie
-« a un fournisseur quelconque ». La même vérification s'applique à tout champ,
-p. ex. `ap_assignment_code=""`.
+`=""` signifie « ce champ **n'est pas renseigné** » ; `supplier_name!=""` signifie « a un fournisseur quelconque ».
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty-fr.png" alt="Saisie d’un filtre sur un nom de fournisseur vide."><figcaption><p>Saisie d’un filtre sur un nom de fournisseur vide.</p></figcaption></figure>
+
+La même vérification de présence fonctionne sur n'importe quel champ — par exemple les documents auxquels il manque encore un code d'affectation AP :
+
+```
+ap_assignment_code=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty-fr.png" alt="Saisie d’une recherche sans affectation AP."><figcaption><p>Saisie d’une recherche sans affectation AP.</p></figcaption></figure>
 
 ---
 
-## Filtres intelligents — un clic
+## Filtres rapides — un clic
 
-En haut du menu déroulant de recherche se trouvent les **Filtres intelligents** :
-des recherches prêtes en un clic. Chacun est un raccourci d'une requête que vous
-pourriez aussi taper :
+L'icône **éclair** au début du champ de recherche ouvre le sélecteur de champs. En haut de
+ce sélecteur se trouvent les **Filtres rapides** : des recherches prêtes à l'emploi que vous
+appliquez en un seul clic. Chacun est simplement un raccourci pour une requête que vous
+pourriez aussi taper vous-même :
 
-| Filtre intelligent | Trouve | Équivaut à |
+| Filtre rapide | Trouve | Équivaut à |
 |--------------------|--------|------------|
-| ⚠️ **En retard** | Date d'échéance dépassée | `invoice_due_date<today()` |
+| ⚠️ **Échu** | Date d'échéance dépassée | `invoice_due_date<today()` |
 | 🕐 **Bientôt dû** | Dans les 7 prochains jours | `invoice_due_date<=today()+7` |
-| 👤 **Affecté à moi** | En attente de votre action | `assigned_to=<vous>` |
-| 📅 **Boîte du jour** | Importés aujourd'hui | `imported_on>=today()` |
-| 📋 **En attente de validation** | Prêts à valider | `status=ready_for_validation` |
+| 👤 **Assigné à moi** | Éléments en attente de votre action | `assigned_to=<you>` |
+| 📅 **Boîte de réception du jour** | Importés aujourd'hui | `imported_on>=today()` |
+| 📋 **En attente de validation** | Prêts à être validés | `status=ready_for_validation` |
 | 🧾 **Documents électroniques** | E-factures (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Correspondance PO totale** | Totalement rapproché d'une commande | `po_match_status=full_matched` |
-| ➗ **Correspondance PO partielle** | Partiellement rapproché | `po_match_status=partial_matched` |
-| 📉 **Correspondance PO inférieure** | Quantité ou prix sous la commande | `po_match_status=under_matched` |
+| ✅ **Correspondance PO complète** | Totalement rapprochés d'une commande d'achat | `po_match_status=full_matched` |
+| ➗ **Correspondance partielle du bon de commande** | Partiellement rapprochés d'une commande d'achat | `po_match_status=partial_matched` |
+| 📉 **Sous correspondance PO** | Quantité ou prix unitaire inférieur à la commande d'achat | `po_match_status=under_matched` |
 
-Les trois filtres **correspondance PO** et les champs plein texte nécessitent la
-recherche plein texte activée.
+Les trois filtres **correspondance PO** et les champs plein texte nécessitent que la recherche plein texte soit activée pour votre organisation.
+
+<figure><img src="../../../.gitbook/assets/prior-u030-fr.png" alt="Aide aux requêtes et filtres de la recherche rapide."><figcaption><p>Aide aux requêtes et filtres de la recherche rapide.</p></figcaption></figure>
+
+---
+
+## Grouper les résultats
+
+Au lieu d'une liste plate, vous pouvez **grouper** les résultats par n'importe quel champ — fournisseur, statut, type de document, sous-organisation ou un intervalle de dates. Ajoutez un groupement depuis la barre de recherche :
+
+```
+group by supplier_name
+```
+
+La liste affiche alors des **en-têtes de groupe** repliables, chacun avec le nom du groupe et un **compte** (p. ex. *Example (12)*). Cliquez sur un en-tête pour déplier ou replier ce groupe. Pour les champs de date, vous pouvez grouper par **jour, semaine ou mois**.
+
+<figure><img src="../../../.gitbook/assets/prior-u029-fr.png" alt="Saisie d’une requête avec regroupement par fournisseur."><figcaption><p>Saisie d’une requête avec regroupement par fournisseur.</p></figcaption></figure>
+
+Le groupement se combine avec n'importe quel filtre — `status=ready_for_validation group by supplier_name` ne groupe que les documents correspondants. Cliquer dans un groupe permet d'**explorer en détail** : la valeur de ce groupe est appliquée comme filtre et vous revenez à la liste plate pour cette sélection.
 
 ---
 
@@ -213,10 +230,9 @@ recherche plein texte activée.
 
 ### L'aide intégrée
 
-L'**icône d'aide** dans la barre de recherche ouvre une référence complète de
-tous les champs, opérateurs et raccourcis de votre espace de travail.
+L'**icône d'aide** dans la barre de recherche ouvre une référence complète de tous les champs, opérateurs et raccourcis disponibles dans votre espace de travail — y compris quels champs sont standard ou plein texte.
 
-<figure><img src="../../../.gitbook/assets/fr_quick_search_08_help_modal.png" alt="L'aide intégrée de recherche du tableau de bord avec tous les opérateurs"><figcaption><p>L'aide intégrée <strong>Recherche du tableau de bord — Champs et syntaxe</strong> liste chaque opérateur et comment les valeurs correspondent (p. ex. « Exact / commence par »).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/quick_search_08_help_modal.png" alt="L'aide intégrée de recherche du tableau de bord avec tous les opérateurs"><figcaption><p>L'aide intégrée <strong>Dashboard Search — Fields &#38; Syntax</strong> liste chaque opérateur et la façon dont les valeurs correspondent.</p></figcaption></figure>
 
 ### Ce que signifie `=` selon le type de champ
 
@@ -224,11 +240,11 @@ Toute correspondance de texte ignore la casse.
 
 | Type de champ | Exemple | `=` signifie |
 |---------------|---------|--------------|
-| Texte (nom, fournisseur, commande) | `filename=invoice` | **commence par** |
+| Texte (nom, fournisseur, commande d'achat) | `filename=invoice` | **commence par** |
 | Texte, n'importe où | `filename:invoice` | **contient** |
 | Texte, début *ou* fin | `filename="invoice"` | **commence ou finit par** |
 | Statut / type / correspondance PO (listes fixes) | `status=finished` | **exact** |
-| Identifiants (n° facture, id fournisseur) | `invoice_number=INV-100` | **exact** |
+| Identifiants (numéro de facture, id fournisseur) | `invoice_number=INV-100` | **exact** |
 | Nombre | `total_amount>5000` | plage (`> < >= <= between`) |
 | Date | `created_on>2026-01-01` | plage + `today()±N` |
 
@@ -236,9 +252,9 @@ Toute correspondance de texte ignore la casse.
 
 | Opérateur | Signification |
 |-----------|---------------|
-| `=` | commence-par (texte) / exact (liste, nombre, date) |
+| `=` | commence par (texte) / exact (liste, nombre, date) |
 | `:` | contient (texte, n'importe où) |
-| `="…"` | commence-par ou finit-par (texte) |
+| `="…"` | commence par ou finit par (texte) |
 | `!=` | l'inverse de `=` |
 | `>` `<` `>=` `<=` | supérieur / inférieur à |
 | `between … and …` | plage inclusive |
@@ -247,205 +263,184 @@ Toute correspondance de texte ignore la casse.
 
 ### Connecteurs
 
-Combinez des conditions avec **AND** (les deux), **OR** (l'une), **NOT** et des
-parenthèses `( … )` pour grouper :
+Combinez des conditions avec **AND** (les deux vraies), **OR** (l'une ou l'autre), **NOT** et des parenthèses `( … )` pour grouper :
 
 ```
 status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined-fr.png" alt="Saisie de conditions de statut et de fournisseur reliées par AND."><figcaption><p>Saisie de conditions de statut et de fournisseur reliées par AND.</p></figcaption></figure>
+
 ### Raccourcis
 
-Des formes plus courtes pour les mêmes requêtes :
+Des formulations plus courtes pour les mêmes requêtes — utilisez celle qui vous paraît la plus lisible :
 
-| Raccourci | Équivaut à |
-|-----------|------------|
-| `total_amount gt 5000` | `total_amount>5000` (alias gt/gte/lt/lte) |
-| `due_date > today` | `due_date>today()` |
-| `imported_on this_week` | cette semaine ISO (aussi `last_week`, `this_month`, …) |
-| `ap_assignment_code is empty` | `ap_assignment_code=""` |
-| `status:open` | `status=ready_for_validation` (open/closed/failed/done) |
-| `total_amount not between 100, 200` | `total_amount<100 OR total_amount>200` |
-| `status in (finished, error)` | `status=finished OR status=error` |
-| `not status=finished` | `status!=finished` |
-| `filename contains rechnung` | `filename:rechnung` |
-| `total_amount > 5k` | `total_amount>5000` (`k`=mille, `M`=million) |
-| `overdue` | `invoice_due_date<today() AND status!=finished` |
-| `#INV-1234` | `invoice_id:INV-1234` |
-| `@User` | `assigned_to:User` |
-| `$5000+` | `total_amount>=5000` |
+| Raccourci | Équivaut à | Description |
+|-----------|------------|-------------|
+| `total_amount gt 5000` | `total_amount>5000` | Alias en toutes lettres pour les opérateurs de comparaison (`gt`/`gte`/`lt`/`lte`/`eq`/`ne`) |
+| `due_date > today` | `due_date>today()` | `today` / `yesterday` / `tomorrow` sans parenthèses |
+| `imported_on this_week` | `imported_on>=today()-7 AND imported_on<=today()` | Périodes relatives (`this_week`, `last_week`, `this_month`, …) |
+| `ap_assignment_code is empty` | `ap_assignment_code=""` | Indique si un champ a une valeur quelconque |
+| `status:open` | `status=ready_for_validation` | Libellé de statut simplifié (`open`/`closed`/`failed`/`done`) |
+| `total_amount not between 100, 200` | `total_amount<100 OR total_amount>200` | Valeur hors d'une fenêtre |
+| `status in (finished, error)` | `status=finished OR status=error` | Correspond à n'importe quelle valeur d'une liste |
+| `not status=finished` | `status!=finished` | Nie n'importe quel prédicat |
+| `filename contains rechnung` | `filename:rechnung` | Correspondance de chaîne (`contains`/`starts_with`/`ends_with`) |
+| `total_amount > 5k` | `total_amount>5000` | Suffixe de devise `k` (×1 000), `M` (×1 000 000) |
+| `overdue` | `invoice_due_date<today() AND status!=finished` | Factures impayées après l'échéance |
+| `#INV-1234` | `invoice_id:INV-1234` | Préfixe de type Twitter pour l'ID de facture |
+| `@User` | `assigned_to:User` | Préfixe de type Twitter pour la personne assignée |
+| `$5000+` | `total_amount>=5000` | Préfixe `$` pour les seuils de montant |
 
-### Galerie requête + résultat des raccourcis
+### Exemples de requêtes
 
-Ces exemples montrent chaque modèle de raccourci avec la requête saisie et le résultat affiché dans le tableau de bord. Le premier groupe utilise des champs standard et fonctionne même sans recherche plein texte. Le second groupe utilise des champs réservés au plein texte, comme le montant ou la date d’échéance.
+Les images montrent les requêtes saisies dans l’interface française. Les données des documents sont masquées. Une image de la barre de filtres ne démontre pas un nombre précis de résultats.
 
-#### Fonctionne sans plein texte
-
-##### Alias d’opérateurs
-
-- Requête: `created_on gt 2026-05-25`
-- Équivaut à: `created_on>2026-05-25`
-- Résultat: Filtre sur Created après le 25 mai 2026.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Résultat Quick Search pour created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtre sur Created après le 25 mai 2026.</p></figcaption></figure>
-
-##### Mots de date sans parenthèses
-
-- Requête: `created_on < today`
-- Équivaut à: `created_on<today()`
-- Résultat: Transforme le mot today en today().
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Résultat Quick Search pour created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Transforme le mot today en today().</p></figcaption></figure>
-
-##### Période relative
-
-- Requête: `created_on this_month`
-- Équivaut à: `created_on>=first day of this month AND created_on<=last day of this month`
-- Résultat: Transforme this_month en intervalle de dates.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Résultat Quick Search pour created_on this_month"><figcaption><p><code>created_on this_month</code> - Transforme this_month en intervalle de dates.</p></figcaption></figure>
-
-##### Mots vide/renseigné
-
-- Requête: `assigned_to is empty`
-- Équivaut à: `assigned_to=""`
-- Résultat: Trouve les documents sans assigné.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Résultat Quick Search pour assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Trouve les documents sans assigné.</p></figcaption></figure>
-
-##### Statut lisible
-
-- Requête: `status:open`
-- Équivaut à: `status=ready_for_validation`
-- Résultat: Mappe open au statut de validation.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Résultat Quick Search pour status:open"><figcaption><p><code>status:open</code> - Mappe open au statut de validation.</p></figcaption></figure>
-
-##### Pas entre
-
-- Requête: `created_on not between 2026-06-01, 2026-06-15`
-- Équivaut à: `(created_on<2026-06-01 OR created_on>2026-06-15)`
-- Résultat: Trouve les valeurs hors d’une fenêtre de dates.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Résultat Quick Search pour created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Trouve les valeurs hors d’une fenêtre de dates.</p></figcaption></figure>
-
-##### Liste in
-
-- Requête: `status in (ready_for_validation, exported)`
-- Équivaut à: `status=ready_for_validation OR status=exported`
-- Résultat: Correspond à l’un des statuts listés.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Résultat Quick Search pour status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Correspond à l’un des statuts listés.</p></figcaption></figure>
-
-##### Préfixe de négation
-
-- Requête: `not status=finished`
-- Équivaut à: `status!=finished`
-- Résultat: Inverse le prédicat du statut finished.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Résultat Quick Search pour not status=finished"><figcaption><p><code>not status=finished</code> - Inverse le prédicat du statut finished.</p></figcaption></figure>
-
-##### Texte contient
-
-- Requête: `filename contains E2E`
-- Équivaut à: `filename:E2E`
-- Résultat: Utilise contains comme recherche de sous-chaîne dans le nom de fichier.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Résultat Quick Search pour filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Utilise contains comme recherche de sous-chaîne dans le nom de fichier.</p></figcaption></figure>
-
-##### Préfixe facture
-
-- Requête: `#INV-1234`
-- Équivaut à: `invoice_id:INV-1234`
-- Résultat: Mappe #... à une recherche par ID de facture.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Résultat Quick Search pour #INV-1234"><figcaption><p><code>#INV-1234</code> - Mappe #... à une recherche par ID de facture.</p></figcaption></figure>
-
-##### Préfixe assigné
-
-- Requête: `@Daniel`
-- Équivaut à: `assigned_to:"Daniel"`
-- Résultat: Mappe @... à une recherche par nom d’assigné.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Résultat Quick Search pour @Daniel"><figcaption><p><code>@Daniel</code> - Mappe @... à une recherche par nom d’assigné.</p></figcaption></figure>
-
-#### Requiert la recherche plein texte
-
-Si vous utilisez le même raccourci avec un champ réservé au plein texte, la requête requiert quand même le plein texte. Par exemple, `ap_assignment_code is empty` utilise le même raccourci vide/renseigné que `assigned_to is empty`, mais le champ AP est plein texte.
-
-##### Suffixe de montant
-
-- Requête: `total_amount > 5k`
-- Équivaut à: `total_amount>5000`
-- Résultat: Transforme k en milliers sur un champ de montant.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Résultat Quick Search pour total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Transforme k en milliers sur un champ de montant.</p></figcaption></figure>
-
-##### Raccourci en retard
-
-- Requête: `overdue`
-- Équivaut à: `invoice_due_date<today() AND status!=finished`
-- Résultat: Trouve les factures non terminées après leur échéance.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Résultat Quick Search pour overdue"><figcaption><p><code>overdue</code> - Trouve les factures non terminées après leur échéance.</p></figcaption></figure>
-
-##### Préfixe montant
-
-- Requête: `$5000+`
-- Équivaut à: `total_amount>=5000`
-- Résultat: Mappe $...+ à un seuil de montant.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Résultat Quick Search pour $5000+"><figcaption><p><code>$5000+</code> - Mappe $...+ à un seuil de montant.</p></figcaption></figure>
-
----
-
-## Partie 4 — Modes de recherche avancés
-
-Au-delà de la recherche par champs, trois préfixes recherchent dans le contenu.
-
-### Recherche vectorielle (sémantique) — `vector:`
-
-Correspond par **sens**, pas par texte exact. Nécessite le module Vector.
+#### Opérateur de comparaison écrit
 
 ```
-vector: invoices about office supplies
-vector: shipping delays with Hamburg port
+created_on gt 2026-05-25
 ```
 
-### Recherche texte OCR — `ocr:`
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases-fr.png" alt="Opérateur de comparaison gt dans une requête de date."><figcaption><p>Opérateur de comparaison gt dans une requête de date.</p></figcaption></figure>
 
-Recherche dans le **texte des pages** extrait par l'OCR, pas seulement les
-colonnes.
-
-```
-ocr: Versandkosten
-ocr: "purchase order PO-12345"
-ocr: Hamburg AND doc_type=INVOICE
-```
-
-### Recherche en langage naturel (IA) — `ai:`
-
-Décrivez en langage normal ce que vous cherchez ; l'IA lit votre phrase et
-extrait des filtres (fournisseur, dates, montants) en une requête structurée.
+#### Avant aujourd’hui
 
 ```
-ai: invoices from Ruiz over 1000 last quarter
-ai: overdue invoices waiting on approval
+created_on < today()
 ```
 
----
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date-fr.png" alt="Comparaison de created_on avec today()."><figcaption><p>Comparaison de created_on avec today().</p></figcaption></figure>
+
+#### Depuis une date de création
+
+```
+created_on >= 2026-06-01
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period-fr.png" alt="Saisie d’une date de création à partir du 1er juin 2026."><figcaption><p>Saisie d’une date de création à partir du 1er juin 2026.</p></figcaption></figure>
+
+#### Sans responsable affecté
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence-fr.png" alt="Saisie d’une recherche de documents sans responsable affecté."><figcaption><p>Saisie d’une recherche de documents sans responsable affecté.</p></figcaption></figure>
+
+#### Filtre de statut
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open-fr.png" alt="Exemple de filtre de statut dans la recherche rapide."><figcaption><p>Exemple de filtre de statut dans la recherche rapide.</p></figcaption></figure>
+
+#### En dehors d’une période
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between-fr.png" alt="Saisie d’une recherche hors d’un intervalle de dates."><figcaption><p>Saisie d’une recherche hors d’un intervalle de dates.</p></figcaption></figure>
+
+#### Statuts alternatifs
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list-fr.png" alt="Saisie de deux statuts techniques reliés par OR."><figcaption><p>Saisie de deux statuts techniques reliés par OR.</p></figcaption></figure>
+
+#### Exclure une condition fournisseur
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation-fr.png" alt="Exclusion d’une condition fournisseur avec NOT."><figcaption><p>Exclusion d’une condition fournisseur avec NOT.</p></figcaption></figure>
+
+#### Partie du nom de fichier
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains-fr.png" alt="Recherche d’un terme dans les noms de fichier."><figcaption><p>Recherche d’un terme dans les noms de fichier.</p></figcaption></figure>
+
+#### Requête de numéro de facture
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix-fr.png" alt="Exemple de requête utilisant invoice_number."><figcaption><p>Exemple de requête utilisant invoice_number.</p></figcaption></figure>
+
+#### Affectation vide
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix-fr.png" alt="Saisie d’une affectation vide : assigned_to=&quot;&quot;."><figcaption><p>Saisie d’une affectation vide : assigned_to=&quot;&quot;.</p></figcaption></figure>
+
+#### Requête de devise
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-fr.png" alt="Saisie d’une requête en euros : currency=EUR."><figcaption><p>Saisie d'une requête en euros : monnaie=EUR.</p></figcaption></figure>
+
+#### Échéance antérieure à aujourd’hui
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue-fr.png" alt="Saisie d’une date d’échéance antérieure à today()."><figcaption><p>Saisie d’une date d’échéance antérieure à today().</p></figcaption></figure>
+
+#### Seuil de montant
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix-fr.png" alt="Saisie d’un montant total d’au moins 1000."><figcaption><p>Saisie d’un montant total d’au moins 1000.</p></figcaption></figure>
+
+## Inclure le contenu des documents
+
+Le menu de recherche dans le contenu détermine si la recherche inclut aussi le texte des documents. Ce choix est distinct des préfixes techniques comme `vector:`, `ocr:` ou `ai:`.
+
+### Automatique
+
+Recherche d’abord dans les colonnes visibles. En l’absence de correspondance, inclut le contenu si l’organisation dispose des fonctions nécessaires.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector-fr.png" alt="Inclusion automatique du contenu des documents dans la recherche rapide."><figcaption><p>Inclusion automatique du contenu des documents dans la recherche rapide.</p></figcaption></figure>
+
+### Toujours inclure le contenu
+
+Inclut explicitement le contenu des documents. Les fonctions de recherche correspondantes doivent être disponibles.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr-fr.png" alt="Inclusion systématique du contenu des documents dans la recherche rapide."><figcaption><p>Inclusion systématique du contenu des documents dans la recherche rapide.</p></figcaption></figure>
+
+### Colonnes visibles uniquement
+
+Limite la recherche aux colonnes visibles du tableau de bord.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai-fr.png" alt="Recherche limitée aux colonnes visibles."><figcaption><p>Recherche limitée aux colonnes visibles.</p></figcaption></figure>
 
 ### Recettes
 
 | Vous voulez… | Tapez ceci |
 |--------------|------------|
-| Prêt à valider, totalement rapproché | `status=ready_for_validation AND po_match_status=full_matched` |
+| Prêts à valider, totalement rapprochés | `status=ready_for_validation AND po_match_status=full_matched` |
 | Ce fournisseur, cette semaine | `supplier_name=Test AND created_on>today()-7` |
 | Factures en retard de montant élevé | `total_amount>5000 AND invoice_due_date<today()` |
-| Deux fournisseurs à la fois | `supplier_name=fuji OR supplier_name=acme` |
+| Deux fournisseurs à la fois | `supplier_name=ExampleA OR supplier_name=ExampleB` |
 | Documents en erreur d'aujourd'hui | `(status=error OR status=failed) AND created_on>today()-1` |
-| Par préfixe de numéro de commande | `purchase_order=PO-2026` |
+| Avoirs électroniques | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
+| Par préfixe de commande d'achat | `purchase_order=PO-2026` |
 
-> Les champs orange (plein texte) et les filtres intelligents PO nécessitent la
-> **recherche plein texte** activée.
+> Les champs orange (plein texte) nécessitent que la **recherche plein texte** soit activée pour votre organisation. Un `%` ou un `_` littéral dans une valeur est traité comme un caractère normal.

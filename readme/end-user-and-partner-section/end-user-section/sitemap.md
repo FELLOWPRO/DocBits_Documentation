@@ -21,6 +21,14 @@ Stavke su obojene prema tipu:
 
 Kliknite na bilo koju stavku da skočite direktno na nju. Stavke koje zahtevaju parametar (kao što su tip dokumenta ili ID) uključuju ugrađeni selektor — izaberite vrednost pre nego što kliknete.
 
+## Video zapisi za obuku u listi
+
+Stavke stranica koje imaju video za obuku prikazuju ikonu videa posle naziva — ne samo u Podešavanjima, već u celom katalogu, na primer na kontrolnoj tabli, u validaciji polja ili na stranicama toka rada. Izaberite ikonu da biste pustili video te stranice u panelu **Videos & Tutorials**, bez napuštanja mape sajta. Aplikacija nema srpski prevod, pa su nazivi u snimku na engleskom.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-rs.png" alt="Mapa Sajta sa ikonama videa pored nekoliko stavki i otvorenim panelom Videos & Tutorials na videu o validaciji polja (snimak je na engleskom jer aplikacija nema srpski prevod)"><figcaption><p>Stavke sa videom za obuku imaju ikonu videa; izborom ikone video se otvara u panelu. Snimak je na engleskom jer aplikacija nema srpski prevod.</p></figcaption></figure>
+
+Panel i dalje prikazuje svaki video po temi, pa celu biblioteku možete pregledati i pretražiti i preko ikone u gornjoj traci. Vidi [Video zapisi i uputstva](videos-and-tutorials.md).
+
 ## Pretraga i filteri
 
 Zalepljeno zaglavlje na vrhu sadrži polje za pretragu i filter-pilule. Unesite nekoliko znakova da uživo filtrirate listu po nazivu i opisu. Koristite pilule tipova da suzite na jedan tip stavke — na primer samo **Dijalog**.

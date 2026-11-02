@@ -1,36 +1,38 @@
-# Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)
+# Geval 11b: Hoeveelheidsoverschot en eenheidsprijs buiten tolerantie, beide afgewezen
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
+De hoeveelheid overschrijdt het aanvaardbare bereik (positief) en wordt afgewezen, en de eenheidsprijs valt ook buiten de tolerantie en wordt afgewezen.
 
-## Action:
+## Actie:
 
-The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+Het systeem past de hoeveelheid en de eenheidsprijs aan zodat deze overeenkomen met de goedgekeurde niveaus van de inkooporder, wijst eventuele excessen af en verwerkt de transactie.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $50.00 per unit
+  * Eenheidsprijs: $50.00 per eenheid
   * Total Amount: $10,000.00
 * **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, rejected)
-  * Unit Price: $55.00 per unit (outside tolerance of 10%, rejected)
+  * Aantal: 220 stuks (buiten tolerantie van 10%, afgekeurd)
+  * Eenheidsprijs: $55.00 per eenheid (buiten tolerantie van 10%, afgewezen)
   * Total Amount: $12,100.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerantie per eenheidsprijs: ±2%
 
-Since both the quantity (220 units) and unit price ($55.00) exceed the acceptable tolerance limits and neither has been approved, the system will:
+Aangezien zowel de hoeveelheid (220 eenheden) als de eenheidsprijs ($55.00) de aanvaardbare tolerantielimieten overschrijden en geen van beide is goedgekeurd, zal het systeem:
 
-1. **Reject the Excess Quantity:** The system does not accept the invoiced quantity of 220 units and adjusts it to match the original purchase order.
-   * Adjusted Quantity = 200 units (from PO)
-2. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $55.00 and adjusts it to match the original purchase order.
-   * Adjusted Unit Price = $50.00 per unit (from PO)
-3. **Recalculate the Total Amount:** The system calculates the total amount using the adjusted quantity and unit price:
-   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 200 units × $50.00 per unit = $10,000.00**
-4. **Process the Invoice:** The system processes the invoice with the corrected total amount of $10,000.00, rejecting the excess quantity and higher unit price.
+1. **Weiger de overtollige hoeveelheid:** Het systeem accepteert de gefactureerde hoeveelheid van 220 eenheden niet en past deze aan zodat deze overeenkomt met de oorspronkelijke inkooporder.
+   * Aangepaste hoeveelheid = 200 eenheden (vanaf PO)
+2. **De eenheidsprijs van de factuur afwijzen:** Het systeem accepteert de gefactureerde eenheidsprijs van $55.00 niet en past deze aan zodat deze overeenkomt met de oorspronkelijke inkooporder.
+   * Aangepaste eenheidsprijs = $50.00 per eenheid (vanaf PO)
+3. **Herbereken het totaalbedrag:** Het systeem berekent het totaalbedrag met behulp van de aangepaste hoeveelheid en de eenheidsprijs:
+   * **Gecorrigeerd totaalbedrag = Aangepaste hoeveelheid × Aangepaste eenheidsprijs**
+   * **Gecorrigeerd totaalbedrag = 200 eenheden × $50.00 per eenheid = $10,000.00**
+4. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $10,000.00, waarbij de overtollige hoeveelheid en de hogere eenheidsprijs worden afgewezen.
 
-This approach ensures that the transaction aligns with the original terms of the purchase order, maintaining consistent pricing and quantity controls while rejecting unapproved variances.
+Deze aanpak zorgt ervoor dat de transactie in lijn is met de oorspronkelijke voorwaarden van de inkooporder, waarbij consistente prijs- en hoeveelheidscontroles worden gehandhaafd en niet-goedgekeurde afwijkingen worden afgewezen.

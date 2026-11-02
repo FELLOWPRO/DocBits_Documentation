@@ -1,10 +1,8 @@
 # Maak een ticket aan
 
-Dit is een hulpmiddel dat u ter beschikking staat, op het validatiescherm, wanneer er zich een probleem voordoet bij het valideren van uw document in DocBits. Zie [het validatiescherm](../validation-screen/README.md) voor meer informatie over het controleren van een document.
-
-Deze functie bevindt zich in het menu boven het voorbeeldgedeelte van het document, zoals hieronder
-
-<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-menu-nl-20261009.png" alt="Validatiescherm met de muis op de knop Ticket aanmaken in de rechteractiebalk."><figcaption><p>De knop 'Ticket aanmaken' in de actiebalk van het validatiescherm.</p></figcaption></figure>
+{% embed url="https://youtu.be/fQUIrp-qz9c" %}
+DocBits Tutorial voor ondersteuningstickets: rapporteer bugs, voeg bestanden toe en krijg sneller hulp
+{% endembed %}
 
 Zodra u erop klikt, wordt het volgende ticketformulier aan u getoond.
 

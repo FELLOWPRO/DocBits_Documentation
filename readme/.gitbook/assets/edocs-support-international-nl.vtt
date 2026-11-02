@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.670
+Internationale vermeldingen omvatten
+Peppol BIS 3.0, UBL 2.1, zuivere CII, EDI,
+
+formats_02
+00:00:06.670 --> 00:00:13.090
+INVOIC02, cXML, OCI, BOD en SPS Commerce
+RSX 7.7.4. Toewijzingen voor facturen,
+
+formats_03
+00:00:13.090 --> 00:00:19.510
+orders, antwoorden en verzendberichten
+staan los van elkaar. Bestandsverwerking
+
+formats_04
+00:00:19.510 --> 00:00:25.767
+biedt op zichzelf geen Peppol-toegangspunt
+of verbinding met handelspartners.
+
+workflow_01
+00:00:26.517 --> 00:00:32.171
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:32.171 --> 00:00:37.593
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:37.593 --> 00:00:39.067
+activeert het niet.
+
+accept_01
+00:00:39.817 --> 00:00:45.506
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:45.506 --> 00:00:50.788
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:50.788 --> 00:00:54.167
+fiscale goedkeuring of aflevering via een
+netwerk.
+

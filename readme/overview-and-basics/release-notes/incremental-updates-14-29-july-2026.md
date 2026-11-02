@@ -17,7 +17,7 @@ wijzigingen die zichtbaar zijn voor klanten._
   vertrouwd apparaat kan de tweede factor een tijdlang worden overgeslagen.
   Elke gebruiker kan 2FA voor zichzelf inschakelen; beheerders kunnen het voor
   de hele organisatie verplicht stellen. Zie de
-  [handleiding Twee-factor-authenticatie](../two-factor-authentication.md).
+  [handleiding Twee-factor-authenticatie](../../security/two-factor-authentication.md).
 - **Supporttickets vanuit het foutscherm.** Als er iets misgaat, kunt u nu
   rechtstreeks vanuit de foutmelding een supportticket openen. Het ticket
   bevat de technische context al, zodat u die niet zelf hoeft te beschrijven.

@@ -1,11 +1,13 @@
-# Kaart beschrijving
+# Kaartbeschrijving
 
-## **Wanneer Kaarten: Document type**
+## **Wanneer-kaarten: Document type**
 
-Een workflow kan worden gestart met deze twee kaarten. Hier kunt u beslissen met welk documenttype de workflow begint of dat het geen invloed moet hebben op geselecteerde documenttypen.
+Met deze twee kaarten kan een workflow worden gestart. Hier kunt u bepalen met welk documenttype de workflow begint of dat de workflow geselecteerde documenttypen niet mag beïnvloeden.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FiIZr88WhSUuQOapVf26m%252Fimage.png%3Falt%3Dmedia%26token%3Dd8663cac-f96f-4846-b162-eee36783d641\&width=768\&dpr=4\&quality=100\&sign=b41876a9\&sv=2)
+\\
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FEhK3CvWgc8csG21vmgUb%252Fimage.png%3Falt%3Dmedia%26token%3D6613e890-02ff-4f76-8ba7-5a5201480ede\&width=768\&dpr=4\&quality=100\&sign=89683411\&sv=2)
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-d369b96a80e0-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
-Deze kaart kan ook worden gebruikt om meerdere documenttypen te specificeren die de workflow moet beïnvloeden.
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-da4216631693-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+
+Deze kaart kan ook worden gebruikt om meerdere documenttypen op te geven waarop de workflow van toepassing moet zijn.

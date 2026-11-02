@@ -1,0 +1,18 @@
+[
+  {
+    "case": "S034",
+    "source_capture_id": "U044",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u044-pl.png",
+    "caption": "Dostęp do dodatkowych ustawień typu dokumentu Faktura."
+  },
+  {
+    "case": "S034",
+    "source_capture_id": "U045",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u045-pl.png",
+    "caption": "Ustawienia statusów wykorzystanych wierszy zamówienia."
+  }
+]

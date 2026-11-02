@@ -1,82 +1,47 @@
 # Nawigacja w Menedżerze Układów
 
-## Możliwość nawigacji w Menedżerze Układów w DocBits oraz edytowania grup i pól jest kluczowa dla kontrolowania struktury i wyglądu dokumentów.
+Użyj **Menedżera układów**, aby porządkować grupy i pola, które użytkownicy widzą na dokumencie. Zrzuty ekranu w tym artykule pokazują polski interfejs na przykładzie układu faktury.
 
-## Oto kroki, aby używać Menedżera Układów i edytować grupy oraz pola:
+## Otwieranie układu faktury
 
-## Nawigacja w Menedżerze Układów:
+1. Przejdź do **Ustawienia → Typy dokumentów**.
+2. Znajdź kartę **Faktura** i wybierz pod jej nazwą **Układy**. Menedżer układów otworzy się dla tego typu dokumentu.
+3. W nagłówku zobaczysz nazwę układu (zmienisz ją ikoną ołówka), **Typ dokumentu** i **Typ układu**. Przez **Typ układu** przełączysz się na inny układ tego samego typu dokumentu.
 
-#### Otwieranie Menedżera Układów:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-pl.png" alt="Lista typów dokumentów z kartą Faktura i linkiem Układy"><figcaption><p>Otwórz <strong>Układy</strong> na karcie Faktura.</p></figcaption></figure>
 
-* Zaloguj się do DocBits i przejdź do obszaru, w którym chcesz używać Menedżera Układów.
-* Możesz znaleźć tę opcję w "Zarządzaj Typami Dokumentów".
+## Praca z trzema kartami panelu
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FeebqP176qG5bOQ6YLJDX%252FBildschirmfoto%25202024-05-23%2520um%252013.35.39.png%3Falt%3Dmedia%26token%3D6aa09cc2-2df5-4495-aefe-36dec3123b51\&width=768\&dpr=4\&quality=100\&sign=82c501bb\&sv=2)
+Panel po lewej stronie ma trzy karty: **Struktura**, **Pola** i **Elementy**. Menedżer układów otwiera się na karcie **Pola**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5z8cVvWqARCkXx4AER4B%252FBildschirmfoto%25202024-05-24%2520um%252010.12.05.png%3Falt%3Dmedia%26token%3De0f8301a-9aaa-4e4a-9568-a2c372355538\&width=768\&dpr=4\&quality=100\&sign=66865b41\&sv=2)
+**Struktura** pokazuje układ jako drzewo, w tej samej kolejności, w jakiej grupy i pola występują w dokumencie. Rozwiń grupę strzałką, aby zobaczyć jej pola; nazwę techniczną pola pokazuje panel **Właściwości**. Pole wyszukiwania filtruje drzewo, a zaznaczenie wiersza zaznacza ten sam element na obszarze roboczym.
 
-Wybieranie Typu Dokumentu:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-pl.png" alt="Menedżer układów z otwartą kartą Struktura: rozwinięte drzewo grup z zaznaczonym polem ID dostawcy, układ faktury na obszarze roboczym i panel Właściwości po prawej"><figcaption><p>Drzewo Struktury, obszar roboczy i panel Właściwości.</p></figcaption></figure>
 
-* Wybierz typ dokumentu, który chcesz edytować.
-* Menedżer Układów wyświetli strukturę tego typu dokumentu.
+**Pola** lista wszystkie pola oferowane przez typ dokumentu, pogrupowane według jego grup. Licznik obok nazwy grupy pokazuje, ile jej pól jest już umieszczonych w układzie, na przykład **4/14**. Trzy przyciski pod polem wyszukiwania to same ikony: przełączają listę między wszystkimi polami, tylko polami jeszcze nieumieszczonymi i tylko polami ukrytymi. Każdy wiersz pokazuje etykietę pola, a zielony znacznik po prawej oznacza pola, które są już w układzie; umieszczone pola są wyszarzone.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-overview-2026.png" alt=""><figcaption><p>Layout Builder Invoice</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-pl.png" alt="Karta Pola z trzema przyciskami filtrowania pod polem wyszukiwania, rozwiniętą grupą Szczegóły faktury z licznikiem 4/14 i polami już umieszczonymi w układzie (wyszarzone, ze znacznikiem)"><figcaption><p>Filtruj pola i rozpoznawaj umieszczone pola po znaczniku.</p></figcaption></figure>
 
-Nawigacja w Grupach i Polach:
+**Elementy** zawiera bloki, które przeciągasz na obszar roboczy: **Grupy** z grupami tego układu oraz **Elementy formularza** z pozycjami Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields i Sub Group.
 
-* W Menedżerze Układów zobaczysz strukturę drzewa, która reprezentuje grupy i pola wybranego typu dokumentu.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-pl.png" alt="Karta Elementy z sekcją Grupy, w której wymieniono grupy tego układu, oraz sekcją Elementy formularza z dostępnymi blokami"><figcaption><p>Palety Grupy i Elementy formularza.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjtiMNhQqN859bxtLsoth%252Fimage.png%3Falt%3Dmedia%26token%3Dc3224b66-3f2a-4aa2-81ee-6cde5719cf3f\&width=768\&dpr=4\&quality=100\&sign=57e2b59\&sv=2)
+## Umieszczanie i porządkowanie elementów
 
-* Możesz nawigować przez tę strukturę, aby edytować obszary, które chcesz.
+- Przeciągnij pole z karty **Pola** albo element z karty **Elementy** do grupy, w której ma się pojawić. Pola już umieszczone mają na karcie **Pola** znacznik.
+- Przeciągnij pole w obrębie grupy lub między grupami, aby zmienić kolejność.
+- **+** nad obszarem roboczym dodaje pustą grupę; ikona JSON obok tworzy grupę z definicji JSON.
+- W nagłówku grupy możesz zmienić jej nazwę w polu **Tytuł grupy**, skopiować jej JSON, przesunąć grupę w dół lub w górę albo ją usunąć. Uchwyt po prawej stronie nagłówka przesuwa całą grupę.
+- Zaznacz pole na obszarze roboczym, aby otworzyć jego właściwości po prawej. Mały pasek narzędzi pod zaznaczonym polem usuwa je z układu.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5UpYc7uZEQzEt2LEFHzo%252Fimage.png%3Falt%3Dmedia%26token%3D4203ac3a-5487-4bfc-8aa8-4c35fe70b14a\&width=768\&dpr=4\&quality=100\&sign=adc50420\&sv=2)
+## Panel Właściwości
 
-#### Edycja grup i pól:
+Panel **Właściwości** po prawej jest zawsze otwarty i podąża za zaznaczonym elementem. Jego ustawienia są podzielone na cztery sekcje: **Wyświetlanie**, **Zachowanie**, **Wartości i listy** oraz **Automatyzacja**. W sekcji **Wyświetlanie** znajdziesz etykietę, typ pola i **Szerokość elementu w procentach**, wybieraną z wartości 25, 33, 50, 66, 75 i 100. Poszczególne opcje opisuje strona [Konfigurowanie właściwości pól](configuring-field-properties.md).
 
-<mark style="color:red;">**Uwaga:**</mark> **gdy tytuł pola zostanie zmieniony, musisz usunąć i ponownie dodać pole w kreatorze układów, aby zmiany mogły wejść w życie.**
+Ustawienia walidacji, OCR i dopasowywania należą do samego pola, a nie do układu: skonfigurujesz je w osobnych [ustawieniach pól](../fields/configuring-field-properties-1.md).
 
+## Podgląd i zapisywanie
 
+Obszar roboczy pokazuje układ tak, jak będzie wyglądał w dokumencie. Kartami **Główny układ** i **Tabela** przełączasz się między stroną a tabelą pozycji, a **Dokument** otwiera przykładowy dokument obok obszaru roboczego. Zobacz [Korzystanie z podglądu szablonu](using-the-template-preview.md).
 
-Dodawanie grupy lub pola:
-
-* Kliknij przycisk "Utwórz nową grupę", w zależności od tego, czy chcesz dodać nową grupę, czy pole.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FF9Soj6uDKKyYb8ciweHp%252FBildschirmfoto%25202024-05-24%2520um%252010.23.27.png%3Falt%3Dmedia%26token%3D797e975a-470b-4a0d-b1f1-a82b8aeb7267\&width=768\&dpr=4\&quality=100\&sign=d2e200b6\&sv=2)
-
-* Wprowadź nazwę nowej grupy lub pola i wybierz dowolne ustawienia, które chcesz, takie jak typ pola (tekst, liczba, data itp.).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7qcF5LK6yxbcRVm57Ejz%252Fimage.png%3Falt%3Dmedia%26token%3Dec75cf2f-a834-4eb3-89c3-75a6fc70c88c\&width=768\&dpr=4\&quality=100\&sign=e93f7652\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSM5IXOG5XYfGo3ee1xzP%252Fimage.png%3Falt%3Dmedia%26token%3D57a737f0-240c-4c23-9d4a-b92e86a92b47\&width=768\&dpr=4\&quality=100\&sign=456cdcec\&sv=2)
-
-Usuwanie grupy lub pola:
-
-* Wybierz grupę lub pole, które chcesz usunąć.
-* Kliknij przycisk "Usuń" lub użyj odpowiedniego skrótu klawiaturowego (zwykle "Delete" lub "Del").
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FQQjFkNb0ONiiklAQmBRU%252FBildschirmfoto%25202024-05-24%2520um%252010.35.24.png%3Falt%3Dmedia%26token%3D2fb8d92a-c5c9-449b-8179-786765ada10f\&width=768\&dpr=4\&quality=100\&sign=1ac2e12c\&sv=2)
-
-
-
-Modyfikowanie grupy lub pola:
-
-* Kliknij dwukrotnie grupę lub pole, które chcesz zmienić.
-* Zmień dowolne właściwości, które chcesz, takie jak nazwa, pozycja, rozmiar lub ustawienia typu pola.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FtdvSPyCEdIfj8j30DEe5%252Fimage.png%3Falt%3Dmedia%26token%3Dfaa32e5a-3492-499d-a0af-7fa99a583d09\&width=768\&dpr=4\&quality=100\&sign=865f9003\&sv=2)
-
-Układ grup i pól:
-
-* Przeciągnij i upuść grupy lub pola, aby zmienić ich kolejność lub umieścić je wewnątrz lub na zewnątrz innych grup.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fun2twvKa1n8VJrBZzjl3%252FBildschirmfoto%25202024-05-24%2520um%252010.45.28.png%3Falt%3Dmedia%26token%3Dc090597f-b693-4308-b0ac-badec6bec466\&width=768\&dpr=4\&quality=100\&sign=af0174ad\&sv=2)
-
-Zapisywanie zmian:
-
-* Nie zapomnij zapisać swoich zmian przed opuszczeniem Menedżera Układów.
-* Kliknij przycisk "Zapisz".
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fu9c6MD2mZFuAsXp7n9Ai%252FBildschirmfoto%25202024-05-24%2520um%252010.51.06.png%3Falt%3Dmedia%26token%3D613ef982-9455-4832-b2a5-5644e3bd644c\&width=768\&dpr=4\&quality=100\&sign=fb7f99d5\&sv=2)
-
-Postępując zgodnie z tymi krokami, możesz skutecznie nawigować w Menedżerze Układów DocBits i edytować grupy oraz pola w obrębie typu dokumentu. Pozwala to dostosować strukturę i wygląd dokumentów zgodnie z Twoimi potrzebami.
+Na koniec wybierz **Zapisz** w nagłówku. Pozostałe działania nagłówka – między innymi generowanie szablonu, szablony domyślne i stosowanie układu do pochodzeń – opisuje strona [Zapisywanie i stosowanie zmian](save-and-apply-changes.md).

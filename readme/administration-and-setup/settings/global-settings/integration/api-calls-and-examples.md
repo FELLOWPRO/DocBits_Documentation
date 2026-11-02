@@ -7,7 +7,7 @@
 1. Poproś administratora organizacji o dostęp i [utwórz klucz API](api-key-management.md) dla integracji. Przechowuj klucz w sejfie na sekrety; nie umieszczaj go w zrzucie ekranu, dokumencie ani pliku źródłowym.
 2. Otwórz [bieżącą referencję Sandbox API](https://sandbox.api.docbits.com/docs). Znajdziesz w niej dostępne operacje, wymagane wartości i przykładowe odpowiedzi dla tego środowiska. Po opuszczeniu Sandbox korzystaj z referencji właściwej dla Twojego środowiska.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-385-api-key-context-pl.png" alt="Sekcja Klucz API w polskim interfejsie DocBits z przyciskiem Utwórz klucz API; wartość klucza nie jest widoczna"><figcaption><p>Klucze API znajdziesz w Ustawienia → Integracja i SSO. Obraz nie zawiera wartości klucza.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-20-api-key-context-pl-20261031.png" alt="Polski interfejs DocBits: sekcja Klucze API i przycisk Utwórz klucz API; wartości kluczy nie są widoczne"><figcaption><p>Aktualny widok obszaru kluczy API w środowisku Dev. Nie zawiera wartości kluczy ani wierszy danych.</p></figcaption></figure>
 
 ## Przykład: odczyt typów dokumentów
 
@@ -17,7 +17,7 @@ Ustaw swój klucz API jako lokalną zmienną środowiskową, a następnie wyśli
 
 ```sh
 curl --fail-with-body \
-  -H "X-API-KEY: ${DOCB...EY}" \
+  -H "X-API-KEY: ${DOCBITS_API_KEY}" \
   "https://sandbox.api.docbits.com/sandbox-api/document_type/get_document_types"
 ```
 

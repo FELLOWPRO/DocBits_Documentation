@@ -1,150 +1,54 @@
-# Tagowanie tabeli AI
+# Tagowanie tabeli AI i instrukcje
 
-### Instrukcje krok po kroku, jak dodać tagi do tabeli:
+Tagi to sposób, w jaki mówisz AI, co ma zrobić z tabelą. W karcie **Instrukcje dla sztucznej inteligencji** pod tabelą AI (patrz [Tabela AI](README.md)) podajesz dwa rodzaje tagów:
 
-**Krok 1:** Wybierz nazwy kolumn (tagi)
+| Rodzaj | Gdzie go wpisujesz | Co AI z nim robi |
+| --- | --- | --- |
+| **Instrukcja** | **Prompt dla sztucznej inteligencji**, jedna instrukcja w wierszu | Stosuje ją podczas odczytu tabeli, na przykład jak obliczać lub jakiego sformułowania użyć. |
+| **Kolumna** | **Dodatkowe kolumny dla sztucznej inteligencji** | Musi zwrócić tę kolumnę oprócz zwykłych, nawet jeśli dokument nie oznacza jej wyraźnie. |
 
-* **Wybierz nazwy kolumn:** Przejrzyj nazwy kolumn w swojej tabeli i zdecyduj, które tagi dodać.
+Oba rodzaje są zapisywane razem jako tagi AI dostawcy, gdy wybierzesz **Zapisz jako szkolenie**.
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-prompt-filled-pl.png" alt="Wiersz promptu wpisany w kartę Instrukcje dla sztucznej inteligencji"><figcaption><p>Jedna instrukcja w wierszu w polu <strong>Prompt dla sztucznej inteligencji</strong>.</p></figcaption></figure>
 
-**Krok 2:** Naciśnij przycisk "Zastosuj"
+## Dodawanie tagów krok po kroku
 
-* **Naciśnij przycisk:** Po wybraniu odpowiedniego tagu dla kolumny, naciśnij przycisk "Zastosuj" obok wybranej kolumny i tagu.
+1. Otwórz dokument na ekranie walidacji i pozostań w zakładce **Wyodrębniona tabela AI**.
+2. W polu **Prompt dla sztucznej inteligencji** napisz, co AI ma zrobić, po jednej instrukcji w wierszu. Wpisz **@**, aby wstawić kolumnę z Twojej konfiguracji.
+3. Albo otwórz **Dodatkowe kolumny dla sztucznej inteligencji** i wybierz kolumny, które AI musi zwrócić.
+4. Nie wiesz, co napisać? Kliknij **Zasugeruj za pomocą Nexus** i użyj **Wstaw** lub **Dodaj kolumnę** przy sugestii.
+5. Kliknij **Zmiana testu**, aby porównać wynik z bieżącą tabelą. Nic nie jest jeszcze zapisywane.
+6. Wynik jest dobry? Kliknij **Stosować** (albo **Zastosuj wynik do tego dokumentu** w oknie testu), aby umieścić wynik w tym dokumencie.
+7. Jeśli potrzebuje tego każdy dokument tego dostawcy, kliknij **Zapisz jako szkolenie**. **Usuwać** usuwa zapisane tagi i reguły układu dostawcy.
 
-**Krok 3:** Dodaj tag do tabeli
+{% hint style="info" %}
+Każdy wiersz w polu **Prompt dla sztucznej inteligencji** jest instrukcją, nawet pojedyncze słowo (DocBits dodaje kropkę, aby AI nie pomyliła go z nazwą kolumny). Kolumny należą do pola **Dodatkowe kolumny dla sztucznej inteligencji**.
+{% endhint %}
 
-* **Dodaj tag:** Wybrany tag zostanie dodany do tabeli jako dodatkowa kolumna obok odpowiedniej kolumny.
+## Pisanie dobrych instrukcji
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags2.png" alt=""><figcaption></figcaption></figure>
+* **Podaj kolumnę i sformułowanie z dokumentu.** *Wypełnij kolumnę Kwota rabatu na podstawie kolumny o nazwie „Rabatt”.* działa lepiej niż *znajdź rabat*.
+* **Jedna rzecz na wiersz.** Krótkie wiersze łatwiej testować i usuwać.
+* **Opisuj obliczenia prosto.** *Cena jednostkowa to kwota netto podzielona przez ilość.*
+* **Powiedz, czego nie ruszać.** *Zignoruj wiersze z kosztami wysyłki na dole tabeli.*
+* **Sprawdź całą tabelę.** Zmieniony prompt ponownie uruchamia AI i może zmienić każdą kolumnę.
+* **Nie powtarzaj tego, co już wiadomo.** Tag kolumny, który powiela inny tag lub jest równy polu nagłówka, jest ignorowany.
 
-**Krok 4:** Zapisz lub usuń tag
+## Przykłady
 
-* **Zapisz tag:** Naciśnij przycisk Zapisz, aby zapisać wybrany tag
-* **Usuń tag:** Aby usunąć wybrany tag, naciśnij przycisk Usuń
+| Problem | Tag |
+| --- | --- |
+| Kolumna rabatu pozostaje pusta | Dodatkowa kolumna **Kwota rabatu** oraz instrukcja *Wypełnij kolumnę Kwota rabatu na podstawie kolumny o nazwie „Rabatt”.* |
+| Ilość i jednostka są w jednej komórce | *Wpisz liczbę do kolumny Ilość, a jednostkę miary do kolumny Jednostka.* |
+| Cena jednostkowa nie jest wydrukowana | *Cena jednostkowa to kwota netto podzielona przez ilość.* |
+| Daty muszą być w formacie ISO | *Zapisz wszystkie daty w formacie RRRR-MM-DD.* |
+| Kwoty w obcej walucie | *Zaokrąglij wszystkie kwoty do dwóch miejsc po przecinku.* |
 
-### Oto szczegółowe wyjaśnienie każdej kolumny i możliwych tagów:
+Kolumny, które możesz wybrać, to kolumny tabeli skonfigurowane dla typu dokumentu, patrz [Kolumny tabeli](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md).
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags3.png" alt="" width="375"><figcaption></figcaption></figure>
+## Przed zapisem
 
-### **Pozycja:**
-
-**Opis:** Pozycja lub kolejność przedmiotu w zamówieniu.
-
-**Tag:** Liczba całkowita
-
-**Przykład:** 1, 2, 3...
-
-### **Opis:**
-
-**Opis:** Krótki opis przedmiotu.
-
-**Tag:** Tekst
-
-**Przykład:** Śruba, Nakrętka, Widget...
-
-### Zamówienie zakupu:
-
-**Opis:** Numer powiązanego zamówienia.
-
-**Tag:** Alfanumeryczny
-
-**Przykład:** PO12345, PO98765...
-
-### Ilość:
-
-**Opis:** Liczba zamówionych jednostek.
-
-**Tag:** Liczba
-
-**Przykład:** 100, 50, 200...
-
-### Jednostka:
-
-**Opis:** Jednostka miary (np. sztuka, kilogram).
-
-**Tag:** Tekst
-
-**Przykład:** Szt., kg, l...
-
-### Cena jednostkowa:
-
-**Opis:** Cena za jednostkę przedmiotu.
-
-**Tag:** Waluta
-
-**Przykład:** €10.00, €5.50, €100.00...
-
-### Kwota netto:
-
-**Opis:** Całkowita cena przed odliczeniami i podatkami (obliczana jako ilość \* cena jednostkowa).
-
-**Tag:** Waluta
-
-**Przykład:** €1,000.00, €275.00, €10,000.00...
-
-### Rabat:
-
-**Opis:** Kwota rabatu stosowana do kwoty netto.
-
-**Tag:** Waluta
-
-**Przykład:** €50.00, €20.00, €500.00...
-
-### Procent rabatu:
-
-**Opis:** Procent rabatu stosowany do kwoty netto.
-
-**Tag:** Procent
-
-**Przykład:** 5%, 10%, 15%...
-
-### VAT:
-
-**Opis:** Kwota VAT stosowana do przedmiotu.
-
-**Tag:** Waluta
-
-**Przykład:** €200.00, €55.00, €1,900.00...
-
-### Kwota całkowita:
-
-**Opis**: Ostateczna kwota po odliczeniu rabatu i dodaniu VAT.
-
-**Tag:** Waluta
-
-**Przykład:** €1,150.00, €310.00, €11,400.00...
-
-### Kraj pochodzenia:
-
-**Opis:** Kraj, w którym przedmiot został wyprodukowany lub wysłany.
-
-**Tag:** Tekst
-
-**Przykład:** USA, Niemcy, Chiny...
-
-### Numer przedmiotu:
-
-**Opis:** Unikalny identyfikator lub SKU dla przedmiotu.
-
-**Tag:** Alfanumeryczny
-
-**Przykład:** 987654, A12345, Z98765...
-
-### Numer dokumentu dostawy:
-
-**Opis:** Numer powiązanego dokumentu dostawy.
-
-**Tag:** Alfanumeryczny
-
-**Przykład:** DN56789, DN12345...
-
-### Zdanie (dodatkowe informacje):
-
-**Opis:** Dodatkowe uwagi, kody lub istotne informacje.
-
-**Tag:** Tekst
-
-**Przykład:** Komentarz, Specyfikacja...
-
-Dzięki tej strukturze i tagom tabela jest bardziej klarownie zdefiniowana, a informacje mogą być lepiej kategoryzowane i przetwarzane.
+* Najpierw **Zmiana testu**. Nigdy niczego nie zapisuje.
+* **Zapisz jako szkolenie** dotyczy układu dostawcy, więc kolejne dokumenty są odczytywane z Twoimi tagami. Sprawdź przy następnym dokumencie, czy chip pokazuje **Szkolenie zastosowane**.
+* Jeśli włączone jest **Zapisz zasady ekstrakcji (tylko administrator)**, poproś o zapis administratora organizacji.
+* Tagi zmieniają sposób, w jaki AI odczytuje tabelę. Dla stabilnych pozycji kolumn powtarzalnego układu [wytrenuj tabelę](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).

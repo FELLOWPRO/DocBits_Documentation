@@ -4,6 +4,12 @@ description: Obsługa chińskich dokumentów elektronicznych China Fapiao (FAPIA
 
 # 🇨🇳 China Fapiao
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Chiny](countries/china.md). Udokumentowany adapter używa przestrzeni nazw XML urn:china:tax:fapiao:1.0. Nie zakładaj, że każdy natywny plik OFD, PDF lub eksport z platformy podatkowej jest zgodny z tym kontraktem danych.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj / Region** | China |
@@ -12,7 +18,7 @@ description: Obsługa chińskich dokumentów elektronicznych China Fapiao (FAPIA
 | **Standard** | Fapiao (发票), State Taxation Administration |
 | **Ustawienia regionalne** | `zh_CN` |
 
-Fapiao (发票) to chiński standard faktury podatkowej wydawany pod nadzorem Państwowej Administracji Podatkowej (STA / 国家税务总局). Wszystkie dokumenty Fapiao używają przestrzeni nazw `urn:china:tax:fapiao:1.0`. DocBits automatycznie wykrywa typ Fapiao za pomocą elementu `fapiao_type` i kieruje go do odpowiednich reguł ekstrakcji:
+Katalog obejmuje Fapiao, E-Fapiao, General VAT Invoice i Special VAT Invoice. Udokumentowany adapter używa przestrzeni nazw XML urn:china:tax:fapiao:1.0. Nie zakładaj, że każdy natywny plik OFD, PDF lub eksport z platformy podatkowej jest zgodny z tym kontraktem danych.
 
 | Wartość fapiao_type | Typ dokumentu |
 |-------------------|--------------|
@@ -30,7 +36,7 @@ Fapiao (发票) to chiński standard faktury podatkowej wydawany pod nadzorem Pa
 
 ## Domyślny podgląd
 
-<figure><img src="china-fapiao-preview.png" alt="Podgląd chińskiej ogólnej faktury VAT Fapiao w DocBits"><figcaption><p>Domyślny podgląd DocBits dla chińskiej ogólnej faktury VAT Fapiao (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="Podgląd chińskiej ogólnej faktury VAT Fapiao w DocBits"><figcaption><p>Domyślny podgląd DocBits dla chińskiej ogólnej faktury VAT Fapiao (普通发票)</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -83,5 +89,5 @@ Elementem głównym jest `<fapiao>` z przestrzenią nazw `urn:china:tax:fapiao:1
 
 ## Powiązane
 
-- [Aktualnie obsługiwane standardy e-faktur](../../currently-supported-e-invoice-standards/)
+- [Aktualnie obsługiwane standardy e-faktur](../currently-supported-e-invoice-standards/README.md)
 - [Obsługiwane dokumenty elektroniczne](./)

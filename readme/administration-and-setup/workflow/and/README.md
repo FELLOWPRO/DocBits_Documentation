@@ -1,68 +1,63 @@
----
-description: Konfiguracja warunków I w przepływach pracy DocBits
----
+# I
 
-# And
+Użyj karty **I**, aby zdecydować, czy przepływ pracy powinien być kontynuowany po wyzwoleniu **Kiedy**. Dodaj potrzebne kontrole przed akcją **Wtedy**. Na każdej karcie znajdują się pola do wypełnienia, takie jak **Operatora**, **Nazwa pola** lub **Wartość**; zrzuty ekranu pokazują dostępne szablony kart, a nie gotowe zasady.
 
-## Zrozumienie kart "And"
+W **Kreatorze przepływu pracy** wybierz **Dodaj kartę** w obszarze **I...**. Wybierz kategorię po lewej stronie lub wpisz nazwę karty w polu **Wyszukaj kartę**. Wybierz podgląd karty, aby dodać ją do przepływu pracy. Możesz przewijać listę podglądu, aby zobaczyć więcej kart. Użyj **×**, aby zamknąć selektor bez wybierania kolejnej karty. Po skonfigurowaniu kart zapisz przepływ pracy. Zobacz [Workflow](..), aby zapoznać się z otaczającymi krokami **Kiedy**, **I** i **Wtedy**.
 
-### **Cel kart "And":**
+## Porównaj z zamówieniem zakupu
 
-* Karty **And** pełnią funkcję kart warunków, które określają kryteria, jakie muszą zostać spełnione, aby przepływ pracy mógł być kontynuowany. Działają one efektywnie jako logiczne operatory "AND", co oznacza, że wszystkie warunki określone na tych kartach muszą być spełnione, aby kolejna akcja została wyzwolona.
+Użyj tych kart, aby porównać dane zamówienia lub faktury z zamówieniem zakupu, takie jak cena jednostkowa, obiecany termin dostawy, opłaty lub ilość. Wybierz pola, operator i tolerancję, o jaką prosi wybrana karta. Aby poznać poszczególne karty, zobacz [Porównaj z zamówieniem](compare-with-purchase-order).
 
-#### Kategorie kart "And"
+<figure><img src="../../../.gitbook/assets/prior-u035-pl.png" alt="Warunki porównania z zamówieniem zakupu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki porównania z zamówieniem zakupu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-Na podstawie zrzutów ekranu widać, że karty te obejmują szeroki zakres warunków, które obejmują:
+## Pole dokumentu
 
-* **Compare with Purchase Order**:
-  * Warunki związane z walidacją i porównaniem z zamówieniami zakupu, takie jak porównywanie dat dostawy, cen jednostkowych lub różnic w ilości. Są one kluczowe dla zapewnienia zgodności transakcji z uzgodnionymi warunkami.
+Wybierz tę kategorię, aby sprawdzić pole wyboru lub stan pola, porównać pole z wartością lub porównać dwa pola. Wypełnij symbole zastępcze **Nazwa pola** i **Operatora** na wybranej karcie. Niektóre porównania wymagają również tolerancji. Zobacz [Pole dokumentu](document-field).
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u036-pl.png" alt="Warunki pól dokumentu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki pól dokumentu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-* **Document Field**:
-  * Dotyczą one warunków opartych na określonych polach w dokumentach, takich jak zaznaczone pola wyboru, porównanie wartości pól lub sprawdzanie, czy pole dokumentu mieści się w określonej tolerancji. Jest to szczególnie ważne dla integralności danych oraz automatycznych kontroli w formularzach lub systemach zarządzania dokumentami.
+## Data i godzina
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Użyj **Data i godzina**, aby porównać datę lub godzinę z zakresem, lub porównaj **Dzisiaj** z wybraną datą. Wybierz **Operatora** i wartości daty na karcie. Zobacz [Data i godzina](date-and-time).
 
-* **Date & Time:**
-  * Warunki oparte na datach i godzinach
+<figure><img src="../../../.gitbook/assets/prior-u037-pl.png" alt="Warunki daty i czasu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki daty i czasu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Dokument
 
-* **Document**:
-  * Warunki oparte na cechach dokumentu, takich jak typ lub powiązanie z określoną sub-organizacją. Warunki te mogą kierować przepływami pracy na podstawie kategoryzacji dokumentu lub zaangażowania działu.
+Użyj tych kart, gdy przepływ pracy powinien zależeć od **typu dokumentu** lub **podorganizacji**. Wybierz typ lub organizację wymienioną na karcie. Zobacz [Dokument](document).
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u038-pl.png" alt="Warunki dokumentu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki dokumentu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-* **Logic**:
-  * Warunki logiczne, które mogą obejmować oceny typu "Continue with a chance of X%" lub wykonywanie żądań HTTPS, kluczowe dla integracji oraz podejmowania decyzji probabilistycznych w ramach przepływów pracy.
+## Logika
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Ta kategoria obejmuje kontrole z wykorzystaniem tabeli decyzyjnej, odpowiedzi HTTPS, dostępności modułu, podanej ceny przedmiotu, wartości przypadkowej lub dwóch wartości. Otwórz konkretną kartę i wypełnij jej nazwane symbole zastępcze; na przykład karta HTTPS prosi o adres URL, metodę i zaakceptowany kod stanu. Zobacz [Logika](logic).
 
-* **Status**:
-  * Skupiając się na statusie dokumentów lub zadań, warunki te zapewniają, że tylko elementy w określonych stanach wyzwalają konkretne przepływy pracy, co jest kluczowe dla zarządzania procesami opartego na statusie.
+<figure><img src="../../../.gitbook/assets/prior-u039-pl.png" alt="Warunki logiczne. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki logiczne. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Stan
 
-* **Table**:
-  * Dotyczą one warunków opartych na danych tabelarycznych, takich jak dopasowywanie wzorców regex lub porównywanie wartości w tabeli. Takie warunki są niezbędne do walidacji i manipulacji dużymi zbiorami danych.
+Użyj **Stan**, aby sprawdzić, czy dokument ma wybrany status lub czy jego status znajduje się w wybranym zestawie. Wybierz **Operatora** i **Stan** na karcie. Zobacz [Status](status).
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u040-pl.png" alt="Warunki statusu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki statusu. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-* **Assignee**:
-  * Warunki oparte na osobach przypisanych do zadania lub dokumentu. Zapewnia to, że akcje są podejmowane tylko wtedy, gdy zaangażowani są określeni użytkownicy, co zwiększa odpowiedzialność i precyzję zadań.
+## Tabela
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Karty te sprawdzają wiersze tabeli dokumentów. Widoczne opcje obejmują sprawdzanie dat, wzorce tekstu, okres przydatności do spożycia i porównania między kolumnami. Wybierz **Nazwa tabeli** i **Nazwa kolumny** przed wybraniem operatora lub wzorca. Zobacz [Tabela](table).
 
-### Praktyczne zastosowanie
+<figure><img src="../../../.gitbook/assets/prior-u041-pl.png" alt="Warunki tabel danych. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki tabel danych. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-Te karty "And" są konfigurowane w przepływie pracy w celu przeprowadzania kontroli i walidacji, które zapewniają, że proces ściśle przestrzega reguł biznesowych i standardów integralności danych. Na przykład:
+## Porównaj z ceną ofertową
 
-* **Przepływ pracy może używać karty "And", aby zweryfikować, że całkowita kwota faktury jest zgodna z zamówieniem zakupu, zanim wyzwoli płatność.**
-* **Inny przepływ pracy może używać karty "And", aby zapewnić, że dokument zostanie sprawdzony przez określonych członków zespołu, zanim przejdzie do następnego etapu.**
+Użyj tych kart, aby porównać przedmiot z podanymi danymi cenowymi. Widoczne opcje obejmują identyfikator artykułu, typ dostawcy, identyfikator artykułu dostawcy, cenę jednostkową i jednostkę miary. **Operatora** i obiekty zastępcze danych zależą od wybranej karty.
 
-### Podsumowanie
+<figure><img src="../../../.gitbook/assets/prior-u042-pl.png" alt="Warunki cen ofertowych. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki cen ofertowych. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
 
-Karty "And" są podstawowym elementem systemów przepływu pracy, które wymagają precyzyjnej kontroli nad wykonywaniem procesu na podstawie wielu warunków. Zapewniają one, że każdy krok przepływu pracy jest realizowany tylko wtedy, gdy wszystkie niezbędne kryteria zostaną w pełni spełnione, automatyzując w ten sposób złożone drzewa decyzyjne w procesach biznesowych.
+## Osoba przypisana
 
-Zrozumienie i prawidłowe skonfigurowanie tych kart jest kluczowe dla wykorzystania pełnych możliwości systemu zarządzania przepływem pracy w celu zwiększenia wydajności, dokładności i zgodności w procesach organizacyjnych.
+Użyj **Osoba przypisana**, gdy warunek zależy od przypisanego użytkownika lub grupy. Wybierz, czy chcesz porównać z jednym użytkownikiem, grupą, czy wybranym zestawem. Zobacz [Cesjonat](assignee).
+
+<figure><img src="../../../.gitbook/assets/prior-u043-pl.png" alt="Warunki przypisania. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych."><figcaption><p>Warunki przypisania. Niektóre fragmenty kart pozostają angielskie. Kategoria Mandatariusz dotyczy przypisanej osoby lub grupy; Sklep na karcie oznacza zapis zwróconych danych.</p></figcaption></figure>
+
+[Szczegółowe karty porównawcze ofert i zachowanie Dowolne/Wszystkie](../cards-overview/quote-comparison-guide.md).
+
+Niektóre etykiety produktu pozostają angielskie lub są niepoprawnie przetłumaczone. Tabele oznaczają tabele danych; zwracane wartości nie oznaczają zwrotu finansowego. Identyfikatory techniczne pozostają bez zmian.

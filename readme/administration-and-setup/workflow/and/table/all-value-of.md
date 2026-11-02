@@ -1,6 +1,8 @@
-# All Value of
+# Cała wartość
 
-<figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v1-pl-pl.png" alt="Cała wartość, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v2-pl-pl.png" alt="Cała wartość, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -11,7 +13,7 @@ Ta karta DocBits służy do walidacji, czy **wszystkie wartości** w określonej
 * **Walidacja wzorca regex:** Ta karta sprawdza, czy **wszystkie wartości** w określonej kolumnie tabeli odpowiadają podanemu wzorcowi wyrażenia regularnego. Przepływ pracy będzie kontynuowany tylko wtedy, gdy każdy wpis w kolumnie spełnia warunek.
 * **Operator:** Użytkownicy definiują kolumnę i określają wzorzec regex. Dostępny warunek obejmuje:
   * **Matches Regex Pattern:** Weryfikuje, czy każda wartość w określonej kolumnie odpowiada wzorcowi regex.
-* **Table and Column Selection:** Użytkownicy określają tabelę i kolumnę, które chcą sprawdzić pod kątem pełnego dopasowania wzorca regex.
+* **Wybór tabeli i kolumny:** Użytkownicy określają tabelę i kolumnę, które chcą sprawdzić pod kątem pełnego dopasowania wzorca regex.
 
 ## **Zastosowanie:**
 

@@ -1,6 +1,6 @@
-# Above Max Amount
+# Powyżej maksymalnej kwoty
 
-<figure><img src="../../../../.gitbook/assets/docbits_invoice_2.png" alt="DocBits Faktura 2"><figcaption></figcaption></figure>
+
 
 Ten tytuł wskazuje, że reguła została zaprojektowana do obsługi przypadków, w których suma faktury jest większa niż maksymalna kwota, do której obsługi upoważniony jest osoba zatwierdzająca.
 
@@ -12,7 +12,7 @@ Ten tytuł wskazuje, że reguła została zaprojektowana do obsługi przypadków
    * **Document Status is Pending Approval**: Faktura musi mieć status "Pending Approval". Ten status jest kluczowy, aby zapewnić, że reguła jest stosowana do faktur, które są nadal przetwarzane i nie zostały jeszcze sfinalizowane.
    * **Compare two fields: Total Amount Greater Than Approver Max Amount**: Ten warunek sprawdza, czy łączna kwota faktury przekracza maksymalną kwotę, którą osoba zatwierdzająca może obsłużyć. To porównanie może również obejmować ustawienie tolerancji, dopuszczając niewielkie różnice w oparciu o wstępnie zdefiniowane kryteria.
 
-#### Action (Then…):
+#### Działanie (Then…):
 
 * **Assign user from field Next Level Approver, use user User as fallback**: Jeśli faktura przekracza określoną maksymalną kwotę, jest automatycznie przypisywana do osoby zatwierdzającej wyższego szczebla, wskazanej w polu 'Next Level Approver'. Jeśli to pole nie jest wypełnione lub określony użytkownik jest niedostępny, używany jest domyślny użytkownik (prawdopodobnie administrator lub inny wyznaczony pracownik) jako rozwiązanie zapasowe, aby zapewnić, że faktura zostanie przejrzana bez opóźnień.
 

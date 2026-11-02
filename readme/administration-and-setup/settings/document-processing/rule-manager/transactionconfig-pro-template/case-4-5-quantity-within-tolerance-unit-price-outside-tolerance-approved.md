@@ -1,28 +1,30 @@
-# Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)
+# Przypadek 4, 5: Ilość w tolerancji; cena poza tolerancją — zatwierdzenie
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The quantity on the invoice is within tolerance, but the unit price is outside the acceptable tolerance range. However, this variance in the unit price has been reviewed and approved by the appropriate authorities.
+## Scenariusz:
 
-## Action:
+Ilość na fakturze mieści się w tolerancji, ale cena jednostkowa wykracza poza dopuszczalny zakres tolerancji. Jednakże ta różnica w cenie jednostkowej została sprawdzona i zatwierdzona przez uprawnione osoby.
 
-The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+## Działanie:
 
-## Example:
+System dostosowuje cenę jednostkową do zamówienia i stosuje wszelkie niezbędne opłaty za pozycje w celu uwzględnienia różnicy.
+
+## Przykład:
 
 **Purchase Order (PO):**
 
 Quantity: <mark style="color:green;">100</mark> units
 
-Unit Price: $10.00 per unit
+Cena jednostkowa: $10.00 za sztukę
 
 Total Amount: <mark style="color:purple;">$1,000.00</mark>
 
 **Invoice Received:**
 
-Quantity: <mark style="color:green;">100</mark> units (within tolerance)
+Ilość: <mark style="color:green;">100</mark> jednostek (w granicach tolerancji)
 
-Unit Price: <mark style="color:red;">$11.00</mark> per unit (outside tolerance of ±5%)
+Cena jednostkowa: <mark style="color:red;">$11.00</mark> za sztukę (tolerancja zewnętrzna ±5%)
 
 Total Amount: <mark style="color:red;">$1,100.00</mark>
 
@@ -30,32 +32,32 @@ Total Amount: <mark style="color:red;">$1,100.00</mark>
 
 Quantity Tolerance: ±2%
 
-Unit Price Tolerance: ±5% (expected range: $9.50 to $10.50)
+Tolerancja ceny jednostkowej: ±5% (oczekiwany zakres: $9.50–$10.50)
 
 **Approval:**
 
-• The $11.00 unit price is outside the tolerance range but has been manually approved by the appropriate department.
+• Cena jednostkowa $11.00 wykracza poza zakres tolerancji, ale została ręcznie zatwierdzona przez odpowiedni dział.
 
-Since the quantity is within tolerance but the unit price is outside tolerance (yet approved), the system will:
+Ponieważ ilość mieści się w tolerancji, ale cena jednostkowa wykracza poza tolerancję (mimo to zatwierdzona), system:
 
-1\. **Adjust the Unit Price**: The system adjusts the unit price back to the PO’s unit price because the variance was approved:
+1\. **Dostosuj cenę jednostkową**: System dostosowuje cenę jednostkową z powrotem do ceny jednostkowej PO, ponieważ rozbieżność została zatwierdzona:
 
-• **Adjusted Unit Price = $10.00 per unit**
+• **skorygowana cena jednostkowa = $10.00 za jednostkę**
 
-• **Adjusted Total Amount = 100 units × $10.00 per unit = $1,000.00**
+• **Skorygowana kwota całkowita = 100 jednostek × $10.00 za jednostkę = $1,000.00**
 
-2\. **Apply a Line Charge for the Difference**: Since the approved unit price of $11.00 is higher than the PO unit price of $10.00, the system applies a line charge to account for this difference:
+2\. **Zastosuj opłatę za pozycję za różnicę**: Ponieważ zatwierdzona cena jednostkowa wynosząca $11.00 jest wyższa niż cena jednostkowa PO wynosząca $10.00, system nalicza opłatę za pozycję w celu uwzględnienia tej różnicy:
 
-• **Line Charge Amount = (Approved Invoice Unit Price - PO Unit Price) × Quantity**
+• **Kwota opłaty za pozycjej = (Zatwierdzona cena jednostkowa na fakturze - PO Cena jednostkowa) × Ilość**
 
-• **Line Charge Amount = ($11.00 - $10.00) × 100 units = $100.00**
+• **Kwota opłaty za linię = ($11.00 - $10.00) × 100 jednostek = $100.00**
 
-3\. **Process the Invoice**: The system processes the invoice with:
+3\. **Przetwórz fakturę**: System przetwarza fakturę za pomocą:
 
 • **Base Amount:** $1,000.00
 
 • **Line Charge:** $100.00
 
-• **Total Processed Amount:** $1,100.00
+• **Całkowita przetworzona kwota:** $1,100.00
 
-This ensures that while the base PO values are maintained for consistency, the approved variance in the unit price is accounted for through an additional line charge, resulting in accurate financial processing and record-keeping.
+Zapewnia to, że chociaż podstawowe wartości PO zostaną zachowane w celu zapewnienia spójności, zatwierdzona różnica w cenie jednostkowej zostanie uwzględniona w dodatkowej opłacie za pozycję, co skutkuje dokładnym przetwarzaniem finansowym i prowadzeniem rejestrów.

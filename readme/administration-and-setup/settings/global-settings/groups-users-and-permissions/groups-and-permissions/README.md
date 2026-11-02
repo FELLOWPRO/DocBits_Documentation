@@ -1,23 +1,47 @@
-# Groepen en Machtigingen
+# Groepen en machtigingen
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
-DocBits Admin Guide: Managing Users, Groups & Permissions (Full Walkthrough)
+DocBits Zelfstudie Groepen en machtigingen: gebruikersrollen en toegangsrechten instellen en uw werkruimte beveiligen
 {% endembed %}
 
-<figure><img src="../../../../../.gitbook/assets/docbits_groups_permissions_overview.png" alt="Docbits Groups Permissions Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-t009-nl.png" alt="Details van de geselecteerde groep; persoonsgegevens zijn afgeschermd."><figcaption><p>Details van de geselecteerde groep; persoonsgegevens zijn afgeschermd.</p></figcaption></figure>
 
-## Componenten van de Sectie Groepen en Machtigingen
+Met groepen en machtigingen bepaalt u welke gebruikers toegang hebben tot bepaalde documenttypen en welke acties zij mogen uitvoeren.
 
-1. **Groepen en Machtigingen Activeren/Deactiveren**: Een schakelaar die de systeembeheerder in staat stelt om het gebruik van groepen en machtigingen op het platform in te schakelen of uit te schakelen. Wanneer deze is uitgeschakeld, kan het systeem standaard terugvallen op een minder gedetailleerd toegangscontrolesysteem.
-2. **Groepenlijst**: Toont de lijst van beschikbare gebruikersgroepen binnen de organisatie. Elke groep kan worden geconfigureerd met specifieke machtigingen. Beheerders kunnen nieuwe groepen toevoegen door op de knop "+ Nieuw" te klikken.
-3. **Machtigingentabel**:
-   * Wordt weergegeven zodra een groep is geselecteerd of een nieuwe groep wordt geconfigureerd.
-   * Lijst alle documenttypes die door het systeem worden herkend (bijv. FACTUUR, KREDIETNOTA, LEVERINGSCONFIRMATIE).
-   * Voor elk documenttype zijn er selectievakjes voor verschillende machtigingen:
-     * **Bekijken**: Machtiging om het document te zien.
-     * **Bijwerken**: Machtiging om het document te wijzigen.
-     * **Verwijderen**: Machtiging om het document uit het systeem te verwijderen.
-     * **Eerste Goedkeuring**: Machtiging om de initiële goedkeuring van het document uit te voeren.
-     * **Tweede Goedkeuring**: Machtiging om een secundaire goedkeuring uit te voeren (indien van toepassing).
+## Groepen en machtigingen activeren/deactiveren
 
-<figure><img src="../../../../../.gitbook/assets/docbits_second_approval_permission.png" alt="Docbits Second Approval Permission"><figcaption></figcaption></figure>
+Gebruik de schakelaar bovenaan de pagina om het systeem van groepen en machtigingen in of uit te schakelen. Wanneer het systeem is uitgeschakeld, gebruikt het een eenvoudiger toegangsmodel zonder groepsgebonden beperkingen.
+
+## Groepenlijst
+
+De tabel toont alle geconfigureerde groepen met:
+
+| Kolom | Beschrijving |
+|--------|-------------|
+| **Groepsnaam** | De naam van de groep. |
+| **Groepsbeschrijving** | Een korte beschrijving van het doel van de groep. |
+| **Acties** | Menu met opties om de groep te bewerken of te verwijderen. |
+
+Gebruik de zoekbalk **Zoekopdracht** om groepen op naam te vinden. Klik op **+ New** om een nieuwe groep te maken.
+
+## Groepsmachtigingen configureren
+
+Wanneer u een groep selecteert (via het menu Actions → Edit), verschijnt een machtigingentabel waarin u de toegang per documenttype configureert:
+
+| Machtiging | Beschrijving |
+|------------|-------------|
+| **Weergave** | Machtiging om documenten van dit type te bekijken. |
+| **Bijwerken** | Machtiging om documenten van dit type te wijzigen. |
+| **Verwijderen** | Machtiging om documenten van dit type te verwijderen. |
+| **Eerste goedkeuring** | Machtiging om de eerste goedkeuring uit te voeren. |
+| **Tweede goedkeuring** | Machtiging om een tweede goedkeuringsniveau uit te voeren (indien van toepassing). |
+
+Elke rij in de machtigingentabel vertegenwoordigt een documenttype (bijv. Invoice, Credit Note, Delivery Note). Schakel de selectievakjes in of uit om machtigingen aan die groep te verlenen of in te trekken.
+
+## Een nieuwe groep maken
+
+1. Klik rechtsboven op **+ New**.
+2. Voer een **Groepsnaam** en een optionele **Beschrijving** in.
+3. Configureer de machtigingen voor elk documenttype.
+4. Wijs gebruikers aan de groep toe.
+5. Klik op **Opslaan** om toe te passen.

@@ -1,169 +1,169 @@
-# Customization Options
+# Aanpassingsmogelijkheden
 
-## The customization options for each document type in DocBits is crucial to optimize document processing and data extraction.&#x20;
+## Documenttypen aanpassen voor optimale verwerking en gegevensextractie
 
-### Here are the most important customization options in detail and their impact on document processing and data extraction:
+### De belangrijkste aanpassingsmogelijkheden en hun gevolgen:
 
-1. **Layout Configuration Description:**
+1. **Beschrijving van de lay-outconfiguratie:**
 
-The layout configuration determines the structure and appearance of a document type.
+De lay-outconfiguratie bepaalt de structuur en weergave van een documenttype.
 
-**Options:**
+**Opties:**
 
-**Templates:**&#x20;
+**Sjablonen:**&#x20;
 
-* Upload or create document templates that define the general layout.
+* Upload of maak documentsjablonen die de algemene lay-out bepalen.
 
 **Zones:**&#x20;
 
-* Specify specific areas (zones) on the document, e.g. header, footer, content area.
+* Geef specifieke gebieden op het document aan, zoals de koptekst, voettekst en het inhoudsgebied.
 
-**Impact:**
+**Effect:**
 
-**Improved accuracy:**&#x20;
+**Verbeterde nauwkeurigheid:**&#x20;
 
-* By accurately defining layouts, systems can better identify where to find certain information, improving the accuracy of data extraction.
+* Met nauwkeurig gedefinieerde lay-outs kan het systeem beter bepalen waar informatie staat. Dit verbetert de nauwkeurigheid van de gegevensextractie.
 
-**Consistency:**&#x20;
+**Consistentie:**&#x20;
 
-* Ensuring that all documents of a type have a consistent layout makes processing and review easier.
+* Een consistente lay-out voor alle documenten van een type vereenvoudigt de verwerking en controle.
 
-2. **Field Definitions Description:**
+2. **Beschrijving van velddefinities:**
 
-Fields are specific data points extracted from documents.&#x20;
+Velden zijn specifieke gegevens die uit documenten worden gehaald.&#x20;
 
-**Options:**
+**Opties:**
 
-* Field name: The name of the field (e.g. "Invoice number", "Date", "Amount").
-* Data type: The type of data contained in the field (e.g. text, number, date).
-* Format: The format of the data (e.g. date in DD/MM/YYYY format).
-* Required field: Indicates whether a field is mandatory.
+* Veldnaam: de naam van het veld, bijvoorbeeld "Factuurnummer", "Datum" of "Bedrag".
+* Gegevenstype: het soort gegevens in het veld, zoals tekst, getal of datum.
+* Formaat: de opmaak van de gegevens, bijvoorbeeld een datum in DD/MM/YYYY-formaat.
+* Verplicht veld: geeft aan of een veld verplicht is.
 
-**Impact:**
+**Effect:**
 
-**Data extraction accuracy:**&#x20;
+**Nauwkeurige gegevensextractie:**&#x20;
 
-* By defining fields precisely, the correct data can be extracted precisely.
+* Door velden nauwkeurig te definiëren, kunnen de juiste gegevens worden geëxtraheerd.
 
-**Error reduction:**&#x20;
+**Minder fouten:**&#x20;
 
-* Clear specification of field formats and data types reduces the likelihood of errors during data processing.
+* Duidelijke veldformaten en gegevenstypen verkleinen de kans op fouten bij de gegevensverwerking.
 
-**Automated validation:**&#x20;
+**Geautomatiseerde validatie:**&#x20;
 
-* Required fields and specific formats enable automatic validation of the extracted data.
+* Verplichte velden en specifieke formaten maken automatische validatie van de geëxtraheerde gegevens mogelijk.
 
-3. **Extraction rules Description:**
+3. **Beschrijving van extractieregels:**
 
-Rules that determine how data is extracted from documents.
+Regels die bepalen hoe gegevens uit documenten worden geëxtraheerd.
 
-**Options:**
+**Opties:**
 
-**Regular expressions:**&#x20;
+**Reguliere expressies:**&#x20;
 
-* Using regular expressions to match patterns.
+* Reguliere expressies gebruiken om patronen te herkennen.
 
-**Anchor points:** .&#x20;
+**Ankerpunten:**&#x20;
 
-* Using specific text anchors to identify the position of fields. Artificial intelligence: Using AI models for data extraction based on pattern recognition and machine learning
+* Specifieke tekstankers gebruiken om de positie van velden te bepalen. Kunstmatige intelligentie: AI-modellen gebruiken voor gegevensextractie op basis van patroonherkenning en machinelearning.
 
-**Impact:**
+**Effect:**
 
-**Precision:**&#x20;
+**Nauwkeurigheid:**&#x20;
 
-* By applying specific extraction rules, data can be extracted precisely and reliably.&#x20;
+* Met specifieke extractieregels kunnen gegevens nauwkeurig en betrouwbaar worden geëxtraheerd.&#x20;
 
-**Flexibility:**&#x20;
+**Flexibiliteit:**&#x20;
 
-* Customizable rules make it possible to adapt the extraction to different document layouts and contents.&#x20;
+* Aanpasbare regels maken het mogelijk de extractie af te stemmen op verschillende documentlay-outs en inhoud.&#x20;
 
-**Efficiency:**&#x20;
+**Efficiëntie:**&#x20;
 
-* Automated extraction rules reduce manual effort and speed up data processing.&#x20;
+* Geautomatiseerde extractieregels verminderen handmatig werk en versnellen de gegevensverwerking.&#x20;
 
 
 
-4. &#x20;**Validation rules Description:**
+4. &#x20;**Beschrijving van validatieregels:**
 
-Rules for checking the correctness and completeness of the extracted data.&#x20;
+Regels om de juistheid en volledigheid van de geëxtraheerde gegevens te controleren.&#x20;
 
-**Options:**
+**Opties:**
 
-* **Format check:** Validating the data format (e.g. whether a date is correctly formatted).&#x20;
-* **Value check:** Checking whether the extracted values ​​are within a certain range.&#x20;
-* **Cross-check:** Comparing the extracted data with other data sources or data fields in the document.&#x20;
+* **Formaatcontrole:** het gegevensformaat valideren, bijvoorbeeld controleren of een datum correct is opgemaakt.&#x20;
+* **Waardecontrole:** controleren of de geëxtraheerde waarden binnen een bepaald bereik liggen.&#x20;
+* **Kruiscontrole:** de geëxtraheerde gegevens vergelijken met andere gegevensbronnen of velden in het document.&#x20;
 
-**Impact:**
+**Effect:**
 
-**Data quality:**&#x20;
+**Gegevenskwaliteit:**&#x20;
 
-* Ensuring that only correct and complete data is stored.&#x20;
+* Zorgen dat alleen juiste en volledige gegevens worden opgeslagen.&#x20;
 
-**Error prevention:**&#x20;
+**Foutpreventie:**&#x20;
 
-* Automatic validation reduces the risk of human error.&#x20;
+* Automatische validatie verkleint het risico op menselijke fouten.&#x20;
 
-**Compliance:**&#x20;
+**Naleving:**&#x20;
 
-* Adhering to regulations and standards through accurate data validation.&#x20;
+* Regelgeving en normen naleven door gegevens nauwkeurig te valideren.&#x20;
 
-5. &#x20;**Automation workflows Description:**
+5. &#x20;**Beschrijving van geautomatiseerde workflows:**
 
-Workflows that automate the processing steps of a document type.&#x20;
+Workflows die de verwerkingsstappen van een documenttype automatiseren.&#x20;
 
-**Options:**
+**Opties:**
 
-**Approval processes:**&#x20;
+**Goedkeuringsprocessen:**&#x20;
 
-* Automatic forwarding of documents for approval.&#x20;
+* Documenten automatisch ter goedkeuring doorsturen.&#x20;
 
-**Notifications:**&#x20;
+**Meldingen:**&#x20;
 
-* Automatic notifications for certain events (e.g. receipt of an invoice).&#x20;
+* Automatische meldingen bij bepaalde gebeurtenissen, zoals de ontvangst van een factuur.&#x20;
 
-**Archiving:**
+**Archivering:**
 
-* Automatic archiving of documents according to certain rules. Impact:
+* Documenten automatisch archiveren volgens bepaalde regels. Effect:
 
-**Increased efficiency:**&#x20;
+**Hogere efficiëntie:**&#x20;
 
-* Automated workflows speed up processing and reduce manual effort.&#x20;
+* Geautomatiseerde workflows versnellen de verwerking en verminderen handmatig werk.&#x20;
 
-**Transparency:**&#x20;
+**Transparantie:**&#x20;
 
-* Clear and traceable processes increase the transparency and traceability of document processing.&#x20;
+* Duidelijke en controleerbare processen maken de documentverwerking transparanter en beter traceerbaar.&#x20;
 
-**Compliance:**&#x20;
+**Naleving:**&#x20;
 
-Automated workflows ensure that all steps are carried out in accordance with internal guidelines and legal regulations.&#x20;
+Geautomatiseerde workflows ondersteunen de uitvoering van alle stappen volgens interne richtlijnen en wettelijke voorschriften.&#x20;
 
-6. &#x20;**User rights and access control Description:**
+6. &#x20;**Beschrijving van gebruikersrechten en toegangsbeheer:**
 
-Control of access to document types and their fields.&#x20;
+Toegang tot documenttypen en hun velden beheren.&#x20;
 
-**Options:**
+**Opties:**
 
-**Role-based access control:**&#x20;
+**Rolgebaseerd toegangsbeheer:**&#x20;
 
-* Specify which users or user groups can access certain document types.&#x20;
+* Bepalen welke gebruikers of gebruikersgroepen toegang hebben tot bepaalde documenttypen.&#x20;
 
-**Security levels:**&#x20;
+**Beveiligingsniveaus:**&#x20;
 
-* Assign security levels to document types and fields.&#x20;
+* Beveiligingsniveaus toekennen aan documenttypen en velden.&#x20;
 
-**Impact:**
+**Effect:**
 
-**Data security:**&#x20;
+**Gegevensbeveiliging:**&#x20;
 
-* Protect sensitive data through restricted access.&#x20;
+* Gevoelige gegevens beschermen door de toegang te beperken.&#x20;
 
-**Compliance:**&#x20;
+**Naleving:**&#x20;
 
-* Compliance with data protection regulations through targeted access controls.&#x20;
+* Gegevensbeschermingsregels naleven met gericht toegangsbeheer.&#x20;
 
-**User-friendliness:**&#x20;
+**Gebruiksvriendelijkheid:**&#x20;
 
-* Adaptation of the user interface depending on role and authorization increases user-friendliness.&#x20;
+* De gebruikersinterface aanpassen aan de rol en bevoegdheden verbetert de gebruiksvriendelijkheid.&#x20;
 
-The extensive customization options for document types in DocBits enable precise control of document processing and data extraction. By carefully configuring layouts, fields, extraction and validation rules, automation workflows, and user rights, organizations can ensure that their documents are processed efficiently, accurately, and securely. These customization options go a long way in optimizing the overall performance of the document management system and meeting the specific needs of the organization.
+De uitgebreide aanpassingsmogelijkheden voor documenttypen in DocBits geven u nauwkeurige controle over documentverwerking en gegevensextractie. Met zorgvuldig ingestelde lay-outs, velden, extractie- en validatieregels, geautomatiseerde workflows en gebruikersrechten kunnen organisaties documenten efficiënt, nauwkeurig en veilig verwerken. Deze mogelijkheden helpen de prestaties van het documentbeheersysteem te verbeteren en aan de specifieke behoeften van de organisatie te voldoen.
 

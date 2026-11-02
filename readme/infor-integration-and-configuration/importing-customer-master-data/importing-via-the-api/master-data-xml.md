@@ -141,7 +141,7 @@ Anders dan de BOD-imports melden deze endpoints problemen met een echte foutstat
 
 ### 5. Controleren of de gegevens zijn aangekomen
 
-* Ga in DocBits naar **Settings → Document Processing → Lookup Master Data**.
+* Ga in DocBits naar **Instellingen → Documentverwerking → Stamgegevens opzoeken**.
 * Selecteer links **Imported** en open vervolgens het tabblad van uw gegevenstype.
 * De kolommen zijn de namen die u aan de linkerkant van `field_mappings` hebt gebruikt.
 

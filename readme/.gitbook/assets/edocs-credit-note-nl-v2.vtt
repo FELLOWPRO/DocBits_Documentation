@@ -1,0 +1,93 @@
+WEBVTT
+
+symptom_01
+00:00:00.250 --> 00:00:05.254
+Een elektronische creditnota verschijnt
+als Invoice. Lees de oorspronkelijke XML.
+
+symptom_02
+00:00:05.254 --> 00:00:08.800
+Typecode 381 duidt een creditnota aan.
+
+codes_01
+00:00:09.550 --> 00:00:17.062
+De standaardregels voor FACTURX en ZUGFeRD
+herkennen ook 261. Codes 383 en 384
+
+codes_02
+00:00:17.062 --> 00:00:22.042
+betekenen debetnota en gecorrigeerde
+factuur. Classificeer deze niet als
+
+codes_03
+00:00:22.042 --> 00:00:23.200
+creditnota's.
+
+source_01
+00:00:23.950 --> 00:00:29.732
+Open E-Doc voor het gedetecteerde formaat.
+Een aangepaste organisatietransformatie
+
+source_02
+00:00:29.732 --> 00:00:34.133
+heeft voorrang op de standaard. Controleer
+de actieve versie.
+
+transform_01
+00:00:34.883 --> 00:00:39.655
+Zoek voor FACTURX naar INVOICE_TYPE. Een
+constante Invoice kan de oorspronkelijke
+
+transform_02
+00:00:39.655 --> 00:00:44.867
+creditnotacode tenietdoen. Vergelijk de
+aangepaste transformatie met de standaard.
+
+paths_01
+00:00:45.617 --> 00:00:51.619
+Test de getransformeerde XML. Controleer
+of Extraction Paths invoice_type uit de
+
+paths_02
+00:00:51.619 --> 00:00:57.167
+juiste node voor dit formaat leest. Bekijk
+latere scripts en de opgeslagen waarde.
+
+activate_01
+00:00:57.917 --> 00:01:03.838
+Maak een concept. Save activeert het niet.
+Test representatieve facturen en
+
+activate_02
+00:01:03.838 --> 00:01:09.167
+creditnota's. Activeer pas met het vinkje
+nadat de controles geslaagd zijn.
+
+safety_01
+00:01:09.917 --> 00:01:15.699
+Controleer een nieuw document, inclusief
+bedragen en export. Behoud aangepaste
+
+safety_02
+00:01:15.699 --> 00:01:21.573
+toewijzingen. Controleer goedkeuringen,
+exports en handmatige wijzigingen voordat
+
+safety_03
+00:01:21.573 --> 00:01:23.733
+u een oud document opnieuw start.
+
+sign_01
+00:01:24.483 --> 00:01:29.197
+De instelling voor negatieve tekens is
+standaard ingeschakeld, maar kan worden
+
+sign_02
+00:01:29.197 --> 00:01:35.582
+uitgeschakeld. Bevestig de classificatie
+en de tekenconventie die Infor ERP of SAP
+
+sign_03
+00:01:35.582 --> 00:01:36.633
+verwacht.
+

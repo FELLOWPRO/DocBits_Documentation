@@ -31,7 +31,7 @@ Alle velden gebruiken de prefix `pagopa_`:
 | `pagopa_fiscal_code_creditor` | 11-cijferige fiscale code van de crediteur (string) |
 | `pagopa_amount_cents` | Bedrag in centen (integer) |
 | `pagopa_amount` | Bedrag in euro (decimaal, afgeleid van `pagopa_amount_cents`) |
-| `pagopa_auth` | Optionele auth-/versie-indicator uit de payload |
+| `pagopa_auth` | Optionele auth-/versie-indicator van de payload |
 
 ### Voorbeeld API-respons
 

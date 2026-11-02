@@ -1,4 +1,4 @@
-# Group cache
+# Groepscache
 
 ## Tabel `public.group_cache`
 

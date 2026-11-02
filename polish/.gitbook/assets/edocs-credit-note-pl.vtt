@@ -1,0 +1,98 @@
+WEBVTT
+
+symptom_01
+00:00:00.250 --> 00:00:05.231
+Elektroniczna nota kredytowa jest
+wyświetlana jako Invoice. Odczytaj
+
+symptom_02
+00:00:05.231 --> 00:00:11.867
+oryginalny plik XML. Kod typu 381 oznacza
+notę kredytową.
+
+codes_01
+00:00:12.617 --> 00:00:21.684
+Domyślne reguły FACTURX i ZUGFeRD
+rozpoznają też 261. Kody 383 i 384
+
+codes_02
+00:00:21.684 --> 00:00:27.037
+oznaczają notę debetową i fakturę
+skorygowaną. Nie klasyfikuj ich jako not
+
+codes_03
+00:00:27.037 --> 00:00:28.133
+kredytowych.
+
+source_01
+00:00:28.883 --> 00:00:34.572
+Otwórz E-Doc dla wykrytego formatu.
+Niestandardowa transformacja organizacji
+
+source_02
+00:00:34.572 --> 00:00:39.300
+ma pierwszeństwo przed domyślną. Sprawdź
+aktywną wersję.
+
+transform_01
+00:00:40.050 --> 00:00:47.097
+Dla FACTURX wyszukaj INVOICE_TYPE. Stała
+Invoice może zastąpić oryginalny kod noty
+
+transform_02
+00:00:47.097 --> 00:00:51.600
+kredytowej. Porównaj transformację
+niestandardową z domyślną.
+
+paths_01
+00:00:52.350 --> 00:00:57.284
+Przetestuj przekształcony XML. Sprawdź,
+czy Extraction Paths odczytuje
+
+paths_02
+00:00:57.284 --> 00:01:02.265
+invoice_type z właściwego węzła dla tego
+formatu. Sprawdź późniejsze skrypty i
+
+paths_03
+00:01:02.265 --> 00:01:03.900
+zapisaną wartość.
+
+activate_01
+00:01:04.650 --> 00:01:11.500
+Utwórz wersję roboczą. Save jej nie
+aktywuje. Przetestuj reprezentatywne
+
+activate_02
+00:01:11.500 --> 00:01:16.155
+faktury i noty kredytowe. Aktywuj
+znacznikiem wyboru dopiero po pomyślnych
+
+activate_03
+00:01:16.155 --> 00:01:17.167
+kontrolach.
+
+safety_01
+00:01:17.917 --> 00:01:22.538
+Sprawdź nowy dokument, w tym kwoty i
+eksport. Zachowaj mapowania
+
+safety_02
+00:01:22.538 --> 00:01:26.787
+niestandardowe. Przed ponownym
+uruchomieniem starego dokumentu sprawdź
+
+safety_03
+00:01:26.787 --> 00:01:30.067
+zatwierdzenia, eksporty i ręczne zmiany.
+
+sign_01
+00:01:30.817 --> 00:01:36.413
+Ustawienie znaku ujemnego jest domyślnie
+włączone, ale można je wyłączyć. Potwierdź
+
+sign_02
+00:01:36.413 --> 00:01:42.000
+klasyfikację i konwencję znaków oczekiwaną
+przez Infor ERP lub SAP.
+

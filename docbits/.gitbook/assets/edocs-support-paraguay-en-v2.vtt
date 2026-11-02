@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.856
+Paraguay DTE, SIFEN and SIFEN 150 are
+configured labels. Credit-note
+
+formats_02
+00:00:06.856 --> 00:00:11.152
+classification entries lack dedicated
+extraction bundles in the inspected
+
+formats_03
+00:00:11.152 --> 00:00:15.819
+status. Verify the effective mapping and
+do not treat the labels as
+
+formats_04
+00:00:15.819 --> 00:00:17.000
+interchangeable.
+
+workflow_01
+00:00:17.750 --> 00:00:22.243
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:22.243 --> 00:00:27.305
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:27.305 --> 00:00:28.333
+activate it.
+
+accept_01
+00:00:29.083 --> 00:00:33.843
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:33.843 --> 00:00:38.847
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:38.847 --> 00:00:39.800
+delivery.
+

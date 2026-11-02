@@ -1,0 +1,200 @@
+# Dashboard di analisi
+
+## Panoramica
+
+La **Dashboard di analisi** fornisce visibilità completa sulle prestazioni di elaborazione dei documenti. Tiene traccia del tempo che i documenti trascorrono in ogni fase del loro percorso — dall'importazione all'esportazione — e ti aiuta a identificare i colli di bottiglia, confrontare le prestazioni tra organizzazioni, tipi di documento e fornitori, e a confrontare i tuoi risultati con la **Media globale DocBits**.
+
+Ogni documento attraversa fasi distinte:
+
+**Nuovo** (importato) → **In corso** (in elaborazione) → **Pronto per la convalida** (in attesa di revisione utente) → **In attesa di approvazione** (in attesa di approvazione) → **Esportazione** (completato ed esportato)
+
+Il tempo trascorre in ogni fase — la Dashboard di analisi ti indica esattamente **quanto** e **dove** concentrare i tuoi miglioramenti.
+
+### Due tipi di colli di bottiglia
+
+La dashboard ti aiuta a distinguere tra:
+
+* **Colli di bottiglia di sistema** — Quanto tempo DocBits è impegnato con l'elaborazione automatica (OCR ed estrazione del testo, classificazione dei documenti, estrazione dei campi, convalida automatica). Ottimizzabili tramite la configurazione e le risorse di sistema.
+* **Colli di bottiglia utente** — Tempo trascorso in attesa di convalida e approvazione manuale (tempo di attesa in coda, correzione manuale dei dati, revisione e convalida, flussi di approvazione). Ottimizzabili tramite il flusso di lavoro e l'allocazione delle risorse.
+
+## Come attivarla
+
+La Dashboard di analisi è controllata da un'impostazione di modulo. Una volta abilitata, una voce **Dashboard di analisi** appare nella barra laterale a sinistra.
+
+1. Naviga in **Impostazioni → Elaborazione documenti → Modulo → Dashboard e analisi**.
+2. Abilita l'opzione **Dashboard di analisi**.
+
+<mark style="color:red;">**Nota**</mark>: La Dashboard di analisi richiede un **Abbonamento al pannello di controllo analitico**.
+
+<mark style="color:red;">**Nota**</mark>: L'accesso alla Dashboard di analisi è limitato agli utenti con diritti di **amministratore**.
+
+## Tipi di flusso
+
+Scegli la prospettiva giusta per la tua analisi. Ogni tipo di flusso ti offre una visione diversa degli stessi dati.
+
+| Tipo di flusso | Scopo | Domanda chiave |
+| --- | --- | --- |
+| **Stato** | Traccia il ciclo di vita del documento dall'importazione all'esportazione | *"Qual è il tempo complessivo dei miei documenti dall'importazione all'esportazione?"* |
+| **Elaborazione** | Analisi delle prestazioni tecniche dei moduli | *"Quali fasi di elaborazione sono colli di bottiglia?"* |
+| **Interazione dell'utente** | Punti di contatto umani e tempi di attesa | *"Quanto tempo i documenti attendono gli utenti?"* |
+
+Usa l'interruttore **Tipo di flusso** in cima alla dashboard per passare da una prospettiva all'altra.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-it.png" alt="Viste di elaborazione, interazioni degli utenti e stati."><figcaption><p>Viste di elaborazione, interazioni degli utenti e stati.</p></figcaption></figure>
+
+### Flusso di stato
+
+Tiene traccia del percorso del documento da **Nuovo** a **Esportato** — utile per l'analisi del ciclo di vita end-to-end.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-it.png" alt="Vista degli stati nell’analisi."><figcaption><p>Vista degli stati nell’analisi.</p></figcaption></figure>
+
+### Flusso di elaborazione
+
+Analizza le prestazioni di tutti i **moduli tecnici di elaborazione** (OCR, classificazione, estrazione, convalida) — utile per identificare i colli di bottiglia lato sistema.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-it.png" alt="Vista del processo e delle sue fasi aggregate."><figcaption><p>Vista del processo e delle sue fasi aggregate.</p></figcaption></figure>
+
+### Flusso di interazione dell'utente
+
+Si concentra sui **punti di contatto umani** — tempo di attesa in coda, convalida manuale, revisione e approvazione — utile per identificare i colli di bottiglia di flusso di lavoro e di personale.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-it.png" alt="Vista delle interazioni degli utenti con le fasi aggregate."><figcaption><p>Vista delle interazioni degli utenti con le fasi aggregate.</p></figcaption></figure>
+
+## Opzioni di filtro
+
+La dashboard supporta un potente filtraggio multidimensionale. Tutti i grafici, le schede e le tabelle vengono aggiornati in tempo reale in base ai filtri attivi.
+
+### Ricerca
+
+Individua immediatamente qualsiasi documento tramite **nome** o **ID univoco**.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-it.png" alt="Analisi filtrata con il termine Convalida."><figcaption><p>Analisi filtrata con il termine Convalida.</p></figcaption></figure>
+
+### Fasi del flusso
+
+Seleziona fasi specifiche per concentrare la tua analisi. L'attivazione/disattivazione delle fasi ricalcola anche le metriche temporali sugli altri componenti della dashboard.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-it.png" alt="Selezione delle fasi nel filtro della tabella di analisi."><figcaption><p>Selezione delle fasi nel filtro della tabella di analisi.</p></figcaption></figure>
+
+### Sotto-organizzazione, Tipo di documento, Fornitore, Gruppo
+
+Confronta le prestazioni tra:
+
+* **Sotto-organizzazioni** — diverse unità aziendali o tenant
+* **Tipi di documento** — fatture, ordini di acquisto, bolle di consegna, ecc.
+* **Fornitori** — per identificare quali fornitori causano i tempi di elaborazione più lunghi
+* **Gruppi** — per confrontare le prestazioni tra gruppi di utenti assegnati (disponibile per i tipi di flusso **Stato** e **Interazione dell'utente**)
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-it.png" alt="Filtri di analisi per fase, sotto-organizzazione, tipo di documento e fornitore."><figcaption><p>Filtri di analisi per fase, sotto-organizzazione, tipo di documento e fornitore.</p></figcaption></figure>
+
+<mark style="color:red;">**Nota**</mark>: Il filtro **Gruppo** si applica solo ai documenti che sono **assegnati direttamente a un gruppo**. I documenti assegnati a un singolo utente — anche se tale utente è membro di un gruppo — **non** sono inclusi nei risultati del filtro per gruppo.
+
+### Solo documenti esportati
+
+Attivo per impostazione predefinita — solo i documenti che hanno completato l'esportazione vengono considerati nelle metriche della dashboard.
+
+<mark style="color:red;">**Nota**</mark>: La disattivazione di questa opzione può comportare valori medi imprecisi, poiché nei calcoli vengono inclusi anche i documenti non ancora completati.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-it.png" alt="Opzione per limitare l’analisi ai documenti esportati."><figcaption><p>Opzione per limitare l’analisi ai documenti esportati.</p></figcaption></figure>
+
+### Intervallo di tempo
+
+Analizza qualsiasi periodo, da **7 giorni** fino a un **anno intero**, oppure imposta un **intervallo personalizzato** utilizzando il selettore di date.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-it.png" alt="Opzione di periodo personalizzato nella barra dei filtri di analisi."><figcaption><p>Opzione di periodo personalizzato nella barra dei filtri di analisi.</p></figcaption></figure>
+
+### I filtri vengono ricordati
+
+La dashboard salva i filtri e l'intervallo di tempo in questo browser, separatamente per ogni utente e ogni organizzazione. Ri aprendo la dashboard viene ripristinata l'ultima selezione, compreso un intervallo di date personalizzato nel selettore delle date.
+
+Selezionate **Ripristina impostazioni predefinite** in alto a destra nella dashboard per cancellare la selezione salvata: filtri, intervallo di tempo e date personalizzate tornano ai valori predefiniti.
+
+<mark style="color:red;">**Nota**</mark>: la selezione è memorizzata nel browser, non sul server. Non viene sincronizzata con altri dispositivi o browser.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-it.png" alt="Dashboard Analytics nella vista Stato, con la riga dei filtri e il pulsante Ripristina impostazioni predefinite in alto a destra"><figcaption><p>I filtri vengono ripristinati quando si torna alla dashboard. Ripristina impostazioni predefinite li cancella.</p></figcaption></figure>
+
+## Schede delle fasi del flusso
+
+Ogni scheda rappresenta una fase del flusso in base al **Tipo di flusso** selezionato. Le schede si adattano alla tua selezione — mostrando le fasi del ciclo di vita per *Stato*, i moduli di elaborazione per *Elaborazione*, o i punti di contatto utente per *Interazione dell'utente*.
+
+Ogni scheda mostra:
+
+* I tempi **Minimo, Media, Massimo** per la fase
+* Un confronto tra il **tuo Tempo medio** e la **Media globale DocBits** (quando l'interruttore di confronto è attivo)
+* Un cerchio di selezione per **includere o escludere** la fase dai calcoli temporali aggregati utilizzati dal Grafico del tempo medio, dal Grafico di tendenza temporale e dalla Tabella dati
+
+Un interruttore **Seleziona tutto** nell'intestazione consente di includere o escludere tutte le fasi contemporaneamente.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-it.png" alt="Schede delle fasi con tempi di elaborazione aggregati."><figcaption><p>Schede delle fasi con tempi di elaborazione aggregati.</p></figcaption></figure>
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+
+### Confronta con la Media globale
+
+L'interruttore **Confronta con la Media globale** controlla se la Media globale DocBits viene mostrata sulle schede e nel grafico. Quando è abilitato, il tempo medio su ciascuna scheda è colorato in base al codice cromatico:
+
+* **Verde** — il tuo Tempo medio è uguale o inferiore alla Media globale
+* **Arancione** — il tuo Tempo medio è fino al **+25%** sopra la Media globale
+* **Rosso** — il tuo Tempo medio è del **+25%** o più sopra la Media globale
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-it.png" alt="Durata media confrontata con la media globale. L’etichetta Fluire indica la fase del flusso del documento."><figcaption><p>Durata media confrontata con la media globale. L’etichetta Fluire indica la fase del flusso del documento.</p></figcaption></figure>
+
+## Grafico del tempo medio
+
+Il Grafico del tempo medio visualizza come il tempo di elaborazione è distribuito tra le fasi del flusso selezionate. Usa il selettore **Raggruppa per** per confrontare tra diverse dimensioni:
+
+* **Fasi del flusso** — vedi quali fasi consumano più tempo
+* **Sotto-organizzazione** — identifica le variazioni tra le unità aziendali
+* **Tipo di documento** — confronta i tempi di elaborazione tra i tipi di documento
+* **Fornitore** — scopri quali fornitori hanno i tempi di elaborazione più lunghi
+* **Gruppo** — confronta tra gruppi di utenti assegnati (solo per i tipi di flusso Stato e Interazione dell'utente)
+
+Quando **Confronta con la Media globale** è abilitato, il grafico mostra anche la Media globale DocBits come riferimento di benchmark.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+
+## Documenti principali
+
+La scheda **Documenti principali** elenca i singoli documenti corrispondenti al set di filtri attivo, classificati in base al tempo totale trascorso.
+
+* Interruttore **Ordinamento** — passa tra **decrescente** (i più lenti per primi) e **crescente** (i più veloci per primi).
+* Menu a discesa **Dimensione pagina** e paginazione — sfoglia il set di risultati.
+* **Nascondi/mostra** un documento tramite l'icona dell'occhio accanto ad esso — i documenti nascosti vengono esclusi da tutti i calcoli temporali nella dashboard.
+* **Nascondi/mostra tutti** i documenti nel filtro tramite l'icona dell'occhio nell'intestazione.
+* **Fai clic su un documento** (nome file o barra di avanzamento) per copiare il suo ID documento negli appunti.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+
+## Grafico di tendenza temporale
+
+Tieni traccia delle tendenze delle prestazioni nel tempo e individua le anomalie. Il Grafico di tendenza temporale mostra il **Tempo medio** delle fasi del flusso attualmente selezionate e può essere raggruppato per:
+
+* **Fasi del flusso** — una riga per ogni fase selezionata
+* **Sotto-organizzazione**
+* **Tipo di documento**
+* **Fornitore**
+* **Gruppo** (disponibile per i tipi di flusso **Stato** e **Interazione dell'utente**)
+
+Ciò rende facile rilevare un picco improvviso per uno specifico fornitore, o un aumento graduale per un determinato tipo di documento, prima che diventi un problema critico.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+
+## Tabella dati
+
+La Tabella dati fornisce accesso completo a tutti i dati di riga sottostanti per il set di filtri attivo.
+
+* **Trascina le colonne nel pannello Colonne nascoste** (a sinistra della tabella) per rimuoverle dalla vista. Le colonne nascoste vengono utilizzate per l'aggregazione — i tempi **Minimo / Massimo / Media** vengono ricalcolati dinamicamente in base alle colonne visibili. Trascina nuovamente un chip nella tabella (o fai clic sull'icona **+**) per ripristinare la colonna.
+* **Ordina** facendo clic sulle intestazioni delle colonne e **riordina** le colonne tramite trascinamento della selezione.
+* **Scarica CSV** tramite il pulsante nell'intestazione della scheda — vengono esportate solo le colonne attualmente visibili.
+
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-it.png" alt="Tabella di analisi con intestazioni italiane; i valori dei documenti sono nascosti. L’etichetta Fluire indica la fase del flusso del documento."><figcaption><p>Tabella di analisi con intestazioni italiane; i valori dei documenti sono nascosti. L’etichetta Fluire indica la fase del flusso del documento.</p></figcaption></figure>
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+La scheda **Touchless Intelligence** mostra quanti documenti passano attraverso DocBits senza che nessuno li tocchi e perché gli altri si fermano. Vedi [Touchless Intelligence](touchless-intelligence.md).

@@ -1,0 +1,93 @@
+{
+  "locale": "pl",
+  "title": "Sprawdź klasyfikację elektronicznych not kredytowych",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "Elektroniczna nota kredytowa jest wyświetlana jako Invoice. Odczytaj oryginalny plik XML. Kod typu 381 oznacza notę kredytową.",
+      "caption": "Elektroniczna nota kredytowa jest wyświetlana jako Invoice. Odczytaj oryginalny plik XML. Kod typu 381 oznacza notę kredytową."
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "Domyślne reguły FACTURX i ZUGFeRD rozpoznają też 261. Kody 383 i 384 oznaczają notę debetową i fakturę skorygowaną. Nie klasyfikuj ich jako not kredytowych.",
+      "caption": "Domyślne reguły FACTURX i ZUGFeRD rozpoznają też 261. Kody 383 i 384 oznaczają notę debetową i fakturę skorygowaną. Nie klasyfikuj ich jako not kredytowych."
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "Otwórz E-Doc dla wykrytego formatu. Niestandardowa transformacja organizacji ma pierwszeństwo przed domyślną. Sprawdź aktywną wersję.",
+      "caption": "Otwórz E-Doc dla wykrytego formatu. Niestandardowa transformacja organizacji ma pierwszeństwo przed domyślną. Sprawdź aktywną wersję."
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "Dla FACTURX wyszukaj INVOICE_TYPE. Stała Invoice może zastąpić oryginalny kod noty kredytowej. Porównaj transformację niestandardową z domyślną.",
+      "caption": "Dla FACTURX wyszukaj INVOICE_TYPE. Stała Invoice może zastąpić oryginalny kod noty kredytowej. Porównaj transformację niestandardową z domyślną."
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "Przetestuj przekształcony XML. Sprawdź, czy Extraction Paths odczytuje invoice_type z właściwego węzła dla tego formatu. Sprawdź późniejsze skrypty i zapisaną wartość.",
+      "caption": "Przetestuj przekształcony XML. Sprawdź, czy Extraction Paths odczytuje invoice_type z właściwego węzła dla tego formatu. Sprawdź późniejsze skrypty i zapisaną wartość."
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "Utwórz wersję roboczą. Save jej nie aktywuje. Przetestuj reprezentatywne faktury i noty kredytowe. Aktywuj znacznikiem wyboru dopiero po pomyślnych kontrolach.",
+      "caption": "Utwórz wersję roboczą. Save jej nie aktywuje. Przetestuj reprezentatywne faktury i noty kredytowe. Aktywuj znacznikiem wyboru dopiero po pomyślnych kontrolach."
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "Sprawdź nowy dokument, w tym kwoty i eksport. Zachowaj mapowania niestandardowe. Przed ponownym uruchomieniem starego dokumentu sprawdź zatwierdzenia, eksporty i ręczne zmiany.",
+      "caption": "Sprawdź nowy dokument, w tym kwoty i eksport. Zachowaj mapowania niestandardowe. Przed ponownym uruchomieniem starego dokumentu sprawdź zatwierdzenia, eksporty i ręczne zmiany."
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "Ustawienie znaku ujemnego jest domyślnie włączone, ale można je wyłączyć. Potwierdź klasyfikację i konwencję znaków oczekiwaną przez Infor ERP lub SAP.",
+      "caption": "Ustawienie znaku ujemnego jest domyślnie włączone, ale można je wyłączyć. Potwierdź klasyfikację i konwencję znaków oczekiwaną przez Infor ERP lub SAP."
+    }
+  ],
+  "labels": {
+    "xml": "Oryginalny XML",
+    "stored": "Zapisana wartość",
+    "invoice": "Invoice",
+    "credit": "Credit Note",
+    "credit_codes": "Nota kredytowa",
+    "other_codes": "Inne typy dokumentów",
+    "debit": "Nota debetowa",
+    "corrected": "Faktura skorygowana",
+    "source": "Używane źródło",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "Aktywna wersja",
+    "transform": "Transformacja",
+    "constant": "Stała wartość",
+    "compare": "Porównaj źródła",
+    "paths": "Extraction Paths",
+    "scripts": "Późniejsze skrypty",
+    "verify": "Sprawdź zapisaną wartość",
+    "draft": "Wersja robocza",
+    "save": "Zapisz",
+    "test": "Testuj",
+    "activate": "Aktywuj",
+    "saved": "Zapisana wersja robocza",
+    "check": "Znacznik wyboru",
+    "safety": "Nowy dokument testowy",
+    "preserve": "Zachowaj mapowania niestandardowe",
+    "history": "Sprawdź dokumenty historyczne",
+    "approvals": "Zatwierdzenia",
+    "exports": "Eksporty",
+    "edits": "Ręczne zmiany",
+    "sign": "Sprawdź znaki kwot",
+    "enabled": "Domyślnie włączone",
+    "configurable": "Konfigurowalne",
+    "result": "Klasyfikacja + eksport",
+    "transformed": "Przekształcony XML"
+  },
+  "notes": {}
+}

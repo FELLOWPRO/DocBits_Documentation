@@ -583,7 +583,7 @@ Before deploying this pattern:
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#field-comparison)
 
 ### Next Steps
-- Implement error handling: [Error Handling Pattern](error-handling-pattern.md)
+- Resolve API errors: [Error Handling](#error-handling) above
 - Add task creation: [Task Management Pattern](task-management-pattern.md)
 - Transform data: [Data Transformation Pattern](data-transformation-pattern.md)
 

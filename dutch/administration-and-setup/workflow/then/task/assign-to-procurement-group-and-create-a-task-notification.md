@@ -1,0 +1,74 @@
+# Wijs toe aan de inkoopgroep en maak een taak/melding aan
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_procurement_group_sequential_v2-nl-nl.png" alt="Wijs toe aan de inkoopgroep en maak een taak/melding aan, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+## **Doel**
+
+De workflow-kaart "**Wijs een document toe aan de inkoopgroep en maak een taak/melding**" wijst een document toe aan een opgegeven inkoopgroep, maakt een taak of melding aan met gedefinieerde details en stelt de groep optioneel via e-mail op de hoogte. Hij prioriteert de taakuitvoering op basis van een configureerbare numerieke prioriteitswaarde.
+
+## **Onderdelen van de kaart**
+
+1. **Groepsnaam**
+   * **Beschrijving:** Geeft de inkoopgroep op die verantwoordelijk is voor het afhandelen van het document.
+   * **Details:** Een veld waarin de gebruiker handmatig de naam van de inkoopgroep kan invoeren.
+2. **Taak/Melding**
+   * **Beschrijving:** Definieert of er een taak of melding voor de groep wordt aangemaakt.
+   * **Details:** Een veld waarin de gebruiker kan kiezen tussen het aanmaken van een taak of een melding
+3. **Titel**
+   * **Beschrijving:** De titel van de taak of melding die voor de groep wordt aangemaakt.
+   * **Details:** Een veld om een beknopte en herkenbare titel voor de taak of melding te bieden.
+4. **Beschrijving**
+   * **Beschrijving:** Verdere details over de taak of melding.
+   * **Details:** Een veld om het doel van de taak te beschrijven en context of instructies te bieden.
+5. **Prioriteit**
+   * **Beschrijving:** Definieert het urgentieniveau van de taak of melding.
+   * **Opties:**
+     * **High:** Taak vereist onmiddellijke aandacht.
+     * **Middel:** Taak is belangrijk maar niet urgent.
+     * **Low:** Taak kan op een later tijdstip worden afgehandeld.
+6. **E-mail verzenden**
+   * **Beschrijving:** Configureert of er een e-mailmelding naar de groep moet worden verzonden.
+   * **Opties:**
+     * **True:** Verzendt een e-mailmelding naar de inkoopgroep.
+     * **False:** Er wordt geen e-mailmelding verzonden.
+7. **Waarde**
+   * **Beschrijving:** Stelt de numerieke prioriteit voor de taakuitvoering in.
+   * **Details:** Een veld om een numerieke waarde in te voeren, waarbij een lager getal een hogere prioriteit vertegenwoordigt.
+
+## **Functionaliteit**
+
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de acties alleen uit als aan de gedefinieerde workflow-voorwaarden wordt voldaan.
+* **Groepstoewijzing en aanmaak van taak/melding:**\
+  Het document wordt toegewezen aan de opgegeven inkoopgroep. Er wordt een taak of melding aangemaakt met de opgegeven titel, beschrijving en prioriteit.
+* **E-mailmelding:**\
+  Als "Send Mail" op True is ingesteld, ontvangt de groep een e-mail over de taak of melding.
+
+## **Opzet en configuratie**
+
+1. **Group Name definiëren:**
+   * Voer de naam van de inkoopgroep in het veld Group Name in.
+2. **Taak-/meldingsdetails configureren:**
+   * Geef de Title en Description voor de taak of melding op.
+   * Selecteer de Prioriteit in het vervolgkeuzemenu (Hoog, Gemiddeld of Laag).
+3. **E-mailmelding inschakelen:**
+   * Stel "Send Mail" in op True of False, afhankelijk van of de groep een e-mail moet ontvangen.
+4. **Numerieke prioriteit instellen:**
+   * Voer een numerieke waarde in het veld Value in om de prioriteit van de taak te bepalen, waarbij lagere waarden het eerst worden verwerkt.
+5. Sla de kaartconfiguratie op en activeer de workflow.
+
+## **Conclusie**
+
+De workflow-kaart "Assign Document to Procurement Group and Create Task/Notification" zorgt ervoor dat documenten naar de juiste groep worden geleid met duidelijke taakinstructies en prioriteitsniveaus. Door optionele e-mailmeldingen mogelijk te maken, verbetert deze kaart de zichtbaarheid van taken en zorgt hij voor een soepele workflow-uitvoering.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktisch voorbeeld
+
+**Wanneer gebruiken:** Combineer geprioriteerde inkoopopdracht met een beoordelingstaak.
+
+**Configuratie:** Selecteer `Demo Procurement`, titel `Review order variance`, taakprioriteit en toewijzingsprioriteit.
+
+**Verwacht resultaat en tegenvoorbeeld:** Het geconfigureerde inkoopdoel ontvangt de gedocumenteerde opdracht en taak/melding. Controleer beide en hun prioriteiten in het resultaat.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

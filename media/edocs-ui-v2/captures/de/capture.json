@@ -1,0 +1,140 @@
+{
+  "locale": "de",
+  "environment": "development",
+  "captured_at": "2026-10-18T06:56:40.909Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "user menu",
+    "version authors",
+    "mailto links",
+    "notifications"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "format-list",
+      "file": "format-list.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=FACTURX%201.0.05%20-%20ZUGFERD%202.1",
+      "sha256": "bfc5ea4ee86b361cb5878e9eb32811531b6e2891052fa782fc8d6ee4533d858b",
+      "focus": null
+    },
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=FACTURX%201.0.05%20-%20ZUGFERD%202.1",
+      "sha256": "f704b5a6b0c62d5c16447d5490114cf4b60daff6d3ff57d279dc05944f2c9c5d",
+      "focus": null
+    },
+    {
+      "name": "transformation",
+      "file": "transformation.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/4282256e-11fe-4bad-a10e-bda9b62fc6d0/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "768937ef509ed99e377876b4670fb3674e69be534ba2c8aceb04b08714f5ede7",
+      "focus": {
+        "found": true,
+        "line": 125,
+        "term": "INVOICE_TYPE"
+      }
+    },
+    {
+      "name": "transformation-code",
+      "file": "transformation-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/4282256e-11fe-4bad-a10e-bda9b62fc6d0/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "810c87577b53001210d657e437b39c62039ce2a59c3f25215bafa8a5b3709b57",
+      "focus": {
+        "found": true,
+        "line": 125,
+        "term": "INVOICE_TYPE"
+      }
+    },
+    {
+      "name": "versions",
+      "file": "versions.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/4282256e-11fe-4bad-a10e-bda9b62fc6d0/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "17519c5beaa9909498f470170d0058ce191e181d8bfb80c9105a746805cf9dee",
+      "focus": null
+    },
+    {
+      "name": "preview-panel",
+      "file": "preview-panel.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/4282256e-11fe-4bad-a10e-bda9b62fc6d0/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "ff174abf7d4ae15774fa553865b6c32fa3dd748f213fcead16b7f93e26bc0669",
+      "focus": null
+    },
+    {
+      "name": "preview-template",
+      "file": "preview-template.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/7c3f5dd4-16b3-441a-b90a-6d16de8a1a8d/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=PREVIEW&attribute_type=XSLT&title=INVOICE",
+      "sha256": "7d528b624d921b27bec1d064d41b435df7bf5a9d53c7ef8d1580194827e3e05a",
+      "focus": null
+    },
+    {
+      "name": "preview-template-code",
+      "file": "preview-template-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/7c3f5dd4-16b3-441a-b90a-6d16de8a1a8d/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=PREVIEW&attribute_type=XSLT&title=INVOICE",
+      "sha256": "0852595eb2e16628491fcb6942d4390459fb78866e15d0dad9233a2d3a096a2a",
+      "focus": null
+    },
+    {
+      "name": "extraction-paths",
+      "file": "extraction-paths.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/ec49d294-ae11-4412-a701-87004b0a80bc/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=EXTRACTION%20PATHS&attribute_type=JSON&title=INVOICE",
+      "sha256": "0b1b02ed0d50a6c60ae63e7e37973477a7699b2dbee17a6147a7a4d326d6dac5",
+      "focus": {
+        "found": true,
+        "line": 16,
+        "term": "invoice_type"
+      }
+    },
+    {
+      "name": "extraction-paths-code",
+      "file": "extraction-paths-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/ec49d294-ae11-4412-a701-87004b0a80bc/FACTURX%201.0.05%20-%20ZUGFERD%202.1?attribute_name=EXTRACTION%20PATHS&attribute_type=JSON&title=INVOICE",
+      "sha256": "e30aaed29a2912680dfda3846679a7f69c7997304ec3341b2ce480aa3646c787",
+      "focus": {
+        "found": true,
+        "line": 16,
+        "term": "invoice_type"
+      }
+    },
+    {
+      "name": "negative-sign",
+      "file": "negative-sign.png",
+      "url": "https://dev.docbits.com/nova/settings/modules/document-integration",
+      "sha256": "dd3d22773afaf90b2da802882942c61ac39279bdb7308cb0eaf18af84bb7394e",
+      "focus": null
+    },
+    {
+      "name": "negative-sign-control",
+      "file": "negative-sign-control.png",
+      "url": "https://dev.docbits.com/nova/settings/modules/document-integration",
+      "sha256": "0886fa6ee3c5f5e761e0a342d00d40a415067a47254945921895d1429bf19923",
+      "focus": null
+    }
+  ],
+  "rows": [
+    [
+      "TRANSFORMATION",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "PREVIEW",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "EXTRACTION PATHS",
+      "Default",
+      "JSON",
+      "—"
+    ]
+  ],
+  "runtime_language": "de"
+}

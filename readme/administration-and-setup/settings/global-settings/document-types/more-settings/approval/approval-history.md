@@ -1,24 +1,21 @@
 # Approval History
 
-To enable the **Approval History** feature:
+Approval History helps users inspect decisions in a document's approval workflow. The previous version of this page linked an old **General Settings** path and showed three images from an older interface without explaining the controls. Use the current document-type settings to enable the option, then verify the result with a synthetic approval in your own organisation.
 
-1. Go to **Settings** → **General Settings** → **Document Types** → **More Settings** → **Approval**.
-2. Turn on **Approval History**.
+## Enable the option for a document type
 
-Once enabled, the approval history will be visible in the **Pending Approval** screen. You can switch to the **Approval History** screen by clicking the button in the top left corner.
+1. With an administrator account, open **Settings → Document Types**. Find the document type, such as **Invoice**, and select its **gear icon** to open **More Settings**. The **Layouts** and **Fields** links on the card lead to different editors.
 
-<figure><img src="../../../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/dbdc222-document-types-en.png" alt="English DocBits Document Types page with an Invoice card and gear icon for More Settings"><figcaption><p>Open More Settings on the document type whose approval workflow you want to inspect.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+2. Expand **Approval & Rejection** and locate **Approval History**. This switch is separate from **Approve before export**, **Second Approval** and **Approval Stamp**. The English Sandbox screenshot shows the synthetic **DocBits Documentation Test A** organisation with all four switches **off**. No setting was changed for this guide.
 
-In the **Approval History** screen, you will see the following details:
+   <figure><img src="../../../../../../.gitbook/assets/dbdc222-approval-history-en.png" alt="English Invoice More Settings page with Approval and Rejection expanded and Approval History switched off"><figcaption><p>Check the Approval History switch for the selected document type.</p></figcaption></figure>
 
-* **Who** approved or rejected the document.
-* The **time** and **order** of approvals or rejections.
-* If set up, **comments** explaining the reasons behind the decisions.
-* **Red** indicates a **rejection**.
-* The color matching the environment (e.g., green) indicates **approval**.
+3. Enable Approval History only after confirming the intended approval workflow and who may see its decisions. Record the previous setting so a test can be compared with it.
 
-<figure><img src="../../../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+## Verify with a test document
 
-This feature provides enhanced transparency by tracking and visualizing the approval process.
+Use a synthetic document of the configured type that actually enters the approval workflow. Have an authorised test user approve or reject it, then open that document's approval view and inspect the available history. Confirm the decision, user, time and any entered comment against the action you performed. For a workflow with more than one approver, check the sequence after each decision. If no history is visible, check the document type, workflow state, switch and viewing permissions before treating it as a documentation or product error.
+
+The old screenshots' colours and top-left navigation are not presented as current behaviour because no approved or rejected document was available in Test A. The two new images verify the current settings path and switch only; the history view still needs a synthetic document with approval activity.

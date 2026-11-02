@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.916
+Argentina AFIP i Factura Electronica to
+skonfigurowane oznaczenia. Wpis
+
+formats_02
+00:00:05.916 --> 00:00:10.490
+klasyfikacji not kredytowych nie ma
+dedykowanego pakietu ekstrakcji w
+
+formats_03
+00:00:10.490 --> 00:00:16.109
+sprawdzonym stanie. Zweryfikuj faktycznie
+używane mapowanie i przetestuj rzeczywisty
+
+formats_04
+00:00:16.109 --> 00:00:18.133
+przykład noty kredytowej.
+
+workflow_01
+00:00:18.883 --> 00:00:24.351
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:24.351 --> 00:00:29.924
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:29.924 --> 00:00:32.733
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:33.483 --> 00:00:39.509
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:39.509 --> 00:00:45.441
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:45.441 --> 00:00:48.267
+podatkowego ani dostarczenia przez sieć.
+

@@ -56,9 +56,7 @@ Inizia impostando il **Conteggio righe intestazione** e il **Numero minimo di ri
 
 ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fp0k-n1IG3_FHexG4iAlISSmN4Yaq9xUjRO2cLpV3w6a67DpULRnxj4x291DOXBVx2SHqKp6Zs-ZXxr8KHKzT9O6oCwgEOkvfMqwpDGZUrfFpozdR16sbaybtrMEqDOXO1TsNmuPFz6mOKX0pR8I5RO8\&width=768\&dpr=4\&quality=100\&sign=e19a8ef6\&sv=2)
 
-Abilita anche **Sposta righe extra nel Cestino** per pulire i dati non rilevanti:
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FP9Mbga3kWRkhRFYPRQKN6IXCYTnMHpfXr7GIBqbuwz-RYyq7fMuKRxJgzU0HVdxFxkI_5S2DA8ThYNveXlgrDYZ7JP_jOYf9wd9ldDzg1abzMD7HE0N8NC-wrWdoZvm5M2q_XVWTi6epBMBtHvbFe0\&width=768\&dpr=4\&quality=100\&sign=128029db\&sv=2)
+Abilita anche **Sposta righe extra nel Cestino** per pulire i dati non rilevanti.
 
 Successivamente, definisci la colonna chiave di raggruppamento, ad es. _Posizione_:
 

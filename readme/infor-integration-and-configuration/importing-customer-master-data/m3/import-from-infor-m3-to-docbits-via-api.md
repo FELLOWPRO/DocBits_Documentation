@@ -1,403 +1,46 @@
-# Importazione da Infor M3 a DocBits tramite API
+# Importare i dati anagrafici da Infor M3 tramite ION API
 
-## Passo 1: Creare un'API
+Usare questa guida quando un amministratore di Infor M3 deve trasferire BOD selezionati a DocBits tramite Infor ION e API Gateway. La versione precedente di questa pagina conteneva 42 schermate di un vecchio tenant Infor e indirizzi API di Sandbox fissi. Quelle schermate e quegli indirizzi non sono un modello di configurazione sicuro per un altro tenant.
 
-1. Apri **Infor OS** e naviga su **API Gateway** > **Available APIs**.
-2. Fai clic su **Add**, quindi seleziona **Create New**.
-3. Compila i dettagli dell'API:
-   * **Application Name**: `DocBits-Stage`, `DocBits-Sandbox`, `DocBits-Prod` o `DocBits-Demo` (in base al tuo ambiente).
-   * **Suite Name**: Uguale al nome dell'applicazione.
-   * **API Context**: Uguale al nome dell'applicazione.
-   * **Description**: Uguale al nome dell'applicazione.
-   * **Icon**: Seleziona un'icona documento blu.
+Il percorso da verificare è **M3 pubblica un BOD → ION lo instrada → API Gateway chiama l'API di DocBits → DocBits mostra il record importato**. Ogni fase ha un proprio stato. Vedere un record in DocBits è la verifica finale; un data flow ION attivo da solo non dimostra un'importazione.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_1.png)
+## Prima di configurare il flusso
 
-4. Aggiungi un **Target Endpoint**:
+1. Confermare l'azienda M3, il tenant ION, l'organizzazione DocBits e l'ambiente che si desidera collegare. Chiedere a un amministratore DocBits l'URL base corrente dell'API e l'operazione API richiesta dalla descrizione OpenAPI di quell'ambiente. Gli host regionali possono differire; non copiare un host o un percorso proxy di API Gateway da una vecchia schermata.
+2. Concordare quali tipi di documento servono all'organizzazione. I dati anagrafici dei fornitori e degli ordini di acquisto possono essere verificati in DocBits. Aggiungere documenti di consegna e di contabilità solo quando il loro caso d'uso e l'operazione di ricezione sono confermati.
+3. Preparare un account di servizio Infor con il permesso per l'operazione API selezionata e una credenziale API DocBits con l'accesso minimo necessario. Inserire le credenziali solo nella schermata di configurazione autorizzata. Non incollare un file `.ionapi` completo o una chiave API in una pagina di documentazione, in un ticket Jira o in una schermata.
+4. Conservare un identificatore di test non sensibile per ogni BOD scelto, così da poter seguire lo stesso record in M3, in ION OneView e in DocBits.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_2.png)
+## Scegliere il documento e l'operazione di ricezione
 
-* **Target Endpoint URL**: Utilizza l'URL appropriato per il tuo ambiente:
-  * `https://stage.api.docbits.com`
-  * `https://sandbox.api.docbits.com`
-  * `https://api.docbits.com`
-  * `https://demo.api.docbits.com`
-* **Target Endpoint Description**: `Stage`, `Sandbox`, `Prod` o `Demo` (corrispondente all'ambiente).
-* **Proxy Context**: Uguale all'ambiente (`Stage`, `Sandbox`, `Prod` o `Demo`).
-* **Proxy Security**: Seleziona **OAuth 2.0**.
+L'esempio del vecchio tenant usava questi BOD. Usare i metadati API attuali e il proprio progetto di integrazione per confermare ogni associazione prima di creare un connection point:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_3.png)
+| BOD nell'esempio precedente | Dati previsti in DocBits | Dove verificare il formato di ricezione |
+| --- | --- | --- |
+| `Sync.SupplierPartyMaster`, `Sync.RemitToPartyMaster` | Dati anagrafici dei fornitori | [Importazione BOD fornitori](../importing-via-the-api/supplier-bod.md) |
+| `Sync.PurchaseOrder` | Ordini di acquisto | [Importazione BOD ordini di acquisto](../importing-via-the-api/purchase-order-bod.md) |
+| `Sync.ReceiveDelivery` | Dati di consegna | [Importazione BOD Receive Delivery](../importing-via-the-api/receive-delivery-bod.md) |
+| `Sync.AdvanceShipNotice`, `Sync.ChartOfAccounts`, `Sync.CodeDefinition-AccountingDimension` | Dati anagrafici aggiuntivi per funzioni configurate | [Importazione XML dei dati anagrafici](../importing-via-the-api/master-data-xml.md) e i metadati API del proprio tenant |
 
-* **Target Endpoint Security**:
-  * **Authentication Type**: API Key
-  * **Key Mode**: Header
-  * **Key Name**: `X-API-KEY`
-  * **Key Value**: Recupera la chiave API da **DocBits** navigando su **Settings** > **Global Settings** > **Integration**, quindi copia la chiave API e incollala come valore della chiave.
-* Salva la configurazione del Target Endpoint.
+`Acknowledge.SupplierInvoice` appartiene a un flusso di conferma delle fatture e va configurato separatamente da un'importazione di dati anagrafici da M3 a DocBits. La vecchia pagina mescolava queste direzioni e includeva un corpo di richiesta specifico del tenant; non copiare quel corpo in un nuovo flusso senza aver verificato il contratto dell'endpoint e i controlli di accesso.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_4.png)
+## Configurare Infor OS e ION
 
-5. Aggiungi la documentazione API:
+1. In Infor OS, preparare il target di API Gateway per l'operazione API DocBits **confermata**. Verificare con l'amministratore DocBits l'URL di destinazione, il metodo di richiesta, il formato della richiesta e l'autenticazione. Per i controlli del Gateway usare la [guida attuale di Infor API Gateway](https://docs.infor.com/inforos/2025.x/en-us/useradminlib_cloud/apigatewayag_cloud/ionapi_2025.x_apigatewayag_cloud_en-us.pdf).
+2. In **ION → Connect → Connection Points**, creare o selezionare il connection point per l'API di DocBits. In **Documents** aggiungere solo i BOD scelti, selezionare l'operazione Gateway corrispondente e configurare il payload di richiesta previsto dall'operazione. Le [istruzioni sull'elemento API](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/hqg1491985489422.html) di Infor spiegano l'account di servizio e le impostazioni della richiesta.
+3. In **ION → Connect → Data Flows**, collegare l'origine M3 e la destinazione API. Verificare l'elenco dei documenti, i filtri e le associazioni; quindi salvare e attivare il flusso. Infor distingue tra [salvare e attivare un data flow](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/lsm1436532178755.html).
+4. Pubblicare da M3 un BOD di test approvato. In **ION OneView** cercare quell'identificatore e confermare quale connection point, associazione e chiamata API lo ha elaborato. Vedere [Infor OneView](https://docs.infor.com/inforos/latest/en-us/useradminlib_cloud/iondeskceug/lsm1436532196155.html). Se non viene mostrato alcun percorso o viene mostrato un errore, correggere prima il flusso ION e poi verificare in DocBits.
 
-* Torna alla sezione della documentazione API facendo clic su **Documentation Icon** nell'Endpoint creato.
+## Verificare il risultato in DocBits
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_5.png)
+Aprire **Impostazioni → Elaborazione documenti → Ricerca di dati anagrafici**. Espandere **Dati di ingresso BOD**, scegliere il tipo pertinente e cercare l'identificatore di test. Le schede **Fornitore** e **Ordine di acquisto** mostrate qui sotto sono le viste italiane attuali con dati dimostrativi sintetici. Le loro righe **non sono prova di un'importazione da M3**.
 
-* Scorri verso il basso fino alla sezione **Documentation** e fai clic su **+ Add Documentation**.
-  * **Name**: `DocBits-Stage`, `DocBits-Sandbox`, `DocBits-Prod` o `DocBits-Demo` (corrispondente all'ambiente).
-  * **Type**: Swagger
-  * **Enter URL or Upload Swagger JSON/YAML**: Utilizza l'URL appropriato del file Swagger per il tuo ambiente:
-    * `https://stage.api.docbits.com/openapi.json`
-    * `https://sandbox.api.docbits.com/openapi.json`
-    * `https://api.docbits.com/openapi.json`
-    * `https://demo.api.docbits.com/openapi.json`
-  * Assicurati che non ci siano spazi alla fine dell'URL.
+<figure><img src="../../../.gitbook/assets/dbdc774-supplier-bod-input-it-20261012.png" alt="Schermata italiana di Ricerca di dati anagrafici di DocBits con la scheda Fornitore e i controlli di ricerca per verificare un fornitore importato"><figcaption><p>Scegliere Fornitore, selezionare una colonna di ricerca e inserire l'identificatore di test del fornitore.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_6.png)
+<figure><img src="../../../.gitbook/assets/dbdc774-purchase-order-bod-input-it-20261012.png" alt="Menu italiano Dati di ingresso BOD di DocBits con Ordine di acquisto selezionato e una tabella ricercabile degli ordini di acquisto"><figcaption><p>Scegliere Ordine di acquisto e cercare l'ordine di test; le righe mostrate sono dati dimostrativi sintetici.</p></figcaption></figure>
 
-* La documentazione API verrà aggiunta automaticamente e verrà attivato l'aggiornamento dei metadati.
+In entrambe le schede, **Ricerca per colonna** sceglie il campo, **Stringa di ricerca** accetta l'identificatore e la lente avvia la ricerca. Le intestazioni della tabella ordinano le righe visibili; le frecce in basso spostano tra le pagine. **Azioni** apre le operazioni della tabella e non è necessario per questa verifica di sola lettura. La **×** su una scheda la chiude. Il pulsante più di **Importato** serve per il caricamento di file CSV, non per ricevere un BOD da ION.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_7.png)
+Se il BOD compare in OneView ma il record è assente in DocBits, verificare l'operazione API e la risposta, l'organizzazione/l'ambiente, il tipo di documento, il formato del payload e l'identificatore usato nella ricerca. Chiedere all'amministratore DocBits il registro di importazione corrispondente. Non dedurre il successo da una chiamata HTTP o da una schermata di una riga dimostrativa non correlata.
 
-## Passo 2: Creare un API Connection Point
-
-1. Naviga su **OS** > **ION** > **Connect** > **Connection Point**.
-2. Fai clic su **Add** e seleziona **API** come tipo di connessione.
-3. Compila i dettagli richiesti:
-   * **Name**: `DocBits_Import`
-   * **Description**: `DocBits_Import`
-   * **Service Account**: Carica il file dell'account di servizio creato in precedenza.
-
-### Passo 2.1: Aggiungere e configurare i documenti
-
-* Non è necessario aggiungere tutti i documenti, solo quelli necessari.
-* I documenti **Sync.ChartOfAccounts** e **Sync.CodeDefinition** sono richiesti per la contabilità automatica.
-
-## Sync.SupplierPartyMaster
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. Fai clic su **Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Sync.SupplierPartyMaster`
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_8.png)
-
-3. Configura l'ION API:
-   * **API Call Name**: `Sync.SupplierPartyMaster`
-   * **Click on Select**
-   * Per **Product**, scegli l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/import/supplier_bod
-       ```
-   * Fai clic su **OK** per confermare la selezione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_9.png)
-
-4. Imposta il **Request Body**:
-   * Per **File**, seleziona **Input Document = No Compression**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_10.png)
-
-## Sync.RemitToPartyMaster
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. **Click Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Sync.RemitToPartyMaster`
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_11.png)
-
-3. **Configura l'ION API**:
-   * **API Call Name**: `Sync.RemitToPartyMaster`
-   * **Click on Select**
-   * Per **Product**, seleziona l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/import/supplier_bod
-       ```
-   * **Click OK** per confermare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_12.png)
-
-4. **Configura il Request Body**:
-   * Per **File**, seleziona **Input Document = No Compression**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_13.png)
-
-## Acknowledge.SupplierInvoice
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. **Click Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Acknowledge.SupplierInvoice`
-3. **Configura l'ION API**:
-   * **API Call Name**: `Acknowledge.SupplierInvoice`
-   * **Click on Select**
-   * Per **Product**, seleziona l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/infor/idm/handle_ack_bod
-       ```
-   * **Click OK** per confermare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_15.png)
-
-4. **Configura il Request Body**: Aggiungi i seguenti valori nella sezione **Request Body**:
-   * Per **idm\_doc\_type**, imposta **Value** = `M3_SupplierInvoice`
-   * Per **idm\_bod\_id\_field\_name**, imposta **Value** = `BOD_AlternateDocumentID_1`
-   *   Per **attributes\_map**, imposta **Value** =
-
-       ```
-       {"Export": "Success"}
-       ```
-   * Per **acl\_from**, imposta **Value** = `Public`
-   * Per **acl\_to**, imposta **Value** = `Private`
-   * Per **set\_to\_error\_on\_rejected**, imposta **Value** = `True`
-   * Per **delete\_from\_idm\_on\_rejected**, imposta **Value** = `True`
-   * Per **File**, imposta **Input Document = No Compression**.
-   * Per **ionapi\_json**: Aggiungi il contenuto del file ionapi.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_16.png)
-
-## Sync.PurchaseOrder
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. **Click Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Sync.PurchaseOrder`
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_17.png)
-
-3. **Configura l'ION API**:
-   * **API Call Name**: `Sync.PurchaseOrder`
-   * **Click on Select**
-   * Per **Product**, seleziona l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/import/purchase_order_bod
-       ```
-   * **Click OK** per confermare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_18.png)
-
-4. **Configura il Request Body**:
-   * Per **File**, imposta **Input Document = No Compression**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_19.png)
-
-## Sync.ReceiveDelivery
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. **Click Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Sync.ReceiveDelivery`
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_20.png)
-
-3. **Configura l'ION API**:
-   * **API Call Name**: `Sync.ReceiveDelivery`
-   * **Click on Select**
-   * Per **Product**, seleziona l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/import/receive_delivery_bod
-       ```
-   * **Click OK** per confermare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_21.png)
-
-4. **Configura il Request Body**:
-   * Per **File**, imposta **Input Document = No Compression**.
-
-## Sync.AdvanceShipNotice
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. **Click Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Sync.AdvanceShipNotice`
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_23.png)
-
-3. **Configura l'ION API**:
-   * **API Call Name**: `Sync.AdvanceShipNotice`
-   * Per **Product**, seleziona l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/master_data_lookup/xml/import_xml_file
-       ```
-   * **Click OK** per confermare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_24.png)
-
-4. **Configura il Request Body**:
-   * Per **data\_type**, imposta **Value** = `AdvanceShipNotice`
-   *   Per **field\_mappings**, imposta **Value** =
-
-       ```
-       { "ID": "//DataArea/LnTaxCode/DocumentID/ID" }
-       ```
-   * Per **File**, imposta **Input Document = No Compression**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_25.png)
-
-## Sync.ChartOfAccounts
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. **Click Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Sync.ChartOfAccounts`
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_26.png)
-
-3. **Configura l'ION API**:
-   * **API Call Name**: `Sync.ChartOfAccounts`
-   * Per **Product**, seleziona l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/master_data_lookup/xml/import_xml_file
-       ```
-   * **Click OK** per confermare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_27.png)
-
-4. **Configura il Request Body**:
-   * Per **data\_type**, imposta Value = `ChartOfAccounts`
-   *   Per **field\_mappings**, imposta Value =
-
-       ```
-       {
-           "ID": "//DataArea/ChartOfAccounts/IDs/ID",
-           "NominalAccount": "//DataArea/ChartOfAccounts/BaseChartOfAccounts/GLNominalAccount",
-           "AccountType": "//DataArea/ChartOfAccounts/BaseChartOfAccounts/AccountType",
-           "Description": "//DataArea/ChartOfAccounts/BaseChartOfAccounts/Description",
-           "DimensionProfile": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/ID",
-           "Dimension1": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[0]/ListID",
-           "Usage1": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[0]/Usage",
-           "Dimension2": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[1]/ListID",
-           "Usage2": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[1]/Usage",
-           "Dimension3": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[2]/ListID",
-           "Usage3": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[2]/Usage",
-           "Dimension4": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[3]/ListID",
-           "Usage4": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[3]/Usage",
-           "Dimension5": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[4]/ListID",
-           "Usage5": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[4]/Usage",
-           "Dimension6": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[5]/ListID",
-           "Usage6": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[5]/Usage",
-           "Dimension7": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[6]/ListID",
-           "Usage7": "//DataArea/ChartOfAccounts/DimensionProfileSet/DimensionProfile/DimensionUsage[6]/Usage"
-       }
-       ```
-   * Per **File**, imposta **Input Document = No Compression**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_28.png)
-
-## Sync.CodeDefinition-AccountingDimension
-
-1. Naviga sulla scheda **Documents** nell'API Connection Point.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_32.png)
-
-2. **Click Add New Document** e compila i seguenti dettagli:
-   * **Scenario**: `Send to API`
-   * **Documents**: `Sync.CodeDefinition`
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_29.png)
-
-3. **Configura l'ION API**:
-   * **API Call Name**: `Sync.CodeDefinition-AccountingDimension`
-   * Per **Product**, seleziona l'endpoint API creato nel **Passo 1: Creare un'API**.
-   *   Trova e seleziona:
-
-       ```
-       CustomerApi/DocBits-Sandbox/Sandbox/master_data_lookup/xml/import_xml_file
-       ```
-   * **Click OK** per confermare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_30.png)
-
-4. **Configura il Request Body**:
-   * Per **data\_type**, imposta Value = `M3Dimension`
-   *   Per **field\_mappings**, imposta Value =
-
-       ```
-       {
-           "ID": "//DataArea/CodeDefinition/DocumentID/ID",
-           "Dimension": "substring(//DataArea/CodeDefinition/CodeValue/@listID,21)",
-           "ListID": "//DataArea/CodeDefinition/ListID",
-           "CodeValue": "//DataArea/CodeDefinition/CodeValue",
-           "Description": "//DataArea/CodeDefinition/Description"
-       }
-       ```
-   * Per **File**, imposta **Input Document = No Compression**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_31.png)
-
-## Passo 3: Creare il Document Flow
-
-1. Naviga su **OS** > **ION** > **Connect** > **Data Flows**.
-2. Fai clic su **Add** e seleziona **Document Flow**.
-3. Compila i campi richiesti:
-   * **Name**: Utilizza un nome specifico per il tuo ambiente, come `M3-to-DocBits-Stage-Import-API`
-   * per stage, `M3-to-DocBits-Sandbox-Import-API` per sandbox, o `M3-to-DocBits-Prod-Import-API` per production.
-   * **Description**: Uguale al nome sopra.
-4. Configura l'Application Node:
-   * In **Application**, imposta il **Name** su `M3`.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_33.png)
-
-* Fai clic sul pulsante **+** e seleziona il Connection Point del cliente.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_34.png)
-
-* Fai clic sull'icona **Document** accanto all'Application Node.
-
-    * Seleziona tutti i documenti che desideri esportare/sincronizzare da LN a DocBits.
-    * Assicurati che questi documenti corrispondano a quelli selezionati nel **Passo 2: Creare un API Connection Point**.
-    * Se mancano documenti, devono essere aggiunti al Connection Point del cliente.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_35.png)
-
-5. Configura l'API Node:
-   * Aggiungi un **API** Node e posizionalo a destra dell'Application Node.
-   * Compila i campi richiesti:
-     * **Name**: `DocBits-API`
-     * **Description**: `DocBits-API`
-     * **ION API Connector**: Utilizza il Connection Point creato nel **Passo 2: Creare un API Connection Point**.
-   * Fai clic sull'icona **Document** accanto allo Stream Node. Questo dovrebbe essere vuoto.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_36.png)
-
-6. Finalizza la configurazione:
-   * Salva la configurazione.
-   * Fai clic su **Activate** per completare la configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import_from_infor_m3_to_docbits_via_api_37.png)
+Questa pagina è stata aggiornata usando i controlli attuali di DocBits Sandbox e la documentazione Infor. Non erano disponibili un tenant Infor né un trasferimento reale di BOD da M3 a DocBits per una prova end-to-end; un amministratore del tenant deve validare l'associazione finale e il risultato.

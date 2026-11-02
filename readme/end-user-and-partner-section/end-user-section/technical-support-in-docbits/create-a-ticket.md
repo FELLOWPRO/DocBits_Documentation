@@ -1,6 +1,12 @@
 # Crea un ticket
 
-Questo è uno strumento disponibile per te, nella schermata di convalida, nel caso si verifichi qualche tipo di problema durante la convalida del tuo documento in DocBits. Per sapere come verificare un documento, consulta la [schermata di convalida](../validation-screen/README.md).
+{% embed url="https://youtu.be/fQUIrp-qz9c" %}
+DocBits Tutorial sui ticket di supporto: segnala bug, allega file e ricevi assistenza più velocemente
+{% endembed %}
+
+Questo è uno strumento disponibile per te, nella schermata di convalida, nel caso si verifichi qualche tipo di problema durante la convalida del tuo documento in DocBits.
+
+Questo è uno strumento disponibile per te, nella schermata di convalida, nel caso si verifichi qualche tipo di problema durante la convalida del tuo documento in DocBits.
 
 Questa funzionalità si trova nel menu sopra l'area di anteprima del documento, come mostrato di seguito
 

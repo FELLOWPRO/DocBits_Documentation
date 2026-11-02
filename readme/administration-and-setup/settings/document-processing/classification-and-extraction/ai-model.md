@@ -1,59 +1,23 @@
 # Modello AI
 
-## Panoramica
+## Ambito del modello
 
-L'impostazione **Modello AI** consente di definire quale modello AI viene utilizzato per impostazione predefinita per l'**estrazione sul campo** e l'**estrazione della tabella** durante l'elaborazione dei documenti.\
-In questa sezione, puoi esaminare il costo in token per ciascun modello e vedere quale modello è attualmente assegnato a ciascun fornitore.
+Apri **Impostazioni → Elaborazione documenti → Classificazione ed estrazione** e individua **Modello AI** nella sezione di estrazione. La configurazione dell’organizzazione viene usata quando non esiste una preferenza applicabile al template di estrazione corrente.
 
-## Come Accedere
+<figure><img src="../../../../.gitbook/assets/native-global-ai-model-options-it-20261023.png" alt="Menu Modello AI con Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Sono livelli del prodotto. Le righe di preferenze sono mascherate; nessun modello è stato cambiato."><figcaption><p>Menu Modello AI con Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Sono livelli del prodotto. Le righe di preferenze sono mascherate; nessun modello è stato cambiato.</p></figcaption></figure>
 
-1.  Naviga su **Impostazioni** → **Elaborazione dei documenti** → **Classificazione ed estrazione**
+## Scegliere un livello
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_classification_and_extraction.png)
-2.  Scorri verso il basso fino alla sezione **Estrazione della tabella**
+Le sei opzioni visibili sono **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** e **Auto Nexus**. I nomi non garantiscono un particolare modello sottostante, prezzo, tempo o grado di precisione. Confronta gli stessi documenti rappresentativi e controlla campi, tabelle, tempi e costi nelle condizioni attuali dell’ambiente.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_1.png)
+## Preferenze del template
 
-## Opzioni del Modello AI
+La preferenza specifica viene salvata per organizzazione e template di estrazione (`tfidf_id`). Un fornitore può avere più template con preferenze indipendenti: cambiare una voce non aggiorna automaticamente tutti i suoi documenti o template. Una preferenza non impostata non significa sempre Fast.
 
-DocBits offre tre opzioni di modello AI per l'estrazione di campi e tabelle. Si differenziano per l'equilibrio tra **precisione di estrazione**, **velocità di elaborazione** e **costo in token per documento** — così puoi adattare l'opzione al tipo di documenti che elabori. Passa il mouse sull'icona informativa accanto all'impostazione per vedere il costo in token dell'opzione attualmente selezionata.
+Consulta [Modello AI specifico del fornitore](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md) per l’accesso dalla schermata di convalida.
 
-* **Full** – L'opzione più accurata, con la massima precisione di estrazione. Ideale per layout complessi, scansioni di bassa qualità o documenti in cui la precisione è la priorità. Essendo l'opzione più potente, è anche la più lenta, a **2 token per documento**.
-* **Fast** – Un'opzione bilanciata che unisce una buona precisione a un'elaborazione più rapida e a un costo inferiore. È l'opzione predefinita consigliata per la maggior parte dei documenti di tutti i giorni, a **1 token per documento**.
-* **Nexus** – Una terza opzione, attivabile su richiesta, che si basa su una famiglia di modelli diversa. Utile quando vuoi una seconda opinione per i fornitori su cui Fast e Full non concordano, oppure quando il modello alternativo legge meglio un particolare layout, a **1 token per documento**.
+## Rimuovere una preferenza
 
-| Opzione | Ideale per | Precisione | Velocità | Costo in token |
-|---------|-----------|------------|----------|----------------|
-| **Full** | Layout complessi, scansioni scadenti, alta precisione | Massima | La più lenta | 2 / documento |
-| **Fast** | Documenti di tutti i giorni (predefinito consigliato) | Alta | Veloce | 1 / documento |
-| **Nexus** | Fornitori per cui la famiglia di modelli alternativa funziona meglio (attivabile su richiesta) | Alta | Veloce | 1 / documento |
+Prima di eliminare una voce, identifica il template e tutte le preferenze interessate. L’eliminazione può rimuovere più preferenze del template, non soltanto il livello AI. Esamina l’eventuale conferma della versione in uso prima di procedere. Successivamente si applicano la configurazione dell’organizzazione e i valori di ripiego pertinenti; gli altri template possono mantenere impostazioni indipendenti.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
-
-## Tabella di Assegnazione del Modello AI
-
-Puoi anche configurare **modelli AI** specifici per fornitore direttamente nella schermata di **Convalida**, permettendoti di perfezionare l'accuratezza dell'estrazione per singoli fornitori.\
-\
-Per ulteriori informazioni, consulta la documentazione corrispondente [qui](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
-
-La tabella di assegnazione visualizza le impostazioni del modello AI per ciascun fornitore e include i seguenti dettagli:
-
-* **Supplier ID** – L'identificatore unico del fornitore
-* **AI Model** – Il modello AI attualmente assegnato al fornitore
-* **E-Text**: Indica se la funzione E-Text è abilitata
-* **Action** – Contiene l'opzione per eliminare l'entrata
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_3.png)
-
-### Elimina Entrata – Ripristina Impostazioni Specifiche del Fornitore
-
-Per ripristinare l'impostazione del modello AI di un fornitore ai valori predefiniti:
-
-1.  Clicca sull'icona del cestino nella colonna **Action** accanto all'entrata del fornitore.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_4.png)
-2.  Apparirà una finestra di conferma—conferma di voler eliminare l'entrata.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_5.png)
-
-Una volta eliminato, il fornitore tornerà a utilizzare il **modello AI** predefinito per l'**estrazione sul campo** e l'**estrazione della tabella**.
+La modifica non rielabora automaticamente i documenti storici e non garantisce convalida, abbinamento degli ordini, approvazione o esportazione. Durante questa verifica non sono stati eliminati template né eseguite nuove estrazioni.

@@ -1,5 +1,5 @@
-# Campi Estratti Validati
+# Validare i campi estratti
 
-La schermata di validazione ti permette di controllare, modificare e validare tutti i documenti importati. Puoi vedere il nome del documento, quanti pagine contiene, la data in cui è stato importato e il suo stato. Il pulsante azioni ti permette di assegnare, riavviare, validare o eliminare il documento.
+Apri una riga per accedere alla validazione. Confronta i campi estratti con il documento originale e correggi i valori se i tuoi permessi lo consentono. Completa la validazione dopo aver controllato campi obbligatori e messaggi. Campi e azioni dipendono dal tipo di documento, dallo stato e dalla configurazione.
 
-![](https://lh7-us.googleusercontent.com/Qsuq276tKp5GdkYv3Jfcjqske-IBpS-KqAtYf4q5mwEy6SFbsl9hC4oC94m8jwgnAOmTT7uHn2RPen-rXLo6q0ya7tHsJxjr0dbBeLDx6dAnjF6B0czSDQJxdDhx-E7OZD6MFZh-237jAfPrgQF0wGQ)
+La [guida alla dashboard](README.md) descrive ricerca, azioni e viste salvate.

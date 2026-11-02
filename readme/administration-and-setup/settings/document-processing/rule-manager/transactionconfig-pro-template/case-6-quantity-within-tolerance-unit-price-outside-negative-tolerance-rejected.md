@@ -1,39 +1,35 @@
-# Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)
+# Caso 6: Quantità entro tolleranza, prezzo sotto il limite (rifiutato)
 
-## Scenario:
+Lo scenario seguente illustra una mappatura configurata, non un modello predefinito di cui sia stata verificata la distribuzione. L’output effettivo, gli importi, i segni e i tipi di documento dipendono dalle regole e dalle espressioni `conflict_resolution` attive, dalla mappatura di esportazione e dalle decisioni di approvazione. Qualsiasi nota di debito o di credito descritta è subordinata a tale configurazione; l’esempio non ne garantisce l’emissione automatica né la conformità legale.
 
-The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+## Scenario
 
-## Action:
+La quantità è entro tolleranza, ma il prezzo unitario della fattura è inferiore all’intervallo consentito e lo scostamento di prezzo non è stato approvato.
 
-The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+## Azione illustrativa
 
-## Example:
+Una mappatura configurata per usare il prezzo del PO dopo il rifiuto manterrebbe la quantità e sostituirebbe il prezzo unitario fatturato con quello del PO. L’eventuale produzione di una rettifica, di una nota di debito, di una nota di credito o di nessun documento separato dipende dalla mappatura attiva e dalle approvazioni. Gli oneri aggiuntivi di testata si applicano solo se espressamente configurati.
 
-* **Purchase Order (PO):**
-  * Quantity: 100 units
-  * Unit Price: $10.00 per unit
-  * Total Amount: $1,000.00
-* **Invoice Received:**
-  * Quantity: 100 units (within tolerance of 0%)
-  * Unit Price: $9.00 per unit (outside negative tolerance of -10%)
-  * Total Amount: $900.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+## Esempio
 
-Since the quantity (100 units) is within the acceptable tolerance range but the unit price ($9.00) is below the acceptable tolerance and is not approved, the system will:
+* **Ordine di acquisto (PO):**
+  * Quantità: 100 unità
+  * Prezzo unitario: $10.00 per unità
+  * Totale: $1,000.00
+* **Fattura ricevuta:**
+  * Quantità: 100 unità — scostamento effettivo 0%, entro la tolleranza configurata di ±2%.
+  * Prezzo unitario: $9.00 — scostamento effettivo -10%, fuori dalla tolleranza configurata di ±1%; rifiutato.
+  * Totale: $900.00
+* **Tolleranze configurate:**
+  * Quantità: ±2%
+  * Prezzo unitario: ±1%
 
-1. **Reject the Unit Price:** The system does not accept the invoiced unit price of $9.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $10.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 100 units × $10.00 per unit = $1,000.00**
-4. **Generate a Credit Note:** The system generates a credit note for the difference between the incorrect total amount on the invoice and the corrected total amount.
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Credit Note Amount = $900.00 - $1,000.00 = -$100.00**
-   * The credit note will effectively reverse the undercharge.
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $1,000.00 and applies the credit note for $100.00 to account for the undercharged unit price.
+In questa mappatura illustrativa:
 
-This approach ensures that the pricing aligns with the purchase order terms, even when an incorrect, lower price is invoiced.
+1. Rifiutare il prezzo unitario fatturato di $9.00 perché lo scostamento supera la tolleranza e non è approvato.
+2. Utilizzare il prezzo unitario del PO di $10.00.
+3. Ricalcolare il totale dell’esempio: **100 unità × $10.00 = $1,000.00**.
+4. Calcolare lo scostamento con segno come totale fatturato meno totale ricalcolato: **$900.00 - $1,000.00 = -$100.00**.
+5. Applicare la mappatura di esportazione e la decisione di approvazione configurate. Il valore -$100.00 è uno scostamento con segno, non un’istruzione incondizionata a emettere una nota di credito. La mappatura determina importo, segno e tipo di documento di ogni rettifica.
+
+L’esempio non indica che una nota di credito annulli automaticamente un importo fatturato in difetto. Verificare il trattamento contabile previsto nella mappatura di esportazione attiva prima di utilizzare la regola.

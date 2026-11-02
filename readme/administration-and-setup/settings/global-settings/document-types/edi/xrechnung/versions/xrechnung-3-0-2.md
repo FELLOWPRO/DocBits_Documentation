@@ -1,12 +1,12 @@
-# XRechnung 3.0.2 CII Field Mapping
+# XRechnung 3.0.2 mappatura dei campi CII
 
-## Overview
+## Panoramica
 
-This document describes the complete field mapping flow for XRechnung 3.0.2 CII (Cross-Industry Invoice) format.
+Questo documento descrive il flusso completo di mappatura dei campi per il formato XRechnung 3.0.2 CII (fattura intersettoriale).
 
-## 1. CII XML Structure
+## 1. Struttura XML CII
 
-XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces:
+XRechnung CII utilizza il formato di fattura intersettoriale UN/CEFACT con questi spazi dei nomi:
 
 | Prefix | Namespace | Purpose |
 | :--- | :--- | :--- |
@@ -17,9 +17,9 @@ XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces
 
 **Classification URN**: `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0.2`
 
-## 2. CII XML → DocBits Field Extraction
+## 2. XML CII → estrazione dei campi DocBits
 
-### Header Fields
+### Campi di intestazione
 
 | CII XML Path | DocBits Field | Data Type |
 | :--- | :--- | :--- |
@@ -41,7 +41,7 @@ L'XSLT di TRANSFORMATION sostituisce il valore numerico di `TypeCode` con un'eti
 | `381` / `261` | Nota di credito / Nota di credito autofatturata | **Credit Note** |
 | Qualsiasi altro codice (`380`, `383`, `384`, `386`, `389`, `325`, …) | Fattura / nota di debito / proforma / ecc. | **Invoice** |
 
-### Supplier Fields
+### Campi del fornitore
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -55,7 +55,7 @@ L'XSLT di TRANSFORMATION sostituisce il valore numerico di `TypeCode` con un'eti
 | `PayeePartyCreditorFinancialAccount/IBANID` | `iban` |
 | `PayeeSpecifiedCreditorFinancialInstitution/BICID` | `bic` |
 
-### Customer Fields
+### Campi del cliente
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -64,7 +64,7 @@ L'XSLT di TRANSFORMATION sostituisce il valore numerico di `TypeCode` con un'eti
 | `BuyerTradeParty/PostalTradeAddress/LineOne` | `customer_address` |
 | `BuyerTradeParty/SpecifiedTaxRegistration/ID` | `customer_vat` |
 
-### Amount Fields
+### Campi importo
 
 | CII XML Path | DocBits Field |
 | :--- | :--- |
@@ -74,7 +74,7 @@ L'XSLT di TRANSFORMATION sostituisce il valore numerico di `TypeCode` con un'eti
 | `ApplicableTradeTax/RateApplicablePercent` | `tax_rate` |
 | `ApplicableTradeTax/BasisAmount` | `taxable_amount` |
 
-### Line Item Fields
+### Campi delle righe di dettaglio
 
 | CII XML Path | DocBits Table Column |
 | :--- | :--- |
@@ -90,9 +90,9 @@ L'XSLT di TRANSFORMATION sostituisce il valore numerico di `TypeCode` con un'eti
 | `ApplicableTradeTax/RateApplicablePercent` | `VAT_RATE` |
 | `ApplicableTradeTax/CategoryCode` | `VAT_CATEGORY` |
 
-## 3. DocBits → Infor BOD Export (SyncSupplierInvoice)
+## 3. DocBits → esportazione BOD in Infor (SyncSupplierInvoice)
 
-### Header Mapping
+### Mappatura dell’intestazione
 
 | DocBits Field | BOD XML Path |
 | :--- | :--- |
@@ -107,7 +107,7 @@ L'XSLT di TRANSFORMATION sostituisce il valore numerico di `TypeCode` con un'eti
 | `PAYMENT_TERMS` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/PaymentTerm/Term/Description` |
 | `PURCHASE_ORDER` | `UserArea/Property/NameValue[@name='PONumber']` |
 
-### Line Item Mapping
+### Mappatura delle righe di dettaglio
 
 | DocBits Column | BOD XML Path |
 | :--- | :--- |

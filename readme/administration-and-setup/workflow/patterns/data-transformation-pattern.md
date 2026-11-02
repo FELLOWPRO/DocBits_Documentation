@@ -7,6 +7,12 @@
 
 ---
 
+You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Document Field** category — it holds the read, write, calculate and format cards this pattern chains together:
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — field read/write, calculation and formatting cards live under the <strong>Document Field</strong> category.</p></figcaption></figure>
+
+---
+
 ## Pattern Overview
 
 This pattern demonstrates how to transform, calculate, format, and enrich document data in DocBits workflows. Data transformation is essential for preparing data for export, performing calculations, standardizing formats, and enriching documents with additional information.

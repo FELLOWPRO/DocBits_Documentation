@@ -8,7 +8,43 @@ The role of an administrator is crucial for managing IT systems, networks and di
 
 In addition to these responsibilities, administrators are also tasked with managing sensitive settings and ensuring that systems meet compliance requirements and information security best practices. This includes managing sensitive data, configuring access controls and permissions, and monitoring and analyzing system logs to identify and address potential security risks.
 
+## Admin vs System Admin
 
+DocBits has two administrator roles: **Admin** and **System Admin**. They sound similar, but they do different jobs. Here is the simple version.
+
+### Admin — a person who manages your organization
+
+An **Admin** is a real person on your team who is allowed to manage DocBits. Admins can:
+
+* Open all areas of **Settings** and change how your organization works.
+* Add new users, edit them, switch them on or off, and decide who else becomes an Admin.
+* Set up groups, permissions, integrations, and workflows.
+
+You can have **as many Admins as you need**, and you can give or take away the Admin role from any user at any time. Most administrators on your team are this type.
+
+### System Admin — the account DocBits uses to work on its own
+
+A **System Admin** is **one special account per organization** that DocBits uses for actions that happen **automatically, without anyone clicking a button** — for example when documents are imported from email, exported to another system, or passed along by a connected service in the background.
+
+Think of it as the organization's "robot" account. When the system does something on its own, it does it **as the System Admin**, so that automatic activity is easy to recognize and is not mixed up with the work of your real team members.
+
+A System Admin is special in three ways:
+
+* **It is always an Admin too.** Choosing System Admin automatically gives that account full Admin rights as well.
+* **There is only one per organization.** Once a System Admin exists, you cannot mark another user as System Admin.
+* **It is set only when the user is created.** You decide this at the moment you add the user. It **cannot be turned on or off later**.
+
+> **Recommendation:** Create a dedicated account for this purpose — for example `system@your-company.com` — and mark it as the System Admin. That way, anything DocBits does automatically clearly shows up as the **System Admin** in your logs and document history, separate from your real users.
+
+### At a glance
+
+| | Admin | System Admin |
+|---|---|---|
+| Full access to manage the organization | Yes | Yes |
+| How many you can have | As many as you need | Only one |
+| Can be changed after the user is created | Yes, anytime | No, only set at creation |
+| Used for automatic, behind-the-scenes actions | No | Yes |
+| Always has Admin rights | — | Yes |
 
 ## Security Best Practice
 

@@ -6,7 +6,7 @@
 
 Here you just need to enter your desired sub organization and press ‘Authenticate’
 
-![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-authenticate-en-20261006.png" alt="Email Server Setup dialog with protocol OAuth Office365, Document Routing and the Authenticate button."><figcaption><p>Choose the routing and press Authenticate.</p></figcaption></figure>
 
 You will be taken to this Microsoft page and you will need to enter a code.
 
@@ -14,11 +14,11 @@ You will be taken to this Microsoft page and you will need to enter a code.
 
 This code can be found by clicking back to DocBits and the code will be displayed there like below, simply copy the code and enter it into the Microsoft page. Thereafter you will need to enter your own Microsoft credentials.
 
-![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-code-en-20261006.png" alt="Email Server Setup dialog showing the Microsoft authentication code with a Copy button and the Finish authentication button."><figcaption><p>The Microsoft code is displayed in DocBits.</p></figcaption></figure>
 
 Press the FINISH AUTHENTICATION button and you will be taken to this menu
 
-![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-options-en-20261006.png" alt="Email Server Setup dialog after authentication with the switches Use Folder, Use Shared Mailbox and Move Emails To Other Folder."><figcaption><p>Options after the authentication is finished.</p></figcaption></figure>
 
 **Use Folder**
 

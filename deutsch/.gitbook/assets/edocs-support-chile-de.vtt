@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.569
+Für Chile DTE gibt es Einträge für
+Rechnungen, Gutschriften und
+
+formats_02
+00:00:04.569 --> 00:00:09.341
+Versandbegleitdokumente. Wählen Sie den
+Geschäftsdokumenttyp aus, bevor Sie die
+
+formats_03
+00:00:09.341 --> 00:00:15.018
+Felder prüfen. Rechnungen, Gutschriften
+und Lieferinformationen verwenden
+
+formats_04
+00:00:15.018 --> 00:00:17.000
+unterschiedliche Zuordnungen.
+
+workflow_01
+00:00:17.750 --> 00:00:23.056
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:23.056 --> 00:00:29.766
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:29.766 --> 00:00:31.400
+aktiviert ihn nicht.
+
+accept_01
+00:00:32.150 --> 00:00:36.782
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:36.782 --> 00:00:42.912
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:42.912 --> 00:00:46.033
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

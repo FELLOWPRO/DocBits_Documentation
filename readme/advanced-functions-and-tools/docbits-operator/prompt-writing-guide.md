@@ -22,7 +22,7 @@ This makes prompts reusable and adaptable across different workflows or data set
 #### How to Use Variables
 
 * Write variables inside curly braces within your prompt text:
-  * Enter the invoice number: {invoice_number} in the 'Invoice number HP' field.
+  * Enter the invoice number: {invoice\_number} in the 'Invoice number HP' field.
 * Each variable must have a unique name (e.g., `invoice_number`, `url`, `document_type`).
 * Variable names must not include spaces or special characters (underscores are allowed).
 * For workflows, variable names must exactly match the document’s field IDs to enable automatic data mapping.
@@ -35,17 +35,12 @@ To open the Prompt Variables popup, click the **cogwheel icon** located next to 
 
 ### Popup Layout and Controls
 
-<div align="left"><figure><img src="../../.gitbook/assets/prompt_variables_popup_interface.png" alt="Prompt Variables Popup Interface" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (11).png" alt="Prompt Variables Popup Interface" width="375"><figcaption></figcaption></figure></div>
 
 * **Key Input Field:** Enter the variable name here (without curly braces).
 * **Value Input Field:** Enter the value to be used for this variable when the prompt runs.
-* **Save as Sensitive (Checkbox):**
-  When checked, this marks the variable value as sensitive. Sensitive values are encrypted and hidden in workflows to protect confidential information from unauthorized users.
-* **Add Button (+):**
-  Click to add another key-value pair input row.
-* **Delete Icon (Trashcan):**
-  When multiple key-value pairs exist, all pairs except the first show a small trashcan icon to delete that specific pair.
-* **Clear Button:**
-  Resets the popup by clearing all key-value pairs and values entered.
-* **Save Button :**
-  Saves all the defined variables and their values for the current prompt.
+* **Save as Sensitive (Checkbox):** When checked, this marks the variable value as sensitive. Sensitive values are encrypted and hidden in workflows to protect confidential information from unauthorized users.
+* **Add Button (+):** Click to add another key-value pair input row.
+* **Delete Icon (Trashcan):** When multiple key-value pairs exist, all pairs except the first show a small trashcan icon to delete that specific pair.
+* **Clear Button:** Resets the popup by clearing all key-value pairs and values entered.
+* **Save Button :** Saves all the defined variables and their values for the current prompt.

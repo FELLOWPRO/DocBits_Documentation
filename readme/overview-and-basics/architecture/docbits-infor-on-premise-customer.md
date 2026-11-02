@@ -1,6 +1,6 @@
 # DocBits Infor on Premise Customer
 
-To send data to Infor onPremise customer we offer two ways Site2Site with IPsec or [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog-installation)
+To send data to Infor onPremise customer we offer two ways Site2Site with IPsec or [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
 
 Sending Data to Infor On-Premise Customer
 

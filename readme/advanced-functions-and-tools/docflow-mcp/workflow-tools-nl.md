@@ -1,103 +1,83 @@
 # Workflow Tools
 
-DocFlow MCP biedt 8 tools voor het beheren en testen van geavanceerde workflows.
+DocFlow MCP biedt tools voor het beheren en testen van geavanceerde workflows, plus tools voor het lezen van workflow-logs en het beheren van workflow-variabelen. De Card SDK-tools hebben een eigen pagina — zie [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
-Alle workflows van de huidige organisatie weergeven.
+Alle workflows van de huidige organisatie opvragen.
 
 **Parameters:** Geen
 
-**Voorbeeldrespons:**
-
-```json
-[
-  {
-    "id": "a1b2c3d4-...",
-    "name": "Invoice Approval",
-    "version": 3,
-    "enabled": true,
-    "doc_types": ["INVOICE"],
-    "workflow_type": "advanced",
-    "created_on": "2025-01-15 10:30:00",
-    "last_modified_on": "2025-03-20 14:22:00"
-  }
-]
-```
-
 ## get\_workflow
 
-Details van een specifieke workflow ophalen, inclusief de node- en edge-structuur.
+Details van een specifieke workflow opvragen, inclusief zijn knoop- en kantstructuur.
 
 **Parameters:**
 
 | Parameter | Type | Vereist | Beschrijving |
-|-----------|------|---------|-------------|
+|-----------|------|----------|-------------|
 | `workflow_id` | string | Ja | UUID van de workflow |
-
-**Voorbeeldrespons:**
-
-```json
-{
-  "id": "a1b2c3d4-...",
-  "name": "Invoice Approval",
-  "version": 3,
-  "enabled": true,
-  "doc_types": ["INVOICE"],
-  "workflow_type": "advanced",
-  "description": "Routes invoices based on amount",
-  "advanced_config": {
-    "nodes": [
-      {"node_id": "when-1", "node_type": "when", "label": "Amount > 1000"},
-      {"node_id": "then-1", "node_type": "then", "label": "Send for Approval"}
-    ],
-    "edges": [
-      {"source_node_id": "when-1", "target_node_id": "then-1"}
-    ]
-  }
-}
-```
 
 ## create\_advanced\_workflow
 
-Een nieuwe geavanceerde workflow aanmaken met nodes en edges.
+Een nieuwe geavanceerde workflow aanmaken met knopen en kanten.
 
 **Parameters:**
 
 | Parameter | Type | Vereist | Beschrijving |
-|-----------|------|---------|-------------|
-| `name` | string | Ja | Workflownaam (3-126 tekens) |
+|-----------|------|----------|-------------|
+| `name` | string | Ja | Workflow-naam (3-126 tekens) |
 | `description` | string | Nee | Optionele beschrijving |
-| `nodes` | array | Ja | Array van workflownodes |
-| `edges` | array | Ja | Array van edges die nodes verbinden |
+| `nodes` | array | Ja | Array van workflow-knopen |
+| `edges` | array | Ja | Array van kanten die knopen verbinden |
 
-### Node-structuur
+### Knoopstructuur
 
-Elke node vereist:
+Elke knoop vereist:
 
 | Veld | Type | Beschrijving |
-|------|------|-------------|
-| `node_id` | string | Unieke identificatie voor de node |
-| `node_type` | string | `when`, `then`, `and`, `or` of `delay` |
+|-------|------|-------------|
+| `node_id` | string | Unieke identificator van de knoop |
+| `node_type` | string | Zie knooptypen hieronder |
 | `position` | object | `{x: number, y: number}` positie op het canvas |
 | `label` | string | Weergavelabel |
-| `card` | object | Kaartconfiguratie (zie hieronder) |
+| `card` | object | Kaartconfiguratie (vereist voor `when`, `and`, `then` — zie hieronder) |
 
-### Edge-structuur
+**Knooptypen:**
 
-Elke edge vereist:
+| Type | Kaart vereist | Doel |
+|------|------------------|---------|
+| `start` | Geen kaart | Triggerknoop — startpunt van de workflow |
+| `when` | Conditiekaart | Trigger-conditie (ook geldig startpunt) |
+| `and` | Conditiekaart | Aanvullende conditiepoort na een `when` |
+| `or` | Geen kaart | Vertakkingsknoop — gaat door als een van de inkomende takken slaagt |
+| `then` | Actiekaart | Uit te voeren actie |
+| `delay` | Geen kaart | Wachtknoop — pauzeert de uitvoering voor een geconfigureerde duur |
+| `all` | Geen kaart | Samenvoegknoop — wacht op alle inkomende takken |
+| `any` | Geen kaart | Samenvoegknoop — gaat verder met de eerste inkomende tak |
+| `note` | Geen kaart | Plakbriefje / annotatie; wordt niet uitgevoerd |
+
+### Kantstructuur
+
+Elke kant vereist:
 
 | Veld | Type | Beschrijving |
-|------|------|-------------|
-| `edge_id` | string | Unieke identificatie voor de edge |
-| `source_node_id` | string | ID van de bronnode |
-| `target_node_id` | string | ID van de doelnode |
-| `source_handle` | string | `success` of `error` (optioneel) |
+|-------|------|-------------|
+| `edge_id` | string | Unieke identificator van de kant |
+| `source_node_id` | string | ID van de bronknoop |
+| `target_node_id` | string | ID van de doelknoop |
+| `source_handle` | string | `success`, `error` of `failed_condition` (optioneel) |
 | `target_handle` | string | `input` (optioneel) |
+
+**Source-handles:**
+
+- `success` — genomen wanneer de bronknoop slaagt (beschikbaar op elke uitvoerbare knoop).
+- `failed_condition` — genomen wanneer een `when`- of `and`-conditiekaart als false wordt geëvalueerd.
+- `error` — genomen wanneer een `and`- of `then`-knoop een fout opwerpt.
 
 ### Kaartconfiguratie
 
-Kaarten definiëren wat een node doet. Gebruik `list_cards` of `sdk_list_cards_picker` om beschikbare kaarten op te halen.
+Kaarten definiëren wat een knoop doet. Gebruik `list_cards` of `sdk_list_cards_picker` om beschikbare kaarten op te vragen.
 
 ```json
 {
@@ -111,7 +91,7 @@ Kaarten definiëren wat een node doet. Gebruik `list_cards` of `sdk_list_cards_p
 ```
 
 {% hint style="info" %}
-U hoeft alleen `id`, `card_type`, `version` en `variables` op te geven voor elke kaart. De server verrijkt kaarten automatisch met weergavemetadata (svg, tekst, categorie) uit de database.
+U hoeft alleen `id`, `card_type`, `version` en `variables` op te geven voor elke kaart. De server verrijkt kaarten automatisch met weergavemetadata (svg, text, category) uit de database.
 {% endhint %}
 
 **Voorbeeldverzoek:**
@@ -160,147 +140,53 @@ U hoeft alleen `id`, `card_type`, `version` en `variables` op te geven voor elke
 }
 ```
 
-**Voorbeeldrespons:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
 ## update\_advanced\_workflow
 
-Een bestaande geavanceerde workflow bijwerken. U kunt elke combinatie van naam, beschrijving, nodes en edges bijwerken.
+Een bestaande geavanceerde workflow bijwerken. U kunt elke combinatie van naam, beschrijving, knopen en kanten bijwerken.
 
 **Parameters:**
 
 | Parameter | Type | Vereist | Beschrijving |
-|-----------|------|---------|-------------|
+|-----------|------|----------|-------------|
 | `workflow_id` | string | Ja | UUID van de bij te werken workflow |
 | `name` | string | Nee | Nieuwe naam |
 | `description` | string | Nee | Nieuwe beschrijving |
-| `nodes` | array | Nee | Nieuwe nodes (vervangt alle bestaande nodes) |
-| `edges` | array | Nee | Nieuwe edges (vervangt alle bestaande edges) |
-
-**Voorbeeldrespons:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
+| `nodes` | array | Nee | Nieuwe knopen (vervangt alle bestaande knopen) |
+| `edges` | array | Nee | Nieuwe kanten (vervangt alle bestaande kanten) |
 
 ## delete\_workflow
 
-Een workflow verwijderen op basis van ID (zachte verwijdering).
+Een workflow verwijderen op ID (soft delete).
 
 **Parameters:**
 
 | Parameter | Type | Vereist | Beschrijving |
-|-----------|------|---------|-------------|
+|-----------|------|----------|-------------|
 | `workflow_id` | string | Ja | UUID van de te verwijderen workflow |
-
-**Voorbeeldrespons:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
 
 ## test\_advanced\_workflow
 
-Een geavanceerde workflow-uitvoering testen. Optioneel kunt u een document-ID opgeven om met een echt document te testen.
+Een uitvoering van een geavanceerde workflow testen. Geef optioneel een document-ID op om met een echt document te testen.
 
 **Parameters:**
 
 | Parameter | Type | Vereist | Beschrijving |
-|-----------|------|---------|-------------|
+|-----------|------|----------|-------------|
 | `workflow_id` | string | Ja | UUID van de geavanceerde workflow |
 | `doc_id` | string | Nee | UUID van een document om mee te testen |
 
-**Voorbeeldrespons:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-...",
-  "execution_time": 0.234,
-  "workflow_result": "completed",
-  "node_results": {
-    "when-1": {"status": "success", "output": true},
-    "then-1": {"status": "success"}
-  },
-  "logs": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "status": "success",
-      "error": null,
-      "duration_ms": 12
-    }
-  ]
-}
-```
-
 ## list\_test\_scenarios
 
-Alle testscenario's voor workflows van de organisatie weergeven.
+Alle workflow-testscenario's voor de organisatie opvragen.
 
 **Parameters:** Geen
-
-**Voorbeeldrespons:**
-
-```json
-[
-  {
-    "id": "scenario-uuid",
-    "name": "Invoice over 1000 EUR",
-    "workflow_id": "a1b2c3d4-...",
-    "enabled": true,
-    "status": "passed",
-    "last_run": "2025-03-20 14:00:00"
-  }
-]
-```
 
 ## list\_cards
 
-Alle beschikbare workflowkaarten weergeven met hun condities en configuratie.
+Alle beschikbare workflow-kaarten met hun voorwaarden en configuratie opvragen.
 
 **Parameters:** Geen
 
-**Voorbeeldrespons:**
-
-```json
-[
-  {
-    "id": "card-uuid",
-    "text": "Document Type Is",
-    "card_type": "document_type_is",
-    "card_version": 1,
-    "category": "Document",
-    "when_condition": true,
-    "and_condition": false,
-    "then_condition": false
-  },
-  {
-    "id": "card-uuid-2",
-    "text": "Send Email Notification",
-    "card_type": "send_email",
-    "card_version": 1,
-    "category": "Communication",
-    "when_condition": false,
-    "and_condition": false,
-    "then_condition": true
-  }
-]
-```
-
 {% hint style="info" %}
-Kaarten hebben rolvlaggen: `when_condition` (trigger), `and_condition` (aanvullende voorwaarde) en `then_condition` (actie). Gebruik deze om te bepalen in welke nodetypes een kaart kan worden gebruikt.
+Kaarten hebben rolvlaggen: `when_condition` (trigger), `and_condition` (aanvullende conditie) en `then_condition` (actie). Gebruik deze om te bepalen in welke knooptypen een kaart kan worden gebruikt.
 {% endhint %}

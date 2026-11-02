@@ -1,0 +1,93 @@
+{
+  "locale": "fr",
+  "title": "Vérifier la classification des avoirs électroniques",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "Un avoir électronique apparaît comme Invoice. Lisez le XML d’origine. Le code de type 381 désigne un avoir.",
+      "caption": "Un avoir électronique apparaît comme Invoice. Lisez le XML d’origine. Le code de type 381 désigne un avoir."
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "Les règles par défaut de FACTURX et ZUGFeRD reconnaissent aussi 261. Les codes 383 et 384 désignent une note de débit et une facture rectificative. Ne les classez pas comme des avoirs.",
+      "caption": "Les règles par défaut de FACTURX et ZUGFeRD reconnaissent aussi 261. Les codes 383 et 384 désignent une note de débit et une facture rectificative. Ne les classez pas comme des avoirs."
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "Ouvrez E-Doc pour le format détecté. La transformation personnalisée de l’organisation a priorité sur celle par défaut. Vérifiez la version active.",
+      "caption": "Ouvrez E-Doc pour le format détecté. La transformation personnalisée de l’organisation a priorité sur celle par défaut. Vérifiez la version active."
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "Pour FACTURX, recherchez INVOICE_TYPE. Une constante Invoice peut écarter le code d’avoir d’origine. Comparez la transformation personnalisée avec celle par défaut.",
+      "caption": "Pour FACTURX, recherchez INVOICE_TYPE. Une constante Invoice peut écarter le code d’avoir d’origine. Comparez la transformation personnalisée avec celle par défaut."
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "Testez le XML transformé. Vérifiez qu’Extraction Paths lit invoice_type dans le bon nœud pour ce format. Examinez les scripts suivants et la valeur enregistrée.",
+      "caption": "Testez le XML transformé. Vérifiez qu’Extraction Paths lit invoice_type dans le bon nœud pour ce format. Examinez les scripts suivants et la valeur enregistrée."
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "Créez un brouillon. Save ne l’active pas. Testez des factures et des avoirs représentatifs. Activez-le avec la coche uniquement après la réussite des vérifications.",
+      "caption": "Créez un brouillon. Save ne l’active pas. Testez des factures et des avoirs représentatifs. Activez-le avec la coche uniquement après la réussite des vérifications."
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "Vérifiez un nouveau document, y compris les montants et l’export. Préservez les correspondances personnalisées. Avant de relancer un ancien document, vérifiez les approbations, les exports et les modifications manuelles.",
+      "caption": "Vérifiez un nouveau document, y compris les montants et l’export. Préservez les correspondances personnalisées. Avant de relancer un ancien document, vérifiez les approbations, les exports et les modifications manuelles."
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "Le signe négatif est activé par défaut, mais peut être désactivé. Confirmez la classification et la convention de signe attendue par Infor ERP ou SAP.",
+      "caption": "Le signe négatif est activé par défaut, mais peut être désactivé. Confirmez la classification et la convention de signe attendue par Infor ERP ou SAP."
+    }
+  ],
+  "labels": {
+    "xml": "XML d’origine",
+    "stored": "Valeur enregistrée",
+    "invoice": "Invoice",
+    "credit": "Credit Note",
+    "credit_codes": "Avoir",
+    "other_codes": "Autres types de documents",
+    "debit": "Note de débit",
+    "corrected": "Facture rectificative",
+    "source": "Source utilisée",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "Version active",
+    "transform": "Transformation",
+    "constant": "Valeur fixe",
+    "compare": "Comparer les sources",
+    "paths": "Extraction Paths",
+    "scripts": "Scripts suivants",
+    "verify": "Vérifier la valeur enregistrée",
+    "draft": "Brouillon",
+    "save": "Enregistrer",
+    "test": "Tester",
+    "activate": "Activer",
+    "saved": "Brouillon enregistré",
+    "check": "Coche",
+    "safety": "Nouveau document de test",
+    "preserve": "Préserver les correspondances personnalisées",
+    "history": "Vérifier les documents historiques",
+    "approvals": "Approbations",
+    "exports": "Exports",
+    "edits": "Modifications manuelles",
+    "sign": "Vérifier le signe des montants",
+    "enabled": "Activé par défaut",
+    "configurable": "Configurable",
+    "result": "Classification + export",
+    "transformed": "XML transformé"
+  },
+  "notes": {}
+}

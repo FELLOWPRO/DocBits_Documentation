@@ -4,8 +4,7 @@
 
 ### 1. How enable the Report Page
 
-Go to **Settings** → **Document Processing** → **Module** → **Document Type** → **Show Report**
-Toggle the button to enable this setting.
+Go to **Settings** → **Document Processing** → **Module** → **Document Type** → **Show Report** Toggle the button to enable this setting.
 
 <figure><img src="../.gitbook/assets/enable_report_page_setting.png" alt="Enable Report Page Setting"><figcaption></figcaption></figure>
 
@@ -18,7 +17,7 @@ Follow these steps to access the **Report Page** in DocBits:
 2. **Click on the Report Icon**
    * On the left sidebar, find and click the **Report** icon (depicted as a graph or chart).
 
-<figure><img src="../.gitbook/assets/report_icon_sidebar.png" alt="Report Icon in Sidebar" width="314"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (311).png" alt="Report Icon in Sidebar" width="314"><figcaption></figcaption></figure>
 
 ### **3. Using the Time Unit Filter**
 
@@ -47,7 +46,7 @@ Follow these steps to access the **Report Page** in DocBits:
 * Below the time-related information, you will find the **Changed Fields** section. This section displays a diagram showing how frequently each document field was manually modified by users during the selected timeframe.
 * Each field is displayed with the corresponding number of changes, shown as bars in the diagram.
 
-<figure><img src="../.gitbook/assets/changed_fields_diagram.png" alt="Changed Fields Diagram" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (321).png" alt="Changed Fields Diagram" width="563"><figcaption></figcaption></figure>
 
 * **Download Options for the Diagram**
   * On the right side of the **Changed Fields** diagram, there is a small menu that allows you to download the diagram in various formats. You can download the diagram as:
@@ -71,7 +70,7 @@ Below the **Changed Fields** section, you will find four additional buttons that
     * This button shows the daily average count of documents processed, categorized by document type.
     * When you click the button, it expands to show the document types and their corresponding daily average count.
 
-    <figure><img src="../.gitbook/assets/daily_average_per_doctype_report.png" alt="Daily Average per Doctype Report" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (324).png" alt="Daily Average per Doctype Report" width="563"><figcaption></figcaption></figure>
 3.  **Status Statistic**
 
     * This button shows the status distribution for each document type (e.g., Invoice, Purchase Order, etc.). When clicked, it expands to display the status of documents within each document type, showing how many documents are in each status category.

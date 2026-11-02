@@ -1,14 +1,26 @@
 # Documents Expiry
 
-<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Document Expiry Settings Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Documents Expiry settings"><figcaption><p>Documents Expiry settings</p></figcaption></figure>
 
-In the "Documents Expiry" setting under the "DOCUMENT PROCESSING" section, you can configure the automatic deletion schedules for your documents within the system. This feature is particularly useful for managing data retention policies and ensuring compliance with legal or organizational standards regarding document storage.
+Under **Document Processing → Documents Expiry** you control how long DocBits keeps your documents before deleting them automatically. This helps you manage storage, enforce data-retention policies, and stay compliant with legal or organizational rules about how long documents may be stored.
 
-Here’s what each setting does:
+Two settings control the automatic deletion:
 
-1. **Delete document after**: This dropdown allows you to set the time frame after which a document that has been processed will be automatically deleted from the system. You can choose from predefined options like 48 Hours, 1 Week, 2 Weeks, or 4 Weeks. This helps in managing space and maintaining document lifecycle policies.
-2. **Delete finished document after**: Similar to the previous setting, but specifically targets the finished or fully processed documents. It allows the same time frame options for deletion, ensuring that completed documents are not stored longer than necessary.
+| Setting | What it controls |
+|---------|------------------|
+| **Delete document after** | How long any processed document is kept before it is automatically deleted. |
+| **Delete finished document after** | How long a finished (fully processed and exported) document is kept before it is automatically deleted. |
 
-Both settings ensure that documents are not kept indefinitely on your system, helping to avoid unnecessary storage use and keeping the document processing workflow clutter-free. These settings are vital for organizations needing to adhere to specific regulatory requirements about document retention.
+For each setting you choose a time frame from the dropdown:
 
-<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Document Expiry Options"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Documents Expiry options"><figcaption><p>Available retention periods</p></figcaption></figure>
+
+| Option | Meaning |
+|--------|---------|
+| **Default** | Use the system default retention period (no custom override). |
+| **48 Hours** | Delete 48 hours after processing. |
+| **1 Week** | Delete after one week. |
+| **2 Weeks** | Delete after two weeks. |
+| **4 Weeks** | Delete after four weeks. |
+
+Both settings make sure documents are not kept on the system longer than necessary — this avoids unnecessary storage use and keeps the document workflow clutter-free. They are especially important for organizations that must follow specific regulatory requirements for document retention.

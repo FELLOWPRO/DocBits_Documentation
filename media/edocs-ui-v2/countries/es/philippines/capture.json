@@ -1,0 +1,74 @@
+{
+  "locale": "es",
+  "country": "philippines",
+  "representative": "PHILIPPINES EIS",
+  "environment": "development",
+  "runtime_language": "es",
+  "captured_at": "2026-10-18T07:46:45.708Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "version authors",
+    "user menu",
+    "notifications",
+    "mailto links"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=JP+PINT",
+      "sha256": "4f36fef66ab333e6fa08c6d3681e03f97efe483b2a23e0b45257a2bfed512c5e",
+      "focus": null
+    },
+    {
+      "name": "transformation-code",
+      "file": "transformation-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/68f83b7d-d8bb-5db5-a904-aebc4745d923/PHILIPPINES%20EIS?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "9044093537ca4632ed567717d477b5f91a5865b0092884f72951797ebfc06285",
+      "focus": {
+        "found": false
+      }
+    },
+    {
+      "name": "preview-panel",
+      "file": "preview-panel.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/68f83b7d-d8bb-5db5-a904-aebc4745d923/PHILIPPINES%20EIS?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "f456e537f01b0c2af64099acdcd2d6a60d44c15a6c6e00fe01c5b4ea3813fa05",
+      "focus": null
+    },
+    {
+      "name": "extraction-paths-code",
+      "file": "extraction-paths-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/477e5ec4-5bfb-547b-aa67-7b106fac862b/PHILIPPINES%20EIS?attribute_name=EXTRACTION%20PATHS&attribute_type=JSON&title=INVOICE",
+      "sha256": "3639b66afc79adac66ca0ddbdde26647741daa432f36ba9bf12471149d4ce4b3",
+      "focus": {
+        "found": false
+      }
+    }
+  ],
+  "rows": [
+    [
+      "TRANSFORMATION",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "PREVIEW",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "EXTRACTION PATHS",
+      "Default",
+      "JSON",
+      "—"
+    ]
+  ]
+}

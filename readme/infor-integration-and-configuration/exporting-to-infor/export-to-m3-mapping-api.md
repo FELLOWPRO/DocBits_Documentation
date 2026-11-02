@@ -37,15 +37,15 @@ Removing Field:
 
 * Available M3 fields can be checked by opening appropriate screen in M3.
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
 
 * Similarly you can get field names for lines
 
 ### Header:
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
 Fields List Property: StaticFields
 

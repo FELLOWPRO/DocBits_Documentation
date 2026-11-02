@@ -1,5 +1,7 @@
 # Sub-Organizations
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Sub-Organizations"><figcaption><p>Sub-Organizations Page</p></figcaption></figure>
 
 Sub-organizations allow you to create a hierarchical structure within DocBits to manage documents, users, and workflows across different departments, teams, or entities.
@@ -31,7 +33,7 @@ Use the **Search** bar to quickly find sub-organizations by name.
 
 ## Show Cross Organisation Option
 
-When enabled (toggle at the top of the page), users can access documents across all sub-organizations from a single view.
+When enabled (using the toggle at the top of the page), users can view documents from all sub-organisations in a single combined view instead of being limited to documents from only one sub-organization.
 
 ### How to Use Cross Sub-Organisations
 
@@ -39,5 +41,7 @@ When enabled (toggle at the top of the page), users can access documents across 
 2. In the top-right corner, where sub-organizations can be switched, select **Cross**.
 3. The page reloads, showing documents from all sub-organizations.
 4. To return to a single sub-organization view, deselect the **Cross** option.
+
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Cross sub-organisations switcher"><figcaption><p>Selecting Cross in the top-right organisation switcher</p></figcaption></figure>
 
 This is useful for administrators who need a centralized overview of all documents across the organization.

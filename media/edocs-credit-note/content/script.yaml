@@ -1,0 +1,50 @@
+{
+  "page": "edocs_credit_note",
+  "segment_ids": [
+    "symptom",
+    "codes",
+    "source",
+    "transform",
+    "paths",
+    "activate",
+    "safety",
+    "sign"
+  ],
+  "scenes": [
+    "symptom",
+    "codes",
+    "source",
+    "transform",
+    "paths",
+    "activate",
+    "safety",
+    "sign"
+  ],
+  "must_coverage": {
+    "symptom": [
+      "symptom"
+    ],
+    "codes": [
+      "codes"
+    ],
+    "source": [
+      "source"
+    ],
+    "transform": [
+      "transform"
+    ],
+    "paths": [
+      "paths"
+    ],
+    "activate": [
+      "activate"
+    ],
+    "safety": [
+      "safety"
+    ],
+    "sign": [
+      "sign"
+    ]
+  },
+  "synthetic_only": true
+}

@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "DocBits Document Status Lifecycle",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1100.0,
+      440
+    ],
+    "legend": {
+      "mode": "hidden"
+    }
+  },
+  "components": [
+    {
+      "id": "new",
+      "type": "backend",
+      "label": "New",
+      "sublabel": "imported",
+      "pos": [
+        16,
+        140
+      ],
+      "size": [
+        90,
+        60
+      ]
+    },
+    {
+      "id": "running",
+      "type": "backend",
+      "label": "Running",
+      "sublabel": "OCR to PO match",
+      "pos": [
+        146,
+        140
+      ],
+      "size": [
+        100,
+        60
+      ]
+    },
+    {
+      "id": "rfv",
+      "type": "frontend",
+      "label": "Ready for validation",
+      "sublabel": "user checks",
+      "pos": [
+        296,
+        140
+      ],
+      "size": [
+        136,
+        60
+      ]
+    },
+    {
+      "id": "pending-approval",
+      "type": "frontend",
+      "label": "Pending approval",
+      "sublabel": "approver",
+      "pos": [
+        492,
+        140
+      ],
+      "size": [
+        110,
+        60
+      ]
+    },
+    {
+      "id": "second-approval",
+      "type": "frontend",
+      "label": "Second approval",
+      "sublabel": "if required",
+      "pos": [
+        632,
+        140
+      ],
+      "size": [
+        110,
+        60
+      ]
+    },
+    {
+      "id": "pending-export",
+      "type": "backend",
+      "label": "Pending export",
+      "sublabel": "validated or approved",
+      "pos": [
+        812,
+        140
+      ],
+      "size": [
+        105,
+        60
+      ]
+    },
+    {
+      "id": "exported",
+      "type": "database",
+      "label": "Exported",
+      "sublabel": "sent to ERP",
+      "pos": [
+        982,
+        140
+      ],
+      "size": [
+        75,
+        60
+      ]
+    },
+    {
+      "id": "error",
+      "type": "security",
+      "label": "Error",
+      "sublabel": "any step",
+      "pos": [
+        151.0,
+        340
+      ],
+      "size": [
+        90,
+        60
+      ]
+    },
+    {
+      "id": "rejected",
+      "type": "security",
+      "label": "Rejected",
+      "sublabel": "final",
+      "pos": [
+        572.0,
+        340
+      ],
+      "size": [
+        90,
+        60
+      ]
+    },
+    {
+      "id": "export-error",
+      "type": "security",
+      "label": "Export error",
+      "sublabel": "ERP refused",
+      "pos": [
+        814.5,
+        340
+      ],
+      "size": [
+        100,
+        60
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Import",
+      "wraps": [
+        "new"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "region",
+      "label": "Processing",
+      "wraps": [
+        "running"
+      ],
+      "pad": 16
+    },
+    {
+      "kind": "region",
+      "label": "Validation",
+      "wraps": [
+        "rfv"
+      ],
+      "pad": 26.0
+    },
+    {
+      "kind": "region",
+      "label": "Approval",
+      "wraps": [
+        "pending-approval",
+        "second-approval"
+      ],
+      "pad": 26.0
+    },
+    {
+      "kind": "region",
+      "label": "Export",
+      "wraps": [
+        "pending-export",
+        "exported"
+      ],
+      "pad": 26.0
+    }
+  ],
+  "connections": [
+    {
+      "id": "new-running",
+      "from": "new",
+      "to": "running",
+      "route": "auto",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "running-rfv",
+      "from": "running",
+      "to": "rfv",
+      "route": "auto",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "rfv-pa",
+      "from": "rfv",
+      "to": "pending-approval",
+      "route": "auto",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "pa-sa",
+      "from": "pending-approval",
+      "to": "second-approval",
+      "route": "auto",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "sa-pe",
+      "from": "second-approval",
+      "to": "pending-export",
+      "label": "approve",
+      "route": "auto",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "pe-exported",
+      "from": "pending-export",
+      "to": "exported",
+      "label": "export",
+      "route": "auto",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "rfv-pe-skip",
+      "from": "rfv",
+      "to": "pending-export",
+      "label": "no approval needed",
+      "variant": "dashed",
+      "route": "auto",
+      "fromSide": "top",
+      "toSide": "top"
+    },
+    {
+      "id": "pa-pe-skip",
+      "from": "pending-approval",
+      "to": "pending-export",
+      "label": "approve",
+      "variant": "dashed",
+      "route": "auto",
+      "fromSide": "top",
+      "toSide": "top"
+    },
+    {
+      "id": "running-error",
+      "from": "running",
+      "to": "error",
+      "label": "error",
+      "variant": "security",
+      "route": "auto",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 24,
+      "labelDx": 25
+    },
+    {
+      "id": "error-running",
+      "from": "error",
+      "to": "running",
+      "label": "restart",
+      "variant": "emphasis",
+      "route": "auto",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDx": -25
+    },
+    {
+      "id": "pe-xerr",
+      "from": "pending-export",
+      "to": "export-error",
+      "label": "error",
+      "variant": "security",
+      "route": "auto",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 24,
+      "labelDx": 50
+    },
+    {
+      "id": "xerr-pe",
+      "from": "export-error",
+      "to": "pending-export",
+      "label": "restart export",
+      "variant": "emphasis",
+      "route": "auto",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelDx": -70
+    },
+    {
+      "id": "pa-rejected",
+      "from": "pending-approval",
+      "to": "rejected",
+      "label": "reject",
+      "variant": "security",
+      "route": "auto",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "sa-rejected",
+      "from": "second-approval",
+      "to": "rejected",
+      "label": "reject",
+      "variant": "security",
+      "route": "auto",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Processing",
+      "items": [
+        "Running covers OCR, classification, extraction and PO matching",
+        "E-documents skip OCR; touchless documents skip straight to approval or export",
+        "Restart clears the results and reruns the whole pipeline"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Approval and export",
+      "items": [
+        "Approval steps are set per document type; second approval only when required",
+        "Either approval step can reject or send back for correction",
+        "DocFlow runs on every status change"
+      ]
+    }
+  ]
+}

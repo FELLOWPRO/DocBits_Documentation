@@ -7,6 +7,12 @@
 
 ---
 
+You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Compare with Purchase Order** category — it holds every matching card this pattern uses (price, quantity, tolerance and line-item comparison cards):
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library showing the Compare with Purchase Order cards"><figcaption><p>The <strong>Compare with Purchase Order</strong> category — price, quantity, tolerance and line-item matching cards used throughout this pattern.</p></figcaption></figure>
+
+---
+
 ## Pattern Overview
 
 This pattern demonstrates how to implement comprehensive Purchase Order (PO) matching workflows in DocBits. PO matching is a critical control process that compares invoice data against purchase order data to detect discrepancies before payment approval.

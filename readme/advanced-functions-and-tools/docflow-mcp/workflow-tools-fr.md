@@ -1,29 +1,12 @@
 # Outils de workflow
 
-DocFlow MCP fournit 8 outils pour gérer et tester les workflows avancés.
+DocFlow MCP expose des outils pour gérer et tester les workflows avancés, ainsi que des outils pour lire les logs de workflow et gérer les variables de workflow. Les outils Card SDK ont leur propre page — voir [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
-Lister tous les workflows de l'organisation actuelle.
+Lister tous les workflows de l'organisation courante.
 
 **Paramètres :** Aucun
-
-**Exemple de réponse :**
-
-```json
-[
-  {
-    "id": "a1b2c3d4-...",
-    "name": "Invoice Approval",
-    "version": 3,
-    "enabled": true,
-    "doc_types": ["INVOICE"],
-    "workflow_type": "advanced",
-    "created_on": "2025-01-15 10:30:00",
-    "last_modified_on": "2025-03-20 14:22:00"
-  }
-]
-```
 
 ## get\_workflow
 
@@ -34,29 +17,6 @@ Obtenir les détails d'un workflow spécifique, y compris sa structure de nœuds
 | Paramètre | Type | Obligatoire | Description |
 |-----------|------|-------------|-------------|
 | `workflow_id` | string | Oui | UUID du workflow |
-
-**Exemple de réponse :**
-
-```json
-{
-  "id": "a1b2c3d4-...",
-  "name": "Invoice Approval",
-  "version": 3,
-  "enabled": true,
-  "doc_types": ["INVOICE"],
-  "workflow_type": "advanced",
-  "description": "Routes invoices based on amount",
-  "advanced_config": {
-    "nodes": [
-      {"node_id": "when-1", "node_type": "when", "label": "Amount > 1000"},
-      {"node_id": "then-1", "node_type": "then", "label": "Send for Approval"}
-    ],
-    "edges": [
-      {"source_node_id": "when-1", "target_node_id": "then-1"}
-    ]
-  }
-}
-```
 
 ## create\_advanced\_workflow
 
@@ -78,10 +38,24 @@ Chaque nœud nécessite :
 | Champ | Type | Description |
 |-------|------|-------------|
 | `node_id` | string | Identifiant unique du nœud |
-| `node_type` | string | `when`, `then`, `and`, `or` ou `delay` |
-| `position` | object | Position `{x: number, y: number}` sur le canevas |
+| `node_type` | string | Voir les types de nœuds ci-dessous |
+| `position` | object | `{x: number, y: number}` position sur le canevas |
 | `label` | string | Libellé d'affichage |
-| `card` | object | Configuration de la carte (voir ci-dessous) |
+| `card` | object | Configuration de la carte (obligatoire pour `when`, `and`, `then` — voir ci-dessous) |
+
+**Types de nœuds :**
+
+| Type | Carte requise | Rôle |
+|------|------------------|---------|
+| `start` | Aucune carte | Nœud déclencheur — point d'entrée du workflow |
+| `when` | Carte de condition | Condition de déclenchement (également point d'entrée valide) |
+| `and` | Carte de condition | Filtre de condition supplémentaire après un `when` |
+| `or` | Aucune carte | Nœud de branchement — poursuit si l'une des branches entrantes réussit |
+| `then` | Carte d'action | Action à exécuter |
+| `delay` | Aucune carte | Nœud d'attente — met l'exécution en pause pendant une durée configurée |
+| `all` | Aucune carte | Nœud de fusion — attend toutes les branches entrantes |
+| `any` | Aucune carte | Nœud de fusion — poursuit dès la première branche entrante |
+| `note` | Aucune carte | Note autocollante / annotation ; non exécutée |
 
 ### Structure des arêtes
 
@@ -92,12 +66,18 @@ Chaque arête nécessite :
 | `edge_id` | string | Identifiant unique de l'arête |
 | `source_node_id` | string | ID du nœud source |
 | `target_node_id` | string | ID du nœud cible |
-| `source_handle` | string | `success` ou `error` (optionnel) |
+| `source_handle` | string | `success`, `error` ou `failed_condition` (optionnel) |
 | `target_handle` | string | `input` (optionnel) |
 
-### Configuration des cartes
+**Handles source :**
 
-Les cartes définissent ce qu'un nœud fait. Utilisez `list_cards` ou `sdk_list_cards_picker` pour obtenir les cartes disponibles.
+- `success` — pris quand le nœud source réussit (disponible sur tout nœud exécutable).
+- `failed_condition` — pris quand une carte de condition `when` ou `and` est évaluée à false.
+- `error` — pris quand un nœud `and` ou `then` lève une erreur.
+
+### Configuration de la carte
+
+Les cartes définissent ce que fait un nœud. Utilisez `list_cards` ou `sdk_list_cards_picker` pour obtenir les cartes disponibles.
 
 ```json
 {
@@ -111,7 +91,7 @@ Les cartes définissent ce qu'un nœud fait. Utilisez `list_cards` ou `sdk_list_
 ```
 
 {% hint style="info" %}
-Vous devez uniquement fournir `id`, `card_type`, `version` et `variables` pour chaque carte. Le serveur enrichit automatiquement les cartes avec les métadonnées d'affichage (svg, texte, catégorie) depuis la base de données.
+Vous n'avez qu'à fournir `id`, `card_type`, `version` et `variables` pour chaque carte. Le serveur enrichit automatiquement les cartes avec les métadonnées d'affichage (svg, text, category) depuis la base de données.
 {% endhint %}
 
 **Exemple de requête :**
@@ -160,16 +140,6 @@ Vous devez uniquement fournir `id`, `card_type`, `version` et `variables` pour c
 }
 ```
 
-**Exemple de réponse :**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
 ## update\_advanced\_workflow
 
 Mettre à jour un workflow avancé existant. Vous pouvez mettre à jour toute combinaison de nom, description, nœuds et arêtes.
@@ -184,33 +154,15 @@ Mettre à jour un workflow avancé existant. Vous pouvez mettre à jour toute co
 | `nodes` | array | Non | Nouveaux nœuds (remplace tous les nœuds existants) |
 | `edges` | array | Non | Nouvelles arêtes (remplace toutes les arêtes existantes) |
 
-**Exemple de réponse :**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
-
 ## delete\_workflow
 
-Supprimer un workflow par ID (suppression logique).
+Supprimer un workflow par ID (suppression douce).
 
 **Paramètres :**
 
 | Paramètre | Type | Obligatoire | Description |
 |-----------|------|-------------|-------------|
 | `workflow_id` | string | Oui | UUID du workflow à supprimer |
-
-**Exemple de réponse :**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
 
 ## test\_advanced\_workflow
 
@@ -221,52 +173,13 @@ Tester l'exécution d'un workflow avancé. Vous pouvez optionnellement fournir u
 | Paramètre | Type | Obligatoire | Description |
 |-----------|------|-------------|-------------|
 | `workflow_id` | string | Oui | UUID du workflow avancé |
-| `doc_id` | string | Non | UUID d'un document pour le test |
-
-**Exemple de réponse :**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-...",
-  "execution_time": 0.234,
-  "workflow_result": "completed",
-  "node_results": {
-    "when-1": {"status": "success", "output": true},
-    "then-1": {"status": "success"}
-  },
-  "logs": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "status": "success",
-      "error": null,
-      "duration_ms": 12
-    }
-  ]
-}
-```
+| `doc_id` | string | Non | UUID d'un document avec lequel tester |
 
 ## list\_test\_scenarios
 
-Lister tous les scénarios de test de workflow pour l'organisation.
+Lister tous les scénarios de test de workflows pour l'organisation.
 
 **Paramètres :** Aucun
-
-**Exemple de réponse :**
-
-```json
-[
-  {
-    "id": "scenario-uuid",
-    "name": "Invoice over 1000 EUR",
-    "workflow_id": "a1b2c3d4-...",
-    "enabled": true,
-    "status": "passed",
-    "last_run": "2025-03-20 14:00:00"
-  }
-]
-```
 
 ## list\_cards
 
@@ -274,33 +187,6 @@ Lister toutes les cartes de workflow disponibles avec leurs conditions et config
 
 **Paramètres :** Aucun
 
-**Exemple de réponse :**
-
-```json
-[
-  {
-    "id": "card-uuid",
-    "text": "Document Type Is",
-    "card_type": "document_type_is",
-    "card_version": 1,
-    "category": "Document",
-    "when_condition": true,
-    "and_condition": false,
-    "then_condition": false
-  },
-  {
-    "id": "card-uuid-2",
-    "text": "Send Email Notification",
-    "card_type": "send_email",
-    "card_version": 1,
-    "category": "Communication",
-    "when_condition": false,
-    "and_condition": false,
-    "then_condition": true
-  }
-]
-```
-
 {% hint style="info" %}
-Les cartes ont des indicateurs de rôle : `when_condition` (déclencheur), `and_condition` (condition supplémentaire) et `then_condition` (action). Utilisez-les pour déterminer dans quels types de nœuds une carte peut être utilisée.
+Les cartes ont des drapeaux de rôle : `when_condition` (déclencheur), `and_condition` (condition supplémentaire) et `then_condition` (action). Utilisez-les pour déterminer dans quels types de nœuds une carte peut être utilisée.
 {% endhint %}

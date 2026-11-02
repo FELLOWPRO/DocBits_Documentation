@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.126
+FatturaPA jest skonfigurowaną włoską
+rodziną. Oznaczenie rodziny nie
+
+formats_02
+00:00:05.126 --> 00:00:10.792
+certyfikuje każdego wydania FatturaPA ani
+przesyłania przez SDI. Sprawdź schemat
+
+formats_03
+00:00:10.792 --> 00:00:13.367
+źródłowy i wymagania odbiorcy.
+
+workflow_01
+00:00:14.117 --> 00:00:19.585
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:19.585 --> 00:00:25.158
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:25.158 --> 00:00:27.967
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:28.717 --> 00:00:34.743
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:34.743 --> 00:00:40.675
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:40.675 --> 00:00:43.500
+podatkowego ani dostarczenia przez sieć.
+

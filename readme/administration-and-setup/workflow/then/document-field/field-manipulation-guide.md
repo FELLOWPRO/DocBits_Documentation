@@ -4,6 +4,12 @@
 
 ---
 
+The field and table cards on this page go in the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>Field and table manipulation cards are added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+
+---
+
 ## 📌 Version Information
 
 **Multi-Version Cards:** CALC_COLUMNS (v2), CALC_COLUMNS_REGEX (v2), EDIT_COLUMN (v2), AI_CALC_MTZ_ETZ (v2)

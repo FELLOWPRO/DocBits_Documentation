@@ -1,0 +1,78 @@
+# Assign a Task with Title
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v2.png" alt="Workflow card Task: Assign a task with title, description and priority to the assignee type return of decision table, notify them via email, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v3.png" alt="Workflow card Task: Assign Task/Notification with title, description and priority to the assignee type return of decision table, notify them via email, version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+## **Purpose:**
+
+The "Assign Task / Notification from Decision Table" workflow card is designed to dynamically assign tasks or notifications based on the results of a decision table. This card ensures tasks or notifications are assigned to the correct user or group according to the logic defined in the decision table, with an optional email notification sent to the recipient.
+
+## **Components of the Card:**
+
+1. **Title**
+   * **Description**: Specifies the title of the task or notification being created.
+   * **Detail**: The title should provide context and describe the purpose of the task or notification.
+2. **Description**
+   * **Description**: Defines the content or purpose of the task or notification.
+   * **Detail**: Provides additional information about the task or notification, explaining the context or action required.
+3. **Priority**
+   * **Description**: Defines the urgency level of the task or notification.
+   * **Options**:
+     * **High**: Tasks or notifications requiring immediate attention.
+     * **Medium**: Important tasks that should be addressed promptly.
+     * **Low**: Tasks that can be attended to at a later time.
+4. **Assignee Type**
+   * **Description**: Specifies the user or group assigned to the task or notification based on the decision table’s output.
+   * **Detail**: The decision table dynamically evaluates conditions and returns the appropriate user or group for assignment.
+5. **Email Notification**
+   * **Description**: Configures whether an email notification will be sent to the assigned user or group.
+   * **Options**:
+     * **True**: Sends an email notification to the recipient.
+     * **False**: No email notification is sent.
+
+#### **Additional Components in Version 3**
+
+1. **Notification Type**
+   * **Description**: Specifies whether the card creates a task or a notification.
+   * **Options**:
+     * **Task**: Creates a task assigned to the user or group from the decision table.
+     * **Notification**: Sends a notification to the user or group from the decision table.
+
+## **Functionality:**
+
+* **Condition Evaluation:**\
+  The card only executes its action if both the **"When"** and **"And"** evaluate as true.
+* **Task / Notification Assignment**\
+  The card assigns the task or notification to the user or group identified by the decision table. The decision table dynamically evaluates predefined conditions and returns the corresponding recipient.
+* **Email Notification**\
+  If configured to do so, an email notification is sent to the assigned user or group.
+* **Version 3 Functionality**\
+  In Version 3, the card allows the creation of either a Task or a Notification, providing more flexibility for task management and communication.
+
+## **Setup and Configuration:**
+
+1. **Define Task or Notification Details**:\
+   Enter the title, description, and priority for the task or notification.
+2. **Configure Decision Table**:\
+   Set up the decision table to dynamically determine which user or group should be assigned the task or notification.
+3. **Enable Email Notification**:\
+   Specify whether an email notification should be sent to the assigned user or group.
+4. **Specify Notification Type (Version 3)**:\
+   Choose whether the card will create a task or send a notification.
+
+## **Conclusion:**
+
+The **"Assign Task / Notification from Decision Table"** workflow card automates the assignment of tasks or notifications based on dynamic conditions defined in a decision table. Version 3 enhances its functionality by allowing users to choose between creating a task or notification, and ensures the correct recipient is always assigned. The email notification feature keeps users informed, streamlining communication and task management.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Practical example
+
+**When to use:** Create a task for the assignee returned by a decision table.
+
+**Configuration:** Use a matching demo rule returning `Demo Reviewer A`, title `Review invoice` and the desired priority.
+
+**Expected result and counterexample:** The resulting task is assigned according to that returned assignee. Test an unmatched rule separately and inspect the card log.
+
+This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.

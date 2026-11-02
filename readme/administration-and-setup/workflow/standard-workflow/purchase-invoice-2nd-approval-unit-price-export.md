@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Unit Price Export
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02.png" alt=""><figcaption></figcaption></figure>
 
 This title indicates that the rule is set up to manage the second approval phase of purchase invoices with a focus on the unit price, ensuring it matches the agreed terms.
 

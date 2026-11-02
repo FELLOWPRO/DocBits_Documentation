@@ -1,0 +1,41 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.380
+OIOUBL 2.1 is de vermelde Deense variant.
+OIOUBL en Peppol BIS zijn verschillende
+
+formats_02
+00:00:06.380 --> 00:00:11.567
+profielen. Alleen UBL-syntaxis
+identificeert het nationale profiel niet.
+
+workflow_01
+00:00:12.317 --> 00:00:17.971
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:17.971 --> 00:00:23.393
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:23.393 --> 00:00:24.867
+activeert het niet.
+
+accept_01
+00:00:25.617 --> 00:00:31.306
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:31.306 --> 00:00:36.588
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:36.588 --> 00:00:39.967
+fiscale goedkeuring of aflevering via een
+netwerk.
+

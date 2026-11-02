@@ -36,7 +36,7 @@ DocBits excels in adapting document layouts according to their geographical orig
 
 When you want to apply the default layout to multiple origins, press **Apply Default To Origins**.
 
-<figure><img src="../../../.gitbook/assets/origin_layout_3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/origin_layout_3.png" alt=""><figcaption></figcaption></figure>
 
 A popup will appear where you can select the origins you want to apply the default layout to. You can use **Select All** or **Unselect All** to quickly manage your selection. The popup displays the number of currently selected origins.
 

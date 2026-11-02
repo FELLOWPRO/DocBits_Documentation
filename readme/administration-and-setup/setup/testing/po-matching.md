@@ -9,7 +9,7 @@ When it comes to testing your PO Matching configuration, you will need to create
 
 Once you have created your purchase order, go to Settings → Master Data Lookup and search for the purchase order number of the PO you just created as it should now appear in your purchase order master data in DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+<figure><img src="../../../.gitbook/assets/a-testing-po-matching-master-data-en-20261006.png" alt="Lookup Master Data page with the Purchase Order table of imported purchase orders."><figcaption><p>Purchase orders appear in the master data lookup.</p></figcaption></figure>
 
 You should see your unique PO number here, this means that DocBits and INFOR are correctly synced.
 

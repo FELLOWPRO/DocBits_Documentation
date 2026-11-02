@@ -1,6 +1,6 @@
 # Unit Price Combined with Fields
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

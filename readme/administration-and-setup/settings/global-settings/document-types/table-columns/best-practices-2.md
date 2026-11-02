@@ -1,47 +1,33 @@
 # Best practices
 
-## Best practices for organizing data in tables help keep the database structure clear, improve data integrity, and optimize performance.
+## Keep the default columns for amounts and quantities
 
-**Here are some best practices:**
+The line-item checks (*quantity × unit price = line total*) and PO matching look for the default columns `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. If you create your own columns for these values instead, the checks do not run and PO matching reports missing mandatory columns. Rename the *title* if the wording does not suit you; keep the column.
 
+## Hide, don't delete
 
+Default columns you do not need are hidden, not deleted; they cannot be deleted anyway. For your own columns, hiding is also the safer choice while you are not sure whether a script or an export mapping still references the column.
 
-**Use meaningful column names:**
+## Mark as required only what blocks export
 
-* Choose column names that are clear and descriptive to improve the readability and understandability of your database structure. Avoid abbreviated or cryptic names.
-* Name columns to accurately reflect the content or meaning of the data stored in them. This makes later querying and reporting easier.
+Every required column has to be filled in every row before a user can approve the document. Use it for values the ERP rejects when missing (for example the cost centre in an accounting export), not for values that are merely useful.
 
+## Use *Read Only* for looked-up values
 
+Values that a script or a master-data lookup writes into the table (article description from the item master, tax code from the supplier) should be read-only, so users correct the source instead of the copy.
 
-**Choose appropriate data types:**
+## Use AI per column, not per supplier
 
-* Use the smallest possible data type that adequately meets the needs of your data to save storage space and improve performance.
-* Consider the type of data stored and choose the data type accordingly. For example: use INTEGER for integers, VARCHAR for strings, and DATE for dates.
+For a supplier with trained rules, most columns come out right from the rules. If one column is unreliable (long descriptions that wrap, a discount that sometimes sits in a different place), set *Use AI* on that column only. The rules keep the rest.
 
+## Name columns for the ERP, not for the document
 
+The *Column name* ends up in export mappings and scripts. `COST_CENTRE` is easier to map than `KST` and does not change when a supplier prints it differently.
 
-**Understanding required columns:**
+## Test on a restarted document
 
-* Mark columns as required (NOT NULL) if they are essential to the proper operation of your application and NULL values ​​are unacceptable.
-* When deciding whether to mark a column as required, make sure that the application can logically handle NULL values ​​and that NULL values ​​will not cause unexpected errors.
+After a change, restart one existing document of the document type and open it: the new column appears, the hidden one is gone, required cells are marked. Only then roll it out to users.
 
+## One table per line-item structure
 
-
-**Using foreign keys for relationships:**
-
-* If your database has relationships between tables, use foreign keys to define those relationships. This improves data integrity and allows referential integrity constraints to be enforced.
-* Be sure to consider indexing foreign keys to optimize the performance of queries that access those relationships.
-
-
-
-**Regularly review and update:**
-
-* Regularly review the database structure to ensure it meets the changing needs of your application. Make updates as needed to improve the efficiency and performance of your database.&#x20;
-* Be sure to consider feedback from users and developers to identify and implement areas for improvement.
-
-
-
-By applying these best practices, you can create a well-organized and efficient database structure that meets the needs of your application and provides a reliable foundation for storing, querying, and reporting on your data.
-
-
-
+Create a second table only when a document type really has two independent tables (for example item lines and a separate charges table). Extra empty tables show up on every document of the type.

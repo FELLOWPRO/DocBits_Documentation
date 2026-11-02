@@ -15,6 +15,26 @@ Workflow patterns are proven, reusable solutions to common documentation process
 
 ---
 
+## The Workflow Builder at a glance
+
+Every pattern on this page is assembled in the **Workflow Builder**. You reach it from **Workflow Dashboard → Workflow List → Add Workflow** (or by opening an existing workflow). The dashboard gives you the run history and success/fail rates for all of your workflows:
+
+<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard showing run totals, success and fail rates, the workflow-runs chart and recent activity"><figcaption><p>The Workflow Dashboard — run totals, success/fail rates and recent activity for every workflow.</p></figcaption></figure>
+
+The **Workflow List** tab lists every workflow with its type, execution order and trigger. Use **Add Workflow** to create a new one, or click a workflow to open it in the builder:
+
+<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Workflow List tab listing workflows with type, execution order and trigger"><figcaption><p>The Workflow List — each row is a workflow you can open, toggle on/off or edit.</p></figcaption></figure>
+
+A workflow is built from three groups of cards — **When** (the trigger), **And** (additional conditions) and **Then** (the actions to run). The example below triggers on invoices belonging to a sub-organization and assigns them to a user:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then cards"><figcaption><p>The Workflow Builder canvas. Each pattern below is just a different combination of When / And / Then cards.</p></figcaption></figure>
+
+Click **Add Card** in any group to open the card library. Cards are organised by category (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) so you can find the building block each pattern calls for:
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card dialog showing the card categories and available cards"><figcaption><p>The <strong>Add Card</strong> library — every card referenced in the patterns below is picked from here.</p></figcaption></figure>
+
+---
+
 ## Available Patterns
 
 ### 1. [API Integration Pattern](api-integration-pattern.md)

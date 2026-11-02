@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Unit Price
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09.png" alt=""><figcaption></figcaption></figure>
 
 This title indicates that the rule is set up to manage the second approval phase of a purchase invoice, with a specific focus on validating the unit price.
 

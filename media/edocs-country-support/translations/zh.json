@@ -1,0 +1,316 @@
+{
+  "title": "eDocs 格式、版本和国家指南",
+  "description": "在测试文档处理之前，先确定已配置的 eDocs 格式系列、语法、版本和业务规范。",
+  "intro": "从原始文档和对应的国家指南开始检查。仅凭国家名称无法确定文件格式。版本标识、XML 语法和业务规范描述的是不同的内容。",
+  "evidence": "这些表格记录了 2026 年 10 月 17 日对开发环境目录及相应处理代码的检查结果。它们说明有哪些规则和配置组件可用，并不代表对所有文件、法律要求或生产部署的认证。组织配置可以覆盖默认规则。",
+  "distinctions_title": "正确理解支持矩阵",
+  "distinctions": [
+    "格式系列：电子文档格式，例如 XRechnung、Factur-X、KSeF 或 CFDI。",
+    "语法：实际的数据载荷，例如 UBL XML、CII XML 或内嵌 XML 的 PDF。扫描 PDF、JSON 导出文件或二维码图片并不等同于 XML 数据载荷。",
+    "版本：文档声明的发布版本或架构版本。通用的格式系列名称不能证明所有版本均受支持。",
+    "业务规范：业务或数据要求的一个子集，例如 BASIC、EN16931、EXTENDED 或买方代开票。业务规范不是发布版本。",
+    "规则与组件：分类、Transformation、Preview 和 Extraction Paths 相互独立。已配置的业务规范不一定有独立的分类规则。",
+    "验证与传输：呈现文件或提取数据本身，不能验证所有法律规则、签名、税务核准或网络送达情况。"
+  ],
+  "workflow_title": "检查组织中的格式",
+  "workflow": [
+    "保留原始 XML 或内嵌 XML 的 PDF。查看命名空间、架构或自定义标识，以及声明的版本和业务规范。",
+    "针对适用的业务文档，打开设置 → 文档类型 → E-Doc。搜索指南中所列的准确电子文档格式名称。",
+    "检查实际生效的 Default 或 Custom 来源及其活动配置版本。查看 Transformation、Preview 和 Extraction Paths。保存草稿不会将其激活。",
+    "针对所需的每一种语法、版本和业务文档，测试有代表性的原始文件。验证关键字段、金额、税额、发票或贷项通知单分类，以及 ERP 导出结果。",
+    "单独确认验证策略和传输方式。保留自定义映射，并在重新启动现有文档之前检查审批和导出历史。"
+  ],
+  "country_title": "国家指南",
+  "country_column": "国家 / 地区",
+  "variants_column": "格式系列和版本范围",
+  "status_column": "目录检查结果",
+  "configured": "已找到条目",
+  "unconfirmed": "尚未确认",
+  "format_column": "准确格式名称",
+  "doctype_column": "规则文档键",
+  "components_column": "可用组件",
+  "component_note": "C = 分类，T = Transformation，P = Preview，E = Extraction Paths。文档键用于查找规则或配置，不能保证最终保存的 invoice_type 值。转换可以通过 INVOICE 映射将文档分类为贷项通知单。",
+  "missing_note": "短横线表示状态检查未报告该准确格式与文档键组合的专用组件。这不排除使用共享或回退映射的可能性。在依赖此处理路径之前，请验证实际生效的映射选择逻辑，并测试有代表性的文件。",
+  "only_title": "其他配置名称",
+  "only_note": "这些名称在所检查的目录中有配置条目，但没有独立的分类规则。通用格式系列或更细化的格式识别可能会选中兼容的处理路径。仅有这些条目，并不能证明系统能够自动检测相应发布版本或业务规范。",
+  "no_rule": "未找到匹配的分类或配置条目。本次检查未能确认当前的内置支持。",
+  "screen_title": "在 DocBits 中查找映射",
+  "screen_caption": "真实开发界面：具有代表性的格式及其可用配置组件。其他版本列于矩阵中。",
+  "screen_empty_caption": "真实开发界面：在所检查的目录中，搜索此国家名称未返回匹配的配置条目。",
+  "video_title": "国家说明视频",
+  "video_caption": "本地化旁白和 WebVTT 字幕说明格式选择、配置和验收检查。",
+  "back": "所有国家和支持范围",
+  "related": "相关格式参考",
+  "country_intro": "在测试原始文件之前，使用本指南确定已配置的格式系列和版本范围。",
+  "scope_title": "变体与版本限制",
+  "matrix_title": "已检查的规则和组件矩阵",
+  "acceptance_title": "验收检查",
+  "acceptance": "组件检查只能确认配置存在，并非针对所有版本的端到端处理测试。请测试准确的数据载荷，以及集成所需的发票或贷项通知单处理路径。",
+  "identity_title": "Factur-X / ZUGFeRD：不要臆测发布版本",
+  "identity": "协调统一的 CII Guideline ID 可以标识格式系列和业务规范，但多个发布版本可能使用相同的 1p0 标记。Factur-X XMP Version 1.0 是架构标记，并非 1.08 或 1.09 这样的发布版本。ZUGFeRD XMP 可以声明其版本。如果缺少权威元数据，请保留通用格式系列的识别结果，并向发送方确认原始文件。",
+  "profiles": "MINIMUM 和 BASIC WL 可能不包含后续处理所需的行项目信息。BASIC、EN16931/COMFORT 和 EXTENDED 涵盖的数据范围各不相同。数据更全面的业务规范可能包含提取映射未使用的字段。请用真实样例检查必需字段。",
+  "index_link": "请参阅国家指南，了解准确格式名称、语法、版本限制和已检查的配置状态。",
+  "leaf_link": "请参阅国家指南，了解版本限制、实际生效的配置和国家说明视频。",
+  "narration_workflow": "打开检测出的格式对应的 E-Doc。比较 Transformation、Preview 和 Extraction Paths。Custom 规则优先。保存草稿不会将其激活。",
+  "narration_accept": "在适用时，测试一份发票和一份贷项通知单。验证金额、交易各方和导出的文档类型。成功解析不代表已获税务核准或已通过网络送达。",
+  "narration_unconfirmed": "此目录中未找到匹配的内置条目。请支持团队核实已部署的映射。上线前，请测试有代表性的原始文件。",
+  "labels": {
+    "formats": "格式与版本",
+    "workflow": "检查实际生效的配置",
+    "source": "原始文档",
+    "detect": "匹配的格式",
+    "transform": "Transformation",
+    "preview": "Preview",
+    "extract": "Extraction Paths",
+    "custom": "Custom 覆盖 Default",
+    "accept": "测试所需的文档处理路径",
+    "invoice": "发票",
+    "credit": "贷项通知单",
+    "fields": "字段与金额",
+    "export": "ERP 导出",
+    "limits": "验证与送达需单独检查",
+    "unconfirmed": "支持情况尚未确认"
+  },
+  "countries": {
+    "austria": {
+      "name": "奥地利",
+      "scope": "ebInterface 4.3、5.0、6.0 和 6.1 各有独立条目。",
+      "distinction": "请将 XML 命名空间与已配置的版本匹配。不同的命名空间可能需要另一套映射。",
+      "narration": "ebInterface 4.3、5.0、6.0 和 6.1 各有独立条目。 请将 XML 命名空间与已配置的版本匹配。不同的命名空间可能需要另一套映射。"
+    },
+    "denmark": {
+      "name": "丹麦",
+      "scope": "OIOUBL 2.1 是明确列出的丹麦条目。",
+      "distinction": "OIOUBL 与 Peppol BIS 是不同的业务规范。仅凭 UBL 语法无法确定国家业务规范。",
+      "narration": "OIOUBL 2.1 是明确列出的丹麦条目。 OIOUBL 与 Peppol BIS 是不同的业务规范。仅凭 UBL 语法无法确定国家业务规范。"
+    },
+    "finland": {
+      "name": "芬兰",
+      "scope": "Finvoice 1.3、2.0、2.01 和 3.0 各有独立条目。TEAPPSXML 属于另一个格式系列。",
+      "distinction": "选择映射之前，请检查原始文件的版本。TEAPPSXML 名称并未指明发布版本。",
+      "narration": "Finvoice 1.3、2.0、2.01 和 3.0 各有独立条目。TEAPPSXML 属于另一个格式系列。 选择映射之前，请检查原始文件的版本。TEAPPSXML 名称并未指明发布版本。"
+    },
+    "france": {
+      "name": "法国",
+      "scope": "Factur-X 既有通用条目，也有具体发布版本的条目，包括 1.0.05、1.08 和 1.09。VRBL FR CIUS 1.0 为独立条目。",
+      "distinction": "XML 标记 1p0 和 Factur-X XMP Version 1.0 无法确定发布版本。版本未知时，请保留通用名称。",
+      "narration": "Factur-X 既有通用条目，也有具体发布版本的条目，包括 1.0.05、1.08 和 1.09。VRBL FR CIUS 1.0 为独立条目。 XML 标记 1p0 和 Factur-X XMP Version 1.0 无法确定发布版本。版本未知时，请保留通用名称。"
+    },
+    "germany": {
+      "name": "德国",
+      "scope": "XRechnung 从 1.0 到 3.0.2 共有十三个版本名称，每个版本均有 CII 和 UBL 条目。ZUGFeRD 包含早期业务规范，以及 2.5 的 CII 和 UBL 条目。",
+      "distinction": "语法、发布版本和业务规范是不同的选择。不要根据共用的 1p0 标记推断 Factur-X 发布版本。",
+      "narration": "XRechnung 从 1.0 到 3.0.2 共有十三个版本名称，每个版本均有 CII 和 UBL 条目。ZUGFeRD 包含早期业务规范，以及 2.5 的 CII 和 UBL 条目。 语法、发布版本和业务规范是不同的选择。不要根据共用的 1p0 标记推断 Factur-X 发布版本。"
+    },
+    "italy": {
+      "name": "意大利",
+      "scope": "FatturaPA 是已配置的意大利格式系列。",
+      "distinction": "格式系列名称并不认证所有 FatturaPA 发布版本，也不证明能够通过 SDI 传输。请检查原始架构和接收方要求。",
+      "narration": "FatturaPA 是已配置的意大利格式系列。 格式系列名称并不认证所有 FatturaPA 发布版本，也不证明能够通过 SDI 传输。请检查原始架构和接收方要求。"
+    },
+    "netherlands": {
+      "name": "荷兰",
+      "scope": "SI-UBL 2.0 有专用条目。",
+      "distinction": "UBL 文件不一定就是 SI-UBL 2.0。请检查其自定义标识和对应的国家映射。",
+      "narration": "SI-UBL 2.0 有专用条目。 UBL 文件不一定就是 SI-UBL 2.0。请检查其自定义标识和对应的国家映射。"
+    },
+    "norway": {
+      "name": "挪威",
+      "scope": "目录列出了 EHF Invoice 3.0，以及 EHF Order、Order Response 和 Despatch Advice。",
+      "distinction": "请根据实际业务文档选择映射。订单或发货通知不是发票。",
+      "narration": "目录列出了 EHF Invoice 3.0，以及 EHF Order、Order Response 和 Despatch Advice。 请根据实际业务文档选择映射。订单或发货通知不是发票。"
+    },
+    "poland": {
+      "name": "波兰",
+      "scope": "KSeF 有通用、FA2 和 FA3 条目。",
+      "distinction": "FA2 与 FA3 使用不同的结构。请确认原始架构并测试适当的映射；解析文件不会将发票提交到 KSeF。",
+      "narration": "KSeF 有通用、FA2 和 FA3 条目。 FA2 与 FA3 使用不同的结构。请确认原始架构并测试适当的映射；解析文件不会将发票提交到 KSeF。"
+    },
+    "slovenia": {
+      "name": "斯洛文尼亚",
+      "scope": "e-SLOG 1.6 和 2.0 各有独立条目。",
+      "distinction": "两个版本的 XML 结构不同。请按原始架构匹配，不要根据文件名选择规则。",
+      "narration": "e-SLOG 1.6 和 2.0 各有独立条目。 两个版本的 XML 结构不同。请按原始架构匹配，不要根据文件名选择规则。"
+    },
+    "spain": {
+      "name": "西班牙",
+      "scope": "Facturae 有通用、3.2、3.2.1 和 3.2.2 条目。",
+      "distinction": "请检查命名空间和架构版本。从已签名的 XML 文件中提取数据，本身不会验证其签名，也不能证明已被 FACe 接受。",
+      "narration": "Facturae 有通用、3.2、3.2.1 和 3.2.2 条目。 请检查命名空间和架构版本。从已签名的 XML 文件中提取数据，本身不会验证其签名，也不能证明已被 FACe 接受。"
+    },
+    "sweden": {
+      "name": "瑞典",
+      "scope": "Svefaktura 1.0 是明确列出的瑞典条目。",
+      "distinction": "请区分这个早期格式系列与 Peppol BIS Billing 3.0，并确认接收方要求的业务规范。",
+      "narration": "Svefaktura 1.0 是明确列出的瑞典条目。 请区分这个早期格式系列与 Peppol BIS Billing 3.0，并确认接收方要求的业务规范。"
+    },
+    "australia": {
+      "name": "澳大利亚",
+      "scope": "PINT A-NZ 有与新西兰共用的发票和贷项通知单规则条目。",
+      "distinction": "活动的格式系列名称没有固定的 PINT 发布版本号。请检查自定义标识和业务规范标识；网络送达需要单独的集成。",
+      "narration": "PINT A-NZ 有与新西兰共用的发票和贷项通知单规则条目。 活动的格式系列名称没有固定的 PINT 发布版本号。请检查自定义标识和业务规范标识；网络送达需要单独的集成。"
+    },
+    "new-zealand": {
+      "name": "新西兰",
+      "scope": "PINT A-NZ 有与澳大利亚共用的发票和贷项通知单规则条目。",
+      "distinction": "活动的格式系列名称没有固定的 PINT 发布版本号。请检查自定义标识和业务规范标识；网络送达需要单独的集成。",
+      "narration": "PINT A-NZ 有与澳大利亚共用的发票和贷项通知单规则条目。 活动的格式系列名称没有固定的 PINT 发布版本号。请检查自定义标识和业务规范标识；网络送达需要单独的集成。"
+    },
+    "india": {
+      "name": "印度",
+      "scope": "India GST E-Invoice 和 GST CreditNote 各有独立条目。",
+      "distinction": "文档所述的适配器处理 SignedInvoice XML。不要假定原始 IRP JSON、二维码图片或扫描 PDF 使用相同的提取路径。",
+      "narration": "India GST E-Invoice 和 GST CreditNote 各有独立条目。 文档所述的适配器处理 SignedInvoice XML。不要假定原始 IRP JSON、二维码图片或扫描 PDF 使用相同的提取路径。"
+    },
+    "indonesia": {
+      "name": "印度尼西亚",
+      "scope": "Indonesia E-Faktur 是已配置的格式系列。",
+      "distinction": "条目未注明发布版本号。请确认实际 XML 数据载荷；纸质发票或二维码图片不能证明 XML 支持情况。",
+      "narration": "Indonesia E-Faktur 是已配置的格式系列。 条目未注明发布版本号。请确认实际 XML 数据载荷；纸质发票或二维码图片不能证明 XML 支持情况。"
+    },
+    "china": {
+      "name": "中国",
+      "scope": "目录包含 Fapiao、E-Fapiao、General VAT Invoice 和 Special VAT Invoice。",
+      "distinction": "文档所述的适配器使用 XML 命名空间 urn:china:tax:fapiao:1.0。不要假定所有原生 OFD、PDF 或税务平台导出文件都遵循这一数据约定。",
+      "narration": "目录包含 Fapiao、E-Fapiao、General VAT Invoice 和 Special VAT Invoice。 文档所述的适配器使用 XML 命名空间 urn:china:tax:fapiao:1.0。不要假定所有原生 OFD、PDF 或税务平台导出文件都遵循这一数据约定。"
+    },
+    "japan": {
+      "name": "日本",
+      "scope": "JP PINT 和 JP PINT Self-Billing 是独立条目。",
+      "distinction": "买方代开票是业务流程变体，而非语言选项。请检查自定义标识和已配置的变体。",
+      "narration": "JP PINT 和 JP PINT Self-Billing 是独立条目。 买方代开票是业务流程变体，而非语言选项。请检查自定义标识和已配置的变体。"
+    },
+    "korea": {
+      "name": "韩国",
+      "scope": "Korea E-Tax Invoice 和 Korea NTS 是已配置的格式系列。",
+      "distinction": "这些名称未指明发布版本。请匹配实际 XML 结构，不要将成功提取视为税务平台接受文件的证明。",
+      "narration": "Korea E-Tax Invoice 和 Korea NTS 是已配置的格式系列。 这些名称未指明发布版本。请匹配实际 XML 结构，不要将成功提取视为税务平台接受文件的证明。"
+    },
+    "malaysia": {
+      "name": "马来西亚",
+      "scope": "MyInvois 有发票和贷项通知单规则条目。",
+      "distinction": "已检查的提取路径基于 XML。国家平台也接受 JSON，但这并不能证明此 DocBits 映射支持 JSON 导入。",
+      "narration": "MyInvois 有发票和贷项通知单规则条目。 已检查的提取路径基于 XML。国家平台也接受 JSON，但这并不能证明此 DocBits 映射支持 JSON 导入。"
+    },
+    "philippines": {
+      "name": "菲律宾",
+      "scope": "Philippines EIS 是已配置的格式系列。",
+      "distinction": "该名称未指明发布版本。在依赖通用 EIS 名称之前，请检查数据载荷架构和适用的文档类型。",
+      "narration": "Philippines EIS 是已配置的格式系列。 该名称未指明发布版本。在依赖通用 EIS 名称之前，请检查数据载荷架构和适用的文档类型。"
+    },
+    "singapore": {
+      "name": "新加坡",
+      "scope": "InvoiceNow 有发票和贷项通知单条目；InvoiceNow SG 是另一个已配置的名称。",
+      "distinction": "请检查新加坡业务规范标识。国家业务规范与通用 Peppol BIS 可以共用 UBL 语法，但业务规则未必完全相同。",
+      "narration": "InvoiceNow 有发票和贷项通知单条目；InvoiceNow SG 是另一个已配置的名称。 请检查新加坡业务规范标识。国家业务规范与通用 Peppol BIS 可以共用 UBL 语法，但业务规则未必完全相同。"
+    },
+    "taiwan": {
+      "name": "台湾",
+      "scope": "Taiwan eGUI 是已配置的格式系列。",
+      "distinction": "格式系列名称不代表所有 MIG 发布版本均已获认证。请检查实际 XML 架构，并测试有代表性的电子发票。",
+      "narration": "Taiwan eGUI 是已配置的格式系列。 格式系列名称不代表所有 MIG 发布版本均已获认证。请检查实际 XML 架构，并测试有代表性的电子发票。"
+    },
+    "thailand": {
+      "name": "泰国",
+      "scope": "Thailand E-Tax Invoice 是已配置的格式系列。",
+      "distinction": "该名称未指明发布版本。请确认原始 XML 结构；签名验证和向税务平台送达需要单独检查。",
+      "narration": "Thailand E-Tax Invoice 是已配置的格式系列。 该名称未指明发布版本。请确认原始 XML 结构；签名验证和向税务平台送达需要单独检查。"
+    },
+    "vietnam": {
+      "name": "越南",
+      "scope": "Vietnam E-Invoice 是已配置的格式系列。",
+      "distinction": "该名称未指明发布版本。请检查原始命名空间和架构，不要假定所有税务平台导出文件都具有相同结构。",
+      "narration": "Vietnam E-Invoice 是已配置的格式系列。 该名称未指明发布版本。请检查原始命名空间和架构，不要假定所有税务平台导出文件都具有相同结构。"
+    },
+    "argentina": {
+      "name": "阿根廷",
+      "scope": "Argentina AFIP 和 Factura Electronica 是已配置的名称。",
+      "distinction": "在所检查的状态中，贷项通知单分类条目没有专用提取组件包。请验证实际生效的映射，并测试真实的贷项通知单样例。",
+      "narration": "Argentina AFIP 和 Factura Electronica 是已配置的名称。 在所检查的状态中，贷项通知单分类条目没有专用提取组件包。请验证实际生效的映射，并测试真实的贷项通知单样例。"
+    },
+    "brazil": {
+      "name": "巴西",
+      "scope": "巴西有 NF-e、NFC-e、CT-e、NFS-e 和 SPED NFS-e 条目。NFS-e 包含版本 1.00 和 2.00 至 2.04；SPED 包含 1.00.02 和 1.01。",
+      "distinction": "它们属于不同的文档系列。已配置的 NFS-e 版本并不认证所有市级架构或所有国家服务发票版式。",
+      "narration": "巴西有 NF-e、NFC-e、CT-e、NFS-e 和 SPED NFS-e 条目。NFS-e 包含版本 1.00 和 2.00 至 2.04；SPED 包含 1.00.02 和 1.01。 它们属于不同的文档系列。已配置的 NFS-e 版本并不认证所有市级架构或所有国家服务发票版式。"
+    },
+    "chile": {
+      "name": "智利",
+      "scope": "Chile DTE 有发票、贷项通知单和发货单条目。",
+      "distinction": "检查字段之前，请选择业务文档类型。发票、贷项通知单和交付信息使用不同的映射。",
+      "narration": "Chile DTE 有发票、贷项通知单和发货单条目。 检查字段之前，请选择业务文档类型。发票、贷项通知单和交付信息使用不同的映射。"
+    },
+    "colombia": {
+      "name": "哥伦比亚",
+      "scope": "Colombia Factura Electronica 和 Documento Soporte 各有独立条目。",
+      "distinction": "在所检查的状态中，贷项通知单分类条目没有专用提取组件包。请确认实际生效的映射，不要根据发票条目推断支持情况。",
+      "narration": "Colombia Factura Electronica 和 Documento Soporte 各有独立条目。 在所检查的状态中，贷项通知单分类条目没有专用提取组件包。请确认实际生效的映射，不要根据发票条目推断支持情况。"
+    },
+    "costa-rica": {
+      "name": "哥斯达黎加",
+      "scope": "较早的文档提到了哥斯达黎加，但在所检查的开发环境目录中未找到匹配的分类或配置条目。",
+      "distinction": "本次检查未能确认当前的内置处理能力。上线前，请支持团队核实已部署的映射，并测试有代表性的原始文件。",
+      "narration": "较早的文档提到了哥斯达黎加，但在所检查的开发环境目录中未找到匹配的分类或配置条目。 本次检查未能确认当前的内置处理能力。上线前，请支持团队核实已部署的映射，并测试有代表性的原始文件。"
+    },
+    "ecuador": {
+      "name": "厄瓜多尔",
+      "scope": "Ecuador SRI 有通用、1.0.0、1.1.0、2.0.0 和 2.1.0 条目。预扣税是独立的文档类型。",
+      "distinction": "在所检查的状态中，贷项通知单分类条目没有专用提取组件包。请检查实际生效的映射和原始文档类型。",
+      "narration": "Ecuador SRI 有通用、1.0.0、1.1.0、2.0.0 和 2.1.0 条目。预扣税是独立的文档类型。 在所检查的状态中，贷项通知单分类条目没有专用提取组件包。请检查实际生效的映射和原始文档类型。"
+    },
+    "mexico": {
+      "name": "墨西哥",
+      "scope": "Mexico CFDI 3.3 和 4.0 各有独立条目。",
+      "distinction": "请检查命名空间、版本和 TipoDeComprobante。不能仅凭负金额识别贷项通知单；成功解析不代表已获 SAT 核准。",
+      "narration": "Mexico CFDI 3.3 和 4.0 各有独立条目。 请检查命名空间、版本和 TipoDeComprobante。不能仅凭负金额识别贷项通知单；成功解析不代表已获 SAT 核准。"
+    },
+    "paraguay": {
+      "name": "巴拉圭",
+      "scope": "Paraguay DTE、SIFEN 和 SIFEN 150 是已配置的名称。",
+      "distinction": "在所检查的状态中，贷项通知单分类条目缺少专用提取组件包。请验证实际生效的映射，不要将这些名称视为可互换。",
+      "narration": "Paraguay DTE、SIFEN 和 SIFEN 150 是已配置的名称。 在所检查的状态中，贷项通知单分类条目缺少专用提取组件包。请验证实际生效的映射，不要将这些名称视为可互换。"
+    },
+    "peru": {
+      "name": "秘鲁",
+      "scope": "Peru CPE 有通用、UBL 2.0 和 UBL 2.1 条目。Factura Electronica 是另一个名称。",
+      "distinction": "请选择实际的 UBL 版本和文档结构。成功处理文件不代表已被 SUNAT 接受。",
+      "narration": "Peru CPE 有通用、UBL 2.0 和 UBL 2.1 条目。Factura Electronica 是另一个名称。 请选择实际的 UBL 版本和文档结构。成功处理文件不代表已被 SUNAT 接受。"
+    },
+    "uruguay": {
+      "name": "乌拉圭",
+      "scope": "Uruguay CFE 有通用、24 和 25 条目。目录还列出了 E-Factura 和 E-Nota Credito。",
+      "distinction": "在所检查的状态中，贷项通知单条目缺少专用提取组件包。请确认 CFE 版本，以及实际生效的发票或贷项通知单映射。",
+      "narration": "Uruguay CFE 有通用、24 和 25 条目。目录还列出了 E-Factura 和 E-Nota Credito。 在所检查的状态中，贷项通知单条目缺少专用提取组件包。请确认 CFE 版本，以及实际生效的发票或贷项通知单映射。"
+    },
+    "kazakhstan": {
+      "name": "哈萨克斯坦",
+      "scope": "Kazakhstan ESF 是已配置的格式系列。",
+      "distinction": "该名称未注明发布版本。请确认实际 XML 架构，不要根据提取支持情况推断能够向税务平台传输。",
+      "narration": "Kazakhstan ESF 是已配置的格式系列。 该名称未注明发布版本。请确认实际 XML 架构，不要根据提取支持情况推断能够向税务平台传输。"
+    },
+    "saudi-arabia": {
+      "name": "沙特阿拉伯",
+      "scope": "ZATCA Fatoorah、Reporting、Simplified 和 Tax Invoice 各有独立条目。",
+      "distinction": "这些名称描述不同的流程和发票变体。成功解析不代表已完成签名、核准或通过 ZATCA 申报。",
+      "narration": "ZATCA Fatoorah、Reporting、Simplified 和 Tax Invoice 各有独立条目。 这些名称描述不同的流程和发票变体。成功解析不代表已完成签名、核准或通过 ZATCA 申报。"
+    },
+    "turkey": {
+      "name": "土耳其",
+      "scope": "Turkey E-Fatura 和 E-Arsiv 是独立配置的格式系列。",
+      "distinction": "请检查原始业务规范和文档结构。格式系列名称不能确定所有 UBL-TR 发布版本，也不能证明已通过税务平台送达。",
+      "narration": "Turkey E-Fatura 和 E-Arsiv 是独立配置的格式系列。 请检查原始业务规范和文档结构。格式系列名称不能确定所有 UBL-TR 发布版本，也不能证明已通过税务平台送达。"
+    },
+    "united-arab-emirates": {
+      "name": "阿拉伯联合酋长国",
+      "scope": "UAE VAT Invoice 是已配置的名称。",
+      "distinction": "增值税发票映射并不证明支持阿联酋所有 Peppol 或 PINT 发布版本。请确认数据载荷约定和所需的送达集成。",
+      "narration": "UAE VAT Invoice 是已配置的名称。 增值税发票映射并不证明支持阿联酋所有 Peppol 或 PINT 发布版本。请确认数据载荷约定和所需的送达集成。"
+    },
+    "international": {
+      "name": "国际",
+      "scope": "国际条目包括 Peppol BIS 3.0、UBL 2.1、纯 CII、EDI、INVOIC02、cXML、OCI、BOD 和 SPS Commerce RSX 7.7.4。",
+      "distinction": "发票、订单、响应和发货映射相互独立。文件处理本身不提供 Peppol 接入点，也不提供与贸易伙伴的连接。",
+      "narration": "国际条目包括 Peppol BIS 3.0、UBL 2.1、纯 CII、EDI、INVOIC02、cXML、OCI、BOD 和 SPS Commerce RSX 7.7.4。 发票、订单、响应和发货映射相互独立。文件处理本身不提供 Peppol 接入点，也不提供与贸易伙伴的连接。"
+    }
+  }
+}

@@ -7,6 +7,12 @@
 
 ---
 
+You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** to open the card library and pick the cards this pattern uses — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` and `CONDITION_TASK_STATUS` (the **Assignee** category holds the task and assignment cards):
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — the task, assignment and notification cards live under the <strong>Assignee</strong> and <strong>Status</strong> categories.</p></figcaption></figure>
+
+---
+
 ## Pattern Overview
 
 This pattern demonstrates how to create, assign, track, and manage tasks within DocBits workflows. Tasks are actionable work items assigned to users or groups that require completion before the document workflow can continue.
@@ -735,7 +741,7 @@ Day 5: IF still not completed:
 ### Next Steps
 - Add email notifications: [Send Email Guide](../then/action/send-email-groups-guide.md)
 - Implement complex routing: [Decision Logic Pattern](decision-logic-pattern.md)
-- Handle errors: [Error Handling Pattern](error-handling-pattern.md)
+- Resolve task errors: [Error Handling](#error-handling) above
 
 ---
 

@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.753
+Turkey E-Fatura and E-Arsiv are separate
+configured families. Check the source
+
+formats_02
+00:00:05.753 --> 00:00:11.825
+profile and document structure. The family
+label does not identify every UBL-TR
+
+formats_03
+00:00:11.825 --> 00:00:15.267
+release or establish delivery through the
+tax platform.
+
+workflow_01
+00:00:16.017 --> 00:00:20.510
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:20.510 --> 00:00:25.572
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:25.572 --> 00:00:26.600
+activate it.
+
+accept_01
+00:00:27.350 --> 00:00:32.110
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:32.110 --> 00:00:37.114
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:37.114 --> 00:00:38.067
+delivery.
+

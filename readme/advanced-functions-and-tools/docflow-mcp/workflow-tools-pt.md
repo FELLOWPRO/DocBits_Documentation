@@ -1,33 +1,16 @@
 # Ferramentas de Workflow
 
-O DocFlow MCP fornece 8 ferramentas para gerenciar e testar workflows avançados.
+O DocFlow MCP expõe ferramentas para gerenciar e testar workflows avançados, além de ferramentas para ler logs de workflow e gerenciar variáveis de workflow. As ferramentas Card SDK estão em sua própria página — veja [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
-Lista todos os workflows da organização atual.
+Listar todos os workflows da organização atual.
 
 **Parâmetros:** Nenhum
 
-**Exemplo de Resposta:**
-
-```json
-[
-  {
-    "id": "a1b2c3d4-...",
-    "name": "Invoice Approval",
-    "version": 3,
-    "enabled": true,
-    "doc_types": ["INVOICE"],
-    "workflow_type": "advanced",
-    "created_on": "2025-01-15 10:30:00",
-    "last_modified_on": "2025-03-20 14:22:00"
-  }
-]
-```
-
 ## get\_workflow
 
-Obtém detalhes de um workflow específico, incluindo sua estrutura de nós e arestas.
+Obter detalhes de um workflow específico, incluindo sua estrutura de nós e arestas.
 
 **Parâmetros:**
 
@@ -35,32 +18,9 @@ Obtém detalhes de um workflow específico, incluindo sua estrutura de nós e ar
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Sim | UUID do workflow |
 
-**Exemplo de Resposta:**
-
-```json
-{
-  "id": "a1b2c3d4-...",
-  "name": "Invoice Approval",
-  "version": 3,
-  "enabled": true,
-  "doc_types": ["INVOICE"],
-  "workflow_type": "advanced",
-  "description": "Routes invoices based on amount",
-  "advanced_config": {
-    "nodes": [
-      {"node_id": "when-1", "node_type": "when", "label": "Amount > 1000"},
-      {"node_id": "then-1", "node_type": "then", "label": "Send for Approval"}
-    ],
-    "edges": [
-      {"source_node_id": "when-1", "target_node_id": "then-1"}
-    ]
-  }
-}
-```
-
 ## create\_advanced\_workflow
 
-Cria um novo workflow avançado com nós e arestas.
+Criar um novo workflow avançado com nós e arestas.
 
 **Parâmetros:**
 
@@ -71,19 +31,33 @@ Cria um novo workflow avançado com nós e arestas.
 | `nodes` | array | Sim | Array de nós do workflow |
 | `edges` | array | Sim | Array de arestas conectando os nós |
 
-### Estrutura do Nó
+### Estrutura dos Nós
 
 Cada nó requer:
 
 | Campo | Tipo | Descrição |
 |-------|------|-------------|
 | `node_id` | string | Identificador único do nó |
-| `node_type` | string | `when`, `then`, `and`, `or` ou `delay` |
-| `position` | object | Posição `{x: number, y: number}` no canvas |
+| `node_type` | string | Veja os tipos de nó abaixo |
+| `position` | object | `{x: number, y: number}` posição no canvas |
 | `label` | string | Rótulo de exibição |
-| `card` | object | Configuração do card (veja abaixo) |
+| `card` | object | Configuração do card (obrigatório para `when`, `and`, `then` — veja abaixo) |
 
-### Estrutura da Aresta
+**Tipos de nó:**
+
+| Tipo | Card requerido | Propósito |
+|------|------------------|---------|
+| `start` | Sem card | Nó de disparo — ponto de entrada do workflow |
+| `when` | Card de condição | Condição de disparo (também ponto de entrada válido) |
+| `and` | Card de condição | Porta de condição adicional após um `when` |
+| `or` | Sem card | Nó de ramificação — prossegue se algum dos ramos de entrada for bem-sucedido |
+| `then` | Card de ação | Ação a executar |
+| `delay` | Sem card | Nó de espera — pausa a execução por uma duração configurada |
+| `all` | Sem card | Nó de junção — aguarda todos os ramos de entrada |
+| `any` | Sem card | Nó de junção — prossegue com o primeiro ramo de entrada |
+| `note` | Sem card | Anotação adesiva / anotação; não é executada |
+
+### Estrutura das Arestas
 
 Cada aresta requer:
 
@@ -92,8 +66,14 @@ Cada aresta requer:
 | `edge_id` | string | Identificador único da aresta |
 | `source_node_id` | string | ID do nó de origem |
 | `target_node_id` | string | ID do nó de destino |
-| `source_handle` | string | `success` ou `error` (opcional) |
+| `source_handle` | string | `success`, `error` ou `failed_condition` (opcional) |
 | `target_handle` | string | `input` (opcional) |
+
+**Handles de origem:**
+
+- `success` — tomado quando o nó de origem é bem-sucedido (disponível em todo nó executável).
+- `failed_condition` — tomado quando um card de condição `when` ou `and` é avaliado como false.
+- `error` — tomado quando um nó `and` ou `then` levanta um erro.
 
 ### Configuração do Card
 
@@ -111,7 +91,7 @@ Cards definem o que um nó faz. Use `list_cards` ou `sdk_list_cards_picker` para
 ```
 
 {% hint style="info" %}
-Você só precisa fornecer `id`, `card_type`, `version` e `variables` para cada card. O servidor enriquece automaticamente os cards com metadados de exibição (svg, text, category) do banco de dados.
+Você só precisa fornecer `id`, `card_type`, `version` e `variables` para cada card. O servidor enriquece os cards automaticamente com metadados de exibição (svg, text, category) do banco de dados.
 {% endhint %}
 
 **Exemplo de Requisição:**
@@ -160,147 +140,53 @@ Você só precisa fornecer `id`, `card_type`, `version` e `variables` para cada 
 }
 ```
 
-**Exemplo de Resposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
 ## update\_advanced\_workflow
 
-Atualiza um workflow avançado existente. Você pode atualizar qualquer combinação de nome, descrição, nós e arestas.
+Atualizar um workflow avançado existente. Você pode atualizar qualquer combinação de nome, descrição, nós e arestas.
 
 **Parâmetros:**
 
 | Parâmetro | Tipo | Obrigatório | Descrição |
 |-----------|------|----------|-------------|
-| `workflow_id` | string | Sim | UUID do workflow a ser atualizado |
+| `workflow_id` | string | Sim | UUID do workflow a atualizar |
 | `name` | string | Não | Novo nome |
 | `description` | string | Não | Nova descrição |
 | `nodes` | array | Não | Novos nós (substitui todos os nós existentes) |
 | `edges` | array | Não | Novas arestas (substitui todas as arestas existentes) |
 
-**Exemplo de Resposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
-
 ## delete\_workflow
 
-Exclui um workflow por ID (exclusão lógica).
+Excluir um workflow por ID (exclusão suave).
 
 **Parâmetros:**
 
 | Parâmetro | Tipo | Obrigatório | Descrição |
 |-----------|------|----------|-------------|
-| `workflow_id` | string | Sim | UUID do workflow a ser excluído |
-
-**Exemplo de Resposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
+| `workflow_id` | string | Sim | UUID do workflow a excluir |
 
 ## test\_advanced\_workflow
 
-Testa a execução de um workflow avançado. Opcionalmente, forneça um ID de documento para testar com um documento real.
+Testar a execução de um workflow avançado. Opcionalmente forneça um ID de documento para testar com um documento real.
 
 **Parâmetros:**
 
 | Parâmetro | Tipo | Obrigatório | Descrição |
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Sim | UUID do workflow avançado |
-| `doc_id` | string | Não | UUID de um documento para teste |
-
-**Exemplo de Resposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-...",
-  "execution_time": 0.234,
-  "workflow_result": "completed",
-  "node_results": {
-    "when-1": {"status": "success", "output": true},
-    "then-1": {"status": "success"}
-  },
-  "logs": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "status": "success",
-      "error": null,
-      "duration_ms": 12
-    }
-  ]
-}
-```
+| `doc_id` | string | Não | UUID de um documento para testar |
 
 ## list\_test\_scenarios
 
-Lista todos os cenários de teste de workflow da organização.
+Listar todos os cenários de teste de workflows da organização.
 
 **Parâmetros:** Nenhum
-
-**Exemplo de Resposta:**
-
-```json
-[
-  {
-    "id": "scenario-uuid",
-    "name": "Invoice over 1000 EUR",
-    "workflow_id": "a1b2c3d4-...",
-    "enabled": true,
-    "status": "passed",
-    "last_run": "2025-03-20 14:00:00"
-  }
-]
-```
 
 ## list\_cards
 
-Lista todos os cards de workflow disponíveis com suas condições e configuração.
+Listar todos os cards de workflow disponíveis com suas condições e configuração.
 
 **Parâmetros:** Nenhum
 
-**Exemplo de Resposta:**
-
-```json
-[
-  {
-    "id": "card-uuid",
-    "text": "Document Type Is",
-    "card_type": "document_type_is",
-    "card_version": 1,
-    "category": "Document",
-    "when_condition": true,
-    "and_condition": false,
-    "then_condition": false
-  },
-  {
-    "id": "card-uuid-2",
-    "text": "Send Email Notification",
-    "card_type": "send_email",
-    "card_version": 1,
-    "category": "Communication",
-    "when_condition": false,
-    "and_condition": false,
-    "then_condition": true
-  }
-]
-```
-
 {% hint style="info" %}
-Os cards possuem flags de função: `when_condition` (gatilho), `and_condition` (condição adicional) e `then_condition` (ação). Use-as para determinar em quais tipos de nó um card pode ser utilizado.
+Os cards têm flags de papel: `when_condition` (disparador), `and_condition` (condição adicional) e `then_condition` (ação). Use-as para determinar em quais tipos de nó um card pode ser usado.
 {% endhint %}

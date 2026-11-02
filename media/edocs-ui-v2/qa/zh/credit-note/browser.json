@@ -1,0 +1,30 @@
+{
+  "locale": "zh",
+  "metadata": {
+    "duration": 96.033333,
+    "width": 1280,
+    "height": 720,
+    "language": "zh",
+    "cues": 15
+  },
+  "playback": {
+    "time": 0.30375,
+    "frames": 13
+  },
+  "seek": {
+    "time": 48.016666,
+    "ready": 4
+  },
+  "mobile": {
+    "scroll": 380,
+    "width": 380,
+    "captions": [
+      "电子贷项通知单显示为 Invoice。\n请查看原始 XML。"
+    ],
+    "focusable": 0
+  },
+  "keyboardPlays": true,
+  "ended": true,
+  "range206": true,
+  "errors": []
+}

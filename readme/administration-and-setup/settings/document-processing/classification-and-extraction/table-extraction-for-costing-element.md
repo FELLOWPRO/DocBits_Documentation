@@ -1,43 +1,21 @@
 # Table extraction for costing element
 
-### **What Does It Do?**
+Costing elements are charges or other amounts represented as invoice table lines. If this feature is enabled and the document has extracted lines, DocBits can classify those lines against the costing elements configured for the organization. A reviewer can correct a line's classification in the document table.
 
-When enabled, **DocBits** can extract **costing elements** from tables at the **line level** and classify them accordingly.
+## Enable the setting
 
-* If the system does not classify an item or classifies it incorrectly, an **icon** appears on the left side.
-* Clicking this icon opens a list of all **configured costing elements**, allowing you to:
-  * **Change the classification** if it is incorrect.
-  * **Set the item to "Uncategorized"** if it is a regular item and not a costing element.
+1. Open **Settings → Document Processing → Classification and Extraction**.
+2. Stay on **General** and expand **Extraction**.
+3. Find **Table extraction for costing element** below the fields requested for table extraction. An administrator can turn on this switch for the organization.
 
-### **How to Configure Costing Elements**
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-en.png" alt="English Classification and Extraction settings in Test A with the Table extraction for costing element switch visible and off"><figcaption><p>The switch is off in the synthetic Test A organization. It was not changed for this guide.</p></figcaption></figure>
 
-You can find the **guide on setting up costing elements** in **DocBits** here.
+{% hint style="info" %}
+The switch alone does not create costing elements or invoice rows. Configure the elements and import any required data first. The linked [costing-element setup guide](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) explains the M3 example. Check [Classification and Extraction](README.md) for the other extraction controls.
+{% endhint %}
 
-{% content-ref url="../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md" %}
-[table-extraction-for-costing-element.md](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
-{% endcontent-ref %}
+## Review or correct a line
 
-### **Where to Enable It**
+Open a document whose invoice table contains extracted lines and inspect the costing-element icon beside the relevant line. Select the icon to open the available classifications. Choose the correct configured costing element, or choose **Uncategorize** if the line is an ordinary item. Then review the resulting line and totals before saving the document.
 
-1. Go to **Settings → Document Processing → Classification and Extraction → Table Extraction**.
-2. Enable **Costing Element Extraction**.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
-
-### **How to Set or Change the Classification**
-
-1.  Click on the **box icon** next to the item.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
-2.  A **dropdown menu** with all configured costing elements will appear.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
-3.  Select the correct **costing element type**.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
-4. The classification is now updated accordingly.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+If the icon or a classification is missing, first confirm that the document has extracted lines, the feature is enabled, and a costing element is configured for the organization. The synthetic Test A document used for this documentation check had no extracted invoice lines, so the classification menu could not be pictured or exercised. The steps above reflect the current document control; no classification was saved during this check.

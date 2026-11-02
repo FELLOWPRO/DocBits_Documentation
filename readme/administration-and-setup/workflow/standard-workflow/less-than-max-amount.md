@@ -1,6 +1,6 @@
 # Less than Max Amount
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55.png" alt=""><figcaption></figcaption></figure>
 
 This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
 

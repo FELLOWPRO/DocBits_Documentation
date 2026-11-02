@@ -12,7 +12,7 @@ The Export page displays all configured export setups, including whether they ar
 
 You can find it under: **Settings** → **Document Processing** → **Export**
 
-<figure><img src="../../../.gitbook/assets/export_settings_menu_access.png" alt="Export Settings Menu Access"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_list_view.png" alt="Export Settings Menu Access"><figcaption></figcaption></figure>
 
 ## **Using the Export Page**
 
@@ -60,7 +60,7 @@ To create a new export:
 
 <summary>Webhook</summary>
 
-<figure><img src="../../../.gitbook/assets/export_webhook_configuration.png" alt="Export Webhook Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt="Export Webhook Configuration"><figcaption></figcaption></figure>
 
 **Field Descriptions**
 
@@ -99,8 +99,6 @@ To create a new export:
 
     * **When to use:** Only if the receiving system requires a different structure or specific formatting that differs from the DocBits default.
     * **Leave it empty** if the default export format meets the requirements.
-
-
 
 **Advanced Settings:**
 
@@ -169,7 +167,7 @@ To create a new export:
 
 <summary>Infor IDM</summary>
 
-<figure><img src="../../../.gitbook/assets/export_infor_idm_configuration.png" alt="Export Infor IDM Configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt="Export Infor IDM Configuration"><figcaption></figcaption></figure>
 
 **Field Descriptions**
 

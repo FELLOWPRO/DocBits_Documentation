@@ -2,6 +2,12 @@
 
 ---
 
+Add this card to the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>The <strong>Call External API</strong> card is added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+
+---
+
 ## 📌 Version Information
 
 **Current Version:** v2 (Latest & Recommended)

@@ -1,6 +1,6 @@
 # Strumenti per i Workflow
 
-DocFlow MCP fornisce 8 strumenti per la gestione e il test dei workflow avanzati.
+DocFlow MCP espone strumenti per la gestione e il test dei workflow avanzati, oltre a strumenti per la lettura dei log dei workflow e la gestione delle variabili di workflow. Gli strumenti Card SDK hanno una pagina dedicata -- vedi [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -8,55 +8,15 @@ Elenca tutti i workflow dell'organizzazione corrente.
 
 **Parametri:** Nessuno
 
-**Esempio di Risposta:**
-
-```json
-[
-  {
-    "id": "a1b2c3d4-...",
-    "name": "Invoice Approval",
-    "version": 3,
-    "enabled": true,
-    "doc_types": ["INVOICE"],
-    "workflow_type": "advanced",
-    "created_on": "2025-01-15 10:30:00",
-    "last_modified_on": "2025-03-20 14:22:00"
-  }
-]
-```
-
 ## get\_workflow
 
-Ottieni i dettagli di un workflow specifico, inclusa la struttura di nodi e archi.
+Ottiene i dettagli di un workflow specifico, inclusa la struttura di nodi e archi.
 
 **Parametri:**
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Si | UUID del workflow |
-
-**Esempio di Risposta:**
-
-```json
-{
-  "id": "a1b2c3d4-...",
-  "name": "Invoice Approval",
-  "version": 3,
-  "enabled": true,
-  "doc_types": ["INVOICE"],
-  "workflow_type": "advanced",
-  "description": "Routes invoices based on amount",
-  "advanced_config": {
-    "nodes": [
-      {"node_id": "when-1", "node_type": "when", "label": "Amount > 1000"},
-      {"node_id": "then-1", "node_type": "then", "label": "Send for Approval"}
-    ],
-    "edges": [
-      {"source_node_id": "when-1", "target_node_id": "then-1"}
-    ]
-  }
-}
-```
 
 ## create\_advanced\_workflow
 
@@ -78,10 +38,24 @@ Ogni nodo richiede:
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
 | `node_id` | string | Identificatore univoco del nodo |
-| `node_type` | string | `when`, `then`, `and`, `or` oppure `delay` |
-| `position` | object | Posizione `{x: number, y: number}` sul canvas |
-| `label` | string | Etichetta visualizzata |
-| `card` | object | Configurazione della card (vedi sotto) |
+| `node_type` | string | Vedi i tipi di nodo qui sotto |
+| `position` | object | `{x: number, y: number}` posizione sul canvas |
+| `label` | string | Etichetta di visualizzazione |
+| `card` | object | Configurazione della card (obbligatoria per `when`, `and`, `then` -- vedi sotto) |
+
+**Tipi di nodo:**
+
+| Tipo | Card richiesta | Scopo |
+|------|------------------|---------|
+| `start` | Nessuna card | Nodo trigger -- punto di ingresso del workflow |
+| `when` | Card di condizione | Condizione di trigger (anche punto di ingresso valido) |
+| `and` | Card di condizione | Gate aggiuntivo di condizione dopo un `when` |
+| `or` | Nessuna card | Nodo di diramazione -- prosegue se uno qualsiasi dei rami in ingresso ha successo |
+| `then` | Card di azione | Azione da eseguire |
+| `delay` | Nessuna card | Nodo di attesa -- mette in pausa l'esecuzione per una durata configurata |
+| `all` | Nessuna card | Nodo di unione -- attende tutti i rami in ingresso |
+| `any` | Nessuna card | Nodo di unione -- prosegue al primo ramo in ingresso |
+| `note` | Nessuna card | Nota / annotazione; non viene eseguita |
 
 ### Struttura degli Archi
 
@@ -92,10 +66,16 @@ Ogni arco richiede:
 | `edge_id` | string | Identificatore univoco dell'arco |
 | `source_node_id` | string | ID del nodo sorgente |
 | `target_node_id` | string | ID del nodo destinazione |
-| `source_handle` | string | `success` o `error` (opzionale) |
+| `source_handle` | string | `success`, `error` o `failed_condition` (opzionale) |
 | `target_handle` | string | `input` (opzionale) |
 
-### Configurazione delle Card
+**Source handle:**
+
+- `success` -- preso quando il nodo sorgente ha successo (disponibile su ogni nodo eseguibile).
+- `failed_condition` -- preso quando una card di condizione `when` o `and` viene valutata come false.
+- `error` -- preso quando un nodo `and` o `then` solleva un errore.
+
+### Configurazione della Card
 
 Le card definiscono cosa fa un nodo. Usa `list_cards` o `sdk_list_cards_picker` per ottenere le card disponibili.
 
@@ -111,7 +91,7 @@ Le card definiscono cosa fa un nodo. Usa `list_cards` o `sdk_list_cards_picker` 
 ```
 
 {% hint style="info" %}
-Devi fornire solo `id`, `card_type`, `version` e `variables` per ogni card. Il server arricchisce automaticamente le card con metadati di visualizzazione (svg, text, category) dal database.
+Devi fornire solo `id`, `card_type`, `version` e `variables` per ogni card. Il server arricchisce automaticamente le card con i metadati di visualizzazione (svg, text, category) dal database.
 {% endhint %}
 
 **Esempio di Richiesta:**
@@ -160,16 +140,6 @@ Devi fornire solo `id`, `card_type`, `version` e `variables` per ogni card. Il s
 }
 ```
 
-**Esempio di Risposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
 ## update\_advanced\_workflow
 
 Aggiorna un workflow avanzato esistente. Puoi aggiornare qualsiasi combinazione di nome, descrizione, nodi e archi.
@@ -184,18 +154,9 @@ Aggiorna un workflow avanzato esistente. Puoi aggiornare qualsiasi combinazione 
 | `nodes` | array | No | Nuovi nodi (sostituisce tutti i nodi esistenti) |
 | `edges` | array | No | Nuovi archi (sostituisce tutti gli archi esistenti) |
 
-**Esempio di Risposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
-
 ## delete\_workflow
 
-Elimina un workflow tramite ID (eliminazione logica).
+Elimina un workflow tramite ID (soft delete).
 
 **Parametri:**
 
@@ -203,49 +164,16 @@ Elimina un workflow tramite ID (eliminazione logica).
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Si | UUID del workflow da eliminare |
 
-**Esempio di Risposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
-
 ## test\_advanced\_workflow
 
-Testa l'esecuzione di un workflow avanzato. Fornisci opzionalmente un ID documento per testare con un documento reale.
+Testa l'esecuzione di un workflow avanzato. Opzionalmente fornisci un ID documento per testare con un documento reale.
 
 **Parametri:**
 
 | Parametro | Tipo | Obbligatorio | Descrizione |
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Si | UUID del workflow avanzato |
-| `doc_id` | string | No | UUID di un documento per il test |
-
-**Esempio di Risposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-...",
-  "execution_time": 0.234,
-  "workflow_result": "completed",
-  "node_results": {
-    "when-1": {"status": "success", "output": true},
-    "then-1": {"status": "success"}
-  },
-  "logs": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "status": "success",
-      "error": null,
-      "duration_ms": 12
-    }
-  ]
-}
-```
+| `doc_id` | string | No | UUID di un documento con cui testare |
 
 ## list\_test\_scenarios
 
@@ -253,54 +181,12 @@ Elenca tutti gli scenari di test dei workflow per l'organizzazione.
 
 **Parametri:** Nessuno
 
-**Esempio di Risposta:**
-
-```json
-[
-  {
-    "id": "scenario-uuid",
-    "name": "Invoice over 1000 EUR",
-    "workflow_id": "a1b2c3d4-...",
-    "enabled": true,
-    "status": "passed",
-    "last_run": "2025-03-20 14:00:00"
-  }
-]
-```
-
 ## list\_cards
 
-Elenca tutte le card disponibili per i workflow con le relative condizioni e configurazione.
+Elenca tutte le card di workflow disponibili con le loro condizioni e configurazione.
 
 **Parametri:** Nessuno
 
-**Esempio di Risposta:**
-
-```json
-[
-  {
-    "id": "card-uuid",
-    "text": "Document Type Is",
-    "card_type": "document_type_is",
-    "card_version": 1,
-    "category": "Document",
-    "when_condition": true,
-    "and_condition": false,
-    "then_condition": false
-  },
-  {
-    "id": "card-uuid-2",
-    "text": "Send Email Notification",
-    "card_type": "send_email",
-    "card_version": 1,
-    "category": "Communication",
-    "when_condition": false,
-    "and_condition": false,
-    "then_condition": true
-  }
-]
-```
-
 {% hint style="info" %}
-Le card hanno flag di ruolo: `when_condition` (trigger), `and_condition` (condizione aggiuntiva) e `then_condition` (azione). Usa questi flag per determinare in quali tipi di nodo una card puo' essere utilizzata.
+Le card hanno flag di ruolo: `when_condition` (trigger), `and_condition` (condizione aggiuntiva) e `then_condition` (azione). Usali per determinare in quali tipi di nodo una card puo' essere utilizzata.
 {% endhint %}

@@ -1,5 +1,10 @@
 # When
 
+
+The cards in this category, shown in the **Add Card** library of the Workflow Builder:
+
+<figure><img src="../../../.gitbook/assets/workflow_cards_when.png" alt="Workflow Builder card category"><figcaption><p>The cards in this category.</p></figcaption></figure>
+
 <figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 #### Understanding the "When" in Workflow Configurations

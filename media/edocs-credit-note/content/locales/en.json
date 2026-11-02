@@ -1,0 +1,93 @@
+{
+  "locale": "en",
+  "title": "Check electronic credit note classification",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "An electronic credit note appears as Invoice. Read the original XML. A type code of 381 identifies a credit note.",
+      "caption": "An electronic credit note appears as Invoice. Read the original XML. A type code of 381 identifies a credit note."
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "FACTURX and ZUGFeRD defaults also recognize 261. Codes 383 and 384 mean debit note and corrected invoice. Do not classify them as credit notes.",
+      "caption": "FACTURX and ZUGFeRD defaults also recognize 261. Codes 383 and 384 mean debit note and corrected invoice. Do not classify them as credit notes."
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "Open E-Doc for the detected format. A custom organization transformation takes precedence over the default. Check the active version.",
+      "caption": "Open E-Doc for the detected format. A custom organization transformation takes precedence over the default. Check the active version."
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "For FACTURX, search for INVOICE_TYPE. A constant Invoice can discard the original credit note code. Compare the custom transformation with the default.",
+      "caption": "For FACTURX, search for INVOICE_TYPE. A constant Invoice can discard the original credit note code. Compare the custom transformation with the default."
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "Test the transformed XML. Check that Extraction Paths reads invoice_type from the correct node for this format. Review later scripts and the stored value.",
+      "caption": "Test the transformed XML. Check that Extraction Paths reads invoice_type from the correct node for this format. Review later scripts and the stored value."
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "Create a draft. Save does not activate it. Test representative invoices and credit notes. Activate with the checkmark only after the checks pass.",
+      "caption": "Create a draft. Save does not activate it. Test representative invoices and credit notes. Activate with the checkmark only after the checks pass."
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "Verify a new document, including amounts and export. Preserve custom mappings. Before restarting an old document, check approvals, exports and manual edits.",
+      "caption": "Verify a new document, including amounts and export. Preserve custom mappings. Before restarting an old document, check approvals, exports and manual edits."
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "The negative-sign setting is enabled by default but can be disabled. Confirm classification and the sign convention expected by Infor ERP or SAP.",
+      "caption": "The negative-sign setting is enabled by default but can be disabled. Confirm classification and the sign convention expected by Infor ERP or SAP."
+    }
+  ],
+  "labels": {
+    "xml": "Original XML",
+    "stored": "Stored value",
+    "invoice": "Invoice",
+    "credit": "Credit Note",
+    "credit_codes": "Credit note",
+    "other_codes": "Other document types",
+    "debit": "Debit note",
+    "corrected": "Corrected invoice",
+    "source": "Effective source",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "Active version",
+    "transform": "Transformation",
+    "constant": "Fixed value",
+    "compare": "Compare sources",
+    "paths": "Extraction Paths",
+    "scripts": "Later scripts",
+    "verify": "Verify stored value",
+    "draft": "Draft",
+    "save": "Save",
+    "test": "Test",
+    "activate": "Activate",
+    "saved": "Saved draft",
+    "check": "Checkmark",
+    "safety": "New test document",
+    "preserve": "Preserve custom mappings",
+    "history": "Check historical documents",
+    "approvals": "Approvals",
+    "exports": "Exports",
+    "edits": "Manual edits",
+    "sign": "Check amount signs",
+    "enabled": "Enabled by default",
+    "configurable": "Configurable",
+    "result": "Classification + export",
+    "transformed": "Transformed XML"
+  },
+  "notes": {}
+}

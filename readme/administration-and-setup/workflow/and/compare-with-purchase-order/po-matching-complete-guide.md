@@ -4,6 +4,12 @@
 
 ---
 
+The PO comparison cards on this page go in the **And** group of the Workflow Builder — they compare invoice data against the matched purchase order before the Then actions run:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>PO comparison cards are added to the <strong>And</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+
+---
+
 ## 📌 Version Information
 
 **Most Evolved Card:** CONDITION_DOC_TO_PO_UNIT_PRICE (5 versions, v5 latest)

@@ -4,22 +4,40 @@
 
 | Umgebung | MCP-Endpunkt |
 |-------------|-------------|
-| Entwicklung | `https://dev.api.docbits.com/api/mcp/` |
-| Stage | `https://stage.api.docbits.com/api/mcp/` |
-| Produktion | `https://api.docbits.com/api/mcp/` |
+| Entwicklung | `https://dev.docflow.docbits.com/v3/mcp/` |
+| Sandbox | `https://sandbox.docflow.docbits.com/v3/mcp/` |
+| Produktion | `https://docflow.docbits.com/v3/mcp/` |
+
+Der abschliessende Slash ist wichtig -- `https://docflow.docbits.com/v3/mcp` (ohne Slash) trifft die Route nicht.
 
 ## Authentifizierung
 
-Alle MCP-Anfragen erfordern einen gueltigen DocBits-API-Schluessel, der als Bearer-Token uebergeben wird. Sie finden Ihren API-Schluessel unter **Einstellungen > Integration** in der DocBits-Oberflaeche.
+Alle MCP-Anfragen erfordern einen gueltigen DocBits-API-Schluessel. Sie finden Ihren API-Schluessel unter **Einstellungen > Integration** in der DocBits-Oberflaeche.
 
-Der Token wird ueber den `Authorization`-Header gesendet:
+Der Server akzeptiert den Schluessel ueber einen der folgenden Header:
 
 ```
 Authorization: Bearer <ihr-api-schluessel>
 ```
 
+oder
+
+```
+x-api-key: <ihr-api-schluessel>
+```
+
+### Organisationskontext
+
+Wenn Ihr API-Schluessel mit mehr als einer Organisation verknuepft ist, senden Sie zusaetzlich den Header `x-org-id`, damit der Server die richtige Organisation auswaehlt und Ihre Admin-Rolle aufloest:
+
+```
+x-org-id: <organisations-uuid>
+```
+
+Dieser Header ist in der Praxis fuer die unten aufgefuehrten Admin-Tools erforderlich -- ohne ihn kann der Server auf eine eingeschraenkte Token-Ansicht zurueckfallen und die Anfrage ablehnen.
+
 {% hint style="warning" %}
-Admin-only-Tools (`sdk_approve_card`, `sdk_reject_card`, `sdk_delete_submission`) erfordern einen Organisations-Admin-Token.
+**Admin-only-Tools.** `sdk_approve_card`, `sdk_reject_card` und `sdk_delete_submission` erfordern, dass der aufrufende Benutzer Organisations-Administrator ist. Senden Sie `x-org-id` zusammen mit Ihrem API-Schluessel fuer diese Aufrufe.
 {% endhint %}
 
 ## Client-Konfiguration
@@ -29,10 +47,11 @@ Admin-only-Tools (`sdk_approve_card`, `sdk_reject_card`, `sdk_delete_submission`
 Fuegen Sie den DocFlow MCP-Server ueber die CLI hinzu:
 
 ```bash
-claude mcp add docflow-dev \
+claude mcp add docflow \
   --transport http \
   --header "Authorization: Bearer YOUR_API_KEY" \
-  -- https://dev.api.docbits.com/api/mcp/
+  --header "x-org-id: YOUR_ORG_UUID" \
+  -- https://docflow.docbits.com/v3/mcp/
 ```
 
 Oder fuegen Sie ihn in Ihre `.claude.json`-Konfigurationsdatei ein:
@@ -40,27 +59,29 @@ Oder fuegen Sie ihn in Ihre `.claude.json`-Konfigurationsdatei ein:
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
 }
 ```
 
-Sie koennen ihn auch in eine projektbezogene `.mcp.json`-Datei einfuegen:
+Sie koennen ihn auch in eine projektbezogene `.mcp.json`-Datei eintragen:
 
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -76,9 +97,10 @@ Fuegen Sie Folgendes in Ihre `claude_desktop_config.json` ein:
   "mcpServers": {
     "docflow": {
       "type": "streamable-http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -86,21 +108,22 @@ Fuegen Sie Folgendes in Ihre `claude_desktop_config.json` ein:
 ```
 
 {% hint style="info" %}
-Unter macOS befindet sich die Konfigurationsdatei unter `~/Library/Application Support/Claude/claude_desktop_config.json`. Unter Windows: `%APPDATA%\Claude\claude_desktop_config.json`.
+Unter macOS liegt die Konfigurationsdatei unter `~/Library/Application Support/Claude/claude_desktop_config.json`. Unter Windows: `%APPDATA%\Claude\claude_desktop_config.json`.
 {% endhint %}
 
 ### OpenAI Codex
 
-Codex CLI unterstuetzt MCP-Server. Fuegen Sie Folgendes zu Ihrer Projektkonfiguration hinzu:
+Die Codex-CLI unterstuetzt MCP-Server. Fuegen Sie sie zu Ihrer Projektkonfiguration hinzu:
 
 ```json
 {
   "mcpServers": {
     "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -109,7 +132,7 @@ Codex CLI unterstuetzt MCP-Server. Fuegen Sie Folgendes zu Ihrer Projektkonfigur
 
 ### Generischer MCP-Client (Python)
 
-Fuer benutzerdefinierte Integrationen mit dem MCP Python SDK:
+Fuer benutzerdefinierte Integrationen mit dem MCP-Python-SDK:
 
 ```python
 from mcp.client.streamable_http import streamablehttp_client
@@ -117,8 +140,11 @@ from mcp import ClientSession
 
 async def connect():
     async with streamablehttp_client(
-        url="https://dev.api.docbits.com/api/mcp/",
-        headers={"Authorization": "Bearer YOUR_API_KEY"},
+        url="https://docflow.docbits.com/v3/mcp/",
+        headers={
+            "Authorization": "Bearer YOUR_API_KEY",
+            "x-org-id": "YOUR_ORG_UUID",
+        },
     ) as (read_stream, write_stream, _):
         async with ClientSession(read_stream, write_stream) as session:
             await session.initialize()
@@ -126,10 +152,10 @@ async def connect():
             print(f"Available tools: {[t.name for t in tools.tools]}")
 ```
 
-## Verbindung ueberpruefen
+## Verbindung pruefen
 
-Nachdem Sie Ihren Client konfiguriert haben, testen Sie die Verbindung, indem Sie das Tool `list_workflows` aufrufen. Es erfordert keine Parameter und sollte ein Array von Workflows zurueckgeben (oder ein leeres Array fuer neue Organisationen).
+Testen Sie die Verbindung nach der Konfiguration Ihres Clients, indem Sie das Tool `list_workflows` aufrufen. Es benoetigt keine Parameter und sollte ein Array von Workflows zurueckgeben (oder ein leeres Array bei neuen Organisationen).
 
 {% hint style="info" %}
-Wenn Sie Authentifizierungsfehler erhalten, ueberpruefen Sie, ob Ihr API-Schluessel korrekt ist und der `Authorization`-Header gesendet wird. Einige MCP-Clients erfordern einen Neustart nach Aenderung der Konfiguration.
+Wenn Sie Authentifizierungsfehler erhalten, pruefen Sie, ob Ihr API-Schluessel korrekt ist und ob der `Authorization`-Header gesendet wird. Einige MCP-Clients erfordern einen Neustart nach Konfigurationsaenderungen.
 {% endhint %}

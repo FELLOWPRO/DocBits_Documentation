@@ -4,22 +4,40 @@
 
 | Environment | MCP Endpoint |
 |-------------|-------------|
-| Development | `https://dev.api.docbits.com/api/mcp/` |
-| Stage | `https://stage.api.docbits.com/api/mcp/` |
-| Production | `https://api.docbits.com/api/mcp/` |
+| Development | `https://dev.docflow.docbits.com/v3/mcp/` |
+| Sandbox | `https://sandbox.docflow.docbits.com/v3/mcp/` |
+| Production | `https://docflow.docbits.com/v3/mcp/` |
+
+The trailing slash matters — `https://docflow.docbits.com/v3/mcp` (without it) will not match the route.
 
 ## Authentication
 
-All MCP requests require a valid DocBits API key passed as a Bearer token. You can find your API key in **Settings > Integration** in the DocBits UI.
+All MCP requests require a valid DocBits API key. You can find your API key in **Settings > Integration** in the DocBits UI.
 
-The token is sent via the `Authorization` header:
+The server accepts the key via either of these headers:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
+or
+
+```
+x-api-key: <your-api-key>
+```
+
+### Organization context
+
+If your API key is associated with more than one organization, also send the `x-org-id` header so the server picks the right one and resolves your admin role:
+
+```
+x-org-id: <organization-uuid>
+```
+
+This header is required in practice for the admin-only tools below — without it, the server may fall back to a non-admin token view and reject the request.
+
 {% hint style="warning" %}
-Admin-only tools (`sdk_approve_card`, `sdk_reject_card`, `sdk_delete_submission`) require an organization admin token.
+**Admin-only tools.** `sdk_approve_card`, `sdk_reject_card`, and `sdk_delete_submission` require the calling user to be an organization admin. Send `x-org-id` alongside your API key for these calls.
 {% endhint %}
 
 ## Client Configuration
@@ -29,10 +47,11 @@ Admin-only tools (`sdk_approve_card`, `sdk_reject_card`, `sdk_delete_submission`
 Add the DocFlow MCP server using the CLI:
 
 ```bash
-claude mcp add docflow-dev \
+claude mcp add docflow \
   --transport http \
   --header "Authorization: Bearer YOUR_API_KEY" \
-  -- https://dev.api.docbits.com/api/mcp/
+  --header "x-org-id: YOUR_ORG_UUID" \
+  -- https://docflow.docbits.com/v3/mcp/
 ```
 
 Or add it to your `.claude.json` configuration file:
@@ -40,11 +59,12 @@ Or add it to your `.claude.json` configuration file:
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -56,11 +76,12 @@ You can also add it to a project-level `.mcp.json` file:
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -76,9 +97,10 @@ Add the following to your `claude_desktop_config.json`:
   "mcpServers": {
     "docflow": {
       "type": "streamable-http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -98,9 +120,10 @@ Codex CLI supports MCP servers. Add to your project configuration:
   "mcpServers": {
     "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -117,8 +140,11 @@ from mcp import ClientSession
 
 async def connect():
     async with streamablehttp_client(
-        url="https://dev.api.docbits.com/api/mcp/",
-        headers={"Authorization": "Bearer YOUR_API_KEY"},
+        url="https://docflow.docbits.com/v3/mcp/",
+        headers={
+            "Authorization": "Bearer YOUR_API_KEY",
+            "x-org-id": "YOUR_ORG_UUID",
+        },
     ) as (read_stream, write_stream, _):
         async with ClientSession(read_stream, write_stream) as session:
             await session.initialize()

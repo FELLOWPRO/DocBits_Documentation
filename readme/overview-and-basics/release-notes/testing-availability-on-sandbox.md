@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Testing Availability on Sandbox
 
 Stay updated with the latest features, fixes, and configurations available for testing in the **Sandbox environment**. This dedicated environment allows for validation and function checks
@@ -6,7 +10,7 @@ Stay updated with the latest features, fixes, and configurations available for t
 
 ## **Upcoming Updates for Testing**
 
-<table data-header-hidden><thead><tr><th width="247"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Feature/Update</strong></td><td><strong>Description</strong></td><td><strong>Available for Testing Customer</strong></td><td><strong>Internal Testing</strong></td></tr><tr><td>LN Customers &#x26; M3 </td><td>Create Tax Amount per Table Line</td><td>12/13/2024</td><td>12/10/2024 </td></tr><tr><td>Supplier Invoice</td><td>Sequential Workflows</td><td>12/2/2024</td><td>11/29/2024</td></tr><tr><td>Organisation</td><td>Showing All Sub Organisations for Unified View</td><td>12/2/2024</td><td>12/2/2024</td></tr><tr><td>Supplier Invoice - Import</td><td>SFTP/FTP Read Files as Archived</td><td>12/2/2024</td><td>12/2/2024</td></tr><tr><td>Supplier Invoice Report</td><td>Power BI (ClickHouse Data for Reporting)</td><td>2024-11-28</td><td>12/1/2024</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="247"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Feature/Update</strong></td><td><strong>Description</strong></td><td><strong>Available for Testing Customer</strong></td><td><strong>Internal Testing</strong></td></tr><tr><td>LN Customers &#x26; M3</td><td>Create Tax Amount per Table Line</td><td>12/13/2024</td><td>12/10/2024</td></tr><tr><td>Supplier Invoice</td><td>Sequential Workflows</td><td>12/2/2024</td><td>11/29/2024</td></tr><tr><td>Organisation</td><td>Showing All Sub Organisations for Unified View</td><td>12/2/2024</td><td>12/2/2024</td></tr><tr><td>Supplier Invoice - Import</td><td>SFTP/FTP Read Files as Archived</td><td>12/2/2024</td><td>12/2/2024</td></tr><tr><td>Supplier Invoice Report</td><td>Power BI (ClickHouse Data for Reporting)</td><td>2024-11-28</td><td>12/1/2024</td></tr></tbody></table>
 
 ***
 
@@ -29,8 +33,6 @@ Stay updated with the latest features, fixes, and configurations available for t
 If you encounter any issues or have suggestions during testing, please contact the support team or use the feedback form provided within the Sandbox environment.
 
 * **Support Contact**: [support@fellowpro.com](mailto:support@fellowpro.com)
-
-
 
 ***
 

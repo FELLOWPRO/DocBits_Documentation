@@ -1,0 +1,30 @@
+{
+  "locale": "pl",
+  "metadata": {
+    "duration": 102.5,
+    "width": 1280,
+    "height": 720,
+    "language": "pl",
+    "cues": 20
+  },
+  "playback": {
+    "time": 0.310464,
+    "frames": 14
+  },
+  "seek": {
+    "time": 51.25,
+    "ready": 4
+  },
+  "mobile": {
+    "scroll": 380,
+    "width": 380,
+    "captions": [
+      "Elektroniczna nota kredytowa jest\nwyświetlana jako Invoice. Odczytaj"
+    ],
+    "focusable": 0
+  },
+  "keyboardPlays": true,
+  "ended": true,
+  "range206": true,
+  "errors": []
+}

@@ -1,11 +1,11 @@
-# Stream for Cloud Customers
+# Gegevensstroom voor cloudklanten
 
-#### To Enable Stream Settings in DocBits <a href="#to-enable-stream-settings-in-docbits" id="to-enable-stream-settings-in-docbits"></a>
+#### Streaminstellingen inschakelen in DocBits <a href="#to-enable-stream-settings-in-docbits" id="to-enable-stream-settings-in-docbits"></a>
 
-Go to _Settings → Module → BOD Connection Stream_
+Ga naar _Instellingen → Module → BOD Verbindingsstream_
 
 <figure><img src="../../.gitbook/assets/docbits_bod_connection_stream.png" alt="Docbits Bod Connection Stream"><figcaption></figcaption></figure>
 
-Turning this on will automatically generate a Stream Name t. Now you need to head over to Infor _→ OS  → ION  → Data Flows._ Here you need to set up a new data flow. It should look something like the following:
+Als u dit inschakelt, wordt automatisch een Stream Name gegenereerd. Ga vervolgens in Infor naar _→ OS  → ION  → Data Flows._ Stel hier een nieuwe gegevensstroom in. Deze moet er ongeveer als volgt uitzien:
 
 <figure><img src="../../.gitbook/assets/docbits_bod_stream_cloud.png" alt="Docbits Bod Stream Cloud"><figcaption></figcaption></figure>

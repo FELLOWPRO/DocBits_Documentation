@@ -1,4 +1,4 @@
-# Purchase Order BOD Mapping
+# BOD-mapping voor inkooporders
 
 Deze pagina documenteert hoe DocBits Infor M3 `SyncPurchaseOrder` BODs inleest en de velden mapt naar de interne tabellen `PURCHASE_ORDER_HEADER` en Purchase Order Line.
 
@@ -14,7 +14,7 @@ Oorspronkelijke BOD mapping referentie (PDF)
 - **Geen automatische statuslogica op deelhoeveelheden.** DocBits leidt geen status af uit ontvangen vs. bestelde hoeveelheden; de door M3 geleverde status wordt 1:1 overgenomen.
 - **`CONO`/`AccountingEntityID` maakt geen deel uit van de PurchaseOrder-BOD.** Routering op bedrijfsnummer geldt voor leveranciers-stamgegevens (zie [Supplier BOD Mapping](supplier-bod-mapping.md)); inkooporders worden gekoppeld via `LocationID`. Let op dat `LocationID` **niet globaal uniek** is — wanneer een M3-bedrijf (CONO) tussen omgevingen wordt gekopieerd (bijvoorbeeld PRD → TST), kan hetzelfde `LocationID` onder meerdere CONOs bestaan. In zulke setups: filter de inkomende BOD-stroom op de verwachte `AccountingEntity` in je ION-DataFlow om cross-environment-botsingen te vermijden.
 
-## Header Mapping
+## Kopveldmapping
 
 → DocBits Stamgegevenstabel: **PURCHASE\_ORDER\_HEADER**
 

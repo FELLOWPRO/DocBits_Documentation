@@ -1,59 +1,63 @@
-# And: een conditiekaart kiezen
+# En
 
-Gebruik een **And**-kaart om te bepalen of een workflow doorgaat na de **When**-trigger. Voeg de controles toe die je nodig hebt vóór de **Then**-actie. Elke kaart toont velden om in te vullen, zoals **Operator**, **Veldnaam** of **Waarde**; de schermafbeeldingen tonen de beschikbare kaartsjablonen, geen voltooide regels.
+Gebruik een **En**-kaart om te beslissen of een workflow moet worden voortgezet na de **Wanneer**-trigger. Voeg de controles toe die u nodig heeft vóór de actie **Dan**. Elke kaart toont velden die moeten worden ingevuld, zoals **Operator**, **Veldnaam** of **Waarde**; de schermafbeeldingen tonen de beschikbare kaartsjablonen, niet de voltooide regels.
 
-Kies in de **Workflow Builder** **Kaart toevoegen** onder **En....**. Kies links een categorie of typ een kaartnaam in **Zoekkaart**. Selecteer een kaartvoorbeeld om die aan de workflow toe te voegen. Je kunt door de voorbeeldlijst scrollen om meer kaarten te zien. Gebruik **×** om de keuzelijst te sluiten zonder een andere kaart te kiezen. Sla de workflow op nadat je de kaarten hebt ingesteld. Zie [Workflow](../README.md) voor de omringende **When**-, **En**- en **Dan**-stappen.
+In de **Workflow-bouwer** selecteert u **Kaart toevoegen** onder **En...**. Kies een categorie aan de linkerkant of typ een kaartnaam in **Zoek kaart**. Selecteer een kaartvoorbeeld om deze aan de workflow toe te voegen. U kunt door de voorbeeldlijst scrollen om meer kaarten te zien. Gebruik **×** om de kiezer te sluiten zonder een andere kaart te kiezen. Nadat u de kaarten heeft geconfigureerd, slaat u de workflow op. Zie [Workflow](..) voor de omliggende stappen **Wanneer**, **En** en **Dan**.
 
 ## Vergelijk met inkooporder
 
-Gebruik deze kaarten om order- of factuurgegevens te vergelijken met een inkooporder, zoals eenheidsprijs, beloofde leverdatum, toeslagen of hoeveelheid. Kies de velden, de operator en eventuele tolerantie die de geselecteerde kaart vraagt. Zie [Vergelijk met inkooporder](compare-with-purchase-order/README.md) voor de losse kaarten.
+Gebruik deze kaarten om bestel- of factuurgegevens te vergelijken met een inkooporder, zoals eenheidsprijs, beloofde leverdatum, kosten of hoeveelheid. Kies de velden, operator en eventuele tolerantie waar de geselecteerde kaart om vraagt. Zie [Vergelijken met inkooporder](compare-with-purchase-order) voor de afzonderlijke kaarten.
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Vergelijk met inkooporder geselecteerd; zichtbare voorbeelden vergelijken eenheidsprijs, leverdatum, toeslagen en hoeveelheid."><figcaption>Categorie Vergelijk met inkooporder in de Nederlandse Sandbox.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u035-nl.png" alt="Voorwaarden voor inkoopordervergelijking. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Voorwaarden voor inkoopordervergelijking. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
 ## Documentveld
 
-Kies deze categorie om een selectievakje of veldstatus te controleren, een veld met een waarde te vergelijken of twee velden met elkaar te vergelijken. Vul **Veldnaam** en **Operator** in op de gekozen kaart. Sommige vergelijkingen vragen ook om een tolerantie. Zie [Documentveld](document-field/README.md).
+Kies deze categorie om de status van een selectievakje of veld te controleren, een veld met een waarde te vergelijken of twee velden te vergelijken. Vul de tijdelijke aanduidingen **Veldnaam** en **Operator** in op de gekozen kaart. Sommige vergelijkingen vragen ook om tolerantie. Zie [Documentveld](document-field).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Documentveld geselecteerd; zichtbaar voorbeeld controleert een Docveld met Veldnaam, Operator en Waarde."><figcaption>Documentveld-controles gebruiken waarden uit het huidige document.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u036-nl.png" alt="Voorwaarden voor documentvelden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Voorwaarden voor documentvelden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
 ## Datum en tijd
 
-Gebruik **Datum en tijd** om een datum of tijd met een bereik te vergelijken, of **Vandaag** met een gekozen datum. Kies de **Operator** en datumwaarden op de kaart. Zie [Datum en tijd](date-and-time/README.md).
+Gebruik **Datum en tijd** om een datum of tijd met een bereik te vergelijken, of vergelijk **Vandaag** met een gekozen datum. Selecteer de **Operator** en datumwaarden op de kaart. Zie [Datum en tijd](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Datum en tijd geselecteerd; de voorbeelden wf_card_date_in_range en wf_card_today_compare_with_date."><figcaption>Datum en tijd biedt een bereikcontrole en een controle tegen vandaag.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u037-nl.png" alt="Voorwaarden voor datum en tijd. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Voorwaarden voor datum en tijd. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
 ## Document
 
-Gebruik deze kaarten als een workflow afhangt van het **documenttype** of de **suborganisatie**. Kies het type of de organisatie die op de kaart wordt genoemd. Zie [Document](document/README.md).
+Gebruik deze kaarten wanneer een workflow afhankelijk moet zijn van het **documenttype** of **suborganisatie**. Kies het type of de organisatie genoemd op de kaart. Zie [Document](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Document geselecteerd; voorbeelden controleren het Documenttype en een Documenttype een van de volgende."><figcaption>Documentcondities controleren type of suborganisatie.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u038-nl.png" alt="Voorwaarden voor documenten. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Voorwaarden voor documenten. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
 ## Logica
 
-Deze categorie bevat controles met een beslistabel, een HTTPS-antwoord, modulebeschikbaarheid, een offerteprijs, een kanswaarde of twee waarden. Open de specifieke kaart en vul de genoemde velden in; bijvoorbeeld de HTTPS-kaart vraagt om een URL, een methode en een geaccepteerde statuscode. Zie [Logica](logic/README.md).
+Deze categorie omvat controles met behulp van een beslissingstabel, een HTTPS-antwoord, de beschikbaarheid van modules, een opgegeven artikelprijs, een kanswaarde of twee waarden. Open de specifieke kaart en vul de benoemde tijdelijke aanduidingen in; de HTTPS-kaart vraagt ​​bijvoorbeeld om een ​​URL, methode en geaccepteerde statuscode. Zie [Logica](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Logica geselecteerd; voorbeelden zijn beslistabel, HTTPS-verzoek, module actief, offerte-prijs, kans en waardevergelijking."><figcaption>Logica biedt verschillende conditietypes; kies degene die bij je regel past.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u039-nl.png" alt="Logische voorwaarden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Logische voorwaarden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
 ## Status
 
-Gebruik **Status** om te controleren of een document een gekozen status heeft of of de status in een geselecteerde reeks zit. Kies de **Operator** en **Status** op de kaart. Zie [Status](status/README.md).
+Gebruik **Status** om te controleren of een document een gekozen status heeft of dat de status zich in een geselecteerde set bevindt. Kies de **Operator** en **Status** op de kaart. Zie [Status](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Status geselecteerd; de voorbeelden wf_card_document_status_is en wf_card_document_status_in_list."><figcaption>Statuscondities controleren de huidige documentstatus.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u040-nl.png" alt="Statusvoorwaarden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Statusvoorwaarden. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
-## Tafel
+## Tabel
 
-Deze kaarten onderzoeken tabelrijen van het document. De zichtbare opties zijn datumcontroles, tekstpatronen, houdbaarheid en vergelijkingen tussen kolommen. Kies eerst de **Tabelnaam** en **Kolomnaam** voordat je een operator of patroon kiest. Zie [Tafel](table/README.md).
+Deze kaarten onderzoeken documenttabelrijen. De zichtbare opties omvatten datumcontroles, tekstpatronen, houdbaarheid en vergelijkingen tussen kolommen. Selecteer de **Tabelnaam** en **Kolomnaam** voordat u een operator of patroon kiest. Zie [Tabel](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Tafel geselecteerd; zichtbare voorbeelden zijn datumcontrole, regex-patroon, houdbaarheid en kolomvergelijking."><figcaption>Tafelcondities gebruiken rijen en kolommen uit een documenttabel.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u041-nl.png" alt="Voorwaarden voor gegevenstabellen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Voorwaarden voor gegevenstabellen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
 ## Vergelijk met offerteprijs
 
-Gebruik deze kaarten om een artikel te vergelijken met offertegegevens. De zichtbare keuzes betreffen artikel-ID, leverancierstype, leveranciersartikel-ID, eenheidsprijs en eenheid. De **Operator** en datavelden hangen af van de kaart die je kiest.
+Gebruik deze kaarten om een artikel te vergelijken met prijsgegevens. De zichtbare keuzes omvatten artikel-ID, leveranciertype, artikel-ID leverancier, eenheidsprijs en maateenheid. De **Operator** en tijdelijke aanduidingen voor gegevens zijn afhankelijk van de kaart die u selecteert.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Vergelijk met offerteprijs geselecteerd; vijf voorbeelden betreffen artikel-ID, leverancierstype, leveranciersartikel-ID, eenheidsprijs en eenheid."><figcaption>Vergelijk met offerteprijs is een aparte categorie in de huidige kaartkiezer.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u042-nl.png" alt="Voorwaarden voor offerteprijzen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Voorwaarden voor offerteprijzen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
 
-## Cessionaris
+## Toewijzing
 
-Gebruik **Cessionaris** wanneer de conditie afhangt van de toegewezen gebruiker of groep. Kies of je met één gebruiker of groep wilt vergelijken of met een geselecteerde reeks. Zie [Cessionaris](assignee/README.md).
+Gebruik de categorie voor **toewijzingen** wanneer de voorwaarde afhangt van de toegewezen gebruiker of groep. Kies of u wilt vergelijken met één gebruiker of groep of met een geselecteerde set. Zie [Toewijzing](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Cessionaris geselecteerd; voorbeelden vergelijken toegewezen gebruiker of groep met één of meerdere keuzes."><figcaption>Cessionaris-condities controleren de gebruiker of groep die aan het document is toegewezen.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u043-nl.png" alt="Voorwaarden voor toewijzingen. De categorie Cessionaris betreft toewijzing aan gebruikers en groepen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon."><figcaption><p>Voorwaarden voor toewijzingen. De categorie Cessionaris betreft toewijzing aan gebruikers en groepen. Sommige kaartlabels blijven Engelstalig of zijn onjuist vertaald. Tafel betekent hier gegevenstabel, retouren zijn teruggegeven waarden, Winkel is een opslagactie en Cessionaris is de toegewezen persoon.</p></figcaption></figure>
+
+[Gedetailleerde offertevergelijkingskaarten en elk/alles-gedrag](../cards-overview/quote-comparison-guide.md).
+
+Sommige productlabels blijven Engelstalig of zijn onjuist vertaald. Tabellen zijn gegevenstabellen; teruggegeven waarden zijn geen financieel rendement. Technische identifiers blijven ongewijzigd.

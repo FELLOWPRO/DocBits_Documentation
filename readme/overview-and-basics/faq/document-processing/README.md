@@ -1,4 +1,4 @@
-# Document Processing
+# Documentverwerking
 
 {% content-ref url="table-extraction-troubleshoot.md" %}
 [table-extraction-troubleshoot.md](table-extraction-troubleshoot.md)

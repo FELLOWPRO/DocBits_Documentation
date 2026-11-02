@@ -1,4 +1,4 @@
-# Electronic document extraction attributes
+# Extractiekenmerken voor elektronische documenten
 
 ## Tabel `public.electronic_document_extraction_attributes`
 

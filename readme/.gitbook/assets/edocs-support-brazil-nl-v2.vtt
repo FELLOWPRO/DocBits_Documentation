@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.546
+Brazilië heeft NF-e-, NFC-e-, CT-e-,
+NFS-e- en SPED NFS-e-vermeldingen. NFS-e
+
+formats_02
+00:00:06.546 --> 00:00:12.760
+omvat de versies 1.00 en 2.00 tot 2.04;
+SPED omvat 1.00.02 en 1.01. Dit zijn
+
+formats_03
+00:00:12.760 --> 00:00:19.055
+verschillende documentfamilies. Een
+geconfigureerde NFS-e-versie certificeert
+
+formats_04
+00:00:19.055 --> 00:00:25.433
+niet elk gemeentelijk schema of elke
+nationale indeling voor dienstenfacturen.
+
+workflow_01
+00:00:26.183 --> 00:00:31.837
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:31.837 --> 00:00:37.259
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:37.259 --> 00:00:38.733
+activeert het niet.
+
+accept_01
+00:00:39.483 --> 00:00:45.172
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:45.172 --> 00:00:50.454
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:50.454 --> 00:00:53.833
+fiscale goedkeuring of aflevering via een
+netwerk.
+

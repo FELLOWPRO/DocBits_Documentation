@@ -222,6 +222,18 @@ Teste cada nova regra em pelo menos um documento que deva falhar, um que deva se
 * Os avisos são coletados separadamente e nunca ocultam um erro.
 * Se uma regra não puder ser avaliada — por exemplo, uma divisão por zero em uma fórmula — ela é ignorada. Uma regra com defeito nunca marca um documento como inválido por engano.
 
+## Registros <a id="logs"></a>
+
+Cada regra pode registar as suas avaliações. Para isso abra a página **Registros de execução de regras** do tipo de documento: o cabeçalho indica o tipo de documento e o ícone de atualização recarrega a lista.
+
+**Encontre por** define o que é pesquisado (por omissão **Chave da regra**) e o valor escreve-se no campo ao lado. Ao pesquisar por documento, **Tipo de regra** é obrigatório. Restrinja o resultado com **Resultado**, **Executado**, **A partir da data** e **A data**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-pt.png" alt="Os registos de execução de regras"><figcaption><p>A página dos registos de execução: os filtros em cima e uma linha por avaliação abaixo. Enquanto não houver pesquisa, a tabela indica o que introduzir.</p></figcaption></figure>
+
+Abra uma entrada para ver o detalhe, incluindo o **rastreamento da condição**: cada linha de *Applies when* com o valor esperado, o valor real do documento e se foi cumprida. Ver [Ler o rastreamento da condição nos logs](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+
+A mesma página mostra também os registos das regras de transformação e de seleção de layout.
+
 ## Receitas
 
 Copie estas regras como ponto de partida. As chaves de campos e colunas são as do tipo de documento **Fatura** padrão; ajuste-as aos seus tipos de documento.

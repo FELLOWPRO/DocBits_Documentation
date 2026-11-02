@@ -217,11 +217,13 @@
 
 ## 日志 <a id="logs"></a>
 
-在规则中开启 **记录执行日志**，即可记录每次评估。打开 **Document Types →（文档类型）→ Logs**，并按 **规则键**、**规则 ID** 或 **文档** 搜索；还可以按规则类型、结果和日期筛选。
+每条规则都可以记录自己的每次评估。打开该文档类型的 **规则执行日志** 页面：页头显示文档类型，右上角的刷新图标重新加载列表。
 
-<figure><img src="../../../../.gitbook/assets/rule-execution-logs.png" alt="规则执行日志"><figcaption><p>每次评估对应一行，包含结果、适用范围、文档和行</p></figcaption></figure>
+**查找** 决定搜索依据，默认是 **规则键**，在该字段旁的输入框中填写要搜索的值。按文档搜索时，**规则类型** 为必填项。可用 **结果**、**已执行**、**起始日期** 和 **迄今为止** 缩小结果范围。
 
-打开某条记录可查看详细信息，包括**条件跟踪记录**：*Applies when* 中的每个条件行、预期值、文档中的实际值以及条件是否通过。请参阅[查看条件跟踪记录](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs)。
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-zh.png" alt="规则执行日志"><figcaption><p>规则执行日志页面：上方是筛选条件，下方每次评估对应一行。在开始搜索之前，表格会提示应输入什么。</p></figcaption></figure>
+
+打开某条记录可查看详细信息，包括**条件跟踪记录**：*Applies when* 中的每个条件行、预期值、文档中的实际值以及条件是否通过。请参阅[查看日志中的条件跟踪](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs)。
 
 同一页面也会显示转换规则和布局选择规则的日志。
 

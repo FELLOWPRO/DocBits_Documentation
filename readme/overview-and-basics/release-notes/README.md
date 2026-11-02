@@ -244,7 +244,7 @@ Gli annunci di rilascio originali rimangono di seguito per riferimento.
 *   **Applicare il Layout predefinito a tutti gli Origins:**\
     Un nuovo pulsante **Apply Default Layout to Origins** è stato introdotto nella schermata di configurazione del layout. Gli amministratori possono ora distribuire il layout predefinito a tutti gli origins all'interno di un'organizzazione con una singola azione, eliminando il laborioso processo manuale di copia e incolla del JSON di layout per ciascun origin individualmente. Questo è particolarmente utile durante l'onboarding di nuovi clienti dove più origins devono essere configurati in modo coerente.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt="Finestra di dialogo Apply Default Layout to Origins con l'elenco di caselle di controllo Select Origins, l'avviso che i layout personalizzati verranno sostituiti e un'opzione SELECT ALL"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-it-20261023.png" alt="Layout Builder con interfaccia in italiano e la finestra aperta per applicare il layout predefinito a più Origins."><figcaption><p>La finestra per applicare il layout predefinito alle origini. Dati di esempio; non è stato salvato nulla.</p></figcaption></figure>
 *   **Selezione del tipo di documento per l'importazione FTP:**\
     Le configurazioni di importazione FTP ora supportano l'assegnazione del tipo di documento per cartella. Durante la configurazione di un'importazione FTP, gli utenti possono specificare quale tipo di documento — come Fattura o Conferma d'Ordine — deve essere applicato a tutti i documenti importati da quella cartella. I documenti vengono classificati automaticamente all'importazione, eliminando la necessità di assegnazione manuale del tipo di documento dopo l'acquisizione. Questo supporta le organizzazioni che gestiscono più tipi di documento attraverso diverse sotto-organizzazioni e cartelle.
 
@@ -553,7 +553,7 @@ DocBits include ora il supporto completo per le versioni ZUGFeRD 2.1 e superiori
 * **Flessibilità**: che si lavori con i profili basic, comfort o extended dello standard ZUGFeRD, DocBits offre gli strumenti per gestire ogni livello di complessità delle fatture.
 * **Preparazione al futuro**: con il supporto per le versioni più recenti, DocBits garantisce che le aziende restino conformi alle normative sull'e-invoicing in continua evoluzione negli Stati membri dell'UE e oltre.
 
-Integrando gli standard ZUGFeRD 2.1 e più recenti, DocBits semplifica le transazioni transfrontaliere e si allinea alle esigenze aziendali moderne, diventando uno strumento essenziale per le organizzazioni che danno priorità alla trasformazione digitale e alla conformità normativa. [Scopri le versioni ZUGFeRD e le relative mappature DocBits](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+Integrando gli standard ZUGFeRD 2.1 e più recenti, DocBits semplifica le transazioni transfrontaliere e si allinea alle esigenze aziendali moderne, diventando uno strumento essenziale per le organizzazioni che danno priorità alla trasformazione digitale e alla conformità normativa. [Scopri le versioni ZUGFeRD e le relative mappature DocBits](https://docs.docbits.com/italian/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Integrazione con API esterne per una migliore elaborazione dei documenti
 
@@ -567,7 +567,7 @@ Per le organizzazioni con più sotto-organizzazioni abilitate, DocBits introduce
 
 ### Visibilità dei documenti in base ai permessi di gruppo
 
-DocBits introduce controlli avanzati di visibilità dei documenti, che consentono una gestione più precisa dell'accesso per gli utenti non amministratori tramite permessi basati sui gruppi. Questa funzionalità permette agli amministratori di definire quali documenti sono visibili a utenti o gruppi specifici, garantendo flussi di lavoro semplificati e una maggiore sicurezza dei dati. Gli utenti admin possono assegnare i documenti a gruppi specifici, concedendo la visibilità solo agli utenti di quei gruppi. In questo modo gli utenti vedono solo i documenti rilevanti per il proprio ruolo o team, riducendo il disordine e migliorando la concentrazione. [Scopri di più](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
+DocBits introduce controlli avanzati di visibilità dei documenti, che consentono una gestione più precisa dell'accesso per gli utenti non amministratori tramite permessi basati sui gruppi. Questa funzionalità permette agli amministratori di definire quali documenti sono visibili a utenti o gruppi specifici, garantendo flussi di lavoro semplificati e una maggiore sicurezza dei dati. Gli utenti admin possono assegnare i documenti a gruppi specifici, concedendo la visibilità solo agli utenti di quei gruppi. In questo modo gli utenti vedono solo i documenti rilevanti per il proprio ruolo o team, riducendo il disordine e migliorando la concentrazione. [Scopri di più](https://docs.docbits.com/italian/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
 
 <figure><img src="../../.gitbook/assets/Group Based Permission.png" alt="Tabella dei permessi di gruppo per il gruppo TAX_TEAM con le colonne Document Type, View, Update, Delete, First Approval e Second Approval"><figcaption></figcaption></figure>
 
@@ -585,13 +585,13 @@ DocBits introduce una potente funzionalità di workflow sequenziale e cronologia
   * Azioni utente (ad es. "approvato", "rifiutato")
   * Timestamp per ogni azione
   * Commenti o note aggiunti dagli utenti durante la revisione
-* La cronologia garantisce trasparenza e fornisce una traccia di audit per conformità e risoluzione dei problemi. [Scopri di più](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/approval-history)
+* La cronologia garantisce trasparenza e fornisce una traccia di audit per conformità e risoluzione dei problemi. [Scopri di più](https://docs.docbits.com/italian/administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history)
 
 <figure><img src="../../.gitbook/assets/Approval History.png" alt="Pagina di approvazione con le schede Activity Stream e Approval History, i commenti di approvazione e il pannello Approval Details con i campi della fattura"><figcaption></figcaption></figure>
 
 ### Miglioramento dell'archivio documenti SFTP/FTP
 
-Il miglioramento dell'archivio documenti SFTP/FTP in DocBits si basa sulla funzionalità di importazione esistente e introduce un metodo senza soluzione di continuità per archiviare i file dopo l'elaborazione. Una nuova impostazione nella configurazione dell'importazione FTP consente di abilitare o disabilitare l'archiviazione dei file. Una volta che i file sono stati acquisiti ed elaborati con successo in DocBits, vengono automaticamente archiviati in una cartella designata sul server SFTP/FTP se l'opzione è abilitata. Questo garantisce che i file elaborati siano conservati per fini di archiviazione senza ingombrare le directory di importazione attive. [Scopri di più](https://docs.docbits.com/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
+Il miglioramento dell'archivio documenti SFTP/FTP in DocBits si basa sulla funzionalità di importazione esistente e introduce un metodo senza soluzione di continuità per archiviare i file dopo l'elaborazione. Una nuova impostazione nella configurazione dell'importazione FTP consente di abilitare o disabilitare l'archiviazione dei file. Una volta che i file sono stati acquisiti ed elaborati con successo in DocBits, vengono automaticamente archiviati in una cartella designata sul server SFTP/FTP se l'opzione è abilitata. Questo garantisce che i file elaborati siano conservati per fini di archiviazione senza ingombrare le directory di importazione attive. [Scopri di più](https://docs.docbits.com/italian/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
 
 <figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt="Finestra di dialogo Add new Data con il menu a discesa del tipo SFTP e i campi Server-name, Port, Username, Primary Directory, Import Directory e Archive after Import"><figcaption></figcaption></figure>
 

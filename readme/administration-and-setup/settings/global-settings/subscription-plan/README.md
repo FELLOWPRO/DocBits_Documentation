@@ -1,5 +1,13 @@
 # Piano di abbonamento
 
+## Video tutorial: Società, abbonamento e controllo
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/it.mp4" %}
+Informazioni sulla società, piano di abbonamento e registri di controllo in DocBits
+{% endembed %}
+
+Il video mostra le informazioni e le preferenze della società, il piano di abbonamento, l'attività di accesso e i registri di controllo.
+
 <figure><img src="../../../../.gitbook/assets/subscriptions_overview.png" alt="Piano di abbonamento"><figcaption><p>Pagina Piano di abbonamento</p></figcaption></figure>
 
 La pagina **Piano di abbonamento** offre una panoramica completa del tuo abbonamento DocBits in un unico posto: il piano stesso, gli abbonamenti alle app e alle funzioni abilitati per la tua organizzazione e il consumo di token. Aprila da **Impostazioni → Organizzazione e accesso → Piano di abbonamento**.

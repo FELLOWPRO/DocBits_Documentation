@@ -2,11 +2,11 @@
 
 ## Overview
 
-This Page describes how to import Supplier and Purchase Order data into DocBits using a Comma Separated Values (.csv) file.
+This page describes how to prepare a CSV import of Supplier or Purchase Order data in DocBits.
 
-**Important:** Before importing any data, it is crucial to **review the .csv file thoroughly** to ensure data accuracy and proper configuration. Importing incorrect data can lead to inconsistencies. Refer to the [**CSV Specifications for Purchase Order**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-purchase-order) or [**CSV Specifications for Supplier**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-supplier) sections for details on required and optional fields. If required fields are missing, the import process will fail.
+**Important:** Before importing any data, it is crucial to **review the .csv file thoroughly** to ensure data accuracy and proper configuration. Importing incorrect data can lead to inconsistencies. Refer to the [**CSV Specifications for Purchase Order**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-purchase-order) or [**CSV Specifications for Supplier**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-supplier) sections for details on required and optional fields. Confirm the accepted columns and validation rules for your API version before using a production dataset.
 
-**Validation:** Always verify that your .csv file contains all the necessary columns as outlined in the respective specifications section before attempting the import.
+**Validation:** Use the lists below as a preparation checklist. Confirm required fields, additional fields and representative rows for your deployment; these lists are not a guarantee that every invalid row rejects the entire file. Review the response and independently verify the intended records.
 
 ## Generall Requirements:
 
@@ -18,11 +18,11 @@ YYYY-MM-DD HH:MM:SS
 
 **Required Fields:**
 
-For both Supplier and Purchase Order imports, all columns marked as "Required" in their respective specifications **must exist in the .csv file and must contain a value in each row**. If any required field is missing or empty for a row, the import process will fail.
+Prepare and validate the baseline identifiers listed below. Do not rely on an import request to validate the completeness or business correctness of your CSV for you.
 
 ### CSV Specifications for Purchase Order
 
-**Fields which are Required** - (column with name must exist & must contain data)
+**Baseline fields to prepare and validate**
 
 * `purchase_order_number`
 
@@ -32,6 +32,7 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 * `location_id`
 * `supplier_id`
 * `supplier_name`
+* `header_total_amount`
 * `order_date`
 * `requested_shipment_date`
 * `promised_delivery_date`
@@ -75,7 +76,7 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 * `received_base_mou_quantity`
 * `promised_delivery_date`
 * `requested_ship_date`
-* `unit_code`
+* `unit_of_measure`
 * `unit_code_price`
 * `unit_price`
 * `unit_price_per`
@@ -90,7 +91,7 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 
 ### CSV Specifications for Supplier
 
-**Fields which are Required** - (column with name must exist & must contain data)
+**Baseline fields to prepare and validate**
 
 * `customer_number`
 * `supplier_number`
@@ -99,10 +100,12 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 
 **Fields which can be included**
 
+* `address_id`
 * `address_1`
 * `address_2`
 * `address_3`
 * `address_4`
+* `country_main_division`
 * `town_city`
 * `zip_code`
 * `supplier_phone`
@@ -127,7 +130,7 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 * `custom_field_9`
 * `custom_field_10`
 * `status`
-* `account_number`
+* `account_id`
 * `financial_partner_id`
 * `financial_partner_name`
 * `iban`
@@ -135,53 +138,39 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 
 ## Access Endpoint
 
-To import data, follow these steps:
+### Choose the environment and organization
 
-1. Visit: [https://api.docbits.com/](https://api.docbits.com/)
-2.  Click the **"Authorize"** button.
+1. Open the API reference for the environment you intend to use. The production reference is [https://api.docbits.com/](https://api.docbits.com/); use your approved test environment for test data. Check the API version and **Servers** value before preparing a request.
+2. For an authorized import, click **Authorize** and use the API key supplied for the intended organization and user. Never copy a key into a screenshot, a CSV file or a shared example.
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt="DocBits API Swagger page with the Authorize button highlighted by an arrow"><figcaption></figcaption></figure>
-3.  Enter the API-Key and click **"Authorize"**
+The four images below are genuine English views of the Dev API reference, version **12.83.550**, with server **/dev-api**. No API key or CSV was supplied and **Execute** was not clicked. The visible `string` values are Swagger-generated examples, not valid organization IDs or prepared import data.
 
-    * The API-Key can be found in DocBits in Settings -> Global Settings -> Integration&#x20;
-    * **Note:** The API key provided in your request determines the target organization and the user context under which the data will be imported.
+<figure><img src="../.gitbook/assets/csv-import-reference-home-native-dev-en-20261102.png" alt="Current English Dev API reference showing version 12.83.550, the OpenAPI definition, dev-api server and unused Authorize button"><figcaption><p>Check the reference version and server first. This is the Dev reference with no authorized credentials.</p></figcaption></figure>
 
+### Open the import operation
 
+1. Find **POST /master_data_lookup/import_data** and expand it.
+2. Click **Try it out** to enable the local request form. This step alone does not execute an import.
 
-    <figure><img src="../.gitbook/assets/import_csv_api.png" alt="Settings with Global Settings expanded and the Integration entry highlighted, where the API key is found"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/csv-import-import-operation-native-dev-en-20261102.png" alt="Expanded POST master_data_lookup import_data operation with Try it out and required multipart form-data Request body controls"><figcaption><p>The import operation accepts a multipart form-data request body. Try it out enables the form; it does not send the import.</p></figcaption></figure>
 
+### Prepare the request body
 
+* **sub_org_id:** Enter the intended, authorized sub-organization ID when the import belongs to a sub-organization. Otherwise remove the generated `string` example and deliberately leave the field empty using the form's **Send empty value** control as appropriate. Empty does not identify a test organization or limit an organization-wide replacement.
+* **data_type:** Enter `supplier` or `purchase_order` for the workflows described on this page. Replace the generated `string` example; the field is required.
+* **file / csv_data:** This guide uses a CSV file. Clear the generated example from **csv_data** before choosing the file: nonempty `csv_data` is processed before the file in the reviewed importer. Select your checked CSV in **file** and confirm that its filename is displayed. Do not leave the screenshot's example values as your request.
+* **delimiter:** Select the actual delimiter in your CSV explicitly: comma (`,`) or semicolon (`;`). Inspect the first rows in a plain text editor. Do not assume the form's initial semicolon selection matches the file or the server fallback.
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="Available authorizations dialog for the X-API-KEY header with the value field and the Authorize button highlighted" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/csv-import-import-inputs-native-dev-en-20261102.png" alt="Current Dev import form showing sub_org_id, required data_type, csv_data, an empty file chooser and delimiter controls with Swagger-generated string examples"><figcaption><p>The upper request fields before any input or file upload. The visible string examples must be replaced or cleared for an actual request; no file is chosen here.</p></figcaption></figure>
 
+### Review replacement and conflict options
 
+These option descriptions reflect the reviewed importer. Confirm replacement scope and conflict behavior for the API version you will use; the reference views do not verify those effects.
 
-1. Press **CTRL + F** (or **CMD + F** on Mac) to open the search function, and search for `/master_data_lookup/import_data`.
-2.  Click on the request to view its details, then click on "**Try it out"** to proceed.
+* **replace_all:** The declared default is `false`. With `true`, the selected data type's existing records are removed before loading the CSV. The replacement scope is the organization, with a sub-organization filter when one is supplied. Check that scope explicitly before using replacement; an empty sub_org_id can cover the selected data type across the organization. With `false`, existing records are handled according to **on_conflict**.
+* **on_conflict:** Choose `IGNORE` to leave matching existing Supplier or Purchase Order records unchanged, or `REPLACE` to update them from the CSV. The declared default is `REPLACE`. This option does not protect records from the earlier **replace_all** removal step.
+* **auto_generate_id:** Leave this `false` and provide the required business identifiers in your CSV. The optional auto-generation flag is not used by the reviewed Supplier and Purchase Order importers; do not rely on it to create missing supplier or purchase-order numbers.
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt="Swagger list of master_data_lookup endpoints with POST /master_data_lookup/import_data highlighted"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/csv-import-import-options-native-dev-en-20261102.png" alt="Current Dev import options showing replace_all false, on_conflict REPLACE, auto_generate_id false, dev-api server and the untouched Execute button"><figcaption><p>The lower form and Execute button in their existing displayed state. No option was changed and Execute was not clicked; this image is not an import result.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt="Expanded POST /master_data_lookup/import_data endpoint with the Try it out button highlighted"><figcaption></figcaption></figure>
-3.  You can now enter the required parameters in the Request Body.\
-
-
-    **Request Parameters:**
-
-    When making the import request, the following parameters need to be specified:
-
-    * **sub\_org\_id:** Remove any text from the text field to ensure the "Send empty value" option is enabled.
-    * **data\_type:** This parameter specifies the type of data being imported. It can be either `supplier` or `purchase_order` depending on the content of your .csv file.
-    * **replace\_all:** This boolean parameter determines whether all existing data in the respective database table (`supplier` or `purchase_order`) for the specified organization should be deleted before inserting the new data from the .csv file. Set this to `true` to replace all existing data or `false` to append or update with the new data.
-    *   **delimiter:** This parameter specifies the character used to separate the individual values within each row of your data file. **It is essential to identify the correct delimiter used in your file.** Common delimiters are the comma (`,`) and the semicolon (`;`).
-
-        **How to check the delimiter:**
-
-        1. Open your data file (e.g., the `.csv` file) with a plain text editor (like Notepad on Windows, TextEdit on Mac, or similar).
-        2. Examine the first few rows of data. Look for the character that consistently appears between the different pieces of information in each row. This character is your delimiter.
-        3. Set the `delimiter` parameter in your import request to this identified character (either `,` or `;`). Using the wrong delimiter will prevent the data from being parsed correctly and will result in a failed import.
-    * **on\_conflict & auto\_generate\_id:** The functionality for handling data conflicts (`on_conflict`) and automatically generating IDs (`auto_generate_id`) is currently **not implemented** for these data types.
-
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt="Import Data request body form with empty sub_org_id, data_type, file, delimiter, replace_all, on_conflict and auto_generate_id fields"><figcaption></figcaption></figure>
-4.  If you have verified that all the information is correct, you can initiate the import process by clicking the **"Execute"** button.
-
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt="Import Data form filled with data_type supplier, file supplier.csv, comma delimiter, replace_all true and the Execute button highlighted"><figcaption></figcaption></figure>
+Only after the target environment, organization, sub-organization scope, CSV and options have been checked and the import is authorized, click **Execute**. Review the response and verify the intended records before continuing with further imports. These screenshots demonstrate the controls; they do not establish an executed import or complete CSV-data validation.

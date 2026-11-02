@@ -1,7 +1,7 @@
 # Support Utilisateur
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Tutoriel sur les tickets d'assistance : signaler des bogues, joindre des fichiers et obtenir de l'aide plus rapidement
 {% endembed %}
 
 ### Support Utilisateur <a href="#ikpwh4qbrq82" id="ikpwh4qbrq82"></a>
@@ -20,4 +20,4 @@ Dans l'écran de validation, vous pouvez directement créer des tickets pour le 
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-fr.png" alt="Formulaire d’assistance avant envoi."><figcaption><p>Formulaire d’assistance avant envoi.</p></figcaption></figure>

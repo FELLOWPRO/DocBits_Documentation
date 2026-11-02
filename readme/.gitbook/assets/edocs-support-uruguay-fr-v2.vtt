@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.529
+Uruguay CFE possède des entrées
+génériques, 24 et 25. E-Factura et E-Nota
+
+formats_02
+00:00:07.529 --> 00:00:12.812
+Credito figurent également dans la liste.
+Les entrées d’avoir n’ont pas d’ensembles
+
+formats_03
+00:00:12.812 --> 00:00:17.735
+d’extraction dédiés dans l’état examiné.
+Confirmez la version CFE et la
+
+formats_04
+00:00:17.735 --> 00:00:21.833
+correspondance de facture ou d’avoir
+effectivement utilisée.
+
+workflow_01
+00:00:22.583 --> 00:00:28.353
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:28.353 --> 00:00:34.263
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:34.263 --> 00:00:35.333
+l’active pas.
+
+accept_01
+00:00:36.083 --> 00:00:41.064
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:41.064 --> 00:00:46.741
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:46.741 --> 00:00:49.933
+la validation fiscale ni la transmission
+réseau.
+

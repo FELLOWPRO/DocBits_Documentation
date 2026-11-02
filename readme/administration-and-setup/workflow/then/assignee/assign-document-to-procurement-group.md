@@ -1,6 +1,6 @@
-# Assign document to procurement group
+# Attribuer un document au groupe d'approvisionnement
 
-<figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_procurement_group_v2-fr-fr.png" alt="Attribuer un document au groupe d&#x27;approvisionnement, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,14 +8,14 @@ La carte de workflow **« Assign to Procurement Group »** sert à assigner un d
 
 ## **Composants de la carte :**
 
-1. **Procurement Group**
-   * **Description :** spécifie le groupe d'approvisionnement auquel le document sera assigné.
+1. **Groupe d'approvisionnement**
+   * **Descriptif :** spécifie le groupe d'approvisionnement auquel le document sera assigné.
    * **Détail :** le groupe d'approvisionnement sélectionné sera responsable du traitement et de la gestion du document.
 
 ## **Fonctionnalité :**
 
 * **Évaluation de la condition :**\
-  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+  La carte n'exécute son action que si les sections **« Quand »** et **« Et »** sont toutes deux évaluées comme vraies.
 * **Exécution de l'action :**\
   Si les deux conditions sont vraies, le document est assigné au groupe d'approvisionnement spécifié. Si l'une des conditions est fausse, aucune action n'est effectuée et le document reste non assigné.
 
@@ -26,3 +26,15 @@ La carte de workflow **« Assign to Procurement Group »** sert à assigner un d
 ## **Conclusion :**
 
 La carte de workflow **« Assign to Procurement Group »** offre un moyen simple mais efficace de garantir que les documents sont automatiquement assignés à la bonne équipe d'approvisionnement pour un traitement complémentaire.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Envoyer une exception d'achat à son groupe d'approvisionnement.
+
+**Configuration :** Sélectionnez le groupe configuré `Demo Procurement`.
+
+**Résultat attendu et contre-exemple :** Le document est affecté à ce groupe d'approvisionnement. Un groupe ordinaire portant un nom similaire ne doit pas être considéré comme étant la même cible configurée.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

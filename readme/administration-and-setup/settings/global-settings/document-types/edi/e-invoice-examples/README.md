@@ -1,7 +1,7 @@
 # Exemples de Factures Électroniques
 
 {% embed url="https://youtu.be/li8KjWO18eU" %}
-DocBits E-Invoice Tutorial: Process XRechnung & ZUGFeRD/Factur-X, Validate Data & Automate Workflows
+DocBits Tutoriel sur la facture électronique : traiter XRechnung et ZUGFeRD/Factur-X, valider les données et automatiser les flux de travail
 {% endembed %}
 
 **XRechnung UBL 1.2 :**
@@ -31,8 +31,6 @@ Comment le fichier est exporté :
 **XRechnung UBL 2.1 :**
 
 * Fichier exemple :
-
-{% file src="../../../../../../.gitbook/assets/Xrechung_2-1_example.xml" %}
 
 Comment le fichier est exporté :
 
@@ -76,7 +74,7 @@ Comment le fichier est exporté :
 [xrechnung-3.0.md](xrechnung-3.0.md)
 {% endcontent-ref %}
 
-**XRechnung Cross Industry Invoice :**
+**XRechnung Facture intersectorielle :**
 
 * Fichier exemple :
 

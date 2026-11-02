@@ -1,6 +1,6 @@
-# Item Id on Purchase Order
+# Identifiant de l'article sur le bon de commande
 
-<figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_id_column_po_v2-fr-fr.png" alt="Identifiant de l&#x27;article sur le bon de commande, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,16 +8,16 @@ Cette carte de workflow est conçue pour comparer les identifiants d'article (it
 
 ## **Composants de la carte :**
 
-1. **Any / All :**
-   * **Description** : définit si la condition s'applique à une ou à toutes les occurrences de comparaison d'item ID.
-   * **Options** :
+1. **Tous / Tous :**
+   * **Descriptif** : définit si la condition s'applique à une ou à toutes les occurrences de comparaison d'item ID.
+   * **Possibilités** :
      * **Any** : la condition est satisfaite si un quelconque item ID du bon de commande correspond à l'item ID du document.
      * **All** : la condition n'est satisfaite que si tous les item ID du bon de commande correspondent aux item ID du document.
-2. **Operator :**
-   * **Description** : définit la condition de comparaison de l'item ID du bon de commande à l'item ID du document.
-   * **Options** :
-     * **Equals (=)** : vérifie si l'item ID du bon de commande correspond exactement à l'item ID du document.
-     * **Not Equals (≠)** : s'assure que l'item ID du bon de commande ne correspond pas à l'item ID du document.
+2. **Opérateur :**
+   * **Descriptif** : définit la condition de comparaison de l'item ID du bon de commande à l'item ID du document.
+   * **Possibilités** :
+     * **Égal à (=)** : vérifie si l'item ID du bon de commande correspond exactement à l'item ID du document.
+     * **Pas égal à (≠)** : s'assure que l'item ID du bon de commande ne correspond pas à l'item ID du document.
 
 ## **Fonctionnalité :**
 

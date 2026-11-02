@@ -1,6 +1,8 @@
-# All Value of
+# Toute la valeur de
 
-<figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v1-fr-fr.png" alt="Toute la valeur de, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v2-fr-fr.png" alt="Toute la valeur de, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -9,7 +11,7 @@ Cette carte DocBits sert à valider si **toutes les valeurs** d'une colonne spé
 ## **Fonctionnalité :**
 
 * **Validation par motif regex :** cette carte vérifie que **toutes les valeurs** d'une colonne spécifiée d'un tableau correspondent au motif d'expression régulière fourni. Le workflow ne se poursuit que si chaque entrée de la colonne satisfait la condition.
-* **Operator :** les utilisateurs définissent la colonne et spécifient le motif regex. La condition disponible inclut :
+* **Opérateur :** les utilisateurs définissent la colonne et spécifient le motif regex. La condition disponible inclut :
   * **Matches Regex Pattern :** vérifie que chaque valeur de la colonne spécifiée correspond au motif regex.
 * **Sélection de la table et de la colonne :** les utilisateurs spécifient la table et la colonne qu'ils souhaitent vérifier pour des correspondances complètes au motif regex.
 

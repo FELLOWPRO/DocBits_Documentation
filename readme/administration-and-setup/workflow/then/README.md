@@ -1,80 +1,73 @@
-# Then
+# Alors
 
-## Aperçu des cartes d'action « Then… »
+Une carte **Alors** indique à un flux de travail quoi faire après son déclencheur **Quand** et toutes les conditions **Et**. Dans **Générateur de flux de travail**, sélectionnez **Ajouter une carte** sous **Dans ce cas...**. Choisissez une catégorie sur la gauche ou tapez un nom dans **Carte de recherche**. Sélectionnez un aperçu de la carte pour l'ajouter, remplissez les champs affichés sur la carte et enregistrez le flux de travail. Faites défiler le sélecteur pour voir plus de cartes. Sélectionnez **×** pour le fermer sans ajouter de carte. Voir [Workflow](..) pour la séquence complète.
 
-### **1. Actions sur les champs de document :**
+Les aperçus ci-dessous montrent les actions disponibles, et non les paramètres terminés. Choisissez l'action qui correspond au résultat souhaité.
 
-* **Invert Checkbox :** cette action inverse l'état d'un champ de type case à cocher dans un document.
-* **Set Checkbox :** définit l'état d'un champ de type case à cocher sur vrai (cochée) ou faux (décochée).
-* **Set Field to Text :** cette action définit un champ de document donné sur une valeur texte spécifiée.
+## Champ de document
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Cochez ou inversez une case à cocher, placez du texte dans un champ ou copiez un champ dans un autre. Choisissez les noms de champs et la valeur demandés par la carte. Voir [Champ du document](document-field).
 
-### **2. Actions sur le document :**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-* **Approve the Document :** marque un document comme approuvé dans le système.
-* **Reject the Document :** marque un document comme rejeté.
+## Document
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Choisissez **Approuver le document** ou **Rejeter le document** lorsque le flux de travail doit prendre cette décision. Utilisez d'abord une condition **Et** si l'approbation doit dépendre d'un contrôle. Voir [Document](document).
 
-### **3. Actions d'export :**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-* **Export document with export configuration :** lance le processus d'export avec une configuration d'export spécifique.
-* **Start Export :** lance le processus d'export.
+## Logique
 
+Utilisez ces cartes pour convertir des valeurs entre les formats numérique, texte et booléen, ou lire une valeur à partir de JSON. Choisissez les champs de saisie et de sortie sur la carte sélectionnée.
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Statut
 
-### **4. Actions sur le statut :**
+Choisissez **Modifier le statut en** pour déplacer le document vers un statut sélectionné. La carte peut également déclencher un autre flux de travail. Voir [Statut](status).
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
+## Invites et scripts
 
-* **Change Status :** change le statut d'un document ou d'une tâche en un nouveau statut spécifié.
+Choisissez cette catégorie pour exécuter un script d'invite DocOperator. Sélectionnez le script et les variables demandées par la carte. La carte propose également des paramètres d'exécution tels que les tentatives.
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-### **5. Actions sur les tâches :**
+## Exporter
 
-* Attributions et notifications :
-  * **Assign Task :** crée et assigne une tâche avec des détails précis à une personne ou à un groupe, avec la possibilité de les notifier par e-mail.
-  * **Create a New Task :** similaire à l'attribution, mais axé sur la création d'une tâche entièrement nouvelle dans le système.
+Démarrez une exportation, exportez avec une configuration choisie ou mettez en file d'attente une exportation finale. Choisissez la configuration d’exportation et l’option de tâche en attente affichées sur votre carte. Voir [Exporter](export).
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-### **6. Actions sur les tableaux :**
+## Tâche
 
-* **Calculate in Table :** effectue des calculs sur les données d'un tableau selon des conditions spécifiées et stocke les résultats dans une colonne désignée.
-* **Change Entries :** met à jour les entrées d'un tableau selon des conditions spécifiées.
+Créez une tâche ou une notification et attribuez-la à un utilisateur ou un groupe. Saisissez les paramètres de titre, de description, de priorité et de notification demandés par la carte. Certaines cartes sont attribuées de manière séquentielle. Voir [Tâche](task).
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-### **7. Actions sur l'assigné :**
+## Courriel
 
-* **Assign User from Field :** assigne un utilisateur à une tâche ou à un document à partir des données utilisateur stockées dans un champ spécifique, avec une option d'utilisateur de repli si l'utilisateur principal n'est pas disponible.
-* **Assign Document to User or Group :** assigne directement un document à un utilisateur ou à un groupe, garantissant que la responsabilité est correctement désignée.
+Envoyez un e-mail en utilisant un modèle sélectionné, soit aux destinataires, soit aux groupes. Choisissez le modèle et la destination sur la carte.
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-### **8. Actions d'interaction externe :**
+## Tableau
 
-* **Call API :** envoie une requête à une API externe, personnalisable avec des méthodes, des paramètres et des données spécifiques.
-* **Send HTTPS Request :** similaire aux appels d'API, mais spécifiquement formaté pour les protocoles HTTPS.
+Modifiez les entrées ou calculez les valeurs dans un tableau de document. Sélectionnez la table, les colonnes, l'opérateur et la colonne de résultat demandés par la carte. Voir [Tableau](table).
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-### **9. Traitement avancé :**
+## Responsable
 
-* **Run Workflow :** déclenche un autre workflow au sein du système, permettant un enchaînement complexe de processus.
+Attribuez le document à un utilisateur, un groupe, un destinataire ou une sous-organisation. Certaines cartes utilisent un champ ou une table de décision et proposent une solution de repli. Configurez la destination et le comportement de repli dans la carte sélectionnée. Voir [Responsable](assignee).
 
-#### Application pratique
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-Ces cartes d'action servent à automatiser des réponses en fonction de déclencheurs précis identifiés dans les parties précédentes de la configuration du workflow. Par exemple :
+## Action
 
-* Si un document est identifié comme nécessitant un examen, l'action « Approve the Document » peut être déclenchée automatiquement une fois qu'il satisfait toutes les conditions spécifiées.
-* Pour les tâches de gestion des données, les actions « Set Checkbox » ou « Set Field to Text » garantissent la mise à jour automatique des champs de document, réduisant la saisie manuelle et le risque d'erreurs.
-* Les tâches complexes telles que les interactions d'API ou les changements de statut rationalisent les interactions non seulement au sein du système ERP, mais aussi avec des services et outils externes, améliorant l'intégration et la fonctionnalité.
+Exécutez un autre workflow, envoyez une requête HTTPS, appelez une API ou utilisez la carte de calcul de l'augmentation des coûts. Ces actions peuvent affecter d'autres systèmes ; demandez à votre administrateur quel point de terminaison et quels paramètres utiliser. Voir [Action](action).
 
-### Conclusion
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-La section « Then… » de votre système de workflow fournit des outils robustes pour définir des actions précises qui doivent se produire lorsque les conditions du workflow sont remplies. En utilisant efficacement ces actions, les entreprises peuvent automatiser les processus routiniers, garantir l'exactitude des données et réagir de manière dynamique aux évolutions des informations et des états du système. Comprendre comment configurer et exploiter ces actions est essentiel pour maximiser l'efficacité des capacités de workflow de votre système ERP.
+[Champs détaillés de la carte logique, chemins JSON, déclencheurs et tests](../cards-overview/logic-cards-guide.md).

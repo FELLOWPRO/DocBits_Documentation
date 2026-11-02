@@ -1,130 +1,41 @@
----
-description: Monitor workflow performance, manage workflows, and access the Card SDK
----
+# Tableau de bord
 
-# Tableau de Bord des Workflows
+Le **Tableau de bord du flux de travail** est la page d'accueil de la zone des workflows. Il montre les performances de vos workflows — totaux d'exécutions, taux de réussite et d'échec, graphique des exécutions dans le temps et activité récente — et vous donne accès à la liste des workflows, au Test Manager et au Card SDK.
 
-Le Tableau de Bord des Workflows est votre centre de controle pour la gestion et la surveillance de tous les workflows dans DocBits. Accedez-y en cliquant sur l'icone **Workflows** dans la barre laterale gauche.
+## Indicateurs de volume
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Tableau de Bord des Workflows avec les totaux d'exécutions, les taux de réussite et d'échec, le graphique des exécutions et l'activité récente"><figcaption><p>Le Tableau de Bord des Workflows — totaux d'exécutions, taux de réussite/échec et activité récente pour chaque workflow.</p></figcaption></figure>
+Les trois premières cartes présentent les workflows exécutés aujourd’hui, les workflows créés pendant la période et le nombre total d’exécutions. Le sous-titre de la carte **Exécutions totales** indique la durée de la période sélectionnée.
 
-## Onglet Tableau de Bord
+<figure><img src="../../.gitbook/assets/workflow-kpi-volume-current-fr.png" alt="Indicateurs de volume : workflows exécutés aujourd’hui, workflows créés et exécutions totales sur la période sélectionnée."><figcaption><p>Indicateurs de volume : workflows exécutés aujourd’hui, workflows créés et exécutions totales sur la période sélectionnée.</p></figcaption></figure>
 
-L'onglet Tableau de Bord offre un apercu rapide des performances des workflows pour une periode selectionnee.
+## Résultats d’exécution
 
-### Filtres
+Les trois cartes suivantes présentent les **Exécutions réussies**, le **Taux de réussite** et le **Taux d’échec**. Les sous-titres indiquent le nombre total d’exécutions servant de contexte aux indicateurs.
 
-- **Date de debut / Date de fin** — Selectionnez la plage de temps pour les statistiques
-- **Nom du Workflow** — Filtrez par un workflow specifique ou affichez tous les workflows
-- **Comparer** — Comparez deux periodes cote a cote
-- **Effacer** — Reinitialiser tous les filtres
+<figure><img src="../../.gitbook/assets/workflow-kpi-outcomes-current-fr.png" alt="Résultats d’exécution : exécutions réussies, taux de réussite et taux d’échec."><figcaption><p>Résultats d’exécution : exécutions réussies, taux de réussite et taux d’échec.</p></figcaption></figure>
 
-### Cartes de Statistiques
+## Graphique des exécutions
 
-| Metrique | Description |
-|---|---|
-| **Workflows executes aujourd'hui** | Nombre total d'executions de workflows aujourd'hui |
-| **Workflows crees (periode)** | Nouveaux workflows crees dans la plage de dates selectionnee |
-| **Total des executions** | Executions cumulees de workflows sur la periode |
-| **Executions reussies** | Nombre d'executions terminees sans erreurs |
-| **Taux de reussite** | Pourcentage d'executions reussies par rapport au total |
-| **Taux d'echec** | Pourcentage d'executions echouees par rapport au total |
+Le graphique présente les séries de réussite et d’échec avec les mois affichés en français.
 
-{% hint style="warning" %}
-Un taux d'echec eleve (affiche comme **CRITIQUE** en rouge) indique que les workflows rencontrent des erreurs. Examinez les workflows defaillants en utilisant les journaux d'execution dans le [Constructeur Avance de Workflows](advanced-workflow-builder/).
-{% endhint %}
+<figure><img src="../../.gitbook/assets/workflow-chart-current-fr.png" alt="Graphique des exécutions : séries de réussite et d’échec sur les sept mois affichés en français."><figcaption><p>Graphique des exécutions : séries de réussite et d’échec sur les sept mois affichés en français.</p></figcaption></figure>
 
-### Graphique des Executions de Workflows
 
-Le graphique affiche une repartition mensuelle des executions de workflows **reussies** (vert) et **echouees** (rouge/rose), vous aidant a identifier les tendances et les pics d'erreurs.
+## Onglets
 
-### Activite Recente
+- **Tableau de bord** — indicateurs d'exécution et activité récente.
+- **Liste des flux de travail** — chaque workflow avec son type, son ordre d'exécution et son déclencheur. Créez-en un nouveau avec **Nouveau flux de travail**.
+- **Liste des gestionnaires de tests** — scénarios de test qui valident vos workflows ; exécutez-les avec **Exécuter tous les tests**.
+- **Licence** — informations sur la licence des workflows.
+- **Kit de développement logiciel pour cartes** — créez et téléversez des cartes de workflow personnalisées (voir [Card SDK](card-sdk.md)).
 
-- **Derniers Tests de Workflows** — Affiche les executions de tests recentes avec le statut reussite/echec
-- **Derniers Workflows** — Affiche les workflows recemment crees ou modifies
+La barre d'outils propose également **Modèles**, qui ouvre la bibliothèque de modèles réutilisables, et **Processus d'importation**, qui importe un workflow à partir d'un fichier JSON. Pour enregistrer un workflow comme modèle, consultez le [constructeur Flux standard](standard-workflow-builder.md#ajouter-des-cartes).
 
-## Onglet Liste des Workflows
+La **gestion des tests** vous permet d'enregistrer des scénarios de test par workflow et de les exécuter ensemble, afin de confirmer que vos workflows se comportent toujours correctement après des modifications :
 
-L'onglet Liste des Workflows affiche tous les workflows avec des fonctionnalites de recherche, de tri et de gestion.
+<figure><img src="../../.gitbook/assets/prior-u032-fr.png" alt="Liste des scénarios de test de workflows."><figcaption><p>Liste des scénarios de test de workflows.</p></figcaption></figure>
 
-<!-- screenshot: Workflow List showing Advanced workflows with columns -->
+## Étapes suivantes
 
-### Colonnes
-
-| Colonne | Description |
-|---|---|
-| **Statut** | Icone a bascule — cliquez pour activer/desactiver un workflow |
-| **Nom** | Nom du workflow (cliquez pour ouvrir dans le Constructeur de Workflows) |
-| **Type** | Badge affichant `Advanced` pour les workflows visuels |
-| **Quand...** | Resume de la condition de declenchement |
-| **Mis a jour par** | Utilisateur ayant modifie le workflow en dernier |
-| **Cree le** | Date et heure de creation |
-| **Mis a jour** | Date et heure de la derniere modification |
-| **Actions** | Menu contextuel (supprimer, dupliquer, exporter) |
-
-### Actions
-
-- **Rechercher** — Filtrez les workflows par nom a l'aide de la barre de recherche
-- **+ AJOUTER UN WORKFLOW** — Creez un nouveau workflow (ouvre le [Constructeur Avance de Workflows](advanced-workflow-builder/))
-- **MODELES** — Parcourez et chargez des modeles de workflows enregistres
-- **IMPORTER UN WORKFLOW** — Importez un workflow a partir d'un fichier JSON
-
-## Onglet Liste du Gestionnaire de Tests
-
-La Liste du Gestionnaire de Tests affiche toutes les configurations et resultats de tests de workflows. Utilisez-la pour configurer des scenarios de tests automatises pour vos workflows.
-
-<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Liste du Gestionnaire de Tests des workflows avec les scénarios de test et Run All Tests"><figcaption><p>La Liste du Gestionnaire de Tests — chaque scénario affiche un résultat réussite/échec ; utilisez <strong>Run All Tests</strong> pour les réexécuter tous.</p></figcaption></figure>
-
-## Onglet Licence
-
-L'onglet Licence affiche le statut actuel de votre licence DocFlow et les fonctionnalites disponibles.
-
-## Onglet SDK de Cartes
-
-L'onglet SDK de Cartes vous permet de creer et de gerer des cartes de workflow personnalisees (cartes partenaires) qui etendent les fonctionnalites integrees de DocFlow.
-
-<!-- screenshot: Card SDK page with Upload ZIP and Submissions tabs -->
-
-### Telecharger un ZIP
-
-Telechargez une application partenaire sous forme de fichier ZIP contenant :
-- `app.json` — Metadonnees et configuration de la carte
-- `.docflowcompose/flow/` — Fichiers de definition de la carte
-
-Taille maximale du fichier : **10 Mo**. Cliquez sur **Telecharger et Valider** pour soumettre la carte a l'examen.
-
-### Importation GitHub
-
-Importez des cartes partenaires directement depuis un depot GitHub au lieu de telecharger un fichier ZIP.
-
-### Soumissions
-
-Consultez et gerez toutes les cartes partenaires soumises :
-
-<!-- screenshot: Card SDK Submissions list with status badges -->
-
-| Colonne | Description |
-|---|---|
-| **Nom de la Carte** | Nom de l'application partenaire et de la carte |
-| **card_type_label** | Type de carte (`Action_card` ou `Condition_card`) |
-| **Version** | Numero de version de la carte |
-| **Soumis** | Date de soumission |
-| **Statut** | Statut actuel de l'examen |
-| **Actions** | Actions disponibles selon le statut |
-
-#### Statuts des Cartes
-
-| Statut | Signification | Actions disponibles |
-|---|---|---|
-| **Valide** | La carte a passe la validation | Telecharger, Approuver, Rejeter |
-| **Approuve** | La carte est active et disponible dans les workflows | Telecharger, Desactiver, Revoquer |
-| **Rejete** | La carte a echoue a l'examen | Supprimer |
-| **Desactive** | La carte a ete desactivee | Supprimer |
-
-### Telecharger le Modele SDK
-
-Cliquez sur **Telecharger le Modele SDK** pour obtenir un modele de demarrage pour la creation de vos propres cartes personnalisees. Le modele comprend la structure de fichiers requise et des exemples de configurations.
-
-{% hint style="info" %}
-Les cartes partenaires peuvent egalement etre gerees de maniere programmatique via les [outils DocFlow MCP](../../../advanced-functions-and-tools/docflow-mcp/). Utilisez les outils MCP du SDK de Cartes pour creer, valider, approuver et tester des cartes depuis votre IDE ou vos scripts d'automatisation.
-{% endhint %}
+- Créez une automatisation linéaire avec le builder **Flux standard**.
+- Créez un flux avec branches grâce au builder **Flux de travail avancé**.

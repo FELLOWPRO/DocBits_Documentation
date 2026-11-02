@@ -8,19 +8,19 @@ Pour vous donner une meilleure visibilité sur vos demandes, voici ce que signif
   – Votre ticket a été examiné et est en attente d'action.
 * **In Progress**\
   – DocBits travaille activement sur votre problème.
-* **Waiting on Customer Response**\
+* **En attente de la réponse du client**\
   – Nous avons besoin de plus d'informations ou de clarifications de votre part. Vous verrez cela lorsque nous aurons posé des questions ou demandé des fichiers.
-* **Waiting for Customer Confirmation**\
+* **En attente de confirmation du client**\
   – Nous avons mis en œuvre une solution ou fourni des conseils et attendons que vous confirmiez que le problème est résolu.
-* **Waiting on Product Team**\
+* **En attente de l'équipe produit**\
   – Votre demande est une suggestion de fonctionnalité ou concerne un problème de produit connu et a été enregistrée pour la feuille de route de l'équipe Produit.
 * **Closed – Resolved**\
   – Le problème est entièrement résolu et confirmé, ou aucune action supplémentaire n'est nécessaire.
-* **Closed – No Response**\
+* **Fermé – Aucune réponse**\
   – Après plusieurs relances sans réponse, nous fermons le ticket. Vous pouvez toujours le rouvrir en répondant.
-* **Closed – Known Issue**\
+* **Fermé – Problème connu**\
   – Ce ticket suit un bug de produit connu qui est déjà dans notre backlog. Il est fermé ici mais reste visible dans notre planification interne.
-* **Closed – Logged as Idea**\
+* **Fermé – Connecté en tant qu'Idée**\
   – Votre suggestion a été notée pour une future considération par notre équipe Produit.
 * **Duplicate**\
   – Nous avons fusionné ce ticket avec un existant couvrant le même problème.

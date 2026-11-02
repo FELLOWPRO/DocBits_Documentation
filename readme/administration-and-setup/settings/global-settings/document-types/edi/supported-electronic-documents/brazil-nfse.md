@@ -4,6 +4,12 @@ description: Support du document électronique BRAZIL NFS-E dans DocBits
 
 # 🇧🇷 BRAZIL NFS-E
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Brésil](countries/brazil.md). Il s’agit de familles de documents différentes. Une version NFS-e configurée ne certifie pas chaque schéma municipal ni chaque structure nationale de facture de services.
+{% endhint %}
+
 | Propriété | Valeur |
 |-----------|--------|
 | **Pays / Région** | Brésil |
@@ -24,7 +30,7 @@ La NFS-e (Nota Fiscal de Serviços Eletrônica) est la facture électronique br�
 
 ## Aperçu par défaut
 
-<figure><img src="brazil-nfse-preview.png" alt="Aperçu Brazil NFS-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NFS-E</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfse-preview.png" alt="Aperçu Brazil NFS-e dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour un document BRAZIL NFS-E</p></figcaption></figure>
 
 ## Correspondance des champs
 

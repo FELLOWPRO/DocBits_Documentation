@@ -1,6 +1,6 @@
-# Single Document Status Condition
+# Condition de statut de document unique
 
-<figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_v2-fr-fr.png" alt="Condition de statut de document unique, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Objectif**
 
@@ -8,14 +8,14 @@ Cette carte de workflow est conçue pour gérer les opérations sur les document
 
 **Composants de la carte**
 
-1. **Operator**
-   * **Description** : spécifie la méthode d'évaluation du statut du document par rapport à la condition sélectionnée.
-   * **Options** :
+1. **Opérateur**
+   * **Descriptif** : spécifie la méthode d'évaluation du statut du document par rapport à la condition sélectionnée.
+   * **Possibilités** :
      * **is** : déclenche l'opération si le statut actuel du document correspond au statut sélectionné.
-     * **is not** : déclenche l'opération si le statut actuel du document ne correspond pas au statut sélectionné.
-2. **Status**
-   * **Description** : permet de sélectionner un seul statut de document pour définir la condition.
-   * **Exemples de statuts** : « Error », « Export Error », « Ready in Validation », « Ready in Review », « Pending Approval », « Pending Second Approval ».
+     * **n'est pas** : déclenche l'opération si le statut actuel du document ne correspond pas au statut sélectionné.
+2. **Statut**
+   * **Descriptif** : permet de sélectionner un seul statut de document pour définir la condition.
+   * **Exemples de statuts** : « Erreur », « Erreur d'exportation », « Prêt en validation », « Prêt en révision », « En attente d'approbation », « En attente de deuxième approbation ».
    * **Détail** : les utilisateurs choisissent un statut dans une liste déroulante ou un ensemble de boutons radio. Ce statut sert ensuite de critère pour le fonctionnement de la carte.
 
 **Fonctionnalité**
@@ -37,3 +37,13 @@ Cette carte de workflow est conçue pour gérer les opérations sur les document
 #### Conclusion
 
 La carte de workflow « Single Document Status Condition » simplifie la gestion des documents en se concentrant sur des conditions de statut individuelles. Cette spécification est utile lorsqu'un contrôle précis des flux de documents est nécessaire, en particulier dans des environnements aux critères de traitement stricts. Documenter clairement cette version de la carte garantira que les utilisateurs comprennent pleinement son application et peuvent l'intégrer efficacement dans leurs opérations quotidiennes, améliorant à la fois la conformité et l'efficacité du traitement des documents.
+
+<!-- workflow-card-complete-example-20261021 condition_doc_status_is_isnot -->
+
+### Exemple de statut unique
+
+**Configuration :** Choisissez l'opérateur `is` et l'état `Pending Approval`. Ajoutez une action de révision suivante appropriée pour ce statut.
+
+**Résultat attendu et contre-exemple :** La condition est vraie pour un document actuellement `Pending Approval` ; c'est faux pour un document de statut `Ready in Validation`. Utilisez le statut actuellement sélectionné dans votre version. Changer un statut n’exporte pas en soi le document.
+
+Il s'agit d'une configuration de test illustrative et du résultat attendu ; il n'a pas été exécuté. Utilisez les données et les destinataires configurés dans votre organisation de test.

@@ -1,152 +1,53 @@
-# List Of Values
+# Listes de valeurs
 
-## Overview
+## Tutoriel vidéo : données de base et listes de valeurs
 
-The **List of Values** feature allows you to create and manage predefined sets of values. This is particularly useful for configuring dropdown menus in the [**Fields**](../global-settings/document-types/fields/) section, which can later be used in **Field Validation**.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/fr.mp4" %}
+Sources de données de base, listes de valeurs et paramètres des données de base dans DocBits
+{% endembed %}
 
-These lists can be customized for different sub-organizations and support multiple languages, providing flexibility across **DocBits**.
+La vidéo présente les sources de données de base, les listes de valeurs et les paramètres des données de base d'un type de document.
 
-## How to Access?
+Les listes de valeurs proposent des options prédéfinies pour les champs des documents. Un champ peut utiliser une liste pendant la validation. Les libellés peuvent être traduits ; la valeur technique reste identique dans toutes les langues.
 
-You can access the **List of Values** by navigating to **Settings → Document Processing → List of Values**.
+## Ouvrir les listes
 
-<figure><img src="../../../.gitbook/assets/settings_list_of_values.png" alt=""><figcaption></figcaption></figure>
+Dans les paramètres, ouvrez la consultation des données de base et sélectionnez les listes de valeurs. Le champ **Rechercher des listes**, à gauche, permet de trouver une liste. Sélectionnez son nom pour ouvrir ses entrées à droite. Le dossier avec une étoile identifie une liste système ; le nombre à côté du nom indique le nombre d’entrées chargées.
 
-## How to Add or Delete a List
+<figure><img src="../../../.gitbook/assets/s150-list_of_values_1-fr.png" alt="Vue des listes de valeurs avec les noms configurés masqués."><figcaption><p>Vue des listes de valeurs avec les noms configurés masqués.</p></figcaption></figure>
 
-### Create a New List of Values
+<figure><img src="../../../.gitbook/assets/dbdc-36-selected-system-list-fr-20261031.png" alt="La liste système sélectionnée ouvre la table des entrées. A-Z et Z-A trient les valeurs ; Ajouter une ligne ouvre le formulaire. Les valeurs et noms personnalisés sont masqués ; les noms des listes système, comme ISO Currency, sont des données existantes."><figcaption><p>La liste système sélectionnée ouvre la table des entrées. A-Z et Z-A trient les valeurs ; Ajouter une ligne ouvre le formulaire. Les valeurs et noms personnalisés sont masqués ; les noms des listes système, comme ISO Currency, sont des données existantes.</p></figcaption></figure>
 
-1.  Click **New** in the upper-right corner of the screen.
+## Créer une liste
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
-2. Enter a **Name** for your list.
-3. _(Optional)_ Select a **Sub-Organization** for which the list should be active.
-4.  Click **Save** to create the list.
+1. Sélectionnez **Nouveau** au-dessus des noms des listes.
+2. Saisissez le **Nom** et sélectionnez, si nécessaire, les **Sous-organisations** pour limiter le périmètre de la liste.
+3. **Enregistrer** crée la liste. Le **X** ferme la boîte de dialogue sans créer de liste.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-36-new-list-fr-20261031.png" alt="Nouveau ouvre la boîte de dialogue vide Créer une nouvelle liste avec Nom, Sous-organisations, X et Enregistrer. Cette vue ne montre pas une liste enregistrée."><figcaption><p>Nouveau ouvre la boîte de dialogue vide Créer une nouvelle liste avec Nom, Sous-organisations, X et Enregistrer. Cette vue ne montre pas une liste enregistrée.</p></figcaption></figure>
 
-### How to Delete a List
+Pour supprimer une liste créée par votre organisation, utilisez l’option de suppression du menu à trois points à côté de son nom et confirmez uniquement la liste prévue. Les listes système ne proposent pas ce menu de suppression et ne peuvent pas être supprimées.
 
-To delete a list, click the trash can icon next to the corresponding list.
+## Ajouter et modifier les entrées
 
-<figure><img src="../../../.gitbook/assets/list_of_values_13.png" alt=""><figcaption></figcaption></figure>
+1. Sélectionnez la liste à gauche, puis **Ajouter une ligne** au-dessus de sa table.
+2. Saisissez la **Valeur** stockée et, si nécessaire, sa **Sous-organisation**.
+3. Ajoutez les **Synonymes** souhaités. Validez chacun avec **Entrée** pour qu’il soit ajouté au champ.
+4. Sous **Traductions**, sélectionnez une **Langue** et saisissez une **Étiquette** non vide. Une nouvelle entrée nécessite au moins une traduction complète.
+5. **Enregistrer** crée l’entrée. **Annuler** ou le **X** ferme le formulaire sans l’enregistrer.
 
-<mark style="color:red;">**Note**</mark>: The list will be deleted immediately. Lists marked with the [**Standard**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
+<figure><img src="../../../.gitbook/assets/dbdc-36-add-row-fr-20261031.png" alt="Ajouter une ligne ouvre Créer des valeurs sous la table : Valeur, Sous-organisation, Synonymes, Langue, Étiquette et Ajouter une traduction. Enregistrer crée l’entrée ; Annuler abandonne le brouillon non enregistré."><figcaption><p>Ajouter une ligne ouvre Créer des valeurs sous la table : Valeur, Sous-organisation, Synonymes, Langue, Étiquette et Ajouter une traduction. Enregistrer crée l’entrée ; Annuler abandonne le brouillon non enregistré.</p></figcaption></figure>
 
-## How to Add, Edit, or Remove Values from an Existing List&#x20;
+Pour modifier une entrée, sélectionnez sa ligne ou l’option de modification dans **Actions**. Les champs protégés restent en lecture seule ; la valeur stockée peut également être verrouillée lorsqu’il existe déjà des traductions. **Annuler** abandonne les modifications non enregistrées.
 
-You can manage values in an existing **List of Values** using one of the following methods:
+L’option de duplication du menu de la ligne crée une autre entrée. Pour plusieurs entrées, cochez leurs cases et utilisez le bouton de copie au-dessus de la table. La suppression est disponible pour les entrées de votre organisation et retire l’entrée sélectionnée ; les entrées système ne proposent pas cette action. Une liste système peut contenir des entrées protégées et des entrées de votre organisation.
 
-* [**Manually add values**](list-of-values.md#manually-add-values) – Enter values individually through the interface.
-* [**Import values from a CSV file**](list-of-values.md#import-values-from-a-csv-file) – Upload a CSV file to add multiple values at once.
+## Importer un fichier CSV
 
-### Manually Add Values
+Cette interface ne propose pas l’ancien import CSV depuis le menu **Actions**. Les anciennes étapes de chargement CSV ne s’appliquent pas à cet écran ; utilisez **Ajouter une ligne** pour y saisir des valeurs.
 
-1.  Click on the list you want to modify.
+## Ajouter des traductions
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_3.png" alt=""><figcaption></figcaption></figure>
-2.  Click on **Actions.**
+Dans le formulaire de l’entrée, sélectionnez **Langue** et saisissez l’**Étiquette**. Utilisez **Ajouter une traduction** pour ajouter une autre langue et son étiquette. Complétez ou retirez les lignes de traduction supplémentaires laissées vides avant d’enregistrer. Lorsqu’une ligne de traduction peut être retirée, sa corbeille la retire d’abord du formulaire ; enregistrez pour appliquer la modification.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_4.png" alt=""><figcaption></figcaption></figure>
-3.  Click on **Add Row.**
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_5.png" alt=""><figcaption></figcaption></figure>
-
-Now you can specify multiple properties for each entry:
-
-<figure><img src="../../../.gitbook/assets/list_of_values_6.png" alt=""><figcaption></figcaption></figure>
-
-**Value**: This is how the item will be stored internally within **DocBits**. It remains the same across all languages and also serves as the default display text during field validation if no label is specified for the selected language.
-
-**Label**: This is the text displayed on the validation screen, based on the selected language. If no label is available for the active language in DocBits, the system will default to displaying the **Value**.
-
-**Language**: Specifies the language in which the label will be displayed.\
-A more detailed explanation can be found [here](list-of-values.md#add-translations-to-your-values).
-
-**Sub-Organizations**: Specifies which **sub-organization** the row should be active for. If left blank, the row will be available for all organizations.
-
-**Synonyms**: Here you can specify additional values that help train your document.\
-For example, if **EUR** is your primary **value**, you can add EURO and € as **synonyms**. When the document is trained using any of these **synonyms**, **DocBits** will automatically recognize and select EUR as the corresponding value from your list.\
-<mark style="color:red;">**Note**</mark>: Each synonym must be confirmed by pressing **Enter** to add it to the list.
-
-4.  After entering all desired properties, click the **Save** button to add the row.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_11.png" alt=""><figcaption></figcaption></figure>
-
-### Import Values from a CSV File
-
-To add multiple values at once via CSV import:
-
-1.  Click on the list you want to update.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_3.png" alt=""><figcaption></figcaption></figure>
-2.  Click **Actions**.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_4.png" alt=""><figcaption></figcaption></figure>
-3.  Click on **Upload CSV**.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_7.png" alt=""><figcaption></figcaption></figure>
-4. Click **File** to browse and select the CSV file you want to upload.
-5. Choose the appropriate **Delimiter** used in the CSV file (`;` or `,`).
-6.  Click **Upload** to import the values.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_8.png" alt=""><figcaption></figcaption></figure>
-
-### Edit Existing Values
-
-1. Locate the row you want to edit.
-2. Click the three dots in the **Actions** column.
-3.  Select **Edit** from the dropdown menu.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_10.png" alt=""><figcaption></figcaption></figure>
-4. Make the required changes.
-5.  Click **Save** to apply your changes.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_11.png" alt=""><figcaption></figcaption></figure>
-
-### Delete Values
-
-1. Locate the row you want to delete.
-2. Click the three dots in the **Actions** column.
-3.  Select **Delete** from the dropdown menu.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_12.png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Note**</mark>: The row will be deleted immediately. Rows marked with the [**Default**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
-
-## Add Translations to Your Values
-
-You can add as many translations as there are supported languages in **DocBits**.
-
-To add a translation:
-
-1.  Click the plus (+) icon.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_14.png" alt=""><figcaption></figcaption></figure>
-2.  Select a language from the dropdown menu.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_15.png" alt=""><figcaption></figcaption></figure>
-3.  Enter the desired translation in the **Label** field.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_16.png" alt=""><figcaption></figcaption></figure>
-4.  To add another translation, click the plus (+) icon again.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_17.png" alt=""><figcaption></figcaption></figure>
-5.  To remove a translation, click the trash can icon.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_18.png" alt=""><figcaption></figcaption></figure>
-6.  When finished, click the **Save** button to save your translations.
-
-    <figure><img src="../../../.gitbook/assets/list_of_values_19.png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Note**</mark>: If no **Label** is available for the active language, DocBits will default to displaying the **Value**.
-
-## System-Defined Lists and Rows
-
-Some lists are pre-created by the system and are marked with the **Standard** tag. These lists cannot be deleted, but you can add new rows to them and remove those newly added rows if necessary.
-
-<figure><img src="../../../.gitbook/assets/list_of_values_9.png" alt=""><figcaption></figcaption></figure>
-
-Within these standard lists, certain rows are marked with the **Default** tag—these are system-defined entries. You can add new **labels** in different languages, but these default rows cannot be deleted.
-
-<figure><img src="../../../.gitbook/assets/list_of_values_20.png" alt=""><figcaption></figcaption></figure>
+Le texte affiché peut varier selon la langue, mais la valeur technique reste identique. Sans étiquette pour la langue active, la valeur technique est affichée. Les entrées système et les traductions héritées peuvent comporter des champs protégés ; modifiez uniquement les données de votre organisation dont les champs sont éditables.

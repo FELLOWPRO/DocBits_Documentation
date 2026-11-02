@@ -1,59 +1,63 @@
-# And : choisir une carte de condition
+# Et
 
-Utilisez une carte **And** (« Et ») pour décider si un workflow doit se poursuivre après son déclencheur **When** (« Quand »). Ajoutez les contrôles nécessaires avant l'action **Then** (« Alors »). Chaque carte affiche des champs à remplir, comme **Opérateur**, **Nom du champ** ou **Valeur** ; les captures d'écran montrent les modèles de cartes disponibles, et non des règles complétées.
+Utilisez une carte **Et** pour décider si un flux de travail doit continuer après son déclencheur **Quand**. Ajoutez les vérifications dont vous avez besoin avant l'action **Alors**. Chaque carte affiche des champs à remplir, tels que **Opérateur**, **Nom du champ** ou **Valeur** ; les captures d'écran montrent les modèles de cartes disponibles, pas les règles complétées.
 
-Dans le **Constructeur De Flux De Travail**, sélectionnez **Ajouter une carte** sous **Et....**. Choisissez une catégorie à gauche, ou saisissez le nom d'une carte dans **Carte de recherche**. Sélectionnez l'aperçu d'une carte pour l'ajouter au workflow. Vous pouvez faire défiler la liste des aperçus pour voir davantage de cartes. Utilisez **×** pour fermer le sélecteur sans choisir une autre carte. Après avoir configuré les cartes, enregistrez le workflow avec **Enregistrer le flux de travail**. Voir [Workflow](../README.md) pour les étapes environnantes **Quand**, **Et** et **Alors**.
+Dans **Générateur de flux de travail**, sélectionnez **Ajouter une carte** sous **Et...**. Choisissez une catégorie sur la gauche ou saisissez un nom de carte dans **Rechercher une carte**. Sélectionnez un aperçu de la carte pour l'ajouter au flux de travail. Vous pouvez faire défiler la liste d'aperçu pour voir plus de cartes. Utilisez **×** pour fermer le sélecteur sans choisir une autre carte. Après avoir configuré les cartes, enregistrez le flux de travail. Voir [Workflow](..) pour les étapes environnantes **Quand**, **Et** et **Alors**.
 
-## Comparaison des bons de commande
+## Comparer avec le bon de commande
 
-Utilisez ces cartes pour comparer les données d'une commande ou d'une facture avec un bon de commande, comme le prix unitaire, la date de livraison promise, les frais ou la quantité. Choisissez les champs, l'opérateur et toute tolérance demandés par la carte sélectionnée. Voir [Comparaison des bons de commande](compare-with-purchase-order/README.md) pour les différentes cartes.
+Utilisez ces cartes pour comparer les données de commande ou de facture avec un bon de commande, telles que le prix unitaire, la date de livraison promise, les frais ou la quantité. Choisissez les champs, l'opérateur et toute tolérance demandée par la carte sélectionnée. Voir [Comparer avec le bon de commande](compare-with-purchase-order) pour les cartes individuelles.
 
-<figure><img src="../../../.gitbook/assets/and-category-po-comparison-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Comparaison des bons de commande ouverte ; les aperçus visibles comparent le prix unitaire, la date de livraison, les frais et la quantité."><figcaption><p>La catégorie Comparaison des bons de commande dans la Sandbox en français.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u035-fr.png" alt="Conditions de comparaison avec les commandes."><figcaption><p>Conditions de comparaison avec les commandes.</p></figcaption></figure>
 
-## Champ du document
+## Champ de document
 
-Choisissez cette catégorie pour vérifier une case à cocher ou le statut d'un champ, comparer un champ avec une valeur ou comparer deux champs. Remplissez les espaces réservés **Nom du champ** et **Opérateur** sur la carte choisie. Certaines comparaisons demandent aussi une tolérance. Voir [Champ du document](document-field/README.md).
+Choisissez cette catégorie pour cocher une case ou l'état d'un champ, comparer un champ avec une valeur ou comparer deux champs. Remplissez les espaces réservés **Nom du champ** et **Opérateur** sur la carte choisie. Certaines comparaisons demandent également une tolérance. Voir [Champ du document](document-field).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-field-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Champ du document ouverte ; les aperçus visibles vérifient une case à cocher, le statut d'un champ, les valeurs de champs et la comparaison de deux champs."><figcaption><p>Les contrôles Champ du document utilisent les valeurs du document en cours.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u036-fr.png" alt="Conditions sur les champs du document."><figcaption><p>Conditions sur les champs du document.</p></figcaption></figure>
 
-## Date & Heure
+## Date et heure
 
-Utilisez **Date & Heure** pour comparer une date ou une heure avec une plage, ou pour comparer **Aujourd'hui** avec une date choisie. Sélectionnez l'**Opérateur** et les valeurs de date dans la carte. Voir [Date & Heure](date-and-time/README.md).
+Utilisez **Date et heure** pour comparer une date ou une heure avec une plage, ou comparez **Aujourd'hui** avec une date choisie. Sélectionnez les valeurs **Opérateur** et date dans la carte. Voir [Date et heure](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/and-category-date-time-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Date &amp; Heure ouverte ; deux aperçus comparent une date ou une heure avec une plage et comparent Aujourd'hui avec une date."><figcaption><p>Date & Heure propose un contrôle de plage et un contrôle par rapport à aujourd'hui.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u037-fr.png" alt="Conditions de date et d’heure."><figcaption><p>Conditions de date et d’heure.</p></figcaption></figure>
 
 ## Document
 
-Utilisez ces cartes lorsqu'un workflow doit dépendre du **type de document** ou de la **sous-organisation**. Choisissez le type ou l'organisation nommé dans la carte. Voir [Document](document/README.md).
+Utilisez ces cartes lorsqu'un flux de travail doit dépendre du **type de document** ou de la **sous-organisation**. Choisissez le type ou l'organisation nommée dans la carte. Voir [Document](document).
 
-<figure><img src="../../../.gitbook/assets/and-category-document-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Document ouverte ; les aperçus vérifient le type de document et l'appartenance à une sous-organisation."><figcaption><p>Les conditions Document vérifient le type ou la sous-organisation.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u038-fr.png" alt="Conditions sur les documents."><figcaption><p>Conditions sur les documents.</p></figcaption></figure>
 
 ## Logique
 
-Cette catégorie regroupe des contrôles utilisant une table de décision, une réponse HTTPS, la disponibilité d'un module, un prix d'article cité, une valeur de chance ou deux valeurs. Ouvrez la carte concernée et remplissez ses espaces réservés nommés ; par exemple, la carte HTTPS demande une URL, une méthode et un code de statut accepté. Voir [Logique](logic/README.md).
+Cette catégorie comprend les vérifications utilisant une table de décision, une réponse HTTPS, la disponibilité du module, le prix d'un article proposé, une valeur aléatoire ou deux valeurs. Ouvrez la carte spécifique et remplissez ses espaces réservés nommés ; par exemple, la carte HTTPS demande une URL, une méthode et un code de statut accepté. Voir [Logique](logic).
 
-<figure><img src="../../../.gitbook/assets/and-category-logic-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Logique ouverte ; les aperçus incluent une table de décision, une requête HTTPS, un module actif, un prix cité, une chance et une comparaison de valeurs."><figcaption><p>Logique propose plusieurs types de conditions différents ; choisissez celle qui correspond à votre règle.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u039-fr.png" alt="Conditions logiques."><figcaption><p>Conditions logiques.</p></figcaption></figure>
 
 ## Statut
 
-Utilisez **Statut** pour vérifier si un document possède un statut choisi ou si son statut fait partie d'un ensemble sélectionné. Choisissez l'**Opérateur** et le **Statut** dans la carte. Voir [Statut](status/README.md).
+Utilisez **Statut** pour vérifier si un document a un statut choisi ou si son statut est dans un ensemble sélectionné. Choisissez le **Opérateur** et le **Statut** dans la carte. Voir [Statut](status).
 
-<figure><img src="../../../.gitbook/assets/and-category-status-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Statut ouverte ; deux aperçus comparent le statut du document avec un statut ou un ensemble de statuts."><figcaption><p>Les conditions Statut vérifient l'état actuel du document.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u040-fr.png" alt="Conditions de statut."><figcaption><p>Conditions de statut.</p></figcaption></figure>
 
 ## Tableau
 
-Ces cartes examinent les lignes de tableau d'un document. Les options visibles incluent des vérifications de date, des motifs de texte, la durée de conservation et des comparaisons entre colonnes. Sélectionnez le **Nom de la table** et le **Nom de la colonne** avant de choisir un opérateur ou un motif. Voir [Tableau](table/README.md).
+Ces cartes examinent les lignes du tableau des documents. Les options visibles incluent les vérifications de date, les modèles de texte, la durée de conservation et les comparaisons entre les colonnes. Sélectionnez le **Nom de la table** et le **Nom de la colonne** avant de choisir un opérateur ou un modèle. Voir [Tableau](table).
 
-<figure><img src="../../../.gitbook/assets/and-category-table-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Tableau ouverte ; les aperçus visibles incluent la date, un motif d'expression rationnelle, la durée de conservation et des comparaisons de colonnes de tableau."><figcaption><p>Les conditions Tableau utilisent les lignes et les colonnes d'un tableau de document.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u041-fr.png" alt="Conditions sur les tableaux de données."><figcaption><p>Conditions sur les tableaux de données.</p></figcaption></figure>
 
 ## Comparer avec le prix du devis
 
-Utilisez ces cartes pour comparer un article avec les données d'un prix cité. Les choix visibles couvrent l'ID d'article, le type de fournisseur, l'ID d'article du fournisseur, le prix unitaire et l'unité de mesure. L'**Opérateur** et les espaces réservés de données dépendent de la carte que vous sélectionnez.
+Utilisez ces cartes pour comparer un article avec les données de prix indiquées. Les choix visibles couvrent l'ID d'article, le type de fournisseur, l'ID d'article du fournisseur, le prix unitaire et l'unité de mesure. Le **Opérateur** et les espaces réservés aux données dépendent de la carte que vous sélectionnez.
 
-<figure><img src="../../../.gitbook/assets/and-category-quote-price-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Comparer avec le prix du devis ouverte ; cinq aperçus couvrent l'ID d'article, le type de fournisseur, l'ID d'article du fournisseur, le prix unitaire et l'unité de mesure."><figcaption><p>Comparer avec le prix du devis est une catégorie distincte dans le sélecteur de cartes actuel.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u042-fr.png" alt="Conditions sur les prix des devis."><figcaption><p>Conditions sur les prix des devis.</p></figcaption></figure>
 
-## Attribué à
+## Responsable
 
-Utilisez **Attribué à** lorsque la condition dépend de l'utilisateur ou du groupe attribué. Choisissez de comparer avec un seul utilisateur ou groupe, ou avec un ensemble sélectionné. Voir [Attribué à](assignee/README.md).
+Utilisez **Responsable** lorsque la condition dépend de l'utilisateur ou du groupe affecté. Choisissez si vous souhaitez comparer avec un utilisateur ou un groupe ou avec un ensemble sélectionné. Voir [Responsable](assignee).
 
-<figure><img src="../../../.gitbook/assets/and-category-assignee-fr-20261008.png" alt="Sélecteur de cartes And en français avec la catégorie Attribué à ouverte ; les aperçus comparent l'utilisateur ou le groupe attribué avec un ou plusieurs choix."><figcaption><p>Les conditions Attribué à vérifient l'utilisateur ou le groupe attribué au document.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u043-fr.png" alt="Conditions sur les affectations."><figcaption><p>Conditions sur les affectations.</p></figcaption></figure>
+
+[Cartes de comparaison de devis détaillées et comportement Any/All](../cards-overview/quote-comparison-guide.md).
+
+Certains libellés du produit restent en anglais ou comportent des traductions inexactes. Les tableaux désignent des tableaux de données ; les valeurs retournées ne sont pas des rendements financiers. Les identifiants techniques restent inchangés.

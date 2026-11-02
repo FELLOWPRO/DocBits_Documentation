@@ -1,36 +1,21 @@
-# Assign document to recipient
+# Attribuer un document au destinataire
 
-<figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
+Cette carte affecte le **document** à un destinataire résolu à partir de la source configurée. Dans la version 2 illustrée, les champs sont **Bénéficiaire** et **Utilisateur**. Le second champ définit le repli à utiliser si le destinataire principal ne peut pas être résolu.
 
-## **Objectif :**
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-1b1b68dfdcad-fr.png" alt="Carte d’affectation, version 2 : Bénéficiaire désigne la source du destinataire et Utilisateur le repli à configurer. Aucun utilisateur n’a été sélectionné dans cette illustration."><figcaption><p>Carte d’affectation, version 2 : Bénéficiaire désigne la source du destinataire et Utilisateur le repli à configurer. Aucun utilisateur n’a été sélectionné dans cette illustration.</p></figcaption></figure>
 
-La carte de workflow **« Assign Document to Disponent / Purchaser »** assigne un document soit à un **Disponent**, soit à un **Purchaser**. Si aucun utilisateur valide n'est trouvé, un utilisateur de repli est sélectionné pour garantir que le document est toujours assigné à quelqu'un.
+## Configuration
 
-## **Composants de la carte :**
+1. Définissez les conditions **Quand** et **Et** du workflow.
+2. Dans **Bénéficiaire**, choisissez la source du destinataire proposée par votre configuration.
+3. Dans **Utilisateur**, sélectionnez explicitement un utilisateur de repli valide et autorisé.
 
-1. **Disponent / Purchaser**
-   * **Description :** spécifie si le document sera assigné à un Disponent ou à un Purchaser.
-   * **Options :**
-     * **Disponent :** assigne le document au Disponent.
-     * **Purchaser :** assigne le document au Purchaser.
-2. **Fallback User**
-   * **Description :** spécifie un utilisateur de repli au cas où le document ne pourrait pas être assigné au Disponent ou au Purchaser sélectionné.
-   * **Détail :** la liste déroulante des utilisateurs disponibles vous permet de choisir un utilisateur de repli pour garantir que le document est assigné même si l'utilisateur principal ne peut pas être déterminé.
+Les anciennes désignations Disponent et Purchaser ne décrivent pas les champs de cette version. La carte ne sélectionne pas automatiquement un administrateur universel ; une valeur vide, un utilisateur inexistant ou des droits insuffisants doivent être traités et testés.
 
-## **Fonctionnalité :**
+<!-- workflow-card-practical-example-20261021 -->
 
-* **Évaluation de la condition :**\
-  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
-* **Attribution du document :**\
-  La carte assigne le document soit au **Disponent**, soit au **Purchaser** selon la sélection. Si la personne sélectionnée n'est pas disponible ou n'est pas valide, le document est assigné à l'utilisateur de repli.
+## Exemple pratique
 
-## **Mise en place et configuration :**
+Configurez une source de destinataire et un utilisateur de test autorisé comme repli. Avec un destinataire résoluble, vérifiez l’affectation du document à celui-ci. Dans un second cas, rendez la source non résoluble et vérifiez l’affectation au repli configuré. Contrôlez aussi le comportement lorsque le repli est absent ou invalide.
 
-* **Sélectionner Disponent / Purchaser :**\
-  Choisissez d'assigner le document au **Disponent** ou au **Purchaser**.
-* **Sélectionner l'utilisateur de repli :**\
-  Choisissez un utilisateur de repli dans la liste déroulante qui recevra le document si l'attribution principale n'est pas possible.
-
-## **Conclusion :**
-
-La carte de workflow **« Assign Document to Disponent / Purchaser »** garantit que le document est toujours assigné, soit au Disponent/Purchaser sélectionné, soit, si nécessaire, à l'utilisateur de repli. Cela minimise les interruptions du workflow et garantit que le traitement des documents se poursuit en toute fluidité.
+Il s’agit d’un exemple de configuration et de résultats attendus. Aucun de ces cas n’a été exécuté pour cette illustration. L’action affecte un document ; elle ne prouve ni la création d’une tâche ni l’envoi d’une notification.

@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.317
+Facturae possède des entrées génériques,
+3.2, 3.2.1 et 3.2.2. Vérifiez l’espace de
+
+formats_02
+00:00:09.317 --> 00:00:14.879
+noms et la version du schéma. L’extraction
+d’un fichier XML signé ne vérifie pas, à
+
+formats_03
+00:00:14.879 --> 00:00:18.967
+elle seule, sa signature ni son
+acceptation par FACe.
+
+workflow_01
+00:00:19.717 --> 00:00:25.487
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:25.487 --> 00:00:31.397
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:31.397 --> 00:00:32.467
+l’active pas.
+
+accept_01
+00:00:33.217 --> 00:00:38.198
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:38.198 --> 00:00:43.875
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:43.875 --> 00:00:47.067
+la validation fiscale ni la transmission
+réseau.
+

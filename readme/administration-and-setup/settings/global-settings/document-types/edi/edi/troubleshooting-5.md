@@ -35,3 +35,7 @@ hidden: true
 * Utilisez des ressources telles que des forums, des formations ou le support des fournisseurs EDI pour obtenir une assistance supplémentaire pour le dépannage.
 
 En appliquant systématiquement ces conseils, vous pouvez dépanner efficacement les transactions EDI et assurer la fiabilité de vos communications commerciales électroniques.
+
+## Règles effectivement utilisées et activation
+
+Si un avoir électronique apparaît comme Invoice, suivez le [guide de diagnostic de la classification](../credit-note-recognized-as-invoice.md). Il couvre la source personnalisée ou par défaut effectivement utilisée, les codes de type, Extraction Paths et l’activation en toute sécurité.

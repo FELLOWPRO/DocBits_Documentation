@@ -8,7 +8,7 @@ Le rôle d'un administrateur est essentiel pour gérer les systèmes informatiqu
 
 Au-delà de ces responsabilités, les administrateurs sont également chargés de gérer des paramètres sensibles et de s'assurer que les systèmes respectent les exigences de conformité et les meilleures pratiques en matière de sécurité de l'information. Cela comprend la gestion des données sensibles, la configuration des contrôles d'accès et des permissions, ainsi que la surveillance et l'analyse des journaux système afin d'identifier et de traiter les risques de sécurité potentiels.
 
-## Admin vs System Admin
+## Administrateur et administrateur système
 
 DocBits propose deux rôles d'administrateur : **Admin** et **System Admin**. Leurs noms se ressemblent, mais ils remplissent des fonctions différentes. Voici l'essentiel, en quelques mots.
 

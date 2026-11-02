@@ -1,8 +1,8 @@
-# PO Matching
+# Conciliación con órdenes de compra
 
-When it comes to testing your PO Matching configuration, you will need to create a Purchase order in LN/M3 in order to check whether INFOR is synced with DocBits.&#x20;
+Cuando se trata de probar su configuración de conciliación con órdenes de compra, deberá crear una orden de compra en LN/M3 para verificar si INFOR está sincronizado con DocBits.
 
-## Creating a Purchase Order in INFOR
+## Crear una orden de compra en INFOR
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
@@ -11,14 +11,14 @@ When it comes to testing your PO Matching configuration, you will need to create
 * LN: https://docs.infor.com/ln/10.4/en-us/lnolh/docs/ln\_10.4\_procpoug\_\_en-us.pdf&#x20;
 * M3: https://docs.infor.com/m3udi/16.x/en-us/m3beud/default.html?helpcontent=ois610.html&#x20;
 
-Once you have created your purchase order, go to Settings → Master Data Lookup and search for the purchase order number of the PO you just created as it should now appear in your purchase order master data in DocBits.
+Una vez que haya creado su orden de compra, vaya a Configuración → Búsqueda de datos maestros y busque el número de orden de compra del PO que acaba de crear, como debería aparecer ahora en los datos maestros de su orden de compra en DocBits.
 
 ![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
-You should see your unique PO number here, this means that DocBits and INFOR are correctly synced.
+Deberías ver tu número PO único aquí, esto significa que DocBits y INFOR están sincronizados correctamente.
 
-Now upload your invoice that matches the quantity and unit prices of the purchase order you created. Validate the document and select PO Matching on the validation screen.
+Ahora cargue su factura que coincida con la cantidad y los precios unitarios de la orden de compra que creó. Valide el documento y seleccione Conciliación con la orden de compra en la pantalla de validación.
 
-The PO and invoice line items should automatically match, then simply select the export option and check whether or not the document gets exported without any errors. If you do encounter an export error, create a ticket for the DocBits support team to assist you. If you are unsure of how to create a ticket within DocBits, please consult our DocBits Overview documentation for assistance.
+Las líneas de pedido PO y la factura deben coincidir automáticamente, luego simplemente seleccione la opción de exportación y verifique si el documento se exporta sin errores. Si encuentra un error de exportación, cree un ticket para que el equipo de soporte de DocBits lo ayude. Si no está seguro de cómo crear un ticket dentro de DocBits, consulte nuestra documentación de descripción general de DocBits para obtener ayuda.
 
 \

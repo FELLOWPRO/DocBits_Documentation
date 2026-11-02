@@ -1,59 +1,61 @@
-# Panel de proveedores
+# Portal de proveedores
 
-## Descripción general
+El **portal de proveedores** permite que un administrador dé a los proveedores de su empresa acceso a **DocBits**. El administrador activa el portal y configura qué proveedores pueden utilizarlo y qué información pueden consultar.
 
-Esta página explica cómo activar y usar el **Panel de proveedores**, así como dónde encontrar todos los ajustes relevantes. El Panel de proveedores te permite invitar a proveedores a **DocBits**. Una vez que se concede el acceso, los proveedores pueden iniciar sesión para ver el estado de sus **Órdenes de compra** y **Facturas** directamente dentro de **DocBits**.
+Un proveedor invitado se registra e inicia sesión con su propia cuenta. Allí puede consultar la información que se le haya habilitado, por ejemplo el estado de sus pedidos de compra y facturas. Las funciones disponibles dependen de la configuración de la organización.
 
-## Cómo activar el Panel de proveedores
+## Vídeo: preparar el portal de proveedores y el acceso
 
-1.  Ve a **Ajustes → Procesamiento de documentos → Módulo**.
+Un administrador explica la opción del portal y la selección del plan, la preparación de una invitación y el inicio del registro. La activación, el envío, el registro y la aprobación se explican como pasos separados.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  En la sección **Envío y proveedor**, habilita la opción **Panel de proveedores**.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.mp4" %}
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+[Abrir el vídeo con subtítulos en español y selección de capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/es.html)
 
-## Configuración del proveedor
+## Admin: activar el portal
 
-Una vez que la función **Panel de proveedores** está habilitada, aparecerá una nueva sección de **Configuración del proveedor** en la parte inferior del menú **Ajustes**.
+1. En Configuración, abra los módulos y seleccione **Integración de documentos**.
+2. Despliegue **Envío y proveedor** y active **Portal de proveedores**.
+3. Si aparece un diálogo de activación, revise el plan mostrado y confirme la activación que necesita.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-module-es-20261031.png" alt="Vista real de Dev en español, Envío y proveedor: Portal de proveedores ya está activado en esta organización de prueba. El interruptor no se cambió para la captura."><figcaption><p>Vista real de Dev en español, Envío y proveedor: Portal de proveedores ya está activado en esta organización de prueba. El interruptor no se cambió para la captura.</p></figcaption></figure>
 
-[**Configuración general del proveedor**](../../settings/supplier-setting/supplier-general-settings.md): Aquí puedes personalizar el **Panel de proveedores** subiendo el logotipo de tu empresa—que se mostrará en el encabezado de todas las plantillas de correo electrónico—y gestionando documentos legales como los Términos de uso y la Política de privacidad.
+## Admin: configurar el portal
 
-[**Plantillas de correo electrónico**](../../settings/supplier-setting/editing-email-templates.md)**:** Aquí puedes crear y probar las plantillas de correo electrónico de invitación que se enviarán a los proveedores invitados.
+Configure el portal de su organización antes de enviar las primeras invitaciones:
 
-[**Diseño del proveedor**](../../settings/supplier-setting/supplier-layout.md)**:** Aquí puedes crear y gestionar los diseños que definen qué información deben proporcionar los nuevos proveedores durante el proceso de registro.
+- [Configuración general de proveedores](../../settings/supplier-setting/supplier-general-settings.md): Campos adicionales de invitación, estados, logotipo e información de privacidad.
+- [Plantillas de correo](../../settings/supplier-setting/editing-email-templates.md): Contenido y presentación de los mensajes de invitación.
+- [Diseño de proveedor](../../settings/supplier-setting/supplier-layout.md): Campos para el registro de proveedores y la administración interna. Seleccione el tipo de diseño adecuado.
+- [Permisos de proveedores](../../settings/supplier-setting/supplier-permissions.md): Asignación de empleados internos a grupos de proveedores. Estas responsabilidades internas son independientes del acceso propio de cada proveedor al portal.
 
-[**Configuración de exportación**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Aquí puedes definir cómo se mapean y sincronizan los datos entre el **Panel de proveedores** y el sistema **Infor M3** utilizando archivos de mapeo ION e IDM.
+<figure><img src="../../../.gitbook/assets/dbdc-49-general-invitation-fields-es-20261031.png" alt="Vista real de los campos adicionales de invitación: la opción ya está activada y Campos mantiene la selección configurada Assigned User. No se guardó ningún cambio."><figcaption><p>Vista real de los campos adicionales de invitación: la opción ya está activada y Campos mantiene la selección configurada Assigned User. No se guardó ningún cambio.</p></figcaption></figure>
 
-[**Permisos para proveedores**](../../settings/supplier-setting/supplier-permissions.md): Aquí puedes configurar los permisos que tendrán los proveedores dentro del **Panel de proveedores**. También puedes agrupar proveedores, facilitando la gestión del acceso y los ajustes entre múltiples proveedores.
+## Admin: buscar y filtrar proveedores
 
-Una guía detallada de todas las configuraciones del proveedor se puede encontrar [aquí](../../settings/supplier-setting/).
+Abra el **panel de proveedores** para la administración interna. Los totales **Todos los proveedores**, **Pendiente de aprobación** y **Registro pendiente** permiten limitar la lista mostrada. El campo **Búsqueda por nombre, número** sirve para buscar por nombre o número del proveedor.
 
-## Panel de proveedores <a href="#supplier-permissions" id="supplier-permissions"></a>
+Abra el control de filtros dentro del campo de búsqueda para utilizar **Grupos de proveedores**, **Estado** y **Creado el**. **Proveedor por página** controla el tamaño de página; **Borrar filtros** elimina los filtros de búsqueda activos. Estos controles corresponden a la lista de proveedores.
 
-Puedes acceder al **Panel de proveedores** desde el menú de la izquierda, como se muestra a continuación.
+<figure><img src="../../../.gitbook/assets/dbdc-49-filters-es-20261031.png" alt="Menú de filtros con Grupos de proveedores, Estado, Creado el, Proveedor por página y Borrar filtros. La captura muestra los controles disponibles sin acreditar una prueba del resultado del filtrado."><figcaption><p>Menú de filtros con Grupos de proveedores, Estado, Creado el, Proveedor por página y Borrar filtros. La captura muestra los controles disponibles sin acreditar una prueba del resultado del filtrado.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+## Admin: elegir las columnas visibles
 
-Todos los proveedores que has creado se muestran aquí.
+Junto a Actualizar, abra la configuración de columnas. Su descripción emergente es **Establecer columnas de tabla para la organización**. Seleccione campos en **Columnas ocultas** o **Columnas visibles** y muévalos entre las listas con las flechas. Ordene los campos visibles con sus controles de arrastre. **Hecho** aplica la selección para la organización; **Cancelar** cierra el diálogo sin aplicarla. Utilice el desplazamiento horizontal para acceder a las columnas de una tabla más ancha que la pantalla.
 
-## Filtrar por proveedores
+<figure><img src="../../../.gitbook/assets/dbdc-49-columns-es-20261031.png" alt="Configuración de columnas con Columnas ocultas, Columnas visibles, flechas, Cancelar y Hecho. El diálogo se cerró con Cancelar sin modificar la selección."><figcaption><p>Configuración de columnas con Columnas ocultas, Columnas visibles, flechas, Cancelar y Hecho. El diálogo se cerró con Cancelar sin modificar la selección.</p></figcaption></figure>
 
-Puedes buscar proveedores por N**ombre** o N**úmero**, o usar los filtros avanzados para reducir los resultados por:
+## Admin: ver la analítica de vencimientos
 
-* **Grupos de proveedores**
-* **Estado**
-* **Creado el**
+Utilice **Analítica**, el icono de gráfico junto a la configuración de columnas, para mostrar u ocultar el resumen de vencimientos. Las tarjetas muestran **Caducado** y **Expira en** con los periodos **1 Mes**, **2 Mes**, **3 Mes**, **6 Mes** y **1 Año**, tal como se indican en la interfaz. Seleccionar una tarjeta limita la lista al periodo de vencimiento correspondiente. Los contadores se refieren a las fechas de vencimiento de los proveedores.
 
-También puedes especificar cuántos proveedores deben mostrarse por página.
+<figure><img src="../../../.gitbook/assets/dbdc-49-analytics-es-20261031.png" alt="Analítica muestra Caducado y Expira en para uno, dos, tres o seis meses y un año. Las filas están cubiertas y no se seleccionó ninguna tarjeta."><figcaption><p>Analítica muestra Caducado y Expira en para uno, dos, tres o seis meses y un año. Las filas están cubiertas y no se seleccionó ninguna tarjeta.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+## Admin: invitar a proveedores
 
-Además, puedes filtrar rápidamente por los estados **Pendiente de aprobación** o **Registro pendiente** haciendo clic en la categoría correspondiente a la izquierda de la barra de filtros.
+Abra la administración de proveedores. Antes de invitar, revise la empresa, el grupo, la persona de contacto y el correo. Al crear un proveedor, guardar solicita el envío de la invitación de registro; no se limita a conservar un borrador. Para un proveedor existente, utilice la acción de invitación correspondiente. La confirmación de envío no demuestra que el correo se haya entregado ni que el registro haya finalizado.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-es-20261031.png" alt="Panel interno con Todos los proveedores, Pendiente de aprobación, Registro pendiente, búsqueda y barra de herramientas. Las filas de proveedores existentes están cubiertas."><figcaption><p>Panel interno con Todos los proveedores, Pendiente de aprobación, Registro pendiente, búsqueda y barra de herramientas. Las filas de proveedores existentes están cubiertas.</p></figcaption></figure>
 
 ## Detalles del Proveedor (vista interna)
 
@@ -63,71 +65,20 @@ Utilice esta vista para revisar el perfil de un proveedor, corregir o completar 
 
 <figure><img src="../../../.gitbook/assets/supplier-portal-supplier-details-es-20261009.png" alt="Vista interna de Detalles del Proveedor en español en la interfaz de DocBits"><figcaption><p>Vista interna de Detalles del Proveedor con datos de ejemplo (organización de ejemplo Musterfirma GmbH, proveedor de ejemplo Fabrikam Metallbau KG, estado «Pendiente de aprobación»). Los nombres y datos son inventados; no se modificó ningún ajuste.</p></figcaption></figure>
 
-## Estado del proveedor
+<figure><img src="../../../.gitbook/assets/dbdc-49-invitation-es-20261031.png" alt="Formulario vacío Añadir proveedor con Grupo de Proveedores, Nombre del proveedor, datos de contacto, Cancelar y Guardar. Guardar solicita una invitación de registro; en esta captura solo se usó Cancelar."><figcaption><p>Formulario vacío Añadir proveedor con Grupo de Proveedores, Nombre del proveedor, datos de contacto, Cancelar y Guardar. Guardar solicita una invitación de registro; en esta captura solo se usó Cancelar.</p></figcaption></figure>
 
-Si estás utilizando el **Panel de proveedores**, es importante entender los diferentes estados que pueden tener los proveedores. A continuación se muestra una lista de todos los posibles estados de los proveedores y sus significados:
+## Admin: abrir los detalles desde el panel de proveedores
 
-* **Open**: Proveedor existente que aún no ha sido invitado al panel.
-* **Registro pendiente**: El proveedor ha sido invitado pero aún no ha completado el proceso de registro.
-* **A la espera de las aportaciones de los proveedores**: El registro está completo, pero se requieren más aportaciones o cambios por parte del proveedor.
-* **Pendiente de aprobación**: El proveedor ha completado el registro y está a la espera de la primera aprobación.
-* **Pendiente de aprobación de AP**: El proveedor ha recibido la primera aprobación y está a la espera de una segunda aprobación (Cuentas por pagar).
-* **Aprobado**: El proveedor ha completado el proceso y ha sido completamente aprobado.
-* **Rechazado**: El registro o la aprobación del proveedor ha sido rechazado.
+El personal interno abre **Detalles del proveedor** mediante la fila de un proveedor en el panel. Esta vista contiene las mismas seis secciones que completa el proveedor y muestra su estado. Permite revisar y mantener la información presentada y efectuar la aprobación correspondiente. Para estas capturas no se abrió ninguna fila de un proveedor existente.
 
-## Herramientas en el Panel de proveedores
+## Proveedor: registrarse y acceder a DocBits
 
-A la derecha de la barra de búsqueda, encontrarás varias herramientas que te ayudarán a interactuar y gestionar el panel de manera más eficiente.
+El proveedor abre su invitación, crea o utiliza la cuenta propia prevista y sigue los pasos de registro configurados. Después puede consultar la información que la organización pone a su disposición en DocBits. El proceso exacto y las funciones disponibles dependen de la organización.
 
-### Refrescar tabla <a href="#refresh-table" id="refresh-table"></a>
+[Guía de registro para proveedores](supplier-registration.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+## Entender el acceso y los estados
 
-Haz clic en este botón para refrescar el panel y cargar los datos y estados más actualizados.
+Portal activado, invitación enviada, registro completado y aprobación concedida son estados distintos. Una ficha de proveedor o datos maestros guardados no demuestran que el acceso al portal esté listo. La vista del proveedor depende de los permisos asignados y difiere de la vista interna del administrador.
 
-### Establecer columnas de tabla para la organización <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
-
-Haz clic en este botón para abrir un menú donde puedes gestionar la visibilidad de las columnas en la tabla de órdenes de compra. Usa las casillas de verificación y los botones de flecha para mover columnas entre las secciones visibles y ocultas. También puedes reordenar columnas arrastrando y soltando los nombres de las columnas. Haz clic en **Hecho** para guardar tus cambios.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
-
-### Analítica <a href="#analytics" id="analytics"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-Hacer clic en este botón abrirá una nueva sección que muestra cuántos proveedores están a punto de expirar y cuándo.\
-Haz clic en cualquier categoría para aplicar un filtro y ver solo esos proveedores.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
-
-## Crear proveedor y enviar correo electrónico de registro
-
-### **Para crear un nuevo proveedor:**
-
-1.  Haz clic en el ícono de más (+) en la esquina superior derecha.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Completa los campos requeridos y luego haz clic en **Guardar**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. El proveedor recibirá automáticamente un correo electrónico con un enlace para crear su cuenta.
-
-### **Para enviar un correo electrónico de registro a un proveedor existente:**
-
-1. Localiza al proveedor en el **Panel de proveedores**.
-2. Haz clic en el menú de tres puntos en la columna de **Comportamiento**.
-3.  Selecciona **Magic Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Verifica los detalles del proveedor.
-5.  Haz clic en **Enviar** para enviar el enlace de registro por correo electrónico.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
-
-## ¿Cómo funciona el proceso de registro para el proveedor?
-
-Después de que se envía un correo electrónico de invitación, el proveedor debe completar el proceso de registro para acceder al **Panel de proveedores**.
-
-Una guía detallada paso a paso sobre el proceso de registro se puede encontrar [aquí](supplier-registration.md).
+Las capturas se realizaron con la cuenta de prueba Dev autorizada y la interfaz en español. Se comprobaron las consultas de lectura de la interfaz y de las listas, los controles visibles y los formularios cancelados sin cambios. No se guardaron ajustes ni selecciones de columnas, no se crearon o modificaron proveedores y no se ejecutaron invitaciones, registros ni aprobaciones. Los resultados de búsqueda y filtrado y la entrega de correo no quedan acreditados como probados funcionalmente. El vídeo existente se conserva; no se realizó una nueva revisión de audio, idioma o sincronización.

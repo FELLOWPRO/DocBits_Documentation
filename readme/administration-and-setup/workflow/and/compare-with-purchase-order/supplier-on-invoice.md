@@ -1,6 +1,6 @@
-# Supplier on Invoice
+# Proveedor en factura
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_invoice_to_po_supplier_v2-es-es.png" alt="Proveedor en factura, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,11 +8,11 @@ Esta tarjeta de flujo de trabajo está diseñada para comparar la información d
 
 ## **Componentes de la tarjeta:**
 
-1. **Operator:**
+1. **Operador:**
    * **Descripción**: Define la condición para comparar el proveedor de la factura con el proveedor de la orden de compra.
    * **Opciones**:
      * **Is**: Comprueba si el proveedor de la factura coincide con el proveedor de la orden de compra.
-     * **Is Not**: Garantiza que el proveedor de la factura no coincida con el proveedor de la orden de compra.
+     * **no es**: Garantiza que el proveedor de la factura no coincida con el proveedor de la orden de compra.
 
 ## **Funcionalidad:**
 

@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.053
+InvoiceNow possède des entrées de facture
+et d’avoir ; InvoiceNow SG est un autre
+
+formats_02
+00:00:07.053 --> 00:00:12.081
+libellé configuré. Vérifiez les
+identifiants du profil singapourien. Un
+
+formats_03
+00:00:12.081 --> 00:00:17.560
+profil national et Peppol BIS générique
+peuvent partager la syntaxe UBL sans
+
+formats_04
+00:00:17.560 --> 00:00:19.633
+partager toutes les règles métier.
+
+workflow_01
+00:00:20.383 --> 00:00:26.153
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:26.153 --> 00:00:32.063
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:32.063 --> 00:00:33.133
+l’active pas.
+
+accept_01
+00:00:33.883 --> 00:00:38.864
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:38.864 --> 00:00:44.541
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:44.541 --> 00:00:47.733
+la validation fiscale ni la transmission
+réseau.
+

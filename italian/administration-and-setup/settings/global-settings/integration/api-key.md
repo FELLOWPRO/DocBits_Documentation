@@ -1,0 +1,30 @@
+# Chiave API
+
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-it.png" alt="Pannello Chiavi API con il pulsante Crea chiave API, le colonne dell’elenco e chiavi di esempio con un prefisso visibile seguito da caratteri mascherati."><figcaption><p>Impostazioni → Integrazione e SSO → Chiave API. Le chiavi di esempio mostrano un prefisso seguito da caratteri mascherati.</p></figcaption></figure>
+
+La sezione **Chiave API** in cima alla pagina Integrazione e SSO elenca tutte le chiavi API create dalla propria organizzazione. Una chiave API consente a un altro sistema — il proprio ERP, uno script o un'applicazione partner — di accedere a DocBits senza che un utente effettui l'accesso. Per le istruzioni passo passo, vedere [Gestione delle Chiavi API](api-key-management.md).
+
+### Elenco delle chiavi API
+
+* **Chiave:** I primi caratteri della chiave, seguiti da `****`. La chiave completa viene mostrata una sola volta, al momento della creazione, quindi non è possibile visualizzarla di nuovo in seguito. L'icona di copia accanto alla chiave copia il prefisso visibile negli appunti.
+* **Nome / Scade / Ultimo Utilizzo / Stato:** Ogni riga mostra il nome della chiave, quando smette di funzionare, quando una richiesta l'ha usata l'ultima volta e se è ancora attiva.
+* **Crea chiave API:** Apre una finestra di dialogo per creare una nuova chiave per un'integrazione. Vedere [Gestione delle Chiavi API](api-key-management.md) per i campi e la visualizzazione una tantum della chiave.
+* **Azioni (menu a tre puntini):** Apre le azioni per una chiave, dove è possibile modificarne il nome, revocarla o eliminare una chiave già revocata. La revoca disattiva la chiave in modo permanente.
+
+### Impostazioni del fornitore di servizi SSO (Single Sign-On)
+
+Questi sono i valori di cui il proprio provider di identità ha bisogno per consentire agli utenti di accedere a DocBits con le credenziali aziendali. Per la guida completa alla configurazione, vedere [Configurazione Single Sign-On (SSO)](configuring-single-sign-on-sso/).
+
+* **ID entità:** L'identificatore di DocBits come fornitore di servizi nella configurazione SSO. L'icona di copia copia il valore negli appunti.
+* **URL SLO (Single Logout):** L’endpoint del servizio di disconnessione singola SAML di DocBits. L’icona di copia copia il valore.
+* **URL SSO:** L’endpoint del servizio di consumo delle asserzioni (ACS) di DocBits riceve le risposte SAML dal provider di identità. Usarlo come URL di risposta (URL ACS) nella configurazione del provider di identità. L’icona di copia copia il valore.
+* **Scarica il certificato:** Scarica il certificato di sicurezza di cui il proprio provider di identità ha bisogno per considerare attendibile DocBits.
+* **Scarica i metadati:** Scarica il file di metadati SAML che può essere importato direttamente nella maggior parte dei provider di identità.
+
+### Impostazioni del provider di servizi di identità
+
+Configurare DocBits per l'uso del proprio provider di identità (IdP) esterno per l'accesso. Per la guida completa, vedere la [Configurazione Single Sign-On (SSO)](configuring-single-sign-on-sso/).
+
+* **ID inquilino:** L'identificatore del tenant del proprio provider di identità, utilizzato quando DocBits si integra con servizi cloud che gestiscono l'accesso per tenant.
+* **Caricare il file:** Selezionare il file XML dei metadati fornito dal proprio provider di identità.
+* **Configurare:** Dopo aver selezionato il file XML, fare clic su Configurare per caricarlo e salvare la configurazione del provider di identità.

@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.229
+Korea E-Tax Invoice and Korea NTS are
+configured families. The labels do not
+
+formats_02
+00:00:06.229 --> 00:00:11.581
+name a release. Match the actual XML
+structure and do not treat extraction as
+
+formats_03
+00:00:11.581 --> 00:00:14.100
+proof of tax-platform acceptance.
+
+workflow_01
+00:00:14.850 --> 00:00:19.343
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:19.343 --> 00:00:24.405
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:24.405 --> 00:00:25.433
+activate it.
+
+accept_01
+00:00:26.183 --> 00:00:30.943
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:30.943 --> 00:00:35.947
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:35.947 --> 00:00:36.900
+delivery.
+

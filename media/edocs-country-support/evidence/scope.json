@@ -1,0 +1,15 @@
+{
+  "scope": "Read-only effective catalogue in one development test organization, 17 October 2026; not exhaustive file acceptance or production certification.",
+  "non_tenant_rule_document_combinations": 194,
+  "invoice_configuration_labels": 213,
+  "api_tracks": {
+    "dev": "2a2c84c3b6f5361393837fed22d0cd14bb991c17",
+    "dev-nova": "0d315af8add610a25c47b899f8f1117797b9f8aa"
+  },
+  "identity_file": "module/document_process/electronic_document/edoc_identity.py",
+  "identity_sha256": "b835842ee94507d1d60f2f31ab016acd0be20bf897cfe04477c406d4faa3c185",
+  "enums_file": "routers/electronic_document/enums.py",
+  "enums_sha256": "6fa2aeeb82774392dbf97d23f6d6348b3c4d7000099283e9ef3834ba7a0868f8",
+  "renderer_image": "sha256:b3f6f7100ecc8c251a70b5294246b563b119b2c9ae5d83fb5c3472bbf94ce90f",
+  "excluded": "Tenant-owned classification, customer values, credentials, token, and signed media URLs."
+}

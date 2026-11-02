@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "audited_commit": "5529b703a9cbe6cb5657c1e973f83b4237a2e2ce",
+  "available_delivery_audit": "passed",
+  "locales": [
+    {
+      "locale": "en",
+      "country_films": 40,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "de",
+      "country_films": 40,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "es",
+      "country_films": 40,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "fr",
+      "country_films": 40,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "it",
+      "country_films": 40,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "nl",
+      "country_films": 39,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "pl",
+      "country_films": 40,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "pt",
+      "country_films": 37,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    },
+    {
+      "locale": "zh",
+      "country_films": 40,
+      "translated_guides": 40,
+      "source_mirror_parity": true
+    }
+  ],
+  "totals": {
+    "country_guides": 360,
+    "country_films": 356,
+    "credit_films": 9,
+    "capture_files_hash_verified": 1517
+  },
+  "all_source_and_mirror_paths_equal": true,
+  "all_nine_branches_pushed_at_audit": true,
+  "frozen_renderer_tests_passed": 65,
+  "source_freshness": "passed",
+  "technical_media_qa": "passed",
+  "visual_review": "Every delivered actual capture and composed shot inspected",
+  "local_browser_qa": "Playback, seek, end, native captions, keyboard, 380 px and Range 206 passed for available films",
+  "gitbook_qa": "Nine public draft overviews link all 40 guides; credit, Germany and Costa Rica MP4 attachments returned exact bytes, video/mp4 and Range 206",
+  "verified_gitbook_overviews": {
+    "en": "https://docs.docbits.com/~/revisions/hR6sfeTOZSzLllVPSMbz/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "de": "https://docs.docbits.com/deutsch/~/revisions/fxs2bqRbKo2ePmbhZkhZ/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "es": "https://docs.docbits.com/espanol/~/revisions/wHkd8v3MMLr5bdflydB8/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "fr": "https://docs.docbits.com/french/~/revisions/ZTELFaBWn6WgU56BWfQu/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "it": "https://docs.docbits.com/italian/~/revisions/GZGFLgeNXoDicZpHv97u/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "nl": "https://docs.docbits.com/dutch/~/revisions/5ZJqPRgXYyHgNwmzKjIg/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "pl": "https://docs.docbits.com/polish/~/revisions/15dXJizavJ3h638NYqRv/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "pt": "https://docs.docbits.com/portuguese/~/revisions/loq5fxZsaK9YKTRtsdcT/administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents",
+    "zh": "https://docs.docbits.com/chinese/~/revisions/Swbrj9zYmwxJHh1QJHBP/guan-li-yu-she-zhi/settings/global-settings/document-types/edi/supported-electronic-documents"
+  },
+  "pending_films": {
+    "nl": [
+      "vietnam"
+    ],
+    "pt": [
+      "austria",
+      "thailand",
+      "brazil"
+    ]
+  },
+  "pending_reason": "Ambiguous provider submissions without request IDs; checkpoints retained without resubmission",
+  "zh_germany_captions": "Measured native segment captions; existing audio unchanged, no replacement request",
+  "acoustic_native_listening": "not performed",
+  "delivery_state": "Draft PRs only; no merge, deployment or separate CDN/runtime publication"
+}

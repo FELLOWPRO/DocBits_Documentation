@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.218
+Colombia Factura Electronica i Documento
+Soporte mają osobne wpisy. Wpis
+
+formats_02
+00:00:06.218 --> 00:00:10.827
+klasyfikacji not kredytowych nie ma
+dedykowanego pakietu ekstrakcji w
+
+formats_03
+00:00:10.827 --> 00:00:16.190
+sprawdzonym stanie. Potwierdź faktycznie
+używane mapowanie zamiast wnioskować o
+
+formats_04
+00:00:16.190 --> 00:00:19.100
+obsłudze na podstawie wpisu faktury.
+
+workflow_01
+00:00:19.850 --> 00:00:25.318
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:25.318 --> 00:00:30.891
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:30.891 --> 00:00:33.700
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:34.450 --> 00:00:40.476
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:40.476 --> 00:00:46.408
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:46.408 --> 00:00:49.233
+podatkowego ani dostarczenia przez sieć.
+

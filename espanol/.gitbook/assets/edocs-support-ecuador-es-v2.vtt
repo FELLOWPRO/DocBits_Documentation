@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.668
+Ecuador SRI tiene entradas genéricas,
+1.0.0, 1.1.0, 2.0.0 y 2.1.0. La retención
+
+formats_02
+00:00:06.668 --> 00:00:13.005
+es un tipo de documento independiente. La
+entrada de clasificación de notas de
+
+formats_03
+00:00:13.005 --> 00:00:19.342
+crédito no tiene un paquete de extracción
+dedicado en el estado inspeccionado.
+
+formats_04
+00:00:19.342 --> 00:00:24.867
+Compruebe la asignación utilizada y el
+tipo del documento de origen.
+
+workflow_01
+00:00:25.617 --> 00:00:30.969
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:30.969 --> 00:00:36.728
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:36.728 --> 00:00:37.567
+activa.
+
+accept_01
+00:00:38.317 --> 00:00:42.857
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:42.857 --> 00:00:48.116
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:48.116 --> 00:00:51.967
+no demuestra la autorización fiscal ni la
+entrega por red.
+

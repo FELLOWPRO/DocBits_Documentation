@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.425
+Turkey E-Fatura e E-Arsiv são famílias
+configuradas distintas. Verifique o perfil
+
+formats_02
+00:00:07.425 --> 00:00:13.358
+de origem e a estrutura do documento. A
+designação da família não identifica todas
+
+formats_03
+00:00:13.358 --> 00:00:19.567
+as edições UBL-TR nem comprova a entrega
+através da plataforma fiscal.
+
+workflow_01
+00:00:20.317 --> 00:00:25.704
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:25.704 --> 00:00:32.775
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:32.775 --> 00:00:33.700
+ativa.
+
+accept_01
+00:00:34.450 --> 00:00:40.406
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:40.406 --> 00:00:46.269
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:46.269 --> 00:00:50.800
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

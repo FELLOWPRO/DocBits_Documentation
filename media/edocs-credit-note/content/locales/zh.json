@@ -1,0 +1,93 @@
+{
+  "locale": "zh",
+  "title": "检查电子贷项通知单分类",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "电子贷项通知单显示为 Invoice。请查看原始 XML。类型代码 381 表示贷项通知单。",
+      "caption": "电子贷项通知单显示为 Invoice。请查看原始 XML。类型代码 381 表示贷项通知单。"
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "FACTURX 和 ZUGFeRD 的默认规则也识别代码 261。代码 383 和 384 分别表示借项通知单和更正发票。不要将其归类为贷项通知单。",
+      "caption": "FACTURX 和 ZUGFeRD 的默认规则也识别代码 261。代码 383 和 384 分别表示借项通知单和更正发票。不要将其归类为贷项通知单。"
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "打开检测出的格式对应的 E-Doc。组织的自定义转换优先于默认转换。请检查活动版本。",
+      "caption": "打开检测出的格式对应的 E-Doc。组织的自定义转换优先于默认转换。请检查活动版本。"
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "对于 FACTURX，请搜索 INVOICE_TYPE。固定值 Invoice 可能覆盖原始的贷项通知单代码。请比较自定义转换与默认转换。",
+      "caption": "对于 FACTURX，请搜索 INVOICE_TYPE。固定值 Invoice 可能覆盖原始的贷项通知单代码。请比较自定义转换与默认转换。"
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "测试转换后的 XML。检查 Extraction Paths 是否从该格式的正确节点读取 invoice_type。查看后续脚本和已保存的值。",
+      "caption": "测试转换后的 XML。检查 Extraction Paths 是否从该格式的正确节点读取 invoice_type。查看后续脚本和已保存的值。"
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "创建草稿。Save 不会将其激活。使用有代表性的发票和贷项通知单进行测试。只有检查通过后，才使用勾号激活。",
+      "caption": "创建草稿。Save 不会将其激活。使用有代表性的发票和贷项通知单进行测试。只有检查通过后，才使用勾号激活。"
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "验证一个新文档，包括金额和导出结果。保留自定义映射。重新启动旧文档之前，请检查审批、导出和手动修改。",
+      "caption": "验证一个新文档，包括金额和导出结果。保留自定义映射。重新启动旧文档之前，请检查审批、导出和手动修改。"
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "负号设置默认启用，但可以禁用。请确认分类，以及 Infor ERP 或 SAP 要求的正负号约定。",
+      "caption": "负号设置默认启用，但可以禁用。请确认分类，以及 Infor ERP 或 SAP 要求的正负号约定。"
+    }
+  ],
+  "labels": {
+    "xml": "原始 XML",
+    "stored": "已保存的值",
+    "invoice": "Invoice",
+    "credit": "Credit Note",
+    "credit_codes": "贷项通知单",
+    "other_codes": "其他文档类型",
+    "debit": "借项通知单",
+    "corrected": "更正发票",
+    "source": "实际生效的来源",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "活动版本",
+    "transform": "转换",
+    "constant": "固定值",
+    "compare": "比较源代码",
+    "paths": "Extraction Paths",
+    "scripts": "后续脚本",
+    "verify": "验证已保存的值",
+    "draft": "草稿",
+    "save": "保存",
+    "test": "测试",
+    "activate": "激活",
+    "saved": "已保存的草稿",
+    "check": "勾号",
+    "safety": "新的测试文档",
+    "preserve": "保留自定义映射",
+    "history": "检查历史文档",
+    "approvals": "审批",
+    "exports": "导出",
+    "edits": "手动修改",
+    "sign": "检查金额正负号",
+    "enabled": "默认启用",
+    "configurable": "可配置",
+    "result": "分类 + 导出",
+    "transformed": "转换后的 XML"
+  },
+  "notes": {}
+}

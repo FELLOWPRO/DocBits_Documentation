@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:10.606
+Facturae tem entradas genéricas, 3.2,
+3.2.1 e 3.2.2. Verifique o espaço de nomes
+
+formats_02
+00:00:10.606 --> 00:00:17.212
+e a versão do esquema. Extrair dados de um
+XML assinado não verifica, por si só, a
+
+formats_03
+00:00:17.212 --> 00:00:20.467
+assinatura nem a aceitação pelo FACe.
+
+workflow_01
+00:00:21.217 --> 00:00:26.604
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:26.604 --> 00:00:33.675
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:33.675 --> 00:00:34.600
+ativa.
+
+accept_01
+00:00:35.350 --> 00:00:41.306
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:41.306 --> 00:00:47.169
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:47.169 --> 00:00:51.700
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

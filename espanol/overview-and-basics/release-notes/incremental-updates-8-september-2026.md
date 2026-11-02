@@ -1,0 +1,20 @@
+# Correcciones urgentes 8 de septiembre de 2026
+
+> Coincidencia de órdenes de compra: qué cambió con las correcciones urgentes desplegadas el 8 de septiembre de 2026. El comportamiento descrito a continuación está activo en el entorno de desarrollo y llegará a stage, sandbox y producción con las próximas actualizaciones.
+
+## Coincidencia de órdenes de compra
+
+- **La coincidencia se mantiene al guardar.** Una coincidencia de orden de compra que una regla de transformación solía eliminar silenciosamente en cada guardado (reglas que reconstruyen las líneas de ítems) ahora se conserva siempre que la regla produzca las mismas líneas. Cuando una regla realmente reemplaza las líneas coincidentes, el documento registra la regla y la pantalla la nombra.
+- **La coincidencia se ejecuta nuevamente al guardar.** Cuando el número de orden de compra en el documento cambia — o cuando los datos maestros lo completan después del procesamiento y aún no se ha realizado una búsqueda de coincidencia — el guardado realiza la coincidencia del documento de inmediato. Una coincidencia existente nunca es sobrescrita por un guardado.
+- **La pantalla indica por qué no hay coincidencia.** La pantalla de Coincidencia de Orden de Compra muestra una frase sobre el área de la orden de compra: sin número de orden de compra, orden de compra no encontrada en el ERP, no buscada aún, cargada pero no conectada, ninguna línea coincide, sin tabla, columnas de tabla no mapeadas, no quedan líneas abiertas. Los candidatos que fueron descartados se listan con la razón (por ejemplo, un número de factura que se había leído en la columna de orden de compra).
+- **Una coincidencia descartada nunca se reporta como guardada.** Si el servidor no conserva una coincidencia, la pantalla la restaura, marca el documento como no guardado e informa el rechazo con su motivo en lugar de "guardado".
+- **El historial de coincidencias muestra las reglas de transformación.** El historial de coincidencias de un documento ahora tiene un paso _Reglas de transformación_ antes de la primera etapa de coincidencia, listando las reglas que se ejecutaron y si alguna de ellas descartó la coincidencia. Los administradores reciben un enlace a la regla.
+- **Precio unitario de la orden de compra a partir del importe neto.** Con _Calcular precio unitario de OC_ activado, el precio ahora se deriva primero del importe **neto** de la línea de la orden de compra y del total solo cuando no hay importe neto. Las órdenes de compra de Infor incluyen impuestos en el total de la línea; las facturas con precio neto solían mostrarse como "precio unitario con coincidencia insuficiente" exactamente por la tasa de impuesto. El precio calculado se actualiza en cada coincidencia, por lo que los documentos existentes se benefician sin recargar la orden de compra.
+- **Los números de factura ya no se confunden con números de orden de compra.** Un candidato proveniente de una columna de línea o de una búsqueda anterior que sea igual al número de factura del propio documento se descarta.
+
+## Documentación
+
+- Nueva página [Reglas de transformación](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md).
+- [Reglas de coincidencia de órdenes de compra](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) ahora cubre tipos de reglas, condiciones de activación, reglas de respaldo, el conjunto de reglas predeterminado, tipos de tolerancia y las columnas efectivas.
+- [Calcular precio unitario de OC](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md) describe el cálculo del importe neto.
+- [Pantalla de coincidencia de órdenes de compra](../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md) explica los mensajes de "por qué no hay coincidencia" y el historial de coincidencias.

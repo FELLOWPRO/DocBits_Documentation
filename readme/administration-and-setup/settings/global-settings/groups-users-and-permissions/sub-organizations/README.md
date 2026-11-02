@@ -1,5 +1,7 @@
 # Sub-Organizations
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Sub-Organizations"><figcaption><p>Sub-Organizations Page</p></figcaption></figure>
 
 Sub-organizations allow you to create a hierarchical structure within DocBits to manage documents, users, and workflows across different departments, teams, or entities.

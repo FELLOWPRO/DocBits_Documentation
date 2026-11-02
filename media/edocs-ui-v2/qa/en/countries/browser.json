@@ -1,0 +1,1202 @@
+[
+  {
+    "country": "austria",
+    "locale": "en",
+    "metadata": {
+      "duration": 37.2,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.310695,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.6,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "ebInterface 4.3, 5.0, 6.0 and 6.1 have\nseparate entries. Match the XML namespace"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "denmark",
+    "locale": "en",
+    "metadata": {
+      "duration": 36.366667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.310814,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.183333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "OIOUBL 2.1 is the named Danish entry.\nOIOUBL and Peppol BIS are distinct"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "finland",
+    "locale": "en",
+    "metadata": {
+      "duration": 41.566667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.310597,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.783333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Finvoice 1.3, 2.0, 2.01 and 3.0 have\nseparate entries. TEAPPSXML is another"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "france",
+    "locale": "en",
+    "metadata": {
+      "duration": 47.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.304573,
+      "frames": 13
+    },
+    "seek": {
+      "time": 23.65,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Factur-X has generic and release-specific\nentries, including 1.0.05, 1.08 and 1.09."
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "germany",
+    "locale": "en",
+    "metadata": {
+      "duration": 47.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.304562,
+      "frames": 13
+    },
+    "seek": {
+      "time": 23.65,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "XRechnung has thirteen version labels from\n1.0 to 3.0.2, each in CII and UBL. ZUGFeRD"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "italy",
+    "locale": "en",
+    "metadata": {
+      "duration": 36.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.304665,
+      "frames": 13
+    },
+    "seek": {
+      "time": 18.15,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "FatturaPA is the configured Italian\nfamily. The family label does not certify"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "netherlands",
+    "locale": "en",
+    "metadata": {
+      "duration": 37.066667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.311592,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.533333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "SI-UBL 2.0 has a dedicated entry. A UBL\nfile is not automatically SI-UBL 2.0."
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "norway",
+    "locale": "en",
+    "metadata": {
+      "duration": 39.066667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.311279,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.533333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "EHF Invoice 3.0 is listed alongside EHF\nOrder, Order Response and Despatch Advice."
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "poland",
+    "locale": "en",
+    "metadata": {
+      "duration": 39.7,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.307448,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.85,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "KSeF has generic, FA2 and FA3 entries. FA2\nand FA3 use different structures. Confirm"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "spain",
+    "locale": "en",
+    "metadata": {
+      "duration": 40.033333,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.303411,
+      "frames": 13
+    },
+    "seek": {
+      "time": 20.016666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Facturae has generic, 3.2, 3.2.1 and 3.2.2\nentries. Check the namespace and schema"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "slovenia",
+    "locale": "en",
+    "metadata": {
+      "duration": 34.866667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.307813,
+      "frames": 14
+    },
+    "seek": {
+      "time": 17.433333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "e-SLOG 1.6 and 2.0 have separate entries.\nThe two versions have different XML"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "sweden",
+    "locale": "en",
+    "metadata": {
+      "duration": 34.866667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.302884,
+      "frames": 13
+    },
+    "seek": {
+      "time": 17.433333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Svefaktura 1.0 is the named Swedish entry.\nKeep this legacy family distinct from"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "india",
+    "locale": "en",
+    "metadata": {
+      "duration": 41.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.308258,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.65,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "India GST E-Invoice and GST CreditNote\nhave separate entries. The documented"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "australia",
+    "locale": "en",
+    "metadata": {
+      "duration": 40.766667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.308348,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.383333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "PINT A-NZ has invoice and credit-note rule\nentries shared with New Zealand. The"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "new-zealand",
+    "locale": "en",
+    "metadata": {
+      "duration": 38.966667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.309152,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.483333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "PINT A-NZ has invoice and credit-note rule\nentries shared with Australia. The active"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "china",
+    "locale": "en",
+    "metadata": {
+      "duration": 47.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.323786,
+      "frames": 14
+    },
+    "seek": {
+      "time": 23.65,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "The catalogue includes Fapiao, E-Fapiao,\nGeneral VAT Invoice and Special VAT"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "japan",
+    "locale": "en",
+    "metadata": {
+      "duration": 37.166667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.323429,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.583333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "JP PINT and JP PINT Self-Billing are\nseparate entries. Self-billing is a"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "indonesia",
+    "locale": "en",
+    "metadata": {
+      "duration": 36.966667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.323591,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.483333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Indonesia E-Faktur is the configured\nfamily. The entry does not state a release"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "korea",
+    "locale": "en",
+    "metadata": {
+      "duration": 37.4,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.312897,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.7,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Korea E-Tax Invoice and Korea NTS are\nconfigured families. The labels do not"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "malaysia",
+    "locale": "en",
+    "metadata": {
+      "duration": 38.1,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.312011,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.05,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "MyInvois has invoice and credit-note rule\nentries. The inspected extraction path is"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "philippines",
+    "locale": "en",
+    "metadata": {
+      "duration": 35.633333,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.312694,
+      "frames": 14
+    },
+    "seek": {
+      "time": 17.816666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Philippines EIS is the configured family.\nThe label does not name a release. Check"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "singapore",
+    "locale": "en",
+    "metadata": {
+      "duration": 40.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.316019,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.15,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "InvoiceNow has invoice and credit-note\nentries; InvoiceNow SG is another"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "taiwan",
+    "locale": "en",
+    "metadata": {
+      "duration": 36.066667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 8
+    },
+    "playback": {
+      "time": 0.317339,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.033333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Taiwan eGUI is the configured family. The\nfamily label does not certify every MIG"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "thailand",
+    "locale": "en",
+    "metadata": {
+      "duration": 37.166667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.306244,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.583333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Thailand E-Tax Invoice is the configured\nfamily. The label does not name a release."
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "brazil",
+    "locale": "en",
+    "metadata": {
+      "duration": 47.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.305117,
+      "frames": 14
+    },
+    "seek": {
+      "time": 23.65,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Brazil has NF-e, NFC-e, CT-e, NFS-e and\nSPED NFS-e entries. NFS-e includes"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "argentina",
+    "locale": "en",
+    "metadata": {
+      "duration": 39.166667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.308033,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.583333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Argentina AFIP and Factura Electronica are\nconfigured labels. The credit-note"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "vietnam",
+    "locale": "en",
+    "metadata": {
+      "duration": 36.2,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.306541,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.1,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Vietnam E-Invoice is the configured\nfamily. The label does not name a release."
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "costa-rica",
+    "locale": "en",
+    "metadata": {
+      "duration": 41.233333,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.310976,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.616666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "The older documentation names Costa Rica,\nbut no matching classification or"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "chile",
+    "locale": "en",
+    "metadata": {
+      "duration": 37.966667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.310259,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.983333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Chile DTE has invoice, credit-note and\ndespatch-guide entries. Select the"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "colombia",
+    "locale": "en",
+    "metadata": {
+      "duration": 39.7,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.312608,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.85,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Colombia Factura Electronica and Documento\nSoporte have separate entries. The"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "paraguay",
+    "locale": "en",
+    "metadata": {
+      "duration": 40.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.312454,
+      "frames": 14
+    },
+    "seek": {
+      "time": 20.15,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Paraguay DTE, SIFEN and SIFEN 150 are\nconfigured labels. Credit-note"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "ecuador",
+    "locale": "en",
+    "metadata": {
+      "duration": 47.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.314821,
+      "frames": 14
+    },
+    "seek": {
+      "time": 23.65,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Ecuador SRI has generic, 1.0.0, 1.1.0,\n2.0.0 and 2.1.0 entries. Withholding is a"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "mexico",
+    "locale": "en",
+    "metadata": {
+      "duration": 42.6,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.310384,
+      "frames": 14
+    },
+    "seek": {
+      "time": 21.3,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Mexico CFDI 3.3 and 4.0 have separate\nentries. Check the namespace, version and"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "uruguay",
+    "locale": "en",
+    "metadata": {
+      "duration": 42.833333,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.302433,
+      "frames": 13
+    },
+    "seek": {
+      "time": 21.416666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Uruguay CFE has generic, 24 and 25\nentries. E-Factura and E-Nota Credito are"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "peru",
+    "locale": "en",
+    "metadata": {
+      "duration": 41.533333,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.306794,
+      "frames": 13
+    },
+    "seek": {
+      "time": 20.766666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Peru CPE has generic, UBL 2.0 and UBL 2.1\nentries. Factura Electronica is another"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "kazakhstan",
+    "locale": "en",
+    "metadata": {
+      "duration": 35.466667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.30674,
+      "frames": 13
+    },
+    "seek": {
+      "time": 17.733333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Kazakhstan ESF is the configured family.\nThe label does not state a release."
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "united-arab-emirates",
+    "locale": "en",
+    "metadata": {
+      "duration": 38.833333,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.303676,
+      "frames": 13
+    },
+    "seek": {
+      "time": 19.416666,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "UAE VAT Invoice is the configured label. A\nVAT-invoice mapping does not establish"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "saudi-arabia",
+    "locale": "en",
+    "metadata": {
+      "duration": 37.666667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.30981,
+      "frames": 14
+    },
+    "seek": {
+      "time": 18.833333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "ZATCA Fatoorah, Reporting, Simplified and\nTax Invoice have separate entries. These"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "turkey",
+    "locale": "en",
+    "metadata": {
+      "duration": 38.566667,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 9
+    },
+    "playback": {
+      "time": 0.310334,
+      "frames": 14
+    },
+    "seek": {
+      "time": 19.283333,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "Turkey E-Fatura and E-Arsiv are separate\nconfigured families. Check the source"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  },
+  {
+    "country": "international",
+    "locale": "en",
+    "metadata": {
+      "duration": 47.3,
+      "width": 1280,
+      "height": 720,
+      "language": "en",
+      "cues": 10
+    },
+    "playback": {
+      "time": 0.30452,
+      "frames": 14
+    },
+    "seek": {
+      "time": 23.65,
+      "ready": 4
+    },
+    "mobile": {
+      "scroll": 380,
+      "width": 380,
+      "captions": [
+        "International entries include Peppol BIS\n3.0, UBL 2.1, pure CII, EDI, INVOIC02,"
+      ]
+    },
+    "ended": true,
+    "range206": true,
+    "keyboard": true,
+    "errors": []
+  }
+]

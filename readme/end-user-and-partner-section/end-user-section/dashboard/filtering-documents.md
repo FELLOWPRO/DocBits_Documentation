@@ -1,58 +1,45 @@
 # Filtering Documents
 
-## Default Filtering Options
+Use the Dashboard search bar, filter panel, date range, and document type tabs to narrow the document list. The controls work together: a document must match the active search and filters to remain in the table.
 
-You can search for specific documents by entering the document name or ID into the search bar located at the top of the dashboard.
+## Find a document by name
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_1.png" alt=""><figcaption></figcaption></figure>
+1. Open the **Dashboard**.
+2. Enter part of a document name in the search bar above the table and press **Enter**. The count in the dashboard badge and the table update to show matching documents.
+3. Replace the search term when you want to look for another document. For field searches and search syntax, see [Quick Search](quick-search.md).
 
-For more refined filtering, click the filter icon located on the right side of the search bar to select specific criteria for searching documents.
+<figure><img src="../../../.gitbook/assets/dbdc167_search_result_en.png" alt="English Dashboard showing one matching test invoice after a document-name search"><figcaption>A document-name search narrows the test document list.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_2.png" alt=""><figcaption></figcaption></figure>
+## Filter by status, assignee, or restart requirement
 
-The following filter options are available:
+1. Select the **Filters** icon (sliders) at the right end of the search bar.
+2. Choose one or more **Status** values. You can select several statuses at once.
+3. In **Assigned To**, select the users whose documents you want to see. If your organization has group permissions enabled, groups can appear in this same list. There is no separate **Assigned to Group** field in this panel.
+4. Select **Restart Required** to show documents that need a restart.
+5. Select **Apply**. Select **Clear filters** in this panel to remove these selections; search text and the date range are separate controls.
 
-* **Status**: Filter by processing status (e.g., Ready for validation, Rejected).
-*   **Assigned To**: Filter by the users assigned to the document.
+<figure><img src="../../../.gitbook/assets/dbdc167_filter_panel_en.png" alt="English Dashboard filter panel with Status, Assigned To, Restart Required, Clear filters, and Apply"><figcaption>The current filter panel has three criteria and two actions.</figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_9.png" alt=""><figcaption></figcaption></figure>
-* **Assigned to Group**: Filter by the groups assigned to the document.
-* **Restart Required**: Filter for documents that require a restart.
+<figure><img src="../../../.gitbook/assets/dbdc167_status_options_en.png" alt="Status dropdown in the English Dashboard filter panel with selectable processing statuses"><figcaption>Select the processing statuses you need.</figcaption></figure>
 
-Click **Apply** to apply the selected filters, or **Clear Filters** to reset them.
+<figure><img src="../../../.gitbook/assets/dbdc167_assignee_options_en.png" alt="Assigned To dropdown showing the synthetic users in the test organization"><figcaption>Select a user from Assigned To.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_3.png" alt=""><figcaption></figcaption></figure>
+For an explanation of what each processing status means, see [Document Status](document-status.md).
 
-## Time-Based Filtering
+## Choose an import date range
 
-To filter documents by import date, use the time filter located to the right of the search bar. You can choose from the following preset time ranges:
+Above the search bar, select **30D**, **90D**, **180D**, **365D**, or **All** to change the import-date range. Select **Custom**, choose **Start Date** and **End Date**, then select **Apply** for a specific range. The current choice is highlighted.
 
-* **30 Days**
-* **90 Days**
-* **180 Days**
-* **365 Days**
-* **All**
+<figure><img src="../../../.gitbook/assets/dbdc167_custom_dates_en.png" alt="Custom date range on the English Dashboard with Start Date, End Date, and Apply"><figcaption>Use Custom when the preset date ranges do not fit.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_4.png" alt=""><figcaption></figcaption></figure>
+## Use document type tabs
 
-You can also select a custom date range by clicking **Custom**, then specifying a **Start Date** and **End Date**. After that, click **Apply** to activate the filter.
+1. Select **+** beside **All**. The menu lists document types available to your organization.
+2. Select a type, such as **Invoice**, to add its tab. Then select the new tab to filter the table to that type. **All** removes the type restriction without deleting the tab.
+3. To remove a type tab, select its **×**. The **All** tab cannot be removed.
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc167_document_type_menu_en.png" alt="Plus menu on the English Dashboard showing Invoice as an available document type"><figcaption>Add a document type tab from the plus menu.</figcaption></figure>
 
-<mark style="color:red;">**Note**</mark>: Selecting a longer time period may result in slower loading times.
+<figure><img src="../../../.gitbook/assets/dbdc167_invoice_tab_en.png" alt="Invoice document type tab selected on the English Dashboard, with its remove icon visible"><figcaption>Choose the tab to apply the type filter; use × to remove the tab.</figcaption></figure>
 
-## Filter by Document Type
-
-To filter by specific document types:
-
-1.  Click the plus (+) icon at the top of the dashboard.
-
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_6.png" alt=""><figcaption></figcaption></figure>
-2. Select a document type from the list.
-3.  After selecting a document type, you can switch between filters using the tabs at the top of the dashboard.
-
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_7.png" alt=""><figcaption></figcaption></figure>
-
-To remove a specific filter, hover over the filter tag and click the red X. This will remove the filter from the tab list.
-
-<figure><img src="../../../.gitbook/assets/FilteringDocs_8.png" alt=""><figcaption></figcaption></figure>
+If the **+** menu has no types, ask an administrator to check which document types are active for your organization. See [Document Types](../../../administration-and-setup/settings/global-settings/document-types/README.md). To save a combination of filters for later, see [Personal Dashboards](personal-dashboards.md).

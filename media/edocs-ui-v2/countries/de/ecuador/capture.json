@@ -1,0 +1,78 @@
+{
+  "locale": "de",
+  "country": "ecuador",
+  "representative": "ECUADOR SRI 2.1.0",
+  "environment": "development",
+  "runtime_language": "de",
+  "captured_at": "2026-10-18T07:10:04.838Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 2
+  },
+  "redactions": [
+    "version authors",
+    "user menu",
+    "notifications",
+    "mailto links"
+  ],
+  "mutations": [],
+  "captures": [
+    {
+      "name": "rules",
+      "file": "rules.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE?tab=COLOMBIA+FACTURA+ELECTRONICA",
+      "sha256": "0a9c6f93900fb0a6219f102e07f43f6df51b72dd41c4d04466a7b5cb03c07134",
+      "focus": null
+    },
+    {
+      "name": "transformation-code",
+      "file": "transformation-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/3c349f2f-78d7-4fbe-9cc6-8a084b35cc1a/ECUADOR%20SRI%202.1.0?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "651c81dc2412756ab43babf2438e86f1b1ee54b7527f09d4e56c2c2d20b6d051",
+      "focus": {
+        "found": true,
+        "line": 5,
+        "term": "INVOICE_TYPE"
+      }
+    },
+    {
+      "name": "preview-panel",
+      "file": "preview-panel.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/3c349f2f-78d7-4fbe-9cc6-8a084b35cc1a/ECUADOR%20SRI%202.1.0?attribute_name=TRANSFORMATION&attribute_type=XSLT&title=INVOICE",
+      "sha256": "ced2332f51407807fc91ae65c66125f2ac7541f0eb1a9c83b22f0faf51e37a8c",
+      "focus": null
+    },
+    {
+      "name": "extraction-paths-code",
+      "file": "extraction-paths-code.png",
+      "url": "https://dev.docbits.com/nova/settings/manage-xslt/INVOICE/745916e1-b1b3-44f2-a8ae-bd8c4d43b2ea/ECUADOR%20SRI%202.1.0?attribute_name=EXTRACTION%20PATHS&attribute_type=JSON&title=INVOICE",
+      "sha256": "98c4e1eefd65e5e1bb2b3ca01638a278ca2abf896e9e4120ed1db41b5c55d9d3",
+      "focus": {
+        "found": true,
+        "line": 1,
+        "term": "invoice_type"
+      }
+    }
+  ],
+  "rows": [
+    [
+      "TRANSFORMATION",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "PREVIEW",
+      "Default",
+      "XSLT",
+      "—"
+    ],
+    [
+      "EXTRACTION PATHS",
+      "Default",
+      "JSON",
+      "—"
+    ]
+  ]
+}

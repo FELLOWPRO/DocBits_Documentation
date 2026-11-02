@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.869
+PINT A-NZ heeft regelvermeldingen voor
+facturen en creditnota’s die met Australië
+
+formats_02
+00:00:05.869 --> 00:00:11.628
+worden gedeeld. Het actieve familielabel
+heeft geen vast PINT-versienummer.
+
+formats_03
+00:00:11.628 --> 00:00:16.945
+Controleer de aanpassings- en
+profielidentificaties; aflevering via een
+
+formats_04
+00:00:16.945 --> 00:00:19.800
+netwerk is een afzonderlijke integratie.
+
+workflow_01
+00:00:20.550 --> 00:00:26.204
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:26.204 --> 00:00:31.626
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:31.626 --> 00:00:33.100
+activeert het niet.
+
+accept_01
+00:00:33.850 --> 00:00:39.539
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:39.539 --> 00:00:44.821
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:44.821 --> 00:00:48.200
+fiscale goedkeuring of aflevering via een
+netwerk.
+

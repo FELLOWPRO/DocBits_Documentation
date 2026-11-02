@@ -4,6 +4,12 @@ description: Obsługa elektronicznych dokumentów Denmark OIOUBL 2.1 w DocBits
 
 # 🇩🇰 Denmark OIOUBL 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Dania](countries/denmark.md). OIOUBL i Peppol BIS to odrębne profile. Sama składnia UBL nie określa profilu krajowego.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj / Region** | Dania |
@@ -24,7 +30,7 @@ OIOUBL (Offentlig Information Online UBL) to duński standard e-fakturowania opa
 
 ## Domyślny podgląd
 
-<figure><img src="denmark-oioubl-preview.png" alt="Podgląd faktury Denmark OIOUBL 2.1 w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury Denmark OIOUBL 2.1 (Faktura)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/denmark-oioubl-preview.png" alt="Podgląd faktury Denmark OIOUBL 2.1 w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury Denmark OIOUBL 2.1 (Faktura)</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -85,5 +91,5 @@ Elementem głównym jest `<Invoice>` (lub `<CreditNote>`) w przestrzeni nazw UBL
 
 ## Powiązane
 
-- [Aktualnie obsługiwane standardy e-faktur](../../currently-supported-e-invoice-standards/)
+- [Aktualnie obsługiwane standardy e-faktur](../currently-supported-e-invoice-standards/README.md)
 - [Obsługiwane dokumenty elektroniczne](./)

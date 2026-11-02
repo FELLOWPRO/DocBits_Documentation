@@ -8,13 +8,12 @@ Możesz wybrać automatyczne obliczanie **ceny jednostkowej** każdej pozycji za
 
 1.  Przejdź do **Ustawienia** -> **Ustawienia globalne** -> **Typy dokumentów**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
 2.  Wybierz żądany typ dokumentu i kliknij **Więcej ustawień**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-pl.png" alt="Dostęp do dodatkowych ustawień typu dokumentu Faktura."><figcaption><p>Dostęp do dodatkowych ustawień typu dokumentu Faktura.</p></figcaption></figure>
 3.  W sekcji **Zamówienie zakupu** włącz opcję **Oblicz cenę jednostkową zamówienia**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-pl.png" alt="Ustawienia statusów wykorzystanych wierszy zamówienia."><figcaption><p>Ustawienia statusów wykorzystanych wierszy zamówienia.</p></figcaption></figure>
 
 ## Jak obliczana jest cena
 
@@ -40,11 +39,11 @@ Obliczona cena jest zapisywana w migawce zamówienia zakupu przechowywanej na do
 
 ## Przykład:
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
-
 W tym przypadku cena jednostkowa (bez rabatu) jest pobierana z dokumentu, podczas gdy zamówienie zakupu w ERP przechowuje cenę jednostkową z zastosowanym rabatem. Powoduje to rozbieżność w cenie jednostkowej. Po aktywowaniu ustawienia cena jednostkowa jest pobierana z kwoty pozycji i ilości, dzięki czemu obie strony się zgadzają.
 
 ## Powiązane ustawienia
 
 * [Reguły dopasowywania zamówień zakupu](purchase-order-matching-rules.md) — reguły porównują **efektywną** cenę jednostkową, która jest tą obliczoną ceną, gdy ustawienie jest włączone.
 * [Ustawienia tolerancji zamówienia zakupu](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — o ile cena faktury może różnić się od ceny obliczonej.
+
+Przykład dla ilości 9 i podstawy ceny 1: 879,84 ÷ 9 × 1 = 97,76 ceny jednostkowej netto. Kwota całkowita 954,63 z podatkiem 8,5% daje 106,07. Dla faktury z cenami netto porównuj cenę jednostkową netto.

@@ -1,32 +1,34 @@
-# Charge Per Unit Within Tolerance
+# Opłata za jednostkę w granicach tolerancji
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+## Scenariusz:
 
-## Action:
+Opłata za nagłówek za jednostkę mieści się w dopuszczalnym zakresie tolerancji w porównaniu do zamówienia.
 
-The system processes the header charge as invoiced, applying it without adjustments.
+## Działanie:
 
-## Example:
+System przetwarza opłatę nagłówkową zgodnie z fakturą, stosując ją bez korekt.
+
+## Przykład:
 
 * **Purchase Order (PO):**
-  * Header Charge Per Unit: $3.50
+  * Opłata za nagłówek za jednostkę: $3.50
   * Quantity: 1,200 units
-  * Total Header Charge Amount: $4,200.00
+  * Całkowita kwota opłaty za nagłówek: $4,200.00
 * **Invoice Received:**
-  * Header Charge Per Unit: $3.55 (within tolerance of 1.43%)
+  * Opłata za nagłówek za jednostkę: $3.55 (w granicach tolerancji 1.43%)
   * Quantity: 1,200 units
-  * Total Header Charge Amount: $4,260.00
+  * Całkowita kwota opłaty za nagłówek: $4,260.00
 * **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±2%
+  * Tolerancja ładunku nagłówka na jednostkę: ±2%
 
-Since the header charge per unit ($3.55) is within the acceptable tolerance range of 2% compared to the purchase order, the system will:
+Ponieważ opłata za jednostkę ($3.55) mieści się w dopuszczalnym zakresie tolerancji wynoszącym 2% w porównaniu z zamówieniem, system:
 
-1. **Accept the Header Charge Per Unit:** The system accepts the invoiced header charge per unit of $3.55 as it falls within the defined tolerance limit.
-2. **Process the Header Charge:** The system processes the invoice with the total header charge amount based on the invoiced charge per unit and quantity:
-   * **Total Header Charge Amount = Quantity × Header Charge Per Unit**
-   * **Total Header Charge Amount = 1,200 units × $3.55 = $4,260.00**
-3. **Finalize the Invoice:** The system processes the transaction without any adjustments, accepting the invoice as it is.
+1. **Zaakceptuj opłatę za nagłówek za jednostkę:** System akceptuje zafakturowaną opłatę za jednostkę w wysokości $3.55, ponieważ mieści się ona w zdefiniowanym limicie tolerancji.
+2. **Przetwórz opłatę nagłówkową:** System przetwarza fakturę z całkowitą kwotą opłaty nagłówkowej w oparciu o zafakturowaną opłatę jednostkową i ilość:
+   * **Całkowita kwota opłaty za nagłówek = ilość × Opłata za nagłówek na jednostkę**
+   * **Całkowita kwota opłaty za nagłówek = 1,200 jednostek × $3.55 = $4,260.00**
+3. **Sfinalizuj fakturę:** System przetwarza transakcję bez żadnych korekt, akceptując fakturę taką, jaka jest.
 
-This approach ensures smooth and efficient processing of transactions when the header charges fall within the acceptable tolerance range, avoiding unnecessary rejections or delays.
+Takie podejście zapewnia płynne i wydajne przetwarzanie transakcji, gdy opłaty nagłówkowe mieszczą się w akceptowalnym przedziale tolerancji, unikając niepotrzebnych odrzuceń i opóźnień.

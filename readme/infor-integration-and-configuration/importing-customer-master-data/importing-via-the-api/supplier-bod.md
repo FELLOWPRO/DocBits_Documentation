@@ -43,8 +43,8 @@ Abra a interface de teste da API para o ambiente e a região com que está a tra
 
 * [Sandbox API (Europa)](https://eu.sandbox.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
 * [Sandbox API (Estados Unidos)](https://us.sandbox.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
-* [Production API (Europa)](https://eu.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
-* [Production API (Estados Unidos)](https://us.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
+* [API de produção (Europa)](https://eu.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
+* [API de produção (Estados Unidos)](https://us.api.docbits.com/docs#/import/import_supplier_bod_import_supplier_bod_post)
 
 Expanda o endpoint pretendido clicando nele.
 

@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos DIAN da Colômbia no DocBits (Fac
 
 # 🇨🇴 Colômbia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Colômbia](countries/colombia.md). A entrada de classificação de notas de crédito não tem um conjunto de extração dedicado no estado examinado. Confirme o mapeamento efetivo, em vez de deduzir o suporte a partir da entrada de faturas.
+{% endhint %}
+
 | Propriedade | Valor |
 |----------|-------|
 | **País / Região** | Colombia |
@@ -34,7 +40,7 @@ O identificador DIAN (**NIT** — Número de Identificación Tributaria) usa `sc
 
 ## Pré-visualização padrão
 
-<figure><img src="colombia-dian-preview.png" alt="Pré-visualização da Colombia DIAN Factura Electrónica no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/colombia-dian-preview.png" alt="Pré-visualização da Colombia DIAN Factura Electrónica no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
 
 ## Mapeamento de campos
 
@@ -79,5 +85,5 @@ O elemento raiz é `<Invoice>` (UBL 2.1) para faturas, `<CreditNote>` para notas
 
 ## Relacionado
 
-- [Padrões de fatura eletrônica atualmente suportados](../../currently-supported-e-invoice-standards/)
+- [Padrões de fatura eletrônica atualmente suportados](../currently-supported-e-invoice-standards/README.md)
 - [Documentos eletrônicos suportados](./)

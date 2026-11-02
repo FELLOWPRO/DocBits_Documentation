@@ -1,17 +1,46 @@
-# Documents Expiry
+# Validade dos documentos
 
-<figure><img src="../../../.gitbook/assets/docbits_documents_expiry_settings.png" alt="Docbits Documents Expiry Settings"><figcaption></figcaption></figure>
+## Duas regras de retenção em vez de um período de exclusão geral
 
-In the "Documents Expiry" setting under the "DOCUMENT PROCESSING" section, you can configure the automatic deletion schedules for your documents within the system. This feature is particularly useful for managing data retention policies and ensuring compliance with legal or organizational standards regarding document storage.
+<figure><img src="../../../.gitbook/assets/process-expiry-pt-20261028.png" alt="Expiração e exclusão de documentos: Veja duas configurações de retenção separadamente."><figcaption><p>Veja duas configurações de retenção separadamente. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
 
-Here’s what each setting does:
+A expiração do documento distingue a retenção geral de documentos da retenção completa de documentos. Verifique ambas as configurações juntamente com os requisitos do seu processo e o arquivo de destino pretendido.
 
-1. **Delete document after**: This dropdown allows you to set the time frame after which a document that has been processed will be automatically deleted from the system. You can choose from predefined options like 48 Hours, 1 Week, 2 Weeks, or 4 Weeks. This helps in managing space and maintaining document lifecycle policies.
-2. **Delete finished document after**: Similar to the previous setting, but specifically targets the finished or fully processed documents. It allows the same time frame options for deletion, ensuring that completed documents are not stored longer than necessary.
+| Configuração | O que você deve esclarecer |
+| --- | --- |
+| **Delete document after** | Qual valor de retenção de documentos é realmente eficaz em sua organização. |
+| **Delete finished document after** | Qual valor se aplica a documentos concluídos, totalmente processados e exportados. |
+| **Default** | Qual padrão de sistema está armazenado em sua implantação. O nome por si só não indica duração. |
 
-Both settings ensure that documents are not kept indefinitely on your system, helping to avoid unnecessary storage use and keeping the document processing workflow clutter-free. These settings are vital for organizations needing to adhere to specific regulatory requirements about document retention.
+O diagrama **não é uma linha do tempo desenhada em escala**. Não especifica o início técnico do período de retenção nem qual configuração tem precedência. Um valor suspenso por si só não estabelece um tempo de exclusão com precisão de segundos. Para um planejamento confiável, confirme também com que frequência a limpeza é executada.
 
-<figure><img src="../../../.gitbook/assets/docbits_documents_retention_policy.png" alt="Docbits Documents Retention Policy"><figcaption></figcaption></figure>
+### Exportação, retenção e backups separados
 
+Uma exportação bem-sucedida não prova que a cópia DocBits já foi excluída. Por outro lado, excluir um documento em DocBits não remove um ERP armazenado de forma independente ou uma cópia de arquivo. Os backups podem ter regras de retenção separadas; excluir um documento do sistema ativo não prova que todas as cópias de backup foram removidas ao mesmo tempo.
 
+Verifique os prazos antes de fazer alterações e chegue a acordo sobre o arquivo alvo e o tratamento dos backups. A visão geral do [Armazenamento, retenção e exclusão de dados](../../../security/data-storage-and-retention.md) explica as diferenças entre documentos, arquivos intermediários do OCR, logs e backups.
 
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Configurações de Documents Expiry"><figcaption><p>Configurações de Documents Expiry</p></figcaption></figure>
+
+Em Processamento de documentos → Expiração de documentos, configure a retenção de documentos. Verifique as configurações efetivas, o arquivo de destino e o escopo de exclusão da sua organização antes de alterá-los.
+
+Duas configurações controlam a exclusão automática:
+
+| Configuração | O que ela controla |
+|---------|------------------|
+| **Delete document after** | Por quanto tempo qualquer documento processado é mantido antes de ser excluído automaticamente. |
+| **Delete finished document after** | Por quanto tempo um documento concluído (totalmente processado e exportado) é mantido antes de ser excluído automaticamente. |
+
+Para cada configuração, você escolhe um período na lista suspensa:
+
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Opções de Documents Expiry"><figcaption><p>Períodos de retenção disponíveis</p></figcaption></figure>
+
+| Opção | Significado |
+|--------|---------|
+| **Default** | Usa o período de retenção padrão do sistema (sem substituição personalizada). |
+| **48 Hours** | Valor de retenção explícito de 48 horas; confirme o início do período e o cronograma de limpeza separadamente. |
+| **1 Week** | Valor de retenção explícito de uma semana. |
+| **2 Weeks** | Valor de retenção explícito de duas semanas. |
+| **4 Weeks** | Valor de retenção explícito de quatro semanas. |
+
+Essas configurações suportam a retenção planejada de documentos. Eles não substituem a confirmação dos períodos de retenção efetivos, arquivamento de destino e tratamento de backups para sua organização.

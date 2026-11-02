@@ -4,6 +4,8 @@ description: Criar uma cópia separada de uma regra de validação personalizada
 
 # Duplicar uma Regra de Validação Personalizada
 
+<figure><img src="../../../../.gitbook/assets/s150-custom_validation_rule_duplicate_en-pt.png" alt="Regras de validação personalizadas; nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados."><figcaption><p>Regras de validação personalizadas; nomes configurados ocultos. Algumas datas relativas continuam em alemão; Mesa significa aqui tabela de dados.</p></figcaption></figure>
+
 Use **Duplicado** quando uma regra for um bom ponto de partida e você quiser uma cópia separada dela. O DocBits copia a definição da regra; você escolhe o nome e a chave da nova regra. A regra original permanece na lista.
 
 1. Acesse **Configurações → Tipos de Documento**, abra o tipo de documento que deseja configurar e selecione **Regras de Validação Personalizadas** (a função precisa estar ativada nas configurações do tipo de documento). A página mostra o tipo de documento selecionado acima dos cartões de regras. Veja [Tipos de Documento](README.md) para as outras configurações disponíveis ali.

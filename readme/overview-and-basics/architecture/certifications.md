@@ -8,7 +8,7 @@ Potrzebujesz certyfikatu dla zespołu zakupów, bezpieczeństwa lub zgodności? 
 
 ## 1. ISO/IEC 27001
 
-<figure><img src="../../.gitbook/assets/certifications1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications1.png" alt="Strona przeglądu certyfikatów zawierająca listę certyfikatów zgodności z nazwami dokumentów, datami wystawienia i ikonami pobierania"><figcaption></figcaption></figure>
 
 Ten międzynarodowy standard definiuje wymagania dotyczące ustanawiania, wdrażania, utrzymywania i ciągłego doskonalenia Systemu Zarządzania Bezpieczeństwem Informacji (ISMS). Pomaga organizacjom chronić dane w sposób systematyczny i opłacalny, w tym procesy zarządzania ryzykiem i kontrole bezpieczeństwa informacji.
 
@@ -20,7 +20,7 @@ Ten międzynarodowy standard definiuje wymagania dotyczące ustanawiania, wdraż
 
 ## 2. SOC 1 (Kontrola organizacji usługowej 1)
 
-<figure><img src="../../.gitbook/assets/certifications2.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications2.avif" alt="Rząd odznak certyfikacji z pieczęciami zgodności SOC 2 Type II i RODO na ciemnym tle"><figcaption></figcaption></figure>
 
 Raporty SOC 1 są przeznaczone dla organizacji, które muszą wykazać skuteczność wewnętrznych kontroli dotyczących sprawozdawczości finansowej. Jest to szczególnie istotne dla dostawców usług, którzy mają wpływ na sprawozdawczość finansową swoich klientów.
 
@@ -32,7 +32,7 @@ Raporty SOC 1 są przeznaczone dla organizacji, które muszą wykazać skuteczno
 
 ## 3. SOC 2 (Kontrola organizacji usługowej 2)
 
-<figure><img src="../../.gitbook/assets/certifications3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications3.png" alt="Strona certyfikatów zawierająca odznaki zgodności SOC 2 Type II, ISO 27001 i GDPR z krótkim tekstem opisowym"><figcaption></figcaption></figure>
 
 SOC 2 koncentruje się na kontrolach organizacji świadczącej usługi, które są istotne dla bezpieczeństwa, dostępności, integralności przetwarzania, poufności i prywatności danych. Jest to kluczowe dla firm technologicznych i chmurowych, które zajmują się wrażliwymi informacjami.
 
@@ -44,7 +44,7 @@ SOC 2 koncentruje się na kontrolach organizacji świadczącej usługi, które s
 
 ## 4. Zgodność z GDPR (ogólnym rozporządzeniem o ochronie danych).
 
-<figure><img src="../../.gitbook/assets/certifications4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/certifications4.png" alt="Okrągła granatowa odznaka GDPR z białym napisem, żółtymi punktami dekoracyjnymi i białym tłem"><figcaption></figcaption></figure>
 
 RODO to rozporządzenie w prawie UE dotyczące ochrony danych i prywatności w Unii Europejskiej oraz Europejskim Obszarze Gospodarczym. Dotyczy również transferu danych osobowych poza obszar UE i EOG.
 

@@ -23,7 +23,7 @@ Każdą grupę można skonfigurować pod kątem:
 3. Wybierz **Moduł.**
 4. Aktywuj **Kontrolę Dostępu**, włączając przełącznik.
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt="Strona Access Control w ustawieniach DocBits z otwartą kartą Access Control"><figcaption></figcaption></figure>
 
 ## Otwieranie Kontroli Dostępu grupy
 

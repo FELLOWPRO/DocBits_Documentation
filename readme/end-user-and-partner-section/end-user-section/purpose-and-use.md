@@ -4,7 +4,7 @@
 
 Ekran walidacji w DocBits został zaprojektowany do weryfikacji dokładności i kompletności danych zawartych w dokumentach przed ich przetworzeniem lub zapisaniem. Ta funkcjonalność jest kluczowa dla zapewnienia, że wszystkie dane są poprawnie odczytane i przetworzone, co pozwala na utrzymanie integralności i jakości danych.
 
-<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt="Diagram ułożonych w stos kroków typu chevron dla ekranu walidacji obejmujący walidację, wydajność, zgodność, przyjazność dla użytkownika, zapobieganie błędom, integrację danych i jakość danych"><figcaption></figcaption></figure>
 
 ## Szczegółowy Opis Celu i Zastosowania Ekranu Walidacji
 

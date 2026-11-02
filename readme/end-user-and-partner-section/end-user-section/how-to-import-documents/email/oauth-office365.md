@@ -8,7 +8,7 @@ Tutaj wystarczy wpisać swoją podorganizację i nacisnąć **Uwierzytelniać**
 
 Zostaniesz przeniesiony na tę stronę Microsoft i będziesz musiał wprowadzić kod.
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
+![Strona logowania Microsoft prosząca o wprowadzenie kodu, z polem wejściowym Code i przyciskiem Next](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
 Ten kod znajdziesz, wracając do DocBits — kod zostanie tam wyświetlony tak jak poniżej. Skopiuj kod i wprowadź go na stronie Microsoft. Następnie musisz podać własne dane logowania Microsoft.
 

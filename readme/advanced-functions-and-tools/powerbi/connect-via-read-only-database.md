@@ -18,7 +18,7 @@ Ten przewodnik pokazuje, jak połączyć **bazę danych tylko do odczytu DocBits
 * Wybierz z listy sterownik **PostgreSQL Unicode(x64)** i kliknij **Finish**.
 * Wypełnij wymagane pola danymi uwierzytelniającymi z:\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
-<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt="Okienko Navigator w Power BI pokazujące źródło danych ODBC dsn-Sandbox-Read_Only ze schematem public i wymienionymi jego tabelami"><figcaption></figcaption></figure>
 
 **Wymagane pola:**
 
@@ -38,7 +38,7 @@ Ten przewodnik pokazuje, jak połączyć **bazę danych tylko do odczytu DocBits
     <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI Get Data ODBC"><figcaption></figcaption></figure>
 * Z listy DSN wybierz skonfigurowane źródło (np. `Sandbox-Read_Only`).
 
-<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt="Power BI Navigator z tabelami z sandbox-doc2api, takimi jak supplier group, supplier header i task assignment, z przyciskami Select Related Tables, Load i Transform Data"><figcaption></figcaption></figure>
 
 * Kliknij **OK**. Jeśli zostaniesz o to poproszony, ponownie wprowadź dane uwierzytelniające.
   * Jeśli pojawi się `password authentication failed for user`, sprawdź host, bazę danych, nazwę użytkownika i hasło. W oknie uwierzytelniania wpisz rzeczywiste hasło. Nawiasy klamrowe służące do maskowania znaków w ciągu połączenia ODBC należą do składni sterownika i nie są uniwersalnym rozwiązaniem błędu uwierzytelniania.
@@ -49,9 +49,9 @@ Ten przewodnik pokazuje, jak połączyć **bazę danych tylko do odczytu DocBits
 * Otwórz schemat **`public`**.
 * Zaznacz tabele, które chcesz zaimportować.
 
-![](../../.gitbook/assets/connect_read_only_1.png)
+![Panel Read-Only DB Access w DocBits pokazujący pola nazwy użytkownika, hasła, bazy danych, hosta i portu oraz listę dostępnych tabel](../../.gitbook/assets/connect_read_only_1.png)
 
-![](../../.gitbook/assets/connect_read_only_2.png)
+![Okno dialogowe From ODBC w Power BI z listą rozwijaną Data source name (DSN) i opcjami zaawansowanymi](../../.gitbook/assets/connect_read_only_2.png)
 
 * Wybierz:
   * **Load** → Import bezpośrednio do Power BI

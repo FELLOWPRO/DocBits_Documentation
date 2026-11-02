@@ -4,7 +4,7 @@
 
 Rozumiemy znaczenie bezpiecznego transferu danych. Dlatego używamy otwartego portu 443, standardowego portu dla HTTPS, co zapewnia, że wszystkie przesyłane dane są szyfrowane i bezpieczne. Nasze połączenia zabezpieczone SSL gwarantują, że Twoje dane są bezpieczne na każdym etapie procesu.
 
-<figure><img src="../.gitbook/assets/inforInfratructure1.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/inforInfratructure1.svg" alt="Otwarcie portu 443 &amp;#x26; bezpieczna komunikacja - DocBits"><figcaption></figcaption></figure>
 
 ### Komunikacja z bazą danych
 
@@ -20,10 +20,10 @@ Zezwalamy tylko na połączenia zabezpieczone HTTPS do komunikacji z naszymi ser
 
 ### Infor Cloud
 
-<figure><img src="../.gitbook/assets/inforInrastructure2.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/inforInrastructure2.webp" alt="Diagram konfiguracji połączenia DocBits z chmurą Infor: przeglądarka za firewallem na porcie 443, magazyn Space S3 i baza danych PostgreSQL"><figcaption></figcaption></figure>
 
 ### Infor On-Prem
 
 Elastyczność jest kluczowa, a my oferujemy zarówno rozwiązania w chmurze, jak i lokalne. Dzięki naszej opcji lokalnej nie ma potrzeby otwierania jakichkolwiek portów, co zapewnia, że bezpieczeństwo Twojej sieci pozostaje nienaruszone. Niezależnie od tego, czy jesteś w chmurze, czy trzymasz wszystko w firmie, mamy Cię pod opieką.
 
-<figure><img src="../.gitbook/assets/inforInfrastructure3.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/inforInfrastructure3.webp" alt="Diagram lokalnej konfiguracji DocBits ze skanerem i przeglądarką za lokalną zaporą, łączącymi się z Local File Storage, Space S3 i PostgreSQL"><figcaption></figcaption></figure>

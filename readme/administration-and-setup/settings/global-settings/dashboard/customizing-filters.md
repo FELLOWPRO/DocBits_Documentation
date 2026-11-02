@@ -2,7 +2,7 @@
 
 Jeśli szukasz jednego lub więcej konkretnych dokumentów, masz do dyspozycji następujące opcje. W obrębie paska wyszukiwania udostępniliśmy różne narzędzia, które pomogą Ci znaleźć poszukiwany dokument. Aby uzyskać do nich dostęp, wybierz następujący ikonę.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
+![Pulpit nawigacyjny DocBits z paskiem wyszukiwania All documents i ikoną filtra obok Upload](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
 
 Korzystanie z filtrów pozwala użytkownikom szybko znaleźć istotne informacje i ograniczyć ilość danych do niezbędnych.
 

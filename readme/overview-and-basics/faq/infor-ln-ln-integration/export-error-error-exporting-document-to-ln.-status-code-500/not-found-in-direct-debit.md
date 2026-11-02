@@ -31,7 +31,7 @@ Jeśli **Automatyczne dopasowanie** jest ustawione na **Dopasuj do potwierdzenia
 
 Powinno to wyglądać następująco:
 
-<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt="Plik LN-Mapping z polem IRF_PackingSlip ustawionym na TF_packing_slip i PackingSlip dodanym do InvoiceReceiptFields"><figcaption></figcaption></figure>
 
 ## **Krok 4: Dodaj zaktualizowany plik z powrotem do DocBits**
 

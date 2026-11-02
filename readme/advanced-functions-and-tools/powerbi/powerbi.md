@@ -24,7 +24,7 @@ Ten przewodnik pokazuje, jak połączyć **ClickHouse** z **Power BI Desktop** z
 
     **DocBits** → **Ustawienia** → **Przetwarzanie dokumentów** → **Moduł** → **AI Panel kontrolny** → **ClickHouse Dostęp bezpośredni**
 
-    <figure><img src="../../.gitbook/assets/clickhouse_direct_access_settings.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/clickhouse_direct_access_settings.png" alt="Ustawienia pulpitu DocBits AI z nazwą użytkownika, hasłem i bazą danych ClickHouse Direct Access oraz dostępnymi tabelami raportów"><figcaption></figcaption></figure>
 
     **Wymagane pola:**
 
@@ -42,11 +42,11 @@ Ten przewodnik pokazuje, jak połączyć **ClickHouse** z **Power BI Desktop** z
 *   Wybierz **Get Data** → **ODBC** → **Connect**.\
 
 
-    <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Okno Get Data w Power BI z kartami Certified Connectors i Template Apps do wyboru źródła ODBC"><figcaption></figcaption></figure>
 *   Z listy DSN wybierz skonfigurowane źródło (np. `ClickHouse_Prod`).\
 
 
-    <figure><img src="../../.gitbook/assets/powerbi_select_dsn.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/powerbi_select_dsn.png" alt="Okno dialogowe From ODBC w Power BI z wybraną nazwą źródła danych ClickHouse Prod oraz Advanced options poniżej"><figcaption></figcaption></figure>
 * Kliknij **OK**. Jeśli zostaniesz o to poproszony, ponownie wprowadź dane uwierzytelniające.
 
 #### 4. Wczytaj i przekształć dane
@@ -57,7 +57,7 @@ Ten przewodnik pokazuje, jak połączyć **ClickHouse** z **Power BI Desktop** z
   *   **Transform Data**: aby otworzyć Power Query i ukształtować dane\
 
 
-      <figure><img src="../../.gitbook/assets/powerbi_navigator_load_transform.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../.gitbook/assets/powerbi_navigator_load_transform.png" alt="Panel Navigator w Power BI z listą tabel ze źródła ClickHouse Prod ODBC oraz kolumnami assigned_on i assigned_to"><figcaption></figcaption></figure>
 
 #### 5. Zwizualizuj swoje dane
 
@@ -80,7 +80,7 @@ Odświeżanie według harmonogramu zależy od licencji lub pojemności obszaru r
 
 #### 7. Przykładowe pulpity i widoki danych&#x20;
 
-<div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Pulpit analizy dostawców pokazujący łączną ilość zakupów, wskaźniki OTIF, niedopasowane dokumenty i skuteczność dostaw według dostawcy"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Raport analizy dostaw Power BI z miesięcznym wykresem statusu dostaw dzielącym przesyłki na Early, OnTime i Late"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Przykładowy pulpit Power BI porównujący sumy faktur DocBits i Infor według dostawcy z trendem miesięcznym"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Pulpit podsumowania dostawców ze statusem dopasowania danych według dostawców i miesięcznym trendem transakcji udanych i z błędami"><figcaption></figcaption></figure></div>
 
 [Oficjalna dokumentacja — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
 

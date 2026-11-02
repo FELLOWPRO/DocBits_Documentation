@@ -4,7 +4,7 @@
 
 Witamy w module Księgowanie faktur kosztowych i sprzedaży pośredniej! Ten moduł został zaprojektowany, aby pomóc Ci efektywnie zarządzać i uzgadniać transakcje finansowe w Twoim systemie ERP. Dzięki funkcjom takim jak automatyczne wyodrębnianie danych, dopasowywanie dokumentów i szczegółowe śledzenie, możesz zapewnić, że Twoje zapisy finansowe są dokładne i aktualne.
 
-<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt="Ekran księgowania z kolumnami Split by total, Position Accounts, Voucher Text i Total obok faktury dostawcy"><figcaption></figcaption></figure>
 
 ## Pierwsze kroki
 

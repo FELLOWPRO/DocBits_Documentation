@@ -8,7 +8,7 @@
 
 Szwajcarskie QR Billy są zgodne ze standardem płatności **ISO 20022** i są wydawane w dwóch wersjach: **v1.0** (wczesne wdrożenie) i **v2.0** (aktualna). Ekstraktor DocBits obsługuje obie. Rozpoznane payloady są dekodowane do pełnego zestawu pól — wierzyciel, dłużnik, IBAN / QR-IBAN, kwota, waluta, typ referencji (QRR, SCOR lub NON), wiadomości strukturalne i swobodne oraz alternatywne schematy płatności.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt="Strona wyszukiwania w ustawieniach z wpisami modułu Purchase Order, w tym panel PO, panel zamówienia wysyłki i automatyczny eksport przy 100% dopasowaniu PO"><figcaption></figcaption></figure>
 
 #### Kluczowe korzyści
 
@@ -77,6 +77,6 @@ Parsowanie szwajcarskiego QR Bill jest objęte ogólnym przełącznikiem **Ekstr
    * Przewiń do opcji **Ekstrakcja kodów kreskowych / QR**.
    * Ustaw przełącznik na włączony.
 
-<figure><img src="../../../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (444).png" alt="Strona wyszukiwania w ustawieniach z wpisami modułu Purchase Order, w tym panel PO, panel zamówienia wysyłki i automatyczny eksport przy 100% dopasowaniu PO"><figcaption></figcaption></figure>
 
 Pełną listę standardów płatniczych kodów QR znajdziesz na stronie [Przegląd](./README.md).

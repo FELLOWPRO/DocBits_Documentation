@@ -29,21 +29,21 @@ Przed importem pobierz wymagany szablon połączenia za pomocą poniższego plik
 1. **Otwórz Infor ION Desk:**
    *   Przejdź do **InforOS** → **ION Desk** → **Connect** → **Connection Points**.
 
-       ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
+       ![Menu nawigacyjne Infor ION Desk z pozycjami Home, Data Flows, API Flows i Mappings](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 2. **Zaimportuj szablon:**
    *   Kliknij przycisk **Import**.
 
-       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt="Strona Connect w Infor ION Desk z widokiem Connection Points wraz z wyszukiwarką i paskiem narzędzi"><figcaption></figcaption></figure>
    * Wybierz odpowiedni **plik szablonu** ze swojego komputera.
    *   Kliknij **OK**, aby rozpocząć proces importu.
 
-       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="" width="327"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="Okno dialogowe Upload Local File w Infor ION Desk z plikiem DocBits-Dev-Prod-Import-Template wybranym do przesłania" width="327"><figcaption></figcaption></figure>
 3. **Potwierdzenie:**
    *   Jeśli import się powiedzie, zostanie wyświetlony komunikat potwierdzający.
 
-       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt="Potwierdzenie importu w Infor ION Desk informujące, że import DocBits-Dev-Prod-Import-Template zakończył się powodzeniem"><figcaption></figcaption></figure>
 4. **Konfiguracja po imporcie:**
    * Po zaimportowaniu szablonu możesz w razie potrzeby dostosować wybrane ustawienia połączenia.
    * Nie zapomnij zaimportować lub skonfigurować **konta serwisowego** (Service Account) do uwierzytelniania i kontroli dostępu.
 
-<figure><img src="../../.gitbook/assets/m3_import_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/m3_import_5.png" alt="Strona API Connection Point dla DocBits-Dev-Prod-Import-Template z nazwą, identyfikatorem logicznym i szczegółami uwierzytelniania"><figcaption></figcaption></figure>

@@ -14,6 +14,6 @@ Możesz również skontaktować się z nami za pośrednictwem naszej strony FELL
 
 W ekranie walidacji możesz bezpośrednio tworzyć zgłoszenia dla konkretnego dokumentu i dołączyć zrzut ekranu problemu. Po prostu kliknij przycisk "Utwórz zgłoszenie", otworzy się okno wsparcia i możesz od razu zacząć.
 
-<figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/user-support3.png" alt="Przycisk Create ticket na pasku narzędzi walidacji dokumentów, służący do otwierania zgłoszenia do wsparcia"><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/s150-user-support4-pl.png" alt="Formularz pomocy technicznej przed wysłaniem. Bilet wsparcia oznacza formularz zgłoszenia do pomocy technicznej."><figcaption><p>Formularz pomocy technicznej przed wysłaniem. Bilet wsparcia oznacza formularz zgłoszenia do pomocy technicznej.</p></figcaption></figure>

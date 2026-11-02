@@ -6,7 +6,7 @@ Domyślnie, określone pola w procesie walidacji pól są automatycznie sprawdza
 
 Zawsze możesz zweryfikować używaną formułę, najeżdżając kursorem na ikonę informacji.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1.png" alt="Ekran walidacji z polami Total net amount 77,91, Total amount 84,20 i Currency EUR oraz tabelą EXTRACTED TABLE z kolumną Total net amount"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Uwaga:**</mark> Ikona informacji jest widoczna tylko wtedy, gdy wartość została wyodrębniona dla odpowiadającego pola.
 

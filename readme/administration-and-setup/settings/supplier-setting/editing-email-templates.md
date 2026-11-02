@@ -24,7 +24,7 @@ Funkcja Email Templates pozwala administratorom tworzyć i dostosowywać komunik
    * Edytor pozwala modyfikować zarówno kod HTML, jak i wizualny wygląd e-maila.
    * Możesz przełączać się między edycją wizualną a edycją kodu za pomocą dostępnych zakładek.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Strona Edit Template dla Supplier Invitation Email z polami Name, Subject, Sender Name i Magic Link oraz kodem źródłowym HTML"><figcaption></figcaption></figure>
 
 #### Definiowanie `{{magic_link}}` jako linku
 

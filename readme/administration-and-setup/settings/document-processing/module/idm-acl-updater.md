@@ -16,7 +16,7 @@ Aby aktywować moduł ACL-Updater, wykonaj następujące kroki:
 
 Po aktywowaniu modułu możesz wybrać **ION plik mapowania** do użycia.
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt="Strona ustawień modułów z rozwiniętym IDM ACL Updater, pokazująca wybór pliku ION-Mapping File oraz tabelę z kolumnami Infor-Doctype, Old-ACL i New-ACL"><figcaption></figcaption></figure>
 
 ### Dodawanie informacji ACL
 
@@ -26,5 +26,5 @@ Aby dodać informację ACL, kliknij przycisk **Dodaj**. Następnie możesz okre�
 * **Current IDM ACL Status**
 * **New IDM ACL Status**
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2.png" alt="Okno dialogowe Add IDM ACL Mapping z polami IDM Document Type, Current IDM ACL status i New IDM ACL status oraz przyciskami CANCEL i SAVE" width="563"><figcaption></figcaption></figure>
 

@@ -91,7 +91,7 @@ Clique em **Nova regra**. O construtor tem três etapas. **Regra de teste** e **
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-line-step1.png" alt="Etapa 1 para uma regra de linha de tabela"><figcaption><p>Uma regra de linha de tabela: a tabela e a coluna que exibe o erro</p></figcaption></figure>
 
-### Etapa 2 — Applies when
+### Passo 2 — Condições de aplicação (Applies when)
 
 Decida se a regra é executada para todos os documentos ou apenas para alguns. Deixe vazio para verificar todos os documentos. Caso contrário, adicione linhas de condição — por exemplo "Document Origin is Deutsch" e "Total Amount greater than 250" — e combine-as com **Todos** / **ANY** e grupos aninhados.
 
@@ -193,7 +193,7 @@ Exceto **Obrigatório**, toda verificação **é aprovada quando o valor está v
 * **Mensagem de erro exibida ao usuário que está processando o erro.** — o texto na tela de validação. Diga o que está errado **e** o que fazer: "Supplier tax ID is missing. German invoices over 250 EUR must show it."
 * **Código de erro** — um código técnico curto, por exemplo `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Ele aparece nas exportações e permite agrupar erros.
 
-## Test rule
+## Testar a regra
 
 Clique em **Regra de teste** para executar a versão atual da regra — salva ou não — em um documento. Informe um **ID do documento** ou mude para **Por documento JSON** e cole os dados extraídos. **Nada é salvo** e o documento não é alterado.
 
@@ -221,6 +221,18 @@ Teste cada nova regra em pelo menos um documento que deva falhar, um que deva se
 * As regras são executadas por ordem de prioridade (depois pela chave). Um campo exibe **um** erro: se duas regras falharem no mesmo campo, a primeira prevalece; as regras seguintes não a sobrescrevem.
 * Os avisos são coletados separadamente e nunca ocultam um erro.
 * Se uma regra não puder ser avaliada — por exemplo, uma divisão por zero em uma fórmula — ela é ignorada. Uma regra com defeito nunca marca um documento como inválido por engano.
+
+## Registros <a id="logs"></a>
+
+Cada regra pode registar as suas avaliações. Para isso abra a página **Registros de execução de regras** do tipo de documento: o cabeçalho indica o tipo de documento e o ícone de atualização recarrega a lista.
+
+**Encontre por** define o que é pesquisado (por omissão **Chave da regra**) e o valor escreve-se no campo ao lado. Ao pesquisar por documento, **Tipo de regra** é obrigatório. Restrinja o resultado com **Resultado**, **Executado**, **A partir da data** e **A data**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-pt.png" alt="Os registos de execução de regras"><figcaption><p>A página dos registos de execução: os filtros em cima e uma linha por avaliação abaixo. Enquanto não houver pesquisa, a tabela indica o que introduzir.</p></figcaption></figure>
+
+Abra uma entrada para ver o detalhe, incluindo o **rastreamento da condição**: cada linha de *Applies when* com o valor esperado, o valor real do documento e se foi cumprida. Ver [Ler o rastreamento da condição nos logs](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+
+A mesma página mostra também os registos das regras de transformação e de seleção de layout.
 
 ## Receitas
 

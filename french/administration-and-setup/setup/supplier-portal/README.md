@@ -1,125 +1,76 @@
-# Tableau de bord du fournisseur
+# Portail fournisseurs
 
-## Aperçu
+Le **portail fournisseurs** permet à un administrateur de donner aux fournisseurs de son entreprise un accès à **DocBits**. L’administrateur active le portail et définit quels fournisseurs peuvent l’utiliser et quelles informations ils peuvent consulter.
 
-Cette page explique comment activer et utiliser le **Tableau de bord du fournisseur**, ainsi que où trouver tous les paramètres pertinents. Le Tableau de bord du fournisseur vous permet d'inviter des fournisseurs à **DocBits**. Une fois l'accès accordé, les fournisseurs peuvent se connecter pour voir le statut de leurs **Commandes d'achat** et **Factures** directement dans **DocBits**.
+Un fournisseur invité s’inscrit puis se connecte avec son propre compte. Il peut consulter les informations mises à sa disposition, par exemple le statut de ses commandes d’achat et de ses factures. Les fonctions disponibles dépendent de la configuration de l’organisation.
 
-## Comment activer le Tableau de bord du fournisseur
+## Vidéo : préparer le portail fournisseurs et les accès
 
-1.  Allez dans **Paramètres → Traitement des documents → Module**.
+Un administrateur présente l’option du portail, le choix du forfait, la préparation d’une invitation et l’entrée dans l’inscription. Activation, envoi, inscription et approbation sont expliqués comme des étapes distinctes.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  Dans la section **Expédition et fournisseur**, activez l'option **Tableau de bord du fournisseur**.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/fr.mp4" %}
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+[Ouvrir la vidéo avec sous-titres français et sélection des chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/fr.html)
 
-## Paramètres du fournisseur
+## Admin : activer le portail
 
-Une fois la fonctionnalité **Tableau de bord du fournisseur** activée, une nouvelle section **Paramètres du fournisseur** apparaîtra en bas du menu **Paramètres**.
+1. Dans les paramètres, ouvrez les modules puis la rubrique **Intégration de documents**.
+2. Développez **Expédition et fournisseur** et activez **Tableau de bord du fournisseur**.
+3. Si une fenêtre d’activation apparaît, vérifiez l’offre affichée et confirmez l’activation souhaitée.
 
-<figure><img src="../../../.gitbook/assets/prior-t012-fr.png" alt="Paramètres généraux du portail fournisseurs : champs supplémentaires de l’invitation. L’interrupteur est affiché dans son état existant, sans modification."><figcaption><p>Paramètres généraux du portail fournisseurs : champs supplémentaires de l’invitation. L’interrupteur est affiché dans son état existant, sans modification.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-49-module-fr-20261031.png" alt="Vue réelle de Dev en français, Expédition et fournisseur : Tableau de bord du fournisseur est déjà activé dans cette organisation de test. L’interrupteur n’a pas été modifié pour la capture."><figcaption><p>Vue réelle de Dev en français, Expédition et fournisseur : Tableau de bord du fournisseur est déjà activé dans cette organisation de test. L’interrupteur n’a pas été modifié pour la capture.</p></figcaption></figure>
 
-[**Paramètres généraux du fournisseur**](../../settings/supplier-setting/supplier-general-settings.md): Ici, vous pouvez personnaliser le **Tableau de bord du fournisseur** en téléchargeant le logo de votre entreprise—affiché dans l'en-tête de tous les modèles d'e-mails—et en gérant des documents légaux tels que les Conditions d'utilisation et la Politique de confidentialité.
+## Admin : configurer le portail
 
-[**Modèles d'e-mails**](../../settings/supplier-setting/editing-email-templates.md)**:** Ici, vous pouvez créer et tester les modèles d'e-mails d'invitation qui seront envoyés aux fournisseurs invités.
+Configurez le portail de votre organisation avant d’envoyer les premières invitations :
 
-**Disposition du fournisseur:** Ici, vous pouvez créer et gérer les dispositions qui définissent quelles informations les nouveaux fournisseurs doivent fournir lors du processus d'enregistrement.
+- [Paramètres généraux des fournisseurs](../../settings/supplier-setting/supplier-general-settings.md): Champs supplémentaires d’invitation, statuts, logo et informations de confidentialité.
+- [Modèles d’e-mail](../../settings/supplier-setting/editing-email-templates.md): Contenu et présentation des messages d’invitation.
+- [Mise en page fournisseur](../../settings/supplier-setting/supplier-layout.md): Champs d’inscription des fournisseurs et de gestion interne. Sélectionnez le type de mise en page approprié.
+- [Autorisations des fournisseurs](../../settings/supplier-setting/supplier-permissions.md): Affectation des collaborateurs internes aux groupes de fournisseurs. Ces responsabilités internes sont distinctes de l’accès personnel du fournisseur au portail.
 
-[**Configuration d'exportation**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Ici, vous pouvez définir comment les données sont mappées et synchronisées entre le **Tableau de bord du fournisseur** et le système **Infor M3** à l'aide de fichiers de mappage ION et IDM.
+<figure><img src="../../../.gitbook/assets/dbdc-49-general-invitation-fields-fr-20261031.png" alt="Vue réelle des champs supplémentaires d’invitation : l’option est déjà activée et Champs conserve la sélection configurée Assigned User. Aucune modification n’a été enregistrée."><figcaption><p>Vue réelle des champs supplémentaires d’invitation : l’option est déjà activée et Champs conserve la sélection configurée Assigned User. Aucune modification n’a été enregistrée.</p></figcaption></figure>
 
-**Autorisations du fournisseur**: Ici, vous pouvez configurer les autorisations que les fournisseurs auront dans le **Tableau de bord du fournisseur**. Vous pouvez également regrouper les fournisseurs, ce qui facilite la gestion des accès et des paramètres entre plusieurs fournisseurs.
+## Admin : rechercher et filtrer les fournisseurs
 
-Un guide détaillé sur tous les paramètres du fournisseur peut être trouvé [ici](../../settings/supplier-setting/).
+Ouvrez le **tableau de bord des fournisseurs** pour la gestion interne. Les totaux **tous les fournisseurs**, **En attente de validation** et **Enregistrement en cours** permettent de limiter la liste affichée. Le champ **Recherche par nom, numéro** sert à rechercher un fournisseur par son nom ou son numéro.
 
-## Tableau de bord des fournisseurs <a href="#supplier-permissions" id="supplier-permissions"></a>
+Ouvrez le contrôle des filtres dans le champ de recherche pour utiliser **Groupes de fournisseurs**, **Statut** et **Créé le**. **Fournisseur par page** règle la taille de la page ; **Effacer les filtres** supprime les filtres de recherche actifs. Ces contrôles concernent la liste des fournisseurs.
 
-Vous pouvez accéder au **Tableau de bord des fournisseurs** depuis le menu de gauche, comme indiqué ci-dessous.
+<figure><img src="../../../.gitbook/assets/dbdc-49-filters-fr-20261031.png" alt="Menu de filtres avec Groupes de fournisseurs, Statut, Créé le, Fournisseur par page et Effacer les filtres. La capture montre les contrôles disponibles sans attester un test du résultat du filtrage."><figcaption><p>Menu de filtres avec Groupes de fournisseurs, Statut, Créé le, Fournisseur par page et Effacer les filtres. La capture montre les contrôles disponibles sans attester un test du résultat du filtrage.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+## Admin : choisir les colonnes visibles
 
-Tous vos fournisseurs créés sont affichés ici.
+À côté du bouton d’actualisation, ouvrez les paramètres de colonnes. L’infobulle indique **Définir les colonnes du tableau pour l'organisation**. Sélectionnez des champs dans **Colonnes cachées** ou **Colonnes visibles**, puis déplacez-les entre les listes avec les flèches. Utilisez les poignées pour modifier l’ordre des colonnes visibles. **Terminé** applique la sélection à l’organisation ; **Annuler** ferme la fenêtre sans l’appliquer. Le défilement horizontal permet d’atteindre les colonnes d’un tableau plus large que l’écran.
 
-## Filtrer les fournisseurs
+<figure><img src="../../../.gitbook/assets/dbdc-49-columns-fr-20261031.png" alt="Paramètres de colonnes avec Colonnes cachées, Colonnes visibles, flèches, Annuler et Terminé. La fenêtre a été fermée avec Annuler sans modifier la sélection."><figcaption><p>Paramètres de colonnes avec Colonnes cachées, Colonnes visibles, flèches, Annuler et Terminé. La fenêtre a été fermée avec Annuler sans modifier la sélection.</p></figcaption></figure>
 
-Vous pouvez rechercher des fournisseurs par N**om** ou N**uméro**, ou utiliser les filtres avancés pour affiner les résultats par :
+## Admin : consulter l’analytique des échéances
 
-* **Groupes de fournisseurs**
-* **Statut**
-* **Créé le**
+Utilisez **Analytique**, l’icône de graphique à côté des paramètres de colonnes, pour afficher ou masquer la synthèse des échéances. Les cartes indiquent **Expiré** et **Expire dans**, avec les périodes **1 Mois**, **2 Mois**, **3 Mois**, **6 Mois** et **1 Année**, telles qu’elles apparaissent dans l’interface. Sélectionner une carte limite la liste à la période d’échéance correspondante. Les compteurs concernent les dates d’expiration des fournisseurs.
 
-Vous pouvez également spécifier combien de fournisseurs doivent être affichés par page.
+<figure><img src="../../../.gitbook/assets/dbdc-49-analytics-fr-20261031.png" alt="Analytique affiche Expiré et Expire dans pour un, deux, trois ou six mois et une année. Les lignes sont masquées et aucune carte n’a été sélectionnée."><figcaption><p>Analytique affiche Expiré et Expire dans pour un, deux, trois ou six mois et une année. Les lignes sont masquées et aucune carte n’a été sélectionnée.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+## Admin : inviter les fournisseurs
 
-De plus, vous pouvez rapidement filtrer par les statuts **En attente de validation** ou **Enregistrement en cours** en cliquant sur la catégorie correspondante à gauche de la barre de filtre.
+Ouvrez la gestion des fournisseurs. Avant toute invitation, vérifiez l’entreprise, le groupe, le contact et l’adresse e-mail. Lors de la création d’un fournisseur, l’enregistrement demande l’envoi de l’invitation à s’inscrire ; il ne conserve pas simplement un brouillon. Pour un fournisseur existant, utilisez l’action d’invitation correspondante. Une confirmation d’envoi ne prouve ni la réception du message ni la fin de l’inscription.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-fr-20261031.png" alt="Tableau de bord interne avec tous les fournisseurs, En attente de validation, Enregistrement en cours, recherche et barre d’outils. Les lignes des fournisseurs existants sont masquées."><figcaption><p>Tableau de bord interne avec tous les fournisseurs, En attente de validation, Enregistrement en cours, recherche et barre d’outils. Les lignes des fournisseurs existants sont masquées.</p></figcaption></figure>
 
-## Statut du fournisseur
+<figure><img src="../../../.gitbook/assets/dbdc-49-invitation-fr-20261031.png" alt="Formulaire vide Ajouter un fournisseur avec Groupe de Fournisseurs, Nom du fournisseur, coordonnées du contact, Annuler et Enregistrer. Enregistrer demande l’envoi de l’invitation à s’inscrire ; seule l’action Annuler a été utilisée pour la capture."><figcaption><p>Formulaire vide Ajouter un fournisseur avec Groupe de Fournisseurs, Nom du fournisseur, coordonnées du contact, Annuler et Enregistrer. Enregistrer demande l’envoi de l’invitation à s’inscrire ; seule l’action Annuler a été utilisée pour la capture.</p></figcaption></figure>
 
-Si vous utilisez le **Tableau de bord du fournisseur**, il est important de comprendre les différents statuts que les fournisseurs peuvent avoir. Voici une liste de tous les statuts possibles des fournisseurs et leur signification :
+## Admin : ouvrir la fiche depuis le tableau de bord des fournisseurs
 
-* **Open**: Fournisseur existant qui n'a pas encore été invité au tableau de bord.
-* **Enregistrement en cours**: Le fournisseur a été invité mais n'a pas encore complété le processus d'enregistrement.
-* **En attente de l'avis du fournisseur**: L'enregistrement est complet, mais des informations ou des modifications supplémentaires sont requises de la part du fournisseur.
-* **En attente de validation**: Le fournisseur a complété l'enregistrement et attend la première validation.
-* **En attente d'approbation AP**: Le fournisseur a reçu la première approbation et attend une seconde approbation (Comptabilité).
-* **Approuvé**: Le fournisseur a complété le processus et a été entièrement approuvé.
-* **Rejeté**: L'enregistrement ou l'approbation du fournisseur a été rejeté.
+L’équipe interne peut ouvrir la fiche détaillée depuis la ligne d’un fournisseur dans le tableau de bord. Cette vue contient les six mêmes rubriques que remplit le fournisseur et affiche leur statut. Elle permet de vérifier et de tenir à jour les informations transmises, puis d’effectuer l’approbation correspondante. Aucune ligne d’un fournisseur existant n’a été ouverte pour ces captures.
 
-## Outils dans le Tableau de bord des fournisseurs
+## Fournisseur : s’inscrire et accéder à DocBits
 
-À droite de la barre de recherche, vous trouverez plusieurs outils qui vous aident à interagir avec et à gérer le tableau de bord plus efficacement.
+Le fournisseur ouvre son invitation, crée ou utilise le compte personnel prévu et suit les étapes d’inscription configurées. Il peut ensuite consulter les informations mises à sa disposition dans DocBits. Le déroulement exact et les fonctions disponibles dépendent de l’organisation.
 
-### Rafraîchir la table <a href="#refresh-table" id="refresh-table"></a>
+[Guide d’inscription des fournisseurs](supplier-registration.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+## Comprendre les accès et les statuts
 
-Cliquez sur ce bouton pour rafraîchir le tableau de bord et charger les données et statuts les plus récents.
+L’activation du portail, l’envoi d’une invitation, la fin de l’inscription et l’approbation sont des états distincts. Une fiche fournisseur ou des données de référence enregistrées ne prouvent pas que l’accès au portail est prêt. La vue fournisseur dépend des autorisations attribuées et diffère de la vue interne de l’administrateur.
 
-### Définir les colonnes du tableau pour l'organisation <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
-
-Cliquez sur ce bouton pour ouvrir un menu où vous pouvez gérer la visibilité des colonnes dans le tableau des commandes d'achat. Utilisez les cases à cocher et les boutons fléchés pour déplacer les colonnes entre les sections visibles et cachées. Vous pouvez également réorganiser les colonnes en faisant glisser et déposer les noms des colonnes. Cliquez sur **Terminé** pour sauvegarder vos modifications.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
-
-### Analytique <a href="#analytics" id="analytics"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-En cliquant sur ce bouton, une nouvelle section s'ouvrira montrant combien de fournisseurs sont sur le point d'expirer et quand.\
-Cliquez sur n'importe quelle catégorie pour appliquer un filtre et voir uniquement ces fournisseurs.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
-
-## Créer un fournisseur et envoyer un e-mail d'enregistrement
-
-### **Pour créer un nouveau fournisseur :**
-
-1.  Cliquez sur l'icône plus (+) dans le coin supérieur droit.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Remplissez les champs requis, puis cliquez sur **Sauvegarder**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. Le fournisseur recevra automatiquement un e-mail avec un lien pour créer son compte.
-
-### **Pour envoyer un e-mail d'enregistrement à un fournisseur existant :**
-
-1. Localisez le fournisseur dans le **Tableau de bord des fournisseurs**.
-2. Cliquez sur le menu à trois points dans la colonne **Actions**.
-3.  Sélectionnez **Magic Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Vérifiez les détails du fournisseur.
-5.  Cliquez sur **Envoyer** pour envoyer le lien d'enregistrement par e-mail.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
-
-## Comment fonctionne le processus d'enregistrement pour le fournisseur ?
-
-Après l'envoi d'un e-mail d'invitation, le fournisseur doit compléter le processus d'enregistrement pour accéder au **Tableau de bord du fournisseur**.
-
-Un guide détaillé étape par étape sur le processus d'enregistrement peut être trouvé [ici](supplier-registration.md).
+Les captures ont été réalisées avec le compte de test Dev autorisé et l’interface en français. Les requêtes de lecture de l’interface et des listes, les contrôles visibles et les formulaires annulés sans modification ont été vérifiés. Les paramètres du portail et la sélection des colonnes n’ont pas été enregistrés ; aucun fournisseur n’a été créé ou modifié et aucune invitation, inscription ou approbation n’a été exécutée. Les résultats de recherche et de filtrage ainsi que la réception des e-mails ne sont pas attestés comme testés fonctionnellement. La vidéo existante est conservée ; aucune nouvelle vérification de l’audio, de la langue ou de la synchronisation n’a été effectuée.

@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User in Document Field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-02-de-20261023.png" alt="Aufgabe Erstellen Sie eine neue Aufgabe/Benachrichtigung mit dem Titel: Titel , Beschreibung: Beschreibung , mit der Priorität Priorität , und weisen Sie sie dem Benutzer im Dokumentfeld Feld Name zu. Benachrichtigen Sie den Benutzer per E-Mail E-Mail senden . Verwenden Sie Benutzer als Fallback." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

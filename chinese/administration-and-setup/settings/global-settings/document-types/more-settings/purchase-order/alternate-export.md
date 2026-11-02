@@ -7,13 +7,13 @@
 
 ## 激活步骤
 
-1. 前往 **Settings** -> **Global Settings** -> **Document Types**
-2.  选择所需的文档类型，然后点击 **More Settings**。
+1. 前往 **设置** -> **全局设置** -> **文档类型**
+2.  选择所需的文档类型，然后点击 **更多设置**。
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt=""><figcaption></figcaption></figure>
-3.  在 **Purchase Order** 部分中，找到 **Alternate Export** 选项。
+    <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-export-settings-zh.png" alt="当前中文发票“导出设置”区域，包含“替代导出”、状态和导出配置选择器。替代导出位于导出设置中；本图未选择导出配置，也不表示已成功导出。"><figcaption><p>当前中文发票“导出设置”区域，包含“替代导出”、状态和导出配置选择器。替代导出位于导出设置中；本图未选择导出配置，也不表示已成功导出。</p></figcaption></figure>
+3.  在**导出设置**部分中，找到**替代导出**选项。
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_1 (1).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 设置方法
 
@@ -37,5 +37,3 @@
 * In Review（审核中）
 
 设置完成后，采购订单匹配导出选项中会显示一个额外的导出选项。当文档符合指定状态时，此选项将使用指定的导出配置。
-
-<figure><img src="../../../../../../.gitbook/assets/po_settings_alternate_export_2.png" alt=""><figcaption></figcaption></figure>

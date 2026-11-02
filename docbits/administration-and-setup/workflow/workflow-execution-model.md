@@ -6,6 +6,8 @@ description: "Distinguish workflow events, conditions, execution order, tests an
 
 A workflow needs an execution event and matching conditions. **Document type is Invoice** selects documents; it does not mean every change to an invoice automatically starts another run.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-en-v3.png" alt="Conceptual examples: a linear Standard sequence runs actions only when its conditions match; otherwise that sequence stops. An Advanced condition node can use separate configured result routes. A route continues only when connected. Optional Standard branches are omitted; this is not a DocBits interface screenshot."><figcaption>Conceptual examples: a linear Standard sequence runs actions only when its conditions match; otherwise that sequence stops. An Advanced condition node can use separate configured result routes. A route continues only when connected. Optional Standard branches are omitted; this is not a DocBits interface screenshot.</figcaption></figure>
+
 ## From event to action
 
 1. Check the organization, permissions and Workflow module, plus the Advanced entitlement where required.

@@ -1,7 +1,7 @@
 # Cambiar columnas del documento
 
-1. Abra el engranaje junto al buscador.
-2. Abra los ajustes de columnas.
+1. Seleccione el engranaje **Ajustes avanzados** a la derecha de la barra de búsqueda del panel.
+2. Seleccione el botón **Configuración de columnas** del menú.
 3. Busque en las listas de columnas ocultas o visibles. Seleccione columnas y muévalas con las flechas.
 4. Arrastre los tiradores de las columnas visibles para ordenarlas.
 5. Opcionalmente, añada campos de un tipo de documento seleccionando el tipo y los campos necesarios.

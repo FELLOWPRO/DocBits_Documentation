@@ -1,5 +1,13 @@
 # Login Analytics
 
+## Video tutorial: Company, subscription and audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/en.mp4" %}
+Company information, subscription plan and audit logs in DocBits
+{% endembed %}
+
+The video shows the company information and preferences, the subscription plan, the login activity and the audit logs.
+
 **Login Analytics** gives administrators a read-only, organization-wide view of *when* and *how often* people sign in to DocBits. It answers questions like "are logins trending up?", "how many distinct users were active this month?" and "when do the usage peaks happen?" — without exposing any individual user's credentials or personal data.
 
 > **Access:** Open **Settings → Organization & Access → Users** and click the **Login Analytics** button in the top-right corner (`/settings/login-analytics`).

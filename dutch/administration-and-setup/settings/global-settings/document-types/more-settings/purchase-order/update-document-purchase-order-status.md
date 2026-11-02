@@ -1,37 +1,46 @@
-# De inkooporderstatus van het document bijwerken
+# Status van documentinkooporder bijwerken
 
-## Overzicht
+Deze instelling is voor documenttypen die inkooporders gebruiken. Hij bepaalt of een document statusupdates van zijn gekoppelde inkooporder kan ontvangen. De schakelaar wordt per documenttype ingesteld. Om een PO-status op het dashboard te zien, moet het betreffende veld ook beschikbaar zijn en als kolom zichtbaar zijn.
 
-Wanneer ingeschakeld, wordt de **PO-status** kolom op het dashboard automatisch bijgewerkt wanneer de status van de inkooporder verandert.
+Voordat u de instelling wijzigt, kiest u de juiste organisatie en het juiste documenttype. U heeft beheerderstoegang nodig om documenttype-instellingen te bewerken. Een inkooporder moet aan een document zijn gekoppeld voordat een statuswijziging kan worden gecontroleerd.
 
-## Waar te Activeren
+## De instelling inschakelen
 
-1. Ga naar: **Instellingen** → **Algemene Instellingen** → **Documenttype**
-2.  Selecteer het gewenste documenttype en klik op **Meer Instellingen**.
+1. Open **Instellingen → Documenttypen**.
+2. Zoek het documenttype dat wordt gebruikt voor de aan de PO gekoppelde documenten, zoals **Factuur**, en selecteer het tandwiel op de kaart om **Meer Instellingen** te openen.
+3. Vouw **Inkooporder** uit. Zoek **Status van documentinkooporder bijwerken** en zet deze aan. Het help-pictogram ernaast legt de optie in de applicatie uit. Het wijzigen van deze schakelaar verandert de andere PO-instellingen in dezelfde sectie niet.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  In de **Inkooporder** sectie, ga naar de optie **Update Document Purchase Order Status**.
+<figure><img src="../../../../../../.gitbook/assets/dbdc699-document-types-nl-20261011.png" alt="Pagina Documenttypen met de kaart Factuur en het tandwiel voor Meer Instellingen"><figcaption>Open de instellingen van het documenttype dat u gebruikt.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSsFkQ46Jd4tn0WGqNSjk%252Fimage.png%3Falt%3Dmedia%26token%3D51ee4f2d-76ae-42b4-a748-f0e9d340b329\&width=768\&dpr=4\&quality=100\&sign=e0f4b1af\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/dbdc699-po-settings-nl-20261011.png" alt="Sectie Inkooporder van Meer Instellingen met de schakelaar Status van documentinkooporder bijwerken"><figcaption>De schakelaar voor statusupdates in de Inkooporder-instellingen.</figcaption></figure>
 
-## Hoe Het Werkt
+## Een PO-status op het dashboard tonen
 
-Wanneer deze instelling is ingeschakeld, zal de **PO-status** kolom op het dashboard automatisch de huidige status van de inkooporder weergeven. Bijvoorbeeld, als de PO-status wordt bijgewerkt naar _Ontvangen_ of _Gefactureerd_, zal de dashboardkolom dienovereenkomstig worden bijgewerkt om deze nieuwe status weer te geven.
+1. Ga terug naar het dashboard en selecteer het tandwiel boven de documenttabel.
+2. Open **Kolommeninstellingen** in het menu Geavanceerde instellingen.
+3. Selecteer **Veld toevoegen vanuit documenttype**, kies het documenttype en zoek naar **PO Status**. Als dat veld beschikbaar is, selecteert u het, voegt het met de pijlknop aan **Zichtbare kolommen** toe en sluit het venster.
 
-<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FmWZIOi5pqWyeagCfiXgy%252FStatus%2520on%2520Dashboard.jpg%3Falt%3Dmedia%26token%3D3aad59e7-d249-4f07-afa3-c68429128cec&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6cde440e&#x26;sv=2" alt="" width="375"></div>
+Het kolomvenster bevat **Verborgen kolommen** en **Zichtbare kolommen**. Gebruik de pijlen om een geselecteerde kolom ertussen te verplaatsen. Zie [Documentkolommen wijzigen](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md) voor de volledige kolomgids. Als **PO Status** ontbreekt voor het geselecteerde type, vraag dan een beheerder om het veld en de lookup-configuratie te controleren; de weergaveschakelaar alleen maakt een ontbrekend veld niet aan.
 
-## Instellen
+<figure><img src="../../../../../../.gitbook/assets/dbdc699-dashboard-columns-nl-20261011.png" alt="Kolommeninstellingen-dialoogvenster van het dashboard met Verborgen kolommen, Zichtbare kolommen en Veld toevoegen vanuit documenttype"><figcaption>Kies welke kolommen op het dashboard verschijnen.</figcaption></figure>
 
-1. **Schakel de Instelling In** Ga naar de hierboven genoemde locatie en zet de instelling aan.
-2. **Voeg de PO-statuskolom toe (indien niet zichtbaar)** Als de **PO-status** kolom nog niet zichtbaar is op het dashboard:
-   *   Ga naar: **Geavanceerde Instellingen** → **Tabelkolommen instellen voor Organisaties**
+## De inkooporder-lookup controleren
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fn6GyECCtvUeKLYd6FkEH%252Fimage.png%3Falt%3Dmedia%26token%3Da023deba-748f-4140-bb33-17483c91f2cf\&width=768\&dpr=4\&quality=100\&sign=164eb544\&sv=2)
-   * Voeg het veld van het documenttype toe door te zoeken naar **PO Status**
-3. **Configureer zoekconfiguratie**
-   *   Configureer het Statusveld in de Inkooporderkopzoekopdracht als volgt:
+In **Instellingen → Documenttypen → Velden → Mastergegevensinstellingen** vouwt u **Stamgegevens opzoeken** en vervolgens **Order Header Lookup** uit. Controleer of de vereiste PO-veldtoewijzing bestaat en of de betreffende lookup **Automatische Trigger** heeft wanneer een automatische lookup nodig is. De onderstaande schermafbeelding toont de configuratielijst; de rode kruisen betekenen dat Automatische Trigger voor die voorbeeldrijen is uitgeschakeld. Hij toont geen bijgewerkte PO-status.
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Folrh285NuJO787Udc80C%252Fimage.png%3Falt%3Dmedia%26token%3Def5abe46-fe94-4946-a893-66f7ca21322b\&width=768\&dpr=4\&quality=100\&sign=415e657e\&sv=2)
-   * **Opmerking:** **Inkooporder moet op Auto Trigger staan anders kunnen Statusupdates mogelijk niet correct worden bijgewerkt**
-   * Weet niet hoe je **Zoekconfiguratie moet configureren? Hier is de** [**zoekconfiguratiegids**](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
-4. **Controleren** Ontvang of factureer een PO, controleer vervolgens het dashboard om te bevestigen dat de status correct is bijgewerkt.
+<figure><img src="../../../../../../.gitbook/assets/dbdc699-lookup-po-header-nl-20261011.png" alt="Order Header Lookup-configuratie met de status Zoekbaar en Automatische Trigger per veld"><figcaption>Controleer de werkelijke lookup-rijen voor het documenttype.</figcaption></figure>
+
+Voor hulp bij het instellen van een lookup, zie [Fuzzy Data Configuration with Master Data](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
+
+## Controleren met een bekend document
+
+Gebruik een document dat al aan een testinkooporder is gekoppeld. Wijzig de status van die inkooporder via uw normale proces, ververs het dashboard en controleer het document en het zichtbare PO-statusveld. Als de status niet wordt bijgewerkt, controleer dan de PO-koppeling van het document, de lookup-configuratie en of het betreffende veld aan het dashboard is toegevoegd. Leid een geslaagde update niet alleen af van de schakelaar.
+
+## Gevonden app-vertalingen
+
+Deze termen verschijnen onvertaald of inconsistent in de Nederlandse interface (versie 10.78.9.5); ze worden citaat-voor-citaat vermeld en gemeld, niet in de documentatie gecorrigeerd:
+
+1. Op de pagina Documenttypen blijven de typenamen **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration** en **Freight Letter**, evenals de kolomkop **Extraction**, in het Engels.
+2. In de Inkooporder-instellingen heet de schakelaar **Status van documentinkooporder bijwerken**; de oude documentatiepagina gebruikte bovendien een andere, niet-bestaande menustructuur (**Algemene Instellingen**).
+3. In Stamgegevens opzoeken luidt het labelsuffix van de standaardlookup **StandaardActief** (zonder spatie); de oude documentatie noemde **Auto Trigger** zonder dat dit label in de NL-interface voorkomt.
+4. In Stamgegevens opzoeken blijven de lookup-namen **Supplier Lookup**, **Order Header Lookup** en **Order Line Lookup**, de tabelkop **Actions** en de waarde **No Match** onvertaald, en de standaardwaarde wordt als **StandaardActief** weergegeven.

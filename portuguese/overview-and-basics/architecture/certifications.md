@@ -42,7 +42,7 @@ O SOC 2 foca nos controles de uma organização de serviços relevantes para seg
 
 {% file src="../../.gitbook/assets/FELLOWPRO-SOC2-Type2-Report-2026.pdf" %}
 
-## 4. GDPR (General Data Protection Regulation) Compliance
+## 4. Conformidade com o GDPR (Regulamento Geral sobre a Proteção de Dados)
 
 <figure><img src="../../.gitbook/assets/certifications4.png" alt=""><figcaption></figcaption></figure>
 

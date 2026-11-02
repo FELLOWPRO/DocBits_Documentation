@@ -1,31 +1,31 @@
-# XRechnung 2.1 CII Field Mapping
+# Mapeamento de campos XRechnung 2.1 CII
 
-## Overview
+## Visão geral
 
-This document describes the complete field mapping flow for XRechnung 2.1 CII (Cross-Industry Invoice) format.
+Este documento descreve o fluxo completo de mapeamento de campos do formato XRechnung 2.1 CII (Cross-Industry Invoice).
 
-## 1. CII XML Structure
+## 1. Estrutura XML CII
 
-XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces:
+O XRechnung CII utiliza o formato UN/CEFACT Cross-Industry Invoice com os seguintes espaços de nomes:
 
-| Prefix | Namespace | Purpose |
+| Prefixo | Espaço de nomes | Finalidade |
 | :--- | :--- | :--- |
 | `rsm` | `urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100` | Root container |
-| `ram` | `urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100` | Business entities |
+| `ram` | `urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100` | Entidades de negócio |
 | `qdt` | `urn:un:unece:uncefact:data:standard:QualifiedDataType:100` | Qualified types |
 | `udt` | `urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100` | Unqualified types |
 
 **Classification URN**: `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_2.1`
 
-## 2. CII XML → DocBits Field Extraction
+## 2. XML CII → Extração de campos do DocBits
 
-### Header Fields
+### Campos de cabeçalho
 
-| CII XML Path | DocBits Field | Data Type |
+| Caminho XML CII | Campo do DocBits | Tipo de dados |
 | :--- | :--- | :--- |
 | `ExchangedDocument/ID` | `invoice_id` | String |
 | `ExchangedDocument/TypeCode` | `invoice_type` | String |
-| `ExchangedDocument/IssueDateTime/DateTimeString` | `invoice_date` | Date (YYYYMMDD) |
+| `ExchangedDocument/IssueDateTime/DateTimeString` | `invoice_date` | Data (YYYYMMDD) |
 | `ApplicableHeaderTradeAgreement/BuyerReference` | `buyer_reference` | String |
 | `BuyerOrderReferencedDocument/IssuerAssignedID` | `purchase_order` | String |
 | `ActualDeliverySupplyChainEvent/.../DateTimeString` | `ship_date` | Date |
@@ -41,9 +41,9 @@ O XSLT de TRANSFORMATION substitui o valor numérico de `TypeCode` por um rótul
 | `381` / `261` | Nota de crédito / Nota de crédito autofaturada | **Credit Note** |
 | Qualquer outro código (`380`, `383`, `384`, `386`, `389`, `325`, …) | Fatura / débito / proforma / etc. | **Invoice** |
 
-### Supplier Fields
+### Campos do fornecedor
 
-| CII XML Path | DocBits Field |
+| Caminho XML CII | Campo do DocBits |
 | :--- | :--- |
 | `SellerTradeParty/ID` | `supplier_id` |
 | `SellerTradeParty/Name` | `supplier_name` |
@@ -55,18 +55,18 @@ O XSLT de TRANSFORMATION substitui o valor numérico de `TypeCode` por um rótul
 | `PayeePartyCreditorFinancialAccount/IBANID` | `iban` |
 | `PayeeSpecifiedCreditorFinancialInstitution/BICID` | `bic` |
 
-### Customer Fields
+### Campos do cliente
 
-| CII XML Path | DocBits Field |
+| Caminho XML CII | Campo do DocBits |
 | :--- | :--- |
 | `BuyerTradeParty/ID` | `customer_id` |
 | `BuyerTradeParty/Name` | `customer_name` |
 | `BuyerTradeParty/PostalTradeAddress/LineOne` | `customer_address` |
 | `BuyerTradeParty/SpecifiedTaxRegistration/ID` | `customer_vat` |
 
-### Amount Fields
+### Campos de valores
 
-| CII XML Path | DocBits Field |
+| Caminho XML CII | Campo do DocBits |
 | :--- | :--- |
 | `SpecifiedTradeSettlementHeaderMonetarySummation/TaxBasisTotalAmount` | `net_amount` |
 | `SpecifiedTradeSettlementHeaderMonetarySummation/TaxTotalAmount` | `tax_amount` |
@@ -74,9 +74,9 @@ O XSLT de TRANSFORMATION substitui o valor numérico de `TypeCode` por um rótul
 | `ApplicableTradeTax/RateApplicablePercent` | `tax_rate` |
 | `ApplicableTradeTax/BasisAmount` | `taxable_amount` |
 
-### Line Item Fields
+### Campos dos itens de linha
 
-| CII XML Path | DocBits Table Column |
+| Caminho XML CII | Coluna da tabela do DocBits |
 | :--- | :--- |
 | `AssociatedDocumentLineDocument/LineID` | `POSITION` |
 | `SpecifiedTradeProduct/GlobalID` | `ITEM_NUMBER` |
@@ -90,11 +90,11 @@ O XSLT de TRANSFORMATION substitui o valor numérico de `TypeCode` por um rótul
 | `ApplicableTradeTax/RateApplicablePercent` | `VAT_RATE` |
 | `ApplicableTradeTax/CategoryCode` | `VAT_CATEGORY` |
 
-## 3. DocBits → Infor BOD Export (SyncSupplierInvoice)
+## 3. DocBits → Exportação Infor BOD (SyncSupplierInvoice)
 
-### Header Mapping
+### Mapeamento de cabeçalho
 
-| DocBits Field | BOD XML Path |
+| Campo do DocBits | Caminho XML BOD |
 | :--- | :--- |
 | `INVOICE_NUMBER` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/DocumentID/ID` |
 | `INVOICE_DATE` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/DocumentDateTime` |
@@ -102,14 +102,14 @@ O XSLT de TRANSFORMATION substitui o valor numérico de `TypeCode` por um rótul
 | `VENDOR_NAME` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/SupplierParty/Name` |
 | `TOTAL_AMOUNT` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/TotalAmount` |
 | `NET_AMOUNT` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/ExtendedBaseAmount` |
-| `TAX_AMOUNT` | (Calculated from ExtendedAmount - ExtendedBaseAmount) |
+| `TAX_AMOUNT` | (Calculado a partir de ExtendedAmount - ExtendedBaseAmount) |
 | `CURRENCY` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/CurrencyExchangeRate/SourceCurrencyCode` |
 | `PAYMENT_TERMS` | `DataArea/SupplierInvoice/SupplierInvoiceHeader/PaymentTerm/Term/Description` |
 | `PURCHASE_ORDER` | `UserArea/Property/NameValue[@name='PONumber']` |
 
-### Line Item Mapping
+### Mapeamento dos itens de linha
 
-| DocBits Column | BOD XML Path |
+| Coluna do DocBits | Caminho XML BOD |
 | :--- | :--- |
 | `POSITION` | `SupplierInvoiceDetail/LineNumber` |
 | `ITEM_NUMBER` | `SupplierInvoiceDetail/Item/ItemID/ID` |

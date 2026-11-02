@@ -8,7 +8,7 @@ O DocBits oferece suporte total para XRechnung, permitindo a extração de dados
 
 ## Versões do XRechnung suportadas (CII)
 
-DocBits supports the following XRechnung CII versions:
+O DocBits suporta as seguintes versões de XRechnung CII:
 
 * [XRechnung 1.2](versions/xrechnung-1-2.md)
 * [XRechnung 2.1](versions/xrechnung-2-1.md)
@@ -18,19 +18,19 @@ DocBits supports the following XRechnung CII versions:
 
 ## Fluxo de dados
 
-The data flow from an XRechnung document to your ERP system follows these steps:
+O fluxo de dados de um documento XRechnung para o seu sistema ERP segue estes passos:
 
-1. **Extraction**: DocBits parses the XML data based on the XRechnung version and format (CII or UBL).
-2. **DocBits Field Mapping**: Extracted data is mapped to standard DocBits fields.
-3. **ERP Alignment**: DocBits fields are mapped to Infor BOD (Business Object Document) fields, typically using the `SyncSupplierInvoice` BOD.
-4. **Export**: The mapped data is exported to the Infor system.
+1. **Extração**: o DocBits interpreta os dados XML de acordo com a versão e o formato XRechnung (CII ou UBL).
+2. **Mapeamento de campos do DocBits**: os dados extraídos são mapeados para os campos padrão do DocBits.
+3. **Alinhamento com o ERP**: os campos do DocBits são mapeados para os campos Infor BOD (Business Object Document), normalmente através do BOD `SyncSupplierInvoice`.
+4. **Exportação**: os dados mapeados são exportados para o sistema Infor.
 
 ## Padrões de mapeamento
 
-The mapping is based on the following standards:
-* **UN/CEFACT CII**: The base for XRechnung CII XML structure.
-* **OAGIS/OASIS**: The standard for Infor BODs.
-* **EN 16931**: The European standard for e-invoicing.
+O mapeamento baseia-se nas seguintes normas:
+* **UN/CEFACT CII**: base da estrutura XML do XRechnung CII.
+* **OAGIS/OASIS**: norma dos BODs da Infor.
+* **EN 16931**: norma europeia de faturação eletrónica.
 
 ## Guias por país
 

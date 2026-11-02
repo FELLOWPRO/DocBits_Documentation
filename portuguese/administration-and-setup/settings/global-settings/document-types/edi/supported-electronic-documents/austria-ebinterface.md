@@ -30,7 +30,7 @@ ebInterface é o padrão austríaco de faturação eletrônica mantido pela Câm
 
 ## Pré-visualização padrão
 
-<figure><img src="austria-ebinterface-preview.png" alt="Pré-visualização da fatura Austria ebInterface no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura AUSTRIA EBINTERFACE</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Pré-visualização da fatura Austria ebInterface no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura AUSTRIA EBINTERFACE</p></figcaption></figure>
 
 ## Mapeamento de campos
 

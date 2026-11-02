@@ -2,7 +2,7 @@
 
 ## Cartões de Condição - Guia Completo
 
-Os cartões de condição desta página ficam nos grupos **Quando** e **E** do Construtor de fluxos de trabalho — decidem se as ações Then são executadas. Para usar o canvas — **Adicionar cartão**, **Salvar modelo**, **Salvar fluxo de trabalho** — consulte o [guia Standard Workflow](../standard-workflow-builder):
+Os cartões de condição desta página ficam nos grupos **Quando** e **E** do Construtor de fluxos de trabalho — decidem se as ações Then são executadas. Para usar o canvas — **Adicionar cartão**, **Salvar modelo**, **Salvar fluxo de trabalho** — consulte o [guia Standard Workflow](../README.md):
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pt.png" alt="Exemplo não guardado com cartões Quando, E e Então. Configure todos os campos antes da execução. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Exemplo não guardado com cartões Quando, E e Então. Configure todos os campos antes da execução. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 

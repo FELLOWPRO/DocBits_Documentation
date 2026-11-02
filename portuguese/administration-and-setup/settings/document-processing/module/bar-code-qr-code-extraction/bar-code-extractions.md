@@ -1,4 +1,4 @@
-# Bar Code Extractions
+# Extração de códigos de barras
 
 ## Visão geral
 

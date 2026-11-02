@@ -1,6 +1,6 @@
 # Assign document to the sub organization
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-03-de-20261023.png" alt="Zugewiesener Benutzer Ordnen Sie das Dokument der Unterorganisation zu Sub-Org" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

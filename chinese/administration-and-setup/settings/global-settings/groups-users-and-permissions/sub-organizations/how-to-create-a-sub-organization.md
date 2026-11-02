@@ -2,17 +2,17 @@
 
 ## 创建新的子组织：
 
-<div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="子组织列表概览"><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/site-complete-sub-organizations-zh.png" alt="中文子组织列表及搜索入口；组织数据已隐藏。顶部开关用于显示跨子组织选项，本图未切换该设置。"><figcaption><p>中文子组织列表及搜索入口；组织数据已隐藏。顶部开关用于显示跨子组织选项，本图未切换该设置。</p></figcaption></figure></div>
 
-点击 `+ NEW` 按钮
+点击**新的**按钮
 
-<figure><img src="../../../../../.gitbook/assets/sub_organization_new_button.png" alt="子组织新建按钮" width="97"><figcaption></figcaption></figure>
+<!-- Obsolete illustration retired: Retire obsolete English New-button crop; current Chinese list above already includes the actual New entry and the native empty dialog is shown below. -->
 
 系统将显示以下菜单：
 
-<figure><img src="../../../../../.gitbook/assets/s150-edit_user_in_sub_organization-zh.png" alt="保存前的创建子组织窗口。 界面中的“节省”实际表示保存；本例只展示空白表单。"><figcaption><p>保存前的创建子组织窗口。 界面中的“节省”实际表示保存；本例只展示空白表单。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-complete-suborganization-new-dialog-zh.png" alt="当前中文创建子组织空白表单；“字段名称”在此为子组织名称。未填写名称、未保存，也未添加用户。"><figcaption><p>当前中文创建子组织空白表单；“字段名称”在此为子组织名称。未填写名称、未保存，也未添加用户。</p></figcaption></figure>
 
-输入要创建的子组织的名称和描述等详细信息，然后点击 `SAVE` 按钮。随后，您可以在现有子组织列表的底部找到新创建的子组织。
+输入子组织名称和描述等详细信息，检查后点击**保存**。保存成功后，使用列表或搜索查找新子组织；其位置取决于当前排序和筛选条件。截图中“字段名称”实际指子组织名称。
 
 ## 编辑子组织
 

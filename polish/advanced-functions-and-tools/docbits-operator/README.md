@@ -1,92 +1,47 @@
 # Operator DocBits
 
-## Przegląd
+DocBits Operator wykonuje zadania na podstawie poleceń użytkownika. Polecenie opisuje kolejne kroki, a zmienne pozwalają uzupełnić dane potrzebne do danego uruchomienia.
 
-**DocBits Operator** to asystent automatyzacji zasilany sztuczną inteligencją, zaprojektowany do upraszczania powtarzalnych zadań w Twoich procesach. Użytkownicy tworzą _prompty_ — instrukcje krok po kroku wzbogacone o zmienne — które prowadzą AI do nawigowania, wprowadzania danych i automatycznego klikania w interfejsach. Zmniejsza to nakład pracy ręcznej i przyspiesza rutynowe operacje.
+## Włączenie i dostęp
 
-## Włączanie DocBits Operator
+1. Otwórz **Ustawienia**, a następnie **Moduł → Integracja dokumentów**.
+2. Przewiń do ustawienia **DocBits Operator** i włącz tę funkcję, jeśli masz odpowiednie uprawnienia.
+3. Otwórz **Operator DocBits** z głównej nawigacji aplikacji.
 
-Aby włączyć DocBits Operator, wykonaj następujące kroki:
+<figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-pl.png" alt="Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska."><figcaption><p>Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska.</p></figcaption></figure>
 
-1. **Przejdź do ustawień**:
-   * Z Dashboard przejdź do **Settings**.
-   *   Wybierz **Document Processing**, a następnie **Module**.
+## Wpisywanie polecenia
 
-       <figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-pl.png" alt="Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska."><figcaption><p>Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska.</p></figcaption></figure>
-2. **Włącz funkcję**:
-   * Przewiń w dół, aby znaleźć opcję **DocBits Operator**.
-   *   Przełącz suwak, aby włączyć **DocBits Operator**.
+Wpisz instrukcję w polu na dole ekranu. Opisz oczekiwany wynik i kolejne czynności. Zmienne w treści zapisuje się w nawiasach klamrowych, na przykład `{invoice_number}` lub `{url}`. Ich nazwy i wartości uzupełnia się w oknie zmiennych, otwieranym przyciskiem z kołem zębatym.
 
-       <div align="left"></div>
+<figure><img src="../../.gitbook/assets/site-extra-docbits-operator-pl.png" alt="Polski interfejs Operatora DocBits z pustym polem polecenia. Nie uruchomiono zadania."><figcaption><p>Polski interfejs Operatora DocBits z pustym polem polecenia. Nie uruchomiono zadania.</p></figcaption></figure>
 
-## Dostęp do interfejsu
+Przycisk ze strzałką rozpoczyna wykonanie polecenia. Ikona pobierania otwiera okno zapisywania polecenia, a kosz służy do czyszczenia rozmowy. Samo otwarcie okna zapisu nie zapisuje szablonu.
 
-* Po włączeniu funkcji otwórz **DocBits Operator** z głównego menu nawigacji.
+Więcej przykładów znajdziesz w [przewodniku pisania poleceń](prompt-writing-guide.md).
 
-### **1. Wprowadzanie promptu**
+## Zapisywanie polecenia
 
-Na dole ekranu znajduje się pole do wpisania polecenia. Tutaj użytkownicy wpisują instrukcje, które ma wykonać operator.
+W oknie zapisu podaj **nazwę polecenia**. Opcja **Zapisz Monit publicznie** określa udostępnienie szablonu. Przygotowując szablon do udostępnienia, używaj nazw zmiennych w treści; wartości potrzebne do konkretnego zadania uzupełniaj przed jego uruchomieniem.
 
-Obok pola wprowadzania znajduje się kilka przycisków sterujących:
+<figure><img src="../../.gitbook/assets/site-extra-operator-prompt-dialog-pl.png" alt="Polskie okno zapisu polecenia. Nie wpisano danych i nie kliknięto przycisku Zapisz; przycisk Wyczyść w przedstawionej wersji zamyka okno."><figcaption><p>Polskie okno zapisu polecenia. Nie wpisano danych i nie kliknięto przycisku Zapisz; przycisk Wyczyść w przedstawionej wersji zamyka okno.</p></figcaption></figure>
 
-* **Prompt Variables** – Otwiera okno, w którym można wprowadzić pary klucz-wartość używane w prompcie. Zmienne zapisuje się w nawiasach klamrowych, na przykład `{invoice_number}` lub `{url}`. Wartości te dotyczą tylko bieżącego promptu w polu wprowadzania.
-* **Save Prompt** – Zapisuje bieżący prompt. Możesz zapisać go jako:
-  * **Organization Prompt** – Edytowalny w obrębie Twojej organizacji; zawiera zarówno prompt, jak i zdefiniowane wartości zmiennych.
-  * **Global Prompt** – Współdzielony przez wszystkich najemców; zawiera tylko prompt i symbole zastępcze zmiennych (wartości nie są zapisywane).
-* **Clear Chat** – Czyści bieżącą rozmowę z operatorem, ale pozostawia prompt w polu wprowadzania bez zmian. Przydatne przy ponownym użyciu lub dopracowywaniu promptu.
+Przycisk **Edytuj zmienne** otwiera definicje zmiennych. Przycisk **Zapisz** zapisuje szablon. Aby zamknąć okno bez zapisywania, użyj krzyżyka w jego prawym górnym rogu. W przedstawionej wersji również przycisk **Wyczyść** zamyka to okno; jego podpis nie opisuje poprawnie tej czynności.
 
-Szczegółowe wskazówki dotyczące pisania skutecznych promptów — w tym składnię, zmienne i przykłady — znajdziesz w [**Przewodniku po pisaniu promptów**](prompt-writing-guide.md).
+## Lista zapisanych poleceń
 
-### **2. Nawigacja na pasku bocznym**
+Menu w prawym górnym rogu otwiera panel zapisanych poleceń. Lista zawiera oddzielne sekcje poleceń organizacji i poleceń publicznych oraz wyszukiwanie po nazwie.
 
-Użyj ikony w lewym górnym rogu, aby otworzyć lub zamknąć pasek boczny. Pasek boczny pokazuje zapisane prompty, uporządkowane w dwóch kategoriach:
+Przy poleceniach organizacji znajdują się ikony uruchamiania, edycji i usuwania. W sekcji publicznej przycisk ze strzałką uruchamia wybrany szablon. Przed uruchomieniem uzupełnij wartości jego zmiennych.
 
-* **Organization Prompts**: Edytowalne i wielokrotnego użytku w obrębie Twojej organizacji.
-* **Global Prompts**: Współdzielone przez wszystkich najemców. Nie mogą przechowywać zmiennych i nie można ich edytować ani usuwać.
-  * Globalny prompt nadal może być edytowany i usuwany przez **organizację, która go utworzyła**, gdzie jest widoczny w sekcji Organization Prompts.
-* **Wyszukiwanie:** pasek wyszukiwania u góry paska bocznego pozwala szybko znaleźć zapisane prompty według nazwy lub słowa kluczowego.
-* **Opis ikon:** Każdy zapisany prompt ma zestaw ikon akcji
-  * **Strzałka** – Uruchom prompt
-  * **Długopis** – Edytuj prompt (dostępne tylko dla promptów Twojej własnej organizacji)
-  * **Kosz** – Usuń prompt (dostępne tylko dla promptów Twojej własnej organizacji)
+## Sterowanie wykonaniem
 
-### 3. Zapisywanie promptu
+Podczas wykonywania polecenia dostępne są funkcje wstrzymania, wznowienia, anulowania oraz przejęcia kontroli. Wstrzymanie pozwala zatrzymać dalsze kroki i sprawdzić bieżący stan. Wznowienie kontynuuje pracę, a anulowanie kończy uruchomienie. Przejęcie kontroli umożliwia ręczną interakcję z widokiem przeglądarki.
 
-Kliknięcie przycisku **Save Prompt** otwiera okno, w którym możesz zapisać bieżący prompt do późniejszego użycia.
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="Przykład ikon wznowienia i zatrzymania wykonania."><figcaption><p>Przykład ikon wznowienia i zatrzymania wykonania.</p></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Okno Save Prompt"><figcaption></figcaption></figure></div>
+## Widok szczegółowy
 
-#### **Pola okna Save Prompt**
+Przycisk rozwijania otwiera szczegółowy widok wykonania. Można w nim śledzić kolejne działania, bieżący krok i komunikaty operatora oraz korzystać z funkcji sterowania wykonaniem.
 
-* **Prompt Name:** Wpisz nazwę, która identyfikuje prompt.
-* **Save Prompt Publicly (pole wyboru):** Po zaznaczeniu prompt zostanie zapisany jako **Global Prompt**. Global Prompts są współdzielone przez wszystkich najemców i nie mogą przechowywać **wartości** zmiennych (tylko **nazwy** zmiennych).
-* **Edit Variables:** Otwiera [**okno Prompt Variables**](prompt-writing-guide.md#okno-dialogowe-zmiennych-polecenia), aby przejrzeć lub dostosować definicje zmiennych przed zapisaniem.
-
-**Akcje**
-
-* **Cancel:** Zamyka okno bez zapisywania.
-* **Save:** Zapisuje prompt z użyciem podanej nazwy i ustawienia widoczności.
-
-### 4. Elementy sterujące wykonywaniem promptu
-
-Gdy prompt jest uruchomiony, użytkownicy mają do dyspozycji kilka opcji sterowania procesem wykonania lub interweniowania w nim:
-
-* **Pause Prompt:** Tymczasowo wstrzymuje bieżące wykonanie. Przydatne, gdy chcesz przyjrzeć się bieżącemu stanowi lub przygotować system do kolejnych kroków.&#x20;
-* **Resume Prompt:** Kontynuuje wykonanie od miejsca, w którym zostało wstrzymane. ![](<../../.gitbook/assets/image (3) (1).png>)
-* **Cancel Prompt:** Całkowicie zatrzymuje wykonanie i resetuje sesję. Jest to pomocne, gdy prompt trzeba przerwać lub uruchomić ponownie z powodu nieprawidłowego zachowania lub zmian w danych wejściowych.&#x20;
-* **Take Control:** Pozwala użytkownikowi ręcznie interweniować, wchodząc w bezpośrednią interakcję z systemem. Jest to przydatne, gdy operator utknie lub błędnie zinterpretuje krok. Przejęcie kontroli **automatycznie wstrzymuje** prompt i przełącza w tryb ręczny, dopóki nie zdecydujesz się wznowić lub anulować.
-
-### 5. Widok szczegółowy operatora
-
-Po uruchomieniu promptu pojawia się dodatkowy przycisk, który pozwala użytkownikom przełączyć się na **szczegółowy widok wykonania**. ![](<../../.gitbook/assets/Detailed view .jpg>)
-
-* **Open Detail View:** Ten przycisk przenosi do dedykowanego widoku, który w czasie rzeczywistym pokazuje krok po kroku, co robi operator.
-
-W widoku szczegółowym użytkownicy mogą:
-
-* Monitorować każdą wykonywaną akcję (np. kliknięcia, wprowadzanie danych, oczekiwania).
-* Zobaczyć, który krok jest aktualnie aktywny.
-* Zidentyfikować, gdzie występują problemy, jeśli prompt napotka trudności.
-* Korzystać z tych samych akcji **Pause**, **Resume**, **Cancel** i **Take Control**.
-
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Detailed view .jpg" alt="Ikona rozwijania widoku szczegółowego."><figcaption><p>Ikona rozwijania widoku szczegółowego.</p></figcaption></figure>

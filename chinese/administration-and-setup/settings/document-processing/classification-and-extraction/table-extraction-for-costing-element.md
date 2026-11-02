@@ -8,7 +8,7 @@
 2. 保持在 **常规** 页面，并展开 **提取**。
 3. 在表格提取所需字段下方找到 **成本要素表格提取**。管理员可以为组织启用此开关。
 
-<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-en.png" alt="Test A 中的英文分类与提取设置，显示处于关闭状态的“成本要素表格提取”开关"><figcaption><p>在合成的 Test A 组织中，此开关处于关闭状态。本指南未更改此设置。</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-complete-classification-extraction-zh.png" alt="当前中文“分类与提取”中的提取设置；AI、税码和成本要素选项以组织订阅及配置为准。图中的“自动提取税号”指税码提取，未更改任何开关。"><figcaption><p>当前中文“分类与提取”中的提取设置；AI、税码和成本要素选项以组织订阅及配置为准。图中的“自动提取税号”指税码提取，未更改任何开关。</p></figcaption></figure>
 
 {% hint style="info" %}
 仅启用此开关不会创建成本要素或发票行。请先配置成本要素并导入所需数据。关联的[成本要素设置指南](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)介绍了 M3 示例。其他提取控制项请参阅[分类与提取](README.md)。

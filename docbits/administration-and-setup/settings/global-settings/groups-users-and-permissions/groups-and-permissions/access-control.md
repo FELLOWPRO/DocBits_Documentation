@@ -23,7 +23,7 @@ Each group can be configured for:
 3. Select **Module.**
 4. Activate **Access Control** by enabling the slider.
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Access-Control3.png" alt="Access Control module section with the Access Control toggle highlighted"><figcaption></figcaption></figure>
 
 ## Opening a group's Access Control
 

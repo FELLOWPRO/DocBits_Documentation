@@ -1,5 +1,13 @@
 # Plano de subscrição
 
+## Vídeo tutorial: Empresa, assinatura e auditoria
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/pt.mp4" %}
+Informações da empresa, plano de assinatura e registros de auditoria no DocBits
+{% endembed %}
+
+O vídeo mostra as informações e as preferências da empresa, o plano de assinatura, a atividade de login e os registros de auditoria.
+
 <figure><img src="../../../../.gitbook/assets/subscriptions_overview.png" alt="Plano de subscrição"><figcaption><p>Página Plano de subscrição</p></figcaption></figure>
 
 A página **Plano de subscrição** oferece uma visão geral completa da sua subscrição DocBits num único local: o plano em si, as subscrições de aplicações e funcionalidades ativadas para a sua organização e a utilização de tokens. Abra-a em **Definições → Organização e acesso → Plano de subscrição**.

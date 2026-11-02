@@ -1,6 +1,8 @@
 # AI-berekening voor kostenverhogingstoeslagen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1-nl-nl.png" alt="AI-berekening voor kostenverhogingstoeslagen, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2-nl-nl.png" alt="AI-berekening voor kostenverhogingstoeslagen, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## Wanneer moet u deze kaart gebruiken?
 

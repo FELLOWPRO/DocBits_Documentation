@@ -1,6 +1,6 @@
 # Assign Sequentially to User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-11-nl-20261023.png" alt="Toegewezen persoon Wijs het document sequentieel toe aan Gebruiker met prioriteit Waarde ." width="563"><figcaption></figcaption></figure>
 
 ## **Doel**
 

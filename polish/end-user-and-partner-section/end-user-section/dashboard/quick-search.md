@@ -36,7 +36,7 @@ Kliknij chip, aby go edytować (rozwija się z powrotem do tekstu); kliknij **×
 Na prawym końcu paska:
 
 - **ⓘ Help** — otwiera wbudowaną dokumentację **Wyszukiwanie w panelu — pola i składnia** wymieniającą każde pole, operator i skrót dostępny w Twoim obszarze roboczym.
-- **Filters (tune)** — szybki panel najczęstszych filtrów Status / User / Restart, z przyciskami **Wyczyść filtry** i **Zastosuj**.
+- **Filtry** (trzy suwaki) — szybki panel najczęstszych filtrów **Status**, **Przypisany do** i **Wymagane ponowne uruchomienie**, z przyciskami **Wyczyść filtry** i **Stosować**.
 - **Pierścień indeksu** — mały pierścień postępu pokazujący, jaka część indeksu pełnotekstowego została zbudowana (widoczny tylko gdy wyszukiwanie pełnotekstowe jest włączone).
 
 ### Widok standardowy a surowy
@@ -186,7 +186,10 @@ ap_assignment_code=""
 
 ## Filtry inteligentne — jedno kliknięcie
 
-U góry listy rozwijanej Quick Search (kliknij w pasek wyszukiwania) znajdziesz **Inteligentne filtry**: gotowe wyszukiwania stosowane jednym kliknięciem. Każdy z nich to po prostu skrót zapytania, które możesz też wpisać samodzielnie:
+Ikona **błyskawicy** na początku pola wyszukiwania otwiera selektor pól. U góry tego
+selektora znajdują się **Inteligentne filtry**: gotowe wyszukiwania stosowane jednym
+kliknięciem. Każdy z nich to po prostu skrót zapytania, które możesz też wpisać
+samodzielnie:
 
 | Filtr inteligentny | Znajduje | To samo co wpisanie |
 |--------------|-------|----------------|
@@ -200,7 +203,7 @@ U góry listy rozwijanej Quick Search (kliknij w pasek wyszukiwania) znajdziesz 
 | ➗ **Częściowe dopasowanie PO** | Częściowo dopasowane do zamówienia zakupu | `po_match_status=partial_matched` |
 | 📉 **W meczu PO** | Ilość lub cena jednostkowa poniżej zamówienia zakupu | `po_match_status=under_matched` |
 
-Trzy filtry **PO match** oraz pola pełnotekstowe wymagają, aby dla Twojej organizacji było włączone wyszukiwanie pełnotekstowe.
+Trzy filtry **dopasowania PO** oraz pola pełnotekstowe wymagają, aby dla Twojej organizacji było włączone wyszukiwanie pełnotekstowe.
 
 <figure><img src="../../../.gitbook/assets/prior-u030-pl.png" alt="Pomoc dotycząca zapytań i filtrów szybkiego wyszukiwania. Błędna etykieta Wygrać oznacza przesyłanie dokumentów."><figcaption><p>Pomoc dotycząca zapytań i filtrów szybkiego wyszukiwania. Błędna etykieta Wygrać oznacza przesyłanie dokumentów.</p></figcaption></figure>
 

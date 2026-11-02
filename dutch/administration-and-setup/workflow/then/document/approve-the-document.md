@@ -1,6 +1,8 @@
 # Keur het document goed
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-1b26323eab7c-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_approve_v1-nl-nl.png" alt="Keur het document goed, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_approve_v2-nl-nl.png" alt="Keur het document goed, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 

@@ -41,7 +41,7 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * Clique em **OK**. Insira as credenciais novamente, se solicitado.
-  * <mark style="color:red;">**Observação:**</mark> Se aparecer o erro **“password authentication failed for user”**, tente inserir a senha entre **chaves `{}`**.
+  * Se surgir `password authentication failed for user`, verifique o servidor, a base de dados, o utilizador e a palavra-passe. Introduza a palavra-passe real na caixa de diálogo de credenciais. As chavetas para escape numa cadeia de ligação ODBC fazem parte da sintaxe do controlador e não são uma solução geral para falhas de autenticação.
 
 #### 4. Carregue e transforme os dados
 
@@ -49,7 +49,9 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 * Abra o esquema **`public`**.
 * Selecione as tabelas que deseja importar.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
+
+![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Escolha:
   * **Carregar** → importar diretamente para o Power BI
@@ -60,15 +62,15 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 * Use a tela de relatórios do Power BI para criar dashboards.
 * Arraste campos, adicione segmentações de dados, escolha tipos de gráfico e aplique cálculos DAX.
 * Use o **Editor do Power Query** para limpar ou combinar dados antes de criar os visuais.
-* Referência: [Documentação do Power BI](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* Referência: [Documentação do Power BI](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Ative a atualização agendada (opcional)
 
-<mark style="color:red;">**Observação:**</mark> **Requer Power BI Pro ou Premium + Gateway**
+A atualização agendada depende da licença ou capacidade do espaço de trabalho, do conector e do modo de ligação. Para esta ligação ODBC, configure um gateway acessível com o controlador, o DSN e as credenciais adequados. Consulte os requisitos atuais na documentação oficial.
 
-* Para manter seus relatórios sincronizados com o ClickHouse:
+* Para manter seus relatórios sincronizados com o PostgreSQL:
 * Publique o arquivo `.pbix` no **Serviço do Power BI**.
-* Instale o **Gateway do Power BI** (modo Padrão) em uma máquina com acesso de rede ao ClickHouse.
+* Instale o **Gateway do Power BI** (modo Padrão) em uma máquina com acesso de rede ao PostgreSQL.
 * No Serviço do Power BI:
   * Vá para o seu conjunto de dados → **Configurações** → **Atualização agendada**
   * Mapeie o seu DSN e forneça as credenciais
@@ -77,3 +79,9 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 #### 7. Exemplos de dashboards e visualizações de dados&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Exemplo de dashboard do Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Exemplo de dashboard do Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Exemplo de dashboard do Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Exemplo de dashboard do Power BI 4"><figcaption></figcaption></figure></div>
+
+[Documentação oficial — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Documentação oficial — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Documentação oficial — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

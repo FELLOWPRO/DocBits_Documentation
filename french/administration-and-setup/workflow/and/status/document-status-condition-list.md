@@ -1,6 +1,6 @@
 # Liste des conditions d'état du document
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_in_list_v2-fr-fr.png" alt="Liste des conditions d&#x27;état du document, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Objectif**
 

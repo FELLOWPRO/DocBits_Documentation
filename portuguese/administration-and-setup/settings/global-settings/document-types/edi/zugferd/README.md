@@ -1,14 +1,14 @@
-# ZUGFeRD Feldzuordnung Überblick
+# Visão geral do mapeamento de campos ZUGFeRD
 
-## Einführung
+## Introdução
 
-ZUGFeRD (Zentraler User Guide des Forums elektronische Rechnung Deutschland) ist ein deutscher E-Invoicing-Standard, der auf der UN/CEFACT Cross Industry Invoice (CII) und dem ISO-Standard 19005-3 (PDF/A-3) basiert. Er ermöglicht den Austausch strukturierter Rechnungsdaten in einer PDF-Datei.
+O ZUGFeRD é uma norma alemã de faturação eletrónica baseada no UN/CEFACT Cross Industry Invoice (CII) e na norma ISO 19005-3 (PDF/A-3). Permite trocar dados de fatura estruturados incorporados num ficheiro PDF.
 
-DocBits extrahiert Felder aus ZUGFeRD-Dokumenten und gleicht sie mit Infor ERP-Systemen (M3, LN) unter Verwendung von OAGIS BOD-Standards ab.
+O DocBits extrai campos de documentos ZUGFeRD e mapeia-os para sistemas ERP Infor (M3 e LN) através das normas OAGIS BOD.
 
-## Unterstützte ZUGFeRD-Versionen
+## Versões ZUGFeRD suportadas
 
-DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
+O DocBits suporta várias versões da norma ZUGFeRD:
 
 * [ZUGFeRD 1.0](versions/zugferd-1-0.md)
 * [ZUGFeRD 2.0](versions/zugferd-2-0.md)
@@ -17,16 +17,16 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 * [ZUGFeRD 2.3](versions/zugferd-2-3.md)
 * [ZUGFeRD 2.3.2](versions/zugferd-2-3-2.md)
 
-## Vollständige Header-Feldzuordnung
+## Mapeamento completo dos campos de cabeçalho
 
-### Invoice Identification
+### Identificação da fatura
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExchangedDocument/ID` | `INVOICE_NUMBER` | `DocumentID` | STRING | Invoice number |
-| `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Invoice type code |
-| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
-| `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
+| `ExchangedDocument/ID` | `INVOICE_NUMBER` | `DocumentID` | STRING | Número da fatura |
+| `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Código do tipo de fatura |
+| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Data de emissão da fatura |
+| `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Notas da fatura |
 
 ### Tipo e subtipo do documento (orientado pelo TRA)
 
@@ -41,74 +41,74 @@ Além do `INVOICE_TYPE_CODE` bruto, o XSLT de TRANSFORMATION padrão emite uma �
 
 `INVOICE_SUB_TYPE` diferencia faturas vinculadas a PO das faturas de custo direto para roteamento de AP.
 
-### Document References
+### Referências do documento
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `BuyerOrderReferencedDocument/ID` | `PURCHASE_ORDER` | `CustomerOrderID` | STRING | Purchase order number |
-| `ContractReferencedDocument/ID` | `CONTRACT_NUMBER` | `ContractID` | STRING | Contract reference |
-| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE` | `ShipmentID` | STRING | Delivery note reference |
+| `BuyerOrderReferencedDocument/ID` | `PURCHASE_ORDER` | `CustomerOrderID` | STRING | Número do pedido de compra |
+| `ContractReferencedDocument/ID` | `CONTRACT_NUMBER` | `ContractID` | STRING | Referência do contrato |
+| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE` | `ShipmentID` | STRING | Referência da nota de entrega |
 
-### Dates
+### Datas
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice date |
-| `ActualDeliverySupplyChainEvent/OccurrenceDateTime` | `DELIVERY_DATE` | `ActualShipDateTime` | DATE | Delivery/ship date |
-| `SpecifiedTradePaymentTerms/DueDateDateTime` | `DUE_DATE` | `PaymentDueDateTime` | DATE | Payment due date |
-| `BillingSpecifiedPeriod/StartDateTime` | `BILLING_PERIOD_START` | `BillingPeriodStart` | DATE | Billing period start |
-| `BillingSpecifiedPeriod/EndDateTime` | `BILLING_PERIOD_END` | `BillingPeriodEnd` | DATE | Billing period end |
+| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Data da fatura |
+| `ActualDeliverySupplyChainEvent/OccurrenceDateTime` | `DELIVERY_DATE` | `ActualShipDateTime` | DATE | Data de entrega/expedição |
+| `SpecifiedTradePaymentTerms/DueDateDateTime` | `DUE_DATE` | `PaymentDueDateTime` | DATE | Data de vencimento do pagamento |
+| `BillingSpecifiedPeriod/StartDateTime` | `BILLING_PERIOD_START` | `BillingPeriodStart` | DATE | Início do período de faturação |
+| `BillingSpecifiedPeriod/EndDateTime` | `BILLING_PERIOD_END` | `BillingPeriodEnd` | DATE | Fim do período de faturação |
 
-### Supplier (Seller) Information
+### Informações do fornecedor (vendedor)
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `SellerTradeParty/ID` | `VENDOR_ID` | `SupplierPartyID` | STRING | Supplier ID |
-| `SellerTradeParty/GlobalID` | `VENDOR_GLN` | `SupplierPartyGLN` | STRING | Global Location Number |
-| `SellerTradeParty/Name` | `VENDOR_NAME` | `SupplierPartyName` | STRING | Supplier name |
-| `SellerTradeParty/PostalTradeAddress/Line1` | `VENDOR_ADDRESS` | `SupplierAddress1` | STRING | Address line 1 |
-| `SellerTradeParty/PostalTradeAddress/Line2` | `VENDOR_ADDRESS_2` | `SupplierAddress2` | STRING | Address line 2 |
-| `SellerTradeParty/PostalTradeAddress/PostcodeCode` | `VENDOR_POSTAL_CODE` | `SupplierPostalCode` | STRING | Postal code |
-| `SellerTradeParty/PostalTradeAddress/CityName` | `VENDOR_CITY` | `SupplierCity` | STRING | City |
-| `SellerTradeParty/PostalTradeAddress/CountryID` | `VENDOR_COUNTRY` | `SupplierCountryCode` | STRING | Country code |
-| `SellerTradeParty/SpecifiedTaxRegistration/ID` | `VAT_NO_EXTRACTED` | `SupplierTaxID` | STRING | VAT registration number |
+| `SellerTradeParty/ID` | `VENDOR_ID` | `SupplierPartyID` | STRING | Identificador do fornecedor |
+| `SellerTradeParty/GlobalID` | `VENDOR_GLN` | `SupplierPartyGLN` | STRING | Número Global de Localização |
+| `SellerTradeParty/Name` | `VENDOR_NAME` | `SupplierPartyName` | STRING | Nome do fornecedor |
+| `SellerTradeParty/PostalTradeAddress/Line1` | `VENDOR_ADDRESS` | `SupplierAddress1` | STRING | Linha 1 da morada |
+| `SellerTradeParty/PostalTradeAddress/Line2` | `VENDOR_ADDRESS_2` | `SupplierAddress2` | STRING | Linha 2 da morada |
+| `SellerTradeParty/PostalTradeAddress/PostcodeCode` | `VENDOR_POSTAL_CODE` | `SupplierPostalCode` | STRING | Código postal |
+| `SellerTradeParty/PostalTradeAddress/CityName` | `VENDOR_CITY` | `SupplierCity` | STRING | Cidade |
+| `SellerTradeParty/PostalTradeAddress/CountryID` | `VENDOR_COUNTRY` | `SupplierCountryCode` | STRING | Código do país |
+| `SellerTradeParty/SpecifiedTaxRegistration/ID` | `VAT_NO_EXTRACTED` | `SupplierTaxID` | STRING | Número de identificação fiscal para IVA |
 | `SellerTradeParty/DefinedTradeContact/EmailURIID` | `VENDOR_EMAIL` | `SupplierEmail` | STRING | Email |
 | `SellerTradeParty/DefinedTradeContact/TelephoneUniversalCommunication` | `VENDOR_PHONE` | `SupplierPhone` | STRING | Phone |
 
-### Buyer Information
+### Informações do comprador
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `BuyerTradeParty/ID` | `COMPANY_ID` | `CustomerPartyID` | STRING | Customer ID |
-| `BuyerTradeParty/GlobalID` | `COMPANY_GLN` | `CustomerPartyGLN` | STRING | Global Location Number |
-| `BuyerTradeParty/Name` | `COMPANY_NAME` | `CustomerPartyName` | STRING | Company name |
-| `BuyerTradeParty/PostalTradeAddress/Line1` | `COMPANY_ADDRESS` | `CustomerAddress1` | STRING | Address line 1 |
-| `BuyerTradeParty/PostalTradeAddress/PostcodeCode` | `COMPANY_POSTAL_CODE` | `CustomerPostalCode` | STRING | Postal code |
-| `BuyerTradeParty/PostalTradeAddress/CityName` | `COMPANY_CITY` | `CustomerCity` | STRING | City |
-| `BuyerTradeParty/PostalTradeAddress/CountryID` | `COMPANY_COUNTRY` | `CustomerCountryCode` | STRING | Country code |
-| `BuyerTradeParty/SpecifiedTaxRegistration/ID` | `COMPANY_VAT_ID` | `CustomerTaxID` | STRING | VAT ID |
+| `BuyerTradeParty/ID` | `COMPANY_ID` | `CustomerPartyID` | STRING | Identificador do cliente |
+| `BuyerTradeParty/GlobalID` | `COMPANY_GLN` | `CustomerPartyGLN` | STRING | Número Global de Localização |
+| `BuyerTradeParty/Name` | `COMPANY_NAME` | `CustomerPartyName` | STRING | Nome da empresa |
+| `BuyerTradeParty/PostalTradeAddress/Line1` | `COMPANY_ADDRESS` | `CustomerAddress1` | STRING | Linha 1 da morada |
+| `BuyerTradeParty/PostalTradeAddress/PostcodeCode` | `COMPANY_POSTAL_CODE` | `CustomerPostalCode` | STRING | Código postal |
+| `BuyerTradeParty/PostalTradeAddress/CityName` | `COMPANY_CITY` | `CustomerCity` | STRING | Cidade |
+| `BuyerTradeParty/PostalTradeAddress/CountryID` | `COMPANY_COUNTRY` | `CustomerCountryCode` | STRING | Código do país |
+| `BuyerTradeParty/SpecifiedTaxRegistration/ID` | `COMPANY_VAT_ID` | `CustomerTaxID` | STRING | Identificador de IVA |
 
-### Payment Information
+### Informações de pagamento
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
 | `PayeePartyCreditorFinancialAccount/IBANID` | `IBAN_EXTRACTED` | `PayeeIBAN` | STRING | IBAN |
-| `PayeeSpecifiedCreditorFinancialInstitution/BICID` | `BIC` | `PayeeBIC` | STRING | BIC/SWIFT code |
-| `SpecifiedTradePaymentTerms/Description` | `PAYMENT_TERMS` | `PaymentTerms` | STRING | Payment terms description |
-| `SpecifiedTradeSettlementPaymentMeans/TypeCode` | `PAYMENT_METHOD` | `PaymentMethod` | STRING | Payment method code |
+| `PayeeSpecifiedCreditorFinancialInstitution/BICID` | `BIC` | `PayeeBIC` | STRING | Código BIC/SWIFT |
+| `SpecifiedTradePaymentTerms/Description` | `PAYMENT_TERMS` | `PaymentTerms` | STRING | Descrição das condições de pagamento |
+| `SpecifiedTradeSettlementPaymentMeans/TypeCode` | `PAYMENT_METHOD` | `PaymentMethod` | STRING | Código do método de pagamento |
 
-### Currency & Amounts (Header Level)
+### Moeda e valores (cabeçalho)
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `InvoiceCurrencyCode` | `CURRENCY` | `CurrencyCode` | STRING | Invoice currency |
-| `TaxBasisTotalAmount` | `TOTAL_NET_AMOUNT` | `TaxBasisTotalAmount` | AMOUNT | Total net amount |
-| `TaxTotalAmount` | `TOTAL_TAX_AMOUNT` | `TaxTotalAmount` | AMOUNT | Total tax amount |
-| `GrandTotalAmount` | `TOTAL_AMOUNT` | `GrandTotalAmount` | AMOUNT | Grand total |
-| `DuePayableAmount` | `AMOUNT_DUE` | `DuePayableAmount` | AMOUNT | Amount due |
-| `TotalPrepaidAmount` | `PREPAID_AMOUNT` | `TotalPrepaidAmount` | AMOUNT | Prepaid amount |
-| `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
-| `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
+| `InvoiceCurrencyCode` | `CURRENCY` | `CurrencyCode` | STRING | Moeda da fatura |
+| `TaxBasisTotalAmount` | `TOTAL_NET_AMOUNT` | `TaxBasisTotalAmount` | AMOUNT | Valor líquido total |
+| `TaxTotalAmount` | `TOTAL_TAX_AMOUNT` | `TaxTotalAmount` | AMOUNT | Valor total dos impostos |
+| `GrandTotalAmount` | `TOTAL_AMOUNT` | `GrandTotalAmount` | AMOUNT | Total geral |
+| `DuePayableAmount` | `AMOUNT_DUE` | `DuePayableAmount` | AMOUNT | Valor em dívida |
+| `TotalPrepaidAmount` | `PREPAID_AMOUNT` | `TotalPrepaidAmount` | AMOUNT | Valor pago antecipadamente |
+| `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total de descontos |
+| `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total de encargos |
 
 ### Detalhamento de impostos (classificado por faixa)
 
@@ -120,7 +120,7 @@ O XSLT de TRANSFORMATION padrão distribui os blocos `ApplicableTradeTax` em tr�
 | Faixa 2 (Reduzida) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < alíquota < 19 |
 | Faixa 3 (Zero) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | alíquota = 0 |
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
 | `ApplicableTradeTax/RateApplicablePercent` (faixa 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Percentual de IVA da faixa padrão |
 | `ApplicableTradeTax/BasisAmount` (faixa 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Valor líquido da faixa padrão |
@@ -134,72 +134,72 @@ O XSLT de TRANSFORMATION padrão distribui os blocos `ApplicableTradeTax` em tr�
 
 ## Mapeamento completo de itens de linha (tabela)
 
-### Line Identification
+### Identificação da linha
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `AssociatedDocumentLineDocument/LineID` | `POSITION` | `LineNumber` | STRING | Line number |
-| `SpecifiedTradeProduct/BuyerAssignedID` | `ITEM_NUMBER` | `BuyerItemID` | STRING | Buyer's item number |
-| `SpecifiedTradeProduct/SellerAssignedID` | `SUPPLIER_ITEM_NUMBER` | `SellerItemID` | STRING | Seller's item number |
-| `SpecifiedTradeProduct/GlobalID` | `ITEM_CODE` | `ItemCode` | STRING | Global ID (GTIN/EAN) |
-| `SpecifiedTradeProduct/Name` | `DESCRIPTION` | `ItemDescription` | STRING | Item description |
+| `AssociatedDocumentLineDocument/LineID` | `POSITION` | `LineNumber` | STRING | Número da linha |
+| `SpecifiedTradeProduct/BuyerAssignedID` | `ITEM_NUMBER` | `BuyerItemID` | STRING | Número do artigo do comprador |
+| `SpecifiedTradeProduct/SellerAssignedID` | `SUPPLIER_ITEM_NUMBER` | `SellerItemID` | STRING | Número do artigo do vendedor |
+| `SpecifiedTradeProduct/GlobalID` | `ITEM_CODE` | `ItemCode` | STRING | Identificador global (GTIN/EAN) |
+| `SpecifiedTradeProduct/Name` | `DESCRIPTION` | `ItemDescription` | STRING | Descrição do artigo |
 
-### Line References
+### Referências da linha
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `BuyerOrderReferencedDocument/ID` | `PURCHASE_ORDER` | `CustomerOrderID` | STRING | Line-level PO number |
-| `BuyerOrderReferencedDocument/LineID` | `PO_LINE_NUMBER` | `CustomerOrderLineNumber` | STRING | PO line number |
-| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE` | `ShipmentID` | STRING | Delivery note |
-| `DespatchAdviceReferencedDocument/LineID` | `DELIVERY_LINE` | `ShipmentLineNumber` | STRING | Delivery line |
+| `BuyerOrderReferencedDocument/ID` | `PURCHASE_ORDER` | `CustomerOrderID` | STRING | Número do pedido de compra da linha |
+| `BuyerOrderReferencedDocument/LineID` | `PO_LINE_NUMBER` | `CustomerOrderLineNumber` | STRING | Número da linha do pedido de compra |
+| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE` | `ShipmentID` | STRING | Nota de entrega |
+| `DespatchAdviceReferencedDocument/LineID` | `DELIVERY_LINE` | `ShipmentLineNumber` | STRING | Linha de entrega |
 
-### Quantities & Units
+### Quantidades e unidades
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `BilledQuantity` | `QUANTITY` | `InvoicedQuantity` | NUMBER | Billed quantity |
-| `BilledQuantity/@unitCode` | `UNIT` | `UnitCode` | STRING | Unit of measure code |
-| `PackageQuantity` | `PACKAGE_QUANTITY` | `PackageQuantity` | NUMBER | Number of packages |
+| `BilledQuantity` | `QUANTITY` | `InvoicedQuantity` | NUMBER | Quantidade faturada |
+| `BilledQuantity/@unitCode` | `UNIT` | `UnitCode` | STRING | Código da unidade de medida |
+| `PackageQuantity` | `PACKAGE_QUANTITY` | `PackageQuantity` | NUMBER | Número de embalagens |
 
-### Pricing
+### Preços
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE` | `UnitPrice` | AMOUNT | Net unit price |
-| `GrossPriceProductTradePrice/ChargeAmount` | `GROSS_PRICE` | `GrossUnitPrice` | AMOUNT | Gross unit price |
-| `NetPriceProductTradePrice/BasisQuantity` | `UNIT_PRICE_PER_QUANTITY` | `PricePerQuantity` | NUMBER | Price basis quantity |
+| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE` | `UnitPrice` | AMOUNT | Preço unitário líquido |
+| `GrossPriceProductTradePrice/ChargeAmount` | `GROSS_PRICE` | `GrossUnitPrice` | AMOUNT | Preço unitário bruto |
+| `NetPriceProductTradePrice/BasisQuantity` | `UNIT_PRICE_PER_QUANTITY` | `PricePerQuantity` | NUMBER | Quantidade base do preço |
 
-### Line Amounts
+### Valores da linha
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `LineTotalAmount` | `TOTAL_AMOUNT` | `ExtendedAmount` | AMOUNT | Line total |
-| `TotalAllowanceChargeAmount` | `NET_AMOUNT` | `NetAmount` | AMOUNT | Line net amount |
+| `LineTotalAmount` | `TOTAL_AMOUNT` | `ExtendedAmount` | AMOUNT | Total da linha |
+| `TotalAllowanceChargeAmount` | `NET_AMOUNT` | `NetAmount` | AMOUNT | Valor líquido da linha |
 
-### Line Tax
+### Impostos da linha
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax/RateApplicablePercent` | `VAT` | `TaxPercent` | NUMBER | VAT rate |
-| `ApplicableTradeTax/TypeCode` | `TAX_CODE` | `TaxCode` | STRING | Tax type code |
-| `ApplicableTradeTax/CategoryCode` | `TAX_CATEGORY` | `TaxCategoryCode` | STRING | Tax category |
+| `ApplicableTradeTax/RateApplicablePercent` | `VAT` | `TaxPercent` | NUMBER | Taxa de IVA |
+| `ApplicableTradeTax/TypeCode` | `TAX_CODE` | `TaxCode` | STRING | Código do tipo de imposto |
+| `ApplicableTradeTax/CategoryCode` | `TAX_CATEGORY` | `TaxCategoryCode` | STRING | Categoria de imposto |
 
-### Allowances & Charges (Line Level)
+### Descontos e encargos (itens de linha)
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `AppliedTradeAllowanceCharge/ActualAmount` | `DISCOUNT` | `AllowanceAmount` | AMOUNT | Discount amount |
-| `AppliedTradeAllowanceCharge/CalculationPercent` | `DISCOUNT_PERCENT` | `AllowancePercent` | NUMBER | Discount percentage |
-| `AppliedTradeAllowanceCharge/ActualAmount` | `SURCHARGE` | `ChargeAmount` | AMOUNT | Surcharge amount |
-| `AppliedTradeAllowanceCharge/Reason` | `ALLOWANCE_REASON` | `AllowanceReason` | STRING | Reason for allowance |
+| `AppliedTradeAllowanceCharge/ActualAmount` | `DISCOUNT` | `AllowanceAmount` | AMOUNT | Valor do desconto |
+| `AppliedTradeAllowanceCharge/CalculationPercent` | `DISCOUNT_PERCENT` | `AllowancePercent` | NUMBER | Percentagem de desconto |
+| `AppliedTradeAllowanceCharge/ActualAmount` | `SURCHARGE` | `ChargeAmount` | AMOUNT | Valor do encargo adicional |
+| `AppliedTradeAllowanceCharge/Reason` | `ALLOWANCE_REASON` | `AllowanceReason` | STRING | Motivo do desconto |
 
-### Additional Line Fields
+### Campos adicionais dos itens de linha
 
-| ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
+| Caminho CII ZUGFeRD | Campo do DocBits | Campo Infor BOD | Tipo | Descrição |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpecifiedTradeProduct/OriginTradeCountry/ID` | `COUNTRY_OF_ORIGIN` | `CountryOfOrigin` | STRING | Country of origin |
-| `SpecifiedTradeProduct/ApplicableProductCharacteristic/Value` | `PRODUCT_CHARACTERISTIC` | `ProductCharacteristic` | STRING | Product characteristic |
-| `ActualDeliverySupplyChainEvent/OccurrenceDateTime` | `DELIVERY_DATE` | `ActualDeliveryDate` | DATE | Line delivery date |
+| `SpecifiedTradeProduct/OriginTradeCountry/ID` | `COUNTRY_OF_ORIGIN` | `CountryOfOrigin` | STRING | País de origem |
+| `SpecifiedTradeProduct/ApplicableProductCharacteristic/Value` | `PRODUCT_CHARACTERISTIC` | `ProductCharacteristic` | STRING | Característica do produto |
+| `ActualDeliverySupplyChainEvent/OccurrenceDateTime` | `DELIVERY_DATE` | `ActualDeliveryDate` | DATE | Data de entrega da linha |
 
 ## Regras efetivas e ativação
 

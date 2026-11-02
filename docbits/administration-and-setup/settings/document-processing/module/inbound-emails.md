@@ -1,5 +1,12 @@
 # Inbound Emails
 
+## From incoming email to a document ready for review
+
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-en-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-en-light-20261029.png" alt="From incoming email to a document ready for review"></picture><figcaption><p>From incoming email to a document ready for review</p></figcaption></figure>
+
+The illustration shows two ways in: a connected mailbox and forwarding to a DocBits import address. Supported document attachments are imported. Check sender restrictions, organization and routing, then verify the actual import. Sending an email does not prove that its documents were imported successfully.
+
+
 ### Overview
 
 DocBits can pick up documents straight from email — no manual upload needed. There are **two ways** to bring email documents in, both managed under **Settings → Document Processing → Import**:

@@ -21,6 +21,14 @@ Les entrées sont colorées par type :
 
 Cliquez sur n'importe quelle entrée pour y aller directement. Les entrées qui nécessitent un paramètre (un type ou un identifiant de document) incluent un sélecteur intégré — choisissez la valeur avant de cliquer.
 
+## Vidéos de formation dans la liste
+
+Les entrées des pages qui disposent d'une vidéo de formation affichent une icône vidéo après le nom — pas uniquement dans les Paramètres, mais partout dans le catalogue, par exemple sur le Tableau de bord, dans la Validation des champs ou dans les pages Workflow. Sélectionnez l'icône pour lire la vidéo de cette page dans le panneau **Vidéos et tutoriels**, sans quitter le plan du site.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-fr.png" alt="Plan du Site avec des icônes vidéo à côté de plusieurs entrées et le panneau Vidéos et tutoriels ouvert sur la vidéo de la validation des champs"><figcaption><p>Les entrées qui ont une vidéo de formation portent une icône vidéo ; la sélectionner ouvre la vidéo dans le panneau.</p></figcaption></figure>
+
+Le panneau continue de lister chaque vidéo par thème : vous pouvez donc aussi parcourir et rechercher toute la bibliothèque depuis l'icône de la barre supérieure. Voir [Vidéos et tutoriels](videos-and-tutorials.md).
+
 ## Recherche et filtres
 
 L'en-tête fixe en haut de la page abrite la zone de recherche et les filtres en forme de pastilles. Tapez quelques caractères pour filtrer la liste en direct par nom et description. Utilisez les pastilles de type pour restreindre à un seul type d'entrée — par exemple uniquement **Boîte de dialogue**.

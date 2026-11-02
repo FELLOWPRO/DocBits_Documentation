@@ -1,6 +1,6 @@
 # Tekst w polu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-61d692604341-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_field_contains_v2-pl-pl.png" alt="Tekst w polu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

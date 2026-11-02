@@ -16,7 +16,7 @@ The settings page itself becomes available once the module is active.
 
 ## Page layout
 
-The settings page is organised into three tabs, each scoping a different content type that Fulltext Search can index.
+The settings page is organised into four tabs: **Documents**, **Pipeline**, **ERP** and **Templates**. Documents, ERP and Templates each scope a different content type that Fulltext Search can index; Pipeline shows how indexed data flows into the search index.
 
 ### Documents tab
 
@@ -28,6 +28,18 @@ The Documents tab covers everything related to indexing processed documents:
 * **Sync diagnostics** — on-demand diagnostics for cases when the index appears out of sync with the underlying document store.
 
 <mark>Reindexing is non-destructive — existing search continues to work while the new index is being rebuilt.</mark>
+
+### Pipeline tab
+
+The Pipeline tab is a read-only diagram of how document data reaches the search index. It does not change any setting; use it to check where the data comes from, which region each component runs in, and how far the indexing has progressed.
+
+* **Region banner** — at the top, DocBits confirms whether all components run in your organisation's region (for example, *All components in the org region*). If a component runs in a different region, the banner shows a warning and names the expected region. A cross-region note that does not block indexing, such as the OCR text source, is listed separately as *Cross-region (non-blocking)*.
+* **Live status** — next to the banner, a status indicator shows the current state of the indexing stream.
+* **Sources** — the **Postgres** box shows the number of documents in the database. The **Spaces (OCR)** box is the OCR text source. Each box carries a small region label.
+* **OpenSearch index** — the target box lists three indexing phases with the number of indexed documents, the total and a percentage: **slim** (documents in the base index), **text** (the OCR text) and **vector** (embeddings for semantic search). While a phase is still catching up, the connectors in the diagram are animated.
+* **Vector off** — if no vector preference is enabled on the Documents tab, the vector phase shows **off** instead of a count. Turn on a vector preference on the Documents tab to see it fill.
+
+If the diagram shows *Pipeline topology is not available for this environment yet*, the region details are not provided for your environment; the Documents tab still shows the indexing statistics.
 
 ### ERP tab
 

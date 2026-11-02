@@ -43,7 +43,7 @@ Enquanto constrói um Advanced Workflow, dois controlos na barra de ferramentas 
 
 Clique no controlo **Validate** (o ícone de círculo de verificação, ou prima <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). A validação verifica o grafo em busca de problemas — nós não ligados, configuração em falta e ligações inválidas — e assinala-os para que os possa corrigir antes de o fluxo de trabalho ser executado em documentos reais.
 
-## Test
+## Teste
 
 Clique no controlo **Test** (o ícone de reprodução, ou prima <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) para executar o fluxo atual contra uma amostra e observar o seu comportamento, sem afetar documentos em produção. Esta é a forma mais rápida de verificar uma alteração que acabou de fazer na tela.
 

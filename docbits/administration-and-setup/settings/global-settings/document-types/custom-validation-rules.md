@@ -217,9 +217,11 @@ Test every new rule on at least one document that should fail, one that should p
 
 ## Logs
 
-Switch on **Log execution** in a rule to record every evaluation. Open **Document Types → (document type) → Logs** and search by **Rule key**, **Rule ID** or **Document**; filter by rule type, outcome and date.
+Switch on **Log execution** in a rule to record every evaluation. Open **Document Types → (document type) → Logs**. The page shows the document type and the number of entries in the card header; the refresh button reloads the list.
 
-<figure><img src="../../../../.gitbook/assets/rule-execution-logs.png" alt="The rule execution logs"><figcaption><p>One row per evaluation, with outcome, scope, document and row</p></figcaption></figure>
+Choose how to search with **Find by** — **Rule key**, **Rule ID** or **Document** — and enter the value in **Selector**. When you search by document, **Rule Type** is required. Narrow the result with **Outcome**, **Executed** and the **From date** / **To date** range.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-en.png" alt="The rule execution logs"><figcaption><p>The Rule Execution Logs page: the filters on top, one row per evaluation below. Until you search, the table tells you what to enter.</p></figcaption></figure>
 
 Open an entry to see its details, including the **condition trace**: each line of *Applies when* with the expected value, the actual value of the document and whether it passed. See [Read the condition trace](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
 

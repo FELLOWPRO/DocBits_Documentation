@@ -1,6 +1,8 @@
 # Fecha de entrega prometida para artículos de línea en la tabla con fecha de entrega prometida
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2-es-es.png" alt="Fecha de entrega prometida para artículos de línea en la tabla con fecha de entrega prometida, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+En [Date Tolerances](../../date-tolerances.md) se explica cómo se calcula la ventana de tolerancia, con ejemplos como «hoy o mañana».
 
 ## Propósito:
 

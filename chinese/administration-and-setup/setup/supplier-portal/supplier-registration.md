@@ -1,35 +1,29 @@
 # 供应商注册
 
-1. 您将通过电子邮件收到一封邀请，其中包含开始注册流程的链接。请点击“Go to Registration”，提交所需信息并接受条款和条件，即可开始注册。\
-   ![](<../../../.gitbook/assets/image (105).png>)![](<../../../.gitbook/assets/image (324).png>)
-2.  **供应商详情**
+本指南适用于受邀访问某组织 DocBits 门户的供应商。请使用邀请中的链接。您拥有自己的供应商账户；邀请您的组织决定可访问的信息和必要的注册步骤。
 
-    请确认供应商名称正确。此信息对于身份识别和法律用途至关重要，且无法更改。请填写所有适用信息，包括必填字段。完成后，点击“Next”继续填写地址数据。若要保存进度并稍后继续，请点击“Save”。\\
+## 1. 打开邀请
 
-    <figure><img src="../../../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
-3.  **地址数据**\
-    请填写所有适用信息，包括必填字段。完成后，点击“Next”继续填写供应商联系人信息。若要保存进度并稍后继续，请点击“Save”。\\
+核对邀请来自哪个组织，以及邀请发往哪个电子邮件地址。打开该邀请中的注册链接。如果链接已过期或收件人有误，请联系邀请方获取新邀请。
 
-    <figure><img src="../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
-4.  **供应商联系人**\
-    请填写所有适用信息，包括必填字段。完成后，点击“Next”继续填写供应商财务信息。若要保存进度并稍后继续，请点击“Save”。\\
+## 2. 设置自己的账户
 
-    <figure><img src="../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
-5.  **供应商财务信息**\
-    请填写所有适用信息。完成后，点击“Next”继续填写供应商采购信息。若要保存进度并稍后继续，请点击“Save”。\\
+核对预先填写的姓名和电子邮件地址。填写要求的账户信息，并遵守页面显示的密码规则。阅读条款和隐私信息，然后使用注册功能完成账户注册。已有账户与首次注册属于不同情况，请按照邀请对应的流程操作。
 
-    <figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
-6.  **供应商采购信息**\
-    请填写所有适用信息。完成后，点击“Next”继续填写供应商证书信息。若要保存进度并稍后继续，请点击“Save”。\\
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-zh.png" alt="供应商账户注册表单。此示例尚未填写；通过邀请进入时，部分信息可能已预先填写。"><figcaption><p>供应商账户注册表单。此示例尚未填写；通过邀请进入时，部分信息可能已预先填写。</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
-7.  **供应商证书**\
-    请上传所有必需的证书（税务、保险、供应商多元化）。如果需要稍后返回并完成注册流程，请保存当前进度。完成后，点击“Send for Approval”。\\
+## 3. 完善供应商信息
 
-    <figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
-8.  请上传所有必需的证书（税务、保险、供应商多元化）。如果需要稍后返回并完成注册流程，请保存当前进度。完成后，点击“Send for Approval”。\\
+补充组织要求的信息及相关证明材料。字段和章节取决于配置的供应商布局。必填标记和校验提示会说明需要填写的内容。如果页面支持保存进度，可先保存；保存并不自动等于最终提交。
 
-    <figure><img src="../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
-9.  请查收电子邮件，确认您已完成注册流程。\\
+## 4. 检查注册与审批结果
 
-    <figure><img src="../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+使用指定的完成操作提交信息。如果组织配置了审核或审批，请等待处理结果。随后使用自己的账户登录。您可查看的采购订单、发票和其他信息由组织决定。
+
+## 无法访问时怎么办
+
+如果邀请链接无效、缺少权限或不清楚必填信息，请联系邀请您的组织。内部系统中的供应商记录不能代替您的注册或必要的访问审批。
+
+[供应商门户设置](README.md).
+
+[视频：准备门户访问及注册——附中文字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/zh.html)

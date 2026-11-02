@@ -4,7 +4,7 @@ hidden: true
 
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt="Compare with Purchase Order card reading Supplier on Invoice, Operator placeholder, Supplier on Purchase Order"><figcaption></figcaption></figure>
 
 ## **Purpose**
 

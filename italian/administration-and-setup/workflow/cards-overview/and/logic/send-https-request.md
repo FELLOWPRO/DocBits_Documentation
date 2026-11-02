@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-01-it-20261023.png" alt="Logica Invia una richiesta HTTPS a URL con header: Intestazioni , method: Metodo , parameter: Parametri , data: data e il codice di stato ricevuto è in status code ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

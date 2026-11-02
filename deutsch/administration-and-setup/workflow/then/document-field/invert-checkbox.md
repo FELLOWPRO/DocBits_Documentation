@@ -1,6 +1,6 @@
 # Kontrollkästchen umkehren
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d1f382afe206-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_invert_boolean_field_v2-de-de.png" alt="Kontrollkästchen umkehren, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

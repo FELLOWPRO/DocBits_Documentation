@@ -1,6 +1,8 @@
 # Preço unitário combinado com campos
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v2-pt-pt.png" alt="Preço unitário combinado com campos, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v3-pt-pt.png" alt="Preço unitário combinado com campos, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
 ## **Propósito:**
 

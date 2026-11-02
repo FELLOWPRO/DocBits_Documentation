@@ -1,131 +1,74 @@
 # Supplier Portal
 
-## Overview
+The **Supplier Portal** lets an administrator give their company’s suppliers access to **DocBits**. The administrator enables the portal and configures which suppliers can use it and which information they can see.
 
-This page explains how to activate and use the **Supplier Portal**, as well as where to find all relevant settings. The Supplier Portal allows you to invite suppliers to **DocBits**. Once access is granted, suppliers can log in to view the status of their **Purchase Orders** and **Invoices** directly within **DocBits**.
+An invited supplier registers and signs in with their own account. They can then view the information made available to them, such as the status of their purchase orders and invoices. The organisation’s configuration determines which features are available.
 
-## How to Activate the Supplier Portal
+## Video: Prepare the Supplier Portal and supplier access
 
-1.  Go to **Settings → Document Processing → Module**.
+An administrator explains the portal option and plan selection, invitation preparation and the registration entry. Activation, sending, registration and approval are explained as separate steps.
 
-    <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
-2.  In the **Shipping & Supplier** section, enable the **Supplier Portal** option.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/en.mp4" %}
 
-    <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
+[Open the video with English captions and chapter selection](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/en.html)
 
-## Supplier Settings
+## Admin: enable the portal
 
-Once the **Supplier Portal** feature is enabled, a new **Supplier Settings** section will appear at the bottom of the **Settings** menu.
+1. In Settings, open Modules and select **Document Integration**.
+2. Expand **Shipping & Supplier** and enable **Supplier Portal**.
+3. If an activation dialog appears, review the displayed plan and confirm the activation you need.
 
-<figure><img src="../../../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-186-module-en-20261030.png" alt="Shipping and Supplier module with Supplier Portal enabled in the example organisation."><figcaption><p>The Supplier Portal option is already enabled in this example. The switch controls organisation availability; it does not send an invitation or register a supplier.</p></figcaption></figure>
 
-[**Supplier General Settings**](../../settings/supplier-setting/supplier-general-settings.md): Here, you can customize the **Supplier Portal** by uploading your company logo—displayed in the header of all email templates—and by managing legal documents such as the Terms of Use and Privacy Policy.
+## Admin: configure the portal
 
-[**Email Templates**](../../settings/supplier-setting/editing-email-templates.md)**:** Here you can create and test the invitation email templates that will be sent to invited suppliers.
+Configure the portal for your organisation before sending the first invitations:
 
-[**Supplier Layout**](../../settings/supplier-setting/supplier-layout.md)**:** Here you can create and manage the layouts that define which information new suppliers must provide during the registration process.
+- [General supplier settings](../../settings/supplier-setting/supplier-general-settings.md): Additional invitation fields, statuses, logo and privacy information.
+- [Email templates](../../settings/supplier-setting/editing-email-templates.md): Invitation message content and presentation.
+- [Supplier layout](../../settings/supplier-setting/supplier-layout.md): Fields for supplier registration and internal supplier administration. Select the appropriate layout type.
+- [Supplier permissions](../../settings/supplier-setting/supplier-permissions.md): Assign internal employees to supplier groups. These internal responsibilities are separate from a supplier’s own portal access.
 
-[**Export Configuration**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Here you can define how data is mapped and synchronized between the **Supplier Portal** and the **Infor M3** system using ION and IDM mapping files.
+<figure><img src="../../../.gitbook/assets/dbdc-186-general-invitation-fields-en-20261030.png" alt="Additional invitation fields enabled, with Assigned User selected in the Fields selector."><figcaption><p>Additional invitation fields are already enabled in this example. The Fields selector shows Assigned User. Configure the fields needed by your organisation before preparing invitations.</p></figcaption></figure>
 
-[**Supplier Permissions**](../../settings/supplier-setting/supplier-permissions.md): Here you can configure the permissions that suppliers will have within the **Supplier Portal**. You can also group suppliers, making it easier to manage access and settings across multiple suppliers.
+## Admin: search and filter the Supplier Dashboard
 
-A detailed guide to all Supplier Settings can be found [here](../../settings/supplier-setting/).
+Open **Supplier Dashboard** to manage suppliers internally. The status totals at the top let you display **All Supplier**, **Pending Approval** or **Pending Registration**. Search by supplier name or number with the search field.
 
-## Supplier Dashboard <a href="#supplier-permissions" id="supplier-permissions"></a>
+Open the filter control inside the search field to refine the list by **Supplier Groups**, **Status** and **Created On**. **Supplier Per Page** controls the page size; **Clear filters** removes the active search filters. These are supplier-list controls, not purchase-order filters.
 
-You can access the **Supplier Dashboard** from the left-hand menu, as shown below.
+<figure><img src="../../../.gitbook/assets/dbdc-186-filters-en-20261030.png" alt="Supplier filters for supplier groups, status, created date and suppliers per page, with Clear filters."><figcaption><p>The filter menu narrows the supplier list. Created On uses a date selector; Supplier Per Page controls the number of suppliers on a page.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
+## Admin: choose visible columns
 
-All of your created Suppliers are displayed here.
+Use the column settings control beside Refresh to open the available-column list. Select fields in **Hidden columns** or **Visible columns**, then use the arrow controls to move them between the lists. Reorder visible fields with their drag handles and use **Done** to apply the choice for the organisation. **Cancel** closes the dialog without applying changes. Available columns include supplier identity, group, status, responder and date information; use horizontal scrolling when the table is wider than the screen.
 
-## Filter for Suppliers
+<figure><img src="../../../.gitbook/assets/dbdc-186-columns-en-20261030.png" alt="Supplier column settings dialog with available columns and Cancel and Done controls."><figcaption><p>Column settings control which supplier fields appear in the dashboard. Review the selection before Done; Cancel leaves the current settings unchanged.</p></figcaption></figure>
 
-You can search for suppliers by N**ame** or N**umber**, or use the advanced filters to narrow results by:
+## Admin: view expiry Analytics
 
-* **Supplier Groups**
-* **Status**
-* **Created On**
+Use **Analytics**, the chart control beside column settings, to show or hide the expiry summary. The cards show **Expired** and upcoming expiry periods of one, two, three or six months and one year. Selecting a card filters the supplier list for that expiry period. These counters describe the supplier expiry data, not purchase-order performance.
 
-You can also specify how many suppliers should be displayed per page.
+<figure><img src="../../../.gitbook/assets/dbdc-186-analytics-en-20261030.png" alt="Supplier Analytics showing expired and upcoming expiry cards above the covered supplier list."><figcaption><p>Analytics adds expiry counters above the supplier table. Open the view to inspect the periods, and select a card when you need the corresponding filtered supplier list.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
+## Admin: invite suppliers
 
-Additionally, you can quickly filter by the statuses **Pending Approval** or **Pending Registration** by clicking the corresponding category to the left of the filter ba&#x72;**.**
+Open supplier administration. Before inviting someone, check the company, supplier group, contact person and email address. Saving a new supplier requests the registration invitation to be sent; it does more than store a draft. For an existing supplier, use the relevant invitation action. A send confirmation does not prove email delivery or completed registration.
 
-<figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-186-dashboard-en-20261030.png" alt="Internal Supplier Dashboard with status totals, search and toolbar controls; existing supplier rows are covered."><figcaption><p>The internal dashboard provides status totals, search, refresh, column settings, Analytics and Add Supplier. Existing supplier rows are covered in this documentation image.</p></figcaption></figure>
 
-## Supplier Details (internal view)
+<figure><img src="../../../.gitbook/assets/dbdc-186-invitation-en-20261030.png" alt="Blank Add Supplier dialog with supplier group, company, contact fields and Save and Cancel actions."><figcaption><p>Add Supplier asks for the supplier group, supplier name and responder contact details. Additional fields depend on your configuration. Saving requests a registration invitation; Cancel closes the form without sending it.</p></figcaption></figure>
 
-Click a supplier's row in the **Supplier Dashboard** to open the **Supplier Details** view for that supplier. This internal view shows the same six sections that the supplier fills in during registration — **Supplier Details**, **Address Data**, **Supplier Contact**, **Supplier Financial**, **Supplier Purchase** and **Supplier Certificates** — together with the supplier's current **status** badge.
+## Admin: open Supplier Details from the Supplier Dashboard
 
-Use this view to review a supplier's profile, correct or complete missing data, and prepare the approval decision. For a description of each section, see [Supplier Registration](supplier-registration.md). The back button at the top of the view returns you to the **Supplier Dashboard**.
+Internal staff open the same **Supplier Details** view that a supplier fills in. In the Supplier Dashboard, click a supplier's row. Supplier Details opens with its six sections and the supplier's status. Use it to review the submitted data, maintain it afterwards and approve the supplier.
 
-## Supplier Status
+## Supplier: register and access DocBits
 
-If you're using the **Supplier Portal**, it's important to understand the different statuses that suppliers can have. Below is a list of all possible supplier statuses and their meanings:
+The supplier opens their invitation, creates or uses the intended personal account, and follows the configured registration steps. They can then view the information made available to them in DocBits. The exact process and available functions depend on the organisation.
 
-* **Open**: Existing supplier who has not yet been invited to the portal.
-* **Pending Registration**: Supplier has been invited but has not yet completed the registration process.
-* **Pending Supplier Input**: Registration is complete, but further input or changes are required from the supplier.
-* **Pending Approval**: Supplier has completed registration and is awaiting the first approval.
-* **Pending AP Approval**: Supplier has received the first approval and is awaiting a second (Accounts Payable) approval.
-* **Approved**: Supplier has completed the process and has been fully approved.
-* **Rejected**: The supplier’s registration or approval has been rejected.
+[Supplier registration guide](supplier-registration.md).
 
-## Tools in the Supplier Dashboard
+## Understand access and status
 
-To the right of the search bar, you'll find several tools that help you interact with and manage the dashboard more efficiently.
-
-### Refresh table <a href="#refresh-table" id="refresh-table"></a>
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
-
-Click this button to refresh the dashboard and load the most up-to-date data and statuses.
-
-### Set table columns for organization <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
-
-Click this button to open a menu where you can manage the visibility of columns in the purchase order table. Use the checkboxes and arrow buttons to move columns between the visible and hidden sections. You can also reorder columns by dragging and dropping the column names. Click **Done** to save your changes.
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
-
-### Analytics <a href="#analytics" id="analytics"></a>
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
-
-Clicking this button will open a new section showing how many suppliers are set to expire and when.\
-Click on any category to apply a filter and view only those suppliers.
-
-<figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
-
-## Create Supplier and Send Registration Email
-
-### **To create a new supplier:**
-
-1.  Click the plus (+) icon in the top right corner.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
-2.  Fill in the required fields, then click **Save**.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
-3. The supplier will automatically receive an email with a link to create their account.
-
-### **To send a registration email to an existing supplier:**
-
-1. Locate the supplier in the **Supplier Dashboard**.
-2. Click the three-dot menu in the **Actions** column.
-3.  Select **Magic Link**.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
-4. Verify the supplier’s details.
-5.  Click **Send** to email the registration link.
-
-    <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
-
-## How Does the Registration Process Work for the Supplier?
-
-After an invitation email is sent, the supplier must complete the registration process to access the **Supplier Portal**.
-
-A detailed step-by-step guide on the registration process can be found [here](supplier-registration.md).
+Portal activation, invitation sent, registration completed and approval granted are different states. A supplier record or saved master data does not prove that portal access is ready. The supplier view follows assigned permissions and differs from the internal admin view.

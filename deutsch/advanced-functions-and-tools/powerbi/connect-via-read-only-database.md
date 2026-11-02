@@ -41,7 +41,7 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
 
 * Klicken Sie auf **OK**. Geben Sie die Zugangsdaten erneut ein, wenn Sie dazu aufgefordert werden.
-  * <mark style="color:red;">**Hinweis:**</mark> Wenn der Fehler **„password authentication failed for user“** erscheint, geben Sie Ihr Passwort in **geschweiften Klammern `{}`** ein.
+  * Prüfen Sie bei `password authentication failed for user` Host, Datenbank, Benutzername und Passwort. Geben Sie im Anmeldedialog das tatsächliche Passwort ein. Die Maskierung mit geschweiften Klammern in einem ODBC-Verbindungsstring ist Treibersyntax und keine allgemeine Lösung für fehlgeschlagene Anmeldungen.
 
 #### 4. Daten laden und transformieren
 
@@ -49,7 +49,9 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 * Öffnen Sie das Schema **`public`**.
 * Wählen Sie die Tabellen aus, die Sie importieren möchten.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
+
+![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Wählen Sie:
   * **Laden** → Direkter Import in Power BI
@@ -60,15 +62,15 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 * Erstellen Sie Dashboards auf der Berichtsfläche von Power BI.
 * Ziehen Sie Felder, fügen Sie Datenschnitte hinzu, wählen Sie Diagrammtypen aus und wenden Sie DAX-Berechnungen an.
 * Bereinigen oder verknüpfen Sie Daten mit dem **Power Query-Editor**, bevor Sie Visualisierungen erstellen.
-* Referenz: [Power BI-Dokumentation](https://learn.microsoft.com/en-us/power-bi/?utm_source=chatgpt.com)
+* Referenz: [Power BI-Dokumentation](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Geplante Aktualisierung aktivieren (optional)
 
-<mark style="color:red;">**Hinweis:**</mark> **Erfordert Power BI Pro oder Premium + Gateway**
+Die geplante Aktualisierung hängt von Lizenz bzw. Kapazität des Arbeitsbereichs, Connector und Verbindungsmodus ab. Konfigurieren Sie für diese ODBC-Verbindung ein erreichbares Gateway mit passendem Treiber, DSN und Zugangsdaten. Prüfen Sie die aktuellen Voraussetzungen in der offiziellen Dokumentation.
 
-* So halten Sie Ihre Berichte mit ClickHouse synchron:
+* So halten Sie Ihre Berichte mit PostgreSQL synchron:
 * Veröffentlichen Sie Ihre `.pbix`-Datei im **Power BI-Dienst**.
-* Installieren Sie das **Power BI Gateway** (Standardmodus) auf einem Rechner mit Netzwerkzugriff auf ClickHouse.
+* Installieren Sie das **Power BI Gateway** (Standardmodus) auf einem Rechner mit Netzwerkzugriff auf PostgreSQL.
 * Im Power BI-Dienst:
   * Gehen Sie zu Ihrem Dataset → **Einstellungen** → **Geplante Aktualisierung**
   * Ordnen Sie Ihren DSN zu und geben Sie die Zugangsdaten an
@@ -77,3 +79,9 @@ Diese Anleitung führt Sie durch die Verbindung der **schreibgeschützten Datenb
 #### 7. Beispiel-Dashboards und Datenansichten&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Power-BI-Dashboard, Beispiel 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Power-BI-Dashboard, Beispiel 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Power-BI-Dashboard, Beispiel 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Power-BI-Dashboard, Beispiel 4"><figcaption></figcaption></figure></div>
+
+[Offizielle Dokumentation — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Offizielle Dokumentation — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Offizielle Dokumentation — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

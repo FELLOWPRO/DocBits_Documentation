@@ -1,6 +1,6 @@
 # Assign document to procurement group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-06-nl-20261023.png" alt="Toegewezen persoon Document toewijzen aan inkoopgroep Groepsnaam" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

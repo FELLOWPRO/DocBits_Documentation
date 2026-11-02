@@ -1,5 +1,13 @@
 # Informations sur l’entreprise
 
+## Tutoriel vidéo : entreprise, abonnement et audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/fr.mp4" %}
+Informations sur l'entreprise, formule d'abonnement et journaux d'audit dans DocBits
+{% endembed %}
+
+La vidéo présente les informations et les préférences de l'entreprise, la formule d'abonnement, l'activité de connexion et les journaux d'audit.
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-fr.png" alt="Informations sur l’entreprise avec les valeurs de l’organisation masquées."><figcaption><p>Informations sur l’entreprise avec les valeurs de l’organisation masquées.</p></figcaption></figure>
 
 La page Company Information vous permet de gérer le profil de votre entreprise, vos préférences et les détails de votre abonnement. Elle est organisée en plusieurs sections :

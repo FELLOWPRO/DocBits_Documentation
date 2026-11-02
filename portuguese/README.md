@@ -34,11 +34,11 @@ A seguir, um resumo de seus recursos e benefícios exclusivos:
    * Automatiza a conciliação de pedidos de compra com as faturas recebidas.
    * Garante transações financeiras precisas e trata as divergências rapidamente.
    * Oferece suporte à correspondência de diversos tipos de documentos, não se limitando a faturas.
-4. [**Auto Accounting**](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
+4. [**Contabilidade automática**](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
    * Facilita o lançamento automático em contas contábeis.
    * Permite dividir valores por departamento.
    * Permite que a equipe de contas a pagar defina as contas contábeis.
-5. **Processos integrados de validação e** [**aprovação**](broken-reference)
+5. **Processos integrados de validação e** [**aprovação**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Oferece processos de validação integrados para garantir a precisão dos dados.
    * Conta com [workflows](administration-and-setup/workflow/) de aprovação para agilizar o tratamento de documentos.
 6. **Integração perfeita**

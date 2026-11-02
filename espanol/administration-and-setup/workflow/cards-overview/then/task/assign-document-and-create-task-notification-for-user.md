@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-08-es-20261023.png" alt="Tarea Asignar el documento secuencialmente y crear un Tarea/Notificación para Usuario con título: Título , description: Descripción of Prioridad priority. Notificar al usuario por correo electrónico Enviar correo electrónico . Establecer prioridad de asignación de Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

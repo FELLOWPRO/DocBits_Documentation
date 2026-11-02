@@ -11,7 +11,7 @@ Continui a utilizzare il consueto URL dell'applicazione DocBits. VESTA e NOVA no
 
 Per cambiare canale, vada su **Settings > Company Information > Release Channel** e selezioni **VESTA** o **NOVA**. Non è necessario disconnettersi e accedere nuovamente. Il Suo clic successivo nell'applicazione La porta automaticamente alla release del canale selezionato.
 
-Prima di effettuare il passaggio, verifichi che entrambi i canali siano pronti e disponibili nel Suo ambiente, come spiegato in [Verificare la disponibilità degli ambienti prima del passaggio](#importante-verificare-la-disponibilità-degli-ambienti-prima-del-passaggio).
+Prima di effettuare il passaggio, verifichi che entrambi i canali siano pronti e disponibili nel Suo ambiente, come spiegato in [Verificare la disponibilità degli ambienti prima del passaggio](#importante-verificare-la-disponibilita-degli-ambienti-prima-del-passaggio).
 {% endhint %}
 
 ## Canali di release
@@ -126,7 +126,7 @@ Effettuare il passaggio quando l'ambiente corrispondente non è pronto o disponi
 
 ### Come sappiamo se è sicuro passare tra VESTA e NOVA?
 
-Consulti l'annuncio della release per l'ambiente che intende utilizzare, oppure chieda al supporto FELLOWPRO di confermare che il passaggio sia opportuno. Entrambi gli ambienti corrispondenti devono essere pronti e disponibili in parallelo; la disponibilità in sandbox non conferma la disponibilità in produzione. Per le indicazioni complete, incluso il controllo pianificato per abilitare o disabilitare il cambio di canale, veda sopra [Importante: verificare la disponibilità degli ambienti prima del passaggio](#importante-verificare-la-disponibilità-degli-ambienti-prima-del-passaggio).
+Consulti l'annuncio della release per l'ambiente che intende utilizzare, oppure chieda al supporto FELLOWPRO di confermare che il passaggio sia opportuno. Entrambi gli ambienti corrispondenti devono essere pronti e disponibili in parallelo; la disponibilità in sandbox non conferma la disponibilità in produzione. Per le indicazioni complete, incluso il controllo pianificato per abilitare o disabilitare il cambio di canale, veda sopra [Importante: verificare la disponibilità degli ambienti prima del passaggio](#importante-verificare-la-disponibilita-degli-ambienti-prima-del-passaggio).
 
 ### Possiamo restare su VESTA mentre NOVA è disponibile in produzione?
 
@@ -134,7 +134,7 @@ Sì. Durante la fase 3, può restare su VESTA o passare a NOVA quando la Sua org
 
 ### Come passiamo a NOVA o torniamo a VESTA?
 
-Per prima cosa, verifichi che l'ambiente corrispondente sia pronto e disponibile su entrambi i canali, come spiegato in [Verificare la disponibilità degli ambienti prima del passaggio](#importante-verificare-la-disponibilità-degli-ambienti-prima-del-passaggio). La disponibilità in sandbox e quella in produzione sono distinte.
+Per prima cosa, verifichi che l'ambiente corrispondente sia pronto e disponibile su entrambi i canali, come spiegato in [Verificare la disponibilità degli ambienti prima del passaggio](#importante-verificare-la-disponibilita-degli-ambienti-prima-del-passaggio). La disponibilità in sandbox e quella in produzione sono distinte.
 
 Durante la fase 3, vada su **Settings > Company Information > Release Channel** in DocBits e selezioni **NOVA** per adottare la nuova release di produzione, oppure **VESTA** per tornare all'attuale release di produzione VESTA. La Sua organizzazione effettua questa scelta in modo autonomo, in base alle proprie esigenze e alla valutazione di NOVA nella sandbox. Questa scelta vale finché entrambe le release sono disponibili in parallelo; la precedente release VESTA viene ritirata con il rollover.
 

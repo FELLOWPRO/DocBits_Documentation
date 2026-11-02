@@ -91,5 +91,5 @@ O elemento raiz é `<Invoice>` (ou `<CreditNote>`) no namespace UBL 2.1 `urn:oas
 
 ## Relacionado
 
-* [Padrões de Fatura Eletrônica Atualmente Suportados](../../currently-supported-e-invoice-standards/)
+* [Padrões de Fatura Eletrônica Atualmente Suportados](../currently-supported-e-invoice-standards/README.md)
 * [Documentos Eletrônicos Suportados](./)

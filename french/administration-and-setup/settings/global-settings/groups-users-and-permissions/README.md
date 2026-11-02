@@ -12,9 +12,9 @@ Ces paramètres répondent à trois questions différentes : qui peut se connect
 
 | Si vous devez… | Ouvrez… |
 | --- | --- |
-| Ajouter ou modifier le compte d'une personne | **Paramètres de la table** → **Utilisateurs** ; lisez ensuite [Users](users/README.md). |
-| Organiser les accès entre les unités de l'entreprise | **Paramètres de la table** → **Sous-organisations** ; lisez ensuite [Sub-Organizations](sub-organizations/README.md). |
-| Contrôler l'accès par groupe | **Paramètres de la table** → **Groupes et Autorisations** ; lisez ensuite [Groups and Permissions](groups-and-permissions/README.md). |
+| Ajouter ou modifier le compte d'une personne | **Paramètres** → **Utilisateurs** ; lisez ensuite [Utilisateurs](users/README.md). |
+| Organiser les accès entre les unités de l'entreprise | **Paramètres** → **Sous-organisations** ; lisez ensuite [Sous-organisations](sub-organizations/README.md). |
+| Contrôler l'accès par groupe | **Paramètres** → **Groupes et Autorisations** ; lisez ensuite [Groupes et autorisations](groups-and-permissions/README.md). |
 
 <figure><img src="../../../../.gitbook/assets/prior-t008-fr.png" alt="Panneau de sélection des groupes."><figcaption><p>Panneau de sélection des groupes.</p></figcaption></figure>
 

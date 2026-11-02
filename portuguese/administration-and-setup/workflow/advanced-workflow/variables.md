@@ -1,4 +1,4 @@
-# Variables
+# Variáveis
 
 ## Vídeo: Variáveis, testes e ativação
 

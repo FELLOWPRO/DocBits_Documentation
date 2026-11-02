@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the User in Document Field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-02-it-20261023.png" alt="Compito Creare un nuovo Compito/Notifica con il titolo: Titolo , description: Descrizione , di priorità Priorità , e assegnarlo all&#x27;utente nel campo documento Nome del campo . Notificare all&#x27;utente via e-mail Invia e-mail . Utilizzare Utente come ripiego." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

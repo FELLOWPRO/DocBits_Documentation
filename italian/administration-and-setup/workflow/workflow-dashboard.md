@@ -12,7 +12,7 @@ La **Dashboard del flusso di lavoro** è la home dell'area workflow. Mostra come
 - **Licenza** — informazioni sulla licenza dei workflow.
 - **Card SDK** — crea e carica schede workflow personalizzate (vedi [Card SDK](card-sdk.md)).
 
-La barra degli strumenti offre anche **Modelli**, che apre la libreria [Workflow Templates](standard-workflow-builder.md#workflow-templates), e **Flusso di lavoro dell'importazione**, che importa un workflow da un file JSON.
+La barra degli strumenti offre anche **Modelli**, che apre la libreria dei modelli di workflow, e **Flusso di lavoro dell'importazione**, che importa un workflow da un file JSON.
 
 Il **Gestione dei test** ti permette di salvare scenari di test per ogni workflow e di eseguirli insieme, così puoi verificare che i tuoi workflow si comportino ancora correttamente dopo le modifiche:
 
@@ -22,3 +22,5 @@ Il **Gestione dei test** ti permette di salvare scenari di test per ogni workflo
 
 - Crea un'automazione lineare con il builder **Flusso standard**.
 - Crea un flusso con diramazioni con il builder **Flusso di lavoro avanzato**.
+
+Per modificare un workflow lineare, consulta l’[apertura del builder Flusso standard](standard-workflow-builder.md#come-accedere).

@@ -38,7 +38,7 @@ DTE (Documento Tributario Electrónico) é o padrão chileno de documentos fisca
 
 ## Visualização padrão
 
-<figure><img src="chile-dte-preview.png" alt="Visualização de fatura Chile DTE no DocBits"><figcaption><p>Visualização padrão do DocBits para uma CHILE DTE FACTURA (tipo 33)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/chile-dte-preview.png" alt="Visualização de fatura Chile DTE no DocBits"><figcaption><p>Visualização padrão do DocBits para uma CHILE DTE FACTURA (tipo 33)</p></figcaption></figure>
 
 ## Mapeamento de campos
 
@@ -94,5 +94,5 @@ O elemento envelope é `<EnvioDTE>` e cada DTE é encapsulado em `<DTE><Document
 
 ## Veja também
 
-- [Padrões de e-faturação atualmente suportados](../../currently-supported-e-invoice-standards/)
+- [Padrões de e-faturação atualmente suportados](../currently-supported-e-invoice-standards/README.md)
 - [Documentos eletrônicos suportados](./)

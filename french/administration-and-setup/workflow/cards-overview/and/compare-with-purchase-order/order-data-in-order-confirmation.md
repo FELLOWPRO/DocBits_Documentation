@@ -1,6 +1,6 @@
 # Order Data in Order Confirmation
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-00-fr-20261023.png" alt="Comparaison des bons de commande Données de commande dans la confirmation de commande Opérateur bon de commande. Écriture de Texte dans le champ Nom du champ sur le résultat de la condition Résultat de la condition" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif**
 

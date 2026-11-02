@@ -10,9 +10,9 @@
 2. 找到用于关联 PO 文档的文档类型，例如 **发票**，然后选择其卡片上的齿轮图标以打开 **更多设置**。
 3. 展开 **采购订单**。找到 **更新文档采购订单状态** 并将其开启。旁边的帮助图标会在应用中说明此选项。更改此开关不会影响同一部分中的其他 PO 设置。
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_document_types_en.png" alt="文档类型页面，其中显示发票卡片及其“更多设置”齿轮图标"><figcaption>打开所用文档类型的设置。</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-zh.png" alt="中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。"><figcaption><p>中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_po_settings_en.png" alt="“更多设置”中的“采购订单”部分，其中包含“更新文档采购订单状态”开关"><figcaption>“采购订单”设置中的状态更新开关。</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-po-settings-zh.png" alt="中文发票采购订单设置的可见部分，包含“更新文件采购订单状态”开关。当前值只是测试配置；没有执行状态更新，下面的列表结果需用实际文档验证。"><figcaption><p>中文发票采购订单设置的可见部分，包含“更新文件采购订单状态”开关。当前值只是测试配置；没有执行状态更新，下面的列表结果需用实际文档验证。</p></figcaption></figure>
 
 ## 在仪表板中显示 PO 状态
 
@@ -22,13 +22,13 @@
 
 列对话框包含 **隐藏列** 和 **可见列**。使用箭头在两者之间移动选定的列。完整的列设置指南请参阅[更改文档列](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)。如果所选类型中没有 **PO 状态**，请让管理员检查其字段和查找配置；仅开启显示开关不会创建缺失的字段。
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_dashboard_columns_en.png" alt="仪表板“列设置”对话框，其中包含“隐藏列”、“可见列”和“从文档类型添加字段”"><figcaption>选择要在仪表板中显示的列。</figcaption></figure>
+<!-- Obsolete illustration retired: Retire obsolete English dashboard/master-data result illustrations; current native configuration is shown and complete verification steps remain without claiming an unperformed document status update. -->
 
 ## 检查采购订单查找
 
-在 **设置 → 文档处理 → 文档类型 → 字段 → 主数据设置** 中，展开 **查找主数据**，然后展开 **采购订单抬头**。检查是否存在所需的 PO 字段映射；如果需要自动查找，还要确认相关查找已启用 **自动触发**。下方截图展示了配置列表；其中的红色叉号表示示例行已关闭“自动触发”。该截图并未展示 PO 状态已更新。
+在 **设置 → 文档处理 → 文档类型 → 字段 → 主数据设置** 中，展开 **查找主数据**，然后展开 **采购订单抬头**。检查是否存在所需的 PO 字段映射；如果需要自动查找，还要确认相关查找已启用 **自动触发**。请以组织中实际映射和触发状态为准；本文图片只展示当前 PO 设置入口，没有验证文档状态已经更新。
 
-<figure><img src="../../../../../../.gitbook/assets/dbdc125_lookup_po_header_en.png" alt="采购订单抬头查找配置，显示每个字段的“可搜索”和“自动触发”状态"><figcaption>检查该文档类型对应的实际查找行。</figcaption></figure>
+<!-- Obsolete illustration retired: Retire obsolete English dashboard/master-data result illustrations; current native configuration is shown and complete verification steps remain without claiming an unperformed document status update. -->
 
 有关查找设置的帮助，请参阅[使用主数据配置模糊数据](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)。
 

@@ -1,31 +1,29 @@
 # Menedżer układu
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-pl.png" alt="Układy i zasady wyboru dla typu dokumentu INVOICE: karty Układy i Zasady wyboru z licznikami, typ dokumentu, zakładki Walidacja pola, Aprobata, Odrzucić i Recenzja, karty układów z etykietą Niestandardowy oraz akcjami Redagować, Klon i Usuwać, a także przycisk Nowy układ"><figcaption>Menedżer układu dla typu dokumentu Invoice.</figcaption></figure>
 
-#### Przegląd
+**Menedżer układu** decyduje o tym, jak typ dokumentu wygląda dla osób, które weryfikują, zatwierdzają, odrzucają i recenzują dokumenty: które pola i grupy pojawiają się na ekranie, w jakiej kolejności i jak zachowuje się każde pole. Każdy typ dokumentu ma własne układy.
 
-Menedżer układu umożliwia administratorom wizualne konfigurowanie i modyfikowanie układu typów dokumentów poprzez ustawianie właściwości różnych pól danych i grup w dokumencie. Interfejs ten pomaga zapewnić, że modele ekstrakcji i punkty ręcznego wprowadzania danych są dokładnie dopasowane do struktury dokumentu w postaci zeskanowanej lub przesłanej do Docbits.
+Strona otwiera się jako **Układy i zasady wyboru**: układy to wielokrotnego użytku układy pól, niezależne od pochodzenia dokumentu, a reguły decydują, jaki układ otrzymuje dokument.
 
-#### Główne składniki
+#### Ekrany i typy układów
 
-1. **Grupy i pola**:
-   * **Grupy**: Jednostki organizacyjne w obrębie typu dokumentu, które kategoryzują powiązane pola (np. Szczegóły faktury, Szczegóły płatności). Można je rozwijać lub zwijać i układać tak, aby odzwierciedlały logiczne grupowanie w rzeczywistym dokumencie.
-   * **Fields**: Poszczególne punkty danych w każdej grupie (np. numer faktury, warunki płatności). Każde pole można dostosować pod kątem sposobu przechwytywania, wyświetlania i przetwarzania danych.
-2. **Properties Panel**:
-   * Panel ten wyświetla właściwości wybranego pola lub grupy, umożliwiając szczegółową konfigurację, taką jak:
-     * **Label**: Widoczna etykieta pola w interfejsie użytkownika.
-     * **Nazwa pola**: Identyfikator techniczny używany w systemie.
-     * **Szerokość elementu w procentach**: Określa szerokość pola w stosunku do układu dokumentu.
-     * **Indeks zakładek**: Kontroluje kolejność tabulatorów podczas nawigacji.
-     * **Uruchom skrypt po zmianie**: Określa, czy wykonać skrypt po zmianie wartości pola.
-     * **Wyświetl etykietę po lewej stronie**: Określa, czy etykieta jest wyświetlana po lewej stronie pola, czy nad nim.
-     * **Is Textarea**: Określa, czy pole powinno być obszarem tekstowym, mieszczącym większą ilość tekstu.
-     * **Wybierz typ modelu**: Opcja pozwalająca wybrać typ modelu, który będzie obsługiwał ekstrakcję tego pola.
-     * **Długość pola**: Maksymalna długość danych akceptowanych w tym polu.
-     * **Zablokowane słowa kluczowe**: Słowa kluczowe niedozwolone w tym polu.
-3. **Template Preview**:
-   * Pokazuje podgląd w czasie rzeczywistym wyglądu dokumentu w oparciu o bieżącą konfigurację układu. Pomaga to zapewnić, że układ odpowiada rzeczywistej strukturze dokumentu i jest niezbędne do testowania i udoskonalania konfiguracji przetwarzania dokumentu.
+Walidacja, zatwierdzanie, odrzucanie i recenzja to osobne ekrany, a każdy z nich ma własne układy, własne reguły i własny układ domyślny — reguła zatwierdzania nigdy nie zmienia ekranu walidacji. Ekran zmienisz zakładkami **Walidacja pola**, **Aprobata**, **Odrzucić** i **Recenzja**.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
+#### Karty układów
 
+Na karcie **Układy** każdy układ wybranego ekranu jest osobną kartą. Karta pokazuje nazwę układu, informację o tym, czy należy on do Twojej organizacji (**Niestandardowy**), czy jest domyślnym układem systemowym, kiedy był ostatnio edytowany oraz czy korzysta z niego reguła wyboru. **Redagować** otwiera układ w Layout Builderze, **Klon** kopiuje go pod wybraną nazwą, a **Usuwać** go usuwa — domyślny układ systemowy można tylko przeglądać, nie da się go zmienić ani usunąć. **Nowy układ** prosi o nazwę i otwiera Layout Builder z nowym, pustym układem. Filtr nad kartami przełącza między **Wszystko**, **Moje układy** i **System**.
 
+#### Layout Builder
+
+**Redagować** otwiera [Layout Builder](navigating-the-layout-manager.md):
+
+* **Struktura**, **Pola** i **Elementy** po lewej stronie — układ w postaci drzewa, każde pole typu dokumentu wraz z licznikiem już umieszczonych pól oraz grupy i elementy formularza, które przeciągasz na obszar roboczy.
+* **Obszar roboczy** pośrodku pokazuje układ tak, jak widzi go użytkownik. **Układ główny** i **Tabela** przełączają między stroną a tabelą pozycji, a **Dokument** otwiera obok przykładowy dokument.
+* Panel **Właściwości** po prawej stronie podąża za wybranym elementem; jego ustawienia pogrupowano w wyświetlanie, zachowanie, wartości i listy, automatyzację oraz obramowania i odstępy.
+
+**Zapisz** w nagłówku zapisuje układ. Pozostałe akcje nagłówka opisuje [Zapisywanie i stosowanie zmian](save-and-apply-changes.md).
+
+#### Jaki układ otrzymuje dokument
+
+Karta **Zasady wyboru** każdego ekranu zawiera reguły wybierające układ: są oceniane według priorytetu, wygrywa pierwsze dopasowanie, a gdy żadna reguła nie pasuje, stosowane jest ustawienie awaryjne. Zobacz [Reguły wyboru układu](layout-selection-rules.md).

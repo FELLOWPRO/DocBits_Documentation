@@ -4,7 +4,7 @@ hidden: true
 
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-21-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto Fornitore in fattura Operatore Fornitore in ordine di acquisto"><figcaption></figcaption></figure>
 
 ## **Scopo**
 

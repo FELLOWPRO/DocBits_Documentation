@@ -1,6 +1,6 @@
 # Item Id on Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-15-fr-20261023.png" alt="Comparaison des bons de commande N&#x27;importe quel/Tous item id on purchase order Opérateur item id on document" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

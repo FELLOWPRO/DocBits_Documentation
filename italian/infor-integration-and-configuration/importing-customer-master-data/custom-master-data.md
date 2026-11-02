@@ -1,67 +1,31 @@
 ---
-description: Come importare i dati anagrafici direttamente in DocBits.
+description: Preparare le sorgenti dei dati anagrafici personalizzati in DocBits
 ---
 
 # Dati anagrafici personalizzati
 
-#### Attivazione dei dati anagrafici personalizzati <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
+## Disponibilità della funzione <a href="#activating-custom-master-data" id="activating-custom-master-data"></a>
 
-Dalla Dashboard vai su Impostazioni → Elaborazione documenti → Modulo.
+Verifica con l’amministratore la disponibilità dei dati anagrafici personalizzati in **Impostazioni → Modulo**. L’abilitazione è una modifica dell’organizzazione: controlla autorizzazioni e requisiti dell’integrazione prima di procedere.
 
-![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
+## Panoramica <a href="#feature-overview" id="feature-overview"></a>
 
-<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-it.png" alt="Moduli di integrazione dei documenti, inclusi i dati anagrafici personalizzati e DocBits Operator. Nessun modulo è stato attivato durante la cattura."><figcaption><p>Moduli di integrazione dei documenti, inclusi i dati anagrafici personalizzati e DocBits Operator. Nessun modulo è stato attivato durante la cattura.</p></figcaption></figure></div>
+Apri la ricerca dei dati anagrafici nelle impostazioni e l’area per le sorgenti personalizzate. Nella versione illustrata la preparazione distingue una **preimpostazione** di connessione e l’**endpoint** che la usa. I primi passaggi della procedura non dimostrano che una tabella sia stata creata o popolata.
 
-In Modulo, attiva Custom Master Data premendo il cursore come mostrato di seguito.
+## Preparare una preimpostazione <a href="#create-a-template" id="create-a-template"></a>
 
-<div align="left"></div>
+Apri la creazione di una preimpostazione e scegli il tipo di API richiesto dall’integrazione, ad esempio **ION API** o **OAuth2**. Fornisci soltanto le credenziali autorizzate per la sorgente prevista. I campi successivi dipendono dall’opzione e dalla versione installata.
 
-#### Panoramica della funzionalità <a href="#feature-overview" id="feature-overview"></a>
+<figure><img src="../../.gitbook/assets/native-custom-master-data-preset-it-20261023.png" alt="Primo passaggio Crea preimpostazione con Quale API si desidera utilizzare? e opzioni tecniche ION API e OAuth2. Nessuna credenziale è stata inserita e nessuna preimpostazione è stata salvata."><figcaption><p>Primo passaggio Crea preimpostazione con Quale API si desidera utilizzare? e opzioni tecniche ION API e OAuth2. Nessuna credenziale è stata inserita e nessuna preimpostazione è stata salvata.</p></figcaption></figure>
 
-Per aggiungere i tuoi dati anagrafici in DocBits, vai su Master Data Lookup nelle Impostazioni.
+## Preparare un endpoint <a href="#create-an-endpoint" id="create-an-endpoint"></a>
 
-<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-it.png" alt="Ricerca dei dati anagrafici: sorgenti e tabella dei fornitori, con i valori dell’organizzazione nascosti."><figcaption><p>Ricerca dei dati anagrafici: sorgenti e tabella dei fornitori, con i valori dell’organizzazione nascosti.</p></figcaption></figure></div>
+Apri la creazione di un endpoint e seleziona la preimpostazione appropriata. **Vuoto**, **ION API** e **OAuth2** sono le scelte fisse visibili; eventuali preimpostazioni dell’organizzazione sono valori configurati, non impostazioni universali.
 
-Fai clic su “Custom Master Data”.
+<figure><img src="../../.gitbook/assets/native-custom-master-data-template-it-20261023.png" alt="Primo passaggio Selezionare la preimpostazione per l’endpoint, con Vuoto, ION API e OAuth2. I nomi configurati sono nascosti mantenendo la disposizione. Nessuna scelta o connessione è stata completata."><figcaption><p>Primo passaggio Selezionare la preimpostazione per l’endpoint, con Vuoto, ION API e OAuth2. I nomi configurati sono nascosti mantenendo la disposizione. Nessuna scelta o connessione è stata completata.</p></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_5.png" alt="" width="375"><figcaption></figcaption></figure></div>
+## Verificare risposta e mappatura
 
-Potrai quindi scegliere se creare un Template o un Endpoint.
+Nei passaggi previsti dalla tua installazione, configura URL, nome della sorgente, percorso dei dati nella risposta e mappatura delle colonne. Non confondere un semplice percorso a punti con tutte le espressioni JSONPath: controlla la sintassi accettata e la struttura effettiva della risposta. Il [riferimento JSONPath di Hevo](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/) illustra le espressioni generali, ma non certifica quali varianti siano supportate dalla tua integrazione DocBits.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_6.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-#### Creare un Template <a href="#create-a-template" id="create-a-template"></a>
-
-Il primo passaggio consiste nello scegliere se utilizzare il file ION API della tua organizzazione oppure OAuth2, e inserire i dati necessari.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_7.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Successivamente configureremo i preset. Qui inserirai il nome della tabella dei dati anagrafici e l'URL della chiamata API.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Dovrai quindi inserire il percorso JSON utilizzando la notazione a punti; per ulteriori informazioni sulla notazione a punti fai clic [qui](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
-
-Infine, dovrai mappare i dati sulle colonne che desideri creare, come nell'esempio seguente.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Dopo averlo fatto, fai clic su Done affinché i nuovi dati anagrafici vengano creati e popolati.
-
-#### Creare un Endpoint <a href="#create-an-endpoint" id="create-an-endpoint"></a>
-
-Il primo passaggio consiste nello scegliere se utilizzare il file ION API della tua organizzazione, utilizzare OAuth2 oppure lasciare il campo vuoto e inserire i dati necessari.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_10.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Successivamente configureremo i preset. Qui inserirai il nome della tabella dei dati anagrafici e l'URL della chiamata API.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Dovrai quindi inserire il percorso JSON utilizzando la notazione a punti; per ulteriori informazioni sulla notazione a punti fai clic [qui](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
-
-Infine, dovrai mappare i dati sulle colonne che desideri creare, come nell'esempio seguente.
-
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
-
-Dopo averlo fatto, fai clic su Done affinché i nuovi dati anagrafici vengano creati e popolati.
+Prima di salvare, verifica autenticazione, risposta, tipi di dati, chiavi e mappatura su un campione autorizzato. Dopo il salvataggio controlla l’esito del caricamento: il completamento della procedura non garantisce che la sorgente sia raggiungibile o che le righe siano state importate. Questa verifica si è limitata ai primi passaggi vuoti, senza richieste a sorgenti esterne, creazione di tabelle o salvataggi.

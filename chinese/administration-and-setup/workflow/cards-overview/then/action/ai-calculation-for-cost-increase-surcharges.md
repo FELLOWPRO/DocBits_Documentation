@@ -1,6 +1,8 @@
 # 价格上涨附加费的 AI 计算
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-2dff6d842a5a-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1-zh-cn.png" alt="价格上涨附加费的 AI 计算, 版本 1" width="634"><figcaption><p>版本 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2-zh-cn.png" alt="价格上涨附加费的 AI 计算, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 ## 何时使用此卡
 

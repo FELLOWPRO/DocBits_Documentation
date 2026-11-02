@@ -10,17 +10,17 @@ No painel, acesse Configurações → Processamento de documentos → Módulo.
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-pt.png" alt="Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada."><figcaption><p>Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada.</p></figcaption></figure></div>
 
 Em Módulo, ative os dados mestres personalizados (Custom Master Data) clicando no controle deslizante, como mostrado abaixo.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"></div>
 
 #### Visão geral da funcionalidade <a href="#feature-overview" id="feature-overview"></a>
 
 Para adicionar seus próprios dados mestres ao DocBits, acesse Master Data Lookup em Configurações.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-pt.png" alt="Consulta de dados mestre: fontes e tabela de fornecedores com valores ocultos."><figcaption><p>Consulta de dados mestre: fontes e tabela de fornecedores com valores ocultos.</p></figcaption></figure></div>
 
 Clique em “Custom Master Data”.
 

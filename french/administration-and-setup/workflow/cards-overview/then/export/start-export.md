@@ -1,6 +1,6 @@
 # Start Export
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-01-fr-20261023.png" alt="Exportation Lancement de l&#x27;exportation, avec validation définie sur Booléen . Statut après exportation : Statut" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

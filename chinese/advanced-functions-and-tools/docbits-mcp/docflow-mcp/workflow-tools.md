@@ -6,7 +6,9 @@ DocFlow MCP 提供用于管理和测试高级工作流的工具，以及读取�
 **通过 DocBits MCP 网关调用时的工具名称。** 通过统一的 DocBits MCP（`api.docbits.com/v3/mcp`）连接时，每个 DocFlow 工具名称都会带有前缀 `docflow_`：`list_workflows` 调用时为 `docflow_list_workflows`，`run_workflow_with_assertions` 调用时为 `docflow_run_workflow_with_assertions`。参数完全相同。下方列出的是不带前缀的 DocFlow 工具名称。
 
 工作流在 Web 应用的 DocFlow 设计器中**创建和编辑**。MCP 可以读取、测试、运行和删除工作流，但不会创建或修改工作流图。
-{% endhint %} Card SDK 工具位于单独的页面，请参阅 [Card SDK 工具](card-sdk-tools.md)。
+{% endhint %}
+
+Card SDK 工具位于单独的页面，请参阅 [Card SDK 工具](card-sdk-tools.md)。
 
 ## list\_workflows
 

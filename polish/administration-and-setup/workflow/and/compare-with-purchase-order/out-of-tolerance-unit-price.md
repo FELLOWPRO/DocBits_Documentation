@@ -1,6 +1,6 @@
 # Cena jednostkowa poza tolerancją
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-443397191f7c-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_separat_unit_price_operator_field_values_v3-pl-pl.png" alt="Cena jednostkowa poza tolerancją, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
 
 ## **Cel:**
 

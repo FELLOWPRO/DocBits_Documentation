@@ -1,5 +1,21 @@
 # Script Activation and Management
 
+## Video guide: manage scripts
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v4/en.mp4" %}
+Manage the scripts of a document type
+{% endembed %}
+
+The video shows the script list with filter and sort, switching scripts on and off, copying, the version history and deleting with a confirmation.
+
+## Find a script
+
+1. Open **Settings → Document Types**.
+2. On the document type you want to manage, select **Scripts**. The page lists scripts for that document type.
+3. Search by name or use **All**, **Active**, and **Inactive** to narrow the list. You can also sort it by name or modification date.
+
+Each card shows the script name, trigger, version, and status. The pencil opens the editor; the copy icon duplicates the script. **New** opens the editor for a new script.
+
 Administrators can use **Scripts** to manage processing rules for a document type. This guide shows where to find scripts, how to switch them on or off, and how to change a published script safely.
 
 ## Find a script

@@ -1,6 +1,6 @@
 # Compare two Fields
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-03-pt-20261023.png" alt="Campo de documento Compare dois campos: Nome do campo Operador Nome do campo" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

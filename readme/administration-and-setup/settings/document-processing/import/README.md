@@ -2,11 +2,11 @@
 
 Use **Settings → Import** to see where automated documents enter DocBits and to configure FTP/SFTP or email sources. You need an administrator account to create a connection.
 
-<figure><img src="../../../../.gitbook/assets/import-overview-en-20260928.png" alt="Import settings with an Import Pipeline diagram and a New button above the FTP Import list"><figcaption><p>The current Import page in the English Sandbox UI.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/import-page-en.png" alt="Import settings with the View import flow button and a New button above the FTP Import list"><figcaption><p>The Import page. <strong>View import flow</strong> opens the read-only Import channels view on the Infrastructure page.</p></figcaption></figure>
 
-## Understand the import pipeline
+## See where your imports go
 
-The **FTP / SFTP** tab shows the external sources, the number of active sources and the DocBits API region that receives their documents. Use it to check the destination before activating a connection. The **Email** pipeline tab currently says that its diagram is coming soon; configure email sources in **Email Import** below.
+Select **View import flow** at the top of the page to open **Settings → Infrastructure → Import channels**. That read-only view lists every configured FTP/SFTP source and mailbox with its state, its import and archive folders, and the DocBits API region that receives the documents. Use it to check the destination before activating a connection, then come back here to configure it. See [Infrastructure](../../infrastructure.md).
 
 ## Add an FTP or SFTP source
 

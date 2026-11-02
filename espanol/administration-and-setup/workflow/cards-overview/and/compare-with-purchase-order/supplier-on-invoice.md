@@ -1,6 +1,6 @@
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-21-es-20261023.png" alt="Comparar con la orden de compra Proveedor en la factura Operador Proveedor en la orden de compra" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

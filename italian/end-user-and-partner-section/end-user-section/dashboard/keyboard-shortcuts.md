@@ -8,4 +8,4 @@ Usa Ctrl su Windows/Linux e Cmd su macOS. Le scorciatoie del browser o del siste
 | Ctrl/Cmd + Q | Aggiornare l’elenco della dashboard. |
 | Ctrl/Cmd + H | Aprire documentazione/guida. |
 
-Apri l’ingranaggio e il pulsante della tastiera per consultare le scorciatoie nell’app. Il punto interrogativo nella ricerca apre la guida ai campi e alla sintassi.
+Apri il menu dell’ingranaggio **Impostazioni avanzate** e poi **Scorciatoie da tastiera** per consultare le scorciatoie nell’app. Il pulsante con il punto interrogativo all’estremità destra della barra di ricerca apre la guida ai campi e alla sintassi.

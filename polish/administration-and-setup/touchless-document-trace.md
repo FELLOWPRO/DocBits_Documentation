@@ -1,27 +1,45 @@
 # Touchless Intelligence: Ślad dokumentu
 
-Wpisz identyfikator dokumentu w polu **ID dokumentu** (Document ID) lub otwórz przykładowy dokument z klastra, aby zobaczyć, **co działo się z tym jednym dokumentem**.
+Wpisz identyfikator dokumentu w polu **Document ID** albo otwórz dokument przykładowy z klastra, aby zobaczyć, **co stało się z tym jednym dokumentem**.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-pl.png" alt="Strona Ślad dokumentu ze ścieżką potoku z 14 etapów i zatrzymanym etapem Walidacja pól"><figcaption><p>Ślad dokumentu (Document Trace): ścieżka potoku z etapem, na którym dokument się zatrzymał, tym, co ten etap miał do dyspozycji, oraz historią uruchomień poniżej.</p></figcaption></figure>
+Nagłówek pokazuje plik, jego status (na przykład **W toku**), przeglądane uruchomienie i jego pierwszą blokadę oraz przycisk **Dokument** z identyfikatorem dokumentu.
 
-Na górze widać **ścieżkę potoku** z 14 etapami: Przyjęcie, Klasyfikacja, Walidacja e-dokumentu, Identyfikacja dostawcy, Rozpoznawanie tekstu, Ekstrakcja nagłówka, Ekstrakcja tabeli, Walidacja pól, Wyszukiwanie PO, Dopasowanie pozycji PO, Zatwierdzenie, Routing przepływu pracy, Eksport, Potwierdzenie ERP. Każde pole ma stan:
+<figure><img src="../.gitbook/assets/touchless-document-trace-pipeline-pl.png" alt="Strona Ślad dokumentu z nagłówkiem pliku, Ścieżką rurociągu złożoną z 14 etapów i początkiem dziennika etapów"><figcaption><p>Ślad dokumentu: ścieżka rurociągu ze wszystkimi etapami i dziennik etapów z danymi zapisanymi przez każdy etap.</p></figcaption></figure>
+
+**Ścieżka rurociągu** pokazuje 14 etapów: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Każdy etap ma jeden stan:
 
 | Stan | Znaczenie |
 | --- | --- |
-| **zaliczony** (passed) (zielony) | Etap przebiegł prawidłowo |
-| **zatrzymany tutaj** (stopped here) (czerwony) | Etap zablokował dokument |
-| **pominięty lub nie dotyczy** (skipped or not applicable) | Etap nie dotyczy tego dokumentu |
-| **nieosiągnięty** (not reached) | Dokument nigdy nie dotarł tak daleko |
-| **nieznany** (unknown) (linia przerywana) | Dla tego etapu nic nie zarejestrowano |
+| **Przeszedł** (zielony) | Etap przebiegł bez problemów |
+| **Zatrzymany tutaj** (pomarańczowy) | Etap zablokował dokument |
+| **Dalej** | Dokument nigdy nie dotarł tak daleko |
+| **Nic nie nagrano** (przerywany) | Dla tego etapu nie zapisano żadnych danych |
+| **Nie dotyczy** | Etap nie ma zastosowania do tego dokumentu |
 
-Pod ścieżką zdanie podaje przyczynę. Na zrzucie ekranu: *This document stopped at stage 8 "Field Validation", because a required field was not extracted.* (Ten dokument zatrzymał się na etapie 8 „Walidacja pól", ponieważ wymagane pole nie zostało wyodrębnione). Blok **Co ten etap miał do dyspozycji** (What this stage had in its hands) wymienia fakty: **Liczba nieprawidłowych pól 5** (Invalid field count 5) oraz pola (`delivery_date`, `email`, `invoice_sub_type`, `payment_terms`, `supplier_id`), regułę (**REQUIRED**) i kody walidacji. Blok **Analiza** (Analysis) mówi, czy jest **oparta na regułach** (Rule-based), czy napisana przez AI.
+### Dziennik etapów
 
-**Historia uruchomień** (run history) poniżej wymienia każde uruchomienie (**Uruchomienie 1 · Pierwsze uruchomienie** (Run 1 · Initial run), potem każdy restart) z każdym etapem i jego zarejestrowanymi faktami. Jeśli dokument został poprawiony i zrestartowany, notatka przypomina, że **nadal liczy się jako dotknięty**.
+**Dziennik etapów** pod ścieżką wymienia te same etapy wraz z tym, co każdy z nich zapisał. Kropka statusu i słowo statusu znajdują się po lewej i prawej stronie każdego wiersza.
 
-**Przykład.** Dokumenty jednego dostawcy zatrzymują się na etapie 8. W śladzie za każdym razem widzisz te same pięć nieprawidłowych pól. To nie jest problem ekstrakcji pojedynczych dokumentów, tylko brakująca wartość domyślna w konfiguracji pól: napraw ją raz, a cały klaster będzie możliwy do odzyskania.
+* Każda wartość to **żeton wartości**: liczba wraz z jednostką, na przykład **Pewność 100 %**, **Próg 60 %**, **Nieudane reguły 0**, **8 brakujących pól** lub **0 luk w mapowaniu**. Wartości procentowe pokazywane są jako `97 %`, nigdy jako `0.97`.
+* **Szczegóły** otwierają pełną listę wartości zapisanych przez etap, łącznie z rozważanymi alternatywami.
+* Etap, który zablokował dokument, podaje przyczynę, na przykład **Walidacja pola nie powiodła się**.
+* Wartość, której żaden etap nie zapisał, pokazywana jest jako **Nie zarejestrowano**, nigdy jako wartość wymyślona. Wartości to liczby i ustalone terminy, nigdy tekst dokumentu.
+* **Pokaż surową diagnostykę** włącza dane surowe, gdy poprosi o nie wsparcie.
+
+<figure><img src="../.gitbook/assets/touchless-document-trace-stage-log-pl.png" alt="Dziennik etapów z kropkami statusu, żetonami wartości takimi jak Próg 60 procent i 8 brakujących pól, zablokowanym etapem Field Validation i historią uruchomień po prawej"><figcaption><p>Każdy etap pokazuje, co zapisał; zablokowany etap podaje swoją przyczynę.</p></figcaption></figure>
+
+### Uruchomienia i zmiany
+
+Selektor uruchomień u góry dziennika etapów (**Uruchom 1 · Bieżące**) przełącza między uruchomieniami dokumentu. **Historia uruchomień** po prawej wymienia każde uruchomienie z jego wynikiem i miejscem zatrzymania. Jeśli dokument był uruchamiany więcej niż raz, wybierz uruchomienie w selektorze, aby porównać je z bieżącym: zmienione wartości otrzymają wtedy odznakę z różnicą i jednostką, na przykład **−2 pola** lub **+3 %**.
+
+Karta **Dokument** obok dziennika etapów podaje typ dokumentu, dostawcę, numer faktury, zamówienie zakupu, liczbę stron oraz to, czy analiza opiera się na **regułach**, czy została napisana przez SI.
+
+**Przykład.** Dokumenty jednego dostawcy zatrzymują się wszystkie na etapie 8. W śladzie widzisz za każdym razem te same brakujące pola. To nie jest problem ekstrakcji pojedynczych dokumentów, lecz brakująca wartość domyślna w konfiguracji pól: popraw ją raz, a cały klaster będzie do odzyskania.
 
 ## Powiązane strony
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Diagnoza dostawcy i klastry problemów](touchless-supplier-diagnosis.md)
 * [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md)
+
+Zrzuty ekranu na tej stronie pokazują interfejs w języku polskim.

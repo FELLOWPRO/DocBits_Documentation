@@ -1,74 +1,74 @@
-# Test: Email Import and Handling Tests
+# Test: importazione e gestione delle e-mail
 
-## Purpose
+## Scopo
 
-These tests ensure that our system can handle email importing correctly. This includes sending emails, receiving and moving them to specific folders, checking if they are read or unread, importing them into the system, and performing cleanup afterward.
+Questi test garantiscono che il nostro sistema possa gestire correttamente l'importazione delle email. Ciò include l'invio di e-mail, la ricezione e lo spostamento in cartelle specifiche, il controllo se sono letti o non letti, l'importazione nel sistema e l'esecuzione successiva della pulizia.
 
-## Test Steps
+## Passaggi di test
 
 1. **Setup:**
-   * **Get Environment Settings:** Load necessary details like email server information and credentials from environment variables.
-   * **Encrypt Email Password:** Securely encrypt the email password for safe usage.
-2. **Email Sending and Management:**
-   * **Send an Email:** Use an SMTP function to send an email with a specific subject and attachment.
-   * **Move the Email:** Use IMAP functions to move the email to a target folder.
-   * **List Folders:** Ensure the target folder exists.
-   * **Delete the Email:** Clean up by deleting the email from the folder.
-   * **Check Email Status:** Verify if the email is marked as read or unread.
+   * **Ottieni impostazioni ambiente:** Carica i dettagli necessari come le informazioni sul server di posta elettronica e le credenziali dalle variabili di ambiente.
+   * **Crittografa password e-mail:** Crittografa in modo sicuro la password e-mail per un utilizzo sicuro.
+2. **Invio e gestione email:**
+   * **Invia un'e-mail:** Utilizza una funzione SMTP per inviare un'e-mail con un oggetto e un allegato specifici.
+   * **Sposta l'e-mail:** Utilizza le funzioni IMAP per spostare l'e-mail in una cartella di destinazione.
+   * **Elenca cartelle:** Assicurarsi che la cartella di destinazione esista.
+   * **Elimina l'e-mail:** Pulisci eliminando l'e-mail dalla cartella.
+   * **Verifica stato e-mail:** Verifica se l'e-mail è contrassegnata come letta o non letta.
 3.  **Test Sequence**
 
     **Initial Setup:**
 
-    * **Check Connection:** Verify connection to the email server and get the connection ID.
-    * **Login Test:** Confirm that logging in with stored credentials works.
-    * **Folder Check:** Ensure the target folder exists on the email server.
+    * **Verifica connessione:** Verifica la connessione al server di posta elettronica e ottieni la connessione ID.
+    * **Test di accesso:** Conferma che l'accesso con le credenziali memorizzate funziona.
+    * **Controllo cartella:** Assicurarsi che la cartella di destinazione esista sul server di posta elettronica.
 
     **Email Operations:**
 
-    * **Send a Test Email:** Send an email with a specific subject.
-    * **Retrieve Email ID:** Get the ID of the sent email from the inbox.
-    * **Move the Email:** Move the email from the inbox to the target folder.
-    * **Check Email Status:** Ensure the email in the target folder is marked as unread.
+    * **Invia un'e-mail di prova:** Invia un'e-mail con un oggetto specifico.
+    * **Recupera emal’ID:** Ottieni l’ID dell'email inviata dalla casella di posta.
+    * **Sposta l'e-mail:** Sposta l'e-mail dalla posta in arrivo alla cartella di destinazione.
+    * **Controlla stato e-mail:** Assicurati che l'e-mail nella cartella di destinazione sia contrassegnata come non letta.
 
     **Email Importing:**
 
-    * **Fetch the Email:** Import the email from the target folder into our system.
-    * **Check Imported Email:** Ensure the imported email is correctly fetched and logged.
+    * **Recupera l'e-mail:** Importa l'e-mail dalla cartella di destinazione nel nostro sistema.
+    * **Controlla l'e-mail importata:** Assicurati che l'e-mail importata sia stata recuperata e registrata correttamente.
 
     **Log Verification:**
 
-    * **Check Import Log:** Verify that the subject of the sent email is recorded in the import log.
+    * **Controlla registro di importazione:** Verifica che l'oggetto dell'e-mail inviata sia registrato nel registro di importazione.
 
     **Cleanup:**
 
-    * **Delete Imported Document:** Remove the document that was imported from the email.
-    * **Delete the Email:** Delete the sent and moved email from the folders to keep everything clean.
+    * **Elimina documento importato:** Rimuove il documento importato dall'e-mail.
+    * **Elimina l'e-mail:** Elimina le e-mail inviate e spostate dalle cartelle per mantenere tutto pulito.
 
-## Detailed Explanation of Each Test
+## Spiegazione dettagliata di ogni test
 
-* **Setup and Initialization:**
-  * **Initialize Shared Data:** Prepare shared data for tests.
-* **Email Connection Tests:**
-  * **Get Connection ID:** Check if we can connect to the email server and get an ID for the connection.
-  * **Login Verification:** Ensure that logging in to the email server works properly.
-* **Folder Verification Tests:**
-  * **Check Target Folder:** Make sure the target folder exists on the email server.
-  * **Verify Folder Listing:** Ensure the list of folders from the server matches our expectations.
-* **Email Sending and ID Retrieval:**
-  * **Send an Email:** Send a test email with a specific subject and attachment.
-  * **Get Email ID:** Retrieve the unique ID of this sent email from the inbox.
-* **Email Moving and Status Checking:**
-  * **Move Email to Folder:** Move the test email from the inbox to the target folder.
-  * **Check Unread Status:** Ensure the email is marked as unread after moving.
-* **Email Fetching and Response Validation:**
-  * **Fetch Email from Folder:** Import the email from the target folder into our system.
-  * **Validate Fetched Email:** Confirm that the fetched email is present in the response.
-* **Import Log Verification:**
-  * **Fetch Import Log:** Retrieve the log of imported emails.
-  * **Check Email Subject in Log:** Ensure the subject of the test email is present in the import log.
+* **Configurazione e inizializzazione:**
+  * **Inizializza dati condivisi:** Prepara i dati condivisi per i test.
+* **Test di connessione e-mail:**
+  * **Ottieni connessione ID:** Controlla se possiamo connetterci al server di posta elettronica e ottieni un ID per la connessione.
+  * **Verifica dell'accesso:** Assicurarsi che l'accesso al server di posta elettronica funzioni correttamente.
+* **Test di verifica delle cartelle:**
+  * **Controlla cartella di destinazione:** Assicurati che la cartella di destinazione esista sul server di posta elettronica.
+  * **Verifica elenco cartelle:** Assicurati che l'elenco delle cartelle dal server corrisponda alle nostre aspettative.
+* **Invio e ID Recupero e-mail:**
+  * **Invia un'e-mail:** Invia un'e-mail di prova con un oggetto e un allegato specifici.
+  * **Ricevi emal’ID:** Recupera l'unico ID di questa email inviata dalla casella di posta.
+* **Spostamento e-mail e controllo dello stato:**
+  * **Sposta e-mail nella cartella:** Sposta l'e-mail di prova dalla posta in arrivo alla cartella di destinazione.
+  * **Controlla lo stato non letto:** Assicurati che l'e-mail sia contrassegnata come non letta dopo lo spostamento.
+* **Recupero e-mail e convalida della risposta:**
+  * **Recupera email dalla cartella:** Importa l'email dalla cartella di destinazione nel nostro sistema.
+  * **Convalida e-mail recuperata:** Conferma che l'e-mail recuperata è presente nella risposta.
+* **Verifica registro importazione:**
+  * **Recupera registro di importazione:** Recupera il registro delle email importate.
+  * **Controlla l'oggetto dell'e-mail nel registro:** Assicurati che l'oggetto dell'e-mail di prova sia presente nel registro di importazione.
 * **Cleanup:**
-  * **Delete Imported Document:** Remove the document that was imported from the email.
-  * **Delete the Email:** Delete the test email from the inbox and the target folder to keep everything clean.
+  * **Elimina documento importato:** Rimuove il documento importato dall'e-mail.
+  * **Elimina l'e-mail:** Elimina l'e-mail di prova dalla posta in arrivo e dalla cartella di destinazione per mantenere tutto pulito.
 
 \
 

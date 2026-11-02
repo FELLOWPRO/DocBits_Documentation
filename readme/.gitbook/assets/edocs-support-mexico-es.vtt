@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.481
+Mexico CFDI 3.3 y 4.0 tienen entradas
+independientes. Compruebe el espacio de
+
+formats_02
+00:00:08.481 --> 00:00:14.809
+nombres, la versión y TipoDeComprobante.
+Un importe negativo por sí solo no
+
+formats_03
+00:00:14.809 --> 00:00:20.788
+identifica una nota de crédito. Analizar
+el archivo no certifica la autorización
+
+formats_04
+00:00:20.788 --> 00:00:21.767
+del SAT.
+
+workflow_01
+00:00:22.517 --> 00:00:27.869
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:27.869 --> 00:00:33.628
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:33.628 --> 00:00:34.467
+activa.
+
+accept_01
+00:00:35.217 --> 00:00:39.757
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:39.757 --> 00:00:45.016
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:45.016 --> 00:00:48.867
+no demuestra la autorización fiscal ni la
+entrega por red.
+

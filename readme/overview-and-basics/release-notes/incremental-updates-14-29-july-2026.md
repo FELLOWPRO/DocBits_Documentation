@@ -18,7 +18,7 @@ que no aparecen en la lista no tuvieron cambios visibles para el cliente._
   omitir el segundo factor durante un tiempo. Cada usuario puede activarla por
   su cuenta; los administradores pueden exigirla para toda la organización.
   Consulte la
-  [guía de Autenticación de Dos Factores](../two-factor-authentication.md).
+  [guía de Autenticación de Dos Factores](../../security/two-factor-authentication.md).
 - **Tickets de soporte desde la pantalla de error.** Cuando algo falla, ahora
   puede abrir un ticket de soporte directamente desde el registro de error. El
   ticket ya incluye el contexto técnico, por lo que no tiene que describirlo.

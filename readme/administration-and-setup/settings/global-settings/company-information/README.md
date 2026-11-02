@@ -1,84 +1,94 @@
-# Información de la Empresa
+# Información de la empresa
 
-<figure><img src="../../../../.gitbook/assets/company_information_es.png" alt="Formulario «Información de la empresa» en la organización de pruebas de la Sandbox de DocBits en español"><figcaption><p>Información de la empresa: edita el nombre de la organización, la dirección, los identificadores legales y los datos de contacto y, a continuación, selecciona Guardar.</p></figcaption></figure>
+## Tutorial en vídeo: Empresa, suscripción y auditoría
 
-La página Información de la Empresa te permite gestionar el perfil de tu empresa, sus preferencias y los datos de la suscripción. Se organiza en las siguientes secciones:
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/es.mp4" %}
+Información de la empresa, plan de suscripción y registros de auditoría en DocBits
+{% endembed %}
 
-## Información de la Empresa
+El vídeo muestra la información y las preferencias de la empresa, el plan de suscripción, la actividad de inicio de sesión y los registros de auditoría.
 
-Esta sección contiene los datos esenciales de tu empresa, agrupados en cuatro áreas:
 
-### Identidad de la empresa
 
-* **Nombre** *(obligatorio)*: El nombre legal de tu empresa.
+<figure><img src="../../../../.gitbook/assets/prior-i001-es.png" alt="Información de la empresa con los valores de la organización ocultos."><figcaption><p>Información de la empresa con los valores de la organización ocultos.</p></figcaption></figure>
+
+La página Company Information le permite gestionar el perfil de su empresa, las preferencias y los detalles de la suscripción. Está organizada en las siguientes secciones:
+
+## Información de la empresa
+
+Esta sección contiene los datos principales de su empresa, agrupados en cuatro áreas:
+
+### Identificación de la empresa
+
+* **Nombre** *(obligatorio)*: el nombre legal de su empresa.
 
 ### Dirección
 
-* **Calle + número**: La dirección postal de tu empresa.
-* **Código postal**: El código postal o ZIP.
-* **Ciudad**: El nombre de la ciudad.
-* **País**: Selecciona tu país en la lista desplegable.
+* **Calle + número**: la dirección postal de su empresa.
+* **Código postal**: código postal.
+* **Ciudad**: nombre de la ciudad.
+* **País**: seleccione su país en la lista desplegable.
 
 ### Información legal
 
-* **ID de la empresa**: Un identificador único de tu empresa, utilizado para integraciones y referencias internas.
-* **Impuesto ID**: Tu número de identificación fiscal para la información financiera.
-* **ID de registro comercial**: Tu número de registro mercantil para la documentación legal.
+* **ID de la compañía**: un identificador único de su empresa, utilizado para integraciones y como referencia interna.
+* **Impuesto ID**: su número de identificación fiscal para la elaboración de informes financieros.
+* **ID de registro comercial**: su número de registro mercantil para la documentación legal.
 
 ### Contacto
 
-* **Teléfono de la empresa oficial**: El número de teléfono principal de tu empresa.
-* **Correo electrónico**: La dirección de correo electrónico principal para comunicaciones oficiales.
+* **Teléfono oficial de la empresa**: el número de teléfono principal de su empresa.
+* **Correo electrónico**: la dirección de correo electrónico principal utilizada para las comunicaciones oficiales.
 
-Tras introducir o actualizar cualquier campo, haz clic en **Guardar** para aplicar los cambios. Los iconos **?** junto a los identificadores legales muestran orientación adicional sobre el campo. Selecciona el título de la sección para desplegar o plegar el formulario.
+Después de introducir o actualizar cualquier campo, haga clic en **Guardar** para aplicar los cambios. Los iconos **?** junto a los identificadores legales muestran orientación adicional sobre el campo. Seleccione el encabezado de la sección para expandir o contraer el formulario.
 
 ## Dominios de correo electrónico
 
-Los administradores de la organización pueden abrir **Ajustes → Información de la empresa → Dominios de correo electrónico** para gestionar los dominios utilizados en la asignación automática de organizaciones. Cuando alguien inicia sesión con Microsoft o Google y aún no es miembro de ninguna organización, DocBits puede asignarlo a esta organización si su dirección de correo electrónico utiliza uno de los dominios listados. Un dominio solo puede pertenecer a una organización.
+Los administradores de la organización pueden abrir **Ajustes → Información de la empresa → Dominios de correo electrónico** para gestionar los dominios utilizados para la asignación automática de organización. Cuando una persona inicia sesión con Microsoft o Google y todavía no es miembro de una organización, DocBits puede asignarla a esta organización si su dirección de correo electrónico utiliza uno de los dominios indicados. Un dominio solo puede pertenecer a una organización.
 
-<figure><img src="../../../../.gitbook/assets/company_email_domains_es.png" alt="Sección «Dominios de correo electrónico» desplegada con la lista de dominios vacía, el campo de entrada y el botón «Agregar dominio»"><figcaption><p>La sección «Dominios de correo electrónico» en español antes de añadir un dominio. Introduce un dominio de la empresa y selecciona **Agregar dominio**.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-i002-es.png" alt="Configuración de dominios de correo de la empresa."><figcaption><p>Configuración de dominios de correo de la empresa.</p></figcaption></figure>
 
-Introduce solo el dominio, por ejemplo `example.com`, en el campo y selecciona **Agregar dominio** o pulsa Intro. El primer dominio se convierte en el dominio principal. Si se listan más dominios, usa **Establecer como principal** en otra fila para cambiarlo, o el icono de papelera para eliminar un dominio. Los errores, como un dominio no válido, un proveedor de correo personal o un dominio ya asignado a otra organización, aparecen bajo el campo de entrada. **Aún no se han asignado dominios** significa que esta organización no tiene ninguna regla de dominios.
+Introduzca únicamente el dominio, por ejemplo `example.com`, en el campo de entrada y seleccione **Agregar dominio** o pulse Intro. El primer dominio se convierte en el dominio principal. Si hay más dominios en la lista, utilice **Hacer primario** en otra fila para cambiarlo, o el icono de la papelera para eliminar un dominio. Los errores, como un dominio no válido, un proveedor de correo electrónico personal o un dominio ya asignado a otra organización, aparecen debajo del campo de entrada. **Todavía no hay dominios asignados** significa que esta organización no tiene ninguna regla de dominio.
 
-Antes de añadir un dominio, comprueba qué organización debe recibir los nuevos inicios de sesión. Para gestionar las membresías existentes, continúa con [Usuarios](../groups-users-and-permissions/users/README.md).
+Antes de añadir un dominio, compruebe qué organización debe recibir los nuevos inicios de sesión. Para gestionar las pertenencias existentes, continúe con [Users](../groups-users-and-permissions/users/README.md).
 
 ## Preferencias de la empresa
 
-Configura la configuración predeterminada de toda la empresa:
+Configure los ajustes predeterminados de toda la empresa:
 
-* **Patrón de fecha**: Elige cómo se muestran las fechas en DocBits (por ejemplo, `%d/%m/%Y`, `%d.%m.%Y`).
-* **Formato de importes**: Selecciona el formato numérico para los importes (por ejemplo, Deutsch para `1.000,00`, English para `1,000.00`).
-* **Diálogo de información de nueva versión**: Activa o desactiva si los usuarios ven una notificación cuando se publica una nueva versión de DocBits.
+* **Patrón de fecha**: elija cómo se muestran las fechas en todo DocBits (por ejemplo, `%m/%d/%Y`, `%d.%m.%Y`).
+* **Formato de cantidad**: seleccione el formato numérico de los importes (por ejemplo, Deutsch para `1.000,00`, English para `1,000.00`).
+* **Nuevo cuadro de diálogo de información sobre la versión**: active o desactive si los usuarios ven una notificación cuando se publica una nueva versión de DocBits.
 
-Haz clic en **Guardar** tras realizar los cambios.
+Haga clic en **Guardar** después de realizar los cambios.
 
 ## Color de la aplicación
 
-Personaliza el color principal de la interfaz de DocBits. Resulta útil para distinguir visualmente distintos entornos (por ejemplo, desarrollo y producción).
+Personalice el color principal de la interfaz de DocBits. Resulta útil para distinguir visualmente entornos diferentes (por ejemplo, dev frente a producción).
 
-* **Color**: Introduce un código de color hexadecimal (por ejemplo, `#2388AE`) o usa el selector de color.
-* Haz clic en **Guardar** para aplicar el color o en **Restablecer** para restaurar el color predeterminado.
+* **Color**: introduzca un código de color hexadecimal (por ejemplo, `#2388AE`) o utilice el selector de color.
+* Haga clic en **Guardar** para aplicarlo o en **Restablecer** para restaurar el color predeterminado.
 
 ## Plan de suscripción
 
-Consulta tus planes de suscripción activos y sus detalles:
+Consulte sus planes de suscripción activos y sus detalles:
 
-* **Nombre del plan**: El nombre de cada plan activo (por ejemplo, DocBits, DocFlow Users, DocSearch).
-* **Días restantes**: Los días que quedan hasta que caduque el plan.
-* **Fecha de inicio / fecha de fin**: El periodo de suscripción.
-* **Número de usuarios**: El número total de usuarios de tu organización.
-* **Número de suborganizaciones**: El número de suborganizaciones configuradas.
-* **Número de proveedores**: El número de proveedores registrados.
+* **Nombre del plan**: el nombre de cada plan activo (por ejemplo, DocBits, DocFlow Users, DocSearch).
+* **días restantes**: cuántos días quedan hasta que caduque el plan.
+* **Start Date / End Date**: el período de la suscripción.
+* **Número de usuarios**: número total de usuarios de su organización.
+* **Número de suborganizaciones**: número de suborganizaciones configuradas.
+* **Número de proveedores**: número de proveedores registrados.
 
 ## Uso de la suscripción
 
-Supervisa el consumo mensual de tokens y de flujos de trabajo:
+Supervise su consumo mensual de tokens y de flujos de trabajo:
 
 | Columna | Descripción |
 |--------|-------------|
-| **Tipo** | El tipo de uso (documento o flujo de trabajo). |
-| **Desde / Hasta** | Las fechas del periodo de facturación. |
-| **Tokens utilizados** | Número de tokens consumidos en el periodo actual. |
-| **Tokens restantes** | Tokens aún disponibles en el periodo actual. |
+| **Tipo** | El tipo de uso (Document o Workflow). |
+| **From / To** | Las fechas del período de facturación. |
+| **Tokens utilizados** | Número de tokens consumidos en el período actual. |
+| **Tokens restantes** | Tokens que aún están disponibles en el período actual. |
 
-Usa el botón **Seleccionar** para filtrar por intervalos de fechas concretos.
+Utilice el botón **Seleccionar** para filtrar por intervalos de fechas específicos.

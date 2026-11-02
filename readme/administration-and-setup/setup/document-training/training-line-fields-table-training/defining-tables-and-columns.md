@@ -1,51 +1,45 @@
-# Definición de Tablas y Columnas
+# Definir tablas y columnas
 
-## Definir Tablas
+Si una tabla no se reconoce completamente, abra su entrenamiento desde la validación del documento. Los ejemplos muestran una factura ficticia y un borrador sin guardar.
 
-Para definir tablas y columnas en un documento, por favor importe un documento, ábralo y vaya a la vista de extracción de tablas como ya se conoce (a través de "Ítems de línea").
+## Abrir y activar el entrenamiento
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_1.png)
+Abra la factura en **Validación de campos** y seleccione **Extracción de tabla**.
 
-Terminarás en la siguiente pantalla donde puedes activar el Modo de Entrenamiento:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-es.png" alt="Interfaz para definir tablas y columnas."><figcaption><p>Interfaz para definir tablas y columnas.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_2.png)
+Active **Modo Formación** para mostrar las herramientas de selección y columnas.
 
-A través del botón "Editar" se activará el modo de selección de tabla y podrás editar el documento mostrado en el lado izquierdo:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-es.png" alt="Entrenamiento de tablas con el modo de entrenamiento activado."><figcaption><p>Entrenamiento de tablas con el modo de entrenamiento activado.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_3.png)
+La barra incluye detección automática de tablas. Compruebe el resultado contra el documento; esta imagen muestra las herramientas disponibles y no demuestra una detección completada.
 
-En general, ahora puedes utilizar la funcionalidad de autodetección de tablas y el sistema definirá automáticamente las tablas en el documento:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-es.png" alt="Herramientas de entrenamiento de tablas, incluida la detección automática."><figcaption><p>Herramientas de entrenamiento de tablas, incluida la detección automática.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_4.png)
+## Seleccionar el área
 
-Si el sistema no puede encontrar las tablas automáticamente, puedes definir manualmente las tablas en el documento como se muestra en el video a continuación:
+Con el lápiz, dibuje un rectángulo alrededor de las cabeceras y las posiciones. Excluya los totales situados debajo.
 
-## Definir Columnas
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-es.png" alt="Área de tabla sin guardar alrededor de las posiciones de la factura."><figcaption><p>Área de tabla sin guardar alrededor de las posiciones de la factura.</p></figcaption></figure>
 
-Una vez que las tablas estén definidas, puedes definir manualmente las columnas a través del siguiente botón:
+## Separar las columnas
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_5.png)
+Seleccione la herramienta de columnas y coloque los separadores verticales entre las columnas reales.
 
-Define y ordena las columnas arrastrándolas y soltándolas en el documento. Repite esto para las tablas en las otras páginas también. Como alternativa, si las tablas son iguales en cada página, puedes usar el siguiente botón para usar la misma columna para todas las tablas definidas en el documento. Esta funcionalidad copia las columnas que has definido a todas las demás páginas también:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-es.png" alt="Área de tabla en edición con separadores verticales."><figcaption><p>Área de tabla en edición con separadores verticales.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_6.png)
+Compruebe posición, descripción, cantidad, precio unitario e importe.
 
-Si el documento es muy confuso, se puede hacer zoom para acercar o alejar utilizando la funcionalidad de "Acercar" y "Alejar". Esto es útil, por ejemplo, cuando hay mucha información junta y esto dificulta definir las columnas:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-es.png" alt="Separadores colocados entre las columnas de la factura."><figcaption><p>Separadores colocados entre las columnas de la factura.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_7.png)
+Revise el área y los separadores antes de usar **Guardar** o **Guardar reglas**.
 
-Si definiste una columna por error, puedes seleccionarla haciendo clic en ella y eliminarla a través del siguiente botón:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-es.png" alt="Área y separadores de columnas de un borrador sin guardar."><figcaption><p>Área y separadores de columnas de un borrador sin guardar.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_8.png)
+## Comprobar la extracción
 
-Nota: El botón solo es visible si la columna está seleccionada.
+Compare cada posición con la factura. La imagen siguiente muestra las filas ya extraídas automáticamente en la validación; no son el resultado del borrador de entrenamiento anterior.
 
-Si has terminado de definir todas las tablas y todas las columnas en tu documento, utiliza el botón "Guardar" para activar tus cambios y extraer los datos del documento:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-es.png" alt="Posiciones extraídas automáticamente de la factura ficticia."><figcaption><p>Posiciones extraídas automáticamente de la factura ficticia.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_9.png)
-
-Los datos de todas las áreas definidas se extraerán y se mostrarán en el lado derecho:
-
-&#x20;En la siguiente sección aprenderás cómo ajustar los datos que se han extraído.
-
-<figure><img src="https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_10.png" alt="" width="563"><figcaption></figcaption></figure>
+Cuando guarde un entrenamiento previsto, pruébelo con otros documentos del mismo proveedor. Una factura no demuestra una extracción fiable para todos los diseños.

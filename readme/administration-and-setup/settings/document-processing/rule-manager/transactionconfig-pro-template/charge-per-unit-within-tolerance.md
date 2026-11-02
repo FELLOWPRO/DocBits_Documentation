@@ -1,32 +1,34 @@
-# Charge Per Unit Within Tolerance
+# Recargo por unidad dentro de la tolerancia
 
-## Scenario:
+El siguiente escenario es un ejemplo de asignación configurada, no una plantilla predeterminada cuyo despliegue se haya verificado. La salida real, los importes, los signos y los tipos de documento dependen de las reglas y expresiones `conflict_resolution` activas, de la asignación de exportación y de las decisiones de aprobación. Cualquier nota de débito o crédito descrita está condicionada a esa configuración; el ejemplo no garantiza su emisión automática ni el cumplimiento legal.
 
-The charge per unit on the invoice is within the acceptable tolerance range compared to the purchase order.
+## Escenario:
 
-## Action:
+El cargo por unidad en la factura está dentro del rango de tolerancia aceptable en comparación con la orden de compra.
 
-The system accepts the charge per unit as invoiced and processes the transaction without adjustments.
+## Acción:
 
-## Example:
+El sistema acepta el cargo por unidad como facturado y procesa la transacción sin ajustes.
+
+## Ejemplo:
 
 * **Purchase Order (PO):**
-  * Charge Per Unit: $5.00
+  * Cargo por unidad: $5.00
   * Quantity: 500 units
   * Total Charge Amount: $2,500.00
 * **Invoice Received:**
-  * Charge Per Unit: $5.10 (within tolerance of 2%)
+  * Cargo por unidad: $5.10 (dentro de la tolerancia del 2%)
   * Quantity: 500 units
   * Total Charge Amount: $2,550.00
 * **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±3%
+  * Tolerancia del recargo por unidad: ±3%
 
-Since the charge per unit ($5.10) is within the acceptable tolerance range of 3% compared to the purchase order, the system will:
+Dado que el cargo por unidad ($5.10) está dentro del rango de tolerancia aceptable del 3% en comparación con la orden de compra, el sistema:
 
-1. **Accept the Charge Per Unit:** The system accepts the invoiced charge per unit of $5.10 as it falls within the defined tolerance limit.
-2. **Process the Transaction:** The system processes the invoice with the total charge amount based on the invoiced charge per unit and quantity:
-   * **Total Charge Amount = Quantity × Charge Per Unit**
-   * **Total Charge Amount = 500 units × $5.10 = $2,550.00**
-3. **Finalize the Invoice:** The system processes the transaction without any adjustments, accepting the invoice as it is.
+1. **Aceptar el cargo por unidad:** El sistema acepta el cargo facturado por unidad de $5.10 ya que se encuentra dentro del límite de tolerancia definido.
+2. **Procesar la transacción:** El sistema procesa la factura con el monto total del cargo en función del cargo facturado por unidad y cantidad:
+   * **Monto total del cargo = Cantidad × Cargo por unidad**
+   * **Monto total del cargo = 500 unidades × $5.10 = $2,550.00**
+3. **Finalizar Factura:** El sistema procesa la transacción sin ningún ajuste, aceptando la factura tal como está.
 
-This approach allows the system to accommodate minor acceptable variances in charges, ensuring smooth and efficient processing of transactions without unnecessary rejections or delays.
+Este enfoque permite que el sistema se adapte a variaciones menores aceptables en los cargos, lo que garantiza un procesamiento fluido y eficiente de las transacciones sin rechazos ni demoras innecesarias.

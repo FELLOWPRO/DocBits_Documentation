@@ -4,6 +4,12 @@ description: Supporto documenti elettronici PINT A-NZ in DocBits
 
 # 🇦🇺 PINT A-NZ
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Australia](countries/australia.md). L’etichetta della famiglia attiva non ha un numero di pubblicazione PINT fisso. Verificate gli identificatori di personalizzazione e di profilo; la consegna tramite rete è un’integrazione separata.
+{% endhint %}
+
 | Proprietà | Valore |
 |----------|-------|
 | **Paese / Regione** | Australia / Nuova Zelanda |
@@ -24,7 +30,7 @@ PINT A-NZ (Peppol International Model for Australia-New Zealand) è la specifica
 
 ## Anteprima predefinita
 
-<figure><img src="aunz-pint-preview.png" alt="Anteprima fattura PINT A-NZ in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura PINT A-NZ</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Anteprima fattura PINT A-NZ in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura PINT A-NZ</p></figcaption></figure>
 
 ## Mappatura dei campi
 

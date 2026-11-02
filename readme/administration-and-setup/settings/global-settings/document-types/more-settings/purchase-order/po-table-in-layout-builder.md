@@ -42,6 +42,6 @@ Si la **table PO** est manquante ou a été supprimée, suivez ces étapes :
 
 <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FruKctR4Kn78U15xYUXIR%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250210135437.jpg%3Falt%3Dmedia%26token%3D9fda3d8d-d72b-49f9-8cb7-f2eff66c5c6c&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=acacb6e3&#x26;sv=2" alt=""></div>
 
-Une fois ajoutée et activée, la **table PO** sera visible dans le **Constructeur de Mise en Page** et l'**Écran de Validation** lorsqu'un **bon de commande** est disponible pour une facture.
+Una volta aggiunta e attivata, la **tabella PO** sarà visibile nell’**editor di layout** e nella **schermata di convalida** quando per una fattura è disponibile un **ordine di acquisto**.
 
 ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvDUUXZQhtPS1TkaqeHm1%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250210133655.jpg%3Falt%3Dmedia%26token%3D3bebdb16-d12a-4224-b4e6-a3cb1fa60b9f\&width=768\&dpr=4\&quality=100\&sign=aa88173a\&sv=2)

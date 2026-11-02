@@ -6,7 +6,7 @@ Cosa succede alla tabella delle voci di riga quando un documento viene approvato
 
 | Metodo di esportazione | Cosa viene inviato per la tabella |
 |---|---|
-| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | La tabella così com'è nella schermata di validazione: ogni [colonna della tabella](../global-settings/document-types/table-columns.md) non nascosta di ogni riga, con valore, valore formattato e confidenza. |
+| **webhook**, **watcher**, **sftp**, **infor_sftp** (JSON / XML) | La tabella così com'è nella schermata di validazione: ogni [colonna della tabella](../global-settings/document-types/table-columns/README.md) non nascosta di ogni riga, con valore, valore formattato e confidenza. |
 | **infor-m3-cloud**, **infor-m3-toml-cloud**, **infor-idm-***, **infor-gls840-onpremise**, **infor-m3-oc-charges-onpremise** (BOD Infor ERP / SAP) | Non la tabella grezza. DocBits costruisce da essa le **righe di ricevimento** e le **righe di costo** (vedi sotto) e le mappa sui campi del BOD con la mappatura configurata in [Esportazione verso INFOR](../../../infor-integration-and-configuration/exporting-to-infor/README.md). |
 
 ## Righe di ricevimento e righe di costo (esportazioni Infor)
@@ -48,5 +48,5 @@ Partner e supporto con accesso all'API o all'MCP possono richiedere il payload d
 ## Pagine correlate
 
 * [Esportazione](export.md): configurazioni e metodi di esportazione
-* [Colonne della Tabella](../global-settings/document-types/table-columns.md)
+* [Colonne della Tabella](../global-settings/document-types/table-columns/README.md)
 * [Esportazione verso INFOR](../../../infor-integration-and-configuration/exporting-to-infor/README.md): mappature dei campi BOD per righe di ricevimento, di costo e imposta

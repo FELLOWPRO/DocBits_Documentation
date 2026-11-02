@@ -1,5 +1,7 @@
 # Sotto-organizzazioni
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/it.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Sotto-organizzazioni"><figcaption><p>Pagina Sotto-organizzazioni</p></figcaption></figure>
 
 Le sotto-organizzazioni consentono di creare una struttura gerarchica in DocBits per gestire documenti, utenti e flussi di lavoro tra diversi reparti, team o entità.

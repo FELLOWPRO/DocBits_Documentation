@@ -1,57 +1,27 @@
-# Call Api
+# Chiama l'Api
 
-<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-it-it.png" alt="Chiama l&#x27;Api, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
 
-## Scopo:
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-it-it.png" alt="Chiama l&#x27;Api, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
-La scheda di workflow **"Call API"** consente agli utenti di effettuare richieste HTTP a endpoint API specificati direttamente dal workflow. Questa scheda supporta vari metodi HTTP e consente un'interazione dinamica con sistemi esterni inviando parametri e dati. Semplifica l'integrazione con servizi di terze parti e API personalizzate, garantendo una comunicazione fluida.
+<!-- workflow-card-call-api-contract-20261022 -->
 
-## Componenti della scheda:
+## Scopo
 
-1. **API Endpoint**
-   * **Descrizione:** L'endpoint di destinazione della **DocBits API** con cui questa scheda interagirà.
-   * **Dettaglio:** Un campo di testo in cui gli utenti specificano l'endpoint per la richiesta API.
-2. **HTTP Method**
-   * **Descrizione:** Il tipo di richiesta HTTP da effettuare.
-   * **Opzioni:**
-     1. **GET:** Recupera dati dall'endpoint specificato.
-     2. **POST:** Invia dati all'endpoint.
-     3. **PUT:** Aggiorna dati esistenti all'endpoint.
-     4. **DELETE:** Rimuove dati all'endpoint.
-3. **Parameters**
-   * **Descrizione:** Parametri di query da includere nella richiesta API.
-   * **Dettaglio:** Un campo di testo o un elenco per inserire coppie chiave-valore per l'URL della richiesta.
-4. **Data**
-   1. **Descrizione:** Il payload da inviare nel corpo della richiesta API (applicabile ai metodi POST e PUT).
-   2. **Dettaglio:** Un campo per inserire i dati in formato JSON.
+Usare `call_api` per chiamare un endpoint della API DocBits configurata. Il percorso relativo viene aggiunto al suo indirizzo di base. Un URL esterno arbitrario non configura un’integrazione con un’altra API.
 
-## Funzionalità:
+## Configurazione
 
-**Valutazione della condizione:** Il sistema valuta le condizioni definite nelle sezioni "Where" e "And":
+Impostare percorso, metodo HTTP, parametri di query e dati accettati dall’endpoint. La richiesta usa il contesto dell’utente DocBits corrente. I valori mancanti di `org_id` e `triggered_by_docflow` vengono aggiunti automaticamente. Gli oggetti dei parametri e dei dati, o la rappresentazione testuale supportata, devono rispettare il formato di questa versione. Non è disponibile una mappatura generale dei campi della risposta JSON.
 
-* Se entrambe le condizioni sono **vere**, la richiesta API viene eseguita come configurata.
-* Se una delle condizioni è **falsa**, la scheda non viene eseguita e non viene effettuata alcuna chiamata API.
+## Risultato e limiti
 
-**Esecuzione della richiesta API:**
+Il testo della risposta viene convertito in un booleano: `true`, `1`, `yes` oppure `on` senza altri contenuti producono vero; una risposta non riconosciuta, incluso un oggetto JSON arbitrario, produce falso per impostazione predefinita. Il solo stato HTTP non determina il booleano. Un timeout o un errore della richiesta produce falso. Il test della scheda simula la chiamata e restituisce vero senza inviare la richiesta; non dimostra autenticazione, raggiungibilità o comportamento dell’endpoint.
 
-* La scheda invia la richiesta HTTP all'endpoint specificato utilizzando il metodo selezionato.
-* Eventuali parametri forniti vengono aggiunti all'URL e i dati vengono inclusi nel corpo della richiesta (se applicabile).
+<!-- workflow-card-practical-example-20261021 -->
 
-## Configurazione e impostazione:
+## Esempio pratico
 
-1. **Definisci l'API Endpoint:**\
-   Inserisci l'URL dell'API che desideri chiamare.
-2. **Seleziona il metodo HTTP:**\
-   Scegli uno dei metodi supportati (GET, POST, PUT, DELETE) in base ai requisiti della tua API.
-3. **Fornisci i parametri:**\
-   Aggiungi eventuali parametri di query richiesti come coppie chiave-valore.
-4. **Includi i dati (se applicabile):**\
-   Per i metodi POST o PUT, specifica i dati da inviare nel corpo della richiesta.
-5. **Configurazione delle condizioni:**\
-   Configura le sezioni "Where" e "And" per definire quando la chiamata API deve avvenire.
+Usare questa scheda dopo le condizioni necessarie per ottenere un booleano da un endpoint configurato della API DocBits. Per una prova isolata, scegliere un endpoint esistente, documentato e di sola lettura con il contratto di risposta booleano previsto e il metodo adatto, ad esempio `GET`. Usare soltanto i parametri dimostrativi supportati.
 
-## Conclusione:
-
-La scheda di workflow **"Call API"** migliora l'automazione del workflow consentendo un'interazione diretta con sistemi esterni. Fornendo configurazioni flessibili per endpoint, metodi e dati, garantisce che i workflow possano integrarsi senza problemi con API di terze parti o backend personalizzati. La possibilità di eseguire condizionatamente le chiamate API garantisce precisione ed efficienza nell'automazione delle comunicazioni esterne.
-
-***
+Risultato atteso e controesempio: una risposta HTTP `200` ipotetica il cui testo completo sia `true` produce vero; `false` produce falso. Un oggetto come `{"approved": true}` non viene convertito automaticamente in vero. Verificare separatamente risposta reale e registri. Esempio verificato nel codice di esecuzione; nessuna richiesta o workflow è stato eseguito.

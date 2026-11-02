@@ -43,11 +43,11 @@ Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Deskto
 *   Selecteer **Gegevens ophalen** → **ODBC** → **Verbinden**.
 
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 163621.png" alt=""><figcaption></figcaption></figure>
+
 *   Selecteer uit de DSN-lijst uw geconfigureerde bron (bijv. `ClickHouse_Prod`).
 
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 163823.png" alt=""><figcaption></figcaption></figure>
+
 * Klik op **OK**. Voer inloggegevens opnieuw in indien gevraagd.
 
 #### 4. Gegevens Laden en Transformeren
@@ -58,7 +58,7 @@ Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Deskto
   *   **Gegevens Transformeren**: om Power Query te openen voor gegevensvormgeving
 
 
-      <figure><img src="../../.gitbook/assets/Screenshot 2025-05-19 164134.png" alt=""><figcaption></figcaption></figure>
+
 
 #### 5. Visualiseer Uw Gegevens
 
@@ -69,16 +69,22 @@ Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Deskto
 
 #### 6. Schakel Geplande Vernieuwing In (Optioneel)
 
-<mark style="color:red;">**Opmerking:**</mark> **Vereist Power BI Pro of Premium + Gateway**
+Geplande vernieuwing hangt af van de licentie of capaciteit van de werkruimte, de connector en de verbindingsmodus. Configureer voor deze ODBC-verbinding een bereikbare gateway met het juiste stuurprogramma, DSN en de juiste aanmeldgegevens. Controleer de actuele vereisten in de officiële documentatie.
 
 * Om uw rapporten gesynchroniseerd te houden met ClickHouse:
 * Publiceer uw `.pbix`-bestand naar **Power BI Service**.
 * Installeer de **Power BI Gateway** (Standaardmodus) op een machine met netwerktoegang tot ClickHouse.
-* In Power BI Service:
+* In Power BI-service:
   * Ga naar uw dataset → **Instellingen** → **Geplande Vernieuwing**
   * Wijs uw DSN toe en geef inloggegevens op
 * Meer informatie [hier](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
 #### 7. Voorbeelddashboards & Gegevensweergaven&#x20;
 
-<div><figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.07.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.17.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.26.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2025-05-13 at 12.23.34.png" alt=""><figcaption></figcaption></figure></div>
+
+
+[Officiële documentatie — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Officiële documentatie — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Officiële documentatie — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

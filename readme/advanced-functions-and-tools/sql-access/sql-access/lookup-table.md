@@ -1,4 +1,4 @@
-# Lookup table
+# Opzoektabel
 
 ## Tabel `public.lookup_table`
 
@@ -11,12 +11,12 @@
 * `prop_name`: intern
 * `prop_value`: intern
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
 * `prop_value_clean`: intern
 * `version`: integer
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: tijdstempel met tijdzone
 * `sub_org_id`: intern
 
 ### Analyse & beschrijving

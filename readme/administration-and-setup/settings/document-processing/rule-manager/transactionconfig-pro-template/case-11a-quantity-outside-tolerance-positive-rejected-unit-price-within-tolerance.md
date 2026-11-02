@@ -1,36 +1,38 @@
-# Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance
+# Geval 11a: Hoeveelheidsoverschot afgewezen, eenheidsprijs binnen tolerantie
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+Het aantal op de factuur overschrijdt het aanvaardbare bereik (positief) en wordt afgewezen, maar de eenheidsprijs valt binnen de tolerantie.
 
-## Action:
+## Actie:
 
-The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+Het systeem past de hoeveelheid aan tot het goedgekeurde niveau, handhaaft de eenheidsprijs en verwerkt de transactie. Elke overtollige hoeveelheid wordt afgewezen en niet gefactureerd.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
   * Quantity: 100 units
-  * Unit Price: $8.00 per unit
+  * Eenheidsprijs: $8.00 per eenheid
   * Total Amount: $800.00
 * **Invoice Received:**
-  * Quantity: 110 units (outside tolerance of 10%, rejected)
-  * Unit Price: $8.00 per unit (within tolerance)
+  * Aantal: 110 stuks (buiten tolerantie van 10%, afgekeurd)
+  * Eenheidsprijs: $8.00 per eenheid (binnen tolerantie)
   * Total Amount: $880.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerantie per eenheidsprijs: ±2%
 
-Since the quantity (110 units) exceeds the acceptable tolerance limit (positive variance of 10%) and is not approved, but the unit price ($8.00) is within tolerance, the system will:
+Aangezien de hoeveelheid (110 eenheden) de aanvaardbare tolerantielimiet overschrijdt (positieve variantie van 10%) en niet is goedgekeurd, maar de eenheidsprijs ($8.00) binnen de tolerantie valt, zal het systeem:
 
-1. **Reject the Excess Quantity:** The system rejects the quantity that exceeds the approved tolerance level.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the approved level specified in the purchase order.
-   * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** The unit price of $8.00 per unit is within tolerance and remains unchanged.
-4. **Recalculate the Total Amount:** The system calculates the total amount using the approved quantity and the accepted unit price:
-   * **Total Amount = Approved Quantity × Unit Price**
-   * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $800.00, reflecting only the approved quantity and unit price. The excess quantity of 10 units is rejected and not invoiced.
+1. **De overtollige hoeveelheid afwijzen:** Het systeem wijst de hoeveelheid af die het goedgekeurde tolerantieniveau overschrijdt.
+2. **De hoeveelheid aanpassen:** Het systeem past de hoeveelheid aan zodat deze overeenkomt met het goedgekeurde niveau dat is opgegeven in de inkooporder.
+   * Goedgekeurde hoeveelheid = 100 eenheden (vanaf PO)
+3. **Handhaaf de eenheidsprijs:** De eenheidsprijs van $8.00 per eenheid valt binnen de tolerantie en blijft ongewijzigd.
+4. **Het totale bedrag opnieuw berekenen:** Het systeem berekent het totale bedrag met behulp van de goedgekeurde hoeveelheid en de geaccepteerde eenheidsprijs:
+   * **Totaalbedrag = goedgekeurde hoeveelheid × eenheidsprijs**
+   * **Totaalbedrag = 100 eenheden × $8.00 per eenheid = $800.00**
+5. **De factuur verwerken:** Het systeem verwerkt de factuur met het aangepaste totaalbedrag van $800.00, waarbij alleen de goedgekeurde hoeveelheid en eenheidsprijs worden weergegeven. De overtollige hoeveelheid van 10 eenheden wordt afgewezen en niet gefactureerd.
 
-This approach ensures that the invoiced amount aligns with the agreed terms in the purchase order, even when the supplier attempts to invoice for an excess quantity.
+Deze aanpak zorgt ervoor dat het gefactureerde bedrag in overeenstemming is met de overeengekomen voorwaarden in de inkooporder, zelfs wanneer de leverancier probeert een overtollige hoeveelheid te factureren.

@@ -4,7 +4,7 @@
 
 Bij het maken van een IDM-mappingbestand zijn de volgende velden vereist:
 
-* **Document Type Definition**
+* **Definitie van documenttype**
   * Zorg ervoor dat de documenttypecode in DocBits overeenkomt met de naam die in de URL van de veldinstellingen wordt gebruikt, vergelijkbaar met het BOD-mappingbestand.
   * Controleer of de naam van het documenttype in IDM overeenkomt met uw systeemconfiguratie. In M3 kan dit bijvoorbeeld **M3_SupplierInvoice** zijn, terwijl het in LN afhankelijk van uw setup anders is.
     * Een handleiding voor het navigeren in IDM vindt u onder Document Manager in IDM op deze pagina.
@@ -180,7 +180,7 @@ Opmerking: Zorg ervoor dat **export_doc_type** is ingesteld op het IDM-factuurty
 
 <figure><img src="../../.gitbook/assets/edi_mapping_example.png" alt="Voorbeeld van een EDI-mapping"><figcaption></figcaption></figure>
 
-### Document Manager in Infor
+### Documentbeheer in Infor
 
 Ga naar Document Manager en selecteer de naam van het documenttype dat u wilt exporteren, bijvoorbeeld Supplier Invoice.
 

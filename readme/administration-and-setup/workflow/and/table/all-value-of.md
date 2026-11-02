@@ -1,6 +1,8 @@
-# All Value of
+# Alle waarde van
 
-<figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v1-nl-nl.png" alt="Alle waarde van, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_all_v2-nl-nl.png" alt="Alle waarde van, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 
@@ -9,7 +11,7 @@ Deze DocBits-kaart wordt gebruikt om te valideren of **alle waarden** in een spe
 ## **Functionaliteit:**
 
 * **Regex-patroonvalidatie:** Deze kaart controleert of **alle waarden** in een opgegeven kolom van een tabel overeenkomen met het opgegeven reguliere-expressiepatroon. De workflow gaat alleen verder als elke vermelding in de kolom aan de voorwaarde voldoet.
-* **Operator:** Gebruikers definiëren de kolom en geven het regex-patroon op. De beschikbare voorwaarde is:
+* **Exploitant:** Gebruikers definiëren de kolom en geven het regex-patroon op. De beschikbare voorwaarde is:
   * **Matches Regex Pattern:** Verifieert dat elke waarde in de opgegeven kolom overeenkomt met het regex-patroon.
 * **Tabel- en kolomselectie:** Gebruikers geven de tabel en kolom op die ze willen controleren op volledige regex-patroonovereenkomsten.
 

@@ -1,4 +1,4 @@
-# Receive delivery line
+# Leveringsontvangstregel
 
 ## Tabel `public.receive_delivery_line`
 

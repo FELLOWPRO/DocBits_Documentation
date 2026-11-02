@@ -1,6 +1,6 @@
 # WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-overview-infographic.svg" alt="Overzicht van WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-overview-nl.svg" alt="WatchDog: mapbewaking, verwerking in DocBits en exportbestemmingen."><figcaption><p>WatchDog: mapbewaking, verwerking in DocBits en exportbestemmingen.</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/watchdog-infographic-en.png" alt="Infographic over WatchDog"><figcaption></figcaption></figure>
 
@@ -20,7 +20,7 @@
 
 ### 1. WatchDog downloaden
 
-Download `WatchDog.exe` via **Settings → Document Processing → WatchDog → General Tab** in de DocBits-applicatie.
+Download `WatchDog.exe` via **Instellingen → Documentverwerking → WatchDog → Tabblad Algemeen** in de DocBits-applicatie.
 
 ### 2. Configureren met API Key
 
@@ -43,10 +43,10 @@ WatchDog.exe start
 
 Alle import- en exportconfiguraties worden rechtstreeks in de **DocBits-applicatie** gemaakt:
 
-**Settings → Document Processing → WatchDog → Configurations Tab**
+**Instellingen → Documentverwerking → WatchDog → Tabblad Configuraties**
 
 * **Import Configurations** — definieer bewaakte mappen en documenttypen
-* **Export Configurations** — definieer exportbestemmingen, XSLT-templates en exportmethoden
+* **Exportconfiguraties** — definieer exportbestemmingen, XSLT-templates en exportmethoden
 
 > **Belangrijk:** Voor exportconfiguraties is een **documenttype** (`doc_type`) vereist. Configuraties zonder documenttype worden geweigerd.
 

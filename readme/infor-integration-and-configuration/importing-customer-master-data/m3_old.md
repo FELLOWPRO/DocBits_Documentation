@@ -12,9 +12,9 @@ Deze handleiding legt uit hoe u een API-verbindingssjabloon importeert om snel b
 <mark style="color:red;">**Opmerking**</mark>: Voor de gedetailleerde configuratie van specifieke onderdelen zoals Auto Accounting, leveranciersintegratie, inkooporders of Table Extraction voor kostenelementen verwijzen wij naar de bijbehorende documentatie:
 
 * [Auto Accounting](m3/auto-accounting.md)
-* [Suppliers and Purchase Order](m3/suppliers-and-purchase-orders.md)
-* [How to import all suppliers](m3/how-to-import-all-suppliers.md)
-* [Table Extraction for costing element](m3/table-extraction-for-costing-element.md)
+* [Leveranciers en inkooporder](m3/suppliers-and-purchase-orders.md)
+* [Hoe alle leveranciers importeren](m3/how-to-import-all-suppliers.md)
+* [Tabelextractie voor kostenelement](m3/table-extraction-for-costing-element.md)
 
 ### **Het sjabloon downloaden**
 
@@ -27,7 +27,7 @@ Download vóór het importeren het benodigde verbindingssjabloon via het onderst
 #### Stappen om een verbindingssjabloon te importeren
 
 1. **Infor ION Desk openen:**
-   *   Ga naar **InforOS** → **ION Desk** → **Connect** → **Connection Points**.
+   *   Ga naar **InforOS** → **ION Desk** → **Connect** → **Verbindingspunten**.
 
        ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 2. **Het sjabloon importeren:**

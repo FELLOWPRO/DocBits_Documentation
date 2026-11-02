@@ -4,6 +4,12 @@ description: Ondersteuning voor KAZAKHSTAN ESF elektronische documenten in DocBi
 
 # 🇰🇿 KAZAKHSTAN ESF
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Kazachstan](countries/kazakhstan.md). Het label vermeldt geen versie. Controleer het werkelijke XML-schema en leid verzending naar het belastingplatform niet af uit ondersteuning voor extractie.
+{% endhint %}
+
 | Eigenschap           | Waarde                                               |
 | -------------------- | ---------------------------------------------------- |
 | **Land / Regio**     | Kazachstan                                           |

@@ -1,10 +1,14 @@
 # Status van geconsumeerde PO-regel
 
+<figure><img src="../../../../../../.gitbook/assets/prior-u044-nl.png" alt="Toegang tot extra instellingen van het documenttype Factuur."><figcaption><p>Toegang tot extra instellingen van het documenttype Factuur.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/prior-u045-nl.png" alt="Statusinstellingen voor al gebruikte inkooporderregels."><figcaption><p>Statusinstellingen voor al gebruikte inkooporderregels.</p></figcaption></figure>
+
 **Status van geconsumeerde PO-regel** kleurt inkooporderregels in het matchingscherm op basis van hoeveel van elke regel al is gematcht. Zet deze instelling aan voor het documenttype van je facturen als je team ongebruikte, deels gebruikte en volledig gebruikte PO-regels snel moet kunnen herkennen. De kleur is een visuele hulp; controleer de **Gematchte hoeveelheid** en de geselecteerde PO-hoeveelheidskolom voordat je beslist of een regel opnieuw kan worden gematcht.
 
 ## De instelling inschakelen
 
-1. Open **Instellingen → Documenttypen**. Zoek het documenttype dat je voor je facturen gebruikt en selecteer het tandwiel op de kaart om **Meer Instellingen** te openen. De screenshot toont de kaart **Factuur**. Laat de schakelaars **Activeren** en **Extraction** staan zoals ze zijn.
+1. Open **Instellingen → Documenttypen**. Zoek het documenttype dat je voor je facturen gebruikt en selecteer het tandwiel op de kaart om **Meer Instellingen** te openen. De screenshot toont de kaart **Factuur**. Laat de schakelaars **Activeren** en **Extractie** staan zoals ze zijn.
 
    <figure><img src="../../../../../../.gitbook/assets/1-consumed-po-line-document-types-nl.png" alt="Pagina Documenttypen met de kaart Factuur en het tandwiel voor Meer Instellingen"><figcaption><p>Open Meer Instellingen via de kaart Factuur.</p></figcaption></figure>
 
@@ -25,12 +29,6 @@
 | Bleekoranje | Er is enige hoeveelheid gematcht, maar de gematchte hoeveelheid blijft onder de geselecteerde PO-hoeveelheid. | Controleer hoeveel hoeveelheid er overblijft. |
 | Bleekviolet | De gematchte hoeveelheid is ten minste de geselecteerde PO-hoeveelheid. | Ga er niet vanuit dat er nog meer beschikbaar is. |
 
-<figure><img src="../../../../../../.gitbook/assets/image (470).png" alt="PO-regel met nul gematchte hoeveelheid en geen statuskleur"><figcaption><p>Er is nog geen hoeveelheid gematcht.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (472).png" alt="PO-regel met een blauwe selectietint in het matchingscherm"><figcaption><p>De regel is geselecteerd voor de huidige matching.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="PO-regel met een bleekoranje achtergrond en een gematchte hoeveelheid onder de PO-hoeveelheid"><figcaption><p>De regel is deels gebruikt.</p></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (473).png" alt="PO-regel met een bleekviolet achtergrond en een gematchte hoeveelheid gelijk aan de PO-hoeveelheid"><figcaption><p>De regel is volledig gebruikt.</p></figcaption></figure>
-
 Een doorgekruiste regel heeft een andere betekenis: de PO-status ervan kan zijn uitgesloten door [PO-uitschakelstatussen](purchase-order-disable-statuses.md). Controleer die instelling als een regel niet kan worden geselecteerd.
+
+De volgende legenda verklaart de vergelijkingsstatussen zonder afbeeldingen van oude versies. Controleer altijd het al toegewezen aantal voordat u een regel opnieuw gebruikt.

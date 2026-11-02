@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.950
+Taiwan eGUI is de geconfigureerde familie.
+Het familielabel certificeert niet elke
+
+formats_02
+00:00:05.950 --> 00:00:10.885
+MIG-versie. Controleer het werkelijke
+XML-schema en test representatieve
+
+formats_03
+00:00:10.885 --> 00:00:12.533
+elektronische facturen.
+
+workflow_01
+00:00:13.283 --> 00:00:18.937
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:18.937 --> 00:00:24.359
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:24.359 --> 00:00:25.833
+activeert het niet.
+
+accept_01
+00:00:26.583 --> 00:00:32.272
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:32.272 --> 00:00:37.554
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:37.554 --> 00:00:40.933
+fiscale goedkeuring of aflevering via een
+netwerk.
+

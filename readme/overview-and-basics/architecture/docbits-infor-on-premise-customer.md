@@ -16,7 +16,7 @@ Om gegevens naar een Infor on-premise-klant te sturen bieden wij twee mogelijkhe
 | **Customer**                   | _**FELLOWPRO AG**_                                              |
 | **Name of Contact**            | _**Daniel Lopez**_                                              |
 | **Mail**                       | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
-| **Endpoint Hardware/Software** | _**StrongWAN**_                                                 |
+| **Eindpunthardware/software** | _**StrongWAN**_                                                 |
 | **Location of Firewall**       | _**Frankfurt**_                                                 |
 | **Endpoint IP**                | _**46.101.133.158**_                                            |
 | **Network/Host 1**             | _**10.135.0.0/16**_                                             |

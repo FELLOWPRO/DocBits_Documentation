@@ -4,6 +4,12 @@ description: Ondersteuning voor het elektronische document ARGENTINA FACTURA ELE
 
 # 🇦🇷 ARGENTINA FACTURA ELECTRONICA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Argentinië](countries/argentina.md). De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Controleer de daadwerkelijk gebruikte toewijzing en test een echt creditnotavoorbeeld.
+{% endhint %}
+
 | Eigenschap           | Waarde                                                                  |
 | -------------------- | ----------------------------------------------------------------------- |
 | **Land / regio**     | Argentinië                                                              |

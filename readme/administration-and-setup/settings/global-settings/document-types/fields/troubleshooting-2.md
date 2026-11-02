@@ -1,26 +1,26 @@
-# Troubleshooting
+# Problemen oplossen
 
-## Fix common problems
+## Veelvoorkomende problemen oplossen
 
-Here is advice for troubleshooting common problems in a document processing system, including fields not capturing data correctly, OCR errors, and validation rule issues:
+Hieronder vindt u tips voor veelvoorkomende problemen in een documentverwerkingssysteem, zoals onjuiste gegevensinvoer in velden, OCR-fouten en problemen met validatieregels:
 
-### Fields not capturing data correctly:
+### Velden leggen gegevens niet correct vast:
 
-* Check the configuration of the field in question to ensure the correct field type is being used and that all required properties are set correctly.
-* Make sure users have the correct instructions to enter data correctly into the field, and provide training or guidelines if necessary.
-* If the problem persists, run tests to verify whether the problem is systemic or only occurs with certain inputs. This can help you more accurately determine the cause of the problem.
+* Controleer of het betrokken veld het juiste veldtype heeft en alle vereiste eigenschappen correct zijn ingesteld.
+* Geef gebruikers duidelijke instructies voor het invullen van het veld en bied zo nodig training of richtlijnen.
+* Blijft het probleem bestaan, test dan of het systematisch optreedt of alleen bij bepaalde invoer. Dit helpt de oorzaak nauwkeuriger te bepalen.
 
-### OCR errors:
+### OCR-fouten:
 
-* Check the quality of the scanned documents, including the readability of the text and any distortion or blurring.
-* Adjust the OCR settings, including the language, text recognition algorithm, and other parameters, to improve accuracy. Perform OCR preview or test runs to check the performance of the OCR system and identify potential sources of errors.
-* If OCR errors persist, you may want to consider implementing an advanced OCR system or looking into external OCR services.
+* Controleer de kwaliteit van de gescande documenten, waaronder de leesbaarheid van de tekst en eventuele vervorming of onscherpte.
+* Pas OCR-instellingen, zoals taal, tekstherkenningsalgoritme en andere parameters, aan om de nauwkeurigheid te verbeteren. Gebruik een OCR-voorbeeldweergave of testverwerking om de prestaties te controleren en mogelijke foutbronnen te vinden.
+* Als OCR-fouten blijven optreden, kunt u een geavanceerder OCR-systeem of externe OCR-diensten overwegen.
 
-### Validation rule issues:
+### Problemen met validatieregels:
 
-* Review the configuration of validation rules to make sure they are set up correctly and meet the desired criteria.
-* Make sure validation rules are not too restrictive and that they carefully consider the actual data.
-* Run tests to make sure validation rules work as expected and check that they respond appropriately to unexpected data or edge cases.
-* Provide users with guidance and error messages to alert them to any validation errors and help them enter the correct data.
+* Controleer of validatieregels correct zijn ingesteld en aan de gewenste criteria voldoen.
+* Zorg dat validatieregels niet te beperkend zijn en goed aansluiten op de werkelijke gegevens.
+* Test of validatieregels naar verwachting werken en juist reageren op onverwachte gegevens en grensgevallen.
+* Geef gebruikers instructies en foutmeldingen die validatiefouten uitleggen en helpen de juiste gegevens in te voeren.
 
-By systematically reviewing and troubleshooting these common issues, you can improve the performance and accuracy of your document processing system and ensure that it runs smoothly and efficiently.
+Door deze problemen systematisch te onderzoeken en op te lossen, kunt u de prestaties en nauwkeurigheid van uw documentverwerkingssysteem verbeteren en de werking soepel en efficiënt houden.

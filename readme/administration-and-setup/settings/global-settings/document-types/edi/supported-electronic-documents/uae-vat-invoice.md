@@ -4,6 +4,12 @@ description: Ondersteuning voor UAE VAT INVOICE elektronisch document in DocBits
 
 # 🇦🇪 UAE VAT INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Verenigde Arabische Emiraten](countries/united-arab-emirates.md). Een btw-factuurtoewijzing bevestigt geen ondersteuning voor elke UAE Peppol- of PINT-versie. Controleer de gegevensspecificatie en de vereiste integratie voor aflevering.
+{% endhint %}
+
 | Eigenschap | Waarde |
 | ---------- | ------ |
 | **Land / Regio** | Verenigde Arabische Emiraten |

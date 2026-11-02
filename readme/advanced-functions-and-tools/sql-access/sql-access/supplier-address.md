@@ -1,4 +1,4 @@
-# Supplier address
+# Leveranciersadres
 
 ## Kolommen
 

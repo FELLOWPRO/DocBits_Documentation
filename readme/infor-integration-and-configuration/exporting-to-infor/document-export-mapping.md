@@ -1,10 +1,10 @@
-# Document Export Mapping
+# Mapping voor documentexport
 
 ## M3
 
-#### Document Types and Destinations
+#### Documenttypen en bestemmingen
 
-* **Purchase Order**: Exported to **PPS200**&#x20;
-* **Invoice**: Exported to **APS450**&#x20;
-* **Order Confirmation**: Exported to **PPS250**
-* **Advance Shipping Notice (ASN)**: Exported to **MHS850**&#x20;
+* **Inkooporder**: geëxporteerd naar **PPS200**
+* **Factuur**: geëxporteerd naar **APS450**
+* **Orderbevestiging**: geëxporteerd naar **PPS250**
+* **Voorafgaande verzendingskennisgeving (ASN)**: geëxporteerd naar **MHS850**

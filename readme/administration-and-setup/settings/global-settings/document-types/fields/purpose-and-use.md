@@ -1,31 +1,31 @@
-# Purpose and Use
+# Doel en gebruik
 
-## Proper configuration of fields in DocBits is critical to ensure that data can be captured, processed and stored correctly.
+## Velden correct instellen voor gegevensinvoer, verwerking en opslag
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_python_example.png" alt="Docbits Script Python Example"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_python_example.png" alt="Voorbeeld van een Python-script in DocBits"><figcaption></figcaption></figure>
 
-**Here are some reasons why this is important:**
+**Waarom dit belangrijk is:**
 
-**Data Integrity:**
+**Gegevensintegriteit:**
 
-* Proper configuration of fields ensures that the data entered into the system is correct and meets the required standards.
-* This helps to avoid errors and inaccuracies that could lead to incorrect analysis or decisions.
+* Een correcte veldconfiguratie helpt te zorgen dat ingevoerde gegevens juist zijn en aan de vereiste normen voldoen.
+* Dit voorkomt fouten en onnauwkeurigheden die tot onjuiste analyses of beslissingen kunnen leiden.
 
-**Data Consistency:**
+**Gegevensconsistentie:**
 
-* Consistent field configuration ensures that data is captured in a uniform manner, making it easier to compare and analyze.
-* For example, if a field for date inputs is incorrectly configured to allow different date formats, this can lead to confusion and inconsistencies.
+* Met een consistente veldconfiguratie worden gegevens op uniforme wijze vastgelegd, zodat ze eenvoudiger te vergelijken en analyseren zijn.
+* Als een datumveld bijvoorbeeld ten onrechte verschillende datumformaten toestaat, kan dit tot verwarring en inconsistenties leiden.
 
-**Data Validation:**
+**Gegevensvalidatie:**
 
-* Configuring fields allows validation rules to be set to ensure that only valid data can be entered. This helps to detect errors early and improve data quality.
+* In de veldconfiguratie kunt u validatieregels instellen om alleen geldige gegevens toe te staan. Dit helpt fouten vroeg te herkennen en de gegevenskwaliteit te verbeteren.
 
-**Data processing efficiency:**
+**Efficiënte gegevensverwerking:**
 
-* Accurate configuration of fields enables efficient data processing as systems are better able to understand and process the data. This improves efficiency in data extraction, transformation, and loading (ETL).
+* Een nauwkeurige veldconfiguratie helpt systemen gegevens beter te begrijpen en verwerken. Dit verhoogt de efficiëntie van het extraheren, transformeren en laden van gegevens (ETL).
 
-**Data security:**
+**Gegevensbeveiliging:**
 
-* Proper configuration of fields can also help ensure the security of data, for example by encrypting or masking sensitive information.
+* Een correcte veldconfiguratie kan ook bijdragen aan de beveiliging van gegevens, bijvoorbeeld door gevoelige informatie te versleutelen of te maskeren.
 
-Overall, accurate configuration of fields in DocBits is critical to ensure data quality, consistency, integrity, and security. It helps organizations make informed decisions by accessing reliable and accurate data.
+Een nauwkeurige veldconfiguratie in DocBits ondersteunt gegevenskwaliteit, consistentie, integriteit en beveiliging. Betrouwbare en juiste gegevens helpen organisaties weloverwogen beslissingen te nemen.

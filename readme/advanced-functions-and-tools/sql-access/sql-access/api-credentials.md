@@ -1,4 +1,4 @@
-# API credentials
+# API-inloggegevens
 
 ## Kolommen
 
@@ -9,10 +9,10 @@
 * `credentials_type`: intern
 * `credentials_json`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: tijdstempel met tijdzone
 * `last_modified_by`: intern
 * `deleted_by`: intern
 

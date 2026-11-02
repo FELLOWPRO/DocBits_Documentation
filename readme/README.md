@@ -1,12 +1,18 @@
 # DocBits
 
+**DocBits. Maak ruimte voor ambitie.**
+
+Van OCR/IDP naar businesslogica, goedkeuringen en Advanced Workflows.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/nl.mp4" %}
+
+*90 seconden · Productinterface in het Engels · Historische scènes gemaakt met AI*
+
+[Lees transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/nl-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/nl.mp4)
+
 Welkom bij DocBits
 
 Welkom bij **DocBits**, uw uitgebreide bron voor documentatiestrategieën en inzichten. Bij DocBits bieden we duidelijke, beknopte en actuele documentatierbronnen voor [eindgebruikers](end-user-and-partner-section/end-user-section/), [beheerders](administration-and-setup/settings/) en [partners](end-user-and-partner-section/partner-section/).
-
-## DocBits met Workflow
-
-{% @arcade/embed flowid="JqTpGV34UBKmI0iAumoX" url="https://app.arcade.software/share/JqTpGV34UBKmI0iAumoX" %}
 
 [**DocBits**](https://www.docbits.com) **van** [**FELLOWPRO AG**](https://www.fellowpro.com) is een geavanceerde oplossing voor intelligente documentverwerking (IDP), ontworpen om het verwerken van bedrijfsdocumenten te optimaliseren en te automatiseren. 
 
@@ -32,7 +38,7 @@ Hieronder vindt u een overzicht van de unieke kenmerken en voordelen:
    * Maakt automatische boeking naar grootboekrekeningen mogelijk.
    * Staat het splitsen van bedragen per afdeling toe.
    * Ondersteunt het toewijzen van grootboekrekeningen door het team voor crediteurenbeheer.
-5. **Geïntegreerde validatie- en** [**goedkeuringsprocessen**](broken-reference)
+5. **Geïntegreerde validatie- en** [**goedkeuringsprocessen**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Biedt geïntegreerde validatieprocessen om gegevensnauwkeurigheid te waarborgen.
    * Beschikt over goedkeurings[workflows](administration-and-setup/workflow/) om het documentbeheer te stroomlijnen.
 6. **Naadloze integratie**
@@ -59,5 +65,3 @@ Hieronder vindt u een overzicht van de unieke kenmerken en voordelen:
 * Ideaal voor bedrijven die hun documentcapturing-processen willen optimaliseren en hun operationele efficiëntie willen verbeteren.
 
 Meer informatie vindt u op [FellowPRO AG](https://fellowpro.com/) of neem contact op met de salesafdeling via sales@fellowpro.com. Volg ons op [LinkedIn](https://www.linkedin.com/company/fellowpro).
-
-{% embed url="https://youtu.be/p7GEJonM_wU" %}

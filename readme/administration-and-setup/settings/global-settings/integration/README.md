@@ -1,21 +1,21 @@
-# Integration & SSO
+# Integratie en SSO
 
-<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="Integration & SSO"><figcaption><p>Pagina Integration & SSO</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t010-nl.png" alt="Configuratie van integratie en SSO-providers. De sectie identiteitsbewijs bevat organisatie-ID’s; het gaat niet om een identiteitsdocument."><figcaption><p>Configuratie van integratie en SSO-providers. De sectie identiteitsbewijs bevat organisatie-ID’s; het gaat niet om een identiteitsdocument.</p></figcaption></figure>
 
 Op de pagina Integration & SSO beheert u API-sleutels voor programmatische toegang, organisatie-ID's en de configuratie van Single Sign-On (SSO).
 
-## API Key
+## API-sleutel
 
 Beheer de API-sleutels die worden gebruikt voor programmatische toegang tot DocBits.
 
 | Kolom | Beschrijving |
 |--------|-------------|
-| **Key** | De gemaskeerde waarde van de API-sleutel. Klik op het kopieerpictogram om de volledige sleutel te kopiëren. |
-| **Name** | Een beschrijvende naam voor de sleutel. |
-| **Expires** | Vervaldatum (of "Never"). |
-| **Last Used** | Wanneer de sleutel voor het laatst is gebruikt. |
+| **Sleutel** | De gemaskeerde waarde van de API-sleutel. Klik op het kopieerpictogram om de volledige sleutel te kopiëren. |
+| **Naam** | Een beschrijvende naam voor de sleutel. |
+| **Verloopt** | Vervaldatum (of "Never"). |
+| **Laatst gebruikt** | Wanneer de sleutel voor het laatst is gebruikt. |
 | **Status** | Active of Inactive. |
-| **Actions** | Menu met drie puntjes om in te trekken of te verwijderen. |
+| **Acties** | Menu met drie puntjes om in te trekken of te verwijderen. |
 
 Klik op **+ Create API Key** om een nieuwe sleutel te genereren.
 
@@ -25,31 +25,31 @@ Toont de identificatiegegevens van uw organisatie:
 
 | Veld | Beschrijving |
 |-------|-------------|
-| **Org ID** | De unieke identificatie van uw organisatie. |
-| **Sub Org ID** | De ID van de momenteel geselecteerde suborganisatie. |
+| **Organisatie-ID** | De unieke identificatie van uw organisatie. |
+| **Sub-org-ID** | De ID van de momenteel geselecteerde suborganisatie. |
 
-## SSO Service Provider Settings
+## Instellingen van de SSO-serviceprovider
 
 De DocBits SSO-configuratiewaarden die u nodig hebt bij het instellen van uw Identity Provider:
 
 | Veld | Beschrijving |
 |-------|-------------|
-| **Entity ID** | De SAML-metadata-URL voor DocBits. |
+| **Entiteits-ID** | De SAML-metadata-URL voor DocBits. |
 | **SLO URL** | Single Logout-URL. |
 | **SSO URL** | Assertion Consumer Service-URL. |
 
-U kunt ook **Download Certificate** en **Download Metadata** gebruiken voor de configuratie van uw IdP.
+U kunt ook **Certificaat downloaden** en **Metagegevens downloaden** gebruiken voor de configuratie van uw IdP.
 
-## Identity Service Provider Settings
+## Instellingen van de identiteitsserviceprovider
 
-Configureer uw externe Identity Provider (IdP):
+Configureer uw externe identiteitsprovider (IdP):
 
 | Veld | Beschrijving |
 |-------|-------------|
-| **Tenant ID** | De tenant-ID van uw IdP. |
-| **Upload file** | Upload het XML-metadatabestand van uw IdP. |
+| **Tenant-ID** | De tenant-ID van uw IdP. |
+| **Bestand uploaden** | Upload het XML-metadatabestand van uw IdP. |
 
-Klik op **Configure** om uw IdP-instellingen op te slaan.
+Klik op **Configureren** om uw IdP-instellingen op te slaan.
 
 * **Verhoogde efficiëntie:** Integratie met andere tools en diensten kan workflows stroomlijnen en de efficiëntie verhogen. Documenten kunnen bijvoorbeeld automatisch worden uitgewisseld tussen Docbits en een CRM-systeem, waardoor handmatige invoer wordt verminderd en de productiviteit toeneemt.
 * **Gegevensconsistentie:** Integratie maakt het mogelijk om gegevens naadloos uit te wisselen tussen verschillende systemen, wat de gegevensconsistentie en nauwkeurigheid verbetert. Dit voorkomt inconsistenties of dubbele gegevensinvoer die tot fouten kunnen leiden.

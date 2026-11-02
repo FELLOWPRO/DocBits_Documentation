@@ -4,6 +4,12 @@ description: Ondersteuning voor Ecuador SRI (Factura Electrónica, SRI 1.0.0 –
 
 # 🇪🇨 Ecuador SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Ecuador](countries/ecuador.md). De classificatievermelding voor creditnota’s heeft in de onderzochte status geen eigen extractiebundel. Controleer de daadwerkelijk gebruikte toewijzing en het type brondocument.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |-----------|--------|
 | **Land / Regio** | Ecuador |
@@ -33,7 +39,7 @@ Het factuurnummer is samengesteld uit drie velden: `estab-ptoEmi-secuencial` (bi
 
 ## Standaard voorbeeld
 
-<figure><img src="ecuador-sri-preview.png" alt="Ecuador SRI Factura voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een Ecuador SRI Factura Electrónica (versie 2.1.0)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ecuador-sri-preview.png" alt="Ecuador SRI Factura voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een Ecuador SRI Factura Electrónica (versie 2.1.0)</p></figcaption></figure>
 
 ## Veldkoppeling
 
@@ -87,5 +93,5 @@ Het hoofdelement is `<factura>` met `id="comprobante"`. Het `version`-attribuut 
 
 ## Gerelateerd
 
-- [Momenteel ondersteunde e-factuurstandaarden](../../currently-supported-e-invoice-standards/)
+- [Momenteel ondersteunde e-factuurstandaarden](../currently-supported-e-invoice-standards/README.md)
 - [Ondersteunde elektronische documenten](./)

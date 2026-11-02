@@ -9,7 +9,7 @@ Queste funzioni richiedono che la licenza/preferenza **OPENSEARCH\_ENABLED** sia
 Funzioni per la ricerca negli archivi documentali, il rilevamento di documenti simili e l'interrogazione dei dati master ERP. Queste ricercano su **tutti i documenti** dell'organizzazione — a differenza di `get_document_content()` che legge solo il testo del documento corrente.
 
 {% hint style="success" %}
-**Security:** The `org_id` is automatically injected by the script sandbox. You never need to pass it — your scripts always operate within your own organization's data.
+**Sicurezza:** Il `org_id` viene automaticamente inserito dalla sandbox dello script. Non è mai necessario passarlo esplicitamente: i tuoi script funzionano sempre all'interno dei dati della tua organizzazione.
 {% endhint %}
 
 **Sorgente:** `module/script/helper/document_script_functions.py`

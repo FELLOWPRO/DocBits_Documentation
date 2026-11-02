@@ -1,2 +1,2 @@
-# Importing Master Data
+# Importazione dei dati anagrafici
 

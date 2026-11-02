@@ -24,7 +24,11 @@ Aggiungi una colonna quando per ogni voce di riga deve essere acquisito un valor
 | **Seleziona tipo di colonna** | Vedi l'elenco dei tipi qui sopra. |
 | **Seleziona tabella** | La tabella che riceve la colonna. |
 
-4. Fai clic su **Procedi**. La colonna compare nell'elenco con *Sola lettura*, *Nascosta* e *Usa AI* disattivati. Se necessario, attiva questi flag nell'elenco, vedi [Modifica ed eliminazione delle colonne](editing-and-deleting-columns.md).
+4. Fai clic su **Procedere**. Una finestra di conferma ricorda che la nuova colonna vale per **tutte le fatture future di ogni fornitore**, non solo per il documento aperto.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-it.png" alt="Finestra di conferma «Creare una nuova colonna nella tabella?» con i pulsanti Annulla e Crea colonna"><figcaption><p>Conferma prima che la colonna venga creata per tutti i fornitori.</p></figcaption></figure>
+
+5. Seleziona **Crea colonna** per salvare, oppure **Annulla** per tornare indietro senza creare nulla. La colonna compare nell'elenco con *Sola lettura*, *Nascosta* e *Usa AI* disattivati. Se necessario, attiva questi flag nell'elenco, vedi [Modifica ed eliminazione delle colonne](editing-and-deleting-columns.md).
 
 ## Dopo l'aggiunta
 

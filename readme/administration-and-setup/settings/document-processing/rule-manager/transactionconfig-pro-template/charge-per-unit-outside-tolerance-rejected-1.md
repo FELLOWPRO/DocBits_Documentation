@@ -1,37 +1,39 @@
-# Charge Per Unit Outside Tolerance (Rejected)
+# Addebito per unità fuori tolleranza (Rifiutato)
+
+Lo scenario seguente illustra una mappatura configurata, non un modello predefinito di cui sia stata verificata la distribuzione. L’output effettivo, gli importi, i segni e i tipi di documento dipendono dalle regole e dalle espressioni `conflict_resolution` attive, dalla mappatura di esportazione e dalle decisioni di approvazione. Qualsiasi nota di debito o di credito descritta è subordinata a tale configurazione; l’esempio non ne garantisce l’emissione automatica né la conformità legale.
 
 ## Scenario:
 
-The charge per unit is outside tolerance and has not been approved.
+La tariffa per unità è fuori tolleranza e non è stata approvata.
 
-## Action:
+## Azione:
 
-The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto o ai livelli approvati, generando eventuali note di addebito o accredito necessarie.
 
-## Example:
+## Esempio:
 
 * **Purchase Order (PO):**
-  * Charge Per Unit: $6.00
+  * Costo per unità: $6.00
   * Quantity: 800 units
-  * Total Charge Amount: $4,800.00
+  * Importo totale della commissione: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (outside tolerance of 16.67%, rejected)
+  * Addebito per unità: $7.00 (fuori tolleranza del 16.67%, rifiutato)
   * Quantity: 800 units
-  * Total Charge Amount: $5,600.00
+  * Importo totale della commissione: $5,600.00
 * **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+  * Tolleranza tariffa per unità: ±5%
 
-Since the charge per unit ($7.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+Poiché l'addebito per unità ($7.00) supera l'intervallo di tolleranza accettabile del 5% e non è stato approvato, il sistema:
 
-1. **Reject the Invoiced Charge Per Unit:** The system does not accept the invoiced charge per unit of $7.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Charge Per Unit:** The system adjusts the charge per unit to match the purchase order or the approved charge per unit:
-   * Adjusted Charge Per Unit = $6.00 (from PO)
-3. **Recalculate the Total Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
-   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount:
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $4,800.00 and issues a debit note for $800.00 to account for the overcharged amount.
+1. **Rifiutare l'addebito fatturato per unitàà:** Il sistema non accetta l'addebito fatturato per unità di $7.00 a causa della varianza che supera il limite di tolleranza.
+2. **Rettifica l'addebito per unitàà:** Il sistema adegua l'addebito per unità in modo che corrisponda all'ordine di acquisto o all'addebito per unità approvato:
+   * Commissione rettificata per unità = $6.00 (da PO)
+3. **Ricalcola l'importo totale della tariffa:** Il sistema ricalcola l'importo totale della tariffa in base alla tariffa modificata per unità:
+   * **Importo totale corretto = Quantità × Addebito rettificato per unitàà**
+   * **Importo totale corretto = 800 unità × $6.00 = $4,800.00**
+4. **Genera una nota di addebito:** Poiché il totale della fattura originale era superiore al totale corretto, il sistema genera una nota di addebito per l'importo in eccesso:
+   * **Importo della nota di addebito = Totale della fattura originale - Importo totale dell'addebito corretto**
+   * **Importo della nota di addebito = $5,600.00 - $4,800.00 = $800.00**
+5. **Elabora la fattura:** Il sistema elabora la fattura con l'importo dell'addebito totale corretto di $4,800.00 ed emette una nota di addebito per $800.00 per tenere conto dell'importo addebitato in eccesso.
 
-This approach ensures that financial transactions are consistent with the purchase order terms, rejecting unapproved variances and maintaining accurate billing practices.
+Questo approccio garantisce che le transazioni finanziarie siano coerenti con i termini dell'ordine di acquisto, rifiutando variazioni non approvate e mantenendo pratiche di fatturazione accurate.

@@ -161,7 +161,7 @@ Se qualcosa non andava nella richiesta, si ottiene `"success": false` insieme a 
 
 ### 5. Verificare che i dati siano arrivati
 
-* In DocBits, andare in **Settings → Document Processing → Lookup Master Data**.
+* In DocBits, vai in **Impostazioni → Elaborazione documenti → Ricerca dati anagrafici**.
 * Selezionare **BOD Input Data** a sinistra, poi aprire la scheda **Supplier**.
 * Cercare il fornitore del proprio BOD.
 

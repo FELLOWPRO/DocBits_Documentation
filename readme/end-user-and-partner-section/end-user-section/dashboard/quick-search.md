@@ -1,88 +1,76 @@
 # Ricerca rapida
 
-La **Ricerca rapida** in cima alla dashboard è il modo più veloce per trovare
-documenti. Digita ciò che cerchi — un nome, uno stato, un importo, una data — e
-l'elenco si filtra all'istante.
+La **Ricerca rapida** è il modo più veloce per trovare i documenti nella Dashboard. Digiti ciò che cerchi — un nome, uno stato, un importo, una data — e
+l'elenco dei documenti si filtra all'istante.
 
-Questa guida è organizzata come si costruisce la ricerca:
+Questa guida è organizzata secondo la struttura della ricerca:
 
-1. **Campi standard** — le colonne che ha ogni documento (nome documento, stato,
+1. **Campi standard** — le colonne che ha ogni documento (nome del documento, stato,
    date). Sempre disponibili.
-2. **Campi full-text** — contenuto estratto (fornitore, numero d'ordine, numero
-   fattura, importi, righe). Disponibili quando la ricerca full-text è attiva.
-3. **Operatori, scorciatoie e ricette** — il riferimento completo.
+2. **Campi fulltext** — contenuto estratto (fornitore, ordine di acquisto, numero
+   fattura, importi, righe articolo). Disponibili quando la ricerca fulltext è attiva.
+3. **Operatori, scorciatoie e ricette** — il riferimento completo, quando
+   hai preso confidenza.
 
-> Non devi memorizzare nulla: clicca nella barra di ricerca e scegli un campo e
-> un valore dall'elenco. Gli esempi sotto mostrano anche la forma digitata, da
-> copiare direttamente.
+> Non devi memorizzare nulla: clicca sulla barra di ricerca e scegli un campo e
+> un valore dall'elenco — la Ricerca rapida costruisce la query per te. Gli esempi qui sotto
+> mostrano anche la forma digitata, così puoi copiarli direttamente.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry-it.png" alt="Ricerca rapida nella dashboard italiana."><figcaption><p>Ricerca rapida nella dashboard italiana.</p></figcaption></figure>
 
 ---
 
 ## Come funziona la barra di ricerca — chip, barra degli strumenti e vista grezza
 
-Man mano che completi una condizione (un campo, un operatore e un valore) la
-Ricerca rapida la trasforma in un **chip** — una pillola colorata all'interno
-della barra — e ne avvia uno nuovo. Un chip mostra il **campo**, l'**operatore**
-e il **valore**, con una **×** per rimuoverlo. I chip sono codificati per colore
-in base a dove risiedono i dati:
+Prima dei campi veri e propri, è utile sapere come è organizzata la barra.
+
+### Le condizioni diventano chip
+
+Quando completi una condizione (un campo, un operatore e un valore) la Ricerca rapida
+la trasforma in un **chip** — una pillola colorata all'interno della barra — e ne avvia uno nuovo. Un
+chip mostra il **campo**, l'**operatore** e il **valore**, con una **×** per
+rimuoverlo. I chip sono codificati per colore in base a dove risiedono i dati:
 
 | Colore del chip | Tipo di campo |
-|-----------------|---------------|
-| **Blu** | Colonna standard (nome documento, stato, date) |
-| **Arancione** | Campo full-text / estratto (fornitore, importo, numero fattura) |
+|-------------|------------|
+| **Blu** | Colonna standard (nome del documento, stato, date) |
+| **Arancione** | Campo fulltext / estratto (fornitore, importo, numero fattura) |
 | **Viola** | Ricerca vettoriale (semantica) |
-| **Verde** | Ricerca testo OCR |
+| **Verde** | Ricerca nel testo OCR |
 
-Clicca un chip per modificarlo; clicca **×** per eliminarlo. Più chip combinati
-sono letti come **AND** per impostazione predefinita.
+Clicca su un chip per modificarlo (torna a essere testo); clicca su **×** per eliminarlo.
+Più chip combinati vengono letti come **AND** per impostazione predefinita.
 
-**Barra degli strumenti** (a destra della barra): **ⓘ Guida** apre il riferimento
-integrato di campi e sintassi; **Filtri** è un pannello rapido di Stato / Utente /
-Riavvio; l'**anello dell'indice** mostra quanta parte dell'indice full-text è
-costruita (solo quando la ricerca full-text è attiva).
+### La barra degli strumenti
 
-**Vista standard vs. grezza:** la barra mostra la tua query come chip (standard).
-Passa alla **vista grezza** per vederla e modificarla come testo semplice — comodo
-per copiare o digitare una query lunga. La tua query viene ricordata quando
-ricarichi la pagina.
+All'estremità destra della barra:
 
-### Trovare documenti per sotto-tipo di fattura
+- **ⓘ Guida** — apre il riferimento integrato **Ricerca nella dashboard: campi e sintassi**
+  che elenca tutti i campi, gli operatori e le scorciatoie disponibili nel tuo workspace.
+- **Filtri** (tre barre di scorrimento) — un pannello rapido per i filtri più comuni
+  **Stato**, **Assegnato a** e **Riavvio richiesto**, con **Cancella i filtri** e **Applicare**.
+- **Anello dell'indice** — un piccolo anello di avanzamento che mostra quanta parte dell'indice fulltext
+  è stata costruita (visibile solo quando la ricerca fulltext è attiva).
 
-```
-invoice_sub_type="Cost Invoice"
-```
+### Vista standard e vista grezza
 
-Il sotto-tipo di fattura è un elenco fisso (es. **Cost Invoice**, **Purchase
-Invoice**), quindi `=` è una corrispondenza esatta e la barra offre un selettore di
-valori. Usa `invoice_sub_type!="Cost Invoice"` per tutto tranne quel sotto-tipo.
-
-## Raggruppare i risultati
-
-Invece di un elenco piatto puoi **raggruppare** i risultati per qualsiasi campo —
-fornitore, stato, tipo di documento o un intervallo di date:
-
-```
-group by supplier_name
-```
-
-L'elenco mostra **intestazioni di gruppo** comprimibili, ciascuna con un
-**conteggio**. Clicca un'intestazione per espanderla o comprimerla; clicca
-all'interno di un gruppo per **approfondire** (applicare quel valore come filtro).
-Il raggruppamento si combina con qualsiasi filtro.
-
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Risultati raggruppati per fornitore"><figcaption><p><code>group by supplier_name</code> — i risultati si comprimono in un'unica intestazione espandibile per fornitore.</p></figcaption></figure>
+La barra normalmente mostra la tua query come chip (**vista standard**). Passa alla **vista
+grezza** per vedere e modificare la query come testo semplice (ad es.
+`status=ready_for_validation AND supplier_name=Test`) — utile per copiare,
+condividere o digitare direttamente una query lunga. La tua query resta valida dopo il passaggio e
+viene ricordata quando ricarichi la Dashboard.
 
 ---
 
 ## Parte 1 — Campi standard
 
-I campi standard sono le colonne proprie del documento. Sono **sempre
-disponibili**, che la ricerca full-text sia attiva o meno.
+I campi standard sono le colonne proprie del documento. Sono **sempre disponibili**,
+che la ricerca fulltext sia attiva o meno.
 
 ### Trovare documenti per nome
 
-Il nome del documento è la ricerca più comune. Tre modi di corrispondere — tutti
-**senza distinzione tra maiuscole/minuscole**:
+Il nome del documento è la ricerca più comune. Ci sono tre modi per cercarlo —
+tutti **senza distinzione tra maiuscole e minuscole**:
 
 #### `=` → inizia con
 
@@ -90,17 +78,18 @@ Il nome del documento è la ricerca più comune. Tre modi di corrispondere — t
 filename=invoice
 ```
 
-Trova i documenti il cui nome **inizia con** «invoice». Poiché ignora le
-maiuscole, tutti questi corrispondono a `filename=invoice`:
+Trova i documenti il cui nome **inizia con** «invoice». La ricerca ignora le maiuscole, quindi
+tutti questi corrispondono a `filename=invoice`:
 
 ```
 Invoice.pdf   iNVoice.pdf   iNvoiCE.pdf   INVOICE.pdf
 Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 ```
 
-**Non** corrisponde a `XYZ_Invoice.pdf` (lì «invoice» è nel mezzo — usa `:`).
+**Non** corrisponde a `XYZ_Invoice.pdf` (qui «invoice» è nel mezzo — usa
+`:` per questo caso).
 
-<figure><img src="../../../.gitbook/assets/it_quick_search_02_filename_starts.png" alt="filename=invoice corrisponde solo ai nomi che iniziano con invoice"><figcaption><p><code>filename=invoice</code> — solo nomi che <strong>iniziano con</strong> «invoice», in qualsiasi capitalizzazione (<code>INVOICE.pdf</code>, <code>iNvoiCE.pdf</code>, <code>iNVoice.pdf</code>, <code>Invoice.pdf</code> corrispondono — 7 risultati).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u028-it.png" alt="Inserimento di una query per nome del file."><figcaption><p>Inserimento di una query per nome del file.</p></figcaption></figure>
 
 #### `:` → contiene (ovunque)
 
@@ -108,10 +97,10 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 filename:invoice
 ```
 
-Con `:` la parola corrisponde **ovunque** nel nome — `2026_Invoice.pdf`,
-`XYZ_Invoice ABC.pdf`, `123_Invoice ABC bla bla.pdf`.
+Usa `:` per cercare la parola **ovunque** nel nome — `2026_Invoice.pdf`,
+`vietnam_einvoice_sample.xml`, `scan_invoice_copy.pdf`.
 
-<figure><img src="../../../.gitbook/assets/it_quick_search_03_filename_contains.png" alt="filename:invoice corrisponde alla parola ovunque nel nome"><figcaption><p><code>filename:invoice</code> — corrisponde a «invoice» in qualsiasi posizione del nome (anche <code>XYZ_Invoice ABC.pdf</code>).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains-it.png" alt="Inserimento di una ricerca su parte del nome del file: filename:invoice."><figcaption><p>Inserimento di una ricerca su parte del nome del file: filename:invoice.</p></figcaption></figure>
 
 #### `="…"` → inizia *o* finisce con
 
@@ -119,55 +108,96 @@ Con `:` la parola corrisponde **ovunque** nel nome — `2026_Invoice.pdf`,
 filename="invoice"
 ```
 
-Le virgolette fanno sì che `=` corrisponda ai nomi che **iniziano o finiscono**
-con il valore.
+Con le virgolette, `=` corrisponde ai nomi che **iniziano o finiscono** con il valore —
+comodo per un codice iniziale o per la fine di un file.
 
-> **Le tre in una riga:** `=` → inizia con · `:` → contiene · `="…"` → inizia o
-> finisce con. Tutte ignorano maiuscole/minuscole.
+> **Le tre in una riga:** `=` → inizia con · `:` → contiene · `="…"` →
+> inizia o finisce con. Tutte ignorano maiuscole e minuscole. Puoi vedere questo riepilogo
+> in qualsiasi momento tramite l'**icona della guida** nella barra di ricerca (sezione successiva).
 
-### Trovare per stato
+### Trovare documenti per stato
 
 ```
 status=ready_for_validation
 ```
 
-Lo stato è un elenco fisso, quindi `=` è una corrispondenza **esatta** e la barra
-offre un selettore di valori.
+Lo stato è un elenco fisso, quindi `=` è una corrispondenza **esatta** e la barra offre un selettore di valori
+quando digiti `status=`.
 
-### Trovare per data
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status-it.png" alt="Inserimento del filtro sullo stato tecnico ready_for_validation."><figcaption><p>Inserimento del filtro sullo stato tecnico ready_for_validation.</p></figcaption></figure>
+
+### Trovare documenti per data
 
 ```
 created_on>2026-05-25
 ```
 
-Usa `>`, `<`, `>=`, `<=` per intervalli di date. Anche date **relative**:
-`today()`, `today()-7` (ultimi 7 giorni), `today()+30`.
+Usa `>`, `<`, `>=`, `<=` per gli intervalli di date. Puoi usare anche date **relative**:
+`today()`, `today()-7` (ultimi 7 giorni), `today()+30` (prossimi 30 giorni).
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date-it.png" alt="Inserimento di una ricerca di documenti creati dopo il 25 maggio 2026."><figcaption><p>Inserimento di una ricerca di documenti creati dopo il 25 maggio 2026.</p></figcaption></figure>
+
+### Trovare documenti per sotto-tipo di fattura
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Il sotto-tipo di fattura è un elenco fisso (ad esempio **Fattura dei costi** o **Purchase
+Invoice**), quindi `=` è una corrispondenza **esatta** e la barra offre un selettore di valori quando
+digiti `invoice_sub_type=`. Usa `invoice_sub_type!="Cost Invoice"` per
+tutto tranne quel sotto-tipo.
 
 ---
 
-## Parte 2 — Campi full-text
+## Parte 2 — Campi fulltext
 
-I campi full-text cercano nel **contenuto estratto** — fornitore, numero
-d'ordine, numero fattura, importi, righe. Appaiono in **arancione** e richiedono
-la **ricerca full-text attiva**. Le regole di corrispondenza sono identiche ai
-campi di testo standard (`=` inizia-con, `:` contiene, `="…"` inizia-o-finisce).
+I campi fulltext cercano nel **contenuto estratto** dei tuoi documenti — fornitore,
+ordine di acquisto, numero fattura, importi, righe articolo. Appaiono in **arancione**
+e sono disponibili quando la **ricerca fulltext è attiva** per la tua organizzazione. Le
+regole di corrispondenza sono esattamente le stesse dei campi di testo standard
+(`=` inizia con, `:` contiene, `="…"` inizia o finisce con).
 
-### Trovare i documenti di un fornitore
+### Trovare documenti di un fornitore
 
 ```
 supplier_name=Test
 ```
 
-Inizia-con sul nome fornitore estratto; `supplier_name:fuji` corrisponde ovunque;
-`supplier_name:"Ruiz Foods"` racchiude tra virgolette un valore con spazi.
+Inizia con, applicato al nome del fornitore estratto. Usa `supplier_name:Example` per cercare
+ovunque, oppure `supplier_name:"Example"` per racchiudere tra virgolette un valore con spazi.
 
-### Trovare per importo
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier-it.png" alt="Esempio di query sul fornitore: supplier_name=Test."><figcaption><p>Esempio di query sul fornitore: supplier_name=Test.</p></figcaption></figure>
+
+### Trovare documenti per ordine di acquisto
+
+```
+purchase_order=PO
+```
+
+Inizia con, applicato al numero PO estratto — ottimo per un prefisso PO.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order-it.png" alt="Esempio di query sull’ordine di acquisto: purchase_order=PO."><figcaption><p>Esempio di query sull’ordine di acquisto: purchase_order=PO.</p></figcaption></figure>
+
+### Trovare documenti per importo
 
 ```
 total_amount>5000
 ```
 
-Usa `>`, `<`, `>=`, `<=` o `between 1000 and 5000` per una finestra.
+Usa `>`, `<`, `>=`, `<=` oppure `between 100 and 500` per un intervallo.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount-it.png" alt="Inserimento di un filtro sull’importo totale superiore a 5000."><figcaption><p>Inserimento di un filtro sull’importo totale superiore a 5000.</p></figcaption></figure>
+
+Per una finestra di valori usa `between`:
+
+```
+total_amount between 1000 and 5000
+```
+
+È un'abbreviazione di `total_amount>=1000 AND total_amount<=5000`.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between-it.png" alt="Inserimento di una query sull’importo compreso tra 1000 e 5000."><figcaption><p>Inserimento di una query sull’importo compreso tra 1000 e 5000.</p></figcaption></figure>
 
 ### Trovare ciò che manca
 
@@ -175,32 +205,68 @@ Usa `>`, `<`, `>=`, `<=` o `between 1000 and 5000` per una finestra.
 supplier_name=""
 ```
 
-`=""` significa «questo campo **non è impostato**»; `supplier_name!=""` significa
-«ha un fornitore qualsiasi». Lo stesso controllo vale per qualsiasi campo, es.
-`ap_assignment_code=""`.
+`=""` significa «questo campo **non è impostato**»; `supplier_name!=""` significa «ha un
+qualsiasi fornitore».
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty-it.png" alt="Inserimento di un filtro sul nome del fornitore vuoto."><figcaption><p>Inserimento di un filtro sul nome del fornitore vuoto.</p></figcaption></figure>
+
+Lo stesso controllo di presenza funziona su qualsiasi campo — ad esempio per i documenti a cui
+manca ancora un codice di assegnazione AP:
+
+```
+ap_assignment_code=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty-it.png" alt="Inserimento di una ricerca senza assegnazione AP."><figcaption><p>Inserimento di una ricerca senza assegnazione AP.</p></figcaption></figure>
 
 ---
 
-## Filtri intelligenti — un clic
+## Filtri rapidi — con un clic
 
-In cima al menu a tendina della ricerca trovi i **Filtri intelligenti**: ricerche
-pronte con un clic. Ognuno è una scorciatoia per una query che potresti anche
-digitare:
+L'icona **fulmine** all'inizio del campo di ricerca apre il selettore dei campi. In cima a
+questo selettore trovi i **Filtri rapidi**: ricerche già pronte che applichi con un solo
+clic. Ognuno è semplicemente una scorciatoia per una query che potresti anche digitare
+tu stesso:
 
-| Filtro intelligente | Trova | Equivale a |
-|---------------------|-------|------------|
-| ⚠️ **Scaduti** | Oltre la data di scadenza | `invoice_due_date<today()` |
-| 🕐 **In scadenza** | Nei prossimi 7 giorni | `invoice_due_date<=today()+7` |
-| 👤 **Assegnati a me** | In attesa della tua azione | `assigned_to=<tu>` |
-| 📅 **Posta di oggi** | Importati oggi | `imported_on>=today()` |
-| 📋 **In attesa di validazione** | Pronti da validare | `status=ready_for_validation` |
-| 🧾 **Documenti elettronici** | E-fatture (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Corrispondenza PO completa** | Completamente riconciliato con un ordine | `po_match_status=full_matched` |
-| ➗ **Corrispondenza PO parziale** | Parzialmente riconciliato | `po_match_status=partial_matched` |
-| 📉 **Corrispondenza PO inferiore** | Quantità o prezzo sotto l'ordine | `po_match_status=under_matched` |
+| Filtro rapido | Trova | Equivale a digitare |
+|--------------|-------|----------------|
+| ⚠️ **Scaduto** | Scaduti | `invoice_due_date<today()` |
+| 🕐 **In scadenza** | Entro i prossimi 7 giorni | `invoice_due_date<=today()+7` |
+| 👤 **Assegnato a me** | Elementi in attesa di una tua azione | `assigned_to=<you>` |
+| 📅 **Posta in arrivo di oggi** | Importati oggi | `imported_on>=today()` |
+| 📋 **In attesa di validazione** | Pronti per la validazione | `status=ready_for_validation` |
+| 🧾 **Documenti elettronici** | Fatture elettroniche (XML, ZUGFeRD, EDI) | `is_edoc=true` |
+| ✅ **Corrispondenza PO completa** | Corrispondenza completa con un ordine di acquisto | `po_match_status=full_matched` |
+| ➗ **Corrispondenza parziale dell'ordine di acquisto** | Corrispondenza parziale con un ordine di acquisto | `po_match_status=partial_matched` |
+| 📉 **In base alla corrispondenza PO** | Quantità o prezzo unitario inferiori all'ordine di acquisto | `po_match_status=under_matched` |
 
-I tre filtri **corrispondenza PO** e i campi full-text richiedono la ricerca
-full-text attiva.
+I tre filtri **Corrispondenza PO** e i campi fulltext richiedono che la ricerca fulltext
+sia attiva per la tua organizzazione.
+
+<figure><img src="../../../.gitbook/assets/prior-u030-it.png" alt="Guida alle query e ai filtri della ricerca rapida."><figcaption><p>Guida alle query e ai filtri della ricerca rapida.</p></figcaption></figure>
+
+---
+
+## Raggruppare i risultati
+
+Invece di un elenco piatto, puoi **raggruppare** i risultati per qualsiasi campo — fornitore,
+stato, tipo di documento, sotto-organizzazione o un intervallo di date. Aggiungi un raggruppamento dalla
+barra di ricerca:
+
+```
+group by supplier_name
+```
+
+L'elenco mostra quindi **intestazioni di gruppo** comprimibili, ciascuna con il nome del gruppo e
+un **conteggio** (ad es. *Example (12)*). Clicca su un'intestazione per espandere o comprimere quel
+gruppo. Per i campi data puoi raggruppare per **giorno, settimana o mese**.
+
+<figure><img src="../../../.gitbook/assets/prior-u029-it.png" alt="Inserimento di una query con raggruppamento per fornitore."><figcaption><p>Inserimento di una query con raggruppamento per fornitore.</p></figcaption></figure>
+
+Il raggruppamento si combina con qualsiasi filtro — `status=ready_for_validation group by
+supplier_name` raggruppa solo i documenti corrispondenti. Cliccando su un gruppo si
+**approfondisce**: il valore di quel gruppo viene applicato come filtro e torni
+all'elenco piatto per quella selezione.
 
 ---
 
@@ -208,32 +274,33 @@ full-text attiva.
 
 ### La guida integrata
 
-L'**icona della guida** nella barra di ricerca apre un riferimento completo di
-tutti i campi, operatori e scorciatoie del tuo spazio di lavoro.
+L'**icona della guida** nella barra di ricerca apre un riferimento completo di tutti i campi,
+gli operatori e le scorciatoie disponibili nel tuo workspace — compreso quali campi sono
+standard e quali fulltext.
 
-<figure><img src="../../../.gitbook/assets/it_quick_search_08_help_modal.png" alt="La guida integrata della ricerca dashboard con tutti gli operatori"><figcaption><p>La guida integrata <strong>Ricerca dashboard — Campi e sintassi</strong> elenca ogni operatore e come corrispondono i valori (es. «Esatto / inizia con»).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/quick_search_08_help_modal.png" alt="La guida integrata Dashboard Search con tutti gli operatori"><figcaption><p>La guida integrata <strong>Dashboard Search — Fields &#38; Syntax</strong>, che elenca ogni operatore e come vengono confrontati i valori.</p></figcaption></figure>
 
-### Cosa significa `=` per tipo di campo
+### Come corrisponde `=`, per tipo di campo
 
-Ogni corrispondenza di testo ignora maiuscole/minuscole.
+Tutte le corrispondenze di testo ignorano maiuscole e minuscole.
 
 | Tipo di campo | Esempio | `=` significa |
-|---------------|---------|---------------|
-| Testo (nome, fornitore, ordine) | `filename=invoice` | **inizia con** |
+|------------|---------|-----------|
+| Testo (nome, fornitore, ordine di acquisto) | `filename=invoice` | **inizia con** |
 | Testo, ovunque | `filename:invoice` | **contiene** |
 | Testo, inizio *o* fine | `filename="invoice"` | **inizia o finisce con** |
-| Stato / tipo / corrispondenza PO (elenchi fissi) | `status=finished` | **esatto** |
-| Identificatori (n° fattura, id fornitore) | `invoice_number=INV-100` | **esatto** |
+| Stato / tipo / PO match (elenchi fissi) | `status=finished` | **esatto** |
+| Identificatori (numero fattura, id fornitore) | `invoice_number=INV-100` | **esatto** |
 | Numero | `total_amount>5000` | intervallo (`> < >= <= between`) |
 | Data | `created_on>2026-01-01` | intervallo + `today()±N` |
 
 ### Operatori
 
 | Operatore | Significato |
-|-----------|-------------|
-| `=` | inizia-con (testo) / esatto (elenco, numero, data) |
+|----------|---------|
+| `=` | inizia con (testo) / esatto (elenco, numero, data) |
 | `:` | contiene (testo, ovunque) |
-| `="…"` | inizia-con o finisce-con (testo) |
+| `="…"` | inizia o finisce con (testo) |
 | `!=` | l'opposto di `=` |
 | `>` `<` `>=` `<=` | maggiore / minore di |
 | `between … and …` | intervallo inclusivo |
@@ -242,204 +309,165 @@ Ogni corrispondenza di testo ignora maiuscole/minuscole.
 
 ### Connettori
 
-Combina condizioni con **AND** (entrambe), **OR** (una), **NOT** e parentesi
-`( … )` per raggruppare:
+Combina le condizioni con **AND** (entrambe vere), **OR** (una delle due), **NOT** e
+le parentesi `( … )` per raggruppare:
 
 ```
 status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
-### Scorciatoie
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined-it.png" alt="Inserimento di condizioni di stato e fornitore collegate con AND."><figcaption><p>Inserimento di condizioni di stato e fornitore collegate con AND.</p></figcaption></figure>
 
-Forme più brevi per le stesse query:
+### Esempi di query
 
-| Scorciatoia | Equivale a |
-|-------------|------------|
-| `total_amount gt 5000` | `total_amount>5000` (alias gt/gte/lt/lte) |
-| `due_date > today` | `due_date>today()` |
-| `imported_on this_week` | questa settimana ISO (anche `last_week`, `this_month`, …) |
-| `ap_assignment_code is empty` | `ap_assignment_code=""` |
-| `status:open` | `status=ready_for_validation` (open/closed/failed/done) |
-| `total_amount not between 100, 200` | `total_amount<100 OR total_amount>200` |
-| `status in (finished, error)` | `status=finished OR status=error` |
-| `not status=finished` | `status!=finished` |
-| `filename contains rechnung` | `filename:rechnung` |
-| `total_amount > 5k` | `total_amount>5000` (`k`=mille, `M`=milione) |
-| `overdue` | `invoice_due_date<today() AND status!=finished` |
-| `#INV-1234` | `invoice_id:INV-1234` |
-| `@User` | `assigned_to:User` |
-| `$5000+` | `total_amount>=5000` |
+Le immagini mostrano le query inserite nell’interfaccia italiana. I dati dei documenti sono nascosti. Un’immagine della barra dei filtri non dimostra un numero preciso di risultati.
 
-### Galleria query + risultato per le scorciatoie
-
-Questi esempi mostrano ogni modello di scorciatoia con la query digitata e il risultato visualizzato nella dashboard. Il primo gruppo usa campi standard e funziona anche senza ricerca full-text attiva. Il secondo gruppo usa campi solo full-text, come importo o data di scadenza.
-
-#### Funziona senza full-text
-
-##### Alias degli operatori
-
-- Query: `created_on gt 2026-05-25`
-- Equivale a: `created_on>2026-05-25`
-- Risultato: Filtra per Created dopo il 25 maggio 2026.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Risultato Quick Search per created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtra per Created dopo il 25 maggio 2026.</p></figcaption></figure>
-
-##### Parole data senza parentesi
-
-- Query: `created_on < today`
-- Equivale a: `created_on<today()`
-- Risultato: Espande la parola today in today().
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Risultato Quick Search per created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Espande la parola today in today().</p></figcaption></figure>
-
-##### Periodo relativo
-
-- Query: `created_on this_month`
-- Equivale a: `created_on>=first day of this month AND created_on<=last day of this month`
-- Risultato: Espande this_month in un intervallo di date.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Risultato Quick Search per created_on this_month"><figcaption><p><code>created_on this_month</code> - Espande this_month in un intervallo di date.</p></figcaption></figure>
-
-##### Parole vuoto/impostato
-
-- Query: `assigned_to is empty`
-- Equivale a: `assigned_to=""`
-- Risultato: Trova documenti senza assegnatario.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Risultato Quick Search per assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Trova documenti senza assegnatario.</p></figcaption></figure>
-
-##### Stato leggibile
-
-- Query: `status:open`
-- Equivale a: `status=ready_for_validation`
-- Risultato: Mappa open allo stato di validazione.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Risultato Quick Search per status:open"><figcaption><p><code>status:open</code> - Mappa open allo stato di validazione.</p></figcaption></figure>
-
-##### Non compreso tra
-
-- Query: `created_on not between 2026-06-01, 2026-06-15`
-- Equivale a: `(created_on<2026-06-01 OR created_on>2026-06-15)`
-- Risultato: Trova valori fuori da una finestra di date.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Risultato Quick Search per created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Trova valori fuori da una finestra di date.</p></figcaption></figure>
-
-##### Lista in
-
-- Query: `status in (ready_for_validation, exported)`
-- Equivale a: `status=ready_for_validation OR status=exported`
-- Risultato: Corrisponde a uno qualsiasi degli stati elencati.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Risultato Quick Search per status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Corrisponde a uno qualsiasi degli stati elencati.</p></figcaption></figure>
-
-##### Prefisso di negazione
-
-- Query: `not status=finished`
-- Equivale a: `status!=finished`
-- Risultato: Inverte il predicato dello stato finished.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Risultato Quick Search per not status=finished"><figcaption><p><code>not status=finished</code> - Inverte il predicato dello stato finished.</p></figcaption></figure>
-
-##### Testo contiene
-
-- Query: `filename contains E2E`
-- Equivale a: `filename:E2E`
-- Risultato: Usa contains come ricerca di sottostringa nel nome file.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Risultato Quick Search per filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Usa contains come ricerca di sottostringa nel nome file.</p></figcaption></figure>
-
-##### Prefisso fattura
-
-- Query: `#INV-1234`
-- Equivale a: `invoice_id:INV-1234`
-- Risultato: Mappa #... a una ricerca per ID fattura.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Risultato Quick Search per #INV-1234"><figcaption><p><code>#INV-1234</code> - Mappa #... a una ricerca per ID fattura.</p></figcaption></figure>
-
-##### Prefisso assegnatario
-
-- Query: `@Daniel`
-- Equivale a: `assigned_to:"Daniel"`
-- Risultato: Mappa @... a una ricerca per nome assegnatario.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Risultato Quick Search per @Daniel"><figcaption><p><code>@Daniel</code> - Mappa @... a una ricerca per nome assegnatario.</p></figcaption></figure>
-
-#### Richiede la ricerca full-text
-
-Se usi la stessa scorciatoia con un campo solo full-text, la query richiede comunque il full-text. Ad esempio, `ap_assignment_code is empty` usa la stessa scorciatoia vuoto/impostato di `assigned_to is empty`, ma il campo AP è full-text.
-
-##### Suffisso importo
-
-- Query: `total_amount > 5k`
-- Equivale a: `total_amount>5000`
-- Risultato: Espande k in migliaia su un campo importo.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Risultato Quick Search per total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Espande k in migliaia su un campo importo.</p></figcaption></figure>
-
-##### Scorciatoia scadute
-
-- Query: `overdue`
-- Equivale a: `invoice_due_date<today() AND status!=finished`
-- Risultato: Trova fatture non completate oltre la scadenza.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Risultato Quick Search per overdue"><figcaption><p><code>overdue</code> - Trova fatture non completate oltre la scadenza.</p></figcaption></figure>
-
-##### Prefisso importo
-
-- Query: `$5000+`
-- Equivale a: `total_amount>=5000`
-- Risultato: Mappa $...+ a una soglia di importo.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Risultato Quick Search per $5000+"><figcaption><p><code>$5000+</code> - Mappa $...+ a una soglia di importo.</p></figcaption></figure>
-
----
-
-## Parte 4 — Modalità di ricerca avanzate
-
-Oltre alla ricerca per campi, tre prefissi cercano nel contenuto del documento.
-
-### Ricerca vettoriale (semantica) — `vector:`
-
-Corrisponde per **significato**, non per testo esatto. Richiede il modulo Vector.
+#### Operatore di confronto testuale
 
 ```
-vector: invoices about office supplies
-vector: shipping delays with Hamburg port
+created_on gt 2026-05-25
 ```
 
-### Ricerca testo OCR — `ocr:`
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases-it.png" alt="Operatore di confronto gt in una query sulla data."><figcaption><p>Operatore di confronto gt in una query sulla data.</p></figcaption></figure>
 
-Cerca nel **testo delle pagine** estratto dall'OCR, non solo nelle colonne.
-
-```
-ocr: Versandkosten
-ocr: "purchase order PO-12345"
-ocr: Hamburg AND doc_type=INVOICE
-```
-
-### Ricerca in linguaggio naturale (IA) — `ai:`
-
-Descrivi in linguaggio normale ciò che cerchi; l'IA legge la frase ed estrae
-filtri (fornitore, date, importi) in una query strutturata.
+#### Prima di oggi
 
 ```
-ai: invoices from Ruiz over 1000 last quarter
-ai: overdue invoices waiting on approval
+created_on < today()
 ```
 
----
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date-it.png" alt="Confronto di created_on con today()."><figcaption><p>Confronto di created_on con today().</p></figcaption></figure>
+
+#### Da una data di creazione
+
+```
+created_on >= 2026-06-01
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period-it.png" alt="Inserimento di una data di creazione a partire dal 1° giugno 2026."><figcaption><p>Inserimento di una data di creazione a partire dal 1° giugno 2026.</p></figcaption></figure>
+
+#### Senza responsabile assegnato
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence-it.png" alt="Inserimento di una ricerca di documenti senza responsabile assegnato."><figcaption><p>Inserimento di una ricerca di documenti senza responsabile assegnato.</p></figcaption></figure>
+
+#### Filtro sullo stato
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open-it.png" alt="Esempio di filtro sullo stato nella ricerca rapida."><figcaption><p>Esempio di filtro sullo stato nella ricerca rapida.</p></figcaption></figure>
+
+#### Fuori da un periodo
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between-it.png" alt="Inserimento di una ricerca fuori da un intervallo di date."><figcaption><p>Inserimento di una ricerca fuori da un intervallo di date.</p></figcaption></figure>
+
+#### Stati alternativi
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list-it.png" alt="Inserimento di due stati tecnici collegati con OR."><figcaption><p>Inserimento di due stati tecnici collegati con OR.</p></figcaption></figure>
+
+#### Escludere una condizione sul fornitore
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation-it.png" alt="Esclusione di una condizione sul fornitore con NOT."><figcaption><p>Esclusione di una condizione sul fornitore con NOT.</p></figcaption></figure>
+
+#### Parte del nome del file
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains-it.png" alt="Ricerca di un termine nei nomi dei file."><figcaption><p>Ricerca di un termine nei nomi dei file.</p></figcaption></figure>
+
+#### Query sul numero di fattura
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix-it.png" alt="Esempio di query con invoice_number."><figcaption><p>Esempio di query con invoice_number.</p></figcaption></figure>
+
+#### Assegnazione vuota
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix-it.png" alt="Inserimento di un’assegnazione vuota: assigned_to=&quot;&quot;."><figcaption><p>Inserimento di un’assegnazione vuota: assigned_to=&quot;&quot;.</p></figcaption></figure>
+
+#### Query sulla valuta
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-it.png" alt="Inserimento di una query in euro: currency=EUR."><figcaption><p>Inserimento di una query in euro: currency=EUR.</p></figcaption></figure>
+
+#### Scadenza precedente a oggi
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue-it.png" alt="Inserimento di una data di scadenza precedente a today()."><figcaption><p>Inserimento di una data di scadenza precedente a today().</p></figcaption></figure>
+
+#### Soglia dell’importo
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix-it.png" alt="Inserimento di un importo totale di almeno 1000."><figcaption><p>Inserimento di un importo totale di almeno 1000.</p></figcaption></figure>
+
+## Includere il contenuto dei documenti
+
+Il menu di ricerca nel contenuto stabilisce se la ricerca include anche il testo dei documenti. Questa scelta è distinta dai prefissi tecnici come vector:, ocr: e ai:.
+
+### Automatico
+
+Cerca prima nelle colonne visibili. Se non trova corrispondenze, include il contenuto quando l’organizzazione dispone delle funzioni necessarie.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector-it.png" alt="Inclusione automatica del contenuto dei documenti nella ricerca rapida."><figcaption><p>Inclusione automatica del contenuto dei documenti nella ricerca rapida.</p></figcaption></figure>
+
+### Includere sempre il contenuto
+
+Include esplicitamente il contenuto dei documenti. Devono essere disponibili le funzioni di ricerca corrispondenti.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr-it.png" alt="Inclusione sistematica del contenuto dei documenti nella ricerca rapida."><figcaption><p>Inclusione sistematica del contenuto dei documenti nella ricerca rapida.</p></figcaption></figure>
+
+### Solo colonne visibili
+
+Limita la ricerca alle colonne visibili della dashboard.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai-it.png" alt="Ricerca limitata alle colonne visibili."><figcaption><p>Ricerca limitata alle colonne visibili.</p></figcaption></figure>
 
 ### Ricette
 
-| Vuoi… | Digita questo |
-|-------|---------------|
-| Pronto da validare, completamente riconciliato | `status=ready_for_validation AND po_match_status=full_matched` |
+| Cosa vuoi… | Digita questo |
+|-----------|-----------|
+| Pronti per la validazione, con corrispondenza completa | `status=ready_for_validation AND po_match_status=full_matched` |
 | Questo fornitore, questa settimana | `supplier_name=Test AND created_on>today()-7` |
 | Fatture scadute di importo elevato | `total_amount>5000 AND invoice_due_date<today()` |
-| Due fornitori insieme | `supplier_name=fuji OR supplier_name=acme` |
+| Due fornitori contemporaneamente | `supplier_name=ExampleA OR supplier_name=ExampleB` |
 | Documenti in errore di oggi | `(status=error OR status=failed) AND created_on>today()-1` |
-| Per prefisso del numero d'ordine | `purchase_order=PO-2026` |
+| Note di credito elettroniche | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
+| Per prefisso dell'ordine di acquisto | `purchase_order=PO-2026` |
 
-> I campi arancioni (full-text) e i filtri intelligenti PO richiedono la
-> **ricerca full-text** attiva.
+> I campi arancioni (fulltext) richiedono che la **ricerca fulltext** sia attiva per la tua
+> organizzazione. Un `%` o `_` letterale in un valore viene trattato come un carattere normale.

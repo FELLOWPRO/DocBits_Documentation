@@ -1,5 +1,5 @@
-# Modifica e salvataggio dei pattern regex
+# Modificare e salvare espressioni Regex
 
-## Guida alla modifica dei pattern esistenti e all'importanza di testare tali modifiche per garantire che funzionino come previsto senza compromettere le funzionalità esistenti.
+Il vecchio collegamento diretto Regex nella scheda del tipo di documento non è più disponibile in questa interfaccia.
 
-**Per modificare i pattern regex esistenti e assicurarti che le modifiche funzionino come previsto senza compromettere le funzionalità esistenti, puoi seguire la guida qui sotto:**...
+Prima di modificare un’espressione, confermare il percorso di configurazione supportato dalla propria versione. Conservare l’espressione esistente e preparare input validi, incompleti e che non devono corrispondere. Confrontare le corrispondenze effettive dopo ogni modifica. Salvare la configurazione prevista solo dopo la verifica e provare documenti rappresentativi prima di applicare l’espressione ad altre fatture.

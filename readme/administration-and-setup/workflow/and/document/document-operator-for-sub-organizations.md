@@ -1,6 +1,6 @@
 # Opérateur de documents pour les sous-organisations
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-fr-fr.png" alt="Opérateur de documents pour les sous-organisations, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Objectif :
 

@@ -244,7 +244,7 @@ Les annonces de version originales restent ci-dessous pour référence.
 *   **Appliquer le Layout par défaut à tous les Origins :**\
     Un nouveau bouton **Apply Default Layout to Origins** a été introduit dans l'écran de configuration du layout. Les administrateurs peuvent désormais déployer le layout par défaut sur tous les origins au sein d'une organisation en une seule action, éliminant le processus manuel fastidieux de copier-coller du JSON de layout pour chaque origin individuellement. Ceci est particulièrement utile lors de l'intégration de nouveaux clients où plusieurs origins doivent être configurés de manière cohérente.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-fr-20261023.png" alt="Layout Builder en interface française avec la boîte de dialogue ouverte pour appliquer la disposition par défaut à plusieurs Origins."><figcaption><p>La boîte de dialogue pour appliquer la disposition par défaut aux origines. Données d’exemple ; rien n’a été enregistré.</p></figcaption></figure>
 *   **Sélection du type de document pour l'importation FTP :**\
     Les configurations d'importation FTP prennent désormais en charge l'attribution du type de document par dossier. Lors de la configuration d'une importation FTP, les utilisateurs peuvent spécifier quel type de document — tel que Facture ou Confirmation de commande — doit être appliqué à tous les documents importés depuis ce dossier. Les documents sont automatiquement classifiés lors de l'importation, supprimant le besoin d'attribution manuelle du type de document après l'ingestion. Cela prend en charge les organisations qui gèrent plusieurs types de documents à travers différentes sous-organisations et dossiers.
 
@@ -553,7 +553,7 @@ DocBits inclut désormais une prise en charge complète des versions 2.1 et sup�
 * **Flexibilité** : que vous travailliez avec les profils basic, comfort ou extended de la norme ZUGFeRD, DocBits fournit des outils pour gérer chaque niveau de complexité des factures.
 * **Pérennité** : grâce à la prise en charge des versions plus récentes, DocBits garantit que les entreprises restent conformes aux réglementations évolutives en matière de facturation électronique dans les États membres de l'UE et au-delà.
 
-En intégrant ZUGFeRD 2.1 et les normes plus récentes, DocBits simplifie les transactions transfrontalières et répond aux besoins des entreprises modernes, ce qui en fait un outil essentiel pour les organisations qui privilégient la transformation numérique et la conformité réglementaire. [Découvrez les versions de ZUGFeRD et leurs mappings DocBits](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+En intégrant ZUGFeRD 2.1 et les normes plus récentes, DocBits simplifie les transactions transfrontalières et répond aux besoins des entreprises modernes, ce qui en fait un outil essentiel pour les organisations qui privilégient la transformation numérique et la conformité réglementaire. [Découvrez les versions de ZUGFeRD et leurs mappings DocBits](https://docs.docbits.com/french/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Intégration d'API externes pour un traitement amélioré des documents
 

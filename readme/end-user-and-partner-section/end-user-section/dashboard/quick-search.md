@@ -37,7 +37,7 @@ Plusieurs chips combinés sont lus comme un **AND** par défaut.
 À l'extrémité droite de la barre :
 
 - **ⓘ Aide** — ouvre la référence intégrée **Recherche dans le tableau de bord — Champs et syntaxe**, qui liste tous les champs, opérateurs et raccourcis disponibles dans votre espace de travail.
-- **Filtres (tune)** — un panneau rapide pour les filtres courants Statut / Utilisateur / Redémarrage, avec **Effacer les filtres** et **Appliquer**.
+- **Filtres** (trois curseurs) — un panneau rapide pour les filtres courants **Statut**, **Assigné à** et **Redémarrage nécessaire**, avec **Effacer les filtres** et **Appliquer**.
 - **Anneau d'index** — un petit anneau de progression indiquant quelle part de votre index plein texte est construite (affiché uniquement lorsque la recherche plein texte est activée).
 
 ### Vue standard ou vue brute
@@ -185,21 +185,24 @@ ap_assignment_code=""
 
 ---
 
-## Filtres intelligents — un clic
+## Filtres rapides — un clic
 
-En haut du menu déroulant de la Recherche rapide (cliquez dans la barre de recherche), vous trouverez les **Filtres intelligents** : des recherches prêtes à l'emploi que vous appliquez en un seul clic. Chacun est simplement un raccourci pour une requête que vous pourriez aussi taper vous-même :
+L'icône **éclair** au début du champ de recherche ouvre le sélecteur de champs. En haut de
+ce sélecteur se trouvent les **Filtres rapides** : des recherches prêtes à l'emploi que vous
+appliquez en un seul clic. Chacun est simplement un raccourci pour une requête que vous
+pourriez aussi taper vous-même :
 
-| Filtre intelligent | Trouve | Équivaut à |
+| Filtre rapide | Trouve | Équivaut à |
 |--------------------|--------|------------|
-| ⚠️ **En retard** | Date d'échéance dépassée | `invoice_due_date<today()` |
+| ⚠️ **Échu** | Date d'échéance dépassée | `invoice_due_date<today()` |
 | 🕐 **Bientôt dû** | Dans les 7 prochains jours | `invoice_due_date<=today()+7` |
-| 👤 **Affecté à moi** | Éléments en attente de votre action | `assigned_to=<you>` |
-| 📅 **Boîte du jour** | Importés aujourd'hui | `imported_on>=today()` |
+| 👤 **Assigné à moi** | Éléments en attente de votre action | `assigned_to=<you>` |
+| 📅 **Boîte de réception du jour** | Importés aujourd'hui | `imported_on>=today()` |
 | 📋 **En attente de validation** | Prêts à être validés | `status=ready_for_validation` |
 | 🧾 **Documents électroniques** | E-factures (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Correspondance PO totale** | Totalement rapprochés d'une commande d'achat | `po_match_status=full_matched` |
-| ➗ **Correspondance PO partielle** | Partiellement rapprochés d'une commande d'achat | `po_match_status=partial_matched` |
-| 📉 **Correspondance PO inférieure** | Quantité ou prix unitaire inférieur à la commande d'achat | `po_match_status=under_matched` |
+| ✅ **Correspondance PO complète** | Totalement rapprochés d'une commande d'achat | `po_match_status=full_matched` |
+| ➗ **Correspondance partielle du bon de commande** | Partiellement rapprochés d'une commande d'achat | `po_match_status=partial_matched` |
+| 📉 **Sous correspondance PO** | Quantité ou prix unitaire inférieur à la commande d'achat | `po_match_status=under_matched` |
 
 Les trois filtres **correspondance PO** et les champs plein texte nécessitent que la recherche plein texte soit activée pour votre organisation.
 

@@ -10,7 +10,7 @@ The **Properties** panel on the right of the builder is always open and follows 
 2. Select **Edit** on the layout you want to change. The Layout Builder opens on the **Fields** tab.
 3. Select the field on the canvas, or a row in the **Structure** or **Fields** tab. The field is highlighted on the canvas and the **Properties** panel shows it: the label, and directly below the heading the technical field name with a copy icon.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-field-properties-en-20261102.png" alt="Layout Builder with the Invoice number field selected on the Invoice canvas; the Properties panel on the right shows the label Invoice number, the technical name invoice_id with a copy icon and the Display section with Element Width in Percentage 50 and the presets 25, 33, 50, 66, 75 and 100"><figcaption>The Properties panel shows the selected field, here **Invoice number** with the technical name `invoice_id`.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-field-properties-en-20261102.png" alt="Layout Builder with the Invoice number field selected on the Invoice canvas; the Properties panel on the right shows the label Invoice number, the technical name invoice_id with a copy icon and the Display section with Element Width in Percentage 50 and the presets 25, 33, 50, 66, 75 and 100"><figcaption><p>The Properties panel shows the selected field, here <strong>Invoice number</strong> with the technical name <code>invoice_id</code>.</p></figcaption></figure>
 
 Read the technical field name before you change an option. Two fields can carry the same label, for example two fields named **Delivery date**, and only the technical name tells them apart.
 
@@ -18,7 +18,7 @@ Read the technical field name before you change an option. Two fields can carry 
 
 The panel groups its options into collapsible sections. Only the sections that apply to the selected element are shown — a text element, for instance, has no **Behaviour** section. Select a section heading to open or close it.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-properties-display-en-20261102.png" alt="Properties panel of the Invoice number field with the Display section open showing Label, Field Name, Display Label On Left, Element Width in Percentage with the presets 25 to 100 and Is Textarea, and the Behaviour section open showing Readonly, Hidden and Tab index"><figcaption>**Display** and **Behaviour** of the selected field.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-properties-display-en-20261102.png" alt="Properties panel of the Invoice number field with the Display section open showing Label, Field Name, Display Label On Left, Element Width in Percentage with the presets 25 to 100 and Is Textarea, and the Behaviour section open showing Readonly, Hidden and Tab index"><figcaption><p><strong>Display</strong> and <strong>Behaviour</strong> of the selected field.</p></figcaption></figure>
 
 | Section | Options | What it changes |
 | --- | --- | --- |
@@ -29,7 +29,7 @@ The panel groups its options into collapsible sections. Only the sections that a
 
 **Element Width in Percentage** takes a number; the presets **25**, **33**, **50**, **66**, **75** and **100** next to it set it with one click. A field at **50** fills half of its row; two fields at **50** fit side by side.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-properties-values-automation-en-20261102.png" alt="Properties panel scrolled to the Behaviour, Values & lists and Automation sections: Readonly, Hidden and Tab index, then Select AI modeltype, Select list of values, Field length and Banned keywords, then Run workflow on change and Run script on Change"><figcaption>**Values & lists** and **Automation** for the same field.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-properties-values-automation-en-20261102.png" alt="Properties panel scrolled to the Behaviour, Values & lists and Automation sections: Readonly, Hidden and Tab index, then Select AI modeltype, Select list of values, Field length and Banned keywords, then Run workflow on change and Run script on Change"><figcaption><p><strong>Values & lists</strong> and <strong>Automation</strong> for the same field.</p></figcaption></figure>
 
 **Banned keywords** accepts a comma-separated list, for example `_, *`. **Field length** limits how many characters the field accepts.
 

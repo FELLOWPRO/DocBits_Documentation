@@ -1,19 +1,19 @@
-# Regex Manager
+# Gestor de Regex
 
-Esta función de DocBits le ofrece una alternativa a la clasificación por modelo: le permite escribir expresiones regulares buscables para un tipo de documento, para la clasificación y otros fines.
+Esta función de DocBits le ofrece una alternativa a la clasificación por modelo, ya que permite escribir expresiones regulares de búsqueda para un tipo de documento, con fines de clasificación y otros usos.
 
-**Tipo de documento:** El Regex Manager le permite escribir expresiones regulares, y DocBits busca esas expresiones en el documento. Si el documento coincide con la expresión regular de un documento definido, se clasifica en el tipo de documento correspondiente. Por ejemplo, si escribe una expresión regular que encuentra «Gutschrift», DocBits clasifica como nota de crédito todo documento que contenga ese término.
+Tipo de documento: el Gestor de Regex le permite escribir expresiones regulares que luego se buscan en el documento. Si DocBits encuentra una coincidencia con la expresión regular de un documento definido, clasifica el documento en el tipo de documento correspondiente. Por ejemplo, si escribe una expresión regular para encontrar “Gutschrift” y DocBits encuentra ese término en un documento, lo clasificará como nota de crédito.
 
-**Origen del documento:** Esto le indica a DocBits, mediante expresiones regulares, el país de origen de un documento. Por ejemplo, si la expresión regular de un documento en español contiene el término «Factura» y DocBits encuentra ese término en un documento, sabe que el documento es de origen español y lo clasifica como tal.
+Origen del documento: mediante expresiones regulares, DocBits también reconoce el país de origen de un documento. Por ejemplo, si una expresión regular para un documento español contiene el término “Factura” y DocBits lo encuentra en el documento, sabrá que es de origen español y lo clasificará como tal.
 
-## Acceso al Regex Manager
+## **Acceder al Gestor de Regex**
 
-Para usar esta función, vaya a Ajustes → Tipos de Documento y haga clic en «Nuevo». En el asistente «Crear un nuevo tipo de documento», escriba un nombre para el tipo de documento y seleccione «Regular» en lugar de «Auto» como método de extracción; después continúe con «Próximo».
+En DocBits, vaya a Ajustes → Tipos de documento. En “Tipos de documento personalizados”, haga clic en “Nuevo”. Introduzca un nombre para el tipo de documento, añada una descripción opcional y marque “Tabla disponible” si el documento contiene una tabla. Después elija “Regular” en lugar de “Auto” y haga clic en “Próximo”.
 
-<figure><img src="../../../.gitbook/assets/regex-manager-create-es-20261006.png" alt="El asistente de DocBits para crear un nuevo tipo de documento, con el nombre escrito y la opción «Regular» seleccionada."><figcaption><p>El asistente «Crear un nuevo tipo de documento» con el nombre del tipo de documento y la elección entre «Auto» y «Regular».</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/regex-manager-create-es-20261006.png" alt="Página para crear un nuevo tipo de documento con el campo de nombre, la casilla Tabla disponible, la descripción y los botones Auto y Regular"><figcaption><p>Elija “Regular” para clasificar el nuevo tipo de documento con expresiones regulares.</p></figcaption></figure>
 
-## Agregar y quitar Regex
+## **Agregar y eliminar regex**
 
-El paso de Regex muestra una tabla con las expresiones regulares existentes, con su Origen y su Patrón, junto con el botón «Agregar» para crear nuevas entradas de regex.
+El paso “Regular” muestra los modelos de regex existentes, cada uno con su origen y su patrón, y un botón “Agregar” para crear un nuevo modelo. Use el menú de acciones al final de la fila para gestionar esa entrada. Haga clic en “Próximo” para continuar con “Campos y grupos”.
 
-<figure><img src="../../../.gitbook/assets/regex-manager-list-es-20261006.png" alt="La tabla del Regex Manager con las expresiones regulares existentes por origen y patrón."><figcaption><p>El paso de Regex con la tabla de las expresiones regulares existentes y el botón «Agregar».</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/regex-manager-list-es-20261006.png" alt="Paso Regular con el botón Agregar y una tabla con tres modelos de regex, con origen, patrón y acciones"><figcaption><p>Modelos de regex existentes con origen y patrón. “Agregar” crea uno nuevo.</p></figcaption></figure>

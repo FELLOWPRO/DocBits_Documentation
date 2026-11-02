@@ -1,4 +1,4 @@
-# Auto Accounting BOD Mapping
+# Asignación BOD de contabilización automática
 
 El flujo de Auto-Accounting de DocBits consume dos BODs de Infor M3 para enriquecer las facturas de coste con dimensiones contables válidas:
 

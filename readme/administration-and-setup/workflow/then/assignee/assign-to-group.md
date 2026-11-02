@@ -1,6 +1,8 @@
-# Assign to group
+# Asignar al grupo
 
-<figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v2-es-es.png" alt="Asignar al grupo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-es-es.png" alt="Asignar al grupo, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## Propósito:
 
@@ -8,11 +10,9 @@ La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de 
 
 ## Componentes de la tarjeta:
 
-1. **Groups**
+1. **Grupos**
    * **Descripción:** Especifica el **grupo** al que se asignará el documento.
    * **Detalle:** Se selecciona de una lista desplegable de **grupos** disponibles.
-
-
 
 ## **Componentes adicionales en la versión 3**
 
@@ -24,7 +24,7 @@ La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de 
 
 ## Funcionalidad:
 
-* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+* **Evaluación de la condición:** La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación del documento:** Asigna el documento al **grupo** seleccionado. En la **versión 3**, el **árbol de decisión** determina el grupo de destino dinámicamente si está habilitado.
 
 ## Configuración:
@@ -35,3 +35,15 @@ La tarjeta de flujo de trabajo **"Assign to Group"** facilita la asignación de 
 ## Conclusión:
 
 La tarjeta de flujo de trabajo **"Assign to Group"** automatiza la asignación de documentos a **grupos** predefinidos, mejorando la coordinación de los equipos. La **versión 3** introduce la capacidad de asignar grupos dinámicamente según la lógica del árbol de decisión.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usarlo:** Coloque un documento en una cola de revisión compartida.
+
+**Configuración:** Seleccione el grupo configurado `Demo Finance`.
+
+**Resultado esperado y contraejemplo:** El documento se asigna al grupo seleccionado. Se trata de una asignación de documentos, no de una promesa de que se creará una tarea o un correo electrónico adicional.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

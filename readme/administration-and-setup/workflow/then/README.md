@@ -1,76 +1,73 @@
-# Then
+# Entonces
 
-## Resumen de las tarjetas de acción "Then..."
+Una tarjeta **Entonces** le indica a un flujo de trabajo qué hacer después de su activador **Cuando** y cualquier condición **Y**. En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Entonces...**. Elija una categoría a la izquierda o escriba un nombre en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla, complete los campos que se muestran en la tarjeta y guarde el flujo de trabajo. Desplázate dentro del selector para ver más tarjetas. Seleccione **×** para cerrarlo sin agregar una tarjeta. Consulte [Flujo de trabajo](..) para ver la secuencia completa.
 
-### **1. Acciones de Document Field:**
+Las vistas previas a continuación muestran las acciones disponibles, no las configuraciones completadas. Elija la acción que coincida con el resultado que desea.
 
-* **Invert Checkbox:** Esta acción invierte el estado de un campo de casilla de verificación en un documento.
-* **Set Checkbox:** Establece el estado de un campo de casilla de verificación a verdadero (marcado) o falso (sin marcar).
-* **Set Field to Text:** Esta acción establece un campo de documento determinado a un valor de texto dado.
+## Campo de documento
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Configure o invierta una casilla de verificación, coloque texto en un campo o copie un campo en otro. Elija los nombres de los campos y el valor solicitado por la tarjeta. Consulte [Campo de documento](document-field).
 
-### **2. Acciones de Document:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-* **Approve the Document:** Marca un documento como aprobado en el sistema.
-* **Reject the Document:** Marca un documento como rechazado.
+## Documento
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Elija **Aprobar el documento** o **Rechazar el documento** cuando el flujo de trabajo deba tomar esa decisión. Utilice primero una condición **Y** si la aprobación depende de una verificación. Consulte el [Documento](document).
 
-### **3. Acciones de Export:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-* **Export document with export configuration:** Inicia el proceso de exportación con una configuración de exportación específica.
-* **Start Export:** Inicia el proceso de exportación.
+## Lógica
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+Utilice estas tarjetas para convertir valores entre formatos numéricos, de texto y booleanos, o leer un valor de JSON. Elija los campos de entrada y salida en la tarjeta seleccionada.
 
-### **4. Acciones de Status:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
-* **Change Status:** Cambia el estado de un documento o tarea a un nuevo estado especificado.
+## Estado
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+Elija **Cambiar estado** para mover el documento a un estado seleccionado. La tarjeta también puede desencadenar otro flujo de trabajo. Consulte [Estado](status).
 
-### **5. Acciones de Task:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-* Asignaciones y notificaciones:
-  * **Assign Task:** Crea y asigna una tarea con detalles específicos a una persona o grupo, incluyendo opciones para notificarles por correo electrónico.
-  * **Create a New Task:** Similar a asignar, pero centrado en configurar una tarea completamente nueva en el sistema.
+## Indicaciones y guiones
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+Elija esta categoría para ejecutar un script de solicitud de DocOperator. Seleccione el script y las variables que solicita la tarjeta. La tarjeta también ofrece configuraciones de ejecución, como reintentos.
 
-### **6. Acciones de Table:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-* **Calculate in Table:** Realiza cálculos sobre los datos de la tabla según las condiciones especificadas y almacena los resultados en una columna designada.
-* **Change Entries:** Actualiza las entradas de una tabla según las condiciones especificadas.
+## Exportar
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+Inicie una exportación, exporte con una configuración elegida o ponga en cola una exportación final. Elija la configuración de exportación y la opción de tarea pendiente que se muestran en su tarjeta. Consulte [Exportar](export).
 
-### **7. Acciones de Assignee:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-* **Assign User from Field:** Asigna un usuario a una tarea o documento basándose en los datos de usuario almacenados en un campo específico, con la opción de un usuario alternativo si el principal no está disponible.
-* **Assign Document to User or Group:** Asigna directamente un documento a un usuario o grupo, garantizando que la responsabilidad se designe de forma adecuada.
+## Tarea
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+Cree una tarea o notificación y asígnela a un usuario o grupo. Ingrese la configuración de título, descripción, prioridad y notificación solicitada por la tarjeta. Algunas tarjetas se asignan secuencialmente. Consulte [Tarea](task).
 
-### **8. Acciones de interacción externa:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
-* **Call API:** Envía una solicitud a una API externa, que se puede personalizar con métodos, parámetros y datos específicos.
-* **Send HTTPS Request:** Similar a las llamadas a la API, pero con formato específico para protocolos HTTPS.
+## Correo electrónico
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+Envíe un correo electrónico utilizando una plantilla seleccionada, ya sea a destinatarios o a grupos. Elija la plantilla y el destino en la tarjeta.
 
-### **9. Procesamiento avanzado:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-* **Run Workflow:** Dispara otro flujo de trabajo en el sistema, lo que permite encadenar procesos complejos.
+## Tabla
 
-#### Aplicación práctica
+Cambie entradas o calcule valores en una tabla de documentos. Seleccione la tabla, columnas, operador y columna de resultados solicitada por la tarjeta. Consulte la [Tabla](table).
 
-Estas tarjetas de acción se utilizan para automatizar respuestas basadas en disparadores específicos identificados en las partes anteriores de la configuración del flujo de trabajo. Por ejemplo:
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
-* Si un documento se identifica como que necesita revisión, la acción "Approve the Document" se puede disparar automáticamente una vez que cumple todas las condiciones especificadas.
-* Para tareas de gestión de datos, las acciones "Set Checkbox" o "Set Field to Text" garantizan que los campos del documento se actualicen automáticamente, reduciendo la entrada manual de datos y el potencial de errores.
-* Tareas complejas como interacciones con la API o cambios de estado agilizan las interacciones no solo dentro del sistema ERP, sino también con servicios y herramientas externos, mejorando la integración y la funcionalidad.
+## Responsable
 
-### Conclusión
+Asigne el documento a un usuario, grupo, destinatario o suborganización. Algunas tarjetas utilizan un campo o una tabla de decisiones y ofrecen un recurso alternativo. Configure el destino correcto y el comportamiento alternativo en la tarjeta seleccionada. Consulte [Responsable](assignee).
 
-La sección "Then..." de su sistema de flujos de trabajo proporciona herramientas robustas para definir acciones precisas que deben ocurrir como resultado del cumplimiento de las condiciones del flujo de trabajo. Al utilizar estas acciones de forma eficaz, las empresas pueden automatizar procesos rutinarios, garantizar la precisión de los datos y responder dinámicamente a la información y los estados del sistema cambiantes. Comprender cómo configurar y utilizar estas acciones es clave para maximizar la eficiencia y la eficacia de las capacidades de flujo de trabajo de su sistema ERP.
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
+
+## Acción
+
+Ejecute otro flujo de trabajo, envíe una solicitud HTTPS, llame a una API o utilice la tarjeta de cálculo de aumento de costos. Estas acciones pueden afectar a otros sistemas; pregúntele a su administrador qué punto final y configuración usar. Consulte [Acción](action).
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
+
+[Campos detallados de tarjetas lógicas, rutas JSON, activadores y pruebas](../cards-overview/logic-cards-guide.md).

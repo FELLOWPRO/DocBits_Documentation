@@ -1,113 +1,36 @@
-# Dodawanie/Edycja Typów Dokumentów
+# Dodawanie i edytowanie typów dokumentów
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
-{% endembed %}
+Administratorzy mogą utworzyć niestandardowy typ dokumentu lub zmienić ustawienia istniejącego. Otwórz **Ustawienia → Przetwarzanie dokumentów → Typy dokumentów**. Strona oddziela wbudowane **Domyślne typy dokumentów** od **Niestandardowych typów dokumentów**.
 
-## Dodawanie lub edycja typów dokumentów w DocBits obejmuje kilka kroków. Kroki te obejmują definiowanie układów, pól i reguł ekstrakcji.
+<figure><img src="../../../../.gitbook/assets/dbdc180-document-types-overview-pl.png" alt="Strona Typy dokumentów z kartą Faktura oraz przyciskami Aktywować, Extraction, Ustawienia i linkami do układów, pól, tabel, skryptów i szkolenia modelowego"><figcaption><p>Użyj karty typu dokumentu, aby otworzyć ustawienie, które chcesz zmienić.</p></figcaption></figure>
 
-### Oto szczegółowy przewodnik:
+## Tworzenie niestandardowego typu dokumentu
 
-#### Uzyskiwanie Dostępu do Zarządzania Typami Dokumentów
+1. Przewiń do sekcji **Niestandardowe typy dokumentów** i wybierz **+ Nowy**. Otworzy się kreator **Utwórz Nowy Typ Dokumentu**. Domyślnych typów dostarczanych przez DocBits nie można usunąć; dla nowej kategorii utwórz typ niestandardowy.
+2. W sekcji **Tworzyć** podaj czytelną **Nazwę** oraz **Opis**. Wybierz **Dostępny stół**, jeśli ten typ dokumentu ma zawierać tabele pozycji. Wybierz **Automatyczny** do szkolenia modelu na przykładowych dokumentach albo **Wyrażenie regularne** do rozpoznawania opartego na wzorcach.
+3. Wybierz **Następny**, aby utworzyć typ dokumentu i kontynuować konfigurację. **Następny zapisuje nowy typ już w tym momencie**; nie jest to tylko podgląd. Unikaj wpisywania nazwy testowej w organizacji produkcyjnej.
+4. Dla opcji **Automatyczny** wgraj co najmniej **10 przykładowych dokumentów** przed kontynuowaniem. Dla **Wyrażenia regularnego** utwórz co najmniej **dwa wzorce**. Wymagania te wynikają z obecnego procesu tworzenia. Szczegóły szkolenia opisuje sekcja [Szkolenie modelu](model-training/README.md).
+5. W sekcji **Pola i grupy** utwórz potrzebne grupy i co najmniej jedno pole. Jeśli wybrano **Dostępny stół**, przejdź do **Tabel i kolumn** i skonfiguruj tabelę. Wybierz **Zakończ**, gdy wymagana konfiguracja jest gotowa.
 
-* **Zaloguj się:** Zaloguj się do DocBits ze swoimi uprawnieniami administratora.
-* **Nawiguj:** Przejdź do Ustawień.
-* **Typy Dokumentów:** Znajdź sekcję "Typy Dokumentów".
+<figure><img src="../../../../.gitbook/assets/dbdc180-custom-new-pl.png" alt="Sekcja Niestandardowe typy dokumentów z przyciskiem Nowy"><figcaption><p>Przycisk Nowy uruchamia kreatora niestandardowego typu dokumentu.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_types_section.png" alt="Docbits Document Types Section"><figcaption><p>Ustawienia</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc180-create-form-pl.png" alt="Formularz Utwórz Nowy Typ Dokumentu z polami Nazwa, Dostępny stół, Opis, opcjami Automatyczny i Wyrażenie regularne oraz przyciskiem Następny"><figcaption><p>Wybierz typ i metodę rozpoznawania, zanim wybierzesz Następny.</p></figcaption></figure>
 
-### Dodawanie nowego typu dokumentu
+## Edytowanie istniejącego typu dokumentu
 
-**Utwórz nowy typ dokumentu:**
+Znajdź kartę typu w sekcji **Domyślne typy dokumentów** lub **Niestandardowe typy dokumentów**. Elementy na każdej karcie mają różne zadania:
 
-* Kliknij przycisk "+ Nowy".
+| Element | Co robi |
+| --- | --- |
+| **Aktywować** | Włącza lub wyłącza przetwarzanie tego typu dokumentu. Przed zmianą sprawdź aktualny stan. |
+| **Extraction** | Przełącza między trybami ekstrakcji **Flex** i **Fix**; nie włącza ani nie wyłącza typu dokumentu. Najedź kursorem na przełącznik, aby zobaczyć aktualny tryb. |
+| **Ustawienia** (koło zębate) | Otwiera **Więcej ustawień** dla tego typu dokumentu. |
+| **Układy** | Otwiera układ walidacji. Zobacz [Nawigacja w Menedżerze Układów](layout-manager/navigating-the-layout-manager.md). |
+| **Pola** | Otwiera konfigurację pól. Zobacz [Dodawanie i Edytowanie Pól](fields/adding-and-editing-fields.md). |
+| **Tabele** | Otwiera kolumny tabeli dla tego typu dokumentu. |
+| **Skrypty** | Otwiera skrypty przetwarzania, gdy ta funkcja jest dostępna. |
+| **Szkolenie modelowe** | Otwiera dane treningowe i opcje modelu. |
+| **E-dokument** | Otwiera ustawienia dokumentów elektronicznych, jeśli są dostępne. Zobacz [Dokumenty elektroniczne](edi/README.md). |
+| **Podtypy dokumentów** | Otwiera ustawienia podtypów; zobacz [Podtypy Dokumentów](document-sub-types.md). |
 
-<figure><img src="../../../../.gitbook/assets/docbits_new_document_type_basic_info.png" alt="Docbits New Document Type Basic Info"><figcaption></figcaption></figure>
-
-**Podstawowe informacje:**
-
-* Wprowadź nazwę nowego typu dokumentu (np. "Faktura", "Umowa", "Raport").
-* Dodaj opis wyjaśniający cel i zastosowanie typu dokumentu.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Publish Button"><figcaption></figcaption></figure>
-
-**Format kwoty i daty**
-
-* Wprowadź format kwoty i daty
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_management_nav.png" alt="Docbits Script Management Nav"><figcaption></figcaption></figure>
-
-**Importuj Przykładowe Dokumenty**
-
-* Prześlij przykładowe dokumenty metodą przeciągnij i upuść
-* Do szkolenia należy przesłać co najmniej 10 dokumentów
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_list_enable_disable.png" alt="Docbits Script List Enable Disable"><figcaption><p>Prześlij i Szkol</p></figcaption></figure>
-
-**Dodaj Grupy**
-
-* Kliknij przycisk "Dodaj" i wprowadź nazwę grupy.
-* Możesz również sklonować istniejący typ dokumentu.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Pola i Grupy</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (163).png" alt="" width="279"><figcaption><p>Utwórz Nową Grupę</p></figcaption></figure>
-
-**Dodaj pola:**
-
-* Dodaj nowe pola, klikając "Dodaj".
-* Wprowadź nazwę pola (np. "Numer faktury", "Data", "Kwota") i typ danych (np. Tekst, Liczba, Data).
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Pola i Grupy</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="278"><figcaption><p>Utwórz Nowe Pole</p></figcaption></figure>
-
-**Zakończ**
-
-* Po wprowadzeniu wszystkich szczegółów kliknij "Zakończ", a nowy typ dokumentu zostanie utworzony
-
-<figure><img src="../../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
-
-### Edytuj istniejący typ dokumentu
-
-**Wybierz typ dokumentu:**
-
-* Wybierz typ dokumentu, który chcesz edytować, z listy istniejących typów dokumentów.
-* Pod typem dokumentu znajdziesz różne opcje edycji, na przykład edycję układu, pól, kolumn tabeli itp.
-
-<figure><img src="../../../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
-
-**Więcej Ustawień:**
-
-* Kliknij przycisk Edytuj obok typu dokumentu.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_elements_list.png" alt="Docbits Field Elements List"><figcaption><p>Więcej Ustawień</p></figcaption></figure>
-
-* Tutaj możesz wprowadzić dalsze ustawienia dla typu dokumentu, takie jak szablon projektu, czy dokument musi zostać zatwierdzony przed eksportem i wiele innych szczegółów.
-
-<figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
-
-### Zdefiniuj reguły ekstrakcji
-
-**Zdefiniuj reguły:**
-
-* Przejdź do sekcji Reguły Ekstrakcji.
-* Utwórz reguły określające sposób wyodrębniania danych z dokumentów. Może to obejmować użycie wyrażeń regularnych lub innych technik rozpoznawania wzorców.
-
-**Testuj reguły:**
-
-* Przetestuj reguły ekstrakcji na przykładowych dokumentach, aby upewnić się, że dane są poprawnie rozpoznawane i wyodrębniane.
-
-**Dostrajanie:**
-
-* Dostosuj reguły ekstrakcji na podstawie wyników testów, aby poprawić dokładność i wydajność.
-
-### Szkolenie i Dokumentacja
-
-**Poinformuj użytkowników:**
-
-* Poinformuj użytkowników o nowym lub zmienionym typie dokumentu i w razie potrzeby zapewnij szkolenie.
-
-**Dokumentacja:**
-
-Zaktualizuj dokumentację systemu, aby opisać nowe lub zmienione typy dokumentów i ich zastosowanie. Starannie konfigurując i zarządzając typami dokumentów w DocBits, możesz zapewnić, że dokumenty są poprawnie klasyfikowane i wydajnie przetwarzane. Poprawia to ogólną wydajność systemu zarządzania dokumentami i przyczynia się do dokładności i produktywności Twojej organizacji.
+Linki widoczne na karcie zależą od włączonych funkcji organizacji i od typu dokumentu. Otwórz odpowiednią sekcję, wprowadź tam zamierzoną zmianę i sprawdź przykładowy dokument w widoku walidacji, zanim użyjesz zaktualizowanego typu w normalnym przetwarzaniu.

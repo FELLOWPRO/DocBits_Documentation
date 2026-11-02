@@ -1,10 +1,18 @@
 # Analiza logowań
 
+## Samouczek wideo: Firma, subskrypcja i audyt
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/pl.mp4" %}
+Informacje o firmie, plan subskrypcji i dzienniki audytu w DocBits
+{% endembed %}
+
+Film pokazuje informacje i preferencje firmy, plan subskrypcji, aktywność logowania oraz dzienniki audytu.
+
 **Analiza logowań** zapewnia administratorom dostępny tylko do odczytu, obejmujący całą organizację widok tego, *kiedy* i *jak często* użytkownicy logują się do DocBits. Odpowiada na pytania takie jak „czy liczba logowań rośnie?”, „ilu różnych użytkowników było aktywnych w tym miesiącu?” oraz „kiedy występują szczyty użytkowania?” — bez ujawniania danych logowania ani danych osobowych poszczególnych użytkowników.
 
 > **Dostęp:** Otwórz **Ustawienia → Organizacja i dostęp → Użytkownicy** i kliknij przycisk **Analiza logowań** w prawym górnym rogu (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Strona Analiza logowań z wykresem aktywności i kartami podsumowania"><figcaption><p>Aktywność logowań w organizacji w wybranym okresie</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-pl.png" alt="Przegląd analizy logowania."><figcaption><p>Przegląd analizy logowania.</p></figcaption></figure>
 
 ## Zakres czasu
 

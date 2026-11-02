@@ -1,4 +1,4 @@
-# Workflow Builder
+# Edytor przepływów pracy
 
 ### Przegląd
 

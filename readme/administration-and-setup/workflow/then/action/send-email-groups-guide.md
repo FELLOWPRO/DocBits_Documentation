@@ -1,54 +1,72 @@
-# Send Email to Groups
+# Wyślij e-mail do grup
 
-Te karty trafiają do grupy **Then** w Kreatorze przepływów — akcje uruchamiane po spełnieniu warunków When/And:
+***
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty dodaje się do grupy <strong>Then</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
+Dodaj tę kartę do grupy **Wtedy** Kreatora przepływu pracy — akcje, które zostaną uruchomione po spełnieniu warunków Kiedy/I:
+
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pl.png" alt="Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Niezapisany przykład z kartami Kiedy, I oraz Wtedy. Uzupełnij wszystkie pola przed uruchomieniem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+
+***
+
+## 📌 Informacje o wersji
+
+**Stan:** ✅ Pojedyncza wersja (bez istotnych zmian) **Najnowsza wersja:** v1 (aktywna) **Uwaga:** Ta karta wykorzystuje model pojedynczej wersji z obsługą wielu języków za pomocą kluczy tłumaczeniowych.
+
+📖 [Kompletna baza danych kart](../../cards-overview/export-cards-guide.md)
+
+***
 
 ## Cel
-Ta karta automatycznie wysyła powiadomienia e-mail do grup użytkowników. Zamiast przypisywać pracę pojedynczym osobom, wysyłasz wiadomość do grupy, a wszyscy członkowie tej grupy ją otrzymują.
 
-**Rzeczywisty przykład:** Gdy przybywa faktura o wysokiej wartości, automatycznie wyślij powiadomienie e-mail do wszystkich w grupie "Finance Team", aby byli świadomi, że wymaga ona przeglądu.
+Ta karta automatycznie wysyła powiadomienia e-mail do grup użytkowników. Zamiast przydzielać pracę poszczególnym osobom, wysyłasz wiadomość do grupy i wszyscy członkowie tej grupy ją odbierają.
 
----
+**Przykład z życia wziętego:** Gdy otrzymana zostanie faktura o dużej wartości, automatycznie wyślij powiadomienie e-mailem do wszystkich osób w grupie „Zespół finansowy”, aby wiedzieli, że faktura wymaga sprawdzenia.
+
+***
 
 ## Kiedy używać tej karty
 
 Użyj tej karty, gdy musisz:
-- Powiadomić wiele osób jednocześnie
-- Wysyłać alerty do grup zespołów
-- Rozsyłać aktualizacje do działów
-- Powiadamiać grupy o zmianach statusu dokumentu
-- Wysyłać przypomnienia członkom grupy
+
+* Powiadom wiele osób jednocześnie
+* Wysyłaj alerty do grup zespołów
+* Przesyłaj aktualizacje do działów
+* Powiadamiaj grupy o zmianach statusu dokumentu
+* Wysyłaj przypomnienia członkom grupy
 
 **Typowe scenariusze:**
-- Powiadamianie zespołu zakupowego o nowych dostawcach
-- Alarmowanie zespołu finansowego o fakturach o wysokiej wartości
-- Powiadamianie zespołu magazynowego o wysyłkach
-- Rozsyłanie zmian statusu dokumentu
 
----
+* Powiadom zespół ds. zakupów o nowych dostawcach
+* Powiadom zespół finansowy o fakturach o dużej wartości
+* Powiadom zespół magazynowy o wysyłkach
+* Zmiany statusu dokumentu rozgłaszanego
+
+***
 
 ## Jak to działa
 
-1. **Sprawdzenie warunku**: Przepływ pracy sprawdza warunki "Where" i "And"
-2. **Przygotowanie e-maila**: System przygotowuje wiadomość e-mail przy użyciu szablonu
-3. **Pobranie członków grupy**: System znajduje wszystkich członków określonej grupy
-4. **Wysłanie**: Wiadomość e-mail jest wysyłana do każdego członka grupy
-5. **Rejestracja**: Wysłanie wiadomości e-mail jest rejestrowane
+1. **Kontrola stanu**: Przebieg pracy sprawdza warunki „Kiedy” i „I”
+2. **Przygotuj wiadomość e-mail**: System przygotowuje wiadomość e-mail przy użyciu szablonu
+3. **Pobierz członków grupy**: System znajduje wszystkich członków określonej grupy
+4. **Wyślij**: Wiadomość e-mail jest wysyłana do każdego członka grupy
+5. **Log**: Wysyłanie wiadomości e-mail jest rejestrowane
 
----
+***
 
-## Wyjaśnienie parametrów
+## Parametry wyjaśnione
 
-### Email Template
-Wiadomość e-mail do wysłania
+### Szablon e-maila
+
+Wiadomość e-mail, która ma zostać wysłana
 
 **Opcje:**
-- Wybierz spośród istniejących szablonów
-- Każdy szablon ma wstępnie zdefiniowany temat, treść i formatowanie
-- Szablony mogą zawierać symbole zastępcze takie jak {document_number}, {supplier_name}
+
+* Wybierz jeden z istniejących szablonów
+* Każdy szablon ma predefiniowany temat, treść i formatowanie
+* Szablony mogą zawierać elementy zastępcze, takie jak {document\_number}, {supplier\_name}
 
 **Przykładowy szablon:**
+
 ```
 Subject: Document {document_number} requires review
 
@@ -67,44 +85,51 @@ Best regards,
 DocBits Automation
 ```
 
-### Group
-Grupa użytkowników, do której zostanie wysłana wiadomość e-mail
+### Grupa
+
+Grupa użytkowników, do której ma zostać wysłana wiadomość e-mail
 
 **Przykładowe grupy:**
-- Finance Team
-- Procurement Team
-- Warehouse Team
-- Approval Committee
-- Management Group
 
----
+* Zespół Finansów
+* Zespół ds. zakupów
+* Zespół Magazynowy
+* Komitet zatwierdzający
+* Grupa Zarządzająca
+
+***
 
 ## Kroki konfiguracji
 
-### Krok 1: Wybierz szablon e-mail
-1. Kliknij "Select Email Template"
-2. Wybierz szablon z listy
-3. Zweryfikuj temat i treść
+### Krok 1: Wybierz szablon wiadomości e-mail
 
-### Krok 2: Wybierz grupę
-1. Kliknij "Select Group"
+1. Kliknij „Wybierz szablon wiadomości e-mail”
+2. Wybierz szablon z listy
+3. Sprawdź temat i treść
+
+### Krok 2: Wybierz Grupę
+
+1. Kliknij „Wybierz grupę”
 2. Wybierz grupę, którą chcesz powiadomić
 3. Zweryfikuj członków grupy (zwykle pokazuje liczbę)
 
 ### Krok 3: Ustaw warunki
-1. Dodaj warunek: "When [condition] is true"
-2. Przykład: "When invoice amount is greater than €5000"
+
+1. Dodaj warunek: „Kiedy \[warunek] jest prawdziwy”
+2. Przykład: „Kiedy kwota faktury przekracza 5000 EUR”
 
 ### Krok 4: Przetestuj
-1. Przetestuj z przykładowym dokumentem
-2. Zweryfikuj, czy wiadomość e-mail jest wysyłana do grupy
+
+1. Przetestuj na przykładowym dokumencie
+2. Sprawdź, czy e-maile są wysyłane do grupy
 3. Sprawdź renderowanie szablonu
 
----
+***
 
-## Przykłady szablonów e-mail
+## Przykłady szablonów e-maili
 
-### Szablon 1: Alert o fakturze o wysokiej wartości
+### Szablon 1: Powiadomienie o fakturze o wysokiej wartości
+
 ```
 Subject: High-Value Invoice Alert - {document_number}
 
@@ -126,6 +151,7 @@ Sent automatically by DocBits
 ```
 
 ### Szablon 2: Zmiana statusu dostawcy
+
 ```
 Subject: Supplier Status Update - {supplier_name}
 
@@ -146,6 +172,7 @@ Sent automatically by DocBits
 ```
 
 ### Szablon 3: Dokument gotowy do eksportu
+
 ```
 Subject: Document Approved for Export - {document_number}
 
@@ -164,16 +191,18 @@ Please proceed with export to {destination_system}.
 Sent automatically by DocBits
 ```
 
----
+***
 
 ## Typowe przypadki użycia
 
 ### Przypadek użycia 1: Alerty kontroli jakości
-**Wyzwalacz:** Gdy znaleziono rozbieżność między fakturą a PO
 
-**Grupa e-mail:** Quality Team
+**Wyzwalacz:** W przypadku wykrycia rozbieżności między fakturą a zamówieniem
+
+**Grupa e-mailowa:** Zespół ds. jakości
 
 **Treść:**
+
 ```
 Invoice {number} has quality issues:
 - Unit Price variance: 12% (exceeds 5% tolerance)
@@ -181,11 +210,13 @@ Invoice {number} has quality issues:
 ```
 
 ### Przypadek użycia 2: Powiadomienia o zatwierdzeniu
-**Wyzwalacz:** Gdy dokument osiąga określony status
 
-**Grupa e-mail:** Approval Committee
+**Wyzwalacz:** Gdy dokument osiągnie określony status
+
+**Grupa e-mailowa:** Komitet zatwierdzający
 
 **Treść:**
+
 ```
 Document {number} is awaiting approval:
 - Amount: {amount}
@@ -194,11 +225,13 @@ Document {number} is awaiting approval:
 ```
 
 ### Przypadek użycia 3: Powiadomienia o wyjątkach
+
 **Wyzwalacz:** Gdy warunki nie są spełnione
 
-**Grupa e-mail:** Managers
+**Grupa e-mailowa:** Menedżerowie
 
 **Treść:**
+
 ```
 Exception alert for document {number}:
 - Supplier code missing
@@ -207,69 +240,77 @@ Exception alert for document {number}:
 ```
 
 ### Przypadek użycia 4: Aktualizacje statusu
-**Wyzwalacz:** Gdy zmienia się status dokumentu
 
-**Grupa e-mail:** Zespół odpowiedzialny za następny krok
+**Wyzwalacz:** Kiedy zmienia się status dokumentu
+
+**Grupa e-mailowa:** Zespół odpowiedzialny za następny krok
 
 **Treść:**
+
 ```
 Document {number} status changed to: {status}
 Assigned to: {assigned_user}
 Next steps: {next_steps}
 ```
 
----
+***
 
 ## Rozwiązywanie problemów
 
-### "Email not received"
+### „Nie otrzymano e-maila”
 
 **Możliwe przyczyny:**
-- [ ] Użytkownicy w grupie nie mają adresów e-mail
-- [ ] Wiadomość e-mail zablokowana przez filtr spamu
-- [ ] Adres e-mail jest nieprawidłowy w grupie
-- [ ] Grupa nie ma członków
+
+* [ ] Użytkownicy w grupie nie mają adresów e-mail
+* [ ] E-mail zablokowany przez filtr spamu
+* [ ] Adres e-mail w grupie jest nieprawidłowy
+* [ ] Grupa nie ma członków
 
 **Rozwiązania:**
-1. Zweryfikuj, czy wszyscy członkowie grupy mają adresy e-mail
-2. Sprawdź folder spamu/wiadomości-śmieci
-3. Zweryfikuj, czy członkostwo w grupie jest poprawne
+
+1. Sprawdź, czy wszyscy członkowie grupy mają adresy e-mail
+2. Sprawdź folder spam/śmieci
+3. Sprawdź, czy członkostwo w grupie jest prawidłowe
 4. Dodaj użytkowników do grupy, jeśli ich brakuje
-5. Sprawdź z działem IT, czy usługa e-mail działa
+5. Sprawdź w dziale IT, czy usługa e-mail działa
 
-### "Template not rendering correctly"
+### „Szablon nie renderuje się poprawnie”
 
-**Przyczyna:** Nie znaleziono zmiennych symboli zastępczych
+**Przyczyna:** Nie znaleziono zmiennych zastępczych
 
 **Rozwiązanie:**
-- [ ] Zweryfikuj, czy nazwy pól są dokładnie zgodne
-- [ ] Sprawdź, czy pole ma wartość w dokumencie
-- [ ] Użyj poprawnego formatu symbolu zastępczego: {field_name}
-- [ ] Przetestuj z przykładowym dokumentem zawierającym wszystkie pola
 
-### "Some people getting email, others not"
+* [ ] Sprawdź, czy nazwy pól są dokładnie zgodne
+* [ ] Sprawdź, czy pole ma wartość w dokumencie
+* [ ] Użyj prawidłowego formatu symbolu zastępczego: {field\_name}
+* [ ] Przetestuj na przykładowym dokumencie zawierającym wszystkie pola
+
+### „Niektórzy ludzie otrzymują e-maile, inni nie”
 
 **Przyczyna:** Niekompletne członkostwo w grupie lub nieprawidłowe adresy e-mail
 
 **Rozwiązania:**
-- [ ] Zweryfikuj, czy wszyscy członkowie mają prawidłowy e-mail
-- [ ] Sprawdź, czy niektórzy użytkownicy zrezygnowali
-- [ ] Zweryfikuj, czy członkostwo w grupie jest aktualne
-- [ ] Skontaktuj się z działem IT w celu walidacji adresów e-mail
 
-### "Want to add/remove people from group"
+* [ ] Sprawdź, czy wszyscy członkowie mają ważny adres e-mail
+* [ ] Sprawdź, czy niektórzy użytkownicy zrezygnowali
+* [ ] Sprawdź, czy członkostwo w grupie jest aktualne
+* [ ] Skontaktuj się z działem IT, aby zweryfikować adresy e-mail
+
+### „Chcę dodać/usunąć osoby z grupy”
 
 **Rozwiązanie:**
-- Skontaktuj się ze swoim administratorem
-- Grupy są zarządzane w ustawieniach systemu
-- Nie można ich zmienić z tej karty
-- Poproś o zmiany w członkostwie grupy w dziale IT
 
----
+* Skontaktuj się ze swoim administratorem
+* Zarządzanie grupami odbywa się w ustawieniach systemu
+* Nie można zmienić tej karty
+* Poproś o zmiany w członkostwie grupy w IT
 
-## Dostosowywanie szablonu e-mail
+***
+
+## Dostosowywanie szablonu wiadomości e-mail
 
 ### Dostępne symbole zastępcze
+
 ```
 {document_number} - Document ID
 {invoice_number} - Invoice ID
@@ -287,52 +328,56 @@ Next steps: {next_steps}
 ```
 
 ### Tworzenie niestandardowych symboli zastępczych
-Jeśli potrzebujesz dodatkowych danych w wiadomościach e-mail:
+
+Jeżeli potrzebujesz dodatkowych danych w mailach:
+
 1. Skontaktuj się ze swoim administratorem
 2. Poproś o nowy symbol zastępczy
 3. Dodaj niezbędne pole do dokumentu
-4. Zaktualizuj szablon e-mail
+4. Zaktualizuj szablon wiadomości e-mail
 
----
+***
 
 ## Najlepsze praktyki
 
-✅ **Rób:**
-- Utrzymuj treść wiadomości e-mail zwięzłą i jasną
-- Uwzględnij elementy do działania (co powinni zrobić odbiorcy?)
-- Dołącz łącze lub instrukcje dostępu do dokumentu
-- Przetestuj szablon z przykładowymi danymi
-- Wysyłaj do właściwej grupy (nie powiadamiaj nadmiernie)
-- Używaj szablonów dla spójności
+✅ **Wykonaj:**
 
-❌ **Nie rób:**
-- Nie wysyłaj zbyt wielu wiadomości e-mail (zmęczenie powiadomieniami)
-- Nie dołączaj danych wrażliwych w wiadomościach e-mail
-- Nie wysyłaj do grup, które nie potrzebują informacji
-- Nie używaj niejasnych tematów
-- Nie zapominaj dołączyć informacji, jak podjąć działanie
-- Nie wysyłaj wiadomości e-mail do osób indywidualnych (zamiast tego użyj grupy)
+* Treść wiadomości e-mail powinna być krótka i jasna
+* Uwzględnij elementy działania (co powinni zrobić odbiorcy?)
+* Dołącz link lub instrukcje umożliwiające dostęp do dokumentu
+* Szablon testowy z przykładowymi danymi
+* Wyślij do właściwej grupy (nie powiadamiaj nadmiernie)
+* Aby zachować spójność, użyj szablonów
 
----
+❌ **Nie:**
+
+* Wysyłaj zbyt wiele e-maili (zmęczenie powiadomieniami)
+* Dołącz wrażliwe dane do wiadomości e-mail
+* Wyślij do grup, które nie potrzebują informacji
+* Używaj niejasnych tematów
+* Zapomnij o podaniu sposobu podjęcia działań
+* Wysyłaj e-maile do poszczególnych osób (zamiast tego użyj grupy)
+
+***
 
 ## Uwagi dotyczące wydajności
 
-- Każda wiadomość e-mail trwa ~1 sekundę na wysłanie
-- Duże grupy mogą zająć czas (100 osób = ~100 sekund)
-- Nie twórz pętli wysyłających tysiące wiadomości e-mail
-- Monitoruj pojemność usługi e-mail
-- Rozważ grupowanie w razie wielu dokumentów
+* Wysłanie każdego e-maila trwa \~ 1 sekundę
+* Duże grupy mogą zająć trochę czasu (100 osób = \~100 sekund)
+* Nie twórz pętli, które wysyłają tysiące e-maili
+* Monitoruj wydajność usług e-mail
+* W przypadku wielu dokumentów należy rozważyć połączenie wsadowe
 
----
+***
 
 ## Powiązane karty
 
-- **ACTION_SEND_EMAIL** - Wyślij do osoby indywidualnej
-- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Przypisz zadanie zamiast tylko powiadamiać
-- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Utwórz zadanie i powiadom
-- **STAUS_CHANGE** - Zmień status i powiadom
+* **ACTION\_SEND\_EMAIL** - Wyślij do konkretnej osoby
+* **ACTION\_ASSIGN\_TASK\_TO\_PROCUREMENT\_GROUP** – Przypisz zadanie zamiast po prostu powiadamiać
+* **ACTION\_CREATE\_TASK\_FOR\_GROUP\_SEQUENTIAL** - Utwórz zadanie i powiadom
+* **STAUS\_CHANGE** – Zmień status i powiadom
 
----
+***
 
 ## Typowy przykład przepływu pracy
 
@@ -350,21 +395,16 @@ Send Email to Procurement Team
 Workflow Continues
 ```
 
----
+***
 
 ## Często zadawane pytania
 
-**P: Czy mogę wysyłać do wielu grup?**
-O: Utwórz oddzielne karty dla każdej grupy
+**P: Czy mogę wysyłać do wielu grup?** O: Utwórz osobne karty dla każdej grupy
 
-**P: Co się stanie, jeśli czyjaś wiadomość e-mail zostanie odbita?**
-O: Wiadomość e-mail jest rejestrowana jako nieudana, dział IT może rozwiązać problem
+**Q: Co się stanie, jeśli czyjś e-mail zostanie odesłany?** O: E-mail zostanie zarejestrowany jako nieudany, dział IT może rozwiązać problem
 
-**P: Czy mogę zmienić szablon e-mail?**
-O: Skontaktuj się ze swoim administratorem, aby zmodyfikować szablony
+**Q: Czy mogę zmienić szablon wiadomości e-mail?** O: Skontaktuj się z administratorem, aby zmodyfikować szablony
 
-**P: Czy mogę wysyłać na podstawie warunków?**
-O: Tak! Użyj warunków "Where" i "And", aby kontrolować, kiedy wysyłane są wiadomości e-mail
+**Q: Czy mogę wysłać na określonych warunkach?** O: Tak! Użyj warunków „Kiedy” i „I”, aby kontrolować, kiedy wysyłane są e-maile
 
-**P: Skąd mam wiedzieć, czy wiadomość e-mail została odebrana?**
-O: Sprawdź dzienniki e-mail w DocBits, aby uzyskać status wysyłania
+**Q: Skąd mam wiedzieć, czy e-mail został odebrany?** O: Sprawdź dzienniki e-maili w DocBits pod kątem statusu wysyłania

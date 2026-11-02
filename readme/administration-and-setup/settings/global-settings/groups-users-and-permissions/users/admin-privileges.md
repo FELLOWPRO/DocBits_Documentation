@@ -8,7 +8,7 @@ Rola administratora jest kluczowa w zarządzaniu systemami IT, sieciami i platfo
 
 Oprócz tych zadań administratorzy zajmują się również zarządzaniem wrażliwymi ustawieniami oraz zapewnieniem, że systemy spełniają wymagania zgodności i najlepsze praktyki w zakresie bezpieczeństwa informacji. Obejmuje to zarządzanie danymi wrażliwymi, konfigurowanie kontroli dostępu i uprawnień oraz monitorowanie i analizowanie dzienników systemowych w celu identyfikacji i usunięcia potencjalnych zagrożeń bezpieczeństwa.
 
-## Admin vs System Admin
+## Administrator i administrator systemu
 
 DocBits ma dwie role administratora: **Admin** i **System Admin**. Brzmią podobnie, ale pełnią różne zadania. Oto prosta wersja.
 

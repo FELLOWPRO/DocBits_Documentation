@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Order Type of Purchase Order
+# Typ zamówienia zakupu
 
-<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_check_order_type_in_po_v2-pl-pl.png" alt="Typ zamówienia zakupu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel**:
 
@@ -13,10 +13,10 @@ Ta karta DocBits umożliwia weryfikację typu zamówienia w zamówieniu zakupu, 
 ## **Funkcjonalność**:
 
 * **Order Type Comparison**: Ta karta porównuje typ zamówienia w zamówieniu zakupu z określoną wartością, umożliwiając użytkownikom weryfikację, czy typ zamówienia spełnia określone warunki.
-* **Any/All Selection**: Użytkownicy mogą zdecydować się na zastosowanie porównania do **any** (przynajmniej jeden wybrany typ zamówienia jest zgodny) lub **all** (wszystkie wybrane typy zamówień są zgodne) określonych typów zamówień.
-* **Operator**: Użytkownicy mogą ustawić warunki porównania typu zamówienia w zamówieniu zakupu. Dostępne operatory obejmują:
-  * **Equals (=)**: Potwierdza, że typ zamówienia w zamówieniu zakupu odpowiada określonemu typowi.
-  * **Not Equal (≠)**: Zapewnia, że typ zamówienia w zamówieniu zakupu nie odpowiada określonemu typowi.
+* **Dowolny/wszystki wybór**: Użytkownicy mogą zdecydować się na zastosowanie porównania do **any** (przynajmniej jeden wybrany typ zamówienia jest zgodny) lub **all** (wszystkie wybrane typy zamówień są zgodne) określonych typów zamówień.
+* **Operatora**: Użytkownicy mogą ustawić warunki porównania typu zamówienia w zamówieniu zakupu. Dostępne operatory obejmują:
+  * **Równa się (=)**: Potwierdza, że typ zamówienia w zamówieniu zakupu odpowiada określonemu typowi.
+  * **Nierówne (≠)**: Zapewnia, że typ zamówienia w zamówieniu zakupu nie odpowiada określonemu typowi.
 
 ## **Zastosowanie**:
 
@@ -24,6 +24,6 @@ Ta karta jest szczególnie cenna dla zespołów zakupowych, planistów zapasów 
 
 ## **Przykładowy scenariusz**:
 
-* Zamówienie zakupu jest sklasyfikowane jako "IGR". System używa operatora "Equals", aby zweryfikować, że ten typ zamówienia jest zgodny z zamierzoną klasyfikacją do przetwarzania.&#x20;
+* Zamówienie zakupu jest sklasyfikowane jako "IGR". System używa operatora "Equals", aby zweryfikować, że ten typ zamówienia jest zgodny z zamierzoną klasyfikacją do przetwarzania.
 
 Korzystając z karty "Compare with Purchase Order: Order Type", organizacje mogą zautomatyzować walidację typów zamówień, zapewniając spójność priorytetów przetwarzania i redukując ręczne błędy klasyfikacji.

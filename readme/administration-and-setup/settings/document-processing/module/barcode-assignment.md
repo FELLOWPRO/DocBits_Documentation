@@ -14,7 +14,7 @@ Po włączeniu ustawienia na pasku narzędzi po prawej stronie **ekranu walidacj
 
 Oto ikona w kontekście ekranu walidacji, obok przeglądanego dokumentu:
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Ekran walidacji z dostępną ikoną kodu kreskowego"><figcaption><p>Ekran walidacji — ikona kodu kreskowego (wyróżniona, pasek narzędzi po prawej) jest wyświetlana tylko wtedy, gdy Przypisanie na podstawie kodu kreskowego jest włączone.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen-pl.png" alt="Walidacja fikcyjnej faktury z kodem kreskowym i kodem QR."><figcaption><p>Walidacja fikcyjnej faktury z kodem kreskowym i kodem QR.</p></figcaption></figure>
 
 ### Jak odczytywane są kody kreskowe
 
@@ -32,15 +32,15 @@ To, które typy kodów kreskowych są wykrywane, określa ustawienie **Bar-Code 
 2. Kliknij **ikonę kodu kreskowego** na pasku narzędzi po prawej stronie.
 3. Okno dialogowe **Przypisanie na podstawie kodu kreskowego** wyświetla każdy kod kreskowy wykryty przez DocBits w dokumencie, pokazany jako `Barcode <n> : <wartość>`.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Okno dialogowe Przypisanie na podstawie kodu kreskowego z wykrytymi kodami"><figcaption><p>Okno dialogowe Przypisanie na podstawie kodu kreskowego wyświetla każdy wykryty kod z listą rozwijaną do wyboru pola docelowego.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog-pl.png" alt="Przypisywanie odczytanych kodów kreskowych do pól dokumentu."><figcaption><p>Przypisywanie odczytanych kodów kreskowych do pól dokumentu.</p></figcaption></figure>
 
 4. Dla każdego kodu kreskowego otwórz jego listę rozwijaną i wybierz pole, do którego ma trafić wartość.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Wybór pola docelowego dla kodu kreskowego"><figcaption><p>Każdy kod kreskowy można przypisać do dowolnego pola dokumentu — np. Numer zamówienia, Numer faktury, ID dostawcy.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options-pl.png" alt="Dostępne pola w oknie przypisywania kodów kreskowych."><figcaption><p>Dostępne pola w oknie przypisywania kodów kreskowych.</p></figcaption></figure>
 
 5. Gdy tylko wybierzesz pole, zostaje ono wypełnione wartością kodu kreskowego.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Kod kreskowy przypisany do pola Numer zamówienia"><figcaption><p>Po wybraniu pola (tutaj Numer zamówienia) pole zostaje wypełnione wartością kodu kreskowego.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-pl.png" alt="Niezapisane przypisanie do pola zamówienia zakupu."><figcaption><p>Niezapisane przypisanie do pola zamówienia zakupu.</p></figcaption></figure>
 
 ### Jak włączyć
 

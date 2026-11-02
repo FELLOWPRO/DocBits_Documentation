@@ -8,13 +8,15 @@ The **PO Shipment Order** section provides a breakdown of delivery and invoicing
 
 To activate this feature:
 
-1. Go to **Settings** → **Document Processing** → **Module**.
-2. Select **Purchase Order**.
+1. Go to **Settings** → **Module**.
+2. Open the **Purchase Order** section (*PO Matching & Validation*).
 3.  Enable the **PO Shipment Order** option.\
     \
 
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/PO-Shipment-Order-Setting.jpg" alt="PO Shipment Order setting with the toggle switched on" width="563"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/po-shipment-order-module-setting.png" alt="Purchase Order section in Settings → Module with the PO Shipment Order switch" width="563"><figcaption><p>Settings → Module → Purchase Order</p></figcaption></figure></div>
+
+The same section holds two related switches: **PO dashboard** adds a Purchase Order dashboard to the navigation, and **Shipment Order Dashboard** adds a Shipment Order dashboard that lists incoming deliveries per Purchase Order item.
 
 ## **Where It Appears**
 

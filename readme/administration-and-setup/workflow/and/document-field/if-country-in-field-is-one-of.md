@@ -1,6 +1,6 @@
 # Se il Paese nel campo è Uno di
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-it-it.png" alt="Se il Paese nel campo è Uno di, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 Utilizzare questa condizione quando un passaggio di elaborazione aggiuntivo deve applicarsi ai documenti di determinati paesi, ad esempio Germania e Francia. La scheda confronta il paese letto da un campo del documento con un elenco di paesi configurato.
 

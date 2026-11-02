@@ -40,7 +40,7 @@ Il risultato dimostrato prova che la configurazione del campo è stata salvata e
 
 ## Regole di convalida personalizzate
 
-Laddove questa funzione è disponibile, apri le regole di convalida del tipo di documento. Per riutilizzare una regola esistente, segui [Duplicare una regola di convalida personalizzata](duplicate-a-custom-validation-rule.md). Questo è separato dale singole impostazioni dei campi mostrati nel video.
+Laddove questa funzione è disponibile, apri le regole di convalida del tipo di documento. Per riutilizzare una regola esistente, segui [Duplicare una regola di convalida personalizzata](duplicate-a-custom-validation-rule.md). Questo è separato dalle singole impostazioni dei campi mostrati nel video.
 
 ## Creare un tipo di documento personalizzato
 

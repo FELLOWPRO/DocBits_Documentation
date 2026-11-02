@@ -1,68 +1,20 @@
 # FAQ per Amministratori di WatchDog e Risoluzione dei Problemi
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-it.svg" alt="Diagnosi dei problemi di importazione, esportazione e connessione di WatchDog."><figcaption><p>Diagnosi dei problemi di importazione, esportazione e connessione di WatchDog.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-it.svg" alt="Diagnosi indicativa di importazione, esportazione e connessione. Dopo la correzione verifica la ripresa nei registri; il diagramma non garantisce una riattivazione automatica."><figcaption><p>Diagnosi indicativa di importazione, esportazione e connessione. Dopo la correzione verifica la ripresa nei registri; il diagramma non garantisce una riattivazione automatica.</p></figcaption></figure>
 
 Questa documentazione aiuta gli amministratori a comprendere i messaggi di errore di WatchDog e a risolvere i problemi.
 
-**Posizione nell'interfaccia:** Settings → Document Processing → WatchDog
+**Posizione nell’interfaccia:** Impostazioni → WatchDog.
 
----
+## 1. Viste per la diagnosi
 
-## 1. Pagine delle Impostazioni di WatchDog (Interfaccia)
+Le schede effettive sono **Generale**, **Configurazioni**, **Registri** e **Modelli XSLT**. Generale contiene anche lo stato e l’ultimo contatto; Registri consente di esaminare gli eventi disponibili. Le configurazioni di importazione ed esportazione appartengono a Configurazioni.
 
-### 1.1 Scheda General
+<figure><img src="../../../.gitbook/assets/native-watchdog-general-safe-it-20261023.png" alt="Scheda Generale di WatchDog nello stato esistente FUORI LINEA. Chiave API, comandi specifici dell’account e percorso di installazione sono nascosti. La versione proposta per il download non dimostra la versione installata o in esecuzione. Nessun comando o servizio è stato avviato."><figcaption><p>Scheda Generale di WatchDog nello stato esistente FUORI LINEA. Chiave API, comandi specifici dell’account e percorso di installazione sono nascosti. La versione proposta per il download non dimostra la versione installata o in esecuzione. Nessun comando o servizio è stato avviato.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Scheda General di WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/native-watchdog-logs-it-20261023.png" alt="Scheda Registri con il periodo selezionato Ultime 48 ore. È un filtro della vista, non una promessa sulla conservazione o sulla frequenza universale degli eventi. Nessun risultato dimostra da solo lo stato del servizio."><figcaption><p>Scheda Registri con il periodo selezionato Ultime 48 ore. È un filtro della vista, non una promessa sulla conservazione o sulla frequenza universale degli eventi. Nessun risultato dimostra da solo lo stato del servizio.</p></figcaption></figure>
 
-* **Download:** Scarica l'ultima versione di WatchDog.exe
-* **API Key:** Copia il comando di configurazione
-* **Auto-Update Schedule:** Configura la frequenza degli aggiornamenti
-* **Installation Guide:** Istruzioni di configurazione passo dopo passo
-
-### 1.2 Scheda Configurations
-
-* **Import Configurations:** Definiscono le cartelle da monitorare e i tipi di documento
-* **Export Configurations:** Definiscono le destinazioni e i metodi di esportazione
-* **Bulk Copy:** Copia le configurazioni tra le sub-organizzazioni
-* **Import/Export:** Importa/esporta le configurazioni come JSON
-
-> **Importante:** Le configurazioni di esportazione ora **richiedono un tipo di documento** (`doc_type`). Le configurazioni senza un tipo di documento valido verranno rifiutate.
-
-### 1.3 Scheda Status
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="Stato del servizio WatchDog"><figcaption></figcaption></figure>
-
-* Mostra in tempo reale lo stato di connessione di WatchDog
-* **Nuovi campi:** `last_restart`, `version_first_seen`, `latest_version_checked_at`
-* **Informazioni di sistema:** percorso di installazione, RAM libera, spazio libero su disco
-
-### 1.4 Scheda Logs
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="Log di WatchDog"><figcaption></figcaption></figure>
-
-* Mostra tutti gli eventi di WatchDog provenienti da OpenSearch
-* Filtrabile per tipo di evento, periodo di tempo, ecc.
-* **Tipi di evento:**
-  * `FILE_IMPORT_STARTED`: Importazione del file avviata
-  * `FILE_IMPORT_COMPLETED`: Importazione riuscita
-  * `FILE_IMPORT_FAILED`: Importazione non riuscita
-  * `EXPORT_STARTED`: Esportazione avviata
-  * `EXPORT_COMPLETED`: Esportazione riuscita
-  * `EXPORT_FAILED`: Esportazione non riuscita
-  * `FOLDER_VALIDATION_FAILED`: Cartella non raggiungibile
-  * `CONFIG_LOADED`: Configurazione caricata
-  * `SERVICE_RESTART_INITIATED`: Riavvio del servizio richiesto
-  * `SERVICE_RESTART_COMPLETED`: Servizio riavviato
-
-### 1.5 Scheda XSLT Templates
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Elenco dei template XSLT"><figcaption></figcaption></figure>
-
-* Carica e gestisci i template di trasformazione XSLT
-* Validazione in tempo reale con analisi dei campi
-* Collega i template alle configurazioni di esportazione
-
----
+Confronta versione installata, ora del problema, identità dell’account di servizio e configurazione interessata. Non applicare una soglia di heartbeat o un intervallo di scansione di un’altra versione come regola universale.
 
 ## 2. Messaggi di Errore di Validazione delle Cartelle
 
@@ -86,7 +38,7 @@ Questa documentazione aiuta gli amministratori a comprendere i messaggi di error
 | Errore | Significato | Soluzione |
 | :--- | :--- | :--- |
 | `file_not_found` | Il file è stato eliminato prima dell'importazione | Fornisci di nuovo il file |
-| `invalid_file_type` | Sono supportati solo file PDF | Rimuovi gli altri tipi di file |
+| `invalid_file_type` | Formato non accettato dal percorso di importazione | Verifica i formati ammessi dal pacchetto e dalla configurazione |
 | `api_not_accessible` | API di DocBits non raggiungibile | Controlla rete/firewall, verifica l'URL dell'API |
 | `api_check_failed` | Controllo di integrità dell'API non riuscito | Controlla l'API Key e la connessione |
 | `upload_failed` | Caricamento verso l'API non riuscito | Controlla API Key, rete, stato del server |
@@ -121,7 +73,7 @@ Quando una configurazione viene disabilitata, compare uno di questi motivi:
 | `Success folder: not_found` | La cartella dei successi non esiste |
 | `Success folder: no_write_access` | La cartella dei successi non è scrivibile |
 
-**Riattivazione automatica:** WatchDog controlla regolarmente le cartelle (ogni 60 secondi). Non appena la cartella torna raggiungibile, la configurazione viene riattivata automaticamente.
+**Ricontrollo delle cartelle:** intervallo e riattivazione dipendono dal pacchetto e dalla configurazione. Dopo aver risolto accesso e permessi, verifica nei registri che la configurazione sia stata effettivamente riattivata e che un nuovo tentativo riesca.
 
 ---
 
@@ -147,7 +99,7 @@ Original Path: C:\WatchDog\Import\invoice_001.pdf
 
 ## 7. Heartbeat e Stato della Connessione
 
-WatchDog invia un heartbeat a DocBits ogni ~10 secondi con le informazioni di sistema:
+WatchDog comunica il proprio stato a DocBits. Frequenza e campi dipendono dalla versione; i dati possono comprendere:
 
 | Dati inviati | Descrizione |
 | :--- | :--- |
@@ -164,7 +116,7 @@ WatchDog invia un heartbeat a DocBits ogni ~10 secondi con le informazioni di si
 | Stato | Significato |
 | :--- | :--- |
 | ✅ **Online** | WatchDog è connesso e attivo |
-| ⚠️ **Offline** | Nessun heartbeat da oltre 30 secondi |
+| ⚠️ **Offline** | Contatto non recente secondo la logica della versione in uso |
 | ❌ **Not Installed** | WatchDog non si è mai connesso |
 
 **Errori di heartbeat:**
@@ -180,7 +132,7 @@ WatchDog invia un heartbeat a DocBits ogni ~10 secondi con le informazioni di si
 ### Problema: WatchDog non importa i file
 
 1. Controlla se il servizio è in esecuzione: `services.msc` → WatchDog
-2. Controlla i log: Impostazioni → WatchDog → Scheda Log
+2. Controlla i log: Impostazioni → WatchDog → scheda Registri
 3. Controlla i permessi delle cartelle per l'account di servizio di WatchDog
 4. Testa la connessione API: `WatchDog.exe debug` nel CMD
 5. Verifica che il tipo di file sia PDF
@@ -198,14 +150,14 @@ WatchDog invia un heartbeat a DocBits ogni ~10 secondi con le informazioni di si
 1. Il percorso della cartella esiste?
 2. Permessi per `NT AUTHORITY\LOCAL SERVICE` o per l'account di servizio?
 3. L'unità di rete è raggiungibile? (Controlla i percorsi UNC)
-4. WatchDog si riattiverà automaticamente quando le cartelle tornano disponibili
+4. Dopo il ripristino verifica la riattivazione effettiva nei registri
 
 ### Problema: La trasformazione XSLT non riesce
 
-1. Il template XSLT è valido? (usa XSLT Templates Tab → Validate)
+1. Il template XSLT è valido? (usa la validazione disponibile in Modelli XSLT)
 2. Il template è adatto al tipo di documento?
 3. Controlla la struttura XML del documento
-4. L'esportazione in cartella V3 usa la trasformazione lato server — controlla la connettività API
+4. Se il percorso della tua versione usa una trasformazione lato server, controlla la connettività API
 
 ### Problema: L'esportazione REST API non riesce
 
@@ -264,4 +216,6 @@ INFO  - 2026-03-26 10:00:00 - module_name - Message - function=func_name - line=
 
 **Livello di log:** DEBUG, INFO, WARNING, ERROR
 
-**Log remoti:** WatchDog invia i log anche a DocBits (visualizzabili nella scheda Logs) e, facoltativamente, al servizio di logging cloud Logtail.
+**Log remoti:** WatchDog invia i log anche a DocBits (visualizzabili nella scheda Registri) e, facoltativamente, al servizio di logging cloud Logtail.
+
+I codici, i comandi e i percorsi sono riferimenti tecnici da confrontare con il pacchetto effettivo. Le immagini mostrano uno stato FUORI LINEA esistente: questa verifica non ha risolto o riprodotto un guasto del servizio, né eseguito comandi o modifiche.

@@ -1,89 +1,40 @@
 ---
-description: Come configurare PowerBI
+description: Collegare Power BI a ClickHouse con il connettore e il driver appropriati
 ---
 
 # Collegamento tramite ClickHouse
 
-Questa guida ti accompagna nel collegamento di **ClickHouse** a **Power BI Desktop** tramite il **driver ODBC**. Copre l'installazione del driver, la configurazione ODBC, l'integrazione con Power BI e l'impostazione dell'aggiornamento dei dati.
+Usa questa guida quando l’organizzazione dispone dell’accesso diretto a **ClickHouse** e un amministratore ha fornito i parametri autorizzati. Non usare i parametri dell’[accesso PostgreSQL in sola lettura](connect-via-read-only-database.md): si tratta di una sorgente distinta.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
 {% endembed %}
 
-#### 1. Installa il driver ODBC di ClickHouse
+## 1. Verificare la disponibilità di ClickHouse
 
-* Scarica il **driver ODBC di ClickHouse** più recente da:
-  * [ClickHouse GitHub - clickhouse-odbc](https://github.com/ClickHouse/clickhouse-odbc)
-* Esegui il programma di installazione e segui la procedura guidata.
+Apri **Impostazioni → Modulo**, quindi **Cruscotto AI → Configurazione dell’analisi AI**. Verifica con l’amministratore la disponibilità di **Accesso diretto a Clickhouse** e i requisiti della tua installazione.
 
-#### 2. Configura l'origine dati ODBC
+<figure><img src="../../.gitbook/assets/native-ai-dashboard-warehouse-access-it-20261023.png" alt="Configurazione dell’analisi AI con Magazzino documenti AI, Accesso diretto a Clickhouse e Statistiche dei fornitori. Nell’organizzazione di prova tutti e tre i controlli sono disattivati e non sono mostrate credenziali. Nessuna funzione è stata attivata né connessione eseguita."><figcaption><p>Configurazione dell’analisi AI con Magazzino documenti AI, Accesso diretto a Clickhouse e Statistiche dei fornitori. Nell’organizzazione di prova tutti e tre i controlli sono disattivati e non sono mostrate credenziali. Nessuna funzione è stata attivata né connessione eseguita.</p></figcaption></figure>
 
-* Apri **ODBC Data Source Administrator (64-bit)** dal Pannello di controllo o dalla ricerca di Windows.
-* Vai alla scheda **System DSN** e fai clic su **Add**.
-* Seleziona **ClickHouse ODBC Driver** dall'elenco e fai clic su **Finish**.
-*   Compila i campi richiesti. Le informazioni necessarie si trovano in:
+La schermata documenta lo stato esistente, non un accesso ClickHouse funzionante. Se la funzione non è disponibile, chiarisci con l’amministratore abilitazione, autorizzazioni e condizioni prima di configurare Power BI.
 
-    **DocBits** → **Impostazioni** → **Elaborazione documenti** → **Modulo** → **AI Cruscotto** → **ClickHouse Accesso diretto**
+## 2. Installare il driver
 
-    <figure><img src="../../.gitbook/assets/clickhouse_direct_access_settings.png" alt="Impostazioni ClickHouse Direct Access in DocBits"><figcaption></figcaption></figure>
+Installa il [driver ODBC ufficiale ClickHouse](https://github.com/ClickHouse/clickhouse-odbc) con architettura compatibile con Power BI Desktop e le dipendenze richieste. Usa server, porta, database, nome utente, password e impostazioni TLS forniti per la sorgente ClickHouse; non copiare credenziali di esempio.
 
-    **Campi obbligatori:**
+## 3. Scegliere il percorso di connessione
 
-    * **Name**: un nome per la connessione (ad es. `ClickHouse_Prod`)
-    * **Description**: una breve descrizione per tua comodità (facoltativa)
-    * **Host**: copia il valore host da DocBits
-    * **Port**: copia il valore della porta da DocBits
-    * **Database**: copia il nome del database da DocBits
-    * **Username**: copia il nome utente da DocBits
-    * **Password**: copia la password da DocBits
+Nelle versioni di Power BI Desktop che lo supportano, il connettore **ClickHouse** consente **Importazione** o **DirectQuery** e richiede il driver indicato dalla documentazione ClickHouse. Scegli **Recupera dati → ClickHouse**, fornisci i parametri richiesti e seleziona la modalità appropriata al report.
 
-#### 3. Collega ClickHouse a Power BI
+In alternativa, per il percorso ODBC generico crea un DSN ClickHouse nel gestore ODBC di Windows, poi scegli **Recupera dati → ODBC** e quel DSN. Questo percorso descritto qui usa l’**importazione**; non attribuire DirectQuery al connettore ODBC generico.
 
-* Apri **Power BI Desktop**.
-* Seleziona **Get Data** → **ODBC** → **Connect**.\
+I campi e i requisiti dipendono dalle versioni installate. Segui la [guida ufficiale ClickHouse per Power BI](https://clickhouse.com/docs/integrations/connectors/data-visualization/powerbi-and-clickhouse), compresi i requisiti del gateway per il servizio Power BI.
 
+## 4. Controllare i dati e creare il report
 
-  <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI Get Data ODBC"><figcaption></figcaption></figure>
-* Dall'elenco DSN seleziona l'origine che hai configurato (ad es. `ClickHouse_Prod`).\
+Seleziona soltanto tabelle o viste autorizzate. In modalità importazione, carica i dati o trasformali in Power Query. Verifica tipi di dati, date, conteggi e un campione rispetto alla sorgente prima di creare visualizzazioni e misure. Le vecchie immagini di report con nomi aziendali non verificati sono state rimosse.
 
+## 5. Pubblicazione e aggiornamento
 
-  <figure><img src="../../.gitbook/assets/powerbi_select_dsn.png" alt="Selezione del DSN in Power BI"><figcaption></figcaption></figure>
-* Fai clic su **OK**. Se richiesto, inserisci di nuovo le credenziali.
+La connessione nel servizio richiede una configurazione di rete e gateway coerente con il connettore usato. Per i dati importati, l’aggiornamento pianificato dipende dalla licenza o capacità dell’area di lavoro e dalla sorgente. DirectQuery interroga la sorgente e non segue lo stesso caricamento periodico dei dati importati.
 
-#### 4. Carica e trasforma i dati
-
-* Nel pannello **Navigator** sfoglia e seleziona le tabelle o le viste da importare.
-* Scegli:
-  * **Load**: per importare direttamente
-  * **Transform Data**: per aprire Power Query e modellare i dati\
-
-
-  <figure><img src="../../.gitbook/assets/powerbi_navigator_load_transform.png" alt="Navigator di Power BI con Load e Transform Data"><figcaption></figcaption></figure>
-
-#### 5. Visualizza i tuoi dati
-
-* Utilizza l'area di lavoro dei report per creare le visualizzazioni.
-* Trascina i campi, aggiungi filtri dinamici (slicer), scegli i tipi di grafico e usa espressioni **DAX** secondo necessità.
-* &#x20;Sfrutta **Power Query Editor** per pulire o ruotare (pivot) i dati ClickHouse prima di creare le visualizzazioni.
-* Documentazione di PowerBI: [https://learn.microsoft.com/en-us/power-bi/](https://learn.microsoft.com/en-us/power-bi/)
-
-#### 6. Abilita l'aggiornamento pianificato (facoltativo)
-
-L’aggiornamento pianificato dipende dalla licenza o capacità dell’area di lavoro, dal connettore e dalla modalità di connessione. Per questa connessione ODBC, configurare un gateway raggiungibile con driver, DSN e credenziali appropriati. Verificare i requisiti attuali nella documentazione ufficiale.
-
-* Per mantenere i tuoi report sincronizzati con ClickHouse:
-* Pubblica il tuo file `.pbix` su **Power BI Service**.
-* Installa il **Power BI Gateway** (modalità Standard) su una macchina con accesso di rete a ClickHouse.
-* In servizio Power BI:
-  * Vai al tuo dataset → **Impostazioni** → **Aggiornamento pianificato**
-  * Associa il tuo DSN e fornisci le credenziali
-* Ulteriori informazioni [qui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
-
-#### 7. Esempi di dashboard e viste dati&#x20;
-
-<div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Esempio di dashboard Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Esempio di dashboard Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Esempio di dashboard Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Esempio di dashboard Power BI 4"><figcaption></figcaption></figure></div>
-
-[Documentazione ufficiale — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
-
-[Documentazione ufficiale — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
-
-[Documentazione ufficiale — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
+Controlla la [documentazione Microsoft sull’aggiornamento pianificato](https://learn.microsoft.com/it-it/power-bi/connect-data/refresh-scheduled-refresh) e prova il percorso scelto prima dell’uso operativo. Durante questa verifica non sono stati installati driver, creati DSN, eseguite query o pubblicati report.

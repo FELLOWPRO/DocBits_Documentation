@@ -1,6 +1,8 @@
 # Crea una nuova attività e assegnala all'utente nel campo documento
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f325db80cf3-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v1-it-it.png" alt="Crea una nuova attività e assegnala all&#x27;utente nel campo documento, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v3-it-it.png" alt="Crea una nuova attività e assegnala all&#x27;utente nel campo documento, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
 ## **Scopo:**
 

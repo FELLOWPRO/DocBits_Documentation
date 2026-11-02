@@ -1,22 +1,15 @@
-# Model Training
+# Trenowanie modelu
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_training_overview.png" alt="Docbits Model Training Overview"><figcaption></figcaption></figure>
+Ten widok służy do zarządzania przykładami i sprawdzania klasyfikacji według typu dokumentu. Nie jest edytorem pól ekstrakcji.
 
-#### Overview
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_model_training_overview-pl.png" alt="Przegląd trenowania modelu w polskim interfejsie. Etykieta Model pociągu oznacza tutaj trenowanie modelu klasyfikacji; nagłówki Name i Actions pozostają angielskie."><figcaption><p>Przegląd trenowania modelu w polskim interfejsie. Etykieta Model pociągu oznacza tutaj trenowanie modelu klasyfikacji; nagłówki Name i Actions pozostają angielskie.</p></figcaption></figure>
 
-Model Training allows administrators to oversee and manage the training of machine learning models specific to each document type. By providing a structured interface for importing sample data, training models, and testing their performance, Docbits ensures that its data extraction capabilities continuously improve over time.
+## Liczniki i działania
 
-#### Key Features and Options
+U góry znajdują się przykłady, wyeksportowane dokumenty oraz liczniki organizacji i globalne. Interpretuj je z uwzględnieniem tego zakresu.
 
-1. **Metrics Overview**:
-   * **Sample**: Number of sample documents used for training.
-   * **Exported**: Number of documents that have been successfully exported after processing.
-   * **Company Σ**: Total number of company-specific documents processed.
-   * **Overall Σ**: Total number of documents processed across all categories.
-2. **Training and Testing Options**:
-   * **Import**: Allows administrators to import new training data sets which are typically structured samples of documents that should be recognized by the system.
-   * **Train Model**: Starts the training process using the imported data to enhance the recognition and extraction capabilities of the system.
-   * **Test Classification**: Enables testing of the model to evaluate its performance on classifying and extracting data from new or unseen documents.
-3. **Action Buttons**:
-   * **Create Field**: Add new data fields that the model should recognize and extract.
-   * **Actions**: This dropdown can include options such as view details, edit configurations, or delete training data.
+* Import dodaje przykłady treningowe.
+* Działanie treningu uruchamia trenowanie modelu klasyfikacji.
+* Test klasyfikacji sprawdza klasyfikację nowych dokumentów.
+
+Ten widok nie tworzy pól; użyj ustawień pól typu dokumentu. Obrazy nie potwierdzają uruchomienia treningu ani testu klasyfikacji. Niektóre etykiety produktu mogą być angielskie lub niepoprawnie przetłumaczone.

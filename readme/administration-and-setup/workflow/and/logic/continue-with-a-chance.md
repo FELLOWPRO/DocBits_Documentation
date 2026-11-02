@@ -1,6 +1,6 @@
-# Continue with a chance
+# Kontynuuj z określonym prawdopodobieństwem
 
-<figure><img src="../../../../.gitbook/assets/image (49).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_continue_chance_v2-pl-pl.png" alt="Kontynuuj z określonym prawdopodobieństwem, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

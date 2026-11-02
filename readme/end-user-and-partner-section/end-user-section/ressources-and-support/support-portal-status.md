@@ -8,19 +8,19 @@ Aby zapewnić lepszą widoczność Twoich zgłoszeń, oto co oznacza każdy stat
   – Twoje zgłoszenie zostało przeglądnięte i jest w kolejce do działania.
 * **In Progress**\
   – DocBits aktywnie pracuje nad Twoim problemem.
-* **Waiting on Customer Response**\
+* **Oczekiwanie na odpowiedź klienta**\
   – Potrzebujemy więcej informacji lub wyjaśnień od Ciebie. Zobaczysz to, gdy zadaliśmy pytania lub poprosiliśmy o pliki.
-* **Waiting for Customer Confirmation**\
+* **Oczekiwanie na potwierdzenie klienta**\
   – Wprowadziliśmy poprawkę lub udzieliliśmy wskazówek i czekamy na potwierdzenie, że problem został rozwiązany.
-* **Waiting on Product Team**\
+* **Oczekiwanie na zespół ds. produktu**\
   – Twoje zgłoszenie to sugestia funkcji lub dotyczy znanego problemu z produktem i zostało zapisane na liście priorytetów zespołu Produktu.
 * **Closed – Resolved**\
   – Problem został całkowicie rozwiązany i potwierdzony, lub nie są potrzebne dalsze działania.
-* **Closed – No Response**\
+* **Zamknięte – brak odpowiedzi**\
   – Po wielu próbach kontaktu bez odpowiedzi zamykamy zgłoszenie. Zawsze możesz je ponownie otworzyć, odpowiadając.
-* **Closed – Known Issue**\
+* **Zamknięte – znany problem**\
   – To zgłoszenie śledzi znany błąd produktu, który już znajduje się w naszym backlogu. Jest zamknięte tutaj, ale pozostaje widoczne w naszym wewnętrznym planowaniu.
-* **Closed – Logged as Idea**\
+* **Zamknięte – zalogowane jako pomysł**\
   – Twoja sugestia została odnotowana do przyszłego rozważenia przez nasz zespół Produktu.
 * **Duplicate**\
   – Połączyliśmy to zgłoszenie z istniejącym, które dotyczy tego samego problemu.

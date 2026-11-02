@@ -1,57 +1,27 @@
-# Call Api
+# Zadzwoń do API
 
-<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-pl-pl.png" alt="Zadzwoń do API, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
 
-## Cel:
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-pl-pl.png" alt="Zadzwoń do API, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-Karta przepływu pracy **"Call API"** umożliwia użytkownikom wykonywanie żądań HTTP do określonych punktów końcowych API bezpośrednio z przepływu pracy. Ta karta obsługuje różne metody HTTP i umożliwia dynamiczną interakcję z systemami zewnętrznymi poprzez wysyłanie parametrów i danych. Usprawnia integrację z usługami zewnętrznymi i niestandardowymi interfejsami API, zapewniając bezproblemową komunikację.
+<!-- workflow-card-call-api-contract-20261022 -->
 
-## Komponenty karty:
+## Cel
 
-1. **API Endpoint**
-   * **Opis:** Docelowy punkt końcowy **DocBits API**, z którym ta karta będzie wchodzić w interakcję.
-   * **Szczegóły:** Pole tekstowe, w którym użytkownicy określają punkt końcowy dla żądania API.
-2. **HTTP Method**
-   * **Opis:** Typ żądania HTTP, które ma zostać wykonane.
-   * **Opcje:**
-     1. **GET:** Pobiera dane z określonego punktu końcowego.
-     2. **POST:** Wysyła dane do punktu końcowego.
-     3. **PUT:** Aktualizuje istniejące dane w punkcie końcowym.
-     4. **DELETE:** Usuwa dane w punkcie końcowym.
-3. **Parameters**
-   * **Opis:** Parametry zapytania, które mają zostać uwzględnione w żądaniu API.
-   * **Szczegóły:** Pole tekstowe lub lista do wprowadzania par klucz-wartość dla adresu URL żądania.
-4. **Data**
-   1. **Opis:** Ładunek, który ma zostać wysłany w treści żądania API (dotyczy metod POST i PUT).
-   2. **Szczegóły:** Pole do wprowadzania danych w formacie JSON.
+Użyj `call_api`, aby wywołać punkt końcowy skonfigurowanego API DocBits. Ścieżka względna jest dołączana do adresu bazowego. Dowolny zewnętrzny URL nie konfiguruje integracji z innym API.
 
-## Funkcjonalność:
+## Konfiguracja
 
-**Ocena warunku:** System ocenia warunki zdefiniowane w sekcjach "Where" i "And Sections":
+Podaj ścieżkę, metodę HTTP, parametry zapytania i dane obsługiwane przez punkt końcowy. Żądanie korzysta z kontekstu bieżącego użytkownika DocBits. Brakujące wartości `org_id` i `triggered_by_docflow` są dodawane automatycznie. Obiekty parametrów i danych lub ich obsługiwana postać tekstowa muszą odpowiadać formatowi tej wersji karty. Nie ma ogólnego mapowania pól odpowiedzi JSON.
 
-* Jeśli oba warunki są **prawdziwe**, żądanie API jest wykonywane zgodnie z konfiguracją.
-* Jeśli którykolwiek z warunków jest **fałszywy**, karta nie jest wykonywana i nie jest wykonywane żadne wywołanie API.
+## Wynik i ograniczenia
 
-**Wykonanie żądania API:**
+Tekst odpowiedzi jest konwertowany na wartość logiczną: samo `true`, `1`, `yes` lub `on` daje prawdę; nierozpoznana odpowiedź, w tym dowolny obiekt JSON, domyślnie daje fałsz. Sam status HTTP nie wyznacza tej wartości. Przekroczenie czasu lub błąd żądania daje fałsz. Test karty symuluje wywołanie i zwraca prawdę bez wysłania żądania; nie potwierdza uwierzytelnienia, dostępności ani zachowania punktu końcowego.
 
-* Karta wysyła żądanie HTTP do określonego punktu końcowego przy użyciu wybranej metody.
-* Wszelkie podane parametry są dołączane do adresu URL, a dane są uwzględniane w treści żądania (jeśli dotyczy).
+<!-- workflow-card-practical-example-20261021 -->
 
-## Konfiguracja:
+## Przykład praktyczny
 
-1. **Define API Endpoint:**\
-   Wprowadź adres URL API, które chcesz wywołać.
-2. **Select HTTP Method:**\
-   Wybierz jedną z obsługiwanych metod (GET, POST, PUT, DELETE) na podstawie wymagań Twojego API.
-3. **Provide Parameters:**\
-   Dodaj wymagane parametry zapytania jako pary klucz-wartość.
-4. **Include Data (if applicable):**\
-   Dla metod POST lub PUT określ dane, które mają zostać wysłane w treści żądania.
-5. **Condition Configuration:**\
-   Skonfiguruj sekcje "Where" i "And Sections", aby zdefiniować, kiedy ma nastąpić wywołanie API.
+Użyj tej karty po wymaganych warunkach, gdy potrzebujesz wartości logicznej ze skonfigurowanego punktu końcowego API DocBits. W izolowanym teście wybierz istniejący, udokumentowany punkt tylko do odczytu z odpowiednim kontraktem odpowiedzi logicznej i właściwą metodą, np. `GET`. Używaj wyłącznie obsługiwanych parametrów demonstracyjnych.
 
-## Podsumowanie:
-
-Karta przepływu pracy **"Call API"** zwiększa automatyzację przepływu pracy, umożliwiając bezpośrednią interakcję z systemami zewnętrznymi. Zapewniając elastyczne konfiguracje punktów końcowych, metod i danych, gwarantuje, że przepływy pracy mogą bezproblemowo integrować się z zewnętrznymi interfejsami API lub niestandardowymi backendami. Możliwość warunkowego wykonywania wywołań API zapewnia precyzję i efektywność w automatyzacji komunikacji zewnętrznej.
-
-***
+Oczekiwany wynik i kontrprzykład: hipotetyczna odpowiedź HTTP `200` o pełnej treści `true` daje prawdę; `false` daje fałsz. Obiekt taki jak `{"approved": true}` nie jest automatycznie mapowany na prawdę. Oddzielnie sprawdź rzeczywistą odpowiedź i logi. Przykład zweryfikowano w kodzie wykonawczym; nie wykonano żądania ani przepływu.

@@ -17,7 +17,7 @@ zmian widocznych dla klientów._
   urządzenia, a zaufane urządzenie może przez pewien czas pomijać drugi
   składnik. Każdy użytkownik może włączyć tę ochronę dla siebie,
   a administratorzy mogą wymusić ją dla całej organizacji. Zobacz
-  [przewodnik Uwierzytelnianie dwuskładnikowe (2FA)](../two-factor-authentication.md).
+  [przewodnik Uwierzytelnianie dwuskładnikowe (2FA)](../../security/two-factor-authentication.md).
 - **Zgłoszenia do wsparcia z ekranu błędu.** Gdy coś pójdzie nie tak, można
   teraz otworzyć zgłoszenie do wsparcia bezpośrednio z rekordu błędu.
   Zgłoszenie zawiera już kontekst techniczny, więc nie trzeba go opisywać.

@@ -1,125 +1,76 @@
 # Portal dostawców
 
-## Przegląd
+**Portal dostawców** umożliwia administratorowi udostępnienie **DocBits** dostawcom swojej firmy. Administrator aktywuje portal i określa, którzy dostawcy mogą z niego korzystać oraz jakie informacje mogą przeglądać.
 
-Ta strona wyjaśnia, jak aktywować i korzystać z **Portalu dostawców**, a także gdzie znaleźć wszystkie odpowiednie **Ustawienia**. Portal dostawców pozwala na zapraszanie dostawców do **DocBits**. Po przyznaniu dostępu, dostawcy mogą zalogować się, aby zobaczyć status swoich **Zamówień zakupu** i **Faktur** bezpośrednio w **DocBits**.
+Zaproszony dostawca rejestruje się i loguje na własne konto. Może wtedy przeglądać udostępnione mu informacje, na przykład status swoich zamówień zakupu i faktur. Dostępne funkcje zależą od konfiguracji organizacji.
 
-## Jak aktywować Portal dostawców
+## Film: przygotowanie portalu dostawców i dostępu
 
-1.  Przejdź do **Ustawienia → Przetwarzanie dokumentów → Moduł**.
+Administrator przedstawia opcję portalu, wybór planu, przygotowanie zaproszenia i stronę rejestracji. Aktywacja, wysyłka, rejestracja i zatwierdzenie są wyjaśnione jako osobne kroki.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  W sekcji **Wysyłka i dostawca** włącz opcję **Portal dostawców**.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pl.mp4" %}
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+[Otwórz film z polskimi napisami i wyborem rozdziałów](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/pl.html)
 
-## Ustawienia dostawcy
+## Administrator: włączenie portalu
 
-Po włączeniu funkcji **Portalu dostawców**, nowa sekcja **Ustawienia dostawcy** pojawi się na dole menu **Ustawienia**.
+1. W ustawieniach otwórz moduły i wybierz **Integracja dokumentów**.
+2. Rozwiń **Wysyłka i dostawca** i włącz **Portal dostawców**.
+3. Jeśli pojawi się okno aktywacji, sprawdź wyświetlony plan i potwierdź wybraną aktywację.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-module-pl-20261031.png" alt="Rzeczywisty widok Dev po polsku, Wysyłka i dostawca: Portal dostawców jest już włączony w tej organizacji testowej. Przełącznika nie zmieniono na potrzeby zrzutu."><figcaption><p>Rzeczywisty widok Dev po polsku, Wysyłka i dostawca: Portal dostawców jest już włączony w tej organizacji testowej. Przełącznika nie zmieniono na potrzeby zrzutu.</p></figcaption></figure>
 
-[**Ustawienia ogólne dostawcy**](../../settings/supplier-setting/supplier-general-settings.md): Tutaj możesz dostosować **Portal dostawców**, przesyłając logo swojej firmy—wyświetlane w nagłówku wszystkich szablonów e-maili—i zarządzając dokumentami prawnymi, takimi jak Warunki korzystania i Polityka prywatności.
+## Administrator: konfiguracja portalu
 
-[**Szablony e-maili**](../../settings/supplier-setting/editing-email-templates.md)**:** Tutaj możesz tworzyć i testować szablony e-maili zaproszeń, które będą wysyłane do zaproszonych dostawców.
+Skonfiguruj portal organizacji przed wysłaniem pierwszych zaproszeń:
 
-**Układ dostawcy:** Tutaj możesz tworzyć i zarządzać układami, które definiują, jakie informacje nowi dostawcy muszą podać podczas procesu rejestracji.
+- [Ogólne ustawienia dostawców](../../settings/supplier-setting/supplier-general-settings.md): Dodatkowe pola zaproszeń, statusy, logo i informacje o prywatności.
+- [Szablony wiadomości e-mail](../../settings/supplier-setting/editing-email-templates.md): Treść i wygląd wiadomości z zaproszeniami.
+- [Układ dostawcy](../../settings/supplier-setting/supplier-layout.md): Pola rejestracji dostawców i wewnętrznego zarządzania dostawcami. Wybierz odpowiedni typ układu.
+- [Uprawnienia dostawców](../../settings/supplier-setting/supplier-permissions.md): Przypisanie pracowników wewnętrznych do grup dostawców. Te wewnętrzne obowiązki są odrębne od własnego dostępu dostawcy do portalu.
 
-[**Eksportuj konfigurację**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Tutaj możesz zdefiniować, jak dane są mapowane i synchronizowane między **Portalem dostawców** a systemem **Infor M3** przy użyciu plików mapowania ION i IDM.
+<figure><img src="../../../.gitbook/assets/dbdc-49-general-invitation-fields-pl-20261031.png" alt="Rzeczywisty widok dodatkowych pól zaproszeń: opcja jest już włączona, a Pola zachowują skonfigurowaną wartość Assigned User. Nie zapisano żadnej zmiany."><figcaption><p>Rzeczywisty widok dodatkowych pól zaproszeń: opcja jest już włączona, a Pola zachowują skonfigurowaną wartość Assigned User. Nie zapisano żadnej zmiany.</p></figcaption></figure>
 
-**Uprawnienia dostawcy**: Tutaj możesz skonfigurować uprawnienia, które będą miały dostawcy w **Portalu dostawców**. Możesz również grupować dostawców, co ułatwia zarządzanie dostępem i ustawieniami w przypadku wielu dostawców.
+## Administrator: wyszukiwanie i filtrowanie dostawców
 
-Szczegółowy przewodnik po wszystkich Ustawieniach dostawcy można znaleźć [tutaj](../../settings/supplier-setting/).
+Otwórz **panel dostawców** do zarządzania wewnętrznego. Liczniki **Wszyscy dostawcy**, **Oczekujące na zatwierdzenie** i **Oczekująca rejestracja** pozwalają ograniczyć wyświetlaną listę. Pole **Szukaj według nazwy, numeru** służy do wyszukiwania dostawcy po nazwie lub numerze.
 
-## Panel dostawcy <a href="#supplier-permissions" id="supplier-permissions"></a>
+Otwórz przycisk filtrów w polu wyszukiwania, aby użyć **Grupy dostawców**, **Status** i **Utworzono dnia**. **Dostawca na stronę** określa rozmiar strony; **Wyczyść filtry** usuwa aktywne filtry wyszukiwania. Te elementy dotyczą listy dostawców.
 
-Możesz uzyskać dostęp do **Panelu dostawcy** z menu po lewej stronie, jak pokazano poniżej.
+<figure><img src="../../../.gitbook/assets/dbdc-49-filters-pl-20261031.png" alt="Menu filtrów z Grupy dostawców, Status, Utworzono dnia, Dostawca na stronę i Wyczyść filtry. Zrzut pokazuje dostępne elementy interfejsu i nie potwierdza funkcjonalnego testu wyniku filtrowania."><figcaption><p>Menu filtrów z Grupy dostawców, Status, Utworzono dnia, Dostawca na stronę i Wyczyść filtry. Zrzut pokazuje dostępne elementy interfejsu i nie potwierdza funkcjonalnego testu wyniku filtrowania.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+## Administrator: wybór widocznych kolumn
 
-Wszystkie Twoje utworzone dostawcy są tutaj wyświetlane.
+Obok przycisku odświeżania otwórz ustawienia kolumn. Podpowiedź brzmi **Ustaw kolumny tabeli dla organizacji**. Wybierz pola w **Ukryte kolumny** lub **Widoczne kolumny** i przenoś je między listami za pomocą strzałek. Uchwyty przeciągania pozwalają zmienić kolejność widocznych kolumn. **Zrobione** stosuje wybór dla organizacji; **Anulować** zamyka okno bez jego zastosowania. Przewijanie w poziomie umożliwia dostęp do kolumn tabeli szerszej niż ekran.
 
-## Filtruj dostawców
+<figure><img src="../../../.gitbook/assets/dbdc-49-columns-pl-20261031.png" alt="Ustawienia kolumn z Ukryte kolumny, Widoczne kolumny, strzałkami, Anulować i Zrobione. Okno zamknięto przez Anulować bez zmiany wyboru."><figcaption><p>Ustawienia kolumn z Ukryte kolumny, Widoczne kolumny, strzałkami, Anulować i Zrobione. Okno zamknięto przez Anulować bez zmiany wyboru.</p></figcaption></figure>
 
-Możesz wyszukiwać dostawców według N**azwy** lub N**umeru**, lub użyć zaawansowanych filtrów, aby zawęzić wyniki według:
+## Administrator: analiza terminów ważności
 
-* **Grup dostawców**
-* **Statusu**
-* **Utworzone w**
+Użyj **Analityka**, czyli ikony wykresu obok ustawień kolumn, aby pokazać lub ukryć zestawienie terminów ważności. Karty pokazują **Wygasły** i **Wygasa za** z okresami **1 Miesiąc**, **2 Miesiąc**, **3 Miesiąc**, **6 Miesiąc** i **1 Rok**, zgodnie z etykietami w interfejsie. Wybranie karty ogranicza listę do odpowiedniego okresu. Liczniki dotyczą terminów ważności związanych z dostawcami.
 
-Możesz również określić, ile dostawców powinno być wyświetlanych na stronie.
+<figure><img src="../../../.gitbook/assets/dbdc-49-analytics-pl-20261031.png" alt="Analityka pokazuje Wygasły i Wygasa za dla jednego, dwóch, trzech lub sześciu miesięcy oraz roku. Wiersze są zasłonięte i nie wybrano żadnej karty."><figcaption><p>Analityka pokazuje Wygasły i Wygasa za dla jednego, dwóch, trzech lub sześciu miesięcy oraz roku. Wiersze są zasłonięte i nie wybrano żadnej karty.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+## Administrator: zapraszanie dostawców
 
-Dodatkowo możesz szybko filtrować według statusów **Oczekujące na zatwierdzenie** lub **Oczekująca rejestracja**, klikając odpowiednią kategorię po lewej stronie paska filtrów.
+Otwórz zarządzanie dostawcami. Przed zaproszeniem sprawdź firmę, grupę dostawców, osobę kontaktową i adres e-mail. Przy tworzeniu dostawcy zapisanie danych zleca wysłanie zaproszenia do rejestracji; nie jest jedynie zapisem wersji roboczej. Dla istniejącego dostawcy użyj odpowiedniej akcji zaproszenia. Potwierdzenie wysłania nie dowodzi doręczenia wiadomości ani ukończenia rejestracji.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-pl-20261031.png" alt="Panel wewnętrzny z Wszyscy dostawcy, Oczekujące na zatwierdzenie, Oczekująca rejestracja, wyszukiwaniem i paskiem narzędzi. Wiersze istniejących dostawców są zasłonięte."><figcaption><p>Panel wewnętrzny z Wszyscy dostawcy, Oczekujące na zatwierdzenie, Oczekująca rejestracja, wyszukiwaniem i paskiem narzędzi. Wiersze istniejących dostawców są zasłonięte.</p></figcaption></figure>
 
-## Status dostawcy
+<figure><img src="../../../.gitbook/assets/dbdc-49-invitation-pl-20261031.png" alt="Pusty formularz Dodaj dostawcę z Grupa dostawców, Nazwa dostawcy, polami imienia i nazwiska osoby kontaktowej, adresem e-mail oraz Anulować i Zapisz. Lewe pole dotyczy imienia, prawe nazwiska; aplikacja skraca tutaj długie etykiety. Zapisz zleca wysłanie zaproszenia do rejestracji; na potrzeby zrzutu użyto tylko Anulować."><figcaption><p>Pusty formularz Dodaj dostawcę z Grupa dostawców, Nazwa dostawcy, polami imienia i nazwiska osoby kontaktowej, adresem e-mail oraz Anulować i Zapisz. Lewe pole dotyczy imienia, prawe nazwiska; aplikacja skraca tutaj długie etykiety. Zapisz zleca wysłanie zaproszenia do rejestracji; na potrzeby zrzutu użyto tylko Anulować.</p></figcaption></figure>
 
-Jeśli korzystasz z **Portalu dostawców**, ważne jest, aby zrozumieć różne statusy, jakie mogą mieć dostawcy. Poniżej znajduje się lista wszystkich możliwych statusów dostawców i ich znaczenia:
+## Administrator: otwieranie szczegółów z panelu dostawców
 
-* **Otwarte**: Istniejący dostawca, który nie został jeszcze zaproszony do portalu.
-* **Oczekująca rejestracja**: Dostawca został zaproszony, ale nie zakończył jeszcze procesu rejestracji.
-* **Oczekiwanie na dane wejściowe dostawcy**: Rejestracja jest zakończona, ale wymagane są dalsze dane lub zmiany od dostawcy.
-* **Oczekujące na zatwierdzenie**: Dostawca zakończył rejestrację i czeka na pierwsze zatwierdzenie.
-* **Oczekujące na zatwierdzenie AP**: Dostawca otrzymał pierwsze zatwierdzenie i czeka na drugie (zatwierdzenie działu księgowości).
-* **Zatwierdzony**: Dostawca zakończył proces i został w pełni zatwierdzony.
-* **Odrzucony**: Rejestracja lub zatwierdzenie dostawcy zostało odrzucone.
+Pracownicy wewnętrzni mogą otworzyć szczegóły z wiersza dostawcy w panelu. Widok zawiera te same sześć sekcji, które wypełnia dostawca, oraz ich status. Umożliwia sprawdzanie i aktualizowanie przekazanych informacji oraz wykonanie odpowiedniego zatwierdzenia. Na potrzeby tych zrzutów nie otwarto żadnego wiersza istniejącego dostawcy.
 
-## Narzędzia w Panelu dostawcy
+## Dostawca: rejestracja i dostęp do DocBits
 
-Po prawej stronie paska wyszukiwania znajdziesz kilka narzędzi, które pomogą Ci w interakcji i zarządzaniu panelem w bardziej efektywny sposób.
+Dostawca otwiera zaproszenie, tworzy lub wykorzystuje przewidziane własne konto i przechodzi skonfigurowane etapy rejestracji. Następnie może przeglądać udostępnione mu informacje w DocBits. Dokładny przebieg i dostępne funkcje zależą od organizacji.
 
-### Odśwież tabelę <a href="#refresh-table" id="refresh-table"></a>
+[Instrukcja rejestracji dostawców](supplier-registration.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+## Dostęp i status to różne rzeczy
 
-Kliknij ten przycisk, aby odświeżyć panel i załadować najnowsze dane i statusy.
+Włączenie portalu, wysłanie zaproszenia, ukończenie rejestracji i zatwierdzenie są odrębnymi stanami. Rekord dostawcy lub zapisane dane podstawowe nie dowodzą gotowego dostępu do portalu. Widok dostawcy zależy od przypisanych uprawnień i różni się od wewnętrznego widoku administratora.
 
-### Ustaw kolumny tabeli dla organizacji <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
-
-Kliknij ten przycisk, aby otworzyć menu, w którym możesz zarządzać widocznością kolumn w tabeli zamówień zakupu. Użyj pól wyboru i przycisków strzałek, aby przenieść kolumny między sekcjami widocznymi i ukrytymi. Możesz również zmieniać kolejność kolumn, przeciągając i upuszczając nazwy kolumn. Kliknij **Zrobione**, aby zapisać zmiany.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
-
-### Analityka <a href="#analytics" id="analytics"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-Kliknięcie tego przycisku otworzy nową sekcję pokazującą, ilu dostawców ma wygasnąć i kiedy.\
-Kliknij dowolną kategorię, aby zastosować filtr i wyświetlić tylko tych dostawców.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
-
-## Utwórz dostawcę i wyślij e-mail rejestracyjny
-
-### **Aby utworzyć nowego dostawcę:**
-
-1.  Kliknij ikonę plusa (+) w prawym górnym rogu.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Wypełnij wymagane pola, a następnie kliknij **Ratować**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. Dostawca automatycznie otrzyma e-mail z linkiem do utworzenia swojego konta.
-
-### **Aby wysłać e-mail rejestracyjny do istniejącego dostawcy:**
-
-1. Zlokalizuj dostawcę w **Panelu dostawcy**.
-2. Kliknij menu z trzema kropkami w kolumnie **Akcje**.
-3.  Wybierz **Magiczny Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Zweryfikuj dane dostawcy.
-5.  Kliknij **Wysłać**, aby wysłać link rejestracyjny.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
-
-## Jak działa proces rejestracji dla dostawcy?
-
-Po wysłaniu e-maila z zaproszeniem, dostawca musi zakończyć proces rejestracji, aby uzyskać dostęp do **Portalu dostawców**.
-
-Szczegółowy przewodnik krok po kroku dotyczący procesu rejestracji można znaleźć [tutaj](supplier-registration.md).
+Zrzuty wykonano z autoryzowanego konta testowego Dev i polskiego interfejsu. Sprawdzono żądania odczytu interfejsu i list, widoczne elementy oraz formularze anulowane bez zmian. Nie zapisano ustawień portalu ani wyboru kolumn, nie utworzono ani nie zmieniono dostawców i nie wykonano zaproszeń, rejestracji ani zatwierdzeń. Wyniki wyszukiwania i filtrowania oraz doręczenie wiadomości e-mail nie są potwierdzone jako przetestowane funkcjonalnie. Istniejący film zachowano; nie przeprowadzono nowej oceny dźwięku, języka ani synchronizacji.

@@ -141,7 +141,7 @@ Prepare and validate the baseline identifiers listed below. Do not rely on an im
 ### Choose the environment and organization
 
 1. Open the API reference for the environment you intend to use. The production reference is [https://api.docbits.com/](https://api.docbits.com/); use your approved test environment for test data. Check the API version and **Servers** value before preparing a request.
-2. For an authorized import, click **Authorize** and use the API key supplied for the intended organization and user. Never copy a key into a screenshot, a CSV file or a shared example.
+2. For an authorized import, click **Authorize** and use the API key supplied for the intended organization and user. Never copy a key into a screenshot, a CSV file or a shared example. For credential setup, see [Integration](https://docs.docbits.com/administration-and-setup/settings/global-settings/integration).
 
 The four images below are genuine English views of the Dev API reference, version **12.83.550**, with server **/dev-api**. No API key or CSV was supplied and **Execute** was not clicked. The visible `string` values are Swagger-generated examples, not valid organization IDs or prepared import data.
 
@@ -150,7 +150,7 @@ The four images below are genuine English views of the Dev API reference, versio
 ### Open the import operation
 
 1. Find **POST /master_data_lookup/import_data** and expand it.
-2. Click **Try it out** to enable the local request form. This step alone does not execute an import.
+2. Click **Try it out** to enable the local request form. This step alone does not execute an import. Use **Cancel** to leave edit mode without sending the import.
 
 <figure><img src="../.gitbook/assets/csv-import-import-operation-native-dev-en-20261102.png" alt="Expanded POST master_data_lookup import_data operation with Try it out and required multipart form-data Request body controls"><figcaption><p>The import operation accepts a multipart form-data request body. Try it out enables the form; it does not send the import.</p></figcaption></figure>
 
@@ -173,4 +173,4 @@ These option descriptions reflect the reviewed importer. Confirm replacement sco
 
 <figure><img src="../.gitbook/assets/csv-import-import-options-native-dev-en-20261102.png" alt="Current Dev import options showing replace_all false, on_conflict REPLACE, auto_generate_id false, dev-api server and the untouched Execute button"><figcaption><p>The lower form and Execute button in their existing displayed state. No option was changed and Execute was not clicked; this image is not an import result.</p></figcaption></figure>
 
-Only after the target environment, organization, sub-organization scope, CSV and options have been checked and the import is authorized, click **Execute**. Review the response and verify the intended records before continuing with further imports. These screenshots demonstrate the controls; they do not establish an executed import or complete CSV-data validation.
+Only after the target environment, organization, sub-organization scope, CSV and options have been checked and the import is authorized, click **Execute**. Review the response and verify the intended records before continuing with further imports. For purchase orders, see the [Purchase Order Dashboard](https://docs.docbits.com/end-user-and-partner-section/end-user-section/purchase-order-dashboard). These screenshots demonstrate the controls; they do not establish an executed import or complete CSV-data validation.

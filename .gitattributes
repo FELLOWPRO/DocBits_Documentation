@@ -1,0 +1,8 @@
+# Keep the canonical WebVTT cue separator at the end of these generated captions.
+**/.gitbook/assets/edocs-credit-note-*.vtt whitespace=-blank-at-eof
+# Blank context lines in a unified diff have a required space prefix.
+media/edocs-credit-note/pipeline.patch whitespace=-blank-at-eol
+**/.gitbook/assets/edocs-support-*.vtt whitespace=-blank-at-eof
+# CJK wrapping preserves authored spaces next to Latin format/version names.
+# Keep these generated cues byte-identical to the validated timing manifest.
+**/.gitbook/assets/edocs-support-*-zh-v2.vtt whitespace=-blank-at-eof,-blank-at-eol

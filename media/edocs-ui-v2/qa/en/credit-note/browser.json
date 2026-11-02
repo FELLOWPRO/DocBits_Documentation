@@ -1,0 +1,30 @@
+{
+  "locale": "en",
+  "metadata": {
+    "duration": 88.366667,
+    "width": 1280,
+    "height": 720,
+    "language": "en",
+    "cues": 16
+  },
+  "playback": {
+    "time": 0.308293,
+    "frames": 14
+  },
+  "seek": {
+    "time": 44.183333,
+    "ready": 4
+  },
+  "mobile": {
+    "scroll": 380,
+    "width": 380,
+    "captions": [
+      "An electronic credit note appears as\nInvoice. Read the original XML. A type"
+    ],
+    "focusable": 0
+  },
+  "keyboardPlays": true,
+  "ended": true,
+  "range206": true,
+  "errors": []
+}

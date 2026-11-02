@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.225
+SI-UBL 2.0 tem uma entrada dedicada. Um
+ficheiro UBL não é automaticamente SI-UBL
+
+formats_02
+00:00:09.225 --> 00:00:14.751
+2.0. Verifique o seu identificador de
+personalização e o mapeamento nacional
+
+formats_03
+00:00:14.751 --> 00:00:16.033
+correspondente.
+
+workflow_01
+00:00:16.783 --> 00:00:22.170
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:22.170 --> 00:00:29.241
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:29.241 --> 00:00:30.167
+ativa.
+
+accept_01
+00:00:30.917 --> 00:00:36.873
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:36.873 --> 00:00:42.736
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:42.736 --> 00:00:47.267
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

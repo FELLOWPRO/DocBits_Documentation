@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.133
+Uruguay CFE ma wpisy ogólne oraz 24 i 25.
+Wymienione są też E-Factura i E-Nota
+
+formats_02
+00:00:08.133 --> 00:00:12.916
+Credito. Wpisy not kredytowych nie mają
+dedykowanych pakietów ekstrakcji w
+
+formats_03
+00:00:12.916 --> 00:00:19.070
+sprawdzonym stanie. Potwierdź wersję CFE i
+faktycznie używane mapowanie faktur lub
+
+formats_04
+00:00:19.070 --> 00:00:20.767
+not kredytowych.
+
+workflow_01
+00:00:21.517 --> 00:00:26.985
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:26.985 --> 00:00:32.558
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:32.558 --> 00:00:35.367
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:36.117 --> 00:00:42.143
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:42.143 --> 00:00:48.075
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:48.075 --> 00:00:50.900
+podatkowego ani dostarczenia przez sieć.
+

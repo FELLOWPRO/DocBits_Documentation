@@ -24,7 +24,11 @@ Add a column when a value has to be captured per line item that the default colu
 | **Select column type** | See the type list above. |
 | **Select Table** | The table that gets the column. |
 
-4. Click **Proceed**. The column appears in the list with *Read Only*, *Hidden* and *Use AI* unset. Switch those flags in the list if needed, see [Editing and deleting columns](editing-and-deleting-columns.md).
+4. Click **Proceed**. A confirmation dialog reminds you that the new column applies to **all future documents of every supplier**, not only to the document you have open.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm.png" alt="Confirmation dialog: Create a new table column? Cancel and Create column buttons"><figcaption><p>Confirm before the column is created for every supplier.</p></figcaption></figure>
+
+5. Select **Create column** to save, or **Cancel** to go back without creating anything. The column appears in the list with *Read Only*, *Hidden* and *Use AI* unset. Switch those flags in the list if needed, see [Editing and deleting columns](editing-and-deleting-columns.md).
 
 ## After adding
 

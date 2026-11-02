@@ -1,0 +1,111 @@
+WEBVTT
+
+symptom_01
+00:00:00.250 --> 00:00:06.821
+Una nota di credito elettronica appare
+come Invoice. Leggete l’XML originale. Il
+
+symptom_02
+00:00:06.821 --> 00:00:11.067
+codice del tipo 381 identifica una nota di
+credito.
+
+codes_01
+00:00:11.817 --> 00:00:21.674
+Le regole predefinite di FACTURX e ZUGFeRD
+riconoscono anche 261. I codici 383 e 384
+
+codes_02
+00:00:21.674 --> 00:00:27.038
+indicano una nota di debito e una fattura
+corretta. Non classificateli come note di
+
+codes_03
+00:00:27.038 --> 00:00:27.967
+credito.
+
+source_01
+00:00:28.717 --> 00:00:34.023
+Aprite E-Doc per il formato rilevato. La
+trasformazione personalizzata
+
+source_02
+00:00:34.023 --> 00:00:39.596
+dell’organizzazione ha la precedenza su
+quella predefinita. Verificate la versione
+
+source_03
+00:00:39.596 --> 00:00:40.467
+attiva.
+
+transform_01
+00:00:41.217 --> 00:00:48.485
+Per FACTURX, cercate INVOICE_TYPE. Una
+costante Invoice può eliminare il codice
+
+transform_02
+00:00:48.485 --> 00:00:52.223
+originale della nota di credito.
+Confrontate la trasformazione
+
+transform_03
+00:00:52.223 --> 00:00:54.933
+personalizzata con quella predefinita.
+
+paths_01
+00:00:55.683 --> 00:01:02.440
+Provate l’XML trasformato. Verificate che
+Extraction Paths legga invoice_type dal
+
+paths_02
+00:01:02.440 --> 00:01:07.154
+nodo corretto per questo formato.
+Esaminate gli script successivi e il
+
+paths_03
+00:01:07.154 --> 00:01:08.733
+valore memorizzato.
+
+activate_01
+00:01:09.483 --> 00:01:15.462
+Create una bozza. Save non la attiva.
+Provate fatture e note di credito
+
+activate_02
+00:01:15.462 --> 00:01:20.675
+rappresentative. Attivatela con il segno
+di spunta solo dopo il superamento delle
+
+activate_03
+00:01:20.675 --> 00:01:21.633
+verifiche.
+
+safety_01
+00:01:22.383 --> 00:01:27.358
+Verificate un nuovo documento, inclusi
+importi ed esportazione. Conservate le
+
+safety_02
+00:01:27.358 --> 00:01:31.621
+mappature personalizzate. Prima di
+riavviare un vecchio documento,
+
+safety_03
+00:01:31.621 --> 00:01:35.433
+controllate approvazioni, esportazioni e
+modifiche manuali.
+
+sign_01
+00:01:36.183 --> 00:01:40.839
+L’impostazione del segno negativo è attiva
+per impostazione predefinita, ma può
+
+sign_02
+00:01:40.839 --> 00:01:45.738
+essere disattivata. Confermate la
+classificazione e la convenzione del segno
+
+sign_03
+00:01:45.738 --> 00:01:49.167
+prevista da Infor ERP o SAP.
+

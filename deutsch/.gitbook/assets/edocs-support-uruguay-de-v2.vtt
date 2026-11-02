@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.763
+Für Uruguay CFE gibt es generische
+Einträge sowie Einträge für 24 und 25.
+
+formats_02
+00:00:06.763 --> 00:00:12.963
+E-Factura und E-Nota Credito sind
+ebenfalls aufgeführt. Für
+
+formats_03
+00:00:12.963 --> 00:00:17.978
+Gutschrifteinträge sind im geprüften
+Status keine eigenen Extraktionspakete
+
+formats_04
+00:00:17.978 --> 00:00:22.890
+ausgewiesen. Bestätigen Sie die
+CFE-Version und die tatsächlich verwendete
+
+formats_05
+00:00:22.890 --> 00:00:25.467
+Rechnungs- oder Gutschriftzuordnung.
+
+workflow_01
+00:00:26.217 --> 00:00:31.523
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:31.523 --> 00:00:38.233
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:38.233 --> 00:00:39.867
+aktiviert ihn nicht.
+
+accept_01
+00:00:40.617 --> 00:00:45.249
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:45.249 --> 00:00:51.379
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:51.379 --> 00:00:54.500
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

@@ -1,0 +1,49 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:12.452
+Ecuador SRI has generic, 1.0.0, 1.1.0,
+2.0.0 and 2.1.0 entries. Withholding is a
+
+formats_02
+00:00:12.452 --> 00:00:17.769
+separate document type. The credit-note
+classification entry has no dedicated
+
+formats_03
+00:00:17.769 --> 00:00:22.773
+extraction bundle in the inspected status.
+Check the effective mapping and the source
+
+formats_04
+00:00:22.773 --> 00:00:24.000
+document type.
+
+workflow_01
+00:00:24.750 --> 00:00:29.243
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:29.243 --> 00:00:34.305
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:34.305 --> 00:00:35.333
+activate it.
+
+accept_01
+00:00:36.083 --> 00:00:40.843
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:40.843 --> 00:00:45.847
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:45.847 --> 00:00:46.800
+delivery.
+

@@ -1,0 +1,93 @@
+{
+  "locale": "de",
+  "title": "Klassifizierung elektronischer Gutschriften prüfen",
+  "english_audio_badge": "",
+  "segments": [
+    {
+      "id": "symptom",
+      "scene_id": "symptom",
+      "narration": "Eine elektronische Gutschrift erscheint als Invoice. Prüfen Sie die ursprüngliche XML-Datei. Der Typcode 381 kennzeichnet eine Gutschrift.",
+      "caption": "Eine elektronische Gutschrift erscheint als Invoice. Prüfen Sie die ursprüngliche XML-Datei. Der Typcode 381 kennzeichnet eine Gutschrift."
+    },
+    {
+      "id": "codes",
+      "scene_id": "codes",
+      "narration": "Die Standards für FACTURX und ZUGFeRD erkennen auch 261. Die Codes 383 und 384 stehen für eine Belastungsanzeige und eine korrigierte Rechnung. Klassifizieren Sie diese nicht als Gutschriften.",
+      "caption": "Die Standards für FACTURX und ZUGFeRD erkennen auch 261. Die Codes 383 und 384 stehen für eine Belastungsanzeige und eine korrigierte Rechnung. Klassifizieren Sie diese nicht als Gutschriften."
+    },
+    {
+      "id": "source",
+      "scene_id": "source",
+      "narration": "Öffnen Sie E-Doc für das erkannte Format. Eine angepasste Transformation der Organisation hat Vorrang vor dem Standard. Prüfen Sie die aktive Version.",
+      "caption": "Öffnen Sie E-Doc für das erkannte Format. Eine angepasste Transformation der Organisation hat Vorrang vor dem Standard. Prüfen Sie die aktive Version."
+    },
+    {
+      "id": "transform",
+      "scene_id": "transform",
+      "narration": "Suchen Sie bei FACTURX nach INVOICE_TYPE. Der konstante Wert Invoice kann den ursprünglichen Gutschriftcode verdrängen. Vergleichen Sie die angepasste Transformation mit dem Standard.",
+      "caption": "Suchen Sie bei FACTURX nach INVOICE_TYPE. Der konstante Wert Invoice kann den ursprünglichen Gutschriftcode verdrängen. Vergleichen Sie die angepasste Transformation mit dem Standard."
+    },
+    {
+      "id": "paths",
+      "scene_id": "paths",
+      "narration": "Testen Sie das transformierte XML. Prüfen Sie, ob Extraction Paths invoice_type aus dem richtigen Knoten für dieses Format liest. Prüfen Sie spätere Skripte und den gespeicherten Wert.",
+      "caption": "Testen Sie das transformierte XML. Prüfen Sie, ob Extraction Paths invoice_type aus dem richtigen Knoten für dieses Format liest. Prüfen Sie spätere Skripte und den gespeicherten Wert."
+    },
+    {
+      "id": "activate",
+      "scene_id": "activate",
+      "narration": "Erstellen Sie einen Entwurf. Speichern aktiviert ihn nicht. Testen Sie repräsentative Rechnungen und Gutschriften. Aktivieren Sie ihn erst nach erfolgreichen Prüfungen über das Häkchen.",
+      "caption": "Erstellen Sie einen Entwurf. Speichern aktiviert ihn nicht. Testen Sie repräsentative Rechnungen und Gutschriften. Aktivieren Sie ihn erst nach erfolgreichen Prüfungen über das Häkchen."
+    },
+    {
+      "id": "safety",
+      "scene_id": "safety",
+      "narration": "Prüfen Sie ein neues Dokument einschließlich der Beträge und des Exports. Erhalten Sie angepasste Zuordnungen. Prüfen Sie vor dem Neustart eines alten Dokuments Freigaben, Exporte und manuelle Änderungen.",
+      "caption": "Prüfen Sie ein neues Dokument einschließlich der Beträge und des Exports. Erhalten Sie angepasste Zuordnungen. Prüfen Sie vor dem Neustart eines alten Dokuments Freigaben, Exporte und manuelle Änderungen."
+    },
+    {
+      "id": "sign",
+      "scene_id": "sign",
+      "narration": "Die Einstellung für negative Vorzeichen ist standardmäßig aktiviert, kann aber deaktiviert werden. Prüfen Sie die Klassifizierung und die von Infor ERP oder SAP erwartete Vorzeichenkonvention.",
+      "caption": "Die Einstellung für negative Vorzeichen ist standardmäßig aktiviert, kann aber deaktiviert werden. Prüfen Sie die Klassifizierung und die von Infor ERP oder SAP erwartete Vorzeichenkonvention."
+    }
+  ],
+  "labels": {
+    "xml": "Ursprüngliches XML",
+    "stored": "Gespeicherter Wert",
+    "invoice": "Rechnung",
+    "credit": "Gutschrift",
+    "credit_codes": "Gutschrift",
+    "other_codes": "Andere Dokumenttypen",
+    "debit": "Belastungsanzeige",
+    "corrected": "Korrigierte Rechnung",
+    "source": "Verwendete Quelle",
+    "custom": "Custom",
+    "default": "Default",
+    "active": "Aktive Version",
+    "transform": "Transformation",
+    "constant": "Fester Wert",
+    "compare": "Quellen vergleichen",
+    "paths": "Extraction Paths",
+    "scripts": "Spätere Skripte",
+    "verify": "Gespeicherten Wert prüfen",
+    "draft": "Entwurf",
+    "save": "Speichern",
+    "test": "Testen",
+    "activate": "Aktivieren",
+    "saved": "Gespeicherter Entwurf",
+    "check": "Häkchen",
+    "safety": "Neues Testdokument",
+    "preserve": "Angepasste Zuordnungen erhalten",
+    "history": "Historische Dokumente prüfen",
+    "approvals": "Freigaben",
+    "exports": "Exporte",
+    "edits": "Manuelle Änderungen",
+    "sign": "Vorzeichen der Beträge prüfen",
+    "enabled": "Standardmäßig aktiviert",
+    "configurable": "Konfigurierbar",
+    "result": "Klassifizierung + Export",
+    "transformed": "Transformiertes XML"
+  },
+  "notes": {}
+}

@@ -741,7 +741,7 @@ Day 5: IF still not completed:
 ### Next Steps
 - Add email notifications: [Send Email Guide](../then/action/send-email-groups-guide.md)
 - Implement complex routing: [Decision Logic Pattern](decision-logic-pattern.md)
-- Handle errors: [Error Handling Pattern](error-handling-pattern.md)
+- Resolve task errors: [Error Handling](#error-handling) above
 
 ---
 

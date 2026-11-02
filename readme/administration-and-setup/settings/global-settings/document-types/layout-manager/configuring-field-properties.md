@@ -1,66 +1,30 @@
-# Configuring Field Properties
+# Configuring Field Properties in the Layout Builder
 
-## Configuring field properties is critical to ensure that the data captured in a document meets specific requirements and processing processes.
+The **Layout Builder** controls how fields appear in a document layout. It is separate from the document type's [Fields settings](../fields/configuring-field-properties-1.md), where you configure required values, validation, OCR and matching.
 
-### Here are the steps to configure field properties to meet specific data processing needs:
+Open **Settings → Document Types**, choose a document type, and open its **Layout Builder**. The example below uses the English **Invoice** layout in a sandbox organization. Select the layout at the top left; **Elements** lists groups and fields, and the center shows their placement.
 
-#### Select a field type:
+<figure><img src="../../../../../.gitbook/assets/dbdc162-layout-overview-en.png" alt="English Invoice Layout Builder with groups in the Elements panel and fields in the layout"><figcaption>Find the field in the Invoice layout.</figcaption></figure>
 
-* Start by selecting the right field type for your data.
+## Change a field in the layout
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 11.06.36.png" alt="" width="375"><figcaption></figcaption></figure>
+1. Select a field in the center of the layout. For example, select **Invoice number**.
+2. Open **Properties** in the left panel. Check the selected field name in the layout before changing anything.
+3. Change only the options you need, then select **Save** in the top bar. See [Save and Apply Changes](save-and-apply-changes.md) for the remaining layout steps.
 
-* This depends on what type of information the field will contain.
+<figure><img src="../../../../../.gitbook/assets/dbdc162-layout-field-properties-en.png" alt="English Layout Builder Properties panel for Invoice number showing visibility, behavior, label, width and field settings"><figcaption>Properties of the selected Invoice number field.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 11.06.56.png" alt="" width="139"><figcaption><p>Properties</p></figcaption></figure>
+| Property | What it changes |
+| --- | --- |
+| **Run workflow on change** / **Run script on Change** | Request the configured workflow or script when this field changes. Configure those actions separately before enabling them. |
+| **Display Label On Left** | Place the field label beside the input instead of above it. |
+| **Is Textarea** | Show a multi-line text input. |
+| **Readonly** / **Hidden** | Prevent editing or hide the field in this layout. |
+| **Label** | Text shown to users for this field. |
+| **Field Name** | Technical field name; the adjacent copy icon copies it. Check this when two fields have similar labels. |
+| **Element Width in Percentage** | Width the field takes within its row. |
+| **Tab Index** | Position in the keyboard tab order. |
+| **Select AI modeltype** / **Select list of values** | Choose a configured model or list for the field, if available. |
+| **Field length** / **Banned keywords** | Limit the input length or enter comma-separated disallowed words. |
 
-* Possible field types include text, number, date, drop-down menu, checkbox, etc.
-
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="" width="241"><figcaption><p>Elements</p></figcaption></figure>
-
-#### Set validation and formatting:
-
-* Set validation rules to ensure that the data entered meets the expected criteria.
-* This may include checking for certain string patterns, numeric limits, date formats, or other conditions.
-
-<figure><img src="../../../../../.gitbook/assets/image (147).png" alt="" width="236"><figcaption></figcaption></figure>
-
-#### Define default values:
-
-* If certain fields typically have a default value, you can set that as the default value.
-* This makes data entry easier because users don't have to enter the same value every time.
-
-<figure><img src="../../../../../.gitbook/assets/image (148).png" alt="" width="224"><figcaption></figcaption></figure>
-
-#### Set user permissions:
-
-* Determine which user groups should have access to the field and what type of access rights they have.
-
-<figure><img src="../../../../../.gitbook/assets/image (150).png" alt=""><figcaption><p>Settings: Groups and Permissions</p></figcaption></figure>
-
-* This can include read, write, or edit rights.
-
-<figure><img src="../../../../../.gitbook/assets/image (151).png" alt=""><figcaption><p>View Permissions</p></figcaption></figure>
-
-#### Link to other data:
-
-* In some cases, data from one field needs to be linked to data from another field or data source.
-* Configure appropriate links or relationships to ensure consistent data integration.
-
-#### Apply visibility rules:
-
-* Determine under what conditions a field should be visible or hidden.
-* This can be useful for dynamically adapting the user interface based on certain data or user actions.
-
-<figure><img src="../../../../../.gitbook/assets/image (149).png" alt=""><figcaption><p>Setting Fields</p></figcaption></figure>
-
-#### Enable historization:
-
-* If necessary, enable historization of fields to track changes historically.
-* This allows you to track changes to the data and monitor the history of data changes.
-
-#### Add documentation notes:
-
-* Add notes or descriptions to explain to users how to use the field or what type of data is expected.
-
-By following these steps and configuring the appropriate field properties, you can ensure that your documents meet specific requirements for data handling, user access, and data accuracy.
+The **Elements** panel also offers **Groups**, **Fields** and **Form Elements** for arranging the layout. For a broader tour, see [Navigating the Layout Manager](navigating-the-layout-manager.md). Use the document type's [Fields settings](../fields/configuring-field-properties-1.md) for validation and matching; this Properties panel does not offer field-type selection, permission management or field history.

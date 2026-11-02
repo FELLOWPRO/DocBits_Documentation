@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.635
+The catalogue includes Fapiao, E-Fapiao,
+General VAT Invoice and Special VAT
+
+formats_02
+00:00:06.635 --> 00:00:17.224
+Invoice. The documented adapter uses the
+XML namespace urn:china:tax:fapiao:1.0. Do
+
+formats_03
+00:00:17.224 --> 00:00:24.000
+not assume that every native OFD, PDF or
+tax-platform export uses that contract.
+
+workflow_01
+00:00:24.750 --> 00:00:29.243
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:29.243 --> 00:00:34.305
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:34.305 --> 00:00:35.333
+activate it.
+
+accept_01
+00:00:36.083 --> 00:00:40.843
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:40.843 --> 00:00:45.847
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:45.847 --> 00:00:46.800
+delivery.
+

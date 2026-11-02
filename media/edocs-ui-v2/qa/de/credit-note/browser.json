@@ -1,0 +1,30 @@
+{
+  "locale": "de",
+  "metadata": {
+    "duration": 113.166667,
+    "width": 1280,
+    "height": 720,
+    "language": "de",
+    "cues": 22
+  },
+  "playback": {
+    "time": 0.308627,
+    "frames": 14
+  },
+  "seek": {
+    "time": 56.583333,
+    "ready": 4
+  },
+  "mobile": {
+    "scroll": 380,
+    "width": 380,
+    "captions": [
+      "Eine elektronische Gutschrift erscheint\nals Invoice. Prüfen Sie die ursprüngliche"
+    ],
+    "focusable": 0
+  },
+  "keyboardPlays": true,
+  "ended": true,
+  "range206": true,
+  "errors": []
+}

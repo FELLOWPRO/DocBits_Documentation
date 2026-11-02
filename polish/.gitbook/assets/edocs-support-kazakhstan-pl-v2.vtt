@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.229
+Kazakhstan ESF jest skonfigurowaną
+rodziną. Oznaczenie nie podaje wydania.
+
+formats_02
+00:00:06.229 --> 00:00:11.349
+Potwierdź rzeczywisty schemat XML i nie
+wnioskuj o przesyłaniu do platformy
+
+formats_03
+00:00:11.349 --> 00:00:14.700
+podatkowej na podstawie obsługi
+ekstrakcji.
+
+workflow_01
+00:00:15.450 --> 00:00:20.918
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:20.918 --> 00:00:26.491
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:26.491 --> 00:00:29.300
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:30.050 --> 00:00:36.076
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:36.076 --> 00:00:42.008
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:42.008 --> 00:00:44.833
+podatkowego ani dostarczenia przez sieć.
+

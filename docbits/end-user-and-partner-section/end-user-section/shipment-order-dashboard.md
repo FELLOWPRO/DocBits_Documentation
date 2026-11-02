@@ -1,8 +1,10 @@
 # Shipment Order Dashboard
 
-The Shipment Order Dashboard shows all shipment order lines that DocBits has received from your ERP system, so you can follow at a glance what has been shipped for each purchase order. It is available from the sidebar once the feature is switched on (see [Activating the dashboard](shipment-order-dashboard.md#activating-the-dashboard) below).
+The Shipment Order Dashboard lists shipment order lines available in DocBits, with their item, purchase order and delivery references, quantities, status and warehouse. Open it from the sidebar when it is available to your account (see [Activating the dashboard](shipment-order-dashboard.md#activating-the-dashboard) below). The table shows the current page of the list; the **All** counter reports the total available to the dashboard.
 
-<figure><img src="../../.gitbook/assets/shipment-order-dashboard-overview-en-20261010.png" alt="Shipment Order Dashboard with search bar, table columns and row actions"><figcaption><p>The Shipment Order Dashboard with its table of shipment lines, the search bar and the row actions menu.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/shipment-order-dashboard-left-native-en-20261102.png" alt="Shipment Order Dashboard item-ID search and the Item Id, Line Number, PO Number, Status and Delivery Number columns, with data hidden"><figcaption><p>Search by Item Id and the first five column headers. Row values and the total counter are hidden.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/shipment-order-dashboard-right-native-en-20261102.png" alt="Shipment Order Dashboard refresh button and the Shipped Quantity, Description, Warehouse and Actions columns, with data hidden"><figcaption><p>Refresh and the remaining column headers. These adjacent details show the same dashboard; saved column order can vary.</p></figcaption></figure>
 
 ## Table columns
 
@@ -10,7 +12,7 @@ The Shipment Order Dashboard shows all shipment order lines that DocBits has rec
 | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **Item Id**          | The item number of the ordered product.                                                                             |
 | **Line Number**      | The line of the purchase order that this shipment belongs to.                                                       |
-| **PO Number**        | The purchase order number. Click it to open the purchase order detail page with all lines and matching information. |
+| **PO Number** | The purchase order number. Where the line has a linked purchase order, select the number to open its detail page. |
 | **Status**           | The current shipping status, for example Reserved, Picking list printed, Delivered or Invoiced.                     |
 | **Shipped Quantity** | How many units have been shipped for this line.                                                                     |
 | **Delivery Number**  | The delivery note number the shipment was reported under.                                                           |
@@ -20,19 +22,23 @@ The Shipment Order Dashboard shows all shipment order lines that DocBits has rec
 
 ## Search and filters
 
-The search bar above the table filters the list by item ID as you type. The filter icon (sliders) next to it opens additional filters where you can narrow the list by PO number, shipped quantity, delivery number, warehouse and status. **Clear filters** removes the selected filter values. The refresh button next to the search bar reloads the list from your ERP system.
+Enter an item ID in **Search by Item Id**, then press **Enter** to apply the search. The sliders icon opens additional filters for PO number, shipped quantity, delivery number, warehouse and status. **Clear filters** removes the search and filter selections and reloads the list.
+
+**All** and the refresh button reset the list selections and return to the first page before reloading. Reloading the list alone does not confirm that an ERP import or synchronization has completed.
 
 ## Row actions: View
 
-Click the three-dot menu in the **Actions** column of a row and choose **View** — or simply click anywhere in the row — to jump to the purchase order detail page for that PO number. There you can check the full purchase order, its lines and the current matching status. For more background, see [Purchase Order Matching Screen](purchase-order-matching.md).
+Open the three-dot menu in a row's **Actions** column and choose **View** when the line has a linked purchase order. Selecting the line or its linked PO number also opens that purchase order's detail page. A line without a linked purchase-order identifier does not navigate to a detail page. For more background, see [Purchase Order Matching Screen](purchase-order-matching.md).
+
+<figure><img src="../../.gitbook/assets/shipment-order-view-menu-native-en-20261102.png" alt="Shipment Order Dashboard row actions menu offering View"><figcaption><p>View is available from the row's three-dot Actions menu.</p></figcaption></figure>
 
 ## Sorting, column order and page size
 
-You can sort the table by clicking a column header. Drag and drop the column headers to rearrange them, and choose how many rows are shown per page at the bottom of the table (10, 20, 25 or 50). Your sorting, column order and page size are saved per user, so the dashboard looks the same the next time you open it.
+Select a sortable column header to sort the list. Drag reorderable headers to change their order, and choose how many rows are shown per page at the bottom of the table (10, 20, 25 or 50). Column order and page size use your saved user preferences. Sorting applies to the current list.
 
 ## Activating the dashboard
 
-The Shipment Order Dashboard is disabled by default. An administrator switches it on under **Settings** → **Document Processing** → **Module** → **Purchase Order** with the **Shipment Order Dashboard** toggle. Once enabled, the menu entry appears in the sidebar for all users except suppliers. For the exact steps, see [PO Shipment Order Setting](../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md).
+An administrator configures the dashboard under **Settings** → **Module** → **Purchase Order**, using the **Shipment Order Dashboard** switch. The separate **PO Shipment Order** switch controls the delivery section inside the matching screen. Once the dashboard is enabled, eligible users can open it from the sidebar. Availability depends on the organization's configuration and the user's access. See [PO Shipment Order Setting](../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md) for the related switches.
 
 ## Video: find shipment orders and check shipping data
 

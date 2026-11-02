@@ -1,10 +1,10 @@
-# TOML Export
+# TOML-export
 
-**How XRechnung is Mapped in DocBits**
+**Hoe XRechnung in DocBits wordt gekoppeld**
 
-**1. Header Configuration (export\_configuration.header)**
+**1. Kopconfiguratie (export\_configuration.header)**
 
-The header section in the XRechnung is mapped to fields in DocBits as follows:
+De kopsectie van de XRechnung wordt als volgt aan DocBits-velden gekoppeld:
 
 \[export\_configuration.header]\
 name = "header"
@@ -36,17 +36,17 @@ name = "header"
 &#x20; TXAP = "\[tax\_applicable]"\
 &#x20; TXIN = "\[tax\_included]"
 
-  •  **SUNO**: Supplier ID, mapped to \[supplier\_id] from XRechnung.
+  •  **SUNO**: leveranciers-ID, gekoppeld aan \[supplier\_id] uit de XRechnung.
 
-  •  **IVDT**: Invoice Date, mapped to \[invoice\_date].
+  •  **IVDT**: factuurdatum, gekoppeld aan \[invoice\_date].
 
-  •  **SINO**: Invoice Number, mapped to \[invoice\_id].
+  •  **SINO**: factuurnummer, gekoppeld aan \[invoice\_id].
 
-  •  Other fields such as **total amount**, **currency**, and **payment terms** are similarly mapped from the XRechnung to DocBits fields.
+  •  Andere velden, zoals **totaalbedrag**, **valuta** en **betalingsvoorwaarden**, worden op vergelijkbare wijze vanuit de XRechnung aan DocBits-velden gekoppeld.
 
-**2. Tax Lines (export\_configuration.tax\_lines)**
+**2. Belastingregels (export\_configuration.tax\_lines)**
 
-Tax-related information is mapped using the following configuration:
+Belastinggegevens worden met de volgende configuratie gekoppeld:
 
 \[export\_configuration.tax\_lines]\
 name = "tax\_lines"
@@ -60,13 +60,13 @@ name = "tax\_lines"
 &#x20; TTXA = "\[\[amount]]"\
 &#x20; TAXC = "\[\[tax\_code]]"
 
-  •  **GEOC**: Geo Code, mapped to the corresponding \[geo\_code] from XRechnung.
+  •  **GEOC**: geografische code, gekoppeld aan de bijbehorende \[geo\_code] uit de XRechnung.
 
-  •  **TAXC**: Tax Code, mapped to \[tax\_code].
+  •  **TAXC**: belastingcode, gekoppeld aan \[tax\_code].
 
-**3. Order Header Charges (export\_configuration.order\_header\_charges)**
+**3. Kosten op orderkopniveau (export\_configuration.order\_header\_charges)**
 
-This section handles any additional charges that need to be added at the header level of the XRechnung.
+Deze sectie verwerkt aanvullende kosten die op kopniveau aan de XRechnung moeten worden toegevoegd.
 
 \[export\_configuration.order\_header\_charges]\
 name = "order\_header\_charges"
@@ -79,13 +79,13 @@ name = "order\_header\_charges"
 &#x20; CEID = "\[\[costing\_element]]"\
 &#x20; CDSE = "\[\[charge\_sequence]]"
 
-  •  **NLAM**: Amount for the order charge.
+  •  **NLAM**: bedrag van de orderkosten.
 
-  •  **CEID**: Costing Element, which can be mapped from specific XRechnung elements.
+  •  **CEID**: kostenelement dat uit specifieke XRechnung-elementen kan worden gekoppeld.
 
-**4. Receipt Lines (export\_configuration.receipt\_lines)**
+**4. Ontvangstregels (export\_configuration.receipt\_lines)**
 
-Receipt lines, which represent line items in the XRechnung, are handled as follows:
+Ontvangstregels, die de regels in de XRechnung vertegenwoordigen, worden als volgt verwerkt:
 
 \[export\_configuration.receipt\_lines]\
 name = "receipt\_lines"
@@ -109,13 +109,13 @@ name = "receipt\_lines"
 &#x20; REPN = "\[\[receipt\_number]]"\
 &#x20; PNLS = "\[\[sub\_line\_number]]"
 
-  •  **IVQA**: Quantity, mapped from the \[quantity] in the XRechnung line items.
+  •  **IVQA**: hoeveelheid, gekoppeld aan \[quantity] uit de XRechnung-regels.
 
-  •  **ITNO**: Item Number, mapped to \[item\_number].
+  •  **ITNO**: artikelnummer, gekoppeld aan \[item\_number].
 
-**5. Cost Lines (export\_configuration.cost\_lines)**
+**5. Kostenregels (export\_configuration.cost\_lines)**
 
-Cost lines, which handle additional costs in the XRechnung, are mapped using the following:
+Kostenregels voor aanvullende kosten in de XRechnung worden als volgt gekoppeld:
 
 \[export\_configuration.cost\_lines]\
 name = "cost\_lines"

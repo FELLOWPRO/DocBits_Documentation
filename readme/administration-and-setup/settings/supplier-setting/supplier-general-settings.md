@@ -1,5 +1,7 @@
 # Leverancier Algemene Instellingen
 
+<figure><img src="../../../.gitbook/assets/prior-t012-nl.png" alt="Algemene instellingen van het leveranciersportaal."><figcaption><p>Algemene instellingen van het leveranciersportaal.</p></figcaption></figure>
+
 ## Overzicht
 
 De **Leverancier Algemene Instellingen** interface biedt beheerders essentiële tools om het leveranciersportaal aan te passen. Belangrijke functies zijn onder andere de mogelijkheid om een bedrijfslogo te uploaden en het definiëren van het beleid en de privacyverklaring. Deze instellingen zijn cruciaal voor het behouden van merkconsistentie en het waarborgen van naleving van wettelijke vereisten.

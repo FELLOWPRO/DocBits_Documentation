@@ -1,37 +1,33 @@
-# Scriptactivering en -beheer
+# Scripts activeren en beheren
 
-Beheerders kunnen **Scripts** gebruiken om verwerkingsregels voor een documenttype te beheren. Deze handleiding laat zien waar u scripts vindt, hoe u ze in- of uitschakelt en hoe u een gepubliceerd script veilig wijzigt.
+## Videohandleiding: scripts beheren
 
-## Een script vinden
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/doc-config-manage-scripts/v4/nl.mp4" %}
+De scripts van een documenttype beheren
+{% endembed %}
 
-1. Open **Instellingen → Documenttypen**.
-2. Selecteer bij het gewenste documenttype **Scripts**. De pagina toont de scripts voor dat documenttype.
-3. Zoek op naam of beperk de lijst met **Alle**, **Actief** en **Inactief**. U kunt de lijst ook sorteren op naam of wijzigingsdatum.
+De video toont de scriptlijst met filter en sortering, activeren en deactiveren, kopiëren, de versiegeschiedenis en verwijderen met bevestiging.
 
-Elke kaart toont de scriptnaam, de trigger, de versie en de status. Het potlood-pictogram opent de editor; het kopieer-pictogram dupliceert het script. **Nieuw** opent de editor voor een nieuw script.
+Open het documenttype en het bijbehorende scriptbeheer. De lijst toont scripts en acties voor bewerken, kopiëren en status. Namen zijn in het voorbeeld afgeschermd.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc657-script-scripts-list-inactive-nl-20261011.png" alt="Scriptlijst voor het documenttype Invoice met een inactief documentatievoorbeeld en de filters Alle, Actief en Inactief"><figcaption><p>Controleer de status rechts op de scriptkaart voordat u deze wijzigt.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon-nl.png" alt="Scriptbeheer en bewerkingsacties; namen zijn afgeschermd."><figcaption><p>Scriptbeheer en bewerkingsacties; namen zijn afgeschermd.</p></figcaption></figure>
 
-## Een script activeren of deactiveren
+Filter op status of zoek het bedoelde script voordat u het opent. Controleer documenttype, uitvoeringsmoment en code voordat u opslaat.
 
-Gebruik de schakelaar **Actief/Inactief** op de scriptkaart. De wijziging wordt direct opgeslagen; de tellers in de lijst worden bijgewerkt. Een inactief script blijft beschikbaar om te bekijken of te bewerken, maar wordt tijdens de documentverwerking niet uitgevoerd.
+De lijst staat standaard op uitvoeringsvolgorde; met de sorteerknoppen schakelt u naar naam (A-Z / Z-A) of naar de wijzigingsdatum. Elke kaart toont de uitvoeringsvolgorde als genummerd label naast de naam van het script.
 
-**Controleer de status na het maken van een script.** In de huidige Sandbox-interface is bij het opslaan van een nieuw script een actieve versie aangemaakt en is de kaart op **Actief** gezet. Zet de schakelaar op **Inactief** als het slechts een concept of een testvoorbeeld is.
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list-nl.png" alt="Scriptlijst gesorteerd op uitvoeringsvolgorde; elke kaart toont naast de naam een genummerd label met de uitvoeringsvolgorde"><figcaption><p>Het genummerde label op elke kaart is de uitvoeringsvolgorde van het script.</p></figcaption></figure>
 
-## Een bestaand script wijzigen
+## Uitvoeringsvolgorde instellen
 
-1. Selecteer de scriptkaart of het potlood-pictogram. Een gepubliceerde versie is alleen-lezen; u kunt deze niet direct overschrijven.
-2. Selecteer in de **Versiegeschiedenis** het potlood-pictogram bij de versie die u wilt wijzigen. Er wordt dan een **Voorlopige versie** (concept) op basis van die versie aangemaakt.
-3. Bewerk het concept en selecteer het opslag-pictogram. Controleer vóór het opslaan de naam, het documenttype, de trigger en de code.
-4. Test het gewijzigde script met representatieve documenten in een testomgeving. Als het gereed is, selecteert u het vinkje-pictogram bij het concept in de **Versiegeschiedenis** om die versie actief te maken.
-5. Ga terug naar de scriptlijst en controleer de schakelaar **Actief/Inactief** van de kaart. De versie die in de versiegeschiedenis met **ACTIEF** is gemarkeerd, is de geselecteerde versie; de kaartschakelaar bepaalt of het script wordt uitgevoerd.
+Met het veld **Execution order** bepaalt u in welke volgorde scripts lopen: lagere nummers lopen eerst. Het veld blijft ook in de Nederlandse interface Engels gelabeld.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc657-script-script-published-version-nl-20261011.png" alt="Gepubliceerde scriptversie als alleen-lezen weergegeven met de melding om deze als concept te klonen"><figcaption><p>Een gepubliceerde versie kan niet direct worden bewerkt. Gebruik het potlood in de versiegeschiedenis om een concept te maken.</p></figcaption></figure>
+1. Open het script in de editor.
+2. Vul in het veld **Execution order** een heel getal vanaf 0 in. Laat het veld leeg om 0 te behouden.
+3. Sla het script op. Letters, decimalen en negatieve getallen worden met een foutmelding bij het veld geweigerd en er wordt niets opgeslagen.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc657-script-script-editable-draft-nl-20261011.png" alt="Bewerkbaar concept in de versiegeschiedenis naast de momenteel actieve scriptversie"><figcaption><p>Sla het concept op en controleer het voordat u het de actieve versie maakt.</p></figcaption></figure>
+Als u de uitvoeringsvolgorde wijzigt en daarna een versie activeert, slaat DocBits eerst het script op en activeert de versie pas als dat opslaan is gelukt.
 
-Voor scriptvoorbeelden en beschikbare functies, zie [Scripting in DocBits](scripting-in-docbits/README.md).
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor-nl.png" alt="Scripteditor met het veld Execution order rechts van de keuze van het uitvoeringsmoment"><figcaption><p>De uitvoeringsvolgorde in de scripteditor.</p></figcaption></figure>
 
-Hoe u een script maakt, de editor bedient (opmaak, concept terugzetten, AI-assistent) en de code invoert, beschrijft de pagina [Scripts maken en bewerken](creating-and-editing-scripts.md).
-
-Het prullenbak-pictogram in de scriptlijst verwijdert een script definitief; het pijl-pictogram in een versieregel van de versiegeschiedenis laadt een oudere versie als concept in de editor.
+De beschikbare acties hangen af van uw rechten. Test bedoelde wijzigingen met representatieve documenten voordat u ze in een echte workflow gebruikt.

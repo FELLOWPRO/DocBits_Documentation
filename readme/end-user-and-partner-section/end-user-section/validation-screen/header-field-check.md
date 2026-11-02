@@ -50,7 +50,7 @@ Bij XRechnung of ZUGFeRD wordt niets herkend: de waarde is in het document al ee
 * **Voorbeeld:** factuurnummer uit het XML-veld van de afzender.
 * **Als het fout is:** de fout ligt bij de afzender. DocBits toont precies uit welk XML-veld de waarde komt.
 
-### Script / transformatieregel
+### Script/ transformatieregel
 
 Na het lezen grijpt de logica van de klant in en vormt de waarde om. Het document blijft gelijk — de waarde niet.
 

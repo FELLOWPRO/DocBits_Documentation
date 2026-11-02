@@ -4,6 +4,12 @@ description: AUNZ PINT elektronisch document ondersteuning in DocBits
 
 # 🇦🇺 AUNZ PINT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Australië](countries/australia.md). Het actieve familielabel heeft geen vast PINT-versienummer. Controleer de aanpassings- en profielidentificaties; aflevering via een netwerk is een afzonderlijke integratie.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |----------|-------|
 | **Land / Regio** | Australië / Nieuw-Zeeland |
@@ -22,7 +28,7 @@ AUNZ PINT is de Australische/Nieuw-Zeelandse implementatie van het Peppol Intern
 
 ## Standaard voorbeeld
 
-<figure><img src="aunz-pint-preview.png" alt="AUNZ PINT factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="AUNZ PINT factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

@@ -4,6 +4,12 @@ description: Ondersteuning voor AUSTRIA EBINTERFACE 6.0 elektronisch document in
 
 # 🇦🇹 AUSTRIA EBINTERFACE 6.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Oostenrijk](countries/austria.md). Stem de XML-naamruimte af op de geconfigureerde versie. Een andere naamruimte kan een andere toewijzing vereisen.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Austria |
@@ -24,7 +30,7 @@ ebInterface 6.0 introduceerde afstemming op de Europese norm EN 16931, met behou
 
 ## Standaard voorvertoning
 
-<figure><img src="austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface 6.0 factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE 6.0-factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Voorvertoning van Austria ebInterface 6.0 factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een AUSTRIA EBINTERFACE 6.0-factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

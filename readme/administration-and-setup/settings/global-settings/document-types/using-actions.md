@@ -8,7 +8,7 @@ Voici un guide expliquant comment utiliser correctement les actions « Copier »
 * Sélectionnez le sous-type que vous souhaitez copier, cliquez sur « Copier » et saisissez un nouveau nom pour le sous-type copié si nécessaire.
 * Confirmez l'action et le système créera une copie du sous-type sélectionné avec tous les paramètres, champs, mises en page et scripts existants.
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Éditeur de règles de workflow avec liste de conditions, liste déroulante d'actions et barre d'outils du récapitulatif de validation"><figcaption></figcaption></figure>
 
 ## Supprimer un sous-type :
 

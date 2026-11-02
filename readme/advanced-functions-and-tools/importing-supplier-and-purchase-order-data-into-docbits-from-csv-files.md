@@ -140,21 +140,21 @@ Pour importer des données, suivez ces étapes :
 1. Visitez : [https://api.docbits.com/](https://api.docbits.com/)
 2.  Cliquez sur le bouton **"Authorize"**.
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_1.png" alt="Page Swagger de l'API DocBits avec la liste default développée et le point de terminaison healthz Healthz"><figcaption></figcaption></figure>
 3.  Entrez la clé API et cliquez sur **"Authorize"**
 
     * La clé API peut être trouvée dans DocBits dans Paramètres -> Paramètres Globaux -> Intégration
     * **Remarque :** La clé API fournie dans votre demande détermine l'organisation cible et le contexte utilisateur sous lequel les données seront importées.
 
-    <figure><img src="../.gitbook/assets/import_csv_api_fr.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_api_fr.png" alt="Page Settings de DocBits avec Global Settings ouvert affichant Company Information, Groups Users and Permissions et Integration"><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="Boîte de dialogue Available authorizations avec l'entrée APIKeyHeader apiKey et le champ de valeur d'en-tête X-API-KEY" width="563"><figcaption></figcaption></figure>
 4. Appuyez sur **CTRL + F** (ou **CMD + F** sur Mac) pour ouvrir la fonction de recherche, et recherchez `/master_data_lookup/import_data`.
 5.  Cliquez sur la demande pour voir ses détails, puis cliquez sur "**Try it out**" pour continuer.
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_3.png" alt="Barre de recherche du navigateur ouverte sur la page de l'API DocBits pour rechercher l'endpoint import_data"><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_6.png" alt="Page du point de terminaison Import Data avec le bouton Try it out et les champs du corps de requête multipart form-data"><figcaption></figcaption></figure>
 6.  Vous pouvez maintenant entrer les paramètres requis dans le corps de la demande.\\
 
     **Paramètres de demande :**
@@ -173,7 +173,7 @@ Pour importer des données, suivez ces étapes :
         3. Réglez le paramètre `delimiter` dans votre demande d'importation sur ce caractère identifié (soit `,` soit `;`). Utiliser le mauvais délimiteur empêchera les données d'être analysées correctement et entraînera un échec de l'importation.
     * **on\_conflict & auto\_generate\_id :** La fonctionnalité de gestion des conflits de données (`on_conflict`) et de génération automatique d'ID (`auto_generate_id`) n'est actuellement **pas implémentée** pour ces types de données.
 
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_4.png" alt="Corps de la requête Import Data avec les champs sub_org_id, data_type, file, delimiter, replace_all, on_conflict et auto_generate_id"><figcaption></figcaption></figure>
 7.  Si vous avez vérifié que toutes les informations sont correctes, vous pouvez initier le processus d'importation en cliquant sur le bouton **"Execute"**.
 
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_5.png" alt="Requête Import Data remplie avec data_type supplier, le fichier supplier.csv et on_conflict défini sur REPLACE"><figcaption></figcaption></figure>

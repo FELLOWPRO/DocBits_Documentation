@@ -49,7 +49,7 @@ Si la **Commande d'achat** semble correcte et contient les détails nécessaires
 
 Il devrait ressembler à ceci:
 
-<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="Écran de validation avec un tableau des lignes d'articles du reçu, les colonnes extraites de Positionen et les lignes de facture liées mises en surbrillance" width="563"><figcaption></figcaption></figure>
 
 ## **Étape 4: Ajouter le fichier mis à jour à DocBits**
 

@@ -24,7 +24,7 @@ Le `{{magic_link}}` est un espace réservé qui est remplacé dynamiquement par 
    * L'éditeur vous permet de modifier à la fois le code HTML et la conception visuelle de l'e-mail.
    * Vous pouvez passer de l'édition visuelle à l'édition du code grâce aux onglets prévus à cet effet.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Page Edit Template pour le Supplier Invitation Email avec les champs Name, Subject, Sender Name et Magic Link et la source HTML"><figcaption></figcaption></figure>
 
 #### Définir `{{magic_link}}` comme lien
 

@@ -24,7 +24,7 @@ DocBits excelle dans l'adaptation des mises en page de documents en fonction de 
 * Personnaliser les champs : Adaptez la mise en page en ajoutant ou en supprimant des champs. Par exemple, incluez 'City Tax' pour une mise en page américaine.
 * Appliquer et tester : Une fois personnalisé, appliquez la mise en page à vos documents et testez pour garantir l'exactitude.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
+![Diagramme de mise en page d'origine avec les étapes Selector, Customize, Apply Layout et Test Format dans l'ordre](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
 
 ## **Conseils pour une personnalisation efficace**
 

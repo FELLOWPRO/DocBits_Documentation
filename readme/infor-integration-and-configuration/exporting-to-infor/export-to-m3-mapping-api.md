@@ -37,15 +37,15 @@ Suppression d'un champ :
 
 * Les champs M3 disponibles peuvent être consultés en ouvrant l'écran approprié dans M3.
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt="Panneau d'état de lot M3 avec le message indiquant que la facture fournisseur 202300373 existe déjà et les champs d'informations détaillées"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt="Boîte de dialogue Field Information de M3 pour le champ WEEORN de la table FAPIBH avec le nom de panneau APA4S50E0, le type String, une longueur maximale de 30 et un bouton Copy to clipboard"><figcaption></figcaption></figure>
 
 * Vous pouvez obtenir de la même manière les noms des champs pour les lignes
 
 ### En-tête (Header) :
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt="Extrait de code du mappage M3 dans la section Header Static Fields avec StaticFields=DIVI,IBTP,BSCD et des valeurs statiques comme SF_DIVI=PJA et SF_IBTP=20"><figcaption></figcaption></figure>
 
 Propriété de liste de champs : StaticFields
 

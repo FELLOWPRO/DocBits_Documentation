@@ -91,7 +91,7 @@ Pour accéder aux journaux de flux de travail :
    * <mark style="color:red;">**Remarque**</mark>**&#x20;:** La fonctionnalité de workflow doit être activée pour accéder à cette option.
 4.  Un **panneau latéral** s'ouvre montrant un résumé des flux de travail exécutés.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
+    ![Page Export Configuration dans les réglages de DocBits avec les champs Basic Information ainsi que les zones de téléchargement du fichier ION API et du TOML Mapping File](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAlgg3jnSVRVyuYxy4tAp%252Fimage.png%3Falt%3Dmedia%26token%3D4e8fcd63-6113-47eb-95a4-95a7821dc9b9\&width=768\&dpr=4\&quality=100\&sign=9e6ba9f5\&sv=2)
 
 ## **Composants du panneau des journaux de flux de travail**
 
@@ -118,7 +118,7 @@ Chaque ligne dans le tableau représente une exécution de flux de travail et in
 
 En cliquant sur la **flèche** à gauche de chaque ligne, vous pouvez développer la **vue détaillée du flux de travail**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Vue détaillée du Workflow déployant le workflow Purchase Invoice - Approval avec des cartes When, And et Then et des résultats de conditions marqués de coches et de tirets" width="563"><figcaption></figcaption></figure></div>
 
 ### **Vue détaillée du flux de travail**
 

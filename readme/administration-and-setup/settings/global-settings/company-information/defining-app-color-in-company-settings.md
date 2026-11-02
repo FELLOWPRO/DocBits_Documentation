@@ -4,7 +4,7 @@
 
 Le paramètre **App-couleur** permet aux administrateurs de définir le schéma de couleurs de l'interface de l'application. Cette fonctionnalité est particulièrement utile pour distinguer les différents environnements tels que le test, le bac à sable et la production. En attribuant des couleurs distinctes à chaque environnement, les utilisateurs peuvent facilement identifier dans quel environnement ils travaillent, réduisant ainsi le risque d'effectuer des actions critiques dans le mauvais environnement.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/AppColor.png)
+![Page de paramètres Company Information avec la section App-Color montrant le champ App-Color réglé sur #faa5d2](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/AppColor.png)
 
 ## Accéder au paramètre de couleur de l'application
 

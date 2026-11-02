@@ -51,7 +51,7 @@ Nothing is deleted or changed in the layouts themselves. Right after activation 
 
 <figure><img src="../../../../../.gitbook/assets/lsr-layouts-overview-en-20261102.png" alt="The Layouts tab of Layouts and Selection Rules for the INVOICE document type: the screen tabs Field Validation, Approval, Reject and Review, the All, My layouts and System filter, the New layout button and layout cards with Edit, Clone and Delete."><figcaption><p>The Layouts tab: every layout of the document type as a card</p></figcaption></figure>
 
-* **Layouts / Selection rules** (below the page description) switch between the list of layouts and the list of rules. The numbers show how many there are.
+* **Layouts / Selection rules** (in the page header) switch between the list of layouts and the list of rules. The numbers show how many there are.
 * **Field Validation / Approval / Reject / Review** switch the **screen**. Every screen has its own layouts, its own rules and its own default layout — an Approval rule never changes the validation screen.
 * On the **Layouts** tab you can create, edit, clone and delete layouts. Each card shows whether a rule uses the layout ("Not targeted by rules" when none does). Filter with **All / My layouts / System**; system layouts are shipped with DocBits and can be viewed and cloned, but not changed.
 

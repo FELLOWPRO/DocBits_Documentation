@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego PARAGUAY SIFEN 150 w DocBits
 
 # 🇵🇾 PARAGUAY SIFEN 150
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Paragwaj](countries/paraguay.md). Wpisy klasyfikacji not kredytowych nie mają dedykowanych pakietów ekstrakcji w sprawdzonym stanie. Zweryfikuj faktycznie używane mapowanie i nie traktuj tych oznaczeń jako zamiennych.
+{% endhint %}
+
 | Właściwość           | Wartość                  |
 | -------------------- | ------------------------ |
 | **Kraj / Region**    | Paragwaj                 |

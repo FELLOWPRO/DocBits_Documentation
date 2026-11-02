@@ -1,4 +1,4 @@
-# Organisation document type
+# Typ dokumentu organizacji
 
 ## Kolumny
 
@@ -11,8 +11,8 @@
 * `is_active`: boolean
 * `extraction_type`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 * `sub_org_id`: internal
 

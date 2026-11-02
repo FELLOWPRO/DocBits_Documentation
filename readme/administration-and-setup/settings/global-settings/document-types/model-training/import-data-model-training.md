@@ -1,56 +1,46 @@
 # Import danych: Trenowanie modelu
 
-Szczegółowe instrukcje dotyczące importowania przykładowych dokumentów do trenowania, w tym formatu i typów dokumentów, których należy użyć.
+## Przygotuj, importuj i sprawdzaj przykładowe dokumenty
 
-**Aby zaimportować przykładowe dokumenty do trenowania, wykonaj następujące kroki:**
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-04-trainingsimport-pl-light-20261029.png" alt="Przygotuj, importuj i sprawdzaj przykładowe dokumenty"></picture><figcaption><p>Przygotuj, importuj i sprawdzaj przykładowe dokumenty</p></figcaption></figure>
 
-* **Przygotuj przykładowe dokumenty:** Upewnij się, że przykładowe dokumenty mają obsługiwany format, taki jak PDF, Word, Excel itp. Dokumenty te powinny obejmować różne typy i formaty, które mogą pojawić się w produkcyjnej pracy systemu przetwarzania dokumentów.
-* **Przejdź do funkcji importu:** Zaloguj się do obszaru administracyjnego systemu przetwarzania dokumentów i przejdź do miejsca, w którym możesz importować nowe dokumenty.
+Wybierz reprezentatywne przykładowe dokumenty, przygotuj dostępne opcje importu i sprawdź status importu. Tylko pomyślnie zaimportowane próbki są gotowe do dalszego treningu modelu. Rozwiąż błędy importu przed następnym krokiem i przechowuj niezależne dokumenty testowe oddzielnie od zbioru danych treningowych.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 20.00.03.png" alt=""><figcaption><p>Global Settings</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 20.02.26.png" alt=""><figcaption></figcaption></figure>
+Ta strona służy do dodawania przykładowych plików PDF dla typu dokumentu, a następnie do trenowania lub testowania jego modelu klasyfikacji. Wymagany jest dostęp do **Ustawienia** i **Typy dokumentów**. O celu funkcji szkoleniowych przeczytaj w sekcji [Cel i zastosowanie: Trenowanie modelu](purpose-and-use-model-training.md).
 
-* **Wybierz opcję importu dokumentów:** Kliknij przycisk lub łącze służące do importu dokumentów. Może to być opcja o nazwie np. "Import".
+## Otwórz typ dokumentu
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 19.32.26.png" alt=""><figcaption></figcaption></figure>
+1. Przejdź do **Ustawienia → Typy dokumentów**.
+2. Znajdź typ dokumentu, który chcesz wytrenować. W jego wierszu wybierz **Szkolenie modelowe**. Poniższy przykład używa typu **Faktura**.
 
-* **Wybierz format kwot i dat:**
+<figure><img src="../../../../../.gitbook/assets/dbdc651-document-types-pl-20261011.png" alt="Wiersz Faktura na stronie Typy dokumentów z linkiem Szkolenie modelowe"><figcaption><p>Otwórz Szkolenie modelowe z wybranego typu dokumentu.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+Pozostałe elementy tej karty służą innym celom: **Aktywować** włącza typ dokumentu, **Extraction** przełącza jego tryb ekstrakcji, ikona zębatki otwiera jego ustawienia, a pozostałe linki prowadzą do innych obszarów konfiguracji. Nie musisz ich zmieniać, aby otworzyć Szkolenie modelowe.
 
-**Format kwot:**
+Strona **Model Pociągu** pokazuje liczbę próbek oraz listę przesłanych dokumentów szkoleniowych. W organizacji przykładowej lista zawiera dokumenty; Twoja organizacja może wyświetlać inne dokumenty i inne liczby.
 
-Format kwot może się różnić w zależności od regionu, ale generalnie obowiązuje kilka powszechnych konwencji:
+<figure><img src="../../../../../.gitbook/assets/dbdc651-model-training-pl-20261011.png" alt="Strona Model Pociągu typu Faktura z liczbą próbek, Import, Model pociągu, Klasyfikacja testów oraz listą dokumentów"><figcaption><p>Trzy akcje znajdują się w prawym górnym rogu listy szkoleniowej.</p></figcaption></figure>
 
-1. Symbol waluty: Symbol waluty jest zazwyczaj podawany przed kwotą, np. "$" dla dolarów amerykańskich, "€" dla euro, "£" dla funtów brytyjskich itd.
-2. Separator tysięcy: W niektórych krajach długie liczby są dzielone separatorem tysięcy dla lepszej czytelności. W USA powszechnie używa się przecinka (np. 1,000), podczas gdy w wielu krajach europejskich używa się kropki (np. 1,000).
-3. Separator dziesiętny: Separator dziesiętny oddziela część całkowitą od miejsc dziesiętnych. W większości krajów anglojęzycznych używa się kropki (np. 10.99), podczas gdy w wielu krajach europejskich używa się przecinka (np. 10.99).
+## Importuj przykładowe pliki PDF
 
-#### Format daty:
+1. Wybierz **Import**.
+2. Wybierz **Format kwoty i daty** pasujący do przykładowego dokumentu. Na przykład wybierz **Germany** dla konwencji liczb i dat niemieckich. Ten wybór mówi DocBits, jak interpretować wartości w przesłanym dokumencie; nie zmienia języka aplikacji.
+3. Przeciągnij pliki PDF i upuść je w oknie dialogowym lub użyj przycisku **Wgrywać**, aby je wybrać. Obecny importer dokumentów przykładowych akceptuje **pliki PDF**; odrzuca inne typy plików. Wybranie plików rozpoczyna przesyłanie.
+4. Zamknij okno dialogowe i sprawdź, czy dokumenty pojawiły się na liście szkoleniowej. Jeśli DocBits zgłosi błąd przesyłania lub dokument już istnieje, popraw plik lub wybierz inny przykład przed kontynuowaniem.
 
-Format daty również różni się w zależności od regionu, a poszczególne kraje stosują różne konwencje. Oto najczęstsze formaty:
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-pl.png" alt="Okno dialogowe Wgrywać z selektorem Format kwoty i daty, obszarem przeciągnij i upuść oraz polem Wgrywać"><figcaption><p>Wybierz format przed wybraniem przykładowych plików PDF.</p></figcaption></figure>
 
-1. Dzień-miesiąc-rok (DD-MM-YY lub DD.MM.YY): W wielu krajach europejskich data jest podawana w formacie dzień-miesiąc-rok. Na przykład "21.05.24" oznacza 21 maja 2024 r.
-2. Miesiąc-dzień-rok (MM-DD-YY lub MM/DD/YY): W Stanach Zjednoczonych często stosuje się format miesiąc-dzień-rok. Na przykład "05/21/24" oznacza 21 maja 2024 r.
-3. Rok-miesiąc-dzień (YY-MM-DD lub YY/MM/DD): W niektórych innych krajach preferowany jest format rok-miesiąc-dzień. Na przykład "24/05/21" oznacza 21 maja 2024 r.
+<figure><img src="../../../../../.gitbook/assets/dbdc651-format-menu-pl-20261011.png" alt="Menu Format kwoty i daty z wyborami krajów i regionów, w tym Germany i United Kingdom"><figcaption><p>Wybierz format użyty w dokumencie, a nie preferowany język interfejsu.</p></figcaption></figure>
 
-Ważne jest, aby zwrócić uwagę na konkretny format, by uniknąć nieporozumień, zwłaszcza w komunikacji międzynarodowej lub transakcjach finansowych.
+Informacje o działaniach na zaimportowanych próbkach znajdziesz w sekcji [Zarządzanie danymi treningowymi](manage-training-data.md).
 
-* **Wybierz przykładowe dokumenty:** Wybierz przykładowe dokumenty, które chcesz zaimportować. Możesz to zrobić, przesyłając pliki z lokalnego komputera lub wybierając dokumenty z już połączonej lokalizacji.
+## Wytrenuj i sprawdź model
 
-<figure><img src="../../../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+Gdy wybrane przykładowe pliki PDF znajdą się na liście, wybierz **Model pociągu**. DocBits może przetwarzać szkolenie w tle; poczekaj na komunikat o zakończeniu, zanim uznasz nowy model za gotowy. Liczba próbek i ewentualny limit planu wyświetlane na tej stronie należą do Twojej organizacji.
 
-* **Skonfiguruj typy i podtypy dokumentów (w razie potrzeby):** Jeśli Twój system obsługuje różne typy lub podtypy dokumentów, przypisz odpowiedni typ do każdego importowanego dokumentu. Pomoże to systemowi prawidłowo kategoryzować i przetwarzać dokumenty.
-* **Rozpocznij proces importu:** Potwierdź wybór dokumentów i rozpocznij import. W zależności od rozmiaru i liczby dokumentów proces ten może chwilę potrwać.
+Aby sprawdzić klasyfikację, wybierz **Klasyfikacja testów**, a następnie prześlij osobny plik przykładowy w oknie dialogowym. Po przetworzeniu DocBits pokazuje, czy przewidziany typ dokumentu odpowiada tej stronie, i raportuje szczegóły klasyfikacji. Poniższe puste okno dialogowe testu pokazano bez przesyłania pliku.
 
-<figure><img src="../../../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc651-test-dialog-pl-20261011.png" alt="Okno dialogowe Klasyfikacja testów z obszarem przeciągnij i upuść oraz polem Wgrywać"><figcaption><p>Użyj Klasyfikacja testów, aby sprawdzić model na innym dokumencie.</p></figcaption></figure>
 
-* **Sprawdź status importu:** Sprawdź status procesu importu, aby upewnić się, że wszystkie dokumenty zostały zaimportowane pomyślnie. Upewnij się, że nie wystąpiły błędy i że dokumenty zostały przetworzone prawidłowo.
-* **Wytrenuj model:** Po zaimportowaniu dokumentów użyj ich do wytrenowania modelu systemu przetwarzania dokumentów. Przeprowadź trenowanie zgodnie z instrukcjami systemu, aby mieć pewność, że będzie on skutecznie przetwarzał przykładowe dane.
-
-<figure><img src="../../../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (88).png" alt="" width="284"><figcaption></figcaption></figure>
-
-Regularnie dodając przykładowe dokumenty do trenowania, możesz zapewnić, że Twój system przetwarzania dokumentów będzie zawsze aktualny oraz będzie zapewniał dokładne i wydajne przetwarzanie.
+Informacje o interpretacji wyniku znajdziesz w sekcji [Testowanie modelu](testing-the-model.md). Jeśli wynik jest słaby, przejrzyj [dane treningowe](manage-training-data.md) i [przewodnik rozwiązywania problemów](troubleshooting.md), zanim dodasz więcej próbek.

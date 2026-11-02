@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego KOREA NTS w DocBits
 
 # 🇰🇷 KOREA NTS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Korea Południowa](countries/korea.md). Oznaczenia nie podają wydania. Dopasuj rzeczywistą strukturę XML i nie traktuj ekstrakcji jako dowodu akceptacji przez platformę podatkową.
+{% endhint %}
+
 | Właściwość           | Wartość                                   |
 | -------------------- | ----------------------------------------- |
 | **Kraj / Region**    | Korea Południowa                          |

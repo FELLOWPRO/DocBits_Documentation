@@ -1,6 +1,67 @@
-# Informacje o wersji
+# Notatki do wydania
 
-> **Najnowsza wersja hotfix:** [Hotfixy 14 października 2026](incremental-updates-14-october-2026.md) (R1.0.15): czat Settings Assistant na każdej stronie ustawień, nowe poziomy AI (Fast, Full, Nexus, Auto), kontrola pól nagłówka, bezpieczniejsze logowanie i logowanie społecznościowe oraz dopasowywanie opłat w zamówieniach zakupowych. Poprzednia: [Hotfixy 15 września 2026](incremental-updates-15-september-2026.md). Wszystkie strony hotfixów są wymienione w nawigacji pod Notatkami o wydaniu.
+**Dostępność NOVA R1.1:** Wersja jest dostępna w środowisku testowym od **16 października 2026 r.** Wydanie produkcyjne jest planowane na **4 listopada 2026 r.**
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.mp4" %}
+
+**DocBits to produkt. NOVA to nazwa cyklu wydań.** [Obejrzyj film o nowym wydaniu DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.mp4) · [Napisy](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.vtt).
+
+Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl NOVA wprowadza nowe wydanie minor DocBits z dodatkowymi funkcjami dla klientów. Hotfixy VESTA ulepszają bieżącą wersję produkcyjną.** Zobacz [cykl życia wydania](../docbits-release-lifecycle-strategy.md), aby poznać dostępność i możliwość przełączania między kanałami.
+
+**Funkcje dostępne wcześniej w wersji beta VESTA są zawarte w środowisku testowym NOVA.** Wszystkie te funkcje należą do standardowego zestawu funkcji NOVA i można je przetestować przed planowanym wydaniem produkcyjnym. Staną się również standardowymi funkcjami VESTA wraz z [następną poprawką VESTA, planowaną na **11 listopada 2026 r.**](vesta-hotfix-11-november-2026.md).
+
+| Kanał wydania | Notatki do wydania | Zakres |
+| --- | --- | --- |
+| **NOVA – Wydanie minor** | [Nowości dla klientów](nova-minor-release-4-november-2026.md) · **4 listopada 2026 r. (planowane)** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
+| **VESTA — Następny hotfix (planowany)** | [11 listopada 2026 r.](vesta-hotfix-11-november-2026.md) | Wprowadza wszystkie funkcje, które wcześniej były w wersji beta VESTA, do standardowego zestawu funkcji VESTA. |
+| **VESTA — Wydanie hotfix** | [14 października 2026 r. — R1.0.15](incremental-updates-14-october-2026.md) | Ulepszenia i poprawki dla bieżącej wersji produkcyjnej VESTA. |
+
+## NOVA – Wydanie minor 4 listopada 2026 r.
+
+### Co zyskuje Twój zespół dzięki NOVA
+
+* **Korzystaj z funkcji, które wcześniej były w wersji beta VESTA, jako ze standardowych funkcji NOVA.** Wszystkie funkcje wcześniej oferowane w wersji beta VESTA są teraz dostępne w NOVA, w tym elementy sterujące zarządzaniem regułami i układami. Ustawienia organizacji, przełączniki typów dokumentów i uprawnienia nadal obowiązują.
+* **Rozwiązuj problemy blokujące dokumenty dzięki Asystentowi walidacji.** Dowiedz się, co blokuje dokument, przejdź do odpowiedniego pola i przejrzyj sugerowane poprawki, pozostając w widoku dokumentu.
+* **Przekształć powtarzalne poprawki w zweryfikowane ulepszenia automatyzacji.** Recenzenci mogą przesyłać wnioski o ulepszenia; administratorzy mogą oceniać wyuczone propozycje reguł, przeglądać objęte dokumenty i mierzyć wyniki po aktywacji.
+* **Rozumiej błędy e-faktur i podejmuj działania.** Korzystaj z raportów pogrupowanych według poziomu walidacji, przeglądaj polityki dotyczące typów dokumentów i ich historię oraz odrzucaj kwalifikującą się fakturę z odnotowaną przyczyną.
+* **Konfiguruj i kontroluj importy FTP/SFTP.** Korzystaj z kreatora połączeń, postępuj zgodnie z krokami importu dla poszczególnych plików, konfiguruj ponowne próby i powiadomienia o błędach oraz opcjonalnie usuwaj pliki źródłowe po pomyślnym imporcie.
+* **Dopasowuj pozycje dostaw przy mniejszej liczbie powtarzalnych czynności.** Najpierw wybierz pozycje dokumentu lub zamówienia zakupu i łącz je w dowolnym kierunku. Skonfigurowane eksporty mogą zachowywać szczegóły podpozycji i grupować rekordy według wartości pozycji.
+* **Oddzielaj eksportowaną pracę od pracy zakończonej.** Używaj statusu Exported do dalszego przetwarzania i opcjonalnie blokuj dokumenty Finished przed zwykłym ponownym otwarciem.
+* **Miej bezpośredni dostęp do elementów sterujących regułami i układami.** Otwieraj panele zarządzania bez linku beta, szukaj i podglądaj układy oraz otwieraj edytor układu z poziomu dokumentu.
+* **Kontroluj ekstrakcję i rutynową administrację.** Ponownie uruchamiaj dokument z wybraną liczbą stron, decyduj, czy wyodrębniać ukryte pola, korzystaj z dodatkowych akcji Asystenta ustawień i ograniczaj reguły powiadomień do suborganizacji.
+
+### Przewodniki dotyczące konfigurowania reguł
+
+* [**Zasady transformacji**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): porządkuj i przepisuj wyodrębnione wartości, twórz sekwencje kroków i podglądaj wyniki. **Obejrzyj:** [Obejrzyj film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pl.mp4).
+* [**Niestandardowe reguły walidacji**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definiuj sprawdzenia dla pól i wierszy tabel, wybieraj warunki i poziom ważności oraz testuj swoje reguły. **Obejrzyj:** [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
+* [**Reguły dopasowywania zamówień**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): konfiguruj typy dopasowań, tolerancje i kolejność wykonania oraz zarządzaj wersjami reguł. **Powiązany film — Wybierz właściwą automatyzację:** [Obejrzyj film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pl.mp4).
+
+[Przeglądaj wszystkie filmy dotyczące funkcji](nova-minor-release-4-november-2026.md#watch-the-feature-videos), w tym dotyczące układów, Touchless Intelligence, walidacji e-faktur oraz sześcioodcinkowej serii AI Table.
+
+[Przeczytaj pełne porównanie funkcji NOVA](nova-minor-release-4-november-2026.md), w tym wymagania dotyczące aktywacji, dodatkowe ulepszenia i wszystkie **16 wersji usługi**.
+
+**Bazowa wersja VESTA obejmuje istniejące funkcje i funkcje beta:** oryginalny Asystent ustawień, podstawowe ostrzeżenia dotyczące stanu importu, poziomy AI, Kontrola pól nagłówka, pulpit Touchless Intelligence, silniki reguł, transformacje po wyszukiwaniu danych podstawowych oraz podstawowe logi wykonania reguł. Notatki dotyczące NOVA odróżniają przejście z wersji beta do regularnej dostępności od dalszych rozszerzeń tych możliwości.
+
+## VESTA — Wydania poprawek <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
+
+**Następne planowane wydanie poprawki: [11 listopada 2026](vesta-hotfix-11-november-2026.md).** Wszystkie funkcje wcześniej dostępne w VESTA jako beta, a obecnie włączone do NOVA, staną się standardowymi funkcjami VESTA w tym wydaniu poprawki.
+
+**Najnowsze wydane wydanie poprawki: [14 października 2026 — R1.0.15](incremental-updates-14-october-2026.md).** To wydanie poprawki VESTA wprowadziło Asystenta ustawień, zaktualizowane poziomy AI, Kontrolę pól nagłówka, ulepszenia logowania oraz ulepszenia dopasowywania kosztów zamówień zakupu.
+
+Wcześniejsze notatki dotyczące wydań poprawek VESTA:
+
+* [15 września 2026 — R1.0.13](incremental-updates-15-september-2026.md)
+* [8 września 2026](incremental-updates-8-september-2026.md)
+* [12–25 sierpnia 2026](incremental-updates-12-25-august-2026.md)
+* [29 lipca – 12 sierpnia 2026](incremental-updates-29-july-12-august-2026.md)
+* [14–29 lipca 2026](incremental-updates-14-29-july-2026.md)
+* [4–14 lipca 2026](incremental-updates-4-14-july-2026.md)
+* [3–4 lipca 2026](incremental-updates-3-4-july-2026.md)
+* [30 czerwca – 3 lipca 2026](incremental-updates-30-june-3-july-2026.md)
+* [26–30 czerwca 2026](incremental-updates-26-30-june-2026.md)
+* [21–25 czerwca 2026](incremental-updates-21-25-june-2026.md)
+
+Oryginalne ogłoszenia dotyczące wydań pozostają poniżej w celach referencyjnych.
 
 ## **Release R1.0 13/14 czerwca 2026**
 
@@ -183,7 +244,7 @@
 *   **Zastosuj domyślny Layout do wszystkich Origins:**\
     Nowy przycisk **Apply Default Layout to Origins** został wprowadzony na ekranie konfiguracji layoutu. Administratorzy mogą teraz przekazać domyślny layout do wszystkich origins w organizacji jedną akcją, eliminując czasochłonny ręczny proces kopiowania i wklejania JSON layoutu dla każdego origin osobno. Jest to szczególnie przydatne podczas wdrażania nowych klientów, gdzie wiele origins musi być skonfigurowanych spójnie.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-pl-20261023.png" alt="Kreator układów z polskim interfejsem i otwartym oknem do zastosowania domyślnego układu do wielu Origins."><figcaption><p>Okno zastosowania domyślnego układu do Origins. Dane przykładowe; nic nie zapisano.</p></figcaption></figure>
 *   **Wybór typu dokumentu dla importu FTP:**\
     Konfiguracje importu FTP obsługują teraz przypisywanie typu dokumentu na poziomie folderu. Podczas konfigurowania importu FTP użytkownicy mogą określić, jaki typ dokumentu — taki jak Faktura lub Potwierdzenie Zamówienia — powinien być stosowany do wszystkich dokumentów importowanych z danego folderu. Dokumenty są automatycznie klasyfikowane przy imporcie, eliminując potrzebę ręcznego przypisywania typu dokumentu po pozyskaniu. Wspiera to organizacje zarządzające wieloma typami dokumentów w różnych podorganizacjach i folderach.
 
@@ -492,7 +553,7 @@ DocBits zapewnia teraz pełną obsługę ZUGFeRD w wersji 2.1 i nowszych, umożl
 * **Elastyczność**: Niezależnie od tego, czy pracujesz z profilami basic, comfort czy extended w standardzie ZUGFeRD, DocBits udostępnia narzędzia do obsługi każdego poziomu złożoności faktur.
 * **Odporność na zmiany**: Dzięki obsłudze nowszych wersji DocBits zapewnia firmom zgodność z rozwijającymi się przepisami dotyczącymi e-fakturowania w państwach członkowskich UE i poza nimi.
 
-Dzięki wdrożeniu ZUGFeRD 2.1 i nowszych standardów DocBits upraszcza transakcje transgraniczne i odpowiada współczesnym potrzebom biznesowym, stając się niezbędnym narzędziem dla organizacji, które stawiają na transformację cyfrową i zgodność z przepisami. [Poznaj wersje ZUGFeRD i ich mapowania w DocBits](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+Dzięki wdrożeniu ZUGFeRD 2.1 i nowszych standardów DocBits upraszcza transakcje transgraniczne i odpowiada współczesnym potrzebom biznesowym, stając się niezbędnym narzędziem dla organizacji, które stawiają na transformację cyfrową i zgodność z przepisami. [Poznaj wersje ZUGFeRD i ich mapowania w DocBits](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Integracja zewnętrznych API dla ulepszonego przetwarzania dokumentów
 
@@ -500,13 +561,13 @@ DocBits wprowadza zaawansowaną możliwość wykorzystania zewnętrznych API pod
 
 ### Dostęp Cross Sub-Organizations
 
-Dla organizacji z włączonymi wieloma podorganizacjami DocBits wprowadza funkcję Cross Sub-Organizations. To ulepszenie umożliwia użytkownikom administracyjnym usprawnienie zarządzania dokumentami we wszystkich podorganizacjach pod jednym parasolem. Administratorzy mogą teraz uzyskiwać dostęp do wszystkich dokumentów z każdej podorganizacji i je przeglądać bez konieczności przełączania podorganizacji. Ta scentralizowana widoczność pozwala administratorom zobaczyć wszystkie dokumenty wszystkich podorganizacji, co ułatwia znajdowanie konkretnych plików przy jednoczesnym zachowaniu widoku z lotu ptaka. [Dowiedz się więcej](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
+Dla organizacji z włączonymi wieloma podorganizacjami DocBits wprowadza funkcję Cross Sub-Organizations. To ulepszenie umożliwia użytkownikom administracyjnym usprawnienie zarządzania dokumentami we wszystkich podorganizacjach pod jednym parasolem. Administratorzy mogą teraz uzyskiwać dostęp do wszystkich dokumentów z każdej podorganizacji i je przeglądać bez konieczności przełączania podorganizacji. Ta scentralizowana widoczność pozwala administratorom zobaczyć wszystkie dokumenty wszystkich podorganizacji, co ułatwia znajdowanie konkretnych plików przy jednoczesnym zachowaniu widoku z lotu ptaka. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#opcja-pokaz-organizacje-krzyzowa-cross)
 
 <figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt=""><figcaption></figcaption></figure>
 
 ### Widoczność dokumentów na podstawie uprawnień grup
 
-DocBits wprowadza rozszerzone mechanizmy kontroli widoczności dokumentów, umożliwiające precyzyjniejsze zarządzanie dostępem dla użytkowników niebędących administratorami za pomocą uprawnień opartych na grupach. Funkcja ta pozwala administratorom określać, które dokumenty są widoczne dla określonych użytkowników lub grup, co zapewnia uporządkowane przepływy pracy i lepsze bezpieczeństwo danych. Administratorzy mogą przypisywać dokumenty do konkretnych grup, nadając widoczność wyłącznie użytkownikom z tych grup. Dzięki temu użytkownicy widzą tylko dokumenty istotne dla ich roli lub zespołu, co ogranicza bałagan i poprawia koncentrację. [Dowiedz się więcej](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
+DocBits wprowadza rozszerzone mechanizmy kontroli widoczności dokumentów, umożliwiające precyzyjniejsze zarządzanie dostępem dla użytkowników niebędących administratorami za pomocą uprawnień opartych na grupach. Funkcja ta pozwala administratorom określać, które dokumenty są widoczne dla określonych użytkowników lub grup, co zapewnia uporządkowane przepływy pracy i lepsze bezpieczeństwo danych. Administratorzy mogą przypisywać dokumenty do konkretnych grup, nadając widoczność wyłącznie użytkownikom z tych grup. Dzięki temu użytkownicy widzą tylko dokumenty istotne dla ich roli lub zespołu, co ogranicza bałagan i poprawia koncentrację. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
 
 <figure><img src="../../.gitbook/assets/Group Based Permission.png" alt=""><figcaption></figcaption></figure>
 
@@ -524,13 +585,13 @@ DocBits wprowadza zaawansowaną funkcję Sequential Workflow i Approval History,
   * Działania użytkowników (np. „approved", „rejected")
   * Znaczniki czasu każdego działania
   * Komentarze lub notatki dodane przez użytkowników podczas przeglądu
-* Historia zapewnia przejrzystość i stanowi ślad audytu na potrzeby zgodności i rozwiązywania problemów. [Dowiedz się więcej](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/approval-history)
+* Historia zapewnia przejrzystość i stanowi ślad audytu na potrzeby zgodności i rozwiązywania problemów. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history)
 
 <figure><img src="../../.gitbook/assets/Approval History.png" alt=""><figcaption></figcaption></figure>
 
 ### Ulepszenie archiwum dokumentów SFTP/FTP
 
-Ulepszenie archiwum dokumentów SFTP/FTP w DocBits rozwija istniejącą funkcję importu, wprowadzając płynną metodę archiwizowania plików po ich przetworzeniu. Nowe ustawienie w konfiguracji importu FTP pozwala włączyć lub wyłączyć archiwizację plików. Gdy pliki zostaną pomyślnie pobrane i przetworzone w DocBits, są automatycznie archiwizowane w wyznaczonym folderze na serwerze SFTP/FTP, jeśli opcja jest włączona. Dzięki temu przetworzone pliki są zachowane do celów ewidencyjnych bez zaśmiecania aktywnych katalogów importu. [Dowiedz się więcej](https://docs.docbits.com/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
+Ulepszenie archiwum dokumentów SFTP/FTP w DocBits rozwija istniejącą funkcję importu, wprowadzając płynną metodę archiwizowania plików po ich przetworzeniu. Nowe ustawienie w konfiguracji importu FTP pozwala włączyć lub wyłączyć archiwizację plików. Gdy pliki zostaną pomyślnie pobrane i przetworzone w DocBits, są automatycznie archiwizowane w wyznaczonym folderze na serwerze SFTP/FTP, jeśli opcja jest włączona. Dzięki temu przetworzone pliki są zachowane do celów ewidencyjnych bez zaśmiecania aktywnych katalogów importu. [Dowiedz się więcej](https://docs.docbits.com/polish/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
 
 <figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt=""><figcaption></figcaption></figure>
 
@@ -717,7 +778,7 @@ DocBits oferuje teraz możliwość zmiany wersji OCR (Optical Character Recognit
 
 ### Nowe funkcje:
 
-## Rule Manager
+## Menedżer reguł
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") zapewnia elastyczność tworzenia i edycji reguł rozwiązywania konfliktów dostosowanych do systemu fakturowania DocBits. Reguły te służą do automatycznej obsługi rozbieżności między szczegółami faktury a danymi zamówienia zakupu (PO), co zapewnia dokładne uzgodnienia finansowe. System stosuje te reguły do przetwarzania linii faktury, opłat i podatków oraz generuje odpowiednie korekty lub notatki, gdy jest to konieczne.
 

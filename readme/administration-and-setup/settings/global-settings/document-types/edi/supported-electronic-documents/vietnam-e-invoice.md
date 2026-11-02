@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego VIETNAM E-INVOICE w DocBits
 
 # 🇻🇳 VIETNAM E-INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Wietnam](countries/vietnam.md). Oznaczenie nie podaje wydania. Sprawdź źródłową przestrzeń nazw i schemat zamiast zakładać, że wszystkie eksporty z platformy podatkowej mają tę samą strukturę.
+{% endhint %}
+
 | Właściwość | Wartość |
 | ---------- | ------- |
 | **Kraj/Region** | Wietnam |

@@ -1,6 +1,6 @@
 # Ustawienia ogólne dostawcy
 
-<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="Ustawienia ogólne dostawcy"><figcaption><p>Strona Ustawienia ogólne dostawcy</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t012-pl.png" alt="Ogólne ustawienia portalu dostawców."><figcaption><p>Ogólne ustawienia portalu dostawców.</p></figcaption></figure>
 
 ### Przegląd
 

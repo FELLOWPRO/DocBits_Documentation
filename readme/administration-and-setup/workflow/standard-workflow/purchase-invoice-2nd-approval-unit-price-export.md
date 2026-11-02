@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Unit Price Export
+# Faktura zakupu — eksport po drugim zatwierdzeniu ceny jednostkowej
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_5.png" alt="DocBits Zakup Zamówienie Eksport 5"><figcaption></figcaption></figure>
+
 
 Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim etapem zatwierdzania faktur zakupowych z naciskiem na cenę jednostkową, zapewniając jej zgodność z uzgodnionymi warunkami.
 
@@ -13,7 +13,7 @@ Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim 
    * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ten warunek dodatkowo określa, że reguła ma zastosowanie tylko do faktur sklasyfikowanych konkretnie jako "Purchase Invoices", odróżniając je od innych typów faktur.
    * **Logic Unit Price in order confirmation Equals purchase order**: Ten warunek sprawdza, czy cena jednostkowa wymieniona w potwierdzeniu zamówienia jest zgodna z ceną jednostkową w zamówieniu zakupu. Zapewnia, że przetwarzanie faktury postępuje tylko wtedy, gdy występuje spójność w cenach, co jest kluczowe dla budżetowania i raportowania finansowego.
 
-#### Action (Then…):
+#### Działanie (Then…):
 
 * **Start Export**: Gdy faktura spełnia określone warunki (tj. ceny jednostkowe są zgodne między potwierdzeniem zamówienia a zamówieniem zakupu), wyzwalana jest akcja "Start Export". Prawdopodobnie obejmuje to eksport danych faktury do dalszego przetwarzania, ewentualnie do innego systemu finansowego lub na potrzeby raportowania.
 

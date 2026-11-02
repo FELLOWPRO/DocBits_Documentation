@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych AUNZ PINT w DocBits
 
 # 🇦🇺 AUNZ PINT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Australia](countries/australia.md). Aktywne oznaczenie rodziny nie ma stałego numeru wydania PINT. Sprawdź identyfikatory dostosowania i profilu; dostarczenie przez sieć wymaga osobnej integracji.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj / Region** | Australia / Nowa Zelandia |
@@ -24,7 +30,7 @@ AUNZ PINT to australijska/nowozelandzka implementacja międzynarodowego modelu f
 
 ## Domyślny podgląd
 
-<figure><img src="aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT</p></figcaption></figure>
 
 ## Mapowanie pól
 

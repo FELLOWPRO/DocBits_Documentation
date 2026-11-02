@@ -17,7 +17,7 @@ Aby włączyć funkcję ekstrakcji kodów kreskowych, wykonaj następujące krok
 
 ## **Dodatkowe ustawienia**
 
-### **Barcode Assignment**
+### **Przypisywanie kodów kreskowych**
 
 #### **Cel:** Pozwala walidatorom ręcznie przypisać wyodrębnioną wartość kodu kreskowego do wybranego pola dokumentu podczas walidacji pól.
 

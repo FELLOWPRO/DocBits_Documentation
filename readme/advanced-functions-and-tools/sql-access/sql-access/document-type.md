@@ -1,4 +1,4 @@
-# Document type
+# Typ dokumentu
 
 ## Kolumny
 
@@ -13,8 +13,8 @@
 * `has_table`: boolean
 * `sort_order`: integer
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 
 ## Analiza i opis

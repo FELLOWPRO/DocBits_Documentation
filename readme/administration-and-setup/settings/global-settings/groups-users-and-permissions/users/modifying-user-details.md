@@ -1,6 +1,6 @@
 # Modyfikowanie szczegółów użytkownika
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="Przegląd menu ustawień użytkownika"><figcaption><p>Ustawienia użytkownika</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u001-pl.png" alt="Zarządzanie użytkownikami z ukrytymi danymi osobowymi."><figcaption><p>Zarządzanie użytkownikami z ukrytymi danymi osobowymi.</p></figcaption></figure>
 
 * **Logowanie jako administrator:** Zaloguj się z uprawnieniami administratora.
 * **Dostęp do zarządzania użytkownikami:** Przejdź do ustawień użytkowników, gdzie możesz edytować istniejących użytkowników.
@@ -14,9 +14,7 @@
     * Adres e-mail
     * Rola użytkownika lub poziom uprawnień
 
-
-
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="Formularz edycji szczegółów użytkownika" width="300"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/prior-u002-pl.png" alt="Formularz edycji użytkownika z ukrytymi wartościami."><figcaption><p>Formularz edycji użytkownika z ukrytymi wartościami.</p></figcaption></figure>
 * **Zapisywanie zmian:** Przejrzyj wprowadzone zmiany i kliknij Save, aby zapisać nowe szczegóły użytkownika.
 
 <figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="Przycisk zapisywania zmian użytkownika"><figcaption></figcaption></figure>
@@ -25,8 +23,6 @@
 * **Wyślij powiadomienie (opcjonalnie):** Możesz wysłać użytkownikowi powiadomienie, aby poinformować go o wprowadzonych zmianach.
 
 Po zakończeniu tych kroków szczegóły użytkownika zostaną pomyślnie zaktualizowane, a użytkownik będzie miał nowe informacje i uprawnienia zgodnie z wprowadzonymi zmianami.
-
-
 
 ## Usuwanie użytkowników:
 

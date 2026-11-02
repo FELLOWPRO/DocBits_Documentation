@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego URUGUAY CFE 25 w DocBits
 
 # 🇺🇾 URUGUAY CFE 25
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Urugwaj](countries/uruguay.md). Wpisy not kredytowych nie mają dedykowanych pakietów ekstrakcji w sprawdzonym stanie. Potwierdź wersję CFE i faktycznie używane mapowanie faktur lub not kredytowych.
+{% endhint %}
+
 | Właściwość | Wartość |
 | ---------- | ------- |
 | **Kraj/Region** | Urugwaj |

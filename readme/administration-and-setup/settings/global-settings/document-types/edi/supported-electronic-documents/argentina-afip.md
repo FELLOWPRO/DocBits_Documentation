@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych ARGENTINA AFIP w DocBits
 
 # 🇦🇷 ARGENTINA AFIP
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Argentyna](countries/argentina.md). Wpis klasyfikacji not kredytowych nie ma dedykowanego pakietu ekstrakcji w sprawdzonym stanie. Zweryfikuj faktycznie używane mapowanie i przetestuj rzeczywisty przykład noty kredytowej.
+{% endhint %}
+
 | Właściwość           | Wartość                                                                    |
 | -------------------- | -------------------------------------------------------------------------- |
 | **Kraj / Region**    | Argentyna                                                                  |

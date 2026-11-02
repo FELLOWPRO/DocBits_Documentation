@@ -1,34 +1,36 @@
-# Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance
+# Przypadek 8a, 9a: Ilość poza tolerancją — zatwierdzenie; cena w tolerancji
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
+## Scenariusz:
 
-## Action:
+Ilość na fakturze wykracza poza dopuszczalną tolerancję, ale została zatwierdzona, a cena jednostkowa mieści się w tolerancji.
 
-The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+## Działanie:
 
-## Example:
+System akceptuje zatwierdzoną ilość oraz cenę jednostkową z faktury i zgodnie z nią realizuje transakcję.
+
+## Przykład:
 
 * **Purchase Order (PO):**
   * Quantity: 150 units
-  * Unit Price: $12.00 per unit
+  * Cena jednostkowa: $12.00 za sztukę
   * Total Amount: $1,800.00
 * **Invoice Received:**
-  * Quantity: 160 units (outside tolerance of 6.67% but approved)
-  * Unit Price: $12.00 per unit (within tolerance)
+  * Ilość: 160 jednostek (tolerancja zewnętrzna 6.67%, ale zatwierdzona)
+  * Cena jednostkowa: $12.00 za sztukę (w granicach tolerancji)
   * Total Amount: $1,920.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerancja ceny jednostkowej: ±2%
 
-Since the quantity (160 units) exceeds the acceptable tolerance limit but has been approved, and the unit price ($12.00) is within the acceptable range, the system will:
+Ponieważ ilość (160 sztuk) przekracza dopuszczalny limit tolerancji, ale została zatwierdzona, a cena jednostkowa ($12.00) mieści się w akceptowalnym przedziale, system:
 
-1. **Accept the Approved Quantity:** The system acknowledges that the quantity has been approved despite being outside the normal tolerance range.
-2. **Accept the Unit Price:** The unit price of $12.00 per unit is within the acceptable tolerance, so it is accepted as invoiced.
-3. **Process the Transaction:** The system calculates the total amount using the approved quantity and unit price:
-   * **Total Amount = Quantity × Unit Price**
-   * **Total Amount = 160 units × $12.00 per unit = $1,920.00**
-4. **Finalize the Invoice:** The system processes the invoice with the total amount of $1,920.00, reflecting the approved quantity and accepted unit price.
+1. **Zaakceptuj zatwierdzoną ilość:** System potwierdza, że ilość została zatwierdzona, mimo że wykracza poza normalny zakres tolerancji.
+2. **Zaakceptuj cenę jednostkową:** Cena jednostkowa wynosząca $12.00 za jednostkę mieści się w dopuszczalnej tolerancji, dlatego jest akceptowana jako zafakturowana.
+3. **Przetwórz transakcję:** System oblicza całkowitą kwotę na podstawie zatwierdzonej ilości i ceny jednostkowej:
+   * **Kwota całkowita = Ilość × Cena jednostkowa**
+   * **Kwota całkowita = 160 jednostek × $12.00 za jednostkę = $1,920.00**
+4. **Sfinalizuj fakturę:** System przetwarza fakturę na łączną kwotę $1,920.00, odzwierciedlającą zatwierdzoną ilość i zaakceptowaną cenę jednostkową.
 
-This approach allows the system to accommodate approved variances in quantity while ensuring the unit price remains within the expected range, facilitating smooth transaction processing.
+Takie podejście pozwala systemowi uwzględnić zatwierdzone różnice w ilości, zapewniając jednocześnie, że cena jednostkowa pozostanie w oczekiwanym przedziale, co ułatwia płynne przetwarzanie transakcji.

@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego TAIWAN EGUI w DocBits
 
 # 🇹🇼 TAIWAN EGUI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Tajwan](countries/taiwan.md). Oznaczenie rodziny nie certyfikuje każdego wydania MIG. Sprawdź rzeczywisty schemat XML i przetestuj reprezentatywne faktury elektroniczne.
+{% endhint %}
+
 | Właściwość | Wartość |
 | ---------- | ------- |
 | **Kraj/Region** | Tajwan |

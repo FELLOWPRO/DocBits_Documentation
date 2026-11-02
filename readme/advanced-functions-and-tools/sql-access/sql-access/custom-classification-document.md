@@ -1,4 +1,4 @@
-# Custom classification document
+# Dokument klasyfikacji niestandardowej
 
 ## Tabela `public.custom_classification_document`
 
@@ -9,8 +9,8 @@
 * `first_page_content`: text
 * `content`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 
 ### Analiza i opis

@@ -1,4 +1,4 @@
-# Sales order
+# Zamówienie sprzedaży
 
 ## Tabela `public.sales_order`
 
@@ -15,8 +15,8 @@
 * `warehouse_id`: internal
 * `warehouse_name`: internal
 * `transportation_method`: internal
-* `requested_delivery_date`: timestamp with time zone
-* `order_date`: timestamp with time zone
+* `requested_delivery_date`: znacznik czasu ze strefą czasową
+* `order_date`: znacznik czasu ze strefą czasową
 * `sales_person_id`: internal
 * `sales_person_name`: internal
 * `ship_to_party_id`: internal
@@ -27,10 +27,10 @@
 * `ship_to_party_zip`: internal
 * `status`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: znacznik czasu ze strefą czasową
 * `preview_path`: internal
 * `last_modified_by`: internal
 * `deleted_by`: internal

@@ -1,4 +1,4 @@
-# Ephesoft PO matching
+# Dopasowanie zamówień zakupu w Ephesoft
 
 ## Tabela `public.ephesoft_po_matching`
 
@@ -11,8 +11,8 @@
 * `ephesoft_doc_id`: wewnętrzne
 * `extracted_data`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 
 ### Analiza i opis

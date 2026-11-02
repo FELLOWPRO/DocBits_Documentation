@@ -32,4 +32,4 @@ Kolumna tabeli to jedno pole tabeli pozycji. Wszystko, co DocBits robi z tabelą
 
 * [Dodawanie nowej kolumny](adding-a-new-column.md)
 * [Edytowanie i usuwanie kolumn](editing-and-deleting-columns.md)
-* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)
+* [Rozwiązywanie problemów z wyodrębnianiem tabeli](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)

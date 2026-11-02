@@ -1,5 +1,7 @@
 # DocBits MCP
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/docbits-mcp-admin/v1/pl.mp4" %}
+
 DocBits udostępnia serwer **Model Context Protocol (MCP)**, który pozwala asystentom AI pracować z Twoimi dokumentami, ekstrakcją, wyszukiwaniem, analityką i konfiguracją — bezpośrednio z czatu lub sesji programistycznej. Połączyć się może dowolny klient zgodny z MCP: **Claude Code**, **Claude Desktop**, **Google Gemini CLI**, **OpenAI Codex** lub dowolna niestandardowa integracja.
 
 Serwer jest zamontowany w API DocBits pod adresem `/v3/mcp` i obejmuje zakresem Twoją organizację — każde wywołanie jest wykonywane z uprawnieniami użytkownika (lub klucza API), który nawiązał połączenie.
@@ -64,7 +66,7 @@ Wszystko, co ekran walidacji i ustawienia kolumn tabeli potrafią zrobić z tabe
 
 | Narzędzie | Opis |
 |------|-------------|
-| `list_tables` / `get_table_config` | Tabele i kolumny typu dokumentu wraz z flagami Required / Read Only / Hidden / Use AI |
+| `list_tables` / `get_table_config` | Tabele i front typu dokumentu wraz z flagami Wymagane / Tylko do odczytu / Ukryte / Użyj AI |
 | `create_table` | Dodaje drugą tabelę pozycji do typu dokumentu |
 | `add_table_column` / `delete_table_column` | Dodaje kolumnę tabeli lub ją miękko usuwa |
 | `set_ai_table_config` | Przełącza ekstrakcję tabel AI, tryb wizyjny i strukturalny dla organizacji |
@@ -161,3 +163,5 @@ Dlaczego dokumenty wymagają udziału człowieka i co zmienić, aby wymagało go
 {% hint style="info" %}
 **Jeden MCP do wszystkiego.** Narzędzia eDoc oraz **Przepływy pracy i karty (DocFlow)** działają na **tym samym** endpoincie `api.docbits.com/v3/mcp` z tym samym logowaniem DocBits. Narzędzia DocFlow pojawiają się tam z prefiksem `docflow_` (na przykład `docflow_list_workflows`); strona DocFlow opisuje je pod ich nazwami bez prefiksu. Bezpośrednie połączenie z hostem DocFlow nadal jest możliwe, ale nie jest już konieczne.
 {% endhint %}
+
+[Konfigurowanie DocBits przez Claude lub Codex](configuration-with-claude-or-codex.md): połączenie, prompty, podglądy, wersjonowane zmiany, kontrole i cofnięcie.

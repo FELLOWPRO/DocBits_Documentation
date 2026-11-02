@@ -52,8 +52,8 @@ U kunt ook XPath-functies (bijv. `sum()`) en uitdrukkingen gebruiken om waarden 
 
 Copy
 
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
+```json
+"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
 ```
 
 ## 5. Voorbeeldfunctie (Evaluatie-extractie)
@@ -78,3 +78,17 @@ Deze functie is essentieel om te controleren of uw XPath-uitdrukkingen correct z
 ## 6. Video Walkthrough
 
 Een videogids voor dit bestandstype is beschikbaar op de [Videopagina.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Gebruik het om de installatie, bewerking en voorbeeldweergave te volgen.
+
+## Effectieve regels en activering
+
+Als een elektronische creditnota als Invoice verschijnt, volg dan de [handleiding voor het oplossen van classificatieproblemen](../credit-note-recognized-as-invoice.md). Deze behandelt de effectieve aangepaste of standaardbron, typecodes, Extraction Paths en veilige activering.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-nl.png" alt="Bestaand EDI-formaat met de vier geconfigureerde attributen."><figcaption><p>Bestaand EDI-formaat met de vier geconfigureerde attributen.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-nl.png" alt="Actief attribuut EXTRACTIONPATHS: JSON-configuratie met XPath-expressies voor extractie."><figcaption><p>Actief attribuut EXTRACTIONPATHS: JSON-configuratie met XPath-expressies voor extractie.</p></figcaption></figure>
+
+
+De weergaven tonen een bestaande configuratie en versie. De instellingen verschillen per documenttype en formaat. Valideer wijzigingen in een concept voordat u ze activeert.
+
+De afbeeldingen tonen de Nederlandstalige proceskaarten en de actieve, alleen-lezen configuratieversie. De tabnaam Builder, technische attribuutnamen en configuratiecode zijn overgenomen uit de geïllustreerde productversie.

@@ -4,6 +4,12 @@ description: AUNZ PINT SELF-BILLING elektronisch document ondersteuning in DocBi
 
 # 🇦🇺 AUNZ PINT SELF-BILLING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Australië](countries/australia.md). Het actieve familielabel heeft geen vast PINT-versienummer. Controleer de aanpassings- en profielidentificaties; aflevering via een netwerk is een afzonderlijke integratie.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |----------|-------|
 | **Land / Regio** | Australië / Nieuw-Zeeland |
@@ -24,7 +30,7 @@ AUNZ PINT Self-Billing is de self-billing-variant van het A-NZ Peppol Internatio
 
 ## Standaard voorbeeld
 
-<figure><img src="aunz-pint-preview.png" alt="AUNZ PINT Self-Billing factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT Self-Billing factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="AUNZ PINT Self-Billing factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT Self-Billing factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

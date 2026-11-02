@@ -1,4 +1,4 @@
-# Document status trigger
+# Documentstatustrigger
 
 ## Tabel `public.document_status_trigger`
 

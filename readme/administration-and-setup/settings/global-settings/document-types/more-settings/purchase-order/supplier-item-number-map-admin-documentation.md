@@ -1,44 +1,44 @@
-# Supplier Item Number Map - Admin Documentation
+# Mapping van leveranciersartikelnummers: beheerdersdocumentatie
 
-## **Overview**
+## **Overzicht**
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
 
-As an admin, you have the ability to view and manage the mappings between internal item numbers and supplier item numbers. This feature ensures that discrepancies between your system and your suppliers' systems are handled efficiently. You can review, edit, and delete incorrect mappings to maintain data accuracy.
+Als beheerder kunt u de koppelingen tussen interne artikelnummers en leveranciersartikelnummers bekijken en beheren. Zo kunt u verschillen tussen uw systeem en de systemen van leveranciers efficiënt afhandelen. Controleer, bewerk of verwijder onjuiste koppelingen om gegevens nauwkeurig te houden.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_supplier_item_map_admin_view.png" alt="Docbits Supplier Item Map Admin View"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_supplier_item_map_admin_view.png" alt="Beheerdersweergave van leveranciersartikelkoppelingen in DocBits"><figcaption></figcaption></figure>
 
-**Accessing the Supplier Item Number Map**
+**De koppeling van leveranciersartikelnummers openen**
 
-1. **Navigate to Settings:**
-   * Go to the **Settings** section in your admin dashboard.
-2. **Access Document Types:**
-   * Under **Settings**, select **Document Types**.
-3. **More Settings:**
-   * Click on **More Settings** to access additional configuration options.
-4. **Supplier Item Number Map:**
-   * In the **More Settings** section, you will find the **Supplier Item Number Map** table. This table lists all the current mappings between your internal item numbers and the corresponding supplier item numbers.
+1. **Instellingen openen:**
+   * Open **Settings** in uw beheerdersdashboard.
+2. **Documenttypen openen:**
+   * Selecteer **Document Types** onder **Settings**.
+3. **Meer instellingen:**
+   * Klik op **More Settings** om aanvullende configuratieopties te openen.
+4. **Koppeling van leveranciersartikelnummers:**
+   * In **More Settings** vindt u de tabel **Supplier Item Number Map**. Deze toont alle huidige koppelingen tussen interne artikelnummers en de bijbehorende leveranciersartikelnummers.
 
-## **Managing Item Number Mappings**
+## **Artikelnummerkoppelingen beheren**
 
-1. **Viewing Mappings:**
-   * The table displays the following columns:
-     * **Supplier ID:** The unique identifier for the supplier.
-     * **Item Number:** Your internal item number for the product.
-     * **Supplier Item Number:** The corresponding item number used by the supplier.
-     * **Action:** Options to manage the mappings.
-2. **Deleting Incorrect Mappings:**
-   * If you identify an incorrect mapping, you can delete it by clicking the trash can icon (🗑) in the **Action** column.
-   * A confirmation prompt will appear to ensure that you want to delete the mapping.
-3. **Editing Mappings:**
-   * (If applicable) You may also have the option to edit existing mappings to correct any discrepancies. This could involve clicking on the item or supplier number to make changes.
+1. **Koppelingen bekijken:**
+   * De tabel bevat de volgende kolommen:
+     * **Supplier ID:** de unieke identificatie van de leverancier.
+     * **Item Number:** uw interne artikelnummer voor het product.
+     * **Supplier Item Number:** het bijbehorende artikelnummer van de leverancier.
+     * **Action:** opties om de koppelingen te beheren.
+2. **Onjuiste koppelingen verwijderen:**
+   * Klik bij een onjuiste koppeling op het prullenbakpictogram (🗑) in de kolom **Action** om deze te verwijderen.
+   * Er verschijnt een bevestiging om na te gaan of u de koppeling wilt verwijderen.
+3. **Koppelingen bewerken:**
+   * Als uw systeem dit ondersteunt, kunt u bestaande koppelingen bewerken om verschillen te corrigeren. Mogelijk kunt u daarvoor op het interne artikelnummer of leveranciersartikelnummer klikken.
 
-## **Example Workflow**
+## **Voorbeeldworkflow**
 
-1. **Identify Discrepancies:**
-   * Regularly review the **Supplier Item Number Map** to identify any discrepancies or incorrect mappings.
-2. **Delete Incorrect Mappings:**
-   * For any incorrect mappings, click the trash can icon to delete them.
-3. **Re-enter Correct Mappings:**
-   * Ensure that correct mappings are entered either manually during the next transaction or by editing the existing entries if the system supports it.
+1. **Verschillen herkennen:**
+   * Controleer **Supplier Item Number Map** regelmatig op verschillen en onjuiste koppelingen.
+2. **Onjuiste koppelingen verwijderen:**
+   * Klik op het prullenbakpictogram om onjuiste koppelingen te verwijderen.
+3. **Juiste koppelingen opnieuw invoeren:**
+   * Voer de juiste koppelingen handmatig in bij de volgende transactie of bewerk bestaande vermeldingen als het systeem dit ondersteunt.

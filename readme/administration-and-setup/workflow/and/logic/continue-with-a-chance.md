@@ -1,6 +1,6 @@
-# Continue with a chance
+# Ga verder met een kans
 
-<figure><img src="../../../../.gitbook/assets/docbits_fellowpro_contact.png" alt="Docbits Fellowpro Contact" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_continue_chance_v2-nl-nl.png" alt="Ga verder met een kans, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 

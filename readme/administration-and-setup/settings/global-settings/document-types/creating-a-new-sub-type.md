@@ -1,26 +1,23 @@
-# Creating a new Sub Type
+# Een nieuw subtype maken
 
-## Here are step-by-step instructions to create a new subtype:
+Maak een documentsubtype aan wanneer een soort document eigen veldinstellingen, een eigen validatielay-out of eigen scripts nodig heeft. U hebt toegang nodig tot **Instellingen → Documenttypen**.
 
-* **Navigate to the Settings area:** Log in to DocBits as an administrator and navigate to the Document Type Management area.
+## 1. Open het documenttype
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_type_settings_nav.png" alt="Docbits Document Type Settings Nav"><figcaption></figcaption></figure>
+Open **Instellingen → Documenttypen**. Kies in de kaart van het betreffende documenttype **Document-subtypen**. Het voorbeeld hieronder gebruikt **Factuur**; kies het type dat bij uw documenten hoort. Andere links in de kaart leiden naar de instellingen van het hele documenttype.
 
-* **Select the option to add a subtype:** Click the “+ New” button to add a new subtype.
+<figure><img src="../../../../.gitbook/assets/new-subtype-document-type-nl.png" alt="Kaart Factuur in de Nederlandse Documenttypen-instellingen, met de link Document-subtypen"><figcaption><p>Open de subtypen van het documenttype dat u wilt configureren.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_add_subtype_button.png" alt="Docbits Add Subtype Button"><figcaption></figcaption></figure>
+## 2. Start een nieuw subtype
 
-* **Name the subtype:** Enter a descriptive name for the new subtype. This name should clearly describe the purpose of the subtype so that users can easily understand what type of documents it represents.
+Kies op **Document-subtypen** de knop **+ Nieuw**. Bestaande subtypen verschijnen in de lijst; het menu met drie puntjes (**Actions**) hoort bij een bestaande rij. Als **+ Nieuw** niet reageert op een muisklik, focus de knop dan met het toetsenbord en druk op **Enter**.
 
-<figure><img src="https://lh7-us.googleusercontent.com/hFxoJh9mFR52IbFtRGTstXUGjUc2u9fBzlya5kPj18REi9ampOKfek6NPaNje_fGash3brlAZkEw8MHqDPpNEPCvnb122xYiHMqwVzV35FQdoev8XLXiu7DogUuGjsoun51sum8Z8PLZo2xw9bvImRc" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-list-nl.png" alt="Nederlandse lijst Document-Subtypen met de knop Nieuw en een synthetisch voorbeeldsubtype"><figcaption><p>De testorganisatie van de documentatie bevat alleen een synthetisch voorbeeldsubtype.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/EjBS5qKWAm0SoZhLkhT2KW1q5F89vZ6FCLZ2ZzvxfJPmVE9DyyAUXieHA_56guDbKsuEvNDY9DyA-uUMx8Q1UDMSohmhyIVnnLfZaPiXrVSGsXpnjEgtpF7GtOOiRX8VsXBpu2-3lpqc0zu2LdzIYZk" alt=""><figcaption></figcaption></figure>
+## 3. Benoem het en sla het op
 
-* **Configure initial settings:** Set the initial settings for the new subtype, including the default fields, options, and templates to use for this subtype. This can include adding specific metadata fields, specifying approval workflows, or configuring user permissions.
-* **Make optional configurations:** Depending on your company's requirements or the nature of the documents, you can make additional configurations to customize the new subtype to your specific needs. This may include setting default values, validation rules, or custom actions.
+Voer een **Name** in met letters en onderstrepingstekens en vul daarna een beschrijvende **Title** in. Beide velden zijn verplicht. De namen in deze schermafbeelding zijn alleen voorbeelden. Kies **Opslaan** om het subtype aan te maken, of **Annuleren** om zonder aan te maken te stoppen.
 
-<figure><img src="https://lh7-us.googleusercontent.com/d3-6iNTABnLH9KbWlM1NMu8Nsy2-KbqTd2elHgZYF1jwZOKqP17qttUCD4j676VJN3t7J0I85wHjr8TIfv3UGgLVxNvV4ns2I82EfCKHbyfIAUA8ML6IbLzoLH4Ucn57XzgUNZLO9LeCLzlk_m-M3EQ" alt=""><figcaption><p>Action</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-nl.png" alt="Dialoogvenster Nieuw subdocumenttype maken met Name, Title, Annuleren en Opslaan in het Nederlands"><figcaption><p>Alleen Name en Title worden ingevuld bij het aanmaken.</p></figcaption></figure>
 
-* **Save the new subtype:** Once you have entered all the required information, save the new subtype to create it in the document management system.
-
-After the new subtype is created, users can add and manage documents of that type according to the initial settings you specified. Make sure you inform users about the new subtype and provide training or guidance, if necessary, to help them use it effectively.
+Na het opslaan verschijnt het nieuwe subtype in de lijst. Om de velden, de lay-out of de scripts in te stellen, opent u het menu **Actions** en volgt u [Subtypes configureren](configure-subtypes.md). Deze instellingen worden na het aanmaken gedaan, niet in het dialoogvenster **+ Nieuw**.

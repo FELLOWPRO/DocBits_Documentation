@@ -1,46 +1,46 @@
-# Creating a Regex Pattern
+# Een reguliere expressie maken
 
-## To create a new Regex pattern that correctly matches the desired data, follow these steps:
+## Een regex-patroon maken dat de gewenste gegevens herkent
 
-**Define the goal:**
+**Het doel bepalen:**
 
-* First, clarify what type of data you want to extract and in what context it occurs.
-* Understand the structure and format of the data you want to capture.
+* Bepaal eerst welke gegevens u wilt extraheren en in welke context deze voorkomen.
+* Zorg dat u de structuur en het formaat van de te verzamelen gegevens begrijpt.
 
-**Identify the pattern:**
+**Het patroon herkennen:**
 
-* Analyze sample data to identify patterns or structures that are characteristic of the data you want to extract, keeping in mind possible variations and edge cases.
+* Analyseer voorbeeldgegevens om kenmerkende patronen of structuren te herkennen. Houd rekening met variaties en grensgevallen.
 
-**Use Regex Operators:**
+**Regex-operatoren gebruiken:**
 
-* Choose the appropriate Regex operators and constructs to describe the identified patterns.
-*   These include metacharacters such as
+* Kies geschikte regex-operatoren en constructies om de herkende patronen te beschrijven.
+*   Hieronder vallen metatekens zoals
 
-    ´.´ (any character), ´\*´ (any number), ´+´ (at least one occurrence), ´? (zero or one occurrence) and character classes such as ´\d´ (digital character), ´\w´ (alphanumeric character) and ´\ (space).
+    `.` herkent een willekeurig teken (met uitzonderingen volgens de gebruikte regex-modus). `*` herhaalt het voorafgaande onderdeel nul of meer keer, `+` één of meer keer en `?` nul of één keer. Na een andere kwantor kan `?` de herhaling lui maken. `\d` herkent een cijfer en `\w` een woordteken volgens de gebruikte regex-implementatie. Een backslash ontsnapt het volgende metateken; `\ ` staat voor een letterlijke spatie.
 
-**Test the pattern:**
+**Het patroon testen:**
 
-* Use test data to make sure your regex pattern correctly captures the desired data while taking into account possible edge cases.
-* Use online regex testers or special software tools to do this.
+* Test of uw regex-patroon de gewenste gegevens correct herkent en rekening houdt met grensgevallen.
+* Gebruik hiervoor online regex-testers of speciale software.
 
-**Optimize the pattern:**
+**Het patroon optimaliseren:**
 
-* Check your regex pattern and optimize it if necessary to make it more precise and efficient.
-* For example, avoid patterns that are too general and could return too many unwanted matches.
+* Controleer uw regex-patroon en optimaliseer het zo nodig om het nauwkeuriger en efficiënter te maken.
+* Vermijd bijvoorbeeld te algemene patronen die te veel ongewenste overeenkomsten opleveren.
 
-**Document the pattern:**
+**Het patroon documenteren:**
 
-* Document your regex pattern, including its purposes, how it works and possible limitations.
-* This will make it easier for other developers to use and understand the pattern.
+* Documenteer het doel, de werking en mogelijke beperkingen van uw regex-patroon.
+* Zo kunnen andere ontwikkelaars het patroon gemakkelijker begrijpen en gebruiken.
 
-**Implement the pattern:**
+**Het patroon implementeren:**
 
-* Integrate your regex pattern into your application or script to extract and further process the desired data.
+* Neem uw regex-patroon op in uw toepassing of script om de gewenste gegevens te extraheren en verder te verwerken.
 
-## Some additional tips for creating an effective regex pattern:
+## Aanvullende tips voor een effectief regex-patroon:
 
-* Use groupings '( )' to define subpatterns and control their repetition.
-* Consider special cases and constraints in your pattern.
-* Be specific but not too restrictive to capture variations of the expected data.
-* Be case sensitive when relevant and use the i modifier for case independence when appropriate.
-* Experiment with your pattern and check the results regularly to make sure it is working correctly.
+* Gebruik groepen '( )' om deelpatronen te definiëren en hun herhaling te regelen.
+* Houd rekening met uitzonderingen en beperkingen in uw patroon.
+* Wees specifiek, maar niet zo beperkend dat variaties van de verwachte gegevens worden uitgesloten.
+* Houd waar nodig rekening met hoofdletters en kleine letters en gebruik zo nodig de modifier i om hoofdletterongevoelig te zoeken.
+* Probeer uw patroon uit en controleer de resultaten regelmatig om de werking te verifiëren.

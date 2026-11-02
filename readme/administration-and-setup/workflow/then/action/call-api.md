@@ -1,57 +1,27 @@
-# Call Api
+# Bel Api
 
-<figure><img src="../../../../.gitbook/assets/image (310).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-nl-nl.png" alt="Bel Api, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
 
-## Doel:
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-nl-nl.png" alt="Bel Api, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
-Met de workflow-kaart **"Call API"** kunnen gebruikers rechtstreeks vanuit de workflow HTTP-verzoeken naar opgegeven API-eindpunten doen. Deze kaart ondersteunt diverse HTTP-methoden en maakt dynamische interactie met externe systemen mogelijk door parameters en gegevens te verzenden. Hij stroomlijnt de integratie met diensten van derden en aangepaste API's en zorgt voor naadloze communicatie.
+<!-- workflow-card-call-api-contract-20261022 -->
 
-## Onderdelen van de kaart:
+## Doel
 
-1. **API Endpoint**
-   * **Beschrijving:** De URL van de aan te roepen API.
-   * **Detail:** Een tekstveld waarin gebruikers het eindpunt voor het API-verzoek opgeven.
-2. **HTTP Method**
-   * **Beschrijving:** Het type HTTP-verzoek dat wordt gedaan.
-   * **Opties:**
-     1. **GET:** Haalt gegevens op van het opgegeven eindpunt.
-     2. **POST:** Verzendt gegevens naar het eindpunt.
-     3. **PUT:** Werkt bestaande gegevens op het eindpunt bij.
-     4. **DELETE:** Verwijdert gegevens op het eindpunt.
-3. **Parameters**
-   * **Beschrijving:** Queryparameters die in het API-verzoek worden opgenomen.
-   * **Detail:** Een tekstveld of lijst voor het invoeren van sleutel-waardeparen voor de verzoek-URL.
-4. **Data**
-   1. **Beschrijving:** De payload die in de body van het API-verzoek wordt verzonden (van toepassing voor POST- en PUT-methoden).
-   2. **Detail:** Een veld voor het invoeren van de gegevens in JSON of andere gestructureerde formaten.
+Gebruik `call_api` om een endpoint binnen de ingestelde DocBits-API aan te roepen. Het relatieve pad wordt aan het basisadres toegevoegd. Een willekeurige externe URL stelt geen integratie met een andere API in.
 
-## Functionaliteit:
+## Configuratie
 
-**Voorwaarde-evaluatie:** Het systeem evalueert de voorwaarden die zijn gedefinieerd in de "Where"- en "And"-secties:
+Vul het pad, de HTTP-methode, queryparameters en de door het endpoint ondersteunde gegevens in. De aanvraag gebruikt de context van de huidige DocBits-gebruiker. Ontbrekende waarden voor `org_id` en `triggered_by_docflow` worden automatisch toegevoegd. Parameter- en gegevensobjecten, of hun ondersteunde tekstweergave, moeten bij het formaat van deze kaartversie passen. Er is geen algemene koppeling van JSON-antwoordvelden.
 
-* Als beide voorwaarden **true** zijn, wordt het API-verzoek uitgevoerd zoals geconfigureerd.
-* Als een van beide voorwaarden **false** is, wordt de kaart niet uitgevoerd en wordt er geen API-aanroep gedaan.
+## Resultaat en beperkingen
 
-**API-verzoekuitvoering:**
+De antwoordtekst wordt naar een booleaanse waarde omgezet: alleen `true`, `1`, `yes` of `on` levert waar op; een onbekend antwoord, waaronder een willekeurig JSON-object, levert standaard onwaar op. De HTTP-status alleen bepaalt deze waarde niet. Een time-out of aanvraagfout levert onwaar op. De kaarttest simuleert de aanroep en geeft waar terug zonder een aanvraag te versturen; dit bewijst geen authenticatie, bereikbaarheid of endpointgedrag.
 
-* De kaart verzendt het HTTP-verzoek naar het opgegeven eindpunt met de geselecteerde methode.
-* Eventueel opgegeven parameters worden aan de URL toegevoegd en de gegevens worden in de verzoekbody opgenomen (indien van toepassing).
+<!-- workflow-card-practical-example-20261021 -->
 
-## Opzet en configuratie:
+## Praktijkvoorbeeld
 
-1. **API-eindpunt definiëren:**\
-   Voer de URL in van de API die u wilt aanroepen.
-2. **HTTP-methode selecteren:**\
-   Kies een van de ondersteunde methoden (GET, POST, PUT, DELETE) op basis van de vereisten van uw API.
-3. **Parameters opgeven:**\
-   Voeg eventueel vereiste queryparameters toe als sleutel-waardeparen.
-4. **Gegevens opnemen (indien van toepassing):**\
-   Geef voor POST- of PUT-methoden de gegevens op die in de verzoekbody worden verzonden.
-5. **Voorwaardeconfiguratie:**\
-   Configureer de "Where"- en "And"-secties om te definiëren wanneer de API-aanroep moet plaatsvinden.
+Gebruik deze kaart na de vereiste voorwaarden wanneer u een booleaanse waarde van een ingesteld DocBits-API-endpoint nodig hebt. Kies voor een geïsoleerde test een bestaand, gedocumenteerd endpoint dat alleen leest, met het bedoelde booleaanse antwoordcontract en de passende methode, bijvoorbeeld `GET`. Gebruik uitsluitend de ondersteunde demoparameters.
 
-## Conclusie:
-
-De workflow-kaart **"Call API"** verbetert de workflow-automatisering door directe interactie met externe systemen mogelijk te maken. Door flexibele configuraties voor eindpunten, methoden en gegevens te bieden, zorgt hij ervoor dat workflows naadloos kunnen integreren met API's van derden of aangepaste backends. De mogelijkheid om API-aanroepen voorwaardelijk uit te voeren, zorgt voor precisie en efficiëntie bij het automatiseren van externe communicatie.
-
-***
+Verwacht resultaat en tegenvoorbeeld: een hypothetisch HTTP-antwoord `200` met als volledige tekst `true` levert waar op; `false` levert onwaar op. Een object zoals `{"approved": true}` wordt niet automatisch naar waar omgezet. Controleer het werkelijke antwoord en de logboeken afzonderlijk. Dit voorbeeld is aan de uitvoeringscode getoetst; er is geen aanvraag of workflow uitgevoerd.

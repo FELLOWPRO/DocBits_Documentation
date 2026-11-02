@@ -6,6 +6,8 @@
 
 [Open the English video with captions, chapters and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/en.html).
 
+**Duration: 2 min 42 sec.** English interface, narration and captions.
+
 The walkthrough uses the built-in **Live testing self-check** in the development environment: inspect its three steps, create and save a named input, start it in the browser, then open the same run's saved log. The template has no parameters and does not change business data. Passing it confirms those three checks; it does not establish invoice extraction, approval or ERP export.
 
 **Review version:** complete listening and subject-matter acceptance are still pending.

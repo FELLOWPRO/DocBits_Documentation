@@ -1,19 +1,19 @@
-# Regex Manager
+# Gestionnaire Regex
 
-Cette fonctionnalité de DocBits est une alternative à la classification par modèle : elle vous permet d'écrire des expressions régulières consultables pour un type de document, pour la classification et d'autres usages.
+Cette fonction de DocBits vous offre une alternative à la classification par modèle : elle permet d’écrire des expressions régulières de recherche pour un type de document, à des fins de classification et d’autres usages.
 
-**Type de document:** Le Regex Manager vous permet d'écrire des expressions régulières, et DocBits recherche ces expressions dans le document. Si un document correspond à l'expression régulière d'un document défini, il est classé dans le type de document correspondant. Par exemple, si vous écrivez une expression régulière qui trouve « Gutschrift », DocBits classe comme avoir tout document contenant ce terme.
+Type de document : le gestionnaire Regex vous permet d’écrire des expressions régulières, qui sont ensuite recherchées dans le document. Si DocBits trouve une correspondance avec l’expression régulière d’un document défini, il classe le document dans le type de document correspondant. Par exemple, si vous écrivez une expression régulière pour trouver « Gutschrift » et que DocBits trouve ce terme dans un document, il le classera comme avoir.
 
-**Origine du document:** Cela indique à DocBits, grâce aux expressions régulières, le pays d'origine d'un document. Par exemple, si l'expression régulière d'un document espagnol contient le terme « Factura » et que DocBits trouve ce terme dans un document, il sait que le document est d'origine espagnole et le classe comme tel.
+Origine du document : grâce aux expressions régulières, DocBits reconnaît aussi le pays d’origine d’un document. Par exemple, si une expression régulière pour un document espagnol contient le terme « Factura » et que DocBits trouve ce terme dans le document, il saura que le document est d’origine espagnole et le classera en conséquence.
 
-## Accès au Regex Manager
+## **Accéder au gestionnaire Regex**
 
-Pour utiliser cette fonctionnalité, allez dans Paramètres → Types de Documents et cliquez sur « Nouveau ». Dans l'assistant « Créer un nouveau type de document », saisissez un nom pour le type de document et sélectionnez « Expression régulière » au lieu de « Auto » comme méthode d'extraction, puis poursuivez avec « Suivant ».
+Dans DocBits, ouvrez Paramètres → Types de documents. Sous « Types de documents personnalisés », cliquez sur « Nouveau ». Saisissez un nom pour le type de document, ajoutez une description facultative et cochez « Tableau disponible » si le document contient un tableau. Choisissez ensuite « Expression régulière » au lieu de « Auto » et cliquez sur « Suivant ».
 
-<figure><img src="../../../.gitbook/assets/regex-manager-create-fr-20261006.png" alt="L'assistant DocBits de création d'un nouveau type de document, avec le nom saisi et l'option « Expression régulière » sélectionnée."><figcaption><p>L'assistant « Créer un nouveau type de document » avec le nom du type de document et le choix entre « Auto » et « Expression régulière ».</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/regex-manager-create-fr-20261006.png" alt="Page de création d’un nouveau type de document avec le champ de nom, la case Tableau disponible, la description et les boutons Auto et Expression régulière"><figcaption><p>Choisissez « Expression régulière » pour classer le nouveau type de document avec des expressions régulières.</p></figcaption></figure>
 
-## Ajouter et supprimer des Regex
+## **Ajouter et supprimer des regex**
 
-L'étape Regex affiche un tableau des expressions régulières existantes, avec leur Origine et leur Motif, ainsi qu'un bouton « Ajouter » pour créer de nouvelles entrées regex.
+L’étape « Expression régulière » affiche les modèles regex existants, chacun avec son origine et son motif, ainsi qu’un bouton « Ajouter » pour créer un nouveau modèle. Utilisez le menu d’actions en fin de ligne pour gérer l’entrée concernée. Cliquez sur « Suivant » pour passer à « Champs et groupes ».
 
-<figure><img src="../../../.gitbook/assets/regex-manager-list-fr-20261006.png" alt="Le tableau du Regex Manager listant les expressions régulières existantes par origine et motif."><figcaption><p>L'étape Regex avec le tableau des expressions régulières existantes et le bouton « Ajouter ».</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/regex-manager-list-fr-20261006.png" alt="Étape Expression régulière avec le bouton Ajouter et un tableau de trois modèles regex avec origine, motif et actions"><figcaption><p>Modèles regex existants avec origine et motif. « Ajouter » en crée un nouveau.</p></figcaption></figure>

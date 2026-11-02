@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.519
+Factur-X possède des entrées génériques et
+propres à certaines publications,
+
+formats_02
+00:00:06.519 --> 00:00:13.284
+notamment 1.0.05, 1.08 et 1.09. VRBL FR
+CIUS 1.0 est distinct. Le marqueur XML 1p0
+
+formats_03
+00:00:13.284 --> 00:00:20.131
+et Factur-X XMP Version 1.0 n’identifient
+pas une version de publication. Conservez
+
+formats_04
+00:00:20.131 --> 00:00:24.833
+le libellé générique lorsque la
+publication est inconnue.
+
+workflow_01
+00:00:25.583 --> 00:00:31.353
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:31.353 --> 00:00:37.263
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:37.263 --> 00:00:38.333
+l’active pas.
+
+accept_01
+00:00:39.083 --> 00:00:44.064
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:44.064 --> 00:00:49.741
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:49.741 --> 00:00:52.933
+la validation fiscale ni la transmission
+réseau.
+

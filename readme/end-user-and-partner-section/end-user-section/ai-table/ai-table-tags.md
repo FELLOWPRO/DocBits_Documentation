@@ -1,150 +1,54 @@
-# Étiquettes de tableau AI
+# Étiquettes et instructions du tableau AI
 
-### Instructions étape par étape sur la façon d'ajouter des étiquettes à un tableau:
+Les étiquettes sont le moyen d'indiquer à l'IA ce qu'elle doit faire d'un tableau. Dans la carte **Instructions pour l'IA** sous le tableau AI (voir [Tableau AI](README.md)), vous donnez deux types d'étiquettes :
 
-**Étape 1 :** Choisissez les noms de colonnes (étiquettes)
+| Type | Où le saisir | Ce que l'IA en fait |
+| --- | --- | --- |
+| **Instruction** | **Prompt pour l'IA**, une instruction par ligne | La suit pendant la lecture du tableau, par exemple pour un calcul ou le choix d'un libellé. |
+| **Colonne** | **Colonnes supplémentaires pour l'IA** | Doit renvoyer cette colonne en plus des colonnes habituelles, même si le document ne l'indique pas clairement. |
 
-* **Sélectionnez les noms de colonnes :** Examinez les noms de colonnes de votre tableau et décidez quelles étiquettes ajouter.
+Les deux sont enregistrées ensemble comme étiquettes IA du fournisseur lorsque vous utilisez **Enregistrer comme formation**.
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-prompt-filled-fr.png" alt="Une ligne de prompt saisie dans la carte Instructions pour l'IA"><figcaption><p>Une instruction par ligne dans <strong>Prompt pour l'IA</strong>.</p></figcaption></figure>
 
-**Étape 2 :** Appuyez sur le bouton "Appliquer"
+## Ajouter des étiquettes pas à pas
 
-* **Appuyez sur le bouton :** Une fois que vous avez sélectionné l'étiquette appropriée pour une colonne, appuyez sur le bouton "Appliquer" à côté de la colonne et de l'étiquette sélectionnées.
+1. Ouvrez le document sur l'écran de validation et restez sur l'onglet **Tableau extrait IA**.
+2. Dans **Prompt pour l'IA**, écrivez ce que l'IA doit faire, une instruction par ligne. Tapez **@** pour insérer une colonne de votre configuration.
+3. Ou ouvrez **Colonnes supplémentaires pour l'IA** et choisissez les colonnes que l'IA doit renvoyer.
+4. Vous ne savez pas quoi écrire ? Cliquez sur **Suggérer avec Nexus** et utilisez **Insérer** ou **Add column** sur une suggestion.
+5. Cliquez sur **Test de changement** pour comparer le résultat au tableau actuel. Rien n'est encore écrit.
+6. Satisfait ? Cliquez sur **Appliquer** (ou sur **Appliquer le résultat à ce document** dans la boîte de dialogue de test) pour placer le résultat dans ce document.
+7. Si chaque document de ce fournisseur en a besoin, cliquez sur **Enregistrer comme formation**. **Supprimer** retire les étiquettes et les règles enregistrées de la mise en page du fournisseur.
 
-**Étape 3 :** Ajoutez l'étiquette au tableau
+{% hint style="info" %}
+Chaque ligne de **Prompt pour l'IA** est une instruction, même un seul mot (DocBits ajoute un point final pour que l'IA ne le prenne pas pour un nom de colonne). Les colonnes se placent dans **Colonnes supplémentaires pour l'IA**.
+{% endhint %}
 
-* **Ajoutez l'étiquette :** L'étiquette sélectionnée sera ajoutée au tableau en tant que colonne supplémentaire à côté de la colonne correspondante.
+## Rédiger de bonnes instructions
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags2.png" alt=""><figcaption></figcaption></figure>
+* **Nommez la colonne et le libellé du document.** *Remplis la colonne Remise avec la colonne nommée « Rabatt ».* fonctionne mieux que *trouve la remise*.
+* **Une seule chose par ligne.** Les lignes courtes sont plus faciles à tester et à supprimer.
+* **Décrivez les calculs simplement.** *Le prix unitaire est le montant net divisé par la quantité.*
+* **Dites ce qu'il faut laisser tel quel.** *Ignore les lignes de frais de port en bas du tableau.*
+* **Vérifiez l'ensemble du tableau.** Un prompt modifié relance l'IA et peut modifier toutes les colonnes.
+* **Ne répétez pas ce qui est déjà connu.** Une étiquette de colonne qui duplique une autre étiquette, ou qui correspond à un champ d'en-tête, est ignorée.
 
-**Étape 4 :** Enregistrer ou supprimer l'étiquette
+## Exemples
 
-* **Enregistrer l'étiquette :** Appuyez sur le bouton Enregistrer pour sauvegarder l'étiquette souhaitée.
-* **Supprimer l'étiquette :** Pour supprimer l'étiquette sélectionnée, appuyez sur le bouton Supprimer.
+| Problème | Étiquette |
+| --- | --- |
+| La colonne de remise reste vide | Colonne supplémentaire **Remise** et l'instruction *Remplis la colonne Remise avec la colonne nommée « Rabatt ».* |
+| La quantité et l'unité sont dans une seule cellule | *Place le nombre dans Quantité et l'unité de mesure dans Unité.* |
+| Le prix unitaire n'est pas imprimé | *Le prix unitaire est le montant net divisé par la quantité.* |
+| Les dates doivent être au format ISO | *Écris toutes les dates au format AAAA-MM-JJ.* |
+| Montants dans une devise étrangère | *Arrondis tous les montants à deux décimales.* |
 
-### Voici une explication détaillée de chaque colonne et des étiquettes possibles:
+Les colonnes que vous pouvez choisir sont les colonnes de tableau configurées pour le type de document, voir [Table Columns](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md).
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags3.png" alt="" width="375"><figcaption></figcaption></figure>
+## Avant d'enregistrer
 
-### **Position :**
-
-**Description :** Position ou ordre de l'article dans la commande.
-
-**Étiquette :** Entier
-
-**Exemple :** 1, 2, 3...
-
-### **Description :**
-
-**Description :** Brève description de l'article.
-
-**Étiquette :** Texte
-
-**Exemple :** Vis, Écrou, Widget...
-
-### Bon de commande :
-
-**Description :** Le numéro de la commande associée.
-
-**Étiquette :** Alphanumérique
-
-**Exemple :** PO12345, PO98765...
-
-### Quantité :
-
-**Description :** Nombre d'unités commandées.
-
-**Étiquette :** Nombre
-
-**Exemple :** 100, 50, 200...
-
-### Unité :
-
-**Description :** Unité de mesure (par exemple, pièce, kilogramme).
-
-**Étiquette :** Texte
-
-**Exemple :** Pcs, kg, l...
-
-### Prix unitaire :
-
-**Description :** Prix par unité de l'article.
-
-**Étiquette :** Devise
-
-**Exemple :** €10.00, €5.50, €100.00...
-
-### Montant net :
-
-**Description :** Prix total avant déductions et taxes (calculé comme quantité \* prix unitaire).
-
-**Étiquette :** Devise
-
-**Exemple :** €1,000.00, €275.00, €10,000.00...
-
-### Remise :
-
-**Description :** Montant de la remise absolue appliquée au montant net.
-
-**Étiquette :** Devise
-
-**Exemple :** €50.00, €20.00, €500.00...
-
-### Pourcentage de remise :
-
-**Description :** Pourcentage de remise appliqué au montant net.
-
-**Étiquette :** Pourcentage
-
-**Exemple :** 5%, 10%, 15%...
-
-### TVA :
-
-**Description :** Montant de la TVA appliquée à l'article.
-
-**Étiquette :** Devise
-
-**Exemple :** €200.00, €55.00, €1,900.00...
-
-### Montant total :
-
-**Description :** Montant final après déduction de la remise et ajout de la TVA.
-
-**Étiquette :** Devise
-
-**Exemple :** €1,150.00, €310.00, €11,400.00...
-
-### Pays d'origine :
-
-**Description :** Pays où l'article a été fabriqué ou expédié.
-
-**Étiquette :** Texte
-
-**Exemple :** USA, Allemagne, Chine...
-
-### Numéro d'article :
-
-**Description :** Identifiant unique ou SKU pour l'article.
-
-**Étiquette :** Alphanumérique
-
-**Exemple :** 987654, A12345, Z98765...
-
-### Numéro de bon de livraison :
-
-**Description :** Numéro du bon de livraison associé.
-
-**Étiquette :** Alphanumérique
-
-**Exemple :** DN56789, DN12345...
-
-### Phrase (informations supplémentaires) :
-
-**Description :** Commentaires supplémentaires, codes ou informations pertinentes.
-
-**Étiquette :** Texte
-
-**Exemple :** Commentaire, Spécification...
-
-Avec cette structure et ces étiquettes, le tableau est plus clairement défini et les informations peuvent être mieux catégorisées et traitées.
+* Utilisez d'abord **Test de changement**. Il n'écrit jamais rien.
+* **Enregistrer comme formation** s'applique à la mise en page du fournisseur : les documents suivants sont donc lus avec vos étiquettes. Vérifiez sur le prochain document que la pastille indique **Formation appliquée**.
+* Si **Règles d'extraction enregistrées (Administrateur uniquement)** est activé, demandez à un administrateur de l'organisation d'enregistrer.
+* Les étiquettes modifient la façon dont l'IA lit le tableau. Pour des positions de colonnes stables dans une mise en page récurrente, [entraînez plutôt le tableau](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).

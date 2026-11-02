@@ -1,5 +1,5 @@
-# Modifier et enregistrer des modèles Regex
+# Modifier et enregistrer des motifs Regex
 
-## Guide pour modifier les modèles existants et importance de tester ces modifications afin de s'assurer qu'elles fonctionnent comme prévu sans casser les fonctionnalités existantes.
+L’ancien lien direct Regex de la carte du type de document n’est plus disponible dans cette interface.
 
-**Pour modifier des modèles regex existants et vous assurer que les changements fonctionnent comme prévu sans casser les fonctionnalités existantes, vous pouvez suivre le guide ci-dessous :**...
+Avant de modifier un motif, confirmez le chemin de configuration pris en charge par votre version. Enregistrez le motif existant et préparez des entrées valides, incomplètes et qui ne doivent pas correspondre. Comparez les correspondances réelles après chaque changement. Enregistrez la configuration prévue seulement après vérification et testez des documents représentatifs avant d’appliquer le motif à d’autres factures.

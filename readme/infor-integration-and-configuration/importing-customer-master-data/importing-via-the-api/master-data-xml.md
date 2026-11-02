@@ -10,7 +10,7 @@ Gebruik dit voor stamgegevens die niet als BOD binnenkomen — prijslijsten, kos
 
 ## Twee manieren om de XML te versturen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
+![Swagger-endpointlijst met Import Xml File en Import Xml Data onder master_data_lookup](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
 
 | Endpoint | Wanneer u het gebruikt |
 | --- | --- |
@@ -29,7 +29,7 @@ U hebt nodig:
 * **Veldtoewijzingen** — welk XPath welke kolom vult.
 * **Uw Org ID**, uit **Settings → Integration & SSO**, in de sectie **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Velden Org ID en Sub Org ID gevuld met voorbeeld-UUID-waarden](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 ## Stapsgewijze instructies
 
@@ -50,21 +50,21 @@ Gebruik de regio waarin uw organisatie wordt gehost — dezelfde regio waarmee u
 
 ### 2. Autoriseren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-lock.png)
+![Endpoint-pad master_data_lookup/xml/import_xml_file met de titel Import Xml File in de Swagger UI](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-lock.png)
 
 Autoriseren werkt precies zoals bij de BOD-imports: klik op het **slotpictogram**, plak uw **Org ID** in **X-ORG-ID**, plak uw API key in **X-API-KEY** en klik bij elk op **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Dialoogvenster Available authorizations met het headerveld X-ORG-ID dat de waarde van de organisatie-ID toont](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Dialoogvenster Available authorizations met het headerveld X-API-KEY dat wacht op de waarde van de API-sleutel](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
 ### 3. De velden invullen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-xml.png)
+![Swagger-endpointsectie voor import_xml_file getiteld Import Xml File met een Parameters-gebied en een knop Try it out](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-xml.png)
 
 Klik op **Try it out** en vul vervolgens het formulier in.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
+![Formulier van de request body met org_id, sub_org_id, data_type, field_mappings en een Choose file-besturingselement voor de voorbeeld-XML](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
 
 | Veld | |
 | --- | --- |
@@ -124,7 +124,7 @@ Controleer naar welke omgeving en welke organisatie u wijst voordat u uitvoert. 
 
 Controleer voordat u uitvoert de keuzelijst **Servers** onderaan het formulier.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![Dropdown Servers onderaan het formulier met de mededeling dat opties op operationeel niveau globale serveropties overschrijven](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
 
 Klik op **Execute**. Een geslaagde import geeft terug:
 
@@ -135,7 +135,7 @@ Klik op **Execute**. Een geslaagde import geeft terug:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-response.png)
+![Swagger-resultaat na Execute met het curl-verzoek, een serverantwoord 200 en het succesbericht Record(s) created/updated successfully](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-response.png)
 
 Anders dan de BOD-imports melden deze endpoints problemen met een echte foutstatus in plaats van een `200` met `"success": false` — een **400** betekent dat het verzoek is geweigerd en dat er niets is geschreven.
 

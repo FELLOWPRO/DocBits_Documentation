@@ -4,7 +4,7 @@
 
 Het validatiescherm in DocBits is ontworpen om de nauwkeurigheid en volledigheid van gegevens in documenten te verifiëren voordat ze worden verwerkt of opgeslagen. Deze functionaliteit is cruciaal om ervoor te zorgen dat alle gegevens correct worden gelezen en verwerkt, waardoor de gegevensintegriteit en -kwaliteit behouden blijven.
 
-<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt="Diagram van gestapelde chevron-stappen voor het validatiescherm met validatie, efficiëntie, compliance, gebruiksvriendelijkheid, foutpreventie, data-integratie en datakwaliteit"><figcaption></figcaption></figure>
 
 ## Gedetailleerde Beschrijving van het Doel en Gebruik van het Validatiescherm
 

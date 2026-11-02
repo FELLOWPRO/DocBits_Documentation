@@ -89,4 +89,4 @@ In de detailweergave kunnen gebruikers:
 * Vaststellen waar problemen optreden als de prompt op problemen stuit.
 * Dezelfde acties **Pauzeren**, **Hervatten**, **Annuleren** en **Besturing overnemen** gebruiken.
 
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="DocBits Operator-detailweergave voor de prompt Open google.com then search for Alan MacMasters met voltooide stappen en opgeslagen prompts in de zijbalk" width="563"><figcaption></figcaption></figure></div>

@@ -25,7 +25,7 @@ Deze gids begeleidt u bij het verbinden van **ClickHouse** met **Power BI Deskto
 
     **DocBits** → **Instellingen** → **Documentverwerking** → **Module** → **AI Dashboard** → **ClickHouse Direct Access**
 
-    <figure><img src="../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (440).png" alt="Opzoekveldtabel Purchase Order Header met de kolommen Validation Field, Parent Field, Searchable en Auto Trigger"><figcaption></figcaption></figure>
 
     **Vereiste Velden:**
 

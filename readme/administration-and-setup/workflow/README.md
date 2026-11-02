@@ -4,7 +4,7 @@ description: DocBits Workflow Engine
 
 # Workflow
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57.png" alt="Workflowbouwer met de secties When, And en Then onder PROCESSES, elk met een ADD CARD-knop"><figcaption></figcaption></figure>
 
 ## DocBits Workflow Engine: procesautomatisering eenvoudig gemaakt
 

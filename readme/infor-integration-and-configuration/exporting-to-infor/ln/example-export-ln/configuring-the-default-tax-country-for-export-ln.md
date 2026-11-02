@@ -18,7 +18,7 @@ Het standaardbelastingland voor de export is **DE (Duitsland)** om exportfouten 
 *   Klik op **Download** om het mappingbestand te downloaden.\
 
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt="Infor LN-dialoog voor het documenttype Invoice met de titel Invoice LN, selectievakjes voor ION-Mapping File, IDM Mapping File en LN-Mapping File en een knop DOWNLOAD"><figcaption></figcaption></figure>
 * Open het bestand in een teksteditor.
 
 #### 2. Het mappingbestand wijzigen
@@ -53,7 +53,7 @@ StaticFields=FinancialCompany,TaxCountry
 SF_TaxCountry=FR
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (415).png" alt="Purchase order-nummer 2054032 met een vernieuwingspictogram ernaast voor het bijwerken van de purchase order"><figcaption></figcaption></figure>
 
 **Optie 2: dynamische mapping vanuit een DocBits-veld**
 
@@ -83,7 +83,7 @@ HeaderFields=SupplierCode,TaxCountry
 HF_TaxCountry=tax_country_1
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (412).png" alt="Nederlandse exportinstellingenpagina met een opmerking dat exports met hetzelfde documenttype opeenvolgend worden uitgevoerd en een tabel met type, titel, exportmethode en actie"><figcaption></figcaption></figure>
 
 ### Samenvatting
 

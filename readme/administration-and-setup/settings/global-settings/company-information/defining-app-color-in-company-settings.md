@@ -4,7 +4,7 @@
 
 De **App-kleur** instelling stelt beheerders in staat om het kleurenschema van de applicatie-interface te definiëren. Deze functie is bijzonder nuttig om onderscheid te maken tussen verschillende omgevingen zoals testen, sandbox en productie. Door verschillende kleuren aan elke omgeving toe te wijzen, kunnen gebruikers gemakkelijk identificeren in welke omgeving ze werken, waardoor het risico op het uitvoeren van kritieke acties in de verkeerde omgeving wordt verminderd.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/AppColor.png)
+![Instellingenpagina Company Information met de sectie App-Color waarin het veld App-Color is ingesteld op #faa5d2](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/AppColor.png)
 
 ## Toegang tot de App-kleur Instelling
 

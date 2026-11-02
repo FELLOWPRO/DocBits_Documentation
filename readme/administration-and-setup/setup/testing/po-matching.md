@@ -13,7 +13,7 @@ Als het gaat om het testen van uw PO Matching-configuratie, moet u een inkoopord
 
 Nadat u uw inkooporder heeft aangemaakt, gaat u naar Instellingen → Stamgegevens opzoeken en zoekt u naar het inkoopordernummer van de PO die u zojuist hebt aangemaakt, zoals het nu zou moeten verschijnen in de stamgegevens van uw inkooporder in DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+![Tabel Purchase order in de DocBits-stamgegevens met de kolommen Warehouse Id, Supplier Name, Purchase Order Number, Line Number en Quantity](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
 U zou hier uw unieke PO-nummer moeten zien, dit betekent dat DocBits en INFOR correct zijn gesynchroniseerd.
 

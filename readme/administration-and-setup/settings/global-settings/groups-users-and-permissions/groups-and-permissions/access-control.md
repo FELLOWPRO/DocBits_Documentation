@@ -23,7 +23,7 @@ Elke groep kan worden geconfigureerd voor:
 3. Selecteer **Module.**
 4. Activeer **Toegangscontrole** door de schuifregelaar in te schakelen.
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control3_nl.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Access-Control3_nl.png" alt="Access Control-pagina in de DocBits-instellingen met het geopende Access Control-tabblad"><figcaption></figcaption></figure>
 
 ## De Toegangscontrole van een groep openen
 

@@ -31,7 +31,7 @@ Als de **Automatische Matching** is ingesteld op **Matchen met inkoopontvangst**
 
 Het zou er als volgt uit moeten zien:
 
-<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt="LN-Mapping-bestand met het veld IRF_PackingSlip ingesteld op TF_packing_slip en PackingSlip toegevoegd aan InvoiceReceiptFields"><figcaption></figcaption></figure>
 
 ## **Stap 4: Voeg het bijgewerkte bestand terug naar DocBits toe**
 

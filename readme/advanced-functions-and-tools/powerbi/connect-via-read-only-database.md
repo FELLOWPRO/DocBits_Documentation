@@ -20,7 +20,7 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 * Vul de vereiste velden in met inloggegevens van:\
   **DocBits → Instellingen → Documentverwerking → Module → AI Dashboard → Alleen-Lezen DB Toegang**
 
-<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt="DocBits Read-Only DB Access-paneel met velden voor gebruikersnaam, wachtwoord, database, host en poort en de lijst met beschikbare tabellen"><figcaption></figcaption></figure>
 
 **Vereiste Velden:**
 
@@ -40,7 +40,7 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 
 * Selecteer uit de DSN-lijst uw geconfigureerde bron (bijv. `Sandbox-Read_Only`).
 
-<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt="Power BI From ODBC-dialoogvenster met het vervolgkeuzemenu Data source name (DSN) en geavanceerde opties"><figcaption></figcaption></figure>
 
 * Klik op **OK**. Voer inloggegevens opnieuw in indien gevraagd.
   * Controleer bij `password authentication failed for user` de host, database, gebruikersnaam en het wachtwoord. Voer in het aanmeldvenster het werkelijke wachtwoord in. Accolades voor escaping in een ODBC-verbindingsreeks zijn driversyntaxis en geen algemene oplossing voor mislukte authenticatie.
@@ -51,7 +51,7 @@ Deze gids begeleidt u bij het verbinden van **DocBits' Alleen-Lezen Database met
 * Open het **`public`** schema.
 * Selecteer de tabellen die u wilt importeren.
 
-![](../../.gitbook/assets/connect_read_only_1.png)
+![Power BI Navigator-paneel met de ODBC-databron dsn-Sandbox-Read_Only, het public-schema en diens tabellen in de lijst](../../.gitbook/assets/connect_read_only_1.png)
 
 * Kies:
   * **Laden** → Importeer direct in Power BI

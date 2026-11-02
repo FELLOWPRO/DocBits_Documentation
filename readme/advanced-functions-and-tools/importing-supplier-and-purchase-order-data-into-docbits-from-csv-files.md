@@ -140,21 +140,21 @@ Om gegevens te importeren, volg je deze stappen:
 1. Bezoek: [https://api.docbits.com/](https://api.docbits.com/)
 2.  Klik op de **"Authorize"** knop.
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_1.png" alt="Swagger-pagina van de DocBits API met de uitgeklapte default-lijst en het healthz Healthz-endpoint"><figcaption></figcaption></figure>
 3.  Voer de API-Key in en klik op **"Authorize"**
 
     * De API-Key kan worden gevonden in DocBits in Instellingen -> Algemene Instellingen -> Integratie
     * **Opmerking:** De API-sleutel die in je verzoek is opgegeven, bepaalt de doelorganisatie en de gebruikerscontext waaronder de gegevens worden geïmporteerd.
 
-    <figure><img src="../.gitbook/assets/import_csv_api_nl.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_api_nl.png" alt="Settings-pagina van DocBits met geopende Global Settings die Company Information, Groups Users and Permissions en Integration toont"><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="Dialoogvenster Available authorizations met het item APIKeyHeader apiKey en het veld voor de X-API-KEY-headerwaarde" width="563"><figcaption></figcaption></figure>
 4. Druk op **CTRL + F** (of **CMD + F** op Mac) om de zoekfunctie te openen en zoek naar `/master_data_lookup/import_data`.
 5.  Klik op het verzoek om de details te bekijken, klik vervolgens op "**Try it out"** om verder te gaan.
 
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_3.png" alt="Geopende zoekbalk van de browser over de DocBits API-pagina om het endpoint import_data te zoeken"><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_6.png" alt="Pagina van het Import Data-endpoint met de knop Try it out en de velden van de multipart form-data request body"><figcaption></figcaption></figure>
 6.  Je kunt nu de vereiste parameters in het Verzoek Lichaam invoeren.\\
 
     **Verzoekparameters:**
@@ -173,7 +173,7 @@ Om gegevens te importeren, volg je deze stappen:
         3. Stel de `delimiter` parameter in je importverzoek in op dit geïdentificeerde teken (ofwel `,` of `;`). Het gebruik van de verkeerde delimiter voorkomt dat de gegevens correct worden geparsed en resulteert in een mislukte import.
     * **on\_conflict & auto\_generate\_id:** De functionaliteit voor het omgaan met gegevensconflicten (`on_conflict`) en het automatisch genereren van ID's (`auto_generate_id`) is momenteel **niet geïmplementeerd** voor deze datatypes.
 
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_4.png" alt="Aanvraagbody van Import Data met de velden sub_org_id, data_type, file, delimiter, replace_all, on_conflict en auto_generate_id"><figcaption></figcaption></figure>
 7.  Als je hebt gecontroleerd dat alle informatie correct is, kun je het importproces starten door op de **"Execute"** knop te klikken.
 
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/import_csv_5.png" alt="Import Data-verzoek ingevuld met data_type supplier, het bestand supplier.csv en on_conflict ingesteld op REPLACE"><figcaption></figcaption></figure>

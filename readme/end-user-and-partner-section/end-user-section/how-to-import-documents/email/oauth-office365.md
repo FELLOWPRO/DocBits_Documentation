@@ -8,7 +8,7 @@ Hier hoef je alleen je gewenste suborganisatie in te voeren en op **Authenticere
 
 Je wordt naar deze Microsoft-pagina gebracht en je moet een code invoeren.
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
+![Microsoft Sign in-pagina die vraagt om een code in te voeren, met een Code-invoerveld en een Next-knop](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
 Deze code kan worden gevonden door terug te klikken naar DocBits en de code wordt daar weergegeven zoals hieronder, kopieer eenvoudig de code en voer deze in op de Microsoft-pagina. Daarna moet je je eigen Microsoft-gegevens invoeren.
 

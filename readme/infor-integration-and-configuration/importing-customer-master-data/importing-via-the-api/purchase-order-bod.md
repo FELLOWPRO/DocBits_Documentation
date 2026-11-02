@@ -10,7 +10,7 @@ Inkooporders bereiken DocBits normaal gesproken automatisch via uw ION-datastroo
 
 Er zijn twee endpoints en ze doen hetzelfde. Het enige verschil is hoe u de BOD aanlevert:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
+![Swagger-endpointlijst met Import Purchase Order Bod en Import Purchase Order Bod Xml](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
 
 | Endpoint | Wanneer u het gebruikt |
 | --- | --- |
@@ -29,7 +29,7 @@ U hebt nodig:
 
 Om het Org ID te vinden, gaat u naar **Settings → Integration & SSO** en opent u de sectie **ID**. Klik op het kopieerpictogram naast het veld.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![Velden Org ID en Sub Org ID gevuld met voorbeeld-UUID-waarden](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** toont de suborganisatie die in de koptekst is geselecteerd. Met **CROSS** geselecteerd — de weergave over alle suborganisaties heen — toont het dezelfde waarde als **Org ID**, en daarom komen de twee velden in de schermafbeelding hierboven overeen. Schakel eerst naar een specifieke suborganisatie als u het ID daarvan nodig hebt.
@@ -62,22 +62,22 @@ Alles onder **import** is vergrendeld totdat u autoriseert. Er zijn twee dingen 
 
 * Klik op het **slotpictogram** rechts van het endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-swagger-lock.png)
+![Endpointbalk Import Purchase Order Bod met het slotpictogram ernaast](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-swagger-lock.png)
 
 * Het blijkt **Beschikbare autorisaties** opent met twee items.
 * Plak uw **Org ID** in **X-ORG-ID** en klik op **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![Dialoogvenster Available authorizations met het headerveld X-ORG-ID dat de waarde van de organisatie-ID toont](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
 
 * Het item toont nu **Authorized** en verbergt de waarde.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![Dialoogvenster Available authorizations met het headeritem X-ORG-ID gemarkeerd als Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Scroll naar **X-API-KEY**, plak uw API key en klik op **Authorize**. In DocBits vindt u die onder **Settings → Integration & SSO**, in de sectie **API Key**, of u kunt [een nieuwe sleutel aanmaken](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#een-api-sleutel-aanmaken).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![Dialoogvenster Available authorizations met het headerveld X-API-KEY dat wacht op de waarde van de API-sleutel](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![Dialoogvenster Available authorizations met het headeritem X-API-KEY gemarkeerd als Authorized](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Klik op **Close**.
 
@@ -87,13 +87,13 @@ Plak de sleutel op zichzelf — zet er geen `Bearer` voor. Beide autorisaties bl
 
 ### 3. De velden invullen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-po.png)
+![Endpoint-item Purchase Order Bod in Swagger zonder parameters](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-po.png)
 
 Klik op **Try it out** en vul vervolgens het formulier in van het endpoint dat u hebt gekozen.
 
 #### Een bestand uploaden — `/import/purchase_order_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
+![Ingevuld formulier voor de aanvraagbody met org_id, sub_org_id, het gekozen bestand SyncPurchaseOrder_4711.xml en aangepaste veldtoewijzingen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
 
 | Veld | |
 | --- | --- |
@@ -127,7 +127,7 @@ Regeltoewijzingen gebruiken dezelfde namen `custom_field_1` … `custom_field_5`
 
 #### De XML plakken — `/import/purchase_order_bod_xml`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-xml-form.png)
+![Formulier voor de aanvraagbody van import_purchase_order_bod_xml met de velden xml, org_id, sub_org_id en custom_fields_mapping](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-xml-form.png)
 
 Dit endpoint accepteert de BOD niet als eenvoudige plakactie. Het veld **xml** is een object, vooringevuld met:
 
@@ -163,11 +163,11 @@ Controleer voordat u uitvoert de keuzelijst **Servers** onderaan het formulier. 
 
 Klik op **Execute**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![Dropdown Servers onderaan het formulier met de mededeling dat opties op operationeel niveau globale serveropties overschrijven](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
 
 **Als u een bestand hebt geüpload**, is het antwoord:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-response.png)
+![Execute-resultaat met het curl-commando en een 200-responstekst met BOD processing started](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-response.png)
 
 ```json
 {

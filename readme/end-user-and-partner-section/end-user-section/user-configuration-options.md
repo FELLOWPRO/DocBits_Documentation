@@ -4,7 +4,7 @@ Om uw instellingen te configureren, klikt u op het gebruikerspictogram in de lin
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
-<figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config.png" alt="Smalle kolom van het gebruikersmenu in DocBits met schakelaar voor donkere modus, taalselectie en afmeldoptie"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/prior-u031-nl.png" alt="Gebruikersmenu en taalkeuze."><figcaption><p>Gebruikersmenu en taalkeuze.</p></figcaption></figure>
 
@@ -27,7 +27,7 @@ In dit gedeelte kunt u de volgende voorkeuren aanpassen:
 * **Lettergrootte:** Pas de tekstgrootte aan voor betere leesbaarheid.
 * **Dual Monitor Modus:** Schakel deze functie in als u twee monitoren gebruikt.
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3.png" alt="Dialoogvenster Edit User met het datumpatroon %d.%m.%Y, de bedragopmaak Deutsch, de lettergrootte van klein naar groot, de naamvelden Max Mustermann, de dual-monitor-modus en de wachtwoordvelden"><figcaption></figcaption></figure>
 
 **Uitloggen**
 

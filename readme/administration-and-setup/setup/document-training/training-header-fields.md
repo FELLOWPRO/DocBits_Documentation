@@ -20,7 +20,7 @@ U kunt DocBits helpen om deze velden te herkennen door handmatig de juiste gegev
 Herhaal dit proces voor alle vereiste velden.\
 Zodra alle noodzakelijke velden zijn ingevuld, **klik op "Regels opslaan"** om de training op te slaan. Hiermee leert DocBits waar elk stuk informatie te vinden is voor vergelijkbare documenten in de toekomst.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![Kopveldtraining op Apple_invoice.pdf met Company Name, Company Street en Company PLZ in het document gemarkeerd](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Na het opslaan is uw document klaar om te worden geëxporteerd - en de volgende keer zal DocBits automatisch de getrainde velden extraheren.
 

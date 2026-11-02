@@ -49,7 +49,7 @@ Als de **Inkooporder** er correct uitziet en de benodigde details bevat, kunt u 
 
 Het zou er als volgt uit moeten zien:
 
-<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ReceiptLine.png" alt="Validatiescherm met een tabel met receipt-regelitems, de geëxtraheerde kolommen van Positionen en de gemarkeerde gekoppelde factuurrijen" width="563"><figcaption></figcaption></figure>
 
 ## **Stap 4: Voeg het bijgewerkte bestand terug toe aan DocBits**
 

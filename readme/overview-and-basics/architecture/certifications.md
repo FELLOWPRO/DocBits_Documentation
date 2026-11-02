@@ -8,7 +8,7 @@ Heb je een certificaat nodig voor je inkoop-, security- of complianceteam? Elk r
 
 ## 1. ISO/IEC 27001
 
-<figure><img src="../../.gitbook/assets/ISO27001.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ISO27001.png" alt="ISO 27001-certificeringsbadge voor een managementsysteem voor informatiebeveiliging met het ISO 27001-logo"><figcaption></figcaption></figure>
 
 Deze internationale norm definieert de vereisten voor het opzetten, implementeren, onderhouden en continu verbeteren van een Information Security Management System (ISMS). Het helpt organisaties om data op een systematische en kosteneffectieve manier te beschermen, inclusief processen voor risicobeheer en informatiebeveiligingscontroles.
 
@@ -20,7 +20,7 @@ Deze internationale norm definieert de vereisten voor het opzetten, implementere
 
 ## 2. SOC 1 (Serviceorganisatiebeheer 1)
 
-<figure><img src="../../.gitbook/assets/SOC1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SOC1.png" alt="SOC 1-certificeringsbadge die een Service Organization Control 1-rapport over interne beheersmaatregelen voor financiële verslaggeving markeert"><figcaption></figcaption></figure>
 
 SOC 1-rapporten zijn ontworpen voor organisaties die de effectiviteit van interne controles over financiële verslaggeving moeten aantonen. Dit is vooral relevant voor serviceproviders die de financiële verslaggeving van hun klanten beïnvloeden.
 
@@ -32,7 +32,7 @@ SOC 1-rapporten zijn ontworpen voor organisaties die de effectiviteit van intern
 
 ## 3. SOC 2 (Serviceorganisatiecontrole 2)
 
-<figure><img src="../../.gitbook/assets/SOC2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SOC2.png" alt="SOC 2-certificeringsbadge die een Service Organization Control 2-rapport over beveiliging, beschikbaarheid en vertrouwelijkheid markeert"><figcaption></figcaption></figure>
 
 SOC 2 richt zich op de controles van een serviceorganisatie die relevant zijn voor beveiliging, beschikbaarheid, verwerkings­integriteit, vertrouwelijkheid en privacy van data. Het is cruciaal voor technologie- en cloudbedrijven die met gevoelige informatie omgaan.
 
@@ -44,7 +44,7 @@ SOC 2 richt zich op de controles van een serviceorganisatie die relevant zijn vo
 
 ## 4. Naleving van GDPR (Algemene Verordening Gegevensbescherming).
 
-<figure><img src="../../.gitbook/assets/GDPR.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/GDPR.png" alt="AVG-compliancebadge met de EU-sterrenkrans die de naleving van de EU-gegevensbeschermingsverordening markeert"><figcaption></figcaption></figure>
 
 De AVG (GDPR) is een verordening in het EU-recht over gegevensbescherming en privacy in de Europese Unie en de Europese Economische Ruimte. Ze behandelt ook de doorgifte van persoonsgegevens buiten de EU en de EER.
 

@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.400
+ebInterface 4.3, 5.0, 6.0 en 6.1 hebben
+afzonderlijke vermeldingen. Stem de
+
+formats_02
+00:00:08.400 --> 00:00:13.265
+XML-naamruimte af op de geconfigureerde
+versie. Een andere naamruimte kan een
+
+formats_03
+00:00:13.265 --> 00:00:15.067
+andere toewijzing vereisen.
+
+workflow_01
+00:00:15.817 --> 00:00:21.471
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:21.471 --> 00:00:26.893
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:26.893 --> 00:00:28.367
+activeert het niet.
+
+accept_01
+00:00:29.117 --> 00:00:34.806
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:34.806 --> 00:00:40.088
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:40.088 --> 00:00:43.467
+fiscale goedkeuring of aflevering via een
+netwerk.
+

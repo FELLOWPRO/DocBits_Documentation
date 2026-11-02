@@ -1,12 +1,20 @@
 # Bedrijfsinformatie
 
-<figure><img src="../../../../.gitbook/assets/company_information_nl.png" alt="Het formulier Bedrijfsinformatie in de DocBits Sandbox-testorganisatie in het Nederlands"><figcaption><p>Bedrijfsinformatie: bewerk de bedrijfsnaam, het adres, de juridische identificatiegegevens en de contactgegevens en selecteer daarna Opslaan.</p></figcaption></figure>
+## Videotutorial: Bedrijf, abonnement en audit
 
-Op de pagina Bedrijfsinformatie beheert u het bedrijfsprofiel, de voorkeuren en de abonnementsgegevens. De pagina is onderverdeeld in de volgende secties:
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/nl.mp4" %}
+Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
+{% endembed %}
+
+De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
+
+<figure><img src="../../../../.gitbook/assets/prior-i001-nl.png" alt="Bedrijfsgegevens met afgeschermde organisatiewaarden."><figcaption><p>Bedrijfsgegevens met afgeschermde organisatiewaarden.</p></figcaption></figure>
+
+Op de pagina Bedrijfsinformatie beheert u het profiel van uw bedrijf, voorkeuren en abonnementsgegevens. De pagina is ingedeeld in de volgende onderdelen:
 
 ## Bedrijfsinformatie
 
-Deze sectie bevat uw belangrijkste bedrijfsgegevens, gegroepeerd in vier gebieden:
+Dit onderdeel bevat de kerngegevens van uw bedrijf, gegroepeerd in vier gebieden:
 
 ### Bedrijfsidentiteit
 
@@ -14,14 +22,14 @@ Deze sectie bevat uw belangrijkste bedrijfsgegevens, gegroepeerd in vier gebiede
 
 ### Adres
 
-* **Straat + Nummer**: Het adres van uw bedrijf.
-* **Postcode**: De ZIP- of postcode.
-* **Stad**: De naam van de stad.
-* **Land**: Selecteer uw land in de vervolgkeuzelijst.
+* **Straat + Nummer**: Het straatadres van uw bedrijf.
+* **Postcode**: Postcode.
+* **Stad**: Plaatsnaam.
+* **Land**: Selecteer uw land in de keuzelijst.
 
 ### Juridische informatie
 
-* **Bedrijfs-ID**: Een unieke identificatie voor uw bedrijf, gebruikt voor integraties en interne referenties.
+* **Bedrijfs-ID**: Een unieke identificatie voor uw bedrijf, gebruikt voor integraties en interne verwijzing.
 * **Belastingnummer**: Uw belastingidentificatienummer voor financiële rapportage.
 * **Handelsregister-ID**: Uw handelsregisternummer voor juridische documentatie.
 
@@ -30,55 +38,55 @@ Deze sectie bevat uw belangrijkste bedrijfsgegevens, gegroepeerd in vier gebiede
 * **Officieel telefoonnummer van het bedrijf**: Het primaire telefoonnummer van uw bedrijf.
 * **E-mail**: Het belangrijkste e-mailadres voor officiële communicatie.
 
-Klik na het invoeren of bijwerken van velden op **Opslaan** om de wijzigingen toe te passen. De **?**-pictogrammen naast de juridische identificatiegegevens tonen extra velduitleg. Selecteer de sectiekopt om het formulier uit te vouwen of in te vouwen.
+Klik na het invoeren of bijwerken van velden op **Opslaan** om uw wijzigingen toe te passen. De **?**-pictogrammen naast de juridische identificatiegegevens tonen extra uitleg bij het veld. Selecteer de kop van een onderdeel om het formulier uit of in te klappen.
 
 ## E-maildomeinen
 
-Organisatiebeheerders openen **Instellingen → Bedrijfsinformatie → E-maildomeinen** om de domeinen te beheren die worden gebruikt voor de automatische organisatie-toewijzing. Wanneer iemand inlogt met Microsoft of Google en nog geen lid is van een organisatie, kan DocBits die persoon aan deze organisatie toewijzen als zijn of haar e-mailadres een van de vermelde domeinen gebruikt. Een domein kan slechts aan één organisatie worden toegewezen.
+Organisatiebeheerders kunnen **Instellingen → Bedrijfsinformatie → E-maildomeinen** openen om de domeinen te beheren die worden gebruikt voor automatische toewijzing aan een organisatie. Wanneer iemand zich aanmeldt met Microsoft of Google en nog geen lid is van een organisatie, kan DocBits die persoon aan deze organisatie toewijzen als het e-mailadres een van de vermelde domeinen gebruikt. Een domein kan slechts bij één organisatie horen.
 
-<figure><img src="../../../../.gitbook/assets/company_email_domains_nl.png" alt="De uitgevouwen sectie E-maildomeinen met een lege domeinenlijst, een invoerveld en de knop Domein toevoegen"><figcaption><p>De Nederlandstalige sectie E-maildomeinen voordat een domein wordt toegevoegd. Voer een bedrijfsdomein in en selecteer Domein toevoegen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-i002-nl.png" alt="E-maildomeinen van het bedrijf configureren."><figcaption><p>E-maildomeinen van het bedrijf configureren.</p></figcaption></figure>
 
-Voer alleen het domein in, bijvoorbeeld `example.com`, in het invoerveld en selecteer **Domein toevoegen** of druk op Enter. Het eerste domein wordt het primaire domein. Als er meer domeinen zijn vermeld, gebruikt u **Primair maken** bij een andere rij om dit te wijzigen, of het prullenbak-pictogram om een domein te verwijderen. Foutmeldingen, zoals een ongeldig domein, een persoonlijke e-mailprovider of een domein dat ergens anders is toegewezen, verschijnen onder het invoerveld. **Er zijn nog geen domeinen toegewezen** betekent dat deze organisatie geen domeinregel heeft.
+Voer in het invoerveld alleen het domein in, zoals `example.com`, en selecteer **Domein toevoegen** of druk op Enter. Het eerste domein wordt het primaire domein. Als er meer domeinen worden vermeld, gebruikt u **Maak primair** bij een andere rij om het primaire domein te wijzigen, of het prullenbakpictogram om een domein te verwijderen. Fouten, zoals een ongeldig domein, een persoonlijke e-mailprovider of een domein dat al elders is toegewezen, verschijnen onder het invoerveld. **Nog geen domeinen toegewezen** betekent dat deze organisatie geen domeinregel heeft.
 
-Controleer vóór het toevoegen van een domein welke organisatie nieuwe aanmeldingen moet ontvangen. Om bestaande lidmaatschappen te beheren, gaat u verder met [Gebruikers](../groups-users-and-permissions/users/README.md).
+Controleer voordat u een domein toevoegt welke organisatie nieuwe aanmeldingen moet ontvangen. Om bestaande lidmaatschappen te beheren, gaat u verder bij [Gebruikers](../groups-users-and-permissions/users/README.md).
 
 ## Bedrijfsvoorkeuren
 
-Stel bedrijfsbrede standaardinstellingen in:
+Configureer standaardinstellingen voor het hele bedrijf:
 
-* **Datumnotatie**: Kies hoe datums in DocBits worden weergegeven (bijvoorbeeld `%m/%d/%Y`, `%d.%m.%Y`).
-* **Bedragnotatie**: Selecteer het nummerformaat voor bedragen (bijvoorbeeld Deutsch voor `1.000,00`, English voor `1,000.00`).
-* **Infovenster nieuwe versie**: Schakel in of gebruikers een melding zien wanneer er een nieuwe DocBits-versie verschijnt.
+* **Datumpatroon**: Kies hoe datums overal in DocBits worden weergegeven (bijv. `%m/%d/%Y`, `%d.%m.%Y`).
+* **Bedrag opmaak**: Selecteer de getalnotatie voor bedragen (bijv. Deutsch voor `1.000,00`, English voor `1,000.00`).
+* **Dialoogvenster Nieuwe versie-info**: Schakel in of gebruikers een melding zien wanneer een nieuwe versie van DocBits wordt uitgebracht.
 
 Klik na het aanbrengen van wijzigingen op **Opslaan**.
 
-## App-kleur
+## Applicatiekleur
 
-Pas de primaire kleur van de DocBits-interface aan. Dit is handig om verschillende omgevingen visueel van elkaar te onderscheiden (bijvoorbeeld dev en productie).
+Pas de primaire kleur van de DocBits-interface aan. Dit is handig om verschillende omgevingen visueel van elkaar te onderscheiden (bijv. dev versus productie).
 
-* **Kleur**: Voer een hex-kleurcode in (bijvoorbeeld `#2388AE`) of gebruik de kleurkiezer.
-* Klik op **Opslaan** om toe te passen of op **Resetten** om de standaardkleur te herstellen.
+* **Kleur**: Voer een hexadecimale kleurcode in (bijv. `#2388AE`) of gebruik de kleurkiezer.
+* Klik op **Opslaan** om toe te passen, of op **Herstellen** om de standaardkleur te herstellen.
 
-## Abonnementsplan
+## Abonnement
 
-Bekijk uw actieve abonnementsplannen en hun gegevens:
+Bekijk uw actieve abonnementen en hun details:
 
-* **Plannaam**: De naam van elk actief plan (bijvoorbeeld DocBits, DocFlow Users, DocSearch).
-* **Resterende dagen**: Het aantal dagen tot het plan verloopt.
-* **Startdatum / einddatum**: De abonnementsperiode.
-* **Aantal gebruikers**: Het totale aantal gebruikers in uw organisatie.
-* **Aantal suborganisaties**: Het aantal ingestelde suborganisaties.
-* **Aantal leveranciers**: Het aantal geregistreerde leveranciers.
+* **Naam van het abonnement**: De naam van elk actief abonnement (bijv. DocBits, DocFlow Users, DocSearch).
+* **nog dagen over**: Hoeveel dagen er resteren tot het abonnement verloopt.
+* **Start Date / End Date**: De abonnementsperiode.
+* **Aantal gebruikers**: Totaal aantal gebruikers in uw organisatie.
+* **Aantal suborganisaties**: Aantal geconfigureerde suborganisaties.
+* **Aantal leveranciers**: Aantal geregistreerde leveranciers.
 
 ## Abonnementsgebruik
 
-Houd het maandelijkse token- en workflowgebruik in de gaten:
+Houd uw maandelijkse verbruik van tokens en workflows bij:
 
 | Kolom | Beschrijving |
 |--------|-------------|
 | **Type** | Het gebruikstype (Document of Workflow). |
-| **Van / Tot** | De datums van de factureringsperiode. |
+| **From / To** | De data van de factureringsperiode. |
 | **Gebruikte tokens** | Aantal tokens dat in de huidige periode is verbruikt. |
 | **Resterende tokens** | Tokens die in de huidige periode nog beschikbaar zijn. |
 
-Gebruik de knop **Selecteren** om op specifieke datumbereiken te filteren.
+Gebruik de knop **Selecteer** om op specifieke datumbereiken te filteren.

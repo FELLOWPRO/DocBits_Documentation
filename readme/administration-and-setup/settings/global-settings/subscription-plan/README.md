@@ -1,5 +1,13 @@
 # Abonnement
 
+## Videotutorial: Bedrijf, abonnement en audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/nl.mp4" %}
+Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
+{% endembed %}
+
+De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
+
 <figure><img src="../../../../.gitbook/assets/subscriptions_overview.png" alt="Abonnement"><figcaption><p>Pagina Abonnement</p></figcaption></figure>
 
 De pagina **Abonnement** biedt een volledig overzicht van uw DocBits-abonnement op één plek: het abonnement zelf, de voor uw organisatie ingeschakelde app- en functie-abonnementen en uw tokengebruik. Open deze via **Instellingen → Organisatie en toegang → Abonnement**.
@@ -23,7 +31,7 @@ In dit gedeelte staat elke DocBits-app en -functie en of deze voor uw organisati
 
 | Kolom | Beschrijving |
 |--------|-------------|
-| **App** | De DocBits-app of -functie (bijv. AI Workforce, Operator, DocFlow, AI Search, BOD Ingestion, SQL BI Connector). |
+| **App** | De DocBits-app of -functie (bijv. AI Workforce, Operator, DocFlow, AI Zoeken, BOD Ingestion, SQL BI Connector). |
 | **Abonnement** | Het afgenomen abonnement voor die app. |
 | **Status** | **Actief**, **Wordt opgezegd** (actief tot de einddatum en daarna beëindigd) of **Geen** wanneer de app niet is afgenomen. |
 | **Begin / Einde** | De abonnementsperiode. |

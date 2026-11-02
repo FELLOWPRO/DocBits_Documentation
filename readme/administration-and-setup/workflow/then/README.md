@@ -1,80 +1,73 @@
-# Then
+# Dan
 
-## Overzicht van "Then..."-actiekaarten
+Een **Dan**-kaart vertelt een workflow wat er moet gebeuren na de **Wanneer**-trigger en eventuele **En**-voorwaarden. In de **Workflow-bouwer** selecteert u **Kaart toevoegen** onder **Dan...**. Kies een categorie aan de linkerkant of typ een naam in **Zoekkaart**. Selecteer een kaartvoorbeeld om deze toe te voegen, vul de velden in die op de kaart worden weergegeven en sla de workflow op. Scroll binnen de kiezer om meer kaarten te zien. Selecteer **×** om het te sluiten zonder een kaart toe te voegen. Zie [Workflow](..) voor de volledige reeks.
 
-### **1. Document Field-acties:**
+De onderstaande voorbeelden tonen beschikbare acties, niet voltooide instellingen. Kies de actie die overeenkomt met het gewenste resultaat.
 
-* **Invert Checkbox:** Deze actie wisselt de status van een selectievakjeveld in een document om.
-* **Set Checkbox:** Hiermee wordt de status van een selectievakjeveld op true (aangevinkt) of false (niet aangevinkt) gezet.
-* **Set Field to Text:** Deze actie stelt een opgegeven documentveld in op een bepaalde tekstwaarde.
+## Documentveld
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Zet een selectievakje aan of keer het om, plaats tekst in een veld of kopieer het ene veld naar het andere. Kies de veldnamen en de door de kaart gevraagde waarde. Zie [Documentveld](document-field).
 
-### **2. Document-acties:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-* **Approve the Document:** Markeert een document als goedgekeurd binnen het systeem.
-* **Reject the Document:** Markeert een document als afgekeurd.
+## Document
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Kies **Het document goedkeuren** of **Het document afwijzen** wanneer de workflow die beslissing moet nemen. Gebruik eerst een voorwaarde **En** als goedkeuring afhankelijk moet zijn van een controle. Zie [Document](document).
 
-### **3. Export-acties:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-* **Export document with export configuration:** Start het exportproces met een specifieke exportconfiguratie.
-* **Start Export:** Start het exportproces.
+## Logica
 
+Gebruik deze kaarten om waarden om te zetten tussen getal-, tekst- en Booleaanse notaties, of om een waarde uit JSON te lezen. Kies de invoer- en uitvoervelden op de geselecteerde kaart.
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Status
 
-### **4. Status-acties:**
+Kies **Status wijzigen** om het document naar een geselecteerde status te verplaatsen. De kaart kan ook een andere workflow activeren. Zie [Status](status).
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
+## Aanwijzingen en scripts
 
-* **Change Status:** Wijzigt de status van een document of taak naar een opgegeven nieuwe status.
+Kies deze categorie om een DocOperator-promptscript uit te voeren. Selecteer het script en de variabelen die door de kaart worden gevraagd. De kaart biedt ook uitvoeringsinstellingen zoals nieuwe pogingen.
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-### **5. Task-acties:**
+## Exporteren
 
-* Toewijzingen en meldingen:
-  * **Assign Task:** Maakt een taak aan en wijst deze met specifieke details toe aan een persoon of groep, met de optie om hen via e-mail op de hoogte te stellen.
-  * **Create a New Task:** Vergelijkbaar met toewijzen, maar gericht op het opzetten van een volledig nieuwe taak binnen het systeem.
+Start een export, exporteer met een gekozen configuratie of zet een definitieve export in de wachtrij. Kies de exportconfiguratie en openstaande taakoptie die op uw kaart wordt weergegeven. Zie [Exporteren](export).
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-### **6. Table-acties:**
+## Taak
 
-* **Calculate in Table:** Voert berekeningen uit op tabelgegevens op basis van opgegeven voorwaarden en slaat de resultaten op in een aangewezen kolom.
-* **Change Entries:** Werkt vermeldingen in een tabel bij op basis van opgegeven voorwaarden.
+Maak een taak of melding aan en wijs deze toe aan een gebruiker of groep. Voer de titel, beschrijving, prioriteit en meldingsinstellingen in die door de kaart worden gevraagd. Sommige kaarten worden opeenvolgend toegewezen. Zie [Taak](task).
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-### **7. Assignee-acties:**
+## E-mail
 
-* **Assign User from Field:** Wijst een gebruiker toe aan een taak of document op basis van gebruikersgegevens die in een specifiek veld zijn opgeslagen, met een optie voor een terugvalgebruiker als de primaire gebruiker niet beschikbaar is.
-* **Assign Document to User or Group:** Wijst een document rechtstreeks toe aan een gebruiker of groep, zodat de verantwoordelijkheid op de juiste manier wordt belegd.
+Stuur een e-mail met behulp van een geselecteerd sjabloon, naar ontvangers of naar groepen. Kies het sjabloon en de bestemming op de kaart.
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-### **8. Externe-interactie-acties:**
+## Tabel
 
-* **Call API:** Verzendt een verzoek naar een externe API, dat kan worden aangepast met specifieke methoden, parameters en gegevens.
-* **Send HTTPS Request:** Vergelijkbaar met API-aanroepen, maar specifiek opgemaakt voor HTTPS-protocollen.
+Wijzig gegevens of bereken waarden in een documenttabel. Selecteer de tabel, kolommen, operator en resultaatkolom die door de kaart wordt aangevraagd. Zie [Tabel](table).
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-### **9. Geavanceerde verwerking:**
+## Toewijzing
 
-* **Run Workflow:** Triggert een andere workflow binnen het systeem, waardoor complexe procesketens mogelijk zijn.
+Wijs het document toe aan een gebruiker, groep, ontvanger of suborganisatie. Sommige kaarten gebruiken een veld- of beslissingstabel en bieden een terugvalmogelijkheid. Kies de juiste bestemming en val terug op de geselecteerde kaart. Zie [Toegewezene](assignee).
 
-#### Praktische toepassing
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-Deze actiekaarten worden gebruikt om reacties te automatiseren op basis van specifieke triggers die in de eerdere delen van de workflowconfiguratie zijn vastgesteld. Bijvoorbeeld:
+## Actie
 
-* Als een document wordt geïdentificeerd als beoordeling vereisend, kan de actie "Approve the Document" automatisch worden getriggerd zodra het aan alle opgegeven voorwaarden voldoet.
-* Voor gegevensbeheertaken zorgen de acties "Set Checkbox" of "Set Field to Text" ervoor dat documentvelden automatisch worden bijgewerkt, wat handmatige gegevensinvoer en de kans op fouten vermindert.
-* Complexe taken zoals API-interacties of statuswijzigingen stroomlijnen interacties niet alleen binnen het ERP-systeem, maar ook met externe diensten en tools, wat de integratie en functionaliteit verbetert.
+Voer een andere workflow uit, stuur een HTTPS-verzoek, roep een API aan of gebruik de kostenstijgingsberekeningskaart. Deze acties kunnen andere systemen beïnvloeden; Vraag uw beheerder welk eindpunt en welke instellingen u moet gebruiken. Zie [Actie](action).
 
-### Conclusie
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 
-Het "Then..."-gedeelte in uw workflowsysteem biedt krachtige hulpmiddelen om precieze acties te definiëren die moeten plaatsvinden wanneer aan voorwaarden in de workflow is voldaan. Door deze acties effectief te gebruiken, kunnen bedrijven routineprocessen automatiseren, de gegevensnauwkeurigheid waarborgen en dynamisch reageren op veranderende informatie en systeemtoestanden. Begrijpen hoe u deze acties configureert en gebruikt, is essentieel om de efficiëntie en effectiviteit van de workflowmogelijkheden van uw ERP-systeem te maximaliseren.
+[Gedetailleerde logicakaartvelden, JSON-paden, triggers en tests](../cards-overview/logic-cards-guide.md).

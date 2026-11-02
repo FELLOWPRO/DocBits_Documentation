@@ -1,52 +1,52 @@
-# Configuring the Default Tax Country for Export LN
+# Het standaardbelastingland voor LN-export configureren
 
-### Overview
+### Overzicht
 
-The default Tax Country for export is set to **DE (Germany)** to prevent export errors. This can be changed in the mapping file by either:
+Het standaardbelastingland voor de export is **DE (Duitsland)** om exportfouten te voorkomen. U kunt dit in het mappingbestand wijzigen door:
 
-* Defining a different static value.
-* Mapping it dynamically to a field in DocBits.
+* Een andere statische waarde te definiëren.
+* Het belastingland dynamisch aan een veld in DocBits te koppelen.
 
-<mark style="color:red;">**Note:**</mark> If the specified field does not exist or is empty, the export will default back to **DE**.
+<mark style="color:red;">**Opmerking:**</mark> Als het opgegeven veld niet bestaat of leeg is, gebruikt de export **DE** als standaardwaarde.
 
-### Steps to Modify the Tax Country
+### Het belastingland wijzigen
 
-#### 1. Obtain the Mapping File
+#### 1. Het mappingbestand ophalen
 
-* Navigate to **DocBits → Settings → Document Processing → Export**.
-* Open the export configuration you want to modify.
-*   Click on **Download** to obtain the mapping file.\
+* Ga naar **DocBits → Settings → Document Processing → Export**.
+* Open de exportconfiguratie die u wilt wijzigen.
+*   Klik op **Download** om het mappingbestand te downloaden.\
 
 
     <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt=""><figcaption></figcaption></figure>
-* Open the file in a text editor.
+* Open het bestand in een teksteditor.
 
-#### 2. Modify the Mapping File
+#### 2. Het mappingbestand wijzigen
 
-Choose one of the two options below and apply the necessary changes.
+Kies een van de onderstaande opties en voer de benodigde wijzigingen uit.
 
-**Option 1: Static Value**
+**Optie 1: statische waarde**
 
-To set a static Tax Country value, follow these steps:
+Stel als volgt een statische waarde voor het belastingland in:
 
-1.  Define a new static field by adding `,TaxCountry` to the `StaticFields` line.
+1.  Voeg `,TaxCountry` toe aan de regel `StaticFields` om een nieuw statisch veld te definiëren.
 
     ```properties
     StaticFields=FinancialCompany...,TaxCountry
     ```
-2.  Set the country code by adding the following line:
+2.  Stel de landcode in door de volgende regel toe te voegen:
 
     ```properties
     SF_TaxCountry=CountryCode
     ```
 
-    Replace `CountryCode` with the actual country code, e.g., `ES` for Spain or `DE` for Germany:
+    Vervang `CountryCode` door de juiste landcode, bijvoorbeeld `ES` voor Spanje of `DE` voor Duitsland:
 
     ```properties
     SF_TaxCountry=ES
     ```
 
-**Example:**
+**Voorbeeld:**
 
 ```properties
 StaticFields=FinancialCompany,TaxCountry
@@ -55,28 +55,28 @@ SF_TaxCountry=FR
 
 <figure><img src="../../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
 
-**Option 2: Dynamic Mapping from DocBits Field**
+**Optie 2: dynamische mapping vanuit een DocBits-veld**
 
-To dynamically map the Tax Country from a field in DocBits:
+Koppel het belastingland als volgt dynamisch aan een veld in DocBits:
 
-1.  Add `,TaxCountry` to the `HeaderFields` line:
+1.  Voeg `,TaxCountry` toe aan de regel `HeaderFields`:
 
     ```properties
     HeaderFields=SupplierCode,...,TaxCountry
     ```
-2.  Define the corresponding field mapping:
+2.  Definieer de bijbehorende veldmapping:
 
     ```properties
     HF_TaxCountry=DocBits_Field_name
     ```
 
-    Replace `DocBits_Field_Name` with the actual field name in DocBits:
+    Vervang `DocBits_Field_Name` door de werkelijke veldnaam in DocBits:
 
     ```properties
     HF_TaxCountry=tax_country_1
     ```
 
-**Example:**
+**Voorbeeld:**
 
 ```properties
 HeaderFields=SupplierCode,TaxCountry
@@ -85,13 +85,13 @@ HF_TaxCountry=tax_country_1
 
 <figure><img src="../../../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
 
-### Summary
+### Samenvatting
 
-* If the Tax Country is **not defined or the field is empty**, it defaults to **DE**.
-* **Use a static value** if the Tax Country remains constant for all exports.
-* **Use a dynamic field mapping** if the Tax Country varies per document.
+* Als het belastingland **niet is gedefinieerd of het veld leeg is**, wordt **DE** gebruikt.
+* **Gebruik een statische waarde** als het belastingland voor alle exports gelijk is.
+* **Gebruik een dynamische veldmapping** als het belastingland per document verschilt.
 
-By following these steps, you can successfully modify the Tax Country mapping to fit your needs.
+Met deze stappen kunt u de mapping van het belastingland aanpassen aan uw behoeften.
 
 
 

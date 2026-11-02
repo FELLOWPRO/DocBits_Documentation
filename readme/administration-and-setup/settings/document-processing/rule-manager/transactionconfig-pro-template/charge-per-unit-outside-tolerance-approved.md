@@ -1,32 +1,35 @@
-# Case 14: Header Charge - Charge Per Unit Outside Tolerance (Approved)
+# Fall 14: Kopfzuschlag – Zuschlag je Einheit außerhalb der Toleranz (genehmigt)
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-The header charge per unit is outside tolerance but has been approved.
 
-## Action:
+## Szenario:
 
-The system processes the approved charge per unit, applying it to the transaction.
+Der Zuschlag auf Kopfebene je Einheit liegt außerhalb der Toleranz, wurde jedoch genehmigt.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $2.50
-  * Quantity: 2,000 units
-  * Total Header Charge Amount: $5,000.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $3.00 (outside tolerance of 20%, approved)
-  * Quantity: 2,000 units
-  * Total Header Charge Amount: $6,000.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+Das System übernimmt den genehmigten Zuschlag je Einheit in die Transaktion.
 
-Since the header charge per unit ($3.00) exceeds the acceptable tolerance range of 5% but has been approved, the system will:
+## Beispiel:
 
-1. **Accept the Approved Header Charge Per Unit:** The system accepts the invoiced header charge per unit of $3.00 as it has been approved despite exceeding the tolerance limit.
-2. **Process the Header Charge:** The system processes the invoice using the approved charge per unit and the quantity:
-   * **Total Header Charge Amount = Quantity × Approved Header Charge Per Unit**
-   * **Total Header Charge Amount = 2,000 units × $3.00 = $6,000.00**
-3. **Finalize the Invoice:** The system processes the transaction with the approved charges, reflecting the total amount of $6,000.00.
+* **Bestellung (PO):**
+  * Kopfzuschlag je Einheit: $2.50
+  * Menge: 2,000 Einheiten
+  * Kopfzuschlagsgesamtbetrag: $5,000.00
+* **Eingegangene Rechnung:**
+  * Kopfzuschlag je Einheit: $3.00 (Abweichung außerhalb der Toleranz: 20%, genehmigt)
+  * Menge: 2,000 Einheiten
+  * Kopfzuschlagsgesamtbetrag: $6,000.00
+* **Toleranzgrenzen:**
+  * Toleranz für Kopfzuschläge je Einheit: ±5%
 
-This approach allows the system to accommodate approved variances in header charges, ensuring that the transaction is processed according to the approval while maintaining accurate financial records.
+Der Zuschlag auf Kopfebene je Einheit ($3.00) überschreitet die zulässige Toleranz von 5%, wurde jedoch genehmigt. Das System führt folgende Schritte aus:
+
+1. **Genehmigten Kopfzuschlag je Einheit akzeptieren:** Das System akzeptiert den berechneten Zuschlag von $3.00, da er trotz Überschreitung der Toleranzgrenze genehmigt wurde.
+2. **Kopfzuschlag verarbeiten:** Das System verarbeitet die Rechnung anhand des genehmigten Zuschlags je Einheit und der Menge:
+   * **Kopfzuschlagsgesamtbetrag = Menge × Genehmigter Kopfzuschlag je Einheit**
+   * **Kopfzuschlagsgesamtbetrag = 2,000 Einheiten × $3.00 = $6,000.00**
+3. **Rechnung abschließen:** Das System verarbeitet die Transaktion mit den genehmigten Zuschlägen und dem Gesamtbetrag von $6,000.00.
+
+Damit berücksichtigt das System genehmigte Abweichungen bei Kopfzuschlägen. Die Transaktion wird entsprechend der Genehmigung verarbeitet und die Finanzdaten bleiben korrekt.

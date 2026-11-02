@@ -1,40 +1,43 @@
-# Case 10b: Quantity Outside Tolerance (Negative Rejected), Unit Price Outside Tolerance (Rejected)
+# Fall 10b: Menge unterhalb der Toleranz abgelehnt, Stückpreisabweichung abgelehnt
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-Both the quantity and unit price are outside tolerance, and neither has been approved.
 
-## Action:
+## Szenario:
 
-The system rejects the invoice data, adjusts the values to match the purchase order, and generates necessary debit or credit notes.
+Sowohl die Menge als auch der Stückpreis liegen außerhalb der Toleranz; keiner der Werte wurde genehmigt.
 
-## Example:
+## Aktion:
 
-* **Purchase Order (PO):**
-  * Quantity: 150 units
-  * Unit Price: $30.00 per unit
-  * Total Amount: $4,500.00
-* **Invoice Received:**
-  * Quantity: 140 units (outside tolerance of -6.67%, rejected)
-  * Unit Price: $33.00 per unit (outside tolerance of 10%, rejected)
-  * Total Amount: $4,620.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+Das System lehnt die Rechnungsdaten ab, passt die Werte an die Bestellung an und erstellt die erforderlichen Belastungsanzeigen oder Gutschriften.
 
-Since both the quantity (140 units) and unit price ($33.00) are outside the acceptable tolerance limits and neither has been approved, the system will:
+## Beispiel:
 
-1. **Reject the Invoice Data:** The system does not accept the invoiced quantity or unit price due to their deviation from the tolerance limits.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the original purchase order quantity.
-   * Adjusted Quantity = 150 units (from PO)
-3. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $30.00 per unit (from PO)
-4. **Recalculate the Total Amount:** The system recalculates the total amount using the adjusted quantity and unit price:
-   * **Corrected Total Amount = Adjusted Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 150 units × $30.00 per unit = $4,500.00**
-5. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount.
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Debit Note Amount = $4,620.00 - $4,500.00 = $120.00**
-6. **Process the Invoice:** The system processes the invoice with the corrected total amount of $4,500.00 and issues a debit note for $120.00 to offset the overcharged amount.
+* **Bestellung (PO):**
+  * Menge: 150 Einheiten
+  * Stückpreis: $30.00 je Einheit
+  * Gesamtbetrag: $4,500.00
+* **Eingegangene Rechnung:**
+  * Menge: 140 Einheiten (Abweichung außerhalb der Toleranz: -6.67%, abgelehnt)
+  * Stückpreis: $33.00 je Einheit (Abweichung außerhalb der Toleranz: 10%, abgelehnt)
+  * Gesamtbetrag: $4,620.00
+* **Toleranzgrenzen:**
+  * Mengentoleranz: ±5%
+  * Stückpreistoleranz: ±2%
 
-This approach ensures that the financial transaction is corrected to match the purchase order terms, maintaining accurate and fair billing practices.
+Sowohl die Menge (140 Einheiten) als auch der Stückpreis ($33.00) liegen außerhalb der zulässigen Toleranzgrenzen; keiner der Werte wurde genehmigt. Das System führt folgende Schritte aus:
+
+1. **Rechnungsdaten ablehnen:** Das System akzeptiert weder die berechnete Menge noch den Stückpreis, da beide von den Toleranzgrenzen abweichen.
+2. **Menge anpassen:** Das System setzt die Menge auf den ursprünglichen Bestellwert.
+   * Angepasste Menge = 150 Einheiten (aus der Bestellung)
+3. **Stückpreis anpassen:** Das System setzt den Stückpreis auf den ursprünglichen Wert aus der Bestellung.
+   * Angepasster Stückpreis = $30.00 je Einheit (aus der Bestellung)
+4. **Gesamtbetrag neu berechnen:** Das System berechnet den Gesamtbetrag anhand der angepassten Menge und des angepassten Stückpreises neu:
+   * **Korrigierter Gesamtbetrag = Angepasste Menge × Angepasster Stückpreis**
+   * **Korrigierter Gesamtbetrag = 150 Einheiten × $30.00 je Einheit = $4,500.00**
+5. **Belastungsanzeige erstellen:** Da der ursprüngliche Rechnungsbetrag höher als der korrigierte Gesamtbetrag war, erstellt das System eine Belastungsanzeige über den zu viel berechneten Betrag.
+   * **Betrag der Belastungsanzeige = Ursprünglicher Rechnungsbetrag - Korrigierter Gesamtbetrag**
+   * **Betrag der Belastungsanzeige = $4,620.00 - $4,500.00 = $120.00**
+6. **Rechnung verarbeiten:** Das System verarbeitet die Rechnung mit dem korrigierten Gesamtbetrag von $4,500.00 und erstellt eine Belastungsanzeige über $120.00, um den zu viel berechneten Betrag auszugleichen.
+
+Damit wird die Finanztransaktion an die Bestellbedingungen angepasst und eine korrekte, faire Abrechnung sichergestellt.

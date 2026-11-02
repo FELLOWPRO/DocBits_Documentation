@@ -8,7 +8,7 @@ DocBits bietet volle Unterstützung für XRechnung und ermöglicht die Extraktio
 
 ## Unterstützte XRechnung-Versionen (CII)
 
-DocBits supports the following XRechnung CII versions:
+DocBits unterstützt die folgenden XRechnung-CII-Versionen:
 
 * [XRechnung 1.2](versions/xrechnung-1-2.md)
 * [XRechnung 2.1](versions/xrechnung-2-1.md)
@@ -18,16 +18,20 @@ DocBits supports the following XRechnung CII versions:
 
 ## Datenfluss
 
-The data flow from an XRechnung document to your ERP system follows these steps:
+Die Daten eines XRechnung-Dokuments gelangen über folgende Schritte in Ihr ERP-System:
 
-1. **Extraction**: DocBits parses the XML data based on the XRechnung version and format (CII or UBL).
-2. **DocBits Field Mapping**: Extracted data is mapped to standard DocBits fields.
-3. **ERP Alignment**: DocBits fields are mapped to Infor BOD (Business Object Document) fields, typically using the `SyncSupplierInvoice` BOD.
-4. **Export**: The mapped data is exported to the Infor system.
+1. **Extraktion**: DocBits liest die XML-Daten entsprechend der XRechnung-Version und dem Format (CII oder UBL).
+2. **DocBits-Feldzuordnung**: Die extrahierten Daten werden den Standardfeldern von DocBits zugeordnet.
+3. **ERP-Zuordnung**: Die DocBits-Felder werden den Feldern eines Infor-BODs (Business Object Document) zugeordnet. Üblicherweise wird dafür `SyncSupplierInvoice` verwendet.
+4. **Export**: Die zugeordneten Daten werden in das Infor-System exportiert.
 
 ## Mapping-Standards
 
-The mapping is based on the following standards:
-* **UN/CEFACT CII**: The base for XRechnung CII XML structure.
-* **OAGIS/OASIS**: The standard for Infor BODs.
-* **EN 16931**: The European standard for e-invoicing.
+Die Zuordnung basiert auf folgenden Standards:
+* **UN/CEFACT CII**: Grundlage der XML-Struktur von XRechnung CII.
+* **OAGIS/OASIS**: Standard für Infor-BODs.
+* **EN 16931**: Europäische Norm für elektronische Rechnungen.
+
+## Länderanleitungen
+
+Die Länderanleitungen enthalten genaue Formatbezeichnungen, Syntax, Versionsgrenzen und den geprüften Konfigurationsstand. [eDocs-Formate, Versionen und Länderanleitungen](../supported-electronic-documents/README.md).

@@ -17,7 +17,7 @@ Dieser Leitfaden ist so aufgebaut, wie die Suche schrittweise zusammengesetzt wi
 > einen Wert aus der Liste aus — die Schnellsuche erstellt die Abfrage für Sie. Die Beispiele unten
 > zeigen außerdem die getippte Form, sodass Sie sie direkt kopieren können.
 
-<figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="The Quick Search bar at the top of the Dashboard"><figcaption><p>Die Schnellsuchleiste oben im Dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_01_entry-de.png" alt="Schnellsuche im deutschen Dashboard."><figcaption><p>Schnellsuche im deutschen Dashboard.</p></figcaption></figure>
 
 ---
 
@@ -48,8 +48,8 @@ Am rechten Ende der Leiste:
 
 - **ⓘ Hilfe** — öffnet die in der App integrierte Referenz **Dashboard-Suche — Felder & Syntax**,
   die jedes Feld, jeden Operator und jede Kurzform auflistet, die in Ihrem Workspace verfügbar sind.
-- **Filter (Regler)** — ein Schnellbereich für die gängigen Filter Status / Benutzer / Neustart,
-  mit **Filter zurücksetzen** und **Anwenden**.
+- **Filter** (drei Schieberegler) — ein Schnellbereich für die gängigen Filter **Status**,
+  **Zugewiesen an** und **Neustart erforderlich**, mit **Filter löschen** und **Anwenden**.
 - **Index-Ring** — ein kleiner Fortschrittsring, der anzeigt, wie viel Ihres Volltext-Index
   bereits aufgebaut ist (wird nur angezeigt, wenn die Volltextsuche aktiviert ist).
 
@@ -90,7 +90,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 Es stimmt **nicht** mit `XYZ_Invoice.pdf` überein (dort steht „invoice“ in der Mitte — verwenden Sie
 dafür `:`).
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice, any case"><figcaption><p><code>filename=invoice</code> — nur Namen, die mit „invoice“ <strong>beginnen</strong>, in beliebiger Groß-/Kleinschreibung (<code>Invoice.pdf</code>, <code>iNVoice.pdf</code>, <code>INVOICE_2026.pdf</code> … alle stimmen überein). Vergleichen Sie mit <code>:</code> unten.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s50-quick_search_02_filename_starts-de.png" alt="Suche filename = invoice mit deutschen Tabellenüberschriften. Dieses Beispiel hat keine Treffer."><figcaption><p>Suche filename = invoice mit deutschen Tabellenüberschriften. Dieses Beispiel hat keine Treffer.</p></figcaption></figure>
 
 #### `:` → enthält (an beliebiger Stelle)
 
@@ -101,7 +101,7 @@ filename:invoice
 Verwenden Sie `:`, um das Wort **an beliebiger Stelle** im Namen abzugleichen — `2026_Invoice.pdf`,
 `vietnam_einvoice_sample.xml`, `scan_invoice_copy.pdf`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_03_filename_contains.png" alt="filename:invoice matches the word anywhere in the name"><figcaption><p><code>filename:invoice</code> — gleicht das Wort an beliebiger Stelle im Dokumentnamen ab.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_03_filename_contains-de.png" alt="Schnellsuche nach einem Teil des Dateinamens: filename:invoice."><figcaption><p>Schnellsuche nach einem Teil des Dateinamens: filename:invoice.</p></figcaption></figure>
 
 #### `="…"` → beginnt *oder* endet mit
 
@@ -125,7 +125,7 @@ status=ready_for_validation
 Der Status ist eine feste Liste, daher ist `=` ein **exakter** Abgleich, und die Leiste bietet eine Wert-
 auswahl an, wenn Sie `status=` eingeben.
 
-<figure><img src="../../../.gitbook/assets/quick_search_05_status.png" alt="Filtering by document status"><figcaption><p><code>status=ready_for_validation</code> — exakter Abgleich bei einem Feld mit fester Liste.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_05_status-de.png" alt="Nach dem technischen Status ready_for_validation filtern."><figcaption><p>Nach dem technischen Status ready_for_validation filtern.</p></figcaption></figure>
 
 ### Dokumente anhand des Datums finden
 
@@ -136,7 +136,7 @@ created_on>2026-05-25
 Verwenden Sie `>`, `<`, `>=`, `<=` für Datumsbereiche. Sie können auch **relative** Daten verwenden:
 `today()`, `today()-7` (letzte 7 Tage), `today()+30` (nächste 30 Tage).
 
-<figure><img src="../../../.gitbook/assets/quick_search_06_date.png" alt="Filtering by creation date"><figcaption><p><code>created_on&#62;2026-05-25</code> — Dokumente, die nach einem Datum erstellt wurden.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_06_date-de.png" alt="Dokumente mit created_on nach dem 25. Mai 2026 suchen."><figcaption><p>Dokumente mit created_on nach dem 25. Mai 2026 suchen.</p></figcaption></figure>
 
 ### Dokumente anhand des Rechnungs-Untertyps finden
 
@@ -144,7 +144,7 @@ Verwenden Sie `>`, `<`, `>=`, `<=` für Datumsbereiche. Sie können auch **relat
 invoice_sub_type="Cost Invoice"
 ```
 
-Der Rechnungs-Untertyp ist eine feste Liste (zum Beispiel **Cost Invoice** oder **Purchase
+Der Rechnungs-Untertyp ist eine feste Liste (zum Beispiel **Kostenrechnung** oder **Purchase
 Invoice**), daher ist `=` ein **exakter** Abgleich, und die Leiste bietet eine Wertauswahl an, wenn
 Sie `invoice_sub_type=` eingeben. Verwenden Sie `invoice_sub_type!="Cost Invoice"` für
 alles außer diesem Untertyp.
@@ -165,10 +165,10 @@ Abgleichsregeln sind genau dieselben wie für Standardtextfelder
 supplier_name=Test
 ```
 
-Beginnt-mit auf dem extrahierten Lieferantennamen. Verwenden Sie `supplier_name:fuji`, um an beliebiger Stelle
-abzugleichen, oder `supplier_name:"Ruiz Foods"`, um einen Wert mit Leerzeichen in Anführungszeichen zu setzen.
+Beginnt-mit auf dem extrahierten Lieferantennamen. Verwenden Sie `supplier_name:Beispiel`, um an beliebiger Stelle
+abzugleichen, oder `supplier_name:"Beispiel Lieferant"`, um einen Wert mit Leerzeichen in Anführungszeichen zu setzen.
 
-<figure><img src="../../../.gitbook/assets/quick_search_09_supplier.png" alt="Searching by supplier name"><figcaption><p><code>supplier_name=Test</code> — der Lieferant jedes Ergebnisses beginnt mit „Test“.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_09_supplier-de.png" alt="Beispiel einer Lieferantenabfrage: supplier_name=Test."><figcaption><p>Beispiel einer Lieferantenabfrage: supplier_name=Test.</p></figcaption></figure>
 
 ### Dokumente anhand der Bestellung finden
 
@@ -178,7 +178,7 @@ purchase_order=PO
 
 Beginnt-mit auf der extrahierten Bestellnummer — ideal für ein Bestell-Präfix.
 
-<figure><img src="../../../.gitbook/assets/quick_search_10_purchase_order.png" alt="Searching by purchase order"><figcaption><p><code>purchase_order=PO</code> — Dokumente, deren Bestellnummer mit „PO“ beginnt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_10_purchase_order-de.png" alt="Beispiel einer Bestellabfrage: purchase_order=PO."><figcaption><p>Beispiel einer Bestellabfrage: purchase_order=PO.</p></figcaption></figure>
 
 ### Dokumente anhand des Betrags finden
 
@@ -188,7 +188,7 @@ total_amount>5000
 
 Verwenden Sie `>`, `<`, `>=`, `<=` oder `between 100 and 500` für eine Spanne.
 
-<figure><img src="../../../.gitbook/assets/quick_search_07_amount.png" alt="Filtering by total amount"><figcaption><p><code>total_amount&#62;5000</code> — Rechnungen über 5.000.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_07_amount-de.png" alt="Dokumente mit einem Gesamtbetrag über 5000 suchen."><figcaption><p>Dokumente mit einem Gesamtbetrag über 5000 suchen.</p></figcaption></figure>
 
 Für ein Fenster verwenden Sie `between`:
 
@@ -198,7 +198,7 @@ total_amount between 1000 and 5000
 
 Dies ist die Kurzform für `total_amount>=1000 AND total_amount<=5000`.
 
-<figure><img src="../../../.gitbook/assets/quick_search_14_between.png" alt="Amount window with between"><figcaption><p><code>total_amount between 1000 and 5000</code> — jedes Ergebnis liegt innerhalb des Fensters.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_14_between-de.png" alt="Gesamtbetrag zwischen 1000 und 5000 eingrenzen."><figcaption><p>Gesamtbetrag zwischen 1000 und 5000 eingrenzen.</p></figcaption></figure>
 
 ### Finden, was fehlt
 
@@ -209,7 +209,7 @@ supplier_name=""
 `=""` bedeutet „dieses Feld ist **nicht gesetzt**“; `supplier_name!=""` bedeutet „hat einen beliebigen
 Lieferanten“.
 
-<figure><img src="../../../.gitbook/assets/quick_search_12_empty.png" alt="Finding documents with no supplier"><figcaption><p><code>supplier_name=""</code> — Dokumente, die noch keinen Lieferanten haben.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_12_empty-de.png" alt="Dokumente mit leerem Lieferantennamen suchen."><figcaption><p>Dokumente mit leerem Lieferantennamen suchen.</p></figcaption></figure>
 
 Dieselbe Prüfung auf Vorhandensein funktioniert bei jedem Feld — zum Beispiel bei Dokumenten, denen noch
 ein AP-Zuordnungscode fehlt:
@@ -218,32 +218,33 @@ ein AP-Zuordnungscode fehlt:
 ap_assignment_code=""
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_15_ap_empty.png" alt="Documents missing an AP assignment code"><figcaption><p><code>ap_assignment_code=""</code> — Dokumente, die keinen AP-Zuordnungscode haben. Verwenden Sie <code>ap_assignment_code!=""</code> für diejenigen, die einen haben.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_15_ap_empty-de.png" alt="Dokumente ohne AP-Zuordnung suchen."><figcaption><p>Dokumente ohne AP-Zuordnung suchen.</p></figcaption></figure>
 
 ---
 
-## Smart-Filter — ein Klick
+## Schnellfilter — ein Klick
 
-Oben im Dropdown-Menü der Schnellsuche (klicken Sie in die Suchleiste) finden Sie
-**Smart-Filter**: fertige Suchen, die Sie mit einem einzigen Klick anwenden. Jeder davon
-ist lediglich eine Kurzform für eine Abfrage, die Sie auch selbst eingeben könnten:
+Das **Blitz**-Symbol am Anfang des Suchfelds öffnet die Feldauswahl. Oben in dieser
+Auswahl stehen die **Schnellfilter**: fertige Suchen, die Sie mit einem einzigen Klick
+anwenden. Jeder davon ist lediglich eine Kurzform für eine Abfrage, die Sie auch selbst
+eingeben könnten:
 
-| Smart-Filter | Findet | Entspricht der Eingabe |
+| Schnellfilter | Findet | Entspricht der Eingabe |
 |--------------|-------|----------------|
 | ⚠️ **Überfällig** | Über das Fälligkeitsdatum hinaus | `invoice_due_date<today()` |
 | 🕐 **Bald fällig** | Innerhalb der nächsten 7 Tage | `invoice_due_date<=today()+7` |
 | 👤 **Mir zugewiesen** | Elemente, die auf Ihre Aktion warten | `assigned_to=<you>` |
-| 📅 **Heutiger Posteingang** | Heute importiert | `imported_on>=today()` |
-| 📋 **Ausstehende Validierung** | Bereit zur Validierung | `status=ready_for_validation` |
+| 📅 **Heute eingegangen** | Heute importiert | `imported_on>=today()` |
+| 📋 **Wartet auf Validierung** | Bereit zur Validierung | `status=ready_for_validation` |
 | 🧾 **Elektronische Dokumente** | E-Rechnungen (XML, ZUGFeRD, EDI) | `is_edoc=true` |
-| ✅ **Vollständiger Bestellabgleich** | Vollständig mit einer Bestellung abgeglichen | `po_match_status=full_matched` |
-| ➗ **Teilweiser Bestellabgleich** | Teilweise mit einer Bestellung abgeglichen | `po_match_status=partial_matched` |
-| 📉 **Unter-Bestellabgleich** | Menge oder Stückpreis unter der Bestellung | `po_match_status=under_matched` |
+| ✅ **Voller PO-Abgleich** | Vollständig mit einer Bestellung abgeglichen | `po_match_status=full_matched` |
+| ➗ **Teilweiser PO-Abgleich** | Teilweise mit einer Bestellung abgeglichen | `po_match_status=partial_matched` |
+| 📉 **PO-Unterabgleich** | Menge oder Stückpreis unter der Bestellung | `po_match_status=under_matched` |
 
-Die drei **Bestellabgleich**-Filter und die Volltextfelder erfordern, dass die Volltextsuche
+Die drei **PO-Abgleich**-Filter und die Volltextfelder erfordern, dass die Volltextsuche
 für Ihre Organisation aktiviert ist.
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="The Smart Filters dropdown panel"><figcaption><p>Die Smart-Filter oben im Dropdown-Menü der Schnellsuche — ein Klick wendet den Filter an (Überfällig, Bald fällig, Mir zugewiesen, Heutiger Posteingang, Ausstehende Validierung, Elektronische Dokumente, Vollständiger / Teilweiser / Unter-Bestellabgleich).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s50-quick_search_11_smart_filters-de.png" alt="Deutsche Schnellfilter in der Feldauswahl der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen."><figcaption><p>Deutsche Schnellfilter in der Feldauswahl der Schnellsuche, darunter Überfällig, Bald fällig und Mir zugewiesen.</p></figcaption></figure>
 
 ---
 
@@ -258,10 +259,10 @@ group by supplier_name
 ```
 
 Die Liste zeigt dann einklappbare **Gruppenüberschriften**, jede mit dem Namen der Gruppe und
-einer **Anzahl** (z. B. *Ruiz Foods (12)*). Klicken Sie auf eine Überschrift, um diese Gruppe ein- oder
+einer **Anzahl** (z. B. *Beispiel-Lieferant (12)*). Klicken Sie auf eine Überschrift, um diese Gruppe ein- oder
 auszuklappen. Bei Datumsfeldern können Sie nach **Tag, Woche oder Monat** gruppieren.
 
-<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Results grouped by supplier with collapsible headers"><figcaption><p><code>group by supplier_name</code> — die Ergebnisse werden zu einer einklappbaren Überschrift pro Lieferant zusammengefasst.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s50-quick_search_16_grouping-de.png" alt="Gruppieren nach Lieferantenname in der deutschen Oberfläche. Lieferantendaten und Tabellenwerte sind ausgeblendet."><figcaption><p>Gruppieren nach Lieferantenname in der deutschen Oberfläche. Lieferantendaten und Tabellenwerte sind ausgeblendet.</p></figcaption></figure>
 
 Die Gruppierung lässt sich mit jedem Filter kombinieren — `status=ready_for_validation group by
 supplier_name` gruppiert nur die übereinstimmenden Dokumente. Das Klicken in eine Gruppe
@@ -278,7 +279,7 @@ Das **Hilfesymbol** in der Suchleiste öffnet eine vollständige Referenz aller 
 Operatoren und Kurzformen, die in Ihrem Workspace verfügbar sind — einschließlich der Angabe, welche Felder
 Standard- bzw. Volltextfelder sind.
 
-<figure><img src="../../../.gitbook/assets/quick_search_08_help_modal.png" alt="The in-app Dashboard Search help with all operators"><figcaption><p>Die integrierte Hilfe <strong>Dashboard-Suche — Felder &#38; Syntax</strong>, die jeden Operator und die Art des Wertabgleichs auflistet.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/quick_search_08_help_modal.png" alt="Hilfe zur Dashboard-Suche mit allen Operatoren direkt in der Anwendung"><figcaption><p>Die integrierte Hilfe <strong>Dashboard-Suche — Felder &#38; Syntax</strong>, die jeden Operator und die Art des Wertabgleichs auflistet.</p></figcaption></figure>
 
 ### Wie `=` je nach Feldtyp abgleicht
 
@@ -317,7 +318,7 @@ status=ready_for_validation AND supplier_name=Test
 (status=error OR status=failed) AND created_on>today()-1
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_13_combined.png" alt="Combining conditions with AND"><figcaption><p><code>status=ready_for_validation AND supplier_name=Test</code> — zwei kombinierte Bedingungen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_13_combined-de.png" alt="Status- und Lieferantenfilter mit AND kombinieren."><figcaption><p>Status- und Lieferantenfilter mit AND kombinieren.</p></figcaption></figure>
 
 ### Kurzformen
 
@@ -340,173 +341,143 @@ Kürzere Formulierungen für dieselben Abfragen — verwenden Sie, was sich bess
 | `@User` | `assigned_to:User` | Präfix im Twitter-Stil für den Zugewiesenen |
 | `$5000+` | `total_amount>=5000` | `$`-Präfix für Betragsschwellen |
 
-### Galerie: Abfrage + Ergebnis für Shortcuts
+### Galerie: Abfragebeispiele
 
-Diese Beispiele zeigen jedes Shortcut-Muster mit der eingegebenen Abfrage und dem Ergebnis im Dashboard. Die erste Gruppe nutzt Standardfelder und funktioniert auch ohne aktivierte Volltextsuche. Die zweite Gruppe nutzt Volltextfelder wie Betrag oder Fälligkeitsdatum.
+Die Bilder zeigen die jeweils eingegebene Abfrage in der deutschen Oberfläche. Dokumentdaten sind ausgeblendet. Ein Bild der Filterleiste belegt keine bestimmte Trefferzahl.
 
-#### Funktioniert ohne Volltext
-
-##### Operator-Aliase
-
-- Abfrage: `created_on gt 2026-05-25`
-- Entspricht: `created_on>2026-05-25`
-- Ergebnis: Filtert nach Created nach dem 25. Mai 2026.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Quick-Search-Ergebnis für created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtert nach Created nach dem 25. Mai 2026.</p></figcaption></figure>
-
-##### Datumswörter ohne Klammern
-
-- Abfrage: `created_on < today`
-- Entspricht: `created_on<today()`
-- Ergebnis: Erweitert das Wort today zu today().
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Quick-Search-Ergebnis für created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Erweitert das Wort today zu today().</p></figcaption></figure>
-
-##### Relativer Zeitraum
-
-- Abfrage: `created_on this_month`
-- Entspricht: `created_on>=first day of this month AND created_on<=last day of this month`
-- Ergebnis: Erweitert this_month zu einem Datumsfenster.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Quick-Search-Ergebnis für created_on this_month"><figcaption><p><code>created_on this_month</code> - Erweitert this_month zu einem Datumsfenster.</p></figcaption></figure>
-
-##### Leer/gesetzt-Wörter
-
-- Abfrage: `assigned_to is empty`
-- Entspricht: `assigned_to=""`
-- Ergebnis: Findet Dokumente ohne Bearbeiter.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Quick-Search-Ergebnis für assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Findet Dokumente ohne Bearbeiter.</p></figcaption></figure>
-
-##### Lesbarer Status
-
-- Abfrage: `status:open`
-- Entspricht: `status=ready_for_validation`
-- Ergebnis: Ordnet open dem Validierungsstatus zu.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Quick-Search-Ergebnis für status:open"><figcaption><p><code>status:open</code> - Ordnet open dem Validierungsstatus zu.</p></figcaption></figure>
-
-##### Nicht zwischen
-
-- Abfrage: `created_on not between 2026-06-01, 2026-06-15`
-- Entspricht: `(created_on<2026-06-01 OR created_on>2026-06-15)`
-- Ergebnis: Findet Werte außerhalb eines Datumsfensters.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Quick-Search-Ergebnis für created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Findet Werte außerhalb eines Datumsfensters.</p></figcaption></figure>
-
-##### In-Liste
-
-- Abfrage: `status in (ready_for_validation, exported)`
-- Entspricht: `status=ready_for_validation OR status=exported`
-- Ergebnis: Findet jeden der aufgeführten Statuswerte.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Quick-Search-Ergebnis für status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Findet jeden der aufgeführten Statuswerte.</p></figcaption></figure>
-
-##### Negationspräfix
-
-- Abfrage: `not status=finished`
-- Entspricht: `status!=finished`
-- Ergebnis: Kehrt die Bedingung für den Status finished um.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Quick-Search-Ergebnis für not status=finished"><figcaption><p><code>not status=finished</code> - Kehrt die Bedingung für den Status finished um.</p></figcaption></figure>
-
-##### Text enthält
-
-- Abfrage: `filename contains E2E`
-- Entspricht: `filename:E2E`
-- Ergebnis: Verwendet contains als Teilstring-Suche im Dateinamen.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Quick-Search-Ergebnis für filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Verwendet contains als Teilstring-Suche im Dateinamen.</p></figcaption></figure>
-
-##### Rechnungspräfix
-
-- Abfrage: `#INV-1234`
-- Entspricht: `invoice_id:INV-1234`
-- Ergebnis: Ordnet #... einer Suche nach Rechnungs-ID zu.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Quick-Search-Ergebnis für #INV-1234"><figcaption><p><code>#INV-1234</code> - Ordnet #... einer Suche nach Rechnungs-ID zu.</p></figcaption></figure>
-
-##### Bearbeiter-Präfix
-
-- Abfrage: `@Daniel`
-- Entspricht: `assigned_to:"Daniel"`
-- Ergebnis: Ordnet @... einer Suche nach Bearbeiternamen zu.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Quick-Search-Ergebnis für @Daniel"><figcaption><p><code>@Daniel</code> - Ordnet @... einer Suche nach Bearbeiternamen zu.</p></figcaption></figure>
-
-#### Erfordert Volltextsuche
-
-Wenn derselbe Shortcut mit einem Volltextfeld verwendet wird, benötigt die Abfrage trotzdem Volltext. Beispiel: `ap_assignment_code is empty` nutzt denselben Leer/gesetzt-Shortcut wie `assigned_to is empty`, aber das AP-Zuordnungsfeld ist ein Volltextfeld.
-
-##### Betragssuffix
-
-- Abfrage: `total_amount > 5k`
-- Entspricht: `total_amount>5000`
-- Ergebnis: Erweitert k bei Betragsfeldern zu Tausendern.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Quick-Search-Ergebnis für total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Erweitert k bei Betragsfeldern zu Tausendern.</p></figcaption></figure>
-
-##### Überfällig-Shortcut
-
-- Abfrage: `overdue`
-- Entspricht: `invoice_due_date<today() AND status!=finished`
-- Ergebnis: Findet nicht abgeschlossene Rechnungen nach Fälligkeit.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Quick-Search-Ergebnis für overdue"><figcaption><p><code>overdue</code> - Findet nicht abgeschlossene Rechnungen nach Fälligkeit.</p></figcaption></figure>
-
-##### Betragspräfix
-
-- Abfrage: `$5000+`
-- Entspricht: `total_amount>=5000`
-- Ergebnis: Ordnet $...+ einer Betragsschwelle zu.
-
-<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Quick-Search-Ergebnis für $5000+"><figcaption><p><code>$5000+</code> - Ordnet $...+ einer Betragsschwelle zu.</p></figcaption></figure>
-
----
-
-## Teil 4 — Erweiterte Suchmodi
-
-Über die Feldsuche hinaus durchsuchen drei Präfixmodi den Dokumentinhalt selbst.
-
-### Vektorsuche (semantisch) — `vector:`
-
-Gleicht nach **Bedeutung** ab, nicht nach exaktem Text — nützlich für „Dokumente über XYZ finden“.
-Erfordert das Vektor-Modul; bezieht sich auf den Dokumentinhalt.
+#### Vergleich mit Wortoperator
 
 ```
-vector: invoices about office supplies
-vector: shipping delays with Hamburg port
+created_on gt 2026-05-25
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Semantic vector search results"><figcaption><p><code>vector: supplier invoice</code> — semantisch verwandte Dokumente, auch ohne diese exakten Wörter.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_01_operator_aliases-de.png" alt="Vergleichsoperator gt in einer Datumsabfrage verwenden."><figcaption><p>Vergleichsoperator gt in einer Datumsabfrage verwenden.</p></figcaption></figure>
 
-### OCR-Textsuche — `ocr:`
-
-Durchsucht den **Seitentext**, den die OCR-Engine extrahiert hat — nicht nur die
-strukturierten Spalten. Nützlich, wenn der Wert, an den Sie sich erinnern, im Dokumenttext steht.
+#### Datum vor heute
 
 ```
-ocr: Versandkosten
-ocr: "purchase order PO-12345"
-ocr: Hamburg AND doc_type=INVOICE
-ocr: IBAN
+created_on < today()
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_18_ocr.png" alt="OCR text search results"><figcaption><p><code>ocr: demo invoice</code> — gleicht Text ab, der irgendwo auf den Dokumentseiten gefunden wird.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_02_bare_date-de.png" alt="created_on mit today() vergleichen."><figcaption><p>created_on mit today() vergleichen.</p></figcaption></figure>
 
-### Natürlichsprachliche (KI-)Suche — `ai:`
-
-Beschreiben Sie in einfacher Sprache, was Sie suchen; die KI liest Ihre Formulierung und extrahiert
-Filter (Lieferant, Daten, Beträge) in eine strukturierte Abfrage. Anders als die Vektorsuche
-**erstellt sie eine Abfrage**, anstatt ähnliche Dokumente zu finden.
+#### Erstellungsdatum ab einem Stichtag
 
 ```
-ai: invoices from Ruiz over 1000 last quarter
-ai: overdue invoices waiting on approval
-ai: shipping documents from Hamburg last month
+created_on >= 2026-06-01
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_19_ai.png" alt="Natural-language AI search results"><figcaption><p><code>ai: invoices over 1000 from this year</code> — die KI wandelt den Satz automatisch in Filter um.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_03_period-de.png" alt="Erstellungsdatum ab dem 1. Juni 2026 filtern."><figcaption><p>Erstellungsdatum ab dem 1. Juni 2026 filtern.</p></figcaption></figure>
+
+#### Ohne Bearbeiter
+
+```
+assigned_to is empty
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_04_presence-de.png" alt="Dokumente ohne zugewiesenen Bearbeiter suchen."><figcaption><p>Dokumente ohne zugewiesenen Bearbeiter suchen.</p></figcaption></figure>
+
+#### Status filtern
+
+```
+status=ready_for_validation
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_05_status_open-de.png" alt="Beispiel einer Statusabfrage in der deutschen Schnellsuche."><figcaption><p>Beispiel einer Statusabfrage in der deutschen Schnellsuche.</p></figcaption></figure>
+
+#### Außerhalb eines Zeitraums
+
+```
+created_on not between 2026-06-01 and 2026-06-15
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_06_not_between-de.png" alt="Erstellungsdatum außerhalb eines angegebenen Zeitraums suchen."><figcaption><p>Erstellungsdatum außerhalb eines angegebenen Zeitraums suchen.</p></figcaption></figure>
+
+#### Mehrere Statuswerte
+
+```
+status=ready_for_validation OR status=exported
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_07_in_list-de.png" alt="Zwei technische Dokumentstatus mit OR kombinieren."><figcaption><p>Zwei technische Dokumentstatus mit OR kombinieren.</p></figcaption></figure>
+
+#### Lieferantenfilter ausschließen
+
+```
+NOT supplier_name=Test
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_08_negation-de.png" alt="Einen Lieferantenfilter mit NOT ausschließen."><figcaption><p>Einen Lieferantenfilter mit NOT ausschließen.</p></figcaption></figure>
+
+#### Teil eines Dateinamens
+
+```
+filename:invoice
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_09_contains-de.png" alt="Dateinamen mit einem enthaltenen Suchbegriff finden."><figcaption><p>Dateinamen mit einem enthaltenen Suchbegriff finden.</p></figcaption></figure>
+
+#### Rechnungsnummer abfragen
+
+```
+invoice_number=INV
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_12_invoice_prefix-de.png" alt="Beispiel einer Abfrage nach invoice_number."><figcaption><p>Beispiel einer Abfrage nach invoice_number.</p></figcaption></figure>
+
+#### Leere Bearbeiterzuordnung
+
+```
+assigned_to=""
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_13_assignee_prefix-de.png" alt="Nach leerer Bearbeiterzuordnung filtern: assigned_to=&quot;&quot;."><figcaption><p>Nach leerer Bearbeiterzuordnung filtern: assigned_to=&quot;&quot;.</p></figcaption></figure>
+
+#### Währung abfragen
+
+```
+currency=EUR
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_10_currency_suffix-de.png" alt="Dokumente in Euro suchen: currency=EUR."><figcaption><p>Dokumente in Euro suchen: currency=EUR.</p></figcaption></figure>
+
+#### Fälligkeitsdatum vor heute
+
+```
+invoice_due_date<today()
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_11_overdue-de.png" alt="Nach einem Fälligkeitsdatum vor today() suchen."><figcaption><p>Nach einem Fälligkeitsdatum vor today() suchen.</p></figcaption></figure>
+
+#### Betragsschwelle
+
+```
+total_amount>=1000
+```
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_shortcut_14_amount_prefix-de.png" alt="Gesamtbetrag ab 1000 filtern."><figcaption><p>Gesamtbetrag ab 1000 filtern.</p></figcaption></figure>
+
+## Dokumentinhalt einbeziehen
+
+Über das Menü **Suche im Dokumentinhalt** bestimmen Sie, ob die Schnellsuche zusätzlich den Dokumentinhalt berücksichtigt. Diese Auswahl ist von technischen Abfragepräfixen wie `vector:`, `ocr:` oder `ai:` zu unterscheiden.
+
+### Automatisch
+
+Wählen Sie **Automatisch**, damit die Suche den Dokumentinhalt nach dem verfügbaren Suchmodus einbezieht.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_17_vector-de.png" alt="Dokumentinhalt bei der Schnellsuche automatisch einbeziehen."><figcaption><p>Dokumentinhalt bei der Schnellsuche automatisch einbeziehen.</p></figcaption></figure>
+
+### Dokumentinhalt immer einbeziehen
+
+Diese Auswahl bezieht den Dokumentinhalt ausdrücklich in die Suche ein. Die dafür benötigten Suchfunktionen müssen für Ihre Organisation verfügbar sein.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_18_ocr-de.png" alt="Dokumentinhalt bei der Schnellsuche immer einbeziehen."><figcaption><p>Dokumentinhalt bei der Schnellsuche immer einbeziehen.</p></figcaption></figure>
+
+### Nur sichtbare Spalten
+
+Mit **Nur sichtbare Spalten** begrenzen Sie die Suche auf die im Dashboard sichtbaren Spalten.
+
+<figure><img src="../../../.gitbook/assets/s150-quick_search_19_ai-de.png" alt="Schnellsuche auf sichtbare Spalten begrenzen."><figcaption><p>Schnellsuche auf sichtbare Spalten begrenzen.</p></figcaption></figure>
 
 ---
 
@@ -517,7 +488,7 @@ ai: shipping documents from Hamburg last month
 | Bereit zur Validierung, vollständig abgeglichen | `status=ready_for_validation AND po_match_status=full_matched` |
 | Dieser Lieferant, diese Woche | `supplier_name=Test AND created_on>today()-7` |
 | Überfällige Rechnungen mit hohem Wert | `total_amount>5000 AND invoice_due_date<today()` |
-| Zwei Lieferanten gleichzeitig | `supplier_name=fuji OR supplier_name=acme` |
+| Zwei Lieferanten gleichzeitig | `supplier_name=BeispielA OR supplier_name=BeispielB` |
 | Fehlerhafte Dokumente von heute | `(status=error OR status=failed) AND created_on>today()-1` |
 | Elektronische Gutschriften | `is_edoc=true AND sub_doc_type=CREDIT_NOTE` |
 | Nach Bestell-Präfix | `purchase_order=PO-2026` |

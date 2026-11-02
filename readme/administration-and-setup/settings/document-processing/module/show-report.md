@@ -1,4 +1,4 @@
-# Show Report
+# Pokaż raport
 
 ### Przegląd
 

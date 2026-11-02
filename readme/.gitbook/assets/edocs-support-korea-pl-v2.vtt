@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.357
+Korea E-Tax Invoice i Korea NTS to
+skonfigurowane rodziny. Oznaczenia nie
+
+formats_02
+00:00:06.357 --> 00:00:11.837
+podają wydania. Dopasuj rzeczywistą
+strukturę XML i nie traktuj ekstrakcji
+
+formats_03
+00:00:11.837 --> 00:00:14.967
+jako dowodu akceptacji przez platformę
+podatkową.
+
+workflow_01
+00:00:15.717 --> 00:00:21.185
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:21.185 --> 00:00:26.758
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:26.758 --> 00:00:29.567
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:30.317 --> 00:00:36.343
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:36.343 --> 00:00:42.275
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:42.275 --> 00:00:45.100
+podatkowego ani dostarczenia przez sieć.
+

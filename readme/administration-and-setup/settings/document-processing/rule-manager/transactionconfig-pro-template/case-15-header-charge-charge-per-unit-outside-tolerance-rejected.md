@@ -1,37 +1,39 @@
-# Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)
+# Przypadek 15: Opłata w nagłówku - Opłata za jednostkę poza granicami tolerancji (Odrzucono)
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The header charge per unit is outside tolerance and has not been approved.
+## Scenariusz:
 
-## Action:
+Opłata za głowicę za jednostkę wykracza poza tolerancję i nie została zatwierdzona.
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+## Działanie:
 
-## Example:
+System dostosowuje opłatę nagłówkową do zamówienia, odpowiednio przetwarza transakcję i generuje niezbędne dokumenty korygujące.
+
+## Przykład:
 
 * **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
+  * Opłata za nagłówek za jednostkę: $4.00
   * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
+  * Całkowita kwota opłaty za nagłówek: $6,000.00
 * **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
+  * Opłata za nagłówek za jednostkę: $5.00 (poza tolerancją 25%, odrzucona)
   * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
+  * Całkowita kwota opłaty za nagłówek: $7,500.00
 * **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+  * Tolerancja opłaty za głowicę na jednostkę: ±5%
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+Ponieważ opłata za jednostkę ($5.00) przekracza dopuszczalny zakres tolerancji wynoszący 5% i nie została zatwierdzona, system:
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+1. **Odrzuć zafakturowaną opłatę nagłówkową za jednostkę:** System nie akceptuje zafakturowanej opłaty nagłówkowej za jednostkę w wysokości $5.00 ze względu na odchylenie przekraczające limit tolerancji.
+2. **Dostosuj opłatę za jednostkę w nagłówku:** System dostosowuje opłatę za jednostkę, aby odpowiadała pierwotnemu zamówieniu lub zatwierdzonej opłacie za jednostkę:
+   * Skorygowana opłata za nagłówek za jednostkę = $4.00 (od PO)
+3. **Oblicz ponownie całkowitą kwotę opłaty za nagłówek:** System ponownie oblicza całkowitą kwotę opłaty w oparciu o skorygowaną opłatę jednostkową:
+   * **Skorygowana całkowita kwota opłaty za głowicę = ilość × Skorygowana opłata za głowicę na jednostkę**
+   * **Skorygowana całkowita kwota opłaty za nagłówek = 1,500 jednostek × $4.00 = $6,000.00**
+4. **Wygeneruj notę kredytową:** Ponieważ pierwotna suma faktury była wyższa niż suma skorygowana, system generuje notę kredytową na zawyżoną kwotę:
+   * **Kwota noty kredytowej = Suma oryginalnej faktury – Skorygowana łączna kwota opłaty nagłówkowej**
+   * **Kwota noty kredytowej = $7,500.00 - $6,000.00 = $1,500.00**
+5. **Przetwórz fakturę:** System przetwarza fakturę zawierającą skorygowaną łączną kwotę obciążenia wynoszącą $6,000.00 i wystawia notę kredytową na kwotę $1,500.00 w celu rozliczenia nadmiernej kwoty.
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+Takie podejście gwarantuje, że transakcja jest zgodna z pierwotnymi warunkami zamówienia, zachowując dokładne przetwarzanie finansowe i korygując wszelkie nadmierne obciążenia.

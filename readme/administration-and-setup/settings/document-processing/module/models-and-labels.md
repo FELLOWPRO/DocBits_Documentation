@@ -1,4 +1,4 @@
-# Models & Labels
+# Modele i etykiety
 
 ### Przegląd
 

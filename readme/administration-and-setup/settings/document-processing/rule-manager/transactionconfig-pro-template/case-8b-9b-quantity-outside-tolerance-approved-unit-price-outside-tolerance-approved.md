@@ -1,35 +1,37 @@
-# Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)
+# Przypadek 8b, 9b: Ilość i cena poza tolerancją — zatwierdzenie
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-Both the quantity and unit price are outside the tolerance range but have been approved.
+## Scenariusz:
 
-## Action:
+Zarówno ilość, jak i cena jednostkowa znajdują się poza zakresem tolerancji, ale zostały zatwierdzone.
 
-The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+## Działanie:
 
-## Example:
+System przetwarza transakcję, wykorzystując wartości faktury zarówno pod względem ilości, jak i ceny jednostkowej, stosując wszelkie niezbędne korekty lub opłaty za pozycje.
+
+## Przykład:
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $25.00 per unit
+  * Cena jednostkowa: $25.00 za sztukę
   * Total Amount: $5,000.00
 * **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, approved)
-  * Unit Price: $27.00 per unit (outside tolerance of 8%, approved)
+  * Ilość: 220 jednostek (tolerancja zewnętrzna 10%, zatwierdzona)
+  * Cena jednostkowa: $27.00 za sztukę (tolerancja zewnętrzna 8%, zatwierdzona)
   * Total Amount: $5,940.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerancja ceny jednostkowej: ±2%
 
-Since both the quantity (220 units) and unit price ($27.00) are outside the acceptable tolerance limits but have been approved, the system will:
+Ponieważ zarówno ilość (220 jednostek), jak i cena jednostkowa ($27.00) wykraczają poza dopuszczalne granice tolerancji, ale zostały zatwierdzone, system:
 
-1. **Accept the Approved Quantity:** The system accepts the invoiced quantity of 220 units as it has been approved despite being outside the tolerance range.
-2. **Accept the Approved Unit Price:** The system accepts the invoiced unit price of $27.00 per unit as it has been approved despite being outside the tolerance range.
-3. **Calculate the Total Amount:** The system calculates the total amount based on the approved invoice values:
-   * **Total Amount = Quantity × Unit Price**
-   * **Total Amount = 220 units × $27.00 per unit = $5,940.00**
-4. **Apply Necessary Adjustments or Line Charges:** If applicable, the system may apply any additional line charges or adjustments based on the organization's policies for handling approved variances.
-5. **Process the Invoice:** The system processes the invoice using the approved values for both quantity and unit price, finalizing the transaction at the total amount of $5,940.00.
+1. **Zaakceptuj zatwierdzoną ilość:** System akceptuje zafakturowaną ilość 220 jednostek, ponieważ została zatwierdzona pomimo wykraczania poza zakres tolerancji.
+2. **Zaakceptuj zatwierdzoną cenę jednostkową:** System akceptuje zafakturowaną cenę jednostkową wynoszącą $27.00 za jednostkę, ponieważ została ona zatwierdzona pomimo wykraczania poza zakres tolerancji.
+3. **Oblicz kwotę całkowitą:** System oblicza całkowitą kwotę na podstawie zatwierdzonych wartości faktury:
+   * **Kwota całkowita = Ilość × Cena jednostkowa**
+   * **Kwota całkowita = 220 jednostek × $27.00 za jednostkę = $5,940.00**
+4. **Zastosuj niezbędne korekty lub opłaty za pozycje:** Jeśli ma to zastosowanie, system może zastosować dodatkowe opłaty za pozycje lub korekty w oparciu o zasady organizacji dotyczące postępowania z zatwierdzonymi odchyleniami.
+5. **Przetwórz fakturę:** System przetwarza fakturę, korzystając z zatwierdzonych wartości zarówno ilości, jak i ceny jednostkowej, finalizując transakcję na łączną kwotę $5,940.00.
 
-This approach ensures that the transaction is processed according to the approved variances, allowing flexibility while maintaining accurate financial records.
+Takie podejście gwarantuje, że transakcja zostanie przeprowadzona zgodnie z zatwierdzonymi odchyleniami, co pozwala na elastyczność przy jednoczesnym zachowaniu dokładnych zapisów finansowych.

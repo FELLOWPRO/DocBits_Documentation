@@ -71,7 +71,7 @@ FTP `1.32.4`) nie miały żadnych zmian widocznych dla klientów._
 - Licznik otwartych zadań na pasku bocznym liczy zadania w kontekście
   bieżącej podorganizacji, a nie w kontekście akurat otwartego dokumentu.
 
-### Workflow Builder
+### Edytor przepływów pracy
 
 - Lista workflow zachowuje wyszukiwanie, kolejność sortowania, stronę
   i rozmiar strony po otwarciu workflow i powrocie, także przez ścieżkę

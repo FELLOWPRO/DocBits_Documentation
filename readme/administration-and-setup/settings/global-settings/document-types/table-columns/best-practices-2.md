@@ -1,44 +1,33 @@
 # Najlepsze praktyki
 
-## Najlepsze praktyki dotyczące organizowania danych w tabelach pomagają zachować przejrzystą strukturę bazy danych, poprawić integralność danych i zoptymalizować wydajność.
+## Zachowaj kolumny domyślne dla kwot i ilości
 
-**Oto kilka najlepszych praktyk:**
+Kontrole pozycji (*ilość × cena jednostkowa = wartość pozycji*) oraz dopasowanie zamówień zakupu (PO matching) korzystają z kolumn domyślnych `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. Jeśli zamiast nich utworzysz własne kolumny dla tych wartości, kontrole nie zostaną uruchomione, a PO matching zgłosi brakujące kolumny obowiązkowe. Jeśli brzmienie Ci nie odpowiada, zmień *tytuł*, ale zachowaj kolumnę.
 
+## Ukrywaj, nie usuwaj
 
+Niepotrzebne kolumny domyślne są ukrywane, a nie usuwane; i tak nie można ich usunąć. W przypadku własnych kolumn ukrycie jest również bezpieczniejszym wyborem, dopóki nie masz pewności, czy skrypt lub mapowanie eksportu nadal odwołuje się do tej kolumny.
 
-**Używaj znaczących nazw kolumn:**
+## Oznaczaj jako wymagane tylko to, co blokuje eksport
 
-* Wybieraj nazwy kolumn, które są jasne i opisowe, aby poprawić czytelność i zrozumiałość struktury bazy danych. Unikaj skróconych lub niejasnych nazw.
-* Nazywaj kolumny tak, aby dokładnie odzwierciedlały zawartość lub znaczenie przechowywanych w nich danych. Ułatwia to późniejsze wykonywanie zapytań i raportowanie.
+Każda wymagana kolumna musi być wypełniona w każdym wierszu, zanim użytkownik będzie mógł zatwierdzić dokument. Stosuj to dla wartości, które ERP odrzuca, gdy ich brakuje (na przykład centrum kosztów w eksporcie księgowym), a nie dla wartości, które są jedynie przydatne.
 
+## Używaj *Read Only* dla wartości pobieranych z wyszukiwania
 
+Wartości, które skrypt lub wyszukiwanie w danych podstawowych zapisuje w tabeli (opis artykułu z kartoteki artykułów, kod podatkowy z danych dostawcy), powinny być tylko do odczytu, aby użytkownicy poprawiali źródło, a nie kopię.
 
-**Wybieraj odpowiednie typy danych:**
+## Używaj AI dla kolumny, a nie dla dostawcy
 
-* Używaj najmniejszego możliwego typu danych, który odpowiednio spełnia potrzeby Twoich danych, aby zaoszczędzić przestrzeń dyskową i poprawić wydajność.
-* Weź pod uwagę typ przechowywanych danych i odpowiednio dobierz typ danych. Na przykład: użyj INTEGER dla liczb całkowitych, VARCHAR dla ciągów znaków i DATE dla dat.
+W przypadku dostawcy z wytrenowanymi regułami większość kolumn jest poprawnie wypełniana na podstawie reguł. Jeśli jedna kolumna jest niewiarygodna (długie opisy zawijane w kilku wierszach, rabat, który czasem znajduje się w innym miejscu), ustaw *Use AI* tylko dla tej kolumny. Reguły obsłużą resztę.
 
+## Nazywaj kolumny z myślą o ERP, a nie o dokumencie
 
+*Column name* trafia do mapowań eksportu i skryptów. `COST_CENTRE` łatwiej zmapować niż `KST`, a nazwa nie zmienia się, gdy dostawca drukuje ją inaczej.
 
-**Zrozumienie kolumn wymaganych:**
+## Testuj na ponownie uruchomionym dokumencie
 
-* Oznacz kolumny jako wymagane (NOT NULL), jeśli są niezbędne do prawidłowego działania Twojej aplikacji, a wartości NULL są niedopuszczalne.
-* Decydując, czy oznaczyć kolumnę jako wymaganą, upewnij się, że aplikacja potrafi logicznie obsłużyć wartości NULL i że wartości NULL nie spowodują nieoczekiwanych błędów.
+Po zmianie uruchom ponownie jeden istniejący dokument danego typu i otwórz go: nowa kolumna jest widoczna, ukryta zniknęła, a wymagane komórki są oznaczone. Dopiero potem udostępnij zmianę użytkownikom.
 
+## Jedna tabela na strukturę pozycji
 
-
-**Używanie kluczy obcych do relacji:**
-
-* Jeśli Twoja baza danych ma relacje między tabelami, użyj kluczy obcych do zdefiniowania tych relacji. Poprawia to integralność danych i pozwala egzekwować ograniczenia integralności referencyjnej.
-* Pamiętaj, aby rozważyć indeksowanie kluczy obcych w celu optymalizacji wydajności zapytań, które korzystają z tych relacji.
-
-
-
-**Regularnie przeglądaj i aktualizuj:**
-
-* Regularnie przeglądaj strukturę bazy danych, aby upewnić się, że spełnia ona zmieniające się potrzeby Twojej aplikacji. Wprowadzaj aktualizacje w razie potrzeby, aby poprawić wydajność i efektywność swojej bazy danych.&#x20;
-* Pamiętaj, aby uwzględniać opinie użytkowników i programistów w celu identyfikowania i wdrażania obszarów do poprawy.
-
-
-
-Stosując te najlepsze praktyki, możesz stworzyć dobrze zorganizowaną i wydajną strukturę bazy danych, która spełnia potrzeby Twojej aplikacji i stanowi niezawodną podstawę do przechowywania, odpytywania i raportowania Twoich danych.
+Drugą tabelę utwórz tylko wtedy, gdy typ dokumentu naprawdę ma dwie niezależne tabele (na przykład pozycje artykułowe i osobna tabela opłat). Dodatkowe puste tabele pojawiają się w każdym dokumencie tego typu.

@@ -1,34 +1,34 @@
-# Konfigurowanie Właściwości Pola
+# Konfigurowanie właściwości pól
 
-Użyj **Ustawienia → Typy Dokumentów → Pola**, aby sterować zachowaniem pól dla danego typu dokumentu. Najpierw wybierz typ dokumentu; poniższy przykład pokazuje **Fakturę** w polskim interfejsie.
+Otwórz **Ustawienia → Typy dokumentów → Pola** i wybierz typ dokumentu. Obrazy pokazują fakturę w polskim interfejsie; identyfikatory techniczne, takie jak `invoice_id`, pozostają bez zmian.
 
-<figure><img src="../../../../../.gitbook/assets/configuring-field-properties-1-overview-pl-20261008.png" alt="Polskie ustawienia pól faktury z USTAWIENIA ROZPOZNAWANIA (OCR i WYNIK MECZU), wyszukiwarką, kolumnami właściwości pola i przyciskiem Zapisz ustawienia"><figcaption>Ustawienia pól faktury w organizacji DocBits Sandbox.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview-pl.png" alt="Właściwości pól: wymagane, tylko do odczytu, ukryte i wymuszona walidacja. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy."><figcaption><p>Właściwości pól: wymagane, tylko do odczytu, ukryte i wymuszona walidacja. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy.</p></figcaption></figure>
 
-## Znajdź pole i zmień jego właściwości
+## Znajdowanie pola i zmiana jego właściwości
 
-1. W polu **Szukaj według nazwy** wpisz nazwę lub etykietę pola. To filtrowanie listy; nie zmienia pola.
-2. Znajdź wiersz pola. Na przykład **Numer faktury** ma nazwę techniczną `invoice_number`.
-3. Dostosuj kontrolki w tym wierszu, a następnie wybierz **Zapisz ustawienia**. Ten sam przycisk zapisu jest dostępny nad tabelą i pod nią.
+1. W polu **Szukaj według nazwy** wpisz nazwę lub etykietę pola. Filtruje to listę; nie zmienia pola.
+2. Znajdź wiersz pola. Na przykład **Numer faktury** ma nazwę techniczną `invoice_id`.
+3. Dostosuj elementy sterujące w tym wierszu, a następnie wybierz **Zapisz ustawienia**. Ten sam przycisk zapisu jest dostępny nad tabelą i pod nią.
 
-<figure><img src="../../../../../.gitbook/assets/configuring-field-properties-1-filtered-pl-20261008.png" alt="Wiersz pola numer faktury po polsku z kontrolkami WYMAGANY, Tylko Do Odczytu, Ukryty, WYMUSZENIE WALIDACJI, Użyj Sztucznej Inteligencji, OCR i WYNIK MECZU"><figcaption>Wiersz pola numer faktury po wyszukaniu `invoice_number`.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-filtered-pl.png" alt="Pola filtrowane według invoice_id z progami OCR i Match Score. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy."><figcaption><p>Pola filtrowane według invoice_id z progami OCR i Match Score. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy.</p></figcaption></figure>
 
-| Kontrolka | Do czego jej użyć |
+| Element sterujący | Do czego służy |
 | --- | --- |
-| **WYMAGANY** | Oznacz informacje, które muszą być obecne do walidacji. Po zmianie tego ustawienia sprawdź wynik walidacji dokumentu. |
-| **Tylko Do Odczytu** | Pokaż pole, nie pozwalając użytkownikom na zmianę jego wartości. |
-| **Ukryty** | Wyklucz pole z normalnego widoku dokumentu. |
-| **WYMUSZENIE WALIDACJI** | Wymagaj, aby pole przeszło walidację. Szczegółowe reguły konfiguruje się osobno; ten pole wyboru nie jest edytorem reguł. |
-| **Użyj Sztucznej Inteligencji** | Żądaj lub zatrzymaj ekstrakcję AI dla tego pola. Wiersz pokazuje, czy ekstrakcja jest żądana. |
-| **OCR** | Wpisz próg pewności OCR dla pola. To liczba, nie przełącznik włącz/wyłącz ani ustawienie języka. |
-| **WYNIK MECZU** | Wpisz próg dopasowania dla pola. To liczba, nie przełącznik włącz/wyłącz. |
+| **Obowiązkowe** | Oznacza informacje, które muszą być obecne do walidacji. Po zmianie tego ustawienia sprawdź wynik walidacji dokumentu. |
+| **Tylko do odczytu** | Wyświetla pole bez możliwości edycji jego wartości przez użytkowników. |
+| **Ukryty** | Ukrywa pole w zwykłym widoku dokumentu. |
+| **Wymuszenie walidacji** | Wymaga jawnego sprawdzenia pola. Nie tworzy reguły porównania ani wyrażenia regularnego; niestandardowe reguły walidacji konfiguruje się oddzielnie. |
+| **Użyj sztucznej inteligencji** | Włącza lub wyłącza żądanie ekstrakcji AI dla tego pola. Wiersz pokazuje, czy ekstrakcja jest żądana. |
+| **OCR** | Wprowadź próg pewności OCR dla pola. Jest to liczba, a nie przełącznik włącz/wyłącz ani ustawienie języka. |
+| **Próg dopasowania** | Wprowadź próg dopasowania dla pola. Jest to liczba, a nie przełącznik włącz/wyłącz. |
 
-Suwaki **OCR** i **WYNIK MECZU** w sekcji **USTAWIENIA ROZPOZNAWANIA** stosują wartości do całej listy pól. Pole wyboru bezpośrednio pod tytułami kolumn stosują **WYMAGANY**, **Tylko Do Odczytu**, **Ukryty** lub **WYMUSZENIE WALIDACJI** do całej listy. Sprawdź dotyczące wiersze, zanim wybierzesz **Zapisz ustawienia**. **PRZYWRÓĆ USTAWIENIA DOMYŚLNE** resetuje konfigurację pól; użyj tego tylko wtedy, gdy naprawdę chcesz zastąpić swoje zmiany.
+Suwaki **OCR** i **Próg dopasowania** w sekcji **Ustawienia rozpoznawania** stosują wartości do całej listy pól. Pola wyboru bezpośrednio pod tytułami kolumn stosują **Obowiązkowe**, **Tylko do odczytu**, **Ukryty** lub **Wymuszenie walidacji** do całej listy. Przed wybraniem **Zapisz ustawienia** sprawdź, których wierszy dotyczą zmiany. **Przywróć ustawienia domyślne** resetuje konfigurację pól; używaj tej opcji tylko wtedy, gdy chcesz zastąpić wprowadzone zmiany.
 
-## Inne kontrolki w tym widoku
+## Inne elementy sterujące w tym widoku
 
-- **Utwórz nową grupę** i **Utwórz pole** dodają grupę lub pole. Zobacz [Dodawanie i Edytowanie Pól](adding-and-editing-fields.md).
-- **Ustawienia danych głównych** otwiera [konfigurację danych głównych](master-data-settings.md).
-- Pole wyboru po lewej stronie zaznaczają pola. Menu obok oferuje **Przypisz ponownie grupę pól** dla zaznaczonych pól.
-- Przycisk **FORMUŁA** otwiera edytor formuł dla tego pola. Ikona **info** pokazuje informacje o polu. Ikona usunięcia nie jest dostępna dla pól standardowych.
+- **Utwórz nową grupę** i **Utwórz pole** dodają grupę lub pole. Zobacz [Dodawanie i edytowanie pól](adding-and-editing-fields.md).
+- **Ustawienia danych głównych** otwiera [konfigurację danych podstawowych](master-data-settings.md).
+- Skrajne lewe pola wyboru zaznaczają pola. Sąsiednie menu oferuje **Przypisz ponownie grupę pól** dla zaznaczonych pól.
+- Przycisk plus **Formuła** otwiera edytor formuł dla tego pola. Ikona **info** pokazuje informacje o polu. Ikona usuwania jest niedostępna dla pól standardowych.
 
-Aby uzyskać więcej informacji o walidacji i dopasowywaniu, zobacz [Ustawianie Walidacji i Wyniku Dopasowania](setting-validation-and-match-score.md).
+Więcej informacji o walidacji i dopasowywaniu znajdziesz w [Walidacja i próg dopasowania](setting-validation-and-match-score.md).

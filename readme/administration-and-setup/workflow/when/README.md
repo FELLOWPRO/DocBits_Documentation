@@ -1,44 +1,55 @@
+# Gdy
 
+Karty w tej kategorii pokazane w bibliotece **Dodaj kartę** Kreatora przepływu pracy:
 
-Karty tej kategorii w przeglądarce **Add Card** Kreatora przepływów:
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9e133ac3ffcb-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/workflow_cards_when.png" alt="Workflow Builder card category"><figcaption><p>Karty tej kategorii.</p></figcaption></figure>
----
-description: Konfiguracja wyzwalacza Kiedy w przepływach pracy DocBits
----
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-2e62c5e0aa4e-pl.png" alt="Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs."><figcaption><p>Karty dostępne w wybranej kategorii. Uzupełnij pola przed użyciem. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
 
-# Kiedy
+#### Zrozumienie „kiedy” w konfiguracjach przepływu pracy
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_4.png" alt="DocBits Przepływ pracy 4"><figcaption></figcaption></figure>
+**Cel „Kiedy”**
 
-#### Zrozumienie sekcji "Kiedy" w Konfiguracjach Przepływu Pracy
-
-**Cel sekcji "Kiedy"**
-
-* Sekcja "Kiedy" w konfiguracji przepływu pracy definiuje warunki wyzwalające określoną akcję w przepływie pracy. Warunki te opierają się na określonych kryteriach dotyczących atrybutów dokumentu lub aktywności użytkownika w systemie ERP.
+* Sekcja „Kiedy” w konfiguracji przepływu pracy definiuje warunki wyzwalacza, które inicjują określoną akcję przepływu pracy. Warunki te opierają się na określonych kryteriach związanych z atrybutami dokumentów lub działaniami użytkowników w systemie ERP.
 
 **Jak to działa**
 
-* W interfejsie "Kiedy" wydaje się być punktem wyjścia, w którym użytkownicy mogą wybrać różne karty wyzwalaczy. Każda karta określa warunki, na podstawie których następne akcje (zdefiniowane w innej sekcji konfiguracji przepływu pracy, najprawdopodobniej oznaczonej jako "Akcja") zostaną wykonane.
+* W Twoim interfejsie „Kiedy” wydaje się być punktem wyjścia, w którym użytkownicy mogą wybierać różne karty wyzwalające. Każda karta określa warunki, na jakich zostaną wykonane kolejne akcje (zdefiniowane w sekcji „I”).
 
-**Karty Warunków Typu Dokumentu**
+**Karty warunków typu dokumentu**
 
-* Karty wyświetlone na zrzucie ekranu są wariantami warunków "Typ Dokumentu", które służą do wyzwalania przepływów pracy na podstawie typu przetwarzanego dokumentu. Oto analiza każdej karty warunków typu:
+* Karty z ikoną dokumentu widoczną na zrzucie ekranu to odmiany warunków „Typ dokumentu”, które służą do wyzwalania przepływów pracy w oparciu o typ przetwarzanego dokumentu. Oto zestawienie każdego rodzaju pokazanej karty stanu:
+  * **Typ dokumentu (Operator) jeden z (Typ)**: Ta karta aktywuje akcję, gdy typ dokumentu odpowiada jednemu z typów określonych na liście. Operator może uwzględnić opcje takie jak „jest” lub „nie jest”, umożliwiając określenie warunków włączających lub wyłączających.
+  * **Typ dokumentu (Operator) (Typ)**: Ten prostszy wariant jest wyzwalany w oparciu o warunek typu pojedynczego dokumentu. Zwykle sprawdza, czy typ dokumentu „jest” czy „nie jest” określonym typem, bez możliwości wyboru spośród wielu typów.
+  *
 
-* **Typ dokumentu (Operator) jeden z (Typ)**: Ta karta wyzwalająca akcję, gdy typ dokumentu pasuje do jednego z określonych typów na liście. Operator może zawierać opcje takie jak "jest" lub "nie jest", pozwalając na warunki włączające lub wyłączające.
-* **Typ dokumentu (Operator) (Typ)**: Ten prostszy wariant wyzwalacz działa na podstawie pojedynczego warunku typu dokumentu. Zazwyczaj sprawdza, czy typ dokumentu "jest" lub "nie jest" określonym typem, bez możliwości wyboru spośród wielu typów.
+**Selerowy rytm**
 
-#### Konfiguracja Karty Wyzwalacza "Kiedy"
+* Karta z ikoną zegara na zrzucie ekranu to warunek „Seler Beat”, który służy do wyzwalania przepływów pracy na podstawie daty i godziny.
 
-1. **Wybór Typu Warunku**: Użytkownicy rozpoczynają od wybrania typu warunku, który jest istotny dla przepływu pracy, który chcą zautomatyzować. W tym przypadku skupiamy się na typach dokumentów.
-2. **Określenie Operatora**: Użytkownicy muszą zdecydować o operatorze logicznym, takim jak "jest" lub "nie jest", który stanowi podstawę porównywania rzeczywistych typów dokumentów z zdefiniowanymi warunkami.
-3. **Określenie Typów Dokumentów**: W zależności od karty, użytkownicy mogą wybrać jeden lub wiele typów dokumentów, które wywołają przepływ pracy, gdy dokumenty tych typów zostaną przetworzone.
-4. **Finalizacja Wyzwalacza**: Po skonfigurowaniu warunku staje się on podstawą do wyzwalania określonych akcji zdefiniowanych w przepływie pracy. Jeśli dokument spełnia ustawiony warunek, zdefiniowane akcje zostaną automatycznie uruchomione.
+#### Konfigurowanie karty wyzwalającej „Kiedy”.
 
-#### Praktyczne Zastosowanie
+1. **Wybór typu warunku**: Użytkownicy zaczynają od wybrania typu warunku, który jest odpowiedni dla przepływu pracy, który chcą zautomatyzować. W tym przypadku skupiamy się na typach dokumentów.
+2. **Definiowanie operatora**: Użytkownicy muszą wybrać operator logiczny — taki jak „jest” lub „nie” — który stanowi podstawę porównywania rzeczywistych typów dokumentów ze zdefiniowanymi warunkami.
+3. **Określanie typów dokumentów**: W zależności od karty użytkownicy mogą wybrać jeden lub wiele typów dokumentów, które uruchomią przepływ pracy podczas przetwarzania dokumentów tego typu.
+4. **Finalizacja wyzwalacza**: Po skonfigurowaniu warunku staje się on podstawą do uruchomienia określonych akcji zdefiniowanych w przepływie pracy. Jeżeli dokument spełni ustawiony warunek, zdefiniowane działania zostaną automatycznie zainicjowane.
 
-W praktyce te karty wyzwalaczy są kluczowe do automatyzacji procesów, takich jak zatwierdzanie, powiadomienia lub dowolna procedura zależna od typu dokumentu. Na przykład, jeśli typ dokumentu "jest" "Fakturą" i spełnia warunki ustawione na karcie "Kiedy", przepływ pracy może automatycznie przekierować dokument do przetwarzania płatności.
+#### Praktyczne zastosowanie
 
-Ta konfiguracja zapewnia, że przepływy pracy są nie tylko wydajne, ale także dostosowane do konkretnych potrzeb operacyjnych organizacji, zmniejszając ręczne nadzorowanie i przyspieszając procesy obsługi dokumentów.
+W praktyce te karty wyzwalające są kluczowe dla automatyzacji procesów takich jak zatwierdzenia, powiadomienia czy wszelkie procedury zależne od rodzaju obsługiwanego dokumentu. Na przykład, jeśli typem dokumentu „jest” „Faktura” i odpowiada on warunkom ustawionym na karcie „Kiedy”, przepływ pracy może automatycznie skierować dokument do przetworzenia płatności.
 
-Podsumowując, część "Kiedy" w konfiguracji przepływu pracy służy do ustawiania sceny dla automatycznych działań na podstawie określonych, wstępnie zdefiniowanych warunków. Jest to potężne narzędzie zapewniające, że system ERP reaguje dynamicznie na potrzeby biznesu, poprawiając zarówno produktywność, jak i dokładność zarządzania dokumentami.
+Taka konfiguracja gwarantuje, że przepływy pracy będą nie tylko wydajne, ale także dostosowane do konkretnych potrzeb operacyjnych organizacji, ograniczając ręczny nadzór i przyspieszając procesy obsługi dokumentów.
+
+Podsumowując, część „Kiedy” konfiguracji przepływu pracy dotyczy ustawienia etapu dla zautomatyzowanych działań w oparciu o określone, wcześniej zdefiniowane warunki. To potężne narzędzie zapewniające, że Twój system ERP dynamicznie reaguje na potrzeby firmy, zwiększając zarówno produktywność, jak i dokładność w zarządzaniu dokumentami.
+
+[Odniesienie do wyzwalacza zmiany zmiennej i zdarzenia webhooka](../cards-overview/logic-cards-guide.md).
+
+<!-- workflow-card-example-celery_beat-20261021 -->
+
+### Zaplanowane przetwarzanie
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-59699b0c27d3-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane. Niektóre etykiety tej wersji interfejsu nie są jeszcze przetłumaczone lub mają nieprawidłowe tłumaczenie. Objaśnienia na tej stronie używają właściwych terminów; obraz przedstawia rzeczywisty interfejs.</p></figcaption></figure>
+
+`CELERY_BEAT` · wersja 2
+
+Użyj zaplanowanego wyzwalacza dla dokumentów zmienionych od czasu poprzedniego uruchomienia. Aby uzyskać dzienny harmonogram demonstracyjny, wybierz minutę `0`, godzinę `9` i oferowane wartości na każdy dzień/miesiąc. Sprawdź skonfigurowaną strefę czasową harmonogramu i następne zaplanowane uruchomienie. Ten wyzwalacz nie jest dowodem na to, że niezmienione dokumenty są ponownie przetwarzane.

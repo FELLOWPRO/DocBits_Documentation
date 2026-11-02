@@ -1,38 +1,36 @@
-# Przepływ Dokumentów
+# Przepływ dokumentu
 
-## **Przegląd:**
+Przepływ dokumentu pokazuje kolejność, status i czas etapów przetwarzania. Przykład wykorzystuje fikcyjną fakturę.
 
-Ta strona zapewnia graficzny przegląd różnych kroków, przez które przeszedł dokument do tego momentu.
+## Otwieranie przepływu
 
-## **Jak uzyskać dostęp:**
+Znajdź dokument w panelu. Wartości dokumentu są ukryte.
 
-### **Opcja 1:**
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-pl.png" alt="Wyszukiwanie fikcyjnego dokumentu w panelu; wartości są ukryte."><figcaption><p>Wyszukiwanie fikcyjnego dokumentu w panelu; wartości są ukryte.</p></figcaption></figure>
 
-1.  Przejdź do kolumny akcji na pulpicie i kliknij trzy kropki obok dokumentu, dla którego chcesz zobaczyć przepływ dokumentu.
+Otwórz walidację pól i menu opcji na prawym pasku narzędzi, aby wyświetlić przepływ dokumentu.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1.png" alt=""><figcaption></figcaption></figure>
-2.  Wybierz **Przepływ Dokumentu**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-pl.png" alt="Menu walidacji służące do otwarcia przepływu dokumentu."><figcaption><p>Menu walidacji służące do otwarcia przepływu dokumentu.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2.png" alt="" width="248"><figcaption></figcaption></figure>
+## Odczytywanie etapów
 
-### **Opcja 2:**
+Każda karta przedstawia etap, na przykład import, OCR, klasyfikację lub ekstrakcję pól. Kieruj się numeracją.
 
-1. Otwórz dokument, dla którego chcesz zobaczyć przepływ dokumentu.
-2.  Kliknij trzy kropki po prawej stronie Walidacji Pola.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-pl.png" alt="Etapy przetwarzania fikcyjnej faktury; kody techniczne pozostają bez zmian. Etykieta EKSTRAKCJA TERENOWA oznacza ekstrakcję pól dokumentu."><figcaption><p>Etapy przetwarzania fikcyjnej faktury; kody techniczne pozostają bez zmian. Etykieta EKSTRAKCJA TERENOWA oznacza ekstrakcję pól dokumentu.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3.png" alt=""><figcaption></figcaption></figure>
-3.  Wybierz **Przepływ Dokumentu**.
+Kody techniczne DOCUMENT_IMPORTED i COMPLETE pozostają bez zmian. COMPLETE oznacza zakończenie etapu.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4.png" alt="" width="288"><figcaption></figcaption></figure>
+## Szczegóły
 
-## **Opis:**
+Wybierz kartę, aby sprawdzić dostępne szczegóły i dzienniki.
 
-Po lewej stronie ekranu zobaczysz poszczególne kroki przepływu dokumentu, wymienione od lewej do prawej.
+| Szczegół | Znaczenie |
+| --- | --- |
+| Moduł | Komponent przetwarzający etap |
+| Status | Aktualny stan etapu |
+| Czas | Zarejestrowany czas przetwarzania |
+| Dzienniki | Dostępne komunikaty techniczne |
 
-<figure><img src="../../../.gitbook/assets/DocumentFlow_6.png" alt=""><figcaption></figcaption></figure>
+Przed ponownym uruchomieniem zbadaj komunikaty etapu oczekującego lub zakończonego błędem. Niektóre nagłówki diagnostyczne produktu mogą pozostać w języku angielskim.
 
-* Kroki, które inicjują proces przepływu dokumentu (takie jak import lub ponowne uruchomienie) będą wyświetlane na zielono.
-* Aby nawigować przez kroki, po prostu przeciągnij i upuść je na ekranie.
-*   Gdy klikniesz na krok, po prawej stronie ekranu pojawi się nazwa modułu oraz informacje o tym, czy krok był udany, czy nie.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_7.png" alt=""><figcaption></figcaption></figure>
+Szczegóły etapu pokazują komponent przetwarzania, status, czas i dostępne dzienniki techniczne.

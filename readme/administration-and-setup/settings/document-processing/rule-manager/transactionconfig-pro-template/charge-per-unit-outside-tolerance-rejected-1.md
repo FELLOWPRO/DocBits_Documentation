@@ -1,37 +1,39 @@
-# Charge Per Unit Outside Tolerance (Rejected)
+# Opłata za jednostkę poza granicami tolerancji (Odrzucono)
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The charge per unit is outside tolerance and has not been approved.
+## Scenariusz:
 
-## Action:
+Opłata za jednostkę wykracza poza tolerancję i nie została zatwierdzona.
 
-The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+## Działanie:
 
-## Example:
+System dostosowuje opłatę jednostkową do zamówienia lub zatwierdzonych poziomów, generując wszelkie niezbędne noty debetowe lub kredytowe.
+
+## Przykład:
 
 * **Purchase Order (PO):**
-  * Charge Per Unit: $6.00
+  * Opłata za jednostkę: $6.00
   * Quantity: 800 units
-  * Total Charge Amount: $4,800.00
+  * Całkowita kwota opłaty: $4,800.00
 * **Invoice Received:**
-  * Charge Per Unit: $7.00 (outside tolerance of 16.67%, rejected)
+  * Opłata za jednostkę: $7.00 (poza tolerancją 16.67%, odrzucona)
   * Quantity: 800 units
-  * Total Charge Amount: $5,600.00
+  * Całkowita kwota opłaty: $5,600.00
 * **Tolerance Levels:**
-  * Charge Per Unit Tolerance: ±5%
+  * Tolerancja ładunku na jednostkę: ± 5%
 
-Since the charge per unit ($7.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+Ponieważ opłata jednostkowa ($7.00) przekracza dopuszczalny zakres tolerancji wynoszący 5% i nie została zatwierdzona, system:
 
-1. **Reject the Invoiced Charge Per Unit:** The system does not accept the invoiced charge per unit of $7.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Charge Per Unit:** The system adjusts the charge per unit to match the purchase order or the approved charge per unit:
-   * Adjusted Charge Per Unit = $6.00 (from PO)
-3. **Recalculate the Total Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Charge Amount = Quantity × Adjusted Charge Per Unit**
-   * **Corrected Total Charge Amount = 800 units × $6.00 = $4,800.00**
-4. **Generate a Debit Note:** Since the original invoice total was higher than the corrected total, the system generates a debit note for the overcharged amount:
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Charge Amount**
-   * **Debit Note Amount = $5,600.00 - $4,800.00 = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $4,800.00 and issues a debit note for $800.00 to account for the overcharged amount.
+1. **Odrzuć zafakturowaną opłatę jednostkową:** System nie akceptuje zafakturowanej opłaty jednostkowej w wysokości $7.00 ze względu na odchylenie przekraczające limit tolerancji.
+2. **Dostosuj opłatę jednostkową:** System dostosowuje opłatę jednostkową, aby odpowiadała zamówieniu lub zatwierdzonej opłacie jednostkowej:
+   * Skorygowana opłata za jednostkę = $6.00 (od PO)
+3. **Przelicz całkowitą kwotę opłaty:** System ponownie przeliczy całkowitą kwotę opłaty w oparciu o skorygowaną opłatę jednostkową:
+   * **Skorygowana całkowita kwota opłaty = ilość × skorygowana opłata za jednostkę**
+   * **Skorygowana całkowita kwota opłaty = 800 jednostek × $6.00 = $4,800.00**
+4. **Wygeneruj notę debetową:** Ponieważ pierwotna suma faktury była wyższa niż suma skorygowana, system generuje notę debetową na zawyżoną kwotę:
+   * **Kwota noty debetowej = Suma oryginalnej faktury – Skorygowana całkowita kwota obciążenia**
+   * **Kwota noty debetowej = $5,600.00 - $4,800.00 = $800.00**
+5. **Przetwórz fakturę:** System przetwarza fakturę zawierającą skorygowaną łączną kwotę obciążenia wynoszącą $4,800.00 i wystawia notę debetową na kwotę $800.00 w celu rozliczenia nadmiernej kwoty.
 
-This approach ensures that financial transactions are consistent with the purchase order terms, rejecting unapproved variances and maintaining accurate billing practices.
+Takie podejście zapewnia zgodność transakcji finansowych z warunkami zamówienia zakupu, odrzucając niezatwierdzone rozbieżności i zachowując dokładne praktyki rozliczeniowe.

@@ -1,43 +1,21 @@
 # Tabellenextraktion für Kostenelemente
 
-### **Funktionsweise**
+Kostenelemente sind Gebühren oder sonstige Beträge, die als Positionen in der Rechnungstabelle dargestellt werden. Ist diese Funktion aktiviert und enthält das Dokument extrahierte Positionen, kann DocBits diese Positionen anhand der für die Organisation konfigurierten Kostenelemente klassifizieren. Ein Prüfer kann die Klassifizierung einer Position in der Dokumenttabelle korrigieren.
 
-Wenn diese Funktion aktiviert ist, kann **DocBits Kostenelemente** aus Tabellen **auf Positionsebene** extrahieren und entsprechend klassifizieren.
+## Einstellung aktivieren
 
-* Wenn das System eine Position nicht oder falsch klassifiziert, erscheint links ein **Symbol**.
-* Ein Klick auf das Symbol öffnet eine Liste aller **konfigurierten Kostenelemente**. Sie können:
-  * eine falsche **Klassifizierung ändern**;
-  * die Position auf **„Uncategorized“** setzen, wenn es sich um eine reguläre Position und kein Kostenelement handelt.
+1. Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Klassifizierung und Extraktion**.
+2. Bleiben Sie auf **Allgemein** und klappen Sie **Extraktion** auf.
+3. Suchen Sie **Tabellenextraktion für Kalkulationselement** unterhalb der Felder, die für die Tabellenextraktion angefordert wurden. Ein Administrator kann diesen Schalter für die Organisation einschalten.
 
-### **Kostenelemente konfigurieren**
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-de-20261011.png" alt="Synthetische deutschsprachige Einstellung Klassifizierung und Extraktion mit dem sichtbaren, eingeschalteten Schalter Tabellenextraktion für Kalkulationselement"><figcaption><p>Der Schalter erscheint in dieser synthetischen Aufnahme eingeschaltet. Das Bild belegt nicht den Zustand einer realen Organisation.</p></figcaption></figure>
 
-Die **Anleitung zur Einrichtung von Kostenelementen in DocBits** finden Sie hier:
+{% hint style="info" %}
+Der Schalter allein erzeugt keine Kostenelemente oder Rechnungspositionen. Konfigurieren Sie zuerst die Kostenelemente und importieren Sie die benötigten Daten. Die verknüpfte [Anleitung zur Einrichtung von Kostenelementen](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) zeigt das M3-Beispiel. Weitere Extraktionseinstellungen finden Sie unter [Klassifizierung und Extraktion](README.md).
+{% endhint %}
 
-{% content-ref url="../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md" %}
-[Tabellenextraktion für Costing Element](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
-{% endcontent-ref %}
+## Position prüfen oder korrigieren
 
-### **Funktion aktivieren**
+Öffnen Sie ein Dokument, dessen Rechnungstabelle extrahierte Positionen enthält, und sehen Sie sich das Kostenelement-Symbol neben der betreffenden Position an. Wählen Sie das Symbol aus, um die verfügbaren Klassifizierungen zu öffnen. Wählen Sie das richtige konfigurierte Kostenelement, oder wählen Sie **Uncategorize**, wenn die Position ein gewöhnlicher Artikel ist. Prüfen Sie anschließend die resultierende Position und die Summen, bevor Sie das Dokument speichern.
 
-1. Öffnen Sie **Settings → Document Processing → Classification and Extraction → Table Extraction**.
-2. Aktivieren Sie **Costing Element Extraction**.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211105422.jpg" alt=""><figcaption></figcaption></figure>
-
-### **Klassifizierung festlegen oder ändern**
-
-1.  Klicken Sie auf das **Kästchensymbol** neben der Position.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211104810.jpg" alt=""><figcaption></figcaption></figure>
-2.  Ein **Auswahlmenü** mit allen konfigurierten Kostenelementen erscheint.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102530.jpg" alt=""><figcaption></figcaption></figure>
-3.  Wählen Sie den passenden **Kostenelementtyp** aus.\
-
-
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211102650.jpg" alt=""><figcaption></figcaption></figure>
-4. Die Klassifizierung wird entsprechend aktualisiert.
-
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250211103411.jpg" alt=""><figcaption></figcaption></figure>
+Wenn das Symbol oder eine Klassifizierung fehlt, prüfen Sie zuerst, ob das Dokument extrahierte Positionen hat, die Funktion aktiviert ist und ein Kostenelement für die Organisation konfiguriert wurde. Das synthetische Testdokument der Organisation A, das für diese Dokumentenprüfung verwendet wurde, hatte keine extrahierten Rechnungspositionen; deshalb konnte das Klassifizierungsmenü nicht abgebildet oder ausprobiert werden. Die obigen Schritte entsprechen dem aktuellen Steuerelement im Dokument; bei dieser Prüfung wurde keine Klassifizierung gespeichert.

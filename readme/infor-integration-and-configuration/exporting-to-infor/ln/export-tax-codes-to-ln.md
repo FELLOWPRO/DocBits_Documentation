@@ -11,7 +11,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Liste von Werten**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt="Geöffnetes Einstellungen-Menü mit dem Bereich Dokumentenverarbeitung und dem Eintrag Liste von Werten"><figcaption>Einstellungen: Dokumentenverarbeitung > Liste von Werten</figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-de.png" alt="Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet."><figcaption><p>Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet.</p></figcaption></figure>
 2.  Klicken Sie auf **Neu**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt="Seite Liste von Werten mit den vorhandenen Listen und der Schaltfläche Neu"><figcaption>Liste von Werten mit den vorhandenen Listen</figcaption></figure>
@@ -32,7 +32,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
     * Wenn Sie mehrere Werte haben, können Sie auf **Weitere Werte hinzufügen** klicken, um diese hinzuzufügen.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt="Dialog Werte anlegen mit einem eingetragenen LN-Steuercode im Feld Name"><figcaption>LN-Steuercode im Feld Name eintragen</figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt="Dialog Werte anlegen mit dem über Weitere Werte hinzugefügten Wert 800"><figcaption>Zweiten Wert über Weitere Werte hinzufügen</figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-de.png" alt="Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert."><figcaption><p>Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert.</p></figcaption></figure></div>
 
     * **HINWEIS:** Sie finden die Steuercodes in LN unter: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -42,7 +42,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt="Geöffnetes Menü Globale Einstellungen mit dem Eintrag Dokumenttypen"><figcaption>Einstellungen: Globale Einstellungen > Dokumenttypen</figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
     <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="Seite Dokumenttypen mit dem Menü Felder unter jedem Dokumenttyp"><figcaption>Menü Felder des Dokumenttyps öffnen</figcaption></figure>
@@ -64,7 +64,7 @@ Dieser Leitfaden führt Sie durch den Einrichtungsprozess, um sicherzustellen, d
 
 1.  Gehen Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt="Geöffnetes Menü Globale Einstellungen mit dem Eintrag Dokumenttypen"><figcaption>Einstellungen: Globale Einstellungen > Dokumenttypen</figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt="Seite Dokumenttypen mit dem Link Layout bearbeiten unter jedem Dokumenttyp"><figcaption>Layout bearbeiten des Dokumenttyps öffnen</figcaption></figure>
@@ -101,7 +101,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 1.  Gehen Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Liste von Werten**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt="Geöffnetes Einstellungen-Menü mit dem Bereich Dokumentenverarbeitung und dem Eintrag Liste von Werten"><figcaption>Einstellungen: Dokumentenverarbeitung > Liste von Werten</figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-de.png" alt="Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet."><figcaption><p>Wertelisten in DocBits; organisationsbezogene Listennamen sind ausgeblendet.</p></figcaption></figure>
 2.  Klicken Sie auf **Neu**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt="Seite Liste von Werten mit den vorhandenen Listen und der Schaltfläche Neu"><figcaption>Liste von Werten mit den vorhandenen Listen</figcaption></figure>
@@ -122,7 +122,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
     * Wenn Sie mehrere Werte haben, können Sie auf **Weitere Werte hinzufügen** klicken, um diese hinzuzufügen.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt="Dialog Werte anlegen mit einem eingetragenen LN-Steuercode im Feld Name"><figcaption>LN-Steuercode im Feld Name eintragen</figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt="Dialog Werte anlegen mit dem über Weitere Werte hinzugefügten Wert 800"><figcaption>Zweiten Wert über Weitere Werte hinzufügen</figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-de.png" alt="Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert."><figcaption><p>Leerer deutscher Dialog zum Anlegen eines Listenwerts. Der tatsächliche Titel „Werte schaffen“ ist missverständlich; „Englisch“ bezeichnet die ausgewählte Übersetzungssprache. Es wurde nichts gespeichert.</p></figcaption></figure></div>
 
     * **HINWEIS:** Sie finden die Steuercodes in LN unter: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -132,7 +132,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt="Geöffnetes Menü Globale Einstellungen mit dem Eintrag Dokumenttypen"><figcaption>Einstellungen: Globale Einstellungen > Dokumenttypen</figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Wählen Sie das Menü **Felder** für den Dokumenttyp, in dem Sie die Felder hinzufügen möchten.
 
     <figure><img src="../../../.gitbook/assets/docbits_docbits_image_8.png" alt="Seite Dokumenttypen mit dem Menü Felder unter jedem Dokumenttyp"><figcaption>Menü Felder des Dokumenttyps öffnen</figcaption></figure>
@@ -154,7 +154,7 @@ Nachdem Sie ein neues Dokument in DocBits mit den ausgewählten korrekten Dokume
 
 1.  Gehen Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt="Geöffnetes Menü Globale Einstellungen mit dem Eintrag Dokumenttypen"><figcaption>Einstellungen: Globale Einstellungen > Dokumenttypen</figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-de.png" alt="Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert."><figcaption><p>Dokumenttypen: Wählen Sie beim entsprechenden Typ die Felder. Es wurden keine Schalter verändert.</p></figcaption></figure>
 2.  Öffnen Sie das Menü **Layout bearbeiten** für den Dokumenttyp, den Sie bearbeiten möchten.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt="Seite Dokumenttypen mit dem Link Layout bearbeiten unter jedem Dokumenttyp"><figcaption>Layout bearbeiten des Dokumenttyps öffnen</figcaption></figure>

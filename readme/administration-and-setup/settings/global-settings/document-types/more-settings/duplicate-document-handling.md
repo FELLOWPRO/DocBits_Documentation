@@ -1,66 +1,38 @@
 # Erkennung von Duplikaten
 
-## Übersicht
+## Dubletten erkennen und bewusst entscheiden
 
-In **DocBits** können Sie nach doppelten Dokumenten filtern, indem Sie angeben, welche Felder übereinstimmen müssen, und ein Zeitintervall definieren, während dessen Duplikate erkannt werden sollen.
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-de-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-de-light-20261029.png" alt="Dubletten erkennen und bewusst entscheiden"></picture><figcaption><p>Dubletten erkennen und bewusst entscheiden</p></figcaption></figure>
 
-Diese Seite bietet eine detaillierte Anleitung, wie Sie die Funktion **Erkennung von Duplikaten** effektiv aktivieren und nutzen können.
+DocBits vergleicht die konfigurierten Felder innerhalb des gewählten Zeitraums. Öffnen Sie bei einem Treffer den Dublettenhinweis und vergleichen Sie die Belege, bevor Sie fortfahren oder archivieren. Die Exportblockierung ist eine eigene Einstellung; ein Treffer archiviert einen Beleg nicht automatisch.
 
-## Aktivierung der Erkennung von Duplikaten
 
-Um die Erkennung von doppelten Dokumenten in **DocBits** zu aktivieren, befolgen Sie diese Schritte:
+Mit der **Erkennung von Duplikaten** markieren Sie Dokumente, die innerhalb eines gewählten Zeitraums mit einem anderen Dokument in ausgewählten Feldern übereinstimmen. Die Optionen gehören zu jedem Dokumenttyp.
 
-1.  Navigieren Sie zu **Einstellungen** → **Globale Einstellungen** → **Dokumenttypen**.
+## Einstellungen öffnen
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_1_de.png" alt=""><figcaption></figcaption></figure>
-2.  Wählen Sie den gewünschten **Dokumenttyp** aus und klicken Sie auf **Weitere Einstellungen**.
+1. Öffnen Sie **Einstellungen → Dokumenttypen**.
+2. Wählen Sie beim Dokumenttyp, den Sie konfigurieren möchten, **Einstellungen**.
+3. Öffnen Sie in **Weitere Einstellungen** den Abschnitt **Duplikaterkennung**.
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_2_de.png" alt=""><figcaption></figcaption></figure>
-3.  Gehen Sie zum Abschnitt **Erkennung von Duplikaten**.
+<figure><img src="../../../../../.gitbook/assets/dbdc660-duplicate-settings-off-de-20261011.png" alt="Weitere Einstellungen der Rechnung mit geöffnetem Abschnitt Duplikaterkennung und ausgeschalteten Erkennungsoptionen"><figcaption><p>Die Rechnungseinstellungen zeigen vier separate Schalter. Die Auswahl für Felder und Intervall erscheint erst, wenn die Erkennung aktiviert ist.</p></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-de.png" alt="Deutsche Einstellungen zur Erkennung doppelter Dokumente."><figcaption><p>Deutsche Einstellungen zur Erkennung doppelter Dokumente.</p></figcaption></figure>
+## Festlegen, was als Duplikat gilt
 
-DocBits bietet zwei Optionen zur Identifizierung doppelter Dokumente:
+1. Schalten Sie **Erkennung von doppelten Dokumenten** ein. Die Auswahlmenüs **Felder zur Erkennung von Duplikaten** und **Intervall zur Duplikaterkennung** erscheinen.
+2. Wählen Sie die Felder aus, die übereinstimmen müssen. Bei einer Rechnung wählen Sie zum Beispiel **Lieferanten-ID** und **Rechnungsnummer**. Wählen Sie Felder, die Dokumente in Ihrem eigenen Prozess voneinander unterscheiden.
+3. Wählen Sie ein Intervall: **1 Monat**, **3 Monate (empfohlen)**, **6 Monate** oder **1 Jahr**. Ein längeres Intervall prüft einen breiteren Datumsbereich und kann länger laden.
 
-1. **Erkennung von doppelten Dokumenten**:\
-   Diese Funktion überprüft auf doppelte Dokumente, die basierend auf den ausgewählten Kriterien in **DocBits** hochgeladen wurden. Wenn ein Dokument die ausgewählten Kriterien in anderen Dokumenten erfüllt, wird es als Duplikat gekennzeichnet.
-2.  **Erkennung doppelter Rechnungen** (Nur verfügbar für den **Rechnungs**-Dokumenttyp):\
-    Diese Funktion erfordert das Synchronisieren von Lieferantenrechnungen von Infor zu DocBits. Sie vergleicht die Rechnungsnummern im DocBits-Dashboard mit denen in Infor. Wenn dieselbe Rechnungsnummer mehr als einmal erscheint, wird sie als Duplikat gekennzeichnet.
+Jede Änderung wird beim Ausführen gespeichert; dieser Abschnitt hat keine eigene Speichern-Schaltfläche. Wenn Sie die Erkennung ausschalten, werden die Auswahlmenüs für Felder und Intervall ausgeblendet.
 
-    <mark style="color:red;">**Hinweis**</mark>: Die Verwendung der Funktion **Erkennung doppelter Rechnungen** führt zu einer zusätzlichen Gutschriftgebühr.
+Für den Dokumenttyp **Rechnung** bietet dieser Abschnitt zusätzlich **Erkennung doppelter Rechnungen**, **Export doppelter Dokumente blockieren** und **Steuerfreie Zeile ignorieren**. Diese Funktionen sind eigene Schalter; aktivieren Sie nur das Verhalten, das Ihr Rechnungsprozess braucht. Die zusätzlichen Schalter werden für andere Dokumenttypen nicht angezeigt. Die **Erkennung doppelter Rechnungen** vergleicht Rechnungsnummern im DocBits-Dashboard mit denen in Infor und erzeugt eine zusätzliche Gutschriftgebühr.
 
-## Filter, welche Dokumente als Duplikate erkannt werden sollen
+<figure><img src="../../../../../.gitbook/assets/dbdc660-duplicate-settings-on-de-20261011.png" alt="Erkennung von doppelten Dokumenten aktiviert, mit Auswahlmenüs für Felder und Intervall"><figcaption><p>Aktivieren Sie die Erkennung, bevor Sie die Vergleichsfelder und das Zeitintervall auswählen.</p></figcaption></figure>
 
-Sobald die **Erkennung von Duplikaten** aktiviert ist, stehen zwei Dropdown-Menüs zur Konfiguration zur Verfügung:
+<figure><img src="../../../../../.gitbook/assets/dbdc660-duplicate-interval-options-de-20261011.png" alt="Menü Intervall zur Duplikaterkennung mit einem Monat, drei Monaten, sechs Monaten und einem Jahr"><figcaption><p>Drei Monate sind im Menü als empfohlenes Intervall markiert.</p></figcaption></figure>
 
-*   **Felder zur Erkennung von Duplikaten**\
-    Wählen Sie die Felder aus, die zur Identifizierung von Duplikaten verwendet werden sollen (z. B. Lieferanten-ID, Datum, Rechnungsnummer usw.). Dokumente, die diesen Feldern entsprechen, werden als Duplikate gekennzeichnet.
+## Ein markiertes Dokument prüfen
 
-    <figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-de.png" alt="Feldauswahl für die Erkennung doppelter Dokumente."><figcaption><p>Feldauswahl für die Erkennung doppelter Dokumente.</p></figcaption></figure>
-*   **Intervall zur Duplikaterkennung**
+Wenn DocBits eine Übereinstimmung findet, zeigt die Zeile des Dokuments im **Dashboard** ein Duplikat-Symbol. Wählen Sie das Symbol, um die übereinstimmenden Datensätze im Seitenpanel zu vergleichen. Das Symbol erscheint nur, wenn eine Übereinstimmung vorliegt.
 
-    Verwenden Sie diese Einstellung, um den Zeitraum zu definieren, innerhalb dessen Duplikate erkannt werden. Dokumente, die innerhalb des ausgewählten Intervalls hochgeladen werden, werden anhand der ausgewählten Felder miteinander verglichen.
-
-    **Verfügbare Optionen:**
-
-    * 1 Monat
-    * 3 Monate (Empfohlen)
-    * 6 Monate
-    * 1 Jahr
-
-    <mark style="color:red;">**Hinweis**</mark>: Ein 3-Monats-Intervall wird empfohlen, um eine optimale Leistung sicherzustellen. Die Auswahl eines längeren Intervalls kann zu langsameren Ladezeiten des Dashboards führen.
-
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_6.png" alt=""><figcaption></figcaption></figure>
-
-## Anzeigen doppelter Dokumente im Dashboard
-
-Vergleichen Sie Rechnungsnummer, Lieferant, Datum und Betrag der betroffenen Dokumente. Die deutsche Warnleiste unten zeigt den Hinweis auf ein erkanntes Duplikat.
-
-Sobald die **Erkennung von Duplikaten** aktiviert ist, wird bei allen als Duplikate identifizierten Dokumenten ein Duplikatindikator-Symbol im Dashboard angezeigt.
-
-*   Klicken Sie auf dieses Symbol, um die übereinstimmenden Datensätze in einer nebeneinander angeordneten Split-Screen-Ansicht für einen einfachen Vergleich zu öffnen. \
-    <mark style="color:red;">**Hinweis**</mark>: Das Symbol erscheint nur, wenn mindestens ein Duplikat für das Dokument erkannt wurde.
-
-*   Beim Anzeigen eines gekennzeichneten Dokuments erscheint oben eine Warnleiste, die darauf hinweist, dass das Dokument ein Duplikat ist.
-
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_5_de.png" alt=""><figcaption></figcaption></figure>
+Wenn Sie ein markiertes Dokument öffnen, bietet die Duplikat-Warnung **View Duplicate**, **Proceed Anyway** und – falls das Dokument noch nicht archiviert wurde – **Archive** an. Prüfen Sie die übereinstimmenden Datensätze, bevor Sie eine Aktion wählen. Einen Leitfaden zur Dokumentenliste finden Sie im [Dashboard-Leitfaden](../../dashboard/README.md).

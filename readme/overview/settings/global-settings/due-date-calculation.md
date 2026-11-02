@@ -1,42 +1,48 @@
 # Obračun roka dospeća
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Podešavanja obračuna roka dospeća"><figcaption><p>Podešavanja obračuna roka dospeća</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-rs.png" alt="Podešavanja obračuna roka dospeća"><figcaption><p>Podešavanja obračuna roka dospeća</p></figcaption></figure>
 
 Stranica **Obračun roka dospeća** (**Obrada dokumenata → Obračun roka dospeća**) kontroliše kako DocBits obračunava rokove dospeća faktura, rokove dospeća popusta (Skonto) i uslove plaćanja na osnovu kodova uslova plaćanja pronađenih na fakturama.
 
-## Prikaži obračunata polja
+Kartica **Invoice Due Date Calculation** sadrži opšta podešavanja. Izmene u ovoj kartici čuvate dugmetom **Save** u zaglavlju kartice. Ispod su tabele zamena za popuste i uslove plaćanja, kao i pregled podržanih formata.
 
-Omogućite **Prikaži obračunata polja** da bi se automatski obračunata polja fakture — rok dospeća, rok dospeća popusta, uslovi plaćanja i AP kod dodele — pojavila u Podešavanjima polja i kao promenljive u Brzoj pretrazi i šablonima e-pošte. Prilagođeni tipovi dokumenata nikada nisu obuhvaćeni.
+## Show Calculated Fields
 
-## Obračun roka dospeća fakture
+Uključite **Show Calculated Fields** da bi se automatski obračunata polja fakture — rok dospeća, rok dospeća popusta, uslovi plaćanja i AP kod dodele — pojavila u podešavanjima polja i kao promenljive u brzoj pretrazi i šablonima e-pošte. Prilagođeni tipovi dokumenata nikada nisu obuhvaćeni.
 
-### Postupanje s vikendima
+## Invoice Due Date Calculation
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Opcije konvencije za vikend"><figcaption><p>Opcije konvencije za vikend</p></figcaption></figure>
+### Weekend Handling
 
-Izaberite kako se prilagođava rok dospeća koji pada u subotu ili nedelju. Ovo se odnosi **i** na rok dospeća fakture **i** na rok dospeća popusta (Skonto).
+Izaberite **Weekend convention** da odredite kako se prilagođava rok dospeća koji padne na subotu ili nedelju. Pravilo važi **i** za rok dospeća fakture **i** za rok dospeća popusta (Skonto).
 
 | Konvencija | Efekat |
 |------------|--------|
-| **Nijedna** | Zadrži kalendarski datum (bez prilagođavanja). |
-| **Sledeća** | Pomeri sub./ned. na sledeći ponedeljak. |
-| **Prethodna** | Pomeri sub./ned. na prethodni petak. |
-| **Najbliža** | Subota → petak, nedelja → ponedeljak. |
-| **Izmenjena sledeća** | Sledeći ponedeljak, osim ako pređe u sledeći mesec; tada prethodni petak. |
+| **None** | Zadržava kalendarski datum, bez prilagođavanja. |
+| **Following** | Pomera subotu/nedelju na sledeći ponedeljak. |
+| **Preceding** | Pomera subotu/nedelju na prethodni petak. |
+| **Nearest** | Subota → petak, nedelja → ponedeljak. |
+| **Modified Following** | Sledeći ponedeljak, osim ako pređe u sledeći mesec — tada prethodni petak. |
 
-### AP kod dodele
+### AP Assignment Code
 
-Povežite uslove plaćanja dobavljača sa AP kodovima dodele za automatsko usmeravanje faktura tako što ćete izabrati **polje AP koda dodele**.
+Izaberite **AP Assignment Code Field** da biste uslove plaćanja dobavljača povezali sa AP kodovima dodele za automatsko usmeravanje faktura.
 
-## Zamene uslova popusta
+## Discount Term Overwrites
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Zamene uslova popusta"><figcaption><p>Zamene uslova popusta</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-rs.png" alt="Discount Term Overwrites"><figcaption><p>Discount Term Overwrites</p></figcaption></figure>
 
-Koristite **Zamene uslova popusta** da biste povezali određeni prefiks sa procentom popusta i brojem dana. Kliknite na **+ Dodaj mapiranje** da biste dodali red sa poljima **Prefiks**, **Procenat** i **Dani**.
+Tabelu **Discount Term Overwrites** koristite da povežete određeni prefiks sa procentom popusta i brojem dana. Kliknite na **Add Mapping** da dodate red sa poljima **Prefix**, **Percentage** i brojem dana. Da izmenite ili uklonite postojeće mapiranje, otvorite meni (⋮) na kraju reda.
+
+## Payment Term Overwrites
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-rs.png" alt="Payment Term Overwrites"><figcaption><p>Payment Term Overwrites</p></figcaption></figure>
+
+U tabeli **Payment Term Overwrites** povežite kod uslova plaćanja sa tipom roka, brojem dana i opisom. Kliknite na **Add Mapping** za novi red sa poljima **Code**, **Term Type**, broj dana i **Description**, a menijem (⋮) na kraju reda izmenite ili obrišite mapiranje.
 
 ## Podržani formati
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Podržani formati uslova plaćanja i popusta"><figcaption><p>Podržani formati uslova plaćanja i popusta</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-rs.png" alt="Podržani formati uslova plaćanja i popusta"><figcaption><p>Podržani formati uslova plaćanja i popusta</p></figcaption></figure>
 
 DocBits prepoznaje sledeće kodove uslova plaćanja i popusta.
 

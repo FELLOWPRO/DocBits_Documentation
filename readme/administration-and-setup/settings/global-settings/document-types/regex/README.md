@@ -1,18 +1,16 @@
-# Regex
+# Expresiones regulares (Regex)
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Regex Management"><figcaption><p>Magaging Rgexes</p></figcaption></figure>
+Las expresiones regulares describen patrones para números de factura, fechas e importes. El patrón y el origen deben corresponder al documento previsto.
 
-In Docbits, Regex settings allow administrators to define custom patterns that the system uses to find and extract data from documents. This feature is especially useful in situations where data needs to be extracted from unstructured text or when the data follows a predictable format that can be captured using regex patterns.
+## Disponibilidad de la configuración
 
-#### Key Features and Options
+El antiguo enlace directo a Regex de la tarjeta del tipo de documento no está disponible en la interfaz actual. Consulte con su administrador qué ruta de configuración admite su versión antes de cambiar patrones.
 
-1. **Managing Regexes**:
+## Editar y comprobar un patrón
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_management_list.png" alt="Docbits Regex Management List"><figcaption><p>Magaging Regexes</p></figcaption></figure>
+1. Registre el patrón actual y los resultados esperados.
+2. Prepare textos representativos, incluidos ejemplos que no deben coincidir.
+3. Compare las coincidencias reales después de cada cambio.
+4. Guarde la configuración prevista solo después de comprobar sus resultados.
 
-**Managing Regexes**:
-
-* **Add**: Allows you to create a new regex pattern for a specific document type.
-* **Save Changes**: Saves modifications to existing regex configurations.
-* **Pattern**: Here, you can define the regex pattern that matches the specific data format required.
-* **Origin**: Is the Document Origin - For example you can define a different Regex in Germany
+Consulte [Edición y guardado de patrones Regex](editing-and-saving-regex-patterns.md).

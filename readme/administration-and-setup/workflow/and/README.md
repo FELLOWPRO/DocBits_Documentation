@@ -1,64 +1,81 @@
-# And
+# Y
 
-## Comprender las tarjetas "And"
+Algunas etiquetas del producto siguen en inglés o tienen traducciones incorrectas. Las categorías de tablas se refieren a tablas de datos; los valores devueltos no son devoluciones comerciales. Los identificadores técnicos permanecen sin traducir.
 
-### **Propósito de las tarjetas "And":**
 
-* Las tarjetas **And** funcionan como tarjetas de condición que especifican criterios que deben cumplirse para que el flujo de trabajo continúe. Actúan eficazmente como operadores lógicos "AND", lo que significa que todas las condiciones especificadas en estas tarjetas deben cumplirse para que se dispare la acción posterior.
 
-#### Categorías de tarjetas "And"
 
-A partir de las capturas de pantalla, queda claro que estas tarjetas cubren una amplia gama de condiciones, que incluyen:
 
-* **Compare with Purchase Order**:
-  * Condiciones relacionadas con la validación y la comparación frente a órdenes de compra, como comparar fechas de entrega, precios unitarios o diferencias de cantidad. Son cruciales para garantizar que las transacciones se ajusten a los términos acordados.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Document Field**:
-  * Implican condiciones basadas en campos específicos dentro de los documentos, como casillas de verificación marcadas, comparación de valores de campo o garantizar que un campo de documento cumpla una tolerancia especificada. Esto es especialmente importante para la integridad de los datos y las comprobaciones automatizadas dentro de formularios o sistemas de gestión de documentos.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Date & Time:**
-  * Condiciones basadas en fechas y horas.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Document**:
-  * Condiciones basadas en características del documento, como el tipo o la asociación con una suborganización concreta. Estas condiciones pueden dirigir los flujos de trabajo en función de la categorización del documento o la participación departamental.
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Logic**:
-  * Condiciones lógicas que pueden implicar evaluaciones como "Continuar con una probabilidad del X %" o ejecutar solicitudes HTTPS, que son vitales para las integraciones y la toma de decisiones probabilística dentro de los flujos de trabajo.
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Status**:
-  * Centradas en el estado de los documentos o las tareas, estas condiciones garantizan que solo los elementos en ciertos estados disparen flujos de trabajo específicos, lo que es crucial para la gestión de procesos basada en el estado.
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Table**:
-  * Implican condiciones basadas en datos de tablas, como la coincidencia de patrones regex o la comparación de valores dentro de una tabla. Estas condiciones son esenciales para validar y manipular grandes conjuntos de datos.
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **Assignee**:
-  * Condiciones basadas en los asignatarios de tareas o documentos. Esto garantiza que las acciones solo se realicen cuando ciertos usuarios estén implicados, mejorando la responsabilidad y la especificidad de las tareas.
+Utilice una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activación **Cuando**. Agregue las comprobaciones que necesita antes de la acción **Entonces**. Cada tarjeta muestra campos para completar, como **Operador**, **Nombre de campo** o **Valor**; las capturas de pantalla muestran las plantillas de tarjetas disponibles, no las reglas completadas.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Y...**. Elija una categoría a la izquierda o escriba el nombre de una tarjeta en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla al flujo de trabajo. Puede desplazarse por la lista de vista previa para ver más tarjetas. Utilice **×** para cerrar el selector sin elegir otra tarjeta. Después de configurar las tarjetas, guarde el flujo de trabajo. Consulte [Flujo de trabajo](..) para conocer los pasos circundantes **Cuando**, **Y** y **Entonces**.
 
-### Aplicación práctica
+## Comparar con orden de compra
 
-Estas tarjetas "And" se configuran dentro del flujo de trabajo para realizar comprobaciones y validaciones que garantizan que el proceso se ajuste estrictamente a las reglas de negocio y los estándares de integridad de datos. Por ejemplo:
+Utilice estas tarjetas para comparar datos de pedidos o facturas con una orden de compra, como precio unitario, fecha de entrega prometida, cargos o cantidad. Elija los campos, operador y cualquier tolerancia que solicite la tarjeta seleccionada. Consulte [Comparar con orden de compra](compare-with-purchase-order) para las tarjetas individuales.
 
-* **Un flujo de trabajo podría usar una tarjeta "And" para verificar que el importe total de una factura coincide con la orden de compra antes de disparar el pago.**
-* **Otro flujo de trabajo podría usar una tarjeta "And" para garantizar que un documento sea revisado por miembros específicos del equipo antes de que avance a la siguiente etapa.**
+<figure><img src="../../../.gitbook/assets/prior-u035-es.png" alt="Categoría de condiciones para comparar con pedidos."><figcaption><p>Categoría de condiciones para comparar con pedidos.</p></figcaption></figure>
 
-### Conclusión
+## Campo de documento
 
-Las tarjetas "And" son un componente fundamental de los sistemas de flujo de trabajo que requieren un control preciso de la ejecución del proceso en función de múltiples condiciones. Garantizan que cada paso de un flujo de trabajo solo avance cuando se cumplan rigurosamente todos los criterios necesarios, automatizando así árboles de decisión complejos dentro de los procesos de negocio.
+Elija esta categoría para comprobar si una casilla de verificación está marcada o consultar el estado de un campo, comparar un campo con un valor o comparar dos campos. Complete los marcadores de posición **Nombre de campo** y **Operador** en la tarjeta elegida. Algunas comparaciones también piden tolerancia. Consulte [Campo del documento](document-field).
 
-Comprender y configurar correctamente estas tarjetas es crucial para aprovechar todas las capacidades de su sistema de gestión de flujos de trabajo y mejorar la eficiencia, la precisión y el cumplimiento dentro de los procesos de la organización.
+<figure><img src="../../../.gitbook/assets/prior-u036-es.png" alt="Categoría de condiciones sobre campos del documento."><figcaption><p>Categoría de condiciones sobre campos del documento.</p></figcaption></figure>
+
+## Fecha y hora
+
+Utilice **Fecha y hora** para comparar una fecha u hora con un rango, o compare **Hoy** con una fecha elegida. Seleccione el **Operador** y los valores de fecha en la tarjeta. Consulte [Fecha y hora](date-and-time).
+
+<figure><img src="../../../.gitbook/assets/prior-u037-es.png" alt="Categoría de condiciones de fecha y hora."><figcaption><p>Categoría de condiciones de fecha y hora.</p></figcaption></figure>
+
+## Documento
+
+Utilice estas tarjetas cuando un flujo de trabajo deba depender del **tipo de documento** o **suborganización**. Elija el tipo u organización mencionada en la tarjeta. Consulte el [Documento](document).
+
+<figure><img src="../../../.gitbook/assets/prior-u038-es.png" alt="Categoría de condiciones sobre documentos."><figcaption><p>Categoría de condiciones sobre documentos.</p></figcaption></figure>
+
+## Lógica
+
+Esta categoría incluye comprobaciones utilizando una tabla de decisiones, una respuesta HTTPS, disponibilidad del módulo, el precio de un artículo cotizado, un valor de probabilidad o dos valores. Abra la tarjeta específica y complete los marcadores de posición con su nombre; por ejemplo, la tarjeta HTTPS solicita una URL, un método y un código de estado aceptado. Consulte [Lógica](logic).
+
+<figure><img src="../../../.gitbook/assets/prior-u039-es.png" alt="Categoría de condiciones lógicas."><figcaption><p>Categoría de condiciones lógicas.</p></figcaption></figure>
+
+## Estado
+
+Utilice **Estado** para comprobar si un documento tiene un estado elegido o si su estado está en un conjunto seleccionado. Elija **Operador** y **Estado** en la tarjeta. Consulte [Estado](status).
+
+<figure><img src="../../../.gitbook/assets/prior-u040-es.png" alt="Categoría de condiciones de estado."><figcaption><p>Categoría de condiciones de estado.</p></figcaption></figure>
+
+## Tabla
+
+Estas tarjetas examinan las filas de la tabla de documentos. Las opciones visibles incluyen verificaciones de fechas, patrones de texto, vida útil y comparaciones entre columnas. Seleccione **Nombre de tabla** y **Nombre de columna** antes de elegir un operador o patrón. Consulte la [Tabla](table).
+
+<figure><img src="../../../.gitbook/assets/prior-u041-es.png" alt="Categoría de condiciones sobre tablas de datos."><figcaption><p>Categoría de condiciones sobre tablas de datos.</p></figcaption></figure>
+
+## Comparar con el precio de cotización
+
+Utilice estas tarjetas para comparar un artículo con los datos de precios cotizados. Las opciones visibles cubren el ID del artículo, el tipo de proveedor, el ID del artículo del proveedor, el precio unitario y la unidad de medida. El **Operador** y los marcadores de posición de datos dependen de la tarjeta que seleccione.
+
+<figure><img src="../../../.gitbook/assets/prior-u042-es.png" alt="Categoría de condiciones sobre precios de ofertas."><figcaption><p>Categoría de condiciones sobre precios de ofertas.</p></figcaption></figure>
+
+## Responsable
+
+Utilice **Responsable** cuando la condición dependa del usuario o grupo asignado. Elija si comparar con un usuario o grupo o un conjunto seleccionado. Consulte [Responsable](assignee).
+
+<figure><img src="../../../.gitbook/assets/prior-u043-es.png" alt="Categoría de condiciones sobre asignaciones."><figcaption><p>Categoría de condiciones sobre asignaciones.</p></figcaption></figure>
+
+[Tarjetas de comparación de cotizaciones detalladas y comportamiento Cualquiera/Todos](../cards-overview/quote-comparison-guide.md).

@@ -1,6 +1,6 @@
-# Document Type Operation one of
+# Tipo de documento Operación uno de
 
-<figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_list_v2-es-es.png" alt="Tipo de documento Operación uno de, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,12 +8,12 @@ Esta tarjeta está diseñada para gestionar acciones sobre los documentos en fun
 
 ## **Componentes de la tarjeta:**
 
-1. **Operator**
+1. **Operador**
    * **Descripción**: Determina la lógica condicional que se aplica a los tipos de documento.
    * **Opciones**:
      * **is**: La operación se disparará si el tipo del documento coincide con uno de los tipos especificados en la lista.
-     * **is not**: La operación se disparará si el tipo del documento no coincide con ninguno de los tipos enumerados.
-2. **Document Types List**
+     * **no es**: La operación se disparará si el tipo del documento no coincide con ninguno de los tipos enumerados.
+2. **Lista de tipos de documentos**
    * **Descripción**: Especifica una lista de tipos de documento a los que se aplicará la condición.
    * **Detalle**: Incluye una variedad de tipos de documento como "Invoice", "Purchase Order", etc., en función de los cuales se evaluará la condición (is/is not).
 
@@ -33,3 +33,15 @@ Esta tarjeta está diseñada para gestionar acciones sobre los documentos en fun
 ## Conclusión:
 
 La tarjeta de flujo de trabajo "Document Type Condition" desempeña un papel crucial en la gestión de operaciones basadas en documentos con precisión y flexibilidad. Al usar lógica condicional simple, ayuda a garantizar que los documentos se procesen de forma adecuada, mejorando la eficiencia y el cumplimiento. Documentar claramente esta tarjeta ayudará a los usuarios a comprender cómo implementarla y utilizarla de forma eficaz, convirtiéndola en una parte valiosa de la documentación de su sistema ERP.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Utilice la misma validación para varios tipos de documentos.
+
+**Configuración:** Seleccione el operador es uno de y los tipos `Invoice` y `Credit Note`.
+
+**Resultado esperado y contraejemplo:** Un `Invoice` pasa; un `Order` no lo hace.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

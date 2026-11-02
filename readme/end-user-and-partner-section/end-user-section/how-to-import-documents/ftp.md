@@ -3,24 +3,22 @@ hidden: true
 noIndex: true
 ---
 
-# FTP
+# Importación FTP y SFTP
 
-Si deseas integrar tu SFTP con DocBits para importar documentos.
+La importación automática requiere datos de conexión aprobados y una carpeta accesible para la cuenta del servidor.
 
-Requisitos
+## Crear una conexión
 
-* Servidor SFTP correctamente configurado y compatible con Linux
-* Nombre de host, nombre de usuario y contraseña de SFTP
-* Carpeta de importación dedicada
+Abra **Ajustes → Importar** y seleccione **Nuevo** en **Importación ftp**.
 
-**Configuración de Importación**
+<figure><img src="../../../.gitbook/assets/s150-ftp1-es.png" alt="Conexiones de importación FTP con los datos de conexión ocultos."><figcaption><p>Conexiones de importación FTP con los datos de conexión ocultos.</p></figcaption></figure>
 
-Desde el Panel de control, abre Configuración y navega hasta Importación. En Importación de FTP, selecciona agregar una nueva configuración.
+El asistente empieza con **Configuración del servidor**. Seleccione el protocolo, servidor, puerto y credenciales previstos. Use los valores facilitados por el administrador del servidor.
 
-<figure><img src="../../../.gitbook/assets/ftp1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-ftp_import_configuration_form-es.png" alt="Primer paso del asistente FTP: configuración del servidor."><figcaption><p>Primer paso del asistente FTP: configuración del servidor.</p></figcaption></figure>
 
-Ingresa las credenciales de SFTP en los espacios proporcionados y selecciona guardar (El campo Clave de API se completará automáticamente con la Clave de API del entorno en el que estás trabajando).
+Continúe con **Opciones** y **Configuración**. Revise la conexión completa antes de guardarla.
 
-![](https://lh7-us.googleusercontent.com/m11trSpnDmv9aco98vPG6xuIhYxngp6TauG7lDYEWB2VguNmX0ypXMi3Fc4Ey6V4Iy_YwOy4Zooh3rj_WoAQ3PQgVIjw5vqToOuq_lIxN7IqPE2fv1puzsnEO96y5mn5FHjFtC1wYrEf9sxjHk1GL2I)
+## Archivo de los documentos
 
-Una vez que hayas ingresado todos los detalles necesarios de tu SFTP, haz clic en GUARDAR.
+Si la conexión ofrece archivado, configúrelo en las opciones de importación. Compruebe que la cuenta pueda escribir en el directorio de archivo y pruebe el comportamiento con un documento de ejemplo. El formulario de archivo separado de versiones anteriores ha sido sustituido por el asistente actual.

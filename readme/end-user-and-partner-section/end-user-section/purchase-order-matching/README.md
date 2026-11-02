@@ -2,22 +2,30 @@
 
 Utilisez la **Correspondance des Bons de Commande** pour comparer les lignes du bon de commande chargées pour un document avec les lignes de facture extraites. Les données du bon de commande peuvent provenir d'une intégration ERP ou d'un autre import configuré. L'écran affiche le document à côté des deux tableaux afin que vous puissiez vérifier les montants, les quantités, les prix et les écarts avant d'enregistrer ou d'exporter.
 
+## Rapprocher les lignes d’une facture et d’une commande
+
+Le parcours commence par un numéro de commande reconnu et trois lignes de facture rapprochées. Il présente ensuite la recherche manuelle comme exception, une liaison volontairement incorrecte, un rapprochement partiel, le rapprochement automatique et l’enregistrement. Vérifiez le résultat après rechargement : enregistrer ne suffit ni à approuver ni à exporter la facture.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/fr.mp4" %}
+
+[Regarder la vidéo avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/fr.html)
+
 {% hint style="info" %}
-L'exemple ci-dessous utilise une facture et un bon de commande synthétiques FellowPro dans l'organisation **DocBits Documentation Test A**. Son tableau de facture indique actuellement **AUCUN ARTICLE DE COMMANDE TROUVÉ**. Cela permet de montrer la navigation et la recherche, mais pas une correspondance de lignes réussie. N'exportez pas cet exemple comme une facture appariée.
+La capture utilise des données de test synthétiques : trois lignes de facture extraites et leur commande. Le papier, les boîtes d’archives et la livraison totalisent 118 EUR hors taxes. Le rapprochement complet affiche 118 EUR rapprochés et aucun montant restant.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/po-screen-fr.png" alt="Écran de Correspondance des Bons de Commande en français dans l'organisation synthétique Sandbox : recherche, barre d'outils, lignes du bon de commande, tableau de facture vide et aperçu de la facture"><figcaption><p>Le bon de commande est chargé ; la facture d'exemple n'a aucune ligne extraite à connecter.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-fr.png" alt="Rapprochement complet : les trois lignes sont liées, avec 118 EUR rapprochés et 0 EUR restants."><figcaption><p>Rapprochement complet : les trois lignes sont liées, avec 118 EUR rapprochés et 0 EUR restants.</p></figcaption></figure>
 
 ## Rechercher et inspecter un bon de commande
 
-1. Ouvrez une facture dans la **Correspondance des Bons de Commande**. Si votre organisation comporte plusieurs bons de commande, saisissez un numéro dans **Recherche par numéro de bon de commande**.
+1. Ouvrez la facture dans la **Correspondance des Bons de Commande**. Lorsque son numéro de commande est reconnu, DocBits charge la commande correspondante. Utilisez la recherche manuelle si le numéro manque ou pour examiner une autre commande.
 2. Sélectionnez l'icône de filtre à côté de la zone de recherche pour définir **Mot-clé**, **Fournisseur**, **Statut**, **Statut de la commande**, les dates, la plage de montants, le tri et le nombre d'enregistrements affichés. Sélectionnez **Plus** pour des critères supplémentaires. Sélectionnez **Appliquer** pour lancer la recherche ou **Supprimer** pour réinitialiser les filtres.
 3. Sélectionnez un numéro de bon de commande au-dessus du tableau pour inspecter ses lignes. L'icône de rafraîchissement à côté du numéro recharge les données de ce bon de commande. Ce rechargement peut dépendre de l'intégration configurée.
-4. Comparez chaque ligne du bon de commande avec la facture et son tableau extrait. Le **+** sur une ligne développe les détails de correspondance ; il ne connecte pas lui-même la ligne à la facture. Dans l'exemple, il affiche **No multi-match Information** car aucune correspondance multiple n'existe.
+4. Comparez chaque ligne de commande avec la facture et son tableau extrait. Le **+** ouvre les détails de rapprochement existants ; il ne lie pas lui-même la ligne à la facture.
 
-<figure><img src="../../../.gitbook/assets/po-filters-fr.png" alt="Filtres de recherche des bons de commande en français : fournisseur, statuts, limites de date et de montant, tri, boutons Appliquer et Supprimer"><figcaption><p>Utilisez le panneau de filtres pour restreindre les bons de commande affichés.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-fr.png" alt="La recherche manuelle affiche les trois lignes de la commande de test. Utilisez les filtres si nécessaire ; un numéro de commande reconnu ne demande pas une seconde recherche."><figcaption><p>La recherche manuelle affiche les trois lignes de la commande de test. Utilisez les filtres si nécessaire ; un numéro de commande reconnu ne demande pas une seconde recherche.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/po-line-fr.png" alt="Ligne de bon de commande dépliée avec No multi-match Information et un tableau de facture vide"><figcaption><p>La ligne dépliée affiche les détails de correspondance lorsqu'ils existent.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-fr.png" alt="Rapprochement partiel : le papier représente 50 EUR rapprochés et 68 EUR restent ouverts. Il ne s’agit pas d’un seuil fixe de cinquante pour cent."><figcaption><p>Rapprochement partiel : le papier représente 50 EUR rapprochés et 68 EUR restent ouverts. Il ne s’agit pas d’un seuil fixe de cinquante pour cent.</p></figcaption></figure>
 
 ## Apparier les lignes et vérifier le résultat
 
@@ -44,7 +52,7 @@ Utilisez l'**Historique d'appariement** (icône horloge, selon vos permissions) 
 
 ### Plusieurs lignes pour une correspondance
 
-Une seule ligne de facture peut correspondre à plusieurs lignes de bon de commande, ou l'inverse, lorsque vos règles d'appariement le permettent. Ouvrez les détails **+** d'une ligne pour inspecter une éventuelle correspondance multiple. Vérifiez la quantité et le prix combinés, pas seulement une ligne. Un panneau de détails vide comme dans l'exemple synthétique ci-dessus signifie qu'aucune correspondance multiple n'est à inspecter. Consultez [Outils de Correspondance des Bons de Commande](purchase-order-matching-tools.md) pour modifier les connexions.
+Une seule ligne de facture peut correspondre à plusieurs lignes de bon de commande, ou l'inverse, lorsque vos règles d'appariement le permettent. Ouvrez les détails **+** d'une ligne pour inspecter une éventuelle correspondance multiple. Vérifiez la quantité et le prix combinés, pas seulement une ligne. Un panneau de détails vide signifie qu'aucune correspondance multiple n'est à inspecter. Consultez [Outils de Correspondance des Bons de Commande](purchase-order-matching-tools.md) pour modifier les connexions.
 
 ### Quantités, écarts et remises
 

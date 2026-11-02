@@ -1,6 +1,8 @@
 # Créez une nouvelle tâche et attribuez-la à l'utilisateur dans le champ du document
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f325db80cf3-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v1-fr-fr.png" alt="Créez une nouvelle tâche et attribuez-la à l&#x27;utilisateur dans le champ du document, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_user_from_field_with_fallback_v3-fr-fr.png" alt="Créez une nouvelle tâche et attribuez-la à l&#x27;utilisateur dans le champ du document, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Objectif :**
 

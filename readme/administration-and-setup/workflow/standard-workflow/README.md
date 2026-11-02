@@ -1,36 +1,25 @@
 # Flux de travail standard
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Workflow Achat Commande 4"><figcaption></figcaption></figure>
+Ce schéma présente un exemple de traitement des factures avec et sans commande. Il décrit des rôles et des échanges à adapter à votre organisation ; il ne constitue pas une règle active ni une preuve d’exportation ou de paiement.
 
-#### Aperçu des composants du flux de travail :
+<figure><img src="../../../.gitbook/assets/workflow-standard-fr.png" alt="Exemple de workflow de factures avec et sans commande. Les circuits d’approbation, le délai de deux jours et la connexion ERP font partie de cet exemple et doivent correspondre à votre configuration."><figcaption><p>Exemple de workflow de factures avec et sans commande. Les circuits d’approbation, le délai de deux jours et la connexion ERP font partie de cet exemple et doivent correspondre à votre configuration.</p></figcaption></figure>
 
-* **Réception des factures par e-mail** : Le processus commence vraisemblablement par une facture reçue par e-mail.
-* **DocBits** : Cet outil peut être utilisé pour les tâches initiales de gestion documentaire telles que la capture et la numérisation des factures.
-* **Examen financier** : Les factures font l'objet d'un examen financier au cours duquel des décisions sont prises concernant leur validité et leur exactitude.
+## Réception et contrôle financier
 
-#### Étapes du flux de travail :
+La facture entre dans DocBits, puis la finance examine les informations et choisit le circuit avec commande ou sans commande. Les champs et les règles de validation doivent être configurés pour le processus retenu.
 
-1. **Examen initial** :
-   * Les factures sont reçues et initialement traitées à l'aide de DocBits.
-   * Elles sont ensuite examinées par l'équipe financière afin d'être retirées du flux de travail si elles sont complètes, ou transmises pour un traitement ultérieur.
-2. **Factures avec PO vs sans PO** :
-   * Le flux de travail distingue les factures liées à un PO et les factures sans PO.
-   * Les factures sans PO sont acheminées pour approbation ou rejet supplémentaire selon des critères prédéfinis tels que l'ID du fournisseur, la quantité, le prix unitaire et le numéro d'article.
-3. **Correspondance et non-correspondance** :
-   * Les factures sont vérifiées par rapport aux réceptions de marchandises afin de s'assurer que les détails correspondent (comme l'ID du fournisseur et la quantité).
-   * En cas de non-correspondance, la facture fait l'objet d'un examen complémentaire et éventuellement d'un rejet.
-4. **Examen par la finance et l'acheteur** :
-   * Pour les factures liées à un PO, un processus de correspondance détaillé est mené, impliquant un examen par l'acheteur.
-   * Des ajustements aux commandes d'achat ou aux réceptions de marchandises peuvent être nécessaires.
-5. **Décisions finales** :
-   * Les factures qui passent toutes les vérifications sont approuvées et intégrées aux systèmes financiers à des fins de conservation des enregistrements.
-   * Les factures rejetées déclenchent des notifications, et une nouvelle facture peut être demandée par l'acheteur.
-6. **Intégration avec Infor IDM et LN+M3** :
-   * Les factures approuvées sont vraisemblablement envoyées à l'IDM d'Infor pour la gestion documentaire et à LN pour l'enregistrement comptable.
-   * Cette intégration garantit que tous les enregistrements financiers sont à jour et que le flux de travail s'intègre de manière transparente dans le système ERP plus large.
+## Facture sans commande
 
-#### Points de décision :
+Le circuit d’approbation utilise la correspondance entre le fournisseur et les approbateurs, notamment les informations transmises par BOD et les champs CDF de cet exemple. Une décision peut approuver, rejeter ou laisser la facture en cours d’examen. Les contrôles de validation peuvent renvoyer le document pour correction.
 
-* Tout au long du flux de travail, il existe divers points de décision où une facture peut être approuvée, rejetée ou renvoyée pour information complémentaire. Des notifications sont envoyées après des délais, garantissant un traitement en temps voulu.
+Le délai de **deux jours** et les notifications du schéma appartiennent à cet exemple ; ils ne définissent pas un délai universel du produit. Le chemin de rejet comporte le message `Invoice_Reject` vers IDM et le retrait du circuit illustré. Vérifiez les conditions et les destinataires avant de l’activer.
 
-Ces flux de travail seront inclus dans le flux de travail standard
+## Facture avec commande
+
+Le rapprochement utilise la commande et les réceptions de marchandises, avec l’identifiant du fournisseur, la quantité, le prix unitaire et la référence d’article. En cas d’écart, la finance et l’acheteur examinent le document. Selon le cas, ils corrigent les données de commande ou de réception, demandent une nouvelle facture, ou rejettent la facture.
+
+Après correction, les contrôles doivent être répétés. Une simple affectation à un acheteur ne vaut ni approbation ni résolution de l’écart.
+
+## Validation et intégration
+
+Le chemin final du schéma transmet les informations validées vers **Infor IDM** et **LN**. Les connexions, les messages et la gestion des erreurs doivent correspondre à votre installation. Contrôlez le résultat dans chaque système cible ; la présence d’une flèche dans ce schéma ne garantit pas l’exportation, l’écriture comptable ou le paiement.

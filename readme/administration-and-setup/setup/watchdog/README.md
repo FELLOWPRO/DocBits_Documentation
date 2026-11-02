@@ -1,62 +1,41 @@
 # WatchDog
 
+WatchDog est un service Windows qui surveille des dossiers, transmet les documents à DocBits et prend en charge les destinations d’exportation configurées. Les connexions, autorisations et méthodes doivent correspondre à votre environnement.
+
 <figure><img src="../../../.gitbook/assets/watchdog-overview-fr.svg" alt="WatchDog : surveillance des dossiers, traitement dans DocBits et destinations d’export."><figcaption><p>WatchDog : surveillance des dossiers, traitement dans DocBits et destinations d’export.</p></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-fr.png" alt="Infographie WatchDog"><figcaption></figcaption></figure>
-
-**WatchDog** est un service Windows installé sur site qui surveille des dossiers locaux à la recherche de documents entrants, les téléverse vers le DocBits Cloud pour traitement, puis exporte les documents terminés vers des dossiers locaux ou des systèmes ERP.
-
-## Fonctionnalités principales
-
-* **Surveillance automatique des dossiers** — surveille les chemins locaux et les chemins réseau UNC à la recherche de nouveaux PDF
-* **Prise en charge de plusieurs configurations** — plusieurs configurations d'import/export par instance
-* **6 méthodes d'export** — Local Folder, Infor IDM, Infor BOD, ION API, GLS840MI, REST API
-* **Auto-Update** — mises à jour automatiques de version avec retour arrière en cas d'échec
-* **Gestion à distance** — redémarrage, mise à jour et configuration via l'interface DocBits
 
 ## Démarrage rapide
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Onglet General de WatchDog"><figcaption></figcaption></figure>
+### 1. Télécharger et préparer
 
-### 1. Télécharger WatchDog
+Ouvrez **Paramètres → WatchDog → Général**. Utilisez le téléchargement et les instructions adaptés à votre environnement. Une version Dev illustrée n’est pas une recommandation de déploiement pour tous les environnements.
 
-Téléchargez `WatchDog.exe` depuis **Settings → Document Processing → WatchDog → General Tab** dans l'application DocBits.
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-fr.png" alt="Vue Général avec les quatre onglets actuels et l’état Hors ligne de l’environnement de test. La clé API, les commandes sensibles et le chemin d’installation sont masqués. Cette image ne prouve pas une installation ou une connexion réussie."><figcaption><p>Vue Général avec les quatre onglets actuels et l’état Hors ligne de l’environnement de test. La clé API, les commandes sensibles et le chemin d’installation sont masqués. Cette image ne prouve pas une installation ou une connexion réussie.</p></figcaption></figure>
 
-### 2. Configurer via la clé d'API
+### 2. Configurer la clé API
 
-Ouvrez l'**Invite de commandes en tant qu'administrateur** et exécutez :
+Dans un terminal administrateur, utilisez la clé autorisée de votre organisation et de votre environnement. Remplacez le marqueur d’exemple ; ne publiez pas une commande contenant une véritable clé.
 
 ```powershell
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-> **Remarque :** la clé d'API est disponible dans vos paramètres DocBits, sous l'onglet General de WatchDog. Elle relie WatchDog à votre organisation DocBits.
-
-### 3. Installer en tant que service Windows
+### 3. Installer et démarrer le service Windows
 
 ```powershell
 WatchDog.exe install
 WatchDog.exe start
 ```
 
-### 4. Créer les configurations dans DocBits
+### 4. Créer les configurations
 
-Toutes les configurations d'import et d'export sont créées directement dans l'**application DocBits** :
+Dans **Configurations**, préparez les importations et les exportations. Les importations définissent les dossiers et le périmètre des documents ; les exportations définissent leur méthode et leur destination. Le type de document (`doc_type`) est obligatoire pour une configuration d’exportation.
 
-**Paramètres → Traitement des documents → WatchDog → Onglet Configurations**
+La vue actuelle comprend **Général**, **Configurations**, **Journaux** et **Modèles XSLT**. Le statut du service figure dans Général ; les exportations ne constituent pas un onglet supplémentaire.
 
-* **Import Configurations** — définissent les dossiers surveillés et les types de document
-* **Export Configurations** — définissent les destinations d'export, les modèles XSLT et les méthodes d'export
+### 5. Définir le démarrage automatique
 
-> **Important :** les configurations d'export nécessitent un **type de document** (`doc_type`). Les configurations sans type de document seront rejetées.
-
-### 5. Démarrage automatique (facultatif)
-
-Pour démarrer WatchDog automatiquement au démarrage du système :
-
-1. Ouvrez **Services** (`Win + R` → `services.msc`)
-2. Recherchez **WatchDog** dans la liste
-3. Réglez **Startup Type** sur **Automatic (Delayed Start)**
+Si votre installation doit démarrer avec Windows, ouvrez `services.msc`, sélectionnez le service WatchDog et configurez le type de démarrage adapté. Vérifiez ensuite l’état, la communication récente et les journaux. La capture Hors ligne ne prouve pas une installation réussie.
 
 ## Référence des commandes
 
@@ -71,8 +50,10 @@ Pour démarrer WatchDog automatiquement au démarrage du système :
 | `WatchDog.exe --list-folders` | Liste les dossiers surveillés configurés |
 | `WatchDog.exe remove` | Désinstalle le service |
 
+
+
 ## Ressources complémentaires
 
-* [WatchDog Installation](watchdog-installation.md)
-* [WatchDog Configuration](watchdog-v2-configuration.md)
-* [WatchDog Admin FAQ](watchdog-admin-faq.md)
+* [Installation de WatchDog](watchdog-installation.md)
+* [Configuration de WatchDog](watchdog-v2-configuration.md)
+* [FAQ administrateur et dépannage](watchdog-admin-faq.md)

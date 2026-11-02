@@ -24,16 +24,16 @@ Expand a section to review its controls. Settings are saved when a switch, selec
 
 In the **Export History**, you will see a table listing all past exports along with key information about each request.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-121-dashboard-history-header-en-20261101.png" alt="English Export History headings for recipient email, status, request and completion times, format and filters; record rows are outside the crop"><figcaption><p>Current English Export History title and column headings. Existing records are outside this cropped view.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/core-6845-export-history-compact-en.png" alt="English Export History table with dense rows and compact one-line filter chips; recipient addresses and organization IDs are masked"><figcaption><p>Compact Export History rows with filter chips and +N counters for additional filters. Recipient addresses and organization IDs are masked in this dev capture.</p></figcaption></figure>
 
 The following details are included:
 
 * **Email**: The recipient email address recorded for the export.
-* **Status**: The current status of the export (Pending, Completed).
+* **Status**: The current status of the export (Pending, Completed, or Failed).
 * **Requested At**: The date and time when the export was initiated.
 * **Completed At**: The date and time when the export was completed.
 * **Format**: The file format used for the export (CSV, XLSX).
-* **Filters Used**: Any filters that were applied to the dashboard at the time of export.
+* **Filters Used**: Up to three active filters appear as chips on one line. If more filters were applied, a **+N** chip shows how many more there are. Point to the filter cell to see the full list in a tooltip. Filters with the value **None** are omitted.
 
 <mark style="color:red;">**Note**</mark>: To export tables the option Export Dashboard data in the [General](./#general) Section must be active
 

@@ -1,6 +1,10 @@
 # Cambia stato in
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2da4ec250da9-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v1-it-it.png" alt="Cambia stato in, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v2-it-it.png" alt="Cambia stato in, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-it-it.png" alt="Cambia stato in, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
 ## **Scopo:**
 

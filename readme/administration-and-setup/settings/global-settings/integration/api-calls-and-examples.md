@@ -7,7 +7,7 @@ Una solicitud de API permite que otro programa lea o actualice información en D
 1. Pide acceso a un administrador de la organización y [crea una clave API](api-key-management.md) para la integración. Guarda la clave en un almacén de secretos; no la incluyas en una captura de pantalla, un documento ni un archivo de código fuente.
 2. Abre la [referencia actual de la API de Sandbox](https://sandbox.api.docbits.com/docs). Enumera las operaciones disponibles, los valores obligatorios y las respuestas de ejemplo de ese entorno. Usa la referencia de tu propio entorno cuando dejes el Sandbox.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-381-api-key-context-es.png" alt="Sección Clave API de DocBits en español con el botón Crear clave API; ningún valor de clave es visible"><figcaption><p>Encuentra las claves API en Settings → Integration &amp; SSO. La imagen no contiene ningún valor de clave.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-20-api-key-context-es-20261031.png" alt="Interfaz española de DocBits: sección Claves API y botón Crear clave API; no se muestran valores de claves"><figcaption><p>Vista actual del área de claves API en el entorno Dev. No contiene valores de claves ni filas de datos.</p></figcaption></figure>
 
 ## Ejemplo: leer tipos de documento
 
@@ -17,7 +17,7 @@ Define tu clave API como variable de entorno local y envía la solicitud:
 
 ```sh
 curl --fail-with-body \
-  -H "X-API-KEY: ${DOCB...EY}" \
+  -H "X-API-KEY: ${DOCBITS_API_KEY}" \
   "https://sandbox.api.docbits.com/sandbox-api/document_type/get_document_types"
 ```
 

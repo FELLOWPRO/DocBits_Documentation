@@ -1,25 +1,46 @@
 # Enregistrer et appliquer les modifications
 
-## L'enregistrement et l'application des modifications effectuées dans le Layout Manager constituent une étape importante pour garantir que vos personnalisations de mise en page sont effectivement appliquées dans le flux de traitement des documents.
+Les modifications effectuées dans le Layout Builder ne prennent effet qu'une fois enregistrées. L'enregistrement associe la mise en page au type de document, afin que les nouveaux documents l'utilisent.
 
-### Voici les étapes pour enregistrer et appliquer les modifications :
+## Enregistrer vos modifications
 
-#### Enregistrement des modifications :
+Après avoir modifié la mise en page, sélectionnez **Enregistrer** en haut à droite de l'en-tête.
 
-* Après avoir effectué les personnalisations souhaitées dans le Layout Manager, recherchez le bouton "Enregistrer" pour sauvegarder les modifications.
-* Cliquez sur ce bouton pour enregistrer vos modifications dans le Layout Manager. Cela sauvegarde vos personnalisations de mise en page et garantit qu'elles sont disponibles pour les sessions d'édition futures.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-header-fr.png" alt="En-tête du Layout Builder avec les sélecteurs de mise en page à gauche, le bouton Enregistrer et le menu à trois points à droite"><figcaption>Le bouton **Enregistrer** se trouve en haut à droite du Layout Builder.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+Pendant que vous travaillez, l'en-tête indique l'état de vos modifications :
 
-#### Application des modifications au flux de traitement des documents :
+- Un bouton **Enregistrer** sans message à côté signifie que la mise en page n'a pas changé.
+- **Modifications non enregistrées** apparaît dès que vous modifiez la mise en page. Sélectionnez **Enregistrer** pour les conserver.
 
-* Une fois vos modifications enregistrées dans le Layout Manager, elles sont généralement appliquées automatiquement au flux de traitement des documents qui utilise ce type de document spécifique.
-* Les nouveaux documents basés sur ce modèle hériteront des paramètres de mise en page mis à jour lors de leur création. Cela signifie que les nouveaux documents incluront les nouveaux groupes, champs ou autres personnalisations de mise en page que vous avez effectués dans le Layout Manager.
-* Les documents existants déjà créés à l'aide de ce modèle peuvent être traités différemment selon votre logiciel et votre configuration. Dans certains cas, les modifications peuvent être appliquées automatiquement aux documents préexistants, tandis que dans d'autres cas, des ajustements manuels peuvent être nécessaires pour aligner les documents existants sur les paramètres de mise en page mis à jour.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-unsaved-changes-fr.png" alt="En-tête du Layout Builder affichant l'indication Modifications non enregistrées à côté du bouton Enregistrer"><figcaption>L'indication **Modifications non enregistrées** s'affiche tant que la mise en page n'a pas été enregistrée.</figcaption></figure>
 
-#### Test des modifications :
+Après un enregistrement réussi, l'indication est remplacée par l'heure du dernier enregistrement. Sélectionner **Enregistrer** à nouveau est sans risque : si rien n'a changé depuis le dernier enregistrement, rien n'est écrit.
 
-* Après avoir enregistré les modifications de mise en page et qu'elles ont été appliquées au flux de traitement des documents, il est conseillé de tester les modifications pour s'assurer qu'elles fonctionnent comme prévu.
-* Créez de nouveaux documents de test ou examinez les documents existants pour vous assurer que les paramètres de mise en page mis à jour sont appliqués correctement et que les données sont capturées et affichées comme prévu.
+Si vous quittez le Layout Builder avec des modifications non enregistrées, DocBits affiche la question **Faut-il rejeter les modifications ?**. Sélectionnez **Annuler** pour rester et enregistrer, ou **OK** pour partir sans enregistrer.
 
-En suivant ces étapes, vous pouvez enregistrer efficacement les modifications dans le Layout Manager et les appliquer au flux de traitement des documents. Cela garantit une intégration fluide de vos personnalisations de mise en page dans le processus de création et de traitement des documents.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-leave-prompt-fr.png" alt="Boîte de dialogue demandant de confirmer la sortie du Layout Builder avec des modifications non enregistrées"><figcaption>Confirmation affichée lorsque vous quittez avec des modifications non enregistrées.</figcaption></figure>
+
+## Autres actions de l'en-tête
+
+Le menu à trois points, à côté d'**Enregistrer**, regroupe les autres actions de mise en page :
+
+- **Générer automatiquement un modèle** – construit une mise en page à partir des champs du type de document.
+- **Modifier JSON** – modifie directement la définition de la mise en page au format JSON.
+- **Copier JSON** – copie la définition de la mise en page dans le presse-papiers.
+- **Paramètres de mise en page** – ouvre les paramètres généraux de la mise en page.
+
+**Générer automatiquement un modèle** remplace la mise en page existante : vérifiez donc au préalable quelle mise en page est ouverte. **Modifier JSON** s'adresse aux utilisateurs avancés et ne doit être utilisé que si vous connaissez le format du modèle.
+
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-more-menu-fr.png" alt="Menu à trois points du Layout Builder avec les entrées Générer automatiquement un modèle, Modifier JSON, Copier JSON et Paramètres de mise en page"><figcaption>Les actions disponibles dans le menu à trois points.</figcaption></figure>
+
+## Appliquer les modifications
+
+Une fois enregistrée, la mise en page est utilisée par le flux de traitement des documents pour ce type de document :
+
+- Les nouveaux documents traités avec ce type de document utilisent la mise en page mise à jour.
+- Les documents déjà traités conservent la mise en page avec laquelle ils ont été capturés.
+
+## Tester les modifications
+
+Après l'enregistrement, ouvrez un document de ce type de document et vérifiez que les champs et les groupes apparaissent comme prévu. S'il manque quelque chose, revenez dans le Layout Builder, ajustez la mise en page et enregistrez de nouveau.

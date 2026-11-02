@@ -16,9 +16,13 @@ Les modèles de flux de travail sont des solutions éprouvées et réutilisables
 
 ## Le Workflow Builder en un coup d'œil
 
-Chaque modèle de cette page est assemblé dans le **Générateur de flux de travail**. Vous y accédez depuis **Tableau de bord du workflow → Liste des workflows → Ajouter un workflow** (ou en ouvrant un workflow existant). Le tableau de bord vous donne l'historique d'exécution et les taux de réussite/échec pour tous vos flux de travail :
+Chaque modèle de cette page est assemblé dans le **Générateur de flux de travail**. Le tableau de bord permet de suivre le volume et les résultats des exécutions. Les trois vues partielles ci-dessous présentent les indicateurs de volume, les résultats d’exécution et le graphique mensuel.
 
-<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-c9339f546ced-fr.png" alt="Le Workflow Dashboard — totaux d&#x27;exécutions, taux de réussite/échec et activité récente pour chaque workflow. Les noms et références de documents confidentiels sont masqués."><figcaption><p>Le Workflow Dashboard — totaux d&#x27;exécutions, taux de réussite/échec et activité récente pour chaque workflow. Les noms et références de documents confidentiels sont masqués.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-kpi-volume-current-fr.png" alt="Indicateurs de volume : workflows exécutés aujourd’hui, workflows créés et exécutions totales sur la période sélectionnée."><figcaption><p>Indicateurs de volume : workflows exécutés aujourd’hui, workflows créés et exécutions totales sur la période sélectionnée.</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/workflow-kpi-outcomes-current-fr.png" alt="Résultats d’exécution : exécutions réussies, taux de réussite et taux d’échec."><figcaption><p>Résultats d’exécution : exécutions réussies, taux de réussite et taux d’échec.</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/workflow-chart-current-fr.png" alt="Graphique des exécutions : séries de réussite et d’échec sur les sept mois affichés en français."><figcaption><p>Graphique des exécutions : séries de réussite et d’échec sur les sept mois affichés en français.</p></figcaption></figure>
 
 L'onglet **Liste des flux de travail** répertorie chaque workflow avec son type, son ordre d'exécution et son déclencheur. Utilisez **Ajouter un workflow** pour en créer un nouveau, ou cliquez sur un workflow pour l'ouvrir dans le générateur :
 

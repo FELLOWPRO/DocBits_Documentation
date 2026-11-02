@@ -22,6 +22,12 @@ Utilisez l'aperçu des tâches pour trouver le travail assigné et suivre sa pro
 
 La vidéo utilise un utilisateur de test ordinaire et des documents synthétiques. Terminer une tâche est distinct de l'approbation ou de l'exportation de sa facture. Les actions disponibles dépendent des autorisations du compte.
 
+## Lorsque vous ne pouvez pas marquer une tâche comme terminée
+
+Votre organisation peut limiter les personnes autorisées à clôturer des tâches, c'est-à-dire à les passer à **Terminé** ou **Rejeté**. Dans ce cas, pour les tâches que vous n'avez pas le droit de clôturer, le bouton **Terminé**, les statuts **Terminé** et **Rejeté** ainsi que **Marquer comme terminé** ne sont pas proposés, et le tableau des tâches ne vous permet pas de déposer une telle tâche dans la colonne **Terminé** ou **Rejeté**. Les tâches qui vous sont assignées peuvent toujours être modifiées, enregistrées et déplacées entre **Ouvert** et **En cours**.
+
+Un administrateur de votre organisation définit qui peut clôturer et supprimer des tâches. Voir [Tâches et notifications](../../administration-and-setup/settings/document-processing/module/tasks-and-notifications.md).
+
 <figure><img src="../../.gitbook/assets/customer-overview-fr-f7d17b470172.png" alt="Aperçu des tâches avec des données synthétiques. Open reste en anglais dans la première colonne de la version illustrée."><figcaption><p>Aperçu des tâches avec des données synthétiques. Open reste en anglais dans la première colonne de la version illustrée.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/customer-find-fr-f7d17b470172.png" alt="Liste des tâches avec des données synthétiques. Les valeurs natives Open et high restent en anglais dans cette version."><figcaption><p>Liste des tâches avec des données synthétiques. Les valeurs natives Open et high restent en anglais dans cette version.</p></figcaption></figure>

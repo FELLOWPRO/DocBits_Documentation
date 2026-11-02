@@ -99,3 +99,34 @@ Pour les factures non associées automatiquement :
 3. **Examen des Correspondances** : Les utilisateurs peuvent examiner les correspondances, vérifier les détails et voir les indicateurs de statut.
 4. **Résolution des Discrepances** : Toute non-concordance ou divergence est mise en évidence pour que l'utilisateur puisse la réviser et la corriger manuellement.
 5. **Exportation de Données** : Les données correspondantes peuvent être exportées pour un traitement ultérieur ou pour la tenue de dossiers.
+
+
+## Tutoriel vidéo: Répartition d'une facture de frais
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/fr.mp4" %}
+Répartition d'une facture de frais
+{% endembed %}
+
+[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/cost-invoice-accounting-customer/v2/fr.html)
+
+Certains libellés natifs peuvent rester dans une autre langue. Les identifiants techniques des champs sont conservés.
+
+Dans l’interface filmée, « Réservations enregistrées » désigne le total de l’imputation, et « Montant non réglé » le reste à affecter : ces libellés ne confirment ni réservation ni paiement. La colonne « Voucher » contient le libellé comptable. Les noms des comptes et centres de coûts de démonstration sont des valeurs configurées. Cette répartition ne confirme aucune comptabilisation dans l’ERP.
+
+D'abord, je vérifie notre facture de formation originale. Le fournisseur, le numéro de facture et le montant doivent correspondre au document. Dans cet exemple, c'est mille euros sans taxe. La facture ne contient pas de bon de commande.
+
+J'ouvre l'imputation comptable et je travaille avec la répartition du montant total. Les comptes généraux et les centres de coûts disponibles ont été configurés au préalable par notre administrateur. Je choisis les valeurs adaptées à cette facture.
+
+Avec la fonction de répartition, je crée deux sous-lignes. DocBits commence ici par une distribution égale. Mais pour notre exemple, j'ai besoin de soixante et quarante pour cent. Le montant initial de la facture reste de mille euros.
+
+Pour les deux sous-lignes, je sélectionne le compte général préparé pour les services de bureau. La première ligne appartient au centre de coûts opérationnel, la deuxième à l'administration. Le centre de coûts est un champ obligatoire dans cet exemple. J'ajoute également un texte de pièce comptable clair.
+
+Dans la première ligne, je saisis soixante pour cent et je valide avec Entrée. J'attends que le montant affiche six cents euros. Ensuite, je valide quarante pour cent dans la deuxième ligne et j'attends les quatre cents euros. C'est ainsi que je contrôle chaque recalcul avant de continuer.
+
+Maintenant, je vérifie ensemble les deux montants, les comptes généraux et les centres de coûts. Six cents plus quatre cents font mille euros. Le total saisi doit aussi afficher mille euros, et le reste à répartir doit être zéro. Je clarifie toute différence d'affichage des totaux avant de sauvegarder.
+
+<figure><img src="../../.gitbook/assets/customer-totals-fr-accounting-email-v2.png" alt="Centres de coûts avec un total vérifié de 1 000 euros"><figcaption><p>Centres de coûts avec un total vérifié de 1 000 euros</p></figcaption></figure>
+
+J'enregistre la répartition et j'attends la confirmation. Ensuite, je recharge la facture. Les deux centres de coûts, les pourcentages et les montants sont toujours présents. Je vérifie aussi le total et le reste à répartir après le rechargement.
+
+<figure><img src="../../.gitbook/assets/customer-save-fr-accounting-email-v2.png" alt="Imputation enregistrée et vérifiée après réouverture"><figcaption><p>Imputation enregistrée et vérifiée après réouverture</p></figcaption></figure>

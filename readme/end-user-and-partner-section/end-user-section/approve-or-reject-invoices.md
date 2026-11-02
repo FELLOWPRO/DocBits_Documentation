@@ -1,5 +1,26 @@
 # Approuver ou rejeter une facture
 
+## Ce qui suit une décision d’approbation commerciale
+
+<figure><img src="../../.gitbook/assets/process-approval-fr-20261028.png" alt="Approuver ou rejeter la facture: Distinguer contrôle, décision et transmission ultérieure."><figcaption><p>Distinguer contrôle, décision et transmission ultérieure. Le diagramme est schématique ; les paramètres actifs de votre organisation déterminent le comportement réel.</p></figcaption></figure>
+
+La validation technique vérifie les données du document ; l'approbation enregistre la décision commerciale d'un réviseur autorisé. Même une facture techniquement valable peut nécessiter une ou plusieurs approbations.
+
+1. **Vérifiez la responsabilité :** Ouvrez la facture attribuée et vérifiez le niveau d'approbation que vous êtes autorisé à décider.
+2. **Examinez la facture :** Comparez les valeurs d'en-tête, les éléments de ligne et les taxes avec le document d'origine et les exigences de votre entreprise.
+3. **Documenter la décision :** Approuvez une facture correcte ou rejetez-la avec une raison spécifique. Attendez la réponse, puis vérifiez l'historique des approbations.
+4. **Identifiez l'étape suivante :** Si des étapes d'approbation supplémentaires sont configurées, la facture attend leurs décisions. Après le rejet, la clarification, la correction et toute nouvelle soumission, suivez votre processus configuré. Le processus d'exportation distinct détermine si les données ont atteint le système cible.
+
+### Trois affirmations qui ne veulent pas dire la même chose
+
+| déclaration | Ce qu'il ne prouve pas automatiquement |
+| --- | --- |
+| **Les données sont validées.** | Qu'un examinateur commercial agréé l'a approuvé. |
+| **Un évaluateur a approuvé.** | Que toutes les étapes d’approbation requises ont été franchies. |
+| **Les approbations ont été complétées.** | Que la facture a déjà été exportée ou comptabilisée dans ERP. |
+
+Utilisez [Documenter les tâches](tasks.md) pour traiter le travail assigné et [Statut du document](dashboard/document-status.md) pour classer l'état actuel.
+
 La vidéo présente l’approbation du point de vue d’une personne chargée de vérifier les factures.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/invoice-approval-customer/v1/fr.mp4" %}
@@ -10,7 +31,7 @@ Approuver ou rejeter une facture
 
 L'application réelle est affichée ; la formulation des options peut dépendre de la version déployée.
 
-Utilisez l’approbation pour enregistrer votre décision après avoir vérifié le contenu d’une facture déjà validée. Vous avez besoin d'accéder au document et de l'autorisation pour son étape d'approbation actuelle. La vidéo utilise un compte de vérification standard, des factures synthétiques préparées et une présentatrice fictive.
+Utilisez l’approbation pour enregistrer votre décision après avoir vérifié le contenu d’une facture déjà validée. Vous avez besoin d'accéder au document et de l'autorisation pour son étape d'approbation actuelle. La vidéo utilise un compte de vérification standard.
 
 ## Examiner et décider
 

@@ -103,6 +103,16 @@ Analysez n'importe quelle période, de **7 jours** jusqu'à une **année complè
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-fr.png" alt="Période personnalisée dans la barre des filtres d’analyse."><figcaption><p>Période personnalisée dans la barre des filtres d’analyse.</p></figcaption></figure>
 
+### Les filtres sont mémorisés
+
+Le tableau de bord enregistre vos filtres et la période dans ce navigateur, séparément pour chaque utilisateur et chaque organisation. Lorsque vous rouvrez le tableau de bord, votre dernière sélection est restaurée, y compris une période personnalisée saisie dans le sélecteur de dates.
+
+Sélectionnez **Réinitialiser les paramètres par défaut** en haut à droite du tableau de bord pour effacer la sélection enregistrée : les filtres, la période et les dates personnalisées reviennent à leurs valeurs par défaut.
+
+<mark style="color:red;">**Remarque**</mark> : la sélection est stockée dans le navigateur, pas sur le serveur. Elle n'est pas synchronisée avec d'autres appareils ni d'autres navigateurs.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-fr.png" alt="Tableau de bord Analytics en vue Statut, avec la ligne de filtres et le bouton Réinitialiser les paramètres par défaut en haut à droite"><figcaption><p>Les filtres sont restaurés lorsque vous revenez au tableau de bord. Réinitialiser les paramètres par défaut les efface.</p></figcaption></figure>
+
 ## Cartes des étapes du flux
 
 Chaque carte représente une étape de flux selon le **Type de flux** sélectionné. Les cartes s'adaptent à votre sélection — affichant les étapes du cycle de vie pour *Statut*, les modules de traitement pour *Traitement*, ou les points de contact utilisateur pour *Interaction de l'utilisateur*.

@@ -5,7 +5,7 @@ description: >-
   DocBits. Gestão eficaz de fornecedores e documentos num só lugar.
 ---
 
-# Material Ordering and Processing Workflow
+# Fluxo de encomenda e processamento de materiais
 
 Este documento descreve o fluxo de trabalho para encomendar materiais a fornecedores, rececionar mercadorias e processar faturas, com integração entre os fornecedores, o sistema INFOR ERP e o DocBits para gestão de documentos.
 
@@ -14,16 +14,16 @@ Este documento descreve o fluxo de trabalho para encomendar materiais a forneced
 1. **Ordering Materials**
    * Iniciar a encomenda junto do fornecedor.
    * Enviar a encomenda ao fornecedor através do INFOR.
-2. **Receiving Order Confirmation**
+2. **Receção da confirmação do pedido**
    * O fornecedor confirma a receção da encomenda.
    * Criação e envio da confirmação da encomenda.
-3. **Goods Receipt and Inspection**
+3. **Receção e inspeção das mercadorias**
    * Rececionar as mercadorias do fornecedor.
    * Registar a receção das mercadorias no INFOR e confrontar com a guia de entrega.
-4. **Invoice Processing**
+4. **Processamento da fatura**
    * Rececionar a fatura e enviá-la para o DocBits para processamento.
    * Verificar e confirmar os detalhes da fatura com a encomenda e a receção das mercadorias.
-5. **Final Steps**
+5. **Passos finais**
    * Arquivar a encomenda e os documentos relacionados no DocBits.
    * Atualizar o INFOR com os detalhes da transação para a contabilidade financeira.
 
@@ -46,4 +46,4 @@ Este documento descreve o fluxo de trabalho para encomendar materiais a forneced
 * Garanta que todos os documentos são verificados e arquivados para efeitos de arquivo.
 * As discrepâncias nos detalhes da encomenda ou da fatura devem ser resolvidas prontamente para evitar atrasos.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-material-pt.png" alt="Exemplo de fluxo de encomendas de materiais, confirmações, receções de mercadorias e faturas entre fornecedor, compras, IDM, DocBits e contabilidade. Adapte as verificações e as integrações à sua configuração."><figcaption><p>Exemplo de fluxo de encomendas de materiais, confirmações, receções de mercadorias e faturas entre fornecedor, compras, IDM, DocBits e contabilidade. Adapte as verificações e as integrações à sua configuração.</p></figcaption></figure>

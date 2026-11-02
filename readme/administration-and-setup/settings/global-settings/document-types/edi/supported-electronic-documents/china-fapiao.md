@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos China Fapiao (FAPIAO, E-FAPIAO, F
 
 # 🇨🇳 China Fapiao
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [China](countries/china.md). O adaptador documentado utiliza o espaço de nomes XML urn:china:tax:fapiao:1.0. Não pressuponha que todos os ficheiros OFD ou PDF nativos, ou todas as exportações de plataformas fiscais, seguem esse contrato de dados.
+{% endhint %}
+
 | Propriedade | Valor |
 |----------|-------|
 | **País / Região** | China |
@@ -12,7 +18,7 @@ description: Suporte a documentos eletrônicos China Fapiao (FAPIAO, E-FAPIAO, F
 | **Padrão** | Fapiao (发票), State Taxation Administration |
 | **Localidade** | `zh_CN` |
 
-Fapiao (发票) é o padrão chino de fatura fiscal emitido sob a autoridade da Administração Estatal de Tributação (STA / 国家税务总局). Todos os documentos Fapiao compartilham o namespace `urn:china:tax:fapiao:1.0`. O DocBits detecta automaticamente o tipo de Fapiao por meio do elemento `fapiao_type` e direciona para as regras de extração adequadas:
+O catálogo inclui Fapiao, E-Fapiao, General VAT Invoice e Special VAT Invoice. O adaptador documentado utiliza o espaço de nomes XML urn:china:tax:fapiao:1.0. Não pressuponha que todos os ficheiros OFD ou PDF nativos, ou todas as exportações de plataformas fiscais, seguem esse contrato de dados.
 
 | Valor de fapiao_type | Tipo de documento |
 |-------------------|--------------|
@@ -30,7 +36,7 @@ Fapiao (发票) é o padrão chino de fatura fiscal emitido sob a autoridade da 
 
 ## Pré-visualização padrão
 
-<figure><img src="china-fapiao-preview.png" alt="Pré-visualização da Fatura IVA Geral China Fapiao no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma Fatura IVA Geral China Fapiao (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="Pré-visualização da Fatura IVA Geral China Fapiao no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma Fatura IVA Geral China Fapiao (普通发票)</p></figcaption></figure>
 
 ## Mapeamento de campos
 
@@ -83,5 +89,5 @@ O elemento raiz é `<fapiao>` com o namespace `urn:china:tax:fapiao:1.0`. A clas
 
 ## Relacionado
 
-- [Padrões de e-fatura atualmente suportados](../../currently-supported-e-invoice-standards/)
+- [Padrões de e-fatura atualmente suportados](../currently-supported-e-invoice-standards/README.md)
 - [Documentos eletrônicos suportados](./)

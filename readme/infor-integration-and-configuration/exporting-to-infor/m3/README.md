@@ -1,13 +1,13 @@
 # M3
 
-## Passo 1: Creare un Connection Point
+## Passo 1: Creare un Punto di Connessione
 
 1. Navigare in **OS > ION > Connect > Connection Points**
 2. Fare clic su **Add** e selezionare **IMS via API Gateway** come tipo di connessione.
 3. Configurare le seguenti impostazioni:
    * **Name**: Impostare su `DocBits_Export`.
    * **Description**: Impostare su `DocBits_Export`.
-   * **Uncheck**: _Application has IMS End Point_.
+   * **Deseleziona**: _L'applicazione ha IMS Punto finale_.
    * **ION API Client ID**:
      * Aprire il file ION API.
      * Cercare `"ci"` all'interno del file.
@@ -43,7 +43,7 @@
    * **Name**: `DocBits_Export_to_M3`
 4. Aggiungere nodi al flusso:
 
-#### Application Node
+#### Nodo applicazione
 
 1. Aggiungere un **Application Node** al flusso.
    * **Name**: `DocBits` o `DocBits-Export`.
@@ -56,7 +56,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
-#### Mapping Node
+#### Nodo di mappatura
 
 1. Aggiungere un **Mapping Node** a destra dell'Application Node.
    * **Name**: `Capt2process`.
@@ -64,7 +64,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
-#### Application Node
+#### Nodo applicazione
 
 1. Aggiungere un **Application Node** a destra del Mapping Node precedente.
    * **Name**: `M3`.
@@ -77,7 +77,7 @@
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
-#### API Node
+#### Nodo API
 
 1. Aggiungere un **API Node** a destra dell'Application Node.
    * **Name**: `DocBits-Error`.
@@ -91,11 +91,11 @@
 * Una volta aggiunti e configurati tutti i nodi, fare clic su **Save**.
 * Attivare il flusso per completare la configurazione.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+<figure><img src="../../../.gitbook/assets/m3-historical-ion-activation-example.png" alt="Esempio storico dell’attivazione di un flusso in Infor ION, interfaccia esterna in inglese. Non è una schermata italiana di DocBits né la prova di un’esportazione M3 riuscita durante questa verifica."><figcaption><p>Esempio storico dell’attivazione di un flusso in Infor ION, interfaccia esterna in inglese. Non è una schermata italiana di DocBits né la prova di un’esportazione M3 riuscita durante questa verifica.</p></figcaption></figure>
 
 ## Passo 4: Configurare l'Export in DocBits
 
-### On-Premise:
+### In locale:
 
 1. Aprire **DocBits**.
 2.  Navigare in **Impostazioni > Elaborazione documenti > Esporta**.

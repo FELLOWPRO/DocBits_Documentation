@@ -1,38 +1,36 @@
-# Flusso Documento
+# Flusso del documento
 
-## **Panoramica:**
+Il flusso del documento mostra ordine, stato e durata delle fasi di elaborazione. L’esempio utilizza una fattura fittizia.
 
-Questa pagina fornisce una panoramica grafica dei vari passaggi che un documento ha attraversato fino a questo punto.
+## Aprire il flusso
 
-## **Come Accedere:**
+Cercare il documento nella dashboard. I valori dei documenti sono nascosti.
 
-### **Opzione 1:**
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-it.png" alt="Ricerca del documento fittizio nella dashboard; i valori sono nascosti."><figcaption><p>Ricerca del documento fittizio nella dashboard; i valori sono nascosti.</p></figcaption></figure>
 
-1.  Naviga nella colonna delle azioni sul Dashboard e clicca sui tre puntini accanto al documento per il quale desideri visualizzare il flusso documento.
+Aprire la convalida dei campi e il menu delle opzioni nella barra destra per consultare il flusso del documento.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1_it.png" alt=""><figcaption></figcaption></figure>
-2.  Seleziona **Flusso Documento**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-it.png" alt="Menu delle opzioni di convalida per aprire il flusso del documento."><figcaption><p>Menu delle opzioni di convalida per aprire il flusso del documento.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2_it.png" alt="" width="230"><figcaption></figcaption></figure>
+## Leggere le fasi
 
-### **Opzione 2:**
+Ogni scheda rappresenta una fase, come importazione, OCR, classificazione o estrazione dei campi. Seguire la numerazione.
 
-1. Apri il documento per il quale desideri visualizzare il flusso documento.
-2.  Clicca sui tre puntini sul lato destro della Validazione Campo.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-it.png" alt="Fasi di elaborazione di una fattura fittizia; i codici tecnici restano invariati."><figcaption><p>Fasi di elaborazione di una fattura fittizia; i codici tecnici restano invariati.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3_it.png" alt=""><figcaption></figcaption></figure>
-3.  Seleziona **Flusso Documento**.
+Gli identificatori tecnici come DOCUMENT_IMPORTED e COMPLETE restano invariati. COMPLETE indica una fase completata.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4_it.png" alt="" width="311"><figcaption></figcaption></figure>
+## Consultare i dettagli
 
-## **Descrizione:**
+Selezionare una scheda per consultarne i dettagli e i registri disponibili.
 
-Sul lato sinistro dello schermo, vedrai i singoli passaggi del flusso documento, elencati da sinistra a destra.
+| Dettaglio | Significato |
+| --- | --- |
+| Modulo | Componente di elaborazione della fase |
+| Stato | Stato attuale della fase |
+| Durata | Tempo di elaborazione registrato |
+| Registri | Messaggi tecnici disponibili |
 
-<figure><img src="../../../.gitbook/assets/DocumentFlow_5_it.png" alt=""><figcaption></figcaption></figure>
+Esaminare i messaggi di una fase in attesa o non riuscita prima di riavviare l’elaborazione. Alcuni titoli diagnostici possono restare in inglese nel prodotto.
 
-* I passaggi che avviano il processo di flusso documento (come importazione o riavvio) appariranno in verde.
-* Per navigare tra i passaggi, basta trascinarli e rilasciarli sullo schermo.
-*   Quando clicchi su un passaggio, il nome del modulo e informazioni su se il passaggio è stato completato con successo o meno appariranno sul lato destro dello schermo.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_6_it.png" alt=""><figcaption></figcaption></figure>
+I dettagli di ogni fase presentano componente di elaborazione, stato, durata e registri tecnici disponibili.

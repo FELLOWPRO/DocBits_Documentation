@@ -37,7 +37,7 @@ Sono inclusi i seguenti dettagli:
 * **Formato**: Il formato del file utilizzato per l'esportazione (CSV, XLSX).
 * **Filtri Usati**: Eventuali filtri applicati alla dashboard al momento dell'esportazione.
 
-<mark style="color:red;">**Nota**</mark>: Per esportare le tabelle, l'opzione Esporta Dati Dashboard nella sezione [Generale](./#general) deve essere attiva.
+<mark style="color:red;">**Nota**</mark>: Per esportare le tabelle, l'opzione Esporta Dati Dashboard nella sezione [Generale](./#generale) deve essere attiva.
 
 ## **Azione**
 
@@ -48,6 +48,8 @@ Sono inclusi i seguenti dettagli:
   * **Solo per Admin**: Solo gli utenti con privilegi di Admin possono riavviare i documenti, indipendentemente dalle autorizzazioni concesse agli utenti non admin.
   * **Solo Admin e Assegnatario**: Solo gli utenti con privilegi di Admin e l'utente assegnato possono riavviare il documento.
   * **Tutti gli Utenti**: Tutti gli utenti a cui sono state concesse le necessarie [autorizzazioni](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) possono riavviare i documenti.
+
+* **Accesso ai dati in sospeso (giorni)**: stabilisce per quanti giorni la persona a cui è stata chiesta un'informazione nel flusso di attività può aprire il documento in sola lettura; dopo, il link non funziona più. Il valore predefinito è 14 giorni e l'accesso termina anche appena il documento prosegue. Vedi [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
 
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
 

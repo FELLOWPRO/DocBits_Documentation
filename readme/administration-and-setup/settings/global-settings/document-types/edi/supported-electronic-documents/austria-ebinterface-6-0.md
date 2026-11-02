@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici AUSTRIA EBINTERFACE 6.0 in DocBi
 
 # 🇦🇹 AUSTRIA EBINTERFACE 6.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Austria](countries/austria.md). Abbinate lo spazio dei nomi XML alla versione configurata. Uno spazio dei nomi diverso può richiedere un’altra mappatura.
+{% endhint %}
+
 | Proprietà | Valore |
 |-----------|--------|
 | **Paese / Regione** | Austria |
@@ -24,7 +30,7 @@ ebInterface 6.0 ha introdotto l'allineamento con lo standard europeo EN 16931 ma
 
 ## Anteprima predefinita
 
-<figure><img src="austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface 6.0 in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface 6.0 in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
 
 ## Mappatura dei campi
 

@@ -15,7 +15,7 @@ Il Motore di Workflow DocBits implementa un solido controllo delle versioni per 
 1. **Version Control**: ogni card può avere più versioni, ognuna rappresentante un diverso insieme di condizioni o azioni. Questo ti consente di sperimentare o modificare le regole senza influire sul workflow attualmente attivo.
 2. **Seamless Upgrades**: quando devi aggiornare una regola o una condizione a causa di modifiche ai requisiti di elaborazione dei documenti, puoi creare una nuova versione della card. Questo approccio garantisce che eventuali modifiche siano intenzionali e testate prima di sostituire la versione corrente. Riduce al minimo gli errori e le potenziali interruzioni nell'elaborazione dei documenti.
 3. **Maintaining Consistency**: mantenere invariata la versione originale della card finché non decidi di aggiornarla garantisce che i processi in corso non vengano influenzati. Puoi eseguire test e convalide sulla nuova versione senza incidere su dati o workflow in produzione.
-4. **Flexibility and Testing**: più versioni consentono di testare scenari diversi in un ambiente controllato. Puoi vedere gli effetti di nuove regole o modifiche sul tuo workflow di elaborazione dei documenti senza apportare modifiche permanenti. Una volta soddisfatto dei risultati, puoi scegliere di applicare la nuova versione.
+4. **Flessibilità e test**: più versioni consentono di testare scenari diversi in un ambiente controllato. Puoi vedere gli effetti di nuove regole o modifiche sul tuo workflow di elaborazione dei documenti senza apportare modifiche permanenti. Una volta soddisfatto dei risultati, puoi scegliere di applicare la nuova versione.
 
 ---
 
@@ -46,7 +46,7 @@ Il Motore di Workflow DocBits implementa un solido controllo delle versioni per 
 #### 1. CALL_API
 **Versioni:** v1, v2 (Corrente: v2)
 
-📖 **Guida:** [Guida alla Chiamata di API Esterne](../then/action/call-api-guide.md)
+📖 **Guida:** [Guida alla Chiamata di API Esterne](then/action/call-api-guide.md)
 
 | Versione | Traduzione | Stato | Modifiche Principali |
 |---------|-------------|--------|-------------|
@@ -106,7 +106,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versioni:** v2, v3 (Deprecata), v4 (Corrente)
 
-📖 **Guida:** [Guida all'Assegnazione delle Attività](../then/task/task-assignment-guide.md)
+📖 **Guida:** [Guida all'Assegnazione delle Attività](then/task/task-assignment-guide.md)
 
 | Versione | Modifiche | Stato | Parametro Type |
 |---------|---------|--------|-----------------|
@@ -167,7 +167,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (La Più Evoluta - 5 Versioni)
 **Versioni:** v2, v3, v4, v5 (Corrente)
 
-📖 **Guida:** [Guida Completa al PO Matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Guida:** [Guida Completa al PO Matching](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Versione | Modifiche | Stato | Tolleranza | Confronto |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +351,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (La Card Attività Più Evoluta - 4 Versioni)
 **Versioni:** v1 (Deprecata), v2 (Deprecata), v3 (Deprecata), v4 (Corrente)
 
-📖 **Guida:** [Guida all'Assegnazione delle Attività](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Guida:** [Guida all'Assegnazione delle Attività](then/task/task-assignment-guide.md)
 
 | Versione | Traduzione | Decision Tree | Tipo Elemento di Lavoro | Stato |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,10 +650,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentazione Correlata
 
-- 📖 [Riferimento al Versioning delle Card](../changelog/card-versioning.md) - Informazioni dettagliate sulle versioni
-- 📚 [Guide ai Workflow](../) - Utilizzo delle card passo dopo passo
-- 🔄 [Database delle Versioni delle Card](../docs/card_version.md) - Cronologia completa delle versioni
-- 📋 [Log del Workflow](../workflow-logs/) - Esecuzione e debug
+- 📖 [Riferimento al Versioning delle Card](cards-overview/card-versions-guide.md) - Informazioni dettagliate sulle versioni
+- 📚 [Guide ai Workflow](README.md) - Utilizzo delle card passo dopo passo
+- 🔄 [Database delle Versioni delle Card](cards-overview/card-versions-guide.md) - Cronologia completa delle versioni
+- 📋 [Log del Workflow](workflow-logs.md) - Esecuzione e debug
 
 ---
 

@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques colombiens DIAN dans D
 
 # 🇨🇴 Colombia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Colombie](countries/colombia.md). L’entrée de classification des avoirs ne possède pas d’ensemble d’extraction dédié dans l’état examiné. Confirmez la correspondance effectivement utilisée au lieu de déduire la prise en charge de l’entrée de facture.
+{% endhint %}
+
 | Propriété | Valeur |
 |-----------|--------|
 | **Pays / Région** | Colombia |
@@ -34,7 +40,7 @@ L'identifiant DIAN (**NIT** — Número de Identificación Tributaria) utilise `
 
 ## Aperçu par défaut
 
-<figure><img src="colombia-dian-preview.png" alt="Aperçu de la Factura Electrónica Colombia DIAN dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/colombia-dian-preview.png" alt="Aperçu de la Factura Electrónica Colombia DIAN dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
 
 ## Mappage des champs
 
@@ -79,5 +85,5 @@ L'élément racine est `<Invoice>` (UBL 2.1) pour les factures et `<CreditNote>`
 
 ## Liens connexes
 
-- [Standards de facturation électronique pris en charge](../../currently-supported-e-invoice-standards/)
+- [Standards de facturation électronique pris en charge](../currently-supported-e-invoice-standards/README.md)
 - [Documents électroniques pris en charge](./)

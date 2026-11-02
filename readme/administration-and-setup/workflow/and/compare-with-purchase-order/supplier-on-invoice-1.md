@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Supplier on Invoice
+# Fournisseur sur facture
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
 
 ## **Objectif**
 
@@ -12,10 +12,10 @@ Cette carte DocBits permet une comparaison détaillée, en comparant le fourniss
 
 ## **Fonctionnalité :**
 
-* **Supplier on Invoice Supplier on Purchase Order :** cette carte vérifie si le fournisseur de la facture est le même que celui de la confirmation de commande ou non.
+* **Fournisseur sur facture Fournisseur sur bon de commande :** cette carte vérifie si le fournisseur de la facture est le même que celui de la confirmation de commande ou non.
 * **Valeur de l'opérateur :** les utilisateurs peuvent définir des conditions spécifiques telles que : le fournisseur qui a émis la facture est-il le même que celui du BC ou non. Les opérateurs disponibles incluent :
   * **Is (=) :** vérifie si le fournisseur de la facture correspond au fournisseur de la confirmation de commande.
-  * **Is not (≠) :** s'assure que le fournisseur qui a émis la facture est le même que celui de la confirmation de commande.
+  * **N'est-ce pas (≠) :** s'assure que le fournisseur qui a émis la facture est le même que celui de la confirmation de commande.
 
 ## **Utilisation :**
 

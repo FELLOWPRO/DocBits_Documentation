@@ -1,37 +1,33 @@
-# Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)
+# Cas 15 : Frais de ligne par unité hors tolérance (rejetés)
 
-## Scenario:
+Le scénario suivant illustre un mappage configuré ; il ne constitue pas un modèle par défaut dont le déploiement aurait été vérifié. La sortie réelle, les montants, les signes et les types de documents dépendent des règles et expressions `conflict_resolution` actives, du mappage d’export et des décisions d’approbation. Toute note de débit ou de crédit décrite ci-dessous est soumise à cette configuration ; cet exemple ne garantit ni son émission automatique ni la conformité juridique.
 
-The header charge per unit is outside tolerance and has not been approved.
+## Scénario
 
-## Action:
+Les frais par unité d’une ligne dépassent la tolérance et l’écart n’a pas été approuvé. Ce cas concerne des frais de ligne, pas des frais d’en-tête.
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+## Action illustrative
 
-## Example:
+Un mappage configuré pour retenir les frais du PO après rejet remplacerait les frais unitaires facturés par ceux du PO. Tout ajustement distinct ou toute note de débit ou de crédit dépend du mappage d’export et des décisions d’approbation.
 
-* **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
-* **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
-  * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
-* **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+## Exemple
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+* **Commande d’achat (PO) :**
+  * Frais de ligne par unité : $4.00
+  * Quantité : 1,500 unités
+  * Total des frais de ligne : $6,000.00
+* **Facture reçue :**
+  * Frais de ligne par unité : $5.00 — soit 25% au-dessus du PO, hors de la tolérance configurée de ±5% ; rejetés.
+  * Quantité : 1,500 unités
+  * Total des frais de ligne : $7,500.00
+* **Tolérance configurée :** Frais par unité ±5%.
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+Dans ce mappage illustratif :
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+1. Rejeter les frais facturés de $5.00 par unité, car l’écart de 25% dépasse ±5% et n’a pas été approuvé.
+2. Retenir les frais du PO de $4.00 par unité.
+3. Recalculer le total des frais de ligne : **1,500 unités × $4.00 = $6,000.00**.
+4. Calculer l’excédent facturé : **$7,500.00 - $6,000.00 = $1,500.00**.
+5. Appliquer le traitement configuré de cet écart. Une note de crédit de $1,500.00 constitue un résultat possible du mappage, pas une action garantie du système. Son montant, son signe, son type de document et son émission dépendent des règles actives, du mappage d’export et des approbations.
+
+Validez le mappage des frais de ligne et les documents comptables produits avant d’utiliser ce scénario en production.

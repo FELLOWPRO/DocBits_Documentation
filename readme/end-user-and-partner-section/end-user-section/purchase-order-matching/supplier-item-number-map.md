@@ -6,7 +6,7 @@
 
 Cette fonctionnalité vous aide à gérer et à réconcilier les numéros d'article entre votre système et vos fournisseurs. Souvent, les numéros d'article que vous utilisez en interne peuvent ne pas correspondre aux numéros d'article utilisés par vos fournisseurs. Docbits facilite la gestion de ces divergences en créant une correspondance entre vos numéros d'article et ceux de vos fournisseurs.
 
-<figure><img src="../../../.gitbook/assets/supplier-item-number-map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-supplier-item-number-map-fr.png" alt="Association des références article fournisseur."><figcaption><p>Association des références article fournisseur.</p></figcaption></figure>
 
 ## **Comment ça fonctionne**
 
@@ -25,7 +25,7 @@ Cette fonctionnalité vous aide à gérer et à réconcilier les numéros d'arti
 * **Action :** Options pour gérer les correspondances, telles que la suppression des correspondances incorrectes.
 
 {% hint style="info" %}
-Voir ici la [Section Admin](broken-reference) également
+Voir ici la [Section Admin](../../../administration-and-setup/settings/README.md) également
 {% endhint %}
 
 ## **Avantages**

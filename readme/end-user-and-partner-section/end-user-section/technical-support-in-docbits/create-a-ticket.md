@@ -1,6 +1,11 @@
 # Créer un ticket
 
-Il s'agit d'un outil disponible pour vous, sur l'écran de validation, en cas de problème lors de la validation de votre document dans DocBits. Pour savoir comment vérifier un document, consultez l'[écran de validation](../validation-screen/README.md).
+{% embed url="https://youtu.be/fQUIrp-qz9c" %}
+DocBits Tutoriel sur les tickets d'assistance : signaler des bogues, joindre des fichiers et obtenir de l'aide plus rapidement
+{% endembed %}
+
+
+Il s'agit d'un outil disponible pour vous, sur l'écran de validation, en cas de problème lors de la validation de votre document dans DocBits.
 
 Cette fonctionnalité se trouve dans le menu au-dessus de la zone d'aperçu du document, comme ci-dessous
 

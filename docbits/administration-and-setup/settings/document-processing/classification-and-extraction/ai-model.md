@@ -7,7 +7,7 @@ Use the current model selector and template-preference table to review the organ
 
 ## How to Access
 
-1.  Navigate to **Settings** → **Document Processing** → **Classification and Extraction**
+1.  Navigate to **Settings** → **Document Types** → **Classification and Extraction** → **General**
 
     <figure><img src="../../../../.gitbook/assets/site-complete-global-ai-model-options-en.png" alt="Current English Extraction settings and AI Model menu: Full, Fast, Nexus, Nexus Flash, Auto and Auto Nexus. Private table values are hidden; no model selected or preferences deleted."><figcaption><p>Current English Extraction settings and AI Model menu: Full, Fast, Nexus, Nexus Flash, Auto and Auto Nexus. Private table values are hidden; no model selected or preferences deleted.</p></figcaption></figure>
 2.  Expand **Extraction** and locate the **AI Model** setting.
@@ -17,6 +17,8 @@ Use the current model selector and template-preference table to review the organ
 ## AI Model Options
 
 The current menu offers **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** and **Auto Nexus**. These are product tier names. Available options, underlying models and token charges can change; check the information shown in your current environment and your subscription terms rather than relying on a historical provider-model name or fixed price.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-3-six-model-options-en-20261031.png" alt="Current English AI model dropdown listing Full, Fast, Nexus, Nexus Flash, Auto and Auto Nexus"><figcaption><p>Detail of the six extraction tiers in the current English Dev menu. Opening and closing the menu left the existing selection unchanged.</p></figcaption></figure>
 
 | Option | What to verify with representative documents |
 | --- | --- |

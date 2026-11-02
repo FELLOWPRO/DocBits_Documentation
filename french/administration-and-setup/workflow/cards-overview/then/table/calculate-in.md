@@ -1,6 +1,6 @@
 # Calculate in
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-table-02-fr-20261023.png" alt="Tableau Calculer en Nom de la table : Nom de la colonne Opérateur mathématique Nom de la colonne , si colonne column name dependency correspond à une expression rationnelle de Python Motif Regex et ajouter le résultat dans Colonne de résultats" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

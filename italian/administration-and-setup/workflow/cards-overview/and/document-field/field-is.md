@@ -1,6 +1,6 @@
 # Field is
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-00-it-20261023.png" alt="Campo del documento Field Nome del campo is Stato del campo" width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

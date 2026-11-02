@@ -7,7 +7,7 @@ Uma chamada de API permite que outro programa leia ou atualize informações no 
 1. Peça acesso a um administrador da organização e [crie uma chave de API](api-key-management.md) para a integração. Guarde a chave num cofre de segredos; não a coloque numa captura de tela, documento ou arquivo de código-fonte.
 2. Abra a [referência atual da API Sandbox](https://sandbox.api.docbits.com/docs). Ela lista as operações disponíveis, os valores obrigatórios e as respostas de exemplo desse ambiente. Use a referência do seu próprio ambiente quando sair do Sandbox.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-386-api-key-context-pt.png" alt="Seção Chave de API do DocBits em português com o botão Criar chave de API; nenhum valor de chave é visível"><figcaption><p>Você encontra as chaves de API em Configurações → Integração e SSO. A imagem não contém nenhum valor de chave.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-20-api-key-context-pt-20261031.png" alt="Interface portuguesa do DocBits: secção Chaves de API e botão Criar chave de API; nenhum valor de chave visível"><figcaption><p>Vista atual da área de chaves de API no ambiente Dev. Não contém valores de chaves nem linhas de dados.</p></figcaption></figure>
 
 ## Exemplo: ler tipos de documento
 
@@ -17,7 +17,7 @@ Defina sua chave de API como uma variável de ambiente local e envie a chamada:
 
 ```sh
 curl --fail-with-body \
-  -H "X-API-KEY: ${DOCB...EY}" \
+  -H "X-API-KEY: ${DOCBITS_API_KEY}" \
   "https://sandbox.api.docbits.com/sandbox-api/document_type/get_document_types"
 ```
 

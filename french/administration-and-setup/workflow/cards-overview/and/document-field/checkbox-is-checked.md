@@ -1,6 +1,6 @@
 # Checkbox is checked
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-08-fr-20261023.png" alt="Champ du document La case à cocher Nom du champ est cochée: Booléen" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

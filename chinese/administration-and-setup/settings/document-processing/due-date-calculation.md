@@ -1,8 +1,10 @@
 # 到期日计算
 
-<figure><img src="../../../.gitbook/assets/site-complete-due-date-calculation-zh.png" alt="中文到期日计算设置；“周末大会”在此指周末日期调整规则，“AP作业代码”指应付账款分配代码。Custom Field 2 是已配置的字段名；本图未更改设置。"><figcaption><p>中文到期日计算设置；“周末大会”在此指周末日期调整规则，“AP作业代码”指应付账款分配代码。Custom Field 2 是已配置的字段名；本图未更改设置。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-zh.png" alt="中文到期日计算设置；“周末大会”在此指周末日期调整规则，“AP作业代码”指应付账款分配代码。Custom Field 2 是已配置的字段名；本图未更改设置。"><figcaption><p>中文到期日计算设置；“周末大会”在此指周末日期调整规则，“AP作业代码”指应付账款分配代码。Custom Field 2 是已配置的字段名；本图未更改设置。</p></figcaption></figure>
 
 **到期日计算**页面（**文档处理 → 到期日计算**）用于控制 DocBits 如何根据发票中的付款条件代码计算发票到期日、折扣（Skonto）到期日和付款条件。
+
+**Invoice Due Date Calculation** 卡片包含常规设置。使用其标题栏中的**保存**按钮保存更改。下方是折扣条件和付款条件映射表，以及支持的格式说明。
 
 ## 显示计算字段
 
@@ -12,9 +14,7 @@
 
 ### 周末处理方式
 
-<!-- Obsolete illustration retired: Obsolete dropdown illustration or wrong-topic agent-settings image retired; the complete weekend rules and supported payment/discount code tables remain as text. -->
-
-选择到期日落在星期六或星期日时的调整方式。此设置同时适用于**发票到期日**和**折扣（Skonto）到期日**。
+选择**周末处理方式**可控制到期日落在星期六或星期日时的调整方式。此设置同时适用于**发票到期日**和**折扣（Skonto）到期日**。
 
 | 规则 | 效果 |
 | --- | --- |
@@ -30,13 +30,19 @@
 
 ## 折扣条件覆盖
 
-<!-- Obsolete illustration retired: Obsolete dropdown illustration or wrong-topic agent-settings image retired; the complete weekend rules and supported payment/discount code tables remain as text. -->
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-zh.png" alt="折扣条件覆盖"><figcaption><p>折扣条件覆盖</p></figcaption></figure>
 
-使用**折扣条件覆盖**将特定前缀映射到折扣百分比和天数。点击**+ 添加映射**，添加包含**前缀**、**百分比**和**天数**的行。
+使用**折扣条件覆盖**将特定前缀映射到折扣百分比和天数。点击**添加映射**，添加包含**前缀**、**百分比**和**天数**的行。要更改或删除已有映射，使用行末的菜单（⋮）。
+
+## 付款条件覆盖
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-zh.png" alt="付款条件覆盖"><figcaption><p>付款条件覆盖</p></figcaption></figure>
+
+使用**付款条件覆盖**将付款条件代码映射到期限类型、天数和说明。点击**添加映射**添加行，使用行末菜单（⋮）更改或删除映射。
 
 ## 支持的格式
 
-<!-- Obsolete illustration retired: Obsolete dropdown illustration or wrong-topic agent-settings image retired; the complete weekend rules and supported payment/discount code tables remain as text. -->
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-zh.png" alt="支持的格式"><figcaption><p>支持的格式</p></figcaption></figure>
 
 DocBits 可识别以下付款条件代码和折扣条件代码。
 

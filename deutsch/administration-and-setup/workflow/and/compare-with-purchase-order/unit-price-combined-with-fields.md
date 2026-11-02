@@ -1,6 +1,8 @@
 # Stückpreis kombiniert mit Feldern
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-34234b404af7-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v2-de-de.png" alt="Stückpreis kombiniert mit Feldern, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_combined_unit_price_operator_field_values_v3-de-de.png" alt="Stückpreis kombiniert mit Feldern, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Zweck:**
 

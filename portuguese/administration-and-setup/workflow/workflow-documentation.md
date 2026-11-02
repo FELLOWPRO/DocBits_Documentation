@@ -2,9 +2,9 @@
 
 Para manter uma visão geral, você pode atribuir títulos diferentes aos workflows, de modo a saber imediatamente sobre qual tarefa cada workflow trata.
 
-Criar um novo Workflow: Clique em + ADD WORKFLOW
+Criar um novo fluxo de trabalho: clique em **Novo fluxo de trabalho**.
 
-![](<../../.gitbook/assets/workflow_add_button.png>)
+<figure><img src="../../.gitbook/assets/workflow-create-action-current-pt.png" alt="Pormenor do botão Novo fluxo de trabalho na lista de fluxos." width="394"><figcaption><p>Pormenor do botão Novo fluxo de trabalho na lista de fluxos.</p></figcaption></figure>
 
 Você pode usar esses workflows (Test 1,2,3) para atribuir automaticamente diversos documentos ao colaborador certo na empresa.
 

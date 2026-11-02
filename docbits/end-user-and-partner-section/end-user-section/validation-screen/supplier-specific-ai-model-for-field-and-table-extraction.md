@@ -1,5 +1,20 @@
 # Selecting a Supplier-Specific AI Model for Field and Table Extraction
 
+## From organizational standard to effective model
+
+<figure><img src="../../../.gitbook/assets/process-ai-model-en-20261028.png" alt="Which AI model applies to the template?: Organization default and template-related override."><figcaption><p>Organization default and template-related override. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+
+The entry in the validation screen is called the supplier-specific AI model. However, the **current extraction template context** is crucial: the override is saved per organization and template. A supplier can have multiple templates with different settings.
+
+1. **Determine context:** Review the organization, document, and current extraction template before modifying a model.
+2. **Check override:** If a model is stored for this template, this selection takes effect within its scope. If an override is missing, the applicable organization setting applies.
+3. **Confirm the change deliberately:** Select only an option available in your environment. A change may require confirmation and trigger extraction again. Opening the menu alone does not change the selection.
+4. **Compare results:** Check the field values, tables, runtime and costs with a fixed sample. A different model level does not guarantee better extraction, successful validation or PO matching.
+
+**Example:** Supplier A uses the templates “Domestic invoice” and “Foreign invoice”. An override for “Domestic invoice” does not change all invoices from that supplier. For another document, check its template and effective setting again.
+
+The graphic shows the selection hierarchy, not a recommendation for a specific model level. Information about the [Organizational standard and overrides](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md) and the [Which extraction path was used?](../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) diagnosis help to classify the actual result.
+
 In the tools section of the **Validation screen**, you can choose the AI model used for **Field Extraction** and **Table Extraction**.\
 This entry point changes the override for the current extraction-template context. The preference is stored by organization and template (`tfidf_id`); the supplier association does not guarantee that every template or historical document for that supplier changes. With no override, the applicable organization setting is used.
 

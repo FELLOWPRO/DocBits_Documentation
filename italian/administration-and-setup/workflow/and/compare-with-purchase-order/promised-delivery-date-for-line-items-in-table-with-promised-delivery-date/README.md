@@ -1,6 +1,8 @@
 # Data di consegna promessa per le righe del documento nella tabella con data di consegna promessa
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2-it-it.png" alt="Data di consegna promessa per le righe del documento nella tabella con data di consegna promessa, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+Il modo in cui viene calcolata la finestra di tolleranza, con esempi come "oggi o domani", è spiegato in [Date Tolerances](../../date-tolerances.md).
 
 ## Scopo:
 

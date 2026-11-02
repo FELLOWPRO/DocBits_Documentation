@@ -1,6 +1,8 @@
 # Zadzwoń do API
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-pl-pl.png" alt="Zadzwoń do API, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-pl-pl.png" alt="Zadzwoń do API, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 <!-- workflow-card-call-api-contract-20261022 -->
 

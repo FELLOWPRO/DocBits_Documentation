@@ -1,6 +1,6 @@
 # Customizing Filters
 
-Use dashboard filters to narrow the visible document list. Dashboard search criteria and the organization’s status-filter configuration are separate controls.
+Use dashboard filters to narrow the visible document list. Dashboard search criteria and the status-filter configuration are separate controls.
 
 ## Filter the document list
 
@@ -15,6 +15,10 @@ To remove a criterion, use its visible X/remove control or the available clear-f
 ## Configure the status filter
 
 Open **Settings → Dashboard → Filters**. Choose **Status filter style**. If you select **Custom**, choose the statuses to expose through **Custom status filter**, then use **Apply** to save this configuration. Changing this setting is different from filtering the list for one search.
+
+Organization administrators update the organization default. Where these controls are available to other users, the selection is saved as their personal preference instead. A personal preference takes precedence over the organization default.
+
+Changing **Status filter style** saves the style immediately. **Apply** saves the custom status list; applying an empty list restores **All**. Choosing **All** directly restores the standard style and hides the custom selector and its **Apply** button.
 
 <figure><img src="../../../../.gitbook/assets/prior-u015-en.png" alt="Dashboard status-filter settings; displayed values were not changed."><figcaption><p>Dashboard status-filter settings; displayed values were not changed.</p></figcaption></figure>
 

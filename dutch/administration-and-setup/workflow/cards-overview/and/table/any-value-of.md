@@ -1,6 +1,6 @@
 # Any Value of
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-table-07-nl-20261023.png" alt="Tabel Als ENIGE waarde van Kolomnaam in tabel Tabelnaam overeenkomt met het regex-patroon Search Pattern , hoeft er maar ÉÉN kolomvermelding overeen te komen om door te gaan." width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

@@ -68,6 +68,10 @@ description: "从入门到专家的学习路径"
 
 ## 5. Advanced 控制流与子工作流 <a id="level-5"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-05-admin/v1/zh.html)。
+
 **练习:** 用两项实际执行的检查比较 ALL、ANY 和 OR，并检查未选择的分支。运行全部七个 v2 用例，使用自有未启用目标测试 Run Workflow。
 
 **完成标准:** 能解释测试与调度器差异、源节点计数和错误传递。v2 不依赖停滞的 OR 即可完成；绿色子调用仍要核对目标。
@@ -76,6 +80,10 @@ description: "从入门到专家的学习路径"
 
 ## 6. 计算、接口与导出 <a id="level-6"></a>
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-06-admin/v1/zh.html)。
+
 **练习:** 比较完整表格的计算前后结果，包含正则未命中和除零。明确接口真实回写契约，并使用自有测试配置设计审批后的导出。
 
 **完成标准:** 分别证明后续字段值、接收方收到和 ERP 已处理；不把模拟或导出请求记录为送达。
@@ -83,6 +91,10 @@ description: "从入门到专家的学习路径"
 阅读并搭建: [P1：计算表格列并检查正则依赖](masterclass/table-calculations.md) · [P1：验证 API 调用与后续响应使用](masterclass/api-response-contract.md) · [P1：选择导出方式、待办检查与最终状态](masterclass/export-lifecycle.md).
 
 ## 7. 变更与专家运维 <a id="level-7"></a>
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/zh.mp4" %}
+
+[打开带中文字幕和文字稿的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-07-admin/v1/zh.html)。
 
 **练习:** 修改前保存工作流导出并记录卡片版本。复测正例、反例、错误、边界和第二次运行，将第一个错误关联到具体输入与配置。
 

@@ -1,6 +1,6 @@
 # API Key
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-en.png" alt="API Keys panel with the Create API Key button, key list columns and the key prefix hidden for documentation"><figcaption><p>Settings → Integration &amp; SSO → API Key. The key prefix is hidden in this screenshot.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-21-api-keys-en-20261030.png" alt="API Keys panel with Create API Key and the list columns; key values and row data are hidden"><figcaption><p>The API Keys panel shows the creation button and list columns. Key values and row data are hidden.</p></figcaption></figure>
 
 The **API Key** section at the top of the Integration & SSO page lists every API key your organization has created. An API key lets another system — your ERP, a script, or a partner application — access DocBits without a user logging in. For step-by-step instructions, see [API Key Management](api-key-management.md).
 
@@ -16,8 +16,8 @@ The **API Key** section at the top of the Integration & SSO page lists every API
 These are the values your Identity Provider needs in order to let users sign in to DocBits with your company login. For the full setup guide, see [Configuring Single Sign-On (SSO)](configuring-single-sign-on-sso/).
 
 * **Entity ID:** The identifier for DocBits as a service provider in the SSO configuration. The copy icon copies the value to your clipboard.
-* **SLO (Single Logout) URL:** The URL used to log a user out of all applications connected through SSO at the same time. The copy icon copies the value.
-* **SSO URL:** The URL used for initiating the single sign-on process. The copy icon copies the value.
+* **SLO (Single Logout) URL:** The DocBits SAML single logout service endpoint. The copy icon copies the value.
+* **SSO URL:** The DocBits Assertion Consumer Service (ACS) endpoint, which receives SAML responses from the identity provider. Use it as the Reply URL (ACS URL) in the identity provider configuration. The copy icon copies the value.
 * **Download Certificate:** Downloads the security certificate your Identity Provider needs to trust DocBits.
 * **Download Metadata:** Downloads the SAML metadata file that can be imported directly into most Identity Providers.
 
@@ -26,5 +26,5 @@ These are the values your Identity Provider needs in order to let users sign in 
 Configure DocBits to use your external Identity Provider (IdP) for login. For the full guide, see [Identity Service Provider Configuration](identity-service-provider-configuration.md).
 
 * **Tenant ID:** Your Identity Provider's tenant identifier, used when DocBits integrates with cloud services that manage access per tenant.
-* **Upload file:** Uploads the metadata or configuration file you received from your Identity Provider.
-* **Configure:** Saves the settings and applies the uploaded configuration. Enter the Tenant ID or upload the file first, then click **Configure**.
+* **Upload file:** Select the XML metadata file supplied by your identity provider.
+* **Configure:** After selecting the XML file, click Configure to upload it and save the identity provider configuration.

@@ -10,7 +10,7 @@ Configure and test invoice approvals
 
 The recording shows the real application. Option wording may vary with the deployed version.
 
-Configure approval for the document type used by your process. Identify the intended reviewers and decide whether you need a second independent review. The video uses a separate test type, synthetic invoices and temporary ordinary reviewer accounts; its male presenter is fictional.
+Configure approval for the document type used by your process. Identify the intended reviewers and decide whether you need a second independent review. The video uses a separate document type and temporary ordinary reviewer accounts.
 
 ## Configure the document type
 

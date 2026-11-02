@@ -6,6 +6,8 @@ description: "Ereignisse, Bedingungen, Reihenfolge, Tests und Aktivierung von Wo
 
 Ein Workflow benötigt einen Ausführungsanlass und passende Bedingungen. **Dokumenttyp ist Rechnung** beschreibt eine Auswahl. Daraus folgt nicht, dass jede beliebige Änderung an einer Rechnung automatisch einen neuen Lauf startet.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-de-v3.png" alt="Schematische Beispiele: Eine lineare Standard-Folge führt Aktionen nur aus, wenn ihre Bedingungen erfüllt sind; andernfalls endet diese Folge. Ein Advanced-Bedingungsknoten kann getrennte konfigurierte Ergebnispfade verwenden. Ein Pfad wird nur mit Verbindung fortgesetzt. Optionale Standard-Verzweigungen sind nicht dargestellt; dies ist kein Screenshot der DocBits-Oberfläche."><figcaption>Schematische Beispiele: Eine lineare Standard-Folge führt Aktionen nur aus, wenn ihre Bedingungen erfüllt sind; andernfalls endet diese Folge. Ein Advanced-Bedingungsknoten kann getrennte konfigurierte Ergebnispfade verwenden. Ein Pfad wird nur mit Verbindung fortgesetzt. Optionale Standard-Verzweigungen sind nicht dargestellt; dies ist kein Screenshot der DocBits-Oberfläche.</figcaption></figure>
+
 ## Vom Ereignis zur Aktion
 
 1. Prüfen Sie Organisation, Berechtigungen, Workflow-Modul und bei Advanced zusätzlich die Advanced-Freigabe.

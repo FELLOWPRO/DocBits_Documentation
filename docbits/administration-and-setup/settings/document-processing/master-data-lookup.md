@@ -1,5 +1,13 @@
 # Master Data Lookup
 
+## Video tutorial: Master data and lists of values
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/en.mp4" %}
+Master data sources, lists of values and master data settings in DocBits
+{% endembed %}
+
+The video shows the master data sources, the lists of values and the master data settings of a document type.
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 

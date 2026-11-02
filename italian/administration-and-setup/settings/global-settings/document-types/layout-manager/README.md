@@ -1,31 +1,29 @@
 # Gestore dei layout
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-it.png" alt="Layout e regole di selezione per il tipo di documento INVOICE: le schede Layout e Regole di selezione con i rispettivi contatori, il tipo di documento, le schede Convalida del campo, Approvazione, Rifiuto e Revisione, le schede di layout con il badge Personalizzato e le azioni Modifica, Clone e Cancellare, e il pulsante Nuovo layout"><figcaption>Il gestore dei layout per il tipo di documento Invoice.</figcaption></figure>
 
-#### Panoramica
+Il **gestore dei layout** determina l'aspetto di un tipo di documento per chi convalida, approva, rifiuta e revisiona i documenti: quali campi e gruppi compaiono sullo schermo, in quale ordine e come si comporta ogni campo. Ogni tipo di documento ha i propri layout.
 
-Il Layout Manager consente agli amministratori di configurare e modificare visivamente il layout dei tipi di documenti impostando le proprietà per vari campi e gruppi di dati all'interno di un documento. Questa interfaccia aiuta a garantire che i modelli di estrazione e i punti di immissione manuale dei dati si allineino esattamente con la struttura del documento scansionato o caricato in Docbits.
+La pagina si apre come **Layout e regole di selezione**: i layout sono disposizioni di campi riutilizzabili, indipendenti dall'origine del documento, e le regole decidono quale layout viene assegnato a un documento.
 
-#### Componenti principali
+#### Schermate e tipi di layout
 
-1. **Gruppi e Campi**:
-   * **Gruppi**: unità organizzative all'interno di un tipo di documento che classificano i campi correlati (ad esempio, Dettagli fattura, Dettagli pagamento). Questi possono essere espansi o compressi e disposti in modo da rispecchiare il raggruppamento logico nel documento reale.
-   * **Campi**: punti dati individuali all'interno di ciascun gruppo (ad esempio, numero di fattura, termini di pagamento). Ogni campo può essere personalizzato per il modo in cui i dati vengono acquisiti, visualizzati ed elaborati.
-2. **Properties Panel**:
-   * Questo pannello visualizza le proprietà del campo o gruppo selezionato, consentendo una configurazione dettagliata, come:
-     * **Label**: l'etichetta visibile per il campo nell'interfaccia utente.
-     * **Nome campo**: l'identificatore tecnico utilizzato all'interno del sistema.
-     * **Larghezza elemento in percentuale**: Determina la larghezza del campo in relazione al layout del documento.
-     * **Tab Index**: controlla l'ordine di tabulazione per la navigazione.
-     * **Esegui script su modifica**: se eseguire uno script quando cambia il valore del campo.
-     * **Visualizza etichetta a sinistra**: se l'etichetta viene visualizzata a sinistra del campo o sopra di esso.
-     * **Is Textarea**: specifica se il campo deve essere un'area di testo, in grado di ospitare quantità maggiori di testo.
-     * **Seleziona tipo di modello**: opzione per selezionare quale tipo di modello gestirà l'estrazione di questo campo.
-     * **Lunghezza campo**: lunghezza massima dei dati da accettare in questo campo.
-     * **Parole chiave vietate**: parole chiave non consentite nel campo.
-3. **Template Preview**:
-   * Mostra un'anteprima in tempo reale di come apparirà il documento in base alla configurazione del layout corrente. Ciò aiuta a garantire che il layout corrisponda alla struttura effettiva del documento ed è vitale per testare e perfezionare l'impostazione dell'elaborazione del documento.
+Convalida, approvazione, rifiuto e revisione sono schermate distinte e ciascuna ha i propri layout, le proprie regole e il proprio layout predefinito: una regola di approvazione non modifica mai la schermata di convalida. Per cambiare schermata usare le schede **Convalida del campo**, **Approvazione**, **Rifiuto** e **Revisione**.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
+#### Schede di layout
 
+Nella scheda **Layout** ogni layout della schermata selezionata è rappresentato da una scheda. La scheda mostra il nome del layout, se appartiene alla propria organizzazione (**Personalizzato**) o è il layout predefinito di sistema, quando è stato modificato l'ultima volta e se una regola di selezione lo utilizza. **Modifica** apre il layout nel Layout Builder, **Clone** lo copia con il nome scelto e **Cancellare** lo rimuove: il layout predefinito di sistema può solo essere consultato, non modificato né eliminato. **Nuovo layout** chiede un nome e apre il Layout Builder sul nuovo layout vuoto. Il filtro sopra le schede alterna tra **Tutti**, **I miei layout** e **Sistema**.
 
+#### Il Layout Builder
+
+**Modifica** apre il [Layout Builder](navigating-the-layout-manager.md):
+
+* **Struttura**, **Campi** ed **Elementi** a sinistra: il layout sotto forma di albero, ogni campo del tipo di documento con un contatore dei campi già inseriti, e i gruppi e gli elementi del modulo da trascinare sull'area di lavoro.
+* L'**area di lavoro** al centro mostra il layout così come lo vede l'utente. **Layout principale** e **Tabella** alternano la pagina e una tabella delle righe, mentre **Documento** apre il documento di esempio accanto.
+* Il pannello **Proprietà** a destra segue l'elemento selezionato; le sue impostazioni sono raggruppate in visualizzazione, comportamento, valori ed elenchi, automazione, bordi e spaziatura.
+
+**Salva** nell'intestazione memorizza il layout. Per le altre azioni dell'intestazione vedere [Salvare e Applicare le Modifiche](save-and-apply-changes.md).
+
+#### Quale layout riceve un documento
+
+La scheda **Regole di selezione** di ogni schermata contiene le regole che scelgono il layout: vengono valutate per priorità, prevale la prima corrispondenza e si applica un'alternativa predefinita quando nessuna regola corrisponde. Vedere [Regole di selezione del layout](layout-selection-rules.md).

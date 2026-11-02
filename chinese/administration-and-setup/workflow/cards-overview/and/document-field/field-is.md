@@ -1,6 +1,8 @@
 # 检查文档字段是否存在及是否有值
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1-zh-cn.png" alt="检查文档字段是否存在及是否有值, 版本 1" width="634"><figcaption><p>版本 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-zh-cn.png" alt="检查文档字段是否存在及是否有值, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 ## 何时使用
 
@@ -35,6 +37,6 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/zh.mp4" %}
 
-[打开带中文字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/zh.html)
+[打开带中文字幕的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/zh-theme-v4.html)
 
 [阅读文字稿](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/zh.txt)

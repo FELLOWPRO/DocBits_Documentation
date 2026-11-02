@@ -2,6 +2,8 @@
 
 Antes de examinar los operadores, es importante comprender cómo se calcula la ventana de tolerancia.
 
+En [Date Tolerances](../../date-tolerances.md) se explica cómo se calcula la ventana de tolerancia, con ejemplos como «hoy o mañana».
+
 ## ¿Qué es una ventana de tolerancia?
 
 La ventana de tolerancia define un rango de fechas aceptables en torno a la fecha de entrega prometida de la orden de compra.

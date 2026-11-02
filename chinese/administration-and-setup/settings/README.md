@@ -1,5 +1,13 @@
 # 设置
 
+## 视频教程：设置概览与模块
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/zh.mp4" %}
+DocBits 中的设置概览与模块
+{% endembed %}
+
+视频演示了设置概览的五个分组、搜索和快速链接，以及三个模块页面分别控制的内容。
+
 <figure><img src="../../.gitbook/assets/site-extra-settings-overview-zh.png" alt="中文公司信息页面；名称、地址及组织数据已隐藏。所示界面将导入导航误译为“进口”，联系信息区段误译为“接触”，分别指数据导入和联系方式。"><figcaption><p>中文公司信息页面；名称、地址及组织数据已隐藏。所示界面将导入导航误译为“进口”，联系信息区段误译为“接触”，分别指数据导入和联系方式。</p></figcaption></figure>
 
 设置区域是配置 DocBits 的中心。它分为五个主要部分：

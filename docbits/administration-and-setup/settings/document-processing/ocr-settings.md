@@ -14,7 +14,7 @@ To access the OCR settings:
 
 *   Navigate to: **Settings** → **Document Processing** → **OCR Settings**
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt="DocBits Settings menu with Document Processing open and OCR Settings selected among Import, Rule Management and Export"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt="Settings Document Processing list with an arrow pointing to OCR Settings"><figcaption></figcaption></figure>
 
 ## OCR Quality
 
@@ -29,7 +29,7 @@ If a document does not meet the defined quality level, DocBits provides three op
 * **Throw Error**\
   Document processing will stop entirely, and an error message will be displayed, indicating that the document did not meet the required quality threshold.
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt="OCR Quality settings page with the quality slider and Run again after confirmation selected below it"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt="OCR Quality slider set to 75 percent with the low-quality handling dropdown showing Run anyway, Run again after confirmation and Throw error"><figcaption></figcaption></figure>
 
 ## General OCR Settings
 
@@ -44,7 +44,7 @@ If a document does not meet the defined quality level, DocBits provides three op
     * You are not achieving the desired results with the currently selected version.
     * You are troubleshooting issues related to OCR performance or accuracy.
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt="OCR Settings page with the AI OCR Version dropdown open showing versions 1.2, 2.0 and 2.1"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt="General OCR settings with the AI OCR Version dropdown listing versions 1.2, 2.0 and 2.1"><figcaption></figcaption></figure>
 
 ## OCR Settings for Tables
 
@@ -63,3 +63,24 @@ If both options are enabled, **DocBits** will perform extraction in the followin
 **Rules Extraction → AI Extraction**\
 \
 <mark style="color:red;">**Note**</mark>: For best results and consistent behavior, enable both options. This allows **DocBits** to use both rule-based and AI-based methods in combination during header extraction.
+
+## Extraction Insights
+
+At the bottom of the OCR settings page, the **Extraction Insights** section contains one switch, **Show extraction insights panel**. It is off by default and applies to the whole organisation.
+
+When you turn it on, the field validation page gets an extra icon (tooltip **Show extraction insights**) that opens the **Extraction insights** panel. The panel explains how each field of the open document was extracted, so users can see why DocBits chose a value:
+
+* **Extraction method** — a label on every field shows how the value was found: **Trained rule**, **AI extracted**, **Calculated** (computed from the supplier lookup) or **From e-invoice** (read directly from the XML of an electronic document).
+* **Confidence** — each field shows a confidence level from **Low confidence** and **Worth checking** up to **Likely correct**, **Confident** and **Highly confident**. Use **Sort by → Needs attention** to list the fields that deserve a second look first.
+* **Technical details** — **Show technical details** reveals the matched rule, its score and the components behind it (**Label match**, **Context pattern**, **Coordinates**, **Final confidence**), the training history and the competing candidate rules.
+* **Filter and sort** — type in **Filter fields…** to narrow the list, and sort by document order, field name, needs attention or most confident.
+* **Refresh** — reloads the insights of the current document.
+* **Clean up duplicates** — appears when fields have more than one rule. After you confirm, DocBits keeps the winning rule of each field and deletes the duplicates. An administrator can restore deleted rules.
+
+If a document has no extraction data yet, the panel shows **No extraction data available**.
+
+{% hint style="info" %}
+The panel only explains an extraction that already happened. Turning it on or off does not change how documents are processed.
+{% endhint %}
+
+The limit for the number of pages that are OCRed is not part of this page. It is the **Pages to process** setting in [Classification and Extraction](classification-and-extraction/README.md#document-processing).

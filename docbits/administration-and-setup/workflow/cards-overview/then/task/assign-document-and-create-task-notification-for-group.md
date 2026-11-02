@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for Group
 
-<figure><img src="../../../../../.gitbook/assets/image (145).png" alt="Workflow Then card that assigns the document and creates a task notification for a group" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_action_create_task_for_group_sequential_v2.png" alt="Workflow card Task: Assign the document sequentially to and create a Task/Notification for Groups with title, description and priority, notify the group via email, set assignment priority of Value, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Purpose**
 

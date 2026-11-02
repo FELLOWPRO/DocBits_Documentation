@@ -1,5 +1,13 @@
 # Settings
 
+## Video tutorial: Settings hub and modules
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/en.mp4" %}
+Settings Overview and Modules in DocBits
+{% endembed %}
+
+The video shows the five groups of the Settings Overview, the search and Quick Links, and what the three Module pages control.
+
 <figure><img src="../../.gitbook/assets/site-extra-settings-overview-en.png" alt="Organization settings with identifying values hidden. The displayed country is a configured value."><figcaption><p>Organization settings with identifying values hidden. The displayed country is a configured value.</p></figcaption></figure>
 
 The Settings area is your central hub for configuring DocBits. It is organized into five main sections:

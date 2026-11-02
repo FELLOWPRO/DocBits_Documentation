@@ -31,7 +31,7 @@ If the **Automatic Matching** is set to **Match to Purchase Receipt**, proceed w
 
 It should look like the following:
 
-<figure><img src="../../../../.gitbook/assets/image (390).png" alt="LN-Mapping file with the field IRF_PackingSlip set to TF_packing_slip and PackingSlip added to InvoiceReceiptFields"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (390).png" alt="Mapping file lines with InvoiceReceiptFields including PackingSlip and the IRF_PackingSlip, IRF_Order and IRF_OrderPosition entries"><figcaption></figcaption></figure>
 
 ## **Step 4: Add the Updated File Back to DocBits**
 

@@ -1,6 +1,6 @@
 # Jeśli kraj w polu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2-pl-pl.png" alt="Jeśli kraj w polu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 Planowane zastosowanie: dodatkowy etap przetwarzania zależy od grupy krajów. Poniższy przykład opisuje regułę przynależności do Unii Europejskiej.
 

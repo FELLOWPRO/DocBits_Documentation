@@ -47,8 +47,8 @@ All'estremità destra della barra:
 
 - **ⓘ Guida** — apre il riferimento integrato **Ricerca nella dashboard: campi e sintassi**
   che elenca tutti i campi, gli operatori e le scorciatoie disponibili nel tuo workspace.
-- **Filtri (tune)** — un pannello rapido per i filtri più comuni Stato / Utente / Riavvio,
-  con **Cancella i filtri** e **Applicare**.
+- **Filtri** (tre barre di scorrimento) — un pannello rapido per i filtri più comuni
+  **Stato**, **Assegnato a** e **Riavvio richiesto**, con **Cancella i filtri** e **Applicare**.
 - **Anello dell'indice** — un piccolo anello di avanzamento che mostra quanta parte dell'indice fulltext
   è stata costruita (visibile solo quando la ricerca fulltext è attiva).
 
@@ -221,13 +221,14 @@ ap_assignment_code=""
 
 ---
 
-## Smart Filters — con un clic
+## Filtri rapidi — con un clic
 
-In cima al menu a discesa della Ricerca rapida (clicca sulla barra di ricerca) trovi gli
-**Filtri rapidi**: ricerche già pronte che applichi con un solo clic. Ognuno
-è semplicemente una scorciatoia per una query che potresti anche digitare tu stesso:
+L'icona **fulmine** all'inizio del campo di ricerca apre il selettore dei campi. In cima a
+questo selettore trovi i **Filtri rapidi**: ricerche già pronte che applichi con un solo
+clic. Ognuno è semplicemente una scorciatoia per una query che potresti anche digitare
+tu stesso:
 
-| Smart Filter | Trova | Equivale a digitare |
+| Filtro rapido | Trova | Equivale a digitare |
 |--------------|-------|----------------|
 | ⚠️ **Scaduto** | Scaduti | `invoice_due_date<today()` |
 | 🕐 **In scadenza** | Entro i prossimi 7 giorni | `invoice_due_date<=today()+7` |
@@ -239,7 +240,7 @@ In cima al menu a discesa della Ricerca rapida (clicca sulla barra di ricerca) t
 | ➗ **Corrispondenza parziale dell'ordine di acquisto** | Corrispondenza parziale con un ordine di acquisto | `po_match_status=partial_matched` |
 | 📉 **In base alla corrispondenza PO** | Quantità o prezzo unitario inferiori all'ordine di acquisto | `po_match_status=under_matched` |
 
-I tre filtri **PO match** e i campi fulltext richiedono che la ricerca fulltext
+I tre filtri **Corrispondenza PO** e i campi fulltext richiedono che la ricerca fulltext
 sia attiva per la tua organizzazione.
 
 <figure><img src="../../../.gitbook/assets/prior-u030-it.png" alt="Guida alle query e ai filtri della ricerca rapida."><figcaption><p>Guida alle query e ai filtri della ricerca rapida.</p></figcaption></figure>

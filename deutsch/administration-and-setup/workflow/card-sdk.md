@@ -1,5 +1,9 @@
 # Card SDK
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-15-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-15-admin/v1/de.html).
+
 Mit dem **Card SDK** können Partner und Entwickler eigene Workflow-Karten für DocFlow erstellen. Sie verpacken eine Karte als Partner-App und laden sie hoch oder importieren sie direkt aus GitHub.
 
 <figure><img src="../../.gitbook/assets/s150-workflow_card_sdk-de.png" alt="Card SDK im deutschen Workflow-Dashboard mit dem Hinweis auf das erforderliche Abonnement."><figcaption><p>Card SDK im deutschen Workflow-Dashboard mit dem Hinweis auf das erforderliche Abonnement.</p></figcaption></figure>

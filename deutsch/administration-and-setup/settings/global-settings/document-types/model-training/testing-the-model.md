@@ -1,5 +1,12 @@
 # Testen des Modells
 
+## Mit unabhängigen Testbelegen prüfen
+
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-05-modelltest-de-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-05-modelltest-de-light-20261029.png" alt="Mit unabhängigen Testbelegen prüfen"></picture><figcaption><p>Mit unabhängigen Testbelegen prüfen</p></figcaption></figure>
+
+Trainingsdaten und Testbelege erfüllen unterschiedliche Aufgaben. Legen Sie für unabhängige Testbelege die erwarteten Dokumenttypen und Feldwerte fest und vergleichen Sie diese mit den Vorhersagen. Dokumentieren Sie Modellversion, Stichprobe, Abweichungen und technische Fehler. Verbessern Sie gezielt und wiederholen Sie den Test mit demselben Prüfprotokoll. Die dargestellten Werte sind ein Beispiel und keine Genauigkeitsmessung.
+
+
 Teste mit repräsentativen Dokumenten, die nicht für das Training verwendet wurden. Halte für jedes Dokument die erwarteten Antworten fest: den Dokumenttyp und bei einer Bewertung der Extraktion auch die Feldwerte.
 
 ## Test durchführen

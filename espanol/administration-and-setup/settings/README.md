@@ -1,5 +1,13 @@
 # Configuración
 
+## Tutorial en vídeo: Configuración y Módulos
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/es.mp4" %}
+Descripción general de la configuración y Módulos en DocBits
+{% endembed %}
+
+El vídeo muestra los cinco grupos de la Descripción general de la configuración, la búsqueda y los accesos rápidos, y lo que controlan las tres páginas de Módulos.
+
 <figure><img src="../../.gitbook/assets/site-extra-settings-overview-es.png" alt="Configuración de la organización con los datos identificativos ocultos. El país es un valor configurado. La etiqueta defectuosa «Phonenenene de la empresa oficial» se refiere al teléfono de la empresa."><figcaption><p>Configuración de la organización con los datos identificativos ocultos. El país es un valor configurado. La etiqueta defectuosa «Phonenenene de la empresa oficial» se refiere al teléfono de la empresa.</p></figcaption></figure>
 
 El área Settings es su centro de control para configurar DocBits. Está organizada en cinco secciones principales:

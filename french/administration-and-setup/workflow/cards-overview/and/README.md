@@ -8,7 +8,7 @@ Dans le **Workflow Builder**, sélectionnez **Add Card** sous **And...**. Choisi
 
 Utilisez ces cartes pour comparer les données d'une commande ou d'une facture avec un bon de commande, par exemple le prix unitaire, la date de livraison promise, les frais ou la quantité. Choisissez les champs, l'opérateur et la tolérance éventuelle demandés par la carte sélectionnée. Consultez [Compare with Purchase Order](compare-with-purchase-order/) pour le détail des cartes.
 
-<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Sélecteur de cartes And en anglais avec Compare with Purchase Order sélectionné ; les aperçus visibles comprennent les comparaisons de prix unitaire, de date de livraison, de frais et de quantité."><figcaption><p>Catégorie Compare with Purchase Order dans le Sandbox anglais.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-fr-20261023.png" alt="Sélecteur de cartes And en français avec la catégorie Comparaison des bons de commande sélectionnée ; les aperçus visibles comprennent les comparaisons de données de commande, de date de livraison, de prix, de frais et de quantité."><figcaption><p>Catégorie Comparaison des bons de commande dans le sélecteur de cartes en français (données d’exemple).</p></figcaption></figure>
 
 ## Document Field
 

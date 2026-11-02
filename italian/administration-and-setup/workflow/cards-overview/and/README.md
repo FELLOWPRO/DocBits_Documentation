@@ -8,7 +8,7 @@ Nel **Workflow Builder**, seleziona **Add Card** sotto **And...**. Scegli una ca
 
 Usa queste schede per confrontare i dati di un ordine o di una fattura con un ordine d'acquisto, ad esempio prezzo unitario, data di consegna promessa, costi aggiuntivi o quantità. Scegli i campi, l'operatore ed eventuali tolleranze richiesti dalla scheda selezionata. Consulta [Compare with Purchase Order](compare-with-purchase-order/) per le singole schede.
 
-<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Selettore delle schede And in inglese con Compare with Purchase Order selezionato; le anteprime visibili riguardano il confronto di prezzo unitario, data di consegna, costi aggiuntivi e quantità."><figcaption><p>Categoria Compare with Purchase Order nella Sandbox in inglese.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-it-20261023.png" alt="Selettore delle schede And in italiano con la categoria Confronto con l&#x27;ordine di acquisto selezionata; le anteprime visibili riguardano il confronto di dati d&#x27;ordine, data di consegna, prezzo, costi aggiuntivi e quantità."><figcaption><p>Categoria Confronto con l'ordine di acquisto nel selettore delle schede in italiano (dati di esempio).</p></figcaption></figure>
 
 ## Document Field
 

@@ -49,6 +49,8 @@
   * **仅限管理员和受分配者**：只有拥有管理员权限的用户和已分配的用户可以重启文档。
   * **所有用户**：所有已获得必要[权限](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md)的用户都可以重启文档。
 
+* **待处理输入访问（天）**：设置在被要求提供输入的人员在活动流中被标记后，可以只读打开文档的天数；超过该天数后链接即失效。默认值为 14 天，文档继续流转时访问也会立即结束。参见 [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md)。
+
 <figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
 
 ## **筛选器**

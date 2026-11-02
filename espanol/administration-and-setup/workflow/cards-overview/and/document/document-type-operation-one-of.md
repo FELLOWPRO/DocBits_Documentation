@@ -1,6 +1,6 @@
 # Document Type Operation one of
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-00-es-20261023.png" alt="Documento El tipo de documento Operador uno de los siguientes Tipo" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

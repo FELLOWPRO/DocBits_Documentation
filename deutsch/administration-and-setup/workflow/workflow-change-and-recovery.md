@@ -4,6 +4,10 @@ description: "Workflow-Änderungen mit gesichertem Ausgangsstand, Kartenversione
 
 # Workflow ändern und einen gesicherten Stand wiederherstellen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-13-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-masterclass-13-admin/v1/de.html).
+
 Sichern Sie vor einer Änderung den tatsächlich gespeicherten Workflow. Die Browser-Schaltfläche für Rückgängig, ein lokaler Entwurf und eine exportierte Konfiguration haben unterschiedliche Aufgaben. Keine davon nimmt bereits erzeugte Aufgaben, E-Mails oder externe Buchungen automatisch zurück.
 
 ## 1. Den gespeicherten Ausgangsstand sichern

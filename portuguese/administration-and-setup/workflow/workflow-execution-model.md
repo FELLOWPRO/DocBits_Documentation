@@ -6,6 +6,8 @@ description: "Distinguir eventos, condições, ordem de execução, testes e ati
 
 Um workflow precisa de um motivo de execução e de condições correspondentes. **O tipo de documento é Fatura** seleciona documentos; não significa que qualquer alteração de uma fatura inicie automaticamente outra execução.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-pt-v3.png" alt="Exemplos conceptuais: uma sequência padrão linear executa ações apenas quando as condições são cumpridas; caso contrário, essa sequência para. Um nó de condição avançado pode utilizar caminhos de resultado configurados separadamente. Um caminho só continua se existir uma ligação. As ramificações padrão opcionais foram omitidas; não é uma captura da interface do DocBits."><figcaption>Exemplos conceptuais: uma sequência padrão linear executa ações apenas quando as condições são cumpridas; caso contrário, essa sequência para. Um nó de condição avançado pode utilizar caminhos de resultado configurados separadamente. Um caminho só continua se existir uma ligação. As ramificações padrão opcionais foram omitidas; não é uma captura da interface do DocBits.</figcaption></figure>
+
 ## Do evento à ação
 
 1. Verifique a organização, as permissões e o módulo Workflow, além da habilitação Advanced quando necessária.

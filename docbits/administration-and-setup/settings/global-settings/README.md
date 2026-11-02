@@ -6,7 +6,7 @@ Use **Settings** to manage the organisation and the way documents are processed.
 2. Under **Organization & Access**, choose the area you need, such as **Company Information** or **Users**.
 3. Under **Document Processing**, choose **Document Types** to configure a particular kind of document.
 
-<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-en.png" alt="English Settings menu and Company Information screen"><figcaption><p>Current English Sandbox view for DocBits Documentation Test A. Company Information is selected; no values were changed.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc230-global-settings-en.png" alt="English settings overview with navigation and quick links"><figcaption><p>English settings overview with the navigation menu and quick links to Company Information, Users, Document Types, Import, Export, and Integration &amp; SSO. No settings were changed.</p></figcaption></figure>
 
 Start with the guide that matches your task:
 

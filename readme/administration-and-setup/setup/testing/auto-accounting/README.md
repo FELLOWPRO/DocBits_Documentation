@@ -23,6 +23,16 @@ On the accounting screen, verify the following with your own LN or M3 data:
 3. If you split an amount, select the intended account for each split row. Enter amounts or percentages and check that the allocated values add up to the parent amount. Add or remove a row only when needed.
 4. Review any **Unsettled amount** or validation warning and correct it before saving or exporting. Confirm the result in the connected system separately.
 
-The Sandbox test organisation used for the screenshots above has no configured account and dimension lists or invoice line items for this flow. The accounting screen, splitting and export were therefore **not tested or pictured here**. Do not use the settings screenshots as proof that accounting or export succeeded.
+### Work with line items
+
+Each line item on the accounting screen carries a **remove** button in its action column, so a main line item can be taken off the booking and not only the split rows beneath it. Removing a line recalculates the totals straight away — check the **Unsettled amount** afterwards and make sure it still matches the invoice.
+
+Lines you add are numbered after the line they belong to: a line added under position 1 becomes **1.1**, the next **1.2**. The numbering tells you at a glance which split rows belong to which line item when a position is spread over several accounts.
+
+### Clear an optional dimension
+
+A dimension you have filled in can be set back to blank: open the dimension and use its clear control. This works for **optional** dimensions only. A dimension that is mandatory for your configuration, or one that is read-only, keeps its value and offers no clear control — fill it with the correct value instead of trying to empty it.
+
+The Sandbox test organisation used for the screenshots above has no configured account and dimension lists or invoice line items for this flow. The accounting screen, splitting, the line-item and dimension controls described above and the export were therefore **not pictured here**. Do not use the settings screenshots as proof that accounting or export succeeded.
 
 For system-specific setup, continue with the [LN guide](ln.md) or [M3 guide](m3.md).

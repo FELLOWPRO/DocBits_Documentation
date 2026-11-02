@@ -1,5 +1,13 @@
 # Subscription Plan
 
+## Video tutorial: Company, subscription and audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/en.mp4" %}
+Company information, subscription plan and audit logs in DocBits
+{% endembed %}
+
+The video shows the company information and preferences, the subscription plan, the login activity and the audit logs.
+
 <figure><img src="../../../.gitbook/assets/subscriptions_overview.png" alt="Subscription Plan"><figcaption><p>Subscription Plan page</p></figcaption></figure>
 
 The **Subscription Plan** page gives you a complete overview of your DocBits subscription in one place: the plan itself, the app and feature subscriptions enabled for your organization, and your token usage. Open it from **Settings → Organization & Access → Subscription Plan**.

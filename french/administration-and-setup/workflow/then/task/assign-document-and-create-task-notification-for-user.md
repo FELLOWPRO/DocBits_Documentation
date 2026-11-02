@@ -1,6 +1,6 @@
 # Attribuer un document et créer une tâche/notification pour l'utilisateur
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b4ef3c2e3a99-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_user_sequential_v2-fr-fr.png" alt="Attribuer un document et créer une tâche/notification pour l&#x27;utilisateur, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif**
 

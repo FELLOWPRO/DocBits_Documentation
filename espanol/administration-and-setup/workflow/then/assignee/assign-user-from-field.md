@@ -1,6 +1,6 @@
 # Asignar usuario desde el campo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-a30b121432e4-es.png" alt="Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados." width="563"><figcaption><p>Campos de la tarjeta en la versión mostrada. Los campos aún no están configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_user_from_field_with_fallback_v2-es-es.png" alt="Asignar usuario desde el campo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## **Propósito:**
 

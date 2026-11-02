@@ -1,8 +1,8 @@
 # Compare Order Confirmation with Purchase order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-02-fr-20261023.png" alt="Comparaison des bons de commande N&#x27;importe quel/Tous Données de commande dans la confirmation de commande Opérateur bon de commande. Comparer Données comparatives ." width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-02-fr-20261023.png" alt="Comparaison des bons de commande N&#x27;importe quel/Tous Données de commande dans la confirmation de commande Opérateur bon de commande. Comparer Données comparatives ." width="563"><figcaption></figcaption></figure>
 
 ## Objectif :
 

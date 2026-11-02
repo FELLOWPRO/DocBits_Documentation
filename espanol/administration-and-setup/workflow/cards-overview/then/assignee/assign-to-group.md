@@ -1,6 +1,6 @@
 # Assign to group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-07-es-20261023.png" alt="Asignado a Asignar al grupo Grupos" width="563"><figcaption></figcaption></figure>
 
 ## Propósito:
 

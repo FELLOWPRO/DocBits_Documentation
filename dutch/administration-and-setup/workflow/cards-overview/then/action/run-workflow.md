@@ -1,6 +1,6 @@
 # Run Workflow
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-action-01-nl-20261023.png" alt="Actie Werkstroom Werkstroom uitvoeren" width="563"><figcaption></figcaption></figure>
 
 ## Doel:
 

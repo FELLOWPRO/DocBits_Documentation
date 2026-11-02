@@ -6,6 +6,8 @@ description: "Distinguere eventi, condizioni, ordine di esecuzione, test e attiv
 
 Un workflow richiede un motivo di esecuzione e condizioni corrispondenti. **Il tipo di documento è Fattura** seleziona i documenti; non significa che ogni modifica a una fattura avvii automaticamente una nuova esecuzione.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-it-v3.png" alt="Esempi concettuali: una sequenza standard lineare esegue le azioni solo quando le sue condizioni sono soddisfatte; altrimenti la sequenza si interrompe. Un nodo di condizione avanzato può utilizzare percorsi di risultato configurati separatamente. Un percorso prosegue solo se esiste un collegamento. Le diramazioni standard facoltative sono omesse; non è una schermata dell’interfaccia DocBits."><figcaption>Esempi concettuali: una sequenza standard lineare esegue le azioni solo quando le sue condizioni sono soddisfatte; altrimenti la sequenza si interrompe. Un nodo di condizione avanzato può utilizzare percorsi di risultato configurati separatamente. Un percorso prosegue solo se esiste un collegamento. Le diramazioni standard facoltative sono omesse; non è una schermata dell’interfaccia DocBits.</figcaption></figure>
+
 ## Dall’evento all’azione
 
 1. Controllare organizzazione, autorizzazioni e modulo Workflow, oltre all’abilitazione Advanced quando necessaria.

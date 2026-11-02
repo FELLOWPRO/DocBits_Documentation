@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-14-it-20261023.png" alt="Confronto con l&#x27;ordine di acquisto Confrontare le spese totali nel campo Nome del campo Operatore corrispondente all&#x27;ordine di acquisto con tolleranze di Tolleranza Importo Tipo di tolleranza . ID di carica come finale del nome del campo dopo il separatore Valore ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

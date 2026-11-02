@@ -1,10 +1,12 @@
 # 分配与状态 — 示例
 
-为了便于查看，你可以为工作流设置不同的标题，以便立即了解该工作流所处理的任务。
+为工作流设置清晰的名称，便于在列表中辨认其用途。打开工作流仪表板后，选择 **工作流列表**，使用 **搜索工作流程** 查找已有工作流。
 
-创建新工作流：点击 + ADD WORKFLOW
+<figure><img src="../../../.gitbook/assets/workflow-list-search-columns-current-zh.png" alt="工作流列表局部视图：搜索栏与部分列标题。工作流名称等私有值已隐藏。"><figcaption><p>工作流列表局部视图：搜索栏与部分列标题。工作流名称等私有值已隐藏。</p></figcaption></figure>
 
-![](<../../../.gitbook/assets/0 (1).png>)
+创建新工作流时，点击 **新工作流程**。
+
+<figure><img src="../../../.gitbook/assets/workflow-list-toolbar-current-zh.png" alt="工作流工具栏：新工作流程、模板和导入工作流程。"><figcaption><p>工作流工具栏：新工作流程、模板和导入工作流程。</p></figcaption></figure>
 
 你可以使用这些工作流（Test 1、2、3），自动将不同的文档分配给公司中合适的员工。
 

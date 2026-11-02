@@ -1,6 +1,6 @@
 # Als land in veld
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2-nl-nl.png" alt="Als land in veld, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 Beoogd gebruik: een extra verwerkingsstap hangt af van een landengroep. Het onderstaande voorbeeld beschrijft een regel voor lidmaatschap van de Europese Unie.
 

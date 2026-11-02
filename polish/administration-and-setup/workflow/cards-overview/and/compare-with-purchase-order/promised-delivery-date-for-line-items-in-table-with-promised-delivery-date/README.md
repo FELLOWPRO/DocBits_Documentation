@@ -1,6 +1,6 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../../.gitbook/assets/And1.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-07-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Dowolny/Wszystkie obiecana data(y) dostawy dla pozycji zamówienia w tabeli Operator data dostawy w zamówieniu zakupu, z tolerancją Wartość dni i akceptowaną tolerancją Dozwolone dni tolerancji dni" width="375"><figcaption></figcaption></figure>
 
 ## Cel:
 

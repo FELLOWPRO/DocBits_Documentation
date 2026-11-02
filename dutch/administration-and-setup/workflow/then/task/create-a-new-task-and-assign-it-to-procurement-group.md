@@ -1,6 +1,8 @@
 # Maak een nieuwe taak en wijs deze toe aan de inkoopgroep
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-892212db33b0-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v2-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de inkoopgroep, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_task_to_procurement_group_v3-nl-nl.png" alt="Maak een nieuwe taak en wijs deze toe aan de inkoopgroep, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
 ## **Doel:**
 

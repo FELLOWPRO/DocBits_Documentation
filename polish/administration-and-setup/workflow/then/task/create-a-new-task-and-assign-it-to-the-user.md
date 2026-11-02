@@ -1,6 +1,12 @@
 # Utwórz Nowe Zadanie i przypisz je Użytkownikowi
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a46d3b10473-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v1-pl-pl.png" alt="Utwórz Nowe Zadanie i przypisz je Użytkownikowi, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v2-pl-pl.png" alt="Utwórz Nowe Zadanie i przypisz je Użytkownikowi, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v3-pl-pl.png" alt="Utwórz Nowe Zadanie i przypisz je Użytkownikowi, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_tasks_create_v4-pl-pl.png" alt="Utwórz Nowe Zadanie i przypisz je Użytkownikowi, Wersja 4" width="634"><figcaption><p>Wersja 4</p></figcaption></figure>
 
 ## **Cel**
 

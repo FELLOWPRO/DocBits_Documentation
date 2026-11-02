@@ -1,6 +1,6 @@
 # Se o país estiver no campo
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-70b0b5860da5-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2-pt-pt.png" alt="Se o país estiver no campo, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 Utilização prevista: uma etapa adicional de processamento depende de um grupo de países. O exemplo abaixo descreve uma regra de pertença à União Europeia.
 

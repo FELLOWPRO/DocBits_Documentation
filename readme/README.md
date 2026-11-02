@@ -1,12 +1,18 @@
 # DocBits
 
+**DocBits. Make room for ambition.**
+
+Do OCR/IDP à lógica de negócio, aprovações e Advanced Workflows.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/pt.mp4" %}
+
+*90 segundos · interface de produto em inglês · cenas históricas imaginadas por IA*
+
+[Ler transcrição](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/pt-transcript.md) · [Descarregar vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/pt.mp4)
+
 Bem-vindo ao DocBits
 
 Bem-vindo ao **DocBits**, sua fonte abrangente de estratégias e insights de documentação. No DocBits, nos dedicamos a fornecer recursos de documentação claros, concisos e atualizados para [usuários finais](end-user-and-partner-section/end-user-section/), [administradores](administration-and-setup/settings/) e [parceiros](end-user-and-partner-section/partner-section/).
-
-## DocBits com Workflow
-
-{% @arcade/embed flowid="JqTpGV34UBKmI0iAumoX" url="https://app.arcade.software/share/JqTpGV34UBKmI0iAumoX" %}
 
 [**DocBits**](https://www.docbits.com) **da** [**FELLOWPRO AG**](https://www.fellowpro.com) é uma solução avançada de processamento inteligente de documentos (IDP) criada para otimizar e automatizar o tratamento de documentos comerciais. 
 
@@ -28,11 +34,11 @@ A seguir, um resumo de seus recursos e benefícios exclusivos:
    * Automatiza a conciliação de pedidos de compra com as faturas recebidas.
    * Garante transações financeiras precisas e trata as divergências rapidamente.
    * Oferece suporte à correspondência de diversos tipos de documentos, não se limitando a faturas.
-4. [**Auto Accounting**](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
+4. [**Contabilidade automática**](end-user-and-partner-section/end-user-section/accounting-for-cost-invoice-and-indirect-sales.md)
    * Facilita o lançamento automático em contas contábeis.
    * Permite dividir valores por departamento.
    * Permite que a equipe de contas a pagar defina as contas contábeis.
-5. **Processos integrados de validação e** [**aprovação**](broken-reference)
+5. **Processos integrados de validação e** [**aprovação**](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
    * Oferece processos de validação integrados para garantir a precisão dos dados.
    * Conta com [workflows](administration-and-setup/workflow/) de aprovação para agilizar o tratamento de documentos.
 6. **Integração perfeita**
@@ -59,5 +65,3 @@ A seguir, um resumo de seus recursos e benefícios exclusivos:
 * Ideal para empresas que desejam otimizar seus processos de captura de documentos e aumentar a eficiência operacional.
 
 Para mais informações, visite a [FellowPRO AG](https://fellowpro.com/) ou entre em contato com o time de vendas em sales@fellowpro.com. Siga-nos no [LinkedIn](https://www.linkedin.com/company/fellowpro).
-
-{% embed url="https://youtu.be/p7GEJonM_wU" %}

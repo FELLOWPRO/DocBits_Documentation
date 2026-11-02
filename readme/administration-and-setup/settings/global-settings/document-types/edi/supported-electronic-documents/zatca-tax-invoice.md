@@ -4,6 +4,12 @@ description: Suporte para documento eletrônico ZATCA TAX INVOICE no DocBits
 
 # 🇸🇦 ZATCA TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Arábia Saudita](countries/saudi-arabia.md). Estas designações descrevem processos e variantes de fatura diferentes. Analisar um ficheiro não comprova a assinatura, a aprovação fiscal nem a comunicação através da ZATCA.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | Arábia Saudita |

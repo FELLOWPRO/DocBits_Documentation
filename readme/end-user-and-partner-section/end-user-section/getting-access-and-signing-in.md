@@ -6,13 +6,13 @@ Esta página explica como obter uma conta DocBits e como iniciar sessão quando 
 * [Esqueceu-se da palavra-passe](#esqueceu-se-da-palavra-passe) — redefina a sua palavra-passe com uma ligação de redefinição.
 * [Primeira palavra-passe para contas criadas pelo administrador](#primeira-palavra-passe-para-contas-criadas-pelo-administrador) — defina a primeira palavra-passe de uma conta que o seu administrador criou para você.
 
-Iniciar sessão com uma conta existente e a Autenticação de Dois Fatores estão cobertos em [Autenticação de Dois Fatores (2FA)](../../overview-and-basics/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
+Iniciar sessão com uma conta existente e a Autenticação de Dois Fatores estão cobertos em [Autenticação de Dois Fatores (2FA)](../../security/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
 
 ## Registo
 
 Pode criar uma conta DocBits você mesmo na página de registo. Abra-a a partir da ligação **Registar** no ecrã de início de sessão ou navegue para `https://app.docbits.com/register` (use o endereço web que a sua organização recebeu).
 
-<figure><img src="../../.gitbook/assets/dbdc746-getting-access-register-form-pt-20261011.png" alt="O formulário de registo do DocBits com os campos vazios"><figcaption><p>O formulário de registo. Todos os campos são obrigatórios, exceto onde indicado.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-register-native-pt-20261101.png" alt="Formulário português de registo do DocBits com cinco campos vazios, reCAPTCHA desmarcado, Termos e Condições, Começar, Google, Microsoft e Conecte-se"><figcaption><p>Registo: preencha Primeiro nome, Sobrenome, E-mail, Senha e Confirme sua senha. Complete o reCAPTCHA, se aparecer, aceite os Termos e Condições e escolha Começar. Conecte-se volta ao início de sessão.</p></figcaption></figure>
 
 Preencha o formulário:
 
@@ -46,12 +46,14 @@ Depois de enviar o formulário, o DocBits mostra uma página de confirmação e 
 
 ## Esqueceu-se da palavra-passe
 
+O DocBits guarda as palavras-passe como hashes unidirecionais com salt. Uma palavra-passe existente não pode ser recuperada a partir do hash, pelo que este procedimento define uma nova. Consulte [Armazenamento seguro de credenciais](../../security/secure-storage-of-credentials.md).
+
 Se se esqueceu da sua palavra-passe:
 
 1. No ecrã de início de sessão, clique em **Esqueceu sua senha**.
 2. Na página **Esqueceu sua senha**, introduza o seu endereço de **E-mail** e clique em **Redefinir senha**. Se for mostrado um widget reCAPTCHA, complete-o primeiro.
 
-   <figure><img src="../../.gitbook/assets/dbdc746-getting-access-forgot-password-form-pt-20261011.png" alt="A página Esqueceu sua senha com o campo de e-mail"><figcaption><p>A página Esqueceu sua senha. Introduza o e-mail da sua conta e o DocBits enviar-lhe-á uma ligação de redefinição.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-pt-20261101.png" alt="Formulário português Esqueceu sua senha com o campo E-mail vazio, reCAPTCHA desmarcado, Redefinir senha e Voltar ao login"><figcaption><p>Introduza o E-mail e escolha Redefinir senha para pedir uma ligação de redefinição, ou use Voltar ao login. Complete o reCAPTCHA quando aparecer.</p></figcaption></figure>
 
    Se não quiser redefinir a sua palavra-passe, clique em **Voltar ao login** para voltar ao início de sessão.
 
@@ -67,7 +69,7 @@ As ligações de redefinição expiram após um curto período de tempo. Se a li
 
 Quando o seu administrador o adiciona como utilizador (consulte [Usuários](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), recebe um e-mail com os seus dados de início de sessão e uma ligação para definir a sua **primeira palavra-passe**. A ligação abre a página **Definir senha**:
 
-<figure><img src="../../.gitbook/assets/dbdc746-getting-access-set-password-form-pt-20261011.png" alt="A página Definir senha com a mensagem de boas-vindas"><figcaption><p>A página Definir senha, mostrada depois de um administrador ter criado a sua conta.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-pt-20261101.png" alt="Formulário português Definir senha com mensagem de boas-vindas, Senha e Confirme sua senha vazios, ícones de olho e Acesse a página de login"><figcaption><p>Primeira palavra-passe de uma conta criada pelo administrador: preencha Senha e Confirme sua senha e escolha Definir senha. Acesse a página de login volta ao início de sessão.</p></figcaption></figure>
 
 1. Clique na ligação no e-mail de convite. A página dá-lhe as boas-vindas com "Bem-vindo ao DocBits! Sua conta foi criada. Por favor, defina sua senha para começar."
 2. Introduza a sua palavra-passe duas vezes — aplicam-se as mesmas [regras de palavra-passe](#regras-de-palavra-passe).

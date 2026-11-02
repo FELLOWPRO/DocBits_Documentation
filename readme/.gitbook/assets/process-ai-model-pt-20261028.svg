@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">Que modelo de IA se aplica ao modelo de extração?</title>
+<desc id="desc">Predefinição da organização e definição específica por modelo de extração. Uma alteração pode reiniciar a extração. Não altera automaticamente outros modelos ou documentos históricos.</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOCBITS / VISÃO GERAL DO PROCESSO</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">Que modelo de IA se aplica ao modelo de extração?</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">Predefinição da organização e definição específica por modelo de extração.</text>
+<rect x="90" y="277" width="1820" height="110" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="120" y="327.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#126a8a">Verifique primeiro: organização + modelo de extração atual</text>
+<rect x="90" y="460" width="820" height="240" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="114" y="509.42" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#1c1d1e">Sem definição específica para o modelo de extração</text>
+<text x="114" y="564.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">A configuração de organização aplicável determina o</text>
+<text x="114" y="606.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">modelo.</text>
+<rect x="1090" y="460" width="820" height="240" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1114" y="509.42" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#1c1d1e">Definição específica para o modelo de extração</text>
+<text x="1114" y="552.42" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#1c1d1e">presente</text>
+<text x="1114" y="607.6" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#6a6f72">A seleção salva se aplica a este contexto de modelo.</text>
+<polyline points="500,387 500,440" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="500,440 492.80861692093697,426.8362615716444 507.19138307906303,426.8362615716444" fill="#126a8a"/>
+<polyline points="1500,387 1500,440" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1500,440 1492.8086169209369,426.8362615716444 1507.1913830790631,426.8362615716444" fill="#126a8a"/>
+<text x="90" y="752.96" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#126a8a">Compare o resultado com a mesma amostra de documento: Valores · Tabelas · Tempo de execução · Custos</text>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">Uma alteração pode reiniciar a extração. Não altera automaticamente outros modelos ou documentos históricos.</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">Explicação esquemática · O processo e as opções dependem da sua configuração.</text>
+</svg>

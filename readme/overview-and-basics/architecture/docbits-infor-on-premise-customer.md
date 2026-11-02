@@ -1,4 +1,4 @@
-# DocBits Cliente Infor On-Premise
+# DocBits para clientes Infor em instalações próprias
 
 Para enviar dados para um cliente Infor on-premise, oferecemos duas maneiras: Site2Site com IPsec ou [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
 

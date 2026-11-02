@@ -1,30 +1,16 @@
 ---
-description: Suporte a documentos eletrônicos da COSTA RICA no DocBits
+description: "A documentação anterior menciona a Costa Rica, mas não foi encontrada nenhuma entrada de classificação ou de configuração correspondente no catálogo de desenvolvimento examinado."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Propriedade | Valor |
-| --- | --- |
-| **País / Região** | Costa Rica |
-| **Tipos de documento** | Fatura (Factura Electrónica), nota de crédito, nota de débito |
-| **Formato** | XML |
-| **Padrão** | Factura Electrónica (Ministerio de Hacienda) |
 
-O sistema de faturamento eletrônico da Costa Rica é regulamentado pelo Ministerio de Hacienda. Os documentos eletrônicos devem ser enviados à plataforma do Hacienda para validação e incluir uma assinatura digital. O DocBits pode processar faturas eletrônicas costa-riquenhas e extrair os principais campos.
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Costa Rica](countries/costa-rica.md). Esta verificação não confirma o processamento incorporado atual. Peça ao suporte que verifique o mapeamento implementado e teste um ficheiro de origem representativo antes da implementação.
+{% endhint %}
 
-## Status de suporte
+A documentação anterior menciona a Costa Rica, mas não foi encontrada nenhuma entrada de classificação ou de configuração correspondente no catálogo de desenvolvimento examinado.
 
-| Componente | Status |
-| --- | --- |
-| Visualização | ✅ Suportado |
-| Extração de campos | ✅ Suportado |
-| Transformação | N/D |
+Esta verificação não confirma o processamento incorporado atual. Peça ao suporte que verifique o mapeamento implementado e teste um ficheiro de origem representativo antes da implementação.
 
-## Visualização padrão
-
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Visualização de e-fatura da Costa Rica no DocBits"><figcaption><p>Visualização padrão do DocBits para uma e-fatura da Costa Rica</p></figcaption></figure>
-
-## Relacionado
-
-* [Documentos Eletrônicos Suportados](./)
+[Costa Rica](countries/costa-rica.md)

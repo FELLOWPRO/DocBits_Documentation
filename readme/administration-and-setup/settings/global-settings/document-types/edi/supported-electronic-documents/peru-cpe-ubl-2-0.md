@@ -4,6 +4,12 @@ description: Suporte para o documento eletrônico PERU CPE UBL 2.0 no DocBits
 
 # 🇵🇪 PERU CPE UBL 2.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Peru](countries/peru.md). Selecione a versão UBL e a estrutura de documento reais. Processar um ficheiro não comprova a aceitação pela SUNAT.
+{% endhint %}
+
 | Propriedade          | Valor                            |
 | -------------------- | -------------------------------- |
 | **País / Região**    | Peru                             |

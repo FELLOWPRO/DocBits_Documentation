@@ -5,20 +5,20 @@
 O arquivo de mapeamento de exportação do M3 é dividido em 5 seções, e cada seção é subdividida em 2 partes
 
 * Header (cabeçalho)
-  * Header Static Fields
-  * Header Fields
+  * Campos estáticos do cabeçalho
+  * Campos de cabeçalho
 * Tax Lines (linhas de imposto)
-  * Tax Line Static Fields
-  * Tax Line Fields
+  * Campos estáticos das linhas de imposto
+  * Campos das linhas de imposto
 * Receipt Lines (linhas de recebimento)
-  * Receipt Line Static Fields
-  * Receipt Line Fields
-* Order Charge Lines (valores adicionais)
-  * Order Charge Static Fields
-  * Order Charge Fields
+  * Campos estáticos das linhas de recebimento
+  * Campos das linhas de recebimento
+* Linhas de encargos do pedido (valores adicionais)
+  * Campos estáticos dos encargos do pedido
+  * Campos dos encargos do pedido
 * Cost Lines (linhas de custo)
-  * Cost Line Static Fields
-  * Cost Line Fields
+  * Campos estáticos das linhas de custo
+  * Campos das linhas de custo
 
 ### Adicionando e Removendo Campos
 
@@ -43,7 +43,7 @@ Removendo um campo:
 
 * Da mesma forma, você pode obter os nomes dos campos das linhas
 
-### Header:
+### Cabeçalho:
 
 <figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
@@ -53,7 +53,7 @@ Prefixo dos campos da seção: SF\_
 
 Campos disponíveis: você pode mapear qualquer campo da API do M3 para qualquer valor estático
 
-#### **Header Fields**
+#### **Campos de cabeçalho**
 
 Propriedade com a lista de campos: HeaderFields
 
@@ -63,7 +63,7 @@ Campos disponíveis: você pode mapear qualquer campo do DocBits para qualquer c
 
 ### Tax Line:
 
-#### Tax Line Static Fields:
+#### Campos estáticos das linhas de imposto:
 
 Propriedade com a lista de campos: InvoiceTaxStaticFields
 
@@ -73,7 +73,7 @@ Campos do M3 disponíveis: consulte a API ou a interface do M3
 
 Campos do DocBits disponíveis: você pode informar qualquer valor, pois são campos estáticos
 
-#### Tax Line Fields:
+#### Campos das linhas de imposto:
 
 Propriedade com a lista de campos: InvoiceTaxFields
 
@@ -85,9 +85,9 @@ Campos do M3 disponíveis: consulte a API ou a interface do M3
 
 Campos do DocBits disponíveis: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
 
-### Receipt Line:
+### Linha de recebimento:
 
-#### Receipt Line Static Fields:
+#### Campos estáticos das linhas de recebimento:
 
 Propriedade com a lista de campos: InvoiceReceiptStaticFields
 
@@ -97,7 +97,7 @@ Campos do M3 disponíveis: consulte a API ou a interface do M3
 
 Campos do DocBits disponíveis: você pode informar qualquer valor, pois são campos estáticos
 
-#### Receipt Line Fields:
+#### Campos das linhas de recebimento:
 
 Propriedade com a lista de campos: InvoiceReceiptFields
 
@@ -109,9 +109,9 @@ Campos do M3 disponíveis: consulte a API ou a interface do M3
 
 Campos do DocBits disponíveis: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
 
-### Order Charge Line:
+### Linha de encargo do pedido:
 
-#### Order Charge Static Fields:
+#### Campos estáticos dos encargos do pedido:
 
 Propriedade com a lista de campos: OrderChargeStaticFields
 
@@ -121,7 +121,7 @@ Campos do M3 disponíveis: consulte a API ou a interface do M3
 
 Campos do DocBits disponíveis: você pode informar qualquer valor, pois são campos estáticos
 
-#### Order Charge Fields:
+#### Campos dos encargos do pedido:
 
 Propriedade com a lista de campos: OrderChargeFields
 
@@ -135,7 +135,7 @@ Campos do DocBits disponíveis: ledger\_account, dimension\_2-7, amount, quantit
 
 ### Cost Line:
 
-#### Cost Line Static Fields:
+#### Campos estáticos das linhas de custo:
 
 Propriedade com a lista de campos: InvoiceCostStaticFields
 
@@ -145,7 +145,7 @@ Campos do M3 disponíveis: consulte a API ou a interface do M3
 
 Campos do DocBits disponíveis: você pode informar qualquer valor, pois são campos estáticos
 
-#### Cost Line Fields:
+#### Campos das linhas de custo:
 
 Propriedade com a lista de campos: InvoiceCostFields
 

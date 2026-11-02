@@ -6,6 +6,12 @@ description: >-
 
 # 🇪🇨 ECUADOR SRI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Equador](countries/ecuador.md). A entrada de classificação de notas de crédito não tem um conjunto de extração dedicado no estado examinado. Verifique o mapeamento efetivo e o tipo do documento de origem.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | Equador |
@@ -89,5 +95,5 @@ O elemento raiz é `<factura>` com `id="comprobante"`. O atributo `version` dete
 
 ## Relacionado
 
-* [Padrões de Fatura Eletrônica Atualmente Suportados](../../currently-supported-e-invoice-standards/)
+* [Padrões de Fatura Eletrônica Atualmente Suportados](../currently-supported-e-invoice-standards/README.md)
 * [Documentos Eletrônicos Suportados](./)

@@ -72,3 +72,7 @@ A **configuração dos Extraction Paths** é usada para extrair dados e preenche
 7. Clique em **Save**.
 
 Seguindo esses passos, você garante a extração e a validação precisas de dados em faturas ZUGFeRD.
+
+## Regras efetivas e ativação
+
+As regras específicas da organização têm prioridade sobre as predefinições do formato eDoc detetado. Verifique a TRANSFORMATION ativa e verifique qual o nó que fornece invoice_type no XML transformado; o caminho depende do formato. Save guarda um rascunho; utilize a marca de verificação para o ativar após os testes. Uma Preview renderizada não comprova o tipo de documento guardado. Consulte o [guia de resolução de problemas de classificação](../credit-note-recognized-as-invoice.md) para obter informações sobre os códigos 381/261, os scripts posteriores e as precauções de reprocessamento.

@@ -1,6 +1,6 @@
 # Edição de Modelos de E-mail
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Modelos de e-mail do fornecedor"><figcaption><p>Página Modelos de E-mail do Fornecedor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t013-pt.png" alt="Lista de modelos de e-mail para fornecedores."><figcaption><p>Lista de modelos de e-mail para fornecedores.</p></figcaption></figure>
 
 ### Visão Geral
 
@@ -12,7 +12,7 @@ O `{{magic_link}}` é um espaço reservado que é substituído dinamicamente por
 
 ### Edição de Modelos de E-mail
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-pt.png" alt="Editor de um novo modelo de e-mail para fornecedores."><figcaption><p>Editor de um novo modelo de e-mail para fornecedores.</p></figcaption></figure>
 
 #### Acessando o Editor de Modelos de E-mail
 
@@ -78,6 +78,5 @@ Para definir `{{magic_link}}` como um link clicável no e-mail, é preciso garan
 Ao definir corretamente o \{{magic\_link\}} nos seus modelos de e-mail, você garante que os destinatários recebam um e-mail personalizado e acionável, que os leve à tarefa apropriada no seu portal do fornecedor. Isso melhora a experiência do usuário e garante processos de integração e comunicação tranquilos.
 
 \
-
 
 Esta documentação fornece instruções passo a passo para administradores sobre como definir e usar o \{{magic\_link\}} em modelos de e-mail, garantindo que os e-mails sejam funcionais e visualmente atraentes.

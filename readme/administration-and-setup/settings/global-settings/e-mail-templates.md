@@ -8,7 +8,7 @@ Os modelos de e-mail permitem personalizar os e-mails automáticos que o DocBits
 
 Acesse **Settings → Communication & Notifications → Email Templates**. A lista mostra todos os modelos com **Name**, **Subject**, **Document Type**, data de **Last Modified** e **Actions** (editar ou excluir).
 
-<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list.png" alt="Lista de Email Templates"><figcaption><p>A lista de Email Templates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list-pt.png" alt="Lista de Email Templates"><figcaption><p>A lista de Email Templates</p></figcaption></figure>
 
 ## **Criando um modelo**
 
@@ -21,7 +21,7 @@ Acesse **Settings → Communication & Notifications → Email Templates**. A lis
 3. Crie o corpo no editor de texto rico — formate o texto (negrito, itálico, listas, alinhamento), insira imagens com **Upload**, edite o HTML bruto com o botão `<>` e use o botão **+** para inserir campos dinâmicos.
 4. Clique em **Save**.
 
-<figure><img src="../../../.gitbook/assets/email_templates_4.png" alt="Editor de Email Template"><figcaption><p>O editor de modelos — nome, tipo de documento, botão de anexo, assunto e corpo em texto rico</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/email_templates_4-pt.png" alt="Editor de Email Template"><figcaption><p>O editor de modelos — nome, tipo de documento, botão de anexo, assunto e corpo em texto rico</p></figcaption></figure>
 
 ## **Campos dinâmicos**
 
@@ -36,7 +36,7 @@ Os campos dinâmicos são substituídos pelos dados do documento quando o e-mail
 
 Clique em **Send Test** no editor, informe um endereço em **Receiver Email** e clique em **Send**. O DocBits envia uma pré-visualização do modelo para que você verifique o layout e confirme que os campos dinâmicos são resolvidos corretamente antes de salvar.
 
-<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Caixa de diálogo Send Test"><figcaption><p>A caixa de diálogo Send Test</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog-pt.png" alt="Caixa de diálogo Send Test"><figcaption><p>A caixa de diálogo Send Test</p></figcaption></figure>
 
 ## **Usando modelos em notificações**
 

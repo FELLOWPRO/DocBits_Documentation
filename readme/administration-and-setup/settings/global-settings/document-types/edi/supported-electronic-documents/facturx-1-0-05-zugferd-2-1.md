@@ -4,6 +4,12 @@ description: Suporte a documentos eletrônicos FACTURX 1.0.05 - ZUGFERD 2.1 no D
 
 # 🇫🇷 FACTURX 1.0.05 - ZUGFERD 2.1
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [França](countries/france.md). O marcador XML 1p0 e Factur-X XMP Version 1.0 não identificam uma edição da publicação. Mantenha a designação genérica quando a edição for desconhecida.
+{% endhint %}
+
 | Propriedade | Valor |
 | --- | --- |
 | **País / Região** | França / Alemanha |
@@ -29,5 +35,5 @@ O Factur-X 1.0.05 é equivalente ao ZUGFeRD 2.1. Lançado em 2020, foi a primeir
 ## Relacionado
 
 * [Configuração do ZUGFeRD](../zugferd/)
-* [Mapeamento de campos do ZUGFeRD](../zugferd/versions/)
+* [Mapeamento de campos do ZUGFeRD](../zugferd/README.md)
 * [Documentos Eletrônicos Suportados](./)

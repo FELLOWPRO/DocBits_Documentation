@@ -39,4 +39,4 @@ O script ou o mapeamento de exportação ainda referencia o *Column name* exclu�
 ## Onde procurar mais informações
 
 * [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): qualidade da extração, OCR, E-Text
-* [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md)
+* [Treinar campos de linha e tabelas](../../../../setup/document-training/training-line-fields-table-training/README.md)

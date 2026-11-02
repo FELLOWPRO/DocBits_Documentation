@@ -1,6 +1,6 @@
 # Configurações Gerais do Fornecedor
 
-<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="Configurações Gerais do Fornecedor"><figcaption><p>Página Configurações Gerais do Fornecedor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t012-pt.png" alt="Definições gerais do portal de fornecedores."><figcaption><p>Definições gerais do portal de fornecedores.</p></figcaption></figure>
 
 ### Visão Geral
 

@@ -4,6 +4,12 @@ description: Suporte para o documento eletrônico PARAGUAY SIFEN 150 no DocBits
 
 # 🇵🇾 PARAGUAY SIFEN 150
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Paraguai](countries/paraguay.md). As entradas de classificação de notas de crédito não têm conjuntos de extração dedicados no estado examinado. Verifique o mapeamento efetivo e não trate as designações como equivalentes.
+{% endhint %}
+
 | Propriedade          | Valor                    |
 | -------------------- | ------------------------ |
 | **País / Região**    | Paraguai                 |

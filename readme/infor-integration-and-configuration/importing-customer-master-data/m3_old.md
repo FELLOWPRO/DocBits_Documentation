@@ -11,7 +11,7 @@ Este guia explica como importar um template de conexão de API (API Connection T
 
 <mark style="color:red;">**Observação**</mark>: para a configuração detalhada de áreas específicas, como Auto Accounting, integração de fornecedores, pedidos de compra ou Table Extraction para elementos de custo, consulte a documentação correspondente:
 
-* [Auto Accounting](m3/auto-accounting.md)
+* [Contabilidade automática](m3/auto-accounting.md)
 * [Fornecedores e pedidos de compra](m3/suppliers-and-purchase-orders.md)
 * [Como importar todos os fornecedores](m3/how-to-import-all-suppliers.md)
 * [Table Extraction para elemento de custo](m3/table-extraction-for-costing-element.md)

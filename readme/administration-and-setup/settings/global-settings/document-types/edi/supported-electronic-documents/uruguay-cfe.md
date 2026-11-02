@@ -4,6 +4,12 @@ description: Suporte para documentos eletrônicos URUGUAY CFE no DocBits
 
 # 🇺🇾 URUGUAY CFE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte o guia do país para conhecer os limites das versões, a configuração efetiva e o vídeo explicativo. [Uruguai](countries/uruguay.md). As entradas de notas de crédito não têm conjuntos de extração dedicados no estado examinado. Confirme a versão CFE e o mapeamento efetivo de fatura ou nota de crédito.
+{% endhint %}
+
 | Propriedade          | Valor                                                   |
 | -------------------- | ------------------------------------------------------- |
 | **País / Região**    | Uruguai                                                 |

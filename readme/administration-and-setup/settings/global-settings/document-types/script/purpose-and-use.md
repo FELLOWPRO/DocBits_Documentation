@@ -2,7 +2,7 @@
 
 O uso de scripts para automatizar processos é fundamental para empresas de todos os tamanhos e em quase todos os setores. Esses scripts não apenas permitem aumentos significativos na eficiência, mas também garantem a precisão e a consistência dos dados, o que, por sua vez, leva a decisões fundamentadas e a uma melhor eficiência operacional.
 
-<figure><img src="../../../../../admin-section/settings/global-settings/document-types/broken-reference" alt=""><figcaption><p>Scripts</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-25-pt.png" alt="Lista de scripts com nomes e datas ocultos."><figcaption><p>Lista de scripts com nomes e datas ocultos.</p></figcaption></figure>
 
 **Aqui estão alguns aspectos fundamentais de como os scripts podem ser usados para automatizar processos e garantir a precisão dos dados:**
 

@@ -1,32 +1,27 @@
-# Export with alternate Export
+# Exportar con exportación alternativa
 
-<figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_alternate_export_v2-es-es.png" alt="Exportar con exportación alternativa, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
-## **Propósito**
+## Cuando usar esta tarjeta
 
-La tarjeta de flujo de trabajo **"Export Document with Alternate Export"** posibilita exportar un documento usando una configuración de exportación alternativa. Ofrece flexibilidad al permitir a los usuarios omitir la configuración de exportación predeterminada y usar una alternativa, garantizando la compatibilidad con requisitos o escenarios específicos.
+Utilice esta acción Luego para la exportación alternativa configurada en el tipo de documento actual. Configure y valide esa ruta antes de agregar la acción.
 
-## **Componentes de la tarjeta**
+## La configuración proviene del tipo de documento.
 
-**Alternate Export Configuration**
+La tarjeta no tiene selector de configuración de exportación. Lee si la exportación alternativa está habilitada, la configuración de exportación alternativa y el estado después de la exportación desde la configuración del tipo de documento. Internamente estos son `DOC_ALTERNATE_EXPORT_SETTING`, `DOC_ALTERNATE_EXPORT_EXPORT_CONFIG` y `DOC_ALTERNATE_EXPORT_STATUS`.
 
-* **Descripción**: Especifica la configuración de exportación que se utilizará para el documento.
-* **Detalle**: Esta configuración anula los ajustes predeterminados y aplica la configuración de exportación alternativa especificada en el flujo de trabajo.
+Una exportación alternativa explícitamente deshabilitada produce una condición fallida. Los datos de activación faltantes, la configuración o el estado de los resultados se informan en lugar de sustituir silenciosamente la ruta predeterminada. La solicitud de exportación comprueba las tareas pendientes.
 
-## **Funcionalidad**
+## Verificar el resultado
 
-* **Evaluación de la condición**:\
-  El sistema evalúa las condiciones establecidas en las secciones **"Where"** y **"And"** del flujo de trabajo. La tarjeta se ejecuta solo si todas las condiciones son verdaderas.
-* **Exportación del documento**:\
-  Una vez ejecutada, la tarjeta usa la configuración de exportación alternativa para procesar y exportar el documento. Esto posibilita un manejo de exportación adaptado a flujos de trabajo específicos.
+Inspeccione el registro de la tarjeta, el historial de exportaciones, el estado del documento y el destino de prueba autorizado. Una solicitud, un tiempo de espera o un cambio de estado por sí solos no establecen que los datos hayan llegado al destino. Verifique el historial de exportaciones antes de volver a intentar una operación que podría crear duplicados.
 
-## **Configuración**
+<!-- workflow-card-complete-example-20261021 action_alternate_export -->
 
-Para configurar esta tarjeta:
+### Ejemplo de exportación alternativo
 
-1. Asegúrese de que las secciones **"Where"** y **"And"** estén configuradas correctamente, ya que la tarjeta solo se ejecuta si estas condiciones se evalúan como verdaderas.
-2. Verifique que la configuración de exportación alternativa sea válida y esté activa en el sistema.
+**Configuración:** Prepare el tipo de documento sintético `DEMO_INVOICE` con la exportación alternativa habilitada, una configuración de exportación de prueba autorizada y el estado del resultado deseado en su configuración de tipo de documento. Agregue esta acción Luego después de las comprobaciones requeridas. Esta tarjeta lee esas configuraciones; no ofrece un selector de configuración de exportación.
 
-## **Conclusión**
+**Resultado esperado y contraejemplo:** La acción solicita la exportación a través de esa configuración alternativa y verifica las tareas pendientes. Verifique el resultado de la exportación y el destino de la prueba por separado. La desactivación de la exportación alternativa provoca una condición fallida; una configuración o configuración de activación ausente no es una exportación exitosa. No ejecute este ejemplo en un destino de contabilidad.
 
-La tarjeta de flujo de trabajo **"Export Document with Alternate Export"** mejora la flexibilidad y el control en los procesos de exportación de documentos. Al permitir la selección de una configuración de exportación alternativa, se adapta a diversos requisitos de exportación a la vez que mantiene una automatización eficiente del flujo de trabajo.
+Esta es una configuración de prueba ilustrativa y el resultado esperado; no fue ejecutado. Utilice datos y destinatarios configurados en su organización de prueba.

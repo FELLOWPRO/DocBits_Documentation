@@ -2,58 +2,38 @@
 
 ## Descripción general
 
-La configuración del **Modelo de IA** te permite definir qué modelo de IA se utiliza de forma predeterminada para la **extracción de campo** y la **extracción de tabla** durante el procesamiento de documentos.\
-En esta sección, puedes revisar el costo de tokens para cada modelo y ver qué modelo está actualmente asignado a cada proveedor.
+La configuración del modelo de IA define el modelo de la organización para la extracción de campos y tablas. La tabla de asignación permite revisar las preferencias asociadas a las plantillas. Consulte los costes en la información vigente de su entorno y en las condiciones contratadas.
 
 ## Cómo acceder
 
-1.  Navega a **Configuración** → **Procesamiento de documentos** → **Clasificación y extracción**
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_classification_and_extraction.png)
-2.  Desplázate hacia abajo hasta la sección de **Extracción de tabla**
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_1.png)
+En **Ajustes**, abra **Clasificación y Extracción** desde **Tipos de Documento** y despliegue **Extracción**. El selector **Modelo de IA** se encuentra en esa sección.
 
 ## Opciones del Modelo de IA
 
-DocBits ofrece tres opciones de modelo de IA para la extracción de campos y tablas. Se diferencian en el equilibrio entre **precisión de extracción**, **velocidad de procesamiento** y **costo de tokens por documento** — así puedes ajustar la opción al tipo de documentos que procesas. Pasa el cursor sobre el icono de información junto al ajuste para ver el costo de tokens de la opción seleccionada actualmente.
+El menú ofrece **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto** y **Auto Nexus**. Son nombres de niveles del producto. Las opciones disponibles, los modelos subyacentes y los costes pueden cambiar; no utilice nombres históricos de proveedores ni precios fijos como una promesa permanente.
 
-* **Full** – La opción más exhaustiva, con la mayor precisión de extracción. Ideal para diseños complejos, escaneos de baja calidad o documentos en los que la precisión es lo más importante. Al ser la opción más potente, también es la más lenta, con **2 tokens por documento**.
-* **Fast** – Una opción equilibrada que combina alta precisión con un procesamiento más rápido y un costo menor. Es la opción predeterminada recomendada para la mayoría de los documentos habituales, con **1 token por documento**.
-* **Nexus** – Una tercera opción, de activación opcional, que se ejecuta sobre otra familia de modelos. Útil cuando quieres una segunda opinión para proveedores en los que Fast y Full discrepan, o cuando el modelo alternativo lee mejor un diseño concreto, con **1 token por documento**.
+Compare los niveles con la misma muestra representativa y compruebe los valores extraídos, el tiempo de procesamiento y los costes. Full no garantiza siempre la mayor precisión, ni Fast o Nexus Flash garantizan siempre el menor tiempo. Auto y Auto Nexus requieren la misma comprobación de resultados y costes.
 
-| Opción | Ideal para | Precisión | Velocidad | Costo de tokens |
-|--------|-----------|-----------|-----------|-----------------|
-| **Full** | Diseños complejos, escaneos deficientes, alta precisión | Máxima | La más lenta | 2 / documento |
-| **Fast** | Documentos habituales (predeterminado recomendado) | Alta | Rápida | 1 / documento |
-| **Nexus** | Proveedores en los que la familia de modelos alternativa rinde mejor (opcional) | Alta | Rápida | 1 / documento |
+Cuando no existe una preferencia para la plantilla de extracción actual, se utiliza la configuración de la organización. La ausencia de un modelo específico del proveedor no significa universalmente Fast. Un cambio de modelo no garantiza la validación, la conciliación de pedidos, la aprobación ni la exportación.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
+<figure><img src="../../../../.gitbook/assets/site-complete-global-ai-model-options-es.png" alt="Configuración actual de Extracción con los seis niveles Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Los valores privados están ocultos; no se cambió ningún modelo."><figcaption><p>Configuración actual de Extracción con los seis niveles Full, Fast, Nexus, Nexus Flash, Auto y Auto Nexus. Los valores privados están ocultos; no se cambió ningún modelo.</p></figcaption></figure>
 
 ## Tabla de Asignación del Modelo de IA
 
-También puedes configurar **modelos de IA** específicos por proveedor directamente en la pantalla de **Validación**, lo que te permite ajustar la precisión de extracción para proveedores individuales.\
-\
-Para más información, consulta la documentación correspondiente [aquí](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
+La pantalla de validación ofrece un acceso a los modelos específicos del proveedor. La preferencia se guarda por organización y plantilla de extracción actual (`tfidf_id`); la asociación con un proveedor no actualiza automáticamente todas sus plantillas ni todos sus documentos históricos.
 
-La tabla de asignación muestra la configuración del modelo de IA para cada proveedor e incluye los siguientes detalles:
+Revise las columnas que realmente muestra su versión: asociación del proveedor, nivel del modelo, opciones de extracción e información de creación y modificación. Las columnas pueden variar.
 
-* **Supplier ID** – El identificador único del proveedor
-* **AI Model** – El modelo de IA actualmente asignado al proveedor
-* **E-Text**: Indica si la función E-Text está habilitada
-* **Action** – Contiene la opción para eliminar la entrada
+[aquí](../../../../end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_3.png)
+<!-- Obsolete illustration retired: Historical navigation, table or deletion picture is not current read-only model-menu evidence -->
 
-### Eliminar entrada – Restablecer configuración específica del proveedor
+### Eliminar una entrada: quitar preferencias de la plantilla
 
-Para restablecer la configuración del modelo de IA de un proveedor al valor predeterminado:
+Antes de eliminar una entrada, identifique la plantilla y todas sus preferencias. La eliminación puede quitar varias preferencias de esa plantilla, no solo el modelo de IA. Si un administrador necesita eliminarla, utilice la acción de eliminación de la fila correspondiente y revise la confirmación antes de continuar.
 
-1.  Haz clic en el icono de la papelera en la columna **Action** junto a la entrada del proveedor.
+<!-- Obsolete illustration retired: Historical navigation, table or deletion picture is not current read-only model-menu evidence -->
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_4.png)
-2.  Aparecerá un cuadro de diálogo de confirmación—confirma que deseas eliminar la entrada.
+<!-- Obsolete illustration retired: Historical navigation, table or deletion picture is not current read-only model-menu evidence -->
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_5.png)
-
-Una vez eliminada, el proveedor volverá a utilizar el **modelo de IA** predeterminado para la **extracción de campo** y la **extracción de tabla**.
+En el procesamiento posterior se aplican la configuración de la organización y los valores de respaldo pertinentes para esa plantilla. Otras plantillas del mismo proveedor pueden conservar sus propias preferencias. La eliminación no vuelve a procesar automáticamente los documentos históricos. Durante esta revisión no se eliminó ninguna entrada ni se comprobó una extracción posterior a la eliminación.

@@ -1,6 +1,8 @@
-# Decision Table has Returns
+# La tabla de decisiones devuelve resultados
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v2-es-es.png" alt="La tabla de decisiones devuelve resultados, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_decision_tree_data_v3-es-es.png" alt="La tabla de decisiones devuelve resultados, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -10,7 +12,7 @@ Esta tarjeta de DocBits comprueba si una tabla de decisión especificada tiene v
 
 * **Validación de la tabla de decisión:** Esta tarjeta verifica si la tabla de decisión seleccionada proporciona valores de retorno para el documento que se está procesando.
 * **Selección de la tabla de decisión:** Los usuarios especifican el nombre de la tabla de decisión que se comprobará.
-* **Usar los datos de retorno:** Los usuarios pueden especificar si utilizar los datos de retorno en tarjetas posteriores con una configuración **Boolean**:
+* **Usar los datos de retorno:** Los usuarios pueden especificar si utilizar los datos de retorno en tarjetas posteriores con una configuración **Booleano**:
   * **True:** Los datos de retorno están disponibles y se utilizarán en los pasos posteriores del flujo de trabajo.
   * **False:** Los datos de retorno no se utilizarán y el flujo de trabajo continúa sin ellos.
 
@@ -20,6 +22,6 @@ Esta tarjeta es ideal para flujos de trabajo que implican lógica condicional o 
 
 ## **Ejemplo de escenario:**
 
-* Un usuario configura la tarjeta para comprobar la tabla de decisión **"Invoice Processing Rules"** en busca de valores de retorno. El **Boolean** se establece en **True**, lo que indica que los datos de retorno (p. ej., requisitos de aprobación) se utilizarán en tarjetas posteriores para guiar las decisiones del flujo de trabajo.
+* Un usuario configura la tarjeta para comprobar la tabla de decisión **"Reglas de procesamiento de facturas"** en busca de valores de retorno. El **Booleano** se establece en **True**, lo que indica que los datos de retorno (p. ej., requisitos de aprobación) se utilizarán en tarjetas posteriores para guiar las decisiones del flujo de trabajo.
 
 Al usar la tarjeta "Decision Table Check", las organizaciones pueden mejorar la flexibilidad del flujo de trabajo, agilizar el procesamiento basado en reglas y garantizar la coherencia en la toma de decisiones en los flujos de trabajo automatizados.

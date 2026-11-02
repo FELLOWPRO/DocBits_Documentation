@@ -54,8 +54,7 @@ Der Eingabe-Editor erinnert unter **Von außen starten:** an die drei Wege **Die
 
 ## Über einen KI-Assistenten starten (MCP)
 
-Wenn Ihr KI-Assistent mit DocBits verbunden ist (siehe die Seite *DocBits MCP* in diesem Handbuch; deutschen Link beim
-PR aus der Live-Navigation übernehmen):
+Wenn Ihr KI-Assistent mit DocBits verbunden ist (siehe die Seite [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)):
 
 1. Erlauben Sie in einem Browser-Tab den Start von außen (siehe oben).
 2. Bitten Sie den Assistenten zum Beispiel: *„Zeig mir meine DocBits-Testeingaben und starte ‚Rechnung LT-2026-0001 bereit zur

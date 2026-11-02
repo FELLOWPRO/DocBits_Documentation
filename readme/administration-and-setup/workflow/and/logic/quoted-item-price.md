@@ -1,6 +1,8 @@
 # Prezzo dell'articolo citato
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-be613a9841e5-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_quotes_to_contracted_price_v2-it-it.png" alt="Prezzo dell&#x27;articolo citato, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_quotes_to_contracted_price_v3-it-it.png" alt="Prezzo dell&#x27;articolo citato, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
 ## **Scopo:**
 

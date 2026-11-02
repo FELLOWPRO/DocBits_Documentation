@@ -1,5 +1,13 @@
 # Analisi degli accessi
 
+## Video tutorial: Società, abbonamento e controllo
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/it.mp4" %}
+Informazioni sulla società, piano di abbonamento e registri di controllo in DocBits
+{% endembed %}
+
+Il video mostra le informazioni e le preferenze della società, il piano di abbonamento, l'attività di accesso e i registri di controllo.
+
 **Analisi degli accessi** offre agli amministratori una visione di sola lettura, estesa a tutta l'organizzazione, di *quando* e *con quale frequenza* le persone accedono a DocBits. Risponde a domande come "gli accessi sono in crescita?", "quanti utenti distinti sono stati attivi questo mese?" e "quando si verificano i picchi di utilizzo?" — senza esporre le credenziali o i dati personali dei singoli utenti.
 
 > **Accesso:** Apri **Impostazioni → Organizzazione e Accessi → Utenti** e fai clic sul pulsante **Analisi degli accessi** nell'angolo in alto a destra (`/settings/login-analytics`).

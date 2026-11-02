@@ -180,7 +180,7 @@ Nota: assicurati che **export_doc_type** sia impostato sul tipo di fattura IDM. 
 
 <figure><img src="../../.gitbook/assets/edi_mapping_example.png" alt="Esempio di mapping EDI"><figcaption></figcaption></figure>
 
-### Document Manager in Infor
+### Gestore documenti in Infor
 
 Vai a Document Manager e seleziona il nome del tipo di documento corrente che stai cercando di esportare, ad esempio Supplier Invoice.
 

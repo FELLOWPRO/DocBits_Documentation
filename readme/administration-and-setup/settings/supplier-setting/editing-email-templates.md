@@ -1,6 +1,6 @@
 # Modifica dei Modelli di Email
 
-<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Modelli di email per i fornitori"><figcaption><p>La pagina dei modelli di email per i fornitori</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t013-it.png" alt="Elenco dei modelli di e-mail per i fornitori."><figcaption><p>Elenco dei modelli di e-mail per i fornitori.</p></figcaption></figure>
 
 ### Panoramica
 
@@ -12,12 +12,12 @@ Il `{{magic_link}}` è un segnaposto che viene sostituito dinamicamente con un U
 
 ### Modifica dei Modelli di Email
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-bildschirmfoto-2024-08-25-um-12-35-53-it.png" alt="Editor di un nuovo modello di e-mail per i fornitori."><figcaption><p>Editor di un nuovo modello di e-mail per i fornitori.</p></figcaption></figure>
 
 #### Accesso all'Editor dei Modelli di Email
 
 1. **Naviga ai Modelli di Email**:
-   * Vai alla sezione **Email Templates** dal menu principale.
+   * Vai alla sezione **Modelli di e-mail** dal menu principale.
 2. **Seleziona un Modello da Modificare**:
    * Scegli il modello di email che desideri modificare facendo clic sul nome del modello (ad es., "Supplier Invitation Email").
 3. **Modifica il Modello**:
@@ -78,6 +78,5 @@ Per definire `{{magic_link}}` come un link cliccabile nell'email, devi assicurar
 Definendo correttamente il \{{magic\_link\}} nei tuoi modelli di email, puoi garantire che i destinatari ricevano un'email personalizzata e azionabile che li guidi verso il compito appropriato all'interno del tuo portale fornitori. Questo migliora l'esperienza dell'utente e assicura processi di onboarding e comunicazione fluidi.
 
 \
-
 
 Questa documentazione fornisce istruzioni passo-passo per gli amministratori su come definire e utilizzare il \{{magic\_link\}} nei modelli di email, assicurando che le email siano sia funzionali che visivamente attraenti.

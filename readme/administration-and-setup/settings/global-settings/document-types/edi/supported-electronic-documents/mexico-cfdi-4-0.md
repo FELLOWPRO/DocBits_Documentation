@@ -4,10 +4,16 @@ description: Supporto per documenti elettronici MEXICO CFDI 4.0 in DocBits
 
 # 🇲🇽 MEXICO CFDI 4.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Messico](countries/mexico.md). Verificate lo spazio dei nomi, la versione e TipoDeComprobante. Un importo negativo non basta a identificare una nota di credito; l’analisi del file non certifica l’autorizzazione del SAT.
+{% endhint %}
+
 | Proprietà             | Valore                                             |
 | --------------------- | -------------------------------------------------- |
 | **Paese / Regione**   | Messico                                            |
-| **Tipi di documento** | Invoice, Credit Note, Payment Receipt              |
+| **Tipi di documento** | Fattura, nota di credito, ricevuta di pagamento              |
 | **Formato**           | XML                                                |
 | **Standard**          | CFDI 4.0 (Comprobante Fiscal Digital por Internet) |
 

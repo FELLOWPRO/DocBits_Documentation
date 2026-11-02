@@ -1,4 +1,4 @@
-# Receive delivery line
+# Riga di ricevimento della consegna
 
 ## Tabella `public.receive_delivery_line`
 
@@ -14,9 +14,9 @@
 * `shipped_quantity`: double precision
 * `status`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
-* `deleted_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
+* `deleted_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 * `purchase_order`: interno
 * `sequence_number`: interno
@@ -27,7 +27,7 @@
 * `received_quantity`: double precision
 * `received_quantity_unit_code`: interno
 * `purchase_order_line_number`: interno
-* `status_effective_from`: timestamp with time zone
+* `status_effective_from`: timestamp con fuso orario
 * `purchase_order_sub_line_number`: interno
 * `invoiced_quantity`: double precision
 * `invoice_matching_status`: interno

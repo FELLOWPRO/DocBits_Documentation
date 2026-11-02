@@ -1,26 +1,26 @@
 # IDM ACL Updater
 
-## Overview
+## Panoramica
 
-The ACL-Updater module is responsible for updating and managing Access Control Lists (ACLs) within DocBits. This ensures that appropriate permissions and security measures are in place for document access and handling.
+Il modulo ACL-Updater è responsabile dell'aggiornamento e della gestione degli elenchi di controllo degli accessi (ACL) all'interno di DocBits. Ciò garantisce che siano in atto autorizzazioni e misure di sicurezza adeguate per l'accesso e la gestione dei documenti.
 
-## Activation Instructions
+## Istruzioni di attivazione
 
-To activate the ACL-Updater module, follow these steps:
+Per attivare il modulo ACL-Updater, attenersi alla seguente procedura:
 
-1. Navigate to **Settings**.
-2. Select **Document Processing**.
+1. Passare a **Impostazioni**.
+2. Seleziona **Elaborazione documenti**.
 3. Select **Module**.
-4. Go to **Document Type**.
-5. Activate the **IDM ACL-Updater** by enabling the corresponding slider.
+4. Vai a **Tipo documento**.
+5. Attiva **IDM ACL-Updater** abilitando lo slider corrispondente.
 
-Once the module is activated, you can select an **ION Mapping File** to use.
+Una volta attivato il modulo, puoi selezionare un file di mappatura **ION** da utilizzare.
 
 <figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt=""><figcaption></figcaption></figure>
 
-### Adding ACL Information
+### Aggiunta delle informazioni ACL
 
-To add ACL information, click the **Add** button. You can then specify the following details:
+Per aggiungere informazioni ACL, fare clic sul pulsante **Aggiungi**. È quindi possibile specificare i seguenti dettagli:
 
 * **IDM Document Type**
 * **Current IDM ACL Status**

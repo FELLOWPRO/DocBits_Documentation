@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici KSEF FA3 in DocBits
 
 # 🇵🇱 KSEF FA3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Polonia](countries/poland.md). FA2 e FA3 usano strutture diverse. Confermate lo schema sorgente e provate la mappatura appropriata; l’analisi del file non invia una fattura a KSeF.
+{% endhint %}
+
 | Proprietà             | Valore                      |
 | --------------------- | --------------------------- |
 | **Paese / Regione**   | Polonia                     |

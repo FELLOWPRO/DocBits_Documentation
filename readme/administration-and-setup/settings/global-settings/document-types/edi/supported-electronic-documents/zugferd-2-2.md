@@ -4,6 +4,12 @@ description: Supporto documenti elettronici ZUGFERD 2.2 in DocBits
 
 # 🇩🇪 ZUGFERD 2.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Germania](countries/germany.md). Sintassi, versione di pubblicazione e profilo sono scelte diverse. Non deducete una pubblicazione Factur-X dal marcatore condiviso 1p0.
+{% endhint %}
+
 | Proprietà               | Valore                       |
 | ----------------------- | ---------------------------- |
 | **Paese / Regione**     | Germania                     |
@@ -29,5 +35,5 @@ ZUGFeRD 2.2, pubblicato nel 2022, è allineato allo standard europeo EN 16931 ed
 ## Correlati
 
 * [Configurazione di ZUGFeRD](../zugferd/)
-* [Mappatura dei campi ZUGFeRD](../zugferd/versions/)
+* [Mappatura dei campi ZUGFeRD](../zugferd/README.md)
 * [Documenti elettronici supportati](./)

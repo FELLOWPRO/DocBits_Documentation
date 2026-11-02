@@ -1,4 +1,4 @@
-# Document Script activation status
+# Stato di attivazione dello script del documento
 
 ## Tabella `public.document_script_activation_status`
 
@@ -9,8 +9,8 @@
 * `sort_order`: integer
 * `is_active`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 * `script_id`: interno
 

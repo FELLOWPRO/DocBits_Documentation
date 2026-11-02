@@ -1,5 +1,13 @@
 # Impostazioni di tolleranza per gli ordini di acquisto / Ulteriore tolleranza per gli ordini di acqui
 
+## Configurare regole di abbinamento e tolleranze
+
+Il percorso apre il tipo di documento fattura, controlla la versione pubblicata e crea un clone come bozza inattiva. Spiega tipi di regola, priorità nella fase di abbinamento, colonne, quantità di riferimento, modalità e calcoli delle tolleranze. Viene salvata solo la bozza del tutorial; versione attiva e tolleranze globali restano invariate. Il calcolo al cinque per cento è un esempio e non cambia la tolleranza attiva.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/it.mp4" %}
+
+[Guarda il video con i sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/it.html)
+
 ### **Impostazione per configurare le tolleranze degli ordini di acquisto**
 
 Vai a **Impostazioni → Impostazioni generali → Tipi di documento → Ulteriori impostazioni → Sezione Ordine di acquisto → Impostazione tolleranza PO**

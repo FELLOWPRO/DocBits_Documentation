@@ -4,6 +4,12 @@ description: Supporto documenti elettronici ZUGFERD 1.0 BASIC in DocBits
 
 # 🇩🇪 ZUGFERD 1.0 BASIC
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Germania](countries/germany.md). Sintassi, versione di pubblicazione e profilo sono scelte diverse. Non deducete una pubblicazione Factur-X dal marcatore condiviso 1p0.
+{% endhint %}
+
 | Proprietà               | Valore                       |
 | ----------------------- | ---------------------------- |
 | **Paese / Regione**     | Germania                     |
@@ -29,5 +35,5 @@ Il profilo Basic di ZUGFeRD 1.0 comprende i campi essenziali della fattura, come
 ## Correlati
 
 * [Configurazione di ZUGFeRD](../zugferd/)
-* [Mappatura dei campi ZUGFeRD](../zugferd/versions/)
+* [Mappatura dei campi ZUGFeRD](../zugferd/README.md)
 * [Documenti elettronici supportati](./)

@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Quantity
+# Fattura di acquisto: seconda approvazione della quantità
 
-<figure><img src="../../../../.gitbook/assets/docbits_approval_invoice_4.png" alt="DocBits Approvazione Fattura 4"><figcaption></figcaption></figure>
+
 
 Questo titolo indica che la regola riguarda specificamente la gestione delle fatture d'acquisto durante una fase di approvazione secondaria, con particolare attenzione alla verifica dell'accuratezza delle quantità elencate.
 
@@ -19,8 +19,8 @@ Questo titolo indica che la regola riguarda specificamente la gestione delle fat
 
 #### Scopo di Questa Regola:
 
-* **Accuracy and Compliance**: la regola è essenziale per garantire che il processo di fatturazione sia accurato e in linea con i termini concordati nell'ordine di acquisto. Aiuta a prevenire discrepanze finanziarie e potenziali errori di inventario.
-* **Streamlined Approvals**: l'automazione del processo di revisione per discrepanze specifiche aiuta a semplificare le approvazioni e garantisce che eventuali problemi vengano affrontati rapidamente dal personale appropriato.
-* **Enhanced Financial Oversight**: richiedere un'approvazione secondaria per le verifiche delle quantità rafforza i controlli finanziari e la responsabilità all'interno dell'organizzazione.
+* **Precisione e conformità**: la regola è essenziale per garantire che il processo di fatturazione sia accurato e in linea con i termini concordati nell'ordine di acquisto. Aiuta a prevenire discrepanze finanziarie e potenziali errori di inventario.
+* **Approvazioni più rapide**: l'automazione del processo di revisione per discrepanze specifiche aiuta a semplificare le approvazioni e garantisce che eventuali problemi vengano affrontati rapidamente dal personale appropriato.
+* **Maggiore supervisione finanziaria**: richiedere un'approvazione secondaria per le verifiche delle quantità rafforza i controlli finanziari e la responsabilità all'interno dell'organizzazione.
 
 Questa configurazione esemplifica come l'automazione dei workflow possa essere utilizzata per migliorare l'efficienza operativa e garantire l'integrità finanziaria, in particolare nella gestione di processi di acquisto complessi all'interno di un'azienda.

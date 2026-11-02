@@ -41,7 +41,7 @@ Segui questi passaggi per accedere alla **pagina dei report** in DocBits:
 
 <figure><img src="../.gitbook/assets/average_system_time_display.png" alt="Visualizzazione del tempo medio di sistema" width="437"><figcaption></figcaption></figure>
 
-### **6. Sezione Changed Fields**
+### **6. Sezione Campi modificati**
 
 * Sotto le informazioni relative al tempo trovi la sezione **Changed Fields**. Questa sezione mostra un diagramma che indica con quale frequenza ogni campo del documento è stato modificato manualmente dagli utenti nell'intervallo di tempo selezionato.
 * Ogni campo viene visualizzato con il relativo numero di modifiche, rappresentato da barre nel diagramma.
@@ -59,13 +59,13 @@ Segui questi passaggi per accedere alla **pagina dei report** in DocBits:
 
 Sotto la sezione **Changed Fields** trovi quattro pulsanti aggiuntivi che, al clic, forniscono informazioni più dettagliate. Ogni pulsante si espande al clic per mostrare ulteriori informazioni.
 
-1.  **Total Documents per Type**
+1.  **Totale documenti per tipo**
 
     * Questo pulsante mostra il numero totale di documenti per ciascun tipo di documento (ad es. fattura, ordine di acquisto, ecc.) nell'intervallo di tempo selezionato.
     * Quando clicchi sul pulsante, si espande e mostra un elenco dei tipi di documento con il relativo conteggio di quanti documenti di ciascun tipo sono stati elaborati nell'intervallo di tempo selezionato.
 
     <figure><img src="../.gitbook/assets/total_documents_per_type_report.png" alt="Report Total Documents per Type" width="563"><figcaption></figcaption></figure>
-2.  **Daily Average per Doctype**
+2.  **Media giornaliera per Doctype**
 
     * Questo pulsante mostra la media giornaliera dei documenti elaborati, suddivisa per tipo di documento.
     * Quando clicchi sul pulsante, si espande e mostra i tipi di documento con il rispettivo conteggio medio giornaliero.

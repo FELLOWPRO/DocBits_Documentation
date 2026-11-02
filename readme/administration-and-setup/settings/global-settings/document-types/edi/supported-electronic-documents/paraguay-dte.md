@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici PARAGUAY DTE in DocBits
 
 # 🇵🇾 PARAGUAY DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Paraguay](countries/paraguay.md). Le voci di classificazione delle note di credito non hanno insiemi di componenti di estrazione dedicati nello stato esaminato. Verificate la mappatura effettivamente utilizzata e non considerate le etichette intercambiabili.
+{% endhint %}
+
 | Proprietà             | Valore                                 |
 | --------------------- | -------------------------------------- |
 | **Paese / Regione**   | Paraguay                               |

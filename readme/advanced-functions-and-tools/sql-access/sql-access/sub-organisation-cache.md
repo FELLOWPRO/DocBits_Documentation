@@ -1,4 +1,4 @@
-# Sub Organisation Cache
+# Cache delle sotto-organizzazioni
 
 ## Tabella `public.sub_organisation_cache`
 
@@ -9,8 +9,8 @@
 * `name`: interno
 * `description`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 
 ### Analisi e descrizione

@@ -4,6 +4,12 @@ description: Supporto documenti elettronici URUGUAY E-NOTA CREDITO in DocBits
 
 # 🇺🇾 URUGUAY E-NOTA CREDITO
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Uruguay](countries/uruguay.md). Le voci per le note di credito non hanno insiemi di componenti di estrazione dedicati nello stato esaminato. Confermate la versione CFE e la mappatura effettivamente utilizzata per fatture o note di credito.
+{% endhint %}
+
 | Proprietà             | Valore                           |
 | --------------------- | -------------------------------- |
 | **Paese / Regione**   | Uruguay                          |

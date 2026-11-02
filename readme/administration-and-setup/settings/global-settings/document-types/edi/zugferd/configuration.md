@@ -72,3 +72,7 @@ La **configurazione dei percorsi di estrazione** serve a estrarre i dati e a pop
 7. Fai clic su **Salva**.
 
 Seguendo questi passaggi puoi garantire un'estrazione e una convalida accurate dei dati per le fatture ZUGFeRD.
+
+## Regole effettivamente utilizzate e attivazione
+
+Le regole specifiche dell’organizzazione hanno la precedenza su quelle predefinite per il formato eDoc rilevato. Verificate la TRANSFORMATION attiva e verificate quale nodo fornisce invoice_type nell’XML trasformato; il percorso dipende dal formato. Save salva una bozza; usate il segno di spunta per attivarla dopo i test. Il rendering di Preview non dimostra il tipo di documento memorizzato. Consultate la [guida alla diagnosi della classificazione](../credit-note-recognized-as-invoice.md) per i codici 381/261, gli script successivi e le precauzioni prima della rielaborazione.

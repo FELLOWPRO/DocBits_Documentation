@@ -4,6 +4,12 @@ description: Supporto dei documenti elettronici ARGENTINA FACTURA ELECTRONICA in
 
 # 🇦🇷 ARGENTINA FACTURA ELECTRONICA
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Argentina](countries/argentina.md). La voce di classificazione delle note di credito non ha un insieme di componenti di estrazione dedicato nello stato esaminato. Verificate la mappatura effettivamente utilizzata e provate un campione reale di nota di credito.
+{% endhint %}
+
 | Proprietà               | Valore                                                                      |
 | ----------------------- | --------------------------------------------------------------------------- |
 | **Paese / Regione**     | Argentina                                                                   |

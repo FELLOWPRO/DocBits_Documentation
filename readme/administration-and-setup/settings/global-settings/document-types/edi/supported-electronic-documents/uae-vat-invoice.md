@@ -4,6 +4,12 @@ description: Supporto documenti elettronici UAE VAT INVOICE in DocBits
 
 # 🇦🇪 UAE VAT INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Emirati Arabi Uniti](countries/united-arab-emirates.md). Una mappatura per fatture IVA non dimostra il supporto per ogni versione Peppol o PINT degli Emirati Arabi Uniti. Confermate il contratto del contenuto e l’integrazione di consegna richiesta.
+{% endhint %}
+
 | Proprietà             | Valore                                       |
 | --------------------- | -------------------------------------------- |
 | **Paese / Regione**   | Emirati Arabi Uniti                          |

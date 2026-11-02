@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici JP PINT in DocBits
 
 # 🇯🇵 JP PINT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Giappone](countries/japan.md). La fatturazione da parte del cliente è una variante del processo aziendale, non una scelta di lingua. Verificate l’identificatore di personalizzazione e la variante configurata.
+{% endhint %}
+
 | Proprietà             | Valore                                         |
 | --------------------- | ---------------------------------------------- |
 | **Paese / Regione**   | Giappone                                       |

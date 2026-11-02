@@ -1,12 +1,14 @@
-# Any / All Charges
+# Qualsiasi/tutti gli addebiti
 
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare_any_all_charges.png" alt="La scheda nella libreria delle schede, versione 2 e versione 3"><figcaption><p>La scheda nella libreria delle schede. Versione 2 in alto, versione 3 in basso.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v2-it-it.png" alt="Qualsiasi/tutti gli addebiti, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charges_to_po_v3-it-it.png" alt="Qualsiasi/tutti gli addebiti, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
 
 ## **Scopo:**
 
 Questa scheda di workflow confronta gli addebiti accessori di un documento con gli addebiti accessori dell'ordine di acquisto corrispondente, entro una tolleranza definita. Risponde a una sola domanda: documento e ordine di acquisto concordano sugli addebiti accessori? Viene confrontato ogni addebito che l'abbinamento dell'ordine di acquisto ha appaiato, per cui sulla scheda non occorre indicare alcun nome di campo.
 
-Questa scheda si distingue da **Compare Total Charges**, che confronta un singolo campo del documento con un unico addebito individuato tramite un Charge ID. Usare questa scheda quando tutti gli addebiti appaiati del documento devono essere verificati in una sola volta.
+Questa scheda si distingue da **Confronta i costi totali**, che confronta un singolo campo del documento con un unico addebito individuato tramite un Charge ID. Usare questa scheda quando tutti gli addebiti appaiati del documento devono essere verificati in una sola volta.
 
 L'abbinamento dell'ordine di acquisto deve essere eseguito prima di questa scheda. Se il documento non ha un ordine di acquisto corrispondente, la scheda arresta il workflow e segnala dati mancanti.
 

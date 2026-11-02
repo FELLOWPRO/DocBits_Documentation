@@ -1,4 +1,4 @@
-# Sub document type
+# Sottotipo di documento
 
 ## Colonne
 
@@ -10,8 +10,8 @@
 * `title`: interno
 * `translation_key`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 
 ## Analisi e descrizione

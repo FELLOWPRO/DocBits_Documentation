@@ -4,6 +4,12 @@ description: Supporto in DocBits per il documento elettronico BRAZIL NF-E
 
 # 🇧🇷 BRAZIL NF-E
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Brasile](countries/brazil.md). Sono famiglie di documenti diverse. Una versione NFS-e configurata non certifica ogni schema comunale né ogni tracciato nazionale di fattura per servizi.
+{% endhint %}
+
 | Proprietà             | Valore                                                           |
 | --------------------- | ---------------------------------------------------------------- |
 | **Paese / Regione**   | Brasile                                                          |

@@ -1,4 +1,4 @@
-# Bar Code Extractions
+# Estrazione dei codici a barre
 
 ## Panoramica
 
@@ -17,7 +17,7 @@ Per attivare la funzionalità Bar-Code Extraction, procedi come segue:
 
 ## **Impostazioni aggiuntive**
 
-### **Barcode Assignment**
+### **Assegnazione dei codici a barre**
 
 #### **Scopo:** consente ai validatori di assegnare manualmente il valore di un codice a barre estratto a un campo specifico del documento durante la validazione dei campi.
 
@@ -47,7 +47,7 @@ Per attivare la funzionalità di **suddivisione del documento tramite codice a b
 
 1. **Vai su Settings**:
    * Dal Dashboard, vai su **Settings**.
-   * Seleziona **Document Processing** e poi **Classification and Extraction**.
+   * Seleziona **Elaborazione documenti** e poi **Classificazione ed estrazione**.
 2. **Attiva la funzionalità**:
    * Individua l'opzione **Document Splitting**.
    * Per **Split**, seleziona **Split by Barcode / QR Code**.

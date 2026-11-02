@@ -9,7 +9,7 @@ Lo stesso costruttore di condizioni è usato in tutte e tre le funzioni di regol
 | Funzione | Etichetta nel costruttore | Quando la condizione è vera… | Quando è falsa… | Quando è lasciata vuota… |
 | --- | --- | --- | --- | --- |
 | [Regole di convalida personalizzate](custom-validation-rules.md) | Passaggio 2 **Applies when** | viene eseguito il controllo del passaggio 3 | la regola viene saltata — nessun errore, nessun avviso | il controllo viene eseguito su ogni documento |
-| [Regole di trasformazione](transformation-rules.md) | Passaggio 2 **When it runs** → **Only when…** | la pipeline modifica il valore | il valore resta com'è | scegliere **Always**: la regola viene eseguita su ogni documento |
+| [Regole di trasformazione](transformation-rules.md) | Passaggio 2 **Quando corre** → **Solo quando…** | la pipeline modifica il valore | il valore resta com'è | scegliere **Always**: la regola viene eseguita su ogni documento |
 | [Regole di selezione del layout](layout-manager/layout-selection-rules.md) | Passaggio 2 **Applies when** | il documento riceve il layout di questa regola (vince la prima corrispondenza) | DocBits prova la regola successiva | la regola corrisponde a ogni documento con la sua priorità |
 
 Imparandolo qui una volta, è possibile usarlo ovunque.
@@ -55,8 +55,8 @@ Fare clic su **✕** per rimuovere una riga.
 
 Il selettore all'inizio di un gruppo decide come vengono combinate le sue righe:
 
-* **All** of the following are true — ogni riga deve essere vera (AND).
-* **ANY** of the following are true — almeno una riga deve essere vera (OR).
+* **Tutte** delle seguenti affermazioni sono vere — ogni riga deve essere vera (AND).
+* **ANY** delle seguenti affermazioni sono vere — almeno una riga deve essere vera (OR).
 
 ### Gruppi nidificati
 
@@ -83,9 +83,9 @@ Informazioni che DocBits conosce sul documento stesso, indipendentemente dai cam
 
 | Campo nel selettore | Chiave | Valori di esempio | Uso tipico |
 | --- | --- | --- | --- |
-| **Document Origin** | `doc.doc_origin` | `DE`, `AT`, `US` (mostrati come Deutsch, Austria, United States) | regole e layout specifici per paese |
+| **Document Origin** | `doc.doc_origin` | `DE`, `AT`, `US` (mostrati come Deutsch, Austria, Stati Uniti) | regole e layout specifici per paese |
 | **Extraction Method** | `doc.extraction_method` | `ELECTRONIC_DOCUMENT`, `FELLOW_KV2`, `MANUAL` | trattare le fatture elettroniche (XRechnung, ZUGFeRD) in modo diverso dai PDF scansionati |
-| **Document Status** | `doc.status` | Ready for validation, Pending Approval, Pending second approval … | layout per fase del workflow, regole che si applicano solo prima dell'approvazione |
+| **Document Status** | `doc.status` | Pronto per la convalida, In attesa di approvazione, In attesa di seconda approvazione... | layout per fase del workflow, regole che si applicano solo prima dell'approvazione |
 | **Sub Document Type** | `doc.sub_doc_type` | i propri sottotipi, ad es. nota di credito | regole per un solo sottotipo |
 
 ### Campi dell'intestazione (`header.`)
@@ -142,7 +142,7 @@ Usare i percorsi JSON con parsimonia. Dipendono dalla struttura interna dei dati
 | **is empty** | il campo non ha valore (mancante o con soli spazi) | – | Purchase Order **is empty** |
 | **is not empty** | il campo ha un valore | – | Purchase Order **is not empty** |
 | **greater than** / **less than** | il campo è un numero superiore / inferiore al valore | numero | Total Amount **greater than** `10000` |
-| **greater or equal** / **less or equal** | lo stesso, includendo il valore stesso | numero | Total Amount **less or equal** `250` |
+| **maggiore o uguale** / **minore o uguale** | lo stesso, includendo il valore stesso | numero | Total Amount **less or equal** `250` |
 
 ### Quali operatori offre un campo
 
@@ -151,10 +151,10 @@ L'elenco si adatta al tipo del campo:
 | Tipo di campo | Operatori |
 | --- | --- |
 | Testo | tutti gli operatori |
-| Numero e importo (Total Amount, Quantity …) | is, is not, greater than, less than, greater or equal, less or equal, is empty, is not empty |
-| Campi con elenco fisso (Document Origin, Status, Currency …) | is, is not, is one of, is empty, is not empty |
-| Data (Invoice Date, Due Date …) | is, is not, is empty, is not empty |
-| Sì/No | is, is not, is empty, is not empty |
+| Numero e importo (Total Amount, Quantity …) | è, non è, maggiore di, minore di, maggiore o uguale, minore o uguale, è vuoto, non è vuoto |
+| Campi con elenco fisso (Document Origin, Status, Currency …) | è, non è, è uno di, è vuoto, non è vuoto |
+| Data (Invoice Date, Due Date …) | è, non è, è vuoto, non è vuoto |
+| Sì/No | è, non è, è vuoto, non è vuoto |
 | Percorso JSON personalizzato | is, is not, matches, is empty, is not empty |
 
 {% hint style="warning" %}
@@ -210,7 +210,7 @@ Per i campi il cui valore si sceglie da un menu a discesa (origine, stato, valut
 
 Ogni funzione consente di provare una condizione prima di farvi affidamento:
 
-* **Regole di convalida** — **Test rule** esegue la regola su un documento reale. "*Rule skipped — scope not matched*" significa che la condizione era falsa per quel documento. Vedere [Test rule](custom-validation-rules.md#test-rule).
+* **Regole di convalida** — **Test rule** esegue la regola su un documento reale. "*Rule skipped — scope not matched*" significa che la condizione era falsa per quel documento. Vedere [Test rule](custom-validation-rules.md#testare-la-regola).
 * **Regole di trasformazione** — la **Live preview** ha **Condition values**: digitare un valore per ogni campo della condizione e vedere "*Conditions match — rule runs*" oppure "*Conditions do not match — rule is skipped*".
 * **Regole di selezione del layout** — il pannello **Live preview · /resolve** mostra quale regola ha corrisposto per un documento di esempio.
 

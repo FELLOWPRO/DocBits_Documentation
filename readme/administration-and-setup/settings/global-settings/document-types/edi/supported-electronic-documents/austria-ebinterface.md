@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici AUSTRIA EBINTERFACE in DocBits
 
 # 🇦🇹 AUSTRIA EBINTERFACE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Austria](countries/austria.md). Abbinate lo spazio dei nomi XML alla versione configurata. Uno spazio dei nomi diverso può richiedere un’altra mappatura.
+{% endhint %}
+
 | Proprietà | Valore |
 |-----------|--------|
 | **Paese / Regione** | Austria |
@@ -24,7 +30,7 @@ ebInterface è lo standard austriaco per la fatturazione elettronica gestito dal
 
 ## Anteprima predefinita
 
-<figure><img src="austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE</p></figcaption></figure>
 
 ## Mappatura dei campi
 

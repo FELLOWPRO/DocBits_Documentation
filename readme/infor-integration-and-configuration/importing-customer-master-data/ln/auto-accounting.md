@@ -1,5 +1,22 @@
 # Auto Accounting con Infor LN
 
+## Dall'anagrafica LN all'assegnazione del conto verificato
+
+<figure><img src="../../../.gitbook/assets/process-accounting-it-20261028.png" alt="Dati anagrafici finanziari per Auto Accounting: Percorso dati e checkpoint per un&#x27;integrazione Infor LN."><figcaption><p>Percorso dati e checkpoint per un&#x27;integrazione Infor LN. Il diagramma è schematico; le impostazioni attive della tua organizzazione determinano il comportamento effettivo.</p></figcaption></figure>
+
+Questa guida riguarda la fornitura dei dati anagrafici finanziari per un'integrazione LN. Selezionare **LN** o abilitare **Auto Accounting** non sostituisce la fornitura dei dati o la verifica del risultato dell'assegnazione dell'account.
+
+| Consegna | Cosa dovresti dimostrare |
+| --- | --- |
+| **Pubblicazione LN → BOD** | Dati corretti sull'azienda e sull'account o sulla dimensione richiesti; Per prima cosa contare o simulare la selezione. |
+| **BOD → ION** | Corrispondenza della versione del documento, della fonte, dei filtri e della mappatura; tracciare l'identificativo del test in ION OneView. |
+| **ION → DocBits** | Ricezione della risposta dell'endpoint, organizzazione corretta e record accettato. Un flusso attivato da solo non è sufficiente. |
+| **DocBits → Risultato assegnazione account** | Dopo l'attivazione approvata, utilizzare documenti di test rappresentativi per verificare che i conti e le dimensioni siano corretti per il processo aziendale. |
+
+**Esempio di tracciabilità:** utilizza un identificatore di test non sensibile da un set di dati di test approvato. Trova lo stesso identificatore nella sorgente BOD, in ION e nei log di ricezione DocBits. Ciò aiuta a individuare una mappatura mancante in un passaggio di consegna specifico invece di modificare ripetutamente l'interruttore.
+
+La successiva esportazione e registrazione ERP dovrà essere verificata separatamente. Le immagini esistenti in questa guida mostrano i controlli DocBits; non provano che sia stato eseguito un trasferimento LN. La sezione seguente descrive la preparazione e la verifica end-to-end da parte degli amministratori responsabili. Per la consegna tecnica, vedere [Esporta da DocBits](../../exporting-in-docbits/README.md).
+
 Usare questa guida quando un amministratore di Infor LN vuole che DocBits utilizzi i dati master finanziari importati per la contabilità automatica (Auto Accounting). La vecchia pagina mostrava 48 schermate di un particolare tenant Infor. Nomi dei punti di connessione, mappature, credenziali e indirizzi degli endpoint di quel tenant non sono una configurazione riutilizzabile.
 
 ## Trovare l'impostazione in DocBits

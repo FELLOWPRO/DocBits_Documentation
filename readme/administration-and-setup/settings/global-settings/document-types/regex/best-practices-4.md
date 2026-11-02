@@ -1,4 +1,4 @@
-# Best practice
+# Buone pratiche
 
 ## Best practice per le regex nell'elaborazione dei documenti.
 

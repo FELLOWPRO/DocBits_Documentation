@@ -1,4 +1,4 @@
-# Batch instance
+# Istanza di batch
 
 ## Tabella `public.batch_instance`
 
@@ -7,8 +7,8 @@
 * `id`: interno
 * `org_id`: ID dell'organizzazione
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 
 ### Analisi e descrizione

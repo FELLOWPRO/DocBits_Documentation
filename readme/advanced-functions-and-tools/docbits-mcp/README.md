@@ -1,5 +1,7 @@
 # DocBits MCP
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/docbits-mcp-admin/v1/it.mp4" %}
+
 DocBits espone un server **Model Context Protocol (MCP)** che consente agli assistenti AI di lavorare con i tuoi documenti, l'estrazione, la ricerca, le analisi e la configurazione, direttamente da una chat o da una sessione di programmazione. Qualsiasi client compatibile con MCP può collegarsi: **Claude Code**, **Claude Desktop**, **Google Gemini CLI**, **OpenAI Codex** o qualsiasi integrazione personalizzata.
 
 Il server è montato sull'API DocBits all'indirizzo `/v3/mcp` ed è limitato alla tua organizzazione: ogni chiamata viene eseguita con le autorizzazioni dell'utente (o della chiave API) che ha effettuato la connessione.
@@ -64,7 +66,7 @@ Tutto ciò che la schermata di validazione e le impostazioni delle colonne di ta
 
 | Strumento | Descrizione |
 |------|-------------|
-| `list_tables` / `get_table_config` | Tabelle e colonne di un tipo di documento, con i flag Required / Read Only / Hidden / Use AI |
+| `list_tables` / `get_table_config` | Tabelle e colonne di un tipo di documento, con flag Required / Read Only / Hidden / Use AI |
 | `create_table` | Aggiunge una seconda tabella di righe a un tipo di documento |
 | `add_table_column` / `delete_table_column` | Aggiunge o elimina (soft delete) una colonna di tabella |
 | `set_ai_table_config` | Attiva l'estrazione AI delle tabelle, la visione e la modalità strutturata per l'organizzazione |
@@ -82,7 +84,7 @@ Tutto ciò che la schermata di validazione e le impostazioni delle colonne di ta
 
 | Strumento | Descrizione |
 |------|-------------|
-| `search_documents` / `search_documents_by_name` | Ricerca full-text e per nome file |
+| `search_documents` / `search_documents_by_name` | Ricerca full-text e file per nome |
 | `query_document_dashboard` | Query della dashboard in linguaggio naturale |
 | `explain_document_dashboard_query` | Mostra come è stata interpretata una query |
 | `get_search_capabilities` | Quali funzionalità di ricerca sono abilitate per l'organizzazione |
@@ -116,7 +118,7 @@ Perché i documenti richiedono l'intervento umano e cosa modificare perché ne s
 | Strumento | Descrizione |
 |------|-------------|
 | `get_executive_summary` | KPI di alto livello dell'organizzazione |
-| `get_success_rates` | Tassi touchless / straight-through |
+| `get_success_rates` | Tassi senza contatto/diretto |
 | `get_volume_trends` | Volume dei documenti nel tempo |
 | `get_top_document_types` | Tipi di documento più frequenti |
 | `get_pending_tasks_detail` | Dettaglio del lavoro in sospeso |
@@ -156,8 +158,10 @@ Perché i documenti richiedono l'intervento umano e cosa modificare perché ne s
 - [**Configurazione e setup**](setup-and-configuration.md): collega Claude Code, Gemini CLI o Codex (con login o chiave API)
 - [**Esempi**](examples.md): cose reali che i clienti chiedono all'assistente di fare
 - [**Documenti elettronici (eDocs)**](../edocs-mcp/README.md): approfondimento sugli strumenti eDoc: ispezionare/testare l'elaborazione delle e-fatture e gestire le regole personalizzate di estrazione/anteprima (stesso endpoint, stesso login)
-- [**Workflow e Card (DocFlow)**](../docflow-mcp/README.md): gestisci workflow avanzati e card partner
+- [**Workflow e Card (DocFlow)**](../docflow-mcp/README.md): gestisci flusso di lavoro avanzati e card partner
 
 {% hint style="info" %}
 **Un unico MCP per tutto.** Gli strumenti eDoc e quelli **Workflow e Card (DocFlow)** vengono eseguiti sullo **stesso** endpoint `api.docbits.com/v3/mcp` con lo stesso login DocBits. Gli strumenti DocFlow vi compaiono con il prefisso `docflow_` (ad esempio `docflow_list_workflows`); la pagina DocFlow li documenta con il loro nome senza prefisso. Collegarsi direttamente all'host DocFlow è ancora possibile, ma non è più necessario.
 {% endhint %}
+
+[Configurare DocBits con Claude o Codex](configuration-with-claude-or-codex.md): connessione, prompt, anteprime, modifiche con versioni, verifiche e ripristino.

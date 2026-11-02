@@ -1,4 +1,4 @@
-# Best practice
+# Buone pratiche
 
 ## Best practice per l'addestramento continuo del modello, come la frequenza di addestramento, la selezione dei documenti di esempio e il monitoraggio delle metriche di prestazione del modello.
 

@@ -6,7 +6,9 @@ DocFlow MCP espone strumenti per la gestione e il test dei workflow avanzati, ol
 **Nomi degli strumenti tramite il gateway DocBits MCP.** Quando ti connetti tramite il DocBits MCP unificato (`api.docbits.com/v3/mcp`), ogni strumento DocFlow porta il prefisso `docflow_`: `list_workflows` si chiama `docflow_list_workflows`, `run_workflow_with_assertions` diventa `docflow_run_workflow_with_assertions`. I parametri sono identici. I nomi riportati qui sotto sono i nomi DocFlow senza prefisso.
 
 I workflow vengono **creati e modificati nel designer DocFlow** nell'app web. L'MCP li legge, li testa, li esegue e li elimina; non crea né modifica i grafi dei workflow.
-{% endhint %} Gli strumenti Card SDK hanno una pagina dedicata, vedi [Strumenti Card SDK](card-sdk-tools.md).
+{% endhint %}
+
+Gli strumenti Card SDK hanno una pagina dedicata, vedi [Strumenti Card SDK](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -26,7 +28,7 @@ Ottieni i dettagli di un workflow specifico, inclusa la struttura di nodi e arch
 
 ## delete\_workflow
 
-Elimina un workflow tramite ID (eliminazione logica).
+Elimina un flusso di lavoro tramite ID (eliminazione logica).
 
 **Parametri:**
 

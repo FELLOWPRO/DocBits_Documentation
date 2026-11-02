@@ -4,6 +4,12 @@ description: Supporto documenti elettronici ZUGFERD 2.3.2 in DocBits
 
 # 🇩🇪 ZUGFERD 2.3.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Germania](countries/germany.md). Sintassi, versione di pubblicazione e profilo sono scelte diverse. Non deducete una pubblicazione Factur-X dal marcatore condiviso 1p0.
+{% endhint %}
+
 | Proprietà               | Valore                       |
 | ----------------------- | ---------------------------- |
 | **Paese / Regione**     | Germania                     |
@@ -29,5 +35,5 @@ ZUGFeRD 2.3.2, pubblicato a novembre 2024, equivale a Factur-X 1.0.07.2. Questa 
 ## Correlati
 
 * [Configurazione di ZUGFeRD](../zugferd/)
-* [Mappatura dei campi ZUGFeRD](../zugferd/versions/)
+* [Mappatura dei campi ZUGFeRD](../zugferd/README.md)
 * [Documenti elettronici supportati](./)

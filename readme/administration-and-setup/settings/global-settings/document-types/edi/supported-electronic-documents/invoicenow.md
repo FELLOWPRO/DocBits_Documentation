@@ -4,6 +4,12 @@ description: Supporto per documenti elettronici INVOICENOW in DocBits
 
 # 🇸🇬 INVOICENOW
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultate la guida del paese per i limiti delle versioni, la configurazione effettivamente utilizzata e il video esplicativo del paese. [Singapore](countries/singapore.md). Verificate gli identificatori del profilo di Singapore. Un profilo nazionale e Peppol BIS generico possono condividere la sintassi UBL senza condividere tutte le regole aziendali.
+{% endhint %}
+
 | Proprietà             | Valore               |
 | --------------------- | -------------------- |
 | **Paese / Regione**   | Singapore            |

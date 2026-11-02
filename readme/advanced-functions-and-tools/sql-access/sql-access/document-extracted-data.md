@@ -1,4 +1,4 @@
-# Document extracted data
+# Dati estratti dal documento
 
 ## Colonne
 
@@ -8,8 +8,8 @@
 * `field_name`: interno
 * `field_value`: interno
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
 * `field_type`: interno
 

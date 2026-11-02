@@ -1,6 +1,6 @@
 # Esportazione della Configurazione per il Portale Fornitori
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Configurazione di esportazione fornitori"><figcaption><p>La pagina Configurazione di esportazione fornitori</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t014-it.png" alt="Configurazione dell’esportazione del portale fornitori."><figcaption><p>Configurazione dell’esportazione del portale fornitori.</p></figcaption></figure>
 
 ## Panoramica
 
@@ -194,7 +194,7 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 
 ### 1. Caricamento del File di Configurazione
 
-#### 1. Vai su Export Configuration:
+#### 1. Vai su Configurazione dell’esportazione:
 
 • Vai alla sezione Export Configuration dal menu principale.
 

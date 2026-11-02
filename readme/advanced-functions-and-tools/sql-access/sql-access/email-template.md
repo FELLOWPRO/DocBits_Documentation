@@ -1,4 +1,4 @@
-# Email template
+# Modello e-mail
 
 ## Colonne
 
@@ -8,10 +8,10 @@
 * `email_type`: interno
 * `value`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: timestamp con fuso orario
+* `last_modified_on`: timestamp con fuso orario
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: timestamp con fuso orario
 * `subject`: interno
 * `last_modified_by`: interno
 * `deleted_by`: interno

@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.438
+InvoiceNow ha voci per fatture e note di
+credito; InvoiceNow SG è un’altra
+
+formats_02
+00:00:06.438 --> 00:00:11.535
+etichetta configurata. Verificate gli
+identificatori del profilo di Singapore.
+
+formats_03
+00:00:11.535 --> 00:00:18.443
+Un profilo nazionale e Peppol BIS generico
+possono condividere la sintassi UBL senza
+
+formats_04
+00:00:18.443 --> 00:00:21.167
+condividere tutte le regole aziendali.
+
+workflow_01
+00:00:21.917 --> 00:00:27.676
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:27.676 --> 00:00:34.711
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:34.711 --> 00:00:35.633
+attiva.
+
+accept_01
+00:00:36.383 --> 00:00:42.362
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:42.362 --> 00:00:47.354
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:47.354 --> 00:00:51.033
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

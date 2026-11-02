@@ -1,0 +1,41 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.876
+OIOUBL 2.1 è la voce danese indicata.
+OIOUBL e Peppol BIS sono profili distinti.
+
+formats_02
+00:00:08.876 --> 00:00:13.533
+La sola sintassi UBL non identifica il
+profilo nazionale.
+
+workflow_01
+00:00:14.283 --> 00:00:20.042
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:20.042 --> 00:00:27.077
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:27.077 --> 00:00:28.000
+attiva.
+
+accept_01
+00:00:28.750 --> 00:00:34.729
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:34.729 --> 00:00:39.721
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:39.721 --> 00:00:43.400
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

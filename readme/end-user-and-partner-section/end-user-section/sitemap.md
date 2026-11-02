@@ -6,7 +6,7 @@ La Mappa del Sito è l'indice completo e ricercabile di tutto ciò che DocBits e
 
 Apri la Mappa del Sito dalla barra laterale (voce in fondo) o premi <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> e scegli **Vedi tutti i risultati**. L'URL diretto è `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Panoramica della Mappa del Sito"><figcaption><p>Mappa del Sito con panoramica per categorie e intestazione di ricerca.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-it.png" alt="Catalogo delle pagine in italiano. I filtri fissi All, Pages, Dialogs, Sidebars e User e le indicazioni more restano in inglese nella versione illustrata."><figcaption><p>Catalogo delle pagine in italiano. I filtri fissi All, Pages, Dialogs, Sidebars e User e le indicazioni more restano in inglese nella versione illustrata.</p></figcaption></figure>
 
 ## Sfogliare il catalogo
 
@@ -20,6 +20,14 @@ Le voci sono colorate per tipo:
 * **Azione** — un pulsante o una scorciatoia che esegue qualcosa senza navigare.
 
 Clicca su qualsiasi voce per saltarvi direttamente. Le voci che richiedono un parametro (un tipo di documento o un identificativo) includono un selettore incorporato — scegli il valore prima di cliccare.
+
+## Video di formazione nell'elenco
+
+Le voci delle pagine che hanno un video di formazione mostrano un'icona video dopo il nome — non solo nelle Impostazioni, ma in tutto il catalogo, per esempio nella Dashboard, nella Validazione dei campi o nelle pagine del Workflow. Selezioni l'icona per riprodurre il video di quella pagina nel pannello **Video e tutorial**, restando sulla mappa del sito.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-it.png" alt="Mappa del Sito con icone video accanto a diverse voci e il pannello Video e tutorial aperto sul video della validazione dei campi"><figcaption><p>Le voci con un video di formazione riportano un'icona video; selezionandola si apre il video nel pannello.</p></figcaption></figure>
+
+Il pannello continua a elencare ogni video per tema, quindi può anche sfogliare e cercare l'intera raccolta dall'icona nella barra superiore. Vedi [Video e tutorial](videos-and-tutorials.md).
 
 ## Cerca e filtra
 

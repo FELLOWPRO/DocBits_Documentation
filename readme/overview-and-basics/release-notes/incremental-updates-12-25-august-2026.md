@@ -8,7 +8,7 @@ avuto modifiche visibili ai clienti._
 
 ---
 
-## Highlights
+## Novità principali
 
 - **Isolamento più rigoroso delle organizzazioni.** Una verifica di sicurezza
   ha chiuso diversi punti in cui i dati di un'organizzazione potevano essere
@@ -102,7 +102,7 @@ avuto modifiche visibili ai clienti._
   invece di restare per sempre su "Preparing…", e la riapertura di un
   documento non serve più dati obsoleti del documento precedente.
 
-### PO matching
+### Abbinamento degli ordini di acquisto
 
 - Aprire il PO Matching senza tutte le colonne obbligatorie mappate è di nuovo
   possibile; quando manca qualcosa di necessario, il messaggio nomina le
@@ -139,7 +139,7 @@ avuto modifiche visibili ai clienti._
   effettiva. Le e-mail delle attività vengono inoltre visualizzate
   correttamente in Outlook.
 
-### Workflow Builder
+### Editor dei flussi di lavoro
 
 - Ricerca, ordinamento e paginazione nell'elenco dei workflow restano coerenti
   mentre filtrate.

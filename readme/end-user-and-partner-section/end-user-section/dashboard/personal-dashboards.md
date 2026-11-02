@@ -1,103 +1,36 @@
-# Cruscotti personali
+# Dashboard personali
 
-## Panoramica
+Una dashboard salvata è una vista con nome della tua lista di lavoro: ricerca, filtri, tipo di documento, ordinamento e colonne visibili. All’apertura tutto viene ripristinato insieme, così le attività ricorrenti non vanno configurate di nuovo. Una dashboard cambia solo la visualizzazione dei documenti e mai i documenti stessi.
 
-Puoi creare e gestire cruscotti personalizzati su misura per le tue esigenze specifiche. Questi cruscotti consentono di:
+## Creare una dashboard
 
-* Definire un ordine personalizzato delle colonne
-* Selezionare solo le colonne rilevanti per il tuo caso d'uso
-* Applicare e salvare filtri personalizzati
-* Condividere i cruscotti con i membri del team
+1. Prepara la vista che vuoi mantenere. Inserisci la ricerca nella barra di ricerca, usa i **Filtri rapidi** del selettore dei campi, i **Filtri**, una scheda del tipo di documento, l’ordinamento della tabella e le colonne.
 
-## Crea una nuova Dashboard
+2. Apri il pulsante della vista sotto il campo di ricerca. Mostra la vista attiva e quanti documenti corrispondono in quel momento, per esempio **Tutti i documenti (5986)**.
 
-Per creare un nuovo cruscotto:
+3. Scegli **Crea una nuova Dashboard**.
 
-1.  Clicca sul pulsante filtro sotto la barra di ricerca.
+4. Assegna un nome chiaro e decidi chi può usare la vista:
+   * **Visibile solo a me** mantiene la vista privata.
+   * **Visibile a tutti gli utenti** la mette a disposizione di tutte le persone dell’organizzazione.
+   * **Condividi con gruppi e utenti** mostra i due elenchi **Gruppi** e **Selezionare l’utente**, per indicare gruppi specifici o singole persone.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Clicca su **Crea una nuova Dashboard**.
+5. Scegli **Salva**. Il pulsante della vista passa alla nuova dashboard e ne mostra il nome e il numero di documenti.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_2.png)
-3.  Inserisci un nome per il tuo cruscotto.
+<figure><img src="../../../.gitbook/assets/dbdc-47-personal-dashboard-empty-create-it-20261101.png" alt="Crea una dashboard con un nome e scegli chi può visualizzarla."><figcaption><p>Crea una dashboard con un nome e scegli chi può visualizzarla.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_3.png)
-4. Imposta il livello di visibilità desiderato. Puoi scegliere tra:
-   * **Visibile solo a me**: Solo tu (l'utente attualmente connesso) puoi visualizzare questo cruscotto.
-   * **Visibile a tutti gli utenti**: Tutti gli utenti della tua organizzazione avranno accesso in visualizzazione.
-   *   **Condividi con gruppi e utenti**: Seleziona utenti o gruppi di utenti specifici che avranno accesso in visualizzazione al cruscotto.
+La visibilità stabilisce chi può **usare** la vista. Non concede accesso ai documenti: ogni persona vede comunque solo i documenti per cui dispone delle autorizzazioni.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_4.png)
-5.  Clicca su **Salva** per creare e salvare il tuo cruscotto.
+## Cambiare vista o modificarla
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_5.png)
+Scegli una dashboard salvata nel pulsante della vista oppure torna alla **Dashboard predefinita**, la vista non salvata di tutti i documenti. L’ultima dashboard aperta resta attiva dopo il ricaricamento della pagina.
 
-## Passare tra i Cruscotti
+Dopo una modifica a una dashboard caricata — anche se cambi solo le colonne — il pulsante della vista offre **Salva le modifiche alla dashboard**. Così salvi la modifica con lo stesso nome. L’azione resta disattivata se non è cambiato nulla o se la dashboard appartiene a un’altra persona; una vista condivisa non si può sovrascrivere, creane una tua.
 
-Per passare da un cruscotto all'altro:
+## Rinominare una dashboard o condividerla di nuovo
 
-1. Clicca sul pulsante filtro sotto la barra di ricerca.
-2.  Nel menu a discesa, seleziona un cruscotto dall'elenco dei cruscotti personali o condivisi.
+Passa il puntatore su una tua dashboard nel pulsante della vista per mostrarne le icone **Modifica** e **Cancellare**. Seleziona la matita per aprire **Modifica Dashboard** e cambiare nome o visibilità. La finestra mostra le stesse tre opzioni della creazione.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_6.png)
+## Eliminare una dashboard
 
-<mark style="color:red;">**Nota**</mark>: Puoi identificare se un cruscotto è personale o condiviso controllando l'icona davanti al nome del cruscotto.
-
-## Modifica/Cancellazione di un Cruscotto personale
-
-Per modificare il tuo cruscotto personale o condiviso:
-
-1.  Clicca sul pulsante filtro sotto la barra di ricerca.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Clicca sul nome del cruscotto personale che vuoi modificare.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3. Apporta le modifiche desiderate, ad esempio:
-   * Modificare l'ordine delle colonne
-   * Regolare la visibilità delle colonne
-   * Modificare i filtri
-
-### **Salvataggio delle modifiche al Cruscotto**
-
-Una volta apportate le modifiche, clicca sul pulsante filtro sotto la barra di ricerca, quindi seleziona **Salva le modifiche alla dashboard**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_11.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo i cruscotti personali possono essere modificati. I cruscotti condivisi possono essere modificati solo dal loro creatore originale.
-
-### **Rinominare un Cruscotto**
-
-Per rinominare un cruscotto personale o condiviso:
-
-1.  Clicca sul pulsante filtro sotto la barra di ricerca.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Seleziona il cruscotto che vuoi rinominare.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3.  Seleziona **Rinomina la Dashboard corrente**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_8.png)
-4.  Inserisci il nuovo nome, quindi clicca su **Salva**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_9.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo i cruscotti personali possono essere rinominati. I cruscotti condivisi possono essere rinominati solo dal loro creatore originale.
-
-### Cancellare un Cruscotto
-
-Per cancellare un cruscotto personale:
-
-1.  Clicca sul pulsante filtro sotto la barra di ricerca.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2. Passa il mouse sopra il cruscotto che vuoi cancellare.
-3.  Clicca sull'icona del cestino accanto ad esso.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_12.png)
-4.  Conferma l'eliminazione cliccando **Cancellare**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_13.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo i cruscotti personali possono essere cancellati. I cruscotti condivisi possono essere cancellati solo dal loro creatore originale.
+Seleziona l’icona del cestino di una tua dashboard e conferma con **Cancellare**. Rimuovere una vista non elimina i documenti a cui faceva riferimento. Una dashboard condivisa con te da un’altra persona si può aprire e usare, ma non modificare né eliminare nel tuo account.

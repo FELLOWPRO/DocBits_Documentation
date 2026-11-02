@@ -14,7 +14,7 @@ Fai clic sul pulsante `+ NUOVO`.
 
 Verrà visualizzato il seguente menu:
 
-<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Modulo per creare una sotto-organizzazione" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-edit_user_in_sub_organization-it.png" alt="Finestra di creazione di una sotto-organizzazione, senza salvataggio."><figcaption><p>Finestra di creazione di una sotto-organizzazione, senza salvataggio.</p></figcaption></figure>
 
 Inserisci i dettagli della sotto-organizzazione che desideri creare — il nome e la descrizione — quindi fai clic sul pulsante `SALVA`. Troverai poi la sotto-organizzazione appena creata in fondo all'elenco delle sotto-organizzazioni esistenti.
 
@@ -35,8 +35,6 @@ Inserisci i dettagli della sotto-organizzazione che desideri creare — il nome 
 Puoi aggiungere un nuovo utente all'organizzazione e scegliere se rimuoverlo dagli altri gruppi.
 
 **Modificare un utente:**
-
-<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="Modificare un utente in una sotto-organizzazione" width="375"><figcaption></figcaption></figure>
 
 * **Modificare le impostazioni della sotto-organizzazione:** gli amministratori possono modificare le impostazioni e le proprietà di una sotto-organizzazione, inclusi nome, descrizione o livello gerarchico all'interno del sistema.
 * **Modificare i dati dell'utente:** gli amministratori possono modificare i dati dei singoli utenti all'interno di una sotto-organizzazione, ad esempio per regolarne i diritti di accesso o aggiornarne le informazioni di contatto.

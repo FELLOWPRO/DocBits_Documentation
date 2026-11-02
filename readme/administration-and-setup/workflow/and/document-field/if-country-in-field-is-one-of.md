@@ -1,43 +1,36 @@
-# If Country in Field is One of
+# Se il Paese nel campo è Uno di
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-it-it.png" alt="Se il Paese nel campo è Uno di, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
-## **Scopo**
+Utilizzare questa condizione quando un passaggio di elaborazione aggiuntivo deve applicarsi ai documenti di determinati paesi, ad esempio Germania e Francia. La scheda confronta il paese letto da un campo del documento con un elenco di paesi configurato.
 
-Questa scheda di workflow è progettata per valutare se un paese specificato, situato in un campo designato, fa parte di un elenco predefinito di paesi. In base a questa valutazione, il workflow può proseguire con una condizione vera o falsa. Aiuta ad automatizzare i processi in cui le azioni dipendono dal fatto che il paese sia incluso o meno in un insieme di paesi consentiti o limitati.
+**Posizione:** Workflow standard → condizioni aggiuntive (AND) → Campo del documento. Configurare separatamente l’azione successiva in THEN.
 
-## **Componenti della scheda:**
+## Configurazione — versione 2
 
-1. **Field Name**
-   * **Descrizione:** Specifica il campo del documento in cui è memorizzato il nome o il codice del paese.
-   * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo dei dati del paese all'interno del documento.&#x20;
-2. **Operator**
-   * **Descrizione:** Definisce se il paese nel campo debba far parte di un elenco predefinito di paesi.
-   * **Opzioni:**
-     * **Is:** Il paese deve essere incluso nell'elenco dei paesi specificati affinché la condizione sia vera.
-     * **Is Not:** Il paese non deve essere incluso nell'elenco dei paesi specificati affinché la condizione sia vera.
-3. **Countries**
-   * **Descrizione:** Specifica l'elenco di paesi con cui verrà confrontato il paese selezionato.
-   * **Dettaglio:** È un elenco di paesi separati da virgole. Il confronto verifica se il paese nel campo è incluso in questo elenco.
-4. **Continue Condition**
-   * **Descrizione:** Definisce il risultato del confronto. Se il paese soddisfa la condizione, il workflow prosegue con il valore Boolean specificato.
-   * **Opzioni:**
-     * **True:** Il workflow prosegue se la condizione corrisponde.
-     * **False:** Il workflow prosegue se la condizione non corrisponde.
+| Impostazione | Valore |
+| --- | --- |
+| Campo | Un campo di testo esistente contenente il nome del paese |
+| Operatore | `is` |
+| Paesi | `Germany, France` |
+| Valore di continuazione | `true` |
 
-## **Funzionalità:**
+<!-- workflow-card-practical-example-20261021 -->
 
-* **Valutazione della condizione:** Il sistema valuta se il paese specificato nel campo fa parte dell'elenco di paesi predefiniti. Questa valutazione confronta il nome o il codice del paese con l'elenco fornito.
-* **Esecuzione dell'azione:**
-  * **Condizione vera:**\
-    Se il paese nel campo fa parte dell'elenco specificato di paesi, il workflow prosegue con la condizione vera. Ciò può attivare ulteriori azioni, come l'instradamento dei documenti al reparto appropriato, l'applicazione di regole di elaborazione specifiche o l'abilitazione di funzionalità specifiche per regione.
-  * **Condizione falsa:**\
-    Se il paese non corrisponde all'elenco, il workflow prosegue con la condizione falsa. Ciò consente di eseguire azioni alternative o di arrestare il workflow in base alla configurazione del sistema.
+## Esempio pratico
 
-## **Configurazione e impostazione:**
+| Valore del paese nel campo | Condizione attesa |
+| --- | --- |
+| `Germany` | Soddisfatta |
+| `France` | Soddisfatta |
+| `United States` | Non soddisfatta |
 
-* Gli utenti configurano la scheda selezionando il campo del documento contenente il paese e specificando l'elenco di paesi con cui effettuare il confronto. L'operatore viene quindi scelto da un menu a discesa per definire se il paese debba o meno far parte dell'elenco specificato di paesi. Infine, gli utenti impostano la condizione di continuazione (vera o falsa), che determina il passaggio successivo nel workflow.
+I nomi dei paesi mostrati come codice sono valori di input fissi per questo esempio.
 
-## **Conclusione:**
+## Limiti e verifiche
 
-La scheda di workflow "Country in Field Comparison with List" è uno strumento prezioso per automatizzare le azioni in base al fatto che un paese faccia parte di un gruppo predefinito. Confrontando i dati del paese con un elenco di paesi consentiti o limitati, questa scheda migliora l'efficienza del workflow e garantisce che i processi del sistema seguano le corrette regole geografiche.
+`false` non inverte il confronto. Con questa impostazione, nemmeno un paese corrispondente produce una condizione positiva. Per verificare la condizione opposta, selezionare `isnot` con `true`.
+
+Gestire separatamente i campi mancanti e i valori di paese vuoti: possono restituire un risultato di dati mancanti anziché una normale mancata corrispondenza.
+
+L’esame del codice sorgente della versione di sviluppo del 22 ottobre 2026 mostra un errore di conversione per input ISO come `DE` e `DEU`. Questi esempi utilizzano quindi nomi di paesi completi. Verificare separatamente la gestione dei codici ISO nella versione installata.

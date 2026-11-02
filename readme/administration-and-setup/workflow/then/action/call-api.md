@@ -1,57 +1,27 @@
-# Call Api
+# Appeler l'API
 
-<figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-fr-fr.png" alt="Appeler l&#x27;API, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
 
-## Objectif :
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-fr-fr.png" alt="Appeler l&#x27;API, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-La carte de workflow **« Call API »** permet aux utilisateurs d'effectuer des requêtes HTTP vers des points de terminaison d'API spécifiés directement depuis le workflow. Cette carte prend en charge diverses méthodes HTTP et permet une interaction dynamique avec des systèmes externes en envoyant des paramètres et des données. Elle rationalise l'intégration avec des services tiers et des API personnalisées, garantissant une communication fluide.
+<!-- workflow-card-call-api-contract-20261022 -->
 
-## Composants de la carte :
+## Objectif
 
-1. **API Endpoint**
-   * **Description :** le point de terminaison cible de l'**API DocBits** avec lequel cette carte interagira.
-   * **Détail :** un champ de texte où les utilisateurs spécifient le point de terminaison de la requête d'API.
-2. **HTTP Method**
-   * **Description :** le type de requête HTTP à effectuer.
-   * **Options :**
-     1. **GET :** récupère des données depuis le point de terminaison spécifié.
-     2. **POST :** envoie des données au point de terminaison.
-     3. **PUT :** met à jour des données existantes au point de terminaison.
-     4. **DELETE :** supprime des données au point de terminaison.
-3. **Parameters**
-   * **Description :** les paramètres de requête à inclure dans la requête d'API.
-   * **Détail :** un champ de texte ou une liste pour saisir des paires clé-valeur pour l'URL de la requête.
-4. **Data**
-   1. **Description :** la charge utile à envoyer dans le corps de la requête d'API (applicable aux méthodes POST et PUT).
-   2. **Détail :** un champ pour saisir les données au format JSON.
+Utilisez `call_api` pour appeler un point de terminaison de l’API DocBits configurée. Le chemin relatif est ajouté à son adresse de base. Une URL externe arbitraire ne configure pas une intégration avec une autre API.
 
-## Fonctionnalité :
+## Configuration
 
-**Évaluation de la condition :** le système évalue les conditions définies dans les sections « Where » et « And » :
+Renseignez le chemin, la méthode HTTP, les paramètres de requête et les données acceptées par le point de terminaison. La requête utilise le contexte de l’utilisateur DocBits courant. Les valeurs absentes de `org_id` et `triggered_by_docflow` sont ajoutées automatiquement. Les objets de paramètres et de données, ou leur représentation textuelle prise en charge, doivent respecter le format de cette version. Elle ne propose pas de correspondance générale des champs d’une réponse JSON.
 
-* Si les deux conditions sont **vraies**, la requête d'API est exécutée telle que configurée.
-* Si l'une des conditions est **fausse**, la carte ne s'exécute pas et aucun appel d'API n'est effectué.
+## Résultat et limites
 
-**Exécution de la requête d'API :**
+Le texte de réponse est converti en booléen : `true`, `1`, `yes` ou `on` seuls donnent vrai ; une réponse non reconnue, y compris un objet JSON arbitraire, donne faux par défaut. Le statut HTTP ne détermine pas à lui seul ce booléen. Un délai dépassé ou une erreur de requête donne faux. Le test de carte simule l’appel et renvoie vrai sans envoyer la requête ; il ne démontre ni authentification, ni connectivité, ni comportement du point de terminaison.
 
-* La carte envoie la requête HTTP au point de terminaison spécifié à l'aide de la méthode sélectionnée.
-* Tous les paramètres fournis sont ajoutés à l'URL, et les données sont incluses dans le corps de la requête (le cas échéant).
+<!-- workflow-card-practical-example-20261021 -->
 
-## Mise en place et configuration :
+## Exemple pratique
 
-1. **Définir le point de terminaison de l'API :**\
-   Saisissez l'URL de l'API que vous souhaitez appeler.
-2. **Sélectionner la méthode HTTP :**\
-   Choisissez l'une des méthodes prises en charge (GET, POST, PUT, DELETE) selon les exigences de votre API.
-3. **Fournir les paramètres :**\
-   Ajoutez tous les paramètres de requête requis sous forme de paires clé-valeur.
-4. **Inclure les données (le cas échéant) :**\
-   Pour les méthodes POST ou PUT, spécifiez les données à envoyer dans le corps de la requête.
-5. **Configuration des conditions :**\
-   Configurez les sections « Where » et « And » pour définir quand l'appel d'API doit avoir lieu.
+Utilisez cette carte après les conditions nécessaires pour obtenir un booléen d’un point de terminaison configuré de l’API DocBits. Pour un test isolé, choisissez un point existant, documenté et en lecture seule, avec le contrat de réponse booléen voulu et la méthode adaptée, par exemple `GET`. Utilisez uniquement ses paramètres de démonstration pris en charge.
 
-## Conclusion :
-
-La carte de workflow **« Call API »** améliore l'automatisation du workflow en permettant une interaction directe avec des systèmes externes. En offrant des configurations flexibles pour les points de terminaison, les méthodes et les données, elle garantit que les workflows peuvent s'intégrer en toute fluidité à des API tierces ou à des backends personnalisés. La possibilité d'exécuter conditionnellement les appels d'API assure précision et efficacité dans l'automatisation des communications externes.
-
-***
+Résultat attendu et contre-exemple : une réponse HTTP `200` hypothétique dont le texte intégral est `true` donne vrai ; `false` donne faux. Un objet tel que `{"approved": true}` n’est pas automatiquement converti en vrai. Vérifiez séparément la réponse réelle et les journaux. Exemple vérifié dans le code d’exécution ; aucun appel ni workflow n’a été exécuté.

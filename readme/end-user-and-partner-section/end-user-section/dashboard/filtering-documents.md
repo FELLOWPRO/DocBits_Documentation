@@ -1,58 +1,45 @@
 # Filtrage des documents
 
-## Options de filtrage par défaut
+Utilisez la barre de recherche du tableau de bord, le panneau de filtres, la plage de dates et les onglets de types de documents pour restreindre la liste des documents. Les commandes fonctionnent ensemble : un document doit correspondre à la recherche active et aux filtres actifs pour rester dans le tableau.
 
-Vous pouvez rechercher des documents spécifiques en saisissant le nom ou l'ID du document dans la barre de recherche située en haut du Tableau de bord.
+## Trouver un document par son nom
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_1.png)
+1. Ouvrez le **Tableau de bord**.
+2. Saisissez une partie du nom d'un document dans la barre de recherche au-dessus du tableau et appuyez sur **Entrée**. Le compteur du badge du tableau de bord et le tableau se mettent à jour pour afficher les documents correspondants.
+3. Remplacez le terme recherché lorsque vous voulez chercher un autre document. Pour les recherches par champ et la syntaxe de recherche, consultez [Recherche rapide](quick-search.md).
 
-Pour un filtrage plus précis, cliquez sur l'icône de filtre située à droite de la barre de recherche pour sélectionner des critères spécifiques de recherche de documents.
+<figure><img src="../../../.gitbook/assets/dbdc167_search-result_fr_20261010.png" alt="Tableau de bord en français montrant une facture de test correspondante après une recherche par nom de document"><figcaption>Une recherche par nom de document restreint la liste des documents de test.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_2.png)
+## Filtrer par statut, responsable ou redémarrage requis
 
-Les options de filtrage suivantes sont disponibles :
+1. Sélectionnez l'**icône de filtres** (curseurs) à l'extrémité droite de la barre de recherche.
+2. Choisissez une ou plusieurs valeurs de **Statut**. Vous pouvez sélectionner plusieurs statuts à la fois.
+3. Dans **Assigné À**, sélectionnez les utilisateurs dont vous voulez voir les documents. Si votre organisation a activé les permissions de groupe, des groupes peuvent apparaître dans cette même liste. Il n'existe pas de champ distinct **Assigné au groupe** dans ce panneau.
+4. Sélectionnez **Redémarrage Nécessaire** pour afficher les documents qui nécessitent un redémarrage.
+5. Sélectionnez **Appliquer**. Sélectionnez **Effacer les filtres** dans ce panneau pour supprimer ces sélections ; le texte de recherche et la plage de dates sont des commandes distinctes.
 
-* **Statut**: Filtrer par statut de traitement (par ex., Ready for validation, Rejected).
-*   **Assigné à**: Filtrer par les utilisateurs assignés au document.
+<figure><img src="../../../.gitbook/assets/dbdc167_filter-panel_fr_20261010.png" alt="Panneau de filtres du tableau de bord en français avec Statut, Assigné À, Redémarrage Nécessaire, Effacer les filtres et Appliquer"><figcaption>Le panneau de filtres actuel comporte trois critères et deux actions.</figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_9.png)
-* **Assigné au groupe**: Filtrer par les groupes assignés au document.
-* **Redémarrage nécessaire**: Filtrer les documents qui nécessitent un redémarrage.
+<figure><img src="../../../.gitbook/assets/dbdc167_status-options_fr_20261010.png" alt="Liste déroulante Statut dans le panneau de filtres du tableau de bord en français avec les statuts de traitement sélectionnables"><figcaption>Sélectionnez les statuts de traitement dont vous avez besoin.</figcaption></figure>
 
-Cliquez sur **Appliquer** pour appliquer les filtres sélectionnés, ou **Effacer les filtres** pour les réinitialiser.
+<figure><img src="../../../.gitbook/assets/dbdc167_assignee-options_fr_20261010.png" alt="Liste déroulante Assigné À montrant les utilisateurs synthétiques de l'organisation de test"><figcaption>Sélectionnez un utilisateur dans Assigné À.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_3.png)
+Pour une explication de la signification de chaque statut de traitement, consultez [État du document](document-status.md).
 
-## Filtrage par période
+## Choisir une plage de dates d'importation
 
-Pour filtrer les documents par date d'importation, utilisez le filtre temporel situé à droite de la barre de recherche. Vous pouvez choisir parmi les plages temporelles prédéfinies suivantes :
+Au-dessus de la barre de recherche, sélectionnez **30D**, **90D**, **180D**, **365D** ou **Tous** pour modifier la plage de dates d'importation. Sélectionnez **Sur mesure**, choisissez **Date De Début** et **Date De Fin**, puis sélectionnez **Appliquer** pour une plage spécifique. Le choix actuel est mis en évidence.
 
-* **30 jours**
-* **90 jours**
-* **180 jours**
-* **365 jours**
-* **Tous**
+<figure><img src="../../../.gitbook/assets/dbdc167_custom-dates_fr_20261010.png" alt="Plage de dates personnalisée sur le tableau de bord en français avec Date De Début, Date De Fin et Appliquer"><figcaption>Utilisez Sur mesure lorsque les plages de dates prédéfinies ne conviennent pas.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_4.png)
+## Utiliser les onglets de types de documents
 
-Vous pouvez également sélectionner une plage de dates personnalisée en cliquant sur **Sur mesure**, puis en spécifiant une **Date de début** et une **Date de fin**. Ensuite, cliquez sur **Appliquer** pour activer le filtre.
+1. Sélectionnez **+** à côté de **Tous**. Le menu liste les types de documents disponibles pour votre organisation.
+2. Sélectionnez un type, par exemple **Facture**, pour ajouter son onglet. Sélectionnez ensuite le nouvel onglet pour filtrer le tableau sur ce type. **Tous** supprime la restriction de type sans supprimer l'onglet.
+3. Pour supprimer un onglet de type, sélectionnez son **×**. L'onglet **Tous** ne peut pas être supprimé.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_5.png)
+<figure><img src="../../../.gitbook/assets/dbdc167_document-type-menu_fr_20261010.png" alt="Menu plus du tableau de bord en français montrant Facture comme type de document disponible"><figcaption>Ajoutez un onglet de type de document depuis le menu plus.</figcaption></figure>
 
-<mark style="color:red;">**Remarque**</mark>: La sélection d'une période plus longue peut entraîner des temps de chargement plus lents.
+<figure><img src="../../../.gitbook/assets/dbdc167_invoice-tab_fr_20261010.png" alt="Onglet Facture sélectionné comme type de document sur le tableau de bord en français, avec son icône de suppression visible"><figcaption>Choisissez l'onglet pour appliquer le filtre de type ; utilisez × pour supprimer l'onglet.</figcaption></figure>
 
-## Filtrer par type de document
-
-Pour filtrer par types de document spécifiques :
-
-1.  Cliquez sur l'icône plus (+) en haut du Tableau de bord.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_6.png)
-2. Sélectionnez un type de document dans la liste.
-3.  Après avoir sélectionné un type de document, vous pouvez basculer entre les filtres à l'aide des onglets en haut du Tableau de bord.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_7.png)
-
-Pour supprimer un filtre spécifique, survolez l’étiquette de filtre et cliquez sur le X rouge. Cela supprimera le filtre de la liste des onglets.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_8.png)
+Si le menu **+** ne contient aucun type, demandez à un administrateur de vérifier quels types de documents sont actifs pour votre organisation. Consultez [Document Types](../../../administration-and-setup/settings/global-settings/document-types/README.md). Pour enregistrer une combinaison de filtres pour plus tard, consultez [Tableaux de bord personnels](personal-dashboards.md).

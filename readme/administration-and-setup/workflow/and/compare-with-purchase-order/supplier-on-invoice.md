@@ -1,6 +1,6 @@
-# Supplier on Invoice
+# Fournisseur sur facture
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_invoice_to_po_supplier_v2-fr-fr.png" alt="Fournisseur sur facture, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,11 +8,11 @@ Cette carte de workflow est conçue pour comparer les informations du fournisseu
 
 ## **Composants de la carte :**
 
-1. **Operator :**
-   * **Description** : définit la condition de comparaison du fournisseur de la facture au fournisseur du bon de commande.
-   * **Options** :
+1. **Opérateur :**
+   * **Descriptif** : définit la condition de comparaison du fournisseur de la facture au fournisseur du bon de commande.
+   * **Possibilités** :
      * **Is** : vérifie si le fournisseur de la facture correspond au fournisseur du bon de commande.
-     * **Is Not** : s'assure que le fournisseur de la facture ne correspond pas au fournisseur du bon de commande.
+     * **N'est-ce pas** : s'assure que le fournisseur de la facture ne correspond pas au fournisseur du bon de commande.
 
 ## **Fonctionnalité :**
 

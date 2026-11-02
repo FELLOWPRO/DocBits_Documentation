@@ -1,71 +1,73 @@
-# Then : choisir une carte d'action
+# Alors
 
-Une carte **Then** indique à un workflow quoi faire après son déclencheur **When** et ses éventuelles conditions **And**. Dans le **Workflow Builder**, sélectionnez **Ajouter une carte** sous **Dans ce cas...**. Choisissez une catégorie à gauche ou tapez un nom dans **Carte de recherche**. Sélectionnez un aperçu de carte pour l'ajouter, remplissez les champs affichés sur la carte, puis enregistrez le workflow. Faites défiler la fenêtre de sélection pour voir d'autres cartes. Sélectionnez **×** pour la fermer sans ajouter de carte. Voir [Workflow](../README.md) pour la séquence complète.
+Une carte **Alors** indique à un flux de travail quoi faire après son déclencheur **Quand** et toutes les conditions **Et**. Dans **Générateur de flux de travail**, sélectionnez **Ajouter une carte** sous **Dans ce cas...**. Choisissez une catégorie sur la gauche ou tapez un nom dans **Carte de recherche**. Sélectionnez un aperçu de la carte pour l'ajouter, remplissez les champs affichés sur la carte et enregistrez le flux de travail. Faites défiler le sélecteur pour voir plus de cartes. Sélectionnez **×** pour le fermer sans ajouter de carte. Voir [Workflow](..) pour la séquence complète.
 
-Les aperçus ci-dessous montrent des actions disponibles, pas des paramètres déjà configurés. Choisissez l'action qui correspond au résultat souhaité.
+Les aperçus ci-dessous montrent les actions disponibles, et non les paramètres terminés. Choisissez l'action qui correspond au résultat souhaité.
 
-## Champ du document
+## Champ de document
 
-Définir ou inverser une case à cocher, saisir du texte dans un champ, ou copier un champ dans un autre. Choisissez les noms de champs et les valeurs demandés par la carte. Voir [Champ du document](document-field/README.md).
+Cochez ou inversez une case à cocher, placez du texte dans un champ ou copiez un champ dans un autre. Choisissez les noms de champs et la valeur demandés par la carte. Voir [Champ du document](document-field).
 
-<figure><img src="../../../.gitbook/assets/then-category-document-field-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Champ du document sélectionnée ; les aperçus montrent les actions case à cocher, texte et copie de champ."><figcaption>Modifier un champ ou copier son contenu.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Document
 
-Choisissez **Approuver le document** ou **Rejeter le document** lorsque le workflow doit prendre cette décision. Ajoutez d'abord une condition **And** si l'approbation doit dépendre d'un contrôle. Voir [Document](document/README.md).
+Choisissez **Approuver le document** ou **Rejeter le document** lorsque le flux de travail doit prendre cette décision. Utilisez d'abord une condition **Et** si l'approbation doit dépendre d'un contrôle. Voir [Document](document).
 
-<figure><img src="../../../.gitbook/assets/then-category-document-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Document sélectionnée ; les aperçus Approuver le document et Rejeter le document sont visibles."><figcaption>Approuver ou rejeter le document actuel.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Logique
 
-Utilisez ces cartes pour convertir des valeurs entre formats numérique, texte et booléen, ou pour lire une valeur dans un JSON. Choisissez les champs d'entrée et de sortie sur la carte sélectionnée.
+Utilisez ces cartes pour convertir des valeurs entre les formats numérique, texte et booléen, ou lire une valeur à partir de JSON. Choisissez les champs de saisie et de sortie sur la carte sélectionnée.
 
-<figure><img src="../../../.gitbook/assets/then-category-logic-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Logique sélectionnée ; les aperçus visibles convertissent des types de données et lisent des valeurs dans un JSON."><figcaption>Transformer des valeurs pour une étape ultérieure du workflow.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Statut
 
-Choisissez **Modifier le statut** pour faire passer le document au statut sélectionné. La carte peut aussi déclencher un autre workflow. Voir [Statut](status/README.md).
+Choisissez **Modifier le statut en** pour déplacer le document vers un statut sélectionné. La carte peut également déclencher un autre flux de travail. Voir [Statut](status).
 
-<figure><img src="../../../.gitbook/assets/then-category-status-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Statut sélectionnée ; l'aperçu Modifier le statut contient un champ de statut et un déclenchement de workflow facultatif."><figcaption>Faire passer le document à un autre statut.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Invites et scripts
 
-Choisissez cette catégorie pour exécuter un script d'invite DocOperator. Sélectionnez le script et les variables demandés par la carte. La carte propose aussi des paramètres d'exécution tels que les tentatives.
+Choisissez cette catégorie pour exécuter un script d'invite DocOperator. Sélectionnez le script et les variables demandées par la carte. La carte propose également des paramètres d'exécution tels que les tentatives.
 
-<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Invites et scripts sélectionnée ; un aperçu de script d'invite DocOperator est visible."><figcaption>Exécuter un script d'invite DocOperator configuré.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-## Exportation
+## Exporter
 
-Lancer une exportation, exporter avec une configuration choisie, ou mettre en file d'attente une exportation finale. Choisissez la configuration d'exportation et l'option de tâches en attente affichés sur votre carte. Voir [Exportation](export/README.md).
+Démarrez une exportation, exportez avec une configuration choisie ou mettez en file d'attente une exportation finale. Choisissez la configuration d’exportation et l’option de tâche en attente affichées sur votre carte. Voir [Exporter](export).
 
-<figure><img src="../../../.gitbook/assets/then-category-export-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Exportation sélectionnée ; les aperçus montrent le lancement, l'exportation configurée, la file d'attente et l'exportation finale."><figcaption>Choisir quand et comment le document est exporté.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Tâche
 
-Créer une tâche ou une notification et l'assigner à un utilisateur ou à un groupe. Saisissez le titre, la description, la priorité et les paramètres de notification demandés par la carte. Certaines cartes assignent de façon séquentielle. Voir [Tâche](task/README.md).
+Créez une tâche ou une notification et attribuez-la à un utilisateur ou un groupe. Saisissez les paramètres de titre, de description, de priorité et de notification demandés par la carte. Certaines cartes sont attribuées de manière séquentielle. Voir [Tâche](task).
 
-<figure><img src="../../../.gitbook/assets/then-category-task-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Tâche sélectionnée ; les aperçus visibles créent ou assignent des tâches et des notifications."><figcaption>Créer un travail de suivi pour une personne ou un groupe.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-## E-mail
+## Courriel
 
-Envoyer un e-mail à l'aide d'un modèle sélectionné, soit à des destinataires, soit à des groupes. Choisissez le modèle et la destination sur la carte.
+Envoyez un e-mail en utilisant un modèle sélectionné, soit aux destinataires, soit aux groupes. Choisissez le modèle et la destination sur la carte.
 
-<figure><img src="../../../.gitbook/assets/then-category-email-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie E-mail sélectionnée ; les aperçus envoient un e-mail avec modèle à des destinataires ou à des groupes."><figcaption>Envoyer un e-mail avec un modèle.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Tableau
 
-Modifier des entrées ou calculer des valeurs dans un tableau de document. Sélectionnez le tableau, les colonnes, l'opérateur et la colonne de résultat demandés par la carte. Voir [Tableau](table/README.md).
+Modifiez les entrées ou calculez les valeurs dans un tableau de document. Sélectionnez la table, les colonnes, l'opérateur et la colonne de résultat demandés par la carte. Voir [Tableau](table).
 
-<figure><img src="../../../.gitbook/assets/then-category-table-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Tableau sélectionnée ; les aperçus modifient des entrées et calculent des colonnes de résultat."><figcaption>Mettre à jour ou calculer les données d'un tableau.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
-## Attribué à
+## Responsable
 
-Assigner le document à un utilisateur, un groupe, un bénéficiaire ou une sous-organisation. Certaines cartes utilisent un champ ou une table de décision et proposent une solution de repli. Choisissez la bonne destination et la solution de repli sur la carte sélectionnée. Voir [Attribué à](assignee/README.md).
+Attribuez le document à un utilisateur, un groupe, un destinataire ou une sous-organisation. Certaines cartes utilisent un champ ou une table de décision et proposent une solution de repli. Configurez la destination et le comportement de repli dans la carte sélectionnée. Voir [Responsable](assignee).
 
-<figure><img src="../../../.gitbook/assets/then-category-assignee-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Attribué à sélectionnée ; les aperçus visibles assignent un utilisateur, un bénéficiaire, un groupe ou un contact fournisseur."><figcaption>Acheminer le document vers la prochaine personne ou le prochain groupe responsable.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Action
 
-Exécuter un autre workflow, envoyer une requête HTTPS, appeler une API, ou utiliser la carte de calcul d'IA pour les majorations de coûts. Ces actions peuvent affecter d'autres systèmes ; demandez à votre administrateur quel point d'accès et quels paramètres utiliser. Voir [Action](action/README.md).
+Exécutez un autre workflow, envoyez une requête HTTPS, appelez une API ou utilisez la carte de calcul de l'augmentation des coûts. Ces actions peuvent affecter d'autres systèmes ; demandez à votre administrateur quel point de terminaison et quels paramètres utiliser. Voir [Action](action).
 
-<figure><img src="../../../.gitbook/assets/then-category-action-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Action sélectionnée ; les aperçus montrent Exécuter le flux de travail, requête HTTPS, appel d'API et calcul de l'IA pour les majorations de coûts."><figcaption>Démarrer un autre workflow ou une action d'intégration.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-fr.png" alt="Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects."><figcaption><p>Cartes disponibles dans la catégorie sélectionnée. Renseignez les champs avant utilisation. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+
+[Champs détaillés de la carte logique, chemins JSON, déclencheurs et tests](../cards-overview/logic-cards-guide.md).

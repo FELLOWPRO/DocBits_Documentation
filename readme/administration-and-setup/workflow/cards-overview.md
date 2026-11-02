@@ -1,19 +1,23 @@
-# Cards
+# Cartes
 
-Les cartes sont les blocs de construction de chaque workflow. Vous les combinez dans les groupes **When / And / Then** pour décrire quand un workflow s'exécute et ce qu'il fait. Cette section présente les cartes disponibles et le rôle de chacune.
+Les cartes sont les éléments constitutifs de chaque flux de travail. Vous les combinez dans les groupes **Quand.... / Et.... / Dans ce cas....** pour décrire quand un workflow s'exécute et ce qu'il fait. Cette section explique les cartes disponibles et ce que chacune fait.
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Bibliothèque Add Card regroupée par catégorie"><figcaption><p>La bibliothèque <strong>Add Card</strong> — les cartes sont regroupées par catégorie.</p></figcaption></figure>
+La vue partielle ci-dessous montre un exemple de carte de condition de la catégorie **Comparaison des bons de commande**. Elle compare des données de confirmation de commande et de bon de commande. Les paramètres sont encore à renseigner : cette carte est affichée dans la bibliothèque, avant son ajout au workflow.
+
+<figure><img src="../../.gitbook/assets/workflow-po-condition-library-current-fr.png" alt="Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner."><figcaption><p>Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner.</p></figcaption></figure>
 
 ## Groupes de cartes
 
-- **When** — les cartes de déclenchement qui démarrent un workflow (par ex. document type, document type one of).
-- **And** — les cartes de condition qui doivent également être vraies avant l'exécution des actions. Elles incluent les conditions *Compare with Purchase Order* (rapprochement de bons de commande), les comparaisons *Document Field*, *Date & Time*, *Logic*, *Status*, *Table* et *Assignee*.
-- **Then** — les cartes d'action qui effectuent le travail : définir des champs, approuver/rejeter, changer de statut, exporter, créer des tâches, assigner des documents, manipuler des tableaux et exécuter des actions (Call API, Send HTTPS request, Run Workflow, calculs par IA).
+* **Quand....** — les cartes de déclenchement qui démarrent un workflow, par exemple selon un type de document ou plusieurs types de document.
+* **Et....** — les cartes de condition qui doivent également être vraies avant l’exécution des actions. Elles comprennent les comparaisons avec les bons de commande, les conditions sur les champs du document, la date et l’heure, la logique, le statut, les tableaux et l’affectation.
+* **Dans ce cas....** — les cartes d’action qui définissent les champs, approuvent ou rejettent un document, modifient son statut, exportent, créent des tâches, affectent des documents, manipulent des tableaux ou exécutent d’autres actions : appeler une API, envoyer une requête HTTPS, exécuter un workflow ou effectuer des calculs avec l’IA.
 
 ## Guides de référence des cartes
 
-Pour une référence complète de chaque carte et de ses options, consultez les pages *complete guide* de cette section (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards, ainsi que les cartes Action).
+Pour une référence complète de chaque carte et de ses options, consultez les pages du _guide complet_ dans cette section (cartes de condition, cartes de correspondance de bon de commande, cartes d'affectation et d'utilisateur, cartes de tâches, cartes de champs et de tableaux et cartes d'action).
 
-## Combiner les cartes
+## Combiner des cartes
 
-Pour découvrir des combinaisons de cartes éprouvées qui résolvent des scénarios métier courants, consultez les **Workflow Pattern Guides**.
+Pour voir des combinaisons éprouvées de cartes qui résolvent des scénarios commerciaux courants, consultez les **Guides des modèles de flux de travail**.
+
+[Cartes logiques : référence complète](cards-overview/logic-cards-guide.md).

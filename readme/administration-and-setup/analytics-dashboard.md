@@ -40,25 +40,25 @@ Choisissez la bonne perspective pour votre analyse. Chaque type de flux vous off
 
 Utilisez le sélecteur **Type de flux** en haut du tableau de bord pour basculer entre les perspectives.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_types-fr.png" alt="Vues du traitement, des interactions utilisateur et des statuts."><figcaption><p>Vues du traitement, des interactions utilisateur et des statuts.</p></figcaption></figure>
 
 ### Flux de statut
 
 Suit le parcours du document de **Nouveau** à **Exporté** — utile pour l'analyse du cycle de vie de bout en bout.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_status_flow-fr.png" alt="Vue des statuts dans l’analyse."><figcaption><p>Vue des statuts dans l’analyse.</p></figcaption></figure>
 
 ### Flux de traitement
 
 Analyse les performances de tous les **modules de traitement technique** (OCR, classification, extraction, validation) — utile pour identifier les goulots d'étranglement côté système.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_processing_flow-fr.png" alt="Vue du traitement et de ses étapes agrégées."><figcaption><p>Vue du traitement et de ses étapes agrégées.</p></figcaption></figure>
 
 ### Flux d'interaction utilisateur
 
 Se concentre sur les **points de contact humains** — temps d'attente en file, validation manuelle, révision et approbation — utile pour identifier les goulots d'étranglement de flux de travail et de personnel.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_user_interaction_flow-fr.png" alt="Vue des interactions utilisateur sans données pour les filtres sélectionnés."><figcaption><p>Vue des interactions utilisateur sans données pour les filtres sélectionnés.</p></figcaption></figure>
 
 ## Options de filtrage
 
@@ -68,13 +68,13 @@ Le tableau de bord prend en charge un filtrage multidimensionnel puissant. Tous 
 
 Localisez instantanément n'importe quel document par **nom** ou **identifiant unique**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_search-fr.png" alt="Analyse filtrée par le terme Validation."><figcaption><p>Analyse filtrée par le terme Validation.</p></figcaption></figure>
 
 ### Étapes du flux
 
 Sélectionnez des étapes spécifiques pour cibler votre analyse. L'activation/désactivation des étapes recalcule également les métriques de temps dans les autres composants du tableau de bord.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_flow_steps-fr.png" alt="Sélection des étapes dans le filtre du tableau d’analyse."><figcaption><p>Sélection des étapes dans le filtre du tableau d’analyse.</p></figcaption></figure>
 
 ### Sous-organisation, Type de document, Fournisseur, Groupe
 
@@ -85,7 +85,7 @@ Comparez les performances entre :
 * **Fournisseurs** — pour identifier les fournisseurs qui causent les temps de traitement les plus longs
 * **Groupes** — pour comparer les performances entre les groupes d'utilisateurs assignés (disponible pour les types de flux **Statut** et **Interaction de l'utilisateur**)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_dimensions-fr.png" alt="Filtres d’analyse par étape, sous-organisation, type de document et fournisseur."><figcaption><p>Filtres d’analyse par étape, sous-organisation, type de document et fournisseur.</p></figcaption></figure>
 
 <mark style="color:red;">**Remarque**</mark> : Le filtre **Groupe** ne s'applique qu'aux documents qui sont **directement assignés à un groupe**. Les documents assignés à un utilisateur individuel — même si cet utilisateur est membre d'un groupe — ne sont **pas** inclus dans les résultats du filtre de groupe.
 
@@ -95,13 +95,23 @@ Activé par défaut — seuls les documents dont l'exportation est terminée son
 
 <mark style="color:red;">**Remarque**</mark> : Désactiver cette option peut entraîner des valeurs moyennes inexactes, car les documents qui ne sont pas encore terminés sont également inclus dans les calculs.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_only_exported_toggle-fr.png" alt="Option pour limiter l’analyse aux documents exportés."><figcaption><p>Option pour limiter l’analyse aux documents exportés.</p></figcaption></figure>
 
 ### Période
 
 Analysez n'importe quelle période, de **7 jours** jusqu'à une **année complète**, ou définissez une **plage personnalisée** à l'aide du sélecteur de dates.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-fr.png" alt="Période personnalisée dans la barre des filtres d’analyse."><figcaption><p>Période personnalisée dans la barre des filtres d’analyse.</p></figcaption></figure>
+
+### Les filtres sont mémorisés
+
+Le tableau de bord enregistre vos filtres et la période dans ce navigateur, séparément pour chaque utilisateur et chaque organisation. Lorsque vous rouvrez le tableau de bord, votre dernière sélection est restaurée, y compris une période personnalisée saisie dans le sélecteur de dates.
+
+Sélectionnez **Réinitialiser les paramètres par défaut** en haut à droite du tableau de bord pour effacer la sélection enregistrée : les filtres, la période et les dates personnalisées reviennent à leurs valeurs par défaut.
+
+<mark style="color:red;">**Remarque**</mark> : la sélection est stockée dans le navigateur, pas sur le serveur. Elle n'est pas synchronisée avec d'autres appareils ni d'autres navigateurs.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-fr.png" alt="Tableau de bord Analytics en vue Statut, avec la ligne de filtres et le bouton Réinitialiser les paramètres par défaut en haut à droite"><figcaption><p>Les filtres sont restaurés lorsque vous revenez au tableau de bord. Réinitialiser les paramètres par défaut les efface.</p></figcaption></figure>
 
 ## Cartes des étapes du flux
 
@@ -115,7 +125,7 @@ Chaque carte affiche :
 
 Un commutateur **Tout sélectionner** dans l'en-tête vous permet d'inclure ou d'exclure toutes les étapes à la fois.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-fr.png" alt="Cartes des étapes avec les durées de traitement agrégées."><figcaption><p>Cartes des étapes avec les durées de traitement agrégées.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
@@ -127,7 +137,7 @@ Le commutateur **Comparer avec la Moyenne mondiale** contrôle si la Moyenne mon
 * **Orange** — votre Temps moyen est jusqu'à **+25 %** au-dessus de la Moyenne mondiale
 * **Rouge** — votre Temps moyen est à **+25 %** ou plus au-dessus de la Moyenne mondiale
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_global_average_comparison-fr.png" alt="Durée moyenne comparée à la moyenne globale."><figcaption><p>Durée moyenne comparée à la moyenne globale.</p></figcaption></figure>
 
 ## Graphique du temps moyen
 
@@ -179,8 +189,12 @@ Le Tableau de données donne un accès complet à toutes les données de ligne s
 * **Triez** en cliquant sur les en-têtes de colonne et **réorganisez** les colonnes par glisser-déposer.
 * **Téléchargez le CSV** via le bouton dans l'en-tête de la carte — seules les colonnes actuellement visibles sont exportées.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
+<figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-fr.png" alt="Tableau d’analyse avec en-têtes français ; les valeurs des documents sont masquées."><figcaption><p>Tableau d’analyse avec en-têtes français ; les valeurs des documents sont masquées.</p></figcaption></figure>
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+L'onglet **Intelligence sans contact** montre combien de documents traversent DocBits sans que personne n'intervienne, et pourquoi les autres s'arrêtent. Voir [Touchless Intelligence](touchless-intelligence.md).

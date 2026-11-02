@@ -1,6 +1,6 @@
 # Routage des notifications
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_routing.png" alt="Routes de notification"><figcaption><p>Association des résultats de validation aux agents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-routing-fr.png" alt="Routes de notification"><figcaption><p>Association des résultats de validation aux agents</p></figcaption></figure>
 
 La page **Routage des notifications** (**Documents électroniques → Actions**) associe les résultats de validation aux **agents AI Workforce**. Chaque résultat bloquant déclenche exactement un agent — celui dont le préfixe de code correspond le plus longtemps. Tout ce qui ne correspond à rien revient à l'agent de notification au fournisseur par défaut.
 
@@ -20,7 +20,7 @@ Pour chaque route, choisissez l'agent responsable dans le menu déroulant. **Ava
 
 ## Agents disponibles
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_agents.png" alt="Registre des agents disponibles"><figcaption><p>Registre en lecture seule des agents AI Workforce</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-agents-fr.png" alt="Registre des agents disponibles"><figcaption><p>Registre en lecture seule des agents AI Workforce</p></figcaption></figure>
 
 La section **Agents disponibles** est un registre en lecture seule des agents AI Workforce fournis avec votre déploiement, par exemple :
 

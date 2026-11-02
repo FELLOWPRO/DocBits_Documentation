@@ -1,4 +1,4 @@
-# Document type
+# Documenttype
 
 ## Kolommen
 

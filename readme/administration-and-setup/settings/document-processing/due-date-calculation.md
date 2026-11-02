@@ -1,8 +1,10 @@
 # Vervaldatumberekening
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Instellingen voor de vervaldatumberekening"><figcaption><p>Instellingen voor de vervaldatumberekening</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-nl.png" alt="Instellingen voor de vervaldatumberekening"><figcaption><p>Instellingen voor de vervaldatumberekening</p></figcaption></figure>
 
 De pagina **Vervaldatumberekening** (**Documentverwerking → Vervaldatumberekening**) bepaalt hoe DocBits vervaldatums van facturen, kortingsvervaldatums (Skonto) en betalingsvoorwaarden berekent op basis van de betalingsvoorwaardecodes die op facturen worden gevonden.
+
+De kaart **Invoice Due Date Calculation** bevat de algemene instellingen. Gebruik **Opslaan** in de koptekst om wijzigingen op te slaan. Verderop staan de tabellen voor kortings- en betalingsvoorwaarden en een overzicht van de ondersteunde formaten.
 
 ## Berekende velden tonen
 
@@ -12,9 +14,7 @@ Schakel **Berekende velden tonen** in zodat de automatisch berekende factuurveld
 
 ### Weekendafhandeling
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Opties voor de weekendconventie"><figcaption><p>Opties voor de weekendconventie</p></figcaption></figure>
-
-Kies hoe een vervaldatum die op een zaterdag of zondag valt, wordt aangepast. Dit geldt **zowel** voor de factuurvervaldatum als voor de kortingsvervaldatum (Skonto).
+Kies de **Weekendafhandeling** om te bepalen hoe een vervaldatum die op een zaterdag of zondag valt, wordt aangepast. Dit geldt **zowel** voor de factuurvervaldatum als voor de kortingsvervaldatum (Skonto).
 
 | Conventie | Effect |
 |-----------|--------|
@@ -30,13 +30,19 @@ Koppel de betalingsvoorwaarden van de leverancier aan AP-toewijzingscodes voor g
 
 ## Kortingsvoorwaarde-overschrijvingen
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Kortingsvoorwaarde-overschrijvingen"><figcaption><p>Kortingsvoorwaarde-overschrijvingen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-nl.png" alt="Kortingsvoorwaarde-overschrijvingen"><figcaption><p>Kortingsvoorwaarde-overschrijvingen</p></figcaption></figure>
 
-Gebruik **Kortingsvoorwaarde-overschrijvingen** om een specifiek voorvoegsel te koppelen aan een kortingspercentage en een aantal dagen. Klik op **+ Koppeling toevoegen** om een rij toe te voegen met **Voorvoegsel**, **Percentage** en **Dagen**.
+Gebruik **Kortingsvoorwaarde-overschrijvingen** om een specifiek voorvoegsel te koppelen aan een kortingspercentage en een aantal dagen. Klik op **Koppeling toevoegen** om een rij toe te voegen met **Voorvoegsel**, **Percentage** en **Dagen**. Gebruik het menu (⋮) aan het einde van een rij om een bestaande koppeling te wijzigen of te verwijderen.
+
+## Overschrijvingen van betalingsvoorwaarden
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-nl.png" alt="Overschrijvingen van betalingsvoorwaarden"><figcaption><p>Overschrijvingen van betalingsvoorwaarden</p></figcaption></figure>
+
+Gebruik **Overschrijvingen van betalingsvoorwaarden** om een betalingsvoorwaardecode te koppelen aan een termijntype, een aantal dagen en een omschrijving. Klik op **Koppeling toevoegen** om een rij toe te voegen en gebruik het menu (⋮) aan het einde van de rij om deze te wijzigen of te verwijderen.
 
 ## Ondersteunde formaten
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Ondersteunde betalingsvoorwaarde- en kortingsformaten"><figcaption><p>Ondersteunde betalingsvoorwaarde- en kortingsformaten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-nl.png" alt="Ondersteunde betalingsvoorwaarde- en kortingsformaten"><figcaption><p>Ondersteunde betalingsvoorwaarde- en kortingsformaten</p></figcaption></figure>
 
 DocBits herkent de volgende betalingsvoorwaarde- en kortingscodes.
 

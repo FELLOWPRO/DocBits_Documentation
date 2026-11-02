@@ -1,13 +1,13 @@
-# Activeer of deactiveer een documenttype
+# Een documenttype activeren of deactiveren
 
-Beheerders kunnen kiezen welke documenttypes beschikbaar zijn voor hun organisatie. U wijzigt dit op de pagina **Documenttypen** zonder het type of de bijbehorende configuratie te verwijderen.
+Beheerders kunnen kiezen welke documenttypes voor hun organisatie beschikbaar zijn. U kunt dit wijzigen op de pagina **Documenttypen**, zonder het type of de configuratie ervan te verwijderen.
 
 1. Open **Instellingen → Documenttypen**.
 2. Zoek het documenttype, bijvoorbeeld **Factuur**, onder **Standaarddocumenttypen** of **Aangepaste documenttypen**.
-3. Gebruik de schakelaar **Activeren** op de kaart van dat type. Een gekleurde schakelaar betekent dat het type actief is; een grijze schakelaar betekent dat het inactief is. Wacht op het bevestigingsbericht voordat u de pagina verlaat. Voor deze schakelaar is geen aparte knop Om te slaan.
+3. Gebruik de schakelaar met het label **Activeren** op de kaart van dat type. Een gekleurde schakelaar betekent dat het type actief is; een grijze schakelaar betekent dat het inactief is. Wacht op de bevestigingsmelding voordat u de pagina verlaat. Voor deze schakelaar is er geen aparte knop Save.
 
-<figure><img src="../../../../.gitbook/assets/document-type-activation-nl-20261007.png" alt="Nederlandse pagina Documenttypen met de schakelaars Activeren en Extraction op de kaarten van Factuur, Delivery Note en Order Confirmation"><figcaption><p>Elk documenttype heeft zijn eigen schakelaar Activeren aan de rechterkant van de kaart.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t019-nl.png" alt="Documenttypen en activeringsopties."><figcaption><p>Documenttypen en activeringsopties.</p></figcaption></figure>
 
-De schakelaar **Extraction** naast **Activeren** is een andere instelling. Deze kiest de extractiemodus (Flex of Fix); hiermee activeert of deactiveert u het documenttype niet. Het tandwiel-icoon opent meer instellingen voor dat type. De koppelingen onder de typenaam openen de indelingen, velden, tabellen, scripts en andere beschikbare configuratiegebieden.
+De schakelaar **Extractie** naast **Activeren** is een andere instelling. Hiermee kiest u de extractiemodus (Flex of Fix); het activeert of deactiveert het documenttype niet. Het tandwielpictogram opent meer instellingen voor dat type. De links onder de naam van het type openen de lay-outs, velden, tabellen, scripts en andere beschikbare configuratiegebieden.
 
-DocBits levert de standaarddocumenttypen; deze kunnen niet worden verwijderd. U kunt ook aangepaste typen maken en beheren. Zie [Documenttypen toevoegen/bewerken](adding-editing-document-types.md) voor de volgende installatiestappen en [Tabelkolommen](table-columns/README.md) om de opgehaalde tabelregels te configureren.
+DocBits levert de standaarddocumenttypes, die niet kunnen worden verwijderd. U kunt ook aangepaste types aanmaken en beheren. Zie [Documenttypes toevoegen en bewerken](adding-editing-document-types.md) voor de volgende installatiestappen en [Tabelkolommen](table-columns/README.md) om geëxtraheerde regelitems te configureren.

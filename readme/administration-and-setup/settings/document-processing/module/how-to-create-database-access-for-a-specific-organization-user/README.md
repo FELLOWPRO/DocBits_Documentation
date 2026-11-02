@@ -1,69 +1,47 @@
-# How to Create Database Access for a Specific Organization User
+# Databasetoegang aanmaken voor een specifieke organisatiegebruiker
 
-### **1. Login to the Docbits** <a href="#id-1.-login-to-the-docbits" id="id-1.-login-to-the-docbits"></a>
+### **1. Log in bij DocBits** <a href="#id-1.-login-to-the-docbits" id="id-1.-login-to-the-docbits"></a>
 
-1. Go to your application login page.
-2. Enter your credentials (username and password) to log in.
+1. Ga naar de aanmeldpagina van uw applicatie.
+2. Voer uw inloggegevens (gebruikersnaam en wachtwoord) in om u aan te melden.
 
-### **2. Access the Settings** <a href="#id-2.-access-the-settings" id="id-2.-access-the-settings"></a>
+### **2. Open de Instellingen** <a href="#id-2.-access-the-settings" id="id-2.-access-the-settings"></a>
 
-1. Once logged in, locate the **Settings** icon (gear ⚙️) on the left-hand sidebar.
-2. Click on **Settings** to open the system configuration panel.
+1. Zoek na het aanmelden het pictogram **Settings** (tandwiel ⚙️) in de zijbalk links.
+2. Klik op **Settings** om het systeemconfiguratiepaneel te openen.
 
-### **3. Open the Document Processing Module** <a href="#id-3.-open-the-document-processing-module" id="id-3.-open-the-document-processing-module"></a>
+### **3. Open de module Documentverwerking** <a href="#id-3.-open-the-document-processing-module" id="id-3.-open-the-document-processing-module"></a>
 
-1. In the **Settings**, locate the **Document Processing** section.
-2. Under **Document Processing**, find and click on the **Module** option.
-   * This will open the relevant module configuration page where you can proceed with creation of user for database.
+1. Zoek in de **Settings** het onderdeel **Document Processing**.
+2. Zoek onder **Document Processing** de optie **Module** en klik erop.
+   * Hiermee opent u de bijbehorende modulepagina waar u verder kunt gaan met het aanmaken van een gebruiker voor de database.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_db_access_creation.png" alt="Docbits Db Access Creation"><figcaption></figcaption></figure>
+### 4. Stappen om de AI Document- en databasegebruiker in te schakelen en te openen: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
 
-### 4. Steps to Enable and Access the AI Document and Database User: <a href="#id-4.-steps-to-enable-and-access-the-ai-document-and-database-user" id="id-4.-steps-to-enable-and-access-the-ai-document-and-database-user"></a>
-
-1. **Toggle Features**:
-   * Use the toggles on the right to enable or disable specific features:
-     * **AI Document Warehouse**: Toggle this to enable access to AI-related features.
-     * **DB Access**: Toggle this to grant database access to user.
-
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-
-2. **Database Credentials**:
-   * The dashboard provides the following database connection details:
-     * **Username**: A unique username is displayed&#x20;
-     * **Password**: Ensure the password is securely stored or copied.
-     * **Database**: Is the name of the Database&#x20;
-     * **Host**: Host Name&#x20;
-     * **Port**:  Is the Port&#x20;
-     * **SSL Mode:** The connection requires `sslmode=require` for secure communication.
-3. **Copying Credentials**:
-   * Use the copy icons next to each field to quickly copy the credentials for use in your database client or application.
-4. **Connection via DBeaver:**
-   *   Connect via Host
-
-       * choose PostgreSQL
-
-       <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-       * Fill in the required information&#x20;
-
-       <figure><img src="../../../../../.gitbook/assets/image (4) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-
-       * change to the SSL tab and check Use SSL. Move down to SSL mode and select require
-
-       <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-   *   Connect via URL
-
-       * Fill in the required information:\
-         \- replace Host with the provided host information\
-         \- replace Port with the provided port information\
-         \- replace Database with the provided database information\
-         \- for Username select the provided username information\
-         \- for Password select the provided password information
-
-       <figure><img src="../../../../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-5. **Test the Connection**:
-   * Click the **"Test Connection"** button to ensure the credentials and connection details are correct.
-   * If the test is successful, proceed to connect.
-6. **Explore the Database**:
-   * Once connected, navigate to the **schema** or **tables** section in your database client.
-   * Check the available tables.
+1. **Functies in-/uitschakelen**:
+   * Gebruik de schakelaars aan de rechterkant om specifieke functies in of uit te schakelen:
+     * **AI Document Warehouse**: Schakel dit in om toegang tot AI-gerelateerde functies te krijgen.
+     * **DB Access**: Schakel dit in om de gebruiker databasetoegang te geven.
+2. **Databasegegevens**:
+   * Het dashboard toont de volgende databaseverbindingsgegevens:
+     * **Username**: Er wordt een unieke gebruikersnaam weergegeven
+     * **Password**: Zorg ervoor dat het wachtwoord veilig wordt opgeslagen of gekopieerd.
+     * **Database**: De naam van de database
+     * **Host**: De hostnaam
+     * **Port**: De poort
+     * **SSL Mode:** De verbinding vereist `sslmode=require` voor beveiligde communicatie.
+3. **Gegevens kopiëren**:
+   * Gebruik de kopieerpictogrammen naast elk veld om de gegevens snel te kopiëren voor gebruik in uw databaseclient of applicatie.
+4. **Verbinding via DBeaver**:
+   * Verbinden via Host
+     * kies PostgreSQL
+     * Vul de vereiste gegevens in
+     * ga naar het tabblad SSL en vink Use SSL aan. Ga omlaag naar SSL mode en selecteer require
+   * Verbinden via URL
+     * Vul de vereiste gegevens in:\n - vervang Host door de verstrekte hostgegevens\n - vervang Port door de verstrekte poortgegevens\n - vervang Database door de verstrekte databasegegevens\n - selecteer voor Username de verstrekte gebruikersnaam\n - selecteer voor Password het verstrekte wachtwoord
+5. **Test de verbinding**:
+   * Klik op de knop **"Test Connection"** om te controleren of de gegevens en verbindingsdetails correct zijn.
+   * Als de test slaagt, gaat u verder met verbinden.
+6. **Verken de database**:
+   * Navigeer na het verbinden in uw databaseclient naar het gedeelte **schema** of **tables**.
+   * Controleer de beschikbare tabellen.

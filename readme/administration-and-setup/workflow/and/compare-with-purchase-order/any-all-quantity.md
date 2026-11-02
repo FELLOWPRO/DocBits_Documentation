@@ -1,8 +1,10 @@
 # Qualquer / Todas as Quantidades
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b9da38d5468f-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v2-pt-pt.png" alt="Qualquer / Todas as Quantidades, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8fb535fd03a4-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v3-pt-pt.png" alt="Qualquer / Todas as Quantidades, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_less_than_tolerance_as_value_of_ordered_quantity_v4-pt-pt.png" alt="Qualquer / Todas as Quantidades, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
 
 ## **Objetivo:**
 

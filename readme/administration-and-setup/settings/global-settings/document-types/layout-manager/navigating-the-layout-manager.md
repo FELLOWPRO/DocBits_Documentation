@@ -1,40 +1,47 @@
 # Navegando no Construtor de Layout
 
-<figure><img src="../../../../../.gitbook/assets/prior-u011-pt.png" alt="Acesso aos tipos de documentos a partir das definições."><figcaption><p>Acesso aos tipos de documentos a partir das definições.</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/prior-u012-pt.png" alt="Elementos e grupos de um layout existente."><figcaption><p>Elementos e grupos de um layout existente.</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/prior-u013-pt.png" alt="Campos disponíveis no construtor de layouts."><figcaption><p>Campos disponíveis no construtor de layouts.</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/prior-u014-pt.png" alt="Elementos de formulário no construtor de layouts. Os nomes dos elementos de formulário permanecem em inglês."><figcaption><p>Elementos de formulário no construtor de layouts. Os nomes dos elementos de formulário permanecem em inglês.</p></figcaption></figure>
-
-Use o **Construtor de Layout** para organizar os grupos e campos que as pessoas veem em um documento. Este guia usa o layout de **Fatura** em português em uma organização de teste da Sandbox.
+Use o **Construtor de Layout** para organizar os grupos e os campos que as pessoas veem num documento. Este guia usa o layout de Fatura numa organização de teste, e as capturas de ecrã mostram a interface em português.
 
 ## Abrir o layout de Fatura
 
 1. Acesse **Configurações → Tipos de documentos**.
-2. Encontre **Fatura** e selecione **Layouts** no cartão dela. O Construtor de Layout abre para esse tipo de documento.
-3. Confira o seletor de layout no canto superior esquerdo. O exemplo abaixo mostra **DEFAULT**.
+2. Encontre a Fatura e selecione **Layouts** no cartão dela. O Construtor de Layout abre para esse tipo de documento.
+3. A barra superior mostra o nome do layout (editável com o lápis), o **Tipo de documento** e o **Tipo de layout**. Use **Tipo de layout** para mudar para outro layout do mesmo tipo de documento.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc350-document-types-pt.png" alt="Página Tipos de documentos em português na Sandbox, com o cartão Fatura e o link Layouts"><figcaption>Abra **Layouts** no cartão de Fatura.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-pt.png" alt="Lista de tipos de documento com o cartão da Fatura e o link Layouts"><figcaption><p>Abra <strong>Layouts</strong> no cartão da Fatura.</p></figcaption></figure>
 
-## Encontrar grupos e campos
+## Trabalhar com os três separadores do painel
 
-O painel esquerdo **Elementos** tem três seções. **Grupos** lista as seções do documento; o canvas central mostra a disposição atual. Selecione um campo no canvas e abra **Propriedades** para alterar as configurações de exibição. Veja [Configurando Propriedades de Campos](configuring-field-properties.md) para as opções disponíveis.
+O painel à esquerda tem três separadores: **Estrutura**, **Campos** e **Elementos**. O Construtor de Layout abre em **Campos**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc350-layout-groups-pt.png" alt="Construtor de Layout de Fatura em português mostrando Grupos no painel Elementos e os campos agrupados no canvas"><figcaption>A lista de Grupos e o canvas do layout de Fatura.</figcaption></figure>
+**Estrutura** mostra o layout em árvore, na mesma ordem em que os grupos e os campos aparecem no documento. Expanda um grupo pela seta para ver os campos que ele contém; o nome técnico do campo aparece no painel **Propriedades**. A caixa **Procurar** filtra a árvore, e selecionar uma linha seleciona o mesmo elemento no canvas.
 
-Abra **Campos** para encontrar os campos disponíveis do documento. Use a caixa **Procurar** quando a lista for longa e arraste o campo para o grupo desejado no canvas. Campos já colocados no layout podem aparecer indisponíveis na lista.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-pt.png" alt="Construtor de Layout com o separador Estrutura aberto: a árvore de grupos expandida em Delivery Details com o campo Supplier ID selecionado, o layout da Fatura no canvas e o painel Propriedades à direita"><figcaption><p>A árvore de Estrutura, o canvas e o painel Propriedades.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc350-layout-fields-pt.png" alt="Painel Campos do Construtor de Layout em português com a busca Procurar e os campos disponíveis de Fatura"><figcaption>Pesquise os campos disponíveis antes de colocar um.</figcaption></figure>
+**Campos** lista todos os campos que o tipo de documento oferece, organizados pelos seus grupos. O contador ao lado do nome de um grupo indica quantos dos seus campos já estão colocados, por exemplo **4/14**. Os três botões por baixo da caixa de pesquisa são apenas ícones e alternam entre todos os campos, apenas os campos ainda não utilizados e apenas os campos ocultos. Cada linha mostra o rótulo do campo; um visto verde à direita assinala os campos que já estão no layout, que aparecem a cinzento.
 
-Abra **Elementos de formulário** para controles visuais como Text, Label, Check Box, Horizontal Separator, Button e Sub Group. Os nomes desses controles aparecem em inglês na interface em português. Arraste o elemento necessário para o canvas e confira as **Propriedades** dele.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-pt.png" alt="Separador Campos do Construtor de Layout com os três botões de filtro em ícone, o grupo INVOICE DETAIL aberto com o contador 4/14 e os campos já colocados, a cinzento e com visto"><figcaption><p>Filtre os campos e identifique os já colocados pelo visto.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc350-form-elements-open-pt.png" alt="Seção Elementos de formulário do Construtor de Layout em português aberta, listando Text, Label, Check Box, Button e Sub Group"><figcaption>A paleta atual de Elementos de formulário.</figcaption></figure>
+**Elementos** contém os blocos que arrasta para o canvas: **Grupos**, com os grupos deste layout, e **Elementos de formulário**, com Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields e Sub Group. Os nomes destes elementos aparecem em inglês na interface em português.
 
-## Organizar e salvar
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-pt.png" alt="Separador Elementos do Construtor de Layout com a secção Grupos a listar os grupos da Fatura e a secção Elementos de formulário a listar os doze elementos de formulário"><figcaption><p>As paletas Grupos e Elementos de formulário.</p></figcaption></figure>
 
-- Selecione o título de um grupo no canvas para alterá-lo. O ícone **+** acima do canvas adiciona um grupo; o ícone de chaves ao lado abre o formulário avançado de grupo em JSON.
-- Passe o mouse sobre um grupo para ver as ações de copiar JSON, mover para cima, mover para baixo, excluir e a alça de arrastar. Para reordenar campos, arraste-os dentro ou entre grupos.
-- Selecione um campo no canvas para abrir **Propriedades**. O ícone de exclusão dele remove o campo deste layout. Para configurar validação, OCR ou correspondência, use as [Configurações de Campos](../fields/configuring-field-properties-1.md) separadas.
-- Selecione **Salvar** na barra superior após editar. Veja [Salvar e Aplicar Alterações](save-and-apply-changes.md) antes de usar as outras ações da barra superior, incluindo gerar modelo, usar modelo padrão e aplicar um layout às origens.
+## Colocar e organizar elementos
+
+- Arraste um campo de **Campos**, ou um elemento de **Elementos**, para o grupo onde deve aparecer. Os campos já colocados ficam assinalados com um visto no separador **Campos**.
+- Arraste um campo dentro de um grupo ou entre grupos para alterar a ordem.
+- O **+** acima do canvas adiciona um grupo vazio; o ícone de JSON ao lado cria um grupo a partir de uma definição em JSON.
+- No cabeçalho de um grupo pode mudar o nome do grupo em **Título do grupo**, copiar o JSON dele, mover o grupo para baixo ou para cima, ou eliminá-lo. Use a alça de arrastar à direita do cabeçalho para deslocar o grupo.
+- Selecione um campo no canvas para abrir as propriedades dele à direita. A pequena barra de ferramentas que aparece por baixo do campo selecionado remove-o do layout.
+
+## O painel Propriedades
+
+O painel à direita está sempre aberto e acompanha o elemento que selecionou. As configurações dele estão organizadas em **Mostrar**, **Comportamento**, **Valores e listas** e **Automação**. **Mostrar** contém o rótulo, o tipo de campo e a **Largura do elemento em porcentagem**, que escolhe entre os valores predefinidos 25, 33, 50, 66, 75 e 100. Veja [Configurando Propriedades de Campos](configuring-field-properties.md) para cada uma das opções.
+
+As configurações de validação, OCR e correspondência pertencem ao próprio campo e não ao layout: configure-as nas [Configurações de Campos](../fields/configuring-field-properties-1.md) separadas.
+
+## Pré-visualizar e salvar
+
+O canvas mostra o layout tal como ficará no documento. Use os separadores **Layout principal** e **Tabela** para alternar entre a página e a tabela de itens, e **Documento** para abrir o documento de exemplo ao lado do canvas. Veja [Usando a Pré-visualização do Modelo](using-the-template-preview.md).
+
+Selecione **Salvar** na barra superior quando terminar. Veja [Salvar e Aplicar Alterações](save-and-apply-changes.md) para as outras ações da barra superior, incluindo a geração de modelos, os modelos padrão e a aplicação de um layout às origens.

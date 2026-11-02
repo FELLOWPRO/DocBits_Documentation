@@ -1,6 +1,6 @@
 # Exportar com exportação alternativa
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_alternate_export_v2-pt-pt.png" alt="Exportar com exportação alternativa, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## Quando usar este cartão
 

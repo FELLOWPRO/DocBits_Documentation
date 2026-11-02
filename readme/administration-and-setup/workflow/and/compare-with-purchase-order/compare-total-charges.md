@@ -1,6 +1,6 @@
 # Vergelijk totale kosten
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-97d69520f403-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_charge_field_with_po_v2-nl-nl.png" alt="Vergelijk totale kosten, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 

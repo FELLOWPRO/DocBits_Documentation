@@ -1,6 +1,8 @@
 # Aanwezigheid en inhoud van een documentveld controleren
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-db30554e1eb1-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v1-nl-nl.png" alt="Aanwezigheid en inhoud van een documentveld controleren, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_status_v2-nl-nl.png" alt="Aanwezigheid en inhoud van een documentveld controleren, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## Wanneer gebruiken
 
@@ -31,10 +33,10 @@ Dit zijn voorbeelden van verwachte resultaten. Voeg een passende inhoudsvoorwaar
 
 ## Voorbeeldvideo met een beheerder
 
-Wanneer ik deze kaart gebruik, waar deze staat en hoe ik ontbrekende factuurnummers vind. De beheerder, het kantoor en de stem zijn synthetisch; de demonstratie toont de echte DocBits-interface van een testaccount. De voorbeelden tonen verwachte resultaten.
+Wanneer ik deze kaart gebruik, waar deze staat en hoe ik ontbrekende factuurnummers vind. De voorbeelden tonen verwachte resultaten.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/nl.mp4" %}
 
-[Video met Nederlandse ondertitels openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/nl.html)
+[Video met Nederlandse ondertitels openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/nl-theme-v4.html)
 
 [Transcript lezen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-field-status-admin/v1/nl.txt)

@@ -1,5 +1,13 @@
 # Bedrijfsvoorkeuren
 
+## Videotutorial: Bedrijf, abonnement en audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/nl.mp4" %}
+Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
+{% endembed %}
+
+De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
+
 Open bij de bedrijfsgegevens de voorkeuren om de datum- en bedragformaten van de organisatie in te stellen.
 
 <figure><img src="../../../../.gitbook/assets/prior-i003-nl.png" alt="Bedrijfsvoorkeuren en bedrag- en datumformaten."><figcaption><p>Bedrijfsvoorkeuren en bedrag- en datumformaten.</p></figcaption></figure>

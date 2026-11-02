@@ -1,6 +1,6 @@
 # Documentstatus Conditielijst
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-8dc08a110089-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_in_list_v2-nl-nl.png" alt="Documentstatus Conditielijst, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 **Doel**
 

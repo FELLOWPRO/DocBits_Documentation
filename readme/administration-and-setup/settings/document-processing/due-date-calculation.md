@@ -1,8 +1,10 @@
 # Fälligkeitsberechnung
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Einstellungen der Fälligkeitsberechnung"><figcaption><p>Einstellungen der Fälligkeitsberechnung</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-de.png" alt="Einstellungen der Fälligkeitsberechnung"><figcaption><p>Einstellungen der Fälligkeitsberechnung</p></figcaption></figure>
 
 Die Seite **Fälligkeitsberechnung** (**Dokumentenverarbeitung → Fälligkeitsberechnung**) steuert, wie DocBits Fälligkeitsdaten von Rechnungen, Skonto-Fälligkeitsdaten und Zahlungsbedingungen aus den auf Rechnungen gefundenen Zahlungsbedingungs-Codes berechnet.
+
+Die Karte **Invoice Due Date Calculation** enthält die allgemeinen Einstellungen. Speichern Sie Änderungen über **Speichern** in ihrer Kopfzeile. Darunter finden Sie die Tabellen für Skonto- und Zahlungsbedingungs-Überschreibungen sowie eine Übersicht der unterstützten Formate.
 
 ## Berechnete Felder anzeigen
 
@@ -12,9 +14,7 @@ Aktivieren Sie **Berechnete Felder anzeigen**, damit die automatisch berechneten
 
 ### Wochenend-Behandlung
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Optionen der Wochenend-Konvention"><figcaption><p>Optionen der Wochenend-Konvention</p></figcaption></figure>
-
-Legen Sie fest, wie ein Fälligkeitsdatum angepasst wird, das auf einen Samstag oder Sonntag fällt. Dies gilt **sowohl** für das Rechnungsfälligkeitsdatum als auch für das Skonto-Fälligkeitsdatum.
+Wählen Sie die **Wochenend-Behandlung**, um festzulegen, wie ein Fälligkeitsdatum angepasst wird, das auf einen Samstag oder Sonntag fällt. Dies gilt **sowohl** für das Rechnungsfälligkeitsdatum als auch für das Skonto-Fälligkeitsdatum.
 
 | Konvention | Wirkung |
 |------------|---------|
@@ -30,13 +30,19 @@ Ordnen Sie Lieferanten-Zahlungsbedingungen AP-Zuordnungscodes für die automatis
 
 ## Skonto-Überschreibungen
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Skonto-Überschreibungen"><figcaption><p>Skonto-Überschreibungen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-de.png" alt="Skonto-Überschreibungen"><figcaption><p>Skonto-Überschreibungen</p></figcaption></figure>
 
-Verwenden Sie **Skonto-Überschreibungen**, um ein bestimmtes Präfix einem Skonto-Prozentsatz und einer Anzahl von Tagen zuzuordnen. Klicken Sie auf **+ Mapping hinzufügen**, um eine Zeile mit **Präfix**, **Prozentsatz** und **Tagen** hinzuzufügen.
+Verwenden Sie **Skonto-Überschreibungen**, um ein bestimmtes Präfix einem Skonto-Prozentsatz und einer Anzahl von Tagen zuzuordnen. Klicken Sie auf **Zuordnung hinzufügen**, um eine Zeile mit **Präfix**, **Prozentsatz** und **Tagen** hinzuzufügen. Um eine bestehende Zuordnung zu ändern oder zu entfernen, verwenden Sie das Menü (⋮) am Zeilenende.
+
+## Zahlungsbedingungs-Überschreibungen
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-de.png" alt="Zahlungsbedingungs-Überschreibungen"><figcaption><p>Zahlungsbedingungs-Überschreibungen</p></figcaption></figure>
+
+Verwenden Sie **Zahlungsbedingungs-Überschreibungen**, um einem Zahlungsbedingungs-Code einen Typ, eine Anzahl Tage und eine Beschreibung zuzuordnen. Klicken Sie auf **Zuordnung hinzufügen**, um eine Zeile anzulegen, und verwenden Sie das Menü (⋮) am Zeilenende, um eine Zuordnung zu ändern oder zu entfernen.
 
 ## Unterstützte Formate
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Unterstützte Zahlungsbedingungs- und Skonto-Formate"><figcaption><p>Unterstützte Zahlungsbedingungs- und Skonto-Formate</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-de.png" alt="Unterstützte Zahlungsbedingungs- und Skonto-Formate"><figcaption><p>Unterstützte Zahlungsbedingungs- und Skonto-Formate</p></figcaption></figure>
 
 DocBits erkennt die folgenden Zahlungsbedingungs- und Skonto-Codes.
 

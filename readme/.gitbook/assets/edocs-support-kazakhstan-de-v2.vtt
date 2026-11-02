@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.820
+Kazakhstan ESF ist die konfigurierte
+Familie. Die Bezeichnung nennt keine
+
+formats_02
+00:00:04.820 --> 00:00:10.017
+Veröffentlichungsversion. Bestätigen Sie
+das tatsächliche XML-Schema und leiten Sie
+
+formats_03
+00:00:10.017 --> 00:00:14.900
+aus der Extraktionsunterstützung keine
+Übermittlung an die Steuerplattform ab.
+
+workflow_01
+00:00:15.650 --> 00:00:20.956
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:20.956 --> 00:00:27.666
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:27.666 --> 00:00:29.300
+aktiviert ihn nicht.
+
+accept_01
+00:00:30.050 --> 00:00:34.682
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:34.682 --> 00:00:40.812
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:40.812 --> 00:00:43.933
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

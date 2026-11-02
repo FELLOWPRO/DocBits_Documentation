@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.588
+Für Ecuador SRI gibt es generische
+Einträge sowie Einträge für 1.0.0, 1.1.0,
+
+formats_02
+00:00:07.588 --> 00:00:14.971
+2.0.0 und 2.1.0. Quellensteuer ist ein
+separater Dokumenttyp. Für den
+
+formats_03
+00:00:14.971 --> 00:00:19.499
+Gutschrift-Klassifizierungseintrag ist im
+geprüften Status kein eigenes
+
+formats_04
+00:00:19.499 --> 00:00:24.724
+Extraktionspaket ausgewiesen. Prüfen Sie
+die tatsächlich verwendete Zuordnung und
+
+formats_05
+00:00:24.724 --> 00:00:26.600
+den Typ des Quelldokuments.
+
+workflow_01
+00:00:27.350 --> 00:00:32.656
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:32.656 --> 00:00:39.366
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:39.366 --> 00:00:41.000
+aktiviert ihn nicht.
+
+accept_01
+00:00:41.750 --> 00:00:46.382
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:46.382 --> 00:00:52.512
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:52.512 --> 00:00:55.633
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

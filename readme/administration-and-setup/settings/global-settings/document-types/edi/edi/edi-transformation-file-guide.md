@@ -62,3 +62,17 @@ Dies ist besonders nützlich zum Debuggen von XSLT-Zuordnungen und zur Sicherste
 ## 6. Video-Anleitung
 
 Eine Videoanleitung für diesen Dateityp finden Sie auf der [Videos-Seite.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Verwenden Sie sie, um die Einrichtung, Bearbeitung und Vorschau zu verfolgen.
+
+## Verwendete Regeln und Aktivierung
+
+Organisationsspezifische Regeln haben Vorrang vor den Standardregeln für das erkannte eDoc-Format. Prüfen Sie die aktive TRANSFORMATION und prüfen Sie, welcher Knoten im transformierten XML invoice_type liefert; der Pfad hängt vom Format ab. Speichern sichert einen Entwurf; aktivieren Sie ihn nach dem Testen über das Häkchen. Eine gerenderte Preview belegt nicht den gespeicherten Dokumenttyp. Die [Anleitung zur Fehlerbehebung bei der Klassifizierung](../credit-note-recognized-as-invoice.md) erläutert die Codes 381/261, spätere Skripte und Vorsichtsmaßnahmen bei der erneuten Verarbeitung.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-de.png" alt="Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen."><figcaption><p>Vorhandenes EDI-Format mit seinen vier konfigurierten Attributen.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-transformation-de.png" alt="Aktives Attribut TRANSFORMATION: XSLT-Quelltext zur Transformation des XML-Zwischenformats."><figcaption><p>Aktives Attribut TRANSFORMATION: XSLT-Quelltext zur Transformation des XML-Zwischenformats.</p></figcaption></figure>
+
+
+Die Ansichten zeigen eine vorhandene Konfiguration und Version. Die Einstellungen unterscheiden sich je nach Dokumenttyp und Format. Prüfen Sie Änderungen in einem Entwurf vor der Aktivierung.
+
+Einzelne Bezeichnungen wie Custom, Default und Electronice im Feldnamen entsprechen der derzeitigen Produktoberfläche. Die technischen Attributnamen und der Konfigurationscode bleiben unverändert.

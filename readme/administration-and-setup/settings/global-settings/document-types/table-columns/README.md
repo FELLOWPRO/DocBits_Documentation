@@ -1,27 +1,46 @@
-# Table Columns
+# Tabellenspalten
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_overview.png" alt="Docbits Table Columns Overview"><figcaption></figcaption></figure>
+Tabellenspalten legen fest, welche Spalten die Positionstabelle eines Dokumenttyps hat: was DocBits in jede Spalte extrahiert, was der Benutzer in der Validierungsmaske sieht und was beim Export an das ERP gesendet wird.
 
-#### Overview
+**Wo:** Settings → Global Settings → Document Types → Table Columns
 
-The Table Columns interface in Docbits is used to specify the columns that appear in data tables for each document type. Each column can be configured to hold specific types of data, such as strings or numerical values, and can be essential for sorting, filtering, and reporting functions within Docbits.
+<figure><img src="../../../../../.gitbook/assets/table-columns_list-de.png" alt="Liste der Table Columns mit den Flags Required, Read Only, Hidden und Use AI pro Spalte"><figcaption><p>Table Columns: eine Zeile pro Spalte, die Flags werden direkt in der Liste umgeschaltet</p></figcaption></figure>
 
-#### Key Features and Options
+## Was Sie sehen
 
-1. **Column Configuration**:
-   * **Column Name**: The identifier for the column in the database.
-   * **Title**: The human-readable title for the column that will appear in the interface.
-   * **Column Type**: Defines the data type of the column (e.g., STRING, AMOUNT), which determines what kind of data can be stored in the column.
-   * **Table Name**: Indicates which table the column belongs to, linking it to a specific document type like INVOICE\_TABLE.
-2. **Actions**:
-   * **Edit**: Modify the settings of an existing column.
-   * **Delete**: Remove the column from the table, which is useful if the data is no longer required or if the document type's data structure changes.
-3. **Adding New Columns and Tables**:
-   * **Add New Table Column**: Opens a dialog where you can define a new column, including its name, whether it is required, its data type, and the table it belongs to.
-   * **Create New Table**: Allows the creation of a new table, defining a unique name that will be used to store data related to a specific set of document types.
+Jede Zeile ist eine Spalte einer Tabelle. Die Liste zeigt:
 
-<figure><img src="../../../../../.gitbook/assets/docbits_create_new_table.png" alt="Docbits Create New Table"><figcaption></figcaption></figure>
+| Spalte | Bedeutung |
+|---|---|
+| **Column name** | Technischer Name, aus dem Titel erzeugt (Großbuchstaben, Unterstriche). Wird in Skripten, Export-Mappings und der API verwendet. Kann später nicht geändert werden. |
+| **Title** | Bezeichnung, die in der Validierungsmaske angezeigt wird. Ändern Sie sie mit dem Übersetzungs-Symbol in der Spalte *Actions* (*Update translation key*). |
+| **Column Type** | `AMOUNT`, `STRING`, `DATE`, `NUMBER`, `BOOLEAN` oder `CURRENCY`. Bestimmt Validierung und Formatierung. |
+| **Table name** | Die Tabelle, zu der die Spalte gehört, zum Beispiel `INVOICE_TABLE`. |
+| **Is Required** | Das Dokument kann nicht freigegeben werden, solange diese Spalte in einer beliebigen Zeile leer ist. |
+| **Read Only** | Benutzer sehen den Wert, können ihn aber nicht bearbeiten. |
+| **Hidden** | Die Spalte wird weder angezeigt noch exportiert. Damit schalten Sie Standardspalten ab, die Sie nicht benötigen. |
+| **Use AI** | Die KI-Tabellenextraktion füllt diese Spalte, auch wenn für einen Lieferanten trainierte Regeln vorhanden sind. |
+| **Actions** | Übersetzungs-Symbol: Titel umbenennen. Info-Symbol: woher die angezeigte Bezeichnung stammt (Ihre Übersetzung, der Standard, der Schlüssel). Drei-Punkte-Menü: *Delete*, nur für Spalten, die Ihre Organisation angelegt hat; Standardspalten können nur ausgeblendet werden. |
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_integrity.png" alt="Docbits Table Columns Integrity"><figcaption></figcaption></figure>
+Zwei Schaltflächen über der Liste:
 
-This section is vital for maintaining the structural integrity and usability of data within the Docbits system, ensuring that the data extracted from documents is stored in a well-organized and accessible manner.
+* **Create new table**: eine zweite Positionstabelle für den Dokumenttyp (zum Beispiel eine Tabelle für Nebenkosten neben der Artikeltabelle).
+* **Add new table column**: öffnet den Dialog, der unter [Neue Spalte hinzufügen](adding-a-new-column.md) beschrieben ist.
+
+## Standardspalten und eigene Spalten
+
+Jeder Dokumenttyp wird mit einer Reihe von Standardspalten ausgeliefert (für Rechnungen: Artikelnummer, Beschreibung, Menge, Einzelpreis, Gesamtbetrag, Steuer, …). Sie gehören zu DocBits und nicht zu Ihrer Organisation, daher können sie nicht gelöscht werden; blenden Sie sie stattdessen aus. Spalten, die Sie selbst hinzufügen, gehören zu Ihrer Organisation und können gelöscht werden.
+
+{% hint style="info" %}
+**Änderungen gelten nur für neue Dokumente.** Eine Spalte, die Sie hinzufügen, ausblenden oder löschen, erscheint bei Dokumenten, die nach der Änderung hochgeladen oder neu gestartet werden. Dokumente, die sich bereits im Dashboard befinden, behalten ihre Tabelle so, wie sie extrahiert wurde. Starten Sie ein Dokument neu, um die neue Konfiguration zu übernehmen.
+{% endhint %}
+
+## Verwandte Seiten
+
+* [Zweck und Verwendung](purpose-and-use.md): wo Tabellenspalten erscheinen
+* [Neue Spalte hinzufügen](adding-a-new-column.md)
+* [Spalten bearbeiten und löschen](editing-and-deleting-columns.md)
+* [Bewährte Vorgehensweisen](best-practices-2.md)
+* [Fehlerbehebung](troubleshooting-1.md)
+* [Positionsfelder und Tabellen trainieren](../../../../setup/document-training/training-line-fields-table-training/README.md): DocBits beibringen, wo sich die Tabelle eines Lieferanten befindet
+* [KI-Tabelle](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): was der Benutzer in der Validierungsmaske sieht

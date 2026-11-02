@@ -61,4 +61,12 @@ Jede Bedingungszeile zeigt:
 
 ### **Wichtiger Verhaltenshinweis**
 
-Wenn eine Bedingung in einem Workflow **nicht erfüllt** ist, stoppt das System das Auswerten weiterer Workflow-Karten innerhalb dieses Workflows. Dieses Verhalten verhindert unnötige Verarbeitung. Als visueller Indikator wird die Karte, die **ihre Bedingung nicht erfüllt hat**, in **grau** angezeigt, und alle **nachfolgenden Karten** im selben Workflow erscheinen ebenfalls **grau**, was darauf hinweist, dass sie **nicht ausgeführt** wurden.
+In einer Standard-Kartenfolge beendet eine nicht erfüllte Bedingung die nachfolgende Folge. Im Advanced Workflow bestimmt dagegen die verbundene Ausgangsroute, welche Knoten als Nächstes erreichbar sind. Graue Karten können übersprungen worden sein; sie belegen keinen technischen Fehler. Wählen Sie den betreffenden Knoten aus und lesen Sie dessen konkreten Status.
+
+Auch ein grüner Laufkopf allein belegt keinen fachlichen Abschluss. Im [geprüften ALL-Beispiel](masterclass/control-nodes.md) enthält der gespeicherte echte Dokumentlauf vier erfolgreiche Knoten, während ALL und die Abschlussaktion übersprungen werden. Prüfen Sie deshalb die erwartete Abschlussaktion und die Wirkung am Dokument.
+
+## Einen konkreten Fehler bis zum Nachtest verfolgen
+
+Wählen Sie einen konkreten Lauf und notieren Sie Zeitpunkt, Workflow-Stand und Dokumentbezug. Öffnen Sie den ersten relevanten Knoten und vergleichen Sie dessen tatsächliche Eingabe, Kartenversion, Operator und angeschlossenen Ausgang. Unterscheiden Sie einen regulären Nichttreffer von einem technischen Fehler und von einer nicht erreichten Karte. Im Advanced Workflow kann ein regulär falscher Vergleich eine ausdrücklich verbundene Alternativroute erreichen; übertragen Sie das Stoppen einer Standard-Kartenfolge nicht pauschal auf den gesamten Graphen.
+
+Nach einer gezielten Korrektur vergleichen Sie einen neuen Lauf mit dem alten. Prüfen Sie die fachliche Wirkung am Dokument oder am eigenen Testziel. Ein alter grüner Protokolleintrag belegt den neuen Stand nicht. Konkrete Beispiele stehen unter [Workflow-Meldungen](workflow-error-catalog.md) und [systematischer Fehlerdiagnose](workflow-troubleshooting.md).

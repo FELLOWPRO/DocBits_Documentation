@@ -1,7 +1,7 @@
 # Benutzer-Support
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits-Anleitung für Support-Tickets: Fehler melden, Dateien anhängen und schneller Hilfe erhalten
 {% endembed %}
 
 ### Benutzer-Support <a href="#ikpwh4qbrq82" id="ikpwh4qbrq82"></a>
@@ -20,9 +20,8 @@ Im Validierungsbildschirm können Sie direkt Tickets für das jeweilige Dokument
 
 <figure><img src="../../../.gitbook/assets/user-support3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user-support4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-user-support4-de.png" alt="Deutsches Supportformular vor dem Absenden."><figcaption><p>Deutsches Supportformular vor dem Absenden.</p></figcaption></figure>
 
 {% embed url="https://www.youtube.com/watch?v=zkpFu8Q1Z-A" %}
 
 <figure><img src="../../../.gitbook/assets/image%20(28).png" alt=""><figcaption></figcaption></figure>
-

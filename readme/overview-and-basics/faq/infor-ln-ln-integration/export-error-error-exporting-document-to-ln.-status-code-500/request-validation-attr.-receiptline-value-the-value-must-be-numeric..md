@@ -1,41 +1,52 @@
-# nicht gefunden im Lastschriftverfahren
+# LN-Exportfehler: „ReceiptLine muss numerisch sein“
 
-## **Schritt 1: Überprüfen der LN-Konfiguration**
+Die englische Fehlermeldung lautet: **Request validation; Attr. 'ReceiptLine', Value " " : the value must be numeric.** Prüfen Sie die Wareneingangsdaten und die Zuordnung von `ReceiptLine` in der LN-Exportkonfiguration.
 
-1. Melden Sie sich bei **LN CE** an.
-2. Navigieren Sie zum **Optionen**-Menü und wählen Sie **Programm ausführen**.
-3. Geben Sie im Eingabefeld **ACP-Parameter** ein und drücken Sie die Eingabetaste, um das Programm zu öffnen.
-4. Klicken Sie auf den Pfeil neben dem Feld **Aktuelle Einstellung**, um die Einstellungen zu erweitern.
-5. Gehen Sie zum Abschnitt **Abgleich**.
-   * **Überprüfen der automatischen Abgleicheinstellung:**
-     * Wenn der **Automatische Abgleich** auf **Mit Wareneingangsschein abgleichen** eingestellt ist, fahren Sie mit dem nächsten Schritt fort.
-     * Wenn er **nicht** auf **Mit Wareneingangsschein abgleichen** eingestellt ist, aber Sie trotzdem diesen Fehler erhalten haben, kontaktieren Sie uns bitte.
+## Schritt 1: Bestellung in DocBits prüfen
 
-## **Schritt 2: Öffnen der DocBits-Einstellungen**
+### Dokument öffnen
 
-Wenn der **Automatische Abgleich** auf **Mit Wareneingangsschein abgleichen** eingestellt ist, fahren Sie mit den folgenden Schritten in DocBits fort:
+* **Status Export Error:** Öffnen Sie das Dokument im Dashboard und wechseln Sie über **Fields Validation** zurück zur Feldvalidierung.
+* **Status Ready for Validation:** Öffnen Sie das Dokument direkt in der Feldvalidierung (**Field Validation**).
+* **Status Pending Approval:** Öffnen Sie die Genehmigungsansicht (**Approval Screen**). Suchen Sie neben den Rechnungspositionen (**Invoice Line Items**) die Bestelltabelle (**Purchase Order Table**) und prüfen Sie dort die Liefernummer.
 
-1. Öffnen Sie **DocBits** und gehen Sie zum Abschnitt **Einstellungen**.
-2. Navigieren Sie zu **Dokumentenverarbeitung**.
-3. Wählen Sie **Export** aus.
-4. Klicken Sie im **Export**-Abschnitt auf das **Drei-Punkte**-Symbol neben dem Export, der nicht funktioniert, und wählen Sie **Bearbeiten**.
-5. Klicken Sie im Menü **Exporteinstellungen bearbeiten** auf **LN-Mapping-Datei herunterladen**.
+### Richtige Bestellung und Liefernummer prüfen
 
-## **Schritt 3: Bearbeiten der LN-Mapping-Datei**
+1. Prüfen Sie in der Feldvalidierung, ob die richtige Bestellung ausgewählt ist.
+2. Öffnen Sie die Bestellung neben der extrahierten Tabelle, um die Bestelltabelle anzuzeigen.
+3. Suchen Sie die Spalte **Delivery Number**.
+4. Wenn eine Liefernummer vorhanden ist, prüfen Sie sie auch in der Genehmigungsansicht. Ist sie dort ebenfalls vorhanden, fahren Sie mit Schritt 3 fort.
+5. Fehlt die Liefernummer, prüfen Sie zunächst die Bestelldaten in LN gemäß Schritt 2.
 
-1. Öffnen Sie die heruntergeladene **LN-Mapping**-Datei.
-2. Suchen Sie nach dem Feld **IRF\_PackingSlip**.
-   * Wenn das Feld **IRF\_PackingSlip** vorhanden ist und auf **nichts** (leer) eingestellt ist, aktualisieren Sie es auf **TF\_packing\_slip**.
-   * Wenn das Feld **IRF\_PackingSlip** **nicht vorhanden** ist, fügen Sie es der Datei hinzu und setzen Sie seinen Wert auf **TF\_packing\_slip**.
-3. Fügen Sie für das Feld **InvoiceReceiptFields** **PackingSlip** zu den Werten hinzu.
+## Schritt 2: Bestellung in LN prüfen
 
-Es sollte wie folgt aussehen:
+Prüfen Sie vor der Übertragung nach DocBits, ob die **Delivery Number** in LN korrekt zugeordnet ist. Kontrollieren Sie die Bestelldetails auf Vollständigkeit und Richtigkeit. Eine fehlende oder falsche Liefernummer kann den Exportfehler verursachen.
 
-<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt=""><figcaption></figcaption></figure>
+Wenn die Bestellung korrekt ist und die erforderlichen Angaben enthält, fahren Sie mit dem nächsten Schritt fort.
 
-## **Schritt 4: Die aktualisierte Datei wieder zu DocBits hinzufügen**
+## Schritt 3: LN-Zuordnungsdatei herunterladen
 
-1. Gehen Sie zurück zum **Export**-Abschnitt in DocBits, wo Sie die **LN-Mapping**-Datei zuvor heruntergeladen haben.
-2. Laden Sie die bearbeitete **LN-Mapping**-Datei mit den neuen Updates hoch.
+1. Öffnen Sie **Settings → Document Processing → Export** in DocBits.
+2. Öffnen Sie das Drei-Punkte-Menü des betroffenen Exports und wählen Sie **Edit**.
+3. Laden Sie im Dialog **Edit Export Settings** die Datei über **Download the LN-Mapping** herunter.
 
-## Wenn Sie immer noch den Fehler **Dokument kann nicht in LN exportiert werden** mit dem Statuscode **500** erhalten, kontaktieren Sie uns bitte
+## Schritt 4: ReceiptLine-Zuordnung prüfen und bearbeiten
+
+1. Öffnen Sie die heruntergeladene LN-Zuordnungsdatei.
+2. Suchen Sie `IRF_ReceiptLine`.
+   * Ist der Eintrag leer, setzen Sie ihn auf `TF_delivery_line`.
+   * Fehlt der Eintrag, ergänzen Sie ihn mit dem Wert `TF_delivery_line`.
+3. Stellen Sie sicher, dass `InvoiceReceiptFields` den Eintrag `ReceiptLine` enthält.
+
+Die entscheidende Zuordnung ist `IRF_ReceiptLine = TF_delivery_line`. Die zuvor in dieser Seite beschriebene Zuordnung von `PackingSlip` betrifft ein anderes Feld und behebt diesen numerischen `ReceiptLine`-Fehler nicht.
+
+## Schritt 5: Aktualisierte Datei hochladen
+
+Öffnen Sie erneut den betroffenen Export in DocBits und laden Sie die bearbeitete LN-Zuordnungsdatei hoch.
+
+## Schritt 6: Export erneut versuchen und Ergebnis prüfen
+
+1. Kehren Sie zum Dashboard zurück und öffnen Sie das Dokument mit dem Exportfehler.
+2. Prüfen Sie vor dem erneuten Export, ob die Bestellung eine gültige Liefernummer hat und die Exportzuordnung korrekt ist.
+3. Starten Sie den Export erneut.
+4. Prüfen Sie das Exportergebnis und den Dokumentstatus. Wenn der Export weiterhin fehlschlägt, wenden Sie sich mit den Fehlerdetails an den Support, um mögliche Konfigurations- oder Systemprobleme weiter untersuchen zu lassen.

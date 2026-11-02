@@ -1,6 +1,6 @@
-# Send HTTPS Request
+# HTTPS-Anfrage senden
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_https_request_status_v2-de-de.png" alt="HTTPS-Anfrage senden, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

@@ -1,6 +1,6 @@
-# Send HTTPS request to
+# Senden Sie eine HTTPS-Anfrage an
 
-<figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Zweck:
 
@@ -11,7 +11,7 @@ Die Workflow-Karte **"Send HTTPS Request"** ermöglicht es Benutzern, HTTPS-Anfr
 1. **URL**
    * **Beschreibung:** Gibt den Endpunkt an, an den die HTTPS-Anfrage gesendet wird.
    * **Detail:** Geben Sie die vollständige URL der API oder des Webdienstes ein, mit dem eine Verbindung hergestellt werden soll.
-2. **Header**
+2. **Kopfzeile**
    * **Beschreibung:** Legt die Header fest, die in die HTTPS-Anfrage aufgenommen werden.
    * **Detail:** Geben Sie **Schlüssel-Wert-Paare** in einem **gültigen JSON-Format** an, um Header wie Authentifizierungstoken oder Inhaltstypen festzulegen. Beispiel: {"Authorization": "Bearer example\_value"}
 3. **Methode**
@@ -30,7 +30,7 @@ Die Workflow-Karte **"Send HTTPS Request"** ermöglicht es Benutzern, HTTPS-Anfr
 
 ## Funktionalität:
 
-* **Bedingungsauswertung:** Die Karte sendet die HTTPS-Anfrage nur, wenn der **"Where"**- und der **"And"**-Abschnitt als erfüllt ausgewertet werden.&#x20;
+* **Bedingungsauswertung:** Die Karte sendet die HTTPS-Anfrage nur, wenn der **„Wenn“**- und der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
   * Ist eine der Bedingungen nicht erfüllt, wird die Anfrage nicht gesendet.
 * **Ausführung der Anfrage:**
   * Sind die Bedingungen erfüllt, sendet das System die HTTPS-Anfrage mit den angegebenen Konfigurationen.
@@ -42,12 +42,16 @@ Die Workflow-Karte **"Send HTTPS Request"** ermöglicht es Benutzern, HTTPS-Anfr
 3. **HTTP-Methode auswählen:** Wählen Sie die passende Methode (**GET**, **POST**, **PUT** oder **DELETE**) entsprechend der durchzuführenden Aktion.
 4. **Parameter hinzufügen:** Geben Sie alle vom Endpunkt benötigten Abfrageparameter an.
 5. **Datennutzlast angeben:** Geben Sie bei Bedarf den Anfrage-Body im erforderlichen Format (z. B. JSON) ein.
-6. **Bedingungen konfigurieren:** Definieren Sie die Abschnitte **"Where"** und **"And"**, um sicherzustellen, dass die Anfrage nur gesendet wird, wenn bestimmte Bedingungen erfüllt sind.
+6. **Bedingungen konfigurieren:** Definieren Sie die Abschnitte **„Wenn“** und **„Und“**, um sicherzustellen, dass die Anfrage nur gesendet wird, wenn bestimmte Bedingungen erfüllt sind.
 
 ## Beispielkarte:
 
-<figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
 
 ## Fazit:
 
 Die Workflow-Karte **"Send HTTPS Request"** vereinfacht die API-Integration, indem sie es Benutzern ermöglicht, direkt aus ihren Workflows angepasste Anfragen an externe Dienste zu senden. Indem sie den Prozess des Sendens von HTTPS-Anfragen und der Verwaltung von Antworten automatisiert, steigert diese Karte die Flexibilität und Funktionalität von Workflows.
+
+## Lernweg und Rückschreibvertrag
+
+[P1: API-Aufruf und Weiterverwendung der Antwort prüfen](../../masterclass/api-response-contract.md) erklärt Simulation, Antwortauswertung und den ausdrücklich zu vereinbarenden Rückschreibweg. Eine erfolgreiche Anfrage stellt nicht automatisch ein Feld wie `api.response.cost_center` bereit.

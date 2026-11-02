@@ -1,8 +1,10 @@
 # Cálculo de fecha de vencimiento
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Ajustes del cálculo de fecha de vencimiento"><figcaption><p>Ajustes del cálculo de fecha de vencimiento</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-es.png" alt="Ajustes del cálculo de fecha de vencimiento"><figcaption><p>Ajustes del cálculo de fecha de vencimiento</p></figcaption></figure>
 
 La página **Cálculo de fecha de vencimiento** (**Procesamiento de documentos → Cálculo de fecha de vencimiento**) controla cómo DocBits calcula las fechas de vencimiento de las facturas, las fechas de vencimiento del descuento (Skonto) y las condiciones de pago a partir de los códigos de condiciones de pago encontrados en las facturas.
+
+La tarjeta **Invoice Due Date Calculation** contiene los ajustes generales. Use **Guardar** en su encabezado para guardar los cambios. Más abajo están las tablas de condiciones de descuento y de pago y una referencia de los formatos admitidos.
 
 ## Mostrar campos calculados
 
@@ -12,9 +14,7 @@ Active **Mostrar campos calculados** para que los campos de factura calculados a
 
 ### Tratamiento de fines de semana
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Opciones de convención de fin de semana"><figcaption><p>Opciones de convención de fin de semana</p></figcaption></figure>
-
-Elija cómo se ajusta una fecha de vencimiento que cae en sábado o domingo. Esto se aplica **tanto** a la fecha de vencimiento de la factura como a la del descuento (Skonto).
+Elija el **Tratamiento de fines de semana** para controlar cómo se ajusta una fecha de vencimiento que cae en sábado o domingo. Esto se aplica **tanto** a la fecha de vencimiento de la factura como a la del descuento (Skonto).
 
 | Convención | Efecto |
 |------------|--------|
@@ -30,13 +30,19 @@ Asigne las condiciones de pago del proveedor a códigos de asignación de AP par
 
 ## Anulaciones de condiciones de descuento
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Anulaciones de condiciones de descuento"><figcaption><p>Anulaciones de condiciones de descuento</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-es.png" alt="Anulaciones de condiciones de descuento"><figcaption><p>Anulaciones de condiciones de descuento</p></figcaption></figure>
 
-Use las **Anulaciones de condiciones de descuento** para asignar un prefijo concreto a un porcentaje de descuento y un número de días. Haga clic en **+ Añadir asignación** para agregar una fila con **Prefijo**, **Porcentaje** y **Días**.
+Use las **Anulaciones de condiciones de descuento** para asignar un prefijo concreto a un porcentaje de descuento y un número de días. Haga clic en **Añadir asignación** para agregar una fila con **Prefijo**, **Porcentaje** y **Días**. Para cambiar o eliminar una asignación existente, use el menú (⋮) al final de la fila.
+
+## Anulaciones de condiciones de pago
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-es.png" alt="Anulaciones de condiciones de pago"><figcaption><p>Anulaciones de condiciones de pago</p></figcaption></figure>
+
+Use las **Anulaciones de condiciones de pago** para asignar un código de condiciones de pago a un tipo de plazo, un número de días y una descripción. Haga clic en **Añadir asignación** para agregar una fila y use el menú (⋮) al final de la fila para cambiarla o eliminarla.
 
 ## Formatos admitidos
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Formatos de condiciones de pago y descuento admitidos"><figcaption><p>Formatos de condiciones de pago y descuento admitidos</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-es.png" alt="Formatos de condiciones de pago y descuento admitidos"><figcaption><p>Formatos de condiciones de pago y descuento admitidos</p></figcaption></figure>
 
 DocBits reconoce los siguientes códigos de condiciones de pago y de descuento.
 

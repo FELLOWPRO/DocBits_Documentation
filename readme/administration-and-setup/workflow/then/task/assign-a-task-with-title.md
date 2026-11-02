@@ -1,6 +1,8 @@
-# Assign a Task with Title
+# Asignar una tarea con título
 
-<figure><img src="../../../../.gitbook/assets/image (291).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v2-es-es.png" alt="Asignar una tarea con título, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_decision_tree_create_tasks_v3-es-es.png" alt="Asignar una tarea con título, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,22 +10,22 @@ La tarjeta de flujo de trabajo "Assign Task / Notification from Decision Table" 
 
 ## **Componentes de la tarjeta:**
 
-1. **Title**
+1. **Título**
    * **Descripción**: Especifica el título de la tarea o notificación que se está creando.
    * **Detalle**: El título debe proporcionar contexto y describir el propósito de la tarea o notificación.
-2. **Description**
+2. **Descripción**
    * **Descripción**: Define el contenido o el propósito de la tarea o notificación.
    * **Detalle**: Proporciona información adicional sobre la tarea o notificación, explicando el contexto o la acción requerida.
-3. **Priority**
+3. **Prioridad**
    * **Descripción**: Define el nivel de urgencia de la tarea o notificación.
    * **Opciones**:
      * **High**: Tareas o notificaciones que requieren atención inmediata.
-     * **Medium**: Tareas importantes que deben abordarse con prontitud.
+     * **Medio**: Tareas importantes que deben abordarse con prontitud.
      * **Low**: Tareas que pueden atenderse más adelante.
-4. **Assignee Type**
+4. **Tipo de responsable**
    * **Descripción**: Especifica el usuario o grupo asignado a la tarea o notificación según el resultado de la tabla de decisión.
    * **Detalle**: La tabla de decisión evalúa dinámicamente las condiciones y devuelve el usuario o grupo adecuado para la asignación.
-5. **Email Notification**
+5. **Notificación por correo electrónico**
    * **Descripción**: Configura si se enviará una notificación por correo electrónico al usuario o grupo asignado.
    * **Opciones**:
      * **True**: Envía una notificación por correo electrónico al destinatario.
@@ -31,16 +33,16 @@ La tarjeta de flujo de trabajo "Assign Task / Notification from Decision Table" 
 
 #### **Componentes adicionales en la versión 3**
 
-1. **Notification Type**
+1. **Tipo de notificación**
    * **Descripción**: Especifica si la tarjeta crea una tarea o una notificación.
    * **Opciones**:
-     * **Task**: Crea una tarea asignada al usuario o grupo de la tabla de decisión.
+     * **Tarea**: Crea una tarea asignada al usuario o grupo de la tabla de decisión.
      * **Notification**: Envía una notificación al usuario o grupo de la tabla de decisión.
 
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación de tarea / notificación**\
   La tarjeta asigna la tarea o notificación al usuario o grupo identificado por la tabla de decisión. La tabla de decisión evalúa dinámicamente las condiciones predefinidas y devuelve el destinatario correspondiente.
 * **Notificación por correo electrónico**\
@@ -61,4 +63,16 @@ La tarjeta de flujo de trabajo "Assign Task / Notification from Decision Table" 
 
 ## **Conclusión:**
 
-La tarjeta de flujo de trabajo **"Assign Task / Notification from Decision Table"** automatiza la asignación de tareas o notificaciones según condiciones dinámicas definidas en una tabla de decisión. La versión 3 mejora su funcionalidad al permitir a los usuarios elegir entre crear una tarea o una notificación, y garantiza que siempre se asigne el destinatario correcto. La función de notificación por correo electrónico mantiene informados a los usuarios, agilizando la comunicación y la gestión de tareas.
+La tarjeta de flujo de trabajo **"Asignar tarea/notificación desde la tabla de decisiones"** automatiza la asignación de tareas o notificaciones según condiciones dinámicas definidas en una tabla de decisión. La versión 3 mejora su funcionalidad al permitir a los usuarios elegir entre crear una tarea o una notificación, y garantiza que siempre se asigne el destinatario correcto. La función de notificación por correo electrónico mantiene informados a los usuarios, agilizando la comunicación y la gestión de tareas.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo usar:** Cree una tarea para el asignado devuelta por una tabla de decisiones.
+
+**Configuración:** Utilice una regla de demostración coincidente que devuelva `Demo Reviewer A`, el título `Review invoice` y la prioridad deseada.
+
+**Resultado esperado y contraejemplo:** La tarea resultante se asigna de acuerdo con el asignado devuelto. Pruebe una regla incomparable por separado e inspeccione el registro de la tarjeta.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

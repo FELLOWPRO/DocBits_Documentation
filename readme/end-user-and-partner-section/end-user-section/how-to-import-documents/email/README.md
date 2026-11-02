@@ -29,3 +29,20 @@ Reenvíe —o envíe directamente— los correos a la dirección de entrada úni
 * **Responder a este correo si la importación no es posible** — envía una respuesta automática al remitente cuando la importación falla.
 * **Notificar al remitente cuando la importación falle** — notifica al remitente si su correo no se pudo importar.
 * **Registros** — abre el registro de procesamiento de correos entrantes. Haga clic en **Guardar** para aplicar los cambios.
+
+## Documentos adjuntos admitidos
+
+Ambos métodos de importación por correo aceptan estos documentos adjuntos:
+
+| Formato | Extensiones de archivo | Uso habitual |
+| --- | --- | --- |
+| PDF | `.pdf` | Facturas y otros documentos PDF |
+| TIFF | `.tif`, `.tiff` | Documentos escaneados |
+| XML | `.xml` | Documentos electrónicos estructurados |
+| EDI / datos de pedidos | `.edi`, `.purchaseorder` | Intercambio electrónico de datos y pedidos de compra |
+
+Si un servicio de reenvío etiqueta un archivo PDF, TIFF o XML como adjunto genérico, DocBits puede identificarlo por el contenido del archivo o una extensión conocida. Los mensajes `.eml` reenviados también pueden contener documentos admitidos; DocBits extrae esos adjuntos internos antes de la importación.
+
+Las imágenes como PNG, JPG, GIF y BMP no se importan como documentos. Las imágenes de firma y los logotipos insertados en los correos reenviados se omiten. Los archivos de Office como Word, Excel y PowerPoint no son compatibles con estos métodos de importación por correo.
+
+En los correos reenviados, consulte **Registros** en **Correos entrantes** si falta un documento. Cuando **Notificar al remitente cuando la importación falle** está activado, el remitente recibe una explicación y un enlace a esta página. Para un buzón conectado, use la guía de configuración de [IMAP](imap.md) o [OAuth (Office 365)](oauth-office365.md).

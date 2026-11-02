@@ -29,7 +29,7 @@ El payload QR cripto es una URI con un esquema (`bitcoin:`, `lightning:`, `zcash
 - `message` — texto libre
 
 **Extensiones BIP321:**
-- `lightning=<BOLT11>` — factura Lightning como fallback
+- `lightning=<BOLT11>` — factura Lightning como respaldo
 - `pj=<endpoint>` / `pjos=<endpoint>` — endpoints de payjoin
 - `req-*` — parámetros obligatorios (preservados en `crypto_required_params`)
 

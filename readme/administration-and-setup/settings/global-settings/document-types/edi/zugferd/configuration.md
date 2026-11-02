@@ -22,17 +22,13 @@ El estándar ZUGFeRD siempre está activo de forma predeterminada, pero puede re
 ### **Pasos para modificar la configuración de ZUGFeRD:**
 
 1. Vaya a **Configuración → Configuración global → Tipos de documento → Factura**.
-2. Haga clic en **E-Doc**.
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_1.png" alt=""><figcaption></figcaption></figure>
+2. Haga clic en **E-Doc**.\\
 3. Aparecerá una lista de todos los e-docs disponibles.
-4. Localice la versión de **ZUGFeRD** que desea modificar.
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_2.png" alt=""><figcaption></figcaption></figure>
+4. Localice la versión de **ZUGFeRD** que desea modificar.\\
 
 ## **Configuración de transformación y ruta XML:**
 
-En la **configuración de transformación**, puede definir la ruta para localizar información específica dentro del archivo XML y guardarla en una nueva estructura, lo que facilita el acceso a los datos.
+En la **configuración de transformación**, puede definir la ruta para localizar información específica dentro del archivo XML y guardarla en una nueva estructura, lo que facilita el acceso a los datos.\
 <mark style="color:red;">**Nota**</mark>: Si utiliza esta funcionalidad, debe usar las rutas XML recién creadas, no las rutas XML originales, en la **Vista previa** y la **Ruta de extracción**.
 
 ### **Pasos para modificar el archivo de transformación:**
@@ -71,12 +67,12 @@ La **Configuración de rutas de extracción** se utiliza para extraer datos y co
 2. Cree un nuevo borrador haciendo clic en el **icono del lápiz**.
 3. Seleccione el borrador recién creado.
 4. Cree un nuevo campo o modifique uno existente.
-5. El lado izquierdo representa el **ID del campo de DocBits**, que se puede encontrar en **Configuración → Configuración global → Tipos de documento → Factura → Campos**.
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_3.png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_4.png" alt=""><figcaption></figcaption></figure>
+5. El lado izquierdo representa el **ID del campo de DocBits**, que se puede encontrar en **Configuración → Configuración global → Tipos de documento → Factura → Campos**.\\
 6. El lado derecho representa la **ruta al campo** creado en la Transformación.
 7. Haga clic en **Guardar**.
 
 Al seguir estos pasos, puede garantizar una extracción y validación de datos precisas para las facturas ZUGFeRD.
+
+## Reglas utilizadas y activación
+
+Las reglas específicas de la organización tienen prioridad sobre las predeterminadas para el formato eDoc detectado. Compruebe la TRANSFORMATION activa y compruebe qué nodo proporciona invoice_type en el XML transformado; la ruta depende del formato. Guardar conserva un borrador; utilice la marca de verificación para activarlo después de las pruebas. Una Preview renderizada no demuestra el tipo de documento almacenado. Consulte la [guía de resolución de problemas de clasificación](../credit-note-recognized-as-invoice.md) para conocer los códigos 381/261, los scripts posteriores y las precauciones para volver a procesar documentos.

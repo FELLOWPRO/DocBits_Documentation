@@ -1,20 +1,33 @@
 # DocBits Infor Cliente On Premise
 
-Para enviar datos al cliente Infor onPremise, ofrecemos dos formas: Site2Site con IPsec o [WatchDog](broken-reference)
+Para enviar datos a un cliente Infor onPremise ofrecemos dos formas: Site2Site con IPsec o [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
 
-Envío de Datos al Cliente Infor On-Premise
+Envío de datos a un cliente Infor On-Premise
 
 Para enviar datos a un cliente Infor on-premise, ofrecemos dos formas: VPN Site-to-Site con IPsec.
 
 ## Configuración de VPN Site-to-Site IPsec (Internet Protocol Security)
 
-### Para una VPN site-to-site IPsec, necesita configurar y abrir los siguientes puertos:
+### 1. Información de configuración:
 
-1\. Puerto UDP 500: Utilizado para el Intercambio de Claves de Internet (IKE) fase 1 y fase 2.
+| **Configuración de VPN IPSEC** |                                                                 |
+| ------------------------------ | --------------------------------------------------------------- |
+|                                | **Endpoint B**                                                  |
+| **Cliente**                    | _**FELLOWPRO AG**_                                              |
+| **Nombre del contacto**        | _**Daniel Lopez**_                                              |
+| **Correo electrónico**         | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
+| **Hardware/Software del endpoint** | _**StrongWAN**_                                             |
+| **Ubicación del firewall**     | _**Frankfurt**_                                                 |
+| **IP del endpoint**            | _**46.101.133.158**_                                            |
+| **Red/Host 1**                 | _**10.135.0.0/16**_                                             |
 
-2\. Puerto UDP 4500: Utilizado para la traversía NAT (NAT-T), permitiendo que el tráfico VPN pase a través de dispositivos NAT (Traducción de Direcciones de Red).
+### 2. Para una VPN site-to-site IPsec, necesita configurar y abrir los siguientes puertos:
 
-## Accediendo a Infor OS
+1\. Puerto UDP 500: utilizado para el Intercambio de Claves de Internet (IKE) fase 1 y fase 2.
+
+2\. Puerto UDP 4500: utilizado para el NAT traversal (NAT-T), que permite que el tráfico VPN pase a través de dispositivos NAT (Network Address Translation, traducción de direcciones de red).
+
+## Acceso a Infor OS
 
 • URL de autenticación: https://inforos.CustomerXYZad.net/
 
@@ -24,4 +37,4 @@ Para enviar datos a un cliente Infor on-premise, ofrecemos dos formas: VPN Site-
 
 Para configurar una VPN site-to-site IPsec, asegúrese de que los puertos y protocolos anteriores estén configurados y abiertos.
 
-Utilice las URL proporcionadas para acceder a Infor OS para autenticación y datos.
+Utilice las URL proporcionadas para acceder a Infor OS para la autenticación y los datos.

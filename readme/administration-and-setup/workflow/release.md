@@ -2,11 +2,11 @@
 hidden: true
 ---
 
-# Workflow Card Release & Version History
+# Historial de versiones y versiones de la tarjeta de flujo de trabajo
 
 ## Principios de control de versiones
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Workflow Version Control System</figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Sistema de control de versiones de flujo de trabajo</figcaption></figure>
 
 ### Versión 8.5.2024 - Funciones básicas de versionado
 
@@ -15,7 +15,7 @@ El Motor de Flujo de Trabajo DocBits implementa un control de versiones robusto 
 1. **Version Control**: Cada tarjeta puede tener varias versiones, cada una de las cuales representa un conjunto diferente de condiciones o acciones. Esto le permite experimentar o ajustar las reglas sin afectar al flujo de trabajo actualmente activo.
 2. **Seamless Upgrades**: Cuando necesite actualizar una regla o condición debido a cambios en los requisitos de procesamiento de documentos, puede crear una nueva versión de la tarjeta. Este enfoque garantiza que cualquier modificación sea deliberada y se pruebe antes de reemplazar la versión actual. Minimiza los errores y las posibles interrupciones en el procesamiento de documentos.
 3. **Maintaining Consistency**: Mantener la versión original de la tarjeta sin cambios hasta que decida actualizarla garantiza que los procesos en curso no se vean afectados. Puede ejecutar pruebas y validaciones en la nueva versión sin afectar a los datos o flujos de trabajo en producción.
-4. **Flexibility and Testing**: Varias versiones permiten probar diferentes escenarios en un entorno controlado. Puede ver los efectos de las nuevas reglas o cambios en su flujo de trabajo de procesamiento de documentos sin realizar cambios permanentes. Una vez que esté satisfecho con los resultados, puede optar por aplicar la nueva versión.
+4. **Flexibilidad y pruebas**: Varias versiones permiten probar diferentes escenarios en un entorno controlado. Puede ver los efectos de las nuevas reglas o cambios en su flujo de trabajo de procesamiento de documentos sin realizar cambios permanentes. Una vez que esté satisfecho con los resultados, puede optar por aplicar la nueva versión.
 
 ---
 
@@ -46,7 +46,7 @@ El Motor de Flujo de Trabajo DocBits implementa un control de versiones robusto 
 #### 1. CALL_API
 **Versiones:** v1, v2 (Actual: v2)
 
-📖 **Guía:** [Call External API Guide](../then/action/call-api-guide.md)
+📖 **Guía:** [Call External API Guide](then/action/call-api-guide.md)
 
 | Versión | Traducción | Estado | Cambios clave |
 |---------|-------------|--------|-------------|
@@ -106,7 +106,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versiones:** v2, v3 (Obsoleta), v4 (Actual)
 
-📖 **Guía:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+📖 **Guía:** [Task Assignment Guide](then/task/task-assignment-guide.md)
 
 | Versión | Cambios | Estado | Parámetro de tipo |
 |---------|---------|--------|-----------------|
@@ -167,7 +167,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (La más evolucionada - 5 versiones)
 **Versiones:** v2, v3, v4, v5 (Actual)
 
-📖 **Guía:** [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Guía:** [PO Guía completa de combinaciones](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Versión | Cambios | Estado | Tolerancia | Comparación |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +351,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Tarjeta de tarea más evolucionada - 4 versiones)
 **Versiones:** v1 (Obsoleta), v2 (Obsoleta), v3 (Obsoleta), v4 (Actual)
 
-📖 **Guía:** [Task Assignment Guide](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Guía:** [Task Assignment Guide](then/task/task-assignment-guide.md)
 
 | Versión | Traducción | Árbol de decisión | Tipo de elemento de trabajo | Estado |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,10 +650,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentación relacionada
 
-- 📖 [Card Versioning Reference](../changelog/card-versioning.md) - Información detallada de versiones
-- 📚 [Workflow Guides](../) - Uso de tarjetas paso a paso
-- 🔄 [Card Version Database](../docs/card_version.md) - Historial completo de versiones
-- 📋 [Workflow Logs](../workflow-logs/) - Ejecución y depuración
+- 📖 [Card Versioning Reference](cards-overview/card-versions-guide.md) - Información detallada de versiones
+- 📚 [Workflow Guides](README.md) - Uso de tarjetas paso a paso
+- 🔄 [Card Version Database](cards-overview/card-versions-guide.md) - Historial completo de versiones
+- 📋 [Registros de flujo de trabajo](workflow-logs.md) - Ejecución y depuración
 
 ---
 

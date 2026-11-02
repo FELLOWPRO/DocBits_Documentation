@@ -1,5 +1,13 @@
 # Module
 
+## Videotutorial: Instellingenoverzicht en modules
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/nl.mp4" %}
+Instellingenoverzicht en modules in DocBits
+{% endembed %}
+
+De video toont de vijf groepen van het Instellingenoverzicht, de zoekfunctie en snelkoppelingen en wat de drie modulepagina's regelen.
+
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-nl.png" alt="Modules voor orders en financiën, weergegeven in hun bestaande instelling."><figcaption><p>Modules voor orders en financiën, weergegeven in hun bestaande instelling.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-nl.png" alt="Modules voor documentintegratie, waaronder documentscripts, barcode-extractie en aangepaste stamgegevens. De ingestelde schakelaars zijn niet gewijzigd."><figcaption><p>Modules voor documentintegratie, waaronder documentscripts, barcode-extractie en aangepaste stamgegevens. De ingestelde schakelaars zijn niet gewijzigd.</p></figcaption></figure>

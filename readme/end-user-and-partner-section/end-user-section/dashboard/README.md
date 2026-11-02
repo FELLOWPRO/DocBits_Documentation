@@ -14,7 +14,7 @@ De beschikbare functies hangen af van uw rechten, de documentstatus en de ingesc
 
 ## Volledige rondleiding door het dashboard
 
-De fictieve klant in Amsterdam laat gecombineerd zoeken met AND, statusfilters, zoekhulp, kolominstellingen, statistieken en vernieuwen zien. De Nederlandse interface is opgenomen in DocBits met synthetische testgegevens. Het personage en de stem zijn met AI gemaakt.
+De klant in Amsterdam laat gecombineerd zoeken met AND, statusfilters, zoekhulp, kolominstellingen, statistieken en vernieuwen zien.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/nl.mp4" %}
 
@@ -30,7 +30,9 @@ De fictieve klant in Amsterdam laat gecombineerd zoeken met AND, statusfilters, 
 
 ## Documenten zoeken en filteren
 
-Voer een documentnaam, factuurnummer of andere bedrijfswaarde in en druk op **Enter**. Gebruik het filterpictogram in het zoekvak voor **Status**, **Toegewezen aan** en documenten waarvoor een herstart nodig is. Kies **Toepassen**. Verwijder afzonderlijke filters of wis de filters als een document ontbreekt. Ook documenttypetabbladen en opgeslagen weergaven beperken de lijst.
+Voer een documentnaam, factuurnummer of andere bedrijfswaarde in en druk op **Enter**. Gebruik het pictogram **Filters** (drie schuifbalken) aan het rechteruiteinde van de zoekbalk voor **Status**, **Toegewezen aan** en **Opnieuw opstarten vereist**; kies **Toepassen**. Verwijder afzonderlijke filters of wis de filters als een document ontbreekt. Ook documenttypetabbladen en opgeslagen weergaven beperken de lijst.
+
+Het pictogram **bliksem** aan het begin van het zoekvak opent de veldkeuze. Deze toont eerst de **Slimme filters** — kant-en-klare zoekopdrachten zoals **Verlopen**, **Binnenkort beschikbaar**, **Aan mij toegewezen**, **De inbox van vandaag**, **In afwachting van validatie** of **Elektronische documenten** — en daarna alle doorzoekbare velden. Bij een keuze wordt de bijbehorende voorwaarde in het zoekvak geplaatst.
 
 De zoekbalk biedt gestructureerde zoekfilters, een directe queryweergave en hulp bij velden en syntaxis. Neem veldnamen en voorbeelden uit die hulp over. Technische veldnamen blijven bij een taalwijziging gelijk. Geavanceerde functies hangen af van de ingeschakelde zoekmogelijkheden.
 
@@ -48,7 +50,7 @@ Als groeperen beschikbaar is, kiest u boven de tabel een groepeerveld. Kies bij 
 
 Met **+** naast de documenttypetabbladen toont u andere typen. Versleep de tabbladen om ze te ordenen. Een tabblad verwijderen wijzigt alleen de weergave en verwijdert geen documenten.
 
-Open het tandwiel en de kolominstellingen. Verplaats kolommen tussen de verborgen en zichtbare lijst en versleep zichtbare kolommen om ze te ordenen. U kunt ook velden van een documenttype toevoegen. Zie [Documentkolommen wijzigen](change-document-columns.md).
+Open het tandwiel **Geavanceerde instellingen** rechts van de zoekbalk en daarin de knop **Kolommeninstellingen**. Verplaats kolommen tussen de verborgen en zichtbare lijst en versleep zichtbare kolommen om ze te ordenen. U kunt ook velden van een documenttype toevoegen. Zie [Documentkolommen wijzigen](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns-nl.png" alt="Kies en orden de tabelinformatie in de kolominstellingen."><figcaption><p>Kies en orden de tabelinformatie in de kolominstellingen.</p></figcaption></figure>
 
@@ -64,7 +66,7 @@ Selecteer meerdere documenten met de selectievakjes en open het menu in de tabel
 
 ## Een persoonlijk dashboard opslaan
 
-Open de blauwe weergaveknop onder het zoekvak en maak een nieuw dashboard. Geef het een naam en kies privé, zichtbaar voor iedereen of gedeeld met bepaalde groepen en gebruikers. Bewaar filters, sortering en kolommen voor terugkerend werk.
+Open de weergaveknop onder het zoekvak en kies **Nieuw dashboard maken**. Geef het een naam en kies **Alleen zichtbaar voor mij**, **Zichtbaar voor alle gebruikers** of **Delen met groepen en gebruikers**. Bewaar filters, sortering en kolommen voor terugkerend werk.
 
 Selecteer opgeslagen weergaven via hetzelfde menu. Sla latere wijzigingen op als de weergave van u is en is gewijzigd. U kunt een met u gedeelde weergave niet overschrijven: maak een eigen weergave. Delen geeft geen extra documentrechten. Zie [Persoonlijke dashboards](personal-dashboards.md).
 
@@ -82,6 +84,6 @@ De andere hulpmiddelen vernieuwen de lijst, openen geavanceerde instellingen, st
 
 Controleer eerst organisatie, actieve weergave, documenttype, zoektekst en filters. Vernieuw de lijst en bekijk andere resultaatpagina’s. Vraag uw beheerder om rechten en modules te controleren als een functie blijft ontbreken.
 
-**Ctrl/Cmd + K** opent de globale snelzoekfunctie; **Ctrl/Cmd + Q** vernieuwt het dashboard; **Ctrl/Cmd + H** opent de hulp. Het tandwielmenu bevat de sneltoetsen. De eventuele teller voor openstaande documenten van de hele organisatie is een beheerdersindicator en geen persoonlijke taakenteller.
+**Ctrl/Cmd + K** opent de globale snelzoekfunctie; **Ctrl/Cmd + Q** vernieuwt het dashboard; **Ctrl/Cmd + H** opent de hulp. Het menu **Geavanceerde instellingen** bevat de sneltoetsen. De eventuele teller voor openstaande documenten van de hele organisatie is een beheerdersindicator en geen persoonlijke taakenteller.
 
 Gebruik Ctrl op Windows/Linux en Cmd op macOS. Sneltoetsen van browser of besturingssysteem kunnen voorrang hebben.

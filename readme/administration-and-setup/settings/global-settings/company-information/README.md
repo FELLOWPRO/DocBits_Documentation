@@ -1,5 +1,13 @@
 # Bedrijfsinformatie
 
+## Videotutorial: Bedrijf, abonnement en audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/nl.mp4" %}
+Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
+{% endembed %}
+
+De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-nl.png" alt="Bedrijfsgegevens met afgeschermde organisatiewaarden."><figcaption><p>Bedrijfsgegevens met afgeschermde organisatiewaarden.</p></figcaption></figure>
 
 Op de pagina Bedrijfsinformatie beheert u het profiel van uw bedrijf, voorkeuren en abonnementsgegevens. De pagina is ingedeeld in de volgende onderdelen:

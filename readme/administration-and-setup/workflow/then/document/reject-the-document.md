@@ -1,6 +1,8 @@
 # Weiger het document
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-e55ff26a1b6c-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_reject_v1-nl-nl.png" alt="Weiger het document, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_reject_v2-nl-nl.png" alt="Weiger het document, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 

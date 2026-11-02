@@ -1,67 +1,38 @@
 # Duplicaatdetectie
 
-## Overzicht
+## Detecteer duplicaten en neem een weloverwogen beslissing
 
-In **DocBits** kun je filteren op dubbele documenten door aan te geven welke velden moeten overeenkomen en door een tijdsinterval te definiëren waarin duplicaten moeten worden gedetecteerd.
+<figure><picture><source srcset="../../../../../.gitbook/assets/intro-process-02-dubletten-nl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../../.gitbook/assets/intro-process-02-dubletten-nl-light-20261029.png" alt="Detecteer duplicaten en neem een weloverwogen beslissing"></picture><figcaption><p>Detecteer duplicaten en neem een weloverwogen beslissing</p></figcaption></figure>
 
-Deze pagina biedt een gedetailleerde gids over hoe je de functie **Duplicaatdetectie** effectief kunt inschakelen en gebruiken.
+DocBits vergelijkt de geconfigureerde velden binnen het geselecteerde tijdvenster. Wanneer er een match wordt gevonden, opent u de duplicaatwaarschuwing en vergelijkt u de documenten voordat u doorgaat of archiveert. Het blokkeren van dubbele exporten is een aparte instelling; een match archiveert niet automatisch een document.
 
-## Duplicaatdetectie inschakelen
 
-Om de detectie van dubbele documenten in **DocBits** in te schakelen, volg je deze stappen:
+Gebruik **Duplicaatdetectie** om documenten te markeren die binnen een gekozen periode overeenkomen met een ander document op geselecteerde velden. De opties behoren bij elk documenttype.
 
-1.  Navigeer naar **Instellingen** → **Globale instellingen** → **Documenttypen**.
+## De instellingen openen
 
-    ![Global settings zijbalk met de menu-items Company Information, Document Types, Email Notification, Email Templates en Dashboard](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
-2.  Selecteer het gewenste **Documenttype** en klik op **Meer instellingen**.
+1. Open **Instellingen → Documenttypen**.
+2. Selecteer bij het documenttype dat u wilt configureren **Meer Instellingen**.
+3. Open in **Meer Instellingen** het onderdeel **Duplicaatdetectie**.
 
-    ![Document types pagina met de items Invoice, Credit Note, Delivery Note, Order Confirmation en Contract, met Extraction Type schakelaars en Edit layout tabbladen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
-3.  Ga naar de sectie **Duplicaatdetectie**.
+<figure><img src="../../../../../.gitbook/assets/dbdc664-duplicate-settings-off-nl-20261011.png" alt="Meer Instellingen voor Factuur met geopend onderdeel Duplicaatdetectie en uitgeschakelde detectieopties"><figcaption><p>De Factuur-instellingen tonen vier aparte schakelaars. De selectors voor velden en interval verschijnen wanneer detectie is ingeschakeld.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_3-nl.png" alt="Instellingen voor de detectie van dubbele documenten."><figcaption><p>Instellingen voor de detectie van dubbele documenten.</p></figcaption></figure>
+## Kies wat als duplicaat geldt
 
-DocBits biedt twee opties voor het identificeren van dubbele documenten:
+1. Zet **Detectie van dubbele documenten** aan. De selectors **Duplicaatdetectievelden** en **Duplicaatdetectie-interval** verschijnen.
+2. Selecteer de velden die moeten overeenkomen. Voor een factuur kunt u bijvoorbeeld **Factuurnummer** en **Leveranciersnaam** kiezen. Kies velden die documenten in uw eigen proces onderscheiden.
+3. Kies een interval: **1 maand**, **3 maanden (aanbevolen)**, **6 maanden** of **1 jaar**. Een langer interval controleert een breder datumbereik en kan langer laden.
 
-1. **Detectie van dubbele documenten**:\
-   Deze functie controleert op dubbele documenten die zijn geüpload naar **DocBits** op basis van de geselecteerde criteria. Als een document overeenkomt met de geselecteerde criteria in andere documenten, wordt het gemarkeerd als een duplicaat.
-2.  **Detectie van dubbele facturen** (Alleen beschikbaar voor het **Factuur** documenttype):\
-    Deze functie vereist het synchroniseren van leveranciersfacturen van Infor naar DocBits. Het vergelijkt de factuurnummers in het DocBits-dashboard met die in Infor. Als hetzelfde factuurnummer meer dan eens voorkomt, wordt het gemarkeerd als een duplicaat.
+Elke wijziging wordt direct bij het uitvoeren opgeslagen; er is geen aparte Save-knop in dit onderdeel. Als u de detectie uitschakelt, worden de selectors voor velden en interval verborgen.
 
-    <mark style="color:red;">**Opmerking**</mark>: Het gebruik van de functie **Detectie van dubbele facturen** resulteert in een extra kredietkosten.
+<figure><img src="../../../../../.gitbook/assets/dbdc664-duplicate-settings-on-nl-20261011.png" alt="Detectie van dubbele documenten ingeschakeld, met selectors voor velden en interval"><figcaption><p>Schakel de detectie in voordat u de vergelijkingvelden en het tijdsinterval kiest.</p></figcaption></figure>
 
-## Filter welke documenten als duplicaat moeten worden gedetecteerd
+<figure><img src="../../../../../.gitbook/assets/dbdc664-duplicate-interval-options-nl-20261011.png" alt="Menu Duplicaatdetectie-interval met 1 maand, 3 maanden, 6 maanden en 1 jaar"><figcaption><p>3 maanden staat in het menu gemarkeerd als aanbevolen interval.</p></figcaption></figure>
 
-Zodra **Duplicaatdetectie** is ingeschakeld, zijn er twee dropdown-menu's beschikbaar voor configuratie:
+Voor **Factuur** biedt dit onderdeel ook **Detectie van dubbele facturen**, **Dubbele documentexport blokkeren** en **Negeer de belastingvrije lijn**. Dit zijn aparte schakelaars; schakel alleen het gedrag in dat uw factuurproces nodig heeft. De extra schakelaars worden voor andere documenttypen niet getoond.
 
-*   **Duplicaatdetectievelden**\
-    Selecteer de velden die moeten worden gebruikt om duplicaten te identificeren (bijv. Leveranciers-ID, Datum, Factuurnummer, enz.). Documenten die overeenkomen met deze velden worden gemarkeerd als duplicaten.
+## Een gemarkeerd document bekijken
 
-<figure><img src="../../../../../.gitbook/assets/s150-duplicatedocument_4-nl.png" alt="Beschikbare velden voor duplicaatdetectie."><figcaption><p>Beschikbare velden voor duplicaatdetectie.</p></figcaption></figure>
+Wanneer DocBits een overeenkomst vindt, toont de regel van het document op het **Dashboard** een duplicaatpictogram. Selecteer het pictogram om de overeenkomende records in het zijpaneel te vergelijken. Het pictogram verschijnt alleen wanneer er een overeenkomst is.
 
-*   **Duplicaatdetectie-interval**
-
-    Gebruik deze instelling om het tijdsbereik te definiëren waarin duplicaten worden gedetecteerd. Documenten die binnen het geselecteerde interval zijn geüpload, worden met elkaar vergeleken op basis van de geselecteerde velden.
-
-    **Beschikbare opties:**
-
-    * 1 maand
-    * 3 maanden (Aanbevolen)
-    * 6 maanden
-    * 1 jaar
-
-    <mark style="color:red;">**Opmerking**</mark>: Een interval van 3 maanden wordt aanbevolen om optimale prestaties te garanderen. Het selecteren van een langer interval kan leiden tot langzamere laadtijden van het dashboard.
-
-    ![More Settings sectie voor duplicaatdetectie met Duplicate Detection Interval ingesteld op 3 Months en Duplicate Invoice Detection vervolgkeuzelijsten](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
-
-## Dubbele documenten bekijken op het Dashboard
-
-Zodra **Duplicaatdetectie** is ingeschakeld, worden documenten die als duplicaten zijn geïdentificeerd, weergegeven met een duplicaatindicatorpictogram op het dashboard.
-
-*   Klik op dit pictogram om de overeenkomende records in een zij-aan-zij gesplitst scherm te openen voor gemakkelijke vergelijking.\
-    <mark style="color:red;">**Opmerking**</mark>: Het pictogram verschijnt alleen als er minstens één duplicaat is gedetecteerd voor het document.
-
-*   Wanneer je een gemarkeerd document bekijkt, verschijnt er een waarschuwingsbalk bovenaan, die aangeeft dat het document een duplicaat is.
-
-    ![Gesplitste schermweergave van een duplicaatvergelijking van een factuur met velden voor factuurnummer, factuurdatum, leveranciersadres en betaalgegevens](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
-
-Vergelijk bij mogelijke duplicaten factuurnummer, leverancier, datum en bedrag. Gebruik de waarschuwing en documentdetails om te bepalen welke correctie nodig is.
+Wanneer u een gemarkeerd document opent, biedt de duplicaatwaarschuwing **Bekijk duplicaat**, **Toch doorgaan** en, als het document nog niet gearchiveerd is, **Archiveren**. Bekijk de overeenkomende records voordat u een actie kiest. Zie [de Dashboard-handleiding](../../dashboard/README.md) voor de documentlijst.

@@ -1,5 +1,13 @@
 # Paramètres de tolérance de commande d'achat / Tolérance de commande d'achat supplémentaire
 
+## Configurer les règles de rapprochement et les tolérances
+
+Le parcours ouvre le type de document facture, vérifie la version publiée des règles et la clone en brouillon inactif. Il explique les types de règles, la priorité au sein de l’étape de rapprochement, les colonnes, la quantité de référence, les modes et le calcul des tolérances. Seul le brouillon du tutoriel est enregistré ; la version active et les tolérances globales restent inchangées. Le calcul à cinq pour cent est une illustration, pas une modification de la tolérance active.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/fr.mp4" %}
+
+[Regarder la vidéo avec les sous-titres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-rules-admin/v3/fr.html)
+
 ### **Paramètre pour configurer les tolérances de commande d'achat**
 
 Allez à **Paramètres → Paramètres généraux → Types de documents → Plus de paramètres → commande d'achat →Réglage de la tolérance PO**

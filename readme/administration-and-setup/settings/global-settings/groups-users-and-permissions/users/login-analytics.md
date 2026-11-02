@@ -1,10 +1,18 @@
 # Statistiques de connexion
 
+## Tutoriel vidéo : entreprise, abonnement et audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/fr.mp4" %}
+Informations sur l'entreprise, formule d'abonnement et journaux d'audit dans DocBits
+{% endembed %}
+
+La vidéo présente les informations et les préférences de l'entreprise, la formule d'abonnement, l'activité de connexion et les journaux d'audit.
+
 Les **Statistiques de connexion** offrent aux administrateurs une vue en lecture seule, à l'échelle de toute l'organisation, indiquant *quand* et *à quelle fréquence* les utilisateurs se connectent à DocBits. Elles répondent à des questions telles que « les connexions sont-elles en hausse ? », « combien d'utilisateurs distincts ont été actifs ce mois-ci ? » et « quand surviennent les pics d'utilisation ? » — sans jamais exposer les identifiants ni les données personnelles d'un utilisateur en particulier.
 
 > **Accès :** ouvrez **Paramètres → Organisation et accès → Utilisateurs** et cliquez sur le bouton **Statistiques de connexion** dans le coin supérieur droit (`/settings/login-analytics`).
 
-<figure><img src="../../../../../.gitbook/assets/login_analytics_overview.png" alt="Login Analytics page with the activity chart and summary cards"><figcaption><p>Activité de connexion de l'organisation sur la période sélectionnée</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/prior-u003-fr.png" alt="Vue d’ensemble de l’analyse des connexions."><figcaption><p>Vue d’ensemble de l’analyse des connexions.</p></figcaption></figure>
 
 ## Plage de temps
 

@@ -14,7 +14,7 @@ Ce paramètre se trouve dans **Paramètres → Paramètres globaux → Informati
 2. Ouvrez la section **Authentification à deux facteurs**.
 3. Activez **Exiger l'authentification à deux facteurs pour tous les membres** et cliquez sur **Enregistrer**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="Le commutateur d'exigence de MFA de l'organisation et le rapport d'adoption"><figcaption><p>Activez l'exigence pour tous les membres, et surveillez l'adoption ci-dessous.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t001-fr.png" alt="Exigence d’authentification à deux facteurs pour l’organisation."><figcaption><p>Exigence d’authentification à deux facteurs pour l’organisation.</p></figcaption></figure>
 
 Une fois enregistré, le changement prend effet en moins d'une minute. À partir de ce moment :
 
@@ -40,7 +40,7 @@ Utilisez-le pour évaluer l'état de préparation : augmentez d'abord l'adoption
 
 ## Ce que voient les membres
 
-Un membre tenu de s'enregistrer est dirigé vers la configuration de la 2FA lors de sa prochaine connexion et choisit une méthode (application d'authentification, code par e-mail, ou clé d'accès). Les étapes destinées à l'utilisateur final sont décrites dans [Authentification à deux facteurs (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Un membre tenu de s'enregistrer est dirigé vers la configuration de la 2FA lors de sa prochaine connexion et choisit une méthode (application d'authentification, code par e-mail, ou clé d'accès). Les étapes destinées à l'utilisateur final sont décrites dans [Authentification à deux facteurs (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Contrôles de sécurité associés
 

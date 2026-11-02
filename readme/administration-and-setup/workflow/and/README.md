@@ -1,64 +1,63 @@
-# And
+# Et
 
-## Comprendre les cartes « And »
+Utilisez une carte **Et** pour décider si un flux de travail doit continuer après son déclencheur **Quand**. Ajoutez les vérifications dont vous avez besoin avant l'action **Alors**. Chaque carte affiche des champs à remplir, tels que **Opérateur**, **Nom du champ** ou **Valeur** ; les captures d'écran montrent les modèles de cartes disponibles, pas les règles complétées.
 
-### **Objectif des cartes « And » :**
+Dans **Générateur de flux de travail**, sélectionnez **Ajouter une carte** sous **Et...**. Choisissez une catégorie sur la gauche ou saisissez un nom de carte dans **Rechercher une carte**. Sélectionnez un aperçu de la carte pour l'ajouter au flux de travail. Vous pouvez faire défiler la liste d'aperçu pour voir plus de cartes. Utilisez **×** pour fermer le sélecteur sans choisir une autre carte. Après avoir configuré les cartes, enregistrez le flux de travail. Voir [Workflow](..) pour les étapes environnantes **Quand**, **Et** et **Alors**.
 
-* Les cartes **And** servent de cartes de condition qui définissent les critères devant être remplis pour que le workflow se poursuive. Elles agissent en pratique comme des opérateurs logiques « ET » : toutes les conditions spécifiées dans ces cartes doivent être satisfaites pour que l'action suivante soit déclenchée.
+## Comparer avec le bon de commande
 
-#### Catégories de cartes « And »
+Utilisez ces cartes pour comparer les données de commande ou de facture avec un bon de commande, telles que le prix unitaire, la date de livraison promise, les frais ou la quantité. Choisissez les champs, l'opérateur et toute tolérance demandée par la carte sélectionnée. Voir [Comparer avec le bon de commande](compare-with-purchase-order) pour les cartes individuelles.
 
-D'après les captures d'écran, ces cartes couvrent un large éventail de conditions, parmi lesquelles :
+<figure><img src="../../../.gitbook/assets/prior-u035-fr.png" alt="Conditions de comparaison avec les commandes."><figcaption><p>Conditions de comparaison avec les commandes.</p></figcaption></figure>
 
-* **Compare with Purchase Order** :
-  * Des conditions liées à la validation et à la comparaison par rapport aux bons de commande, comme la comparaison des dates de livraison, des prix unitaires ou des écarts de quantité. Elles sont essentielles pour garantir que les transactions respectent les conditions convenues.
+## Champ de document
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Choisissez cette catégorie pour cocher une case ou l'état d'un champ, comparer un champ avec une valeur ou comparer deux champs. Remplissez les espaces réservés **Nom du champ** et **Opérateur** sur la carte choisie. Certaines comparaisons demandent également une tolérance. Voir [Champ du document](document-field).
 
-* **Document Field** :
-  * Elles impliquent des conditions basées sur des champs spécifiques au sein des documents, comme des cases cochées, la comparaison de valeurs de champs ou la vérification qu'un champ de document respecte une tolérance définie. C'est particulièrement important pour l'intégrité des données et les contrôles automatisés au sein des formulaires ou des systèmes de gestion documentaire.
+<figure><img src="../../../.gitbook/assets/prior-u036-fr.png" alt="Conditions sur les champs du document."><figcaption><p>Conditions sur les champs du document.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Date et heure
 
-* **Date & Time :**
-  * Des conditions basées sur les dates et les heures
+Utilisez **Date et heure** pour comparer une date ou une heure avec une plage, ou comparez **Aujourd'hui** avec une date choisie. Sélectionnez les valeurs **Opérateur** et date dans la carte. Voir [Date et heure](date-and-time).
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u037-fr.png" alt="Conditions de date et d’heure."><figcaption><p>Conditions de date et d’heure.</p></figcaption></figure>
 
-* **Document** :
-  * Des conditions basées sur les caractéristiques du document, comme son type ou son association à une sous-organisation particulière. Ces conditions peuvent orienter les workflows en fonction de la catégorisation des documents ou de l'implication d'un service.
+## Document
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Utilisez ces cartes lorsqu'un flux de travail doit dépendre du **type de document** ou de la **sous-organisation**. Choisissez le type ou l'organisation nommée dans la carte. Voir [Document](document).
 
-* **Logic** :
-  * Des conditions logiques pouvant impliquer des évaluations telles que « Continuer avec une probabilité de X % » ou l'exécution de requêtes HTTPS, essentielles pour les intégrations et la prise de décision probabiliste au sein des workflows.
+<figure><img src="../../../.gitbook/assets/prior-u038-fr.png" alt="Conditions sur les documents."><figcaption><p>Conditions sur les documents.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Logique
 
-* **Status** :
-  * Centrées sur le statut des documents ou des tâches, ces conditions garantissent que seuls les éléments dans certains états déclenchent des workflows spécifiques, ce qui est essentiel pour une gestion de processus pilotée par le statut.
+Cette catégorie comprend les vérifications utilisant une table de décision, une réponse HTTPS, la disponibilité du module, le prix d'un article proposé, une valeur aléatoire ou deux valeurs. Ouvrez la carte spécifique et remplissez ses espaces réservés nommés ; par exemple, la carte HTTPS demande une URL, une méthode et un code de statut accepté. Voir [Logique](logic).
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u039-fr.png" alt="Conditions logiques."><figcaption><p>Conditions logiques.</p></figcaption></figure>
 
-* **Table** :
-  * Elles impliquent des conditions basées sur les données d'un tableau, comme la correspondance avec des motifs regex ou la comparaison de valeurs au sein d'un tableau. De telles conditions sont essentielles pour valider et manipuler de grands ensembles de données.
+## Statut
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Utilisez **Statut** pour vérifier si un document a un statut choisi ou si son statut est dans un ensemble sélectionné. Choisissez le **Opérateur** et le **Statut** dans la carte. Voir [Statut](status).
 
-* **Assignee** :
-  * Des conditions basées sur les assignés d'une tâche ou d'un document. Cela garantit que les actions ne sont effectuées que lorsque certains utilisateurs sont impliqués, renforçant la responsabilité et la précision des tâches.
+<figure><img src="../../../.gitbook/assets/prior-u040-fr.png" alt="Conditions de statut."><figcaption><p>Conditions de statut.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Tableau
 
-### Application pratique
+Ces cartes examinent les lignes du tableau des documents. Les options visibles incluent les vérifications de date, les modèles de texte, la durée de conservation et les comparaisons entre les colonnes. Sélectionnez le **Nom de la table** et le **Nom de la colonne** avant de choisir un opérateur ou un modèle. Voir [Tableau](table).
 
-Ces cartes « And » sont configurées au sein du workflow pour effectuer des contrôles et des validations qui garantissent que le processus respecte strictement les règles métier et les normes d'intégrité des données. Par exemple :
+<figure><img src="../../../.gitbook/assets/prior-u041-fr.png" alt="Conditions sur les tableaux de données."><figcaption><p>Conditions sur les tableaux de données.</p></figcaption></figure>
 
-* **Un workflow peut utiliser une carte « And » pour vérifier que le montant total d'une facture correspond au bon de commande avant de déclencher le paiement.**
-* **Un autre workflow pourrait utiliser une carte « And » pour s'assurer qu'un document est examiné par des membres d'équipe précis avant de passer à l'étape suivante.**
+## Comparer avec le prix du devis
 
-### Conclusion
+Utilisez ces cartes pour comparer un article avec les données de prix indiquées. Les choix visibles couvrent l'ID d'article, le type de fournisseur, l'ID d'article du fournisseur, le prix unitaire et l'unité de mesure. Le **Opérateur** et les espaces réservés aux données dépendent de la carte que vous sélectionnez.
 
-Les cartes « And » constituent un composant fondamental des systèmes de workflow qui exigent un contrôle précis de l'exécution des processus en fonction de plusieurs conditions. Elles garantissent que chaque étape d'un workflow ne se poursuit que lorsque tous les critères nécessaires sont pleinement remplis, automatisant ainsi des arbres de décision complexes au sein des processus métier.
+<figure><img src="../../../.gitbook/assets/prior-u042-fr.png" alt="Conditions sur les prix des devis."><figcaption><p>Conditions sur les prix des devis.</p></figcaption></figure>
 
-Comprendre et configurer correctement ces cartes est essentiel pour exploiter pleinement les capacités de votre système de gestion des workflows afin d'améliorer l'efficacité, la précision et la conformité au sein des processus organisationnels.
+## Responsable
+
+Utilisez **Responsable** lorsque la condition dépend de l'utilisateur ou du groupe affecté. Choisissez si vous souhaitez comparer avec un utilisateur ou un groupe ou avec un ensemble sélectionné. Voir [Responsable](assignee).
+
+<figure><img src="../../../.gitbook/assets/prior-u043-fr.png" alt="Conditions sur les affectations."><figcaption><p>Conditions sur les affectations.</p></figcaption></figure>
+
+[Cartes de comparaison de devis détaillées et comportement Any/All](../cards-overview/quote-comparison-guide.md).
+
+Certains libellés du produit restent en anglais ou comportent des traductions inexactes. Les tableaux désignent des tableaux de données ; les valeurs retournées ne sont pas des rendements financiers. Les identifiants techniques restent inchangés.

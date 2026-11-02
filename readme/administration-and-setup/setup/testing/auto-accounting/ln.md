@@ -1,11 +1,11 @@
 # LN
 
-Once you have validated and exported a document, sign in to INFOR. From the Home page of LN, navigate to Financials → Process Payables → Process Payables Workbench.
+Une fois que vous avez validé et exporté un document, connectez-vous à INFOR. Depuis la page d'accueil de LN, accédez à Finances → Traiter les fournisseurs → Traiter les comptes fournisseurs.
 
 ![](https://lh7-us.googleusercontent.com/7fLK1plDBSQjBwad8yGVJMJQuVJoXcN2B-KtFKI-lnA7P7B1E7QV-RCsLWih57lcKKEJJlowolkLsSmXGEaOr7MLUWbrYrMmdMYUPzgIF0lRVoo\_vwrgxE081oFB04qfZ3mF5Z29vbTMIPi1I8PfQoM)
 
-Press the following icon to view the individual line items of the invoice.
+Appuyez sur l'icône suivante pour afficher les lignes de détail individuels de la facture.
 
 ![](https://lh7-us.googleusercontent.com/pbvFiudy0xpItlMyi2h047J3edFK7Vmz5zxJqk5q82XVwT42EHnCdscu-P0I-Yg4L9Fv7iA9dIipiJY5FlUMFxsXHNTftgodKWiXRRLeQoAcTfxkfySVWxqBzMvrJfx\_eFijHC-Mnz7laYSrr3utkSI)
 
-Here you can confirm the line items with what you exported using auto accounting.
+Ici, vous pouvez confirmer les lignes de détail avec ce que vous avez exporté à l'aide de la comptabilité automatique.

@@ -18,7 +18,7 @@ Scripts d'exemple prêts pour la production pour les cas d'utilisation courants 
 - [Tâche pour Montant Élevé](task-high-amount.md) — Créer une tâche d'approbation pour les factures importantes
 - [Champs Obligatoires Dynamiques](dynamic-required-fields.md) — Ajuster les champs obligatoires selon la devise
 
-### Fulltext & Vector Search
+### Recherche plein texte et vectorielle
 - [Détection de Factures en Double](duplicate-invoice-detection.md) — Trouver des doublons de factures par recherche fulltext
 - [Détection de Documents Similaires](similar-document-detection.md) — Signaler des documents similaires par recherche vectorielle
 - [Recherche de Texte de Conformité](compliance-text-search.md) — Rechercher des mots-clés de conformité (ex. Reverse Charge)

@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.388
+Thailand E-Tax Invoice est la famille
+configurée. Le libellé ne précise pas de
+
+formats_02
+00:00:05.388 --> 00:00:10.724
+version. Confirmez la structure XML source
+; la vérification des signatures et la
+
+formats_03
+00:00:10.724 --> 00:00:15.533
+transmission à la plateforme fiscale
+nécessitent des contrôles distincts.
+
+workflow_01
+00:00:16.283 --> 00:00:22.053
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:22.053 --> 00:00:27.963
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:27.963 --> 00:00:29.033
+l’active pas.
+
+accept_01
+00:00:29.783 --> 00:00:34.764
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:34.764 --> 00:00:40.441
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:40.441 --> 00:00:43.633
+la validation fiscale ni la transmission
+réseau.
+

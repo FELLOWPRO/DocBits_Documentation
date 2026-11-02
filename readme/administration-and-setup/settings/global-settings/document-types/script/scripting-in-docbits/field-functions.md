@@ -54,7 +54,7 @@ set_field_value(document_data, field_name, value, remove_link=False)
 | `document_data` | `dict` | El objeto de contexto `document_data` |
 | `field_name` | `str` | Nombre del campo |
 | `value` | `any` | Nuevo valor |
-| `remove_link` | `bool` | Si es `True`: elimina coords, confidence, rule, etc. |
+| `remove_link` | `bool` | Si es `True`: eliminar coordenadas, confianza, regla, etc. |
 
 **Retorna:** `True` si el valor cambio, `False` si es identico
 

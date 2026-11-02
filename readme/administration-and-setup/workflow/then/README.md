@@ -1,71 +1,73 @@
-# Then: elige una tarjeta de acción
+# Entonces
 
-Una tarjeta **Then** le indica al flujo de trabajo qué hacer después de su disparador **When** y de cualquier condición **And**. En el **Constructor de flujo de trabajo**, selecciona **Añadir tarjeta** bajo **Entonces...**. Elige una categoría a la izquierda o escribe un nombre en **Buscar tarjeta**. Selecciona una vista previa de tarjeta para añadirla, rellena los campos que muestra la tarjeta y guarda el flujo de trabajo. Desplázate dentro del selector para ver más tarjetas. Selecciona **×** para cerrarlo sin añadir ninguna tarjeta. Consulta [Flujo de trabajo](../README.md) para ver la secuencia completa.
+Una tarjeta **Entonces** le indica a un flujo de trabajo qué hacer después de su activador **Cuando** y cualquier condición **Y**. En **Generador de flujo de trabajo**, seleccione **Añadir tarjeta** en **Entonces...**. Elija una categoría a la izquierda o escriba un nombre en **Buscar tarjeta**. Seleccione una vista previa de la tarjeta para agregarla, complete los campos que se muestran en la tarjeta y guarde el flujo de trabajo. Desplázate dentro del selector para ver más tarjetas. Seleccione **×** para cerrarlo sin agregar una tarjeta. Consulte [Flujo de trabajo](..) para ver la secuencia completa.
 
-Las vistas previas siguientes muestran acciones disponibles, no configuraciones completadas. Elige la acción que corresponda al resultado que buscas.
+Las vistas previas a continuación muestran las acciones disponibles, no las configuraciones completadas. Elija la acción que coincida con el resultado que desea.
 
-## Campo del documento
+## Campo de documento
 
-Establece o invierte una casilla de verificación, escribe texto en un campo o copia el contenido de un campo a otro. Elige los nombres de campo y el valor que solicita la tarjeta. Consulta [Campo del documento](document-field/README.md).
+Configure o invierta una casilla de verificación, coloque texto en un campo o copie un campo en otro. Elija los nombres de los campos y el valor solicitado por la tarjeta. Consulte [Campo de documento](document-field).
 
-<figure><img src="../../../.gitbook/assets/then-category-document-field-es.png" alt="Selector de tarjetas Then en español con Campo del documento seleccionado; las vistas previas muestran acciones de casilla, texto y copia de campo."><figcaption>Cambia un campo o copia su contenido.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
 ## Documento
 
-Elige **Aprobar el documento** o **Rechazar el documento** cuando el flujo de trabajo deba tomar esa decisión. Usa primero una condición **And** si la aprobación debe depender de una comprobación. Consulta [Documento](document/README.md).
+Elija **Aprobar el documento** o **Rechazar el documento** cuando el flujo de trabajo deba tomar esa decisión. Utilice primero una condición **Y** si la aprobación depende de una verificación. Consulte el [Documento](document).
 
-<figure><img src="../../../.gitbook/assets/then-category-document-es.png" alt="Selector de tarjetas Then en español con Documento seleccionado; se ven las vistas previas Aprobar el documento y Rechazar el documento."><figcaption>Aprueba o rechaza el documento actual.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
 ## Lógica
 
-Usa estas tarjetas para convertir valores entre formatos de número, texto y booleano, o para leer un valor de JSON. Elige los campos de entrada y salida en la tarjeta seleccionada.
+Utilice estas tarjetas para convertir valores entre formatos numéricos, de texto y booleanos, o leer un valor de JSON. Elija los campos de entrada y salida en la tarjeta seleccionada.
 
-<figure><img src="../../../.gitbook/assets/then-category-logic-es.png" alt="Selector de tarjetas Then en español con Lógica seleccionado; las vistas previas visibles convierten tipos de datos y leen valores de JSON."><figcaption>Transforma valores para un paso posterior del flujo de trabajo.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ## Estado
 
-Elige **Cambiar estado** para mover el documento a un estado seleccionado. La tarjeta también puede desencadenar otro flujo de trabajo. Consulta [Estado](status/README.md).
+Elija **Cambiar estado** para mover el documento a un estado seleccionado. La tarjeta también puede desencadenar otro flujo de trabajo. Consulte [Estado](status).
 
-<figure><img src="../../../.gitbook/assets/then-category-status-es.png" alt="Selector de tarjetas Then en español con Estado seleccionado; la vista previa Cambiar estado incluye un campo de estado y un disparador de flujo de trabajo opcional."><figcaption>Mueve el documento a otro estado.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
 ## Indicaciones y guiones
 
-Elige esta categoría para ejecutar un guion de indicación de DocOperator. Selecciona el guion y las variables que solicita la tarjeta. La tarjeta también ofrece ajustes de ejecución como reintentos.
+Elija esta categoría para ejecutar un script de solicitud de DocOperator. Seleccione el script y las variables que solicita la tarjeta. La tarjeta también ofrece configuraciones de ejecución, como reintentos.
 
-<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-es.png" alt="Selector de tarjetas Then en español con Indicaciones y guiones seleccionado; se ve una vista previa de guion de indicación de DocOperator."><figcaption>Ejecuta un guion de indicación de DocOperator configurado.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
 ## Exportar
 
-Inicia una exportación, exporta con una configuración elegida o pone en cola una exportación final. Elige la configuración de exportación y la opción de tarea pendiente que muestra tu tarjeta. Consulta [Exportar](export/README.md).
+Inicie una exportación, exporte con una configuración elegida o ponga en cola una exportación final. Elija la configuración de exportación y la opción de tarea pendiente que se muestran en su tarjeta. Consulte [Exportar](export).
 
-<figure><img src="../../../.gitbook/assets/then-category-export-es.png" alt="Selector de tarjetas Then en español con Exportar seleccionado; las vistas previas muestran exportaciones inicial, configurada, en cola y alternativa."><figcaption>Elige cuándo y cómo se exporta el documento.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
 ## Tarea
 
-Crea una tarea o notificación y asígnala a un usuario o grupo. Introduce el título, la descripción, la prioridad y los ajustes de notificación que solicita la tarjeta. Algunas tarjetas asignan de forma secuencial. Consulta [Tarea](task/README.md).
+Cree una tarea o notificación y asígnela a un usuario o grupo. Ingrese la configuración de título, descripción, prioridad y notificación solicitada por la tarjeta. Algunas tarjetas se asignan secuencialmente. Consulte [Tarea](task).
 
-<figure><img src="../../../.gitbook/assets/then-category-task-es.png" alt="Selector de tarjetas Then en español con Tarea seleccionado; las vistas previas visibles crean o asignan tareas y notificaciones."><figcaption>Crea trabajo de seguimiento para una persona o grupo.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
 ## Correo electrónico
 
-Envía un correo electrónico con una plantilla seleccionada, ya sea a destinatarios o a grupos. Elige la plantilla y el destino en la tarjeta.
+Envíe un correo electrónico utilizando una plantilla seleccionada, ya sea a destinatarios o a grupos. Elija la plantilla y el destino en la tarjeta.
 
-<figure><img src="../../../.gitbook/assets/then-category-email-es.png" alt="Selector de tarjetas Then en español con Correo electrónico seleccionado; las vistas previas envían un correo con plantilla a destinatarios o grupos."><figcaption>Envía un correo electrónico con plantilla.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
 
-## Cuadro
+## Tabla
 
-Cambia entradas o calcula valores en un cuadro del documento. Selecciona el cuadro, las columnas, el operador y la columna de resultado que solicita la tarjeta. Consulta [Cuadro](table/README.md).
+Cambie entradas o calcule valores en una tabla de documentos. Seleccione la tabla, columnas, operador y columna de resultados solicitada por la tarjeta. Consulte la [Tabla](table).
 
-<figure><img src="../../../.gitbook/assets/then-category-table-es.png" alt="Selector de tarjetas Then en español con Cuadro seleccionado; las vistas previas cambian entradas y calculan columnas de resultado."><figcaption>Actualiza o calcula datos del cuadro.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
-## Asignado a
+## Responsable
 
-Asigna el documento a un usuario, grupo, destinatario o suborganización. Algunas tarjetas usan un campo o una tabla de decisiones y ofrecen una alternativa. Elige el destino y la alternativa correctos en la tarjeta seleccionada. Consulta [Asignado a](assignee/README.md).
+Asigne el documento a un usuario, grupo, destinatario o suborganización. Algunas tarjetas utilizan un campo o una tabla de decisiones y ofrecen un recurso alternativo. Configure el destino correcto y el comportamiento alternativo en la tarjeta seleccionada. Consulte [Responsable](assignee).
 
-<figure><img src="../../../.gitbook/assets/then-category-assignee-es.png" alt="Selector de tarjetas Then en español con Asignado a seleccionado; las vistas previas visibles asignan un usuario, destinatario, grupo o contacto de proveedor."><figcaption>Envía el documento a la siguiente persona o grupo responsable.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas. Algunas etiquetas de esta versión de la tarjeta todavía tienen una traducción incompleta o incorrecta en la interfaz. Las explicaciones de esta página utilizan los términos correctos.</p></figcaption></figure>
 
-## Action
+## Acción
 
-Ejecuta otro flujo de trabajo, envía una petición HTTPS, llama a una API o usa la tarjeta de cálculo de aumento de costes. Estas acciones pueden afectar a otros sistemas; pregunta a tu administrador qué endpoint y ajustes usar. Consulta [Action](action/README.md).
+Ejecute otro flujo de trabajo, envíe una solicitud HTTPS, llame a una API o utilice la tarjeta de cálculo de aumento de costos. Estas acciones pueden afectar a otros sistemas; pregúntele a su administrador qué punto final y configuración usar. Consulte [Acción](action).
 
-<figure><img src="../../../.gitbook/assets/then-category-action-es.png" alt="Selector de tarjetas Then en español con Action seleccionado; las vistas previas muestran Ejecutar flujo de trabajo, petición HTTPS, llamada a API y cálculo de aumento de costes."><figcaption>Inicia otro flujo de trabajo o una acción de integración.</figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-es.png" alt="Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas."><figcaption><p>Tarjetas disponibles en la categoría seleccionada. Configure los campos antes de utilizarlas.</p></figcaption></figure>
+
+[Campos detallados de tarjetas lógicas, rutas JSON, activadores y pruebas](../cards-overview/logic-cards-guide.md).

@@ -1,3 +1,3 @@
 # LN
 
-A guide to importing master data from INFOR LN.
+Una guía para importar datos maestros desde INFOR LN.

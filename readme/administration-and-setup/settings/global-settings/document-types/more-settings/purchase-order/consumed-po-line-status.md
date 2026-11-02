@@ -1,36 +1,32 @@
 # Estado de la línea de pedido consumida
 
-**El Estado de la línea de pedido consumida** colorea las líneas de pedido de compra (PO) en la vista de coincidencia según la cantidad de cada línea que ya se ha emparejado. Actívelo para el tipo de documento que usa en sus facturas si su equipo necesita distinguir rápidamente las líneas de PO sin usar, parcialmente usadas y completamente usadas. El color es solo una ayuda visual; compruebe la **Cantidad coincidente** y la columna de cantidad de PO seleccionada antes de decidir si una línea puede volver a emparejarse.
+**Estado de la línea de pedido consumida** colorea las líneas de la orden de compra en la vista de coincidencia según la cantidad de cada línea que ya se ha casado. Actívelo para el tipo de documento de factura si su equipo necesita detectar rápidamente las líneas de OC sin usar, parcialmente usadas y totalmente usadas. El color es una ayuda visual; compruebe la **Cantidad igualada** y la columna de cantidad de OC seleccionada antes de decidir si una línea puede volver a casarse.
 
 ## Activar la configuración
 
-1. Abra **Ajustes → Tipos de documento**. Busque el tipo de documento que usa para sus facturas y seleccione el engranaje de su tarjeta para abrir **Más ajustes**. La captura muestra la tarjeta **Factura**. Deje sin cambios los interruptores **Activar** y **Extraction**.
+1. Abra **Configuración → Tipos de documento**. Localice el tipo de documento utilizado para sus facturas y seleccione el engranaje de su tarjeta para abrir **Más ajustes**. La captura muestra la tarjeta **Factura**. Deje los interruptores **Activar** y **Extracción** como están.
 
-   <figure><img src="../../../../../../.gitbook/assets/1-consumed-po-line-document-types-es.png" alt="Página Tipos de documento con la tarjeta Factura y su engranaje de Más ajustes"><figcaption><p>Abra Más ajustes desde la tarjeta Factura.</p></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/prior-u044-es.png" alt="Acceso a los ajustes adicionales del tipo de documento Factura."><figcaption><p>Acceso a los ajustes adicionales del tipo de documento Factura.</p></figcaption></figure>
 
-2. Despliegue **Orden de compra** si está contraído. Busque **Estado de la línea de pedido consumida** y active su interruptor. Es un ajuste independiente de **Actualizar el estado de la orden de compra del documento**, más abajo en la misma sección.
+2. Expanda **Número de pedido** si está contraído. Localice **Estado de la línea de pedido consumida** y active su interruptor. Es una configuración independiente de **Actualizar el estado de la orden de compra del documento**, que se encuentra más abajo en la misma sección.
 
-   <figure><img src="../../../../../../.gitbook/assets/2-consumed-po-line-settings-es.png" alt="Sección Orden de compra de Más ajustes con el interruptor Estado de la línea de pedido consumida visible"><figcaption><p>Seleccione el interruptor Estado de la línea de pedido consumida.</p></figcaption></figure>
+   <figure><img src="../../../../../../.gitbook/assets/prior-u045-es.png" alt="Configuración del estado de las líneas de pedido consumidas."><figcaption><p>Configuración del estado de las líneas de pedido consumidas.</p></figcaption></figure>
 
-   <figure><img src="../../../../../../.gitbook/assets/3-consumed-po-line-toggle-es.png" alt="Vista cercana de la etiqueta Estado de la línea de pedido consumida y su interruptor"><figcaption><p>En este ejemplo el interruptor está apagado; actívelo para ver los colores de coincidencia.</p></figcaption></figure>
 
-3. Abra una factura con coincidencia de órdenes de compra y revise sus líneas de PO. Los ejemplos de abajo muestran cómo se relacionan los colores de las líneas con el estado de coincidencia. Para los pasos de coincidencia, consulte [Pantalla de Coincidencia de Órdenes de Compra](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md).
 
-## Leer los colores de las líneas de PO
+3. Abra una factura con coincidencia de orden de compra e inspeccione sus líneas de OC. Los ejemplos siguientes muestran cómo se relacionan los colores de las líneas con el estado de coincidencia. Para conocer los pasos de la coincidencia, consulte [Coincidencia de órdenes de compra](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md).
 
-| Apariencia | Significado | Qué comprobar |
+## Interpretar los colores de las líneas de OC
+
+| Aspecto | Significado | Qué comprobar |
 | --- | --- | --- |
-| Sin color o blanca | Aún no se ha emparejado ninguna cantidad de esta línea de PO. | Compruebe la cantidad de la PO y la línea de la factura antes de emparejar. |
-| Tinte azul | Ha seleccionado la línea en la vista de coincidencia actual. | La selección es temporal; no significa que la línea esté completamente emparejada. |
-| Naranja pálido | Se ha emparejado parte de la cantidad, pero la cantidad coincidente es inferior a la cantidad de PO seleccionada. | Compruebe qué cantidad queda disponible. |
-| Violeta pálido | La cantidad coincidente alcanza al menos la cantidad de PO seleccionada. | No dé por hecho que queda más cantidad disponible. |
+| Liso o blanco | Todavía no se ha casado ninguna cantidad de esta línea de OC. | Compruebe la cantidad de la OC y la línea de la factura antes de casar. |
+| Tinte azul | Ha seleccionado la línea en la vista de coincidencia actual. | La selección es temporal; no significa que la línea esté totalmente casada. |
+| Naranja pálido | Se ha casado parte de la cantidad, pero la cantidad casada es inferior a la cantidad de OC seleccionada. | Compruebe cuánta cantidad queda. |
+| Violeta pálido | La cantidad casada es igual o superior a la cantidad de OC seleccionada. | No dé por hecho que hay más cantidad disponible. |
 
-<figure><img src="../../../../../../.gitbook/assets/image (470).png" alt="Línea de PO con cantidad coincidente cero y sin color de estado"><figcaption><p>Aún no se ha emparejado ninguna cantidad.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (472).png" alt="Línea de PO con tinte azul de selección en la vista de coincidencia"><figcaption><p>La línea está seleccionada para la coincidencia actual.</p></figcaption></figure>
+Una línea tachada tiene un significado distinto: su estado de OC puede estar excluido por los [estados de desactivación de OC](purchase-order-disable-statuses.md). Compruebe esa configuración si no se puede seleccionar una línea.
 
-<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="Línea de PO con fondo naranja pálido y cantidad coincidente inferior a la cantidad de la PO"><figcaption><p>La línea está parcialmente usada.</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (473).png" alt="Línea de PO con fondo violeta pálido y cantidad coincidente igual a la cantidad de la PO"><figcaption><p>La línea está completamente usada.</p></figcaption></figure>
-
-Una línea tachada tiene otro significado: su estado de PO puede estar excluido por [PO desactivar estados](purchase-order-disable-statuses.md). Revise ese ajuste si una línea no se puede seleccionar.
+La siguiente leyenda describe los estados de coincidencia sin depender de las capturas de versiones anteriores. Compruebe siempre la cantidad ya asignada antes de reutilizar una posición.

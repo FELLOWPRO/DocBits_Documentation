@@ -1,95 +1,34 @@
 # Configuring Field Properties
 
-## Detailed instructions on setting properties such as Required, Read Only, Hidden, and OCR.
+Use **Settings → Document Types → Fields** to control how fields behave for a document type. Select the document type first; the example below shows **Invoice** in the English interface.
 
-### Required:
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-overview-en.png" alt="English Invoice field settings with recognition thresholds, search, field property columns, and Save Settings"><figcaption>Invoice field settings in a DocBits sandbox organization.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+## Find a field and change its properties
 
-If a field is marked as Required, it means that this field must be filled in before the document can be saved or processed.
+1. In **Search by Name**, enter the field name or label. This filters the list; it does not change the field.
+2. Find the field row. For example, **Invoice number** has the technical name `invoice_id`.
+3. Adjust the controls in that row, then select **Save Settings**. The same save button is available above and below the table.
 
-**To set this property:**
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-filtered-en.png" alt="English Invoice number field showing Required, Read Only, Hidden, Force Validation, Use AI, OCR and Match Score controls"><figcaption>The Invoice number row after searching for `invoice_id`.</figcaption></figure>
 
-* Navigate to the field's settings in your DocBits system.
-* Enable the Required option for the relevant field.
+| Control | What to use it for |
+| --- | --- |
+| **Required** | Mark information that must be present for validation. Check the document's validation result after changing this setting. |
+| **Read Only** | Show a field without allowing users to edit its value. |
+| **Hidden** | Keep the field out of the normal document view. |
+| **Force Validation** | Require the field to pass validation. Configure detailed rules separately; this checkbox is not a rule editor. |
+| **Use AI** | Request or stop AI extraction for this field. The row displays whether extraction is requested. |
+| **OCR** | Enter the field's OCR confidence threshold. This is a number, not an on/off switch or a language setting. |
+| **Match Score** | Enter the field's matching threshold. This is a number, not an on/off switch. |
 
-**Impact:**
+The **OCR** and **Match Score** sliders under **Recognition Settings** apply values across the field list. The checkboxes directly below the column titles apply **Required**, **Read Only**, **Hidden**, or **Force Validation** across the list. Review the affected rows before selecting **Save Settings**. **Restore Defaults** resets the field configuration; use it only when you intend to replace your changes.
 
-* This setting ensures that important information is captured and that no documents can be processed without the required data.
+## Other controls in this view
 
-### Read Only:
+- **Create new group** and **Create field** add a group or a field. See [Adding and Editing Fields](adding-and-editing-fields.md).
+- **Master Data Settings** opens the [master data configuration](master-data-settings.md).
+- The leftmost checkboxes select fields. The adjacent menu offers **Reassign Field Group** for selected fields.
+- The **Formula** plus button opens the formula editor for that field. The **info** icon shows field information. The delete icon is unavailable for standard fields.
 
-<figure><img src="../../../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
-
-If a field is marked as Read Only, it means that users can view the contents of this field, but cannot make any changes to it.
-
-**To set this property:**
-
-* Go to the Field Options. Enable the Read Only option for the desired field.
-
-**Impact:**
-
-* This setting can be useful to protect sensitive information or to ensure that important data is not accidentally changed.
-
-### Hidden:
-
-<figure><img src="../../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
-
-If a field is marked as "Hidden", it means that the field will be hidden in the user interface and users will not be able to see or access it.
-
-**To set this property:**
-
-* Go to the field options.
-* Enable the "Hidden" option for the corresponding field.
-
-**Impact:**
-
-* This setting is often used to hide internal or technical fields that are irrelevant to the end user or are only needed for internal processing.
-
-### OCR (Optical Character Recognition):
-
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
-
-If a field is configured for OCR, it means that the system will try to extract the text from the document and insert it into this field. This setting is usually used for fields that are intended to be auto-filled.
-
-**To set this up:**
-
-* Enable the OCR option for the corresponding field.
-* If necessary, configure the OCR parameters such as language, font, etc.
-
-**Impact:**
-
-* Using OCR allows documents to be processed automatically by extracting information from texts and entering it into the appropriate fields, reducing manual effort and increasing efficiency.
-
-### Forced validation:
-
-<figure><img src="../../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
-
-Configure the validation rules accordingly, such as numeric limits, regular expressions, or relationships with other fields.
-
-**To set this up:**
-
-* Save the changes.
-
-**Impact:**
-
-* Forced validation checks the entered data against the specified criteria to ensure it is valid. This helps to detect errors early and improve data quality.
-
-### Match Score:
-
-<figure><img src="../../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
-
-By comparing input data with reference data, the Match Score can help confirm the accuracy and validity of the data. If the Match Score exceeds a certain threshold, the match is considered successful.
-
-**To set this up:**
-
-* Enable the Match Score option and set the desired threshold.
-* Save the changes.
-
-**Impact:**
-
-* The Match Score is used to evaluate the accuracy of matches between input data and reference values. If the score obtained exceeds the set threshold, the match is considered successful. This is especially useful for fields that require data validation or data matching, such as fields with a name, email address, or e-mail address. B. when checking customer data.
-
-<figure><img src="../../../../../.gitbook/assets/image (117).png" alt="" width="258"><figcaption></figcaption></figure>
-
-By carefully configuring these field properties, you can optimize document processing workflows and ensure that your data is correctly captured, protected, and processed efficiently.
+For more on validation and matching, see [Setting Validation and Match Score](setting-validation-and-match-score.md).

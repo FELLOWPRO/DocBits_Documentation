@@ -1,0 +1,38 @@
+{
+  "commit": "5529b703a9cbe6cb5657c1e973f83b4237a2e2ce",
+  "import_state": "success",
+  "overview": "https://docs.docbits.com/chinese/~/revisions/Swbrj9zYmwxJHh1QJHBP/guan-li-yu-she-zhi/settings/global-settings/document-types/edi/supported-electronic-documents?review=5529b703a9cb",
+  "linked_country_guides": 40,
+  "attachments": [
+    {
+      "preview": "https://docs.docbits.com/chinese/~/revisions/Swbrj9zYmwxJHh1QJHBP/guan-li-yu-she-zhi/settings/global-settings/document-types/edi/credit-note-recognized-as-invoice?review=5529b703a9cb",
+      "url": "https://1870485400-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlPczlNw8zzYNLfjfispX%2Fuploads%2Fgit-blob-9651aaddc1fdf5cf4172c8f7482d3dd8fefc8e74%2Fedocs-credit-note-zh-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 3585923,
+      "sha256": "6da9c7ec9aa50706adc20b417850ae73af50d0f8817b4419829865f42ef24790",
+      "range206": true,
+      "content_range": "bytes 0-1023/3585923"
+    },
+    {
+      "preview": "https://docs.docbits.com/chinese/~/revisions/Swbrj9zYmwxJHh1QJHBP/guan-li-yu-she-zhi/settings/global-settings/document-types/edi/supported-electronic-documents/germany?review=5529b703a9cb",
+      "url": "https://1870485400-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlPczlNw8zzYNLfjfispX%2Fuploads%2Fgit-blob-626e716cb7ed582ba41a371ce7d020f58b071295%2Fedocs-support-germany-zh-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 2304360,
+      "sha256": "e2e9dcd8a682ea1676d77082a5dd4ab90b4584e7a61b6ca0edf304dabcb4446c",
+      "range206": true,
+      "content_range": "bytes 0-1023/2304360"
+    },
+    {
+      "preview": "https://docs.docbits.com/chinese/~/revisions/Swbrj9zYmwxJHh1QJHBP/guan-li-yu-she-zhi/settings/global-settings/document-types/edi/supported-electronic-documents/costa-rica?review=5529b703a9cb",
+      "url": "https://1870485400-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlPczlNw8zzYNLfjfispX%2Fuploads%2Fgit-blob-dc5e57cd6f78543ff853c9d875738aef95dea7db%2Fedocs-support-costa-rica-zh-v2.mp4?alt=media",
+      "status": 200,
+      "mime": "video/mp4",
+      "bytes": 894216,
+      "sha256": "a1a5352755e79b317a2e5af8c7095744f7a6c01df56400f7b77c9c16f3ccd6bf",
+      "range206": true,
+      "content_range": "bytes 0-1023/894216"
+    }
+  ]
+}

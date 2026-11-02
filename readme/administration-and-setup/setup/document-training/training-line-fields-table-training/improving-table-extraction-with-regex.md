@@ -15,15 +15,15 @@ Documents like invoices or order confirmations often contain table entries where
 
 Take this German invoice example — the “Bezeichnung” (description) column spans multiple rows:
 
-![multi-line description](https://lh7-us.googleusercontent.com/Vino2M4Esor3IRHGqBd5Brx7_lKPIwEOlRYBHzMXw4WoacFNW39hbWuwoUNGocubx4Bh9_BvUBqZSWA4U_NmU8FBw4Q1_AiTASgMx-2MLKvsHLJY057oqyks0fQ5b7mI577JTX5rBKdEG90O9F5TcoU)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-multiline-doc-en-20261006.png" alt="German invoice table where the Bezeichnung (description) of each item spans several lines."><figcaption><p>A description column that spans several rows.</p></figcaption></figure>
 
 Initially, DocBits extracts each row separately:
 
-![initial extraction](https://lh7-us.googleusercontent.com/UX5OdkW59HPVROnNzSeZbDw4NYTPbfayDLIXBQi0pwHzUEJ1B5t7I9uKBNc0dmOB3Cile8Xv6AdgVXuUd0aMbQFGWagBCEetw8P-N4zgG_cGTjWHhpDtGQZg27UZKdCDJ5FeEDJgFAYtTB8kZrMSdho)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-en-20261006.png" alt="Extracted table where every text line of the description became its own row."><figcaption><p>DocBits first extracts each row separately.</p></figcaption></figure>
 
 You can then **group rows based on a column**, such as “Position.” This merges related lines into a single, structured entry:
 
-![grouped result](https://lh7-us.googleusercontent.com/PxA6h2udUuYd1YmHV97t-bzfZzipFpdA5t8gjpGXWx9sA-I4tW3tYwD28icv88UEmitz0EAaWuGkU5ZwqAjcQnoOkmg9u1AcBJW3nITU6eFa0foHB-AQPb0qv0AWaaEwM6WvwaEcAODEUzKtvRZOMN0)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-en-20261006.png" alt="Extracted table with the description lines merged into one entry per position."><figcaption><p>After grouping by Position the related lines form one entry.</p></figcaption></figure>
 
 ### 2. Manual Row Selection
 
@@ -31,20 +31,20 @@ In some cases, the text on a document is spread across several columns in a sing
 
 Here’s an example where the “PRAEF” line overlaps **Bezeichnung**, **Menge**, **ME**, and **Preis in EUR**:
 
-![row misalignment](https://lh7-us.googleusercontent.com/LbVbmfdOBpeCWDftPvW0qjEHjbLmWYRrAGTZHVW8VEHQTEvl5GoqH2wkFE5iUOySmF50b1V8CDAZhfMzPTeMQscmc61SDKaqSCW-y0Z7fjlwOjhtjxWD44oCsgHmwrgrBD4cuEGgn9JY_UX3t9jRlPs)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-en-20261006.png" alt="Invoice table with a PRAEF line whose text runs across several columns."><figcaption><p>A PRAEF line that does not align with the column structure.</p></figcaption></figure>
 
 #### 🔧 How to Manually Assign Values:
 
 1.  **Enable Training Mode**
 
-    ![training mode toggle](https://lh7-us.googleusercontent.com/4D8iCXk0p_Mur8bX_11ne_2iA-GOxoFi2OQWlSEvrH1auoE0ksnYXpZx3Pw3PUJJRZJN85dnQlSSBB369FfafXAy8adjFZcnepQnODSaaIj69cxtUKFAXPgn5eyPE6jbJuzStJALMgumlt49Z1Pv3FY)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-en-20261006.png" alt="Table extraction screen with Training Mode switched on."><figcaption><p>Training Mode enabled.</p></figcaption></figure>
 2.  **Activate Row Edit Mode**
 
-    ![row edit mode](https://lh7-us.googleusercontent.com/8YQmo_WRuKKVjk1a_eoxSBiQr0GncuS4BmCA0aI9aOlrbsIvdj8dZlurxxBHp2lH4ozT4HPWw9qYDW7xLQ7u2DSyU8DrNzSBC7LjzKLTDJ2tudY9a_DENDoK5Aya6L1hcf1WF1RD92S_DzhGVV4Gh6Q)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-en-20261006.png" alt="Table extraction screen with the Row data edit mode toggle switched on and its tooltip shown."><figcaption><p>Row edit mode activated.</p></figcaption></figure>
 3.  **Select and Map Text**\
     Click the correct piece of text and assign it to a **blue** column header.
 
-    ![editable columns](https://lh7-us.googleusercontent.com/i2tlbwl9qFE0clthaoRPe7kcPRiURCvemuLEjBK4uAnfsR4auXbftMfEY1ZW5WXwezTBVSG5hbNRkddwIeLtrgJUvZoeKGdPKN8f75O_dPdIWkm4EFALfAj-evDUI3UKrgNOTNjF37C1bBLtE95OA1w)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-en-20261006.png" alt="Extracted table in row edit mode with the blue, not yet filled column headers that can be assigned manually."><figcaption><p>Blue column headers can be filled manually.</p></figcaption></figure>
 
 > Note: Violet-colored columns are already system-mapped and cannot be manually edited.
 
@@ -57,7 +57,7 @@ To map or remap a column:
 1. Click the column header in the extraction view.
 2. Choose the correct target column from the dropdown.
 
-![mapping dropdown](https://lh7-us.googleusercontent.com/X_65pCWrI4HMFr_aiA0eoSDp-yIYy49lULzAZaiIgnr0aIowlLSed21MuehkGLs4UIdQousdfhiZi5pnQtpZ0uUn6dxlzii7WPQvov-kN1_Jimsi6U6zowOLxjBzZzZ47kaRhduAVBd_Ya9QQtXTpJ4)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-en-20261006.png" alt="Extracted table with the column header dropdown open listing the target columns Description, Item Number, Net amount, Position, Quantity, Total amount, Unit and Unit price."><figcaption><p>Choose the target column in the header dropdown.</p></figcaption></figure>
 
 You can adjust the mapping as often as needed.
 

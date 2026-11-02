@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.11, pytest-8.4.2, pluggy-1.6.0
+rootdir: /edocs-tests
+plugins: platformdirs-4.12.3
+collected 4 items
+
+../edocs-tests/test_edocs_manifest_contract.py ....                      [100%]
+
+============================== 4 passed in 0.11s ===============================

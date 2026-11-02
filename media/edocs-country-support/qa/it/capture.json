@@ -1,0 +1,322 @@
+[
+  {
+    "country": "austria",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "EBINTERFACE 6.1",
+    "rows": 3,
+    "filename": "edocs-support-austria-it.png"
+  },
+  {
+    "country": "denmark",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "OIOUBL 2.1",
+    "rows": 3,
+    "filename": "edocs-support-denmark-it.png"
+  },
+  {
+    "country": "finland",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "FINVOICE 3.0",
+    "rows": 3,
+    "filename": "edocs-support-finland-it.png"
+  },
+  {
+    "country": "france",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "FACTURX 1.09 - ZUGFERD 2.5",
+    "rows": 3,
+    "filename": "edocs-support-france-it.png"
+  },
+  {
+    "country": "germany",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "XRECHNUNG 3.0 CII",
+    "rows": 3,
+    "filename": "edocs-support-germany-it.png"
+  },
+  {
+    "country": "italy",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "FATTURAPA",
+    "rows": 3,
+    "filename": "edocs-support-italy-it.png"
+  },
+  {
+    "country": "netherlands",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "SI-UBL 2.0",
+    "rows": 3,
+    "filename": "edocs-support-netherlands-it.png"
+  },
+  {
+    "country": "norway",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "EHF INVOICE 3.0",
+    "rows": 3,
+    "filename": "edocs-support-norway-it.png"
+  },
+  {
+    "country": "poland",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "KSEF FA3",
+    "rows": 3,
+    "filename": "edocs-support-poland-it.png"
+  },
+  {
+    "country": "slovenia",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "E-SLOG 2.0",
+    "rows": 3,
+    "filename": "edocs-support-slovenia-it.png"
+  },
+  {
+    "country": "spain",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "FACTURAE 3.2.2",
+    "rows": 3,
+    "filename": "edocs-support-spain-it.png"
+  },
+  {
+    "country": "sweden",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "SVEFAKTURA 1.0",
+    "rows": 3,
+    "filename": "edocs-support-sweden-it.png"
+  },
+  {
+    "country": "australia",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "PINT A-NZ",
+    "rows": 3,
+    "filename": "edocs-support-australia-it.png"
+  },
+  {
+    "country": "new-zealand",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "PINT A-NZ",
+    "rows": 3,
+    "filename": "edocs-support-new-zealand-it.png"
+  },
+  {
+    "country": "india",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "INDIA GST E-INVOICE",
+    "rows": 3,
+    "filename": "edocs-support-india-it.png"
+  },
+  {
+    "country": "indonesia",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "INDONESIA E-FAKTUR",
+    "rows": 3,
+    "filename": "edocs-support-indonesia-it.png"
+  },
+  {
+    "country": "china",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "CHINA GENERAL VAT INVOICE",
+    "rows": 3,
+    "filename": "edocs-support-china-it.png"
+  },
+  {
+    "country": "japan",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "JP PINT",
+    "rows": 3,
+    "filename": "edocs-support-japan-it.png"
+  },
+  {
+    "country": "korea",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "KOREA E-TAX INVOICE",
+    "rows": 3,
+    "filename": "edocs-support-korea-it.png"
+  },
+  {
+    "country": "malaysia",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "MYINVOIS",
+    "rows": 3,
+    "filename": "edocs-support-malaysia-it.png"
+  },
+  {
+    "country": "philippines",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "PHILIPPINES EIS",
+    "rows": 3,
+    "filename": "edocs-support-philippines-it.png"
+  },
+  {
+    "country": "singapore",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "INVOICENOW",
+    "rows": 3,
+    "filename": "edocs-support-singapore-it.png"
+  },
+  {
+    "country": "taiwan",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "TAIWAN EGUI",
+    "rows": 3,
+    "filename": "edocs-support-taiwan-it.png"
+  },
+  {
+    "country": "thailand",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "THAILAND E-TAX INVOICE",
+    "rows": 3,
+    "filename": "edocs-support-thailand-it.png"
+  },
+  {
+    "country": "vietnam",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "VIETNAM E-INVOICE",
+    "rows": 3,
+    "filename": "edocs-support-vietnam-it.png"
+  },
+  {
+    "country": "argentina",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "ARGENTINA AFIP",
+    "rows": 3,
+    "filename": "edocs-support-argentina-it.png"
+  },
+  {
+    "country": "brazil",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "BRAZIL NFS-E",
+    "rows": 3,
+    "filename": "edocs-support-brazil-it.png"
+  },
+  {
+    "country": "chile",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "CHILE DTE FACTURA",
+    "rows": 3,
+    "filename": "edocs-support-chile-it.png"
+  },
+  {
+    "country": "colombia",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "COLOMBIA FACTURA ELECTRONICA",
+    "rows": 3,
+    "filename": "edocs-support-colombia-it.png"
+  },
+  {
+    "country": "costa-rica",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": null,
+    "rows": 0,
+    "filename": "edocs-support-costa-rica-it.png"
+  },
+  {
+    "country": "ecuador",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "ECUADOR SRI 2.1.0",
+    "rows": 3,
+    "filename": "edocs-support-ecuador-it.png"
+  },
+  {
+    "country": "mexico",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "MEXICO CFDI 4.0",
+    "rows": 3,
+    "filename": "edocs-support-mexico-it.png"
+  },
+  {
+    "country": "paraguay",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "PARAGUAY SIFEN 150",
+    "rows": 3,
+    "filename": "edocs-support-paraguay-it.png"
+  },
+  {
+    "country": "peru",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "PERU CPE UBL 2.1",
+    "rows": 3,
+    "filename": "edocs-support-peru-it.png"
+  },
+  {
+    "country": "uruguay",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "URUGUAY CFE 25",
+    "rows": 3,
+    "filename": "edocs-support-uruguay-it.png"
+  },
+  {
+    "country": "kazakhstan",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "KAZAKHSTAN ESF",
+    "rows": 3,
+    "filename": "edocs-support-kazakhstan-it.png"
+  },
+  {
+    "country": "saudi-arabia",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "ZATCA TAX INVOICE",
+    "rows": 3,
+    "filename": "edocs-support-saudi-arabia-it.png"
+  },
+  {
+    "country": "turkey",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "TURKEY E-FATURA",
+    "rows": 3,
+    "filename": "edocs-support-turkey-it.png"
+  },
+  {
+    "country": "united-arab-emirates",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "UAE VAT INVOICE",
+    "rows": 3,
+    "filename": "edocs-support-united-arab-emirates-it.png"
+  },
+  {
+    "country": "international",
+    "locale": "it",
+    "runtime_locale": "it",
+    "representative": "UBL 2.1",
+    "rows": 3,
+    "filename": "edocs-support-international-it.png"
+  }
+]

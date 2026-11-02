@@ -1,67 +1,22 @@
 # eSLOG 1.6 and 2.0
 
-## Supported eSLOG Invoice Versions
+**eSLOG 1.6** and **eSLOG 2.0** appear as separate electronic invoice formats in DocBits. Choose the version used by your incoming Slovenian invoice. The screenshots below show the current English Sandbox interface in a documentation test organization; they do not prove that an invoice of either version has been processed successfully.
 
-Currently, **eSLOG Invoice versions 1.6 and 2.0** are supported.
+## Find the configurations
 
-For official eSLOG documentation, you can refer to [this link](https://epos.si/en/eslog).
+1. Go to **Settings → Document Types → Invoice → E-Doc**.
+2. Expand **E-SLOG 1.6** or **E-SLOG 2.0**. Each format has its own three entries.
 
-Both eSLOG versions are enabled by default.
+<figure><img src="../../../../../.gitbook/assets/dbdc-142-eslog-16-en.png" alt="English Sandbox E-SLOG 1.6 format with Transformation, Preview and Extraction Paths rows"><figcaption>E-SLOG 1.6 in the Invoice E-Doc list.</figcaption></figure>
 
-## Steps to Modify eSLOG Configuration
+<figure><img src="../../../../../.gitbook/assets/dbdc-142-eslog-20-en.png" alt="English Sandbox E-SLOG 2.0 format with Transformation, Preview and Extraction Paths rows"><figcaption>E-SLOG 2.0 has separate configurations for the same three steps.</figcaption></figure>
 
-**Configure eSLOG:**
+| Entry | What it controls | Next guide |
+| --- | --- | --- |
+| **TRANSFORMATION (XSLT)** | Converts the format's source data into structured XML. | [Transformation](edi/edi-transformation-file-guide.md) |
+| **PREVIEW (XSLT)** | Defines the readable document view. | [Preview](edi/edi-preview-file-guide.md) |
+| **EXTRACTION PATHS (JSON)** | Maps XML values to DocBits fields and table columns. | [Extraction Paths](edi/edi-extraction-paths-file-guide.md) |
 
-* Navigate to **Settings → Global Settings → Document Types → Invoice**.
-*   Click on **E-Doc**.\\
+Click a row to see its versions and configuration. **Default** identifies the supplied entry. **Last Modified At** shows when that entry was last changed. The **New** button starts an additional configuration entry. The three-dot menu on a default row offers **Customize**, which creates an organization-specific copy, and **Delete**; review the selected row carefully before using Delete.
 
-    <figure><img src="../../../../../.gitbook/assets/zugferd_1.png" alt=""><figcaption></figcaption></figure>
-* A list of all available e-docs will appear.
-*   Locate the eSLOG version you want to modify.\\
-
-    <figure><img src="../../../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
-
-## **Transformation and XML Path Configuration:**
-
-In the **transformation settings**, you can define the path to locate specific information within the XML file and save it in a new structure, making it easier to access the data.\
-**Note:** If you use this functionality, you must use the newly created XML paths, not the original XML paths, in the **Preview** and **Extraction Path**.
-
-### **Steps to Modify Transformation File:**
-
-1. Open the **Transformation**.
-2. Create a new draft by clicking the **pencil icon**.
-3. Select the newly created draft.
-4. Either create a new field or modify an existing one.
-5. Set the desired path for data extraction.
-6. Click **Save**.
-
-## Preview PDF Configuration
-
-The **Preview PDF Configuration** is used to generate a user-readable version of the document. You can customize it with HTML to match your needs.
-
-### **Steps to Modify Preview File:**
-
-1. Open the **Preview**.
-2. Create a new draft by clicking the **pencil icon**.
-3. Select the newly created draft.
-4. Either create a new field or modify an existing one.
-5. Set the desired path for data extraction.
-6. Click **Save**.
-
-## Extraction Paths Configuration
-
-The **Extraction Paths Configuration** is used to extract data and populate fields in the **validation screen**, such as the invoice table or fields configured in the invoice layout.
-
-### **Steps to Modify** **Extraction Paths**:
-
-1. Open the **Extraction Paths**.
-2. Create a new draft by clicking the **pencil icon**.
-3. Select the newly created draft.
-4. Create a new field or modify an existing one.
-5.  The left side represents the **DocBits field ID**, which can be found in the **Settings → Global Settings → Document Types → Invoice → Fields**.\\
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_3.png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_4.png" alt=""><figcaption></figcaption></figure>
-6. The right side represents the **path to the field** created in the Transformation.
-7. Click **Save**.
+Inside a configuration, the pencil beside an active version creates a draft. Check a draft with the **Preview** test panel and a representative uploaded document ID before activating it with the checkmark. A draft's trash icon removes that draft. The actual field names and XML paths depend on your eSLOG file; use the corresponding guide above for the editor details.

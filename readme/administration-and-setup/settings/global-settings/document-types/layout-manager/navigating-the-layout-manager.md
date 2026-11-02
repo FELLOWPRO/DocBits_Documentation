@@ -1,78 +1,47 @@
-# Navigating the Layout Manager
+# Navigating the Layout Builder
 
-## Being able to navigate the Layout Manager in DocBits and edit groups and fields is crucial to controlling the structure and appearance of documents.
+Use the **Layout Builder** to arrange the groups and fields that people see on a document. This guide uses the English **Invoice** layout in a sandbox organization.
 
-### Here are the steps to use the Layout Manager and edit groups and fields:
+## Open the Invoice layout
 
-### Navigating the Layout Manager:
+1. Go to **Settings → Document Types**.
+2. Find **Invoice** and select **Layouts** under its name. The Layout Builder opens for that document type.
+3. The header shows the origin selector (here **Default**), the **Document Type** and the **Layout type**. Use **Layout type** to switch to another layout of the same document type.
 
-#### Opening the Layout Manager:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-en.png" alt="Document Types list with the Invoice card, its Standard badge, the Activate and Extraction toggles and the Layouts, Fields, Tables, Validation Rules, Transformation Rules, Scripts, Model Training, E-Doc, Document Sub Types and Logs links"><figcaption>Open **Layouts** from the Invoice card.</figcaption></figure>
 
-* Log in to DocBits and navigate to the area where you want to use the Layout Manager.
-* You can find this option in "Manage Document Types".
+## Work with the three panel tabs
 
-<figure><img src="../../../../../.gitbook/assets/settings_navigation_step1.png" alt=""><figcaption><p>Settings</p></figcaption></figure>
+The panel on the left has three tabs: **Structure**, **Fields** and **Elements**. The builder opens on **Fields**.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 10.12.05.png" alt=""><figcaption><p>Settings Document Type</p></figcaption></figure>
+**Structure** shows the layout as a tree, in the same order as the groups and fields appear on the document. Expand a group with its chevron to see the fields it contains; the grey text on the right is the technical field name. The search box filters the tree, and selecting a row selects the same element on the canvas.
 
-#### Selecting the Document Type:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-en.png" alt="Layout Builder with the Structure tab open: the group tree expanded to Delivery Details with Supplier ID selected, the Invoice layout on the canvas and the Properties panel on the right"><figcaption>The Structure tree, the canvas and the Properties panel.</figcaption></figure>
 
-* Select the document type you want to edit.
-* The Layout Manager will display the structure of that document type.
+**Fields** lists every field the document type offers, grouped by its groups. The counter next to a group name tells you how many of its fields are already placed, for example **5/13**. The three buttons below the search box switch between **All** fields, only the **Unused** ones and only the **Hidden** ones. Each row shows the field label on the left and its technical name on the right, and a check mark marks the fields that are already in the layout.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-overview-2026.png" alt=""><figcaption><p>Layout Builder Invoice</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-en.png" alt="Layout Builder Fields tab with the All, Unused and Hidden filters, the Invoice details group opened and each field shown with its technical name such as invoice_id"><figcaption>Filter the fields and read the technical name under each label.</figcaption></figure>
 
-#### Navigating Groups and Fields:
+**Elements** holds the blocks you drag onto the canvas: **Groups** with the groups of this layout, and **Form Elements** with Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields and Sub Group.
 
-* In the Layout Manager you will see a tree structure that represents the groups and fields of the selected document type.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-en.png" alt="Layout Builder Elements tab with the Groups section listing the eight Invoice groups and the Form Elements section listing twelve form elements"><figcaption>The Groups and Form Elements palettes.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (141).png" alt="" width="133"><figcaption><p>Groups</p></figcaption></figure>
+## Place and arrange elements
 
-* You can navigate through this structure to edit the areas you want.
+- Drag a field from **Fields**, or an element from **Elements**, into the group where it should appear. Fields that are already placed carry a check mark in the **Fields** tab.
+- Drag a field within or between groups to reorder it.
+- The **+** above the canvas adds an empty group; the JSON icon next to it creates a group from a JSON definition.
+- In a group header you can rename the group in **Group Title**, copy its JSON, move the group down or up, or delete it. Use the drag handle on the right of the header to move the group.
+- Select a field on the canvas to open its properties on the right. The small toolbar that appears under the selected field removes it from the layout.
 
-<figure><img src="../../../../../.gitbook/assets/image (142).png" alt="" width="135"><figcaption><p>Fields</p></figcaption></figure>
+## The Properties panel
 
-### Editing groups and fields:
+The panel on the right is always open and follows the element you selected. Its settings are grouped into **Display**, **Behaviour**, **Values & lists**, **Automation** and **Borders & spacing**. **Display** holds the label, the field type and the **Element width**, which you choose from the presets 25, 33, 50, 66, 75 and 100 percent. See [Configuring Field Properties](configuring-field-properties.md) for the individual options.
 
-<mark style="color:red;">**Note:**</mark>**&#x20;when the Title of a field got changed, you must delete and re-add the field in the layout builder for the changes to take effect.**
+Validation, OCR and matching settings belong to the field itself, not to the layout: configure them in the separate [Fields settings](../fields/configuring-field-properties-1.md).
 
-#### Adding a group or field:
+## Preview and save
 
-* Click the "Create new group" button, depending on whether you want to add a new group or field.
+The canvas shows the layout as it will look on the document. Use the **Main layout** and **Table** tabs to switch between the page and a line-item table, and **Document** to open the sample document beside the canvas. See [Using the Template Preview](using-the-template-preview.md).
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 10.23.27.png" alt=""><figcaption></figcaption></figure>
-
-* Enter the name of the new group or field and select any settings you want, such as the type of field (text, number, date, etc.).
-
-<figure><img src="../../../../../.gitbook/assets/image (143).png" alt="" width="329"><figcaption><p>Create a group</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (144).png" alt="" width="323"><figcaption><p>Select field</p></figcaption></figure>
-
-#### Removing a group or field:
-
-* Select the group or field you want to remove.
-* Click the "Delete" button or use the appropriate keyboard shortcut (usually "Delete" or "Del").
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 10.35.24.png" alt=""><figcaption></figcaption></figure>
-
-#### Modifying a group or field:
-
-* Double-click the group or field you want to change.
-* Change any properties you want, such as the name, position, size, or field type settings.
-
-<figure><img src="../../../../../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
-
-#### Arranging groups and fields:
-
-* Drag and drop groups or fields to change their order or place them inside or outside other groups.
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 10.45.28.png" alt="" width="325"><figcaption></figcaption></figure>
-
-#### Saving changes:
-
-* Don't forget to save your changes before you leave the Layout Manager.
-* Click the "Save" button.
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 10.51.06.png" alt=""><figcaption></figcaption></figure>
-
-By following these steps, you can effectively navigate DocBits' Layout Manager and edit groups as well as fields within a document type. This allows you to customize the structure and appearance of your documents according to your needs.
+Select **Save** in the header when you are done. See [Save and Apply Changes](save-and-apply-changes.md) for the other header actions, including template generation, default templates and applying a layout to origins.

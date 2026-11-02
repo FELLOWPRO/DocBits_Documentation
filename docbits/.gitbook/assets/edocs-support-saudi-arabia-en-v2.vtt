@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.345
+ZATCA Fatoorah, Reporting, Simplified and
+Tax Invoice have separate entries. These
+
+formats_02
+00:00:06.345 --> 00:00:11.221
+labels describe different processes and
+invoice variants. Parsing does not prove
+
+formats_03
+00:00:11.221 --> 00:00:14.367
+signing, clearance or reporting through
+ZATCA.
+
+workflow_01
+00:00:15.117 --> 00:00:19.610
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:19.610 --> 00:00:24.672
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:24.672 --> 00:00:25.700
+activate it.
+
+accept_01
+00:00:26.450 --> 00:00:31.210
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:31.210 --> 00:00:36.214
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:36.214 --> 00:00:37.167
+delivery.
+

@@ -7,10 +7,12 @@ The **Workflow Dashboard** is the home of the workflow area. It shows how your w
 ## Tabs
 
 - **Dashboard** — run metrics and recent activity (shown above).
-- **Workflow List** — every workflow with its type, execution order and trigger. Create a new one with **Add Workflow**.
+- **Workflow List** — every workflow with its type, execution order and trigger. Create a new one with **New Workflow**.
 - **Test Manager List** — test scenarios that validate your workflows; run them with **Run All Tests**.
 - **License** — workflow licensing information.
 - **Card SDK** — build and upload custom workflow cards (see [Card SDK](card-sdk.md)).
+
+The toolbar also offers **Templates**, which opens the [Workflow Templates](standard-workflow-builder.md#workflow-templates) library, and **Import Workflow**, which imports a workflow from a JSON file.
 
 The **Test Manager** lets you save test scenarios per workflow and run them together, so you can confirm your workflows still behave correctly after changes:
 

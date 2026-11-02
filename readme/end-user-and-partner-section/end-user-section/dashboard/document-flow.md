@@ -1,38 +1,27 @@
 # Document Flow
 
-## **Overview:**
+**Document Flow** shows the processing steps for one document. Use it to see which steps have completed, which one is waiting, and how long processing has taken. The example below uses a synthetic invoice in the English Sandbox.
 
-This page provides a graphical overview of the various steps a document has gone through up to this point.
+## Open from the dashboard
 
-## **How to Access:**
+On the **Dashboard**, find the document. In its **Actions** column, select the three dots, then **Document flow**. The option opens the flow for that document; it does not change the document.
 
-### **Option 1:**
+<figure><img src="../../../.gitbook/assets/document-flow-dashboard-menu-en.png" alt="English Dashboard with the Actions menu open for a synthetic invoice; Document flow is listed below Assign to."><figcaption>Choose Document flow from the document's Actions menu.</figcaption></figure>
 
-1.  Navigate to the actions column on the dashboard and click the three dots next to the document for which you want to view the document flow.
+## Open from Field Validation
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Document Flow**.
+Open the document. In **Field Validation**, select the three dots in the right action bar, then **Document Flow** under **More options**.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2.png" alt="" width="248"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-flow-validation-menu-en.png" alt="English Field Validation screen showing the More options menu and its Document Flow item beside a synthetic invoice."><figcaption>The same flow is available from the document view.</figcaption></figure>
 
-### **Option 2:**
+## Read the flow
 
-1. Open the document you want to view the document flow for.
-2.  Click the three dots on the right side of the Field Validation.
+**Process Statistics** on the left summarizes the number of steps, completed and waiting steps, restarts, total time, current status, and overall progress. Each numbered card shows a processing step and its current state. Scroll down to see later steps.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Document Flow**.
+<figure><img src="../../../.gitbook/assets/document-flow-overview-en.png" alt="English Document Flow showing Process Statistics on the left and the first numbered step cards: Imported, Document Imported, and OCR."><figcaption>The first steps of a synthetic invoice's flow.</figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4.png" alt="" width="288"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-flow-later-steps-en.png" alt="English Document Flow after scrolling down; later cards include Classification, Field Extraction, Table Extraction, Transformer, Metadata Populator, Lookup Data, and Validator."><figcaption>Scroll to follow the sequence through later steps.</figcaption></figure>
 
-## **Description:**
+Select a step card to open **Step Details** on the left. It shows the module and its status. A **Task Logs** panel may also open on the right; log details depend on what is available for that task. Select **×** in Step Details to close the panel.
 
-On the left side of the screen, you will see the individual steps of the document flow, listed from left to right.
-
-<figure><img src="../../../.gitbook/assets/DocumentFlow_6.png" alt=""><figcaption></figcaption></figure>
-
-* Steps that initiate the document flow process (such as import or restart) will appear in green.
-* To navigate through the steps, simply drag and drop them on the screen.
-*   When you click on a step, the name of the module and information about whether the step was successful or not will appear on the right side of the screen.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-flow-step-details-en.png" alt="English Document Flow with the OCR card selected; Step Details below Process Statistics shows Module OCR and Status Completed."><figcaption>Step Details explains the selected module's status.</figcaption></figure>

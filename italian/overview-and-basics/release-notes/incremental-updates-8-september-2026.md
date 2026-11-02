@@ -1,0 +1,20 @@
+# Hotfix dell'8 settembre 2026
+
+> Corrispondenza degli ordini di acquisto: cosa è cambiato con gli hotfix distribuiti l'8 settembre 2026. Il comportamento descritto di seguito è attivo nell'ambiente di sviluppo e raggiungerà stage, sandbox e produzione con i prossimi aggiornamenti.
+
+## Corrispondenza degli ordini di acquisto
+
+- **La corrispondenza sopravvive al salvataggio.** Una corrispondenza di ordine di acquisto che una regola di trasformazione prima eliminava silenziosamente ad ogni salvataggio (regole che ricostruiscono le righe) ora viene mantenuta finché la regola produce le stesse righe. Quando una regola sostituisce effettivamente le righe corrispondenti, il documento registra la regola e lo schermo la indica.
+- **La corrispondenza viene eseguita di nuovo al salvataggio.** Quando il numero dell'ordine di acquisto sul documento cambia — o quando i dati master lo hanno inserito dopo l'elaborazione e nessuna corrispondenza lo ha ancora cercato — il salvataggio esegue subito la corrispondenza del documento. Una corrispondenza esistente non viene mai sovrascritta da un salvataggio.
+- **Lo schermo indica perché non c'è corrispondenza.** La schermata di Corrispondenza Ordini di Acquisto mostra una frase sopra l'area dell'ordine di acquisto: nessun numero d'ordine, ordine non trovato nell'ERP, non ancora cercato, caricato ma non collegato, nessuna riga corrispondente, nessuna tabella, colonne della tabella non mappate, nessuna riga aperta rimasta. I candidati messi da parte sono elencati con la motivazione (ad esempio un numero di fattura che era stato letto nella colonna dell'ordine di acquisto).
+- **Una corrispondenza eliminata non viene mai segnalata come salvata.** Se il server non mantiene una corrispondenza, lo schermo la ripristina, segna il documento come non salvato e segnala il rifiuto con la sua motivazione invece di "salvato".
+- **La cronologia della corrispondenza mostra le regole di trasformazione.** La cronologia della corrispondenza di un documento ora ha un passaggio _Regole di trasformazione_ prima della prima fase di corrispondenza, elencando le regole eseguite e se una di esse ha eliminato la corrispondenza. Gli amministratori ricevono un link alla regola.
+- **Prezzo unitario PO dal netto.** Con _Calcola prezzo unitario PO_ attivato, il prezzo viene ora derivato prima dall'importo **netto** della riga dell'ordine di acquisto e dal totale solo quando non c'è un importo netto. Gli ordini di acquisto da Infor includono l'imposta nel totale della riga; le fatture con prezzo netto venivano visualizzate come "prezzo unitario sottocorrisposto" esattamente per l'aliquota fiscale. Il prezzo calcolato viene aggiornato ad ogni corrispondenza, quindi i documenti esistenti ne beneficiano senza ricaricare l'ordine di acquisto.
+- **I numeri di fattura non sono più confusi con i numeri degli ordini di acquisto.** Un candidato proveniente da una colonna di riga o da una ricerca precedente che corrisponde al numero di fattura del documento viene messo da parte.
+
+## Documentazione
+
+- Nuova pagina [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md).
+- [Purchase Order Matching Rules](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) ora copre i tipi di regole, condizioni di attivazione, regole di fallback, il set di regole predefinito, tipi di tolleranza e le colonne effettive.
+- [Calculate PO unit price](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md) descrive il calcolo dell'importo netto.
+- [Purchase Order Matching Screen](../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md) spiega i messaggi "perché non c'è corrispondenza" e la cronologia della corrispondenza.

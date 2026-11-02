@@ -1,0 +1,40 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.433
+ebInterface 4.3, 5.0, 6.0 i 6.1 mają
+osobne wpisy. Dopasuj przestrzeń nazw XML
+
+formats_02
+00:00:09.433 --> 00:00:15.033
+do skonfigurowanej wersji. Inna przestrzeń
+nazw może wymagać innego mapowania.
+
+workflow_01
+00:00:15.783 --> 00:00:21.251
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:21.251 --> 00:00:26.824
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:26.824 --> 00:00:29.633
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:30.383 --> 00:00:36.409
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:36.409 --> 00:00:42.341
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:42.341 --> 00:00:45.167
+podatkowego ani dostarczenia przez sieć.
+

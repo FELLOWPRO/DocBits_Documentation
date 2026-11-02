@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.985
+Turkey E-Fatura und E-Arsiv sind separate
+konfigurierte Familien. Prüfen Sie das
+
+formats_02
+00:00:05.985 --> 00:00:10.467
+Profil und die Dokumentstruktur der
+Quelldatei. Die Familienbezeichnung
+
+formats_03
+00:00:10.467 --> 00:00:14.867
+identifiziert nicht jede
+UBL-TR-Veröffentlichung und belegt keine
+
+formats_04
+00:00:14.867 --> 00:00:17.300
+Zustellung über die Steuerplattform.
+
+workflow_01
+00:00:18.050 --> 00:00:23.356
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:23.356 --> 00:00:30.066
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:30.066 --> 00:00:31.700
+aktiviert ihn nicht.
+
+accept_01
+00:00:32.450 --> 00:00:37.082
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:37.082 --> 00:00:43.212
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:43.212 --> 00:00:46.333
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

@@ -4,7 +4,7 @@
 
 La schermata di validazione in DocBits è progettata per verificare l'accuratezza e la completezza dei dati contenuti nei documenti prima che vengano elaborati o salvati. Questa funzionalità è cruciale per garantire che tutti i dati siano correttamente letti ed elaborati, mantenendo così l'integrità e la qualità dei dati.
 
-<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/purpose-and-use1.svg" alt="Diagramma di passaggi a chevron sovrapposti per la schermata di validazione con validazione, efficienza, conformità, facilità d'uso, prevenzione degli errori, integrazione e qualità dei dati"><figcaption></figcaption></figure>
 
 ## Descrizione Dettagliata dello Scopo e dell'Utilizzo della Schermata di Validazione
 

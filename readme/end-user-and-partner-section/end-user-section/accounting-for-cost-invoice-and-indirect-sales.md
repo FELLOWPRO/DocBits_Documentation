@@ -4,7 +4,7 @@
 
 Benvenuti nel modulo di Contabilità per Fatture di Costo e Vendite Indirette! Questo modulo è progettato per aiutarti a gestire e riconciliare efficacemente le tue transazioni finanziarie all'interno del tuo sistema ERP. Con funzionalità come l'estrazione automatica dei dati, l'abbinamento dei documenti e il monitoraggio dettagliato, puoi garantire che i tuoi registri finanziari siano accurati e aggiornati.
 
-<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/acounting-for-cost-invoice-and-indirect-sales1.png" alt="Schermata di contabilità con le colonne Split by total, Position Accounts, Voucher Text e Total accanto a una fattura fornitore"><figcaption></figcaption></figure>
 
 ## Iniziare
 

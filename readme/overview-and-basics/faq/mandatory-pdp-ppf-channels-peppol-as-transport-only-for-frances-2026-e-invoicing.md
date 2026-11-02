@@ -17,7 +17,7 @@ PEPPOL può fornire trasporto e interoperabilità tra sistemi e piattaforme conn
 
 I sei diagrammi e le descrizioni API seguenti sono conservati come contesto tecnico proveniente da materiale precedente su PPF/PDP. Usano la terminologia e l’architettura passate; non descrivono un’opzione attuale per scambiare le fatture B2B obbligatorie tramite il PPF. Verificare le specifiche attuali delle PA e dei servizi pubblici prima di implementare un’integrazione.
 
-<figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 1.png" alt="Diagramma del ciclo di vita di una fattura dal fornitore agli stati Submitted, Received by the platform e Made available, con gli esiti Rejected, Refused, Disputed, Partially approved, In hand e Completed"><figcaption></figcaption></figure>
 
 ### Modello storico dei servizi API
 
@@ -26,22 +26,22 @@ Il modello precedente descriveva l’accesso alle funzioni disponibili dagli str
 * **Sistemi informativi (IS):** Le API erano integrate nei sistemi di emittenti, destinatari o operatori di dematerializzazione (OD). Alcune API erano destinate ai sistemi PDP come alternativa all’integrazione EDI.
 * **Software di terze parti:** Gli editori potevano aggiungere un livello di comunicazione al sistema del cliente. I precedenti riferimenti a una connessione al PPF appartengono a quel modello storico e non costituiscono un canale attuale di scambio delle fatture.
 
-<figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 6.png" alt="Diagramma di un Issuer OD-PDP e un Receiver OD-PDP collegati tramite portali di servizi e software di terze parti, con un passaggio di controllo e recupero dei dati tra loro"><figcaption></figcaption></figure>
 
 ### Diagramma storico di interconnessione
 
 Il diagramma illustra il precedente contesto di interconnessione delle piattaforme. Un’implementazione attuale deve rispettare i requisiti delle PA; qui non si afferma un obbligo generale di usare un’unica rete di trasporto per tutti gli scambi.
 
-<figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 2.png" alt="Diagramma dei tre livelli di controllo numerati: controlli tecnici, controlli applicativi e controlli funzionali e di business, ognuno dei quali alimenta una fase successiva del processo"><figcaption></figcaption></figure>
 
 ### Collegamento storico di un hub
 
 Il modello precedente descriveva una soluzione web o applicativa in cui **l’hub effettuava le chiamate API per conto dei clienti**. Prevedeva un account tecnico per ogni partner e, per l’hub, un’applicazione in PISTE e una connessione al PPF. Sono dettagli di un’architettura storica, non una procedura di integrazione attuale verificata.
 
-<figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 5.png" alt="Diagramma del modello hub con un partner, un account tecnico, l'hub, un'applicazione sotto PISTE e una connessione"><figcaption></figcaption></figure>
 
 ### Riferimenti storici
 
 Il materiale precedente citava [il vecchio calendario e riepilogo giuridico](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform), [le specifiche del 2022](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html), [una panoramica della riforma del 2025](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html), [il contesto di interconnessione](https://nymus.be/fr/facturation-electronique-en-france/), [il contesto PEPPOL](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) e [il contesto dello scambio](https://nymus.be/fr/facturation-electronique-en-france/). Questi collegamenti e gli ultimi diagrammi sono conservati come contesto storico. Per gli obblighi attuali e la distinzione tra scambio tramite PA e funzioni pubbliche del PPF, utilizzare le fonti ufficiali sopra indicate. Il vecchio riferimento all’articolo 91 della legge finanziaria del 2024 non stabilisce un’opzione attuale di scambio tramite il PPF.
 
-<div><figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/Picture 3.png" alt="Diagramma della ricezione di un flusso EDI e del flusso 2 via API che superano controlli funzionali su formato semantico, directory e coerenza dei dati prima dell'incorporazione dei dati di fatturazione e di un esito fattura trasmessa"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt="Diagramma di un flusso EDI e un flusso API che superano controlli funzionali e regole di business specifiche prima del rifiuto o diniego della fattura oppure di una fattura ricevuta e resa disponibile"><figcaption></figcaption></figure></div>

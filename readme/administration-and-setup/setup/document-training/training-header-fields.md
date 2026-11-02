@@ -20,7 +20,7 @@ Puoi aiutare ad addestrare DocBits a riconoscere questi campi identificando manu
 Ripeti questo processo per tutti i campi richiesti.\
 Una volta che tutti i campi necessari sono stati popolati, **clicca su "Salva Regole"** per memorizzare l'addestramento. Questo assicura che DocBits impari dove trovare ciascuna informazione per documenti simili in futuro.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![Addestramento dei campi di intestazione su Apple_invoice.pdf con Company Name, Company Street e Company PLZ evidenziati nel documento](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Dopo aver salvato, il tuo documento è pronto per essere esportato — e la prossima volta, DocBits estrarrà automaticamente i campi addestrati.
 

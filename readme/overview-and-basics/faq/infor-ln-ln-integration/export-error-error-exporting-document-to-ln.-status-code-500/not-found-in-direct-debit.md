@@ -31,7 +31,7 @@ Se la **Corrispondenza Automatica** è impostata su **Corrispondi alla Ricevuta 
 
 Dovrebbe apparire come segue:
 
-<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PackingSlip.png" alt="File LN-Mapping con il campo IRF_PackingSlip impostato su TF_packing_slip e PackingSlip aggiunto a InvoiceReceiptFields"><figcaption></figcaption></figure>
 
 ## **Passo 4: Aggiungi il File Aggiornato a DocBits**
 

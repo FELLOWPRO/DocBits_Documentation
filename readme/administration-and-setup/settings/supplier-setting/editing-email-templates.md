@@ -24,7 +24,7 @@ Il `{{magic_link}}` è un segnaposto che viene sostituito dinamicamente con un U
    * L'editor ti consente di modificare sia il codice HTML che il design visivo dell'email.
    * Puoi passare tra la modifica visiva e la modifica del codice utilizzando le schede fornite.
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt="Pagina Edit Template per la Supplier Invitation Email con i campi Name, Subject, Sender Name e Magic Link e il sorgente HTML"><figcaption></figcaption></figure>
 
 #### Definire `{{magic_link}}` come Link
 

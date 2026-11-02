@@ -6,7 +6,7 @@ Per impostazione predefinita, specifici campi nel processo di validazione dei ca
 
 Puoi sempre verificare la formula utilizzata passando il mouse sopra l'icona delle informazioni.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1_it.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1_it.png" alt="Schermata di convalida del documento con il pannello dei controlli automatici che elenca opzioni a casella come Dokumenttyp, Rechnungsdatum e Lieferant accanto all'elenco dei campi"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Nota:**</mark> L'icona delle informazioni è visibile solo se è stato estratto un valore per il campo corrispondente.
 

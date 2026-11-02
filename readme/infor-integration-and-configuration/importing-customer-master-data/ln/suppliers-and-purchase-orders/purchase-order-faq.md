@@ -7,7 +7,7 @@ Vai alla sessione _BOD Implementation Registration (bobod1100m000)_ in LN. Quest
 \
 
 
-<figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO.png" alt="Sessione LN BOD Implementation Registration (bobod1100m000) che mostra implementazioni BOD con le caselle di controllo Public, Standard e Staging"><figcaption></figcaption></figure>
 
 **Come posso identificare la specifica implementazione BOD da verificare?**
 

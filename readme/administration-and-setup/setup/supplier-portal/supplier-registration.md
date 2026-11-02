@@ -1,39 +1,29 @@
-# Lieferantenregistrierung
+# Registrierung für Lieferanten
 
-1.  Sie erhalten eine Einladung mit einem Link per E-Mail, um den Registrierungsprozess zu beginnen. Bitte klicken Sie auf „Zur Registrierung gehen“, geben Sie die erforderlichen Informationen ein und akzeptieren Sie die Allgemeinen Geschäftsbedingungen, um zu starten.&#x20;
+Diese Anleitung richtet sich an Lieferanten, die von einer Organisation zu deren DocBits-Portal eingeladen wurden. Verwenden Sie den Link aus dieser Einladung. Der Zugang gehört Ihnen als Lieferant; die einladende Organisation bestimmt die freigegebenen Informationen und erforderlichen Registrierungsschritte.
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/supplier_registration_1.png" alt="" width="287"><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/supplier_registration_2.png" alt="" width="246"><figcaption></figcaption></figure></div>
-2.  **Lieferantendetails**
+## 1. Einladung öffnen
 
-    Bitte überprüfen Sie, ob der Name des Lieferanten korrekt ist. Dies ist ein kritisches Detail für Identitäts- und rechtliche Zwecke, das nicht geändert werden kann. Bitte geben Sie alle zutreffenden Informationen einschließlich der erforderlichen Felder an. Wenn Sie fertig sind, klicken Sie auf „Weiter“, um zum Abschnitt Adressdaten zu gelangen. Um Ihren Fortschritt zu speichern und später fortzufahren, klicken Sie auf „Speichern.“\
+Prüfen Sie, von welcher Organisation die Einladung stammt und für welche E-Mail-Adresse sie bestimmt ist. Öffnen Sie den Registrierungslink aus der Einladung. Ist der Link abgelaufen oder für die falsche Person bestimmt, bitten Sie die einladende Organisation um eine neue Einladung.
 
+## 2. Eigenen Zugang einrichten
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_3.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **Adressdaten** Bitte geben Sie alle zutreffenden Informationen einschließlich der erforderlichen Felder an. Wenn Sie fertig sind, klicken Sie auf „Weiter“, um zum Abschnitt Lieferantenkontakt zu gelangen. Um Ihren Fortschritt zu speichern und später fortzufahren, klicken Sie auf „Speichern.“\
+Prüfen Sie vorbelegte Namen und E-Mail-Adresse. Ergänzen Sie die angeforderten Zugangsdaten und beachten Sie die angezeigten Kennwortregeln. Lesen Sie die eingeblendeten Bedingungen und Datenschutzhinweise. Schließen Sie die Kontoregistrierung mit der angezeigten Registrierungsfunktion ab. Ein bereits vorhandener Zugang und eine neue Registrierung sind unterschiedliche Fälle; verwenden Sie den für Ihre Einladung vorgesehenen Ablauf.
 
+<figure><img src="../../../.gitbook/assets/portal-registration-localized-20261024-de.png" alt="Registrierungsformular für den Lieferantenzugang. Gezeigt ist der Einstieg ohne eingegebene Daten; eine Einladung kann Angaben bereits vorbelegen."><figcaption><p>Registrierungsformular für den Lieferantenzugang. Gezeigt ist der Einstieg ohne eingegebene Daten; eine Einladung kann Angaben bereits vorbelegen.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_4.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  **Lieferantenkontakt** Bitte geben Sie alle zutreffenden Informationen einschließlich der erforderlichen Felder an. Wenn Sie fertig sind, klicken Sie auf „Weiter“, um zum Abschnitt Lieferantenfinanzen zu gelangen. Um Ihren Fortschritt zu speichern und später fortzufahren, klicken Sie auf „Speichern.“\
+## 3. Lieferantenangaben vervollständigen
 
+Ergänzen Sie die von der Organisation angeforderten Daten und gegebenenfalls Nachweise. Die Felder und Abschnitte hängen vom eingerichteten Lieferantenlayout ab. Kennzeichnungen und Fehlermeldungen zeigen, welche Angaben erforderlich sind. Speichern Sie einen Zwischenstand, wenn die Ansicht dies anbietet; eine Speicherung ist nicht automatisch die abschließende Übermittlung.
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_5.png" alt="" width="404"><figcaption></figcaption></figure>
-5.  **Lieferantenfinanzen** Bitte geben Sie alle zutreffenden Informationen an. Wenn Sie fertig sind, klicken Sie auf „Weiter“, um zum Abschnitt Lieferantenkäufe zu gelangen. Um Ihren Fortschritt zu speichern und später fortzufahren, klicken Sie auf „Speichern.“\
+## 4. Registrierung und Freigabe prüfen
 
+Übermitteln Sie die Angaben über die dafür vorgesehene Abschlussfunktion. Falls eine Prüfung oder Freigabe eingerichtet ist, warten Sie deren Ergebnis ab. Melden Sie sich anschließend mit Ihrem eigenen Zugang an. Welche Bestellungen, Rechnungen und weiteren Informationen Sie sehen können, bestimmt die Organisation.
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_6.png" alt="" width="402"><figcaption></figcaption></figure>
-6.  **Lieferantenkäufe** Bitte geben Sie alle zutreffenden Informationen an. Wenn Sie fertig sind, klicken Sie auf „Weiter“, um zum Abschnitt Lieferantenzertifikate zu gelangen. Um Ihren Fortschritt zu speichern und später fortzufahren, klicken Sie auf „Speichern.“\
+## Wenn der Zugang nicht funktioniert
 
+Bei einem ungültigen Einladungslink, fehlender Berechtigung oder unklaren Pflichtangaben wenden Sie sich an die einladende Organisation. Ein sichtbarer Lieferantenstammsatz im internen Dashboard ersetzt weder Ihre Registrierung noch die erforderliche Zugangsfreigabe.
 
-    <figure><img src="../../../.gitbook/assets/supplier_registration_7.png" alt="" width="401"><figcaption></figcaption></figure>
-7.  **Lieferantenzertifikate** Bitte laden Sie alle erforderlichen Zertifikate hoch (Steuer, Versicherung, Lieferantenvielfalt). Bitte speichern Sie Ihren Fortschritt, wenn Sie später zurückkehren müssen, um den Registrierungsprozess abzuschließen. Wenn Sie fertig sind, klicken Sie auf „Zur Genehmigung senden.“\
+[Zur Einrichtung des Lieferantenportals](README.md).
 
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_8.png" alt="" width="404"><figcaption></figcaption></figure>
-8.  Bitte laden Sie alle erforderlichen Zertifikate hoch (Steuer, Versicherung, Lieferantenvielfalt). Bitte speichern Sie Ihren Fortschritt, wenn Sie später zurückkehren müssen, um den Registrierungsprozess abzuschließen. Wenn Sie fertig sind, klicken Sie auf „Zur Genehmigung senden.“\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_9.png" alt="" width="404"><figcaption></figcaption></figure>
-9.  Bitte überprüfen Sie Ihre E-Mail auf eine Bestätigung, dass Sie den Registrierungsprozess abgeschlossen haben.\
-
-
-    <figure><img src="../../../.gitbook/assets/supplier_registration_10.png" alt="" width="563"><figcaption></figcaption></figure>
+[Video: Portalzugang und Registrierung vorbereiten – mit deutschen Untertiteln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.html)

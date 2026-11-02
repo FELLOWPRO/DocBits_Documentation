@@ -22,6 +22,12 @@ In der Aufgabenübersicht finden Sie zugewiesene Arbeit und sehen den Bearbeitun
 
 Das Video verwendet ein normales Testkonto und synthetische Belege. Der Abschluss der Aufgabe ist von der Freigabe und dem Export der Rechnung getrennt. Welche Aktionen verfügbar sind, hängt von den Kontoberechtigungen ab.
 
+## Wenn Sie eine Aufgabe nicht als erledigt markieren können
+
+Ihre Organisation kann einschränken, wer Aufgaben abschließen, also auf **Fertig** oder **Abgelehnt** setzen darf. In diesem Fall werden Ihnen bei Aufgaben, die Sie nicht abschließen dürfen, die Schaltfläche **Fertig**, die Status **Fertig** und **Abgelehnt** sowie **Als erledigt markieren** nicht angeboten, und im Aufgaben-Board können Sie eine solche Aufgabe nicht in die Spalte **Fertig** oder **Abgelehnt** ziehen. Aufgaben, die Ihnen zugewiesen sind, können Sie weiterhin bearbeiten, speichern und zwischen **Offen** und **In Arbeit** verschieben.
+
+Wer Aufgaben abschließen und löschen darf, legt ein Administrator Ihrer Organisation fest. Siehe [Aufgaben und Benachrichtigungen](../../administration-and-setup/settings/document-processing/module/tasks-and-notifications.md).
+
 <figure><img src="../../.gitbook/assets/customer-overview-de-25080eee9ea0.png" alt="Aufgabenübersicht mit synthetischen Beispieldaten."><figcaption><p>Aufgabenübersicht mit synthetischen Beispieldaten.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/customer-find-de-25080eee9ea0.png" alt="Aufgabenliste mit synthetischen Beispieldaten."><figcaption><p>Aufgabenliste mit synthetischen Beispieldaten.</p></figcaption></figure>

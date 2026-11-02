@@ -1,25 +1,11 @@
-# Tipos de Documentos Secundários
+# Subtipos de documentos
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_sub_types_overview.png" alt="Docbits Document Sub Types Overview"><figcaption></figcaption></figure>
+Os subtipos distinguem categorias dentro de um tipo de documento. Abra os tipos de documentos nas definições e escolha a ligação aos subtipos do tipo pretendido.
 
-#### Visão Geral
+<figure><img src="../../../../.gitbook/assets/s150-docbits_document_sub_types_overview-pt.png" alt="Resumo dos subtipos de documentos. Alguns cabeçalhos da aplicação permanecem em inglês."><figcaption><p>Resumo dos subtipos de documentos. Alguns cabeçalhos da aplicação permanecem em inglês.</p></figcaption></figure>
 
-Os Tipos de Documentos Secundários são essencialmente versões especializadas dos principais tipos de documentos. Por exemplo, sob o tipo de documento principal "Fatura," pode haver subtipos como "Fatura Padrão," "Fatura Pro-forma" e "Fatura de Crédito," cada um com requisitos de dados ligeiramente diferentes ou regras de processamento.
+A lista mostra os subtipos configurados. Alguns cabeçalhos de coluna podem permanecer em inglês no produto.
 
-#### Recursos e Opções Principais
+<figure><img src="../../../../.gitbook/assets/s150-docbits_document_sub_types_list-pt.png" alt="Lista de subtipos de documentos nas definições. Alguns cabeçalhos da aplicação permanecem em inglês."><figcaption><p>Lista de subtipos de documentos nas definições. Alguns cabeçalhos da aplicação permanecem em inglês.</p></figcaption></figure>
 
-1. **Lista de Subtipos**:
-* Cada linha representa um subtipo de um tipo de documento principal.
-* Inclui o nome do subtipo e um conjunto de ações que podem ser realizadas nele.
-2. **Ações**:
-* **Campos**: Configure quais campos de dados estão incluídos no subtipo e como eles são gerenciados.
-* **Editar Layout**: Modifique o layout visual para como as informações são exibidas e inseridas para este subtipo.
-* **Scripts**: Anexe ou edite scripts que executam operações específicas quando documentos deste subtipo são processados.
-* **Copiar**: Duplicar uma configuração de subtipo existente para usar como base para uma nova.
-* **Excluir**: Remover o subtipo se não for mais necessário.
-3. **Adicionar Novos Subtipos**:
-* O botão "+ Novo" permite que os administradores criem novos subtipos, definindo propriedades e regras exclusivas conforme necessário.
-
-Os Tipos de Documentos Secundários no DocBits fornecem uma maneira flexível e poderosa de lidar com uma variedade de documentos dentro de um único sistema, garantindo que cada tipo e subtipo seja processado com precisão e eficiência de acordo com suas especificações exclusivas.
-
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2492" %}
+Ao criar um subtipo, verifique o nome e a configuração antes de guardar. Os exemplos mostram o resumo e a lista; não comprovam a criação de um subtipo nem definições guardadas.

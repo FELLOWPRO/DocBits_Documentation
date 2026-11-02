@@ -1,79 +1,96 @@
-# Classification And Extraction
+# Classificação e extração
 
-## Overview
+## Qual configuração funciona em qual etapa do processo?
 
-In the **Classification and Extraction** settings, you can:
+<figure><img src="../../../../.gitbook/assets/process-extraction-pt-20261028.png" alt="Do arquivo aos dados reconhecidos: Visualize o tipo de documento, a fonte de dados e o caminho de extração separadamente."><figcaption><p>Visualize o tipo de documento, a fonte de dados e o caminho de extração separadamente. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
 
-* Enable **Document Splitting** based on QR codes
-* Configure **amount formatting**
-* Set up **table extraction**
-* Toggle processing of unsupported **ZUGFeRD** files
-* Define special classification rules
-* Monitor Custom-Trained **AI Models** used in the classification process
+A classificação responde à pergunta **“Que tipo de documento é esse?”**. A extração responde **“Quais valores ela contém?”**. As configurações nesta página afetam diferentes pontos de processamento e não devem ser entendidas como uma única opção de IA.
 
-This page provides a detailed explanation of all available settings.
+1. **Preparar entrada:** Para PDFs, texto existente ou OCR pode ser usado; documentos eletrônicos suportados podem fornecer valores estruturados. Uma divisão ativada pode separar um documento recebido com base no código de barras configurado ou nos critérios QR.
+2. **Determinar o tipo de documento:** Regras e modelos de classificação atribuem documentos a um tipo e, se necessário, a um subtipo. Esta atribuição deve ser diferenciada da posterior extração de campos e tabelas.
+3. **Extrair valores:** As tabelas podem seguir caminhos diferentes dependendo da configuração e das regras salvas aplicáveis. Os campos de cabeçalho possuem seus próprios indicadores de origem. Portanto, o modelo de IA selecionado por si só não explica todos os valores de linha ou campo.
+4. **Rastreie o resultado:** Na tela de validação, verifique qual aba da tabela contém as linhas e qual indicador de origem um campo de cabeçalho possui. Se faltar uma etapa de processamento, leia os registros do documento antes de alterar as configurações.
 
-## **Accessing Classification and Extraction Settings**
+### Distinguir entre caminho de regra e caminho de IA
 
-To access the **Classification and Extraction** settings, go to:\
-**Settings → Document Processing → Classification and Extraction**
+As regras de tabela salvas apropriadas podem determinar a extração da tabela para o modelo ou fornecedor relevante. Sem regras adequadas, o caminho AI pode ser usado quando a extração da tabela AI está ativada. Colunas individuais podem ter suas próprias opções de IA. Uma fonte de IA para um campo de cabeçalho não significa que toda a tabela venha da IA.
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+O guia de diagnóstico [Qual caminho de extração foi usado?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) explica guias, identificadores de fonte e registos. A página [Modelo de IA](ai-model.md) explica o padrão da organização e as substituições relacionadas ao modelo.
 
-## Document Splitting
+## Visão geral
 
-In the **Document Splitting** section, you can configure whether an uploaded document should be split into multiple documents whenever a **barcode** appears on one of its pages.
+Nas configurações de **Classificação e extração**, pode:
 
-To activate this feature:
+* Ativar a **divisão de documentos** com base em códigos QR
+* Configurar a **formatação de valores**
+* Configurar a **extração de tabelas**
+* Ativar ou desativar o processamento de ficheiros **ZUGFeRD** não suportados
+* Definir regras especiais de classificação
+* Monitorizar os **modelos de IA** treinados especificamente para a classificação
 
-1. Go to the **Document Splitting** section.
-2.  Open the dropdown menu.
+Esta página explica as configurações disponíveis.
+
+## **Aceder às configurações de classificação e extração**
+
+Para abrir as configurações de **Classificação e extração**, aceda a:\
+**Configurações → Processamento de documentos → Classificação e extração**
+
+<figure><img src="../../../../.gitbook/assets/dbdc865-settings-nav-pt-20261012.png" alt="Navegação das configurações com Processamento de documentos e Classificação e Extração realçados"><figcaption><p>Abra <strong>Configurações → Processamento de documentos → Classificação e Extração</strong>.</p></figcaption></figure>
+
+## Divisão de documentos
+
+Na secção **Divisão de documentos**, pode configurar a divisão de um documento carregado em vários documentos sempre que surgir um **código de barras** numa página.
+
+Para ativar esta funcionalidade:
+
+1. Abra a secção **Divisão de documentos**.
+2.  Abra a lista suspensa.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Split by Barcode/QR Code**.
+3.  Selecione **Dividir por código de barras/QR**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
 
-You will then have the option to:
+Depois, poderá:
 
-* Select one or more barcode types to be detected.
-*   Specify a regex pattern that the barcode must match in order to trigger document splitting.
+* Selecionar um ou mais tipos de código de barras a detetar.
+*   Indicar um padrão de expressão regular que o código de barras deve cumprir para provocar a divisão do documento.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
 
-## Amount Formatting
+## Formatação de valores
 
-In the **Amount Formatting** section, you have two options:
+Na secção **Formatação de valores**, tem duas opções:
 
-* **Allow Rounding During Amount Comparison:**\
-  If enabled, a tolerance of ±0.5 is allowed during amount comparison.\
-  If disabled, a default tolerance of ±0.05 applies.
-* **Require Exact Match for Amount Comparison:**\
-  If enabled, amounts must match exactly with zero tolerance.\
-  If disabled, a tolerance of ±0.05 is allowed.
+* **Permitir arredondamento na comparação de valores:**\
+  Quando ativa, permite uma tolerância de ±0.5 na comparação de valores.\
+  Quando desativada, aplica-se a tolerância padrão de ±0.05.
+* **Exigir correspondência exata na comparação de valores:**\
+  Quando ativa, os valores têm de corresponder exatamente, sem tolerância.\
+  Quando desativada, permite uma tolerância de ±0.05.
 
-<mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
+<mark style="color:red;">**Nota**</mark>: apenas uma destas configurações pode estar ativa de cada vez.
 
-## Table Extraction
+## Extração de tabelas
 
 {% embed url="https://youtu.be/LFw-JXqYWzw" %}
-DocBits Tables Explained: AI Table Extraction vs Standard Extraction (When to Use Which)
+Tabelas do DocBits: extração de tabelas com IA ou extração padrão — quando usar cada uma
 {% endembed %}
 
-In this video, we compare two ways to process tables in DocBits: AI-based table extraction and standard (non-AI) extraction. You’ll learn what the differences are, when each method performs best, and how to choose the right approach for your document types.
+Neste vídeo, comparamos a extração de tabelas por IA com a extração padrão, sem IA, no DocBits. Aprenderá as diferenças, quando utilizar cada método e como escolher a abordagem para os seus tipos de documento.
 
-**What you’ll learn:**
-*   What AI table extraction does (pattern recognition, flexible layouts)
-*   What standard table extraction does (structured, more controlled behavior)
-*   Pros & cons: accuracy vs consistency, speed, and maintainability
-*   When AI is best (varying layouts, noisy scans, supplier differences)
-*   When standard extraction is best (stable templates, strict control, predictable output)
-*   Practical tips to improve table results and reduce mismatches
+**O que irá aprender:**
+*   O que faz a extração de tabelas por IA: reconhecimento de padrões e layouts flexíveis
+*   O que faz a extração padrão de tabelas: comportamento estruturado e mais controlado
+*   Vantagens e limitações: precisão, consistência, velocidade e manutenção
+*   Quando utilizar IA: layouts variáveis, digitalizações com ruído e diferenças entre fornecedores
+*   Quando utilizar extração padrão: modelos estáveis, controlo rigoroso e resultados previsíveis
+*   Conselhos práticos para melhorar as tabelas extraídas e reduzir divergências
 
 {% hint style="info" %}
 **Pré-requisitos para uma extração de tabelas funcional**
 
-* O tipo de documento tem **colunas de tabela** (Definições → Definições Globais → Tipos de Documento → [Colunas da Tabela](../../global-settings/document-types/table-columns.md)). Sem colunas, não há para onde extrair.
+* O tipo de documento tem **colunas de tabela** (Definições → Definições Globais → Tipos de Documento → [Colunas da Tabela](../../global-settings/document-types/table-columns/README.md)). Sem colunas, não há para onde extrair.
 * A **Extração de tabelas** ou a **Extração de tabelas por IA** está ativada abaixo, para toda a organização.
 * O documento tem texto legível: o OCR foi executado, ou o E-Text é usado para PDFs nativos digitais ([Definições OCR](../ocr-settings.md)).
 * O treino e os modelos de IA são **por fornecedor**. Uma tabela treinada aplica-se apenas aos documentos do fornecedor com que foi treinada.
@@ -86,9 +103,16 @@ Saiba mais sobre o treino [aqui](../../../setup/document-training/training-line-
 
 **Extração de tabelas por IA:** Usa IA para extrair a tabela de qualquer fornecedor sem treino. Se os resultados de um fornecedor não forem suficientemente precisos, treine a tabela desse fornecedor; as regras guardadas passam então a ter precedência sobre a IA para esse fornecedor.
 
-**Usar Extração de tabelas Vision (IA):** A IA lê a imagem da página em vez da camada de texto. Ajuda com documentos digitalizados e tabelas sem uma estrutura de texto clara; é mais lenta.
+**Usar Extração de tabelas Vision (IA):** A IA lê a imagem da página em vez da camada de texto. Ajuda com documentos digitalizados e tabelas sem uma estrutura de texto clara; é mais lenta. A lista pendente ao lado do botão escolhe com que intensidade a imagem da página é utilizada:
 
-**Usar Extração estruturada (IA):** A IA devolve a tabela numa estrutura fixa que é mapeada diretamente para as colunas de tabela configuradas. Recomendado quando os cabeçalhos das colunas nos documentos variam muito.
+* **Desativado (somente texto)** – Só é utilizada a camada de texto. Esta é a predefinição.
+* **Somente imagens** – Só é lida a imagem da página.
+* **Híbrido (texto e imagens)** – A camada de texto e a imagem da página são combinadas no mesmo pedido.
+* **Auto (decidido por documento)** – O DocBits decide por documento se a camada de texto é suficiente.
+
+O modo é guardado na chave de preferência `TABLE_EXTRACTION_VISION_MODE`; o botão antigo `TABLE_EXTRACTION_USE_VISION` mantém-se e significa, na prática, *Somente imagens*.
+
+**Usar Extração estruturada (IA):** A IA devolve a tabela numa estrutura fixa que é mapeada diretamente para as colunas de tabela configuradas. Recomendado quando os cabeçalhos das colunas nos documentos variam muito. Clicar na definição abre uma pré-visualização exata dos campos e colunas que serão pedidos à IA: os campos de cabeçalho e as colunas de linhas são listados com a sua origem (campos padrão pedidos ou desativados), juntamente com o modo de saída esperado (por exemplo, *strict* – sem colunas adicionais). Os campos configurados para o tipo de documento mas desativados não são pedidos à IA.
 
 **Extração de tabelas para elemento de custo:** Quando ativada, o DocBits pode extrair elementos de custo das tabelas ao nível da linha e classificá-los em conformidade.\
 Explicação detalhada disponível [aqui](table-extraction-for-costing-element.md).
@@ -98,21 +122,21 @@ Mais informações sobre esta definição [aqui](auto-extract-tax-code.md).
 
 **Guardar regras de extração (apenas administradores):** Só os administradores podem clicar em *Guardar regras* no treino de tabelas. Ative-a quando os utilizadores continuam a guardar regras que estragam a extração de um fornecedor.
 
-**Modelo de IA:** Seleciona o nível de IA usado para a extração de tabelas: **Fast** (predefinição), **Full** (máxima precisão, mais lento) ou **Nexus** (terceiro nível, de ativação opcional). A tabela por baixo do seletor mostra:
+**Modelo AI:** define o modelo de organização para extração de campos e tabelas. O menu oferece Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Verifique a disponibilidade, qualidade, tempo de execução e custo com documentos representativos. Uma camada nem sempre é a mais precisa ou rápida para todos os documentos. As substituições de modelo podem substituir a configuração da organização. A tabela abaixo do seletor mostra:
 
 * Quais os **fornecedores** que usam cada modelo de IA
-* Se usam E-Text
-* Opções para eliminar uma entrada ou repor os dados de treino
+* Se usam a extração estruturada (IA) e o E-Text
+* Opções para eliminar uma entrada e, assim, repor o fornecedor no valor predefinido
 
 Esta definição é explicada em detalhe [aqui](ai-model.md).
 
 ### Porque é que a tabela é diferente de fornecedor para fornecedor?
 
-Tudo o que o DocBits aprende sobre uma tabela é guardado **por fornecedor**:
+O processamento da tabela depende das regras e configurações salvas no fornecedor relevante ou no contexto do modelo:
 
 * **Regras guardadas** (treino de tabelas): posição da tabela e mapeamento das suas colunas no layout desse fornecedor.
 * **Tags e regras de formatação da tabela de IA**: indicações que o utilizador guardou para a tabela de IA desse fornecedor.
-* **Modelo de IA específico do fornecedor**: o nível escolhido para esse fornecedor em *Mais definições* no ecrã de validação.
+* **Modelo de IA específico do modelo:** A seleção feita na tela de validação é salva por organização e modelo de extração atual. Não altera automaticamente todos os modelos do mesmo fornecedor. Sem uma substituição, a configuração da organização aplicável será usada.
 
 Assim, o fornecedor A, com regras guardadas, mostra uma tabela determinística no separador *Tabela extraída* do ecrã de validação, enquanto o fornecedor B, sem regras, recebe a *Tabela extraída por IA*. Para que o fornecedor B se comporte como o A, treine a tabela de B uma vez. Para repor um fornecedor, elimine as suas regras no ecrã de validação ou reponha os seus dados de treino na tabela do Modelo de IA.
 
@@ -124,12 +148,13 @@ Cada opção desta secção é guardada como uma preferência da organização. 
 |---|---|---|
 | Extração de tabelas | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | Extração de tabelas por IA | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Usar Extração de tabelas Vision (IA) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Usar Extração de tabelas Vision (IA) | `TABLE_EXTRACTION_VISION_MODE` | `off` (predefinição), `vision`, `hybrid`, `auto` |
+| Usar Extração de tabelas Vision (IA) – botão antigo | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; significa, na prática, `vision` |
 | Usar Extração estruturada (IA) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Extração de tabelas para elemento de custo | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Extrair automaticamente o código de imposto | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Guardar regras de extração (apenas administradores) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| Modelo de IA | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Modelo de IA | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Versão da extração de tabelas (caixa de diálogo de confirmação) | `TBL_EXT_VERSION` | cadeia de versão |
 | Definições OCR → Usar dados de IA para tabelas, se disponíveis | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | Definições OCR → Usar E-Text, se disponível | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
@@ -138,113 +163,114 @@ Notas:
 
 * As preferências booleanas são guardadas como as cadeias `true` / `false`; uma chave que nunca foi definida conta como `false`. Se enviar `1` ou `0`, o DocBits guarda `true` / `false`.
 * `AI_MODEL` não definido significa **Fast**.
+* Um `TABLE_EXTRACTION_VISION_MODE` não definido é resolvido a partir do botão antigo `TABLE_EXTRACTION_USE_VISION`: `true` dá `vision`, qualquer outro valor dá `off`.
 * A alteração de uma chave produz efeito nos documentos processados posteriormente. Reinicie um documento para o extrair novamente com a nova definição.
-* As escolhas por fornecedor (E-Text, modelo de IA, regras guardadas) não são preferências da organização; são definidas no ecrã de validação em *Mais definições* num documento desse fornecedor.
+* As substituições de modelo diferem das preferências da organização. O guia AI Model explica o escopo exato.
 
-## Electronic Document
+## Documento eletrónico
 
-**Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
+**Processar PDF ZUGFeRD não suportado:** quando esta opção está ativa, as versões **ZUGFeRD** não suportadas são processadas como PDF padrão e o XML incorporado é ignorado.
 
-The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
+A lista de versões **ZUGFeRD** suportadas está disponível [aqui](../../global-settings/document-types/edi/zugferd/README.md).
 
-## **Classification Rules**
+## **Regras de classificação**
 
-In the **Classification Rules** section, you can define specific **regex** patterns and criteria to help the system automatically classify documents during processing.
+Na secção **Regras de classificação**, pode definir padrões de **expressões regulares** e critérios específicos para classificar automaticamente os documentos durante o processamento.
 
-To access this section, click the **Classification Rules** tab at the top of the page.
+Para abrir esta secção, clique no separador **Regras de classificação** no topo da página.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
-### **Add a New Classification Rule**
+### **Adicionar uma regra de classificação**
 
-To create a new rule:
+Para criar uma regra:
 
-1.  Click **Add** in the top-right corner.
+1.  Clique em **Adicionar** no canto superior direito.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
-2. Fill in the following fields:
-   * **Pattern**: The regex pattern the system should search for to trigger classification.
-   * **Type**: Where the pattern should be searched (e.g., **Barcode**).
-   * **Sub Organization** _(optional)_: Specify which sub organization the rule applies to.
-   * **Document Type**: Define the document type to assign when the pattern is matched.
-   *   **Sub Document Type** _(optional)_: Specify a sub type for more detailed classification.
+2. Preencha os campos seguintes:
+   * **Padrão**: expressão regular que o sistema deve procurar para iniciar a classificação.
+   * **Tipo**: local onde o padrão deve ser procurado, por exemplo no **código de barras**.
+   * **Suborganização** _(opcional)_: suborganização à qual a regra se aplica.
+   * **Tipo de documento**: tipo a atribuir ao documento quando o padrão corresponder.
+   *   **Subtipo de documento** _(opcional)_: indique um subtipo para uma classificação mais detalhada.
 
        <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
-3.  Click **Save** to save your classification rule.
+3.  Clique em **Guardar** para guardar a regra de classificação.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Edit a Classification Rule**
+### **Editar uma regra de classificação**
 
-To edit an existing rule:
+Para editar uma regra existente:
 
-1.  Click the three dots in the **Actions** column.
+1.  Clique nos três pontos da coluna **Ações**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Edit**.
+2.  Selecione **Editar**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
-3. Make your desired changes.
-4.  Click **Save** to apply the updates.
+3. Efetue as alterações pretendidas.
+4.  Clique em **Guardar** para aplicar as alterações.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
 
-### **Delete a Classification Rule**
+### **Eliminar uma regra de classificação**
 
-To delete a rule:
+Para eliminar uma regra:
 
-1.  Click the three dots in the **Actions** column.
+1.  Clique nos três pontos da coluna **Ações**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
-2.  Select **Delete**.
+2.  Selecione **Eliminar**.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
 
-## AI Models
+## Modelos de IA
 
-The **AI Models** section displays all custom-trained models that have been specifically fine-tuned for your needs.
+A secção **Modelos de IA** apresenta os modelos treinados e ajustados especificamente às suas necessidades.
 
-### Accessing the AI Models Section
+### Aceder à secção de modelos de IA
 
-To open this section, click the **AI Models** tab located at the top of the page.
+Para abrir esta secção, clique no separador **Modelos de IA** no topo da página.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
-### Model Categories
+### Categorias de modelos
 
-Models are organized into categories. Below each category name, the number of models it contains is shown.\
-Click on a category to view its details.
+Os modelos estão organizados por categorias. Por baixo do nome de cada categoria, é apresentado o número de modelos que contém.\
+Clique numa categoria para consultar os detalhes.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
-At the top of the selected category page, you’ll see key information about each model:
+No topo da página da categoria selecionada, encontrará informação sobre cada modelo:
 
-* **Type**: The type of model.
-* **First Page Only**: Indicates whether the model processes only the first page of a document.
-* **Version**: The version number of the model.
+* **Tipo**: tipo de modelo.
+* **Apenas primeira página**: indica se o modelo processa apenas a primeira página do documento.
+* **Versão**: número da versão do modelo.
 
-### Model Table
+### Tabela de modelos
 
-All models within a category are listed in a table, which includes the following information:
+Os modelos da categoria são apresentados numa tabela com a seguinte informação:
 
-* **Name**: The name of the model.
-* **Next Model**: The model that will further process the output of the current model.
-* **Document Type**: The primary document type assigned by the model during classification.
-* **Document Sub Types**: The sub types into which the document is further classified.
-* **Priority**: The priority level that determines the model’s position in the classification queue.
+* **Nome**: nome do modelo.
+* **Próximo modelo**: modelo que irá processar o resultado do modelo atual.
+* **Tipo de documento**: tipo principal atribuído pelo modelo durante a classificação.
+* **Subtipos de documento**: subtipos nos quais o documento é classificado adicionalmente.
+* **Prioridade**: nível que determina a posição do modelo na fila de classificação.
 
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
-### Editing a Model
+### Editar um modelo
 
-To edit a model:
+Para editar um modelo:
 
-1.  Click the pen icon in the **Actions** column next to the model you want to edit.
+1.  Clique no ícone de lápis da coluna **Ações**, junto ao modelo que pretende editar.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
-2. Update the available fields:
-   * **Next Model**: Select the model that should process the output from the current model.
-   * **Document Type**: Choose the document type the model should classify the input as.
-3.  Click **Save** to apply your changes.
+2. Atualize os campos disponíveis:
+   * **Próximo modelo**: selecione o modelo que deve processar o resultado do modelo atual.
+   * **Tipo de documento**: escolha o tipo que o modelo deve atribuir ao documento de entrada.
+3.  Clique em **Guardar** para aplicar as alterações.
 
     <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>

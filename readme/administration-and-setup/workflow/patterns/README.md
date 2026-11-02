@@ -1,227 +1,233 @@
-# Guias de Padrões de Workflow
+# Guias de padrões de fluxo de trabalho
 
-**Versão:** 1.0
-**Última atualização:** 23 de outubro de 2025
+**Versão:** 1.0 **Última atualização:** 23 de outubro de 2025
 
----
+***
 
 ## Visão geral
 
-Esta secção contém guias abrangentes de padrões de workflow que demonstram como combinar várias cartas de workflow para resolver cenários de negócio comuns. Cada padrão fornece instruções de implementação passo a passo, exemplos completos e boas práticas.
+Este diretório contém guias abrangentes de padrões de fluxo de trabalho que demonstram como combinar vários cartões de fluxo de trabalho para resolver cenários comerciais comuns. Cada padrão fornece instruções de implementação passo a passo, exemplos completos e práticas recomendadas.
 
-**O que são padrões de workflow?**
+**O que são padrões de fluxo de trabalho?**
 
-Os padrões de workflow são soluções comprovadas e reutilizáveis para desafios comuns no processamento de documentos. Em vez de começar do zero, pode utilizar estes padrões como modelos e adaptá-los às suas necessidades específicas.
+Os padrões de fluxo de trabalho são soluções comprovadas e reutilizáveis para desafios comuns de processamento de documentação. Em vez de começar do zero, você pode usar esses padrões como modelos e adaptá-los às suas necessidades específicas.
 
----
+***
 
-## O Workflow Builder num relance
+## Visão geral do criador de fluxo de trabalho
 
-Cada padrão desta página é montado no **Workflow Builder**. Acede-lhe através de **Workflow Dashboard → Workflow List → Add Workflow** (ou abrindo um workflow existente). O dashboard mostra o histórico de execuções e as taxas de êxito/falha de todos os seus workflows:
+Cada padrão nesta página é montado no **Construtor de fluxo de trabalho**. Você pode acessá-lo em **Painel de fluxo de trabalho → Lista de fluxo de trabalho → Adicionar fluxo de trabalho** (ou abrindo um fluxo de trabalho existente). O painel fornece o histórico de execução e as taxas de sucesso/falha de todos os seus fluxos de trabalho:
 
-<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard com totais de execuções, taxas de êxito e falha, o gráfico de execuções de workflow e a atividade recente"><figcaption><p>O Workflow Dashboard — totais de execuções, taxas de êxito/falha e atividade recente de cada workflow.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-c9339f546ced-pt.png" alt="O Workflow Dashboard — totais de execuções, taxas de sucesso/falha e atividade recente de cada workflow. Os nomes e as referências confidenciais de documentos estão ocultos."><figcaption><p>O Workflow Dashboard — totais de execuções, taxas de sucesso/falha e atividade recente de cada workflow. Os nomes e as referências confidenciais de documentos estão ocultos.</p></figcaption></figure>
 
-O separador **Workflow List** lista todos os workflows com o respetivo tipo, ordem de execução e acionador. Utilize **Add Workflow** para criar um novo ou clique num workflow para o abrir no builder:
+A guia **Lista de fluxo de trabalho** lista cada fluxo de trabalho com seu tipo, ordem de execução e gatilho. Use **Adicionar fluxo de trabalho** para criar um novo ou clique em um fluxo de trabalho para abri-lo no construtor:
 
-<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Separador Workflow List com os workflows por tipo, ordem de execução e acionador"><figcaption><p>A Workflow List — cada linha é um workflow que pode abrir, ativar/desativar ou editar.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-dashboard-900cb4050b5b-pt.png" alt="A Workflow List — cada linha é um workflow que você pode abrir, ativar/desativar ou editar. Os nomes e as referências confidenciais de documentos estão ocultos."><figcaption><p>A Workflow List — cada linha é um workflow que você pode abrir, ativar/desativar ou editar. Os nomes e as referências confidenciais de documentos estão ocultos.</p></figcaption></figure>
 
-Um workflow é construído a partir de três grupos de cartas — **When** (o acionador), **And** (condições adicionais) e **Then** (as ações a executar). O exemplo abaixo é acionado em faturas pertencentes a uma sub-organização e atribui-as a um utilizador:
+Um fluxo de trabalho inclui três grupos de cartões: **Quando** (acionador), **E** (condições adicionais) e **Então** (ações). O exemplo não guardado mostra esta estrutura. O tipo de documento, a suborganização e o utilizador ainda precisam de ser selecionados:
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Canvas do Workflow Builder com cartas When, And e Then"><figcaption><p>O canvas do Workflow Builder. Cada padrão abaixo é apenas uma combinação diferente de cartas When / And / Then.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-pt.png" alt="Exemplo não guardado com cartões Quando, E e Então. Configure todos os campos antes da execução. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Exemplo não guardado com cartões Quando, E e Então. Configure todos os campos antes da execução. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
-Clique em **Add Card** em qualquer grupo para abrir a biblioteca de cartas. As cartas estão organizadas por categoria (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …), para que encontre o bloco de construção que cada padrão exige:
+Clique em **Adicionar cartão** em qualquer grupo para abrir a biblioteca de cartões. Os cartões são organizados por categoria (comparar com pedido de compra, cartões de parceiro, campo de documento, data e hora, documento, lógica, status, tabela, responsável, …) para que você possa encontrar o bloco de construção que cada padrão exige:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Diálogo Add Card com as categorias de cartas e as cartas disponíveis"><figcaption><p>A biblioteca <strong>Add Card</strong> — cada carta referida nos padrões abaixo é escolhida a partir daqui.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-pt.png" alt="Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real."><figcaption><p>Cartões disponíveis na categoria selecionada. Configure os campos antes de utilizar. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
 
----
+***
 
-## Padrões disponíveis
+## Padrões Disponíveis
 
-### 1. [Padrão de Integração de API](api-integration-pattern.md)
+### 1. [Padrão de Integração API](api-integration-pattern.md)
 
-**Complexidade:** Média | **Tempo de configuração:** 45–60 minutos
+**Complexidade:** Médio | **Tempo de configuração:** 45-60 minutos
 
-Aprenda a integrar o DocBits com APIs externas para obter, validar e armazenar dados de sistemas externos.
-
-**Casos de uso:**
-- Obter preços em tempo real de sistemas externos
-- Validar informações de fornecedores em bases de dados de referência
-- Consultar detalhes de produtos em sistemas de catálogo
-- Obter taxas de câmbio de serviços de moeda
-- Verificar endereços com serviços de geocodificação
-
-**Cartas utilizadas:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
-
-**[Ver padrão completo →](api-integration-pattern.md)**
-
----
-
-### 2. [Padrão de Gestão de Tarefas](task-management-pattern.md)
-
-**Complexidade:** Baixa-Média | **Tempo de configuração:** 30–45 minutos
-
-Domine a arte de criar, atribuir, acompanhar e gerir tarefas em workflows do DocBits para processos de aprovação e revisão.
+Aprenda como integrar DocBits com APIs externas para buscar, validar e armazenar dados de sistemas externos.
 
 **Casos de uso:**
-- Criar workflows de aprovação
-- Atribuir tarefas de revisão a utilizadores
-- Tratar exceções que exigem intervenção humana
-- Escalar problemas para responsáveis
-- Criar cadeias de aprovação em vários níveis
-- Acompanhar a conclusão e os prazos das tarefas
 
-**Cartas utilizadas:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
+* Obtenha preços em tempo real de sistemas externos
+* Valide as informações do fornecedor em bancos de dados mestres
+* Procure detalhes do produto em sistemas de catálogo
+* Obtenha taxas de câmbio de serviços monetários
+* Verifique endereços com serviços de geocodificação
 
-**[Ver padrão completo →](task-management-pattern.md)**
+**Cartões usados:** CALL\_API, CONDITION\_HTTPS\_REQUEST\_STATUS, ACTION\_SET\_FIELD\_TO\_TEXT, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
 
----
+[**Ver padrão completo →**](api-integration-pattern.md)
 
-### 3. [Padrão de Correspondência de Encomendas (PO Matching)](po-matching-pattern.md)
+***
 
-**Complexidade:** Média-Alta | **Tempo de configuração:** 60–90 minutos
+### 2. [Padrão de gerenciamento de tarefas](task-management-pattern.md)
 
-Implemente workflows abrangentes de correspondência de encomendas para validar faturas contra encomendas com encaminhamento baseado em tolerâncias.
+**Complexidade:** Baixa-Média | **Tempo de configuração:** 30-45 minutos
 
-**Casos de uso:**
-- Validar faturas contra encomendas
-- Detetar erros de preços antes do pagamento
-- Identificar discrepâncias de quantidade
-- Aplicar controlos de aprovisionamento
-- Evitar pagamentos em duplicado
-- Automatizar a correspondência de três vias
-
-**Cartas utilizadas:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
-
-**[Ver padrão completo →](po-matching-pattern.md)**
-
----
-
-### 4. [Padrão de Lógica de Decisão](decision-logic-pattern.md)
-
-**Complexidade:** Média | **Tempo de configuração:** 30–45 minutos
-
-Implemente árvores de decisão complexas e lógica de encaminhamento condicional para processar documentos através de diferentes caminhos com base em regras de negócio.
+Domine a arte de criar, atribuir, rastrear e gerenciar tarefas nos fluxos de trabalho DocBits para processos de aprovação e revisão.
 
 **Casos de uso:**
-- Encaminhar documentos por limiares de valor
-- Aplicar regras diferentes a tipos de documento diferentes
-- Implementar lógica de aprovação em vários níveis
-- Tratar políticas de negócio complexas
-- Criar encaminhamento dinâmico com base em múltiplos critérios
-- Implementar matrizes de aprovação
 
-**Cartas utilizadas:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
+* Crie fluxos de trabalho de aprovação
+* Atribuir tarefas de revisão aos usuários
+* Lidar com exceções que requerem intervenção humana
+* Encaminhar problemas aos gerentes
+* Crie cadeias de aprovação em vários níveis
+* Acompanhe a conclusão das tarefas e os prazos
 
-**[Ver padrão completo →](decision-logic-pattern.md)**
+**Cartões usados:** tasks\_create, ACTION\_ASSIGN\_TO\_USER, ACTION\_SEND\_EMAIL\_TO\_GROUPS, CONDITION\_TASK\_STATUS
 
----
+[**Ver padrão completo →**](task-management-pattern.md)
 
-### 5. [Padrão de Transformação de Dados](data-transformation-pattern.md)
+***
 
-**Complexidade:** Média | **Tempo de configuração:** 30–45 minutos
+### 3. [Padrão de correspondência PO](po-matching-pattern.md)
 
-Transforme, calcule, formate e enriqueça dados de documentos para preparar a exportação, efetuar cálculos e normalizar formatos.
+**Complexidade:** Médio-Alto | **Tempo de configuração:** 60-90 minutos
+
+Implemente fluxos de trabalho abrangentes de correspondência de pedidos de compra para validar faturas em relação a pedidos de compra com roteamento baseado em tolerância.
 
 **Casos de uso:**
-- Calcular totais, subtotais, impostos
-- Converter moedas ou unidades
-- Formatar datas, números, texto
-- Derivar valores de campos existentes
-- Enriquecer dados a partir de fontes externas
-- Normalizar formatos de dados
-- Validar cálculos
 
-**Cartas utilizadas:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+* Validar faturas em relação a pedidos de compra
+* Detecte erros de preços antes do pagamento
+* Identifique discrepâncias de quantidade
+* Aplicar controles de aquisição
+* Evite pagamentos duplicados
+* Automatize a correspondência de três vias
 
-**[Ver padrão completo →](data-transformation-pattern.md)**
+**Cartões usados:** PURCHASE\_ORDER\_FULL\_MATCH, CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE, CONDITION\_DOC\_TO\_PO\_QUANTITY, CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
----
+[**Ver padrão completo →**](po-matching-pattern.md)
+
+***
+
+### 4. [Padrão Lógico de Decisão](decision-logic-pattern.md)
+
+**Complexidade:** Médio | **Tempo de configuração:** 30-45 minutos
+
+Implemente árvores de decisão complexas e lógica de roteamento condicional para processar documentos por diferentes caminhos com base em regras de negócios.
+
+**Casos de uso:**
+
+* Encaminhar documentos por limites de valor
+* Aplicar regras diferentes para diferentes tipos de documentos
+* Implementar lógica de aprovação multinível
+* Lidar com políticas de negócios complexas
+* Crie roteamento dinâmico com base em vários critérios
+* Implementar matrizes de aprovação
+
+**Cartões usados:** CONDITION\_DOC\_FIELD\_AMOUNT, CONDITION\_DOC\_TYPE\_IS\_ISNOT, CONDITION\_SUPPLIER\_STATUS\_IS\_ISNOT, ACTION\_ASSIGN\_TO\_USER
+
+[**Ver padrão completo →**](decision-logic-pattern.md)
+
+***
+
+### 5. [Padrão de transformação de dados](data-transformation-pattern.md)
+
+**Complexidade:** Médio | **Tempo de configuração:** 30-45 minutos
+
+Transforme, calcule, formate e enriqueça dados de documentos para prepará-los para exportação, realizar cálculos e padronizar formatos.
+
+**Casos de uso:**
+
+* Calcular totais, subtotais, impostos
+* Converta moedas ou unidades
+* Formatar datas, números, texto
+* Derive valores de campos existentes
+* Enriqueça os dados de fontes externas
+* Padronize formatos de dados
+* Validar cálculos
+
+**Cartões usados:** ACTION\_CALCULATE\_FIELD, ACTION\_SET\_FIELD\_TO\_TEXT, ACTION\_COPY\_FIELD\_VALUE, CALL\_API, CONDITION\_COMPARE\_TWO\_DOCFIELD\_VALUES
+
+[**Ver padrão completo →**](data-transformation-pattern.md)
+
+***
 
 ## Guia de seleção de padrões
 
-### Por complexidade
+### Por Complexidade
 
-| Complexidade | Padrões | Melhor para |
-|------------|----------|----------|
-| **Baixa-Média** | [Gestão de Tarefas](task-management-pattern.md) | Iniciantes, workflows simples |
-| **Média** | [Integração de API](api-integration-pattern.md)<br>[Lógica de Decisão](decision-logic-pattern.md)<br>[Transformação de Dados](data-transformation-pattern.md) | Utilizadores intermédios, workflows padrão |
-| **Média-Alta** | [PO Matching](po-matching-pattern.md) | Utilizadores avançados, validação complexa |
+| Complexidade      | Padrões                                                                                                                                                                                      | Melhor para                               |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| **Baixo-Médio**  | [Gerenciamento de Tarefas](task-management-pattern.md)                                                                                                                                                 | Iniciantes, fluxos de trabalho simples            |
+| **Médio**      | <p><a href="api-integration-pattern.md">Integração API</a><br><a href="decision-logic-pattern.md">Lógica de Decisão</a><br><a href="data-transformation-pattern.md">Transformação de Dados</a></p> | Usuários intermediários, fluxos de trabalho padrão |
+| **Médio-Alto** | [Correspondência PO](po-matching-pattern.md)                                                                                                                                                         | Usuários avançados, validação complexa     |
 
----
+***
 
 ### Por caso de uso
 
-| Preciso de… | Utilizar este padrão |
-|--------------|------------------|
-| Integrar com sistemas externos | [Padrão de Integração de API](api-integration-pattern.md) |
-| Criar workflows de aprovação | [Padrão de Gestão de Tarefas](task-management-pattern.md) |
-| Validar contra encomendas | [Padrão de Correspondência de Encomendas (PO Matching)](po-matching-pattern.md) |
-| Encaminhar com base em condições | [Padrão de Lógica de Decisão](decision-logic-pattern.md) |
-| Calcular e transformar dados | [Padrão de Transformação de Dados](data-transformation-pattern.md) |
+| Eu preciso...                     | Use este padrão                                              |
+| -------------------------------- | ------------------------------------------------------------- |
+| Integrar com sistemas externos  | [Padrão de Integração API](api-integration-pattern.md)         |
+| Crie fluxos de trabalho de aprovação        | [Padrão de gerenciamento de tarefas](task-management-pattern.md)         |
+| Validar em relação a pedidos de compra | [Padrão de correspondência PO](po-matching-pattern.md)                 |
+| Rota com base nas condições        | [Padrão Lógico de Decisão](decision-logic-pattern.md)           |
+| Calcular e transformar dados     | [Padrão de transformação de dados](data-transformation-pattern.md) |
 
----
+***
 
-### Por setor/departamento
+### Por Indústria/Departamento
 
-| Setor/Departamento | Padrões recomendados |
-|---------------------|---------------------|
-| **Finanças/Contabilidade** | [PO Matching](po-matching-pattern.md), [Gestão de Tarefas](task-management-pattern.md), [Transformação de Dados](data-transformation-pattern.md) |
-| **Compras** | [PO Matching](po-matching-pattern.md), [Lógica de Decisão](decision-logic-pattern.md), [Integração de API](api-integration-pattern.md) |
-| **Operações** | [Gestão de Tarefas](task-management-pattern.md), [Lógica de Decisão](decision-logic-pattern.md) |
-| **TI/Integração** | [Integração de API](api-integration-pattern.md), [Transformação de Dados](data-transformation-pattern.md) |
-| **Todos os departamentos** | [Lógica de Decisão](decision-logic-pattern.md), [Gestão de Tarefas](task-management-pattern.md) |
+| Indústria/Departamento    | Padrões Recomendados                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Finanças/Contabilidade** | [Correspondência de PO](po-matching-pattern.md), [Gerenciamento de Tarefas](task-management-pattern.md), [Transformação de Dados](data-transformation-pattern.md) |
+| **Aquisições**        | [Correspondência de PO](po-matching-pattern.md), [Lógica de decisão](decision-logic-pattern.md), [Integração de API](api-integration-pattern.md)           |
+| **Operações**         | [Gerenciamento de Tarefas](task-management-pattern.md), [Lógica de Decisão](decision-logic-pattern.md)                                                  |
+| **TI/Integração**     | [Integração de API](api-integration-pattern.md), [Transformação de Dados](data-transformation-pattern.md)                                        |
+| **Todos os Departamentos**    | [Lógica de Decisão](decision-logic-pattern.md), [Gerenciamento de Tarefas](task-management-pattern.md)                                                  |
 
----
+***
 
-## Como utilizar estes padrões
+## Como usar esses padrões
 
-### Passo 1: Escolher um padrão
+### Etapa 1: escolha um padrão
 
-1. Reveja as descrições dos padrões acima
-2. Identifique qual o padrão que corresponde ao seu caso de uso
-3. Verifique a complexidade e o tempo de configuração estimado
-4. Reveja a secção «Quando utilizar» no guia do padrão
+1. Revise as descrições dos padrões acima
+2. Identifique qual padrão corresponde ao seu caso de uso
+3. Verifique a complexidade e o tempo estimado de configuração
+4. Revise a seção "Quando usar" no guia de padrões
 
-### Passo 2: Rever os pré-requisitos
+### Etapa 2: revisar os pré-requisitos
 
 Cada guia de padrão lista:
-- Conhecimentos necessários
-- Guias relacionados a ler primeiro
-- Cartas que serão utilizadas
-- Requisitos de configuração
 
-### Passo 3: Seguir as instruções passo a passo
+* Conhecimento necessário
+* Guias relacionados para ler primeiro
+* Cartões que serão usados
+* Requisitos de configuração
+
+### Etapa 3: siga as instruções passo a passo
 
 Cada padrão fornece:
-- Exemplo completo de workflow
-- Guia de implementação passo a passo
-- Modelos de configuração
-- Exemplos do mundo real
-- Sugestões de resolução de problemas
 
-### Passo 4: Personalizar conforme as suas necessidades
+* Exemplo completo de fluxo de trabalho
+* Guia de implementação passo a passo
+* Modelos de configuração
+* Exemplos do mundo real
+* Dicas para solução de problemas
 
-- Adapte o exemplo às suas regras de negócio
-- Ajuste limiares e tolerâncias
-- Modifique a lógica de encaminhamento
-- Acrescente/remova passos conforme necessário
-- Teste exaustivamente antes da utilização em produção
+### Etapa 4: personalize de acordo com suas necessidades
 
-### Passo 5: Monitorizar e otimizar
+* Adapte o exemplo às suas regras de negócios
+* Ajuste limites e tolerâncias
+* Modificar lógica de roteamento
+* Adicione/remova etapas conforme necessário
+* Teste minuciosamente antes do uso em produção
 
-- Acompanhe o desempenho do workflow
-- Monitorize as taxas de êxito
-- Recolha feedback dos utilizadores
-- Refine a configuração
-- Documente as personalizações
+### Etapa 5: monitorar e otimizar
 
----
+* Acompanhe o desempenho do fluxo de trabalho
+* Monitore as taxas de sucesso
+* Colete feedback do usuário
+* Refinar configuração
+* Personalizações de documentos
+
+***
 
 ## Combinações de padrões
 
 Muitos cenários do mundo real exigem a combinação de vários padrões:
 
-### Exemplo 1: Processamento completo de faturas
+### Exemplo 1: Processamento completo de fatura
 
 ```
 1. API Integration Pattern → Fetch current pricing
@@ -231,7 +237,7 @@ Muitos cenários do mundo real exigem a combinação de vários padrões:
 5. Task Management Pattern → Create approval tasks
 ```
 
-### Exemplo 2: Aprovação de faturas de valor elevado
+### Exemplo 2: Aprovação de fatura de alto valor
 
 ```
 1. Data Transformation Pattern → Calculate amounts
@@ -240,7 +246,7 @@ Muitos cenários do mundo real exigem a combinação de vários padrões:
 4. API Integration Pattern → Notify external systems
 ```
 
-### Exemplo 3: Tratamento de exceções
+### Exemplo 3: Tratamento de Exceções
 
 ```
 1. PO Matching Pattern → Detect variances
@@ -249,60 +255,134 @@ Muitos cenários do mundo real exigem a combinação de vários padrões:
 4. Data Transformation Pattern → Calculate impact
 ```
 
----
+***
 
-## Modelos de padrões
+## Modelos de padrão
 
-Cada padrão inclui estas secções normalizadas:
+Cada padrão inclui estas seções padronizadas:
 
-1. **Visão geral** – O que o padrão faz
-2. **Quando utilizar** – Casos de uso adequados
-3. **Exemplo completo** – Cenário do mundo real
-4. **Passo a passo** – Instruções de implementação
-5. **Configuração** – Modelos de configuração de cartas
-6. **Diagrama de workflow** – Representação visual
-7. **Variantes avançadas** – Implementações alternativas
-8. **Tratamento de erros** – Problemas comuns e soluções
-9. **Lista de verificação de testes** – Passos de validação
-10. **Padrões relacionados** – Padrões complementares
-11. **Guias relacionados** – Documentação de referência
+1. **Visão geral** - O que o padrão faz
+2. **Quando usar** - Casos de uso apropriados
+3. **Exemplo completo** - Cenário do mundo real
+4. **Passo a passo** - Instruções de implementação
+5. **Configuração** - Modelos de configuração de cartão
+6. **Diagrama de fluxo de trabalho** - Representação visual
+7. **Variações Avançadas** - Implementações alternativas
+8. **Tratamento de erros** - Problemas e soluções comuns
+9. **Lista de Verificação de Teste** - Etapas de validação
+10. **Padrões Relacionados** - Padrões complementares
+11. **Guias Relacionados** - Documentação de referência
 
----
+***
 
-## Obter ajuda
+## Obtendo ajuda
 
-### Recursos de apoio para padrões
+### Recursos de suporte a padrões
 
 **Documentação:**
-- [Índice completo do guia de workflows](../README.md)
-- [Guias de cartas individuais](../then/action/)
-- [Referência de cartas de condição](../and/condition-cards-complete-guide.md)
 
-**Contacto:**
-- Feedback sobre padrões: docs@docbits.com
-- Suporte técnico: support@docbits.com
-- Ajuda na implementação: consulting@docbits.com
+* [Índice completo do guia de fluxo de trabalho](..)
+* [Guias de cartões individuais](../then/action)
+* [Referência de cartões de condição](../and/condition-cards-complete-guide.md)
+* [Mapa de vinculação de fluxo de trabalho](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_MAP.md)
 
----
+**Recursos Adicionais:**
 
-## Próximos passos
+* [Guia de referência rápida](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Notas de versão de outubro de 2025](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
+* [Referência de versão de cartão](../cards-overview/po-comparison-versions-guide.md)
 
-**Novo nos padrões de workflow?**
-1. Comece com o [Padrão de Gestão de Tarefas](task-management-pattern.md) – o mais fácil de entender
-2. Reveja o [Padrão de Lógica de Decisão](decision-logic-pattern.md) – fundamental para todos os workflows
-3. Explore o [Padrão de Integração de API](api-integration-pattern.md) – necessidade de integração frequente
+**Contato:**
+
+* Feedback sobre padrão: docs@docbits.com
+* Suporte Técnico: support@docbits.com
+* Ajuda de implementação: consultor@docbits.com
+
+***
+
+## Estatísticas de padrão
+
+| Métrica                      | Valor               |
+| --------------------------- | ------------------- |
+| **Padrões totais**          | 5                   |
+| **Total de cartões cobertos**     | 30+                 |
+| **Documentação Combinada**  | \~1.200 linhas       |
+| **Cenários de exemplo**       | 25+                 |
+| **Modelos de configuração** | 15+                 |
+| **Diagramas de fluxo de trabalho**       | 5 diagramas completos |
+| **Referências cruzadas**        | Mais de 87 links internos  |
+
+***
+
+## Contribuindo para Padrões
+
+Tem um padrão de fluxo de trabalho que beneficiaria outras pessoas?
+
+**Diretrizes de contribuição de padrões:**
+
+1. **Documente seu fluxo de trabalho**
+   * Cenário de negócios claro
+   * Implementação passo a passo
+   * Exemplos de configuração de trabalho
+   * Resultados de testes do mundo real
+2. **Seguir modelo de padrão**
+   * Use estrutura de seção padrão
+   * Incluir todos os elementos necessários
+   * Forneça diagramas/exemplos
+   * Adicionar guia de solução de problemas
+3. **Enviar para revisão**
+   * E-mail para: docs@docbits.com
+   * Incluir: descrição do padrão, casos de uso, guia de implementação
+   * Analisaremos e possivelmente adicionaremos à documentação oficial
+
+**Benefícios:**
+
+* Ajude outros usuários DocBits
+* Seja reconhecido na documentação
+* Melhore a base geral de conhecimento do produto
+* Receba feedback sobre sua implementação
+
+***
+
+## Registro de alterações
+
+### Versão 1.0 (23 de outubro de 2025)
+
+* Lançamento inicial de 5 padrões de fluxo de trabalho abrangentes
+* Padrão de integração de API adicionado
+* Padrão de gerenciamento de tarefas adicionado
+* Padrão de correspondência PO adicionado
+* Padrão lógico de decisão adicionado
+* Padrão de transformação de dados adicionado
+* Link de referência cruzada implementado (87 links)
+* Guia de seleção de padrões criado
+
+***
+
+## Próximas etapas
+
+**Novo em padrões de fluxo de trabalho?**
+
+1. Comece com [Padrão de gerenciamento de tarefas](task-management-pattern.md) - mais fácil de entender
+2. Revise [Padrão lógico de decisão](decision-logic-pattern.md) - fundamental para todos os fluxos de trabalho
+3. Explore [Padrão de integração de API](api-integration-pattern.md) - necessidade comum de integração
 
 **Pronto para implementar?**
-1. Escolha o seu padrão da lista acima
-2. Leia o guia completo do padrão
-3. Verifique os pré-requisitos e os guias relacionados
+
+1. Escolha seu padrão na lista acima
+2. Leia o guia de padrões completo
+3. Revise os pré-requisitos e guias relacionados
 4. Siga as instruções passo a passo
-5. Teste com documentos de exemplo
-6. Avance para produção
-7. Monitorize e otimize
+5. Teste com documentos de amostra
+6. Implantar na produção
+7. Monitore e otimize
 
----
+**Precisa de mais ajuda?**
 
-**Última atualização:** 23 de outubro de 2025
-**Mantido por:** Equipa de Documentação
-**Versão:** 1.0
+* Revise [Visão geral da documentação do fluxo de trabalho](..)
+* Verifique [Guia de referência rápida](https://github.com/Fellow-Consulting-AG/docbits/tree/main/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Entre em contato com a equipe de suporte
+
+***
+
+**Última atualização:** 23 de outubro de 2025 **Mantido por:** Equipe de documentação **Versão:** 1.0

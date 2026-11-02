@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Supplier on Invoice
+# Fornitore su fattura
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
 
 ## **Scopo**
 
@@ -12,10 +12,10 @@ Questa scheda DocBits consente un confronto dettagliato, confrontando il fornito
 
 ## **Funzionalità:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** Questa scheda verifica se il fornitore nella fattura è lo stesso indicato nella conferma d'ordine oppure no.
+* **Fornitore su fattura Fornitore su ordine d'acquisto:** Questa scheda verifica se il fornitore nella fattura è lo stesso indicato nella conferma d'ordine oppure no.
 * **Valore dell'operatore:** Gli utenti possono impostare condizioni specifiche come: se il fornitore che ha emesso la fattura è lo stesso indicato nel PO oppure no. Gli operatori disponibili includono:
   * **Is (=):** Verifica se il fornitore nella fattura corrisponde al fornitore nella conferma d'ordine.
-  * **Is not (≠):** Garantisce che il fornitore che ha emesso la fattura sia lo stesso indicato nella conferma d'ordine.
+  * **Non è (≠):** Garantisce che il fornitore che ha emesso la fattura sia lo stesso indicato nella conferma d'ordine.
 
 ## **Utilizzo:**
 

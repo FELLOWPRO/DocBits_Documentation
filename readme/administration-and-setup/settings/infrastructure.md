@@ -4,7 +4,7 @@ La pagina **Infrastruttura** offre agli amministratori una visione in tempo real
 
 > **Accesso:** Infrastruttura è una pagina riservata agli amministratori. Apri **Impostazioni → Organizzazione e Accesso → Infrastruttura**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Pagina Infrastruttura con la scheda Topologia aperta"><figcaption><p>La pagina Infrastruttura, scheda Topologia</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-it.png" alt="Panoramica dell’infrastruttura."><figcaption><p>Panoramica dell’infrastruttura.</p></figcaption></figure>
 
 La pagina è suddivisa in tre schede:
 
@@ -49,7 +49,7 @@ I componenti che appartengono a un modulo opzionale (Ricerca full-text, DocFlow,
 
 La scheda Elaborazione mostra la pipeline di elaborazione dei documenti della **tua organizzazione** — quando ciascuna fase è stata eseguita l'ultima volta e se il lavoro scorre o si accumula.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Tabella di elaborazione con i badge di stato"><figcaption><p>Stato dell'elaborazione per fase per la tua organizzazione</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t004-it.png" alt="Processi dell’infrastruttura e ultima esecuzione. Le indicazioni relative del tempo restano in tedesco nell’interfaccia."><figcaption><p>Processi dell’infrastruttura e ultima esecuzione. Le indicazioni relative del tempo restano in tedesco nell’interfaccia.</p></figcaption></figure>
 
 | Colonna | Descrizione |
 |---------|-------------|
@@ -71,7 +71,7 @@ Gli errori e *in corso* sono segnali indipendenti, quindi una fase può mostrare
 
 La scheda Attività pianificate elenca le attività ricorrenti in background che mantengono DocBits operativo (aggiornamenti della cache, avvisi di stato, timeout dei documenti, sincronizzazioni in uscita e altro) e conferma che ciascuna venga avviata in orario.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Tabella delle attività pianificate"><figcaption><p>Attività ricorrenti in background e il loro stato di pianificazione</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/prior-t005-it.png" alt="Attività pianificate dell’infrastruttura. Le indicazioni relative del tempo restano in tedesco nell’interfaccia."><figcaption><p>Attività pianificate dell’infrastruttura. Le indicazioni relative del tempo restano in tedesco nell’interfaccia.</p></figcaption></figure>
 
 | Colonna | Descrizione |
 |---------|-------------|

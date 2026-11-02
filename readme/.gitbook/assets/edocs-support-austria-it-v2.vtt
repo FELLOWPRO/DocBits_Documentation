@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.619
+ebInterface 4.3, 5.0, 6.0 e 6.1 hanno voci
+separate. Abbinate lo spazio dei nomi XML
+
+formats_02
+00:00:09.619 --> 00:00:14.368
+alla versione configurata. Uno spazio dei
+nomi diverso può richiedere un’altra
+
+formats_03
+00:00:14.368 --> 00:00:15.400
+mappatura.
+
+workflow_01
+00:00:16.150 --> 00:00:21.909
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:21.909 --> 00:00:28.944
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:28.944 --> 00:00:29.867
+attiva.
+
+accept_01
+00:00:30.617 --> 00:00:36.596
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:36.596 --> 00:00:41.588
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:41.588 --> 00:00:45.267
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

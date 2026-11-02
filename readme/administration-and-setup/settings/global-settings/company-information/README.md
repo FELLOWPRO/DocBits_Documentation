@@ -1,17 +1,92 @@
-# Informazioni sulla Società
+# Informazioni aziendali
 
-1. **Nome della Società**: Il nome legale della società come registrato.
-2. **Via + Numero**: L'indirizzo fisico dell'ufficio principale o della sede della società.
-3. **Codice postale**: Il codice ZIP o postale dell'indirizzo della società.
-4. **Città**: La città in cui si trova la società.
-5. **Stato**: Lo stato o la regione in cui è basata la società.
-6. **Paese**: Il paese di operazione della società.
-7. **ID Società**: Un identificatore univoco per la società, che potrebbe essere utilizzato internamente o per integrazioni con altri sistemi.
-8. **ID Fiscale**: Il numero di identificazione fiscale della società, importante per le operazioni finanziarie e la segnalazione.
-9. **ID Registro Commerciale**: Il numero di registrazione della società nel registro commerciale, che potrebbe essere importante per la documentazione legale e ufficiale.
-10. **Numero di Telefono Ufficiale della Società**: Il numero di contatto principale per la società.
-11. **Email Ufficiale della Società**: L'indirizzo email principale che verrà utilizzato per le comunicazioni ufficiali.
+## Video tutorial: Società, abbonamento e controllo
 
-Le informazioni inserite qui possono essere cruciali per garantire che documenti come fatture, corrispondenza ufficiale e report siano correttamente formattati con i dettagli corretti della società. Aiuta anche a mantenere la coerenza nel modo in cui la società è rappresentata in varie comunicazioni esterne e documenti. Dopo aver inserito o aggiornato le informazioni, l'amministratore deve salvare le modifiche cliccando sul pulsante "Salva" per garantire che tutte le modifiche siano applicate a livello di sistema.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/it.mp4" %}
+Informazioni sulla società, piano di abbonamento e registri di controllo in DocBits
+{% endembed %}
 
-Inoltre, la sezione fornisce una panoramica del piano di abbonamento, mostrando quanti giorni mancano, le date di inizio e fine, e un contatore di utilizzo dell'abbonamento che tiene traccia del consumo di token di servizio rispetto a quanto è allocato nel piano. Questo può aiutare gli amministratori a monitorare e pianificare il rinnovo o l'aggiornamento dell'abbonamento in base alle tendenze di utilizzo.
+Il video mostra le informazioni e le preferenze della società, il piano di abbonamento, l'attività di accesso e i registri di controllo.
+
+<figure><img src="../../../../.gitbook/assets/prior-i001-it.png" alt="Informazioni sull’azienda con i valori dell’organizzazione nascosti."><figcaption><p>Informazioni sull’azienda con i valori dell’organizzazione nascosti.</p></figcaption></figure>
+
+La pagina Company Information ti permette di gestire il profilo della tua azienda, le preferenze e i dettagli dell'abbonamento. È organizzata nelle sezioni seguenti:
+
+## Informazioni sull’azienda
+
+Questa sezione contiene i dati principali della tua azienda, raggruppati in quattro aree:
+
+### Identità dell’azienda
+
+* **Nome** *(obbligatorio)*: la ragione sociale della tua azienda.
+
+### Indirizzo
+
+* **Via + numero**: l'indirizzo (via e numero civico) della tua azienda.
+* **Codice postale**: il codice postale (CAP).
+* **Città**: il nome della città.
+* **Paese**: seleziona il tuo paese dal menu a discesa.
+
+### Informazioni legali
+
+* **ID azienda**: un identificatore univoco della tua azienda, usato per le integrazioni e come riferimento interno.
+* **Codice fiscale**: il tuo numero di identificazione fiscale per la rendicontazione finanziaria.
+* **ID del registro commerciale**: il tuo numero di registro commerciale per la documentazione legale.
+
+### Contatto
+
+* **Telefono ufficiale dell’azienda**: il numero di telefono principale della tua azienda.
+* **Posta elettronica**: l'indirizzo e-mail principale usato per le comunicazioni ufficiali.
+
+Dopo aver inserito o aggiornato i campi, fai clic su **Salva** per applicare le modifiche. Le icone **?** accanto agli identificatori legali mostrano indicazioni aggiuntive sul campo. Seleziona il titolo della sezione per espandere o comprimere il modulo.
+
+## Domini di posta elettronica
+
+Gli amministratori dell'organizzazione possono aprire **Impostazioni → Informazioni aziendali → Domini di posta elettronica** per gestire i domini usati per l'assegnazione automatica all'organizzazione. Quando una persona accede con Microsoft o Google e non è ancora membro di un'organizzazione, DocBits può assegnarla a questa organizzazione se il suo indirizzo e-mail utilizza uno dei domini elencati. Un dominio può appartenere a una sola organizzazione.
+
+<figure><img src="../../../../.gitbook/assets/prior-i002-it.png" alt="Configurazione dei domini e-mail dell’azienda."><figcaption><p>Configurazione dei domini e-mail dell’azienda.</p></figcaption></figure>
+
+Inserisci solo il dominio, ad esempio `example.com`, nel campo e seleziona **Aggiungi dominio** oppure premi Invio. Il primo dominio diventa il dominio primario. Se sono elencati più domini, usa **Rendere primario** su un'altra riga per cambiarlo, oppure l'icona del cestino per rimuovere un dominio. Errori come un dominio non valido, un provider di posta personale o un dominio già assegnato altrove compaiono sotto il campo. **Nessun dominio ancora assegnato** significa che questa organizzazione non ha alcuna regola di dominio.
+
+Prima di aggiungere un dominio, verifica quale organizzazione deve ricevere i nuovi accessi. Per gestire le appartenenze esistenti, continua con [Utenti](../groups-users-and-permissions/users/README.md).
+
+## Preferenze dell’azienda
+
+Configura le impostazioni predefinite valide per tutta l'azienda:
+
+* **Modello di data**: scegli come vengono visualizzate le date in tutto DocBits (ad es. `%m/%d/%Y`, `%d.%m.%Y`).
+* **Formattazione degli importi**: seleziona il formato numerico degli importi (ad es. Deutsch per `1.000,00`, English per `1,000.00`).
+* **Nuova finestra di dialogo per le informazioni sulla versione**: attiva o disattiva la visualizzazione di una notifica agli utenti quando viene rilasciata una nuova versione di DocBits.
+
+Fai clic su **Salva** dopo aver apportato le modifiche.
+
+## Colore dell’applicazione
+
+Personalizza il colore principale dell'interfaccia di DocBits. È utile per distinguere visivamente ambienti diversi (ad es. dev e produzione).
+
+* **Colore**: inserisci un codice colore esadecimale (ad es. `#2388AE`) oppure usa il selettore di colori.
+* Fai clic su **Salva** per applicare, oppure su **Ripristina** per ripristinare il colore predefinito.
+
+## Piano di abbonamento
+
+Visualizza i tuoi piani di abbonamento attivi e i relativi dettagli:
+
+* **Nome del piano**: il nome di ciascun piano attivo (ad es. DocBits, DocFlow Users, DocSearch).
+* **giorni rimasti**: quanti giorni mancano alla scadenza del piano.
+* **Start Date / End Date**: il periodo di abbonamento.
+* **Numero di utenti**: il numero totale di utenti della tua organizzazione.
+* **Numero di sotto-organizzazioni**: il numero di sotto-organizzazioni configurate.
+* **Numero di fornitori**: il numero di fornitori registrati.
+
+## Utilizzo dell’abbonamento
+
+Monitora il consumo mensile di token e workflow:
+
+| Colonna | Descrizione |
+|--------|-------------|
+| **Tipo** | Il tipo di utilizzo (Document o Workflow). |
+| **From / To** | Le date del periodo di fatturazione. |
+| **Token utilizzati** | Il numero di token consumati nel periodo corrente. |
+| **Token rimanenti** | I token ancora disponibili nel periodo corrente. |
+
+Usa il pulsante **Selezionare** per filtrare per intervalli di date specifici.

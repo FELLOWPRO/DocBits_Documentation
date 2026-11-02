@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.506
+Uruguay CFE ha voci generiche, 24 e 25.
+Sono elencate anche E-Factura ed E-Nota
+
+formats_02
+00:00:07.506 --> 00:00:11.941
+Credito. Le voci per le note di credito
+non hanno insiemi di componenti di
+
+formats_03
+00:00:11.941 --> 00:00:17.804
+estrazione dedicati nello stato esaminato.
+Confermate la versione CFE e la mappatura
+
+formats_04
+00:00:17.804 --> 00:00:21.833
+effettivamente utilizzata per fatture o
+note di credito.
+
+workflow_01
+00:00:22.583 --> 00:00:28.342
+Aprite E-Doc per il formato rilevato.
+Confrontate Transformation, Preview ed
+
+workflow_02
+00:00:28.342 --> 00:00:35.377
+Extraction Paths. Le regole Custom hanno
+la precedenza. Salvare una bozza non la
+
+workflow_03
+00:00:35.377 --> 00:00:36.300
+attiva.
+
+accept_01
+00:00:37.050 --> 00:00:43.029
+Provate una fattura e una nota di credito,
+se applicabile. Verificate gli importi, le
+
+accept_02
+00:00:43.029 --> 00:00:48.021
+parti e il tipo di documento esportato.
+L’analisi del file non dimostra
+
+accept_03
+00:00:48.021 --> 00:00:51.700
+l’autorizzazione fiscale né la consegna
+tramite rete.
+

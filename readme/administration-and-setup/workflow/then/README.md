@@ -1,80 +1,73 @@
-# Then
+# Allora
 
-## Panoramica delle schede di azione "Then..."
+Una carta **Allora** indica a un flusso di lavoro cosa fare dopo l'attivazione **Quando** e qualsiasi condizione **E**. Nel **Costruttore di flussi di lavoro**, seleziona **Aggiungi carta** in **Poi...**. Scegli una categoria a sinistra o digita un nome in **Cerca scheda**. Seleziona l'anteprima di una carta per aggiungerla, compila i campi mostrati sulla carta e salva il flusso di lavoro. Scorri all'interno del selettore per vedere più carte. Seleziona **×** per chiuderlo senza aggiungere una carta. Vedi [Flusso di lavoro](..) per la sequenza completa.
 
-### **1. Azioni Document Field:**
+Le anteprime seguenti mostrano le azioni disponibili, non le impostazioni completate. Scegli l'azione che corrisponde al risultato desiderato.
 
-* **Invert Checkbox:** Questa azione inverte lo stato di un campo casella di controllo in un documento.
-* **Set Checkbox:** Imposta lo stato di un campo casella di controllo su vero (selezionato) o falso (deselezionato).
-* **Set Field to Text:** Questa azione imposta un campo specificato del documento su un determinato valore testuale.
+## Campo documento
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Imposta o inverti una casella di controllo, inserisci del testo in un campo o copia un campo in un altro. Scegli i nomi dei campi e il valore richiesti dalla carta. Vedi [Campo documento](document-field).
 
-### **2. Azioni Document:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-c9741b344fe2-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-* **Approve the Document:** Contrassegna un documento come approvato all'interno del sistema.
-* **Reject the Document:** Contrassegna un documento come rifiutato.
+## Documento
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Scegli **Approva il documento** o **Rifiuta il documento** quando il flusso di lavoro dovrebbe prendere quella decisione. Utilizzare prima una condizione **E** se l'approvazione deve dipendere da un controllo. Vedi [Documento](document).
 
-### **3. Azioni Export:**
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-ed7d5718f538-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-* **Export document with export configuration:** Avvia il processo di esportazione con una specifica configurazione di esportazione.
-* **Start Export:** Avvia il processo di esportazione.
+## Logica
 
+Utilizza queste schede per convertire valori tra formati numerici, di testo e booleani oppure leggere un valore da JSON. Scegli i campi di input e output sulla scheda selezionata.
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e019409102f9-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Stato
 
-### **4. Azioni Status:**
+Scegli **Cambia stato** per spostare il documento nello stato selezionato. La carta può anche attivare un altro flusso di lavoro. Vedi [Stato](status).
 
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e5662026a68c-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
+## Prompt e script
 
-* **Change Status:** Cambia lo stato di un documento o di un'attività in un nuovo stato specificato.
+Scegli questa categoria per eseguire uno script di prompt DocOperator. Selezionare lo script e le variabili richieste dalla scheda. La scheda offre anche impostazioni di esecuzione come i nuovi tentativi.
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-f9dd7edcbb47-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-### **5. Azioni Task:**
+## Esportazione
 
-* Assegnazioni e notifiche:
-  * **Assign Task:** Crea e assegna un'attività con dettagli specifici a un individuo o a un gruppo, con la possibilità di notificarli via email.
-  * **Create a New Task:** Simile all'assegnazione ma focalizzata sulla creazione di un'attività completamente nuova all'interno del sistema.
+Avvia un'esportazione, esporta con una configurazione scelta o accoda un'esportazione finale. Scegli la configurazione di esportazione e l'opzione delle attività in sospeso mostrate sulla tua scheda. Vedi [Esporta](export).
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-11f244132c25-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-### **6. Azioni Table:**
+## Compito
 
-* **Calculate in Table:** Esegue calcoli sui dati di tabella in base a condizioni specificate e memorizza i risultati in una colonna designata.
-* **Change Entries:** Aggiorna le voci in una tabella in base a condizioni specificate.
+Crea un'attività o una notifica e assegnala a un utente o gruppo. Inserisci il titolo, la descrizione, la priorità e le impostazioni di notifica richieste dalla carta. Alcune carte vengono assegnate in sequenza. Vedi [Attività](task).
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-45efe5c84c12-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-### **7. Azioni Assignee:**
+## E-mail
 
-* **Assign User from Field:** Assegna un utente a un'attività o documento in base ai dati utente memorizzati in un campo specifico, con un'opzione per un utente di riserva se il principale non è disponibile.
-* **Assign Document to User or Group:** Assegna direttamente un documento a un utente o gruppo, garantendo che la responsabilità sia attribuita in modo appropriato.
+Invia un'e-mail utilizzando un modello selezionato, ai destinatari o ai gruppi. Scegli il modello e la destinazione sulla carta.
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-1fa958085397-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-### **8. Azioni di interazione esterna:**
+## Tabella
 
-* **Call API:** Invia una richiesta a un'API esterna, personalizzabile con metodi, parametri e dati specifici.
-* **Send HTTPS Request:** Simile alle chiamate API ma formattata specificamente per i protocolli HTTPS.
+Modificare le voci o calcolare i valori in una tabella di documenti. Seleziona la tabella, le colonne, l'operatore e la colonna dei risultati richiesti dalla scheda. Vedi [Tabella](table).
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-e25e69c2b11c-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-### **9. Elaborazione avanzata:**
+## Assegnatario
 
-* **Run Workflow:** Attiva un altro workflow all'interno del sistema, consentendo concatenazioni di processi complesse.
+Assegna il documento a un utente, gruppo, destinatario o organizzazione secondaria. Alcune carte utilizzano un campo o una tabella decisionale e offrono un fallback. Scegli la destinazione giusta e fallback sulla carta selezionata. Vedi [Assegnatario](assignee).
 
-#### Applicazione pratica
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-aa4f244a25b3-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-Queste schede di azione vengono utilizzate per automatizzare le risposte in base a trigger specifici identificati nelle parti precedenti della configurazione del workflow. Ad esempio:
+## Azione
 
-* Se un documento viene identificato come bisognoso di revisione, l'azione "Approve the Document" può essere attivata automaticamente una volta che supera tutte le condizioni specificate.
-* Per le attività di gestione dati, le azioni "Set Checkbox" o "Set Field to Text" garantiscono che i campi del documento vengano aggiornati automaticamente, riducendo l'inserimento manuale dei dati e il potenziale di errori.
-* Attività complesse come le interazioni con le API o i cambiamenti di stato semplificano le interazioni non solo all'interno del sistema ERP ma anche con servizi e strumenti esterni, migliorando l'integrazione e la funzionalità.
+Esegui un altro flusso di lavoro, invia una richiesta HTTPS, chiama un'API o utilizza la scheda per il calcolo dell'aumento dei costi. Queste azioni possono influenzare altri sistemi; chiedi al tuo amministratore quale endpoint e impostazioni utilizzare. Vedi [Azione](action).
 
-### Conclusione
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-585799ec1e01-it.png" alt="Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale."><figcaption><p>Schede disponibili nella categoria selezionata. Configurare i campi prima dell’uso. Alcune etichette dell’interfaccia di questa versione sono ancora in inglese o tradotte in modo non corretto. Le spiegazioni di questa pagina sono tradotte; l’immagine mostra l’interfaccia reale.</p></figcaption></figure>
 
-La sezione "Then..." del tuo sistema di workflow fornisce strumenti robusti per definire azioni precise che dovrebbero verificarsi come risultato del soddisfacimento delle condizioni nel workflow. Utilizzando efficacemente queste azioni, le aziende possono automatizzare i processi di routine, garantire l'accuratezza dei dati e rispondere dinamicamente alle informazioni e agli stati del sistema che cambiano. Comprendere come configurare e utilizzare queste azioni è fondamentale per massimizzare l'efficienza e l'efficacia delle capacità di workflow del tuo sistema ERP.
+[Campi dettagliati della scheda logica, percorsi JSON, trigger e test](../cards-overview/logic-cards-guide.md).

@@ -1,5 +1,22 @@
 # Classificazione ed estrazione
 
+## Quale impostazione funziona in quale fase del processo?
+
+<figure><img src="../../../../.gitbook/assets/process-extraction-it-20261028.png" alt="Dal file ai dati riconosciuti: Visualizza separatamente il tipo di documento, l&#x27;origine dati e il percorso di estrazione."><figcaption><p>Visualizza separatamente il tipo di documento, l&#x27;origine dati e il percorso di estrazione. Il diagramma è schematico; le impostazioni attive della tua organizzazione determinano il comportamento effettivo.</p></figcaption></figure>
+
+La classificazione risponde alla domanda **“Che tipo di documento è questo?”**. L'estrazione risponde **“Che valori contiene?”**. Le impostazioni in questa pagina influiscono su diversi punti di elaborazione e non devono essere intese come un singolo interruttore AI.
+
+1. **Preparare l'input:** Per PDFs è possibile utilizzare il testo esistente o OCR; i documenti elettronici supportati possono fornire valori strutturati. Una divisione attivata può separare un documento in entrata in base al codice a barre configurato o ai criteri QR.
+2. **Determina il tipo di documento:** Regole e modelli di classificazione assegnano i documenti a un tipo e, se necessario, a un sottotipo. Questa assegnazione deve essere distinta dalla successiva estrazione di campi e tabelle.
+3. **Estrai valori:** le tabelle possono seguire percorsi diversi a seconda della configurazione e delle regole salvate applicabili. I campi di intestazione hanno i propri indicatori di origine. Il modello AI selezionato da solo quindi non spiega ogni valore di riga o campo.
+4. **Traccia il risultato:** nella schermata di convalida, controlla quale scheda della tabella contiene le righe e quale indicatore di origine ha un campo di intestazione. Se manca una fase di elaborazione, leggere i registri del documento prima di modificare le impostazioni.
+
+### Distinguere tra percorso regole e percorso AI
+
+Le opportune regole della tabella salvate possono determinare l'estrazione della tabella per il modello o il fornitore pertinente. Senza regole adeguate, il percorso AI può essere utilizzato quando è attivata l'estrazione della tabella AI. Le singole colonne possono avere le proprie opzioni AI. Una fonte AI per un campo di intestazione non significa che l'intera tabella provenga dall'AI.
+
+La guida diagnostica [Quale percorso di estrazione è stato utilizzato?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) spiega le schede, gli identificatori di origine e i registri. La pagina [Modello di intelligenza artificiale](ai-model.md) spiega gli standard dell'organizzazione e le sostituzioni relative al modello.
+
 ## Panoramica
 
 Nelle impostazioni di **Classificazione ed estrazione** puoi:
@@ -16,9 +33,9 @@ Questa pagina spiega in dettaglio tutte le impostazioni disponibili.
 ## **Accedere alle impostazioni di Classificazione ed estrazione**
 
 Per accedere alle impostazioni di **Classificazione ed estrazione**, vai su:\
-**Impostazioni → Elaborazione del documento → Classificazione ed estrazione**
+**Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione**
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc862-settings-nav-it-20261012.png" alt="Navigazione delle impostazioni con Elaborazione Documenti e Classificazione ed Estrazione evidenziati"><figcaption><p>Apri <strong>Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione</strong>.</p></figcaption></figure>
 
 ## Suddivisione dei documenti
 
@@ -59,7 +76,7 @@ Nella sezione **Formattazione degli importi** hai due opzioni:
 {% hint style="info" %}
 **Prerequisiti per un'estrazione delle tabelle funzionante**
 
-* Il tipo di documento ha delle **colonne della tabella** (Impostazioni → Impostazioni Globali → Tipi di Documento → [Colonne della Tabella](../../global-settings/document-types/table-columns.md)). Senza colonne non c'è nulla in cui estrarre i dati.
+* Il tipo di documento ha delle **colonne della tabella** (Impostazioni → Impostazioni Globali → Tipi di Documento → [Colonne della Tabella](../../global-settings/document-types/table-columns/README.md)). Senza colonne non c'è nulla in cui estrarre i dati.
 * **Estrazione delle tabelle** o **Estrazione AI delle tabelle** è attivata qui sotto, per l'intera organizzazione.
 * Il documento ha testo leggibile: l'OCR è stato eseguito, oppure viene usato l'E-Text per i PDF nativi digitali ([Impostazioni OCR](../ocr-settings.md)).
 * L'addestramento e i modelli AI sono **per fornitore**. Una tabella addestrata vale solo per i documenti del fornitore su cui è stata addestrata.
@@ -72,9 +89,16 @@ Maggiori informazioni sull'addestramento [qui](../../../setup/document-training/
 
 **Estrazione AI delle tabelle:** usa l'AI per estrarre la tabella di qualsiasi fornitore senza addestramento. Se i risultati per un fornitore non sono abbastanza accurati, addestra la tabella di quel fornitore; le regole salvate hanno quindi la precedenza sull'AI per quel fornitore.
 
-**Usa Estrazione delle tabelle Vision (AI):** l'AI legge l'immagine della pagina invece del livello di testo. Aiuta con i documenti scansionati e con le tabelle prive di una chiara struttura testuale; è più lenta.
+**Usa Estrazione delle tabelle Vision (AI):** l'AI legge l'immagine della pagina invece del livello di testo. Aiuta con i documenti scansionati e con le tabelle prive di una chiara struttura testuale; è più lenta. Il menu a discesa accanto all'interruttore determina quanto intensamente viene utilizzata l'immagine della pagina:
 
-**Usa Estrazione strutturata (AI):** l'AI restituisce la tabella in una struttura fissa che corrisponde direttamente alle colonne della tabella configurate. Consigliata quando le intestazioni delle colonne sui documenti variano molto.
+* **Disattivato (solo testo)** – Viene utilizzato solo il livello di testo. È l'impostazione predefinita.
+* **Solo immagini** – Viene letta solo l'immagine della pagina.
+* **Ibrido (testo e immagini)** – Il livello di testo e l'immagine della pagina vengono combinati nella stessa richiesta.
+* **Auto (deciso per documento)** – DocBits decide per documento se il livello di testo è sufficiente.
+
+La modalità è memorizzata nella chiave di preferenza `TABLE_EXTRACTION_VISION_MODE`; il vecchio interruttore `TABLE_EXTRACTION_USE_VISION` rimane e significa di fatto *Solo immagini*.
+
+**Usa Estrazione strutturata (AI):** l'AI restituisce la tabella in una struttura fissa che corrisponde direttamente alle colonne della tabella configurate. Consigliata quando le intestazioni delle colonne sui documenti variano molto. Facendo clic sull'impostazione si apre un'anteprima dei campi e delle colonne che verranno esattamente richiesti all'AI: i campi di intestazione e le colonne di riga sono elencati con la loro origine (campi standard richiesti o disattivati), insieme alla modalità di output prevista (ad esempio *strict* – nessuna colonna aggiuntiva). I campi configurati per il tipo di documento ma disattivati non vengono richiesti all'AI.
 
 **Estrazione della tabella per l'elemento di costo:** se abilitata, DocBits può estrarre gli elementi di costo dalle tabelle a livello di riga e classificarli di conseguenza.\
 Spiegazione dettagliata disponibile [qui](table-extraction-for-costing-element.md).
@@ -84,21 +108,21 @@ Maggiori informazioni su questa impostazione [qui](auto-extract-tax-code.md).
 
 **Salva regole di estrazione (solo Admin):** solo gli amministratori possono fare clic su *Salva regole* nell'addestramento della tabella. Attivala quando gli utenti continuano a salvare regole che compromettono l'estrazione di un fornitore.
 
-**Modello AI:** seleziona il livello AI usato per l'estrazione delle tabelle: **Fast** (predefinito), **Full** (massima precisione, più lento) o **Nexus** (terzo livello opzionale). La tabella sotto il selettore mostra:
+**Modello AI:** imposta il modello organizzativo per l'estrazione di campi e tabelle. Il menu offre Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Verifica disponibilità, qualità, durata e costi con documenti rappresentativi. Un livello non è sempre il più accurato o il più veloce per ogni documento. Le sostituzioni del modello possono sostituire l'impostazione dell'organizzazione. La tabella sotto il selettore mostra:
 
 * Quali **fornitori** usano quale modello AI
-* Se usano l'E-Text
-* Le opzioni per eliminare una voce o reimpostare i dati di addestramento
+* Se usano l'estrazione strutturata (AI) e l'E-Text
+* Le opzioni per eliminare una voce e reimpostare così il fornitore al valore predefinito
 
 Questa impostazione è spiegata in dettaglio [qui](ai-model.md).
 
 ### Perché la tabella appare diversa da fornitore a fornitore?
 
-Tutto ciò che DocBits apprende su una tabella viene memorizzato **per fornitore**:
+L'elaborazione della tabella dipende dalle regole e dalle impostazioni salvate nel contesto del fornitore o del modello pertinente:
 
 * **Regole salvate** (addestramento della tabella): posizione della tabella e mappatura delle sue colonne sul layout di quel fornitore.
 * **Tag della tabella AI e regole di formattazione**: i suggerimenti che l'utente ha salvato per la tabella AI di quel fornitore.
-* **Modello AI specifico per fornitore**: il livello scelto per quel fornitore in *Altre impostazioni* nella schermata di validazione.
+* **Modello AI specifico del modello:** la selezione effettuata nella schermata di convalida viene salvata per organizzazione e modello di estrazione corrente. Non cambia automaticamente ogni modello dello stesso fornitore. Senza una sostituzione, viene utilizzata l'impostazione dell'organizzazione applicabile.
 
 Quindi il fornitore A con regole salvate mostra una tabella deterministica nella scheda *Tabella estratta* della schermata di validazione, mentre il fornitore B senza regole riceve la *Tabella estratta dall'AI*. Per far comportare il fornitore B come A, addestra una volta la tabella di B. Per reimpostare un fornitore, elimina le sue regole nella schermata di validazione oppure reimposta i suoi dati di addestramento nella tabella del Modello AI.
 
@@ -110,12 +134,13 @@ Ogni interruttore di questa sezione viene memorizzato come preferenza dell'organ
 |---|---|---|
 | Estrazione delle tabelle | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | Estrazione AI delle tabelle | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Usa Estrazione delle tabelle Vision (AI) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Usa Estrazione delle tabelle Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (predefinito), `vision`, `hybrid`, `auto` |
+| Usa Estrazione delle tabelle Vision (AI) – vecchio interruttore | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; significa di fatto `vision` |
 | Usa Estrazione strutturata (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Estrazione della tabella per l'elemento di costo | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Estrazione automatica del codice fiscale | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Salva regole di estrazione (solo Admin) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| Modello AI | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Modello AI | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Versione dell'estrazione delle tabelle (finestra di conferma) | `TBL_EXT_VERSION` | stringa di versione |
 | Impostazioni OCR → Usa i dati AI per le tabelle se disponibili | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | Impostazioni OCR → Usa E-Text se disponibile | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
@@ -124,8 +149,9 @@ Note:
 
 * Le preferenze booleane vengono memorizzate come stringhe `true` / `false`; una chiave mai impostata vale `false`. Se invii `1` o `0`, DocBits memorizza `true` / `false`.
 * `AI_MODEL` non impostato significa **Fast**.
+* Un `TABLE_EXTRACTION_VISION_MODE` non impostato viene dedotto dal vecchio interruttore `TABLE_EXTRACTION_USE_VISION`: `true` dà `vision`, qualunque altro valore dà `off`.
 * La modifica di una chiave ha effetto sui documenti elaborati in seguito. Riavvia un documento per estrarlo di nuovo con la nuova impostazione.
-* Le scelte per fornitore (E-Text, modello AI, regole salvate) non sono preferenze dell'organizzazione; si impostano nella schermata di validazione in *Altre impostazioni* su un documento di quel fornitore.
+* Le sostituzioni del modello differiscono dalle preferenze dell'organizzazione. La guida al modello AI spiega l'ambito esatto.
 
 ## Documento elettronico
 

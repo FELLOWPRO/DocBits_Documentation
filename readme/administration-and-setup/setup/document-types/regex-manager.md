@@ -1,19 +1,19 @@
-# Regex Manager
+# Gestore Regex
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+Questa funzione di DocBits offre un’alternativa alla classificazione basata su modelli, perché permette di scrivere espressioni regolari di ricerca per un tipo di documento, per la classificazione e per altri scopi.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+Tipo di documento: il Gestore Regex consente di scrivere espressioni regolari che vengono poi cercate nel documento. Se DocBits trova una corrispondenza con l’espressione regolare di un documento definito, classifica il documento nel tipo di documento corrispondente. Ad esempio, se scrivi un’espressione regolare per trovare “Gutschrift” e DocBits trova questo termine in un documento, lo classificherà come nota di credito.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+Origine del documento: tramite le espressioni regolari DocBits riconosce anche il paese di origine di un documento. Ad esempio, se un’espressione regolare per un documento spagnolo contiene il termine “Factura” e DocBits lo trova nel documento, saprà che il documento è di origine spagnola e lo classificherà di conseguenza.
 
-## **Accessing the Regex Manager**
+## **Accedere al Gestore Regex**
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+In DocBits vai a Impostazioni → Tipi di documento. In “Tipi di documento personalizzati” fai clic su “Nuovo”. Inserisci un nome per il tipo di documento, aggiungi una descrizione facoltativa e seleziona “Tabella disponibile” se il documento contiene una tabella. Poi scegli “Regex” invece di “Auto” e fai clic su “Avanti”.
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx\_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B\_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../../.gitbook/assets/regex-manager-create-it-20261006.png" alt="Pagina di creazione di un nuovo tipo di documento con campo nome, casella Tabella disponibile, descrizione e pulsanti Auto e Regex"><figcaption><p>Scegli “Regex” per classificare il nuovo tipo di documento con espressioni regolari.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## **Aggiungere e rimuovere regex**
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+Il passaggio “Regex” mostra i modelli regex esistenti, ciascuno con origine e modello, e un pulsante “Aggiungi” per creare un nuovo modello. Usa il menu delle azioni a fine riga per gestire la voce. Fai clic su “Avanti” per proseguire con “Campi e gruppi”.
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp\_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1\_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
+<figure><img src="../../../.gitbook/assets/regex-manager-list-it-20261006.png" alt="Passaggio Regex con il pulsante Aggiungi e una tabella con tre modelli regex, con origine, modello e azioni"><figcaption><p>Modelli regex esistenti con origine e modello. “Aggiungi” ne crea uno nuovo.</p></figcaption></figure>

@@ -1,5 +1,12 @@
 # Email in entrata
 
+## Dall'e-mail in arrivo a un documento pronto per la revisione
+
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-it-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-it-light-20261029.png" alt="Dall&#x27;e-mail in arrivo a un documento pronto per la revisione"></picture><figcaption><p>Dall&#x27;e-mail in arrivo a un documento pronto per la revisione</p></figcaption></figure>
+
+L'illustrazione mostra due modalità di accesso: una casella di posta connessa e l'inoltro a un indirizzo di importazione DocBits. Gli allegati ai documenti supportati vengono importati. Controlla le restrizioni del mittente, l'organizzazione e il routing, quindi verifica l'effettiva importazione. L'invio di un'e-mail non dimostra che i suoi documenti siano stati importati correttamente.
+
+
 ### Panoramica
 
 DocBits può acquisire i documenti direttamente dall'e-mail, senza caricamento manuale. Esistono **due modi** per importare documenti via e-mail, entrambi in **Impostazioni → Elaborazione documenti → Importazione**:
@@ -19,7 +26,7 @@ Vai su **Impostazioni → Elaborazione documenti → Importazione** e apri la se
 
 Si apre la procedura guidata di configurazione. Il primo campo, **Protocollo**, determina come DocBits si connette — scegli **IMAP**, **OAuth Office365** o **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Menu a discesa Protocollo con IMAP, OAuth Office365 e OAuth Office365 - Tenant"><figcaption><p>Il menu <strong>Protocollo</strong> offre i tre tipi di connessione.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-it.png" alt="Selezione del protocollo nella procedura della posta in entrata."><figcaption><p>Selezione del protocollo nella procedura della posta in entrata.</p></figcaption></figure>
 
 #### IMAP
 
@@ -27,7 +34,7 @@ Per una casella standard, scegli **IMAP** e inserisci i dati del server e le cre
 
 * **Nome server** e **Porta** (predefinita `993`) del tuo server di posta.
 * **Crittografia** — `SSL`, `TLS` o `None`.
-* **Nome utente**, **e-mail** e **password** della casella.
+* **Nome utente**, **Posta elettronica** e **password** della casella.
 
 <figure><img src="../../../../.gitbook/assets/inbound_emails_imap.png" alt="Modulo di connessione IMAP con server, porta, crittografia e credenziali"><figcaption><p>Il modulo IMAP: la connessione al server di posta più le credenziali della casella.</p></figcaption></figure>
 

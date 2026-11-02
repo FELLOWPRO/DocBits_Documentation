@@ -1,92 +1,49 @@
 # DocBits Operator
 
-## 概述
+DocBits Operator 根据用户指令执行任务。指令描述操作步骤，变量则提供本次执行所需的数据。
 
-**DocBits Operator** 是一款由 AI 驱动的自动化助手，旨在简化工作流中的重复性任务。用户可以创建 _提示词_，即加入变量的分步说明，引导 AI 自动浏览界面、输入数据并点击操作，从而减少手动工作，加快日常操作。
+## 启用与访问
 
-## 启用 DocBits Operator
+1. 打开**设置 → 模块 → 文档集成**。
+2. 向下滚动至 **DocBits Operator**，在具备相应权限时启用该功能。
+3. 从应用的主导航打开 **DocBits Operator**。
 
-按照以下步骤启用 DocBits Operator：
+<figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-zh.png" alt="中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。"><figcaption><p>中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。</p></figcaption></figure>
 
-1. **前往设置**：
-   * 在仪表板中，前往 **Settings**。
-   *   选择 **Document Processing**，然后选择 **Module**。
+## 输入指令
 
-       <figure><img src="../../.gitbook/assets/docbits_operator_module_selection.png" alt="DocBits Operator 模块选择"><figcaption></figcaption></figure>
-2. **启用此功能**：
-   * 向下滚动，找到 **DocBits Operator** 选项。
-   *   切换滑块以启用 **DocBits Operator**。
+在屏幕底部的输入框中描述预期结果和操作步骤。变量使用花括号，例如 `{invoice_number}` 或 `{url}`。齿轮按钮打开变量窗口，用于设置变量名称和值。
 
-       <div align="left"><figure><img src="../../.gitbook/assets/docbits_operator_enable_toggle.png" alt="启用 DocBits Operator 的开关" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/site-extra-docbits-operator-zh.png" alt="DocBits Operator 中文界面，指令输入框为空，未启动任何任务。"><figcaption><p>DocBits Operator 中文界面，指令输入框为空，未启动任何任务。</p></figcaption></figure>
 
-## 访问界面
+箭头按钮开始执行指令。下载图标打开保存指令的窗口，垃圾桶图标用于清除对话。仅打开保存窗口不会保存模板。
 
-* 启用此功能后，从主导航菜单打开 **DocBits Operator**。
+更多示例请参阅[指令编写指南](prompt-writing-guide.md)。
 
-### **1. 提示词输入**
+## 保存指令
 
-屏幕底部有一个标记为 _“Enter your prompt here…”_ 的输入框，用户可以在此编写要让 Operator 执行的说明。
+在保存窗口中输入**指令名称**。公开共享选项用于设置模板的共享方式。准备共享模板时，请在指令文本中使用变量名称，并在具体执行前填写所需的变量值。
 
-输入框旁有几个控制按钮：
+<figure><img src="../../.gitbook/assets/site-extra-operator-prompt-dialog-zh.png" alt="中文指令保存窗口；未输入任何值，也未点击最终保存按钮。"><figcaption><p>中文指令保存窗口；未输入任何值，也未点击最终保存按钮。</p></figcaption></figure>
 
-* **提示词变量** – 打开一个弹出窗口，可在其中输入提示词使用的键值对。变量使用花括号书写，例如 `{invoice_number}` 或 `{url}`。这些值仅适用于输入框中的当前提示词。
-* **保存提示词** – 保存当前提示词。可选择将其保存为：
-  * **组织提示词** – 可在组织内编辑；包含提示词和已定义的变量值。
-  * **全局提示词** – 在所有租户之间共享；仅包含提示词和变量占位符（不保存变量值）。
-* **清除聊天** – 清除与 Operator 的当前对话，但保留输入框中的提示词不变。适用于重复使用或完善提示词。
+变量编辑按钮打开变量定义；保存按钮保存模板。要关闭窗口而不保存，请使用右上角的关闭图标。
 
-有关如何编写有效提示词的详细指南，包括语法、变量和示例，请参阅[**提示词编写指南**](prompt-writing-guide.md)。
+在所示版本中，“清除”按钮实际关闭该窗口，其标签未准确描述此操作。
 
-### **2. 侧边栏导航**
+## 已保存的指令列表
 
-使用左上角的图标打开或关闭侧边栏。侧边栏显示已保存的提示词，并分为以下两类：
+右上角菜单打开已保存指令的侧边栏。列表分别显示组织指令和公开指令，并支持按名称搜索。
 
-* **组织提示词**：可在组织内编辑和重复使用。
-* **全局提示词**：在所有租户之间共享。这些提示词无法存储变量，也无法编辑或删除。
-  * 全局提示词仍可由**创建该提示词的组织**编辑和删除；在该组织中，它显示在“组织提示词”下。
-* **搜索功能：**侧边栏顶部的搜索栏可帮助用户按名称或关键词快速查找已保存的提示词。
-* **图标说明：**每个已保存的提示词都有一组操作图标
-  * **箭头** – 启动提示词
-  * **钢笔** – 编辑提示词（仅适用于本组织的提示词）
-  * **垃圾桶** – 删除提示词（仅适用于本组织的提示词）
+组织指令旁提供运行、编辑和删除图标。公开指令区域的箭头用于运行所选模板。运行前请填写变量值。
 
-### 3. 保存提示词
+## 控制执行
 
-点击 **Save Prompt** 按钮会打开一个弹出窗口，可将当前提示词保存起来以供日后使用。
+执行期间可以暂停、继续、取消或接管控制。暂停会中止后续步骤，以便检查当前状态；继续会恢复执行，取消会结束本次运行。接管控制后，可以手动操作浏览器视图。
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="保存提示词弹出窗口"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="继续与停止执行图标示例。"><figcaption><p>继续与停止执行图标示例。</p></figcaption></figure>
 
-#### **保存提示词弹出窗口中的字段**
+## 详细视图
 
-* **提示词名称：**输入一个名称以便识别此提示词。
-* **公开保存提示词（复选框）：**勾选后，提示词将保存为**全局提示词**。全局提示词在所有租户之间共享，且无法存储变量**值**（仅存储变量**名称**）。
-* **编辑变量：**打开[**提示词变量弹出窗口**](prompt-writing-guide.md#prompt-variables-popup)，以便在保存前查看或调整变量定义。
+展开按钮打开执行的详细视图。在此可查看各项操作、当前步骤和 Operator 消息，并使用执行控制功能。
 
-**操作**
-
-* **取消：**关闭弹出窗口，不保存。
-* **保存：**使用指定的名称和可见性设置保存提示词。
-
-### 4. 提示词执行控制
-
-提示词运行时，用户可以使用以下控制选项管理执行过程或进行干预：
-
-* **暂停提示词：**暂时暂停当前执行。适用于查看当前状态或为后续步骤准备系统。
-* **恢复提示词：**从暂停处继续执行。 ![](<../../.gitbook/assets/image (4).png>)
-* **取消提示词：**完全停止执行并重置会话。如果提示词运行不正确或输入发生变化，需要中止或重新启动时，此操作会很有帮助。
-* **接管控制：**允许用户直接与系统交互并手动干预。如果 Operator 卡住或误解某个步骤，此操作会很有帮助。接管控制会**自动暂停**提示词，并切换到手动模式，直到你选择恢复或取消。
-
-### 5. Operator 详细视图
-
-启动提示词后，会出现一个额外按钮，用户可通过该按钮切换到**详细执行视图**。 ![](<../../.gitbook/assets/Detailed view .jpg>)
-
-* **打开详细视图：**此按钮会打开专用视图，逐步实时显示 Operator 正在执行的操作。
-
-在详细视图中，用户可以：
-
-* 监控正在执行的各项操作（例如点击、输入和等待）。
-* 查看当前处于活动状态的步骤。
-* 如果提示词执行遇到问题，找出问题发生的位置。
-* 使用相同的**暂停**、**恢复**、**取消**和**接管控制**操作。
-
-<div align="left"><figure><img src="../../.gitbook/assets/detailed view 2 .jpg" alt="" width="563"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Detailed view .jpg" alt="展开详细视图的图标。"><figcaption><p>展开详细视图的图标。</p></figcaption></figure>

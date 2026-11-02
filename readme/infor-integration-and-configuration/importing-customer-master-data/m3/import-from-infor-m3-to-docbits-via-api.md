@@ -33,14 +33,14 @@
 
 ## 在 DocBits 中验证结果
 
-打开 **设置 → 文档处理 → 查找主数据**。展开 **BOD 输入数据**，选择相关类型，然后搜索测试标识符。下方显示的 **供应商**和**采购订单**选项卡，是合成的 **DocBits Documentation Test A** 组织当前使用的英文界面。界面中已有的演示行**不能证明数据来自 M3 导入**。
+打开 **设置 → 文档处理 → 查找主数据**。展开 **BOD 输入数据**，选择相关类型，然后搜索测试标识符。下方是 Dev 中文界面的**供应商**和**采购订单**只读选项卡，记录值已隐藏，部分列名仍为英文。已有行**不能证明数据来自 M3 导入**；本次没有发送 BOD。
 
-<figure><img src="../../../.gitbook/assets/dbdc206-supplier-bod-input-en.png" alt="DocBits 查找主数据英文界面，显示供应商选项卡和用于检查已导入供应商的搜索控件"><figcaption><p>选择 Supplier，选取搜索列，并输入测试供应商标识符。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-bod-supplier-data-zh.png" alt="当前中文“BOD输入数据 → 供应商”只读列表，所有记录值已隐藏。Address、Custom Field 等列名仍为英文，属于产品翻译缺口；这里只展示查看入口，没有执行导入或验证记录来自 M3。"><figcaption><p>当前中文“BOD输入数据 → 供应商”只读列表，所有记录值已隐藏。Address、Custom Field 等列名仍为英文，属于产品翻译缺口；这里只展示查看入口，没有执行导入或验证记录来自 M3。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc206-purchase-order-bod-input-en.png" alt="DocBits BOD 输入数据菜单，已选中 Purchase Order，并显示可搜索的采购订单表格"><figcaption><p>选择 Purchase Order 并搜索测试订单；图中所示的行是合成演示数据。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-bod-purchase-order-data-zh.png" alt="当前中文“BOD输入数据 → 采购订单”只读列表，记录值已隐藏。Warehouse Id、Supplier Id 等列名仍为英文，属于产品翻译缺口。本图说明查看位置；没有执行导入，不能据此证明某次 M3/LN 传输或采购订单匹配成功。"><figcaption><p>当前中文“BOD输入数据 → 采购订单”只读列表，记录值已隐藏。Warehouse Id、Supplier Id 等列名仍为英文，属于产品翻译缺口。本图说明查看位置；没有执行导入，不能据此证明某次 M3/LN 传输或采购订单匹配成功。</p></figcaption></figure>
 
-在任一选项卡中，**Search by column** 用于选择字段，**Search String** 用于输入标识符，放大镜按钮用于执行搜索。表头可对可见行排序；底部的箭头可用于翻页。**Actions** 会打开表格操作；此只读检查不需要使用它。选项卡上的 **×** 可关闭该选项卡。**Imported** 旁的加号按钮用于上传 CSV，并非用于接收 ION BOD。
+在任一选项卡中，**按列搜索**用于选择字段，**搜索文本**用于输入标识符，放大镜按钮用于执行搜索。表头可对可见行排序；底部的箭头可用于翻页。**行动**是当前产品中的表格操作菜单标签；此只读检查不需要使用它。选项卡上的 **×** 可关闭该选项卡。**导入**旁的加号按钮用于 CSV 上传入口，接收 ION BOD 应使用已配置的 API 流程。
 
 如果在 OneView 中能看到 BOD，但 DocBits 中没有对应记录，请检查 API 操作及响应、组织和环境、文档类型、负载格式，以及搜索时使用的标识符。向 DocBits 管理员索取相应的导入日志。不要仅凭 HTTP 调用或无关演示行的屏幕截图就推断导入成功。
 
-本页根据当前 DocBits Sandbox 控件和 Infor 文档更新。由于无法使用 Infor 租户，也无法进行真实的 M3 到 DocBits BOD 传输，因此未完成端到端测试；租户管理员必须验证最终映射和结果。
+本页根据实际查看的 DocBits Dev 控件和 Infor 文档更新。由于无法使用 Infor 租户，也无法进行真实的 M3 到 DocBits BOD 传输，因此未完成端到端测试；租户管理员必须验证最终映射和结果。

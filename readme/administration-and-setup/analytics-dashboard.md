@@ -103,6 +103,16 @@
 
 <figure><img src="../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="时间范围筛选器"><figcaption></figcaption></figure>
 
+### 筛选条件会被记住
+
+仪表板会在当前浏览器中保存您的筛选条件和时间范围，并按用户和组织分别保存。再次打开仪表板时，上次的选择会被恢复，包括日期选择器中的自定义日期范围。
+
+在仪表板右上角选择 **恢复默认设置** 可清除已保存的选择：筛选条件、时间范围和自定义日期都会恢复为默认值。
+
+<mark style="color:red;">**注意**</mark>：该选择保存在浏览器中，而不是服务器上。它不会同步到其他设备或浏览器。
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-zh.png" alt="处于状态视图的分析仪表板，显示筛选行和右上角的恢复默认设置按钮"><figcaption><p>返回仪表板时会恢复筛选条件。恢复默认设置会清除它们。</p></figcaption></figure>
+
 ## 流程步骤卡片
 
 每张卡片都根据所选的**流程类型**代表一个流程步骤。卡片会随您的选择调整：**状态**类型显示生命周期阶段，**处理**类型显示处理模块，**用户交互**类型显示人工接触点。

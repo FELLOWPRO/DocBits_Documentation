@@ -39,7 +39,7 @@
 | --- | --- |
 | No purchase order number | 在文档中输入或更正 PO 编号，然后保存。 |
 | No purchase order was found | 检查编号，以及该订单是否已导入此组织。 |
-| The order was found but is not connected | 尝试使用 **Auto Match**，或检查两个表格后手动关联行项目。 |
+| The order was found but is not connected（已找到订单，但尚未建立关联） | 尝试使用 **Auto Match**，或检查两个表格后手动关联行项目。 |
 | No order lines match | 将发票值与订单进行比较，并检查匹配历史记录。 |
 | No invoice line items | 尝试匹配前，请检查[表格提取](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md)。 |
 | No open order lines | 检查[已消耗行项目状态](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md)和已排除的状态。 |

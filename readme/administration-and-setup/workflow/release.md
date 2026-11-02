@@ -46,7 +46,7 @@ De DocBits Workflow Engine implementeert robuust versiebeheer voor alle workflow
 #### 1. CALL_API
 **Versies:** v1, v2 (Huidig: v2)
 
-📖 **Gids:** [Externe API aanroepen-gids](../then/action/call-api-guide.md)
+📖 **Gids:** [Externe API aanroepen-gids](then/action/call-api-guide.md)
 
 | Versie | Vertaling | Status | Belangrijkste wijzigingen |
 |---------|-------------|--------|-------------|
@@ -106,7 +106,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versies:** v2, v3 (Verouderd), v4 (Huidig)
 
-📖 **Gids:** [Taaktoewijzing-gids](../then/task/task-assignment-guide.md)
+📖 **Gids:** [Taaktoewijzing-gids](then/task/task-assignment-guide.md)
 
 | Versie | Wijzigingen | Status | Type-parameter |
 |---------|---------|--------|-----------------|
@@ -167,7 +167,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Meest geëvolueerd - 5 versies)
 **Versies:** v2, v3, v4, v5 (Huidig)
 
-📖 **Gids:** [Volledige gids voor PO-matching](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Gids:** [Volledige gids voor PO-matching](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Versie | Wijzigingen | Status | Tolerantie | Vergelijking |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +351,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Meest geëvolueerde taakkaart - 4 versies)
 **Versies:** v1 (Verouderd), v2 (Verouderd), v3 (Verouderd), v4 (Huidig)
 
-📖 **Gids:** [Taaktoewijzing-gids](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Gids:** [Taaktoewijzing-gids](then/task/task-assignment-guide.md)
 
 | Versie | Vertaling | Beslisboom | Werkitemtype | Status |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,10 +650,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Gerelateerde documentatie
 
-- 📖 [Referentie voor kaartversiebeheer](../changelog/card-versioning.md) - Gedetailleerde versie-informatie
-- 📚 [Workflowgidsen](../) - Stapsgewijs kaartgebruik
-- 🔄 [Kaartversiedatabase](../docs/card_version.md) - Volledige versiegeschiedenis
-- 📋 [Workflowlogs](../workflow-logs/) - Uitvoering en foutopsporing
+- 📖 [Referentie voor kaartversiebeheer](cards-overview/card-versions-guide.md) - Gedetailleerde versie-informatie
+- 📚 [Workflowgidsen](README.md) - Stapsgewijs kaartgebruik
+- 🔄 [Kaartversiedatabase](cards-overview/card-versions-guide.md) - Volledige versiegeschiedenis
+- 📋 [Workflowlogs](workflow-logs.md) - Uitvoering en foutopsporing
 
 ---
 

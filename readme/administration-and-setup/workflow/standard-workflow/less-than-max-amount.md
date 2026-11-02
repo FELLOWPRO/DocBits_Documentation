@@ -1,28 +1,28 @@
-# Less than Max Amount
+# Onder het maximumbedrag
 
-<figure><img src="../../../../.gitbook/assets/docbits_invoice_less_than_max.png" alt="DocBits Factuur Less Than Max"><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
 
-#### Rule Configuration:
+Deze titel duidt op een regel voor facturen waarvan het totaalbedrag kleiner dan of gelijk aan een ingesteld maximumbedrag is.
 
-1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
-2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+#### Regelconfiguratie:
 
-#### Action (Then…):
+1. **Wanneer…**
+   * **Document Type is Invoice**: controleert of het verwerkte document een factuur is, zodat de regel uitsluitend op facturen wordt toegepast.
+2. **En…**
+   * **Document Status is Pending Approval**: de factuur moet de status "Pending Approval" hebben, dus wachten op goedkeuring.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: vergelijkt het factuurtotaal met het maximale bedrag dat de goedkeurder mag goedkeuren. Als het totaal kleiner dan of gelijk aan dat maximum is, gaat de regel verder. Mogelijk is daarbij een tolerantie voor kleine afwijkingen ingesteld.
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+#### Actie (dan…):
 
-#### Interface Elements:
+* **Assign user from field Approver Name, use user User as fallback**: als aan de voorwaarden is voldaan, wordt de factuur toegewezen aan de goedkeurder uit het veld Approver Name. Als dit veld leeg of niet beschikbaar is, wordt de ingestelde gebruiker User als terugvaloptie gebruikt om de goedkeuring af te handelen.
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+#### Interface-elementen:
 
-#### Purpose of This Rule:
+* **Add Card**: met deze knop kunt u voorwaarden of acties aan de regel toevoegen om de workflow verder af te stemmen.
+* **Save**: slaat de ingestelde regel op in het systeem.
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+#### Doel van deze regel:
+
+Deze regel stroomlijnt factuurgoedkeuring door facturen op basis van hun bedrag aan de juiste goedkeurder toe te wijzen. Alleen facturen binnen de ingestelde grens worden zo afgehandeld. Dit ondersteunt financiële controles en versnelt de workflow door handmatige controles te verminderen.
 
 \\

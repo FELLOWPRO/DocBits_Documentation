@@ -1,34 +1,34 @@
-# Velden Eigenschappen Configureren
+# Veldeigenschappen configureren
 
-Gebruik **Instellingen → Documenttypen → Velden** om te bepalen hoe velden zich gedragen voor een documenttype. Selecteer eerst het documenttype; het voorbeeld hieronder toont **Factuur** in de Nederlandse interface.
+Open **Instellingen → Documenttypen → Velden** en selecteer het documenttype. De afbeeldingen tonen Factuur in de Nederlandstalige interface; technische identifiers zoals `invoice_id` blijven ongewijzigd.
 
-<figure><img src="../../../../../.gitbook/assets/configuring-field-properties-1-overview-nl-20261008.png" alt="Nederlandse factuurveldinstellingen met herkenningsdrempels, zoekveld, kolommen met veldeigenschappen en Instellingen opslaan"><figcaption>Veldinstellingen van de factuur in een DocBits-sandboxorganisatie.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-overview-nl.png" alt="Veldeigenschappen: verplicht, alleen-lezen, verborgen en geforceerde validatie. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Veldeigenschappen: verplicht, alleen-lezen, verborgen en geforceerde validatie. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
 ## Een veld zoeken en de eigenschappen wijzigen
 
-1. Voer in **Zoeken op naam** de veldnaam of het label in. Dit filtert de lijst; het wijzigt het veld niet.
-2. Zoek de veldrij. **invoice_number** heeft bijvoorbeeld de technische naam `invoice_number`.
-3. Pas de besturingselementen in die rij aan en kies daarna **Instellingen opslaan**. Dezelfde knop om op te slaan is boven en onder de tabel beschikbaar.
+1. Voer in **Zoeken op naam** de veldnaam of het label in. Hiermee wordt de lijst gefilterd; het veld zelf wordt niet gewijzigd.
+2. Zoek de rij van het veld. **Factuurnummer** heeft bijvoorbeeld de technische naam `invoice_id`.
+3. Pas de bedieningselementen in die rij aan en selecteer vervolgens **Instellingen opslaan**. Dezelfde opslaanknop is beschikbaar boven en onder de tabel.
 
-<figure><img src="../../../../../.gitbook/assets/configuring-field-properties-1-filtered-nl-20261008.png" alt="Rij van het veld invoice_number in het Nederlands met de besturingselementen VEREIST, Alleen Lezen, Verborgen, FORCE VALIDATIE, Gebruik AI, OCR en WEDSTRIJDSCORE"><figcaption>De rij invoice_number na het zoeken op `invoice_number`.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s150-dbdc155-field-properties-filtered-nl.png" alt="Velden gefilterd op invoice_id met OCR- en Match Score-drempels. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie."><figcaption><p>Velden gefilterd op invoice_id met OCR- en Match Score-drempels. Wedstrijdscore betekent hier Match Score of overeenkomstscore; FORCE VALIDATIE betekent geforceerde validatie.</p></figcaption></figure>
 
-| Besturingselement | Waarvoor je het gebruikt |
+| Bedieningselement | Waarvoor u het gebruikt |
 | --- | --- |
-| **VEREIST** | Markeer informatie die aanwezig moet zijn voor de validatie. Controleer de validatieresultaat van het document nadat je deze instelling hebt gewijzigd. |
-| **Alleen Lezen** | Toon een veld zonder dat gebruikers de waarde kunnen bewerken. |
+| **Verplicht** | Markeer informatie die aanwezig moet zijn voor de validatie. Controleer het validatieresultaat van het document nadat u deze instelling hebt gewijzigd. |
+| **Alleen lezen** | Toon een veld zonder dat gebruikers de waarde kunnen bewerken. |
 | **Verborgen** | Houd het veld buiten de normale documentweergave. |
-| **FORCE VALIDATIE** | Vereist dat het veld de validatie doorstaat. Gedetailleerde regels stel je apart in; dit selectievakje is geen regeleditor. |
-| **Gebruik AI** | Vraag AI-extractie voor dit veld aan of stop deze. De rij toont of extractie is aangevraagd. |
+| **Geforceerde validatie** | Vereist een expliciete controle van het veld. Deze maakt geen vergelijkingsregel of reguliere expressie; stel aangepaste validatieregels afzonderlijk in. |
+| **Gebruik AI** | Schakel AI-extractie voor dit veld in of uit. De rij toont of extractie is aangevraagd. |
 | **OCR** | Voer de OCR-betrouwbaarheidsdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar en geen taalinstelling. |
-| **WEDSTRIJDSCORE** | Voer de afstemmingsdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar. |
+| **Overeenkomstscore** | Voer de matchingdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar. |
 
-De schuifregelaars **OCR** en **WEDSTRIJDSCORE** onder **HERKENNINGSINSTELLINGEN** passen de waarden toe op de hele veldlijst. De selectievakjes direct onder de kolomtitels passen **VEREIST**, **Alleen Lezen**, **Verborgen** of **FORCE VALIDATIE** toe op de hele lijst. Controleer de betrokken rijen voordat je **Instellingen opslaan** kiest. **STANDAARDINSTELLINGEN HERSTELLEN** zet de veldconfiguratie terug; gebruik het alleen als je je wijzigingen echt wilt vervangen.
+De schuifregelaars **OCR** en **Overeenkomstscore** onder **Herkenningsinstellingen** passen waarden toe op de hele veldenlijst. De selectievakjes direct onder de kolomtitels passen **Verplicht**, **Alleen lezen**, **Verborgen** of **Geforceerde validatie** toe op de hele lijst. Controleer de betreffende rijen voordat u **Instellingen opslaan** selecteert. **Standaardwaarden herstellen** zet de veldconfiguratie terug; gebruik dit alleen als u uw wijzigingen wilt vervangen.
 
-## Andere besturingselementen in deze weergave
+## Overige bedieningselementen in deze weergave
 
-- **Nieuwe groep maken** en **Veld maken** voegen een groep of een veld toe. Zie [Velden Toevoegen en Bewerken](adding-and-editing-fields.md).
-- **Mastergegevensinstellingen** opent de [mastergegevensconfiguratie](master-data-settings.md).
-- De selectievakjes links selecteren velden. Het menu ernaast biedt **Veldgroep opnieuw toewijzen** aan voor geselecteerde velden.
-- De plusknop **FORMULE** opent de formule-editor voor dat veld. Het **info**-pictogram toont veldinformatie. Het verwijderpictogram is niet beschikbaar voor standaardvelden.
+- **Nieuwe groep maken** en **Veld maken** voegen een groep of een veld toe. Zie [Velden toevoegen en bewerken](adding-and-editing-fields.md).
+- **Mastergegevensinstellingen** opent de [configuratie van stamgegevens](master-data-settings.md).
+- De meest linkse selectievakjes selecteren velden. Het aangrenzende menu biedt **Veldgroep opnieuw toewijzen** voor geselecteerde velden.
+- De plusknop **Formule** opent de formule-editor voor dat veld. Het pictogram **info** toont veldinformatie. Het verwijderpictogram is niet beschikbaar voor standaardvelden.
 
-Zie voor meer informatie over validatie en afstemmen [Setting Validation and Match Score](setting-validation-and-match-score.md).
+Zie voor meer informatie over validatie en matching [Validatie en Match Score instellen](setting-validation-and-match-score.md).

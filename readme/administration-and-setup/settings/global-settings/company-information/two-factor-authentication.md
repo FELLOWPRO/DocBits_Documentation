@@ -6,15 +6,15 @@ Als organisatiebeheerder kunt u **elk lid verplichten om twee-factor-authenticat
 
 Single sign-on (SSO)-aanmeldingen — Google, Microsoft, SAML — zijn **vrijgesteld**: hun identiteitsprovider dwingt al zijn eigen MFA af, dus de verplichting geldt alleen voor wachtwoordaanmeldingen.
 
-Deze instelling bevindt zich in **Instellingen → Global Settings → Bedrijfsinformatie → Twee-factor-authenticatie** en is alleen beschikbaar voor organisatiebeheerders.
+Deze instelling bevindt zich in **Instellingen → Algemene instellingen → Bedrijfsinformatie → Twee-factor-authenticatie** en is alleen beschikbaar voor organisatiebeheerders.
 
 ## MFA verplicht stellen voor uw organisatie
 
-1. Ga naar **Instellingen → Global Settings → Bedrijfsinformatie**.
+1. Ga naar **Instellingen → Algemene instellingen → Bedrijfsinformatie**.
 2. Open de sectie **Twee-factor-authenticatie**.
 3. Schakel **Twee-factor-authenticatie vereisen voor alle leden** in en klik op **Opslaan**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="The organisation MFA requirement toggle and adoption report"><figcaption><p>Schakel de verplichting voor alle leden in en volg de acceptatie hieronder.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-t001-nl.png" alt="Vereiste voor tweefactorauthenticatie binnen de organisatie. Het product gebruikt Wachtwoord bij de passkey-teller; deze teller gaat over geregistreerde passkeys."><figcaption><p>Vereiste voor tweefactorauthenticatie binnen de organisatie. Het product gebruikt Wachtwoord bij de passkey-teller; deze teller gaat over geregistreerde passkeys.</p></figcaption></figure>
 
 Na het opslaan wordt de wijziging binnen een minuut van kracht. Vanaf dan:
 
@@ -40,7 +40,7 @@ Gebruik het om de gereedheid in te schatten: verhoog eerst de acceptatie en scha
 
 ## Wat leden zien
 
-Een lid dat zich moet registreren, wordt bij de volgende aanmelding naar de 2FA-instellingen gestuurd en kiest een methode (authenticator-app, e-mailcode, of passkey). De stappen voor de eindgebruiker worden beschreven in [Twee-factor-authenticatie (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Een lid dat zich moet registreren, wordt bij de volgende aanmelding naar de 2FA-instellingen gestuurd en kiest een methode (authenticator-app, e-mailcode, of passkey). De stappen voor de eindgebruiker worden beschreven in [Twee-factor-authenticatie (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Gerelateerde beveiligingsmaatregelen
 

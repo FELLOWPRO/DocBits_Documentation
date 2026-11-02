@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Supplier on Invoice
+# Leverancier op factuur
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f5b5666e94fe-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
 
 ## **Doel**
 
@@ -12,12 +12,12 @@ Deze DocBits-kaart maakt een gedetailleerde vergelijking mogelijk, waarbij de le
 
 ## **Functionaliteit:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** Deze kaart controleert of de leverancier in de factuur al dan niet dezelfde is als in de orderbevestiging.
+* **Leverancier op factuur Leverancier op inkooporder:** Deze kaart controleert of de leverancier in de factuur al dan niet dezelfde is als in de orderbevestiging.
 * **Operatorwaarde:** Gebruikers kunnen specifieke voorwaarden instellen, zoals: is de leverancier die de factuur heeft uitgegeven al dan niet dezelfde als in de PO. Beschikbare operatoren zijn:
   * **Is (=):** Controleert of de leverancier in de factuur overeenkomt met de leverancier in de orderbevestiging.
-  * **Is not (≠):** Zorgt ervoor dat de leverancier die de factuur heeft uitgegeven dezelfde is als in de orderbevestiging.
+  * **Is niet (≠):** Zorgt ervoor dat de leverancier die de factuur heeft uitgegeven dezelfde is als in de orderbevestiging.
 
-## **Gebruik:**&#x20;
+## **Gebruik:**
 
 Deze kaart is nuttig om ervoor te zorgen dat het gehele proces met dezelfde leverancier wordt afgehandeld en dat alles op elkaar aansluit. Dit zorgt ervoor dat, als er afwijkingen zijn, de aandacht wordt gevestigd op het controleren van deze afwijkingen en dat de factuur niet wordt betaald aan een onjuiste leverancier die niets met de order en orderbevestiging te maken heeft.
 

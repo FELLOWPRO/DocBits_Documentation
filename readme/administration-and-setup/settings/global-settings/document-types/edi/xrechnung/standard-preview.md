@@ -1,4 +1,4 @@
-# Standard Preview
+# Standaardvoorbeeld
 
 <figure><img src="../../../../../../.gitbook/assets/docbits_supplier_reg_preview.png" alt="Docbits Supplier Reg Preview"><figcaption></figcaption></figure>
 

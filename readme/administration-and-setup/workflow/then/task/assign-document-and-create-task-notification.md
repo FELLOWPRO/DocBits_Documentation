@@ -1,6 +1,6 @@
 # Dokument zuordnen und Aufgabe/Benachrichtigung erstellen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7eb49fb37c93-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_decision_tree_tasks_sequential_v2-de-de.png" alt="Dokument zuordnen und Aufgabe/Benachrichtigung erstellen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck**
 

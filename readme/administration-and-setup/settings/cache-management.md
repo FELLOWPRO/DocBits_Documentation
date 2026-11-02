@@ -1,25 +1,11 @@
 # Cache-Verwaltung
 
-<figure><img src="../../.gitbook/assets/cache_management-de.png" alt="Cache-Verwaltung"><figcaption><p>Seite „Cache Management“</p></figcaption></figure>
+Öffnen Sie **Einstellungen → Cache-Verwaltung**, um die aktuelle Wartungsaktion aufzurufen.
 
-Cache Management steuert das automatische Leeren von Caches für häufig abgerufene Daten. Die Aktivierung des Cachings verbessert die Leistung, da wiederholte API-Aufrufe reduziert werden.
+<figure><img src="../../.gitbook/assets/site-complete-cache-context-de.png" alt="Aktuelle deutsche Cache-Verwaltung mit „Cache löschen“. Es gibt in dieser Ansicht keine Tabelle mit Objekt- oder TTL-Einstellungen; der Cache wurde nicht geleert."><figcaption><p>Aktuelle deutsche Cache-Verwaltung mit „Cache löschen“. Es gibt in dieser Ansicht keine Tabelle mit Objekt- oder TTL-Einstellungen; der Cache wurde nicht geleert.</p></figcaption></figure>
 
-## Cache leeren
+## Cache löschen
 
-Klicken Sie auf die Schaltfläche **Clear Cache** (oben rechts), um alle zwischengespeicherten Daten sofort manuell zu invalidieren.
+Verwenden Sie **Cache löschen**, wenn Sie zwischengespeicherte Daten zurücksetzen möchten. Anschließend müssen Daten gegebenenfalls erneut geladen werden. Prüfen Sie danach die betroffene Ansicht und das erwartete Ergebnis.
 
-## Cache-Tabelle
-
-| Spalte | Beschreibung |
-|--------|--------------|
-| **Object** | Der Typ der zwischengespeicherten Daten (z. B. Receive Delivery Cache, Purchase Order Cache). |
-| **Status** | Schalter zum Aktivieren oder Deaktivieren des Cachings für dieses Objekt. |
-| **TTL** | Time to Live in Minuten, d. h. wie lange zwischengespeicherte Daten gültig bleiben, bevor sie automatisch aktualisiert werden. Setzen Sie den Wert auf `0`, um den automatischen Ablauf zu deaktivieren. |
-
-## Verfügbare Caches
-
-| Cache | Beschreibung |
-|-------|--------------|
-| **Receive Delivery Cache** | Speichert Wareneingangsdaten zwischen, die beim PO-Matching verwendet werden. |
-| **Purchase Order Cache** | Speichert Bestelldaten zwischen, um die Suche bei der Dokumentenverarbeitung zu beschleunigen. |
-| **Task and Notification Cache** | Speichert Aufgabenzähler und Benachrichtigungsdaten zwischen, die im Dashboard angezeigt werden. |
+Die abgebildete Version bietet diese globale Aktion. Sie zeigt keine Tabelle einzelner Cache-Objekte, keine objektspezifischen Schalter und keine bearbeitbaren TTL-Werte. Für die Abbildung wurde kein Cache geleert.

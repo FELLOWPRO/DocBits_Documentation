@@ -1,6 +1,8 @@
 # Einer Gruppe zuweisen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v2-de-de.png" alt="Einer Gruppe zuweisen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-de-de.png" alt="Einer Gruppe zuweisen, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## Zweck:
 

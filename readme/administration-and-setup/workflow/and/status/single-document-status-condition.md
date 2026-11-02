@@ -1,6 +1,6 @@
 # Statusbedingung für ein einzelnes Dokument
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-c0315ad39a89-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_status_is_isnot_v2-de-de.png" alt="Statusbedingung für ein einzelnes Dokument, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 **Zweck**
 
@@ -54,10 +54,10 @@ Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organ
 
 ## Admin-Beispielvideo
 
-Wann ich eine Bedingung auf einen bestimmten Belegstatus beschränke und wie ich den vorhandenen Status auswähle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann ich eine Bedingung auf einen bestimmten Belegstatus beschränke und wie ich den vorhandenen Status auswähle. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.mp4" %}
 
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.html)
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de-theme-v4.html)
 
 [Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-single-document-status-admin/v1/de.txt)

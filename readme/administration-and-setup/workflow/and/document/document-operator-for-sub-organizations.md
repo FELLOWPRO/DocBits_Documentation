@@ -1,6 +1,6 @@
 # Dokument nach Unterorganisation prüfen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f97575f86ed-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-de-de.png" alt="Dokument nach Unterorganisation prüfen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Zweck:
 

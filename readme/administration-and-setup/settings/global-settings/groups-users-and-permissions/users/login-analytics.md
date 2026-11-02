@@ -1,5 +1,13 @@
 # Anmelde-Analyse
 
+## Video-Tutorial: Unternehmen, Abonnement und Audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/de.mp4" %}
+Unternehmensinformationen, Abonnement-Plan und Audit-Protokoll in DocBits
+{% endembed %}
+
+Das Video zeigt die Unternehmensinformationen und -präferenzen, den Abonnement-Plan, die Anmeldeaktivität und das Audit-Protokoll.
+
 Die **Anmelde-Analyse** bietet Administratoren einen schreibgeschützten, organisationsweiten Überblick darüber, *wann* und *wie oft* sich Personen bei DocBits anmelden. Sie beantwortet Fragen wie „Steigt die Zahl der Anmeldungen?“, „Wie viele unterschiedliche Benutzer waren in diesem Monat aktiv?“ und „Wann treten die Nutzungsspitzen auf?“ – ganz ohne die Anmeldedaten oder personenbezogenen Daten einzelner Benutzer offenzulegen.
 
 > **Zugriff:** Öffnen Sie **Einstellungen → Organisation & Zugriff → Benutzer** und klicken Sie oben rechts auf die Schaltfläche **Anmelde-Analyse** (`/settings/login-analytics`).

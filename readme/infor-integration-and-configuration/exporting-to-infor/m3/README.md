@@ -91,7 +91,7 @@
 * Sobald alle Nodes hinzugefügt und konfiguriert sind, klicken Sie auf **Save**.
 * Aktivieren Sie den Flow, um die Einrichtung abzuschließen.
 
-![Datenfluss in ION Desk mit den in einer Reihe verbundenen Knoten DocBits_Demo_to_M3, dem Mapping-Knoten, dem M3-Knoten und dem Fehlerknoten sowie der Schaltfläche REMOVE CONNECTION POINTS über der Zeichenfläche](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+<figure><img src="../../../.gitbook/assets/m3-historical-ion-activation-example.png" alt="Historisches englischsprachiges Infor-ION-Beispiel: Der Pfeil zeigt auf das Aktivierungssymbol eines Demo-Datenflusses. Die Abbildung belegt keinen ausgeführten Export."><figcaption><p>Historisches englischsprachiges Infor-ION-Beispiel: Der Pfeil zeigt auf das Aktivierungssymbol eines Demo-Datenflusses. Die Abbildung belegt keinen ausgeführten Export.</p></figcaption></figure>
 
 ## Schritt 4: Export in DocBits konfigurieren
 

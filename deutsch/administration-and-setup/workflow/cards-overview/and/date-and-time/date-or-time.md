@@ -1,6 +1,6 @@
 # Date or Time
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-date-time-00-de-20261023.png" alt="Datum und Uhrzeit Datum/Uhrzeit Operator zwischen Datum/Uhrzeit und Datum/Uhrzeit" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

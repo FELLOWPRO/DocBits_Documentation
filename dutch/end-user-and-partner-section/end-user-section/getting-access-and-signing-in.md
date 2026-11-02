@@ -12,7 +12,7 @@ Inloggen met een bestaand account en Tweefactorauthenticatie worden behandeld in
 
 U kunt zelf een DocBits-account aanmaken op de registratiepagina. Open deze via de koppeling **Registreren** op het inlogscherm, of ga naar `https://app.docbits.com/register` (gebruik het webadres dat uw organisatie heeft gekregen).
 
-<figure><img src="../../.gitbook/assets/dbdc744-getting-access-register-form-nl-20261011.png" alt="Het registratieformulier van DocBits met lege velden"><figcaption><p>Het registratieformulier. Alle velden zijn verplicht, behalve waar anders vermeld.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-register-native-nl-20261101.png" alt="Nederlands DocBits-registratieformulier met vijf lege velden, niet-aangevinkte reCAPTCHA, algemene voorwaarden, Aan de slag, Google, Microsoft en Login"><figcaption><p>Registratie: vul Voornaam, Achternaam, E-mail, Wachtwoord en Bevestig wachtwoord in. Voltooi reCAPTCHA als deze verschijnt, accepteer de algemene voorwaarden en kies Aan de slag. Login brengt u terug naar de inlogpagina.</p></figcaption></figure>
 
 Vul het formulier in:
 
@@ -53,7 +53,7 @@ Als u uw wachtwoord bent vergeten:
 1. Klik op het inlogscherm op **Wachtwoord vergeten**.
 2. Voer op de pagina **Wachtwoord vergeten** uw **e-mailadres** in en klik op **Wachtwoord opnieuw instellen**. Als er een reCAPTCHA-widget wordt getoond, voltooi deze dan eerst.
 
-   <figure><img src="../../.gitbook/assets/dbdc744-getting-access-forgot-password-form-nl-20261011.png" alt="De pagina Wachtwoord vergeten met het e-mailveld"><figcaption><p>De pagina Wachtwoord vergeten. Voer uw account-e-mailadres in en DocBits stuurt u een herstellink.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-nl-20261101.png" alt="Nederlands formulier Wachtwoord vergeten met een leeg E-mail-veld, niet-aangevinkte reCAPTCHA, Wachtwoord opnieuw instellen en Terug naar Inloggen"><figcaption><p>Vul uw E-mail in en kies Wachtwoord opnieuw instellen om een herstellink aan te vragen, of gebruik Terug naar Inloggen. Voltooi reCAPTCHA wanneer deze verschijnt.</p></figcaption></figure>
 
    Als u uw wachtwoord niet opnieuw wilt instellen, klik dan op **Terug naar Inloggen** om terug te keren naar de inlogpagina.
 
@@ -69,7 +69,7 @@ Herstellinks verlopen na korte tijd. Als de koppeling niet meer werkt, herhaal d
 
 Wanneer uw beheerder u als gebruiker toevoegt (zie [Gebruikers](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), ontvangt u een e-mail met uw inloggegevens en een koppeling om uw **eerste wachtwoord** in te stellen. De koppeling opent de pagina **Stel een wachtwoord in**:
 
-<figure><img src="../../.gitbook/assets/dbdc744-getting-access-set-password-form-nl-20261011.png" alt="De pagina Stel een wachtwoord in met het welkomstbericht"><figcaption><p>De pagina Stel een wachtwoord in, getoond nadat een beheerder uw account heeft aangemaakt.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-nl-20261101.png" alt="Nederlands formulier Stel een wachtwoord in met de welkomsttekst, lege velden Wachtwoord en Bevestig wachtwoord, oogpictogrammen, Stel een wachtwoord in en Ga naar Inloggen"><figcaption><p>Eerste wachtwoord voor een door de beheerder aangemaakt account: vul Wachtwoord en Bevestig wachtwoord in en kies Stel een wachtwoord in. Ga naar Inloggen brengt u terug naar de inlogpagina.</p></figcaption></figure>
 
 1. Klik op de koppeling in de uitnodigings-e-mail. De pagina begroet u met "Welkom bij DocBits! Je account is aangemaakt. Stel je wachtwoord in om te beginnen."
 2. Voer uw wachtwoord twee keer in — dezelfde [wachtwoordregels](#wachtwoordregels) gelden.

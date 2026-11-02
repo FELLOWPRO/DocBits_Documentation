@@ -1,6 +1,6 @@
 # Flux standard
 
-Le constructeur **Flux standard** est l'éditeur linéaire, basé sur des cartes, qui permet d'automatiser le traitement des documents. Un workflow est composé de trois groupes de cartes — **Quand** (le déclencheur), **Et** (des conditions supplémentaires) et **Alors** (les actions à exécuter). Lorsqu'un document satisfait les conditions When/And, les actions Then s'exécutent automatiquement.
+Le constructeur **Flux standard** utilise des cartes pour automatiser le traitement des documents. Dans la disposition simple illustrée ici, le workflow comporte trois groupes : **Quand....** pour le déclenchement, **Et....** pour les conditions supplémentaires et **Dans ce cas....** pour les actions. Lorsque le document satisfait le déclencheur et les conditions supplémentaires, les actions s’exécutent dans l’ordre défini.
 
 ## Créer et tester un Standard Workflow <a id="standard-workflow-tutorial"></a>
 
@@ -101,17 +101,23 @@ Ouvrez **Tableau de bord des flux → Liste des flux**, puis cliquez sur **Ajout
 
 ## Le modèle When / And / Then
 
-<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Canevas du Standard Workflow avec des cartes When, And et Then"><figcaption><p>Le canevas du Standard Workflow. Cet exemple se déclenche sur les factures d'une sous-organisation et les assigne à un utilisateur.</p></figcaption></figure>
+Les trois vues partielles suivantes montrent un workflow Standard encore vierge et non enregistré. Elles illustrent la structure de l’éditeur, avant l’ajout et la configuration des cartes.
 
-- **Quand** — le déclencheur qui démarre le workflow (par ex. *Document type is Invoice*).
-- **Et** — des conditions supplémentaires qui doivent également être vraies (par ex. *Document is part of sub-organization*). Laissez vide pour exécuter le workflow à chaque correspondance de la carte When.
-- **Alors** — les actions à effectuer (par ex. *Assign the document to the user*, créer une tâche, appeler une API, envoyer un e-mail).
+* **Quand....** — le déclencheur qui démarre le workflow, par exemple selon le type de document.
+* **Et....** — les conditions supplémentaires qui doivent également être vraies, par exemple l’appartenance du document à une sous-organisation. Si ce groupe est vide, les actions s’exécutent à chaque correspondance de la carte de déclenchement.
+* **Dans ce cas....** — les actions à effectuer, par exemple affecter le document à un utilisateur, créer une tâche, appeler une API ou envoyer un courriel.
+
+<figure><img src="../../.gitbook/assets/workflow-standard-empty-when-current-fr.png" alt="Groupe « Quand.... » du concepteur Standard, encore vide : ajoutez la carte de déclenchement. Aucun workflow n’est enregistré dans cette vue."><figcaption><p>Groupe « Quand.... » du concepteur Standard, encore vide : ajoutez la carte de déclenchement. Aucun workflow n’est enregistré dans cette vue.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-standard-empty-and-current-fr.png" alt="Groupe « Et.... » du concepteur Standard, encore vide : ajoutez des conditions supplémentaires si nécessaire."><figcaption><p>Groupe « Et.... » du concepteur Standard, encore vide : ajoutez des conditions supplémentaires si nécessaire.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-standard-empty-then-current-fr.png" alt="Groupe « Dans ce cas.... » du concepteur Standard, encore vide : ajoutez les actions à effectuer."><figcaption><p>Groupe « Dans ce cas.... » du concepteur Standard, encore vide : ajoutez les actions à effectuer.</p></figcaption></figure>
 
 ## Ajouter des cartes
 
-Cliquez sur **Ajouter une carte** dans n'importe quel groupe pour ouvrir la bibliothèque de cartes. Les cartes sont organisées par catégorie afin que vous puissiez trouver le bloc de construction dont vous avez besoin :
+Cliquez sur **Ajouter une carte** dans un groupe pour ouvrir la bibliothèque de cartes. Dans le groupe **Et....**, la catégorie **Comparaison des bons de commande** propose des conditions de comparaison. La vue partielle ci-dessous montre une carte qui rapproche des données de confirmation de commande et de bon de commande. Les paramètres **N’importe quel/Tous**, **Données de commande**, **Opérateur** et **Données comparatives** sont encore à renseigner avant d’utiliser la carte. Cette carte est encore affichée dans la bibliothèque, avant sa sélection et sa configuration.
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Bibliothèque Add Card regroupée par catégorie"><figcaption><p>La bibliothèque <strong>Add Card</strong> — cartes de condition, cartes de comparaison, cartes d'action et plus encore, regroupées par catégorie.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-po-condition-library-current-fr.png" alt="Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner."><figcaption><p>Carte de la catégorie « Comparaison des bons de commande » affichée dans la bibliothèque, avant sa sélection et sa configuration. Les paramètres de comparaison restent à renseigner.</p></figcaption></figure>
 
 Enregistrez avec **Enregistrer le flux de travail**, ou enregistrez la disposition comme modèle réutilisable avec **Enregistrer le modèle**.
 

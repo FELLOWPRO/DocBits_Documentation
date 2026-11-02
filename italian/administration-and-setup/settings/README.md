@@ -1,5 +1,13 @@
 # Impostazioni
 
+## Video tutorial: Panoramica impostazioni e moduli
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/it.mp4" %}
+Panoramica delle impostazioni e moduli in DocBits
+{% endembed %}
+
+Il video mostra i cinque gruppi della Panoramica delle impostazioni, la ricerca e i collegamenti rapidi e ciò che controllano le tre pagine Moduli.
+
 <figure><img src="../../.gitbook/assets/site-extra-settings-overview-it.png" alt="Impostazioni dell’organizzazione: dati identificativi nascosti. Il paese visualizzato è un valore configurato; nessuna impostazione è stata modificata."><figcaption><p>Impostazioni dell’organizzazione: dati identificativi nascosti. Il paese visualizzato è un valore configurato; nessuna impostazione è stata modificata.</p></figcaption></figure>
 
 L'area Impostazioni è il tuo punto centrale per configurare DocBits. È organizzata in cinque sezioni principali:

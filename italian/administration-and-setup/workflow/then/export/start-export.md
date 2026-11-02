@@ -1,6 +1,12 @@
 # Avvia l'esportazione
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f55f53ace7e0-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v1-it-it.png" alt="Avvia l&#x27;esportazione, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v2-it-it.png" alt="Avvia l&#x27;esportazione, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v3-it-it.png" alt="Avvia l&#x27;esportazione, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v4-it-it.png" alt="Avvia l&#x27;esportazione, Versione 4" width="634"><figcaption><p>Versione 4</p></figcaption></figure>
 
 ## **Scopo:**
 

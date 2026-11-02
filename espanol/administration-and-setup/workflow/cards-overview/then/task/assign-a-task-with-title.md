@@ -1,6 +1,6 @@
 # Assign a Task with Title
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-04-es-20261023.png" alt="Tarea Asignar Tarea/Notificación con título: Título , descripción: Descripción y prioridad: Prioridad a/para Tipo de cesionario , de la tabla de decisiones. Notifíqueselo por correo electrónico: Enviar correo electrónico ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

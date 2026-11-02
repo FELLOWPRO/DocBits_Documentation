@@ -1,5 +1,13 @@
 # Análise de Logins
 
+## Vídeo tutorial: Empresa, assinatura e auditoria
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/pt.mp4" %}
+Informações da empresa, plano de assinatura e registros de auditoria no DocBits
+{% endembed %}
+
+O vídeo mostra as informações e as preferências da empresa, o plano de assinatura, a atividade de login e os registros de auditoria.
+
 A **Análise de Logins** oferece aos administradores uma visão somente leitura, abrangendo toda a organização, sobre *quando* e *com que frequência* as pessoas acessam o DocBits. Ela responde a perguntas como "os logins estão em tendência de alta?", "quantos usuários distintos estiveram ativos neste mês?" e "quando ocorrem os picos de uso?" — sem expor as credenciais ou os dados pessoais de qualquer usuário individual.
 
 > **Acesso:** Abra **Configurações → Organização e Acesso → Usuários** e clique no botão **Análise de Logins** no canto superior direito (`/settings/login-analytics`).

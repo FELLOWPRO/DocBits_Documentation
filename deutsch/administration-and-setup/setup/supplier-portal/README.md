@@ -1,131 +1,76 @@
 # Lieferantenportal
 
-## Übersicht
+Mit dem **Lieferantenportal** stellt ein Administrator den Lieferanten seines Unternehmens einen Zugang zu **DocBits** bereit. Der Admin aktiviert das Portal und richtet ein, welche Lieferanten es nutzen und welche Informationen sie sehen dürfen.
 
-{% embed url="https://youtu.be/R5IrCpiP__4" %}
-{% endembed %}
+Ein eingeladener Lieferant registriert sich und meldet sich mit seinem eigenen Zugang an. Dort kann er die für ihn freigegebenen Informationen und beispielsweise den Status seiner Bestellungen und Rechnungen einsehen. Welche Funktionen verfügbar sind, bestimmt die Konfiguration der Organisation.
 
+## Video: Lieferantenportal und Zugang vorbereiten
 
-Diese Seite erklärt, wie man das **Lieferanten-Portal** aktiviert und nutzt, sowie wo man alle relevanten Einstellungen findet. Das Lieferanten-Portal ermöglicht es Ihnen, Lieferanten zu **DocBits** einzuladen. Sobald der Zugang gewährt ist, können Lieferanten sich anmelden, um den Status ihrer **Bestellungen** und **Rechnungen** direkt in **DocBits** einzusehen.
+Im Video führt ein Administrator durch Portaloption und Tarifauswahl, die Vorbereitung einer Einladung und den Registrierungseinstieg. Aktivierung, Versand, Registrierung und Freigabe werden als getrennte Schritte erklärt.
 
-## So aktivieren Sie das Lieferanten-Portal
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.mp4" %}
 
-1.  Gehen Sie zu **Einstellungen → Verarbeitung von Dokumenten → Module**.
+[Video mit deutschen Untertiteln und Kapitelauswahl öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/de.html)
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  Aktivieren Sie im Abschnitt **Versand & Lieferant** die Option **Lieferanten-Portal**.
+## Admin: Portal aktivieren
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+1. Öffnen Sie in den Einstellungen die Module und dort den Bereich **Dokumentenintegration**.
+2. Öffnen Sie **Versand & Lieferant** und aktivieren Sie die Option **Lieferanten-Portal**.
+3. Falls ein Freischaltungsdialog erscheint, prüfen Sie den angezeigten Plan und bestätigen Sie die gewünschte Freischaltung.
 
-## Einstellungen des Lieferanten
+<figure><img src="../../../.gitbook/assets/dbdc-49-module-de-20261031.png" alt="Reale deutsche Dev-Ansicht von Versand &amp; Lieferant: Der Lieferanten-Portal-Schalter ist in dieser Testorganisation bereits eingeschaltet. Für die Aufnahme wurde er nicht betätigt."><figcaption><p>Reale deutsche Dev-Ansicht von Versand &amp; Lieferant: Der Lieferanten-Portal-Schalter ist in dieser Testorganisation bereits eingeschaltet. Für die Aufnahme wurde er nicht betätigt.</p></figcaption></figure>
 
-Sobald die Funktion **Lieferanten-Portal** aktiviert ist, erscheint ein neuer Abschnitt **Einstellungen des Lieferanten** am Ende des Menüs **Einstellungen**.
+## Admin: Portal einrichten
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+Richten Sie das Portal vor den ersten Einladungen für Ihre Organisation ein:
 
-[**Allgemeine Einstellungen des Lieferanten**](../../settings/supplier-setting/supplier-general-settings.md): Hier können Sie das **Lieferanten-Portal** anpassen, indem Sie Ihr Firmenlogo hochladen, das im Header aller E-Mail-Vorlagen angezeigt wird, und rechtliche Dokumente wie die Nutzungsbedingungen und die Datenschutzrichtlinie verwalten.
+- [Allgemeine Lieferanteneinstellungen](../../settings/supplier-setting/supplier-general-settings.md): Zusätzliche Einladungsfelder, Status, Logo und Datenschutzhinweise.
+- [E-Mail-Vorlagen](../../settings/supplier-setting/editing-email-templates.md): Inhalt und Gestaltung der Einladungsnachrichten.
+- [Lieferantenlayout](../../settings/supplier-setting/supplier-layout.md): Felder für die Lieferantenregistrierung und die interne Lieferantenverwaltung. Wählen Sie den passenden Layouttyp.
+- [Lieferantenberechtigungen](../../settings/supplier-setting/supplier-permissions.md): Zuordnung interner Mitarbeitender zu Lieferantengruppen. Diese interne Zuständigkeit ist vom eigenen Portalzugang eines Lieferanten zu unterscheiden.
 
-[**E-Mail-Vorlagen**](../../settings/supplier-setting/editing-email-templates.md)**:** Hier können Sie die Einladung E-Mail-Vorlagen erstellen und testen, die an eingeladene Lieferanten gesendet werden.
+<figure><img src="../../../.gitbook/assets/dbdc-49-general-invitation-fields-de-20261031.png" alt="Reale deutsche Dev-Ansicht der zusätzlichen Einladungsfelder: Die Option ist bereits eingeschaltet, Felder zeigt die unveränderte konfigurierte Auswahl Assigned User. Es wurde nichts gespeichert."><figcaption><p>Reale deutsche Dev-Ansicht der zusätzlichen Einladungsfelder: Die Option ist bereits eingeschaltet, Felder zeigt die unveränderte konfigurierte Auswahl Assigned User. Es wurde nichts gespeichert.</p></figcaption></figure>
 
-**Lieferant Layout:** Hier können Sie die Layouts erstellen und verwalten, die definieren, welche Informationen neue Lieferanten während des Registrierungsprozesses bereitstellen müssen.
+## Admin: Lieferanten suchen und filtern
 
-[**Exportkonfiguration**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Hier können Sie definieren, wie Daten zwischen dem **Lieferanten-Portal** und dem **Infor M3**-System mithilfe von ION- und IDM-Mapping-Dateien zugeordnet und synchronisiert werden.
+Öffnen Sie das **Lieferanten-Dashboard** für die interne Verwaltung. Die Statussummen **Alle Lieferanten**, **Genehmigung ausstehend** und **Anstehende Registrierung** grenzen die angezeigte Liste ein. Das Suchfeld **Suche nach Name, Nummer** dient zur Suche nach Lieferantenname oder -nummer.
 
-**Berechtigungen für Lieferanten**: Hier können Sie die Berechtigungen konfigurieren, die Lieferanten im **Lieferanten-Portal** haben werden. Sie können auch Lieferanten gruppieren, um den Zugriff und die Einstellungen über mehrere Lieferanten hinweg einfacher zu verwalten.
+Über das Filtersymbol im Suchfeld öffnen Sie **Lieferantengruppen**, **Status** und **Erstellt am**. **Lieferant pro Seite** steuert die Seitengröße; **Filter löschen** entfernt die aktiven Suchfilter. Diese Bedienelemente betreffen die Lieferantenliste.
 
-Eine detaillierte Anleitung zu allen Einstellungen des Lieferanten finden Sie [hier](../../settings/supplier-setting/).
+<figure><img src="../../../.gitbook/assets/dbdc-49-filters-de-20261031.png" alt="Filtermenü mit Lieferantengruppen, Status, Erstellt am, Lieferant pro Seite und Filter löschen. Die Aufnahme zeigt die verfügbaren Filter, ohne eine Filterwirkung als getestet zu behaupten."><figcaption><p>Filtermenü mit Lieferantengruppen, Status, Erstellt am, Lieferant pro Seite und Filter löschen. Die Aufnahme zeigt die verfügbaren Filter, ohne eine Filterwirkung als getestet zu behaupten.</p></figcaption></figure>
 
-## Dashboard für Lieferanten <a href="#supplier-permissions" id="supplier-permissions"></a>
+## Admin: Sichtbare Spalten auswählen
 
-Sie können auf das **Dashboard für Lieferanten** über das linke Menü zugreifen, wie unten gezeigt.
+Öffnen Sie neben Aktualisieren die Spalteneinstellungen. Der Tooltip lautet **Tabellenspalten für die Organisation festlegen**. Wählen Sie Felder unter **Unsichtbare Spalten** oder **Sichtbare Spalten** und verschieben Sie sie mit den Pfeilen zwischen den Listen. Mit den Ziehgriffen ordnen Sie die sichtbaren Felder. **Fertig** übernimmt die Auswahl für die Organisation; **Abbrechen** schließt den Dialog ohne Übernahme. Bei einer breiten Tabelle erreichen Sie weitere Spalten durch horizontales Scrollen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-columns-de-20261031.png" alt="Einstellungen für Spalten mit Unsichtbare Spalten, Sichtbare Spalten, Pfeilen und den Aktionen Abbrechen und Fertig. Der Dialog wurde unverändert mit Abbrechen geschlossen."><figcaption><p>Einstellungen für Spalten mit Unsichtbare Spalten, Sichtbare Spalten, Pfeilen und den Aktionen Abbrechen und Fertig. Der Dialog wurde unverändert mit Abbrechen geschlossen.</p></figcaption></figure>
 
-Alle von Ihnen erstellten Lieferanten werden hier angezeigt.
+## Admin: Ablauf-Analytik anzeigen
 
-## Filter für Lieferanten
+Über **Analytik**, das Diagrammsymbol neben den Spalteneinstellungen, blenden Sie die Ablaufübersicht ein oder aus. Die Karten zeigen **Abgelaufen** sowie **Läuft ab in** mit den Zeiträumen **1 Monat**, **2 Monat**, **3 Monat**, **6 Monat** und **1 Jahr**, wie sie in der Oberfläche bezeichnet sind. Eine ausgewählte Karte grenzt die Lieferantenliste auf den jeweiligen Ablaufzeitraum ein. Die Zähler beziehen sich auf die Ablaufdaten der Lieferanten.
 
-Sie können nach Lieferanten anhand von N**ame** oder N**ummer** suchen oder die erweiterten Filter verwenden, um die Ergebnisse nach:
+<figure><img src="../../../.gitbook/assets/dbdc-49-analytics-de-20261031.png" alt="Analytik zeigt Abgelaufen und Läuft ab in für einen, zwei, drei oder sechs Monate und ein Jahr. Die Lieferantenzeilen sind abgedeckt; keine Karte wurde ausgewählt."><figcaption><p>Analytik zeigt Abgelaufen und Läuft ab in für einen, zwei, drei oder sechs Monate und ein Jahr. Die Lieferantenzeilen sind abgedeckt; keine Karte wurde ausgewählt.</p></figcaption></figure>
 
-* **Lieferantengruppen**
-* **Status**
-* **Erstellt am**
+## Admin: Lieferanten einladen
 
-einzugrenzen.
+Öffnen Sie die Lieferantenverwaltung. Prüfen Sie vor einer Einladung Firma, Lieferantengruppe, Ansprechperson und E-Mail-Adresse. Beim Anlegen eines Lieferanten fordert das Speichern den Versand der Registrierungseinladung an; es ist nicht nur eine unverbindliche Dateneingabe. Für bestehende Lieferanten verwenden Sie die passende Einladungsaktion. Eine Versandbestätigung bedeutet noch nicht, dass die E-Mail zugestellt oder die Registrierung abgeschlossen wurde.
 
-Sie können auch angeben, wie viele Lieferanten pro Seite angezeigt werden sollen.
+<figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-de-20261031.png" alt="Internes Lieferanten-Dashboard mit Alle Lieferanten, Genehmigung ausstehend, Anstehende Registrierung, Suche und Werkzeugleiste. Bestehende Lieferantenzeilen sind abgedeckt."><figcaption><p>Internes Lieferanten-Dashboard mit Alle Lieferanten, Genehmigung ausstehend, Anstehende Registrierung, Suche und Werkzeugleiste. Bestehende Lieferantenzeilen sind abgedeckt.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-invitation-de-20261031.png" alt="Leeres Formular Lieferant hinzufügen mit Lieferantengruppe, Lieferantenname, Kontaktfeldern, Abbrechen und Speichern. Speichern fordert eine Registrierungseinladung an; für diese Aufnahme wurde nur Abbrechen verwendet."><figcaption><p>Leeres Formular Lieferant hinzufügen mit Lieferantengruppe, Lieferantenname, Kontaktfeldern, Abbrechen und Speichern. Speichern fordert eine Registrierungseinladung an; für diese Aufnahme wurde nur Abbrechen verwendet.</p></figcaption></figure>
 
-Zusätzlich können Sie schnell nach den Status **Genehmigung ausstehend** oder **Anstehende Registrierung** filtern, indem Sie auf die entsprechende Kategorie links von der Filterleiste klicken.
+## Admin: Lieferantendetails im Lieferanten-Dashboard öffnen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+Interne Mitarbeitende öffnen die Ansicht **Lieferantendetails** über die Zeile eines Lieferanten im Lieferanten-Dashboard. Sie enthält dieselben sechs Bereiche, die der Lieferant ausfüllt, und seinen Status. Dort prüfen und pflegen Sie eingereichte Angaben und führen die fachliche Freigabe durch. Für die hier gezeigten Aufnahmen wurde keine bestehende Lieferantenzeile geöffnet.
 
-## Status der Lieferanten
+## Lieferant: registrieren und auf DocBits zugreifen
 
-Wenn Sie das **Lieferanten-Portal** verwenden, ist es wichtig, die verschiedenen Status zu verstehen, die Lieferanten haben können. Unten finden Sie eine Liste aller möglichen Lieferantenstatus und deren Bedeutungen:
+Der Lieferant öffnet seine Einladung, erstellt beziehungsweise verwendet den vorgesehenen eigenen Zugang und durchläuft die konfigurierten Registrierungsschritte. Danach kann er die für ihn freigegebenen Informationen in DocBits einsehen. Der genaue Ablauf und die verfügbaren Funktionen richten sich nach der Organisation.
 
-* **Open**: Bestehender Lieferant, der noch nicht zum Portal eingeladen wurde.
-* **Anstehende Registrierung**: Lieferant wurde eingeladen, hat aber den Registrierungsprozess noch nicht abgeschlossen.
-* **Ausstehender Lieferanteninput**: Registrierung ist abgeschlossen, aber weitere Eingaben oder Änderungen sind vom Lieferanten erforderlich.
-* **Genehmigung ausstehend**: Lieferant hat die Registrierung abgeschlossen und wartet auf die erste Genehmigung.
-* **Ausstehende AP-Genehmigung**: Lieferant hat die erste Genehmigung erhalten und wartet auf eine zweite (Buchhaltung) Genehmigung.
-* **Genehmigt**: Lieferant hat den Prozess abgeschlossen und wurde vollständig genehmigt.
-* **Abgelehnt**: Die Registrierung oder Genehmigung des Lieferanten wurde abgelehnt.
+[Zur Registrierung für Lieferanten](supplier-registration.md).
 
-## Werkzeuge im Dashboard für Lieferanten
+## Zugang und Status richtig einordnen
 
-Rechts von der Suchleiste finden Sie mehrere Werkzeuge, die Ihnen helfen, mit dem Dashboard effizienter zu interagieren und es zu verwalten.
+Portal aktiviert, Einladung versendet, Registrierung abgeschlossen und Freigabe erteilt sind unterschiedliche Zustände. Ein angelegter Lieferant oder gespeicherte Stammdaten beweisen keinen fertigen Portalzugang. Die Lieferantenansicht richtet sich nach den zugewiesenen Berechtigungen; sie ist nicht mit der internen Admin-Ansicht gleichzusetzen.
 
-### Dashboard aktualisieren <a href="#refresh-table" id="refresh-table"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
-
-Klicken Sie auf diese Schaltfläche, um das Dashboard zu aktualisieren und die aktuellsten Daten und Status zu laden.
-
-### Tabellenspalten für die Organisation festlegen <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
-
-Klicken Sie auf diese Schaltfläche, um ein Menü zu öffnen, in dem Sie die Sichtbarkeit der Spalten in der Bestelltabelle verwalten können. Verwenden Sie die Kontrollkästchen und Pfeiltasten, um Spalten zwischen den sichtbaren und versteckten Abschnitten zu verschieben. Sie können auch Spalten durch Ziehen und Ablegen der Spaltennamen neu anordnen. Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
-
-### Analytik <a href="#analytics" id="analytics"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-Durch Klicken auf diese Schaltfläche wird ein neuer Abschnitt geöffnet, der zeigt, wie viele Lieferanten kurz vor dem Ablauf stehen und wann.\
-Klicken Sie auf eine beliebige Kategorie, um einen Filter anzuwenden und nur diese Lieferanten anzuzeigen.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
-
-## Lieferanten erstellen und Registrierungs-E-Mail senden
-
-### **Um einen neuen Lieferanten zu erstellen:**
-
-1.  Klicken Sie auf das Pluszeichen (+) in der oberen rechten Ecke.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Füllen Sie die erforderlichen Felder aus und klicken Sie dann auf **Speichern**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. Der Lieferant erhält automatisch eine E-Mail mit einem Link zur Erstellung seines Kontos.
-
-### **Um eine Registrierungs-E-Mail an einen bestehenden Lieferanten zu senden:**
-
-1. Suchen Sie den Lieferanten im **Dashboard für Lieferanten**.
-2. Klicken Sie auf das Drei-Punkte-Menü in der Spalte **Aktionen**.
-3.  Wählen Sie **Magic Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Überprüfen Sie die Details des Lieferanten.
-5.  Klicken Sie auf **Senden**, um den Registrierungslink per E-Mail zu versenden.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
-
-## Wie funktioniert der Registrierungsprozess für den Lieferanten?
-
-Nachdem eine Einladung per E-Mail gesendet wurde, muss der Lieferant den Registrierungsprozess abschließen, um auf das **Lieferanten-Portal** zuzugreifen.
-
-Eine detaillierte Schritt-für-Schritt-Anleitung zum Registrierungsprozess finden Sie [hier](supplier-registration.md).
+Die Aufnahmen wurden mit dem autorisierten Dev-Testkonto in deutscher Oberflächensprache erstellt. Geprüft wurden lesende UI- und Listenabfragen, die sichtbaren Bedienelemente und unverändert abgebrochene Formulare. Es wurden keine Einstellungen oder Spaltenauswahl gespeichert, keine Lieferanten angelegt oder verändert und keine Einladung, Registrierung oder Freigabe ausgeführt. Such- und Filterergebnisse sowie E-Mail-Zustellung sind damit nicht als funktional getestet belegt. Das vorhandene Video bleibt erhalten; eine neue Audio-, Sprach- oder Synchronitätsprüfung wurde nicht durchgeführt.

@@ -1,6 +1,12 @@
 # Start exporteren
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-f55f53ace7e0-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v1-nl-nl.png" alt="Start exporteren, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v2-nl-nl.png" alt="Start exporteren, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v3-nl-nl.png" alt="Start exporteren, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_export_v4-nl-nl.png" alt="Start exporteren, Versie 4" width="634"><figcaption><p>Versie 4</p></figcaption></figure>
 
 ## **Doel:**
 

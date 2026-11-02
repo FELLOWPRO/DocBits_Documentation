@@ -1,6 +1,6 @@
 # If Country in Field is One of
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-07-pt-20261023.png" alt="Campo de documento Se o país no campo Nome do campo Operador for um dos países: País , continue: Booleano" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

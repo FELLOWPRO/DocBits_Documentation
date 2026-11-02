@@ -1,6 +1,6 @@
 # Assign document to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-05-fr-20261023.png" alt="Attribué à Affecter le document à Type de cessionnaire sur la base de la table de décision." width="563"><figcaption></figcaption></figure>
 
 ## Objectif :
 

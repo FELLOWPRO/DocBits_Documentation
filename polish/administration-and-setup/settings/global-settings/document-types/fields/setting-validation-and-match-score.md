@@ -1,19 +1,25 @@
-# Walidacja i próg dopasowania
+# Ustawianie walidacji i wyniku dopasowania
 
-Wymagalność, wymuszona walidacja, OCR i Match Score to różne właściwości pola. Otwórz pola typu dokumentu, aby je sprawdzić.
+W sekcji **Pola** można ustawić progi walidacji i rozpoznawania dla typu dokumentu. Strona używa typu **Faktura** w testowej organizacji dokumentacji. Opisuje aktualne pole wyboru **WYMUSZENIE WALIDACJI** oraz elementy sterujące **WYNIK MECZU**.
 
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_choose_column_type-pl.png" alt="Oddzielne kolumny wymuszonej walidacji, OCR i Match Score. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy."><figcaption><p>Oddzielne kolumny wymuszonej walidacji, OCR i Match Score. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy.</p></figcaption></figure>
+## Otwieranie ustawień pól
 
-## Wymuszona walidacja
+1. Przejdź do **Ustawienia → Typy dokumentów → Faktura → Pola**.
+2. Użyj pola **Szukaj według nazwy**, aby znaleźć pole, na przykład `invoice_number` (wyświetlane jako **Numer faktury**).
+3. Sprawdź wiersz pola przed zmianą ustawienia. **WYMAGANY**, **Tylko Do Odczytu**, **Ukryty** i **WYMUSZENIE WALIDACJI** to oddzielne pola wyboru.
 
-Wymuszona walidacja wymaga jawnego sprawdzenia pola. Sama nie tworzy wyrażenia regularnego ani reguły porównania. Niestandardowe reguły walidacji konfiguruje się oddzielnie.
+<figure><img src="../../../../../.gitbook/assets/dbdc-679-fields-overview-pl-20261011.png" alt="Polska strona Pola w Sandbox z ustawieniami rozpoznawania, elementami OCR i WYNIK MECZU, kolumnami pól i przyciskiem Zapisz ustawienia"><figcaption>Elementy sterujące rozpoznawaniem znajdują się nad listą pól.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/s150-image-120-pl.png" alt="Oddzielne ustawianie walidacji i rozpoznawania każdego pola. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy."><figcaption><p>Oddzielne ustawianie walidacji i rozpoznawania każdego pola. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy.</p></figcaption></figure>
+## WYMUSZENIE WALIDACJI (Force Validation)
 
-## OCR i Match Score
+Zaznacz **WYMUSZENIE WALIDACJI** w wierszu pola, aby zastosować dla tego pola surowszą walidację. Pole wyboru jest niezależne od opcji **WYMAGANY**: oznaczenie pola jako wymagane nie zaznacza automatycznie opcji WYMUSZENIE WALIDACJI. Pole wyboru może być niedostępne, gdy pole jest ukryte lub tylko do odczytu. Po zmianie konfiguracji pól kliknij **Zapisz ustawienia**.
 
-OCR określa próg rozpoznawania pola. Match Score jest liczbowym progiem dopasowania. Nie jest tekstem odniesienia ani listą wyboru porównywanej wartości.
+Stare instrukcje sugerowały wpisywanie w tym miejscu limitów liczbowych lub wyrażeń regularnych. Aktualna tabela pól nie wyświetla edytora reguł w komórce WYMUSZENIE WALIDACJI. Reguły specyficzne dla pól opisuje strona [Konfigurowanie właściwości pola](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/s150-docbits_decide_column_necessity-pl.png" alt="Przefiltrowany numer faktury z wymuszoną walidacją i Match Score. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy."><figcaption><p>Przefiltrowany numer faktury z wymuszoną walidacją i Match Score. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy.</p></figcaption></figure>
+## WYNIK MECZU (Match Score)
 
-Przed zapisaniem ustawień sprawdź zachowanie na reprezentatywnych dokumentach. Pole wymagane nie zastępuje wymuszonej walidacji.
+**WYNIK MECZU** to próg liczbowy, a nie stała wartość referencyjna. Suwaki **OCR** i **WYNIK MECZU** w sekcji **USTAWIENIA ROZPOZNAWANIA** stosują swoją wartość do wierszy pól typu dokumentu; aby ustawić wartość dla pojedynczego pola, użyj pola **WYNIK MECZU** w danym wierszu. W testowej organizacji oba suwaki pokazują **80**, a wiersz `invoice_number` pokazuje **60**. Przejrzyj objęte pola, a następnie kliknij **Zapisz ustawienia**.
+
+<figure><img src="../../../../../.gitbook/assets/dbdc-679-invoice-id-settings-pl-20261011.png" alt="Polski wiersz pola invoice_number w Sandbox z zaznaczonym WYMUSZENIEM WALIDACJI i WYNIKIEM MECZU 60"><figcaption>Wyszukaj pole, aby sprawdzić jego pole wyboru WYMUSZENIE WALIDACJI i wartość WYNIK MECZU.</figcaption></figure>
+
+**OCR** to oddzielny próg rozpoznawania obok wyniku dopasowania. **PRZYWRÓĆ USTAWIENIA DOMYŚLNE** resetuje ustawienia; użyj tej opcji tylko wtedy, gdy chcesz odrzucić własne progi. Inne opcje pól opisuje [Przegląd pól](README.md).

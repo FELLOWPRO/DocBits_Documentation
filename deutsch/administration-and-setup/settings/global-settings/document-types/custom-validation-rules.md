@@ -226,6 +226,18 @@ Testen Sie jede neue Regel an mindestens einem Dokument, das fehlschlagen soll, 
 * Warnungen werden separat gesammelt und verdecken nie einen Fehler.
 * Kann eine Regel nicht ausgewertet werden, zum Beispiel wegen einer Division durch null in einer Formel, wird sie übersprungen. Eine defekte Regel markiert ein Dokument nie fälschlicherweise als ungültig.
 
+## Protokolle <a id="logs"></a>
+
+Jede Regel kann ihre Auswertungen protokollieren lassen. Öffnen Sie dazu beim Dokumenttyp die Seite **Regelausführungsprotokolle**: Der Seitenkopf nennt den Dokumenttyp, das Aktualisieren-Symbol oben rechts lädt die Liste neu.
+
+Mit **Finden durch** legen Sie fest, wonach gesucht wird; voreingestellt ist **Regelschlüssel**, den Wert tragen Sie in das Suchfeld daneben ein. Beim Suchen nach einem Dokument ist **Regeltyp** erforderlich. Mit **Ergebnis**, **Ausgeführt**, **Von Datum** und **Miteinander ausgehen** grenzen Sie die Treffer weiter ein — das Bis-Datum trägt in der Oberfläche die Beschriftung **Miteinander ausgehen**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-de.png" alt="Die Regelausführungsprotokolle"><figcaption><p>Die Seite Regelausführungsprotokolle: oben die Filter, darunter eine Zeile pro Auswertung. Solange nicht gesucht wurde, nennt die Tabelle den Suchweg.</p></figcaption></figure>
+
+Öffnen Sie einen Eintrag, um seine Details zu sehen, darunter die **Bedingungsverfolgung**: jede Zeile von *Applies when* mit dem erwarteten Wert, dem tatsächlichen Wert des Dokuments und ob sie erfüllt wurde. Siehe [Bedingungen im Detail](rule-conditions-applies-when.md).
+
+Dieselbe Seite zeigt auch die Protokolle der Transformations- und Layout-Auswahlregeln.
+
 ## Rezepte
 
 Kopieren Sie diese Regeln als Ausgangspunkt. Feld- und Spaltenschlüssel stammen vom Standard-Dokumenttyp **Rechnung**; passen Sie sie an Ihre Dokumenttypen an.

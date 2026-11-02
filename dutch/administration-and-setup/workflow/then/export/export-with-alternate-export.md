@@ -1,6 +1,6 @@
 # Exporteren met alternatieve export
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-379e4b3a5355-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_alternate_export_v2-nl-nl.png" alt="Exporteren met alternatieve export, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## Wanneer moet u deze kaart gebruiken?
 

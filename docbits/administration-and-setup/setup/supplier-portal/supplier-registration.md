@@ -1,35 +1,29 @@
-# Supplier Registration
+# Supplier registration
 
-1. You will receive an invitation with a link via E-mail to begin the registration process. Please click on “Go to Registration,” submit the required information, and accept the terms and conditions to get started.\
-   ![](<../../../.gitbook/assets/image (105).png>)![](<../../../.gitbook/assets/image (324).png>)
-2.  **Supplier Details**
+This guide is for suppliers invited to an organisation’s DocBits portal. Use the link in your invitation. You have your own supplier account; the inviting organisation determines which information is available and which registration steps are required.
 
-    Please verify that the Supplier name is correct. This is a critical detail for identity and legal purposes that cannot be changed. Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Address Data section. To save your progress and continue later, click on “Save.”\\
+## 1. Open the invitation
 
-    <figure><img src="../../../.gitbook/assets/image (325).png" alt=""><figcaption></figcaption></figure>
-3.  **Address Data**\
-    Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Supplier Contact section. To save your progress and continue later, click on “Save.”\\
+Check which organisation sent the invitation and which email address it is intended for. Open the registration link in that invitation. If it has expired or was sent to the wrong person, ask the inviting organisation for a new invitation.
 
-    <figure><img src="../../../.gitbook/assets/image (326).png" alt=""><figcaption></figcaption></figure>
-4.  **Supplier Contact**\
-    Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Supplier Financial section. To save your progress and continue later, click on “Save.”\\
+## 2. Set up your own account
 
-    <figure><img src="../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
-5.  **Supplier Financial**\
-    Please provide all applicable information. When completed, click on “Next” to continue to the Supplier Purchase section. To save your progress and continue later, click on “Save.”\\
+Check any prefilled name and email address. Enter the requested account details and follow the displayed password rules. Read the terms and privacy information shown. Complete account registration using the registration control. An existing account and a new registration are different cases; follow the process intended for your invitation.
 
-    <figure><img src="../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
-6.  **Supplier Purchase**\
-    Please provide all applicable information. When completed, click on “Next” to continue to the Supplier Certificates section. To save your progress and continue later, click on “Save.”\\
+<figure><img src="../../../.gitbook/assets/portal-registration-20261024-en.png" alt="Supplier account registration form. This example shows an empty entry form; an invitation may prefill some details."><figcaption><p>Supplier account registration form. This example shows an empty entry form; an invitation may prefill some details.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
-7.  **Supplier Certificates**\
-    Please upload all certificates required (Tax, Insurance, Vendor Diversification). Please save your progress if you need to return to complete the registration process later. When completed, click on “Send for Approval.”\\
+## 3. Complete supplier information
 
-    <figure><img src="../../../.gitbook/assets/image (330).png" alt=""><figcaption></figcaption></figure>
-8.  Please upload all certificates required (Tax, Insurance, Vendor Diversification). Please save your progress if you need to return to complete the registration process later. When completed, click on “Send for Approval.”\\
+Enter the information and any supporting documents requested by the organisation. Fields and sections depend on its supplier layout. Required-field indicators and validation messages show what is needed. Save your progress if the screen offers this option; saving is not automatically the final submission.
 
-    <figure><img src="../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
-9.  Please check your E-mail for a confirmation that you have completed the registration process.\\
+## 4. Check registration and approval
 
-    <figure><img src="../../../.gitbook/assets/image (332).png" alt=""><figcaption></figcaption></figure>
+Submit your information using the designated completion action. If a review or approval is configured, wait for its result. Then sign in with your own account. The organisation determines which purchase orders, invoices and other information you can view.
+
+## If you cannot access the portal
+
+Contact the inviting organisation if your invitation link is invalid, permissions are missing or required information is unclear. An internal supplier record does not replace your registration or the necessary access approval.
+
+[Supplier portal setup](README.md).
+
+[Video: Prepare portal access and registration – with English captions](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/en.html)

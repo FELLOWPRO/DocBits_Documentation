@@ -7,7 +7,7 @@ An API request lets another program read or update information in DocBits. Start
 1. Ask an organization administrator for access and [create an API key](api-key-management.md) for the integration. Keep the key in a secret store; do not put it in a screenshot, document, or source file.
 2. Open the [current Sandbox API reference](https://sandbox.api.docbits.com/docs). It lists the available operations, required values, and example responses for that environment. Use the reference for your own environment when you leave the Sandbox.
 
-<figure><img src="../../../../.gitbook/assets/api-calls-key-context-en.png" alt="English DocBits API Key section with Create API Key button; no key value is visible"><figcaption><p>Find API keys under Settings → Integration &amp; SSO. The image contains no key value.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-20-api-key-context-en-20261031-readable.png" alt="English DocBits API Keys section with the Create API Key button; no key values or data rows are visible"><figcaption><p>Choose Create API Key to open the form for a new key.</p></figcaption></figure>
 
 ## Example: read document types
 

@@ -1,6 +1,6 @@
 # Module active
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-02-it-20261023.png" alt="Logica Module Modulo Operatore active." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

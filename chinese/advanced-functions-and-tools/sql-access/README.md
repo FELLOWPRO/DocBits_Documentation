@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### 创建物化视图
+### 使用 SELECT 进行汇总的示例
 
-我们建议创建物化视图，预先计算数据，以提升 PowerBI 等分析工具的性能：
+以下查询汇总已有行，并不会创建物化视图。只读访问不提供创建物化视图所需的写入权限。请根据实际表结构、数字格式和币种调整表名及转换方式；不要在未明确换算的情况下累加不同币种。
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

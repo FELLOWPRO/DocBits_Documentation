@@ -244,7 +244,7 @@ Die ursprünglichen Release-Ankündigungen bleiben unten als Referenz erhalten.
 *   **Standard-Layout auf alle Origins anwenden:**\
     Ein neuer **Apply Default Layout to Origins**-Button wurde im Layout-Konfigurationsbildschirm eingeführt. Administratoren können jetzt das Standard-Layout mit einer einzigen Aktion auf alle Origins innerhalb einer Organisation übertragen, wodurch der zeitaufwändige manuelle Prozess des Kopierens und Einfügens von Layout-JSON für jede Origin einzeln entfällt. Dies ist besonders nützlich beim Onboarding neuer Kunden, bei dem mehrere Origins konsistent konfiguriert werden müssen.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-de-20261023.png" alt="Layout Builder in deutscher Oberfläche mit dem geöffneten Dialog zum Anwenden des Standardlayouts auf mehrere Origins."><figcaption><p>Der Dialog zum Anwenden des Standardlayouts auf Origins. Beispieldaten, es wurde nichts gespeichert.</p></figcaption></figure>
 *   **Dokumenttyp-Auswahl für FTP-Import:**\
     FTP-Import-Konfigurationen unterstützen jetzt die ordnerspezifische Dokumenttyp-Zuweisung. Bei der Konfiguration eines FTP-Imports können Benutzer angeben, welcher Dokumenttyp — wie Rechnung oder Auftragsbestätigung — auf alle aus diesem Ordner importierten Dokumente angewendet werden soll. Dokumente werden beim Import automatisch klassifiziert, wodurch eine manuelle Dokumenttyp-Zuweisung nach der Aufnahme entfällt. Dies unterstützt Organisationen, die mehrere Dokumenttypen über verschiedene Unterorganisationen und Ordner verwalten.
 
@@ -553,7 +553,7 @@ DocBits unterstützt nun vollständig die ZUGFeRD-Versionen 2.1 und höher, was 
 * **Flexibilität**: Egal ob Basis-, Komfort- oder Extended-Profil innerhalb des ZUGFeRD-Standards – DocBits bietet die passenden Werkzeuge für jede Komplexitätsstufe von Rechnungen.
 * **Zukunftssicherheit**: Durch die Unterstützung neuerer ZUGFeRD-Versionen bleibt DocBits stets konform mit den sich ändernden E-Rechnungsrichtlinien in den EU-Mitgliedstaaten und darüber hinaus.
 
-Durch die Einbindung von ZUGFeRD 2.1 und neueren Standards vereinfacht DocBits grenzüberschreitende Transaktionen und entspricht modernen Geschäftsanforderungen – ein unverzichtbares Werkzeug für Organisationen, die digitale Transformation und regulatorische Konformität priorisieren. [ZUGFeRD-Versionen und ihre DocBits-Feldzuordnungen entdecken](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+Durch die Einbindung von ZUGFeRD 2.1 und neueren Standards vereinfacht DocBits grenzüberschreitende Transaktionen und entspricht modernen Geschäftsanforderungen – ein unverzichtbares Werkzeug für Organisationen, die digitale Transformation und regulatorische Konformität priorisieren. [ZUGFeRD-Versionen und ihre DocBits-Feldzuordnungen entdecken](https://docs.docbits.com/deutsch/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Externe API-Integration zur verbesserten Dokumentenverarbeitung
 

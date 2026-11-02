@@ -1,6 +1,6 @@
 # Compare values in table
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-table-01-pt-20261023.png" alt="Tabela Compare os valores na tabela Nome da tabela : Nome da coluna Operador Nome da coluna" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

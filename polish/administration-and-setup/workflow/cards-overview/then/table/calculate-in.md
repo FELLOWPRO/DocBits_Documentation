@@ -1,6 +1,6 @@
 # Calculate in
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-table-02-pl-20261023.png" alt="Tabela Oblicz w Nazwa tabeli : Nazwa kolumny Operator matematyczny Nazwa kolumny , jeśli kolumna column name dependency pasuje do wzorca wyrażenia regularnego Python Wzorzec Regex i dodaj wynik do Kolumna wyników" width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

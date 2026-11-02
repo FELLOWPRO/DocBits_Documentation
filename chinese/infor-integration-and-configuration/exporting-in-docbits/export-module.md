@@ -12,7 +12,7 @@
 
 路径：**设置** → **文档处理** → **导出**
 
-<figure><img src="../../.gitbook/assets/export_list_view.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-export_settings_menu_access-zh.png" alt="中文导出配置列表，配置内容已隐藏；Actions 仍为英文。此处展示配置入口，不代表已执行导出。"><figcaption><p>中文导出配置列表，配置内容已隐藏；Actions 仍为英文。此处展示配置入口，不代表已执行导出。</p></figcaption></figure>
 
 有关如何配置各类导出的详细说明，包括截图和字段描述，请参阅完整指南：
 

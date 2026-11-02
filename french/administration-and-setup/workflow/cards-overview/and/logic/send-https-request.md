@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-01-fr-20261023.png" alt="Logique Envoyer une requête HTTPS à URL avec des en-têtes: En-têtes , method: Méthode HTTP , parameter: Paramètres , data: data et le code de statut de réception est dans status code ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

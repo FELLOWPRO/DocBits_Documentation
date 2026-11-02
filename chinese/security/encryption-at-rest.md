@@ -12,7 +12,7 @@ DocBits 使用 DigitalOcean Managed Databases 和 DigitalOcean Spaces。**2026 �
 
 | 存储服务 | 静态数据加密 | 覆盖范围 |
 | --- | --- | --- |
-| Managed Databases：PostgreSQL、OpenSearch、Valkey | LUKS 全卷加密；使用 `aes-xts-plain64:sha256` 和 512 位 XTS 密钥材料 | 底层数据库服务卷，包括存储在这些卷上的数据。这是存储层保护，并不表示对每个数据库字段进行单独加密。 |
+| 托管数据库：PostgreSQL、OpenSearch、Valkey | LUKS 全卷加密；使用 `aes-xts-plain64:sha256` 和 512 位 XTS 密钥材料 | 底层数据库服务卷，包括存储在这些卷上的数据。这是存储层保护，并不表示对每个数据库字段进行单独加密。 |
 | Managed Database 备份 | AES-256 CTR 模式加密，使用 HMAC-SHA256 确保完整性；每个文件的密钥由 RSA-3072 保护 | 由托管数据库服务创建的备份。其他导出内容和备份副本需要单独验证。 |
 | DigitalOcean Spaces | 256 位 AES-XTS 全盘加密 | 物理存储磁盘上的数据。这与可选的对象级或客户端加密相互独立。 |
 | DigitalOcean Volumes（如有使用） | 对存储集群进行 LUKS 加密 | 这些块存储卷上的数据；卷快照沿用该加密保护。 |

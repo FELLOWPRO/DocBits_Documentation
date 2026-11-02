@@ -1,6 +1,12 @@
 # Esporta con configurazione di esportazione
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-10e6b7590bc6-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v1-it-it.png" alt="Esporta con configurazione di esportazione, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_v3-it-it.png" alt="Esporta con configurazione di esportazione, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v2-it-it.png" alt="Metti in coda l&#x27;esportazione del documento con la configurazione di esportazione: … per l&#x27;esportazione finale al termine dell&#x27;esecuzione. Ignora le attività in sospeso: …. — Versione 2" width="634"><figcaption><p>Metti in coda l'esportazione del documento con la configurazione di esportazione: … per l'esportazione finale al termine dell'esecuzione. Ignora le attività in sospeso: …. — Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_export_with_config_deferred_v3-it-it.png" alt="Metti in coda l&#x27;esportazione del documento con la configurazione di esportazione: … per l&#x27;esportazione finale al termine dell&#x27;esecuzione. Ignora le attività in sospeso: …. Stato dopo l&#x27;esportazione: …. — Versione 3" width="634"><figcaption><p>Metti in coda l'esportazione del documento con la configurazione di esportazione: … per l'esportazione finale al termine dell'esecuzione. Ignora le attività in sospeso: …. Stato dopo l'esportazione: …. — Versione 3</p></figcaption></figure>
 
 ## **Scopo:**
 

@@ -8,7 +8,7 @@ Selecteer in de **Workflow Builder** onder **And...** de optie **Add Card**. Kie
 
 Gebruik deze kaarten om order- of factuurgegevens te vergelijken met een inkooporder, zoals eenheidsprijs, toegezegde leverdatum, kosten of hoeveelheid. Kies de velden, de operator en eventuele tolerantie die de geselecteerde kaart vraagt. Zie [Compare with Purchase Order](compare-with-purchase-order/) voor de afzonderlijke kaarten.
 
-<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="English And card picker with Compare with Purchase Order selected; visible previews include unit price, delivery date, charges, and quantity comparisons."><figcaption><p>Categorie Compare with Purchase Order in de Engelstalige Sandbox.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-nl-20261023.png" alt="And-kaartkiezer in het Nederlands met de categorie Vergelijk met inkooporder geselecteerd; de zichtbare voorbeelden omvatten vergelijkingen van ordergegevens, leverdatum, prijs, kosten en hoeveelheid."><figcaption><p>Categorie Vergelijk met inkooporder in de kaartkiezer in het Nederlands (voorbeeldgegevens).</p></figcaption></figure>
 
 ## Document Field
 

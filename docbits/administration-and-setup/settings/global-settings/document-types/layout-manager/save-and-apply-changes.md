@@ -9,7 +9,7 @@
 * After you have made the desired customizations in the Layout Manager, look for the "Save" button to save the changes.
 * Click this button to save your changes in the Layout Manager. This backs up your layout customizations and ensures that they are available for future editing sessions.
 
-<figure><img src="../../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (257).png" alt="Layout Manager save icon"><figcaption></figcaption></figure>
 
 #### Applying the changes to the document processing workflow:
 

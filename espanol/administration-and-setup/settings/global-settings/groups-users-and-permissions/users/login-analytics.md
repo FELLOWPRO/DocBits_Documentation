@@ -1,5 +1,13 @@
 # Análisis de inicios de sesión
 
+## Tutorial en vídeo: Empresa, suscripción y auditoría
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/es.mp4" %}
+Información de la empresa, plan de suscripción y registros de auditoría en DocBits
+{% endembed %}
+
+El vídeo muestra la información y las preferencias de la empresa, el plan de suscripción, la actividad de inicio de sesión y los registros de auditoría.
+
 **Análisis de inicios de sesión** ofrece a los administradores una vista de solo lectura, a nivel de toda la organización, sobre *cuándo* y *con qué frecuencia* las personas inician sesión en DocBits. Responde a preguntas como «¿están aumentando los inicios de sesión?», «¿cuántos usuarios distintos estuvieron activos este mes?» y «¿cuándo se producen los picos de uso?», sin exponer las credenciales ni los datos personales de ningún usuario concreto.
 
 > **Acceso:** Abra **Ajustes → Organización y acceso → Usuarios** y haga clic en el botón **Análisis de inicios de sesión** en la esquina superior derecha (`/settings/login-analytics`).

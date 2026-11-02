@@ -1,6 +1,6 @@
 # Identyfikator przedmiotu w zamówieniu
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a5b4a7c3888-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_id_column_po_v2-pl-pl.png" alt="Identyfikator przedmiotu w zamówieniu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

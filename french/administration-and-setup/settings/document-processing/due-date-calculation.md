@@ -1,8 +1,10 @@
 # Calcul de la date d'échéance
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Paramètres du calcul de la date d'échéance"><figcaption><p>Paramètres du calcul de la date d'échéance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-fr.png" alt="Paramètres du calcul de la date d'échéance"><figcaption><p>Paramètres du calcul de la date d'échéance</p></figcaption></figure>
 
 La page **Calcul de la date d'échéance** (**Traitement des documents → Calcul de la date d'échéance**) contrôle la manière dont DocBits calcule les dates d'échéance des factures, les dates d'échéance d'escompte (Skonto) et les conditions de paiement à partir des codes de conditions de paiement trouvés sur les factures.
+
+La carte **Invoice Due Date Calculation** regroupe les paramètres généraux. Utilisez **Enregistrer** dans son en-tête pour enregistrer vos modifications. Plus bas se trouvent les tableaux des conditions d’escompte et de paiement ainsi qu’une référence des formats pris en charge.
 
 ## Afficher les champs calculés
 
@@ -12,9 +14,7 @@ Activez **Afficher les champs calculés** pour que les champs de facture calcul�
 
 ### Gestion des week-ends
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Options de convention de week-end"><figcaption><p>Options de convention de week-end</p></figcaption></figure>
-
-Choisissez comment une date d'échéance qui tombe un samedi ou un dimanche est ajustée. Cela s'applique **à la fois** à la date d'échéance de la facture et à celle de l'escompte (Skonto).
+Choisissez la **Gestion des week-ends** pour contrôler comment une date d’échéance qui tombe un samedi ou un dimanche est ajustée. Cela s’applique **à la fois** à la date d’échéance de la facture et à celle de l’escompte (Skonto).
 
 | Convention | Effet |
 |------------|-------|
@@ -30,13 +30,19 @@ Associez les conditions de paiement du fournisseur à des codes d'affectation co
 
 ## Remplacements des conditions d'escompte
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_mappings.png" alt="Remplacements des conditions d'escompte"><figcaption><p>Remplacements des conditions d'escompte</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-fr.png" alt="Remplacements des conditions d'escompte"><figcaption><p>Remplacements des conditions d'escompte</p></figcaption></figure>
 
-Utilisez les **Remplacements des conditions d'escompte** pour associer un préfixe précis à un pourcentage d'escompte et à un nombre de jours. Cliquez sur **+ Ajouter une association** pour ajouter une ligne avec **Préfixe**, **Pourcentage** et **Jours**.
+Utilisez les **Remplacements des conditions d’escompte** pour associer un préfixe précis à un pourcentage d’escompte et à un nombre de jours. Cliquez sur **Ajouter une association** pour ajouter une ligne avec **Préfixe**, **Pourcentage** et **Jours**. Pour modifier ou supprimer une association existante, utilisez le menu (⋮) en fin de ligne.
+
+## Remplacements des conditions de paiement
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-fr.png" alt="Remplacements des conditions de paiement"><figcaption><p>Remplacements des conditions de paiement</p></figcaption></figure>
+
+Utilisez les **Remplacements des conditions de paiement** pour associer un code de conditions de paiement à un type de délai, à un nombre de jours et à une description. Cliquez sur **Ajouter une association** pour ajouter une ligne, puis utilisez le menu (⋮) en fin de ligne pour modifier ou supprimer une association.
 
 ## Formats pris en charge
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Formats de conditions de paiement et d'escompte pris en charge"><figcaption><p>Formats de conditions de paiement et d'escompte pris en charge</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-fr.png" alt="Formats de conditions de paiement et d'escompte pris en charge"><figcaption><p>Formats de conditions de paiement et d'escompte pris en charge</p></figcaption></figure>
 
 DocBits reconnaît les codes de conditions de paiement et d'escompte suivants.
 

@@ -18,11 +18,11 @@
 
 1. 进入 **Settings（设置）** → **Document Type（文档类型）** → _\[Your Document (e.g., Purchase Order)]_ → **E-Doc**。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-zh.png" alt="EDI 配置中的转换、提取路径、预览及结构描述入口。"><figcaption><p>EDI 配置中的转换、提取路径、预览及结构描述入口。</p></figcaption></figure>
 2. 在 **E-Doc** 选项卡下，选择所需格式（例如 **EDI**）。
 3. 点击 **Preview（预览）**以查看或编辑文件。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-preview-zh.png" alt="已生效的预览属性：编辑器中的 XSLT 源代码，此视图不是运行后生成的文档预览。"><figcaption><p>已生效的预览属性：编辑器中的 XSLT 源代码，此视图不是运行后生成的文档预览。</p></figcaption></figure>
 
 #### **草稿管理：**
 
@@ -55,15 +55,20 @@
 * 前往 **Preview（预览）**界面。
 * 打开 **Preview Function（预览功能）**。\
   \
-  ![](<../../../../../../.gitbook/assets/image (21).png>)
+
 * 输入 Document ID，然后点击 **Test（测试）**。
 * 系统将使用当前 HTML/CSS/XSLT 设置显示渲染后的类 PDF 预览。
 
 此功能对于调试数据绑定、改进布局，以及确保文档准确且便于用户阅读，并能供下游系统（如 **IDM**）使用至关重要。
 
-<figure><img src="../../../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 6. 视频演示
 
 此文件类型的视频指南可在[视频页面](edi-videos.md)中查看。\
 可跟随视频了解设置、编辑和预览的操作流程。
+
+
+这些视图显示现有配置及其版本。设置因文档类型和格式而异。请在草稿中验证更改后再激活。
+
+图片展示中文流程卡片和只读配置。在所示版本中，Active 状态误译为“积极的”，实际表示已生效。技术编辑器标题、属性标识符及配置代码保留原文。

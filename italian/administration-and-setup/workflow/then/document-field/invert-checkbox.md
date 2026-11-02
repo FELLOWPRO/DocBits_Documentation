@@ -1,6 +1,6 @@
 # Casella di controllo Inverti
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-d1f382afe206-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_invert_boolean_field_v2-it-it.png" alt="Casella di controllo Inverti, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 

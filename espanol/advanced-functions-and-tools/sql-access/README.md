@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### Creación de vistas materializadas
+### Ejemplo de agregación con SELECT
 
-Recomendamos crear vistas materializadas para precalcular datos y mejorar el rendimiento en herramientas de análisis como PowerBI:
+La consulta siguiente agrega filas existentes; no crea una vista materializada. El acceso de solo lectura no concede los permisos de escritura necesarios para crearla. Adapte los nombres de tablas y las conversiones al esquema, al formato numérico y a la moneda. No sume monedas diferentes sin una conversión explícita.
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

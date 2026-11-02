@@ -39,7 +39,7 @@
 
 **变量**可让你只需存储一次值，就能在高级工作流的各个节点中重复使用，例如阈值、固定收件人，或从文档中读取并传递给后续节点的值。点击工具栏中的**变量**按钮（`{ }` 图标）打开变量面板。
 
-<figure><img src="../../../.gitbook/assets/workflow_advanced_variables.png" alt="按类型分组的变量面板，带有 New Variable 按钮"><figcaption><p>变量面板——变量按类型分组，带有搜索框和<strong>New Variable</strong>。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-advanced-variables-zh.png" alt="中文高级工作流变量窗口。变量名称和值已隐藏；界面仍使用 Text、YesNo、Document 等英文类型标签，分别表示文本、是／否和文档。未创建、修改或删除组织变量。"><figcaption><p>中文高级工作流变量窗口。变量名称和值已隐藏；界面仍使用 Text、YesNo、Document 等英文类型标签，分别表示文本、是／否和文档。未创建、修改或删除组织变量。</p></figcaption></figure>
 
 ## 变量类型
 
@@ -47,7 +47,7 @@
 
 - **文本** — 字符串值（例如描述或固定标签）。
 - **是/否** — 布尔标记（是 / 否）。
-- **文档** — 对文档或文档字段的引用。
+- **文档** — 文档引用，由相应工作流动作设置；不是在此面板中直接输入文档字段值。
 
 列表变长后，可使用搜索框快速查找变量。
 

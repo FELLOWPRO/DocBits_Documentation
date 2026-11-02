@@ -1,6 +1,6 @@
 # Tax in document field
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-04-fr-20261023.png" alt="Comparaison des bons de commande La taxe dans le champ du document Nom du champ est Opérateur à la taxe dans le bon de commande avec l&#x27;identifiant de charge dans la table Tableau des données de base avec des tolérances Tolérance Montant Type de tolérance ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

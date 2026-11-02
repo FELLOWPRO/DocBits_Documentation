@@ -17,16 +17,16 @@
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | [Purchase Order](./#purchase-order)                                                           | 采购订单匹配、容差、采购订单行导出、供应商物料编号 |
 | [Manage Layouts](./#manage-layouts-custom-validation-rules-and-transformation-rules)          | “Manage Layouts”概览的开关                             |
-| [Custom Validation Rules](./#manage-layouts-custom-validation-rules-and-transformation-rules) | 此文档类型的自定义验证规则                   |
+| [自定义校验规则](./#manage-layouts-custom-validation-rules-and-transformation-rules) | 此文档类型的自定义验证规则                   |
 | [Transformation Rules](./#manage-layouts-custom-validation-rules-and-transformation-rules)    | 读取一个值、分步更改并写回的规则      |
 | [Approval & Rejection](./#approval-and-rejection)                                             | 审批工作流以及审核中和拒绝表单               |
-| [Vertex Tax Verification](vertex-tax-verification.md)                                         | 设计 Vertex 税务验证表单                    |
-| [E-Invoice Validation](./#e-invoice-validation)                                               | 验证 XRechnung、ZUGFeRD 和 Factur-X 发票             |
+| [Vertex 税额校验](vertex-tax-verification.md)                                         | 设计 Vertex 税务验证表单                    |
+| [电子发票校验](./#e-invoice-validation)                                               | 验证 XRechnung、ZUGFeRD 和 Factur-X 发票             |
 | [Table Extraction](./#table-extraction)                                                       | 跳过提取表格的验证                            |
 | [Export Settings](./#export-settings)                                                         | 多次导出、PDF 格式、备用导出                      |
 | [Duplicate Detection](./#duplicate-detection)                                                 | 检测并阻止重复文档                               |
 
-## Purchase Order <a id="purchase-order"></a>
+## 采购订单 <a id="purchase-order"></a>
 
 **Purchase Order** 卡片（**PO Matching & Validation**）用于控制此类型的文档如何与采购订单匹配。
 
@@ -87,7 +87,7 @@ PO 匹配规则不只是一个列表。DocBits 可以将当前启用的规则集
 Purchase Order 卡片下方紧接着有三张卡片：
 
 * **Manage Layouts**：为此文档类型启用 Manage Layouts 概览。请参阅 [Layout Manager](../layout-manager/)。
-* **Custom Validation Rules**：启用自定义验证规则。点击 **Manage Validation Rules** 可打开规则。请参阅 [Custom Validation Rules](../custom-validation-rules.md)。
+* **Custom Validation Rules**：启用自定义验证规则。点击 **Manage Validation Rules** 可打开规则。请参阅 [自定义校验规则](../custom-validation-rules.md)。
 * **Transformation Rules**：启用转换规则。点击 **Manage Transformation Rules** 可打开规则。请参阅 [Transformation Rules](../transformation-rules.md)。
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Manage Layouts、Custom Validation Rules 和 Transformation Rules 卡片"><figcaption><p>包含各自开关的三张卡片。</p></figcaption></figure>
@@ -110,11 +110,11 @@ Purchase Order 卡片下方紧接着有三张卡片：
 
 ## Vertex 税务验证
 
-**Vertex Tax Verification** 卡片包含 **Design Vertex Tax Verification**。点击后会打开 Layout Builder，用于设计 DocBits 比较供应商税额和 Vertex 计算税额时用户看到的表单。有关集成、容差和结果，请参阅 [Vertex Tax Verification](vertex-tax-verification.md)。
+**Vertex Tax Verification** 卡片包含 **Design Vertex Tax Verification**。点击后会打开 Layout Builder，用于设计 DocBits 比较供应商税额和 Vertex 计算税额时用户看到的表单。有关集成、容差和结果，请参阅 [Vertex 税额校验](vertex-tax-verification.md)。
 
 ## 电子发票验证 <a id="e-invoice-validation"></a>
 
-**E-Invoice Validation** 卡片用于启用传入电子发票的验证，并允许你决定供应商在发票被拒绝时是否会收到通知。请参阅 [E-Invoice Validation](../../../document-processing/e-documents/validation-rules/)。
+**E-Invoice Validation** 卡片用于启用传入电子发票的验证，并允许你决定供应商在发票被拒绝时是否会收到通知。请参阅 [电子发票校验](../../../document-processing/e-documents/validation-rules/)。
 
 ## 表格提取 <a id="table-extraction"></a>
 

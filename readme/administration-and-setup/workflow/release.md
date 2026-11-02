@@ -46,7 +46,7 @@ The DocBits Workflow Engine implements robust version control for all workflow c
 #### 1. CALL_API
 **Versions:** v1, v2 (Current: v2)
 
-📖 **Guide:** [Call External API Guide](../then/action/call-api-guide.md)
+📖 **Guide:** [Call External API Guide](https://docs.docbits.com/administration-and-setup/workflow/cards-overview/call-api-guide)
 
 | Version | Translation | Status | Key Changes |
 |---------|-------------|--------|-------------|
@@ -106,7 +106,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versions:** v2, v3 (Deprecated), v4 (Current)
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+📖 **Guide:** [Task Assignment Guide](https://docs.docbits.com/administration-and-setup/workflow/cards-overview/task-assignment-guide)
 
 | Version | Changes | Status | Type Parameter |
 |---------|---------|--------|-----------------|
@@ -167,7 +167,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Most Evolved - 5 Versions)
 **Versions:** v2, v3, v4, v5 (Current)
 
-📖 **Guide:** [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Guide:** [PO Matching Complete Guide](https://docs.docbits.com/administration-and-setup/workflow/cards-overview/po-matching-complete-guide)
 
 | Version | Changes | Status | Tolerance | Comparison |
 |---------|---------|--------|-----------|------------|
@@ -351,7 +351,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Most Evolved Task Card - 4 Versions)
 **Versions:** v1 (Deprecated), v2 (Deprecated), v3 (Deprecated), v4 (Current)
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Guide:** [Task Assignment Guide](https://docs.docbits.com/administration-and-setup/workflow/cards-overview/task-assignment-guide)
 
 | Version | Translation | Decision Tree | Work Item Type | Status |
 |---------|-------------|---------------|-----------------|--------|
@@ -650,10 +650,9 @@ v4: + "Compare as [param1] [param2]"
 
 ## Related Documentation
 
-- 📖 [Card Versioning Reference](../changelog/card-versioning.md) - Detailed version information
-- 📚 [Workflow Guides](../) - Step-by-step card usage
-- 🔄 [Card Version Database](../docs/card_version.md) - Complete version history
-- 📋 [Workflow Logs](../workflow-logs/) - Execution and debugging
+- 📖 [Card Versioning Overview](#card-versioning-overview) - Summary on this page
+- 📚 [Workflow Guides](https://docs.docbits.com/administration-and-setup/workflow/cards-overview) - Step-by-step card usage
+- 🧾 [PO Matching Complete Guide](https://docs.docbits.com/administration-and-setup/workflow/cards-overview/po-matching-complete-guide) - Purchase-order comparison cards
 
 ---
 

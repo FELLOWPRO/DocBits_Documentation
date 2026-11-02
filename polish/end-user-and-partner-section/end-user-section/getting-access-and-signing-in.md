@@ -3,8 +3,8 @@
 Na tej stronie opisano, jak uzyskać konto DocBits i jak się zalogować, gdy nie masz swojego hasła:
 
 * [Rejestracja](#rejestracja) — utwórz własne konto DocBits.
-* [Zapomniane hasło](#zapomniane-hasło) — zresetuj hasło za pomocą linku do resetowania.
-* [Pierwsze hasło dla kont utworzonych przez administratora](#pierwsze-hasło-dla-kont-utworzonych-przez-administratora) — ustaw pierwsze hasło do konta, które administrator utworzył dla Ciebie.
+* [Zapomniane hasło](#zapomniane-haslo) — zresetuj hasło za pomocą linku do resetowania.
+* [Pierwsze hasło dla kont utworzonych przez administratora](#pierwsze-haslo-dla-kont-utworzonych-przez-administratora) — ustaw pierwsze hasło do konta, które administrator utworzył dla Ciebie.
 
 Logowanie do istniejącego konta oraz Uwierzytelnianie dwuskładnikowe są opisane na stronie [Uwierzytelnianie dwuskładnikowe (2FA)](../../security/two-factor-authentication.md). Jeśli potrzebujesz innego języka wyświetlania, użyj menu języka w prawym górnym rogu tych formularzy.
 
@@ -12,7 +12,7 @@ Logowanie do istniejącego konta oraz Uwierzytelnianie dwuskładnikowe są opisa
 
 Konto DocBits możesz utworzyć samodzielnie na stronie rejestracji. Otwórz ją za pomocą linku **Rejestr** na ekranie logowania lub przejdź do adresu `https://app.docbits.com/register` (użyj adresu internetowego przekazanego Twojej organizacji).
 
-<figure><img src="../../.gitbook/assets/dbdc745-getting-access-register-form-pl-20261011.png" alt="Formularz rejestracji DocBits z pustymi polami"><figcaption><p>Formularz rejestracji. Wszystkie pola są wymagane, chyba że zaznaczono inaczej.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-register-native-pl-20261101.png" alt="Polski formularz rejestracji DocBits z pięcioma pustymi polami, niezaznaczoną reCAPTCHA, warunkami korzystania, Rozpocznij, Google, Microsoft i Login"><figcaption><p>Rejestracja: wypełnij Imię, Nazwisko, E-mail, Hasło i Potwierdź hasło. Rozwiąż reCAPTCHA, jeśli się pojawi, zaakceptuj Warunki korzystania z serwisu i wybierz Rozpocznij. Login prowadzi z powrotem do logowania.</p></figcaption></figure>
 
 Wypełnij formularz:
 
@@ -42,7 +42,7 @@ Zamiast hasła możesz kliknąć przycisk **Google** lub **Microsoft** pod napis
 
 ### Potwierdź swój adres e-mail
 
-Po wysłaniu formularza DocBits wyświetla stronę potwierdzenia i wysyła **e-mail weryfikacyjny** na podany adres. Otwórz e-mail i kliknij znajdujący się w nim link — prowadzi on do strony potwierdzenia, która weryfikuje Twój adres. Jeśli e-mail nie dotrze, strona potwierdzenia oferuje opcję **ponownego wysłania**. Gdy adres zostanie zweryfikowany, kliknij **Sign in** i zaloguj się swoim adresem e-mail oraz hasłem.
+Po wysłaniu formularza DocBits wyświetla stronę potwierdzenia i wysyła **e-mail weryfikacyjny** na podany adres. Otwórz e-mail i kliknij znajdujący się w nim link — prowadzi on do strony potwierdzenia, która weryfikuje Twój adres. Jeśli e-mail nie dotrze, strona potwierdzenia oferuje opcję **ponownego wysłania**. Gdy adres zostanie zweryfikowany, przejdź do ekranu logowania i zaloguj się swoim adresem e-mail oraz hasłem.
 
 ## Zapomniane hasło
 
@@ -53,12 +53,12 @@ Jeśli zapomniałeś hasła:
 1. Na ekranie logowania kliknij **Zapomniałeś hasła?**.
 2. Na stronie **Zapomniałem hasła** wpisz swój adres **E-mail** i kliknij **Zresetuj hasło**. Jeśli wyświetlany jest widget reCAPTCHA, najpierw go wypełnij.
 
-   <figure><img src="../../.gitbook/assets/dbdc745-getting-access-forgot-password-form-pl-20261011.png" alt="Strona Zapomniałem hasła z polem adresu e-mail"><figcaption><p>Strona Zapomniałem hasła. Podaj e-mail swojego konta, a DocBits wyśle Ci link do resetowania hasła.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc-8-forget-password-native-pl-20261101.png" alt="Polski formularz Zapomniałem hasła z pustym polem E-mail, niezaznaczoną reCAPTCHA, Zresetuj hasło i Powrót do logowania"><figcaption><p>Wpisz E-mail i wybierz Zresetuj hasło, aby poprosić o link do resetowania, albo użyj Powrót do logowania. Rozwiąż reCAPTCHA, gdy się pojawi.</p></figcaption></figure>
 
    Jeśli nie chcesz resetować hasła, kliknij **Powrót do logowania**, aby wrócić do ekranu logowania.
 
 3. DocBits wysyła Ci e-mailem **link do resetowania hasła**. Otwórz e-mail i kliknij link — otworzy się strona resetowania hasła.
-4. Wpisz swoje **nowe hasło dwa razy**. Obowiązują te same zasady haseł co podczas [rejestracji](#zasady-haseł), a lista kontrolna pokazuje, które zasady są spełnione.
+4. Wpisz swoje **nowe hasło dwa razy**. Obowiązują te same zasady haseł co podczas [rejestracji](#zasady-hasel), a lista kontrolna pokazuje, które zasady są spełnione.
 5. Kliknij **Zresetuj hasło**. DocBits potwierdza zmianę i przenosi Cię z powrotem na ekran logowania, gdzie możesz zalogować się nowym hasłem.
 
 {% hint style="info" %}
@@ -69,10 +69,10 @@ Linki do resetowania hasła wygasają po krótkim czasie. Jeśli link już nie d
 
 Gdy administrator doda Cię jako użytkownika (zobacz [Użytkownicy](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), otrzymasz e-mail z danymi do logowania oraz linkiem do ustawienia **pierwszego hasła**. Link otwiera stronę **Ustaw hasło**:
 
-<figure><img src="../../.gitbook/assets/dbdc745-getting-access-set-password-form-pl-20261011.png" alt="Strona Ustaw hasło z komunikatem powitalnym"><figcaption><p>Strona Ustaw hasło, wyświetlana po utworzeniu Twojego konta przez administratora.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-8-set-password-native-pl-20261101.png" alt="Polski formularz Ustaw hasło z powitaniem, pustymi polami Hasło i Potwierdź hasło, ikonami oka, Ustaw hasło i Przejdź do logowania"><figcaption><p>Pierwsze hasło do konta utworzonego przez administratora: wypełnij Hasło i Potwierdź hasło, a następnie wybierz Ustaw hasło. Przejdź do logowania prowadzi do ekranu logowania.</p></figcaption></figure>
 
 1. Kliknij link w e-mailu z zaproszeniem. Strona wita Cię komunikatem „Witamy w DocBits! Twoje konto zostało utworzone. Aby rozpocząć, ustaw hasło."
-2. Wpisz swoje hasło dwa razy — obowiązują te same [zasady haseł](#zasady-haseł).
+2. Wpisz swoje hasło dwa razy — obowiązują te same [zasady haseł](#zasady-hasel).
 3. Kliknij **Ustaw hasło**. Następnie możesz zalogować się swoim adresem e-mail i tym hasłem.
 
 Ikony oka pokazują lub ukrywają wpisane znaki. Jeśli wyjdziesz przed ustawieniem hasła, **Przejdź do logowania** wraca do ekranu logowania.

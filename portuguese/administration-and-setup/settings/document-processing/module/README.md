@@ -1,5 +1,13 @@
 # Módulos
 
+## Vídeo tutorial: Configurações e módulos
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/pt.mp4" %}
+Visão geral das configurações e módulos no DocBits
+{% endembed %}
+
+O vídeo mostra os cinco grupos da Visão geral das configurações, a pesquisa e os atalhos, e o que as três páginas de Módulo controlam.
+
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-order-finance-pt.png" alt="Módulos de ordens e finanças no estado de configuração existente."><figcaption><p>Módulos de ordens e finanças no estado de configuração existente.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/site-extra-modules-document-integration-pt.png" alt="Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada."><figcaption><p>Módulos de integração de documentos: scripts, digitalização, códigos de barras e dados mestre personalizados. A etiqueta Select do seletor de códigos de barras mantém-se em inglês na versão ilustrada.</p></figcaption></figure>

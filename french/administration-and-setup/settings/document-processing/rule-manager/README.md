@@ -140,7 +140,7 @@ Définit les actions spécifiques à exécuter lorsqu'un écart est détecté :
 
 • Action : le système accepte les valeurs de la facture et calcule le montant total.
 
-#### [Cas 4, 5 : quantité dans la tolérance, prix unitaire hors tolérance (approuvé)](./#case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved)
+#### [Cas 4, 5 : quantité dans la tolérance, prix unitaire hors tolérance (approuvé)](#cas-4-5-quantite-dans-la-tolerance-prix-unitaire-hors-tolerance-approuve)
 
 • Objectif : s'applique lorsque la quantité est dans la tolérance mais que le prix unitaire est hors tolérance et a été approuvé.
 

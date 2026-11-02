@@ -1,6 +1,6 @@
 # Porównaj pole z tolerancjami
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4ee291b0848d-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_tolerances_v2-pl-pl.png" alt="Porównaj pole z tolerancjami, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## Kiedy używać tej karty
 

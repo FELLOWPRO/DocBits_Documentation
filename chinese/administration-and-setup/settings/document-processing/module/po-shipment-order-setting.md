@@ -32,15 +32,15 @@
   已交付或接收的数量。
 * **Invoiced Quantity**\
   已开票的数量。
-* **Invoice Open Quantity**\
+* **Invoice Open Quantity**（发票未结数量）\
   仍待开票的数量（计算方式为 _Shipped Quantity – Invoiced Quantity_）。
-* **Progress Bar and Percentage**
+* **Progress Bar and Percentage**（进度条和百分比）
   * 显示已与发票匹配的发运数量。
   * 新建采购订单的进度从 0% 开始。
   * 随着多张发票的处理，进度会累计更新。
   * 反映已开票数量相对于发运数量的总体进度。
-* **Promised Delivery Date**\
+* **Promised Delivery Date**（承诺交货日期）\
   该采购订单行项目的预计交付日期。
 *   **Late Indicator**
 
-    根据**Promised Delivery Date**显示交付逾期的天数。
+    根据**Promised Delivery Date**（承诺交货日期）显示交付逾期的天数。

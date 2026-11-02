@@ -1,6 +1,8 @@
 # Beloofde leverdatum voor regelitems in tabel met beloofde leverdatum
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-264ee6d588cc-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_promised_delivery_date_to_current_v2-nl-nl.png" alt="Beloofde leverdatum voor regelitems in tabel met beloofde leverdatum, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+Hoe het tolerantievenster wordt berekend, met voorbeelden zoals "vandaag of morgen", wordt uitgelegd op [Date Tolerances](../../date-tolerances.md).
 
 ## Doel:
 

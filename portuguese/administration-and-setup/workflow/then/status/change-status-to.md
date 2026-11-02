@@ -1,6 +1,10 @@
 # Alterar status para
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-2da4ec250da9-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v1-pt-pt.png" alt="Alterar status para, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v2-pt-pt.png" alt="Alterar status para, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_staus_change_v3-pt-pt.png" alt="Alterar status para, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
 
 ## **Propósito:**
 

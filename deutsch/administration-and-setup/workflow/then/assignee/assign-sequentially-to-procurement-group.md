@@ -1,6 +1,6 @@
 # Der Beschaffungsgruppe sequenziell zuweisen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-3b31b4f42710-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_procurement_group_sequential_v2-de-de.png" alt="Der Beschaffungsgruppe sequenziell zuweisen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck**
 

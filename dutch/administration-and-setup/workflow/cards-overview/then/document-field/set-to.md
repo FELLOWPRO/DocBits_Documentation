@@ -1,6 +1,6 @@
 # Set to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-document-field-02-nl-20261023.png" alt="Documentveld Stel Veldnaam in op Tekst" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

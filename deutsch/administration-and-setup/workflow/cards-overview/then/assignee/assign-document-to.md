@@ -1,6 +1,6 @@
 # Assign document to
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-05-de-20261023.png" alt="Zugewiesener Benutzer Weise das Dokument anhand der Entscheidungstabelle dem/der Zuweisungstyp zu." width="563"><figcaption></figcaption></figure>
 
 ## Zweck:
 

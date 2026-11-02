@@ -1,6 +1,6 @@
 # Item Receiving Method
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-table-03-fr-20261023.png" alt="Tableau N&#x27;importe quel/Tous méthode de réception Opérateur Valeur" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

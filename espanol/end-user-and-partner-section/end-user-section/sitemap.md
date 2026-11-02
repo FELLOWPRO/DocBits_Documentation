@@ -6,7 +6,7 @@ La Sitemap es el índice completo y consultable de todo lo que DocBits ofrece �
 
 Abra la Sitemap desde la barra lateral (entrada cercana al final) o pulse <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> y elija **Ver todos los resultados**. La URL directa es `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Resumen de la Sitemap"><figcaption><p>Sitemap con resumen por categorías y cabecera de búsqueda.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-es.png" alt="Parte visible del catálogo de páginas en español. «API Licencias» es una etiqueta incorrecta para las claves de API; se conservan las etiquetas reales de la aplicación."><figcaption><p>Parte visible del catálogo de páginas en español. «API Licencias» es una etiqueta incorrecta para las claves de API; se conservan las etiquetas reales de la aplicación.</p></figcaption></figure>
 
 ## Explorar el catálogo
 
@@ -20,6 +20,14 @@ Las entradas están coloreadas según su tipo:
 * **Acción** — un botón o atajo que ejecuta algo sin navegar.
 
 Haga clic en cualquier entrada para saltar directamente a ella. Las entradas que necesitan un parámetro (como un tipo de documento o un identificador) incluyen un selector incrustado — elija el valor antes de hacer clic.
+
+## Vídeos de formación en la lista
+
+Las entradas de páginas que tienen un vídeo de formación muestran un icono de vídeo después del nombre — no solo en Ajustes, sino en todo el catálogo, por ejemplo en el Panel, en la Validación de campos o en las páginas de Workflow. Seleccione el icono para reproducir el vídeo de esa página en el panel **Vídeos y tutoriales** sin salir del mapa del sitio.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-es.png" alt="Mapa del sitio con iconos de vídeo junto a varias entradas y el panel Vídeos y tutoriales abierto en el vídeo de la validación de campos"><figcaption><p>Las entradas con vídeo de formación llevan un icono de vídeo; al seleccionarlo se abre el vídeo en el panel.</p></figcaption></figure>
+
+El panel sigue listando cada vídeo por tema, así que también puede recorrer y buscar toda la biblioteca desde el icono de la barra superior. Consulte [Vídeos y tutoriales](videos-and-tutorials.md).
 
 ## Búsqueda y filtros
 

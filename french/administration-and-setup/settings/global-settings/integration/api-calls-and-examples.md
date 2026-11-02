@@ -4,10 +4,10 @@ Une requête API permet à un autre programme de lire ou de mettre à jour des i
 
 ## Avant d'envoyer une requête
 
-1. Demandez l'accès à un administrateur de l'organisation et [créer une clé API](api-key-management.md) pour l'intégration. Conservez la clé dans un coffre secret ; ne la mettez jamais dans une capture d'écran, un document ou un fichier source.
+1. Demandez l'accès à un administrateur de l'organisation et [créez une clé API](api-key-management.md) pour l'intégration. Conservez la clé dans un coffre secret ; ne la mettez jamais dans une capture d'écran, un document ou un fichier source.
 2. Ouvrez la [référence API Sandbox actuelle](https://sandbox.api.docbits.com/docs). Elle liste les opérations disponibles, les valeurs requises et des exemples de réponse pour cet environnement. Utilisez la référence de votre propre environnement quand vous quittez le Sandbox.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-382-api-key-context-fr.png" alt="Section Clé API de DocBits en français avec le bouton Créer une clé API ; aucune valeur de clé n'est visible"><figcaption><p>Vous trouvez les clés API sous Paramètres → Intégration et SSO. L'image ne contient aucune valeur de clé.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-20-api-key-context-fr-20261031.png" alt="Interface française de DocBits : zone Clés API et bouton Créer une clé API ; aucune valeur de clé visible"><figcaption><p>Vue actuelle de la zone des clés API dans l’environnement Dev. Aucune valeur de clé ni ligne de données n’est affichée.</p></figcaption></figure>
 
 ## Exemple : lire les types de documents
 
@@ -17,7 +17,7 @@ Définissez votre clé API comme variable d'environnement locale, puis envoyez l
 
 ```sh
 curl --fail-with-body \
-  -H "X-API-KEY: ${DOCB...EY}" \
+  -H "X-API-KEY: ${DOCBITS_API_KEY}" \
   "https://sandbox.api.docbits.com/sandbox-api/document_type/get_document_types"
 ```
 

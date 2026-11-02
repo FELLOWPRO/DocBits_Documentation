@@ -13,11 +13,11 @@ Una dashboard salvata è una vista con nome della tua lista di lavoro: ricerca, 
 4. Assegna un nome chiaro e decidi chi può usare la vista:
    * **Visibile solo a me** mantiene la vista privata.
    * **Visibile a tutti gli utenti** la mette a disposizione di tutte le persone dell’organizzazione.
-   * **Condividi con gruppi e utenti** mostra i due elenchi **Gruppo** e **Selezionare l’utente**, per indicare gruppi specifici o singole persone.
+   * **Condividi con gruppi e utenti** mostra i due elenchi **Gruppi** e **Selezionare l’utente**, per indicare gruppi specifici o singole persone.
 
 5. Scegli **Salva**. Il pulsante della vista passa alla nuova dashboard e ne mostra il nome e il numero di documenti.
 
-<figure><img src="../../../.gitbook/assets/dashboard-saved-view-it.png" alt="Crea una dashboard con un nome e scegli chi può visualizzarla."><figcaption><p>Crea una dashboard con un nome e scegli chi può visualizzarla.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-47-personal-dashboard-empty-create-it-20261101.png" alt="Crea una dashboard con un nome e scegli chi può visualizzarla."><figcaption><p>Crea una dashboard con un nome e scegli chi può visualizzarla.</p></figcaption></figure>
 
 La visibilità stabilisce chi può **usare** la vista. Non concede accesso ai documenti: ogni persona vede comunque solo i documenti per cui dispone delle autorizzazioni.
 

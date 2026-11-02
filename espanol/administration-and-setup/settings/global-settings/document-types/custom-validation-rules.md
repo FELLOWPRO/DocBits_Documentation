@@ -228,6 +228,18 @@ Pruebe cada regla nueva al menos con un documento que deba fallar, uno que deba 
 * Si una regla no se puede evaluar (por ejemplo, una división por cero en una fórmula), se omite. Una regla defectuosa nunca marca un documento como no válido por error.
 
 
+## Registros <a id="logs"></a>
+
+Cada regla puede registrar sus evaluaciones. Para ello abra la página **Registros de ejecución de reglas** del tipo de documento: la cabecera indica el tipo de documento y el icono de actualizar recarga la lista.
+
+**Encontrar por** decide qué se busca (por defecto **Clave de la regla**) y el valor se escribe en el campo de al lado. Al buscar por documento, **Tipo de regla** es obligatorio. Acote el resultado con **Resultado**, **Ejecutado**, **Desde Fecha** y **Hasta la fecha**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-es.png" alt="Los registros de ejecución de reglas"><figcaption><p>La página de registros de ejecución: los filtros arriba y una fila por evaluación debajo. Mientras no se busque, la tabla indica qué introducir.</p></figcaption></figure>
+
+Abra una entrada para ver su detalle, incluida la **traza de la condición**: cada línea de *Applies when* con el valor esperado, el valor real del documento y si se cumplió. Véase [Condiciones en detalle](rule-conditions-applies-when.md).
+
+La misma página muestra también los registros de las reglas de transformación y de selección de diseño.
+
 ## Recetas
 
 Copie estas reglas como punto de partida. Las claves de campos y columnas son las del tipo de documento estándar **Factura**; adáptelas a sus tipos de documento.

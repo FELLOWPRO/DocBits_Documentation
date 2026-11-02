@@ -10,13 +10,15 @@ Film pokazuje źródła danych głównych, listy wartości oraz ustawienia danyc
 
 Ustawienia danych głównych łączą pola walidacji dokumentu z danymi przechowywanymi na stronie [Wyszukiwanie danych podstawowych](../../../document-processing/master-data-lookup.md). Użyj **Wyszukaj dane główne**, aby znaleźć i wypełnić pasujące rekordy. Użyj **Dane główne LOV**, aby zaproponować listę wartości z zestawu danych.
 
+Obrazy formularzy pokazują wartości początkowe przed wprowadzeniem danych. Istniejące wartości mapowań są zasłonięte na obrazie tabeli.
+
 ## Otwórz ustawienia
 
 1. W **Ustawienia** otwórz **Przetwarzanie dokumentów → Typy dokumentów**.
 2. Otwórz typ dokumentu, który chcesz skonfigurować, na przykład **Faktura**, i wybierz **Pola**.
 3. Wybierz **Ustawienia danych głównych**. Strona zawiera oddzielne sekcje **Wyszukaj dane główne** i **Dane główne LOV**. Wybierz nagłówek sekcji, aby ją rozwinąć.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-overview-pl-20261010.png" alt="Ustawienia danych głównych faktury w bieżącym sandboxie DocBits z sekcjami Wyszukaj dane główne i Dane główne LOV"><figcaption>Wybierz sekcję odpowiadającą typowi pola, który chcesz skonfigurować.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-overview-pl-20261101.png" alt="Zwinięte sekcje Wyszukaj dane główne i Dane główne LOV w ustawieniach danych głównych Faktury"><figcaption><p>Wybierz nagłówek sekcji, aby rozwinąć ustawienia wyszukiwania lub list wartości.</p></figcaption></figure>
 
 ## Dopasuj rekord za pomocą Wyszukiwania danych głównych
 
@@ -33,15 +35,15 @@ Konfiguracje **Wyszukaj dane główne** przeszukują zestaw danych i przypisują
 4. Wybierz **HEADER** dla pól dokumentu lub **LINE** dla pól w tabeli dokumentu. W przypadku **LINE** wybierz także **Szczegóły kontekstu**, czyli tabelę, której dotyczy wyszukiwanie.
 5. Włącz **Dopasuj wszystko**, jeśli każde skonfigurowane pole wyszukiwania musi pasować do rekordu. Pozostaw wyłączone, jeśli wystarczy jedno pasujące pole. Wybierz **Tworzyć**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-lookup-config-pl-20261010.png" alt="Okno dialogowe Utwórz konfigurację danych głównych z zestawem danych, obsługą konfliktów, typem kontekstu i opcjami Dopasuj wszystko"><figcaption>Formularz konfiguracji wyszukiwania dla nagłówka faktury.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lookup-config-pl-20261101.png" alt="Pusty formularz Utwórz konfigurację danych głównych z typem dokumentu, nazwą, zestawem danych, obsługą konfliktów, typem kontekstu, Dopasuj wszystko, Anulować i Tworzyć"><figcaption><p>Formularz początkowo pokazuje INVOICE, Best Score i HEADER; uzupełnij pola dla potrzebnej konfiguracji.</p></figcaption></figure>
 
 **Dopasuj wszystko** i **Osoba rozwiązująca konflikty** wpływają na automatyczne rozpoznawanie dostawców. Przykłady znajdziesz w sekcji [Konfiguracja danych rozmytych z danymi głównymi](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
 ### Mapuj pola w konfiguracji
 
-Rozwiń konfigurację, aby zobaczyć jej zmapowane pola. W poniższym przykładzie **Supplier Name** można przeszukiwać, natomiast **Supplier Number** jest ustawione tak, aby automatycznie uruchamiać wyszukiwanie. Mapowania w Twojej organizacji mogą się różnić.
+Rozwiń konfigurację, aby zobaczyć jej zmapowane pola. Kolumny pokazują pole zestawu danych, pole walidacji dokumentu, opcjonalne pole nadrzędne oraz informację, czy mapowanie można przeszukiwać lub czy automatycznie uruchamia wyszukiwanie. Mapowania w Twojej organizacji mogą się różnić.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-supplier-fields-pl-20261010.png" alt="Rozwinięte wyszukiwanie dostawcy z kolumnami Pole Wyszukiwania, Pole Walidacji, Pole Nadrzędne, Przeszukiwalny, Automatyczne Wyzwalanie i Actions"><figcaption>Rozwiń wyszukiwanie, aby sprawdzić pola biorące udział w dopasowaniu.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-mapped-fields-pl-20261101.png" alt="Rozwinięta tabela mapowań z Pole Wyszukiwania, Pole Walidacji, Pole Nadrzędne, Przeszukiwalny, Automatyczne Wyzwalanie i Akcje; istniejące wartości są zasłonięte"><figcaption><p>Sprawdź kolumny przed dodaniem pola. Istniejące wartości są zasłonięte na tym obrazie.</p></figcaption></figure>
 
 Wybierz **Tworzyć** wewnątrz rozwiniętej konfiguracji, aby dodać mapowanie:
 
@@ -51,11 +53,11 @@ Wybierz **Tworzyć** wewnątrz rozwiniętej konfiguracji, aby dodać mapowanie:
 * **Operator wyszukiwania** określa sposób porównywania tekstu. **Smart** ignoruje spacje i znaki interpunkcyjne; pozostałe opcje to Zawiera, Zaczyna się od, Kończy się na i Dokładny.
 * **Automatyczne wyzwalanie** uruchamia wyszukiwanie, gdy to pole zostanie wypełnione. **Przeszukiwalny** pozwala polu brać udział w wyszukiwaniach i umożliwia ręczne wyszukiwanie podczas walidacji.
 
-Wybierz **Tworzyć**, aby dodać mapowanie. Użyj menu **Actions** z trzema kropkami w wierszu, aby edytować lub usunąć edytowalne mapowanie. Domyślne mapowania można tylko wyświetlać.
+Wybierz **Tworzyć**, aby dodać mapowanie. Użyj menu **Akcje** z trzema kropkami w wierszu, aby edytować lub usunąć edytowalne mapowanie. Domyślne mapowania można tylko wyświetlać.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-create-field-pl-20261010.png" alt="Okno dialogowe Utwórz pola danych głównych z polami Pole wyszukiwania, Pole walidacji, Pole nadrzędne, Operator wyszukiwania, Automatyczne wyzwalanie i Przeszukiwalny"><figcaption>Wybierz, w jaki sposób kolumna zestawu danych mapuje się na pole dokumentu.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-pl-20261101.png" alt="Pusty formularz Utwórz pola danych głównych z Pole wyszukiwania, Pole walidacji, Pole nadrzędne, Operator wyszukiwania, Automatyczne wyzwalanie, Przeszukiwalny, Anulować i Tworzyć"><figcaption><p>Wybierz, w jaki sposób kolumna zestawu danych mapuje się na pole dokumentu.</p></figcaption></figure>
 
-Użyj menu z trzema kropkami w konfiguracji, aby ją aktywować lub dezaktywować, zduplikować albo edytować. Domyślna konfiguracja oferuje **Pogląd** zamiast **Redagować** i nie można jej usunąć. Usunięcie własnej konfiguracji lub pola usuwa jego mapowanie; najpierw sprawdź, które pola dokumentu od niego zależą.
+Użyj menu z trzema kropkami w konfiguracji, aby ją aktywować lub dezaktywować, zduplikować albo edytować. Domyślną konfigurację można tylko wyświetlać i nie można jej usunąć. Usunięcie własnej konfiguracji lub pola usuwa jego mapowanie; najpierw sprawdź, które pola dokumentu od niego zależą.
 
 ## Zaproponuj listę za pomocą Danych głównych LOV
 
@@ -63,7 +65,7 @@ Użyj menu z trzema kropkami w konfiguracji, aby ją aktywować lub dezaktywowa�
 
 Rozwiń **Dane główne LOV**, a następnie wybierz **Utwórz konfigurację wyszukiwania Lov**. Jeśli nie istnieje żadna konfiguracja, sekcja pokazuje tylko ten przycisk.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-lov-overview-pl-20261010.png" alt="Rozwinięta sekcja Dane główne LOV z przyciskiem Utwórz konfigurację wyszukiwania Lov"><figcaption>Otwórz tę sekcję, gdy pole dokumentu ma oferować wartości zestawu danych jako opcje.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lov-overview-pl-20261101.png" alt="Rozwinięta sekcja Dane główne LOV z przyciskiem Utwórz konfigurację wyszukiwania Lov"><figcaption><p>Otwórz formularz listy wartości przyciskiem Utwórz konfigurację wyszukiwania Lov.</p></figcaption></figure>
 
 W formularzu wprowadź **Wyszukaj nazwę Love**, wybierz **Wyszukaj nazwę zestawu danych Love** i ustaw **Typ kontekstu** na **HEADER** lub **LINE**. W przypadku **LINE** wybierz **Szczegóły kontekstu**, aby wskazać tabelę dokumentu. Następnie wybierz:
 
@@ -73,6 +75,6 @@ W formularzu wprowadź **Wyszukaj nazwę Love**, wybierz **Wyszukaj nazwę zesta
 
 Wybierz **Tworzyć**, aby zapisać konfigurację. Rozwiń ją, aby sprawdzić jej pola, albo użyj menu z trzema kropkami, aby ją aktywować, zduplikować, edytować lub usunąć.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-lov-config-pl-20261010.png" alt="Okno dialogowe Utwórz konfigurację danych głównych z zestawem danych, kontekstem, polem etykiety, polem wartości i polem docelowym"><figcaption>Połącz wartość zestawu danych i jej widoczną etykietę z polem dokumentu.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lov-config-pl-20261101.png" alt="Pusty formularz LOV Utwórz konfigurację danych głównych z zestawem danych, typem kontekstu, polem etykiety, polem wartości, Poza polem, Anulować i Tworzyć"><figcaption><p>Połącz wartość zestawu danych i jej widoczną etykietę z polem dokumentu.</p></figcaption></figure>
 
 Aby utworzyć zależne listy rozwijane, wybierz **Tworzyć** wewnątrz rozwiniętej konfiguracji LOV i wybierz **Pole wyszukiwania** oraz **Pole filtra**. Wartość pola filtra zawęża opcje zwracane przez wyszukiwanie. Możesz także ustawić statyczną **Wartość filtra** i oznaczyć pole jako **Wymagany**. Użyj menu z trzema kropkami w wierszu, aby edytować lub usunąć własne pole filtra.

@@ -13,22 +13,30 @@ Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfig
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj/Region** | Niemcy |
-| **Typy dokumentów** | Faktura, Nota kredytowa |
-| **Format** | CII (osadzony w PDF/A-3) lub XML UBL |
+| **Typy dokumentów** | Faktura, nota kredytowa (sprawdzić rzeczywiste mapowanie) |
+| **Format** | XML CII osadzony w PDF/A-3 |
 | **Standard** | ZUGFeRD 2.5 |
 | **Oparty na** | EN 16931 |
 
-ZUGFeRD 2.5 (wspólna publikacja FeRD/FNFE-MPE z czerwca 2026 r.) odpowiada Factur-X 1.09. Jego XML CII wykorzystuje bazę UN/CEFACT D22B, która jest wstecznie zgodna z D16B, dlatego pełny kontrakt ekstrakcji i transformacji ZUGFeRD 2.4 nadal obowiązuje. Profil EXTENDED dodaje nowe pola dla środków płatniczych i BIC, strony trzeciej będącej odbiorcą płatności (faktor) oraz powodu zwolnienia z podatku dla opustów/opłat.
+ZUGFeRD 2.5 i Factur-X 1.09 są równoważnymi publikacjami. Format hybrydowy osadza XML CII D22B w PDF/A-3; UBL nie jest jego składnią XML. Zobacz [informacje o publikacji FeRD](https://www.ferd-net.de/publikationen-produkte/publikationen/detailseite/zugferd-25-english).
 
-Obsługiwanych jest wszystkie pięć profili: MINIMUM, BASIC WL, BASIC, EN 16931 (COMFORT) i EXTENDED. DocBits klasyfikuje warianty CII i UBL osobno.
+Standard określa profile MINIMUM, BASIC WL, BASIC, EN16931 i EXTENDED. Nazwa profilu w katalogu nie dowodzi automatycznego rozpoznawania ani pełnej obsługi wszystkich pól. MINIMUM i BASIC WL mogą nie zawierać informacji o wierszach potrzebnych w danej integracji.
+
+Ta strona opisuje publikację z czerwca 2026 r. [Późniejsza publikacja Factur-X 1.09.2 / ZUGFeRD 2.5.2](https://fnfe-mpe.org/factur-x/factur-x_en/) wymaga osobnej identyfikacji; sam identyfikator rodziny `1p0` nie wystarcza.
 
 ## Stan wsparcia
 
-| Komponent | Status |
-|-----------|--------|
-| Podgląd | ✅ Obsługiwany |
-| Ekstrakcja pól | ✅ Obsługiwany |
-| Transformacja | ✅ Obsługiwany |
+Kontrola katalogu środowiska rozwojowego w trybie tylko do odczytu, 31 października 2026 r., potwierdziła osobne wpisy `ZUGFERD 2.5 CII` i `ZUGFERD 2.5 UBL` dla `INVOICE`. Wpis UBL jest nazwą konfiguracji DocBits; nie oznacza, że UBL jest hybrydowym formatem ZUGFeRD zgodnym ze standardem.
+
+| Komponent | Zaobserwowana konfiguracja |
+|-----------|----------------------------|
+| Podgląd | `PREVIEW` (XSLT) |
+| Ekstrakcja pól | `EXTRACTION_PATHS` (JSON) |
+| Transformacja | `TRANSFORMATION` (XSLT) |
+
+Te wpisy potwierdzają dostępną konfigurację, a nie pomyślne przetworzenie każdego pliku lub profilu. Sprawdź źródło domyślne lub niestandardowe oraz aktywną wersję w swojej organizacji. Zgodność wsteczna standardu nie gwarantuje niezmienionych wyników ekstrakcji lub transformacji. Oddzielnie przetestuj reprezentatywne faktury i noty kredytowe, wymagane pola oraz eksport ERP; walidacja prawna i wymagania sieci transmisyjnej wymagają własnych testów odbiorczych.
+
+<figure><img src="../../../../../../.gitbook/assets/dbdc-264-zugferd-cii-pl-20261031.png" alt="Polski interfejs środowiska rozwojowego DocBits: ZUGFERD 2.5 CII i trzy komponenty domyślne"><figcaption><p>Polski interfejs środowiska rozwojowego, sprawdzony tylko do odczytu 31 października 2026 r.: wpis katalogowy dla INVOICE i dostępne komponenty domyślne. Ten zrzut ekranu nie przedstawia testu przetwarzania pliku.</p></figcaption></figure>
 
 ## Powiązane
 

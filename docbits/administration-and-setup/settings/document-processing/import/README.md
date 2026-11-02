@@ -37,7 +37,9 @@ The current Import page contains **Import Pipeline**, **FTP Import**, **Email Im
 * **Document Type** and **Sub-Organizations** control assignment. **File name matching patterns** limits which filenames are considered.
 * **Archive after Import** enables moving processed files to the specified archive directory. **Include Subfolder Files** extends processing to subfolders.
 * **Retry interval (min)**, **Retry duration (hours)**, and **Notification emails (comma-separated)** control retry and notification behavior. The illustrated defaults are 60 minutes and 48 hours.
-* **API Key** uses the organization's existing app-subscription key. Keep it confidential; do not include it in screenshots or support messages.
+* **API Key** uses the organization's existing app-subscription key. The eye icon shows or hides that key; the copy icon copies it to the clipboard. These controls do not create a new key. Keep it confidential; do not include it in screenshots or support messages.
+
+Use **Cancel** or the close icon to leave a new connection form without saving it.
 
 3. Review the values and click **Save** when the connection is ready to be created.
 4. In the saved row's **Actions** menu, choose **Activate** when imports are authorized to run.
@@ -89,6 +91,8 @@ If an attachment cannot be imported and the option **“Reply to this email if i
 
 <figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-step1-en-20261030.png" alt="IMAP Email Server Setup with protocol, server, port, encryption, account credentials and Next"><figcaption><p>Complete the required server and account fields before Next. The password area is obscured; no mailbox credentials have been submitted in this example.</p></figcaption></figure>
 
+The copy icon beside **Password** copies the entered password to the clipboard. **Cancel** or the close icon leaves this new connection wizard without saving it.
+
 3. Click **Next** to open **Options**. Choose whether to **Merge attached documents** or **Block duplicate filename import**. **Email Notification** enables a confirmation email after import; enable it only when that behavior is intended.
 
 <figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-options-en-20261030.png" alt="IMAP Options step showing merge attachments, duplicate filename filtering, email notification, Back and Next"><figcaption><p>Options separates import behavior from email notification. Both checkboxes and the notification switch are off in this unsaved example.</p></figcaption></figure>
@@ -96,6 +100,8 @@ If an attachment cannot be imported and the option **“Reply to this email if i
 4. Click **Next** to open **Config**. Select the required **Sub-Organizations**, review the existing **API Key**, set the recipient for import errors, and check **Document Routing**. Expand **Advanced Settings** only when the process needs additional options.
 
 <figure><img src="../../../../.gitbook/assets/dbdc-179-email-imap-config-en-20261030.png" alt="IMAP Config step with organization, obscured API key, error notifications, document routing, Advanced Settings and Save"><figcaption><p>Config brings together organization assignment, the existing key, error notifications and routing. The key is obscured and Save has not been used.</p></figcaption></figure>
+
+In **Config**, the eye icon shows or hides the existing **API Key**, and **Copy** copies it to the clipboard. Neither control generates a new key.
 
 5. Click **Save** when the configuration is ready. Then use **Activate** in the saved connection's **Actions** menu to start automatic processing.
 
@@ -123,6 +129,15 @@ The saved connection's **Actions** menu provides **Connection Logs**, **Import L
 ### Import Log
 
 Use the log icon at the top right of **Email Import** to review imports across the configured mailbox connections. Use a saved row's **Import Log** action for that connection. Inspect the subject, sender, status, and available error details before deciding whether to retry.
+
+## Inbound Emails
+
+The two tutorial screenshots below show the incoming DocBits address and its logs. This is separate from the mailbox connections above.
+
+* Use the copy icon beside **E-Mail** to copy the receiving address displayed for the current organization and environment.
+* **Add** inserts another permitted-sender row in the form. Choose its sender and any intended sub-organization, then use **Save** to persist the configuration. Adding a row alone does not save it.
+* **Logs** opens the inbound email log. **Errors** filters for errors; **Inbound** and **Outbound** select the message direction.
+* Expand a log row with its chevron to inspect attachment details. The copy icon beside the trace ID copies that ID for troubleshooting. **Original email**, when available for an inbound row, downloads the selected original message as an `.eml` file; it does not retry the import.
 
 ## Video tutorial: Email Inbox and Error Troubleshooting
 

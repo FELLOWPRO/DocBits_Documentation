@@ -5,45 +5,28 @@ noIndex: true
 
 # M3\_OLD
 
-## Importing an API Connection Template in Infor M3
+**Archived guide.** The connection-point template previously offered here contains a DocBits development-specific logical ID. It is not a reusable customer or production setup template.
 
-This guide explains how to import an API Connection Template to quickly configure key settings for integration with Infor M3. Using a template allows you to establish a predefined connection setup, simplifying the process and ensuring consistency.
+## Legacy connection template {#importing-an-api-connection-template-in-infor-m3}
 
-<mark style="color:red;">**Note**</mark>: For detailed configuration of specific areas such as Auto Accounting, Supplier Integration, Purchase Orders, or Table Extraction for costing elements, refer to the corresponding documentation:
+Use an integration configuration approved for the intended Infor tenant and DocBits organization. This archived page does not provide an import procedure or verify an M3 connection.
 
-* [Auto Accounting](m3/auto-accounting.md)
+### Retired template {#download-the-template}
+
+The previous development template is no longer offered for download on this page. Do not use it as a production setup template; ask your integration administrator for the configuration approved for your environment.
+
+### Current M3 guides {#importing-template}
+
+Choose the current guide for the task:
+
+* [M3 integration overview](m3/README.md)
 * [Suppliers and Purchase Order](m3/suppliers-and-purchase-orders.md)
 * [How to import all suppliers](m3/how-to-import-all-suppliers.md)
+* [Auto Accounting](m3/auto-accounting.md)
 * [Table Extraction for costing element](m3/table-extraction-for-costing-element.md)
 
-### **Download the Template**
+#### Check the Supplier view {#steps-to-import-a-connection-template}
 
-Before importing, download the required connection template using the file below:
+After your integration team has independently confirmed delivery, open **Settings → Lookup Master Data** in the intended DocBits organization and select **Supplier**. To look for an expected supplier, choose a field in **Search by column**, enter its identifier in **Search String**, and use the search icon. Compare the returned record with your approved source; a record appearing here alone does not prove which integration created it.
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
-
-### Importing Template
-
-#### Steps to Import a Connection Template
-
-1. **Access Infor ION Desk:**
-   *   Navigate to **InforOS** → **ION Desk** → **Connect** → **Connection Points**.
-
-       ![Infor ION Desk menu with Connect expanded and Connection Points highlighted](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
-2. **Import the Template:**
-   *   Click on the **Import** button.
-
-       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt="Connection Points toolbar with the Import button highlighted"><figcaption></figcaption></figure>
-   * Select the appropriate **Template File** from your local system.
-   *   Click **OK** to begin the import process.
-
-       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="Upload Local File dialog with the template file selected and OK highlighted" width="327"><figcaption></figcaption></figure>
-3. **Confirmation:**
-   *   If the import is successful, a confirmation message will be displayed.
-
-       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt="Import result dialog reporting that the DocBits import template was imported successfully"><figcaption></figcaption></figure>
-4. **Post-Import Configuration:**
-   * After importing the template, you can customize specific connection settings as needed.
-   * Don’t forget to import or configure your **Service Account** for authentication and access control.
-
-<figure><img src="../../.gitbook/assets/m3_import_5.png" alt="API Connection Point page with the Service Account field and Import button on the Connection tab"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dbdc-149-supplier-search-controls-en-20261101.png" alt="Current English Supplier tab with empty Search by column and Search String controls, the search icon and Actions menu"><figcaption><p>Current English Supplier search controls. Existing record rows are outside this cropped view; the image does not demonstrate an M3 connection or import.</p></figcaption></figure>

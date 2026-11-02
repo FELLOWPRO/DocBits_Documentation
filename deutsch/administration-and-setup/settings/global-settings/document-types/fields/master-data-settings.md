@@ -10,13 +10,15 @@ Das Video zeigt die Stammdatenquellen, die Wertelisten und die Stammdaten-Einste
 
 Die **Stammdaten-Einstellungen** verbinden die Validierungsfelder eines Dokuments mit Daten aus [Stammdaten-Lookup](../../../document-processing/master-data-lookup.md). Nutzen Sie **Stammdaten** (Lookup Master Data), um passende Datensätze zu finden und zu übernehmen. Nutzen Sie **LOV-Stammdaten**, um eine Werteliste aus einem Dataset als Auswahl anzubieten.
 
+Die Formularbilder zeigen die Anfangswerte vor der Eingabe. Vorhandene Zuordnungswerte sind im Tabellenbild ausgeblendet.
+
 ## Einstellungen öffnen
 
 1. Öffnen Sie in **Einstellungen** den Punkt **Dokumentenverarbeitung → Dokumenttypen**.
 2. Öffnen Sie den Dokumenttyp, den Sie konfigurieren möchten, zum Beispiel **Rechnung**, und wählen Sie **Felder**.
 3. Wählen Sie **Stammdaten-Einstellungen**. Die Seite enthält die beiden Bereiche **Stammdaten** und **LOV-Stammdaten**. Wählen Sie eine Bereichsüberschrift, um sie aufzuklappen.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-overview-de-20261009.png" alt="Stammdaten-Einstellungen der Rechnung in der aktuellen DocBits-Sandbox mit den Bereichen Stammdaten und LOV-Stammdaten"><figcaption><p>Wählen Sie den Bereich, der zur Art des Feldes passt, das Sie konfigurieren möchten.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-overview-de-20261101.png" alt="Eingeklappte Bereiche Stammdaten und LOV-Stammdaten auf der Seite Stammdaten-Einstellungen der Rechnung"><figcaption><p>Wählen Sie eine Bereichsüberschrift, um die Lookup- oder Wertelisten-Einstellungen aufzuklappen.</p></figcaption></figure>
 
 ## Einen Datensatz mit Stammdaten (Lookup Master Data) abgleichen
 
@@ -33,15 +35,15 @@ Konfigurationen unter **Stammdaten** durchsuchen ein Dataset und ordnen einen pa
 4. Wählen Sie **HEADER** für Dokumentfelder oder **LINE** für Felder in einer Dokumenttabelle. Wählen Sie bei **LINE** zusätzlich **Kontextdetails**, also die Tabelle, auf die der Lookup angewendet wird.
 5. Schalten Sie **Alle abgleichen** ein, wenn jedes konfigurierte Suchfeld mit einem Datensatz übereinstimmen muss. Lassen Sie es aus, wenn ein passendes Feld genügt. Wählen Sie **erstellen.**
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-lookup-config-de-20261009.png" alt="Dialog „Stammdatenkonfiguration erstellen“ mit Dataset, Konfliktverarbeitung, Kontext Typ und Alle abgleichen"><figcaption><p>Das Formular für eine Lookup-Konfiguration einer Rechnung im Kopfbereich.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lookup-config-de-20261101.png" alt="Leeres Formular Stammdatenkonfiguration erstellen mit Dokumenttyp, Nachschlagename, Dataset, Konfliktverarbeitung, Kontext Typ, Alle abgleichen, Abbrechen und erstellen."><figcaption><p>Das Lookup-Formular zeigt anfangs INVOICE, Best Score und HEADER; ergänzen Sie die Felder für die gewünschte Konfiguration.</p></figcaption></figure>
 
 **Alle abgleichen** und **Konfliktverarbeitung** wirken zusammen und entscheiden, ob ein Lieferant automatisch erkannt wird. Beispiele dafür finden Sie unter [Fuzzy-Daten mit Stammdaten konfigurieren](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
 ### Felder in einer Konfiguration zuordnen
 
-Klappen Sie eine Konfiguration auf, um ihre zugeordneten Felder zu sehen. Im Beispiel unten ist **Supplier Name** durchsuchbar, während **Supplier Number** den Lookup automatisch auslöst. Die Zuordnungen Ihrer Organisation können abweichen.
+Klappen Sie eine Konfiguration auf, um ihre zugeordneten Felder zu sehen. Die Spalten zeigen das Dataset-Feld, das Validierungsfeld des Dokuments, ein optionales übergeordnetes Feld und ob die Zuordnung durchsuchbar ist oder den Lookup automatisch auslöst. Die Zuordnungen Ihrer Organisation können abweichen.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-supplier-fields-de-20261009.png" alt="Aufgeklappter Supplier Lookup mit den Spalten Nachschlagefeld, Validierungsfeld, Übergeordnetes Feld, Suchbar, Auto-Trigger und Actions"><figcaption><p>Klappen Sie einen Lookup auf, um die Felder zu prüfen, die beim Abgleich mitwirken.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-mapped-fields-de-20261101.png" alt="Aufgeklappte Zuordnungstabelle mit Nachschlagefeld, Validierungsfeld, Übergeordnetes Feld, Suchbar, Auto-Trigger und Aktionen; vorhandene Zuordnungswerte sind ausgeblendet"><figcaption><p>Prüfen Sie die Zuordnungsspalten, bevor Sie ein Feld hinzufügen. Vorhandene Werte sind in diesem Bild ausgeblendet.</p></figcaption></figure>
 
 Wählen Sie **erstellen.** innerhalb der aufgeklappten Konfiguration, um eine Zuordnung hinzuzufügen:
 
@@ -51,9 +53,9 @@ Wählen Sie **erstellen.** innerhalb der aufgeklappten Konfiguration, um eine Zu
 * **Suchoperator** bestimmt, wie Text verglichen wird. **Smart** ignoriert Leerzeichen und Satzzeichen; die weiteren Auswahlmöglichkeiten sind unter anderem Contains, Starts With, Ends With und Exact.
 * **Auto-Trigger** startet einen Lookup, sobald dieses Feld gefüllt ist. **Suchbar** lässt das Feld an Suchen teilnehmen und unterstützt den manuellen Lookup während der Validierung.
 
-Wählen Sie **erstellen.**, um die Zuordnung hinzuzufügen. Über das Drei-Punkte-Menü **Actions** einer Zeile bearbeiten oder löschen Sie eine bearbeitbare Zuordnung. Standard-Zuordnungen können nur angezeigt werden.
+Wählen Sie **erstellen.**, um die Zuordnung hinzuzufügen. Über das Drei-Punkte-Menü **Aktionen** einer Zeile bearbeiten oder löschen Sie eine bearbeitbare Zuordnung. Standard-Zuordnungen können nur angezeigt werden.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-create-field-de-20261009.png" alt="Dialog „Stammdatenfelder anlegen“ mit Nachschlagefeld, Validierungsfeld, Übergeordnetes Feld, Suchoperator, Auto-Trigger und Suchbar"><figcaption><p>Legen Sie fest, wie eine Dataset-Spalte einem Dokumentfeld zugeordnet wird.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-de-20261101.png" alt="Leeres Formular Stammdatenfelder anlegen mit Nachschlagefeld, Validierungsfeld, Übergeordnetes Feld, Suchoperator, Auto-Trigger, Suchbar, Abbrechen und erstellen."><figcaption><p>Legen Sie fest, wie eine Dataset-Spalte einem Dokumentfeld zugeordnet wird.</p></figcaption></figure>
 
 Über das Drei-Punkte-Menü einer Konfiguration aktivieren oder deaktivieren, duplizieren oder bearbeiten Sie diese. Eine Standard-Konfiguration bietet statt **Bearbeiten** nur **Ansehen** an und kann nicht gelöscht werden. Löschen Sie eine eigene Konfiguration oder ein eigenes Feld, entfällt damit seine Zuordnung; prüfen Sie vorher, welche Dokumentfelder davon abhängen.
 
@@ -63,7 +65,7 @@ Wählen Sie **erstellen.**, um die Zuordnung hinzuzufügen. Über das Drei-Punkt
 
 Klappen Sie **LOV-Stammdaten** auf und wählen Sie **Lov Lookup Config erstellen**. Existiert noch keine Konfiguration, zeigt der Bereich nur diese Schaltfläche.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-lov-overview-de-20261009.png" alt="Aufgeklappter Bereich LOV-Stammdaten mit der Schaltfläche Lov Lookup Config erstellen"><figcaption><p>Öffnen Sie diesen Bereich, wenn ein Dokumentfeld Werte aus einem Dataset als Auswahl anbieten soll.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lov-overview-de-20261101.png" alt="Aufgeklappter Bereich LOV-Stammdaten mit der Schaltfläche Lov Lookup Config erstellen"><figcaption><p>Öffnen Sie das Wertelisten-Formular über Lov Lookup Config erstellen.</p></figcaption></figure>
 
 Geben Sie im Formular **Lov Name nachschlagen** ein, wählen Sie **Lookup Lov Dataset Name** und setzen Sie **Kontext Typ** auf **HEADER** oder **LINE**. Wählen Sie bei **LINE** **Kontextdetails**, um die Dokumenttabelle zu bestimmen. Wählen Sie danach:
 
@@ -73,6 +75,6 @@ Geben Sie im Formular **Lov Name nachschlagen** ein, wählen Sie **Lookup Lov Da
 
 Wählen Sie **erstellen.**, um die Konfiguration zu speichern. Klappen Sie sie auf, um ihre Felder zu prüfen, oder nutzen Sie ihr Drei-Punkte-Menü zum Aktivieren, Duplizieren, Bearbeiten oder Löschen.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-lov-config-de-20261009.png" alt="Dialog „Stammdatenkonfiguration erstellen“ für LOV mit Dataset, Kontext Typ, Nachschlage-Etikettenfeld, Nachschlagewertfeld und Außerhalb des Feldes"><figcaption><p>Verbinden Sie einen Dataset-Wert mit seinem sichtbaren Etikett und einem Dokumentfeld.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-35-lov-config-de-20261101.png" alt="Leeres LOV-Formular Stammdatenkonfiguration erstellen mit Dataset, Kontext Typ, Nachschlage-Etikettenfeld, Nachschlagewertfeld, Außerhalb des Feldes, Abbrechen und erstellen."><figcaption><p>Verbinden Sie einen Dataset-Wert mit seinem sichtbaren Etikett und einem Dokumentfeld.</p></figcaption></figure>
 
-Für voneinander abhängige Dropdowns wählen Sie **erstellen.** innerhalb einer aufgeklappten LOV-Konfiguration und wählen Sie **Nachschlagefeld** und **Feld Filtern**. Der Wert des Filterfeldes grenzt die vom Lookup zurückgegebenen Auswahlmöglichkeiten ein. Sie können außerdem einen festen **Wert Filtern** setzen und ein Feld als **Erforderlich** markieren. Über das Drei-Punkte-Menü der Zeile bearbeiten oder löschen ein eigenes Filterfeld.
+Für voneinander abhängige Dropdowns wählen Sie **erstellen.** innerhalb einer aufgeklappten LOV-Konfiguration und wählen Sie **Nachschlagefeld** und **Feld Filtern**. Der Wert des Filterfeldes grenzt die vom Lookup zurückgegebenen Auswahlmöglichkeiten ein. Sie können außerdem einen festen **Wert Filtern** setzen und ein Feld als **Erforderlich** markieren. Über das Drei-Punkte-Menü der Zeile bearbeiten oder löschen Sie ein eigenes Filterfeld.

@@ -8,9 +8,23 @@ Administratoren können **Skripte** verwenden, um Verarbeitungsregeln für einen
 2. Wählen Sie beim gewünschten Dokumenttyp **Skripte** aus. Die Seite listet die Skripte für diesen Dokumenttyp auf.
 3. Suchen Sie nach Name oder grenzen Sie die Liste mit **Alle**, **Aktiv** und **Inaktiv** ein. Sie können sie auch nach Name oder Änderungsdatum sortieren.
 
-Jede Karte zeigt den Skriptnamen, den Auslöser, die Version und den Status. Das Stift-Symbol öffnet den Editor; das Kopieren-Symbol dupliziert das Skript. **Neu** öffnet den Editor für ein neues Skript.
+Jede Karte zeigt den Skriptnamen, seine Ausführungsreihenfolge als nummerierten Chip, den Auslöser, die Version und den Status. Das Stift-Symbol öffnet den Editor; das Kopieren-Symbol dupliziert das Skript. **Neu** öffnet den Editor für ein neues Skript.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list-de.png" alt="Skriptliste, nach Ausführungsreihenfolge sortiert; jede Karte zeigt neben dem Skriptnamen einen nummerierten Chip mit der Ausführungsreihenfolge"><figcaption><p>Der nummerierte Chip auf jeder Karte ist die Ausführungsreihenfolge des Skripts.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-653-script-scripts-list-inactive-de-20261011.png" alt="Skriptliste für den Dokumenttyp Rechnung mit einem inaktiven Dokumentationsbeispiel und den Filtern Alle, Aktiv und Inaktiv"><figcaption><p>Prüfen Sie den Status rechts auf der Skriptkarte, bevor Sie ihn ändern.</p></figcaption></figure>
+
+## Ausführungsreihenfolge festlegen
+
+Mit dem Feld **Execution order** steuern Sie, in welcher Reihenfolge Skripte laufen: kleinere Zahlen laufen zuerst. Das Feld ist auch in der deutschen Oberfläche englisch beschriftet.
+
+1. Öffnen Sie das Skript im Editor.
+2. Geben Sie im Feld **Execution order** eine ganze Zahl ab 0 ein. Lassen Sie das Feld leer, um 0 zu behalten.
+3. Speichern Sie das Skript. Buchstaben, Dezimalzahlen und negative Zahlen werden mit einer Fehlermeldung am Feld abgelehnt, und es wird nichts gespeichert.
+
+Wenn Sie die Ausführungsreihenfolge ändern und danach eine Version aktivieren, speichert DocBits zuerst das Skript und aktiviert die Version erst, wenn dieses Speichern erfolgreich war.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor-de.png" alt="Skript-Editor mit dem Feld Execution order rechts neben der Auslöser-Auswahl"><figcaption><p>Die Ausführungsreihenfolge im Skript-Editor.</p></figcaption></figure>
 
 ## Ein Skript aktivieren oder deaktivieren
 

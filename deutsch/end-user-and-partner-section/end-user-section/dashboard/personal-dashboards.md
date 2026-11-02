@@ -13,7 +13,7 @@ Ein gespeichertes Dashboard ist eine benannte Ansicht Ihrer Arbeitsliste: Suche,
 4. Vergeben Sie einen eindeutigen Namen und legen Sie fest, wer die Ansicht verwenden kann:
    * **Nur für mich sichtbar** hält die Ansicht privat.
    * **Für alle Benutzer sichtbar** stellt sie allen Personen Ihrer Organisation zur Verfügung.
-   * **Mit Gruppen und Benutzern teilen** blendet die beiden Auswahlen **Gruppe** und **Benutzer auswählen** ein, sodass Sie bestimmte Gruppen oder einzelne Personen benennen.
+   * **Mit Gruppen und Benutzern teilen** blendet die beiden Auswahlen **Gruppen** und **Benutzer auswählen** ein, sodass Sie bestimmte Gruppen oder einzelne Personen benennen.
 
 5. Wählen Sie **Speichern**. Die Ansichts-Schaltfläche wechselt zum neuen Dashboard und zeigt dessen Namen und Dokumentanzahl.
 
@@ -25,7 +25,7 @@ Die Sichtbarkeit legt fest, wer die Ansicht **verwenden** kann. Sie gewährt kei
 
 Wählen Sie über die Ansichts-Schaltfläche ein gespeichertes Dashboard oder kehren Sie zum **Standard-Dashboard** zurück, der ungespeicherten Ansicht aller Dokumente. Das zuletzt geöffnete Dashboard bleibt beim Neuladen der Seite aktiv.
 
-Nach Änderungen an einem geladenen Dashboard – auch wenn Sie nur Spalten ändern – wird **Dashboard-Änderungen speichern** in der Ansichts-Schaltfläche verfügbar. Damit speichern Sie die Änderung unter demselben Namen. Die Aktion bleibt deaktiviert, wenn sich nichts geändert hat oder das Dashboard einer anderen Person gehört; eine geteilte Ansicht lässt sich nicht überschreiben, erstellen Sie stattdessen eine eigene.
+Nach Änderungen an einem geladenen Dashboard – auch wenn Sie nur Spalten ändern – wird **Dashboard änderungen speichern** in der Ansichts-Schaltfläche verfügbar. Damit speichern Sie die Änderung unter demselben Namen. Die Aktion bleibt deaktiviert, wenn sich nichts geändert hat oder das Dashboard einer anderen Person gehört; eine geteilte Ansicht lässt sich nicht überschreiben, erstellen Sie stattdessen eine eigene.
 
 ## Ein Dashboard umbenennen oder neu teilen
 

@@ -224,6 +224,18 @@ Testa ogni nuova regola su almeno un documento che dovrebbe fallire, uno che dov
 * Gli avvisi vengono raccolti separatamente e non nascondono mai un errore.
 * Se una regola non può essere valutata, ad esempio per una divisione per zero in una formula, viene saltata. Una regola difettosa non contrassegna mai un documento come non valido per errore.
 
+## Log <a id="logs"></a>
+
+Ogni regola può registrare le proprie valutazioni. Aprire la pagina **Log di esecuzione delle regole** del tipo di documento: l'intestazione riporta il tipo di documento e l'icona di aggiornamento ricarica l'elenco.
+
+**Trova per** stabilisce cosa cercare (il valore predefinito è **Chiave della regola**) e il valore va inserito nel campo accanto. Quando si cerca per documento, **Tipo di regola** è obbligatorio. Restringere il risultato con **Risultato**, **Eseguito**, **Da Data** e **Ad oggi**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-it.png" alt="I log di esecuzione delle regole"><figcaption><p>La pagina dei log di esecuzione: i filtri in alto, una riga per valutazione sotto. Finché non si cerca, la tabella indica cosa inserire.</p></figcaption></figure>
+
+Aprire una voce per vederne il dettaglio, compresa la **traccia della condizione**: ogni riga di *Applies when* con il valore atteso, il valore effettivo del documento e l'esito. Vedi [Leggere la traccia della condizione nei log](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+
+La stessa pagina mostra anche i log delle regole di trasformazione e di selezione del layout.
+
 ## Esempi pratici
 
 Copia queste regole come punto di partenza. Le chiavi di campi e colonne sono quelle del tipo di documento **Fattura** standard; adattale ai tuoi tipi di documento.

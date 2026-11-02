@@ -12,7 +12,7 @@ For a one-click snapshot of your own browser session instead of the system's his
 
 ## The six tabs
 
-The page opens with six tabs across the top; the Log Entries tab is the one with working data today.
+The page opens on **Log Entries**, with six tabs across the top. Use Log Entries to inspect the available log data.
 
 | Tab | What it is for |
 | --- | --- |
@@ -23,15 +23,15 @@ The page opens with six tabs across the top; the Log Entries tab is the one with
 | **Service Health** | Planned status cards for the individual DocBits services. |
 | **Log Entries** | The searchable log table — the part you will actually use to investigate an issue. |
 
-<figure><img src="../../.gitbook/assets/system-logs-system-overview-en-20261011.png" alt="System Overview tab with a System Health Status gauge showing HEALTHY and Document Processing Metrics cards marked Coming Soon"><figcaption><p>System Overview today: the health gauge is live, the processing metrics are placeholders.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/system-logs-system-overview-en-20261011.png" alt="System Overview tab with a System Health Status gauge showing HEALTHY and Document Processing Metrics cards marked Coming Soon"><figcaption><p>System Overview contains a demonstration health gauge and processing-metrics placeholders. The HEALTHY label is not a live availability check.</p></figcaption></figure>
 
-Many cards on the first five tabs are marked **Coming Soon**. They are placeholders — DocBits is building these dashboards on interfaces that are not finished yet, so clicking them shows no data today. Only the health gauge and the Log Entries tab already show real values.
+Many cards on the first five tabs are marked **Coming Soon**. These tabs contain planned dashboards and demonstration values. In particular, the System Overview health gauge displays a fixed value; do not use its HEALTHY label to decide whether a service is available. Use **Log Entries** for the actual log list.
 
 ## Investigating with Log Entries
 
-The Log Entries tab lists what the system did in the last seven days. Each row shows the timestamp, the severity badge, the service that wrote the entry, and the message.
+The Log Entries tab initially requests the last seven days of logs for **doc2-api**. Select a **Service** to inspect another component. Each row shows the timestamp, the severity badge, the service that wrote the entry, and the message.
 
-<figure><img src="../../.gitbook/assets/system-logs-log-entries-en-20261011.png" alt="Log Entries tab with filter fields for start and end date, log level, service and search text, five summary cards, and the log table"><figcaption><p>Log Entries: filters on top, summary cards in the middle, the log table below.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/system-logs-log-entries-en-20261011.png" alt="Log Entries tab with filter fields for start and end date, log level, service and search text, five summary cards, and the log table"><figcaption><p>Historical synthetic illustration: filters on top, summary cards in the middle, the log table below.</p></figcaption></figure>
 
 ### Narrow the list with filters
 
@@ -43,7 +43,7 @@ The Log Entries tab lists what the system did in the last seven days. Each row s
 
 ### Read the summary cards
 
-Between the filters and the table, five cards count the entries of the last seven days: **Total Logs**, **Errors**, **Warnings**, **Info**, and **Debug**.
+Between the filters and the table, five cards count the entries of the last seven days: **Total Logs**, **Errors**, **Warnings**, **Info**, and **Debug**. The counts use the selected service and search text; changing the Start date and End date changes the log list, while these cards retain their seven-day window.
 
 Clicking a card is a shortcut for the matching filter: **Errors** keeps only the error entries, **Warnings** only the warnings, and so on. Clicking **Total Logs** removes the level filter again.
 
@@ -56,9 +56,9 @@ Click a row to expand it. The detail panel shows the full timestamp, the level, 
 * **Table View** is the default: one row per log entry with columns for timestamp, log level, service, and message.
 * **Raw View** shows the same entries as plain text lines, in the order the services wrote them:
 
-<figure><img src="../../.gitbook/assets/system-logs-raw-view-en-20261011.png" alt="Raw View showing the log lines as plain text with an Export Logs button"><figcaption><p>Raw View: the same log data as plain text, ready to copy or export.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/system-logs-raw-view-en-20261011.png" alt="Raw View showing the log lines as plain text with an Export Logs button"><figcaption><p>Historical synthetic illustration of the Raw View layout and Export Logs control.</p></figcaption></figure>
 
-Raw View adds an **Export Logs** button. It downloads the log data as a text file — including your active filters and date range — for example, to attach to a support ticket when you [create a ticket](technical-support-in-docbits/create-a-ticket.md). The table view itself has no export; switch to Raw View first.
+Raw View adds an **Export Logs** button for requesting a text-file download with the selected filters and date range. Check the downloaded contents before attaching them when you [create a ticket](technical-support-in-docbits/create-a-ticket.md). The table view itself has no export; switch to Raw View first.
 
 Below the table, **Logs Per Page** sets how many entries are shown at once, and the page numbers move through longer result lists.
 

@@ -1,38 +1,38 @@
-# Annotation Mode
+# Tryb adnotacji
 
-## Overview
+## Przegląd
 
-The **Annotation Mode** setting allows users to create and manage annotations directly on the PDF. If a document contains annotations, they will be included when **exporting to IDM**.
+Ustawienie **Tryb adnotacji** umożliwia użytkownikom tworzenie adnotacji i zarządzanie nimi bezpośrednio w PDF. Jeśli dokument zawiera adnotacje, zostaną one uwzględnione podczas **eksportu do IDM**.
 
-## Location
+## Lokalizacja
 
-You can find this setting under: **Settings → Document Processing → Module → Document Type → Annotation Mode**
+To ustawienie znajdziesz w: **Ustawienia → Przetwarzanie dokumentu → Moduł → Typ dokumentu → Tryb adnotacji**
 
 <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
-DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
+DocBits Samouczek dotyczący trybu adnotacji: Dodawanie notatek podczas sprawdzania poprawności i pobierania z adnotacjami/bez nich
 {% endembed %}
 
-## How to Use Annotation Mode
+## Korzystanie z trybu adnotacji
 
-### 1. Enabling Annotation Mode
+### 1. Włączanie trybu adnotacji
 
-* Navigate to the **Validation Screen**.
-* Click on the **speech bubble** icon on the right to enter Annotation Mode.
+* Przejdź do **Ekranu weryfikacji**.
+* Kliknij ikonę **dymek** po prawej stronie, aby przejść do trybu adnotacji.
 
 <div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt=""><figcaption></figcaption></figure></div>
 
-### 2. Creating an Annotation
+### 2. Tworzenie adnotacji
 
-* Select an area on the PDF where you want to place an annotation.
-* Click the **pen** icon to write text.
-* Click the **document** icon to save the annotation.
-* Click the **trash can** icon to delete the annotation.
+* Wybierz obszar na PDF, w którym chcesz umieścić adnotację.
+* Kliknij ikonę **pen**, aby wpisać tekst.
+* Kliknij ikonę **dokument**, aby zapisać adnotację.
+* Kliknij ikonę **kosz na śmieci**, aby usunąć adnotację.
 
 <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt=""><figcaption></figcaption></figure></div>
 
-*   Customize the text using:
+*   Dostosuj tekst za pomocą:
 
     * **Size** adjustment
     * **Bold**
@@ -42,32 +42,32 @@ DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Withou
 
     <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt=""><figcaption></figcaption></figure></div>
 
-### 3. Managing Annotations
+### 3. Zarządzanie adnotacjami
 
-* **Move an annotation** by clicking and holding the left mouse button.
-* **Create multiple annotations** within the same document.
-* **Annotations are only visible** when Annotation Mode is enabled.
-* Annotations **will be included** when exporting the document to **IDM.**
-* If a document contains annotations, the **speech bubble icon** will display a small **exclamation mark** to indicate their presence.
+* **Przesuń adnotację** klikając i przytrzymując lewy przycisk myszy.
+* **Utwórz wiele adnotacji** w tym samym dokumencie.
+* **Adnotacje są widoczne tylko** gdy włączony jest tryb adnotacji.
+* Adnotacje **zostaną uwzględnione** podczas eksportowania dokumentu do **IDM.**
+* Jeśli dokument zawiera adnotacje, **ikona dymka** wyświetli mały wykrzyknik , wskazujący ich obecność.
 
 <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt=""><figcaption></figcaption></figure>
 
 *
 
-<mark style="color:red;">**Note:**</mark> Annotations can also be viewed, added, and modified directly within the **Approval Screen**, allowing users to make necessary adjustments during the approval process.
+<mark style="color:red;">**Uwaga:**</mark> Adnotacje można także przeglądać, dodawać i modyfikować bezpośrednio na **Ekranie zatwierdzania**, umożliwiając użytkownikom wprowadzanie niezbędnych poprawek podczas procesu zatwierdzania.
 
-### 4. Downloading PDFs with or without Annotations
+### 4. Pobieranie plików PDF z adnotacjami lub bez nich
 
-* If a document has annotations, you can choose to download the PDF either with or without the annotations.
-* To do this, go to the **Dashboard**.
-* Click on the **three dots** in the **Action** column.
-* Select one of the two available download options:
-  * **Download with Annotations**
-  * **Download without Annotations**
+* Jeśli dokument zawiera adnotacje, możesz pobrać PDF z adnotacjami lub bez.
+* Aby to zrobić, przejdź do **Dashboard**.
+* Kliknij **trzy kropki** w kolumnie **Akcja**.
+* Wybierz jedną z dwóch dostępnych opcji pobierania:
+  * **Pobierz z adnotacjami**
+  * **Pobierz bez adnotacji**
 
 <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt=""><figcaption></figcaption></figure>
 
-By enabling and using Annotation Mode, users can efficiently add, edit, and manage annotations directly on PDFs, enhancing document collaboration and review.
+Włączając i korzystając z trybu adnotacji, użytkownicy mogą efektywnie dodawać, edytować i zarządzać adnotacjami bezpośrednio w plikach PDF, usprawniając współpracę i przeglądanie dokumentów.
 
 
 

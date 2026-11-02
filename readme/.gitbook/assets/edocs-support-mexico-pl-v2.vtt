@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.226
+Mexico CFDI 3.3 i 4.0 mają osobne wpisy.
+Sprawdź przestrzeń nazw, wersję i
+
+formats_02
+00:00:08.226 --> 00:00:15.169
+TipoDeComprobante. Sama ujemna kwota nie
+identyfikuje noty kredytowej; parsowanie
+
+formats_03
+00:00:15.169 --> 00:00:18.233
+nie certyfikuje zatwierdzenia SAT.
+
+workflow_01
+00:00:18.983 --> 00:00:24.451
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:24.451 --> 00:00:30.024
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:30.024 --> 00:00:32.833
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:33.583 --> 00:00:39.609
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:39.609 --> 00:00:45.541
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:45.541 --> 00:00:48.367
+podatkowego ani dostarczenia przez sieć.
+

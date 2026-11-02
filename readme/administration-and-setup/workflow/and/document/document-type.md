@@ -1,6 +1,8 @@
-# Document Type
+# Typ dokumentu
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1-pl-pl.png" alt="Typ dokumentu, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-pl-pl.png" alt="Typ dokumentu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## Cel:
 
@@ -8,12 +10,12 @@ Ta karta przepływu pracy służy do oceny, czy dokument odpowiada określonemu 
 
 ## Komponenty karty:
 
-1. **Operator**
+1. **Operatora**
    * **Opis**: Definiuje, czy dokument powinien być określonego typu, czy nie.
    * **Opcje**:
      * **Is**: Dokument musi odpowiadać określonemu typowi, aby warunek był prawdziwy.
-     * **Is Not**: Dokument nie może odpowiadać określonemu typowi, aby warunek był prawdziwy.
-2. **Type**
+     * **Nie jest**: Dokument nie może odpowiadać określonemu typowi, aby warunek był prawdziwy.
+2. **Typ**
    * **Opis**: Określa typ dokumentu do porównania.
    * **Szczegóły**: Obejmuje to różne typy dokumentów, takie jak "Invoice", "Purchase Order" itp., na podstawie których oceniany będzie warunek (is/is not).
 
@@ -31,3 +33,15 @@ Ta karta przepływu pracy służy do oceny, czy dokument odpowiada określonemu 
 ## Podsumowanie:
 
 Karta przepływu pracy "Document Type Comparison" jest niezbędna do zapewnienia, że przepływy pracy są kontynuowane na podstawie typu przetwarzanego dokumentu. Porównując typ dokumentu, pomaga organizacjom zautomatyzować zadania routingu i przetwarzania dokumentów, zapewniając, że dokumenty są odpowiednio obsługiwane na podstawie ich typu.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praktyczny przykład
+
+**Kiedy używać:** Przeprowadź kontrolę dotyczącą konkretnej faktury.
+
+**Konfiguracja:** Wybierz typ dokumentu `Invoice` i operator równości.
+
+**Oczekiwany wynik i kontrprzykład:** Faktura przechodzi. Nota kredytowa nie spełnia tego warunku.
+
+To jest ilustracyjna konfiguracja i oczekiwany wynik. Korzystaj z pól, użytkowników i grup skonfigurowanych w Twojej organizacji testowej; nie jest to twierdzenie, że ten przykład został wykonany.

@@ -2,11 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-W tym miejscu wystarczy wprowadzić wymagane informacje od dostawcy poczty e-mail: protokół, szyfrowanie, nazwę serwera, port, nazwę użytkownika, adres e-mail i hasło, a także folder poczty.
+Wybierz IMAP jako protokół i wpisz dane swojego dostawcy poczty: nazwę serwera, port, szyfrowanie, nazwę użytkownika, adres e-mail i hasło. W kolejnych krokach ustawisz opcje i folder poczty.
 
-<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-pl-20261006.png" alt="Okno Konfiguracja serwera poczty e-mail z protokołem IMAP, nazwą serwera, portem 993, szyfrowaniem SSL oraz wypełnioną nazwą użytkownika i adresem e-mail."><figcaption><p>Okno „Konfiguracja serwera poczty e-mail” z przykładowymi wartościami: protokół IMAP, serwer imap.example.com, port 993, szyfrowanie SSL.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-pl-20261006.png" alt="Okno konfiguracji serwera poczty z protokołem IMAP, nazwą serwera, portem 993, szyfrowaniem SSL, nazwą użytkownika, adresem e-mail i hasłem"><figcaption><p>Konfiguracja serwera z przykładowymi wartościami. Zastąp je danymi swojego dostawcy poczty.</p></figcaption></figure>
 
-## Uwagi
+Warto pamiętać
 
-* Wprowadź wszystkie wymagane informacje w interfejsie. Pozostałe informacje, takie jak serwer i port, zależą od hosta (szybka wyszukiwarka internetowa powinna pomóc).
-* Folder i Move-Imported pełnią tu tę samą funkcję. Foldera nie można wyłączyć; jeśli pozostawisz go pusty, domyślnie używana jest skrzynka odbiorcza.
+* Wprowadź wszystkie potrzebne informacje w interfejsie. Pozostałe dane, takie jak serwer czy port, zależą od dostawcy (pomocne może być szybkie wyszukanie w internecie).
+* Folder i Przenieś zaimportowane pełnią tu tę samą funkcję. Folderu nie można wyłączyć, ale jeśli pozostanie pusty, domyślnie używana jest skrzynka odbiorcza.

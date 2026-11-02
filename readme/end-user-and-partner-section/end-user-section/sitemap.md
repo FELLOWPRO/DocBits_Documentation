@@ -6,7 +6,7 @@ Le Plan du Site est l'index complet et consultable de tout ce que DocBits propos
 
 Ouvrez le Plan du Site depuis la barre latérale (entrée proche du bas) ou appuyez sur <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> et choisissez **Voir tous les résultats**. L'URL directe est `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Aperçu du Plan du Site"><figcaption><p>Plan du Site avec aperçu des catégories et en-tête de recherche.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-fr.png" alt="Catalogue des pages en français. Les filtres fixes All, Dialogs, Sidebars et User, ainsi que certaines indications « more », restent en anglais dans la version actuelle du produit."><figcaption><p>Catalogue des pages en français. Les filtres fixes All, Dialogs, Sidebars et User, ainsi que certaines indications « more », restent en anglais dans la version actuelle du produit.</p></figcaption></figure>
 
 ## Parcourir le catalogue
 
@@ -20,6 +20,14 @@ Les entrées sont colorées par type :
 * **Action** — un bouton ou raccourci qui effectue une opération sans naviguer.
 
 Cliquez sur n'importe quelle entrée pour y aller directement. Les entrées qui nécessitent un paramètre (un type ou un identifiant de document) incluent un sélecteur intégré — choisissez la valeur avant de cliquer.
+
+## Vidéos de formation dans la liste
+
+Les entrées des pages qui disposent d'une vidéo de formation affichent une icône vidéo après le nom — pas uniquement dans les Paramètres, mais partout dans le catalogue, par exemple sur le Tableau de bord, dans la Validation des champs ou dans les pages Workflow. Sélectionnez l'icône pour lire la vidéo de cette page dans le panneau **Vidéos et tutoriels**, sans quitter le plan du site.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-fr.png" alt="Plan du Site avec des icônes vidéo à côté de plusieurs entrées et le panneau Vidéos et tutoriels ouvert sur la vidéo de la validation des champs"><figcaption><p>Les entrées qui ont une vidéo de formation portent une icône vidéo ; la sélectionner ouvre la vidéo dans le panneau.</p></figcaption></figure>
+
+Le panneau continue de lister chaque vidéo par thème : vous pouvez donc aussi parcourir et rechercher toute la bibliothèque depuis l'icône de la barre supérieure. Voir [Vidéos et tutoriels](videos-and-tutorials.md).
 
 ## Recherche et filtres
 

@@ -1,6 +1,12 @@
-# Promised Delivery Date on Purchase Order
+# Date de livraison promise sur le bon de commande
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-fr-fr.png" alt="Date de livraison promise sur le bon de commande, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-fr-fr.png" alt="Date de livraison promise sur le bon de commande, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-fr-fr.png" alt="Date de livraison promise sur le bon de commande, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
+
+Le calcul de la fenêtre de tolérance, avec des exemples tels que « aujourd'hui ou demain », est expliqué sur la page [Date Tolerances](../date-tolerances.md).
 
 ## **Objectif**
 
@@ -8,17 +14,17 @@ Cette carte DocBits est conçue pour faciliter la comparaison précise des dates
 
 ## **Composants de la carte**
 
-1. **Operator**
-   * **Description :** définit la condition appliquée pour comparer les dates de livraison.
-   * **Options :**
-     * **Equals (=) :** vérifie si la date de livraison promise de la ligne correspond à la date de livraison du bon de commande.
-     * **Not Equal (≠) :** s'assure que la date de livraison promise de la ligne ne correspond pas à la date du bon de commande.
-     * **Greater Than (>) :** vérifie si la date de livraison promise de la ligne est postérieure à la date de livraison du bon de commande.
-     * **Greater or Equals (≥) :** vérifie si la date de livraison promise de la ligne est égale ou postérieure à la date de livraison du bon de commande.
+1. **Opérateur**
+   * **Descriptif :** définit la condition appliquée pour comparer les dates de livraison.
+   * **Possibilités :**
+     * **Est égal à (=) :** vérifie si la date de livraison promise de la ligne correspond à la date de livraison du bon de commande.
+     * **Différent (≠) :** s'assure que la date de livraison promise de la ligne ne correspond pas à la date du bon de commande.
+     * **Supérieur à (>) :** vérifie si la date de livraison promise de la ligne est postérieure à la date de livraison du bon de commande.
+     * **Supérieur ou égal à (≥) :** vérifie si la date de livraison promise de la ligne est égale ou postérieure à la date de livraison du bon de commande.
      * **Less Than (<) :** confirme si la date de livraison promise de la ligne est antérieure à la date de livraison du bon de commande.
-     * **Less or Equals (≤) :** vérifie si la date de livraison promise de la ligne est égale ou antérieure à la date de livraison du bon de commande.
-2. **Value**
-   * **Description :** spécifie une marge d'erreur admissible dans la comparaison de la date de livraison.
+     * **Inférieur ou égal à (≤) :** vérifie si la date de livraison promise de la ligne est égale ou antérieure à la date de livraison du bon de commande.
+2. **Valeur**
+   * **Descriptif :** spécifie une marge d'erreur admissible dans la comparaison de la date de livraison.
    * **Détail :** les utilisateurs définissent le nombre de jours dont la date de livraison de la ligne peut différer de la date de livraison promise.
 
 ## **Fonctionnalité**

@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.564
+XRechnung possède treize libellés de
+version de 1.0 à 3.0.2, chacun en CII et
+
+formats_02
+00:00:07.564 --> 00:00:15.215
+en UBL. ZUGFeRD comprend des profils
+historiques et des entrées 2.5 CII et UBL.
+
+formats_03
+00:00:15.215 --> 00:00:20.335
+La syntaxe, la version de publication et
+le profil sont des choix distincts. Ne
+
+formats_04
+00:00:20.335 --> 00:00:24.867
+déduisez pas une publication Factur-X du
+marqueur commun 1p0.
+
+workflow_01
+00:00:25.617 --> 00:00:31.387
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:31.387 --> 00:00:37.297
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:37.297 --> 00:00:38.367
+l’active pas.
+
+accept_01
+00:00:39.117 --> 00:00:44.098
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:44.098 --> 00:00:49.775
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:49.775 --> 00:00:52.967
+la validation fiscale ni la transmission
+réseau.
+

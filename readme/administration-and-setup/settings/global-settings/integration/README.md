@@ -1,22 +1,60 @@
-# Integration
+# Intégration et SSO
 
-The integration settings play a crucial role in the efficiency and functionality of Docbits as they allow to ensure seamless interaction with other tools and services. Here are some reasons why properly configuring the integration settings is important:
+<figure><img src="../../../../.gitbook/assets/prior-t010-fr.png" alt="Configuration de l’intégration et des fournisseurs SSO."><figcaption><p>Configuration de l’intégration et des fournisseurs SSO.</p></figcaption></figure>
 
-## API Key
+La page Integration & SSO permet de gérer les clés d'API pour l'accès programmatique, les identifiants d'organisation et la configuration de l'authentification unique (SSO).
 
-<figure><img src="https://lh7-us.googleusercontent.com/lFBSwUxiK35KkhYh46gw35BsD10rvHK6_1_Tnf449-jd2WJleDhxPzHpUmNdbP1mst5TkLBpGj5iJyiR_Dxpbta6S9p4Rb3FWj7RIc628Kw-RgqpVvLDYggagjuFI1DdLfOJqkTWHBE0JLQRolTWvOc" alt="" width="563"><figcaption></figcaption></figure>
+## Clé API
 
-The integration settings play a crucial role in the efficiency and functionality of DocBits as they allow to ensure seamless interaction with other tools and services. Here are some reasons why properly configuring the integration settings is important:
+Gérez les clés d'API utilisées pour l'accès programmatique à DocBits.
 
-* **Increased efficiency:** Integration with other tools and services can streamline workflows and increase efficiency. For example, documents can be automatically exchanged between Docbits and a CRM system, reducing manual entry and increasing productivity
-* **Data consistency:** Integration allows data to be exchanged seamlessly between different systems, improving data consistency and accuracy. This avoids inconsistencies or duplicate data entry that could lead to errors.
-* **Real-time updates**: Integration enables real-time updates between different platforms so that users always have the latest information. This is especially important for critical business processes that require real-time information.
-* **Task automation:** Integration allows routine tasks to be automated, saving time and resources. For example, notifications can be triggered automatically when a certain event occurs in another system without the need for manual intervention.
-* **Improved user experience:** A well-configured integration ensures a seamless user experience as users do not have to switch between different systems to access relevant information. This improves user satisfaction and contributes to efficiency.
+| Colonne | Description |
+|--------|-------------|
+| **Clé** | La valeur masquée de la clé d'API. Cliquez sur l'icône de copie pour copier la clé complète. |
+| **Nom** | Un nom descriptif pour la clé. |
+| **Expire** | Date d'expiration (ou « Never »). |
+| **Dernière utilisation** | Date de dernière utilisation de la clé. |
+| **Statut** | Active ou Inactive. |
+| **Actes** | Menu à trois points pour révoquer ou supprimer. |
 
-To properly configure the integration settings, it is important to understand the organization's requirements and ensure that the integration is seamlessly integrated into existing workflows and processes. This requires thorough planning, configuration, and monitoring of the integration to ensure that it works smoothly and delivers the desired value.
+Cliquez sur **+ Create API Key** pour générer une nouvelle clé.
 
+## ID
 
+Affiche les identifiants de votre organisation :
 
+| Champ | Description |
+|-------|-------------|
+| **ID de l'organe** | L'identifiant unique de votre organisation. |
+| **ID de l'organe secondaire** | L'identifiant de la sous-organisation actuellement sélectionnée. |
 
+## Paramètres du fournisseur de services SSO
 
+Valeurs de configuration SSO de DocBits nécessaires pour configurer votre fournisseur d'identité (Identity Provider) :
+
+| Champ | Description |
+|-------|-------------|
+| **ID d'entité** | L'URL des métadonnées SAML de DocBits. |
+| **SLO URL** | URL de déconnexion unique (Single Logout). |
+| **SSO URL** | URL de l'Assertion Consumer Service. |
+
+Vous pouvez également utiliser **Télécharger le certificat** et **Télécharger les métadonnées** pour la configuration de votre IdP.
+
+## Paramètres du fournisseur de services d’identité
+
+Configurez votre fournisseur d'identité (IdP) externe :
+
+| Champ | Description |
+|-------|-------------|
+| **Identifiant du locataire** | L'identifiant de tenant de votre IdP. |
+| **Téléverser un fichier** | Téléversez le fichier XML de métadonnées de votre IdP. |
+
+Cliquez sur **Configurer** pour enregistrer vos paramètres IdP.
+
+* **Efficacité accrue :** L'intégration avec d'autres outils et services peut simplifier les flux de travail et accroître l'efficacité. Par exemple, des documents peuvent être échangés automatiquement entre DocBits et un système CRM, ce qui réduit la saisie manuelle et augmente la productivité
+* **Cohérence des données :** L'intégration permet d'échanger des données sans rupture entre différents systèmes, ce qui améliore la cohérence et l'exactitude des données. Cela évite les incohérences ou les saisies en double qui pourraient entraîner des erreurs.
+* **Mises à jour en temps réel** : L'intégration permet des mises à jour en temps réel entre différentes plateformes, de sorte que les utilisateurs disposent toujours des informations les plus récentes. C'est particulièrement important pour les processus métier critiques qui nécessitent des informations en temps réel.
+* **Automatisation des tâches :** L'intégration permet d'automatiser les tâches de routine, ce qui fait gagner du temps et des ressources. Par exemple, des notifications peuvent être déclenchées automatiquement lorsqu'un événement donné se produit dans un autre système, sans intervention manuelle.
+* **Meilleure expérience utilisateur :** Une intégration bien configurée garantit une expérience utilisateur fluide, car les utilisateurs n'ont pas à passer d'un système à l'autre pour accéder aux informations pertinentes. Cela améliore la satisfaction des utilisateurs et contribue à l'efficacité.
+
+Pour configurer correctement les paramètres d'intégration, il est important de comprendre les exigences de l'organisation et de veiller à ce que l'intégration s'insère de manière fluide dans les flux de travail et processus existants. Cela exige une planification, une configuration et une surveillance rigoureuses de l'intégration afin de garantir son bon fonctionnement et la valeur attendue.

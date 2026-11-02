@@ -1,19 +1,19 @@
-# Regex Manager
+# Gestionnaire Regex
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+Cette fonction de DocBits vous offre une alternative à la classification par modèle : elle permet d’écrire des expressions régulières de recherche pour un type de document, à des fins de classification et d’autres usages.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+Type de document : le gestionnaire Regex vous permet d’écrire des expressions régulières, qui sont ensuite recherchées dans le document. Si DocBits trouve une correspondance avec l’expression régulière d’un document défini, il classe le document dans le type de document correspondant. Par exemple, si vous écrivez une expression régulière pour trouver « Gutschrift » et que DocBits trouve ce terme dans un document, il le classera comme avoir.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+Origine du document : grâce aux expressions régulières, DocBits reconnaît aussi le pays d’origine d’un document. Par exemple, si une expression régulière pour un document espagnol contient le terme « Factura » et que DocBits trouve ce terme dans le document, il saura que le document est d’origine espagnole et le classera en conséquence.
 
-## **Accessing the Regex Manager**
+## **Accéder au gestionnaire Regex**
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+Dans DocBits, ouvrez Paramètres → Types de documents. Sous « Types de documents personnalisés », cliquez sur « Nouveau ». Saisissez un nom pour le type de document, ajoutez une description facultative et cochez « Tableau disponible » si le document contient un tableau. Choisissez ensuite « Expression régulière » au lieu de « Auto » et cliquez sur « Suivant ».
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx\_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B\_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../../.gitbook/assets/regex-manager-create-fr-20261006.png" alt="Page de création d’un nouveau type de document avec le champ de nom, la case Tableau disponible, la description et les boutons Auto et Expression régulière"><figcaption><p>Choisissez « Expression régulière » pour classer le nouveau type de document avec des expressions régulières.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## **Ajouter et supprimer des regex**
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+L’étape « Expression régulière » affiche les modèles regex existants, chacun avec son origine et son motif, ainsi qu’un bouton « Ajouter » pour créer un nouveau modèle. Utilisez le menu d’actions en fin de ligne pour gérer l’entrée concernée. Cliquez sur « Suivant » pour passer à « Champs et groupes ».
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp\_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1\_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
+<figure><img src="../../../.gitbook/assets/regex-manager-list-fr-20261006.png" alt="Étape Expression régulière avec le bouton Ajouter et un tableau de trois modèles regex avec origine, motif et actions"><figcaption><p>Modèles regex existants avec origine et motif. « Ajouter » en crée un nouveau.</p></figcaption></figure>

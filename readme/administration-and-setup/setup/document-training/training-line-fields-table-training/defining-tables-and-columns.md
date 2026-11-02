@@ -1,51 +1,43 @@
-# Définition des tables et des colonnes
+# Définir les tableaux et les colonnes
 
-## Définir les tables
+Si un tableau n’est pas reconnu complètement, utilisez l’entraînement pour définir sa zone et ses colonnes. Les exemples utilisent une facture fictive et un brouillon non enregistré.
 
-Pour définir des tables et des colonnes dans un document, veuillez importer un document, l'ouvrir et accéder à la vue d'extraction de table comme déjà connu (via "Éléments de ligne").
+## Ouvrir l’entraînement
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_1.png)
+Ouvrez le document dans la validation des champs, puis l’extraction de tableau.
 
-Vous arriverez sur l'écran suivant où vous pourrez activer le mode Entraînement :
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-fr.png" alt="Interface de définition des tableaux et colonnes."><figcaption><p>Interface de définition des tableaux et colonnes.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_2.png)
+Activez le mode d’entraînement pour afficher les outils de sélection et de colonnes.
 
-En cliquant sur le bouton "Modifier", le mode de sélection de table sera activé et vous pourrez modifier le document affiché du côté gauche :
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-fr.png" alt="Entraînement des tableaux avec le mode d’entraînement activé."><figcaption><p>Entraînement des tableaux avec le mode d’entraînement activé.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_3.png)
+La barre propose aussi une détection automatique. Comparez son résultat au document : cette image montre les outils disponibles, pas une détection terminée.
 
-En général, vous pouvez maintenant utiliser la fonctionnalité de détection automatique des tables et le système définira automatiquement les tables dans le document :
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-fr.png" alt="Outils d’entraînement des tableaux, dont la détection automatique."><figcaption><p>Outils d’entraînement des tableaux, dont la détection automatique.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_4.png)
+## Définir la zone et les colonnes
 
-Si le système n'est pas capable de trouver les tables automatiquement, vous pouvez définir manuellement les tables dans le document comme indiqué dans la vidéo ci-dessous :
+Avec le crayon, tracez un rectangle autour des en-têtes et lignes d’article. Excluez les totaux situés en dessous.
 
-## Définir les colonnes
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-fr.png" alt="Zone de tableau non enregistrée autour des lignes de la facture fictive."><figcaption><p>Zone de tableau non enregistrée autour des lignes de la facture fictive.</p></figcaption></figure>
 
-Une fois les tables définies, vous pouvez définir manuellement les colonnes via le bouton suivant :
+Choisissez l’outil des colonnes et placez les séparateurs verticaux entre les colonnes réelles.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_5.png)
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-fr.png" alt="Zone de tableau avec séparateurs verticaux des colonnes."><figcaption><p>Zone de tableau avec séparateurs verticaux des colonnes.</p></figcaption></figure>
 
-Définissez et triez les colonnes en les faisant glisser et déposer sur le document. Répétez cela pour les tables sur les autres pages également. En alternative, si les tables sont identiques sur chaque page, vous pouvez utiliser le bouton suivant pour utiliser la même colonne pour toutes les tables définies dans le document. Cette fonctionnalité copie les colonnes que vous avez définies sur toutes les autres pages également :
+Vérifiez position, description, quantité, prix unitaire et montant.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_6.png)
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-fr.png" alt="Séparateurs positionnés entre les colonnes de la facture fictive."><figcaption><p>Séparateurs positionnés entre les colonnes de la facture fictive.</p></figcaption></figure>
 
-Si le document est très confus, il est possible de zoomer avec les fonctionnalités "Zoom avant" et "Zoom arrière". Cela est utile, par exemple, lorsque beaucoup d'informations sont proches les unes des autres et rendent difficile la définition des colonnes :
+Contrôlez toute la zone et ses séparateurs avant d’enregistrer le document ou les règles.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_7.png)
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-fr.png" alt="Zone et séparateurs dans un brouillon d’entraînement non enregistré."><figcaption><p>Zone et séparateurs dans un brouillon d’entraînement non enregistré.</p></figcaption></figure>
 
-Si vous avez défini une colonne par erreur, vous pouvez la sélectionner en cliquant dessus et la supprimer via le bouton suivant :
+## Contrôler l’extraction
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_8.png)
+Comparez les lignes extraites à la facture. L’image suivante montre les lignes déjà extraites automatiquement dans la validation ; elles ne résultent pas du brouillon d’entraînement présenté ci-dessus.
 
-Remarque : Le bouton n'est visible que si la colonne est sélectionnée.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-fr.png" alt="Lignes extraites automatiquement de la facture fictive dans la validation."><figcaption><p>Lignes extraites automatiquement de la facture fictive dans la validation.</p></figcaption></figure>
 
-Une fois que vous avez terminé de définir toutes les tables et toutes les colonnes de votre document, utilisez le bouton "Enregistrer" pour activer vos modifications et extraire les données du document :
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_9.png)
-
-Les données de toutes les zones définies seront extraites et affichées du côté droit :
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_10.png)
-
-Dans la section suivante, vous apprendrez comment ajuster les données qui ont été extraites.
+Après l’enregistrement prévu, testez d’autres documents du même fournisseur. Une facture ne démontre pas une extraction fiable pour toutes les mises en page.

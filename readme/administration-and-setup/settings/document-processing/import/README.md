@@ -1,175 +1,94 @@
-# Import
+# Importation
 
-## Overview
+Les paramètres d’importation déterminent le traitement des documents et permettent de configurer leur réception automatique par FTP ou par e-mail. Ouvrez **Paramètres → Traitement des documents → Importation**.
 
-In the **Import** settings, you can configure document-specific options for importing, or set up automated imports via FTP or email. This page provides a detailed overview of all available settings.
+## Options des documents
 
-## How to Access
+Vérifiez la limite de pages, le délai de paiement par défaut en jours et le format de date. Les pages dépassant la limite configurée peuvent être supprimées. La valeur par défaut documentée pour cette fonction est de 60 pages ; confirmez la configuration de votre organisation avant l’importation.
 
-1.  Navigate to **Settings** -> **Document Processing** -> **Import**
+## Importation FTP
 
-    <figure><img src="../../../../.gitbook/assets/ftp_0.png" alt=""><figcaption></figcaption></figure>
+Un serveur FTP compatible, des identifiants autorisés et un dossier d’importation dédié accessible au compte du serveur sont nécessaires.
 
-## **Document Settings**
+<figure><img src="../../../../.gitbook/assets/s150-ftp_0-fr.png" alt="Vue d’ensemble des connexions d’import FTP."><figcaption><p>Vue d’ensemble des connexions d’import FTP.</p></figcaption></figure>
 
-* **Restrict to pages**: This setting allows you to limit the processing to a certain number of pages per document. The default is **60 pages**, meaning documents exceeding this limit will be trimmed to **60 pages**, and any **remaining pages will be discarded.**
-* **Payment Terms Days**: Defines the default payment terms (in days) that can be applied to documents.
-* **Date Pattern**: Sets the pattern for how dates should be recognized and formatted within imported documents.
+### Configurer une connexion
 
-<figure><img src="../../../../.gitbook/assets/document_settins_1.png" alt=""><figcaption></figcaption></figure>
+Créez une connexion. L’assistant commence par la configuration du serveur, puis propose les options et la configuration d’importation.
 
-## **FTP Import**
+<figure><img src="../../../../.gitbook/assets/s150-ftp_5-fr.png" alt="Configuration du serveur dans l’assistant d’import FTP."><figcaption><p>Configuration du serveur dans l’assistant d’import FTP.</p></figcaption></figure>
 
-### Requirements
+| Paramètre | Signification |
+| --- | --- |
+| Protocole et port | Choisissez FTP, FTPS ou SFTP et le port confirmé par l’administrateur du serveur. |
+| Serveur et identifiants | Adresse du serveur et compte autorisé à lire le dossier d’importation. |
+| Motifs de noms de fichiers | Limitent l’importation aux noms correspondants. |
+| Sous-organisation | Détermine l’affectation des documents importés. |
+| Clé API | Si elle est proposée, elle doit correspondre à la bonne organisation. Ne publiez pas sa valeur. |
+| Dossier principal et dossier d’importation | Indiquent l’emplacement des fichiers sur le serveur. |
+| Archivage après importation | Déplace les fichiers correctement importés vers le dossier d’archive indiqué. Le compte doit disposer des droits nécessaires. |
+| Inclure les sous-dossiers | Étend la recherche aux dossiers enfants. |
 
-To use FTP for importing data automatically, ensure the following requirements are met:
+Vérifiez toutes les étapes avant d’enregistrer. Confirmez ensuite séparément si la connexion est active. Les actions disponibles comprennent le test de connexion, les journaux, l’activation, la désactivation, la modification et la suppression. Consultez le résultat du test et les journaux avant l’importation régulière. Les images montrent la liste et le début de l’assistant sans enregistrement, pas une connexion au serveur vérifiée.
 
-* Correctly configured, Linux compatible FTP Server
-* FTP Hostname, Username and Password
-* Dedicated Import folder
+## Importation des e-mails {#email-import}
 
-### Add new connection
+Une connexion récupère les documents d’une boîte propre par IMAP ou OAuth Microsoft365. Le transfert vers une adresse fournie par DocBits est une méthode distincte ; consultez [E-mails entrants](../module/inbound-emails.md).
 
-1.  To add a new connection, click the **Add** button in the FTP section.
+### Pièces jointes prises en charge
 
-    <figure><img src="../../../../.gitbook/assets/ftp_7.png" alt=""><figcaption></figcaption></figure>
-2.  Enter your FTP credentials in the designated fields. The API Key field will be filled in automatically.
+Les types importés comprennent `.pdf`, `.tiff` / `.tif`, `.eml`, `.dat`, `.xml`, `.edi` et `.purchaseorder`.
 
-    * **Type:** Specifies the FTP protocol to use. You can choose between **FTP**, **FTPS**, or **SFTP**.
-    * **Port:** Specifies the port number to be used for the selected FTP protocol.
-    * **Server Name (required):** The address of the server from which documents will be retrieved.
-    * **Username (required):** The login name used to access the FTP server.
-    * **Password (required):** The password associated with the username for accessing the FTP server.
-    * **File name matching patterns:** To specify which files to import based on their names.
-    * **Sub-Organizations:** Select which sub-organization the FTP import should apply to.
-    * **API Key (required):** This field will be automatically filled based on the organization you are logged into.
-    * **Primary Directory:** Specifies the directory on the FTP server from which files will be imported.
-    * **Import Directory:** Allows you to specify a subdirectory within the primary directory from which files will be imported.
-    * **Archive After Import:** Allows you to archive files after import. Once activated, you can specify the directory where files should be moved after a successful import.
-    * **Include Subfolder Files:** When enabled, subdirectories within the main directory will also be searched for files to import.
+Outre le type déclaré par le serveur de messagerie, DocBits reconnaît les documents par leur contenu réel. Cela compte lorsqu’une pièce jointe transférée reçoit le type générique `application/octet-stream` au lieu de `application/pdf` ou `application/xml`.
 
-    <figure><img src="../../../../.gitbook/assets/email_4.png" alt=""><figcaption></figcaption></figure>
-3. Once you have entered all the necessary details of your FTP, click **SAVE**.
-4. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
+* Les messages `.eml` transférés et les pièces jointes Outlook `winmail.dat` (TNEF) sont décompressés pour importer les documents contenus.
+* Un XML de type générique est reconnu par la déclaration `<?xml`, avec un BOM initial UTF-8 ou UTF-16 (LE/BE). Actuellement, seules ces codifications BOM sont détectées automatiquement par le contenu. Un nom se terminant par `.xml` permet l’importation indépendamment de l’encodage.
+* Les images intégrées, comme les logos de signature et les graphiques PNG, JPG, GIF ou BMP, sont ignorées et ne comptent pas comme échecs d’importation.
+* Si l’adresse entrante active une réponse en cas d’échec d’importation, la notification est envoyée à l’adresse de réponse configurée.
 
-### Actions for FTP
+### Connexion IMAP
 
-You can click the three dots in the **Action** column to access the following options for your connection:
+Créez une connexion dans la section d’importation des e-mails et choisissez IMAP. Vérifiez le chiffrement SSL ou TLS, le serveur, le port, le nom de configuration ou d’utilisateur, l’adresse e-mail et le mot de passe. Sélectionnez la sous-organisation et l’adresse des notifications d’erreur. Si une clé API apparaît, confirmez le contexte de l’organisation.
 
-<figure><img src="../../../../.gitbook/assets/ftp_5.png" alt="" width="158"><figcaption></figcaption></figure>
+Après création, vous pouvez sélectionner le dossier de messagerie et le déplacement des messages traités vers un autre dossier. Si ces options ne sont pas encore disponibles, modifiez la connexion enregistrée. Selon la configuration, vous pouvez aussi fusionner les documents joints, envoyer une confirmation à l’expéditeur et bloquer les noms de fichiers en double. Vérifiez l’objet et le message de confirmation avant de l’activer.
 
-* **Test Connection:** Tests the connection to your FTP server.
-* **Connection Logs:** Opens the logs for your FTP connection, including error messages if any issues occur.
-* **Activate/Deactivate:** Activates/deactivates your connection.
-* **Edit:** Allows you to make changes to your connection.
-* **Delete:** Deletes your connection.
+L’enregistrement et l’activation sont distincts. Le menu peut proposer le test de connexion, les journaux de connexion et d’importation, la modification, l’activation, la désactivation et la suppression.
 
-## **Email Import**
+### OAuth Office365
 
-You can set up an email import that automatically imports documents from your inbox as soon as they arrive. You can choose to configure either an IMAP or an OAuth connection
+Créez une connexion e-mail et choisissez OAuth Office365. Lancez l’authentification Microsoft. Si un code d’appareil apparaît, copiez celui de DocBits dans la page Microsoft indiquée et connectez-vous au bon compte. Revenez dans DocBits pour terminer l’authentification.
 
-<mark style="color:red;">**Note**</mark>:  Only documents with the following file types will be imported:
+Vérifiez la sous-organisation, le dossier, la boîte partagée facultative, le dossier de destination des messages traités et l’adresse des notifications d’erreur. Confirmez aussi l’acheminement vers DocBits ou AI Workforce si cette option est proposée. Enregistrez puis choisissez le moment d’activer ou de lancer l’importation. OAuth Office365 – Tenant exige les données d’inscription de l’application de l’organisation ; confirmez-les avec l’administrateur et consultez [E-mails entrants](../module/inbound-emails.md).
 
-* `.pdf`
-* `.tiff` / `.tif`
-* `.eml`
-* `.dat`
-* `.xml`
-* `.edi`
-* `.purchaseorder`
+### Journaux d’importation
 
-{% hint style="info" %}
-**How attachments are recognised**
-
-In addition to the file extensions listed above, DocBits also identifies a document by its **actual file content** (file signature), not only by the content type declared by the sending mail system. This matters for **forwarded** mails: intermediate mail servers/gateways frequently re-label an attachment with a generic type (`application/octet-stream`) instead of, for example, `application/pdf` or `application/xml`. DocBits still recognises and imports such attachments correctly.
-
-* **Forwarded `.eml`** messages and Outlook **`winmail.dat`** (TNEF) attachments are unpacked and the documents inside them are imported.
-* **Encodage XML :** Lorsqu'une facture XML est réétiquetée avec un type générique (`application/octet-stream`), DocBits la reconnaît grâce à sa déclaration `<?xml`, en tolérant une marque d'ordre des octets (BOM) **UTF-8** ou **UTF-16** (LE/BE) en tête — actuellement, seuls ces encodages BOM sont détectés automatiquement à partir du contenu. Une pièce jointe qui conserve un nom `.xml` est importée quel que soit son encodage.
-* **Ignored:** inline images that ride along in a mail (signature logos / embedded graphics — PNG, JPG, GIF, BMP) are skipped silently and are **not** counted as failed imports.
-
-If an attachment cannot be imported and the option **“Reply to this email if import can not be done”** is enabled for the inbound address, the configured reply address is notified.
-{% endhint %}
-
-### Add new IMAP connection
-
-1.  To add a new IMAP connection, click the **Add** button in the **Email Import** section.
-
-    <figure><img src="../../../../.gitbook/assets/email_1.png" alt=""><figcaption></figcaption></figure>
-2. Select IMAP as the protocol.
-3. Enter your email credentials in the designated fields. The API Key field will be filled automatically.
-   * **Encryption:** Select the type of encryption to use — either **SSL** or **TLS**.
-   * **Server name:** The address of the email server.
-   * **Username:** The identifier used for your mail import configuration in DocBits.
-   * **E-mail:** The email address used for importing documents into the system.
-   * **Password:** The password associated with the provided email address.
-   * **Sub-Organizations:** Select the sub-organization to which the email import should apply.
-   * **API Key:** This field will be automatically filled based on the organization you are logged into.
-   * **Send Import Error Notice to this Email Address:** Specify an email address to receive error notifications if something goes wrong during the import process.
-   * **Port:** Specifies the port number to be used for the selected email import configuration.
-   * **Folder:** Select a folder from which the documents will be imported.\
-     <mark style="color:red;">**Note**</mark>: The **Folder** option becomes available only after you have successfully created an IMAP connection. To add a folder after creation, click the three dots in the **Action** column, then select **Edit**. The option should now be available.
-   * **Move Emails to Other Folder:** When enabled, allows you to specify a folder where emails will be moved after a successful import.\
-     <mark style="color:red;">**Note**</mark>: The **Move Emails to Other Folder** option becomes available only after you have successfully created an IMAP connection. To activate this setting, click the three dots in the **Action** column, then select **Edit**. The option should now be available.
-   * **Merge Attached Documents:** Combines multiple attached documents into a single document.
-   * **Send Email to Sender after Import:** Sends a confirmation email to the original sender after the import is complete. Once activated, you can specify the subject and body of the email.
-   * **Block Duplicate Filename Import:** Prevents import if a document with the same name already exists.
-4. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
-
-### Actions for IMAP
-
-You can click the three dots in the **Action** column to access the following options for your connection:
-
-<figure><img src="../../../../.gitbook/assets/email_7.png" alt="" width="145"><figcaption></figcaption></figure>
-
-* **Test Connection:** Tests the connection to your IMAP client.
-* **Connection Logs:** Opens the logs for your email connection, including any error messages that occur during the process.
-* **Import Log:** Opens the logs of past imports for the respective connection, including any error messages that occurred during the process.
-* **Activate/Deactivate:** Activates/deactivates your connection.
-* **Edit:** Allows you to make changes to your connection.
-* **Delete:** Deletes your connection.
-
-### Add new OAuth Office365 connection
-
-1.  To add a new OAuth Office365 connection, click the **Add** button in the **Email Import** section.
-
-    <figure><img src="../../../../.gitbook/assets/email_1.png" alt=""><figcaption></figcaption></figure>
-2.  Select **OAuth Office365** as the protocol, then click on **Authenticate**.
-
-    <figure><img src="../../../../.gitbook/assets/email_3.png" alt=""><figcaption></figcaption></figure>
-3.  You will be redirected to a Microsoft page where you’ll be asked to enter a code. To retrieve this code, return to DocBits—the code will be displayed there, as shown below. Copy the code and enter it on the Microsoft page. Afterward, you will be prompted to enter your Microsoft credentials.
-
-    <figure><img src="../../../../.gitbook/assets/email_4.png" alt=""><figcaption></figcaption></figure>
-4. Follow the steps on the Microsoft page. Once you're done, return to DocBits and click **Finish Authentication**.
-5.  You can now configure the following settings:
-
-    * **Sub-Organizations:** Select the sub-organization to which the email import should apply.
-    * **Use Folder:** Select a folder from which the documents will be imported.
-    * **Use Shared Mailbox:** Specify the shared email address from which documents should be imported.
-    * **Move Email to other folder:** Specify a folder to which emails should be moved after a successful import.
-    * **Send Import Error Notice to this Email-Address:** Specify an email address to receive error notifications if something goes wrong during the import process.
-
-    <figure><img src="../../../../.gitbook/assets/email_5.png" alt=""><figcaption></figcaption></figure>
-6. Once you’ve configured the desired behavior, you can either start importing emails by clicking **Import** or save your changes by clicking **Save**.
-7.  After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
+Les journaux de connexion aident à diagnostiquer les communications ; les journaux d’importation montrent les résultats antérieurs. Le journal agrégé de la section e-mail couvre les connexions configurées. Vous pouvez filtrer par objet ou expéditeur, trier avec les en-têtes et modifier l’ordre des colonnes. Examinez le message avant de répéter l’importation.
 
 
+## Tutoriel vidéo: Boîte de réception et recherche d'erreurs
 
-### Actions for OAuth Office365
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/fr.mp4" %}
+Boîte de réception et recherche d'erreurs
+{% endembed %}
 
-You can click the three dots in the **Action** column to access the following options for your connection:
+[Voir avec sous-titres et chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/fr.html)
 
-<figure><img src="../../../../.gitbook/assets/email_6.png" alt="" width="148"><figcaption></figcaption></figure>
+Certains libellés natifs peuvent rester dans une autre langue. Les identifiants techniques des champs sont conservés.
 
-* **Connection Logs:** Opens the logs for your email connection, including any error messages that occur during the process.
-* **Import Log:** Opens the logs of past imports for the respective connection, including any error messages that occurred during the process.
-* **Activate/Deactivate:** Activates/deactivates your connection.
-* **Edit:** Allows you to make changes to your connection.
-* **Delete:** Deletes your connection.
+Sous les paramètres et l'importation, j'utilise l'adresse entrante DocBits dans cet exemple. Une boîte aux lettres directement connectée est une méthode d'importation distincte. Pour la formation, je travaille dans une organisation de démonstration dédiée avec des factures synthétiques. Les notifications restent désactivées.
 
-### Import Log
+Je contrôle d'abord l'adresse de réception affichée et le périmètre. L'adresse appartient exactement à cette organisation et à son environnement. Pour une autre entreprise ou un environnement de production, j'utilise toujours l'adresse qui y est réellement affichée.
 
-You can view the import log of all created email connections, including any error messages that occurred during the process, by clicking the **Import Log** button in the top-right corner of the Email Import section.
+Ici, je limite la réception à notre expéditeur de test approuvé. Je ne choisis l'affectation à une sous-organisation que si elle fait partie du processus prévu. J'enregistre le paramètre et je l'ouvre à nouveau. L'expéditeur autorisé a été conservé ; les e-mails de réponse automatique restent désactivés dans cette formation.
 
-<figure><img src="../../../../.gitbook/assets/email_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-save-fr-accounting-email-v2.png" alt="Expéditeur autorisé enregistré, notifications désactivées"><figcaption><p>Expéditeur autorisé enregistré, notifications désactivées</p></figcaption></figure>
 
-You can filter the logs by subject or sender, sort columns in ascending or descending order by clicking the column headers, and rearrange columns using drag-and-drop.
+Pour cette formation, un message de test a été transmis directement au traitement des e-mails entrants de DocBits. Ce test ne confirme pas la réception d'un e-mail externe. Dans le journal, je vérifie l'objet, l'expéditeur et la pièce jointe importée. Je contrôle ensuite le document réellement créé.
+
+J'ouvre le document correspondant et je compare la pièce jointe PDF avec la facture dans DocBits. Le nom du fichier, le numéro de facture, le fournisseur et le montant doivent correspondre. Un import réussi ne dit rien sur une approbation ou une écriture ERP.
+
+Un deuxième test contrôlé provient d'un expéditeur non autorisé. Dans le journal, je cherche spécifiquement cette réception et j'active le filtre d'erreur. Les détails nomment l'expéditeur rejeté. Je vérifie la cause à l'aide de l'objet et de l'identifiant de trace, au lieu de relancer l'importation plusieurs fois.
+
+Dans un cas réel, je clarifie d'abord si cet expéditeur est même autorisé. Une modification approuvée de la liste des expéditeurs est enregistrée et vérifiée à nouveau. Ensuite, je contrôle une nouvelle réception de test unique jusqu'au document créé. Pour les erreurs techniques, je transmets l'identifiant de trace et le message d'erreur concret.
+
+<figure><img src="../../../../.gitbook/assets/admin-error-fr-accounting-email-v2.png" alt="Import échoué avec pièce jointe, motif et identifiant de suivi"><figcaption><p>Import échoué avec pièce jointe, motif et identifiant de suivi</p></figcaption></figure>

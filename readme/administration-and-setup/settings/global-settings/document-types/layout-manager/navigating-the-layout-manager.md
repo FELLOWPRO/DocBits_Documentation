@@ -1,78 +1,47 @@
 # Navigation dans le Gestionnaire de Mise en Page
 
-## Être capable de naviguer dans le Gestionnaire de Mise en Page dans DocBits et d'éditer des groupes et des champs est crucial pour contrôler la structure et l'apparence des documents.
+Le **Gestionnaire de mise en page** sert à organiser les groupes et les champs que les utilisateurs voient sur un document. Ce guide s'appuie sur la mise en page de **Facture** d'une organisation sandbox ; les captures d'écran montrent l'interface en français.
 
-### Voici les étapes pour utiliser le Gestionnaire de Mise en Page et éditer des groupes et des champs :
+## Ouvrir la mise en page de la facture
 
-### Navigation dans le Gestionnaire de Mise en Page :
+1. Allez dans **Paramètres → Types de documents**.
+2. Repérez **Facture** et sélectionnez **Plans** sous son nom. Le Gestionnaire de mise en page s'ouvre pour ce type de document.
+3. L'en-tête affiche le nom de la mise en page (modifiable avec le crayon), le **Type de document** et le **Type de mise en page**. Ce dernier sélecteur permet de passer à une autre mise en page du même type de document.
 
-#### Ouverture du Gestionnaire de Mise en Page :
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-fr.png" alt="Liste des types de documents par défaut avec la carte Facture, son badge Standard et les liens d'accès à ses plans, champs, tables et règles"><figcaption><p>Les plans d'un type de document s'ouvrent depuis sa carte.</p></figcaption></figure>
 
-* Connectez-vous à DocBits et naviguez vers la zone où vous souhaitez utiliser le Gestionnaire de Mise en Page.
-* Vous pouvez trouver cette option dans "Gérer les Types de Document".
+## Travailler avec les trois onglets du panneau
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FeebqP176qG5bOQ6YLJDX%252FBildschirmfoto%25202024-05-23%2520um%252013.35.39.png%3Falt%3Dmedia%26token%3D6aa09cc2-2df5-4495-aefe-36dec3123b51\&width=768\&dpr=4\&quality=100\&sign=82c501bb\&sv=2)
+Le panneau de gauche comporte trois onglets : **Structure**, **Champs** et **Éléments**. Le Gestionnaire de mise en page s'ouvre sur **Champs**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5z8cVvWqARCkXx4AER4B%252FBildschirmfoto%25202024-05-24%2520um%252010.12.05.png%3Falt%3Dmedia%26token%3De0f8301a-9aaa-4e4a-9568-a2c372355538\&width=768\&dpr=4\&quality=100\&sign=66865b41\&sv=2)
+**Structure** présente la mise en page sous forme d'arborescence, dans l'ordre où les groupes et les champs apparaissent sur le document. Dépliez un groupe avec son chevron pour voir les champs qu'il contient ; le nom technique du champ apparaît dans le panneau **Propriétés**. La zone de recherche filtre l'arborescence et, lorsque vous sélectionnez une ligne, l'élément correspondant est sélectionné sur le canevas.
 
-Sélection du Type de Document :
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-fr.png" alt="Gestionnaire de mise en page avec l'onglet Structure ouvert : l'arborescence dépliée jusqu'au groupe Delivery Details, le champ ID du fournisseur sélectionné, la mise en page de la facture sur le canevas et le panneau Propriétés à droite"><figcaption><p>L'arborescence Structure, le canevas et le panneau Propriétés.</p></figcaption></figure>
 
-* Sélectionnez le type de document que vous souhaitez éditer.
-* Le Gestionnaire de Mise en Page affichera la structure de ce type de document.
+**Champs** réunit tous les champs proposés par le type de document, classés par groupe. Le compteur à droite du nom d'un groupe indique combien de ses champs sont déjà placés, par exemple **4/14**. Les trois boutons sous la zone de recherche, sans texte, filtrent la liste : tous les champs, uniquement ceux qui ne sont pas encore placés, ou uniquement ceux qui sont masqués. Chaque ligne affiche le libellé du champ ; une coche verte à droite signale les champs déjà présents dans la mise en page, qui apparaissent en grisé.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-overview-2026.png" alt=""><figcaption><p>Layout Builder Invoice</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-fr.png" alt="Onglet Champs du Gestionnaire de mise en page avec ses trois boutons de filtre sous la recherche, le premier groupe ouvert avec son compteur 4/14 et les champs déjà placés, grisés et cochés"><figcaption><p>Filtrez les champs et repérez les champs déjà placés à leur coche.</p></figcaption></figure>
 
-Navigation dans les Groupes et Champs :
+**Éléments** contient les blocs à faire glisser sur le canevas : **Groupes**, avec les groupes de cette mise en page, et **Éléments de formulaire**, avec Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields et Sub Group.
 
-* Dans le Gestionnaire de Mise en Page, vous verrez une structure arborescente qui représente les groupes et les champs du type de document sélectionné.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-fr.png" alt="Onglet Éléments du Gestionnaire de mise en page : la section Groupes avec les huit groupes de la facture et la section Éléments de formulaire avec douze éléments"><figcaption><p>Les palettes Groupes et Éléments de formulaire.</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjtiMNhQqN859bxtLsoth%252Fimage.png%3Falt%3Dmedia%26token%3Dc3224b66-3f2a-4aa2-81ee-6cde5719cf3f\&width=768\&dpr=4\&quality=100\&sign=57e2b59\&sv=2)
+## Placer et organiser les éléments
 
-* Vous pouvez naviguer à travers cette structure pour éditer les zones que vous souhaitez.
+- Faites glisser un champ depuis **Champs**, ou un élément depuis **Éléments**, dans le groupe où il doit apparaître. Les champs déjà placés portent une coche dans l'onglet **Champs**.
+- Faites glisser un champ à l'intérieur d'un groupe ou d'un groupe à l'autre pour le réordonner.
+- Le **+** au-dessus du canevas ajoute un groupe vide ; l'icône JSON à côté crée un groupe à partir d'une définition JSON.
+- Dans l'en-tête d'un groupe, vous pouvez renommer le groupe via **Titre du groupe**, copier son JSON, le déplacer vers le bas ou vers le haut, ou le supprimer. La poignée à droite de l'en-tête sert à déplacer le groupe.
+- Sélectionnez un champ sur le canevas pour ouvrir ses propriétés à droite. La petite barre d'outils qui apparaît sous le champ sélectionné permet de le retirer de la mise en page.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5UpYc7uZEQzEt2LEFHzo%252Fimage.png%3Falt%3Dmedia%26token%3D4203ac3a-5487-4bfc-8aa8-4c35fe70b14a\&width=768\&dpr=4\&quality=100\&sign=adc50420\&sv=2)
+## Le panneau Propriétés
 
-### Édition des groupes et champs:
+Le panneau de droite reste toujours ouvert et suit l'élément que vous avez sélectionné. Ses réglages sont répartis en quatre sections : **Affichage**, **Comportement**, **Valeurs et listes** et **Automatisation**. **Affichage** regroupe le libellé, le nom du champ et la **Largeur de l'élément en pourcentage**, à choisir parmi les valeurs 25, 33, 50, 66, 75 et 100. Le détail de chaque option figure dans [Configurer les propriétés des champs](configuring-field-properties.md).
 
-<mark style="color:red;">**Remarque:**</mark> **lorsque le Titre d'un champ a été modifié, vous devez supprimer et réajouter le champ dans le constructeur de mise en page pour que les modifications prennent effet.**
+Les réglages de validation, d'OCR et de correspondance concernent le champ lui-même, pas la mise en page : configurez-les dans les [paramètres Champs](../fields/configuring-field-properties-1.md), qui sont distincts.
 
-Ajout d'un groupe ou d'un champ :
+## Aperçu et enregistrement
 
-* Cliquez sur le bouton "Créer un nouveau groupe", selon que vous souhaitez ajouter un nouveau groupe ou champ.
+Le canevas montre la mise en page telle qu'elle apparaîtra sur le document. Les onglets **Mise en page principale** et **Tableau** permettent de passer de la page à un tableau de lignes, et **Document** ouvre le document d'exemple à côté du canevas. Voir [Utiliser l'aperçu du modèle](using-the-template-preview.md).
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FF9Soj6uDKKyYb8ciweHp%252FBildschirmfoto%25202024-05-24%2520um%252010.23.27.png%3Falt%3Dmedia%26token%3D797e975a-470b-4a0d-b1f1-a82b8aeb7267\&width=768\&dpr=4\&quality=100\&sign=d2e200b6\&sv=2)
-
-* Entrez le nom du nouveau groupe ou champ et sélectionnez les paramètres que vous souhaitez, tels que le type de champ (texte, nombre, date, etc.).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7qcF5LK6yxbcRVm57Ejz%252Fimage.png%3Falt%3Dmedia%26token%3Dec75cf2f-a834-4eb3-89c3-75a6fc70c88c\&width=768\&dpr=4\&quality=100\&sign=e93f7652\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSM5IXOG5XYfGo3ee1xzP%252Fimage.png%3Falt%3Dmedia%26token%3D57a737f0-240c-4c23-9d4a-b92e86a92b47\&width=768\&dpr=4\&quality=100\&sign=456cdcec\&sv=2)
-
-Suppression d'un groupe ou d'un champ :
-
-* Sélectionnez le groupe ou le champ que vous souhaitez supprimer.
-* Cliquez sur le bouton "Supprimer" ou utilisez le raccourci clavier approprié (généralement "Supprimer" ou "Del").
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FQQjFkNb0ONiiklAQmBRU%252FBildschirmfoto%25202024-05-24%2520um%252010.35.24.png%3Falt%3Dmedia%26token%3D2fb8d92a-c5c9-449b-8179-786765ada10f\&width=768\&dpr=4\&quality=100\&sign=1ac2e12c\&sv=2)
-
-Modification d'un groupe ou d'un champ :
-
-* Double-cliquez sur le groupe ou le champ que vous souhaitez modifier.
-* Modifiez les propriétés que vous souhaitez, telles que le nom, la position, la taille ou les paramètres de type de champ.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FtdvSPyCEdIfj8j30DEe5%252Fimage.png%3Falt%3Dmedia%26token%3Dfaa32e5a-3492-499d-a0af-7fa99a583d09\&width=768\&dpr=4\&quality=100\&sign=865f9003\&sv=2)
-
-Disposition des groupes et champs :
-
-* Faites glisser et déposez des groupes ou des champs pour changer leur ordre ou les placer à l'intérieur ou à l'extérieur d'autres groupes.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fun2twvKa1n8VJrBZzjl3%252FBildschirmfoto%25202024-05-24%2520um%252010.45.28.png%3Falt%3Dmedia%26token%3Dc090597f-b693-4308-b0ac-badec6bec466\&width=768\&dpr=4\&quality=100\&sign=af0174ad\&sv=2)
-
-Enregistrement des modifications :
-
-* N'oubliez pas de sauvegarder vos modifications avant de quitter le Gestionnaire de Mise en Page.
-* Cliquez sur le bouton "Sauvegarder".
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fu9c6MD2mZFuAsXp7n9Ai%252FBildschirmfoto%25202024-05-24%2520um%252010.51.06.png%3Falt%3Dmedia%26token%3D613ef982-9455-4832-b2a5-5644e3bd644c\&width=768\&dpr=4\&quality=100\&sign=fb7f99d5\&sv=2)
-
-En suivant ces étapes, vous pouvez naviguer efficacement dans le Gestionnaire de Mise en Page de DocBits et éditer des groupes ainsi que des champs au sein d'un type de document. Cela vous permet de personnaliser la structure et l'apparence de vos documents selon vos besoins.
+Sélectionnez **Enregistrer** dans l'en-tête lorsque vous avez terminé. Les autres actions de l'en-tête, dont la génération de modèles, les modèles par défaut et l'application d'une mise en page aux origines, sont décrites dans [Enregistrer et appliquer les modifications](save-and-apply-changes.md).

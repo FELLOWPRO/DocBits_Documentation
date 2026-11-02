@@ -1,11 +1,19 @@
 # Recherche de données de référence
 
+## Tutoriel vidéo : données de base et listes de valeurs
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/master-data-lists-admin/v1/fr.mp4" %}
+Sources de données de base, listes de valeurs et paramètres des données de base dans DocBits
+{% endembed %}
+
+La vidéo présente les sources de données de base, les listes de valeurs et les paramètres des données de base d'un type de document.
+
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 
 La **Recherche de données de référence** (barre latérale : **Lookup Master Data**) vous permet de consulter et de gérer les données de référence que DocBits utilise pour valider les données extraites des documents par rapport à votre système ERP. Elle est essentielle pour un PO matching précis, la validation des fournisseurs et la saisie automatique des champs. Ouvrez-la depuis **Paramètres → Traitement des documents → Lookup Master Data**.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Recherche de données de référence"><figcaption><p>Page Recherche de données de référence : sources de données et tableau de données</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-overview-fr.png" alt="Consultation des données de base : sources et tableau fournisseur. Les valeurs et identifiants de l’organisation sont masqués."><figcaption><p>Consultation des données de base : sources et tableau fournisseur. Les valeurs et identifiants de l’organisation sont masqués.</p></figcaption></figure>
 
 ## Sources de données
 
@@ -33,16 +41,16 @@ Les tableaux Fournisseur et Bon de commande comprennent des colonnes telles que 
 
 Cliquez sur **Settings** (icône en forme d'engrenage) en bas à gauche du panneau des sources de données pour ouvrir les paramètres des données de référence.
 
-<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Paramètres de la Recherche de données de référence"><figcaption><p>Paramètres Supplier BOD et suppression des bons de commande</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-master-data-settings-fr.png" alt="Paramètres des données de base : synchronisation des comptes fournisseurs et durée de conservation des bons de commande. Les réglages affichés n’ont pas été modifiés."><figcaption><p>Paramètres des données de base : synchronisation des comptes fournisseurs et durée de conservation des bons de commande. Les réglages affichés n’ont pas été modifiés.</p></figcaption></figure>
 
-### Supplier BOD
+### BOD fournisseur
 
-**Allow Multiple Supplier Accounts Sync**
+**Autoriser la synchronisation de plusieurs comptes fournisseurs**
 
 * **Activé** : un même fournisseur peut avoir plusieurs éléments `<FinancialParty>` dans le BOD (souvent en raison de plusieurs IBAN ou comptes financiers). Toutes les entrées `<FinancialParty>` sont extraites et enregistrées dans la table des fournisseurs, ce qui permet de stocker plusieurs attributs financiers.
 * **Désactivé** : seul le dernier élément `<FinancialParty>` trouvé pour le fournisseur est extrait. Les attributs financiers antérieurs (par exemple des IBAN supplémentaires) sont ignorés et seules les données de la dernière occurrence sont enregistrées.
 
-### Purchase Order Deletion Assistant
+### Assistant de suppression des commandes fournisseur
 
 **Delete Purchase Order After** : choisissez quand les bons de commande clôturés doivent être supprimés. Après la période sélectionnée, les enregistrements sont supprimés automatiquement.
 

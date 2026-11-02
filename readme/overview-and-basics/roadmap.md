@@ -1,5 +1,7 @@
 # DocBits Roadmap
 
+**NOVA R1.1 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
+
 _Planning status as of 7 October 2026. Each release lists the planned
 sandbox date (when customers can test it) and the planned production date. The
 themes describe what is planned for the release, not what has already shipped;

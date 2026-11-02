@@ -15,6 +15,8 @@ Run with either:
 from __future__ import annotations
 
 import os
+import io
+from contextlib import redirect_stdout
 import subprocess
 import sys
 import tempfile
@@ -47,6 +49,13 @@ class _GitRepoTestCase(unittest.TestCase):
         self._orig_repo_root = sync.REPO_ROOT
         sync.REPO_ROOT = self.repo
         sync._page_blob_url_cache.clear()
+        # Unit tests must not depend on the current public sitemap or images.
+        self._live_urls_patcher = unittest.mock.patch.object(sync, '_live_urls', return_value=None)
+        self._live_urls_patcher.start()
+        self._image_map_patcher = unittest.mock.patch.object(sync, '_fetch_page_blob_to_url_map', return_value={})
+        self._image_map_patcher.start()
+        self._stdout = redirect_stdout(io.StringIO())
+        self._stdout.__enter__()
 
         # A placeholder commit outside readme/ so the very first real
         # commit under test has something to diff against.
@@ -66,6 +75,9 @@ class _GitRepoTestCase(unittest.TestCase):
 
     def tearDown(self):
         self._call_endpoint_patcher.stop()
+        self._live_urls_patcher.stop()
+        self._image_map_patcher.stop()
+        self._stdout.__exit__(None, None, None)
         sync.REPO_ROOT = self._orig_repo_root
         self._tmpdir.cleanup()
 

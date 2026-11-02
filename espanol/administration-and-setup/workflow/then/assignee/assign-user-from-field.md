@@ -1,0 +1,48 @@
+# Asignar usuario desde el campo
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_user_from_field_with_fallback_v2-es-es.png" alt="Asignar usuario desde el campo, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+## **Propósito:**
+
+La tarjeta de flujo de trabajo **"Asignar usuario desde el campo con respaldo"** asigna dinámicamente un usuario según el valor encontrado en un campo de documento especificado. Si el campo no contiene un usuario válido, se selecciona un usuario alternativo de una lista predefinida de usuarios disponibles para garantizar que la tarea o acción se asigne correctamente.
+
+## **Componentes de la tarjeta:**
+
+1. **Nombre de campo**
+   * **Descripción:** Especifica el **campo del documento** que contiene la información del usuario que se asignará.
+   * **Detalle:** Este campo se evalúa para determinar qué usuario debe asignarse. Si el campo contiene un usuario válido, se le asignará la tarea a ese usuario. Si el campo está vacío o no es válido, se asignará el usuario alternativo.
+2. **Usuario (Reserva)**
+   * **Descripción:** Especifica el **usuario alternativo** que se asignará si el campo del documento no contiene un usuario válido.
+   * **Detalle:** Se proporciona una lista desplegable de todos los usuarios disponibles para su selección. Este usuario se asignará si el campo del documento está vacío o no contiene un usuario válido.
+
+## **Funcionalidad:**
+
+* **Evaluación de la condición:**\
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
+* **Asignación de usuario basada en campo:**\
+  La tarjeta primero intenta asignar la tarea o acción al usuario identificado en el **Nombre del campo**.
+* **Asignación de usuario alternativo:**\
+  Si el campo no contiene un usuario válido (o está vacío), la tarjeta asigna la tarea al usuario alternativo seleccionado de la lista desplegable **Usuario (alternativa)**.
+
+## **Configuración:**
+
+* **Seleccionar el Field Name:**\
+  Elija el **campo del documento** que especifica el usuario para la asignación.
+* **Seleccionar el usuario alternativo:**\
+  Elija el **usuario alternativo** de la lista desplegable. A este usuario se le asignará la tarea si el campo del documento no contiene un usuario válido.
+
+## **Conclusión:**
+
+La tarjeta de flujo de trabajo **"Asignar usuario desde el campo con respaldo"** garantiza que una tarea o acción siempre se asigne a un usuario válido. Si el usuario del campo del documento no está disponible, el usuario alternativo se asigna automáticamente, proporcionando flexibilidad y garantizando la finalización de la tarea.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Asigne el revisor nombrado según los datos del documento.
+
+**Configuración:** Seleccione el campo `reviewer_name` y el usuario alternativo `Demo Reviewer A`. Proporcione un nombre de usuario de demostración que se pueda resolver en la primera prueba.
+
+**Resultado esperado y contraejemplo:** Un valor de campo válido selecciona ese usuario. Un valor vacío o irresoluble utiliza el respaldo configurado; verificar ambos casos.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.998
+FatturaPA ist die konfigurierte
+italienische Familie. Die
+
+formats_02
+00:00:04.998 --> 00:00:09.968
+Familienbezeichnung bestätigt nicht jede
+FatturaPA-Veröffentlichung oder die
+
+formats_03
+00:00:09.968 --> 00:00:15.459
+Übertragung über SDI. Prüfen Sie das
+Quellschema und die Anforderungen des
+
+formats_04
+00:00:15.459 --> 00:00:16.467
+Empfängers.
+
+workflow_01
+00:00:17.217 --> 00:00:22.523
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:22.523 --> 00:00:29.233
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:29.233 --> 00:00:30.867
+aktiviert ihn nicht.
+
+accept_01
+00:00:31.617 --> 00:00:36.249
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:36.249 --> 00:00:42.379
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:42.379 --> 00:00:45.500
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

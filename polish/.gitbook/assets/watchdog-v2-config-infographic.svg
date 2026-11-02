@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.06" flood-color="#001b3c"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#005cad"/>
+      <stop offset="100%" stop-color="#0075d8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, system-ui, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="16" fill="#f9f9ff"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" rx="16" fill="url(#headerGrad)"/>
+  <rect y="40" width="800" height="16" fill="url(#headerGrad)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700" letter-spacing="0.3">WatchDog Configuration -- 4 Tabs Overview</text>
+
+  <!-- Tab bar background -->
+  <rect x="32" y="72" width="736" height="38" rx="10" fill="#f0f3ff"/>
+
+  <!-- Tab 1: General (active) -->
+  <rect x="36" y="74" width="172" height="34" rx="8" fill="#005cad"/>
+  <text x="122" y="96" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">General</text>
+
+  <!-- Tab 2: Logs -->
+  <rect x="216" y="74" width="172" height="34" rx="8" fill="none"/>
+  <text x="302" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Logs</text>
+
+  <!-- Tab 3: XSLT Templates -->
+  <rect x="396" y="74" width="172" height="34" rx="8" fill="none"/>
+  <text x="482" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">XSLT Templates</text>
+
+  <!-- Tab 4: Export Configs -->
+  <rect x="576" y="74" width="188" height="34" rx="8" fill="none"/>
+  <text x="670" y="96" text-anchor="middle" fill="#44474e" font-size="12" font-weight="600">Export Configs</text>
+
+  <!-- Tab 1 Content: General -->
+  <rect x="32" y="118" width="172" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="32" y="118" width="172" height="200" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <rect x="32" y="118" width="172" height="36" rx="14" fill="#005cad" opacity="0.06"/>
+  <rect x="32" y="140" width="172" height="14" fill="#005cad" opacity="0.06"/>
+  <text x="118" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">General</text>
+
+  <!-- General items -->
+  <g transform="translate(48, 166)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Folder Settings</text>
+  </g>
+  <text x="70" y="188" fill="#44474e" font-size="10">Watch / Success / Export</text>
+
+  <g transform="translate(48, 200)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Document Types</text>
+  </g>
+  <text x="70" y="222" fill="#44474e" font-size="10">PDF, Invoice, PO, etc.</text>
+
+  <g transform="translate(48, 234)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Export Destination</text>
+  </g>
+  <text x="70" y="256" fill="#44474e" font-size="10">Target system selection</text>
+
+  <!-- Tab 2 Content: Logs -->
+  <rect x="216" y="118" width="172" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="216" y="118" width="172" height="200" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <rect x="216" y="118" width="172" height="36" rx="14" fill="#005cad" opacity="0.06"/>
+  <rect x="216" y="140" width="172" height="14" fill="#005cad" opacity="0.06"/>
+  <text x="302" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Logs</text>
+
+  <g transform="translate(232, 166)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Event Monitoring</text>
+  </g>
+  <text x="254" y="188" fill="#44474e" font-size="10">Real-time log stream</text>
+
+  <g transform="translate(232, 200)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Filter by Type/Date</text>
+  </g>
+  <text x="254" y="222" fill="#44474e" font-size="10">Narrow results quickly</text>
+
+  <g transform="translate(232, 234)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">OpenSearch</text>
+  </g>
+  <text x="254" y="256" fill="#44474e" font-size="10">Full-text log search</text>
+
+  <!-- Tab 3 Content: XSLT Templates -->
+  <rect x="396" y="118" width="172" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="396" y="118" width="172" height="200" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <rect x="396" y="118" width="172" height="36" rx="14" fill="#005cad" opacity="0.06"/>
+  <rect x="396" y="140" width="172" height="14" fill="#005cad" opacity="0.06"/>
+  <text x="482" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">XSLT Templates</text>
+
+  <g transform="translate(412, 166)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Template Upload</text>
+  </g>
+  <text x="434" y="188" fill="#44474e" font-size="10">Upload &amp; edit XSLT</text>
+
+  <g transform="translate(412, 200)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Live Validation</text>
+  </g>
+  <text x="434" y="222" fill="#44474e" font-size="10">Test before deploying</text>
+
+  <g transform="translate(412, 234)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Link to Configs</text>
+  </g>
+  <text x="434" y="256" fill="#44474e" font-size="10">Bind to export configs</text>
+
+  <!-- Tab 4 Content: Export Configs -->
+  <rect x="576" y="118" width="192" height="200" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="576" y="118" width="192" height="200" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <rect x="576" y="118" width="192" height="36" rx="14" fill="#005cad" opacity="0.06"/>
+  <rect x="576" y="140" width="192" height="14" fill="#005cad" opacity="0.06"/>
+  <text x="672" y="142" text-anchor="middle" fill="#005cad" font-size="12" font-weight="700">Export Configs</text>
+
+  <g transform="translate(592, 166)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Config List</text>
+  </g>
+  <text x="614" y="188" fill="#44474e" font-size="10">Manage all export configs</text>
+
+  <g transform="translate(592, 200)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Connection Status</text>
+  </g>
+  <text x="614" y="222" fill="#44474e" font-size="10">Live health indicators</text>
+
+  <g transform="translate(592, 234)">
+    <circle cx="6" cy="6" r="4" fill="#005cad" opacity="0.2"/>
+    <circle cx="6" cy="6" r="2" fill="#005cad"/>
+    <text x="16" y="10" fill="#1a1c1e" font-size="11" font-weight="500">Download Config</text>
+  </g>
+  <text x="614" y="256" fill="#44474e" font-size="10">Export JSON for WatchDog</text>
+
+  <!-- Important callout -->
+  <rect x="32" y="330" width="736" height="44" rx="12" fill="#d97706" opacity="0.06"/>
+  <rect x="32" y="330" width="736" height="44" rx="12" fill="none" stroke="#d97706" stroke-opacity="0.15"/>
+  <g transform="translate(50, 344)">
+    <circle cx="10" cy="10" r="10" fill="#d97706" opacity="0.15"/>
+    <text x="10" y="15" text-anchor="middle" fill="#d97706" font-size="13" font-weight="700">!</text>
+  </g>
+  <text x="80" y="358" fill="#d97706" font-size="12" font-weight="700">NEW:</text>
+  <text x="116" y="358" fill="#1a1c1e" font-size="12" font-weight="500">doc_type is now REQUIRED for all export configurations</text>
+
+  <!-- Bottom export methods bar -->
+  <rect x="32" y="388" width="736" height="48" rx="12" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="32" y="388" width="736" height="48" rx="12" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <text x="52" y="410" fill="#44474e" font-size="10" font-weight="600" letter-spacing="0.8">6 EXPORT METHODS</text>
+
+  <!-- Method badges -->
+  <rect x="52" y="416" width="60" height="18" rx="9" fill="#005cad" opacity="0.08"/>
+  <text x="82" y="429" text-anchor="middle" fill="#005cad" font-size="9.5" font-weight="600">Folder</text>
+
+  <rect x="122" y="416" width="80" height="18" rx="9" fill="#005cad" opacity="0.08"/>
+  <text x="162" y="429" text-anchor="middle" fill="#005cad" font-size="9.5" font-weight="600">Infor IDM</text>
+
+  <rect x="212" y="416" width="84" height="18" rx="9" fill="#005cad" opacity="0.08"/>
+  <text x="254" y="429" text-anchor="middle" fill="#005cad" font-size="9.5" font-weight="600">Infor BOD</text>
+
+  <rect x="306" y="416" width="72" height="18" rx="9" fill="#005cad" opacity="0.08"/>
+  <text x="342" y="429" text-anchor="middle" fill="#005cad" font-size="9.5" font-weight="600">ION API</text>
+
+  <rect x="388" y="416" width="82" height="18" rx="9" fill="#005cad" opacity="0.08"/>
+  <text x="429" y="429" text-anchor="middle" fill="#005cad" font-size="9.5" font-weight="600">GLS840MI</text>
+
+  <rect x="480" y="416" width="72" height="18" rx="9" fill="#005cad" opacity="0.08"/>
+  <text x="516" y="429" text-anchor="middle" fill="#005cad" font-size="9.5" font-weight="600">REST API</text>
+</svg>

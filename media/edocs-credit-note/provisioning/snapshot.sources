@@ -1,0 +1,3 @@
+deb [check-valid-until=no] https://snapshot.debian.org/archive/debian/20261004T090000Z/ bookworm main
+deb [check-valid-until=no] https://snapshot.debian.org/archive/debian/20261004T090000Z/ bookworm-updates main
+deb [check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20261004T090000Z/ bookworm-security main

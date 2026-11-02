@@ -1,0 +1,55 @@
+# Dados do pedido na confirmação do pedido
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v1-pt-pt.png" alt="Dados do pedido na confirmação do pedido, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v2-pt-pt.png" alt="Dados do pedido na confirmação do pedido, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v3-pt-pt.png" alt="Dados do pedido na confirmação do pedido, Versão 3" width="634"><figcaption><p>Versão 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_oc_to_po_items_v4-pt-pt.png" alt="Dados do pedido na confirmação do pedido, Versão 4" width="634"><figcaption><p>Versão 4</p></figcaption></figure>
+
+## **Propósito**
+
+Este cartão de fluxo de trabalho foi concebido para comparar campos específicos — **Preço unitário**, **Desconto** ou **Quantidade** — entre uma confirmação de encomenda e uma ordem de compra. Assegura consistência e conformidade com os termos acordados. Com base no resultado da comparação, o cartão permite aos utilizadores escrever texto especificado num campo escolhido quando a condição é avaliada como **verdadeira** ou **falsa**, simplificando o processamento de documentos e reduzindo a intervenção manual.
+
+## **Componentes do cartão**
+
+1. **Dados do pedido**
+   * **Descrição:** Especifica o campo a comparar entre a confirmação de encomenda e a ordem de compra.
+   * **Opções:**
+     * **Preço unitário**: Compara o preço unitário em ambos os documentos.
+     * **Desconto**: Compara a percentagem ou o valor do desconto.
+     * **Quantidade**: Compara a quantidade encomendada.
+2. **Operador**
+   * **Descrição:** Define a condição aplicada durante a comparação.
+   * **Opções:**
+     * **Igual a (=):** Verifica se o valor no campo selecionado corresponde entre a confirmação de encomenda e a ordem de compra.
+     * **Não é igual (≠):** Garante que o valor no campo selecionado difere entre os dois documentos.
+3. **Texto**
+   * **Descrição:** Especifica o texto a escrever no campo de destino aquando da avaliação da condição.
+   * **Detalhe:** Este texto pode incluir notas personalizadas, atualizações de estado ou valores predefinidos.
+4. **Nome do campo**
+   * **Descrição:** Especifica o campo onde o texto será escrito.
+   * **Detalhe:** O campo de destino é selecionado de entre os campos editáveis disponíveis no sistema.
+5. **Resultado da condição**
+   * **Descrição:** Determina quando o texto deve ser escrito, com base no resultado da comparação.
+   * **Opções:**
+     * **True:** Escreve o texto se a condição de comparação for cumprida.
+     * **False:** Escreve o texto se a condição de comparação não for cumprida.
+
+## **Funcionalidade**
+
+* **Avaliação da comparação:** O sistema compara o campo selecionado entre a confirmação de encomenda e a ordem de compra utilizando o operador especificado.
+* **Execução da ação:** Se a condição for avaliada como **verdadeira** ou **falsa**, o texto especificado é escrito no campo designado.
+
+## **Configuração**
+
+* Para configurar este cartão, os utilizadores selecionam primeiro o campo a comparar — **Preço unitário**, **Desconto** ou **Quantidade**. De seguida, escolhem um operador para definir a condição de comparação, como **equals** ou **não é igual**. Os utilizadores especificam o texto a escrever num campo de destino e selecionam quando esta ação deve ocorrer, com base no resultado da condição (**true** ou **false**).
+
+## **Exemplo de cenário**
+
+* Uma confirmação de encomenda indica um preço unitário de 50 $ para um produto, enquanto a ordem de compra especifica um preço de 45 $. Utilizando o operador **Não é igual (≠)**, o cartão identifica a discrepância e escreve o texto "Price Mismatch" num campo designado quando a condição é avaliada como **verdadeira**.
+
+## **Conclusão**
+
+O cartão de fluxo de trabalho "\[Unit Price/Discount/Quantity] in Order Confirmation" oferece uma solução prática para garantir a consistência dos documentos. Ao assinalar automaticamente discrepâncias e ao escrever texto relevante em campos especificados, melhora a eficiência e reduz os erros nos processos de gestão de encomendas.

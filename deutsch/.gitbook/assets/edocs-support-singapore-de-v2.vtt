@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.136
+Für InvoiceNow gibt es Rechnungs- und
+Gutschrifteinträge. InvoiceNow SG ist eine
+
+formats_02
+00:00:06.136 --> 00:00:11.663
+weitere konfigurierte Bezeichnung. Prüfen
+Sie die Profilkennungen für Singapur. Ein
+
+formats_03
+00:00:11.663 --> 00:00:17.874
+nationales Profil und generisches Peppol
+BIS können dieselbe UBL-Syntax verwenden,
+
+formats_04
+00:00:17.874 --> 00:00:20.367
+ohne alle Geschäftsregeln zu teilen.
+
+workflow_01
+00:00:21.117 --> 00:00:26.423
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:26.423 --> 00:00:33.133
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:33.133 --> 00:00:34.767
+aktiviert ihn nicht.
+
+accept_01
+00:00:35.517 --> 00:00:40.149
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:40.149 --> 00:00:46.279
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:46.279 --> 00:00:49.400
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

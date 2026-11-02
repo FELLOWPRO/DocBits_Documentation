@@ -1,6 +1,6 @@
 # Przypisz dokument i utwórz zadanie/powiadomienie dla użytkownika
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-b4ef3c2e3a99-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_user_sequential_v2-pl-pl.png" alt="Przypisz dokument i utwórz zadanie/powiadomienie dla użytkownika, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel**
 

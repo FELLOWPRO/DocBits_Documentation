@@ -1,6 +1,8 @@
 # Porównaj wartości w tabeli
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5f14db09d019-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v1-pl-pl.png" alt="Porównaj wartości w tabeli, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v2-pl-pl.png" alt="Porównaj wartości w tabeli, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

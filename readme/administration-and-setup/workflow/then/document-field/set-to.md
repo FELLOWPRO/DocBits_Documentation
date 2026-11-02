@@ -1,6 +1,6 @@
 # Ustaw na
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-12fec1de4cae-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-pl-pl.png" alt="Ustaw na, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

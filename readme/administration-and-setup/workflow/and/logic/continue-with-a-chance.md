@@ -1,6 +1,6 @@
 # Kontynuuj z określonym prawdopodobieństwem
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-7f04ace44135-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_continue_chance_v2-pl-pl.png" alt="Kontynuuj z określonym prawdopodobieństwem, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 

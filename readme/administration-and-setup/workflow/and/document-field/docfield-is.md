@@ -1,6 +1,8 @@
-# Docfield is
+# Dokumentfeld mit Referenzwert vergleichen
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v1-de-de.png" alt="Dokumentfeld mit Referenzwert vergleichen, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_docfield_operator_value_v2-de-de.png" alt="Dokumentfeld mit Referenzwert vergleichen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -37,3 +39,25 @@ Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie
 ## **Fazit:**
 
 Die Workflow-Karte "DocField Comparison Validation" ist ein robustes Werkzeug für die dynamische Dokumentverarbeitung. Indem sie Aktionen auf Basis von Feldvergleichen automatisiert, optimiert diese Karte Workflows, erhöht die Genauigkeit und unterstützt datengestützte Entscheidungen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann zu verwenden:** Überprüfen Sie Rechnungen über einem definierten Betrag.
+
+**Konfiguration:** Wählen Sie das numerische Feld „Gesamtbetrag“ (`total_amount`), den Operator „Größer als“ (`gt`) und den Referenzwert `1000`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Ein Wert von `1200` erfüllt die Bedingung. `1000` und `900` erfüllen sie nicht. „Größer als“ schließt den Grenzwert `1000` selbst aus.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.
+
+## Admin-Beispielvideo
+
+Die Rechenergebnisse sind erwartete Beispiele; ein Workflow wurde nicht ausgeführt.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v2/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v2/de-theme-v4.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-numeric-comparison-admin/v2/de.txt)

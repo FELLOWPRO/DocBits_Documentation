@@ -1,4 +1,4 @@
-# Support Portal Status
+# Status des Support-Portals
 
 Um Ihnen eine bessere Übersicht über Ihre Anfragen zu geben, hier ist, was jeder Ticketstatus bedeutet und wann Sie ihn sehen werden:
 

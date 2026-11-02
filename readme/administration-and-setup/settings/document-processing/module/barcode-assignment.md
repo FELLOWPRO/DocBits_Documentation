@@ -14,7 +14,7 @@ Sobald die Einstellung aktiviert ist, erscheint ein neuer **Barcode-Button** (ei
 
 Hier sehen Sie das Symbol im Kontext des Validierungs-Bildschirms, neben dem zu prüfenden Dokument:
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Validierungs-Bildschirm mit verfügbarem Barcode-Symbol"><figcaption><p>Der Validierungs-Bildschirm — das Barcode-Symbol (hervorgehoben, rechte Werkzeugleiste) wird nur angezeigt, wenn die Barcode-Zuordnung aktiviert ist.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_validation_screen-de.png" alt="Deutsche Validierungsansicht einer fiktiven Rechnung mit Barcode und QR-Code."><figcaption><p>Deutsche Validierungsansicht einer fiktiven Rechnung mit Barcode und QR-Code.</p></figcaption></figure>
 
 ### Wie Barcodes ausgelesen werden
 
@@ -32,15 +32,15 @@ Welche Barcode-Typen erkannt werden, steuert die Einstellung **Bar-Code / QR-Cod
 2. Klicken Sie auf das **Barcode-Symbol** in der rechten Werkzeugleiste.
 3. Der Dialog **Barcode-Zuordnung** listet jeden von DocBits im Dokument erkannten Barcode auf, dargestellt als `Barcode <n> : <Wert>`.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_dialog.png" alt="Barcode-Zuordnungs-Dialog mit den erkannten Barcodes"><figcaption><p>Der Barcode-Zuordnungs-Dialog listet jeden erkannten Barcode mit einer Auswahlliste zur Wahl des Zielfelds auf.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_dialog-de.png" alt="Dialog zur Zuordnung erkannter Barcodes zu Dokumentfeldern."><figcaption><p>Dialog zur Zuordnung erkannter Barcodes zu Dokumentfeldern.</p></figcaption></figure>
 
 4. Öffnen Sie für jeden Barcode die Auswahlliste und wählen Sie das Feld, in das der Wert übernommen werden soll.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_options.png" alt="Auswahl des Zielfelds für einen Barcode"><figcaption><p>Jeder Barcode kann einem beliebigen Dokumentfeld zugeordnet werden — z. B. Bestellnummer, Rechnungsnummer, Lieferanten-ID.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_options-de.png" alt="Verfügbare Dokumentfelder in der Barcode-Zuordnung."><figcaption><p>Verfügbare Dokumentfelder in der Barcode-Zuordnung.</p></figcaption></figure>
 
 5. Sobald Sie ein Feld auswählen, wird dieses Feld mit dem Wert des Barcodes befüllt.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Barcode dem Feld Bestellnummer zugeordnet"><figcaption><p>Nach Auswahl eines Felds (hier Bestellnummer) wird das Feld mit dem Barcode-Wert befüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-barcode_assignment_field_mapped-de.png" alt="Entwurf einer Barcode-Zuordnung zum Feld Bestellung."><figcaption><p>Entwurf einer Barcode-Zuordnung zum Feld Bestellung.</p></figcaption></figure>
 
 ### Aktivieren
 

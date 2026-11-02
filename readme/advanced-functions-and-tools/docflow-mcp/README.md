@@ -56,7 +56,7 @@ DocFlow MCP bietet **18 Tools** in vier Kategorien:
 
 1. [Richten Sie Ihren MCP-Client ein](setup-and-configuration.md)
 2. Erfahren Sie mehr ueber [Workflow-Tools](workflow-tools.md)
-3. Entdecken Sie die [Card SDK Tools](card-sdk-tools.md)
+3. Entdecken Sie die [Card-SDK-Werkzeuge](card-sdk-tools.md)
 4. Folgen Sie den End-to-End-[Beispielen](examples.md)
 
 {% hint style="info" %}

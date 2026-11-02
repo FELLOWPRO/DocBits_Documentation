@@ -1,4 +1,4 @@
-# Regel Bestellung
+# Regelreihenfolge
 
 Diese Policy wendet die Regeln in der Reihenfolge an, in der sie im Entscheidungsbaum erscheinen, und gibt das Ergebnis der zuerst zutreffenden Regel zurück.
 

@@ -1,28 +1,41 @@
-# Today
+# Heute mit einem Datum vergleichen
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_today_is_isnot_v2-de-de.png" alt="Heute mit einem Datum vergleichen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## **Zweck:**
+## Zweck:
 
-Diese DocBits-Karte vergleicht das heutige Datum mit einem angegebenen Datum und ermöglicht es Workflows, basierend auf der Beziehung zwischen dem aktuellen Datum und dem angegebenen Datum ausgeführt zu werden. Sie ist besonders nützlich für zeitbasierte Automatisierung, Fristenmanagement oder das Auslösen geplanter Aufgaben.
+Diese Workflow-Karte vergleicht das heutige Datum mit einem auf der Karte eingetragenen Datum. Sie kann für Regeln verwendet werden, die erst ab oder nur bis zu einem bestimmten Datum gelten sollen, zum Beispiel für eine Prozessänderung ab einem geplanten Starttermin.
 
-## **Funktionalität:**
+## Bestandteile der Karte:
 
-* **Datumsvergleich:** Diese Karte wertet das heutige Datum im Vergleich zu einem angegebenen Datum aus und verwendet dabei die folgenden Bedingungen:
-  * **Gleich (=):** Prüft, ob das heutige Datum mit dem angegebenen Datum übereinstimmt.
-  * **Ungleich (≠):** Stellt sicher, dass sich das heutige Datum vom angegebenen Datum unterscheidet.
-  * **Größer als (>):** Bestätigt, dass das heutige Datum nach dem angegebenen Datum liegt.
-  * **Größer oder gleich (≥):** Stellt sicher, dass das heutige Datum am oder nach dem angegebenen Datum liegt.
-  * **Kleiner als (<):** Prüft, ob das heutige Datum vor dem angegebenen Datum liegt.
-  * **Kleiner oder gleich (≤):** Stellt sicher, dass das heutige Datum am oder vor dem angegebenen Datum liegt.
-* **Datumseingabe:** Benutzer geben das Datum an, mit dem das heutige Datum verglichen wird.
+1. **Operator**
+   * **Beschreibung:** Wie das heutige Datum mit dem Datum auf der Karte verglichen wird.
+   * **Optionen:**
+     * **Entspricht:** Heute ist das Datum auf der Karte.
+     * **Ungleich:** Heute ist ein beliebiger anderer Tag.
+     * **Größer als:** Heute liegt nach dem Datum auf der Karte.
+     * **Größer oder gleich:** Heute ist das Datum auf der Karte oder später.
+     * **Weniger als:** Heute liegt vor dem Datum auf der Karte.
+     * **Weniger oder gleich:** Heute ist das Datum auf der Karte oder früher.
+2. **Datum**
+   * **Beschreibung:** Das Datum, mit dem heute verglichen wird.
 
-## **Verwendung:**
+## Funktionalität:
 
-Diese Karte eignet sich ideal für Workflows mit Fristen, Erinnerungen oder zeitkritischen Bedingungen und stellt sicher, dass Aktionen basierend auf dem aktuellen Datum ausgeführt oder eingeschränkt werden.
+* **Bedingungsauswertung:** Wenn der Workflow die Karte erreicht, nimmt sie das aktuelle Datum in UTC und vergleicht es mit dem Operator mit dem Datum auf der Karte. Verglichen werden nur die Daten; Uhrzeiten werden ignoriert. Die Daten auf dem Dokument spielen keine Rolle.
+* **Ausführung der Aktion:**
+  * **True-Bedingung:**\
+    Trifft der Vergleich zu, wird der Workflow mit den nächsten Karten fortgesetzt.
+  * **False-Bedingung:**\
+    Trifft er nicht zu, stoppt der Workflow mit einer nicht erfüllten Bedingung.
+* **Fehlende Daten:** Ist auf der Karte kein Datum eingetragen, wertet die Karte die Bedingung nicht aus und meldet die fehlende Eingabe im Workflow-Protokoll.
 
-## **Beispiel-Szenario:**
+## Einrichtung und Konfiguration:
 
-* Ein Benutzer konfiguriert die Karte so, dass sie prüft, ob **heute größer als (>) "2024-11-15"** ist. Ist die Bedingung erfüllt, löst der Workflow eine Folgebenachrichtigung für überfällige Aufgaben aus. Andernfalls wird der Workflow ohne Unterbrechung fortgesetzt.
+* Die Karte kann als And-Bedingung aus der Kategorie **Datum und Uhrzeit** hinzugefügt werden. Danach werden ein Operator und ein Datum ausgewählt.
+* **Beispiel:** Mit **Größer oder gleich** und `2026-11-01` ist die Karte ab dem 1. November 2026 (UTC) erfüllt und am 31. Oktober 2026 nicht erfüllt.
+* Da das Datum in UTC ermittelt wird, kann es um Mitternacht vom lokalen Datum abweichen: In Europa sieht die Karte kurz nach Mitternacht noch den Vortag, in Amerika sieht sie am Abend bereits den nächsten Tag.
 
-Durch die Verwendung der Karte "Today's Date Validation" können Organisationen zeitbasierte Prozesse automatisieren, Fristen effizient einhalten und die Genauigkeit von Workflows wahren.
+## Fazit:
+
+Die Workflow-Karte „Today“ macht das Kalenderdatum zu einer Workflow-Bedingung. Datumsbasierte Regeln, etwa ein Start- oder Enddatum für einen Prozess, können einmal eingerichtet werden und greifen dann automatisch.

@@ -1,7 +1,7 @@
 # E-Rechnungs-Beispiele
 
 {% embed url="https://youtu.be/li8KjWO18eU" %}
-DocBits E-Invoice Tutorial: Process XRechnung & ZUGFeRD/Factur-X, Validate Data & Automate Workflows
+DocBits-Anleitung für E-Rechnungen: XRechnung und ZUGFeRD/Factur-X verarbeiten, Daten validieren und Workflows automatisieren
 {% endembed %}
 
 **XRechnung UBL 1.2:**
@@ -13,7 +13,7 @@ DocBits E-Invoice Tutorial: Process XRechnung & ZUGFeRD/Factur-X, Validate Data 
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-1.2.md" %}
-[xrechnung-1.2.md](xrechnung-1.2.md)
+[XRechnung 1.2](xrechnung-1.2.md)
 {% endcontent-ref %}
 
 **XRechnung UBL 2.0:**
@@ -25,19 +25,17 @@ Wie die Datei exportiert wird:
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-2.0.md" %}
-[xrechnung-2.0.md](xrechnung-2.0.md)
+[XRechnung 2.0](xrechnung-2.0.md)
 {% endcontent-ref %}
 
 **XRechnung UBL 2.1:**
 
 * Beispieldatei:
 
-{% file src="../../../../../../.gitbook/assets/Xrechung_2-1_example.xml" %}
-
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-2.1.md" %}
-[xrechnung-2.1.md](xrechnung-2.1.md)
+[XRechnung 2.1](xrechnung-2.1.md)
 {% endcontent-ref %}
 
 **XRechnung UBL 2.2:**
@@ -49,7 +47,7 @@ Wie die Datei exportiert wird:
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-2.2.md" %}
-[xrechnung-2.2.md](xrechnung-2.2.md)
+[XRechnung 2.2](xrechnung-2.2.md)
 {% endcontent-ref %}
 
 **XRechnung UBL 2.3:**
@@ -61,7 +59,7 @@ Wie die Datei exportiert wird:
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-2.3.md" %}
-[xrechnung-2.3.md](xrechnung-2.3.md)
+[XRechnung 2.3](xrechnung-2.3.md)
 {% endcontent-ref %}
 
 **XRechnung UBL 3.0:**
@@ -73,7 +71,7 @@ Wie die Datei exportiert wird:
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-3.0.md" %}
-[xrechnung-3.0.md](xrechnung-3.0.md)
+[XRechnung 3.0](xrechnung-3.0.md)
 {% endcontent-ref %}
 
 **XRechnung Cross Industry Invoice:**
@@ -85,7 +83,7 @@ Wie die Datei exportiert wird:
 Wie die Datei exportiert wird:
 
 {% content-ref url="xrechnung-cross-industry-invoice.md" %}
-[xrechnung-cross-industry-invoice.md](xrechnung-cross-industry-invoice.md)
+[XRechnung Cross Industry Invoice](xrechnung-cross-industry-invoice.md)
 {% endcontent-ref %}
 
 **FacturX:**
@@ -102,5 +100,5 @@ Wie die Datei exportiert wird:
 Wie die Datei exportiert wird:
 
 {% content-ref url="facturx.md" %}
-[facturx.md](facturx.md)
+[FacturX](facturx.md)
 {% endcontent-ref %}

@@ -1,4 +1,4 @@
-# Nicht gefunden in Lastschrift
+# LN-Fehler „not found in direct debit“
 
 ## **Schritt 1: LN-Konfiguration prüfen**
 

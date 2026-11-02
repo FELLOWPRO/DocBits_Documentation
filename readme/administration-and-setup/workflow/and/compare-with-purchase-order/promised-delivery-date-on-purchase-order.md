@@ -1,6 +1,12 @@
-# Promised Delivery Date on Purchase Order
+# Zugesagter Liefertermin in der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-de-de.png" alt="Zugesagter Liefertermin in der Bestellung, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-de-de.png" alt="Zugesagter Liefertermin in der Bestellung, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-de-de.png" alt="Zugesagter Liefertermin in der Bestellung, Version 4" width="634"><figcaption><p>Version 4</p></figcaption></figure>
+
+Wie das Toleranzfenster berechnet wird, mit Beispielen wie „heute oder morgen“, wird unter [Date Tolerances](../date-tolerances.md) erklärt.
 
 ## **Zweck**
 

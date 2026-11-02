@@ -6,15 +6,14 @@ Sie können wählen, den **Stückpreis** jeder Bestellposition automatisch aus d
 
 ## **Aktivierungsschritte**
 
-1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
+1.  Navigieren Sie zu **Einstellungen → Dokumenttypen**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
-2.  Wählen Sie den gewünschten Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
+2.  Öffnen Sie über das Zahnrad des gewünschten Dokumenttyps dessen Einstellungen.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
-3.  Aktivieren Sie im Abschnitt **Bestellung** die Option **PO-Stückpreis berechnen**.
+    <figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-de.png" alt="Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert."><figcaption><p>Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert.</p></figcaption></figure>
+3.  Aktivieren Sie im Abschnitt **Bestellung** die Option **Berechnung des PO-Einzelpreises**. Die Abbildung zeigt den Schalter, keine ausgeführte Preisneuberechnung.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-po-settings-de.png" alt="Oberer Bereich der aktuellen deutschen Bestelleinstellungen mit Abgleichsoptionen, Einzelpreisberechnung und Toleranzen. Die Schalter zeigen den vorgefundenen Zustand; kein Abgleich oder Export wurde ausgeführt."><figcaption><p>Oberer Bereich der aktuellen deutschen Bestelleinstellungen mit Abgleichsoptionen, Einzelpreisberechnung und Toleranzen. Die Schalter zeigen den vorgefundenen Zustand; kein Abgleich oder Export wurde ausgeführt.</p></figcaption></figure>
 
 ## Wie der Preis berechnet wird
 
@@ -38,11 +37,16 @@ Ein Nettobetrag, der **größer** als der Positionsgesamtbetrag ist, kann kein N
 Der berechnete Preis wird in den Bestell-Snapshot geschrieben, der im Dokument gespeichert ist, und er wird **jedes Mal neu berechnet, wenn das Dokument abgeglichen wird** (Auto PO Match, manueller Abgleich, Abgleich beim Speichern). Ein Dokument, das vor der Änderung der Einstellung abgeglichen wurde, übernimmt daher den neuen Preis beim nächsten Abgleich — ein Neuladen der Bestellung ist nicht erforderlich.
 {% endhint %}
 
-## Beispiel:
+## Rechenbeispiel
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
+Bei einer Menge von 9 und einem Nettopositionsbetrag von 879,84 ergibt sich für „Stückpreis pro = 1“:
 
-In diesem Fall wird der Stückpreis (ohne Rabatt) aus dem Dokument entnommen, während die Bestellung im ERP den Stückpreis mit angewendetem Rabatt speichert. Dies führt zu einer Abweichung im Stückpreis. Mit aktivierter Einstellung wird der Stückpreis stattdessen aus dem Positionsbetrag und der Menge entnommen, sodass beide Seiten übereinstimmen.
+| Grundlage | Rechnung | Stückpreis |
+| --- | --- | --- |
+| Nettobetrag | 879,84 ÷ 9 × 1 | 97,76 |
+| Gesamtbetrag einschließlich 8,5 % Steuer | 954,63 ÷ 9 × 1 | 106,07 |
+
+Ein Vergleich mit einer netto bepreisten Rechnung benötigt in diesem Beispiel den Nettostückpreis 97,76.
 
 ## Verwandte Einstellungen
 

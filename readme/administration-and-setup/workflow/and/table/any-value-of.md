@@ -1,6 +1,8 @@
-# Any Value of
+# Mindestens einen Tabellenwert prüfen
 
-<figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_any_v1-de-de.png" alt="Mindestens einen Tabellenwert prüfen, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_table_column_regex_any_v2-de-de.png" alt="Mindestens einen Tabellenwert prüfen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 

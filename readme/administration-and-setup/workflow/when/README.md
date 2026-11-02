@@ -1,44 +1,55 @@
-# When
+# Wenn
 
+Die Karten in dieser Kategorie, angezeigt in der Bibliothek **Karte hinzufügen** des Workflow Builders:
 
-Die Karten dieser Kategorie im **Add Card**-Picker des Workflow-Builders:
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9e133ac3ffcb-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/workflow_cards_when.png" alt="Workflow Builder card category"><figcaption><p>Die Karten dieser Kategorie.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-2e62c5e0aa4e-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+#### Das „Wann“ in Workflow-Konfigurationen verstehen
 
-#### Das "When" in Workflow-Konfigurationen verstehen
+**Zweck von „Wann“**
 
-**Zweck von "When"**
+* Der Abschnitt „Wenn“ in einer Workflow-Konfiguration definiert die Auslöserbedingungen, die eine bestimmte Workflow-Aktion auslösen. Diese Bedingungen basieren auf festgelegten Kriterien in Bezug auf Dokumentattribute oder Benutzeraktivitäten innerhalb des ERP-Systems.
 
-* Der Abschnitt "When" in einer Workflow-Konfiguration definiert die Auslösebedingungen, die eine bestimmte Workflow-Aktion in Gang setzen. Diese Bedingungen basieren auf festgelegten Kriterien, die sich auf Dokumentattribute oder Benutzeraktivitäten innerhalb des ERP-Systems beziehen.
+**Wie es funktioniert**
 
-**So funktioniert es**
+* In Ihrer Benutzeroberfläche scheint „Wann“ ein Ausgangspunkt zu sein, über den Benutzer verschiedene Triggerkarten auswählen können. Jede Karte gibt Bedingungen an, unter denen nachfolgende Aktionen (definiert im Abschnitt „Und“) ausgeführt werden.
 
-* In Ihrer Oberfläche stellt "When" einen Ausgangspunkt dar, an dem Benutzer verschiedene Auslöser-Karten auswählen können. Jede Karte legt Bedingungen fest, unter denen die nachfolgenden Aktionen (definiert im Abschnitt "And") ausgeführt werden.
+**Dokumenttyp-Bedingungskarten**
 
-**Bedingungskarten für Dokumenttypen**
-
-* Die Karten mit dem Dokumentsymbol im Screenshot sind Varianten von "Document Type"-Bedingungen, die verwendet werden, um Workflows basierend auf der Art des verarbeiteten Dokuments auszulösen. Hier eine Aufschlüsselung der einzelnen abgebildeten Bedingungskarten:
-  * **Document type (Operator) one of (Type)**: Diese Karte löst eine Aktion aus, wenn der Typ eines Dokuments mit einem der in einer Liste angegebenen Typen übereinstimmt. Der Operator kann Optionen wie "ist" oder "ist nicht" umfassen und ermöglicht so einschließende oder ausschließende Bedingungen.
-  * **Document type (Operator) (Type)**: Diese einfachere Variante löst basierend auf einer einzelnen Dokumenttyp-Bedingung aus. Sie prüft typischerweise, ob der Dokumenttyp ein bestimmter Typ "ist" oder "ist nicht", ohne die Möglichkeit, aus mehreren Typen auszuwählen.
+* Die im Screenshot angezeigten Karten mit dem Dokumentsymbol sind Variationen der „Dokumenttyp“-Bedingungen, die zum Auslösen von Workflows basierend auf der Art des verarbeiteten Dokuments verwendet werden. Hier ist eine Aufschlüsselung der einzelnen Arten der angezeigten Bedingungskarten:
+  * **Dokumenttyp (Operator) einer von (Typ)**: Diese Karte löst eine Aktion aus, wenn der Typ eines Dokuments mit einem der angegebenen Typen in einer Liste übereinstimmt. Der Operator kann Optionen wie „ist“ oder „ist nicht“ einschließen, um einschließende oder ausschließliche Bedingungen zu ermöglichen.
+  * **Dokumenttyp (Operator) (Typ)**: Diese einfachere Variante wird basierend auf einer einzelnen Dokumenttypbedingung ausgelöst. Normalerweise wird geprüft, ob es sich bei dem Dokumenttyp um einen bestimmten Typ handelt oder nicht, ohne die Möglichkeit, aus mehreren Typen auszuwählen.
   *
 
-**Celery Beat**
+**Sellerie Beat**
 
-* Die Karte mit dem Uhrsymbol im Screenshot ist eine "Celery Beat"-Bedingung, die verwendet wird, um Workflows basierend auf Datum und Uhrzeit auszulösen.
+* Die Karte mit dem Uhrensymbol im Screenshot ist eine „Celery Beat“-Bedingung, die zum Auslösen von Workflows basierend auf Datum und Uhrzeit verwendet wird.
 
-#### Einrichten einer "When"-Auslöser-Karte
+#### Einrichten einer „Wann“-Triggerkarte
 
-1. **Auswahl des Bedingungstyps**: Benutzer beginnen mit der Auswahl eines Bedingungstyps, der für den zu automatisierenden Workflow relevant ist. In diesem Fall stehen Dokumenttypen im Mittelpunkt.
-2. **Festlegen des Operators**: Benutzer müssen den logischen Operator bestimmen – etwa "ist" oder "ist nicht" –, der die Grundlage für den Vergleich der tatsächlichen Dokumenttypen mit den definierten Bedingungen bildet.
-3. **Angeben der Dokumenttypen**: Je nach Karte können Benutzer einen oder mehrere Dokumenttypen auswählen, die den Workflow auslösen, wenn Dokumente dieser Typen verarbeitet werden.
-4. **Abschließen des Auslösers**: Sobald die Bedingung eingerichtet ist, bildet sie die Grundlage für das Auslösen bestimmter, im Workflow definierter Aktionen. Erfüllt ein Dokument die festgelegte Bedingung, werden die definierten Aktionen automatisch in Gang gesetzt.
+1. **Auswahl des Bedingungstyps**: Benutzer beginnen mit der Auswahl eines Bedingungstyps, der für den Workflow relevant ist, den sie automatisieren möchten. In diesem Fall stehen Dokumenttypen im Mittelpunkt.
+2. **Definieren des Operators**: Benutzer müssen den logischen Operator (z. B. „ist“ oder „ist nicht“) festlegen, der die Grundlage für den Vergleich tatsächlicher Dokumenttypen mit den definierten Bedingungen bildet.
+3. **Dokumenttypen festlegen**: Je nach Karte können Benutzer einen oder mehrere Dokumenttypen auswählen, die den Workflow auslösen, wenn Dokumente dieser Typen verarbeitet werden.
+4. **Finalisieren des Auslösers**: Sobald die Bedingung eingerichtet ist, wird sie zur Grundlage für das Auslösen bestimmter im Workflow definierter Aktionen. Erfüllt ein Dokument die eingestellte Bedingung, werden die definierten Aktionen automatisch ausgelöst.
 
 #### Praktische Anwendung
 
-In der Praxis sind diese Auslöser-Karten entscheidend für die Automatisierung von Prozessen wie Freigaben, Benachrichtigungen oder jedem Vorgang, der vom Typ des bearbeiteten Dokuments abhängt. Wenn ein Dokumenttyp beispielsweise eine "Rechnung" "ist" und die in der "When"-Karte festgelegten Bedingungen erfüllt, kann der Workflow das Dokument automatisch zur Zahlungsabwicklung weiterleiten.
+In der Praxis sind diese Triggerkarten von entscheidender Bedeutung für die Automatisierung von Prozessen wie Genehmigungen, Benachrichtigungen oder anderen Verfahren, die von der Art des bearbeiteten Dokuments abhängen. Wenn es sich bei einem Dokumenttyp beispielsweise um eine „Rechnung“ handelt und er den auf der Karte „Wann“ festgelegten Bedingungen entspricht, leitet der Workflow das Dokument möglicherweise automatisch zur Zahlungsabwicklung weiter.
 
-Diese Konfiguration stellt sicher, dass Workflows nicht nur effizient, sondern auch auf die spezifischen betrieblichen Anforderungen der Organisation zugeschnitten sind, wodurch manuelle Kontrolle reduziert und die Dokumentenbearbeitung beschleunigt wird.
+Diese Einrichtung stellt sicher, dass Arbeitsabläufe nicht nur effizient, sondern auch auf die spezifischen betrieblichen Anforderungen der Organisation zugeschnitten sind, wodurch die manuelle Kontrolle reduziert und die Prozesse zur Dokumentenbearbeitung beschleunigt werden.
 
-Zusammengefasst geht es beim "When"-Teil Ihrer Workflow-Konfiguration darum, die Voraussetzungen für automatisierte Aktionen auf Basis bestimmter, vordefinierter Bedingungen zu schaffen. Es ist ein leistungsstarkes Werkzeug, um sicherzustellen, dass Ihr ERP-System dynamisch auf die Anforderungen des Unternehmens reagiert und sowohl die Produktivität als auch die Genauigkeit im Dokumentenmanagement steigert.
+Zusammenfassend geht es beim „Wann“-Teil Ihrer Workflow-Konfiguration darum, die Voraussetzungen für automatisierte Aktionen auf der Grundlage spezifischer, vordefinierter Bedingungen zu schaffen. Es handelt sich um ein leistungsstarkes Tool, das sicherstellt, dass Ihr ERP-System dynamisch auf die Anforderungen des Unternehmens reagiert und so sowohl die Produktivität als auch die Genauigkeit der Dokumentenverwaltung steigert.
+
+[Variablenänderungs- und Webhook-Ereignis-Trigger-Referenz](../cards-overview/logic-cards-guide.md).
+
+<!-- workflow-card-example-celery_beat-20261021 -->
+
+### Geplante Verarbeitung
+
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-card-extra-59699b0c27d3-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+
+`CELERY_BEAT` · Version 2
+
+Verwenden Sie einen geplanten Auslöser für Dokumente, die seit der vorherigen Ausführung geändert wurden. Wählen Sie für einen täglichen Demo-Zeitplan Minute `0`, Stunde `9` und die angebotenen Tages-/Monatswerte aus. Überprüfen Sie die konfigurierte Scheduler-Zeitzone und den nächsten geplanten Lauf. Dieser Auslöser ist kein Beweis dafür, dass unveränderte Dokumente erneut verarbeitet werden.

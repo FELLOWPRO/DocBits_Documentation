@@ -4,7 +4,7 @@ Die Seite **Infrastruktur** bietet Administratoren eine aktuelle Übersicht auf 
 
 > **Zugriff:** Die Infrastruktur ist eine reine Administratorenseite. Öffnen Sie **Einstellungen → Organisation & Zugriff → Infrastruktur**.
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Infrastructure page with the Topology tab open"><figcaption><p>Die Seite „Infrastruktur", Registerkarte „Topologie"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-infrastructure_overview-de.png" alt="Infrastrukturübersicht in deutscher Sprache."><figcaption><p>Infrastrukturübersicht in deutscher Sprache.</p></figcaption></figure>
 
 Die Seite ist in drei Registerkarten unterteilt:
 
@@ -18,7 +18,7 @@ Die Seite ist in drei Registerkarten unterteilt:
 
 Die Registerkarte „Topologie" stellt die gesamte DocBits-Plattform als Diagramm dar, gruppiert in Ebenen – **Edge / Web**, **Core API**, **Import**, **Hintergrunddienste**, **Datenspeicher** und **Authentifizierung**. Jedes Kästchen ist eine Komponente (die Web-App/CDN, das API-Gateway, der OCR-Worker, die Datenbank usw.).
 
-<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topology diagram with region badges"><figcaption><p>Jede Komponente ist mit der Region gekennzeichnet, in der sie läuft</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topologiediagramm mit Regionskennzeichnungen"><figcaption><p>Jede Komponente ist mit der Region gekennzeichnet, in der sie läuft</p></figcaption></figure>
 
 ### Regionserkennung
 
@@ -49,11 +49,11 @@ Komponenten, die zu einem optionalen Modul gehören (Volltextsuche, DocFlow, Aut
 
 Die Registerkarte „Verarbeitung" zeigt die Pipeline der Dokumentenverarbeitung für **Ihre Organisation** – wann jeder Schritt zuletzt ausgeführt wurde und ob die Arbeit fließt oder sich staut.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Processing tasks table with status badges"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_processing-de.png" alt="Deutsche Registerkarte Verarbeitung mit Letzte Ausführung und Status"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
 
 | Spalte | Beschreibung |
 |--------|-------------|
-| **Prozess** | Der Verarbeitungsschritt – Dokumentenverarbeitung, OCR, TR-OCR, Barcode-Split, Barcode-Extraktion, Extraktion, PO-Matching. |
+| **Verarbeitung** | Der Verarbeitungsschritt – Dokumentenverarbeitung, OCR, TR-OCR, Barcode-Split, Barcode-Extraktion, Extraktion, PO-Matching. |
 | **Letzte Ausführung** | Wie lange es her ist, dass der Schritt zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen. *„Nie ausgeführt"* bedeutet, dass noch kein Dokument diesen Schritt erreicht hat. |
 | **Status** | Eine Ampelmarkierung (siehe unten). |
 
@@ -71,7 +71,7 @@ Fehler und *In Bearbeitung* sind unabhängige Signale, sodass ein Schritt beide 
 
 Die Registerkarte „Geplante Aufgaben" listet die wiederkehrenden Hintergrundaufgaben auf, die DocBits am Laufen halten (Cache-Aktualisierungen, Statuswarnungen, Dokument-Timeouts, ausgehende Synchronisierungen und mehr), und bestätigt, dass jede davon pünktlich ausgelöst wird.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Scheduled tasks table"><figcaption><p>Wiederkehrende Hintergrundaufgaben und ihr Zeitplanstatus</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_scheduled-de.png" alt="Deutsche Registerkarte Geplante Aufgaben mit Ausführungszeiten und Planmäßig-Status"><figcaption><p>Wiederkehrende Hintergrundaufgaben und ihr Zeitplanstatus. Technische Aufgabennamen werden vom Produkt auf Englisch angezeigt.. Technische Aufgabennamen werden vom Produkt auf Englisch angezeigt.</p></figcaption></figure>
 
 | Spalte | Beschreibung |
 |--------|-------------|

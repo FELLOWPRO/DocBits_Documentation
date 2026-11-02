@@ -1,4 +1,4 @@
-# Cost Invoice - Export
+# Kostenrechnung – Export
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28 (1).png" alt=""><figcaption></figcaption></figure>
 

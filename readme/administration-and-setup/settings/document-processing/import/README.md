@@ -63,3 +63,32 @@ Revise la suborganización, la carpeta, el buzón compartido opcional, la carpet
 ### Registros de importación
 
 Los registros de conexión ayudan a investigar problemas de comunicación; los registros de importación muestran resultados anteriores. El registro agregado de la sección de correo abarca las conexiones configuradas. Puede filtrar por asunto o remitente, ordenar por los encabezados y cambiar el orden de las columnas. Investigue el mensaje antes de repetir la importación.
+
+
+## Videotutorial: Bandeja de entrada y búsqueda de errores
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/es.mp4" %}
+Bandeja de entrada y búsqueda de errores
+{% endembed %}
+
+[Ver con subtítulos y capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/email-import-admin/v2/es.html)
+
+Algunas etiquetas nativas pueden permanecer en otro idioma. Se conservan los identificadores técnicos de los campos.
+
+En configuración e importación, utilizo la dirección entrante de DocBits en este ejemplo. Un buzón conectado directamente es un método de importación distinto. Para la formación, trabajo en una organización de demostración propia con facturas sintéticas. Las notificaciones permanecen desactivadas.
+
+Primero compruebo la dirección de recepción mostrada y el alcance. La dirección pertenece exactamente a esta organización y a su entorno. Para otra empresa o un entorno de producción, siempre utilizo la dirección que se muestra realmente allí.
+
+Aquí restrinjo la entrada a nuestro remitente de prueba aprobado. Solo selecciono la asignación a una suborganización si pertenece al proceso previsto. Guardo la configuración y la abro de nuevo. El remitente permitido se ha mantenido; los correos de respuesta automática siguen desactivados en esta formación.
+
+<figure><img src="../../../../.gitbook/assets/admin-save-es-accounting-email-v2.png" alt="Remitente permitido guardado con las notificaciones desactivadas"><figcaption><p>Remitente permitido guardado con las notificaciones desactivadas</p></figcaption></figure>
+
+Para esta formación, se ha enviado un mensaje de prueba directamente al procesamiento de correos entrantes de DocBits. Esta prueba no confirma la entrega de correo externo. En el registro, compruebo el asunto, el remitente y el archivo adjunto importado. Después reviso el documento que se ha creado.
+
+Abro el documento correspondiente y comparo el archivo adjunto PDF con la factura en DocBits. El nombre del archivo, el número de factura, el proveedor y el importe deben coincidir. Una importación exitosa no dice nada sobre una aprobación o un registro en el ERP.
+
+Una segunda prueba controlada proviene de un remitente no autorizado. En el registro, busco específicamente esta entrada y activo el filtro de errores. Los detalles nombran al remitente rechazado. Compruebo la causa utilizando el asunto y el identificador de seguimiento, en lugar de activar la importación varias veces.
+
+En un caso real, primero aclaro si este remitente está siquiera autorizado. Un cambio aprobado en la lista de remitentes se guarda y se comprueba de nuevo. Después, verifico una nueva entrada de prueba única hasta el documento creado. Para errores técnicos, entrego el identificador de seguimiento y el mensaje de error concreto.
+
+<figure><img src="../../../../.gitbook/assets/admin-error-es-accounting-email-v2.png" alt="Importación fallida con adjunto, motivo e identificador de seguimiento"><figcaption><p>Importación fallida con adjunto, motivo e identificador de seguimiento</p></figcaption></figure>

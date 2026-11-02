@@ -68,7 +68,7 @@ Esta guía le explica cómo conectar **ClickHouse** a **Power BI Desktop** media
 
 #### 6. Activar la actualización programada (opcional)
 
-<mark style="color:red;">**Nota:**</mark> **Requiere Power BI Pro o Premium + Gateway**
+La actualización programada depende de la licencia o capacidad del área de trabajo, del conector y del modo de conexión. Para esta conexión ODBC, configure una puerta de enlace accesible con el controlador, el DSN y las credenciales adecuados. Consulte los requisitos actuales en la documentación oficial.
 
 * Para mantener sus informes sincronizados con ClickHouse:
 * Publique su archivo `.pbix` en el **servicio de Power BI**.
@@ -81,3 +81,9 @@ Esta guía le explica cómo conectar **ClickHouse** a **Power BI Desktop** media
 #### 7. Ejemplos de paneles y vistas de datos
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Ejemplo de panel de Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Ejemplo de panel de Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Ejemplo de panel de Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Ejemplo de panel de Power BI 4"><figcaption></figcaption></figure></div>
+
+[Documentación oficial — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Documentación oficial — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Documentación oficial — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

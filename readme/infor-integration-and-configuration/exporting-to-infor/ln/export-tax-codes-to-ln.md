@@ -11,7 +11,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 1.  Ve a **Ajustes** -> **Procesamiento de documentos** -> **Lista de valores**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-es.png" alt="Listas de valores de DocBits; los nombres específicos de la organización están ocultos."><figcaption><p>Listas de valores de DocBits; los nombres específicos de la organización están ocultos.</p></figcaption></figure>
 2.  Haz clic en **Nuevo**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -32,7 +32,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
     * Si tienes múltiples valores, puedes hacer clic en **Añadir más valores** para agregarlos.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-es.png" alt="Formulario de un valor nuevo: suborganización, sinónimos y traducciones. No se introdujo ni guardó ningún valor; la selección de idioma corresponde a su traducción."><figcaption><p>Formulario de un valor nuevo: suborganización, sinónimos y traducciones. No se introdujo ni guardó ningún valor; la selección de idioma corresponde a su traducción.</p></figcaption></figure></div>
 
     * **NOTA:** Puedes encontrar los Códigos de Impuesto en LN bajo: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -42,7 +42,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 1.  Navega a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Elige el menú **Campos** correspondiente al Tipo de Documento donde deseas agregar los campos.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -64,7 +64,7 @@ Esta guía te guiará a través del proceso de configuración para asegurar que 
 
 1.  Ve a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Abre el menú **Editar diseño** para el Tipo de Documento que deseas editar.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>
@@ -101,7 +101,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 1.  Ve a **Ajustes** -> **Procesamiento de documentos** -> **Lista de valores**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-list-of-values-es.png" alt="Listas de valores de DocBits; los nombres específicos de la organización están ocultos."><figcaption><p>Listas de valores de DocBits; los nombres específicos de la organización están ocultos.</p></figcaption></figure>
 2.  Haz clic en **Nuevo**.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_2.png" alt=""><figcaption></figcaption></figure>
@@ -122,7 +122,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
     * Si tienes múltiples valores, puedes hacer clic en **Añadir más valores** para agregarlos.
 
-    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/TaxCodes_27.png" alt=""><figcaption></figcaption></figure></div>
+    <div><figure><img src="../../../.gitbook/assets/TaxCodes_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/site-extra-list-value-new-es.png" alt="Formulario de un valor nuevo: suborganización, sinónimos y traducciones. No se introdujo ni guardó ningún valor; la selección de idioma corresponde a su traducción."><figcaption><p>Formulario de un valor nuevo: suborganización, sinónimos y traducciones. No se introdujo ni guardó ningún valor; la selección de idioma corresponde a su traducción.</p></figcaption></figure></div>
 
     * **NOTA:** Puedes encontrar los Códigos de Impuesto en LN bajo: **Common** → **Taxation** → **Master Data** → **Tax Codes** → **Tax Codes by Country**
 
@@ -132,7 +132,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 1.  Navega a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Elige el menú **Campos** correspondiente al Tipo de Documento donde deseas agregar los campos.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_7.png" alt=""><figcaption></figcaption></figure>
@@ -154,7 +154,7 @@ Después de subir un nuevo documento a DocBits con la configuración de document
 
 1.  Ve a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**.
 
-    <figure><img src="../../../.gitbook/assets/TaxCodes_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 2.  Abre el menú **Editar diseño** para el Tipo de Documento que deseas editar.
 
     <figure><img src="../../../.gitbook/assets/TaxCodes_19.png" alt=""><figcaption></figcaption></figure>

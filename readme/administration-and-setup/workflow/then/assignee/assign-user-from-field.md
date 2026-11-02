@@ -1,6 +1,6 @@
 # Attribuer un utilisateur à partir du champ
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-a30b121432e4-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_user_from_field_with_fallback_v2-fr-fr.png" alt="Attribuer un utilisateur à partir du champ, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 

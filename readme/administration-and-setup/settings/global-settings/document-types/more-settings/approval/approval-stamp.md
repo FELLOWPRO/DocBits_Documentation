@@ -1,39 +1,27 @@
 # Cachet d'approbation
 
-## **Aperçu :**
+Un cachet d'approbation est une annotation du flux d'approbation lorsque l'option est activée pour ce type de document. Il aide la personne chargée de la validation à vérifier qui a approuvé un document et quand. Vérifiez l'annotation et le résultat PDF avec une facture de test dans le processus réellement utilisé par votre organisation.
 
-Cette fonctionnalité ajoute automatiquement un cachet d'approbation à un document lorsqu'il est approuvé dans l'écran d'approbation. Si un document contient un cachet d'approbation, il sera inclus lors de l'**exportation vers IDM**.
+## Trouver l'option
 
-## Activation de la fonctionnalité Cachet d'approbation
+1. Avec un compte administrateur, ouvrez **Types de Documents** dans les paramètres d'administration. Trouvez le type à configurer, par exemple **Facture**, et sélectionnez l'**icône d'engrenage** sur sa carte. L'engrenage ouvre **Plus de paramètres** pour ce type de document.
 
-Pour activer la fonctionnalité Cachet d'approbation, suivez ces étapes :
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-86-document-type-card-fr-20261031.png" alt="Carte Facture de l'interface française actuelle avec Activer, Extraction et l'engrenage de Plus de paramètres"><figcaption><p>Carte Facture réelle dans Dev en français. L'engrenage ouvre Plus de paramètres ; aucun contrôle n'a été modifié.</p></figcaption></figure>
 
-1.  Allez dans **Paramètres** → **Paramètres Globaux** → **Types de documents**.
+   **Activer** contrôle la disponibilité du type de document et **Extraction** son mode d'extraction. Les liens au bas de la carte ouvrent des espaces distincts : **Plans**, **Champs**, **Tables**, **Règles de validation**, **Règles de transformation**, **Scénarios**, **Formation du modèle**, **E-Doc**, **Sous-types de documents** et **Journaux**. Les liens disponibles dépendent des modules et des réglages du type. Pour accéder au cachet, utilisez l'engrenage.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_1_fr.png" alt=""><figcaption></figcaption></figure>
-2.  **Sélectionnez le Type de Document** pour lequel vous souhaitez activer le cachet d'approbation et cliquez sur **Plus de Paramètres**.
+2. Dans **Plus de paramètres**, dépliez **Approbation et rejet**. Repérez **Cachet d'approbation** à côté de **Approuver avant l'exportation**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation**. L'image montre le réglage existant du cachet **désactivé** ; ce réglage peut être différent dans votre organisation. Elle ne montre pas de document approuvé.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_2_fr.png" alt=""><figcaption></figcaption></figure>
-3.  Dans la section **Approbation**, activez l'option **Cachet d'approbation**.
+   <figure><img src="../../../../../../.gitbook/assets/dbdc-86-approval-stamp-panel-fr-20261031.png" alt="Section française actuelle Approbation et rejet de Facture avec Cachet d'approbation désactivé et les autres options du flux"><figcaption><p>Vue réelle d'Approbation et rejet dans Dev en français. Les états des contrôles ont uniquement été consultés.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_3_fr.png" alt=""><figcaption></figcaption></figure>
+   **Approuver avant l'exportation**, **Approuver avant l'exportation V2**, **Deuxième approbation avant l'exportation** et **Historique de l'approbation** sont des réglages du flux distincts du cachet. Les liens de conception ouvrent les éditeurs des formulaires d'approbation, d'examen ou de rejet correspondants. Il n'est pas nécessaire d'ouvrir ces éditeurs pour consulter le réglage du cachet.
 
-## Après activation :
+3. Modifiez **Cachet d'approbation** seulement après avoir convenu dans votre organisation du fonctionnement des approbations et des exports. **La modification du commutateur enregistre immédiatement le réglage.** Conservez une trace de l'état précédent afin de vérifier son effet sur une facture de test.
 
-Une fois la fonctionnalité activée, tout document en état "d'approbation en attente" recevra automatiquement un cachet d'approbation une fois qu'il sera approuvé. Le cachet inclura le logo "Approved", le nom de l'utilisateur qui a approuvé le document, et l'heure à laquelle le document a été approuvé.
+## Vérifier une approbation
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalSettings_4_fr.png" alt=""><figcaption></figcaption></figure>
+Envoyez une facture synthétique de ce type de document dans le flux d'approbation configuré. À l'étape d'approbation de ce flux, approuvez-la avec un compte de test autorisé. Rouvrez le document approuvé et vérifiez que l'annotation contient le nom et la date attendus. Examinez également le PDF téléchargé que votre processus utilise réellement. Si le cachet est absent, vérifiez le type de document, le statut d'approbation, le réglage et la configuration d'export.
 
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_5.png" alt=""><figcaption></figcaption></figure>
+Un cachet d'approbation est distinct de la **Deuxième approbation** et de l'**Historique de l'approbation**. Activer l'un ne prouve pas que les autres sont configurés. Les actions de téléchargement disponibles dans le tableau de bord et le format d'export IDM dépendent de l'environnement et n'ont pas été vérifiés pour cette page ; ce guide ne promet donc pas de libellés précis dans le menu de téléchargement ni de sortie IDM automatique.
 
-### Téléchargement de PDFs avec ou sans le **Cachet d'approbation** <a href="#id-4.-downloading-pdfs-with-or-without-annotations" id="id-4.-downloading-pdfs-with-or-without-annotations"></a>
-
-* Si un document a un cachet d'approbation, vous pouvez choisir de télécharger le PDF soit avec, soit sans le cachet d'approbation.
-* Pour ce faire, allez dans le **Tableau De Bord**.
-* Cliquez sur les **trois points** dans la colonne **Actions**.
-*   Sélectionnez l'une des deux options de téléchargement disponibles :
-
-    * **Télécharger avec Annotations**
-    * **Télécharger sans Annotations**
-
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_6_fr.png" alt="" width="231"><figcaption></figcaption></figure>
+Les deux captures montrent des vues réelles de Dev en français. Aucun commutateur n'a été modifié et aucun document n'a été approuvé ni exporté pendant cette vérification. Le résultat final avec cachet nécessite une facture synthétique approuvée dédiée au test.

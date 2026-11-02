@@ -1,4 +1,4 @@
-root: ./docbits/
+root: ./
 
 redirects:
     administration-and-setup/setup/watchdog-installation: administration-and-setup/setup/watchdog/watchdog-installation.md

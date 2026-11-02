@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1050" viewBox="0 0 2000 1050" role="img" aria-labelledby="title desc">
+<title id="title">Exporter depuis DocBits</title>
+<desc id="desc">Vérifiez séparément la préparation, la transmission et le feedback. Un document ou une approbation enregistré ne prouve pas la réussite de l&#x27;exportation. S&#x27;il y a des erreurs, lisez d&#x27;abord les commentaires.</desc>
+<rect width="2000" height="1050" fill="white"/>
+<text x="90" y="69.68" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#126a8a">DOCBITS / APERÇU DU PROCESSUS</text>
+<text x="90" y="149.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#1c1d1e">Exporter depuis DocBits</text>
+<text x="90" y="208.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#6a6f72">Vérifiez séparément la préparation, la transmission et le feedback.</text>
+<rect x="90" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="116" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">01</text>
+<text x="116" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">Exigences</text>
+<text x="116" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">Vérifiez les données et</text>
+<text x="116" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">les approbations</text>
+<text x="116" y="578.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">requises.</text>
+<polyline points="510,485 541,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="541,485 527.8362615716444,492.19138307906303 527.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="556" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="582" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">02</text>
+<text x="582" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">Choisissez une</text>
+<text x="582" y="469.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">destination</text>
+<text x="582" y="535.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">Vérifiez la destination de</text>
+<text x="582" y="579.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">l&#x27;exportation pour le type</text>
+<text x="582" y="623.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">et l&#x27;organisation.</text>
+<polyline points="976,485 1007,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1007,485 993.8362615716444,492.19138307906303 993.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="1022" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1048" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">03</text>
+<text x="1048" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">Transférer des</text>
+<text x="1048" y="469.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">données</text>
+<text x="1048" y="535.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">Déclenchez l’itinéraire</text>
+<text x="1048" y="579.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">d’exportation prévu.</text>
+<polyline points="1442,485 1473,485" fill="none" stroke="#126a8a" stroke-width="4"/>
+<polygon points="1473,485 1459.8362615716444,492.19138307906303 1459.8362615716444,477.80861692093697" fill="#126a8a"/>
+<rect x="1488" y="315" width="420" height="340" rx="14" fill="white" stroke="#d5dadc" stroke-width="2"/>
+<text x="1514" y="366.32" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#126a8a">04</text>
+<text x="1514" y="424.06" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#1c1d1e">Suivre le résultat</text>
+<text x="1514" y="490.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">Vérifiez l&#x27;état, la réponse</text>
+<text x="1514" y="534.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#6a6f72">et le système cible.</text>
+<rect x="90" y="815" width="1820" height="150" rx="14" fill="#e9f4fa" stroke="none" stroke-width="2"/>
+<text x="118" y="868.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">Un document ou une approbation enregistré ne prouve pas la réussite de l&#x27;exportation. S&#x27;il y a des erreurs, lisez d&#x27;abord les</text>
+<text x="118" y="909.78" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#126a8a">commentaires.</text>
+<text x="90" y="1019.04" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#6a6f72">Explication schématique · Le processus et les options dépendent de votre configuration.</text>
+</svg>

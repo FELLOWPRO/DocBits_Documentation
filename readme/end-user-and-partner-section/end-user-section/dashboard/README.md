@@ -25,7 +25,7 @@ L’utilisatrice et le bureau sont générés par IA. Les manipulations et les r
 
 ## Visite complète du tableau de bord
 
-La cliente fictive de Paris présente la recherche combinée avec AND, les filtres de statut, l’aide à la recherche, les paramètres des colonnes, les statistiques et l’actualisation. L’interface française est enregistrée dans DocBits avec des données de test synthétiques. Le personnage et la voix sont générés par IA.
+La cliente de Paris présente la recherche combinée avec AND, les filtres de statut, l’aide à la recherche, les paramètres des colonnes, les statistiques et l’actualisation.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/dashboard-tour-customer/v4/fr.mp4" %}
 
@@ -41,7 +41,9 @@ La cliente fictive de Paris présente la recherche combinée avec AND, les filtr
 
 ## Rechercher et filtrer les documents
 
-Saisissez un nom de document, un numéro de facture ou une autre valeur métier, puis appuyez sur **Entrée**. L’icône de filtre de la recherche permet de choisir le **Statut**, la personne assignée et les documents nécessitant un redémarrage. Cliquez sur **Appliquer**. Supprimez des filtres individuels ou effacez les filtres si un document semble manquer. Les onglets de types de document et les vues enregistrées limitent aussi la liste.
+Saisissez un nom de document, un numéro de facture ou une autre valeur métier, puis appuyez sur **Entrée**. L’icône **Filtres** (trois curseurs) à l’extrémité droite de la barre de recherche permet de choisir le **Statut**, la personne **Assigné à** et **Redémarrage nécessaire** ; confirmez avec **Appliquer**. Supprimez des filtres individuels ou effacez les filtres si un document semble manquer. Les onglets de types de document et les vues enregistrées limitent aussi la liste.
+
+L’icône **éclair** au début du champ de recherche ouvre le sélecteur de champs. Il affiche d’abord les **Filtres rapides** — des recherches prêtes à l’emploi telles que **Échu**, **Bientôt dû**, **Assigné à moi**, **Boîte de réception du jour**, **En attente de validation** ou **Documents électroniques** — puis tous les champs interrogeables. La sélection insère la condition correspondante dans le champ de recherche.
 
 La recherche propose des filtres structurés, une vue de requête directe et une aide sur les champs et la syntaxe. Reprenez les noms de champ et les exemples de cette aide. Les noms techniques des champs ne changent pas avec la langue. Les fonctions avancées dépendent des capacités de recherche activées.
 
@@ -59,7 +61,7 @@ Si le regroupement est disponible, sélectionnez un champ au-dessus du tableau. 
 
 Le bouton **+** à côté des onglets permet d’afficher d’autres types de document. Réorganisez les onglets en les faisant glisser. Retirer un onglet modifie uniquement la vue et ne supprime aucun document.
 
-Ouvrez l’engrenage, puis les paramètres des colonnes. Déplacez les colonnes entre les listes masquées et visibles et faites glisser les colonnes visibles pour les ordonner. Vous pouvez aussi ajouter les champs d’un type de document. Voir [Modifier les colonnes de document](change-document-columns.md).
+Ouvrez l’engrenage **Paramètres avancés** à droite de la barre de recherche, puis le bouton **Paramètres de colonnes** de son menu. Déplacez les colonnes entre les listes masquées et visibles et faites glisser les colonnes visibles pour les ordonner. Vous pouvez aussi ajouter les champs d’un type de document. Voir [Modifier les colonnes de document](change-document-columns.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard-columns-fr.png" alt="Choisissez et ordonnez les informations affichées dans les paramètres des colonnes."><figcaption><p>Choisissez et ordonnez les informations affichées dans les paramètres des colonnes.</p></figcaption></figure>
 
@@ -75,7 +77,7 @@ Cochez plusieurs documents et ouvrez le menu de l’en-tête pour les actions gr
 
 ## Enregistrer un tableau de bord personnel
 
-Ouvrez le bouton bleu de vue sous la recherche et créez un nouveau tableau de bord. Donnez-lui un nom et choisissez une visibilité privée, pour tous ou pour certains groupes et utilisateurs. Enregistrez les filtres, le tri et les colonnes pour les tâches récurrentes.
+Ouvrez le bouton de vue sous la recherche et choisissez **Créer un nouveau tableau de bord**. Donnez-lui un nom et choisissez **Visible seulement par moi**, **Visible par tous les utilisateurs** ou **Partager avec des groupes et des utilisateurs**. Enregistrez les filtres, le tri et les colonnes pour les tâches récurrentes.
 
 Sélectionnez les vues enregistrées dans le même menu. Enregistrez les modifications lorsque la vue vous appartient et a changé. Vous ne pouvez pas écraser une vue partagée avec vous : créez votre propre vue. Partager une vue n’accorde aucun accès supplémentaire aux documents. Voir [Tableaux de bord personnels](personal-dashboards.md).
 
@@ -93,6 +95,6 @@ Les autres outils actualisent la liste, ouvrent les paramètres avancés, démar
 
 Vérifiez d’abord l’organisation, la vue active, le type de document, le texte recherché et les filtres. Actualisez la liste et consultez les autres pages. Si une commande reste absente, demandez à votre administrateur de vérifier les autorisations et les modules.
 
-**Ctrl/Cmd + K** ouvre la recherche rapide globale ; **Ctrl/Cmd + Q** actualise le tableau de bord ; **Ctrl/Cmd + H** ouvre l’aide. Le menu de l’engrenage contient la référence des raccourcis. Le compteur de documents en attente de toute l’organisation, s’il est affiché, est un indicateur d’administration, pas votre compteur personnel de tâches.
+**Ctrl/Cmd + K** ouvre la recherche rapide globale ; **Ctrl/Cmd + Q** actualise le tableau de bord ; **Ctrl/Cmd + H** ouvre l’aide. Le menu **Paramètres avancés** contient la référence des raccourcis. Le compteur de documents en attente de toute l’organisation, s’il est affiché, est un indicateur d’administration, pas votre compteur personnel de tâches.
 
 Utilisez Ctrl sous Windows/Linux et Cmd sous macOS. Les raccourcis du navigateur ou du système peuvent avoir la priorité.

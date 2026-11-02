@@ -1,6 +1,8 @@
 # Appeler l'API
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-6a1c780ee588-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v1-fr-fr.png" alt="Appeler l&#x27;API, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_call_api_v2-fr-fr.png" alt="Appeler l&#x27;API, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 <!-- workflow-card-call-api-contract-20261022 -->
 

@@ -8,59 +8,29 @@ Cette documentation aide les administrateurs à comprendre les messages d'erreur
 
 ---
 
-## 1. Pages de paramètres de WatchDog (interface)
+## 1. Zones de l’interface
 
-### 1.1 Onglet General
+### 1.1 Général
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Onglet General de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-general-safe-fr.png" alt="Vue Général avec les quatre onglets actuels et l’état Hors ligne de l’environnement de test. La clé API, les commandes sensibles et le chemin d’installation sont masqués. Cette image ne prouve pas une installation ou une connexion réussie."><figcaption><p>Vue Général avec les quatre onglets actuels et l’état Hors ligne de l’environnement de test. La clé API, les commandes sensibles et le chemin d’installation sont masqués. Cette image ne prouve pas une installation ou une connexion réussie.</p></figcaption></figure>
 
-* **Download :** télécharger la dernière version de WatchDog.exe
-* **API Key :** copier la commande de configuration
-* **Auto-Update Schedule :** configurer la fréquence des mises à jour
-* **Installation Guide :** instructions d'installation pas à pas
+Général réunit l’état, la version, le téléchargement et les instructions de l’environnement. Utilisez une clé API autorisée et ne partagez pas les commandes contenant des secrets. Il n’y a pas d’onglet de statut distinct.
 
-### 1.2 Onglet Configurations
+### 1.2 Configurations
 
-* **Import Configurations :** définir les dossiers surveillés et les types de documents
-* **Export Configurations :** définir les destinations et les méthodes d'exportation
-* **Bulk Copy :** copier les configurations entre sous-organisations
-* **Import/Export :** importer/exporter les configurations au format JSON
+Les importations définissent les dossiers et le périmètre des documents ; les exportations définissent la méthode et la destination. Une exportation nécessite un type de document valide (`doc_type`). Les champs de l’assistant dépendent de la méthode. Examinez séparément la portée des actions de copie ou d’importation/exportation des configurations.
 
-> **Important :** les configurations d'exportation **exigent désormais un type de document** (`doc_type`). Les configurations sans type de document valide seront rejetées.
+### 1.3 Journaux
 
-### 1.3 Onglet Status
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-logs-fr.png" alt="Onglet Journaux avec Niveau de journalisation, Période et recherche. Les valeurs des événements sont masquées ; la période illustrée ne définit pas une règle universelle de conservation et ne prouve pas la santé du service."><figcaption><p>Onglet Journaux avec Niveau de journalisation, Période et recherche. Les valeurs des événements sont masquées ; la période illustrée ne définit pas une règle universelle de conservation et ne prouve pas la santé du service.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="État du service WatchDog"><figcaption></figcaption></figure>
+Limitez la consultation avec **Niveau de journalisation**, **Période** et recherche de texte. Les événements peuvent inclure `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED` et `SERVICE_RESTART_COMPLETED`.
 
-* Affiche l'état de connexion de WatchDog en temps réel
-* **Nouveaux champs :** `last_restart`, `version_first_seen`, `latest_version_checked_at`
-* **Informations système :** chemin d'installation, mémoire RAM disponible, espace disque disponible
+### 1.4 Modèles XSLT
 
-### 1.4 Onglet Logs
+<figure><img src="../../../.gitbook/assets/site-complete-watchdog-templates-fr.png" alt="Onglet Modèles XSLT avec Nouveau modèle et des modèles existants dont les noms sont masqués. Aucun menu de ligne n’a été ouvert et aucune transformation n’a été exécutée."><figcaption><p>Onglet Modèles XSLT avec Nouveau modèle et des modèles existants dont les noms sont masqués. Aucun menu de ligne n’a été ouvert et aucune transformation n’a été exécutée.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="Journaux de WatchDog"><figcaption></figcaption></figure>
-
-* Affiche tous les événements WatchDog provenant d'OpenSearch
-* Filtrable par type d'événement, période, etc.
-* **Types d'événements :**
-  * `FILE_IMPORT_STARTED` : l'importation du fichier a démarré
-  * `FILE_IMPORT_COMPLETED` : importation réussie
-  * `FILE_IMPORT_FAILED` : échec de l'importation
-  * `EXPORT_STARTED` : l'exportation a démarré
-  * `EXPORT_COMPLETED` : exportation réussie
-  * `EXPORT_FAILED` : échec de l'exportation
-  * `FOLDER_VALIDATION_FAILED` : dossier inaccessible
-  * `CONFIG_LOADED` : configuration chargée
-  * `SERVICE_RESTART_INITIATED` : redémarrage du service demandé
-  * `SERVICE_RESTART_COMPLETED` : service redémarré
-
-### 1.5 Onglet XSLT Templates
-
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Liste des modèles XSLT"><figcaption></figcaption></figure>
-
-* Téléverser et gérer les modèles de transformation XSLT
-* Validation en direct avec analyse des champs
-* Associer les modèles aux configurations d'exportation
+**Nouveau modèle** ouvre le gestionnaire. Vous pouvez y préparer un éditeur vide et examiner **Valider par rapport à** et **Valider XSLT** avant de sauvegarder un modèle. La configuration d’exportation détermine son utilisation.
 
 ---
 
@@ -121,7 +91,7 @@ Lorsqu'une configuration est désactivée, l'un de ces motifs apparaît :
 | `Success folder: not_found` | Le dossier de succès n'existe pas |
 | `Success folder: no_write_access` | Le dossier de succès n'est pas accessible en écriture |
 
-**Réactivation automatique :** WatchDog vérifie régulièrement les dossiers (toutes les 60 secondes). Dès que le dossier est de nouveau accessible, la configuration est réactivée automatiquement.
+**Réactivation automatique :** WatchDog vérifie de nouveau les dossiers. La fréquence et la reprise dépendent de la version et de l’état du service. Après correction des chemins ou autorisations, confirmez dans les journaux que la configuration reprend son activité.
 
 ---
 
@@ -147,7 +117,7 @@ Original Path: C:\WatchDog\Import\invoice_001.pdf
 
 ## 7. Heartbeat et état de la connexion
 
-WatchDog envoie à DocBits un heartbeat toutes les ~10 secondes avec des informations système :
+WatchDog communique son état à DocBits par des signaux de présence (heartbeats). Selon la version, les informations peuvent comprendre :
 
 | Données envoyées | Description |
 | :--- | :--- |
@@ -164,7 +134,7 @@ WatchDog envoie à DocBits un heartbeat toutes les ~10 secondes avec des informa
 | État | Signification |
 | :--- | :--- |
 | ✅ **Online** | WatchDog est connecté et actif |
-| ⚠️ **Offline** | Aucun heartbeat depuis plus de 30 secondes |
+| ⚠️ **Offline** | Aucune communication récente : examinez sa date et les journaux |
 | ❌ **Not Installed** | WatchDog ne s'est jamais connecté |
 
 **Erreurs de heartbeat :**
@@ -180,7 +150,7 @@ WatchDog envoie à DocBits un heartbeat toutes les ~10 secondes avec des informa
 ### Problème : WatchDog n'importe pas les fichiers
 
 1. Vérifiez que le service est en cours d'exécution : `services.msc` → WatchDog
-2. Consultez les journaux : Settings → WatchDog → onglet Logs
+2. Consultez les journaux : Settings → WatchDog → onglet Journaux
 3. Vérifiez les autorisations des dossiers pour le compte de service WatchDog
 4. Testez la connexion à l'API : `WatchDog.exe debug` dans CMD
 5. Vérifiez que le type de fichier est PDF
@@ -198,11 +168,11 @@ WatchDog envoie à DocBits un heartbeat toutes les ~10 secondes avec des informa
 1. Le chemin du dossier existe-t-il ?
 2. Les autorisations sont-elles définies pour `NT AUTHORITY\LOCAL SERVICE` ou le compte de service ?
 3. Le lecteur réseau est-il accessible ? (vérifiez les chemins UNC)
-4. WatchDog se réactive automatiquement dès que les dossiers sont de nouveau disponibles
+4. Après rétablissement des accès, vérifiez que la configuration reprend son activité
 
 ### Problème : la transformation XSLT échoue
 
-1. Le modèle XSLT est-il valide ? (utilisez l'onglet XSLT Templates → Validate)
+1. Le modèle XSLT est-il valide ? (utilisez l'onglet Modèles XSLT → gestionnaire → Valider XSLT)
 2. Le modèle correspond-il au type de document ?
 3. Vérifiez la structure XML du document
 4. L'exportation vers un dossier V3 utilise une transformation côté serveur — vérifiez la connectivité à l'API
@@ -264,4 +234,4 @@ INFO  - 2026-03-26 10:00:00 - module_name - Message - function=func_name - line=
 
 **Niveau de journalisation :** DEBUG, INFO, WARNING, ERROR
 
-**Journaux distants :** WatchDog envoie également ses journaux à DocBits (consultables dans l'onglet Logs) et, en option, au service de journalisation cloud Logtail.
+**Journaux distants :** WatchDog envoie également ses journaux à DocBits (consultables dans l'onglet Journaux) et, en option, au service de journalisation cloud Logtail.

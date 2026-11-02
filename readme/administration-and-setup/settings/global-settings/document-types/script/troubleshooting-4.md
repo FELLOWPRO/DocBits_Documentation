@@ -1,61 +1,61 @@
-# Troubleshooting
+# Problemen oplossen
 
-## Here is some advice on troubleshooting common scripting problems in DocBits: e.g. tips for debugging, dealing with unexpected script behavior, and performance optimization.
+## Scriptproblemen in DocBits oplossen en prestaties verbeteren
 
-### Debugging tips:
+### Tips om fouten op te sporen:
 
-**Use debugging tools:**
+**Hulpmiddelen voor foutopsporing gebruiken:**
 
-* Use debuggers or logging frameworks to trace the flow of your script and identify potential sources of errors.
+* Gebruik debuggers of loggingframeworks om het verloop van het script te volgen en mogelijke foutbronnen te vinden.
 
-**Step-by-step execution:**
+**Stap voor stap uitvoeren:**
 
-* Run your script step-by-step and check after each step that the expected behavior occurs.
-* This can help you pinpoint the exact time and cause of an error.
+* Voer het script stap voor stap uit en controleer na elke stap of het verwachte gedrag optreedt.
+* Dit helpt het precieze moment en de oorzaak van een fout te bepalen.
 
-**Print intermediate results:**
+**Tussenresultaten weergeven:**
 
-* Include targeted output from variables or intermediate results in your script to check the state of the code and understand what is happening.
+* Laat gericht variabelen of tussenresultaten weergeven om de toestand van de code te controleren en de werking te begrijpen.
 
-### Dealing with unexpected script behavior:
+### Onverwacht scriptgedrag onderzoeken:
 
-**Isolate the problem:**
+**Het probleem isoleren:**
 
-* Try to isolate the problem to a specific place in the code or a specific input data to find the source of the unexpected behavior.
+* Beperk het probleem tot een specifieke plek in de code of bepaalde invoergegevens om de oorzaak van het onverwachte gedrag te vinden.
 
-**Check external dependencies:**
+**Externe afhankelijkheden controleren:**
 
-Make sure that external resources or libraries are installed and configured correctly and that your script can access them properly.
+Controleer of externe bronnen en bibliotheken correct zijn geïnstalleerd en ingesteld en of uw script er toegang toe heeft.
 
-**Check changes:**
+**Wijzigingen controleren:**
 
-* If the unexpected behavior occurs after a code change, review your recent changes and consider whether they might have caused the problem.
+* Treedt het gedrag na een codewijziging op, controleer dan de recente wijzigingen en beoordeel of deze het probleem kunnen hebben veroorzaakt.
 
-### Performance tuning:
+### Prestaties verbeteren:
 
-**Identify bottlenecks:**
+**Knelpunten bepalen:**
 
-* Analyze your script to identify bottlenecks or inefficient areas that might affect performance.
+* Analyseer het script om knelpunten en inefficiënte onderdelen te vinden die de prestaties beïnvloeden.
 
-**Optimize critical sections:**
+**Kritieke onderdelen optimaliseren:**
 
-* Review critical sections of your code and look for ways to optimize them, such as using more efficient algorithms or data structures.
+* Controleer kritieke code en zoek verbeteringen, bijvoorbeeld met efficiëntere algoritmen of gegevensstructuren.
 
-**Consider scaling:**
+**Schaalbaarheid beoordelen:**
 
-* Think about the scaling of your scripts and how they behave as the load increases.
-* Test your script under different load conditions to make sure it works efficiently even under heavy use.
+* Beoordeel hoe scripts zich gedragen bij een toenemende belasting.
+* Test onder verschillende belastingen om te controleren of het script ook bij intensief gebruik efficiënt werkt.
 
-### Documentation and knowledge sharing:
+### Documenteren en kennis delen:
 
-**Document your troubleshooting steps:**
+**Stappen voor probleemoplossing vastleggen:**
 
-* Keep track of the steps you took to diagnose and resolve issues.
-* This can help you identify and resolve similar issues more quickly in the future.
+* Leg vast welke stappen u hebt uitgevoerd om problemen te onderzoeken en op te lossen.
+* Zo kunt u vergelijkbare problemen later sneller herkennen en verhelpen.
 
-**Seek resources and expertise:**
+**Bronnen en deskundigheid raadplegen:**
 
-* Use online resources, forums, or the documentation of the scripting language you are using to get help with troubleshooting.
-* Sharing experiences with other developers can also be helpful.
+* Gebruik online bronnen, fora en de documentatie van de gebruikte scripttaal voor hulp bij probleemoplossing.
+* Ervaringen uitwisselen met andere ontwikkelaars kan ook helpen.
 
-Applying these tips will help you more effectively diagnose and resolve common scripting issues in DocBits and optimize the performance of your scripts.
+Met deze tips kunt u veelvoorkomende scriptproblemen in DocBits gerichter onderzoeken en oplossen en de prestaties van scripts verbeteren.

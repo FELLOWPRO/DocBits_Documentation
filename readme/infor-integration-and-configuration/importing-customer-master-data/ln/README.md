@@ -1,3 +1,3 @@
 # LN
 
-A guide to importing master data from INFOR LN.
+Een handleiding voor het importeren van stamgegevens uit INFOR LN.

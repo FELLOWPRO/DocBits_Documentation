@@ -1,8 +1,8 @@
-# Field Mappings
+# Veldmappings
 
-Below you will find the necessary field mappings for importing master data, from Infor, into DocBits.
+Hieronder vindt u de benodigde veldtoewijzingen voor het importeren van stamgegevens, van Infor, naar DocBits.
 
-## Auto Accounting (LN)
+## Automatische boeking (LN)
 
 ### ChartOfAccounts
 
@@ -42,7 +42,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-## Auto Accounting (M3)
+## Automatische boeking (M3)
 
 ### ChartOfAccounts
 
@@ -82,9 +82,9 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-## Tax Code
+## Belastingcode
 
-### Full
+### Volledig
 
 ```javascript
 {
@@ -98,7 +98,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### Reduced
+### Beperkt
 
 ```javascript
 {
@@ -112,7 +112,7 @@ Below you will find the necessary field mappings for importing master data, from
 }
 ```
 
-### Free
+### Gratis
 
 ```javascript
 {

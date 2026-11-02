@@ -1,114 +1,51 @@
-# Layout Builder
+# Lay-outeditor
 
-{% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Layout Builder Tutorial: Create Custom Document Layouts for Faster, Cleaner Validation
-{% endembed %}
+Gebruik de Lay-outbouwer om de velden en besturingselementen te ordenen die worden weergegeven wanneer u een document valideert of goedkeurt. Elke lay-out hoort bij een documenttype, een oorsprong en een lay-outtype. Controleer welke lay-out geopend is voordat u wijzigingen opslaat.
 
-## **Accessing the Layout Builder**
+## De lay-out openen
 
-First of all, ensure that the Layout Builder feature is activated. This can be done by navigating to Settings → Document Processing → Module → Document Type and ensure that the Layout Builder slider is set too active as shown below.
+1. Open **Instellingen → Documenttypen**.
+2. Open de Lay-outbouwer van het gewenste documenttype of subtype. Als deze niet beschikbaar is, moet een beheerder de module mogelijk inschakelen voor uw organisatie.
+3. Controleer de geselecteerde oorsprong in de actiebalk en het type editor ernaast.
 
-![](https://lh7-us.googleusercontent.com/I0VvFiFftKLoCB47jCAoosfTyqIQgXBoggMFp1QAeIj9xW4yiiIzyk5eIEHZ7duA251Yc4_ArUKA8e-LjDht13bckAnkAOHOvl1p5k1-Qj_UkEp2cSZwxHz_PXe8IQ4_jglzCtjAJg5pd9m_hNZEhXA)
+<figure><img src="../../../.gitbook/assets/layout-builder-overview-current-nl.png" alt="Uitsnede van de editor: de secties Groepen, Velden en Formulierelementen links en een vereenvoudigde voorbeeldlay-out voor factuurgegevens in het midden."><figcaption><p>Uitsnede van de editor: de secties Groepen, Velden en Formulierelementen links en een vereenvoudigde voorbeeldlay-out voor factuurgegevens in het midden.</p></figcaption></figure>
 
-After this is done you can access the Layout Builder via Settings → Document Types, once on this page, you can select from the various document types you have created and either select “Edit Layout” as shown below
+Wanneer u **Oorsprong** wijzigt, kan DocBits een afzonderlijke lay-out voor die oorsprong aanmaken. Controleer de oorsprong voordat u begint met bewerken.
 
-![](https://lh7-us.googleusercontent.com/WMD8M0qugnc64ZuyLuEYH5P63qk-Vo86useg32-QyOsP63FJA_Xh7UzwlwmUR3K9oTd19aXexSitZqQLVEKo26-i8hYWUS9CChzwAS8TgbWoqweFucJcNIgKBruzSd0mxn8zrh9i46lPxKMNDh-YEJ8)
+## De onderdelen van de editor
 
-or if you have sub-document types within a created document type you can select “Document Sub Types” and select “Edit Layout” for the sub document type layout you wish to edit as shown below.
+Links kunt u wisselen tussen **Elementen**, **Eigenschappen** en de algemene instellingen, weergegeven met een tandwiel.
 
-![](https://lh7-us.googleusercontent.com/KfmM8wMGnn5tzXRxF1yT0Efm7X6v0kYeGzgNG3RihERh_P71tjEVkJh4POMwgqnsCBoE736xI7oHkmpYNUbtAShhE-wAHsnLuxljDtmhGQUyljF_PmOF2y6c0gIdIk_jUD3sVNsq5viT2sb236OBYSA)
+* Het tabblad **Elementen** bevat de secties **Groepen**, **Velden** en **Formulierelementen**. Open een sectie om de beschikbare groepen, velden en besturingselementen te bekijken.
+* In het midden staan de groepen en velden van de lay-out. Met groepen ordent u velden die bij elkaar horen.
+* Rechts staat het voorbeelddocument. Hier kunt u het document bekijken en in- of uitzoomen.
 
-## **Basics of the Layout Manager**
+Sleep een element uit de betreffende sectie links naar de lay-out om een groep, een veld of een besturingselement toe te voegen.
 
-After following the previous steps you will reach a page like the one shown below.
+<figure><img src="../../../.gitbook/assets/layout-builder-fields-current-nl.png" alt="De velden Factuurnummer en Datum in de voorbeeldgroep. In deze lay-out beslaat elk veld 50 % van de groepsbreedte."><figcaption><p>De velden Factuurnummer en Datum in de voorbeeldgroep. In deze lay-out beslaat elk veld 50 % van de groepsbreedte.</p></figcaption></figure>
 
-### **Uploading an example document**
+Configureer herbruikbare velden bij [Documenttypen](README.md). Welke velden beschikbaar zijn, hangt af van het geselecteerde documenttype en de configuratie daarvan.
 
-In order to upload a document to the layout builder, simply navigate to the right on the screen
+## De eigenschappen van een element wijzigen
 
-![](https://lh7-us.googleusercontent.com/I99BkFDTOloyKwwc0P8O3wf8FbKL3B5Zn5i3GfeRKSSkBdelQ_HNfI2oJzaXQUi_UU6R5Vr7jrgcAxIrDmmTKWgTZx90J7izOX0oczWt__qt9VmD1HqafZvqH8vb7xnZMR1m5pjwzsbcnalErYo6dIc)
+Selecteer een groep of veld in de lay-out en open **Eigenschappen** links. De beschikbare opties hangen af van het geselecteerde element. Voorbeelden zijn het label, de technische naam, de breedte en het gedrag.
 
-Click on the “Upload Documents” button or drag and drop your desired document into the provided area
+<figure><img src="../../../.gitbook/assets/layout-builder-properties-current-nl.png" alt="Eigenschappen van het geselecteerde veld: het label, de technische naam en de elementbreedte als percentage."><figcaption><p>Eigenschappen van het geselecteerde veld: het label, de technische naam en de elementbreedte als percentage.</p></figcaption></figure>
 
-![](https://lh7-us.googleusercontent.com/GHqGYqvwFvN3z2ojFz_i7ZLlZhy-A3vsKUmmzOC0NMkPd2-f6_t_0USF66W-N3XRqHlmx06QNSQ7U-VTPQPKWdzOhoNcN7LlMk45sKVC6bWN1O92G0r4dKyHQLlgmGZiINYjZ9vZnt89_BjgzbON2MI)
+Bij standaardvelden zijn het label en de technische naam mogelijk niet bewerkbaar. Afhankelijk van het type element kunt u ook de alleen-lezenmodus, de zichtbaarheid, de tabvolgorde, waardenlijsten en de uitvoering van een workflow of script bij een waardewijziging instellen. Groepen en velden hebben verschillende opties.
 
-### **Groups**
+Controleer het resultaat in de lay-out nadat u de eigenschappen hebt gewijzigd. De breedte wordt als percentage ingevoerd met een numeriek invoerveld. Groepen en de velden daarin kunnen verschillende breedtes hebben. Zie [Veldeigenschappen configureren](../../settings/global-settings/document-types/layout-manager/configuring-field-properties.md).
 
-Groups can be created by selecting the following icon.
+## Sjablonen en JSON
 
-![](https://lh7-us.googleusercontent.com/eb4jnCmezPFKPwgUisJKvicBqMWuGHW69WIFdtpmQiY-_78VWmMyMD4TqKMJXwjH1XDnS5RXX0DsJ2_ur_GG62L4F7OEzkLrpgwUkiuQjZQPJqQoHIBj6WM33zY0AkYXhI3mKLjZetbEQ2AlhPJ8KV8)
+Naast het opslaan van de lay-out biedt de actiebalk functies om een sjabloon te genereren, de standaardlay-out op oorspronglay-outs toe te passen, het standaardsjabloon te gebruiken en JSON te bewerken. Welke functies beschikbaar zijn, hangt af van de geopende editor.
 
-Groups allow you to create different sections on a layout, this makes it easier to separate different groups of data or information to make a layout easier to follow. You can create a title for each group so that a user can know what information they will find in that group.
+Het genereren of toepassen van een sjabloon kan een aangepaste lay-out vervangen. Controleer eerst het documenttype, de oorsprong en de huidige lay-out. **JSON bewerken** is bedoeld voor geavanceerde configuratie en vereist kennis van de sjabloonindeling. In het JSON-dialoogvenster kunt u de configuratie kopiëren.
 
-![](https://lh7-us.googleusercontent.com/lWqIEC-TCOp4rKytTbhn2fYWY618_Yra2mjWHA9oMyWPqHXA5JKCLoZoEtM8xQHAkn4HFNTPYpbMePUYnQhQGL0KmgBfTEDWPDAMy7PjZinZl2s_kHQlsLAGjYbzSINWTme3qRO9tHLcpVaDVvS_8F4)
+## Controleren en opslaan
 
-### **Form Elements**
+Orden de groepen en velden en controleer het resultaat in de lay-out. Gebruik **Opslaan** in de actiebalk wanneer alles klopt. Zie [Oorsprongindelingen](origin-layouts.md) voor lay-outs die bij een specifieke oorsprong horen.
 
-![](https://lh7-us.googleusercontent.com/OFBRSGdol7loocu5uGVe4Q8URMDojvXTN0xj3TCgL-jb-wUgt1fjEqfXCyMPz_HNh94LVVmg6ifQDhxvlQsgbbChRfrw2Ohx4ICOUwHix3iiAFY9hI3BPGBfcNABiHLhgXQJVZmGvEO_niVWkIXz_6g)
-
-These are a set of default fields that can be dragged and dropped into the layout builder and are available to you to create your desired layout. These include:
-
-* Text – This is a text box which creates a field in the layout that can have text entered into it once on the validation screen.
-* Label – This is a field that can be used to create uneditable text, this could be used to create sub-headings or any other desired uneditable text when on the validation screen.
-* Checkbox – This creates a boolean type field which can be checked or unchecked.
-* Multi Checkbox – This functions the same way as the “Checkbox” but can be used when the user knows they will be adding multiple checkboxes in one section.
-* Horizontal Separator – This creates a horizontal line on the layout that can be used to split up sections within a group on the layout.
-* Table of Checkboxes – This lets the user create a table of checkboxes consisting of custom x- and y-axis values, eg.
-
-![](https://lh7-us.googleusercontent.com/lMZU68H4i8ELjgenpcNXeNhJ9iwzTWGRkjNMEdV3rqdGwnaRZ_tvG9mbx2ogXQ2hMciGSp-9m1c5KS9VwGJWzuxcRiaioVDSLTLvh-csHUho4aX25LXrtjhGSfK6yTukufwrjQvZR-JliuhiaPCCxpw)
-
-* Button – This creates a clickable button on the validation screen within the layout that can be set to one of three functions, including: Export, Export mit Sonderwunsch or Reject.
-* Extracted Tables -This allows you to place an area on the document layout that illustrates the table that gets extracted from the document. For information click here.
-* Invoice Buttons – This element lets you drag and drop a set of buttons that are optimized for invoices. When on the validation screen, when you select the invoice type (either cost or purchase) the PO Matching or Auto Accounting will disappear accordingly.
-
-![](https://lh7-us.googleusercontent.com/-w5iTr9b_pcc6Y39osFmuzKQGRa_e4tAXvQOn1zN8T4HwcuTs_FP9mFPAJJeABvYKTyiQr3xZALsRgueIDksbswhnY-E9ioT1AIaf8xwAblBckX1f8xzi5v9mLxBRRUZoViDntKK6Nd5fy5sd5Bq5LU)
-
-* QR Code Fields – This element allows you to drag and drop a block that will display all the extracted information from a document when a QR code is present.
-
-### **Creating document specific fields**
-
-The user is able to create their own custom groups and fields for a document type, this can be done when originally creating a document type but also by selecting “Fields” when on the Document Types page in Settings.
-
-![](https://lh7-us.googleusercontent.com/N9i3KnGyXATf5jLVbPQGiPEG9rlz6WqHJ5c8FZnpw3EwmaMnl2cQhMwhug3d-A82caOS6Nxc7LgAVLMtBL404hKR7i39u2RfwzCnohqn1_mbkMtjzNKThnjGu2ivaFNqKDuobzA6kUdD8gGiQ_zs3z8)
-
-### **Blank spaces**
-
-#### **The 100 percent rule**
-
-![](https://lh7-us.googleusercontent.com/TwNA3gZrgzhSvZrZOGywGYz92fRkUtjIsr6sDCxEzYgWcfJ9kXuzJKkqNiFyp3H5XXoqUz76TzZ72r86YY_O3Vw_rvDKczD_hdMOIQOFWORr2bo8pGunrAtUklJ1ye7KEQJEjRNqNUNCnXM0boIICUA)
-
-In order to create the above space on the layout, a “Label” from the Form Elements must be used in a special way. The reason for this is that the Layout Manager operates according to a 100 space per line system in that 1 space represents 1 percent of a line, this means that fields can only take up 100 spaces per line as show below.
-
-![](https://lh7-us.googleusercontent.com/YTqddzVQPWRuP5ylV6NnMc-KnEgCY0ZxZ8zn0In5d5dOxaWnwGDi4N2qohbobLNphLfVD61sMUE5QlmXJZ3e0tP7Y8no_wVRy9WTF0nWIN5Tg3t-zLJhs9M-kVYPFV3CyerRZZoK-iMXLmKGcuSY_Nw)
-
-This means that the user must build the layout line by line according to this rule. For example let's say you would like to add the fields “Name” and “Date” in the same line but would like the “Name” field to be larger. This can be done by dragging and dropping the “Text” field from the Field Elements drop down and naming each field “Name” and “Date” as shown.
-
-![](https://lh7-us.googleusercontent.com/2ru3pj0iD3V6ADqYBjeQPqDT3uvTH_Al2MV0gpUUQ9MpX0TSFtnjYL6JN0YOkBk9afx2q2YcMo4gWE2jItUAGSEfX79O_6sFgKwP5FGa98SwzgjGgee1G-2aO6NyqZusf27SbJoWoHmzu51Hx25kVmM)
-
-The problem now exists that they are both the same size of 33 (this is the default size of all dragged and dropped fields) but you would like the “Name” field to be larger than the “Date” field and both fields should take up the entire line on the layout. Therefore, by following the 100 percent rule, you can set the “Name” and “Date” fields to any combination of 100 that you would desire. This of course depends on how large you would like each individual field but for the purpose of this example we will set the “Name” field to 70 and the “Date” field to 30, the results are:
-
-![](https://lh7-us.googleusercontent.com/m411QblkCfsQWllhX74QpANjuVEv3fgM1Nhg8cJjbkNQGcjym6v0JFHIrKyMOAu-MasQ4KH9ZPaxmqNWfhWmAuL6SOZE030NXebb7ERzYxF99hLJC6oGbM-YXp7bNdZuoTaPmsDt7EjpV5BOiflwA4g)
-
-This same rule applies to all fields in the Layout Builder.
-
-#### **Creating Blank Spaces**
-
-Now that this rule has been explained, creating blank spaces will make more sense. As previously mentioned, in order to create a blank space you have to use a “Label” from the Form Elements.
-
-For example, let’s say that you would like to create a blank space between these two fields.
-
-![](https://lh7-us.googleusercontent.com/jOms6aTB3wCmX3L-MiUTrOb_-q3AiFC3Y75TsHJe8QFLru10H9aZKzbE5MfHPZ0v9fqycQeddNPJp7pnRjv17crkrYUymNA8u9bF-3u9IfR6ru_duavqrLCQocommljzLA00RXs_lQA4gDH6l_QvyTs)
-
-Step one is to drag and drop a “Label” between these two fields, once added you can click on the “Label” field you just added and on the left you will be presented with the properties of the field. Now, in the same way you would create or change the name of a field as shown previously, you will remove any name from the “Label” property like so
-
-![](https://lh7-us.googleusercontent.com/0Mma4wYIIfAkOyRIFLZtjug7pbWltfaiPm3r_WgbP5fCgKe2BGD6Qf5YJ5Ns7fBBTRfJ68NlOtmOQrvcOvjyWGxk9v_XmDj-8moEQhcDUugh_VO5DdrJLYYV08ftr8YdhuhEM0otWs_ljew18j7XJFQ)
-
-The result from doing this will then be
-
-![](https://lh7-us.googleusercontent.com/-HqoJUAbcHRCletgSg6gcKXpn6zto1Do8I5EmcEmPWL4qUrMREh-wZdhy7ZKtnbuGjypd7p2mjcIu6LbbfdjA3c1liT2reCQXWiP1VAji08eWc_bbF_a0Dd82rJRgCuD5yjdlXL_DNheMcw-fm6pQnA)
-
-There is now a gap between the two fields. This gap can be extended or shortened according to the 100 percent rule discussed earlier, and with these functions you can create any desired layout.
-
-
-
-{% embed url="https://youtu.be/TyK4JIoC6rc?si=BKdCTzgogXnWLkx-" %}
+{% hint style="info" %}
+De afbeeldingen gebruiken een vereenvoudigde voorbeeldlay-out voor een factuur. Veldnamen en beschikbare opties hangen af van uw configuratie.
+{% endhint %}

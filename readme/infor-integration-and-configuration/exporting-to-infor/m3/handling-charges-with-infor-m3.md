@@ -1,54 +1,54 @@
-# Handling Charges with Infor M3
+# Toeslagen verwerken met Infor M3
 
-## Overview
+## Overzicht
 
-This document provides detailed information on how DocBits integrates with Infor M3 to handle charges associated with invoices and purchase orders (PO). It includes scenarios for external charges and the expected solutions.
+Dit document beschrijft hoe DocBits met Infor M3 samenwerkt om kosten op facturen en inkooporders te verwerken. Het bevat scenario's voor externe kosten en de verwachte oplossingen.
 
-## Charge Handling Scenarios
+## Scenario's voor kostenverwerking
 
-| Scenario ID | Description                                                                          | Business Case                                                                                                                          | Expected Solution                                                                                                                                                                                                                         |
+| Scenario-ID | Beschrijving                                                                          | Praktijksituatie                                                                                                                          | Verwachte oplossing                                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1           | External Charges Not on PO but on Invoice (Accepted)                                 | External charges appear on the invoice but are not listed on the PO. These charges are accepted.                                       | Charges will be posted against Accounting Rule PP20-228 based on the cost element sent by DocBits.                                                                                                                                        |
-| 2           | External Charges Not on PO but on Invoice (Not Accepted)                             | External charges appear on the invoice but are not listed on the PO. These charges are not accepted or approved.                       | The total invoice value is recorded with a header charge for non-approved charges. Additionally, a debit note is created for these charges.                                                                                               |
-| 3           | External Charges on Invoice Greater or Lesser than PO (Within Tolerance)             | External charges on the invoice are greater or lesser than those on the PO but within the accepted tolerance.                          | Extra charges are posted against Accounting Rule PP20-228 based on the cost element sent by DocBits.                                                                                                                                      |
-| 4           | External Charges on Invoice Greater than PO (Outside Tolerance, Not Approved)        | External charges on the invoice are greater than those on the PO and outside the accepted tolerance, and they are not approved.        | The invoice is recorded with the total invoice amount. An additional non-approved charge is added as a header charge, and a debit note is created for this additional charge.                                                             |
-| 5           | External Charges on Invoice Greater than PO (Outside Tolerance, Approved in DocBits) | External charges on the invoice are greater than those on the PO and outside the accepted tolerance, and they are approved in DocBits. | Extra charges are posted against PP20-228. Two options considered:\<br>- If APS900 tolerance > DocBits, extra charges automatically posted.\<br>- If APS900 tolerance = DocBits, extra charges posted with new charge elements not on PO. |
-| 6           | External Charges on Invoice Lesser than PO (Outside Tolerance, Not Approved)         | External charges on the invoice are lesser than those on the PO and outside the accepted tolerance, and they are not approved.         | The invoice is posted as unapproved in APS110. The AP team adjusts the charges through the Invoice Control option in APS110, which calls APS360.                                                                                          |
-| 7           | External Charges on PO and No Charge on Invoice                                      | External charges are listed on the PO, but there are no charges on the invoice.                                                        | The invoice is posted as unapproved in APS110. The AP team adjusts the charges through the Invoice Control option in APS110, which calls APS360.                                                                                          |
+| 1           | Externe kosten alleen op de factuur (geaccepteerd)                                 | Er staan externe kosten op de factuur die niet op de inkooporder staan. Deze kosten worden geaccepteerd.                                       | De kosten worden geboekt volgens boekingsregel PP20-228 op basis van het kostenelement dat DocBits verstuurt.                                                                                                                                        |
+| 2           | Externe kosten alleen op de factuur (niet geaccepteerd)                             | Er staan externe kosten op de factuur die niet op de inkooporder staan. Deze kosten worden niet geaccepteerd of goedgekeurd.                       | Het totale factuurbedrag wordt geboekt met de niet-goedgekeurde kosten op kopniveau. Voor deze kosten wordt ook een debetnota aangemaakt.                                                                                               |
+| 3           | Hogere of lagere externe kosten op de factuur (binnen tolerantie)             | De externe kosten op de factuur zijn hoger of lager dan op de inkooporder, maar vallen binnen de geaccepteerde tolerantie.                          | Extra kosten worden geboekt volgens boekingsregel PP20-228 op basis van het kostenelement dat DocBits verstuurt.                                                                                                                                      |
+| 4           | Hogere externe kosten op de factuur (buiten tolerantie, niet goedgekeurd)        | De externe kosten op de factuur zijn hoger dan op de inkooporder en vallen buiten de geaccepteerde tolerantie. Ze zijn niet goedgekeurd.        | Het totale factuurbedrag wordt geboekt. De extra niet-goedgekeurde kosten worden op kopniveau toegevoegd en er wordt een debetnota voor aangemaakt.                                                             |
+| 5 | Hogere externe kosten op de factuur (buiten tolerantie, goedgekeurd in DocBits) | De externe kosten op de factuur zijn hoger dan op de inkooporder en vallen buiten de geaccepteerde tolerantie. Ze zijn goedgekeurd in DocBits. | Extra kosten worden geboekt volgens PP20-228. Er worden twee opties overwogen:\<br>- Als de APS900-tolerantie > DocBits is, worden extra kosten automatisch geboekt.\<br>- Als de APS900-tolerantie = DocBits is, worden extra kosten geboekt met nieuwe kostenelementen die niet op de inkooporder staan. |
+| 6           | Lagere externe kosten op de factuur (buiten tolerantie, niet goedgekeurd)         | De externe kosten op de factuur zijn lager dan op de inkooporder en vallen buiten de geaccepteerde tolerantie. Ze zijn niet goedgekeurd.         | De factuur wordt als niet-goedgekeurd geboekt in APS110. De crediteurenadministratie past de kosten aan via Invoice Control in APS110, waarmee APS360 wordt geopend.                                                                                          |
+| 7           | Externe kosten op de inkooporder en geen kosten op de factuur                                      | Er staan externe kosten op de inkooporder, maar niet op de factuur.                                                        | De factuur wordt als niet-goedgekeurd geboekt in APS110. De crediteurenadministratie past de kosten aan via Invoice Control in APS110, waarmee APS360 wordt geopend.                                                                                          |
 
-## Example for Scenario 5
+## Voorbeeld voor scenario 5
 
-| Field          | PO Value | Supplier Invoice Value |
+| Veld          | Inkooporderwaarde | Waarde van de leveranciersfactuur |
 | -------------- | -------- | ---------------------- |
-| Line 1         | $6000    | $6000                  |
-| Freight (E001) | $1000    | $3000                  |
-| **Total**      | $7000    | $9000                  |
+| Regel 1         | $6000    | $6000                  |
+| Vrachtkosten (E001) | $1000    | $3000                  |
+| **Totaal**      | $7000    | $9000                  |
 
-**Tolerance of Freight:** $100 approved automatically in M3 (APS900) and DocBits. Total invoice value of $9000 approved (with charges) manually.
+**Tolerantie voor vrachtkosten:** $100 wordt automatisch goedgekeurd in M3 (APS900) en DocBits. Het totale factuurbedrag van $9000 wordt inclusief kosten handmatig goedgekeurd.
 
-**APS451 (Invoice Line):**
+**APS451 (factuurregel):**
 
-* Line Type 1 (Invoice Line): $9000
-* Line Type 5 (Line Charge): $1000 (Element: E001 for Freight on PO $1000)
-* Line Type 5 (Line Charge): $2000 (Element: E101 for Freight on PO $0)
+* Regeltype 1 (factuurregel): $9000
+* Regeltype 5 (regelkosten): $1000 (element: E001 voor vrachtkosten van $1000 op de inkooporder)
+* Regeltype 5 (regelkosten): $2000 (element: E101 voor vrachtkosten van $0 op de inkooporder)
 
-### Important Fields and Values for Handling Charges in DocBits
+### Belangrijke velden en waarden voor kostenverwerking in DocBits
 
-| Field                       | Description                                              |
+| Veld                       | Beschrijving                                              |
 | --------------------------- | -------------------------------------------------------- |
-| Sequence Number             | Unique identifier for each charge scenario               |
-| Costing Element ID          | Identifier for the costing element                       |
-| Costing Element Description | Description of the costing element                       |
-| Charge Type                 | Typically, "External"                                    |
-| Charge Invoicing            | Relevance needs to be determined                         |
-| Distribution Method         | Method used for distributing the charges                 |
-| Gross Weight                | Applicable if gross weight is available on the invoice   |
-| Volume                      | Applicable cases need to be defined                      |
-| Net Amount                  | Applicable cases need to be defined                      |
-| 3rd Party Charge            | Presence on the invoice and processing requirements      |
-| Invoice Charge Quantity     | Clarification needed                                     |
-| Markup                      | Assumed to be the difference between charge and discount |
-| Charge Category             | Relevance needs to be defined                            |
-| Costing Operator            | Relevance needs to be defined                            |
+| Volgnummer             | Unieke identificatie van elk kostenscenario               |
+| Kostenelement-ID          | Identificatie van het kostenelement                       |
+| Omschrijving van het kostenelement | Omschrijving van het kostenelement                       |
+| Kostentype                 | Doorgaans "External"                                    |
+| Kostenfacturatie            | Relevantie moet nog worden bepaald                         |
+| Verdelingsmethode         | Methode om de kosten te verdelen                 |
+| Brutogewicht                | Van toepassing als het brutogewicht op de factuur staat   |
+| Volume                      | Toepasselijke situaties moeten nog worden bepaald                      |
+| Nettobedrag                  | Toepasselijke situaties moeten nog worden bepaald                      |
+| Kosten van derden            | Aanwezigheid op de factuur en verwerkingseisen      |
+| Hoeveelheid voor factuurkosten     | Verdere toelichting nodig                                     |
+| Opslag                      | Verondersteld verschil tussen kosten en korting |
+| Kostencategorie             | Relevantie moet nog worden bepaald                            |
+| Kostenoperator            | Relevantie moet nog worden bepaald                            |
 
 \\

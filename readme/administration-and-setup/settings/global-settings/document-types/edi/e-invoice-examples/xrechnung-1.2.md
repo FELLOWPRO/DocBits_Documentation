@@ -1,6 +1,6 @@
 # XRechnung 1.2
 
-Exports to the document management system (IDM):
+Exporteren naar het documentbeheersysteem (IDM):
 
 <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

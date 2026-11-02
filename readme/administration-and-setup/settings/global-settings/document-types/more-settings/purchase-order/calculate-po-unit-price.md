@@ -8,13 +8,12 @@ Je kunt ervoor kiezen om de **eenheidsprijs** van elke inkooporderregel automati
 
 1.  Navigeer naar **Instellingen** -> **Globale Instellingen** -> **Documenttypen**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
-2.  Selecteer het gewenste documenttype en klik op **Meer Instellingen**.
+2.  Selecteer het gewenste documenttype en open de aanvullende instellingen via het **tandwiel**.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
-3.  Schakel in de sectie **Inkooporder** de optie **Bereken PO Eenheidsprijs** in.
+    <figure><img src="../../../../../../.gitbook/assets/prior-u044-nl.png" alt="Documenttype Factuur met het tandwiel voor aanvullende instellingen."><figcaption><p>Documenttype Factuur met het tandwiel voor aanvullende instellingen.</p></figcaption></figure>
+3.  Schakel in de sectie **Inkooporder** de optie **Bereken PO-eenheidsprijs** in.
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/prior-u045-nl.png" alt="Inkooporderinstellingen met Bereken PO-eenheidsprijs; er is geen instelling gewijzigd."><figcaption><p>Inkooporderinstellingen met Bereken PO-eenheidsprijs; er is geen instelling gewijzigd.</p></figcaption></figure>
 
 ## Hoe de prijs wordt berekend
 
@@ -40,11 +39,11 @@ De berekende prijs wordt weggeschreven naar de inkoopordersnapshot die op het do
 
 ## Voorbeeld:
 
-<figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_4.png" alt="" width="563"><figcaption></figcaption></figure>
-
 In dit geval wordt de eenheidsprijs (zonder de korting) uit het document gehaald, terwijl de inkooporder in het ERP de eenheidsprijs met de korting opslaat. Dit resulteert in een mismatch in de eenheidsprijs. Met de instelling geactiveerd wordt de eenheidsprijs in plaats daarvan genomen uit het regelbedrag en de hoeveelheid, zodat beide kanten overeenkomen.
 
 ## Gerelateerde instellingen
 
 * [Regels voor het matchen van inkooporders](purchase-order-matching-rules.md) — de regels vergelijken de **effectieve** eenheidsprijs, wat deze berekende prijs is wanneer de instelling aan staat.
 * [Instellingen voor inkoopordertolerantie](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — hoeveel de factuurprijs mag afwijken van de berekende prijs.
+
+Voorbeeld met aantal 9 en prijsbasis 1: 879,84 ÷ 9 × 1 = 97,76 netto-eenheidsprijs. Het totaal 954,63 inclusief 8,5% belasting geeft 106,07. Vergelijk bij een factuur met nettoprijzen de netto-eenheidsprijs.

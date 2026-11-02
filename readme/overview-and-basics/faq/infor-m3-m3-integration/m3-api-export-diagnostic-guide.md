@@ -1,4 +1,4 @@
-# M3 API Export Diagnostic Guide
+# Diagnosehandleiding voor M3-API-export
 
 ### 1. Initiële Setup
 

@@ -1,37 +1,39 @@
-# Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)
+# Geval 15: Koptoeslag - Toeslag per eenheid buiten tolerantie (Afgewezen)
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-The header charge per unit is outside tolerance and has not been approved.
+De headertoeslag per eenheid valt buiten de tolerantie en is niet goedgekeurd.
 
-## Action:
+## Actie:
 
-The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+Het systeem past de headertoeslag aan zodat deze overeenkomt met de inkooporder, verwerkt de transactie dienovereenkomstig en genereert de benodigde correctiedocumenten.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
-  * Header Charge Per Unit: $4.00
+  * Headerkosten per eenheid: $4.00
   * Quantity: 1,500 units
-  * Total Header Charge Amount: $6,000.00
+  * Totaal bedrag aan headerkosten: $6,000.00
 * **Invoice Received:**
-  * Header Charge Per Unit: $5.00 (outside tolerance of 25%, rejected)
+  * Headerkosten per eenheid: $5.00 (buiten de tolerantie van 25%, afgewezen)
   * Quantity: 1,500 units
-  * Total Header Charge Amount: $7,500.00
+  * Totaal bedrag aan headerkosten: $7,500.00
 * **Tolerance Levels:**
-  * Header Charge Per Unit Tolerance: ±5%
+  * Tolerantie koptekst per eenheid: ±5%
 
-Since the header charge per unit ($5.00) exceeds the acceptable tolerance range of 5% and has not been approved, the system will:
+Aangezien de headertoeslag per eenheid ($5.00) het aanvaardbare tolerantiebereik van 5% overschrijdt en niet is goedgekeurd, zal het systeem:
 
-1. **Reject the Invoiced Header Charge Per Unit:** The system does not accept the invoiced header charge per unit of $5.00 due to the variance exceeding the tolerance limit.
-2. **Adjust the Header Charge Per Unit:** The system adjusts the charge per unit to match the original purchase order or the approved charge per unit:
-   * Adjusted Header Charge Per Unit = $4.00 (from PO)
-3. **Recalculate the Total Header Charge Amount:** The system recalculates the total charge amount based on the adjusted charge per unit:
-   * **Corrected Total Header Charge Amount = Quantity × Adjusted Header Charge Per Unit**
-   * **Corrected Total Header Charge Amount = 1,500 units × $4.00 = $6,000.00**
-4. **Generate a Credit Note:** Since the original invoice total was higher than the corrected total, the system generates a credit note for the overcharged amount:
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Header Charge Amount**
-   * **Credit Note Amount = $7,500.00 - $6,000.00 = $1,500.00**
-5. **Process the Invoice:** The system processes the invoice with the corrected total charge amount of $6,000.00 and issues a credit note for $1,500.00 to account for the overcharged amount.
+1. **Het gefactureerde koptoeslag per eenheid afwijzen:** Het systeem accepteert het gefactureerde koptoeslag per eenheid van $5.00 niet omdat de afwijking de tolerantielimiet overschrijdt.
+2. **Pas de kopkosten per eenheid aan:** Het systeem past de kosten per eenheid aan zodat deze overeenkomen met de oorspronkelijke inkooporder of de goedgekeurde kosten per eenheid:
+   * Aangepaste headerkosten per eenheid = $4.00 (vanaf PO)
+3. **Het totale bedrag aan kopkosten opnieuw berekenen:** Het systeem herberekent het totale bedrag aan kosten op basis van de aangepaste kosten per eenheid:
+   * **Gecorrigeerd totaalbedrag koptekst = Aantal × aangepast koptoeslag per eenheid**
+   * **Gecorrigeerd totaalbedrag kopkosten = 1,500 eenheden × $4.00 = $6,000.00**
+4. **Een creditnota genereren:** Omdat het oorspronkelijke factuurtotaal hoger was dan het gecorrigeerde totaal, genereert het systeem een creditnota voor het te veel in rekening gebrachte bedrag:
+   * **Bedrag creditnota = Totaal origineel factuur - Gecorrigeerd totaal bedrag kopkosten**
+   * **Bedrag creditnota = $7,500.00 - $6,000.00 = $1,500.00**
+5. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totale bedrag van $6,000.00 en geeft een creditnota uit van $1,500.00 om het te veel in rekening gebrachte bedrag te verantwoorden.
 
-This approach ensures that the transaction is aligned with the original terms of the purchase order, maintaining accurate financial processing while correcting any overcharges.
+Deze aanpak zorgt ervoor dat de transactie in overeenstemming is met de oorspronkelijke voorwaarden van de inkooporder, waardoor een nauwkeurige financiële verwerking wordt gehandhaafd en eventuele meerkosten worden gecorrigeerd.

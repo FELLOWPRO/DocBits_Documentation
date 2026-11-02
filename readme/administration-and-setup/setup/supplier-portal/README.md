@@ -1,59 +1,61 @@
 # Leveranciersportaal
 
-## Overzicht
+Met het **leveranciersportaal** geeft een beheerder de leveranciers van zijn bedrijf toegang tot **DocBits**. De beheerder activeert het portaal en stelt in welke leveranciers het mogen gebruiken en welke informatie zij mogen bekijken.
 
-Deze pagina legt uit hoe je het **Leveranciersportaal** activeert en gebruikt, evenals waar je alle relevante instellingen kunt vinden. Het Leveranciersportaal stelt je in staat om leveranciers uit te nodigen voor **DocBits**. Zodra de toegang is verleend, kunnen leveranciers inloggen om de status van hun **Inkooporders** en **Facturen** direct binnen **DocBits** te bekijken.
+Een uitgenodigde leverancier registreert zich en meldt zich aan met een eigen account. Vervolgens kan de leverancier de beschikbaar gestelde informatie bekijken, zoals de status van de eigen inkooporders en facturen. De configuratie van de organisatie bepaalt welke functies beschikbaar zijn.
 
-## Hoe het Leveranciersportaal te Activeren
+## Video: het leveranciersportaal en toegang voorbereiden
 
-1.  Ga naar **Instellingen → Documentverwerking → Module**.
+Een beheerder legt de portaaloptie en abonnementkeuze uit, bereidt een uitnodiging voor en toont de registratiepagina. Activering, verzending, registratie en goedkeuring worden als afzonderlijke stappen uitgelegd.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  Schakel in de sectie **Verzending & Leverancier** de optie **Leveranciersportaal** in.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/nl.mp4" %}
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+[Open de video met Nederlandse ondertiteling en hoofdstukselectie](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/nl.html)
 
-## Leveranciersinstellingen
+## Admin: het portaal activeren
 
-Zodra de functie **Leveranciersportaal** is ingeschakeld, verschijnt er een nieuwe sectie **Leveranciersinstellingen** onderaan het menu **Instellingen**.
+1. Open in de instellingen de modules en selecteer **Documentintegratie**.
+2. Open **Verzending & Leverancier** en schakel **Leveranciersportaal** in.
+3. Verschijnt er een activeringsvenster? Controleer het getoonde abonnement en bevestig de gewenste activering.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_suppplier_settings.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-module-nl-20261031.png" alt="Echte Nederlandse Dev-weergave van Verzending &amp; Leverancier: Leveranciersportaal is al ingeschakeld in deze testorganisatie. De schakelaar is voor de opname niet gewijzigd."><figcaption><p>Echte Nederlandse Dev-weergave van Verzending &amp; Leverancier: Leveranciersportaal is al ingeschakeld in deze testorganisatie. De schakelaar is voor de opname niet gewijzigd.</p></figcaption></figure>
 
-[**Algemene instellingen leverancier**](../../settings/supplier-setting/supplier-general-settings.md): Hier kun je het **Leveranciersportaal** aanpassen door je bedrijfslogo te uploaden—weergegeven in de header van alle e-mailsjablonen—en door juridische documenten zoals de Gebruiksvoorwaarden en Privacybeleid te beheren.
+## Admin: het portaal inrichten
 
-[**E-mailsjablonen**](../../settings/supplier-setting/editing-email-templates.md)**:** Hier kun je de uitnodigings-e-mailsjablonen maken en testen die naar uitgenodigde leveranciers worden gestuurd.
+Richt het portaal voor uw organisatie in voordat u de eerste uitnodigingen verstuurt:
 
-**Leveranciersindeling:** Hier kun je de indelingen maken en beheren die definiëren welke informatie nieuwe leveranciers moeten verstrekken tijdens het registratieproces.
+- [Algemene leveranciersinstellingen](../../settings/supplier-setting/supplier-general-settings.md): Extra uitnodigingsvelden, statussen, logo en privacyinformatie.
+- [E-mailsjablonen](../../settings/supplier-setting/editing-email-templates.md): Inhoud en vormgeving van uitnodigingsberichten.
+- [Leverancierslayout](../../settings/supplier-setting/supplier-layout.md): Velden voor leveranciersregistratie en intern leveranciersbeheer. Selecteer het juiste layouttype.
+- [Leveranciersrechten](../../settings/supplier-setting/supplier-permissions.md): Interne medewerkers aan leveranciersgroepen koppelen. Deze interne verantwoordelijkheden staan los van de eigen portaaltoegang van een leverancier.
 
-[**Exportconfiguratie**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Hier kun je definiëren hoe gegevens worden gemapt en gesynchroniseerd tussen het **Leveranciersportaal** en het **Infor M3**-systeem met behulp van ION- en IDM-mappingbestanden.
+<figure><img src="../../../.gitbook/assets/dbdc-49-general-invitation-fields-nl-20261031.png" alt="Echte weergave van extra uitnodigingsvelden: de optie is al ingeschakeld en Velden behoudt de ingestelde waarde Assigned User. Er is niets opgeslagen."><figcaption><p>Echte weergave van extra uitnodigingsvelden: de optie is al ingeschakeld en Velden behoudt de ingestelde waarde Assigned User. Er is niets opgeslagen.</p></figcaption></figure>
 
-**Leveranciersmachtigingen**: Hier kun je de machtigingen configureren die leveranciers binnen het **Leveranciersportaal** zullen hebben. Je kunt ook leveranciers groeperen, waardoor het gemakkelijker wordt om toegang en instellingen voor meerdere leveranciers te beheren.
+## Admin: leveranciers zoeken en filteren
 
-Een gedetailleerde gids voor alle Leveranciersinstellingen is hier te [vinden](../../settings/supplier-setting/).
+Open het **leveranciersdashboard** voor intern beheer. Met de totalen **Alle leveranciers**, **In afwachting van goedkeuring** en **In afwachting van registratie** beperkt u de getoonde lijst. Gebruik **Zoeken op naam, nummer** om een leverancier op naam of nummer te zoeken.
 
-## Leveranciersdashboard <a href="#supplier-permissions" id="supplier-permissions"></a>
+Open de filterknop in het zoekveld voor **Leveranciersgroepen**, **Status** en **Gemaakt op**. **Leverancier per pagina** bepaalt de paginagrootte; **Filters wissen** verwijdert de actieve zoekfilters. Deze bedieningselementen horen bij de leverancierslijst.
 
-Je kunt het **Leveranciersdashboard** openen vanuit het menu aan de linkerkant, zoals hieronder weergegeven.
+<figure><img src="../../../.gitbook/assets/dbdc-49-filters-nl-20261031.png" alt="Filtermenu met Leveranciersgroepen, Status, Gemaakt op, Leverancier per pagina en Filters wissen. De opname toont de beschikbare bedieningselementen en bewijst geen functionele test van het filterresultaat."><figcaption><p>Filtermenu met Leveranciersgroepen, Status, Gemaakt op, Leverancier per pagina en Filters wissen. De opname toont de beschikbare bedieningselementen en bewijst geen functionele test van het filterresultaat.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+## Admin: zichtbare kolommen kiezen
 
-Al je gemaakte leveranciers worden hier weergegeven.
+Open naast de vernieuwknop de kolominstellingen. De knopinfo luidt **Tabelkolommen instellen voor organisatie**. Selecteer velden in **Verborgen kolommen** of **Zichtbare kolommen** en verplaats ze met de pijlen tussen de lijsten. Gebruik de sleepgrepen om de zichtbare kolommen te ordenen. **Klaar** past de selectie toe voor de organisatie; **Annuleren** sluit het venster zonder de selectie toe te passen. Gebruik horizontaal scrollen om kolommen te bereiken als de tabel breder is dan het scherm.
 
-## Filter voor Leveranciers
+<figure><img src="../../../.gitbook/assets/dbdc-49-columns-nl-20261031.png" alt="Kolominstellingen met Verborgen kolommen, Zichtbare kolommen, pijlen, Annuleren en Klaar. Het venster is met Annuleren gesloten zonder de selectie te wijzigen."><figcaption><p>Kolominstellingen met Verborgen kolommen, Zichtbare kolommen, pijlen, Annuleren en Klaar. Het venster is met Annuleren gesloten zonder de selectie te wijzigen.</p></figcaption></figure>
 
-Je kunt zoeken naar leveranciers op N**aam** of N**ummer**, of gebruik de geavanceerde filters om resultaten te verfijnen op:
+## Admin: vervalanalyse bekijken
 
-* **Leveranciersgroepen**
-* **Status**
-* **Gemaakt op**
+Gebruik **Analyse**, het grafiekpictogram naast de kolominstellingen, om het vervaloverzicht te tonen of te verbergen. De kaarten tonen **Verlopen** en **Verloopt over**, met de perioden **1 Maand**, **2 Maand**, **3 Maand**, **6 Maand** en **1 Jaar**, zoals ze in de toepassing staan. Als u een kaart selecteert, wordt de lijst beperkt tot de bijbehorende vervalperiode. De aantallen hebben betrekking op de vervaldatums van leveranciers.
 
-Je kunt ook specificeren hoeveel leveranciers per pagina moeten worden weergegeven.
+<figure><img src="../../../.gitbook/assets/dbdc-49-analytics-nl-20261031.png" alt="Analyse toont Verlopen en Verloopt over voor één, twee, drie of zes maanden en één jaar. De rijen zijn afgedekt en er is geen kaart geselecteerd."><figcaption><p>Analyse toont Verlopen en Verloopt over voor één, twee, drie of zes maanden en één jaar. De rijen zijn afgedekt en er is geen kaart geselecteerd.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+## Admin: leveranciers uitnodigen
 
-Daarnaast kun je snel filteren op de statussen **In afwachting van goedkeuring** of **In afwachting van registratie** door op de bijbehorende categorie links van de filterbalk te klikken.
+Open het leveranciersbeheer. Controleer vóór een uitnodiging het bedrijf, de leveranciersgroep, de contactpersoon en het e-mailadres. Bij het aanmaken van een leverancier vraagt Opslaan om de registratie-uitnodiging te versturen; het bewaart meer dan alleen een concept. Gebruik voor een bestaande leverancier de bijbehorende uitnodigingsactie. Een verzendbevestiging bewijst niet dat de e-mail is bezorgd of de registratie is voltooid.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-nl-20261031.png" alt="Intern dashboard met Alle leveranciers, In afwachting van goedkeuring, In afwachting van registratie, zoeken en werkbalk. De rijen met bestaande leveranciers zijn afgedekt."><figcaption><p>Intern dashboard met Alle leveranciers, In afwachting van goedkeuring, In afwachting van registratie, zoeken en werkbalk. De rijen met bestaande leveranciers zijn afgedekt.</p></figcaption></figure>
 
 ## Leveranciersgegevens (interne weergave)
 
@@ -63,71 +65,20 @@ Klik op de rij van een leverancier in het **Leveranciersdashboard** om de weerga
 
 Gebruik deze weergave om het leveranciersprofiel te controleren, ontbrekende gegevens aan te vullen of te corrigeren en de goedkeuringsbeslissing voor te bereiden. Voor een beschrijving van elke sectie zie [Leverancier Registratie](supplier-registration.md). Met de terugknop bovenaan de weergave keert u terug naar het **Leveranciersdashboard** zonder iets op te slaan.
 
-## Leverancier Status
+<figure><img src="../../../.gitbook/assets/dbdc-49-invitation-nl-20261031.png" alt="Leeg formulier Leverancier toevoegen met Leveranciersgroep, Leveranciersnaam, twee naamvelden voor de contactpersoon, E-mailadres van de leverancier, Annuleren en Opslaan. Het linker naamveld is voor de voornaam, het rechter voor de achternaam; de toepassing kort de lange labels hier af. Opslaan vraagt om een registratie-uitnodiging; voor deze opname is alleen Annuleren gebruikt."><figcaption><p>Leeg formulier Leverancier toevoegen met Leveranciersgroep, Leveranciersnaam, twee naamvelden voor de contactpersoon, E-mailadres van de leverancier, Annuleren en Opslaan. Het linker naamveld is voor de voornaam, het rechter voor de achternaam; de toepassing kort de lange labels hier af. Opslaan vraagt om een registratie-uitnodiging; voor deze opname is alleen Annuleren gebruikt.</p></figcaption></figure>
 
-Als je het **Leveranciersportaal** gebruikt, is het belangrijk om de verschillende statussen te begrijpen die leveranciers kunnen hebben. Hieronder staat een lijst van alle mogelijke leveranciersstatussen en hun betekenissen:
+## Admin: details vanuit het leveranciersdashboard openen
 
-* **Open**: Bestaande leverancier die nog niet is uitgenodigd voor het portaal.
-* **In afwachting van registratie**: Leverancier is uitgenodigd maar heeft het registratieproces nog niet voltooid.
-* **In afwachting van leveranciersinvoer**: Registratie is voltooid, maar verdere invoer of wijzigingen zijn vereist van de leverancier.
-* **In afwachting van goedkeuring**: Leverancier heeft de registratie voltooid en wacht op de eerste goedkeuring.
-* **In afwachting van AP-goedkeuring**: Leverancier heeft de eerste goedkeuring ontvangen en wacht op een tweede (Accounts Payable) goedkeuring.
-* **Goedgekeurd**: Leverancier heeft het proces voltooid en is volledig goedgekeurd.
-* **Afgewezen**: De registratie of goedkeuring van de leverancier is afgewezen.
+Interne medewerkers kunnen via een leveranciersrij in het dashboard de detailweergave openen. Deze bevat dezelfde zes onderdelen die de leverancier invult en toont de status. Hier kunnen medewerkers de ingediende informatie controleren, bijhouden en de bijbehorende goedkeuring uitvoeren. Voor deze opnamen is geen rij van een bestaande leverancier geopend.
 
-## Hulpmiddelen in het Leveranciersdashboard
+## Leverancier: registreren en DocBits openen
 
-Aan de rechterkant van de zoekbalk vind je verschillende hulpmiddelen die je helpen om efficiënter met het dashboard om te gaan.
+De leverancier opent de uitnodiging, maakt het bedoelde eigen account aan of gebruikt dit en volgt de ingestelde registratiestappen. Daarna kan de leverancier de beschikbaar gestelde informatie in DocBits bekijken. Het precieze proces en de beschikbare functies hangen af van de organisatie.
 
-### Tabel vernieuwen <a href="#refresh-table" id="refresh-table"></a>
+[Registratiehandleiding voor leveranciers](supplier-registration.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+## Toegang en status begrijpen
 
-Klik op deze knop om het dashboard te vernieuwen en de meest actuele gegevens en statussen te laden.
+Portaal geactiveerd, uitnodiging verstuurd, registratie voltooid en goedkeuring verleend zijn verschillende toestanden. Een leveranciersrecord of opgeslagen stamgegevens bewijzen niet dat de portaaltoegang gereed is. De leveranciersweergave volgt de toegewezen rechten en verschilt van de interne adminweergave.
 
-### Tabelkolommen instellen voor organisatie <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
-
-Klik op deze knop om een menu te openen waar je de zichtbaarheid van kolommen in de inkoopordertabel kunt beheren. Gebruik de selectievakjes en pijlknoppen om kolommen tussen de zichtbare en verborgen secties te verplaatsen. Je kunt ook kolommen opnieuw ordenen door de kolomnamen te slepen en neer te zetten. Klik op **Klaar** om je wijzigingen op te slaan.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
-
-### Analyse <a href="#analytics" id="analytics"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-Door op deze knop te klikken, wordt een nieuwe sectie geopend die laat zien hoeveel leveranciers op het punt staan te verlopen en wanneer.\
-Klik op een categorie om een filter toe te passen en alleen die leveranciers te bekijken.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
-
-## Leverancier Aanmaken en Registratie-e-mail Versturen
-
-### **Om een nieuwe leverancier aan te maken:**
-
-1.  Klik op het plus (+) pictogram in de rechterbovenhoek.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Vul de vereiste velden in en klik vervolgens op **Opslaan**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. De leverancier ontvangt automatisch een e-mail met een link om hun account aan te maken.
-
-### **Om een registratie-e-mail naar een bestaande leverancier te sturen:**
-
-1. Zoek de leverancier in het **Leveranciersdashboard**.
-2. Klik op het menu met drie stippen in de kolom **Acties**.
-3.  Selecteer **Magic Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Controleer de gegevens van de leverancier.
-5.  Klik op **Versturen** om de registratie-link per e-mail te verzenden.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
-
-## Hoe Werkt het Registratieproces voor de Leverancier?
-
-Nadat een uitnodigings-e-mail is verzonden, moet de leverancier het registratieproces voltooien om toegang te krijgen tot het **Leveranciersportaal**.
-
-Een gedetailleerde stapsgewijze gids over het registratieproces is hier te [vinden](supplier-registration.md).
+De opnamen zijn gemaakt met het geautoriseerde Dev-testaccount en de Nederlandse interface. De leesverzoeken van de interface en lijsten, de zichtbare bedieningselementen en de ongewijzigd geannuleerde formulieren zijn gecontroleerd. Portaalinstellingen en kolomselecties zijn niet opgeslagen; er zijn geen leveranciers aangemaakt of gewijzigd en geen uitnodigingen, registraties of goedkeuringen uitgevoerd. Zoek- en filterresultaten en e-mailbezorging zijn hiermee niet functioneel getest. De bestaande video blijft behouden; er is geen nieuwe beoordeling van audio, taal of synchronisatie uitgevoerd.

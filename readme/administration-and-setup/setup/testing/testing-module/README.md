@@ -1,5 +1,21 @@
 # Testing-Modul
 
+## Videoanleitung: den ersten Browsertest durchführen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/de.mp4" %}
+
+[Deutsches Video mit Untertiteln, Kapiteln und Transkript öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/de.html).
+
+**Dauer: 2 Min. 37 Sek.** Deutsche Oberfläche, Sprechertext und Untertitel.
+
+Die Anleitung zeigt den eingebauten **Live testing self-check** in der Entwicklungsumgebung: die drei Schritte ansehen, eine benannte Eingabe erstellen und speichern, den Browsertest starten und das gespeicherte Protokoll desselben Laufs öffnen. Das Template benötigt keine Parameter und verändert keine Geschäftsdaten. Ein bestandener Selbsttest bestätigt diese drei Prüfungen; Rechnungsextraktion, Freigabe oder ERP-Export sind damit nicht nachgewiesen.
+
+**Review-Version:** Die vollständige Hörprüfung und fachliche Abnahme stehen noch aus.
+
+{% hint style="info" %}
+**Gespeichertes Ergebnis prüfen.** Im aufgenommenen Stand (11.21.2) zeigte das Ergebnis-Badge einer Eingabe *Blockiert*, obwohl der laufende Test und sein gespeichertes Protokoll *Bestanden* meldeten. Das erneute Öffnen der Eingabe stellte die passende Anzeige wieder her. Prüfen Sie bei einer Abweichung das gespeicherte Protokoll desselben Laufs. Das erneute Öffnen ist ein beobachteter Workaround, keine bestätigte Fehlerbehebung.
+{% endhint %}
+
 ## Wofür das Testing-Modul da ist
 
 Das **Testing**-Modul führt Browser-Tests in Ihrer eigenen angemeldeten DocBits-Sitzung aus. Ein Test steuert die

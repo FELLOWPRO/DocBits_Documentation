@@ -55,7 +55,7 @@ Questo file è responsabile dell'estrazione dei dati da un file XML Peppol BIS B
   * **Può apparire più volte**: No.
 * **Indirizzo del fornitore riga 3**
   * **Sorgente**:`//AccountingSupplierParty/Party/PostalAddress/AddressLine/Line/text()`
-  * **Mappato su**: `<InvoINVOICEice><SUPPLIER><ADDRESS_LINE_3>`
+  * **Mappato su**: `<INVOICE><SUPPLIER><ADDRESS_LINE_3>`
   * **Può apparire più volte**: No.
 * **Partita IVA del fornitore**
   * **Sorgente**:`//AccountingSupplierParty/Party/PartyTaxScheme/CompanyID/text()`

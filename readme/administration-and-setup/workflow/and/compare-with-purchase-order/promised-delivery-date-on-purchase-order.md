@@ -1,6 +1,12 @@
-# Promised Delivery Date on Purchase Order
+# Data di consegna promessa sull'ordine di acquisto
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-it-it.png" alt="Data di consegna promessa sull&#x27;ordine di acquisto, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-it-it.png" alt="Data di consegna promessa sull&#x27;ordine di acquisto, Versione 3" width="634"><figcaption><p>Versione 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-it-it.png" alt="Data di consegna promessa sull&#x27;ordine di acquisto, Versione 4" width="634"><figcaption><p>Versione 4</p></figcaption></figure>
+
+Il modo in cui viene calcolata la finestra di tolleranza, con esempi come "oggi o domani", è spiegato in [Date Tolerances](../date-tolerances.md).
 
 ## **Scopo**
 
@@ -8,16 +14,16 @@ Questa scheda DocBits è progettata per facilitare il confronto preciso tra le d
 
 ## **Componenti della scheda**
 
-1. **Operator**
+1. **Operatore**
    * **Descrizione:** Definisce la condizione applicata per confrontare le date di consegna.
    * **Opzioni:**
-     * **Equals (=):** Verifica se la data di consegna promessa sulla riga articolo corrisponde alla data di consegna dell'ordine d'acquisto.
-     * **Not Equal (≠):** Garantisce che la data di consegna promessa sulla riga articolo non corrisponda alla data sull'ordine d'acquisto.
-     * **Greater Than (>):** Verifica se la data di consegna promessa della riga articolo è successiva alla data di consegna dell'ordine d'acquisto.
-     * **Greater or Equals (≥):** Verifica se la data di consegna promessa della riga articolo è uguale o successiva alla data di consegna dell'ordine d'acquisto.
+     * **Uguale (=):** Verifica se la data di consegna promessa sulla riga articolo corrisponde alla data di consegna dell'ordine d'acquisto.
+     * **Diverso (≠):** Garantisce che la data di consegna promessa sulla riga articolo non corrisponda alla data sull'ordine d'acquisto.
+     * **Maggiore di (>):** Verifica se la data di consegna promessa della riga articolo è successiva alla data di consegna dell'ordine d'acquisto.
+     * **Maggiore o uguale (≥):** Verifica se la data di consegna promessa della riga articolo è uguale o successiva alla data di consegna dell'ordine d'acquisto.
      * **Less Than (<):** Conferma se la data di consegna promessa della riga articolo è precedente alla data di consegna dell'ordine d'acquisto.
-     * **Less or Equals (≤):** Verifica se la data di consegna promessa della riga articolo è uguale o precedente alla data di consegna dell'ordine d'acquisto.
-2. **Value**
+     * **Minore o uguale (≤):** Verifica se la data di consegna promessa della riga articolo è uguale o precedente alla data di consegna dell'ordine d'acquisto.
+2. **Valore**
    * **Descrizione:** Specifica un margine di errore ammissibile nel confronto delle date di consegna.
    * **Dettaglio:** Gli utenti definiscono il numero di giorni di cui la data di consegna della riga articolo può differire dalla data di consegna promessa.
 

@@ -4,7 +4,7 @@ Questa guida spiega come configurare un workflow di DocBits per attivare automat
 
 ## Passo 1: Creare un Prompt
 
-Prima di collegare un prompt a un workflow:
+Prima di collegare un prompt a un flusso di lavoro:
 
 * Assicurati che il tuo prompt sia già stato creato
 * Includi tutte le **variabili** necessarie nel corpo del prompt.

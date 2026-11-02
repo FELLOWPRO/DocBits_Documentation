@@ -1,36 +1,38 @@
-# Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance
+# Caso 11a: Eccesso di quantità rifiutato, prezzo unitario entro tolleranza
+
+Lo scenario seguente illustra una mappatura configurata, non un modello predefinito di cui sia stata verificata la distribuzione. L’output effettivo, gli importi, i segni e i tipi di documento dipendono dalle regole e dalle espressioni `conflict_resolution` attive, dalla mappatura di esportazione e dalle decisioni di approvazione. Qualsiasi nota di debito o di credito descritta è subordinata a tale configurazione; l’esempio non ne garantisce l’emissione automatica né la conformità legale.
 
 ## Scenario:
 
-The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+La quantità sulla fattura supera l'intervallo accettabile (positivo) e viene rifiutata, ma il prezzo unitario rientra nella tolleranza.
 
-## Action:
+## Azione:
 
-The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+Il sistema adegua la quantità al livello approvato, mantenendo il prezzo unitario ed elabora la transazione. Qualsiasi quantità in eccesso viene rifiutata e non fatturata.
 
-## Example:
+## Esempio:
 
 * **Purchase Order (PO):**
   * Quantity: 100 units
-  * Unit Price: $8.00 per unit
+  * Prezzo unitario: $8.00 per unità
   * Total Amount: $800.00
 * **Invoice Received:**
-  * Quantity: 110 units (outside tolerance of 10%, rejected)
-  * Unit Price: $8.00 per unit (within tolerance)
+  * Quantità: 110 unità (fuori tolleranza del 10%, rifiutata)
+  * Prezzo unitario: $8.00 per unità (entro la tolleranza)
   * Total Amount: $880.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolleranza prezzo unitario: ±2%
 
-Since the quantity (110 units) exceeds the acceptable tolerance limit (positive variance of 10%) and is not approved, but the unit price ($8.00) is within tolerance, the system will:
+Poiché la quantità (110 unità) supera il limite di tolleranza accettabile (variazione positiva del 10%) e non è approvata, ma il prezzo unitario ($8.00) rientra nella tolleranza, il sistema:
 
-1. **Reject the Excess Quantity:** The system rejects the quantity that exceeds the approved tolerance level.
-2. **Adjust the Quantity:** The system adjusts the quantity to match the approved level specified in the purchase order.
-   * Approved Quantity = 100 units (from PO)
-3. **Maintain the Unit Price:** The unit price of $8.00 per unit is within tolerance and remains unchanged.
-4. **Recalculate the Total Amount:** The system calculates the total amount using the approved quantity and the accepted unit price:
-   * **Total Amount = Approved Quantity × Unit Price**
-   * **Total Amount = 100 units × $8.00 per unit = $800.00**
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $800.00, reflecting only the approved quantity and unit price. The excess quantity of 10 units is rejected and not invoiced.
+1. **Rifiutare la quantità in eccesso:** Il sistema rifiuta la quantità che supera il livello di tolleranza approvato.
+2. **Rettifica la quantità:** Il sistema rettifica la quantità in modo che corrisponda al livello approvato specificato nell'ordine d'acquisto.
+   * Quantità approvata = 100 unità (da PO)
+3. **Mantenere il prezzo unitario:** Il prezzo unitario di $8.00 per unità rientra nella tolleranza e rimane invariato.
+4. **Ricalcola l'importo totale:** Il sistema calcola l'importo totale utilizzando la quantità approvata e il prezzo unitario accettato:
+   * **Importo totale = Quantità approvata × Prezzo unitario**
+   * **Importo totale = 100 unità × $8.00 per unitàà = $800.00**
+5. **Elabora la fattura:** Il sistema elabora la fattura con l'importo totale rettificato di $800.00, riflettendo solo la quantità approvata e il prezzo unitario. La quantità in eccesso di 10 unità viene rifiutata e non fatturata.
 
-This approach ensures that the invoiced amount aligns with the agreed terms in the purchase order, even when the supplier attempts to invoice for an excess quantity.
+Questo approccio garantisce che l'importo fatturato sia allineato ai termini concordati nell'ordine di acquisto, anche quando il fornitore tenta di fatturare una quantità in eccesso.

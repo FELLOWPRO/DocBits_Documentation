@@ -1,6 +1,6 @@
-# Purchase Invoice - 2nd Approval Quantity Export
+# Fattura di acquisto: esportazione dopo la seconda approvazione della quantità
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_6.png" alt="DocBits Acquisto Ordine Esporta 6"><figcaption></figcaption></figure>
+
 
 Questo titolo indica che la regola è configurata per gestire la seconda fase di approvazione delle fatture d'acquisto con particolare attenzione ai dettagli sulle quantità, garantendo che le quantità sulla fattura corrispondano a quelle sull'ordine di acquisto originale.
 
@@ -19,8 +19,8 @@ Questo titolo indica che la regola è configurata per gestire la seconda fase di
 
 #### Scopo di Questa Regola:
 
-* **Ensure Accuracy and Consistency**: verificando che le quantità corrispondano tra la conferma d'ordine e l'ordine di acquisto, il sistema aiuta a mantenere l'accuratezza dell'inventario e previene discrepanze che potrebbero influire sulla reportistica finanziaria o sulla gestione delle scorte.
-* **Streamline Financial Processing**: l'automazione dell'esportazione dei dati una volta confermate le quantità riduce la gestione manuale e accelera il ciclo di elaborazione finanziaria.
-* **Enhance Compliance and Oversight**: richiedere una seconda approvazione per la verifica delle quantità aggiunge un ulteriore livello di supervisione, fondamentale per la conformità alle politiche e ai controlli finanziari.
+* **Garantire precisione e coerenza**: verificando che le quantità corrispondano tra la conferma d'ordine e l'ordine di acquisto, il sistema aiuta a mantenere l'accuratezza dell'inventario e previene discrepanze che potrebbero influire sulla reportistica finanziaria o sulla gestione delle scorte.
+* **Semplificare l’elaborazione finanziaria**: l'automazione dell'esportazione dei dati una volta confermate le quantità riduce la gestione manuale e accelera il ciclo di elaborazione finanziaria.
+* **Migliorare conformità e supervisione**: richiedere una seconda approvazione per la verifica delle quantità aggiunge un ulteriore livello di supervisione, fondamentale per la conformità alle politiche e ai controlli finanziari.
 
 Questa regola è un chiaro esempio di come l'automazione dei workflow possa essere utilizzata efficacemente per garantire una gestione precisa ed efficiente dei documenti finanziari all'interno di un'organizzazione, in particolare nel contesto di processi di acquisto che coinvolgono grandi volumi di transazioni che richiedono una convalida meticolosa.

@@ -2,8 +2,6 @@
 
 La ricerca a testo completo consente agli utenti di cercare nel contenuto effettivo dei documenti e in ogni campo estratto, non solo nei nomi dei file e negli ID.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-required-dialog.png" alt="Finestra di dialogo „Fulltext Module Required“ quando il modulo è disattivato"><figcaption><p>La finestra «Fulltext Module Required» compare nelle pagine che dipendono dal modulo.</p></figcaption></figure>
-
 ## Senza il modulo
 
 Quando la ricerca a testo completo non è attiva, la barra di ricerca della dashboard può interrogare solo un piccolo insieme di campi strutturati. Il testo libero ripiega sul confronto con:
@@ -19,7 +17,7 @@ Tutto ciò che non rientra in questi campi viene ignorato. Non esistono ricerca 
 
 L'attivazione della ricerca a testo completo abilita la ricerca su ogni campo estratto del documento e sostituisce la barra di ricerca della dashboard con un linguaggio di interrogazione esteso. Le query possono combinare filtri sui campi, intervalli, operatori logici, date relative e filtri intelligenti.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Barra di ricerca della dashboard con una query per intervallo e l'elenco dei documenti filtrato"><figcaption><p>La barra di ricerca della dashboard accetta il linguaggio di interrogazione esteso. Digitare una query e premere <kbd>Invio</kbd> per filtrare l'elenco dei documenti.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u049-it.png" alt="Inserimento di una query sull’importo nella dashboard."><figcaption><p>Inserimento di una query sull’importo nella dashboard.</p></figcaption></figure>
 
 ### Query mirate per campo
 
@@ -102,7 +100,7 @@ ai: invoices from Ruiz over 1000 last quarter
 
 Ricerca IA e ricerca vettoriale non sono intercambiabili: la vettoriale trova contenuti simili, la ricerca IA traduce il linguaggio in filtri. La ricerca IA non ha un interruttore dedicato — si appoggia agli indici esistenti, testo completo e vettoriale.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-settings-page.png" alt="Pagina „Impostazioni ricerca a testo completo“ con i sotto-indici Documents, Vector Index e Fulltext (Text)"><figcaption><p>Impostazioni ricerca a testo completo. L'indice vettoriale ha un proprio interruttore; l'indice di testo funziona finché il modulo è attivo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u048-it.png" alt="Impostazioni e informazioni sull’indicizzazione del testo completo. Alcuni comandi e indicatori dell’indicizzazione restano in inglese."><figcaption><p>Impostazioni e informazioni sull’indicizzazione del testo completo. Alcuni comandi e indicatori dell’indicizzazione restano in inglese.</p></figcaption></figure>
 
 ## Prerequisiti
 
@@ -113,11 +111,11 @@ Ricerca IA e ricerca vettoriale non sono intercambiabili: la vettoriale trova co
 ## Come attivare il modulo
 
 1. Aprire **Impostazioni → Elaborazione documenti → Modulo**.
-2. Nel gruppo **Dashboards**, attivare **Full text search**.
+2. Nel gruppo **Cruscotti**, attivare **Ricerca testo completo**.
 3. Confermare la finestra di sottoscrizione, se compare.
 4. Attendere il completamento della prima reindicizzazione prima di affidarsi alle query a testo completo.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Pagina „Moduli“ con l'interruttore „Full text search“ sotto il gruppo Dashboards"><figcaption><p>L'interruttore <strong>Full text search</strong> si trova in <strong>Modulo → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u050-it.png" alt="Disponibilità del modulo di ricerca nel testo completo."><figcaption><p>Disponibilità del modulo di ricerca nel testo completo.</p></figcaption></figure>
 
 {% hint style="info" %}
 La tariffazione del modulo di ricerca a testo completo è gestita dal vostro contatto commerciale DocBits. La conferma dell'abbonamento appare alla prima attivazione del modulo.
@@ -128,3 +126,5 @@ La tariffazione del modulo di ricerca a testo completo è gestita dal vostro con
 * [Impostazioni ricerca a testo completo](../../log-settings/fulltext-search-settings.md) — gestione dell'indice e interruttore dell'indice vettoriale.
 * [Funzioni Fulltext e Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API di scripting per `fulltext_search()` e `vector_search()`.
 * [Panoramica dei moduli](README.md) — elenco completo dei moduli opzionali di DocBits.
+
+La ricerca nel testo completo richiede il modulo e le autorizzazioni corrispondenti. Se appare un avviso di modulo richiesto, chiedere all’amministratore di verificarne disponibilità e accesso.

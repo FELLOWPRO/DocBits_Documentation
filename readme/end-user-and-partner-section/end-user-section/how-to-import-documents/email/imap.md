@@ -2,11 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-Qui è sufficiente inserire le informazioni richieste del provider di posta elettronica: protocollo, crittografia, nome del server, porta, nome utente, indirizzo e-mail e password, oltre alla cartella di posta.
+Scegli IMAP come protocollo e inserisci i dati del tuo provider di posta: nome del server, porta, crittografia, nome utente, indirizzo e-mail e password. Nei passaggi successivi imposti le opzioni e la cartella di posta.
 
-<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-it-20261006.png" alt="La finestra Configurazione del server di posta elettronica con il protocollo IMAP, il nome del server, la porta 993, la crittografia SSL e il nome utente e l'indirizzo e-mail compilati."><figcaption><p>La finestra «Configurazione del server di posta elettronica» con valori di esempio: protocollo IMAP, server imap.example.com, porta 993, crittografia SSL.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-it-20261006.png" alt="Finestra di configurazione del server di posta con protocollo IMAP, nome del server, porta 993, crittografia SSL, nome utente, indirizzo e-mail e password"><figcaption><p>Configurazione del server con valori di esempio. Sostituiscili con i dati del tuo provider di posta.</p></figcaption></figure>
 
-## Note
+Da tenere presente
 
-* Inserite tutte le informazioni necessarie nell'interfaccia. Le altre informazioni, come server e porta, dipendono dal provider (una rapida ricerca sul web dovrebbe bastare).
-* Cartella e Move-Imported qui hanno la stessa funzione. La cartella non può essere disattivata; se lasciata vuota, viene usata per impostazione predefinita Inbox.
+* Inserisci tutte le informazioni necessarie nell’interfaccia. Altri dati, come server e porta, dipendono dal provider (una rapida ricerca online può aiutare).
+* Cartella e Sposta importati hanno qui la stessa funzione. La cartella non può essere disattivata; se resta vuota viene usata la posta in arrivo per impostazione predefinita.

@@ -1,6 +1,8 @@
-# Compare values in table
+# Confronta i valori nella tabella
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v1-it-it.png" alt="Confronta i valori nella tabella, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v2-it-it.png" alt="Confronta i valori nella tabella, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 
@@ -10,12 +12,12 @@ Questa scheda DocBits esegue un confronto tra i valori di due colonne specificat
 
 * **Confronto di colonne:** Questa scheda consente agli utenti di impostare condizioni per confrontare i valori tra due colonne nella stessa tabella.
 * **Operatori:** Sono disponibili i seguenti operatori per definire il confronto:
-  * **Equals (=):** Verifica se i valori nelle due colonne sono esattamente uguali.
-  * **Not Equals (≠):** Garantisce che i valori nelle due colonne non siano uguali.
-  * **Greater Than (>):** Conferma che i valori nella prima colonna siano maggiori di quelli nella seconda colonna.
-  * **Greater or Equals (≥):** Garantisce che i valori nella prima colonna siano maggiori o uguali a quelli nella seconda colonna.
-  * **Lesser Than (<):** Verifica se i valori nella prima colonna sono minori di quelli nella seconda colonna.
-  * **Less or Equals (≤):** Garantisce che i valori nella prima colonna siano minori o uguali a quelli nella seconda colonna.
+  * **Uguale (=):** Verifica se i valori nelle due colonne sono esattamente uguali.
+  * **Diverso (≠):** Garantisce che i valori nelle due colonne non siano uguali.
+  * **Maggiore di (>):** Conferma che i valori nella prima colonna siano maggiori di quelli nella seconda colonna.
+  * **Maggiore o uguale (≥):** Garantisce che i valori nella prima colonna siano maggiori o uguali a quelli nella seconda colonna.
+  * **Minore di (<):** Verifica se i valori nella prima colonna sono minori di quelli nella seconda colonna.
+  * **Minore o uguale (≤):** Garantisce che i valori nella prima colonna siano minori o uguali a quelli nella seconda colonna.
 * **Selezione di tabella e colonne:** Gli utenti specificano la tabella e le due colonne che desiderano confrontare.
 
 ## **Utilizzo:**

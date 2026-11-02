@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.11, pytest-8.4.2, pluggy-1.6.0
+rootdir: /repo
+plugins: platformdirs-4.12.3
+collected 53 items
+
+tests/unit/test_CORE_6274_video_content.py ....                          [  7%]
+tests/unit/test_CORE_6274_video_manifest.py ....                         [ 15%]
+tests/unit/test_CORE_6274_video_mux.py .....                             [ 24%]
+tests/unit/test_CORE_6274_video_qa.py .......                            [ 37%]
+tests/unit/test_CORE_6274_video_scenes.py .........                      [ 54%]
+tests/unit/test_CORE_6274_video_timing.py ..........                     [ 73%]
+tests/unit/test_CORE_6274_video_tts_cache.py ..............              [100%]
+
+============================= 53 passed in 50.55s ==============================

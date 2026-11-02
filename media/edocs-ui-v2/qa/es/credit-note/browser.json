@@ -1,0 +1,30 @@
+{
+  "locale": "es",
+  "metadata": {
+    "duration": 116.766667,
+    "width": 1280,
+    "height": 720,
+    "language": "es",
+    "cues": 22
+  },
+  "playback": {
+    "time": 0.308114,
+    "frames": 14
+  },
+  "seek": {
+    "time": 58.383333,
+    "ready": 4
+  },
+  "mobile": {
+    "scroll": 380,
+    "width": 380,
+    "captions": [
+      "Una nota de crédito electrónica aparece\ncomo Invoice. Consulte el XML original. El"
+    ],
+    "focusable": 0
+  },
+  "keyboardPlays": true,
+  "ended": true,
+  "range206": true,
+  "errors": []
+}

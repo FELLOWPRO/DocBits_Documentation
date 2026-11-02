@@ -1,0 +1,40 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.833
+e-SLOG 1.6 i 2.0 mają osobne wpisy. Te
+dwie wersje mają różne struktury XML.
+
+formats_02
+00:00:06.833 --> 00:00:12.100
+Dopasuj schemat źródłowy zamiast wybierać
+regułę na podstawie nazwy pliku.
+
+workflow_01
+00:00:12.850 --> 00:00:18.318
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:18.318 --> 00:00:23.891
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:23.891 --> 00:00:26.700
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:27.450 --> 00:00:33.476
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:33.476 --> 00:00:39.408
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:39.408 --> 00:00:42.233
+podatkowego ani dostarczenia przez sieć.
+

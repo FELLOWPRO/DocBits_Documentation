@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.947
+MyInvois possède des entrées de règles de
+facture et d’avoir. Le chemin d’extraction
+
+formats_02
+00:00:05.947 --> 00:00:11.373
+examiné repose sur XML. La plateforme
+nationale accepte aussi JSON, mais cela ne
+
+formats_03
+00:00:11.373 --> 00:00:16.324
+démontre pas la prise en charge de
+l’import JSON par cette correspondance
+
+formats_04
+00:00:16.324 --> 00:00:16.867
+DocBits.
+
+workflow_01
+00:00:17.617 --> 00:00:23.387
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:23.387 --> 00:00:29.297
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:29.297 --> 00:00:30.367
+l’active pas.
+
+accept_01
+00:00:31.117 --> 00:00:36.098
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:36.098 --> 00:00:41.775
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:41.775 --> 00:00:44.967
+la validation fiscale ni la transmission
+réseau.
+

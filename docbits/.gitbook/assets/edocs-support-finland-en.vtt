@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.886
+Finvoice 1.3, 2.0, 2.01 and 3.0 have
+separate entries. TEAPPSXML is another
+
+formats_02
+00:00:09.886 --> 00:00:16.388
+family. Check the source version before
+choosing a mapping. The TEAPPSXML label
+
+formats_03
+00:00:16.388 --> 00:00:18.267
+does not state a release.
+
+workflow_01
+00:00:19.017 --> 00:00:23.510
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:23.510 --> 00:00:28.572
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:28.572 --> 00:00:29.600
+activate it.
+
+accept_01
+00:00:30.350 --> 00:00:35.110
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:35.110 --> 00:00:40.114
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:40.114 --> 00:00:41.067
+delivery.
+

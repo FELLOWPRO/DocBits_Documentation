@@ -6,7 +6,7 @@ This page explains how to get a DocBits account and how to sign in when you do n
 * [Forgot password](#forgot-password) — reset your password with a reset link.
 * [First password for admin-created accounts](#first-password-for-admin-created-accounts) — set the first password for an account your administrator created for you.
 
-Signing in with an existing account, and Two-Factor Authentication, are covered in [Two-Factor Authentication (2FA)](../../overview-and-basics/two-factor-authentication.md). Use the language menu at the top right of these forms if you need another display language.
+Signing in with an existing account, and Two-Factor Authentication, are covered in [Two-Factor Authentication (2FA)](../../security/two-factor-authentication.md). Use the language menu at the top right of these forms if you need another display language.
 
 ## Registration
 
@@ -45,6 +45,8 @@ Instead of a password, you can click the **Google** or **Microsoft** button unde
 After you submit the form, DocBits shows a confirmation page and sends a **verification email** to the address you entered. Open the email and click the link inside — it takes you to a confirmation page that verifies your address. If the email does not arrive, the confirmation page offers a **resend** option. Once the address is verified, click **Sign in** and log in with your email and password.
 
 ## Forgot password
+
+DocBits stores login passwords as salted, one-way hashes. An existing password cannot be retrieved from its hash, so this procedure sets a new password. See [Secure Storage of Credentials](../../security/secure-storage-of-credentials.md) for password storage and recovery details.
 
 If you forgot your password:
 

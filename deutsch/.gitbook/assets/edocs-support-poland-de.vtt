@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:08.621
+Für KSeF gibt es generische Einträge sowie
+Einträge für FA2 und FA3. FA2 und FA3
+
+formats_02
+00:00:08.621 --> 00:00:13.822
+verwenden unterschiedliche Strukturen.
+Bestätigen Sie das Quellschema und testen
+
+formats_03
+00:00:13.822 --> 00:00:19.733
+Sie die passende Zuordnung. Das Einlesen
+übermittelt keine Rechnung an KSeF.
+
+workflow_01
+00:00:20.483 --> 00:00:25.789
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:25.789 --> 00:00:32.499
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:32.499 --> 00:00:34.133
+aktiviert ihn nicht.
+
+accept_01
+00:00:34.883 --> 00:00:39.515
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:39.515 --> 00:00:45.645
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:45.645 --> 00:00:48.767
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

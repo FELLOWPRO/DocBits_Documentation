@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.450
+Brasil tiene entradas NF-e, NFC-e, CT-e,
+NFS-e y SPED NFS-e. NFS-e incluye las
+
+formats_02
+00:00:06.450 --> 00:00:12.571
+versiones 1.00 y de 2.00 a 2.04; SPED
+incluye 1.00.02 y 1.01. Son familias de
+
+formats_03
+00:00:12.571 --> 00:00:18.533
+documentos diferentes. Una versión NFS-e
+configurada no certifica todos los
+
+formats_04
+00:00:18.533 --> 00:00:24.733
+esquemas municipales ni todos los diseños
+nacionales de facturas de servicios.
+
+workflow_01
+00:00:25.483 --> 00:00:30.835
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:30.835 --> 00:00:36.594
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:36.594 --> 00:00:37.433
+activa.
+
+accept_01
+00:00:38.183 --> 00:00:42.723
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:42.723 --> 00:00:47.982
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:47.982 --> 00:00:51.833
+no demuestra la autorización fiscal ni la
+entrega por red.
+

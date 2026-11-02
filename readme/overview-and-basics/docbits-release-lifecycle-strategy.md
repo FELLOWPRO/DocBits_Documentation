@@ -1,8 +1,18 @@
 # DocBits Release Lifecycle Strategy
 
-DocBits uses two release channels, **VESTA** and **NOVA**, to introduce new releases and give your organization time to evaluate them before adoption. During parallel production, you choose whether and when to switch to the new release. FELLOWPRO then manages the rollover that makes it the common production release for all customers.
+With the rollout of the upcoming minor release R1.1,&#x20;DocBits will introduce a new release lifecycle strategy based on two release channels: VESTA and NOVA.
 
-The version numbers in this guide—R1.0.x, R1.1.x, and R1.2—are illustrative. The same lifecycle repeats with successive releases; `x` represents updates within a release series.
+**NOVA** is the channel for introducing new major and minor releases, such as **Rx** and **Rx.y**. **VESTA** continues to provide the existing production release.
+
+{% hint style="success" %}
+**Important: One URL for both VESTA and NOVA**
+
+Continue using your usual DocBits application URL. VESTA and NOVA do not have separate access URLs: both release channels are accessed through the same standard URL you already use for the corresponding environment.
+
+To switch channels, go to **Settings > Company Information > Release Channel** and select **VESTA** or **NOVA**. There is no need to log out and log in again. Your next click in the application automatically takes you to the release on the selected channel.
+
+Before switching, check that both channels are ready and available in your environment, as explained in [Check environment availability before switching](#important-check-environment-availability-before-switching).
+{% endhint %}
 
 ## Release channels
 
@@ -13,7 +23,7 @@ The version numbers in this guide—R1.0.x, R1.1.x, and R1.2—are illustrative.
 
 ## Lifecycle overview
 
-![DocBits VESTA and NOVA three-phase release lifecycle](docbits-release-lifecycle-strategy.png)
+![DocBits VESTA and NOVA three-phase release lifecycle](../.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
 Each cycle consists of three phases. A FELLOWPRO-managed rollover then brings the NOVA production release into VESTA and starts the next cycle.
 
@@ -42,10 +52,13 @@ VESTA R1.0.x and NOVA R1.1.x are both live production releases. Your organizatio
 To adopt NOVA during this phase:
 
 1. Evaluate the release in the NOVA sandbox.
-2. Decide when your organization is ready to use it in production.
-3. Switch from VESTA to NOVA using the **Release Channel** setting in the DocBits application.
+2. Check the release announcement or confirm with FELLOWPRO Support that both production environments are ready and available for switching.
+3. Decide when your organization is ready to use the new release in production.
+4. In DocBits, go to **Settings > Company Information > Release Channel** and select **NOVA**.
 
-This switch is self-service. FELLOWPRO does not select which customers should move to NOVA. You may continue using VESTA throughout parallel production and adopt the new release through the subsequent rollover.
+During parallel production, you can also switch back to VESTA by going to **Settings > Company Information > Release Channel** and selecting **VESTA**.
+
+Channel switching is self-service. FELLOWPRO does not select which customers should move to NOVA. You may continue using VESTA throughout parallel production and adopt the new release through the subsequent rollover.
 
 ## Release rollover and the next cycle
 
@@ -67,30 +80,63 @@ FELLOWPRO announces the planned rollover to all customers in advance by email an
 
 The same three phases then repeat with the new version numbers.
 
+The diagram below illustrates the release cycle described above in greater detail.
+
+![Detailed DocBits VESTA and NOVA release cycle](../.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
+
 ### Release cadence
 
-FELLOWPRO currently plans for a release cycle of approximately **3–4 months**. This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date.
+The planned cadence differs between major and minor releases introduced through NOVA and hotfixes applied to the production releases in VESTA and NOVA.
 
-The timing of each rollover and the recycling of NOVA depends on both **release readiness and acceptance of the planned transition by all customers**. If additional time is needed to achieve release readiness, address customer concerns, or obtain acceptance from every customer, the cycle will be extended and may take longer than four months.
+#### Major and minor releases through NOVA
+
+FELLOWPRO currently plans a cycle of approximately **3–4 months for major and minor releases** introduced through the NOVA release channel, such as **Rx** and **Rx.y**. This estimate applies to the release lifecycle described above, including the subsequent rollover into VESTA and recycling of NOVA for the next release. It does not describe the frequency of hotfixes.
+
+This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date. The timing of each rollover and the recycling of NOVA depends on both **release readiness and acceptance of the planned transition by all customers**. If additional time is needed to achieve release readiness, address customer concerns, or obtain acceptance from every customer, the cycle will be extended and may take longer than four months.
 
 FELLOWPRO communicates each planned rollover in advance. Any indicative timing remains subject to these conditions being met.
+
+#### Hotfixes in VESTA production
+
+Hotfixes for the VESTA production release are expected approximately **once a month, or at somewhat longer intervals**. This is an indicative cadence rather than a fixed schedule or guaranteed delivery date.
+
+#### Stabilization hotfixes in NOVA production
+
+A general cadence cannot be specified for stabilization hotfixes in NOVA production. NOVA introduces entirely new releases, so the timing and frequency of these hotfixes depend on the stabilization needs of the particular release. They therefore do not follow the indicative monthly cadence for VESTA or the 3–4 month cycle for major and minor releases.
 
 ## Responsibilities and customer choice
 
 | Transition | Who manages it | What to expect |
 | --- | --- | --- |
-| **Switch from VESTA to NOVA during Phase 3** | Your organization | Evaluate NOVA in the sandbox and choose whether and when to switch using the application's Release Channel setting. |
+| **Switch between VESTA and NOVA during Phase 3** | Your organization | Evaluate NOVA in the sandbox and choose whether and when to switch. Use **Settings > Company Information > Release Channel** to select NOVA or return to VESTA during parallel production. |
 | **Roll over NOVA R1.1.x into VESTA R1.1.x** | FELLOWPRO | Review the advance email announcement, raise any concerns or objections, and confirm acceptance of the planned transition. FELLOWPRO proceeds once the release is ready and all customers have accepted. |
 
+## Important: Check environment availability before switching
+
+Only switch between VESTA and NOVA through **Settings > Company Information > Release Channel** when releases are available in parallel and ready for use in the **corresponding environment on both channels**. Sandbox and production availability must be assessed separately:
+
+- **Sandbox:** You can switch from VESTA Sandbox to NOVA Sandbox once the new release is ready and available in NOVA Sandbox, while VESTA Sandbox remains available. The same readiness requirement applies when switching back.
+- **Production:** You can switch between VESTA Production and NOVA Production only while both production releases are ready and available in parallel. Availability in NOVA Sandbox does not mean that NOVA Production is ready for use.
+
+Switching when the corresponding environment is not ready or available may disrupt your operations. FELLOWPRO sends release announcement emails a few days before releases become available in sandbox or production. Check these announcements before switching. If you are unsure whether a switch is available or appropriate for your organization, contact FELLOWPRO Support for confirmation.
+
+**Planned availability control:** FELLOWPRO is working on a Yes/No control that will allow Support to make the Release Channel setting read-only or enable channel switching independently of a software deployment. Once this control is available, Support will use it to enable switching when the corresponding environments are ready and to keep the setting read-only otherwise. This is intended to allow customers to switch safely between VESTA and NOVA when the setting is enabled. Until this control is introduced, an editable setting alone should not be treated as confirmation that switching is appropriate; follow the release announcements or confirm with Support.
+
 ## Frequently asked questions
+
+### How do we know whether it is safe to switch between VESTA and NOVA?
+
+Check the release announcement for the environment you intend to use, or ask FELLOWPRO Support to confirm that switching is appropriate. Both corresponding environments must be ready and available in parallel; sandbox readiness does not confirm production readiness. See [Important: Check environment availability before switching](#important-check-environment-availability-before-switching) above for the full guidance, including the planned control for enabling or disabling channel switching.
 
 ### Can we remain on VESTA while NOVA is available in production?
 
 Yes. During Phase 3, you may remain on VESTA or switch to NOVA when your organization is ready. At the subsequent rollover, the new release becomes VESTA and the previous release is retired.
 
-### How do we switch to NOVA?
+### How do we switch to NOVA or back to VESTA?
 
-Once NOVA is available in production, use the **Release Channel** setting in the DocBits application. Your organization makes this choice independently, based on its needs and evaluation of the release in the NOVA sandbox.
+First, check that the corresponding environment is ready and available on both channels, as explained in [Check environment availability before switching](#important-check-environment-availability-before-switching). Sandbox availability and production availability are separate.
+
+During Phase 3, go to **Settings > Company Information > Release Channel** in DocBits and select **NOVA** to adopt the new production release, or **VESTA** to return to the current VESTA production release. Your organization makes this choice independently, based on its needs and evaluation of NOVA in the sandbox. This choice applies while both releases are available in parallel; the previous VESTA release is retired at rollover.
 
 ### When is NOVA available for production use?
 
@@ -112,6 +158,6 @@ Your switch to NOVA during Phase 3 is a self-service choice about when to adopt 
 
 NOVA is recycled for development of the next release, R1.2 in this example. VESTA provides R1.1.x while NOVA progresses through development, QA/UAT, and parallel production again.
 
-### Is a new release guaranteed every three to four months?
+### Is a major or minor release guaranteed every three to four months?
 
-No. The approximate 3–4 month cadence is a current planning estimate, not a guaranteed schedule or a maximum duration. Rollover and recycling of NOVA require both release readiness and acceptance from all customers. If either condition requires more time, the cycle will be extended and may exceed four months. FELLOWPRO communicates each planned rollover in advance.
+No. The approximate 3–4 month cadence for major and minor releases introduced through NOVA is a current planning estimate, not a guaranteed schedule or a maximum duration. Rollover and recycling of NOVA require both release readiness and acceptance from all customers. If either condition requires more time, the cycle will be extended and may exceed four months. FELLOWPRO communicates each planned rollover in advance.

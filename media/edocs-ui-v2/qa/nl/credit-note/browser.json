@@ -1,0 +1,30 @@
+{
+  "locale": "nl",
+  "metadata": {
+    "duration": 97.133333,
+    "width": 1280,
+    "height": 720,
+    "language": "nl",
+    "cues": 19
+  },
+  "playback": {
+    "time": 0.3096,
+    "frames": 14
+  },
+  "seek": {
+    "time": 48.566666,
+    "ready": 4
+  },
+  "mobile": {
+    "scroll": 380,
+    "width": 380,
+    "captions": [
+      "Een elektronische creditnota verschijnt\nals Invoice. Lees de oorspronkelijke XML."
+    ],
+    "focusable": 0
+  },
+  "keyboardPlays": true,
+  "ended": true,
+  "range206": true,
+  "errors": []
+}

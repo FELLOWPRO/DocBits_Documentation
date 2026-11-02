@@ -4,6 +4,12 @@ description: Soporte de documentos electrónicos CHILE DTE en DocBits
 
 # 🇨🇱 CHILE DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Chile](countries/chile.md). Seleccione el tipo de documento de negocio antes de comprobar los campos. Las facturas, las notas de crédito y la información de entrega utilizan asignaciones diferentes.
+{% endhint %}
+
 | Propiedad | Valor |
 |----------|-------|
 | **País / Región** | Chile |
@@ -32,7 +38,7 @@ DTE (Documento Tributario Electrónico) es el estándar chileno de documentos tr
 
 ## Vista previa predeterminada
 
-<figure><img src="chile-dte-preview.png" alt="Vista previa de factura Chile DTE en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una CHILE DTE FACTURA (tipo 33)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/chile-dte-preview.png" alt="Vista previa de factura Chile DTE en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una CHILE DTE FACTURA (tipo 33)</p></figcaption></figure>
 
 ## Mapeo de campos
 
@@ -88,5 +94,5 @@ El elemento envolvente es `<EnvioDTE>` y cada DTE está envuelto en `<DTE><Docum
 
 ## Véase también
 
-- [Estándares de e-factura actualmente soportados](../../currently-supported-e-invoice-standards/)
+- [Estándares de e-factura actualmente soportados](../currently-supported-e-invoice-standards/README.md)
 - [Documentos electrónicos soportados](./)

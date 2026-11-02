@@ -1,6 +1,10 @@
-# Assign document to User
+# Asignar documento al usuario
 
-<figure><img src="../../../../.gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v1-es-es.png" alt="Asignar documento al usuario, Versión 1" width="634"><figcaption><p>Versión 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v2-es-es.png" alt="Asignar documento al usuario, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-es-es.png" alt="Asignar documento al usuario, Versión 3" width="634"><figcaption><p>Versión 3</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,13 +12,13 @@ La tarjeta de flujo de trabajo **"Assign Document to User"** permite a los usuar
 
 ## **Componentes de la tarjeta:**
 
-1. **User**
+1. **Usuario**
    * **Descripción:** Especifica el usuario al que se asignará el documento.
    * **Detalle:** Se proporciona una lista desplegable de todos los usuarios disponibles para su selección. Al usuario seleccionado se le asignará el documento para una acción adicional.
 
 ## **Componentes adicionales en la versión 3:**
 
-1. **Use Decision Tree**
+1. **Usar árbol de decisión**
    * **Descripción:** Si está habilitado, la tarjeta usa un árbol de decisión para determinar dinámicamente la asignación de usuario.
    * **Opciones:**
      * **True:** Usa el árbol de decisión para la asignación dinámica de usuario.
@@ -23,7 +27,7 @@ La tarjeta de flujo de trabajo **"Assign Document to User"** permite a los usuar
 ## **Funcionalidad:**
 
 * **Evaluación de la condición:**\
-  La tarjeta solo ejecuta su acción si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+  La tarjeta solo ejecuta su acción si las secciones **"Cuando"** y **"Y"** se evalúan como verdaderas.
 * **Asignación del documento:**\
   La tarjeta asigna el documento al usuario seleccionado, garantizando que la tarea se enrute a la persona adecuada para su acción. Esto ayuda con la responsabilidad y la gestión eficaz de documentos.
 * **Árbol de decisión (versión 3):**\
@@ -39,3 +43,15 @@ La tarjeta de flujo de trabajo **"Assign Document to User"** permite a los usuar
 ## **Conclusión:**
 
 La tarjeta de flujo de trabajo **"Assign Document to User"** facilita un enrutamiento eficiente de los documentos al asignarlos al usuario seleccionado, con la flexibilidad añadida en la versión 3 de determinar dinámicamente el usuario mediante un árbol de decisión. Esto garantiza un proceso de flujo de trabajo más adaptable y eficiente.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Enviar facturas que necesiten revisión manual a una persona responsable.
+
+**Configuración:** Seleccione el usuario configurado `Demo Reviewer A`.
+
+**Resultado esperado y contraejemplo:** El documento está asignado a ese usuario. Confirmar la asignación del documento resultante; Esta tarjeta por sí sola no crea una tarea de revisión separada.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

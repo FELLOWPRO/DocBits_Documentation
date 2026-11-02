@@ -3,7 +3,7 @@
 Si deseas importar documentos manualmente en DocBits, sigue estos sencillos pasos:
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
-DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
+DocBits Tutorial de importación: cargar documentos, arrastrar y soltar + clasificación manual versus automática
 {% endembed %}
 
 * Haz clic en el botón de Subir en el Panel de Control de DocBits.
@@ -13,4 +13,4 @@ DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Cla
 * Después de que los archivos hayan sido subidos, tendrán el estado inicial de "En Proceso". Durante este tiempo, la carga se está procesando y no es posible editar el archivo. El tiempo de procesamiento puede variar dependiendo del tamaño y complejidad del archivo.
 * Una vez que el archivo haya sido procesado, recibirá el estado de "Listo para Validación". Ahora puedes iniciar el proceso de validación.
 
-<figure><img src="../../../.gitbook/assets/manual-import1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-manual-import1-es.png" alt="Diálogo de carga manual de documentos."><figcaption><p>Diálogo de carga manual de documentos.</p></figcaption></figure>

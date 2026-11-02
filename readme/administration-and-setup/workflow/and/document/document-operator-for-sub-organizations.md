@@ -1,6 +1,6 @@
-# Document Operator for Sub-Organizations
+# Operador de documentos para suborganizaciones
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_sub_org_is_isnot_v2-es-es.png" alt="Operador de documentos para suborganizaciones, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 ## Propósito:
 
@@ -8,12 +8,12 @@ Esta tarjeta de flujo de trabajo evalúa si un documento forma parte de una subo
 
 ## Componentes de la tarjeta:
 
-1. **Operator**
+1. **Operador**
    * **Descripción:** Define si el documento debe formar parte de la suborganización especificada o no.
    * **Opciones:**
      * **Is:** El documento debe formar parte de la suborganización especificada para que la condición sea verdadera.
-     * **Is Not:** El documento no debe formar parte de la suborganización especificada para que la condición sea verdadera.
-2. **Sub-org**
+     * **No es:** El documento no debe formar parte de la suborganización especificada para que la condición sea verdadera.
+2. **Suborganización**
    * **Descripción:** Especifica la suborganización con la que se debe comparar el documento.
    * **Detalle:** Debe coincidir con el identificador de la suborganización. La comparación comprueba si el documento pertenece a la suborganización especificada.
 
@@ -33,3 +33,15 @@ Esta tarjeta de flujo de trabajo evalúa si un documento forma parte de una subo
 ## Conclusión:
 
 La tarjeta de flujo de trabajo "Document in Sub-organization" es una herramienta útil para automatizar acciones según si un documento pertenece a una suborganización particular. Al garantizar que los documentos se procesen según las reglas específicas de la suborganización, esta tarjeta mejora la eficiencia del flujo de trabajo y garantiza que las acciones se ejecuten dentro del contexto organizativo correcto.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Enrutar documentos que pertenecen a una unidad de negocio.
+
+**Configuración:** Seleccione la suborganización `Demo North` y el operador igual.
+
+**Resultado esperado y contraejemplo:** Se aprueba un documento en `Demo North`. Un documento en `Demo South` falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

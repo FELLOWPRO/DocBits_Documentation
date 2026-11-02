@@ -1,5 +1,7 @@
 # Hoja de ruta de DocBits
 
+**Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
+
 _Estado de la planificación a 7 de octubre de 2026. Cada versión indica la
 fecha prevista en sandbox (cuando los clientes pueden probarla) y la fecha
 prevista en producción. Los temas describen lo que está previsto para la
@@ -200,7 +202,7 @@ Las correcciones urgentes entre versiones se documentan en las
 
 ## R1.3 — Sandbox 1 de junio de 2027 · Producción 16 de junio de 2027
 
-**Rule Manager de Auto Accounting**
+**Administrador de reglas de contabilidad automática**
 
 - Las reglas asignan cuentas y dimensiones automáticamente, con ámbito por
   suborganización y tipo de documento, y una pantalla de auditoría muestra qué

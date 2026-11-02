@@ -1,35 +1,37 @@
-# Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)
+# Geval 8b, 9b: Hoeveelheid en eenheidsprijs buiten tolerantie, beide goedgekeurd
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-Both the quantity and unit price are outside the tolerance range but have been approved.
+Zowel de hoeveelheid als de eenheidsprijs vallen buiten het tolerantiebereik, maar zijn goedgekeurd.
 
-## Action:
+## Actie:
 
-The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+Het systeem verwerkt de transactie met behulp van de factuurwaarden voor zowel de hoeveelheid als de eenheidsprijs, waarbij eventuele noodzakelijke aanpassingen of regelkosten worden toegepast.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $25.00 per unit
+  * Eenheidsprijs: $25.00 per eenheid
   * Total Amount: $5,000.00
 * **Invoice Received:**
-  * Quantity: 220 units (outside tolerance of 10%, approved)
-  * Unit Price: $27.00 per unit (outside tolerance of 8%, approved)
+  * Aantal: 220 stuks (buiten tolerantie van 10%, goedgekeurd)
+  * Eenheidsprijs: $27.00 per eenheid (buiten tolerantie van 8%, goedgekeurd)
   * Total Amount: $5,940.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±5%
-  * Unit Price Tolerance: ±2%
+  * Tolerantie per eenheidsprijs: ±2%
 
-Since both the quantity (220 units) and unit price ($27.00) are outside the acceptable tolerance limits but have been approved, the system will:
+Aangezien zowel de hoeveelheid (220 eenheden) als de eenheidsprijs ($27.00) buiten de aanvaardbare tolerantiegrenzen vallen, maar wel zijn goedgekeurd, zal het systeem:
 
-1. **Accept the Approved Quantity:** The system accepts the invoiced quantity of 220 units as it has been approved despite being outside the tolerance range.
-2. **Accept the Approved Unit Price:** The system accepts the invoiced unit price of $27.00 per unit as it has been approved despite being outside the tolerance range.
-3. **Calculate the Total Amount:** The system calculates the total amount based on the approved invoice values:
-   * **Total Amount = Quantity × Unit Price**
-   * **Total Amount = 220 units × $27.00 per unit = $5,940.00**
-4. **Apply Necessary Adjustments or Line Charges:** If applicable, the system may apply any additional line charges or adjustments based on the organization's policies for handling approved variances.
-5. **Process the Invoice:** The system processes the invoice using the approved values for both quantity and unit price, finalizing the transaction at the total amount of $5,940.00.
+1. **Accepteer de goedgekeurde hoeveelheid:** Het systeem accepteert de gefactureerde hoeveelheid van 220 eenheden zoals deze is goedgekeurd, ondanks dat deze buiten het tolerantiebereik ligt.
+2. **Accepteer de goedgekeurde eenheidsprijs:** Het systeem accepteert de gefactureerde eenheidsprijs van $27.00 per eenheid zoals deze is goedgekeurd, ondanks dat deze buiten het tolerantiebereik ligt.
+3. **Bereken het totaalbedrag:** Het systeem berekent het totaalbedrag op basis van de goedgekeurde factuurwaarden:
+   * **Totaalbedrag = Aantal × eenheidsprijs**
+   * **Totaalbedrag = 220 eenheden × $27.00 per eenheid = $5,940.00**
+4. **Pas noodzakelijke aanpassingen of regeltoeslagen toe:** Indien van toepassing kan het systeem eventuele extra regeltoeslagen of aanpassingen toepassen op basis van het beleid van de organisatie voor het verwerken van goedgekeurde afwijkingen.
+5. **De factuur verwerken:** Het systeem verwerkt de factuur met behulp van de goedgekeurde waarden voor zowel de hoeveelheid als de eenheidsprijs, en voltooit de transactie voor een totaalbedrag van $5,940.00.
 
-This approach ensures that the transaction is processed according to the approved variances, allowing flexibility while maintaining accurate financial records.
+Deze aanpak zorgt ervoor dat de transactie wordt verwerkt in overeenstemming met de goedgekeurde afwijkingen, waardoor flexibiliteit mogelijk is en tegelijkertijd nauwkeurige financiële gegevens worden bijgehouden.

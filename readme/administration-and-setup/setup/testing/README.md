@@ -1,3 +1,3 @@
-# Testing
+# Testen
 
-A guide on testing DocBits features once they are configured.
+Een handleiding voor het testen van DocBits-functies nadat ze zijn geconfigureerd.

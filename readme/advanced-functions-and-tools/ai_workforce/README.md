@@ -21,7 +21,7 @@ Een typische uitvoering, van begin tot eind: er komt een factuur binnen per e-ma
 AI Workforce wordt per organisatie ingeschakeld via de hoofdinstellingen.
 
 1. Ga naar **Instellingen → Modules**.
-2. Schakel de module **AI Workforce** in.
+2. Schakel de module **AI Personeelsbestand** in.
 3. Bevestig het abonnement in het dialoogvenster dat verschijnt.
 
 Zodra AI Workforce is ingeschakeld, verschijnt **AI Workforce** in de hoofdnavigatiebalk en wordt de werkruimte beschikbaar voor je organisatie.
@@ -144,3 +144,5 @@ Elke agent — systeem of aangepast — heeft een instellingenmenu met de volgen
 ### Aangepaste agenten aanmaken
 
 Naast de standaardagenten kun je je eigen **orchestrators** en **specialisten** aanmaken die passen bij je processen. Open **Agenten → Agent Aanmaken** om de wizard te starten, die je door dezelfde configuratie leidt als hierboven beschreven: kies de **rol** (Orchestrator of Specialist), geef de agent een **naam** en een duidelijke **beschrijving** (een orchestrator wordt op basis van deze tekst gekozen, en een orchestrator kiest zijn specialisten op basis van die van hen), schrijf zijn prompt, kies zijn vaardigheden, stel zijn redeneerinspanning in en — voor orchestrators — kies de specialisten in zijn agent pool. Aangepaste agenten kunnen op elk moment volledig worden bewerkt of verwijderd.
+
+Uitgebreide handleidingen: [Teams en Discord verbinden](../ai-workforce-chat-connections.md) · [Agentgeheugen controleren](../ai-workforce-agent-memory.md).

@@ -1,35 +1,31 @@
-# AI Calculation for Cost Increase Surcharges
+# AI-berekening voor kostenverhogingstoeslagen
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v1-nl-nl.png" alt="AI-berekening voor kostenverhogingstoeslagen, Versie 1" width="634"><figcaption><p>Versie 1</p></figcaption></figure>
 
-## Doel:
+<figure><img src="../../../../.gitbook/assets/workflow_card_ai_calc_mtz_etz_v2-nl-nl.png" alt="AI-berekening voor kostenverhogingstoeslagen, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
-De workflow-kaart **"AI Calculation for Cost Increase Surcharges"** gebruikt AI om automatisch toeslagbedragen te berekenen op basis van kostenstijgingen. Hij zorgt voor consistente en nauwkeurige toeslagberekeningen, stroomlijnt workflows en vermindert handmatige inspanning.
+## Wanneer moet u deze kaart gebruiken?
 
-## Onderdelen van de kaart:
+Met deze actie kunt u de geconfigureerde MTZ/ETZ materiaal- en energietoeslagberekening voor het huidige document opvragen. Bereid eerst de documentgegevens en de configuratie van de berekeningsservice voor die uw organisatie nodig heeft.
 
-* **Cost Increase Factor**
-  * **Beschrijving:** De vermenigvuldigingsfactor of het percentage dat op de basiskosten wordt toegepast om de toeslag te berekenen.
-  * **Detail:** Bepaalt het toeslagbedrag op basis van de kostenstijging (bijv. een factor van 1,10 voor een stijging van 10%).
-* **Base Cost Field**
-  * **Beschrijving:** Het veld dat de oorspronkelijke kostenwaarde bevat die als basis voor de toeslagberekening wordt gebruikt.
-  * **Detail:** Wordt automatisch geselecteerd of binnen de workflow gedefinieerd ter referentie tijdens de berekening.
-* **Surcharge Field**
-  * **Beschrijving:** Het veld waarin de door AI berekende toeslagwaarde wordt opgeslagen.
-  * **Detail:** Dit veld geeft de berekende toeslag weer en maakt deze beschikbaar voor verdere verwerking of rapportage.
+## Werkelijke configuratie
 
-## Functionaliteit:
+De weergegeven kaart heeft geen invoer voor Kostenverhogingsfactor, Basiskostenveld of Toeslagveld. Het delegeert de berekening aan de geconfigureerde service. Zoek niet naar deze niet-bestaande kaartcontroles en ga niet uit van een formule met een vast percentage op basis van de kaartnaam.
 
-**Voorwaarde-evaluatie:**
+## Resultaat en verificatie
 
-* De kaart wordt alleen geactiveerd als zowel de **"Where"**- als de **"And"**-voorwaarden als true worden geëvalueerd.
-* Als een van beide voorwaarden als false wordt geëvalueerd, wordt er geen toeslagberekening uitgevoerd.
+Een succesvolle servicereactie markeert de kaart als succesvol. Een time-out of een mislukte reactie leidt tot een kaartfout. Inspecteer het kaartlogboek en de daaruit voortvloeiende toeslaggegevens van het document; Het succes van de oproep alleen duidt niet op een bepaald bedrag.
 
-**AI-gestuurde berekening:**
+In de kaarttestmodus wordt het aanroep overgeslagen en wordt succes gesimuleerd. Dit is handig voor het testen van de workflow-structuur, maar het bewijst niet dat de service heeft gedraaid of dat er een toeslag is berekend.
 
-* Het systeem past de **Cost Increase Factor** toe op het **Base Cost Field** om de toeslag te berekenen.
-* Het resultaat wordt opgeslagen in het **Surcharge Field**, zodat het toegankelijk is voor volgende workflow-stappen.
+<!-- workflow-card-practical-example-20261021 -->
 
-## Conclusie:
+## Praktisch voorbeeld
 
-De workflow-kaart **"AI Calculation for Cost Increase Surcharges"** automatiseert het toepassen van toeslagen op basis van kostenstijgingen. Door AI te benutten voor precisie en consistentie elimineert deze kaart handmatige berekeningen, verbetert hij de efficiëntie en ondersteunt hij nauwkeurig kostenbeheer in geautomatiseerde workflows.
+**Wanneer gebruiken:** Vraag de geconfigureerde materiaal-/energietoeslagberekening op voor een opgemaakte factuur.
+
+**Configuratie:** Gebruik synthetische factuur `DEMO-001` met de gegevens die vereist zijn voor uw geconfigureerde MTZ/ETZ-service. Voeg deze actie toe na de documentvalidatievoorwaarden.
+
+**Verwacht resultaat en tegenvoorbeeld:** Een succesvolle servicereactie markeert de kaart succesvol; een time-out of een mislukte reactie veroorzaakt een kaartfout. Bekijk de documentvelden en het berekeningsresultaat afzonderlijk. De kaarttestmodus simuleert succes en roept de service niet op, zodat er geen echt toeslagresultaat kan worden bewezen.
+
+Dit is een illustratieve configuratie en een verwacht resultaat. Gebruik velden, gebruikers en groepen die in uw testorganisatie zijn geconfigureerd; het is geen bewering dat dit voorbeeld is uitgevoerd.

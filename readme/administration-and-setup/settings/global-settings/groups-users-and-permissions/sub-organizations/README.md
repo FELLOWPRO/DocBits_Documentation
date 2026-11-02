@@ -1,5 +1,7 @@
 # Suborganisaties
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/nl.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Suborganisaties"><figcaption><p>Pagina Suborganisaties</p></figcaption></figure>
 
 Met suborganisaties kunt u een hiërarchische structuur in DocBits opzetten om documenten, gebruikers en workflows over verschillende afdelingen, teams of entiteiten te beheren.

@@ -1,80 +1,47 @@
 # Navigeren in de Lay-outbeheerder
 
-## In staat zijn om te navigeren in de Lay-outbeheerder in DocBits en groepen en velden te bewerken is cruciaal voor het beheersen van de structuur en het uiterlijk van documenten.
+Gebruik de **Lay-outbeheerder** om de groepen en velden te rangschikken die gebruikers op een document zien. Deze handleiding gebruikt de Nederlandse indeling **Factuur** in een sandbox-organisatie. Alle schermafbeeldingen tonen de Nederlandse interface.
 
-### Hier zijn de stappen om de Lay-outbeheerder te gebruiken en groepen en velden te bewerken:
+## De Factuur-indeling openen
 
-### Navigeren in de Lay-outbeheerder:
+1. Ga naar **Instellingen → Documenttypen**.
+2. Zoek **Factuur** en selecteer **Indelingen** onder de naam van de kaart. De Lay-outbeheerder opent voor dat documenttype.
+3. Bovenaan ziet u de naam van de indeling (aan te passen met het potlood), het **Documenttype** en het **Indelingstype**. Met **Indelingstype** schakelt u naar een andere indeling van hetzelfde documenttype.
 
-#### De Lay-outbeheerder openen:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-document-types-nl.png" alt="Lijst met documenttypen met de kaart Factuur en de koppeling Indelingen"><figcaption>Open **Indelingen** via de kaart Factuur.</figcaption></figure>
 
-* Log in op DocBits en navigeer naar het gebied waar je de Lay-outbeheerder wilt gebruiken.
-* Je kunt deze optie vinden in "Beheer Documenttypen".
+## Werken met de drie tabs van het paneel
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FeebqP176qG5bOQ6YLJDX%252FBildschirmfoto%25202024-05-23%2520um%252013.35.39.png%3Falt%3Dmedia%26token%3D6aa09cc2-2df5-4495-aefe-36dec3123b51\&width=768\&dpr=4\&quality=100\&sign=82c501bb\&sv=2)
+Het paneel links heeft drie tabs: **Structuur**, **Velden** en **Elementen**. De Lay-outbeheerder opent op **Velden**.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5z8cVvWqARCkXx4AER4B%252FBildschirmfoto%25202024-05-24%2520um%252010.12.05.png%3Falt%3Dmedia%26token%3De0f8301a-9aaa-4e4a-9568-a2c372355538\&width=768\&dpr=4\&quality=100\&sign=66865b41\&sv=2)
+**Structuur** toont de indeling als een boom, in dezelfde volgorde als de groepen en velden op het document staan. Klap een groep open met het pijltje om de velden erin te zien; de technische veldnaam staat in het paneel **Eigenschappen**. Het zoekveld filtert de boom, en als u een regel selecteert, wordt hetzelfde element op het canvas geselecteerd.
 
-Het Documenttype selecteren:
+<figure><img src="../../../../../.gitbook/assets/layout-builder-structure-tab-nl.png" alt="Lay-outbeheerder met de tab Structuur open: de bom van groepen uitgeklapt tot Delivery Details met supplier_id geselecteerd, de Factuur-indeling op het canvas en het paneel Eigenschappen rechts"><figcaption>De boom Structuur, het canvas en het paneel Eigenschappen.</figcaption></figure>
 
-* Selecteer het documenttype dat je wilt bewerken.
-* De Lay-outbeheerder toont de structuur van dat documenttype.
+**Velden** toont elk veld dat het documenttype aanbiedt, gegroepeerd per groep. De teller naast een groepsnaam laat zien hoeveel velden van die groep al geplaatst zijn, bijvoorbeeld **4/14**. De drie pictogrammen onder het zoekveld filteren de lijst: alle velden, alleen velden die nog niet in de indeling staan, en alleen verborgen velden. Elke regel toont het veldlabel; een groen vinkje rechts markeert de velden die al in de indeling zitten, die grijs worden weergegeven.
 
-<figure><img src="../../../../../.gitbook/assets/layout-builder-overview-2026.png" alt=""><figcaption><p>Layout Builder Invoice</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-builder-fields-tab-nl.png" alt="Tab Velden van de Lay-outbeheerder met de drie filterpictogrammen onder het zoekveld, de groep Factuurgegevens uitgeklapt met de teller 4/14 en de velden die al geplaatst zijn, grijs en met een vinkje"><figcaption>Filter de velden en herken geplaatste velden aan het vinkje.</figcaption></figure>
 
-Navigeren door Groepen en Velden:
+**Elementen** bevat de blokken die u naar het canvas sleept: **Groepen** met de groepen van deze indeling, en **Formulierelementen** met Text, Label, Check Box, Horizontal Separator, Multi Check Box, Table Of Checkboxes, Button, Extracted Tables, Invoice Buttons, Vertex Panel, QR Code Fields en Sub Group.
 
-* In de Lay-outbeheerder zie je een boomstructuur die de groepen en velden van het geselecteerde documenttype vertegenwoordigt.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-elements-tab-nl.png" alt="Tab Elementen van de Lay-outbeheerder met de sectie Groepen en de groepen van de Factuur-indeling, en de sectie Formulierelementen met twaalf elementen"><figcaption>De paletten Groepen en Formulierelementen.</figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjtiMNhQqN859bxtLsoth%252Fimage.png%3Falt%3Dmedia%26token%3Dc3224b66-3f2a-4aa2-81ee-6cde5719cf3f\&width=768\&dpr=4\&quality=100\&sign=57e2b59\&sv=2)
+## Elementen plaatsen en rangschikken
 
-* Je kunt door deze structuur navigeren om de gebieden die je wilt bewerken aan te passen.
+- Sleep een veld uit **Velden**, of een element uit **Elementen**, naar de groep waar het moet staan. Velden die al geplaatst zijn, hebben een vinkje in de tab **Velden**.
+- Sleep een veld binnen een groep of naar een andere groep om de volgorde te wijzigen.
+- De **+** boven het canvas voegt een lege groep toe; het JSON-pictogram ernaast maakt een groep op basis van een JSON-definitie.
+- In de kop van een groep kunt u de naam wijzigen in **Groepstitel**, de JSON kopiëren, de groep omlaag of omhoog verplaatsen of verwijderen. Met de sleepgreep rechts in de kop verplaatst u de groep.
+- Selecteer een veld op het canvas om de eigenschappen rechts te openen. De kleine werkbalk onder het geselecteerde veld haalt het veld uit de indeling.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5UpYc7uZEQzEt2LEFHzo%252Fimage.png%3Falt%3Dmedia%26token%3D4203ac3a-5487-4bfc-8aa8-4c35fe70b14a\&width=768\&dpr=4\&quality=100\&sign=adc50420\&sv=2)
+## Het paneel Eigenschappen
 
-### Groepen en velden bewerken:
+Het paneel rechts staat altijd open en volgt het element dat u hebt geselecteerd. De instellingen zijn verdeeld over **Weergave**, **Gedrag**, **Waarden en lijsten** en **Automatisering**. **Weergave** bevat het label, het veldtype en de **Elementbreedte in percentage**, die u kiest uit de waarden 25, 33, 50, 66, 75 en 100 procent. Zie [Eigenschappen van velden configureren](configuring-field-properties.md) voor de afzonderlijke opties.
 
-<mark style="color:red;">**Opmerking:**</mark> **wanneer de Titel van een veld is gewijzigd, moet je het veld in de lay-outbouwer verwijderen en opnieuw toevoegen om de wijzigingen effect te laten hebben.**
+Instellingen voor validatie, OCR en matching horen bij het veld zelf en niet bij de indeling: die configureert u in de aparte [instellingen van Velden](../fields/configuring-field-properties-1.md).
 
-Een groep of veld toevoegen:
+## Voorbeeld bekijken en opslaan
 
-* Klik op de knop "Nieuwe groep maken", afhankelijk van of je een nieuwe groep of veld wilt toevoegen.
+Het canvas toont de indeling zoals die op het document komt te staan. Met de tabs **Hoofdlay-out** en **Tabel** schakelt u tussen de pagina en een regeltabel, en met **Document** opent u het voorbeelddocument naast het canvas. Zie [Het sjabloonvoorbeeld gebruiken](using-the-template-preview.md).
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FF9Soj6uDKKyYb8ciweHp%252FBildschirmfoto%25202024-05-24%2520um%252010.23.27.png%3Falt%3Dmedia%26token%3D797e975a-470b-4a0d-b1f1-a82b8aeb7267\&width=768\&dpr=4\&quality=100\&sign=d2e200b6\&sv=2)
-
-* Voer de naam van de nieuwe groep of veld in en selecteer eventuele instellingen die je wilt, zoals het type veld (tekst, nummer, datum, enz.).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7qcF5LK6yxbcRVm57Ejz%252Fimage.png%3Falt%3Dmedia%26token%3Dec75cf2f-a834-4eb3-89c3-75a6fc70c88c\&width=768\&dpr=4\&quality=100\&sign=e93f7652\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSM5IXOG5XYfGo3ee1xzP%252Fimage.png%3Falt%3Dmedia%26token%3D57a737f0-240c-4c23-9d4a-b92e86a92b47\&width=768\&dpr=4\&quality=100\&sign=456cdcec\&sv=2)
-
-Een groep of veld verwijderen:
-
-* Selecteer de groep of het veld dat je wilt verwijderen.
-* Klik op de knop "Verwijderen" of gebruik de juiste sneltoets (meestal "Delete" of "Del").
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FQQjFkNb0ONiiklAQmBRU%252FBildschirmfoto%25202024-05-24%2520um%252010.35.24.png%3Falt%3Dmedia%26token%3D2fb8d92a-c5c9-449b-8179-786765ada10f\&width=768\&dpr=4\&quality=100\&sign=1ac2e12c\&sv=2)
-
-
-
-Een groep of veld wijzigen:
-
-* Dubbelklik op de groep of het veld dat je wilt wijzigen.
-* Wijzig eventuele eigenschappen die je wilt, zoals de naam, positie, grootte of instellingen van het veldtype.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FtdvSPyCEdIfj8j30DEe5%252Fimage.png%3Falt%3Dmedia%26token%3Dfaa32e5a-3492-499d-a0af-7fa99a583d09\&width=768\&dpr=4\&quality=100\&sign=865f9003\&sv=2)
-
-Groepen en velden rangschikken:
-
-* Sleep en zet groepen of velden neer om hun volgorde te wijzigen of ze binnen of buiten andere groepen te plaatsen.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fun2twvKa1n8VJrBZzjl3%252FBildschirmfoto%25202024-05-24%2520um%252010.45.28.png%3Falt%3Dmedia%26token%3Dc090597f-b693-4308-b0ac-badec6bec466\&width=768\&dpr=4\&quality=100\&sign=af0174ad\&sv=2)
-
-Wijzigingen opslaan:
-
-* Vergeet niet je wijzigingen op te slaan voordat je de Lay-outbeheerder verlaat.
-* Klik op de knop "Opslaan".
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fu9c6MD2mZFuAsXp7n9Ai%252FBildschirmfoto%25202024-05-24%2520um%252010.51.06.png%3Falt%3Dmedia%26token%3D613ef982-9455-4832-b2a5-5644e3bd644c\&width=768\&dpr=4\&quality=100\&sign=fb7f99d5\&sv=2)
-
-Door deze stappen te volgen, kun je effectief navigeren in de Lay-outbeheerder van DocBits en groepen en velden binnen een documenttype bewerken. Dit stelt je in staat om de structuur en het uiterlijk van je documenten aan te passen aan jouw behoeften.
+Selecteer **Opslaan** in de balk bovenaan als u klaar bent. Zie [Wijzigingen opslaan en toepassen](save-and-apply-changes.md) voor de andere acties in die balk, waaronder het genereren van een sjabloon, standaardsjablonen en het toepassen van een indeling op oorsprongen.

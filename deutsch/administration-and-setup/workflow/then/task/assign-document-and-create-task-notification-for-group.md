@@ -1,6 +1,6 @@
 # Dokument zuweisen und Aufgabe/Benachrichtigung für Gruppe erstellen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-01f8137c5c7f-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_create_task_for_group_sequential_v2-de-de.png" alt="Dokument zuweisen und Aufgabe/Benachrichtigung für Gruppe erstellen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck**
 

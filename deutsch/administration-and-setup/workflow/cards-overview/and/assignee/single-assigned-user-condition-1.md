@@ -1,6 +1,6 @@
 # Single Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-assignee-03-de-20261023.png" alt="Zugewiesener Benutzer Zugewiesene Gruppe Operator Gruppen" width="563"><figcaption></figcaption></figure>
 
 **Zweck:**\
 Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe oder ein Dokument einer bestimmten Gruppe zugewiesen ist. Sie verwendet eine einfache Bedingung, um Aktionen je nach Gruppenzuweisung auszulösen oder zu verhindern.

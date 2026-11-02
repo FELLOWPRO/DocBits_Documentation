@@ -103,6 +103,16 @@ Analyze any period from **7 days** up to a **full year**, or set a **custom rang
 
 <figure><img src="../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="Time Range Filter"><figcaption></figcaption></figure>
 
+### Filters are remembered
+
+The dashboard saves your filters and time range in this browser, separately for each user and organisation. When you open the dashboard again, your last selection is restored, including a custom date range in the date picker.
+
+Select **Reset to defaults** in the top right of the dashboard to clear the saved selection: the filters, the time range and any custom dates return to their defaults.
+
+<mark style="color:red;">**Note**</mark>: The selection is stored in the browser, not on the server. It is not synced to other devices or browsers.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters.png" alt="Analytics dashboard Status flow with the filter row and the Reset to defaults button in the top right"><figcaption><p>Filters are restored when you return to the dashboard. Reset to defaults clears them.</p></figcaption></figure>
+
 ## Flow Steps Cards
 
 Each card represents a flow step based on the selected **Flow Type**. The cards adapt to your selection — showing lifecycle stages for *Status*, processing modules for *Processing*, or user touchpoints for *User Interaction*.

@@ -1,6 +1,6 @@
 # 全文搜索设置
 
-<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="沙盒环境中的全文搜索设置，显示一个说明需要启用该模块的对话框，以及“前往模块”和“立即启用”按钮"><figcaption><p>全文搜索处于禁用状态时，此对话框会说明后续步骤。</p></figcaption></figure>
+<!-- Obsolete illustration retired: Retire old English index-statistics screenshot: current zh Fulltext page is blank in verified Dev and has an existing product defect. Preserve conditional procedure and troubleshooting; no unrelated screenshot is substituted for index statistics. -->
 
 全文搜索设置用于配置 DocBits 要索引的内容，以及如何让用户在文档、ERP 主数据和模板中搜索这些内容。启用 **全文搜索模块**之前，设置页面会显示模块要求对话框。如需了解面向用户的查询语言，请参阅[全文搜索](../document-processing/module/fulltext-search.md)。
 
@@ -12,7 +12,7 @@
 * **前往模块** — 打开仪表板与分析模块设置，以查看配置。
 * **立即启用** — 打开订阅对话框。启用模块前，请查看并确认该对话框；仅点击此按钮并不会启用模块。
 
-模块激活后，即可使用设置页面。
+模块激活且页面正常加载后，才可使用下述设置。本次 Dev 中文页面显示空白，因此没有当前索引统计截图，也没有执行启用、诊断或重新索引。遇到空白页时，先检查加载错误、权限与模块状态，并向管理员提供环境及发生时间；不能从空白页推断索引为空或重新索引成功。
 
 ## 页面布局
 
@@ -27,7 +27,7 @@
 * **重新索引操作** — 启动完整或增量重新索引。重新索引期间，可以实时查看进度（每分钟处理的文档数、预计剩余时间）、当前流状态以及最近一次失败情况（如有）。
 * **同步诊断** — 按需运行诊断，用于排查索引与底层文档存储似乎不同步的情况。
 
-<mark>重新索引不会造成破坏——重建新索引期间，现有搜索仍可正常使用。</mark>
+重新索引会触发后台工作。执行前确认范围、运行状态及环境容量，并在执行后验证查询和统计；本文未证明所有重新索引方式都不会影响现有搜索。
 
 ### ERP 标签页
 

@@ -41,6 +41,17 @@ Het is echter mogelijk om:
 * **Eén actieve Infor-export** _en_ **één actieve niet-Infor-export** tegelijkertijd te hebben voor hetzelfde documenttype
 * **Verschillende exportconfiguraties voor verschillende sub-organisaties** — bijvoorbeeld een Infor-export voor Sub-Org A en een andere Infor-export voor Sub-Org B
 
+## Activeren vanuit het bewerkscherm
+
+Een bestaande configuratie heeft een schakelaar **Actief** in de voettekst van het bewerkscherm, direct naast **Opslaan**.
+
+1. Open de configuratie om te bewerken (**Bewerken**).
+2. Zet de schakelaar **Actief** in de gewenste stand en kies **Opslaan**.
+
+DocBits activeert of deactiveert de configuratie daarna met dezelfde controle als de lijst: is er voor hetzelfde documenttype al een andere configuratie actief, dan wordt activeren geweigerd. Opslaan van het formulier verandert de opgeslagen status niet meer op zichzelf; de schakelaar in de voettekst en de status in de lijst tonen altijd dezelfde stand.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-nl.png" alt="Bewerkscherm van een exportconfiguratie met de schakelaar Actief in de voettekst tussen Annuleren en Opslaan"><figcaption><p>De schakelaar Actief naast Opslaan in het bewerkscherm van de exportconfiguratie.</p></figcaption></figure>
+
 ## **Een nieuwe export maken**
 
 Om een nieuwe export te maken:
@@ -296,3 +307,30 @@ Om een nieuwe export te maken:
 * **M3-TOML-toewijzingsbestand** Selecteer een mapping-bestand uit de bestandsbeheerder of gebruik de optie Toml selecteren om een toml te gebruiken die is gemaakt met de regelbeheerder. [Hulp nodig bij het maken? Bekijk de Rule Manager Gids](rule-manager/)
 
 </details>
+
+
+## Videohandleiding: ERP-export instellen en testen
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/nl.mp4" %}
+ERP-export instellen en testen
+{% endembed %}
+
+[Bekijken met ondertiteling en hoofdstukken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/nl.html)
+
+Sommige oorspronkelijke productlabels kunnen in een andere taal staan. Technische veld-ID’s blijven behouden.
+
+Ik gebruik een eigen testconfiguratie en documenttype. De facturen bevatten fictieve gegevens. Onze testontvanger controleert de gegevensoverdracht. Er vindt geen boeking plaats in een ERP-productieomgeving. Ik wijzig de andere integraties niet.
+
+In de exportconfiguratie controleer ik het documenttype, de organisatie en het exporttype. Dit voorbeeld gebruikt Generic API in de cloud. Een JSON-bestand bevat de inloggegevens; het TOML-bestand bepaalt de veldmapping. In echte projecten moeten het doelsysteem, de rechten en de suborganisatie passen bij het beoogde proces.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-nl-recovery-export-v1.png" alt="Exportconfiguratie voor het trainingsdocumenttype"><figcaption><p>Exportconfiguratie voor het trainingsdocumenttype</p></figcaption></figure>
+
+In de gecorrigeerde mapping levert het DocBits-veld invoice_id het factuurnummer voor de testontvanger. Ook leverancier, totaalbedrag en valuta zijn gekoppeld. Deze test controleert de kopgegevens. Factuurregels en ERP-boekingen vragen afzonderlijke controles binnen het eigen project.
+
+Ik upload het gecorrigeerde TOML-bestand en sla de configuratie op. Daarna open ik de configuratie opnieuw en controleer ik of de wijziging is opgeslagen. De testinloggegevens blijven gelijk; inloggegevens uit de productieomgeving horen niet in de opname.
+
+Nu ga ik terug naar de testfactuur waarvan de export is mislukt en start ik de export precies één keer opnieuw. Ik wacht tot de verwerking is afgerond. Een geaccepteerd verzoek alleen bewijst nog niet dat de overdracht is geslaagd.
+
+DocBits toont de factuur nu als voltooid. Daarnaast controleer ik het ontvangstbewijs van onze testontvanger. Factuurnummer, leverancier, bedrag en valuta komen overeen met de testfactuur. De authenticatie en overdracht zijn geslaagd. De testontvanger bevestigt geen ERP-boeking.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-nl-recovery-export-v1.png" alt="Werkelijke ontvangst bij de testontvanger; geen ERP-boeking"><figcaption><p>Werkelijke ontvangst bij de testontvanger; geen ERP-boeking</p></figcaption></figure>

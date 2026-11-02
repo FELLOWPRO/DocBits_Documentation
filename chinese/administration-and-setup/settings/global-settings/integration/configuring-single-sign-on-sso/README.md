@@ -1,43 +1,34 @@
 # 配置单点登录（SSO）
 
-在 DocBits 中配置单点登录（SSO）需要几个步骤。以下是分步指南：
+将 DocBits 配置为 SAML 服务提供商（SP），并连接您的身份提供商（IdP）。您需要具有两个系统中相关设置的管理员权限。
 
-**访问 SSO 设置：**
+## 打开 SSO 设置
 
-<figure><img src="../../../../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+以管理员身份登录 DocBits，在集成设置中打开单点登录。
 
-* 以管理员身份登录 DocBits 账户。
-* 前往设置，找到 Single Sign-On 或 SSO。
+<figure><img src="../../../../../.gitbook/assets/site-extra-sso-settings-zh.png" alt="SSO 服务提供方设置；已隐藏组织信息，未保存任何配置。"><figcaption><p>SSO 服务提供方设置；已隐藏组织信息，未保存任何配置。</p></figcaption></figure>
 
-**配置 SSO 参数：**
+## 查看 DocBits 服务提供商的值
 
-<figure><img src="../../../../../.gitbook/assets/image (195).png" alt=""><figcaption><p>SSO 服务提供商设置</p></figcaption></figure>
 
-* 输入所需的 SSO 参数，例如实体 ID、单点注销（SLO）URL 和单点登录（SSO）URL。
-* 实体 ID 是服务或应用程序的唯一标识符。
-* SLO URL 是用于单点注销的 URL，可在需要时将用户从所有服务中注销。
-* SSO URL 是将用户重定向到身份提供商以进行身份验证的 URL。
 
-**下载证书和元数据：**
+DocBits 以只读方式显示 Entity ID、SSO URL 和 SLO URL。配置 IdP 中的 DocBits 应用时，请复制这些值或使用 SP 元数据；不要在 DocBits 的这些字段中填写替代值。Entity ID 用于标识服务提供商。请按照 IdP 的 SAML 配置要求使用所显示的端点。
 
-<figure><img src="../../../../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+## 下载 SP 证书和元数据
 
-* 身份提供商（IdP）通常会提供证书，DocBits 使用该证书验证 SAML 身份验证响应。
-* 下载证书并妥善保管。
-* 元数据下载文件包含 SSO 集成所需的全部配置信息，包括实体 ID、SSO URL、证书信息等。
-* 下载元数据并保存在本地，或提供给身份提供商。
 
-**身份提供商（IdP）配置：**
 
-<figure><img src="../../../../../.gitbook/assets/image (197).png" alt=""><figcaption><p>身份服务提供商设置</p></figcaption></figure>
+使用 DocBits 服务提供商设置中的 Download Certificate 和元数据下载功能。这些下载文件描述的是作为 SP 的 DocBits。请向 IdP 提供 SP 元数据，以及在需要时提供下载的 SP 证书。这里下载的证书与随后上传到 DocBits 的 IdP 元数据不同。
 
-* 登录身份提供商，并配置用于 SAML 集成的应用程序或服务。
-* 使用已下载的元数据或手动输入的 SSO 参数，将 DocBits 添加为受信任的应用程序或服务。
-* 确保 IdP 的配置与 DocBits 中指定的 SSO 参数一致。
+## 配置身份提供商
 
-**测试 SSO 集成：**
 
-* 配置完成后，测试 SSO 集成，确保用户可以通过 SSO 成功登录 DocBits。
-* 还要验证单点注销是否正常工作：从 DocBits 注销，并确认同时也已从其他已连接的服务中注销。
 
-正确配置 SSO 后，用户即可使用现有凭据无缝登录 Docbits，从而改善用户体验并提高安全性。
+1. 在 IdP 中，使用 DocBits 显示的 SP 值或下载的 SP 元数据配置 DocBits。
+2. 如果提供商要求，请使用 DocBits 的 Tenant ID。检查 DocBits 身份提供商设置中的租户和提供商上下文是否正确。
+3. 从 IdP 获取已配置应用的 SAML XML 元数据，将这些 IdP XML 元数据上传到 DocBits。不要用先前下载的 DocBits SP 元数据替代它们。
+4. 在 DocBits 身份提供商设置中使用 Configure/Save 操作保存配置。
+
+## 测试登录及受支持的单点登出
+
+验证用户能否通过已配置的 IdP 登录 DocBits。只有在 DocBits 和 IdP 均支持 Single Log-Out，且两端均已配置时，才测试此功能。仅从 DocBits 登出并不保证用户也会从所有其他已连接应用中登出。

@@ -1,11 +1,58 @@
 # Status dokumentów
 
+## Trzy pytania o status zamiast jednego łańcucha statusu
+
+<figure><img src="../../../.gitbook/assets/process-status-pl-20261028.png" alt="Prawidłowo klasyfikuj status dokumentu: Przetwarzanie, zatwierdzanie i eksport to różne stany."><figcaption><p>Przetwarzanie, zatwierdzanie i eksport to różne stany. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
+
+Dokument może nadal oczekiwać na decyzję biznesową o zatwierdzeniu, nawet jeśli uznawanie zostało zakończone. Przeczytaj wyświetlany status w kontekście etapu przetwarzania i procesu zatwierdzania.
+
+| Pytanie | Znaczenie | Następny krok |
+| --- | --- | --- |
+| **Czy przetwarzanie zostało zakończone?** | OCR, klasyfikacja i ekstrakcja przygotowują dokument do przeglądu. „Gotowy do zatwierdzenia” nie jest zatwierdzeniem biznesowym. | Otwórz dokument, porównaj informacje z oryginałem i edytuj obowiązkowe błędy w polach. |
+| **Czy zakończono zatwierdzanie merytoryczne?** | Zatwierdzenie może mieć kilka poziomów. Wstępne zatwierdzenie nie kończy automatycznie wszystkich etapów. | Sprawdź aktualny poziom, odpowiedzialnego recenzenta i historię zatwierdzeń. |
+| **Czy dokument został przekazany?** | Stan eksportu i informacje zwrotne opisują przekazanie techniczne. Zapisana wartość lub wpis zatwierdzenia nie potwierdzają przetwarzania ERP. | Przeczytaj szczegóły eksportu i jeśli to konieczne, odtwórz proces w systemie docelowym. |
+
+Grafika dzieli te pytania na trzy ścieżki. Nie jest to wyczerpująca lista kodów stanu technicznego i nie ustanawia uniwersalnego porządku. Rzeczywiste przejścia zależą od typu dokumentu, przepływu pracy i ścieżki eksportu.
+
+### Jeśli wystąpią błędy, rozpocznij od odpowiedniego kroku
+
+Otwórz status błędu i przeczytaj wiadomość. Jeżeli brakuje wymaganej wartości, sprawdź ją i skoryguj z oryginałem. Jeśli odbiorca zgłosi błąd eksportu, usuń jego przyczynę przed ponowną próbą. Użyj [Przepływ dokumentów](document-flow.md) do etapów przetwarzania i przewodnika [Zatwierdzenie](../approve-or-reject-invoices.md) do podejmowania decyzji biznesowych.
+
 Statusy przetwarzania wskazują etapy takie jak OCR, klasyfikacja i eksport. **Gotowy do walidacji** oznacza możliwość sprawdzenia dokumentu. Statusy zatwierdzania wskazują oczekiwanie na akceptację. **Eksportowano** oznacza zakończenie eksportu dokumentu. Kliknij status **Błąd**, aby zobaczyć dostępne szczegóły.
 
 Jeśli dostępne są czasy przetwarzania, najedź na status, aby zobaczyć etapy i czas ich trwania. Dokumenty z możliwymi duplikatami mają ikonę duplikatu; otwórz ją, aby porównać powiązane dokumenty.
+
+Dokument może też czekać na odpowiedź współpracownika. Taki dokument pokazuje status **Pending Input** i pozostaje poza aktywną kolejką, dopóki poproszona osoba nie odpowie, a osoba przypisana nie zamknie prośby. Zobacz [Pending Input](../pending-input.md).
 
 Otwórz wiersz, aby pracować na ekranie walidacji. Menu działań zawiera dozwolone operacje: przypisanie, pobieranie, historię i ponowne uruchomienie przetwarzania. Warianty pobierania zależą od dokumentu i mogą uwzględniać adnotacje lub formaty faktur elektronicznych.
 
 Zaznacz kilka dokumentów i otwórz menu w nagłówku tabeli, aby wykonać dozwolone działania zbiorcze: przypisanie, scalanie, ponowne uruchomienie, ponowny eksport lub usuwanie. Sprawdź zaznaczenie i każde potwierdzenie. Te działania mogą zmieniać dokumenty; zapisanie widoku zmienia tylko wygląd listy pracy.
 
 Wyszukiwanie, działania i widoki opisuje [przewodnik po pulpicie](README.md).
+
+
+## Instrukcja wideo: Obsługa zablokowanych faktur
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/pl.mp4" %}
+Obsługa zablokowanych faktur
+{% endembed %}
+
+[Oglądaj z napisami i rozdziałami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/blocked-invoices-customer/v1/pl.html)
+
+Niektóre etykiety produktu mogą pozostać w innym języku. Zachowano techniczne identyfikatory pól.
+
+Otwieram fakturę w walidacji pól. W tym przykładzie brakuje numeru faktury. Pozostałe wartości są już wypełnione. Porównuję je z oryginałem, zanim cokolwiek zmienię.
+
+Teraz wprowadzam numer faktury i opuszczam pole. Następnie zapisuję fakturę. Czekam na odpowiedź i ponownie ładuję dokument. W ten sposób widzę, czy poprawka rzeczywiście została zachowana.
+
+Numer nadal tam jest po ponownym otwarciu. Błąd pola obowiązkowego został rozwiązany. Zapisanie nie oznacza jednak, że faktura została zatwierdzona lub wyeksportowana do systemu ERP.
+
+W przypadku drugiej faktury lista pokazuje błąd eksportu. Otwieram status i czytam szczegóły. Odbiorca testowy odrzucił przesłane dane z kodem błędu czterysta dwadzieścia dwa. W tym miejscu należy sprawdzić mapowanie techniczne. Nie restartuję po prostu eksportu wielokrotnie.
+
+<figure><img src="../../../.gitbook/assets/customer-error-pl-recovery-export-v1.png" alt="Błąd eksportu i odpowiedź odbiorcy"><figcaption><p>Błąd eksportu i odpowiedź odbiorcy</p></figcaption></figure>
+
+W zadaniach dokumentu tworzę konkretne zadanie dla naszego administratora testów. Podaję kod błędu i proszę o sprawdzenie numeru faktury w mapowaniu. Na potrzeby tego szkolenia wysyłanie e-maili pozostaje wyłączone.
+
+Po ponownym załadowaniu sprawdzam, czy zadanie zostało zapisane i przypisane do właściwej osoby. Zadanie pozostaje otwarte do momentu wyjaśnienia przyczyny. Utworzenie zadania nie jest jeszcze udanym eksportem.
+
+<figure><img src="../../../.gitbook/assets/customer-verify-pl-recovery-export-v1.png" alt="Zapisane zadanie przekazania przypisane administratorowi"><figcaption><p>Zapisane zadanie przekazania przypisane administratorowi</p></figcaption></figure>

@@ -1,6 +1,6 @@
 # Si le pays dans le champ est l'un des
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-364a45ddb67d-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_country_in_field_is_isnot_continue_v2-fr-fr.png" alt="Si le pays dans le champ est l&#x27;un des, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 Utilisez cette condition lorsqu’une étape de traitement supplémentaire doit s’appliquer aux documents de certains pays, par exemple l’Allemagne et la France. La carte compare le pays lu dans un champ du document à une liste de pays configurée.
 

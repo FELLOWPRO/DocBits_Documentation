@@ -1,15 +1,15 @@
 # Installazione di WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-installation-it.svg" alt="Installazione di WatchDog e requisiti principali."><figcaption><p>Installazione di WatchDog e requisiti principali.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-it.svg" alt="Sequenza indicativa di installazione: cartelle e download, configurazione API prima dell’installazione del servizio, avvio e verifica. Requisiti e dipendenze dipendono dal pacchetto; il file JSON V1 non è un requisito del percorso moderno."><figcaption><p>Sequenza indicativa di installazione: cartelle e download, configurazione API prima dell’installazione del servizio, avvio e verifica. Requisiti e dipendenze dipendono dal pacchetto; il file JSON V1 non è un requisito del percorso moderno.</p></figcaption></figure>
 
-> **Consigliato:** Utilizza la configurazione moderna descritta di seguito. Le configurazioni di WatchDog vengono ora create direttamente nell'applicazione DocBits — non sono necessari file di configurazione locali.
+> **Consigliato:** Utilizza la configurazione moderna descritta di seguito. Le configurazioni di WatchDog vengono ora create direttamente nell'applicazione DocBits — non è richiesto il download manuale del file storico `watchdog-config.json`. Il pacchetto può comunque gestire propri file locali e dipendenze.
 
 ## Prerequisiti
 
 * Windows Server o Windows 10/11
 * Accesso come amministratore
 * Connettività di rete verso l'API di DocBits
-* DocBits API Key (disponibile in Settings → WatchDog → General Tab)
+* Chiave API di DocBits (disponibile in Impostazioni → WatchDog → Generale)
 
 ## Passaggi di Installazione
 
@@ -43,28 +43,29 @@ cd C:\WatchDog
 WatchDog.exe -api YOUR_API_KEY
 ```
 
-Questo collega WatchDog alla tua organizzazione DocBits e recupera automaticamente le configurazioni.
+Il comando configura il collegamento all’organizzazione. Verifica autenticazione, rete e recupero delle configurazioni nella versione installata prima di proseguire.
 
-### 4. Installa come Servizio Windows
+### 4. Crea le Configurazioni in DocBits
+
+Vai a **Impostazioni → Elaborazione documenti → WatchDog → Scheda Configurazioni** in DocBits:
+
+* Clicca su il comando per una nuova configurazione di importazione per impostare le cartelle da monitorare
+* Clicca su il comando per una nuova configurazione di esportazione per impostare le destinazioni di esportazione
+
+> **Importante:** Le configurazioni di esportazione richiedono un **tipo di documento**. Tutte le configurazioni sono gestite centralmente in DocBits, senza il download manuale del file di configurazione V1.
+
+
+### 5. Installa come Servizio Windows
 
 ```powershell
 WatchDog.exe install
 ```
 
-### 5. Avvia il Servizio
+### 6. Avvia il Servizio
 
 ```powershell
 WatchDog.exe start
 ```
-
-### 6. Crea le Configurazioni in DocBits
-
-Vai a **Impostazioni → Elaborazione documenti → WatchDog → Scheda Configurazioni** in DocBits:
-
-* Clicca su **New Import Configuration** per impostare le cartelle da monitorare
-* Clicca su **New Export Configuration** per impostare le destinazioni di esportazione
-
-> **Importante:** Le configurazioni di esportazione richiedono un **tipo di documento**. Tutte le configurazioni sono gestite centralmente in DocBits, non in file di configurazione locali.
 
 ### 7. Imposta l'Avvio Automatico
 
@@ -80,10 +81,11 @@ Dopo l'installazione, controlla lo stato di WatchDog in DocBits:
 
 **Impostazioni → WatchDog → Scheda Generale**
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Scheda General di WatchDog — Stato del servizio"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/native-watchdog-general-safe-it-20261023.png" alt="Scheda Generale di WatchDog nello stato esistente FUORI LINEA. Chiave API, comandi specifici dell’account e percorso di installazione sono nascosti. La versione proposta per il download non dimostra la versione installata o in esecuzione. Nessun comando o servizio è stato avviato."><figcaption><p>Scheda Generale di WatchDog nello stato esistente FUORI LINEA. Chiave API, comandi specifici dell’account e percorso di installazione sono nascosti. La versione proposta per il download non dimostra la versione installata o in esecuzione. Nessun comando o servizio è stato avviato.</p></figcaption></figure>
 
-* ✅ **Online** — WatchDog è connesso e invia gli heartbeat
-* Versione, ultimo riavvio e informazioni di sistema dovrebbero essere visibili
+* Controlla lo stato riportato, l’ultimo contatto e i dati effettivamente disponibili.
+* Distingui la versione installata dalla versione proposta per il download.
+* Verifica un import di prova autorizzato e i log: la sola apertura delle impostazioni non certifica il funzionamento.
 
 ## Riferimento dei Comandi
 
@@ -116,21 +118,15 @@ Il seguente metodo di configurazione V1 con file di configurazione locali è **o
 2. **Impostazioni delle cartelle**
    * Definisci i percorsi: `C:/WatchDog/Read` e `C:/WatchDog/Processed`
 
-   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="Impostazioni delle cartelle di WatchDog"><figcaption></figcaption></figure>
-
 3. **Impostazioni generali**
    * Seleziona i tipi di documento, configura la destinazione di esportazione
-
-   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="Impostazioni generali di WatchDog"><figcaption></figcaption></figure>
 
 4. **Configurazioni di esportazione**
    * Mostra le esportazioni configurate per l'elaborazione on-premise
 
-   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="Configurazioni di esportazione di WatchDog"><figcaption></figcaption></figure>
-
 5. **Scarica la configurazione**
    * Scarica `watchdog-config.json` e inseriscilo in `C:\WatchDog\`
 
-   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Scarica la configurazione"><figcaption></figcaption></figure>
-
 </details>
+
+I passaggi V1 restano soltanto un riferimento storico. Verifica i requisiti del pacchetto attuale, comprese le dipendenze runtime, invece di presumere che una dipendenza sia sempre inclusa. Durante questa verifica non sono stati eseguiti comandi, installazioni, riavvii o modifiche.

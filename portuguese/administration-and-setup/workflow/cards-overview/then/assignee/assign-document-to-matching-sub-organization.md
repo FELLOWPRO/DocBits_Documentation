@@ -1,6 +1,6 @@
 # Assign document to matching sub organization
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-04-pt-20261023.png" alt="Responsável Atribua o documento a uma suborganização correspondente com base no campo Nome do campo , use Sub-Organização como fallback" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

@@ -1,6 +1,6 @@
 # Order Type of Purchase Order
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-08-es-20261023.png" alt="Comparar con la orden de compra Cualquiera/Todos tipo de orden de compra Operador Tipo de pedido ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

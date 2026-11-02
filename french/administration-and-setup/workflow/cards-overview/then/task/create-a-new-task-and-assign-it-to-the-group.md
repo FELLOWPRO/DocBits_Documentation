@@ -1,6 +1,6 @@
 # Create a New Task and assign it to the group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-01-fr-20261023.png" alt="Tâche Créer une nouvelle Tâche/Notification avec le titre: Titre , description: Description , de priorité Priorité , et l&#x27;assigner au groupe Groupes . Notifier le groupe par courrier électronique Envoyer un courriel ." width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

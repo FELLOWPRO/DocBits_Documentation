@@ -1,6 +1,6 @@
 # Artikel-ID op inkooporder
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4a5b4a7c3888-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_id_column_po_v2-nl-nl.png" alt="Artikel-ID op inkooporder, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
 ## **Doel:**
 

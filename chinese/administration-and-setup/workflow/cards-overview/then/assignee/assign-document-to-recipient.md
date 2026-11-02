@@ -1,6 +1,8 @@
 # 将文档分配给接收人
 
-<figure><img src="../../../../../.gitbook/assets/workflow-card-qa-20261021-card-1b1b68dfdcad-zh.png" alt="所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。" width="563"><figcaption><p>所示版本的卡片字段。占位字段尚未配置。 此版本界面的部分标签尚未翻译或翻译不准确。本页说明使用正确术语；图片保留了实际界面。</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_oc_assign_doc_v1-zh-cn.png" alt="将文档分配给接收人, 版本 1" width="634"><figcaption><p>版本 1</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/workflow_card_oc_assign_doc_v2-zh-cn.png" alt="将文档分配给接收人, 版本 2" width="634"><figcaption><p>版本 2</p></figcaption></figure>
 
 ## **用途：**
 

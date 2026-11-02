@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-01-es-20261023.png" alt="Lógica Enviar una solicitud HTTPS a URL con encabezados: Encabezados , method: Método , parameter: Parámetros , data: data y el código de estado de recepción está en status code ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

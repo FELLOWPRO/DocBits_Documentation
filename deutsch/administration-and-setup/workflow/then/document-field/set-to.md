@@ -1,6 +1,6 @@
 # Feldwert setzen
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-12fec1de4cae-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_set_field_to_text_v2-de-de.png" alt="Feldwert setzen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -50,10 +50,10 @@ Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organ
 
 ## Admin-Beispielvideo
 
-Wann ich einen festen Text als Kennzeichnung benötige und wie ich ein vorhandenes Dokumentenfeld dafür auswähle. Die Beispiele zeigen erwartete Ergebnisse. Administrator, Büro und Stimme sind synthetisch erzeugt; die Bedienung zeigt die echte DocBits-Oberfläche eines Testkontos.
+Wann ich einen festen Text als Kennzeichnung benötige und wie ich ein vorhandenes Dokumentenfeld dafür auswähle. Die Beispiele zeigen erwartete Ergebnisse.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de.mp4" %}
 
-[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de.html)
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de-theme-v4.html)
 
 [Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-set-field-text-admin/v1/de.txt)

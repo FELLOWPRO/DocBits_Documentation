@@ -103,6 +103,16 @@ Analyseer elke periode van **7 dagen** tot een **volledig jaar**, of stel een **
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-nl.png" alt="Optie voor een aangepaste periode in de analysefilters."><figcaption><p>Optie voor een aangepaste periode in de analysefilters.</p></figcaption></figure>
 
+### Filters worden onthouden
+
+Het dashboard bewaart uw filters en het tijdsbereik in deze browser, apart voor elke gebruiker en elke organisatie. Opent u het dashboard opnieuw, dan wordt uw laatste selectie hersteld, inclusief een aangepast datumbereik in de datumkiezer.
+
+Kies rechtsboven in het dashboard **Terugzetten naar standaardinstellingen** om de bewaarde selectie te wissen: de filters, het tijdsbereik en aangepaste datums keren terug naar hun standaardwaarden.
+
+<mark style="color:red;">**Let op**</mark>: de selectie wordt in de browser bewaard, niet op de server. Hij wordt niet met andere apparaten of browsers gesynchroniseerd.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-nl.png" alt="Analytics-dashboard in de Status-weergave, met de filterrij en de knop Terugzetten naar standaardinstellingen rechtsboven"><figcaption><p>Filters worden hersteld wanneer u terugkeert naar het dashboard. Terugzetten naar standaardinstellingen wist ze.</p></figcaption></figure>
+
 ## Flow-stappen-kaarten
 
 Elke kaart vertegenwoordigt een flow-stap op basis van het geselecteerde **Flow-type**. De kaarten passen zich aan uw selectie aan — met levenscyclusfasen voor *Status*, verwerkingsmodules voor *Verwerking* of gebruikerscontactpunten voor *Gebruikersinteractie*.

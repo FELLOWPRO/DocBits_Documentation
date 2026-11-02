@@ -1,6 +1,6 @@
 # Assign to Procurement Group and Create a Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-06-pl-20261023.png" alt="Zadanie Przypisz dokument sekwencyjnie do grupy zamówień Nazwa grupy i utwórz tytuł Zadanie/Powiadomienie : Tytuł , opis: Opis priorytetu Priorytet . Powiadom grupę przez e-mail Wyślij e-mail . Przypisz priorytet Wartość ." width="563"><figcaption></figcaption></figure>
 
 ## **Cel**
 

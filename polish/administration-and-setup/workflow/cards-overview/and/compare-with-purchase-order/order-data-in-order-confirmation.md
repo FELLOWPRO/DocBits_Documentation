@@ -1,6 +1,6 @@
 # Order Data in Order Confirmation
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-00-pl-20261023.png" alt="Porównaj z zamówieniem zakupu Dane zamówienia w potwierdzeniu zamówienia Operator zamówienia zakupu. Wpisz Tekst w polu Nazwa pola w wyniku warunku Wynik warunku" width="563"><figcaption></figcaption></figure>
 
 ## **Cel**
 

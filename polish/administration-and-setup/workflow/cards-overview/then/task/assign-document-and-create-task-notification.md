@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-09-pl-20261023.png" alt="Zadanie Przypisz dokument sekwencyjnie i utwórz Zadanie/Powiadomienie z tytułem: Tytuł , opisem: Opis i priorytetem: Priorytet do Typ osoby przypisanej wyniku tabeli decyzyjnej. Powiadom ich za pośrednictwem poczty e-mail: Wyślij e-mail . Ustaw priorytet zadania na Wartość ." width="563"><figcaption></figcaption></figure>
 
 ## **Cel**
 

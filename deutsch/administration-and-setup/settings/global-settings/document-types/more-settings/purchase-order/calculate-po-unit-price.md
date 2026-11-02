@@ -6,14 +6,14 @@ Sie können wählen, den **Stückpreis** jeder Bestellposition automatisch aus d
 
 ## **Aktivierungsschritte**
 
-1.  Navigieren Sie zu **Einstellungen** -> **Globale Einstellungen** -> **Dokumenttypen**.
+1.  Navigieren Sie zu **Einstellungen → Dokumenttypen**.
 
-2.  Wählen Sie den gewünschten Dokumenttyp aus und klicken Sie auf **Weitere Einstellungen**.
+2.  Öffnen Sie über das Zahnrad des gewünschten Dokumenttyps dessen Einstellungen.
 
-    <figure><img src="../../../../../../.gitbook/assets/s50-consumed-po-line-document-types-de.png" alt="Deutsche Dokumenttypenübersicht. Über das Zahnrad der Rechnung öffnen Sie die weiteren Einstellungen."><figcaption><p>Deutsche Dokumenttypenübersicht. Über das Zahnrad der Rechnung öffnen Sie die weiteren Einstellungen.</p></figcaption></figure>
-3.  Aktivieren Sie im Abschnitt **Bestellung** die Option **PO-Stückpreis berechnen**.
+    <figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-de.png" alt="Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert."><figcaption><p>Aktuelle deutsche Dokumenttypenübersicht. Über das Zahnrad des gewünschten Dokumenttyps öffnen Sie dessen Einstellungen; es wurde kein Schalter geändert.</p></figcaption></figure>
+3.  Aktivieren Sie im Abschnitt **Bestellung** die Option **Berechnung des PO-Einzelpreises**. Die Abbildung zeigt den Schalter, keine ausgeführte Preisneuberechnung.
 
-    <figure><img src="../../../../../../.gitbook/assets/s50-consumed-po-line-settings-de.png" alt="Deutsche Bestelleinstellungen mit Status der verbrauchten Bestellposition. Die Schalter zeigen den vorgefundenen Zustand."><figcaption><p>Deutsche Bestelleinstellungen mit Status der verbrauchten Bestellposition. Die Schalter zeigen den vorgefundenen Zustand.</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-po-settings-de.png" alt="Oberer Bereich der aktuellen deutschen Bestelleinstellungen mit Abgleichsoptionen, Einzelpreisberechnung und Toleranzen. Die Schalter zeigen den vorgefundenen Zustand; kein Abgleich oder Export wurde ausgeführt."><figcaption><p>Oberer Bereich der aktuellen deutschen Bestelleinstellungen mit Abgleichsoptionen, Einzelpreisberechnung und Toleranzen. Die Schalter zeigen den vorgefundenen Zustand; kein Abgleich oder Export wurde ausgeführt.</p></figcaption></figure>
 
 ## Wie der Preis berechnet wird
 

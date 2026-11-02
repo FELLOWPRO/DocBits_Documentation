@@ -19,7 +19,7 @@ Decision Trees are a powerful feature that allows for the automated routing and 
 
 The Decision Tree list displays all the configured decision trees. Open it from **Settings → Document Processing → Decision Trees**.
 
-<figure><img src="../../../../.gitbook/assets/decision_trees.png" alt="Decision Trees list"><figcaption><p>The Decision Trees list</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/site-extra-decision-trees-en.png" alt="Decision-tree list with organization names and values hidden. Masked rows do not indicate an empty list."><figcaption><p>Decision-tree list with organization names and values hidden. Masked rows do not indicate an empty list.</p></figcaption></figure>
 
 Each entry shows:
 

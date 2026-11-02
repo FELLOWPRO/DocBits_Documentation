@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-04-pt-20261023.png" alt="Lógica A tabela de decisão Tabela de Decisão tem retornos para o documento ou organização fornecedora. Armazenar retornou dados para uso em cartões subsequentes." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

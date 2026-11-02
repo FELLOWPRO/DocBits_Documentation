@@ -1,5 +1,13 @@
 # Configurações
 
+## Vídeo tutorial: Configurações e módulos
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/pt.mp4" %}
+Visão geral das configurações e módulos no DocBits
+{% endembed %}
+
+O vídeo mostra os cinco grupos da Visão geral das configurações, a pesquisa e os atalhos, e o que as três páginas de Módulo controlam.
+
 <figure><img src="../../.gitbook/assets/site-extra-settings-overview-pt.png" alt="Definições da organização com dados identificativos ocultos. O país apresentado é um valor configurado; a secção App-Color mantém a designação inglesa na versão ilustrada."><figcaption><p>Definições da organização com dados identificativos ocultos. O país apresentado é um valor configurado; a secção App-Color mantém a designação inglesa na versão ilustrada.</p></figcaption></figure>
 
 A área de Configurações é o seu centro de controle para configurar o DocBits. Ela é organizada em cinco seções principais:

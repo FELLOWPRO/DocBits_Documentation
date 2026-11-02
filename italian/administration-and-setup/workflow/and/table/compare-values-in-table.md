@@ -1,6 +1,8 @@
 # Confronta i valori nella tabella
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5f14db09d019-it.png" alt="Campi della scheda nella versione visualizzata. I campi non sono ancora configurati." width="563"><figcaption><p>Campi della scheda nella versione visualizzata. I campi non sono ancora configurati.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v1-it-it.png" alt="Confronta i valori nella tabella, Versione 1" width="634"><figcaption><p>Versione 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_table_column_entries_v2-it-it.png" alt="Confronta i valori nella tabella, Versione 2" width="634"><figcaption><p>Versione 2</p></figcaption></figure>
 
 ## **Scopo:**
 

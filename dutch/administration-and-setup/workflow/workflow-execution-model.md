@@ -6,6 +6,8 @@ description: "Maak onderscheid tussen gebeurtenissen, voorwaarden, uitvoeringsvo
 
 Een workflow heeft een aanleiding en passende voorwaarden nodig. **Documenttype is Factuur** selecteert documenten; dit betekent niet dat elke wijziging van een factuur automatisch een nieuwe uitvoering start.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-nl-v3.png" alt="Schematische voorbeelden: een lineaire standaardreeks voert alleen acties uit als aan de voorwaarden is voldaan; anders stopt die reeks. Een geavanceerd voorwaardeknooppunt kan afzonderlijk geconfigureerde resultaatpaden gebruiken. Een pad gaat alleen verder als er een verbinding is. Optionele standaardvertakkingen zijn weggelaten; dit is geen schermafbeelding van de DocBits-interface."><figcaption>Schematische voorbeelden: een lineaire standaardreeks voert alleen acties uit als aan de voorwaarden is voldaan; anders stopt die reeks. Een geavanceerd voorwaardeknooppunt kan afzonderlijk geconfigureerde resultaatpaden gebruiken. Een pad gaat alleen verder als er een verbinding is. Optionele standaardvertakkingen zijn weggelaten; dit is geen schermafbeelding van de DocBits-interface.</figcaption></figure>
+
 ## Van gebeurtenis naar actie
 
 1. Controleer de organisatie, rechten en Workflow-module, plus de Advanced-toegang waar nodig.

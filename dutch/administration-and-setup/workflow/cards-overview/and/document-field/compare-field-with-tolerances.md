@@ -1,6 +1,6 @@
 # Compare Field with tolerances
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-document-field-05-nl-20261023.png" alt="Documentveld Vergelijk veld Veldnaam Operator Waarde met toleranties Tolerantiebedrag Tolerantietype" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

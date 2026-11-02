@@ -1,5 +1,13 @@
 # Company Information
 
+## Video tutorial: Company, subscription and audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/en.mp4" %}
+Company information, subscription plan and audit logs in DocBits
+{% endembed %}
+
+The video shows the company information and preferences, the subscription plan, the login activity and the audit logs.
+
 <figure><img src="../../../../.gitbook/assets/prior-i002-en.png" alt="Company email-domain configuration."><figcaption><p>Company email-domain configuration.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/prior-i001-en.png" alt="Company information with organization values hidden."><figcaption><p>Company information with organization values hidden.</p></figcaption></figure>

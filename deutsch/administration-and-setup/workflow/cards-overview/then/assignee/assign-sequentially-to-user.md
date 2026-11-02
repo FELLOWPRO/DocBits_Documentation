@@ -1,6 +1,6 @@
 # Assign Sequentially to User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-11-de-20261023.png" alt="Zugewiesener Benutzer Ordnen Sie das Dokument der Reihe nach Benutzer mit der Priorität Wert zu." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck**
 

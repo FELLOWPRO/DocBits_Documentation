@@ -1,85 +1,46 @@
 # Se connecter via la base de données en lecture seule
 
-Ce guide vous explique comment connecter la **base de données en lecture seule de DocBits à Power BI Desktop** à l'aide du **pilote ODBC PostgreSQL**. Il couvre l'installation du pilote, la configuration ODBC, l'intégration à Power BI et l'actualisation planifiée.
+Ce guide décrit la connexion de Power BI Desktop à la base de données en lecture seule de DocBits avec le pilote PostgreSQL ODBC. L’accès doit être disponible pour votre organisation et autorisé pour votre compte. Les captures illustrent les réglages et des écrans externes historiques ; elles ne prouvent pas qu’une connexion ou une actualisation a été exécutée.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
 {% endembed %}
 
-#### 1. Installer le pilote ODBC PostgreSQL
+## 1. Préparer les identifiants DocBits
 
-* Téléchargez le dernier pilote ODBC PostgreSQL (**psqlODBC**) depuis le site officiel :
-  * [https://www.postgresql.org/ftp/odbc/releases/](https://www.postgresql.org/ftp/odbc/releases/)
-* Exécutez le programme d'installation et suivez l'assistant.
+Dans **Paramètres → Module → Tableaux de bord et analyses**, ouvrez **Accès aux bases de données**. Si cet accès n’est pas disponible, contactez votre administrateur avant de configurer la connexion. Utilisez les valeurs de votre environnement ; ne publiez pas les identifiants dans un rapport ou une capture.
 
-#### 2. Configurer la source de données ODBC
+<figure><img src="../../.gitbook/assets/site-complete-read-only-db-access-fr.png" alt="Accès aux bases de données dans la version française illustrée. L’accès était déjà activé ; les identifiants et les noms des tables sont masqués. Aucun réglage n’a été modifié et aucune connexion Power BI n’a été exécutée."><figcaption><p>Accès aux bases de données dans la version française illustrée. L’accès était déjà activé ; les identifiants et les noms des tables sont masqués. Aucun réglage n’a été modifié et aucune connexion Power BI n’a été exécutée.</p></figcaption></figure>
 
-* Ouvrez l'**Administrateur de source de données ODBC (64 bits)** via le Panneau de configuration ou la recherche Windows.
-* Accédez à l'onglet **DSN système** et cliquez sur **Ajouter**.
-* Sélectionnez le pilote **PostgreSQL Unicode(x64)** dans la liste et cliquez sur **Terminer**.
-* Renseignez les champs requis avec les identifiants disponibles ici :\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
+## 2. Installer et configurer le pilote ODBC
 
-<figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
+Installez [psqlODBC depuis le site PostgreSQL](https://www.postgresql.org/ftp/odbc/releases/), avec une architecture compatible avec votre installation de Power BI et, le cas échéant, votre passerelle. Sous Windows 64 bits, ouvrez l’administrateur des sources de données ODBC 64 bits, puis **DSN système → Ajouter** et sélectionnez le pilote PostgreSQL approprié.
 
-**Champs requis :**
+Renseignez un nom de DSN, l’hôte, le port, la base de données, le nom d’utilisateur et le mot de passe fournis pour votre accès DocBits. Configurez le mode SSL selon les exigences de votre environnement. Le mode `require` impose le chiffrement ; il ne remplace pas à lui seul une configuration de vérification du certificat. Consultez les [options officielles psqlODBC](https://odbc.postgresql.org/docs/config-opt.html).
 
-* **Nom :** un nom pour la connexion (par ex. `Sandbox-Read_Only`)
-* **Serveur :** copiez la valeur de l'hôte depuis DocBits
-* **Port :** copiez la valeur du port depuis DocBits
-* **Base de données :** copiez le nom de la base de données depuis DocBits
-* **Nom d'utilisateur :** copiez le nom d'utilisateur depuis DocBits
-* **Mot de passe :** copiez le mot de passe depuis DocBits
-* **Mode SSL :** définissez sur **Require** (garantit une communication chiffrée)
+## 3. Ouvrir la connexion dans Power BI Desktop
 
-#### 3. Connecter la base de données en lecture seule à Power BI
+Choisissez **Obtenir des données → ODBC**, puis votre DSN. Si Power BI demande une authentification de base de données, utilisez les identifiants correspondants. Les libellés peuvent varier selon la version et la langue de Power BI.
 
-* Ouvrez **Power BI Desktop**.
-*   Sélectionnez **Obtenir des données** → **ODBC** → **Se connecter**.
+<figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Exemple historique externe de la boîte Get Data de Power BI en anglais, avec le connecteur ODBC. Il ne s’agit pas de l’interface française de DocBits."><figcaption><p>Exemple historique externe de la boîte Get Data de Power BI en anglais, avec le connecteur ODBC. Il ne s’agit pas de l’interface française de DocBits.</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Power BI Obtenir des données ODBC"><figcaption></figcaption></figure>
-* Dans la liste des DSN, sélectionnez votre source configurée (par ex. `Sandbox-Read_Only`).
+<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt="Exemple historique externe du choix d’un DSN dans Power BI en anglais. Le nom Sandbox-Read_Only est illustratif ; sélectionnez votre propre source autorisée."><figcaption><p>Exemple historique externe du choix d’un DSN dans Power BI en anglais. Le nom Sandbox-Read_Only est illustratif ; sélectionnez votre propre source autorisée.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
+Si `password authentication failed for user` apparaît, vérifiez l’hôte, la base de données et les identifiants. L’échappement par accolades dans une chaîne de connexion relève de la syntaxe du pilote ; ce n’est pas une solution générale aux erreurs d’authentification.
 
-* Cliquez sur **OK**. Saisissez à nouveau les identifiants si vous y êtes invité.
-  * Si `password authentication failed for user` apparaît, vérifiez l’hôte, la base de données, le nom d’utilisateur et le mot de passe. Saisissez le véritable mot de passe dans la boîte de dialogue d’authentification. L’échappement par accolades dans une chaîne de connexion ODBC relève de la syntaxe du pilote ; ce n’est pas une solution générale aux échecs d’authentification.
+## 4. Sélectionner et transformer les tables
 
-#### 4. Charger et transformer les données
+Dans le **Navigateur**, ouvrez les schémas disponibles et sélectionnez les tables autorisées pour votre rapport. Le schéma `public` est un exemple, pas une liste de tables garantie pour toutes les organisations. Choisissez **Charger** pour importer les données ou **Transformer les données** pour les préparer dans Power Query.
 
-* Dans le volet **Navigateur**, développez la liste des schémas.
-* Ouvrez le schéma **`public`**.
-* Sélectionnez les tables que vous souhaitez importer.
+<figure><img src="../../.gitbook/assets/connect_read_only_1.png" alt="Exemple historique externe du Navigateur Power BI en anglais, avec une liste de tables. Les tables disponibles dépendent de vos droits et de votre environnement ; aucune donnée de rapport n’est affichée ici."><figcaption><p>Exemple historique externe du Navigateur Power BI en anglais, avec une liste de tables. Les tables disponibles dépendent de vos droits et de votre environnement ; aucune donnée de rapport n’est affichée ici.</p></figcaption></figure>
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+Le [guide Microsoft du connecteur ODBC](https://learn.microsoft.com/fr-fr/power-query/connectors/odbc) décrit la sélection du DSN, l’authentification et les options du Navigateur.
 
-* Choisissez :
-  * **Charger** → importe directement dans Power BI
-  * **Transformer les données** → ouvre Power Query pour mettre en forme et filtrer les données avant le chargement
+## 5. Construire votre rapport
 
-#### 5. Visualiser vos données
+Créez les visuels à partir des tables autorisées, vérifiez les relations et les filtres, puis contrôlez les agrégations et les unités. Comparez un échantillon avec les données sources avant de diffuser le rapport. Utilisez des données de test autorisées pour les démonstrations et masquez les informations sensibles dans les captures.
 
-* Utilisez le canevas de rapport de Power BI pour créer des tableaux de bord.
-* Faites glisser des champs, ajoutez des segments, choisissez des types de graphiques et appliquez des calculs DAX.
-* Utilisez l'**Éditeur Power Query** pour nettoyer ou joindre les données avant de créer des visuels.
-* Référence : [Documentation Power BI](https://learn.microsoft.com/en-us/power-bi/)
+## 6. Configurer l’actualisation planifiée, si nécessaire
 
-#### 6. Activer l'actualisation planifiée (facultatif)
+Après publication du fichier `.pbix` dans le service Power BI, vérifiez les paramètres du modèle sémantique, les identifiants et la connexion à la passerelle. Pour un accès ODBC via une passerelle, celle-ci doit disposer du pilote, du DSN et d’un accès réseau appropriés. La fréquence et la disponibilité de l’actualisation dépendent notamment de la licence, de la capacité et du mode de connexion.
 
-L’actualisation planifiée dépend de la licence ou de la capacité de l’espace de travail, du connecteur et du mode de connexion. Pour cette connexion ODBC, configurez une passerelle accessible avec le pilote, le DSN et les identifiants appropriés. Vérifiez les conditions actuelles dans la documentation officielle.
-
-* Pour maintenir vos rapports synchronisés avec PostgreSQL :
-* Publiez votre fichier `.pbix` sur le **service Power BI**.
-* Installez la **passerelle Power BI** (mode Standard) sur une machine disposant d'un accès réseau à PostgreSQL.
-* Dans le service Power BI :
-  * Accédez à votre jeu de données → **Paramètres** → **Actualisation planifiée**
-  * Associez votre DSN et fournissez les identifiants
-* Plus d'informations [ici](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
-
-#### 7. Exemples de tableaux de bord et de vues de données&#x20;
-
-<div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Exemple de tableau de bord Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Exemple de tableau de bord Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Exemple de tableau de bord Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Exemple de tableau de bord Power BI 4"><figcaption></figcaption></figure></div>
-
-[Documentation officielle — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
-
-[Documentation officielle — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
-
-[Documentation officielle — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)
+Suivez la [documentation Microsoft de l’actualisation planifiée](https://learn.microsoft.com/fr-fr/power-bi/connect-data/refresh-scheduled-refresh) et vérifiez l’historique après un premier essai autorisé. L’enregistrement d’un horaire ne prouve pas la réussite d’une actualisation.

@@ -1,8 +1,10 @@
 # Łączna cena różnicy ilościowej
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5e9d809dfde3-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v2-pl-pl.png" alt="Łączna cena różnicy ilościowej, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-313edcefbea2-pl.png" alt="Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane." width="563"><figcaption><p>Pola karty w pokazanej wersji. Pola nie są jeszcze skonfigurowane.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v3-pl-pl.png" alt="Łączna cena różnicy ilościowej, Wersja 3" width="634"><figcaption><p>Wersja 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_combined_price_of_quantity_difference_operator_value_v4-pl-pl.png" alt="Łączna cena różnicy ilościowej, Wersja 4" width="634"><figcaption><p>Wersja 4</p></figcaption></figure>
 
 ## **Cel**:
 

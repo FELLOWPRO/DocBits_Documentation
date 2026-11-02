@@ -224,6 +224,18 @@ Przetestuj każdą nową regułę na co najmniej jednym dokumencie, który powin
 * Ostrzeżenia są zbierane osobno i nigdy nie ukrywają błędu.
 * Jeśli reguły nie da się ocenić — na przykład z powodu dzielenia przez zero w formule — jest pomijana. Uszkodzona reguła nigdy nie oznacza dokumentu omyłkowo jako nieprawidłowego.
 
+## Dzienniki <a id="logs"></a>
+
+Każda reguła może zapisywać swoje oceny. Otwórz stronę **Rejestry wykonywania reguł** danego typu dokumentu: nagłówek podaje typ dokumentu, a ikona odświeżania ładuje listę ponownie.
+
+**Znajdź według** określa, czego szukasz (domyślnie **Klucz reguły**), a wartość wpisujesz w polu obok. Przy szukaniu po dokumencie **Typ reguły** jest wymagany. Zawęź wynik za pomocą **Wynik**, **Wykonany**, **Od daty** i **Do tej pory**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-pl.png" alt="Rejestry wykonywania reguł"><figcaption><p>Strona rejestrów wykonywania reguł: u góry filtry, poniżej jeden wiersz na ocenę. Dopóki nie wyszukasz, tabela podpowiada, co wpisać.</p></figcaption></figure>
+
+Otwórz wpis, aby zobaczyć szczegóły, w tym **ślad warunku**: każdy wiersz *Applies when* z wartością oczekiwaną, rzeczywistą wartością dokumentu i informacją, czy warunek został spełniony. Zobacz [Odczyt śladu warunku w logach](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+
+Ta sama strona pokazuje też logi reguł transformacji i wyboru układu.
+
 ## Przepisy
 
 Skopiuj te reguły jako punkt wyjścia. Klucze pól i kolumn pochodzą ze standardowego typu dokumentu **Faktura**; dostosuj je do swoich typów dokumentów.

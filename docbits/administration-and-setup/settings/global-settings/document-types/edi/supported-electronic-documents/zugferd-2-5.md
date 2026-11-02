@@ -13,22 +13,28 @@ Check the country guide for version limits, effective configuration and the coun
 | Property | Value |
 |----------|-------|
 | **Country / Region** | Germany |
-| **Document Types** | Invoice, Credit Note |
-| **Format** | CII (PDF/A-3 embedded) or UBL XML |
+| **Document Types** | Invoice, Credit Note (verify the effective mapping) |
+| **Format** | CII XML embedded in PDF/A-3 |
 | **Standard** | ZUGFeRD 2.5 |
 | **Based On** | EN 16931 |
 
-ZUGFeRD 2.5 (the FeRD/FNFE-MPE common publication of June 2026) is equivalent to Factur-X 1.09. Its CII XML uses the UN/CEFACT D22B base, which is backwards-compatible with D16B, so the full ZUGFeRD 2.4 extraction and transformation contract continues to apply. The EXTENDED profile adds new fields for payment means and BIC, a third-party payee (factor), and the allowance/charge tax-exemption reason.
+ZUGFeRD 2.5 and Factur-X 1.09 are equivalent releases. The hybrid format embeds CII D22B XML in PDF/A-3; UBL is not its XML syntax. See the [FeRD release reference](https://www.ferd-net.de/publikationen-produkte/publikationen/detailseite/zugferd-25-english).
 
-All five profiles are supported: MINIMUM, BASIC WL, BASIC, EN 16931 (COMFORT) and EXTENDED. DocBits classifies the CII and UBL variants separately.
+The standard defines MINIMUM, BASIC WL, BASIC, EN16931 and EXTENDED profiles. A profile name in the catalogue does not establish automatic detection or complete field coverage. MINIMUM and BASIC WL can omit line-item information needed by your integration.
+
+This page describes the June 2026 release. The later [Factur-X 1.09.2 / ZUGFeRD 2.5.2 release](https://fnfe-mpe.org/factur-x/factur-x_en/) must be identified separately; a family identifier such as `1p0` alone is insufficient.
 
 ## Support Status
 
-| Component | Status |
-|-----------|--------|
-| Preview | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation | ✅ Supported |
+The read-only development catalogue check on 31 October 2026 found separate `ZUGFERD 2.5 CII` and `ZUGFERD 2.5 UBL` entries for `INVOICE`. The UBL entry is a DocBits configuration label; it does not make UBL a conforming ZUGFeRD hybrid format.
+
+| Component | Configuration observed |
+|-----------|------------------------|
+| Preview | `PREVIEW` (XSLT) |
+| Field extraction | `EXTRACTION_PATHS` (JSON) |
+| Transformation | `TRANSFORMATION` (XSLT) |
+
+These entries confirm available configuration, not successful processing of every file or profile. Check the effective Default or Custom source and active version in your organisation. Standard backward compatibility does not guarantee unchanged extraction or transformation results. Test representative invoices and credit notes, required fields and the ERP export separately; legal validation and delivery-network requirements need their own acceptance.
 
 ## Related
 

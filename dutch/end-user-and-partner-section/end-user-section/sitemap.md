@@ -21,6 +21,14 @@ Vermeldingen zijn gekleurd op type:
 
 Klik op een willekeurige vermelding om er direct heen te springen. Vermeldingen die een parameter nodig hebben (zoals een documenttype of document-ID) bevatten een inline-selector — kies de waarde voordat u klikt.
 
+## Trainingsvideo's in de lijst
+
+Items van pagina's met een trainingsvideo tonen een video-pictogram achter de naam — niet alleen in Instellingen, maar overal in de catalogus, bijvoorbeeld op het Dashboard, bij Veldvalidatie of op de workflowpagina's. Kies het pictogram om de video van die pagina in het paneel **Video's en tutorials** af te spelen zonder de sitemap te verlaten.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-nl.png" alt="Sitemap met video-pictogrammen naast meerdere items en het paneel Video's en tutorials geopend op de video over veldvalidatie"><figcaption><p>Items met een trainingsvideo hebben een video-pictogram; een klik opent de video in het paneel.</p></figcaption></figure>
+
+Het paneel blijft elke video per onderwerp tonen, dus u kunt de hele bibliotheek ook via het pictogram in de bovenbalk doorbladeren en doorzoeken. Zie [Video's en tutorials](videos-and-tutorials.md).
+
 ## Zoeken en filteren
 
 De vaste kop bovenaan bevat het zoekveld en de filterpillen. Typ een paar tekens om de lijst live te filteren op naam en beschrijving. Gebruik de typepillen om te beperken tot één type vermelding — bijvoorbeeld alleen **Dialoogvenster**.

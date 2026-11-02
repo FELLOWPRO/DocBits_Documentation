@@ -1,125 +1,121 @@
 # TransactionConfig Pro Template
 
-## 财务文档处理综合配置工具
+## 配置财务文档处理
 
-_TransactionConfig Pro Template_ 是一款功能强大的配置工具，专为企业环境设计，用于管理发票、借项通知单和贷项通知单等财务文档的处理。该工具提供详细的映射和字段定义，使企业能够精准地自动化和自定义财务工作流。_TransactionConfig Pro Template_ 可与现有 Infor ERP 系统无缝集成，确保准确处理复杂交易，同时符合全球财务标准。
+_TransactionConfig Pro Template_ 介绍发票、借项通知单和贷项通知单等财务文档的映射示例。规则管理器可使用已配置的 `conflict_resolution` 规则与表达式确定处理操作。这份文档并不能证明您的环境中已部署某个预定义模板。
 
-### 主要功能
+字段映射、交易类型及工作流决策须针对相应的 Infor M3/LN 集成进行配置。这些示例帮助解释配置方式，不保证结果准确、无需调整即可完成集成，也不保证符合全球财务标准。
 
-• 详细映射：可在各种交易类型之间精确映射字段，确保数据一致且准确。
+### 配置范围
 
-• 自定义：支持自定义财务文档工作流，以满足特定业务需求。
+* **映射：** 定义各交易类型的来源字段和目标字段，并验证输出数据。
+* **自定义：** 配置业务流程及审批流程的规则。
+* **自动化：** 仅自动执行生效规则与表达式明确涵盖的决策。
+* **集成：** 检查导出映射及目标 Infor M3/LN 系统的要求。
+* **合规：** 单独评估会计和税务要求；配置本身不保证符合法律要求。
 
-• 自动化：自动处理财务交易，减少人工错误并提高效率。
+## 冲突解决示例
 
-• 集成：可轻松集成现有 Infor M3/LN ERP 系统，增强组织整体财务处理能力。
-
-• 合规性：确保符合国际财务标准和法规，帮助企业有效管理全球交易。
-
-
-
-## 冲突解决案例详解
-
-_TransactionConfig Pro Template_ 包含一系列预定义规则，用于处理发票数据与采购订单（PO）数据之间的常见差异。这些规则旨在在出现偏差时自动进行决策，确保财务处理的一致性和准确性。
+以下场景用于说明一种已配置的映射，并不代表已核实部署的默认模板。实际输出、金额、正负号和文档类型取决于当前生效的 `conflict_resolution` 规则与表达式、导出映射及审批决定。下文提到的借项通知单或贷项通知单均以这些配置为前提；示例不保证自动开具，也不保证符合法律要求。
 
 ### [案例 1、2、3：数量和单价在容差范围内](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
-**场景：** 与采购订单相比，发票上的数量和单价均在可接受的容差范围内。
+**场景:** 发票数量和单价均在相对于 PO 配置的容差范围内。
 
-• **操作：** 系统接受发票上的数值，并根据提供的数量和单价计算总金额。
+**示例操作:** 示例映射接受发票数值，并计算数量 × 单价。
 
-### [案例 4、5：数量在容差范围内，单价超出容差范围（已审批）](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
+### [案例 4、5：数量在容差内，单价超出容差（已审批）](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
 
-**场景：** 发票上的数量在容差范围内，但单价超出容差范围，且此偏差已获审批。
+**场景:** 数量在容差内；价格偏差超出容差，但已获审批。
 
-• **操作：** 系统会调整单价，使其与采购订单一致，并应用任何必要的行费用以补足差额。
+**示例操作:** 示例映射使用 PO 单价，并在已配置时将获批差额映射为明细费用。
 
-### [案例 6：数量在容差范围内，单价超出负向容差范围（已拒绝）](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
+### [案例 6：数量在容差内，单价低于允许下限（已拒绝）](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-**场景：** 数量在容差范围内，但单价低于可接受范围（负向容差），且未获审批。
+**场景:** 数量在容差内；价格低于允许范围，且偏差已被拒绝。
 
-• **操作：** 系统拒绝该单价，将其调整为与采购订单一致，并针对差额生成贷项通知单。必要时还可应用额外的表头费用。
+**示例操作:** 示例映射使用 PO 价格。带正负号的差额不会自动成为贷项通知单；调整的类型及正负号取决于映射。
 
-### [案例 7：数量在容差范围内，单价超出容差范围（正向偏差已拒绝）](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
+### [案例 7：数量在容差内，单价高于允许上限（已拒绝）](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
 
-**场景：** 数量在容差范围内，但单价超过可接受范围（正向容差），且未获审批。
+**场景:** 数量在容差内；正向价格偏差已被拒绝。
 
-• **操作：** 系统拒绝发票单价，将其调整为与采购订单一致，并可针对超收金额生成借项通知单。
+**示例操作:** 示例映射使用 PO 价格。针对差额的任何通知单或调整均取决于导出映射。
 
-### [案例 8a、9a：数量超出容差范围（已审批），单价在容差范围内](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
+### [案例 8a、9a：数量超出容差（已审批），单价在容差内](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
 
-**场景：** 发票上的数量超出可接受容差范围，但已获审批；单价仍在容差范围内。
+**场景:** 数量偏差已获审批，价格仍在容差内。
 
-• **操作：** 系统接受已审批的数量和发票上的单价，并据此处理交易。
+**示例操作:** 示例映射使用已获批的发票数量及发票单价。
 
-### [案例 11a：数量超出容差范围（正向偏差已拒绝），单价在容差范围内](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
+### [案例 11a：数量高于允许上限（已拒绝），单价在容差内](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
 
-**场景：** 发票上的数量超过可接受范围（正向偏差）并被拒绝，但单价在容差范围内。
+**场景:** 数量超出容差且已被拒绝；价格在容差内。
 
-• **操作：** 系统将数量调整至已审批的水平，保留单价并处理交易。超出的数量将被拒绝，不予开票。
+**示例操作:** 示例映射使用获批数量并保留单价。超出数量的处理方式取决于已配置的规则。
 
-### [案例 10a：数量超出容差范围（负向偏差已拒绝），单价在容差范围内](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
+### [案例 10a：数量低于允许下限（已拒绝），单价在容差内](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
 
-**场景：** 数量低于可接受范围（负向容差）且未获审批，但单价在容差范围内。
+**场景:** 数量低于容差下限且已被拒绝；价格在容差内。
 
-• **操作：** 系统将数量调整为与已审批的水平一致，同时保持单价不变，并据此处理交易。
+**示例操作:** 示例映射使用获批数量并保留单价。
 
-### [案例 8b、9b：数量超出容差范围（已审批），单价超出容差范围（已审批）](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
+### [案例 8b、9b：数量和单价均超出容差（已审批）](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
 
-**场景：** 数量和单价均超出容差范围，但都已获审批。
+**场景:** 数量偏差和价格偏差均已获审批。
 
-• **操作：** 系统使用发票上的数量和单价处理交易，并应用任何必要的调整或行费用。
+**示例操作:** 示例映射使用已获批的发票数值，并应用明确配置的明细费用或调整。
 
-### [案例 10b：数量超出容差范围（负向偏差已拒绝），单价超出容差范围（已拒绝）](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
+### [案例 10b：数量低于下限且单价超出容差（已拒绝）](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
 
-**场景：** 数量和单价均超出容差范围，且两者均未获审批。
+**场景:** 负向数量偏差和价格偏差均未获审批。
 
-• **操作：** 系统拒绝发票数据，将数值调整为与采购订单一致，并生成必要的借项或贷项通知单。
+**示例操作:** 示例映射使用 PO 值或获批值。任何借项通知单或贷项通知单均须符合相应映射及审批结果。
 
-### [案例 11b：数量超出容差范围（正向偏差已拒绝），单价超出容差范围（已拒绝）](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
+### [案例 11b：数量高于上限且单价超出容差（已拒绝）](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
 
-**场景：** 数量超过可接受范围（正向偏差）并被拒绝，单价也超出容差范围并被拒绝。
+**场景:** 正向数量偏差和价格偏差均已被拒绝。
 
-• **操作：** 系统将数量和单价调整至采购订单中已审批的水平，拒绝任何超出部分，并处理交易。
+**示例操作:** 示例映射使用获批的 PO 值；超出部分的处理取决于生效配置。
 
-### [案例 12、13：费用行——单位费用在容差范围内](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+### [案例 12、13：明细费用的单位费用在容差内](charge-per-unit-within-tolerance.md)
 
-**场景：** 发票上的单位费用与采购订单相比，在可接受的容差范围内。
+**场景:** 明细单位费用在相对于 PO 配置的容差内。
 
-• **操作：** 系统接受发票上的单位费用，无需调整即可处理交易。
+**示例操作:** 示例映射接受发票上的明细费用，不作调整。
 
-### [案例 14：费用行——单位费用超出容差范围（已审批）](charge-per-unit-outside-tolerance-approved-1.md)
+### [案例 14：明细费用的单位费用超出容差（已审批）](charge-per-unit-outside-tolerance-approved-1.md)
 
-**场景：** 单位费用超出容差范围，但已获审批。
+**场景:** 明细单位费用超出容差，但已获审批。
 
-• **操作：** 系统接受该单位费用并应用已审批的费用，据此处理交易。
+**示例操作:** 示例映射应用获批的明细费用。
 
-### [案例 15：费用行——单位费用超出容差范围（已拒绝）](charge-per-unit-outside-tolerance-rejected.md)
+### [案例 15：明细费用的单位费用超出容差（已拒绝）](charge-per-unit-outside-tolerance-rejected.md)
 
-**场景：** 单位费用超出容差范围且未获审批。
+**场景:** 明细单位费用超出容差，且已被拒绝。
 
-• **操作：** 系统将单位费用调整为与采购订单或已审批的水平一致，并生成任何必要的借项或贷项通知单。
+**示例操作:** 示例映射使用 PO 明细费用或获批值。针对差额的任何通知单均取决于导出映射。
 
-### [案例 12、13：表头费用——单位费用在容差范围内](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+### [案例 12、13：表头费用的单位费用在容差内](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
 
-**场景：** 表头单位费用与采购订单相比，在可接受的容差范围内。
+**场景:** 表头单位费用在相对于 PO 配置的容差内。
 
-• **操作：** 系统按发票所列处理表头费用，无需调整即可应用该费用。
+**示例操作:** 示例映射应用发票上的表头费用，不作调整。
 
-### [案例 14：表头费用——单位费用超出容差范围（已审批）](charge-per-unit-outside-tolerance-approved.md)
+### [案例 14：表头费用的单位费用超出容差（已审批）](charge-per-unit-outside-tolerance-approved.md)
 
-**场景：** 表头单位费用超出容差范围，但已获审批。
+**场景:** 表头单位费用超出容差，但已获审批。
 
-• **操作：** 系统处理已审批的单位费用，并将其应用于交易。
+**示例操作:** 示例映射应用获批的表头费用。
 
-### [案例 15：表头费用——单位费用超出容差范围（已拒绝）](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
+### [案例 15：表头费用的单位费用超出容差（已拒绝）](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
 
-**场景：** 表头单位费用超出容差范围且未获审批。
+**场景:** 表头单位费用超出容差，且已被拒绝。
 
-• **操作：** 系统将表头费用调整为与采购订单一致，据此处理交易，并生成任何必要的通知单。
+**示例操作:** 示例映射使用 PO 表头费用或获批值。任何单独通知单均取决于已配置的处理方式。
 
-### [tax-lines.md](tax-lines.md "mention")
+### [税额明细](tax-lines.md "mention")
 
-**场景：** 处理发票与采购订单之间的税额差异。
+**场景:** 发票税额与 PO 税额不同。
 
-• **操作：** 系统根据已审批的税率和金额调整税行，确保符合适用的税务法规。
+**示例操作:** 示例映射使用获批的税率和税额。应根据适用税务要求检查配置；此示例不保证符合法律要求。

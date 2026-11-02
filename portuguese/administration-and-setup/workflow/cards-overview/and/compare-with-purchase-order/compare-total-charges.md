@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-14-pt-20261023.png" alt="Comparar com a ordem de compra Comparar o total de cobranças no campo Nome do campo Operador cobrança correspondente no pedido de compra com tolerâncias de Quantidade de Tolerância Tipo de tolerância . ID da cobrança como final do nome do campo após o separador Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

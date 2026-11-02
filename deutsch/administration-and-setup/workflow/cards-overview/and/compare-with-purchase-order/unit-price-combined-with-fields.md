@@ -1,6 +1,6 @@
 # Unit Price Combined with Fields
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-06-de-20261023.png" alt="Mit Bestellung vergleichen Der Einzelpreis kombiniert mit den Feldern Feld Name beträgt Operator Wert" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

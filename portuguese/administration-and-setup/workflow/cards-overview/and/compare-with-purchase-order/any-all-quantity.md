@@ -1,8 +1,8 @@
 # Any / All Quantity
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-09-pt-20261023.png" alt="Comparar com a ordem de compra Qualquer/Todos quantidade Operador tolerância do pedido de compra, com tolerância de Quantidade de Tolerância Tipo de tolerância , compare Dados de comparação" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-09-pt-20261023.png" alt="Comparar com a ordem de compra Qualquer/Todos quantidade Operador tolerância do pedido de compra, com tolerância de Quantidade de Tolerância Tipo de tolerância , compare Dados de comparação" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

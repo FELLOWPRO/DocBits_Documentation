@@ -20,4 +20,4 @@ Configurez EXTRACTIONPATHS en JSON avec des expressions XPath pour le XML obtenu
 
 <figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-fr.png" alt="Attribut EXTRACTIONPATHS actif : configuration JSON contenant des expressions XPath d’extraction."><figcaption><p>Attribut EXTRACTIONPATHS actif : configuration JSON contenant des expressions XPath d’extraction.</p></figcaption></figure>
 
-Certaines mentions, telles que Custom et Default, correspondent à l’interface actuelle du produit. Les identifiants techniques des attributs et le code de configuration restent inchangés.
+Dans la version de l’interface illustrée, certaines mentions, telles que Custom et Default, restent en anglais. Les identifiants techniques des attributs et le code de configuration restent inchangés.

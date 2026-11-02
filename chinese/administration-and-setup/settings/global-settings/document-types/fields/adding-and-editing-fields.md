@@ -6,7 +6,7 @@
 
 * 登录并访问文档管理：
 
-<figure><img src="../../../../../.gitbook/assets/settings_navigation_step1.png" alt="设置导航步骤 1"><figcaption><p>设置</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/site-extra-settings-overview-zh.png" alt="中文公司信息页面；名称、地址及组织数据已隐藏。所示界面将导入导航误译为“进口”，联系信息区段误译为“接触”，分别指数据导入和联系方式。"><figcaption><p>中文公司信息页面；名称、地址及组织数据已隐藏。所示界面将导入导航误译为“进口”，联系信息区段误译为“接触”，分别指数据导入和联系方式。</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/settings_document_types_step2.png" alt="设置文档类型步骤 2"><figcaption><p>设置文档类型</p></figcaption></figure>
 

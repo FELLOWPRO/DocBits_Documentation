@@ -1,25 +1,46 @@
 # Salvare e Applicare le Modifiche
 
-## Salvare e applicare le modifiche apportate nel Layout Manager è un passaggio importante per garantire che le personalizzazioni del layout siano applicate efficacemente nel flusso di lavoro di elaborazione dei documenti.
+Le modifiche apportate nel Layout Builder non hanno effetto finché non vengono salvate. Il salvataggio associa il layout al tipo di documento, in modo che i nuovi documenti lo utilizzino.
 
-### Ecco i passaggi per salvare e applicare le modifiche:
+## Salvare le modifiche
 
-#### Salvataggio delle modifiche:
+Dopo aver modificato il layout, selezionare **Salva** in alto a destra nell'intestazione.
 
-* Dopo aver apportato le personalizzazioni desiderate nel Layout Manager, cercare il pulsante "Salva" per salvare le modifiche.
-* Fare clic su questo pulsante per salvare le modifiche nel Layout Manager. In questo modo si esegue il backup delle personalizzazioni del layout e ci si assicura che siano disponibili per le future sessioni di modifica.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-header-it.png" alt="Intestazione del Layout Builder con i selettori del layout a sinistra e il pulsante Salva e il menu a tre puntini a destra"><figcaption>Il pulsante **Salva** si trova in alto a destra nel Layout Builder.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+Mentre si lavora, l'intestazione mostra lo stato delle modifiche:
 
-#### Applicazione delle modifiche al flusso di lavoro di elaborazione dei documenti:
+- Un pulsante **Salva** senza alcun messaggio accanto indica che il layout non è stato modificato.
+- **Modifiche non salvate** compare non appena si modifica il layout. Selezionare **Salva** per conservarle.
 
-* Una volta salvate le modifiche nel Layout Manager, queste vengono solitamente applicate automaticamente al flusso di lavoro di elaborazione dei documenti che utilizza quello specifico tipo di documento.
-* I nuovi documenti basati su questo modello erediteranno le impostazioni di layout aggiornate al momento della loro creazione. Ciò significa che i nuovi documenti includeranno i nuovi gruppi, campi o altre personalizzazioni del layout apportate nel Layout Manager.
-* I documenti esistenti già creati utilizzando questo modello potrebbero essere trattati in modo diverso a seconda del software e della configurazione. In alcuni casi, le modifiche potrebbero essere applicate automaticamente ai documenti preesistenti, mentre in altri casi potrebbero essere necessarie regolazioni manuali per allineare i documenti esistenti alle impostazioni di layout aggiornate.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-unsaved-changes-it.png" alt="Intestazione del Layout Builder con l'indicazione Modifiche non salvate accanto al pulsante Salva"><figcaption>L'indicazione **Modifiche non salvate** compare finché il layout non è stato salvato.</figcaption></figure>
 
-#### Test delle modifiche:
+Dopo un salvataggio riuscito, l'indicazione viene sostituita dall'orario dell'ultimo salvataggio. Selezionare di nuovo **Salva** non comporta rischi: se dall'ultimo salvataggio non è cambiato nulla, non viene scritto nulla.
 
-* Dopo aver salvato le modifiche al layout e averle applicate al flusso di lavoro di elaborazione dei documenti, si consiglia di testare le modifiche per assicurarsi che funzionino come previsto.
-* Creare nuovi documenti di prova o rivedere i documenti esistenti per assicurarsi che le impostazioni di layout aggiornate siano applicate correttamente e che i dati vengano acquisiti e visualizzati come previsto.
+Se si esce dal Layout Builder con modifiche non salvate, DocBits chiede **Scartare le modifiche?**. Selezionare **Annulla** per restare e salvare, oppure **OK** per uscire senza salvare.
 
-Seguendo questi passaggi, è possibile salvare efficacemente le modifiche nel Layout Manager e applicarle al flusso di lavoro di elaborazione dei documenti. Ciò garantisce una fluida integrazione delle personalizzazioni del layout nel processo di creazione ed elaborazione dei documenti.
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-leave-prompt-it.png" alt="Finestra di dialogo che chiede di confermare l'uscita dal Layout Builder con modifiche non salvate"><figcaption>Conferma mostrata quando si esce con modifiche non salvate.</figcaption></figure>
+
+## Altre azioni dell'intestazione
+
+Il menu a tre puntini accanto a **Salva** raccoglie le restanti azioni sul layout:
+
+- **Generazione automatica del modello**: crea un layout automaticamente a partire dai campi del tipo di documento.
+- **Modifica JSON**: modifica direttamente la definizione del layout in formato JSON.
+- **Copiare JSON**: copia la definizione del layout negli appunti.
+- **Impostazioni di layout**: apre le impostazioni generali del layout.
+
+**Generazione automatica del modello** sostituisce il layout esistente: verificare quindi prima quale layout è aperto. **Modifica JSON** è destinata agli utenti esperti e andrebbe usata solo conoscendo il formato del modello.
+
+<figure><img src="../../../../../.gitbook/assets/layout-builder-save-more-menu-it.png" alt="Menu a tre puntini del Layout Builder con le voci Generazione automatica del modello, Modifica JSON, Copiare JSON e Impostazioni di layout"><figcaption>Le azioni disponibili nel menu a tre puntini.</figcaption></figure>
+
+## Applicare le modifiche
+
+Una volta salvato, il layout viene utilizzato dal flusso di lavoro di elaborazione dei documenti per quel tipo di documento:
+
+- I nuovi documenti elaborati con questo tipo di documento utilizzano il layout aggiornato.
+- I documenti già elaborati mantengono il layout con cui sono stati acquisiti.
+
+## Testare le modifiche
+
+Dopo il salvataggio, aprire un documento di quel tipo di documento e verificare che i campi e i gruppi compaiano come previsto. Se manca qualcosa, tornare nel Layout Builder, correggere il layout e salvare di nuovo.

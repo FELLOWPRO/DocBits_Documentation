@@ -12,3 +12,20 @@ redirects:
     overview-and-basics/vulnerability-management: security/vulnerability-management.md
     overview-and-basics/other-security-controls: security/other-security-controls.md
     overview-and-basics/two-factor-authentication: security/two-factor-authentication.md
+    administration-and-setup/workflow/workflow-execution-model: administration-and-setup/workflow/workflow-execution-model.md
+    administration-and-setup/workflow/status-and-reentry: administration-and-setup/workflow/masterclass/status-and-reentry.md
+    administration-and-setup/workflow/advanced-workflow-case-study: administration-and-setup/workflow/advanced-workflow-case-study.md
+    administration-and-setup/workflow/workflow-training-kit: administration-and-setup/workflow/workflow-training-kit.md
+    administration-and-setup/workflow/field-conditions: administration-and-setup/workflow/masterclass/field-conditions.md
+    administration-and-setup/workflow/tolerances-and-po: administration-and-setup/workflow/masterclass/tolerances-and-po.md
+    administration-and-setup/workflow/decision-table-routing: administration-and-setup/workflow/masterclass/decision-table-routing.md
+    administration-and-setup/workflow/assignment-task-sequential: administration-and-setup/workflow/masterclass/assignment-task-sequential.md
+    administration-and-setup/workflow/control-nodes: administration-and-setup/workflow/masterclass/control-nodes.md
+    administration-and-setup/workflow/run-workflow: administration-and-setup/workflow/masterclass/run-workflow.md
+    administration-and-setup/workflow/table-calculations: administration-and-setup/workflow/masterclass/table-calculations.md
+    administration-and-setup/workflow/api-response-contract: administration-and-setup/workflow/masterclass/api-response-contract.md
+    administration-and-setup/workflow/export-lifecycle: administration-and-setup/workflow/masterclass/export-lifecycle.md
+    administration-and-setup/workflow/workflow-regression-tests: administration-and-setup/workflow/workflow-regression-tests.md
+    administration-and-setup/workflow/workflow-troubleshooting: administration-and-setup/workflow/workflow-troubleshooting.md
+    administration-and-setup/workflow/card-reference-standard: administration-and-setup/workflow/card-reference-standard.md
+    administration-and-setup/workflow/advanced-workflow-builder/videos: administration-and-setup/workflow/advanced-workflow-videos.md

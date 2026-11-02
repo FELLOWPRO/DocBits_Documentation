@@ -1,6 +1,6 @@
 # Assign document to matching sub organization
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-04-pl-20261023.png" alt="Osoba przypisana Przypisz dokument do odpowiedniej podorganizacji na podstawie pola Nazwa pola , użyj Pod-organizacja jako wartości zapasowej" width="563"><figcaption></figcaption></figure>
 
 ## **Cel:**
 

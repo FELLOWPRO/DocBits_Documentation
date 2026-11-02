@@ -1,6 +1,8 @@
 # Toewijzen aan groep
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-4f514f6ba398-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v2-nl-nl.png" alt="Toewijzen aan groep, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_group_assign_v3-nl-nl.png" alt="Toewijzen aan groep, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
 
 ## Doel:
 

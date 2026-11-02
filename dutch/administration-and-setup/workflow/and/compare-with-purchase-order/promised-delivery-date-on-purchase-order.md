@@ -1,6 +1,12 @@
 # Beloofde leveringsdatum op aankooporder
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-604866ed54fe-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v2-nl-nl.png" alt="Beloofde leveringsdatum op aankooporder, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v3-nl-nl.png" alt="Beloofde leveringsdatum op aankooporder, Versie 3" width="634"><figcaption><p>Versie 3</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_dates_operator_oc_line_items_v4-nl-nl.png" alt="Beloofde leveringsdatum op aankooporder, Versie 4" width="634"><figcaption><p>Versie 4</p></figcaption></figure>
+
+Hoe het tolerantievenster wordt berekend, met voorbeelden zoals "vandaag of morgen", wordt uitgelegd op [Date Tolerances](../date-tolerances.md).
 
 ## **Doel**
 

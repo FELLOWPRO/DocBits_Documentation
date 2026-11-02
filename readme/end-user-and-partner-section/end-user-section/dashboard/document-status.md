@@ -4,6 +4,8 @@ Processing statuses show steps such as OCR, classification or export. **Ready fo
 
 If processing times are available, hover over a status to see the phases and their durations. A duplicate icon appears for documents with possible duplicates; open it to compare the related documents.
 
+A document can also wait for an answer from a colleague. Such a document shows the status **Pending Input** and stays out of the active queue until the person who was asked has replied and the assignee resolves the request. See [Pending Input](../pending-input.md).
+
 Open a document row to work in the validation screen. Use the row's **Actions** menu for the operations allowed for that document, such as assignment, download, history or restarting processing. Available download variants depend on the document and can include annotations or electronic invoice formats.
 
 Select the checkboxes for several documents and open the menu in the table header for permitted bulk actions, such as assignment, merging, restart, restart export or deletion. Check the selection and confirmation carefully. These actions can change documents; saving a view only changes how the worklist is displayed.

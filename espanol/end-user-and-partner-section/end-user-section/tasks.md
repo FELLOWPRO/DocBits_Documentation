@@ -22,6 +22,12 @@ Utilice el resumen de tareas para encontrar el trabajo asignado y seguir su prog
 
 El video utiliza un usuario de prueba ordinario y documentos sintéticos. Completar una tarea es independiente de aprobar o exportar su factura. Las acciones disponibles dependen de los permisos de la cuenta.
 
+## Cuando no puede marcar una tarea como hecha
+
+Su organización puede limitar quién puede cerrar tareas, es decir, ponerlas en **Hecho** o **Rechazado**. En ese caso, para las tareas que usted no puede cerrar no se ofrecen el botón **Hecho**, los estados **Hecho** y **Rechazado** ni **Marcar como hecho**, y el tablero de tareas no le permite soltar una de esas tareas en la columna **Hecho** o **Rechazado**. Las tareas asignadas a usted puede seguir editándolas, guardándolas y moviéndolas entre **Abierto** y **En proceso**.
+
+Un administrador de su organización decide quién puede cerrar y eliminar tareas. Consulte [Tareas y notificaciones](../../administration-and-setup/settings/document-processing/module/tasks-and-notifications.md).
+
 <figure><img src="../../.gitbook/assets/customer-overview-es-3c4f66615907.png" alt="Resumen de tareas utilizando datos sintéticos."><figcaption><p>Resumen de tareas utilizando datos sintéticos.</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/customer-find-es-3c4f66615907.png" alt="Lista de tareas con datos de demostración sintéticos."><figcaption><p>Lista de tareas con datos de demostración sintéticos.</p></figcaption></figure>

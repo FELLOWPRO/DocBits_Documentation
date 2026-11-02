@@ -91,7 +91,7 @@
 * Une fois tous les nœuds ajoutés et configurés, cliquez sur **Save**.
 * Activez le flux pour terminer la configuration.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_11%20\(1\).png)
+<figure><img src="../../../.gitbook/assets/m3-historical-ion-activation-example.png" alt="Exemple historique externe d’Infor ION en anglais, conservé avec ses couleurs d’origine. La flèche montre la commande d’activation du flux ; cette image ne prouve ni une activation actuelle ni une exportation réussie de DocBits vers M3."><figcaption><p>Exemple historique externe d’Infor ION en anglais, conservé avec ses couleurs d’origine. La flèche montre la commande d’activation du flux ; cette image ne prouve ni une activation actuelle ni une exportation réussie de DocBits vers M3.</p></figcaption></figure>
 
 ## Étape 4 : Configurer l'Export dans DocBits
 

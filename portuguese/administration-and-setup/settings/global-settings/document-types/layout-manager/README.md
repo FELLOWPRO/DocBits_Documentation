@@ -1,31 +1,29 @@
 # Gestor de Layouts
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-pt.png" alt="Regras de layout e seleção para o tipo de documento INVOICE: as abas Layouts e Regras de seleção com os respetivos contadores, o tipo de documento, as abas Validação de Campo, Aprovação, Rejeitar e Análise, os cartões de layout com o rótulo Personalizado e as ações Editar, Clone e Excluir, e o botão Novo layout"><figcaption>O gestor de layouts para o tipo de documento Invoice.</figcaption></figure>
 
-#### Visão geral
+O **gestor de layouts** determina o aspeto de um tipo de documento para quem valida, aprova, rejeita e analisa documentos: que campos e grupos aparecem no ecrã, por que ordem e como se comporta cada campo. Cada tipo de documento tem os seus próprios layouts.
 
-O Gestor de Layouts permite aos administradores configurar e alterar visualmente o layout dos tipos de documento, definindo as propriedades dos campos e grupos de dados. Esta interface ajuda a alinhar os modelos de extração e os pontos de introdução manual de dados com a estrutura do documento digitalizado ou carregado no DocBits.
+A página abre como **Regras de layout e seleção**: os layouts são arranjos de campos reutilizáveis, independentes da origem do documento, e as regras decidem que layout um documento recebe.
 
-#### Componentes principais
+#### Ecrãs e tipos de layout
 
-1. **Grupos e campos**:
-   * **Grupos**: unidades organizativas de um tipo de documento que reúnem campos relacionados, como os dados da fatura ou do pagamento. Podem ser expandidos, recolhidos e ordenados para reproduzir o agrupamento lógico do documento.
-   * **Campos**: dados individuais em cada grupo, como o número da fatura ou as condições de pagamento. É possível personalizar a forma como os dados de cada campo são capturados, apresentados e processados.
-2. **Painel de propriedades**:
-   * Este painel apresenta as propriedades do campo ou grupo selecionado e permite configurar, por exemplo:
-     * **Label** (rótulo): texto do campo apresentado na interface.
-     * **Field Name** (nome do campo): identificador técnico utilizado pelo sistema.
-     * **Element Width in Percentage** (largura do elemento em percentagem): largura do campo em relação ao layout do documento.
-     * **Tab Index** (índice de tabulação): ordem de navegação com a tecla Tab.
-     * **Run Script on Change** (executar script ao alterar): define se um script é executado quando o valor do campo muda.
-     * **Display Label On Left** (apresentar rótulo à esquerda): define se o rótulo aparece à esquerda do campo ou por cima dele.
-     * **Is Textarea** (área de texto): define se o campo deve aceitar blocos de texto mais extensos.
-     * **Select Model Type** (selecionar tipo de modelo): permite escolher o tipo de modelo que extrai este campo.
-     * **Field Length** (comprimento do campo): comprimento máximo dos dados aceites no campo.
-     * **Banned Keywords** (palavras proibidas): palavras-chave que não são permitidas no campo.
-3. **Pré-visualização do modelo**:
-   * Apresenta uma pré-visualização em tempo real do documento com a configuração de layout atual. Permite verificar se o layout corresponde à estrutura do documento e testar e aperfeiçoar a configuração do processamento.
+Validação, aprovação, rejeição e análise são ecrãs distintos, e cada um tem os seus próprios layouts, as suas próprias regras e o seu próprio layout predefinido — uma regra de aprovação nunca altera o ecrã de validação. Mude de ecrã com as abas **Validação de Campo**, **Aprovação**, **Rejeitar** e **Análise**.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
+#### Cartões de layout
 
+Na aba **Layouts**, cada layout do ecrã selecionado é um cartão. O cartão mostra o nome do layout, se pertence à sua organização (**Personalizado**) ou é o layout predefinido do sistema, quando foi editado pela última vez e se alguma regra de seleção o utiliza. **Editar** abre o layout no Layout Builder, **Clone** copia-o com o nome que escolher e **Excluir** remove-o — o layout predefinido do sistema só pode ser consultado, não alterado nem eliminado. **Novo layout** pede um nome e abre o Layout Builder com o novo layout vazio. O filtro acima dos cartões alterna entre **Todos**, **Meus layouts** e **Sistema**.
 
+#### O Layout Builder
+
+**Editar** abre o [Layout Builder](navigating-the-layout-manager.md):
+
+* **Estrutura**, **Campos** e **Elementos** à esquerda — o layout em forma de árvore, cada campo do tipo de documento com um contador dos campos já colocados, e os grupos e elementos de formulário que arrasta para a área de trabalho.
+* A **área de trabalho** ao centro mostra o layout tal como o utilizador o vê. **Layout principal** e **Tabela** alternam entre a página e uma tabela de linhas, e **Documento** abre o documento de exemplo ao lado.
+* O painel **Propriedades** à direita acompanha o elemento selecionado; as definições estão agrupadas em apresentação, comportamento, valores e listas, automação, e limites e espaçamento.
+
+**Salvar** no cabeçalho guarda o layout. Para as restantes ações do cabeçalho, consulte [Salvar e aplicar alterações](save-and-apply-changes.md).
+
+#### Que layout um documento recebe
+
+A aba **Regras de seleção** de cada ecrã contém as regras que escolhem o layout: são avaliadas por prioridade, a primeira correspondência vence e aplica-se um layout alternativo padrão quando nenhuma regra corresponde. Consulte [Regras de seleção de layout](layout-selection-rules.md).

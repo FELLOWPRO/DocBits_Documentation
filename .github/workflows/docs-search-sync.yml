@@ -3,7 +3,7 @@ name: Docs Search Sync
 # Keeps the fulltextsearch docs search index (CORE-6111, Settings-Assistent)
 # in step with docs.docbits.com.
 #
-# - push to main/de: diffs the two commits and POSTs only the changed
+# - push to main (docbits/) or de (readme/): diffs the two commits and POSTs only the changed
 #   pages (see .github/scripts/docs_search_sync.py "diff" mode). A rename
 #   ingests the new URL before deleting the old one; a SUMMARY.md change
 #   also ingests any page newly reachable from it (even if that page's
@@ -16,7 +16,7 @@ name: Docs Search Sync
 #   change, a replaced image asset, or a run that failed partway through.
 #
 # concurrency: ONE global group, not per-ref (CORE-6111 review round 2) —
-# a full run (nightly/workflow_dispatch) writes BOTH languages' indices
+# a full run (nightly/workflow_dispatch/after the bridge) writes ALL languages' indices
 # in a single run, so a per-ref group would still let a main-branch push
 # and a de-branch push (or a full run and either push) race each other's
 # OpenSearch writes. Every sync, on any ref, queues behind whatever's
@@ -36,10 +36,19 @@ on:
       - main
       - de
     paths:
+      - "docbits/**"
       - "readme/**"
   schedule:
     - cron: "17 3 * * *"
+  # The language pages reach main through the language-folder bridge
+  # (deutsch/, espanol/, ...): re-sync all languages right after it ran.
+  workflow_run:
+    workflows: ["Sync Language Folders"]
+    types: [completed]
   workflow_dispatch: {}
+
+env:
+  PYTHONUNBUFFERED: "1"
 
 permissions:
   contents: read
@@ -51,17 +60,25 @@ concurrency:
 jobs:
   diff-sync:
     if: github.event_name == 'push'
-    runs-on: ubuntu-latest
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+
+      - name: Check search sync regressions
+        run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
       - name: Sync changed pages
         env:
           DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
           DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
           SYNC_LANG: ${{ github.ref_name }}
+          # English lives in docbits/ on main (the GitBook space imports it);
+          # the language branches keep their own readme/ layout.
+          DOCS_ROOT: ${{ github.ref_name == 'main' && 'docbits' || 'readme' }}
           SYNC_BEFORE: ${{ github.event.before }}
           SYNC_AFTER: ${{ github.event.after }}
         run: |
@@ -71,23 +88,56 @@ jobs:
             --after "$SYNC_AFTER"
 
   full-sync:
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+      || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    runs-on:
+      group: DocBits Documentation
+      labels: k9s
     strategy:
       fail-fast: false
+      # 9 languages ingesting at once overloaded the shared ingress (502s)
+      max-parallel: 3
       matrix:
-        lang: [main, de]
+        # lang = index key (docs branch name), root = folder on main that
+        # GitBook publishes for that language (English: docbits/).
+        include:
+          - { lang: main, root: docbits }
+          - { lang: de, root: deutsch }
+          - { lang: es, root: espanol }
+          - { lang: fr, root: french }
+          - { lang: it, root: italian }
+          - { lang: nl, root: dutch }
+          - { lang: pl, root: polish }
+          - { lang: pt, root: portuguese }
+          - { lang: zh, root: chinese }
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          ref: ${{ matrix.lang }}
           fetch-depth: 1
+
+      - name: Check search sync regressions
+        run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
       - name: Full ingest + reconcile
         env:
           DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
           DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
           SYNC_LANG: ${{ matrix.lang }}
+          DOCS_ROOT: ${{ matrix.root }}
         run: |
           python3 .github/scripts/docs_search_sync.py full \
             --lang "$SYNC_LANG"
+
+      # Self test: one real question per language must find its page through
+      # the live hybrid search (kNN + BM25 + DigitalOcean rerank). Fails when
+      # the language index is empty, hits are outside the language space, or
+      # the service fell back to BM25 only (embedding/rerank not working).
+      - name: Verify search
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+          DOCS_ROOT: ${{ matrix.root }}
+        run: |
+          python3 .github/scripts/docs_search_sync.py verify --lang "$SYNC_LANG"

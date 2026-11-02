@@ -1,149 +1,227 @@
-# Export Konfiguration für Lieferanten Portal M3
+# Exportkonfiguration für das Lieferantenportal
 
-**Übersicht**\
-Die Exportkonfigurationsdatei ist ein entscheidendes Element im Lieferantenportal, das definiert, wie Daten zwischen dem Lieferantenportal und dem ERP-System zugeordnet werden. Diese Konfiguration stellt sicher, dass Daten genau zwischen den Systemen übertragen und synchronisiert werden, was einen reibungslosen und effizienten Betrieb ermöglicht.
+<figure><img src="../../../.gitbook/assets/supplier_export_configuration-de.png" alt="Exportkonfiguration für Lieferanten"><figcaption><p>Deutsche Exportkonfiguration mit ION- und IDM-Mapping. Der Editor ist in diesem Beispiel leer; es wurde keine Konfiguration gespeichert.</p></figcaption></figure>
 
-**Struktur der Konfigurationsdatei**\
-Die Exportkonfigurationsdatei ist als JSON-Objekt strukturiert, das mehrere Zuordnungen enthält. Jede Zuordnung ist mit einem bestimmten Programm im ERP-System verbunden und definiert die auszuführenden Aktionen, die zuzuordnenden Felder und die anzuwendenden Bedingungen.
+## Übersicht
 
-**Wichtige Komponenten**
+Die Exportkonfigurationsdatei ist ein zentraler Bestandteil des Lieferantenportals. Sie definiert, wie Daten zwischen dem Lieferantenportal und dem ERP-System zugeordnet werden. Diese Konfiguration stellt sicher, dass Daten korrekt zwischen den Systemen übertragen und synchronisiert werden, und ermöglicht so einen reibungslosen und effizienten Betrieb.
 
-1. **Programm**\
-   **Definition:** Gibt das ERP-Programm an, auf das die Zuordnung zutrifft.\
-   **Beispiel:** "program": "CRS620MI"
-2. **Aktionen**\
-   **Definition:** Definiert die Aktionen, die ausgeführt werden können, wie das Hinzufügen oder Aktualisieren von Datensätzen.\
-   **Beispiel:**\
-   "actions": {\
-   "add": "AddSupplier",\
-   "update": "UpdSupplier"\
-   }
-3. **Zuordnung**\
-   • **Definition:** Gibt die Zuordnung zwischen Feldern im ERP-System und Feldern im Lieferantenportal an.\
-   • **Komponenten:**\
-   • **erp\_field\_name:** Der Feldname im ERP-System.\
-   • **value\_field\_name:** Der entsprechende Feldname im Lieferantenportal.\
-   • **value:** Ein statischer Wert, der verwendet wird, wenn im Lieferantenportal kein entsprechendes Feld vorhanden ist.\
-   • **if\_conditions:** Optionale Bedingungen, die den Wert basierend auf bestimmten Kriterien bestimmen.\
-   • **Beispiel:**&#x20;
+## Struktur der Konfigurationsdatei
 
-```
+Die Exportkonfigurationsdatei ist als JSON-Objekt aufgebaut, das mehrere Zuordnungen enthält. Jede Zuordnung gehört zu einem bestimmten Programm im ERP-System und definiert die auszuführenden Aktionen, die zuzuordnenden Felder und die anzuwendenden Bedingungen.
+
+## Wichtige Komponenten
+
+### 1. Program
+
+* **Definition**: Gibt das ERP-Programm an, auf das sich die Zuordnung bezieht.
+* **Beispiel**: `"program": "CRS620MI"`
+
+### 2. Actions
+
+* **Definition**: Definiert die Aktionen, die ausgeführt werden können, etwa das Hinzufügen oder Aktualisieren von Datensätzen.
+*   **Beispiel**:
+
+    ```json
+    "actions": {
+        "add": "AddSupplier",
+        "update": "UpdSupplier"
+    }
+    ```
+
+### 3. Mapping
+
+• Definition: Gibt die Zuordnung zwischen Feldern im ERP-System und Feldern im Lieferantenportal an.
+
+• Komponenten:
+
+• erp\_field\_name: Der Feldname im ERP-System.
+
+• value\_field\_name: Der entsprechende Feldname im Lieferantenportal.
+
+• value: Ein statischer Wert, der verwendet wird, wenn im Lieferantenportal kein entsprechendes Feld vorhanden ist.
+
+• if\_conditions: Optionale Bedingungen, die den Wert anhand bestimmter Kriterien festlegen.
+
+• Beispiel:
+
+```json
 {
     "erp_field_name": "SUNO",
     "value_field_name": "supplier_number"
 }
 ```
 
-4.  **Bedingte Logik (if\_conditions)**\
-    • **Definition:** Gibt die Bedingungen an, die erfüllt sein müssen, damit ein bestimmter Wert verwendet wird.\
-    • **Komponenten:**\
-    • **field\_name:** Der Feldname im Lieferantenportal, der ausgewertet wird.\
-    • **field\_value:** Der Wert, der die Bedingung auslöst.\
-    • **then\_value:** Der Wert, der verwendet wird, wenn die Bedingung erfüllt ist.\
-    • **Beispiel:**
+### 4. Bedingte Logik (if\_conditions)
 
-    ```json
-    {
-        "erp_field_name": "SUTY",
-        "value": "0",
-        "if_conditions": [{
-            "field_name": "supplier_group",
-            "field_value": "FRT",
-            "then_value": "5"
-        }]
-    }
-    ```
-5. **Schleifen (loop\_on)**\
-   • **Definition:** Definiert die Abschnitte, in denen die Konfiguration über eine Liste von Elementen, wie Adressen oder Referenzdetails, iterieren soll.\
-   • **Beispiel:**\
-   "loop\_on": "address\_details"
-6.  **Berechnete Felder (value\_field\_calculated)**\
-    • **Definition:** Gibt Felder an, die zur Laufzeit berechnet werden sollen, wie z. B. die Erzeugung des aktuellen Datums.\
-    • **Beispiel:**
+• Definition: Gibt Bedingungen an, die erfüllt sein müssen, damit ein bestimmter Wert verwendet wird.
 
-    ```json
-    jsonCode kopieren{
-        "erp_field_name": "STDT",
-        "value_field_calculated": "now()"
-    }
-    ```
-7.  **Feldzuordnungen mit Listen (mapping\_field\_name und mapping\_list)**\
-    • **Definition:** Ordnet spezifische Werte aus dem Lieferantenportal den entsprechenden Werten im ERP-System basierend auf einer vordefinierten Liste zu.\
-    • **Komponenten:**\
-    • **mapping\_field\_name:** Das Feld, das die Zuordnung bestimmt.\
-    • **mapping\_list:** Ein Wörterbuch, das Werte vom Lieferantenportal ins ERP-System übersetzt.\
-    • **Beispiel:**
+• Komponenten:
 
-    ```json
-    jsonCode kopieren{
-        "erp_field_name": "RFID",
-        "mapping_field_name": "reference_type",
-        "mapping_list": {
-            "10": "PURCHASING",
-            "15": "DLVRY PHN#",
-            "20": "COA",
-            "25": "QA",
-            "30": "FINANCE",
-            "35": "SALES"
-        }
-    }
-    ```
+• field\_name: Der Feldname im Lieferantenportal, der ausgewertet wird.
 
-**Beispiel für die Konfigurationsaufgliederung**\
-**Lieferant hinzufügen und aktualisieren (CRS620MI)**\
-• **Programm:** CRS620MI\
-• **Aktionen:**\
-• Lieferanten hinzufügen: AddSupplier\
-• Lieferanten aktualisieren: UpdSupplier\
-• **Zuordnungsfelder:**\
-• SUNO → supplier\_number\
-• SUNM → name\
-• CSCD → supplier\_country\
-• TINO → tax\_id\
-• Zusätzliche Felder umfassen statische Werte und bedingte Zuordnungen.
+• field\_value: Der Wert, der die Bedingung auslöst.
 
-**Adressdetails (CRS620MI)**\
-• **Schleife über:** address\_details\
-• **Aktionen:**\
-• Adresse hinzufügen: AddAddress\
-• Adresse aktualisieren: AddAddress\
-• **Zuordnungsfelder:**\
-• SUNO → supplier\_number\
-• ADR1 → address\
-• TOWN → city\
-• Zusätzliche Felder umfassen berechnete Felder wie now() für das aktuelle Datum.
+• then\_value: Der Wert, der verwendet wird, wenn die Bedingung erfüllt ist.
 
-**Referenzdetails (CRS620MI)**\
-• **Schleife über:** reference\_details\
-• **Aktionen:**\
-• Lieferantenreferenz hinzufügen: AddSupplierRef\
-• Lieferantenreferenz aktualisieren: AddSupplierRef\
-• **Zuordnungsfelder:**\
-• SUNO → supplier\_number\
-• RFTY → reference\_type\
-• RFID wird mithilfe einer Liste zugeordnet, um Typen wie „EINKAUF“, „QA“ und „FINANZEN“ zu übersetzen.
-
-**Verwendung der Exportkonfiguration**
-
-1. **Hochladen der Konfigurationsdatei**
-   1. **Navigieren zur Exportkonfiguration:**\
-      • Gehen Sie zum Abschnitt Exportkonfiguration im Hauptmenü.
-   2. **Hochladen der Konfigurationsdatei:**\
-      • Klicken Sie auf die Abschnitte ION-Mapping-Datei oder IDM-Mapping-Datei, um die jeweilige Konfigurationsdatei hochzuladen.
-   3. **Konfiguration speichern:**\
-      • Nach dem Hochladen klicken Sie auf die Schaltfläche Speichern, um die Konfiguration anzuwenden.
-2. **Verwendung der Standardvorlagen**\
-   • Klicken Sie auf die Schaltfläche Standardvorlage verwenden, wenn Sie zur standardmäßigen Konfigurationsvorlage zurückkehren möchten, die vom System bereitgestellt wird.
-3. **Formatierung des JSON**\
-   • Verwenden Sie die Schaltfläche Formatieren, um den JSON-Code automatisch für eine bessere Lesbarkeit zu formatieren.
-
-**Fazit**\
-Diese Konfigurationsdatei ist entscheidend, um sicherzustellen, dass die Daten zwischen dem Lieferantenportal und dem ERP-System korrekt zugeordnet und synchronisiert werden. Durch das Verständnis der Struktur und der wichtigsten Komponenten können Administratoren den Exportprozess effektiv verwalten und anpassen, um ihre spezifischen Geschäftsanforderungen zu erfüllen.
-
-**Vollständiges Beispiel**
+• Beispiel:
 
 ```json
-jsonCode kopieren[{
+{
+    "erp_field_name": "SUTY",
+    "value": "0",
+    "if_conditions": [{
+        "field_name": "supplier_group",
+        "field_value": "FRT",
+        "then_value": "5"
+    }]
+}
+```
+
+### 5. Schleifen (loop\_on)
+
+• Definition: Definiert die Abschnitte, in denen die Konfiguration eine Liste von Elementen durchlaufen soll, z. B. Adress- oder Referenzdetails.
+
+• Beispiel:
+
+```json
+"loop_on": "address_details"
+```
+
+### 6. Berechnete Felder (value\_field\_calculated)
+
+• Definition: Gibt Felder an, die zur Laufzeit berechnet werden sollen, z. B. die Ermittlung des aktuellen Datums.
+
+• Beispiel:
+
+```json
+{
+    "erp_field_name": "STDT",
+    "value_field_calculated": "now()"
+}
+```
+
+### 7. Feldzuordnungen mit Listen (mapping\_field\_name und mapping\_list)
+
+• Definition: Ordnet bestimmte Werte aus dem Lieferantenportal anhand einer vordefinierten Liste den entsprechenden Werten im ERP-System zu.
+
+• Komponenten:
+
+• mapping\_field\_name: Das Feld, das die Zuordnung bestimmt.
+
+• mapping\_list: Ein Wörterbuch, das Werte aus dem Lieferantenportal in Werte des ERP-Systems übersetzt.
+
+• Beispiel:
+
+```json
+{
+    "erp_field_name": "RFID",
+    "mapping_field_name": "reference_type",
+    "mapping_list": {
+        "10": "PURCHASING",
+        "15": "DLVRY PHN#",
+        "20": "COA",
+        "25": "QA",
+        "30": "FINANCE",
+        "35": "SALES"
+    }
+}
+```
+
+## Aufschlüsselung der Beispielkonfiguration
+
+### Lieferant anlegen und aktualisieren (CRS620MI)
+
+• Programm: CRS620MI
+
+• Aktionen:
+
+• Lieferant anlegen: AddSupplier
+
+• Lieferant aktualisieren: UpdSupplier
+
+• Zugeordnete Felder:
+
+• SUNO → supplier\_number
+
+• SUNM → name
+
+• CSCD → supplier\_country
+
+• TINO → tax\_id
+
+• Weitere Felder enthalten statische Werte und bedingte Zuordnungen.
+
+### Adressdetails (CRS620MI)
+
+• Schleife über: _**address\_details**_
+
+• Aktionen:
+
+• Adresse anlegen: AddAddress
+
+• Adresse aktualisieren: AddAddress
+
+• Zugeordnete Felder:
+
+• SUNO → supplier\_number
+
+• ADR1 → address
+
+• TOWN → city
+
+• Weitere Felder enthalten berechnete Felder wie now() für das aktuelle Datum.
+
+### Referenzdetails (CRS620MI)
+
+• Schleife über: _**reference\_details**_
+
+• Aktionen:
+
+• Lieferantenreferenz anlegen: AddSupplierRef
+
+• Lieferantenreferenz aktualisieren: AddSupplierRef
+
+• Zugeordnete Felder:
+
+• SUNO → supplier\_number
+
+• RFTY → reference\_type
+
+• RFID wird über eine Liste zugeordnet, um Typen wie „PURCHASING“, „QA“ und „FINANCE“ zu übersetzen.
+
+## Die Exportkonfiguration verwenden
+
+### 1. Konfigurationsdatei hochladen
+
+#### 1. Zur Exportkonfiguration navigieren:
+
+• Rufen Sie im Hauptmenü den Bereich Exportkonfiguration auf.
+
+#### 2. Konfigurationsdatei hochladen:
+
+• Klicken Sie auf den Bereich ION-Mapping File oder IDM Mapping File, um die jeweilige Konfigurationsdatei hochzuladen.
+
+#### 3. Konfiguration speichern:
+
+• Klicken Sie nach dem Hochladen auf die Schaltfläche Save, um die Konfiguration zu übernehmen.
+
+### 2. Standardvorlagen verwenden
+
+• Klicken Sie auf die Schaltfläche Use Default Template, wenn Sie zur vom System bereitgestellten Standardvorlage zurückkehren möchten.
+
+### 3. JSON formatieren
+
+• Verwenden Sie die Schaltfläche Format, um den JSON-Code für eine bessere Lesbarkeit automatisch zu formatieren.
+
+## Fazit
+
+Diese Konfigurationsdatei ist entscheidend dafür, dass die Daten zwischen dem Lieferantenportal und dem ERP-System korrekt zugeordnet und synchronisiert werden. Wenn Administratoren die Struktur und die wichtigsten Komponenten verstehen, können sie den Exportprozess effektiv verwalten und an ihre spezifischen Geschäftsanforderungen anpassen.
+
+## Vollständiges Beispiel&#x20;
+
+```json
+[{
     "program": "CRS620MI",
     "actions": {
         "add": "AddSupplier",
@@ -288,4 +366,6 @@ jsonCode kopieren[{
     }, {
         "erp_field_name": "EMAL",
         "value_field_name": "email_address"
+    }]
+}]
 ```

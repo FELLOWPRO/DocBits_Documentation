@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.416
+Für MyInvois gibt es Regeleinträge für
+Rechnungen und Gutschriften. Der geprüfte
+
+formats_02
+00:00:05.416 --> 00:00:12.278
+Extraktionspfad ist XML-basiert. Die
+nationale Plattform akzeptiert auch JSON.
+
+formats_03
+00:00:12.278 --> 00:00:15.842
+Das belegt jedoch keine
+JSON-Importunterstützung in dieser
+
+formats_04
+00:00:15.842 --> 00:00:17.467
+DocBits-Zuordnung.
+
+workflow_01
+00:00:18.217 --> 00:00:23.523
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:23.523 --> 00:00:30.233
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:30.233 --> 00:00:31.867
+aktiviert ihn nicht.
+
+accept_01
+00:00:32.617 --> 00:00:37.249
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:37.249 --> 00:00:43.379
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:43.379 --> 00:00:46.500
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

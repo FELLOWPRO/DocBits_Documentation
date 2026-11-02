@@ -1,61 +1,64 @@
-# Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)
+# Fall 4, 5: Menge innerhalb der Toleranz, Stückpreis außerhalb der Toleranz (genehmigt)
 
-## Scenario:
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
-The quantity on the invoice is within tolerance, but the unit price is outside the acceptable tolerance range. However, this variance in the unit price has been reviewed and approved by the appropriate authorities.
 
-## Action:
+## Szenario:
 
-The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+Die Rechnungsmenge liegt innerhalb der Toleranz, der Stückpreis dagegen außerhalb des zulässigen Bereichs. Die zuständigen Stellen haben diese Stückpreisabweichung jedoch geprüft und genehmigt.
 
-## Example:
+## Aktion:
 
-**Purchase Order (PO):**
+Das System passt den Stückpreis an die Bestellung an und berücksichtigt die Differenz gegebenenfalls über Positionszuschläge.
 
-Quantity: <mark style="color:green;">100</mark> units
+## Beispiel:
 
-Unit Price: $10.00 per unit
+**Bestellung (PO):**
 
-Total Amount: <mark style="color:purple;">$1,000.00</mark>
+Menge: <mark style="color:green;">100</mark> Einheiten
 
-**Invoice Received:**
+Stückpreis: $10.00 je Einheit
 
-Quantity: <mark style="color:green;">100</mark> units (within tolerance)
+Gesamtbetrag: <mark style="color:purple;">$1,000.00</mark>
 
-Unit Price: <mark style="color:red;">$11.00</mark> per unit (outside tolerance of ±5%)
+**Eingegangene Rechnung:**
 
-Total Amount: <mark style="color:red;">$1,100.00</mark>
+Menge: <mark style="color:green;">100</mark> Einheiten (innerhalb der Toleranz)
 
-**Tolerance Levels:**
+Stückpreis: <mark style="color:red;">$11.00</mark> je Einheit (Abweichung außerhalb der Toleranz: ±5%)
 
-Quantity Tolerance: ±2%
+Gesamtbetrag: <mark style="color:red;">$1,100.00</mark>
 
-Unit Price Tolerance: ±5% (expected range: $9.50 to $10.50)
+**Toleranzgrenzen:**
 
-**Approval:**
+Mengentoleranz: ±2%
 
-• The $11.00 unit price is outside the tolerance range but has been manually approved by the appropriate department.
+Stückpreistoleranz: ±5% (erwarteter Bereich: $9.50 bis$10.50)
 
-Since the quantity is within tolerance but the unit price is outside tolerance (yet approved), the system will:
+**Genehmigung:**
 
-1\. **Adjust the Unit Price**: The system adjusts the unit price back to the PO’s unit price because the variance was approved:
+• Der Stückpreis von $11.00 liegt außerhalb der Toleranz, wurde jedoch von der zuständigen Abteilung manuell genehmigt.
 
-• **Adjusted Unit Price = $10.00 per unit**
+Die Menge liegt innerhalb der Toleranz. Der Stückpreis liegt außerhalb der Toleranz, wurde jedoch genehmigt. Das System führt folgende Schritte aus:
 
-• **Adjusted Total Amount = 100 units × $10.00 per unit = $1,000.00**
+1\. **Stückpreis anpassen**: Das System setzt den Stückpreis auf den Bestellwert zurück, da die Abweichung genehmigt wurde:
 
-2\. **Apply a Line Charge for the Difference**: Since the approved unit price of $11.00 is higher than the PO unit price of $10.00, the system applies a line charge to account for this difference:
+• **Angepasster Stückpreis = $10.00 je Einheit**
 
-• **Line Charge Amount = (Approved Invoice Unit Price - PO Unit Price) × Quantity**
+• **Angepasster Gesamtbetrag = 100 Einheiten × $10.00 je Einheit = $1,000.00**
 
-• **Line Charge Amount = ($11.00 - $10.00) × 100 units = $100.00**
+2\. **Differenz als Positionszuschlag berücksichtigen**: Der genehmigte Stückpreis von $11.00 liegt über dem Bestellstückpreis von $10.00. Das System berücksichtigt diese Differenz daher als Positionszuschlag:
 
-3\. **Process the Invoice**: The system processes the invoice with:
+• **Positionszuschlagsbetrag = (Genehmigter Rechnungsstückpreis - Bestellstückpreis) × Menge**
 
-• **Base Amount:** $1,000.00
+• **Positionszuschlagsbetrag = ($11.00 - $10.00) × 100 Einheiten = $100.00**
 
-• **Line Charge:** $100.00
+3\. **Rechnung verarbeiten**: Das System verarbeitet die Rechnung mit folgenden Beträgen:
 
-• **Total Processed Amount:** $1,100.00
+• **Grundbetrag:** $1,000.00
 
-This ensures that while the base PO values are maintained for consistency, the approved variance in the unit price is accounted for through an additional line charge, resulting in accurate financial processing and record-keeping.
+• **Positionszuschlag:** $100.00
+
+• **Verarbeiteter Gesamtbetrag:** $1,100.00
+
+So bleiben die ursprünglichen Bestellwerte erhalten, während die genehmigte Stückpreisabweichung als zusätzlicher Positionszuschlag berücksichtigt wird. Das ermöglicht eine korrekte Verarbeitung und Buchführung.

@@ -4,10 +4,16 @@ description: Unterstützung für das elektronische Dokument AUSTRIA EBINTERFACE 
 
 # 🇦🇹 AUSTRIA EBINTERFACE 6.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Österreich](countries/austria.md). Gleichen Sie den XML-Namespace mit der konfigurierten Version ab. Ein anderer Namespace kann eine andere Zuordnung erfordern.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |-------------|------|
-| **Land / Region** | Austria |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Österreich |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | XML |
 | **Standard** | ebInterface 6.0 |
 | **Locale** | `de_AT` |
@@ -18,13 +24,13 @@ ebInterface 6.0 führte die Angleichung an den europäischen Standard EN 16931 e
 
 | Komponente | Status |
 |------------|--------|
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
-<figure><img src="austria-ebinterface-preview.png" alt="Austria ebInterface 6.0 Rechnungsvorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine AUSTRIA EBINTERFACE 6.0-Rechnung</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Austria ebInterface 6.0 Rechnungsvorschau in DocBits"><figcaption><p>Standardvorschau in DocBits für eine AUSTRIA EBINTERFACE 6.0-Rechnung</p></figcaption></figure>
 
 ## Feldzuordnung
 

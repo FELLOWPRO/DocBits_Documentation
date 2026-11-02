@@ -72,7 +72,7 @@ Accounting `1.21.1`, Ideas `0.3.1`, OCR `1.10.3`, Operator `1.42.1`, PO Match
   Ihrer Unterorganisation — nicht im Kontext des Dokuments, das gerade
   geöffnet ist.
 
-### Workflow Builder
+### Workflow-Editor
 
 - Die Workflow-Liste behält Ihre Suche, Sortierung, Seite und Seitengröße,
   wenn Sie einen Workflow öffnen und zurückkehren — auch über die Breadcrumb.

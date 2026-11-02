@@ -1,6 +1,10 @@
-# Assign document to User
+# Dokument dem Benutzer zuweisen
 
-<figure><img src="../../../../.gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v1-de-de.png" alt="Dokument dem Benutzer zuweisen, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v2-de-de.png" alt="Dokument dem Benutzer zuweisen, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_doc_user_assign_v3-de-de.png" alt="Dokument dem Benutzer zuweisen, Version 3" width="634"><figcaption><p>Version 3</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -23,7 +27,7 @@ Die Workflow-Karte **"Assign Document to User"** ermöglicht es Benutzern, ein D
 ## **Funktionalität:**
 
 * **Bedingungsauswertung:**\
-  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **„Wenn“**- als auch der **„Und“**-Abschnitt als erfüllt ausgewertet werden.
 * **Dokumentzuweisung:**\
   Die Karte weist das Dokument dem ausgewählten Benutzer zu und stellt so sicher, dass die Aufgabe an die passende Person zur Bearbeitung weitergeleitet wird. Dies unterstützt die Nachvollziehbarkeit und ein effektives Dokumentenmanagement.
 * **Entscheidungsbaum (Version 3):**\
@@ -39,3 +43,15 @@ Die Workflow-Karte **"Assign Document to User"** ermöglicht es Benutzern, ein D
 ## **Fazit:**
 
 Die Workflow-Karte **"Assign Document to User"** ermöglicht eine effiziente Weiterleitung von Dokumenten, indem sie sie dem ausgewählten Benutzer zuweist, mit der zusätzlichen Flexibilität in Version 3, den Benutzer mithilfe eines Entscheidungsbaums dynamisch zu bestimmen. Dies sorgt für einen anpassungsfähigeren und effizienteren Workflow-Prozess.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Verwendungszweck:** Senden Sie Rechnungen, die eine manuelle Prüfung erfordern, an eine verantwortliche Person.
+
+**Konfiguration:** Wählen Sie den konfigurierten Benutzer `Demo Reviewer A`.
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Das Dokument ist diesem Benutzer zugewiesen. Bestätigen Sie die resultierende Dokumentenzuordnung; Diese Karte allein erstellt keine separate Überprüfungsaufgabe.
+
+Dies ist eine beispielhafte Konfiguration und ein erwartetes Ergebnis. Verwenden Sie in Ihrer Testorganisation konfigurierte Felder, Benutzer und Gruppen. Es wird nicht behauptet, dass dieses Beispiel ausgeführt wurde.

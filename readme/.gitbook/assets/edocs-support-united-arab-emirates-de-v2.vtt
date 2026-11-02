@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.111
+UAE VAT Invoice ist die konfigurierte
+Bezeichnung. Eine Zuordnung für
+
+formats_02
+00:00:05.111 --> 00:00:10.325
+Mehrwertsteuerrechnungen belegt nicht die
+Unterstützung jeder Peppol- oder
+
+formats_03
+00:00:10.325 --> 00:00:15.961
+PINT-Veröffentlichung der VAE. Bestätigen
+Sie den Datenvertrag und die benötigte
+
+formats_04
+00:00:15.961 --> 00:00:17.300
+Zustellintegration.
+
+workflow_01
+00:00:18.050 --> 00:00:23.356
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:23.356 --> 00:00:30.066
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:30.066 --> 00:00:31.700
+aktiviert ihn nicht.
+
+accept_01
+00:00:32.450 --> 00:00:37.082
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:37.082 --> 00:00:43.212
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:43.212 --> 00:00:46.333
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

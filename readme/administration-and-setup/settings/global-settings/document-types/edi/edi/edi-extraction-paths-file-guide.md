@@ -52,8 +52,8 @@ Vous pouvez également utiliser des fonctions XPath (par exemple, `sum()`) et de
 
 Copier
 
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
+```json
+"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
 ```
 
 ## 5. Fonction d'aperçu (Évaluer l'extraction)
@@ -78,3 +78,17 @@ Cette fonction est essentielle pour vérifier que vos expressions XPath sont cor
 ## 6. Guide vidéo
 
 Un guide vidéo pour ce type de fichier est disponible sur la [page des vidéos.](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/edi/edi-videos) Utilisez-le pour suivre la configuration, l'édition et l'aperçu.
+
+## Règles effectivement utilisées et activation
+
+Si un avoir électronique apparaît comme Invoice, suivez le [guide de diagnostic de la classification](../credit-note-recognized-as-invoice.md). Il couvre la source personnalisée ou par défaut effectivement utilisée, les codes de type, Extraction Paths et l’activation en toute sécurité.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-fr.png" alt="Format EDI existant avec ses quatre attributs configurés."><figcaption><p>Format EDI existant avec ses quatre attributs configurés.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-fr.png" alt="Attribut EXTRACTIONPATHS actif : configuration JSON contenant des expressions XPath d’extraction."><figcaption><p>Attribut EXTRACTIONPATHS actif : configuration JSON contenant des expressions XPath d’extraction.</p></figcaption></figure>
+
+
+Les vues montrent une configuration et une version existantes. Les paramètres varient selon le type de document et le format. Validez les modifications dans un brouillon avant leur activation.
+
+Dans la version de l’interface illustrée, certaines mentions, telles que Custom et Default, restent en anglais. Les identifiants techniques des attributs et le code de configuration restent inchangés.

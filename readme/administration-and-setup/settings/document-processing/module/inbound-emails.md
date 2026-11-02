@@ -1,5 +1,12 @@
 # E-mails entrants
 
+## Du courrier électronique entrant au document prêt à être vérifié
+
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-fr-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-fr-light-20261029.png" alt="Du courrier électronique entrant au document prêt à être vérifié"></picture><figcaption><p>Du courrier électronique entrant au document prêt à être vérifié</p></figcaption></figure>
+
+L'illustration montre deux manières d'entrer : une boîte aux lettres connectée et un transfert vers une adresse d'importation DocBits. Les pièces jointes de documents prises en charge sont importées. Vérifiez les restrictions de l'expéditeur, l'organisation et le routage, puis vérifiez l'importation réelle. L'envoi d'un email ne prouve pas que ses documents ont été importés avec succès.
+
+
 ### Aperçu
 
 DocBits peut récupérer les documents directement depuis l'e-mail, sans téléversement manuel. Il existe **deux façons** d'importer des documents par e-mail, toutes deux dans **Paramètres → Traitement des documents → Importer** :
@@ -19,7 +26,7 @@ Allez dans **Paramètres → Traitement des documents → Importer** et ouvrez l
 
 L'assistant de configuration s'ouvre. Le premier champ, **Protocole**, détermine comment DocBits se connecte — choisissez **IMAP**, **OAuth Office365** ou **OAuth Office365 – Tenant**.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Liste déroulante Protocole avec IMAP, OAuth Office365 et OAuth Office365 - Tenant"><figcaption><p>La liste <strong>Protocole</strong> propose les trois types de connexion.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-inbound_emails_protocol_select-fr.png" alt="Sélection du protocole dans l’assistant de courrier entrant."><figcaption><p>Sélection du protocole dans l’assistant de courrier entrant.</p></figcaption></figure>
 
 #### IMAP
 

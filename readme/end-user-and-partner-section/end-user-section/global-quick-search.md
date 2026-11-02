@@ -6,7 +6,7 @@ Globalne Szybkie Wyszukiwanie to dostępny z klawiatury moduł startowy, który 
 
 Naciśnij <kbd>Cmd</kbd> + <kbd>K</kbd> w macOS lub <kbd>Ctrl</kbd> + <kbd>K</kbd> w Windows i Linux. Skrót działa z każdego ekranu.
 
-<figure><img src="../../.gitbook/assets/quick-search-modal.png" alt="Globalne Szybkie Wyszukiwanie"><figcaption><p>Szybkie Wyszukiwanie otwiera się nad bieżącą stroną.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-global-quick-search-pl.png" alt="Globalne wyszukiwanie stron z wynikami dotyczącymi ustawień."><figcaption><p>Globalne wyszukiwanie stron z wynikami dotyczącymi ustawień.</p></figcaption></figure>
 
 ## Wyszukiwanie
 

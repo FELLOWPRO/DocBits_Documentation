@@ -1,7 +1,7 @@
 # Rozwiązywanie problemów
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Samouczek dotyczący biletu pomocy technicznej: zgłaszanie błędów, dołączanie plików i szybsze uzyskiwanie pomocy
 {% endembed %}
 
 ## Rozwiązywanie problemów z konfiguracją typów dokumentów w DocBits może być złożone, ponieważ różne czynniki mogą wpływać na rozpoznawanie i wyodrębnianie danych.&#x20;

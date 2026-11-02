@@ -6,7 +6,7 @@ Mapa Witryny to pełny, przeszukiwalny indeks wszystkiego, co udostępnia DocBit
 
 Otwórz Mapę Witryny z paska bocznego (wpis bliżej dołu) lub naciśnij <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> i wybierz **Zobacz wszystkie wyniki**. Bezpośredni adres URL to `/sitemap`.
 
-<figure><img src="../../.gitbook/assets/sitemap-overview.png" alt="Przegląd Mapy Witryny"><figcaption><p>Mapa Witryny z przeglądem kategorii i nagłówkiem wyszukiwania.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/site-extra-sitemap-pl.png" alt="Katalog stron w polskim interfejsie. Filtry typów stron są przetłumaczone; etykieta roli „User” pozostaje angielska w przedstawionej wersji."><figcaption><p>Katalog stron w polskim interfejsie. Filtry typów stron są przetłumaczone; etykieta roli „User” pozostaje angielska w przedstawionej wersji.</p></figcaption></figure>
 
 ## Przeglądanie katalogu
 
@@ -20,6 +20,14 @@ Wpisy są kolorowane według typu:
 * **Akcja** — przycisk lub skrót wykonujący coś bez nawigowania.
 
 Kliknij dowolny wpis, aby przejść do niego bezpośrednio. Wpisy wymagające parametru (np. typu dokumentu lub identyfikatora) zawierają wbudowany selektor — wybierz wartość przed kliknięciem.
+
+## Filmy szkoleniowe na liście
+
+Pozycje stron, które mają film szkoleniowy, pokazują ikonę filmu za nazwą — nie tylko w Ustawieniach, ale w całym katalogu, na przykład na Pulpicie, w Walidacji pól czy na stronach Workflow. Wybierz ikonę, aby odtworzyć film tej strony w panelu **Filmy i samouczki**, nie opuszczając mapy witryny.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video-pl.png" alt="Mapa Witryny z ikonami filmów przy kilku pozycjach i otwartym panelem Filmy i samouczki z filmem o walidacji pól"><figcaption><p>Pozycje z filmem szkoleniowym mają ikonę filmu; jej wybranie otwiera film w panelu.</p></figcaption></figure>
+
+Panel nadal wymienia każdy film według tematu, więc całą bibliotekę możesz też przeglądać i wyszukiwać za pomocą ikony na górnym pasku. Zobacz [Filmy i samouczki](videos-and-tutorials.md).
 
 ## Wyszukiwanie i filtry
 

@@ -1,5 +1,5 @@
-# Edytowanie i zapisywanie wzorców wyrażeń regularnych
+# Edytowanie i zapisywanie wyrażeń Regex
 
-## Przewodnik po modyfikowaniu istniejących wzorców oraz znaczeniu testowania tych zmian, aby upewnić się, że działają zgodnie z oczekiwaniami bez naruszania istniejącej funkcjonalności.
+Dawne bezpośrednie łącze Regex na karcie typu dokumentu nie jest dostępne w tym interfejsie.
 
-**Aby edytować istniejące wzorce wyrażeń regularnych i upewnić się, że zmiany działają zgodnie z oczekiwaniami bez naruszania istniejącej funkcjonalności, możesz postępować zgodnie z poniższym przewodnikiem:**...
+Przed zmianą wyrażenia sprawdź, jaką ścieżkę konfiguracji obsługuje używana wersja. Zachowaj istniejące wyrażenie i przygotuj poprawne, niepełne oraz niedopasowane dane wejściowe. Po każdej zmianie porównaj rzeczywiste dopasowania. Zapisz zamierzoną konfigurację dopiero po sprawdzeniu i przetestuj reprezentatywne dokumenty przed zastosowaniem do innych faktur.

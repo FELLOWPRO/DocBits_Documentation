@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego AUSTRIA EBINTERFACE 6.0 w DocBit
 
 # 🇦🇹 AUSTRIA EBINTERFACE 6.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Austria](countries/austria.md). Dopasuj przestrzeń nazw XML do skonfigurowanej wersji. Inna przestrzeń nazw może wymagać innego mapowania.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj/Region** | Austria |
@@ -24,7 +30,7 @@ ebInterface 6.0 wprowadził zgodność z europejskim standardem EN 16931 przy je
 
 ## Domyślny podglad
 
-<figure><img src="austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface 6.0 w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface 6.0 w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
 
 ## Mapowanie pól
 

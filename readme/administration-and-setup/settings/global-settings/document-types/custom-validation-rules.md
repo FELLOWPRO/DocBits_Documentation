@@ -224,6 +224,18 @@ Testez chaque nouvelle règle sur au moins un document qui doit échouer, un qui
 * Les avertissements sont collectés séparément et ne masquent jamais une erreur.
 * Si une règle ne peut pas être évaluée (par exemple une division par zéro dans une formule), elle est ignorée. Une règle défectueuse ne marque jamais un document comme invalide par erreur.
 
+## Journaux <a id="logs"></a>
+
+Chaque règle peut journaliser ses évaluations. Ouvrez pour cela la page **Journaux d'exécution des règles** du type de document : l'en-tête nomme le type de document et l'icône d'actualisation recharge la liste.
+
+**Trouver par** détermine ce que vous recherchez ; la valeur par défaut est **Clé de règle**, et vous saisissez la valeur dans le champ voisin. Lors d'une recherche par document, **Type de règle** est obligatoire. Affinez le résultat avec **Résultat**, **Exécuté**, **À partir de la date** et **À ce jour**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-fr.png" alt="Les journaux d'exécution des règles"><figcaption><p>La page des journaux d'exécution : les filtres en haut, une ligne par évaluation en dessous. Tant que rien n'est recherché, le tableau indique la marche à suivre.</p></figcaption></figure>
+
+Ouvrez une entrée pour voir son détail, dont la **trace de la condition** : chaque ligne de *Applies when* avec la valeur attendue, la valeur réelle du document et le résultat. Voir [Lire la trace de la condition dans les journaux](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+
+La même page affiche aussi les journaux des règles de transformation et de sélection de mise en page.
+
 ## Recettes
 
 Copiez ces règles comme point de départ. Les clés de champs et de colonnes sont celles du type de document standard **Facture** ; adaptez-les à vos types de documents.

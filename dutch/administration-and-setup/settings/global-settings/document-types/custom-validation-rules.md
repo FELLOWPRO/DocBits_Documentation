@@ -224,6 +224,18 @@ Test elke nieuwe regel op minstens één document dat moet mislukken, één dat 
 * Waarschuwingen worden afzonderlijk verzameld en verbergen nooit een fout.
 * Als een regel niet kan worden geëvalueerd — bijvoorbeeld door een deling door nul in een formule — wordt hij overgeslagen. Een kapotte regel markeert een document nooit per ongeluk als ongeldig.
 
+## Logboeken <a id="logs"></a>
+
+Elke regel kan zijn uitvoeringen laten vastleggen. Open daarvoor de pagina **Logboeken van regeluitvoering** van het documenttype: de kop noemt het documenttype en het vernieuwingspictogram laadt de lijst opnieuw.
+
+Met **Zoek via** kiest u waarop u zoekt (standaard **Regelsleutel**); de waarde typt u in het veld ernaast. Bij zoeken op document is **Regeltype** verplicht. Verfijn het resultaat met **Resultaat**, **Uitgevoerd**, **Vanaf datum** en **Tot nu toe**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-nl.png" alt="De logboeken van regeluitvoering"><figcaption><p>De pagina Logboeken van regeluitvoering: boven de filters, daaronder een rij per uitvoering. Zolang u niet hebt gezocht, zegt de tabel wat u moet invoeren.</p></figcaption></figure>
+
+Open een regel voor de details, waaronder het **conditiespoor**: elke regel van *Applies when* met de verwachte waarde, de werkelijke waarde van het document en of die klopte. Zie [Condities in detail](rule-conditions-applies-when.md).
+
+Dezelfde pagina toont ook de logboeken van de transformatie- en layoutselectieregels.
+
 ## Recepten
 
 Kopieer deze regels als uitgangspunt. De veld- en kolomsleutels zijn die van het standaarddocumenttype **Factuur**; pas ze aan uw documenttypen aan.

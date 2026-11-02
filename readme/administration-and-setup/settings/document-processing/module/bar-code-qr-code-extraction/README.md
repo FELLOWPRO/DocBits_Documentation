@@ -21,7 +21,7 @@ Para ativar a funcionalidade, siga estes passos:
        \
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (445).png" alt="Página de pesquisa das configurações com entradas de Ordem de compra, incluindo Painel de PO, Ordem de Remessa de PO e Contabilidade automatica"><figcaption></figcaption></figure>
 
 ## **Tipos de código suportados**
 

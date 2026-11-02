@@ -6,7 +6,7 @@ Por padrão, campos específicos no processo de validação de campos são verif
 
 Você pode sempre verificar a fórmula utilizada passando o mouse sobre o ícone de informação.
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1.png" alt="Ecrã de validação com os campos Total net amount 77,91, Total amount 84,20 e Currency EUR, além de uma tabela EXTRACTED TABLE com uma coluna Total net amount"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Nota:**</mark> O ícone de informação só é visível se um valor tiver sido extraído para o campo correspondente.
 

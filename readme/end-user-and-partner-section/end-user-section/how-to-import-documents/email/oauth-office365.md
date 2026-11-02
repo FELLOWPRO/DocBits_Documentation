@@ -8,7 +8,7 @@ Aqui você só precisa inserir a sub-organização desejada e pressionar **Auten
 
 Você será levado a esta página da Microsoft e precisará inserir um código.
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
+![Página de início de sessão da Microsoft pedindo para inserir um código, com um campo de introdução Code e um botão Next](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
 Este código pode ser encontrado voltando ao DocBits — o código será exibido lá como abaixo. Basta copiar o código e inseri-lo na página da Microsoft. Depois disso, você precisará inserir as suas próprias credenciais da Microsoft.
 

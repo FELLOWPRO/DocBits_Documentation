@@ -30,7 +30,7 @@ Quando ativada, esta configuração permite que você defina tolerâncias para *
     * **Porcentagem:** Indica uma tolerância percentual.
     * **Valor:** Indica um valor fixo pelo qual o valor pode diferir.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fs661pgIKUsLzwhxU4kes%2Fimage.png?alt=media\&token=6d152cde-14d8-4caf-bcc8-acf1a1fe497c)
+![Página PO Tolerance Setting com os campos Quantity Tolerance e Unit Price Tolerance ambos definidos em 5 por cento](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fs661pgIKUsLzwhxU4kes%2Fimage.png?alt=media\&token=6d152cde-14d8-4caf-bcc8-acf1a1fe497c)
 
 #### **Cenário de Exemplo:**
 
@@ -45,7 +45,7 @@ Quando ativada, esta configuração permite que você defina tolerâncias para *
   * A Linha 1 **não é sinalizada** como uma discrepância porque $4.80 está dentro de 5% de $5.00.
   * A Linha 2 **é sinalizada** como uma discrepância porque $2.20 excede a variação permitida de 5% de $2.00. O usuário agora é obrigado a tomar medidas para resolver a discrepância antes que a fatura possa ser processada.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fn5ki5044GfbGekHWyjhs%2Fimage.png?alt=media\&token=6e1e641b-4d6d-4236-a375-72edcfc98529)
+![Tabela de comparação de correspondência de PO com as colunas UNIT, PO QUANTITY, INVOICE QUANTITY, PO UNIT PRICE e INVOICE UNIT PRICE](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2Fn5ki5044GfbGekHWyjhs%2Fimage.png?alt=media\&token=6e1e641b-4d6d-4236-a375-72edcfc98529)
 
 ### Configuração para configurar Configurações Adicionais de Tolerância de Pedido de Compra
 

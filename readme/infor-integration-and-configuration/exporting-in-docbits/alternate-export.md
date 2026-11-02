@@ -6,7 +6,7 @@
 2. Clique em **Criar nova exportação** para definir uma nova configuração de exportação.
 3. Salve a configuração e verifique se a exportação está **desativada**.
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (368).png" alt="Lista de definições de exportação com as linhas Alternate-Export-Invoice-LN-IDM-BOD e Export-Invoice-LN para o tipo de documento Invoice, método de exportação Infor-IoN-Cloud e ícones de ação"><figcaption></figcaption></figure>
 
 ### **Etapa 2: ativar a exportação alternativa**
 
@@ -16,7 +16,7 @@
    * **Status do documento**: informe o status dos documentos após a exportação alternativa.
    * **Configuração de exportação**: selecione a configuração de exportação recém-criada que será usada na exportação alternativa.
 
-<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369).png" alt="Página More Settings do tipo de documento Invoice mostrando a opção Alternate Export com o estado Pending approval e o Export Configuration Alternate-Export-Invoice-LN-IDM-BOD-8203"><figcaption></figcaption></figure>
 
 ## Como usar a exportação alternativa
 
@@ -24,7 +24,7 @@
 
 * Depois de ativar a exportação alternativa, você poderá selecioná-la diretamente na tela **PO-Matching**.
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (370).png" alt="Ecrã de PO Matching com a pesquisa do número de encomenda 100000300, os botões CONFIRM &amp;amp; EXPORT e Reject e o painel Document Alternate Export"><figcaption></figcaption></figure>
 
 **Com o card de fluxo de trabalho**
 

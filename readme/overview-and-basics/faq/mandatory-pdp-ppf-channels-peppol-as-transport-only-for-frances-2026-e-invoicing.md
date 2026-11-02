@@ -23,12 +23,12 @@ As referências e imagens seguintes documentam propostas e integrações anterio
 
 Referências históricas: [requisitos da reforma](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform), [especificações do portal em 2022](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html), [interconexão entre plataformas](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html), [troca de faturas](https://nymus.be/fr/facturation-electronique-en-france/), [Peppol e a reforma](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) e [interoperabilidade](https://nymus.be/fr/facturation-electronique-en-france/).
 
-<figure><img src="../../.gitbook/assets/Picture 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 1.png" alt="Diagrama do ciclo de vida de uma fatura do fornecedor até aos estados Submitted, Received by the platform e Made available, com os resultados Rejected, Refused, Disputed, Partially approved, In hand e Completed"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 6.png" alt="Diagrama de um Issuer OD-PDP e um Receiver OD-PDP ligados através de portais de serviços e software de terceiros, com um passo de controlo e recuperação de dados entre eles"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 2.png" alt="Diagrama das três camadas de controlo numeradas, controlos técnicos, controlos de aplicação e controlos funcionais e de negócio, cada uma a alimentar um passo seguinte do processo"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Picture 5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 5.png" alt="Diagrama do modelo de hub com um parceiro, uma conta técnica, o hub, uma aplicação ao abrigo do PISTE e uma ligação"><figcaption></figcaption></figure>
 
-<div><figure><img src="../../.gitbook/assets/Picture 3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/Picture 3.png" alt="Diagrama da receção de um fluxo EDI e do fluxo 2 via API que passam controlos funcionais de formato semântico, diretório e consistência de dados antes da incorporação dos dados de faturação e de um resultado de fatura submetida"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt="Diagrama de um fluxo EDI e um fluxo API que passam controlos funcionais e regras de negócio específicas antes da rejeição ou recusa da fatura ou de uma fatura recebida e disponibilizada"><figcaption></figcaption></figure></div>

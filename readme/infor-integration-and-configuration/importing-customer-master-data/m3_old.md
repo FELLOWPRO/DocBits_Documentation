@@ -29,21 +29,21 @@ Antes de importar, baixe o template de conexão necessário usando o arquivo aba
 1. **Acesse o Infor ION Desk:**
    *   Navegue até **InforOS** → **ION Desk** → **Connect** → **Connection Points**.
 
-       ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
+       ![Menu de navegação do Infor ION Desk com as entradas Home, Data Flows, API Flows e Mappings](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH_r3RAGOvJE6Ok67ST_272zFfhB_TTFYg3b-NwFq0CAv2o)
 2. **Importe o template:**
    *   Clique no botão **Import**.
 
-       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_2.png" alt="Página Connect no Infor ION Desk a mostrar a vista Connection Points com a respetiva pesquisa e barra de ferramentas"><figcaption></figcaption></figure>
    * Selecione o **arquivo de template** apropriado no seu computador.
    *   Clique em **OK** para iniciar o processo de importação.
 
-       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="" width="327"><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_3.png" alt="Diálogo Upload Local File no Infor ION Desk com o ficheiro DocBits-Dev-Prod-Import-Template selecionado para carregamento" width="327"><figcaption></figcaption></figure>
 3. **Confirmação:**
    *   Se a importação for bem-sucedida, será exibida uma mensagem de confirmação.
 
-       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/m3_import_4.png" alt="Confirmação de importação no Infor ION Desk a informar que a importação de DocBits-Dev-Prod-Import-Template foi concluída com êxito"><figcaption></figcaption></figure>
 4. **Configuração pós-importação:**
    * Depois de importar o template, você pode personalizar ajustes específicos da conexão conforme necessário.
    * Não se esqueça de importar ou configurar sua **conta de serviço (Service Account)** para autenticação e controle de acesso.
 
-<figure><img src="../../.gitbook/assets/m3_import_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/m3_import_5.png" alt="Página API Connection Point de DocBits-Dev-Prod-Import-Template com o nome, o ID lógico e os detalhes de autenticação"><figcaption></figcaption></figure>

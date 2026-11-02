@@ -8,7 +8,7 @@ O **Modo de anotação** permite criar e gerir anotações diretamente no PDF. S
 
 Esta configuração encontra-se em: **Configurações → Processamento de documentos → Módulo → Tipo de documento → Modo de anotação**
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt="Página de configurações de Document Type no DocBits com o interruptor Annotation Mode destacado na lista de módulos"><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 Tutorial do modo de anotação do DocBits: adicionar notas na validação e descarregar com ou sem anotações
@@ -21,7 +21,7 @@ Tutorial do modo de anotação do DocBits: adicionar notas na validação e desc
 * Abra o **ecrã de validação**.
 * Clique no ícone de **balão de fala** à direita para entrar no modo de anotação.
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt="Ecrã de validação no DocBits com o ícone de balão de fala na barra de ferramentas à direita para ativar o modo de anotação"><figcaption></figcaption></figure></div>
 
 ### 2. Criar uma anotação
 
@@ -30,7 +30,7 @@ Tutorial do modo de anotação do DocBits: adicionar notas na validação e desc
 * Clique no ícone de **documento** para guardar a anotação.
 * Clique no ícone de **caixote do lixo** para eliminar a anotação.
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt="Ecrã de validação com um PDF e a anotação Here is a annotation além dos ícones de caneta, guardar e eliminar"><figcaption></figcaption></figure></div>
 
 *   Personalize o texto com:
 
@@ -40,7 +40,7 @@ Tutorial do modo de anotação do DocBits: adicionar notas na validação e desc
     * <mark style="color:purple;">**Cor**</mark>
     * **Seleção do tipo de letra**
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt="Diálogo Create/Edit Annotation com o tipo de letra Helvetica, tamanho 12, negrito, itálico, Text-Color e o campo Annotation-Text"><figcaption></figcaption></figure></div>
 
 ### 3. Gerir anotações
 
@@ -50,7 +50,7 @@ Tutorial do modo de anotação do DocBits: adicionar notas na validação e desc
 * As anotações **são incluídas** na exportação do documento para **IDM.**
 * Se o documento tiver anotações, o **ícone de balão de fala** apresenta um pequeno **ponto de exclamação**.
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt="Barra de ferramentas direita do ecrã de validação a mostrar o ícone de balão de fala com um ponto de exclamação que indica anotações existentes"><figcaption></figcaption></figure>
 
 *
 
@@ -65,7 +65,7 @@ Tutorial do modo de anotação do DocBits: adicionar notas na validação e desc
   * **Descarregar com anotações**
   * **Descarregar sem anotações**
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt="Menu de ações do painel no DocBits aberto com as opções Download, Download annotated PDF, Document Logs e Workflow Logs"><figcaption></figcaption></figure>
 
 O modo de anotação permite adicionar, editar e gerir anotações nos PDF, apoiando a colaboração e a revisão dos documentos.
 

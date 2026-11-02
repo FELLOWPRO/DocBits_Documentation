@@ -37,15 +37,15 @@ Removendo um campo:
 
 * Os campos disponíveis do M3 podem ser consultados abrindo a tela correspondente no M3.
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt="Painel de estado de lote do M3 com a mensagem de que a fatura do fornecedor 202300373 já existe e os campos de informação detalhada"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt="Diálogo Field Information do M3 para o campo WEEORN na tabela FAPIBH com o nome de painel APA4S50E0, tipo String, comprimento máximo 30 e um botão Copy to clipboard"><figcaption></figcaption></figure>
 
 * Da mesma forma, você pode obter os nomes dos campos das linhas
 
 ### Cabeçalho:
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt="Fragmento de código do mapeamento M3 na secção Header Static Fields com StaticFields=DIVI,IBTP,BSCD e valores estáticos como SF_DIVI=PJA e SF_IBTP=20"><figcaption></figcaption></figure>
 
 Propriedade com a lista de campos: StaticFields
 

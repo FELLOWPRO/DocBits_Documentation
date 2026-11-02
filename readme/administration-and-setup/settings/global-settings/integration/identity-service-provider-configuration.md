@@ -2,7 +2,7 @@
 
 Configurar o Identity Service Provider (IdP) para integrar com o DocBits requer algumas etapas específicas. Aqui está um guia para fazer isso:
 
-<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (83).png" alt="Ecrã de validação com o painel de campos extraídos à esquerda e a pré-visualização da fatura mostrando a tabela de itens de linha à direita"><figcaption></figcaption></figure>
 
 **Acessando a interface de configuração do IdP**
 

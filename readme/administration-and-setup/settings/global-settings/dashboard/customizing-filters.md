@@ -2,7 +2,7 @@
 
 Se você está procurando um ou mais documentos específicos, as seguintes opções estão disponíveis para você. Dentro da barra de pesquisa, fornecemos várias ferramentas para ajudá-lo a encontrar o documento que você está procurando. Para acessá-las, selecione o seguinte ícone.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
+![Dashboard do DocBits com a barra de pesquisa All documents e o ícone de filtro ao lado de Upload](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
 
 Usar filtros permite que os usuários encontrem rapidamente informações relevantes e reduzam a quantidade de dados ao essencial.
 

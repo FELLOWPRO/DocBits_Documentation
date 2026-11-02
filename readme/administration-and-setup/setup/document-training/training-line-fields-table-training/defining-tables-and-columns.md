@@ -1,51 +1,43 @@
-# Definiëren van Tabellen en Kolommen
+# Tabellen en kolommen definiëren
 
-## Definieer Tabellen
+Als een tabel niet volledig wordt herkend, kunt u met tabeltraining het gebied en de kolommen aangeven. De voorbeelden gebruiken een fictieve factuur en een niet-opgeslagen concept.
 
-Om tabellen en kolommen in een document te definiëren, importeer een document, open het en ga naar de tabel extractie weergave zoals al bekend (via "Regelitems").
+## Training openen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_1.png)
+Open het document in veldvalidatie en ga naar tabelextractie.
 
-Je komt terecht op het volgende scherm waar je de Trainingsmodus kunt activeren:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_1-nl.png" alt="Interface om tabellen en kolommen te definiëren."><figcaption><p>Interface om tabellen en kolommen te definiëren.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_2.png)
+Schakel de trainingsmodus in om de selectie- en kolomhulpmiddelen te tonen.
 
-Via de "Bewerken" knop wordt de tabel selectiemodus geactiveerd en kun je het document aan de linkerkant bewerken:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2-nl.png" alt="Tabeltraining met ingeschakelde trainingsmodus."><figcaption><p>Tabeltraining met ingeschakelde trainingsmodus.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_3.png)
+De werkbalk biedt ook automatische detectie. Vergelijk het resultaat met het document: de afbeelding toont de beschikbare hulpmiddelen en bewijst geen voltooide detectie.
 
-Over het algemeen ben je nu in staat om de functionaliteit voor het automatisch detecteren van tabellen te gebruiken en zal het systeem automatisch de tabellen op het document definiëren:
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3-nl.png" alt="Hulpmiddelen voor tabeltraining, waaronder automatische detectie."><figcaption><p>Hulpmiddelen voor tabeltraining, waaronder automatische detectie.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_4.png)
+## Het gebied en de kolommen aangeven
 
-Als het systeem niet in staat is om de tabellen automatisch te vinden, kun je handmatig de tabellen op het document definiëren zoals getoond in de video hieronder:
+Teken met het potlood een rechthoek rond de kolomkoppen en factuurregels. Laat de totalen eronder buiten het gebied.
 
-## Definieer Kolommen
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4-nl.png" alt="Niet-opgeslagen tabelgebied rond de regels van de fictieve factuur."><figcaption><p>Niet-opgeslagen tabelgebied rond de regels van de fictieve factuur.</p></figcaption></figure>
 
-Zodra de tabellen zijn gedefinieerd, kun je handmatig de kolommen definiëren via de volgende knop:
+Kies het kolomhulpmiddel en plaats verticale scheidingen tussen de daadwerkelijke kolommen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_5.png)
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_5-nl.png" alt="Tabelgebied met verticale kolomscheidingen."><figcaption><p>Tabelgebied met verticale kolomscheidingen.</p></figcaption></figure>
 
-Definieer en sorteer de kolommen via slepen en neerzetten op het document. Herhaal dit ook voor de tabellen op de andere pagina's. Als alternatief, als de tabellen op elke pagina gelijk zijn, kun je de volgende knop gebruiken om dezelfde kolom te gebruiken voor alle tabellen die in het document zijn gedefinieerd. Deze functionaliteit kopieert de kolommen die je hebt gedefinieerd naar alle andere pagina's:
+Controleer positie, omschrijving, aantal, eenheidsprijs en bedrag.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_6.png)
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9-nl.png" alt="Scheidingen tussen de kolommen van de fictieve factuur."><figcaption><p>Scheidingen tussen de kolommen van de fictieve factuur.</p></figcaption></figure>
 
-Als het document erg verwarrend is, kan er worden ingezoomd met de "Inzoomen" en "Uitzoomen" functionaliteit. Dit is handig, bijvoorbeeld, wanneer veel informatie dicht bij elkaar staat en dit het moeilijk maakt om de kolommen te definiëren:
+Controleer het volledige gebied en alle scheidingen voordat u het document of de regels opslaat.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_7.png)
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8-nl.png" alt="Gebied en scheidingen in een niet-opgeslagen trainingsconcept."><figcaption><p>Gebied en scheidingen in een niet-opgeslagen trainingsconcept.</p></figcaption></figure>
 
-Als je per ongeluk een kolom hebt gedefinieerd, kan deze worden geselecteerd door erop te klikken en verwijderd via de volgende knop:
+## De extractie controleren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_8.png)
+Vergelijk de uitgelezen regels met de factuur. De volgende afbeelding toont regels die al automatisch waren uitgelezen in de validatie. Ze zijn niet het resultaat van het hierboven getoonde trainingsconcept.
 
-Opmerking: De knop is alleen zichtbaar als de kolom is geselecteerd.
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_10-nl.png" alt="Automatisch uitgelezen factuurregels van de fictieve factuur in de validatie."><figcaption><p>Automatisch uitgelezen factuurregels van de fictieve factuur in de validatie.</p></figcaption></figure>
 
-Als je klaar bent met het definiëren van alle tabellen en kolommen in je document, gebruik dan de "Opslaan" knop om je wijzigingen te activeren en de gegevens uit het document te extraheren:
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_9.png)
-
-De gegevens van alle gedefinieerde gebieden zullen worden geëxtraheerd en aan de rechterkant worden getoond:
-
-&#x20;In de volgende sectie leer je hoe je de geëxtraheerde gegevens kunt aanpassen.
-
-<figure><img src="https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_10.png" alt="" width="563"><figcaption></figcaption></figure>
+Test na het bedoelde opslaan andere documenten van dezelfde leverancier. Eén factuur bewijst geen betrouwbare extractie voor alle lay-outs.

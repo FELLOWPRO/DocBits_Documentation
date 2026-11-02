@@ -1,4 +1,4 @@
-# Ephesoft PO matching
+# Inkoopordermatching in Ephesoft
 
 ## Tabel `public.ephesoft_po_matching`
 

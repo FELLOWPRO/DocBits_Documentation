@@ -1,0 +1,51 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.379
+Uruguay CFE heeft algemene vermeldingen en
+vermeldingen voor 24 en 25. E-Factura en
+
+formats_02
+00:00:07.379 --> 00:00:12.893
+E-Nota Credito staan ook vermeld.
+Creditnotavermeldingen hebben in de
+
+formats_03
+00:00:12.893 --> 00:00:18.605
+onderzochte status geen eigen
+extractiebundels. Bevestig de CFE-versie
+
+formats_04
+00:00:18.605 --> 00:00:23.267
+en de daadwerkelijk gebruikte toewijzing
+voor facturen of creditnota’s.
+
+workflow_01
+00:00:24.017 --> 00:00:29.671
+Open E-Doc voor het gedetecteerde formaat.
+Vergelijk Transformation, Preview en
+
+workflow_02
+00:00:29.671 --> 00:00:35.093
+Extraction Paths. Aangepaste regels hebben
+voorrang. Het opslaan van een concept
+
+workflow_03
+00:00:35.093 --> 00:00:36.567
+activeert het niet.
+
+accept_01
+00:00:37.317 --> 00:00:43.006
+Test waar van toepassing een factuur en
+een creditnota. Controleer bedragen,
+
+accept_02
+00:00:43.006 --> 00:00:48.288
+partijen en het geëxporteerde
+documenttype. Het parseren bewijst geen
+
+accept_03
+00:00:48.288 --> 00:00:51.667
+fiscale goedkeuring of aflevering via een
+netwerk.
+

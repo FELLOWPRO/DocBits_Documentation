@@ -1,4 +1,4 @@
-# Document table column
+# Tabelkolom van het document
 
 ## Kolommen
 

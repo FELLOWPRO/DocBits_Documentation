@@ -1,39 +1,41 @@
-# Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)
+# Geval 7: Hoeveelheid binnen tolerantie, prijsoverschrijding afgewezen
+
+Het volgende scenario is een voorbeeld van een geconfigureerde mapping en geen aantoonbaar uitgerold standaardsjabloon. De werkelijke uitvoer, bedragen, tekens en documenttypen hangen af van de actieve `conflict_resolution`-regels en -expressies, de exportmapping en de goedkeuringsbesluiten. Elke hieronder beschreven debet- of creditnota is afhankelijk van die configuratie; het voorbeeld garandeert geen automatische uitgifte of wettelijke naleving.
 
 ## Scenario:
 
-The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+De hoeveelheid valt binnen de tolerantie, maar de eenheidsprijs overschrijdt het aanvaardbare bereik (positieve tolerantie) en wordt niet goedgekeurd.
 
-## Action:
+## Actie:
 
-The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+Het systeem wijst de eenheidsprijs van de factuur af, past deze aan zodat deze overeenkomt met de inkooporder en kan een debetnota genereren om het te veel in rekening gebrachte bedrag te verantwoorden.
 
-## Example:
+## Voorbeeld:
 
 * **Purchase Order (PO):**
   * Quantity: 200 units
-  * Unit Price: $15.00 per unit
+  * Eenheidsprijs: $15.00 per eenheid
   * Total Amount: $3,000.00
 * **Invoice Received:**
-  * Quantity: 198 units (within tolerance of 1%)
-  * Unit Price: $17.00 per unit (outside positive tolerance of 13.33%)
+  * Hoeveelheid: 198 eenheden (binnen tolerantie van 1%)
+  * Eenheidsprijs: $17.00 per eenheid (buiten de positieve tolerantie van 13.33%)
   * Total Amount: $3,366.00
 * **Tolerance Levels:**
   * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+  * Tolerantie per eenheidsprijs: ±1%
 
-Since the quantity (198 units) is within the acceptable tolerance range but the unit price ($17.00) exceeds the acceptable tolerance and is not approved, the system will:
+Aangezien de hoeveelheid (198 eenheden) binnen het aanvaardbare tolerantiebereik valt, maar de eenheidsprijs ($17.00) de aanvaardbare tolerantie overschrijdt en niet is goedgekeurd, zal het systeem:
 
-1. **Reject the Invoice Unit Price:** The system does not accept the invoiced unit price of $17.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $15.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 198 units × $15.00 per unit = $2,970.00**
-4. **Generate a Debit Note:** The system generates a debit note to account for the difference due to the overcharge.
-   * **Debit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Debit Note Amount = $3,366.00 - $2,970.00 = $396.00**
-   * This debit note represents the amount overcharged by the supplier.
-5. **Process the Invoice:** The system processes the invoice with the corrected total amount of $2,970.00 and issues a debit note for $396.00 to offset the overcharge.
+1. **De eenheidsprijs van de factuur afwijzen:** Het systeem accepteert de gefactureerde eenheidsprijs van $17.00 niet.
+2. **De eenheidsprijs aanpassen:** Het systeem past de eenheidsprijs aan zodat deze overeenkomt met de oorspronkelijke eenheidsprijs van de inkooporder.
+   * Aangepaste eenheidsprijs = $15.00 (vanaf PO)
+3. **Bereken het gecorrigeerde totaalbedrag:** Met behulp van de aangepaste eenheidsprijs berekent het systeem het totaalbedrag opnieuw.
+   * **Gecorrigeerd totaalbedrag = Aantal × aangepaste eenheidsprijs**
+   * **Gecorrigeerd totaalbedrag = 198 eenheden × $15.00 per eenheid = $2,970.00**
+4. **Genereer een debetnota:** Het systeem genereert een debetnota om rekening te houden met het verschil als gevolg van de meerkosten.
+   * **Bedrag debetnota = Totaal origineel factuur - Gecorrigeerd totaalbedrag**
+   * **Bedrag debetnota = $3,366.00 - $2,970.00 = $396.00**
+   * Deze debetnota vertegenwoordigt het door de leverancier teveel in rekening gebrachte bedrag.
+5. **De factuur verwerken:** Het systeem verwerkt de factuur met het gecorrigeerde totaalbedrag van $2,970.00 en geeft een debetnota uit van $396.00 om de meerkosten te compenseren.
 
-This approach ensures that any overcharging is corrected, aligning the transaction with the purchase order terms and protecting the financial interests of the business.
+Deze aanpak zorgt ervoor dat eventuele te hoge kosten worden gecorrigeerd, waardoor de transactie wordt afgestemd op de voorwaarden van de inkooporder en de financiële belangen van het bedrijf worden beschermd.

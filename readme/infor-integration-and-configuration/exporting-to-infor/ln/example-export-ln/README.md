@@ -1,84 +1,84 @@
-# Example Export LN
+# Voorbeeld van LN-export
 
-## General Overview
+## Algemeen overzicht
 
-The export to Infor LN involves transferring invoice-related data from Docbits into Infor LN in a structured manner. The data is organized into headers, tax lines, receipt lines, and cost lines. Each section includes static fields that remain constant across transactions and dynamic fields that vary based on the invoice or transaction details.
+Bij de export naar Infor LN worden factuurgegevens gestructureerd vanuit DocBits overgedragen. De gegevens zijn verdeeld in kopgegevens, belastingregels, ontvangstregels en kostenregels. Elke sectie bevat statische velden die voor transacties gelijk blijven en dynamische velden die afhangen van de factuur of transactie.
 
-## Field Mappings
+## Veldmappings
 
-### Header Fields
+### Kopvelden
 
-| Field in Infor LN         | Mapped Field in Docbits | Description                                   |
+| Veld in Infor LN         | Gekoppeld veld in DocBits | Beschrijving                                   |
 | ------------------------- | ----------------------- | --------------------------------------------- |
-| SF\_FinancialCompany      | 0200                    | Financial company                             |
-| SF\_RateDeterminer        | docd                    | Rate determiner                               |
-| SF\_ExternalRateFactor    | 1                       | External rate factor                          |
-| SupplierCode              | supplier\_id            | Supplier identifier                           |
-| PurchaseType              | purchase\_type          | Type of purchase                              |
-| InvoiceType               | invoice\_sub\_type      | Subtype of the invoice                        |
-| InvoiceNumberSupplier     | invoice\_id             | Supplier's invoice number                     |
-| InvoiceDate               | invoice\_date           | Date of the invoice                           |
-| InvoiceCurrency           | currency                | Currency used in the invoice                  |
-| TaxCountry                | tax\_country\_1         | Tax country                                   |
-| DocumentIDExternalPackage | correlation\_id         | External package ID                           |
-| IDMReference              | idm\_reference          | IDM reference                                 |
-| RateDate                  | invoice\_date           | Rate determination date                       |
-| Reference                 | reference               | Reference number                              |
-| InvoiceAmount             | total\_amount           | Total invoice amount                          |
-| TaxBaseAmount             | total\_net\_amount      | Total net amount (before tax)                 |
-| InvoiceDocumentType       | invoice\_type           | Type of document (e.g., invoice, credit note) |
+| SF\_FinancialCompany      | 0200                    | Financieel bedrijf                             |
+| SF\_RateDeterminer        | docd                    | Koersbepaler                               |
+| SF\_ExternalRateFactor    | 1                       | Externe koersfactor                          |
+| SupplierCode              | supplier\_id            | Leveranciersidentificatie                           |
+| PurchaseType              | purchase\_type          | Inkooptype                              |
+| InvoiceType               | invoice\_sub\_type      | Factuursubtype                        |
+| InvoiceNumberSupplier     | invoice\_id             | Factuurnummer van de leverancier                     |
+| InvoiceDate               | invoice\_date           | Factuurdatum                           |
+| InvoiceCurrency           | currency                | Valuta van de factuur                  |
+| TaxCountry                | tax\_country\_1         | Belastingland                                   |
+| DocumentIDExternalPackage | correlation\_id         | Extern pakket-ID                           |
+| IDMReference              | idm\_reference          | IDM-referentie                                 |
+| RateDate                  | invoice\_date           | Koersbepalingsdatum                       |
+| Reference                 | reference               | Referentienummer                              |
+| InvoiceAmount             | total\_amount           | Totaal factuurbedrag                          |
+| TaxBaseAmount             | total\_net\_amount      | Totaal nettobedrag vóór belasting                 |
+| InvoiceDocumentType       | invoice\_type           | Documenttype, bijvoorbeeld factuur of creditnota |
 
-### Tax Line Fields
+### Belastingregelvelden
 
-| Field in Infor LN | Mapped Field in Docbits | Description         |
+| Veld in Infor LN | Gekoppeld veld in DocBits | Beschrijving         |
 | ----------------- | ----------------------- | ------------------- |
-| LineNumber        | TF\_line\_number        | Line number         |
-| TaxSequenceNumber | TF\_line\_number        | Tax sequence number |
-| TaxCode           | TF\_tax\_code           | Tax code            |
-| TaxBaseAmount     | TF\_net\_amount         | Taxable base amount |
-| TaxAmount         | TF\_tax\_amount         | Tax amount          |
-| TaxCountry        | TF\_tax\_country        | Country for tax     |
+| LineNumber        | TF\_line\_number        | Regelnummer         |
+| TaxSequenceNumber | TF\_line\_number        | Belastingvolgnummer |
+| TaxCode           | TF\_tax\_code           | Belastingcode            |
+| TaxBaseAmount     | TF\_net\_amount         | Belastbare grondslag |
+| TaxAmount         | TF\_tax\_amount         | Belastingbedrag          |
+| TaxCountry        | TF\_tax\_country        | Belastingland     |
 
-### Receipt Line Fields
+### Ontvangstregelvelden
 
-| Field in Infor LN | Mapped Field in Docbits | Description             |
+| Veld in Infor LN | Gekoppeld veld in DocBits | Beschrijving             |
 | ----------------- | ----------------------- | ----------------------- |
-| PackingSlip       | TF\_packing\_slip       | Packing slip number     |
-| Order             | TF\_purchase\_order     | Purchase order number   |
-| OrderPosition     | TF\_line\_number        | Order line number       |
-| Receipt           | TF\_delivery\_number    | Delivery/receipt number |
-| ReceiptLine       | TF\_delivery\_line      | Delivery/receipt line   |
-| InvoicedAmount    | TF\_amount              | Invoiced amount         |
-| InvoicedQuantity  | TF\_quantity            | Invoiced quantity       |
+| PackingSlip       | TF\_packing\_slip       | Pakbonnummer     |
+| Order             | TF\_purchase\_order     | Inkoopordernummer   |
+| OrderPosition     | TF\_line\_number        | Orderregelnummer       |
+| Receipt           | TF\_delivery\_number    | Leverings-/ontvangstnummer |
+| ReceiptLine       | TF\_delivery\_line      | Leverings-/ontvangstregel   |
+| InvoicedAmount    | TF\_amount              | Gefactureerd bedrag         |
+| InvoicedQuantity  | TF\_quantity            | Gefactureerde hoeveelheid       |
 
-### Cost Line Fields
+### Kostenregelvelden
 
-| Field in Infor LN | Mapped Field in Docbits | Description                |
+| Veld in Infor LN | Gekoppeld veld in DocBits | Beschrijving                |
 | ----------------- | ----------------------- | -------------------------- |
-| LineNumber        | auto                    | Auto-generated line number |
-| LedgerAccount     | TF\_ledger\_account     | Ledger account             |
-| DebitCredit       | invoice\_type           | Debit or credit indicator  |
-| Amount            | TF\_amount              | Amount in the transaction  |
-| Dimension1-12     | TF\_dimension\_X        | Cost dimensions            |
-| Quantity1         | TF\_quantity            | Quantity 1                 |
-| Quantity2         | TF\_quantity2           | Quantity 2                 |
+| LineNumber        | auto                    | Automatisch gegenereerd regelnummer |
+| LedgerAccount     | TF\_ledger\_account     | Grootboekrekening             |
+| DebitCredit       | invoice\_type           | Debet-/creditaanduiding  |
+| Amount            | TF\_amount              | Bedrag in de transactie  |
+| Dimension1-12     | TF\_dimension\_X        | Kostendimensies            |
+| Quantity1         | TF\_quantity            | Hoeveelheid 1                 |
+| Quantity2         | TF\_quantity2           | Hoeveelheid 2                 |
 
-## Static Fields
+## Statische velden
 
-In addition to the dynamic mappings, there are several static fields used for each type of line, which are predefined as follows:
+Naast de dynamische mappings zijn er per regeltype vooraf gedefinieerde statische velden:
 
-* **Header Static Fields**:
-  * Financial Company: 0200
-  * Rate Determiner: docd
-  * External Rate Factor: 1
-* **Receipt Line Static Fields**:
-  * Order Type: purchase
-  * Logistic Company: 200
-  * Order Sequence: 1
-* **Cost Line Static Fields**:
-  * Target Company: 200
+* **Statische kopvelden**:
+  * Financieel bedrijf: 0200
+  * Koersbepaler: docd
+  * Externe koersfactor: 1
+* **Statische ontvangstregelvelden**:
+  * Ordertype: purchase
+  * Logistiek bedrijf: 200
+  * Ordervolgnummer: 1
+* **Statische kostenregelvelden**:
+  * Doelbedrijf: 200
 
-### Full Example&#x20;
+### Volledig voorbeeld&#x20;
 
 ````yaml
 ```properties

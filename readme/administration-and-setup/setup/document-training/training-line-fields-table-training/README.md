@@ -1,63 +1,63 @@
-# Training Line Fields/Table Training
+# Entraînement des champs de ligne et des tableaux
 
-## Table Training: When and How to Use It
+## Entraînement des tableaux : quand et comment l’utiliser
 
-DocBits uses AI-based table extraction by default, which works across suppliers. However, when you need more control over how line items are extracted for a specific supplier, you can use **Table Training** to define the structure manually.
+DocBits utilise par défaut l'extraction de table basée sur AI, qui fonctionne entre les fournisseurs. Cependant, lorsque vous avez besoin de plus de contrôle sur la façon dont les lignes de détail sont extraits pour un fournisseur spécifique, vous pouvez utiliser **entraînement des tableaux** pour définir la structure manuellement.
 
-#### &#x20;**Important: Supplier-Specific Training**
+#### &#x20;**Important : entraînement propre au fournisseur**
 
-Table training is **specific to each supplier**. If you train a table layout for one supplier, the rules apply only to that supplier’s documents.\
-Other suppliers will continue to use AI-based table extraction unless trained separately.
+L’entraînement des tableaux est **spécifique à chaque fournisseur**. Si vous entraînez une mise en page de tableau pour un fournisseur, les règles s'appliquent uniquement aux documents de ce fournisseur.\
+D'autres fournisseurs continueront à utiliser l'extraction de table basée sur AI à moins d'être formés séparément.
 
-#### When Should You Use Table Training?
+#### Quand utiliser l’entraînement des tableaux ?
 
-Use Table Training **only when the document layout is stable**, and you want to ensure consistent, high-quality extraction. It is best suited for suppliers who:
+Utilisez entraînement des tableaux **uniquement lorsque la mise en page du document est stable** et que vous souhaitez garantir une extraction cohérente et de haute qualité. Il convient particulièrement aux fournisseurs qui :
 
-* Use a **fixed invoice format** over time.
-* Require **precise mapping** of line items to specific fields.
-* Are **high-volume suppliers**, where consistent automation is valuable.
+* Utilisez un **format de facture fixe** dans le temps.
+* Exiger un **un mappage précis** des lignes de détail avec des champs spécifiques.
+* Sont des **fournisseurs à gros volume**, pour lesquels une automatisation cohérente est précieuse.
 
-#### When Not to Use Table Training
+#### Quand ne pas utiliser l’entraînement des tableaux
 
-Avoid using Table Training if:
+Évitez d’utiliser entraînement des tableaux si :
 
-* The supplier **frequently changes their invoice layout** (e.g., every couple of months).
-* You do not regularly receive documents from that supplier.
-* The default AI extraction works **well enough** without manual training.
+* Le fournisseur **modifie fréquemment la présentation de sa facture** (par exemple, tous les deux mois).
+* Vous ne recevez pas régulièrement des documents de ce fournisseur.
+* L'extraction par défaut AI fonctionne **assez bien** sans formation manuelle.
 
-In such cases, retraining the table repeatedly would be inefficient and time-consuming.
+Dans de tels cas, recycler la table à plusieurs reprises serait inefficace et prendrait beaucoup de temps.
 
 
 
-## How to use It:
+## Utilisation :
 
-**Training Mode** is used to teach DocBits how to correctly extract line items from a specific supplier’s document layout.
+Le **Mode d’entraînement** est utilisé pour apprendre à DocBits comment extraire correctement les lignes de détail de la mise en page du document d'un fournisseur spécifique.
 
-When you're in Training Mode, you define:
+Lorsque vous êtes en mode Entraînement, vous définissez :
 
-* **Where the table is located** on the document.
-* **Which areas correspond to each column** (e.g., Quantity, Description, Unit Price).
+* **Où se trouve le tableau** sur le document.
+* **Quelles zones correspondent à chaque colonne** (par exemple, Quantité, Description, Prix unitaire).
 
-This mode creates a **reusable extraction template** for that supplier, so future documents with the same layout will be processed automatically — no need to retrain.
+Ce mode crée un **modèle d'extraction réutilisable** pour ce fournisseur, de sorte que les futurs documents avec la même mise en page seront traités automatiquement — pas besoin de nouvel entraînement.
 
 **Key Characteristics:**
 
-* **Mapped columns are read-only** — you can’t manually change the text.
-* You **cannot add or delete rows**.
-* The focus is on **mapping positions**, not correcting values.
-* Once you’ve finished mapping the table and its columns, click **“Save Rules”** so DocBits learns and applies this training to similar documents from the same supplier.
+* **Les colonnes mappées sont en lecture seule** — vous ne pouvez pas modifier manuellement le texte.
+* Vous **ne pouvez pas ajouter ou supprimer des lignes**.
+* L'accent est mis sur la cartographie des positions , et non sur la correction des valeurs.
+* Une fois que vous avez fini de mapper le tableau et ses colonnes, cliquez sur **“Save Rules”** pour que DocBits apprenne et applique cet entraînement à des documents similaires provenant du même fournisseur.
 
 
 
-**Correction Mode** allows you to **fix extraction errors** in the table data for the current document. It’s used when DocBits has already attempted to extract the table, but the results need small corrections.
+Le **Mode de correction** vous permet de **corriger les erreurs d'extraction** dans les données du tableau du document actuel. Il est utilisé lorsque DocBits a déjà tenté d'extraire le tableau, mais que les résultats nécessitent de petites corrections.
 
 Use Correction Mode when:
 
-* Some **values are missing or misaligned**.
-* An **empty or duplicate line** was extracted and needs to be removed.
+* Certaines valeurs **sont manquantes ou mal alignées**.
+* Une **ligne vide ou en double** a été extraite et doit être supprimée.
 
-**What You Can Do in Correction Mode:**
+**Ce que vous pouvez faire en mode correction :**
 
-* **Manually adjust values** in mapped columns (e.g., fix misplacements).
-* **Delete rows** that shouldn’t be part of the table.
-* **Add rows** that were missed entirely during extraction.
+* **Ajustez manuellement les valeurs** dans les colonnes mappées (par exemple, corrigez les mauvais placements).
+* **Supprimez les lignes** qui ne devraient pas faire partie du tableau.
+* **Ajoutez les lignes** qui ont été entièrement manquées lors de l'extraction.

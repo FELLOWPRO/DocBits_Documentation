@@ -1,6 +1,6 @@
-# Item Receiving Method
+# Méthode de réception des articles
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_receiving_method_is_isnot_v2-fr-fr.png" alt="Méthode de réception des articles, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Objectif :**
 
@@ -8,13 +8,13 @@ Cette carte DocBits vérifie si les articles d'un ensemble de données disposent
 
 ## **Fonctionnalité :**
 
-* **Validation de la méthode de réception :** cette carte vérifie la méthode de réception des articles par rapport à une condition spécifiée. Les utilisateurs peuvent choisir entre **un quelconque** article ou **tous** les articles de l'ensemble de données et définir la condition comme **equals** ou **not equals**.
+* **Validation de la méthode de réception :** cette carte vérifie la méthode de réception des articles par rapport à une condition spécifiée. Les utilisateurs peuvent choisir entre **un quelconque** article ou **tous** les articles de l'ensemble de données et définir la condition comme **equals** ou **pas égal**.
 * **Sélection des articles :** les utilisateurs peuvent spécifier :
   * **Any Item :** la carte se déclenche si au moins un article satisfait la condition de méthode de réception spécifiée.
-  * **All Items :** la carte ne se déclenche que si tous les articles satisfont la condition de méthode de réception spécifiée.
-* **Operators :** les opérateurs suivants sont disponibles pour définir la condition :
-  * **Equals (=) :** vérifie si la méthode de réception correspond à la valeur spécifiée.
-  * **Not Equals (≠) :** s'assure que la méthode de réception ne correspond pas à la valeur spécifiée.
+  * **Tous les articles :** la carte ne se déclenche que si tous les articles satisfont la condition de méthode de réception spécifiée.
+* **Opérateurs :** les opérateurs suivants sont disponibles pour définir la condition :
+  * **Est égal à (=) :** vérifie si la méthode de réception correspond à la valeur spécifiée.
+  * **Différent (≠) :** s'assure que la méthode de réception ne correspond pas à la valeur spécifiée.
 
 ## **Utilisation :**
 

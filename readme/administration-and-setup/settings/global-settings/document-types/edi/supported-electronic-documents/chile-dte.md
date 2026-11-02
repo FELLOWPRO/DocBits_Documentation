@@ -4,6 +4,12 @@ description: Prise en charge des documents électroniques CHILE DTE dans DocBits
 
 # 🇨🇱 CHILE DTE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consultez le guide du pays pour connaître les limites de version, la configuration effectivement utilisée et la vidéo explicative du pays. [Chili](countries/chile.md). Sélectionnez le type de document métier avant de vérifier les champs. La facture, l’avoir et les informations de livraison utilisent des correspondances différentes.
+{% endhint %}
+
 | Propriété | Valeur |
 |----------|-------|
 | **Pays / Région** | Chili |
@@ -32,7 +38,7 @@ DTE (Documento Tributario Electrónico) est la norme chilienne de documents fisc
 
 ## Aperçu par défaut
 
-<figure><img src="chile-dte-preview.png" alt="Aperçu de facture Chile DTE dans DocBits"><figcaption><p>Aperçu par défaut DocBits pour une CHILE DTE FACTURA (type 33)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/chile-dte-preview.png" alt="Aperçu de facture Chile DTE dans DocBits"><figcaption><p>Aperçu par défaut DocBits pour une CHILE DTE FACTURA (type 33)</p></figcaption></figure>
 
 ## Mappage des champs
 
@@ -88,5 +94,5 @@ L'élément enveloppe est `<EnvioDTE>` et chaque DTE est enveloppé dans `<DTE><
 
 ## Voir aussi
 
-- [Normes de e-facturation actuellement prises en charge](../../currently-supported-e-invoice-standards/)
+- [Normes de e-facturation actuellement prises en charge](../currently-supported-e-invoice-standards/README.md)
 - [Documents électroniques pris en charge](./)

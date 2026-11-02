@@ -143,7 +143,7 @@ visible par le client._
   date « assigned on » reste la date de l'affectation. Les e-mails de tâches
   s'affichent également correctement dans Outlook.
 
-### Workflow Builder
+### Éditeur de workflows
 
 - La recherche, l'ordre de tri et la pagination de la liste des workflows
   restent cohérents pendant que vous filtrez.

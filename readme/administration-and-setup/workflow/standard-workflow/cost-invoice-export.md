@@ -1,6 +1,6 @@
-# Cost Invoice - Export
+# Factura de gastos: exportación
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_4.png" alt="DocBits Compra Pedido Exportar 4"><figcaption></figcaption></figure>
+
 
 Este título indica que la regla está configurada específicamente para gestionar facturas de coste e implica una acción de exportación, posiblemente para la generación de informes, el procesamiento posterior o la integración con otros sistemas.
 
@@ -19,7 +19,7 @@ Este título indica que la regla está configurada específicamente para gestion
 #### Propósito de esta regla:
 
 * **Workflow Efficiency**: Esta regla ayuda a automatizar el tratamiento de las facturas de coste, garantizando que se procesen a través de las fases de aprobación necesarias sin intervención manual, aumentando la velocidad y la precisión de las operaciones financieras.
-* **Control and Compliance**: Al exigir una segunda aprobación, el sistema impone un mecanismo de control que garantiza que las facturas de coste se revisen exhaustivamente, mejorando la supervisión financiera.
-* **Integration and Reporting**: La acción de exportación sugiere que, una vez que las facturas están totalmente aprobadas, pueden integrarse en otros sistemas para su procesamiento o análisis posterior, lo cual es fundamental para la elaboración de informes financieros y las auditorías.
+* **Control y cumplimiento**: Al exigir una segunda aprobación, el sistema impone un mecanismo de control que garantiza que las facturas de coste se revisen exhaustivamente, mejorando la supervisión financiera.
+* **Integración e informes**: La acción de exportación sugiere que, una vez que las facturas están totalmente aprobadas, pueden integrarse en otros sistemas para su procesamiento o análisis posterior, lo cual es fundamental para la elaboración de informes financieros y las auditorías.
 
 Este tipo de regla es vital para las organizaciones que manejan diversos tipos de facturas y necesitan garantizar que cada tipo se gestione conforme a protocolos específicos. Reduce el riesgo de errores y garantiza el cumplimiento de los controles internos y las normativas externas.

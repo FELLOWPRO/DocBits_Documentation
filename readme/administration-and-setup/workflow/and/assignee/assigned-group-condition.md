@@ -1,6 +1,6 @@
-# Assigned Group Condition
+# Condición de grupo asignado
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_group_is_isnot_in_list_v2-es-es.png" alt="Condición de grupo asignado, Versión 2" width="634"><figcaption><p>Versión 2</p></figcaption></figure>
 
 **Propósito:**
 
@@ -8,12 +8,12 @@ Esta tarjeta de flujo de trabajo ejecuta operaciones en función de si una tarea
 
 **Componentes de la tarjeta:**
 
-1. **Operator**
+1. **Operador**
    * **Descripción:** Define la condición lógica que se aplica a la asignación de grupo.
    * **Opciones:**
      * **IS:** Dispara la operación si el grupo asignado del documento o tarea coincide con uno de los grupos de la lista especificada.
-     * **IS NOT:** Dispara la operación si el grupo asignado del documento o tarea no coincide con ninguno de los grupos de la lista especificada.
-2. **Groups List**
+     * **NO ES:** Dispara la operación si el grupo asignado del documento o tarea no coincide con ninguno de los grupos de la lista especificada.
+2. **Lista de grupos**
    * **Descripción:** Una lista o selección de grupos con los que comparar el grupo asignado.
    * **Detalle:** Esta lista puede incluir uno o varios grupos, lo que permite a la tarjeta manejar de forma eficaz tanto condiciones de un solo grupo como de varios.
 
@@ -22,9 +22,9 @@ Esta tarjeta de flujo de trabajo ejecuta operaciones en función de si una tarea
 * **Identificación de la asignación de grupo:** Identifica automáticamente el grupo o grupos asignados a una tarea o documento concreto dentro del sistema.
 * **Evaluación de la condición:**
   * Con el operador **IS**, la tarjeta comprueba si el grupo asignado es uno de los grupos enumerados en la Groups List.
-  * Con el operador **IS NOT**, la tarjeta garantiza que el grupo asignado no forme parte de los grupos enumerados.
+  * Con el operador **NO ES**, la tarjeta garantiza que el grupo asignado no forme parte de los grupos enumerados.
 * **Ejecución de la acción:**
-  * **Condición verdadera:** Si la asignación de grupo cumple la condición (ya sea **IS** o **IS NOT**), se disparan las acciones pertinentes, como notificaciones, inicios de tareas, aprobaciones u otros pasos del flujo de trabajo.
+  * **Condición verdadera:** Si la asignación de grupo cumple la condición (ya sea **IS** o **NO ES**), se disparan las acciones pertinentes, como notificaciones, inicios de tareas, aprobaciones u otros pasos del flujo de trabajo.
   * **Condición falsa:** Si la condición no se cumple, el flujo de trabajo no continuará.
 
 **Interacciones del usuario:**
@@ -37,3 +37,15 @@ Esta tarjeta de flujo de trabajo ejecuta operaciones en función de si una tarea
 
 **Conclusión:**\
 La tarjeta de flujo de trabajo "Assigned Group Condition" es esencial para gestionar flujos de trabajo de documentos y tareas que dependen de las asignaciones de grupo. Al permitir condiciones basadas en si una tarea o documento está asignado a grupos específicos, garantiza que los flujos de trabajo solo se disparen por las interacciones de grupo adecuadas, mejorando la responsabilidad y la gestión de tareas entre equipos.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Ejemplo práctico
+
+**Cuándo utilizar:** Aplique la misma regla a dos equipos de revisión.
+
+**Configuración:** Seleccione uno de los grupos configurados `Demo Finance` y `Demo Procurement`.
+
+**Resultado esperado y contraejemplo:** Se aprueba un documento asignado a cualquiera de los grupos seleccionados. Un documento asignado únicamente a `Demo Support` falla.
+
+Esta es una configuración ilustrativa y un resultado esperado. Utilice campos, usuarios y grupos configurados en su organización de prueba; no es una afirmación de que este ejemplo haya sido ejecutado.

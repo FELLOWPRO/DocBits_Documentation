@@ -10,17 +10,17 @@ Para darte una mejor visibilidad sobre tus solicitudes, aquí está lo que signi
   – DocBits está trabajando activamente en tu problema.
 * **Waiting on Customer Response**\
   – Necesitamos más información o aclaración de tu parte. Verás esto cuando hayamos hecho preguntas o solicitado archivos.
-* **Waiting for Customer Confirmation**\
+* **Esperando confirmación del cliente**\
   – Hemos implementado una solución o proporcionado orientación y estamos esperando que confirmes que el problema está resuelto.
-* **Waiting on Product Team**\
+* **Esperando al equipo de producto**\
   – Tu solicitud es una sugerencia de función o involucra un problema conocido del producto y ha sido registrada para la hoja de ruta del equipo de Producto.
 * **Closed – Resolved**\
   – El problema está completamente resuelto y confirmado, o no se necesita más acción.
-* **Closed – No Response**\
+* **Cerrado – Sin respuesta**\
   – Después de múltiples seguimientos sin respuesta, cerramos el ticket. Siempre puedes reabrirlo respondiendo.
-* **Closed – Known Issue**\
+* **Cerrado – Problema conocido**\
   – Este ticket rastrea un error conocido del producto que ya está en nuestra lista de tareas pendientes. Está cerrado aquí, pero sigue siendo visible en nuestra planificación interna.
-* **Closed – Logged as Idea**\
+* **Cerrado – Registrado como Idea**\
   – Tu sugerencia ha sido anotada para futura consideración por nuestro equipo de Producto.
 * **Duplicate**\
   – Hemos fusionado este ticket en uno existente que cubre el mismo problema.

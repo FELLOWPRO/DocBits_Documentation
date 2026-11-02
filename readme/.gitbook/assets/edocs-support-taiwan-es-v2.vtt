@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.355
+Taiwan eGUI es la familia configurada. La
+etiqueta de familia no certifica todas las
+
+formats_02
+00:00:07.355 --> 00:00:14.089
+publicaciones de MIG. Compruebe el esquema
+XML real y pruebe facturas electrónicas
+
+formats_03
+00:00:14.089 --> 00:00:15.533
+representativas.
+
+workflow_01
+00:00:16.283 --> 00:00:21.635
+Abra E-Doc para el formato detectado.
+Compare Transformation, Preview y
+
+workflow_02
+00:00:21.635 --> 00:00:27.394
+Extraction Paths. Las reglas Custom tienen
+prioridad. Guardar un borrador no lo
+
+workflow_03
+00:00:27.394 --> 00:00:28.233
+activa.
+
+accept_01
+00:00:28.983 --> 00:00:33.523
+Pruebe una factura y una nota de crédito
+cuando corresponda. Verifique los
+
+accept_02
+00:00:33.523 --> 00:00:38.782
+importes, las partes y el tipo de
+documento exportado. Analizar el archivo
+
+accept_03
+00:00:38.782 --> 00:00:42.633
+no demuestra la autorización fiscal ni la
+entrega por red.
+

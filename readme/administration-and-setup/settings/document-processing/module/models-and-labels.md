@@ -1,4 +1,4 @@
-# Models & Labels
+# Modelos y etiquetas
 
 ### Descripción general
 

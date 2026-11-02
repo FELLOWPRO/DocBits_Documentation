@@ -139,7 +139,7 @@ tuvieron cambios visibles para el cliente._
   "asignado el" sigue siendo la fecha de la asignación. Los correos de tareas
   también se muestran correctamente en Outlook.
 
-### Workflow Builder
+### Editor de flujos de trabajo
 
 - La búsqueda, el orden y la paginación de la lista de flujos de trabajo se
   mantienen coherentes mientras filtra.

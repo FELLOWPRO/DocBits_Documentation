@@ -19,7 +19,7 @@ Los árboles de decisión son una función potente que permite automatizar el en
 
 La lista de árboles de decisión muestra todos los árboles de decisión configurados. Ábrela desde **Settings → Document Processing → Decision Trees**.
 
-<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Lista de árboles de decisión"><figcaption><p>La lista de árboles de decisión</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-extra-decision-trees-es.png" alt="Lista de árboles de decisión con los registros ocultos. La columna «Last Modified At» sigue en inglés y significa fecha de última modificación; las filas enmascaradas no indican una lista vacía."><figcaption><p>Lista de árboles de decisión con los registros ocultos. La columna «Last Modified At» sigue en inglés y significa fecha de última modificación; las filas enmascaradas no indican una lista vacía.</p></figcaption></figure>
 
 Cada entrada muestra:
 

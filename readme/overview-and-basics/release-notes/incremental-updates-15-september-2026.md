@@ -205,7 +205,7 @@ el precio unitario de la OC se calcula a partir del importe neto. Además:
 - Las fechas límite de las tareas usan el formato de fecha de su configuración
   de usuario en la lista, el tablero y la vista de detalle.
 
-### Analytics: Touchless Intelligence
+### Análisis: Touchless Intelligence
 
 La pestaña Touchless (Analytics → Touchless) mide cuántos documentos pasan por
 DocBits sin que una persona los toque, y por qué los demás no. Esta versión la
@@ -404,7 +404,7 @@ el PO Match Service:
   coincidencia automática.
 - Un número de OC corregido se compara en el mismo guardado que lo corrige.
 
-### Analytics
+### Análisis
 
 - Touchless: todos los cambios de backend detrás de la sección de Web App
   anterior, incluida la evidencia de etapa registrada por cada etapa del

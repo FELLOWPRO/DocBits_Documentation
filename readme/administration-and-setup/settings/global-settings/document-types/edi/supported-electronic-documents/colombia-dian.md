@@ -4,6 +4,12 @@ description: Compatibilidad con documentos electrónicos DIAN de Colombia en Doc
 
 # 🇨🇴 Colombia DIAN
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Consulte la guía del país para conocer los límites de versión, la configuración que se está utilizando y el vídeo explicativo del país. [Colombia](countries/colombia.md). La entrada de clasificación de notas de crédito no tiene un paquete de extracción dedicado en el estado inspeccionado. Confirme la asignación utilizada en lugar de deducir su compatibilidad a partir de la entrada de facturas.
+{% endhint %}
+
 | Propiedad | Valor |
 |----------|-------|
 | **País / Región** | Colombia |
@@ -34,7 +40,7 @@ El identificador DIAN (**NIT** — Número de Identificación Tributaria) utiliz
 
 ## Vista previa predeterminada
 
-<figure><img src="colombia-dian-preview.png" alt="Vista previa de Colombia DIAN Factura Electrónica en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/colombia-dian-preview.png" alt="Vista previa de Colombia DIAN Factura Electrónica en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
 
 ## Asignación de campos
 
@@ -79,5 +85,5 @@ El elemento raíz es `<Invoice>` (UBL 2.1) para facturas, `<CreditNote>` para no
 
 ## Relacionado
 
-- [Estándares de factura electrónica compatibles actualmente](../../currently-supported-e-invoice-standards/)
+- [Estándares de factura electrónica compatibles actualmente](../currently-supported-e-invoice-standards/README.md)
 - [Documentos electrónicos compatibles](./)

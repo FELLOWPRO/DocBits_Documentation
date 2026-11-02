@@ -1,18 +1,16 @@
-# Regex
+# Reguläre Ausdrücke (Regex)
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Regex Management"><figcaption><p>Magaging Rgexes</p></figcaption></figure>
+Reguläre Ausdrücke beschreiben Textmuster, mit denen sich beispielsweise Rechnungsnummern, Datumsangaben oder Beträge erkennen lassen. Muster und Herkunft müssen zur jeweiligen Dokumentvorlage passen.
 
-In Docbits, Regex settings allow administrators to define custom patterns that the system uses to find and extract data from documents. This feature is especially useful in situations where data needs to be extracted from unstructured text or when the data follows a predictable format that can be captured using regex patterns.
+## Verfügbarkeit der Verwaltung
 
-#### Key Features and Options
+Der frühere direkte Regex-Link auf der Dokumenttypkarte ist in der aktuellen Oberfläche nicht mehr vorhanden. Prüfen Sie mit Ihrer Administration, welche Konfigurationsmöglichkeit in Ihrer Version verfügbar ist, bevor Sie Muster ändern.
 
-1. **Managing Regexes**:
+## Muster bearbeiten und testen
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_management_list.png" alt="Docbits Regex Management List"><figcaption><p>Magaging Regexes</p></figcaption></figure>
+1. Dokumentieren Sie das bisherige Muster und die erwarteten Treffer.
+2. Bereiten Sie typische Texte sowie Fälle ohne Treffer vor.
+3. Ändern Sie das Muster und vergleichen Sie die tatsächlichen Treffer mit den erwarteten Werten.
+4. Übernehmen Sie die Änderung erst nach erfolgreicher Prüfung in die dafür vorgesehene Konfiguration.
 
-**Managing Regexes**:
-
-* **Add**: Allows you to create a new regex pattern for a specific document type.
-* **Save Changes**: Saves modifications to existing regex configurations.
-* **Pattern**: Here, you can define the regex pattern that matches the specific data format required.
-* **Origin**: Is the Document Origin - For example you can define a different Regex in Germany
+Eine ausführliche Anleitung finden Sie unter [Regex-Muster bearbeiten und speichern](editing-and-saving-regex-patterns.md).

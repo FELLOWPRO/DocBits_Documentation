@@ -1,29 +1,57 @@
 # Dokumenttypen
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+Das Referenzfeld eines eigenen Testtyps konfigurieren, Beschriftung und Prüfmerkmale speichern und nach dem Neuladen kontrollieren.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/de.mp4" %}
+Dokumenttypen
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_types_overview_screenshot.png" alt="Docbits Document Types Overview Screenshot"><figcaption><p>Document Types Screenshot </p></figcaption></figure>
+[Mit Untertiteln ansehen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/document-types-fields-admin/v1/de.html)
 
-#### Übersicht
+Die Aufnahme zeigt die echte Oberfläche. Einzelne Produktbeschriftungen können noch unübersetzt sein.
 
-Der Abschnitt Dokumenttypen listet alle von Docbits erkannten und verarbeiteten Dokumenttypen auf. Administratoren können verschiedene Aspekte wie Layout, Felddefinitionen, Extraktionsregeln und mehr für jeden Dokumenttyp verwalten. Diese Anpassung ist der Schlüssel zur Gewährleistung einer genauen Datenverarbeitung und der Einhaltung organisatorischer Standards.
+## Übersicht
 
-#### Hauptfunktionen und Optionen
+Dokumenttypen legen fest, welche Felder und Verarbeitungseinstellungen für eine Belegart gelten. DocBits stellt Standardtypen wie Rechnung und Gutschrift bereit. Für weitere Belegarten können Administratoren eigene Typen konfigurieren. Standardtypen lassen sich nicht löschen; eigene Typen verwalten Sie mit den entsprechenden Organisationsberechtigungen.
 
-1. **Dokumenttypenliste**:
-   * Jede Zeile stellt einen Dokumenttyp dar, z. B. Rechnung, Gutschrift, Lieferschein usw.
-   * Dokumenttypen können Standard oder benutzerdefiniert sein, was durch Labels wie "Standard" angezeigt wird.
-2. **Layout bearbeiten**: Diese Option ermöglicht es Administratoren, die Dokumentlayouteinstellungen zu ändern, einschließlich der Definition, wie das Dokument aussieht und wo sich Datenfelder befinden.
-3. **Dokumentuntertypen**: Wenn Dokumenttypen Unterkategorien haben, können Administratoren mit dieser Option Einstellungen speziell für jeden Untertyp konfigurieren.
-4. **Tabellenspalten**: Passen Sie an, welche Datenspalten angezeigt werden sollen, wenn der Dokumenttyp in Listen oder Berichten angezeigt wird.
-5. **Felder**: Verwalten Sie die mit dem Dokumenttyp verknüpften Datenfelder, einschließlich des Hinzufügens neuer Felder oder des Änderns vorhandener Felder.
-6. **Modelltraining**: Konfigurieren und trainieren Sie das Modell, das zum Erkennen und Extrahieren von Daten aus den Dokumenten verwendet wird. Dies kann das Festlegen von Parametern für Modelle des maschinellen Lernens umfassen, die sich im Laufe der Zeit mit mehr Daten verbessern.
-7. **Regex**: Richten Sie reguläre Ausdrücke ein, die verwendet werden, um Daten basierend auf Mustern aus Dokumenten zu extrahieren. Dies ist besonders nützlich für die strukturierte Datenextraktion.
-8. **Skripte**: Schreiben oder ändern Sie Skripte, die benutzerdefinierte Verarbeitungsregeln oder Workflows für Dokumente dieses Typs ausführen.
-9. **E-DOC**: Konfigurieren Sie Einstellungen für den Austausch von Dokumenten in standardisierten elektronischen Formaten. Sie können XRechnung, EDI, FakturaPA oder EDI konfigurieren.
+## Steuerelemente einer Dokumenttyp-Karte
+
+| Steuerelement | Bedeutung |
+| --- | --- |
+| Aktivieren | Schaltet den Dokumenttyp für die Verarbeitung ein oder aus. |
+| Extraktion (in älteren Ansichten „Extraction“) | Wählt den angezeigten Extraktionsmodus Flex oder Fix. Dieser Schalter ist von der Aktivierung des Dokumenttyps getrennt. |
+| Zahnrad | Öffnet weitere Einstellungen des Dokumenttyps. |
+
+Welche Verknüpfungen erscheinen, hängt vom Dokumenttyp, den Berechtigungen und den aktivierten Modulen ab. Dazu gehören Layouts, Felder, Tabellen, Skripte, Modelltraining und Dokument-Untertypen. Transformationsregeln, Validierungsregeln und E-Doc-Einstellungen werden bei den entsprechenden Funktionen angeboten. Weitere Optionen können innerhalb der Dokumenttyp-Einstellungen liegen.
+
+## Felder und Pflichtangaben konfigurieren
+
+Das Video verwendet einen bereits angelegten eigenen Testtyp. Die gezeigten Änderungen betreffen dessen Referenzfeld.
+
+1. Öffnen Sie den Dokumenttyp und wählen Sie **Felder**.
+2. Prüfen Sie Feldgruppe und technischen Feldnamen. Die sichtbare Beschriftung lässt sich ändern; die technische Feld-ID bleibt dabei erhalten.
+3. Aktivieren Sie **Erforderlich** für das Referenzfeld. Das Feld bleibt sichtbar und bearbeitbar. Die Pflichtangabe muss ausgefüllt werden; die Einstellung ergänzt keinen fehlenden Wert und garantiert keine korrekte Erkennung.
+4. Legen Sie mit **Überprüfung erforderlich** die ausdrückliche Feldprüfung gesondert fest. Schreibschutz, Sichtbarkeit sowie OCR- und Match-Score-Schwellenwerte haben jeweils eine eigene Bedeutung.
+5. Wählen Sie **Einstellungen speichern**, öffnen Sie die Seite erneut und kontrollieren Sie die gespeicherte Beschriftung und die gesetzten Merkmale.
+
+<figure><img src="../../../../.gitbook/assets/admin-reload-de-47188f97ee80.png" alt="Gespeicherte Feldmerkmale eines eigenen Testtyps."><figcaption><p>Gespeicherte Feldmerkmale eines eigenen Testtyps.</p></figcaption></figure>
+
+Das Video zeigt das Speichern und erneute Laden der Konfiguration. Prüfen Sie vor dem produktiven Einsatz zusätzlich repräsentative Dokumente und den vorgesehenen Ablauf mit einem normalen Benutzerkonto. Modelltraining, Rechnungsfreigabe und Export haben eigene Abläufe.
+
+## Benutzerdefinierte Validierungsregeln
+
+Falls die Funktion verfügbar ist, öffnen Sie die Validierungsregeln des Dokumenttyps. Eine vorhandene Regel können Sie nach der Anleitung [Benutzerdefinierte Validierungsregel duplizieren](duplicate-a-custom-validation-rule.md) wiederverwenden. Diese Regeln werden getrennt von den einzelnen Feldmerkmalen im Video verwaltet.
+
+## Eigenen Dokumenttyp anlegen
+
+Öffnen Sie den Bereich für benutzerdefinierte Dokumenttypen, wählen Sie **Neu** und vergeben Sie einen verständlichen Namen. Durchlaufen Sie die angebotenen Schritte für Extraktionsmodus, Felder, Gruppen und gegebenenfalls Tabellen. Die Einrichtung und ein erforderliches Modelltraining gehen über das Speichern eines Pflichtfeldmerkmals hinaus.
 
 {% hint style="info" %}
-Siehe [Dokumenttyp einrichten](../../../setup/document-types/)
+Die Einrichtung beschreibt [Dokumenttyp einrichten](../../../setup/document-types/).
 {% endhint %}
+
+## Weiteres Video
+
+{% embed url="https://youtu.be/pFz_6tvNlU4" %}
+Dokumenttypen
+{% endembed %}

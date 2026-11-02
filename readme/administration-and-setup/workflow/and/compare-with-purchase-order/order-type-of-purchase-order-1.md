@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Order Type of Purchase Order
+# Auftragsart der Bestellung
 
-<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_check_order_type_in_po_v2-de-de.png" alt="Auftragsart der Bestellung, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck**:
 
@@ -24,6 +24,6 @@ Diese Karte ist besonders wertvoll für Beschaffungsteams, Bestandsplaner und Be
 
 ## **Beispiel-Szenario**:
 
-* Eine Bestellung ist als "IGR" kategorisiert. Das System verwendet den Operator "Gleich", um zu überprüfen, ob dieser Auftragstyp mit der für die Verarbeitung vorgesehenen Klassifizierung übereinstimmt.&#x20;
+* Eine Bestellung ist als "IGR" kategorisiert. Das System verwendet den Operator "Gleich", um zu überprüfen, ob dieser Auftragstyp mit der für die Verarbeitung vorgesehenen Klassifizierung übereinstimmt.
 
 Durch die Verwendung der Karte "Compare with Purchase Order: Order Type" können Organisationen die Validierung von Auftragstypen automatisieren, eine konsistente Priorisierung bei der Verarbeitung sicherstellen und manuelle Klassifizierungsfehler reduzieren.

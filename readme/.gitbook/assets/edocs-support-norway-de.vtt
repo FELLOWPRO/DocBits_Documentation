@@ -1,0 +1,46 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:09.248
+EHF Invoice 3.0 ist neben EHF Order, Order
+Response und Despatch Advice aufgeführt.
+
+formats_02
+00:00:09.248 --> 00:00:13.973
+Wählen Sie die Zuordnung für den
+tatsächlichen Geschäftsdokumenttyp. Eine
+
+formats_03
+00:00:13.973 --> 00:00:17.233
+Bestellung oder Versandanzeige ist keine
+Rechnung.
+
+workflow_01
+00:00:17.983 --> 00:00:23.289
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:23.289 --> 00:00:29.999
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:29.999 --> 00:00:31.633
+aktiviert ihn nicht.
+
+accept_01
+00:00:32.383 --> 00:00:37.015
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:37.015 --> 00:00:43.145
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:43.145 --> 00:00:46.267
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

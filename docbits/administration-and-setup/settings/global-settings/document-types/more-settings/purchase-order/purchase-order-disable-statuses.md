@@ -19,7 +19,7 @@ The **PO disable statuses** setting specifies which purchase order (PO) line sta
 
 In the [Purchase Order Matching Screen](https://docs.docbits.com/end-user-and-partner-section/end-user-section/purchase-order-matching), a line whose status is disabled is marked with strikethrough and cannot be dragged into a match. Check the line's status and the disabled-status list for the document type when reviewing why the line is unavailable.
 
-<figure><img src="../../../../../../.gitbook/assets/po-disabled-row-historical-values-masked-20261102.png" alt="Redacted historical PO matching row with Canceled status; record-specific numeric values are masked"><figcaption><p>A retained historical PO matching example with Canceled status. Record identifiers, quantities, prices and matched values are masked for privacy.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-disabled-row-historical-strike-strokes-masked-20261102.png" alt="Historical Canceled PO row with identifiers and numeric values masked; original strikethrough strokes remain visible"><figcaption><p>A retained historical Canceled PO row. Gray blocks hide identifiers and numeric values, including matched quantity. The short horizontal strokes preserve the original strikethrough styling.</p></figcaption></figure>
 
 ### **How to set it up**
 

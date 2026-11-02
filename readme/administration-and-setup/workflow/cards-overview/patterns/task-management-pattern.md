@@ -792,7 +792,7 @@ ELSE：
 
 * 添加电子邮件通知：[发送电子邮件指南](../send-email-groups-guide.md)
 * 实施复杂路由：[决策逻辑模式](decision-logic-pattern.md)
-* 解决任务错误：上方的[错误处理](task-management-pattern.md)
+* 解决任务错误：上方的[错误处理](task-management-pattern.md#error-handling)
 
 ***
 

@@ -10,6 +10,8 @@
 
 注意：某些原生产品标签可能未翻译。录像保留了实际的用户界面。
 
+<figure><img src="../../../../.gitbook/assets/site-extra-document-types-zh.png" alt="中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。"><figcaption><p>中文文档类型页面；Standard 和 Extraction 仍为英文。文档类型激活与提取模式属于独立配置。</p></figcaption></figure>
+
 ## 概览
 
 文档类型定义用于不同种类文档的配置。DocBits 提供发票和贷记单等标准类型。自定义类型允许管理员为其他类别的业务文档配置字段与处理设置。标准类型无法删除；在组织权限内管理自定义类型。

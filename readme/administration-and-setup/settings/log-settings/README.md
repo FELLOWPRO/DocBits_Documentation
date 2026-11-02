@@ -19,11 +19,13 @@ Na parte superior da página, um banner leva ao **Painel de Análise**, com grá
 
 ## Tabela de Logs
 
+<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-pt-20261031.png" alt="Registo de atividade na interface portuguesa: a coluna Serviço identifica o serviço que gerou o registo e corresponde ao filtro Serviço. As entradas e os metadados de exportação ficam fora desta vista."><figcaption><p>Registo de atividade na interface portuguesa: a coluna Serviço identifica o serviço que gerou o registo e corresponde ao filtro Serviço. As entradas e os metadados de exportação ficam fora desta vista.</p></figcaption></figure>
+
 | Coluna | Descrição |
 |--------|-------------|
 | **Carimbo de data e hora** | Data e hora em que o evento ocorreu. Ordenável. |
 | **Gravidade** | Selo colorido: Info (azul), Warning (amarelo), Error (vermelho), Debug (cinza). |
-| **Componente** | O serviço ou módulo que gerou o log (por exemplo, api, auth, api-service). |
+| **Serviço** | O serviço ou módulo que gerou o log (por exemplo, api, auth, api-service). |
 | **Mensagem** | A mensagem de log completa com os detalhes do evento. |
 
 Os resultados são paginados — use os controles na parte inferior para navegar entre as páginas.

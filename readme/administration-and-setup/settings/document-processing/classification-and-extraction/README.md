@@ -1,5 +1,22 @@
 # Classificação e extração
 
+## Qual configuração funciona em qual etapa do processo?
+
+<figure><img src="../../../../.gitbook/assets/process-extraction-pt-20261028.png" alt="Do arquivo aos dados reconhecidos: Visualize o tipo de documento, a fonte de dados e o caminho de extração separadamente."><figcaption><p>Visualize o tipo de documento, a fonte de dados e o caminho de extração separadamente. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
+
+A classificação responde à pergunta **“Que tipo de documento é esse?”**. A extração responde **“Quais valores ela contém?”**. As configurações nesta página afetam diferentes pontos de processamento e não devem ser entendidas como uma única opção de IA.
+
+1. **Preparar entrada:** Para PDFs, texto existente ou OCR pode ser usado; documentos eletrônicos suportados podem fornecer valores estruturados. Uma divisão ativada pode separar um documento recebido com base no código de barras configurado ou nos critérios QR.
+2. **Determinar o tipo de documento:** Regras e modelos de classificação atribuem documentos a um tipo e, se necessário, a um subtipo. Esta atribuição deve ser diferenciada da posterior extração de campos e tabelas.
+3. **Extrair valores:** As tabelas podem seguir caminhos diferentes dependendo da configuração e das regras salvas aplicáveis. Os campos de cabeçalho possuem seus próprios indicadores de origem. Portanto, o modelo de IA selecionado por si só não explica todos os valores de linha ou campo.
+4. **Rastreie o resultado:** Na tela de validação, verifique qual aba da tabela contém as linhas e qual indicador de origem um campo de cabeçalho possui. Se faltar uma etapa de processamento, leia os registros do documento antes de alterar as configurações.
+
+### Distinguir entre caminho de regra e caminho de IA
+
+As regras de tabela salvas apropriadas podem determinar a extração da tabela para o modelo ou fornecedor relevante. Sem regras adequadas, o caminho AI pode ser usado quando a extração da tabela AI está ativada. Colunas individuais podem ter suas próprias opções de IA. Uma fonte de IA para um campo de cabeçalho não significa que toda a tabela venha da IA.
+
+O guia de diagnóstico [Qual caminho de extração foi usado?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) explica guias, identificadores de fonte e registos. A página [Modelo de IA](ai-model.md) explica o padrão da organização e as substituições relacionadas ao modelo.
+
 ## Visão geral
 
 Nas configurações de **Classificação e extração**, pode:
@@ -105,7 +122,7 @@ Mais informações sobre esta definição [aqui](auto-extract-tax-code.md).
 
 **Guardar regras de extração (apenas administradores):** Só os administradores podem clicar em *Guardar regras* no treino de tabelas. Ative-a quando os utilizadores continuam a guardar regras que estragam a extração de um fornecedor.
 
-**Modelo de IA:** Seleciona o nível de IA usado para a extração de tabelas. Estão disponíveis seis opções: **Full** (máxima precisão, a mais lenta, 2 tokens por documento), **Fast** (predefinição; 1 token por documento), **Nexus** e **Nexus Flash** (família de modelos alternativa, de ativação opcional), além de **Auto** e **Auto Nexus**, em que o DocBits decide por documento quão forte é o modelo necessário. A tabela por baixo do seletor mostra:
+**Modelo AI:** define o modelo de organização para extração de campos e tabelas. O menu oferece Full, Fast, Nexus, Nexus Flash, Auto e Auto Nexus. Verifique a disponibilidade, qualidade, tempo de execução e custo com documentos representativos. Uma camada nem sempre é a mais precisa ou rápida para todos os documentos. As substituições de modelo podem substituir a configuração da organização. A tabela abaixo do seletor mostra:
 
 * Quais os **fornecedores** que usam cada modelo de IA
 * Se usam a extração estruturada (IA) e o E-Text
@@ -115,11 +132,11 @@ Esta definição é explicada em detalhe [aqui](ai-model.md).
 
 ### Porque é que a tabela é diferente de fornecedor para fornecedor?
 
-Tudo o que o DocBits aprende sobre uma tabela é guardado **por fornecedor**:
+O processamento da tabela depende das regras e configurações salvas no fornecedor relevante ou no contexto do modelo:
 
 * **Regras guardadas** (treino de tabelas): posição da tabela e mapeamento das suas colunas no layout desse fornecedor.
 * **Tags e regras de formatação da tabela de IA**: indicações que o utilizador guardou para a tabela de IA desse fornecedor.
-* **Modelo de IA específico do fornecedor**: o nível escolhido para esse fornecedor em *Mais definições* no ecrã de validação.
+* **Modelo de IA específico do modelo:** A seleção feita na tela de validação é salva por organização e modelo de extração atual. Não altera automaticamente todos os modelos do mesmo fornecedor. Sem uma substituição, a configuração da organização aplicável será usada.
 
 Assim, o fornecedor A, com regras guardadas, mostra uma tabela determinística no separador *Tabela extraída* do ecrã de validação, enquanto o fornecedor B, sem regras, recebe a *Tabela extraída por IA*. Para que o fornecedor B se comporte como o A, treine a tabela de B uma vez. Para repor um fornecedor, elimine as suas regras no ecrã de validação ou reponha os seus dados de treino na tabela do Modelo de IA.
 
@@ -148,7 +165,7 @@ Notas:
 * `AI_MODEL` não definido significa **Fast**.
 * Um `TABLE_EXTRACTION_VISION_MODE` não definido é resolvido a partir do botão antigo `TABLE_EXTRACTION_USE_VISION`: `true` dá `vision`, qualquer outro valor dá `off`.
 * A alteração de uma chave produz efeito nos documentos processados posteriormente. Reinicie um documento para o extrair novamente com a nova definição.
-* As escolhas por fornecedor (E-Text, modelo de IA, regras guardadas) não são preferências da organização; são definidas no ecrã de validação em *Mais definições* num documento desse fornecedor.
+* As substituições de modelo diferem das preferências da organização. O guia AI Model explica o escopo exato.
 
 ## Documento eletrónico
 

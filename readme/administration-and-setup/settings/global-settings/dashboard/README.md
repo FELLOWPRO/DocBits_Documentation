@@ -49,6 +49,8 @@ Os seguintes detalhes estão incluídos:
   * **Apenas Admin e Atribuído**: Apenas usuários com privilégios de Admin e o usuário atribuído podem reiniciar o documento.
   * **Todos os Usuários**: Todos os usuários que receberam as [permissões](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) necessárias podem reiniciar documentos.
 
+* **Acesso pendente (dias)**: define por quantos dias a pessoa a quem foi pedida uma informação no fluxo de atividade pode abrir o documento em modo de leitura; depois disso, a ligação deixa de funcionar. O valor predefinido é 14 dias e o acesso também termina assim que o documento avança. Ver [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
+
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtros**

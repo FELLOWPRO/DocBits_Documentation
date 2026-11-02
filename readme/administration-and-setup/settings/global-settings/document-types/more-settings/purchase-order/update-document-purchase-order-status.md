@@ -1,39 +1,37 @@
-# Mettre à jour le statut de la commande d'achat du document
+# Mettre à jour le statut du bon de commande du document
 
+Ce paramètre concerne les types de documents qui utilisent des bons de commande. Il contrôle si un document peut recevoir des mises à jour de statut depuis le bon de commande auquel il est lié. Le commutateur se configure par type de document. Pour afficher un statut de bon de commande dans le tableau de bord, le champ concerné doit également être disponible et visible en tant que colonne.
 
+Avant de modifier le paramètre, sélectionnez la bonne organisation et le bon type de document. Un accès administrateur est nécessaire pour modifier les paramètres d'un type de document. Un bon de commande doit être lié à un document avant qu'un changement de statut puisse être vérifié.
 
-## Aperçu
+## Activer le paramètre
 
-Lorsqu'activé, la colonne **État de la commande** sur le tableau de bord est automatiquement mise à jour chaque fois que le statut de la commande d'achat change.
+1. Ouvrez **Paramètres → Traitement des documents → Types de Documents**.
+2. Repérez le type de document utilisé pour les documents liés aux bons de commande, par exemple **Facture**, et sélectionnez l'engrenage sur sa carte pour ouvrir **Plus de paramètres**.
+3. Développez **Appariement et validation des bons de commande**. Trouvez **Mettre à jour le statut du bon de commande du document** et activez-le. L'icône d'aide à proximité explique l'option dans l'application. Modifier ce commutateur ne modifie pas les autres paramètres de bon de commande de la même section.
 
-## Où activer
+<figure><img src="../../../../../../.gitbook/assets/dbdc697_document_types_fr.png" alt="Page Types de documents avec la carte Facture et son engrenage Plus de paramètres"><figcaption>Ouvrez les paramètres du type de document que vous utilisez.</figcaption></figure>
 
-1. Aller à: **Paramètres** → **Paramètres globaux** → **Type de document**
-2.  Sélectionnez le type de document souhaité et cliquez sur **Plus de paramètres**.
+<figure><img src="../../../../../../.gitbook/assets/dbdc697_po_settings_fr.png" alt="Section Appariement et validation des bons de commande avec le commutateur Mettre à jour le statut du bon de commande du document"><figcaption>Le commutateur de mise à jour du statut dans les paramètres du bon de commande.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  Dans la section **Commande d'achat**, accédez à l'option **Mettre à jour le statut de la commande d'achat du document**.
+## Afficher un statut de bon de commande dans le tableau de bord
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSsFkQ46Jd4tn0WGqNSjk%252Fimage.png%3Falt%3Dmedia%26token%3D51ee4f2d-76ae-42b4-a748-f0e9d340b329\&width=768\&dpr=4\&quality=100\&sign=e0f4b1af\&sv=2)
+1. Revenez au tableau de bord et sélectionnez l'engrenage au-dessus du tableau des documents.
+2. Ouvrez **Paramètres de colonnes** dans le menu des paramètres avancés.
+3. Sélectionnez **Ajouter un champ à partir du type de document**, choisissez le type de document, puis recherchez le champ de statut du bon de commande. Si ce champ est disponible, sélectionnez-le, choisissez de l'ajouter aux colonnes visibles, puis sélectionnez **Terminé**.
 
-## Comment ça fonctionne
+La boîte de dialogue des colonnes contient **Colonnes cachées** et **Colonnes visibles**. Utilisez les flèches pour déplacer une colonne sélectionnée entre les deux. Consultez [Modifier les colonnes de document](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md) pour le guide complet des colonnes. Si le champ de statut est absent pour le type sélectionné, demandez à un administrateur de vérifier son champ et sa configuration de consultation ; le commutateur d'affichage seul ne crée pas un champ manquant.
 
-Lorsque ce paramètre est activé, la colonne **État de la commande** sur le tableau de bord reflétera automatiquement le statut actuel de la commande d'achat. Par exemple, si le statut de la commande est mis à jour en _Reçu_ ou _Facturé_, la colonne du tableau de bord sera mise à jour en conséquence pour afficher ce nouveau statut.
+<figure><img src="../../../../../../.gitbook/assets/dbdc697_dashboard_columns_fr.png" alt="Boîte de dialogue Paramètres de colonnes du tableau de bord avec Colonnes cachées, Colonnes visibles et Ajouter un champ à partir du type de document"><figcaption>Choisissez les colonnes qui apparaissent dans le tableau de bord.</figcaption></figure>
 
-<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FmWZIOi5pqWyeagCfiXgy%252FStatus%2520on%2520Dashboard.jpg%3Falt%3Dmedia%26token%3D3aad59e7-d249-4f07-afa3-c68429128cec&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6cde440e&#x26;sv=2" alt="" width="375"></div>
+## Vérifier la consultation des données de base du bon de commande
 
-## Configuration
+Dans **Paramètres → Traitement des documents → Types de Documents → Champs → Paramètres des données maîtres**, développez **Consultation des données de base**, puis **Order Header Lookup**. Vérifiez que le mappage du champ de bon de commande requis existe et que la consultation concernée a **Déclenchement Automatique** lorsque la consultation automatique est nécessaire. La capture ci-dessous montre la liste de configuration ; les croix rouges signifient que le déclenchement automatique est désactivé pour ces lignes d'exemple. Elle ne démontre pas un statut de bon de commande mis à jour.
 
-1. **Activer le paramètre** Accédez à l'emplacement mentionné ci-dessus et activez le paramètre.
-2. **Ajouter la colonne État de la commande (si non visible)** Si la colonne **État de la commande** n'est pas déjà visible sur le tableau de bord:
-   *   Aller à: **Paramètres avancés** → **Définir les colonnes du tableau pour les organisations**
+<figure><img src="../../../../../../.gitbook/assets/dbdc697_lookup_po_header_fr.png" alt="Configuration Order Header Lookup montrant Recherche Possible et Déclenchement Automatique pour chaque champ"><figcaption>Vérifiez les lignes réelles de la consultation pour le type de document.</figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fn6GyECCtvUeKLYd6FkEH%252Fimage.png%3Falt%3Dmedia%26token%3Da023deba-748f-4140-bb33-17483c91f2cf\&width=768\&dpr=4\&quality=100\&sign=164eb544\&sv=2)
-   * Ajoutez le champ du type de document en recherchant **État de la commande**
-3. **Configurer la configuration de recherche**
-   *   Configurez le champ d'état dans la recherche d'en-tête de commande d'achat comme ceci:
+Pour configurer une consultation, consultez [Configuration de données floues avec les données maîtres](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Folrh285NuJO787Udc80C%252Fimage.png%3Falt%3Dmedia%26token%3Def5abe46-fe94-4946-a893-66f7ca21322b\&width=768\&dpr=4\&quality=100\&sign=415e657e\&sv=2)
-   * **Remarque:** **La commande d'achat doit être sur Déclenchement automatique sinon les mises à jour de statut peuvent ne pas être correctement effectuées**
-   * Ne savez pas comment **Configurer la configuration de recherche? Voici le** [**guide de configuration de recherche**](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
-4. **Vérifier** Recevez ou facturez une commande d'achat, puis vérifiez le tableau de bord pour confirmer que le statut est correctement mis à jour.
+## Vérifier avec un document connu
+
+Utilisez un document déjà lié à un bon de commande de test. Modifiez le statut de ce bon de commande selon votre processus habituel, actualisez le tableau de bord, puis vérifiez le document et le champ de statut visible. Si le statut ne se met pas à jour, vérifiez le lien du document avec le bon de commande, la configuration de consultation, et si le champ concerné a bien été ajouté au tableau de bord. Ne déduisez pas une mise à jour réussie du seul commutateur.

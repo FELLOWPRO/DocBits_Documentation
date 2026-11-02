@@ -1,6 +1,6 @@
-# Cost Invoice - Export
+# Facture de frais : exportation
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_4.png" alt="DocBits Achat Commande Exporter 4"><figcaption></figcaption></figure>
+
 
 Ce titre indique que la règle est spécifiquement configurée pour gérer les factures de coûts et implique une action d'exportation, possiblement à des fins de reporting, de traitement ultérieur ou d'intégration avec d'autres systèmes.
 

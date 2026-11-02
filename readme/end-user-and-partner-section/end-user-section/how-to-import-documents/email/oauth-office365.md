@@ -2,32 +2,34 @@
 
 {% embed url="https://youtu.be/Vvy38N_5g3Y" %}
 
-Ici, vous devez simplement entrer le sous-organisation souhaité et appuyer sur "Authentifier"
+Vous trouverez ici les étapes pour connecter une boîte aux lettres Office 365 à DocBits en utilisant OAuth. La configuration complète de l'importation d'e-mails est décrite dans le guide [E-mails entrants — connecter une boîte aux lettres](../../../../administration-and-setup/settings/document-processing/module/inbound-emails.md).
 
-![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
+Saisissez la sous-organisation souhaitée et appuyez sur « Authentifier ».
 
-Vous serez redirigé vers cette page Microsoft et devrez entrer un code.
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-authenticate-fr-20261009.png" alt="Boîte de dialogue Configuration du serveur de messagerie avec le protocole OAuth Office365, le routage des documents et le bouton Authentifier."><figcaption><p>Choisissez le routage des documents et appuyez sur Authentifier.</p></figcaption></figure>
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
+Vous serez redirigé vers une page Microsoft où un code vous sera demandé.
 
-Ce code peut être trouvé en retournant sur DocBits et le code sera affiché là comme ci-dessous, il suffit de copier le code et de l'entrer dans la page Microsoft. Ensuite, vous devrez entrer vos propres identifiants Microsoft.
+Ce code peut être récupéré en retournant sur DocBits : il y sera affiché comme ci-dessous. Copiez simplement le code et saisissez-le sur la page Microsoft. Ensuite, vous devrez entrer vos propres identifiants Microsoft.
 
-![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-code-fr-20261009.png" alt="Boîte de dialogue Configuration du serveur de messagerie affichant le code d'authentification Microsoft avec un bouton Copier et le bouton Authentification terminée."><figcaption><p>Le code Microsoft est affiché dans DocBits.</p></figcaption></figure>
 
-Appuyez sur le bouton FINISH AUTHENTICATION et vous serez redirigé vers ce menu
+Appuyez sur le bouton « Authentification terminée » et vous accéderez à ce menu d'options d'importation.
 
-![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-options-fr-20261009.png" alt="Boîte de dialogue Configuration du serveur de messagerie après l'authentification avec les commutateurs Utiliser le dossier, Utiliser la boîte aux lettres partagée et Déplacer les e-mails vers un autre dossier."><figcaption><p>Options d'importation une fois l'authentification terminée.</p></figcaption></figure>
 
-**Utiliser un Dossier**
+**Utiliser le dossier**
 
-Si vous utilisez un dossier autre que votre boîte de réception, entrez le nom du dossier après avoir activé le curseur.
+Si vous utilisez un dossier autre que votre boîte de réception, saisissez le nom du dossier après avoir activé le commutateur.
 
-**Utiliser une Boîte aux Lettres Partagée**
+**Utiliser la boîte aux lettres partagée**
 
-Si vous souhaitez que l'importation d'e-mails accède à une boîte de réception ou à un dossier d'une boîte aux lettres partagée, saisissez l'adresse e-mail ici après avoir activé le curseur.
+Si vous souhaitez que l'importation d'e-mails accède à la boîte de réception ou à un dossier d'une boîte aux lettres partagée, saisissez ici l'adresse e-mail après avoir activé le commutateur.
 
-**Déplacer les e-mails importés vers la corbeille**
+**Déplacer les e-mails vers un autre dossier**
 
-Si vous souhaitez importer tous les e-mails, pas seulement les non lus, et les déplacer vers la corbeille, activez ceci. Sinon, il ne vérifiera que les e-mails non lus, importera les documents, marquera l'e-mail comme lu et le laissera à sa place actuelle.
+Si vous souhaitez importer tous les e-mails, et pas seulement les non lus, et les déplacer vers un autre dossier, activez cette option. Sinon, seuls les e-mails non lus seront vérifiés : les documents seront importés, l'e-mail sera marqué comme lu et restera à son emplacement actuel.
 
-En cas de réception d'un message d'erreur indiquant que vous n'avez pas les droits pour établir une telle connexion, une personne disposant des droits d'administration dans Azure devrait autoriser cette connexion. Pour plus d'informations, visitez la page suivante: [https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps)
+Pour enregistrer et activer la connexion après l'avoir configurée, puis consulter ses journaux, suivez la section « Ajouter une nouvelle connexion OAuth Office365 » et « Actions pour OAuth Office365 » du guide [Importer — Importation d'e-mails](../../../../administration-and-setup/settings/document-processing/import/README.md).
+
+Si vous recevez un message d'erreur indiquant que vous ne disposez pas des droits nécessaires pour établir une telle connexion, une personne disposant de droits d'administrateur dans Azure devra autoriser cette connexion. Pour plus d'informations, consultez la page suivante : https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps

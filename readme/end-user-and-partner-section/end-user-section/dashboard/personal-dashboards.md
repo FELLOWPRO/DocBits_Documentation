@@ -1,103 +1,36 @@
 # Tableaux de bord personnels
 
-## Aperçu
+Un tableau de bord enregistré est une vue nommée de votre liste de travail : recherche, filtres, type de document, tri et colonnes visibles. À l’ouverture, tout est restauré en même temps, si bien que les tâches récurrentes ne sont pas à reconfigurer. Un tableau de bord modifie uniquement l’affichage des documents, jamais les documents eux-mêmes.
 
-Vous pouvez créer et gérer des tableaux de bord personnalisés adaptés à vos besoins spécifiques. Ces tableaux de bord vous permettent de :
+## Créer un tableau de bord
 
-* Définir un ordre de colonnes personnalisé
-* Sélectionner uniquement les colonnes pertinentes pour votre cas d'utilisation
-* Appliquer et enregistrer des filtres personnalisés
-* Partager des tableaux de bord avec les membres de l'équipe
+1. Préparez la vue que vous souhaitez conserver. Saisissez la recherche dans la barre de recherche, utilisez les **Filtres rapides** du sélecteur de champs, les **Filtres**, un onglet de type de document, le tri du tableau et les colonnes.
 
-## Créer un nouveau tableau de bord
+2. Ouvrez le bouton de vue sous le champ de recherche. Il affiche la vue active et le nombre de documents correspondants, par exemple **Tous les documents (5986)**.
 
-Pour créer un nouveau tableau de bord :
+3. Choisissez **Créer un nouveau tableau de bord**.
 
-1.  Cliquez sur le bouton Filtre sous la barre de recherche.
+4. Donnez un nom explicite et décidez qui peut utiliser la vue :
+   * **Visible seulement par moi** garde la vue privée.
+   * **Visible par tous les utilisateurs** la met à disposition de toutes les personnes de votre organisation.
+   * **Partager avec des groupes et des utilisateurs** affiche les deux listes **Groupes** et **Sélectionner l’utilisateur**, pour désigner des groupes ou des personnes précises.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Cliquez sur **Créer un nouveau tableau de bord**.
+5. Choisissez **Enregistrer**. Le bouton de vue bascule sur le nouveau tableau de bord et affiche son nom et le nombre de documents.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_2.png)
-3.  Saisissez un nom pour votre tableau de bord.
+<figure><img src="../../../.gitbook/assets/dashboard-saved-view-fr.png" alt="Créez un tableau de bord nommé et choisissez qui peut le voir."><figcaption><p>Créez un tableau de bord nommé et choisissez qui peut le voir.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_3.png)
-4. Définissez le niveau de visibilité souhaité. Vous pouvez choisir parmi :
-   * **Visible seulement par moi** : Seul vous (l'utilisateur actuellement connecté) pouvez voir ce tableau de bord.
-   * **Visible par tous les utilisateurs** : Tous les utilisateurs de votre organisation auront un accès en lecture.
-   *   **Partager avec des groupes et des utilisateurs** : Sélectionnez des utilisateurs ou des groupes d'utilisateurs spécifiques qui auront un accès en lecture au tableau de bord.
+La visibilité détermine qui peut **utiliser** la vue. Elle n’accorde aucun accès aux documents : chaque personne ne voit toujours que les documents pour lesquels elle dispose des droits.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_4.png)
-5.  Cliquez sur **Enregistrer** pour créer et enregistrer votre tableau de bord.
+## Changer de vue ou la modifier
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_5.png)
+Choisissez un tableau de bord enregistré dans le bouton de vue ou revenez au **Tableau de bord par défaut**, la vue non enregistrée de tous les documents. Le dernier tableau de bord ouvert reste actif après le rechargement de la page.
 
-## Passer d'un tableau de bord à l'autre
+Après modification d’un tableau de bord chargé — même si vous ne changez que les colonnes — le bouton de vue propose **Enregistrer les modifications du tableau de bord**. Vous enregistrez ainsi la modification sous le même nom. L’action reste désactivée si rien n’a changé ou si le tableau de bord appartient à une autre personne ; une vue partagée ne peut pas être écrasée, créez la vôtre.
 
-Pour passer d'un tableau de bord à l'autre :
+## Renommer un tableau de bord ou le repartager
 
-1. Cliquez sur le bouton Filtre sous la barre de recherche.
-2.  Dans le menu déroulant, sélectionnez un tableau de bord dans la liste des tableaux de bord personnels ou partagés.
+Survolez un tableau de bord qui vous appartient dans le bouton de vue pour afficher ses icônes **Éditer** et **Supprimer**. Choisissez le crayon pour ouvrir **Modifier le tableau de bord** et changer le nom ou la visibilité. La boîte de dialogue présente les trois mêmes options qu’à la création.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_6.png)
+## Supprimer un tableau de bord
 
-<mark style="color:red;">**Remarque**</mark> : Vous pouvez identifier si un tableau de bord est personnel ou partagé en vérifiant l'icône devant le nom du tableau de bord.
-
-## Modification/Suppression d'un tableau de bord personnel
-
-Pour modifier votre tableau de bord personnel ou partagé :
-
-1.  Cliquez sur le bouton Filtre sous la barre de recherche.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Cliquez sur le nom du tableau de bord personnel que vous souhaitez modifier.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3. Effectuez les modifications souhaitées, par exemple :
-   * Modifier l'ordre des colonnes
-   * Ajuster la visibilité des colonnes
-   * Modifier les filtres
-
-### **Enregistrer les modifications du tableau de bord**
-
-Une fois vos modifications effectuées, cliquez sur le bouton Filtre sous la barre de recherche, puis sélectionnez **Enregistrer les modifications du tableau de bord**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_11.png)
-
-<mark style="color:red;">**Remarque**</mark> : Seuls les tableaux de bord personnels peuvent être modifiés. Les tableaux de bord partagés ne peuvent être modifiés que par leur créateur d'origine.
-
-### **Renommer un tableau de bord**
-
-Pour renommer un tableau de bord personnel ou partagé :
-
-1.  Cliquez sur le bouton Filtre sous la barre de recherche.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Sélectionnez le tableau de bord que vous souhaitez renommer.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3.  Sélectionnez **Renommer le tableau de bord actuel**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_8.png)
-4.  Saisissez le nouveau nom, puis cliquez sur **Enregistrer**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_9.png)
-
-<mark style="color:red;">**Remarque**</mark> : Seuls les tableaux de bord personnels peuvent être renommés. Les tableaux de bord partagés ne peuvent être renommés que par leur créateur d'origine.
-
-### Supprimer un tableau de bord
-
-Pour supprimer un tableau de bord personnel :
-
-1.  Cliquez sur le bouton Filtre sous la barre de recherche.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2. Survolez le tableau de bord que vous souhaitez supprimer.
-3.  Cliquez sur l'icône de corbeille à côté.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_12.png)
-4.  Confirmez la suppression en cliquant sur **Supprimer**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_13.png)
-
-<mark style="color:red;">**Remarque**</mark> : Seuls les tableaux de bord personnels peuvent être supprimés. Les tableaux de bord partagés ne peuvent être supprimés que par leur créateur d'origine.
+Choisissez l’icône de corbeille d’un tableau de bord qui vous appartient et confirmez avec **Supprimer**. Retirer une vue ne supprime pas les documents auxquels elle renvoyait. Un tableau de bord qu’une autre personne a partagé avec vous peut être ouvert et utilisé, mais pas modifié ni supprimé dans votre compte.

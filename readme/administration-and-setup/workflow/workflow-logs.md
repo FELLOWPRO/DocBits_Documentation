@@ -1,5 +1,82 @@
 # Journaux de flux de travail
 
+## Vidéo
+
+La vidéo de recherche est un aperçu avec de véritables écrans DocBits. La vidéo de diagnostic utilise encore des schémas pédagogiques identifiés comme illustrations.
+### Trouver l’exécution pertinente
+
+{% hint style="info" %}
+Aperçu à tester : véritables écrans DocBits avec actions du document, flux de documents, durée des étapes, journaux vides et filtres de statut et de date. Le document ne contient aucune exécution Advanced Workflow enregistrée. Cet aperçu ne montre pas encore les lignes d’exécution, la pagination ni le diagnostic des nœuds.
+{% endhint %}
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.mp4" %}
+
+[Ouvrir la vidéo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.mp4) · [Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_search/v3/fr.vtt) · 1:46
+
+<details>
+<summary>Transcription</summary>
+
+**Commencer par le document**
+
+Dans le tableau de bord des documents, ouvrez le menu des actions et choisissez le flux de documents. L’historique réel montre l’importation et l’OCR. Ouvrez une étape pour examiner les temps d’attente et de traitement. Ces étapes sont distinctes des nœuds Advanced Workflow.
+
+**Lire les compteurs réels**
+
+Voici les journaux de workflow du même document. Le bleu indique le total, le rouge les erreurs, le jaune les conditions non remplies et le vert les réussites. Ce document de démonstration ne contient aucune exécution enregistrée. Les quatre compteurs affichent donc zéro.
+
+**Vérifier les colonnes des exécutions**
+
+Les colonnes indiquent le nom du workflow, la date de création, la durée et le résultat. Distinguez les exécutions répétées grâce à l’horodatage. Ce document ne contient aucune ligne à ouvrir.
+
+**Ouvrir les filtres de statut**
+
+L’icône des filtres ouvre le véritable menu. Triez par nom ou date de création, dans l’ordre croissant ou décroissant. Le statut propose réussite, condition non remplie et erreur.
+
+**Choisir les dates et effacer les filtres**
+
+Choisissez une période avec les dates de début et de fin ou le calendrier. Le format est année, mois et jour. Appliquer demande les résultats. Effacer les filtres réinitialise la sélection. Effacez la recherche séparément. Dans cette version, les mois du calendrier restent en anglais.
+
+**Aperçu : une exécution enregistrée manque encore**
+
+Cet aperçu permet de vérifier l’accès au document, les détails du traitement et les commandes des journaux. Une exécution Advanced Workflow enregistrée manque encore pour montrer les lignes réelles, la pagination, les routes et les messages des nœuds. Ces résultats ne sont pas simulés dans la vidéo.
+
+</details>
+
+### Suivre les nœuds et diagnostiquer
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.mp4" %}
+
+[Sous-titres (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflow_logs_diagnosis/v2/fr.vtt) · 1:47
+
+<details>
+<summary>Transcription</summary>
+
+**Développez une exécution**
+
+Développez la ligne du workflow. Une exécution avancée affiche le graphe à gauche et les messages à droite ; un workflow standard montre une suite de cartes. Ces données décrivent cette exécution et peuvent différer du concepteur actuel.
+
+**Sélectionnez un nœud**
+
+Déplacez ou zoomez le graphe, puis cliquez sur un nœud. Card Logs affiche ses messages. Wait ALL et Wait ANY peuvent aussi avoir des messages de nœud. Reliez le message au nœud sélectionné et à l’horodatage.
+
+**Distinguez les états**
+
+Vert signifie succès ; orange, condition fausse ; rouge, erreur ; gris, ignoré. Un nœud ignoré n’a pas été exécuté. Avant de le modifier, vérifiez si une autre branche a été choisie ou si une entrée de jonction manque.
+
+**Suivez la première divergence**
+
+Suivez le chemin réel depuis l’entrée. Pour un contrôle de montant faux, examinez orange ; pour une erreur, lisez le message et examinez rouge. Le traitement d’erreur peut réussir tandis que l’exécution conserve l’erreur initiale.
+
+**Vérifiez les jonctions**
+
+Pour Wait ALL, contrôlez chaque source et résultat connecté. Pour ANY ou OR, cherchez une source correspondante. Deux sorties du même nœud ne constituent pas des approbations indépendantes. Une condition orange peut être voulue.
+
+**Corrigez et vérifiez**
+
+Notez workflow, référence documentaire, horodatage, nœud et message exact. Corrigez données ou configuration, puis testez un scénario reproductible. Enregistrez et vérifiez l’activation. Comparez une nouvelle exécution à l’ancienne ; les anciens journaux conservent le comportement antérieur.
+
+</details>
+
 ## **Aperçu**
 
 Les **Journaux de flux de travail** permettent aux utilisateurs d'analyser quels flux de travail ont été exécutés pour un document, de comprendre les résultats de l'exécution et d'approfondir les détails au niveau des conditions pour le débogage ou la validation.

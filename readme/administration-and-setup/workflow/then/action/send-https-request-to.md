@@ -1,6 +1,6 @@
-# Send HTTPS request to
+# Envoyer une requête HTTPS à
 
-<figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Objectif :
 
@@ -9,28 +9,28 @@ La carte de workflow **« Send HTTPS Request »** permet aux utilisateurs d'envo
 ## Composants de la carte :
 
 1. **URL**
-   * **Description :** spécifie le point de terminaison où la requête HTTPS sera envoyée.
+   * **Descriptif :** spécifie le point de terminaison où la requête HTTPS sera envoyée.
    * **Détail :** saisissez l'URL complète de l'API ou du service web auquel se connecter.
-2. **Headers**
-   * **Description :** définit les en-têtes à inclure dans la requête HTTPS.
+2. **En-têtes**
+   * **Descriptif :** définit les en-têtes à inclure dans la requête HTTPS.
    * **Détail :** fournissez des **paires clé-valeur** au **format JSON valide** pour spécifier des en-têtes tels que des jetons d'authentification ou des types de contenu. Exemple : {"Authorization": "Bearer example\_value"}
-3. **Method**
-   * **Description :** spécifie la méthode HTTP à utiliser pour la requête.
-   * **Options :**
+3. **Méthode**
+   * **Descriptif :** spécifie la méthode HTTP à utiliser pour la requête.
+   * **Possibilités :**
      * **GET :** récupère des données depuis le point de terminaison.
      * **POST :** envoie des données au point de terminaison pour créer ou mettre à jour des ressources.
      * **PUT :** met à jour des ressources existantes au point de terminaison.
-     * **DELETE :** supprime des ressources du point de terminaison.
-4. **Parameters**
-   * **Description :** paires clé-valeur à inclure dans l'URL en tant que paramètres de requête.
+     * **DELETE :** supprime les ressources du point de terminaison.
+4. **Paramètres**
+   * **Descriptif :** paires clé-valeur à inclure dans l'URL en tant que paramètres de requête.
    * **Détail :** utilisez-les pour envoyer des filtres ou des données supplémentaires requis par le point de terminaison, au format JSON valide. Voir l'exemple pour Headers.
-5. **Data**
-   * **Description :** le corps de la requête HTTPS.
+5. **Données**
+   * **Descriptif :** le corps de la requête HTTPS.
    * **Détail :** fournissez la charge utile au format JSON valide. Voir l'exemple pour Headers.
 
 ## Fonctionnalité :
 
-* **Évaluation de la condition :** la carte n'envoie la requête HTTPS que si les sections **« Where »** et **« And »** sont évaluées comme vraies.&#x20;
+* **Évaluation de la condition :** la carte n'envoie la requête HTTPS que si les sections **« Quand »** et **« Et »** sont évaluées comme vraies.
   * Si l'une des conditions est fausse, la requête n'est pas envoyée.
 * **Exécution de la requête :**
   * Lorsque les conditions sont satisfaites, le système envoie la requête HTTPS avec les configurations spécifiées.
@@ -42,11 +42,11 @@ La carte de workflow **« Send HTTPS Request »** permet aux utilisateurs d'envo
 3. **Sélectionner la méthode HTTP :** choisissez la méthode appropriée (**GET**, **POST**, **PUT** ou **DELETE**) selon l'action à effectuer.
 4. **Ajouter les paramètres :** spécifiez tous les paramètres de requête requis par le point de terminaison.
 5. **Fournir la charge utile de données :** saisissez le corps de la requête au format requis (par ex. JSON) si nécessaire.
-6. **Configurer les conditions :** définissez les sections **« Where »** et **« And »** pour garantir que la requête n'est envoyée que lorsque des conditions spécifiques sont satisfaites.
+6. **Configurer les conditions :** définissez les sections **« Quand »** et **« Et »** pour garantir que la requête n'est envoyée que lorsque des conditions spécifiques sont satisfaites.
 
 ## Exemple de carte :
 
-<figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-5349352840a3-fr.png" alt="Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects." width="563"><figcaption><p>Champs de la carte dans la version affichée. Les champs ne sont pas encore renseignés. Certains libellés de cette version de la carte ont encore une traduction incomplète ou incorrecte dans l’interface. Les explications de cette page emploient les termes corrects.</p></figcaption></figure>
 
 ## Conclusion :
 

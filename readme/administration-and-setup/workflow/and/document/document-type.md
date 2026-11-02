@@ -1,6 +1,8 @@
-# Document Type
+# Type de document
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1-fr-fr.png" alt="Type de document, Version 1" width="634"><figcaption><p>Version 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-fr-fr.png" alt="Type de document, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## Objectif :
 
@@ -8,13 +10,13 @@ Cette carte de workflow est conçue pour évaluer si un document correspond à u
 
 ## Composants de la carte :
 
-1. **Operator**
-   * **Description** : définit si le document doit ou non être du type spécifié.
-   * **Options** :
+1. **Opérateur**
+   * **Descriptif** : définit si le document doit ou non être du type spécifié.
+   * **Possibilités** :
      * **Is** : le document doit correspondre au type spécifié pour que la condition soit vraie.
-     * **Is Not** : le document ne doit pas correspondre au type spécifié pour que la condition soit vraie.
-2. **Type**
-   * **Description** : spécifie le type de document à comparer.
+     * **N'est-ce pas** : le document ne doit pas correspondre au type spécifié pour que la condition soit vraie.
+2. **Tapez**
+   * **Descriptif** : spécifie le type de document à comparer.
    * **Détail** : il inclut divers types de documents tels que « Invoice », « Purchase Order », etc., en fonction desquels la condition (is/is not) sera évaluée.
 
 ## Fonctionnalité :
@@ -31,3 +33,15 @@ Cette carte de workflow est conçue pour évaluer si un document correspond à u
 ## Conclusion :
 
 La carte de workflow « Document Type Comparison » est essentielle pour garantir que les workflows se poursuivent en fonction du type de document traité. En comparant le type de document, elle aide les organisations à automatiser les tâches d'acheminement et de traitement des documents, garantissant que les documents sont traités de manière appropriée selon leur type.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Exemple pratique
+
+**Quand utiliser :** Exécutez une vérification spécifique à la facture.
+
+**Configuration :** Sélectionnez le type de document `Invoice` et l'opérateur égal.
+
+**Résultat attendu et contre-exemple :** Une facture est acceptée. Un avoir ne remplit pas cette condition.
+
+Il s’agit d’une configuration illustrative et du résultat attendu. Utilisez les champs, utilisateurs et groupes configurés dans votre organisation de test ; cela ne veut pas dire que cet exemple a été exécuté.

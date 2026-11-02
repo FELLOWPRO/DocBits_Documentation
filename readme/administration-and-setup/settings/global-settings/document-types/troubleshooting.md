@@ -1,7 +1,7 @@
 # Dépannage
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
+DocBits Tutoriel sur les tickets d'assistance : signaler des bogues, joindre des fichiers et obtenir de l'aide plus rapidement
 {% endembed %}
 
 ## Le dépannage de la configuration des types de documents dans DocBits peut être complexe, car divers facteurs peuvent affecter la reconnaissance et l'extraction des données.&#x20;

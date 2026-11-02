@@ -1,106 +1,64 @@
 ---
-description: Doc Scan offers very easy Document creation via your local Scanner.
+description: Créez des documents dans DocBits avec un scanner local et Doc Scan.
 ---
 
 # Doc Scan
 
-### Download Scanner Software
+## Télécharger et installer le logiciel du scanner
 
-Click Scan Document on the DocBits Dashboard
+Dans le tableau de bord DocBits, cliquez sur Scan Document.
 
-<figure><img src="../../../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (203).png" alt="Bouton Scan Document dans le tableau de bord DocBits"><figcaption></figcaption></figure>
 
-As your scanner is not installed yet, you’ll get the following message
+Si le logiciel local du scanner n’est pas installé, DocBits affiche une invitation à le télécharger. Choisissez le téléchargement correspondant à votre système d’exploitation.
 
-<figure><img src="../../../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (204).png" alt="Invitation à télécharger le logiciel local du scanner"><figcaption></figcaption></figure>
 
-Depending on which operating system you use, press the appropriate button to download.
+Ouvrez le fichier d’installation téléchargé. Le programme d’installation illustré est destiné à macOS ; suivez les instructions de votre système d’exploitation.
 
-Open the installation file and you will see the following
+<figure><img src="../../../../.gitbook/assets/image (205).png" alt="Démarrage du programme d’installation du logiciel du scanner"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
+Dans le programme d’installation illustré, cliquez sur Continue, acceptez la licence du logiciel avec Agree et poursuivez. Vérifiez la destination et l’espace requis, puis cliquez sur Install. Les 33,6 Mo affichés correspondent à cette version du programme d’installation ; l’espace requis peut varier selon la version.
 
-Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software.
+Une fois l’installation terminée, fermez le programme d’installation.
 
-Installing this software requires 33,6 MB of space. You can change the install location before clicking `Install` in the next step.
+<figure><img src="../../../../.gitbook/assets/image (206).png" alt="Installation du logiciel du scanner terminée"><figcaption></figcaption></figure>
 
-As soon as the following screen is displayed you’re almost done.
+Ouvrez https://local.polydocs.io:12500/ dans votre navigateur pour tester le service local. Si le navigateur ne parvient pas à le joindre et que vous utilisez une FRITZ!Box, vérifiez les paramètres de protection contre le DNS rebinding décrits ci-dessous.
 
-<figure><img src="../../../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (207).png" alt="Erreur du navigateur lors du test du service local du scanner"><figcaption></figcaption></figure>
 
-Open web browser to test if the app works by entering: https://local.polydocs.io:12500/ If you see this message on the screen, you must first configure some settings in your FritzBox network settings if you are using one.
+Lorsque la page du service local apparaît, cliquez sur DocBits pour ouvrir DocBits.
 
-<figure><img src="../../../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (208).png" alt="Page du service local du scanner après une connexion réussie"><figcaption></figcaption></figure>
 
-When you see this screen you are ready to click on DocBits.
+Connectez-vous sur la page de connexion DocBits pour accéder à votre tableau de bord.
 
-<figure><img src="../../../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (209).png" alt="Page de connexion DocBits ouverte depuis le service local"><figcaption></figcaption></figure>
 
-You will be redirected to the DocBits login page where you can enter your credentials to access your dashboard.
+Activez Doc Scan dans les paramètres, sous Modules.
 
-<figure><img src="../../../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (210).png" alt="Paramètre du module Doc Scan"><figcaption></figcaption></figure>
 
-All you have to do now is activate Doc Scan in the settings under Modules.
+## Paramètres réseau de la FRITZ!Box
 
-<figure><img src="../../../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+Si https://local.polydocs.io:12500/ est inaccessible parce qu’une FRITZ!Box bloque les réponses DNS contenant des adresses privées, le navigateur peut signaler un délai DNS dépassé. La FRITZ!Box utilise cette protection contre le DNS rebinding. Ajoutez une exception de nom d’hôte pour ce service local :
 
-### FritzBox network settings
+1. Dans l’interface allemande de la FRITZ!Box, ouvrez Heimnetz (réseau domestique), puis Netzwerk (réseau).
+2. Ouvrez l’onglet Netzwerkeinstellungen (paramètres réseau).
+3. Sous DNS-Rebind-Schutz (protection contre le DNS rebinding), ajoutez local.polydocs.io aux exceptions de noms d’hôtes.
+4. Cliquez sur Übernehmen (appliquer) et testez à nouveau le service local.
 
-If you get the following error after installing and calling up the url https://local.polydocs.io:12500/, here are the reasons:– DNS resolution of private IP addresses not possible.– DNS resolution for domain names that refer to private IP addresses in the FRITZ!Box home network is not possible via the FRITZ!Box. This means that server services in the FRITZ!Box home network cannot be accessed via the domain name.\
-You may see one of the following error messages:“DNS timed out”“DNS request timed out”\
-\*Caused\*\
-For security reasons, the FRITZ!Box suppresses DNS responses that refer to IP addresses in your own home network. This is a security feature of the FRITZ!Box to protect against so-called DNS rebinding attacks.\
-If you use a FritzBox, you must first make the following settings in the FritzBox menu:\
+## Désinstaller Doc2Scan Service Manager
 
+Pour désinstaller Doc2Scan Manager sous macOS, exécutez :
 
-1. In the FRITZ!Box user interface, click on \`Heimnetz\`.
-2. \`Heimnetz\` Click in the menu \`Netzwerk\`.
-3. Click on the tab \`Netzwerkeinstellungen\`.
-
-\
-In the Hostname exceptions \`DNS-Rebind-Schutz section\`, enter local.polydocs.io for which DNS rebind protection should not apply. Confirm with .\`Übernehmen\`
-
-### Uninstall Doc2Scan Service Manager
-
-Run the following command to uninstall Doc2Scan Manager:
-
-```javascript
+```bash
 sudo bash /Library/doc2scan/uninstall.sh
 ```
 
-Copy
+## Compatibilité des scanners
 
-### Scanner Compatability
+sane-airscan est un backend SANE pour Apple AirScan/eSCL et Microsoft WSD (WS-Scan, Web Services for Devices). Il s’agit de protocoles de numérisation en réseau.
 
-**Legend:**
-
-&#x20;
-
-* Yes – device works perfectly
-* No – protocol not supported by device
-* ? – device works with sane-airscan, but protocol is not reported by user
-* Space – author has no information on this mode/device combination
-
-&#x20;
-
-**Definitions:**
-
-* eSCL stands for Airscan is a SANE WebScan frontend that supports Apple’s AirScan protocol. The scanners are automatically detected and published via mDNS.
-* WSD stands for “Web Services on Devices” and is a network communication protocol used for printer discovery and management over a local area network. In WSD mode, printers can be automatically discovered and added to a computer system without requiring manual configuration or installing additional printer drivers. It enables easy setup and printing to compatible printers over a network. WSD mode is commonly used in Windows operating systems to discover and connect printers on the network.
-
-
-
-| Device                            | eSCL mode | WSD mode |
-| --------------------------------- | --------- | -------- |
-| Brother ADS-2700W                 | No        | Yes      |
-| Brother DCP-7055W                 | No        | Yes      |
-| Brother DCP-9020CDW               | No        | Yes      |
-| Brother DCP-J552DW                | No        | Yes      |
-| Brother DCP-L2540DW               | No        | Yes      |
-| Brother DCP-L2550DN / DCP-L2550DW | Yes       |          |
-| Brother HL-L2380DW series         | No        | Yes      |
-| Brother HL-L2395DW series         | Yes       |          |
-| Brother MFC-7360N                 | No        | Yes      |
-| Brother MFC-8710DW                | No        | Yes      |
-
-Showing 1 to 10 of 151 entriesPreviousNext
+Consultez les [informations de compatibilité maintenues par sane-airscan](https://github.com/alexpevzner/sane-airscan) pour connaître les appareils et protocoles dont la prise en charge a été signalée. La disponibilité d’un protocole ou un retour concernant sane-airscan ne garantit pas que toutes les fonctions de l’appareil fonctionnent dans Doc Scan. Testez votre scanner avec le parcours Doc Scan dont vous avez besoin.

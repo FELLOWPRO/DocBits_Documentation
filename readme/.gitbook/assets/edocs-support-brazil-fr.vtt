@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.047
+Le Brésil possède des entrées NF-e, NFC-e,
+CT-e, NFS-e et SPED NFS-e. NFS-e comprend
+
+formats_02
+00:00:07.047 --> 00:00:13.358
+les versions 1.00 et 2.00 à 2.04 ; SPED
+comprend 1.00.02 et 1.01. Il s’agit de
+
+formats_03
+00:00:13.358 --> 00:00:19.750
+familles de documents différentes. Une
+version NFS-e configurée ne certifie pas
+
+formats_04
+00:00:19.750 --> 00:00:25.172
+chaque schéma municipal ni chaque
+structure nationale de facture de
+
+formats_05
+00:00:25.172 --> 00:00:25.900
+services.
+
+workflow_01
+00:00:26.650 --> 00:00:32.420
+Ouvrez E-Doc pour le format détecté.
+Comparez Transformation, Preview et
+
+workflow_02
+00:00:32.420 --> 00:00:38.330
+Extraction Paths. Les règles Custom ont
+priorité. Enregistrer un brouillon ne
+
+workflow_03
+00:00:38.330 --> 00:00:39.400
+l’active pas.
+
+accept_01
+00:00:40.150 --> 00:00:45.131
+Testez une facture et un avoir lorsque
+cela s’applique. Vérifiez les montants,
+
+accept_02
+00:00:45.131 --> 00:00:50.808
+les parties et le type de document
+exporté. L’analyse du fichier ne prouve ni
+
+accept_03
+00:00:50.808 --> 00:00:54.000
+la validation fiscale ni la transmission
+réseau.
+

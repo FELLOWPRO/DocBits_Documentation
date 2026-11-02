@@ -1,5 +1,22 @@
 # Contabilidade automática com Infor LN
 
+## Do registro de dados mestre LN à classificação contábil verificada
+
+<figure><img src="../../../.gitbook/assets/process-accounting-pt-20261028.png" alt="Dados mestre financeiros para Auto Accounting: Caminho de dados e pontos de verificação para uma integração Infor LN."><figcaption><p>Caminho de dados e pontos de verificação para uma integração Infor LN. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
+
+Este guia cobre o fornecimento de dados mestres financeiros para uma integração LN. Selecionar **LN** ou ativar **Auto Accounting** não substitui o fornecimento dos dados ou a verificação do resultado da classificação contábil.
+
+| Transferência | O que você deve provar |
+| --- | --- |
+| **LN → Publicação BOD** | Corrija os dados da empresa e da conta ou dimensão necessária; Primeiro conte ou simule a seleção. |
+| **BOD → ION** | Correspondência de versão, origem, filtros e mapeamento do documento; rastreie o identificador de teste em ION OneView. |
+| **ION → DocBits** | Recebendo resposta do endpoint, organização correta e registro aceito. Um fluxo ativado por si só não é suficiente. |
+| **DocBits → Resultado da classificação contábil** | Após a ativação aprovada, use documentos de teste representativos para verificar se as contas e as dimensões estão corretas para o processo comercial. |
+
+**Exemplo de rastreabilidade:** use um identificador de teste não confidencial de um conjunto de dados de teste aprovado. Encontre o mesmo identificador na origem BOD, em ION e nos logs de recepção DocBits. Isso ajuda a localizar um mapeamento ausente em uma transferência específica, em vez de alterar repetidamente a chave.
+
+A exportação subsequente e o lançamento ERP devem ser verificados separadamente. As imagens existentes neste guia mostram os controles DocBits; eles não provam que uma transferência LN foi realizada. A seção a seguir descreve a preparação e a verificação completa pelos administradores responsáveis. Para a transferência técnica, consulte [Exportar de DocBits](../../exporting-in-docbits/README.md).
+
 Utilize este guia quando um administrador do Infor LN pretender que o DocBits utilize dados mestres financeiros importados para a contabilidade automática. A página antiga mostrava 48 ecrãs de um determinado ambiente Infor. Os nomes dos pontos de ligação, os mapeamentos, as credenciais e os endereços de endpoint desse ambiente não constituem uma configuração reutilizável.
 
 ## Localizar a opção no DocBits

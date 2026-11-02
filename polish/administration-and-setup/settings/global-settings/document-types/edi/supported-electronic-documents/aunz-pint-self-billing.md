@@ -30,7 +30,7 @@ AUNZ PINT Self-Billing to wariant self-billing modelu fakturowania Peppol Intern
 
 ## Domyślny podgląd
 
-<figure><img src="aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT Self-Billing w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT Self-Billing</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Podgląd faktury AUNZ PINT Self-Billing w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury AUNZ PINT Self-Billing</p></figcaption></figure>
 
 ## Mapowanie pól
 

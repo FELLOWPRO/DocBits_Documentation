@@ -1,6 +1,6 @@
 # Modul aktiv
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-405c9bb87c62-de.png" alt="Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt." width="563"><figcaption><p>Kartenfelder in der angezeigten Version. Die Platzhalter sind noch nicht ausgefüllt.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_module_is_isnot_active_v2-de-de.png" alt="Modul aktiv, Version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
 ## **Zweck:**
 
@@ -20,6 +20,30 @@ Diese Karte ist besonders nützlich für Administratoren oder Systemverantwortli
 
 ## **Beispiel-Szenario**
 
-* Ein Benutzer konfiguriert die Karte so, dass sie prüft, ob das Modul **„Dokumentenbearbeitung“** **aktiv ist.** Ist das Modul aktiv, wird der Workflow fortgesetzt und löst automatisierte Aufgaben zur Dokumentverarbeitung aus. Ist das Modul inaktiv, wird der Workflow angehalten, um unnötige Aktionen zu verhindern.
+* Ein Benutzer konfiguriert die Karte so, dass sie prüft, ob das **Bestellmodul (`PO_DASHBOARD`)** **aktiv ist.** Ist das Modul aktiv, wird der Workflow fortgesetzt und löst automatisierte Aufgaben zur Dokumentverarbeitung aus. Ist das Modul inaktiv, ist diese Bedingung nicht erfüllt; die Karte aktiviert es nicht.
 
 Durch die Verwendung der Karte "Module Active Check" können Organisationen die Zuverlässigkeit von Workflows verbessern, Fehler durch inaktive Module vermeiden und sicherstellen, dass Prozesse mit der Systemkonfiguration übereinstimmen.
+
+<!-- workflow-card-practical-example-20261021 -->
+
+## Praxisbeispiel
+
+**Wann nutzen:** Eine Regel nur verwenden, wenn das benötigte Modul aktiv ist.
+
+**Wo:** Standard-Workflow-Designer → Und → Logik.
+
+**Konfiguration:** Wählen Sie in Version 2 das angebotene Bestellmodul (`PO_DASHBOARD`) und den Operator „ist“ (`is`).
+
+**Erwartetes Ergebnis und Gegenbeispiel:** Die Bedingung ist bei aktivem Modul erfüllt und bei inaktivem Modul nicht erfüllt. Die Karte aktiviert das Modul nicht. Prüfen Sie vor dem Einsatz den tatsächlichen Modulzustand und die passende Berechtigung.
+
+Die Beispiele beschreiben erwartete Ergebnisse. Verwenden Sie die in Ihrer Organisation tatsächlich konfigurierten Felder und angebotenen Werte.
+
+## Admin-Beispielvideo
+
+Wann ich die Verfügbarkeit eines Moduls als Bedingung prüfe. Die Karte prüft den Modulzustand; sie aktiviert das Modul nicht. Die Beispiele zeigen erwartete Ergebnisse.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-module-active-admin/v1/de.mp4" %}
+
+[Video mit deutschen Untertiteln öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-module-active-admin/v1/de-theme-v4.html)
+
+[Transkript lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-card-module-active-admin/v1/de.txt)

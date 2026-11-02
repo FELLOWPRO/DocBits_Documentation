@@ -1,6 +1,6 @@
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-21-fr-20261023.png" alt="Comparaison des bons de commande Fournisseur sur la facture Opérateur Fournisseur sur le bon de commande" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

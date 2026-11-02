@@ -1,4 +1,4 @@
-# REST API Lookup Configurations
+# Opzoekconfiguraties via REST-API
 
 ## Tabel `public.rest_api_lookup_configurations`
 

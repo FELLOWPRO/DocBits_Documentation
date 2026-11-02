@@ -35,5 +35,5 @@ Factur-X 1.0.05 jest odpowiednikiem ZUGFeRD 2.1. Wydana w 2020 roku, była pierw
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

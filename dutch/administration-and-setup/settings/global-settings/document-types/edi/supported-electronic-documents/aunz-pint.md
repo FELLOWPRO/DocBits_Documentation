@@ -28,7 +28,7 @@ AUNZ PINT is de Australische/Nieuw-Zeelandse implementatie van het Peppol Intern
 
 ## Standaard voorbeeld
 
-<figure><img src="aunz-pint-preview.png" alt="AUNZ PINT factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="AUNZ PINT factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een AUNZ PINT factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 

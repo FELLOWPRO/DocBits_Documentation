@@ -30,7 +30,7 @@ PINT A-NZ (Peppol International Model for Australia-New Zealand) is de gelokalis
 
 ## Standaard voorbeeld
 
-<figure><img src="aunz-pint-preview.png" alt="PINT A-NZ factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een PINT A-NZ factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="PINT A-NZ factuur voorbeeld in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een PINT A-NZ factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 
@@ -96,5 +96,5 @@ Beide worden geclassificeerd onder het elektronische documenttype `PINT A-NZ`.
 ## Zie ook
 
 - [AUNZ PINT](aunz-pint.md) — Overzicht en A-NZ-specifieke functies
-- [AUNZ PINT Self-Billing](aunz-pint-self-billing.md) — Self-billing-variant
+- [AUNZ PINT Selfbilling](aunz-pint-self-billing.md) — Selfbilling-variant
 - [Ondersteunde elektronische documenten](./)

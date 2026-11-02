@@ -1,4 +1,4 @@
-# Group cache
+# Pamięć podręczna grup
 
 ## Tabela `public.group_cache`
 
@@ -9,8 +9,8 @@
 * `name`: internal
 * `description`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 * `only_assigned_documents`: boolean
 

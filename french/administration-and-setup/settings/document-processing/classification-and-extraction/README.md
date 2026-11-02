@@ -1,5 +1,22 @@
 # Classification et extraction
 
+## Quel paramètre fonctionne à quelle étape du processus ?
+
+<figure><img src="../../../../.gitbook/assets/process-extraction-fr-20261028.png" alt="Du fichier aux données reconnues: Affichez séparément le type de document, la source de données et le chemin d&#x27;extraction."><figcaption><p>Affichez séparément le type de document, la source de données et le chemin d&#x27;extraction. Le diagramme est schématique ; les paramètres actifs de votre organisation déterminent le comportement réel.</p></figcaption></figure>
+
+La classification répond à la question **« De quel type de document s'agit-il ?**. L'extraction répond **« Quelles valeurs contient-il ?**. Les paramètres de cette page affectent différents points de traitement et ne doivent pas être compris comme un seul commutateur AI.
+
+1. **Préparer la saisie :** Pour PDFs, le texte existant ou OCR peut être utilisé ; les documents électroniques pris en charge peuvent fournir des valeurs structurées. Une division activée peut séparer un document entrant en fonction du code-barres ou des critères QR configurés.
+2. **Déterminer le type de document :** Les règles et modèles de classification attribuent aux documents un type et, si nécessaire, un sous-type. Cette affectation doit être distinguée de l'extraction ultérieure de champs et de tables.
+3. **Extraire les valeurs :** Les tables peuvent suivre différents chemins en fonction de la configuration et des règles enregistrées applicables. Les champs d'en-tête ont leurs propres indicateurs de source. Le modèle d’IA sélectionné n’explique donc pas à lui seul chaque valeur de ligne ou de champ.
+4. **Tracez le résultat :** Dans l'écran de validation, vérifiez quel onglet du tableau contient les lignes et quel indicateur de source possède un champ d'en-tête. Si une étape de traitement est manquante, lisez les journaux de documents avant de modifier les paramètres.
+
+### Distinguer le chemin des règles et le chemin de l'IA
+
+Des règles de table enregistrées appropriées peuvent déterminer l'extraction de table pour le modèle ou le fournisseur concerné. Sans règles adaptées, le chemin AI peut être utilisé lorsque l’extraction de table AI est activée. Les colonnes individuelles peuvent avoir leurs propres options d'IA. Une source AI pour un champ d’en-tête ne signifie pas que la table entière provient de l’AI.
+
+Le guide de diagnostic [Quel chemin d’extraction a été utilisé ?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) explique les onglets, les identifiants de source et les journaux. La page [Modèle d'IA](ai-model.md) explique la norme de l'organisation et les remplacements liés aux modèles.
+
 <figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt=""><figcaption><p>Paramètres de classification et d'extraction</p></figcaption></figure>
 
 ## Aperçu
@@ -102,7 +119,7 @@ Plus d'informations sur ce paramètre [ici](auto-extract-tax-code.md).
 
 **Règles d'extraction enregistrées (Administrateur uniquement) :** Seuls les administrateurs peuvent cliquer sur *Save Rules* pendant l'entraînement des tables. Activez cette option lorsque des utilisateurs enregistrent régulièrement des règles qui perturbent l'extraction d'un fournisseur.
 
-**Extraire les champs cachés :** Les champs marqués comme masqués dans les paramètres de champ sont également extraits. Utile lorsqu'une valeur est nécessaire pour une règle ou un export, mais ne doit pas être affichée sur l'écran de validation.
+**Modèle AI :** définit le modèle d'organisation pour l'extraction de champs et de tables. Le menu propose Full, Fast, Nexus, Nexus Flash, Auto et Auto Nexus. Vérifiez la disponibilité, la qualité, la durée d’exécution et le coût avec des documents représentatifs. Un niveau n’est pas toujours le plus précis ou le plus rapide pour chaque document. Les remplacements de modèles peuvent remplacer le paramètre d'organisation. Le tableau sous le sélecteur montre :
 
 **Modèle d'IA :** Sélectionne le niveau d'IA utilisé pour l'extraction de table. Six options sont disponibles : **Full** (précision maximale, le plus lent, 2 jetons par document), **Fast** (par défaut ; 1 jeton par document), **Nexus** et **Nexus Flash** (famille de modèles alternative, en option), ainsi que **Auto** et **Auto Nexus**, où DocBits décide par document de la puissance de modèle nécessaire. La table sous le sélecteur affiche :
 
@@ -114,11 +131,11 @@ Ce paramètre est expliqué en détail [ici](ai-model.md).
 
 #### Pourquoi la table est-elle différente selon le fournisseur ?
 
-Tout ce que DocBits apprend sur une table est stocké **par fournisseur** :
+Le traitement des tables dépend des règles et paramètres enregistrés dans le contexte du fournisseur ou du modèle concerné :
 
-* **Règles enregistrées** (entraînement de table) : position de la table et correspondance de ses colonnes sur la mise en page de ce fournisseur.
-* **Étiquettes de table IA et règles de formatage** : indications que l'utilisateur a enregistrées pour la table IA de ce fournisseur.
-* **Modèle d'IA spécifique au fournisseur** : le niveau choisi pour ce fournisseur sous *More settings* sur l'écran de validation.
+* **Règles enregistrées** (entraînement de tableau) : position du tableau et mappage de ses colonnes sur la mise en page de ce fournisseur.
+* **Étiquettes de tableau AI et règles de formatage** : indications que l'utilisateur a enregistrées pour le tableau AI de ce fournisseur.
+* **Modèle d'IA spécifique au modèle :** La sélection effectuée sur l'écran de validation est enregistrée par organisation et par modèle d'extraction actuel. Cela ne modifie pas automatiquement tous les modèles du même fournisseur. Sans remplacement, le paramètre d’organisation applicable est utilisé.
 
 Ainsi, le fournisseur A avec des règles enregistrées affiche une table déterministe dans l'onglet *Extracted table* de l'écran de validation, tandis que le fournisseur B sans règles reçoit la *AI Extracted table*. Pour que le fournisseur B se comporte comme A, entraînez une fois la table de B. Pour réinitialiser un fournisseur, supprimez ses règles sur l'écran de validation ou réinitialisez ses données d'entraînement dans la table Modèle d'IA.
 
@@ -154,7 +171,7 @@ Remarques :
 * Un `AI_MODEL` non défini signifie **Fast**.
 * Un `TABLE_EXTRACTION_VISION_MODE` non défini est résolu à partir de l'ancien commutateur `TABLE_EXTRACTION_USE_VISION` : `true` donne `vision`, toute autre valeur donne `off`.
 * La modification d'une clé prend effet pour les documents traités ensuite. Redémarrez un document pour le réextraire avec le nouveau paramètre.
-* Les choix par fournisseur (E-Text, modèle d'IA, règles enregistrées) ne sont pas des préférences d'organisation ; ils se règlent sur l'écran de validation sous *More settings* pour un document de ce fournisseur.
+* Les remplacements de modèles diffèrent des préférences de l'organisation. Le guide AI Model explique la portée exacte.
 
 ### Document électronique
 

@@ -170,11 +170,11 @@ De waarde moet een getal zijn tussen **Minimum** en **Maximaal** (beide inbegrep
 
 Vergelijkt de waarde van een veld met een ander veld, met **vandaag** of met een vaste waarde, met *gelijk aan*, *niet gelijk aan*, *groter dan*, *kleiner dan*, *op of na (≥)* of *op of vóór (≤)*. Getallen worden als getallen vergeleken en datums als datums.
 
-* Due Date **op of na (≥)** Invoice Date
+* Vervaldatum **op of na (≥)** Factuurdatum
 * Invoice Date **op of vóór (≤)** vandaag — geen facturen met een datum in de toekomst
 * Discount **kleiner dan** 100
 
-#### Allowed values — uit een vaste lijst
+#### Toegestane waarden — uit een vaste lijst
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="een Allowed values-controle"><figcaption><p>Allowed values: één waarde per regel, eventueel zonder onderscheid tussen hoofd- en kleine letters</p></figcaption></figure>
 
@@ -224,6 +224,18 @@ Test elke nieuwe regel op minstens één document dat moet mislukken, één dat 
 * Waarschuwingen worden afzonderlijk verzameld en verbergen nooit een fout.
 * Als een regel niet kan worden geëvalueerd — bijvoorbeeld door een deling door nul in een formule — wordt hij overgeslagen. Een kapotte regel markeert een document nooit per ongeluk als ongeldig.
 
+## Logboeken <a id="logs"></a>
+
+Elke regel kan zijn uitvoeringen laten vastleggen. Open daarvoor de pagina **Logboeken van regeluitvoering** van het documenttype: de kop noemt het documenttype en het vernieuwingspictogram laadt de lijst opnieuw.
+
+Met **Zoek via** kiest u waarop u zoekt (standaard **Regelsleutel**); de waarde typt u in het veld ernaast. Bij zoeken op document is **Regeltype** verplicht. Verfijn het resultaat met **Resultaat**, **Uitgevoerd**, **Vanaf datum** en **Tot nu toe**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-nl.png" alt="De logboeken van regeluitvoering"><figcaption><p>De pagina Logboeken van regeluitvoering: boven de filters, daaronder een rij per uitvoering. Zolang u niet hebt gezocht, zegt de tabel wat u moet invoeren.</p></figcaption></figure>
+
+Open een regel voor de details, waaronder het **conditiespoor**: elke regel van *Applies when* met de verwachte waarde, de werkelijke waarde van het document en of die klopte. Zie [Condities in detail](rule-conditions-applies-when.md).
+
+Dezelfde pagina toont ook de logboeken van de transformatie- en layoutselectieregels.
+
 ## Recepten
 
 Kopieer deze regels als uitgangspunt. De veld- en kolomsleutels zijn die van het standaarddocumenttype **Factuur**; pas ze aan uw documenttypen aan.
@@ -238,13 +250,13 @@ Header field · Error · koppelen aan *Total Amount* · altijd · **Formule** `h
 Whole table · Error · koppelen aan *Total Net Amount* · altijd · **Formule** `sum(row.NET_AMOUNT) == header.total_net_amount`, tolerantie `0.05` · Bericht "De nettobedragen van de regels tellen op tot {actual}, maar het nettobedrag van de factuur is {expected}." · Code `LINES_HEADER_MISMATCH`.
 
 **4. Hoeveelheid moet positief zijn op artikelregels**
-Table line · Error · tabel `INVOICE_TABLE`, kolom `QUANTITY` · Applies when *row.ITEM_NUMBER* is not empty · **Bereik** minimum `0.01` · Code `OUT_OF_RANGE`.
+Tabelregel · Fout · tabel `INVOICE_TABLE`, kolom `QUANTITY` · Van toepassing als *row.ITEM_NUMBER* niet leeg is · **Bereik** minimum `0.01` · Code `OUT_OF_RANGE`.
 
 **5. Regelbedrag = hoeveelheid × eenheidsprijs**
 Table line · Warning · kolom `NET_AMOUNT` · altijd · **Formule** `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`, tolerantie `0.01`.
 
 **6. Factuurnummerformaat van één leverancier**
-Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Patroon** `^INV-\d{6}$`.
+Kopveld · Fout · *Factuurnummer* · Van toepassing als *Leverancier ID* *20723* is · **Patroon** `^INV-\d{6}$`.
 
 **7. Vervaldatum niet vóór factuurdatum**
 Header field · Error · *Due Date* · altijd · **Vergelijk velden** Due Date *op of na (≥)* Invoice Date · Code `DATE_ORDER`.
@@ -258,7 +270,7 @@ Header field · **Waarschuwing** · *Currency* · altijd · **Lijst met waarden*
 **10. Inkooporder verplicht boven 5.000**
 Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Verplicht**.
 
-## Best practices
+## Aanbevolen werkwijzen
 
 * **Begin als waarschuwing.** Sla een nieuwe regel op met de ernst **Waarschuwing**, volg haar een paar dagen (Test rule, logboeken) en zet haar daarna om naar **Fout**.
 * **Eén regel, één bericht.** Meerdere kleine regels met duidelijke berichten zijn gemakkelijker te begrijpen dan één grote formule.

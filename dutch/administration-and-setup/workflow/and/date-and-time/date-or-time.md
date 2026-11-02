@@ -1,25 +1,41 @@
 # Datum of tijd
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-aab11d0fe7ed-nl.png" alt="Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld." width="563"><figcaption><p>Kaartvelden in de getoonde versie. De velden zijn nog niet ingevuld.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_time_is_isnot_between_v2-nl-nl.png" alt="Datum of tijd, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
 
-## **Doel:**
+## Doel:
 
-Deze DocBits-kaart controleert of een opgegeven datum-/tijdwaarde binnen een gedefinieerd bereik valt. Hij maakt het mogelijk dat workflows doorgaan of stoppen op basis van de vraag of aan de voorwaarde wordt voldaan, waardoor hij geschikt is voor tijdgevoelige bewerkingen of planningsworkflows.
+Deze workflowkaart controleert of de huidige datum en tijd binnen of buiten een op de kaart ingesteld tijdvenster liggen. De kaart kan worden gebruikt om stappen te beperken tot bepaalde uren, bijvoorbeeld tot werktijden of een gepland onderhoudsvenster.
 
-## **Functionaliteit:**
+## Onderdelen van de kaart:
 
-* **Datum-/tijdvalidatie:** Deze kaart evalueert of een bepaalde datum/tijd binnen een opgegeven bereik valt met behulp van de volgende voorwaarden:
-  * **Is:** Controleert of de datum/tijd binnen het gedefinieerde start- en eindbereik valt (inclusief).
-  * **Is niet:** Zorgt ervoor dat de datum/tijd buiten het gedefinieerde bereik valt.
+1. **Operator**
+   * **Opties:**
+     * **Is:** De huidige datum en tijd liggen binnen het tijdvenster.
+     * **Is niet:** De huidige datum en tijd liggen buiten het tijdvenster.
+2. **Eerste datum/tijd**
+   * **Beschrijving:** Het ene uiteinde van het tijdvenster, als datum en tijd of alleen als tijd.
+3. **Tweede datum/tijd**
+   * **Beschrijving:** Het andere uiteinde van het tijdvenster.
 
-**Datum-/tijdbereik:** Gebruikers geven de start- en einddatum-/tijdwaarden op om het bereik voor vergelijking te definiëren.
+## Functionaliteit:
 
-## **Gebruik:**
+* **Voorwaarde-evaluatie:** Wanneer de workflow de kaart bereikt, neemt de kaart de huidige datum en tijd in UTC en controleert of die tussen de twee waarden op de kaart liggen. De vroegste waarde wordt als begin gebruikt, dus de volgorde van de twee velden maakt niet uit.
+  * Een waarde met alleen een tijd (bijvoorbeeld `09:00`) wordt gebruikt met de datum van vandaag, zodat het tijdvenster zich elke dag herhaalt.
+  * Begin en einde horen bij het tijdvenster: precies op de begin- of eindtijd is **Is** waar.
+  * Een tijdvenster over middernacht kan alleen met tijden worden ingevoerd, bijvoorbeeld `22:00` tot `04:00`. De kaart controleert dan elke dag op de tijd van 22:00 tot 04:00, inclusief de exacte begin- en eindtijd.
+  * Met volledige datums op twee verschillende dagen (bijvoorbeeld `2026-11-01 22:00` tot `2026-11-02 04:00`) controleert de kaart de hele periode van het eerste tot het tweede tijdstip, inclusief begin en einde.
+* **Actie-uitvoering:**
+  * **True-voorwaarde:**\
+    Als aan de voorwaarde is voldaan, gaat de workflow verder met de volgende kaarten.
+  * **False-voorwaarde:**\
+    Als er niet aan is voldaan, stopt de workflow met een niet voldane voorwaarde.
+* **Ontbrekende gegevens:** Als een van de twee waarden op de kaart ontbreekt, evalueert de kaart de voorwaarde niet en meldt ze de ontbrekende invoer in het workflowlogboek.
 
-Deze kaart is ideaal voor planning, nalevingscontroles of het valideren van tijdgebaseerde voorwaarden in workflows. Hij kan bijvoorbeeld worden gebruikt om ervoor te zorgen dat taken alleen tijdens vooraf gedefinieerde tijdvakken worden uitgevoerd of om deadlines te verifiëren.
+## Opzet en configuratie:
 
-## **Voorbeeldscenario:**
+* De kaart kan als And-voorwaarde worden toegevoegd vanuit de categorie **Datum en tijd**. Daarna worden de twee waarden en de operator ingesteld. Alle tijden horen in UTC te worden ingevoerd.
+* **Voorbeeld:** Met **Is**, `09:00` en `17:00` is aan de kaart voldaan wanneer de workflow op een willekeurige dag tussen 09:00 en 17:00 UTC wordt uitgevoerd.
 
-* Een gebruiker configureert de kaart om te controleren of de **indieningsdatum** van een factuur **ligt tussen** **"2024-11-01"** en **"2024-11-30"**. Als de indieningsdatum binnen dit bereik valt, gaat de workflow verder naar de betalingsverwerking. Zo niet, dan triggert de workflow een melding voor verdere beoordeling.
+## Conclusie:
 
-Door de kaart "Date/Time Range Validation" te gebruiken, kunnen organisaties nauwkeurige planning waarborgen, de naleving verbeteren en workflows stroomlijnen door zich te houden aan vooraf gedefinieerde tijdsbeperkingen.
+De workflowkaart "Date or Time" maakt van het tijdstip van de uitvoering een workflowvoorwaarde. Stappen kunnen worden beperkt tot vaste uren of één gepland tijdvenster zonder de workflow telkens te wijzigen.

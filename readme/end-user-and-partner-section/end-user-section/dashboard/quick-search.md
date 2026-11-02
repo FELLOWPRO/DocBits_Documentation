@@ -236,6 +236,7 @@ is just a shortcut for a query you could also type yourself:
 | 📅 **Today's inbox** | Imported today | `imported_on>=today()` |
 | 📋 **Pending validation** | Ready to be validated | `status=ready_for_validation` |
 | 🧾 **Electronic documents** | E-invoices (XML, ZUGFeRD, EDI) | `is_edoc=true` |
+| ⚠️ **Workflow limit reached** | A workflow reached the workflow execution limit and no longer runs | `workflow_limit_reached=true` |
 | ✅ **Full PO match** | Fully matched to a purchase order | `po_match_status=full_matched` |
 | ➗ **Partial PO match** | Partially matched to a purchase order | `po_match_status=partial_matched` |
 | 📉 **Under PO match** | Quantity or unit price under the purchase order | `po_match_status=under_matched` |
@@ -243,7 +244,7 @@ is just a shortcut for a query you could also type yourself:
 The three **PO match** filters and the fulltext fields require fulltext search
 to be enabled for your organisation.
 
-<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="The Smart Filters dropdown panel"><figcaption><p>The Smart Filters at the top of the Quick Search dropdown — one click applies the filter (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Full / Partial / Under PO match).</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="The Smart Filters dropdown panel"><figcaption><p>The Smart Filters at the top of the Quick Search dropdown — one click applies the filter (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Workflow limit reached, Full / Partial / Under PO match).</p></figcaption></figure>
 
 ---
 

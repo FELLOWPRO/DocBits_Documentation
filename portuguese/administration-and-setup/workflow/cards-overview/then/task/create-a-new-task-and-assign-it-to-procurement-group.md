@@ -1,6 +1,6 @@
 # Create a New Task and assign it to Procurement Group
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-05-pt-20261023.png" alt="Tarefa Crie um novo Tarefa/Notificação com o título: Título , descrição: Descrição de prioridade Prioridade e atribua-o ao grupo de aquisição para Nome do grupo . Notifique o grupo via e-mail Enviar e-mail ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

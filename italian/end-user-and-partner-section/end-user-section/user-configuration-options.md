@@ -10,10 +10,6 @@ Per configurare le tue impostazioni, fai clic sull'icona dell'utente situata nel
 
 **Lingua**
 
-{% embed url="https://youtu.be/h_knkUZkNyI" %}
-Come cambiare la lingua in DocBits (Tutorial sulle impostazioni utente)
-{% endembed %}
-
 * **Seleziona Lingua Preferita:** Scegli la tua lingua desiderata tra le opzioni disponibili.
 
 **Modalità scura**

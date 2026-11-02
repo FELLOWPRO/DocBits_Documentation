@@ -178,9 +178,9 @@ Het exportconfiguratiebestand is gestructureerd als een JSON-object dat meerdere
 
 • Actions:
 
-• Add Supplier Reference: AddSupplierRef
+• Leveranciersreferentie toevoegen: AddSupplierRef
 
-• Update Supplier Reference: AddSupplierRef
+• Leveranciersreferentie bijwerken: AddSupplierRef
 
 • Mapping Fields:
 

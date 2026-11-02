@@ -1,6 +1,6 @@
 # Assign document to User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-assignee-00-de-20261023.png" alt="Zugewiesener Benutzer Weisen Sie das Dokument dem Benutzer Benutzer zu." width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

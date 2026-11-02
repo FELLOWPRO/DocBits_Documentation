@@ -61,7 +61,7 @@ Back-upschema: Dagelijkse, wekelijkse, driemaandelijkse en jaarlijkse back-ups.
 
 **Antwoord:** Twee datacentregio's beschikbaar:
 - **Frankfurt, Duitsland** — voor alle EU-klanten
-- **New York, USA** — alleen voor Amerikaanse klanten
+- **San Francisco, USA** — alleen voor Amerikaanse klanten
 
 Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is geen optieuitsluiting UK beschikbaar.
 
@@ -225,7 +225,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 - **Leveranciers:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
 - **Inkooporders:** Sync.PurchaseOrder
 - **Rekeningschema:** Sync.CodeDefinition (ChartOfAccounts)
-- **Flex Dimensions:** Sync.CodeDefinition (FlexDimensions)
+- **Flex-afmetingen:** Sync.CodeDefinition (FlexDimensions)
 - **Belastingcodes:** via BOD publish
 
 **Status:** ✅ Bevestigd

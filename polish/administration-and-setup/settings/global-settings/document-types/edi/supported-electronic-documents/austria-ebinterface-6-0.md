@@ -30,7 +30,7 @@ ebInterface 6.0 wprowadził zgodność z europejskim standardem EN 16931 przy je
 
 ## Domyślny podglad
 
-<figure><img src="austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface 6.0 w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface 6.0 w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE 6.0</p></figcaption></figure>
 
 ## Mapowanie pól
 

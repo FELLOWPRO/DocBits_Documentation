@@ -10,17 +10,17 @@ description: "如何在 DocBits 中直接导入主数据。"
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-zh.png" alt="中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。"><figcaption><p>中文文档集成模块：脚本、扫描、条码及自定义主数据等选项；Select 仍为英文。未改动任何开关。</p></figcaption></figure></div>
 
 在“模块”中，按下方所示启用“自定义主数据”滑块。
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"></div>
 
 #### 功能概览 <a href="#feature-overview" id="feature-overview"></a>
 
 要将自己的主数据添加到 DocBits 中，请前往“设置”中的“主数据查找”。
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-zh.png" alt="中文主数据页面；已隐藏供应商及组织数据，所示配置的英语列标题保留原文。"><figcaption><p>中文主数据页面；已隐藏供应商及组织数据，所示配置的英语列标题保留原文。</p></figcaption></figure></div>
 
 点击“Custom Master Data”。
 

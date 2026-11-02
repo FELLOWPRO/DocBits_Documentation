@@ -1,8 +1,8 @@
-# Assegnazione documenti e tessere utente
+# Assegnazione documenti e schede utente
 
-## Assegnazione documenti e tessere utente - Guida completa
+## Assegnazione documenti e schede utente - Guida completa
 
-**Copertine:** 13 assegnazioni e carte relative agli utenti
+**Ambito:** schede di assegnazione e schede relative agli utenti
 
 ***
 
@@ -16,7 +16,7 @@ Le schede in questa pagina vanno nel gruppo **Allora** del Workflow Builder: le 
 
 **Carte multiversione:** DOC\_USER\_ASSIGN (v2 più recente, v3 deprecata), DOC\_GROUP\_ASSIGN (v2 più recente, v3 deprecata), OC\_ASSIGN\_DOC (v2)
 
-**Importante: le versioni ** v3 hanno aggiunto il supporto dell'albero decisionale ma ora sono deprecate **Raccomandazione:** Utilizzare v2 sia per DOC\_USER\_ASSIGN che per DOC\_GROUP\_ASSIGN
+**Versioni:** confronta la versione disponibile e il relativo comportamento nella tua installazione prima di scegliere la scheda.
 
 📖 [Cronologia completa delle versioni](../../release.md) | [Versioni e comportamento delle carte](../../cards-overview/card-versions-guide.md)
 
@@ -69,7 +69,7 @@ Assegnare significa:
 * Il documento risulta "assegnato a me" per quella persona
 * Quella persona è responsabile
 * Gli altri possono comunque vedere il documento (ma non come assegnato loro)
-* Un compito alla volta per documento
+* L’assegnazione del documento è distinta dalle attività associate: verifica separatamente destinatario e attività
 
 ***
 
@@ -759,7 +759,7 @@ Both teams process in sequence
 
 `ACTION_ASSIGN_DOC_TO_FIRST_USER_AND_TASKS` · versione 2
 
-Utilizza una regola della tabella decisionale demo che restituisce gli utenti configurati `Demo Reviewer A` e `Demo Reviewer B` in quest'ordine. Seleziona l'opzione attività/notifica, titolo `Review invoice`, descrizione, priorità e preferenza email. Il primo utente restituito è la destinazione dell'assegnazione del documento e le attività/notifiche configurate sono destinate agli utenti restituiti. Controllare entrambe le uscite; una dichiarazione vuota non deve essere trattata come una cessione.
+Utilizza una regola della tabella decisionale demo che restituisce gli utenti configurati `Demo Reviewer A` e `Demo Reviewer B` in quest'ordine. Seleziona l'opzione attività/notifica, titolo `Review invoice`, descrizione, priorità e preferenza email. Il primo utente restituito è la destinazione dell'assegnazione del documento e le attività/notifiche configurate sono destinate agli utenti restituiti. Controllare entrambe le uscite; un risultato vuoto della regola non deve essere trattato come un’assegnazione riuscita.
 
 <!-- workflow-card-example-action_assign_supplier_user_first_return_of_dt-20261021 -->
 

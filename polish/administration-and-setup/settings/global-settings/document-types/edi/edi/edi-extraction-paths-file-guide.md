@@ -52,8 +52,8 @@ Możesz również używać funkcji XPath (np. `sum()`) i wyrażeń do obliczania
 
 Copy
 
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
+```json
+"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
 ```
 
 ## 5. Funkcja Podglądu (Oceń Ekstrakcję)
@@ -82,3 +82,13 @@ Przewodnik wideo dla tego typu pliku jest dostępny na [stronie z filmami.](http
 ## Faktycznie używane reguły i aktywacja
 
 Jeśli elektroniczna nota kredytowa jest wyświetlana jako Invoice, skorzystaj z [przewodnika rozwiązywania problemów z klasyfikacją](../credit-note-recognized-as-invoice.md). Opisuje on faktycznie używane źródło niestandardowe lub domyślne, kody typów, Extraction Paths i bezpieczną aktywację.
+
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-pl.png" alt="Istniejący format EDI z czterema skonfigurowanymi atrybutami."><figcaption><p>Istniejący format EDI z czterema skonfigurowanymi atrybutami.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-pl.png" alt="Aktywny atrybut EXTRACTIONPATHS: konfiguracja JSON zawierająca wyrażenia XPath do ekstrakcji."><figcaption><p>Aktywny atrybut EXTRACTIONPATHS: konfiguracja JSON zawierająca wyrażenia XPath do ekstrakcji.</p></figcaption></figure>
+
+
+Widoki przedstawiają istniejącą konfigurację i wersję. Ustawienia różnią się w zależności od typu dokumentu i formatu. Sprawdź zmiany w wersji roboczej przed aktywacją.
+
+Ilustracje przedstawiają polskie karty etapów oraz aktywną wersję konfiguracji w trybie tylko do odczytu. W pokazanej wersji interfejsu przycisk podglądu ma błędny podpis „Zapowiedź”; odpowiada on funkcji podglądu, oznaczonej w karcie jako „Podgląd”. Techniczne nagłówki edytora, identyfikatory atrybutów i kod konfiguracji pozostają w oryginalnej postaci.

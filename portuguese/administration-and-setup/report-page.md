@@ -23,8 +23,8 @@ Siga estas etapas para acessar a **Página de Relatórios** no DocBits:
 
 *   Na parte superior da página, você pode ajustar o filtro **Time Unit** para selecionar o intervalo de tempo do seu relatório:
 
-    * **Last 30 Days**
-    * **Last 7 Days**
+    * **Últimos 30 dias**
+    * **Últimos 7 dias**
     * **Custom Time Frame** (intervalo de datas personalizado)
 
     <figure><img src="../.gitbook/assets/time_unit_filter.png" alt="Filtro Time Unit" width="563"><figcaption></figcaption></figure>
@@ -59,13 +59,13 @@ Siga estas etapas para acessar a **Página de Relatórios** no DocBits:
 
 Abaixo da seção **Changed Fields**, você encontrará quatro botões adicionais que fornecem informações mais detalhadas ao serem clicados. Cada botão se expande para mostrar mais informações quando clicado.
 
-1.  **Total Documents per Type**
+1.  **Total de documentos por tipo**
 
     * Este botão exibe o número total de documentos de cada tipo de documento (por exemplo, fatura, pedido de compra etc.) durante o período selecionado.
     * Ao clicar no botão, ele se expande para mostrar uma lista de tipos de documento e a contagem correspondente de quantos documentos de cada tipo foram processados no período selecionado.
 
     <figure><img src="../.gitbook/assets/total_documents_per_type_report.png" alt="Relatório Total de Documentos por Tipo" width="563"><figcaption></figcaption></figure>
-2.  **Daily Average per Doctype**
+2.  **Média diária por tipo de documento**
 
     * Este botão mostra a contagem média diária de documentos processados, categorizada por tipo de documento.
     * Ao clicar no botão, ele se expande para mostrar os tipos de documento e a respectiva contagem média diária.
@@ -76,7 +76,7 @@ Abaixo da seção **Changed Fields**, você encontrará quatro botões adicionai
     * Este botão mostra a distribuição de status para cada tipo de documento (por exemplo, fatura, pedido de compra etc.). Ao ser clicado, ele se expande para exibir o status dos documentos dentro de cada tipo de documento, mostrando quantos documentos estão em cada categoria de status.
 
     <figure><img src="../.gitbook/assets/status_statistic_report.png" alt="Relatório de Estatística de Status" width="563"><figcaption></figcaption></figure>
-4.  **Export Statistic**
+4.  **Estatísticas de exportação**
 
     * Este botão permite visualizar as estatísticas de exportação dos seus documentos. Ao ser clicado, ele se expande para fornecer dados relacionados às exportações de documentos, como o número de exportações, taxas de sucesso/falha e outras informações relevantes.
 

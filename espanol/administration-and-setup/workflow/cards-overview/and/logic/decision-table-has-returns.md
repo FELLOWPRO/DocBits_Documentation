@@ -1,6 +1,6 @@
 # Decision Table has Returns
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-04-es-20261023.png" alt="Lógica Tabla de decisión Tabla de decisiones devuelve resultados para el documento. Almacenar datos devueltos para su uso en tarjetas posteriores." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

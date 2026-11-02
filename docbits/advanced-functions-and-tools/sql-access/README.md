@@ -47,9 +47,9 @@ clickhouse-client --host <hostname_or_ip> --port <port> --user <username> --pass
 
 ```
 
-### Creating Materialized Views
+### Example aggregation with SELECT
 
-We recommend creating materialized views for pre-calculating data to enhance performance in analytics tools like PowerBI:
+The following query aggregates existing rows. It does not create a materialized view. Read-only access does not provide the write permissions needed to create one. Adapt table names and conversions to your schema, number format and currency; do not sum different currencies without an explicit conversion.
 
 ```sql
 SELECT toStartOfWeek(created_on) as week_start, sum(toFloat64OrZero(field_value)) as total_sum

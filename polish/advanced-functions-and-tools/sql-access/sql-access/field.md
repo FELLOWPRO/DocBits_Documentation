@@ -1,4 +1,4 @@
-# Field
+# Pole
 
 ## Kolumny
 
@@ -36,8 +36,8 @@
 * `list_of_values`: internal
 * `enforce_list_of_values`: boolean
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 * `costing_element`: internal
 * `erp_field_name`: internal

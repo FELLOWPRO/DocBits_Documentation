@@ -47,7 +47,7 @@ Nic nie jest usuwane ani zmieniane w samych układach. Zaraz po aktywacji każdy
 
 **Wyłączenie** funkcji natychmiast przywraca dla typu dokumentu wybór oparty na pochodzeniu. Reguły są zachowane, ale nieużywane, i zaczynają działać ponownie po ponownym włączeniu przełącznika.
 
-## Ekran Layouts & Selection Rules
+## Układy ekranów i zasady wyboru
 
 <figure><img src="../../../../../.gitbook/assets/s150-layouts-overview-pl.png" alt="Przegląd układów i reguł wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian."><figcaption><p>Przegląd układów i reguł wyboru. Niektóre nazwy typów lub układów, takie jak Field validation, pozostają angielskie. Skonfigurowane nazwy i identyfikatory pozostają bez zmian.</p></figcaption></figure>
 

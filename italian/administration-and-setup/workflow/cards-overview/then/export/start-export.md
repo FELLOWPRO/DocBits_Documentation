@@ -1,6 +1,6 @@
 # Start Export
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-export-01-it-20261023.png" alt="Esportazione Avvia l&#x27;esportazione, con la convalida impostata su Booleano . Stato dopo l&#x27;esportazione: Stato" width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

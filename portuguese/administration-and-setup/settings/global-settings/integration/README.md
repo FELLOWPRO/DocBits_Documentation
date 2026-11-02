@@ -28,7 +28,7 @@ Mostra os identificadores da sua organização:
 | **ID da organização** | O identificador único da sua organização. |
 | **ID da suborganização** | O ID da suborganização atualmente selecionada. |
 
-## SSO Service Provider Settings
+## Configurações do fornecedor de serviços SSO
 
 Valores de configuração de SSO do DocBits necessários ao configurar o seu Identity Provider:
 
@@ -40,7 +40,7 @@ Valores de configuração de SSO do DocBits necessários ao configurar o seu Ide
 
 Você também pode usar **Baixar Certificado** e **Baixar metadados** para a configuração do seu IdP.
 
-## Identity Service Provider Settings
+## Configurações do fornecedor de identidade
 
 Configure o seu Identity Provider (IdP) externo:
 

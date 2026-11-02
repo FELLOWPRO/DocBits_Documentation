@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification for User
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-08-it-20261023.png" alt="Compito Assegnare il documento in sequenza a e creare un Compito/Notifica per Utente con titolo: Titolo , description: Descrizione of Priorità priority. Avvisare l&#x27;utente via e-mail Invia e-mail . Impostare la priorità di assegnazione di Valore ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo**
 

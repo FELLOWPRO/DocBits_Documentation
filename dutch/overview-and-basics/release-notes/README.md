@@ -286,7 +286,7 @@ De oorspronkelijke release-aankondigingen blijven hieronder ter referentie.
 *   **Standaard Layout toepassen op alle Origins:**\
     Een nieuwe **Apply Default Layout to Origins**-knop is geïntroduceerd in het layout-configuratiescherm. Beheerders kunnen nu het standaard layout met één enkele actie naar alle origins binnen een organisatie pushen, waardoor het tijdrovende handmatige proces van het kopiëren en plakken van layout-JSON per origin vervalt. Dit is vooral nuttig bij het onboarden van nieuwe klanten waarbij meerdere origins consistent moeten worden geconfigureerd.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/layout-builder-apply-default-layout-origins-nl-20261023.png" alt="Layout Builder met Nederlandse interface en het geopende dialoogvenster om de standaardlay-out op meerdere Origins toe te passen."><figcaption><p>Het dialoogvenster om de standaardlay-out toe te passen op Origins. Voorbeeldgegevens; er is niets opgeslagen.</p></figcaption></figure>
 *   **Documenttype-selectie voor FTP-import:**\
     FTP-importconfiguraties ondersteunen nu documenttype-toewijzing per map. Bij het configureren van een FTP-import kunnen gebruikers specificeren welk documenttype — zoals Factuur of Orderbevestiging — moet worden toegepast op alle documenten die uit die map worden geïmporteerd. Documenten worden automatisch geclassificeerd bij import, waardoor handmatige documenttype-toewijzing na opname overbodig wordt. Dit ondersteunt organisaties die meerdere documenttypen beheren over verschillende suborganisaties en mappen.
 
@@ -600,7 +600,7 @@ DocBits bevat nu volledige ondersteuning voor ZUGFeRD versies 2.1 en hoger, wat 
 * **Flexibiliteit**: Of u nu werkt met basis-, comfort- of uitgebreide profielen binnen de ZUGFeRD-standaard, DocBits biedt tools om elk niveau van factuurcomplexiteit te beheren.
 * **Toekomstbestendig**: Met ondersteuning voor nieuwere versies zorgt DocBits ervoor dat bedrijven voldoen aan evoluerende e-factureringsregels in EU-lidstaten en daarbuiten.
 
-Door ZUGFeRD 2.1 en nieuwere standaarden op te nemen, vereenvoudigt DocBits grensoverschrijdende transacties en sluit het aan bij moderne bedrijfsbehoeften, wat het een essentieel hulpmiddel maakt voor organisaties die prioriteit geven aan digitale transformatie en naleving van regelgeving. [Leer meer](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+Door ZUGFeRD 2.1 en nieuwere standaarden op te nemen, vereenvoudigt DocBits grensoverschrijdende transacties en sluit het aan bij moderne bedrijfsbehoeften, wat het een essentieel hulpmiddel maakt voor organisaties die prioriteit geven aan digitale transformatie en naleving van regelgeving. [Ontdek de ZUGFeRD-versies en hun DocBits-veldtoewijzingen](https://docs.docbits.com/dutch/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Externe API Integratie voor Verbeterde Documentverwerking
 
@@ -825,7 +825,7 @@ DocBits biedt nu de mogelijkheid om de OCR (Optical Character Recognition) versi
 
 ### Nieuwe Functies:
 
-## Rule Manager
+## Regelbeheer
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") biedt de flexibiliteit om conflictoplossingsregels te creëren en bewerken die zijn afgestemd op het DocBits factureringssysteem. Deze regels zijn ontworpen om automatisch discrepanties tussen factuurdetails en inkoopordergegevens (PO) af te handelen, wat nauwkeurige financiële reconciliatie garandeert. Het systeem past deze regels toe om factuurregels, kosten en belastingen te verwerken, en genereert waar nodig passende aanpassingen of notities.
 
@@ -1055,7 +1055,7 @@ In de komende release zal een belangrijke verbetering aan de classificatie- en e
 
 ## Maypole Release 5.55.8.10 - (17 mei)
 
-### Release Notes - Web App
+### Releaseopmerkingen: webapp
 
 #### Nieuwe Functies:
 
@@ -1089,7 +1089,7 @@ In de komende release zal een belangrijke verbetering aan de classificatie- en e
 
 ▪ Merge Activiteiten: Talrijke merges om functies, fixes en verbeteringen van meerdere ontwikkelingsbranches te integreren in de hoofdbranch.
 
-### What's New - API
+### Wat is er nieuw: API
 
 ▪ Cache Management Verbeteringen: De get\_receive\_delivery\_cache bijgewerkt om prestaties en betrouwbaarheid te verbeteren.
 
@@ -1109,7 +1109,7 @@ In de komende release zal een belangrijke verbetering aan de classificatie- en e
 
 ▪ Configuratie Updates: Verschillende updates aan de configuratiebestanden om systeemsetup en parameters te verbeteren.
 
-### Release Notes - Workflow
+### Releaseopmerkingen: workflows
 
 #### Verbeteringen:
 

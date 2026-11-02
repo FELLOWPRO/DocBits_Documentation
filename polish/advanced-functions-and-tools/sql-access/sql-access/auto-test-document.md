@@ -1,4 +1,4 @@
-# Auto test document
+# Dokument testu automatycznego
 
 ## Kolumny
 
@@ -8,8 +8,8 @@
 * `doc_type`: typ DOC
 * `extracted_data`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 * `filename`: wewnętrzne
 

@@ -22,7 +22,7 @@ Ten przewodnik pokazuje, jak połączyć **ClickHouse** z **Power BI Desktop** z
 * Wybierz z listy **ClickHouse ODBC Driver** i kliknij **Finish**.
 *   Wypełnij wymagane pola. Potrzebne informacje znajdziesz w:
 
-    **DocBits** → **Settings** → **Document Processing** → **Module** → **AI Dashboard** → **ClickHouse Direct Access**
+    **DocBits** → **Ustawienia** → **Przetwarzanie dokumentów** → **Moduł** → **AI Panel kontrolny** → **ClickHouse Dostęp bezpośredni**
 
     <figure><img src="../../.gitbook/assets/clickhouse_direct_access_settings.png" alt=""><figcaption></figcaption></figure>
 
@@ -68,7 +68,7 @@ Ten przewodnik pokazuje, jak połączyć **ClickHouse** z **Power BI Desktop** z
 
 #### 6. Włącz zaplanowane odświeżanie (opcjonalnie)
 
-<mark style="color:red;">**Uwaga:**</mark> **Wymaga Power BI Pro lub Premium oraz bramy (Gateway)**
+Odświeżanie według harmonogramu zależy od licencji lub pojemności obszaru roboczego, łącznika i trybu połączenia. Dla tego połączenia ODBC skonfiguruj osiągalną bramę z odpowiednim sterownikiem, nazwą DSN i poświadczeniami. Sprawdź aktualne wymagania w oficjalnej dokumentacji.
 
 * Aby raporty były zsynchronizowane z ClickHouse:
 * Opublikuj plik `.pbix` w **Power BI Service**.
@@ -81,3 +81,9 @@ Ten przewodnik pokazuje, jak połączyć **ClickHouse** z **Power BI Desktop** z
 #### 7. Przykładowe pulpity i widoki danych&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt=""><figcaption></figcaption></figure></div>
+
+[Oficjalna dokumentacja — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Oficjalna dokumentacja — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Oficjalna dokumentacja — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

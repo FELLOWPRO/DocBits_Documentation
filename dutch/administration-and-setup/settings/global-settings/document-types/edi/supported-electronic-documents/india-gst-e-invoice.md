@@ -40,7 +40,7 @@ De belastingplichtige identificator is het **GSTIN** (Goods and Services Tax Ide
 
 ## Standaard voorbeeld
 
-<figure><img src="india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een Indiase GST e-factuur</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/india-gst-e-invoice-preview.png" alt="India GST E-Invoice preview in DocBits"><figcaption><p>Standaard DocBits voorbeeld voor een Indiase GST e-factuur</p></figcaption></figure>
 
 ## Veldtoewijzing
 
@@ -102,5 +102,5 @@ DocBits detecteert India GST E-Invoice-documenten door het rootelement te vergel
 
 ## Gerelateerd
 
-- [Momenteel ondersteunde e-factuurstandaarden](../../currently-supported-e-invoice-standards/)
+- [Momenteel ondersteunde e-factuurstandaarden](../currently-supported-e-invoice-standards/README.md)
 - [Ondersteunde elektronische documenten](./)

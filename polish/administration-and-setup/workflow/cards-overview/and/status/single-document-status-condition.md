@@ -1,6 +1,6 @@
 # Single Document Status Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="528"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-status-00-pl-20261023.png" alt="Status Status dokumentu Operator Status" width="528"><figcaption></figcaption></figure>
 
 **Cel**
 

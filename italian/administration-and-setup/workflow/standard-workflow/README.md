@@ -1,36 +1,25 @@
 # Workflow Standard
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Flusso di lavoro Acquisto Ordine 4"><figcaption></figcaption></figure>
+Il diagramma descrive un **esempio di processo**, non una configurazione attiva in ogni organizzazione. Distingue fatture senza ordine e fatture collegate a un ordine di acquisto. Autorizzazioni, instradamento e integrazioni devono essere configurati e verificati separatamente.
 
-#### Panoramica dei Componenti del Workflow:
+<figure><img src="../../../.gitbook/assets/workflow-standard-it.png" alt="Esempio di workflow con percorsi distinti per fatture con e senza ordine di acquisto. Etichette italiane su forme e collegamenti originali; la notifica dopo due giorni è una scelta dell’esempio, non un termine universale. Non è un’esecuzione del prodotto."><figcaption><p>Esempio di workflow con percorsi distinti per fatture con e senza ordine di acquisto. Etichette italiane su forme e collegamenti originali; la notifica dopo due giorni è una scelta dell’esempio, non un termine universale. Non è un’esecuzione del prodotto.</p></figcaption></figure>
 
-* **Ricezione delle fatture tramite e-mail**: il processo probabilmente inizia con una fattura ricevuta via email.
-* **DocBits**: questo strumento può essere utilizzato per le attività iniziali di gestione documentale, come l'acquisizione e la digitalizzazione delle fatture.
-* **Verifica finanziaria**: le fatture sono sottoposte a una revisione finanziaria in cui vengono prese decisioni sulla loro validità e accuratezza.
+## Ingresso e controllo iniziale
 
-#### Passaggi del Workflow:
+La fattura arriva tramite e-mail a DocBits e passa al controllo finanziario. Il processo distingue poi il percorso senza ordine di acquisto da quello con ordine; la rimozione dal workflow è un’uscita prevista dall’esempio, non la prova di un’esportazione o di un pagamento.
 
-1. **Verifica iniziale**:
-   * Le fatture vengono ricevute ed elaborate inizialmente con DocBits.
-   * Vengono quindi esaminate dal team finanziario per assicurarsi che siano rimosse dal workflow se complete, oppure inoltrate per ulteriore elaborazione.
-2. **PO vs Fatture non-PO**:
-   * Il flusso di lavoro distingue tra fatture correlate a PO e fatture non correlate a PO.
-   * Le fatture non correlate a PO vengono instradate per ulteriore approvazione o rifiuto in base a criteri predefiniti come ID fornitore, quantità, prezzo unitario e numero di articolo.
-3. **Corrispondenza e mancata corrispondenza**:
-   * Le fatture vengono confrontate con i ricevimenti merci per garantire che i dettagli corrispondano (come ID fornitore e quantità).
-   * In caso di discrepanze, la fattura è soggetta a ulteriore revisione e possibilmente al rifiuto.
-4. **Finanza e revisione dell'acquirente**:
-   * Per le fatture correlate a PO, viene condotto un dettagliato processo di abbinamento che coinvolge una revisione da parte dell'acquirente.
-   * Potrebbero essere necessarie modifiche agli ordini di acquisto o ai ricevimenti merci.
-5. **Decisioni finali**:
-   * Le fatture che superano tutti i controlli vengono approvate e integrate nei sistemi finanziari per la conservazione dei registri.
-   * Le fatture rifiutate attivano notifiche e l'acquirente può richiedere una nuova fattura.
-6. **Integrazione con Infor IDM e LN+M3**:
-   * Le fatture approvate vengono probabilmente inviate all'IDM di Infor per la gestione documentale e a LN per la registrazione contabile.
-   * Questa integrazione garantisce che tutti i registri finanziari siano aggiornati e che il workflow si integri senza soluzione di continuità nel più ampio sistema ERP.
+## Fatture senza ordine di acquisto
 
-#### Punti Decisionali:
+L’approvatore viene determinato tramite l’associazione fornitore–approvatore prevista dal processo, ad esempio una tabella di associazione o dati CDF nel BOD. Il percorso distingue approvazione, rifiuto e verifica. Un ritorno alla convalida non equivale a un’approvazione.
 
-* In tutto il workflow sono presenti vari punti decisionali in cui una fattura può essere approvata, rifiutata o rinviata per ulteriori informazioni. Le notifiche vengono inviate dopo eventuali ritardi, garantendo un'elaborazione tempestiva.
+Per il rifiuto, il diagramma indica l’invio del PDF a IDM con identificatore `Invoice_Reject` e la rimozione dal workflow. Sono passaggi dell’esempio da verificare nell’integrazione effettiva.
 
-Questi Workflow saranno inclusi nel Workflow Standard
+## Fatture con ordine di acquisto
+
+Il confronto con la ricezione merci riguarda ID fornitore, quantità, prezzo unitario e numero articolo. Sono controlli del percorso con ordine, non criteri di approvazione specifici del percorso senza ordine.
+
+In caso di differenze sono previsti controllo finanziario nell’abbinamento e revisione dell’acquirente. Il processo può richiedere l’aggiornamento dell’ordine o della ricezione merci e un nuovo confronto, oppure una nuova fattura e il rifiuto di quella corrente.
+
+## Tempi e sistemi destinatari
+
+La notifica dopo **due giorni** è una scelta di questo esempio, non un termine o SLA universale. Il nodo finale indica **Infor IDM e LN**; il diagramma non dimostra una scrittura riuscita, una registrazione contabile o un pagamento. Verifica dati trasferiti, esiti e gestione degli errori prima dell’uso operativo.

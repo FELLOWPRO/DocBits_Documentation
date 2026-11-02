@@ -68,7 +68,7 @@ Diese Anleitung führt Sie durch die Verbindung von **ClickHouse** mit **Power B
 
 #### 6. Geplante Aktualisierung aktivieren (optional)
 
-<mark style="color:red;">**Hinweis:**</mark> **Erfordert Power BI Pro oder Premium + Gateway**
+Die geplante Aktualisierung hängt von Lizenz bzw. Kapazität des Arbeitsbereichs, Connector und Verbindungsmodus ab. Konfigurieren Sie für diese ODBC-Verbindung ein erreichbares Gateway mit passendem Treiber, DSN und Zugangsdaten. Prüfen Sie die aktuellen Voraussetzungen in der offiziellen Dokumentation.
 
 * So halten Sie Ihre Berichte mit ClickHouse synchron:
 * Veröffentlichen Sie Ihre `.pbix`-Datei im **Power BI-Dienst**.
@@ -81,3 +81,9 @@ Diese Anleitung führt Sie durch die Verbindung von **ClickHouse** mit **Power B
 #### 7. Beispiel-Dashboards und Datenansichten&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Power-BI-Dashboard, Beispiel 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Power-BI-Dashboard, Beispiel 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Power-BI-Dashboard, Beispiel 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Power-BI-Dashboard, Beispiel 4"><figcaption></figcaption></figure></div>
+
+[Offizielle Dokumentation — ODBC](https://learn.microsoft.com/en-us/power-query/connectors/odbc)
+
+[Offizielle Dokumentation — psqlODBC](https://odbc.postgresql.org/docs/config-opt.html)
+
+[Offizielle Dokumentation — Power BI](https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh)

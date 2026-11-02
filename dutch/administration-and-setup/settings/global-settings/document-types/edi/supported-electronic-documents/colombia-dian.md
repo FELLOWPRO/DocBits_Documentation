@@ -40,7 +40,7 @@ De DIAN-identificator (**NIT** — Número de Identificación Tributaria) gebrui
 
 ## Standaardvoorbeeld
 
-<figure><img src="colombia-dian-preview.png" alt="Colombia DIAN Factura Electrónica voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/colombia-dian-preview.png" alt="Colombia DIAN Factura Electrónica voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een COLOMBIA FACTURA ELECTRONICA (CustomizationID 10)</p></figcaption></figure>
 
 ## Veldtoewijzing
 
@@ -85,5 +85,5 @@ Het hoofdelement is `<Invoice>` (UBL 2.1) voor facturen, `<CreditNote>` voor cre
 
 ## Gerelateerd
 
-- [Momenteel ondersteunde e-factuurstandaarden](../../currently-supported-e-invoice-standards/)
+- [Momenteel ondersteunde e-factuurstandaarden](../currently-supported-e-invoice-standards/README.md)
 - [Ondersteunde elektronische documenten](./)

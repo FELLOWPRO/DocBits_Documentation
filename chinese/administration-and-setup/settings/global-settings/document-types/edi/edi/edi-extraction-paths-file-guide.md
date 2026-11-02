@@ -25,11 +25,11 @@
 
 1.  转到**设置** → **文档类型** → _\[您的文档（例如，采购订单）]_ → **E-Doc**。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-list-zh.png" alt="EDI 配置中的转换、提取路径、预览及结构描述入口。"><figcaption><p>EDI 配置中的转换、提取路径、预览及结构描述入口。</p></figcaption></figure>
 2. 在 **E-Doc** 选项卡下，选择您的格式（例如，**EDI**）。
 3.  点击**提取路径**以查看或编辑文件。\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/site-all-edi-extraction-paths-zh.png" alt="已生效的提取路径版本：包含 XPath 表达式的 JSON 配置。"><figcaption><p>已生效的提取路径版本：包含 XPath 表达式的 JSON 配置。</p></figcaption></figure>
 
 #### **草稿管理：**
 
@@ -50,8 +50,8 @@
 
 您还可以使用 XPath 函数（例如，`sum()`）和表达式，从重复元素中动态计算值。
 
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
+```json
+"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
 ```
 
 ## 5. 预览功能（评估提取结果）
@@ -65,13 +65,13 @@ jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB
 * 前往**提取路径**界面。
 * 打开**预览功能**。\
   \
-  ![](<../../../../../../.gitbook/assets/image (21).png>)
+
 * 输入文档 ID，然后点击**测试**。
 * 结果将显示根据已配置的路径填入各字段和表格的内容。
 
 此功能对于验证 XPath 表达式的定义是否正确、是否能提取预期值至关重要，您可以在激活草稿之前完成检查。
 
-<figure><img src="../../../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
 
 ## 6. 视频操作指南
 
@@ -81,3 +81,8 @@ jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB
 ## 实际生效的规则与激活
 
 如果电子贷项通知单显示为 Invoice，请按照[分类故障排查指南](../credit-note-recognized-as-invoice.md)进行检查。该指南涵盖实际生效的自定义或默认源代码、类型代码、Extraction Paths，以及安全激活步骤。
+
+
+这些视图显示现有配置及其版本。设置因文档类型和格式而异。请在草稿中验证更改后再激活。
+
+图片展示中文流程卡片和只读配置。在所示版本中，Active 状态误译为“积极的”，实际表示已生效。技术编辑器标题、属性标识符及配置代码保留原文。

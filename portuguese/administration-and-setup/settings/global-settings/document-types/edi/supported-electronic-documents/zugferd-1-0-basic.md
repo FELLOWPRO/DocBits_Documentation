@@ -35,5 +35,5 @@ O perfil Basic do ZUGFeRD 1.0 inclui os campos essenciais da fatura, como númer
 ## Relacionados
 
 * [Configuração do ZUGFeRD](../zugferd/)
-* [Mapeamento de campos do ZUGFeRD](../zugferd/versions/)
+* [Mapeamento de campos do ZUGFeRD](../zugferd/README.md)
 * [Documentos eletrônicos suportados](./)

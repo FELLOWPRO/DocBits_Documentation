@@ -6,6 +6,8 @@ description: "Ereignisse, Bedingungen, Reihenfolge, Tests und Aktivierung von Wo
 
 Ein Workflow benötigt einen Ausführungsanlass und passende Bedingungen. **Dokumenttyp ist Rechnung** beschreibt eine Auswahl. Daraus folgt nicht, dass jede beliebige Änderung an einer Rechnung automatisch einen neuen Lauf startet.
 
+<figure><img src="../../.gitbook/assets/workflow-execution-de-v3.png" alt="Schematische Beispiele: Eine lineare Standard-Folge führt Aktionen nur aus, wenn ihre Bedingungen erfüllt sind; andernfalls endet diese Folge. Ein Advanced-Bedingungsknoten kann getrennte konfigurierte Ergebnispfade verwenden. Ein Pfad wird nur mit Verbindung fortgesetzt. Optionale Standard-Verzweigungen sind nicht dargestellt; dies ist kein Screenshot der DocBits-Oberfläche."><figcaption>Schematische Beispiele: Eine lineare Standard-Folge führt Aktionen nur aus, wenn ihre Bedingungen erfüllt sind; andernfalls endet diese Folge. Ein Advanced-Bedingungsknoten kann getrennte konfigurierte Ergebnispfade verwenden. Ein Pfad wird nur mit Verbindung fortgesetzt. Optionale Standard-Verzweigungen sind nicht dargestellt; dies ist kein Screenshot der DocBits-Oberfläche.</figcaption></figure>
+
 ## Vom Ereignis zur Aktion
 
 1. Prüfen Sie Organisation, Berechtigungen, Workflow-Modul und bei Advanced zusätzlich die Advanced-Freigabe.
@@ -34,6 +36,14 @@ Kleinere Werte der **Ausführungsreihenfolge** laufen zuerst. Beispiel: Workflow
 **Change Status to → Trigger Workflows** kann eine weitere Workflow-Ausführung anstoßen. **Run Workflow** ruft einen ausgewählten Workflow auf. Beide Mechanismen benötigen bewusst gesetzte Bedingungen; sie sind keine Zusicherung einer einmaligen Ausführung. Begrenzen Sie Aufgaben und Exporte über einen fachlichen Bearbeitungszustand und prüfen Sie den zweiten Lauf ausdrücklich. Ein Erledigt-Merkmal allein ist bei gleichzeitigen Aufrufen kein allgemeiner Schutz vor Doppelverarbeitung.
 
 Weiter mit dem [Advanced-Geschäftsfall](advanced-workflow-case-study.md), dem [Übungspaket](workflow-training-kit.md) und der [Fehlerdiagnose](workflow-troubleshooting.md).
+
+## Zustand und Ausführung getrennt am Bildschirm prüfen
+
+<figure><img src="../../.gitbook/assets/wf-companion-20261022-inactive-import-check-de.png" alt="Deutsche Workflow-Liste mit eigener Trainingsregel, ausgeschaltetem Aktivschalter, Advanced Workflow, Reihenfolge 500 sowie den Aktionen Aktivieren und Workflow testen"><figcaption><p>Zustandskontrolle an der vorhandenen Trainingsregel: Schalter aus, Menüeintrag „Aktivieren“, eigener Testzugang. Aufnahme aus dem bereits veröffentlichten deutschen Lernvideo, Stufe 1. Das Bild zeigt den kontrollierten Zustand; es ist kein neuer Importnachweis.</p></figcaption></figure>
+
+Der Schalter bestätigt den inaktiven Zustand. **Workflow testen** öffnet einen Testweg; es ist keine Aktivierung für alle passenden Dokumentereignisse. Prüfen Sie anschließend am konkreten Test beziehungsweise gespeicherten Lauf, welcher Einstieg und welche Aktion tatsächlich erreicht wurden. Die angezeigte Ausführungsreihenfolge 500 ordnet diese Regel ein; sie legt nicht die Position ihrer Karten auf der Zeichenfläche fest.
+
+Im [bestehenden Lernvideo Stufe 1](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/de.html) zeigt Thomas die Liste und diesen Zustand ab etwa 0:21. Die Unterscheidung zwischen Test und tatsächlicher Dokumentwirkung folgt im selben Film. Es ist kein zusätzliches Einführungsvideo nötig.
 
 ## WF-01: Übung und Abnahme
 

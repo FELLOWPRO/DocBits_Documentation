@@ -36,7 +36,7 @@ Katalog obejmuje Fapiao, E-Fapiao, General VAT Invoice i Special VAT Invoice. Ud
 
 ## Domyślny podgląd
 
-<figure><img src="china-fapiao-preview.png" alt="Podgląd chińskiej ogólnej faktury VAT Fapiao w DocBits"><figcaption><p>Domyślny podgląd DocBits dla chińskiej ogólnej faktury VAT Fapiao (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="Podgląd chińskiej ogólnej faktury VAT Fapiao w DocBits"><figcaption><p>Domyślny podgląd DocBits dla chińskiej ogólnej faktury VAT Fapiao (普通发票)</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -89,5 +89,5 @@ Elementem głównym jest `<fapiao>` z przestrzenią nazw `urn:china:tax:fapiao:1
 
 ## Powiązane
 
-- [Aktualnie obsługiwane standardy e-faktur](../../currently-supported-e-invoice-standards/)
+- [Aktualnie obsługiwane standardy e-faktur](../currently-supported-e-invoice-standards/README.md)
 - [Obsługiwane dokumenty elektroniczne](./)

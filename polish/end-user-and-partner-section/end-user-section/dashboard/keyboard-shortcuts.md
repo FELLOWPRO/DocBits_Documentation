@@ -8,4 +8,4 @@ Używaj Ctrl w Windows/Linux i Cmd w macOS. Skróty przeglądarki lub systemu mo
 | Ctrl/Cmd + Q | Odśwież listę pulpitu. |
 | Ctrl/Cmd + H | Otwórz dokumentację/pomoc. |
 
-Otwórz koło zębate i przycisk klawiatury, aby zobaczyć skróty w aplikacji. Znak zapytania w wyszukiwarce otwiera pomoc dotyczącą pól i składni.
+Otwórz menu koła zębatego **Ustawienia zaawansowane**, a następnie **Skróty klawiaturowe**, aby zobaczyć skróty w aplikacji. Przycisk ze znakiem zapytania na prawym końcu paska wyszukiwania otwiera pomoc dotyczącą pól i składni.

@@ -1,4 +1,4 @@
-# Nodes
+# Knooppunten
 
 ## Video: Knooppunten en routes
 

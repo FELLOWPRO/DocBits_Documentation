@@ -114,7 +114,7 @@ Een workflow die een veld schrijft, gedraagt zich als een persoon die het docume
 * **Hij kan niet** wat vóór de validatie gebeurt: hij start na een statuswijziging. Logica vóór de validatie hoort in een Script of een regel.
 * **Meer lezen:** [Geavanceerde workflow](workflow/advanced-workflow-builder.md)
 
-### Workflow SDK (Card SDK)
+### Workflow-SDK (Card SDK)
 
 * **Gebruik hem wanneer** u een kaart nodig hebt die niet bestaat, bijvoorbeeld een voorwaarde of actie die specifiek is voor een partnerapplicatie.
 * **Hij draait** telkens wanneer een workflow draait die de kaart bevat.
@@ -122,7 +122,7 @@ Een workflow die een veld schrijft, gedraagt zich als een persoon die het docume
 * **Hij kan niet** netwerkverbindingen openen. Een run is beperkt tot 60 seconden en 200 SDK-aanroepen. Een kaart gaat pas live nadat DocBits hem heeft gecontroleerd en goedgekeurd.
 * **Meer lezen:** [Card SDK](workflow/card-sdk.md)
 
-## Best practices
+## Aanbevolen werkwijzen
 
 * **Begin met het eenvoudigste hulpmiddel.** Een Transformatieregel is beter dan een Script voor opmaak. Een Aangepaste validatieregel is beter dan een Script voor een controle. Grijp pas naar een Script of een SDK-kaart wanneer een regel of ingebouwde kaart het niet kan.
 * **Eerst corrigeren, dan controleren, als laatste routeren.** Transformatieregels en Scripts bereiden de gegevens voor, Aangepaste validatieregels beoordelen ze, Workflows bepalen wat er met het document gebeurt. Dit is de volgorde van de flow.

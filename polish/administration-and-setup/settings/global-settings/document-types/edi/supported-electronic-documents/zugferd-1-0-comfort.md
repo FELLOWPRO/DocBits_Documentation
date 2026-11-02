@@ -35,5 +35,5 @@ Profil Comfort standardu ZUGFeRD 1.0 rozszerza profil Basic o dodatkowe pola dot
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

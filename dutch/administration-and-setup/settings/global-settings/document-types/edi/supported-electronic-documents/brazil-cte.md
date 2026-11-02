@@ -30,7 +30,7 @@ CT-e (Conhecimento de Transporte Eletrônico, `<mod>57</mod>`) is het Braziliaan
 
 ## Standaard Voorbeeld
 
-<figure><img src="brazil-cte-preview.png" alt="Brazil CT-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL CT-E document</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-cte-preview.png" alt="Brazil CT-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL CT-E document</p></figcaption></figure>
 
 ## Veldmapping
 

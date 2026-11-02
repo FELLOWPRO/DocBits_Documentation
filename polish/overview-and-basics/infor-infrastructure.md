@@ -14,7 +14,7 @@ Jeśli chodzi o komunikację z bazą danych, nie podejmujemy żadnych ryzyk. Nas
 
 Zarządzanie dokumentami jest łatwe z Docbits. Wszystkie przesłane dokumenty są bezpiecznie przechowywane w dedykowanej „Przestrzeni”. Używamy szyfrowania SSL dla ruchu danych i wymagamy wielu kluczy do uzyskania dostępu do plików, co zapewnia, że Twoje dokumenty są tak bezpieczne jak w sejfie.
 
-### Traffic Security
+### Bezpieczeństwo ruchu sieciowego
 
 Zezwalamy tylko na połączenia zabezpieczone HTTPS do komunikacji z naszymi serwerami. To zapewnia, że wszystkie przesyłane dane są szyfrowane, co chroni Twoje wrażliwe informacje. To jak posiadanie ochroniarza dla Twoich danych, 24/7.
 

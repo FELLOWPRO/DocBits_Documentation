@@ -5,7 +5,7 @@
 <figure><img src="../../../../../.gitbook/assets/s150-bildschirmfoto-2024-05-08-um-09-43-37-nl.png" alt="Scripteditor met een technisch Python-voorbeeld."><figcaption><p>Scripteditor met een technisch Python-voorbeeld.</p></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
-DocBits Scripting Guide: Automate Workflows with Python Code
+DocBits Scriptgids: automatiseer workflows met Python-code
 {% endembed %}
 
 <figure><img src="../../../../../.gitbook/assets/docbits_script_overview.png" alt="Docbits Script Overview"><figcaption></figcaption></figure>

@@ -1,12 +1,12 @@
-# Standard Workflow
+# Standardowy przepływ pracy
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Przepływ pracy Zakup Zamówienie 4"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-standard-pl.png" alt="Przykładowy workflow faktur z zamówieniem i bez niego. Ścieżki zatwierdzania, termin dwóch dni i połączenie z ERP należą do tego przykładu i muszą odpowiadać własnej konfiguracji."><figcaption><p>Przykładowy workflow faktur z zamówieniem i bez niego. Ścieżki zatwierdzania, termin dwóch dni i połączenie z ERP należą do tego przykładu i muszą odpowiadać własnej konfiguracji.</p></figcaption></figure>
 
 #### Przegląd komponentów przepływu pracy:
 
-* **AP Invoice Email**: Proces prawdopodobnie rozpoczyna się od faktury otrzymanej za pośrednictwem wiadomości e-mail.
+* **Odbiór faktur przez e-mail**: Proces prawdopodobnie rozpoczyna się od faktury otrzymanej za pośrednictwem wiadomości e-mail.
 * **DocBits**: To narzędzie może być używane do początkowych zadań zarządzania dokumentami, takich jak przechwytywanie i digitalizacja faktur.
-* **Finance Review**: Faktury przechodzą przegląd finansowy, podczas którego podejmowane są decyzje dotyczące ich ważności i dokładności.
+* **Weryfikacja finansowa**: Faktury przechodzą przegląd finansowy, podczas którego podejmowane są decyzje dotyczące ich ważności i dokładności.
 
 #### Kroki w przepływie pracy:
 

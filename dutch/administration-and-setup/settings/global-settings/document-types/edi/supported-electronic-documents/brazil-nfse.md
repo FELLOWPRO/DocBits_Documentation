@@ -30,7 +30,7 @@ NFS-e (Nota Fiscal de Serviços Eletrônica) is de Braziliaanse elektronische fa
 
 ## Standaard Voorbeeld
 
-<figure><img src="brazil-nfse-preview.png" alt="Brazil NFS-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL NFS-E document</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-nfse-preview.png" alt="Brazil NFS-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL NFS-E document</p></figcaption></figure>
 
 ## Veldmapping
 

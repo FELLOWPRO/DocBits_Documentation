@@ -1,6 +1,8 @@
 # Calcular em
 
-<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-card-78729c8beae3-pt.png" alt="Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real." width="563"><figcaption><p>Campos do cartão na versão apresentada. Os campos ainda não estão configurados. Algumas etiquetas desta versão da interface ainda não estão traduzidas ou têm uma tradução incorreta. As explicações desta página usam os termos corretos; a imagem mostra a interface real.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_regex_v1-pt-pt.png" alt="Calcular em, Versão 1" width="634"><figcaption><p>Versão 1</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/workflow_card_calc_columns_regex_v2-pt-pt.png" alt="Calcular em, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -11,7 +13,7 @@ O cartão de fluxo de trabalho **"Calcular com dependência de Regex"** permite 
 1. **Nome da tabela**
    * **Descrição:** Especifica a **tabela** na qual as colunas serão calculadas.
    * **Detalhe:** É disponibilizada uma lista pendente com todas as **tabelas** disponíveis para seleção.
-2. **Column Name (1ª coluna)**
+2. **Nome da coluna (1.ª coluna)**
    * **Descrição:** Especifica a **primeira coluna** envolvida no cálculo.
    * **Detalhe:** É disponibilizada uma lista de todas as **colunas** disponíveis para seleção.
 3. **Operação**
@@ -21,7 +23,7 @@ O cartão de fluxo de trabalho **"Calcular com dependência de Regex"** permite 
      * **Subtrair (-):** Subtrai o valor da segunda coluna à primeira coluna.
      * **Multiply (\*):** Multiplica o valor da primeira coluna pelo valor na segunda coluna.
      * **Dividir (/):** Divide o valor da primeira coluna pela segunda coluna.
-4. **Column Name (2ª coluna)**
+4. **Nome da coluna (2.ª coluna)**
    * **Descrição:** Especifica a **segunda coluna** envolvida no cálculo.
    * **Detalhe:** É disponibilizada uma lista de todas as **colunas** disponíveis para seleção.
 5. **Nome da coluna (dependência)**

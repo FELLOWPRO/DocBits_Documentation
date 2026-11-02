@@ -36,7 +36,7 @@ De catalogus bevat Fapiao, E-Fapiao, General VAT Invoice en Special VAT Invoice.
 
 ## Standaardvoorvertoning
 
-<figure><img src="china-fapiao-preview.png" alt="Voorvertoning China Fapiao Algemene BTW-factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een China Fapiao Algemene BTW-factuur (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="Voorvertoning China Fapiao Algemene BTW-factuur in DocBits"><figcaption><p>Standaard DocBits-voorvertoning voor een China Fapiao Algemene BTW-factuur (普通发票)</p></figcaption></figure>
 
 ## Veldkoppeling
 
@@ -89,5 +89,5 @@ Het rootelement is `<fapiao>` met naamruimte `urn:china:tax:fapiao:1.0`. Classif
 
 ## Gerelateerd
 
-- [Momenteel ondersteunde e-factuurstandaarden](../../currently-supported-e-invoice-standards/)
+- [Momenteel ondersteunde e-factuurstandaarden](../currently-supported-e-invoice-standards/README.md)
 - [Ondersteunde elektronische documenten](./)

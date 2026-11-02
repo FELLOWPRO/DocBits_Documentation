@@ -35,5 +35,5 @@ ZUGFeRD 1.0 był pierwotnym niemieckim standardem faktur hybrydowych, wydanym w 
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

@@ -95,5 +95,5 @@ O elemento raiz é `<factura>` com `id="comprobante"`. O atributo `version` dete
 
 ## Relacionado
 
-* [Padrões de Fatura Eletrônica Atualmente Suportados](../../currently-supported-e-invoice-standards/)
+* [Padrões de Fatura Eletrônica Atualmente Suportados](../currently-supported-e-invoice-standards/README.md)
 * [Documentos Eletrônicos Suportados](./)

@@ -1,57 +1,43 @@
 # If Country in Field
 
-<figure><img src="../../../../../.gitbook/assets/image (55).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow_card_condition_field_country_code_continue_v2.png" alt="Workflow card Document Field: If country in field Field Name Operator part of Region, continue: Boolean, version 2" width="634"><figcaption><p>Version 2</p></figcaption></figure>
 
-## **Purpose:**
+Intended use: an additional processing step depends on a country group. The example below describes a rule for membership of the European Union.
 
-This workflow card is designed to evaluate whether a specified country, located in a designated field, is part of a particular trade or political area (European Union, Schengen Area, or NAFTA). Based on this evaluation, the workflow can continue with a true or false condition, enabling further actions within the system. It is particularly useful for automating region-specific business rules, ensuring compliance, or triggering specific workflows based on geographical affiliations.
+## Current limitation — development source checked on 22 October 2026
 
-## **Components of the Card:**
+Local source tests using the native region-selection type fail before comparing the country, returning `missing_variable` or `error`. Full country names do not bypass this problem. A successful run on the deployed backend has not been verified for this version.
 
-1. **Field Name**
-   * **Description:** Specifies the document field where the country name or code is stored.
-   * **Detail:** This should match the exact field identifier of the country data within the document.
-2. **Operator**
-   * **Description:** Specifies whether the country in the selected field should match or not match the selected region or agreement.
-   * **Options:**
-     * **Is:** The country must be part of the selected agreement (EU, Schengen, or NAFTA) for the condition to be true.
-     * **Is Not:** The country must not be part of the selected agreement for the condition to be true.
-3. **Country Comparison**
-   * **Description:** Defines whether the country in the field is checked against a specific political or trade agreement.
-   * **Options:**
-     * **European Union:** The card checks if the country is a member of the European Union.
-     * **Schengen Area:** The card checks if the country is part of the Schengen Area.
-     * **NAFTA:** The card checks if the country is a member of the NAFTA agreement.
-4. **Boolean**
-   * **Description:** Defines the result of the comparison. If the country meets the condition, the workflow continues with the specified Boolean value.
-   * **Options:**
-     * **True:** The workflow continues if the condition matches.
-     * **False:** The workflow continues if the condition does not match.
+**Where:** Standard workflow → additional conditions (AND) → Document Field. Configure the subsequent action separately under THEN.
 
-## **Functionality:**
+## Configuration — version 2
 
-* **Condition Evaluation:**
-  * The system evaluates whether the country specified in the field is part of the chosen region or agreement (EU, Schengen Area, or NAFTA) based on the operator selected. This evaluation checks the country name or code against a predefined list of countries that belong to each respective group.
-* **Action Execution:**
-  * **True Condition:** If the country in the field matches the selected region (as per the operator), the workflow continues with the specified true condition. This can trigger further actions, such as routing documents, applying special processing rules, or enabling region-specific features.
-  * **False Condition:** If the country does not match the selected region (as per the operator), the workflow continues with the specified false condition, allowing for the execution of alternative actions or terminating the workflow based on the system setup.
-
-## **Setup and Configuration:**
-
-* Users configure the card by selecting the document field containing the country and specifying the region (European Union, Schengen Area, or NAFTA). The operator is then chosen from a dropdown list to define whether the country must be part of or not part of the selected region. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
-
-## **Conclusion:**
-
-The "Country in Field Comparison" workflow card is an essential tool for automating processes that depend on geographical rules, such as compliance with trade agreements or political affiliations. By comparing country data with specific regions like the European Union, Schengen Area, or NAFTA, this card ensures that the system applies the right processing logic, improving efficiency and ensuring accurate workflow execution based on geographical conditions.
+| Setting | Value |
+| --- | --- |
+| Field | An existing text field containing the country name |
+| Operator | `is` |
+| Region | European Union (EU) |
+| Continue value | `true` |
 
 <!-- workflow-card-practical-example-20261021 -->
 
-## Practical example
+## Intended example — verify the fix before use
 
-**When to use:** Separate documents by a country region.
+Verify the correction and both example cases in your installed version before enabling this rule. The table describes the intended business rule, not a confirmed successful execution.
 
-**Configuration:** Choose a document country field containing `DE`, select the region containing Germany and set the continuation option to `true`.
+| Country field value | Intended country grouping |
+| --- | --- |
+| `Germany` | Inside the EU |
+| `United States` | Outside the EU |
 
-**Expected result and counterexample:** The German country code satisfies the selected region. A code outside that region does not; test the continuation option separately when you need the inverse branch.
+The country names shown as code are fixed input values for this example.
 
-This is an illustrative configuration and expected outcome. Use fields, users and groups configured in your test organization; it is not a claim that this example was executed.
+## Limits and checks
+
+`false` does not invert the comparison. Even a matching country does not produce a positive condition with that setting. To check the opposite condition, select `isnot` with `true`.
+
+Handle missing fields and empty country values separately; they can return a missing-data result rather than an ordinary non-match.
+
+The ISO conversion issue for inputs such as `DE` and `DEU` is separate. Replacing ISO codes with full country names does not resolve the region-selection error.
+
+The offered groups, including EU, Schengen and NAFTA, come from the card implementation. Check the country membership implemented in your version before using a group for a business rule.

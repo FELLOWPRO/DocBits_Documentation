@@ -30,7 +30,7 @@ ebInterface 6.1 to najnowsza wersja austriackiego standardu e-fakturowania. Obej
 
 ## Domyślny podglad
 
-<figure><img src="austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface 6.1 w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface 6.1 w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE 6.1</p></figcaption></figure>
 
 ## Mapowanie pól
 

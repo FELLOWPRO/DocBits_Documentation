@@ -39,7 +39,7 @@ Automatyczny zapis zachowuje lokalny szkic około trzydzieści sekund po zmianac
 
 Podczas budowania Advanced Workflow dwa elementy sterujące na pasku narzędzi pozwalają sprawdzić go bez opuszczania kreatora. Służą one do *szybkich kontroli podczas budowania* — w przypadku zapisanych, powtarzalnych testów użyj [Test Managera](../test-manager.md).
 
-## Validate
+## Walidacja
 
 Kliknij element sterujący **Validate** (ikona okręgu z zaznaczeniem lub naciśnij <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Walidacja sprawdza graf pod kątem problemów — niepołączonych węzłów, brakującej konfiguracji i nieprawidłowych połączeń — i wskazuje je, abyś mógł je naprawić, zanim przepływ pracy zostanie uruchomiony na rzeczywistych dokumentach.
 

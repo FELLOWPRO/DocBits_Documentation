@@ -39,7 +39,7 @@ Numer faktury jest złożeniem trzech pól: `estab-ptoEmi-secuencial` (np. `001-
 
 ## Domyślny podgląd
 
-<figure><img src="ecuador-sri-preview.png" alt="Podgląd Ecuador SRI Factura w DocBits"><figcaption><p>Domyślny podgląd DocBits dla Factura Electrónica Ecuador SRI (wersja 2.1.0)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/ecuador-sri-preview.png" alt="Podgląd Ecuador SRI Factura w DocBits"><figcaption><p>Domyślny podgląd DocBits dla Factura Electrónica Ecuador SRI (wersja 2.1.0)</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -93,5 +93,5 @@ Elementem głównym jest `<factura>` z `id="comprobante"`. Atrybut `version` okr
 
 ## Powiązane
 
-- [Aktualnie obsługiwane standardy e-faktur](../../currently-supported-e-invoice-standards/)
+- [Aktualnie obsługiwane standardy e-faktur](../currently-supported-e-invoice-standards/README.md)
 - [Obsługiwane dokumenty elektroniczne](./)

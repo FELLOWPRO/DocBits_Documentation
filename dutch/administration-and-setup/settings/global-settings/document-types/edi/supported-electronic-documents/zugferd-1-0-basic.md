@@ -35,5 +35,5 @@ Het Basic-profiel van ZUGFeRD 1.0 bevat essentiële factuurvelden zoals factuurn
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

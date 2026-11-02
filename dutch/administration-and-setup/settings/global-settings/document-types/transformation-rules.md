@@ -1,10 +1,25 @@
 # Transformatieregels
 
+## Van geëxtraheerde waarde tot downstream-verificatie
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-nl-20261028.png" alt="Hoe transformatieregels werken: Een geëxtraheerde waarde wordt een specifiek verwerkte waarde."><figcaption><p>Een geëxtraheerde waarde wordt een specifiek verwerkte waarde. Het diagram is schematisch; de actieve instellingen van uw organisatie bepalen het daadwerkelijke gedrag.</p></figcaption></figure>
+
+Een transformatie verandert bestaande data; OCR wordt niet opnieuw uitgevoerd. Het leest een invoer, controleert de staat ervan, voert de geconfigureerde stappen uit en schrijft het resultaat terug. Als niet aan de voorwaarde wordt voldaan, wordt de regel overgeslagen.
+
+**Voorbeeld:** Een tabelcel bevat `STK`. Een waardetoewijzing die van toepassing is op de leverancier schrijft `PCE`. Stroomafwaartse PO-matching gebruikt vervolgens de genormaliseerde eenheidscode. Test ook een waarde die al genormaliseerd is en een waarde waarop de regel niet van toepassing zou moeten zijn.
+
+1. **Trigger:** Tijdens de documentverwerking worden de regels na extractie uitgevoerd. Ze kunnen ook opnieuw worden uitgevoerd wanneer gewijzigde extractiegegevens worden opgeslagen.
+2. **Volgorde:** Binnen een run worden de scopes in deze volgorde verwerkt: **Kopveld → Routing → Tabelrijen → Tabelkolom**. Binnen elke scope bepalen prioriteit en sleutel de volgorde.
+3. **Effect:** Een tabelregel kan regelitems wijzigen of verwijderen. Hierdoor kunnen het aantal rijen en de vereisten voor het matchen van inkooporders worden gewijzigd. Door rijen te vervangen die al zijn gematcht, kan een bestaande toewijzing worden verwijderd.
+4. ** Controle: ** Vergelijk invoer, voorbeeld en opgeslagen resultaat. Wanneer uitvoeringsregistratie is ingeschakeld, laat de conditietracering zien waarom een ​​regel is toegepast of overgeslagen.
+
+**Controleer herhalingen:** Een regel mag de reeds voorbereide waarde niet elke keer veranderen wanneer deze wordt opgeslagen. Gebruik passende idempotente stappen, een ongewijzigde bron of de beoogde eenmalige uitvoering. De details en voorbeelden volgen hieronder; [PO-matchingsregels](more-settings/purchase-order/purchase-order-matching-rules.md) legt de stroomafwaartse mapping uit.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/nl.mp4" %}
 
 ## Overzicht
 
-Transformatieregels maken geëxtraheerde gegevens **automatisch** schoon of herschrijven ze, telkens wanneer een document wordt verwerkt en telkens wanneer het wordt opgeslagen. Een regel kan het volgende wijzigen:
+**Trigger:** Tijdens de documentverwerking worden de regels na extractie uitgevoerd. Ze kunnen ook opnieuw worden uitgevoerd wanneer gewijzigde extractiegegevens worden opgeslagen.
 
 * een **headerveld** (factuurnummer, valuta, btw-nummer van de leverancier …),
 * een **kolom** in elke rij van een tabel (eenheid, artikelnummer, prijsbasis …),
@@ -26,7 +41,7 @@ Transformatieregels vervangen de meeste kleine scripts die organisaties vroeger 
 | Een leverancier wordt gematcht op het totaal, niet op regels | Tabelrijen: Clear all rows → Add a row met het nettobedrag |
 | Alle documenten van bepaalde leveranciers horen bij een suborganisatie | Routing: de suborganisatie instellen wanneer *Supplier ID is one of …* |
 | Datums moeten in een vast formaat in een vrij tekstveld worden geschreven | Headerveld: Reformat date `%d.%m.%Y` |
-| Het PO-nummer staat in het verkeerde veld (bijvoorbeeld in *Invoice Number*) | Headerveld *Purchase Order*: lezen uit *Invoice Number*, alleen wanneer *Purchase Order is empty* |
+| Het PO-nummer staat in het verkeerde veld (bijvoorbeeld in *Invoice Number*) | Headerveld *Inkooporder*: lezen uit *Factuurnummer*, alleen wanneer *Inkooporder is leeg* |
 | Het PO-nummer heeft voorloopnullen of een voorvoegsel die de inkooporder niet heeft | Headerveld *Purchase Order*: Trim `0` links, of Bevestigen: voorvoegsel verwijderen |
 | Artikelnummers verschillen van de inkooporderregels in hoofdletters, spaties of voorvoegsels | Tabelkolom *ITEM_NUMBER*: Bevestigen: voorvoegsel verwijderen → Sanitise → UPPERCASE |
 
@@ -60,7 +75,7 @@ Klik op **Nieuwe regel**. De bouwer heeft links drie stappen en rechts een **Liv
 
 | Bereik | Wijzigt | Doel | Draait |
 | --- | --- | --- | --- |
-| **Kopteksveld** (Header field) | één waarde per document | een headerveld, bijv. *Invoice Number* | één keer per document |
+| **Kopteksveld** (Header field) | één waarde per document | een kopveld, bijv. *Factuurnummer* | één keer per document |
 | **Tabelrijen** (Table rows) | hele regelitemrijen — wissen of rijen toevoegen | een tabel, bijv. `INVOICE_TABLE` | één keer per document |
 | **Tabelkolom** (Table column) | een waarde in elke regelitemrij | een tabel en een kolom, bijv. `INVOICE_TABLE` / `UNIT` | één keer per rij |
 | **Routering** (Routing) | een attribuut van het document — momenteel de suborganisatie | *suborganisatie* | één keer per document |
@@ -77,7 +92,7 @@ Twee opties onder **Verwerkingsopties** bepalen hoe vaak de regel wordt toegepas
 | Optie | Effect |
 | --- | --- |
 | **Voer dit document slechts één keer uit** (Run only once per document) | Normaal draaien regels bij elke keer opslaan opnieuw. Met deze optie wordt de regel **hooguit één keer** op een document toegepast en is hij daarna klaar met dat document. Een doorgang waarin de voorwaarden niet overeenkomen telt niet mee, zodat de regel bij een latere keer opslaan nog steeds kan worden toegepast. Nodig voor stappen die de waarde bij elke keer opslaan opnieuw zouden wijzigen (zie [Eenmalig uitvoeren en idempotentie](#eenmalig-uitvoeren-en-idempotentie)) en voor tabelregels die de regels niet opnieuw mogen opbouwen. |
-| **Run after lookup population (before PO match)** | *(nieuwere versies)* Voert de regel uit in een extra doorgang nadat de lookupgegevens (bijvoorbeeld stamgegevens van leveranciers) zijn gevuld en vóór de inkooporder-matching. Gebruik dit wanneer de regel een waarde nodig heeft die een lookup levert. De regel draait nog steeds ook in de gebruikelijke fasen; een regel met eenmalige uitvoering en deze optie wacht op deze doorgang in plaats van direct na de extractie te draaien. |
+| **Uitvoeren na opzoekpopulatie (vóór PO match)** | *(nieuwere versies)* Voert de regel uit in een extra doorgang nadat de lookupgegevens (bijvoorbeeld stamgegevens van leveranciers) zijn gevuld en vóór de inkooporder-matching. Gebruik dit wanneer de regel een waarde nodig heeft die een lookup levert. De regel draait nog steeds ook in de gebruikelijke fasen; een regel met eenmalige uitvoering en deze optie wacht op deze doorgang in plaats van direct na de extractie te draaien. |
 
 ### Stap 3 — De pijplijn
 
@@ -93,7 +108,7 @@ Twee opties onder **Verwerkingsopties** bepalen hoe vaak de regel wordt toegepas
 
 | Stap | Instellingen | Voorbeeld invoer → uitvoer |
 | --- | --- | --- |
-| **Hoofdlettergebruik wijzigen** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Hoofdlettergebruik wijzigen** (Change case) | UPPERCASE, kleine letters, hoofdletters, eerst met hoofdletters | `inv-4711` → `INV-4711` |
 | **Trim** | zijde (beide, links, rechts); tekens (leeg = witruimte) | `  4711 ` → `4711`; met tekens `0` en zijde links: `004711` → `4711` |
 | **Pad** | lengte, vulteken, zijde | lengte 10, `0`, links: `4711` → `0000004711` |
 | **Inkorten** | maximale lengte | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
@@ -173,7 +188,7 @@ Als de factuur `Art.-Nr. ab-12/3` vermeldt en de inkooporder `AB123` heeft, kome
 | Spaties en punten uit het btw-nummer verwijderen | Header *Supplier Tax ID* | altijd | Desinfecteren: alfanumeriek behouden |
 | Het artikelvoorvoegsel verwijderen | Kolom *ITEM_NUMBER* | altijd | Bevestigen: voorvoegsel `Art.-Nr. ` verwijderen |
 | Leveranciersnummers van 10 cijfers | Header *Supplier ID* | altijd | Trim → Pad lengte 10 met `0`, links |
-| Het PO-nummer uit een referentietekst halen | Header *Purchase Order*, gelezen uit een ander veld | alleen wanneer *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, groep 1 |
+| Het PO-nummer uit een referentietekst halen | Header *Purchase Order*, gelezen uit een ander veld | alleen wanneer *Aankooporder is leeg* | Extract `PO[- ]?(\d+)`, groep 1 |
 | Voor een leverancier altijd één valuta gebruiken | Header *Currency* | alleen wanneer *Supplier ID is 10040* | Fix value `CHF` |
 | Een verkeerd geëxtraheerde waarde verwijderen | Header *Discount Term* | alleen wanneer *Supplier ID is 20723* | Clear |
 | Prijsbasis per eenheid | Kolom *UNIT_PRICE_PER* | alleen wanneer *row.UNIT_PRICE_PER is empty* | Fix value `1` |
@@ -182,7 +197,7 @@ Als de factuur `Art.-Nr. ab-12/3` vermeldt en de inkooporder `AB123` heeft, kome
 | Alleen de cijfers van het PO-nummer behouden | Header *Purchase Order* | altijd | Desinfecteren: alleen cijfers behouden (`PO-45001234` → `45001234`) |
 | Een te lange PO-referentie inkorten | Header *Purchase Order* | alleen wanneer *Supplier ID is 20723* | Truncate tot 10 tekens |
 | Het voorvoegsel dat uw ERP verwacht aan het PO-nummer toevoegen | Header *Purchase Order* | alleen wanneer *Supplier ID is 10040* | Bevestigen: voorvoegsel `4500` toevoegen |
-| Bedragen schrijven zoals uw ERP ze leest | Header *Total Amount* | altijd | Format number, landinstelling `de_DE`, 2 decimalen |
+| Bedragen schrijven zoals uw ERP ze leest | Header *Total Amount* | altijd | Formaatnummer, landinstelling `de_DE`, 2 decimalen |
 | Spaties in artikelnummers verwijderen | Kolom *ITEM_NUMBER* | altijd | Desinfecteren: de tekens ` ` (spatie) verwijderen |
 | Hoofdletters gebruiken voor artikelnummers | Kolom *ITEM_NUMBER* | altijd | Wijzigingsgeval UPPERCASE |
 | POs van één vestiging naar een suborganisatie sturen | Routing | *Purchase Order starts with* `4500` | een vaste suborganisatie toewijzen |
@@ -227,7 +242,7 @@ Tabelregels en kolomregels wijzigen wat de PO-matcher ziet:
 
 Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven naar **Documenttypen → (documenttype) → Logboeken**, met de uitkomst (toegepast, geen wijziging, overgeslagen), het document en — bij overgeslagen regels — het voorwaardespoor dat verklaart waarom. Zie [Het voorwaardespoor in de logboeken lezen](rule-conditions-applies-when.md#het-voorwaardespoor-in-de-logboeken-lezen).
 
-## Best practices
+## Aanbevolen werkwijzen
 
 * **Eén doel per regel.** "Factuurnummer opschonen" en "Eenheidscodes mappen" zijn twee regels, niet één.
 * **Bouw met de live preview**, met echte waarden die uit documenten zijn gekopieerd, ook vreemde (spaties, kleine letters, voorvoegsels).
@@ -245,7 +260,7 @@ Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven n
 | Een tabel krijgt bij elke keer opslaan een extra rij | Een stap **Een rij toevoegen** zonder **Wis alle rijen** ervoor. Voeg eerst de wisstap toe of zet eenmalige uitvoering aan. |
 | De inkoopordermatch gaat verloren na het opslaan | Een tabelregel heeft de gematchte regels vervangen. De reden op het document noemt de regel; zorg dat de regel dezelfde regels reproduceert, of stel in dat hij eenmalig draait. |
 | Een matchingregel draait nooit na de transformatie | De regel heeft het aantal regels gewijzigd; pas de activeringsvoorwaarde van de matchingregel aan. |
-| De regel heeft een waarde uit de stamgegevens van de leverancier nodig, maar die is nog leeg | Zet **Run after lookup population (before PO match)** aan. |
+| De regel heeft een waarde uit de stamgegevens van de leverancier nodig, maar die is nog leeg | Zet **Uitvoeren na opzoekpopulatie (vóór PO match)** aan. |
 | Een datum wordt niet opnieuw opgemaakt | Reformat date verwacht `YYYY-MM-DD` als invoer. |
 
 ## Gerelateerd
@@ -254,3 +269,6 @@ Met **Logboekuitvoering** aan wordt elke toepassing van de regel weggeschreven n
 * [Aangepaste validatieregels](custom-validation-rules.md) — controleer de getransformeerde waarden
 * [Lay-outselectieregels](layout-manager/layout-selection-rules.md) — kies de lay-out die een document gebruikt
 * [Regels voor het Matchen van Inkooporders](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+
+[Transformatieregels: volledig praktisch overzicht](transformation-rules/complete-practical-guide.md)

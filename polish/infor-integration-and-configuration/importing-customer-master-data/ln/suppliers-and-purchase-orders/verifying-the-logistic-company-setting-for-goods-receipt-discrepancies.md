@@ -2,7 +2,7 @@
 
 W dużych procesach zakupowych nierzadko zdarza się, że niektóre dane nie zgadzają się zgodnie z oczekiwaniami. Można na przykład zobaczyć komunikat o błędzie, taki jak:
 
-**„Delivery Note L1234, Order Type: Purchase, Order 100000211, Position 10, Subsequent Number 1, Logistic Company&#x20;**<mark style="color:red;">**XXXX**</mark>**, Goods Receipt WE0000293 and Entry Position 10 not found in direct debit.”**
+**„Dowód dostawy L1234, Typ zamówienia: Zakup, Zamówienie 100000211, Pozycja 10, Kolejny numer 1, Firma logistyczna**<mark style="color:red;">**XXXX**</mark>**, Towary W poleceniu zapłaty nie znaleziono paragonu WE0000293 i pozycji wpisu 10.”**
 
 Ten typ komunikatu często wskazuje na niezgodność lub brakujące informacje związane z konfiguracją spółki logistycznej. Spółka logistyczna jest kluczowym elementem systemów planowania zasobów przedsiębiorstwa (ERP), zwłaszcza w złożonych łańcuchach dostaw obejmujących wiele podmiotów prawnych lub logistycznych.
 

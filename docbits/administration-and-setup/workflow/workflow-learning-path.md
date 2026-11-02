@@ -20,9 +20,9 @@ Use an owned test organization and a synthetic document. Check organization, rol
 
 ## 1. Orientation and execution model <a id="level-1"></a>
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v2/en.mp4" %}
 
-[Open the video with English captions and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v1/en.html).
+[Open the video with English captions and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-learning-step-01-admin/v2/en.html).
 
 **Exercise:** Explain organization, access, When–And–Then and the difference between a linear rule and an Advanced graph. Distinguish a document-type filter, execution event, saving and activation.
 

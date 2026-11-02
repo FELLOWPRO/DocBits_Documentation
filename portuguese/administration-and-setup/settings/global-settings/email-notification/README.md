@@ -1,33 +1,33 @@
-# Email notification
+# Notificações por e-mail
 
 {% embed url="https://youtu.be/MZoDMibM-7E" %}
-DocBits Tasks & Notifications Tutorial: Assign Work, Track Status & Handle Workflow Tasks
+Tutorial de tarefas e notificações do DocBits: atribuir trabalho, acompanhar estados e gerir tarefas de fluxo de trabalho
 {% endembed %}
 
 <figure><img src="../../../../.gitbook/assets/docbits_email_notifications_header.png" alt="Docbits Email Notifications Header"><figcaption></figcaption></figure>
 
-Configuring email notifications is critical. Email notifications in DocBits can be configured to notify users of various document-related events, such as: Processing completion, import or export errors, or user intervention requests. This tool is essential for maintaining effective communication and operational continuity in document processing environments. Here are some reasons why this is important:
+As notificações por e-mail do DocBits podem informar os utilizadores sobre eventos dos documentos, como a conclusão do processamento, erros de importação ou exportação e pedidos de intervenção. A configuração destas notificações ajuda a manter a comunicação e a continuidade operacional no processamento de documentos:
 
-**Real-time communication:**
+**Comunicação em tempo real:**
 
-* Email alerts allow users to be immediately notified of important events or changes in their document management system. This ensures that all relevant parties are immediately informed of important updates.
+* Os alertas por e-mail informam imediatamente os utilizadores sobre eventos ou alterações importantes no sistema de gestão documental, mantendo as pessoas envolvidas a par das atualizações relevantes.
 
-**Transparency and traceability:**
+**Transparência e rastreabilidade:**
 
-* By configuring email notifications, users can track and monitor the status of document processing events. This improves transparency and traceability in the document management system.
+* As notificações permitem acompanhar e monitorizar o estado dos eventos de processamento de documentos, melhorando a transparência e a rastreabilidade.
 
-**Timely reactions:**
+**Reações atempadas:**
 
-* Automatic notification of events such as document releases, comments, or approvals allows users to quickly respond to requests or updates. This helps increase efficiency and productivity.
+* As notificações automáticas de libertações de documentos, comentários ou aprovações permitem responder rapidamente a pedidos e atualizações, aumentando a eficiência e a produtividade.
 
-**Automation of workflows:**
+**Automatização dos fluxos de trabalho:**
 
-* Email notifications can be integrated into workflows to automatically send notifications to relevant users when certain actions are taken. This enables seamless automation of business processes.
+* As notificações por e-mail podem ser integradas nos fluxos de trabalho para avisar automaticamente os utilizadores relevantes quando determinadas ações forem executadas.
 
-**Reminders and deadlines:**
+**Lembretes e prazos:**
 
-* Email notification configuration can be used to remind users of upcoming deadlines or outstanding tasks. This helps ensure important tasks are completed on time.
+* As notificações por e-mail podem lembrar os utilizadores de prazos próximos ou tarefas pendentes, ajudando a concluir o trabalho importante dentro do prazo.
 
-Overall, email notification configuration plays an important role in improving communication, increasing efficiency, and ensuring that document processing events are managed in a timely and effective manner. By automating notifications, organizations can ensure that important information is not lost and that all relevant parties are always kept up to date.
+A configuração das notificações melhora a comunicação e a eficiência e ajuda a gerir os eventos de processamento de documentos atempadamente. A automatização ajuda a evitar a perda de informação importante e a manter as pessoas envolvidas informadas.
 
-This setting is critical for ensuring that stakeholders are kept informed about the processing status of important documents, which aids in rapid decision-making and efficient management of document workflows.
+Esta configuração mantém as pessoas envolvidas informadas sobre o estado dos documentos importantes, apoiando a tomada de decisões e a gestão eficiente dos fluxos de trabalho.

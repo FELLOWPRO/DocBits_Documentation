@@ -202,7 +202,7 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ## R1.3 — Sandbox 1 de junho de 2027 · Produção 16 de junho de 2027
 
-**Rule Manager do Auto Accounting**
+**Gestor de regras da contabilidade automática**
 
 - As regras atribuem contas e dimensões automaticamente, delimitadas por
   suborganização e tipo de documento, com um ecrã de auditoria que mostra qual

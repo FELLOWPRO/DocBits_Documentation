@@ -35,5 +35,5 @@ Het Comfort-profiel van ZUGFeRD 1.0 breidt het Basic-profiel uit met extra velde
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

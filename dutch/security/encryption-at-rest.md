@@ -13,7 +13,7 @@ Deze pagina beschrijft de versleutelingsmaatregelen die DigitalOcean voor deze d
 | Opslagdienst | Versleuteling van opgeslagen gegevens | Dekking |
 | --- | --- | --- |
 | Managed Databases: PostgreSQL, OpenSearch, Valkey | Volledige volumeversleuteling met LUKS; `aes-xts-plain64:sha256` met 512 bits XTS-sleutelmateriaal | De onderliggende volumes van de databasedienst, inclusief de gegevens op die volumes. Dit beschermt op opslagniveau en betekent geen afzonderlijke versleuteling van elk databaseveld. |
-| Back-ups van Managed Databases | AES-256 in CTR-modus, met HMAC-SHA256 voor integriteit; sleutels per bestand beschermd met RSA-3072 | Back-ups die de beheerde databasedienst maakt. Aanvullende exports en back-upkopieën vereisen afzonderlijke verificatie. |
+| Back-ups van Beheerde Databases | AES-256 in CTR-modus, met HMAC-SHA256 voor integriteit; sleutels per bestand beschermd met RSA-3072 | Back-ups die de beheerde databasedienst maakt. Aanvullende exports en back-upkopieën vereisen afzonderlijke verificatie. |
 | DigitalOcean Spaces | Volledige schijfversleuteling met 256-bits AES-XTS | Gegevens op de fysieke opslagschijven. Dit staat los van optionele versleuteling per object of aan de clientzijde. |
 | DigitalOcean Volumes, indien gebruikt | LUKS-versleuteling van het opslagcluster | Gegevens op deze blokopslagvolumes; volumesnapshots nemen de versleuteling over. |
 

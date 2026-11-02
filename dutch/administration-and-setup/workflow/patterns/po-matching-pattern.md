@@ -698,7 +698,7 @@ FACTUUR KOMT AAN
 
 ***
 
-### Sjabloon 2: Flexibele PO Matching (Mild)
+### Sjabloon 2: Flexibel PO Passend (mild)
 
 ```json
 {

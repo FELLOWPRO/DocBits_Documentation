@@ -30,7 +30,7 @@ PINT A-NZ (Peppol International Model for Australia-New Zealand) to zlokalizowan
 
 ## Domyślny podgląd
 
-<figure><img src="aunz-pint-preview.png" alt="Podgląd faktury PINT A-NZ w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury PINT A-NZ</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/aunz-pint-preview.png" alt="Podgląd faktury PINT A-NZ w DocBits"><figcaption><p>Domyślny podgląd DocBits dla faktury PINT A-NZ</p></figcaption></figure>
 
 ## Mapowanie pól
 
@@ -96,5 +96,5 @@ Oba są klasyfikowane pod elektronicznym typem dokumentu `PINT A-NZ`.
 ## Zobacz także
 
 - [AUNZ PINT](aunz-pint.md) — Przegląd i funkcje specyficzne dla A-NZ
-- [AUNZ PINT Self-Billing](aunz-pint-self-billing.md) — Wariant self-billing
+- [AUNZ PINT Samofakturowanie](aunz-pint-self-billing.md) — Wariant samofakturowania
 - [Obsługiwane dokumenty elektroniczne](./)

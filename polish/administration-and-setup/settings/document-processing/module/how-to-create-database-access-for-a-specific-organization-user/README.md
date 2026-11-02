@@ -10,7 +10,7 @@
 1. Po zalogowaniu znajdź ikonę **Settings** (koło zębate ⚙️) na lewym pasku bocznym.
 2. Kliknij **Settings**, aby otworzyć panel konfiguracji systemu.
 
-### **3. Otwórz moduł Document Processing** <a href="#id-3.-open-the-document-processing-module" id="id-3.-open-the-document-processing-module"></a>
+### **3. Otwórz moduł Przetwarzanie dokumentów** <a href="#id-3.-open-the-document-processing-module" id="id-3.-open-the-document-processing-module"></a>
 
 1. W **Settings** znajdź sekcję **Document Processing**.
 2. W sekcji **Document Processing** znajdź i kliknij opcję **Module**.

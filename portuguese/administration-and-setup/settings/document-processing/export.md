@@ -41,6 +41,17 @@ No entanto, é possível ter:
 * **Uma exportação Infor ativa** _e_ **uma exportação não-Infor ativa** ao mesmo tempo para o mesmo tipo de documento
 * **Diferentes configurações de exportação para diferentes sub-organizações** — por exemplo, uma exportação Infor para Sub-Org A e outra exportação Infor para Sub-Org B
 
+## Ativação a partir do ecrã de edição
+
+Uma configuração existente tem um interruptor **Ativo** no rodapé do seu ecrã de edição, junto a **Salvar**.
+
+1. Abra a configuração para editar (**Editar**).
+2. Coloque o interruptor **Ativo** no estado pretendido e selecione **Salvar**.
+
+O DocBits ativa ou desativa então a configuração com a mesma verificação que a lista usa: se já existir outra configuração ativa para o mesmo tipo de documento, a ativação é recusada. Guardar o formulário já não altera o estado guardado por si só; o interruptor do rodapé e o estado mostrado na lista coincidem sempre.
+
+<figure><img src="../../../.gitbook/assets/core2163-export-edit-active-toggle-pt.png" alt="Ecrã de edição de uma configuração de exportação com o interruptor Ativo no rodapé entre Cancelar e Salvar"><figcaption><p>O interruptor Ativo junto a Salvar no ecrã de edição da configuração de exportação.</p></figcaption></figure>
+
 ## **Criando uma nova exportação**
 
 Para criar uma nova exportação:
@@ -94,7 +105,7 @@ Para criar uma nova exportação:
 * **URL do servidor** O nome do host ou endereço IP do servidor SFTP de destino.
 * **Porta** A porta usada para conectar ao servidor SFTP.
 * **Pasta** O caminho no servidor SFTP onde os documentos devem ser carregados (ex.: `/incoming/invoices/`). Deve existir e ser gravável.
-*   **XSLT File (Opcional)**
+*   **Ficheiro XSLT (opcional)**
 
     O **arquivo XSLT** permite a transformação do formato de exportação padrão do DocBits.
 
@@ -153,7 +164,7 @@ Para criar uma nova exportação:
 * **URL do servidor** O endereço do servidor SMB.
 * **Porta** Número da porta usado para acessar o compartilhamento SMB.
 * **Pasta** O caminho da pasta dentro do compartilhamento SMB onde os documentos devem ser salvos (ex.: `/incoming/invoices/`). Deve existir e ser gravável.
-*   **JPL Mapping File (Opcional)**
+*   **Ficheiro de mapeamento JPL (opcional)**
 
     O **arquivo JPL** é usado para definir uma transformação dos dados exportados antes de serem gravados no compartilhamento SMB.
 
@@ -296,3 +307,30 @@ Para criar uma nova exportação:
 * **Ficheiro de mapeamento M3 TOML** Selecione um arquivo de mapeamento do gerenciador de arquivos ou use a opção selecionar Toml para usar um toml criado com o gerenciador de regras. [Precisa de ajuda para criar um? Veja o Guia do Gerenciador de Regras](rule-manager/)
 
 </details>
+
+
+## Tutorial em vídeo: Configurar e testar a exportação para o ERP
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/pt.mp4" %}
+Configurar e testar a exportação para o ERP
+{% endembed %}
+
+[Ver com legendas e capítulos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/erp-export-admin/v1/pt.html)
+
+Alguns rótulos nativos podem permanecer noutro idioma. Os identificadores técnicos dos campos são preservados.
+
+Utilizo uma configuração e um tipo de documento próprios para este teste. As faturas contêm dados fictícios. O nosso recetor de teste verifica a transmissão, sem efetuar lançamentos num ERP de produção. Não altero as outras integrações.
+
+Na configuração de exportação, verifico o tipo de documento, a organização e o tipo de exportação. Este exemplo utiliza Generic API na nuvem. As credenciais JSON e o mapeamento de campos TOML são ficheiros separados. Em projetos reais, o sistema de destino, as permissões e a suborganização devem corresponder ao processo pretendido.
+
+<figure><img src="../../../.gitbook/assets/admin-configuration-pt-recovery-export-v1.png" alt="Configuração de exportação limitada ao tipo de documento de formação"><figcaption><p>Configuração de exportação limitada ao tipo de documento de formação</p></figcaption></figure>
+
+No mapeamento corrigido, o campo invoice_id do DocBits fornece o número da fatura enviado ao recetor de teste. São também mapeados o fornecedor, o montante total e a moeda. Este teste verifica os dados de cabeçalho. As linhas da fatura e os lançamentos no ERP exigem verificações de negócio separadas em cada projeto.
+
+Carrego o ficheiro TOML corrigido e guardo a configuração. Depois, abro-a novamente e verifico se a alteração foi guardada. As credenciais de teste mantêm-se; as credenciais de produção não devem aparecer na gravação.
+
+Regresso à fatura de teste cuja exportação falhou e reinicio a exportação exatamente uma vez. Aguardo que o processamento termine. A simples aceitação do pedido não comprova que a transmissão foi bem-sucedida.
+
+O DocBits mostra agora a fatura como concluída. Além disso, verifico o comprovativo de receção do recetor de teste. O número da fatura, o fornecedor, o montante e a moeda coincidem com a fatura de teste. A autenticação e a transmissão foram bem-sucedidas. O recetor de teste não confirma qualquer lançamento no ERP.
+
+<figure><img src="../../../.gitbook/assets/admin-receipt-pt-recovery-export-v1.png" alt="Receção real pelo destinatário de teste; sem lançamento no ERP"><figcaption><p>Receção real pelo destinatário de teste; sem lançamento no ERP</p></figcaption></figure>

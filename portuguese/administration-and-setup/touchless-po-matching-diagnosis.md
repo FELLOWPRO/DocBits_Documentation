@@ -126,4 +126,4 @@ Depois que uma regra de transformação para a tabela de um fornecedor entrou em
 * [Rastreamento do documento](touchless-document-trace.md)
 * [Propostas de alteração e relatórios](touchless-change-proposals.md)
 * [Regras de matching de pedidos de compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* PO Matching Cards: guia completo
+* Cartões de correspondência de pedidos de compra: guia completo

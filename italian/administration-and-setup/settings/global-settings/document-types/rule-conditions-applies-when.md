@@ -210,7 +210,7 @@ Per i campi il cui valore si sceglie da un menu a discesa (origine, stato, valut
 
 Ogni funzione consente di provare una condizione prima di farvi affidamento:
 
-* **Regole di convalida** — **Test rule** esegue la regola su un documento reale. "*Rule skipped — scope not matched*" significa che la condizione era falsa per quel documento. Vedere [Test rule](custom-validation-rules.md#test-rule).
+* **Regole di convalida** — **Test rule** esegue la regola su un documento reale. "*Rule skipped — scope not matched*" significa che la condizione era falsa per quel documento. Vedere [Test rule](custom-validation-rules.md#testare-la-regola).
 * **Regole di trasformazione** — la **Live preview** ha **Condition values**: digitare un valore per ogni campo della condizione e vedere "*Conditions match — rule runs*" oppure "*Conditions do not match — rule is skipped*".
 * **Regole di selezione del layout** — il pannello **Live preview · /resolve** mostra quale regola ha corrisposto per un documento di esempio.
 

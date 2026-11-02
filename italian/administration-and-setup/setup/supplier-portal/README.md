@@ -1,125 +1,76 @@
 # Portale fornitori
 
-## Panoramica
+Il **portale fornitori** permette a un amministratore di dare ai fornitori della propria azienda accesso a **DocBits**. L’amministratore attiva il portale e configura quali fornitori possono utilizzarlo e quali informazioni possono consultare.
 
-Questa pagina spiega come attivare e utilizzare il **Portale fornitori**, così come dove trovare tutte le impostazioni rilevanti. Il Portale fornitori consente di invitare i fornitori a **DocBits**. Una volta concessa l'autorizzazione, i fornitori possono accedere per visualizzare lo stato dei loro **Ordini di acquisto** e **Fatture** direttamente all'interno di **DocBits**.
+Un fornitore invitato si registra e accede con il proprio account. Può quindi consultare le informazioni messe a sua disposizione, ad esempio lo stato dei propri ordini di acquisto e delle fatture. Le funzioni disponibili dipendono dalla configurazione dell’organizzazione.
 
-## Come attivare il Portale fornitori
+## Video: preparare il portale fornitori e l’accesso
 
-1.  Vai su **Impostazioni → Elaborazione dei documenti → Modulo**.
+Un amministratore presenta l’opzione del portale, la scelta del piano, la preparazione di un invito e l’avvio della registrazione. Attivazione, invio, registrazione e approvazione sono spiegati come passaggi distinti.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_module.png)
-2.  Nella sezione **Spedizioni e fornitori**, abilita l'opzione **Portale fornitori**.
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/it.mp4" %}
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_1.png)
+[Apri il video con sottotitoli in italiano e selezione dei capitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/supplier-portal-access-admin/v1/it.html)
 
-## Impostazioni del fornitore
+## Admin: attivare il portale
 
-Una volta attivata la funzionalità **Portale fornitori**, apparirà una nuova sezione **Impostazioni del fornitore** in fondo al menu **Impostazioni**.
+1. Nelle impostazioni, aprire i moduli e selezionare **Integrazione dei documenti**.
+2. Espandere **Spedizioni e fornitori** e attivare **Portale fornitori**.
+3. Se compare una finestra di attivazione, verificare il piano visualizzato e confermare l’attivazione desiderata.
 
-<figure><img src="../../../.gitbook/assets/prior-t012-it.png" alt="Impostazioni generali del portale fornitori: campi aggiuntivi per l’invito. Nessuna impostazione è stata modificata."><figcaption><p>Impostazioni generali del portale fornitori: campi aggiuntivi per l’invito. Nessuna impostazione è stata modificata.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-49-module-it-20261031.png" alt="Vista reale di Dev in italiano, Spedizioni e fornitori: Portale fornitori è già attivato in questa organizzazione di prova. L’interruttore non è stato modificato per la cattura."><figcaption><p>Vista reale di Dev in italiano, Spedizioni e fornitori: Portale fornitori è già attivato in questa organizzazione di prova. L’interruttore non è stato modificato per la cattura.</p></figcaption></figure>
 
-[**Impostazioni generali del fornitore**](../../settings/supplier-setting/supplier-general-settings.md): Qui puoi personalizzare il **Portale fornitori** caricando il logo della tua azienda—visualizzato nell'intestazione di tutti i modelli di e-mail—e gestendo documenti legali come i Termini di utilizzo e l'Informativa sulla privacy.
+## Admin: configurare il portale
 
-[**Modelli di e-mail**](../../settings/supplier-setting/editing-email-templates.md)**:** Qui puoi creare e testare i modelli di e-mail di invito che verranno inviati ai fornitori invitati.
+Configurare il portale dell’organizzazione prima di inviare i primi inviti:
 
-**Layout del fornitore:** Qui puoi creare e gestire i layout che definiscono quali informazioni i nuovi fornitori devono fornire durante il processo di registrazione.
+- [Impostazioni generali dei fornitori](../../settings/supplier-setting/supplier-general-settings.md): Campi aggiuntivi dell’invito, stati, logo e informazioni sulla privacy.
+- [Modelli email](../../settings/supplier-setting/editing-email-templates.md): Contenuto e presentazione dei messaggi di invito.
+- [Layout fornitore](../../settings/supplier-setting/supplier-layout.md): Campi per la registrazione dei fornitori e la gestione interna. Selezionare il tipo di layout appropriato.
+- [Autorizzazioni dei fornitori](../../settings/supplier-setting/supplier-permissions.md): Assegnazione dei dipendenti interni ai gruppi di fornitori. Queste responsabilità interne sono separate dall’accesso personale del fornitore al portale.
 
-[**Configurazione dell'esportazione**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Qui puoi definire come i dati vengono mappati e sincronizzati tra il **Portale fornitori** e il sistema **Infor M3** utilizzando file di mapping ION e IDM.
+<figure><img src="../../../.gitbook/assets/dbdc-49-general-invitation-fields-it-20261031.png" alt="Vista reale dei campi di invito aggiuntivi: l’opzione è già attivata e Campi conserva il valore configurato Assigned User. Non è stata salvata alcuna modifica."><figcaption><p>Vista reale dei campi di invito aggiuntivi: l’opzione è già attivata e Campi conserva il valore configurato Assigned User. Non è stata salvata alcuna modifica.</p></figcaption></figure>
 
-**Autorizzazioni per i fornitori**: Qui puoi configurare le autorizzazioni che i fornitori avranno all'interno del **Portale fornitori**. Puoi anche raggruppare i fornitori, facilitando la gestione dell'accesso e delle impostazioni tra più fornitori.
+## Admin: cercare e filtrare i fornitori
 
-Una guida dettagliata a tutte le Impostazioni del fornitore può essere trovata [qui](../../settings/supplier-setting/).
+Aprire la **dashboard fornitori** per la gestione interna. I totali **Tutti i fornitori**, **In attesa di approvazione** e **In attesa di registrazione** permettono di limitare l’elenco visualizzato. Il campo **Ricerca per nome, numero** serve a cercare un fornitore per nome o numero.
 
-## Cruscotto fornitori <a href="#supplier-permissions" id="supplier-permissions"></a>
+Aprire il controllo dei filtri nel campo di ricerca per utilizzare **Gruppi di fornitori**, **Stato** e **Creato il**. **Fornitore per pagina** controlla la dimensione della pagina; **Cancella i filtri** rimuove i filtri di ricerca attivi. Questi controlli riguardano l’elenco dei fornitori.
 
-Puoi accedere al **Cruscotto fornitori** dal menu a sinistra, come mostrato di seguito.
+<figure><img src="../../../.gitbook/assets/dbdc-49-filters-it-20261031.png" alt="Menu dei filtri con Gruppi di fornitori, Stato, Creato il, Fornitore per pagina e Cancella i filtri. La cattura mostra i controlli disponibili senza attestare una prova del risultato del filtraggio."><figcaption><p>Menu dei filtri con Gruppi di fornitori, Stato, Creato il, Fornitore per pagina e Cancella i filtri. La cattura mostra i controlli disponibili senza attestare una prova del risultato del filtraggio.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_2.png)
+## Admin: scegliere le colonne visibili
 
-Tutti i fornitori che hai creato sono visualizzati qui.
+Accanto al pulsante di aggiornamento, aprire le impostazioni delle colonne. Il suggerimento indica **Impostare le colonne della tabella per l'organizzazione**. Selezionare i campi in **Colonne nascoste** o **Colonne visibili** e spostarli tra gli elenchi con le frecce. Usare le maniglie per cambiare l’ordine delle colonne visibili. **Fatto** applica la selezione all’organizzazione; **Annulla** chiude la finestra senza applicarla. Lo scorrimento orizzontale permette di raggiungere le colonne di una tabella più larga dello schermo.
 
-## Filtra per fornitori
+<figure><img src="../../../.gitbook/assets/dbdc-49-columns-it-20261031.png" alt="Impostazioni delle colonne con Colonne nascoste, Colonne visibili, frecce, Annulla e Fatto. La finestra è stata chiusa con Annulla senza modificare la selezione."><figcaption><p>Impostazioni delle colonne con Colonne nascoste, Colonne visibili, frecce, Annulla e Fatto. La finestra è stata chiusa con Annulla senza modificare la selezione.</p></figcaption></figure>
 
-Puoi cercare fornitori per N**ome** o N**umero**, oppure utilizzare i filtri avanzati per restringere i risultati per:
+## Admin: consultare l’analisi delle scadenze
 
-* **Gruppi di fornitori**
-* **Stato**
-* **Creato il**
+Usare **Analisi**, l’icona del grafico accanto alle impostazioni delle colonne, per mostrare o nascondere il riepilogo delle scadenze. Le schede indicano **Scaduto** e **Scade in**, con i periodi **1 Mese**, **2 Mese**, **3 Mese**, **6 Mese** e **1 Anno**, così come compaiono nell’interfaccia. Selezionare una scheda limita l’elenco al periodo di scadenza corrispondente. I contatori si riferiscono alle date di scadenza dei fornitori.
 
-Puoi anche specificare quanti fornitori devono essere visualizzati per pagina.
+<figure><img src="../../../.gitbook/assets/dbdc-49-analytics-it-20261031.png" alt="Analisi mostra Scaduto e Scade in per uno, due, tre o sei mesi e un anno. Le righe sono coperte e non è stata selezionata alcuna scheda."><figcaption><p>Analisi mostra Scaduto e Scade in per uno, due, tre o sei mesi e un anno. Le righe sono coperte e non è stata selezionata alcuna scheda.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_9.png)
+## Admin: invitare i fornitori
 
-Inoltre, puoi filtrare rapidamente per gli stati **In attesa di approvazione** o **In attesa di registrazione** facendo clic sulla categoria corrispondente a sinistra della barra dei filtri.
+Aprire la gestione dei fornitori. Prima di inviare un invito, controllare azienda, gruppo, referente e indirizzo email. Quando si crea un fornitore, il salvataggio richiede l’invio dell’invito alla registrazione; non salva soltanto una bozza. Per un fornitore esistente, utilizzare l’azione di invito appropriata. Una conferma di invio non dimostra la consegna dell’email né il completamento della registrazione.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
+<figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-it-20261031.png" alt="Dashboard interno con Tutti i fornitori, In attesa di approvazione, In attesa di registrazione, ricerca e barra degli strumenti. Le righe dei fornitori esistenti sono coperte."><figcaption><p>Dashboard interno con Tutti i fornitori, In attesa di approvazione, In attesa di registrazione, ricerca e barra degli strumenti. Le righe dei fornitori esistenti sono coperte.</p></figcaption></figure>
 
-## Stato del fornitore
+<figure><img src="../../../.gitbook/assets/dbdc-49-invitation-it-20261031.png" alt="Modulo vuoto Aggiungi fornitore con Gruppo Fornitori, Nome del fornitore, dati del referente, Annulla e Salva. Salva richiede l’invio dell’invito alla registrazione; per questa cattura è stato usato soltanto Annulla."><figcaption><p>Modulo vuoto Aggiungi fornitore con Gruppo Fornitori, Nome del fornitore, dati del referente, Annulla e Salva. Salva richiede l’invio dell’invito alla registrazione; per questa cattura è stato usato soltanto Annulla.</p></figcaption></figure>
 
-Se stai utilizzando il **Portale fornitori**, è importante comprendere i diversi stati che i fornitori possono avere. Di seguito è riportato un elenco di tutti i possibili stati dei fornitori e i loro significati:
+## Admin: aprire i dettagli dalla dashboard fornitori
 
-* **Open**: Fornitore esistente che non è ancora stato invitato al portale.
-* **In attesa di registrazione**: Il fornitore è stato invitato ma non ha ancora completato il processo di registrazione.
-* **In attesa del contributo dei fornitori**: La registrazione è completa, ma sono necessarie ulteriori informazioni o modifiche da parte del fornitore.
-* **In attesa di approvazione**: Il fornitore ha completato la registrazione e sta aspettando la prima approvazione.
-* **In attesa di approvazione AP**: Il fornitore ha ricevuto la prima approvazione e sta aspettando una seconda approvazione (Contabilità fornitori).
-* **Approvato**: Il fornitore ha completato il processo ed è stato completamente approvato.
-* **Rifiutato**: La registrazione o l'approvazione del fornitore è stata rifiutata.
+Il personale interno può aprire la scheda dettagliata dalla riga di un fornitore nella dashboard. Questa vista contiene le stesse sei sezioni compilate dal fornitore e ne mostra lo stato. Permette di verificare e aggiornare le informazioni trasmesse e di effettuare l’approvazione corrispondente. Per queste catture non è stata aperta alcuna riga di un fornitore esistente.
 
-## Strumenti nel Cruscotto fornitori
+## Fornitore: registrarsi e accedere a DocBits
 
-A destra della barra di ricerca, troverai diversi strumenti che ti aiutano a interagire e gestire il cruscotto in modo più efficiente.
+Il fornitore apre l’invito, crea o utilizza l’account personale previsto e segue i passaggi di registrazione configurati. Può quindi consultare le informazioni rese disponibili in DocBits. La procedura esatta e le funzioni disponibili dipendono dall’organizzazione.
 
-### Aggiornare la tabella <a href="#refresh-table" id="refresh-table"></a>
+[Guida alla registrazione dei fornitori](supplier-registration.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_3.png)
+## Comprendere accesso e stati
 
-Fai clic su questo pulsante per aggiornare il cruscotto e caricare i dati e gli stati più aggiornati.
+Portale attivato, invito inviato, registrazione completata e approvazione concessa sono stati distinti. Una scheda fornitore o dati anagrafici salvati non dimostrano che l’accesso al portale sia pronto. La vista del fornitore dipende dalle autorizzazioni assegnate ed è diversa dalla vista interna dell’amministratore.
 
-### Impostare le colonne della tabella per l'organizzazione <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_4.png)
-
-Fai clic su questo pulsante per aprire un menu in cui puoi gestire la visibilità delle colonne nella tabella degli ordini di acquisto. Usa le caselle di controllo e i pulsanti a freccia per spostare le colonne tra le sezioni visibili e nascoste. Puoi anche riordinare le colonne trascinando e rilasciando i nomi delle colonne. Fai clic su **Fatto** per salvare le tue modifiche.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_7.png)
-
-### Analisi <a href="#analytics" id="analytics"></a>
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_5.png)
-
-Facendo clic su questo pulsante si aprirà una nuova sezione che mostra quanti fornitori stanno per scadere e quando.\
-Fai clic su qualsiasi categoria per applicare un filtro e visualizzare solo quei fornitori.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_8.png)
-
-## Crea fornitore e invia e-mail di registrazione
-
-### **Per creare un nuovo fornitore:**
-
-1.  Fai clic sull'icona più (+) nell'angolo in alto a destra.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_6.png)
-2.  Compila i campi obbligatori, quindi fai clic su **Risparmiare**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_11.png)
-3. Il fornitore riceverà automaticamente un'e-mail con un link per creare il proprio account.
-
-### **Per inviare un'e-mail di registrazione a un fornitore esistente:**
-
-1. Trova il fornitore nel **Cruscotto fornitori**.
-2. Fai clic sul menu a tre punti nella colonna **Azioni**.
-3.  Seleziona **Magic Link**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_12.png)
-4. Verifica i dettagli del fornitore.
-5.  Fai clic su **Inviare** per inviare l'e-mail con il link di registrazione.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/supplier_portal_13.png)
-
-## Come funziona il processo di registrazione per il fornitore?
-
-Dopo che è stata inviata un'e-mail di invito, il fornitore deve completare il processo di registrazione per accedere al **Portale fornitori**.
-
-Una guida dettagliata passo-passo sul processo di registrazione può essere trovata [qui](supplier-registration.md).
+Le catture sono state realizzate con l’account di prova Dev autorizzato e l’interfaccia in italiano. Sono state verificate le richieste di lettura dell’interfaccia e degli elenchi, i controlli visibili e i moduli annullati senza modifiche. Le impostazioni del portale e la selezione delle colonne non sono state salvate; non sono stati creati o modificati fornitori e non sono stati eseguiti inviti, registrazioni o approvazioni. I risultati della ricerca e dei filtri e la consegna delle email non sono attestati come testati funzionalmente. Il video esistente è conservato; non è stata svolta una nuova verifica di audio, lingua o sincronizzazione.

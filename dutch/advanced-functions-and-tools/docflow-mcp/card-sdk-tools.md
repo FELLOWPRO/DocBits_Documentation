@@ -1,4 +1,4 @@
-# Card SDK Tools
+# Card-SDK-hulpmiddelen
 
 De Card SDK-tools stellen u in staat om aangepaste partnerkaarten aan te maken, te valideren, te testen en te beheren via MCP. Partnerkaarten breiden DocFlow uit met aangepaste bedrijfslogica geschreven in Python.
 

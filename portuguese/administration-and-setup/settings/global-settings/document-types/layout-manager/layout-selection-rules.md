@@ -137,7 +137,7 @@ A frase no topo resume a regra à medida que você a constrói — "When header.
 | **Tipo de documento** / **Tipo de layout** | O tipo de documento e a tela para os quais a regra vale. Obtidos do local onde você clicou em **Nova regra**. |
 | **Prioridade** | Os números menores são verificados primeiro. Deixe intervalos (5, 10, 20 …) para poder inserir regras depois. |
 
-### Etapa 2 — Applies when
+### Passo 2 — Condições de aplicação (Applies when)
 
 A condição que um documento deve atender. Você pode usar:
 
@@ -153,7 +153,7 @@ Deixe a etapa vazia para corresponder a todos os documentos nessa prioridade. Co
 
 Clique no layout que o documento deve receber. A lista mostra seus próprios layouts e os layouts de sistema da tela selecionada. Um layout não pode ser excluído enquanto uma regra ainda apontar para ele.
 
-### Live preview · /resolve
+### Pré-visualização em tempo real · /resolve
 
 O painel à direita mostra o que a regra faz com um documento de exemplo que tem os valores das suas condições:
 

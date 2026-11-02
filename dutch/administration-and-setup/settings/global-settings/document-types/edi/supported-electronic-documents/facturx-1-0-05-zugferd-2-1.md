@@ -35,5 +35,5 @@ Factur-X 1.0.05 is gelijkwaardig aan ZUGFeRD 2.1. Deze versie, uitgebracht in 20
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

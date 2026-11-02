@@ -15,10 +15,10 @@ This setting enables the [**Purchase Order Matching**](../../../../../../end-use
 1. Go to **Settings** -> **Global Settings** -> **Document Types**
 2.  Select the desired document type and click on **More Settings**.
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt="Document Types list with Invoice, Credit Note, Delivery Note, Order Confirmation and Contract rows and the settings gear icons highlighted"><figcaption></figcaption></figure>
 3.  In the **Purchase Order** section, navigate to the **Purchase Order** option.
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_po.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/po_settings_po.png" alt="Purchase Order settings section with the Purchase Order toggle on and the Match Quantity On dropdown set to Quantity highlighted"><figcaption></figcaption></figure>
 
 ## **Functionality**
 

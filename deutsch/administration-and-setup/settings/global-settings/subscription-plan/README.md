@@ -1,5 +1,13 @@
 # Abonnement-Plan
 
+## Video-Tutorial: Unternehmen, Abonnement und Audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/de.mp4" %}
+Unternehmensinformationen, Abonnement-Plan und Audit-Protokoll in DocBits
+{% endembed %}
+
+Das Video zeigt die Unternehmensinformationen und -präferenzen, den Abonnement-Plan, die Anmeldeaktivität und das Audit-Protokoll.
+
 <figure><img src="../../../../.gitbook/assets/subscriptions_overview.png" alt="Abonnement-Plan"><figcaption><p>Seite „Abonnement-Plan“</p></figcaption></figure>
 
 Die Seite **Abonnement-Plan** bietet einen vollständigen Überblick über Ihr DocBits-Abonnement an einem Ort: den Plan selbst, die für Ihre Organisation aktivierten App- und Funktions-Abonnements sowie Ihren Token-Verbrauch. Öffnen Sie sie über **Einstellungen → Organisation & Zugang → Abonnement-Plan**.

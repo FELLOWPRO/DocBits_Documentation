@@ -68,8 +68,8 @@
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/customizing_filters_9.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/customizing_filters_10.png" alt=""><figcaption></figcaption></figure>
+
+
 
 * 数据将重新显示，不再应用之前的筛选条件。

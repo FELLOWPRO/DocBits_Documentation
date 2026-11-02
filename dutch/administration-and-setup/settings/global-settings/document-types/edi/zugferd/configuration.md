@@ -1,7 +1,7 @@
 # ZUGFeRD-configuratie
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
+DocBits E-factuur-tutorial: proces XRechnung / ZUGFeRD (Factur-X), gegevens valideren en workflows automatiseren
 {% endembed %}
 
 ## **Ondersteunde versies van ZUGFeRD**

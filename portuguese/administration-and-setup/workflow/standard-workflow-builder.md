@@ -95,9 +95,11 @@ Na lista de workflows, ativo a regra testada e confirmo o interruptor ligado. An
 
 ## Como aceder
 
-Abra o **Painel de fluxos → Lista de fluxos** e clique em **Adicionar fluxo de trabalho** para criar um novo fluxo de trabalho Standard, ou clique num fluxo de trabalho existente para o editar.
+Abra o **Painel de fluxos → Lista de fluxos** e clique em **Novo fluxo de trabalho** para criar um novo fluxo de trabalho Standard, ou clique num fluxo de trabalho existente para o editar.
 
-<figure><img src="../../.gitbook/assets/prior-u033-pt.png" alt="Lista de fluxos e ações de importação."><figcaption><p>Lista de fluxos e ações de importação.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-list-search-detail-pt.png" alt="Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos."><figcaption><p>Vista parcial da lista de fluxos de trabalho e do campo de pesquisa, com os valores privados ocultos.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-actions-detail-pt.png" alt="Pormenor das ações da lista: Novo fluxo de trabalho, Modelos e Fluxo de trabalho de importação."><figcaption><p>Pormenor das ações da lista: Novo fluxo de trabalho, Modelos e Fluxo de trabalho de importação.</p></figcaption></figure>
 
 ## O modelo When / And / Then
 

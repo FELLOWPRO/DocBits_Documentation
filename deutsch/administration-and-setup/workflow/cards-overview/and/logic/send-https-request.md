@@ -1,6 +1,6 @@
 # Send HTTPS Request
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-logic-01-de-20261023.png" alt="Logik Senden Sie eine HTTPS-Anfrage an URL mit Headern: Kopfzeilen , Methode: Methode , Parameter: Parameter , Daten: data und Empfangsstatuscode ist in status code" width="563"><figcaption></figcaption></figure>
 
 ## **Zweck:**
 

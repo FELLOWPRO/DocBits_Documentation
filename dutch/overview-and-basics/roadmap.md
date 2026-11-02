@@ -107,7 +107,7 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 - Extra datumformaten worden herkend.
 - Een kostenfactuur met twee btw-tarieven behoudt beide boekingsregels.
 
-**Purchase order matching**
+**Aankoopordermatching**
 
 - Matching vereist een hoeveelheidskolom, gebruikt de prijs per hoeveelheid in
   de basiseenheid, en de fallback op de laatste regel kan per klant worden in-
@@ -195,7 +195,7 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ## R1.3 — Sandbox 1 juni 2027 · Productie 16 juni 2027
 
-**Auto Accounting Rule Manager**
+**Automatische boekhoudregelbeheerder**
 
 - Regels wijzen automatisch rekeningen en dimensies toe, afgebakend per
   suborganisatie en documenttype, met een auditscherm dat toont welke regel is
@@ -209,7 +209,7 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
   boekingsreferenties. De Auto Accounting-schermen zijn beschikbaar in meerdere
   talen.
 
-**Purchase order matching**
+**Aankoopordermatching**
 
 - Het match-icoon navigeert, scrolt en markeert over tabbladen heen, inclusief
   een-op-veel-matches.

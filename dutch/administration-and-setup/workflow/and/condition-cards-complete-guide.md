@@ -2,7 +2,7 @@
 
 ## Conditiekaarten - Volledige gids
 
-De voorwaardekaarten op deze pagina horen in de **Wanneer**- en **En**-groep van de Workflow Builder — ze bepalen of de Then-acties worden uitgevoerd. Voor het gebruik van het canvas — **Kaart toevoegen**, **Workflow opslaan**, **Sjabloon opslaan** — zie de [gids Standaard workflow](../standard-workflow-builder):
+De voorwaardekaarten op deze pagina horen in de **Wanneer**- en **En**-groep van de Workflow Builder — ze bepalen of de Then-acties worden uitgevoerd. Voor het gebruik van het canvas — **Kaart toevoegen**, **Workflow opslaan**, **Sjabloon opslaan** — zie de [gids Standaard workflow](../README.md):
 
 <figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-canvas-e5e45b3054fa-nl.png" alt="Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Niet-opgeslagen voorbeeld met Wanneer-, En- en Dan-kaarten. Vul alle velden in vóór uitvoering. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>
 

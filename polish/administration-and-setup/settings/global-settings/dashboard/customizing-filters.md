@@ -16,7 +16,7 @@ Korzystanie z filtrów pozwala użytkownikom szybko znaleźć istotne informacje
 
 * Kliknij ikonę filtra lub pole wyszukiwania.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_2.png)
+<figure><img src="../../../../.gitbook/assets/prior-u030-pl.png" alt="Wyszukiwanie dokumentów i szybkie filtry z ukrytymi danymi dokumentów."><figcaption><p>Wyszukiwanie dokumentów i szybkie filtry z ukrytymi danymi dokumentów.</p></figcaption></figure>
 
 ### Dostosowywanie filtrów
 
@@ -34,19 +34,19 @@ Korzystanie z filtrów pozwala użytkownikom szybko znaleźć istotne informacje
 
 * Wybierz pole do filtrowania (np. Status).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Zdefiniuj kryteria filtra, np.: styl filtra statusu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_4.png)
+
 
 * Menu rozwijane: Wybierz z predefiniowanych opcji.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_6.png)
+
 
 * Zapisz niestandardowy filtr, klikając "Stosować".
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_7.png)
+
 
 #### **Korzystanie z filtrów łączonych**
 
@@ -66,10 +66,10 @@ Korzystanie z filtrów pozwala użytkownikom szybko znaleźć istotne informacje
 * Otwórz menu Filtry.
 * Krok 2: Wyczyść lub usuń zastosowane filtry, klikając "Wyczyść filtry", ikonę X obok wybranego filtra, zarówno w menu Filtry, jak i poniżej paska Filtrów.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_8.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_9.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_10.png)
+
+
+
 
 * Dane są ponownie wyświetlane bez wcześniejszych kryteriów filtra.

@@ -1,6 +1,6 @@
 # WatchDog Admin FAQ & probleemoplossing
 
-<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog Troubleshooting Quick Reference"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-nl.svg" alt="Diagnose van import-, export- en verbindingsproblemen in WatchDog."><figcaption><p>Diagnose van import-, export- en verbindingsproblemen in WatchDog.</p></figcaption></figure>
 
 Deze documentatie helpt beheerders om foutmeldingen van WatchDog te begrijpen en problemen op te lossen.
 

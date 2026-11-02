@@ -1,6 +1,6 @@
 # Validatie & Testen
 
-## Video: Variabelen, tests en activering
+## Video: Variabelen, testen en activering
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/advanced_workflows_testing/v3/nl.mp4" %}
 
@@ -39,7 +39,7 @@ Automatisch opslaan bewaart ongeveer elke dertig seconden na wijzigingen een lok
 
 Terwijl u een Advanced Workflow bouwt, kunt u deze met twee knoppen in de werkbalk controleren zonder de builder te verlaten. Deze zijn bedoeld voor *snelle controles tijdens het bouwen* — voor opgeslagen, herhaalbare tests gebruikt u de [Test Manager](../test-manager.md).
 
-## Validate
+## Valideren
 
 Klik op de **Validate**-knop (het check-circle-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Validatie controleert de graaf op problemen — niet-verbonden nodes, ontbrekende configuratie en ongeldige verbindingen — en wijst ze aan zodat u ze kunt oplossen voordat de workflow op echte documenten wordt uitgevoerd.
 

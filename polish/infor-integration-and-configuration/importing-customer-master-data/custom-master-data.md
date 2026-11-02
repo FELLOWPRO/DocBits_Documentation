@@ -10,17 +10,17 @@ Na pulpicie przejdź do Ustawienia → Przetwarzanie dokumentów → Moduł.
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-modules-document-integration-pl.png" alt="Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska."><figcaption><p>Moduły integracji dokumentów: skrypty, skanowanie, kody kreskowe i niestandardowe dane podstawowe. W przedstawionej wersji etykieta wyboru kodów kreskowych „Select” pozostaje angielska.</p></figcaption></figure></div>
 
 W sekcji Moduł aktywuj funkcję Custom Master Data, przesuwając suwak, jak pokazano poniżej.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_3.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"></div>
 
 #### Przegląd funkcji <a href="#feature-overview" id="feature-overview"></a>
 
 Aby dodać własne dane podstawowe do DocBits, przejdź w Ustawieniach do Master Data Lookup.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_4.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/site-extra-master-data-overview-pl.png" alt="Wyszukiwanie danych podstawowych: źródła i tabela dostawców z ukrytymi wartościami."><figcaption><p>Wyszukiwanie danych podstawowych: źródła i tabela dostawców z ukrytymi wartościami.</p></figcaption></figure></div>
 
 Kliknij „Custom Master Data”
 

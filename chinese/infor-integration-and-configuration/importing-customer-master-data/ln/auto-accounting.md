@@ -1,16 +1,33 @@
 # 自动会计
 
+## 从 LN 主数据记录到已检查的科目分配
+
+<figure><img src="../../../.gitbook/assets/process-accounting-zh-20261028.png" alt="Auto Accounting 的财务主数据: Infor LN 集成的数据路径和检查点。"><figcaption><p>Infor LN 集成的数据路径和检查点。 该图是示意性的；您组织的活动设置决定了实际行为。</p></figcaption></figure>
+
+本指南涵盖了 LN 集成的财务主数据的提供。选择 **LN** 或启用 **Auto Accounting** 不会取代提供数据或检查科目分配结果。
+
+| 交接 | 你应该证明什么 |
+| --- | --- |
+| **LN → BOD 出版物** | 正确的公司和所需的帐户或维度数据；首先计数或模拟选择。 |
+| **BOD → ION** | 匹配文档版本、来源、过滤器和映射；跟踪 ION OneView 中的测试标识符。 |
+| **ION → DocBits** | 接收端点响应、正确的组织和接受的记录。仅激活流是不够的。 |
+| **DocBits → 账户分配结果** | 批准激活后，使用代表性测试文档检查科目和维度对于业务流程是否正确。 |
+
+**可追溯性示例：** 使用来自批准的测试数据集的非敏感测试标识符。在源 BOD、ION 和 DocBits 接收日志中找到相同的标识符。这有助于在特定切换时定位丢失的映射，而不是重复更改交换机。
+
+随后的导出和 ERP 过帐必须单独验证。本指南中的现有图像显示了 DocBits 控件；它们不能证明执行了 LN 传输。以下部分描述了负责管理员的准备工作和端到端验证。技术交接参见[从 DocBits 导出](../../exporting-in-docbits/README.md)。
+
 当 Infor LN 管理员希望 DocBits 使用导入的财务主数据进行自动会计时，请使用本指南。旧版页面展示了来自某个 Infor 租户的 48 个界面。该租户的连接点名称、映射、凭据和端点地址不能作为可复用的配置。
 
 ## 在 DocBits 中查找设置
 
-使用管理员账户打开 **Settings → Module → Order & Finance → Auto accounting**。**Type** 菜单提供 **LN** 和 **M3**。对于 LN 集成，请确认所选类型为 **LN**。只有在确认目标 LN 公司、BOD 流和已导入的主数据无误后，才启用开关。更改类型或开关可能会影响会计行为，因此请遵循组织的变更流程。
+使用管理员账户打开 **设置 → 模块 → 订单与财务 → 自动会计**。**类型** 菜单提供 **LN** 和 **M3**。对于 LN 集成，请确认所选类型为 **LN**。只有在确认目标 LN 公司、BOD 流和已导入的主数据无误后，才启用开关。更改类型或开关可能会影响会计行为，因此请遵循组织的变更流程。
 
-以下英文截图来自合成环境 **DocBits Documentation Test A** Sandbox。在该组织中，已选择 **LN**，且 Auto accounting 处于**关闭**状态。菜单已打开，但未选择其他值；没有保存任何设置。
+以下中文截图展示当前测试环境的控件：当前值为 M3，类型菜单提供 LN 和 M3。没有选择其他值，也没有保存设置。配置 LN 集成时，应按自己的目标环境检查并选择 LN；不要照搬截图中的当前值。
 
-<figure><img src="../../../.gitbook/assets/dbdc-174-auto-accounting-off-en.png" alt="英文 DocBits Order and Finance 设置界面，显示 Auto accounting 已禁用且已选择 LN"><figcaption><p>找到 Auto accounting，并在启用之前确认所选类型。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-auto-accounting-settings-zh.png" alt="中文自动会计设置入口。测试环境当前显示 M3；是否应启用及使用 LN 或 M3 必须按实际集成决定，不能根据此图判断主数据或会计处理成功。"><figcaption><p>中文自动会计设置入口。测试环境当前显示 M3；是否应启用及使用 LN 或 M3 必须按实际集成决定，不能根据此图判断主数据或会计处理成功。</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc207-auto-accounting-type-options-en.png" alt="英文 DocBits Auto accounting 的 Type 菜单，显示 LN 和 M3 选项"><figcaption><p>此 Sandbox 提供 LN 和 M3 两种类型；未更改任何选项。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/site-complete-auto-accounting-types-zh.png" alt="中文自动会计“类型”菜单提供 LN 和 M3。本图只展开菜单，没有选择类型或保存设置。"><figcaption><p>中文自动会计“类型”菜单提供 LN 和 M3。本图只展开菜单，没有选择类型或保存设置。</p></figcaption></figure>
 
 ## 准备 LN 和 ION
 
@@ -22,6 +39,6 @@
 
 ## 确认 DocBits 中的结果
 
-请 DocBits 管理员在当前导入日志或 API 日志中验证接收到的记录、组织和会计字段。如果相关查找表已开放，请在 **Settings → Document Processing → Lookup Master Data** 下搜索同一标识符。ION 流成功激活本身并不能证明 DocBits 已接受记录。如果缺少某个值，请先比较源 BOD、ION 映射、API 响应和目标组织，再启用自动会计。
+请 DocBits 管理员在当前导入日志或 API 日志中验证接收到的记录、组织和会计字段。如果相关查找表已开放，请在 **设置 → 文档处理 → 查找主数据** 下搜索同一标识符。ION 流成功激活本身并不能证明 DocBits 已接受记录。如果缺少某个值，请先比较源 BOD、ION 映射、API 响应和目标组织，再启用自动会计。
 
-本次端到端测试无法使用 LN 租户或实时财务 BOD 传输。新的 Sandbox 图片仅验证当前 DocBits 控件。租户管理员必须验证最终映射和会计结果。
+本次端到端测试无法使用 LN 租户或实时财务 BOD 传输。当前中文图片仅验证 DocBits 控件。租户管理员必须验证最终映射和会计结果。

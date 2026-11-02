@@ -55,7 +55,7 @@ Ce fichier est responsable de l'extraction des données d'un fichier XML Peppol 
   * **Peut apparaître several times** : Non.
 * **Ligne d'adresse du fournisseur 3**
   * **Source** :`//AccountingSupplierParty/Party/PostalAddress/AddressLine/Line/text()`
-  * **Mappé sur** : `<InvoINVOICEice><SUPPLIER><ADDRESS_LINE_3>`
+  * **Mappé sur** : `<INVOICE><SUPPLIER><ADDRESS_LINE_3>`
   * **Peut apparaître several times** : Non.
 * **ID de TVA du fournisseur**
   * **Source** :`//AccountingSupplierParty/Party/PartyTaxScheme/CompanyID/text()`

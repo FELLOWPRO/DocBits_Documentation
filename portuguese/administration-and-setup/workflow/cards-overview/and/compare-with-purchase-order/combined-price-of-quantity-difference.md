@@ -1,8 +1,8 @@
 # Combined Price of Quantity Difference
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-03-pt-20261023.png" alt="Comparar com a ordem de compra Preço combinado da diferença de quantidade Operador Valor , compare Dados de comparação" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-03-pt-20261023.png" alt="Comparar com a ordem de compra Preço combinado da diferença de quantidade Operador Valor , compare Dados de comparação" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**:
 

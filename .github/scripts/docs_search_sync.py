@@ -43,6 +43,7 @@ import html
 import json
 import os
 import re
+import string
 import subprocess
 import sys
 import time
@@ -84,7 +85,10 @@ _IMG_TAG_RE = re.compile(r"<img\b([^>]*)>", re.IGNORECASE)
 _IMG_ATTR_RE = re.compile(r'(\w+)\s*=\s*"([^"]*)"')
 # Plain markdown ![alt](src) — also handled since not every image in this
 # repo uses the GitBook HTML form.
-_MD_IMAGE_RE = re.compile(r'!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)')
+_MD_IMAGE_RE = re.compile(
+    r'!\[([^\]]*)\]\(\s*(?:<([^>\n]+)>|((?:\\.|[^()\s]|\((?:\\.|[^()])*\))+))'
+    r'(?:\s+"[^"]*")?\s*\)'
+)
 
 # Extracts the real, directly-fetchable CDN url from GitBook's own
 # docs.docbits.com/~gitbook/image?url=<encoded>&...&sign=<hmac>&... proxy —
@@ -313,14 +317,54 @@ def _iter_raw_images(markdown_text: str) -> list[tuple[tuple[int, int], str, str
     """Yield ((start, end), src, alt) for every image reference in document
     order — GitBook's exported `<figure><img src=... alt=...>` HTML form
     and plain markdown `![alt](src)` alike."""
+    # Mask code rather than deleting it so match offsets still refer to the
+    # original markdown. Release notes contain literal HTML image examples.
+    lines: list[str] = []
+    fence: tuple[str, int] | None = None
+    list_indents: list[int] = []
+    indented_code = False
+    previous_blank = True
+    for line in markdown_text.splitlines(keepends=True):
+        expanded = line.expandtabs(4)
+        indent = len(expanded) - len(expanded.lstrip(" "))
+        blank = not line.strip()
+        while list_indents and not blank and indent < list_indents[-1]:
+            list_indents.pop()
+        code_indent = (list_indents[-1] if list_indents else 0) + 4
+        if not fence and not blank and indent >= code_indent and (indented_code or previous_blank):
+            lines.append(" " * len(line))
+            indented_code = True
+            continue
+        if not blank:
+            indented_code = False
+        item = re.match(r"^( *)(?:[-+*]|\d+[.)])(?: +|$)", expanded)
+        if item and indent < code_indent:
+            list_indents.append(item.end() or indent + 2)
+        marker = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)", line)
+        if fence:
+            lines.append(" " * len(line))
+            if (marker and marker[1][0] == fence[0]
+                    and len(marker[1]) >= fence[1] and not marker[2].strip()):
+                fence = None
+        elif marker and not (marker[1][0] == "`" and "`" in marker[2]):
+            fence = (marker[1][0], len(marker[1]))
+            lines.append(" " * len(line))
+        else:
+            lines.append(line)
+        previous_blank = blank
+    searchable = "".join(lines)
+    searchable = re.sub(
+        r"(?<!`)(`+)(?!`)([\s\S]*?)(?<!`)\1(?!`)",
+        lambda match: " " * len(match[0]), searchable,
+    )
     found: list[tuple[tuple[int, int], str, str]] = []
-    for match in _IMG_TAG_RE.finditer(markdown_text):
+    for match in _IMG_TAG_RE.finditer(searchable):
         attrs = dict(_IMG_ATTR_RE.findall(match.group(1)))
         src = attrs.get("src")
         if src:
             found.append((match.span(), src, attrs.get("alt", "")))
-    for match in _MD_IMAGE_RE.finditer(markdown_text):
-        found.append((match.span(), match.group(2), match.group(1)))
+    for match in _MD_IMAGE_RE.finditer(searchable):
+        found.append((match.span(), match.group(2) or match.group(3), match.group(1)))
     found.sort(key=lambda item: item[0][0])
     return found
 
@@ -341,26 +385,47 @@ def _fetch_page_blob_to_url_map(page_url: str) -> dict[str, str]:
         return _page_blob_url_cache[page_url]
 
     mapping: dict[str, str] = {}
-    try:
-        # docs.docbits.com (GitBook-hosted) 403s a bare urllib default
-        # User-Agent — a normal browser UA is enough to pass.
-        request = urllib.request.Request(
-            page_url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; DocBitsSync/1.0)"},
-        )
-        with urllib.request.urlopen(request, timeout=30) as response:
-            page_html = response.read().decode("utf-8", "replace")
-    except (urllib.error.URLError, TimeoutError) as exc:
-        print(f"::warning::could not fetch {page_url} to resolve images: {exc}")
-        _page_blob_url_cache[page_url] = mapping
-        return mapping
+    # A cold GitBook page can time out once while its cached rendering is
+    # refreshed. Retry before caching an empty map and discarding every image
+    # on that page. Persistent failures still produce a warning.
+    delays = (2, 5)
+    for attempt in range(len(delays) + 1):
+        try:
+            request = urllib.request.Request(
+                page_url,
+                headers={"User-Agent": "Mozilla/5.0 (compatible; DocBitsSync/1.0)"},
+            )
+            with urllib.request.urlopen(request, timeout=45) as response:
+                page_html = response.read().decode("utf-8", "replace")
+            break
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            transient = not isinstance(exc, urllib.error.HTTPError) or exc.code in (429, 500, 502, 503, 504)
+            if isinstance(exc, urllib.error.HTTPError):
+                exc.close()
+            if transient and attempt < len(delays):
+                print(f"retry page fetch {page_url}: {exc} (attempt {attempt + 2}/{len(delays) + 1})")
+                time.sleep(delays[attempt])
+                continue
+            print(f"::warning::could not fetch {page_url} to resolve images: {exc}")
+            _page_blob_url_cache[page_url] = mapping
+            return mapping
 
     for match in _GITBOOK_PROXY_IMG_SRC_RE.finditer(page_html):
         proxied_src = html.unescape(match.group(1))
         inner_match = _GITBOOK_PROXY_INNER_URL_RE.search(proxied_src)
         if not inner_match:
             continue
+        # External source images are already published through GitBook's
+        # signed same-origin proxy. Preserve that exact URL; never invent a
+        # signature or expand the Assistant's image-host allowlist.
         inner_url = urllib.parse.unquote(inner_match.group(1))
+        proxy = urllib.parse.urlparse(proxied_src)
+        if (proxy.scheme != "https" or proxy.hostname != "docs.docbits.com"
+                or proxy.path != "/~gitbook/image"
+                or not urllib.parse.parse_qs(proxy.query).get("sign")):
+            continue
+        resolved_url = inner_url if _is_allowed_image_host(inner_url) else proxied_src
+        mapping[inner_url] = resolved_url
         blob_match = _GIT_BLOB_SHA_RE.search(inner_url)
         if blob_match and _is_allowed_image_host(inner_url):
             mapping[blob_match.group(1)] = inner_url
@@ -377,8 +442,8 @@ def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) 
 
     - Already-absolute src on an allowed host (docs.docbits.com or a
       GitBook per-space files CDN): kept as-is.
-    - Already-absolute src on any other host (pasted googleusercontent.com
-      links etc.): dropped.
+    - Already-absolute src on another host: use its existing signed
+      docs.docbits.com image proxy from the published page.
     - Relative src (GitBook's `.gitbook/assets/...` convention): resolved
       via the local file's git blob sha, matched against the live page's
       own rendered image urls (see `_fetch_page_blob_to_url_map`) — the
@@ -398,13 +463,18 @@ def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) 
         out.append(markdown_text[last_end:start])
         last_end = end
 
+        src = html.unescape(re.sub(r"\\([" + re.escape(string.punctuation) + r"])", r"\1", src))
         resolved: str | None = None
         if src.startswith("http://") or src.startswith("https://"):
             if _is_allowed_image_host(src):
                 resolved = src
+            else:
+                if blob_map is None:
+                    blob_map = _fetch_page_blob_to_url_map(page_url)
+                resolved = blob_map.get(src)
         else:
             local_rel_path = os.path.normpath(
-                os.path.join(os.path.dirname(md_path), src)
+                os.path.join(os.path.dirname(md_path), urllib.parse.unquote(src))
             )
             local_abs_path = os.path.join(REPO_ROOT, local_rel_path)
             if os.path.exists(local_abs_path):
@@ -500,6 +570,10 @@ def ingest_md_file(
     dry_run: bool,
     published: set[str] | None = None,
 ) -> None:
+    # Navigation changes are handled separately by run_diff; SUMMARY.md is
+    # intentionally not a published page and must never generate a warning.
+    if md_path == SUMMARY_PATH:
+        return
     rel = published_rel_path(md_path)
     if rel is None:
         return
@@ -821,9 +895,15 @@ def verify_lang(lang: str, *, dry_run: bool) -> None:
             "fallback_bm25_only=true: DigitalOcean embedding/rerank was not used"
         )
     expected_prefix = full_url(VERIFY_PAGE, lang)
-    if hits and not any(url.startswith(expected_prefix) for url in urls):
+    if hits and not any(url == expected_prefix or url.startswith(expected_prefix + "/") for url in urls):
         problems.append(f"expected page {expected_prefix} not in the top 5")
-    wrong_lang = [u for u in urls if not u.startswith(full_url("", lang))]
+    space = full_url("", lang)
+    language_slugs = {slug for slug in LANG_URL_SLUG.values() if slug}
+    wrong_lang = [
+        u for u in urls
+        if not (u == space or u.startswith(space + "/"))
+        or (lang == "main" and urllib.parse.urlparse(u).path.strip("/").split("/")[0] in language_slugs)
+    ]
     if wrong_lang:
         problems.append(f"hits outside the {lang} language space: {wrong_lang[:2]}")
     if problems:

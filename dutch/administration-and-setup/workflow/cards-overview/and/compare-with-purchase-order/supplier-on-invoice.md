@@ -1,6 +1,6 @@
 # Supplier on Invoice
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-21-nl-20261023.png" alt="Vergelijk met inkooporder Leverancier op factuur Operator Leverancier op inkooporder" width="563"><figcaption></figcaption></figure>
 
 ## **Doel:**
 

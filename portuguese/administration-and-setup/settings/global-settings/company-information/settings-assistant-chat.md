@@ -29,17 +29,17 @@ Quando você abre o painel em uma página de configurações, ele cumprimenta vo
 
 | Página | Perguntas de exemplo |
 | --- | --- |
-| Informações da empresa | "How do I change our company address?", "Where do I upload our logo?", "Which domains are registered for our organization?" |
-| Importação | "Is email import active for us?", "Which email address do we send documents to?", "How do I set up an FTP or SFTP import?" |
-| Classificar e extrair | "Which AI model is used for extraction?", "Is splitting documents on barcodes active for us?", "Can I use a different AI model for one supplier?" |
-| Usuários | "How do I invite a new user?", "How do I make a user an administrator?", "How do I deactivate a user?" |
-| Visão geral das configurações | "How do I enable barcode detection?", "Why isn't PO matching active?", "Where do I find the email import settings?" |
+| Informações da empresa | "Como altero a morada da nossa empresa?", "Onde carrego o nosso logótipo?", "Que domínios estão registados para a nossa organização?" |
+| Importação | "A importação por e-mail está ativa para nós?", "Para que endereço de e-mail enviamos os documentos?", "Como configuro uma importação por FTP ou SFTP?" |
+| Classificar e extrair | "Que modelo de IA é utilizado para a extração?", "A divisão de documentos por códigos de barras está ativa para nós?", "Posso utilizar outro modelo de IA para um fornecedor?" |
+| Usuários | "Como convido um novo utilizador?", "Como atribuo a um utilizador o papel de administrador?", "Como desativo um utilizador?" |
+| Visão geral das configurações | "Como ativo a deteção de códigos de barras?", "Porque não está ativa a correspondência de encomendas?", "Onde encontro as definições de importação por e-mail?" |
 
 Clique em uma pergunta e ela é enviada imediatamente. Abaixo das três perguntas, o painel diz *I can also help with any other setting — just ask.* Durante uma conversa, o atalho **Help with this page** (Ajuda com esta página) permanece na parte inferior e pergunta "What can I configure on this page?".
 
 ### Exemplo 1: encontrar uma configuração
 
-Você pergunta **"How do I change our company address?"** (Como altero o endereço da empresa?).
+Você pergunta **"Como altero a morada da nossa empresa?"** (Como altero o endereço da empresa?).
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-pt.png" alt="O assistente responde com o caminho até o endereço da empresa e um botão Abrir configuração"><figcaption><p>A resposta indica o local, e o cartão mostra o caminho exato e um botão <strong>Open setting</strong>.</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ A resposta diz onde o endereço fica. O cartão abaixo mostra o caminho (**Setti
 
 ### Exemplo 2: entender uma configuração com vários nomes
 
-Você pergunta **"How do I enable barcode detection?"** (Como habilito a detecção de código de barras?).
+Você pergunta **"Como ativo a deteção de códigos de barras?"** (Como habilito a detecção de código de barras?).
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-pt.png" alt="O assistente explica as três configurações de código de barras e quando habilitar cada uma"><figcaption><p>Quando uma palavra corresponde a várias configurações, o assistente lista cada uma com <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
 
@@ -59,7 +59,7 @@ Você pergunta **"How do I enable barcode detection?"** (Como habilito a detecç
 
 ### Exemplo 3: descobrir por que algo não acontece
 
-Você pergunta **"Why isn't PO matching active?"** (Por que o PO Matching não está ativo?).
+Você pergunta **"Porque não está ativa a correspondência de encomendas?"** (Por que o PO Matching não está ativo?).
 
 <figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-pt.png" alt="O assistente mostra o valor atual de cada configuração de PO Matching"><figcaption><p>Em uma pergunta do tipo "por que", o assistente lê a sua configuração e mostra cada configuração com o seu valor <strong>Current</strong> (atual).</p></figcaption></figure>
 
@@ -90,9 +90,9 @@ Não confunda **Regras de validação personalizadas** (regras para os campos de
 
 ### Exemplo 6: mais perguntas para experimentar
 
-* "Which AI model is used for extraction?"
-* "Is splitting documents on barcodes active for us?"
-* "How do I deactivate a user?"
+* "Que modelo de IA é utilizado para a extração?"
+* "A divisão de documentos por códigos de barras está ativa para nós?"
+* "Como desativo um utilizador?"
 * "Where do I set how long documents are kept?"
 * "Which settings affect the touchless rate?"
 * "Show me a screenshot of the supplier portal settings."

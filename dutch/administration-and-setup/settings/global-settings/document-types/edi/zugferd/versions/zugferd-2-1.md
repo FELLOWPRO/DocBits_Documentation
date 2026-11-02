@@ -1,10 +1,10 @@
-# ZUGFeRD 2.1 (Factur-X 1.0) Veldomapping
+# ZUGFeRD 2.1 (Factur-X 1.0) Veldtoewijzing
 
 ## Overzicht
 
 ZUGFeRD 2.1 (Factur-X 1.0) was de eerste versie van de standaard. Hoewel deze verouderd is, gebruiken veel documenten nog steeds dit formaat. DocBits biedt volledige ondersteuning voor het extraheren van gegevens uit ZUGFeRD 2.1 (Factur-X 1.0) XML-bestanden.
 
-## Header Veldomapping
+## Header Veldtoewijzing
 
 ### Factuuridentificatie
 
@@ -20,7 +20,7 @@ Naast de ruwe `INVOICE_TYPE_CODE` geeft de standaard TRANSFORMATION-XSLT twee af
 
 | DocBits-veld | Bron | Logica |
 | :--- | :--- | :--- |
-| `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` of `261` → **Credit Note**; elke andere code → **Invoice** |
+| `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` van `261` → **Creditnota**; elke andere code → **Factuur** |
 | `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Niet-leeg → **Purchase Invoice**; leeg/ontbrekend → **Cost Invoice** |
 
 ### Belastingverdeling (tier-geclassificeerd)

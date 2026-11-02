@@ -1,5 +1,7 @@
 # Wijs opeenvolgend toe aan groepen
 
+<figure><img src="../../../../.gitbook/assets/workflow_card_action_assign_doc_to_group_sequential_v2-nl-nl.png" alt="Wijs opeenvolgend toe aan groepen, Versie 2" width="634"><figcaption><p>Versie 2</p></figcaption></figure>
+
 ## **Doel**
 
 Met de workflow-kaart "**Wijs het document opeenvolgend toe aan de groepen**" kunnen documenten sequentieel worden toegewezen aan een of meer geselecteerde groepen. De prioriteitswaarde bepaalt de toewijzingsvolgorde, waarbij lagere getallen een hogere prioriteit vertegenwoordigen.

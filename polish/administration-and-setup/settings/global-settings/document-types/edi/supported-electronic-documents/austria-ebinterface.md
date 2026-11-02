@@ -30,7 +30,7 @@ ebInterface to austriacki standard e-fakturowania utrzymywany przez Austriacką 
 
 ## Domyślny podglad
 
-<figure><img src="austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/austria-ebinterface-preview.png" alt="Podglad faktury Austria ebInterface w DocBits"><figcaption><p>Domyślny podglad DocBits dla faktury AUSTRIA EBINTERFACE</p></figcaption></figure>
 
 ## Mapowanie pól
 

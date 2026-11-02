@@ -66,7 +66,7 @@ Wszystko, co ekran walidacji i ustawienia kolumn tabeli potrafią zrobić z tabe
 
 | Narzędzie | Opis |
 |------|-------------|
-| `list_tables` / `get_table_config` | Tabele i kolumny typu dokumentu wraz z flagami Required / Read Only / Hidden / Use AI |
+| `list_tables` / `get_table_config` | Tabele i front typu dokumentu wraz z flagami Wymagane / Tylko do odczytu / Ukryte / Użyj AI |
 | `create_table` | Dodaje drugą tabelę pozycji do typu dokumentu |
 | `add_table_column` / `delete_table_column` | Dodaje kolumnę tabeli lub ją miękko usuwa |
 | `set_ai_table_config` | Przełącza ekstrakcję tabel AI, tryb wizyjny i strukturalny dla organizacji |

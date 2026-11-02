@@ -139,7 +139,7 @@ Dit is de kerndefinitie van de logica van de regel, waarin wordt gespecificeerd 
 | Regelnummer | `POSITION` | `line_number` | Tekst, exact. Alleen nuttig wanneer de leverancier de regelnummers van de order op het document afdrukt. |
 | Item-identificatie | `ITEM_IDENTIFIER` | `item_identifier` | Tekst, exact. Artikelnummer of leveranciersartikelnummer, ook via de [Leveranciersartikelnummerkaart](supplier-item-number-map-admin-documentation.md). |
 | Effective normalized quantity | `QUANTITY_EFFECTIVE_NORMALIZED` | `quantity_effective_normalized` | Numeriek. De hoeveelheid die door **Match hoeveelheid op** wordt geselecteerd, omgezet naar dezelfde eenheid aan beide zijden (omzetting van eenheidscodes, "per"-hoeveelheden). |
-| Effective normalized unit price | `UNIT_PRICE_EFFECTIVE_NORMALIZED` | `unit_price_effective_normalized` | Numeriek. De eenheidsprijs per afzonderlijke eenheid na kortingen en na **Eenheidsprijs per** — en, als [Bereken PO-eenheidsprijs](calculate-po-unit-price.md) aanstaat, de prijs berekend uit het bedrag en de hoeveelheid van de orderregel. |
+| Effectieve genormaliseerde eenheidsprijs | `UNIT_PRICE_EFFECTIVE_NORMALIZED` | `unit_price_effective_normalized` | Numeriek. De eenheidsprijs per afzonderlijke eenheid na kortingen en na **Eenheidsprijs per** — en, als [Bereken PO-eenheidsprijs](calculate-po-unit-price.md) aanstaat, de prijs berekend uit het bedrag en de hoeveelheid van de orderregel. |
 | Nettobedrag | `NET_AMOUNT` | `total_amount` | Numeriek. Gebruikt door regels Match op totaal. |
 
 **Voorbeeld: strenge PO-matchregel (`DefaultRule#1`)**

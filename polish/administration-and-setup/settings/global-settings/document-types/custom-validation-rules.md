@@ -174,7 +174,7 @@ Porównuje wartość pola z innym polem, z **dzisiejszą datą** lub ze stałą 
 * Invoice Date **w dniu lub przed (≤)** dzisiaj — brak faktur z datą przyszłą
 * Discount **mniejszy niż** 100
 
-#### Allowed values — ze stałej listy
+#### Dozwolone wartości — ze stałej listy
 
 <figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="kontrola Allowed values"><figcaption><p>Allowed values: jedna wartość w wierszu, opcjonalnie bez rozróżniania wielkości liter</p></figcaption></figure>
 
@@ -223,6 +223,18 @@ Przetestuj każdą nową regułę na co najmniej jednym dokumencie, który powin
 * Reguły są uruchamiane w kolejności priorytetu (potem według klucza). Pole pokazuje **jeden** błąd: jeśli dwie reguły nie przechodzą dla tego samego pola, wygrywa pierwsza; kolejne reguły jej nie nadpisują.
 * Ostrzeżenia są zbierane osobno i nigdy nie ukrywają błędu.
 * Jeśli reguły nie da się ocenić — na przykład z powodu dzielenia przez zero w formule — jest pomijana. Uszkodzona reguła nigdy nie oznacza dokumentu omyłkowo jako nieprawidłowego.
+
+## Dzienniki <a id="logs"></a>
+
+Każda reguła może zapisywać swoje oceny. Otwórz stronę **Rejestry wykonywania reguł** danego typu dokumentu: nagłówek podaje typ dokumentu, a ikona odświeżania ładuje listę ponownie.
+
+**Znajdź według** określa, czego szukasz (domyślnie **Klucz reguły**), a wartość wpisujesz w polu obok. Przy szukaniu po dokumencie **Typ reguły** jest wymagany. Zawęź wynik za pomocą **Wynik**, **Wykonany**, **Od daty** i **Do tej pory**.
+
+<figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-pl.png" alt="Rejestry wykonywania reguł"><figcaption><p>Strona rejestrów wykonywania reguł: u góry filtry, poniżej jeden wiersz na ocenę. Dopóki nie wyszukasz, tabela podpowiada, co wpisać.</p></figcaption></figure>
+
+Otwórz wpis, aby zobaczyć szczegóły, w tym **ślad warunku**: każdy wiersz *Applies when* z wartością oczekiwaną, rzeczywistą wartością dokumentu i informacją, czy warunek został spełniony. Zobacz [Odczyt śladu warunku w logach](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+
+Ta sama strona pokazuje też logi reguł transformacji i wyboru układu.
 
 ## Przepisy
 

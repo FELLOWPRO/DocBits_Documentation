@@ -1,10 +1,29 @@
 # Transformation Rules
 
+## From extracted value to downstream verification
+
+<figure><img src="../../../../.gitbook/assets/process-transformation-en-20261028.png" alt="How transformation rules work: An extracted value becomes a specifically processed value."><figcaption><p>An extracted value becomes a specifically processed value. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+
+A transformation changes existing data; it does not perform OCR again. It reads an input, checks its condition, runs the configured steps and writes the result back. If the condition is not met, the rule is skipped.
+
+**Example:** A table cell contains `STK`. A value mapping that applies to the supplier writes `PCE`. Downstream PO matching then uses the normalized unit code. Also test a value that is already normalized and a value to which the rule should not apply.
+
+1. **Trigger:** During document processing, the rules run after extraction. They can also run again when modified extraction data is saved.
+2. **Order:** Within a run, the scopes are processed in this order: **Header field → Routing → Table rows → Table column**. Within each scope, priority and key determine the order.
+3. **Effect:** A table rule can change or remove line items. This can change the row count and the prerequisites for purchase order matching. Replacing rows that have already been matched can remove an existing assignment.
+4. **Control:** Compare input, preview and saved result. When execution logging is enabled, the condition trace shows why a rule was applied or skipped.
+
+**Check repetitions:** A rule should not change its already prepared value each time it is saved. Use appropriate idempotent steps, an unchanged source or the intended one-time execution. The details and examples follow below; [PO matching rules](more-settings/purchase-order/purchase-order-matching-rules.md) explain the downstream mapping.
+
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4" %}
+
+## Practical example
+
+[Correct an OCR error in a PO number](transformation-rules/correct-po-number-ocr-error.md): change the affected `060` prefix to `06O`, preserve the remaining characters and verify unaffected values.
 
 ## Overview
 
-Transformation rules clean up or rewrite extracted data **automatically**, every time a document is processed and every time it is saved. A rule can change:
+**Trigger:** During document processing, the rules run after extraction. They can also run again when modified extraction data is saved.
 
 * a **header field** (invoice number, currency, supplier tax ID …),
 * a **column** in every row of a table (unit, item number, price basis …),
@@ -89,19 +108,21 @@ Two options control how often the rule applies:
 
 ### The steps
 
+In the examples below, `·` marks one space so that leading, trailing and repeated spaces remain visible. Enter a real space in DocBits, not the `·` symbol.
+
 <figure><img src="../../../../.gitbook/assets/transformation-step-menu.png" alt="The step menu"><figcaption><p>All steps, grouped by purpose</p></figcaption></figure>
 
 | Step | Settings | Example input → output |
 | --- | --- | --- |
 | **Change case** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
-| **Trim** | side (both, left, right); characters (blank = whitespace) | `  4711 ` → `4711`; with characters `0` and side left: `004711` → `4711` |
+| **Trim** | side (both, left, right); characters (blank = whitespace) | `··4711·` → `4711`; with characters `0` and side left: `004711` → `4711` |
 | **Pad** | length, fill character, side | length 10, `0`, left: `4711` → `0000004711` |
 | **Truncate** | maximum length | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
 | **Affix** | add prefix, add suffix, strip prefix, strip suffix; text | add prefix `INV-`: `4711` → `INV-4711`; strip prefix `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
 | **Sanitise** | keep only (alphanumeric, letters, digits, alphanumeric + space) or strip given characters | keep alphanumeric: `DE 123.456.789` → `DE123456789` |
 | **Take a slice** | start, length or end | start 0, length 4: `2026-09-29` → `2026` |
 | **Extract** | pattern, capture group | pattern `PO[- ]?(\d+)`, group 1: `Order PO-45001234` → `45001234` |
-| **Find & replace** | pattern, replace with, count (0 = all) | pattern `\s+`, replace with ` `: `ACME    GmbH` → `ACME GmbH` |
+| **Find & replace** | pattern, replace with, count (0 = all) | pattern `\s+`, replace with one space: `ACME····GmbH` → `ACME·GmbH` |
 | **Map values** | mappings (from → to), value when no match (blank = keep input), ignore case | `STK → PCE`: `stk` → `PCE` |
 | **Reformat date** | output pattern (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y`: `2026-09-29` → `29.09.2026` |
 | **Format number** | locale (de_DE, en_US, en_GB, fr_FR), min. and max. decimals | de_DE, 2 decimals: `1234.5` → `1.234,50` |
@@ -127,6 +148,15 @@ The live preview runs the rule on a sample while you build it:
 * **Condition values** — for rules with a condition, type the values of the condition fields. The preview shows **Conditions match — rule runs** or **Conditions do not match — rule is skipped**.
 * Below, you see the value after **every step** and the final result that would be written ("invoice_id → INV-230620-03A", or "unchanged").
 
+**Spaces in sample values:** `·` below represents one ordinary space. The markers make the input readable; enter actual spaces in **Sample input**.
+
+| Step | Sample input (spaces shown as `·`) | Result |
+| --- | --- | --- |
+| Trim, both sides | `··4711·` | `4711` |
+| Find & replace: `\s+` with one space | `ACME····GmbH` | `ACME·GmbH` |
+
+Trim removes whitespace at the ends; it does not collapse spaces between words. For Find & replace, enter one actual space in **Replace with**.
+
 Nothing is saved while you use the preview. Click **Save** to store the rule.
 
 ## Examples
@@ -134,7 +164,7 @@ Nothing is saved while you use the preview. Click **Save** to store the rule.
 ### Clean up a supplier's invoice number
 
 Header field **Invoice Number** · only when *Supplier ID is HP0000278* · Trim → Change case UPPERCASE → Affix add prefix `INV-`.
-Sample `  230620-03a ` → `INV-230620-03A`. See the screenshot of the pipeline above.
+Sample `··230620-03a·` → `INV-230620-03A` (`·` = one space). See the screenshot of the pipeline above.
 
 ### Map unit codes
 
@@ -201,10 +231,7 @@ A **Routing** rule does not change a field. It stamps an attribute on the docume
 
 Most steps give the same result when they run on their own output — trimming a trimmed value, mapping `PCE` again, adding a prefix that is already there. These rules can safely run on every save.
 
-**Take a slice**, **Extract** and **Find & replace** are different: run again on their own result, they keep changing it (a slice takes the first four characters of the first four characters …). DocBits therefore does not let you save a rule that applies these steps to its own target field. Either:
-
-* switch on **Run only once per document**, or
-* **Read from another field**, so the input stays unchanged.
+The current editor treats **Take a slice**, **Extract** and **Find & replace** as position-dependent steps and requires **Read from another field**, so their input stays separate from the target. **Run only once per document** does not remove this restriction. Where the requirement is a conditional prefix replacement, use the [two Affix steps in the PO prefix tutorial](#video-tutorial-correct-an-ocr-error-in-a-po-prefix).
 
 ## Transformation rules and purchase order matching
 
@@ -241,7 +268,7 @@ With **Log execution** on, every application of the rule is written to **Documen
 | Symptom | What to check |
 | --- | --- |
 | The rule did not change anything | Is it active, and is the feature enabled for the document type? Is the condition true for this document (exact value, including spaces and case)? Has a **run once** rule already been applied to the document? Check the log trace. |
-| The value changes again on every save | The pipeline contains Take a slice, Extract or Find & replace. Switch on **Run only once per document**, or read from another field. |
+| The value changes again on every save | Check the steps and their conditions. Position-dependent steps require a separate source field in the current editor; Run only once does not remove that restriction. |
 | A table gets one more row on every save | An **Add a row** step without **Clear all rows** before it. Add the clear step first, or switch on run once. |
 | The purchase order match is lost after saving | A table rule replaced the matched lines. The reason on the document names the rule; make the rule reproduce the same lines, or set it to run once. |
 | A matching rule never runs after the transformation | The rule changed the number of lines; adjust the activation condition of the matching rule. |
@@ -254,3 +281,7 @@ With **Log execution** on, every application of the rule is written to **Documen
 * [Custom Validation Rules](custom-validation-rules.md) — check the transformed values
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — choose the layout a document uses
 * [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)
+
+## Detailed practical training
+
+[Complete practical overview and nine administrator tutorials](transformation-rules/complete-practical-guide.md) cover all reviewed transformation operations, tested examples, counterexamples and current preview limitations.

@@ -193,7 +193,7 @@ między wydaniami są udokumentowane w
 
 ## R1.3 — Sandbox 1 czerwca 2027 · Produkcja 16 czerwca 2027
 
-**Auto Accounting Rule Manager**
+**Menedżer reguł automatycznego rozliczania**
 
 - Reguły automatycznie przypisują konta i wymiary, w zakresie podorganizacji
   i typu dokumentu, wraz z ekranem audytu, który pokazuje, która reguła

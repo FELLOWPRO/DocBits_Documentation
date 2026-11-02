@@ -35,5 +35,5 @@ ZUGFeRD 2.2, uitgebracht in 2022, sluit aan bij de Europese norm EN 16931 en is 
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

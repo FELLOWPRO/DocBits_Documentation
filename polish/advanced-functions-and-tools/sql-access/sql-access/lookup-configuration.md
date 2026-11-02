@@ -1,4 +1,4 @@
-# Lookup Configuration
+# Konfiguracja wyszukiwania
 
 ## Tabela `public.lookup_configuration`
 
@@ -11,10 +11,10 @@
 * `lookup_name`: internal
 * `conflict_handle`: internal
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
-* `deleted_on`: timestamp with time zone
+* `deleted_on`: znacznik czasu ze strefą czasową
 * `match_all`: boolean
 * `last_modified_by`: internal
 * `deleted_by`: internal

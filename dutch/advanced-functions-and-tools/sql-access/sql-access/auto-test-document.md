@@ -1,4 +1,4 @@
-# Auto test document
+# Automatisch testdocument
 
 ## Kolommen
 
@@ -8,8 +8,8 @@
 * `doc_type`: DOC-type
 * `extracted_data`: text
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: tijdstempel met tijdzone
+* `last_modified_on`: tijdstempel met tijdzone
 * `is_deleted`: boolean
 * `filename`: intern
 

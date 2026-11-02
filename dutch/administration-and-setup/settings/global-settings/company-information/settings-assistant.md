@@ -1,4 +1,4 @@
-# Settings Assistant
+# Instellingenassistent
 
 De **Settings Assistant** (instellingenassistent) is een chatpaneel in het gedeelte Instellingen. U stelt een vraag in gewone taal, en de assistent leest de configuratie van uw organisatie, geeft antwoord en brengt u rechtstreeks naar de juiste instelling. Hij kan u ook waarschuwen wanneer iets in uw configuratie niet meer werkt en, met uw bevestiging, een instelling voor u wijzigen.
 
@@ -55,5 +55,5 @@ Op elke pagina van het gedeelte Instellingen vindt u naast het zoekveld voor ins
 
 ## Gerelateerde pagina's
 
-* [Settings Assistant: wat de chat kan doen](settings-assistant-chat.md)
+* [Instellingenassistent: wat de chat kan doen](settings-assistant-chat.md)
 * [Bedrijfsvoorkeuren](company-preferences.md)

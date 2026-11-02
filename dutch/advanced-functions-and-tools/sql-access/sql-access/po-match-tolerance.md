@@ -1,4 +1,4 @@
-# PO match tolerance
+# Tolerantie voor inkoopordermatching
 
 ## Tabel `public.po_match_tolerance`
 

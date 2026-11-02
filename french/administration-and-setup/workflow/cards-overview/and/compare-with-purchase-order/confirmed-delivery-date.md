@@ -1,6 +1,6 @@
 # Confirmed Delivery Date
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-01-fr-20261023.png" alt="Comparaison des bons de commande Type de date de livraison date de livraison Opérateur date de livraison acceptée dans la table de recherche des données principales Tableau des données de base" width="563"><figcaption></figcaption></figure>
 
 ## **Objectif**
 

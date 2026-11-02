@@ -35,5 +35,5 @@ ZUGFeRD 1.0 was de oorspronkelijke Duitse hybride factuurstandaard, uitgebracht 
 ## Gerelateerd
 
 * [ZUGFeRD-configuratie](../zugferd/)
-* [ZUGFeRD-veldtoewijzing](../zugferd/versions/)
+* [ZUGFeRD-veldtoewijzing](../zugferd/README.md)
 * [Ondersteunde elektronische documenten](./)

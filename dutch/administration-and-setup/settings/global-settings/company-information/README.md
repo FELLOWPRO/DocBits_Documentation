@@ -1,5 +1,13 @@
 # Bedrijfsinformatie
 
+## Videotutorial: Bedrijf, abonnement en audit
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/nl.mp4" %}
+Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
+{% endembed %}
+
+De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-nl.png" alt="Bedrijfsgegevens met afgeschermde organisatiewaarden."><figcaption><p>Bedrijfsgegevens met afgeschermde organisatiewaarden.</p></figcaption></figure>
 
 Op de pagina Bedrijfsinformatie beheert u het profiel van uw bedrijf, voorkeuren en abonnementsgegevens. De pagina is ingedeeld in de volgende onderdelen:
@@ -32,7 +40,7 @@ Dit onderdeel bevat de kerngegevens van uw bedrijf, gegroepeerd in vier gebieden
 
 Klik na het invoeren of bijwerken van velden op **Opslaan** om uw wijzigingen toe te passen. De **?**-pictogrammen naast de juridische identificatiegegevens tonen extra uitleg bij het veld. Selecteer de kop van een onderdeel om het formulier uit of in te klappen.
 
-## E-mail domains
+## E-maildomeinen
 
 Organisatiebeheerders kunnen **Instellingen → Bedrijfsinformatie → E-maildomeinen** openen om de domeinen te beheren die worden gebruikt voor automatische toewijzing aan een organisatie. Wanneer iemand zich aanmeldt met Microsoft of Google en nog geen lid is van een organisatie, kan DocBits die persoon aan deze organisatie toewijzen als het e-mailadres een van de vermelde domeinen gebruikt. Een domein kan slechts bij één organisatie horen.
 
@@ -52,7 +60,7 @@ Configureer standaardinstellingen voor het hele bedrijf:
 
 Klik na het aanbrengen van wijzigingen op **Opslaan**.
 
-## App-Color
+## Applicatiekleur
 
 Pas de primaire kleur van de DocBits-interface aan. Dit is handig om verschillende omgevingen visueel van elkaar te onderscheiden (bijv. dev versus productie).
 

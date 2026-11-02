@@ -1,6 +1,6 @@
 # Calculate in
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-table-02-it-20261023.png" alt="Tabella Calcolare in Nome della tabella : Nome della colonna Operatore matematico Nome della colonna , se la colonna column name dependency corrisponde al pattern regex Python Modello Regex e aggiunge il risultato in Colonna dei risultati ." width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

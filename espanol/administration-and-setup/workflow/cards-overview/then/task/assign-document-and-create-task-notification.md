@@ -1,6 +1,6 @@
 # Assign Document and Create Task/Notification
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-then-task-09-es-20261023.png" alt="Tarea Asigna el documento secuencialmente a y crea un Tarea/Notificación con título: Título , description: Descripción y prioridad: Prioridad a Tipo de cesionario devuelto por la tabla de decisiones. Notifíqueselo por correo electrónico: Enviar correo electrónico . Establecer una prioridad de asignación de Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito**
 

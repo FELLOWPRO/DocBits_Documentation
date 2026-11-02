@@ -2,39 +2,39 @@
 hidden: true
 ---
 
-# Troubleshooting
+# Problemen oplossen
 
-## Here is some advice on troubleshooting common problems:
+## Tips voor het oplossen van veelvoorkomende problemen
 
-**Data formatting errors:**
+**Fouten in gegevensopmaak:**
 
-* Carefully review the EDI structure and format of your messages to ensure they comply with standards and specifications.
-* Validate data fields for correct syntax and formatting according to agreed standards such as ANSI X12 or EDIFACT.
-* Make sure the transformations and templates used are correctly configured to properly format and interpret the data.
+* Controleer de EDI-structuur en het berichtformaat zorgvuldig op overeenstemming met de normen en specificaties.
+* Valideer de syntaxis en opmaak van velden volgens afgesproken normen zoals ANSI X12 of EDIFACT.
+* Controleer of transformaties en sjablonen juist zijn ingesteld om gegevens correct op te maken en te interpreteren.
 
-**Partner compatibility issues:**
+**Compatibiliteitsproblemen met partners:**
 
-* Review your business partner's configurations and specifications to ensure they match your own.
-* Communicate with your partner to identify any discrepancies or incompatibilities and work together to find solutions.
-* Implement adjustments in your EDI configurations if necessary to improve compatibility with your partner.
+* Controleer of de configuraties en specificaties van uw zakenpartner overeenkomen met die van uzelf.
+* Bespreek verschillen en incompatibiliteiten met uw partner en zoek samen oplossingen.
+* Pas EDI-configuraties zo nodig aan om de compatibiliteit te verbeteren.
 
-**Handling transmission errors:**
+**Verzendfouten afhandelen:**
 
-* Monitor your EDI transmissions regularly to identify potential errors or failures early.
-* Implement mechanisms for error detection and remediation, such as automated notifications of transmission errors or setting up retry mechanisms for failed transmissions.
-* Perform regular tests of your transmission processes to ensure they work reliably and without errors.
+* Controleer EDI-overdrachten regelmatig om fouten en uitval vroeg te herkennen.
+* Richt foutdetectie en herstel in, bijvoorbeeld automatische meldingen bij verzendfouten en nieuwe pogingen bij mislukte overdrachten.
+* Test overdrachtsprocessen regelmatig om de betrouwbaarheid en correcte werking te controleren.
 
-**Documentation and logging of errors:**
+**Fouten documenteren en vastleggen:**
 
-* Keep detailed logging of all errors and problems in EDI transactions, including causes and actions taken.
-* Document solutions to recurring problems to resolve and prevent future errors more quickly.
+* Leg fouten en problemen bij EDI-transacties gedetailleerd vast, inclusief oorzaken en genomen maatregelen.
+* Documenteer oplossingen voor terugkerende problemen om toekomstige fouten sneller op te lossen en te voorkomen.
 
-**Involve subject matter experts:**
+**Deskundigen betrekken:**
 
-* When necessary, bring in subject matter experts or EDI consultants to solve complex problems or address specific challenges.
-* Use resources such as forums, training, or support from EDI providers for additional assistance with troubleshooting.
+* Schakel zo nodig deskundigen of EDI-adviseurs in voor complexe problemen en specifieke uitdagingen.
+* Gebruik fora, trainingen en ondersteuning van EDI-leveranciers voor extra hulp bij probleemoplossing.
 
-By systematically applying these tips, you can effectively troubleshoot EDI transactions and ensure the reliability of your electronic business communications.
+Door deze tips systematisch toe te passen, kunt u problemen met EDI-transacties oplossen en de betrouwbaarheid van elektronische zakelijke communicatie verbeteren.
 
 ## Effectieve regels en activering
 

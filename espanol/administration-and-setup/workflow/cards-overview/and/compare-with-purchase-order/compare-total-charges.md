@@ -1,6 +1,6 @@
 # Compare Total Charges
 
-<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/workflow-card-and-compare-with-purchase-order-14-es-20261023.png" alt="Comparar con la orden de compra Compare los costes totales en el campo Nombre del campo Operador carga correspondiente en el pedido con tolerancias de Tolerancia Importe Tipo de tolerancia . Cargar ID como final del nombre del campo después del separador Valor ." width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

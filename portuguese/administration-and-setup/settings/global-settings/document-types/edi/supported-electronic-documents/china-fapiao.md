@@ -36,7 +36,7 @@ O catálogo inclui Fapiao, E-Fapiao, General VAT Invoice e Special VAT Invoice. 
 
 ## Pré-visualização padrão
 
-<figure><img src="china-fapiao-preview.png" alt="Pré-visualização da Fatura IVA Geral China Fapiao no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma Fatura IVA Geral China Fapiao (普通发票)</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/china-fapiao-preview.png" alt="Pré-visualização da Fatura IVA Geral China Fapiao no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma Fatura IVA Geral China Fapiao (普通发票)</p></figcaption></figure>
 
 ## Mapeamento de campos
 
@@ -89,5 +89,5 @@ O elemento raiz é `<fapiao>` com o namespace `urn:china:tax:fapiao:1.0`. A clas
 
 ## Relacionado
 
-- [Padrões de e-fatura atualmente suportados](../../currently-supported-e-invoice-standards/)
+- [Padrões de e-fatura atualmente suportados](../currently-supported-e-invoice-standards/README.md)
 - [Documentos eletrônicos suportados](./)

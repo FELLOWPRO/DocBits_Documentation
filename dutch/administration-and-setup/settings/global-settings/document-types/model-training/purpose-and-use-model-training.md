@@ -1,33 +1,35 @@
-# Purpose and Use: Model Training
+# Doel en gebruik: modeltraining
 
-Regular model training is critical to ensure that a document processing system continues to work effectively and accurately as document formats and content change.
+**Toepassing van deze richtlijnen:** dit zijn algemene aanbevelingen voor machinelearning. Beschikbare trainingsopties hangen af van de gebruikte DocBits-versie, configuratie en ondersteunde API of editor. Verwijzingen naar hyperparameters, modelarchitectuur, versleuteling of automatisering betekenen niet dat hiervoor in elke installatie een instelbare gebruikersinterface bestaat.
 
-**Here are some key reasons for regular model training:**
+Regelmatige modeltraining helpt een documentverwerkingssysteem effectief en nauwkeurig te blijven werken wanneer documentformaten en inhoud veranderen.
 
-**Adaptation to new formats:**
+**Belangrijke redenen voor regelmatige modeltraining:**
 
-* Documents are often created in different formats, be it PDF, Word, Excel, or others.
-* New versions of these formats may have additional features or changes in formatting that the processing system may not recognize unless it is updated accordingly.
-* By regularly training the model, the system can adapt to these new formats to ensure smooth processing.
+**Aanpassen aan nieuwe formaten:**
 
-**Adaptation to changing content:**
+* Documenten worden in uiteenlopende formaten gemaakt, zoals PDF, Word en Excel.
+* Nieuwe versies van deze formaten kunnen extra functies of opmaakwijzigingen bevatten die het verwerkingssysteem zonder een bijbehorende update mogelijk niet herkent.
+* Regelmatige modeltraining kan het systeem helpen zich aan nieuwe formaten aan te passen voor een soepele verwerking.
 
-* The content of documents can change over time, be it due to updates to business processes, changes in policies, or new industry standards.
-* Regular training allows the processing system to adapt to these changes and continue to deliver accurate results.
+**Aanpassen aan veranderende inhoud:**
 
-**Optimizing accuracy:**
+* De inhoud van documenten kan veranderen door aangepaste bedrijfsprocessen, gewijzigd beleid of nieuwe sectornormen.
+* Regelmatige training helpt het systeem zich hieraan aan te passen en nauwkeurige resultaten te blijven leveren.
 
-* By training the model with new data, algorithms and models can be continuously improved to increase the accuracy of document processing.
-* This is especially important in areas where precision and reliability are critical, such as processing financial documents or medical records.
+**Nauwkeurigheid verbeteren:**
 
-**Handling exceptions:**
+* Door met nieuwe gegevens te trainen, kunnen algoritmen en modellen voortdurend worden verbeterd voor nauwkeurigere documentverwerking.
+* Dit is vooral belangrijk wanneer precisie en betrouwbaarheid essentieel zijn, bijvoorbeeld bij financiële documenten of medische dossiers.
 
-* Regular model training allows the system to better identify and handle exceptions and boundary conditions.
-* This can help reduce errors and improve overall system performance.
+**Uitzonderingen verwerken:**
 
-**Ensuring compliance:**
+* Regelmatige modeltraining helpt het systeem uitzonderingen en grensgevallen beter te herkennen en te verwerken.
+* Dit kan fouten verminderen en de algehele systeemprestaties verbeteren.
 
-* In industries with strict compliance requirements, it is important that the document processing system is always up to date to meet legal requirements.
-* Regular training and updating of the model can help ensure the system complies with current standards.
+**Naleving ondersteunen:**
 
-Overall, regular model training is an essential component to the effectiveness and reliability of a document processing system. It allows the system to continuously adapt to changing requirements and deliver accurate results, which in turn improves efficiency and productivity.
+* In sectoren met strenge nalevingsvereisten moet het documentverwerkingssysteem actueel blijven om aan wettelijke eisen te voldoen.
+* Regelmatige training en modelupdates kunnen helpen het systeem op de actuele normen af te stemmen.
+
+Regelmatige modeltraining is een belangrijk onderdeel van een effectief en betrouwbaar documentverwerkingssysteem. Het helpt het systeem zich aan veranderende vereisten aan te passen en nauwkeurige resultaten te leveren, wat de efficiëntie en productiviteit verbetert.

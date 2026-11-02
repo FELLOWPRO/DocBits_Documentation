@@ -1,4 +1,4 @@
-# E-Mail-templates
+# E-mailsjablonen
 
 ## **Overzicht**
 

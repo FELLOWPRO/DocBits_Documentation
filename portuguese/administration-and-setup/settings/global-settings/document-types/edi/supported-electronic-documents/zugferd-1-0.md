@@ -35,5 +35,5 @@ O ZUGFeRD 1.0 foi o padrão híbrido alemão original de fatura, lançado em 201
 ## Relacionados
 
 * [Configuração do ZUGFeRD](../zugferd/)
-* [Mapeamento de campos do ZUGFeRD](../zugferd/versions/)
+* [Mapeamento de campos do ZUGFeRD](../zugferd/README.md)
 * [Documentos eletrônicos suportados](./)

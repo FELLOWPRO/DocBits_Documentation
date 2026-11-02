@@ -1,4 +1,4 @@
-# Purchase Order BOD Mapping
+# Purchase-Order-BOD-Zuordnung
 
 Diese Seite dokumentiert, wie DocBits Infor M3 `SyncPurchaseOrder` BODs einliest und die Felder auf die internen Tabellen `PURCHASE_ORDER_HEADER` und Purchase Order Line abbildet.
 
@@ -12,7 +12,7 @@ Original BOD Mapping Referenz (PDF)
 - **Keine Maßeinheiten-Konvertierung in DocBits.** Mengen werden mit ihrer `@unitCode` gespeichert. `ReceivedBaseUOMQuantity` ist der von M3 vorberechnete Basis-UoM-Wert — DocBits speichert ihn unverändert.
 - **Der Header-Status wird aus der SXE-Stage übernommen, sofern verfügbar.** DocBits liest `UserArea/Property[@name='poeh.stagecd']` (Werte `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) und nutzt diesen Wert als maßgeblichen Header-Status. Das Standard-Feld `Status/Code` wird als Fallback gespeichert für BODs, in denen `poeh.stagecd` nicht befüllt ist — die Belegung dieser UserArea-Property ist mandantenspezifisch.
 - **Keine automatische Teilmengen-Status-Logik.** DocBits leitet keinen Status aus erhaltener vs. bestellter Menge ab; der von M3 gelieferte Status wird 1:1 übernommen.
-- **`CONO`/`AccountingEntityID` ist nicht Bestandteil des PurchaseOrder-BODs.** Die Mandanten-Zuordnung über die Company-Number gilt für Stammdaten (siehe [Supplier BOD Mapping](supplier-bod-mapping.md)); Bestellungen werden über `LocationID` zugeordnet. Beachten Sie, dass `LocationID` **nicht global eindeutig** ist — wenn ein M3-Mandant (CONO) zwischen Umgebungen kopiert wird (zum Beispiel PRD → TST), kann dieselbe `LocationID` unter mehreren CONOs existieren. In solchen Setups sollten Sie den eingehenden BOD-Strom im ION-DataFlow auf die erwartete `AccountingEntity` filtern, um Cross-Environment-Kollisionen zu vermeiden.
+- **`CONO`/`AccountingEntityID` ist nicht Bestandteil des PurchaseOrder-BODs.** Die Mandanten-Zuordnung über die Company-Number gilt für Stammdaten (siehe [Supplier-BOD-Zuordnung](supplier-bod-mapping.md)); Bestellungen werden über `LocationID` zugeordnet. Beachten Sie, dass `LocationID` **nicht global eindeutig** ist — wenn ein M3-Mandant (CONO) zwischen Umgebungen kopiert wird (zum Beispiel PRD → TST), kann dieselbe `LocationID` unter mehreren CONOs existieren. In solchen Setups sollten Sie den eingehenden BOD-Strom im ION-DataFlow auf die erwartete `AccountingEntity` filtern, um Cross-Environment-Kollisionen zu vermeiden.
 
 ## Header-Mapping
 
@@ -133,7 +133,7 @@ line_mappings = {
 | `extended_amount` | `LNAM` / `LNA2` | Roher `ExtendedAmount` (Zeilensubtotal ohne Steuern/Rabatte). |
 | `currency` | `MPHEAD.IACUCD` | Transaktionswährung. Gelesen aus `TotalAmount/@currencyID`, mit `ExtendedAmount/@currencyID` als Fallback. |
 | `status` | `MPLINE.IBPUST` | Zeilenstatus. Wird für Reporting gespeichert; keine DocBits-Workflow-Logik leitet daraus etwas ab. |
-| `buyer_id` / `buyer_name` | `MPLINE.IBBUYE` / verknüpfter User | Käufer auf Zeilenebene. `buyer_name` wird von M3 auf der Zeile selten befüllt; die Lieferanten-Käufer-Referenz steht in [Supplier BOD Mapping](supplier-bod-mapping.md). |
+| `buyer_id` / `buyer_name` | `MPLINE.IBBUYE` / verknüpfter User | Käufer auf Zeilenebene. `buyer_name` wird von M3 auf der Zeile selten befüllt; die Lieferanten-Käufer-Referenz steht in [Supplier-BOD-Zuordnung](supplier-bod-mapping.md). |
 | `geo_code` | — | Geo-Code für US/CA-Steuer-Engines. Wird nur von ERPs befüllt, die ihn emittieren. |
 | `delivery_method` | `MPLINE.IBMODL` | Liefermethode der Zeile (M3 `MODL`-Code). |
 | `promised_delivery_date` | `CODT, DWDT/TIHM` | Vom Lieferanten bestätigtes Lieferdatum. |

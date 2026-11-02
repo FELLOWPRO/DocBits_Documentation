@@ -1,130 +1,24 @@
----
-description: Monitor workflow performance, manage workflows, and access the Card SDK
----
+# Dashboard
 
-# Workflow-Dashboard
+Das **Workflow-Dashboard** ist die Startseite des Workflow-Bereichs. Es zeigt, wie Ihre Workflows laufen – Ausführungssummen, Erfolgs- und Fehlerquoten, ein Diagramm der Ausführungen im Zeitverlauf und die letzte Aktivität – und bietet Zugriff auf die Workflow-Liste, den Test Manager und das Card SDK.
 
-Das Workflow-Dashboard ist Ihre zentrale Anlaufstelle zur Verwaltung und Uberwachung aller Workflows in DocBits. Greifen Sie darauf zu, indem Sie auf das **Workflows**-Symbol in der linken Seitenleiste klicken.
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard mit Ausführungssummen, Erfolgs- und Fehlerquoten, dem Ausführungsdiagramm und der letzten Aktivität"><figcaption><p>Das Workflow Dashboard – Ausführungssummen, Erfolgs-/Fehlerquoten und letzte Aktivität für jeden Workflow.</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard with run totals, success and fail rates, the runs chart and recent activity"><figcaption><p>Das Workflow-Dashboard — Ausführungssummen, Erfolgs-/Fehlerraten und letzte Aktivitäten für jeden Workflow.</p></figcaption></figure>
+## Reiter
 
-## Dashboard-Reiter
+- **Dashboard** — Kennzahlen zu den Ausführungen und letzte Aktivität (oben dargestellt).
+- **Workflow-Liste** — jeder Workflow mit Typ, Ausführungsreihenfolge und Auslöser. Einen neuen Workflow legen Sie mit **Neuer Workflow** an.
+- **Testmanagerliste** — Testszenarien, die Ihre Workflows validieren; führen Sie sie mit **Alle Tests ausführen** aus.
+- **Lizenz** — Informationen zur Workflow-Lizenzierung.
+- **Card SDK** — eigene Workflow-Karten erstellen und hochladen (siehe [Card SDK](card-sdk.md)).
 
-Der Dashboard-Reiter bietet einen schnellen Uberblick uber die Workflow-Leistung fur einen ausgewahlten Zeitraum.
+Die Symbolleiste bietet außerdem **Vorlagen**, das die Bibliothek [Workflow Templates](standard-workflow-builder.md#workflow-templates) öffnet, und **Workflow importieren**, das einen Workflow aus einer JSON-Datei importiert.
 
-### Filter
+Im **Testverwaltung** können Sie Testszenarien pro Workflow speichern und gemeinsam ausführen, um zu bestätigen, dass Ihre Workflows sich nach Änderungen weiterhin korrekt verhalten:
 
-- **Startdatum / Enddatum** — Wahlen Sie den Zeitraum fur die Statistiken
-- **Workflow-Name** — Filtern Sie nach einem bestimmten Workflow oder zeigen Sie alle an
-- **Vergleichen** — Vergleichen Sie zwei Zeitraume nebeneinander
-- **Zurucksetzen** — Alle Filter zurucksetzen
+<figure><img src="../../.gitbook/assets/s50-workflow_test_manager-de.png" alt="Deutsche Testmanagerliste mit Alle Tests ausführen und Testszenario hinzufügen. Szenariodaten sind ausgeblendet; Actions bleibt ein Produktbegriff."><figcaption><p>Deutsche Testmanagerliste mit Alle Tests ausführen und Testszenario hinzufügen. Szenariodaten sind ausgeblendet; Actions bleibt ein Produktbegriff.</p></figcaption></figure>
 
-### Statistik-Karten
+## Nächste Schritte
 
-| Metrik | Beschreibung |
-|---|---|
-| **Heute ausgefuhrte Workflows** | Gesamtzahl der Workflow-Ausfuhrungen heute |
-| **Erstellte Workflows (Zeitraum)** | Neue Workflows, die im ausgewahlten Zeitraum erstellt wurden |
-| **Gesamtausfuhrungen** | Kumulative Workflow-Ausfuhrungen uber den Zeitraum |
-| **Erfolgreiche Ausfuhrungen** | Anzahl der Ausfuhrungen, die ohne Fehler abgeschlossen wurden |
-| **Erfolgsrate** | Prozentsatz erfolgreicher Ausfuhrungen im Verhaltnis zu den Gesamtausfuhrungen |
-| **Fehlerrate** | Prozentsatz fehlgeschlagener Ausfuhrungen im Verhaltnis zu den Gesamtausfuhrungen |
-
-{% hint style="warning" %}
-Eine hohe Fehlerrate (angezeigt als **CRITICAL** in Rot) weist darauf hin, dass Workflows auf Fehler stossen. Untersuchen Sie die fehlgeschlagenen Workflows mithilfe der Ausfuhrungsprotokolle im [Erweiterten Workflow-Builder](advanced-workflow-builder/).
-{% endhint %}
-
-### Diagramm der Workflow-Ausfuhrungen
-
-Das Diagramm zeigt eine monatliche Aufschlusselung von **erfolgreichen** (grun) und **fehlgeschlagenen** (rot/rosa) Workflow-Ausfuhrungen und hilft Ihnen, Trends und Fehler-Spitzen zu erkennen.
-
-### Letzte Aktivitaten
-
-- **Letzte Workflow-Tests** — Zeigt die letzten Testausfuhrungen mit Bestanden-/Fehlgeschlagen-Status
-- **Letzte Workflows** — Zeigt kurzlich erstellte oder geanderte Workflows
-
-## Reiter Workflow-Liste
-
-Der Reiter Workflow-Liste zeigt alle Workflows mit Such-, Sortier- und Verwaltungsfunktionen.
-
-<!-- screenshot: Workflow List showing Advanced workflows with columns -->
-
-### Spalten
-
-| Spalte | Beschreibung |
-|---|---|
-| **Status** | Umschaltsymbol — klicken Sie, um einen Workflow zu aktivieren/deaktivieren |
-| **Name** | Workflow-Name (klicken Sie, um ihn im Workflow-Builder zu offnen) |
-| **Typ** | Badge mit `Advanced` fur visuelle Workflows |
-| **Wenn...** | Zusammenfassung der Auslosebedingung |
-| **Aktualisiert von** | Benutzer, der den Workflow zuletzt geandert hat |
-| **Erstellt am** | Erstellungsdatum und -uhrzeit |
-| **Aktualisiert** | Datum und Uhrzeit der letzten Anderung |
-| **Aktionen** | Kontextmenu (Loschen, Duplizieren, Exportieren) |
-
-### Aktionen
-
-- **Suche** — Workflows nach Name uber die Suchleiste filtern
-- **+ WORKFLOW HINZUFUGEN** — Einen neuen Workflow erstellen (offnet den [Erweiterten Workflow-Builder](advanced-workflow-builder/))
-- **VORLAGEN** — Gespeicherte Workflow-Vorlagen durchsuchen und laden
-- **WORKFLOW IMPORTIEREN** — Einen Workflow aus einer JSON-Datei importieren
-
-## Reiter Test-Manager-Liste
-
-Die Test-Manager-Liste zeigt alle Workflow-Testkonfigurationen und -ergebnisse. Nutzen Sie diese, um automatisierte Testszenarien fur Ihre Workflows einzurichten.
-
-<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List with test scenarios and Run All Tests"><figcaption><p>Die Test-Manager-Liste — jedes Szenario zeigt ein Bestanden-/Fehlgeschlagen-Ergebnis; verwenden Sie <strong>Run All Tests</strong>, um alle erneut auszuführen.</p></figcaption></figure>
-
-## Reiter Lizenz
-
-Der Reiter Lizenz zeigt Ihren aktuellen DocFlow-Lizenzstatus und die verfugbaren Funktionen.
-
-## Reiter Card SDK
-
-Der Reiter Card SDK ermoglicht es Ihnen, benutzerdefinierte Workflow-Karten (Partner-Karten) zu erstellen und zu verwalten, die die integrierten Funktionen von DocFlow erweitern.
-
-<!-- screenshot: Card SDK page with Upload ZIP and Submissions tabs -->
-
-### ZIP hochladen
-
-Laden Sie eine Partner-App als ZIP-Datei hoch, die Folgendes enthalt:
-- `app.json` — Karten-Metadaten und Konfiguration
-- `.docflowcompose/flow/` — Karten-Definitionsdateien
-
-Maximale Dateigrösse: **10 MB**. Klicken Sie auf **Upload & Validate**, um die Karte zur Uberprufung einzureichen.
-
-### GitHub-Import
-
-Importieren Sie Partner-Karten direkt aus einem GitHub-Repository, anstatt eine ZIP-Datei hochzuladen.
-
-### Einreichungen
-
-Alle eingereichten Partner-Karten anzeigen und verwalten:
-
-<!-- screenshot: Card SDK Submissions list with status badges -->
-
-| Spalte | Beschreibung |
-|---|---|
-| **Card Name** | Name der Partner-App und Karte |
-| **card_type_label** | Kartentyp (`Action_card` oder `Condition_card`) |
-| **Version** | Kartenversionsnummer |
-| **Eingereicht** | Einreichungsdatum |
-| **Status** | Aktueller Uberprufungsstatus |
-| **Aktionen** | Verfugbare Aktionen basierend auf dem Status |
-
-#### Karten-Status
-
-| Status | Bedeutung | Verfugbare Aktionen |
-|---|---|---|
-| **Validated** | Karte hat die Validierung bestanden | Herunterladen, Genehmigen, Ablehnen |
-| **Approved** | Karte ist aktiv und in Workflows verfugbar | Herunterladen, Deaktivieren, Widerrufen |
-| **Rejected** | Karte hat die Uberprufung nicht bestanden | Loschen |
-| **Disabled** | Karte wurde deaktiviert | Loschen |
-
-### SDK-Vorlage herunterladen
-
-Klicken Sie auf **Download SDK Template**, um eine Startvorlage zum Erstellen Ihrer eigenen benutzerdefinierten Karten zu erhalten. Die Vorlage enthalt die erforderliche Dateistruktur und Beispielkonfigurationen.
-
-{% hint style="info" %}
-Partner-Karten konnen auch programmgesteuert uber die [DocFlow MCP-Tools](../../../advanced-functions-and-tools/docflow-mcp/) verwaltet werden. Verwenden Sie die Card SDK MCP-Tools, um Karten aus Ihrer IDE oder Ihren Automatisierungsskripten zu erstellen, zu validieren, zu genehmigen und zu testen.
-{% endhint %}
+- Erstellen Sie mit dem Builder **Standard-Workflow** eine lineare Automatisierung.
+- Erstellen Sie mit dem Builder **Erweiterter Workflow** einen verzweigten Ablauf.

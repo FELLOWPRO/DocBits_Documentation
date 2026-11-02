@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 ## Hier sind einige Best Practices für die Organisation von Dokumenttypen und Untertypen:
 

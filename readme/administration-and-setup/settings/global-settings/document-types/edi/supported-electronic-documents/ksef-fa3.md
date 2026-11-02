@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego KSEF FA3 w DocBits
 
 # 🇵🇱 KSEF FA3
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Polska](countries/poland.md). FA2 i FA3 mają różne struktury. Potwierdź schemat źródłowy i przetestuj właściwe mapowanie; parsowanie nie przesyła faktury do KSeF.
+{% endhint %}
+
 | Właściwość           | Wartość                         |
 | -------------------- | ------------------------------- |
 | **Kraj / Region**    | Polska                          |

@@ -49,6 +49,8 @@ Zawarte są następujące szczegóły:
   * **Tylko administrator i przypisany**: Tylko użytkownicy z uprawnieniami administratora i przypisany użytkownik mogą ponownie uruchomić dokument.
   * **Wszyscy użytkownicy**: Wszyscy użytkownicy, którzy otrzymali niezbędne [uprawnienia](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md), mogą ponownie uruchamiać dokumenty.
 
+* **Oczekujący dostęp do danych wejściowych (dni)**: określa, przez ile dni osoba poproszona o informację w strumieniu aktywności może otworzyć dokument w trybie tylko do odczytu; po tym czasie link przestaje działać. Domyślnie są to 14 dni, a dostęp kończy się także wtedy, gdy dokument przejdzie dalej. Zobacz [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
+
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtry**

@@ -92,7 +92,7 @@ Symbole zastępcze w tabeli oznaczają rzeczywiste wartości:
 |---|---|
 | `/task/<task-id>` | `/tasks/<task-id>` |
 
-### Workflow
+### Przepływ pracy
 
 | Stary adres | Nowy adres |
 |---|---|

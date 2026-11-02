@@ -1,6 +1,8 @@
-# Document Type Operation
+# Operacja typu dokumentu
 
-<figure><img src="../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v1-pl-pl.png" alt="Operacja typu dokumentu, Wersja 1" width="634"><figcaption><p>Wersja 1</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/workflow_card_condition_doc_type_is_isnot_v2-pl-pl.png" alt="Operacja typu dokumentu, Wersja 2" width="634"><figcaption><p>Wersja 2</p></figcaption></figure>
 
 ## **Cel:**
 
@@ -9,16 +11,16 @@ Ta karta przepływu pracy jest specjalnie zaprojektowana do wykonywania predefin
 ## **Funkcjonalność:**
 
 * **Walidacja typu dokumentu**: Karta sprawdza, czy dokument odpowiada określonemu typowi, co pozwala użytkownikom potwierdzić jego kategoryzację.
-* **Operator**: Użytkownicy mogą ustawić warunki określające typ dokumentu. Dostępne operatory:
+* **Operatora**: Użytkownicy mogą ustawić warunki określające typ dokumentu. Dostępne operatory:
   * **Is**: Potwierdza, że dokument odpowiada wskazanemu typowi dokumentu.
-  * **Is Not**: Zapewnia, że dokument nie odpowiada wskazanemu typowi dokumentu.
+  * **Nie jest**: Zapewnia, że dokument nie odpowiada wskazanemu typowi dokumentu.
 * **Typy dokumentów**: Obsługiwane typy dokumentów:
-  * **Invoice**
-  * **Debit Note**
-  * **Credit Note**
-  * **Purchase Order**
-  * **Order Confirmation**
-  * **Advance Shipment Notice**
+  * **Faktura**
+  * **Nota debetowa**
+  * **Nota kredytowa**
+  * **Zamówienie**
+  * **Potwierdzenie zamówienia**
+  * **Powiadomienie o wysyłce z wyprzedzeniem**
 
 ## **Zastosowanie**:
 

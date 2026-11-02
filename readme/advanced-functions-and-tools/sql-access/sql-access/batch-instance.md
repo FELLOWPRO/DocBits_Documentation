@@ -1,4 +1,4 @@
-# Batch instance
+# Instancja partii
 
 ## Tabela `public.batch_instance`
 
@@ -7,8 +7,8 @@
 * `id`: wewnętrzne
 * `org_id`: ID organizacji
 * `created_by`: integer
-* `created_on`: timestamp with time zone
-* `last_modified_on`: timestamp with time zone
+* `created_on`: znacznik czasu ze strefą czasową
+* `last_modified_on`: znacznik czasu ze strefą czasową
 * `is_deleted`: boolean
 
 ### Analiza i opis

@@ -1,6 +1,14 @@
 # Ustawienia
 
-<figure><img src="../../.gitbook/assets/settings_overview.png" alt="Przegląd ustawień"><figcaption><p>Strona przeglądu ustawień</p></figcaption></figure>
+## Samouczek wideo: Przegląd ustawień i moduły
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/pl.mp4" %}
+Przegląd ustawień i moduły w DocBits
+{% endembed %}
+
+Film pokazuje pięć grup przeglądu ustawień, wyszukiwarkę i szybkie linki oraz to, czym sterują trzy strony modułów.
+
+<figure><img src="../../.gitbook/assets/site-extra-settings-overview-pl.png" alt="Ustawienia organizacji z ukrytymi danymi identyfikacyjnymi. Widoczny kraj jest wartością konfiguracji."><figcaption><p>Ustawienia organizacji z ukrytymi danymi identyfikacyjnymi. Widoczny kraj jest wartością konfiguracji.</p></figcaption></figure>
 
 Obszar Ustawień to centralne miejsce konfiguracji DocBits. Jest podzielony na pięć głównych sekcji:
 

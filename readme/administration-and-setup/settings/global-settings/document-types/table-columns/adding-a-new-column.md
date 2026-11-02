@@ -13,7 +13,7 @@ Dodaj kolumnę, gdy dla każdej pozycji trzeba zapisać wartość, której nie o
 1. Otwórz **Settings → Global Settings → Document Types → Table Columns**.
 2. Kliknij **Add new table column**.
 
-<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Okno Add new table column z polami Title, Is column required, Select column type i Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Okno Add new table column z polami Title, Is column required, Select column type i Select Table"><figcaption><p>Dodaj nową kolumnę tabeli</p></figcaption></figure>
 
 3. Wypełnij okno:
 
@@ -24,7 +24,11 @@ Dodaj kolumnę, gdy dla każdej pozycji trzeba zapisać wartość, której nie o
 | **Select column type** | Zobacz listę typów powyżej. |
 | **Select Table** | Tabela, która otrzyma kolumnę. |
 
-4. Kliknij **Proceed**. Kolumna pojawi się na liście z niezaznaczonymi flagami *Read Only*, *Hidden* i *Use AI*. W razie potrzeby przełącz te flagi na liście, zobacz [Edytowanie i usuwanie kolumn](editing-and-deleting-columns.md).
+4. Kliknij **Przystępować**. Okno potwierdzenia przypomina, że nowa kolumna dotyczy **wszystkich przyszłych faktur każdego dostawcy**, a nie tylko otwartego dokumentu.
+
+<figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-pl.png" alt="Okno potwierdzenia „Utworzyć nową kolumnę tabeli?” z przyciskami Anulować i Utwórz kolumnę"><figcaption><p>Potwierdź, zanim kolumna zostanie utworzona dla wszystkich dostawców.</p></figcaption></figure>
+
+5. Wybierz **Utwórz kolumnę**, aby zapisać, lub **Anulować**, aby wrócić bez tworzenia kolumny. Kolumna pojawi się na liście z niezaznaczonymi flagami *Read Only*, *Hidden* i *Use AI*. W razie potrzeby przełącz te flagi na liście, zobacz [Edytowanie i usuwanie kolumn](editing-and-deleting-columns.md).
 
 ## Po dodaniu
 

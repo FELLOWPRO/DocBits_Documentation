@@ -1,39 +1,35 @@
-# Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)
+# Przypadek 6: Ilość w tolerancji, cena poniżej limitu (odrzucona)
 
-## Scenario:
+Poniższy scenariusz ilustruje skonfigurowane mapowanie, a nie domyślny szablon o zweryfikowanym wdrożeniu. Rzeczywiste dane wyjściowe, kwoty, znaki i typy dokumentów zależą od aktywnych reguł i wyrażeń `conflict_resolution`, mapowania eksportu oraz decyzji zatwierdzających. Każda opisana nota obciążeniowa lub uznaniowa jest uzależniona od tej konfiguracji; przykład nie gwarantuje jej automatycznego wystawienia ani zgodności z prawem.
 
-The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+## Scenariusz
 
-## Action:
+Ilość mieści się w tolerancji, ale cena jednostkowa na fakturze jest niższa od dozwolonego zakresu, a odchylenie ceny nie zostało zatwierdzone.
 
-The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+## Przykładowe działanie
 
-## Example:
+Mapowanie skonfigurowane tak, aby po odrzuceniu używać ceny z PO, zachowałoby ilość i zastąpiło cenę jednostkową z faktury ceną z PO. To, czy różnica spowoduje korektę, notę obciążeniową, notę uznaniową czy brak osobnego dokumentu, zależy od aktywnego mapowania i decyzji zatwierdzających. Dodatkowe opłaty nagłówka stosuje się tylko wtedy, gdy zostały wyraźnie skonfigurowane.
 
-* **Purchase Order (PO):**
-  * Quantity: 100 units
-  * Unit Price: $10.00 per unit
-  * Total Amount: $1,000.00
-* **Invoice Received:**
-  * Quantity: 100 units (within tolerance of 0%)
-  * Unit Price: $9.00 per unit (outside negative tolerance of -10%)
-  * Total Amount: $900.00
-* **Tolerance Levels:**
-  * Quantity Tolerance: ±2%
-  * Unit Price Tolerance: ±1%
+## Przykład
 
-Since the quantity (100 units) is within the acceptable tolerance range but the unit price ($9.00) is below the acceptable tolerance and is not approved, the system will:
+* **Zamówienie zakupu (PO):**
+  * Ilość: 100 sztuk
+  * Cena jednostkowa: $10.00 za sztukę
+  * Suma: $1,000.00
+* **Otrzymana faktura:**
+  * Ilość: 100 sztuk — rzeczywiste odchylenie 0%, w skonfigurowanej tolerancji ±2%.
+  * Cena jednostkowa: $9.00 — rzeczywiste odchylenie -10%, poza skonfigurowaną tolerancją ±1%; odrzucona.
+  * Suma: $900.00
+* **Skonfigurowane tolerancje:**
+  * Ilość: ±2%
+  * Cena jednostkowa: ±1%
 
-1. **Reject the Unit Price:** The system does not accept the invoiced unit price of $9.00.
-2. **Adjust the Unit Price:** The system adjusts the unit price to match the original purchase order unit price.
-   * Adjusted Unit Price = $10.00 (from PO)
-3. **Calculate the Corrected Total Amount:** Using the adjusted unit price, the system recalculates the total amount.
-   * **Corrected Total Amount = Quantity × Adjusted Unit Price**
-   * **Corrected Total Amount = 100 units × $10.00 per unit = $1,000.00**
-4. **Generate a Credit Note:** The system generates a credit note for the difference between the incorrect total amount on the invoice and the corrected total amount.
-   * **Credit Note Amount = Original Invoice Total - Corrected Total Amount**
-   * **Credit Note Amount = $900.00 - $1,000.00 = -$100.00**
-   * The credit note will effectively reverse the undercharge.
-5. **Process the Invoice:** The system processes the invoice with the adjusted total amount of $1,000.00 and applies the credit note for $100.00 to account for the undercharged unit price.
+W tym przykładowym mapowaniu:
 
-This approach ensures that the pricing aligns with the purchase order terms, even when an incorrect, lower price is invoiced.
+1. Odrzuć cenę jednostkową z faktury wynoszącą $9.00, ponieważ odchylenie przekracza tolerancję i nie zostało zatwierdzone.
+2. Użyj ceny jednostkowej z PO wynoszącej $10.00.
+3. Przelicz sumę przykładu: **100 sztuk × $10.00 = $1,000.00**.
+4. Oblicz różnicę ze znakiem jako sumę faktury minus przeliczoną sumę: **$900.00 - $1,000.00 = -$100.00**.
+5. Zastosuj skonfigurowane mapowanie eksportu i decyzję zatwierdzającą. Wartość -$100.00 jest różnicą ze znakiem, a nie bezwarunkowym poleceniem wystawienia noty uznaniowej. Mapowanie określa kwotę, znak i typ dokumentu każdej korekty.
+
+Przykład nie oznacza, że nota uznaniowa automatycznie odwraca zaniżenie należności. Przed użyciem reguły sprawdź oczekiwane ujęcie księgowe w aktywnym mapowaniu eksportu.

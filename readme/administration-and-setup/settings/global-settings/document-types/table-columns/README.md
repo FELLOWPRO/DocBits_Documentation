@@ -2,7 +2,7 @@
 
 Kolumny tabeli określają, jakie kolumny ma tabela pozycji dokumentu danego typu: co DocBits wyodrębnia do każdej kolumny, co użytkownik widzi na ekranie walidacji oraz co jest wysyłane do systemu ERP podczas eksportu.
 
-**Gdzie:** Settings → Global Settings → Document Types → Table Columns
+**Gdzie:** Ustawienia → Ustawienia globalne → Typy dokumentów → Kolumny tabeli
 
 <figure><img src="../../../../../.gitbook/assets/table-columns_list.png" alt="Lista Table Columns z flagami Required, Read Only, Hidden i Use AI dla każdej kolumny"><figcaption><p>Table Columns: jeden wiersz na kolumnę, flagi przełącza się bezpośrednio na liście</p></figcaption></figure>
 

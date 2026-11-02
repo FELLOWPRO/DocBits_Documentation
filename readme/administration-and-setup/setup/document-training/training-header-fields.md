@@ -6,7 +6,7 @@ Niektóre pola mogą być już wypełnione — jest to zasługa inteligencji zbi
 Możesz pomóc w szkoleniu DocBits, aby rozpoznawał te pola, ręcznie identyfikując poprawne dane.\
 **Proszę zauważyć:** jeśli pole pozostaje puste, może to po prostu oznaczać, że informacja nie znajduje się w przesłanym dokumencie.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_0.png)
+<figure><img src="../../../.gitbook/assets/s150-header_field_training_0-pl.png" alt="Walidacja fikcyjnej faktury przed trenowaniem pól nagłówka."><figcaption><p>Walidacja fikcyjnej faktury przed trenowaniem pól nagłówka.</p></figcaption></figure>
 
 ### Aby przeszkolić pole:
 
@@ -15,7 +15,7 @@ Możesz pomóc w szkoleniu DocBits, aby rozpoznawał te pola, ręcznie identyfik
    * **Podwójnie kliknij** na odpowiednich danych w dokumencie, albo
    * **Narysuj prostokąt wyboru** wokół danych za pomocą kursora.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_1.png)
+<figure><img src="../../../.gitbook/assets/s150-header_field_training_1-pl.png" alt="Wybór numeru faktury jako punktu początkowego treningu."><figcaption><p>Wybór numeru faktury jako punktu początkowego treningu.</p></figcaption></figure>
 
 Powtórz ten proces dla wszystkich wymaganych pól.\
 Gdy wszystkie niezbędne pola zostaną wypełnione, **kliknij "Zapisz Reguły"**, aby zapisać szkolenie. Zapewnia to, że DocBits uczy się, gdzie znaleźć każdy kawałek informacji dla podobnych dokumentów w przyszłości.
@@ -23,3 +23,5 @@ Gdy wszystkie niezbędne pola zostaną wypełnione, **kliknij "Zapisz Reguły"**
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
 
 Po zapisaniu, twój dokument jest gotowy do wyeksportowania — a następnym razem DocBits automatycznie wydobyje przeszkolone pola.
+
+Po zamierzonym zapisaniu treningu przetestuj inne dokumenty tego samego dostawcy. Eksport zależy również od walidacji i skonfigurowanego przepływu.

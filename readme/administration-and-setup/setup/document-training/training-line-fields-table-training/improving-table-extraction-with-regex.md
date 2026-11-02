@@ -15,15 +15,17 @@ Dokumenty takie jak faktury czy potwierdzenia zamówień często zawierają wpis
 
 Weźmy jako przykład niemiecką fakturę — kolumna "Bezeichnung" (opis) obejmuje kilka wierszy:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FVino2M4Esor3IRHGqBd5Brx7_lKPIwEOlRYBHzMXw4WoacFNW39hbWuwoUNGocubx4Bh9_BvUBqZSWA4U_NmU8FBw4Q1_AiTASgMx-2MLKvsHLJY057oqyks0fQ5b7mI577JTX5rBKdEG90O9F5TcoU\&width=768\&dpr=4\&quality=100\&sign=ae0bd75a\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-multiline-doc-pl-20261009.png" alt="Tabela niemieckiej faktury, w której opis (Bezeichnung) każdej pozycji zajmuje kilka wierszy."><figcaption><p>Kolumna opisu rozciągająca się na kilka wierszy.</p></figcaption></figure>
 
 Początkowo DocBits wyodrębnia każdy wiersz osobno:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FUX5OdkW59HPVROnNzSeZbDw4NYTPbfayDLIXBQi0pwHzUEJ1B5t7I9uKBNc0dmOB3Cile8Xv6AdgVXuUd0aMbQFGWagBCEetw8P-N4zgG_cGTjWHhpDtGQZg27UZKdCDJ5FeEDJgFAYtTB8kZrMSdho\&width=768\&dpr=4\&quality=100\&sign=b6990876\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-pl-20261009.png" alt="Wyekstrahowana tabela, w której każdy wiersz tekstu opisu stał się osobnym wierszem."><figcaption><p>DocBits najpierw wyodrębnia każdy wiersz osobno.</p></figcaption></figure>
 
 Następnie możesz **grupować wiersze na podstawie kolumny**, takiej jak "Pozycja". To połączy powiązane linie w jedno, uporządkowane wpisy:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FPxA6h2udUuYd1YmHV97t-bzfZzipFpdA5t8gjpGXWx9sA-I4tW3tYwD28icv88UEmitz0EAaWuGkU5ZwqAjcQnoOkmg9u1AcBJW3nITU6eFa0foHB-AQPb0qv0AWaaEwM6WvwaEcAODEUzKtvRZOMN0\&width=768\&dpr=4\&quality=100\&sign=36b99bc7\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-pl-20261009.png" alt="Wyekstrahowana tabela, w której powiązane wiersze opisu zostały połączone w jeden wpis na pozycję."><figcaption><p>Po grupowaniu według Pozycji powiązane wiersze tworzą jeden wpis.</p></figcaption></figure>
+
+Ile podwierszy zostanie połączonych w jeden wpis i jak zachowuje się grupowanie, ustawisz w [Ustawieniach zaawansowanych](advanced-settings.md) pod **Minimalna liczba zgrupowanych wierszy** oraz **Grupowanie odwrócone**.
 
 ## 2. Ręczny Wybór Wierszy
 
@@ -31,21 +33,24 @@ W niektórych przypadkach tekst na dokumencie jest rozłożony na kilka kolumn w
 
 Oto przykład, gdzie linia "PRAEF" nakłada się na **Bezeichnung**, **Menge**, **ME** i **Preis in EUR**:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FLbVbmfdOBpeCWDftPvW0qjEHjbLmWYRrAGTZHVW8VEHQTEvl5GoqH2wkFE5iUOySmF50b1V8CDAZhfMzPTeMQscmc61SDKaqSCW-y0Z7fjlwOjhtjxWD44oCsgHmwrgrBD4cuEGgn9JY_UX3t9jRlPs\&width=768\&dpr=4\&quality=100\&sign=5ff4a2e1\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-pl-20261009.png" alt="Tabela faktury z wierszem PRAEF, którego tekst rozciąga się na kilka kolumn."><figcaption><p>Wiersz PRAEF, który nie pasuje do struktury kolumn.</p></figcaption></figure>
 
 ### Jak Ręcznie Przypisać Wartości:
 
-1.  **Włącz Tryb Szkoleniowy**
+1.  **Włącz Tryb szkoleniowy**
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F4D8iCXk0p_Mur8bX_11ne_2iA-GOxoFi2OQWlSEvrH1auoE0ksnYXpZx3Pw3PUJJRZJN85dnQlSSBB369FfafXAy8adjFZcnepQnODSaaIj69cxtUKFAXPgn5eyPE6jbJuzStJALMgumlt49Z1Pv3FY\&width=768\&dpr=4\&quality=100\&sign=232c58a9\&sv=2)
-2.  **Aktywuj Tryb Edycji Wiersza**
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-pl-20261009.png" alt="Widok ekstrakcji tabeli z włączonym trybem szkoleniowym."><figcaption><p>Tryb szkoleniowy włączony.</p></figcaption></figure>
+2.  **Aktywuj Tryb edycji danych wiersza**
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8YQmo_WRuKKVjk1a_eoxSBiQr0GncuS4BmCA0aI9aOlrbsIvdj8dZlurxxBHp2lH4ozT4HPWw9qYDW7xLQ7u2DSyU8DrNzSBC7LjzKLTDJ2tudY9a_DENDoK5Aya6L1hcf1WF1RD92S_DzhGVV4Gh6Q\&width=768\&dpr=4\&quality=100\&sign=8fc5c089\&sv=2)
-3.  **Wybierz i Mapuj Tekst** Kliknij odpowiedni fragment tekstu i przypisz go do **niebieskiego** nagłówka kolumny.
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-pl-20261009.png" alt="Widok ekstrakcji tabeli z włączonym trybem edycji danych wiersza i widoczną podpowiedzią."><figcaption><p>Tryb edycji danych wiersza włączony.</p></figcaption></figure>
+3.  **Wybierz i Mapuj Tekst**\
+    Kliknij odpowiedni fragment tekstu i przypisz go do **niebieskiego** nagłówka kolumny.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fi2tlbwl9qFE0clthaoRPe7kcPRiURCvemuLEjBK4uAnfsR4auXbftMfEY1ZW5WXwezTBVSG5hbNRkddwIeLtrgJUvZoeKGdPKN8f75O_dPdIWkm4EFALfAj-evDUI3UKrgNOTNjF37C1bBLtE95OA1w\&width=768\&dpr=4\&quality=100\&sign=842a42\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-pl-20261009.png" alt="Wyekstrahowana tabela w trybie edycji danych wiersza z niebieskimi, jeszcze niewypełnionymi nagłówkami kolumn, które można przypisać ręcznie."><figcaption><p>Niebieskie nagłówki kolumn można wypełnić ręcznie.</p></figcaption></figure>
 
 > Uwaga: Kolumny o fiolecie są już zmapowane przez system i nie mogą być edytowane ręcznie.
+
+Ta praca odbywa się w **Trybie edycji danych wiersza**. Co można w nim zrobić i kiedy używać go zamiast trybu szkoleniowego, opisano w [Szkolenie pól pozycji / Szkolenie tabeli](README.md).
 
 ## 3. Mapowanie Kolumn
 
@@ -56,9 +61,11 @@ Aby zmapować lub ponownie zmapować kolumnę:
 1. Kliknij nagłówek kolumny w widoku ekstrakcji.
 2. Wybierz właściwą kolumnę docelową z rozwijanego menu.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FX_65pCWrI4HMFr_aiA0eoSDp-yIYy49lULzAZaiIgnr0aIowlLSed21MuehkGLs4UIdQousdfhiZi5pnQtpZ0uUn6dxlzii7WPQvov-kN1_Jimsi6U6zowOLxjBzZzZ47kaRhduAVBd_Ya9QQtXTpJ4\&width=768\&dpr=4\&quality=100\&sign=4e2a3bdc\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-pl-20261009.png" alt="Wyekstrahowana tabela z otwartą listą rozwijaną nagłówka kolumny, wyświetlającą kolumny docelowe Opis, Numer Przedmiotu, Kwota Netto, Pozycja, Ilość, Całkowita Kwota, Jednostka i Cena Jednostkowa."><figcaption><p>Wybierz kolumnę docelową z listy rozwijanej nagłówka.</p></figcaption></figure>
 
 Możesz dostosować mapowanie tak często, jak jest to potrzebne.
+
+Aby dowiedzieć się, jak tworzyć tabele i kolumny, zobacz [Definiowanie Tabel i Kolumn](defining-tables-and-columns.md).
 
 ## 4. Wyodrębnianie Z Góry / Z Dole
 
@@ -69,7 +76,7 @@ Niektóre dokumenty są zorganizowane w taki sposób, że istotne wartości tabe
 
 **Gdzie To Znaleźć**
 
-1. Wejdź w **Tryb Szkoleniowy**.
+1. Wejdź w **Tryb szkoleniowy**.
 2. Kliknij trzy kropki (⋯) na nagłówku kolumny.
 3. W opcji **"Wyodrębnij Z"** wybierz `Z Góry` lub `Z Dole`, w zależności od układu dokumentu.
 
@@ -84,7 +91,7 @@ Niektóre kolumny, takie jak **Ilość** lub **Cena Jednostkowa**, zawierają wa
 
 **Gdzie To Znaleźć**
 
-1. Wejdź w **Tryb Szkoleniowy**.
+1. Wejdź w **Tryb szkoleniowy**.
 2. Kliknij trzy kropki (⋯) na nagłówku obsługiwanej kolumny (np. Ilość, Cena Jednostkowa).
 3. W opcji **Format Kwoty** wybierz pożądany format odpowiadający lokalizacji Twojego dokumentu.
 
@@ -100,7 +107,7 @@ Ta funkcja pozwala zdefiniować regex dla każdego nagłówka tabeli, poprawiaj�
 2.  Przejdź do widoku **Ekstrakcji Tabeli**.
 
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FDdlNrO6hG6jnEeWU9DuZ%252Fimage.png%3Falt%3Dmedia%26token%3Dca11a537-27a4-4b00-b3e7-f77540c28c2b\&width=768\&dpr=4\&quality=100\&sign=fd47355a\&sv=2)
-3. Włącz **Tryb Szkoleniowy**.
+3. Włącz **Tryb szkoleniowy**.
 4.  Wybierz nagłówek tabeli, który chcesz ulepszyć, a następnie wybierz **Regex**.
 
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fes6PsB9sHHXp0CNRj6YF%252Fimage.png%3Falt%3Dmedia%26token%3D6e31e4db-fd2f-487c-ac19-f1d6add81ad1\&width=768\&dpr=4\&quality=100\&sign=32264560\&sv=2)
@@ -112,6 +119,8 @@ Ta funkcja pozwala zdefiniować regex dla każdego nagłówka tabeli, poprawiaj�
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FC4R2o2W10ct1o0oesTLZ%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250303135153.jpg%3Falt%3Dmedia%26token%3D43e53a05-53fe-4503-ba51-55c85910bd82\&width=768\&dpr=4\&quality=100\&sign=9ec6eb7b\&sv=2)
 7. **Zapisz regułę i potwierdź**, aby zastosować zmiany.
 
+Aby dowiedzieć się, jak trwale zapisać lub usunąć wyszkolone reguły, zobacz [Zapisywanie i Usuwanie Reguł](save-and-delete-rules.md).
+
 ## Kiedy Korzystać z Każdej Funkcji
 
 Użyj tych narzędzi, aby zwiększyć dokładność ekstrakcji i zmniejszyć pracę manualną:
@@ -120,3 +129,9 @@ Użyj tych narzędzi, aby zwiększyć dokładność ekstrakcji i zmniejszyć pra
 * **Ręczny Wybór Wierszy**: Gdy wiersze nie są czysto zorganizowane, a części treści trafiają do niewłaściwych kolumn.
 * **Mapowanie Kolumn**: Gdy automatycznie wykryte nazwy kolumn nie pasują do Twojej struktury lub wymagają ulepszenia.
 * **Reguły Regex**: Gdy nagłówki tabel różnią się nieznacznie w dokumentach od tego samego dostawcy lub OCR wprowadza niekonsekwencje.
+
+## Powiązane przewodniki w tym obszarze
+
+* [Ustawienia zaawansowane](advanced-settings.md) – grupowanie, nagłówki i obsługa dodatkowych wierszy.
+* [Definiowanie Tabel i Kolumn](defining-tables-and-columns.md) – tworzenie tabel i kolumn do szkolenia.
+* [Zapisywanie i Usuwanie Reguł](save-and-delete-rules.md) – trwałe zastosowanie lub odrzucenie wyszkolonego układu.

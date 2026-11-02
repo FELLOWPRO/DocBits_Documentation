@@ -1,30 +1,16 @@
 ---
-description: Obsługa dokumentów elektronicznych COSTA RICA w DocBits
+description: "Starsza dokumentacja wymienia Kostarykę, ale w sprawdzonym katalogu środowiska deweloperskiego nie znaleziono pasującego wpisu klasyfikacji ani konfiguracji."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Właściwość           | Wartość                                                |
-| -------------------- | ------------------------------------------------------ |
-| **Kraj / Region**    | Kostaryka                                              |
-| **Typy dokumentów**  | Faktura (Factura Electrónica), nota kredytowa, nota debetowa |
-| **Format**           | XML                                                    |
-| **Standard**         | Factura Electrónica (Ministerio de Hacienda)           |
 
-System fakturowania elektronicznego w Kostaryce jest regulowany przez Ministerio de Hacienda. Dokumenty elektroniczne muszą być przesyłane do platformy Hacienda w celu walidacji i zawierać podpis cyfrowy. DocBits może przetwarzać kostarykańskie faktury elektroniczne i ekstrahować kluczowe pola.
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Kostaryka](countries/costa-rica.md). Ta kontrola nie potwierdza aktualnego wbudowanego przetwarzania. Poproś pomoc techniczną o sprawdzenie wdrożonego mapowania i przetestuj reprezentatywny plik źródłowy przed wdrożeniem.
+{% endhint %}
 
-## Status obsługi
+Starsza dokumentacja wymienia Kostarykę, ale w sprawdzonym katalogu środowiska deweloperskiego nie znaleziono pasującego wpisu klasyfikacji ani konfiguracji.
 
-| Komponent        | Status         |
-| ---------------- | -------------- |
-| Podgląd          | ✅ Obsługiwane |
-| Ekstrakcja pól   | ✅ Obsługiwane |
-| Transformacja    | Nie dotyczy    |
+Ta kontrola nie potwierdza aktualnego wbudowanego przetwarzania. Poproś pomoc techniczną o sprawdzenie wdrożonego mapowania i przetestuj reprezentatywny plik źródłowy przed wdrożeniem.
 
-## Domyślny podgląd
-
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Podgląd e-faktury z Kostaryki w DocBits"><figcaption><p>Domyślny podgląd DocBits dla e-faktury z Kostaryki</p></figcaption></figure>
-
-## Powiązane
-
-* [Obsługiwane dokumenty elektroniczne](./)
+[Kostaryka](countries/costa-rica.md)

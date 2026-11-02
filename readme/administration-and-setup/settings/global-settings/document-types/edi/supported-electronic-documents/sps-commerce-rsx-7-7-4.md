@@ -4,6 +4,12 @@ description: Obsługa dokumentu elektronicznego SPS COMMERCE RSX 7.7.4 w DocBits
 
 # SPS COMMERCE RSX 7.7.4
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Międzynarodowe](countries/international.md). Mapowania faktur, zamówień, odpowiedzi i awiz wysyłki są odrębne. Samo przetwarzanie plików nie zapewnia punktu dostępowego Peppol ani łączności z partnerami handlowymi.
+{% endhint %}
+
 | Właściwość | Wartość |
 |----------|-------|
 | **Kraj/Region** | Międzynarodowo (głównie Ameryka Północna) |

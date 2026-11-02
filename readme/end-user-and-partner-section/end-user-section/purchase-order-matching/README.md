@@ -2,22 +2,30 @@
 
 **Dopasowywanie zamówień zakupu (PO Matching)** służy do porównania pozycji zamówienia załadowanych dla dokumentu z wyodrębnionymi pozycjami faktury. Dane zamówienia mogą pochodzić z integracji z systemem ERP lub z innego skonfigurowanego importu. Ekran wyświetla dokument obok obu tabel, dzięki czemu przed zapisaniem lub eksportem możesz sprawdzić numery, ilości, ceny i różnice.
 
+## Uzgadnianie pozycji faktury z zamówieniem
+
+Prezentacja zaczyna się od rozpoznanego numeru zamówienia i trzech dopasowanych pozycji faktury. Następnie pokazuje wyszukiwanie ręczne jako wyjątek, celowo błędne połączenie, dopasowanie częściowe, dopasowanie automatyczne i zapis. Sprawdź wynik po ponownym wczytaniu: sam zapis nie zatwierdza ani nie eksportuje faktury.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/pl.mp4" %}
+
+[Obejrzyj film z napisami](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/pl.html)
+
 {% hint style="info" %}
-Poniższy przykład używa syntetycznej faktury i zamówienia FellowPro w organizacji **DocBits Documentation Test A**. W tabeli tej faktury wyświetla się obecnie komunikat **Nie znaleziono pozycji**. Pokazuje on nawigację i wyszukiwanie, ale nie może pokazać pomyślnego dopasowania pozycji. Nie eksportuj tego przykładu jako dopasowanej faktury.
+Nagranie wykorzystuje syntetyczne dane testowe: trzy wyodrębnione pozycje faktury i odpowiadające im zamówienie. Papier, pudła archiwizacyjne i dostawa dają łącznie 118 EUR netto. Pełne dopasowanie pokazuje 118 EUR dopasowanych i brak otwartej kwoty.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-322-po-screen-pl.png" alt="Polski ekran dopasowywania zamówień zakupu w syntetycznej organizacji Sandbox: wyszukiwarka, pasek narzędzi, pozycje zamówienia, pusta tabela pozycji faktury i podgląd faktury"><figcaption><p>Zamówienie jest załadowane; przykładowa faktura nie ma wyodrębnionych pozycji do połączenia.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-pl.png" alt="Pełne dopasowanie: wszystkie trzy pozycje są połączone, dopasowano 118 EUR, a otwarta kwota wynosi 0 EUR."><figcaption><p>Pełne dopasowanie: wszystkie trzy pozycje są połączone, dopasowano 118 EUR, a otwarta kwota wynosi 0 EUR.</p></figcaption></figure>
 
 ## Znajdź i sprawdź zamówienie
 
-1. Otwórz fakturę w **Dopasowywaniu zamówień zakupu**. Jeśli Twoja organizacja ma kilka zamówień, wpisz numer w polu **Wyszukaj numer zamówienia zakupu**.
+1. Otwórz fakturę w **Dopasowywaniu zamówień zakupu**. Po rozpoznaniu numeru zamówienia DocBits wczytuje odpowiednie zamówienie. Wyszukuj ręcznie, gdy brakuje numeru lub chcesz sprawdzić inne zamówienie.
 2. Wybierz ikonę filtra obok pola wyszukiwania, aby ustawić kryteria: **Słowo kluczowe**, **Dostawca**, **Status**, **Status zamówienia**, daty, zakres kwot, sortowanie i liczbę wyświetlanych rekordów. Wybierz **Więcej**, aby dodać kolejne kryteria. Wybierz **Stosować**, aby wyszukać, lub **Jasne**, aby zresetować filtry.
 3. Wybierz numer zamówienia nad tabelą, aby sprawdzić jego pozycje. Ikona odświeżenia obok numeru ponownie ładuje dane tego zamówienia. Ponowne ładowanie może zależeć od skonfigurowanej integracji.
-4. Porównaj każdą pozycję zamówienia z fakturą i jej wyodrębnioną tabelą. Znak **+** przy pozycji rozwija szczegóły dopasowania; sam w sobie nie łączy pozycji z fakturą. W przykładzie wyświetla się **No multi-match Information**, ponieważ takie dopasowanie nie istnieje.
+4. Porównaj każdą pozycję zamówienia z fakturą i jej wyodrębnioną tabelą. Znak **+** otwiera istniejące szczegóły dopasowania; sam nie łączy pozycji z fakturą.
 
-<figure><img src="../../../.gitbook/assets/dbdc-322-po-filters-pl.png" alt="Polskie filtry wyszukiwania zamówień: dostawca, statusy, ograniczenia dat i kwot, sortowanie oraz przyciski Stosować i Jasne"><figcaption><p>Panel filtrów służy do zawężania listy wyświetlanych zamówień.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-pl.png" alt="Wyszukiwanie ręczne pokazuje trzy pozycje zamówienia testowego. Używaj filtrów w razie potrzeby; rozpoznanego numeru zamówienia nie trzeba wyszukiwać ponownie."><figcaption><p>Wyszukiwanie ręczne pokazuje trzy pozycje zamówienia testowego. Używaj filtrów w razie potrzeby; rozpoznanego numeru zamówienia nie trzeba wyszukiwać ponownie.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-322-po-line-pl.png" alt="Rozwinięta pozycja zamówienia z komunikatem No multi-match Information i pustą tabelą pozycji faktury"><figcaption><p>Rozwinięta pozycja pokazuje szczegóły dopasowania, jeśli są dostępne.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-pl.png" alt="Dopasowanie częściowe: dopasowano papier o wartości 50 EUR, a 68 EUR pozostaje otwarte. Nie oznacza to stałego progu pięćdziesięciu procent."><figcaption><p>Dopasowanie częściowe: dopasowano papier o wartości 50 EUR, a 68 EUR pozostaje otwarte. Nie oznacza to stałego progu pięćdziesięciu procent.</p></figcaption></figure>
 
 ## Dopasuj pozycje i sprawdź wynik
 
@@ -44,7 +52,7 @@ Użyj **Historii dopasowań** (ikona zegara, jeśli pozwalają na to Twoje upraw
 
 ### Więcej niż jedna pozycja na dopasowanie
 
-Pojedyncza pozycja faktury może odpowiadać kilku pozycjom zamówienia lub odwrotnie, jeśli pozwalają na to Twoje reguły dopasowywania. Otwórz szczegóły **+** przy pozycji, aby sprawdzić istniejące dopasowanie wielokrotne. Sprawdzaj łączną ilość i cenę, a nie tylko jedną pozycję. Pusty panel szczegółów, jak w syntetycznym przykładzie powyżej, oznacza brak dopasowania wielokrotnego do sprawdzenia. Zobacz [Narzędzia dopasowywania zamówień zakupu](purchase-order-matching-tools.md) w sprawie zmiany połączeń.
+Pojedyncza pozycja faktury może odpowiadać kilku pozycjom zamówienia lub odwrotnie, jeśli pozwalają na to Twoje reguły dopasowywania. Otwórz szczegóły **+** przy pozycji, aby sprawdzić istniejące dopasowanie wielokrotne. Sprawdzaj łączną ilość i cenę, a nie tylko jedną pozycję. Pusty panel szczegółów oznacza brak dopasowania wielokrotnego do sprawdzenia. Zobacz [Narzędzia dopasowywania zamówień zakupu](purchase-order-matching-tools.md) w sprawie zmiany połączeń.
 
 ### Ilości, różnice i rabaty
 

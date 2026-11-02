@@ -1,59 +1,51 @@
 # Aktywacja i zarządzanie skryptami
 
-## Oto przewodnik wyjaśniający, jak włączać, wyłączać i zarządzać istniejącymi skryptami w DocBits, aby dostosować je do bieżących potrzeb przetwarzania:
+Administratorzy mogą używać **Skryptów** do zarządzania regułami przetwarzania dla typu dokumentu. Ten przewodnik pokazuje, gdzie znaleźć skrypty, jak je włączać lub wyłączać oraz jak bezpiecznie zmienić opublikowany skrypt.
 
-**Logowanie do DocBits:**
+## Znajdź skrypt
 
-* Otwórz przeglądarkę internetową i zaloguj się do DocBits, używając swoich danych logowania.
+1. Otwórz **Ustawienia → Typy dokumentów**.
+2. Dla typu dokumentu, którym chcesz zarządzać, wybierz **Skrypty**. Strona wyświetla listę skryptów tego typu dokumentu.
+3. Szukaj według nazwy lub zawęź listę, używając opcji **Wszystko**, **Aktywny** i **Nieaktywny**. Listę można też sortować według nazwy lub daty modyfikacji.
 
-<figure><img src="../../../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
+Każda karta pokazuje nazwę skryptu, jego kolejność wykonania jako numerowaną etykietę, wyzwalacz, wersję i status. Ikona ołówka otwiera edytor; ikona kopiowania duplikuje skrypt. **Nowy** otwiera edytor dla nowego skryptu.
 
-**Przejdź do zarządzania skryptami:**
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list-pl.png" alt="Lista skryptów posortowana według kolejności wykonania; każda karta pokazuje obok nazwy numerowaną etykietę z kolejnością wykonania"><figcaption><p>Numerowana etykieta na każdej karcie to kolejność wykonania skryptu.</p></figcaption></figure>
 
-* Poszukaj w interfejsie DocBits opcji zarządzania skryptami.
-* Może się ona różnić w zależności od Twojej konfiguracji DocBits.
+<figure><img src="../../../../../.gitbook/assets/dbdc658-script-scripts-list-inactive-pl-20261011.png" alt="Lista skryptów dla typu dokumentu Faktura z nieaktywnym przykładem dokumentacji oraz filtrami Wszystko, Aktywny i Nieaktywny"><figcaption><p>Sprawdź status po prawej stronie karty skryptu, zanim coś zmienisz.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 16.06.10.png" alt=""><figcaption></figcaption></figure>
+## Ustawianie kolejności wykonania
 
-**Przeglądanie istniejących skryptów:**
+Pole **Execution order** określa kolejność uruchamiania skryptów: niższe liczby są uruchamiane jako pierwsze. Etykieta pola pozostaje angielska również w polskim interfejsie.
 
-* Po wejściu do interfejsu zarządzania skryptami zobaczysz listę wszystkich istniejących skryptów.
-* Możesz tu przewijać listę, aby znaleźć skrypt, który chcesz włączyć, wyłączyć lub edytować.
+1. Otwórz skrypt w edytorze.
+2. Wpisz liczbę całkowitą od 0 w polu **Execution order**. Pozostaw pole puste, aby zachować 0.
+3. Zapisz skrypt. Litery, liczby dziesiętne i liczby ujemne są odrzucane z komunikatem błędu przy polu i nic nie zostaje zapisane.
 
-<figure><img src="../../../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
+Jeśli zmienisz kolejność wykonania, a następnie aktywujesz wersję, DocBits najpierw zapisuje skrypt i aktywuje wersję dopiero wtedy, gdy ten zapis się powiedzie.
 
-**Włączanie lub wyłączanie skryptu:**
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor-pl.png" alt="Edytor skryptu z polem Execution order po prawej stronie selektora wyzwalacza"><figcaption><p>Kolejność wykonania w edytorze skryptu.</p></figcaption></figure>
 
-* Aby włączyć lub wyłączyć skrypt, znajdź go na liście i włącz lub wyłącz skrypt.
-* Pamiętaj o zapisaniu zmian po dokonaniu wyboru.
+## Włączanie lub wyłączanie skryptu
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 16.16.36.png" alt=""><figcaption></figcaption></figure>
+Użyj przełącznika **Aktywny/Nieaktywny** na karcie skryptu. Zmiana jest zapisywana natychmiast; liczniki listy aktualizują się, aby pokazać wynik. Skrypt nieaktywny nadal można przeglądać i edytować, ale nie jest uruchamiany podczas przetwarzania dokumentów.
 
-**Edytowanie skryptu:**
+**Sprawdź status po utworzeniu skryptu.** W aktualnym interfejsie Sandbox zapisanie nowego skryptu tworzy wersję aktywną i ustawia kartę na **Aktywny**. Przełącz ją na **Nieaktywny**, jeśli to tylko szkic lub przykład testowy.
 
-* Jeśli musisz edytować istniejący skrypt, poszukaj w interfejsie zarządzania skryptami przycisku umożliwiającego edycję skryptu.
+## Zmiana istniejącego skryptu
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 16.23.19.png" alt="" width="123"><figcaption></figcaption></figure>
+1. Wybierz kartę skryptu lub jej ikonę ołówka. Opublikowana wersja jest tylko do odczytu, więc nie można jej bezpośrednio nadpisywać.
+2. W **Historii wersji** wybierz ikonę ołówka przy wersji, którą chcesz zmienić. Spowoduje to utworzenie **Projektu** na podstawie tej wersji.
+3. Edytuj projekt i wybierz ikonę zapisu. Przed zapisaniem sprawdź nazwę, typ dokumentu, wyzwalacz i kod.
+4. Przetestuj zmieniony skrypt na reprezentatywnych dokumentach w środowisku testowym. Gdy będzie gotowy, wybierz ikonę znacznika przy projekcie w **Historii wersji**, aby uczynić tę wersję aktywną.
+5. Wróć do listy Skrypty i sprawdź przełącznik **Aktywny/Nieaktywny** na karcie. Wersja oznaczona w Historii wersji jako **AKTYWNY** wskazuje wybraną wersję; przełącznik na karcie steruje tym, czy skrypt jest uruchamiany.
 
-* Kliknij go, aby otworzyć edytor, w którym możesz zmodyfikować kod skryptu.
-* Po wprowadzeniu zmian ponownie zapisz skrypt.
+<figure><img src="../../../../../.gitbook/assets/dbdc658-script-script-published-version-pl-20261011.png" alt="Opublikowana wersja skryptu wyświetlana jako tylko do odczytu z komunikatem o sklonowaniu jej jako projektu"><figcaption><p>Opublikowanej wersji nie można edytować bezpośrednio. Użyj ołówka w Historii wersji, aby utworzyć projekt.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc658-script-script-editable-draft-pl-20261011.png" alt="Edytowalny projekt w Historii wersji obok aktualnie aktywnej wersji skryptu"><figcaption><p>Zapisz i sprawdź projekt, zanim stanie się wersją aktywną.</p></figcaption></figure>
 
-**Przegląd i testowanie:**
+Przykłady skryptów i dostępne funkcje opisuje strona [Skrypty w DocBits](scripting-in-docbits/README.md).
 
-* Przed wprowadzeniem zmian w skrypcie dokładnie przejrzyj istniejący kod i zastanów się, jaki wpływ mogą mieć Twoje zmiany.
-* Przetestuj skrypt w środowisku testowym, aby upewnić się, że działa zgodnie z oczekiwaniami.
+Jak utworzyć skrypt, obsługiwać edytor (formatowanie, cofnięcie projektu, asystent AI) i wprowadzić kod, opisuje strona [Tworzenie i edytowanie skryptów](creating-and-editing-scripts.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
-
-**Dokumentacja:**
-
-* Nie zapomnij udokumentować swoich zmian.
-* Zapisz, jakie zmiany wprowadziłeś i dlaczego, aby inni użytkownicy w zespole mogli zrozumieć, jak działa skrypt i jaki wpływ mogą mieć Twoje zmiany.
-
-**Publikowanie zmian:**
-
-* Gdy będziesz zadowolony ze swoich zmian, opublikuj skrypt ponownie w środowisku produkcyjnym DocBits, aby zaktualizowana wersja zaczęła obowiązywać.
-
-Dzięki tym krokom możesz włączać, wyłączać i zarządzać istniejącymi skryptami w DocBits, dostosowując je do bieżących potrzeb przetwarzania oraz zapewniając, że Twoje procesy dokumentacyjne przebiegają sprawnie i poprawnie.
+Ikona kosza na liście skryptów trwale usuwa skrypt; ikona strzałki w wierszu wersji Historii wersji wczytuje starszą wersję jako projekt do edytora.

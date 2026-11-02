@@ -1,0 +1,44 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:07.216
+Chile DTE ma wpisy faktur, not kredytowych
+i dokumentów wysyłkowych. Wybierz typ
+
+formats_02
+00:00:07.216 --> 00:00:13.799
+dokumentu biznesowego przed sprawdzeniem
+pól. Faktury, noty kredytowe i informacje
+
+formats_03
+00:00:13.799 --> 00:00:16.700
+o dostawie używają różnych mapowań.
+
+workflow_01
+00:00:17.450 --> 00:00:22.918
+Otwórz E-Doc dla wykrytego formatu.
+Porównaj Transformation, Preview i
+
+workflow_02
+00:00:22.918 --> 00:00:28.491
+Extraction Paths. Reguły niestandardowe
+mają pierwszeństwo. Zapisanie wersji
+
+workflow_03
+00:00:28.491 --> 00:00:31.300
+roboczej nie powoduje jej aktywowania.
+
+accept_01
+00:00:32.050 --> 00:00:38.076
+Przetestuj fakturę i notę kredytową, jeśli
+mają zastosowanie. Sprawdź kwoty, strony
+
+accept_02
+00:00:38.076 --> 00:00:44.008
+transakcji i eksportowany typ dokumentu.
+Parsowanie nie dowodzi zatwierdzenia
+
+accept_03
+00:00:44.008 --> 00:00:46.833
+podatkowego ani dostarczenia przez sieć.
+

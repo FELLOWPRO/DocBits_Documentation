@@ -4,6 +4,12 @@ description: Obsługa dokumentów elektronicznych FACTURX 1.0.07.2 - ZUGFERD 2.3
 
 # 🇫🇷 FACTURX 1.0.07.2 - ZUGFERD 2.3.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Sprawdź w przewodniku krajowym ograniczenia wersji, faktycznie używaną konfigurację i film objaśniający dla kraju. [Francja](countries/france.md). Znacznik XML 1p0 i Factur-X XMP Version 1.0 nie określają wydania publikacji. Zachowaj ogólne oznaczenie, gdy wydanie jest nieznane.
+{% endhint %}
+
 | Właściwość           | Wartość                           |
 | -------------------- | --------------------------------- |
 | **Kraj / Region**    | Francja / Niemcy                  |
@@ -29,5 +35,5 @@ Factur-X 1.0.07.2 jest odpowiednikiem ZUGFeRD 2.3.2, wydanego w listopadzie 2024
 ## Powiązane
 
 * [Konfiguracja ZUGFeRD](../zugferd/)
-* [Mapowanie pól ZUGFeRD](../zugferd/versions/)
+* [Mapowanie pól ZUGFeRD](../zugferd/README.md)
 * [Obsługiwane dokumenty elektroniczne](./)

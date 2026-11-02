@@ -1,6 +1,6 @@
 # Eksport konfiguracji dla Portalu Dostawcy
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Supplier Export Configuration"><figcaption><p>Strona Supplier Export Configuration</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-t014-pl.png" alt="Konfiguracja eksportu portalu dostawców."><figcaption><p>Konfiguracja eksportu portalu dostawców.</p></figcaption></figure>
 
 ## Przegląd
 
@@ -29,7 +29,7 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
     }
     ```
 
-### 3. Mapping
+### 3. Mapowanie
 
 • Definicja: Określa mapowanie między polami w systemie ERP a polami w portalu dostawcy.
 
@@ -178,9 +178,9 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 
 • Actions:
 
-• Add Supplier Reference: AddSupplierRef
+• Dodaj numer referencyjny dostawcy: AddSupplierRef
 
-• Update Supplier Reference: AddSupplierRef
+• Zaktualizuj numer referencyjny dostawcy: AddSupplierRef
 
 • Pola mapowania:
 
@@ -194,7 +194,7 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 
 ### 1. Przesyłanie pliku konfiguracyjnego
 
-#### 1. Przejdź do Export Configuration:
+#### 1. Przejdź do Konfiguracja eksportu:
 
 • Przejdź z menu głównego do sekcji Export Configuration.
 

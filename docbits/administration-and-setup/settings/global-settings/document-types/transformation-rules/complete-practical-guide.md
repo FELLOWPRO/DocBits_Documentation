@@ -4,7 +4,7 @@ Transformation rules change values that DocBits has already extracted. Use them 
 
 Start with the result you need, choose the right scope, and then configure the source, conditions, and steps. The examples below use synthetic training values reviewed on **28 October 2026 in Dev NOVA**. Available controls and behavior depend on your deployed version, document type, and organization configuration.
 
-**For your first rule:** read sections 1–2, then follow Recipe 1 in section 4. Use section 3 as a reference when choosing an operation.
+**For your first rule:** read sections 1–2, then follow Recipe 1 in section 3. Use section 4 as a reference when choosing an operation.
 
 **A preview is a first check.** It does not prove that a document was saved correctly, that a purchase order matched, or that an ERP received an export. Test the saved result as well.
 
@@ -80,7 +80,31 @@ Choose a scope, configure the source and target, and verify the result.
 
 [Open with English captions and chapters](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v2/en.html). This corrected review version is awaiting subject-matter and complete listening review.
 
-## 3. Choose the transformation step
+## 3. Try a complete recipe
+
+### Recipe 1 — Fill a missing purchase order reference
+
+1. Choose **Header field**, target `purchase_order`.
+2. Add the condition **`header.purchase_order` is empty**.
+3. Read from `header.invoice_id`.
+4. Add **Trim → Change case: UPPERCASE**.
+5. Test `  po-4711  ` → `PO-4711`, then check that an already filled purchase order number is skipped.
+
+Keep the source intact. Copying and processing a value does not move it.
+
+### Recipe 2 — Standardize an item number
+
+Choose table `INVOICE_TABLE`, column `ITEM_NUMBER`. Apply **Strip prefix** `Art.-Nr. ` → **keep letters and digits** → **UPPERCASE**.
+
+`Art.-Nr. ab-12/3` → `AB123`. Use this only when the target system expects that exact form, and test the result again as an input.
+
+### Recipe 3 — Rebuild a summary row
+
+For a clearly restricted supplier, use **Clear all rows → Add row**. Set `POSITION=001`, `QUANTITY=1`, and `NET_AMOUNT` from the header net amount.
+
+Check row count, column values, and the second save. A correct summary row does not prove that matching a purchase order against the total is appropriate; that needs its own PO configuration and match test.
+
+## 4. Choose the transformation step
 
 The reviewed editor has **14 value steps** for header fields and table columns, **two table-row steps**, and **one fixed routing assignment**. The API also supports `default`, which is separate from the normal step menu. Use **Ctrl+F / Cmd+F** to find a step or task below, such as “zeros”, “prefix”, “date”, or “unit”.
 
@@ -222,30 +246,6 @@ This is **not a dedicated step in the reviewed standard editor**. The API's `def
 | `100` | `100` |
 
 A simple editor equivalent can often use **target is empty → Fix value**. That is a condition with assignment, not a hidden default menu item. Existing numeric zero stays zero.
-
-## 4. Try a complete recipe
-
-### Recipe 1 — Fill a missing purchase order reference
-
-1. Choose **Header field**, target `purchase_order`.
-2. Add the condition **`header.purchase_order` is empty**.
-3. Read from `header.invoice_id`.
-4. Add **Trim → Change case: UPPERCASE**.
-5. Test `  po-4711  ` → `PO-4711`, then check that an already filled purchase order number is skipped.
-
-Keep the source intact. Copying and processing a value does not move it.
-
-### Recipe 2 — Standardize an item number
-
-Choose table `INVOICE_TABLE`, column `ITEM_NUMBER`. Apply **Strip prefix** `Art.-Nr. ` → **keep letters and digits** → **UPPERCASE**.
-
-`Art.-Nr. ab-12/3` → `AB123`. Use this only when the target system expects that exact form, and test the result again as an input.
-
-### Recipe 3 — Rebuild a summary row
-
-For a clearly restricted supplier, use **Clear all rows → Add row**. Set `POSITION=001`, `QUANTITY=1`, and `NET_AMOUNT` from the header net amount.
-
-Check row count, column values, and the second save. A correct summary row does not prove that matching a purchase order against the total is appropriate; that needs its own PO configuration and match test.
 
 ## 5. Test beyond the preview
 

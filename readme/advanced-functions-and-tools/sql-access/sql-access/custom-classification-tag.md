@@ -1,12 +1,12 @@
-# Custom classification tag
+# Benutzerdefiniertes Klassifizierungs-Tag
 
 ## Tabelle `public.custom_classification_tag`
 
 ### Spalten
 
 * `id`: integer
-* `org_id`: ID to organisation
-* `name`: internal
+* `org_id`: ID der Organisation
+* `name`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone

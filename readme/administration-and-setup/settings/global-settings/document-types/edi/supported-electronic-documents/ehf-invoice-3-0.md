@@ -4,6 +4,12 @@ description: EHF INVOICE 3.0 elektronische Dokumentenunterstützung in DocBits
 
 # 🇳🇴 EHF INVOICE 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Norwegen](countries/norway.md). Wählen Sie die Zuordnung für den tatsächlichen Geschäftsdokumenttyp. Eine Bestellung oder Versandanzeige ist keine Rechnung.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Norwegen |
@@ -27,5 +33,5 @@ EHF (Elektronisk Handelsformat) Invoice 3.0 ist der norwegische E-Rechnungsstand
 
 ## Verwandte Themen
 
-* [Supported Electronic Documents](./)
+* [Unterstützte elektronische Dokumente](./)
 * [Peppol BIS 3.0](peppol-bis-3-0.md)

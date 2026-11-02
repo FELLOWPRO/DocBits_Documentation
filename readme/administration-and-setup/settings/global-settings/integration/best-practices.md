@@ -1,4 +1,4 @@
-# Best Practices
+# Bewährte Vorgehensweisen
 
 Best Practices für die Konfiguration und Pflege der Integrationseinstellungen tragen dazu bei, die Effizienz, Sicherheit und Zuverlässigkeit der Integration zwischen DocBits und Ihrem Identity Service Provider (IdP) sicherzustellen.&#x20;
 

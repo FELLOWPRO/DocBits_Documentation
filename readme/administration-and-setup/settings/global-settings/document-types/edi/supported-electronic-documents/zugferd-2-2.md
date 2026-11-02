@@ -4,10 +4,16 @@ description: Unterstützung für das elektronische Dokument ZUGFERD 2.2 in DocBi
 
 # 🇩🇪 ZUGFERD 2.2
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Deutschland](countries/germany.md). Syntax, Veröffentlichungsversion und Profil sind unterschiedliche Auswahlmerkmale. Leiten Sie aus der gemeinsamen Kennung 1p0 keine Factur-X-Veröffentlichung ab.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |---|---|
-| **Land / Region** | Germany |
-| **Dokumenttypen** | Invoice, Credit Note |
+| **Land / Region** | Deutschland |
+| **Dokumenttypen** | Rechnung, Gutschrift |
 | **Format** | CII (PDF/A-3 eingebettet) |
 | **Standard** | ZUGFeRD 2.2 |
 | **Basiert auf** | EN 16931 |
@@ -18,9 +24,9 @@ ZUGFeRD 2.2, veröffentlicht 2022, orientiert sich am europäischen Standard EN 
 
 | Komponente | Status |
 | ---------- | ------ |
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
@@ -29,5 +35,5 @@ ZUGFeRD 2.2, veröffentlicht 2022, orientiert sich am europäischen Standard EN 
 ## Verwandte Seiten
 
 * [ZUGFeRD-Konfiguration](../zugferd/)
-* [ZUGFeRD-Feldzuordnung](../zugferd/versions/)
+* [ZUGFeRD-Feldzuordnung](../zugferd/README.md)
 * [Unterstützte elektronische Dokumente](./)

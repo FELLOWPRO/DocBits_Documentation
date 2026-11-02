@@ -1,0 +1,55 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:04.995
+Für Colombia Factura Electronica und
+Documento Soporte gibt es separate
+
+formats_02
+00:00:04.995 --> 00:00:08.938
+Einträge. Für den
+Gutschrift-Klassifizierungseintrag ist im
+
+formats_03
+00:00:08.938 --> 00:00:13.617
+geprüften Status kein eigenes
+Extraktionspaket ausgewiesen. Bestätigen
+
+formats_04
+00:00:13.617 --> 00:00:18.496
+Sie die tatsächlich verwendete Zuordnung,
+statt die Unterstützung aus dem
+
+formats_05
+00:00:18.496 --> 00:00:20.367
+Rechnungseintrag abzuleiten.
+
+workflow_01
+00:00:21.117 --> 00:00:26.423
+Öffnen Sie E-Doc für das erkannte Format.
+Vergleichen Sie Transformation, Preview
+
+workflow_02
+00:00:26.423 --> 00:00:33.133
+und Extraction Paths. Custom-Regeln haben
+Vorrang. Das Speichern eines Entwurfs
+
+workflow_03
+00:00:33.133 --> 00:00:34.767
+aktiviert ihn nicht.
+
+accept_01
+00:00:35.517 --> 00:00:40.149
+Testen Sie, soweit zutreffend, eine
+Rechnung und eine Gutschrift. Prüfen Sie
+
+accept_02
+00:00:40.149 --> 00:00:46.279
+Beträge, Beteiligte und den exportierten
+Dokumenttyp. Das Einlesen bestätigt keine
+
+accept_03
+00:00:46.279 --> 00:00:49.400
+steuerliche Freigabe oder
+Netzwerkzustellung.
+

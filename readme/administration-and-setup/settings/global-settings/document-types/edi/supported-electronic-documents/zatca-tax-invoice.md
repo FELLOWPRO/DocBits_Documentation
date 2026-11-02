@@ -4,10 +4,16 @@ description: Unterstützung für das elektronische Dokument ZATCA TAX INVOICE in
 
 # 🇸🇦 ZATCA TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Saudi-Arabien](countries/saudi-arabia.md). Diese Bezeichnungen beschreiben unterschiedliche Prozesse und Rechnungsvarianten. Das Einlesen belegt keine Signierung, Freigabe oder Meldung über ZATCA.
+{% endhint %}
+
 | Eigenschaft | Wert |
 |---|---|
-| **Land / Region** | Saudi Arabia |
-| **Dokumenttypen** | Standard Tax Invoice |
+| **Land / Region** | Saudi-Arabien |
+| **Dokumenttypen** | Standard-Steuerrechnung |
 | **Format** | UBL 2.1 XML |
 | **Standard** | ZATCA Standard Tax Invoice |
 
@@ -17,9 +23,9 @@ Die ZATCA Tax Invoice ist das standardmäßige B2B-Steuerrechnungsformat im saud
 
 | Komponente | Status |
 | ---------- | ------ |
-| Vorschau | ✅ Supported |
-| Feldextraktion | ✅ Supported |
-| Transformation | ✅ Supported |
+| Vorschau | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
 
 ## Standard-Vorschau
 

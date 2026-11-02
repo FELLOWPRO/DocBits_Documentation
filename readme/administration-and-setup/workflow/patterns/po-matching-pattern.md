@@ -1,23 +1,21 @@
-# PO-Matching-Pattern
+# PO-Übereinstimmungsmuster
 
-**Pattern-Typ:** Validierung & Vergleich
-**Komplexität:** Mittel-Hoch
-**Geschätzte Einrichtung:** 60–90 Minuten
-**Typische Anwendungsfälle:** Drei-Wege-Abgleich, Rechnungsvalidierung, Abweichungsprüfung, Toleranzverwaltung
+**Pattern-Typ:** Validierung & Vergleich **Komplexität:** Mittel-Hoch **Geschätzte Einrichtung:** 60–90 Minuten **Typische Anwendungsfälle:** Drei-Wege-Abgleich, Rechnungsvalidierung, Abweichungsprüfung, Toleranzverwaltung
 
----
+***
 
-Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Add Card** und öffnen Sie die Kategorie **Compare with Purchase Order** — sie enthält alle von diesem Pattern verwendeten Abgleichskarten (Preis-, Mengen-, Toleranz- und Positionsvergleichskarten):
+Dieses Pattern bauen Sie im **Workflow-Builder** (Workflow Dashboard → Workflow List → Add Workflow). Klicken Sie auf **Karte hinzufügen** und öffnen Sie die Kategorie **Vergleichen Sie mit der Bestellung** — sie enthält alle von diesem Pattern verwendeten Abgleichskarten (Preis-, Mengen-, Toleranz- und Positionsvergleichskarten):
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-Bibliothek mit den Compare with Purchase Order-Karten"><figcaption><p>Die Kategorie <strong>Compare with Purchase Order</strong> — Preis-, Mengen-, Toleranz- und Positionsabgleichskarten, die in diesem Pattern durchgängig verwendet werden.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow-card-qa-20261021-category-9a74b1360332-de.png" alt="Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe."><figcaption><p>Verfügbare Karten der ausgewählten Kategorie. Füllen Sie die Platzhalter vor der Verwendung aus. Einzelne Beschriftungen dieser Kartenversion sind in der Oberfläche noch unübersetzt oder fachlich ungenau. Die Erläuterungen auf dieser Seite verwenden die passenden Begriffe.</p></figcaption></figure>
 
----
+***
 
 ## Pattern-Überblick
 
 Dieses Pattern zeigt, wie Sie umfassende Bestellabgleich-Workflows (PO Matching) in DocBits umsetzen. Der Bestellabgleich ist ein kritischer Kontrollprozess, der Rechnungsdaten mit Bestelldaten vergleicht, um Abweichungen vor der Zahlungsfreigabe zu erkennen.
 
 **Was dieses Pattern macht:**
+
 1. Ruft Bestelldaten anhand der PO-Nummer aus der Rechnung ab
 2. Vergleicht Rechnungspositionen mit Bestellpositionen
 3. Berechnet Abweichungen (Preis, Menge, Summen)
@@ -25,32 +23,35 @@ Dieses Pattern zeigt, wie Sie umfassende Bestellabgleich-Workflows (PO Matching)
 5. Leitet anhand der Abgleichsergebnisse zur Freigabe oder Eskalation weiter
 6. Verfolgt Abgleichsverlauf und Ausnahmen
 
----
+***
 
 ## Wann dieses Pattern verwenden
 
 Verwenden Sie dieses Pattern, wenn Sie Folgendes benötigen:
-- ✅ Rechnungen gegen Bestellungen validieren
-- ✅ Preisfehler vor der Zahlung erkennen
-- ✅ Mengenabweichungen identifizieren
-- ✅ Beschaffungskontrollen durchsetzen
-- ✅ Doppelzahlungen verhindern
-- ✅ Drei-Wege-Abgleich automatisieren
-- ✅ Den manuellen Prüfaufwand für Rechnungen reduzieren
+
+* ✅ Rechnungen gegen Bestellungen validieren
+* ✅ Preisfehler vor der Zahlung erkennen
+* ✅ Mengenabweichungen identifizieren
+* ✅ Beschaffungskontrollen durchsetzen
+* ✅ Doppelzahlungen verhindern
+* ✅ Drei-Wege-Abgleich automatisieren
+* ✅ Den manuellen Prüfaufwand für Rechnungen reduzieren
 
 **Verwenden Sie dieses Pattern nicht, wenn:**
-- ❌ keine Bestellung zur Rechnung existiert (Nicht-PO-Rechnungen)
-- ❌ Bestelldaten in DocBits nicht verfügbar sind
-- ❌ eine manuelle Prüfung der Automatisierung vorgezogen wird
-- ❌ der Bestellabgleich laut Geschäftsrichtlinie nicht erforderlich ist
 
----
+* ❌ keine Bestellung zur Rechnung existiert (Nicht-PO-Rechnungen)
+* ❌ Bestelldaten in DocBits nicht verfügbar sind
+* ❌ eine manuelle Prüfung der Automatisierung vorgezogen wird
+* ❌ der Bestellabgleich laut Geschäftsrichtlinie nicht erforderlich ist
+
+***
 
 ## Den Bestellabgleich verstehen
 
 ### Der Drei-Wege-Abgleich
 
 **Klassische Beschaffungskontrolle:**
+
 ```
 Purchase Order (PO)  →  Created when ordering
         ↓
@@ -62,6 +63,7 @@ THREE-WAY MATCH = PO + GR + Invoice all match
 ```
 
 **DocBits-Umsetzung (Zwei-Wege-Abgleich):**
+
 ```
 Purchase Order (PO)  →  Imported to DocBits
         ↓
@@ -70,18 +72,20 @@ Invoice              →  Scanned by DocBits
 COMPARISON           →  Invoice vs PO validation
 ```
 
----
+***
 
 ## Formeln zur Abweichungsberechnung
 
 ### Stückpreis-Abweichung
 
 **Formel:**
+
 ```
 Variance % = |(Invoice Unit Price - PO Unit Price)| / PO Unit Price × 100
 ```
 
 **Beispiel:**
+
 ```
 PO Unit Price:       €100.00
 Invoice Unit Price:  €103.00
@@ -94,16 +98,18 @@ Tolerance: 5%
 Result: 3% ≤ 5% → PASS ✅
 ```
 
----
+***
 
 ### Mengen-Abweichung
 
 **Formel:**
+
 ```
 Variance % = |(Invoice Quantity - PO Quantity)| / PO Quantity × 100
 ```
 
 **Beispiel:**
+
 ```
 PO Quantity:        100 units
 Invoice Quantity:   98 units
@@ -116,16 +122,18 @@ Tolerance: 10%
 Result: 2% ≤ 10% → PASS ✅
 ```
 
----
+***
 
 ### Gesamtbetrags-Abweichung
 
 **Formel:**
+
 ```
 Variance % = |(Invoice Total - PO Total)| / PO Total × 100
 ```
 
 **Beispiel:**
+
 ```
 PO Total:       €10,000.00
 Invoice Total:  €10,450.00
@@ -138,46 +146,50 @@ Tolerance: 5%
 Result: 4.5% ≤ 5% → PASS ✅
 ```
 
----
+***
 
 ## Vollständiges Workflow-Beispiel
 
 ### Szenario: Rechnungsvalidierung mit toleranzbasiertem Routing
 
 **Geschäftliche Anforderung:**
-- Alle Rechnungen mit PO-Referenz müssen validiert werden
-- Toleranz für Preisabweichung: 5 %
-- Toleranz für Mengenabweichung: 10 %
-- Toleranz für Gesamtbetragsabweichung: 3 %
-- Innerhalb der Toleranz: Automatisch freigeben
-- Außerhalb der Toleranz: Prüfaufgabe erstellen
-- Fehlende Bestellung: An den Einkauf eskalieren
+
+* Alle Rechnungen mit PO-Referenz müssen validiert werden
+* Toleranz für Preisabweichung: 5 %
+* Toleranz für Mengenabweichung: 10 %
+* Toleranz für Gesamtbetragsabweichung: 3 %
+* Innerhalb der Toleranz: Automatisch freigeben
+* Außerhalb der Toleranz: Prüfaufgabe erstellen
+* Fehlende Bestellung: An den Einkauf eskalieren
 
 **Verwendete Workflow-Karten:**
-1. CONDITION_DOC_FIELD_EXISTS – Prüfen, ob die PO-Nummer vorhanden ist
-2. PURCHASE_ORDER_FULL_MATCH – Vollabgleich versuchen
-3. CONDITION_DOC_TO_PO_UNIT_PRICE – Preisabweichung prüfen
-4. CONDITION_DOC_TO_PO_QUANTITY – Mengenabweichung prüfen
-5. CONDITION_DOC_TO_PO_TAX_LINES – Steuerabgleich prüfen
-6. ACTION_SET_FIELD_TO_TEXT – Abgleichsergebnisse speichern
-7. tasks_create – Prüfaufgaben erstellen
-8. ACTION_SEND_EMAIL_TO_GROUPS – Benachrichtigungen senden
 
----
+1. CONDITION\_DOC\_FIELD\_EXISTS – Prüfen, ob die PO-Nummer vorhanden ist
+2. PURCHASE\_ORDER\_FULL\_MATCH – Vollabgleich versuchen
+3. CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE – Preisabweichung prüfen
+4. CONDITION\_DOC\_TO\_PO\_QUANTITY – Mengenabweichung prüfen
+5. CONDITION\_DOC\_TO\_PO\_TAX\_LINES – Steuerabgleich prüfen
+6. ACTION\_SET\_FIELD\_TO\_TEXT – Abgleichsergebnisse speichern
+7. tasks\_create – Prüfaufgaben erstellen
+8. ACTION\_SEND\_EMAIL\_TO\_GROUPS – Benachrichtigungen senden
+
+***
 
 ## Schritt-für-Schritt-Umsetzung
 
 ### Schritt 1: Auf PO-Referenz prüfen
 
-**Karte:** CONDITION_DOC_FIELD_EXISTS oder CONDITION_DOC_FIELD_CONTAINS
+**Karte:** CONDITION\_DOC\_FIELD\_EXISTS oder CONDITION\_DOC\_FIELD\_CONTAINS
 
 **Konfiguration:**
+
 ```
 Field: PO_Number
 Operator: IS NOT EMPTY
 ```
 
 **Logik:**
+
 ```
 IF PO_Number exists:
   → Continue to PO matching
@@ -189,16 +201,18 @@ ELSE:
 
 **Leitfaden-Referenz:** [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md)
 
----
+***
 
 ### Schritt 2: Bestelldaten abrufen
 
 **Automatisch in DocBits:**
-- System schlägt die Bestellung anhand des Felds PO_Number nach
-- Ruft die Bestellpositionen ab
-- Stellt die Daten zum Vergleich bereit
+
+* System schlägt die Bestellung anhand des Felds PO\_Number nach
+* Ruft die Bestellpositionen ab
+* Stellt die Daten zum Vergleich bereit
 
 **Manuelle Konfiguration (bei Bedarf):**
+
 ```
 PO Source: DocBits Master Data
 PO Lookup Field: PO_Number
@@ -206,15 +220,16 @@ Match Type: Exact Match
 Include Closed POs: No (or Yes if policy allows)
 ```
 
----
+***
 
 ### Schritt 3: Vollabgleich prüfen
 
-**Karte:** PURCHASE_ORDER_FULL_MATCH
+**Karte:** PURCHASE\_ORDER\_FULL\_MATCH
 
 **Zweck:** Schnelle Prüfung, ob alles perfekt übereinstimmt
 
 **Konfiguration:**
+
 ```
 Match Level: Full Match
 Include: All line items, prices, quantities, totals
@@ -222,6 +237,7 @@ Tolerance: None (exact match)
 ```
 
 **Logik:**
+
 ```
 IF Full Match = TRUE:
   → Set "PO_Match_Status" = "FULL MATCH"
@@ -235,16 +251,18 @@ IF Full Match = FALSE:
 ```
 
 **Ergebnis:**
-- **TRUE**: Perfekte Übereinstimmung, automatische Freigabe
-- **FALSE**: Mit detaillierten Prüfungen fortfahren
 
----
+* **TRUE**: Perfekte Übereinstimmung, automatische Freigabe
+* **FALSE**: Mit detaillierten Prüfungen fortfahren
+
+***
 
 ### Schritt 4: Stückpreis-Abweichung prüfen
 
-**Karte:** CONDITION_DOC_TO_PO_UNIT_PRICE (v5 empfohlen)
+**Karte:** CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE (v5 empfohlen)
 
 **Konfiguration:**
+
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 5%
@@ -253,6 +271,7 @@ Apply To: All line items
 ```
 
 **Schritt für Schritt:**
+
 ```
 For each line item:
   1. Get Invoice Unit Price
@@ -263,6 +282,7 @@ For each line item:
 ```
 
 **Beispielberechnung:**
+
 ```
 Line Item 1:
   Product: ABC123
@@ -283,15 +303,16 @@ Line Item 2:
 Overall Result: FAIL (one or more items failed)
 ```
 
-**Leitfaden-Referenz:** [PO-Matching-Komplettleitfaden – Stückpreis](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
+**Leitfaden-Referenz:** [PO-Matching-Komplettleitfaden – Stückpreis](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
+***
 
 ### Schritt 5: Mengen-Abweichung prüfen
 
-**Karte:** CONDITION_DOC_TO_PO_QUANTITY
+**Karte:** CONDITION\_DOC\_TO\_PO\_QUANTITY
 
 **Konfiguration:**
+
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 10%
@@ -302,6 +323,7 @@ Allow Over-Delivery: No (strict)
 ```
 
 **Logik:**
+
 ```
 For each line item:
   1. Get Invoice Quantity
@@ -314,6 +336,7 @@ For each line item:
 ```
 
 **Beispiel:**
+
 ```
 Line Item 1:
   Product: ABC123
@@ -332,15 +355,16 @@ Line Item 2:
   Result: FAIL ❌ (Escalate)
 ```
 
-**Leitfaden-Referenz:** [PO-Matching-Komplettleitfaden – Menge](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
+**Leitfaden-Referenz:** [PO-Matching-Komplettleitfaden – Menge](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
----
+***
 
 ### Schritt 6: Steuerzeilen-Abgleich prüfen
 
-**Karte:** CONDITION_DOC_TO_PO_TAX_LINES
+**Karte:** CONDITION\_DOC\_TO\_PO\_TAX\_LINES
 
 **Konfiguration:**
+
 ```
 Match Tax Codes: Yes
 Match Tax Rates: Yes
@@ -349,6 +373,7 @@ Tax Calculation: Verify recalculation
 ```
 
 **Validierung:**
+
 ```
 1. Check tax codes match (e.g., "VAT19" on both)
 2. Check tax rates match (19% on both)
@@ -358,6 +383,7 @@ Tax Calculation: Verify recalculation
 ```
 
 **Beispiel:**
+
 ```
 Invoice:
   Net Amount: €100.00
@@ -374,36 +400,40 @@ PO:
 Result: Tax alignment PASS ✅
 ```
 
----
+***
 
 ### Schritt 7: Abgleichsergebnisse speichern
 
-**Karte:** ACTION_SET_FIELD_TO_TEXT (mehrfach)
+**Karte:** ACTION\_SET\_FIELD\_TO\_TEXT (mehrfach)
 
 **Konfiguration:**
 
-**Feld 1: PO_Match_Status**
+**Feld 1: PO\_Match\_Status**
+
 ```
 Field: PO_Match_Status
 Value: {{CALCULATED}}
 Options: "FULL MATCH" | "WITHIN TOLERANCE" | "OUT OF TOLERANCE" | "NO MATCH"
 ```
 
-**Feld 2: Price_Variance_Percent**
+**Feld 2: Price\_Variance\_Percent**
+
 ```
 Field: Price_Variance_Percent
 Value: {{CALCULATED_PRICE_VARIANCE}}
 Format: "4.5%" (example)
 ```
 
-**Feld 3: Quantity_Variance_Percent**
+**Feld 3: Quantity\_Variance\_Percent**
+
 ```
 Field: Quantity_Variance_Percent
 Value: {{CALCULATED_QUANTITY_VARIANCE}}
 Format: "2.0%" (example)
 ```
 
-**Feld 4: Match_Details**
+**Feld 4: Match\_Details**
+
 ```
 Field: Match_Details
 Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (within 10% tolerance)\nTotal: PASS"
@@ -411,11 +441,12 @@ Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (wit
 
 **Leitfaden-Referenz:** [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md)
 
----
+***
 
 ### Schritt 8: Anhand der Abgleichsergebnisse weiterleiten
 
 **Szenario A: Perfekte Übereinstimmung (Vollabgleich)**
+
 ```
 IF PO_Match_Status = "FULL MATCH":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -427,6 +458,7 @@ IF PO_Match_Status = "FULL MATCH":
 ```
 
 **Szenario B: Innerhalb der Toleranz**
+
 ```
 IF PO_Match_Status = "WITHIN TOLERANCE":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -438,6 +470,7 @@ IF PO_Match_Status = "WITHIN TOLERANCE":
 ```
 
 **Szenario C: Außerhalb der Toleranz (geringfügig)**
+
 ```
 IF Variance < 15% (minor exceptions):
   1. Set Match_Status = "REVIEW REQUIRED"
@@ -452,6 +485,7 @@ IF Variance < 15% (minor exceptions):
 ```
 
 **Szenario D: Außerhalb der Toleranz (erheblich)**
+
 ```
 IF Variance ≥ 15% (major exceptions):
   1. Set Match_Status = "ESCALATION REQUIRED"
@@ -468,6 +502,7 @@ IF Variance ≥ 15% (major exceptions):
 ```
 
 **Szenario E: Fehlende Bestellung oder keine Übereinstimmung**
+
 ```
 IF PO not found OR no items match:
   1. Set Match_Status = "NO MATCH"
@@ -479,7 +514,7 @@ IF PO not found OR no items match:
   5. Request PO creation or correction
 ```
 
----
+***
 
 ## Vollständiges Workflow-Diagramm
 
@@ -623,7 +658,7 @@ INVOICE ARRIVES
 └─ [PO check complete]
 ```
 
----
+***
 
 ## Konfigurationsvorlagen
 
@@ -663,7 +698,7 @@ INVOICE ARRIVES
 
 **Verwendung:** Streng kontrolliertes Umfeld, geringe Toleranz für Abweichungen
 
----
+***
 
 ### Vorlage 2: Flexibler Bestellabgleich (großzügig)
 
@@ -701,7 +736,7 @@ INVOICE ARRIVES
 
 **Verwendung:** Flexibles Umfeld, vertrauenswürdige Lieferanten, höhere Toleranz
 
----
+***
 
 ### Vorlage 3: Reiner Preisabgleich
 
@@ -728,7 +763,7 @@ INVOICE ARRIVES
 
 **Verwendung:** Wenn nur der Preis zählt und Mengenabweichungen erwartet werden
 
----
+***
 
 ## Erweiterte Szenarien
 
@@ -737,6 +772,7 @@ INVOICE ARRIVES
 **Herausforderung:** Rechnung für eine Teillieferung einer Bestellung
 
 **Lösung:**
+
 ```
 1. Allow quantity under-delivery within tolerance
 2. Track cumulative invoiced quantity vs PO quantity
@@ -746,6 +782,7 @@ INVOICE ARRIVES
 ```
 
 **Umsetzung:**
+
 ```
 IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
   Calculate: Percentage = (Cumulative/PO) × 100
@@ -755,13 +792,14 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
     Close PO
 ```
 
----
+***
 
 ### Szenario 2: Bestellabgleich mit mehreren Währungen
 
 **Herausforderung:** Rechnungswährung weicht von der Bestellwährung ab
 
 **Lösung:**
+
 ```
 1. Detect currency mismatch
 2. Get exchange rate (from API or master data)
@@ -771,6 +809,7 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 ```
 
 **Umsetzung:**
+
 ```
 IF Invoice_Currency ≠ PO_Currency:
   1. Get exchange rate for Invoice_Currency → PO_Currency
@@ -780,13 +819,14 @@ IF Invoice_Currency ≠ PO_Currency:
   5. Flag: "Currency_Conversion_Applied"
 ```
 
----
+***
 
 ### Szenario 3: Rahmenbestellung / Rahmenvereinbarung
 
 **Herausforderung:** Mehrere Rechnungen gegen eine einzige Bestellung
 
 **Lösung:**
+
 ```
 1. Identify PO type = "Blanket"
 2. Track cumulative invoiced value
@@ -796,6 +836,7 @@ IF Invoice_Currency ≠ PO_Currency:
 ```
 
 **Umsetzung:**
+
 ```
 IF PO_Type = "Blanket":
   Calculate: Total_Invoiced_To_Date
@@ -807,7 +848,7 @@ IF PO_Type = "Blanket":
     Escalate: "Blanket PO limit exceeded"
 ```
 
----
+***
 
 ## Fehlerbehandlung & Sonderfälle
 
@@ -816,6 +857,7 @@ IF PO_Type = "Blanket":
 **Problem:** Rechnung enthält eine Position, die nicht auf der Bestellung steht
 
 **Lösung:**
+
 ```
 1. Identify unmatched line items
 2. Calculate: Unmatched_Amount
@@ -827,13 +869,14 @@ IF PO_Type = "Blanket":
 5. Flag: "Additional_Items_Present"
 ```
 
----
+***
 
 ### Sonderfall 2: Bestellung geschlossen, aber Rechnung trifft ein
 
 **Problem:** Bestellung bereits geschlossen, verspätete Rechnung erhalten
 
 **Lösung:**
+
 ```
 1. Check: PO_Status = "CLOSED"
 2. Check: Invoice_Date vs PO_Close_Date
@@ -847,13 +890,14 @@ IF PO_Type = "Blanket":
      Manual decision required
 ```
 
----
+***
 
 ### Sonderfall 3: Mehrere Bestellungen auf einer Rechnung
 
 **Problem:** Rechnung verweist auf mehrere Bestellungen
 
 **Lösung:**
+
 ```
 1. Parse invoice for multiple PO numbers
 2. For each PO:
@@ -864,109 +908,107 @@ IF PO_Type = "Blanket":
 5. Report on each PO separately
 ```
 
----
+***
 
 ## Leistungstipps
 
 ✅ **Best Practices:**
-- Bestelldaten cachen, um Lookups zu reduzieren
-- Angemessene Toleranzen setzen (nicht zu streng, nicht zu großzügig)
-- Zuerst den Vollabgleich prüfen (schneller)
-- Alle Abweichungsberechnungen protokollieren
-- Toleranzeinstellungen vierteljährlich überprüfen
-- Automatische Freigabequoten überwachen
-- Häufige Abweichungsgründe verfolgen
+
+* Bestelldaten cachen, um Lookups zu reduzieren
+* Angemessene Toleranzen setzen (nicht zu streng, nicht zu großzügig)
+* Zuerst den Vollabgleich prüfen (schneller)
+* Alle Abweichungsberechnungen protokollieren
+* Toleranzeinstellungen vierteljährlich überprüfen
+* Automatische Freigabequoten überwachen
+* Häufige Abweichungsgründe verfolgen
 
 ❌ **Vermeiden:**
-- Nulltoleranz (zu streng, zu viele manuelle Prüfungen)
-- Extrem hohe Toleranz (untergräbt den Zweck)
-- Systematische Abweichungen ignorieren
-- Abweichungstrends nicht verfolgen
-- Ohne Bestellung verarbeiten (wenn erforderlich)
 
----
+* Nulltoleranz (zu streng, zu viele manuelle Prüfungen)
+* Extrem hohe Toleranz (untergräbt den Zweck)
+* Systematische Abweichungen ignorieren
+* Abweichungstrends nicht verfolgen
+* Ohne Bestellung verarbeiten (wenn erforderlich)
+
+***
 
 ## Überwachung & Berichterstattung
 
 ### Wichtige Kennzahlen
 
 1. **Abgleichsquote:**
-   - Vollabgleich: X %
-   - Innerhalb der Toleranz: Y %
-   - Außerhalb der Toleranz: Z %
-
+   * Vollabgleich: X %
+   * Innerhalb der Toleranz: Y %
+   * Außerhalb der Toleranz: Z %
 2. **Abweichungsanalyse:**
-   - Durchschnittliche Preisabweichung
-   - Durchschnittliche Mengenabweichung
-   - Häufige Abweichungsgründe
-
+   * Durchschnittliche Preisabweichung
+   * Durchschnittliche Mengenabweichung
+   * Häufige Abweichungsgründe
 3. **Verarbeitungseffizienz:**
-   - Automatische Freigabequote
-   - Manuelle Prüfquote
-   - Durchschnittliche Prüfzeit
-
+   * Automatische Freigabequote
+   * Manuelle Prüfquote
+   * Durchschnittliche Prüfzeit
 4. **Lieferantenleistung:**
-   - Abweichungen nach Lieferant
-   - Abgleichsquote nach Lieferant
-   - Problematische Lieferanten
+   * Abweichungen nach Lieferant
+   * Abgleichsquote nach Lieferant
+   * Problematische Lieferanten
 
----
+***
 
 ## Test-Checkliste
 
-- [ ] Szenario perfekte Übereinstimmung (Vollabgleich)
-- [ ] Szenario innerhalb der Toleranz (geringe Abweichung)
-- [ ] Szenario außerhalb der Toleranz (große Abweichung)
-- [ ] Szenario fehlende Bestellung
-- [ ] Szenario falsche PO-Nummer
-- [ ] Szenario Teillieferung
-- [ ] Szenario Überlieferung
-- [ ] Szenario Währungsabweichung
-- [ ] Szenario mehrere Bestellungen
-- [ ] Szenario geschlossene Bestellung
-- [ ] Szenario Steuerabweichung
-- [ ] Eskalations-Workflow
-- [ ] Aufgabenerstellung
-- [ ] E-Mail-Benachrichtigungen
-- [ ] Feldaktualisierungen
-- [ ] Export nach Freigabe
+* [ ] Szenario perfekte Übereinstimmung (Vollabgleich)
+* [ ] Szenario innerhalb der Toleranz (geringe Abweichung)
+* [ ] Szenario außerhalb der Toleranz (große Abweichung)
+* [ ] Szenario fehlende Bestellung
+* [ ] Szenario falsche PO-Nummer
+* [ ] Szenario Teillieferung
+* [ ] Szenario Überlieferung
+* [ ] Szenario Währungsabweichung
+* [ ] Szenario mehrere Bestellungen
+* [ ] Szenario geschlossene Bestellung
+* [ ] Szenario Steuerabweichung
+* [ ] Eskalations-Workflow
+* [ ] Aufgabenerstellung
+* [ ] E-Mail-Benachrichtigungen
+* [ ] Feldaktualisierungen
+* [ ] Export nach Freigabe
 
----
+***
 
 ## Verwandte Patterns
 
 ### Patterns, die gut zusammenpassen:
 
-- **[Aufgabenverwaltungs-Pattern](task-management-pattern.md)** – Prüfaufgaben bei Abweichungen erstellen
-- **[Entscheidungslogik-Pattern](decision-logic-pattern.md)** – Komplexes Routing anhand der Abweichungshöhe
-- **[API-Integrations-Pattern](api-integration-pattern.md)** – Aktuelle Preise zum Vergleich abrufen
-- **[Datentransformations-Pattern](data-transformation-pattern.md)** – Währungs- und Einheitenumrechnung
+* [**Aufgabenverwaltungs-Pattern**](task-management-pattern.md) – Prüfaufgaben bei Abweichungen erstellen
+* [**Entscheidungslogik-Pattern**](decision-logic-pattern.md) – Komplexes Routing anhand der Abweichungshöhe
+* [**API-Integrations-Pattern**](api-integration-pattern.md) – Aktuelle Preise zum Vergleich abrufen
+* [**Datentransformations-Pattern**](data-transformation-pattern.md) – Währungs- und Einheitenumrechnung
 
----
+***
 
 ## Verwandte Leitfäden
 
 ### Voraussetzungen
-- [PO-Matching-Komplettleitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md) – Alle PO-Abgleichskarten
-- [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md) – Bedingungslogik
-- [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md) – Feldoperationen
+
+* [PO-Matching-Komplettleitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md) – Alle PO-Abgleichskarten
+* [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md) – Bedingungslogik
+* [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md) – Feldoperationen
 
 ### Verwandte Karten
-- **PURCHASE_ORDER_FULL_MATCH** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md#full-match)
-- **CONDITION_DOC_TO_PO_UNIT_PRICE** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price)
-- **CONDITION_DOC_TO_PO_QUANTITY** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity)
-- **CONDITION_DOC_TO_PO_TAX_LINES** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md#tax-lines)
-- **tasks_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
+
+* **PURCHASE\_ORDER\_FULL\_MATCH** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_UNIT\_PRICE** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_QUANTITY** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **CONDITION\_DOC\_TO\_PO\_TAX\_LINES** – [PO-Matching-Leitfaden](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+* **tasks\_create** – [Leitfaden Aufgabenzuweisung](../then/task/task-assignment-guide.md)
 
 ### Nächste Schritte
-- Prüfaufgaben erstellen: [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
-- E-Mail-Benachrichtigungen hinzufügen: [E-Mail-Leitfaden](../then/action/send-email-groups-guide.md)
-- Komplexes Routing umsetzen: [Entscheidungslogik-Pattern](decision-logic-pattern.md)
 
----
+* Prüfaufgaben erstellen: [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
+* E-Mail-Benachrichtigungen hinzufügen: [E-Mail-Leitfaden](../then/action/send-email-groups-guide.md)
+* Komplexes Routing umsetzen: [Entscheidungslogik-Pattern](decision-logic-pattern.md)
 
-**Pattern-Version:** 1.0
-**Zuletzt aktualisiert:** 23. Oktober 2025
-**Schwierigkeit:** Mittel-Hoch
-**Geschätzte Zeit:** 60–90 Minuten
-**Erfolgsquote:** Hoch (bei korrekter Konfiguration)
+***
+
+**Pattern-Version:** 1.0 **Zuletzt aktualisiert:** 23. Oktober 2025 **Schwierigkeit:** Mittel-Hoch **Geschätzte Zeit:** 60–90 Minuten **Erfolgsquote:** Hoch (bei korrekter Konfiguration)

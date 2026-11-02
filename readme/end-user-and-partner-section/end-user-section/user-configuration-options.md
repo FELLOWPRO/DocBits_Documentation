@@ -7,19 +7,15 @@ Um Ihre Einstellungen zu konfigurieren, klicken Sie auf das Benutzer-Icon in der
 
 <figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/user_config_options_2.png" alt="" width="308"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s50-user_config_options_2-de.png" alt="Deutsches Benutzermenü mit Sprache, Dunkelmodus, Einstellungen und Abmelden. Kontoname und Initialen sind ausgeblendet." width="308"><figcaption><p>Deutsches Benutzermenü mit Sprache, Dunkelmodus, Einstellungen und Abmelden. Kontoname und Initialen sind ausgeblendet.</p></figcaption></figure>
 
 **Sprache**
 
-{% embed url="https://youtu.be/h_knkUZkNyI" %}
-How to Change Language in DocBits (User Settings Tutorial)
-{% endembed %}
-
 * **Bevorzugte Sprache auswählen:** Wählen Sie Ihre gewünschte Sprache aus den verfügbaren Optionen.
 
-**Dark Mode**
+**Dunkelmodus**
 
-* **Zum Dark Mode wechseln:** Aktivieren oder deaktivieren Sie den Dark Mode für ein angenehmeres Seherlebnis.
+* **Zum Dunkelmodus wechseln:** Aktivieren oder deaktivieren Sie den Dunkelmodus für ein angenehmeres Seherlebnis.
 
 **Benutzereinstellungen**
 
@@ -32,8 +28,8 @@ In diesem Abschnitt können Sie die folgenden Präferenzen anpassen:
 * **Schriftgröße:** Passen Sie die Textgröße für bessere Lesbarkeit an.
 * **Dual Monitor Mode:** Aktivieren Sie diese Funktion, wenn Sie zwei Monitore verwenden.
 
-<figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/user-config3-de.png" alt=""><figcaption></figcaption></figure>
 
-**Ausloggen**
+**Abmelden**
 
-* **Ausloggen:** Klicken Sie hier, um sich sicher von Ihrem Konto auszuloggen .
+* **Abmelden:** Klicken Sie hier, um sich sicher von Ihrem Konto auszuloggen .

@@ -1,11 +1,11 @@
-# Custom classification document
+# Benutzerdefiniertes Klassifizierungsdokument
 
 ## Tabelle `public.custom_classification_document`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
+* `id`: intern
+* `org_id`: ID der Organisation
 * `first_page_content`: text
 * `content`: text
 * `created_by`: integer

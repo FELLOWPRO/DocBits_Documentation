@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument PHILIPPINES EIS in D
 
 # 🇵🇭 PHILIPPINES EIS
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Philippinen](countries/philippines.md). Die Bezeichnung nennt keine Veröffentlichungsversion. Prüfen Sie das Datenschema und den betreffenden Dokumenttyp, bevor Sie sich auf eine generische EIS-Bezeichnung verlassen.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Philippinen |

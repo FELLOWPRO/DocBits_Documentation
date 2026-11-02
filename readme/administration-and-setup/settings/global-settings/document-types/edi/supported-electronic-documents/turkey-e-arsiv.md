@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument TURKEY E-ARSIV in Do
 
 # 🇹🇷 TURKEY E-ARSIV
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Türkei](countries/turkey.md). Prüfen Sie das Profil und die Dokumentstruktur der Quelldatei. Die Familienbezeichnung identifiziert nicht jede UBL-TR-Veröffentlichung und belegt keine Zustellung über die Steuerplattform.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Türkei |

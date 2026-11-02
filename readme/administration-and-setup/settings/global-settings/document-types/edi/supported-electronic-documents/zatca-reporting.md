@@ -4,6 +4,12 @@ description: Unterstützung des elektronischen Dokuments ZATCA REPORTING in DocB
 
 # 🇸🇦 ZATCA REPORTING
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Saudi-Arabien](countries/saudi-arabia.md). Diese Bezeichnungen beschreiben unterschiedliche Prozesse und Rechnungsvarianten. Das Einlesen belegt keine Signierung, Freigabe oder Meldung über ZATCA.
+{% endhint %}
+
 | Eigenschaft       | Wert                                  |
 | ----------------- | ------------------------------------- |
 | **Land / Region** | Saudi-Arabien                         |

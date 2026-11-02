@@ -1,23 +1,23 @@
-# Integration & SSO
+# Integration und SSO
 
-<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="Integration & SSO"><figcaption><p>Seite Integration & SSO</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/integration_sso-de.png" alt="Integration & SSO"><figcaption><p>SSO-Einstellungen in der deutschen Oberfläche. Organisationskennungen und Eingabewerte sind ausgeblendet.</p></figcaption></figure>
 
 Auf der Seite Integration & SSO verwalten Sie API-Schlüssel für den programmatischen Zugriff, Organisations-IDs und die Konfiguration von Single Sign-On (SSO).
 
-## API Key
+## API-Schlüssel
 
 Verwalten Sie API-Schlüssel, die für den programmatischen Zugriff auf DocBits verwendet werden.
 
 | Spalte | Beschreibung |
 |--------|-------------|
-| **Key** | Der maskierte Wert des API-Schlüssels. Klicken Sie auf das Kopiersymbol, um den vollständigen Schlüssel zu kopieren. |
+| **Schlüssel** | Der maskierte Wert des API-Schlüssels. Klicken Sie auf das Kopiersymbol, um den vollständigen Schlüssel zu kopieren. |
 | **Name** | Ein aussagekräftiger Name für den Schlüssel. |
-| **Expires** | Ablaufdatum (oder „Never“). |
-| **Last Used** | Wann der Schlüssel zuletzt verwendet wurde. |
+| **Läuft Ab** | Ablaufdatum (oder „Never“). |
+| **Zuletzt Verwendet** | Wann der Schlüssel zuletzt verwendet wurde. |
 | **Status** | Active oder Inactive. |
-| **Actions** | Drei-Punkte-Menü zum Widerrufen oder Löschen. |
+| **Aktionen** | Drei-Punkte-Menü zum Widerrufen oder Löschen. |
 
-Klicken Sie auf **+ Create API Key**, um einen neuen Schlüssel zu erzeugen.
+Klicken Sie auf **+ API-Schlüssel erstellen**, um einen neuen Schlüssel zu erzeugen.
 
 ## ID
 
@@ -25,31 +25,31 @@ Zeigt die Kennungen Ihrer Organisation:
 
 | Feld | Beschreibung |
 |-------|-------------|
-| **Org ID** | Die eindeutige Kennung Ihrer Organisation. |
-| **Sub Org ID** | Die ID der aktuell ausgewählten Unterorganisation. |
+| **Org-ID** | Die eindeutige Kennung Ihrer Organisation. |
+| **Unterorganisations-ID** | Die ID der aktuell ausgewählten Unterorganisation. |
 
-## SSO Service Provider Settings
+## SSO-Dienstanbieter-Einstellungen
 
 DocBits-SSO-Konfigurationswerte, die Sie beim Einrichten Ihres Identity Providers benötigen:
 
 | Feld | Beschreibung |
 |-------|-------------|
-| **Entity ID** | Die SAML-Metadaten-URL für DocBits. |
+| **Entitäts-ID** | Die SAML-Metadaten-URL für DocBits. |
 | **SLO URL** | URL für Single Logout. |
 | **SSO URL** | URL des Assertion Consumer Service. |
 
-Außerdem können Sie für Ihre IdP-Konfiguration **Download Certificate** und **Download Metadata** verwenden.
+Außerdem können Sie für Ihre IdP-Konfiguration **Zertifikat herunterladen** und **Metadaten herunterladen** verwenden.
 
-## Identity Service Provider Settings
+## Einstellungen des Identitätsdienstanbieters
 
 Konfigurieren Sie Ihren externen Identity Provider (IdP):
 
 | Feld | Beschreibung |
 |-------|-------------|
-| **Tenant ID** | Die Mandantenkennung Ihres IdP. |
-| **Upload file** | Laden Sie die Metadaten-XML-Datei Ihres IdP hoch. |
+| **Mandanten-ID** | Die Mandantenkennung Ihres IdP. |
+| **Datei hochladen** | Laden Sie die Metadaten-XML-Datei Ihres IdP hoch. |
 
-Klicken Sie auf **Configure**, um Ihre IdP-Einstellungen zu speichern.
+Klicken Sie auf **Konfigurieren Sie**, um Ihre IdP-Einstellungen zu speichern.
 
 * **Höhere Effizienz:** Die Integration mit anderen Tools und Diensten kann Arbeitsabläufe straffen und die Effizienz steigern. Beispielsweise können Dokumente automatisch zwischen Docbits und einem CRM-System ausgetauscht werden, was manuelle Eingaben reduziert und die Produktivität erhöht
 * **Datenkonsistenz:** Die Integration ermöglicht den nahtlosen Datenaustausch zwischen verschiedenen Systemen und verbessert so Konsistenz und Genauigkeit der Daten. Das vermeidet Inkonsistenzen oder doppelte Dateneingaben, die zu Fehlern führen könnten.

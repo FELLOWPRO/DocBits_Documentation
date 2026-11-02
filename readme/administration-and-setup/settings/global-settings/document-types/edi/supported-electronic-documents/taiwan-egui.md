@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument TAIWAN EGUI in DocBi
 
 # 🇹🇼 TAIWAN EGUI
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Taiwan](countries/taiwan.md). Die Familienbezeichnung bestätigt nicht jede MIG-Veröffentlichung. Prüfen Sie das tatsächliche XML-Schema und testen Sie repräsentative elektronische Rechnungen.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Taiwan |

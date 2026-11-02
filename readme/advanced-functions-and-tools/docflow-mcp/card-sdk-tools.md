@@ -1,4 +1,4 @@
-# Card SDK Tools
+# Card-SDK-Werkzeuge
 
 Mit den Card SDK Tools können Sie benutzerdefinierte Partnerkarten über MCP erstellen, validieren, testen und verwalten. Partnerkarten erweitern DocFlow um benutzerdefinierte, in Python geschriebene Geschäftslogik.
 

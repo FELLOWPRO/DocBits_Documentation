@@ -1,22 +1,22 @@
-# Training data
+# Trainingsdaten
 
 ## Tabelle `public.training_data`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_type`: DOC Type
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_type`: Dokumenttyp
 * `doc_origin`: Doc Origin
 * `doc_locale`: Doc Locale
 * `doc_language`: Language
 * `first_page_content`: text
-* `supplier_name`: Supplier Name
-* `supplier_vat`: internal
+* `supplier_name`: Lieferantenname
+* `supplier_vat`: intern
 * `doc_created_on`: timestamp with time zone
 * `is_training_sample`: boolean
-* `sample_doc_id`: internal
-* `sample_file_name`: internal
+* `sample_doc_id`: intern
+* `sample_file_name`: intern
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean

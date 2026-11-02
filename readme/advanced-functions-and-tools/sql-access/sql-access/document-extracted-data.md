@@ -1,17 +1,17 @@
-# Document extracted data
+# Extrahierte Dokumentdaten
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `doc_id`: internal
-* `field_name`: internal
-* `field_value`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `doc_id`: intern
+* `field_name`: intern
+* `field_value`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `field_type`: internal
+* `field_type`: intern
 
 ## Analyse & Beschreibung
 

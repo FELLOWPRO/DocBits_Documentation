@@ -1,13 +1,13 @@
-# Documents
+# Dokumente
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `batch_id`: internal
-* `doc_path`: internal
-* `doc_type`: DOC Type
-* `status`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `batch_id`: intern
+* `doc_path`: intern
+* `doc_type`: Dokumenttyp
+* `status`: intern
 * `message`: text
 * `export_attempts`: integer
 * `last_attempted_on`: timestamp with time zone
@@ -17,8 +17,8 @@
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `task_id`: internal
-* `filename`: internal
+* `task_id`: intern
+* `filename`: intern
 * `assigned_on`: timestamp with time zone
 * `pages`: integer
 * `auto_processed`: boolean
@@ -32,28 +32,28 @@
 * `export_time`: double precision
 * `po_all_matched`: boolean
 * `restart_allowed`: boolean
-* `table_version`: internal
+* `table_version`: intern
 * `force_ocr`: boolean
 * `locked_by`: integer
 * `locked_on`: timestamp with time zone
 * `lock_renewed_on`: timestamp with time zone
-* `lock_key`: internal
+* `lock_key`: intern
 * `last_saved_by`: integer
 * `last_saved_on`: timestamp with time zone
 * `document_version`: integer
-* `lock_session_key`: internal
-* `sub_org_id`: internal
-* `doc_source`: internal
-* `sub_doc_type`: internal
-* `assigned_to_group`: internal
+* `lock_session_key`: intern
+* `sub_org_id`: intern
+* `doc_source`: intern
+* `sub_doc_type`: intern
+* `assigned_to_group`: intern
 * `status_changed_on`: timestamp with time zone
 * `improve_quality`: boolean
 * `priority`: integer
 * `metadata_field`: json
-* `doc_classification_label`: internal
+* `doc_classification_label`: intern
 * `doc_start_page`: integer
-* `doc_classification_class`: internal
-* `celery_task_token`: internal
+* `doc_classification_class`: intern
+* `celery_task_token`: intern
 * `celery_task_attempt`: integer
 * `celery_task_priority`: integer
 * `has_zugferd`: boolean
@@ -61,15 +61,15 @@
 * `timestamp_for_validation`: timestamp with time zone
 * `exception_details`: text
 * `has_annotated_version`: boolean
-* `po_match_status`: internal
+* `po_match_status`: intern
 * `tr_ocr_extracted_data`: text
 * `pending_workflow_execution`: boolean
-* `extracted_document_id`: internal
-* `extracted_supplier_id`: internal
+* `extracted_document_id`: intern
+* `extracted_supplier_id`: intern
 * `classification_manually_corrected`: boolean
-* `supplier_as_org_id`: internal
+* `supplier_as_org_id`: intern
 * `extracted_data_basic`: jsonb
-* `celery_task_queue`: internal
+* `celery_task_queue`: intern
 * `extracted_data`: jsonb
 * `extracted_data_jsonb`: jsonb
 * `warnings`: jsonb

@@ -4,6 +4,12 @@ description: PEPPOL BIS 3.0 elektronische Dokumentenunterstützung in DocBits
 
 # 🇪🇺 PEPPOL BIS 3.0
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [International](countries/international.md). Zuordnungen für Rechnungen, Bestellungen, Antworten und Versandanzeigen sind voneinander getrennt. Die Dateiverarbeitung selbst stellt weder einen Peppol-Zugangspunkt noch eine Verbindung zu Handelspartnern bereit.
+{% endhint %}
+
 | Eigenschaft          | Wert                                              |
 | -------------------- | ------------------------------------------------- |
 | **Land / Region**    | Europäische Union / International (40+ Länder)    |

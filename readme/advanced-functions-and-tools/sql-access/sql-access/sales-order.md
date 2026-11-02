@@ -1,39 +1,39 @@
-# Sales order
+# Kundenauftrag
 
 ## Tabelle `public.sales_order`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `location_id`: internal
-* `order_number`: internal
-* `customer_purchase_order`: internal
-* `customer_id`: internal
-* `customer_name`: internal
-* `warehouse_id`: internal
-* `warehouse_name`: internal
-* `transportation_method`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `sub_org_id`: intern
+* `location_id`: intern
+* `order_number`: intern
+* `customer_purchase_order`: intern
+* `customer_id`: intern
+* `customer_name`: intern
+* `warehouse_id`: intern
+* `warehouse_name`: intern
+* `transportation_method`: intern
 * `requested_delivery_date`: timestamp with time zone
 * `order_date`: timestamp with time zone
-* `sales_person_id`: internal
-* `sales_person_name`: internal
-* `ship_to_party_id`: internal
-* `ship_to_party_name`: internal
-* `ship_to_party_city`: internal
-* `ship_to_party_state`: internal
-* `ship_to_party_country`: internal
-* `ship_to_party_zip`: internal
-* `status`: internal
+* `sales_person_id`: intern
+* `sales_person_name`: intern
+* `ship_to_party_id`: intern
+* `ship_to_party_name`: intern
+* `ship_to_party_city`: intern
+* `ship_to_party_state`: intern
+* `ship_to_party_country`: intern
+* `ship_to_party_zip`: intern
+* `status`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
-* `preview_path`: internal
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `preview_path`: intern
+* `last_modified_by`: intern
+* `deleted_by`: intern
 
 ### Analyse & Beschreibung
 

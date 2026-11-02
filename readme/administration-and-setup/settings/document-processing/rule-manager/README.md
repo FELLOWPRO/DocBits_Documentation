@@ -1,6 +1,6 @@
 # Regelverwaltung
 
-<figure><img src="../../../../.gitbook/assets/rule_management.png" alt="Regelverwaltung"><figcaption><p>Seite „Regelverwaltung“</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management-de.png" alt="Deutsche Regelverwaltung für den Bestellabgleich und Export."><figcaption><p>Deutsche Regelverwaltung für den Bestellabgleich und Export.</p></figcaption></figure>
 
 Mit der Regelverwaltung (Rule Management) erstellen und verwalten Sie TOML-basierte Regeln zur Konfliktlösung, die beim PO Matching und beim Dokumentenexport verwendet werden. Jedes Regelwerk legt fest, wie DocBits mit Abweichungen zwischen Rechnungsdaten und Bestelldaten umgeht.
 
@@ -11,10 +11,10 @@ Die Haupttabelle zeigt alle Regelkonfigurationen:
 | Spalte | Beschreibung |
 |--------|-------------|
 | **Name** | Der Name des Regelwerks. Einträge mit dem Tag **default** sind vom System bereitgestellte Vorlagen. |
-| **Description** | Eine Zusammenfassung dessen, was das Regelwerk behandelt. |
-| **Last Modified By** | Der Benutzer, der dieses Regelwerk zuletzt bearbeitet hat. |
-| **Last Modified At** | Zeitstempel der letzten Änderung. |
-| **Actions** | Drei-Punkte-Menü zum Bearbeiten, Kopieren oder Löschen. |
+| **Beschreibung** | Eine Zusammenfassung dessen, was das Regelwerk behandelt. |
+| **Zuletzt geändert von** | Der Benutzer, der dieses Regelwerk zuletzt bearbeitet hat. |
+| **Zuletzt geändert am** | Zeitstempel der letzten Änderung. |
+| **Aktionen** | Drei-Punkte-Menü zum Bearbeiten, Kopieren oder Löschen. |
 
 Klicken Sie auf **+ New**, um ein neues Regelwerk zu erstellen, oder klicken Sie auf einen vorhandenen Namen, um den Regeleditor zu öffnen.
 
@@ -26,7 +26,7 @@ Dieser Abschnitt erklärt ausführlich die Regeln zur Konfliktlösung, die im Do
 
 ## Struktur der Regeln
 
-### 1. Metadata
+### 1. Metadaten
 
 • version: Kennzeichnet die Version der Mapping-Datei.
 
@@ -38,7 +38,7 @@ Dieser Abschnitt erklärt ausführlich die Regeln zur Konfliktlösung, die im Do
 
 • created_at & updated_at: Zeitstempel für die Erstellung und die letzte Aktualisierung der Datei.
 
-### 2. Export Configuration
+### 2. Exportkonfiguration
 
 Der Abschnitt „Export Configuration“ definiert die Zuordnung zwischen den Datenfeldern im System und den entsprechenden Feldern in den Exportdateien.
 
@@ -56,7 +56,7 @@ Der Abschnitt „Export Configuration“ definiert die Zuordnung zwischen den Da
 
 • Debit Note & Credit Note: Definiert Felder für die Erstellung von Belastungs- und Gutschriftsanzeigen bei Abweichungen.
 
-### 3. Conflict Resolution Rules
+### 3. Regeln zur Konfliktlösung
 
 Diese Regeln behandeln Abweichungen zwischen den Rechnungsdaten und den zugehörigen Bestelldaten. Jede Regel besteht aus mehreren Komponenten:
 
@@ -76,64 +76,61 @@ Diese Regeln behandeln Abweichungen zwischen den Rechnungsdaten und den zugehör
 
 Diese Operatoren legen fest, wie die tatsächlichen Rechnungswerte mit den erwarteten Bestellwerten verglichen werden:
 
-• equal
+• equal – gleich
 
-• greater than
+• greater than – größer als
 
-• greater than or equal to
+• greater than or equal to – größer oder gleich
 
-• less than
+• less than – kleiner als
 
-• less than or equal to
+• less than or equal to – kleiner oder gleich
 
-• within tolerance
+• within tolerance – innerhalb der Toleranz
 
-• outside tolerance
-
+• outside tolerance – außerhalb der Toleranz
 
 ### Genehmigungsstatus
 
 Gibt an, ob eine Abweichung genehmigt ist oder nicht:
 
-• approved
+• approved – genehmigt
 
-• rejected
+• rejected – abgelehnt
 
-• any
-
+• any – beliebiger Genehmigungsstatus
 
 ### Aktionstypen
 
 Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
-• receipt line
+• receipt line – Wareneingangsposition
 
-• cost line
+• cost line – Kostenposition
 
-• header charge
+• header charge – Kopfzuschlag
 
-• line charge
+• line charge – Positionszuschlag
 
-• tax line
+• tax line – Steuerposition
 
-• debit note receipt line
+• debit note receipt line – Wareneingangsposition der Belastungsanzeige
 
-• debit note cost line
+• debit note cost line – Kostenposition der Belastungsanzeige
 
-• debit note header charge
+• debit note header charge – Kopfzuschlag der Belastungsanzeige
 
-• debit note line charge
+• debit note line charge – Positionszuschlag der Belastungsanzeige
 
-• credit note receipt line
+• credit note receipt line – Wareneingangsposition der Gutschrift
 
-• credit note cost line
+• credit note cost line – Kostenposition der Gutschrift
 
-• credit note header charge
+• credit note header charge – Kopfzuschlag der Gutschrift
 
-• credit note line charge
+• credit note line charge – Positionszuschlag der Gutschrift
 
-• credit note tax line
-
+• credit note tax line – Steuerposition der Gutschrift
 
 ### Regelbeispiele
 
@@ -143,22 +140,17 @@ Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
 • Aktion: Das System übernimmt die Rechnungswerte und berechnet den Gesamtbetrag.
 
-
-
 #### [Fall 4, 5: Menge innerhalb der Toleranz, Einzelpreis außerhalb der Toleranz (genehmigt)](./#fall-4-5-menge-innerhalb-der-toleranz-einzelpreis-ausserhalb-der-toleranz-genehmigt)
 
 • Zweck: Gilt, wenn die Menge innerhalb der Toleranz liegt, der Einzelpreis aber außerhalb der Toleranz liegt und genehmigt wurde.
 
 • Aktion: Das System passt den Einzelpreis an die Bestellung an und wendet alle erforderlichen Positionskosten an.
 
-
-
 #### [Fall 6: Menge innerhalb der Toleranz, Einzelpreis außerhalb der negativen Toleranz (abgelehnt)](transactionconfig-pro-template/case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
 • Zweck: Behandelt Fälle, in denen der Einzelpreis niedriger als erwartet ist und außerhalb des Toleranzbereichs liegt, was zur Ablehnung führt.
 
 • Aktion: Das System passt den Einzelpreis an die Bestellung an, erstellt eine Gutschrift über die Differenz und wendet bei Bedarf Kopfkosten an.
-
 
 ### Umgang mit Kosten und Steuern
 
@@ -180,24 +172,24 @@ Legt fest, welche Aktionen bei einer erkannten Abweichung ausgeführt werden:
 
 ### Screenshot 1: Oberfläche der Regelverwaltung
 
-<figure><img src="../../../../.gitbook/assets/rule_management_interface.png" alt="Oberfläche der Regelverwaltung"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_management_interface-de.png" alt="Übersicht der Regelwerke und ihrer Aktionen."><figcaption><p>Übersicht der Regelwerke und ihrer Aktionen.</p></figcaption></figure>
 
 Dieser Screenshot zeigt die Oberfläche der Regelverwaltung, in der Administratoren alle Regeln zur Konfliktlösung einsehen und verwalten können. Zu den wichtigsten Elementen gehören:
 
-• Add Rule Button: Ermöglicht das Hinzufügen neuer Regeln.
+• Schaltfläche zum Hinzufügen einer Regel: Ermöglicht das Hinzufügen neuer Regeln.
 
-• List of Rules: Zeigt alle aktiven Regeln mit Details wie Name, Section und Active-Status an.
+• Regelliste: Zeigt alle aktiven Regeln mit Details wie Name, Section und Active-Status an.
 
-• Section Dropdown: Filtert die Regeln nach dem Bereich, auf den sie angewendet werden (z. B. Receipt Lines, Line Charges).
+• Auswahl des Regelbereichs (Section): Filtert die Regeln nach dem Bereich, auf den sie angewendet werden (z. B. Receipt Lines, Line Charges).
 
 ### Screenshot 2: Detaillierte Regelbearbeitung
 
-<figure><img src="../../../../.gitbook/assets/rule_detailed_editing.png" alt="Detaillierte Regelbearbeitung"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-rule_detailed_editing-de.png" alt="Deutscher Editor eines TOML-basierten Regelwerks."><figcaption><p>Deutscher Editor eines TOML-basierten Regelwerks.</p></figcaption></figure>
 
 Dieser Screenshot zeigt die Detailansicht einer Regel, die gerade bearbeitet wird. Zu den wichtigsten Elementen gehören:
 
-• Criteria Section: Definiert die Bedingungen, unter denen die Regel ausgelöst wird. Die Kriterien könnten z. B. festlegen, dass die Regel angewendet werden soll, wenn Menge und Einzelpreis von der Bestellung abweichen, aber innerhalb der Toleranz liegen.
+• Kriterienbereich: Definiert die Bedingungen, unter denen die Regel ausgelöst wird. Die Kriterien könnten z. B. festlegen, dass die Regel angewendet werden soll, wenn Menge und Einzelpreis von der Bestellung abweichen, aber innerhalb der Toleranz liegen.
 
-• Actions Section: Legt fest, welche Aktionen ausgeführt werden, wenn die Kriterien erfüllt sind. Dazu können die Anpassung der Rechnungspositionen, die Erstellung von Gutschriften oder Belastungsanzeigen oder die Anwendung zusätzlicher Kosten gehören.
+• Aktionsbereich: Legt fest, welche Aktionen ausgeführt werden, wenn die Kriterien erfüllt sind. Dazu können die Anpassung der Rechnungspositionen, die Erstellung von Gutschriften oder Belastungsanzeigen oder die Anwendung zusätzlicher Kosten gehören.
 
-• Document Type and Costing Elements: Ermöglicht dem Administrator, bestimmte Aktionen Dokumenttypen und Kostenelementen zuzuordnen, was Flexibilität im Umgang mit verschiedenen Szenarien bietet.
+• Dokumenttyp und Kostenelemente: Ermöglicht dem Administrator, bestimmte Aktionen Dokumenttypen und Kostenelementen zuzuordnen, was Flexibilität im Umgang mit verschiedenen Szenarien bietet.

@@ -1,49 +1,52 @@
-# Case 1, 2, 3: Quantity and Unit Price Within Tolerance
+# Fall 1, 2, 3: Menge und Stückpreis innerhalb der Toleranz
 
-## Scenario:
-
-Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
-
-## Action:
-
-The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
-
-## Example:
-
-**Purchase Order (PO):**
-
-Quantity: 100 units
-
-Unit Price: $10.00 per unit
-
-Total Amount: $1,000.00
-
-**Invoice Received:**
-
-Quantity: 101 units (within tolerance of 1%)
-
-Unit Price: $10.05 per unit (within tolerance of 0.5%)
-
-Total Amount: $1,015.05
-
-**Tolerance Levels:**
-
-Quantity Tolerance: ±2%
-
-Unit Price Tolerance: ±1%\
+> **Hinweis zu den Beispielen:** Die folgenden Abläufe veranschaulichen eine konfigurierte Exportzuordnung. Tatsächliche Ausgaben, Beträge, Vorzeichen und Dokumenttypen hängen von der aktiven Exportzuordnung, ihren Konfliktregeln und den Genehmigungsentscheidungen ab. Die Beispiele beschreiben keine bedingungslose automatische Ausstellung rechtlich wirksamer Belastungsanzeigen oder Gutschriften.
 
 
-Since the quantity (101 units) and unit price ($10.05) are both within the acceptable tolerance levels compared to the purchase order, the system will:\
+## Szenario:
+
+Sowohl die Rechnungsmenge als auch der Stückpreis liegen im Vergleich zur Bestellung innerhalb der zulässigen Toleranz.
+
+## Aktion:
+
+Das System akzeptiert die Rechnungswerte und berechnet den Gesamtbetrag anhand der angegebenen Menge und des Stückpreises.
+
+## Beispiel:
+
+**Bestellung (PO):**
+
+Menge: 100 Einheiten
+
+Stückpreis: $10.00 je Einheit
+
+Gesamtbetrag: $1,000.00
+
+**Eingegangene Rechnung:**
+
+Menge: 101 Einheiten (Abweichung innerhalb der Toleranz: 1%)
+
+Stückpreis: $10.05 je Einheit (Abweichung innerhalb der Toleranz: 0.5%)
+
+Gesamtbetrag: $1,015.05
+
+**Toleranzgrenzen:**
+
+Mengentoleranz: ±2%
+
+Stückpreistoleranz: ±1%\
 
 
-1\. **Accept the Invoice Values:** The quantity and unit price on the invoice are accepted as valid because they fall within the defined tolerance limits.
+Die Menge (101 Einheiten) und der Stückpreis ($10.05) liegen im Vergleich zur Bestellung innerhalb der zulässigen Toleranz. Das System führt folgende Schritte aus:\
 
-2\. **Calculate the Total Amount:** The total amount is calculated using the accepted values:
 
-• Total Amount = Quantity × Unit Price
+1\. **Rechnungswerte akzeptieren:** Menge und Stückpreis der Rechnung werden als gültig akzeptiert, da sie innerhalb der festgelegten Toleranzgrenzen liegen.
 
-• Total Amount = 101 units × $10.05 per unit = $1,015.05
+2\. **Gesamtbetrag berechnen:** Der Gesamtbetrag wird anhand der akzeptierten Werte berechnet:
 
-3\. **Process the Invoice:** The invoice is processed with the total amount of $1,015.05, and the financial records are updated accordingly.
+• Gesamtbetrag = Menge × Stückpreis
 
-This approach ensures that minor discrepancies that fall within acceptable tolerance levels do not lead to invoice rejections or delays in payment, thus streamlining the financial process.
+• Gesamtbetrag = 101 Einheiten × $10.05 je Einheit = $1,015.05
+
+3\. **Rechnung verarbeiten:** Die Rechnung wird mit dem Gesamtbetrag von $1,015.05 verarbeitet. Die Finanzdaten werden entsprechend aktualisiert.
+
+So führen kleine Abweichungen innerhalb der zulässigen Toleranz weder zur Ablehnung der Rechnung noch zu Zahlungsverzögerungen. Das vereinfacht den Finanzprozess.

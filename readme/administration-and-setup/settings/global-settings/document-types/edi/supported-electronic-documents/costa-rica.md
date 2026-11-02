@@ -1,30 +1,16 @@
 ---
-description: COSTA RICA elektronische Dokumentenunterstützung in DocBits
+description: "Die ältere Dokumentation nennt Costa Rica. Im geprüften Entwicklungskatalog wurde jedoch kein passender Klassifizierungs- oder Konfigurationseintrag gefunden."
 ---
 
 # 🇨🇷 COSTA RICA
 
-| Eigenschaft | Wert |
-| ----------- | ---- |
-| **Land / Region** | Costa Rica |
-| **Dokumenttypen** | Rechnung (Factura Electrónica), Gutschrift, Belastungsanzeige |
-| **Format** | XML |
-| **Standard** | Factura Electrónica (Ministerio de Hacienda) |
 
-Das elektronische Rechnungssystem Costa Ricas wird vom Ministerio de Hacienda reguliert. Elektronische Dokumente müssen zur Validierung an die Hacienda-Plattform übermittelt werden und eine digitale Signatur enthalten. DocBits kann costa-ricanische elektronische Rechnungen verarbeiten und wichtige Felder extrahieren.
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Costa Rica](countries/costa-rica.md). Diese Prüfung bestätigt die aktuelle integrierte Verarbeitung nicht. Bitten Sie den Support, die bereitgestellte Zuordnung zu prüfen, und testen Sie vor der Einführung eine repräsentative Quelldatei.
+{% endhint %}
 
-## Unterstützungsstatus
+Die ältere Dokumentation nennt Costa Rica. Im geprüften Entwicklungskatalog wurde jedoch kein passender Klassifizierungs- oder Konfigurationseintrag gefunden.
 
-| Komponente | Status |
-| ---------- | ------ |
-| Vorschau | ✅ Unterstützt |
-| Feldextraktion | ✅ Unterstützt |
-| Transformation | N/V |
+Diese Prüfung bestätigt die aktuelle integrierte Verarbeitung nicht. Bitten Sie den Support, die bereitgestellte Zuordnung zu prüfen, und testen Sie vor der Einführung eine repräsentative Quelldatei.
 
-## Standard-Vorschau
-
-<figure><img src="../../../../../../.gitbook/assets/costa-rica-preview.png" alt="Vorschau einer Costa-Rica-E-Rechnung in DocBits"><figcaption><p>Standard-DocBits-Vorschau für eine Costa-Rica-E-Rechnung</p></figcaption></figure>
-
-## Verwandte Themen
-
-* [Supported Electronic Documents](./)
+[Costa Rica](countries/costa-rica.md)

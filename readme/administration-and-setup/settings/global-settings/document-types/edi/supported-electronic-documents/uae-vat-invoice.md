@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument UAE VAT INVOICE in D
 
 # 🇦🇪 UAE VAT INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Vereinigte Arabische Emirate](countries/united-arab-emirates.md). Eine Zuordnung für Mehrwertsteuerrechnungen belegt nicht die Unterstützung jeder Peppol- oder PINT-Veröffentlichung der VAE. Bestätigen Sie den Datenvertrag und die benötigte Zustellintegration.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Vereinigte Arabische Emirate |

@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument URUGUAY CFE 24 in Do
 
 # 🇺🇾 URUGUAY CFE 24
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Uruguay](countries/uruguay.md). Für Gutschrifteinträge sind im geprüften Status keine eigenen Extraktionspakete ausgewiesen. Bestätigen Sie die CFE-Version und die tatsächlich verwendete Rechnungs- oder Gutschriftzuordnung.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Uruguay |

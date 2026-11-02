@@ -1,20 +1,20 @@
-# Organisation document type
+# Organisationsdokumenttyp
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `document_type_id`: internal
-* `document_type_key`: internal
-* `document_locale`: internal
-* `classification_method`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `document_type_id`: intern
+* `document_type_key`: intern
+* `document_locale`: intern
+* `classification_method`: intern
 * `is_active`: boolean
-* `extraction_type`: internal
+* `extraction_type`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
-* `sub_org_id`: internal
+* `sub_org_id`: intern
 
 ## Analyse & Beschreibung
 

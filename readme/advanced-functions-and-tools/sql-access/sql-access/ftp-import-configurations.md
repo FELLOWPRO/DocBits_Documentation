@@ -1,13 +1,13 @@
-# FTP Import Configurations
+# FTP-Importkonfigurationen
 
 ## Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `sub_org_id`: internal
-* `server_url`: internal
-* `username`: internal
-* `password`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `sub_org_id`: intern
+* `server_url`: intern
+* `username`: intern
+* `password`: intern
 * `is_active`: boolean
 * `created_by`: integer
 * `created_on`: timestamp with time zone
@@ -15,17 +15,17 @@
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
 * `port`: integer
-* `default_directory`: internal
-* `ftp_type`: internal
-* `token`: internal
-* `file_name_matching_patterns`: internal
-* `last_mtime`: internal
+* `default_directory`: intern
+* `ftp_type`: intern
+* `token`: intern
+* `file_name_matching_patterns`: intern
+* `last_mtime`: intern
 * `auth_failed_count`: integer
 * `auth_message`: text
 * `ignore_certificate`: boolean
 * `move_after_import`: boolean
-* `destination_directory`: internal
-* `import_directory`: internal
+* `destination_directory`: intern
+* `import_directory`: intern
 * `include_subfolder_content`: boolean
 
 ## Analyse & Beschreibung

@@ -1,6 +1,6 @@
 # Benutzerdetails bearbeiten
 
-<figure><img src="../../../../../.gitbook/assets/user_settings_menu_overview.png" alt="Übersicht des Menüs Benutzereinstellungen"><figcaption><p>Benutzereinstellungen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/s50-user_settings_menu_overview-de.png" alt="Deutsche Benutzerübersicht mit Suche und Benutzer hinzufügen. Personenbezogene Tabellenwerte sind ausgeblendet."><figcaption><p>Deutsche Benutzerübersicht mit Suche und Benutzer hinzufügen. Personenbezogene Tabellenwerte sind ausgeblendet.</p></figcaption></figure>
 
 * **Als Administrator anmelden:** Melden Sie sich mit Ihren Administratorrechten an.
 * **Auf die Benutzerverwaltung zugreifen:** Navigieren Sie zu den Benutzereinstellungen, in denen Sie bestehende Benutzer bearbeiten können.
@@ -16,8 +16,8 @@
 
 
 
-    <figure><img src="../../../../../.gitbook/assets/user_edit_details_form.png" alt="Formular zum Bearbeiten der Benutzerdetails" width="300"><figcaption></figcaption></figure>
-* **Änderungen speichern:** Prüfen Sie Ihre Änderungen und klicken Sie auf Save, um die neuen Benutzerdetails zu speichern.
+    <figure><img src="../../../../../.gitbook/assets/s50-user_edit_details_form-de.png" alt="Benutzer bearbeiten mit Vorname, Nachname, Passwort und Kontostatus. Bestehende Eingabewerte sind ausgeblendet." width="300"><figcaption><p>Benutzer bearbeiten mit Vorname, Nachname, Passwort und Kontostatus. Bestehende Eingabewerte sind ausgeblendet.</p></figcaption></figure>
+* **Änderungen speichern:** Prüfen Sie Ihre Änderungen und klicken Sie auf **Speichern**, um die neuen Benutzerdetails zu speichern.
 
 <figure><img src="../../../../../.gitbook/assets/user_save_changes_button.png" alt="Schaltfläche Änderungen am Benutzer speichern"><figcaption></figcaption></figure>
 

@@ -1,5 +1,7 @@
 # DocBits MCP
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/docbits-mcp-admin/v2/de.mp4" %}
+
 DocBits stellt einen **Model Context Protocol (MCP)**-Server bereit, mit dem KI-Assistenten direkt aus einem Chat oder einer Coding-Sitzung heraus mit Ihren Dokumenten, der Extraktion, der Suche, den Analysen und der Konfiguration arbeiten können. Jeder MCP-kompatible Client kann sich verbinden: **Claude Code**, **Claude Desktop**, **Google Gemini CLI**, **OpenAI Codex** oder jede benutzerdefinierte Integration.
 
 Der Server ist in die DocBits-API unter `/v3/mcp` eingebunden und auf Ihre Organisation beschränkt – jeder Aufruf läuft mit den Berechtigungen des Benutzers (oder API-Schlüssels), der die Verbindung hergestellt hat.
@@ -161,3 +163,5 @@ Warum Dokumente menschliches Eingreifen benötigen und was zu ändern ist, damit
 {% hint style="info" %}
 **Ein MCP für alles.** Die eDoc-Tools und die Tools für **Workflows & Karten (DocFlow)** laufen auf **demselben** Endpunkt `api.docbits.com/v3/mcp` mit derselben DocBits-Anmeldung. DocFlow-Tools erscheinen dort mit dem Präfix `docflow_` (zum Beispiel `docflow_list_workflows`); die DocFlow-Seite dokumentiert sie unter ihren einfachen Namen. Die direkte Verbindung zum DocFlow-Host ist weiterhin möglich, aber nicht mehr nötig.
 {% endhint %}
+
+[DocBits mit Claude oder Codex konfigurieren](configuration-with-claude-or-codex.md): Verbindung, kopierbare Prompts, Vorschauen, versionierte Änderungen, Prüfungen und Rückkehr.

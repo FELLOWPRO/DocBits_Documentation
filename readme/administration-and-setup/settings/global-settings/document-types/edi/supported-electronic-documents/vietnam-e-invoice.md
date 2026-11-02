@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument VIETNAM E-INVOICE in
 
 # 🇻🇳 VIETNAM E-INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Vietnam](countries/vietnam.md). Die Bezeichnung nennt keine Veröffentlichungsversion. Prüfen Sie Namespace und Schema der Quelldatei, statt vorauszusetzen, dass alle Exporte der Steuerplattform dieselbe Struktur haben.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Vietnam |

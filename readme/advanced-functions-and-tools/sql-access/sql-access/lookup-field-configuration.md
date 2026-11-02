@@ -1,25 +1,25 @@
-# Lookup field configuration
+# Konfiguration von Abfragefeldern
 
 ## Tabelle `public.lookup_field_configuration`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `lookup_rec_id`: internal
-* `field_id`: internal
-* `lookup_field`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `lookup_rec_id`: intern
+* `field_id`: intern
+* `lookup_field`: intern
 * `is_searchable`: boolean
-* `parent_field_id`: internal
+* `parent_field_id`: intern
 * `auto_trigger`: boolean
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
-* `search_operator`: internal
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `search_operator`: intern
+* `last_modified_by`: intern
+* `deleted_by`: intern
 
 ### Analyse & Beschreibung
 

@@ -1,23 +1,23 @@
-# Purchase Order line
+# Bestellposition
 
 ## Tabelle `public.purchase_order_line`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `purchase_order_id`: internal
-* `purchase_order_number`: internal
-* `line_number`: internal
-* `item_id`: internal
-* `supplier_item_id`: internal
-* `description`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `purchase_order_id`: intern
+* `purchase_order_number`: intern
+* `line_number`: intern
+* `item_id`: intern
+* `supplier_item_id`: intern
+* `description`: intern
 * `quantity`: double precision
-* `unit_code`: internal
+* `unit_code`: intern
 * `unit_price`: double precision
 * `total_amount`: double precision
-* `currency`: internal
-* `status`: internal
+* `currency`: intern
+* `status`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
@@ -27,15 +27,15 @@
 * `received_quantity`: double precision
 * `confirmed_quantity`: double precision
 * `note`: text
-* `sub_org_id`: internal
-* `sub_line_number`: internal
+* `sub_org_id`: intern
+* `sub_line_number`: intern
 * `unit_price_per`: double precision
-* `buyer_id`: internal
-* `buyer_name`: internal
-* `unit_code_price`: internal
-* `geo_code`: internal
+* `buyer_id`: intern
+* `buyer_name`: intern
+* `unit_code_price`: intern
+* `geo_code`: intern
 * `promised_delivery_date`: timestamp with time zone
-* `delivery_method`: internal
+* `delivery_method`: intern
 * `requested_ship_date`: date
 * `received_base_mou_quantity`: double precision
 * `extended_amount`: double precision

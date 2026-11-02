@@ -1,39 +1,36 @@
 # Persönliche Dashboards
 
-Ein persönliches Dashboard speichert eine Ansicht der Dokumentenliste, damit Sie jederzeit zu den Filtern und Spalten zurückkehren können, die Sie häufig verwenden. Sie können es privat halten, für alle in Ihrer Organisation sichtbar machen oder mit ausgewählten Gruppen und Benutzern teilen. Wie Sie die Dokumentenliste filtern, bevor Sie eine Ansicht speichern, beschreibt [Schnellsuche](quick-search.md).
+Ein gespeichertes Dashboard ist eine benannte Ansicht Ihrer Arbeitsliste: Suche, Filter, Dokumenttyp, Sortierung und sichtbare Spalten. Beim Öffnen wird alles gleichzeitig wiederhergestellt, sodass wiederkehrende Aufgaben nicht erneut eingerichtet werden müssen. Ein Dashboard ändert nur die Anzeige der Dokumente und nie die Dokumente selbst.
 
 ## Ein Dashboard erstellen
 
-1. Stellen Sie im **Dashboard** die Filter und Spalten ein, die Sie speichern möchten.
-2. Wählen Sie die Dashboard-Schaltfläche unterhalb der Suchleiste. Sie zeigt die aktuelle Ansicht und die Anzahl der Dokumente, zum Beispiel **Alle Dokumente (10)**.
+1. Stellen Sie die Ansicht zusammen, die Sie behalten möchten. Geben Sie die Suche in die Suchleiste ein, verwenden Sie die **Schnellfilter** aus der Feldauswahl, die **Filter**, einen Dokumenttyp-Reiter, die Sortierung der Tabelle und die Spalten.
+
+2. Öffnen Sie die Ansichts-Schaltfläche unter dem Suchfeld. Sie zeigt die aktive Ansicht und wie viele Dokumente gerade dazu passen, zum Beispiel **Alle Dokumente (5986)**.
+
 3. Wählen Sie **Neues Dashboard erstellen**.
 
-<figure><img src="../../../.gitbook/assets/dbdc-604-dashboard-menu-de.png" alt="Dashboard-Schaltfläche mit geöffnetem Menü: Neues Dashboard erstellen, Standard-Dashboard und Dashboard änderungen speichern"><figcaption><p>Öffnen Sie die Dashboard-Schaltfläche, um eine gespeicherte Ansicht zu erstellen.</p></figcaption></figure>
-
-4. Geben Sie einen Namen ein und wählen Sie, wer das Dashboard sehen darf:
+4. Vergeben Sie einen eindeutigen Namen und legen Sie fest, wer die Ansicht verwenden kann:
    * **Nur für mich sichtbar** hält die Ansicht privat.
-   * **Für alle Benutzer sichtbar** macht sie für Ihre Organisation verfügbar.
-   * **Mit Gruppen und Benutzern teilen** lässt Sie bestimmte Gruppen oder Personen auswählen.
-5. Wählen Sie **Speichern**.
+   * **Für alle Benutzer sichtbar** stellt sie allen Personen Ihrer Organisation zur Verfügung.
+   * **Mit Gruppen und Benutzern teilen** blendet die beiden Auswahlen **Gruppen** und **Benutzer auswählen** ein, sodass Sie bestimmte Gruppen oder einzelne Personen benennen.
 
-<figure><img src="../../../.gitbook/assets/dbdc-604-dashboard-create-de.png" alt="Dialog Neues Dashboard erstellen mit Namensfeld, Sichtbarkeitsoptionen und Schaltfläche Speichern"><figcaption><p>Benennen Sie das Dashboard und legen Sie die Sichtbarkeit fest, bevor Sie es speichern.</p></figcaption></figure>
+5. Wählen Sie **Speichern**. Die Ansichts-Schaltfläche wechselt zum neuen Dashboard und zeigt dessen Namen und Dokumentanzahl.
 
-<figure><img src="../../../.gitbook/assets/dbdc-604-dashboard-share-options-de.png" alt="Dashboard-Freigabe mit den Feldern Gruppen und Benutzer auswählen"><figcaption><p>Wählen Sie Gruppen oder Benutzer aus, wenn Sie ein Dashboard mit bestimmten Personen teilen möchten.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dashboard-saved-view-de.png" alt="Ein benanntes Dashboard erstellen und seine Sichtbarkeit festlegen."><figcaption><p>Ein benanntes Dashboard erstellen und seine Sichtbarkeit festlegen.</p></figcaption></figure>
 
-## Ein Dashboard öffnen oder wechseln
+Die Sichtbarkeit legt fest, wer die Ansicht **verwenden** kann. Sie gewährt keinen Zugriff auf Dokumente: Jede Person sieht weiterhin nur Dokumente, für die sie berechtigt ist.
 
-Wählen Sie die Dashboard-Schaltfläche und dann ein gespeichertes Dashboard aus der Liste. Wählen Sie **Standard-Dashboard**, um zur Standardansicht zurückzukehren. Die Schaltfläche zeigt den Namen des aktiven Dashboards.
+## Ansichten wechseln oder ändern
 
-Um ein Dashboard zu ändern, das Ihnen gehört, zeigen Sie mit der Maus auf seinen Namen in der Liste und wählen Sie das **Stift**-Symbol. Ändern Sie im Dialog **Dashboard bearbeiten** den Namen oder die Sichtbarkeit und wählen Sie **Speichern**. Ein Dashboard, das eine andere Person mit Ihnen geteilt hat, können Sie von Ihrem Konto aus nicht bearbeiten.
+Wählen Sie über die Ansichts-Schaltfläche ein gespeichertes Dashboard oder kehren Sie zum **Standard-Dashboard** zurück, der ungespeicherten Ansicht aller Dokumente. Das zuletzt geöffnete Dashboard bleibt beim Neuladen der Seite aktiv.
 
-<figure><img src="../../../.gitbook/assets/dbdc-604-dashboard-edit-controls-de.png" alt="Zeile eines eigenen Dashboards mit den Symbolen Stift zum Bearbeiten und Papierkorb zum Löschen"><figcaption><p>Fahren Sie mit der Maus über ein Dashboard, das Ihnen gehört, um die Symbole zum Bearbeiten und Löschen einzublenden.</p></figcaption></figure>
+Nach Änderungen an einem geladenen Dashboard – auch wenn Sie nur Spalten ändern – wird **Dashboard änderungen speichern** in der Ansichts-Schaltfläche verfügbar. Damit speichern Sie die Änderung unter demselben Namen. Die Aktion bleibt deaktiviert, wenn sich nichts geändert hat oder das Dashboard einer anderen Person gehört; eine geteilte Ansicht lässt sich nicht überschreiben, erstellen Sie stattdessen eine eigene.
 
-<figure><img src="../../../.gitbook/assets/dbdc-604-dashboard-edit-dialog-de.png" alt="Dialog Dashboard bearbeiten mit dem gespeicherten Namen und den Sichtbarkeitsoptionen"><figcaption><p>Im Dialog Dashboard bearbeiten benennen Sie das Dashboard um oder ändern, wer es sehen darf.</p></figcaption></figure>
+## Ein Dashboard umbenennen oder neu teilen
 
-## Änderungen an der aktuellen Ansicht speichern
-
-Nachdem Sie Filter oder Spalten in einem Dashboard geändert haben, das Ihnen gehört, wählen Sie **Dashboard änderungen speichern** im Dashboard-Menü. Die Aktion ist nicht verfügbar, wenn kein Dashboard ausgewählt ist, sich die Ansicht nicht geändert hat oder das ausgewählte Dashboard einer anderen Person gehört.
+Bewegen Sie den Mauszeiger über ein eigenes Dashboard in der Ansichts-Schaltfläche, um seine Symbole **Bearbeiten** und **Löschen** einzublenden. Wählen Sie das Stiftsymbol, um **Dashboard bearbeiten** zu öffnen und den Namen oder die Sichtbarkeit zu ändern. Der Dialog zeigt dieselben drei Optionen wie beim Erstellen.
 
 ## Ein Dashboard löschen
 
-Öffnen Sie die Dashboard-Liste, zeigen Sie mit der Maus auf ein Dashboard, das Ihnen gehört, und wählen Sie das **Papierkorb**-Symbol. Bestätigen Sie den Löschvorgang im Dialog. Für ein Dashboard, das eine andere Person mit Ihnen geteilt hat, ist das Löschen nicht verfügbar.
+Wählen Sie das Papierkorbsymbol für ein eigenes Dashboard und bestätigen Sie mit **Löschen**. Das Entfernen einer Ansicht löscht nicht die Dokumente, auf die sie verwiesen hat. Ein Dashboard, das eine andere Person mit Ihnen geteilt hat, können Sie öffnen und verwenden, aber nicht in Ihrem Konto bearbeiten oder löschen.

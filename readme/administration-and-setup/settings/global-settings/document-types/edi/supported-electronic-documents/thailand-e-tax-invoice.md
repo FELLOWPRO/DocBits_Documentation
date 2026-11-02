@@ -4,6 +4,12 @@ description: Unterstützung für das elektronische Dokument THAILAND E-TAX INVOI
 
 # 🇹🇭 THAILAND E-TAX INVOICE
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Thailand](countries/thailand.md). Die Bezeichnung nennt keine Veröffentlichungsversion. Bestätigen Sie die XML-Struktur der Quelldatei. Signaturprüfung und Übermittlung an die Steuerplattform müssen separat geprüft werden.
+{% endhint %}
+
 | Eigenschaft | Wert |
 | ----------- | ---- |
 | **Land / Region** | Thailand |

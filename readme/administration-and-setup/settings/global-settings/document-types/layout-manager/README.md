@@ -1,31 +1,40 @@
-# Layout Manager
+# Layout-Manager
 
-<figure><img src="../../../../../.gitbook/assets/docbits_layout_manager_overview.png" alt="Docbits Layout Manager Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/layout-manager-overview-de.png" alt="Layout- und Auswahlregeln für den Belegtyp INVOICE: die Reiter Layouts und Auswahlregeln mit ihren Zählern, der Dokumenttyp-Chip, die Reiter Feldvalidierung, Genehmigung, Ablehnen und Rezension, die Layout-Karten mit dem Badge Benutzerdefiniert und den Aktionen Bearbeiten, Klon und Löschen sowie die Schaltfläche Neues Layout"><figcaption>Der Layout-Manager für den Belegtyp Invoice.</figcaption></figure>
 
-#### Overview
+Der **Layout-Manager** bestimmt, wie ein Belegtyp für die Personen aussieht, die Belege validieren, genehmigen, ablehnen und prüfen: welche Felder und Gruppen auf dem Bildschirm erscheinen, in welcher Reihenfolge und wie sich jedes Feld verhält. Jeder Belegtyp hat seine eigenen Layouts.
 
-The Layout Manager allows administrators to visually configure and modify the layout of document types by setting properties for various data fields and groups within a document. This interface helps ensure that the extraction models and manual data entry points align precisely with the document's structure as scanned or uploaded into Docbits.
+Die Seite öffnet sich als **Layout- und Auswahlregeln**: Layouts sind wiederverwendbare Feldanordnungen, unabhängig vom Ursprung des Belegs, und Regeln legen fest, welches Layout ein Beleg erhält.
 
-#### Key Components
+#### Bildschirme und Layouttypen
 
-1. **Groups and Fields**:
-   * **Groups**: Organizational units within a document type that categorize related fields (e.g., Invoice Details, Payment Details). These can be expanded or collapsed and arranged to mirror the logical grouping in the actual document.
-   * **Fields**: Individual data points within each group (e.g., Invoice Number, Payment Terms). Each field can be customized for how data is captured, displayed, and processed.
-2. **Properties Panel**:
-   * This panel displays the properties of the selected field or group, allowing for detailed configuration, such as:
-     * **Label**: The visible label for the field in the user interface.
-     * **Field Name**: The technical identifier used within the system.
-     * **Element Width in Percentage**: Determines the width of the field in relation to the document layout.
-     * **Tab Index**: Controls the tabbing order for navigation.
-     * **Run Script on Change**: Whether to execute a script when the field value changes.
-     * **Display Label On Left**: Whether the label is displayed to the left of the field or above it.
-     * **Is Textarea**: Specifies if the field should be a textarea, accommodating larger amounts of text.
-     * **Select Model Type**: Option to select which model type will handle the extraction of this field.
-     * **Field Length**: Maximum length of data to be accepted in this field.
-     * **Banned Keywords**: Keywords that are not allowed within the field.
-3. **Template Preview**:
-   * Shows a real-time preview of how the document will appear based on the current layout configuration. This helps in ensuring that the layout matches the actual document structure and is vital for testing and refining the document processing setup.
+Validierung, Genehmigung, Ablehnung und Prüfung sind eigene Bildschirme, und jeder von ihnen hat eigene Layouts, eigene Regeln und ein eigenes Standardlayout – eine Genehmigungsregel ändert nie den Validierungsbildschirm. Mit den Reitern **Feldvalidierung**, **Genehmigung**, **Ablehnen** und **Rezension** wechseln Sie den Bildschirm.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2490" %}
+#### Layout-Karten
 
+Auf dem Reiter **Layouts** ist jedes Layout des gewählten Bildschirms eine Karte. Eine Karte zeigt den Layoutnamen, ob es zu Ihrer Organisation gehört (**Benutzerdefiniert**) oder das Systemstandard-Layout ist, wann es zuletzt bearbeitet wurde und ob eine Auswahlregel darauf verweist. **Bearbeiten** öffnet das Layout im Layout Builder, **Klon** kopiert es unter einem Namen Ihrer Wahl und **Löschen** entfernt es – das Systemstandard-Layout lässt sich nur ansehen, nicht ändern oder löschen. **Neues Layout** fragt nach einem Namen und öffnet den Layout Builder mit dem neuen, leeren Layout. Der Filter über den Karten wechselt zwischen **Alle**, **Meine Layouts** und **System**.
 
+#### Der Layout Builder
+
+**Bearbeiten** öffnet den [Layout Builder](navigating-the-layout-manager.md):
+
+* **Struktur**, **Felder** und **Elemente** auf der linken Seite – das Layout als Baum, jedes Feld des Belegtyps mit einem Zähler der bereits platzierten Felder sowie die Gruppen und Formularelemente, die Sie auf die Arbeitsfläche ziehen können.
+* Die **Arbeitsfläche** in der Mitte zeigt das Layout so, wie der Anwender es sieht. **Hauptlayout** und **Tabelle** wechseln zwischen der Seite und einer Positionstabelle, **Beleg** öffnet den Beispielbeleg daneben.
+* Der Bereich **Eigenschaften** auf der rechten Seite folgt dem ausgewählten Element; seine Einstellungen sind in Anzeige, Verhalten, Werte und Listen, Automatisierung sowie Rahmen und Abstände gruppiert.
+
+**Speichern** in der Kopfzeile sichert das Layout. Die übrigen Aktionen der Kopfzeile finden Sie unter [Änderungen speichern und anwenden](save-and-apply-changes.md).
+
+#### Welches Layout ein Beleg erhält
+
+Der Reiter **Auswahlregeln** jedes Bildschirms enthält die Regeln, die das Layout bestimmen; die Auswertung erfolgt nach Priorität, die erste Übereinstimmung gewinnt, und ein Standard-Fallback greift, wenn keine Regel passt. Siehe [Layout-Auswahlregeln](layout-selection-rules.md).
+
+#### Verwandte Seiten
+
+* [Zweck und Verwendung](purpose-and-use.md)
+* [Navigieren im Layout-Manager](navigating-the-layout-manager.md)
+* [Konfigurieren von Feldeigenschaften](configuring-field-properties.md)
+* [Verwendung der Vorlagenvorschau](using-the-template-preview.md)
+* [Änderungen speichern und anwenden](save-and-apply-changes.md)
+* [Layout-Auswahlregeln](layout-selection-rules.md)
+* [Bewährte Vorgehensweisen](best-practices.md)
+* [Fehlerbehebung](troubleshooting.md)

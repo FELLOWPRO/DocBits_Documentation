@@ -1,29 +1,29 @@
-# Additional charge costing element
+# Kostenelement für Zusatzkosten
 
 ## Tabelle `public.additional_charge_costing_element`
 
 ### Spalten
 
-* `id`: internal
-* `org_id`: ID to organisation
-* `costing_element`: internal
-* `description`: internal
-* `charge_type`: internal
-* `distribution_method`: internal
-* `distribution_type`: internal
+* `id`: intern
+* `org_id`: ID der Organisation
+* `costing_element`: intern
+* `description`: intern
+* `charge_type`: intern
+* `distribution_method`: intern
+* `distribution_type`: intern
 * `created_by`: integer
 * `created_on`: timestamp with time zone
 * `last_modified_on`: timestamp with time zone
 * `is_deleted`: boolean
 * `deleted_on`: timestamp with time zone
-* `sub_org_id`: internal
+* `sub_org_id`: intern
 * `charge_count`: integer
-* `charge_icon`: internal
-* `charge_category`: internal
+* `charge_icon`: intern
+* `charge_category`: intern
 * `charge_sequence_number`: integer
 * `charge_operator`: integer
-* `last_modified_by`: internal
-* `deleted_by`: internal
+* `last_modified_by`: intern
+* `deleted_by`: intern
 
 ### Analyse & Beschreibung
 

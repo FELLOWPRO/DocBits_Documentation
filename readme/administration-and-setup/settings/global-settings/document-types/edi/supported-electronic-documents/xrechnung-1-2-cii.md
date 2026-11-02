@@ -4,6 +4,12 @@ description: Unterstützung des elektronischen Dokuments XRECHNUNG 1.2 CII in Do
 
 # 🇩🇪 XRECHNUNG 1.2 CII
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Deutschland](countries/germany.md). Syntax, Veröffentlichungsversion und Profil sind unterschiedliche Auswahlmerkmale. Leiten Sie aus der gemeinsamen Kennung 1p0 keine Factur-X-Veröffentlichung ab.
+{% endhint %}
+
 | Eigenschaft       | Wert                                        |
 | ----------------- | ------------------------------------------- |
 | **Land / Region** | Deutschland                                 |

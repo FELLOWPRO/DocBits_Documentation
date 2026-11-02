@@ -4,6 +4,12 @@ description: JP PINT elektronische Dokumentenunterstützung in DocBits
 
 # 🇯🇵 JP PINT
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfiguration und das Erklärvideo zum Land. [Japan](countries/japan.md). Selbstfakturierung ist eine Variante des Geschäftsprozesses, keine Sprachwahl. Prüfen Sie die Anpassungskennung und die konfigurierte Variante.
+{% endhint %}
+
 | Eigenschaft          | Wert                                           |
 | -------------------- | ---------------------------------------------- |
 | **Land / Region**    | Japan                                          |

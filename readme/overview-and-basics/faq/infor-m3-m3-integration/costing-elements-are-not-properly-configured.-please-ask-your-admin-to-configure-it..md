@@ -1,4 +1,4 @@
-# Os elementos de custo não estão configurados corretamente. Por favor, peça ao seu administrador para configurá-los.
+# Elementos de custo não configurados: peça ajuda ao administrador
 
 Se você encontrar a mensagem de erro **"Os elementos de custo não estão configurados corretamente. Por favor, peça ao seu administrador para configurá-los,"** pode ser devido a uma das seguintes razões:
 

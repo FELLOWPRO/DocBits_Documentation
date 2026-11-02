@@ -6,8 +6,6 @@ O Debug Collector captura uma imagem completa da sua sessão DocBits — ativida
 
 Pressione <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> no Windows e Linux ou <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> no macOS. A janela Performance Report abre imediatamente.
 
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Janela do Debug Collector"><figcaption><p>A janela Performance Report mostra a captura e um formulário integrado para criação de chamado.</p></figcaption></figure>
-
 ## O que é capturado
 
 * **Chamadas de API** — as últimas 60 chamadas REST e WebSocket, com tempos, códigos de status e URLs acessadas. Chamadas com mais de dois segundos são sinalizadas separadamente.
@@ -35,3 +33,5 @@ Se quiser uma cópia local da captura, use **Copy Debug Data** para copiar o JSO
 * Nada sai do seu navegador até você clicar em **Send Report** — o atalho apenas abre a janela.
 
 <mark>Revise a captura antes de enviar se estava trabalhando com documentos contendo dados de clientes. Identificadores de documento visíveis nas URLs aparecerão no relatório.</mark>
+
+Abra o relatório de diagnóstico nas opções de suporte, descreva o problema e verifique as informações recolhidas antes de as partilhar. O relatório reúne evidências; por si só, não determina a causa.

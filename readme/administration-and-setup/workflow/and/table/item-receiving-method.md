@@ -1,6 +1,6 @@
-# Item Receiving Method
+# Método de recebimento de itens
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_item_receiving_method_is_isnot_v2-pt-pt.png" alt="Método de recebimento de itens, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -8,13 +8,13 @@ Este cartão DocBits verifica se os itens de um conjunto de dados têm um métod
 
 ## **Funcionalidade:**
 
-* **Validação do método de receção:** Este cartão verifica o método de receção dos itens face a uma condição especificada. Os utilizadores podem escolher entre **qualquer** item ou **todos** os itens do conjunto de dados e definir a condição como **equals** ou **not equals**.
+* **Validação do método de receção:** Este cartão verifica o método de receção dos itens face a uma condição especificada. Os utilizadores podem escolher entre **qualquer** item ou **todos** os itens do conjunto de dados e definir a condição como **equals** ou **não é igual**.
 * **Seleção de itens:** Os utilizadores podem especificar:
   * **Any Item:** O cartão é acionado se pelo menos um item cumprir a condição de método de receção especificada.
-  * **All Items:** O cartão é acionado apenas se todos os itens cumprirem a condição de método de receção especificada.
+  * **Todos os itens:** O cartão é acionado apenas se todos os itens cumprirem a condição de método de receção especificada.
 * **Operadores:** Os seguintes operadores estão disponíveis para definir a condição:
-  * **Equals (=):** Verifica se o método de receção corresponde ao valor especificado.
-  * **Not Equals (≠):** Garante que o método de receção não corresponde ao valor especificado.
+  * **Igual a (=):** Verifica se o método de receção corresponde ao valor especificado.
+  * **Não é igual (≠):** Garante que o método de receção não corresponde ao valor especificado.
 
 ## **Utilização:**
 
@@ -22,6 +22,6 @@ Este cartão é ideal para gestores de armazém, coordenadores de inventário ou
 
 ## **Exemplo de cenário:**
 
-* Um utilizador configura o cartão para verificar se **todos os itens** têm o método de receção **igual a "Direct Delivery"**. Se todos os itens cumprirem esta condição, o fluxo de trabalho prossegue, confirmando que todos os itens se destinam a entrega direta.
+* Um utilizador configura o cartão para verificar se **todos os itens** têm o método de receção **igual a "Entrega Direta"**. Se todos os itens cumprirem esta condição, o fluxo de trabalho prossegue, confirmando que todos os itens se destinam a entrega direta.
 
 Ao utilizar o cartão "Receiving Method Validation", as organizações podem assegurar a conformidade com os protocolos de receção, melhorar os fluxos de trabalho de logística e manter a precisão no tratamento dos itens com base em métodos de receção específicos.

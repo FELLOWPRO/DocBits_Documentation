@@ -1,15 +1,21 @@
-# Grupos, Usuários e Permissões
+# Grupos, usuários e permissões
 
-Estas configurações respondem a três perguntas diferentes: quem pode iniciar sessão, em qual suborganização essa pessoa trabalha e o que o grupo dela pode fazer.
+## Criar um grupo e testar o acesso aos documentos
+
+Com as permissões de grupo já ativadas, crie um grupo de revisão e adicione um utilizador de teste sem direitos de administrador. Permita listar, consultar e editar faturas atribuídas; mantenha desativadas a eliminação, as alterações em massa e as aprovações. Guarde e reabra as definições. Depois inicie sessão como utilizador normal: a fatura atribuída está visível e o documento de controlo não atribuído não aparece.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pt.mp4" %}
+
+[Ver com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/groups-permissions-admin/v1/pt.html)
+
+Essas configurações respondem a três perguntas diferentes: quem pode entrar, em qual suborganização essa pessoa trabalha e o que o grupo dela pode fazer.
 
 | Se você precisa… | Abra… |
 | --- | --- |
-| Adicionar ou editar a conta de uma pessoa | **Configurações** → **Usuários**; depois leia [Usuários](users/README.md). |
-| Organizar o acesso entre unidades da empresa | **Configurações** → **Suborganizações**; depois leia [Suborganizações](sub-organizations/README.md). |
-| Controlar o acesso por grupo | **Configurações** → **Grupos e Permissões**; depois leia [Grupos e Permissões](groups-and-permissions/README.md). |
+| Adicionar ou editar a conta de uma pessoa | **Configurações** → **Usuários**; depois leia [Users](users/README.md). |
+| Organizar o acesso entre unidades da empresa | **Configurações** → **Suborganizações**; depois leia [Sub-Organizations](sub-organizations/README.md). |
+| Controlar o acesso por grupo | **Configurações** → **Grupos e Permissões**; depois leia [Groups and Permissions](groups-and-permissions/README.md). |
 
-Na página **Grupos e Permissões**, o controle **Ativar/desativar grupos e permissões** liga ou desliga o uso de grupos e permissões em toda a organização; os detalhes estão na seção [Ativar/Desativar Grupos e Permissões](groups-and-permissions/README.md).
+<figure><img src="../../../../.gitbook/assets/prior-t008-pt.png" alt="Painel de seleção de grupos."><figcaption><p>Painel de seleção de grupos.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/groups-users-and-permissions-overview-pt-20261008.png" alt="Tela Grupos e Permissões em português na Sandbox"><figcaption><p>Vista atual da Sandbox em português com a organização de exemplo Musterfirma GmbH. Neste exemplo, Grupos e Permissões está desativado; nenhuma permissão foi alterada.</p></figcaption></figure>
-
-Se um usuário não conseguir ver um documento ou uma ação, verifique primeiro a conta e a organização dele. Depois verifique as permissões do grupo correspondente. Antes de alterar uma organização em produção, use uma conta de teste sem privilégios de administrador para confirmar o acesso que um usuário normal terá realmente.
+Se um usuário não consegue ver um documento ou uma ação, verifique primeiro a conta e a organização dele. Depois, verifique as permissões do grupo correspondente. Use uma conta de teste sem privilégios de administrador para confirmar o acesso que um usuário comum realmente terá antes de alterar uma organização em produção.

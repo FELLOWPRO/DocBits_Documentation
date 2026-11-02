@@ -1,0 +1,50 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:05.591
+MyInvois tem entradas de regras para
+faturas e notas de crédito. O caminho de
+
+formats_02
+00:00:05.591 --> 00:00:12.858
+extração examinado baseia-se em XML. A
+plataforma nacional também aceita JSON,
+
+formats_03
+00:00:12.858 --> 00:00:18.199
+mas isso não comprova o suporte de
+importação JSON neste mapeamento do
+
+formats_04
+00:00:18.199 --> 00:00:19.067
+DocBits.
+
+workflow_01
+00:00:19.817 --> 00:00:25.204
+Abra E-Doc para o formato detetado.
+Compare Transformation, Preview e
+
+workflow_02
+00:00:25.204 --> 00:00:32.275
+Extraction Paths. As regras Custom têm
+prioridade. Guardar um rascunho não o
+
+workflow_03
+00:00:32.275 --> 00:00:33.200
+ativa.
+
+accept_01
+00:00:33.950 --> 00:00:39.906
+Teste uma fatura e uma nota de crédito,
+quando aplicável. Verifique os montantes,
+
+accept_02
+00:00:39.906 --> 00:00:45.769
+as partes envolvidas e o tipo de documento
+exportado. A análise do ficheiro não
+
+accept_03
+00:00:45.769 --> 00:00:50.300
+comprova a aprovação fiscal nem a entrega
+através da rede.
+

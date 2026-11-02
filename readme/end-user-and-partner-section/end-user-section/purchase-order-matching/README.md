@@ -2,22 +2,30 @@
 
 Use a **Correspondência de PO** para comparar as linhas da ordem de compra carregadas para um documento com as linhas da fatura extraídas dele. Os dados da ordem de compra podem vir de uma integração com ERP ou de outra importação configurada. A tela mostra o documento ao lado das duas tabelas para que você confira números, quantidades, preços e diferenças antes de salvar ou exportar.
 
+## Conferir as linhas da fatura com a encomenda
+
+O percurso começa com um número de encomenda reconhecido e três linhas da fatura conciliadas. Depois mostra a pesquisa manual como exceção, uma ligação incorreta intencional, uma correspondência parcial, a correspondência automática e a gravação. Verifique o resultado após recarregar: guardar a correspondência não aprova nem exporta, por si só, a fatura.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/pt.mp4" %}
+
+[Ver o vídeo com legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/po-matching-customer/v4/pt.html)
+
 {% hint style="info" %}
-O exemplo abaixo usa uma fatura e uma ordem de compra sintéticas da FellowPro na organização de testes **DocBits Documentation Test A**. A tabela da fatura mostra atualmente **NENHUM ITEM DE LINHA ENCONTRADO**. Isso demonstra a navegação e a pesquisa, mas não demonstra uma correspondência bem-sucedida de linhas. Não exporte este exemplo como uma fatura correspondida.
+A gravação utiliza dados de teste sintéticos com três linhas de fatura extraídas e a respetiva encomenda. O papel, as caixas de arquivo e a entrega totalizam 118 EUR líquidos. A correspondência completa mostra 118 EUR conciliados e nenhum valor em aberto.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/dbdc-323-po-screen-pt.png" alt="Tela de Correspondência de PO em inglês na organização sintética de Sandbox: pesquisa, barra de ferramentas, linhas da ordem de compra, tabela vazia de linhas da fatura e pré-visualização da fatura"><figcaption><p>A ordem de compra está carregada; a fatura de exemplo não tem linhas extraídas para conectar.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-full-pt.png" alt="Correspondência completa: as três linhas estão ligadas, com 118 EUR conciliados e 0 EUR em aberto."><figcaption><p>Correspondência completa: as três linhas estão ligadas, com 118 EUR conciliados e 0 EUR em aberto.</p></figcaption></figure>
 
 ## Encontrar e inspecionar uma ordem de compra
 
-1. Abra uma fatura na **Correspondência de PO**. Se a sua organização tiver várias ordens de compra, digite um número em **Pesquisar número do pedido de compra**.
+1. Abra a fatura na **Correspondência de PO**. Quando o número da encomenda é reconhecido, o DocBits carrega a encomenda correspondente. Use a pesquisa manual se faltar o número ou para consultar outra encomenda.
 2. Selecione o ícone de filtro ao lado da caixa de pesquisa para **Palavra-chave**, **Fornecedor**, **Status**, **Status do pedido**, datas, faixa de valor, ordenação e o número de registros exibidos. Selecione **Mais** para critérios adicionais. Selecione **Aplicar** para pesquisar ou **Claro** para redefinir os filtros.
 3. Selecione um número de ordem de compra acima da tabela para inspecionar suas linhas. O ícone de atualização ao lado do número recarrega os dados dessa ordem. Uma recarga pode depender da integração configurada.
-4. Compare cada linha da ordem de compra com a fatura e sua tabela extraída. O **+** em uma linha expande os detalhes de correspondência; ele próprio não conecta a linha à fatura. No exemplo, ele exibe **No multi-match Information** porque não existe essa correspondência.
+4. Compare cada linha da encomenda com a fatura e a tabela extraída. O **+** abre os detalhes de correspondência existentes; não liga, por si só, a linha à fatura.
 
-<figure><img src="../../../.gitbook/assets/dbdc-323-po-filters-pt.png" alt="Filtros de pesquisa de ordem de compra em português mostrando fornecedor, status, limites de data e valor, ordenação e os botões Aplicar e Claro"><figcaption><p>Use o painel de filtros para reduzir as ordens de compra exibidas.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-search-pt.png" alt="A pesquisa manual mostra as três linhas da encomenda de teste. Use os filtros quando necessário; um número de encomenda reconhecido não exige uma segunda pesquisa."><figcaption><p>A pesquisa manual mostra as três linhas da encomenda de teste. Use os filtros quando necessário; um número de encomenda reconhecido não exige uma segunda pesquisa.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc-323-po-line-pt.png" alt="Linha da ordem de compra expandida com No multi-match Information e uma tabela vazia de linhas da fatura"><figcaption><p>A linha expandida mostra os detalhes de correspondência quando disponíveis.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/po-tutorial-v4-partial-pt.png" alt="Correspondência parcial: estão conciliados 50 EUR de papel e ficam 68 EUR em aberto. Não significa um limite fixo de cinquenta por cento."><figcaption><p>Correspondência parcial: estão conciliados 50 EUR de papel e ficam 68 EUR em aberto. Não significa um limite fixo de cinquenta por cento.</p></figcaption></figure>
 
 ## Corresponder linhas e revisar o resultado
 
@@ -44,7 +52,7 @@ Use o **Histórico de correspondência** (ícone de relógio, onde suas permiss�
 
 ### Mais de uma linha por correspondência
 
-Uma única linha da fatura pode corresponder a várias linhas da ordem, ou o contrário, quando suas regras de correspondência permitirem. Abra os detalhes do **+** em uma linha para inspecionar qualquer correspondência múltipla existente. Verifique a quantidade e o preço combinados, não apenas uma linha. Um painel de detalhes vazio, como o exemplo sintético acima, significa que não há correspondência múltipla para inspecionar. Veja [Ferramentas de Correspondência de Ordem de Compra](purchase-order-matching-tools.md) para alterar conexões.
+Uma única linha da fatura pode corresponder a várias linhas da ordem, ou o contrário, quando suas regras de correspondência permitirem. Abra os detalhes do **+** em uma linha para inspecionar qualquer correspondência múltipla existente. Verifique a quantidade e o preço combinados, não apenas uma linha. Um painel de detalhes vazio significa que não há correspondência múltipla para inspecionar. Veja [Ferramentas de Correspondência de Ordem de Compra](purchase-order-matching-tools.md) para alterar conexões.
 
 ### Quantidades, diferenças e descontos
 

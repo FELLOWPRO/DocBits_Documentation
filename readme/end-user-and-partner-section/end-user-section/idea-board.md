@@ -37,7 +37,7 @@ Clique em **Nova ideia** no cabeçalho. A janela pede:
 
 Pressione **Enviar** para publicar. A ideia aparece na lista com o status **Nova**.
 
-<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Janela Nova ideia"><figcaption><p>A janela Nova ideia, com os seletores de categoria e canal.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-idea-board-new-idea-pt.png" alt="Janela para propor uma ideia sem dados pessoais."><figcaption><p>Janela para propor uma ideia sem dados pessoais.</p></figcaption></figure>
 
 ## Votando
 

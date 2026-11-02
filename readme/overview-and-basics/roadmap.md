@@ -1,5 +1,7 @@
 # Roadmap do DocBits
 
+**Disponibilidade da NOVA R1.1:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
+
 _Estado do planeamento a 7 de outubro de 2026. Cada versão indica a data de
 sandbox planeada (quando os clientes a podem testar) e a data de produção
 planeada. Os temas descrevem o que está planeado para a versão, não o que já
@@ -200,7 +202,7 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ## R1.3 — Sandbox 1 de junho de 2027 · Produção 16 de junho de 2027
 
-**Rule Manager do Auto Accounting**
+**Gestor de regras da contabilidade automática**
 
 - As regras atribuem contas e dimensões automaticamente, delimitadas por
   suborganização e tipo de documento, com um ecrã de auditoria que mostra qual

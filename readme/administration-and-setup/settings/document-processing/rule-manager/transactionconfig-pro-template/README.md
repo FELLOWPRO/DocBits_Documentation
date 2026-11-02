@@ -1,125 +1,127 @@
 # TransactionConfig Pro Template
 
-## Comprehensive Configuration Tool for Financial Document Processing
+> **Nota sobre o exemplo:** Este cenário ilustra um mapeamento de exportação configurado. A saída real, os montantes, o sinal e o tipo de documento dependem do mapeamento ativo, das expressões das regras e das decisões de aprovação. A geração de dados para uma nota de débito ou de crédito não significa, por si só, a emissão de um documento fiscal válido. Verifique a configuração e o resultado no ERP; este exemplo não garante conformidade legal.
 
-_TransactionConfig Pro Template_ is a powerful configuration tool designed for enterprise environments to manage the processing of financial documents, such as invoices, debit notes, and credit notes. The tool provides detailed mapping and field definitions that allow businesses to automate and customize their financial workflows with precision. Integrating seamlessly with existing Infor ERP systems, _TransactionConfig Pro Template_ ensures accurate handling of complex transactions while maintaining compliance with global financial standards.
+## Ferramenta de configuração para o processamento de documentos financeiros
 
-### Key Features
+O _TransactionConfig Pro Template_ é uma ferramenta de configuração para ambientes empresariais que gere o processamento de documentos financeiros, como faturas e notas de débito e crédito. Disponibiliza mapeamentos e definições de campos detalhados para automatizar e personalizar os fluxos financeiros. A integração utiliza os mapeamentos configurados para os sistemas ERP Infor existentes.
 
-• Detailed Mapping: Allows for precise mapping of fields across various transaction types, ensuring data consistency and accuracy.
+### Principais funcionalidades
 
-• Customization: Supports customization of financial document workflows to meet specific business needs.
+• Mapeamento detalhado: permite mapear campos de vários tipos de transação com precisão, mantendo a consistência e a exatidão dos dados.
 
-• Automation: Automates the handling of financial transactions, reducing manual errors and increasing efficiency.
+• Personalização: adapta os fluxos de documentos financeiros às necessidades específicas da empresa.
 
-• Integration: Easily integrates with existing Infor M3/LN ERP systems, enhancing the overall financial processing capabilities of the organization.
+• Automatização: automatiza o tratamento das transações financeiras, reduzindo erros manuais e aumentando a eficiência.
 
-• Compliance: Ensures compliance with international financial standards and regulations, helping businesses manage global transactions effectively.
+• Integração: integra-se com os sistemas ERP Infor M3/LN existentes, alargando as capacidades de processamento financeiro da organização.
+
+• Âmbito: estas regras configuram o tratamento técnico dos dados. Os requisitos fiscais e a validade de notas de débito ou de crédito devem ser verificados separadamente.
 
 
 
-## Detailed Explanation of Conflict Resolution Cases
+## Explicação detalhada dos casos de resolução de conflitos
 
-_TransactionConfig Pro Template_ includes a series of predefined rules to handle common discrepancies between invoice data and purchase order (PO) data. These rules are designed to automate decision-making when variances occur, ensuring consistency and accuracy in financial processing.
+O _TransactionConfig Pro Template_ inclui regras predefinidas para tratar divergências comuns entre os dados da fatura e do pedido de compra (PO). Estas regras automatizam as decisões quando existem diferenças, promovendo a consistência e a exatidão do processamento financeiro.
 
-### [Case 1, 2, 3: Quantity and Unit Price Within Tolerance](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
+### [Caso 1, 2, 3: Quantidade e preço unitário dentro da tolerância](case-1-2-3-quantity-and-unit-price-within-tolerance.md)
 
-**Scenario:** Both the quantity and unit price on the invoice are within an acceptable tolerance range compared to the purchase order.
+**Cenário:** a quantidade e o preço unitário da fatura estão dentro da tolerância aceite em relação ao pedido de compra.
 
-• **Action:** The system accepts the invoice values and calculates the total amount based on the provided quantity and unit price.
+• **Ação:** o sistema aceita os valores da fatura e calcula o total a partir da quantidade e do preço unitário indicados.
 
-### [Case 4, 5: Quantity Within Tolerance, Unit Price Outside Tolerance (Approved)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
+### [Caso 4, 5: Quantidade dentro da tolerância, Preço unitário fora da tolerância (Aprovado)](case-4-5-quantity-within-tolerance-unit-price-outside-tolerance-approved.md)
 
-**Scenario:** The quantity on the invoice is within tolerance, but the unit price is outside tolerance, and this variance has been approved.
+**Cenário:** a quantidade da fatura está dentro da tolerância, mas o preço unitário está fora; esse desvio foi aprovado.
 
-• **Action:** The system adjusts the unit price to match the purchase order and applies any necessary line charges to account for the difference.
+• **Ação:** o sistema ajusta o preço unitário ao pedido de compra e aplica os encargos de linha necessários para refletir a diferença.
 
-### [Case 6: Quantity Within Tolerance, Unit Price Outside Negative Tolerance (Rejected)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
+### [Caso 6: Quantidade dentro da tolerância, Preço unitário abaixo da tolerância inferior (Rejeitado)](case-6-quantity-within-tolerance-unit-price-outside-negative-tolerance-rejected.md)
 
-**Scenario:** The quantity is within tolerance, but the unit price is below the acceptable range (negative tolerance) and is not approved.
+**Cenário:** a quantidade está dentro da tolerância, mas o preço unitário está abaixo do limite inferior e o desvio não foi aprovado.
 
-• **Action:** The system rejects the unit price, adjusts it to match the purchase order, and generates a credit note for the difference. Additional header charges may be applied as necessary.
+• **Ação:** o sistema rejeita o preço unitário, ajusta-o ao pedido de compra e gera uma nota de crédito para a diferença. Podem ser aplicados encargos adicionais de cabeçalho, se necessário.
 
-### [Case 7: Quantity Within Tolerance, Unit Price Outside Tolerance (Positive Rejected)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
+### [Caso 7: Quantidade dentro da tolerância, Preço unitário fora da tolerância (Desvio positivo rejeitado)](case-7-quantity-within-tolerance-unit-price-outside-tolerance-positive-rejected.md)
 
-**Scenario:** The quantity is within tolerance, but the unit price exceeds the acceptable range (positive tolerance) and is not approved.
+**Cenário:** a quantidade está dentro da tolerância, mas o preço unitário está acima do limite superior e o desvio não foi aprovado.
 
-• **Action:** The system rejects the invoice unit price, adjusts it to match the purchase order, and may generate a debit note to account for the overcharged amount.
+• **Ação:** o sistema rejeita o preço unitário da fatura, ajusta-o ao pedido de compra e pode gerar uma nota de débito para refletir o valor cobrado em excesso.
 
-### [Case 8a, 9a: Quantity Outside Tolerance (Approved), Unit Price Within Tolerance](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
+### [Caso 8a, 9a: Quantidade fora da tolerância (Aprovado), Preço unitário dentro da tolerância](case-8a-9a-quantity-outside-tolerance-approved-unit-price-within-tolerance.md)
 
-**Scenario:** The quantity on the invoice is outside the acceptable tolerance but has been approved, while the unit price remains within tolerance.
+**Cenário:** a quantidade da fatura está fora da tolerância aceite, mas foi aprovada; o preço unitário permanece dentro da tolerância.
 
-• **Action:** The system accepts the approved quantity and the unit price as per the invoice and processes the transaction accordingly.
+• **Ação:** o sistema aceita a quantidade aprovada e o preço unitário da fatura e processa a transação com esses valores.
 
-### [Case 11a: Quantity Outside Tolerance (Positive Rejected), Unit Price Within Tolerance](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
+### [Caso 11a: Quantidade fora da tolerância (Desvio positivo rejeitado), Preço unitário dentro da tolerância](case-11a-quantity-outside-tolerance-positive-rejected-unit-price-within-tolerance.md)
 
-**Scenario:** The quantity on the invoice exceeds the acceptable range (positive) and is rejected, but the unit price is within tolerance.
+**Cenário:** a quantidade da fatura está acima do limite superior e foi rejeitada, mas o preço unitário está dentro da tolerância.
 
-• **Action:** The system adjusts the quantity to the approved level, maintaining the unit price, and processes the transaction. Any excess quantity is rejected and not invoiced.
+• **Ação:** o sistema ajusta a quantidade ao valor aprovado, mantém o preço unitário e processa a transação. A quantidade excedente é rejeitada e não é faturada.
 
-### [Case 10a: Quantity Outside Tolerance (Negative Rejected), Unit Price Within Tolerance](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
+### [Caso 10a: Quantidade fora da tolerância (Desvio negativo rejeitado), Preço unitário dentro da tolerância](case-10a-quantity-outside-tolerance-negative-rejected-unit-price-within-tolerance.md)
 
-**Scenario:** The quantity is below the acceptable range (negative tolerance) and is not approved, though the unit price is within tolerance.
+**Cenário:** a quantidade está abaixo do limite inferior e o desvio não foi aprovado, embora o preço unitário esteja dentro da tolerância.
 
-• **Action:** The system adjusts the quantity to match the approved level, keeping the unit price consistent. The transaction is processed accordingly.
+• **Ação:** o sistema ajusta a quantidade ao valor aprovado, mantém o preço unitário e processa a transação.
 
-### [Case 8b, 9b: Quantity Outside Tolerance (Approved), Unit Price Outside Tolerance (Approved)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
+### [Caso 8b, 9b: Quantidade fora da tolerância (Aprovado), Preço unitário fora da tolerância (Aprovado)](case-8b-9b-quantity-outside-tolerance-approved-unit-price-outside-tolerance-approved.md)
 
-**Scenario:** Both the quantity and unit price are outside the tolerance range but have been approved.
+**Cenário:** a quantidade e o preço unitário estão fora da tolerância, mas ambos foram aprovados.
 
-• **Action:** The system processes the transaction using the invoice values for both quantity and unit price, applying any necessary adjustments or line charges.
+• **Ação:** o sistema processa a transação com a quantidade e o preço unitário da fatura, aplicando os ajustes ou encargos de linha necessários.
 
-### [Case 10b: Quantity Outside Tolerance (Negative Rejected), Unit Price Outside Tolerance (Rejected)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
+### [Caso 10b: Quantidade fora da tolerância (Desvio negativo rejeitado), Preço unitário fora da tolerância (Rejeitado)](case-10b-quantity-outside-tolerance-negative-rejected-unit-price-outside-tolerance-rejected.md)
 
-**Scenario:** Both the quantity and unit price are outside tolerance, and neither has been approved.
+**Cenário:** a quantidade e o preço unitário estão fora da tolerância e nenhum dos desvios foi aprovado.
 
-• **Action:** The system rejects the invoice data, adjusts the values to match the purchase order, and generates necessary debit or credit notes.
+• **Ação:** o sistema rejeita os dados da fatura, ajusta os valores ao pedido de compra e gera as notas de débito ou crédito necessárias.
 
-### [Case 11b: Quantity Outside Tolerance (Positive Rejected), Unit Price Outside Tolerance (Rejected)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
+### [Caso 11b: Quantidade fora da tolerância (Desvio positivo rejeitado), Preço unitário fora da tolerância (Rejeitado)](case-11b-quantity-outside-tolerance-positive-rejected-unit-price-outside-tolerance-rejected.md)
 
-**Scenario:** The quantity exceeds the acceptable range (positive) and is rejected, and the unit price is also outside tolerance and rejected.
+**Cenário:** a quantidade está acima do limite superior e foi rejeitada; o preço unitário também está fora da tolerância e foi rejeitado.
 
-• **Action:** The system adjusts the quantity and unit price to match the approved levels from the purchase order, rejecting any excesses, and processes the transaction.
+• **Ação:** o sistema ajusta a quantidade e o preço unitário aos valores aprovados do pedido de compra, rejeita os excessos e processa a transação.
 
-### [Case 12, 13: Charge Line - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+### [Caso 12, 13: Linha de encargo - Encargo por unidade dentro da tolerância](charge-per-unit-within-tolerance.md)
 
-**Scenario:** The charge per unit on the invoice is within the acceptable tolerance range compared to the purchase order.
+**Cenário:** o encargo por unidade da fatura está dentro da tolerância aceite em relação ao pedido de compra.
 
-• **Action:** The system accepts the charge per unit as invoiced and processes the transaction without adjustments.
+• **Ação:** o sistema aceita o encargo por unidade faturado e processa a transação sem ajustes.
 
-### [Case 14: Charge Line - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved-1.md)
+### [Caso 14: Linha de encargo - Encargo por unidade fora da tolerância (Aprovado)](charge-per-unit-outside-tolerance-approved-1.md)
 
-**Scenario:** The charge per unit is outside tolerance but has been approved.
+**Cenário:** o encargo por unidade está fora da tolerância, mas foi aprovado.
 
-• **Action:** The system accepts the charge per unit and applies the approved charges, processing the transaction accordingly.
+• **Ação:** o sistema aceita o encargo por unidade e aplica os encargos aprovados ao processar a transação.
 
-### [Case 15: Charge Line - Charge Per Unit Outside Tolerance (Rejected)](charge-per-unit-outside-tolerance-rejected.md)
+### [Caso 15: Linha de encargo - Encargo por unidade fora da tolerância (Rejeitado)](charge-per-unit-outside-tolerance-rejected.md)
 
-**Scenario:** The charge per unit is outside tolerance and has not been approved.
+**Cenário:** o encargo por unidade está fora da tolerância e não foi aprovado.
 
-• **Action:** The system adjusts the charge per unit to match the purchase order or approved levels, generating any necessary debit or credit notes.
+• **Ação:** o sistema ajusta o encargo por unidade ao pedido de compra ou aos valores aprovados e gera as notas de débito ou crédito necessárias.
 
-### [Case 12, 13: Header Charge - Charge Per Unit Within Tolerance](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
+### [Caso 12, 13: Encargo de cabeçalho - Encargo por unidade dentro da tolerância](case-12-13-header-charge-charge-per-unit-within-tolerance.md)
 
-**Scenario:** The header charge per unit is within the acceptable tolerance range compared to the purchase order.
+**Cenário:** o encargo de cabeçalho por unidade está dentro da tolerância aceite em relação ao pedido de compra.
 
-• **Action:** The system processes the header charge as invoiced, applying it without adjustments.
+• **Ação:** o sistema processa o encargo de cabeçalho faturado sem ajustes.
 
-### [Case 14: Header Charge - Charge Per Unit Outside Tolerance (Approved)](charge-per-unit-outside-tolerance-approved.md)
+### [Caso 14: Encargo de cabeçalho - Encargo por unidade fora da tolerância (Aprovado)](charge-per-unit-outside-tolerance-approved.md)
 
-**Scenario:** The header charge per unit is outside tolerance but has been approved.
+**Cenário:** o encargo de cabeçalho por unidade está fora da tolerância, mas foi aprovado.
 
-• **Action:** The system processes the approved charge per unit, applying it to the transaction.
+• **Ação:** o sistema processa o encargo por unidade aprovado e aplica-o à transação.
 
-### [Case 15: Header Charge - Charge Per Unit Outside Tolerance (Rejected)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
+### [Caso 15: Encargo de cabeçalho - Encargo por unidade fora da tolerância (Rejeitado)](case-15-header-charge-charge-per-unit-outside-tolerance-rejected.md)
 
-**Scenario:** The header charge per unit is outside tolerance and has not been approved.
+**Cenário:** o encargo de cabeçalho por unidade está fora da tolerância e não foi aprovado.
 
-• **Action:** The system adjusts the header charge to match the purchase order, processing the transaction accordingly, and generating any necessary notes.
+• **Ação:** o sistema ajusta o encargo de cabeçalho ao pedido de compra, processa a transação e gera as notas necessárias.
 
-### [tax-lines.md](tax-lines.md "mention")
+### [Linhas de imposto](tax-lines.md "mention")
 
-**Scenario:** Handles discrepancies in tax amounts between the invoice and purchase order.
+**Cenário:** divergências nos valores dos impostos entre a fatura e o pedido de compra.
 
-• **Action:** The system adjusts the tax lines according to the approved tax rates and amounts, ensuring compliance with applicable tax regulations.
+• **Ação:** o sistema ajusta as linhas de imposto às taxas e aos valores aprovados, de acordo com as regras fiscais aplicáveis.

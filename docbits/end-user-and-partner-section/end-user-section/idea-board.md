@@ -10,7 +10,7 @@ Open the sidebar and click **Ideas**, or navigate to `/ideas` directly.
 
 ## Channels
 
-A row of channel chips sits at the top of the board: **All**, **General**, **AI Workforce**, **Workflow**, **Dashboard**, **Import / Export**, and **Document Processing**. Click a chip to show only the ideas in that product area; **All** clears the channel filter. Every idea belongs to one channel, shown as a badge on its card. The **AI Workforce** channel collects ideas for the [AI Workforce](../../advanced-functions-and-tools/ai_workforce.md) features.
+A row of channel chips sits at the top of the board: **All**, **General**, **AI Workforce**, **Workflow**, **Dashboard**, **Import / Export**, and **Document Processing**. Click a chip to show only the ideas in that product area; **All** clears the channel filter. Every idea belongs to one channel, shown as a badge on its card. The **AI Workforce** channel collects ideas for the [AI Workforce](../../advanced-functions-and-tools/ai_workforce/) features.
 
 ## Browsing ideas
 
@@ -35,7 +35,7 @@ Click **New Idea** in the header. The dialog asks for:
 * **Category** — pick the closest match: Feature, Improvement, Integration, or Other. Use a support ticket for incidents that are blocking your work.
 * **Channel** — the product area the idea belongs to.
 
-Press **Submit** to send the idea. Its visibility depends on its moderation status: it can appear within your organisation while awaiting review; approval makes it visible across the board — see [Moderation](#moderation) below.
+Press **Submit** to send the idea. Its visibility depends on its moderation status: it can appear within your organisation while awaiting review; approval makes it visible across the board — see [Moderation](idea-board.md#moderation) below.
 
 <figure><img src="../../.gitbook/assets/dbdc-834-empty-new-idea-native-en-20261101.png" alt="Untouched New Idea dialog with an empty title and description, category and channel selectors, Cancel and disabled Submit"><figcaption><p>The New Idea dialog before entering a title: Submit is disabled while the title is empty.</p></figcaption></figure>
 
@@ -78,4 +78,4 @@ Filters combine, so you can narrow to, say, "Top Rated Improvements that are Und
 
 The card menu (three-dot button) lets you edit or delete an idea you submitted. Board moderators can also act on other ideas; ordinary users do not gain those permissions simply by belonging to the same organisation.
 
-<mark>The Idea Board is for product feedback, not for incident reports. Use a support ticket for issues that are blocking your work today.</mark>
+The Idea Board is for product feedback, not for incident reports. Use a support ticket for issues that are blocking your work today.

@@ -4,10 +4,8 @@ description: BRAZIL CT-E electronic document support in DocBits
 
 # 🇧🇷 BRAZIL CT-E
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Brazil](countries/brazil.md). These are different document families. A configured NFS-e version does not certify every municipal schema or every national service-invoice layout.
+Check the country guide for version limits, effective configuration and the country explainer. [Brazil](brazil.md). These are different document families. A configured NFS-e version does not certify every municipal schema or every national service-invoice layout.
 {% endhint %}
 
 | Property             | Value                                                     |

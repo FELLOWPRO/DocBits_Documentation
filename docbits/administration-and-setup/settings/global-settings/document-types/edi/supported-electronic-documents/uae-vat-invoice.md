@@ -4,10 +4,8 @@ description: UAE VAT INVOICE electronic document support in DocBits
 
 # 🇦🇪 UAE VAT INVOICE
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [United Arab Emirates](countries/united-arab-emirates.md). A VAT-invoice mapping does not establish support for every UAE Peppol or PINT release. Confirm the payload contract and the required delivery integration.
+Check the country guide for version limits, effective configuration and the country explainer. [United Arab Emirates](united-arab-emirates.md). A VAT-invoice mapping does not establish support for every UAE Peppol or PINT release. Confirm the payload contract and the required delivery integration.
 {% endhint %}
 
 | Property             | Value                                   |

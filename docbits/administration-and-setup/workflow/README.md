@@ -8,7 +8,7 @@ description: DocBits Workflow Engine
 
 ## DocBits Workflow Engine: Simplifying Process Automation
 
-### Understand and prepare workflows <a id="workflow-orientation"></a>
+### Understand and prepare workflows <a href="#workflow-orientation" id="workflow-orientation"></a>
 
 Follow the real DocBits test account: eight workflow executions in the dashboard, two saved workflows with execution order 100/200, and three passing test scenarios. The tutorial also explains Standard and Advanced Workflows, licenses, templates and the Card SDK.
 
@@ -17,22 +17,23 @@ Follow the real DocBits test account: eight workflow executions in the dashboard
 [Watch with subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.html) · [Open video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4) · [Subtitles (WebVTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.vtt) · [Transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.txt) · 3:35
 
 <details>
+
 <summary>Chapters and transcript</summary>
 
-| Chapter | Start |
-| --- | --- |
-| Meet the administrator | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=0.000) |
-| Organization and access | [0:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=2.292) |
-| Dashboard and filters | [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=16.708) |
-| Workflow List | [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=56.875) |
-| Execution order | [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=74.083) |
-| Standard Workflow | [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=94.458) |
-| Advanced Workflow | [1:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=109.792) |
-| Licenses | [2:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=128.875) |
-| Templates | [2:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=150.667) |
-| Test Manager | [2:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=165.542) |
-| Card SDK | [3:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=182.875) |
-| Preparation checklist | [3:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=198.583) |
+| Chapter                 | Start                                                                                                                            |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Meet the administrator  | [0:00](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=0.000)   |
+| Organization and access | [0:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=2.292)   |
+| Dashboard and filters   | [0:16](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=16.708)  |
+| Workflow List           | [0:56](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=56.875)  |
+| Execution order         | [1:14](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=74.083)  |
+| Standard Workflow       | [1:34](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=94.458)  |
+| Advanced Workflow       | [1:49](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=109.792) |
+| Licenses                | [2:08](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=128.875) |
+| Templates               | [2:30](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=150.667) |
+| Test Manager            | [2:45](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=165.542) |
+| Card SDK                | [3:02](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=182.875) |
+| Preparation checklist   | [3:18](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/workflow-orientation-admin/v1/en.mp4#t=198.583) |
 
 **Meet the administrator**
 
@@ -117,4 +118,4 @@ The DocBits Workflow Engine's "Easy When-And-Then" rule exemplifies the engine's
 
 ## Learning path from beginner to expert
 
-[Learning path from beginner to expert](workflow-learning-path.md). Work through the levels in order. Reading alone is insufficient: finish each level with your own configuration, a checkable expectation and evidence. P0 prevents basic execution mistakes; P1 develops data handling, business decisions and integrations.
+[Learning path from beginner to expert](workflow-learning-path/). Work through the levels in order. Reading alone is insufficient: finish each level with your own configuration, a checkable expectation and evidence. P0 prevents basic execution mistakes; P1 develops data handling, business decisions and integrations.

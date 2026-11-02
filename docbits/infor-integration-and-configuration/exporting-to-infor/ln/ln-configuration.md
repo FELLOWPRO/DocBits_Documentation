@@ -116,13 +116,11 @@ After your Infor administrator has verified all nodes, mappings and document sub
 
 <figure><img src="https://lh7-us.googleusercontent.com/WjQeGz_effl_RlkWC4CdJS9Dg_9DpsIz3meKOsa7GbU9RFSrYMw3PpbXFat6cGsA4gvEGS-0D-YFrZj9K2wK3Irap-30mcQ5kr5k4Gy2gm7DLJdYpzJgeBRVInyAYfGmGXu2dCQvmX9ballRbSwyq3o" alt="Historical Document Flow toolbar with the activation control circled. The legacy example is named DocBits-Export-M3; choose the correct LN flow in your tenant."><figcaption><p>Historical Document Flow toolbar with the activation control circled. The legacy example is named DocBits-Export-M3; choose the correct LN flow in your tenant. Confirm the corresponding settings in your Infor tenant.</p></figcaption></figure>
 
-
-
 ## Configure export in DocBits
 
 Open **Settings → Export** in the intended DocBits organisation. The list shows existing export configurations; select **New** to prepare a new configuration.
 
-<figure><img src="../../../.gitbook/assets/dbdc-196-export-list-en-20261030.png" alt="Current English DocBits Export list with New and the table headers; existing configuration rows are covered."><figcaption><p>New opens a configuration form. Existing rows are covered in this documentation image; no saved configuration was opened or changed.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-40-export-list-en-20261030.png" alt="Current English DocBits Export list with New and the table headers; existing configuration rows are covered."><figcaption><p>New opens a configuration form. Existing rows are covered in this documentation image; no saved configuration was opened or changed.</p></figcaption></figure>
 
 Under **Basic Information**, enter a **Configuration Title**, select the **Document Type** (Invoice for the example), and select a **Sub-Organization** only if your setup requires one. Choose **Infor** for **Export**, then **Infor IDM + LN** for **Infor Type**.
 

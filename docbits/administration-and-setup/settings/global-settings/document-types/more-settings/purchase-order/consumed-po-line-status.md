@@ -10,9 +10,7 @@
 2.  Expand **Purchase Order** if it is collapsed. Find **Consumed PO line status** and turn on its switch. This is a separate setting from **Update Document Purchase Order Status** further down the same section.
 
     <figure><img src="../../../../../../.gitbook/assets/prior-u045-en.png" alt="Settings for already consumed purchase-order lines."><figcaption><p>Settings for already consumed purchase-order lines.</p></figcaption></figure>
-
-
-3. Open an invoice with purchase order matching and inspect its PO lines. The table below explains how line colors relate to matching state. For the matching steps, see [Purchase Order Matching](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/).
+3. Open an invoice with purchase order matching and inspect its PO lines. The table below explains how line colors relate to matching state. For the matching steps, see [Purchase Order Matching](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching.md).
 
 ## Read the PO line colors
 
@@ -22,6 +20,5 @@
 | Blue tint      | You selected the line in the current matching view.                                         | Selection is temporary; it does not mean the line is fully matched. |
 | Pale orange    | Some quantity has been matched, but the matched quantity is below the selected PO quantity. | Check how much quantity remains.                                    |
 | Pale violet    | The matched quantity is at least the selected PO quantity.                                  | Do not assume more quantity is available.                           |
-
 
 A crossed-out line has a different meaning: its PO status may be excluded by [PO disable statuses](purchase-order-disable-statuses.md). Check that setting if a line cannot be selected.

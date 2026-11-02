@@ -1,8 +1,8 @@
-# Microsoft 365 tenant email import
+# O365 Tenant
 
 Use this guide to connect an organisation-owned Microsoft 365 mailbox through a Microsoft Entra application. An administrator needs access to the intended Entra tenant and the matching DocBits organisation. Agree on the mailbox, document destination and credential owner before enabling import.
 
-## 1. Prepare the Entra application {#register-app-on-azure-a-d}
+## 1. Prepare the Entra application <a href="#register-app-on-azure-a-d" id="register-app-on-azure-a-d"></a>
 
 In the [Microsoft Entra admin center](https://entra.microsoft.com/), open **Identity → Applications → App registrations → New registration** in the intended tenant. Choose a recognisable name and the account type approved by your identity administrator. An application used only within your organisation normally uses the single-tenant account option. Record its **Directory (tenant) ID** and **Application (client) ID**. Follow Microsoft's [current registration instructions](https://learn.microsoft.com/en-us/graph/auth-register-app-v2) for the portal steps.
 
@@ -20,16 +20,16 @@ Review restricted mailbox access with the Exchange administrator using [RBAC for
 
 Open **Settings → Import → Email Import** in the intended DocBits organisation and select **New**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-198-email-import-list-en-20261030.png" alt="Current English Email Import section with New, the import-log control and table headings; table data and the generated inbound address are covered."><figcaption><p>New opens the email setup wizard. Existing table data and the generated inbound address are covered in this documentation image.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-179-email-overview-en-20261030.png" alt="Current English Email Import section with New, the import-log control and table headings; table data and the generated inbound address are covered."><figcaption><p>New opens the email setup wizard. Existing table data and the generated inbound address are covered in this documentation image.</p></figcaption></figure>
 
 Select **OAuth Office365 - Tenant** under **Protocol** and choose **Document Routing** for the intended destination. Complete the tenant fields supplied by your administrator:
 
-| DocBits field | Enter |
-| --- | --- |
-| Tenant ID | Directory (tenant) ID of the intended Entra tenant. |
-| Client App ID | Application (client) ID of the registered application. |
-| Client App Value | The client secret Value from that registration. |
-| Tenant Type | The cloud environment for the tenant, such as Commercial or GCC High. |
+| DocBits field    | Enter                                                                 |
+| ---------------- | --------------------------------------------------------------------- |
+| Tenant ID        | Directory (tenant) ID of the intended Entra tenant.                   |
+| Client App ID    | Application (client) ID of the registered application.                |
+| Client App Value | The client secret Value from that registration.                       |
+| Tenant Type      | The cloud environment for the tenant, such as Commercial or GCC High. |
 
 <figure><img src="../../../../.gitbook/assets/dbdc-198-email-tenant-wizard-en-20261030.png" alt="Current English wizard with OAuth Office365 - Tenant, DocBits routing, three blank credential fields, Commercial tenant type, Test connection and Save."><figcaption><p>The Tenant variant has its own credential form. This example uses the DocBits route and Commercial tenant type; all three credential fields are blank. Test connection and Save were not used for this documentation capture.</p></figcaption></figure>
 

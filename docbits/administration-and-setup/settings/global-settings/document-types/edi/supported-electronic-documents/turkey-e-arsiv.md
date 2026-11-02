@@ -4,10 +4,8 @@ description: TURKEY E-ARSIV electronic document support in DocBits
 
 # 🇹🇷 TURKEY E-ARSIV
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Turkey](countries/turkey.md). Check the source profile and document structure. The family label does not identify every UBL-TR release or establish delivery through the tax platform.
+Check the country guide for version limits, effective configuration and the country explainer. [Turkey](turkey.md). Check the source profile and document structure. The family label does not identify every UBL-TR release or establish delivery through the tax platform.
 {% endhint %}
 
 | Property             | Value                                         |

@@ -4,10 +4,8 @@ description: VIETNAM E-INVOICE electronic document support in DocBits
 
 # 🇻🇳 VIETNAM E-INVOICE
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Vietnam](countries/vietnam.md). The label does not name a release. Check the source namespace and schema instead of assuming that all tax-platform exports have the same structure.
+Check the country guide for version limits, effective configuration and the country explainer. [Vietnam](vietnam.md). The label does not name a release. Check the source namespace and schema instead of assuming that all tax-platform exports have the same structure.
 {% endhint %}
 
 | Property             | Value                                                 |

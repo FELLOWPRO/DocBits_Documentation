@@ -4,10 +4,8 @@ description: PHILIPPINES EIS electronic document support in DocBits
 
 # 🇵🇭 PHILIPPINES EIS
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Philippines](countries/philippines.md). The label does not name a release. Check the payload schema and the applicable document type before relying on a generic EIS label.
+Check the country guide for version limits, effective configuration and the country explainer. [Philippines](philippines.md). The label does not name a release. Check the payload schema and the applicable document type before relying on a generic EIS label.
 {% endhint %}
 
 | Property             | Value                                   |

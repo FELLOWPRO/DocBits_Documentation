@@ -30,7 +30,7 @@ Map vendor payment terms to AP assignment codes for automated invoice routing by
 
 ## Discount Term Overwrites
 
-<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-en.png" alt="Discount Term Overwrites"><figcaption><p>Discount Term Overwrites</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-en.png" alt="Discount Term Overwrites"><figcaption><p>Discount Term Overwrites</p></figcaption></figure>
 
 Use **Discount Term Overwrites** to map a specific prefix to a discount percentage and a number of days. Click **Add Mapping** to add a row with **Prefix**, **Percentage** and **Days**. To change or remove an existing mapping, open its row menu (⋮) and choose **Edit** or **Delete**.
 

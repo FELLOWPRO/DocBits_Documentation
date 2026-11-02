@@ -4,10 +4,8 @@ description: PARAGUAY SIFEN electronic document support in DocBits
 
 # 🇵🇾 PARAGUAY SIFEN
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Paraguay](countries/paraguay.md). Credit-note classification entries lack dedicated extraction bundles in the inspected status. Verify the effective mapping and do not treat the labels as interchangeable.
+Check the country guide for version limits, effective configuration and the country explainer. [Paraguay](paraguay.md). Credit-note classification entries lack dedicated extraction bundles in the inspected status. Verify the effective mapping and do not treat the labels as interchangeable.
 {% endhint %}
 
 | Property             | Value                                                         |

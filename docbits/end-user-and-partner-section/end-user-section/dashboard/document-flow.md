@@ -10,7 +10,7 @@ Find the document in the dashboard first. The image shows the search for the syn
 
 Open the document in **Field Validation**. Open **More options** in the right-hand action bar and select **Document Flow**.
 
-<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu.png" alt="More options menu in English field validation with Document Flow available."><figcaption><p>More options menu in English field validation with Document Flow available.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-troubleshooting_ocr_2.png" alt="More options menu in English field validation with Document Flow available."><figcaption><p>More options menu in English field validation with Document Flow available.</p></figcaption></figure>
 
 ## Read the process cards
 
@@ -24,11 +24,11 @@ Technical identifiers and status codes such as `DOCUMENT_IMPORTED` and `COMPLETE
 
 Select a process card to inspect its details and available logs.
 
-| Detail | Meaning |
-| --- | --- |
-| Module | Processing component used for the step |
-| Status | Current state of that step |
-| Duration | Recorded processing time |
-| Logs | Available technical task messages |
+| Detail   | Meaning                                |
+| -------- | -------------------------------------- |
+| Module   | Processing component used for the step |
+| Status   | Current state of that step             |
+| Duration | Recorded processing time               |
+| Logs     | Available technical task messages      |
 
 For a waiting or failed step, inspect its messages before restarting processing.

@@ -155,7 +155,7 @@ First, I check the displayed receiving address and the scope. The address belong
 
 Here I restrict the inbox to our approved test sender. I only select the assignment to a sub-organization if it belongs to the intended process. I save the setting and open it again. The allowed sender has been kept; automatic reply emails remain turned off in this training.
 
-<figure><img src="../../../../.gitbook/assets/admin-save-en-accounting-email-v2.png" alt="Allowed sender saved with notifications off"><figcaption><p>Allowed sender saved with notifications off</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-save-en-accounting-email-v1.png" alt="Allowed sender saved with notifications off"><figcaption><p>Allowed sender saved with notifications off</p></figcaption></figure>
 
 For this training, a test message was submitted directly to DocBits inbound processing. This test does not confirm external email delivery. In the log, I check the matching subject, sender, and imported attachment. I then check the document that was actually created.
 
@@ -165,4 +165,4 @@ A second controlled test comes from an unapproved sender. In the log, I specific
 
 In a real case, I first clarify whether this sender is even authorized. An approved change to the sender list is saved and checked again. Afterward, I verify a new unique test inbound all the way to the created document. For technical errors, I hand over the trace ID and the concrete error message.
 
-<figure><img src="../../../../.gitbook/assets/admin-error-en-accounting-email-v2.png" alt="Failed import with attachment, reason and trace"><figcaption><p>Failed import with attachment, reason and trace</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/admin-error-en-accounting-email-v1.png" alt="Failed import with attachment, reason and trace"><figcaption><p>Failed import with attachment, reason and trace</p></figcaption></figure>

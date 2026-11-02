@@ -4,10 +4,8 @@ description: AUSTRIA EBINTERFACE 6.0 electronic document support in DocBits
 
 # 🇦🇹 AUSTRIA EBINTERFACE 6.0
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Austria](countries/austria.md). Match the XML namespace to the configured version. A different namespace can require another mapping.
+Check the country guide for version limits, effective configuration and the country explainer. [Austria](austria.md). Match the XML namespace to the configured version. A different namespace can require another mapping.
 {% endhint %}
 
 | Property             | Value                |

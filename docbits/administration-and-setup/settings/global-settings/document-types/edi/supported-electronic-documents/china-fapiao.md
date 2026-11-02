@@ -6,10 +6,8 @@ description: >-
 
 # 🇨🇳 CHINA FAPIAO
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [China](countries/china.md). The documented adapter uses the XML namespace urn:china:tax:fapiao:1.0. Do not assume that every native OFD, PDF or tax-platform export uses that contract.
+Check the country guide for version limits, effective configuration and the country explainer. [China](china.md). The documented adapter uses the XML namespace urn:china:tax:fapiao:1.0. Do not assume that every native OFD, PDF or tax-platform export uses that contract.
 {% endhint %}
 
 | Property             | Value                                                            |

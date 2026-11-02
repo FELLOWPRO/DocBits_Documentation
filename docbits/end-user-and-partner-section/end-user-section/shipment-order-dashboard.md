@@ -1,22 +1,22 @@
 # Shipment Order Dashboard
 
-The Shipment Order Dashboard shows all shipment order lines that DocBits has received from your ERP system, so you can follow at a glance what has been shipped for each purchase order. It is available from the sidebar once the feature is switched on (see [Activating the dashboard](#activating-the-dashboard) below).
+The Shipment Order Dashboard shows all shipment order lines that DocBits has received from your ERP system, so you can follow at a glance what has been shipped for each purchase order. It is available from the sidebar once the feature is switched on (see [Activating the dashboard](shipment-order-dashboard.md#activating-the-dashboard) below).
 
 <figure><img src="../../.gitbook/assets/shipment-order-dashboard-overview-en-20261010.png" alt="Shipment Order Dashboard with search bar, table columns and row actions"><figcaption><p>The Shipment Order Dashboard with its table of shipment lines, the search bar and the row actions menu.</p></figcaption></figure>
 
 ## Table columns
 
-| Column | What it shows |
-| --- | --- |
-| **Item Id** | The item number of the ordered product. |
-| **Line Number** | The line of the purchase order that this shipment belongs to. |
-| **PO Number** | The purchase order number. Click it to open the purchase order detail page with all lines and matching information. |
-| **Status** | The current shipping status, for example Reserved, Picking list printed, Delivered or Invoiced. |
-| **Shipped Quantity** | How many units have been shipped for this line. |
-| **Delivery Number** | The delivery note number the shipment was reported under. |
-| **Description** | A short description of the item. |
-| **Warehouse** | The warehouse or storage location the goods are shipped from. |
-| **Actions** | Opens the row action menu (see below). |
+| Column               | What it shows                                                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Item Id**          | The item number of the ordered product.                                                                             |
+| **Line Number**      | The line of the purchase order that this shipment belongs to.                                                       |
+| **PO Number**        | The purchase order number. Click it to open the purchase order detail page with all lines and matching information. |
+| **Status**           | The current shipping status, for example Reserved, Picking list printed, Delivered or Invoiced.                     |
+| **Shipped Quantity** | How many units have been shipped for this line.                                                                     |
+| **Delivery Number**  | The delivery note number the shipment was reported under.                                                           |
+| **Description**      | A short description of the item.                                                                                    |
+| **Warehouse**        | The warehouse or storage location the goods are shipped from.                                                       |
+| **Actions**          | Opens the row action menu (see below).                                                                              |
 
 ## Search and filters
 
@@ -24,7 +24,7 @@ The search bar above the table filters the list by item ID as you type. The filt
 
 ## Row actions: View
 
-Click the three-dot menu in the **Actions** column of a row and choose **View** — or simply click anywhere in the row — to jump to the purchase order detail page for that PO number. There you can check the full purchase order, its lines and the current matching status. For more background, see [Purchase Order Matching Screen](purchase-order-matching/README.md).
+Click the three-dot menu in the **Actions** column of a row and choose **View** — or simply click anywhere in the row — to jump to the purchase order detail page for that PO number. There you can check the full purchase order, its lines and the current matching status. For more background, see [Purchase Order Matching Screen](purchase-order-matching.md).
 
 ## Sorting, column order and page size
 
@@ -39,7 +39,6 @@ The Shipment Order Dashboard is disabled by default. An administrator switches i
 In this English video, an administrator searches for an example line by item ID, compares the order and delivery references, and checks the shipped quantity, status and warehouse. He then clears the search and reloads the overview.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/en.mp4" %}
-{% endembed %}
 
 [Open the video with English captions and transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/shipment-order-search-admin/v1/en.html).
 

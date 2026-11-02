@@ -2,7 +2,7 @@
 
 ## Overview
 
-This setting enables the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) section, which becomes accessible after document validation.
+This setting enables the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching.md) section, which becomes accessible after document validation.
 
 <mark style="color:red;">**Note**</mark>: For the **Invoice** document type, the following additional requirements must be met:
 
@@ -22,15 +22,10 @@ This setting enables the [**Purchase Order Matching**](../../../../../../end-use
 
 ## **Functionality**
 
-Once activated, the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) section becomes available after document validation.&#x20;
+Once activated, the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching.md) section becomes available after document validation.
 
 You can also configure which type of quantity from **Infor** should be used for matching by selecting one of the following options from the dropdown menu next to the setting:
 
 * **Quantity**
 * **Received Quantity**
 * **Received Delivery Open Quantity**
-
-
-
-
-

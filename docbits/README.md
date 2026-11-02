@@ -64,4 +64,4 @@ Below is a summary of its unique features and benefits:
 * Suitable for a wide range of industries and document types, including invoices, delivery notes, order confirmations, and more.
 * Ideal for businesses looking to optimize their document capturing processes and enhance operational efficiency.
 
-For more information, visit [FellowPRO AG](https://fellowpro.com/) or contact sales at sales@fellowpro.com. Follow us on [LinkedIn](https://www.linkedin.com/company/fellowpro).
+For more information, visit [FELLOWPRO AG](https://fellowpro.com/) or contact sales at sales@fellowpro.com. Follow us on [LinkedIn](https://www.linkedin.com/company/fellowpro).

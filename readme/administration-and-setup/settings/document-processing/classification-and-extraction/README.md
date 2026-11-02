@@ -1,5 +1,22 @@
 # Classification And Extraction
 
+## Które ustawienie działa na którym etapie procesu?
+
+<figure><img src="../../../../.gitbook/assets/process-extraction-pl-20261028.png" alt="Od pliku do rozpoznanych danych: Przeglądaj oddzielnie typ dokumentu, źródło danych i ścieżkę ekstrakcji."><figcaption><p>Przeglądaj oddzielnie typ dokumentu, źródło danych i ścieżkę ekstrakcji. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
+
+Klasyfikacja odpowiada na pytanie **„Co to za dokument?”**. Ekstrakcja odpowiada **„Jakie wartości zawiera?”**. Ustawienia na tej stronie wpływają na różne punkty przetwarzania i nie należy ich rozumieć jako pojedynczego przełącznika AI.
+
+1. **Przygotuj dane wejściowe:** W przypadku PDFs można użyć istniejącego tekstu lub OCR; obsługiwane dokumenty elektroniczne mogą zapewniać wartości strukturalne. Aktywowany podział może oddzielić przychodzący dokument na podstawie skonfigurowanych kryteriów kodu kreskowego lub QR.
+2. **Określ typ dokumentu:** Reguły i modele klasyfikacji przypisują dokumenty do typu i, w razie potrzeby, podtypu. To przypisanie należy odróżnić od późniejszego wyodrębniania pól i tabel.
+3. **Wyodrębnij wartości:** Tabele mogą podążać różnymi ścieżkami w zależności od konfiguracji i odpowiednich zapisanych reguł. Pola nagłówka mają własne wskaźniki źródła. Dlatego sam wybrany model AI nie wyjaśnia wartości każdego wiersza lub pola.
+4. **Śledź wynik:** Na ekranie sprawdzania poprawności sprawdź, która zakładka tabeli zawiera wiersze i jaki wskaźnik źródła ma pole nagłówka. Jeśli brakuje etapu przetwarzania, przed zmianą ustawień przeczytaj dzienniki dokumentów.
+
+### Rozróżnij ścieżkę reguły od ścieżki AI
+
+Odpowiednie zapisane reguły tabel mogą określić ekstrakcję tabeli dla odpowiedniego szablonu lub dostawcy. Bez odpowiednich reguł ścieżkę AI można wykorzystać, gdy aktywowana jest ekstrakcja tabeli AI. Poszczególne kolumny mogą mieć własne opcje AI. Źródło AI dla pola nagłówka nie oznacza, że ​​cała tabela pochodzi z AI.
+
+Przewodnik diagnostyczny [Która ścieżka ekstrakcji została wykorzystana?](../../../../overview-and-basics/faq/document-processing/which-extraction-path-was-used.md) objaśnia karty, identyfikatory źródeł i dzienniki. Strona [Model sztucznej inteligencji](ai-model.md) objaśnia nadpisania standardów organizacji i szablonów.
+
 ## Przegląd
 
 W ustawieniach **Klasyfikacja i ekstrakcja** możesz:
@@ -91,7 +108,7 @@ Więcej informacji o tym ustawieniu [tutaj](auto-extract-tax-code.md).
 
 **Zapisywanie reguł ekstrakcji (tylko administrator) (Save extraction rules (Admin only)):** Tylko administratorzy mogą kliknąć *Save Rules* w szkoleniu tabeli. Włącz tę opcję, gdy użytkownicy zapisują reguły, które psują ekstrakcję dostawcy.
 
-**Model sztucznej inteligencji:** Wybiera poziom AI używany do ekstrakcji tabeli. Dostępnych jest sześć opcji: **Full** (najwyższa dokładność, najwolniejsza, 2 tokeny na dokument), **Fast** (domyślna; 1 token na dokument), **Nexus** i **Nexus Flash** (alternatywna rodzina modeli, opcjonalnie) oraz **Auto** i **Auto Nexus**, w których DocBits decyduje dla każdego dokumentu, jak silny model jest potrzebny. Tabela pod selektorem pokazuje:
+**Model AI:** Ustawia model organizacji na potrzeby wyodrębniania pól i tabel. W menu dostępne są Full, Fast, Nexus, Nexus Flash, Auto i Auto Nexus. Sprawdź dostępność, jakość, czas realizacji i koszt na podstawie reprezentatywnych dokumentów. Poziom nie zawsze jest najdokładniejszy i najszybszy w przypadku każdego dokumentu. Zastąpienia szablonu mogą zastąpić ustawienia organizacji. Tabela pod selektorem pokazuje:
 
 * Którzy **dostawcy** używają którego modelu AI
 * Czy używają ekstrakcji strukturalnej (AI) i E-Textu
@@ -101,11 +118,11 @@ To ustawienie jest szczegółowo opisane [tutaj](ai-model.md).
 
 ### Dlaczego tabela wygląda inaczej u każdego dostawcy?
 
-Wszystko, czego DocBits uczy się o tabeli, jest zapisywane **dla każdego dostawcy osobno**:
+Przetwarzanie tabeli zależy od zapisanych reguł i ustawień w kontekście odpowiedniego dostawcy lub szablonu:
 
 * **Zapisane reguły** (szkolenie tabeli): położenie tabeli i mapowanie jej kolumn w układzie tego dostawcy.
 * **Tagi tabeli AI i reguły formatowania**: wskazówki zapisane przez użytkownika dla tabeli AI tego dostawcy.
-* **Model AI specyficzny dla dostawcy**: poziom wybrany dla tego dostawcy w *Więcej ustawień* na ekranie walidacji.
+* **Model AI specyficzny dla szablonu:** Wybór dokonany na ekranie walidacji jest zapisywany dla każdej organizacji i bieżącego szablonu wyodrębniania. Nie zmienia automatycznie każdego szablonu tego samego dostawcy. Bez zastąpienia używane jest odpowiednie ustawienie organizacji.
 
 Dlatego dostawca A z zapisanymi regułami pokazuje deterministyczną tabelę w zakładce *Extracted table* na ekranie walidacji, a dostawca B bez reguł otrzymuje zakładkę *AI Extracted table*. Aby dostawca B zachowywał się jak A, wytrenuj raz tabelę dostawcy B. Aby zresetować dostawcę, usuń jego reguły na ekranie walidacji albo zresetuj jego dane szkoleniowe w tabeli Model AI.
 
@@ -134,7 +151,7 @@ Uwagi:
 * Nieustawiony `AI_MODEL` oznacza **Fast**.
 * Nieustawiony `TABLE_EXTRACTION_VISION_MODE` jest wyznaczany ze starszego przełącznika `TABLE_EXTRACTION_USE_VISION`: `true` daje `vision`, każda inna wartość daje `off`.
 * Zmiana klucza obowiązuje dla dokumentów przetwarzanych później. Uruchom dokument ponownie, aby wyodrębnić go ponownie z nowym ustawieniem.
-* Wybory dla poszczególnych dostawców (E-Text, model AI, zapisane reguły) nie są preferencjami organizacji; ustawia się je na ekranie walidacji w *Więcej ustawień* dla dokumentu tego dostawcy.
+* Zastąpienia szablonów różnią się od preferencji organizacji. Przewodnik po modelu AI wyjaśnia dokładny zakres.
 
 ## Dokument elektroniczny
 

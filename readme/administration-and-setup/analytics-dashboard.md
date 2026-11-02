@@ -103,6 +103,16 @@ Analizuj dowolny okres od **7 dni** do **pełnego roku** lub ustaw **niestandard
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_filter_time_range-pl.png" alt="Wybór niestandardowego okresu w filtrach analizy. Etykieta Zwyczaj oznacza tutaj okres niestandardowy."><figcaption><p>Wybór niestandardowego okresu w filtrach analizy. Etykieta Zwyczaj oznacza tutaj okres niestandardowy.</p></figcaption></figure>
 
+### Filtry są zapamiętywane
+
+Panel zapisuje filtry i zakres czasu w tej przeglądarce, osobno dla każdego użytkownika i każdej organizacji. Po ponownym otwarciu panelu ostatni wybór zostaje przywrócony, także niestandardowy zakres dat w selektorze dat.
+
+Wybierz **Przywróć ustawienia domyślne** w prawym górnym rogu panelu, aby usunąć zapisany wybór: filtry, zakres czasu i niestandardowe daty wracają do wartości domyślnych.
+
+<mark style="color:red;">**Uwaga**</mark>: wybór jest przechowywany w przeglądarce, a nie na serwerze. Nie jest synchronizowany z innymi urządzeniami ani przeglądarkami.
+
+<figure><img src="../.gitbook/assets/core569-analytics-reset-filters-pl.png" alt="Panel Analytics w widoku Status, z wierszem filtrów i przyciskiem Przywróć ustawienia domyślne w prawym górnym rogu"><figcaption><p>Filtry są przywracane po powrocie do panelu. Przywróć ustawienia domyślne je usuwa.</p></figcaption></figure>
+
 ## Karty kroków przepływu
 
 Każda karta reprezentuje krok przepływu na podstawie wybranego **Typu przepływu**. Karty dostosowują się do Twojego wyboru — pokazując etapy cyklu życia dla *Status*, moduły przetwarzania dla *Przetwarzanie* lub punkty kontaktu z użytkownikiem dla *Interakcja użytkownika*.

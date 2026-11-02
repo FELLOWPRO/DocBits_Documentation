@@ -1,5 +1,12 @@
 # Wiadomości e-mail przychodzące
 
+## Od przychodzącej wiadomości e-mail po dokument gotowy do weryfikacji
+
+<figure><picture><source srcset="../../../../.gitbook/assets/intro-process-01-email-pl-dark-20261029.png" media="(prefers-color-scheme: dark)"><img src="../../../../.gitbook/assets/intro-process-01-email-pl-light-20261029.png" alt="Od przychodzącej wiadomości e-mail po dokument gotowy do weryfikacji"></picture><figcaption><p>Od przychodzącej wiadomości e-mail po dokument gotowy do weryfikacji</p></figcaption></figure>
+
+Ilustracja przedstawia dwa sposoby wejścia: do podłączonej skrzynki pocztowej i przekazania na adres importowy DocBits. Obsługiwane załączniki dokumentów są importowane. Sprawdź ograniczenia nadawcy, organizację i routing, a następnie zweryfikuj rzeczywisty import. Wysłanie wiadomości e-mail nie oznacza, że jej dokumenty zostały pomyślnie zaimportowane.
+
+
 ### Przegląd
 
 DocBits może pobierać dokumenty bezpośrednio z poczty e-mail — bez ręcznego przesyłania. Istnieją **dwa sposoby** wprowadzania dokumentów z e-maili, oba w **Ustawienia → Przetwarzanie dokumentów → Import**:

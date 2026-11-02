@@ -1,0 +1,45 @@
+WEBVTT
+
+formats_01
+00:00:00.250 --> 00:00:06.810
+India GST E-Invoice and GST CreditNote
+have separate entries. The documented
+
+formats_02
+00:00:06.810 --> 00:00:14.635
+adapter processes SignedInvoice XML. Do
+not assume that raw IRP JSON, a QR image
+
+formats_03
+00:00:14.635 --> 00:00:18.000
+or a PDF scan follows the same extraction
+path.
+
+workflow_01
+00:00:18.750 --> 00:00:23.243
+Open E-Doc for the detected format.
+Compare Transformation, Preview and
+
+workflow_02
+00:00:23.243 --> 00:00:28.305
+Extraction Paths. Custom rules take
+precedence. Saving a draft does not
+
+workflow_03
+00:00:28.305 --> 00:00:29.333
+activate it.
+
+accept_01
+00:00:30.083 --> 00:00:34.843
+Test an invoice and a credit note where
+applicable. Verify amounts, parties and
+
+accept_02
+00:00:34.843 --> 00:00:39.847
+the exported document type. Parsing does
+not prove tax clearance or network
+
+accept_03
+00:00:39.847 --> 00:00:40.800
+delivery.
+

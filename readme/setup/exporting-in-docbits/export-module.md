@@ -36,3 +36,14 @@ You are given three options
 * Edit: Make changes to the details of the configuration.
 * Delete: Delete the configuration.
 
+### Activate on the edit screen
+
+An existing configuration also has an **Active** switch in the footer of its edit screen, next to **Save**.
+
+1. Open the configuration with **Edit**.
+2. Set the **Active** switch to the state you want and select **Save**.
+
+DocBits then activates or deactivates the configuration with the same checked call the list uses: if another configuration for the same document type is already active, activating is rejected. Saving the form no longer changes the stored active state on its own, and the footer switch and a watcher's **Enabled** control always show the same state.
+
+<figure><img src="../../.gitbook/assets/core2163-export-edit-active-toggle.png" alt="Export configuration edit screen with the Active switch in the footer between Cancel and Save"><figcaption><p>The Active switch next to Save on the export configuration edit screen.</p></figcaption></figure>
+

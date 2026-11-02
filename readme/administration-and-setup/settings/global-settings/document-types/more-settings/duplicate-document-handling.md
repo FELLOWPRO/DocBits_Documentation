@@ -1,65 +1,31 @@
 # Duplicate Detection
 
-## Overview
+Use **Duplicate Detection** to flag documents that match another document on selected fields within a chosen time period. The options belong to each document type.
 
-In **DocBits**, you can filter for duplicate documents by specifying which fields must match and by defining a time interval during which duplicates should be detected.
+## Open the settings
 
-This page provides a detailed guide on how to enable and use the **Duplicate Detection** feature effectively.
+1. Open **Settings → Document Types**.
+2. On the document type you want to configure, select **Settings**.
+3. In **More Settings**, open **Duplicate Detection**.
 
-## Enabling Duplicate Detection
+<figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-settings-off-en.png" alt="Invoice More Settings with the Duplicate Detection section open and the detection options switched off"><figcaption><p>The Invoice settings show four separate switches. The field and interval selectors appear when detection is enabled.</p></figcaption></figure>
 
-To enable duplicate document detection in **DocBits**, follow these steps:
+## Choose what counts as a duplicate
 
-1.  Navigate to **Settings** → **Global Settings** → **Document Types**.
+1. Turn on **Duplicate Document Detection**. The **Duplicate Detection Fields** and **Duplicate Detection Interval** selectors appear.
+2. Select the fields that must match. For an invoice, you might choose **Supplier ID** and **Invoice number**. Choose fields that distinguish documents in your own process.
+3. Choose an interval: **1 Month**, **3 Months (Recommended)**, **6 Months**, or **1 Year**. A longer interval checks a wider date range and may take longer to load.
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
-2.  Select the desired **Document Type** and click on **More Settings**.
+Each change is saved when you make it; there is no separate Save button in this section. If you switch detection off, the field and interval selectors are hidden.
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
-3.  Go to the **Duplicate Detection** section.
+<figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-settings-on-en.png" alt="Duplicate Document Detection enabled, showing fields and interval selectors"><figcaption><p>Enable detection before selecting the comparison fields and time interval.</p></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc156-duplicate-interval-options-en.png" alt="Duplicate Detection Interval menu with one month, three months, six months, and one year"><figcaption><p>Three months is marked as the recommended interval in the menu.</p></figcaption></figure>
 
-DocBits provides two options for identifying duplicate documents:
+For **Invoice**, this section also offers **Duplicate Invoice Detection**, **Block Duplicate Document Export**, and **Ignore Tax Free Line**. These are separate switches; enable only the behavior your invoice process needs. The extra switches are not shown for other document types.
 
-1. **Duplicate Document Detection**: \
-   This feature checks for duplicate documents uploaded to **DocBits** based on the selected criteria. If any document matches the selected criteria across other documents, it will be flagged as a duplicate.
-2.  **Duplicate Invoice Detection** (Only available for the **Invoice** document type):\
-    This feature requires syncing Supplier Invoices from Infor to DocBits. It compares the invoice numbers in the DocBits dashboard with those in Infor. If the same invoice number appears more than once, it will be flagged as a duplicate.
+## Review a flagged document
 
-    <mark style="color:red;">**Note**</mark>: Using the **Duplicate Invoice Detection** feature will result in an additional credit charge.
+When DocBits finds a match, the document's row on the **Dashboard** shows a duplicate icon. Select the icon to compare the matching records in the side panel. The icon appears only when a match exists.
 
-## Filter which documents should be detected as duplicate
-
-Once **Duplicate Detection** is enabled, two dropdown menus will be available for configuration:
-
-*   **Duplicate Detection Fields**\
-    Select the fields that should be used to identify duplicates (e.g., Supplier ID, Date, Invoice Number, etc.). Documents matching these fields will be flagged as duplicates.
-
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_4.png" alt=""><figcaption></figcaption></figure>
-*   **Duplicate Detection Interval**
-
-    Use this setting to define the time range within which duplicates are detected. Documents uploaded within the selected interval will be compared against each other based on the selected fields.
-
-    **Available options:**
-
-    * 1 Month
-    * 3 Months (Recommended)
-    * 6 Months
-    * 1 Year
-
-    <mark style="color:red;">**Note**</mark>: A 3-month interval is recommended to ensure optimal performance. Selecting a longer interval may lead to slower dashboard loading times.
-
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_6.png" alt=""><figcaption></figcaption></figure>
-
-## Viewing Duplicate Documents on the Dashboard
-
-Once **Duplicate Detection** is enabled, any documents identified as duplicates will display a duplicate indicator icon on the dashboard.
-
-*   Click this icon to open the matching records in a side-by-side split-screen view for easy comparison.\
-    <mark style="color:red;">**Note**</mark>: The icon will only appear if at least one duplicate has been detected for the document.
-
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_7.png" alt=""><figcaption></figcaption></figure>
-*   When viewing a flagged document, a warning bar will appear at the top, indicating that the document is a duplicate.
-
-    <figure><img src="../../../../../.gitbook/assets/DuplicateDocument_5.png" alt=""><figcaption></figcaption></figure>
+When you open a flagged document, the duplicate warning offers **View Duplicate**, **Proceed Anyway**, and, if the document has not already been archived, **Archive**. Review the matching records before choosing an action. See [the Dashboard guide](../../dashboard/README.md) for the document list.

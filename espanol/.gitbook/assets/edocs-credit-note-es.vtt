@@ -1,0 +1,107 @@
+WEBVTT
+
+symptom_01
+00:00:00.250 --> 00:00:07.448
+Una nota de crédito electrónica aparece
+como Invoice. Consulte el XML original. El
+
+symptom_02
+00:00:07.448 --> 00:00:12.267
+código de tipo 381 identifica una nota de
+crédito.
+
+codes_01
+00:00:13.017 --> 00:00:19.913
+Las reglas predeterminadas de FACTURX y
+ZUGFeRD también reconocen el código 261.
+
+codes_02
+00:00:19.913 --> 00:00:28.656
+Los códigos 383 y 384 significan nota de
+débito y factura rectificada. No los
+
+codes_03
+00:00:28.656 --> 00:00:30.967
+clasifique como notas de crédito.
+
+source_01
+00:00:31.717 --> 00:00:36.814
+Abra E-Doc para el formato detectado. Una
+transformación personalizada de la
+
+source_02
+00:00:36.814 --> 00:00:41.481
+organización tiene prioridad sobre la
+predeterminada. Compruebe la versión
+
+source_03
+00:00:41.481 --> 00:00:42.367
+activa.
+
+transform_01
+00:00:43.117 --> 00:00:50.234
+Para FACTURX, busque INVOICE_TYPE. El
+valor constante Invoice puede descartar el
+
+transform_02
+00:00:50.234 --> 00:00:55.273
+código original de nota de crédito.
+Compare la transformación personalizada
+
+transform_03
+00:00:55.273 --> 00:00:56.967
+con la predeterminada.
+
+paths_01
+00:00:57.717 --> 00:01:04.973
+Pruebe el XML transformado. Compruebe que
+Extraction Paths lee invoice_type del nodo
+
+paths_02
+00:01:04.973 --> 00:01:10.533
+correcto para este formato. Revise los
+scripts posteriores y el valor almacenado.
+
+activate_01
+00:01:11.283 --> 00:01:18.110
+Cree un borrador. Guardarlo no lo activa.
+Pruebe facturas y notas de crédito
+
+activate_02
+00:01:18.110 --> 00:01:23.984
+representativas. Active el borrador con la
+marca de verificación solo tras superar
+
+activate_03
+00:01:23.984 --> 00:01:25.533
+las comprobaciones.
+
+safety_01
+00:01:26.283 --> 00:01:31.473
+Verifique un documento nuevo, incluidos
+los importes y la exportación. Conserve
+
+safety_02
+00:01:31.473 --> 00:01:37.057
+las asignaciones personalizadas. Antes de
+reiniciar un documento antiguo, compruebe
+
+safety_03
+00:01:37.057 --> 00:01:41.933
+las aprobaciones, las exportaciones y las
+modificaciones manuales.
+
+sign_01
+00:01:42.683 --> 00:01:47.513
+La opción de signo negativo está activada
+de forma predeterminada, pero puede
+
+sign_02
+00:01:47.513 --> 00:01:52.958
+desactivarse. Confirme la clasificación y
+la convención de signos que espera Infor
+
+sign_03
+00:01:52.958 --> 00:01:56.267
+ERP o SAP.
+

@@ -1,0 +1,168 @@
+{
+  "review_date": "2026-10-18",
+  "languages": {
+    "en": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "de": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "es": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "fr": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "it": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "nl": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "pl": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "pt": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    },
+    "zh": {
+      "country_guides": 39,
+      "international_guides": 1,
+      "overview_rows": 40,
+      "country_order": "passed",
+      "version_tokens": "passed",
+      "catalogue_status": "passed",
+      "navigation_titles": "passed",
+      "country_matrices_and_sections": 40,
+      "changed_page_links": "passed",
+      "duplicate_matrix_removed": true
+    }
+  },
+  "total_country_pages_checked": 360,
+  "published_before": {
+    "en": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# Supported Electronic Documents"
+    },
+    "de": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# Unterstützte elektronische Dokumente"
+    },
+    "es": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# Documentos electrónicos compatibles"
+    },
+    "fr": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# Documents électroniques pris en charge"
+    },
+    "it": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# Documenti elettronici supportati"
+    },
+    "nl": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# Ondersteunde elektronische documenten"
+    },
+    "pl": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# Obsługiwane dokumenty elektroniczne"
+    },
+    "pt": {
+      "table_rows": 180,
+      "missing_reference_links": [
+        "brazil-cte",
+        "brazil-nfce",
+        "brazil-nfse",
+        "china-fapiao"
+      ],
+      "old_title": "# Documentos eletrônicos suportados"
+    },
+    "zh": {
+      "table_rows": 186,
+      "missing_reference_links": [],
+      "old_title": "# 支持的电子文档"
+    }
+  },
+  "scope": "Documentation parity and links; published content remains unchanged until merge. Existing missing films remain pending.",
+  "result": "passed"
+}

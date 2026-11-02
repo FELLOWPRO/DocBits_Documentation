@@ -1,21 +1,22 @@
 # Fulltext Search Settings
 
-<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Fulltext Search Settings"><figcaption><p>Fulltext Search Settings — Module Required Dialog</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Fulltext Search Settings in the sandbox, with a dialog explaining that the module is required and buttons for Go to Modules and Enable Now"><figcaption><p>When Fulltext Search is disabled, this dialog explains the next steps.</p></figcaption></figure>
 
-Fulltext Search Settings configures what DocBits indexes and how it makes that content searchable across documents, ERP master data, and templates. The settings page only opens when the **Fulltext Search module** is enabled — see [Fulltext Search](../document-processing/module/fulltext-search.md) for the user-facing query language.
+Fulltext Search Settings configures what DocBits indexes and how it makes that content searchable across documents, ERP master data, and templates. The settings page displays a requirement dialog until the **Fulltext Search module** is enabled — see [Fulltext Search](../document-processing/module/fulltext-search.md) for the user-facing query language.
 
 ## Prerequisites
 
-The Fulltext Search module must be activated in **Settings → Document Processing → Module → Dashboards → Full text search**. If the module is not enabled, a dialog prompts you to either:
+The Fulltext Search module must be activated in **Settings → Module → Dashboards & Analytics → Full text search**. If the module is not enabled, the dialog offers three actions:
 
-* **Go to Modules** — Navigate to the Module settings page to review the configuration.
-* **Enable Now** — Activate the Fulltext Search module directly (starts a DocSearch subscription).
+* **Help (?)** — Open the Fulltext Search documentation in a new tab before changing any setting.
+* **Go to Modules** — Open the Dashboards & Analytics module settings to review the configuration.
+* **Enable Now** — Open the subscription dialog. Review and confirm that dialog before the module is enabled; clicking this button alone does not enable it.
 
 The settings page itself becomes available once the module is active.
 
 ## Page layout
 
-The settings page is organised into three tabs, each scoping a different content type that Fulltext Search can index.
+The settings page is organised into three tabs: **Documents**, **ERP** and **Templates**. Each tab scopes a different content type that Fulltext Search can index. The pipeline picture is no longer a tab here — select **View search pipeline** at the top of the page to open it on the Infrastructure page.
 
 ### Documents tab
 
@@ -27,6 +28,12 @@ The Documents tab covers everything related to indexing processed documents:
 * **Sync diagnostics** — on-demand diagnostics for cases when the index appears out of sync with the underlying document store.
 
 <mark>Reindexing is non-destructive — existing search continues to work while the new index is being rebuilt.</mark>
+
+### View the search pipeline
+
+The read-only picture of how document data reaches the search index now lives on the Infrastructure page. Select **View search pipeline** at the top of Fulltext Search Settings to open **Settings → Infrastructure → Search index**.
+
+It does not change any setting; use it to check where the data comes from, which region each component runs in, and how far indexing has progressed — including whether the **vector** phase is filling or shows **off**. See [Infrastructure](../infrastructure.md).
 
 ### ERP tab
 

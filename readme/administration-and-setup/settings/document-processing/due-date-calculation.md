@@ -1,8 +1,10 @@
 # Due Date Calculation
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_overview.png" alt="Due Date Calculation settings"><figcaption><p>Due Date Calculation settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-due-date-calculation-en.png" alt="Due Date Calculation settings"><figcaption><p>Due Date Calculation settings</p></figcaption></figure>
 
 The **Due Date Calculation** page (**Document Processing → Due Date Calculation**) controls how DocBits computes invoice due dates, discount (Skonto) due dates and payment terms from the payment-term codes found on invoices.
+
+The **Invoice Due Date Calculation** card holds the general settings. Use **Save** in its header to store changes to these settings. Further down the page are the discount and payment-term mapping tables and a reference of the supported formats.
 
 ## Show Calculated Fields
 
@@ -12,9 +14,7 @@ Enable **Show Calculated Fields** to make the auto-calculated invoice fields —
 
 ### Weekend Handling
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_weekend_options.png" alt="Weekend convention options"><figcaption><p>Weekend convention options</p></figcaption></figure>
-
-Choose how a due date that lands on a Saturday or Sunday is adjusted. This applies to **both** the invoice due date and the discount (Skonto) due date.
+Choose the **Weekend convention** to control how a due date that lands on a Saturday or Sunday is adjusted. This applies to **both** the invoice due date and the discount (Skonto) due date.
 
 | Convention             | Effect                                                                    |
 | ---------------------- | ------------------------------------------------------------------------- |
@@ -30,13 +30,19 @@ Map vendor payment terms to AP assignment codes for automated invoice routing by
 
 ## Discount Term Overwrites
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Discount term overwrites"><figcaption><p>Discount term overwrites</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-discount-term-overwrites-en.png" alt="Discount Term Overwrites"><figcaption><p>Discount Term Overwrites</p></figcaption></figure>
 
-Use **Discount Term Overwrites** to map a specific prefix to a discount percentage and a number of days. Click **+ Add Mapping** to add a row with **Prefix**, **Percentage** and **Days**.
+Use **Discount Term Overwrites** to map a specific prefix to a discount percentage and a number of days. Click **Add Mapping** to add a row with **Prefix**, **Percentage** and **Days**. To change or remove an existing mapping, open its row menu (⋮) and choose **Edit** or **Delete**.
+
+## Payment Term Overwrites
+
+<figure><img src="../../../.gitbook/assets/core6846-payment-term-overwrites-en.png" alt="Payment Term Overwrites"><figcaption><p>Payment Term Overwrites</p></figcaption></figure>
+
+Use **Payment Term Overwrites** to map a payment-term code to a term type, a number of days and a description. Click **Add Mapping** to add a row with **Code**, **Term Type**, **Days** and **Description**, and use the row menu (⋮) to **Edit** or **Delete** a mapping.
 
 ## Supported formats
 
-<figure><img src="../../../.gitbook/assets/due_date_calc_formats.png" alt="Supported payment-term and discount formats"><figcaption><p>Supported payment-term and discount formats</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/core6846-supported-formats-en.png" alt="Supported payment-term and discount formats"><figcaption><p>Supported payment-term and discount formats</p></figcaption></figure>
 
 DocBits recognises the following payment-term and discount-term codes.
 

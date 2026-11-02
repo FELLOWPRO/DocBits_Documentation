@@ -2,15 +2,15 @@
 
 [Back to the full practice overview](complete-practical-guide.md)
 
-Header field · Target Result · Source Original text · Trim → Uppercase → Prefix INV-.
+Choose a scope, read from a source field, and write the transformed value into a target field. This example uses **Trim → UPPERCASE**.
 
 ## Procedure in the Editor
 
 1. In the isolated training document type, create a new rule for a **header field**. Select `output` as the target and `header.input` as the separate source; the actual field names in your organization may differ.
 2. Add the steps **Trim**, side both, character empty, and then **Change case**, mode upper. The order must be Trim → Uppercase.
 3. Enter the test value `  inv-4711  `. The last preview value must read `INV-4711`; the intermediate values first show `inv-4711`.
-4. Activate the rule exclusively for the training scope and save. Reopen the entry and check source, target, and both steps.
-5. Save the training document, reload it, and check both fields: The source still contains the original spaces; the output reads `INV-4711`. Save again and repeat the same check.
+4. Save and reopen the rule to check its source, target, conditions, and both steps. The video keeps the configuration example inactive. To test a document, enable only your own rule in an isolated training scope.
+5. With that isolated test rule enabled, save the training document, reload it, and check both fields: The source still contains the original spaces; the output reads `INV-4711`. Save again and repeat the same check.
 
 <figure><img src="../../../../../.gitbook/assets/transformation-series-01-steps-en-20261028.png" alt="Step configuration"><figcaption><p>Step configuration. Actual interface in English (United States). The preview does not change stored documents.</p></figcaption></figure>
 
@@ -18,11 +18,11 @@ Header field · Target Result · Source Original text · Trim → Uppercase → 
 
 ## 1. Scope
 
-A transformation modifies already extracted data. It does not replace text recognition. In the editor, I first select the scope. A header field is processed once per document. A table column is processed for each row. Table rules change entire line items. Routing assigns the document to a suborganization. These four tasks have different targets and different steps. I create my examples in a separate test document type so that no productive invoices are changed.
+A transformation modifies already extracted data. It does not replace text recognition. In the editor, I first select the scope. A header-field rule changes one value in the document. It can run again on later processing or saves unless one-time execution applies. A table column is processed for each row. Table rules change entire line items. Routing assigns the document to a suborganization. These four tasks have different targets and different steps. I create my examples in a separate test document type so that no productive invoices are changed.
 
 ## 2. Source and Processing
 
-Then I select the target field. The source can be this field itself or another field. The steps run from top to bottom. Each intermediate value becomes the input for the next step. My example reads an invoice number, removes outer spaces, and writes uppercase letters. A lowercase letter becomes an uppercase one. With a condition, I limit the rule to the matching vendor. For a table column, the condition can also check values of the current row. Multiple conditions can be combined with And, Or, and groups.
+Then I select the target field. The source can be this field itself or another field. The steps run from top to bottom. Each intermediate value becomes the input for the next step. The video reads a reference from the separate training field `header.input`, trims outer spaces, and writes uppercase letters into `output`. A lowercase letter becomes an uppercase one. The video uses **Only when…** with `header.input` containing `po-` and case-insensitive matching. The rule runs for `  po-4711  ` and `PO-4711`, while `BOX` is skipped. For a table column, the condition can also check values of the current row. Multiple conditions can be combined with And, Or, and groups.
 
 ## 3. Verify Effect
 
@@ -46,8 +46,10 @@ Check a matching case, a counter-case, an empty value, and an already processed 
 
 ## Video tutorial
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v1/en.mp4" %}
+The corrected English walkthrough shows all four scopes, source and target selection, ordered steps, conditions, and three preview cases. Its reference example uses `po-4711`; the earlier document screenshots above use `inv-4711`. Both demonstrate the same Trim → UPPERCASE pipeline.
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v2/en.mp4" %}
 Configuration, worked examples and counterexamples.
 {% endembed %}
 
-[Open the video with English captions and chapters](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v1/en.html). This review version is awaiting the subject-matter and complete listening review.
+[Open the video with English captions and chapters](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules-01-foundations-preview-admin/v2/en.html). This review version is awaiting the subject-matter and complete listening review.

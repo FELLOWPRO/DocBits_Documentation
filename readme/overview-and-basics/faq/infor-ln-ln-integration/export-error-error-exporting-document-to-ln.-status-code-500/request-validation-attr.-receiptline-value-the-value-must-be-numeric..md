@@ -49,7 +49,7 @@
 
 文件应如下所示：
 
-<figure><img src="../../../../.gitbook/assets/image (117).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (117).png" alt="LN映射文件，其中字段IRF_ReceiptLine设置为TF_delivery_line，并将ReceiptLine添加到InvoiceReceiptFields" width="563"><figcaption></figcaption></figure>
 
 ## **步骤 4：将更新后的文件添加回 DocBits**
 

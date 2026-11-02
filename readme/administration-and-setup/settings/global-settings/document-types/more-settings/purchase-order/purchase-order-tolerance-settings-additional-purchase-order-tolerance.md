@@ -30,7 +30,7 @@
      * **Percent：**表示按百分比设置容差。
      * **Value：**表示按固定金额设置容差，规定数值可产生的差异。
 
-<figure><img src="../../../../../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (407).png" alt="Purchase Order 部分的设置页面，包含 PO Tolerance Setting 选项"><figcaption></figcaption></figure>
 
 ### **示例场景：**
 
@@ -45,7 +45,7 @@
   * 行项目 1**不会被标记**为不匹配，因为 $4.80 与 $5.00 的差异在 5% 以内。
   * 行项目 2**会被标记**为不匹配，因为 $2.20 与 $2.00 的差异超过了允许的 5% 范围。此时，用户需要采取措施解决不匹配问题，然后才能继续处理发票。
 
-<figure><img src="../../../../../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (408).png" alt="PO Tolerance 表格，包含 UNIT、PO: QUANTITY、INVOICE: QUANTITY、PO: UNITPRICE 和 INVOICE: UNIT PRICE 列"><figcaption></figcaption></figure>
 
 ## 配置其他采购订单容差设置的设置 <a id="setting-to-configure-additional-purchase-order-tolerance-settings"></a>
 
@@ -68,4 +68,4 @@
      * **Percent：**按百分比定义容差。
      * **Value：**按固定金额定义容差。
 
-<figure><img src="../../../../../../.gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (409).png" alt="Freight Tolerance % 和 Additional PO Tolerance Setting 的设置字段，包含百分比值和一个开关"><figcaption></figcaption></figure>

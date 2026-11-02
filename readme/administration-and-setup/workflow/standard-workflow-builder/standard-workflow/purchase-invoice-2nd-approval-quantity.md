@@ -1,6 +1,6 @@
 # 采购发票 - 第二次审批数量
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.56.54.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.56.54.png" alt="工作流设置为Document type为Invoice、Pending Second Approval、子类型Purchase Invoice、数量Not Equals比较条件，并分配Buyer Name"><figcaption></figcaption></figure>
 
 此标题表示该规则专门用于处理处于第二次审批阶段的采购发票，重点是验证所列数量是否准确。
 

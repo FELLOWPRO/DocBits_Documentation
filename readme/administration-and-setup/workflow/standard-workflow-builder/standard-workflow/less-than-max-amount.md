@@ -1,6 +1,6 @@
 # 低于最高金额
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55.png" alt="工作流，Document type 为 Invoice，条件为 Total Amount Less Or Equals Approver Max Amount，并从 Approver Name 分配用户"><figcaption></figcaption></figure>
 
 此标题表明，所设置的规则或条件用于处理总金额小于或等于指定最高金额的发票。
 

@@ -8,7 +8,7 @@
 * 选择要复制的子类型，点击“Copy”，并根据需要为复制的子类型输入新名称。
 * 确认操作后，系统将复制所选子类型及其所有现有设置、字段、布局和脚本。
 
-<figure><img src="../../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (194).png" alt="Clone Sub Document Type 对话框，Duplicate From 为 KOSTENRECHNUNG_copy，并带有 CANCEL 按钮"><figcaption></figcaption></figure>
 
 ## 删除子类型：
 

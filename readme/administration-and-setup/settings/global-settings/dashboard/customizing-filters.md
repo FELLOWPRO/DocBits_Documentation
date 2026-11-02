@@ -2,7 +2,7 @@
 
 如果您要查找一份或多份特定文档，可以使用以下选项。我们在搜索栏中提供了多种工具，帮助您找到所需的文档。要使用这些工具，请选择以下图标。
 
-<figure><img src="../../../../.gitbook/assets/customizing_filters_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/customizing_filters_1.png" alt="DocBits仪表板，包含All documents搜索栏以及Upload旁边的过滤图标"><figcaption></figcaption></figure>
 
 使用筛选器可以帮助用户快速找到相关信息，并将数据范围缩小到必要内容。
 
@@ -16,7 +16,7 @@
 
 * 点击筛选器图标或搜索字段。
 
-<figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (300).png" alt="筛选菜单，包含Document Type、Status、Assigned To、Start date和End date字段"><figcaption></figcaption></figure>
 
 ### 自定义筛选器
 
@@ -34,19 +34,19 @@
 
 * 选择要筛选的字段（例如：状态）。
 
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (301).png" alt="仪表板设置，Filters已打开，显示Status筛选器的Custom样式以及带有Apply的状态列表"><figcaption></figcaption></figure></div>
 
 * 定义筛选条件，例如：状态筛选器样式。
 
-<figure><img src="../../../../.gitbook/assets/customizing_filters_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/customizing_filters_5.png" alt="仪表板筛选设置中的状态筛选样式选项All、Static和Custom"><figcaption></figcaption></figure>
 
 * 下拉菜单：从预定义选项中选择。
 
-<figure><img src="../../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (302).png" alt="状态下拉列表，包含Ready for validation、Pending approval和Pending second approval等选项"><figcaption></figcaption></figure>
 
 * 点击“Apply”（应用）以保存自定义筛选器。
 
-<figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (303).png" alt="用于在仪表板设置中保存自定义状态筛选的Apply按钮"><figcaption></figcaption></figure>
 
 #### **使用组合筛选器**
 
@@ -66,7 +66,7 @@
 * 打开筛选器菜单。
 * 步骤 2：点击“Clear Filters”（清除筛选器）、已选筛选器旁的 X 图标（位于筛选器菜单或筛选器栏下方），以清除或移除已应用的筛选器。
 
-<figure><img src="../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (309).png" alt="仪表板筛选菜单中的Clear Filters按钮"><figcaption></figcaption></figure>
 
 
 

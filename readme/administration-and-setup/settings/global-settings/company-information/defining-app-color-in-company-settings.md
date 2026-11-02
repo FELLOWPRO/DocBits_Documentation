@@ -4,7 +4,7 @@
 
 **App Color** 设置允许管理员定义应用程序界面的配色方案。此功能尤其适用于区分测试、沙盒和生产等不同环境。为每个环境分配不同的颜色后，用户可以轻松识别当前所处的环境，从而降低在错误环境中执行关键操作的风险。
 
-<figure><img src="../../../../.gitbook/assets/AppColor.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/AppColor.png" alt="Company Information 设置页面，App-Color 区域中的 App-Color 字段设置为 #faa5d2"><figcaption></figcaption></figure>
 
 ## 访问 App Color 设置
 

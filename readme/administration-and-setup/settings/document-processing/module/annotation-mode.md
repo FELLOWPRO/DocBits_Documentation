@@ -8,7 +8,7 @@
 
 此设置位于：**设置 → 文档处理 → 模块 → 文档类型 → 注释模式**
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt="DocBits中的Document Type设置页面，模块列表中突出显示Annotation Mode开关"><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 DocBits 注释模式教程：在验证中添加备注，并下载带注释或不带注释的文档
@@ -21,7 +21,7 @@ DocBits 注释模式教程：在验证中添加备注，并下载带注释或不
 * 转到**验证界面**。
 * 点击右侧的**对话气泡**图标，进入注释模式。
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt="DocBits中的验证屏幕，右侧工具栏中的对话气泡图标用于激活批注模式"><figcaption></figcaption></figure></div>
 
 ### 2. 创建注释
 
@@ -30,7 +30,7 @@ DocBits 注释模式教程：在验证中添加备注，并下载带注释或不
 * 点击**文档**图标以保存注释。
 * 点击**垃圾桶**图标以删除注释。
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt="验证界面，其中显示一个PDF和标注Here is a annotation，以及画笔、保存和删除图标"><figcaption></figcaption></figure></div>
 
 *   使用以下选项自定义文本：
 
@@ -40,7 +40,7 @@ DocBits 注释模式教程：在验证中添加备注，并下载带注释或不
     * <mark style="color:purple;">**颜色**</mark>
     * **字体选择**
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt=""><figcaption></figcaption></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt="创建/编辑标注对话框，其中字体为Helvetica、大小12、粗体、斜体，包含Text-Color和Annotation-Text字段"><figcaption></figcaption></div>
 
 ### 3. 管理注释
 
@@ -50,7 +50,7 @@ DocBits 注释模式教程：在验证中添加备注，并下载带注释或不
 * 将文档导出到 **IDM** 时，**注释会一并包含在内**。
 * 如果文档包含注释，**对话气泡图标**上会显示一个小型**感叹号**，提示其中有注释。
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt="验证界面右侧工具栏，其中显示带感叹号的对话气泡图标，表示已存在标注"><figcaption></figcaption></figure>
 
 *
 
@@ -65,6 +65,6 @@ DocBits 注释模式教程：在验证中添加备注，并下载带注释或不
   * **下载带注释的文档**
   * **下载不带注释的文档**
 
-<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt="DocBits中仪表板操作菜单展开，显示Download、Download annotated PDF、Document Logs和Workflow Logs选项"><figcaption></figcaption></figure>
 
 启用并使用注释模式后，用户可以直接在 PDF 上高效地添加、编辑和管理注释，从而提升文档协作与审阅效率。

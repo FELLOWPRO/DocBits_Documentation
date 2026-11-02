@@ -20,7 +20,7 @@
 对所有必需字段重复此操作。\
 填充完所有必要字段后，**点击“Save Rules”（保存规则）**以保存训练结果。这样，DocBits 就能学会如何在今后类似的文档中查找每项信息。
 
-<div align="left"><figure><img src="../../../.gitbook/assets/header_field_training_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/header_field_training_2.png" alt="Apple_invoice.pdf的表头字段训练，文档中高亮了Company Name、Company Street和Company PLZ" width="375"><figcaption></figcaption></figure></div>
 
 保存后，您的文档即可导出；下次 DocBits 将自动提取已训练的字段。
 

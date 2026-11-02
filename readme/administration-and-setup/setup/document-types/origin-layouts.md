@@ -24,7 +24,7 @@ DocBits 擅长根据文档的地理来源调整文档布局，同时根据用户
 * 自定义字段：通过添加或移除字段来调整布局。例如，在美国布局中添加“City Tax”（城市税）。
 * 应用并测试：完成自定义后，将布局应用于文档并进行测试，确保准确无误。
 
-<figure><img src="../../../.gitbook/assets/origin_layout_2.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/origin_layout_2.svg" alt="原始布局图，依次包含Selector、Customize、Apply Layout和Test Format步骤"><figcaption></figcaption></figure>
 
 ## **有效自定义的提示**
 

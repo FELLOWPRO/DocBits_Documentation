@@ -6,7 +6,7 @@
 
 \
 
-<figure><img src="../../../../.gitbook/assets/PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PO.png" alt="LN会话BOD Implementation Registration（bobod1100m000），显示BOD实现以及Public、Standard和Staging复选框"><figcaption></figcaption></figure>
 
 **如何识别需要验证的特定 BOD 实施？**
 

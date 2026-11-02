@@ -6,7 +6,7 @@
 
 将鼠标悬停在信息图标上，即可随时查看所用公式。
 
-<figure><img src="../../../.gitbook/assets/automatic_checks_1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/automatic_checks_1 (1).png" alt="验证界面，字段包含 Total net amount 77,91、Total amount 84,20 和 Currency EUR，并带有一个包含 Total net amount 列的 EXTRACTED TABLE"><figcaption></figcaption></figure>
 
 <mark style="color:red;">**注意：**</mark> 只有在相应字段已提取出值时，才会显示信息图标。
 

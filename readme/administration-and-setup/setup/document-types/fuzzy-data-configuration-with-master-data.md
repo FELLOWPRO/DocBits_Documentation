@@ -8,7 +8,7 @@
 
 设置 → 全局设置 → 文档类型 → 发票 → 字段 → 主数据设置 → 查找主数据
 
-<div align="center"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_1.png" alt="" width="454"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_1.png" alt="字段设置页面，其中的Master Data Settings部分显示Lookup Master Data和LOV Master Data" width="454"><figcaption></figcaption></figure></div>
 
 ### **默认查找组**
 
@@ -19,7 +19,7 @@
 3. **供应商**
 4. **税码**
 
-<figure><img src="../../../.gitbook/assets/fuzzy_data_config_2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fuzzy_data_config_2.png" alt="Lookup Master Data页面，列出Company Data、Purchase Order Header、Supplier、Taxcode和Test组并带有Default标签" width="563"><figcaption></figcaption></figure>
 
 每个组都包含特定字段。点击一个组即可将其**展开**并查看字段。默认查找组带有 **"Default" 标签**。
 
@@ -55,14 +55,14 @@
 
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_3.png" alt="Purchase Order Header的Lookup Master Data菜单已展开，显示Deactivate、Duplicate和View选项"><figcaption></figcaption></figure>
 
     * 这会复制现有组的所有信息和字段。
     * 你只需提供一个**新名称**。
 2. **从头创建查找配置**\
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_4.png" alt="Lookup Master Data页面，Company Data和Purchase Order Header分组已展开"><figcaption></figcaption></figure>
 
     * 点击 **"Create Lookup Configuration"**。
     * 填写所需详细信息：
@@ -83,7 +83,7 @@
 * 带有 **"Default" 标签**。\
 
 
-    <div align="left"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_5.png" alt="" width="251"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_5.png" alt="查找组字段行，其中字段Supplier带有Default标记和一个查看图标" width="251"><figcaption></figcaption></figure></div>
 * **只能查看**，不能编辑或删除。
 
 #### **非默认字段**
@@ -99,7 +99,7 @@
 1. 点击相关组中的 **"Create"**。\
 
 
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_6.png" alt="展开的Purchase Order Header组，包含Lookup Field、Validation Field、Parent Field、Searchable、Auto Trigger和Actions列"><figcaption></figcaption></figure>
 2. 提供以下详细信息：
    * **Lookup Field** → 主数据查找表中的列名。
    * **Validation Field** → 对应的 DocBits 字段。

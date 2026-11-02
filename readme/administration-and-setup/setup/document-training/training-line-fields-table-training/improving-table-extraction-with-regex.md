@@ -100,17 +100,17 @@
 1. 打开一份来自您要为其定义正则表达式的供应商的文档。
 2.  转到**Table Extraction**视图。\\
 
-    <figure><img src="../../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (420).png" alt="Table Extraction视图，在提取的发票行上方显示Position、Item Number、Purchase Order、Unit Price和Line的训练列标题"><figcaption></figcaption></figure>
 3. 启用**Training Mode**。
 4.  选择要优化的表头，然后选择**Regex**。\\
 
-    <figure><img src="../../../../.gitbook/assets/image (419).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (419).png" alt="训练模式下的Table Extraction视图，打开的列标题菜单显示Regex选项，并有列颜色代码图例"><figcaption></figcaption></figure>
 5.  此时会弹出窗口，您可以在其中输入并定义正则表达式。\\
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135020.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135020.jpg" alt="Manage regexes对话框，Regex字段包含模式\d+"><figcaption></figcaption></figure>
 6.  点击**Validate**检查正则表达式，然后点击**Save Changes**应用它。\\
 
-    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135153.jpg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250303135153.jpg" alt="Manage regexes对话框，输入了模式\d+，下方有Validate和Save Changes按钮"><figcaption></figcaption></figure>
 7. **保存规则并确认**以应用更改。
 
 ### 何时使用各项功能

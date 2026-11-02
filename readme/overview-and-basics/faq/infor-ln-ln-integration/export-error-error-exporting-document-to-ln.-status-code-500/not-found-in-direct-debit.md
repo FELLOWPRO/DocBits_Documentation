@@ -31,7 +31,7 @@
 
 文件应如下所示：
 
-<figure><img src="../../../../.gitbook/assets/image (390).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (390).png" alt="LN-Mapping文件，字段IRF_PackingSlip设置为TF_packing_slip，并将PackingSlip添加到InvoiceReceiptFields"><figcaption></figcaption></figure>
 
 ## **步骤 4：将更新后的文件添加回 DocBits**
 

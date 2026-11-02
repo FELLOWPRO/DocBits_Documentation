@@ -91,7 +91,7 @@
    * <mark style="color:red;">**注意**</mark>：必须启用工作流功能才能访问此选项。
 4.  将打开一个**侧边面板**，显示已执行工作流的摘要。\\
 
-    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="文档 rechnung_2514075 的 Workflow Logs 侧边面板，包含汇总计数和工作流结果表" width="563"><figcaption></figcaption></figure></div>
 
 ## **工作流日志面板的组成部分**
 
@@ -118,7 +118,7 @@
 
 点击每行左侧的**箭头**可展开**工作流详细信息视图**。
 
-<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow详情视图，展开Purchase Invoice - Approval工作流，包含When、And和Then卡片，条件结果以对勾和短横线标记" width="563"><figcaption></figcaption></figure></div>
 
 ### **工作流详细信息视图**
 

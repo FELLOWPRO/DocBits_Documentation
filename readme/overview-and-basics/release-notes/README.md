@@ -248,15 +248,15 @@
 *   **FTP 导入的文档类型选择：**\
     FTP 导入配置现支持按文件夹指定文档类型。配置 FTP 导入时，用户可以指定从该文件夹导入的所有文档所应用的文档类型，例如发票或确认订单。文档在导入时会自动分类，无需在导入后手动分配文档类型。此功能适用于在不同子组织和文件夹中管理多种文档类型的组织。
 
-    <figure><img src="../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (459).png" alt="Add new Data对话框，包含SFTP类型下拉列表以及用于FTP导入的服务器名称、端口、用户名、密码和Document Type字段"><figcaption></figcaption></figure>
 * **导出到 GLS840（适用于 Infor 本地部署）：**\
   DocBits 现支持 Infor 本地部署客户将文档导出到 GLS840 程序，扩展了本地部署环境支持的导出目标范围。
 *   **Watchdog 和导出配置的界面改进：**\
     Watchdog 配置和导出配置屏幕已更新界面，布局更加简洁，管理员管理这些设置时也更加直观。
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image.png" alt="DocBits设置中的Export Configuration页面，包含Basic Information字段以及ION API文件和TOML Mapping File的上传区域"><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt="DocBits设置中的Watchdog页面，包含General、Configurations、Logs和XSLT Templates标签页以及导入和导出配置列表"><figcaption></figcaption></figure>
 
 ### 错误修复：
 
@@ -276,15 +276,15 @@
 *   **增强采购订单匹配规则自定义：**\
     DocBits 现为采购订单匹配规则提供更细致、灵活的控制。管理员可以针对每种文档类型，精确配置匹配过程中要评估的列，确保仅考虑最相关的字段。此外，还可以在列级别定义公差，从而更灵活地处理轻微差异。每条规则还可以配置为仅应用于手动匹配、自动匹配，或两者兼用，让团队能够根据实际运营需求定制匹配工作流。这些改进显著提升了采购订单匹配流程的灵活性和精确度。
 
-    <figure><img src="../../.gitbook/assets/release_notes_12_2025_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_3.png" alt="PO Match Base Rule的版本历史，包含规则表格、Rule Configuration面板以及带公差的匹配比较列"><figcaption></figcaption></figure>
 *   **支持多个供应商财务账户：**\
     DocBits 现支持通过 Infor 提供的 RemitToPartyMaster BOD 管理供应商的多个财务账户。组织可以为单个供应商维护多条收款账户记录，从而提高付款处理的灵活性和准确性。新增配置设置，可启用或禁用此功能，管理员可根据运营需求选择是否启用。
 
-    <figure><img src="../../.gitbook/assets/release_notes_12_2025_1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_1.png" alt="Master Data Validation设置页面，包含Supplier BOD、ERP API Data和DocBits Master Data面板以及Allow Multiple Supplier Accounts开关"><figcaption></figcaption></figure>
 *   **允许用户访问 OCR 提取结果：**\
     “字段验证”屏幕上的 **OCR 视图** 按钮现已向所有拥有验证权限的用户开放，不再仅限于管理员。现在，任何获授权的用户都可以直接查看 OCR 提取结果，从而更轻松地验证数据准确性并监控整体 OCR 性能。这项改进提高了透明度，也提升了验证工作流的效率。
 
-    <figure><img src="../../.gitbook/assets/release_notes_12_2025_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_2.png" alt="Field Validation屏幕，包含OCR view按钮、发票页面预览以及提取的字段和提取的表格面板"><figcaption></figcaption></figure>
 * **审批屏幕中的动态列渲染：**\
   改进审批视图，使其仅动态显示组织数据库偏好设置中配置为用于对比的列。此前，某些组织专用列在未配置为用于对比时也会显示为空白，造成困惑。现在，审批视图只显示实际参与对比的字段。这样可为不同组织提供更清晰、更符合其需求的审批屏幕，不再显示空白或无关列。
 * **在主数据查询中添加订单类型字段**:\
@@ -323,16 +323,16 @@
 
     电子邮件模板编辑器经过重新设计，结构更加清晰，使用体验更加顺畅。选择文档字段变得更加直观，而且可以直接在模板中加入附件。这些改进让专业化、定制化电子邮件的创建更加快速、简单。
 
-    <figure><img src="../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (337).png" alt="Email Templates中的Edit Template页面，包含模板编辑器、带键的文档字段列表以及错误通知的邮件正文预览"><figcaption></figcaption></figure>
 *   **仪表板改进：**
 
     仪表板经过扩展，导航和自定义能力有所提升。通过新增的选项卡，用户可以更快地在不同文档类型之间切换，减少查找合适视图所花费的时间。
 
-    <figure><img src="../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (338).png" alt="DocBits中的Dashboard，包含文档类型标签页、文档列表列以及All documents筛选下拉菜单"><figcaption></figcaption></figure>
 *   **自定义筛选仪表板：**\
     此外，现在可以根据个人偏好自定义仪表板并应用筛选条件。这些自定义仪表板也可以与同事共享，让团队更轻松地创建一致的团队报告视图。
 
-    <figure><img src="../../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (339).png" alt="带有文档类型选项卡、仪表板选择下拉列表以及包含Create new Dashboard和Rename current Dashboard的菜单的仪表板"><figcaption></figcaption></figure>
 *   **电子邮件通知日志：**
 
     现已为所有电子邮件通知提供日志功能。用户可以查看已发送通知的历史记录，从而更轻松地确认邮件是否送达，并在未收到邮件时排查问题。
@@ -406,7 +406,7 @@
 *   **引导式教程：**\
     现已提供引导式教程，帮助用户更轻松地浏览并了解应用的不同部分。这对新用户入门或探索不熟悉的功能尤其有用。
 
-    <figure><img src="../../.gitbook/assets/image (429).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (429).png" alt="引导提示工具说明该按钮会启动当前页面的引导流程（如有）"><figcaption></figcaption></figure>
 * **决策树改进：**\
   改进了决策树界面，包括更直观的行添加功能——现在位于树的顶部——让维护和编辑更加简单。
 * **DocOperator**\
@@ -443,7 +443,7 @@
 *   **文档日志改进：**\
     文档日志现在包含更多详细信息，以便更好地进行审计和问题排查。
 
-    <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (37).png" alt="Document Logs对话框，包含Modified By/On、Description、Previous Status和Current Status列以及状态更改条目"><figcaption></figcaption></figure>
 * **支持 PNG 和 JPG：**\
   现在可以上传 PNG 和 JPG 文件，系统会自动将其转换为 PDF 格式以供处理。
 * **IDM 导出文档格式配置：**\
@@ -563,13 +563,13 @@ DocBits 新增了在文档处理期间调用外部 API 的高级能力，可提�
 
 对于启用了多个子组织的组织，DocBits 现提供跨子组织功能。此项改进使管理员能够在统一管理范围内简化对所有子组织的文档管理。管理员现在无需切换子组织，即可访问和查看所有子组织中的文档。集中式视图让管理员可以查看所有子组织的全部文档，方便查找特定文件，同时仍能掌握整体情况。[了解详情](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/README.md#cross-sub-organisations-access)
 
-<figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt="文档仪表板，显示All documents计数器、搜索字段以及包含Invoice Number、Purchase Order和Supplier Name列的文档表格"><figcaption></figcaption></figure>
 
 ### 根据组权限控制文档可见性
 
 DocBits 增强了文档可见性控制，让管理员能够通过基于组的权限对非管理员用户进行更精确的访问管理。管理员可以定义哪些特定用户或组可以查看哪些文档，从而简化工作流并提高数据安全性。管理员可以将文档分配给特定组，仅允许这些组中的用户查看。这样，用户只会看到与其角色或团队相关的文档，减少干扰并使工作重点更加明确。[了解详情](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md)
 
-<figure><img src="../../.gitbook/assets/Group Based Permission.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Group Based Permission.png" alt="TAX_TEAM组的权限表，包含Document Type、View、Update、Delete、First Approval和Second Approval列"><figcaption></figcaption></figure>
 
 ### 顺序工作流和审批历史记录
 
@@ -587,13 +587,13 @@ DocBits 新增强大的顺序工作流和审批历史记录功能，旨在提高
   * 用户审核期间添加的评论或备注
 * 历史记录确保流程透明，并为合规和问题排查提供审计跟踪。[了解详情](../../administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history.md)
 
-<figure><img src="../../.gitbook/assets/Approval History.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Approval History.png" alt="审批页面，其中带有Activity Stream和Approval History标签页、审批注释，以及包含发票字段的Approval Details面板"><figcaption></figcaption></figure>
 
 ### SFTP/FTP 文档归档改进
 
 DocBits 的 SFTP/FTP 文档归档改进基于现有导入功能，新增了处理文件后的无缝归档方式。FTP 导入配置中新增设置，可启用或禁用文件归档。文件成功导入并在 DocBits 中处理后，如果启用了此选项，系统会自动将文件归档到 SFTP/FTP 服务器上的指定文件夹。这可以保留已处理的文件以供记录，同时避免活动导入目录变得杂乱。[了解详情](../../end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md)
 
-<figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt="Add new Data对话框，包含SFTP类型下拉菜单以及Server-name、Port、Username、Primary Directory、Import Directory和Archive after Import字段"><figcaption></figcaption></figure>
 
 ### 每种税种的多个税务分区以及导出到 LN
 
@@ -617,7 +617,7 @@ DocBits 的 SFTP/FTP 文档归档改进基于现有导入功能，新增了处�
 * 税务数据（包括所有相关分区和分类）会无缝导出到 Infor LN，确保文档处理中的数据与企业资源规划（ERP）系统保持一致。
 * 导出的数据会关联到 Infor LN 中相应的成本行，以保持清晰的可追溯性并确保财务报告准确。
 
-<figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt="验证屏幕，包含多行税额的VAT和Amounts部分，其中德语金额包括Vollversteuert、Reduzierte Steuer和Steuerfrei"><figcaption></figcaption></figure>
 
 <!-- Obsolete illustration retired: Obsolete English illustration retired; the dated release text or complete procedure remains, and historical image files are preserved. -->
 
@@ -707,13 +707,13 @@ DocBits 改进了采购订单匹配屏幕的易用性，旨在简化采购订单
 
 配置 IMAP 电子邮件设置，以便在导入结果产生时自动发送通知。导入成功通知会确认已处理的文件；导入失败通知则会包含文件名和具体错误详情，以便及时排查。
 
-<figure><img src="../../.gitbook/assets/EmailImport.png" alt=""><figcaption><p>电子邮件导入配置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/EmailImport.png" alt="IMAP邮件导入的Edit Data对话框，包含Protocol IMAP、Server name imap.gmail.com、Port 993、Encryption SSL以及通知开关"><figcaption><p>电子邮件导入配置</p></figcaption></figure>
 
 #### 主数据查询改版
 
 重新设计了主数据查询设置，并优化分类方式，从而更快、更准确地检索不同类型的主数据。通过将主数据整理为不同类别，这项改进简化了数据访问，显著提升了搜索效率和准确性。用户现在可以更快地找到相关数据，从而提升应用中的工作效率和决策能力。
 
-<figure><img src="../../.gitbook/assets/MasterDataLookup.png" alt=""><figcaption><p>主数据</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MasterDataLookup.png" alt="Master Data页面，包含SUPPLIER、PURCHASE ORDER HEADER和M3 CHART OF ACCOUNTS标签页，以及带有维度列的会计科目表"><figcaption><p>主数据</p></figcaption></figure>
 
 #### 性能改进
 
@@ -782,7 +782,7 @@ DocBits 现支持更改平台使用的 OCR（光学字符识别）版本。用�
 
 [规则管理器](../../administration-and-setup/settings/document-processing/rule-manager/ "mention")让您能够灵活创建和编辑冲突解决规则，以满足 DocBits 发票系统的需求。这些规则旨在自动处理发票详情与采购订单（PO）数据之间的差异，确保财务对账准确。系统会应用规则处理发票行项目、费用和税款，并在必要时生成适当的调整或备注。
 
-<figure><img src="../../.gitbook/assets/RuleManager.png" alt=""><figcaption><p>规则管理器</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/RuleManager.png" alt="Rule Manager的Edit Template，包含TOML-File编辑器、条件构建器以及带有Quantity和Unit price条件的文档类型规则表"><figcaption><p>规则管理器</p></figcaption></figure>
 
 ### 使用流同步数据
 
@@ -792,7 +792,7 @@ Infor 的 BOD 同步使用 AWS Stream 进行实时数据处理，可提高效率
 
 DocBits 现可顺畅处理 XRechnung（电子发票），首先生成便于用户查看的 PDF，从而简化发票处理工作流。
 
-<figure><img src="../../.gitbook/assets/XRECHNUNG.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/XRECHNUNG.png" alt="XRechnung发票的验证屏幕，包含INVOICE DETAILS、VAT和AMOUNTS部分以及发票行项目表"><figcaption></figcaption></figure>
 
 ### 错误修复：
 
@@ -952,7 +952,7 @@ DocBits 现可顺畅处理 XRechnung（电子发票），首先生成便于用�
 
 现有系统缺少自动规则，无法准确地将发票费用与采购订单（PO）进行匹配和处理。这种手动处理方式可能导致差异，如截图所示，发票费用和采购订单需要对账才能正确开票。
 
-<div><figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.37.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.46.png" alt=""><figcaption><p>DocBits 规则管理器</p></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.37.png" alt="Rule Manager，显示Invoice Line Items规则、TOML导出配置编辑器以及包含Quantity Greater Than的条件表"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.46.png" alt="组织TEST3的Rule Manager，显示Invoice Line Items规则、条件表和TOML导出配置编辑器"><figcaption><p>DocBits 规则管理器</p></figcaption></figure></div>
 
 ### 解决方案：
 
@@ -982,7 +982,7 @@ DocBits 的新规则管理器将于 7 月推出，可帮助您自动完成这一
 *
 
 ```
-<div><figure><img src="../../.gitbook/assets/POShipmentTable.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/POShipmentTable.png" alt="PO#2051341-2.pdf的PO匹配界面，包含发票行项目表格以及带有已发货和已开票数量的PO Shipment Order表格"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen2.png" alt="来自Pacific Cheese Co的PO#2051333.pdf的审批界面，其中显示发票详情、供应商详情以及行项目比较表"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen1.png" alt="来自American Packaging Corp的PO#2051339.pdf的审批界面，包含发票详情、供应商详情以及比对明细行表格"><figcaption></figcaption></figure></div>
 ```
 
 **错误修复：**
@@ -990,7 +990,7 @@ DocBits 的新规则管理器将于 7 月推出，可帮助您自动完成这一
 * **二维码修复：** 已解决此前导致二维码处理出现问题的错误。
 * **非 EDI 文档处理：** Junebug 现在可以更有效地处理非 EDI 文档。
 
-<figure><img src="../../.gitbook/assets/EDI810-Invoice.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/EDI810-Invoice.png" alt="EDI 810发票屏幕，包含EDI INVOICE DATA面板、提取的字段以及来自John Soules Foods的发票PDF预览"><figcaption></figcaption></figure>
 
 热修复 - 6 月 5 日 [**优先级系统**](../../end-user-and-partner-section/end-user-section/our-document-priority-system.md)
 
@@ -998,7 +998,7 @@ DocBits 的新规则管理器将于 7 月推出，可帮助您自动完成这一
 
 沙盒冻结 - 6 月 3 日
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 20.37.35.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 20.37.35.png" alt="验证界面，其中运费表格显示ARA Recycling发票的运价类别、TMS Ancillary和燃油附加费行"><figcaption></figcaption></figure>
 
 在即将发布的版本中，我们将显著增强分类和提取能力，重点针对文档中的表格行。通过这项新功能，用户可以指定表格中的一行是否代表费用。这对发票等详细财务文档尤其有用，因为准确区分费用、税款或手续费等不同类型的交易，对于正确处理和记录至关重要。
 

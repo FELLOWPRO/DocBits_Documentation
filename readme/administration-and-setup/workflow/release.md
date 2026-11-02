@@ -6,7 +6,7 @@ hidden: true
 
 ## 版本控制原则
 
-<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 13.41.53.png" alt=""><figcaption><p>工作流版本控制系统</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 13.41.53.png" alt="工作流，包含用于 Document type 的 When 卡片、检查 Checkbox 的 And 卡片以及空的 Then 卡片"><figcaption><p>工作流版本控制系统</p></figcaption></figure>
 
 ### 版本 8.5.2024 - 核心版本控制功能
 

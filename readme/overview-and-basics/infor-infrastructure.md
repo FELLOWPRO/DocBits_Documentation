@@ -20,10 +20,10 @@
 
 ### Infor Cloud
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt="DocBits 到 Infor 云端部署架构图，包含位于端口 443 防火墙后的浏览器、Space S3 存储和 PostgreSQL 数据库"><figcaption></figcaption></figure>
 
 ### Infor 本地部署
 
 灵活性至关重要，因此我们同时提供云端和本地部署解决方案。使用本地部署选项时，无需开放任何端口，从而确保您的网络安全不受影响。无论您使用云端，还是选择在本地部署，我们都能为您提供支持。
 
-<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt="DocBits 本地部署架构图，扫描仪和浏览器位于本地防火墙后，连接到 Local File Storage、Space S3 和 PostgreSQL"><figcaption></figcaption></figure>

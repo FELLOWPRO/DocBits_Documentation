@@ -1,6 +1,6 @@
 # 超出最大金额
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42.png" alt="工作流，文档类型为Invoice，条件为Total Amount Greater Then Approver Max Amount，并从Next Level Approver中分配用户"><figcaption></figcaption></figure>
 
 此标题表示，该规则用于处理发票总金额超过审批人有权处理的最高金额的情况。
 

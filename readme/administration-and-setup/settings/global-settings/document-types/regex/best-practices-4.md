@@ -1,43 +1,43 @@
-# Best practices
+# Aanbevolen werkwijzen
 
-## Best practices for regex in document processing.
+## Aanbevolen werkwijzen voor regex bij documentverwerking
 
-**When using regex for document processing, there are some best practices to keep in mind to create and maintain effective and maintainable patterns:**
+**Houd bij regex voor documentverwerking rekening met de volgende werkwijzen om effectieve en onderhoudbare patronen te maken:**
 
-**Keep patterns simple and readable:**
+**Patronen eenvoudig en leesbaar houden:**
 
-* Complexity is often the enemy of maintainability.
-* It is advisable to keep regex patterns as simple and clear as possible.
-* Avoid overly complex expressions that are difficult to understand and use comments to explain how the pattern works.
+* Complexiteit maakt onderhoud vaak moeilijker.
+* Houd regex-patronen zo eenvoudig en duidelijk mogelijk.
+* Vermijd moeilijk te begrijpen expressies en gebruik opmerkingen om de werking van het patroon toe te lichten.
 
-**Test patterns thoroughly before deployment:**
+**Patronen grondig testen vóór ingebruikname:**
 
-* Before deploying regex patterns in a production environment, thorough testing is essential.
-* Use test data that covers a wide range of possible scenarios and carefully review the results.
-* Also be aware of edge cases and unexpected variations in the data.
+* Test regex-patronen grondig voordat u ze in een productieomgeving gebruikt.
+* Gebruik testgegevens die uiteenlopende scenario's afdekken en controleer de resultaten zorgvuldig.
+* Let ook op grensgevallen en onverwachte variaties in de gegevens.
 
-**Document regex patterns for ongoing maintenance:**
+**Regex-patronen documenteren voor blijvend onderhoud:**
 
-* Good documentation is critical to ensuring the maintainability of regex patterns.
-* Describe how the pattern works, its purposes, and potential limitations.
-* Also, make notes about changes and updates to help other developers understand and maintain the patterns.
+* Goede documentatie is essentieel om regex-patronen onderhoudbaar te houden.
+* Beschrijf de werking, het doel en mogelijke beperkingen van het patroon.
+* Leg ook wijzigingen en updates vast, zodat andere ontwikkelaars de patronen kunnen begrijpen en onderhouden.
 
-**Promote modularity:**
+**Modulair werken:**
 
-* Break complex regex patterns into smaller, more easily understood parts.
-* This promotes reusability and makes maintenance easier.
-* Use named groups and user-defined functions to make your pattern more modular.
+* Verdeel complexe regex-patronen in kleinere, beter te begrijpen delen.
+* Dit bevordert hergebruik en vereenvoudigt onderhoud.
+* Gebruik benoemde groepen en zelfgeschreven functies om uw patroon modularer te maken.
 
-**Performance optimization:**
+**Prestaties optimaliseren:**
 
-* When processing large amounts of data, performance is an important factor.
-* Optimize your regex patterns to maximize processing speed.
-* For example, avoid excessive use of greedy quantifiers and inefficient constructs.
+* Bij grote hoeveelheden gegevens zijn prestaties een belangrijke factor.
+* Optimaliseer regex-patronen voor een zo hoog mogelijke verwerkingssnelheid.
+* Vermijd bijvoorbeeld overmatig gebruik van gulzige kwantoren en inefficiënte constructies.
 
-**Regular review and update:**
+**Regelmatig controleren en bijwerken:**
 
-* Review your regex patterns regularly for updates and improvements.
-* New requirements and changing data formats may require changes to the patterns.
-* Also update the documentation accordingly.
+* Controleer regex-patronen regelmatig op mogelijke verbeteringen en noodzakelijke updates.
+* Nieuwe vereisten en veranderende gegevensformaten kunnen aanpassingen aan de patronen nodig maken.
+* Werk ook de documentatie bij.
 
-By following these best practices, you can ensure that your regex patterns are robust, efficient and maintainable, which in turn improves the reliability and scalability of your document processing solution.
+Met deze werkwijzen houdt u regex-patronen robuust, efficiënt en onderhoudbaar, wat de betrouwbaarheid en schaalbaarheid van uw documentverwerkingsoplossing verbetert.

@@ -62,7 +62,7 @@ Alles onder **import** is vergrendeld totdat u autoriseert. Er zijn twee dingen 
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-lock.png)
 
-* Het dialoogvenster **Available authorizations** opent met twee items.
+* Het blijkt **Beschikbare autorisaties** opent met twee items.
 * Plak uw **Org ID** in **X-ORG-ID** en klik op **Authorize**.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
@@ -161,7 +161,7 @@ Als er iets mis was met het verzoek, krijgt u `"success": false` met een bericht
 
 ### 5. Controleren of de gegevens zijn aangekomen
 
-* Ga in DocBits naar **Settings → Document Processing → Lookup Master Data**.
+* Ga in DocBits naar **Instellingen → Documentverwerking → Stamgegevens opzoeken**.
 * Selecteer links **BOD Input Data** en open vervolgens het tabblad **Supplier**.
 * Zoek naar de leverancier uit uw BOD.
 

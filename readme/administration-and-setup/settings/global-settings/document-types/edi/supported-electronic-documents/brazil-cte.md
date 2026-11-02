@@ -4,6 +4,12 @@ description: BRAZIL CT-E ondersteuning voor elektronische documenten in DocBits
 
 # 🇧🇷 BRAZIL CT-E
 
+<!-- edocs-country-scope -->
+
+{% hint style="info" %}
+Raadpleeg de landengids voor versiebeperkingen, de daadwerkelijk gebruikte configuratie en de uitlegvideo voor het land. [Brazilië](countries/brazil.md). Dit zijn verschillende documentfamilies. Een geconfigureerde NFS-e-versie certificeert niet elk gemeentelijk schema of elke nationale indeling voor dienstenfacturen.
+{% endhint %}
+
 | Eigenschap | Waarde |
 |------------|--------|
 | **Land / Regio** | Brazilië |
@@ -24,7 +30,7 @@ CT-e (Conhecimento de Transporte Eletrônico, `<mod>57</mod>`) is het Braziliaan
 
 ## Standaard Voorbeeld
 
-<figure><img src="brazil-cte-preview.png" alt="Brazil CT-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL CT-E document</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/brazil-cte-preview.png" alt="Brazil CT-e voorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een BRAZIL CT-E document</p></figcaption></figure>
 
 ## Veldmapping
 

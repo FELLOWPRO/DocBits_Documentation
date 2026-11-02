@@ -1,38 +1,36 @@
-# Documentflow
+# Documentstroom
 
-## **Overzicht:**
+De documentstroom toont volgorde, status en duur van de verwerkingsfasen. Het voorbeeld gebruikt een fictieve factuur.
 
-Deze pagina biedt een grafisch overzicht van de verschillende stappen die een document tot nu toe heeft doorlopen.
+## De documentstroom openen
 
-## **Toegang:**
+Zoek het document in het dashboard. Documentwaarden zijn afgeschermd.
 
-### **Optie 1:**
+<figure><img src="../../../.gitbook/assets/s150-document-flow-dashboard-menu-nl.png" alt="Het fictieve document zoeken in het dashboard; waarden zijn afgeschermd."><figcaption><p>Het fictieve document zoeken in het dashboard; waarden zijn afgeschermd.</p></figcaption></figure>
 
-1.  Navigeer naar de actieskolom op het Dashboard en klik op de drie stippen naast het document waarvan je de documentflow wilt bekijken.
+Open de veldvalidatie en het optiemenu in de rechterwerkbalk om de documentstroom te bekijken.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1_nl.png" alt=""><figcaption></figcaption></figure>
-2.  Selecteer **Documentflow**.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-validation-menu-nl.png" alt="Validatiemenu om de documentstroom te openen."><figcaption><p>Validatiemenu om de documentstroom te openen.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2_nl.png" alt="" width="278"><figcaption></figcaption></figure>
+## De fasen lezen
 
-### **Optie 2:**
+Elke kaart vertegenwoordigt een fase, zoals import, OCR, classificatie of veldextractie. Volg de nummering.
 
-1. Open het document waarvan je de documentflow wilt bekijken.
-2.  Klik op de drie stippen aan de rechterkant van de Veldvalidatie.
+<figure><img src="../../../.gitbook/assets/s150-document-flow-overview-nl.png" alt="Verwerkingsfasen van een fictieve factuur; technische codes blijven ongewijzigd."><figcaption><p>Verwerkingsfasen van een fictieve factuur; technische codes blijven ongewijzigd.</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3_nl.png" alt=""><figcaption></figcaption></figure>
-3.  Selecteer **Documentflow**.
+Technische codes zoals DOCUMENT_IMPORTED en COMPLETE blijven ongewijzigd. COMPLETE betekent dat een fase is voltooid.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4_nl.png" alt="" width="354"><figcaption></figcaption></figure>
+## Details bekijken
 
-## **Beschrijving:**
+Selecteer een kaart om de beschikbare details en logboeken te bekijken.
 
-Aan de linkerkant van het scherm zie je de individuele stappen van de documentflow, van links naar rechts weergegeven.
+| Detail | Betekenis |
+| --- | --- |
+| Module | Verwerkingscomponent van de fase |
+| Status | Huidige status van de fase |
+| Duur | Vastgelegde verwerkingstijd |
+| Logboeken | Beschikbare technische meldingen |
 
-<figure><img src="../../../.gitbook/assets/DocumentFlow_5_nl.png" alt=""><figcaption></figcaption></figure>
+Onderzoek meldingen van een wachtende of mislukte fase voordat u de verwerking opnieuw start. Sommige diagnostische titels kunnen in het product Engelstalig blijven.
 
-* Stappen die het documentflowproces initiëren (zoals importeren of herstarten) worden in het groen weergegeven.
-* Om door de stappen te navigeren, sleep je ze eenvoudig op het scherm.
-*   Wanneer je op een stap klikt, verschijnt de naam van de module en informatie over of de stap succesvol was of niet aan de rechterkant van het scherm.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_6_nl.png" alt=""><figcaption></figcaption></figure>
+De details van een fase tonen de verwerkingscomponent, status, duur en beschikbare technische logboeken.

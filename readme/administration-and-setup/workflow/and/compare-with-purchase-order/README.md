@@ -1,7 +1,5 @@
-# Compare with Purchase Order
+# Vergelijk met inkooporder
 
+De kaarten van deze categorie in de **Kaart toevoegen**-kiezer van de Workflow Builder:
 
-De kaarten van deze categorie in de **Add Card**-kiezer van de Workflow Builder:
-
-<figure><img src="../../../../.gitbook/assets/workflow_cards_and_po_compare.png" alt="Workflow Builder card category"><figcaption><p>De kaarten van deze categorie.</p></figcaption></figure>
-
+<figure><img src="../../../../.gitbook/assets/workflow-card-qa-20261021-category-72e8f3204ac8-nl.png" alt="Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface."><figcaption><p>Beschikbare kaarten in de geselecteerde categorie. Vul de velden vóór gebruik in. Sommige labels van deze versie zijn in de interface nog niet of onjuist vertaald. De uitleg op deze pagina gebruikt de juiste termen; de afbeelding toont de werkelijke interface.</p></figcaption></figure>

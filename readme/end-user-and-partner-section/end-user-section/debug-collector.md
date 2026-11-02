@@ -1,12 +1,10 @@
-# Debug Collector
+# Debugverzamelaar
 
 De Debug Collector legt een volledige momentopname van uw DocBits-sessie vast — netwerkactiviteit, fouten, browseromgeving en prestatiestatistieken — verpakt deze als een JSON-rapport en kan desgewenst direct vanuit hetzelfde dialoogvenster een supportticket aanmaken.
 
 ## Hoe te openen
 
 Druk op <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> op Windows en Linux, of <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> op macOS. Het Performance Report-dialoogvenster opent direct.
-
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Debug Collector dialoogvenster"><figcaption><p>Het Performance Report dialoogvenster toont de vastgelegde momentopname en een ingebouwd formulier voor supportticket.</p></figcaption></figure>
 
 ## Wat wordt vastgelegd
 
@@ -35,3 +33,5 @@ Wilt u een lokale kopie van de momentopname, gebruik dan **Copy Debug Data** om 
 * Er verlaat niets uw browser totdat u op **Send Report** klikt — de sneltoets opent alleen het dialoogvenster.
 
 <mark>Controleer de momentopname voordat u deze verstuurt als u met documenten werkte die klantgegevens bevatten. Document-ID's die zichtbaar zijn in URLs verschijnen in het rapport.</mark>
+
+Open het diagnostische rapport via de ondersteuningsopties, beschrijf het probleem en controleer de verzamelde informatie voordat u deze deelt. Het rapport verzamelt bewijsmateriaal; het stelt op zichzelf geen oorzaak vast.

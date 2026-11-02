@@ -1,0 +1,18 @@
+[
+  {
+    "case": "S034",
+    "source_capture_id": "U044",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/portuguese/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u044-pt.png",
+    "caption": "Acesso às definições adicionais do tipo de documento Fatura."
+  },
+  {
+    "case": "S034",
+    "source_capture_id": "U045",
+    "doc": "readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md",
+    "url": "https://docs.docbits.com/portuguese/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price",
+    "asset": "prior-u045-pt.png",
+    "caption": "Definições de estado das linhas de ordens de compra já utilizadas."
+  }
+]

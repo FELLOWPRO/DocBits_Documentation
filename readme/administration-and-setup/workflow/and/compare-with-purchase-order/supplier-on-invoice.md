@@ -1,6 +1,6 @@
-# Supplier on Invoice
+# Fornecedor na fatura
 
-<figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_card_condition_compare_invoice_to_po_supplier_v2-pt-pt.png" alt="Fornecedor na fatura, Versão 2" width="634"><figcaption><p>Versão 2</p></figcaption></figure>
 
 ## **Propósito:**
 
@@ -12,7 +12,7 @@ Este cartão de fluxo de trabalho foi concebido para comparar a informação do 
    * **Descrição**: Define a condição para comparar o fornecedor na fatura com o fornecedor na ordem de compra.
    * **Opções**:
      * **Is**: Verifica se o fornecedor na fatura corresponde ao fornecedor na ordem de compra.
-     * **Is Not**: Garante que o fornecedor na fatura não corresponde ao fornecedor na ordem de compra.
+     * **Não é**: Garante que o fornecedor na fatura não corresponde ao fornecedor na ordem de compra.
 
 ## **Funcionalidade:**
 

@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# Workflow Card Release & Version History
+# Versões e histórico dos cartões de fluxo de trabalho
 
 ## Princípios de controlo de versões
 
@@ -46,7 +46,7 @@ O Motor de Fluxo de Trabalho DocBits implementa um controlo de versões robusto 
 #### 1. CALL_API
 **Versões:** v1, v2 (Atual: v2)
 
-📖 **Guia:** [Call External API Guide](../then/action/call-api-guide.md)
+📖 **Guia:** [Chamar uma API externa](then/action/call-api-guide.md)
 
 | Versão | Tradução | Estado | Principais alterações |
 |---------|-------------|--------|-------------|
@@ -106,7 +106,7 @@ trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [
 #### 4. ACTION_TASK_FOR_GROUP
 **Versões:** v2, v3 (Descontinuada), v4 (Atual)
 
-📖 **Guia:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+📖 **Guia:** [Atribuição de tarefas](then/task/task-assignment-guide.md)
 
 | Versão | Alterações | Estado | Parâmetro de tipo |
 |---------|---------|--------|-----------------|
@@ -167,7 +167,7 @@ After (v4):  "Create a new [param] with the title: [param] ... "
 #### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Mais evoluído - 5 versões)
 **Versões:** v2, v3, v4, v5 (Atual)
 
-📖 **Guia:** [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Guia:** [Guia completo de correspondência de pedidos de compra](and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 | Versão | Alterações | Estado | Tolerância | Comparação |
 |---------|---------|--------|-----------|------------|
@@ -235,7 +235,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 | Versão | Dias de tolerância | Dias de tolerância aceites | Estado |
 |---------|-----------------|------------------------|--------|
 | v2 | ❌ Não | ❌ Não | Active |
-| v3 | ✅ Sim | ✅ Sim | ✅ Current |
+| v3 | ✅ Sim | ✅ Sim | ✅ Atual |
 
 **O que mudou:** v2 → v3: Adicionados parâmetros de tolerância:
 - `with [param] days as tolerance`
@@ -296,7 +296,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 
 | Versão | Referência da tabela de fornecedores | Estado |
 |---------|--------------------------|--------|
-| v2 | "supplier item price table" (fixo) | Active |
+| v2 | "supplier item price table" (fixo) | Ativo |
 | v3 | [param dinâmico] | ✅ Current |
 
 **O que mudou:** v2 → v3: Referência de tabela fixa → `stored in [param]` (permite seleção dinâmica de tabela)
@@ -313,7 +313,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 |---------|-------------|---------------|--------|
 | v1 | Não | ❌ Não | Active |
 | v2 | Sim | ❌ Não | ✅ Current |
-| v3 | Sim | ✅ Sim | ❌ DEPRECATED |
+| v3 | Sim | ✅ Sim | ❌ Descontinuado |
 
 **Evolução:** v1 (sem i18n) → v2 (com i18n) → v3 (+ experiência de árvore de decisão, agora descontinuada)
 
@@ -331,7 +331,7 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 | Versão | Árvore de decisão | Estado |
 |---------|---------------|--------|
 | v2 | ❌ Não | ✅ Current |
-| v3 | ✅ Sim | ❌ DEPRECATED |
+| v3 | ✅ Sim | ❌ Descontinuado |
 
 **O que mudou:** v2 → v3: Adicionado `Use decision tree, if available [param]` (mais tarde descontinuado)
 **Recomendação:** Utilize v2
@@ -351,13 +351,13 @@ After:  "[document] unit price is [operator] to purchase order, with tolerance o
 #### 1. tasks_create ⭐ (Cartão de tarefa mais evoluído - 4 versões)
 **Versões:** v1 (Descontinuada), v2 (Descontinuada), v3 (Descontinuada), v4 (Atual)
 
-📖 **Guia:** [Task Assignment Guide](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Guia:** [Atribuição de tarefas](then/task/task-assignment-guide.md)
 
 | Versão | Tradução | Árvore de decisão | Tipo de item de trabalho | Estado |
 |---------|-------------|---------------|-----------------|--------|
 | v1 | Não | Não | "Task" (fixo) | ❌ DEPRECATED |
 | v2 | Sim | Não | "Task" (fixo) | ❌ DEPRECATED |
-| v3 | Sim | Sim | "Task" (fixo) | ❌ DEPRECATED |
+| v3 | Sim | Sim | "Task" (fixo) | ❌ Descontinuado |
 | v4 | Sim | Não | [param genérico] | ✅ Current |
 
 **Cronologia de evolução:**
@@ -420,7 +420,7 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versão | Tipo de item de trabalho | Estado |
 |---------|-----------------|--------|
-| v1 | "Task" (fixo) | Active |
+| v1 | "Task" (fixo) | Ativo |
 | v3 | [param genérico] | ✅ Current |
 
 **O que mudou:** v1 → v3: Evolução para tipo genérico (a v2 foi ignorada em produção)
@@ -433,8 +433,8 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versão | Texto de atribuição | Estado |
 |---------|-----------------|--------|
-| v2 | "Assign task with title" | Active |
-| v3 | "Assign [generic] with title" | ✅ Current |
+| v2 | "Assign task with title" | Ativo |
+| v3 | "Assign [generic] with title" | ✅ Atual |
 
 **O que mudou:** v2 → v3:
 - Alterado "Assign task" → "Assign [generic param]"
@@ -467,7 +467,7 @@ After:  "Create a new [param] with the title: [param] ... "
 |---------|-----------------|--------|
 | v1 | ❌ Não | Active |
 | v2 | ❌ Não | Active |
-| v3 | ✅ Sim | ✅ Current |
+| v3 | ✅ Sim | ✅ Atual |
 
 **O que mudou:** v2 → v3: Adicionado `trigger Workflows [param]` - Aciona automaticamente fluxos de trabalho na mudança de estado
 **Recomendação:** Utilize v3
@@ -481,7 +481,7 @@ After:  "Create a new [param] with the title: [param] ... "
 |---------|------------|--------|
 | v1 | ❌ Não | Active |
 | v2 | ❌ Não | Active |
-| v3 | ✅ Sim | ✅ Current |
+| v3 | ✅ Sim | ✅ Atual |
 
 **O que mudou:** v2 → v3: Adicionado `Start Export with Validation: [param]`
 **Recomendação:** Utilize v3
@@ -501,8 +501,8 @@ After:  "Create a new [param] with the title: [param] ... "
 
 | Versão | Utilização de dados | Estado |
 |---------|------------|--------|
-| v2 | "Use return data in later cards" | Active |
-| v3 | "[Explicit param] returned data for use in subsequent cards" | ✅ Current |
+| v2 | "Use return data in later cards" | Ativo |
+| v3 | "[Explicit param] returned data for use in subsequent cards" | ✅ Atual |
 
 **O que mudou:** v2 → v3: Controlo mais explícito sobre a extração de dados da árvore de decisão
 **Recomendação:** Utilize v3
@@ -650,10 +650,10 @@ v4: + "Compare as [param1] [param2]"
 
 ## Documentação relacionada
 
-- 📖 [Card Versioning Reference](../changelog/card-versioning.md) - Informações detalhadas sobre versões
-- 📚 [Workflow Guides](../) - Utilização dos cartões passo a passo
-- 🔄 [Card Version Database](../docs/card_version.md) - Histórico completo de versões
-- 📋 [Workflow Logs](../workflow-logs/) - Execução e depuração
+- 📖 [Card Versioning Reference](cards-overview/card-versions-guide.md) - Informações detalhadas sobre versões
+- 📚 [Workflow Guides](README.md) - Utilização dos cartões passo a passo
+- 🔄 [Card Version Database](cards-overview/card-versions-guide.md) - Histórico completo de versões
+- 📋 [Workflow Logs](workflow-logs.md) - Execução e depuração
 
 ---
 

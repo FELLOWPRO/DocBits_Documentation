@@ -1,19 +1,19 @@
-# Regex Manager
+# Gestor de Regex
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+Esta função do DocBits oferece uma alternativa à classificação por modelo, pois permite escrever expressões regulares pesquisáveis para um tipo de documento, para classificação e outros fins.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+Tipo de documento: o Gestor de Regex permite escrever expressões regulares, que depois são procuradas no documento. Se o DocBits encontrar uma correspondência com a expressão regular de um documento definido, classifica o documento no tipo de documento correspondente. Por exemplo, se escrever uma expressão regular para encontrar “Gutschrift” e o DocBits encontrar esse termo num documento, classifica-o como nota de crédito.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+Origem do documento: através de expressões regulares, o DocBits reconhece também o país de origem de um documento. Por exemplo, se uma expressão regular para um documento espanhol contiver o termo “Factura” e o DocBits o encontrar no documento, saberá que o documento é de origem espanhola e classificá-lo-á em conformidade.
 
-## **Accessing the Regex Manager**
+## **Aceder ao Gestor de Regex**
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+No DocBits, aceda a Configurações → Tipos de documentos. Em “Tipos de documentos personalizados”, clique em “Novo”. Introduza um nome para o tipo de documento, adicione uma descrição opcional e marque “Mesa disponível” se o documento contiver uma tabela. Depois escolha “Expressão regular” em vez de “Auto” e clique em “Próximo”.
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx\_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B\_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../../.gitbook/assets/regex-manager-create-pt-20261006.png" alt="Página de criação de um novo tipo de documento com o campo de nome, a caixa de tabela disponível, a descrição e os botões Auto e Expressão regular"><figcaption><p>Escolha “Expressão regular” para classificar o novo tipo de documento com expressões regulares.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## **Adicionar e remover regex**
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+O passo “Expressão regular” mostra os modelos de regex existentes, cada um com origem e padrão, e um botão “Adicionar” para criar um novo modelo. Use o menu de ações no fim da linha para gerir a entrada. Clique em “Próximo” para continuar para “Campos e grupos”.
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp\_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1\_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
+<figure><img src="../../../.gitbook/assets/regex-manager-list-pt-20261006.png" alt="Passo Expressão regular com o botão Adicionar e uma tabela com três modelos de regex, com origem, padrão e ações"><figcaption><p>Modelos de regex existentes com origem e padrão. “Adicionar” cria um novo modelo.</p></figcaption></figure>

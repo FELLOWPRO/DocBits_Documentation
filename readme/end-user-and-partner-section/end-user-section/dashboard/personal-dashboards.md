@@ -1,103 +1,36 @@
 # Paneles personales
 
-## Descripción general
+Un panel guardado es una vista con nombre de su lista de trabajo: búsqueda, filtros, tipo de documento, orden y columnas visibles. Al abrirlo se restaura todo a la vez, de modo que las tareas recurrentes no se configuran de nuevo. Un panel solo cambia cómo se muestran los documentos y nunca los documentos mismos.
 
-Puedes crear y gestionar paneles personalizados adaptados a tus necesidades específicas. Estos paneles te permiten:
+## Crear un panel
 
-* Definir un orden de columnas personalizado
-* Seleccionar únicamente las columnas relevantes para tu caso de uso
-* Aplicar y guardar filtros personalizados
-* Compartir paneles con miembros del equipo
+1. Prepare la vista que desea conservar. Introduzca la búsqueda en la barra de búsqueda, use los **Filtros rápidos** del selector de campos, los **Filtros**, una pestaña de tipo de documento, el orden de la tabla y las columnas.
 
-## Crear un nuevo panel de control
+2. Abra el botón de vista bajo el campo de búsqueda. Muestra la vista activa y cuántos documentos coinciden ahora, por ejemplo **Todos los documentos (5986)**.
 
-Para crear un nuevo panel:
+3. Elija **Crear un nuevo panel de control**.
 
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
+4. Asigne un nombre claro y decida quién puede usar la vista:
+   * **Visible sólo para mí** mantiene la vista privada.
+   * **Visible para todos los usuarios** la pone a disposición de todas las personas de su organización.
+   * **Compartir con grupos y usuarios** muestra las dos listas **Grupos** y **Seleccionar usuario**, para que indique grupos concretos o personas individuales.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Haz clic en **Crear un nuevo panel de control**.
+5. Elija **Guardar**. El botón de vista cambia al nuevo panel y muestra su nombre y el número de documentos.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_2.png)
-3.  Introduce un nombre para tu panel.
+<figure><img src="../../../.gitbook/assets/dashboard-saved-view-es.png" alt="Cree un panel con nombre y elija quién puede verlo."><figcaption><p>Cree un panel con nombre y elija quién puede verlo.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_3.png)
-4. Establece el nivel de visibilidad deseado. Puedes elegir entre:
-   * **Visible sólo para mí**: Solo tú (el usuario que ha iniciado sesión actualmente) puedes ver este panel.
-   * **Visible para todos los usuarios**: Todos los usuarios de tu organización tendrán acceso de visualización.
-   *   **Compartir con grupos y usuarios**: Selecciona usuarios o grupos de usuarios específicos que tendrán acceso de visualización al panel.
+La visibilidad decide quién puede **usar** la vista. No concede acceso a documentos: cada persona sigue viendo solo los documentos para los que tiene permiso.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_4.png)
-5.  Haz clic en **Guardar** para crear y guardar tu panel.
+## Cambiar de vista o modificarla
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_5.png)
+Elija un panel guardado en el botón de vista o vuelva al **Panel de control predeterminado**, la vista no guardada de todos los documentos. El último panel abierto sigue activo al recargar la página.
 
-## Cambiar entre paneles
+Tras modificar un panel cargado —también si solo cambia columnas— el botón de vista ofrece **Guardar cambios en el panel**. Así guarda el cambio con el mismo nombre. La acción permanece desactivada si no hay cambios o si el panel pertenece a otra persona; una vista compartida no se puede sobrescribir, cree una propia.
 
-Para cambiar entre paneles:
+## Cambiar el nombre de un panel o volver a compartirlo
 
-1. Haz clic en el botón de filtro debajo de la barra de búsqueda.
-2.  En el menú desplegable, selecciona un panel de la lista de paneles personales o compartidos.
+Sitúe el puntero sobre un panel propio en el botón de vista para mostrar sus iconos **Editar** y **Borrar**. Seleccione el lápiz para abrir **Editar panel de control** y cambiar el nombre o la visibilidad. El diálogo muestra las mismas tres opciones que al crear el panel.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_6.png)
+## Eliminar un panel
 
-<mark style="color:red;">**Nota**</mark>: Puedes identificar si un panel es personal o compartido comprobando el icono delante del nombre del panel.
-
-## Edición/Borrado de un panel personal
-
-Para editar tu panel personal o compartido:
-
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Haz clic en el nombre del panel personal que deseas editar.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3. Realiza los cambios deseados, como:
-   * Cambiar el orden de las columnas
-   * Ajustar la visibilidad de las columnas
-   * Editar filtros
-
-### **Guardar cambios en el panel**
-
-Una vez que hayas realizado tus cambios, haz clic en el botón de filtro debajo de la barra de búsqueda y luego selecciona **Guardar cambios en el panel**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_11.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo los paneles personales pueden editarse. Los paneles compartidos solo pueden ser editados por su creador original.
-
-### **Cambiar el nombre de un panel**
-
-Para cambiar el nombre de un panel personal o compartido:
-
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Selecciona el panel cuyo nombre deseas cambiar.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3.  Selecciona **Cambiar el nombre del panel actual**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_8.png)
-4.  Introduce el nuevo nombre y luego haz clic en **Guardar**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_9.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo los paneles personales pueden cambiarse de nombre. Los paneles compartidos solo pueden ser renombrados por su creador original.
-
-### Borrar un panel
-
-Para borrar un panel personal:
-
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2. Pasa el cursor sobre el panel que deseas borrar.
-3.  Haz clic en el icono de papelera junto a él.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_12.png)
-4.  Confirma el borrado haciendo clic en **Borrar**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_13.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo los paneles personales pueden borrarse. Los paneles compartidos solo pueden ser borrados por su creador original.
+Seleccione el icono de la papelera de un panel propio y confirme con **Borrar**. Quitar una vista no elimina los documentos a los que hacía referencia. Un panel que otra persona ha compartido con usted se puede abrir y usar, pero no se puede modificar ni eliminar en su cuenta.

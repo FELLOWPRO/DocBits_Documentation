@@ -57,7 +57,7 @@ Monitor system health, manage integrations, and maintain security.
 * **Analytics**: Access detailed analytics dashboards including Logs Analytics, Auth Security monitoring, and API Metrics with Real User Monitoring (RUM).
 * **Access Audit**: Enable and review audit trails that track all Create, Update, and Delete actions across your organization for compliance and security.
 * **System Licenses**: View and manage API license information and usage.
-* **Cache Management**: Configure automatic cache clearing intervals (TTL) for Received Delivery, Purchase Order, and Task/Notification caches.
+* **Cache Management**: Use the global Clear Cache action when cached data needs to be invalidated.
 * **Fulltext Search Settings**: Configure full-text search capabilities across your documents and data (requires the Fulltext Search module to be enabled).
 
 ## 5. Supplier Settings

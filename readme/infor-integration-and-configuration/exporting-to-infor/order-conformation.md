@@ -5,7 +5,7 @@ Niewielka aktualizacja dla potwierdzenia zamówienia
 
 
 {% hint style="info" %}
-Link do [pliku](../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties)
+Link do [pliku](<../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties>)
 {% endhint %}
 
 ```

@@ -5,16 +5,19 @@ La exportación alternativa ofrece un destino de exportación para los documento
 ## Encontrar la configuración
 
 1. Abra **Ajustes → Tipos de Documento**.
-2. Abra el engranaje del tipo de documento correspondiente.
+2.  Busca la tarjeta del tipo de documento y abre sus ajustes con el engranaje (**Más ajustes**).
 
 <figure><img src="../../../../../../.gitbook/assets/site-extra-document-types-es.png" alt="Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción."><figcaption><p>Tipos de documentos predeterminados con enlaces a Campos y engranajes de configuración. No se modificó ningún interruptor Activar o Extracción.</p></figcaption></figure>
 
-3. Despliegue **Configuración de exportación** y localice **Exportación alternativa**.
+3.  Despliega **Configuración de exportación** y activa **Exportación alternativa**.
 
-<figure><img src="../../../../../../.gitbook/assets/site-complete-invoice-export-settings-es.png" alt="Configuración actual de Exportación alternativa. Estado determina su disponibilidad; no es el estado que se escribe después de exportar. La etiqueta real «Exportación validada y pendiente» tiene una redacción defectuosa. Test es una configuración de ejemplo; no se ejecutó ninguna exportación."><figcaption><p>Configuración actual de Exportación alternativa. Estado determina su disponibilidad; no es el estado que se escribe después de exportar. La etiqueta real «Exportación validada y pendiente» tiene una redacción defectuosa. Test es una configuración de ejemplo; no se ejecutó ninguna exportación.</p></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/po-settings-alternate-export-20261103-es.png" alt="Configuración de exportación del tipo de documento Factura con Exportación alternativa activada, el estado y la configuración de exportación"><figcaption><p>El interruptor <strong>Exportación alternativa</strong> en <strong>Configuración de exportación</strong>. Al activarlo aparecen <strong>Estado</strong> y <strong>Configuración de exportación</strong>. No se ejecutó ninguna exportación.</p></figcaption></figure>
 
 ## Configurar la disponibilidad
 
 Seleccione el estado requerido entre las opciones que ofrece su versión y asigne la **Configuración de exportación** correspondiente. Compruebe el destino antes de habilitar la opción. La etiqueta actual «Exportación validada y pendiente» se refiere al documento validado y pendiente de exportación, aunque su redacción sea defectuosa.
+
+* **Estado** — el estado del documento en el que se ofrece la opción de exportación adicional.
+* **Configuración de exportación** — la configuración de exportación que utiliza esta opción.
 
 Consulte la [configuración de exportaciones](../../../../document-processing/export.md) para preparar el destino. Si el documento cumple el estado configurado y la opción está disponible en su flujo, podrá elegir ese destino en la pantalla de conciliación de pedidos. La imagen muestra únicamente la configuración; no acredita una exportación ejecutada.

@@ -1,4 +1,4 @@
-# Navegando el Administrador de Diseño
+# Navegando el Creador de diseño
 
 Utilice el **Administrador de Diseño** para organizar los grupos y campos que las personas ven en un documento. Esta guía utiliza el tipo de documento **Factura** en una organización de pruebas, y las capturas de pantalla muestran la interfaz en español.
 

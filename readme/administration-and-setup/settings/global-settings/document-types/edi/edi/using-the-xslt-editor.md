@@ -15,7 +15,7 @@ Handleiding voor het maken en wijzigen van transformaties met de XSLT-editor, me
 **Transformaties maken of wijzigen:**
 
 * Definieer regels om invoergegevens, zoals XML, naar het gewenste EDI-formaat om te zetten. Gebruik XSLT-sjablonen om elementen en attributen uit de invoer-XML te selecteren en correct op te maken.
-* Gebruik XSLT-functies en instructies zoals [xsl:template](xsl:template), [xsl:apply-templates](xsl:apply-templates), [xsl:for-each](xsl:for-each), [xsl:value-of](xsl:value-of) enzovoort om de transformaties uit te voeren.
+* Gebruik XSLT-functies en instructies zoals `xsl:template`, `xsl:apply-templates`, `xsl:for-each`, `xsl:value-of` enzovoort om de transformaties uit te voeren.
 * Controleer de transformaties zorgvuldig om na te gaan of alle vereiste gegevens correct worden geëxtraheerd en opgemaakt.
 
 **XSLT-scripts testen en valideren:**

@@ -8,6 +8,16 @@ Bedrijfsinformatie, abonnementsplan en auditlogboeken in DocBits
 
 De video toont de bedrijfsinformatie en bedrijfsvoorkeuren, het abonnementsplan, de aanmeldingsactiviteit en de auditlogboeken.
 
+## E-maildomeinen
+
+Organisatiebeheerders kunnen **Instellingen → Bedrijfsinformatie → E-maildomeinen** openen om de domeinen te beheren die worden gebruikt voor de automatische toewijzing van organisaties. Wanneer iemand zich aanmeldt met Microsoft of Google en nog geen lid is van een organisatie, kan DocBits die persoon aan deze organisatie toewijzen als zijn of haar e-mailadres een van de vermelde domeinen gebruikt. Een domein kan slechts aan één organisatie worden toegewezen.
+
+<figure><img src="../../../../.gitbook/assets/company_email_domains_nl.png" alt="De sectie E-maildomeinen uitgevouwen met een lege domeinenlijst, een invoerveld en de knop Domein toevoegen"><figcaption><p>De Nederlandse sectie E-maildomeinen voordat een domein wordt toegevoegd. Voer een bedrijfsdomein in en selecteer vervolgens Domein toevoegen.</p></figcaption></figure>
+
+Voer alleen het domein in, zoals `example.com`, in het invoerveld en selecteer **Domein toevoegen** of druk op Enter. Het eerste domein wordt het primaire domein. Als er meer domeinen worden vermeld, gebruik dan **Maak primair** op een andere rij om dit te wijzigen, of het prullenbak-icoon om een domein te verwijderen. Fouten zoals een ongeldig domein, een persoonlijke e-mailprovider of een domein dat ergens anders al is toegewezen, verschijnen onder het invoerveld. **Er zijn nog geen domeinen toegewezen** betekent dat deze organisatie geen domeinregel heeft.
+
+Controleer voordat u een domein toevoegt welke organisatie nieuwe aanmeldingen moet ontvangen. Ga door naar [Gebruikers](../groups-users-and-permissions/users/README.md) om bestaande lidmaatschappen te beheren.
+
 <figure><img src="../../../../.gitbook/assets/prior-i001-nl.png" alt="Bedrijfsgegevens met afgeschermde organisatiewaarden."><figcaption><p>Bedrijfsgegevens met afgeschermde organisatiewaarden.</p></figcaption></figure>
 
 Op de pagina Bedrijfsinformatie beheert u het profiel van uw bedrijf, voorkeuren en abonnementsgegevens. De pagina is ingedeeld in de volgende onderdelen:

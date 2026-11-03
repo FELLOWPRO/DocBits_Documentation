@@ -8,17 +8,17 @@ productiedatum. De thema's beschrijven wat voor de release is gepland, niet wat
 al is uitgeleverd; omvang en data kunnen verschuiven. Hotfixes tussen releases
 worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
-| Release-ID | Sandbox | Productie |
-|---|---|---|
-| N2611 | 16 oktober 2026 | 4 november 2026 |
-| V2611 | 4 november 2026 | 11 november 2026 |
-| V2612 | 8 december 2026 | 15 december 2026 |
-| V2702 | 10 februari 2027 | 17 februari 2027 |
-| N2703 | 17 februari 2027 | 3 maart 2027 |
-| V2703 | 10 maart 2027 | 17 maart 2027 |
-| V2705 | 5 mei 2027 | 12 mei 2027 |
-| N2706 | 2 juni 2027 | 16 juni 2027 |
-| N2710 | 6 oktober 2027 | 20 oktober 2027 |
+| Release-ID | Kanaal | Sandbox | Productie |
+|---|---|---|---|
+| N2611 | NOVA | 16 oktober 2026 | 4 november 2026 |
+| V2611 | VESTA | 4 november 2026 | 11 november 2026 |
+| V2612 | VESTA | 8 december 2026 | 15 december 2026 |
+| V2702 | VESTA | 10 februari 2027 | 17 februari 2027 |
+| N2703 | NOVA | 17 februari 2027 | 3 maart 2027 |
+| V2703 | VESTA | 10 maart 2027 | 17 maart 2027 |
+| V2705 | VESTA | 5 mei 2027 | 12 mei 2027 |
+| N2706 | NOVA | 2 juni 2027 | 16 juni 2027 |
+| N2710 | NOVA | 6 oktober 2027 | 20 oktober 2027 |
 
 Hieronder worden alleen de NOVA-releases beschreven. VESTA-bugfixreleases worden
 kort voor de publicatie gedocumenteerd in de [Release-opmerkingen](release-notes/README.md).

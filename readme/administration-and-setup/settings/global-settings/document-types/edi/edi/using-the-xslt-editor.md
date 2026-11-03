@@ -15,7 +15,7 @@ hidden: true
 **创建或修改转换：**
 
 * 定义将输入数据（例如 XML）转换为所需 EDI 格式的规则。使用 XSLT 模板选择输入 XML 中的元素和属性，并按相应格式进行处理。
-* 使用 [xsl:template](xsl:template)、[xsl:apply-templates](xsl:apply-templates)、[xsl:for-each](xsl:for-each)´、[xsl:value-of](xsl:value-of) 等 XSLT 函数和语句执行转换。
+* 使用 `xsl:template`、`xsl:apply-templates`、`xsl:for-each`、`xsl:value-of` 等 XSLT 函数和语句执行转换。
 * 仔细检查转换，确保所有必需的数据都已正确提取并格式化。
 
 **测试和验证 XSLT 脚本：**

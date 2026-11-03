@@ -79,17 +79,17 @@ Im Abschnitt **Amount Formatting** stehen Ihnen zwei Optionen zur Verfügung:
 **Voraussetzungen für eine funktionierende Tabellenextraktion**
 
 * Der Dokumenttyp hat **Tabellenspalten** (Settings → Global Settings → Document Types → [Tabellenspalten](../../global-settings/document-types/table-columns/README.md)). Ohne Spalten gibt es nichts, in das extrahiert werden könnte.
-* **Table Extraction** oder **AI Table Extraction** ist unten für die gesamte Organisation eingeschaltet.
+* Für den hier beschriebenen PDF-Pfad sind **Table Extraction** und ein aktiver Dokumenttyp mit Tabellen erforderlich. Der KI-Fallback benötigt zusätzlich **AI Table Extraction**.
 * Das Dokument enthält lesbaren Text: OCR wurde ausgeführt, oder bei digital erzeugten PDFs wird E-Text verwendet ([OCR-Einstellungen](../ocr-settings.md)).
 * Die im Validierungsbildschirm gewählte **KI-Modellüberschreibung** gilt für die aktuelle Extraktionsvorlage innerhalb Ihrer Organisation. Sie stellt nicht automatisch alle Vorlagen eines Lieferanten um. Eine trainierte Tabelle wird nur auf Dokumente des Lieferanten angewendet, für den sie trainiert wurde.
 {% endhint %}
 
-Sie können Tabellen aus Dokumenten extrahieren, indem Sie entweder **Table Extraction** oder **AI Table Extraction** aktivieren. Eine trainierte Tabelle (ob KI-basiert oder manuell) ist immer an einen bestimmten Lieferanten gebunden.
+Im hier beschriebenen PDF-Pfad wird zuerst die regelbasierte Tabellenextraktion versucht. Liefert dieser Pfad keine Tabellenzeilen, kann bei zusätzlich aktivierter **AI Table Extraction** der KI-Fallback folgen. Die Zuordnung gespeicherter Tabellenregeln zum Lieferanten- beziehungsweise Vorlagenkontext ist davon getrennt zu prüfen.
 
 **Table Extraction:** Aktiviert die regelbasierte Tabellenextraktion. Tabellen werden pro Lieferant im Validierungsbildschirm trainiert (*Go to table extraction view*).\
 Mehr zum Training erfahren Sie [hier](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
-**AI Table Extraction:** Nutzt KI, um die Tabelle beliebiger Lieferanten ohne Training zu extrahieren. Wenn die Ergebnisse für einen Lieferanten nicht genau genug sind, trainieren Sie die Tabelle dieses Lieferanten; die gespeicherten Regeln haben dann für diesen Lieferanten Vorrang vor der KI.
+**AI Table Extraction:** Ermöglicht im hier beschriebenen PDF-Pfad den KI-Fallback, wenn der vorherige Regelpfad keine Tabellenzeilen liefert. Dafür müssen **Table Extraction** und **AI Table Extraction** eingeschaltet sein und der aktive Dokumenttyp Tabellen unterstützen. Prüfen Sie bei ungenauen Ergebnissen die passende Extraktionsvorlage und die gespeicherten Regeln, bevor Sie das Training ändern.
 
 **Use Table Extraction Vision (AI):** Die KI liest das Seitenbild statt der Textebene. Hilft bei gescannten Dokumenten und Tabellen ohne klare Textstruktur; langsamer.
 

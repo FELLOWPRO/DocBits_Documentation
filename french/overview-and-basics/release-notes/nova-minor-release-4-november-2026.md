@@ -1,6 +1,6 @@
-# NOVA – Version mineure 4 novembre 2026
+# NOVA N2611 – Version mineure 4 novembre 2026
 
-**Disponibilité de NOVA R1.1 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
+**Disponibilité de NOVA N2611 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/fr.mp4" %}
 

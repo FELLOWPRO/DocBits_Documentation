@@ -1,24 +1,24 @@
 # Feuille de route DocBits
 
-**Disponibilité de NOVA R1.1 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
+**Disponibilité de NOVA N2611 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
 
-_État de la planification au 7 octobre 2026. Chaque version indique la date
+_État de la planification au 3 novembre 2026. Chaque version indique la date
 sandbox prévue (à partir de laquelle les clients peuvent la tester) et la date
 de production prévue. Les thèmes décrivent ce qui est prévu pour la version,
 pas ce qui a déjà été livré ; le périmètre et les dates peuvent évoluer. Les
 correctifs urgents entre deux versions sont documentés dans les
 [Notes de version](release-notes/README.md)._
 
-| Version | Sandbox | Production |
+| ID de version | Sandbox | Production |
 |---|---|---|
-| R1.1 | 16 octobre 2026 | 4 novembre 2026 |
-| R1.2 | 16 février 2027 | 3 mars 2027 |
-| R1.3 | 1er juin 2027 | 16 juin 2027 |
-| R1.4 | 5 octobre 2027 | 20 octobre 2027 |
+| N2611 | 16 octobre 2026 | 4 novembre 2026 |
+| N2703 | 17 février 2027 | 3 mars 2027 |
+| N2706 | 2 juin 2027 | 16 juin 2027 |
+| N2710 | 6 octobre 2027 | 20 octobre 2027 |
 
 ---
 
-## R1.1 — Sandbox 16 octobre 2026 · Production 4 novembre 2026
+## N2611 — Sandbox 16 octobre 2026 · Production 4 novembre 2026
 
 **Règles de transformation et mises en page**
 
@@ -160,7 +160,7 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## R1.2 — Sandbox 16 février 2027 · Production 3 mars 2027
+## N2703 — Sandbox 17 février 2027 · Production 3 mars 2027
 
 **Approbation et correspondance des bons de commande**
 
@@ -203,7 +203,7 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## R1.3 — Sandbox 1er juin 2027 · Production 16 juin 2027
+## N2706 — Sandbox 2 juin 2027 · Production 16 juin 2027
 
 **Rule Manager Auto Accounting**
 
@@ -241,7 +241,7 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## R1.4 — Sandbox 5 octobre 2027 · Production 20 octobre 2027
+## N2710 — Sandbox 6 octobre 2027 · Production 20 octobre 2027
 
 **Auto Accounting sur l'écran d'approbation**
 
@@ -290,7 +290,10 @@ correctifs urgents entre deux versions sont documentés dans les
 - Saisie de commandes : une commande client devient une commande de vente dans
   Infor M3 ou Infor LN (première version, documents texte).
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-10-07 by the
-     docbits-roadmap skill. Releases up to R1.4 only; R1.5 and later are not
-     published yet. Themes only; ticket keys, customer names and internal work
+<!-- Themes generated from Jira "Release No." (customfield_10392) on 2026-10-07
+     by the docbits-roadmap skill; release IDs and dates updated to the new
+     channel + YYMM format on 2026-11-03 from CRITICAL-DEV-DOCS
+     Release Management/Release_Schedule.md (R1.1 = N2611, R1.2 = N2703,
+     R1.3 = N2706, R1.4 = N2710). NOVA releases up to N2710 only.
+     Themes only; ticket keys, customer names and internal work
      are deliberately left out. Rerun the skill to refresh. -->

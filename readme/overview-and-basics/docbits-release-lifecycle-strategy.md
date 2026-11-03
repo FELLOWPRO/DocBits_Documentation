@@ -1,8 +1,8 @@
 # Stratégie de cycle de vie des versions DocBits
 
-Avec le déploiement de la prochaine version mineure R1.1, DocBits introduit une nouvelle stratégie de cycle de vie des versions reposant sur deux canaux de version : VESTA et NOVA.
+Avec le déploiement de la version mineure N2611, DocBits introduit une nouvelle stratégie de cycle de vie des versions reposant sur deux canaux de version : VESTA et NOVA.
 
-**NOVA** est le canal d'introduction des nouvelles versions majeures et mineures, telles que **Rx** et **Rx.y**. **VESTA** continue de fournir la version de production existante.
+**NOVA** est le canal d'introduction des nouvelles versions majeures et mineures, telles que **N2611** et **N2703**. **VESTA** continue de fournir la version de production existante.
 
 {% hint style="success" %}
 **Important : une seule URL pour VESTA et NOVA**
@@ -90,7 +90,7 @@ La cadence prévue diffère entre les versions majeures et mineures introduites 
 
 #### Versions majeures et mineures via NOVA
 
-FELLOWPRO prévoit actuellement un cycle d'environ **3 à 4 mois pour les versions majeures et mineures** introduites via le canal de version NOVA, telles que **Rx** et **Rx.y**. Cette estimation s'applique au cycle de vie décrit ci-dessus, y compris la bascule ultérieure vers VESTA et la réaffectation de NOVA à la version suivante. Elle ne décrit pas la fréquence des hotfixes.
+FELLOWPRO prévoit actuellement un cycle d'environ **3 à 4 mois pour les versions majeures et mineures** introduites via le canal de version NOVA, telles que **N2611** et **N2703**. Cette estimation s'applique au cycle de vie décrit ci-dessus, y compris la bascule ultérieure vers VESTA et la réaffectation de NOVA à la version suivante. Elle ne décrit pas la fréquence des hotfixes.
 
 Cet intervalle correspond à notre estimation de planification actuelle ; il ne s'agit ni d'un calendrier fixe, ni d'une durée maximale de cycle, ni d'une garantie quant à la date d'une version ou d'une bascule. Le calendrier de chaque bascule et de la réaffectation de NOVA dépend à la fois de **l'état de préparation de la version et de l'acceptation de la transition prévue par tous les clients**. Si un délai supplémentaire est nécessaire pour finaliser la version, répondre aux préoccupations des clients ou obtenir l'acceptation de chaque client, le cycle sera prolongé et pourra durer plus de quatre mois.
 

@@ -1,70 +1,49 @@
 # Classification and Extraction
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction.png" alt="Classification and Extraction"><figcaption><p>Classification and Extraction Page</p></figcaption></figure>
+Use these settings to control how DocBits splits uploaded files, compares amounts, extracts tables, handles certain electronic documents, and classifies documents. You need permission to change organization settings.
 
-## Overview
+Open **Settings → Document Types → Classification and Extraction**. The current page has two tabs: **General** and **Classification Rules**. The AI model controls are in **General → Extraction**; there is no separate **AI Models** tab on this screen.
 
-In the **Classification and Extraction** settings, you can:
+<figure><img src="../../../../.gitbook/assets/dbdc-193-classification-general-en.png" alt="English Classification and Extraction page in DocBits Documentation Test A showing General, Classification Rules and the four General sections"><figcaption><p>Choose General for processing settings or Classification Rules for document classification patterns.</p></figcaption></figure>
 
-* Enable **Document Splitting** based on QR codes
-* Configure **amount formatting**
-* Set up **table extraction**
-* Toggle processing of unsupported **ZUGFeRD** files
-* Define special classification rules
-* Monitor Custom-Trained **AI Models** used in the classification process
+## General
 
-This page provides a detailed explanation of all available settings.
+Open a section to see its settings. Changing an organization setting can affect documents processed later; check the intended document type and test the result before changing a production workflow.
 
-## **Accessing Classification and Extraction Settings**
+### Document Splitting
 
-To access the **Classification and Extraction** settings, go to:\
-**Settings → Document Processing → Classification and Extraction**
+**Split** is set to **Do not split uploaded documents** in this test organization. Choose a barcode or QR-code splitting option only when your incoming file format requires it. When that option is selected, configure the supported barcode types and a pattern if needed. A file is split only when the configured conditions are met.
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+### Amount Formatting
 
-## Document Splitting
+**Allow Rounding During Amount Comparison** controls whether small rounding differences are accepted. **Require Exact Match for Amount Comparison** requires an exact comparison. Check which policy your organization needs before enabling either option; the two settings have different effects on validation.
 
-In the **Document Splitting** section, you can configure whether an uploaded document should be split into multiple documents whenever a **barcode** appears on one of its pages.
+### Extraction
 
-To activate this feature:
+**Table Extraction** enables extraction based on trained rules. **AI Table extraction** enables AI-based table extraction. The controls for **Use Table Extraction Vision (AI)** and **Use Structured Extraction (AI)** choose how the AI reads and structures a table. A document type also needs configured table columns for useful results; see [Table Columns](../../global-settings/document-types/table-columns/README.md).
 
-1. Go to the **Document Splitting** section.
-2.  Open the dropdown menu.
+The current screen also includes **Table extraction for costing element**, **Auto extract tax code**, **Save extraction rules (Admin only)**, and **AI Model**. The model selector and supplier table live here, within **Extraction**. See [Table Extraction for Costing Element](table-extraction-for-costing-element.md), [Auto Extract Tax Code](auto-extract-tax-code.md), and [AI Model](ai-model.md) for those topics.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
-3.  Select **Split by Barcode/QR Code**.
+**What the AI requests** shows the header fields and table columns requested for the selected document type. Use **Edit fields** or **Edit columns** only after checking the selected type; the list distinguishes requested columns from configured columns that are not requested. Supplier training or AI hints can change the requested fields for a supplier.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-193-classification-extraction-en.png" alt="Expanded Extraction section with Table Extraction, AI Table extraction, Vision, Structured Extraction and What the AI requests for Invoice"><figcaption><p>The Extraction section shows both the processing controls and requested fields for the selected type.</p></figcaption></figure>
 
-You will then have the option to:
+### Electronic Document
 
-* Select one or more barcode types to be detected.
-*   Specify a regex pattern that the barcode must match in order to trigger document splitting.
+**Process Unsupported ZUGFeRD PDF** controls whether unsupported ZUGFeRD PDFs are processed as ordinary PDFs instead of using their embedded XML. For supported versions, see [ZUGFeRD](../../global-settings/document-types/edi/zugferd/README.md).
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+## Classification Rules
 
-## Amount Formatting
+The **Classification Rules** tab lists patterns used to assign a document type or subtype. Search the list with **Search by column**. Existing rows offer **Edit** and **Delete** actions; check which documents rely on a rule before changing it. In the captured test organization the list is empty, so no existing rule was edited or deleted.
 
-In the **Amount Formatting** section, you have two options:
+<figure><img src="../../../../.gitbook/assets/dbdc-193-classification-rules-en.png" alt="Classification Rules tab with search, Add button and empty rules table in Sandbox Test A"><figcaption><p>Find existing rules here or choose Add to prepare a new one.</p></figcaption></figure>
 
-* **Allow Rounding During Amount Comparison:**\
-  If enabled, a tolerance of ±0.5 is allowed during amount comparison.\
-  If disabled, a default tolerance of ±0.05 applies.
-* **Require Exact Match for Amount Comparison:**\
-  If enabled, amounts must match exactly with zero tolerance.\
-  If disabled, a tolerance of ±0.05 is allowed.
+To prepare a rule, choose **Add**. The dialog asks for **Pattern**, **Type**, **Sub Organization**, **Document Type**, and **Sub Document Type**. Select the type and destination carefully; the pattern determines which documents the rule can match. **Cancel** leaves the organization unchanged. **Save** creates the rule, so review it before saving.
 
-<mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
-
-## Table Extraction
+<figure><img src="../../../../.gitbook/assets/dbdc-193-classification-rule-add-en.png" alt="Configure classification Rule dialog with Pattern, Type, Sub Organization, Document Type, Sub Document Type, Cancel and Save"><figcaption><p>Review the pattern and target document type before saving a classification rule.</p></figcaption></figure>
 
 {% hint style="info" %}
-**Prerequisites for a working table extraction**
-
-* The document type has **table columns** (Settings → Global Settings → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Without columns there is nothing to extract into.
-* **Table Extraction** or **AI Table Extraction** is switched on below, for the whole organization.
-* The document has readable text: OCR ran, or E-Text is used for born-digital PDFs ([OCR Settings](../ocr-settings.md)).
-* Training and AI models are **per supplier**. A trained table applies only to documents of the supplier it was trained on.
+These screenshots show English UI in the synthetic DocBits Documentation Test A organization. No organization setting or classification rule was saved while capturing them.
 {% endhint %}
 
 You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table (whether AI-based or manual) is always linked to a specific supplier.

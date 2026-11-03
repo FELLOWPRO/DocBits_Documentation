@@ -17,7 +17,9 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ---
 
-## N2611 — Sandbox 16 oktober 2026 · Productie 4 november 2026
+## NOVA novemberrelease N2611
+
+Sandbox 16 oktober 2026 · Productie 4 november 2026
 
 **Transformatieregels en layouts**
 
@@ -153,7 +155,9 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ---
 
-## N2703 — Sandbox 17 februari 2027 · Productie 3 maart 2027
+## NOVA maartrelease N2703
+
+Sandbox 17 februari 2027 · Productie 3 maart 2027
 
 **Goedkeuring en purchase order matching**
 
@@ -193,7 +197,9 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ---
 
-## N2706 — Sandbox 2 juni 2027 · Productie 16 juni 2027
+## NOVA junirelease N2706
+
+Sandbox 2 juni 2027 · Productie 16 juni 2027
 
 **Automatische boekhoudregelbeheerder**
 
@@ -229,7 +235,9 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ---
 
-## N2710 — Sandbox 6 oktober 2027 · Productie 20 oktober 2027
+## NOVA oktoberrelease N2710
+
+Sandbox 6 oktober 2027 · Productie 20 oktober 2027
 
 **Auto Accounting op het goedkeuringsscherm**
 

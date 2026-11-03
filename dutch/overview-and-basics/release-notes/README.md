@@ -12,11 +12,13 @@ Kies een releasekanaal om te zien wat er verandert voor uw team. **In de NOVA-cy
 
 | Releasekanaal | Releaseopmerkingen | Focus |
 | --- | --- | --- |
-| **NOVA N2611 – Minor release** | [Wat is er nieuw voor klanten](nova-minor-release-4-november-2026.md) · **4 november 2026 (gepland)** | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
-| **VESTA V2611 — Volgende hotfix (gepland)** | [11 november 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduceert alle voormalige VESTA-bètafuncties in de reguliere VESTA-functieset. |
+| **NOVA novemberrelease N2611** | [Wat is er nieuw voor klanten](nova-minor-release-4-november-2026.md) · **4 november 2026 (gepland)** | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
+| **VESTA novemberrelease V2611 (gepland)** | [11 november 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduceert alle voormalige VESTA-bètafuncties in de reguliere VESTA-functieset. |
 | **VESTA — Hotfix-release** | [14 oktober 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Verbeteringen en fixes voor de huidige VESTA-productierelease. |
 
-## NOVA N2611 – Minor release 4 november 2026
+## NOVA novemberrelease N2611
+
+### 4 november 2026
 
 ### Wat uw team krijgt met NOVA
 

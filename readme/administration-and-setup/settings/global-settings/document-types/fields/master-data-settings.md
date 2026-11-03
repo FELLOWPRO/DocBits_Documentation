@@ -50,10 +50,12 @@ Wybierz **Tworzyć** wewnątrz rozwiniętej konfiguracji, aby dodać mapowanie:
 * **Pole wyszukiwania** to kolumna zestawu danych, która jest przeszukiwana.
 * **Pole walidacji** to pole dokumentu, które otrzymuje wynik.
 * **Pole nadrzędne** opcjonalnie sprawdza wynik względem powiązanego pola.
-* **Operator wyszukiwania** określa sposób porównywania tekstu. **Smart** ignoruje spacje i znaki interpunkcyjne; pozostałe opcje to Zawiera, Zaczyna się od, Kończy się na i Dokładny.
+* **Operator wyszukiwania** określa sposób porównywania tekstu. **Mądry** ignoruje spacje i znaki interpunkcyjne, więc wartości różniące się tylko formatowaniem nadal pasują. **Inteligentny Dokładny** stosuje tę samą normalizację, ale zwraca rekord tylko wtedy, gdy cała wartość jest identyczna - przy częściowym dopasowaniu wynik nie zostanie zwrócony. Pozostałe opcje to **Zawiera**, **Zaczyna się od**, **Kończy się na** i **Dokładny**.
 * **Automatyczne wyzwalanie** uruchamia wyszukiwanie, gdy to pole zostanie wypełnione. **Przeszukiwalny** pozwala polu brać udział w wyszukiwaniach i umożliwia ręczne wyszukiwanie podczas walidacji.
 
 Wybierz **Tworzyć**, aby dodać mapowanie. Użyj menu **Akcje** z trzema kropkami w wierszu, aby edytować lub usunąć edytowalne mapowanie. Domyślne mapowania można tylko wyświetlać.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-pl.png" alt="Okno Utwórz pola danych głównych z otwartą listą Operator wyszukiwania: Mądry, Inteligentny Dokładny, Zawiera, Kończy się na, Dokładny, Zaczyna się od"><figcaption><p>Wybierz <strong>Inteligentny Dokładny</strong>, gdy po pominięciu spacji i znaków interpunkcyjnych musi pasować cała wartość.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-pl-20261101.png" alt="Pusty formularz Utwórz pola danych głównych z Pole wyszukiwania, Pole walidacji, Pole nadrzędne, Operator wyszukiwania, Automatyczne wyzwalanie, Przeszukiwalny, Anulować i Tworzyć"><figcaption><p>Wybierz, w jaki sposób kolumna zestawu danych mapuje się na pole dokumentu.</p></figcaption></figure>
 

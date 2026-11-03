@@ -93,3 +93,4 @@ In het rapport is zo'n veld rood gemarkeerd. De kolom **Actie** toont het stamge
 * **Actie:** elke stap die de waarde heeft doorlopen, met het pictogram van de bron. De stap waar de huidige waarde vandaan komt, is gemarkeerd. Houd de muisaanwijzer erboven om te zien wat elke stap deed, van welke waarde naar welke.
 * **Reden:** de status van het veld. Het (i)-pictogram legt uit waarom de waarde is wat ze is. Staat er *Veld bestond niet*, dan was het veld niet aanwezig op het document.
 * Lange waarden worden met … ingekort — houd de muisaanwijzer erboven voor de volledige waarde.
+* **Lege optionele velden:** onder de tabel vermeldt DocBits hoeveel optionele velden nog leeg zijn. **Tonen** zet ze als rijen in de lijst, zodat u ze met het document kunt vergelijken; **Verbergen** vouwt ze weer samen tot de telling. Lege verplichte velden staan altijd in de lijst.

@@ -94,3 +94,4 @@ Dans le rapport, un tel champ est marqué en rouge. La colonne **Action** montre
 * **Action :** chaque étape que la valeur a traversée, avec l'icône de sa source. L'étape dont provient la valeur actuelle est surlignée. Survolez pour voir ce que chaque étape a fait, de quelle valeur à quelle valeur.
 * **Motif :** l'état du champ. L'icône (i) explique pourquoi la valeur est ce qu'elle est. Si elle indique *Le champ n'existait pas*, le champ n'était pas présent sur le document.
 * Les valeurs longues sont abrégées par … — survolez pour voir la valeur complète.
+* **Champs facultatifs vides :** sous le tableau, DocBits indique combien de champs facultatifs sont encore vides. **Afficher** les liste sous forme de lignes pour les comparer au document ; **Masquer** les regroupe à nouveau dans le compteur. Les champs obligatoires vides sont toujours listés.

@@ -50,10 +50,12 @@ Selecteer **Creëren** in de uitgeklapte configuratie om een koppeling toe te vo
 * **Opzoekveld** is de datasetkolom die wordt doorzocht.
 * **Validatieveld** is het documentveld dat het resultaat ontvangt.
 * **Bovenliggend veld** controleert het resultaat eventueel tegen een gerelateerd veld.
-* **Zoekoperator** bepaalt hoe tekst wordt vergeleken. **Smart** negeert spaties en leestekens; de andere keuzes zijn Bevat, Begint met, Eindigt met en Exact.
+* **Zoekoperator** bepaalt hoe tekst wordt vergeleken. **Smart** negeert spaties en leestekens, zodat waarden die alleen in opmaak verschillen toch overeenkomen. **Smart Exact** past dezelfde normalisatie toe, maar geeft alleen een record terug als de hele waarde gelijk is; bij een gedeeltelijke overeenkomst blijft het resultaat leeg. De andere keuzes zijn **Bevat**, **Begint met**, **Eindigt met** en **Exact**.
 * **Automatische trigger** start een opzoeking wanneer dit veld wordt ingevuld. **Zoekbaar** laat het veld aan zoekopdrachten deelnemen en ondersteunt handmatig opzoeken tijdens de validatie.
 
 Selecteer **Creëren** om de koppeling toe te voegen. Gebruik het driepuntsmenu **Acties** op een rij om een bewerkbare koppeling te wijzigen of te verwijderen. Standaardkoppelingen kunnen alleen worden bekeken.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-nl.png" alt="Venster Mastergegevensvelden maken met de lijst Zoekoperator open: Smart, Smart Exact, Bevat, Eindigt met, Exact, Begint met"><figcaption><p>Kies <strong>Smart Exact</strong> wanneer de hele waarde moet overeenkomen nadat spaties en leestekens zijn genegeerd.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-nl-20261101.png" alt="Leeg formulier Mastergegevensvelden maken met Opzoekveld, Validatieveld, Bovenliggend veld, Zoekoperator, Automatische trigger, Zoekbaar, Annuleren en Creëren"><figcaption><p>Kies hoe een datasetkolom aan een documentveld wordt gekoppeld.</p></figcaption></figure>
 

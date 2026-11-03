@@ -13,7 +13,7 @@ Jeśli chodzi o testowanie zgodnej konfiguracji PO, będziesz musiał utworzyć 
 
 Po utworzeniu zamówienia przejdź do Ustawienia → Wyszukiwanie danych podstawowych i wyszukaj numer zamówienia zakupu dla właśnie utworzonego PO, który powinien teraz pojawiać się w danych podstawowych zamówienia w DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+<figure><img src="../../../.gitbook/assets/a-testing-po-matching-master-data-pl-20261009.png" alt="Polska strona Wyszukaj Dane Główne z kartą Zamówienie Zakupu i tabelą zaimportowanych zamówień zakupu."><figcaption><p>Zamówienia zakupu pojawiają się w wyszukiwaniu danych podstawowych.</p></figcaption></figure>
 
 Powinieneś zobaczyć tutaj swój unikalny numer PO, co oznacza, że DocBits i INFOR są poprawnie zsynchronizowane.
 

@@ -57,6 +57,14 @@ Aprire la gestione dei fornitori. Prima di inviare un invito, controllare aziend
 
 <figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-it-20261031.png" alt="Dashboard interno con Tutti i fornitori, In attesa di approvazione, In attesa di registrazione, ricerca e barra degli strumenti. Le righe dei fornitori esistenti sono coperte."><figcaption><p>Dashboard interno con Tutti i fornitori, In attesa di approvazione, In attesa di registrazione, ricerca e barra degli strumenti. Le righe dei fornitori esistenti sono coperte.</p></figcaption></figure>
 
+## Dettagli del fornitore (vista interna)
+
+Fai clic sulla riga di un fornitore nel **Cruscotto fornitori** per aprire la vista **Dettagli del fornitore** di quel fornitore. Questa vista interna mostra le stesse sei sezioni che il fornitore compila durante la registrazione — **Fornitore Dettagli**, **Indirizzo Dati**, **Fornitore Contatto**, **Fornitore Finanziario**, **Fornitore Acquisto** e **Fornitore Certificati** — insieme al badge dello stato attuale del fornitore (in alto a destra, ad esempio **STATO: IN ATTESA DI APPROVAZIONE**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-it-20261009.png" alt="Vista interna «Dettagli del fornitore» di un fornitore fittizio nell'interfaccia DocBits in italiano"><figcaption><p>Vista interna «Dettagli del fornitore»: a sinistra le sei sezioni della registrazione, in alto a destra lo stato del fornitore. Tutti i nomi e i dati sono valori d'esempio inventati (organizzazione d'esempio Musterfirma GmbH, fornitore d'esempio Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Usa questa vista per verificare il profilo di un fornitore, correggere o completare i dati mancanti e preparare la decisione di approvazione. Per la descrizione di ogni sezione, consulta [Registrazione del fornitore](supplier-registration.md). Il pulsante Indietro in alto nella vista ti riporta al **Cruscotto fornitori** senza salvare nulla.
+
 <figure><img src="../../../.gitbook/assets/dbdc-49-invitation-it-20261031.png" alt="Modulo vuoto Aggiungi fornitore con Gruppo Fornitori, Nome del fornitore, dati del referente, Annulla e Salva. Salva richiede l’invio dell’invito alla registrazione; per questa cattura è stato usato soltanto Annulla."><figcaption><p>Modulo vuoto Aggiungi fornitore con Gruppo Fornitori, Nome del fornitore, dati del referente, Annulla e Salva. Salva richiede l’invio dell’invito alla registrazione; per questa cattura è stato usato soltanto Annulla.</p></figcaption></figure>
 
 ## Admin: aprire i dettagli dalla dashboard fornitori

@@ -2,7 +2,9 @@
 
 Screenshots illustrate the release described in each section. They are historical examples; menus and settings may differ in later versions. Use the linked feature guides for current configuration instructions.
 
-**NOVA R1.1 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
+**NOVA N2611 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
+
+**Release IDs:** since November 2026 a release is named by its channel and the year and month of its production release: **N2611** is the NOVA release of November 2026, **V2611** the VESTA release of November 2026. Earlier releases keep their former names (for example R1.0.15).
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.mp4" %}
 
@@ -14,11 +16,11 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 
 | Release channel | Release notes | Focus |
 | --- | --- | --- |
-| **NOVA – Minor Release** | [What's new for customers](nova-minor-release-4-november-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
-| **VESTA — Next Hotfix (planned)** | [11 November 2026](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
+| **NOVA N2611 – Minor Release** | [What's new for customers](nova-minor-release-4-november-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
+| **VESTA V2611 — Next Hotfix (planned)** | [11 November 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
 | **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
 
-## NOVA – Minor Release 4 November 2026
+## NOVA N2611 – Minor Release 4 November 2026
 
 ### What your team gains with NOVA
 
@@ -46,7 +48,7 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 
 ## VESTA — Hotfix Releases
 
-**Next planned hotfix: [11 November 2026](vesta-hotfix-11-november-2026.md).** All features previously available as beta in VESTA, and now included in NOVA, will become regular VESTA features in this hotfix.
+**Next planned hotfix: [11 November 2026 — V2611](vesta-hotfix-11-november-2026.md).** All features previously available as beta in VESTA, and now included in NOVA, will become regular VESTA features in this hotfix.
 
 **Latest released hotfix: [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md).** This VESTA hotfix introduced the Settings Assistant, updated AI tiers, the Header Field Check, sign-in improvements and purchase order charge-matching improvements.
 

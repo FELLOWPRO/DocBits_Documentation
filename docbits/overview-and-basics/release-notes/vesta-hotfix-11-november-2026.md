@@ -1,4 +1,6 @@
-# VESTA V2611 Hotfix — 11 November 2026
+# VESTA November Release V2611
+
+**11 November 2026**
 
 > **Release ID:** V2611 · **Release channel:** VESTA · **Status:** Planned · **Sandbox:** 4 November 2026 · **Production:** 11 November 2026.
 

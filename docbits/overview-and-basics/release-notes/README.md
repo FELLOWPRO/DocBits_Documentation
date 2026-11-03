@@ -14,11 +14,13 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 
 | Release channel | Release notes | Focus |
 | --- | --- | --- |
-| **NOVA N2611 – Minor Release** | [What's new for customers](nova-minor-release-4-november-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
-| **VESTA V2611 — Next Hotfix (planned)** | [11 November 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
+| **NOVA November Release N2611** | [What's new for customers](nova-minor-release-4-november-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
+| **VESTA November Release V2611 (planned)** | [11 November 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
 | **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
 
-## NOVA N2611 – Minor Release 4 November 2026
+## NOVA November Release N2611
+
+**4 November 2026**
 
 ### What your team gains with NOVA
 

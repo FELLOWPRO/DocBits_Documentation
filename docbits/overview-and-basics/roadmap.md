@@ -17,7 +17,9 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 ---
 
-## N2611 — Sandbox 16 October 2026 · Production 4 November 2026
+## NOVA November Release N2611
+
+Sandbox 16 October 2026 · Production 4 November 2026
 
 **Transformation rules and layouts**
 
@@ -139,7 +141,9 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 ---
 
-## N2703 — Sandbox 17 February 2027 · Production 3 March 2027
+## NOVA March Release N2703
+
+Sandbox 17 February 2027 · Production 3 March 2027
 
 **Approval and purchase order matching**
 
@@ -177,7 +181,9 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 ---
 
-## N2706 — Sandbox 2 June 2027 · Production 16 June 2027
+## NOVA June Release N2706
+
+Sandbox 2 June 2027 · Production 16 June 2027
 
 **Auto Accounting Rule Manager**
 
@@ -212,7 +218,9 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 ---
 
-## N2710 — Sandbox 6 October 2027 · Production 20 October 2027
+## NOVA October Release N2710
+
+Sandbox 6 October 2027 · Production 20 October 2027
 
 **Auto Accounting on the approval screen**
 

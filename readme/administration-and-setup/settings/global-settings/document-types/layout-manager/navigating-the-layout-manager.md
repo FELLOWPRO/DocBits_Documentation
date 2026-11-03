@@ -1,4 +1,4 @@
-# Navigare il Layout Manager
+# Navigare nel Layout Builder
 
 Usa il **Layout Manager** per disporre i gruppi e i campi che gli utenti vedono in un documento. Le schermate di questa pagina mostrano l'interfaccia in italiano.
 

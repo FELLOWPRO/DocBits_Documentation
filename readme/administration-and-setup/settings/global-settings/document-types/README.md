@@ -46,6 +46,10 @@ Donde esta función esté disponible, abra las reglas de validación del tipo de
 
 Abra la sección de tipos de documentos personalizados, elija Nuevo e ingrese un nombre claro. Complete los pasos de configuración ofrecidos para el modo de extracción previsto, los campos, los grupos y cualquier tabla. El entrenamiento del modelo y la configuración de extracción son independientes de simplemente guardar un indicador de campo obligatorio.
 
+#### Reglas de validación personalizadas
+
+Abra un tipo de documento y seleccione **Reglas de validación personalizadas** para gestionar las reglas de validación propias de ese tipo (la función debe estar activada en el tipo de documento). Para reutilizar una regla existente sin recrearla, siga la guía [Duplicar una regla de validación personalizada](duplicate-a-custom-validation-rule.md). La guía explica el nombre de la regla, la clave de reglas y los botones de confirmación.
+
 {% hint style="info" %}
 Consulte [Configurar un tipo de documento](../../../setup/document-types/) para conocer el procedimiento de configuración.
 {% endhint %}

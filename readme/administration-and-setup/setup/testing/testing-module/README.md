@@ -1,5 +1,21 @@
 # Módulo Testing
 
+## Vídeo: realizar la primera prueba en el navegador
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/es.mp4" %}
+
+[Abrir el vídeo en español con subtítulos, capítulos y transcripción](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/es.html).
+
+**Duración: 2:13.** Interfaz, narración y subtítulos en español.
+
+La guía utiliza el **Live testing self-check** integrado en el entorno de desarrollo: revisar los tres pasos, crear y guardar una entrada con nombre, iniciar la prueba en el navegador y abrir el registro guardado de esa misma ejecución. La plantilla no necesita parámetros y no modifica datos de negocio. Un resultado aprobado confirma esas tres comprobaciones; no demuestra la extracción de facturas, su aprobación ni la exportación al ERP.
+
+**Versión para revisión:** la escucha humana completa y la validación funcional siguen pendientes.
+
+{% hint style="info" %}
+**Compruebe el resultado guardado.** En las grabaciones inglesa y alemana de la versión 11.21.2, el indicador de una entrada mostraba *bloqueado* aunque tanto la ejecución como su registro guardado indicaban *aprobado*. Volver a abrir la entrada restablecía el indicador correcto. Ante una discrepancia, revise el registro de esa misma ejecución. Reabrir es una solución provisional observada, no una corrección confirmada.
+{% endhint %}
+
 ## Para qué sirve el módulo Testing
 
 El módulo **Testing** ejecuta pruebas de navegador dentro de su propia sesión de DocBits iniciada. Una prueba maneja las

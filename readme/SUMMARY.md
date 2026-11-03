@@ -197,6 +197,7 @@
         * [Rozwiązywanie problemów](administration-and-setup/settings/global-settings/document-types/fields/troubleshooting-2.md)
         * [Tworzenie pól z dodatkowymi opłatami](administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md)
         * [Ustawienia danych głównych](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
+        * [Konfigurowanie Właściwości Pola](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
       * [Trenowanie modelu](administration-and-setup/settings/global-settings/document-types/model-training/README.md)
         * [Cel i zastosowanie: Trenowanie modelu](administration-and-setup/settings/global-settings/document-types/model-training/purpose-and-use-model-training.md)
         * [Import danych: Trenowanie modelu](administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md)

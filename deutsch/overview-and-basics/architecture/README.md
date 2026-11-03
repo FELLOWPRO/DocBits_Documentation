@@ -30,7 +30,7 @@ Doc**Bits** integriert sich nahtlos in Infor LN/M3 über die ION API, ION Desk u
 
 ## **DocBits Operator-Architektur**
 
-Alle Verbindungen zwischen den Komponenten werden mit branchenüblichen Verschlüsselungsprotokollen gesichert. SSH, HTTPS und andere sichere Kanäle gewährleisten die Datenintegrität und Vertraulichkeit im gesamten System.
+Die konkrete Absicherung der Verbindungen hängt von Ihrer Bereitstellung und deren Konfiguration ab. Prüfen Sie für die verwendeten Komponenten und Integrationen, welche Transportprotokolle und Sicherheitsvorgaben tatsächlich gelten.
 
 **On-Premise:**&#x20;
 

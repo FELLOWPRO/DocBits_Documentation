@@ -196,6 +196,7 @@
         * [Migliori Pratiche](administration-and-setup/settings/global-settings/document-types/fields/best-practices-3.md)
         * [Risoluzione dei problemi](administration-and-setup/settings/global-settings/document-types/fields/troubleshooting-2.md)
         * [Creare campi con costi aggiuntivi](administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md)
+        * [Configurazione delle Proprietà Campo](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
         * [Impostazioni dei dati master](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Addestramento del modello](administration-and-setup/settings/global-settings/document-types/model-training/README.md)
         * [Scopo e utilizzo: addestramento del modello](administration-and-setup/settings/global-settings/document-types/model-training/purpose-and-use-model-training.md)

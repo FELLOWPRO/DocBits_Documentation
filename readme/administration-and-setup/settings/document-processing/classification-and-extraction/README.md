@@ -81,7 +81,7 @@ Im Abschnitt **Amount Formatting** stehen Ihnen zwei Optionen zur Verfügung:
 * Der Dokumenttyp hat **Tabellenspalten** (Settings → Global Settings → Document Types → [Tabellenspalten](../../global-settings/document-types/table-columns/README.md)). Ohne Spalten gibt es nichts, in das extrahiert werden könnte.
 * **Table Extraction** oder **AI Table Extraction** ist unten für die gesamte Organisation eingeschaltet.
 * Das Dokument enthält lesbaren Text: OCR wurde ausgeführt, oder bei digital erzeugten PDFs wird E-Text verwendet ([OCR-Einstellungen](../ocr-settings.md)).
-* Training und KI-Modelle gelten **pro Lieferant**. Eine trainierte Tabelle wird nur auf Dokumente des Lieferanten angewendet, für den sie trainiert wurde.
+* Die im Validierungsbildschirm gewählte **KI-Modellüberschreibung** gilt für die aktuelle Extraktionsvorlage innerhalb Ihrer Organisation. Sie stellt nicht automatisch alle Vorlagen eines Lieferanten um. Eine trainierte Tabelle wird nur auf Dokumente des Lieferanten angewendet, für den sie trainiert wurde.
 {% endhint %}
 
 Sie können Tabellen aus Dokumenten extrahieren, indem Sie entweder **Table Extraction** oder **AI Table Extraction** aktivieren. Eine trainierte Tabelle (ob KI-basiert oder manuell) ist immer an einen bestimmten Lieferanten gebunden.

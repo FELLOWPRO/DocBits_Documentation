@@ -15,7 +15,7 @@ site:
       title: 🇩🇪 Deutsch
       path: deutsch
       content:
-        directory: ./deutsch
+        directory: null
         language: de
     - type: space
       key: space-3
@@ -68,5 +68,5 @@ site:
         zh: Chinese
       path: chinese
       content:
-        directory: ./chinese
+        directory: null
         language: zh

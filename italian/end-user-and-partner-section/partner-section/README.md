@@ -1,2 +1,0 @@
-# Sezione partner
-

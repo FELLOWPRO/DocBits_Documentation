@@ -1,2 +1,0 @@
-# Aprovação Antes da Exportação
-

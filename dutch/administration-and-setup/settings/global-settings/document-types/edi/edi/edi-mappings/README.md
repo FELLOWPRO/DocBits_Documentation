@@ -1,2 +1,0 @@
-# EDI-mappings
-

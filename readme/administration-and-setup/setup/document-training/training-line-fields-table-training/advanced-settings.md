@@ -12,6 +12,8 @@ The Settings dialog holds every option described on this page. Expand the **Adva
 
 Each option is described in its own section below, together with the effect it has on the extracted table.
 
+The examples below use a synthetic invoice and controlled reference responses. They illustrate the settings, the requests triggered by the UI actions and the displayed reference results. They do not verify the extraction service against a real document. In the three replacement result figures, Settings is reopened after the action so that the configuration and the remaining rows can be seen together. The same three line items remain in these examples; the different actions and settings explain how each reference result was reached.
+
 ### Header Row Count
 
 **Use this setting to define how many lines make up the table header.**

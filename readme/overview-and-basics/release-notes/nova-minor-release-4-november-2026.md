@@ -1,4 +1,6 @@
-# NOVA N2611 – Minor Release 4.11.
+# NOVA November-Release N2611
+
+## 4. November 2026
 
 **Verfügbarkeit von NOVA N2611:** Seit dem **16. Oktober 2026** in der Sandbox verfügbar. Der Produktionsrelease ist für den **4. November 2026** geplant.
 

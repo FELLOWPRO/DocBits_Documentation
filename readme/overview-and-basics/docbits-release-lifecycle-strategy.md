@@ -1,8 +1,8 @@
 # DocBits-releaselevenscyclusstrategie
 
-Met de uitrol van de aankomende minor release R1.1 introduceert DocBits een nieuwe releaselevenscyclusstrategie op basis van twee releasekanalen: VESTA en NOVA.
+Met de uitrol van de minor release N2611 introduceert DocBits een nieuwe releaselevenscyclusstrategie op basis van twee releasekanalen: VESTA en NOVA.
 
-**NOVA** is het kanaal voor de introductie van nieuwe major en minor releases, zoals **Rx** en **Rx.y**. **VESTA** blijft de bestaande productierelease leveren.
+**NOVA** is het kanaal voor de introductie van nieuwe major en minor releases, zoals **N2611** en **N2703**. **VESTA** blijft de bestaande productierelease leveren.
 
 {% hint style="success" %}
 **Belangrijk: één URL voor zowel VESTA als NOVA**
@@ -90,7 +90,7 @@ De geplande frequentie verschilt tussen major en minor releases die via NOVA wor
 
 #### Major en minor releases via NOVA
 
-FELLOWPRO plant momenteel een cyclus van ongeveer **3–4 maanden voor major en minor releases** die via het NOVA-releasekanaal worden geïntroduceerd, zoals **Rx** en **Rx.y**. Deze schatting geldt voor de hierboven beschreven releaselevenscyclus, inclusief de daaropvolgende rollover naar VESTA en het hergebruik van NOVA voor de volgende release. Zij zegt niets over de frequentie van hotfixes.
+FELLOWPRO plant momenteel een cyclus van ongeveer **3–4 maanden voor major en minor releases** die via het NOVA-releasekanaal worden geïntroduceerd, zoals **N2611** en **N2703**. Deze schatting geldt voor de hierboven beschreven releaselevenscyclus, inclusief de daaropvolgende rollover naar VESTA en het hergebruik van NOVA voor de volgende release. Zij zegt niets over de frequentie van hotfixes.
 
 Deze termijn weerspiegelt onze huidige planningsschatting; het is geen vast schema, geen maximale cyclusduur en geen garantie voor een release- of rolloverdatum. Het tijdstip van elke rollover en van het hergebruik van NOVA is afhankelijk van zowel **de gereedheid van de release als de acceptatie van de geplande overgang door alle klanten**. Als er extra tijd nodig is om de release gereed te maken, bedenkingen van klanten te behandelen of de acceptatie van elke klant te verkrijgen, wordt de cyclus verlengd en kan deze langer dan vier maanden duren.
 

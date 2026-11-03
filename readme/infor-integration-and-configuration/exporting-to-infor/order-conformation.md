@@ -5,7 +5,7 @@ Piccolo aggiornamento per la Conferma dell'Ordine
 
 
 {% hint style="info" %}
-Link al [File](../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties)
+Link al [File](<../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties>)
 {% endhint %}
 
 ```

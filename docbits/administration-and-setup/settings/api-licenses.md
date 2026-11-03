@@ -1,5 +1,7 @@
-# System Licenses
+# API Licenses
 
-<figure><img src="../../.gitbook/assets/system_licenses.png" alt="System Licenses"><figcaption><p>System Licenses Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/api-licenses-page-en.png" alt="The API Licenses page in Settings with the columns Name, License and Version and one row per third-party package"><figcaption><p>The <strong>API Licenses</strong> page in Settings.</p></figcaption></figure>
 
-The System Licenses page (also called API Licenses) displays all third-party software packages used by DocBits, including their version numbers and associated open-source licenses. This information is provided for compliance and transparency purposes.
+The **API Licenses** page lists all third-party software packages used by DocBits, with the **Name**, the **License** and the **Version** of each package. The page is read-only and is provided for compliance and transparency: use it to check which open-source licenses your DocBits installation uses.
+
+You find it in **Settings** in the **System & Administration** group under **System Licenses**; the page itself is titled **API Licenses**.

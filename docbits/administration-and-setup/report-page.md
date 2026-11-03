@@ -12,7 +12,7 @@ The page is a module switch. Turn it on once for the organization:
 2. In the **Document Type** card, turn on **Show report**.
 3. The **Report** entry then appears in the sidebar for the users of the organization.
 
-<figure><img src="../.gitbook/assets/report-show-report-setting-en.png" alt="The Document Type card in Settings, Module, Document Integration with the Show report switch"><figcaption><p>The <strong>Show report</strong> switch in the <strong>Document Type</strong> card.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/report-show-report-setting-en.png" alt="The Show report switch."><figcaption><p>The Show report switch.</p></figcaption></figure>
 
 ## Open the Report page
 
@@ -24,7 +24,7 @@ Select the chart icon in the sidebar. The page opens with the time filter, the k
 
 The **Time Unit** filter at the top of the page sets the period for every figure and section below it. It offers **Last 7 Days**, **Last 30 Days** and **Select Time Range**, which opens a calendar where you pick a start and an end date.
 
-<figure><img src="../.gitbook/assets/report-time-unit-options-en.png" alt="The Report page with the Time Unit drop-down open showing Last 7 Days, Last 30 Days and Select Time Range"><figcaption><p>The three choices of the <strong>Time Unit</strong> filter.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/dbdc-19-report-time-options-native-en-20261103.png" alt="Time Unit choices: Last 7 Days, Last 30 Days and Select Time Range. The application header and navigation are outside the image."><figcaption><p>Time Unit choices: Last 7 Days, Last 30 Days and Select Time Range. The application header and navigation are outside the image.</p></figcaption></figure>
 
 ## The figures next to the filter
 
@@ -57,4 +57,4 @@ Below the chart are four cards. They are closed by default; select a header to o
 
 <figure><img src="../.gitbook/assets/report-status-statistic-en.png" alt="The expanded Status statistic card with the columns Type, Status and Count"><figcaption><p><strong>Status statistic</strong>.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/report-export-statistic-en.png" alt="The expanded Export statistic card with one organization expanded and the columns Users, Type and Exported"><figcaption><p><strong>Export statistic</strong>, broken down by organization.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/dbdc-19-report-export-stats-native-en-20261103.png" alt="Export statistic with an existing organisation section expanded. Organisation names and row values are masked; this image shows existing statistics."><figcaption><p>Export statistic with an existing organisation section expanded. Organisation names and row values are masked; this image shows existing statistics.</p></figcaption></figure>

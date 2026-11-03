@@ -18,7 +18,9 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## N2611 — Sandbox 16 ottobre 2026 · Produzione 4 novembre 2026
+## NOVA Rilascio di novembre N2611
+
+Sandbox 16 ottobre 2026 · Produzione 4 novembre 2026
 
 **Regole di trasformazione e layout**
 
@@ -161,7 +163,9 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## N2703 — Sandbox 17 febbraio 2027 · Produzione 3 marzo 2027
+## NOVA Rilascio di marzo N2703
+
+Sandbox 17 febbraio 2027 · Produzione 3 marzo 2027
 
 **Approvazione e corrispondenza degli ordini di acquisto**
 
@@ -202,7 +206,9 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## N2706 — Sandbox 2 giugno 2027 · Produzione 16 giugno 2027
+## NOVA Rilascio di giugno N2706
+
+Sandbox 2 giugno 2027 · Produzione 16 giugno 2027
 
 **Gestione regole di Auto Accounting**
 
@@ -239,7 +245,9 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## N2710 — Sandbox 6 ottobre 2027 · Produzione 20 ottobre 2027
+## NOVA Rilascio di ottobre N2710
+
+Sandbox 6 ottobre 2027 · Produzione 20 ottobre 2027
 
 **Auto Accounting nella schermata di approvazione**
 

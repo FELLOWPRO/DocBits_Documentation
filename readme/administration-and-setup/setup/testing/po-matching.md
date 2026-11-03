@@ -13,7 +13,7 @@ Lorsqu'il s'agira de tester votre configuration de correspondance PO, vous devre
 
 Une fois que vous avez créé votre bon de commande, allez dans Paramètres → Recherche de données de base et recherchez le numéro de bon de commande du PO que vous venez de créer tel qu'il devrait maintenant apparaître dans les données de base de votre bon de commande dans DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+<figure><img src="../../../.gitbook/assets/a-testing-po-matching-master-data-fr-20261009.png" alt="Page Recherche de données de référence en français, avec l'onglet Bon De Commande et le tableau des bons de commande importés."><figcaption><p>Les bons de commande apparaissent dans la Recherche de données de référence.</p></figcaption></figure>
 
 Vous devriez voir votre numéro unique PO ici, cela signifie que DocBits et INFOR sont correctement synchronisés.
 

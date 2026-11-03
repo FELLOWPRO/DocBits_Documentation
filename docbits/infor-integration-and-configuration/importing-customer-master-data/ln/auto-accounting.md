@@ -23,11 +23,11 @@ Use this guide when an Infor LN administrator wants DocBits to use imported fina
 
 Open **Settings → Module → Order & Finance → Auto accounting** with an administrator account. The **Type** menu offers **LN** and **M3**. For an LN integration, check that the selected type is **LN**. Enable the switch only after the intended LN company, BOD flow and imported master data have been verified. Changing the type or switch can affect accounting behaviour, so follow your organisation's change process.
 
-The following English screenshots are from the synthetic **DocBits Documentation Test A** Sandbox. In this organisation, **LN** was selected and Auto accounting was **off**. The menu was opened without selecting another value; no setting was saved.
+Changes to the Type or switch are saved immediately; follow your organisation's change process. The following screenshots show the existing English controls on the DocBits development test environment. This test view has **M3** selected and the switch appears **on**; it is not an example LN configuration. For an LN integration, the administrator must verify **LN** and the required master data under the approved change process. Opening and closing the Type list did not change either control.
 
-<figure><img src="../../../.gitbook/assets/dbdc-174-auto-accounting-off-en.png" alt="English DocBits Order and Finance settings showing Auto accounting disabled with LN selected"><figcaption><p>Locate Auto accounting and check the selected type before enabling it.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/auto-accounting-existing-native-en-20261103.png" alt="English Auto accounting settings row showing M3 selected in Type and the switch visibly on"><figcaption><p>The current test view shows M3 and an on switch. This is the existing example state, not proof of an accounting result.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc207-auto-accounting-type-options-en.png" alt="English DocBits Auto accounting Type menu showing the LN and M3 choices"><figcaption><p>LN and M3 are the available types in this Sandbox; no choice was changed.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/auto-accounting-options-native-en-20261103.png" alt="Open English Auto accounting Type list showing LN and M3, with M3 selected and the existing switch still on"><figcaption><p>The open Type list shows both LN and M3. No option or switch was changed.</p></figcaption></figure>
 
 ## Prepare LN and ION
 
@@ -41,4 +41,4 @@ The following English screenshots are from the synthetic **DocBits Documentation
 
 Ask the DocBits administrator to verify the received record, organisation and accounting fields in the current import or API logs. Where the relevant lookup table is exposed, search the same identifier under **Settings → Document Processing → Lookup Master Data**. A successfully activated ION flow does not alone prove that DocBits accepted a record. If a value is absent, compare the source BOD, ION mapping, API response and target organisation before switching on auto accounting.
 
-No LN tenant or live financial BOD transfer was available for an end-to-end test. The new Sandbox images verify only the current DocBits controls. The tenant administrator must validate the final mapping and accounting outcome.
+No LN tenant or live financial BOD transfer was available for an end-to-end test. The native screenshots show only the observed DocBits controls and available Type options. The tenant administrator must validate the final mapping and accounting outcome.

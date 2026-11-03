@@ -4,11 +4,11 @@ Use this guide to plan the master data required for M3 auto accounting in DocBit
 
 ## Check the DocBits setting
 
-An administrator can open **Settings → Module → Order & Finance → Auto accounting**. The **Type** menu offers **LN** and **M3**. Choose **M3** only for an M3 integration, and enable the switch after the data flow and required master data have been verified. The screenshots show the English **DocBits Documentation Test A** sandbox. Its switch was **off**, its current Type was **LN**, and opening the menu did not save or change a setting.
+An administrator can open **Settings → Module → Order & Finance → Auto accounting**. The **Type** menu offers **LN** and **M3**. Choose **M3** only for an M3 integration, and enable the switch after the data flow and required master data have been verified. Changes to the Type or switch are saved immediately; follow your organisation's change process. The screenshots show the existing English controls on the DocBits development test environment. **M3** is selected and the switch appears **on**. Opening and closing the Type list did not change either control. This observed state does not prove that master data were imported or that accounting succeeded.
 
-<figure><img src="../../../.gitbook/assets/dbdc207-auto-accounting-settings-en.png" alt="English DocBits Order and Finance settings, with Auto accounting disabled and Type set to LN"><figcaption><p>Locate Auto accounting in Order &amp; Finance; this sandbox example is disabled.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/auto-accounting-existing-native-en-20261103.png" alt="English Auto accounting settings row showing M3 selected in Type and the switch visibly on"><figcaption><p>The current test view shows M3 and an on switch. This is the existing example state, not proof of an accounting result.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc207-auto-accounting-type-options-en.png" alt="Open Auto accounting Type menu in the English DocBits sandbox showing LN and M3 choices"><figcaption><p>The Type menu offers LN and M3. No option was selected in this example.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/auto-accounting-options-native-en-20261103.png" alt="Open English Auto accounting Type list showing LN and M3, with M3 selected and the existing switch still on"><figcaption><p>The open Type list shows both LN and M3. No option or switch was changed.</p></figcaption></figure>
 
 ## Prepare the M3 data flow
 

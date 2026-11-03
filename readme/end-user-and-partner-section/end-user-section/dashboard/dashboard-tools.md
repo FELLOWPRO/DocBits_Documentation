@@ -5,7 +5,7 @@ As ferramentas estão junto à pesquisa. Passe o ponteiro sobre um ícone para v
 | Ferramenta | Utilização |
 | --- | --- |
 | Atualizar | Volte a carregar a lista e os estados. Um indicador de alterações assinala dados mais recentes. |
-| Definições avançadas (engrenagem) | Abra definições de colunas, atalhos e registo de importação de correio. As definições da organização exigem permissões de administrador. |
+| Configurações avançadas (engrenagem) | Abra **Mais configurações**, a referência **Atalhos de teclado**, o **Log de importação** e a janela **Configurações de colunas**. As configurações de toda a organização exigem permissões de administrador. |
 | Digitalizar documento | Abra a janela se a digitalização estiver ativa e houver um scanner compatível. Escolha dispositivo e definições antes de iniciar. |
 | Análise | Mostre estatísticas de estado e selecione uma categoria para filtrar a lista. |
 | Iniciar importação de correio | Inicie uma importação com a configuração de caixa de correio existente. Esta ação não configura uma caixa. |

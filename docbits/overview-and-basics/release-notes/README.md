@@ -20,7 +20,7 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 
 ## NOVA November Release N2611
 
-**4 November 2026**
+### 4 November 2026
 
 ### What your team gains with NOVA
 

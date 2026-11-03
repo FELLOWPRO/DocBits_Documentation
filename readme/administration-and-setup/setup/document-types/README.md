@@ -1,4 +1,4 @@
-# Typy dokumentów
+# Typy Dokumentów
 
 Typy dokumentów informują DocBits, z jakimi rodzajami dokumentów pracuje Twoja organizacja. Administrator znajdzie je w sekcji **Ustawienia → Typy dokumentów** w części **Przetwarzanie dokumentów** menu ustawień.
 
@@ -21,7 +21,7 @@ Strona pokazuje **Domyślne typy dokumentów**, które udostępnia DocBits i kt�
 | **E-dokument** | Otwiera ustawienia dokumentów elektronicznych, jeśli typ je obsługuje. |
 | **Podtypy dokumentów** | Otwiera podtypy tego typu dokumentu. |
 
-W zależności od funkcji dostępnych w Twojej organizacji możesz zobaczyć więcej linków, na przykład do reguł walidacji lub transformacji. Wybierz link na karcie typu, który chcesz zmienić.
+W zależności od funkcji dostępnych w Twojej organizacji możesz zobaczyć więcej linków, na przykład do zasad walidacji albo zasad transformacji. Wybierz link na karcie typu, który chcesz zmienić.
 
 ## Edycja pól i ustawień rozpoznawania
 
@@ -31,7 +31,7 @@ Każdy wiersz pola ma elementy sterujące, takie jak **Obowiązkowe**, **Tylko d
 
 <figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields-pl.png" alt="Konfiguracja pól typu dokumentu Faktura. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy."><figcaption><p>Konfiguracja pól typu dokumentu Faktura. Etykieta WYNIK MECZU oznacza tu próg dopasowania (Match Score), nie wynik sportowy.</p></figcaption></figure>
 
-## Tworzenie własnego typu dokumentu
+## Tworzenie niestandardowego typu dokumentu
 
 Przewiń do **Niestandardowe typy dokumentów** i kliknij **+ New**. Aby skonfigurować nowy typ, postępuj zgodnie z [Adding/Editing Document Types](../../settings/global-settings/document-types/adding-editing-document-types.md).
 

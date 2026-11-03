@@ -9,17 +9,7 @@ pas ce qui a déjà été livré ; le périmètre et les dates peuvent évoluer.
 correctifs urgents entre deux versions sont documentés dans les
 [Notes de version](release-notes/README.md)._
 
-| ID de version | Canal | Sandbox | Production |
-|---|---|---|---|
-| N2611 | NOVA | 16 octobre 2026 | 4 novembre 2026 |
-| V2611 | VESTA | 4 novembre 2026 | 11 novembre 2026 |
-| V2612 | VESTA | 8 décembre 2026 | 15 décembre 2026 |
-| V2702 | VESTA | 10 février 2027 | 17 février 2027 |
-| N2703 | NOVA | 17 février 2027 | 3 mars 2027 |
-| V2703 | VESTA | 10 mars 2027 | 17 mars 2027 |
-| V2705 | VESTA | 5 mai 2027 | 12 mai 2027 |
-| N2706 | NOVA | 2 juin 2027 | 16 juin 2027 |
-| N2710 | NOVA | 6 octobre 2027 | 20 octobre 2027 |
+<table data-search="false"><thead><tr><th>ID de version</th><th>Canal</th><th>Sandbox</th><th>Production</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>16 octobre 2026</td><td>4 novembre 2026</td></tr><tr><td>V2611</td><td>VESTA</td><td>4 novembre 2026</td><td>11 novembre 2026</td></tr><tr><td>V2612</td><td>VESTA</td><td>8 décembre 2026</td><td>15 décembre 2026</td></tr><tr><td>V2702</td><td>VESTA</td><td>10 février 2027</td><td>17 février 2027</td></tr><tr><td>N2703</td><td>NOVA</td><td>17 février 2027</td><td>3 mars 2027</td></tr><tr><td>V2703</td><td>VESTA</td><td>10 mars 2027</td><td>17 mars 2027</td></tr><tr><td>V2705</td><td>VESTA</td><td>5 mai 2027</td><td>12 mai 2027</td></tr><tr><td>N2706</td><td>NOVA</td><td>2 juin 2027</td><td>16 juin 2027</td></tr><tr><td>N2710</td><td>NOVA</td><td>6 octobre 2027</td><td>20 octobre 2027</td></tr></tbody></table>
 
 Seules les versions NOVA sont décrites ci-dessous. Les versions correctives VESTA
 sont documentées dans les [Notes de version](release-notes/README.md) peu avant leur publication.

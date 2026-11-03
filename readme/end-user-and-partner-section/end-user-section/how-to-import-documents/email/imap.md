@@ -4,6 +4,7 @@
 
 Wählen Sie IMAP als Protokoll und geben Sie die Daten Ihres E-Mail-Anbieters ein: Servername, Port, Verschlüsselung, Benutzername, E-Mail-Adresse und Passwort. In den nächsten Schritten legen Sie die Optionen und den E-Mail-Ordner fest.
 
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-de-20261006.png" alt="Der Dialog „E-Mail-Server-Einrichtung“ mit dem Protokoll IMAP, dem Servernamen, Port 993, der Verschlüsselung SSL sowie ausgefülltem Benutzernamen und E-Mail-Adresse."><figcaption><p>Der Dialog „E-Mail-Server-Einrichtung“ mit Beispielwerten: Protokoll IMAP, Server imap.example.com, Port 993, Verschlüsselung SSL.</p></figcaption></figure>
 <figure><img src="../../../../.gitbook/assets/imap-email-server-setup-de-20261006.png" alt="Dialog „E-Mail-Server einrichten“ mit Protokoll IMAP, Servername, Port 993, SSL-Verschlüsselung, Benutzername, E-Mail-Adresse und Passwort"><figcaption><p>Server-Einrichtung mit Beispielwerten. Ersetzen Sie diese durch die Angaben Ihres E-Mail-Anbieters.</p></figcaption></figure>
 
 Zu beachten

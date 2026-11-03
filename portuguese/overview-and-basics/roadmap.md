@@ -1,23 +1,23 @@
 # Roadmap do DocBits
 
-**Disponibilidade da NOVA R1.1:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
+**Disponibilidade da NOVA N2611:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
 
-_Estado do planeamento a 7 de outubro de 2026. Cada versão indica a data de
+_Estado do planeamento a 3 de novembro de 2026. Cada versão indica a data de
 sandbox planeada (quando os clientes a podem testar) e a data de produção
 planeada. Os temas descrevem o que está planeado para a versão, não o que já
 foi entregue; o âmbito e as datas podem mudar. Os hotfixes entre versões estão
 documentados nas [Notas de versão](release-notes/README.md)._
 
-| Versão | Sandbox | Produção |
+| ID da versão | Sandbox | Produção |
 |---|---|---|
-| R1.1 | 16 de outubro de 2026 | 4 de novembro de 2026 |
-| R1.2 | 16 de fevereiro de 2027 | 3 de março de 2027 |
-| R1.3 | 1 de junho de 2027 | 16 de junho de 2027 |
-| R1.4 | 5 de outubro de 2027 | 20 de outubro de 2027 |
+| N2611 | 16 de outubro de 2026 | 4 de novembro de 2026 |
+| N2703 | 17 de fevereiro de 2027 | 3 de março de 2027 |
+| N2706 | 2 de junho de 2027 | 16 de junho de 2027 |
+| N2710 | 6 de outubro de 2027 | 20 de outubro de 2027 |
 
 ---
 
-## R1.1 — Sandbox 16 de outubro de 2026 · Produção 4 de novembro de 2026
+## N2611 — Sandbox 16 de outubro de 2026 · Produção 4 de novembro de 2026
 
 **Regras de transformação e layouts**
 
@@ -160,7 +160,7 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ---
 
-## R1.2 — Sandbox 16 de fevereiro de 2027 · Produção 3 de março de 2027
+## N2703 — Sandbox 17 de fevereiro de 2027 · Produção 3 de março de 2027
 
 **Aprovação e correspondência de ordens de compra**
 
@@ -200,7 +200,7 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ---
 
-## R1.3 — Sandbox 1 de junho de 2027 · Produção 16 de junho de 2027
+## N2706 — Sandbox 2 de junho de 2027 · Produção 16 de junho de 2027
 
 **Gestor de regras da contabilidade automática**
 
@@ -236,7 +236,7 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ---
 
-## R1.4 — Sandbox 5 de outubro de 2027 · Produção 20 de outubro de 2027
+## N2710 — Sandbox 6 de outubro de 2027 · Produção 20 de outubro de 2027
 
 **Auto Accounting no ecrã de aprovação**
 
@@ -285,7 +285,10 @@ documentados nas [Notas de versão](release-notes/README.md)._
 - Entrada de encomendas: uma encomenda de cliente torna-se uma ordem de venda
   no Infor M3 ou no Infor LN (primeira versão, documentos de texto).
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-10-07 by the
-     docbits-roadmap skill. Releases up to R1.4 only; R1.5 and later are not
-     published yet. Themes only; ticket keys, customer names and internal work
+<!-- Themes generated from Jira "Release No." (customfield_10392) on 2026-10-07
+     by the docbits-roadmap skill; release IDs and dates updated to the new
+     channel + YYMM format on 2026-11-03 from CRITICAL-DEV-DOCS
+     Release Management/Release_Schedule.md (R1.1 = N2611, R1.2 = N2703,
+     R1.3 = N2706, R1.4 = N2710). NOVA releases up to N2710 only.
+     Themes only; ticket keys, customer names and internal work
      are deliberately left out. Rerun the skill to refresh. -->

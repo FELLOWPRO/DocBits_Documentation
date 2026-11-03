@@ -13,19 +13,22 @@ Esta configuração ativa a seção [**Correspondência de Ordem de Compra**](..
 ## Etapas de Ativação <a href="#activation-steps" id="activation-steps"></a>
 
 1. Vá para **Configurações** -> **Configurações globais** -> **Tipos de documentos**
-2.  Selecione o tipo de documento desejado e clique em **Mais configurações**.
+2.  Localize o cartão do tipo de documento e abra as respetivas definições com a engrenagem (**Mais configurações**).
+3.  Abra a secção **Ordem de compra** e ative **Ordem de compra**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZSKdVhneopjjzzIBnbax%252Fpo_settings_1.png%3Falt%3Dmedia%26token%3Dab57e25e-9c6a-4273-b21b-ae328579839c\&width=768\&dpr=4\&quality=100\&sign=29a04f7d\&sv=2)
-3.  Na seção **Ordem de Compra**, navegue até a opção **Ordem de Compra**.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAjk74xmxuvvEjZbD7gHz%252Fpo_settings_po.png%3Falt%3Dmedia%26token%3De78c7cf4-30db-4129-b5ca-bc52ee2ce7b4\&width=768\&dpr=4\&quality=100\&sign=da33746e\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/po-settings-purchase-order-20261103-pt.png" alt="Secção Ordem de compra nas definições avançadas do tipo de documento Fatura: primeiro interruptor da conciliação e definições finas abaixo"><figcaption><p>A secção <strong>Ordem de compra</strong> nas definições avançadas. O primeiro interruptor ativa a conciliação de ordens de compra para o tipo de documento; os seguintes afinam-na.</p></figcaption></figure>
 
 ## **Funcionalidade**
 
 Uma vez ativada, a seção [**Correspondência de Ordem de Compra**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) torna-se disponível após a validação do documento.
 
-Você também pode configurar qual tipo de quantidade do **Infor** deve ser usada para correspondência selecionando uma das seguintes opções no menu suspenso ao lado da configuração:
+### Que quantidade é comparada
 
-* **Quantidade**
-* **Quantidade Recebida**
-* **Quantidade de entrega aberta recebida**
+A quantidade da ordem de compra comparada pela conciliação depende de **PO corresponde ao lado do servidor**:
+
+* **PO corresponde ao lado do servidor desativado** – junto ao interruptor **Ordem de compra** aparece uma lista com **Quantidade**, **Quantidade Recebida** e **Quantidade de entrega aberta recebida**. O DocBits compara a quantidade escolhida com o seu próprio motor de conciliação.
+* **PO corresponde ao lado do servidor ativado** – a conciliação segue as regras do tipo de documento e a quantidade faz parte dessas regras. A ligação **Configurar regras de correspondência de pedidos de compra**, à direita da linha, abre as regras.
+
+{% hint style="info" %}
+A captura foi feita com **PO corresponde ao lado do servidor** ativado, por isso a lista de quantidade não aparece nesse ecrã: define-se nas regras de conciliação.
+{% endhint %}

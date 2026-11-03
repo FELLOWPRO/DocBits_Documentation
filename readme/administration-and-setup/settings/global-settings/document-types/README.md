@@ -46,6 +46,10 @@ Là où cette fonctionnalité est disponible, ouvrez les règles de validation d
 
 Ouvrez la section des types de documents personnalisés, choisissez Nouveau et entrez un nom clair. Terminez les étapes de configuration proposées pour le mode d'extraction prévu, les champs, les groupes et tous les tableaux. L’entraînement du modèle et la configuration de l'extraction sont distinctes du simple enregistrement d'un indicateur de champ obligatoire.
 
+#### Règles de validation personnalisées
+
+Ouvrez un type de document, activez la fonction **Règles de validation personnalisées**, puis choisissez **Gérer les règles de validation** pour administrer les règles de validation propres à ce type (la fonction doit être activée sur le type de document). Pour reprendre une règle existante sans la recréer, suivez le guide [Dupliquer une règle de validation personnalisée](duplicate-a-custom-validation-rule.md). Il explique le nom de la règle, la clé de règle et les boutons de confirmation.
+
 {% hint style="info" %}
 Voir [Configurer un type de document](../../../setup/document-types/) pour la procédure de configuration.
 {% endhint %}

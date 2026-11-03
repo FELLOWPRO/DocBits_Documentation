@@ -46,6 +46,10 @@ Laddove questa funzione è disponibile, apri le regole di convalida del tipo di 
 
 Apri la sezione dei tipi di documento personalizzati, scegli Nuovo e inserisci un nome chiaro. Completa i passaggi di configurazione offerti per la modalità di estrazione prevista, i campi, i gruppi e le eventuali tabelle. L'addestramento del modello e la configurazione dell'estrazione sono separati dal semplice salvataggio di un’impostazione di campo obbligatorio.
 
+#### Regole di convalida personalizzate
+
+Apri un tipo di documento, attiva la funzione **Regole di convalida personalizzate**, poi scegli **Gestisci le regole di convalida** per amministrare le regole di convalida proprie di questo tipo (la funzione deve essere attiva sul tipo di documento). Per riprendere una regola esistente senza ricrearla, segui la guida [Duplicare una regola di convalida personalizzata](duplicate-a-custom-validation-rule.md). Spiega il nome della regola, la chiave delle regole e i pulsanti di conferma.
+
 {% hint style="info" %}
 Vedi [Configurare un tipo di documento](../../../setup/document-types/) per la procedura di configurazione.
 {% endhint %}

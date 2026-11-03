@@ -1,83 +1,60 @@
 # Report Page
 
+The **Report** page summarises how documents moved through DocBits in a period: how many arrived, how long processing took, which fields people corrected and where the documents ended up. It is meant for administrators and team leads who look at the intake and validation work as a whole, not at a single document.
+
 {% embed url="https://www.youtube.com/watch?v=ar9jXYJo_AM" %}
 
-### 1. How enable the Report Page
+## Turn the Report page on
 
-Go to **Settings** → **Document Processing** → **Module** → **Document Type** → **Show Report** Toggle the button to enable this setting.
+The page is a module switch. Turn it on once for the organization:
 
-<figure><img src="../.gitbook/assets/enable_report_page_setting.png" alt="Enable Report Page Setting"><figcaption></figcaption></figure>
+1. Go to **Settings → Module** and open the **Document Integration** group.
+2. In the **Document Type** card, turn on **Show report**.
+3. The **Report** entry then appears in the sidebar for the users of the organization.
 
-### 2. **How to Access the Report Page**
+<figure><img src="../.gitbook/assets/report-show-report-setting-en.png" alt="The Document Type card in Settings, Module, Document Integration with the Show report switch"><figcaption><p>The <strong>Show report</strong> switch in the <strong>Document Type</strong> card.</p></figcaption></figure>
 
-Follow these steps to access the **Report Page** in DocBits:
+## Open the Report page
 
-1. **Login to DocBits**
-   * Open DocBits and log in with your credentials.
-2. **Click on the Report Icon**
-   * On the left sidebar, find and click the **Report** icon (depicted as a graph or chart).
+Select the chart icon in the sidebar. The page opens with the time filter, the key figures of the period and the field statistics.
 
-<figure><img src="../.gitbook/assets/image (382).png" alt="Report Icon in Sidebar" width="314"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/report-sidebar-icon-en.png" alt="The DocBits sidebar with the chart icon highlighted and the tooltip Report"><figcaption><p>The <strong>Report</strong> entry in the sidebar.</p></figcaption></figure>
 
-### **3. Using the Time Unit Filter**
+## Choose the time frame
 
-*   At the top of the page, you can adjust the **Time Unit** filter to select the time range for your report:
+The **Time Unit** filter at the top of the page sets the period for every figure and section below it. It offers **Last 7 Days**, **Last 30 Days** and **Select Time Range**, which opens a calendar where you pick a start and an end date.
 
-    * **Last 30 Days**
-    * **Last 7 Days**
-    * **Custom Time Frame** (custom date range)
+<figure><img src="../.gitbook/assets/report-time-unit-options-en.png" alt="The Report page with the Time Unit drop-down open showing Last 7 Days, Last 30 Days and Select Time Range"><figcaption><p>The three choices of the <strong>Time Unit</strong> filter.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/time_unit_filter.png" alt="Time Unit Filter" width="563"><figcaption></figcaption></figure>
+## The figures next to the filter
 
-### **4. New Documents Display**
+<figure><img src="../.gitbook/assets/report-time-unit-filter-en.png" alt="The top row of the Report page: Time Unit set to 30, the New Documents card, the Average System-Time card and the download button"><figcaption><p><strong>Time Unit</strong>, <strong>New Documents</strong>, <strong>Average System-Time</strong> and the download button.</p></figcaption></figure>
 
-* Next to the **Time Unit** filter, there is an information display labeled **New Documents**. This shows the number of new documents that were imported during the selected timeframe.
+- **New Documents** shows how many documents were imported in the selected period.
+- **Average System-Time** shows the average time in seconds DocBits needed to process a document in that period.
+- The download button on the right of the row exports the report as an Excel file (XLSX) for the selected period.
 
-<figure><img src="../.gitbook/assets/new_documents_display.png" alt="New Documents Display" width="315"><figcaption></figcaption></figure>
+## Changed fields
 
-### **5. Average System Time Display**
+The **Changed fields** chart counts how often each field was corrected by hand in the selected period, one bar per field, so the fields your team edits most are easy to spot. The question mark next to the heading explains what the chart counts.
 
-* Following the **New Documents** label, you will find the **Average System Time** display. This shows the average time, in seconds, that the system took to process a new document during the selected timeframe.
+<figure><img src="../.gitbook/assets/report-changed-fields-en.png" alt="The Changed fields bar chart with fields such as Total net amount, Payment terms and Delivery date and the chart menu in its top right corner"><figcaption><p>How often each field was changed manually.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/average_system_time_display.png" alt="Average System Time Display" width="437"><figcaption></figcaption></figure>
+Use the menu in the top right corner of the chart to download the diagram itself as **SVG**, **PNG** or **CSV**.
 
-### **6. Changed Fields Section**
+## Additional report sections
 
-* Below the time-related information, you will find the **Changed Fields** section. This section displays a diagram showing how frequently each document field was manually modified by users during the selected timeframe.
-* Each field is displayed with the corresponding number of changes, shown as bars in the diagram.
+Below the chart are four cards. They are closed by default; select a header to open its table and select it again to close it.
 
-<figure><img src="../.gitbook/assets/image (388).png" alt="Changed Fields Diagram" width="563"><figcaption></figcaption></figure>
+1. **Total documents per type** lists each document type with its **Type** and the number of documents in **Count**. A type that has sub document types carries a **+** to break its number down.
+2. **Daily average per doctype** shows the same list as a daily average per document type.
+3. **Status statistic** breaks the documents down by processing status, with the columns **Type**, **Status** and **Count**.
+4. **Export statistic** first lists the organizations of your account; expand one to see which export formats were used, with the columns **Users**, **Type** and **Exported**.
 
-* **Download Options for the Diagram**
-  * On the right side of the **Changed Fields** diagram, there is a small menu that allows you to download the diagram in various formats. You can download the diagram as:
-    * **SVG**
-    * **PNG**
-    * **CSV**
-  * To download the diagram, click on the menu and select your preferred file format.
+<figure><img src="../.gitbook/assets/report-total-documents-per-type-en.png" alt="The expanded Total documents per type card with the columns Type and Count"><figcaption><p><strong>Total documents per type</strong>.</p></figcaption></figure>
 
-### **7. Additional Report Sections**
+<figure><img src="../.gitbook/assets/report-daily-average-per-doctype-en.png" alt="The expanded Daily average per doctype card with the columns Type and Count"><figcaption><p><strong>Daily average per doctype</strong>.</p></figcaption></figure>
 
-Below the **Changed Fields** section, you will find four additional buttons that provide more detailed information when clicked. Each button expands to show more information when clicked.
+<figure><img src="../.gitbook/assets/report-status-statistic-en.png" alt="The expanded Status statistic card with the columns Type, Status and Count"><figcaption><p><strong>Status statistic</strong>.</p></figcaption></figure>
 
-1.  **Total Documents per Type**
-
-    * This button displays the total number of documents for each document type (e.g., Invoice, Purchase Order, etc.) during the selected timeframe.
-    * When you click the button, it expands to show a list of document types and the corresponding count of how many documents of each type were processed in the selected timeframe.
-
-    <figure><img src="../.gitbook/assets/total_documents_per_type_report.png" alt="Total Documents per Type Report" width="563"><figcaption></figcaption></figure>
-2.  **Daily Average per Doctype**
-
-    * This button shows the daily average count of documents processed, categorized by document type.
-    * When you click the button, it expands to show the document types and their corresponding daily average count.
-
-    <figure><img src="../.gitbook/assets/image (389).png" alt="Daily Average per Doctype Report" width="563"><figcaption></figcaption></figure>
-3.  **Status Statistic**
-
-    * This button shows the status distribution for each document type (e.g., Invoice, Purchase Order, etc.). When clicked, it expands to display the status of documents within each document type, showing how many documents are in each status category.
-
-    <figure><img src="../.gitbook/assets/status_statistic_report.png" alt="Status Statistic Report" width="563"><figcaption></figcaption></figure>
-4.  **Export Statistic**
-
-    * This button allows you to view export statistics for your documents. When clicked, it will expand to provide data related to document exports, such as the number of exports, success/failure rates, and other relevant information.
-
-    <figure><img src="../.gitbook/assets/export_statistic_report.png" alt="Export Statistic Report" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/report-export-statistic-en.png" alt="The expanded Export statistic card with one organization expanded and the columns Users, Type and Exported"><figcaption><p><strong>Export statistic</strong>, broken down by organization.</p></figcaption></figure>

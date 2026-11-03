@@ -13,19 +13,22 @@ Ce paramètre active la section [**Correspondance des Bon de commande**](../../.
 ## Étapes d'activation <a href="#activation-steps" id="activation-steps"></a>
 
 1. Allez dans **Paramètres** -> **Paramètres globaux** -> **Types de documents**
-2.  Sélectionnez le type de document souhaité et cliquez sur **Plus de paramètres**.
+2.  Repérez la carte du type de document et ouvrez ses paramètres avec l'engrenage (**Plus de paramètres**).
+3.  Dépliez la section **Bon de commande** et activez **Bon de commande**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZSKdVhneopjjzzIBnbax%252Fpo_settings_1.png%3Falt%3Dmedia%26token%3Dab57e25e-9c6a-4273-b21b-ae328579839c\&width=768\&dpr=4\&quality=100\&sign=29a04f7d\&sv=2)
-3.  Dans la section **Bon de commande**, accédez à l'option **Bon de commande**.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAjk74xmxuvvEjZbD7gHz%252Fpo_settings_po.png%3Falt%3Dmedia%26token%3De78c7cf4-30db-4129-b5ca-bc52ee2ce7b4\&width=768\&dpr=4\&quality=100\&sign=da33746e\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/po-settings-purchase-order-20261103-fr.png" alt="Section Bon de commande dans les paramètres avancés du type de document Facture : premier interrupteur pour l'appariement, réglages fins en dessous"><figcaption><p>La section <strong>Bon de commande</strong> dans les paramètres avancés. Le premier interrupteur active l'appariement des bons de commande pour le type de document, les interrupteurs suivants l'affinent.</p></figcaption></figure>
 
 ## **Fonctionnalité**
 
 Une fois activée, la section [**Correspondance des Bon de commande**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) devient disponible après la validation du document.
 
-Vous pouvez également configurer quel type de quantité d'**Infor** doit être utilisé pour la correspondance en sélectionnant l'une des options suivantes dans le menu déroulant à côté du paramètre :
+### Quelle quantité est comparée
 
-* **Quantité**
-* **Quantité Reçue**
-* **Réception Livraison Quantité en cours**
+La quantité de la commande comparée par l'appariement dépend de **Correspondance des commandes côté serveur** :
+
+* **Correspondance des commandes côté serveur désactivée** – une liste s'affiche à côté de l'interrupteur **Bon de commande**, avec **Quantité**, **Quantité Reçue** et **Réception Livraison Quantité en cours**. DocBits compare la quantité choisie avec son propre moteur d'appariement.
+* **Correspondance des commandes côté serveur activée** – l'appariement suit les règles du type de document et la quantité comparée fait partie de ces règles. Le lien **Configurer les règles de correspondance des commandes d'achat**, à droite de la ligne, ouvre ces règles.
+
+{% hint style="info" %}
+La capture ci-dessus a été prise avec **Correspondance des commandes côté serveur** activée : la liste de quantité n'y figure donc pas, elle se règle dans les règles d'appariement.
+{% endhint %}

@@ -50,10 +50,12 @@ Seleccione **Crear** dentro de la configuración expandida para añadir una asig
 * **Lookup FieldCampo de búsqueda** es la columna del conjunto de datos que se busca.
 * **Campo De Validación** es el campo del documento que recibe el resultado.
 * **Campo Padre** comprueba opcionalmente el resultado con un campo relacionado.
-* **Operador de búsqueda** controla cómo se compara el texto. **Smart** omite espacios y signos de puntuación; las demás opciones incluyen Contains, Starts With, Ends With y Exact.
+* **Operador de búsqueda** controla cómo se compara el texto. **Smart** omite espacios y signos de puntuación, por lo que los valores que solo difieren en el formato también coinciden. **Smart Exact** aplica la misma normalización, pero solo devuelve un registro cuando el valor completo es igual; con una coincidencia parcial no se devuelve ninguno. Las demás opciones son **Contiene**, **comienza con**, **termina con** y **exacto**.
 * **Disparador Automático** inicia una búsqueda cuando este campo se rellena. **Buscable** permite que el campo participe en las búsquedas y admite la búsqueda manual durante la validación.
 
 Seleccione **Crear** para añadir la asignación. Use el menú de tres puntos **Acciones** de una fila para editar o eliminar una asignación editable. Las asignaciones predeterminadas solo se pueden ver.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-es.png" alt="Cuadro de diálogo Cree campos de datos maestros con la lista Operador de búsqueda abierta: Smart, Smart Exact, Contiene, termina con, exacto, comienza con"><figcaption><p>Elija <strong>Smart Exact</strong> cuando deba coincidir el valor completo tras omitir espacios y signos de puntuación.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-es-20261101.png" alt="Formulario vacío Cree campos de datos maestros con Lookup FieldCampo de búsqueda, Campo de validación, Campo padre, Operador de búsqueda, Disparador automático, Buscable, Cancelar y Crear"><figcaption><p>Elija cómo se asigna una columna del conjunto de datos a un campo del documento.</p></figcaption></figure>
 

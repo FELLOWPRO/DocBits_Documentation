@@ -13,19 +13,22 @@ Questa impostazione abilita la sezione [**Abbinamento Ordine di Acquisto**](../.
 ## Passaggi di attivazione <a href="#activation-steps" id="activation-steps"></a>
 
 1. Vai su **Impostazioni** -> **Impostazioni globali** -> **Tipi di documenti**
-2.  Seleziona il tipo di documento desiderato e fai clic su **Altre impostazioni**.
+2.  Individua la scheda del tipo di documento e apri l'ingranaggio (**Altre impostazioni**).
+3.  Apri la sezione **Ordine di acquisto** e attiva **Ordine di acquisto**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZSKdVhneopjjzzIBnbax%252Fpo_settings_1.png%3Falt%3Dmedia%26token%3Dab57e25e-9c6a-4273-b21b-ae328579839c\&width=768\&dpr=4\&quality=100\&sign=29a04f7d\&sv=2)
-3.  Nella sezione **Ordine di acquisto**, naviga all'opzione **Ordine di acquisto**.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAjk74xmxuvvEjZbD7gHz%252Fpo_settings_po.png%3Falt%3Dmedia%26token%3De78c7cf4-30db-4129-b5ca-bc52ee2ce7b4\&width=768\&dpr=4\&quality=100\&sign=da33746e\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/po-settings-purchase-order-20261103-it.png" alt="Sezione Ordine di acquisto nelle impostazioni avanzate del tipo di documento Fattura: primo interruttore per l'abbinamento e regolazioni sotto"><figcaption><p>La sezione <strong>Ordine di acquisto</strong> nelle impostazioni avanzate. Il primo interruttore attiva l'abbinamento degli ordini di acquisto per il tipo di documento, quelli successivi lo rifiniscono.</p></figcaption></figure>
 
 ## **Funzionalità**
 
 Una volta attivata, la sezione [**Abbinamento Ordine di Acquisto**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) diventa disponibile dopo la validazione del documento.
 
-Puoi anche configurare quale tipo di quantità da **Infor** deve essere utilizzato per l'abbinamento selezionando una delle seguenti opzioni dal menu a discesa accanto all'impostazione:
+### Quale quantità viene confrontata
 
-* **Quantità**
-* **Quantità ricevuta**
-* **Consegna ricevuta Quantità aperta**
+La quantità dell'ordine confrontata dall'abbinamento dipende da **Lato server di corrispondenza PO**:
+
+* **Lato server di corrispondenza PO disattivato** – accanto all'interruttore **Ordine di acquisto** compare un elenco con **Quantità**, **Quantità ricevuta** e **Consegna ricevuta Quantità aperta**. DocBits confronta la quantità scelta con il proprio motore di abbinamento.
+* **Lato server di corrispondenza PO attivato** – l'abbinamento segue le regole del tipo di documento e la quantità fa parte di quelle regole. Il link **Configurare le regole di corrispondenza degli ordini di acquisto**, a destra della riga, apre le regole.
+
+{% hint style="info" %}
+La cattura è stata eseguita con **Lato server di corrispondenza PO** attivo: l'elenco della quantità non compare quindi in quella schermata, si imposta nelle regole di abbinamento.
+{% endhint %}

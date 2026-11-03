@@ -22,7 +22,7 @@ Prüfen Sie die Fristen vor Änderungen und stimmen Sie das Zielarchiv sowie die
 
 <figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Einstellungen für den Dokumentenablauf"><figcaption><p>Einstellungen für den Dokumentenablauf</p></figcaption></figure>
 
-Unter **Document Processing → Documents Expiry** steuern Sie, wie lange DocBits Ihre Dokumente aufbewahrt, bevor sie automatisch gelöscht werden. Das hilft Ihnen, Speicherplatz zu verwalten, Richtlinien zur Datenaufbewahrung durchzusetzen und gesetzliche oder organisatorische Vorgaben zur Dauer der Dokumentenspeicherung einzuhalten.
+Unter **Document Processing → Documents Expiry** konfigurieren Sie die Dokumentenaufbewahrung. Bestätigen Sie vor Änderungen die wirksamen Fristen, das Zielarchiv und den Löschumfang für Ihre Organisation. Die Einstellung allein belegt weder die Einhaltung rechtlicher Aufbewahrungspflichten noch die gleichzeitige Löschung unabhängig gespeicherter Archiv- und Sicherungskopien.
 
 Zwei Einstellungen steuern die automatische Löschung:
 

@@ -4,13 +4,13 @@ Für alle Schritte, Varianten, Gegenbeispiele und das Zusammenspiel der Regeln s
 
 ## Vom extrahierten Wert zur nachgelagerten Prüfung
 
-<figure><img src="../../../../.gitbook/assets/process-transformation-de-20261028.png" alt="Wie Transformationsregeln wirken: Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert."><figcaption><p>Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/process-transformation-de-20261103.png" alt="Wie Transformationsregeln wirken: Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert."><figcaption><p>Aus einem extrahierten Wert wird ein gezielt aufbereiteter Wert. Die Grafik ist schematisch; maßgeblich sind die aktiven Einstellungen Ihrer Organisation.</p></figcaption></figure>
 
 Eine Transformation ist eine Änderung vorhandener Daten, nicht eine neue OCR-Erkennung. Sie liest eine Eingabe, prüft ihre Bedingung, führt die konfigurierten Schritte aus und schreibt das Ergebnis zurück. Trifft die Bedingung nicht zu, wird die Regel übersprungen.
 
 **Beispiel:** Eine Tabellenzelle enthält `STK`. Eine für den betreffenden Lieferanten geltende Wertzuordnung schreibt `PCE`. Der nachgelagerte PO-Abgleich sieht dann den aufbereiteten Einheitencode. Testen Sie auch einen bereits aufbereiteten Wert und einen Wert, für den die Regel nicht gelten soll.
 
-1. **Auslöser:** Während der Verarbeitung laufen die Regeln nach der Extraktion. Auch beim Speichern geänderter Extraktionsdaten können sie erneut ausgeführt werden.
+1. **Auslöser:** Während der Verarbeitung können Regeln nach der Extraktion laufen. Je nach konfigurierter Phase sind weitere Durchläufe möglich, etwa nach der Lookup-Befüllung. Regeln mit „Nur einmal pro Dokument ausführen“ und der Nach-Lookup-Option werden im Durchlauf direkt nach der Extraktion zurückgestellt. Auch beim Speichern geänderter Extraktionsdaten können Regeln erneut laufen.
 2. **Reihenfolge:** Innerhalb eines Durchlaufs gelten die Umfänge **Kopffeld → Routing → Tabellenzeilen → Tabellenspalte**. Innerhalb eines Umfangs bestimmen Priorität und Schlüssel die Reihenfolge.
 3. **Auswirkung:** Eine Tabellenregel kann Positionen verändern oder entfernen. Dadurch können sich die Zeilenzahl und die Voraussetzungen für den Bestellabgleich ändern. Werden bereits abgeglichene Zeilen ersetzt, kann eine bestehende Zuordnung verloren gehen.
 4. **Kontrolle:** Vergleichen Sie Eingabe, Vorschau und gespeichertes Ergebnis. Bei aktivierter Ausführungsprotokollierung zeigt die Bedingungsspur, warum eine Regel angewendet oder übersprungen wurde.
@@ -94,7 +94,7 @@ Zwei Optionen unter **Verarbeitungsoptionen** steuern, wie oft die Regel angewen
 | Option | Wirkung |
 | --- | --- |
 | **Nur einmal pro Dokument ausführen** | Normalerweise laufen Regeln bei jedem Speichern erneut. Ist die Option eingeschaltet, wird die Regel **höchstens einmal** auf ein Dokument angewendet und ist damit für dieses Dokument abgeschlossen. Ein Durchlauf, bei dem die Bedingungen nicht zutreffen, zählt nicht, sodass die Regel bei einem späteren Speichern noch angewendet werden kann. Relevant beispielsweise für das einmalige Hinzufügen einer Zeile ohne vorheriges Löschen. Für Teilstück- und Regex-Schritte bleibt eine getrennte Quelle erforderlich (siehe [Idempotenz](#einmal-ausfuhren-und-idempotenz)). |
-| **Run after lookup population (before PO match)** | *(neuere Versionen)* Führt die Regel in einem zusätzlichen Durchlauf aus, nachdem die Lookup-Daten (zum Beispiel Lieferantenstammdaten) befüllt wurden und bevor der Bestellabgleich stattfindet. Verwenden Sie die Option, wenn die Regel einen Wert benötigt, den ein Lookup liefert. Die Regel läuft weiterhin auch in den üblichen Phasen; eine Regel mit „Nur einmal pro Dokument ausführen“ und dieser Option wartet auf diesen Durchlauf, statt direkt nach der Extraktion zu laufen. |
+| **Run after lookup population (before PO match)** | *(neuere Versionen)* Führt die Regel in einem zusätzlichen Durchlauf aus, nachdem die Lookup-Daten (zum Beispiel Lieferantenstammdaten) befüllt wurden und bevor der Bestellabgleich stattfindet. Verwenden Sie die Option, wenn die Regel einen Wert benötigt, den ein Lookup liefert. Die Regel läuft weiterhin auch in den üblichen Phasen. Eine Regel mit „Nur einmal pro Dokument ausführen“ und dieser Option wird im Durchlauf direkt nach der Extraktion zurückgestellt; wird das Lookup übersprungen, kann ein späterer Durchlauf die Regel noch anwenden. |
 
 ### Schritt 3 — Die Pipeline
 
@@ -210,7 +210,7 @@ Eine **Routing**-Regel ändert kein Feld. Sie setzt ein Attribut am Dokument, we
 
 ## Wann Regeln laufen
 
-* **Während der Verarbeitung**, nach der Extraktion und vor Stammdaten-Lookup, Validierung, Skripten und Bestellabgleich.
+* **Während der Verarbeitung**, nach der Extraktion. In neueren Versionen kann für entsprechend konfigurierte Regeln ein zusätzlicher Durchlauf nach der Lookup-Befüllung und vor dem Bestellabgleich stattfinden. Die Reihenfolge gegenüber Skripten hängt von deren Auslösern ab; beachten Sie die Phasenanzeige und Optionen Ihrer Regel.
 * Bei **jedem Speichern** des Dokuments, bei dem sich die extrahierten Daten geändert haben. Regeln ohne **Nur einmal pro Dokument ausführen** werden jedes Mal erneut angewendet.
 * Innerhalb eines Durchlaufs laufen Regeln Umfang für Umfang in dieser Reihenfolge: **Kopffeld → Routing → Tabellenzeilen → Tabellenspalte**. Eine Spaltenregel gilt daher auch für Zeilen, die eine Tabellenregel gerade hinzugefügt hat. Innerhalb eines Umfangs laufen die Regeln nach Priorität, dann nach Schlüssel.
 

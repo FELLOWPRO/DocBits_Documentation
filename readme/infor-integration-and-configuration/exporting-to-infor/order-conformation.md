@@ -5,7 +5,7 @@ Petite mise à jour pour la confirmation de commande
 
 
 {% hint style="info" %}
-Lien vers le [fichier](../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties)
+Lien vers le [fichier](<../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties>)
 {% endhint %}
 
 

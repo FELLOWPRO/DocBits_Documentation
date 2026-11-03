@@ -34,11 +34,11 @@ This configuration page is used to define and manage the rules that determine _h
 
 The page has three buttons at the top:
 
-* **Rule set as a diagram** opens a flow chart of the active rule set. See [Rule set as a diagram](#rule-set-as-a-diagram).
+* **Rule set as a diagram** opens a flow chart of the active rule set. See [Rule set as a diagram](purchase-order-matching-rules.md#rule-set-as-a-diagram).
 * **Save Rules** saves your changes to the draft you are editing.
-* **Configure Versioning** opens the version history. See [Versions and drafts](#versions-and-drafts).
+* **Configure Versioning** opens the version history. See [Versions and drafts](purchase-order-matching-rules.md#versions-and-drafts).
 
-Below the buttons a **Read Only** notice appears when you look at a published version: *This is a published version and cannot be edited. Clone as draft to make changes.* Below that come the **Global Settings (Base Rules)** card and the **Rules List**. Select a rule in the list to configure it in the **Rule Configuration** area under the list.
+Below the buttons a **Read Only** notice appears when you look at a published version: _This is a published version and cannot be edited. Clone as draft to make changes._ Below that come the **Global Settings (Base Rules)** card and the **Rules List**. Select a rule in the list to configure it in the **Rule Configuration** area under the list.
 
 ***
 
@@ -118,7 +118,7 @@ Compare them with `==`, `!=`, `>`, `>=`, `<`, `<=` and combine several condition
 * `([[count(po_lines)]] >= 1) & ([[count(table_lines)]] >= 1)` — whenever there is anything to match.
 
 {% hint style="warning" %}
-Activation conditions are the most common reason why a rule "does nothing". A match-on-total rule with the condition `[[count(table_lines)]] > 1` never runs for a one-line invoice — and a [transformation rule](../../transformation-rules.md) that collapses the invoice into one total line produces exactly such a document. Check the counts in the matching history before changing the rule itself.
+Activation conditions are the most common reason why a rule "does nothing". A match-on-total rule with the condition `[[count(table_lines)]] > 1` never runs for a one-line invoice — and a [transformation rule](../../transformation-rules/) that collapses the invoice into one total line produces exactly such a document. Check the counts in the matching history before changing the rule itself.
 {% endhint %}
 
 #### Column Comparison (Matching Criteria)
@@ -157,7 +157,7 @@ Click **Advanced Settings** under the column table to open two more options for 
 
 <figure><img src="../../../../../../.gitbook/assets/po-match-rules-advanced-settings.png" alt="The Advanced Settings of a rule with Allow packages and Normalize unit before match"><figcaption><p>Advanced Settings of a rule.</p></figcaption></figure>
 
-* **Allow packages:** Lets the rule match lines where the quantity and the unit price differ by a package size. The default package sizes are 10, 20, 100 and 1000. DocBits then adjusts the document quantity and unit price by the package size before it compares them. This is the **Package criteria** step of each stage in the [rule diagram](#rule-set-as-a-diagram).
+* **Allow packages:** Lets the rule match lines where the quantity and the unit price differ by a package size. The default package sizes are 10, 20, 100 and 1000. DocBits then adjusts the document quantity and unit price by the package size before it compares them. This is the **Package criteria** step of each stage in the [rule diagram](purchase-order-matching-rules.md#rule-set-as-a-diagram).
 * **Normalize unit before match:** Converts the unit of measure on both sides to the same unit before the quantity is compared. It is on by default.
 
 ***
@@ -170,13 +170,13 @@ Click **Advanced Settings** under the column table to open two more options for 
 
 DocBits works through five stages from top to bottom. Each stage has up to three passes: **Exact match for all rules**, **Tolerance-based match** and **Package criteria**. The first pass that finds a match ends the process (green arrow). If a pass finds no match, DocBits carries on with the next one (red arrow).
 
-| Stage | What it does |
-| ----- | ------------ |
-| 1. Single match validation | Applies the single match rules in order of priority. |
-| 2. Multi match validation | Runs after the single match, for several lines on one side. |
-| 3. Total match validation | Runs only when nothing matched at all. Compares the purchase order total with the sum of the table lines. |
-| 4. Single mismatch validation | Applies the single match rules again, with the unit price ignored. |
-| 5. Fallback logic | Pairs the last purchase order line with the last table line when exactly one line is left on each side. |
+| Stage                         | What it does                                                                                              |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 1. Single match validation    | Applies the single match rules in order of priority.                                                      |
+| 2. Multi match validation     | Runs after the single match, for several lines on one side.                                               |
+| 3. Total match validation     | Runs only when nothing matched at all. Compares the purchase order total with the sum of the table lines. |
+| 4. Single mismatch validation | Applies the single match rules again, with the unit price ignored.                                        |
+| 5. Fallback logic             | Pairs the last purchase order line with the last table line when exactly one line is left on each side.   |
 
 Under the chart the panel lists the rules of every stage by priority, with the columns each rule compares. A note at the top tells you where the tolerances come from: from the rule set, or, when `CUSTOM_RANGE_FOR_PO_TOLERANCE` is on, from the [document type settings](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
 
@@ -211,7 +211,7 @@ The defined rule set directly governs the efficiency and integrity of the PO-mat
 ## What else influences the result
 
 * **When matching runs:** during document processing, when a user clicks **Auto PO Match**, and **on every save** in which the purchase order number changed or was never looked up before (for example when master data filled it in after processing). A save never overwrites a match that already exists.
-* [**Transformation rules**](../../transformation-rules.md) run before the match and can change the line items — and with them the line counts that the activation conditions look at. A table rule that rebuilds the lines keeps an existing match as long as the lines stay the same; if it replaces matched lines, the match is dropped and the rule's name is shown as the reason.
+* [**Transformation rules**](../../transformation-rules/) run before the match and can change the line items — and with them the line counts that the activation conditions look at. A table rule that rebuilds the lines keeps an existing match as long as the lines stay the same; if it replaces matched lines, the match is dropped and the rule's name is shown as the reason.
 * [**Calculate PO unit price**](calculate-po-unit-price.md) changes which unit price the rules compare on the purchase order side.
 * [**Tolerance settings**](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) and [**disabled statuses**](purchase-order-disable-statuses.md) decide how strict the comparison is and which purchase order lines are offered at all.
 

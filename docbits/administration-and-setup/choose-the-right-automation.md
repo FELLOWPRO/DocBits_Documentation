@@ -8,15 +8,15 @@ DocBits gives you several ways to change, check and route documents: **Transform
 
 ## The short answer
 
-| I want to … | Use | Why |
-| --- | --- | --- |
-| Clean up or rewrite a value (trim, prefix, date format, unit mapping, default) | [Transformation Rules](settings/global-settings/document-types/transformation-rules.md) | No code, live preview, runs on every pass and save |
-| Make sure data is complete and plausible, and stop documents that are not | [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md) | Declarative checks, error or warning, blocks auto-export |
-| Match invoice lines with purchase order lines | [Purchase Order Matching Rules](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Rule sets with tolerances, fallbacks and a visual diagram |
-| Do something a rule cannot express: a lookup, a calculation across fields and tables, a task, a status change at an exact moment | [Script](settings/global-settings/document-types/script/README.md) | Python at 13 trigger points in the flow |
-| Decide **what happens next** with a document: assign, approve, create a task, send an e-mail, export, call an API | [Standard Workflow](workflow/standard-workflow-builder/README.md) | When / And / Then cards on status events |
-| Do the same with branches, several conditions and error paths | [Advanced Workflow](workflow/advanced-workflow-builder/README.md) | Visual node graph |
-| Need an action that no built-in card offers | [Workflow SDK (Card SDK)](workflow/card-sdk.md) | Your own card, reviewed by DocBits |
+| I want to …                                                                                                                      | Use                                                                                                                                    | Why                                                       |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Clean up or rewrite a value (trim, prefix, date format, unit mapping, default)                                                   | [Transformation Rules](settings/global-settings/document-types/transformation-rules/)                                                  | No code, live preview, runs on every pass and save        |
+| Make sure data is complete and plausible, and stop documents that are not                                                        | [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md)                                          | Declarative checks, error or warning, blocks auto-export  |
+| Match invoice lines with purchase order lines                                                                                    | [Purchase Order Matching Rules](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Rule sets with tolerances, fallbacks and a visual diagram |
+| Do something a rule cannot express: a lookup, a calculation across fields and tables, a task, a status change at an exact moment | [Script](settings/global-settings/document-types/script/)                                                                              | Python at 13 trigger points in the flow                   |
+| Decide **what happens next** with a document: assign, approve, create a task, send an e-mail, export, call an API                | [Standard Workflow](workflow/standard-workflow-builder/)                                                                               | When / And / Then cards on status events                  |
+| Do the same with branches, several conditions and error paths                                                                    | [Advanced Workflow](workflow/advanced-workflow-builder/)                                                                               | Visual node graph                                         |
+| Need an action that no built-in card offers                                                                                      | [Workflow SDK (Card SDK)](workflow/card-sdk.md)                                                                                        | Your own card, reviewed by DocBits                        |
 
 **Rule of thumb: use the least powerful tool that does the job.** Rules first, Script second, Workflow or SDK card last. Rules are easier to read, easier to test and cannot break a document; code can do more and therefore needs more care.
 
@@ -46,14 +46,14 @@ A workflow that writes a field behaves like a person saving the document: Transf
 
 <figure><img src="../.gitbook/assets/automation-reach.svg" alt="Comparison of what each automation tool can do"><figcaption></figcaption></figure>
 
-| | Transformation Rules | Custom Validation Rules | PO Matching Rules | Script | Standard Workflow | Advanced Workflow | SDK card |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **Runs when** | Every transform pass and every save | Every validation run | After lookup, **Auto PO Match**, new PO number | 13 trigger points | After a status change | After a status change | When its workflow runs |
-| **Can read** | Header fields, table columns | Fields, table cells, totals over rows | Tables, PO numbers, purchase order lines, tolerances | The whole extracted data, lookups, users, groups, full-text search | Document data, users, groups, variables | Same, plus results of earlier nodes | Fields, tables, lookups, users, groups |
-| **Can write** | Field and column values, rows, sub-organisation | Nothing: only valid / invalid markers | Match data only | Fields, tables, tasks, status | Fields, status, assignment, tasks, export, e-mail, API call | Same cards, plus logic and variables | Fields, tables, status, tasks |
-| **Can stop a document** | No | Yes, errors block auto-export and **Validate** | Yes, without a full match auto-export waits when PO matching is active | Indirectly: mark a field invalid, create a task | Sets status, assigns, approves, rejects | Same | Same as the card type |
-| **Needs code** | No | No | No | Yes, restricted Python | No | No | Yes, Python in a sandbox |
-| **Typical use** | Normalise values | Required fields, formats, totals | Line matching | Special logic | Routing and approval | Branching routing | Partner actions |
+|                         | Transformation Rules                            | Custom Validation Rules                        | PO Matching Rules                                                      | Script                                                             | Standard Workflow                                           | Advanced Workflow                    | SDK card                               |
+| ----------------------- | ----------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------- | ------------------------------------ | -------------------------------------- |
+| **Runs when**           | Every transform pass and every save             | Every validation run                           | After lookup, **Auto PO Match**, new PO number                         | 13 trigger points                                                  | After a status change                                       | After a status change                | When its workflow runs                 |
+| **Can read**            | Header fields, table columns                    | Fields, table cells, totals over rows          | Tables, PO numbers, purchase order lines, tolerances                   | The whole extracted data, lookups, users, groups, full-text search | Document data, users, groups, variables                     | Same, plus results of earlier nodes  | Fields, tables, lookups, users, groups |
+| **Can write**           | Field and column values, rows, sub-organisation | Nothing: only valid / invalid markers          | Match data only                                                        | Fields, tables, tasks, status                                      | Fields, status, assignment, tasks, export, e-mail, API call | Same cards, plus logic and variables | Fields, tables, status, tasks          |
+| **Can stop a document** | No                                              | Yes, errors block auto-export and **Validate** | Yes, without a full match auto-export waits when PO matching is active | Indirectly: mark a field invalid, create a task                    | Sets status, assigns, approves, rejects                     | Same                                 | Same as the card type                  |
+| **Needs code**          | No                                              | No                                             | No                                                                     | Yes, restricted Python                                             | No                                                          | No                                   | Yes, Python in a sandbox               |
+| **Typical use**         | Normalise values                                | Required fields, formats, totals               | Line matching                                                          | Special logic                                                      | Routing and approval                                        | Branching routing                    | Partner actions                        |
 
 ## Decide in four questions
 
@@ -72,7 +72,7 @@ A workflow that writes a field behaves like a person saving the document: Transf
 * **They run** on the first transform pass, on an optional pass after the master data lookup, again after PO matching, and on every save. The validation screen shows a preview.
 * **They can** change header fields, table columns and rows, and the sub-organisation. Each rule can be limited to certain suppliers or conditions.
 * **They cannot** stop a document, call other systems, use master data lookups or create tasks. A rule that cannot be applied leaves the value as it is.
-* **Read more:** [Transformation Rules](settings/global-settings/document-types/transformation-rules.md)
+* **Read more:** [Transformation Rules](settings/global-settings/document-types/transformation-rules/)
 
 ### Custom Validation Rules
 
@@ -96,7 +96,7 @@ A workflow that writes a field behaves like a person saving the document: Transf
 * **It runs** at the trigger points you choose: after extraction, before and after transformation, before PO matching, before and after validation, on field and table changes, on save and on approval.
 * **It can** read the whole document, use master data lookups and full-text search, change fields, flags and tables, create tasks and change the status.
 * **It cannot** import modules or call external services. It is restricted Python. An error in a script is logged and never stops the processing of the document, so a script is **not** a reliable way to block a document: mark the field invalid or create a task instead.
-* **Read more:** [Script](settings/global-settings/document-types/script/README.md)
+* **Read more:** [Script](settings/global-settings/document-types/script/)
 
 ### Standard Workflow
 
@@ -104,7 +104,7 @@ A workflow that writes a field behaves like a person saving the document: Transf
 * **It runs** when a document reaches a status you chose, that is after validation. It can also start from a web hook, a schedule or manually.
 * **It can** run a chain of cards: **When** (start), **And** (conditions, all must pass), **Then** (actions in order).
 * **It cannot** branch, wait for several conditions or react to an error of a card in a separate path. Use an Advanced Workflow for that.
-* **Read more:** [Standard Workflow](workflow/standard-workflow-builder/README.md)
+* **Read more:** [Standard Workflow](workflow/standard-workflow-builder/)
 
 ### Advanced Workflow
 
@@ -112,7 +112,7 @@ A workflow that writes a field behaves like a person saving the document: Transf
 * **It runs** on the same events as a Standard Workflow. It needs the DocFlow Advanced subscription.
 * **It can** use the same cards as a Standard Workflow, plus logic and variable cards, drawn as a graph.
 * **It cannot** do what happens before validation: it starts after a status change. Pre-validation logic belongs in a Script or a rule.
-* **Read more:** [Advanced Workflow](workflow/advanced-workflow-builder/README.md)
+* **Read more:** [Advanced Workflow](workflow/advanced-workflow-builder/)
 
 ### Workflow SDK (Card SDK)
 
@@ -135,20 +135,20 @@ A workflow that writes a field behaves like a person saving the document: Transf
 
 ## Common mistakes
 
-| Mistake | Better |
-| --- | --- |
-| A Script that trims and prefixes values | A Transformation Rule |
-| A workflow that sets a field after validation | A Transformation Rule or a Script before validation |
-| A Script that is expected to stop an invalid document | A Custom Validation Rule |
-| A Custom Validation Rule that is expected to fix a value | A Transformation Rule, then the validation rule |
-| Rewriting the PO number in a PO matching rule | A Transformation Rule on the *Purchase Order* field, before the match |
-| An Advanced Workflow for a single *When → Then* | A Standard Workflow |
-| An SDK card for something a built-in card can do | The built-in card |
+| Mistake                                                  | Better                                                                |
+| -------------------------------------------------------- | --------------------------------------------------------------------- |
+| A Script that trims and prefixes values                  | A Transformation Rule                                                 |
+| A workflow that sets a field after validation            | A Transformation Rule or a Script before validation                   |
+| A Script that is expected to stop an invalid document    | A Custom Validation Rule                                              |
+| A Custom Validation Rule that is expected to fix a value | A Transformation Rule, then the validation rule                       |
+| Rewriting the PO number in a PO matching rule            | A Transformation Rule on the _Purchase Order_ field, before the match |
+| An Advanced Workflow for a single _When → Then_          | A Standard Workflow                                                   |
+| An SDK card for something a built-in card can do         | The built-in card                                                     |
 
 ## Related pages
 
-* [Transformation Rules](settings/global-settings/document-types/transformation-rules.md)
+* [Transformation Rules](settings/global-settings/document-types/transformation-rules/)
 * [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md)
 * [Purchase Order Matching Rules](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* [Script](settings/global-settings/document-types/script/README.md)
-* [Workflow](workflow/README.md)
+* [Script](settings/global-settings/document-types/script/)
+* [Workflow](workflow/)

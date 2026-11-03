@@ -2,25 +2,25 @@
 
 ## Overview
 
-A **layout** decides which fields and groups a user sees — and in which order — on the **validation**, **approval**, **reject** and **review** screens of a document. You design layouts in the [Layout Manager](README.md).
+A **layout** decides which fields and groups a user sees — and in which order — on the **validation**, **approval**, **reject** and **review** screens of a document. You design layouts in the [Layout Manager](./).
 
 Classically, DocBits chose the layout by the document's **origin**: the country or region taken from the document's language settings, such as `DE` or `US`. Every origin had its own copy of the layout, and nothing else could influence the choice.
 
 With **layout selection rules**, layouts become reusable building blocks that are independent of the origin, and **rules** decide which layout a document gets:
 
-> *When* the document meets a condition, *then* it gets this layout. Rules are checked from top to bottom; **the first matching rule wins**. If no rule matches, the **default layout** is used.
+> _When_ the document meets a condition, _then_ it gets this layout. Rules are checked from top to bottom; **the first matching rule wins**. If no rule matches, the **default layout** is used.
 
 The origin is still available — as one condition among many. A rule can just as well look at the supplier, the amount, the document status, the extraction method or any header field.
 
 ### Problems they solve
 
-| Requirement | Classic origin-based layouts | With selection rules |
-| --- | --- | --- |
-| One supplier's invoices need extra fields (project, customs number) | impossible without a new origin | rule *Supplier ID is 20723* → layout "Invoice with project fields" |
-| DE, AT and CH documents should look the same | three copies of the same layout to maintain | one layout, one rule per origin (or an ANY group) pointing to it |
-| E-invoices need a simpler screen than scanned PDFs | not possible | rule *Extraction Method is ELECTRONIC_DOCUMENT* → layout "E-invoice" |
-| High-value invoices need more fields on the approval screen | not possible | Approval rule *Total Amount greater than 10000* → layout "High value approval" |
-| The second approver should see a different screen than the first | separate "second approval" layout type | Approval rule *Document Status is Pending second approval* → layout "Second approval" |
+| Requirement                                                         | Classic origin-based layouts                | With selection rules                                                                  |
+| ------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------- |
+| One supplier's invoices need extra fields (project, customs number) | impossible without a new origin             | rule _Supplier ID is 20723_ → layout "Invoice with project fields"                    |
+| DE, AT and CH documents should look the same                        | three copies of the same layout to maintain | one layout, one rule per origin (or an ANY group) pointing to it                      |
+| E-invoices need a simpler screen than scanned PDFs                  | not possible                                | rule _Extraction Method is ELECTRONIC\_DOCUMENT_ → layout "E-invoice"                 |
+| High-value invoices need more fields on the approval screen         | not possible                                | Approval rule _Total Amount greater than 10000_ → layout "High value approval"        |
+| The second approver should see a different screen than the first    | separate "second approval" layout type      | Approval rule _Document Status is Pending second approval_ → layout "Second approval" |
 
 ## Enable rule-based layouts
 
@@ -39,7 +39,7 @@ The **Layouts** link on the document type card now opens **Layouts & Selection R
 DocBits converts your existing origin-based layouts into rules — once, for this document type and for each screen:
 
 * The layout of the origin **DEFAULT** becomes the **default layout** (the fallback).
-* Every layout of a specific origin becomes a rule **"Layout for XX"** with the condition *Document Origin is XX*, pointing to that layout. These rules get priorities in steps of 10 (for example 2000, 2010, 2020 …), so you can place your own rules before, between or after them.
+* Every layout of a specific origin becomes a rule **"Layout for XX"** with the condition _Document Origin is XX_, pointing to that layout. These rules get priorities in steps of 10 (for example 2000, 2010, 2020 …), so you can place your own rules before, between or after them.
 
 <figure><img src="../../../../../.gitbook/assets/lsr-default-layout-row-en-20261102.png" alt="The bottom of the Selection rules list: the last origin rules Layout for UY and Layout for VN, followed by the FALLBACK row Default layout marked is_default, which is used when no rule above matches."><figcaption><p>The origin rules created on activation, followed by the default layout (FALLBACK)</p></figcaption></figure>
 
@@ -56,7 +56,7 @@ Nothing is deleted or changed in the layouts themselves. Right after activation 
 * On the **Layouts** tab you can create, edit, clone and delete layouts. Each card shows whether a rule uses the layout ("Not targeted by rules" when none does). Filter with **All / My layouts / System**; system layouts are shipped with DocBits and can be viewed and cloned, but not changed.
 
 {% hint style="info" %}
-First and second approval share the **Approval** layouts and rules. To give the second approval stage its own screen, add an Approval rule with the condition *Document Status is Pending second approval* — see the [example](#different-screens-for-first-and-second-approval).
+First and second approval share the **Approval** layouts and rules. To give the second approval stage its own screen, add an Approval rule with the condition _Document Status is Pending second approval_ — see the [example](layout-selection-rules.md#different-screens-for-first-and-second-approval).
 {% endhint %}
 
 ## How a layout is chosen
@@ -73,21 +73,21 @@ Rules whose layout has been deleted or is empty are skipped.
 
 Rules of the **Field Validation** screen:
 
-| Priority | Rule | Condition | Layout |
-| --- | --- | --- | --- |
-| 5 | Behaelterbau invoices | *Supplier ID is HP0000278* | Invoice with project fields |
-| 10 | E-invoices | *Extraction Method is ELECTRONIC_DOCUMENT* | E-invoice |
-| 2020 | Layout for DE | *Document Origin is DE* | Field Validation Layout (DE) |
-| — | Default layout | — | Field Validation Layout (Base) |
+| Priority | Rule                  | Condition                                   | Layout                         |
+| -------- | --------------------- | ------------------------------------------- | ------------------------------ |
+| 5        | Behaelterbau invoices | _Supplier ID is HP0000278_                  | Invoice with project fields    |
+| 10       | E-invoices            | _Extraction Method is ELECTRONIC\_DOCUMENT_ | E-invoice                      |
+| 2020     | Layout for DE         | _Document Origin is DE_                     | Field Validation Layout (DE)   |
+| —        | Default layout        | —                                           | Field Validation Layout (Base) |
 
 Which layout each document gets:
 
-| Document | Supplier | Extraction | Origin | Layout | Because |
-| --- | --- | --- | --- | --- | --- |
-| 1 | HP0000278 | e-invoice | DE | Invoice with project fields | priority 5 matches first; later rules are not checked |
-| 2 | 10040 | e-invoice | DE | E-invoice | priority 5 does not match, 10 does |
-| 3 | 10040 | scanned PDF | DE | Field Validation Layout (DE) | only the origin rule matches |
-| 4 | 10040 | scanned PDF | US | Field Validation Layout (Base) | no rule matches → default |
+| Document | Supplier  | Extraction  | Origin | Layout                         | Because                                               |
+| -------- | --------- | ----------- | ------ | ------------------------------ | ----------------------------------------------------- |
+| 1        | HP0000278 | e-invoice   | DE     | Invoice with project fields    | priority 5 matches first; later rules are not checked |
+| 2        | 10040     | e-invoice   | DE     | E-invoice                      | priority 5 does not match, 10 does                    |
+| 3        | 10040     | scanned PDF | DE     | Field Validation Layout (DE)   | only the origin rule matches                          |
+| 4        | 10040     | scanned PDF | US     | Field Validation Layout (Base) | no rule matches → default                             |
 
 **Order matters**: put specific rules (one supplier) above general rules (one country).
 
@@ -101,20 +101,20 @@ The layout is always chosen from the **current** values of the document. If a us
 
 Each row shows the **priority** (the first row is marked **FIRST**), the **rule name and key** with its **conditions**, the **target layout**, the **source** badge and an **Active** switch.
 
-| Task | How |
-| --- | --- |
-| Create a rule | **New rule** |
-| Edit a rule | Click the row |
-| Change the order | Drag the grip on the left of a row up or down. The new order is saved immediately. |
-| Switch a rule off | **Active** switch. Inactive rules are ignored. |
-| Duplicate or delete | **⋮** menu of the row |
-| Find a rule | **Search rules…** |
+| Task                | How                                                                                |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| Create a rule       | **New rule**                                                                       |
+| Edit a rule         | Click the row                                                                      |
+| Change the order    | Drag the grip on the left of a row up or down. The new order is saved immediately. |
+| Switch a rule off   | **Active** switch. Inactive rules are ignored.                                     |
+| Duplicate or delete | **⋮** menu of the row                                                              |
+| Find a rule         | **Search rules…**                                                                  |
 
 The **source** badge tells you where a rule comes from: **System** rules are shipped with DocBits. Editing one creates a copy for your organisation, shown as **Customized**; the original stays intact and can be restored. Rules you create are **Custom**.
 
 ### The default layout
 
-The last row, marked **FALLBACK** and **is_default**, is the default layout: it is used whenever no rule above matches and has no condition. It is created when you switch the feature on (from the layout of origin DEFAULT).
+The last row, marked **FALLBACK** and **is\_default**, is the default layout: it is used whenever no rule above matches and has no condition. It is created when you switch the feature on (from the layout of origin DEFAULT).
 
 {% hint style="info" %}
 To use another fallback layout, create a rule **without any condition** and give it the highest priority number, so that it is checked last. It matches every document that no earlier rule matched, before the default is reached.
@@ -126,16 +126,16 @@ Click **New rule** on the Selection rules tab of the screen you want to change.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor.png" alt="Scope, conditions and target layout in the English rule editor."><figcaption><p>Scope, conditions and target layout in the English rule editor.</p></figcaption></figure>
 
-The sentence at the top summarises the rule as you build it — "When header.supplier_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins."
+The sentence at the top summarises the rule as you build it — "When header.supplier\_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins."
 
 ### Step 1 — Scope & priority
 
-| Setting | What it does |
-| --- | --- |
-| **Rule Name** | Shown in the rule list. Describe the business case: "Behaelterbau invoices", "E-invoices", "High value approval". |
-| **Rule key** | Generated from the name; stays the same when you rename the rule. |
-| **Document Type** / **Layout type** | The document type and the screen the rule is for. Taken from where you clicked **New rule**. |
-| **Priority** | Lower numbers are checked first. Leave gaps (5, 10, 20 …) so you can insert rules later. |
+| Setting                             | What it does                                                                                                      |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Rule Name**                       | Shown in the rule list. Describe the business case: "Behaelterbau invoices", "E-invoices", "High value approval". |
+| **Rule key**                        | Generated from the name; stays the same when you rename the rule.                                                 |
+| **Document Type** / **Layout type** | The document type and the screen the rule is for. Taken from where you clicked **New rule**.                      |
+| **Priority**                        | Lower numbers are checked first. Leave gaps (5, 10, 20 …) so you can insert rules later.                          |
 
 ### Step 2 — Applies when
 
@@ -157,13 +157,13 @@ Click the layout the document should get. The list shows your own layouts and th
 
 The panel on the right shows what the rule does for a sample document that has the values of your conditions:
 
-| Line | Meaning |
-| --- | --- |
-| **Sample document** | The values used for the preview, taken from your conditions |
-| **matched_by** | `rule` if a rule matched, otherwise the default |
-| **Resolved layout** | The layout the sample document would get |
-| **Priority hit** | The priority of the rule that matched |
-| **watched_fields** | The fields the layout choice depends on. When a user changes one of them, the layout is chosen again. |
+| Line                | Meaning                                                                                               |
+| ------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Sample document** | The values used for the preview, taken from your conditions                                           |
+| **matched\_by**     | `rule` if a rule matched, otherwise the default                                                       |
+| **Resolved layout** | The layout the sample document would get                                                              |
+| **Priority hit**    | The priority of the rule that matched                                                                 |
+| **watched\_fields** | The fields the layout choice depends on. When a user changes one of them, the layout is chosen again. |
 
 Click **Create Rule** (or **Save rule** when editing) to save. **Cancel** returns to the rule list.
 
@@ -171,29 +171,29 @@ Click **Create Rule** (or **Save rule** when editing) to save. **Cancel** return
 
 ### Extra fields for one supplier
 
-Screen **Field Validation** · priority **5** · *Supplier ID is HP0000278* · target *Invoice with project fields* (a clone of your standard layout with the additional project and cost center fields).
+Screen **Field Validation** · priority **5** · _Supplier ID is HP0000278_ · target _Invoice with project fields_ (a clone of your standard layout with the additional project and cost center fields).
 
 ### One layout for several countries
 
-Screen **Field Validation** · priority **100** · **ANY of**: *Document Origin is Deutsch*, *Document Origin is Austria*, *Document Origin is Switzerland* · target *DACH invoice*. Deactivate the migrated "Layout for AT" and "Layout for CH" rules if they point to older copies.
+Screen **Field Validation** · priority **100** · **ANY of**: _Document Origin is Deutsch_, _Document Origin is Austria_, _Document Origin is Switzerland_ · target _DACH invoice_. Deactivate the migrated "Layout for AT" and "Layout for CH" rules if they point to older copies.
 
 ### A simpler screen for e-invoices
 
-Screen **Field Validation** · priority **10** · *Extraction Method is ELECTRONIC_DOCUMENT* · target *E-invoice* (without OCR-related fields).
+Screen **Field Validation** · priority **10** · _Extraction Method is ELECTRONIC\_DOCUMENT_ · target _E-invoice_ (without OCR-related fields).
 
 ### A stricter approval screen for high amounts
 
-Screen **Approval** · priority **10** · *Total Amount greater than 10000* · target *High value approval* (showing cost center, budget owner and contract number).
+Screen **Approval** · priority **10** · _Total Amount greater than 10000_ · target _High value approval_ (showing cost center, budget owner and contract number).
 
 ### Different screens for first and second approval
 
-Screen **Approval** · priority **5** · *Document Status is Pending second approval* · target *Second Approval Layout*. Documents in the first approval step do not match and get the Approval default layout.
+Screen **Approval** · priority **5** · _Document Status is Pending second approval_ · target _Second Approval Layout_. Documents in the first approval step do not match and get the Approval default layout.
 
 <figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status.png" alt="Unsaved draft in the layout selection rule editor."><figcaption><p>Unsaved draft in the layout selection rule editor.</p></figcaption></figure>
 
 ### A special reject screen for some suppliers
 
-Screen **Reject** · priority **10** · *Supplier ID is one of* `10040, 10041` · target *Reject with reason codes*.
+Screen **Reject** · priority **10** · _Supplier ID is one of_ `10040, 10041` · target _Reject with reason codes_.
 
 ## Best practices
 
@@ -206,19 +206,19 @@ Screen **Reject** · priority **10** · *Supplier ID is one of* `10040, 10041` �
 
 ## Troubleshooting
 
-| Symptom | What to check |
-| --- | --- |
-| A document gets the wrong layout | An earlier rule matches first. Look at the rules above it, or at the **Priority hit** in the preview. |
-| The default is used although a rule should match | Is the rule **Active**? Does the condition match the exact value (case, spaces)? Is the rule on the right **screen** tab? |
-| The layout changes while a user works | A field in **watched_fields** was changed. Base the rule on a more stable field. |
-| A layout cannot be deleted | A rule still points to it. Retarget or delete that rule first. |
-| No layout at all is shown | No rule matched, there is no default and no origin-based layout exists for this screen. Add a rule without a condition as catch-all. |
-| Nothing changed after activation | Expected: activation reproduces the previous origin-based choice. Add your own rules. |
-| Second approval shows the first approval layout | Add an Approval rule on *Document Status is Pending second approval* above the other Approval rules. |
+| Symptom                                          | What to check                                                                                                                        |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| A document gets the wrong layout                 | An earlier rule matches first. Look at the rules above it, or at the **Priority hit** in the preview.                                |
+| The default is used although a rule should match | Is the rule **Active**? Does the condition match the exact value (case, spaces)? Is the rule on the right **screen** tab?            |
+| The layout changes while a user works            | A field in **watched\_fields** was changed. Base the rule on a more stable field.                                                    |
+| A layout cannot be deleted                       | A rule still points to it. Retarget or delete that rule first.                                                                       |
+| No layout at all is shown                        | No rule matched, there is no default and no origin-based layout exists for this screen. Add a rule without a condition as catch-all. |
+| Nothing changed after activation                 | Expected: activation reproduces the previous origin-based choice. Add your own rules.                                                |
+| Second approval shows the first approval layout  | Add an Approval rule on _Document Status is Pending second approval_ above the other Approval rules.                                 |
 
 ## Related
 
 * [Rule Conditions (Applies when)](../rule-conditions-applies-when.md)
 * [Custom Validation Rules](../custom-validation-rules.md)
-* [Transformation Rules](../transformation-rules.md)
+* [Transformation Rules](../transformation-rules/)
 * [Navigating the Layout Manager](navigating-the-layout-manager.md)

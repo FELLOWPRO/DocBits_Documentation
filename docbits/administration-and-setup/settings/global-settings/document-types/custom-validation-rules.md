@@ -18,15 +18,15 @@ Rules are defined per **document type** and run on every document of that type: 
 
 ### Problems they solve
 
-| Business requirement | Without custom rules | With a custom rule |
-| --- | --- | --- |
-| German invoices over 250 EUR must show the supplier's tax ID | a script, or users have to remember it | **Required** on Supplier Tax ID, *applies when* origin is DE and total amount is greater than 250 |
-| A supplier's invoice numbers always look like `INV-123456` | typos reach the ERP | **Pattern** `^INV-\d{6}$` on Invoice Number for that supplier |
-| Every article line needs a quantity above zero | lines with quantity 0 are exported | **Range** (minimum 0.01) on the Quantity column |
-| The due date must not be before the invoice date | wrong payment runs | **Compare fields**: Due Date on or after Invoice Date |
-| The lines must add up to the net amount | only the fixed built-in check | **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount` with your own tolerance |
-| Only currencies your ERP knows are allowed | export errors in the ERP | **List of Values** on Currency |
-| Tell users about unusual values without blocking them | not possible | any rule with the severity **Warning** |
+| Business requirement                                         | Without custom rules                   | With a custom rule                                                                                |
+| ------------------------------------------------------------ | -------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| German invoices over 250 EUR must show the supplier's tax ID | a script, or users have to remember it | **Required** on Supplier Tax ID, _applies when_ origin is DE and total amount is greater than 250 |
+| A supplier's invoice numbers always look like `INV-123456`   | typos reach the ERP                    | **Pattern** `^INV-\d{6}$` on Invoice Number for that supplier                                     |
+| Every article line needs a quantity above zero               | lines with quantity 0 are exported     | **Range** (minimum 0.01) on the Quantity column                                                   |
+| The due date must not be before the invoice date             | wrong payment runs                     | **Compare fields**: Due Date on or after Invoice Date                                             |
+| The lines must add up to the net amount                      | only the fixed built-in check          | **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount` with your own tolerance              |
+| Only currencies your ERP knows are allowed                   | export errors in the ERP               | **List of Values** on Currency                                                                    |
+| Tell users about unusual values without blocking them        | not possible                           | any rule with the severity **Warning**                                                            |
 
 ## Enable custom validation rules
 
@@ -44,7 +44,7 @@ From now on the card of the document type also shows a **Validation Rules** link
 <figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="The document type card with the Validation Rules link"><figcaption><p>The links on the document type card</p></figcaption></figure>
 
 {% hint style="warning" %}
-**The toggle replaces the built-in amount checks.** While custom validation rules are on for a document type, the hard-coded checks "total amount = net amount + tax amount" and the line amount / discount checks are **not** run for it; the configurable rules take their place. Recreate the checks you rely on as rules (see the [recipes](#recipes)) before you switch it on. Turning the toggle off restores the built-in checks. All other field validations (required fields, formats, master data) keep running.
+**The toggle replaces the built-in amount checks.** While custom validation rules are on for a document type, the hard-coded checks "total amount = net amount + tax amount" and the line amount / discount checks are **not** run for it; the configurable rules take their place. Recreate the checks you rely on as rules (see the [recipes](custom-validation-rules.md#recipes)) before you switch it on. Turning the toggle off restores the built-in checks. All other field validations (required fields, formats, master data) keep running.
 {% endhint %}
 
 ## The rule list
@@ -57,11 +57,11 @@ Each card shows the rule's name and description, and the badges for its **level*
 
 ### System default, Customized and Custom rules
 
-| Source | What it is | What you can do |
-| --- | --- | --- |
-| **System default** | A rule shipped with DocBits for all organisations. | It cannot be edited directly — the builder shows "This is a system default rule and cannot be edited." Click **Customize** to create your own editable copy, or switch it off to stop it for your organisation. |
-| **Customized** | A system default that your organisation has changed or switched off. | Edit it like your own rule. **Reset to Default** deletes your copy and brings back the original. |
-| **Custom** | A rule your organisation created. | Edit, **Duplicate**, **Delete**. |
+| Source             | What it is                                                           | What you can do                                                                                                                                                                                                 |
+| ------------------ | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **System default** | A rule shipped with DocBits for all organisations.                   | It cannot be edited directly — the builder shows "This is a system default rule and cannot be edited." Click **Customize** to create your own editable copy, or switch it off to stop it for your organisation. |
+| **Customized**     | A system default that your organisation has changed or switched off. | Edit it like your own rule. **Reset to Default** deletes your copy and brings back the original.                                                                                                                |
+| **Custom**         | A rule your organisation created.                                    | Edit, **Duplicate**, **Delete**.                                                                                                                                                                                |
 
 Changes to system defaults never affect other organisations.
 
@@ -73,24 +73,24 @@ Click **New rule**. The builder has three steps. **Test rule** and **Save** are 
 
 <figure><img src="../../../../.gitbook/assets/validation-rule-step1.png" alt="Step 1 of the validation rule builder for a header field rule"><figcaption><p>Step 1 for a header field rule</p></figcaption></figure>
 
-| Setting | What it does |
-| --- | --- |
-| **Rule level** | What the rule looks at and where the error is shown — see [Rule levels](#rule-levels). |
-| **Severity** | **Error** marks the field invalid and blocks validation. **Warning** shows the message but never blocks. |
-| **Rule Name** | Shown in the list, in the logs and to administrators. Make it describe the rule ("Supplier tax ID required for German invoices"). |
-| **Rule key** | A technical key generated from the name. It stays the same when you rename the rule later. Click the pencil to choose your own key before the first save; after that it is fixed. |
-| **Description** | Optional explanation for other administrators. |
-| **Table name** | *Table line only.* The table whose rows are checked, for example `INVOICE_TABLE`. |
-| **Attach error to field / column** | The field (or, for table lines, the column) that shows the error on the validation screen. |
-| **Log execution** | Writes one log entry per evaluation, including why the rule applied or not. See [Logs](#logs). |
+| Setting                            | What it does                                                                                                                                                                      |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Rule level**                     | What the rule looks at and where the error is shown — see [Rule levels](custom-validation-rules.md#rule-levels).                                                                  |
+| **Severity**                       | **Error** marks the field invalid and blocks validation. **Warning** shows the message but never blocks.                                                                          |
+| **Rule Name**                      | Shown in the list, in the logs and to administrators. Make it describe the rule ("Supplier tax ID required for German invoices").                                                 |
+| **Rule key**                       | A technical key generated from the name. It stays the same when you rename the rule later. Click the pencil to choose your own key before the first save; after that it is fixed. |
+| **Description**                    | Optional explanation for other administrators.                                                                                                                                    |
+| **Table name**                     | _Table line only._ The table whose rows are checked, for example `INVOICE_TABLE`.                                                                                                 |
+| **Attach error to field / column** | The field (or, for table lines, the column) that shows the error on the validation screen.                                                                                        |
+| **Log execution**                  | Writes one log entry per evaluation, including why the rule applied or not. See [Logs](custom-validation-rules.md#logs).                                                          |
 
 #### Rule levels
 
-| Level | Runs | Error is shown on | Can read | Typical rule |
-| --- | --- | --- | --- | --- |
-| **Header field** | once per document | a header field | `header.*`, `doc.*` | "Supplier tax ID is required for German invoices" |
-| **Table line** | once for every row of the selected table | the cell of the failing row | `row.*` (the current row), `header.*`, `doc.*` | "Quantity must be greater than zero" |
-| **Whole table** | once per document, looking at all rows together | a header field | totals over the rows (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | "The line net amounts must add up to the net amount" |
+| Level            | Runs                                            | Error is shown on           | Can read                                                                         | Typical rule                                         |
+| ---------------- | ----------------------------------------------- | --------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| **Header field** | once per document                               | a header field              | `header.*`, `doc.*`                                                              | "Supplier tax ID is required for German invoices"    |
+| **Table line**   | once for every row of the selected table        | the cell of the failing row | `row.*` (the current row), `header.*`, `doc.*`                                   | "Quantity must be greater than zero"                 |
+| **Whole table**  | once per document, looking at all rows together | a header field              | totals over the rows (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | "The line net amounts must add up to the net amount" |
 
 <figure><img src="../../../../.gitbook/assets/validation-rule-line-step1.png" alt="Step 1 for a table line rule"><figcaption><p>A table line rule: the table and the column that shows the error</p></figcaption></figure>
 
@@ -118,7 +118,7 @@ Fails when the field is empty (missing, or only spaces). No further settings.
 
 Use it together with **Applies when** to make a field **conditionally** required. A field that must always be filled is better configured as a required field in the field settings.
 
-> *Supplier Tax ID is required* — applies when *Document Origin is Deutsch* and *Total Amount greater than 250*.
+> _Supplier Tax ID is required_ — applies when _Document Origin is Deutsch_ and _Total Amount greater than 250_.
 
 #### Formula — amounts must add up
 
@@ -135,25 +135,25 @@ An arithmetic comparison. The expression contains exactly **one** comparison (`=
 
 Examples:
 
-| Purpose | Level | Expression | Tolerance |
-| --- | --- | --- | --- |
-| Header totals are consistent | Header field | `header.total_amount == header.total_net_amount + header.total_tax_amount` | 0.01 |
-| Lines add up to the net amount | Whole table | `sum(row.NET_AMOUNT) == header.total_net_amount` | 0.05 |
-| Line amount = quantity × unit price | Table line | `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE` | 0.01 |
-| Tax not higher than 19 % of the net amount | Header field | `header.total_tax_amount <= header.total_net_amount * 0.19` | – |
-| At least one line | Whole table | `count(row.ITEM_NUMBER) >= 1` | 0 |
+| Purpose                                    | Level        | Expression                                                                 | Tolerance |
+| ------------------------------------------ | ------------ | -------------------------------------------------------------------------- | --------- |
+| Header totals are consistent               | Header field | `header.total_amount == header.total_net_amount + header.total_tax_amount` | 0.01      |
+| Lines add up to the net amount             | Whole table  | `sum(row.NET_AMOUNT) == header.total_net_amount`                           | 0.05      |
+| Line amount = quantity × unit price        | Table line   | `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`                          | 0.01      |
+| Tax not higher than 19 % of the net amount | Header field | `header.total_tax_amount <= header.total_net_amount * 0.19`                | –         |
+| At least one line                          | Whole table  | `count(row.ITEM_NUMBER) >= 1`                                              | 0         |
 
 #### Pattern — match a format / regex
 
 The value must match a **regular expression**. The expression searches the value, so anchor it with `^` (start) and `$` (end) when the whole value must match. Tick **Case-insensitive match** if case does not matter.
 
-| Format | Regular expression |
-| --- | --- |
-| `INV-` followed by six digits | `^INV-\d{6}$` |
-| German VAT ID | `^DE\d{9}$` |
-| Purchase order starting with 45 and 10 digits long | `^45\d{8}$` |
-| Only digits | `^\d+$` |
-| IBAN (rough check) | `^[A-Z]{2}\d{2}[A-Z0-9]{11,30}$` |
+| Format                                             | Regular expression               |
+| -------------------------------------------------- | -------------------------------- |
+| `INV-` followed by six digits                      | `^INV-\d{6}$`                    |
+| German VAT ID                                      | `^DE\d{9}$`                      |
+| Purchase order starting with 45 and 10 digits long | `^45\d{8}$`                      |
+| Only digits                                        | `^\d+$`                          |
+| IBAN (rough check)                                 | `^[A-Z]{2}\d{2}[A-Z0-9]{11,30}$` |
 
 #### Range — between min and max
 
@@ -163,7 +163,7 @@ The value must be a number between **Minimum** and **Maximum** (both included). 
 
 #### Compare fields — e.g. due date ≥ invoice date
 
-Compares the value of a field with another field, with **today** or with a fixed value, using *equal to*, *not equal to*, *greater than*, *less than*, *on or after (≥)* or *on or before (≤)*. Numbers are compared as numbers and dates as dates.
+Compares the value of a field with another field, with **today** or with a fixed value, using _equal to_, _not equal to_, _greater than_, _less than_, _on or after (≥)_ or _on or before (≤)_. Numbers are compared as numbers and dates as dates.
 
 * Due Date **on or after (≥)** Invoice Date
 * Invoice Date **on or before (≤)** today — no invoices dated in the future
@@ -175,10 +175,10 @@ The value must be one of the values you type, **one value per line**. Optionally
 
 #### List of Values — from a named LOV
 
-Like *Allowed values*, but the values come from a shared **List of Values** managed under **Settings › List of Values**. Pick the list instead of retyping it; when the list changes, the rule uses the new values (after a short caching delay). Only the list entries' values count, not their labels.
+Like _Allowed values_, but the values come from a shared **List of Values** managed under **Settings › List of Values**. Pick the list instead of retyping it; when the list changes, the rule uses the new values (after a short caching delay). Only the list entries' values count, not their labels.
 
 {% hint style="info" %}
-Except for **Required**, every check **passes when the value is empty**. A Pattern rule on the Purchase Order does not complain about invoices without a purchase order. If an empty value is a problem too, add a Required rule, or limit the rule with *Applies when … is not empty*.
+Except for **Required**, every check **passes when the value is empty**. A Pattern rule on the Purchase Order does not complain about invoices without a purchase order. If an empty value is a problem too, add a Required rule, or limit the rule with _Applies when … is not empty_.
 {% endhint %}
 
 #### Error message and error code
@@ -192,11 +192,11 @@ Click **Test rule** to run the current version of the rule — saved or not — 
 
 The result is one of three outcomes:
 
-| Outcome | Meaning |
-| --- | --- |
-| **Rule failed — error raised** | The condition matched and the check failed. The message is shown exactly as the user would see it. |
-| **Rule passed** | The condition matched and the check passed. Table line rules show the result per row ("4 of 4 checked rows passed"). |
-| **Rule skipped — scope not matched** | The *Applies when* condition was false for this document, so nothing was checked and no error was raised. |
+| Outcome                              | Meaning                                                                                                              |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| **Rule failed — error raised**       | The condition matched and the check failed. The message is shown exactly as the user would see it.                   |
+| **Rule passed**                      | The condition matched and the check passed. Table line rules show the result per row ("4 of 4 checked rows passed"). |
+| **Rule skipped — scope not matched** | The _Applies when_ condition was false for this document, so nothing was checked and no error was raised.            |
 
 <figure><img src="../../../../.gitbook/assets/validation-rule-test-result.png" alt="Test rule: rule failed"><figcaption><p>The German invoice has no supplier tax ID: the rule fails with the configured message</p></figcaption></figure>
 
@@ -223,7 +223,7 @@ Choose how to search with **Find by** — **Rule key**, **Rule ID** or **Documen
 
 <figure><img src="../../../../.gitbook/assets/core6847-rule-execution-logs-en.png" alt="The rule execution logs"><figcaption><p>The Rule Execution Logs page: the filters on top, one row per evaluation below. Until you search, the table tells you what to enter.</p></figcaption></figure>
 
-Open an entry to see its details, including the **condition trace**: each line of *Applies when* with the expected value, the actual value of the document and whether it passed. See [Read the condition trace](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
+Open an entry to see its details, including the **condition trace**: each line of _Applies when_ with the expected value, the actual value of the document and whether it passed. See [Read the condition trace](rule-conditions-applies-when.md#read-the-condition-trace-in-the-logs).
 
 The same page shows the logs of transformation and layout selection rules.
 
@@ -231,35 +231,25 @@ The same page shows the logs of transformation and layout selection rules.
 
 Copy these rules as a starting point. Field and column keys are those of the standard **Invoice** document type; adjust them to your document types.
 
-**1. Supplier tax ID for German invoices above 250 EUR**
-Header field · Error · attach to *Supplier Tax ID* · Applies when **All**: *Document Origin* is *Deutsch*, *Total Amount* greater than *250* · Check **Required** · Message "Supplier tax ID is missing. German invoices over 250 EUR must show it." · Code `REQUIRED_CONDITIONAL`.
+**1. Supplier tax ID for German invoices above 250 EUR** Header field · Error · attach to _Supplier Tax ID_ · Applies when **All**: _Document Origin_ is _Deutsch_, _Total Amount_ greater than _250_ · Check **Required** · Message "Supplier tax ID is missing. German invoices over 250 EUR must show it." · Code `REQUIRED_CONDITIONAL`.
 
-**2. Header totals add up** (replaces the built-in check)
-Header field · Error · attach to *Total Amount* · always · **Formula** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolerance `0.01` · Message "Total {actual} does not equal net plus tax ({expected})."
+**2. Header totals add up** (replaces the built-in check) Header field · Error · attach to _Total Amount_ · always · **Formula** `header.total_amount == header.total_net_amount + header.total_tax_amount`, tolerance `0.01` · Message "Total {actual} does not equal net plus tax ({expected})."
 
-**3. Lines add up to the net amount** (replaces the built-in check)
-Whole table · Error · attach to *Total Net Amount* · always · **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount`, tolerance `0.05` · Message "Line net amounts add up to {actual}, but the invoice net amount is {expected}." · Code `LINES_HEADER_MISMATCH`.
+**3. Lines add up to the net amount** (replaces the built-in check) Whole table · Error · attach to _Total Net Amount_ · always · **Formula** `sum(row.NET_AMOUNT) == header.total_net_amount`, tolerance `0.05` · Message "Line net amounts add up to {actual}, but the invoice net amount is {expected}." · Code `LINES_HEADER_MISMATCH`.
 
-**4. Quantity must be positive on article lines**
-Table line · Error · table `INVOICE_TABLE`, column `QUANTITY` · Applies when *row.ITEM_NUMBER* is not empty · **Range** minimum `0.01` · Code `OUT_OF_RANGE`.
+**4. Quantity must be positive on article lines** Table line · Error · table `INVOICE_TABLE`, column `QUANTITY` · Applies when _row.ITEM\_NUMBER_ is not empty · **Range** minimum `0.01` · Code `OUT_OF_RANGE`.
 
-**5. Line amount = quantity × unit price**
-Table line · Warning · column `NET_AMOUNT` · always · **Formula** `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`, tolerance `0.01`.
+**5. Line amount = quantity × unit price** Table line · Warning · column `NET_AMOUNT` · always · **Formula** `row.NET_AMOUNT == row.QUANTITY * row.UNIT_PRICE`, tolerance `0.01`.
 
-**6. Invoice number format of one supplier**
-Header field · Error · *Invoice Number* · Applies when *Supplier ID* is *20723* · **Pattern** `^INV-\d{6}$`.
+**6. Invoice number format of one supplier** Header field · Error · _Invoice Number_ · Applies when _Supplier ID_ is _20723_ · **Pattern** `^INV-\d{6}$`.
 
-**7. Due date not before invoice date**
-Header field · Error · *Due Date* · always · **Compare fields** Due Date *on or after (≥)* Invoice Date · Code `DATE_ORDER`.
+**7. Due date not before invoice date** Header field · Error · _Due Date_ · always · **Compare fields** Due Date _on or after (≥)_ Invoice Date · Code `DATE_ORDER`.
 
-**8. No invoices dated in the future**
-Header field · Error · *Invoice Date* · always · **Compare fields** Invoice Date *on or before (≤)* today.
+**8. No invoices dated in the future** Header field · Error · _Invoice Date_ · always · **Compare fields** Invoice Date _on or before (≤)_ today.
 
-**9. Only approved currencies (hint only)**
-Header field · **Warning** · *Currency* · always · **List of Values** *approved_currencies* · Code `VALUE_NOT_ALLOWED`.
+**9. Only approved currencies (hint only)** Header field · **Warning** · _Currency_ · always · **List of Values** _approved\_currencies_ · Code `VALUE_NOT_ALLOWED`.
 
-**10. Purchase order required above 5,000**
-Header field · Error · *Purchase Order* · Applies when *Total Amount* greater than *5000* · **Required**.
+**10. Purchase order required above 5,000** Header field · Error · _Purchase Order_ · Applies when _Total Amount_ greater than _5000_ · **Required**.
 
 ## Best practices
 
@@ -272,20 +262,20 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 
 ## Troubleshooting
 
-| Symptom | What to check |
-| --- | --- |
-| The rule never raises an error | Is the feature enabled for the document type and the rule **Active**? Run **Test rule** on the document: "skipped" means *Applies when* was false. |
-| An empty field is not reported | Only **Required** reports empty values. Add a Required rule. |
-| The built-in total checks disappeared | Expected while custom rules are on. Recreate them as Formula rules (recipes 2 and 3). |
-| A changed rule has no effect on a document | Documents are re-checked on their next save. Save or reprocess the document. |
-| A Pattern matches values it should not | Patterns search inside the value. Anchor with `^` and `$`. |
-| Only one of two errors is shown on a field | A field shows the first failing rule only. Adjust the priorities or attach one of the rules to another field. |
-| Table columns are missing in *Applies when* | They are only available at the level **Table line**. |
-| The system default rule cannot be changed | Click **Customize** to create your own copy. |
+| Symptom                                     | What to check                                                                                                                                      |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The rule never raises an error              | Is the feature enabled for the document type and the rule **Active**? Run **Test rule** on the document: "skipped" means _Applies when_ was false. |
+| An empty field is not reported              | Only **Required** reports empty values. Add a Required rule.                                                                                       |
+| The built-in total checks disappeared       | Expected while custom rules are on. Recreate them as Formula rules (recipes 2 and 3).                                                              |
+| A changed rule has no effect on a document  | Documents are re-checked on their next save. Save or reprocess the document.                                                                       |
+| A Pattern matches values it should not      | Patterns search inside the value. Anchor with `^` and `$`.                                                                                         |
+| Only one of two errors is shown on a field  | A field shows the first failing rule only. Adjust the priorities or attach one of the rules to another field.                                      |
+| Table columns are missing in _Applies when_ | They are only available at the level **Table line**.                                                                                               |
+| The system default rule cannot be changed   | Click **Customize** to create your own copy.                                                                                                       |
 
 ## Related
 
 * [Rule Conditions (Applies when)](rule-conditions-applies-when.md) — conditions in depth
-* [Transformation Rules](transformation-rules.md) — correct values before they are validated
+* [Transformation Rules](transformation-rules/) — correct values before they are validated
 * [Layout Selection Rules](layout-manager/layout-selection-rules.md) — choose the layout a document uses
 * [Setting Validation and Match Score](fields/setting-validation-and-match-score.md) — validation settings per field

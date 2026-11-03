@@ -6,11 +6,11 @@ Every rule in DocBits' rule features has an **Applies when** section. It decides
 
 The same condition builder is used in all three rule features:
 
-| Feature | Label in the builder | When the condition is true… | When it is false… | When it is left empty… |
-| --- | --- | --- | --- | --- |
-| [Custom Validation Rules](custom-validation-rules.md) | Step 2 **Applies when** | the check in step 3 runs | the rule is skipped — no error, no warning | the check runs on every document |
-| [Transformation Rules](transformation-rules.md) | Step 2 **When it runs** → **Only when…** | the pipeline changes the value | the value is left as it is | choose **Always**: the rule runs on every document |
-| [Layout Selection Rules](layout-manager/layout-selection-rules.md) | Step 2 **Applies when** | the document gets this rule's layout (first match wins) | DocBits tries the next rule | the rule matches every document at its priority |
+| Feature                                                            | Label in the builder                     | When the condition is true…                             | When it is false…                          | When it is left empty…                             |
+| ------------------------------------------------------------------ | ---------------------------------------- | ------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------- |
+| [Custom Validation Rules](custom-validation-rules.md)              | Step 2 **Applies when**                  | the check in step 3 runs                                | the rule is skipped — no error, no warning | the check runs on every document                   |
+| [Transformation Rules](transformation-rules/)                      | Step 2 **When it runs** → **Only when…** | the pipeline changes the value                          | the value is left as it is                 | choose **Always**: the rule runs on every document |
+| [Layout Selection Rules](layout-manager/layout-selection-rules.md) | Step 2 **Applies when**                  | the document gets this rule's layout (first match wins) | DocBits tries the next rule                | the rule matches every document at its priority    |
 
 Learn it once here and you can use it everywhere.
 
@@ -28,13 +28,13 @@ A condition reads like a sentence. The builder below says:
 
 With that condition, the rule applies to:
 
-| Document | Origin | Total amount | Currency | Applies? | Why |
-| --- | --- | --- | --- | --- | --- |
-| A | DE | 469.18 | EUR | **yes** | all three parts are true |
-| B | DE | 469.18 | *(empty)* | **yes** | the ANY group is true because the currency is empty |
-| C | DE | 120.00 | EUR | no | 120 is not greater than 250 |
-| D | DE | 469.18 | USD | no | neither line of the ANY group is true |
-| E | AT | 469.18 | EUR | no | the origin is not DE |
+| Document | Origin | Total amount | Currency  | Applies? | Why                                                 |
+| -------- | ------ | ------------ | --------- | -------- | --------------------------------------------------- |
+| A        | DE     | 469.18       | EUR       | **yes**  | all three parts are true                            |
+| B        | DE     | 469.18       | _(empty)_ | **yes**  | the ANY group is true because the currency is empty |
+| C        | DE     | 120.00       | EUR       | no       | 120 is not greater than 250                         |
+| D        | DE     | 469.18       | USD       | no       | neither line of the ANY group is true               |
+| E        | AT     | 469.18       | EUR       | no       | the origin is not DE                                |
 
 ## The building blocks
 
@@ -42,12 +42,12 @@ With that condition, the rule applies to:
 
 Each line has four parts:
 
-| Part | What it is |
-| --- | --- |
-| **Field** | The value that is checked: a document attribute, a header field, a table column or a JSON path. See [Fields you can use](#fields-you-can-use). |
-| **Operator** | How the value is compared — *is*, *contains*, *greater than*, *is empty* … See [Operators](#operators). |
-| **Value** | What the field is compared with. Hidden for *is empty* / *is not empty*. For fields with a fixed list of values (origin, status, currency…) the value is picked from a dropdown. |
-| **Aa** | Ignore upper/lower case. Available for text comparisons only. When it is on, `gmbh` matches `GmbH`. |
+| Part         | What it is                                                                                                                                                                       |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Field**    | The value that is checked: a document attribute, a header field, a table column or a JSON path. See [Fields you can use](rule-conditions-applies-when.md#fields-you-can-use).    |
+| **Operator** | How the value is compared — _is_, _contains_, _greater than_, _is empty_ … See [Operators](rule-conditions-applies-when.md#operators).                                           |
+| **Value**    | What the field is compared with. Hidden for _is empty_ / _is not empty_. For fields with a fixed list of values (origin, status, currency…) the value is picked from a dropdown. |
+| **Aa**       | Ignore upper/lower case. Available for text comparisons only. When it is on, `gmbh` matches `GmbH`.                                                                              |
 
 Click **✕** to remove a line.
 
@@ -62,8 +62,8 @@ The selector at the start of a group decides how its lines are combined:
 
 Click **+ Add nested group** to put a group inside a group. A nested group counts as one line of its parent group, so you can mix AND and OR:
 
-* *ALL of*: origin is DE, **ANY of** (currency is EUR, currency is empty)
-* *ANY of*: supplier is 10040, **ALL of** (supplier is 20723, total amount greater than 1000)
+* _ALL of_: origin is DE, **ANY of** (currency is EUR, currency is empty)
+* _ANY of_: supplier is 10040, **ALL of** (supplier is 20723, total amount greater than 1000)
 
 Groups can be nested as deeply as you need. Keep it readable: two levels are enough for almost every business rule.
 
@@ -81,12 +81,12 @@ Open the field dropdown to see every field, grouped by where it comes from. Type
 
 Information DocBits knows about the document itself, independent of the extracted fields:
 
-| Field in the picker | Key | Example values | Typical use |
-| --- | --- | --- | --- |
-| **Document Origin** | `doc.doc_origin` | `DE`, `AT`, `US` (shown as Deutsch, Austria, United States) | country-specific rules and layouts |
-| **Extraction Method** | `doc.extraction_method` | `ELECTRONIC_DOCUMENT`, `FELLOW_KV2`, `MANUAL` | treat e-invoices (XRechnung, ZUGFeRD) differently from scanned PDFs |
-| **Document Status** | `doc.status` | Ready for validation, Pending Approval, Pending second approval … | layouts per workflow stage, rules that only apply before approval |
-| **Sub Document Type** | `doc.sub_doc_type` | your sub types, e.g. credit memo | rules for one sub type only |
+| Field in the picker   | Key                     | Example values                                                    | Typical use                                                         |
+| --------------------- | ----------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Document Origin**   | `doc.doc_origin`        | `DE`, `AT`, `US` (shown as Deutsch, Austria, United States)       | country-specific rules and layouts                                  |
+| **Extraction Method** | `doc.extraction_method` | `ELECTRONIC_DOCUMENT`, `FELLOW_KV2`, `MANUAL`                     | treat e-invoices (XRechnung, ZUGFeRD) differently from scanned PDFs |
+| **Document Status**   | `doc.status`            | Ready for validation, Pending Approval, Pending second approval … | layouts per workflow stage, rules that only apply before approval   |
+| **Sub Document Type** | `doc.sub_doc_type`      | your sub types, e.g. credit memo                                  | rules for one sub type only                                         |
 
 ### Header fields (`header.`)
 
@@ -113,52 +113,52 @@ At the bottom of the picker, **Advanced → Custom JSON path…** turns the fiel
 
 * The path starts with `$` and uses `.name` for keys and `[0]` for list positions, for example `$.metadata.import_channel` or `$.shipping.addresses[0].country`.
 * It must end on a single value. A path that ends on a list or an object counts as empty.
-* JSON path lines offer the operators *is*, *is not*, *matches*, *is empty* and *is not empty*.
+* JSON path lines offer the operators _is_, _is not_, _matches_, _is empty_ and _is not empty_.
 
 Use JSON paths sparingly. They depend on the internal structure of the extracted data; a field of the document type is easier to understand and to maintain.
 
 ### Where each kind of field can be used
 
-| | Validation: Header field | Validation: Table line | Validation: Whole table | Transformation: Header / Routing / Table rows | Transformation: Table column | Layout selection |
-| --- | --- | --- | --- | --- | --- | --- |
-| `doc.` document attributes | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| `header.` header fields | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| `row.` table columns | – | ✓ | – | – | ✓ | – |
-| `$` JSON path | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+|                            | Validation: Header field | Validation: Table line | Validation: Whole table | Transformation: Header / Routing / Table rows | Transformation: Table column | Layout selection |
+| -------------------------- | ------------------------ | ---------------------- | ----------------------- | --------------------------------------------- | ---------------------------- | ---------------- |
+| `doc.` document attributes | ✓                        | ✓                      | ✓                       | ✓                                             | ✓                            | ✓                |
+| `header.` header fields    | ✓                        | ✓                      | ✓                       | ✓                                             | ✓                            | ✓                |
+| `row.` table columns       | –                        | ✓                      | –                       | –                                             | ✓                            | –                |
+| `$` JSON path              | ✓                        | ✓                      | ✓                       | ✓                                             | ✓                            | ✓                |
 
 ## Operators
 
 <figure><img src="../../../../.gitbook/assets/applies-when-text-operators.png" alt="The operator list for a text field"><figcaption><p>The operators offered for a text field</p></figcaption></figure>
 
-| Operator | True when… | Value | Example |
-| --- | --- | --- | --- |
-| **is** | the field equals the value | one value | Supplier ID **is** `20723` |
-| **is not** | the field does not equal the value | one value | Currency **is not** `EUR` |
-| **is one of** | the field equals any value of a list | values separated by commas | Supplier ID **is one of** `10040, 10041, 20723` |
-| **contains** | the value appears anywhere in the field | text | Supplier Name **contains** `GmbH` |
-| **starts with** | the field begins with the value | text | Invoice Number **starts with** `GS-` |
-| **ends with** | the field ends with the value | text | Purchase Order **ends with** `-IT` |
-| **matches** | a regular expression finds a match in the field | regular expression | Invoice Number **matches** `^INV-\d{6}$` |
-| **is empty** | the field has no value (missing, or only spaces) | – | Purchase Order **is empty** |
-| **is not empty** | the field has a value | – | Purchase Order **is not empty** |
-| **greater than** / **less than** | the field is a number above / below the value | number | Total Amount **greater than** `10000` |
-| **greater or equal** / **less or equal** | the same, including the value itself | number | Total Amount **less or equal** `250` |
+| Operator                                 | True when…                                       | Value                      | Example                                         |
+| ---------------------------------------- | ------------------------------------------------ | -------------------------- | ----------------------------------------------- |
+| **is**                                   | the field equals the value                       | one value                  | Supplier ID **is** `20723`                      |
+| **is not**                               | the field does not equal the value               | one value                  | Currency **is not** `EUR`                       |
+| **is one of**                            | the field equals any value of a list             | values separated by commas | Supplier ID **is one of** `10040, 10041, 20723` |
+| **contains**                             | the value appears anywhere in the field          | text                       | Supplier Name **contains** `GmbH`               |
+| **starts with**                          | the field begins with the value                  | text                       | Invoice Number **starts with** `GS-`            |
+| **ends with**                            | the field ends with the value                    | text                       | Purchase Order **ends with** `-IT`              |
+| **matches**                              | a regular expression finds a match in the field  | regular expression         | Invoice Number **matches** `^INV-\d{6}$`        |
+| **is empty**                             | the field has no value (missing, or only spaces) | –                          | Purchase Order **is empty**                     |
+| **is not empty**                         | the field has a value                            | –                          | Purchase Order **is not empty**                 |
+| **greater than** / **less than**         | the field is a number above / below the value    | number                     | Total Amount **greater than** `10000`           |
+| **greater or equal** / **less or equal** | the same, including the value itself             | number                     | Total Amount **less or equal** `250`            |
 
 ### Which operators a field offers
 
 The list adapts to the type of the field:
 
-| Field type | Operators |
-| --- | --- |
-| Text | all operators |
-| Number and amount (Total Amount, Quantity …) | is, is not, greater than, less than, greater or equal, less or equal, is empty, is not empty |
-| Fields with a fixed list (Document Origin, Status, Currency …) | is, is not, is one of, is empty, is not empty |
-| Date (Invoice Date, Due Date …) | is, is not, is empty, is not empty |
-| Yes/No | is, is not, is empty, is not empty |
-| Custom JSON path | is, is not, matches, is empty, is not empty |
+| Field type                                                     | Operators                                                                                    |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Text                                                           | all operators                                                                                |
+| Number and amount (Total Amount, Quantity …)                   | is, is not, greater than, less than, greater or equal, less or equal, is empty, is not empty |
+| Fields with a fixed list (Document Origin, Status, Currency …) | is, is not, is one of, is empty, is not empty                                                |
+| Date (Invoice Date, Due Date …)                                | is, is not, is empty, is not empty                                                           |
+| Yes/No                                                         | is, is not, is empty, is not empty                                                           |
+| Custom JSON path                                               | is, is not, matches, is empty, is not empty                                                  |
 
 {% hint style="warning" %}
-**Dates cannot be compared with *before* or *after* in a condition.** "Due date after invoice date" or "invoice date older than 90 days" belongs in the **check** of a validation rule (**Compare fields**), not in *Applies when*.
+**Dates cannot be compared with&#x20;**_**before**_**&#x20;or&#x20;**_**after**_**&#x20;in a condition.** "Due date after invoice date" or "invoice date older than 90 days" belongs in the **check** of a validation rule (**Compare fields**), not in _Applies when_.
 {% endhint %}
 
 ## How values are compared
@@ -173,7 +173,7 @@ Knowing these rules avoids most surprises:
    * is false for **is**, **is one of**, **contains**, **starts with**, **ends with**, **matches** and all number comparisons.
 
 {% hint style="warning" %}
-Because of rule 4, *Currency **is not** EUR* is also true for documents **without** a currency. If that is not what you want, add a second line *Currency **is not empty***.
+Because of rule 4, _Currency **is not** EUR_ is also true for documents **without** a currency. If that is not what you want, add a second line _Currency **is not empty**_.
 {% endhint %}
 
 {% hint style="info" %}
@@ -210,8 +210,8 @@ For fields whose value is picked from a dropdown (origin, status, currency), **i
 
 Each feature lets you try a condition before relying on it:
 
-* **Validation rules** — **Test rule** runs the rule against a real document. "*Rule skipped — scope not matched*" means the condition was false for that document. See [Test rule](custom-validation-rules.md#test-rule).
-* **Transformation rules** — the **Live preview** has **Condition values**: type a value for every field of the condition and see "*Conditions match — rule runs*" or "*Conditions do not match — rule is skipped*".
+* **Validation rules** — **Test rule** runs the rule against a real document. "_Rule skipped — scope not matched_" means the condition was false for that document. See [Test rule](custom-validation-rules.md#test-rule).
+* **Transformation rules** — the **Live preview** has **Condition values**: type a value for every field of the condition and see "_Conditions match — rule runs_" or "_Conditions do not match — rule is skipped_".
 * **Layout selection rules** — the **Live preview · /resolve** panel shows which rule matched for a sample document.
 
 ### Read the condition trace in the logs
@@ -224,11 +224,11 @@ The logs can be searched by **Rule key**, **Rule ID** or **Document**, and filte
 
 ## Common mistakes
 
-| Symptom | Cause | Fix |
-| --- | --- | --- |
-| The rule never applies | The value differs in case or spelling (`Gmbh` vs `GmbH`) | Switch on **Aa**, or copy the value exactly from the document |
-| The rule applies to documents without the field | **is not** is true for empty fields | Add *field* **is not empty** |
-| *greater than* never matches | The field is not a number, or it is a date | Use a number field; compare dates in a validation check |
-| The rule applies to too many documents | Lines were combined with **ANY** instead of **All** | Check the selector of each group |
-| Table columns are missing from the picker | The rule runs once per document | Use the level **Table line** (validation) or the scope **Table column** (transformation) |
-| The condition worked in the preview but not on the document | The preview used values you typed | Test with **Test rule** on a real document, or check the log trace |
+| Symptom                                                     | Cause                                                    | Fix                                                                                      |
+| ----------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| The rule never applies                                      | The value differs in case or spelling (`Gmbh` vs `GmbH`) | Switch on **Aa**, or copy the value exactly from the document                            |
+| The rule applies to documents without the field             | **is not** is true for empty fields                      | Add _field_ **is not empty**                                                             |
+| _greater than_ never matches                                | The field is not a number, or it is a date               | Use a number field; compare dates in a validation check                                  |
+| The rule applies to too many documents                      | Lines were combined with **ANY** instead of **All**      | Check the selector of each group                                                         |
+| Table columns are missing from the picker                   | The rule runs once per document                          | Use the level **Table line** (validation) or the scope **Table column** (transformation) |
+| The condition worked in the preview but not on the document | The preview used values you typed                        | Test with **Test rule** on a real document, or check the log trace                       |

@@ -12,11 +12,11 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 
 **Former VESTA beta features are included in the NOVA sandbox.** All features previously available as beta in VESTA are part of NOVA's regular feature set, available for testing in the sandbox ahead of the planned production release. They will also become regular VESTA features with the [next VESTA hotfix, planned for **11 November 2026**](vesta-hotfix-11-november-2026.md).
 
-| Release channel | Release notes | Focus |
-| --- | --- | --- |
-| **NOVA November Release N2611** | [What's new for customers](nova-minor-release-4-november-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
-| **VESTA November Release V2611 (planned)** | [11 November 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
-| **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
+| Release channel                            | Release notes                                                                                     | Focus                                                                                             |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **NOVA November Release N2611**            | [What's new for customers](nova-minor-release-4-november-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
+| **VESTA November Release V2611 (planned)** | [11 November 2026 — V2611](vesta-hotfix-11-november-2026.md)                                      | Introduces all former VESTA beta features into the regular VESTA feature set.                     |
+| **VESTA — Hotfix Release**                 | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md)                               | Improvements and fixes for the current VESTA production release.                                  |
 
 ## NOVA November Release N2611
 
@@ -36,7 +36,7 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 
 ### Guides for setting up rules
 
-* [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): clean up and rewrite extracted values, build a sequence of steps and preview the result. **Watch:** [Watch video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4).
+* [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules/): clean up and rewrite extracted values, build a sequence of steps and preview the result. **Watch:** [Watch video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4).
 * [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): define checks for fields and table rows, choose conditions and severity, and test your rules. **Watch:** [Watch video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**PO Matching Rules**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configure matching types, tolerances and execution order, and manage rule versions. **Related video — Choose the Right Automation:** [Watch video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4).
 
@@ -48,9 +48,9 @@ Choose a release channel to see what changes for your team. **The NOVA cycle del
 
 ## VESTA — Hotfix Releases
 
-**Next planned hotfix: [11 November 2026 — V2611](vesta-hotfix-11-november-2026.md).** All features previously available as beta in VESTA, and now included in NOVA, will become regular VESTA features in this hotfix.
+**Next planned hotfix:** [**11 November 2026 — V2611**](vesta-hotfix-11-november-2026.md)**.** All features previously available as beta in VESTA, and now included in NOVA, will become regular VESTA features in this hotfix.
 
-**Latest released hotfix: [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md).** This VESTA hotfix introduced the Settings Assistant, updated AI tiers, the Header Field Check, sign-in improvements and purchase order charge-matching improvements.
+**Latest released hotfix:** [**14 October 2026 — R1.0.15**](incremental-updates-14-october-2026.md)**.** This VESTA hotfix introduced the Settings Assistant, updated AI tiers, the Header Field Check, sign-in improvements and purchase order charge-matching improvements.
 
 Earlier VESTA hotfix notes:
 
@@ -248,7 +248,7 @@ The original release announcements remain below for reference.
 *   **Apply Default Layout to All Origins:**\
     A new **Apply Default Layout to Origins** button has been introduced in the layout configuration screen. Administrators can now push the Default layout to all origins within an organization in a single action, eliminating the time-consuming manual process of copying and pasting layout JSON across each origin individually. This is especially useful during new customer onboarding where multiple origins need to be configured consistently.
 
-    <figure><img src="../../.gitbook/assets/image (460).png" alt="Layout Builder with the Apply Default Layout to Origins dialog listing origins with checkboxes"><figcaption><p>Apply Default Layout to Origins opens a checklist of origins; none are selected in this historical example. See <a href="../../administration-and-setup/settings/global-settings/document-types/layout-manager/README.md">Layout Manager</a>.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (460).png" alt="Layout Builder with the Apply Default Layout to Origins dialog listing origins with checkboxes"><figcaption><p>Apply Default Layout to Origins opens a checklist of origins; none are selected in this historical example. See <a href="../../administration-and-setup/settings/global-settings/document-types/layout-manager/">Layout Manager</a>.</p></figcaption></figure>
 *   **Document Type Selection for FTP Import:**\
     FTP import configurations now support per-folder document type assignment. When configuring an FTP import, users can specify which document type — such as Invoice or Order Confirmation — should be applied to all documents imported from that folder. Documents are automatically classified upon import, removing the need for manual document type assignment after ingestion. This supports organizations that manage multiple document types across different sub-organizations and folders.
 
@@ -288,7 +288,7 @@ The original release announcements remain below for reference.
 *   **Add User Access to OCR Extraction Results:**\
     The **OCR View** button on the Field Validation screen is now available to all users who have validation access, rather than being limited to administrators. With this update, any authorized user can review OCR extraction results directly, making it easier to validate data accuracy and monitor overall OCR performance. This enhancement promotes greater transparency and improves the efficiency of the validation workflow.
 
-    <figure><img src="../../.gitbook/assets/release_notes_12_2025_2.png" alt="Field Validation screen with the PDF page view and extracted invoice fields, an arrow pointing to the OCR button in the toolbar"><figcaption><p>OCR View is shown beside the Field Validation screen; the arrow marks the corresponding toolbar control. See <a href="../../end-user-and-partner-section/end-user-section/validation-screen/README.md">Validation Screen</a>.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_2.png" alt="Field Validation screen with the PDF page view and extracted invoice fields, an arrow pointing to the OCR button in the toolbar"><figcaption><p>OCR View is shown beside the Field Validation screen; the arrow marks the corresponding toolbar control. See <a href="../../end-user-and-partner-section/end-user-section/validation-screen/">Validation Screen</a>.</p></figcaption></figure>
 * **Dynamic Column Rendering in Approval Screens:**\
   Enhanced approval views to dynamically display only the columns configured for comparison in each organization’s database preferences. Previously, some of the organization specific columns would appear empty when not configured for comparison, causing confusion. Now, approval views only show fields that are actively being compared. This provides clearer, organization-specific approval screens without empty or irrelevant columns.
 * **Order Type Field Added to Master Data Lookup**:\
@@ -984,6 +984,7 @@ This update brings exciting new features and bug fixes to Junebug:
 * **Automated Charge Extraction:** Junebug now automatically extracts and maps charges within your Docbit documents. This eliminates manual data entry and streamlines your workflow.
 * **Portal Export to Infor IDM:** The new Portal allows you to effortlessly export supplier documents directly to Infor IDM. This simplifies shipment processing and reduces manual intervention.
 * **Origin Identification (AI):** Junebug introduces a powerful AI feature that automatically learns the origin of documents. This saves you time and effort in document classification.
+
 <div><figure><img src="../../.gitbook/assets/POShipmentTable.png" alt="Validation screen with the PO Shipment Order table showing shipped and invoiced quantities with progress bars"><figcaption><p>The PO Shipment Order table compares shipped, invoiced and open quantities with progress indicators.</p></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen2.png" alt="Approval screen comparing line items with pallet charge and freight on PO differences highlighted"><figcaption><p>The approval comparison highlights pallet-charge and freight differences between the purchase order and invoice.</p></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen1.png" alt="Approval screen comparing line items with PO and invoice unit price differences highlighted in red"><figcaption><p>The approval comparison highlights differences between purchase-order and invoice unit prices in red.</p></figcaption></figure></div>
 
 **Bug Fixes:**

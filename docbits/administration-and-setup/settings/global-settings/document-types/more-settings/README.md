@@ -88,7 +88,7 @@ Three cards sit directly below the Purchase Order card:
 
 * **Manage Layouts** switches the Manage Layouts overview on for this document type. See the [Layout Manager](../layout-manager/).
 * **Custom Validation Rules** switches your own validation rules on. **Manage Validation Rules** opens them. See [Custom Validation Rules](../custom-validation-rules.md).
-* **Transformation Rules** switches the transformation rules on. **Manage Transformation Rules** opens them. See [Transformation Rules](../transformation-rules.md).
+* **Transformation Rules** switches the transformation rules on. **Manage Transformation Rules** opens them. See [Transformation Rules](../transformation-rules/).
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="The Manage Layouts, Custom Validation Rules and Transformation Rules cards"><figcaption><p>The three cards with their switches.</p></figcaption></figure>
 

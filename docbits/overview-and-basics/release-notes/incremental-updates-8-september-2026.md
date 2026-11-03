@@ -14,7 +14,7 @@
 
 ## Documentation
 
-* New page [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md).
+* New page [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules/).
 * [Purchase Order Matching Rules](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) now covers rule types, activation conditions, fallback rules, the default rule set, tolerance types and the effective columns.
 * [Calculate PO unit price](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md) describes the net-amount calculation.
 * [Purchase Order Matching Screen](../../end-user-and-partner-section/end-user-section/purchase-order-matching.md) explains the "why is there no match" messages and the matching history.

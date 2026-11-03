@@ -16,26 +16,26 @@ The snapshot identifies the builds covered by these notes. For availability in y
 
 ## Former VESTA beta features: included in NOVA
 
-**All former VESTA beta features are included in the NOVA sandbox as regular features.** For customers who did not use the VESTA beta, this expands the features available to their team, including **Manage Layouts**, [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisation settings, document-type switches and access permissions continue to apply.
+**All former VESTA beta features are included in the NOVA sandbox as regular features.** For customers who did not use the VESTA beta, this expands the features available to their team, including **Manage Layouts**, [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules/). Organisation settings, document-type switches and access permissions continue to apply.
 
-The same former beta features will become regular VESTA features with the **next VESTA hotfix, planned for [11 November 2026](vesta-hotfix-11-november-2026.md)**. This announcement covers the former VESTA beta features; the sections below also describe further NOVA additions and improvements.
+The same former beta features will become regular VESTA features with the **next VESTA hotfix, planned for** [**11 November 2026**](vesta-hotfix-11-november-2026.md). This announcement covers the former VESTA beta features; the sections below also describe further NOVA additions and improvements.
 
 ## What NOVA adds for customers
 
 The comparison below covers newly available former beta features, new capabilities and extensions to existing features. The VESTA baseline includes functionality that was only available in beta; its inclusion in NOVA's regular feature set is a customer-facing release change.
 
-| Capability | VESTA baseline (including beta) | What customers gain with NOVA |
-| --- | --- | --- |
-| **Use former beta features** | Features available through VESTA beta | **Regular NOVA features:** all former VESTA beta features are included. Their regular VESTA introduction is planned for the 11 November 2026 hotfix. |
-| **Help while validating a document** | Settings Assistant and Header Field Check | **New Validation Assistant:** identify blocking fields, jump to the relevant value, review suggested corrections and keep the chat in a separate window. |
-| **Improve automation from everyday corrections** | Touchless Intelligence dashboard, supplier diagnosis and change proposals | **New review and measurement process:** submit improvement requests, review learned rule proposals, see affected-document evidence, rank opportunities and measure results after activation. |
-| **Understand and resolve e-invoice errors** | E-document checks, rule catalogue and XML viewer | **Expanded E-Invoice Validation:** reports grouped by validation level, policy controls and change history, rejection from the report and XML inspection inside supported PDF invoices. |
-| **Control FTP/SFTP imports** | Import connections and source-file retention or archiving | **New guided setup and controls:** connection wizard, step-by-step logs, configurable retries and failure notifications, and deletion of source files after successful import. |
-| **Work with rules and layouts** | Rule engines, execution logs and transformations after master data lookup; management panels required a beta link | **Broader access and better tools:** open management panels directly, search and preview target layouts, open a document's layout editor and record layout-selection execution. |
-| **Act from the Settings Assistant** | Settings chat, preview/confirm/undo and proactive import-health warnings | **Additional actions:** manage failing connections, see deactivation history, change selected configuration items, create an inactive validation rule from a catalogue and watch page explanations. |
-| **Control document processing** | Organisation page limits and document restart | **New document-level choices:** restart with a chosen page count, see processed versus total pages, and choose whether hidden fields are extracted. |
-| **Match complex deliveries** | Purchase order matching and manual line linking | **More flexible matching:** select lines in either direction, optionally retain each matched document sub-line and group export requests by configured line columns. |
-| **Keep exported and completed work distinct** | Existing export and Finished workflows | **New status controls:** use Exported for follow-up processing, optionally lock Finished documents, and find documents held back by the workflow execution limit. |
+| Capability                                       | VESTA baseline (including beta)                                                                                   | What customers gain with NOVA                                                                                                                                                                       |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Use former beta features**                     | Features available through VESTA beta                                                                             | **Regular NOVA features:** all former VESTA beta features are included. Their regular VESTA introduction is planned for the 11 November 2026 hotfix.                                                |
+| **Help while validating a document**             | Settings Assistant and Header Field Check                                                                         | **New Validation Assistant:** identify blocking fields, jump to the relevant value, review suggested corrections and keep the chat in a separate window.                                            |
+| **Improve automation from everyday corrections** | Touchless Intelligence dashboard, supplier diagnosis and change proposals                                         | **New review and measurement process:** submit improvement requests, review learned rule proposals, see affected-document evidence, rank opportunities and measure results after activation.        |
+| **Understand and resolve e-invoice errors**      | E-document checks, rule catalogue and XML viewer                                                                  | **Expanded E-Invoice Validation:** reports grouped by validation level, policy controls and change history, rejection from the report and XML inspection inside supported PDF invoices.             |
+| **Control FTP/SFTP imports**                     | Import connections and source-file retention or archiving                                                         | **New guided setup and controls:** connection wizard, step-by-step logs, configurable retries and failure notifications, and deletion of source files after successful import.                      |
+| **Work with rules and layouts**                  | Rule engines, execution logs and transformations after master data lookup; management panels required a beta link | **Broader access and better tools:** open management panels directly, search and preview target layouts, open a document's layout editor and record layout-selection execution.                     |
+| **Act from the Settings Assistant**              | Settings chat, preview/confirm/undo and proactive import-health warnings                                          | **Additional actions:** manage failing connections, see deactivation history, change selected configuration items, create an inactive validation rule from a catalogue and watch page explanations. |
+| **Control document processing**                  | Organisation page limits and document restart                                                                     | **New document-level choices:** restart with a chosen page count, see processed versus total pages, and choose whether hidden fields are extracted.                                                 |
+| **Match complex deliveries**                     | Purchase order matching and manual line linking                                                                   | **More flexible matching:** select lines in either direction, optionally retain each matched document sub-line and group export requests by configured line columns.                                |
+| **Keep exported and completed work distinct**    | Existing export and Finished workflows                                                                            | **New status controls:** use Exported for follow-up processing, optionally lock Finished documents, and find documents held back by the workflow execution limit.                                   |
 
 ### Enable the features that need configuration
 
@@ -70,7 +70,7 @@ These videos are in English. Watch the full series or choose the topic you need.
 5. [What the AI already reads correctly](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/en.mp4)
 6. [The Assistant and who can change what](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v2/en.mp4)
 
-For screenshots and detailed instructions, see the [AI Table guide](../../end-user-and-partner-section/end-user-section/ai-table/README.md).
+For screenshots and detailed instructions, see the [AI Table guide](../../end-user-and-partner-section/end-user-section/ai-table/).
 
 ## Validation Assistant: help with the document in front of you
 
@@ -85,9 +85,9 @@ An organisation administrator enables the Validation Assistant separately from t
 
 ## Turn repeated corrections into automation improvements
 
-The existing [Touchless Intelligence](../../administration-and-setup/analytics-dashboard/touchless-intelligence/README.md) dashboard gains a review and follow-up process:
+The existing [Touchless Intelligence](../../administration-and-setup/analytics-dashboard/touchless-intelligence/) dashboard gains a review and follow-up process:
 
-* **Learned rule proposals.** Repeated manual corrections can suggest a [transformation rule](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Administrators see what it would write, the supporting examples and the documents on which it would replace a value the team had accepted. A proposal is reviewed before becoming an active rule.
+* **Learned rule proposals.** Repeated manual corrections can suggest a [transformation rule](../../administration-and-setup/settings/global-settings/document-types/transformation-rules/). Administrators see what it would write, the supporting examples and the documents on which it would replace a value the team had accepted. A proposal is reviewed before becoming an active rule.
 * **Improvement requests from reviewers.** Users can submit an improvement from the document assistant for an administrator to review in Touchless Intelligence. The request keeps its explanation and decision together.
 * **Measure what happened after activation.** For supported transformation rules, DocBits compares manual corrections before and after activation and shows the touchless rate alongside them. Measurement uses 14-day periods and identifies insufficient data rather than inventing an improvement. Changing a rule starts a new measurement for that revision.
 * **Consulting report.** Administrators can generate a ranked view of improvement opportunities across extraction, master data, purchase order matching, accounting, settings and the processing flow. Estimated impact is labelled as an estimate until it has been measured.
@@ -96,7 +96,7 @@ The existing [Touchless Intelligence](../../administration-and-setup/analytics-d
 
 ## Settings Assistant: additional actions and page explanations
 
-The [Settings Assistant](../../administration-and-setup/settings/global-settings/company-information/settings-assistant/README.md), including proactive email/FTP health warnings, already shipped in VESTA. NOVA adds actions and context to that existing experience:
+The [Settings Assistant](../../administration-and-setup/settings/global-settings/company-information/settings-assistant/), including proactive email/FTP health warnings, already shipped in VESTA. NOVA adds actions and context to that existing experience:
 
 * **Connection actions from a health notice.** Open the affected connection, review the available action and confirm it from the assistant. Health notices can also be dismissed. The basic per-channel warning cards and their error/retry information already exist in VESTA.
 * **Visible deactivation history.** Where recorded, a disabled import shows when it was switched off and by whom.
@@ -106,7 +106,7 @@ The [Settings Assistant](../../administration-and-setup/settings/global-settings
 
 ## Rules and layouts: direct access and better diagnostics
 
-* **Former beta controls become regular features.** Manage Layouts, [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) are visible in NOVA's document-type advanced settings without a beta link. Their enable switches remain under administrator control. These controls are included in the planned 11 November 2026 VESTA hotfix together with all other former VESTA beta features.
+* **Former beta controls become regular features.** Manage Layouts, [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules/) are visible in NOVA's document-type advanced settings without a beta link. Their enable switches remain under administrator control. These controls are included in the planned 11 November 2026 VESTA hotfix together with all other former VESTA beta features.
 * **More useful rule diagnostics.** Layout-selection rules gain a **Log execution** option. Rule search accepts rule identifiers, and opening an editor loads the current saved rule. The existing rule-execution log remains the place to review what ran.
 * **Choose and open layouts with more context.** Search target layouts, preview their content and open the target directly from a selection rule. Approval selection rules correctly accept the supported approval-layout types. Administrators also get a shortcut from document validation to that document type's layout editor.
 * **Select several condition values.** Conditions such as **is one of** support multiple selected values.
@@ -114,7 +114,7 @@ The [Settings Assistant](../../administration-and-setup/settings/global-settings
 
 Transformations after master data lookup, the basic rule-execution log, wider rule editors and the standard-rule cloning fixes already have implementations in the VESTA baseline. NOVA carries that functionality forward and makes the former beta management controls available as regular features.
 
-For setup steps, examples and testing, see [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). To choose which layout a document uses, see [Layout Selection Rules](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md).
+For setup steps, examples and testing, see [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules/). To choose which layout a document uses, see [Layout Selection Rules](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md).
 
 ## E-Invoice Validation: clearer findings and policy controls
 
@@ -125,7 +125,7 @@ For setup steps, examples and testing, see [Custom Validation Rules](../../admin
 * **Reject with a recorded reason.** An authorised reviewer can reject an eligible document from the validation report. The report prepares a reason from its errors for the reviewer to check before confirming.
 * **Further format corrections.** EDNA utility CII invoices are recognised, and corrections to XRechnung VAT mapping improve how relevant invoice values reach DocBits fields.
 
-See [E-Document Validation Rules](../../administration-and-setup/settings/document-processing/e-documents/validation-rules/README.md).
+See [E-Document Validation Rules](../../administration-and-setup/settings/document-processing/e-documents/validation-rules/).
 
 ## FTP/SFTP and email imports
 
@@ -188,29 +188,29 @@ NOVA also carries forward the functionality listed below. Where access was previ
 * The underlying validation, transformation and layout-selection rule engines, transformations after master data lookup and the basic rule-execution log.
 * Earlier dashboard search improvements, MFA, verified organisation email domains, charge tolerance and the increase of the workflow execution limit to 50.
 
-See the [14 October VESTA hotfix](incremental-updates-14-october-2026.md), [15 September hotfix](incremental-updates-15-september-2026.md) and [earlier release notes](README.md#vesta-hotfix-releases) for the VESTA release history.
+See the [14 October VESTA hotfix](incremental-updates-14-october-2026.md), [15 September hotfix](incremental-updates-15-september-2026.md) and [earlier release notes](./#vesta-hotfix-releases) for the VESTA release history.
 
 ## NOVA service versions
 
 These are the versions and deployment timestamps of the **NOVA sandbox build available on 16 October 2026**. The production release is planned for **4 November 2026**; this sandbox snapshot does not identify the final production builds. The timestamps describe individual service deployments.
 
-| Service | Version | Deployment timestamp |
-| --- | --- | --- |
-| API Service | `13.26.5` | 16.10.2026 11:57:49 |
-| Auth Bridge | `0.5.11` | 08.10.2026 10:56:15 |
-| Auth Service | `1.84.3` | 16.10.2026 12:19:50 |
-| Auto Accounting | `1.23.6` | 15.09.2026 09:42:57 |
-| Barcode Service | `1.20.3` | 15.10.2026 14:17:18 |
-| Docflow Service | `2.13.9` | 15.10.2026 16:14:37 |
-| Docnet Service | `1.59.1` | 12.10.2026 00:59:12 |
-| Email Service | `1.44.4` | 16.10.2026 11:44:58 |
-| Extraction Service | `1.63.1` | 15.10.2026 19:34:17 |
-| FTP Service | `1.37.4` | 15.10.2026 10:42:01 |
-| Fulltext Service | `1.46.1` | 12.10.2026 05:16:16 |
-| Ideas Service | `0.5.6` | 14.10.2026 12:06:00 |
-| OCR Service | `1.11.8` | 12.10.2026 01:00:00 |
-| Operator Service | `1.45.0` | 12.10.2026 09:35:25 |
-| PO Match Service | `1.65.7` | 14.10.2026 16:14:20 |
-| Web App | `10.72.2` | 16.10.2026 12:04:41 |
+| Service            | Version   | Deployment timestamp |
+| ------------------ | --------- | -------------------- |
+| API Service        | `13.26.5` | 16.10.2026 11:57:49  |
+| Auth Bridge        | `0.5.11`  | 08.10.2026 10:56:15  |
+| Auth Service       | `1.84.3`  | 16.10.2026 12:19:50  |
+| Auto Accounting    | `1.23.6`  | 15.09.2026 09:42:57  |
+| Barcode Service    | `1.20.3`  | 15.10.2026 14:17:18  |
+| Docflow Service    | `2.13.9`  | 15.10.2026 16:14:37  |
+| Docnet Service     | `1.59.1`  | 12.10.2026 00:59:12  |
+| Email Service      | `1.44.4`  | 16.10.2026 11:44:58  |
+| Extraction Service | `1.63.1`  | 15.10.2026 19:34:17  |
+| FTP Service        | `1.37.4`  | 15.10.2026 10:42:01  |
+| Fulltext Service   | `1.46.1`  | 12.10.2026 05:16:16  |
+| Ideas Service      | `0.5.6`   | 14.10.2026 12:06:00  |
+| OCR Service        | `1.11.8`  | 12.10.2026 01:00:00  |
+| Operator Service   | `1.45.0`  | 12.10.2026 09:35:25  |
+| PO Match Service   | `1.65.7`  | 14.10.2026 16:14:20  |
+| Web App            | `10.72.2` | 16.10.2026 12:04:41  |
 
 Version numbers advance independently on the two channels. A larger number does not by itself mean that a service has a new customer feature. The reviewed Auto Accounting, Barcode, Docnet, Fulltext, OCR and Operator changes are maintenance or processing-reliability changes; they do not introduce a separate customer workflow in this comparison. Auth Bridge updates improve the reliability of cross-region account synchronisation.

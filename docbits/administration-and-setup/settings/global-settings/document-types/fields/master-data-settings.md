@@ -50,10 +50,12 @@ Select **Create** inside the expanded configuration to add a mapping:
 * **Lookup Field** is the dataset column to search.
 * **Validation Field** is the document field that receives the result.
 * **Parent Field** optionally checks the result against a related field.
-* **Search Operator** controls how text is compared. **Smart** ignores spaces and punctuation; the other choices include Contains, Starts With, Ends With and Exact.
+* **Search Operator** controls how text is compared. **Smart** ignores spaces and punctuation, so values that differ only in formatting still match. **Smart Exact** applies the same normalisation but only matches when the whole value is equal, so a record is not returned for a partial match. The other choices are **Contains**, **Starts With**, **Ends With** and **Exact**.
 * **Auto Trigger** starts a lookup when this field is filled. **Searchable** lets the field participate in searches and supports manual lookup during validation.
 
 Select **Create** to add the mapping. Use the three-dot **Actions** menu on a row to edit or delete an editable mapping. Default mappings can only be viewed.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-en.png" alt="Create Master Data Fields dialog with the Search Operator dropdown open, listing Smart, Smart Exact, Contains, Ends With, Exact and Starts With"><figcaption><p>Choose <strong>Smart Exact</strong> when the whole value must match after spaces and punctuation are ignored.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-en-20261101.png" alt="Empty Create Master Data Fields form with Lookup Field, Validation Field, Parent Field, Search Operator, Auto Trigger, Searchable, Cancel and Create"><figcaption><p>Choose how a dataset column maps to a document field.</p></figcaption></figure>
 

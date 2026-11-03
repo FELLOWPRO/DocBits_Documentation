@@ -20,6 +20,27 @@ When making changes, preserve GitBook sync metadata such as frontmatter, `SUMMAR
 
 <!-- gitbook-agent-instructions:end -->
 
+## Languages and GitBook Git Sync
+
+The GitBook site uses **site-level Git Sync** on `main`: one repository, one branch,
+one folder per language space (mapping in `gitbook-docs.yaml`). Do not switch the
+spaces to one branch per language.
+
+| Language | Source of truth (edit here) | Folder on `main` (published, bot-written) |
+|---|---|---|
+| English | `main`, folder `docbits/` | `docbits/` |
+| de, es, fr, it, nl, pl, pt, zh | branch `de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `zh`, under `readme/` | `deutsch/`, `espanol/`, `french/`, `italian/`, `dutch/`, `polish/`, `portuguese/`, `chinese/` |
+
+- **Never edit** `deutsch/`, `espanol/`, `french/`, `italian/`, `dutch/`, `polish/`,
+  `portuguese/` or `chinese/` on `main` by hand. The workflow **Sync Language Folders**
+  (`.github/workflows/sync-language-folders.yml`, every 30 minutes) overwrites them
+  from the language branches (`.github/scripts/language_bridge.py`).
+- Translate on the language branch, merge there, then wait for the next sync run or start
+  it manually (Actions > Sync Language Folders, optional `lang`).
+- Docs changes to a page need the matching change on every language branch.
+- Keep `language:` in `gitbook-docs.yaml` equal to the folder's language (English is `en`).
+- If `main` later requires pull requests, the bot `github-actions[bot]` needs a bypass or a PAT.
+
 ## Video hosting
 
 Publish video files to the DigitalOcean Spaces bucket `docbits-videos` in `fra1`.

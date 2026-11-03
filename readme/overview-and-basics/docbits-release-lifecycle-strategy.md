@@ -1,8 +1,8 @@
 # DocBits Release-Lebenszyklus-Strategie
 
-Mit dem Rollout des kommenden Minor-Releases R1.1 führt DocBits eine neue Release-Lebenszyklus-Strategie auf Basis von zwei Release-Kanälen ein: VESTA und NOVA.
+Mit dem Rollout des Minor-Releases N2611 führt DocBits eine neue Release-Lebenszyklus-Strategie auf Basis von zwei Release-Kanälen ein: VESTA und NOVA.
 
-**NOVA** ist der Kanal für die Einführung neuer Major- und Minor-Releases, wie **Rx** und **Rx.y**. **VESTA** stellt weiterhin das bestehende Produktions-Release bereit.
+**NOVA** ist der Kanal für die Einführung neuer Major- und Minor-Releases, wie **N2611** und **N2703**. **VESTA** stellt weiterhin das bestehende Produktions-Release bereit.
 
 {% hint style="success" %}
 **Wichtig: Eine URL für VESTA und NOVA**
@@ -90,7 +90,7 @@ Der geplante Rhythmus unterscheidet sich zwischen Major- und Minor-Releases, die
 
 #### Major- und Minor-Releases über NOVA
 
-FELLOWPRO plant derzeit mit einem Zyklus von etwa **3–4 Monaten für Major- und Minor-Releases**, die über den Release-Kanal NOVA eingeführt werden, wie **Rx** und **Rx.y**. Diese Schätzung gilt für den oben beschriebenen Release-Lebenszyklus, einschließlich des anschließenden Rollovers in VESTA und des Neuaufsetzens von NOVA für das nächste Release. Sie beschreibt nicht die Häufigkeit von Hotfixes.
+FELLOWPRO plant derzeit mit einem Zyklus von etwa **3–4 Monaten für Major- und Minor-Releases**, die über den Release-Kanal NOVA eingeführt werden, wie **N2611** und **N2703**. Diese Schätzung gilt für den oben beschriebenen Release-Lebenszyklus, einschließlich des anschließenden Rollovers in VESTA und des Neuaufsetzens von NOVA für das nächste Release. Sie beschreibt nicht die Häufigkeit von Hotfixes.
 
 Dieser Zeitraum spiegelt unsere aktuelle Planungsschätzung wider; er ist weder ein fester Zeitplan noch eine maximale Zyklusdauer noch eine Garantie für einen Release- oder Rollover-Termin. Der Zeitpunkt jedes Rollovers und des Neuaufsetzens von NOVA hängt sowohl von der **Release-Reife als auch von der Zustimmung aller Kunden zum geplanten Übergang** ab. Wird zusätzliche Zeit benötigt, um die Release-Reife zu erreichen, Bedenken von Kunden zu klären oder die Zustimmung jedes einzelnen Kunden einzuholen, verlängert sich der Zyklus und kann länger als vier Monate dauern.
 

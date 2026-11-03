@@ -1,4 +1,4 @@
-# Nawigacja w Menedżerze Układów
+# Nawigacja w Kreatorze Układów
 
 Użyj **Menedżera układów**, aby porządkować grupy i pola, które użytkownicy widzą na dokumencie. Zrzuty ekranu w tym artykule pokazują polski interfejs na przykładzie układu faktury.
 

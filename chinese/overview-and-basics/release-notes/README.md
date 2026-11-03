@@ -12,11 +12,13 @@
 
 | 发布渠道 | 发行说明 | 重点 |
 | --- | --- | --- |
-| **NOVA N2611 – 次版本** | [客户新增功能](nova-minor-release-4-november-2026.md) · **2026 年 11 月 4 日（计划）** | 此前所有 VESTA 测试版功能，以及相较于 VESTA R1.0.15 的新功能和扩展。 |
-| **VESTA V2611 — 下一次热修复（计划中）** | [2026 年 11 月 11 日 — V2611](vesta-hotfix-11-november-2026.md) | 将此前所有 VESTA 测试版功能纳入 VESTA 常规功能集。 |
+| **NOVA 11 月版本 N2611** | [客户新增功能](nova-minor-release-4-november-2026.md) · **2026 年 11 月 4 日（计划）** | 此前所有 VESTA 测试版功能，以及相较于 VESTA R1.0.15 的新功能和扩展。 |
+| **VESTA 11 月版本 V2611（计划中）** | [2026 年 11 月 11 日 — V2611](vesta-hotfix-11-november-2026.md) | 将此前所有 VESTA 测试版功能纳入 VESTA 常规功能集。 |
 | **VESTA — 热修复版本** | [2026 年 10 月 14 日 — R1.0.15](incremental-updates-14-october-2026.md) | 改进并修复当前 VESTA 生产版本。 |
 
-## NOVA N2611 – 次版本 2026 年 11 月 4 日
+## NOVA 11 月版本 N2611
+
+### 2026 年 11 月 4 日
 
 ### NOVA 为您的团队带来的功能
 

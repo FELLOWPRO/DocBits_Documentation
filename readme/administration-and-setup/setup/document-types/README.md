@@ -21,7 +21,7 @@ La pagina mostra i **Tipi di documento predefiniti**, che DocBits mette a dispos
 | **E-Doc** | Apre le impostazioni dei documenti elettronici quando il tipo le supporta. |
 | **Sottotipi di documento** | Apre i sottotipi di questo tipo di documento. |
 
-A seconda delle funzionalità della tua organizzazione, potresti vedere altri link, ad esempio per le regole di validazione o di trasformazione. Scegli il link sulla scheda del tipo che vuoi modificare.
+A seconda delle funzionalità della tua organizzazione, potresti vedere altri link sulla scheda, ad esempio **Regole di convalida** o **Regole di trasformazione**. Scegli il link sulla scheda del tipo che vuoi modificare.
 
 ## Modificare campi e impostazioni di riconoscimento
 

@@ -63,6 +63,31 @@ const { log_id } = await res.json();
 Use your region's API host (see [DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp) for the host list).
 CSV of the logs: `GET /testing/logs/export.csv` (same filters as the list) and `GET /testing/logs/<log_id>/export.csv`.
 
+## Start by opening a start link
+
+If your automation drives a signed-in browser, open the template's start link instead of calling the API:
+
+`https://<your-environment>/settings/testing?run=<template>&version=<version>&input=<input>&autostart=1`
+
+`run` is the template key (required), `version` pins a saved version (default: the latest), `input` names a saved
+input by its name or ID, and `autostart=1` starts a template that only reads data without a click. A template that
+writes data keeps its confirmation, so the run waits for `testing-start-confirm`. The link works only in a signed-in
+browser of an organisation admin; the clicks happen in that tab.
+
+```ts
+// signed in as an organisation admin (your login helper)
+await page.goto('https://<your-environment>/settings/testing?run=default-smoke-analytics&version=1.0.0');
+const start = page.getByTestId('testing-start-confirm');
+const status = page.getByTestId('testing-run-status');
+await start.or(status).first().waitFor();
+if (await start.isVisible()) await start.click();
+await expect(status).toHaveAttribute('data-status', /(passed|failed|blocked|cancelled)$/);
+```
+
+`data-status` is `running`, `passed`, `failed`, `blocked` or `cancelled`. `blocked` means a rule stopped the run
+before its steps ran. The parameters are removed from the URL after they are read, so reloading the page does not
+start the test again. Copy the link in the start dialog under **Start from outside → Start link**.
+
 ## Start via MCP
 
 The DocBits MCP server offers the Testing tools `testing_list_templates`, `testing_list_inputs`, `testing_start`,

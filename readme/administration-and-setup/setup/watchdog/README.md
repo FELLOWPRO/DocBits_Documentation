@@ -6,6 +6,14 @@
 
 **WatchDog** 是一项基于 Windows 的本地部署服务，可监控本地文件夹中的新文档，将其上传到 DocBits Cloud 进行处理，并将处理完成的文档导出到本地文件夹或 ERP 系统。
 
+## 视频演示
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/watchdog/2026-10-28/v1/zh.mp4" %}
+
+*1:29 分钟 · 中文产品界面 · 语音和开场画面由 AI 生成*
+
+[字幕 (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/watchdog/2026-10-28/v1/zh.vtt) · [下载视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/watchdog/2026-10-28/v1/zh.mp4)
+
 ## 主要功能
 
 * **自动监控文件夹** — 监控本地路径和 UNC 网络路径中的新 PDF 文件
@@ -76,3 +84,25 @@ WatchDog.exe start
 * [WatchDog 安装](watchdog-installation.md)
 * [WatchDog 配置](watchdog-v2-configuration.md)
 * [WatchDog 管理员常见问题](watchdog-admin-faq.md)
+
+## 截图
+
+<figure><img src="../../../.gitbook/assets/watchdog-general-zh.png" alt="状态与入门"><figcaption><p>状态与入门</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-configurations-zh.png" alt="配置概览"><figcaption><p>配置概览</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-import-dialog-zh.png" alt="新建导入配置"><figcaption><p>新建导入配置</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-import-filled-zh.png" alt="已填写的导入配置"><figcaption><p>已填写的导入配置</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-import-saved-zh.png" alt="已保存的导入配置"><figcaption><p>已保存的导入配置</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-export-dialog-zh.png" alt="新建导出配置"><figcaption><p>新建导出配置</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-export-filled-zh.png" alt="以 Webhook 为目标的导出配置"><figcaption><p>以 Webhook 为目标的导出配置</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-xslt-zh.png" alt="XSLT 模板"><figcaption><p>XSLT 模板</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-xslt-new-zh.png" alt="管理 XSLT 模板"><figcaption><p>管理 XSLT 模板</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/watchdog-logs-zh.png" alt="WatchDog 日志"><figcaption><p>WatchDog 日志</p></figcaption></figure>

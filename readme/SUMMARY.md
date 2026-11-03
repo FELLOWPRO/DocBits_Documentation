@@ -4,7 +4,6 @@
 
 * [DocBits](README.md)
   * [Principais Recursos do DocBits](overview-and-basics/docbits/key-features-of-docbits.md)
-* [Git Sync Test (pt)](git-sync-test.md)
 * [Sobre os nossos vídeos de formação](about-training-videos.md)
 * [Arquitetura](overview-and-basics/architecture/README.md)
   * [DocBits para clientes Infor em instalações próprias](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)

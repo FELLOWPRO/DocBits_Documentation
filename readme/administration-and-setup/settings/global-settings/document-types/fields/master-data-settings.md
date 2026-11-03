@@ -50,10 +50,12 @@ Seleziona **Creare** dentro la configurazione espansa per aggiungere una mappatu
 * **Campo Di Ricerca** è la colonna del set di dati da interrogare.
 * **Campo Di Convalida** è il campo del documento che riceve il risultato.
 * **Campo Genitore** verifica eventualmente il risultato rispetto a un campo correlato.
-* **Operatore di ricerca** stabilisce come viene confrontato il testo. **Smart** ignora spazi e punteggiatura; le altre scelte includono Contiene, Inizia con, Finisce con ed Esatto.
+* **Operatore di ricerca** stabilisce come viene confrontato il testo. **Smart** ignora spazi e punteggiatura, quindi i valori che differiscono solo nella formattazione corrispondono comunque. **Intelligente Esatto** applica la stessa normalizzazione ma restituisce un record solo quando il valore completo è identico: con una corrispondenza parziale non restituisce nulla. Le altre scelte sono **Contiene**, **Inizia con**, **Finisce con** ed **Esatto**.
 * **Trigger automatico** avvia una ricerca quando questo campo viene compilato. **Ricercabile** consente al campo di partecipare alle ricerche e supporta la ricerca manuale durante la convalida.
 
 Seleziona **Creare** per aggiungere la mappatura. Usa il menu **Azioni** a tre punti di una riga per modificare o eliminare una mappatura modificabile. Le mappature predefinite possono solo essere visualizzate.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-it.png" alt="Finestra Creare campi di dati master con l'elenco Operatore di ricerca aperto: Smart, Intelligente Esatto, Contiene, Finisce con, Esatto, Inizia con"><figcaption><p>Scegli <strong>Intelligente Esatto</strong> quando deve corrispondere l'intero valore dopo aver ignorato spazi e punteggiatura.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-it-20261101.png" alt="Modulo vuoto Creare campi di dati master con Campo di ricerca, Campo di convalida, Campo genitore, Operatore di ricerca, Trigger automatico, Ricercabile, Annulla e Creare"><figcaption><p>Scegli come una colonna del set di dati viene collegata a un campo del documento.</p></figcaption></figure>
 

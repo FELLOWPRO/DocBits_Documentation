@@ -297,7 +297,6 @@
           * [ZUGFeRD 2.3 Veldmapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3.md)
           * [ZUGFeRD 2.3.2 Veldmapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3-2.md)
         * [ZUGFeRD + Swiss QR Code Veldtoewijzing](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)
-        * [eSLOG 1.6 en 2.0](administration-and-setup/settings/global-settings/document-types/edi/eslog-1.6-and-2.0.md)
         * [eDocs-formaten, versies en landengidsen](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md)
           * [Oostenrijk](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/countries/austria.md)
           * [Denemarken](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/countries/denmark.md)

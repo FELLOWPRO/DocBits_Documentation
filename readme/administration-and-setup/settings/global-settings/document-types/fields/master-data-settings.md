@@ -50,10 +50,12 @@ Wählen Sie **erstellen.** innerhalb der aufgeklappten Konfiguration, um eine Zu
 * **Nachschlagefeld** ist die Dataset-Spalte, die durchsucht wird.
 * **Validierungsfeld** ist das Dokumentfeld, das das Ergebnis erhält.
 * **Übergeordnetes Feld** prüft das Ergebnis optional gegen ein verwandtes Feld.
-* **Suchoperator** bestimmt, wie Text verglichen wird. **Smart** ignoriert Leerzeichen und Satzzeichen; die weiteren Auswahlmöglichkeiten sind unter anderem Contains, Starts With, Ends With und Exact.
+* **Suchoperator** bestimmt, wie Text verglichen wird. **Smart** ignoriert Leerzeichen und Satzzeichen, sodass Werte, die sich nur in der Formatierung unterscheiden, trotzdem übereinstimmen. **Smart genau** normalisiert genauso, liefert aber nur dann einen Treffer, wenn der gesamte Wert gleich ist - ein Teiltreffer bleibt ohne Ergebnis. Die weiteren Auswahlmöglichkeiten sind **Enthält**, **Beginnt mit**, **Endet mit** und **Genau**.
 * **Auto-Trigger** startet einen Lookup, sobald dieses Feld gefüllt ist. **Suchbar** lässt das Feld an Suchen teilnehmen und unterstützt den manuellen Lookup während der Validierung.
 
 Wählen Sie **erstellen.**, um die Zuordnung hinzuzufügen. Über das Drei-Punkte-Menü **Aktionen** einer Zeile bearbeiten oder löschen Sie eine bearbeitbare Zuordnung. Standard-Zuordnungen können nur angezeigt werden.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-de.png" alt="Dialog Stammdatenfelder anlegen mit geöffneter Auswahl Suchoperator: Smart, Smart genau, Enthält, Endet mit, Genau, Beginnt mit"><figcaption><p>Wählen Sie <strong>Smart genau</strong>, wenn der gesamte Wert übereinstimmen muss, nachdem Leerzeichen und Satzzeichen ignoriert wurden.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-de-20261101.png" alt="Leeres Formular Stammdatenfelder anlegen mit Nachschlagefeld, Validierungsfeld, Übergeordnetes Feld, Suchoperator, Auto-Trigger, Suchbar, Abbrechen und erstellen."><figcaption><p>Legen Sie fest, wie eine Dataset-Spalte einem Dokumentfeld zugeordnet wird.</p></figcaption></figure>
 

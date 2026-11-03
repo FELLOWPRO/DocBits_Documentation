@@ -57,6 +57,14 @@ Ouvrez la gestion des fournisseurs. Avant toute invitation, vérifiez l’entrep
 
 <figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-fr-20261031.png" alt="Tableau de bord interne avec tous les fournisseurs, En attente de validation, Enregistrement en cours, recherche et barre d’outils. Les lignes des fournisseurs existants sont masquées."><figcaption><p>Tableau de bord interne avec tous les fournisseurs, En attente de validation, Enregistrement en cours, recherche et barre d’outils. Les lignes des fournisseurs existants sont masquées.</p></figcaption></figure>
 
+## Détails du Fournisseur (vue interne)
+
+Cliquez sur la ligne d'un fournisseur dans le **Tableau de bord des fournisseurs** pour ouvrir la vue **Détails du Fournisseur** de ce fournisseur. Cette vue interne affiche les six mêmes sections que le fournisseur remplit lors de son inscription — **Détails du Fournisseur**, **Données d'Adresse**, **Contact du Fournisseur**, **Financier du Fournisseur**, **Achats du Fournisseur** et **Certificats du Fournisseur** — ainsi que le badge **Statut** actuel du fournisseur (en haut à droite, par exemple **STATUT : EN ATTENTE DE VALIDATION**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-fr-20261009.png" alt="Vue interne « Détails du Fournisseur » d'un fournisseur fictif dans l'interface DocBits en français"><figcaption><p>Vue interne « Détails du Fournisseur » : à gauche les six sections de l'inscription, en haut à droite le statut du fournisseur. Tous les noms et données sont des valeurs d'exemple inventées (organisation d'exemple Musterfirma GmbH, fournisseur d'exemple Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Utilisez cette vue pour vérifier le profil d'un fournisseur, compléter ou corriger des données manquantes et préparer la décision de validation. Pour une description de chaque section, consultez [Inscription du Fournisseur](supplier-registration.md). Le bouton de retour en haut de la vue vous ramène au **Tableau de bord des fournisseurs** sans rien enregistrer.
+
 <figure><img src="../../../.gitbook/assets/dbdc-49-invitation-fr-20261031.png" alt="Formulaire vide Ajouter un fournisseur avec Groupe de Fournisseurs, Nom du fournisseur, coordonnées du contact, Annuler et Enregistrer. Enregistrer demande l’envoi de l’invitation à s’inscrire ; seule l’action Annuler a été utilisée pour la capture."><figcaption><p>Formulaire vide Ajouter un fournisseur avec Groupe de Fournisseurs, Nom du fournisseur, coordonnées du contact, Annuler et Enregistrer. Enregistrer demande l’envoi de l’invitation à s’inscrire ; seule l’action Annuler a été utilisée pour la capture.</p></figcaption></figure>
 
 ## Admin : ouvrir la fiche depuis le tableau de bord des fournisseurs

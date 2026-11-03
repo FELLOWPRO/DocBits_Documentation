@@ -13,7 +13,7 @@ Cuando se trata de probar su configuración de conciliación con órdenes de com
 
 Una vez que haya creado su orden de compra, vaya a Configuración → Búsqueda de datos maestros y busque el número de orden de compra del PO que acaba de crear, como debería aparecer ahora en los datos maestros de su orden de compra en DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+<figure><img src="../../../.gitbook/assets/a-testing-po-matching-master-data-es-20261009.png" alt="Página Búsqueda de datos maestros en español, con la pestaña Orden De Compra y la tabla de órdenes de compra importadas."><figcaption><p>Las órdenes de compra aparecen en la Búsqueda de datos maestros.</p></figcaption></figure>
 
 Deberías ver tu número PO único aquí, esto significa que DocBits y INFOR están sincronizados correctamente.
 

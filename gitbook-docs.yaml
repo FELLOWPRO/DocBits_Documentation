@@ -15,14 +15,14 @@ site:
       title: 🇩🇪 Deutsch
       path: deutsch
       content:
-        directory: ./deutsch
+        directory: null
         language: de
     - type: space
       key: space-3
       title: 🇪🇸 Español
       path: espanol
       content:
-        directory: ./espanol
+        directory: null
         language: es
     - type: space
       key: space-4
@@ -31,35 +31,35 @@ site:
         fr: Français
       path: french
       content:
-        directory: ./french
+        directory: null
         language: fr
     - type: space
       key: space-5
       title: 🇮🇹 Italiano
       path: italian
       content:
-        directory: ./italian
+        directory: null
         language: it
     - type: space
       key: space-6
       title: 🇵🇹 Português
       path: portuguese
       content:
-        directory: ./portuguese
+        directory: null
         language: pt
     - type: space
       key: space-7
       title: 🇵🇱 Polski
       path: polish
       content:
-        directory: ./polish
+        directory: null
         language: pl
     - type: space
       key: space-8
       title: 🇳🇱 Nederlands
       path: dutch
       content:
-        directory: ./dutch
+        directory: null
         language: nl
     - type: space
       key: space-9
@@ -68,5 +68,5 @@ site:
         zh: Chinese
       path: chinese
       content:
-        directory: ./chinese
+        directory: null
         language: zh

@@ -1,8 +1,8 @@
 # Estratégia de ciclo de vida de releases do DocBits
 
-Com o lançamento da próxima release menor, a R1.1, o DocBits introduzirá uma nova estratégia de ciclo de vida de releases baseada em dois canais de release: VESTA e NOVA.
+Com o lançamento da release menor N2611, o DocBits introduzirá uma nova estratégia de ciclo de vida de releases baseada em dois canais de release: VESTA e NOVA.
 
-**NOVA** é o canal para a introdução de novas releases maiores e menores, como **Rx** e **Rx.y**. **VESTA** continua a disponibilizar a release de produção existente.
+**NOVA** é o canal para a introdução de novas releases maiores e menores, como **N2611** e **N2703**. **VESTA** continua a disponibilizar a release de produção existente.
 
 {% hint style="success" %}
 **Importante: Uma única URL para VESTA e NOVA**
@@ -90,7 +90,7 @@ A cadência planejada difere entre as releases maiores e menores introduzidas po
 
 #### Releases maiores e menores por meio do NOVA
 
-Atualmente, a FELLOWPRO planeja um ciclo de aproximadamente **3–4 meses para releases maiores e menores** introduzidas por meio do canal de release NOVA, como **Rx** e **Rx.y**. Essa estimativa se aplica ao ciclo de vida de releases descrito acima, incluindo o rollover subsequente para o VESTA e o reaproveitamento do NOVA para a próxima release. Ela não descreve a frequência dos hotfixes.
+Atualmente, a FELLOWPRO planeja um ciclo de aproximadamente **3–4 meses para releases maiores e menores** introduzidas por meio do canal de release NOVA, como **N2611** e **N2703**. Essa estimativa se aplica ao ciclo de vida de releases descrito acima, incluindo o rollover subsequente para o VESTA e o reaproveitamento do NOVA para a próxima release. Ela não descreve a frequência dos hotfixes.
 
 Esse intervalo reflete nossa estimativa de planejamento atual; não se trata de um cronograma fixo, de uma duração máxima do ciclo nem de uma garantia de data de release ou de rollover. O momento de cada rollover e do reaproveitamento do NOVA depende tanto da **prontidão da release quanto da aceitação da transição planejada por todos os clientes**. Se for necessário tempo adicional para alcançar a prontidão da release, tratar preocupações dos clientes ou obter a aceitação de cada cliente, o ciclo será prorrogado e poderá ultrapassar quatro meses.
 

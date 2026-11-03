@@ -168,6 +168,7 @@
       * [Anpassungsoptionen](administration-and-setup/settings/global-settings/document-types/customization-options.md)
       * [Bewährte Vorgehensweisen](administration-and-setup/settings/global-settings/document-types/best-practice.md)
       * [Fehlerbehebung](administration-and-setup/settings/global-settings/document-types/troubleshooting.md)
+      * [Benutzerdefinierte Validierungsregel duplizieren](administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md)
       * [Layout-Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Zweck und Verwendung](administration-and-setup/settings/global-settings/document-types/layout-manager/purpose-and-use.md)
         * [Navigieren im Layout-Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)

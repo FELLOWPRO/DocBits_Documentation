@@ -3,21 +3,24 @@
 ## Visão Geral
 
 Você pode configurar uma opção de exportação alternativa para aparecer no menu suspenso de exportação dentro da seção de ordem de compra quando um documento estiver em um status específico.\
-Esta página explica como configurar essa opção.
+Esta página explica como configurar essa opção. A definição está na secção **Configurações de exportação** do tipo de documento.
 
 ## Etapas de Ativação
 
 1. Vá para **Configurações** -> **Configurações globais** -> **Tipos de documentos**
-2.  Selecione o tipo de documento desejado e clique em **Mais configurações**.
+2.  Localize o cartão do tipo de documento e abra as definições com a engrenagem (**Mais configurações**).
 
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZSKdVhneopjjzzIBnbax%252Fpo_settings_1.png%3Falt%3Dmedia%26token%3Dab57e25e-9c6a-4273-b21b-ae328579839c\&width=768\&dpr=4\&quality=100\&sign=29a04f7d\&sv=2)
-3.  Na seção **Ordem de compra**, navegue até a opção **Exportação Alternativa**.
+3.  Abra a secção **Configurações de exportação** e ative **Exportação Alternativa**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F8kVaJLFQJemDjEzDZUdX%252Fpo_settings_alternate_export_1.png%3Falt%3Dmedia%26token%3Dfb56d11a-f8f3-4e01-8653-4a08ea5beac2\&width=768\&dpr=4\&quality=100\&sign=71b4c75\&sv=2)
+    <figure><img src="../../../../../../.gitbook/assets/po-settings-alternate-export-20261103-pt.png" alt="Configurações de exportação do tipo de documento Fatura com Exportação Alternativa ativa, a escolha de status e a configuração de exportação"><figcaption><p>O interruptor <strong>Exportação Alternativa</strong> em <strong>Configurações de exportação</strong>. Com ele ativo aparecem <strong>Status</strong> e <strong>Configuração de exportação</strong> ao lado.</p></figcaption></figure>
 
 ## Como configurar
 
 Uma vez que a configuração esteja ativada, você pode escolher um status de documento e atribuir uma configuração de exportação predefinida.
+
+* **Status** - o status do documento em que a opção de exportação adicional é oferecida.
+* **Configuração de exportação** - a configuração de exportação usada por esta opção.
 
 Mais informações sobre como configurar as configurações de exportação podem ser encontradas [aqui](../../../../document-processing/export.md).
 
@@ -30,6 +33,7 @@ Você pode escolher entre os seguintes status:
 * Validado, exportação pendente
 * Exportação pendente aprovada
 * Rejeitado
+* Concluído
 * Exportado
 * Em espera
 * Fluxo de trabalho

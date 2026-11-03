@@ -1,5 +1,21 @@
 # Module Testing
 
+## Tutoriel vidéo : exécuter un premier test dans le navigateur
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/fr.mp4" %}
+
+[Ouvrir la vidéo en français avec sous-titres, chapitres et transcription](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/fr.html).
+
+**Durée: 2:33.** Interface, narration et sous-titres en français.
+
+Le tutoriel utilise le **Live testing self-check** intégré dans l’environnement de développement : examiner ses trois étapes, créer et enregistrer une entrée nommée, lancer le test dans le navigateur, puis ouvrir le journal enregistré de cette même exécution. Le modèle ne demande aucun paramètre et ne modifie aucune donnée métier. Sa réussite confirme ces trois contrôles ; elle ne valide ni l’extraction des factures, ni leur approbation, ni un export ERP.
+
+**Version de révision :** l’écoute humaine complète et la validation fonctionnelle restent à effectuer.
+
+{% hint style="info" %}
+**Vérifiez le résultat enregistré.** Dans les enregistrements anglais et allemand de la version 11.21.2, l’indicateur d’une entrée affichait un blocage alors que l’exécution et son journal enregistré indiquaient une réussite. Rouvrir l’entrée rétablissait l’indicateur correspondant. En cas d’écart, consultez le journal de cette même exécution. La réouverture est un contournement observé, pas une correction confirmée.
+{% endhint %}
+
 ## À quoi sert le module Testing
 
 Le module **Testing** exécute des tests de navigateur dans votre propre session DocBits connectée. Un test pilote les

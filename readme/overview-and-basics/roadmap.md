@@ -8,17 +8,7 @@ planeada. Os temas descrevem o que está planeado para a versão, não o que já
 foi entregue; o âmbito e as datas podem mudar. Os hotfixes entre versões estão
 documentados nas [Notas de versão](release-notes/README.md)._
 
-| ID da versão | Canal | Sandbox | Produção |
-|---|---|---|---|
-| N2611 | NOVA | 16 de outubro de 2026 | 4 de novembro de 2026 |
-| V2611 | VESTA | 4 de novembro de 2026 | 11 de novembro de 2026 |
-| V2612 | VESTA | 8 de dezembro de 2026 | 15 de dezembro de 2026 |
-| V2702 | VESTA | 10 de fevereiro de 2027 | 17 de fevereiro de 2027 |
-| N2703 | NOVA | 17 de fevereiro de 2027 | 3 de março de 2027 |
-| V2703 | VESTA | 10 de março de 2027 | 17 de março de 2027 |
-| V2705 | VESTA | 5 de maio de 2027 | 12 de maio de 2027 |
-| N2706 | NOVA | 2 de junho de 2027 | 16 de junho de 2027 |
-| N2710 | NOVA | 6 de outubro de 2027 | 20 de outubro de 2027 |
+<table data-search="false"><thead><tr><th>ID da versão</th><th>Canal</th><th>Sandbox</th><th>Produção</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>16 de outubro de 2026</td><td>4 de novembro de 2026</td></tr><tr><td>V2611</td><td>VESTA</td><td>4 de novembro de 2026</td><td>11 de novembro de 2026</td></tr><tr><td>V2612</td><td>VESTA</td><td>8 de dezembro de 2026</td><td>15 de dezembro de 2026</td></tr><tr><td>V2702</td><td>VESTA</td><td>10 de fevereiro de 2027</td><td>17 de fevereiro de 2027</td></tr><tr><td>N2703</td><td>NOVA</td><td>17 de fevereiro de 2027</td><td>3 de março de 2027</td></tr><tr><td>V2703</td><td>VESTA</td><td>10 de março de 2027</td><td>17 de março de 2027</td></tr><tr><td>V2705</td><td>VESTA</td><td>5 de maio de 2027</td><td>12 de maio de 2027</td></tr><tr><td>N2706</td><td>NOVA</td><td>2 de junho de 2027</td><td>16 de junho de 2027</td></tr><tr><td>N2710</td><td>NOVA</td><td>6 de outubro de 2027</td><td>20 de outubro de 2027</td></tr></tbody></table>
 
 Abaixo são descritas apenas as versões NOVA. As versões de correção VESTA são
 documentadas nas [Notas de versão](release-notes/README.md) pouco antes de serem lançadas.

@@ -1,8 +1,8 @@
 # Estrategia del ciclo de vida de versiones de DocBits
 
-Con el despliegue de la próxima versión menor R1.1, DocBits introducirá una nueva estrategia de ciclo de vida de versiones basada en dos canales de versiones: VESTA y NOVA.
+Con el despliegue de la versión menor N2611, DocBits introducirá una nueva estrategia de ciclo de vida de versiones basada en dos canales de versiones: VESTA y NOVA.
 
-**NOVA** es el canal para introducir nuevas versiones mayores y menores, como **Rx** y **Rx.y**. **VESTA** continúa proporcionando la versión de producción existente.
+**NOVA** es el canal para introducir nuevas versiones mayores y menores, como **N2611** y **N2703**. **VESTA** continúa proporcionando la versión de producción existente.
 
 {% hint style="success" %}
 **Importante: una única URL para VESTA y NOVA**
@@ -90,7 +90,7 @@ La frecuencia prevista difiere entre las versiones mayores y menores introducida
 
 #### Versiones mayores y menores a través de NOVA
 
-FELLOWPRO prevé actualmente un ciclo de aproximadamente **3–4 meses para las versiones mayores y menores** introducidas a través del canal de versiones NOVA, como **Rx** y **Rx.y**. Esta estimación se aplica al ciclo de vida descrito anteriormente, incluida la posterior transición a VESTA y la reutilización de NOVA para la próxima versión. No describe la frecuencia de los hotfixes.
+FELLOWPRO prevé actualmente un ciclo de aproximadamente **3–4 meses para las versiones mayores y menores** introducidas a través del canal de versiones NOVA, como **N2611** y **N2703**. Esta estimación se aplica al ciclo de vida descrito anteriormente, incluida la posterior transición a VESTA y la reutilización de NOVA para la próxima versión. No describe la frecuencia de los hotfixes.
 
 Este intervalo refleja nuestra estimación de planificación actual; no constituye un calendario fijo, una duración máxima del ciclo ni una garantía de fecha de publicación o de transición. El momento de cada transición y de la reutilización de NOVA depende tanto de **que la versión esté preparada como de la aceptación de la transición prevista por parte de todos los clientes**. Si se necesita más tiempo para que la versión esté preparada, para atender las inquietudes de los clientes o para obtener la aceptación de cada uno de ellos, el ciclo se ampliará y podrá durar más de cuatro meses.
 

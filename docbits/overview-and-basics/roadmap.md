@@ -8,17 +8,17 @@ themes describe what is planned for the release, not what has already shipped;
 scope and dates can move. Hotfixes between releases are documented in the
 [Release Notes](release-notes/README.md)._
 
-| Release ID | Sandbox | Production |
-|---|---|---|
-| N2611 | 16 October 2026 | 4 November 2026 |
-| V2611 | 4 November 2026 | 11 November 2026 |
-| V2612 | 8 December 2026 | 15 December 2026 |
-| V2702 | 10 February 2027 | 17 February 2027 |
-| N2703 | 17 February 2027 | 3 March 2027 |
-| V2703 | 10 March 2027 | 17 March 2027 |
-| V2705 | 5 May 2027 | 12 May 2027 |
-| N2706 | 2 June 2027 | 16 June 2027 |
-| N2710 | 6 October 2027 | 20 October 2027 |
+| Release ID | Channel | Sandbox | Production |
+|---|---|---|---|
+| N2611 | NOVA | 16 October 2026 | 4 November 2026 |
+| V2611 | VESTA | 4 November 2026 | 11 November 2026 |
+| V2612 | VESTA | 8 December 2026 | 15 December 2026 |
+| V2702 | VESTA | 10 February 2027 | 17 February 2027 |
+| N2703 | NOVA | 17 February 2027 | 3 March 2027 |
+| V2703 | VESTA | 10 March 2027 | 17 March 2027 |
+| V2705 | VESTA | 5 May 2027 | 12 May 2027 |
+| N2706 | NOVA | 2 June 2027 | 16 June 2027 |
+| N2710 | NOVA | 6 October 2027 | 20 October 2027 |
 
 Only NOVA releases are described below. VESTA bug fix releases are documented
 in the [Release Notes](release-notes/README.md) shortly before they ship.

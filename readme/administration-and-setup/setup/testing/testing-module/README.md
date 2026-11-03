@@ -1,5 +1,21 @@
 # Testing 模块
 
+## 视频教程：运行第一次浏览器测试
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/zh.mp4" %}
+
+[打开带中文字幕、章节和解说词的视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/zh.html).
+
+**时长: 2:16.** 中文界面、解说和字幕。
+
+本教程在开发环境中使用内置的 **Live testing self-check**：查看三个步骤，创建并保存命名输入，在浏览器中启动测试，然后打开同一次运行的已保存日志。该模板不需要参数，也不会修改业务数据。自检通过仅确认这三个检查成功，并不能证明发票提取、审批或 ERP 导出正确。
+
+**审核版本：**完整人工试听和业务内容审核尚未完成。
+
+{% hint style="info" %}
+**核对已保存的结果。** 在版本 11.21.2 的英语和德语录制中，输入的结果标识显示被阻止，但实际运行及其已保存日志均显示通过。重新打开输入后，标识恢复一致。如果结果不一致，请查看同一次运行的已保存日志。重新打开只是观察到的临时处理办法，并不代表问题已经修复。
+{% endhint %}
+
 ## Testing 模块的用途
 
 **Testing** 模块在您自己已登录的 DocBits 会话中运行浏览器测试。测试操作的是真实界面，而不是模拟界面：它会打开仪表板、上传示例发票、检查新文档是否进入验证环节，或确认导出是否报告了预期状态。它用于检查 DocBits **在您的组织中**是否运行正确，并记录每个步骤的结果。

@@ -4,6 +4,14 @@
 Cómo crear un árbol de decisión en DocBits (condiciones, políticas, pruebas y exportación)
 {% endembed %}
 
+## Vídeo paso a paso
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/es.mp4" %}
+
+*1:56 min · Interfaz del producto en español · Voz y escena de introducción generadas con IA*
+
+[Subtítulos (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/es.vtt) · [Descargar el vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/es.mp4)
+
 ## Descripción general
 
 Los árboles de decisión son una función potente que permite automatizar el enrutamiento y el proceso de toma de decisiones a partir de reglas predefinidas. Esta función resulta especialmente útil en entornos complejos donde es necesario evaluar diversas condiciones para determinar el curso de acción correcto, como asignar precios, determinar cantidades o enrutar documentos.
@@ -120,3 +128,31 @@ El diseñador de árboles de decisión incluye una función de prueba para valid
 * **Flujos de aprobación**: enruta las facturas a distintos aprobadores según umbrales de importe (por ejemplo, los importes superiores a 10.000 requieren la aprobación de un gerente).
 * **Reglas de validación**: valida automáticamente los valores de los campos y marca los documentos que no cumplen los criterios configurados.
 * **Asignación secuencial**: asigna documentos a los usuarios en un orden específico según las condiciones.
+
+## Capturas de pantalla
+
+<figure><img src="../../../.gitbook/assets/decision-trees-list-es.png" alt="Lista de árboles de decisión"><figcaption><p>Lista de árboles de decisión</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-name-es.png" alt="Crear un árbol: introducir el nombre"><figcaption><p>Crear un árbol: introducir el nombre</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-doctype-es.png" alt="Crear un árbol: elegir el tipo de documento"><figcaption><p>Crear un árbol: elegir el tipo de documento</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-designer-empty-es.png" alt="Diseñador vacío con una fila de regla"><figcaption><p>Diseñador vacío con una fila de regla</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-source-es.png" alt="Regla: elegir el origen"><figcaption><p>Regla: elegir el origen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-field-es.png" alt="Regla: elegir el campo del documento"><figcaption><p>Regla: elegir el campo del documento</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-operator-es.png" alt="Regla: elegir el operador"><figcaption><p>Regla: elegir el operador</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-rule-es.png" alt="Regla: introducir el valor de comparación"><figcaption><p>Regla: introducir el valor de comparación</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-policy-es.png" alt="Elegir la política del árbol"><figcaption><p>Elegir la política del árbol</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-return-type-es.png" alt="Resultado: elegir el tipo de retorno"><figcaption><p>Resultado: elegir el tipo de retorno</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-result-es.png" alt="Resultado: introducir el valor de retorno"><figcaption><p>Resultado: introducir el valor de retorno</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-input-es.png" alt="Probar el árbol con un valor de ejemplo"><figcaption><p>Probar el árbol con un valor de ejemplo</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-result-es.png" alt="Resultado de la prueba: número de filas coincidentes"><figcaption><p>Resultado de la prueba: número de filas coincidentes</p></figcaption></figure>

@@ -1,8 +1,8 @@
 # Strategia cyklu życia wydań DocBits
 
-Wraz z wdrożeniem nadchodzącego wydania minor R1.1 DocBits wprowadzi nową strategię cyklu życia wydań opartą na dwóch kanałach wydań: VESTA i NOVA.
+Wraz z wdrożeniem wydania minor N2611 DocBits wprowadzi nową strategię cyklu życia wydań opartą na dwóch kanałach wydań: VESTA i NOVA.
 
-**NOVA** to kanał służący do wprowadzania nowych wydań major i minor, takich jak **Rx** i **Rx.y**. **VESTA** nadal udostępnia dotychczasowe wydanie produkcyjne.
+**NOVA** to kanał służący do wprowadzania nowych wydań major i minor, takich jak **N2611** i **N2703**. **VESTA** nadal udostępnia dotychczasowe wydanie produkcyjne.
 
 {% hint style="success" %}
 **Ważne: jeden adres URL dla VESTA i NOVA**
@@ -90,7 +90,7 @@ Planowana częstotliwość różni się w przypadku wydań major i minor wprowad
 
 #### Wydania major i minor przez NOVA
 
-FELLOWPRO obecnie planuje cykl trwający około **3–4 miesięcy dla wydań major i minor** wprowadzanych przez kanał wydań NOVA, takich jak **Rx** i **Rx.y**. To szacunkowe założenie dotyczy opisanego powyżej cyklu życia wydań, w tym następującego po nim przejścia (rollover) do VESTA oraz ponownego wykorzystania NOVA dla kolejnego wydania. Nie określa ono częstotliwości hotfixów.
+FELLOWPRO obecnie planuje cykl trwający około **3–4 miesięcy dla wydań major i minor** wprowadzanych przez kanał wydań NOVA, takich jak **N2611** i **N2703**. To szacunkowe założenie dotyczy opisanego powyżej cyklu życia wydań, w tym następującego po nim przejścia (rollover) do VESTA oraz ponownego wykorzystania NOVA dla kolejnego wydania. Nie określa ono częstotliwości hotfixów.
 
 Ten okres odzwierciedla nasze aktualne szacunki planistyczne; nie jest to stały harmonogram, maksymalny czas trwania cyklu ani gwarancja terminu wydania lub przejścia. Termin każdego przejścia oraz ponownego wykorzystania NOVA zależy zarówno od **gotowości wydania, jak i akceptacji planowanej zmiany przez wszystkich klientów**. Jeśli potrzebny będzie dodatkowy czas na osiągnięcie gotowości wydania, rozwiązanie wątpliwości klientów lub uzyskanie akceptacji od każdego klienta, cykl zostanie wydłużony i może trwać dłużej niż cztery miesiące.
 

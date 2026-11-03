@@ -59,7 +59,7 @@ site:
       title: 🇳🇱 Nederlands
       path: dutch
       content:
-        directory: ./dutch
+        directory: null
         language: nl
     - type: space
       key: space-9

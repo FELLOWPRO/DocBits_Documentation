@@ -21,7 +21,7 @@ De pagina toont eerst de **Standaarddocumenttypen**, die DocBits levert en die u
 | **E-Doc** | Opent de instellingen voor elektronische documenten wanneer het type die ondersteunt. |
 | **Document-subtypen** | Opent de subtypen van dit documenttype. |
 
-Afhankelijk van de functies van uw organisatie ziet u mogelijk meer links, zoals validatie- of transformatieregels. Kies de link op de kaart van het type dat u wilt wijzigen.
+Afhankelijk van de functies van uw organisatie ziet u mogelijk meer links op de kaart, zoals **Validatieregels** of **Transformatieregels**. Kies de link van het type dat u wilt wijzigen.
 
 ## Velden en herkenningsinstellingen bewerken
 

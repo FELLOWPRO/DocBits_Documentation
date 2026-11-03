@@ -5,7 +5,7 @@ Pequena atualização para a Confirmação de Pedido (Order Confirmation)
 
 
 {% hint style="info" %}
-Link para o [arquivo](../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties)
+Link para o [arquivo](<../../.gitbook/assets/BOD-Mapping (OrderConfirmation).properties>)
 {% endhint %}
 
 ```

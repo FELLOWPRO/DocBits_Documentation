@@ -8,17 +8,7 @@ productiedatum. De thema's beschrijven wat voor de release is gepland, niet wat
 al is uitgeleverd; omvang en data kunnen verschuiven. Hotfixes tussen releases
 worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
-| Release-ID | Kanaal | Sandbox | Productie |
-|---|---|---|---|
-| N2611 | NOVA | 16 oktober 2026 | 4 november 2026 |
-| V2611 | VESTA | 4 november 2026 | 11 november 2026 |
-| V2612 | VESTA | 8 december 2026 | 15 december 2026 |
-| V2702 | VESTA | 10 februari 2027 | 17 februari 2027 |
-| N2703 | NOVA | 17 februari 2027 | 3 maart 2027 |
-| V2703 | VESTA | 10 maart 2027 | 17 maart 2027 |
-| V2705 | VESTA | 5 mei 2027 | 12 mei 2027 |
-| N2706 | NOVA | 2 juni 2027 | 16 juni 2027 |
-| N2710 | NOVA | 6 oktober 2027 | 20 oktober 2027 |
+<table data-search="false"><thead><tr><th>Release-ID</th><th>Kanaal</th><th>Sandbox</th><th>Productie</th></tr></thead><tbody><tr><td>N2611</td><td>NOVA</td><td>16 oktober 2026</td><td>4 november 2026</td></tr><tr><td>V2611</td><td>VESTA</td><td>4 november 2026</td><td>11 november 2026</td></tr><tr><td>V2612</td><td>VESTA</td><td>8 december 2026</td><td>15 december 2026</td></tr><tr><td>V2702</td><td>VESTA</td><td>10 februari 2027</td><td>17 februari 2027</td></tr><tr><td>N2703</td><td>NOVA</td><td>17 februari 2027</td><td>3 maart 2027</td></tr><tr><td>V2703</td><td>VESTA</td><td>10 maart 2027</td><td>17 maart 2027</td></tr><tr><td>V2705</td><td>VESTA</td><td>5 mei 2027</td><td>12 mei 2027</td></tr><tr><td>N2706</td><td>NOVA</td><td>2 juni 2027</td><td>16 juni 2027</td></tr><tr><td>N2710</td><td>NOVA</td><td>6 oktober 2027</td><td>20 oktober 2027</td></tr></tbody></table>
 
 Hieronder worden alleen de NOVA-releases beschreven. VESTA-bugfixreleases worden
 kort voor de publicatie gedocumenteerd in de [Release-opmerkingen](release-notes/README.md).

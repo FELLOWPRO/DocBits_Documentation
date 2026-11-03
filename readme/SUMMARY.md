@@ -41,6 +41,29 @@
     * [M3 API Export Diagnoseleitfaden](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Frankreichs E-Rechnung: zugelassene Plattformen und Peppol](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
 
+## DocBits Academy – Learn by Example
+
+* [Academy: Ihr Geschäftsproblem wählen](academy/README.md)
+  * [Vorbereitung und Übungspaket](academy/vorbereitung.md)
+  * [1. Rechnung ohne Bestellung](academy/rechnung-ohne-bestellung.md)
+  * [2. Rechnung mit Bestellung und Preisabweichung](academy/rechnung-mit-bestellung.md)
+  * [3. Kontierung und Kostenstellen](academy/kostenstellen-aufteilen.md)
+  * [4. Mehrstufige Freigabe](academy/mehrstufige-freigabe.md)
+  * [5. Fehlgeschlagenen ERP-Export beheben](academy/erp-export-fehler.md)
+  * [6. Mehrseitige KI-Tabellen](academy/mehrseitige-ki-tabellen.md)
+  * [30 Positionen, drei Abweichungen](academy/dreissig-positionen-abgleichen.md)
+  * [KI-Tabellen: zehn Praxisbeispiele](academy/ki-tabellen.md)
+    * [Tabellen ohne sichtbare Rahmenlinien](academy/ki-ohne-rahmenlinien.md)
+    * [Dieselbe Tabellenlogik für unterschiedliche Lieferantenlayouts](academy/ki-lieferantenlayouts.md)
+    * [Spalten bei unterschiedlicher Reihenfolge zuordnen](academy/ki-spalten-zuordnen.md)
+    * [Fehlerhafte Zeilen und Spalten korrigieren](academy/ki-tabellen-korrigieren.md)
+    * [Rabatte, Zuschläge und Zwischensummen behandeln](academy/ki-rabatte-zuschlaege.md)
+    * [Menge × Einzelpreis und Summen validieren](academy/ki-tabellenregeln.md)
+    * [Tabellen aus Excel, PDF und Scans vergleichen](academy/ki-eingangsformate.md)
+    * [Extrahierte Positionen für den ERP-Export vorbereiten](academy/ki-positionen-exportieren.md)
+    * [Nicht benötigte Spalten entfernen](academy/ki-spalten-entfernen.md)
+  * [Qualitätsstandard und Abnahme](academy/qualitaet-und-abnahme.md)
+
 ## Endnutzer- und Partnerbereich <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Endnutzerbereich](end-user-and-partner-section/end-user-section/README.md)

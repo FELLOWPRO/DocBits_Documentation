@@ -1,0 +1,138 @@
+{
+  "format": "Academy configuration reference. Not a DocBits import schema.",
+  "po_matching": {
+    "quantity_tolerance_percent": 0,
+    "unit_price_tolerance_percent_cases": [
+      2,
+      6
+    ],
+    "numeric_comparison_requires_allow_tolerance": true,
+    "check_item_overrides": true
+  },
+  "allocation": {
+    "basis": "net",
+    "total_eur": "3000.00",
+    "rows": [
+      {
+        "cost_center": "IT",
+        "percent": 50
+      },
+      {
+        "cost_center": "Verwaltung",
+        "percent": 30
+      },
+      {
+        "cost_center": "Vertrieb",
+        "percent": 20
+      }
+    ],
+    "negative_case_percent": [
+      50,
+      30,
+      15
+    ]
+  },
+  "approval": {
+    "basis": "gross",
+    "currency": "EUR",
+    "company": "Replace with your isolated test company",
+    "cost_center": "Replace with valid test cost center",
+    "bands": [
+      {
+        "min_inclusive": 0,
+        "max_inclusive": 1000,
+        "roles_sequential": [
+          "Teamleitung"
+        ]
+      },
+      {
+        "min_exclusive": 1000,
+        "max_inclusive": 10000,
+        "roles_sequential": [
+          "Abteilungsleitung"
+        ]
+      },
+      {
+        "min_exclusive": 10000,
+        "roles_sequential": [
+          "Abteilungsleitung",
+          "Geschaeftsfuehrung"
+        ]
+      }
+    ],
+    "missing_amount_or_routing": "Clarify; no automatic export",
+    "boundary_cases_eur": [
+      "1000.00",
+      "1000.01",
+      "10000.00",
+      "10000.01",
+      "12000.00"
+    ]
+  },
+  "export_mapping_review": [
+    {
+      "source_meaning": "item number",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "description",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "quantity",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "unit",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "unit price",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "price unit",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "net amount",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "purchase order reference",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    },
+    {
+      "source_meaning": "receipt reference",
+      "docbits_column_key": null,
+      "erp_target_field": null,
+      "data_type": null,
+      "conversion": null
+    }
+  ],
+  "note": "Field keys, role IDs, company IDs, costing dimensions and ERP transaction must be verified in the target configuration."
+}

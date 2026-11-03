@@ -8,10 +8,10 @@ Esta es una herramienta disponible para ti, en la pantalla de validación, en ca
 
 Esta función se encuentra en el menú sobre el área de vista previa del documento, como se muestra a continuación
 
-![](https://lh7-us.googleusercontent.com/wgH8UDoDmtxAwaFoO3NUQM9NIQyINnNenBFMe4b_mKfnx7LrJA_8dPbKLoTNvHhHNyznEyy2JDLzoOHW39n1GnTIoBIUgUTCvMVKMPGMYJrFTU6JnqFxjc67j-idDupjbGfMqEwoSgrBPt3mvor1Tds)
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-menu-es-20261009.png" alt="Pantalla de validación con el cursor sobre el botón Crear billete en la barra de acciones de la derecha."><figcaption><p>El botón Crear billete en la barra de acciones de la pantalla de validación.</p></figcaption></figure>
 
 Una vez hecho clic, se mostrará el siguiente formulario de ticket.
 
-![](https://lh7-us.googleusercontent.com/DxlkEirrpbtGXs8R6gHD9MtaUqd5mY9L1ya1PdGIwZIHnuoj0wflDML6ZjYzrHxqXos-0uwhMAJI69_zhO92dNWrwAmYpPwAe2C8sHvo0Tf8f8PG7SktBv4JiY6QfxxDNtO55S3xmQsze48ZophpDPc)
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-form-es-20261009.png" alt="Pantalla de validación con el formulario Ticket de soporte abierto: Nombre, Correo electrónico, Asunto, Prioridad, Mensaje, Captura de pantalla y Subir archivo."><figcaption><p>El formulario Ticket de soporte.</p></figcaption></figure>
 
 Aquí es donde completarás tus detalles y describirás el error. También puedes, si corresponde, adjuntar una captura de pantalla del problema y un archivo relevante.

@@ -50,10 +50,12 @@ Selecione **Criar** dentro da configuração expandida para adicionar um mapeame
 * **Campo de pesquisa** é a coluna do conjunto de dados a procurar.
 * **Campo de validação** é o campo do documento que recebe o resultado.
 * **Campo pai** verifica opcionalmente o resultado contra um campo relacionado.
-* **Operador de pesquisa** controla a forma como o texto é comparado. **Smart** ignora espaços e pontuação; as outras opções incluem Contains, Starts With, Ends With e Exact.
+* **Operador de pesquisa** controla a forma como o texto é comparado. **Inteligente** ignora espaços e pontuação, por isso os valores que só diferem na formatação continuam a corresponder. **Inteligente Exato** aplica a mesma normalização, mas só devolve um registo quando o valor completo é igual; numa correspondência parcial não é devolvido nenhum registo. As outras opções são **Contém**, **Começa com**, **Termina com** e **Exato**.
 * **Gatilho automático** inicia uma pesquisa quando este campo é preenchido. **Pesquisável** permite que o campo participe nas pesquisas e suporta a pesquisa manual durante a validação.
 
 Selecione **Criar** para adicionar o mapeamento. Use o menu de três pontos **Ações** numa linha para editar ou eliminar um mapeamento editável. Os mapeamentos padrão só podem ser vistos.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-pt.png" alt="Janela Criar campos de dados mestre com a lista Operador de pesquisa aberta: Inteligente, Inteligente Exato, Contém, Termina com, Exato, Começa com"><figcaption><p>Escolha <strong>Inteligente Exato</strong> quando o valor completo tem de corresponder depois de ignorar espaços e pontuação.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-pt-20261101.png" alt="Formulário vazio Criar campos de dados mestre com Campo de pesquisa, Campo de Validação, Campo Pai, Operador de pesquisa, Gatilho automático, Pesquisável, Cancelar e Criar"><figcaption><p>Escolha como uma coluna do conjunto de dados é associada a um campo do documento.</p></figcaption></figure>
 

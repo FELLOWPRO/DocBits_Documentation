@@ -9,7 +9,7 @@ site:
       default: true
       content:
         directory: ./docbits
-        language: en
+        language: de
     - type: space
       key: space-2
       title: 🇩🇪 Deutsch

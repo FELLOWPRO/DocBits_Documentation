@@ -4,6 +4,14 @@
 Como criar uma Árvore de Decisão no DocBits (Condições, Políticas, Testes e Exportação)
 {% endembed %}
 
+## Vídeo passo a passo
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/pt.mp4" %}
+
+*1:56 min · Interface do produto em português · Voz e cena de abertura geradas por IA*
+
+[Legendas (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/pt.vtt) · [Transferir o vídeo](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/pt.mp4)
+
 ## Visão geral
 
 As Árvores de Decisão são uma funcionalidade poderosa que permite o encaminhamento automatizado e o processo de tomada de decisão com base em regras predefinidas. Esta funcionalidade é especialmente útil em ambientes complexos onde é necessário avaliar várias condições para determinar a ação correta a tomar, tais como atribuir preços, determinar quantidades ou encaminhar documentos.
@@ -120,3 +128,31 @@ O editor de árvores de decisão inclui uma funcionalidade de teste para validar
 * **Fluxos de trabalho de aprovação** — encaminhe faturas para diferentes aprovadores com base em limiares de montante (por exemplo, montantes superiores a 10 000 requerem aprovação do gestor).
 * **Regras de validação** — valide automaticamente os valores dos campos e assinale os documentos que não cumprem os critérios configurados.
 * **Atribuição sequencial** — atribua documentos a utilizadores por uma ordem específica com base em condições.
+
+## Capturas de ecrã
+
+<figure><img src="../../../.gitbook/assets/decision-trees-list-pt.png" alt="Lista de árvores de decisão"><figcaption><p>Lista de árvores de decisão</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-name-pt.png" alt="Criar uma árvore: introduzir o nome"><figcaption><p>Criar uma árvore: introduzir o nome</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-doctype-pt.png" alt="Criar uma árvore: escolher o tipo de documento"><figcaption><p>Criar uma árvore: escolher o tipo de documento</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-designer-empty-pt.png" alt="Designer vazio com uma linha de regra"><figcaption><p>Designer vazio com uma linha de regra</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-source-pt.png" alt="Regra: escolher a origem"><figcaption><p>Regra: escolher a origem</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-field-pt.png" alt="Regra: escolher o campo do documento"><figcaption><p>Regra: escolher o campo do documento</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-operator-pt.png" alt="Regra: escolher o operador"><figcaption><p>Regra: escolher o operador</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-rule-pt.png" alt="Regra: introduzir o valor de comparação"><figcaption><p>Regra: introduzir o valor de comparação</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-policy-pt.png" alt="Escolher a política da árvore"><figcaption><p>Escolher a política da árvore</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-return-type-pt.png" alt="Resultado: escolher o tipo de retorno"><figcaption><p>Resultado: escolher o tipo de retorno</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-result-pt.png" alt="Resultado: introduzir o valor de retorno"><figcaption><p>Resultado: introduzir o valor de retorno</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-input-pt.png" alt="Testar a árvore com um valor de exemplo"><figcaption><p>Testar a árvore com um valor de exemplo</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-result-pt.png" alt="Resultado do teste: número de linhas correspondentes"><figcaption><p>Resultado do teste: número de linhas correspondentes</p></figcaption></figure>

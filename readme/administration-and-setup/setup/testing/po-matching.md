@@ -13,7 +13,7 @@ Quando si tratta di testare la configurazione di PO Matching, dovrai creare un o
 
 Una volta creato l'ordine d'acquisto, vai su Impostazioni → Ricerca dati anagrafici e cerca il numero dell'ordine d'acquisto del PO appena creato come dovrebbe ora apparire nei dati anagrafici dell'ordine d'acquisto in DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+<figure><img src="../../../.gitbook/assets/a-testing-po-matching-master-data-it-20261009.png" alt="Pagina Ricerca di dati anagrafici in italiano, con la scheda Ordine Di Acquisto e la tabella degli ordini di acquisto importati."><figcaption><p>Gli ordini di acquisto compaiono nella Ricerca di dati anagrafici.</p></figcaption></figure>
 
 Dovresti vedere il tuo numero univoco PO qui, questo significa che DocBits e INFOR sono correttamente sincronizzati.
 

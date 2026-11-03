@@ -63,6 +63,14 @@ Richten Sie das Portal vor den ersten Einladungen für Ihre Organisation ein:
 
 Interne Mitarbeitende öffnen die Ansicht **Lieferantendetails** über die Zeile eines Lieferanten im Lieferanten-Dashboard. Sie enthält dieselben sechs Bereiche, die der Lieferant ausfüllt, und seinen Status. Dort prüfen und pflegen Sie eingereichte Angaben und führen die fachliche Freigabe durch. Für die hier gezeigten Aufnahmen wurde keine bestehende Lieferantenzeile geöffnet.
 
+## Interner Einstieg in die Supplier-Details-Ansicht
+
+Klicken Sie im **Dashboard für Lieferanten** auf die Zeile eines Lieferanten, um die Ansicht **Lieferanten Details** für diesen Lieferanten zu öffnen. Diese interne Ansicht zeigt dieselben sechs Abschnitte, die der Lieferant bei der Registrierung ausfüllt — **Lieferanten Details**, **Adress Daten**, **Lieferant Kontakt**, **Lieferant Finanzen**, **Einkauf vom Lieferanten** und **Lieferanten Zertifikate** — zusammen mit dem aktuellen **Status** des Lieferanten (oben rechts als **STATUS** mit Badge, zum Beispiel **GENEHMIGUNG AUSSTEHEND**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-de-20261008.png" alt="Interne Ansicht „Lieferanten Details“ eines erfundenen Lieferanten in der Sandbox-Oberfläche auf Deutsch"><figcaption><p>Interne Ansicht „Lieferanten Details“: links die sechs Abschnitte der Registrierung, oben rechts der Status des Lieferanten. Alle Daten sind erfundene Beispielwerte.</p></figcaption></figure>
+
+Nutzen Sie diese Ansicht, um das Lieferantenprofil zu prüfen, fehlende Daten zu ergänzen oder zu korrigieren und die Freigabeentscheidung vorzubereiten. Eine Beschreibung jedes Abschnitts finden Sie unter [Lieferantenregistrierung](supplier-registration.md). Über die Zurück-Schaltfläche oben links in der Ansicht kehren Sie zum **Dashboard für Lieferanten** zurück, ohne etwas zu speichern.
+
 ## Lieferant: registrieren und auf DocBits zugreifen
 
 Der Lieferant öffnet seine Einladung, erstellt beziehungsweise verwendet den vorgesehenen eigenen Zugang und durchläuft die konfigurierten Registrierungsschritte. Danach kann er die für ihn freigegebenen Informationen in DocBits einsehen. Der genaue Ablauf und die verfügbaren Funktionen richten sich nach der Organisation.

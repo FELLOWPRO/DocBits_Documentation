@@ -39,6 +39,16 @@ Under a check that failed, **Log details** shows what the check expected and wha
 Both appear on **development and test environments** only, are shortened to 120 characters and are left out when the
 step uses a sensitive value. On a customer environment (sandbox, production) the log keeps only the error code.
 
+### Deviations
+
+A run of an [extraction regression template](templates.md) checks many files against the same fields. In
+**Log details** such a run adds a **Deviations** table above the steps: the checks grouped per file, with the
+**Field**, the **Expected** value, the **Status** of the check and, on development and test environments, the
+**Actual** value that was extracted. A line above the table counts the checks that deviated.
+
+A file with a deviation also keeps its document: **Open document** in the table opens the document the run
+created for that file. Documents of files without a deviation are deleted after the run.
+
 ### Cleanup
 
 If the template has [cleanup steps](steps-and-blocks.md), the chip next to the result shows how they ended:

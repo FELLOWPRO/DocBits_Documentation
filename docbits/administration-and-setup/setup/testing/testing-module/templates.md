@@ -62,6 +62,45 @@ asks for a confirmation every time it starts.
 If someone saved the same version of this template in the meantime (for example in another tab), DocBits keeps your
 draft and offers **Save as the next free version** or **Reload the latest version**.
 
+## Create an extraction regression
+
+Use this when you know what a set of documents must extract. You upload test files, enter the values they
+must produce, and the assistant builds a template that reads those values from a document again. Run it after
+a release or a configuration change to see whether the extraction still returns the same values.
+
+Select **New extraction regression** next to **New template** on the Templates tab.
+
+<figure><img src="../../../../.gitbook/assets/testing-35-regression-entry.png" alt="Templates tab: Import JSON, New template and New extraction regression"><figcaption><p>Templates tab: Import JSON, New template and New extraction regression.</p></figcaption></figure>
+
+The dialog has three steps.
+
+1. **Files and fields**: select the test files of your organisation, up to 50. **Upload test files** adds
+   further files. Then choose the **Document type** and tick the **Fields to check**, up to 20 per template;
+   you can also type the technical name of a field.
+2. **Expected values**: one row per file and one column per field. Enter the value each file must extract,
+   exactly as the validation screen shows it, or select **Take over values** and choose a document of your
+   organisation that has already been validated: its current values fill the row. An empty cell only checks
+   that the field is not empty. Numbers and dates are compared independent of how they are written
+   (*1.234,50* = *1234.50*, *31.01.2026* = *2026-01-31*) as long as only one reading is possible.
+3. **Name and save**: enter a **name** and select **Save**. If the files and fields do not fit into one
+   template, the assistant splits them over several templates, for example *Quarterly check (1/4)*, and
+   saves all of them in one step.
+
+<figure><img src="../../../../.gitbook/assets/testing-36-regression-wizard.png" alt="The wizard New extraction regression, step Files and fields: test files, document type INVOICE, the field list and the two selected fields"><figcaption><p>The wizard <strong>New extraction regression</strong>, step <strong>Files and fields</strong>: test files, document type and the fields to check.</p></figcaption></figure>
+
+The templates run like any other template. Each file is uploaded, DocBits waits until the document is
+processed and then compares every selected field. A file that fails a check is reported as a deviation and
+does not stop the other files. The result of such a run is described under
+[Logs and History](logs.md).
+
+{% hint style="warning" %}
+While a template runs, its test files are uploaded as new documents in the environment you start it in, and
+each document goes through the whole workflow there: extraction, validation rules, workflows and, depending
+on the configuration, exports to connected systems, notifications and quota. Afterwards the documents are
+deleted again. The document of a file with a deviation stays, so that you can open it from the
+**Deviations** table. Run regressions in a test environment or on a test organisation.
+{% endhint %}
+
 ## Import a template from JSON
 
 1. Select **Import JSON**.

@@ -21,7 +21,7 @@ A página mostra os **Tipos de documento padrão**, que o DocBits fornece e que 
 | **E-Doc** | Abre as configurações de documentos eletrônicos quando o tipo as suporta. |
 | **Subtipos de documentos** | Abre os subtipos deste tipo de documento. |
 
-Você pode ver mais links, como regras de validação ou de transformação, dependendo dos recursos da sua organização. Escolha o link no cartão do tipo que você deseja alterar.
+Você pode ver mais links, como **Regras de Validação** ou **Regras de Transformação**, dependendo dos recursos da sua organização. Escolha o link no cartão do tipo que você deseja alterar.
 
 ## Edite os campos e as configurações de reconhecimento
 

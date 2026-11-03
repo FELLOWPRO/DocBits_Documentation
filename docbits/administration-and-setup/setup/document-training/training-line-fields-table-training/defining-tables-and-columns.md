@@ -1,4 +1,4 @@
-# Defining tables and columns
+# Defining Tables and Columns
 
 If a table is not recognized completely, use table training to define its area and columns. These examples use a fictional invoice. The illustrated training areas are unsaved drafts.
 
@@ -16,13 +16,13 @@ Turn on **Training Mode** to make the table-selection and column tools available
 
 The toolbar includes automatic table detection. Check its result against the document before defining columns. This image shows the available tools; it does not demonstrate a completed automatic detection.
 
-<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_3.png" alt="Table-training tools including automatic detection."><figcaption><p>Table-training tools including automatic detection.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_2.png" alt="Table-training tools including automatic detection."><figcaption><p>Table-training tools including automatic detection.</p></figcaption></figure>
 
 ## Select the table area
 
 For a manual selection, choose the pencil tool and drag a rectangle around the column headings and line items. Exclude totals below the table.
 
-<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4.png" alt="Unsaved table area around the fictional invoice&#x27;s line items."><figcaption><p>Unsaved table area around the fictional invoice&#x27;s line items.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_4.png" alt="Unsaved table area around the fictional invoice&#x27;s line items."><figcaption><p>Unsaved table area around the fictional invoice's line items.</p></figcaption></figure>
 
 ## Position the column separators
 
@@ -32,7 +32,7 @@ Choose the column tool, then place or drag vertical separators between the actua
 
 Check the separation of item, description, quantity, unit price and amount. The separators in this example follow the five columns of the invoice.
 
-<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_9.png" alt="Table area with column separators positioned for the training draft."><figcaption><p>Table area with column separators positioned for the training draft.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/s150-define_tables_and_columns_8.png" alt="Table area with column separators positioned for the training draft."><figcaption><p>Table area with column separators positioned for the training draft.</p></figcaption></figure>
 
 Review the complete area and column assignments before using **Save** or **Save Rules**.
 

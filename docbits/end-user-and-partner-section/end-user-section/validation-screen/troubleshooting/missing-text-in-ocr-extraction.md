@@ -2,7 +2,6 @@
 
 The images show checks on a fictional invoice with available OCR text. They do not represent a reproduced missing-text incident.
 
-
 ## **Issue**
 
 In some cases, text may appear to be missing in the **OCR View**, which prevents it from being extracted using the extraction feature.
@@ -30,7 +29,7 @@ To resolve this issue, disable the E-Text feature—either for the [specific sup
     <figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_2.png" alt="Open More options in field validation."><figcaption><p>Open More options in field validation.</p></figcaption></figure>
 3.  Uncheck **Use E-Text if available**.
 
-    <figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_3.png" alt="Use E-Text if available in the document menu."><figcaption><p>Use E-Text if available in the document menu.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_2.png" alt="Use E-Text if available in the document menu."><figcaption><p>Use E-Text if available in the document menu.</p></figcaption></figure>
 4.  Click **Confirm** to restart processing for the document.
 
     <figure><img src="../../../../.gitbook/assets/s150-troubleshooting_ocr_4.png" alt="Confirmation dialog before changing E-Text usage."><figcaption><p>Confirmation dialog before changing E-Text usage.</p></figcaption></figure>

@@ -13,22 +13,30 @@ Die Länderanleitung enthält Versionsgrenzen, die tatsächlich verwendete Konfi
 | Eigenschaft | Wert |
 |-------------|------|
 | **Land / Region** | Frankreich / Deutschland |
-| **Dokumenttypen** | Rechnung, Gutschrift |
+| **Dokumenttypen** | Rechnung, Gutschrift (tatsächlich verwendete Zuordnung prüfen) |
 | **Format** | CII (PDF/A-3 eingebettet) |
 | **Standard** | Factur-X 1.09 / ZUGFeRD 2.5 |
 | **Basiert auf** | EN 16931 |
 
-Factur-X 1.09 ist die französische Veröffentlichung, die ZUGFeRD 2.5 entspricht (gemeinsame Veröffentlichung von FeRD/FNFE-MPE, Juni 2026). Das zugehörige CII-XML verwendet die UN/CEFACT-D22B-Basis, die abwärtskompatibel zu D16B ist, sodass der vollständige Extraktions- und Transformationsvertrag von Factur-X 1.08 / ZUGFeRD 2.4 weiterhin gilt. Das Profil EXTENDED ergänzt neue Felder für Zahlungsmittel und BIC, einen Drittzahlungsempfänger (Factor) und den Grund für die Steuerbefreiung bei Nachlässen/Zuschlägen.
+ZUGFeRD 2.5 und Factur-X 1.09 sind gleichwertige Veröffentlichungen. Das hybride Format bettet CII-D22B-XML in PDF/A-3 ein; UBL ist nicht seine XML-Syntax. Siehe die [Veröffentlichungsreferenz von FeRD](https://www.ferd-net.de/publikationen-produkte/publikationen/detailseite/zugferd-25-english).
 
-Alle fünf Profile werden unterstützt: MINIMUM, BASIC WL, BASIC, EN 16931 (COMFORT) und EXTENDED.
+Der Standard definiert die Profile MINIMUM, BASIC WL, BASIC, EN16931 und EXTENDED. Ein Profilname im Katalog belegt weder die automatische Erkennung noch eine vollständige Feldabdeckung. MINIMUM und BASIC WL können Positionsinformationen auslassen, die Ihre Integration benötigt.
+
+Diese Seite beschreibt die Veröffentlichung vom Juni 2026. Die spätere [Veröffentlichung Factur-X 1.09.2 / ZUGFeRD 2.5.2](https://fnfe-mpe.org/factur-x/factur-x_en/) muss gesondert identifiziert werden; die Familienkennung `1p0` allein genügt dafür nicht.
 
 ## Unterstützungsstatus
 
-| Komponente | Status |
-|------------|--------|
-| Vorschau | ✅ Unterstützt |
-| Feldextraktion | ✅ Unterstützt |
-| Transformation | ✅ Unterstützt |
+Die lesende Prüfung des Entwicklungskatalogs am 31. Oktober 2026 zeigte den Eintrag `FACTURX 1.09 - ZUGFERD 2.5` für `INVOICE`.
+
+| Komponente | Beobachtete Konfiguration |
+|-----------|---------------------------|
+| Vorschau | `PREVIEW` (XSLT) |
+| Feldextraktion | `EXTRACTION_PATHS` (JSON) |
+| Transformation | `TRANSFORMATION` (XSLT) |
+
+Diese Einträge bestätigen vorhandene Konfiguration, nicht die erfolgreiche Verarbeitung jeder Datei oder jedes Profils. Prüfen Sie die tatsächlich verwendete Quelle Default oder Custom und die aktive Version in Ihrer Organisation. Die Abwärtskompatibilität eines Standards garantiert keine unveränderten Extraktions- oder Transformationsergebnisse. Testen Sie repräsentative Rechnungen und Gutschriften, benötigte Felder und den ERP-Export separat; rechtliche Validierung und Anforderungen des Übertragungsnetzes benötigen eine eigene Abnahme.
+
+<figure><img src="../../../../../../.gitbook/assets/dbdc-259-facturx-de-20261031.png" alt="Deutsche DocBits-Entwicklungsansicht: FACTURX 1.09 - ZUGFERD 2.5 mit drei Standardkomponenten"><figcaption><p>Lesende deutsche Entwicklungsansicht vom 31. Oktober 2026: der Katalogeintrag für INVOICE und seine vorhandenen Standardkomponenten. Die Aufnahme zeigt keinen Dateiverarbeitungstest.</p></figcaption></figure>
 
 ## Verwandte Themen
 

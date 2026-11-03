@@ -1,24 +1,24 @@
 # Roadmap DocBits
 
-**Disponibilità di NOVA R1.1:** Disponibile nell’ambiente di test dal **16 ottobre 2026**. Il rilascio in produzione è previsto per il **4 novembre 2026**.
+**Disponibilità di NOVA N2611:** Disponibile nell’ambiente di test dal **16 ottobre 2026**. Il rilascio in produzione è previsto per il **4 novembre 2026**.
 
-_Stato della pianificazione al 7 ottobre 2026. Per ogni release sono indicate
+_Stato della pianificazione al 3 novembre 2026. Per ogni release sono indicate
 la data prevista per sandbox (quando i clienti possono testarla) e la data
 prevista per la produzione. I temi descrivono ciò che è pianificato per la
 release, non ciò che è già stato rilasciato; ambito e date possono cambiare.
 Gli hotfix tra una release e l'altra sono documentati nelle
 [Note della versione](release-notes/README.md)._
 
-| Release | Sandbox | Produzione |
+| ID release | Sandbox | Produzione |
 |---|---|---|
-| R1.1 | 16 ottobre 2026 | 4 novembre 2026 |
-| R1.2 | 16 febbraio 2027 | 3 marzo 2027 |
-| R1.3 | 1° giugno 2027 | 16 giugno 2027 |
-| R1.4 | 5 ottobre 2027 | 20 ottobre 2027 |
+| N2611 | 16 ottobre 2026 | 4 novembre 2026 |
+| N2703 | 17 febbraio 2027 | 3 marzo 2027 |
+| N2706 | 2 giugno 2027 | 16 giugno 2027 |
+| N2710 | 6 ottobre 2027 | 20 ottobre 2027 |
 
 ---
 
-## R1.1 — Sandbox 16 ottobre 2026 · Produzione 4 novembre 2026
+## N2611 — Sandbox 16 ottobre 2026 · Produzione 4 novembre 2026
 
 **Regole di trasformazione e layout**
 
@@ -161,7 +161,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## R1.2 — Sandbox 16 febbraio 2027 · Produzione 3 marzo 2027
+## N2703 — Sandbox 17 febbraio 2027 · Produzione 3 marzo 2027
 
 **Approvazione e corrispondenza degli ordini di acquisto**
 
@@ -202,7 +202,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## R1.3 — Sandbox 1° giugno 2027 · Produzione 16 giugno 2027
+## N2706 — Sandbox 2 giugno 2027 · Produzione 16 giugno 2027
 
 **Gestione regole di Auto Accounting**
 
@@ -239,7 +239,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## R1.4 — Sandbox 5 ottobre 2027 · Produzione 20 ottobre 2027
+## N2710 — Sandbox 6 ottobre 2027 · Produzione 20 ottobre 2027
 
 **Auto Accounting nella schermata di approvazione**
 
@@ -290,7 +290,10 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - Acquisizione ordini: un ordine cliente diventa un ordine di vendita in Infor
   M3 o Infor LN (prima versione, documenti di testo).
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-10-07 by the
-     docbits-roadmap skill. Releases up to R1.4 only; R1.5 and later are not
-     published yet. Themes only; ticket keys, customer names and internal work
+<!-- Themes generated from Jira "Release No." (customfield_10392) on 2026-10-07
+     by the docbits-roadmap skill; release IDs and dates updated to the new
+     channel + YYMM format on 2026-11-03 from CRITICAL-DEV-DOCS
+     Release Management/Release_Schedule.md (R1.1 = N2611, R1.2 = N2703,
+     R1.3 = N2706, R1.4 = N2710). NOVA releases up to N2710 only.
+     Themes only; ticket keys, customer names and internal work
      are deliberately left out. Rerun the skill to refresh. -->

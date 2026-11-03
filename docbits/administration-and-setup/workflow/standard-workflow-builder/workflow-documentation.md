@@ -22,7 +22,7 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Invoice reviewer
 
-![Document row for Banana_invoice_de (1).pdf, type Invoice, status Ready for validation, assigned to Stefan Reppermund](<../../../.gitbook/assets/3 (2).png>)
+![Document row for Banana\_invoice\_de (1).pdf, type Invoice, status Ready for validation, assigned to Stefan Reppermund](<../../../.gitbook/assets/3 (2).png>)
 
 **Test 2: Logic Card**
 
@@ -32,7 +32,7 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** Delivery-note reviewer
 
-![Document row for Lieferschein_Dum (1) (1).pdf, type Delivery Note, status Ready for validation, assigned to James Edwards](<../../../.gitbook/assets/4 (2).png>)
+![Document row for Lieferschein\_Dum (1) (1).pdf, type Delivery Note, status Ready for validation, assigned to James Edwards](<../../../.gitbook/assets/4 (2).png>)
 
 **Test 3: Logic Card**
 
@@ -42,7 +42,7 @@ Then: **Assign document to:** Delivery-note reviewer
 
 **Then:** **Assign document to:** Order reviewer
 
-![Document row for Order_Confirmation_444.pdf, type Order Confirmation, status Ready for validation, assigned to Anian Sollinger](<../../../.gitbook/assets/5 (2).png>)
+![Document row for Order\_Confirmation\_444.pdf, type Order Confirmation, status Ready for validation, assigned to Anian Sollinger](<../../../.gitbook/assets/5 (2).png>)
 
 It is also possible, if the document is not assigned to a single person, to assign it to a specific employee from the start.
 
@@ -72,7 +72,7 @@ Then: **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
-![Document list row for Banana_invoice_de (1).pdf, type Invoice, status Pending second approval, assigned to Stefan Reppermund](<../../../.gitbook/assets/10 (2).png>)
+![Document list row for Banana\_invoice\_de (1).pdf, type Invoice, status Pending second approval, assigned to Stefan Reppermund](<../../../.gitbook/assets/10 (2).png>)
 
 If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be assigned to the right person immediately.
 
@@ -88,7 +88,7 @@ Then: **Assign document to:** Approval owner
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
-![Document list with Banana_invoice_de (1).pdf in Ready for validation, assigned to Asad Usman Khan, above a second invoice in Pending approval](<../../../.gitbook/assets/13 (1).png>)
+![Document list with Banana\_invoice\_de (1).pdf in Ready for validation, assigned to Asad Usman Khan, above a second invoice in Pending approval](<../../../.gitbook/assets/13 (1).png>)
 
 It is also possible to enter the status into the workflow, so the assigned person can immediately see what status this document is and what should happen next with it.
 
@@ -118,7 +118,7 @@ You can give these documents a specific status or assign them to a specific empl
 
 <div align="center"><figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_overview.png" alt="Unsaved workflow draft with a purchase-order comparison condition."><figcaption><p>Unsaved workflow draft with a purchase-order comparison condition.</p></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/s150-workflow_test9_match_check_detail.png" alt="Purchase-order comparison card in the English workflow picker."><figcaption><p>Purchase-order comparison card in the English workflow picker.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/prior-u035-en.png" alt="Purchase-order comparison card in the English workflow picker."><figcaption><p>Purchase-order comparison card in the English workflow picker.</p></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
@@ -154,8 +154,6 @@ With a manual setup it’s advised to split calculations that depend on new colu
 With this card you can specify the name of a workflow that is to be run after the current workflow if its conditions are met and after previous then cards of the current workflow. While it prioritises runnable, active workflows, it also allows you to run deactivated workflows if the document fulfills the workflows conditions.
 
 ### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
-
-
 
 If you want to add all surcharges as a negative discount into the discount column, you can use the calculation card. There might be entries in this column, you can set it as one of the variables on the card, have the MTZ subtracted from it and add the result back into this column. In case there are empty fields (surcharges only for some items) it will assume a 0 for its calculation
 

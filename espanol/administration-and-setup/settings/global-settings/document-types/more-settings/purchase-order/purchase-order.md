@@ -13,19 +13,22 @@ Este ajuste habilita la sección de [**Coincidencia de Orden de Compra**](../../
 ## Pasos de Activación <a href="#activation-steps" id="activation-steps"></a>
 
 1. Ve a **Ajustes** -> **Ajustes globales** -> **Tipos de documentos**
-2.  Selecciona el tipo de documento deseado y haz clic en **Más ajustes**.
+2.  Busca la tarjeta del tipo de documento y abre sus ajustes con el engranaje (**Más ajustes**).
+3.  Expande la sección **Orden de compra** y activa **Orden de compra**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZSKdVhneopjjzzIBnbax%252Fpo_settings_1.png%3Falt%3Dmedia%26token%3Dab57e25e-9c6a-4273-b21b-ae328579839c\&width=768\&dpr=4\&quality=100\&sign=29a04f7d\&sv=2)
-3.  En la sección de **Orden de compra**, navega a la opción de **Orden de compra**.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAjk74xmxuvvEjZbD7gHz%252Fpo_settings_po.png%3Falt%3Dmedia%26token%3De78c7cf4-30db-4129-b5ca-bc52ee2ce7b4\&width=768\&dpr=4\&quality=100\&sign=da33746e\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/po-settings-purchase-order-20261103-es.png" alt="Sección Orden de compra en los ajustes avanzados del tipo de documento Factura: primer interruptor para la coincidencia y ajustes finos debajo"><figcaption><p>La sección <strong>Orden de compra</strong> en los ajustes avanzados. El primer interruptor activa la coincidencia de órdenes de compra para el tipo de documento; los siguientes la afinan.</p></figcaption></figure>
 
 ## **Funcionalidad**
 
 Una vez activada, la sección de [**Coincidencia de Orden de Compra**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) estará disponible después de la validación del documento.
 
-También puedes configurar qué tipo de cantidad de **Infor** se debe utilizar para la coincidencia seleccionando una de las siguientes opciones del menú desplegable junto al ajuste:
+### Qué cantidad se compara
 
-* **Cantidad**
-* **Cantidad recibida**
-* **Entrega recibida Cantidad pendiente**
+La cantidad del pedido que compara la coincidencia depende de **lado del servidor de coincidencia de PO**:
+
+* **lado del servidor de coincidencia de PO desactivado** – junto al interruptor **Orden de compra** aparece una lista con **Cantidad**, **Cantidad recibida** y **Entrega recibida Cantidad pendiente**. DocBits compara la cantidad elegida con su propio motor de coincidencia.
+* **lado del servidor de coincidencia de PO activado** – la coincidencia sigue las reglas del tipo de documento y la cantidad es parte de esas reglas. El enlace **Configurar reglas de coincidencia de órdenes de compra**, a la derecha de la fila, abre las reglas.
+
+{% hint style="info" %}
+La captura se tomó con **lado del servidor de coincidencia de PO** activado, por lo que la lista de cantidad no aparece en esa pantalla: se define en las reglas de coincidencia.
+{% endhint %}

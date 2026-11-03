@@ -2,38 +2,33 @@
 
 ## **Overview**
 
-The **PO Disable Statuses** setting allows users to specify purchase order (PO) statuses that prevent invoices from being matched to those POs. If a purchase order has a status listed in this setting, it **cannot** be used for invoice matching in the PO matching screen, stopping further processing of related invoices until the PO's status changes to one that is not disabled.\
-\
-By using this setting, users can ensure that purchase orders with specific statuses do not undergo further invoice processing, reducing errors and preventing unnecessary payments.
+The **PO disable statuses** setting specifies which purchase order (PO) line statuses are restricted in the matching screen. A line with a configured disabled status is shown with strikethrough and is not draggable for a match. Use the setting to control matching eligibility for the relevant document type.
 
 ## **Activation Steps**
 
-1.  Go to **Settings → Global Settings → Document Types**
+1. Open **Settings → Document Types**.
+2. Find the document type you want to configure. The example below uses **Invoice**. Open its gear button (**More settings**).
 
-    <figure><img src="../../../../../../.gitbook/assets/disablpe_po_status_1.png" alt="Settings Global Settings list with the Document Types entry highlighted"><figcaption></figcaption></figure>
-2.  Select the desired document type and click on **More Settings**.
+<figure><img src="../../../../../../.gitbook/assets/po-disable-statuses-invoice-card-native-en-20261102.png" alt="Current English Invoice standard document-type card header with Activate and Extraction controls and the More settings gear"><figcaption><p>The existing Invoice card and its More settings gear. The Activate and Extraction controls are separate from the PO status selection.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt="Document Types list with the settings gear of the Invoice type highlighted"><figcaption></figcaption></figure>
-3.  In the **Purchase Order** section, navigate to the **PO Disable Statuses** option.
+3. Open the **Purchase Order** accordion and locate **PO disable statuses**.
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_3.png" alt="More Settings Purchase Order section with the PO disable statuses dropdown and Apply button highlighted"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-disable-statuses-field-native-en-20261102.png" alt="Current English PO disable statuses field with its dropdown arrow and Apply button"><figcaption><p>The PO disable statuses field and its Apply button. The empty selection shown here is an example of the existing test configuration.</p></figcaption></figure>
 
 ### **How to Identify a Disabled Purchase Order**
 
-In the **PO Matching** screen, a disabled purchase order appears **crossed out**. This visually indicates that the PO is currently restricted from being matched due to its status.
+In the [Purchase Order Matching Screen](https://docs.docbits.com/end-user-and-partner-section/end-user-section/purchase-order-matching), a line whose status is disabled is marked with strikethrough and cannot be dragged into a match. Check the line's status and the disabled-status list for the document type when reviewing why the line is unavailable.
 
-<figure><img src="../../../../../../.gitbook/assets/image (403).png" alt="PO matching line with Canceled status shown crossed out as a disabled purchase order"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-disabled-row-historical-strike-strokes-masked-20261102.png" alt="Historical Canceled PO row with identifiers and numeric values masked; original strikethrough strokes remain visible"><figcaption><p>A retained historical Canceled PO row. Gray blocks hide identifiers and numeric values, including matched quantity. The short horizontal strokes preserve the original strikethrough styling.</p></figcaption></figure>
 
 ### **How to set it up**
 
-1. In the **PO Disable Statuses** setting, you will see a selection field on the left side.
-2.  Clicking this field opens a dropdown list of available PO statuses.\\
+1. Click the **PO disable statuses** field to open the available statuses.
+2. Select the checkboxes for the statuses your process excludes from matching. Clear a checkbox to remove that status from the selection.
 
-    <div align="center"><figure><img src="../../../../../../.gitbook/assets/image (402).png" alt="PO disable statuses dropdown listing the available PO statuses with Deleted, Canceled and Rejected selected" width="372"><figcaption></figcaption></figure></div>
-3. Select one or more statuses by clicking on them. Click again to deselect.
-4.  Click the **Apply** button to save your changes.
+<figure><img src="../../../../../../.gitbook/assets/po-disable-statuses-options-native-en-20261102.png" alt="Current English PO disable statuses dropdown with all eleven status checkboxes and the Apply button; surrounding page content is masked"><figcaption><p>The current status options with their existing unchecked state. The surrounding page content is masked; the dropdown and Apply button are unchanged.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_5.png" alt="PO disable statuses field with Canceled, Deleted and Invoiced selected and the Apply button"><figcaption></figcaption></figure>
+3. Click **Apply** to save the selection for this document type. Opening the dropdown alone does not save a change.
 
 **Available Statuses**
 

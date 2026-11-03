@@ -4,10 +4,8 @@ description: SI-UBL 2.0 electronic document support in DocBits
 
 # 🇳🇱 SI-UBL 2.0
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Netherlands](countries/netherlands.md). A UBL file is not automatically SI-UBL 2.0. Check its customization identifier and the matching national mapping.
+Check the country guide for version limits, effective configuration and the country explainer. [Netherlands](netherlands.md). A UBL file is not automatically SI-UBL 2.0. Check its customization identifier and the matching national mapping.
 {% endhint %}
 
 | Property             | Value                                |

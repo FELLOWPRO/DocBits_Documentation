@@ -1,6 +1,6 @@
 # Notatki do wydania
 
-**Dostępność NOVA R1.1:** Wersja jest dostępna w środowisku testowym od **16 października 2026 r.** Wydanie produkcyjne jest planowane na **4 listopada 2026 r.**
+**Dostępność NOVA N2611:** Wersja jest dostępna w środowisku testowym od **16 października 2026 r.** Wydanie produkcyjne jest planowane na **4 listopada 2026 r.**
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/pl.mp4" %}
 
@@ -12,11 +12,11 @@ Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl
 
 | Kanał wydania | Notatki do wydania | Zakres |
 | --- | --- | --- |
-| **NOVA – Wydanie minor** | [Nowości dla klientów](nova-minor-release-4-november-2026.md) · **4 listopada 2026 r. (planowane)** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
-| **VESTA — Następny hotfix (planowany)** | [11 listopada 2026 r.](vesta-hotfix-11-november-2026.md) | Wprowadza wszystkie funkcje, które wcześniej były w wersji beta VESTA, do standardowego zestawu funkcji VESTA. |
+| **NOVA N2611 – Wydanie minor** | [Nowości dla klientów](nova-minor-release-4-november-2026.md) · **4 listopada 2026 r. (planowane)** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
+| **VESTA V2611 — Następny hotfix (planowany)** | [11 listopada 2026 r. — V2611](vesta-hotfix-11-november-2026.md) | Wprowadza wszystkie funkcje, które wcześniej były w wersji beta VESTA, do standardowego zestawu funkcji VESTA. |
 | **VESTA — Wydanie hotfix** | [14 października 2026 r. — R1.0.15](incremental-updates-14-october-2026.md) | Ulepszenia i poprawki dla bieżącej wersji produkcyjnej VESTA. |
 
-## NOVA – Wydanie minor 4 listopada 2026 r.
+## NOVA N2611 – Wydanie minor 4 listopada 2026 r.
 
 ### Co zyskuje Twój zespół dzięki NOVA
 
@@ -44,7 +44,7 @@ Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **Cykl
 
 ## VESTA — Wydania poprawek <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
 
-**Następne planowane wydanie poprawki: [11 listopada 2026](vesta-hotfix-11-november-2026.md).** Wszystkie funkcje wcześniej dostępne w VESTA jako beta, a obecnie włączone do NOVA, staną się standardowymi funkcjami VESTA w tym wydaniu poprawki.
+**Następne planowane wydanie poprawki: [11 listopada 2026 — V2611](vesta-hotfix-11-november-2026.md).** Wszystkie funkcje wcześniej dostępne w VESTA jako beta, a obecnie włączone do NOVA, staną się standardowymi funkcjami VESTA w tym wydaniu poprawki.
 
 **Najnowsze wydane wydanie poprawki: [14 października 2026 — R1.0.15](incremental-updates-14-october-2026.md).** To wydanie poprawki VESTA wprowadziło Asystenta ustawień, zaktualizowane poziomy AI, Kontrolę pól nagłówka, ulepszenia logowania oraz ulepszenia dopasowywania kosztów zamówień zakupu.
 

@@ -4,10 +4,8 @@ description: KOREA E-TAX INVOICE electronic document support in DocBits
 
 # 🇰🇷 KOREA E-TAX INVOICE
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [South Korea](countries/korea.md). The labels do not name a release. Match the actual XML structure and do not treat extraction as proof of tax-platform acceptance.
+Check the country guide for version limits, effective configuration and the country explainer. [South Korea](korea.md). The labels do not name a release. Match the actual XML structure and do not treat extraction as proof of tax-platform acceptance.
 {% endhint %}
 
 | Property             | Value                              |

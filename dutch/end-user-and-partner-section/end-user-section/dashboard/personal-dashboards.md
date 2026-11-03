@@ -13,7 +13,7 @@ Een opgeslagen dashboard is een benoemde weergave van uw werklijst: zoekopdracht
 4. Geef een duidelijke naam op en bepaal wie de weergave kan gebruiken:
    * **Alleen zichtbaar voor mij** houdt de weergave privé.
    * **Zichtbaar voor alle gebruikers** stelt deze beschikbaar aan iedereen in uw organisatie.
-   * **Delen met groepen en gebruikers** toont de twee lijsten **Groep** en **Selecteer gebruiker**, zodat u specifieke groepen of afzonderlijke personen aanwijst.
+   * **Delen met groepen en gebruikers** toont de twee lijsten **Groepen** en **Selecteer gebruiker**, zodat u specifieke groepen of afzonderlijke personen aanwijst.
 
 5. Kies **Opslaan**. De weergaveknop schakelt naar het nieuwe dashboard en toont de naam en het aantal documenten.
 

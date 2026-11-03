@@ -3,7 +3,7 @@ hidden: true
 noIndex: true
 ---
 
-# FTP and SFTP import
+# FTP
 
 Automatic import requires approved server details and an import folder accessible to the connection account.
 
@@ -15,7 +15,7 @@ Open **Settings → Import** and select **New** in **FTP Import**.
 
 The wizard starts with **Server Configuration**. Choose the connection type, server name, port and intended account credentials. The connection tip gives common ports; use the values supplied by your server administrator.
 
-<figure><img src="../../../.gitbook/assets/s150-ftp_import_configuration_form.png" alt="First step of the FTP import wizard: Server Configuration."><figcaption><p>First step of the FTP import wizard: Server Configuration.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/s150-ftp_5.png" alt="First step of the FTP import wizard: Server Configuration."><figcaption><p>First step of the FTP import wizard: Server Configuration.</p></figcaption></figure>
 
 Select **Next** to continue to **Options** and **Config**. Check the complete connection before saving it.
 

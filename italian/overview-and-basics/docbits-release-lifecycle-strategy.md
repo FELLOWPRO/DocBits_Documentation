@@ -1,8 +1,8 @@
 # Strategia del ciclo di vita delle release di DocBits
 
-Con il rollout della prossima release minore R1.1, DocBits introdurrà una nuova strategia del ciclo di vita delle release basata su due canali di release: VESTA e NOVA.
+Con il rollout della release minore N2611, DocBits introdurrà una nuova strategia del ciclo di vita delle release basata su due canali di release: VESTA e NOVA.
 
-**NOVA** è il canale per l'introduzione di nuove release maggiori e minori, come **Rx** e **Rx.y**. **VESTA** continua a fornire l'attuale release di produzione.
+**NOVA** è il canale per l'introduzione di nuove release maggiori e minori, come **N2611** e **N2703**. **VESTA** continua a fornire l'attuale release di produzione.
 
 {% hint style="success" %}
 **Importante: un unico URL per VESTA e NOVA**
@@ -90,7 +90,7 @@ La cadenza prevista differisce tra le release maggiori e minori introdotte trami
 
 #### Release maggiori e minori tramite NOVA
 
-FELLOWPRO prevede attualmente un ciclo di circa **3–4 mesi per le release maggiori e minori** introdotte tramite il canale di release NOVA, come **Rx** e **Rx.y**. Questa stima si applica al ciclo di vita delle release descritto sopra, incluso il successivo rollover in VESTA e il riutilizzo di NOVA per la release successiva. Non descrive la frequenza degli hotfix.
+FELLOWPRO prevede attualmente un ciclo di circa **3–4 mesi per le release maggiori e minori** introdotte tramite il canale di release NOVA, come **N2611** e **N2703**. Questa stima si applica al ciclo di vita delle release descritto sopra, incluso il successivo rollover in VESTA e il riutilizzo di NOVA per la release successiva. Non descrive la frequenza degli hotfix.
 
 Questo intervallo rappresenta la nostra attuale stima di pianificazione; non costituisce un calendario fisso, una durata massima del ciclo né una garanzia di una data di release o di rollover. La tempistica di ciascun rollover e del riutilizzo di NOVA dipende sia **dalla disponibilità della release sia dall'accettazione della transizione pianificata da parte di tutti i clienti**. Se è necessario più tempo per rendere la release pronta, affrontare i dubbi dei clienti o ottenere l'accettazione di ogni cliente, il ciclo verrà esteso e potrà durare più di quattro mesi.
 

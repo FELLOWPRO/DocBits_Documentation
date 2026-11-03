@@ -4,10 +4,8 @@ description: FATTURAPA electronic document support in DocBits
 
 # 🇮🇹 FATTURAPA
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Italy](countries/italy.md). The family label does not certify every FatturaPA release or transmission through SDI. Check the source schema and receiver requirements.
+Check the country guide for version limits, effective configuration and the country explainer. [Italy](italy.md). The family label does not certify every FatturaPA release or transmission through SDI. Check the source schema and receiver requirements.
 {% endhint %}
 
 | Property             | Value                                    |

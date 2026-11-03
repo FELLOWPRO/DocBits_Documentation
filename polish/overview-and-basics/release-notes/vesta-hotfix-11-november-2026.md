@@ -1,6 +1,6 @@
-# Poprawka VESTA — 11 listopada 2026 r.
+# Poprawka VESTA V2611 — 11 listopada 2026 r.
 
-> **Kanał wydania:** VESTA · **Status:** Planowane · **Zaplanowana data:** 11 listopada 2026 r.
+> **Release ID:** V2611 · **Kanał wydania:** VESTA · **Status:** Planowane · **Sandbox:** 4 listopada 2026 r. · **Produkcja:** 11 listopada 2026 r.
 
 Następna poprawka VESTA wprowadza **wszystkie funkcje dostępne wcześniej w wersji beta VESTA do standardowego zestawu funkcji VESTA**. Funkcje te są już dostępne w [środowisku testowym NOVA](nova-minor-release-4-november-2026.md#former-vesta-beta-features-included-in-nova); wydanie produkcyjne NOVA jest planowane na **4 listopada 2026 r.**
 
@@ -12,8 +12,8 @@ Następna poprawka VESTA wprowadza **wszystkie funkcje dostępne wcześniej w we
 
 | Wydanie | Dostępność dawnych funkcji beta VESTA |
 | --- | --- |
-| **NOVA** | Dostępne w środowisku testowym od 16 października 2026 r.; wydanie produkcyjne planowane na 4 listopada 2026 r. |
-| **VESTA — hotfix z 11 listopada 2026 r.** | Planowane wdrożenie do standardowego zestawu funkcji VESTA. |
+| **NOVA N2611** | Dostępne w środowisku testowym od 16 października 2026 r.; wydanie produkcyjne planowane na 4 listopada 2026 r. |
+| **VESTA V2611 — hotfix z 11 listopada 2026 r.** | Dostępne w środowisku testowym od 4 listopada 2026 r.; planowane wdrożenie do standardowego zestawu funkcji VESTA 11 listopada 2026 r. |
 
 ## Przewodniki dotyczące konfigurowania reguł
 

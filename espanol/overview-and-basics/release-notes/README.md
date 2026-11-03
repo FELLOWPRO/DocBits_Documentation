@@ -1,6 +1,6 @@
 # Notas de la versión
 
-**Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
+**Disponibilidad de NOVA N2611:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/es.mp4" %}
 
@@ -12,11 +12,11 @@ Elija un canal de versiones para ver qué cambios se aplican a su equipo. **El c
 
 | Canal de versiones | Notas de la versión | Enfoque |
 | --- | --- | --- |
-| **NOVA – Versión menor** | [Novedades para clientes](nova-minor-release-4-november-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
-| **VESTA — Siguiente hotfix (planificado)** | [11 de noviembre de 2026](vesta-hotfix-11-november-2026.md) | Introduce todas las funciones que antes estaban en beta en VESTA en el conjunto de funciones regular de VESTA. |
+| **NOVA N2611 – Versión menor** | [Novedades para clientes](nova-minor-release-4-november-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
+| **VESTA V2611 — Siguiente hotfix (planificado)** | [11 de noviembre de 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduce todas las funciones que antes estaban en beta en VESTA en el conjunto de funciones regular de VESTA. |
 | **VESTA — Versión hotfix** | [14 de octubre de 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Mejoras y correcciones para la versión de producción actual de VESTA. |
 
-## NOVA – Versión menor 4 de noviembre de 2026
+## NOVA N2611 – Versión menor 4 de noviembre de 2026
 
 ### Qué obtiene su equipo con NOVA
 
@@ -44,7 +44,7 @@ Elija un canal de versiones para ver qué cambios se aplican a su equipo. **El c
 
 ## VESTA — Lanzamientos de hotfix <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
 
-**Siguiente hotfix planificado: [11 de noviembre de 2026](vesta-hotfix-11-november-2026.md).** Todas las funciones previamente disponibles como beta en VESTA, y ahora incluidas en NOVA, se convertirán en funciones regulares de VESTA en este hotfix.
+**Siguiente hotfix planificado: [11 de noviembre de 2026 — V2611](vesta-hotfix-11-november-2026.md).** Todas las funciones previamente disponibles como beta en VESTA, y ahora incluidas en NOVA, se convertirán en funciones regulares de VESTA en este hotfix.
 
 **Hotfix más reciente publicado: [14 de octubre de 2026 — R1.0.15](incremental-updates-14-october-2026.md).** Este hotfix de VESTA introdujo el Asistente de configuración, niveles de IA actualizados, el Header Field Check, mejoras en el inicio de sesión y mejoras en la conciliación de cargos de órdenes de compra.
 

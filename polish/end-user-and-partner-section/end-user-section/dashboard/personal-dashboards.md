@@ -13,7 +13,7 @@ Zapisany pulpit to nazwany widok listy pracy: wyszukiwanie, filtry, typ dokument
 4. Nadaj jasną nazwę i zdecyduj, kto może korzystać z widoku:
    * **Widoczne tylko dla mnie** zachowuje widok jako prywatny.
    * **Widoczne dla wszystkich użytkowników** udostępnia go wszystkim osobom w organizacji.
-   * **Udostępnij grupom i użytkownikom** pokazuje dwie listy **Grupa** i **Wybierz użytkownika**, aby wskazać konkretne grupy lub pojedyncze osoby.
+   * **Udostępnij grupom i użytkownikom** pokazuje dwie listy **Grupy** i **Wybierz użytkownika**, aby wskazać konkretne grupy lub pojedyncze osoby.
 
 5. Wybierz **Zapisz**. Przycisk widoku przełącza się na nowy pulpit i pokazuje jego nazwę oraz liczbę dokumentów.
 
@@ -23,7 +23,7 @@ Widoczność określa, kto może **korzystać** z widoku. Nie przyznaje dostępu
 
 ## Przełączanie widoków i zmiany
 
-Wybierz zapisany pulpit w przycisku widoku albo wróć do **Domyślnego panelu**, niezapisanego widoku wszystkich dokumentów. Ostatnio otwarty pulpit pozostaje aktywny po odświeżeniu strony.
+Wybierz zapisany pulpit w przycisku widoku albo wybierz **Domyślny panel**, czyli niezapisany widok wszystkich dokumentów. Ostatnio otwarty pulpit pozostaje aktywny po odświeżeniu strony.
 
 Po zmianie wczytanego pulpitu — także gdy zmieniasz tylko kolumny — przycisk widoku udostępnia **Zapisz zmiany w panelu**. Zapisujesz wtedy zmianę pod tą samą nazwą. Działanie pozostaje wyłączone, gdy nic się nie zmieniło lub gdy pulpit należy do innej osoby; udostępnionego widoku nie można nadpisać, utwórz własny.
 

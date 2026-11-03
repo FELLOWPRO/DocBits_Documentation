@@ -4,10 +4,8 @@ description: THAILAND E-TAX INVOICE electronic document support in DocBits
 
 # 🇹🇭 THAILAND E-TAX INVOICE
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [Thailand](countries/thailand.md). The label does not name a release. Confirm the source XML structure; signature verification and revenue-platform delivery need separate checks.
+Check the country guide for version limits, effective configuration and the country explainer. [Thailand](thailand.md). The label does not name a release. Confirm the source XML structure; signature verification and revenue-platform delivery need separate checks.
 {% endhint %}
 
 | Property             | Value                                          |

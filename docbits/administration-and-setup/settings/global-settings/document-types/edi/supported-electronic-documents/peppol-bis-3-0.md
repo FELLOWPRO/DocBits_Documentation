@@ -4,10 +4,8 @@ description: PEPPOL BIS 3.0 electronic document support in DocBits
 
 # 🇪🇺 PEPPOL BIS 3.0
 
-<!-- edocs-country-scope -->
-
 {% hint style="info" %}
-Check the country guide for version limits, effective configuration and the country explainer. [International](countries/international.md). Invoice, order, response and despatch mappings are distinct. File processing does not itself provide a Peppol access point or trading-partner connectivity.
+Check the country guide for version limits, effective configuration and the country explainer. [International](international.md). Invoice, order, response and despatch mappings are distinct. File processing does not itself provide a Peppol access point or trading-partner connectivity.
 {% endhint %}
 
 | Property             | Value                                          |
@@ -34,4 +32,4 @@ Peppol BIS Billing 3.0 is the pan-European e-invoicing standard used across the 
 ## Related
 
 * [Supported Electronic Documents](./)
-* [Peppol BIS Billing 3.0](../peppol-bis-billing-3.0)
+* [Peppol BIS Billing 3.0](../peppol-bis-billing-3.0/)

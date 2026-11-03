@@ -52,7 +52,7 @@ Tracks the document journey from **New** to **Exported** — useful for end-to-e
 
 Analyzes performance across all **technical processing modules** (OCR, classification, extraction, validation) — useful for identifying system-side bottlenecks.
 
-<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_processing_flow.png" alt="Processing view with aggregated flow steps."><figcaption><p>Processing view with aggregated flow steps.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/s150-analytics_dashboard_flow_types.png" alt="Processing view with aggregated flow steps."><figcaption><p>Processing view with aggregated flow steps.</p></figcaption></figure>
 
 ### User Interaction Flow
 

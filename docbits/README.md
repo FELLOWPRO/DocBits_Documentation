@@ -6,7 +6,7 @@ From OCR and IDP to business logic, approvals and Advanced Workflows: discover t
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en.mp4" %}
 
-*90 seconds · English-language product UI · AI-imagined historical scenes*
+_90 seconds · English-language product UI · AI-imagined historical scenes_
 
 [Read transcript](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en-transcript.md) · [Download video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/marketing/make-room-for-ambition/2026-10-18/v1/en.mp4)
 
@@ -30,7 +30,7 @@ Below is a summary of its unique features and benefits:
    * Leverages the power of AI swarm intelligence to deliver communal benefits across customers.
    * Enhances the training of classification and extraction models with input from a wide range of users.
    * Provides over 96% accuracy in data extraction and classification.
-3. [**PO Matching**](end-user-and-partner-section/end-user-section/purchase-order-matching/)
+3. [**PO Matching**](end-user-and-partner-section/end-user-section/purchase-order-matching.md)
    * Automates the reconciliation of purchase orders with incoming invoices.
    * Ensures accurate financial transactions and promptly addresses discrepancies.
    * Supports matching of various document types, not limited to invoices.
@@ -64,4 +64,4 @@ Below is a summary of its unique features and benefits:
 * Suitable for a wide range of industries and document types, including invoices, delivery notes, order confirmations, and more.
 * Ideal for businesses looking to optimize their document capturing processes and enhance operational efficiency.
 
-For more information, visit [FellowPRO AG](https://fellowpro.com/) or contact sales at sales@fellowpro.com. Follow us on [LinkedIn](https://www.linkedin.com/company/fellowpro).
+For more information, visit [FELLOWPRO AG](https://fellowpro.com/) or contact sales at sales@fellowpro.com. Follow us on [LinkedIn](https://www.linkedin.com/company/fellowpro).

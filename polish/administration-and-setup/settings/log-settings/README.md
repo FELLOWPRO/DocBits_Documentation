@@ -14,16 +14,18 @@ U góry strony baner prowadzi do **Panel analityczny** z wykresami, metrykami i 
 |--------|-------------|
 | **Zakres czasu** | Wybierz okno czasowe (np. Today, Last 7 Days, Last 30 Days). |
 | **Poziom ważności** | Włączaj lub wyłączaj poziomy ważności: **Odpluskwić**, **Informacje**, **Ostrzeżenie**, **Błąd**. Każdy znacznik pokazuje bieżącą liczbę. |
-| **Usługa** | Filtruj logi według usługi (np. api, auth, api-service). |
+| **Praca** | Filtruj logi według usługi (np. api, auth, api-service). |
 | **Search logs** | Wyszukiwanie pełnotekstowe w komunikatach logów. |
 
 ## Tabela logów
+
+<figure><img src="../../../.gitbook/assets/dbdc-815-activity-logs-service-pl-20261031.png" alt="Rzeczywisty dziennik aktywności w polskim interfejsie: kolumna Praca wskazuje usługę, która wygenerowała wpis, i odpowiada filtrowi Praca. Wpisy dziennika i metadane eksportu pozostają poza kadrem."><figcaption><p>Rzeczywisty dziennik aktywności w polskim interfejsie: kolumna Praca wskazuje usługę, która wygenerowała wpis, i odpowiada filtrowi Praca. Wpisy dziennika i metadane eksportu pozostają poza kadrem.</p></figcaption></figure>
 
 | Kolumna | Opis |
 |--------|-------------|
 | **Znak czasu** | Data i godzina wystąpienia zdarzenia. Z możliwością sortowania. |
 | **Poziom ważności** | Kolorowa plakietka: Info (niebieska), Warning (żółta), Error (czerwona), Debug (szara). |
-| **Część** | Usługa lub moduł, który wygenerował log (np. api, auth, api-service). |
+| **Praca** | Usługa lub moduł, który wygenerował log (np. api, auth, api-service). |
 | **Wiadomość** | Pełny komunikat logu ze szczegółami zdarzenia. |
 
 Wyniki są podzielone na strony — użyj elementów sterujących na dole, aby przechodzić między stronami.

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This setting enables the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) section, which becomes accessible after document validation.
+This setting enables the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching.md) section, which becomes accessible after document validation.
 
 <mark style="color:red;">**Note**</mark>: For the **Invoice** document type, the following additional requirements must be met:
 
@@ -20,7 +20,7 @@ This setting enables the [**Purchase Order Matching**](../../../../../../end-use
 
 ## **Functionality**
 
-Once activated, the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/) section becomes available after document validation.&#x20;
+Once activated, the [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching.md) section becomes available after document validation.
 
 ### Which quantity is matched
 
@@ -32,8 +32,3 @@ Which quantity from the purchase order the match compares against depends on **P
 {% hint style="info" %}
 The capture above was taken with **PO match server side** switched on, so the **Match quantity** dropdown is not on that screen — it is configured in the matching rules instead.
 {% endhint %}
-
-
-
-
-

@@ -13,11 +13,13 @@ The applicable obligation depends on the transaction's scope and the business ca
 
 PEPPOL can provide transport and interoperability between connected systems and platforms. Using PEPPOL does not replace the requirement to use a PA for invoice exchanges within the French mandate. Do not treat a PEPPOL connection alone as evidence that French exchange and reporting obligations are fulfilled.
 
+For the DocBits format catalogue, see [E-invoice standards overview](../../administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md).
+
 ## Historical Technical Context
 
 The six diagrams and the API descriptions below are retained from earlier PPF/PDP material for historical technical context. They use the former terminology and architecture; they do not describe a current option to exchange mandated B2B invoices through the PPF. Check current PA and public-service specifications before implementing an integration.
 
-<figure><img src="../../.gitbook/assets/Picture 1.png" alt="French e-invoicing lifecycle diagram across preparation, reception, validation and payment with supplier and buyer statuses"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 1.png" alt="French e-invoicing lifecycle diagram across preparation, reception, validation and payment with supplier and buyer statuses"><figcaption><p>Historical lifecycle diagram: preparation and emission, reception, validation/return and payment, with the supplier and buyer status labels shown at each stage.</p></figcaption></figure>
 
 ### Historical API Service Model
 
@@ -26,22 +28,24 @@ The earlier API model described accessing available functions from the IT tools 
 * **Information systems (IS):** APIs were described as integrated into the systems of invoice issuers, recipients or their dematerialisation operators (ODs). Some APIs were intended for PDP systems, offering an alternative to EDI integration.
 * **Third-party software:** Software publishers could add a communication layer to customer systems. Earlier references to a connection to the PPF belong to that historical model and are not a current invoice exchange route.
 
-<figure><img src="../../.gitbook/assets/Picture 6.png" alt="Diagram of issuer and receiver exchanging invoices through OD-PDP service portals and the PPF with data control and recovery"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 6.png" alt="Diagram of issuer and receiver exchanging invoices through OD-PDP service portals and the PPF with data control and recovery"><figcaption><p>Historical interconnection diagram: issuer and receiver connect through third-party software, service portals and OD/PDP blocks around the PPF data-control and recovery block.</p></figcaption></figure>
 
 ### Historical Interconnection Diagram
 
 This diagram illustrates the earlier platform interconnection context. Current implementation must follow PA requirements; no general requirement that every exchange use a single transport network is asserted here.
 
-<figure><img src="../../.gitbook/assets/Picture 2.png" alt="Flow, invoice and invoicing data controls diagram: supplier submissions pass technical, application and functional controls with rejections"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 2.png" alt="Flow, invoice and invoicing data controls diagram: supplier submissions pass technical, application and functional controls with rejections"><figcaption><p>Historical controls diagram: technical, application and functional/business checks are shown for manual, API and EDI submissions, alongside inadmissible, rejected and refused outcomes.</p></figcaption></figure>
 
 ### Historical Hub Connection
 
 The earlier hub model described a web or application solution in which **the hub made API calls on behalf of its customers**. It referred to a technical account for each partner and an application under PISTE plus a PPF connection for the hub. These are historical architecture details, not a verified current integration procedure.
 
-<figure><img src="../../.gitbook/assets/Picture 5.png" alt="Diagram of partners with technical accounts connecting through one hub to one application under PISTE and one connection"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Picture 5.png" alt="Diagram of partners with technical accounts connecting through one hub to one application under PISTE and one connection"><figcaption><p>Historical hub diagram: partners with technical accounts connect through one hub to one application under PISTE and one connection.</p></figcaption></figure>
 
 ### Historical References
 
 The earlier material cited [the former timetable and legal overview](https://www.ey.com/en_gl/technical/tax-alerts/france-revises-schedule-for-adopting-e-invoicing-reform), [2022 specifications](https://www.avalara.com/blog/en/europe/2022/09/france-publishes-updated-specifications-for-e-invoicing-and-e-reporting.html), [a 2025 reform overview](https://www.avalara.com/blog/en/europe/2025/01/e-invoicing-reform-france.html), [platform interconnection background](https://nymus.be/fr/facturation-electronique-en-france/), [PEPPOL background](https://edicomgroup.com/blog/status-of-b2b-electronic-invoicing-in-france) and [exchange background](https://nymus.be/fr/facturation-electronique-en-france/). These links and the remaining diagrams are retained as historical context. Use the official sources above for current obligations, including the distinction between PA invoice exchange and PPF public functions. The earlier reference to Article 91 of the 2024 Finance Law does not establish a current PPF exchange option.
 
-<div><figure><img src="../../.gitbook/assets/Picture 3.png" alt="Flowchart of the emission process from EDI flow and API reception through flow, application and functional controls to invoice issued"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Picture 4.png" alt="Flowchart of the reception process from EDI flow and API reception through controls with rejection or refusal to invoice made available"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/Picture 3.png" alt="Flowchart of the emission process from EDI flow and API reception through flow, application and functional controls to invoice issued"><figcaption><p>Historical emission flowchart: incoming EDI and API flows pass flow, application and functional controls before invoicing data is incorporated; rejection paths, outbound flows 1 and 2, and lifecycle notifications are also shown.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Picture 4.png" alt="Flowchart of the reception process from EDI flow and API reception through controls with rejection or refusal to invoice made available"><figcaption><p>Historical reception flowchart: technical, application and functional controls include specific business rules, with rejection or refusal paths; accepted data leads to an invoice received and made available, alongside recipient flow 2 and lifecycle notifications.</p></figcaption></figure>

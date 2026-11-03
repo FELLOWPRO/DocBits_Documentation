@@ -2,13 +2,13 @@
 
 ## From extracted value to downstream verification
 
-<figure><img src="../../../../.gitbook/assets/process-transformation-en-20261028.png" alt="How transformation rules work: An extracted value becomes a specifically processed value."><figcaption><p>An extracted value becomes a specifically processed value. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/process-transformation-en-20261103.png" alt="How transformation rules work: An extracted value becomes a specifically processed value."><figcaption><p>An extracted value becomes a specifically processed value. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
 
 A transformation changes existing data; it does not perform OCR again. It reads an input, checks its condition, runs the configured steps and writes the result back. If the condition is not met, the rule is skipped.
 
 **Example:** A table cell contains `STK`. A value mapping that applies to the supplier writes `PCE`. Downstream PO matching then uses the normalized unit code. Also test a value that is already normalized and a value to which the rule should not apply.
 
-1. **Trigger:** During document processing, the rules run after extraction. They can also run again when modified extraction data is saved.
+1. **Trigger:** During processing, rules can run after extraction. In newer versions, **Run after lookup population (before PO match)** adds a pass after lookup. Run-once rules using that option are held back during the after-extraction pass. Saving changed extraction data can also run rules again.
 2. **Order:** Within a run, the scopes are processed in this order: **Header field → Routing → Table rows → Table column**. Within each scope, priority and key determine the order.
 3. **Effect:** A table rule can change or remove line items. This can change the row count and the prerequisites for purchase order matching. Replacing rows that have already been matched can remove an existing assignment.
 4. **Control:** Compare input, preview and saved result. When execution logging is enabled, the condition trace shows why a rule was applied or skipped.
@@ -23,14 +23,14 @@ A transformation changes existing data; it does not perform OCR again. It reads 
 
 ## Overview
 
-**Trigger:** During document processing, the rules run after extraction. They can also run again when modified extraction data is saved.
+**Trigger:** During processing, rules can run after extraction. In newer versions, **Run after lookup population (before PO match)** adds a pass after lookup. Run-once rules using that option are held back during the after-extraction pass. Saving changed extraction data can also run rules again.
 
 * a **header field** (invoice number, currency, supplier tax ID …),
 * a **column** in every row of a table (unit, item number, price basis …),
 * the **rows** of a table (clear them, add a row),
 * an **attribute of the document** — today the sub-organisation it belongs to (**Routing**).
 
-Each rule **reads** a value, sends it through a short **pipeline** of steps, and **writes** the result back. Rules run **before** validation, scripts and purchase order matching, so everything downstream already sees the corrected values.
+Each rule **reads** a value, sends it through a short **pipeline** of steps, and **writes** the result back. Execution depends on the configured stage. Check the rule configuration and execution trace before relying on an order relative to lookup, validation or scripts. The after-lookup option and its run-once behavior are explained below.
 
 Transformation rules replace most of the small scripts organisations used to write for "always trim this field", "map this supplier's unit codes", "add the prefix our ERP expects" or "collapse this supplier's lines into one total line" — with a form, a live preview and no code.
 
@@ -96,7 +96,7 @@ Two options control how often the rule applies:
 | Option | Effect |
 | --- | --- |
 | **Run only once per document** | Normally rules run again on every save. With this on, the rule applies **at most once** to a document and is then finished with it. A pass in which the conditions do not match does not count, so the rule can still apply on a later save. Needed for steps that would change the value again on every save (see [Idempotency](#run-once-and-idempotency)) and for table rules that should not rebuild the lines again. |
-| **Run after lookup population (before PO match)** | *(newer versions)* Runs the rule in an additional pass after the lookup data (for example supplier master data) has been filled in, and before purchase order matching. Use it when the rule needs a value that a lookup provides. The rule still runs at the usual stages too; a run-once rule with this option waits for this pass instead of running right after extraction. |
+| **Run after lookup population (before PO match)** | *(newer versions)* Runs the rule in an additional pass after the lookup data (for example supplier master data) has been filled in, and before purchase order matching. Use it when the rule needs a value that a lookup provides. The rule still runs at the usual stages too. A run-once rule with this option is held back during the after-extraction pass; if lookup is skipped, a later pass can still apply it. |
 
 ### Step 3 — The pipeline
 
@@ -223,7 +223,7 @@ A **Routing** rule does not change a field. It stamps an attribute on the docume
 
 ## When rules run
 
-* **During processing**, after extraction and before master data lookup, validation, scripts and purchase order matching.
+* **During processing**, after extraction, with an additional after-lookup pass for rules configured to use it in newer versions. A run-once rule with that option is held back during the after-extraction pass; if lookup is skipped, a later pass can still apply it. The relative order of scripts depends on their trigger.
 * On **every save** of the document in which the extracted data changed. Rules without **Run only once per document** are applied again each time.
 * Within one pass, rules run scope by scope in this order: **Header → Routing → Table rows → Table column**. A column rule therefore also applies to rows that a table rule has just added. Within a scope, rules run by priority, then by key.
 

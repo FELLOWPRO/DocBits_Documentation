@@ -1,4 +1,6 @@
-# NOVA N2611 – Version mineure 4 novembre 2026
+# NOVA version de novembre N2611
+
+## 4 novembre 2026
 
 **Disponibilité de NOVA N2611 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
 

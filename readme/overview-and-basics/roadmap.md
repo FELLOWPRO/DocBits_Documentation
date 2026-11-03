@@ -18,7 +18,9 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## N2611 — Sandbox 16 octobre 2026 · Production 4 novembre 2026
+## NOVA version de novembre N2611
+
+Sandbox 16 octobre 2026 · Production 4 novembre 2026
 
 **Règles de transformation et mises en page**
 
@@ -160,7 +162,9 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## N2703 — Sandbox 17 février 2027 · Production 3 mars 2027
+## NOVA version de mars N2703
+
+Sandbox 17 février 2027 · Production 3 mars 2027
 
 **Approbation et correspondance des bons de commande**
 
@@ -203,7 +207,9 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## N2706 — Sandbox 2 juin 2027 · Production 16 juin 2027
+## NOVA version de juin N2706
+
+Sandbox 2 juin 2027 · Production 16 juin 2027
 
 **Rule Manager Auto Accounting**
 
@@ -241,7 +247,9 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## N2710 — Sandbox 6 octobre 2027 · Production 20 octobre 2027
+## NOVA version d’octobre N2710
+
+Sandbox 6 octobre 2027 · Production 20 octobre 2027
 
 **Auto Accounting sur l'écran d'approbation**
 

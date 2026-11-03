@@ -1,5 +1,21 @@
 # Moduł Testing
 
+## Film instruktażowy: pierwszy test przeglądarkowy
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/pl.mp4" %}
+
+[Otwórz polski film z napisami, rozdziałami i transkrypcją](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/pl.html).
+
+**Czas trwania: 2:15.** Polski interfejs, narracja i napisy.
+
+Instrukcja pokazuje wbudowany **Live testing self-check** w środowisku deweloperskim: przegląd trzech kroków, utworzenie i zapisanie nazwanych danych wejściowych, uruchomienie testu w przeglądarce oraz otwarcie zapisanego dziennika tego samego wykonania. Szablon nie wymaga parametrów i nie zmienia danych biznesowych. Powodzenie potwierdza te trzy kontrole; nie dowodzi poprawności ekstrakcji faktur, zatwierdzania ani eksportu ERP.
+
+**Wersja do przeglądu:** pełna ocena odsłuchu i akceptacja merytoryczna nadal oczekują na zatwierdzenie.
+
+{% hint style="info" %}
+**Sprawdź zapisany wynik.** W angielskim i niemieckim nagraniu wersji 11.21.2 wskaźnik danych wejściowych pokazywał blokadę, chociaż wykonanie i zapisany dziennik potwierdzały powodzenie. Ponowne otwarcie przywracało właściwy wskaźnik. Przy rozbieżności sprawdź dziennik tego samego wykonania. Ponowne otwarcie to zaobserwowane obejście, a nie potwierdzona naprawa.
+{% endhint %}
+
 ## Do czego służy moduł Testing
 
 Moduł **Testing** uruchamia testy przeglądarkowe w Twojej własnej, zalogowanej sesji DocBits. Test steruje prawdziwymi

@@ -1,4 +1,4 @@
-# Navigation dans le Gestionnaire de Mise en Page
+# Navigation dans le Layout Builder
 
 Le **Gestionnaire de mise en page** sert à organiser les groupes et les champs que les utilisateurs voient sur un document. Ce guide s'appuie sur la mise en page de **Facture** d'une organisation sandbox ; les captures d'écran montrent l'interface en français.
 

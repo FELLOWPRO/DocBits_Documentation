@@ -4,7 +4,6 @@
 
 * [DocBits](README.md)
   * [Belangrijkste functies van DocBits](overview-and-basics/docbits/key-features-of-docbits.md)
-* [Git Sync Test (nl)](git-sync-test.md)
 * [Over onze trainingsvideo’s](about-training-videos.md)
 * [Architectuur](overview-and-basics/architecture/README.md)
   * [DocBits Infor on Premise-klant](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)

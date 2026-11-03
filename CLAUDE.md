@@ -22,24 +22,25 @@ When making changes, preserve GitBook sync metadata such as frontmatter, `SUMMAR
 
 ## Languages and GitBook Git Sync
 
-The GitBook site uses **site-level Git Sync** on `main`: one repository, one branch,
-one folder per language space (mapping in `gitbook-docs.yaml`). Do not switch the
-spaces to one branch per language.
+Since 2026-11-03 **every language space has its own Git Sync on its own branch**. The
+English space syncs from `main`, folder `docbits/`. Do not move the language spaces back
+to folders on `main`.
 
-| Language | Source of truth (edit here) | Folder on `main` (published, bot-written) |
+| Language | Branch (edit and merge here) | Content root |
 |---|---|---|
-| English | `main`, folder `docbits/` | `docbits/` |
-| de, es, fr, it, nl, pl, pt, zh | branch `de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `zh`, under `readme/` | `deutsch/`, `espanol/`, `french/`, `italian/`, `dutch/`, `polish/`, `portuguese/`, `chinese/` |
+| English | `main` | `docbits/` (images in `docbits/.gitbook/assets/`) |
+| German, Spanish, French, Italian, Dutch, Polish, Portuguese, Chinese | `de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `zh` | `readme/` (`.gitbook.yaml`: `root: ./readme/`) |
 
-- **Never edit** `deutsch/`, `espanol/`, `french/`, `italian/`, `dutch/`, `polish/`,
-  `portuguese/` or `chinese/` on `main` by hand. The workflow **Sync Language Folders**
-  (`.github/workflows/sync-language-folders.yml`, every 30 minutes) overwrites them
-  from the language branches (`.github/scripts/language_bridge.py`).
-- Translate on the language branch, merge there, then wait for the next sync run or start
-  it manually (Actions > Sync Language Folders, optional `lang`).
+- A translation is published by merging its PR into the language branch. GitBook picks it
+  up through that space's Git Sync. There is no bridge workflow any more.
+- The folders `deutsch/`, `espanol/`, `french/`, `italian/`, `dutch/`, `polish/`,
+  `portuguese/`, `chinese/` on `main` are **frozen and obsolete**. Never edit them and never
+  read them as a source; use the language branch.
+- `gitbook-docs.yaml` on `main` is written by GitBook (site structure). In it the language
+  spaces have `directory: null`; do not edit it by hand.
 - Docs changes to a page need the matching change on every language branch.
-- Keep `language:` in `gitbook-docs.yaml` equal to the folder's language (English is `en`).
-- If `main` later requires pull requests, the bot `github-actions[bot]` needs a bypass or a PAT.
+- The search index (Docs Search Sync) reads the language pages from the language branches
+  (`readme/`) and English from `docbits/` on `main`.
 
 ## Video hosting
 

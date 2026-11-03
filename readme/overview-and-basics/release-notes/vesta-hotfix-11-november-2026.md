@@ -1,4 +1,6 @@
-# Hotfix de VESTA V2611 — 11 de noviembre de 2026
+# VESTA Versión de noviembre V2611
+
+## 11 de noviembre de 2026
 
 > **ID de versión:** V2611 · **Canal de publicación:** VESTA · **Estado:** Planificado · **Sandbox:** 4 de noviembre de 2026 · **Producción:** 11 de noviembre de 2026.
 

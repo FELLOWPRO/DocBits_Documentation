@@ -1,6 +1,6 @@
-# NOVA – 次要版本 2026 年 11 月 4 日
+# NOVA N2611 – 次要版本 2026 年 11 月 4 日
 
-**NOVA R1.1 发布安排：** 自 **2026 年 10 月 16 日** 起可在沙盒环境中使用。生产环境计划于 **2026 年 11 月 4 日** 发布。
+**NOVA N2611 发布安排：** 自 **2026 年 10 月 16 日** 起可在沙盒环境中使用。生产环境计划于 **2026 年 11 月 4 日** 发布。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.mp4" %}
 

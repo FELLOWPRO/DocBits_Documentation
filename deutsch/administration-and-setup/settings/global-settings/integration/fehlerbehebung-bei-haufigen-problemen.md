@@ -1,2 +1,0 @@
-# Fehlerbehebung bei häufigen Problemen
-

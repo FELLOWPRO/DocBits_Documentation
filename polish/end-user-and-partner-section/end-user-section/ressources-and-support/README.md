@@ -1,2 +1,0 @@
-# Zasoby i wsparcie
-

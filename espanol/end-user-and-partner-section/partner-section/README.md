@@ -1,2 +1,0 @@
-# Sección de socios
-

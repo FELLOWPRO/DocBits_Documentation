@@ -1,2 +1,0 @@
-# Filtri Personalizzati
-

@@ -1,4 +1,6 @@
-# Correctif VESTA V2611 — 11 novembre 2026
+# VESTA version de novembre V2611
+
+## 11 novembre 2026
 
 > **ID de version :** V2611 · **Canal de publication :** VESTA · **Statut :** Prévu · **Environnement de test :** 4 novembre 2026 · **Production :** 11 novembre 2026.
 

@@ -9,17 +9,17 @@ release, non ciò che è già stato rilasciato; ambito e date possono cambiare.
 Gli hotfix tra una release e l'altra sono documentati nelle
 [Note della versione](release-notes/README.md)._
 
-| ID release | Sandbox | Produzione |
-|---|---|---|
-| N2611 | 16 ottobre 2026 | 4 novembre 2026 |
-| V2611 | 4 novembre 2026 | 11 novembre 2026 |
-| V2612 | 8 dicembre 2026 | 15 dicembre 2026 |
-| V2702 | 10 febbraio 2027 | 17 febbraio 2027 |
-| N2703 | 17 febbraio 2027 | 3 marzo 2027 |
-| V2703 | 10 marzo 2027 | 17 marzo 2027 |
-| V2705 | 5 maggio 2027 | 12 maggio 2027 |
-| N2706 | 2 giugno 2027 | 16 giugno 2027 |
-| N2710 | 6 ottobre 2027 | 20 ottobre 2027 |
+| ID release | Canale | Sandbox | Produzione |
+|---|---|---|---|
+| N2611 | NOVA | 16 ottobre 2026 | 4 novembre 2026 |
+| V2611 | VESTA | 4 novembre 2026 | 11 novembre 2026 |
+| V2612 | VESTA | 8 dicembre 2026 | 15 dicembre 2026 |
+| V2702 | VESTA | 10 febbraio 2027 | 17 febbraio 2027 |
+| N2703 | NOVA | 17 febbraio 2027 | 3 marzo 2027 |
+| V2703 | VESTA | 10 marzo 2027 | 17 marzo 2027 |
+| V2705 | VESTA | 5 maggio 2027 | 12 maggio 2027 |
+| N2706 | NOVA | 2 giugno 2027 | 16 giugno 2027 |
+| N2710 | NOVA | 6 ottobre 2027 | 20 ottobre 2027 |
 
 Di seguito sono descritti solo i rilasci NOVA. I rilasci di correzione VESTA sono
 documentati nelle [Note della versione](release-notes/README.md) poco prima della pubblicazione.

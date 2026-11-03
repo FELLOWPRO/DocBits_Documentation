@@ -9,17 +9,17 @@ versión, no lo que ya se ha publicado; el alcance y las fechas pueden cambiar.
 Las correcciones urgentes entre versiones se documentan en las
 [Notas de versión](release-notes/README.md)._
 
-| ID de versión | Sandbox | Producción |
-|---|---|---|
-| N2611 | 16 de octubre de 2026 | 4 de noviembre de 2026 |
-| V2611 | 4 de noviembre de 2026 | 11 de noviembre de 2026 |
-| V2612 | 8 de diciembre de 2026 | 15 de diciembre de 2026 |
-| V2702 | 10 de febrero de 2027 | 17 de febrero de 2027 |
-| N2703 | 17 de febrero de 2027 | 3 de marzo de 2027 |
-| V2703 | 10 de marzo de 2027 | 17 de marzo de 2027 |
-| V2705 | 5 de mayo de 2027 | 12 de mayo de 2027 |
-| N2706 | 2 de junio de 2027 | 16 de junio de 2027 |
-| N2710 | 6 de octubre de 2027 | 20 de octubre de 2027 |
+| ID de versión | Canal | Sandbox | Producción |
+|---|---|---|---|
+| N2611 | NOVA | 16 de octubre de 2026 | 4 de noviembre de 2026 |
+| V2611 | VESTA | 4 de noviembre de 2026 | 11 de noviembre de 2026 |
+| V2612 | VESTA | 8 de diciembre de 2026 | 15 de diciembre de 2026 |
+| V2702 | VESTA | 10 de febrero de 2027 | 17 de febrero de 2027 |
+| N2703 | NOVA | 17 de febrero de 2027 | 3 de marzo de 2027 |
+| V2703 | VESTA | 10 de marzo de 2027 | 17 de marzo de 2027 |
+| V2705 | VESTA | 5 de mayo de 2027 | 12 de mayo de 2027 |
+| N2706 | NOVA | 2 de junio de 2027 | 16 de junio de 2027 |
+| N2710 | NOVA | 6 de octubre de 2027 | 20 de octubre de 2027 |
 
 A continuación solo se describen las versiones NOVA. Las versiones de corrección
 de errores VESTA se documentan en las [Notas de versión](release-notes/README.md) poco antes de su publicación.

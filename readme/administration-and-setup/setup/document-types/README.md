@@ -6,9 +6,9 @@ Die Seite zeigt zuerst die **Standard-Dokumenttypen**, die DocBits bereitstellt 
 
 <figure><img src="../../../.gitbook/assets/s50-document-types-overview-de.png" alt="Deutsche Standard-Dokumenttypen mit Aktivieren, Layouts, Feldern und Tabellen. Extraction ist ein fester Produktbegriff."><figcaption><p>Deutsche Standard-Dokumenttypen mit Aktivieren, Layouts, Feldern und Tabellen. Extraction ist ein fester Produktbegriff.</p></figcaption></figure>
 
-## Was Sie auf einer Karte tun können
+## Das können Sie auf einer Karte tun
 
-| Steuerelement | Funktion |
+| Bedienelement | Funktion |
 | --- | --- |
 | **Aktivieren** | Macht diesen Dokumenttyp in Ihrer Organisation verfügbar oder nicht verfügbar. Ein blauer Schalter ist eingeschaltet, ein grauer ausgeschaltet. |
 | **Extraktion** | Legt den Extraktionsmodus fest: **Flex**, wenn eingeschaltet, oder **Fix**, wenn ausgeschaltet. Der Schalter schaltet die Extraktion nicht einfach ein oder aus. Bewegen Sie den Mauszeiger über den Schalter, um den aktuellen Modus anzuzeigen. |
@@ -21,7 +21,7 @@ Die Seite zeigt zuerst die **Standard-Dokumenttypen**, die DocBits bereitstellt 
 | **E-Doc** | Öffnet die Einstellungen für elektronische Dokumente, sofern der Typ sie unterstützt. |
 | **Untertypen von Dokumenten** | Öffnet die Untertypen dieses Dokumenttyps. |
 
-Je nach den Funktionen Ihrer Organisation sehen Sie möglicherweise weitere Links, etwa zu Validierungs- oder Transformationsregeln. Wählen Sie den Link auf der Karte des Typs, den Sie ändern möchten.
+Je nach Funktionen Ihrer Organisation sehen Sie weitere Links, etwa für Validierungs- oder Transformationsregeln. Wählen Sie den Link auf der Karte des Typs, den Sie ändern möchten.
 
 ## Felder und Erkennungseinstellungen bearbeiten
 
@@ -31,7 +31,7 @@ Jede Feldzeile enthält Steuerelemente wie **Pflichtfeld**, **Schreibgeschützt*
 
 <figure><img src="../../../.gitbook/assets/s150-document-types-invoice-fields-de.png" alt="Felder des Dokumenttyps Rechnung in der deutschen Verwaltung."><figcaption><p>Felder des Dokumenttyps Rechnung in der deutschen Verwaltung.</p></figcaption></figure>
 
-## Benutzerdefinierten Dokumenttyp erstellen
+## Einen eigenen Dokumenttyp anlegen
 
 Scrollen Sie zu **Benutzerdefinierte Dokumenttypen** und klicken Sie auf **+ Neu**. Folgen Sie der Anleitung [Dokumenttypen hinzufügen/bearbeiten](../../settings/global-settings/document-types/adding-editing-document-types.md), um den neuen Typ einzurichten.
 

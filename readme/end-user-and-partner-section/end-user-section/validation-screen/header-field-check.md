@@ -93,3 +93,4 @@ Im Bericht ist ein solches Feld rot markiert. Die Spalte **Aktion** zeigt den St
 * **Aktion:** jeder Schritt, den der Wert durchlaufen hat, mit dem Symbol seiner Quelle. Der Schritt, aus dem der aktuelle Wert stammt, ist hervorgehoben. Beim Darüberfahren sehen Sie, was jeder Schritt getan hat, von welchem Wert zu welchem.
 * **Grund:** der Status des Feldes. Das (i)-Symbol erklärt, warum der Wert so ist, wie er ist. Steht dort *Feld gab es nicht*, war das Feld auf dem Dokument nicht vorhanden.
 * Lange Werte werden mit … gekürzt — beim Darüberfahren erscheint der volle Wert.
+* **Leere optionale Felder:** Unter der Tabelle nennt DocBits, wie viele optionale Felder noch leer sind. Mit **Anzeigen** werden sie als Zeilen eingeblendet, sodass Sie sie mit dem Dokument abgleichen können; **Ausblenden** fasst sie wieder zur Anzahl zusammen. Leere Pflichtfelder sind immer aufgeführt.

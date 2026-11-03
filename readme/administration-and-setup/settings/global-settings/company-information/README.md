@@ -1,10 +1,22 @@
 # Informations sur l’entreprise
 
+<figure><img src="../../../../.gitbook/assets/company_information_fr.png" alt="Formulaire Informations sur l'entreprise en français dans l'organisation de test DocBits Sandbox"><figcaption><p>Informations sur l'entreprise : modifiez le nom, l'adresse, les identifiants légaux et les coordonnées de l'organisation, puis sélectionnez Enregistrer.</p></figcaption></figure>
+
 ## Tutoriel vidéo : entreprise, abonnement et audit
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/company-subscription-audit-admin/v2/fr.mp4" %}
 Informations sur l'entreprise, formule d'abonnement et journaux d'audit dans DocBits
 {% endembed %}
+
+## Domaines de messagerie
+
+Les administrateurs de l'organisation peuvent ouvrir **Paramètres → Informations sur l'entreprise → Domaines de messagerie** pour gérer les domaines utilisés pour l'attribution automatique des organisations. Lorsqu'un utilisateur se connecte avec Microsoft ou Google et qu'il n'est pas encore membre d'une organisation, DocBits peut le rattacher à cette organisation si son adresse e-mail utilise l'un des domaines listés. Un domaine ne peut appartenir qu'à une seule organisation.
+
+<figure><img src="../../../../.gitbook/assets/company_email_domains_fr.png" alt="Section Domaines de messagerie dépliée avec la liste des domaines vide, le champ de saisie et le bouton Ajouter un domaine"><figcaption><p>La section Domaines de messagerie en français avant l'ajout d'un domaine. Saisissez le domaine de l'entreprise, puis sélectionnez Ajouter un domaine.</p></figcaption></figure>
+
+Saisissez uniquement le domaine, par exemple `example.com`, dans le champ, puis sélectionnez **Ajouter un domaine** ou appuyez sur Entrée. Le premier domaine devient le domaine principal. Si d'autres domaines sont listés, utilisez **Définir comme principal** sur une autre ligne pour le modifier, ou l'icône corbeille pour supprimer un domaine. Les erreurs, comme un domaine invalide, un fournisseur de messagerie personnel ou un domaine déjà attribué ailleurs, s'affichent sous le champ. **Aucun domaine n'a encore été attribué** signifie que cette organisation n'a aucune règle de domaine.
+
+Avant d'ajouter un domaine, vérifiez quelle organisation doit recevoir les nouvelles connexions. Pour gérer les appartenances existantes, continuez avec [Utilisateurs](../groups-users-and-permissions/users/README.md).
 
 La vidéo présente les informations et les préférences de l'entreprise, la formule d'abonnement, l'activité de connexion et les journaux d'audit.
 

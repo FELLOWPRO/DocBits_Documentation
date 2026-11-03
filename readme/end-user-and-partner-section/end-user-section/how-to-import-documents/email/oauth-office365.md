@@ -4,19 +4,17 @@
 
 Aquí solo necesitas ingresar la suborganización deseada y presionar 'Autenticar'
 
-![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-authenticate-es-20261009.png" alt="Cuadro de diálogo Configuración del servidor de correo electrónico con el protocolo OAuth Office365, el Enrutamiento de documentos y el botón Autenticar."><figcaption><p>Elige el enrutamiento y presiona Autenticar.</p></figcaption></figure>
 
 Serás llevado a esta página de Microsoft y necesitarás ingresar un código.
 
-![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K_4ES2e5ekPY4Ghhwxym-uRKz_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
-
 Este código se puede encontrar haciendo clic en DocBits y el código se mostrará allí como se muestra a continuación, simplemente copia el código e ingrésalo en la página de Microsoft. Después necesitarás ingresar tus propias credenciales de Microsoft.
 
-![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-code-es-20261009.png" alt="Cuadro de diálogo Configuración del servidor de correo electrónico con el código de autenticación de Microsoft y el botón Copiar, junto al botón Finalizar la autenticación."><figcaption><p>El código de Microsoft se muestra en DocBits.</p></figcaption></figure>
 
-Presiona el botón **FINALIZAR AUTENTICACIÓN** y serás llevado a este menú
+Presiona el botón **Finalizar la autenticación** y serás llevado a este menú
 
-![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-options-es-20261009.png" alt="Cuadro de diálogo Configuración del servidor de correo electrónico después de la autenticación, con las opciones Usar carpeta, Usar buzón compartido y Mover correos electrónicos a otra carpeta."><figcaption><p>Opciones después de finalizar la autenticación.</p></figcaption></figure>
 
 **Usar Carpeta**
 

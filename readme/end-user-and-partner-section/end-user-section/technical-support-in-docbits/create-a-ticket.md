@@ -6,6 +6,6 @@ DocBits Tutorial voor ondersteuningstickets: rapporteer bugs, voeg bestanden toe
 
 Zodra u erop klikt, wordt het volgende ticketformulier aan u getoond.
 
-![](https://lh7-us.googleusercontent.com/DxlkEirrpbtGXs8R6gHD9MtaUqd5mY9L1ya1PdGIwZIHnuoj0wflDML6ZjYzrHxqXos-0uwhMAJI69_zhO92dNWrwAmYpPwAe2C8sHvo0Tf8f8PG7SktBv4JiY6QfxxDNtO55S3xmQsze48ZophpDPc)
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-form-nl-20261009.png" alt="Validatiescherm met het formulier Ondersteuningsticket geopend: Naam, E-mail, Onderwerp, Prioriteit, Bericht, Schermafbeelding en Bestand uploaden."><figcaption><p>Het formulier 'Ondersteuningsticket'.</p></figcaption></figure>
 
-Hier vult u uw gegevens in en beschrijft u de fout. U kunt ook, indien van toepassing, een screenshot van het probleem bijvoegen en een relevant bestand toevoegen.
+Hier vult u uw gegevens in en beschrijft u de fout. U kunt ook, indien van toepassing, een schermafbeelding van het probleem bijvoegen en een relevant bestand toevoegen.

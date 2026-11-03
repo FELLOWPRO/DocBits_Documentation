@@ -50,10 +50,12 @@ Sélectionnez **Créer** dans la configuration dépliée pour ajouter une associ
 * **Champ de recherche** est la colonne du jeu de données à parcourir.
 * **Champ de validation** est le champ du document qui reçoit le résultat.
 * **Champ parent** vérifie éventuellement le résultat par rapport à un champ associé.
-* **Opérateur de recherche** détermine la manière dont le texte est comparé. **Smart** ignore les espaces et la ponctuation ; les autres choix incluent Contient, Commence par, Se termine par et Exact.
+* **Opérateur de recherche** détermine la manière dont le texte est comparé. **Smart** ignore les espaces et la ponctuation : les valeurs qui ne diffèrent que par la mise en forme correspondent quand même. **Smart Exact** applique la même normalisation mais ne renvoie un enregistrement que si la valeur entière est identique : une correspondance partielle ne renvoie aucun résultat. Les autres choix sont **Contient**, **Commence par**, **Se termine par** et **Exact**.
 * **Déclenchement automatique** lance une recherche dès que ce champ est renseigné. **Recherche possible** laisse le champ participer aux recherches et permet une recherche manuelle pendant la validation.
 
 Sélectionnez **Créer** pour ajouter l'association. Utilisez le menu à trois points **Actions** d'une ligne pour modifier ou supprimer une association modifiable. Les associations par défaut peuvent uniquement être consultées.
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-fr.png" alt="Boîte de dialogue Créer des champs de données maîtres avec la liste Opérateur de recherche ouverte : Smart, Smart Exact, Contient, se termine par, exact, commence par"><figcaption><p>Choisissez <strong>Smart Exact</strong> lorsque la valeur entière doit correspondre après avoir ignoré les espaces et la ponctuation.</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-35-create-field-fr-20261101.png" alt="Formulaire vide Créer des champs de données maîtres avec Champ de recherche, Champ de validation, Champ parent, Opérateur de recherche, Déclenchement automatique, Recherche possible, Annuler et Créer"><figcaption><p>Choisissez la manière dont une colonne du jeu de données est associée à un champ du document.</p></figcaption></figure>
 

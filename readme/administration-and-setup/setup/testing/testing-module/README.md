@@ -1,5 +1,21 @@
 # Testing-module
 
+## Video: de eerste browsertest uitvoeren
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/nl.mp4" %}
+
+[Nederlandse video met ondertitels, hoofdstukken en sprekertekst openen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/testing-module-overview-preview-admin/v1/nl.html).
+
+**Duur: 2:23.** Nederlandse interface, gesproken uitleg en ondertitels.
+
+De uitleg gebruikt de ingebouwde **Live testing self-check** in de ontwikkelomgeving: bekijk de drie stappen, maak een benoemde invoer aan en sla deze op, start de browsertest en open het opgeslagen logboek van dezelfde uitvoering. Het sjabloon heeft geen parameters nodig en wijzigt geen bedrijfsgegevens. Een geslaagde zelftest bevestigt deze drie controles; factuurextractie, goedkeuring en ERP-export zijn daarmee niet aangetoond.
+
+**Reviewversie:** volledige menselijke luisterbeoordeling en inhoudelijke acceptatie staan nog open.
+
+{% hint style="info" %}
+**Controleer het opgeslagen resultaat.** In de Engelse en Duitse opnamen van versie 11.21.2 gaf de resultaatmelding van een invoer een blokkering aan, terwijl de uitvoering en het opgeslagen logboek geslaagd waren. Opnieuw openen herstelde de bijpassende melding. Controleer bij een verschil het logboek van diezelfde uitvoering. Opnieuw openen is een waargenomen tijdelijke oplossing, geen bevestigde foutcorrectie.
+{% endhint %}
+
 ## Waar de Testing-module voor dient
 
 De module **Testing** voert browsertests uit binnen uw eigen aangemelde DocBits-sessie. Een test bedient de echte

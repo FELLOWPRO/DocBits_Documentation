@@ -22,7 +22,7 @@ site:
       title: 🇪🇸 Español
       path: espanol
       content:
-        directory: ./espanol
+        directory: null
         language: es
     - type: space
       key: space-4
@@ -31,28 +31,28 @@ site:
         fr: Français
       path: french
       content:
-        directory: ./french
+        directory: null
         language: fr
     - type: space
       key: space-5
       title: 🇮🇹 Italiano
       path: italian
       content:
-        directory: ./italian
+        directory: null
         language: it
     - type: space
       key: space-6
       title: 🇵🇹 Português
       path: portuguese
       content:
-        directory: ./portuguese
+        directory: null
         language: pt
     - type: space
       key: space-7
       title: 🇵🇱 Polski
       path: polish
       content:
-        directory: ./polish
+        directory: null
         language: pl
     - type: space
       key: space-8

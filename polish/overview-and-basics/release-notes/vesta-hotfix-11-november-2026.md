@@ -1,4 +1,6 @@
-# Poprawka VESTA V2611 — 11 listopada 2026 r.
+# VESTA Wydanie listopadowe V2611
+
+## 11 listopada 2026 r.
 
 > **Release ID:** V2611 · **Kanał wydania:** VESTA · **Status:** Planowane · **Sandbox:** 4 listopada 2026 r. · **Produkcja:** 11 listopada 2026 r.
 

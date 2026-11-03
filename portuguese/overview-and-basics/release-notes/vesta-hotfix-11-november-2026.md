@@ -1,4 +1,6 @@
-# Correção do VESTA V2611 — 11 de novembro de 2026
+# VESTA Versão de novembro V2611
+
+## 11 de novembro de 2026
 
 > **ID da versão:** V2611 · **Canal de lançamento:** VESTA · **Estado:** Planeado · **Sandbox:** 4 de novembro de 2026 · **Produção:** 11 de novembro de 2026.
 

@@ -17,7 +17,9 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ---
 
-## N2611 — Sandbox 16 de outubro de 2026 · Produção 4 de novembro de 2026
+## NOVA Versão de novembro N2611
+
+Sandbox 16 de outubro de 2026 · Produção 4 de novembro de 2026
 
 **Regras de transformação e layouts**
 
@@ -160,7 +162,9 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ---
 
-## N2703 — Sandbox 17 de fevereiro de 2027 · Produção 3 de março de 2027
+## NOVA Versão de março N2703
+
+Sandbox 17 de fevereiro de 2027 · Produção 3 de março de 2027
 
 **Aprovação e correspondência de ordens de compra**
 
@@ -200,7 +204,9 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ---
 
-## N2706 — Sandbox 2 de junho de 2027 · Produção 16 de junho de 2027
+## NOVA Versão de junho N2706
+
+Sandbox 2 de junho de 2027 · Produção 16 de junho de 2027
 
 **Gestor de regras da contabilidade automática**
 
@@ -236,7 +242,9 @@ documentados nas [Notas de versão](release-notes/README.md)._
 
 ---
 
-## N2710 — Sandbox 6 de outubro de 2027 · Produção 20 de outubro de 2027
+## NOVA Versão de outubro N2710
+
+Sandbox 6 de outubro de 2027 · Produção 20 de outubro de 2027
 
 **Auto Accounting no ecrã de aprovação**
 

@@ -18,7 +18,9 @@ między wydaniami są udokumentowane w
 
 ---
 
-## N2611 — Sandbox 16 października 2026 · Produkcja 4 listopada 2026
+## NOVA Wydanie listopadowe N2611
+
+Sandbox 16 października 2026 · Produkcja 4 listopada 2026
 
 **Reguły transformacji i layouty**
 
@@ -152,7 +154,9 @@ między wydaniami są udokumentowane w
 
 ---
 
-## N2703 — Sandbox 17 lutego 2027 · Produkcja 3 marca 2027
+## NOVA Wydanie marcowe N2703
+
+Sandbox 17 lutego 2027 · Produkcja 3 marca 2027
 
 **Zatwierdzanie i dopasowywanie zamówień zakupowych**
 
@@ -191,7 +195,9 @@ między wydaniami są udokumentowane w
 
 ---
 
-## N2706 — Sandbox 2 czerwca 2027 · Produkcja 16 czerwca 2027
+## NOVA Wydanie czerwcowe N2706
+
+Sandbox 2 czerwca 2027 · Produkcja 16 czerwca 2027
 
 **Menedżer reguł automatycznego rozliczania**
 
@@ -226,7 +232,9 @@ między wydaniami są udokumentowane w
 
 ---
 
-## N2710 — Sandbox 6 października 2027 · Produkcja 20 października 2027
+## NOVA Wydanie październikowe N2710
+
+Sandbox 6 października 2027 · Produkcja 20 października 2027
 
 **Auto Accounting na ekranie zatwierdzania**
 

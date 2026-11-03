@@ -12,9 +12,17 @@ verschieben. Hotfixes zwischen den Releases sind in den
 | Release-ID | Sandbox | Produktion |
 |---|---|---|
 | N2611 | 16. Oktober 2026 | 4. November 2026 |
+| V2611 | 4. November 2026 | 11. November 2026 |
+| V2612 | 8. Dezember 2026 | 15. Dezember 2026 |
+| V2702 | 10. Februar 2027 | 17. Februar 2027 |
 | N2703 | 17. Februar 2027 | 3. März 2027 |
+| V2703 | 10. März 2027 | 17. März 2027 |
+| V2705 | 5. Mai 2027 | 12. Mai 2027 |
 | N2706 | 2. Juni 2027 | 16. Juni 2027 |
 | N2710 | 6. Oktober 2027 | 20. Oktober 2027 |
+
+Unten werden nur die NOVA-Releases beschrieben. VESTA-Bugfix-Releases werden
+kurz vor ihrer Veröffentlichung in den [Release-Notizen](release-notes/README.md) dokumentiert.
 
 ---
 
@@ -300,6 +308,7 @@ Sandbox 6. Oktober 2027 · Produktion 20. Oktober 2027
      by the docbits-roadmap skill; release IDs and dates updated to the new
      channel + YYMM format on 2026-11-03 from CRITICAL-DEV-DOCS
      Release Management/Release_Schedule.md (R1.1 = N2611, R1.2 = N2703,
-     R1.3 = N2706, R1.4 = N2710). NOVA releases up to N2710 only.
+     R1.3 = N2706, R1.4 = N2710). Table lists NOVA and VESTA up to N2710;
+     themes are written for NOVA releases only.
      Themes only; ticket keys, customer names and internal work
      are deliberately left out. Rerun the skill to refresh. -->

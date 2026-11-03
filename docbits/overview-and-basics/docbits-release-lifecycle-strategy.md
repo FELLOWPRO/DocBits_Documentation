@@ -1,8 +1,8 @@
 # DocBits Release Lifecycle Strategy
 
-With the rollout of the upcoming minor release R1.1,&#x20;DocBits will introduce a new release lifecycle strategy based on two release channels: VESTA and NOVA.
+With the rollout of the minor release N2611,&#x20;DocBits will introduce a new release lifecycle strategy based on two release channels: VESTA and NOVA.
 
-**NOVA** is the channel for introducing new major and minor releases, such as **Rx** and **Rx.y**. **VESTA** continues to provide the existing production release.
+**NOVA** is the channel for introducing new major and minor releases, such as **N2611** and **N2703**. **VESTA** continues to provide the existing production release.
 
 {% hint style="success" %}
 **Important: One URL for both VESTA and NOVA**
@@ -90,7 +90,7 @@ The planned cadence differs between major and minor releases introduced through 
 
 #### Major and minor releases through NOVA
 
-FELLOWPRO currently plans a cycle of approximately **3–4 months for major and minor releases** introduced through the NOVA release channel, such as **Rx** and **Rx.y**. This estimate applies to the release lifecycle described above, including the subsequent rollover into VESTA and recycling of NOVA for the next release. It does not describe the frequency of hotfixes.
+FELLOWPRO currently plans a cycle of approximately **3–4 months for major and minor releases** introduced through the NOVA release channel, such as **N2611** and **N2703**. This estimate applies to the release lifecycle described above, including the subsequent rollover into VESTA and recycling of NOVA for the next release. It does not describe the frequency of hotfixes.
 
 This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date. The timing of each rollover and the recycling of NOVA depends on both **release readiness and acceptance of the planned transition by all customers**. If additional time is needed to achieve release readiness, address customer concerns, or obtain acceptance from every customer, the cycle will be extended and may take longer than four months.
 

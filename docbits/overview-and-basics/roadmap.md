@@ -8,10 +8,6 @@ themes describe what is planned for the release, not what has already shipped;
 scope and dates can move. Hotfixes between releases are documented in the
 [Release Notes](release-notes/README.md)._
 
-**How to read a release ID:** **N** stands for NOVA, followed by the year and
-month of the production release. **N2703**, for example, is the NOVA release
-planned for March 2027. Releases are no longer numbered (R1.1, R1.2 and so on).
-
 | Release ID | Sandbox | Production |
 |---|---|---|
 | N2611 | 16 October 2026 | 4 November 2026 |

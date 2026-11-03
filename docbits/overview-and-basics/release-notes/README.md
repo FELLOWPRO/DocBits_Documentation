@@ -4,8 +4,6 @@ Screenshots illustrate the release described in each section. They are historica
 
 **NOVA N2611 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
 
-**Release IDs:** since November 2026 a release is named by its channel and the year and month of its production release: **N2611** is the NOVA release of November 2026, **V2611** the VESTA release of November 2026. Earlier releases keep their former names (for example R1.0.15).
-
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.mp4" %}
 
 **DocBits is the product. NOVA names the release cycle.** [Watch the film about the new DocBits release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.mp4) · [Subtitles](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/en.vtt).

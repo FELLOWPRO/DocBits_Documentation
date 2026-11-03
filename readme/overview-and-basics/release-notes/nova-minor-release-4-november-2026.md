@@ -1,4 +1,6 @@
-# NOVA N2611 – Rilascio minore 4 novembre 2026
+# NOVA Rilascio di novembre N2611
+
+## 4 novembre 2026
 
 **Disponibilità di NOVA N2611:** Disponibile nell’ambiente di test dal **16 ottobre 2026**. Il rilascio in produzione è previsto per il **4 novembre 2026**.
 

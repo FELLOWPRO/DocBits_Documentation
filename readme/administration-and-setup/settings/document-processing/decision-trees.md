@@ -4,6 +4,14 @@
 Come creare un albero decisionale in DocBits (condizioni, criteri, test ed esportazione)
 {% endembed %}
 
+## Video guida
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/it.mp4" %}
+
+*2:19 min · Interfaccia del prodotto in italiano · Voce e scena iniziale generate con IA*
+
+[Sottotitoli (VTT)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/it.vtt) · [Scarica il video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/product-tours/decision-trees/2026-10-28/v1/it.mp4)
+
 ## Panoramica
 
 Gli alberi decisionali sono una funzionalità potente che consente di automatizzare l'instradamento e il processo decisionale in base a regole predefinite. Questa funzionalità è particolarmente utile in ambienti complessi in cui è necessario valutare diverse condizioni per determinare il corretto corso d'azione, come l'assegnazione dei prezzi, la determinazione delle quantità o l'instradamento dei documenti.
@@ -120,3 +128,31 @@ Il designer dell'albero decisionale include una funzionalità di test per conval
 * **Flussi di lavoro di approvazione** — instrada le fatture a diversi approvatori in base a soglie di importo (ad esempio, gli importi superiori a 10.000 richiedono l'approvazione del responsabile).
 * **Regole di convalida** — convalida automaticamente i valori dei campi e contrassegna i documenti che non soddisfano i criteri configurati.
 * **Assegnazione sequenziale** — assegna i documenti agli utenti in un ordine specifico in base alle condizioni.
+
+## Schermate
+
+<figure><img src="../../../.gitbook/assets/decision-trees-list-it.png" alt="Elenco degli alberi decisionali"><figcaption><p>Elenco degli alberi decisionali</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-name-it.png" alt="Creare un albero: inserire il nome"><figcaption><p>Creare un albero: inserire il nome</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-create-doctype-it.png" alt="Creare un albero: scegliere il tipo di documento"><figcaption><p>Creare un albero: scegliere il tipo di documento</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-designer-empty-it.png" alt="Designer vuoto con una riga di regola"><figcaption><p>Designer vuoto con una riga di regola</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-source-it.png" alt="Regola: scegliere l'origine"><figcaption><p>Regola: scegliere l'origine</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-field-it.png" alt="Regola: scegliere il campo del documento"><figcaption><p>Regola: scegliere il campo del documento</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-operator-it.png" alt="Regola: scegliere l'operatore"><figcaption><p>Regola: scegliere l'operatore</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-rule-it.png" alt="Regola: inserire il valore di confronto"><figcaption><p>Regola: inserire il valore di confronto</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-policy-it.png" alt="Scegliere la policy dell'albero"><figcaption><p>Scegliere la policy dell'albero</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-return-type-it.png" alt="Risultato: scegliere il tipo di ritorno"><figcaption><p>Risultato: scegliere il tipo di ritorno</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-result-it.png" alt="Risultato: inserire il valore di ritorno"><figcaption><p>Risultato: inserire il valore di ritorno</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-input-it.png" alt="Testare l'albero con un valore di esempio"><figcaption><p>Testare l'albero con un valore di esempio</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/decision-tree-test-result-it.png" alt="Risultato del test: numero di righe corrispondenti"><figcaption><p>Risultato del test: numero di righe corrispondenti</p></figcaption></figure>

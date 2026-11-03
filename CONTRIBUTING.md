@@ -24,7 +24,6 @@ actual delivered images, alternate text, captions, links, and relevant media.
 
 Edit the page selected by **readme/SUMMARY.md** on its language branch:
 **de**, **es**, **fr**, **it**, **nl**, **pl**, **pt**, or **zh**.
-After review and merge, run **Sync Language Folders** with that language code.
-The bridge copies the selected pages and assets into the corresponding
-language directory on main. Verify the new content on the ordinary public URL
-before confirming publication in Jira.
+After review and merge, GitBook picks the change up directly: each language
+space syncs from its own branch. Verify the new content on the ordinary public
+URL before confirming publication in Jira.

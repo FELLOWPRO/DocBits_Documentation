@@ -1,4 +1,4 @@
-# Status linii zamówienia PO
+# Status zużytej linii zamówienia PO
 
 **Status zużytej linii zamówienia** koloruje linie zamówienia zakupu w widoku dopasowania zgodnie z tym, jaka część każdej linii została już dopasowana. Włącz to ustawienie dla typu dokumentu faktury, jeśli Twój zespół chce szybko rozpoznawać niewykorzystane, częściowo wykorzystane i w pełni wykorzystane linie PO. Kolor jest pomocą wizualną; przed podjęciem decyzji, czy linię można dopasować ponownie, sprawdź **Dopasowana ilość** oraz wybraną kolumnę ilości PO.
 

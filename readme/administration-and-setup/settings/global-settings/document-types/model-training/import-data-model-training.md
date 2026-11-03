@@ -1,4 +1,4 @@
-# Importazione dei dati: addestramento del modello
+# Importare documenti di esempio per l'addestramento del modello
 
 ## Preparare, importare e controllare documenti campione
 

@@ -57,6 +57,14 @@ Otwórz zarządzanie dostawcami. Przed zaproszeniem sprawdź firmę, grupę dost
 
 <figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-pl-20261031.png" alt="Panel wewnętrzny z Wszyscy dostawcy, Oczekujące na zatwierdzenie, Oczekująca rejestracja, wyszukiwaniem i paskiem narzędzi. Wiersze istniejących dostawców są zasłonięte."><figcaption><p>Panel wewnętrzny z Wszyscy dostawcy, Oczekujące na zatwierdzenie, Oczekująca rejestracja, wyszukiwaniem i paskiem narzędzi. Wiersze istniejących dostawców są zasłonięte.</p></figcaption></figure>
 
+## Szczegóły dostawcy (widok wewnętrzny)
+
+Kliknij wiersz dostawcy w **Panelu dostawcy**, aby otworzyć widok **Szczegóły Dostawcy** dla tego dostawcy. Ten widok wewnętrzny pokazuje te same sześć sekcji, które dostawca wypełnia podczas rejestracji — **Szczegóły Dostawcy**, **Dane Adresowe**, **Kontakt z Dostawcą**, **Finanse Dostawcy**, **Zakup Dostawcy** i **Certyfikaty Dostawcy** — wraz z plakietką aktualnego **statusu** dostawcy (w prawym górnym rogu, np. **STATUS: OCZEKUJĄCE NA ZATWIERDZENIE**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-pl-20261009.png" alt="Widok wewnętrzny „Szczegóły Dostawcy” fikcyjnego dostawcy w interfejsie DocBits w języku polskim"><figcaption><p>Widok wewnętrzny „Szczegóły Dostawcy”: po lewej sześć sekcji rejestracji, w prawym górnym rogu status dostawcy. Wszystkie nazwy i dane to wymyślone wartości przykładowe (przykładowa organizacja Musterfirma GmbH, przykładowy dostawca Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Użyj tego widoku, aby przejrzeć profil dostawcy, uzupełnić lub poprawić brakujące dane oraz przygotować decyzję o zatwierdzeniu. Opis każdej sekcji znajdziesz na stronie [Rejestracja Dostawcy](supplier-registration.md). Przycisk powrotu u góry widoku wraca do **Panelu dostawcy** bez zapisywania zmian.
+
 <figure><img src="../../../.gitbook/assets/dbdc-49-invitation-pl-20261031.png" alt="Pusty formularz Dodaj dostawcę z Grupa dostawców, Nazwa dostawcy, polami imienia i nazwiska osoby kontaktowej, adresem e-mail oraz Anulować i Zapisz. Lewe pole dotyczy imienia, prawe nazwiska; aplikacja skraca tutaj długie etykiety. Zapisz zleca wysłanie zaproszenia do rejestracji; na potrzeby zrzutu użyto tylko Anulować."><figcaption><p>Pusty formularz Dodaj dostawcę z Grupa dostawców, Nazwa dostawcy, polami imienia i nazwiska osoby kontaktowej, adresem e-mail oraz Anulować i Zapisz. Lewe pole dotyczy imienia, prawe nazwiska; aplikacja skraca tutaj długie etykiety. Zapisz zleca wysłanie zaproszenia do rejestracji; na potrzeby zrzutu użyto tylko Anulować.</p></figcaption></figure>
 
 ## Administrator: otwieranie szczegółów z panelu dostawców

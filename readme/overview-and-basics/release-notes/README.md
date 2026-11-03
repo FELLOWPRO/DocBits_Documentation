@@ -12,11 +12,13 @@ Escolha um canal de lançamento para ver o que muda para a sua equipa. **O ciclo
 
 | Canal de lançamento | Notas de lançamento | Foco |
 | --- | --- | --- |
-| **NOVA N2611 – Versão Menor** | [Novidades para clientes](nova-minor-release-4-november-2026.md) · **4 de novembro de 2026 (prevista)** | Todas as antigas funcionalidades beta da VESTA, além de novas capacidades e extensões em comparação com a VESTA R1.0.15. |
-| **VESTA V2611 — Próximo Hotfix (planeado)** | [11 de novembro de 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduz todas as antigas funcionalidades beta da VESTA no conjunto de funcionalidades regular da VESTA. |
+| **NOVA Versão de novembro N2611** | [Novidades para clientes](nova-minor-release-4-november-2026.md) · **4 de novembro de 2026 (prevista)** | Todas as antigas funcionalidades beta da VESTA, além de novas capacidades e extensões em comparação com a VESTA R1.0.15. |
+| **VESTA Versão de novembro V2611 (planeada)** | [11 de novembro de 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduz todas as antigas funcionalidades beta da VESTA no conjunto de funcionalidades regular da VESTA. |
 | **VESTA — Lançamento de Hotfix** | [14 de outubro de 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Melhorias e correções para a versão de produção atual da VESTA. |
 
-## NOVA N2611 – Versão Menor 4 de novembro de 2026
+## NOVA Versão de novembro N2611
+
+### 4 de novembro de 2026
 
 ### O que a sua equipa ganha com a NOVA
 

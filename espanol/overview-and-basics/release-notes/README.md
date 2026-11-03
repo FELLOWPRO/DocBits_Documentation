@@ -12,11 +12,13 @@ Elija un canal de versiones para ver qué cambios se aplican a su equipo. **El c
 
 | Canal de versiones | Notas de la versión | Enfoque |
 | --- | --- | --- |
-| **NOVA N2611 – Versión menor** | [Novedades para clientes](nova-minor-release-4-november-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
-| **VESTA V2611 — Siguiente hotfix (planificado)** | [11 de noviembre de 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduce todas las funciones que antes estaban en beta en VESTA en el conjunto de funciones regular de VESTA. |
+| **NOVA Versión de noviembre N2611** | [Novedades para clientes](nova-minor-release-4-november-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
+| **VESTA Versión de noviembre V2611 (planificado)** | [11 de noviembre de 2026 — V2611](vesta-hotfix-11-november-2026.md) | Introduce todas las funciones que antes estaban en beta en VESTA en el conjunto de funciones regular de VESTA. |
 | **VESTA — Versión hotfix** | [14 de octubre de 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Mejoras y correcciones para la versión de producción actual de VESTA. |
 
-## NOVA N2611 – Versión menor 4 de noviembre de 2026
+## NOVA Versión de noviembre N2611
+
+### 4 de noviembre de 2026
 
 ### Qué obtiene su equipo con NOVA
 

@@ -1,20 +1,21 @@
 # AI Model
 
-## Overview
+Choose the default AI model for extraction in **Settings → Document Processing → Classification and Extraction → General → Extraction**. Scroll to **AI Model** below the extraction options. The selector displays the current choice; in the synthetic **DocBits Documentation Test A** organization it is **Fast**.
 
-The **AI Model** setting allows you to define which AI model is used by default for **field extraction** and **table extraction** during document processing.\
-In this section, you can review the token cost for each model and see which model is currently assigned to each supplier.
+<figure><img src="../../../../.gitbook/assets/dbdc-150-ai-model-overview-en.png" alt="English Classification and Extraction settings in Test A showing the AI Model selector set to Fast and an empty supplier assignment table"><figcaption><p>The AI Model selector sits below the Extraction settings. The supplier table is empty in this test organization.</p></figcaption></figure>
 
-## How to Access
+## Choose an option
 
-1.  Navigate to **Settings** → **Document Processing** → **Classification and Extraction**
+1. Open the **AI Model** selector. The current Sandbox menu offers **Full**, **Fast**, **Nexus**, **Nexus Flash**, **Auto**, and **Auto Nexus**. Available options may vary with your organization's deployment.
+2. Check the **info** icon beside the setting for the token cost of the selected option. In the captured Test A state, the tooltip for **Fast** reads **Costs 1 token per document**. Confirm current costs in your own organization before changing a setting.
+3. If you are responsible for organization-wide extraction settings, choose the option approved for your documents. Changing the selection saves an organization setting; this guide's screenshots opened the menu without changing or saving a value.
 
     <figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt="Settings navigation with Document Processing and Classification and Extraction highlighted"><figcaption><p>Open <strong>Settings → Document Processing → Classification and Extraction</strong>.</p></figcaption></figure>
 2.  Scroll down to the **Table Extraction** section
 
     <figure><img src="../../../../.gitbook/assets/ai_model_1.png" alt="Extraction section with the Table Extraction card and the AI Model setting"><figcaption><p>The <strong>Extraction</strong> section contains the <strong>AI Model</strong> setting and the supplier assignment table.</p></figcaption></figure>
 
-## AI Model Options
+## Supplier-specific settings
 
 DocBits offers six AI model options for field and table extraction. They differ in the balance between **extraction accuracy**, **processing speed**, and **token cost per document** — so you can match the option to the kind of documents you process. Hover over the info icon next to the setting to see the token cost for the currently selected option. If no model is set for a supplier, unset means Fast is used.
 

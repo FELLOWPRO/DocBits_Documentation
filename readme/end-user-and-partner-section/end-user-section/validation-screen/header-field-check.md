@@ -93,3 +93,4 @@ W raporcie takie pole jest oznaczone na czerwono. Kolumna **Akcja** pokazuje rek
 * **Akcja:** każdy krok, przez który przeszła wartość, z ikoną jego źródła. Krok, z którego pochodzi bieżąca wartość, jest podświetlony. Najedź kursorem, aby zobaczyć, co zrobił każdy krok — z jakiej wartości na jaką.
 * **Powód:** status pola. Ikona (i) wyjaśnia, dlaczego wartość jest taka, jaka jest. Jeśli widnieje *Pole nie istniało*, pola nie było na dokumencie.
 * Długie wartości są skracane znakiem … — najedź kursorem, aby zobaczyć pełną wartość.
+* **Puste pola opcjonalne:** pod tabelą DocBits podaje, ile pól opcjonalnych jest jeszcze pustych. **Pokaż** wyświetla je jako wiersze, aby można je było porównać z dokumentem; **Ukryj** zwija je z powrotem do licznika. Puste pola wymagane są zawsze wyświetlane.

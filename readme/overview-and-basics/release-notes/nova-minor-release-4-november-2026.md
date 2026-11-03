@@ -1,6 +1,6 @@
-# NOVA – Minor release 4 november 2026
+# NOVA N2611 – Minor release 4 november 2026
 
-**Beschikbaarheid van NOVA R1.1:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
+**Beschikbaarheid van NOVA N2611:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/nl.mp4" %}
 

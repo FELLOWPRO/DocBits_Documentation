@@ -15,7 +15,7 @@ Guía para usar el Editor XSLT para crear o modificar transformaciones. Incluye 
 **Creación o modificación de transformaciones:**
 
 * Defina las reglas para transformar los datos de entrada (por ejemplo, XML) al formato EDI deseado. Utilice plantillas XSLT para seleccionar los elementos y atributos del XML de entrada y darles el formato correspondiente.
-* Utilice funciones y declaraciones XSLT como [xsl:template](xsl:template), [xsl:apply-templates](xsl:apply-templates), [xsl:for-each](xsl:for-each)´, [xsl:value-of](xsl:value-of), etc. para realizar las transformaciones.
+* Utilice funciones y declaraciones XSLT como `xsl:template`, `xsl:apply-templates`, `xsl:for-each`, `xsl:value-of`, etc. para realizar las transformaciones.
 * Verifique sus transformaciones cuidadosamente para asegurarse de que todos los datos requeridos se extraigan y formateen correctamente.
 
 **Prueba y validación de scripts XSLT:**

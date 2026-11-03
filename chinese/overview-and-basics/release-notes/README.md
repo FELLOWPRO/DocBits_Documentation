@@ -1,6 +1,6 @@
 # 发行说明
 
-**NOVA R1.1 发布安排：** 自 **2026 年 10 月 16 日** 起可在沙盒环境中使用。生产环境计划于 **2026 年 11 月 4 日** 发布。
+**NOVA N2611 发布安排：** 自 **2026 年 10 月 16 日** 起可在沙盒环境中使用。生产环境计划于 **2026 年 11 月 4 日** 发布。
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v2/zh.mp4" %}
 
@@ -12,11 +12,11 @@
 
 | 发布渠道 | 发行说明 | 重点 |
 | --- | --- | --- |
-| **NOVA – 次版本** | [客户新增功能](nova-minor-release-4-november-2026.md) · **2026 年 11 月 4 日（计划）** | 此前所有 VESTA 测试版功能，以及相较于 VESTA R1.0.15 的新功能和扩展。 |
-| **VESTA — 下一次热修复（计划中）** | [2026 年 11 月 11 日](vesta-hotfix-11-november-2026.md) | 将此前所有 VESTA 测试版功能纳入 VESTA 常规功能集。 |
+| **NOVA N2611 – 次版本** | [客户新增功能](nova-minor-release-4-november-2026.md) · **2026 年 11 月 4 日（计划）** | 此前所有 VESTA 测试版功能，以及相较于 VESTA R1.0.15 的新功能和扩展。 |
+| **VESTA V2611 — 下一次热修复（计划中）** | [2026 年 11 月 11 日 — V2611](vesta-hotfix-11-november-2026.md) | 将此前所有 VESTA 测试版功能纳入 VESTA 常规功能集。 |
 | **VESTA — 热修复版本** | [2026 年 10 月 14 日 — R1.0.15](incremental-updates-14-october-2026.md) | 改进并修复当前 VESTA 生产版本。 |
 
-## NOVA – 次版本 2026 年 11 月 4 日
+## NOVA N2611 – 次版本 2026 年 11 月 4 日
 
 ### NOVA 为您的团队带来的功能
 
@@ -44,7 +44,7 @@
 
 ## VESTA — 热修复版本 <a id="vesta-hotfix-releases"></a>
 
-**下一次计划发布的热修复：[2026 年 11 月 11 日](vesta-hotfix-11-november-2026.md)。** 此前在 VESTA 中作为测试版提供、现已纳入 NOVA 的所有功能，都将在此次热修复中成为 VESTA 常规功能。
+**下一次计划发布的热修复：[2026 年 11 月 11 日 — V2611](vesta-hotfix-11-november-2026.md)。** 此前在 VESTA 中作为测试版提供、现已纳入 NOVA 的所有功能，都将在此次热修复中成为 VESTA 常规功能。
 
 **最新发布的热修复：[2026 年 10 月 14 日 — R1.0.15](incremental-updates-14-october-2026.md)。** 此次 VESTA 热修复引入了设置助手、更新后的 AI 层级、页眉字段检查、登录改进和采购订单费用匹配改进。
 

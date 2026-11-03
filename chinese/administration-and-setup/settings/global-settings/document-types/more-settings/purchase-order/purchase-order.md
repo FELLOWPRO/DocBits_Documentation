@@ -13,19 +13,22 @@
 ## 激活步骤 <a href="#activation-steps" id="activation-steps"></a>
 
 1. 前往**设置** -> **全局设置** -> **文档类型**
-2.  选择所需的文档类型，然后点击**更多设置**。
+2.  找到文档类型卡片，点击齿轮（**更多设置**）打开其设置。
+3.  展开**采购订单**部分并启用**采购订单**。
 
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_1.png" alt=""><figcaption></figcaption></figure>
-3.  在**采购订单**部分中，找到**采购订单**选项。
-
-    <figure><img src="../../../../../../.gitbook/assets/po_settings_po.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-settings-purchase-order-20261103-zh.png" alt="发票文档类型“更多设置”中的“采购订单”部分：第一个开关启用匹配，下方为细化选项"><figcaption><p><strong>更多设置</strong>中的<strong>采购订单</strong>部分。第一个开关为该文档类型启用采购订单匹配，下面的开关进一步细化匹配行为。</p></figcaption></figure>
 
 ## **功能**
 
 激活后，[**采购订单匹配**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/)部分会在文档验证后变为可用。&#x20;
 
-你还可以通过选择设置旁边下拉菜单中的一个选项，配置匹配时使用哪种 **Infor** 数量类型：
+### 匹配哪个数量
 
-* **数量**
-* **已收货数量**
-* **已收货未结交货数量**
+匹配时比较采购订单中的哪个数量取决于 **PO 匹配服务器端**：
+
+* **PO 匹配服务器端关闭** – **采购订单**开关旁会出现一个下拉列表，可选**数量**、**已收货数量**和**已收货未结交货数量**。此时 DocBits 使用内置匹配器比较所选数量。
+* **PO 匹配服务器端开启** – 匹配按文档类型的规则执行，数量包含在这些规则中。该行右侧的 **配置采购订单匹配规则** 链接可打开这些规则。
+
+{% hint style="info" %}
+上图是在 **PO 匹配服务器端** 开启的状态下截取的，因此该界面没有数量下拉列表，数量在匹配规则中设置。
+{% endhint %}

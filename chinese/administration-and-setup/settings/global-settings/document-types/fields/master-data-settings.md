@@ -48,10 +48,12 @@ DocBits 中的主数据来源、值列表与主数据设置
 * **Lookup Field** 是要搜索的数据集列。
 * **Validation Field** 是用于接收结果的文档字段。
 * **Parent Field**（父字段） 可选，用于根据相关字段检查结果。
-* **Search Operator** 控制文本的比较方式。**Smart** 会忽略空格和标点符号；其他选项包括 Contains、Starts With、Ends With 和 Exact。
+* **搜索运算符**控制文本的比较方式。**聪明的**会忽略空格和标点符号，因此只在格式上不同的值仍然可以匹配。**智能精确**使用相同的规范化，但只有整个值完全相同时才返回记录，部分匹配不会返回结果。其他选项包括 **包含**、**开头为**、**结尾为** 和 **精确的**。
 * **Auto Trigger** 会在此字段填入内容时启动查找。**Searchable** 允许该字段参与搜索，并支持在验证期间手动查找。
 
 选择 **Create** 添加映射。使用行上的三点 **Actions** 菜单编辑或删除可编辑的映射。默认映射只能查看。
+
+<figure><img src="../../../../../.gitbook/assets/core-6312-search-operator-zh.png" alt="“创建主数据字段”对话框，搜索运算符下拉列表已展开：聪明的、智能精确、包含、结尾为、精确的、开头为"><figcaption><p>当忽略空格和标点后仍要求整个值一致时，请选择<strong>智能精确</strong>。</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/site-complete-lookup-field-dialog-zh.png" alt="中文“创建主数据字段”空白对话框，显示查找字段、验证字段、父字段、搜索运算符和两个选项；未创建映射。"><figcaption><p>中文“创建主数据字段”空白对话框，显示查找字段、验证字段、父字段、搜索运算符和两个选项；未创建映射。</p></figcaption></figure>
 

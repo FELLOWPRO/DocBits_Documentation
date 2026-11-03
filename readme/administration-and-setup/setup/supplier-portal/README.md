@@ -57,6 +57,14 @@ Abra la administración de proveedores. Antes de invitar, revise la empresa, el 
 
 <figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-es-20261031.png" alt="Panel interno con Todos los proveedores, Pendiente de aprobación, Registro pendiente, búsqueda y barra de herramientas. Las filas de proveedores existentes están cubiertas."><figcaption><p>Panel interno con Todos los proveedores, Pendiente de aprobación, Registro pendiente, búsqueda y barra de herramientas. Las filas de proveedores existentes están cubiertas.</p></figcaption></figure>
 
+## Detalles del Proveedor (vista interna)
+
+Haga clic en la fila de un proveedor en el **Panel de proveedores** para abrir la vista **Detalles del Proveedor** de ese proveedor. Esta vista interna muestra las mismas seis secciones que el proveedor completa durante el registro — **Detalles del Proveedor**, **Datos de Dirección**, **Contacto del Proveedor**, **Financiera del Proveedor**, **Compras del Proveedor** y **Certificados del Proveedor** — junto con la insignia del **estado** actual del proveedor.
+
+Utilice esta vista para revisar el perfil de un proveedor, corregir o completar datos que falten y preparar la decisión de aprobación. Para una descripción de cada sección, consulte [Registro de Proveedores](supplier-registration.md). El botón de retroceso en la parte superior de la vista lo devuelve al **Panel de proveedores**.
+
+<figure><img src="../../../.gitbook/assets/supplier-portal-supplier-details-es-20261009.png" alt="Vista interna de Detalles del Proveedor en español en la interfaz de DocBits"><figcaption><p>Vista interna de Detalles del Proveedor con datos de ejemplo (organización de ejemplo Musterfirma GmbH, proveedor de ejemplo Fabrikam Metallbau KG, estado «Pendiente de aprobación»). Los nombres y datos son inventados; no se modificó ningún ajuste.</p></figcaption></figure>
+
 <figure><img src="../../../.gitbook/assets/dbdc-49-invitation-es-20261031.png" alt="Formulario vacío Añadir proveedor con Grupo de Proveedores, Nombre del proveedor, datos de contacto, Cancelar y Guardar. Guardar solicita una invitación de registro; en esta captura solo se usó Cancelar."><figcaption><p>Formulario vacío Añadir proveedor con Grupo de Proveedores, Nombre del proveedor, datos de contacto, Cancelar y Guardar. Guardar solicita una invitación de registro; en esta captura solo se usó Cancelar.</p></figcaption></figure>
 
 ## Admin: abrir los detalles desde el panel de proveedores

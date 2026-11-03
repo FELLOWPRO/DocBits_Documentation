@@ -57,6 +57,14 @@ Open het leveranciersbeheer. Controleer vóór een uitnodiging het bedrijf, de l
 
 <figure><img src="../../../.gitbook/assets/dbdc-49-dashboard-nl-20261031.png" alt="Intern dashboard met Alle leveranciers, In afwachting van goedkeuring, In afwachting van registratie, zoeken en werkbalk. De rijen met bestaande leveranciers zijn afgedekt."><figcaption><p>Intern dashboard met Alle leveranciers, In afwachting van goedkeuring, In afwachting van registratie, zoeken en werkbalk. De rijen met bestaande leveranciers zijn afgedekt.</p></figcaption></figure>
 
+## Leveranciersgegevens (interne weergave)
+
+Klik op de rij van een leverancier in het **Leveranciersdashboard** om de weergave **Leveranciersgegevens** van die leverancier te openen. Deze interne weergave toont dezelfde zes secties die de leverancier tijdens de registratie invult — **Leverancier Gegevens**, **Adresgegevens**, **Leverancier Contact**, **Leverancier Financieel**, **Leverancier Aankoop** en **Leverancier Certificaten** — samen met de badge met de huidige status van de leverancier (rechtsboven, bijvoorbeeld **STATUS: IN AFWACHTING VAN GOEDKEURING**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-nl-20261009.png" alt="Interne weergave «Leveranciersgegevens» van een fictieve leverancier in de DocBits-interface in het Nederlands"><figcaption><p>Interne weergave «Leveranciersgegevens»: links de zes registratiesecties, rechtsboven de status van de leverancier. Alle namen en gegevens zijn verzonnen voorbeeldwaarden (voorbeeldorganisatie Musterfirma GmbH, voorbeeldleverancier Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Gebruik deze weergave om het leveranciersprofiel te controleren, ontbrekende gegevens aan te vullen of te corrigeren en de goedkeuringsbeslissing voor te bereiden. Voor een beschrijving van elke sectie zie [Leverancier Registratie](supplier-registration.md). Met de terugknop bovenaan de weergave keert u terug naar het **Leveranciersdashboard** zonder iets op te slaan.
+
 <figure><img src="../../../.gitbook/assets/dbdc-49-invitation-nl-20261031.png" alt="Leeg formulier Leverancier toevoegen met Leveranciersgroep, Leveranciersnaam, twee naamvelden voor de contactpersoon, E-mailadres van de leverancier, Annuleren en Opslaan. Het linker naamveld is voor de voornaam, het rechter voor de achternaam; de toepassing kort de lange labels hier af. Opslaan vraagt om een registratie-uitnodiging; voor deze opname is alleen Annuleren gebruikt."><figcaption><p>Leeg formulier Leverancier toevoegen met Leveranciersgroep, Leveranciersnaam, twee naamvelden voor de contactpersoon, E-mailadres van de leverancier, Annuleren en Opslaan. Het linker naamveld is voor de voornaam, het rechter voor de achternaam; de toepassing kort de lange labels hier af. Opslaan vraagt om een registratie-uitnodiging; voor deze opname is alleen Annuleren gebruikt.</p></figcaption></figure>
 
 ## Admin: details vanuit het leveranciersdashboard openen

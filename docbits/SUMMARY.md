@@ -605,6 +605,7 @@
     * [Supplier Permissions](administration-and-setup/settings/supplier-setting/supplier-permissions.md)
   * [Cache Management](administration-and-setup/settings/cache-management.md)
   * [Infrastructure](administration-and-setup/settings/infrastructure.md)
+  * [Appearance](administration-and-setup/settings/appearance.md)
 * [Performance Metrics](administration-and-setup/performance-metrics.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Learning path from beginner to expert](administration-and-setup/workflow/workflow-learning-path/README.md "Learning path – beginner to expert")

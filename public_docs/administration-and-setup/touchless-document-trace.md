@@ -36,6 +36,25 @@ La scheda **Documento** accanto al registro dei passaggi indica il tipo di docum
 
 **Esempio.** I documenti di un fornitore si fermano tutti al passaggio 8. Nel tracciamento vedete ogni volta gli stessi campi mancanti. Non è un problema di estrazione dei singoli documenti, ma un valore predefinito mancante nella configurazione dei campi: correggetelo una volta e l'intero cluster è recuperabile.
 
+## Separare estrazione e dati di origine
+
+Confrontate originale e campi/righe estratti prima delle correzioni. Poi confrontate l’ordine importato con Infor attuale, includendo unità, unità di prezzo e data di importazione. Distinguete originale contro estrazione, estrazione corretta contro ordine importato e Infor contro la sua copia. Un passaggio riuscito non certifica tutti i valori. Se la prova manca, lasciate aperta la causa.
+
+**Esempio:** originale ed estrazione indicano 10 €, ordine importato 9 €. È una discrepanza con l’ordine, non un errore di estrazione dimostrato. Confermate il prezzo concordato. Un riavvio umano seguito da successo dà AP Assisted. Vedete [metriche e calcolo](touchless-metrics.md).
+
+Campi mancanti ricorrenti provano un blocco ripetuto, non necessariamente un valore predefinito assente: verificate originale, estrazione, validazione e configurazione.
+
+## Provare l’estrazione iniziale e seguire i blocchi successivi
+
+1. Aprite il documento dalla traccia; verificate ID ed esecuzione. Confrontate numero d’ordine, valuta, quantità, unità, unità di prezzo, prezzi, importi delle righe e totali pertinenti.
+2. Distinguete valori attuali e valori prima delle correzioni. Usate una prova storica di quell’esecuzione. Cambiare esecuzione non garantisce di ricostruire ogni vecchia cella.
+3. Se manca il valore iniziale, indicate **non valutabile**, non corretto. Definite campi, righe, selezione e dimensione del campione prima di riferire la qualità.
+4. Confrontate copia importata, data di importazione e Infor attuale per distinguere fonte errata e copia obsoleta.
+
+Un’esecuzione può attendere l’ordine; dopo l’import una successiva può rivelare un divario di prezzo. La prima non prova che quel controllo fosse stato raggiunto. Il riavvio umano persiste dopo il successo come AP Assisted; un rifiuto ERP finale prevale come eccezione. **Non registrato** significa prova mancante.
+
+Strumenti e classificazione delle azioni umane sono spiegati in [Touchless con MCP](touchless-mcp.md).
+
 ## Pagine correlate
 
 * [Touchless Intelligence](touchless-intelligence.md)
@@ -43,3 +62,7 @@ La scheda **Documento** accanto al registro dei passaggi indica il tipo di docum
 * [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md)
 
 Le schermate di questa pagina mostrano l'interfaccia in italiano.
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

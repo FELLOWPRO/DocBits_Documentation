@@ -7,7 +7,7 @@ Fai clic su un fornitore nella coda per aprire la sua pagina di diagnosi.
 
 La pagina mostra:
 
-* **Sei riquadri degli esiti** (Touchless puro, AP touchless, AP assistito, Eccezione di processo, In corso, Non idoneo), ciascuno collegato ai documenti.
+* **Quattro riquadri degli esiti finali**: Pure Touchless, AP Touchless, AP Assisted ed eccezione di processo; ciascuno collega i documenti.
 * **L'andamento** con un proprio selettore del periodo: 30 giorni, 90 giorni, 6 mesi, 1 anno o un intervallo personalizzato (fino a due anni). Questo modifica solo il grafico.
 * **Cluster di problemi** (vedi sotto).
 * **Cronologia delle modifiche** (Change history): le modifiche che hai applicato per questo fornitore e cosa hanno ottenuto.
@@ -27,7 +27,7 @@ Un **cluster** raggruppa i documenti di un fornitore che si sono fermati per lo 
 * **Titolo**: *Campo obbligatorio mancante* alla fase *Campo Validazione*
 * **Interessati**: 28 documenti. **Recuperabili**: 28 documenti. **Incremento atteso**: +2,8 pp
 * **Causa sospetta**: il fornitore stampa il numero d'ordine sotto la tabella, dove l'estrazione non cerca
-* **Cosa cambiare**: *Master data change*: aggiungi il layout di questo fornitore. **Apri** (Open) ti porta alla pagina di impostazioni giusta
+* **Prossima verifica**: confrontate numero d’ordine stampato ed estratto, poi la configurazione di estrazione prima di proporre modifiche
 * **Responsabile**: Consulente. **Affidabilità**: Media. **Fonte**: Ipotesi
 
 Cosa mostra la scheda di un cluster:
@@ -60,9 +60,26 @@ I testi dell'IA sono scritti nella lingua della tua organizzazione. Se un cluste
 
 Se il primo blocco di un cluster è un motivo di abbinamento ordini (ad esempio *PO item mismatch* o *Purchase order not found*), la scheda del cluster mostra come DocBits cerca di abbinare la fattura all'ordine d'acquisto. Vedi [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md).
 
+## Chi deve correggere i dati?
+
+| Evidenza | Dove intervenire |
+| --- | --- |
+| Originale ed estrazione differiscono | Estrazione o configurazione del fornitore |
+| Estrazione corretta, prezzo/quantità/unità Infor confermati errati | Fonte; AP coordina acquisti o responsabili delle anagrafiche |
+| Infor corretto, copia importata vecchia o incompleta | Importazione o integrazione ERP |
+| Valori diversi ma accordo non ancora noto | Chiarimento aziendale; causa non confermata |
+
+Il riquadro AP del fornitore conta sola approvazione; il tasso AP in intestazione include anche Pure. Registrate rimedio immediato e correzione duratura: un piccolo intervento può terminare la fattura senza eliminare la causa ricorrente.
+
+Strumenti e classificazione delle azioni umane sono spiegati in [Touchless con MCP](touchless-mcp.md).
+
 ## Pagine correlate
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md)
 * [Tracciamento del documento](touchless-document-trace.md)
 * [Proposte di modifica e report](touchless-change-proposals.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

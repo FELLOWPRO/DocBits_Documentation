@@ -34,6 +34,7 @@ changed, for example *Advanced · 120 s* or *Advanced · Cleanup*.
 | **Time limit (seconds)** | How long the step may take, up to 120 seconds. Leave it empty for the default of 30 seconds. Steps that wait for a document have their own, longer limit. |
 | **Retries** | How often DocBits repeats the step if it fails (0 to 3). |
 | **Optional step (failure does not fail the test)** | If the step fails, the log shows it as skipped with its error, and the test goes on. |
+| **Continue on failure** | Only on **Check** steps: the test goes on after a failed check and fails at the end. Unlike an optional step, the failure stays visible as a deviation of the run. |
 | **Section** | **Prepare**, **Check** or **Cleanup**. **Check** is the default. |
 
 **Prepare** steps set the test up. **Check** steps are the test itself. **Cleanup** steps remove what the test left
@@ -43,6 +44,12 @@ normal step follows a cleanup step. They do not run if you stop the test or clos
 A template with cleanup steps is saved as schema 1.3 (see [For Developers](for-developers.md)).
 
 <figure><img src="../../../../.gitbook/assets/testing-27-advanced-step.png" alt="Advanced settings of a step: time limit, retries, optional step and section, with Cleanup selected"><figcaption><p>Advanced settings of a step: time limit, retries, optional step and section, with Cleanup selected</p></figcaption></figure>
+
+**Continue on failure** is offered on **Check** steps only, for example **Check field**. With it a failed
+check stops neither the test nor the next file of a regression template: the log records the failed value and
+the test ends as failed. Leave it off when a failed check must stop the test at that step.
+
+<figure><img src="../../../../.gitbook/assets/testing-37-advanced-continue.png" alt="Advanced settings of a Wait for document status step: time limit 600 seconds, Optional step and Continue on failure, Section Check"><figcaption><p>Advanced settings of a <strong>Wait for document status</strong> step with <strong>Continue on failure</strong>.</p></figcaption></figure>
 
 ## Ready-made blocks
 

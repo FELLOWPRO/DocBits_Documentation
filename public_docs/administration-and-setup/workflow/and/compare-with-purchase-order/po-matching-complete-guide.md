@@ -86,7 +86,7 @@ Wynik: ✅ PEŁNE DOPASOWANIE
 
 ***
 
-## 2. Porównanie cen jednostkowych (dokument vs zamówienie)
+## 2. Porównanie cen jednostkowych (dokument a zamówienie)
 
 ### Cel
 
@@ -758,7 +758,7 @@ Załóżmy, że datą referencyjną jest `2026-10-21` i obiecaną datą dostawy 
 
 `CONDITION_PO_EXTRACTED_TABLE_COLUMN` · wersja 2
 
-Porównaj dopasowaną kolumnę artykułu PO z wyodrębnioną kolumną `article_number`, używając równości i All. Pasujące wartości `DEMO-A` spełniają; wyodrębniona wartość `DEMO-B` kończy się niepowodzeniem. Wybierz tabelę przeglądową tylko wtedy, gdy wymagana jest udokumentowana zamiana identyfikatora na wartość; sprawdź to mapowanie przed porównaniem.
+Porównaj dopasowaną kolumnę artykułu PO z wyodrębnioną kolumną `article_number`, używając równości i opcji Wszystkie. Pasujące wartości `DEMO-A` spełniają; wyodrębniona wartość `DEMO-B` kończy się niepowodzeniem. Wybierz tabelę przeglądową tylko wtedy, gdy wymagana jest udokumentowana zamiana identyfikatora na wartość; sprawdź to mapowanie przed porównaniem.
 
 <!-- workflow-card-example-condition_check_facility_in_po-20261021 -->
 
@@ -788,7 +788,7 @@ Użyj całkowicie dopasowanej faktury demonstracyjnej i zamówienia zakupu z ilo
 
 `CONDITION_PO_UPDATE_EMPTY_COLUMN_CHECK` · wersja 2
 
-Wybierz prawidłową tabelę i kolumnę PO oferowaną przez kartę i operatora is-pusty. W przypadku istniejącego pasującego rekordu zamówienia zakupu z pustą wartością warunek zostaje spełniony; wypełnienie wartości kończy się niepowodzeniem. Najpierw sprawdź odwołanie do zamówienia i mapowanie tabeli/kolumny. Wartość logiczna `false` jest nadal aktualną wartością logiczną; brakujący rekord zamówienia zakupu jest odrębnym błędem danych.
+Wybierz prawidłową tabelę i kolumnę PO oferowaną przez kartę i operatora „jest pusty”. W przypadku istniejącego pasującego rekordu zamówienia zakupu z pustą wartością warunek zostaje spełniony; wypełnienie wartości kończy się niepowodzeniem. Najpierw sprawdź odwołanie do zamówienia i mapowanie tabeli/kolumny. Wartość logiczna `false` jest nadal aktualną wartością logiczną; brakujący rekord zamówienia zakupu jest odrębnym błędem danych.
 
 <!-- workflow-card-example-condition_compare_unit_price_percent_per-20261021 -->
 

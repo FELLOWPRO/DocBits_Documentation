@@ -55,24 +55,7 @@ The **Document** card next to the Stage Log lists the document type, supplier, i
 
 Successive blockers are possible: run 1 may stop because a PO has not arrived; after import, run 2 may reveal a price discrepancy. Neither proves that the first run reached the later check. A manual restart persists after success as AP Assisted; a final ERP rejection instead takes precedence as a process exception. **Not recorded** means missing evidence, not a passed check.
 
-### Read the evidence through MCP
-
-> Inspect this invoice without changing it. Compare the original, current fields and tables. Explain the recorded stages and runs, and identify missing historical extraction evidence.
-
-| Tool, using the same `doc_id` | Evidence and limit |
-| --- | --- |
-| `get_extracted_fields` | Current header values and confidence; not a historical snapshot |
-| `get_extracted_tables` | Actual tables and rows; not proof they agree with the original |
-| `touchless_get_document_trace` | Recorded outcomes, interventions, stages and runs |
-| `touchless_explain_pipeline` | Explanation of the evidenced processing path; does not fill missing evidence |
-
-**Observed negative check:** Our fresh test invoice had a `passed` header-extraction stage but `extracted_field_count: 0`, eight empty required fields and no table. Field validation blocked with `REQUIRED_FIELD_MISSING`. The assistant must investigate missing extraction/configuration, rather than claim correct extraction from a green stage or a proven PO-price blocker from differing source values.
-
-### Does an MCP action count as a human touch?
-
-Read-only inspection does not change an invoice. Other MCP tools may write fields, validate or restart. Classification depends on the recorded event and whether its actor is a human or system account. An API key can act as a system account; “performed through MCP” alone proves neither a human touch nor Pure Touchless. Never use system credentials to hide human rework.
-
-After a document action inspect `human_touched`, `human_touch_source`, `human_restart_count`, `business_approval_touched`, final status and runs. Business approval only is different from a saved correction, manual validation or human restart.
+See [Touchless with MCP](touchless-mcp.md) for the matching tool calls and classification of human actions.
 
 ## Related pages
 

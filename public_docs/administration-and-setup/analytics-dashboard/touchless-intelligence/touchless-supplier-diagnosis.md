@@ -74,17 +74,7 @@ A small AP intervention can finish the invoice while leaving a recurring source-
 
 If the first blocker of a cluster is a PO matching reason (for example _PO item mismatch_ or _Purchase order not found_), the cluster card shows how DocBits tries to match the invoice to the purchase order. See [PO Matching Diagnosis](touchless-po-matching-diagnosis.md).
 
-## Prioritise suppliers and verify a lasting improvement through MCP
-
-> Rank the suppliers losing the most Touchless invoices. Separate extraction errors, imported-source discrepancies and process settings. Propose one action and a verifiable success check for each confirmed cause; do not change anything yet.
-
-1. Use `touchless_rank_supplier_opportunities` with `period: "30d"`, `doc_type: "INVOICE"`, `order_by_field: "lost_docs"`, `order_by_direction: "desc"`. Use `search` for a supplier number or name; `limit` and `offset` page results.
-2. Pass the returned `supplier_key` unchanged to `touchless_diagnose_supplier`. Use `window: 30` for current issues or 90 to investigate recurring issues.
-3. Pass an actual returned `issue_signature` to `touchless_get_issue_cluster`. Review example documents and missing evidence before confirming the cause. Do not invent identifiers.
-4. Use `touchless_get_recommendations` to explain a supported action. Expected lift is an estimate; overlapping clusters must not simply be added.
-5. Check new comparable invoices after the fix and the [change measurement](touchless-change-proposals.md). Previously touched invoices do not become Pure Touchless retrospectively.
-
-For correct extraction and stale POs, fix source/import data. For a mismatch between original and extraction, investigate extraction configuration. Approval required by policy is a separate successful AP Touchless outcome. An empty ranking is not proof of no problems: our three in-progress test invoices produced no ranked supplier outcome yet. Check scope, data timestamp, supplier identification and completed volume.
+See [Touchless with MCP](touchless-mcp.md) for the matching tool calls and classification of human actions.
 
 ## Related pages
 

@@ -38,6 +38,7 @@ on:
     paths:
       - "docbits/**"
       - "readme/**"
+      - "public_docs/**"
   schedule:
     - cron: "17 3 * * *"
   # The language pages reach main through the language-folder bridge
@@ -77,8 +78,8 @@ jobs:
           DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
           SYNC_LANG: ${{ github.ref_name }}
           # English lives in docbits/ on main (the GitBook space imports it);
-          # the language branches keep their own readme/ layout.
-          DOCS_ROOT: ${{ github.ref_name == 'main' && 'docbits' || 'readme' }}
+          # the language branches use public_docs/.
+          DOCS_ROOT: ${{ github.ref_name == 'main' && 'docbits' || 'public_docs' }}
           SYNC_BEFORE: ${{ github.event.before }}
           SYNC_AFTER: ${{ github.event.after }}
         run: |

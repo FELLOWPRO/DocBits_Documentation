@@ -70,6 +70,10 @@ La vista previa no incluye entrenamiento ni etiquetas del proveedor. Instruccion
 
 Sin configuración utilizable de campos de encabezado no puede construirse el esquema completo. El interruptor activado no demuestra por sí solo que se haya usado. Revise la ejecución con **Explicar extracción** y los registros disponibles; [Tabla de IA](README.md) explica las vistas y permisos.
 
+En este ejemplo de configuración, las columnas solicitadas de INVOICE_TABLE incluyen `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` y `PROJECT_CODE`. La columna personalizada de proyecto está explícitamente en **Sí**, como en el paso 2 del ejemplo siguiente. La vista previa también incluye otras columnas de factura configuradas; la selección y el número pueden variar en su organización. **12** es el número de columnas solicitadas de esta tabla, no el de filas ni el total de propiedades del esquema. Es una vista previa de configuración, no un resultado de extracción.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-es-20261104.png" alt="Detalle de la vista previa del esquema de Factura con Structured Output activado. INVOICE_TABLE solicita 12 columnas, incluida PROJECT_CODE con Use AI en Sí. Las demás tablas configuradas y el contador de propiedades quedan fuera de este detalle."><figcaption><p>Detalle de la vista previa del esquema de Factura con Structured Output activado. INVOICE_TABLE solicita 12 columnas, incluida PROJECT_CODE con Use AI en Sí. Las demás tablas configuradas y el contador de propiedades quedan fuera de este detalle.</p></figcaption></figure>
+
 ## 5. Ejemplo: factura con dos números y proyecto
 
 Ejemplo sintético de un resultado que debe comprobarse; no representa una extracción ejecutada.

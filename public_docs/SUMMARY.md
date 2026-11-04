@@ -843,10 +843,14 @@
 * [报告页面](administration-and-setup/report-page.md)
 * [分析仪表板](administration-and-setup/analytics-dashboard/README.md)
   * [无接触智能](administration-and-setup/analytics-dashboard/touchless-intelligence/README.md)
+    * [指标与计算](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-metrics.md)
+    * [使用仪表板](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-dashboard.md)
+    * [示例：价格与数量](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-examples.md)
     * [供应商诊断与问题集群](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-supplier-diagnosis.md)
     * [采购订单匹配诊断](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md)
     * [文档追踪](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-document-trace.md)
     * [变更提案和报告](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-change-proposals.md)
+    * [通过 MCP 解释和改善 Touchless](administration-and-setup/analytics-dashboard/touchless-intelligence/touchless-mcp.md)
 
 ## Infor 集成与配置 <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

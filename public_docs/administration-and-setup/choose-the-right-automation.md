@@ -24,6 +24,8 @@ DocBits oferuje kilka sposobów zmiany, sprawdzania i kierowania dokumentów: **
 
 Każdy dokument przechodzi przez te same kroki. Każde narzędzie ma w tym przepływie swoje miejsce, a to miejsce decyduje o tym, co widzi i co jeszcze może zmienić.
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Izometryczna stacja rozrządowa: wagon z dokumentem mija kolejno Zasady transformacji, Zasady Dopasowywania Zamówień Zakupu, ponownie Zasady transformacji i Niestandardowe reguły walidacji, następnie sygnał Ready for validation, a potem Standard Workflow, Advanced Workflow i kartę Workflow SDK"><figcaption>Wagon z dokumentem jedzie od lewej do prawej przez 1 Zasady transformacji, 2 Zasady Dopasowywania Zamówień Zakupu (po dopasowaniu Zasady transformacji uruchamiają się ponownie) i 3 Niestandardowe reguły walidacji; dopiero po zapaleniu się sygnału Ready for validation może wystartować workflow: albo 4 Standard Workflow, albo 5 Advanced Workflow (tor rozgałęzienia), albo 6 karta Workflow SDK, podczas gdy Skrypty (&#x3C;/>) włączają się w punktach wyzwalania na trasie przed sygnałem.</figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-flow-pl.svg" alt="Gdzie w przepływie dokumentu działają Zasady transformacji, Zasady dopasowywania zamówień zakupu, Niestandardowe reguły walidacji, Skrypty i Workflowy"><figcaption></figcaption></figure>
 
 Słowami:

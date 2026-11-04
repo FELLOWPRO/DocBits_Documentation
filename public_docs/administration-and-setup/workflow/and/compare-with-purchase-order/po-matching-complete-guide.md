@@ -38,6 +38,8 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Izometryczna waga belkowa: na lewej szalce leży cena jednostkowa z zamówienia (PO) równa 100, na prawej cena jednostkowa z faktury równa 103 (100 plus mały dodatkowy odważnik). Belka lekko się przechyla, a jej wskazówka znajduje się w zielonym pasie oznaczającym tolerancję 5 %." width="768"><figcaption><p>Cena z zamówienia (€100) leży na lewej szalce, a cena z faktury (€103) na prawej. Różnica €3 to 3 % ceny z zamówienia, więc wskazówka pozostaje w zielonym pasie tolerancji ±5 % i kontrola kończy się wynikiem pozytywnym. Powyżej ±5 % (kolor czerwony) faktura wymaga sprawdzenia.</p></figcaption></figure>
+
 ***
 
 ## 1. Pełne dopasowanie zamówienia zakupu

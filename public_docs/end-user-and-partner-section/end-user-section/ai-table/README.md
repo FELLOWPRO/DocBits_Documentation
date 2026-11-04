@@ -10,6 +10,8 @@ AI Table służy do sprawdzania wyodrębnionych pozycji, poprawiania kolumn i za
 * [Wyjaśnianie ekstrakcji i diagnostyka](explain-extraction.md)
 * [Asystent i uprawnienia](assistant-and-permissions.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Izometryczna ilustracja czytnika tabel: głowica czytająca z kasetą instrukcji skanuje tabelę dokumentu, panel krosowy podłącza każdą zwróconą kolumnę do skonfigurowanej kolumny, a skonfigurowane kolumny stoją jako pojemniki, każdy z trzypozycyjnym pokrętłem Use AI."><figcaption><p>AI czyta tabelę i zwraca kolumny. Każda zwrócona kolumna jest mapowana na skonfigurowaną kolumnę tabeli (zwrócona kolumna bez mapowania pozostaje ukryta), każda skonfigurowana kolumna ma własne ustawienie Use AI (Domyślne, Tak lub Nie), a instrukcje AI oraz <strong>Zapisz jako szkolenie</strong> kształtują sposób odczytu kolejnych dokumentów o układzie tego dostawcy.</p></figcaption></figure>
+
 ## Kiedy otrzymujesz tabelę AI
 
 * Administrator włączył opcję **Ekstrakcja tabeli AI** (Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja, patrz [Ustawienia dla administratorów](#ustawienia-dla-administratorow)). Jeśli jest wyłączona, w obszarze tabeli wyświetla się komunikat *Tutaj wyświetli się tabela AI. Włącz w …*.

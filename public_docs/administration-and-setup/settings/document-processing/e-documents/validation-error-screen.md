@@ -10,7 +10,7 @@ Wenn Sie eine fehlerhafte E-Rechnung hochladen, geht sie in DocBits nicht verlor
 
 Ein Lieferant sendet eine XML-Datei, in der ein schließendes Tag nicht zum öffnenden Tag passt. Die Datei kann nicht gelesen werden, daher stoppt DocBits bei der ersten Prüfung, **L1 · XML-Wohlgeformtheit**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-xml-malformed-de-20261104.png" alt="Fehleransicht einer synthetischen XML-Datei mit einem absichtlich beschädigten Abschluss-Tag. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Fehleransicht einer synthetischen XML-Datei mit einem absichtlich beschädigten Abschluss-Tag. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-error-xml-malformed-de-20261104-v2.png" alt="Fehleransicht einer synthetischen XML-Datei mit einem absichtlich beschädigten Abschluss-Tag. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Fehleransicht einer synthetischen XML-Datei mit einem absichtlich beschädigten Abschluss-Tag. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Die Ansicht hat zwei Seiten:
 
@@ -19,7 +19,7 @@ Die Ansicht hat zwei Seiten:
 
 Wählen Sie **Validierungs-Details anzeigen**, um den vollständigen [Prüfbericht](validation-report.md) zu öffnen.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-xml-malformed-de-20261104.png" alt="Prüfbericht zur beschädigten synthetischen XML-Datei."><figcaption><p>Prüfbericht zur beschädigten synthetischen XML-Datei.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-xml-malformed-de-20261104-v2.png" alt="Prüfbericht zur beschädigten synthetischen XML-Datei."><figcaption><p>Prüfbericht zur beschädigten synthetischen XML-Datei.</p></figcaption></figure>
 
 Der Bericht nennt die genaue Position (Zeile und Spalte stehen im Bericht) und gibt die technische Meldung des XML-Parsers wieder. Wählen Sie **Im XML anzeigen**, um zu dieser Zeile zu springen. Der Hinweis **So beheben Sie den Fehler** sagt Ihnen, dass Sie den Absender um eine korrigierte Datei bitten sollen.
 
@@ -27,7 +27,7 @@ Der Bericht nennt die genaue Position (Zeile und Spalte stehen im Bericht) und g
 
 Das XML ist in Ordnung, aber ein Pflichtfeld fehlt. Zum Beispiel kann der Verkäufer nicht identifiziert werden, weil weder eine Verkäufer-Kennung, noch eine Registrierungskennung, noch eine Umsatzsteuer-Kennung vorhanden ist (Regel `BR-CO-26`).
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-de-20261104.png" alt="Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-error-view-de-20261104-v2.png" alt="Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Fehleransicht einer rein synthetischen Beispielrechnung. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Die Karte zeigt das erste blockierende Ergebnis. Im vollständigen Bericht finden Sie auch den Code `BR-CO-26` und die weiteren Prüfhinweise der Rechnung.
 

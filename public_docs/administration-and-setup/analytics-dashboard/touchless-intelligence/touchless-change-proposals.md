@@ -5,13 +5,13 @@
 1. **预览**：显示变更内容（当前值 → 提议值）以及 DocBits 的预期结果。不会保存任何内容。只有查看预览后，才能**应用**。
 2. **应用**：准确保存预览中的变更。系统会记录此操作。
 3. **衡量**：DocBits 会比较同一文档类型在**变更前后**相同时长期间内的无接触率。每个期间至少需要 **20 份文档**，否则结果会显示为_无法衡量_。
-4. **撤销**：还原此变更。
+4. **撤销**：只有提案支持时才恢复设置。核实可用性和恢复的值。
 
 {% hint style="warning" %}
 变更前后的差异只是**观察结果**，并不能证明因果关系。其他因素也可能同时发生变化（例如新增供应商或季节性高峰）。
 {% endhint %}
 
-**示例。**你为发票应用_启用自动 PO 匹配和导出_。两周后，**变更历史记录**显示：变更前的纯无接触处理率为 52%（210 份文档），变更后为 61%（198 份文档）。提升了 9 个百分点，且文档数量足以进行衡量。
+**说明性示例。** 配置更改后 AP 从 52 %（210 份）到 61 %（198 份），上升 9 个百分点。包括 Pure 和仅审批，不衡量提取准确性。每个可比期间至少需 20 份已完成且符合条件的文档。前后比较是观察，不证明单一因果；Infor 更正需另行检查导入和新发票，不应假定有 DocBits 设置变更记录。
 
 管理员还会在关键指标和图表之间看到两个版块：
 
@@ -28,8 +28,14 @@
 
 影响数值均为**估算值**。如果报告返回_禁止访问_，说明你的角色无权查看。
 
+工具及人工操作分类见[Touchless 与 MCP](touchless-mcp.md)。
+
 ## 相关页面
 
 * [无接触智能](./)
 * [供应商诊断和问题集群](touchless-supplier-diagnosis.md)
 * [PO 匹配诊断](touchless-po-matching-diagnosis.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

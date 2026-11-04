@@ -36,6 +36,20 @@
 
 **示例。** 某个供应商的文档全都停在第 8 阶段。在追踪中，您每次都看到相同的缺失字段。这不是单份文档的提取问题，而是字段配置中缺少默认值：修正一次，整个集群即可恢复。
 
+## 区分提取问题和源数据问题
+
+核对原件与更正前的字段及行项目，再比较导入订单与当前 Infor，包括单位、价格单位及导入时间。证据不足时保持原因未确认。
+
+**示例：** 原件与提取都是 10 €，导入订单为 9 €。这说明订单有差异，不是已证实的提取错误。先确认约定价格。人工重启后成功归为 AP Assisted。参见[指标计算](touchless-metrics.md)。反复缺字段只证明重复阻塞，不一定缺默认值；检查原件、提取、验证及配置。
+
+## 核实初始提取和连续阻塞的证据
+
+选择同一文档及执行，核对订单号、币种、数量、单位、价格单位、单价和金额。区分当前值与更正前值；切换执行不保证恢复每个历史单元格。缺少初始值时标记为**无法评估**，先定义核查范围与样本量。比较导入副本、时间和当前 Infor。
+
+第一次执行可能等待订单，下一次导入后才发现价格差异；第一次不证明已到达后续检查。人工重启在成功后仍是 AP Assisted；最终 ERP 错误优先。没有记录就是缺少证据。
+
+工具及人工操作分类见[Touchless 与 MCP](touchless-mcp.md)。
+
 ## 相关页面
 
 * [Touchless Intelligence](./)
@@ -43,3 +57,7 @@
 * [采购订单匹配诊断](touchless-po-matching-diagnosis.md)
 
 本页面的屏幕截图显示中文界面。
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

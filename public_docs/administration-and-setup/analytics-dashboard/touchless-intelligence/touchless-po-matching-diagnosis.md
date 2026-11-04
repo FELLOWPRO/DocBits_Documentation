@@ -2,7 +2,7 @@
 
 ## 概述
 
-许多发票会卡在采购订单这一步。发票上的内容与采购订单（PO）上的内容不一致，DocBits 无法自行判断它们是否匹配。每份这样的文档都需要人工处理，因此它**不是无接触式处理**。
+正确提取的发票也可能因订单数据不同而暂停。临时阻塞不是最终结果；自动恢复可能保持 Pure。已记录的人工更正或重启在成功后归为 AP Assisted。
 
 Touchless Intelligence 会显示采购订单匹配失败的**原因**，以及 DocBits **如何**尝试匹配。本页介绍涉及的两个管道阶段、你会看到的失败原因，以及**采购订单匹配决策流程**图，该图按顺序展示匹配步骤。
 
@@ -40,6 +40,9 @@ Touchless Intelligence 会显示采购订单匹配失败的**原因**，以及 D
 {% hint style="info" %}
 并非所有采购订单匹配原因都能在 DocBits 中解决。如果供应商发送了错误的采购订单编号，卡片会显示**仅需供应商操作**：供应商必须更正文档并重新发送。
 {% endhint %}
+
+价格和数量案例见[示例](touchless-examples.md)。
+
 
 ## 采购订单匹配决策流程
 
@@ -100,7 +103,7 @@ Touchless Intelligence 会显示采购订单匹配失败的**原因**，以及 D
 
 * 在问题簇中，你会看到 _27 份受影响，27 份可恢复_，预期提升例如为 **+8.7 pp**。
 * 解决方法在你这边：添加或调整规则顺序，使其按供应商项目编号或描述进行匹配；也可以在主数据中维护供应商项目编号。
-* 更改规则后，通过[更改提案](touchless-change-proposals.md)应用更改，并在两周后查看**更改历史记录**：对比前后纯匹配率。
+* 支持的 DocBits 设置变更可用预览和历史比较 AP 综合率。Infor 更正需通过导入和新发票验证，不会自动产生参数变更记录。
 
 ### 示例 3：采购订单尚不存在
 
@@ -117,7 +120,7 @@ Touchless Intelligence 会显示采购订单匹配失败的**原因**，以及 D
 3. 打开**供应商诊断**并查看问题簇：原因、受影响的文档、**要更改的内容**、**缺少的证据**。
 4. 打开**此组织的匹配方式**并检查规则集：版本、所有者和容差。
 5. 打开一份**示例文档**及其[文档追踪](touchless-document-trace.md)：它卡在哪个阶段，原因是什么？
-6. 通过预览只更改**一**项内容（规则顺序、容差或项目映射），以便**更改历史记录**能够衡量效果。
+6. 修复已确认原因。支持的 DocBits 提案使用预览；Infor 则分别验证源数据、导入及新发票，不假定自动进入设置历史。
 
 ## 相关页面
 
@@ -127,3 +130,7 @@ Touchless Intelligence 会显示采购订单匹配失败的**原因**，以及 D
 * [更改提案和报告](touchless-change-proposals.md)
 * [采购订单匹配规则](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * [采购订单匹配卡片：完整指南](../../workflow/cards-overview/po-matching-complete-guide.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

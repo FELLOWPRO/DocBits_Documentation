@@ -26,7 +26,7 @@ Le **journal des étapes** sous le chemin liste les mêmes étapes avec ce que c
 * Une valeur qu'aucune étape n'a enregistrée s'affiche comme **Non enregistré**, jamais comme une valeur inventée. Les valeurs sont des nombres et des termes fixes, jamais du texte du document.
 * **Afficher les diagnostics bruts** active les données brutes lorsque le support les demande.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-stage-log-fr.png" alt="Le journal des étapes avec les points de statut, des puces de valeur comme Seuil 60 pour cent et 8 champs manquants, l'étape bloquée Validation des champs et l'historique des exécutions à droite"><figcaption><p>Chaque étape montre ce qu'elle a enregistré ; l'étape bloquée nomme sa cause.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-document-trace-stage-log-fr.png" alt="Journal des étapes en français avec validation des champs bloquée. Les valeurs non enregistrées restent signalées comme telles : ce blocage ne prouve à lui seul ni une erreur d’extraction ni des données Infor incorrectes."><figcaption><p>Journal des étapes en français avec validation des champs bloquée. Les valeurs non enregistrées restent signalées comme telles : ce blocage ne prouve à lui seul ni une erreur d’extraction ni des données Infor incorrectes.</p></figcaption></figure>
 
 ### Exécutions et changements
 
@@ -34,7 +34,28 @@ Le sélecteur d'exécution en haut du journal des étapes (**Exécuter 1 · Actu
 
 La carte **Document** à côté du journal des étapes indique le type de document, le fournisseur, le numéro de facture, le bon de commande, le nombre de pages et si l'analyse est **basée sur des règles** ou rédigée par l'IA.
 
-**Exemple.** Les documents d'un fournisseur s'arrêtent tous à l'étape 8. Dans la trace, vous voyez à chaque fois les mêmes champs manquants. Ce n'est pas un problème d'extraction de documents isolés, mais une valeur par défaut manquante dans votre configuration de champs : corrigez-la une fois et tout le cluster est récupérable.
+## Distinguer extraction et données source
+
+1. Comparez original et champs ou lignes extraits **avant correction manuelle**. Une valeur corrigée aujourd’hui ne prouve pas l’extraction initiale.
+2. Lisez le premier blocage. Une étape réussie confirme son exécution, pas l’exactitude de chaque valeur.
+3. Comparez commande importée et Infor actuel : unités, unités de prix et date d’import.
+4. Distinguez original contre extraction, extraction correcte contre données importées, et Infor contre sa copie. Laissez la cause ouverte si les preuves manquent.
+5. Vérifiez interventions, approbations, relances et résultat final.
+
+**Exemple :** original et extraction indiquent 10,00 €, commande importée 9,00 €. C’est un écart avec la commande, pas une erreur d’extraction démontrée. Confirmez le prix convenu et corrigez la source ou l’import. Une relance manuelle suivie de réussite donne AP Assisted. Voir [les exemples et le calcul](touchless-intelligence.md).
+
+Des champs manquants répétés prouvent un blocage récurrent, pas nécessairement une valeur par défaut absente. Examinez extraction, original, validation et configuration.
+
+## Prouver l’extraction initiale et suivre les blocages successifs
+
+1. Ouvrez le document depuis sa trace ; vérifiez son ID et l’exécution. Comparez numéro de commande, devise, quantités, unités, unités de prix, prix, montants des lignes et totaux pertinents.
+2. Distinguez valeurs actuelles et valeurs avant correction. Utilisez une preuve historique de cette exécution. Changer d’exécution ne garantit pas la restitution de chaque ancienne cellule.
+3. Si la valeur initiale manque, indiquez **non évaluable**, pas correcte. Définissez champs, lignes, sélection et taille de l’échantillon avant de communiquer sa qualité d’extraction.
+4. Comparez copie importée, date d’import et Infor actuel pour distinguer source erronée et copie périmée.
+
+Une exécution peut attendre une commande ; après l’import, une autre peut révéler un écart de prix. La première ne prouve pas qu’elle ait atteint ce contrôle ultérieur. Une relance humaine persiste après réussite comme AP Assisted ; un refus ERP définitif devient une exception prioritaire. **Non enregistré** signifie preuve manquante.
+
+Les outils et la classification des actions humaines sont expliqués dans [Touchless avec MCP](touchless-mcp.md).
 
 ## Pages connexes
 
@@ -43,3 +64,7 @@ La carte **Document** à côté du journal des étapes indique le type de docume
 * [Diagnostic du rapprochement avec le BC](touchless-po-matching-diagnosis.md)
 
 Les captures d'écran de cette page montrent l'interface en français.
+
+<!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

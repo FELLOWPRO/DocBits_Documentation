@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-Beaucoup de factures s'arrêtent au bon de commande. La facture dit une chose, le bon de commande (BC) en dit une autre, et DocBits ne peut pas décider seul si elles vont ensemble. Chaque document de ce type nécessite une personne, il n'est donc **pas touchless**.
+Une facture correctement extraite peut être bloquée lorsque les données de commande diffèrent et que les règles ne résolvent pas cet écart. Un arrêt temporaire n’est pas encore un résultat final : une reprise automatique peut réussir ; une correction ou relance manuelle enregistrée suivie de réussite donne AP Assisted.
 
 Touchless Intelligence vous montre **pourquoi** un rapprochement avec le BC a échoué et **comment** DocBits a essayé de rapprocher. Cette page explique les deux étapes du pipeline concernées, les motifs que vous verrez et le **flux de décision du rapprochement avec le BC**, un schéma qui montre les étapes de rapprochement l'une après l'autre.
 
@@ -40,6 +40,9 @@ Un document qui s'arrête à l'étape 9 ou 10 apparaît dans la file d'attente d
 {% hint style="info" %}
 Tous les motifs de rapprochement avec le BC ne peuvent pas être corrigés dans DocBits. Si le fournisseur envoie un mauvais numéro de BC, la carte indique **Action du fournisseur uniquement** : le fournisseur doit corriger le document et le renvoyer.
 {% endhint %}
+
+Consultez les cas séparés de prix et quantité et leurs preuves dans [Exemples](touchless-examples.md).
+
 
 ## Le flux de décision du rapprochement avec le BC
 
@@ -100,7 +103,7 @@ Un fournisseur facture l'article **« A-4711-X »**, votre BC indique **« 4711 
 
 * Dans le cluster, vous lisez *27 concernés, 27 récupérables*, gain attendu par exemple **+8,7 pp**.
 * La solution est de votre côté : ajoutez ou réordonnez une règle qui rapproche sur le numéro d'article du fournisseur ou sur la description, ou gérez les numéros d'article du fournisseur dans les données de base.
-* Après avoir modifié la règle, appliquez la modification avec une [proposition de modification](touchless-change-proposals.md) et lisez l'**Historique des modifications** deux semaines plus tard : taux pur avant et après.
+* Après avoir modifié la règle, appliquez la modification avec une [proposition de modification](touchless-change-proposals.md) et lisez l'**Historique des modifications** deux semaines plus tard : taux AP Touchless combiné avant et après.
 
 ### Exemple 3 : Le bon de commande n'est pas encore là
 
@@ -127,3 +130,7 @@ Après la mise en service d'une règle de transformation pour le tableau d'un fo
 * [Propositions de modification et rapports](touchless-change-proposals.md)
 * [Règles de correspondance des bons de commande](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * PO Matching Cards : guide complet
+
+<!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

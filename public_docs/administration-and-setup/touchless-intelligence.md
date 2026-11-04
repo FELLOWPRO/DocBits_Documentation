@@ -1,8 +1,18 @@
 # Touchless Intelligence
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/de.mp4" %}
-
 Touchless Intelligence erklärt zwei unterschiedliche Fragen: **Hat DocBits die Rechnung richtig ausgelesen?** Und: **Konnte der gesamte Prozess ohne Bearbeitungseingriff abschließen?** Korrekte Auslesung kann bei abweichenden Infor-Daten trotzdem Nacharbeit auslösen. AP bezeichnet die menschliche Kreditorenbuchhaltung.
+
+## Aktualisierte Videoanleitung: Touchless auf NOVA
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.mp4" %}
+
+**Prüffassung vom 4. November 2026 · 4:24 Minuten.** Der neue Film zeigt echte Aufnahmen von Dev NOVA 11.0.3: Kennzahlen und Berechnung, Original und Auslesung, Verarbeitungspfad, Tabellen- und Lieferantendetails sowie den Vergleich zweier Läufe. Die Rechenbeispiele und MCP-Aufrufbeispiele sind ausdrücklich von tatsächlich ausgeführten Aktionen getrennt. Hör- und Akzentprüfung sind noch offen.
+
+[Video mit Untertiteln, 13 Kapiteln und Sprechertext öffnen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html). Der Player unterstützt Hell- und Dunkelmodus sowie eine vergrößerte Ansicht mit eigener Untertitelzeile.
+
+Der fiktive Testbeleg bleibt in Bearbeitung und zeigt einen Pflichtfeldblocker sowie einen manuellen Neustart. Der Film belegt weder einen erfolgreichen Infor-Abgleich noch einen Export oder einen gemessenen Touchless-Zuwachs. Native Anzeige- und Übersetzungslücken sind unverändert sichtbar und müssen bei der Diagnose berücksichtigt werden.
+
+[Frühere Videoanleitung mit älterer Dashboardansicht](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/de.mp4).
 
 ## Die passende Unterseite finden
 

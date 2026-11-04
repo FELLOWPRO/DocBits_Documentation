@@ -1,5 +1,9 @@
 # Touchless Intelligence: Bestellabgleich-Diagnose
 
+<!-- touchless-admin-video-20261104:start -->
+**Video-Kapitel (Prüffassung):** [Auslesung und Infor trennen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html#chapter=04).
+<!-- touchless-admin-video-20261104:end -->
+
 ## Übersicht
 
 Viele Rechnungen bleiben bei der Bestellung stehen. Die Rechnung sagt das eine, die Bestellung (PO) etwas anderes, und die konfigurierten Prüfungen können den Unterschied nicht automatisch auflösen. **Eine korrekte Auslesung kann bei abweichenden Quelldaten trotzdem zu einem blockierten Bestellabgleich führen.** Ein vorübergehender Stopp ist noch kein Endergebnis: Eine spätere automatische Verarbeitung kann erfolgreich sein; eine aufgezeichnete manuelle Korrektur oder ein Neustart verhindert bei erfolgreichem Abschluss die Touchless-Einordnung.

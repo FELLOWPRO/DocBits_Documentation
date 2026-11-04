@@ -1,5 +1,9 @@
 # Touchless Intelligence: Dokumentverlauf
 
+<!-- touchless-admin-video-20261104:start -->
+**Video-Kapitel (Prüffassung):** [Den NOVA-Verlauf lesen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html#chapter=06).
+<!-- touchless-admin-video-20261104:end -->
+
 Geben Sie eine Dokument-ID in **Dokument-ID** ein oder öffnen Sie ein Beispieldokument aus einem Cluster, um zu sehen, **was mit genau diesem Dokument passiert ist**.
 
 Die Kopfzeile zeigt die Datei, ihren Status (zum Beispiel **In Bearbeitung**), den Lauf, den Sie gerade ansehen, und dessen ersten Blocker sowie eine Schaltfläche **Dokument** mit der Dokument-ID.

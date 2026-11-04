@@ -8,7 +8,7 @@ Los administradores deciden para cada tipo de documento si DocBits valida las fa
 
 Vaya a **Ajustes → Documentos electrónicos → Validación de facturas electrónicas**. La pestaña **Normas y políticas** empieza con la tabla **Validación para cada tipo de documento**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-es.png" alt="La tabla Validación para cada tipo de documento con los interruptores Activado y Bloqueo"><figcaption><p>Una fila por tipo de documento con los interruptores Activado y Bloqueo. Organización de ejemplo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-es-20261104.png" alt="Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev."><figcaption><p>Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev.</p></figcaption></figure>
 
 | Interruptor | Qué hace |
 | --- | --- |
@@ -20,9 +20,9 @@ Si un tipo de documento tiene excepciones por subtipo, la tabla muestra una nota
 ## Cambiar un ajuste
 
 1. Seleccione el interruptor que quiere cambiar.
-2. DocBits muestra **Confirmar el cambio de validación** con el tipo de documento y el cambio, por ejemplo *QUOTE: Activado → En*.
+2. DocBits muestra **Confirmar el cambio de validación** con el tipo de documento y el cambio, por ejemplo *QUOTE: activar la validación*.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-es.png" alt="El cuadro de diálogo Confirmar el cambio de validación"><figcaption><p>Cada cambio necesita una confirmación</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-es-20261104.png" alt="Confirmación de un cambio de configuración. Se canceló el cambio para esta captura."><figcaption><p>Confirmación de un cambio de configuración. Se canceló el cambio para esta captura.</p></figcaption></figure>
 
 3. Lea la nota: **Los informes ya guardados no se modifican.** El cambio solo se aplica a las nuevas comprobaciones, también cuando se reinicia el procesamiento de un documento.
 4. Seleccione **Confirmar cambio**, o **Cancelar** para mantener el ajuste anterior.

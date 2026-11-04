@@ -2,13 +2,13 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/es.mp4" %}
 
-La página **Validación de facturas electrónicas** (**Ajustes → Documentos electrónicos → Validación de facturas electrónicas**, ruta `/settings/einvoice-validation`; antes se llamaba *Reglas de validación*) controla cómo DocBits valida las facturas electrónicas entrantes. Se basa en el conjunto oficial de reglas **KoSIT XRechnung + ZUGFeRD** más los códigos de hallazgo internos del validador, y le permite anular la gravedad de cada regla para su organización.
+La página **Validación de facturas electrónicas** (**Ajustes → Documentos electrónicos → Validación de facturas electrónicas**, ruta `/settings/einvoice-validation`; antes se llamaba *Reglas de validación*) controla cómo DocBits valida las facturas electrónicas entrantes. Se basa en el conjunto oficial de reglas **KoSIT XRechnung + ZUGFeRD** más los códigos de hallazgo internos del validador, y le permite personalizar la gravedad de cada regla para su organización.
 
 > Esta página es para **facturas electrónicas** (XRechnung, ZUGFeRD, Factur-X). No es lo mismo que las **Reglas de validación de datos**, que comprueban los campos extraídos de un documento.
 
 ## Qué hay en esta página
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-es.png" alt="La página Validación de facturas electrónicas con la tabla Validación para cada tipo de documento"><figcaption><p>La página Validación de facturas electrónicas. La pestaña <strong>Normas y políticas</strong> empieza con la tabla <strong>Validación para cada tipo de documento</strong>. Organización de ejemplo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-es-20261104.png" alt="Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev."><figcaption><p>Validación y bloqueo por tipo de documento. Se han ocultado los nombres configurados. Ejemplo de Dev.</p></figcaption></figure>
 
 | Tema | Qué hace | Quién |
 | --- | --- | --- |

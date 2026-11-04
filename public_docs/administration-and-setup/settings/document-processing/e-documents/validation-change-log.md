@@ -4,12 +4,12 @@ El **Registro de cambios** registra cada cambio de los ajustes de validación. P
 
 Abra la pestaña **Registro de cambios**, junto a **Normas y políticas**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-es.png" alt="La pestaña Registro de cambios con las columnas Cuando, OMS, Regla, Desde → Hasta y Acción"><figcaption><p>El registro de cambios con cuatro entradas de ejemplo. El nombre de usuario está sustituido por un nombre de ejemplo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-es-20261104.png" alt="Extracto del registro de cambios. Se han ocultado los datos de los usuarios."><figcaption><p>Extracto del registro de cambios. Se han ocultado los datos de los usuarios.</p></figcaption></figure>
 
 | Columna | Qué muestra |
 | --- | --- |
-| **Cuando** | La hora del cambio. |
-| **OMS** | El usuario que hizo el cambio. |
+| **Fecha y hora** | La hora del cambio. |
+| **Usuario** | El usuario que hizo el cambio. |
 | **Regla** | El ajuste o la regla que cambió. |
 | **Desde → Hasta** | El valor anterior y el nuevo. |
 | **Acción** | El tipo de cambio. Las filas del asistente de configuración se pueden abrir para ver los cambios individuales. |

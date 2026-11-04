@@ -1,5 +1,7 @@
 # Informe de validación
 
+> En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.
+
 Cuando DocBits rechaza una factura electrónica, puede ver exactamente el motivo. El **informe de validación** enumera cada hallazgo en lenguaje claro, indica qué corregir y muestra el siguiente paso. Se abre desde el documento, no desde los ajustes. La pantalla donde lo encuentra se describe en [La pantalla de error de una factura electrónica rechazada](validation-error-screen.md).
 
 Esta página es para las personas que procesan facturas. Los administradores configuran las reglas en la página [Validación de facturas electrónicas](validation-rules.md) y eligen por tipo de documento si una comprobación fallida bloquea la factura; consulte [Validación para cada tipo de documento](validation-per-document-type.md).
@@ -8,13 +10,13 @@ Esta página es para las personas que procesan facturas. Los administradores con
 
 Si la validación está **activada** y **bloquea** para el tipo de documento, una factura con un hallazgo bloqueante recibe el estado **Error**. Abra el documento desde el panel. La vista de error muestra el XML a la izquierda y el motivo a la derecha.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-es.png" alt="La vista de error de una factura electrónica rechazada, con el XML a la izquierda y el motivo a la derecha"><figcaption><p>La vista de error: el XML de la factura y el primer hallazgo bloqueante con un siguiente paso. Factura de ejemplo con nombres ficticios.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-error-view-es-20261104-v2.png" alt="Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar."><figcaption><p>Pantalla de error de una factura de ejemplo totalmente ficticia. En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.</p></figcaption></figure>
 
 La tarjeta de la derecha indica la capa que rechazó la factura (por ejemplo, **L3 · Reglas de negocio**), el código de la regla (por ejemplo, `BR-CO-26`), una breve explicación y un **Siguiente paso**. Seleccione **Ver detalles de validación** para abrir el informe completo.
 
 ## Leer el informe
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-es.png" alt="La parte superior del informe de validación con los datos del archivo, el veredicto y el resultado por nivel"><figcaption><p>La parte superior del informe: datos del archivo, el veredicto y el resultado de cada nivel</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-top-es-20261104-v2.png" alt="Informe de la factura ficticia con los datos del archivo y el resultado."><figcaption><p>Informe de la factura ficticia con los datos del archivo y el resultado.</p></figcaption></figure>
 
 El informe empieza con los datos del archivo:
 
@@ -47,14 +49,14 @@ La tabla **Resultado por nivel** muestra cuántos errores, advertencias y mensaj
 
 ## Los hallazgos
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-es.png" alt="La lista de hallazgos con código, nivel, texto en lenguaje claro, cómo solucionarlo y Mostrar en XML"><figcaption><p>Cada hallazgo tiene un código, un nivel, un texto legible y una indicación de cómo solucionarlo</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-es-20261104-v2.png" alt="Extracto del informe: falta el identificador del vendedor, regla BR-CO-26."><figcaption><p>Extracto del informe: falta el identificador del vendedor, regla BR-CO-26.</p></figcaption></figure>
 
-Cada hallazgo es una fila en la sección **Recomendaciones**:
+Cada hallazgo es una fila en la sección **Resultados**:
 
 * **Pos** y **Código**: la posición en el informe y el código de la regla, por ejemplo `BR-CO-26`.
 * **Nivel**: **Error**, **Advertencia** o **Información**.
 * **Su organización**: el nivel según los ajustes de su organización. Un guion significa que su organización no cambió el nivel.
-* **Campo y texto**: el problema en lenguaje claro, el campo afectado (por ejemplo, *BT-29 Seller identifier*), el **Mensaje técnico** del validador y **Cómo solucionarlo**.
+* **Campo y texto**: el problema en lenguaje claro, el campo afectado (por ejemplo, *BT-29 Identificador del vendedor*), el **Mensaje técnico** del validador y **Cómo solucionarlo**.
 * **Línea** y **Mostrar en XML**: seleccione **Mostrar en XML** para cerrar el informe y saltar a la línea en el visor XML.
 
 DocBits tiene textos en lenguaje claro para las reglas más habituales. Para una regla sin ese texto, el informe muestra el mensaje técnico del validador.

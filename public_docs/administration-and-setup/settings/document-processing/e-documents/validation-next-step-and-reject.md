@@ -1,10 +1,12 @@
 # Siguiente paso y rechazar un documento
 
+> En esta versión, algunos textos de la interfaz pueden seguir en inglés o contener traducciones incorrectas. La guía explica su significado; las capturas muestran la interfaz sin modificar.
+
 Después de leer el [informe de validación](validation-report.md), el informe le indica qué hacer. También puede rechazar el documento.
 
 ## Qué hacer después
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-es.png" alt="El final del informe con la evaluación, el siguiente paso y los botones"><figcaption><p>La evaluación, el siguiente paso y los botones al final del informe</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-es-20261104-v2.png" alt="Evaluación, siguiente paso y acciones del informe."><figcaption><p>Evaluación, siguiente paso y acciones del informe.</p></figcaption></figure>
 
 La **Evaluación** dice en una frase si la factura es conforme. El bloque **Siguiente paso** le indica qué hacer:
 
@@ -21,7 +23,7 @@ Los botones al final del informe:
 
 ## Rechazar un documento
 
-<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-es.png" alt="El cuadro de diálogo Rechazar documento con el motivo rellenado a partir del informe"><figcaption><p>El motivo se rellena a partir de los errores del informe. Puede editarlo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-es-20261104-v2.png" alt="Diálogo para rechazar la factura ficticia. Se canceló el rechazo."><figcaption><p>Diálogo para rechazar la factura ficticia. Se canceló el rechazo.</p></figcaption></figure>
 
 1. En el informe, seleccione **Rechazar documento**.
 2. Revise el **Motivo**. DocBits lo rellena a partir de los errores del informe. Puede editar el texto.

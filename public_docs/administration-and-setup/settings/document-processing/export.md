@@ -29,7 +29,7 @@ Jede Zeile in der Liste zeigt an:
 * **Exportmethode** – wohin das Dokument gesendet wird (z. B. Infor, IDM, SFTP)
 * **Aktionen** – Schaltflächen zum **Bearbeiten, Löschen** oder **Aktivieren/Deaktivieren** der Konfiguration
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_list_view.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_list_view.png)
 
 #### **Wichtige Regeln für Exportkonfigurationen**
 
@@ -121,7 +121,7 @@ Die folgenden Aufnahmen verwenden die deutsche Oberfläche. Technische Bezeichnu
 * **Dateiname Exportmodus** Gibt an, ob die exportierte Datei ihren ursprünglichen Dateinamen behält oder mit der DocBits-Dokument-ID umbenannt wird.
 * **Dokumentenverlauf einbeziehen** Wenn aktiviert, enthält die exportierte Datei den Dokumentenverlauf basierend auf den im Dashboard verfügbaren Protokollen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_sftp_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_sftp_2.png)
 
 <figure><img src="../../../.gitbook/assets/s50-export_sftp_3-de.png" alt="Erweiterte SFTP-Einstellungen für Dateinamen und Dokumentenverlauf in der deutschen Oberfläche."><figcaption><p>Erweiterte SFTP-Einstellungen für Dateinamen und Dokumentenverlauf in der deutschen Oberfläche.</p></figcaption></figure>
 

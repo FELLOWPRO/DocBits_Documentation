@@ -6,7 +6,7 @@ DocBits Origin-Einstellung erklärt: Länderstandards für Datums- und Zahlenfor
 
 DocBits zeichnet sich durch die Anpassung von Dokumentlayouts entsprechend ihrer geografischen Herkunft aus und standardisiert gleichzeitig Elemente wie Währungsformate basierend auf den Browsereinstellungen des Benutzers. Lassen Sie uns erkunden, wie Sie den Layout Builder nutzen können, um Layouts für verschiedene Herkünfte anzupassen, wie z.B. die USA und Deutschland.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/origin_layout_1.png)
 
 ## **Verstehen der herkunftsbasierten Anpassung**
 
@@ -24,7 +24,7 @@ DocBits zeichnet sich durch die Anpassung von Dokumentlayouts entsprechend ihrer
 * Felder anpassen: Passen Sie das Layout an, indem Sie Felder hinzufügen oder entfernen. Fügen Sie beispielsweise 'City Tax' für ein US-Layout hinzu.
 * Anwenden und testen: Nach der Anpassung wenden Sie das Layout auf Ihre Dokumente an und testen Sie es, um die Genauigkeit sicherzustellen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/origin_layout_2.svg)
 
 ## **Tipps für effektive Anpassung**
 
@@ -36,10 +36,10 @@ DocBits zeichnet sich durch die Anpassung von Dokumentlayouts entsprechend ihrer
 
 Wenn Sie das Standardlayout auf mehrere Origins anwenden möchten, drücken Sie **Standardlayout auf die Herkunft anwenden**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_3.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/origin_layout_3.png)
 
 Ein Popup erscheint, in dem Sie die Origins auswählen können, auf die Sie das Standardlayout anwenden möchten. Sie können **Alle auswählen** oder **Auswahl aufheben** verwenden, um Ihre Auswahl schnell zu verwalten. Das Popup zeigt die Anzahl der aktuell ausgewählten Origins an.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/origin_layout_4.png)
 
 Nach Ihrer Auswahl klicken Sie auf **Auf Herkünfte anwenden**. Eine Erfolgsmeldung bestätigt, dass die Origins aktualisiert wurden.

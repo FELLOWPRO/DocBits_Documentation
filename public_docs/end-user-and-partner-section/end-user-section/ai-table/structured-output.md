@@ -70,6 +70,10 @@ Podgląd nie obejmuje treningu i tagów dostawcy. Dodatkowe instrukcje mogą zez
 
 Bez użytecznej konfiguracji pól nagłówka nie powstanie pełny schemat. Sam włączony przełącznik nie potwierdza jego użycia. Sprawdź wykonanie przez **Wyjaśnij ekstrakcję** i dostępne logi; [Tabela AI](README.md) opisuje te widoki i uprawnienia.
 
+W tym przykładzie konfiguracji żądane kolumny INVOICE_TABLE obejmują `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` i `PROJECT_CODE`. Własna kolumna projektu jest jawnie ustawiona na **Tak**, jak w kroku 2 poniższego przykładu. Podgląd zawiera też inne skonfigurowane kolumny faktury; wybór i liczba w organizacji mogą się więc różnić. **12** oznacza liczbę żądanych kolumn tej tabeli, a nie liczbę wierszy ani łączną liczbę właściwości schematu. To podgląd konfiguracji, nie wynik ekstrakcji.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-pl-20261104.png" alt="Fragment podglądu schematu Faktury z włączonym Structured Output. INVOICE_TABLE żąda 12 kolumn, w tym PROJECT_CODE z Use AI ustawionym na Tak. Pozostałe skonfigurowane tabele i licznik właściwości znajdują się poza tym fragmentem. Etykieta „Pola nagłówka wymagane” oznacza tu pola żądane od AI, a nie obowiązkową walidację dokumentu."><figcaption><p>Fragment podglądu schematu Faktury z włączonym Structured Output. INVOICE_TABLE żąda 12 kolumn, w tym PROJECT_CODE z Use AI ustawionym na Tak. Pozostałe skonfigurowane tabele i licznik właściwości znajdują się poza tym fragmentem. Etykieta „Pola nagłówka wymagane” oznacza tu pola żądane od AI, a nie obowiązkową walidację dokumentu.</p></figcaption></figure>
+
 ## 5. Przykład: faktura z dwoma numerami i projektem
 
 To syntetyczny przykład oczekiwanego wyniku do sprawdzenia, a nie wykonana ekstrakcja.

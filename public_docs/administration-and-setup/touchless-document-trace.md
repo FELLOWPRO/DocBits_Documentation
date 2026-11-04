@@ -4,7 +4,7 @@ Inserite un ID documento in **Document ID**, oppure aprite un documento di esemp
 
 L'intestazione mostra il file, il suo stato (ad esempio **In corso**), l'esecuzione che state consultando e il suo primo bloccante, oltre a un pulsante **Documento** con l'ID del documento.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-pipeline-it.png" alt="La pagina Tracciamento del documento con l'intestazione del file, il Percorso della condotta a 14 passaggi e l'inizio del registro dei passaggi"><figcaption><p>Il tracciamento del documento: il percorso della condotta con tutti i passaggi e il registro dei passaggi con ciò che ognuno ha registrato.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-overview-it.png" alt="Dev NOVA: percorso e valori registrati nella prima esecuzione di prova"><figcaption><p>Nuova acquisizione da Dev NOVA 11.0.3 del 4 novembre 2026. La fattura fittizia si arresta alla convalida dei campi. Classificazione, ricerca del fornitore ed estrazione di intestazione e tabella contengono valori realmente registrati. Le schede mostrano documento e cronologia. È l’interfaccia del prodotto in funzione. In questa versione i nomi dei passaggi nel percorso restano in inglese. Nel confronto, Palcoscenico indica una fase del processo: è un errore di traduzione dell’interfaccia.</p></figcaption></figure>
 
 Il **Percorso della condotta** mostra 14 passaggi: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Ogni passaggio porta un solo stato:
 
@@ -12,7 +12,7 @@ Il **Percorso della condotta** mostra 14 passaggi: Intake, Classification, E-Doc
 | --- | --- |
 | **Superato** (verde) | Il passaggio è andato a buon fine |
 | **Mi sono fermato qui** (arancione) | Il passaggio ha bloccato il documento |
-| **Prossimamente** | Il documento non è mai arrivato fin qui |
+| **Non raggiungibile** | Passaggio successivo al primo blocco nel percorso; controllare nel registro eventuali esecuzioni aggiuntive registrate |
 | **Niente di registrato** (tratteggiato) | Per questo passaggio non è stato registrato alcun dato |
 | **Non applicabile** | Il passaggio non si applica a questo documento |
 
@@ -26,15 +26,29 @@ Il **registro dei passaggi** sotto il percorso elenca gli stessi passaggi con ci
 * Un valore che nessun passaggio ha registrato compare come **Non registrato**, mai come valore inventato. I valori sono numeri e termini fissi, mai testo del documento.
 * **Mostra diagnostica grezza** attiva i dati grezzi quando l'assistenza li richiede.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-stage-log-it.png" alt="Il registro dei passaggi con i punti di stato, chip di valore come Soglia 60 percento e 8 campi mancanti, il passaggio bloccato Field Validation e la cronologia delle esecuzioni a destra"><figcaption><p>Ogni passaggio mostra ciò che ha registrato; il passaggio bloccato indica la sua causa.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-stage-log-it.png" alt="Dev NOVA: registro con affidabilità, valori estratti e convalida bloccata"><figcaption><p>Prima esecuzione reale: affidabilità della classificazione del 100 %, 0 fornitori candidati, 1 riga e 7 lacune di abbinamento. Un passaggio superato conferma l’esecuzione, non l’identificazione del fornitore o la correttezza di tutti i valori. La convalida segnala un campo obbligatorio mancante.</p></figcaption></figure>
 
 ### Esecuzioni e modifiche
 
-Il selettore di esecuzione in cima al registro dei passaggi (**Eseguire 1 · Attuale**) passa da un'esecuzione all'altra del documento. La **cronologia delle esecuzioni** a destra elenca ogni esecuzione con il suo esito e il punto in cui si è fermata. Quando un documento è stato eseguito più di una volta, scegliete un'esecuzione nel selettore per confrontarla con quella attuale: i valori modificati portano allora un contrassegno con la differenza e la sua unità, ad esempio **−2 campi** o **+3 %**.
+Il selettore permette di scegliere un tentativo; la cronologia ne mostra l’esito e il primo blocco. Le differenze registrate confrontano l’esecuzione selezionata con la precedente, non automaticamente con quella attuale. Ogni differenza comprende l’unità; i valori identici rimangono invariati.
 
-La scheda **Documento** accanto al registro dei passaggi indica il tipo di documento, il fornitore, il numero di fattura, l'ordine d'acquisto, il numero di pagine e se l'analisi è basata su **regole** o scritta da un'IA.
+La scheda Documento mostra tipo, fornitore, numero fattura, ordine, pagine e metodo di analisi registrato. Qui Manuale corrisponde al tipo indicato durante l’importazione di prova. Il 100 % non dimostra quindi in modo indipendente la precisione di una classificazione automatica.
 
-**Esempio.** I documenti di un fornitore si fermano tutti al passaggio 8. Nel tracciamento vedete ogni volta gli stessi campi mancanti. Non è un problema di estrazione dei singoli documenti, ma un valore predefinito mancante nella configurazione dei campi: correggetelo una volta e l'intero cluster è recuperabile.
+### Leggere i dettagli del fornitore e della tabella
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-supplier-it.png" alt="Dev NOVA: identificativi rilevati, ricerca nei dati anagrafici e assegnazione del fornitore"><figcaption><p>Il nome è presente nella fattura e viene cercato nei dati anagrafici, ma non viene assegnato alcun fornitore. La fattura di prova non contiene partita IVA, IBAN, e-mail o GLN. Una corrispondenza anagrafica assente è diversa da un valore non trovato nella fattura.</p></figcaption></figure>
+
+Controllate separatamente se l’identificativo era presente nel documento, se è stato cercato e se è stato assegnato un fornitore. Un passaggio verde non risponde da solo a queste tre domande.
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-table-it.png" alt="Dev NOVA: dettagli della prima esecuzione con sette lacune di abbinamento"><figcaption><p>I dettagli indicano 7 lacune di abbinamento per 1 tabella e 1 riga. Verificate la mappatura delle colonne prima di concludere che l’estrazione sia errata. Il riepilogo del confronto in fondo non è una base valida per la prima esecuzione selezionata, che non ha una precedente.</p></figcaption></figure>
+
+### Riconoscere un vero riavvio
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-runs-it.png" alt="Dev NOVA: confronto di due esecuzioni reali con valori registrati invariati"><figcaption><p>La stessa fattura dopo un vero riavvio manuale, senza correzioni dei campi. Una nuova esecuzione prova un altro tentativo, non un miglioramento. I valori identici rimangono invariati; non sono state inventate differenze.</p></figcaption></figure>
+
+Un riavvio manuale è un intervento umano. Il caso sarà AP Assisted solo dopo un eventuale completamento riuscito. Finché rimane in corso, è escluso dal denominatore dei documenti conclusi.
+
+Limiti delle prove. Il caso non dimostra approvazione aziendale, esportazione riuscita o conferma ERP. Il motore di abbinamento precedente non fornisce qui un percorso decisionale registrato; non è una prova di confronto con Infor. In NOVA 11.0.3, il registro può mostrare una ricerca ordine superata dopo la convalida bloccata, mentre il percorso la presenta come passaggio successivo. Controllate entrambe le viste. Il riepilogo indica inoltre che il numero fattura non è registrato, benché sia presente nell’estrazione; confrontate originale e campi estratti.
 
 ## Separare estrazione e dati di origine
 
@@ -66,3 +80,5 @@ Le schermate di questa pagina mostrano l'interfaccia in italiano.
 <!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
 
 <!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+
+Le cinque nuove immagini mostrano l’interfaccia localizzata di Dev NOVA 11.0.3 e la stessa fattura creata per la documentazione. Ogni immagine separata di originale e campi illustra solo tale confronto.

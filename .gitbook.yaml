@@ -1,4 +1,4 @@
-root: ./docbits/
+root: ./public_docs/
 
 redirects:
     administration-and-setup/setup/supplier-portal-old: administration-and-setup/setup/supplier-portal/README.md

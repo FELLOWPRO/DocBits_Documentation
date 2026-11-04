@@ -13,7 +13,7 @@ import re
 import subprocess
 from urllib.parse import unquote
 
-ROOTS = {'en': 'docbits', 'de': 'deutsch', 'es': 'espanol', 'fr': 'french',
+ROOTS = {'en': 'public_docs', 'de': 'deutsch', 'es': 'espanol', 'fr': 'french',
          'it': 'italian', 'nl': 'dutch', 'pl': 'polish', 'pt': 'portuguese', 'zh': 'chinese'}
 NEW_GUIDES = ('logic-cards-guide.md', 'export-cards-guide.md',
               'po-comparison-versions-guide.md', 'quote-comparison-guide.md', 'card-versions-guide.md')
@@ -101,7 +101,7 @@ def check(repo: Path, locales: list[str]) -> list[str]:
                for p in (repo / folder / 'administration-and-setup/workflow').rglob('*.md')}
     existing = tracked | present
     errors = []
-    english = repo / 'docbits/administration-and-setup/workflow/cards-overview'
+    english = repo / 'public_docs/administration-and-setup/workflow/cards-overview'
     expected = {p.relative_to(english).as_posix() for p in english.rglob('*.md')}
     for lang in locales:
         summary = (repo / ROOTS[lang] / 'SUMMARY.md').read_text()

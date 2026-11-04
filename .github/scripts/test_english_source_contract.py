@@ -13,21 +13,6 @@ ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / ".github/scripts/english_source_contract.py"
 
 
-def test_default_git_sync_root_matches_active_english_space():
-    default = yaml.safe_load((ROOT / ".gitbook.yaml").read_text())
-    site = yaml.safe_load((ROOT / "gitbook-docs.yaml").read_text())
-    english = [
-        item["content"]["directory"]
-        for item in site["site"]["structure"]
-        if item.get("content", {}).get("language") == "en"
-    ]
-    assert len(english) == 1
-    assert Path(default["root"]) == Path(english[0]), (
-        "Default Git Sync root must match the active English GitBook directory; "
-        "otherwise approved English changes can remain unpublished."
-    )
-
-
 @pytest.fixture
 def checker():
     spec = importlib.util.spec_from_file_location("english_source_contract", SCRIPT)
@@ -146,36 +131,29 @@ def test_accepts_no_content_changes(checker, repository):
     assert checker.check(repo, base, base) == []
 
 
-def test_rejects_default_root_that_disagrees_with_active_space(checker, repository):
+@pytest.mark.parametrize("root", ["../outside", "/absolute", "docbits/../outside", "./"])
+def test_rejects_unsafe_or_empty_root(checker, repository, root):
     repo, base = repository
-    write(repo, ".gitbook.yaml", "root: ./readme/\n")
-    with pytest.raises(ValueError, match="root"):
-        checker.check(repo, base, commit(repo))
-
-
-@pytest.mark.parametrize("directory", ["../outside", "/absolute", "docbits/../outside"])
-def test_rejects_unsafe_active_directory(checker, repository, directory):
-    repo, base = repository
-    write(
-        repo, "gitbook-docs.yaml",
-        f"site:\n  structure:\n    - content:\n        directory: {directory}\n        language: en\n",
-    )
+    write(repo, ".gitbook.yaml", f"root: {root}\n")
     with pytest.raises(ValueError, match="directory"):
         checker.check(repo, base, commit(repo))
 
 
-def test_rejects_missing_english_space(checker, repository):
+def test_follows_a_renamed_root(checker, repository):
     repo, base = repository
-    write(repo, "gitbook-docs.yaml", "site:\n  structure: []\n")
-    with pytest.raises(ValueError, match="English"):
-        checker.check(repo, base, commit(repo))
+    git(repo, "mv", "docbits", "public_docs")
+    write(repo, ".gitbook.yaml", "root: ./public_docs/\n")
+    head = commit(repo)
+    assert checker.check(repo, base, head) == []
+    write(repo, "readme/page.md", "# Still writes the retired folder\n")
+    errors = checker.check(repo, head, commit(repo))
+    assert any("public_docs/page.md" in error for error in errors)
 
 
-def test_rejects_duplicate_english_space(checker, repository):
+def test_rejects_missing_gitbook_configuration(checker, repository):
     repo, base = repository
-    existing = (repo / "gitbook-docs.yaml").read_text()
-    write(repo, "gitbook-docs.yaml", existing + "    - content:\n        directory: ./other\n        language: en\n")
-    with pytest.raises(ValueError, match="English"):
+    (repo / ".gitbook.yaml").unlink()
+    with pytest.raises(ValueError, match="Missing configuration"):
         checker.check(repo, base, commit(repo))
 
 

@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - "readme/**"
-      - "docbits/**"
+      - "public_docs/**"
       - ".gitbook.yaml"
       - "gitbook-docs.yaml"
       - ".github/scripts/english_source_contract.py"

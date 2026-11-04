@@ -3,7 +3,7 @@ name: Docs Search Sync
 # Keeps the fulltextsearch docs search index (CORE-6111, Settings-Assistent)
 # in step with docs.docbits.com.
 #
-# - push to main (docbits/) or de (readme/): diffs the two commits and POSTs only the changed
+# - push to main or de (public_docs/ on both): diffs the two commits and POSTs only the changed
 #   pages (see .github/scripts/docs_search_sync.py "diff" mode). A rename
 #   ingests the new URL before deleting the old one; a SUMMARY.md change
 #   also ingests any page newly reachable from it (even if that page's
@@ -36,8 +36,7 @@ on:
       - main
       - de
     paths:
-      - "docbits/**"
-      - "readme/**"
+      - "public_docs/**"
   schedule:
     - cron: "17 3 * * *"
   workflow_dispatch: {}
@@ -71,9 +70,8 @@ jobs:
           DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
           DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
           SYNC_LANG: ${{ github.ref_name }}
-          # English lives in docbits/ on main (the GitBook space imports it);
-          # the language branches keep their own readme/ layout.
-          DOCS_ROOT: ${{ github.ref_name == 'main' && 'docbits' || 'readme' }}
+          # Every branch keeps its GitBook content in public_docs/.
+          DOCS_ROOT: public_docs
           SYNC_BEFORE: ${{ github.event.before }}
           SYNC_AFTER: ${{ github.event.after }}
         run: |
@@ -94,18 +92,18 @@ jobs:
       max-parallel: 3
       matrix:
         # lang = index key (docs branch name), root = folder the pages are
-        # read from: docbits/ on main for English, the branch's readme/ for
+        # read from: public_docs/ on main for English, the branch's public_docs/ for
         # the languages (fetched into _lang/ by the step below).
         include:
-          - { lang: main, root: docbits }
-          - { lang: de, root: _lang/readme }
-          - { lang: es, root: _lang/readme }
-          - { lang: fr, root: _lang/readme }
-          - { lang: it, root: _lang/readme }
-          - { lang: nl, root: _lang/readme }
-          - { lang: pl, root: _lang/readme }
-          - { lang: pt, root: _lang/readme }
-          - { lang: zh, root: _lang/readme }
+          - { lang: main, root: public_docs }
+          - { lang: de, root: _lang/public_docs }
+          - { lang: es, root: _lang/public_docs }
+          - { lang: fr, root: _lang/public_docs }
+          - { lang: it, root: _lang/public_docs }
+          - { lang: nl, root: _lang/public_docs }
+          - { lang: pl, root: _lang/public_docs }
+          - { lang: pt, root: _lang/public_docs }
+          - { lang: zh, root: _lang/public_docs }
     steps:
       - uses: actions/checkout@v6
         with:
@@ -114,7 +112,7 @@ jobs:
       - name: Check search sync regressions
         run: python3 -m unittest discover -s .github/scripts -p 'test_docs_search_sync*.py'
 
-      # The language spaces sync from their own branch (readme/) since
+      # The language spaces sync from their own branch (public_docs/) since
       # 2026-11-03; read the pages from there, not from main.
       - name: Fetch language branch pages
         if: matrix.lang != 'main'
@@ -123,7 +121,7 @@ jobs:
         run: |
           git fetch --no-tags --depth=1 origin "+refs/heads/$SYNC_LANG:refs/remotes/origin/$SYNC_LANG"
           mkdir -p _lang
-          git archive "origin/$SYNC_LANG" readme | tar -x -C _lang
+          git archive "origin/$SYNC_LANG" public_docs | tar -x -C _lang
 
       - name: Full ingest + reconcile
         env:

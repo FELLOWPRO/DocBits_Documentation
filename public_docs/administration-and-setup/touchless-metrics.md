@@ -129,7 +129,7 @@ Die Tabelle setzt eine erfolgreiche Verarbeitung voraus, einschließlich der erf
 | --- | --- | --- |
 | Prozentwert der AP-Karte auf der Übersicht | Gemeinsame Quote aus Pure und reiner Freigabe | (120 + 30) ÷ 190 = 78,9 % |
 | Dokumentanzahl unter diesem Prozentwert im aktuellen Bericht | Pure plus reine Freigaben | 150 = 120 + 30 |
-| Ergebniskachel oder Segment der Lieferantendiagnose | Eigenständige Kategorie „nur Freigabe“ | 30 ÷ 190 = 15,8 % |
+| Ergebnis-Kategorie AP Touchless, etwa der MCP-Bucket `AP_TOUCHLESS` | Eigenständige Kategorie „nur Freigabe“ | 30 ÷ 190 = 15,8 % |
 | Blaue AP-Linie der aktuellen [Trendaufnahme](touchless-dashboard.md) | Gemeinsame Quote aus Pure und reiner Freigabe je Zeitpunkt | Tages- bzw. Wochenwert mit eigener Fallzahl |
 
 Die Kategorien ergeben zusammen 100 % der abgeschlossenen, berücksichtigten Dokumente. Die Prozentwerte der Pure-Karte und der gemeinsamen AP-Karte überlappen sich und dürfen nicht addiert werden.

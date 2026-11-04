@@ -24,7 +24,7 @@ DocBits blinkt uit in het aanpassen van documentlay-outs op basis van hun geogra
 * Velden aanpassen: Pas de lay-out aan door velden toe te voegen of te verwijderen. Neem bijvoorbeeld 'City Tax' op voor een VS-lay-out.
 * Toepassen en testen: Pas na aanpassing de lay-out toe op uw documenten en test om nauwkeurigheid te garanderen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/origin_layout_2.svg)
 
 ## **Tips voor effectieve aanpassing**
 

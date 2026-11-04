@@ -23,7 +23,7 @@ Controleer vóór het overstappen of beide kanalen gereed en beschikbaar zijn in
 
 ## Overzicht van de levenscyclus
 
-![Releaselevenscyclus van DocBits VESTA en NOVA in drie fasen](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy.png)
+![Releaselevenscyclus van DocBits VESTA en NOVA in drie fasen](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
 Elke cyclus bestaat uit drie fasen. Een door FELLOWPRO beheerde rollover brengt vervolgens de NOVA-productierelease naar VESTA en start de volgende cyclus.
 
@@ -82,7 +82,7 @@ Dezelfde drie fasen herhalen zich vervolgens met de nieuwe versienummers.
 
 Het onderstaande diagram illustreert de hierboven beschreven releasecyclus in meer detail.
 
-![Gedetailleerde releasecyclus van DocBits VESTA en NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
+![Gedetailleerde releasecyclus van DocBits VESTA en NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
 
 ### Releasefrequentie
 

@@ -1,9 +1,5 @@
 # Touchless Intelligence: Änderungsvorschläge und Berichte
 
-<!-- touchless-admin-video-20261104:start -->
-**Video-Kapitel (Prüffassung):** [Mit MCP gezielt verbessern](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html#chapter=11).
-<!-- touchless-admin-video-20261104:end -->
-
 
 Eine Empfehlung kann einen **Änderungsvorschlag** enthalten. Er beschreibt eine unterstützte Einstellungsänderung; er ersetzt keine Korrektur von Bestell- oder Stammdaten im Quellsystem. Ein Bericht oder ein Cluster allein ändert noch keine Daten. Administratoren arbeiten damit in vier Schritten:
 

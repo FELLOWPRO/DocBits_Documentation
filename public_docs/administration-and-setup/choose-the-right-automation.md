@@ -24,6 +24,8 @@ O DocBits oferece várias formas de alterar, verificar e encaminhar documentos: 
 
 Todo documento passa pelas mesmas etapas. Cada ferramenta tem o seu lugar nesse fluxo, e esse lugar determina o que ela enxerga e o que ainda pode alterar.
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Pátio ferroviário isométrico: um vagão de documento passa por Regras de Transformação, Regras de Correspondência de Pedido de Compra, novamente Regras de Transformação e Regras de Validação Personalizadas, depois por um sinal Pronto para Validação, e então por Standard Workflow, Advanced Workflow e um card do Workflow SDK"><figcaption>Um vagão de documento percorre, da esquerda para a direita, 1 Regras de Transformação, 2 Regras de Correspondência de Pedido de Compra (as Regras de Transformação são executadas novamente após a correspondência) e 3 Regras de Validação Personalizadas; só depois do sinal aceso Pronto para Validação um workflow pode iniciar: 4 Standard Workflow, 5 Advanced Workflow (o desvio de ramificação) ou 6 um card do Workflow SDK, enquanto os Scripts (&#x3C;/>) se conectam nos pontos de acionamento ao longo do caminho, antes do sinal.</figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-flow-pt.svg" alt="Onde as Regras de Transformação, as Regras de Correspondência de PO, as Regras de Validação Personalizadas, os Scripts e os Workflows atuam no fluxo do documento"><figcaption></figcaption></figure>
 
 Em palavras:

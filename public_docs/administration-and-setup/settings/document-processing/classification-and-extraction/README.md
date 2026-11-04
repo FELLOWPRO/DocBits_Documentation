@@ -61,6 +61,10 @@ Depois, poderá:
 
     
 
+Após uma divisão bem-sucedida, o documento original é eliminado e as páginas continuam como documentos separados que partilham o mesmo lote.
+
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Ilustração isométrica de oito folhas em uma bandeja, com um scanner lendo um código de barras na folha 6. Divisórias ficam à frente das folhas 3 e 6 e separam as folhas em três documentos; um elástico envolve a bandeja inteira."><figcaption><p>Exemplo com o padrão <code>^INV\d{6}$</code>: os códigos das folhas 3 e 6 correspondem e cada um inicia um novo documento, o código da folha 4 não corresponde e não divide nada, e o elástico representa o lote que os documentos resultantes compartilham.</p></figcaption></figure>
+
 ## Formatação de valores
 
 Na secção **Formatação de valores**, tem duas opções:

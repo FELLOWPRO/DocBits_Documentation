@@ -8,7 +8,7 @@ Beheerders bepalen per documenttype of DocBits binnenkomende e-facturen valideer
 
 Ga naar **Instellingen → E-documenten → Validatie van elektronische facturen**. Het tabblad **Regels en beleid** begint met de tabel **Validatie voor elk documenttype**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-nl.png" alt="De tabel Validatie voor elk documenttype met de schakelaars Ingeschakeld en Blokkeren"><figcaption><p>Eén rij per documenttype met de schakelaars Ingeschakeld en Blokkeren. Voorbeeldorganisatie.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-nl-20261104.png" alt="Validatie en blokkering per documenttype. Ingestelde namen zijn verborgen. Voorbeeld uit Dev."><figcaption><p>Validatie en blokkering per documenttype. Ingestelde namen zijn verborgen. Voorbeeld uit Dev.</p></figcaption></figure>
 
 | Schakelaar | Wat hij doet |
 | --- | --- |
@@ -20,9 +20,9 @@ Als een documenttype overschrijvingen voor subtypen heeft, toont de tabel daarov
 ## Een instelling wijzigen
 
 1. Selecteer de schakelaar die u wilt wijzigen.
-2. DocBits toont **Bevestig de wijziging in de validatie** met het documenttype en de wijziging, bijvoorbeeld *QUOTE: Ingeschakeld → Op*.
+2. DocBits toont **Bevestig de wijziging in de validatie** met het documenttype en de wijziging, bijvoorbeeld *QUOTE: Ingeschakeld → Aan*.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-nl.png" alt="Het dialoogvenster Bevestig de wijziging in de validatie"><figcaption><p>Elke wijziging moet worden bevestigd</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-nl-20261104.png" alt="Bevestiging van een instellingswijziging. De wijziging is voor deze opname geannuleerd."><figcaption><p>Bevestiging van een instellingswijziging. De wijziging is voor deze opname geannuleerd.</p></figcaption></figure>
 
 3. Lees de opmerking: **Reeds opgeslagen rapporten blijven ongewijzigd.** De wijziging geldt alleen voor nieuwe controles, ook wanneer u de verwerking van een document opnieuw start.
 4. Selecteer **Wijziging bevestigen**, of **Annuleren** om de oude instelling te behouden.

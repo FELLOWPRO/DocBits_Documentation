@@ -85,21 +85,12 @@ def test_rejects_legacy_source_only_page_change(checker, repository):
     assert any("readme/page.md" in error and "docbits/page.md" in error for error in errors)
 
 
-def test_accepts_published_counterpart_without_overwriting_newer_public_sections(
-    checker, repository,
-):
+def test_rejects_readme_edit_even_when_published_counterpart_changes(checker, repository):
     repo, base = repository
     write(repo, "readme/page.md", "# Corrected source\n")
-    published = "# Corrected public page\n\nNewer public section.\n"
-    write(repo, "docbits/page.md", published)
-    assert checker.check(repo, base, commit(repo)) == []
-    assert (repo / "docbits/page.md").read_text() == published
-
-
-def test_accepts_canonical_catchup_when_content_is_already_published(checker, repository):
-    repo, base = repository
-    write(repo, "readme/page.md", (repo / "docbits/page.md").read_bytes())
-    assert checker.check(repo, base, commit(repo)) == []
+    write(repo, "docbits/page.md", "# Corrected public page\n")
+    errors = checker.check(repo, base, commit(repo))
+    assert any("readme/page.md" in error and "retired" in error for error in errors)
 
 
 @pytest.mark.parametrize("relative", ["docbits/page.md", "deutsch/page.md"])
@@ -116,38 +107,30 @@ def test_rejects_source_only_binary_asset_with_spaces(checker, repository):
     assert any("docbits/.gitbook/assets/diagram (EN).png" in error for error in errors)
 
 
-def test_accepts_updated_published_asset(checker, repository):
-    repo, base = repository
-    for directory in ("readme", "docbits"):
-        write(repo, directory + "/.gitbook/assets/diagram (EN).png", b"\x00\xffnew")
-    assert checker.check(repo, base, commit(repo)) == []
-
-
-def test_rejects_new_source_page_without_imported_counterpart(checker, repository):
+def test_rejects_new_readme_page(checker, repository):
     repo, base = repository
     write(repo, "readme/Field rules (EN).md", "# New English page\n")
     errors = checker.check(repo, base, commit(repo))
     assert any("docbits/Field rules (EN).md" in error for error in errors)
 
 
-def test_accepts_new_page_in_both_directories(checker, repository):
+def test_accepts_new_page_in_active_directory_only(checker, repository):
     repo, base = repository
-    for directory in ("readme", "docbits"):
-        write(repo, directory + "/new.md", "# Reviewed new page\n")
+    write(repo, "docbits/new.md", "# Reviewed new page\n")
     assert checker.check(repo, base, commit(repo)) == []
 
 
-def test_rejects_unpublished_page_removal(checker, repository):
+def test_accepts_legacy_page_removal(checker, repository):
     repo, base = repository
     (repo / "readme/page.md").unlink()
-    assert checker.check(repo, base, commit(repo))
-
-
-def test_accepts_removal_from_both_directories(checker, repository):
-    repo, base = repository
-    for directory in ("readme", "docbits"):
-        (repo / directory / "page.md").unlink()
     assert checker.check(repo, base, commit(repo)) == []
+
+
+def test_accepts_removing_the_whole_readme_folder(checker, repository):
+    repo, base = repository
+    git(repo, "rm", "-rq", "readme")
+    assert checker.check(repo, base, commit(repo)) == []
+    assert (repo / "docbits/page.md").exists()
 
 
 def test_rejects_deleted_public_target_when_source_remains(checker, repository):

@@ -12,7 +12,7 @@ The **Pipeline Path** shows 14 stages: Intake, Classification, E-Document Valida
 | --- | --- |
 | **Passed** (green) | The stage ran fine |
 | **Stopped Here** (orange) | The stage blocked the document |
-| **Up Next** | Shown after the first blocker in the path; check the stage log for any additional recorded execution |
+| **Not reached** | Shown after the first blocker in the path; check the stage log for any additional recorded execution |
 | **Nothing Recorded** (dashed) | No data was recorded for this stage |
 | **Not applicable** | The stage does not apply to this document |
 
@@ -48,7 +48,7 @@ Check three separate questions: was an identifier found on the document, was it 
 
 A manual restart is a human intervention. Only a later successful completion would classify this case as AP Assisted. While it remains in progress, it is excluded from the completed-document denominator.
 
-Evidence limits. This case demonstrates no business approval, successful export or ERP acknowledgement. The legacy PO matcher provides no recorded decision path here; this is not evidence of an Infor comparison. In NOVA 11.0.3, the stage log can record a passed PO lookup after blocked field validation while the path labels it Up next. Check both views. The summary also shows the invoice number as Not recorded although the extraction contains it; use the original and extracted fields for a value comparison.
+Evidence limits. This case demonstrates no business approval, successful export or ERP acknowledgement. The legacy PO matcher provides no recorded decision path here; this is not evidence of an Infor comparison. In NOVA 11.0.3, the stage log can record a passed PO lookup after blocked field validation while the path labels it Not reached. Check both views. The summary also shows the invoice number as Not recorded although the extraction contains it; use the original and extracted fields for a value comparison.
 
 ## Distinguish extraction from source-system data
 

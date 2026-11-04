@@ -84,8 +84,6 @@
   * [WebSocket Debug Console](end-user-and-partner-section/end-user-section/websocket-debug-console.md)
   * [System Logs](end-user-and-partner-section/end-user-section/system-logs.md)
   * [User Configuration Options](end-user-and-partner-section/end-user-section/user-configuration-options.md)
-  * [AI Table](end-user-and-partner-section/end-user-section/ai-table/README.md)
-    * [AI Table Tags](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
   * [Validation Screen](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Selecting a Supplier-Specific AI Model for Field and Table Extraction](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Automatic Checks on the Validation Screen](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
@@ -132,6 +130,17 @@
     * [Support Portal Status](end-user-and-partner-section/end-user-section/ressources-and-support/support-portal-status.md)
 * [Partner Section](end-user-and-partner-section/partner-section/README.md)
   * [Invoice Automation Testing with DocBits](end-user-and-partner-section/partner-section/invoice-automation-testing-with-docbits.md)
+
+
+* [AI Table](end-user-and-partner-section/end-user-section/ai-table/README.md)
+  * [Settings and overrides](end-user-and-partner-section/end-user-section/ai-table/configuration.md)
+  * [Structured Output for Tables](end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+  * [Columns and corrections](end-user-and-partner-section/end-user-section/ai-table/columns-and-corrections.md)
+  * [AI instructions](end-user-and-partner-section/end-user-section/ai-table/ai-instructions.md)
+  * [AI Table Tags](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
+  * [Explain extraction and troubleshoot](end-user-and-partner-section/end-user-section/ai-table/explain-extraction.md)
+  * [Assistant and permissions](end-user-and-partner-section/end-user-section/ai-table/assistant-and-permissions.md)
+  * [Videos](end-user-and-partner-section/end-user-section/ai-table/videos.md)
 
 ## Administration and Setup
 

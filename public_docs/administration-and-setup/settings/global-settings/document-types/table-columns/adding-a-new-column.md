@@ -28,13 +28,13 @@ Add a column when a value has to be captured per line item that the default colu
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm.png" alt="Confirmation dialog: Create a new table column? Cancel and Create column buttons"><figcaption><p>Confirm before the column is created for every supplier.</p></figcaption></figure>
 
-5. Select **Create column** to save, or **Cancel** to go back without creating anything. The column appears in the list with *Read Only*, *Hidden* and *Use AI* unset. Switch those flags in the list if needed, see [Editing and deleting columns](editing-and-deleting-columns.md).
+5. After creating the column, review its settings in the list. Read Only and Hidden are initially off. Use AI starts at Default; a custom column normally is not requested under that default. Choose Yes if structured AI extraction should request it.
 
 ## After adding
 
 * The column is **empty on existing documents**. It is filled on documents uploaded or restarted after the change.
 * For suppliers with **trained rules**, open one of their documents in table training and map the new column, or the column stays empty for that supplier. See [Defining tables and columns](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
-* With **AI table extraction**, the AI fills the column if the value is recognisable on the document. Mark the column *Use AI* if the supplier has trained rules but this column should still come from the AI.
+* For structured AI extraction, set the custom column's Use AI choice to Yes and check the preview. Merely creating a column does not request it. Check saved supplier mappings and instructions, reprocess a test document and verify the result.
 * Add the column to the **export mapping** if the ERP should receive it, see [Export](../../../document-processing/export/).
 
 ## Messages
@@ -44,3 +44,5 @@ Add a column when a value has to be captured per line item that the default colu
 | *Column name already exists* | A column with this technical name is already in the table. Choose a different title. |
 | *Column name already exists – Please activate it in Table Column settings* | A hidden default column has this name. Unset its *Hidden* flag instead of creating a new one. |
 | *No table exists. Please create table before creating columns.* | The document type has no table yet: click **Create new table** first. |
+
+[Structured Output for Tables](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

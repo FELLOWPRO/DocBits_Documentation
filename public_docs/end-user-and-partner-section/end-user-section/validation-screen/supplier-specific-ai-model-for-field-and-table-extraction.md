@@ -31,3 +31,7 @@ Selecting a different model can require confirmation and restart extraction. Che
 If extraction results are unsatisfactory, compare other available models using approved test documents and check the extracted values, processing time and charges. A switch may reprocess a document and does not guarantee improvement.
 
 To configure the **organization default** or review **template-specific overrides**, please refer to the corresponding documentation [**here**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+
+## Settings and overrides
+
+Structured Output has a separate organization/template setting from the model tier. Change it in More options on the document; confirmation saves the override and restarts that document. The indicators in the settings list are read-only. Deleting a preference entry can remove several overrides at once. [Structured Output for Tables](../ai-table/structured-output.md).

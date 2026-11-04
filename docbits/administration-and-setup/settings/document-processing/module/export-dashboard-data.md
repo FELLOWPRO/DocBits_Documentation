@@ -4,7 +4,7 @@ The **Dashboard** can hand its list to you as a spreadsheet. Once the option is 
 
 ## Switch the export on
 
-1. Go to **Settings → System & Administration → Dashboard**.
+1. Go to **Settings → Dashboard**.
 2. Open the **General** panel and scroll to **Dashboard data**.
 3. Switch **Export Dashboard Data** on. **Auto refresh dashboard on document updates** above it is a separate option and does not affect the export.
 
@@ -25,19 +25,8 @@ The export is not a copy of the screen. It uses:
 - the **filters and the quick search** that are applied when you start it — the Export History later shows which filters were used,
 - the **columns of the selected dashboard**. Column changes you have not saved yet are not in the file: when the dashboard has unsaved changes, DocBits warns you and exports the last saved version. Save the dashboard first if the export should follow your new arrangement.
 
-## Follow an export in the Export History
+## Where an export shows up
 
-**Settings → System & Administration → Dashboard → Export History** lists every export request of the organisation:
-
-| Column           | Meaning                                                                     |
-| ---------------- | --------------------------------------------------------------------------- |
-| **Email**        | The address the download link was sent to.                                  |
-| **Status**       | `completed` when the file was built, `failed` when the export did not work. |
-| **Requested At** | When the export was started.                                                |
-| **Completed At** | When the file was ready.                                                    |
-| **Format**       | `csv` or `xls`, depending on the option you chose.                          |
-| **Filters Used** | The filters that were applied to the list. **+n** shows the rest of them.   |
-
-<figure><img src="../../../../.gitbook/assets/dashboard-export-history-en-20261104.png" alt="The Export History panel in the dashboard settings: a table with the columns Email, Status, Requested At, Completed At, Format and Filters Used, showing completed exports in csv and xls format and a few failed ones."><figcaption><p>The Export History of the dashboard settings</p></figcaption></figure>
+Every request is listed in **Settings → Dashboard → Export History**, with the address the download link was sent to, its status, the times it was requested and completed, the format and the filters that were applied. That table, including how the filters are shown, is described on [Dashboard settings](../../global-settings/dashboard/README.md).
 
 If an export stays on `failed`, start it again — a very large list or an interrupted background job is the usual cause. The dashboard itself is unaffected by a failed export.

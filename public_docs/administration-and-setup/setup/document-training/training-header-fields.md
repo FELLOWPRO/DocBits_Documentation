@@ -20,7 +20,7 @@ Vous pouvez aider à former DocBits à reconnaître ces champs en identifiant ma
 Répétez ce processus pour tous les champs requis.\
 Une fois que tous les champs nécessaires ont été pré-remplis, **cliquez sur "Enregistrer les règles"** pour sauvegarder la formation. Cela garantit que DocBits apprend où trouver chaque information pour des documents similaires à l'avenir.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/header_field_training_2.png)
 
 Après avoir sauvegardé, votre document est prêt à être exporté — et la prochaine fois, DocBits extraira automatiquement les champs formés.
 

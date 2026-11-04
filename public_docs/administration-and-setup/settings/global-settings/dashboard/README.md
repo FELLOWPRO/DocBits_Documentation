@@ -4,14 +4,14 @@
 
 Les paramètres du tableau de bord sont conçus pour aider les administrateurs à contrôler la présentation des données et l'interaction au sein du tableau de bord DocBits. Ces paramètres déterminent quelles informations sont immédiatement disponibles lors de la connexion, garantissant que les utilisateurs ont un accès rapide aux données les plus pertinentes pour leurs tâches.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_1.png)
 
 ## Accéder aux Paramètres du Tableau de bord
 
 Pour accéder aux paramètres du tableau de bord, naviguez vers :\
 **Paramètres → Paramètres globaux → Tableau de bord**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_dashboard.png)
 
 ## **Général**
 
@@ -20,13 +20,13 @@ Pour accéder aux paramètres du tableau de bord, naviguez vers :\
   * **Chargement automatique du tableau de bord** : Contrôle si le tableau de bord doit charger automatiquement les données lors de l'accès de l'utilisateur, ce qui peut aider à réduire les temps de chargement et à améliorer l'expérience utilisateur en ne chargeant les données que lorsque cela est nécessaire.
   *   **Exporter les données du tableau de bord** : Cette fonctionnalité ajoute un nouveau bouton **Exporter** à la barre d'outils du tableau de bord, vous permettant d'exporter la vue actuelle du tableau de bord en tant que fichier **.csv** ou **.xlsx**.
 
-      ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
+      ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_3.png)
 
 ## **Historique des exportations**
 
 Dans l'**Historique des exportations**, vous verrez un tableau répertoriant toutes les exportations passées avec des informations clés sur chaque demande.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
 
 Les détails suivants sont inclus :
 
@@ -51,19 +51,19 @@ Les détails suivants sont inclus :
 
 * **En attente d'accès aux données (jours)** : définit pendant combien de jours une personne interrogée dans le flux d'activité peut ouvrir le document en lecture seule ; ensuite, le lien ne fonctionne plus. La valeur par défaut est de 14 jours, et l'accès se termine aussi dès que le document avance. Voir [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtres**
 
 * **Filtre d'état Style** : Détermine le style de présentation des filtres d'état, qui peut être défini par défaut ou personnalisé selon l'orientation opérationnelle des utilisateurs.
 * **Filtre d'état personnalisé** : Permet la création et l'application de filtres personnalisés qui peuvent cibler des statuts de documents spécifiques comme "Nouveau", "Validation", ou "Exportation". Cela permet aux utilisateurs d'accéder rapidement aux documents à des étapes spécifiques de traitement.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_5.png)
 
 ## Tableau de bord des avis d’expédition
 
 * **Visibilité des commandes livrées** : Cette fonctionnalité permet à l'utilisateur de spécifier la durée pendant laquelle les commandes livrées seront visibles.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_6.png)
 
 Ces paramètres de tableau de bord sont cruciaux pour garantir que la plateforme DocBits soit aussi réactive et utile que possible, fournissant aux utilisateurs un outil puissant pour surveiller et gérer les activités de traitement de documents directement depuis le tableau de bord.

@@ -42,9 +42,20 @@ La tarjeta **Documento** junto al registro de etapas indica el tipo de documento
 4. Distinga factura frente a extracción, extracción correcta frente a datos importados, e Infor frente a su copia. Si falta evidencia, deje abierta la causa.
 5. Revise intervenciones, aprobaciones, reinicios y resultado final.
 
-**Ejemplo:** factura y extracción indican 10,00 €; el pedido importado, 9,00 €. Hay una discrepancia de pedido, no un error de extracción demostrado. Confirme el precio acordado y corrija el origen o la importación. Un reinicio manual seguido de éxito da AP Assisted. Consulte [los ejemplos y el cálculo](touchless-intelligence.md).
+**Ejemplo:** factura y extracción indican 10,00 €; el pedido importado, 9,00 €. Hay una discrepancia de pedido, no un error de extracción demostrado. Confirme el precio acordado y corrija el origen o la importación. Un reinicio manual seguido de éxito da AP Assisted. Consulte [los ejemplos y el cálculo](touchless-metrics.md).
 
 Varios documentos con los mismos campos faltantes demuestran un bloqueo repetido, pero no necesariamente un valor predeterminado ausente: revise extracción, contenido del original, validación y configuración.
+
+## Acreditar la extracción original y los bloqueos sucesivos
+
+1. Abra el documento desde su traza y compruebe ID y ejecución. Compare número de pedido, moneda, cantidades, unidades, unidades de precio, precios, importes de línea y totales relevantes.
+2. Separe los valores actuales de los anteriores a una corrección. Utilice evidencia histórica de esa ejecución. Cambiar de ejecución no garantiza reconstruir todas las celdas antiguas.
+3. Si falta el valor inicial, anótelo como **no evaluable**, no como correcto. Defina campos, líneas, selección y tamaño de muestra antes de informar de precisión de extracción.
+4. Compare copia importada, fecha de importación e Infor actual para separar una fuente incorrecta de una copia antigua.
+
+Una ejecución puede detenerse porque falta el pedido; tras importarlo, otra puede revelar una diferencia de precio. La primera no demuestra que llegara a esa comprobación posterior. Un reinicio humano persiste tras el éxito como AP Assisted; un rechazo ERP definitivo tiene prioridad como excepción. **No registrado** significa falta de evidencia.
+
+Las herramientas y la clasificación de las acciones humanas se explican en [Touchless con MCP](touchless-mcp.md).
 
 ## Páginas relacionadas
 
@@ -55,3 +66,5 @@ Varios documentos con los mismos campos faltantes demuestran un bloqueo repetido
 Las capturas de pantalla de esta página muestran la interfaz en español.
 
 <!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

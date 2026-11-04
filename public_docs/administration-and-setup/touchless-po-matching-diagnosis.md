@@ -41,18 +41,8 @@ Un documento que se detiene en la etapa 9 o 10 aparece en la cola de proveedores
 No todos los motivos de coincidencia con la OC se pueden corregir en DocBits. Si el proveedor envía un número de OC incorrecto, la tarjeta indica **Supplier action only**: el proveedor tiene que corregir el documento y volver a enviarlo.
 {% endhint %}
 
-## Ejemplo completo: extracción correcta, datos de Infor diferentes
+Consulte los casos separados de precio y cantidad y sus pruebas en [Ejemplos](touchless-examples.md).
 
-Caso ilustrativo: la factura contiene **10 unidades a 10,00 € = 100,00 €**. DocBits extrae los tres valores correctamente. El pedido importado contiene **10 unidades a 9,00 € = 90,00 €**. Supongamos que las reglas bloquean esta diferencia.
-
-1. Compare factura y extracción: los valores coinciden.
-2. Compare el pedido importado con Infor, las unidades de precio y la fecha de importación. Un pedido incorrecto y una copia desactualizada requieren soluciones distintas.
-3. Compras confirma que se acordaron 10,00 € y corrige el pedido. Si se hubieran acordado 9,00 €, habría que aclarar la factura del proveedor.
-4. Compruebe que los valores corregidos llegaron a DocBits.
-5. AP reinicia manualmente la factura; tras finalizar con éxito cuenta como **AP Assisted**, aunque la extracción fuera correcta.
-6. Compruebe que las facturas posteriores terminan sin otra corrección. La factura ya intervenida conserva ese historial.
-
-No cambie un valor correctamente extraído ni amplíe una tolerancia solo para ocultar datos de origen incorrectos. Corrija la causa confirmada. Véase [la diferencia entre extracción y tasa de proceso](touchless-intelligence.md).
 
 ## El flujo de decisión de la coincidencia con la OC
 
@@ -142,3 +132,5 @@ Después de que entrara en vigor una regla de transformación para la tabla de u
 * [PO Tarjetas coincidentes - Guía completa](workflow/and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 <!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

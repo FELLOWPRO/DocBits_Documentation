@@ -7,7 +7,7 @@ Haga clic en un proveedor de la cola para abrir su página de diagnóstico.
 
 La página muestra:
 
-* **Seis bloques de resultados** (Pure touchless, AP touchless, AP assisted, Process exception, In progress, Not eligible), cada uno enlazado con los documentos.
+* **Cuatro tarjetas de resultados finales**: Pure Touchless, AP Touchless, AP Assisted y excepción de proceso; cada una enlaza sus documentos.
 * **La tendencia** con su propio selector de período: 30 días, 90 días, 6 meses, 1 año o un intervalo personalizado (hasta dos años). Esto solo cambia el gráfico.
 * **Issue clusters** (clústeres de problemas, véase más abajo).
 * **Change history**: los cambios que aplicó para este proveedor y lo que lograron.
@@ -71,6 +71,8 @@ Las tarjetas y segmentos de resultados cuentan categorías separadas; AP Touchle
 
 Si el primer bloqueo de un clúster es un motivo de coincidencia con la OC (por ejemplo, *PO item mismatch* o *Purchase order not found*), la tarjeta del clúster muestra cómo intenta DocBits hacer coincidir la factura con la orden de compra. Véase [Diagnóstico de la coincidencia con la OC](touchless-po-matching-diagnosis.md).
 
+Las herramientas y la clasificación de las acciones humanas se explican en [Touchless con MCP](touchless-mcp.md).
+
 ## Páginas relacionadas
 
 * [Touchless Intelligence](touchless-intelligence.md)
@@ -79,3 +81,5 @@ Si el primer bloqueo de un clúster es un motivo de coincidencia con la OC (por 
 * [Propuestas de cambio e informes](touchless-change-proposals.md)
 
 <!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

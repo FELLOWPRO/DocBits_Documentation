@@ -8,19 +8,21 @@ La sezione **Ordine di Spedizione PO** fornisce una panoramica dello stato di co
 
 Per attivare questa funzionalità:
 
-1. Vai su **Impostazioni** → **Elaborazione Documenti** → **Modulo**.
-2. Seleziona **Ordine di Acquisto**.
-3.  Abilita l'opzione **Ordine di Spedizione PO**.
+1. Vai su **Impostazioni** → **Modulo**.
+2. Apri la sezione **Ordine di acquisto** (*Corrispondenza e convalida degli ordini di acquisto*).
+3.  Abilita l'opzione **PO Ordine di spedizione**.
 
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2ZdK2XuCIjc4Hz3W0s5H%252FPO-Shipment-Order-Setting.jpg%3Falt%3Dmedia%26token%3Dbe657223-f04e-4326-a284-bb29bae148e0&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=97986166&#x26;sv=2" alt="" width="563"></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/po-shipment-order-module-setting-it.png" alt="Sezione Ordine di acquisto in Impostazioni → Modulo con l'interruttore PO Ordine di spedizione" width="563"><figcaption><p>Impostazioni → Modulo → Ordine di acquisto</p></figcaption></figure></div>
+
+La stessa sezione contiene altri due interruttori: **Cruscotto PO** aggiunge alla navigazione un cruscotto degli ordini di acquisto, mentre **Cruscotto dell'ordine di spedizione** aggiunge un cruscotto che elenca le consegne in arrivo per singola riga dell'ordine di acquisto.
 
 ## **Dove Appare**
 
-Una volta abilitata, la sezione Ordine di Spedizione PO diventa visibile nell'interfaccia di Corrispondenza dell'Ordine di Acquisto.
+Una volta abilitata, la sezione PO Ordine di spedizione diventa visibile nell'interfaccia di Corrispondenza dell'Ordine di Acquisto.
 
 ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2R9tB3JySdIMk8meRSVZ%252FPO-Shipment-Order-1.jpg%3Falt%3Dmedia%26token%3D70aa50f4-84cd-4a55-b580-037b893d1f5b\&width=768\&dpr=4\&quality=100\&sign=e4619335\&sv=2)
 
-### **Ordine di Spedizione PO – Descrizioni dei Campi**
+### **PO Ordine di spedizione – Descrizioni dei Campi**
 
 * **ID Articolo** Identifica l'articolo specifico nell'ordine di acquisto.
 * **Numero di Consegna** Numero di riferimento per la spedizione o consegna.

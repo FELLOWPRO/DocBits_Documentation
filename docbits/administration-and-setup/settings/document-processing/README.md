@@ -13,4 +13,14 @@ For example, open **OCR Settings** to review **General OCR settings**. **Use E-T
 
 Further areas in this section include [Import](import/README.md), [Classification And Extraction](classification-and-extraction/README.md), [Rule Manager](rule-manager/README.md), [List Of Values](list-of-values.md) and [Module](module/README.md).
 
+If you are troubleshooting, start with the step where you see the problem instead of changing several settings at once:
+
+| What you want to check | Guide |
+| --- | --- |
+| Text is missing or read incorrectly | [OCR Settings](ocr-settings.md) |
+| A value should be compared with reference data | [Master Data Lookup](master-data-lookup.md) or [List Of Values](list-of-values.md) |
+| A due date is unexpected | [Due Date Calculation](due-date-calculation.md) |
+| A document should leave DocBits | [Export](export/README.md) |
+| A rule should route or change a document | [Decision Trees](decision-trees/README.md) |
+
 If a setting does not behave as expected, check it with a test document first. A change here can affect every new document of the organisation.

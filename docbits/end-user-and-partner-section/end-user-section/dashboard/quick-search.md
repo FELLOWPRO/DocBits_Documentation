@@ -196,6 +196,7 @@ At the top of the Quick Search dropdown (click into the search bar) you'll find 
 | 📅 **Today's inbox**        | Imported today                                  | `imported_on>=today()`            |
 | 📋 **Pending validation**   | Ready to be validated                           | `status=ready_for_validation`     |
 | 🧾 **Electronic documents** | E-invoices (XML, ZUGFeRD, EDI)                  | `is_edoc=true`                    |
+| ⚠️ **Workflow limit reached** | A workflow reached the workflow execution limit and no longer runs | `workflow_limit_reached=true` |
 | ✅ **Full PO match**         | Fully matched to a purchase order               | `po_match_status=full_matched`    |
 | ➗ **Partial PO match**      | Partially matched to a purchase order           | `po_match_status=partial_matched` |
 | 📉 **Under PO match**       | Quantity or unit price under the purchase order | `po_match_status=under_matched`   |

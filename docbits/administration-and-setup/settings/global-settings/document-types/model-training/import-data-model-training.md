@@ -19,7 +19,7 @@ Open model training in the relevant document type's settings and select the impo
 
 Choose the number and date formats that match the files, then select the documents to import. For example, `1.234,56` and `1,234.56` use different separators. A date such as `05/06/2026` must also be interpreted according to the selected format.
 
-<figure><img src="../../../../../.gitbook/assets/site-extra-model-import-dialog-en.png" alt="Model-training import dialog: amount and date format, with no files selected or uploaded."><figcaption><p>Model-training import dialog: amount and date format, with no files selected or uploaded.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/model-training-import-dialog-en.png" alt="Document Uploader dialog opened from Train Model with the Amount &#x26; Date Format selector, the Drag and Drop file(s) here area and the Upload field; no files selected"><figcaption><p>The <strong>Document Uploader</strong> dialog: choose the amount and date format, then select the files.</p></figcaption></figure>
 
 Check the selection before starting the import. Wait for processing to finish and review errors and assigned document types. Correct classification and extraction errors before using the examples for training.
 

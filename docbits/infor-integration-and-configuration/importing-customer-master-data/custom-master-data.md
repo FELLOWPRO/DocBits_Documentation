@@ -1,10 +1,10 @@
 ---
-description: How to Import Master Data directly within DocBits.
+description: Set up a custom master data template or API endpoint in DocBits.
 ---
 
 # Custom Master Data
 
-Custom Master Data lets you connect DocBits to one of your own API endpoints and use the data it returns as master data — for example your own supplier or article table — alongside the data DocBits maintains for you.
+Custom Master Data lets you connect DocBits to one of your own API endpoints and use the data it returns as master data — for example your own supplier or article table — alongside the data DocBits maintains for you. Prepare the API URL, authentication details and a sample response with your integration administrator before you start.
 
 ## Activating Custom Master Data
 
@@ -16,7 +16,7 @@ For more about modules, see [Module](../../administration-and-setup/settings/doc
 
 ## Opening the Custom Master Data dialog
 
-Once the module is active, go to **Settings → DOCUMENT PROCESSING → Lookup Master Data**. In the list of master data groups on the left, click the **settings** icon next to **ERP API Data** to open the **Custom Master Data** dialog.
+Once the module is active, go to **Settings → DOCUMENT PROCESSING → Lookup Master Data**. In the list of master data groups on the left, click the **settings** icon next to **ERP API Data** to open the **Custom Master Data** dialog. The plus icon next to **Imported** is for CSV uploads, not for API endpoints.
 
 <figure><img src="../../.gitbook/assets/custom-master-data-lookup-en-20261012.png" alt="Lookup Master Data page with the master data group list on the left"><figcaption><p>Lookup Master Data — the settings icon next to ERP API Data opens the Custom Master Data dialog</p></figcaption></figure>
 
@@ -27,7 +27,12 @@ The dialog lists your custom master data tables with their **Name**, **Method**,
 
 <figure><img src="../../.gitbook/assets/custom-master-data-actions-en-20261012.png" alt="Custom Master Data dialog with the Create Template and Create Endpoint buttons and the list of existing endpoints"><figcaption><p>The Custom Master Data dialog with Create Template and Create Endpoint</p></figcaption></figure>
 
-Existing entries can be opened, refreshed, or removed with the row actions in the **Actions** column. Refreshing runs the API call immediately instead of waiting for the next automatic lookup. Deleting removes the table from DocBits; the data source on your side is left unchanged.
+Each existing connection has four row actions:
+
+* **Edit** opens the endpoint configuration.
+* **Trigger Endpoint** runs the API call immediately instead of waiting for the next automatic lookup.
+* **Clear data** deletes all records of the data set, including records from other sources such as a CSV upload. The endpoint configuration is kept, so you can trigger it again; until then, lookups that use the data set return no results.
+* **Delete** removes the connection from DocBits. The data source on your side is left unchanged.
 
 ## Creating a Template
 
@@ -82,3 +87,5 @@ Enter the **JSON path**, in dot notation, of the field in the API response that 
 Map the response values to the columns you would like to create: enter a name for the column and the matching value from the response, then click **Add**. Use **Test Extraction** to verify that DocBits reads the values you expect before you save.
 
 Lastly, click **Done** for your new master data table to be created and populated.
+
+For help finding and using master data after setup, see [Master Data Lookup](../../administration-and-setup/settings/document-processing/master-data-lookup.md).

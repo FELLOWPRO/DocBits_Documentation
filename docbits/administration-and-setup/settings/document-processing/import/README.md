@@ -2,7 +2,13 @@
 
 ## Overview
 
-Use **Import** to configure automated document import from an FTP/SFTP server, a connected mailbox, or the incoming DocBits email address. Check the current organization and environment before entering connection details.
+You need an administrator account to create a connection. Use **Import** to configure automated document import from an FTP/SFTP server, a connected mailbox, or the incoming DocBits email address. Check the current organization and environment before entering connection details.
+
+<figure><img src="../../../../.gitbook/assets/import-page-en.png" alt="Import settings with the View import flow button and a New button above the FTP Import list"><figcaption><p>The Import page. <strong>View import flow</strong> opens the read-only Import channels view on the Infrastructure page.</p></figcaption></figure>
+
+## See where your imports go
+
+Select **View import flow** at the top of the page to open **Settings → Infrastructure → Import channels**. That read-only view lists every configured FTP/SFTP source and mailbox with its state, its import and archive folders, and the DocBits API region that receives the documents. Use it to check the destination before activating a connection, then come back here to configure it. See [Infrastructure](../../infrastructure.md).
 
 ## How to Access
 

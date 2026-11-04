@@ -36,6 +36,20 @@ Karta **Dokument** obok dziennika etapów podaje typ dokumentu, dostawcę, numer
 
 **Przykład.** Dokumenty jednego dostawcy zatrzymują się wszystkie na etapie 8. W śladzie widzisz za każdym razem te same brakujące pola. To nie jest problem ekstrakcji pojedynczych dokumentów, lecz brakująca wartość domyślna w konfiguracji pól: popraw ją raz, a cały klaster będzie do odzyskania.
 
+## Oddziel odczyt od danych źródłowych
+
+Porównaj oryginał i pola/pozycje sprzed korekt. Następnie porównaj importowane zamówienie z aktualnym Infor, jednostką, jednostką ceny i czasem importu. Brak dowodów pozostawia przyczynę otwartą.
+
+**Przykład:** oryginał i odczyt mają 10 €, a importowane zamówienie 9 €. To rozbieżność z zamówieniem, nie udowodniony błąd odczytu. Potwierdź uzgodnioną cenę. Ręczny restart i późniejszy sukces oznaczają AP Assisted. Zobacz [obliczenia](touchless-metrics.md). Powtarzający się brak pola nie dowodzi brakującej wartości domyślnej; sprawdź oryginał, odczyt, walidację i konfigurację.
+
+## Dowody pierwotnego odczytu i kolejnych blokad
+
+Porównaj właściwy oryginał i wykonanie: zamówienie, walutę, ilości, jednostki, jednostki ceny, ceny i sumy. Oddziel wartości bieżące od wartości sprzed korekt. Zmiana wykonania nie gwarantuje odzyskania każdej dawnej komórki. Bez wartości początkowej wynik jest **nieocenialny**. Zdefiniuj zakres i wielkość próby. Porównaj import, jego datę i aktualne Infor.
+
+Pierwsze wykonanie może czekać na zamówienie, a kolejne ujawnić różnicę ceny. Pierwsze nie dowodzi przejścia późniejszej kontroli. Ręczny restart pozostaje po sukcesie AP Assisted; ostateczny błąd ERP ma pierwszeństwo. Brak zapisu to brak dowodu.
+
+Narzędzia i klasyfikację działań opisuje [Touchless przez MCP](touchless-mcp.md).
+
 ## Powiązane strony
 
 * [Touchless Intelligence](touchless-intelligence.md)
@@ -43,3 +57,7 @@ Karta **Dokument** obok dziennika etapów podaje typ dokumentu, dostawcę, numer
 * [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md)
 
 Zrzuty ekranu na tej stronie pokazują interfejs w języku polskim.
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

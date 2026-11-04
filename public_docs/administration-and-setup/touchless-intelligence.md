@@ -30,6 +30,8 @@ Ein anderer Wert in Infor sagt allein noch nicht, welche Seite falsch ist. Prüf
 
 Die Screenshots zeigen die deutsch eingestellte DocBits-Oberfläche. Produktbegriffe wie **Pure Touchless** und **AP Touchless** bleiben wie in der Oberfläche erhalten; technische Kennungen und unveränderte englische Produktbeschriftungen sind keine übersetzten Beispieldaten.
 
+Die Bilder zeigen unterschiedliche Beispielsituationen und Datenstände. Rechnen Sie ihre Dokumentzahlen nicht zu einer gemeinsamen Stichprobe zusammen. Der Schulungsfall mit 10,00 € gegen 9,00 € erklärt den Zusammenhang; er ist kein vollständig aufgezeichneter Infor-Durchlauf der abgebildeten Rechnungen.
+
 ### Was Sie damit tun können
 
 | Sie möchten … | Verwenden Sie | Beispiel |
@@ -137,9 +139,37 @@ Die folgenden Fälle sind Schulungsbeispiele, keine Einzeldokumente aus den Scre
 
 Die Einordnung beruht auf den Ereignissen, die DocBits aufzeichnet. Setzen Sie nicht voraus, dass ausschließlich in Infor erledigte Arbeit ohne entsprechendes DocBits-Ereignis automatisch als AP-Eingriff gezählt wird. Halten Sie diese Arbeit zusätzlich in der Diagnose fest.
 
+### Welche AP-Aktion zählt als Eingriff?
+
+Die Tabelle setzt eine erfolgreiche Verarbeitung voraus, einschließlich der erforderlichen ERP-Bestätigung. Entscheidend ist das aufgezeichnete Ereignis und wer es ausgelöst hat, nicht die Dauer der Arbeit.
+
+| Aktion | Bedeutung für das Dokumentergebnis |
+| --- | --- |
+| Rechnung, Verlauf oder Vorschau nur öffnen; filtern oder vergleichen | Allein dadurch entsteht kein Bearbeitungseingriff. Ohne weitere Eingriffe oder Freigaben bleibt Pure Touchless möglich |
+| Nur fachlich freigeben, auch in einer zweiten Freigabestufe | AP Touchless, sofern es keinen zusätzlichen Bearbeitungseingriff gab |
+| Einen Kopfwert oder eine Tabellenposition ändern und speichern | AP mit Eingriff; auch eine einzige gespeicherte Korrektur zählt |
+| Ein Dokument manuell aus der Validierung weitergeben, auch ohne Wertkorrektur | AP mit Eingriff. Manuelle Validierung ist eine andere Aktion als eine reine fachliche Freigabe |
+| Verarbeitung oder Export als Person manuell neu starten | AP mit Eingriff; ein späterer automatischer Lauf hebt den Eingriff nicht auf |
+| Das System verarbeitet automatisch erneut oder schreibt Werte durch einen automatischen Workflow | Allein dadurch entsteht kein menschlicher Eingriff. Vorherige menschliche Eingriffe bleiben bestehen |
+| Daten ausschließlich in Infor korrigieren | Externe Arbeit ist nicht automatisch ein aufgezeichnetes DocBits-Ereignis. Die nachfolgende DocBits-Aktion und den Verlauf prüfen; externe Arbeit zusätzlich dokumentieren |
+| Nach einer Korrektur weist das ERP das Dokument endgültig zurück | Prozessausnahme. Die Zurückweisung hat Vorrang vor einer erfolgreichen Touchless-Einordnung; der frühere Eingriff bleibt Teil des Verlaufs |
+
+**Grenzfall „Speichern“:** Eine gespeicherte Feldänderung zählt als Korrektur. Aus einem geöffneten Fenster oder einem Klick ohne nachgewiesene Änderung lässt sich dagegen kein Bearbeitungseingriff ableiten. Prüfen Sie zusätzlich, ob die Aktion eine manuelle Validierung oder einen Neustart ausgelöst hat.
+
+### Dieselbe Beschriftung, zwei unterschiedliche Aussagen
+
+| Wo Sie AP Touchless lesen | Gemeint ist | Lesebeispiel |
+| --- | --- | --- |
+| Prozentwert der AP-Karte auf der Übersicht | Gemeinsame Quote aus Pure und reiner Freigabe | (120 + 30) ÷ 190 = 78,9 % |
+| Dokumentanzahl unter diesem Prozentwert | Nur Dokumente mit reiner Freigabe | 30, nicht 150 |
+| Ergebniskachel oder Segment der Lieferantendiagnose | Eigenständige Kategorie „nur Freigabe“ | 30 ÷ 190 = 15,8 % |
+| Blaue AP-Linie der unten abgebildeten Trendaufnahme | Anteil der Kategorie „nur Freigabe“ | Nicht mit der gemeinsamen AP-Karte gleichsetzen |
+
+Die Kategorien ergeben zusammen 100 % der abgeschlossenen, berücksichtigten Dokumente. Die Prozentwerte der Pure-Karte und der gemeinsamen AP-Karte überlappen sich und dürfen nicht addiert werden.
+
 ### Wie aktuell sind die Zahlen
 
-Die Ergebnisse werden **alle 15 Minuten neu berechnet**. Das Ergebnis eines Dokuments kann sich auch nach seinem ersten Erscheinen noch ändern: Das ERP bestätigt einen Export unter Umständen erst Stunden später. Die Zeile **Datenstand …** (Data as of …) unten im Tab zeigt, wann die Zahlen zuletzt berechnet wurden.
+Die Ergebnisse werden **alle 15 Minuten neu berechnet**. Warten Sie nach einer Aktion auf den nächsten Datenstand, bevor Sie deren Einordnung prüfen. Das Ergebnis eines Dokuments kann sich auch nach seinem ersten Erscheinen noch ändern: Das ERP bestätigt einen Export unter Umständen erst Stunden später. Die Zeile **Datenstand …** (Data as of …) unten im Tab zeigt, wann die Zahlen zuletzt berechnet wurden.
 
 ## Der Übersichts-Tab
 
@@ -156,7 +186,9 @@ Die **Unterorganisation**, die Sie oben in DocBits gewählt haben, grenzt die Ke
 
 ### Die fünf Kennzahlen
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards-de.png" alt="Die fünf Kennzahlen: Pure Touchless, AP Touchless, AP mit Eingriff, Prozessausnahmen und Diagnoseabdeckung"><figcaption><p>Die fünf Kennzahlen. Hier liegt die Pure-Quote bei 50,3 % (156 Dokumente), das sind 19,7 Punkte unter dem Ziel von 70 %, und die Diagnoseabdeckung beträgt 100 %. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+**Im folgenden Bild:** Pure ist vollständig automatisch. Der Prozentwert von AP Touchless enthält Pure zusätzlich zu den reinen Freigaben; die Dokumentanzahl darunter enthält nur die reinen Freigaben.
+
+<figure><img src="../.gitbook/assets/touchless-kpi-cards-de.png" alt="Die fünf Kennzahlen: 156 Pure-Dokumente und 11 reine Freigaben ergeben zusammen 167 von 310, also 53,9 % AP Touchless. Die 11 Dokumente unter dem AP-Prozentwert bezeichnen nur Freigaben. Pure allein sind 50,3 %; die beiden Quoten überschneiden sich. Beispielorganisation mit Demodaten."><figcaption><p>Die fünf Kennzahlen: 156 Pure-Dokumente und 11 reine Freigaben ergeben zusammen 167 von 310, also 53,9 % AP Touchless. Die 11 Dokumente unter dem AP-Prozentwert bezeichnen nur Freigaben. Pure allein sind 50,3 %; die beiden Quoten überschneiden sich. Beispielorganisation mit Demodaten.</p></figcaption></figure>
 
 | Karte | Zeigt | Beispiel (zur Veranschaulichung) |
 | --- | --- | --- |
@@ -173,11 +205,13 @@ Die **Unterorganisation**, die Sie oben in DocBits gewählt haben, grenzt die Ke
 
 ### Touchless-Quote im Zeitverlauf
 
-<figure><img src="../.gitbook/assets/touchless-trend-de.png" alt="Liniendiagramm der Pure-Touchless- und der AP-Touchless-Quote pro Tag mit der Ziellinie bei 70 Prozent"><figcaption><p>Die Quote pro Tag mit der Ziellinie. Hier bleibt die Quote zwischen 40 und 60 % und fällt ab dem 10. Oktober stark ab. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+**Im folgenden Bild:** Die blaue AP-Linie ist der getrennte Ergebnisanteil mit reiner Freigabe. Verwenden Sie sie nicht als Ersatz für den gemeinsamen AP-Prozentwert der Übersicht.
+
+<figure><img src="../.gitbook/assets/touchless-trend-de.png" alt="Getrennte Ergebnisanteile pro Tag: Rosa zeigt Pure Touchless, Blau nur die Kategorie mit reiner Freigabe. Die blaue Linie ist nicht die gemeinsame AP-Quote der Übersicht. Die gestrichelte Linie zeigt das Ziel von 70 %. Beispielorganisation mit Demodaten."><figcaption><p>Getrennte Ergebnisanteile pro Tag: Rosa zeigt Pure Touchless, Blau nur die Kategorie mit reiner Freigabe. Die blaue Linie ist nicht die gemeinsame AP-Quote der Übersicht. Die gestrichelte Linie zeigt das Ziel von 70 %. Beispielorganisation mit Demodaten.</p></figcaption></figure>
 
 Der Screenshot zeigt getrennte Ergebnisanteile: **Pure Touchless** und **AP Touchless** (nur Freigabe) sowie die **Ziellinie**. Die blaue Linie dieser Aufnahme ist der Anteil mit reiner Freigabe, nicht die gemeinsame AP-Kennzahl im Kopfbereich. Für die gemeinsame Quote werden Pure und reine Freigaben über dieselbe Grundgesamtheit addiert. Unterscheiden Sie beim Lesen der Diagramme Ergebnisanteile und gemeinsame Kennzahl. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte.
 
-**Beispiel.** Nachdem Sie am 1. Oktober den automatischen Bestellabgleich eingeschaltet haben, steigt die Pure-Quote innerhalb von zwei Wochen von 55 % auf 68 %. Das Diagramm zeigt den Tag, an dem die Kurve dreht, sodass Sie ihn Ihrer Änderung zuordnen können.
+**Beispiel.** Nach Aktivierung des automatischen Bestellabgleichs steigt die Pure-Quote in einem vergleichbaren Zeitraum von 55 % auf 68 %. Prüfen Sie Dokumenttyp, Lieferantenmix und weitere Änderungen. Der zeitliche Zusammenhang ist eine Beobachtung; er beweist nicht allein, dass diese Einstellung den Anstieg verursacht hat.
 
 ### Wo Touchless zuerst verloren geht
 
@@ -216,6 +250,8 @@ Mit dem Suchfeld („Lieferantennummer oder Name suchen“) finden Sie einen Lie
 
 Klicken Sie auf **Lieferanten vergleichen**, wählen Sie **zwei bis fünf** Lieferanten aus (jeder wird mit seiner Anzahl blockierter Dokumente aufgeführt) und klicken Sie auf **Vergleichen**.
 
+Je nach Oberflächenstand heißt die Schaltfläche noch **Compare suppliers**. Das ist derselbe Lieferantenvergleich; die englische Beschriftung ändert die Bedeutung der Kennzahlen nicht.
+
 Der Vergleich zeigt die Lieferanten nebeneinander: **Pure-Quote**, **Verlorene Dokumente**, **Rückgewinnbar**, **Grundursache**, **Erwarteter Zuwachs**, ein Balkendiagramm der Ergebnisse und einen Link zur jeweiligen **Lieferantendiagnose**.
 
 **Beispiel.** Lieferant A und B senden dasselbe Rechnungslayout. B hat eine Pure-Quote von 80 %, A nur 35 %. Bei A deutet die Diagnose auf „Stammdaten“. Vergleichen Sie Originalrechnungen, ausgelesene Werte und importierte Lieferantensätze, bevor Sie die Ursache bestätigen. Der Quotenunterschied allein beweist weder ein korrektes Layout noch unvollständige Stammdaten.
@@ -242,7 +278,7 @@ Während die Analyse läuft, sehen Sie für jedes Cluster **In Warteschlange**, 
 3. Lesen Sie **Wo Touchless zuerst verloren geht** und wählen Sie den größten Schritt.
 4. Öffnen Sie die **Lieferantenpotenziale**. Sortieren Sie nach **Erwartetem Zuwachs** und nehmen Sie den obersten Lieferanten mit dem Status **RECOVERABLE**.
 5. Lesen Sie die **Fehlermuster**, prüfen Sie **Fehlende Evidenz** und folgen Sie dann **Was zu ändern ist**.
-6. Wenden Sie immer nur eine Änderung an, mit einer **Vorschau**, damit die **Änderungshistorie** sie messen kann.
+6. Beheben Sie eine bestätigte Ursache. Bei einem unterstützten DocBits-Änderungsvorschlag nutzen Sie **Vorschau** und **Änderungshistorie**. Bei einer Infor-Korrektur dokumentieren Sie Quelle und Import gesondert; sie erzeugt nicht automatisch einen DocBits-Änderungsvorschlag.
 7. Prüfen Sie nach zwei Wochen das **Vorher/Nachher**-Ergebnis.
 
 ## In einfacher Sprache fragen: DocBits MCP
@@ -277,6 +313,20 @@ Das ERP bestätigt einen Export unter Umständen erst Stunden nach dem Versand. 
 **Ändert die KI etwas von selbst?**
 Nein. Die KI schreibt nur Erklärungen. Eine Einstellung ändert sich erst, wenn ein Administrator sie in der Vorschau geprüft und angewendet hat.
 
+## Touchless über MCP erklären
+
+Mit einem verbundenen DocBits-MCP-Zugang können Sie dieselben fachlichen Fragen stellen wie im Dashboard. Beginnen Sie mit einer Auswertung ohne Änderungen:
+
+> Erkläre mir für Rechnungen der letzten 30 Tage Pure Touchless, reine AP-Freigaben und die kombinierte AP-Touchless-Quote. Nenne Zähler, Nenner, ausgeschlossene und laufende Dokumente sowie den Datenstand. Trenne die Quote von der Auslesegenauigkeit.
+
+Dazu dient `touchless_get_summary` mit `period: "30d"` und `doc_type: "INVOICE"`. Für einen Teilprozess verwenden Sie zusätzlich die von `touchless_list_segments` tatsächlich angebotenen Segmentfelder und Werte. Vergleichen Sie Dashboard und MCP nur mit derselben Organisation, demselben Dokumenttyp, Zeitraum und Segment; prüfen Sie jeweils `data_as_of`.
+
+**Geprüftes Dev-Beispiel mit eigenen Testdaten:** Drei neu hochgeladene Rechnungen waren noch `IN_PROGRESS`. Die Rückgabe enthielt `population.total: 3`, `population.in_progress: 3`, `population.eligible: 0` und `official_touchless_rate.ap_pct: null`. Daraus folgt **noch keine berechenbare Quote**. Melden Sie weder „0 % Auslesegenauigkeit“ noch „100 % Touchless“, nur weil drei Uploads angekommen sind. Das `eligible` der Zusammenfassung bezeichnet hier die abgeschlossene KPI-Grundgesamtheit; ein einzelner Dokumentverlauf kann zugleich `eligible: true` und `bucket_final: false` ausweisen.
+
+Die folgenden Seiten zeigen die nächsten Fragen: [Lieferanten priorisieren](touchless-supplier-diagnosis.md), [ein Dokument erklären](touchless-document-trace.md), [Bestellabweichungen prüfen](touchless-po-matching-diagnosis.md) und [Verbesserungen kontrolliert umsetzen](touchless-change-proposals.md).
+
+MCP-Aufrufe laufen mit den Rechten des verbundenen Kontos. Organisationskontext und Rolle müssen passen. Die hier beschriebenen direkten MCP-Leseaufrufe wurden auf Dev geprüft; die Verfügbarkeit in einer anderen Oberfläche oder einer zusätzlichen Tool-Freigabeliste ist damit nicht zugesichert.
+
 ## Weiterführende Seiten
 
 * [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)
@@ -287,6 +337,8 @@ Nein. Die KI schreibt nur Erklärungen. Eine Einstellung ändert sich erst, wenn
 * [Einstellungs-Assistent](settings/global-settings/company-information/settings-assistant.md)
 * [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): screenshots come from the dev test organisation with synthetic demo data (seed script) and fictional supplier names; the PO matching decision flow has no screenshot yet. facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described. -->
+<!-- Source notes (not shown): screenshots come from the dev test organisation with synthetic demo data (seed script) and fictional supplier names; the PO matching decision flow is illustrated on the matching-diagnosis subpage. facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described. -->
 
 <!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->
+
+<!-- Completion review 2026-11-04: AP actions, original-value evidence, overlapping KPI labels, sequential blockers and screenshot proof limits checked. -->

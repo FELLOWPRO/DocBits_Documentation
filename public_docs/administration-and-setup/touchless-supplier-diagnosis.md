@@ -3,13 +3,15 @@
 
 Klicken Sie in der Warteschlange auf einen Lieferanten, um dessen Diagnoseseite zu öffnen.
 
-<figure><img src="../.gitbook/assets/touchless-supplier-detail-de.png" alt="Die Seite Lieferantendiagnose mit Ergebniskacheln, Trend und zwei Fehlermustern"><figcaption><p>Die Seite Lieferantendiagnose: Ergebniskacheln, Trend mit Zeitraumauswahl und zwei Fehlermuster, nach erwartetem Zuwachs geordnet. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-detail-de.png" alt="Die Seite Lieferantendiagnose mit Ergebniskacheln, Trend und zwei Fehlermustern"><figcaption><p>Die Lieferantendiagnose zählt getrennte Ergebnisse: 41 Pure-Dokumente und 65 mit Eingriff; AP Touchless ist hier nur die Freigabekategorie und steht bei 0. Anders als auf der Übersicht enthält diese Kachel Pure nicht zusätzlich. Darunter stehen der Trend und zwei Fehlermuster. Beispielorganisation mit Demodaten; der Lieferantenname ist frei erfunden.</p></figcaption></figure>
+
+**Zum Screenshot:** Die Kachel **AP Touchless** zeigt die eigenständige Kategorie „nur Freigabe“. Sie ist nicht der gemeinsame AP-Prozentwert der Übersicht.
 
 Die Ergebniskacheln und Diagrammsegmente zählen getrennte Dokumentergebnisse. AP Touchless bedeutet hier nur freigegebene Dokumente; die gemeinsame AP-Kennzahl auf der Übersicht enthält zusätzlich die Pure-Dokumente.
 
 Die Seite zeigt:
 
-* **Sechs Ergebniskacheln** (Pure Touchless, AP Touchless, AP mit Eingriff, Prozessausnahme, In Bearbeitung, Nicht berücksichtigt), jeweils mit Link zu den Dokumenten.
+* **Vier Ergebniskacheln**: Pure Touchless, AP Touchless, AP mit Eingriff und Prozessausnahme. Kacheln mit Dokumenten öffnen die zugehörige Liste; bei 0 gibt es keinen solchen Link. Dokumente in Bearbeitung oder nicht berücksichtigte Dokumente gehören nicht zu diesen vier Ergebnisanteilen; Hinweise erklären gegebenenfalls, warum noch keine Diagnose vorliegt.
 * **Den Trend** mit eigener Zeitraumauswahl: 30 Tage, 90 Tage, 6 Monate, 1 Jahr oder ein eigener Zeitraum (bis zu zwei Jahre). Das ändert nur das Diagramm.
 * **Fehlermuster** (Issue clusters, siehe unten).
 * **Änderungshistorie** (Change history): die Änderungen, die Sie für diesen Lieferanten angewendet haben, und was sie bewirkt haben.
@@ -75,6 +77,32 @@ Ein kleiner AP-Eingriff kann eine Rechnung abschließen, während das wiederkehr
 
 Ist der erste Blocker eines Clusters ein Grund aus dem Bestellabgleich (zum Beispiel *PO-Positionsabweichung* oder *Bestellung nicht gefunden*), zeigt die Cluster-Karte, wie DocBits versucht, die Rechnung mit der Bestellung abzugleichen. Siehe [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md).
 
+## Einen Befund bis zur Verbesserung verfolgen
+
+**Beispiel:** Zwanzig Rechnungen sind korrekt ausgelesen, aber eine importierte Bestellung enthält einen falschen Preis. AP startet sie nach der Quellenkorrektur manuell neu. Nach erfolgreichem Abschluss bleiben diese Rechnungen AP mit Eingriff. Die dauerhafte Verbesserung prüfen Sie an **neuen** Rechnungen nach dem korrigierten Import.
+
+1. Öffnen Sie ein Beispieldokument des Clusters und vergleichen Sie Original, Auslesung und Quelle.
+2. Tragen Sie als Ursache nur den belegten Befund ein. „Preisabweichung“ benennt zunächst den Unterschied; die vereinbarten Konditionen klären, welche Seite zu korrigieren ist.
+3. Halten Sie Sofortmaßnahme und dauerhafte Korrektur fest, einschließlich Verantwortlichem und Importzeitpunkt.
+4. Prüfen Sie spätere Rechnungen desselben Lieferanten unter vergleichbaren Bedingungen. Neue manuelle Neustarts bedeuten, dass der Prozess weiterhin Hilfe braucht.
+5. Werten Sie Dokumentergebnisse und Auslesequalität getrennt aus. Ein verschwundener Cluster oder eine bessere Quote allein belegt keine vollständig korrekte Extraktion.
+
+Die Cluster-Aufnahme zeigt beobachtete Blocker und unbestätigte Ursachen. Erst die Dokumentnachweise machen daraus eine bestätigte Diagnose; die angezeigten Potenziale sind noch keine erreichten Verbesserungen.
+
+## Lieferanten über MCP priorisieren und Verbesserungen ableiten
+
+> Welche Lieferanten verlieren im letzten Monat die meisten Touchless-Rechnungen? Prüfe zuerst die größten belegten Ursachen. Trenne Auslesefehler, abweichende Quelldaten und Prozessregeln. Schlage je Ursache eine Maßnahme und einen prüfbaren Erfolgsnachweis vor; ändere noch nichts.
+
+1. Rufen Sie `touchless_rank_supplier_opportunities` mit `period: "30d"`, `doc_type: "INVOICE"`, `order_by_field: "lost_docs"` und `order_by_direction: "desc"` auf. Mit `search` suchen Sie gezielt nach Lieferantennummer oder Name. `limit` und `offset` steuern die Ergebnis-Seiten.
+2. Übernehmen Sie den zurückgegebenen `supplier_key` unverändert in `touchless_diagnose_supplier`. Verwenden Sie für die aktuelle Lage `window: 30`; prüfen Sie mit 90 Tagen, ob die Ursache dauerhaft vorkommt.
+3. Öffnen Sie ein tatsächlich geliefertes `issue_signature` mit `touchless_get_issue_cluster`. Kontrollieren Sie Beispieldokumente und die fehlende Evidenz. Verwenden Sie keine frei erfundene Signatur.
+4. Lassen Sie mit `touchless_get_recommendations` die bestätigte Ursache und eine passende Maßnahme erklären. Ein erwarteter Zuwachs bleibt eine Schätzung. Überlappende Cluster dürfen Sie nicht einfach addieren.
+5. Prüfen Sie nach der Behebung neue, vergleichbare Rechnungen und die [Änderungsmessung](touchless-change-proposals.md). Bereits manuell bearbeitete Rechnungen werden dadurch nicht rückwirkend Pure Touchless.
+
+**Beispiel für die Entscheidung:** Sind Preis und Menge richtig ausgelesen, aber die importierten Bestellungen veraltet, lautet die Maßnahme „Bestellimport und Quellwerte korrigieren“. Sind Beträge bereits gegenüber dem Original falsch, prüfen Sie stattdessen Extraktion und Konfiguration. Ist nur eine fachliche Freigabe vorgeschrieben, ist das kein Auslesefehler und bei erfolgreichem Abschluss weiterhin AP Touchless.
+
+Eine leere Rangliste ist kein Beweis, dass es keine Probleme gibt. Im Dev-Test mit drei noch laufenden Rechnungen war die Rangliste leer; daraus war noch keine abgeschlossene Lieferantenquote berechenbar. Prüfen Sie Datenstand, Filter, Lieferantenzuordnung und genügend abgeschlossene Dokumente.
+
 ## Weiterführende Seiten
 
 * [Touchless Intelligence](touchless-intelligence.md)
@@ -83,3 +111,5 @@ Ist der erste Blocker eines Clusters ein Grund aus dem Bestellabgleich (zum Beis
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
 
 <!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->
+
+<!-- Completion review 2026-11-04: AP actions, original-value evidence, overlapping KPI labels, sequential blockers and screenshot proof limits checked. -->

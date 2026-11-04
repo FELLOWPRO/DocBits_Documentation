@@ -70,6 +70,10 @@ L'aperçu exclut l'apprentissage et les tags fournisseurs. Des instructions supp
 
 Sans configuration exploitable des champs d'en-tête, aucun schéma complet ne peut être construit. Un commutateur activé ne prouve donc pas son utilisation. Contrôlez l'exécution avec **Expliquer l'extraction** et les journaux disponibles ; [Tableau IA](README.md) décrit ces vues et leurs droits d'accès.
 
+Dans cet exemple de configuration, les colonnes demandées d’INVOICE_TABLE comprennent `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` et `PROJECT_CODE`. La colonne de projet personnalisée est explicitement réglée sur **Oui**, comme à l’étape 2 de l’exemple ci-dessous. L’aperçu comprend aussi d’autres colonnes de facture configurées ; votre sélection et votre nombre peuvent donc différer. **12** correspond au nombre de colonnes demandées dans cette table, pas au nombre de lignes ni au total des propriétés du schéma. Il s’agit d’un aperçu de configuration, pas d’un résultat d’extraction.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-fr-20261104.png" alt="Extrait de l’aperçu du schéma Facture avec Structured Output activé. INVOICE_TABLE demande 12 colonnes, dont PROJECT_CODE avec Use AI sur Oui. Les autres tables configurées et le compteur de propriétés ne figurent pas dans cet extrait."><figcaption><p>Extrait de l’aperçu du schéma Facture avec Structured Output activé. INVOICE_TABLE demande 12 colonnes, dont PROJECT_CODE avec Use AI sur Oui. Les autres tables configurées et le compteur de propriétés ne figurent pas dans cet extrait.</p></figcaption></figure>
+
 ## 5. Exemple : facture avec deux références et un projet
 
 Cet exemple synthétique définit un résultat à vérifier, pas une extraction exécutée.

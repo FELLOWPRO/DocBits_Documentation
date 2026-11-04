@@ -1,5 +1,9 @@
 # Classificazione ed estrazione
 
+<figure><img src="../../../../.gitbook/assets/classification-general-it-20261104.png" alt="Scheda Generale con impostazioni di elaborazione. Il modello di codice a barre dell&#x27;organizzazione è nascosto; nessuna impostazione è stata modificata."><figcaption><p>Scheda Generale con impostazioni di elaborazione. Il modello di codice a barre dell&#x27;organizzazione è nascosto; nessuna impostazione è stata modificata.</p></figcaption></figure>
+
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output per le tabelle](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+
 ## Quale impostazione funziona in quale fase del processo?
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-it-20261028.png" alt="Dal file ai dati riconosciuti: Visualizza separatamente il tipo di documento, l&#x27;origine dati e il percorso di estrazione."><figcaption><p>Visualizza separatamente il tipo di documento, l&#x27;origine dati e il percorso di estrazione. Il diagramma è schematico; le impostazioni attive della tua organizzazione determinano il comportamento effettivo.</p></figcaption></figure>
@@ -35,7 +39,6 @@ Questa pagina spiega in dettaglio tutte le impostazioni disponibili.
 Per accedere alle impostazioni di **Classificazione ed estrazione**, vai su:\
 **Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione**
 
-<figure><img src="../../../../.gitbook/assets/dbdc862-settings-nav-it-20261012.png" alt="Navigazione delle impostazioni con Elaborazione Documenti e Classificazione ed Estrazione evidenziati"><figcaption><p>Apri <strong>Impostazioni → Elaborazione Documenti → Classificazione ed Estrazione</strong>.</p></figcaption></figure>
 
 ## Suddivisione dei documenti
 
@@ -46,17 +49,17 @@ Per attivare questa funzione:
 1. Vai alla sezione **Suddivisione dei documenti**.
 2.  Apri il menu a discesa.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    
 3.  Seleziona **Suddividi per codice a barre/codice QR**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    
 
 Avrai quindi la possibilità di:
 
 * Selezionare uno o più tipi di codice a barre da rilevare.
 *   Specificare un pattern regex a cui il codice a barre deve corrispondere per attivare la suddivisione del documento.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Formattazione degli importi
 
@@ -98,7 +101,7 @@ Maggiori informazioni sull'addestramento [qui](../../../setup/document-training/
 
 La modalità è memorizzata nella chiave di preferenza `TABLE_EXTRACTION_VISION_MODE`; il vecchio interruttore `TABLE_EXTRACTION_USE_VISION` rimane e significa di fatto *Solo immagini*.
 
-**Usa Estrazione strutturata (AI):** l'AI restituisce la tabella in una struttura fissa che corrisponde direttamente alle colonne della tabella configurate. Consigliata quando le intestazioni delle colonne sui documenti variano molto. Facendo clic sull'impostazione si apre un'anteprima dei campi e delle colonne che verranno esattamente richiesti all'AI: i campi di intestazione e le colonne di riga sono elencati con la loro origine (campi standard richiesti o disattivati), insieme alla modalità di output prevista (ad esempio *strict* – nessuna colonna aggiuntiva). I campi configurati per il tipo di documento ma disattivati non vengono richiesti all'AI.
+**Utilizzare l'estrazione strutturata (IA):** L'interruttore imposta il valore organizzativo dell'output strutturato. Le colonne richieste dipendono da Predefinito/Sì/No in Use AI, dalle impostazioni del modello di estrazione e dall'addestramento del fornitore. La guida completa spiega configurazione, anteprima ed esempio. [Structured Output per le tabelle](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
 
 **Estrazione della tabella per l'elemento di costo:** se abilitata, DocBits può estrarre gli elementi di costo dalle tabelle a livello di riga e classificarli di conseguenza.\
 Spiegazione dettagliata disponibile [qui](table-extraction-for-costing-element.md).
@@ -165,7 +168,6 @@ Nella sezione **Regole di classificazione** puoi definire pattern **regex** e cr
 
 Per accedere a questa sezione, fai clic sulla scheda **Regole di classificazione** in cima alla pagina.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
 ### **Aggiungere una nuova regola di classificazione**
 
@@ -173,7 +175,7 @@ Per creare una nuova regola:
 
 1.  Fai clic su **Aggiungi** in alto a destra.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    
 2. Compila i seguenti campi:
    * **Pattern**: il pattern regex che il sistema deve cercare per attivare la classificazione.
    * **Tipo**: dove cercare il pattern (ad esempio **Codice a barre**).
@@ -181,10 +183,10 @@ Per creare una nuova regola:
    * **Tipo di documento**: definisce il tipo di documento da assegnare quando il pattern corrisponde.
    *   **Sottotipo di documento** _(facoltativo)_: specifica un sottotipo per una classificazione più dettagliata.
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       
 3.  Fai clic su **Salva** per salvare la regola di classificazione.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Modificare una regola di classificazione**
 
@@ -192,14 +194,14 @@ Per modificare una regola esistente:
 
 1.  Fai clic sui tre punti nella colonna **Azioni**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Seleziona **Modifica**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    
 3. Apporta le modifiche desiderate.
 4.  Fai clic su **Salva** per applicare gli aggiornamenti.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Eliminare una regola di classificazione**
 
@@ -207,10 +209,10 @@ Per eliminare una regola:
 
 1.  Fai clic sui tre punti nella colonna **Azioni**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Seleziona **Elimina**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Modelli AI
 
@@ -220,14 +222,12 @@ La sezione **Modelli AI** mostra tutti i modelli addestrati su misura che sono s
 
 Per aprire questa sezione, fai clic sulla scheda **Modelli AI** in cima alla pagina.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
 ### Categorie di modelli
 
 I modelli sono organizzati in categorie. Sotto il nome di ogni categoria è indicato il numero di modelli che contiene.\
 Fai clic su una categoria per vederne i dettagli.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
 In cima alla pagina della categoria selezionata trovi le informazioni principali su ogni modello:
 
@@ -245,7 +245,6 @@ Tutti i modelli di una categoria sono elencati in una tabella che include le seg
 * **Sottotipi di documento**: i sottotipi in cui il documento viene ulteriormente classificato.
 * **Priorità**: il livello di priorità che determina la posizione del modello nella coda di classificazione.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
 ### Modificare un modello
 
@@ -253,10 +252,12 @@ Per modificare un modello:
 
 1.  Fai clic sull'icona a forma di penna nella colonna **Azioni** accanto al modello che vuoi modificare.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    
 2. Aggiorna i campi disponibili:
    * **Modello successivo**: seleziona il modello che deve elaborare l'output del modello corrente.
    * **Tipo di documento**: scegli il tipo di documento con cui il modello deve classificare l'input.
 3.  Fai clic su **Salva** per applicare le modifiche.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-it-20261104.png" alt="Controlli attuali di estrazione. Structured Output è disattivato in questa configurazione esistente, quindi l&#x27;anteprima dello schema non appare. Nessuna impostazione di estrazione è stata modificata."><figcaption><p>Controlli attuali di estrazione. Structured Output è disattivato in questa configurazione esistente, quindi l&#x27;anteprima dello schema non appare. Nessuna impostazione di estrazione è stata modificata.</p></figcaption></figure>

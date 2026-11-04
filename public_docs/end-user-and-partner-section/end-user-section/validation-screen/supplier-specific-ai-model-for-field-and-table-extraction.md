@@ -28,3 +28,7 @@ Un cambio può richiedere conferma e riavviare l’estrazione. Controllare prima
 Confrontare i modelli con documenti di test autorizzati e controllare valori, tempi e costi. Un cambio può rielaborare un documento e non garantisce un miglioramento. Per configurare il valore dell’organizzazione o esaminare le preferenze dei template, consultare la documentazione collegata.
 
 [**qui**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)
+
+## Impostazioni e valori specifici
+
+Structured Output ha una propria impostazione organizzazione/modello di estrazione, separata dal livello AI. Modificarla in Altre opzioni del documento; la conferma salva il valore specifico e riavvia quel documento. Gli indicatori nell'elenco sono di sola lettura. Eliminare una voce può rimuovere più impostazioni specifiche insieme. [Structured Output per le tabelle](../ai-table/structured-output.md).

@@ -4,7 +4,7 @@ Le colonne della tabella definiscono quali colonne ha la tabella delle voci di r
 
 **Dove:** Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella
 
-<figure><img src="../../../../../.gitbook/assets/table-columns_list.png" alt="Elenco Colonne della Tabella con i flag Obbligatoria, Sola lettura, Nascosta e Usa AI per ogni colonna"><figcaption><p>Colonne della Tabella: una riga per colonna, i flag si attivano direttamente nell'elenco</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-it-20261104.png" alt="Menu Use AI attuale con Predefinito, Sì e No. Nessuna opzione è stata modificata. Le celle dei titoli sono nascoste per riservatezza."><figcaption><p>Menu Use AI attuale con Predefinito, Sì e No. Nessuna opzione è stata modificata. Le celle dei titoli sono nascoste per riservatezza.</p></figcaption></figure>
 
 ## Cosa vedi
 
@@ -19,7 +19,7 @@ Ogni riga è una colonna di una tabella. L'elenco mostra:
 | **Obbligatoria** | Il documento non può essere approvato finché questa colonna è vuota in una qualsiasi riga. |
 | **Sola lettura** | Gli utenti vedono il valore ma non possono modificarlo. |
 | **Nascosta** | La colonna non viene né mostrata né esportata. Serve per disattivare le colonne predefinite che non ti servono. |
-| **Usa AI** | L'estrazione AI della tabella compila questa colonna, anche quando il fornitore ha regole addestrate. |
+| **Use AI** | Scelta a tre stati: Predefinito eredita la selezione AI del tipo di documento, Sì richiede esplicitamente la colonna e No la esclude dallo schema base. È separata da Obbligatoria, Sola lettura e Nascosta. |
 | **Azioni** | Icona di traduzione: rinomina il titolo. Icona info: da dove proviene l'etichetta mostrata (la tua traduzione, il valore predefinito, la chiave). Menu a tre punti: *Elimina*, solo per le colonne create dalla tua organizzazione; le colonne predefinite possono solo essere nascoste. |
 
 Sopra l'elenco ci sono due pulsanti:
@@ -44,3 +44,19 @@ Ogni tipo di documento viene fornito con un set di colonne predefinite (per le f
 * [Risoluzione dei problemi](troubleshooting-1.md)
 * [Campi di addestramento Linee/Tabella di addestramento](../../../../setup/document-training/training-line-fields-table-training/README.md): insegna a DocBits dove si trova la tabella di un fornitore
 * [Tabella AI](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): cosa vede l'utente nella schermata di validazione
+
+## Use AI: Predefinito, Sì o No
+
+Aprire le [colonne di tabella](README.md) del tipo di documento e della tabella corretti. **Utilizzare l'IA (Use AI)** è un menu a tre stati, non una casella. La modifica viene salvata immediatamente.
+
+| Scelta attuale | Effetto sullo schema base |
+| --- | --- |
+| **Predefinito · richiesto** oppure **Predefinito · non richiesto** | Usa la selezione DocBits per quel tipo e nome di colonna. Predefinito non significa sempre attivo né sempre disattivo. |
+| **Sì · richiesto** | Richiede esplicitamente la colonna configurata all'AI. |
+| **No · non richiesto** | La esclude dallo schema base anche se normalmente viene richiesta. |
+
+Tornare a **Predefinito** rimuove la scelta esplicita. Una nuova colonna personalizzata normalmente non appartiene alla selezione AI predefinita: scegliere **Sì** per richiederla. Le colonne AI predefinite non coincidono con tutte le colonne fornite. Verificare effetto indicato e anteprima.
+
+**Obbligatoria**, **Sola lettura** e **Nascosta** controllano completezza, modificabilità e visibilità; non sostituiscono la scelta AI. **No** non elimina la colonna né cancella valori e non impedisce a regole, script o altre fonti di compilarla. Addestramento del fornitore e tag AI possono ampliare la richiesta effettiva: risolvere anche lì eventuali contraddizioni. L'interruttore non sostituisce automaticamente un risultato basato soltanto su regole.
+
+[Structured Output per le tabelle](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

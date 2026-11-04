@@ -26,17 +26,17 @@ Laden Sie vor dem Import das benötigte Connection Template über die folgende D
 2. **Template importieren:**
    *   Klicken Sie auf die Schaltfläche **Import**.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/m3_import_2.png)
+       ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/m3_import_2.png)
    * Wählen Sie die passende **Template File** aus Ihrem lokalen System aus.
    *   Klicken Sie auf **OK**, um den Importvorgang zu starten.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/m3_import_3.png)
+       ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/m3_import_3.png)
 3. **Bestätigung:**
    *   Wenn der Import erfolgreich war, wird eine Bestätigungsmeldung angezeigt.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/m3_import_4.png)
+       ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/m3_import_4.png)
 4. **Konfiguration nach dem Import:**
    * Nach dem Import des Templates können Sie bei Bedarf spezifische Verbindungseinstellungen anpassen.
    * Vergessen Sie nicht, Ihren **Service Account** für Authentifizierung und Zugriffskontrolle zu importieren bzw. zu konfigurieren.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/m3_import_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/m3_import_5.png)

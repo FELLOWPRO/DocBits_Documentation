@@ -42,4 +42,4 @@ Um den Lieferanten zu identifizieren oder Einkaufsbestellzeilen zu vergleichen/a
 
 ## E-Mail-Import OAuth Office365
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/o365_architecture.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/o365_architecture.png)

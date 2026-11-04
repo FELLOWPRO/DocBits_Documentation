@@ -23,7 +23,7 @@ Prüfen Sie vor dem Wechsel, ob beide Kanäle in Ihrer Umgebung bereit und verf�
 
 ## Überblick über den Lebenszyklus
 
-![Dreiphasiger Release-Lebenszyklus von DocBits VESTA und NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy.png)
+![Dreiphasiger Release-Lebenszyklus von DocBits VESTA und NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
 Jeder Zyklus besteht aus drei Phasen. Ein von FELLOWPRO gesteuerter Rollover überführt anschließend das NOVA-Produktions-Release in VESTA und startet den nächsten Zyklus.
 
@@ -82,7 +82,7 @@ Anschließend wiederholen sich dieselben drei Phasen mit den neuen Versionsnumme
 
 Das folgende Diagramm veranschaulicht den oben beschriebenen Release-Zyklus im Detail.
 
-![Detaillierter Release-Zyklus von DocBits VESTA und NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
+![Detaillierter Release-Zyklus von DocBits VESTA und NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
 
 ### Release-Rhythmus
 

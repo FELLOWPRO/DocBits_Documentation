@@ -14,7 +14,7 @@ Um auf die OCR-Einstellungen zuzugreifen:
 
 *   Navigieren Sie zu: **Einstellungen** → **Verarbeitung von Dokumenten** → **OCR-Einstellungen**
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_ocr.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_ocr.png)
 
 ## OCR-Qualität
 
@@ -29,7 +29,7 @@ Wenn ein Dokument das definierte Qualitätsniveau nicht erfüllt, bietet DocBits
 * **Fehler auslösen**\
   Die Verarbeitung des Dokuments wird vollständig gestoppt, und eine Fehlermeldung wird angezeigt, die darauf hinweist, dass das Dokument das erforderliche Qualitätsniveau nicht erfüllt hat.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/ocr_settings_1.png)
 
 ## Allgemeine OCR-Einstellungen
 
@@ -44,7 +44,7 @@ Wenn ein Dokument das definierte Qualitätsniveau nicht erfüllt, bietet DocBits
     * Sie mit der derzeit ausgewählten Version nicht die gewünschten Ergebnisse erzielen.
     * Sie Probleme im Zusammenhang mit der OCR-Leistung oder -Genauigkeit beheben.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ocr_settings_2.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/ocr_settings_2.png)
 
 ## OCR-Einstellungen für Tabellen
 

@@ -17,17 +17,17 @@ Diese Seite bietet einen Überblick über die verfügbaren Werkzeuge, die Ihnen 
 Auf der rechten Seite der Dokumentenansicht finden Sie die **Fehlermeldung**, die eine kurze Beschreibung dessen liefert, was schiefgelaufen ist.\
 Unter der Fehlermeldung wird die **Exception** angezeigt, die zeigt, wo der Fehler im Code aufgetreten ist. Diese Informationen sind nützlich für die Fehlersuche und sollten bei der Meldung des Problems an den Support enthalten sein.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/error_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/error_2.png)
 
 ## Bearbeitungsoptionen
 
 Auf der linken Seite der Seite wird Ihr Dokument zusammen mit mehreren Werkzeugen für Interaktion und Überprüfung angezeigt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/error_3.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/error_3.png)
 
 ### **Optionen der linken Werkzeugleiste**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/error_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/error_4.png)
 
 Die Werkzeugleiste auf der linken Seite der Seite bietet Werkzeuge zur Interaktion mit dem Dokument:
 
@@ -50,7 +50,7 @@ Die Werkzeugleiste auf der linken Seite der Seite bietet Werkzeuge zur Interakti
 
 ### **Optionen der rechten Werkzeugleiste**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/error_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/error_5.png)
 
 Die Werkzeugleiste auf der rechten Seite der Seite bietet zusätzliche Funktionen:
 
@@ -76,7 +76,7 @@ In vielen Fällen kann das Neustarten des Dokuments das Problem lösen und die V
     1. Klicken Sie auf die drei Punkte in der **Aktionen** Spalte.
     2. Wählen Sie **Neustarten** aus dem Menü.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/error_1.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/error_1.png)
 
 **2. Support kontaktieren**
 

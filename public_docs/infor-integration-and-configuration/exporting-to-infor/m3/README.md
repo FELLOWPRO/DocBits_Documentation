@@ -13,11 +13,11 @@
      * Suchen Sie nach `"ci"` innerhalb der Datei.
      * Kopieren Sie den Wert innerhalb der Anführungszeichen (ohne die Anführungszeichen).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_1.png)
 
 4. Fügen Sie unter **Documents** `Sync.CaptureDocument` hinzu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_2.png)
 
 5. Klicken Sie auf **Save**, um die Konfiguration abzuschließen.
 
@@ -29,11 +29,11 @@
 2. Navigieren Sie zu **Infor** > **OS** > **ION** > **Connect** > **Mappings**.
 3. Klicken Sie auf **Import** und wählen Sie die entsprechende Mapping Datei für **M3**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_3.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_3.png)
 
 4. Sobald die Dateien importiert sind, bestätigen Sie die Mappings, um sie zu aktivieren.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_4.png)
 
 ## Schritt 3: Den Data Flow erstellen
 
@@ -49,12 +49,12 @@
    * **Name**: `DocBits` oder `DocBits-Export`.
 2. Klicken Sie auf **Add** und wählen Sie den **Connection Point**, der in Schritt 1 erstellt wurde.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_5.png)
 
 3. Klicken Sie auf das **Document Icon** neben dem Application Node.
    * Klicken Sie auf **Add** und wählen Sie `Sync.CaptureDocument`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
 #### Mapping Node
 
@@ -62,7 +62,7 @@
    * **Name**: `Capt2process`.
    * **Mapping**: `CaptureDocument_to_ProcessSupplierInvoice`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
 #### Application Node
 
@@ -70,12 +70,12 @@
    * **Name**: `M3`.
 2. Klicken Sie auf **Add** und wählen Sie die **M3 Application** vom Kunden.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_8.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_8.png)
 
 3. Klicken Sie auf das **Document Icon** neben dem Application Node.
    * Klicken Sie auf **Add** und wählen Sie `Acknowledge.SupplierInvoice`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
 #### API Node
 
@@ -84,7 +84,7 @@
    * **ION API Connector**: `DocBits_Import`.
    * Wenn `DocBits_Import` nicht existiert, siehe **Schritt 1** und **Schritt 2** der Import from M3 Dokumentation, um den Connection Point zu erstellen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_10.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_10.png)
 
 #### Flow speichern und aktivieren
 
@@ -100,7 +100,7 @@
 1. Öffnen Sie **DocBits**.
 2.  Navigieren Sie zu **Einstellungen > Dokumentenverarbeitung > Export**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 3. Erstellen Sie einen neuen Export:
    * **Auswählen**: **Infor IDM + ION BOD**.
    * **Titel**: Wählen Sie einen aussagekräftigen Titel.
@@ -116,7 +116,7 @@
 1. Öffnen Sie **DocBits**.
 2.  Navigieren Sie zu **Einstellungen > Dokumentenverarbeitung > Export**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 3. Erstellen Sie einen neuen Export:
    * **Auswählen**: **Infor IDM + M3 (API)**.
    * **Titel**: Wählen Sie einen aussagekräftigen Titel.
@@ -132,7 +132,7 @@
 1. Öffnen Sie **DocBits**.
 2.  Navigieren Sie zu **Einstellungen > Dokumentenverarbeitung > Export**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 3. Erstellen Sie einen neuen Export:
    * **Auswählen**: **Infor IDM + M3 (API)**.
    * **Titel**: Wählen Sie einen aussagekräftigen Titel.

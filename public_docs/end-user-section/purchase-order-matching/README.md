@@ -184,7 +184,7 @@ Mehrere Indikatoren stehen zur Verfügung, um Ihnen zu helfen zu überprüfen, o
 
 Der Mehrfachabgleich ermöglicht es, mehrere Zeilen aus einer Tabelle mit einer einzelnen Zeile in der entsprechenden (entgegengesetzten) Tabelle abzugleichen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/po_match_20.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/po_match_20.png)
 
 Diese Funktion ist besonders nützlich für Szenarien, in denen Details über mehrere Positionen verteilt sind.
 

@@ -6,12 +6,25 @@
 
 **Touchless Intelligence** responde a dos preguntas sobre el procesamiento de sus documentos:
 
-1. **¿Cuántos documentos pasan por DocBits sin que nadie los toque?** Esta es su *tasa touchless*.
+1. **¿Cuántos documentos terminan sin correcciones ni intervenciones manuales de procesamiento?** Esta es la *tasa AP Touchless*; permite una aprobación de negocio. *Pure Touchless* también excluye esa aprobación.
 2. **¿Por qué se detienen los demás y qué debemos cambiar para que se detengan menos?** Este es el *diagnóstico*.
 
 Es una pestaña del [Panel de Análisis](analytics-dashboard.md). No añade trabajo para su equipo: DocBits registra lo que ocurre con cada documento en el pipeline de procesamiento y evalúa el resultado cada 15 minutos.
 
 <figure><img src="../.gitbook/assets/touchless-overview-es.png" alt="La pestaña Touchless Intelligence con cinco cifras clave, sugerencias de mejora y el gráfico de la tasa touchless"><figcaption><p>La pestaña Touchless Intelligence: cifras clave, mejoras, la tasa a lo largo del tiempo y el gráfico de dónde se pierde primero el touchless. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+
+### Extracción correcta y proceso sin intervención
+
+**DocBits puede extraer correctamente todos los valores y, aun así, la factura puede necesitar una intervención porque los datos del sistema de origen difieren.** AP significa Accounts Payable, el equipo de cuentas por pagar.
+
+| Pregunta | Qué comparar | Qué demuestra |
+| --- | --- | --- |
+| ¿DocBits leyó correctamente la factura? | Factura original frente a campos y posiciones extraídos, antes de cualquier corrección manual | Calidad de extracción |
+| ¿El proceso terminó sin intervención? | Factura correctamente extraída frente a pedido y datos maestros importados de Infor ERP, junto con el historial | Automatización del proceso |
+
+Una diferencia no demuestra por sí sola qué dato es incorrecto. Compruebe la factura, el precio acordado y la copia realmente importada. El pedido puede ser incorrecto, la importación estar desactualizada o la factura del proveedor diferir de lo acordado. Un paso de extracción aprobado o una confianza alta tampoco certifican que todos los valores sean correctos.
+
+Las capturas conservan la interfaz española real. La etiqueta «AP ayudó» corresponde a AP Assisted; algunos nombres de etapas de coincidencia siguen en inglés. Las explicaciones de esta página distinguen esos textos del producto de los términos de negocio.
 
 ### Qué puede hacer con ella
 
@@ -37,16 +50,16 @@ Si no tiene permiso, la página muestra *Action not allowed, please contact the 
 
 ## Qué significa "touchless"
 
-Cada documento termina con exactamente **un** resultado:
+Cada documento finalizado y elegible pertenece a una sola categoría:
 
-| Resultado | Significado | Cuenta en la tasa |
+| Categoría | Significado | ¿Cuenta como touchless? |
 | --- | --- | --- |
-| **Pure touchless** | Procesado desde la importación hasta la exportación **sin ninguna intervención humana** | Sí, como éxito |
-| **AP touchless** | Se ejecutó automáticamente y una persona solo dio la **aprobación de negocio**. No fue necesaria ninguna corrección | Sí, como éxito |
-| **AP assisted** | Una persona tuvo que **corregir un campo, reiniciar el documento** o intervenir de otro modo | Sí, como fallo. No es un error, solo una automatización que no llevó el documento hasta el final |
-| **Process exception** | Terminó con un **error**, fue **rechazado**, fue **rechazado por el ERP** o se **estancó** en el pipeline | Sí, como fallo |
-| **In progress** | Todavía no ha terminado | **No**. Aún no tiene resultado |
-| **Not eligible** | Eliminado, archivado, un documento de prueba o un tipo de documento excluido | **No** |
+| **Pure Touchless** | Procesado con éxito, sin intervención humana ni aprobación | Sí |
+| **AP Touchless** | Procesado con éxito; solo necesitó aprobación de negocio | Sí |
+| **AP Assisted**, con intervención de AP | Procesado con éxito, pero alguien corrigió, validó manualmente o reinició | No |
+| **Excepción de proceso** | Por ejemplo, rechazo, error definitivo, rechazo del ERP o estancamiento clasificado como excepción | No |
+
+La validación manual aquí significa una intervención registrada; una mera aprobación sigue siendo AP Touchless. **AP Assisted describe la intervención, no su causa:** la extracción puede ser correcta y los datos de Infor diferentes. Los documentos aún en proceso o no elegibles quedan fuera del denominador.
 
 La **tasa touchless** es:
 
@@ -54,6 +67,8 @@ La **tasa touchless** es:
 rate = (Pure touchless + AP touchless)
        ÷ (Pure touchless + AP touchless + AP assisted + Process exception)
 ```
+
+En esta fórmula, **AP touchless** es la categoría «solo aprobación». El porcentaje **AP Touchless** de la cabecera combina **Pure + solo aprobación**. No sume los dos porcentajes de la cabecera: se solapan. Las tarjetas de resultados del proveedor cuentan categorías separadas. La tasa mide el proceso, no la precisión de extracción.
 
 Los documentos que siguen **in progress** o que son **not eligible** nunca entran en el cálculo. Esto protege la tasa: un documento que llegó hace cinco minutos no puede bajarla.
 
@@ -74,16 +89,45 @@ En 30 días llegaron 200 documentos:
 | In progress | 8 |
 | Not eligible (documentos de prueba) | 2 |
 
-* Denominador: 120 + 30 + 30 + 10 = **190**. Los 8 documentos in progress y los 2 not eligible se dejan fuera.
-* **Pure touchless**: 120 ÷ 190 = **63.2 %**
-* **AP touchless**: 30 ÷ 190 = **15.8 %**
-* **Tasa touchless**: (120 + 30) ÷ 190 = **78.9 %**
+* Denominador: 120 + 30 + 30 + 10 = **190**; se excluyen 8 documentos en proceso y 2 no elegibles.
+* **Pure Touchless:** 120 ÷ 190 = **63,2 %**.
+* **Solo aprobación:** 30 ÷ 190 = **15,8 %**, el peso de esa categoría.
+* **Tasa AP Touchless:** (120 + 30) ÷ 190 = **78,9 %**.
 
-La pestaña muestra un **objetivo** (70 % salvo que su organización utilice otro). En este ejemplo, la tasa está por encima del objetivo.
+Con un objetivo del 70 %, la tasa AP combinada está por encima y la tasa Pure por debajo. Compare siempre el objetivo con la tasa indicada.
 
 Haga clic en **How touchless is calculated**, arriba a la derecha, para abrir esta explicación dentro de DocBits, con las cifras de su propio período (documentos en el período, aún in progress, excluidos, medidos).
 
-<figure><img src="../.gitbook/assets/touchless-methodology-es.png" alt="El panel How touchless is calculated con las cifras del período"><figcaption><p>El panel <strong>How touchless is calculated</strong>: la fórmula, <strong>Your numbers in this period</strong> (aquí 2,425 documentos, 2,115 aún in progress, 310 medidos) y qué significa cada resultado. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology-es.png" alt="Método de cálculo en la interfaz española: solo entran documentos con resultado final. La tasa AP combina los documentos completamente automáticos y los que solo necesitaron aprobación. Estos números describen el proceso, no la exactitud de extracción; son datos del entorno de demostración."><figcaption><p>Método de cálculo en la interfaz española: solo entran documentos con resultado final. La tasa AP combina los documentos completamente automáticos y los que solo necesitaron aprobación. Estos números describen el proceso, no la exactitud de extracción; son datos del entorno de demostración.</p></figcaption></figure>
+
+### Ejemplo: 100 % de extracción correcta, 80 % de AP Touchless
+
+Supongamos que la revisión de originales y valores previos a las correcciones confirma que las **100 facturas finalizadas y elegibles se extrajeron correctamente**.
+
+| Qué ocurrió | Facturas | Categoría |
+| --- | --- | --- |
+| Factura y datos de origen coinciden; todo termina automáticamente | 70 | Pure Touchless |
+| Los datos coinciden; solo se necesita aprobación de negocio | 10 | AP Touchless, solo aprobación |
+| La extracción es correcta, pero los datos importados de Infor difieren; AP aclara el caso y reinicia manualmente en DocBits tras corregir el origen; la factura termina con éxito | 20 | AP Assisted |
+
+* **Extracción correcta en la muestra revisada:** 100 ÷ 100 = **100 %**.
+* **Pure Touchless:** 70 ÷ 100 = **70 %**.
+* **AP Touchless:** (70 + 10) ÷ 100 = **80 %**.
+
+El 100 % corresponde a una **revisión independiente de los documentos**, no a otro indicador de este panel. No puede deducirse de las categorías touchless.
+
+### Ejemplos de intervenciones y causas
+
+Estos casos son ilustrativos y no son los documentos de las capturas. El éxito incluye la confirmación del ERP cuando sea necesaria.
+
+| Caso | Factura / extracción / origen | Acción y resultado |
+| --- | --- | --- |
+| Error de extracción | OC `45001234` / DocBits lee `45001284` / Infor contiene la OC correcta | AP corrige el número; tras finalizar con éxito: **AP Assisted** |
+| Datos de origen diferentes | Precio 10,00 € / extracción correcta de 10,00 € / pedido importado de 9,00 €, fuera de tolerancia | Se confirma el precio acordado, se corrige el pedido, se verifica la importación y AP reinicia manualmente: **AP Assisted** |
+| Importación tardía | La OC existe en Infor, pero todavía no ha llegado a DocBits | Si importación y reintento posteriores terminan sin intervención ni aprobación, puede resultar **Pure Touchless**; un reinicio manual seguido de éxito da **AP Assisted** |
+| Rechazo del ERP | Extracción correcta, pero el ERP rechaza la exportación | **Excepción de proceso** mientras se clasifique como rechazo definitivo del ERP |
+
+Incluso una pequeña corrección o un reinicio registrado cuenta. AP Assisted significa asistencia humana de cuentas por pagar, no un asistente de IA. El trabajo realizado solo en Infor, sin un evento correspondiente en DocBits, no debe suponerse incluido automáticamente en la medición; documéntelo también en el diagnóstico.
 
 ### Cuán actuales son las cifras
 
@@ -104,12 +148,12 @@ La **suborganización** que seleccionó en la parte superior de DocBits limita l
 
 ### Las cinco cifras clave
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards-es.png" alt="Las cinco cifras clave: Pure touchless, AP touchless, AP assisted, Process exceptions y Diagnosis coverage"><figcaption><p>Las cinco cifras clave. Aquí la tasa pura es del 50.3 % (156 documentos), es decir, 19.7 puntos por debajo del objetivo del 70 %, y la cobertura del diagnóstico es del 100 %. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-kpi-cards-es.png" alt="Indicadores en español: 156 documentos Pure más 11 con solo aprobación son 167 de 310, es decir, 53,9 % AP Touchless. Pure por separado es 50,3 %. La precisión de extracción requiere una revisión independiente del original."><figcaption><p>Indicadores en español: 156 documentos Pure más 11 con solo aprobación son 167 de 310, es decir, 53,9 % AP Touchless. Pure por separado es 50,3 %. La precisión de extracción requiere una revisión independiente del original.</p></figcaption></figure>
 
 | Tarjeta | Muestra | Ejemplo (ilustrativo) |
 | --- | --- | --- |
 | **Pure touchless** | El porcentaje y la diferencia con el objetivo | **63.2 %** · "120 documents" · "−6.8 pp vs 70 % target" (rojo, por debajo del objetivo) |
-| **AP touchless** | El porcentaje | **15.8 %** · "30 documents" |
+| **AP Touchless** | Porcentaje combinado de Pure y solo aprobación; el número inferior corresponde a solo aprobación | **78,9 %** · 30 documentos con solo aprobación |
 | **AP assisted** | El número de documentos y su proporción | **30** · 15.8 % |
 | **Process exceptions** | El número de documentos y su proporción | **10** · 5.3 % |
 | **Diagnosis coverage** | Cuántos documentos bloqueados tienen una causa **conocida** | **80 %** · "10 without a known cause" |
@@ -122,7 +166,7 @@ La **suborganización** que seleccionó en la parte superior de DocBits limita l
 
 <figure><img src="../.gitbook/assets/touchless-trend-es.png" alt="Gráfico de líneas de la tasa pure touchless y AP touchless por día con la línea del objetivo del 70 por ciento"><figcaption><p>La tasa por día con la línea del objetivo. Aquí la tasa se mantiene entre el 40 y el 60 % y cae bruscamente a partir del 10 de octubre. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
-Un gráfico con una línea para **Pure touchless**, una para **AP touchless** y la **línea del objetivo**. Los períodos cortos muestran puntos diarios; los períodos largos, puntos semanales.
+La captura muestra proporciones separadas de resultados: Pure Touchless y AP Touchless, solo aprobación. La línea azul de esta vista no es la tasa AP combinada de la cabecera. Combine Pure y solo aprobación sobre la misma población para obtener esa tasa. Los períodos cortos usan puntos diarios y los largos, semanales.
 
 **Ejemplo.** Después de activar la coincidencia automática con la OC el 1 de octubre, la tasa pura sube del 55 % al 68 % en dos semanas. El gráfico muestra el día en que la curva cambia, de modo que puede relacionarlo con su cambio.
 
@@ -132,11 +176,10 @@ Un gráfico con una línea para **Pure touchless**, una para **AP touchless** y 
 
 Un gráfico de barras de **Blocked documents** por etapa del pipeline: la **primera** etapa que detuvo un documento.
 
-**Ejemplo.** Barras: Supplier Identification 12, Field Validation 41, PO Line Match 7. La barra más grande le indica que debe revisar primero **Field Validation**, normalmente porque no se extrae un campo obligatorio.
+**Ejemplo.** Si las barras muestran identificación del proveedor 12, validación de campos 41 y coincidencia de posiciones 7, investigue primero la validación. Un valor no extraído es una causa posible; compare original, reglas y datos de origen antes de confirmarla.
 
 ### Oportunidades por proveedor
 
-<figure><img src="../.gitbook/assets/touchless-supplier-queue-es.png" alt="La tabla Supplier opportunities con volumen, tasa pura, documentos perdidos, causa raíz, documentos recuperables, mejora esperada, confianza y estado"><figcaption><p>La cola de proveedores (abreviada a las cuatro primeras filas). El primer proveedor tiene 106 documentos, una tasa pura del 38.7 % y 65 documentos recuperables, de modo que corregirlo vale <strong>+21 pp</strong>. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 La cola responde a **"¿Qué proveedor deberíamos corregir primero?"**. Está ordenada por documentos **Recoverable**, de mayor a menor, con 25 filas por página.
 
@@ -163,13 +206,12 @@ Utilice el cuadro de búsqueda ("Search supplier number or name") para encontrar
 
 ### Comparar proveedores
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers-es.png" alt="La página Compare suppliers con tres proveedores lado a lado y un gráfico de barras de sus resultados"><figcaption><p>Tres proveedores lado a lado: tasa pura, documentos perdidos y recuperables, causa raíz, mejora esperada y un gráfico de barras de los resultados. Cada <strong>Open</strong> lleva al Supplier Diagnosis. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 Haga clic en **Compare suppliers**, marque **de dos a cinco** proveedores (cada uno aparece con su número de documentos bloqueados) y haga clic en **Compare**.
 
 La comparación muestra los proveedores lado a lado: **Pure rate**, **Lost documents**, **Recoverable**, **Root cause**, **Expected lift**, un gráfico de barras de los resultados y un enlace al **Supplier Diagnosis** de cada uno.
 
-**Ejemplo.** Los proveedores A y B envían el mismo diseño de factura. B tiene una tasa pura del 80 %, A solo del 35 %. Ambos tienen la causa raíz "Master data". La comparación muestra que el diseño es correcto y que el registro del proveedor A está incompleto. Corrija los datos maestros de A en lugar de cambiar la plantilla.
+**Ejemplo.** A y B usan el mismo diseño; B tiene 80 % Pure y A 35 %. Si el diagnóstico sugiere datos maestros, compare originales, extracción y registros importados. La diferencia de tasas no demuestra por sí sola que el diseño sea correcto ni que los datos de A estén incompletos.
 
 ### Analizar con IA
 
@@ -234,3 +276,5 @@ No. La IA solo escribe explicaciones. Un ajuste solo cambia después de que un a
 
 <!-- Source notes (not shown): screenshots come from the dev test organisation with synthetic demo data (seed script) and fictional supplier names; the PO matching decision flow has no screenshot yet. facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described.
 -->
+
+<!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->

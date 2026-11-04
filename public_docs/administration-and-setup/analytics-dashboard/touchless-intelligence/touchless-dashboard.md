@@ -5,11 +5,17 @@
 | Filter                            | What it does                                                                                                                                                                                                                   |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **7D / 30D / 90D**                | The period for the key figures and the queue. The default is 30 days                                                                                                                                                           |
-| **Document Type**                 | Restricts every number to one type, for example INVOICE                                                                                                                                                                        |
+| **Document Type**                 | Filters the Touchless metrics and related analysis to one type, for example INVOICE. Learned rule proposals currently have their own selection; see below                                                                                                                                                                        |
 | **Segment field / Segment value** | Only if your organisation runs several processes through one document type (for example direct, indirect and EAM orders in the field `order_type`). Pick a field to see the breakdown, pick a value to narrow everything to it |
 | **Document ID**                   | Opens the **Document Trace** for one document                                                                                                                                                                                  |
 
 The **sub-organisation** you selected at the top of DocBits narrows the key figures and the supplier queue. Issue clusters and the AI analysis always cover the whole organisation.
+
+### Top-level document type versus learned rule proposals
+
+The top selector and the document type in **Learned rule proposals** are independent in the currently checked implementation. The section loads its own available types and initially picks the first entry. Selecting **ORDER_CONFIRMATION** above can therefore leave **INVOICE** selected below. Those proposals concern invoices, not the order confirmations chosen for the metrics.
+
+Before applying a rule, check the type shown inside that section. If no matching type is available there, proposals for it have not been established. The section also uses its own data basis, such as corrected documents from the last 60 days, rather than automatically adopting the headline period. This describes the current separate controls; it does not claim synchronisation has been implemented.
 
 ### The five key figures
 

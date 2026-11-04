@@ -62,3 +62,7 @@ Before an administrator deletes an entry, identify its extraction template and a
 
 
 After deletion, subsequent processing reads the applicable organization configuration and fallback values for this template. Other templates associated with the same supplier may retain independent overrides. Deletion does not automatically reprocess historical documents. No deletion or resulting extraction was performed for this guide.
+
+## Settings and overrides
+
+Structured Output has a separate organization/template setting from the model tier. Change it in More options on the document; confirmation saves the override and restarts that document. The indicators in the settings list are read-only. Deleting a preference entry can remove several overrides at once. [Structured Output for Tables](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

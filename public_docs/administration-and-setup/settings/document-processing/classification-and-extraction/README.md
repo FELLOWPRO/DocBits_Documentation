@@ -1,5 +1,7 @@
 # Classification and Extraction
 
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output for Tables](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+
 ## Which setting works at which process step?
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-en-20261028.png" alt="From file to recognized data: View document type, data source and extraction path separately."><figcaption><p>View document type, data source and extraction path separately. The diagram is schematic; the active settings of your organization determine the actual behavior.</p></figcaption></figure>
@@ -111,7 +113,7 @@ Learn more about training [here](../../../setup/document-training/training-line-
 
 <figure><img src="../../../../.gitbook/assets/dbdc-3-four-vision-options-en-20261031.png" alt="Current English Vision dropdown showing Off (text only), Images only, Hybrid (text and images) and Auto (decided per document)"><figcaption><p>The four input modes in the current English Dev menu. The menu was opened and closed without selecting a different mode; no extraction was run.</p></figcaption></figure>
 
-**Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot. When structured extraction is already enabled, the **What the AI requests** preview appears below the control and shows which fields and columns the AI will be asked for: header fields and line columns are listed with their source (requested or disabled standard fields), and the expected output mode (e.g. *strict* – no additional columns). Fields that are configured for the document type but switched off are not requested from the AI.
+**Use Structured Extraction (AI):** The switch sets the organization's structured-output default. The requested columns depend on the three-state Use AI selection; template overrides and supplier training also matter. Read the complete configuration, preview and example guide. [Structured Output for Tables](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
 
 **Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
 Detailed explanation available [here](table-extraction-for-costing-element.md).
@@ -291,3 +293,5 @@ Click the pen icon on a label row to open the edit dialog. It offers **Next mode
 * [Auto Extract Tax Code](auto-extract-tax-code.md)
 * [Table Extraction for Costing Element](table-extraction-for-costing-element.md)
 * [OCR Settings](../ocr-settings.md)
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-en-20261104.png" alt="Current Extraction controls. Structured Output is off in this existing configuration, so no schema preview is shown. No extraction setting was changed."><figcaption><p>Current Extraction controls. Structured Output is off in this existing configuration, so no schema preview is shown. No extraction setting was changed.</p></figcaption></figure>

@@ -10,7 +10,7 @@ Usarlo per i dati master che non arrivano come BOD — listini prezzi, centri di
 
 ## Due modi per inviare l'XML
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-endpoints.png)
 
 | Endpoint | Quando usarlo |
 | --- | --- |
@@ -29,7 +29,7 @@ Serviranno:
 * **Le mappature dei campi** — quale XPath riempie quale colonna.
 * **Il proprio Org ID**, da **Settings → Integration & SSO**, nella sezione **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-org-id.png)
 
 ## Istruzioni passo per passo
 
@@ -50,21 +50,21 @@ Usare la regione in cui è ospitata la propria organizzazione — la stessa regi
 
 ### 2. Autorizzarsi
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-lock.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-lock.png)
 
 L'autorizzazione funziona esattamente come per le importazioni di BOD: fare clic sull'**icona del lucchetto**, incollare il proprio **Org ID** in **X-ORG-ID**, incollare la propria API key in **X-API-KEY** e fare clic su **Authorize** su ciascuna.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey.png)
 
 ### 3. Compilare i campi
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-xml.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-tryitout-xml.png)
 
 Fare clic su **Try it out**, poi compilare il modulo.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-form.png)
 
 | Campo | |
 | --- | --- |
@@ -124,7 +124,7 @@ Verificare a quale ambiente e a quale organizzazione si punta prima di eseguire.
 
 Prima di eseguire, controllare il menu a discesa **Servers** in fondo al modulo.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-execute.png)
 
 Fare clic su **Execute**. Un'importazione riuscita restituisce:
 
@@ -135,7 +135,7 @@ Fare clic su **Execute**. Un'importazione riuscita restituisce:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-response.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-response.png)
 
 A differenza delle importazioni di BOD, questi endpoint segnalano i problemi con un vero stato di errore anziché con un `200` che porta `"success": false` — un **400** significa che la richiesta è stata rifiutata e non è stato scritto nulla.
 

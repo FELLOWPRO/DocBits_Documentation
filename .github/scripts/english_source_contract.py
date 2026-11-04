@@ -86,25 +86,24 @@ def _object(repo: Path, commit: str, path: str) -> bytes | None:
 
 
 def check(repo: Path, base: str, head: str) -> list[str]:
-    """Report legacy-only changes; never copy or rewrite published content."""
+    """Reject additions or edits under the retired readme/ folder on main.
+
+    English publishes from the active directory only; readme/ is retired, so
+    removing its files is fine and anything still written there never publishes.
+    """
     base_commit, head_commit = _commit(repo, base), _commit(repo, head)
     active = _english_directory(repo, head_commit)
     raw = _git(repo, "diff", "--name-only", "--no-renames", "-z", base_commit, head_commit)
     changed = set(raw.decode("utf-8", "surrogateescape").split("\0")) - {""}
     errors = []
     for source in sorted(path for path in changed if path.startswith("readme/")):
-        relative = source.removeprefix("readme/")
-        target = str(PurePosixPath(active) / relative)
-        source_object = _object(repo, head_commit, source)
-        target_object = _object(repo, head_commit, target)
-        if source_object == target_object:
+        if _object(repo, head_commit, source) is None:
             continue
-        if target not in changed or (source_object is not None and target_object is None):
-            errors.append(
-                f"{source}: English GitBook imports {target}. Update the reviewed "
-                "published counterpart, preserving newer public content; a legacy-only "
-                "readme change does not publish."
-            )
+        target = str(PurePosixPath(active) / source.removeprefix("readme/"))
+        errors.append(
+            f"{source}: readme/ is retired on main and does not publish. "
+            f"English GitBook imports {target}; make the change there instead."
+        )
     return errors
 
 

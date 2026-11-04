@@ -61,6 +61,7 @@ Monitor system health, manage integrations, and maintain security.
 * **System Licenses**: View and manage API license information and usage.
 * **Cache Management**: Configure automatic cache clearing intervals (TTL) for Received Delivery, Purchase Order, and Task/Notification caches.
 * **Fulltext Search Settings**: Configure full-text search capabilities across your documents and data (requires the Fulltext Search module to be enabled).
+* **Appearance**: Customize the organisation's colours, corner radius, density and font — the whole app follows this theme in light and dark mode.
 
 ## 5. Supplier Settings
 

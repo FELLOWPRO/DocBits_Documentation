@@ -1,5 +1,7 @@
 # Editar y eliminar columnas
 
+Las casillas controlan obligatoriedad, edición y visibilidad. Use AI se configura por separado mediante el desplegable de tres estados explicado abajo.
+
 Todo excepto el título se cambia directamente en la lista; no hay cuadro de diálogo de edición.
 
 **Dónde:** Configuración → Configuración global → Tipos de documento → Columnas de tabla
@@ -13,7 +15,7 @@ Marque o desmarque la casilla de la fila. El cambio se guarda de inmediato (*Suc
 | **Is Required** | La aprobación se bloquea mientras la columna esté vacía en alguna fila; la pantalla de validación marca la celda. | Se permiten celdas vacías. |
 | **Read Only** | El valor se muestra pero no se puede sobrescribir. Utilícelo para valores procedentes de una consulta o de un script. | Los usuarios pueden editar la celda. |
 | **Hidden** | La columna desaparece de la pantalla de validación y de la exportación. Sus datos se conservan. | La columna se muestra y se exporta. |
-| **Use AI** | La extracción de tablas con IA rellena esta columna, también para proveedores con reglas entrenadas. | La columna la rellenan las reglas entrenadas, o la IA cuando no existen reglas. |
+
 
 {% hint style="info" %}
 Los indicadores surten efecto en los documentos cargados o reiniciados **después** del cambio. Los documentos abiertos conservan su tabla actual hasta que se reinician.
@@ -44,3 +46,19 @@ Qué ocurre:
 ## Deshacer una eliminación
 
 Una columna eliminada no se puede restaurar desde la lista. Vuelva a añadirla con el mismo título: el nombre técnico se deriva del título, por lo que una columna creada con el mismo título obtiene el mismo *Column name* y los mapeos existentes vuelven a coincidir.
+
+## Use AI: Predeterminado, Sí o No
+
+Abra las [columnas de tabla](README.md) del tipo de documento y tabla correctos. **Utilizar IA (Use AI)** es un desplegable de tres estados, no una casilla. Se guarda inmediatamente.
+
+| Opción actual | Efecto en el esquema base |
+| --- | --- |
+| **Predeterminado · solicitado** o **Predeterminado · no solicitado** | Usa la selección predeterminada de DocBits para ese tipo y nombre de columna. No significa siempre activado ni siempre desactivado. |
+| **Sí · solicitado** | Solicita expresamente la columna configurada. |
+| **No · no solicitado** | La excluye del esquema base, incluso si normalmente se solicita. |
+
+Volver a **Predeterminado** elimina la elección explícita. Una columna propia nueva normalmente no pertenece a la selección predeterminada de IA: seleccione **Sí** para solicitarla. Las columnas predeterminadas de IA no son todas las columnas incluidas en DocBits; compruebe el efecto indicado y la vista previa.
+
+**Obligatoria**, **Solo lectura** y **Oculta** controlan integridad, edición y visibilidad; no sustituyen la elección de IA. **No** no elimina la columna ni borra valores, y no impide que reglas, scripts u otras fuentes la rellenen. El entrenamiento y las etiquetas adicionales pueden ampliar la solicitud del proveedor: resuelva también allí las contradicciones. Este ajuste no sustituye automáticamente un resultado obtenido solo mediante reglas.
+
+[Structured Output para tablas](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

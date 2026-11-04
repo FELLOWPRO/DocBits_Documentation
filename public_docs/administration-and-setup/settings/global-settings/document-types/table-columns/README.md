@@ -4,7 +4,7 @@ Table Columns define qué columnas tiene la tabla de líneas de un tipo de docum
 
 **Dónde:** Configuración → Configuración global → Tipos de documento → Columnas de tabla
 
-<figure><img src="../../../../../.gitbook/assets/table-columns_list.png" alt="Lista de Table Columns con los indicadores Required, Read Only, Hidden y Use AI por columna"><figcaption><p>Table Columns: una fila por columna; los indicadores se cambian directamente en la lista</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-es-20261104.png" alt="Desplegable actual Use AI con Predeterminado, Sí y No. No se cambió ninguna opción. Las celdas de título están ocultas por privacidad."><figcaption><p>Desplegable actual Use AI con Predeterminado, Sí y No. No se cambió ninguna opción. Las celdas de título están ocultas por privacidad.</p></figcaption></figure>
 
 ## Qué se ve
 
@@ -19,7 +19,7 @@ Cada fila es una columna de una tabla. La lista muestra:
 | **Is Required** | El documento no se puede aprobar mientras esta columna esté vacía en alguna fila. |
 | **Read Only** | Los usuarios ven el valor, pero no pueden editarlo. |
 | **Hidden** | La columna no se muestra ni se exporta. Sirve para desactivar las columnas predeterminadas que no necesita. |
-| **Use AI** | La extracción de tablas con IA rellena esta columna, incluso cuando un proveedor tiene reglas entrenadas. |
+| **Use AI** | Selección de tres estados: Predeterminado hereda la selección de IA del tipo de documento, Sí solicita expresamente la columna y No la excluye del esquema base. Es independiente de Obligatoria, Solo lectura y Oculta. |
 | **Actions** | Icono de traducción: cambiar el título. Icono de información: de dónde procede la etiqueta mostrada (su traducción, la predeterminada, la clave). Menú de tres puntos: *Delete*, solo para columnas creadas por su organización; las columnas predeterminadas solo se pueden ocultar. |
 
 Dos botones sobre la lista:
@@ -44,3 +44,19 @@ Cada tipo de documento incluye un conjunto de columnas predeterminadas (para fac
 * [Solución de problemas](troubleshooting-1.md)
 * [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md): enseñe a DocBits dónde está la tabla de un proveedor
 * [AI Table](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): lo que ve el usuario en la pantalla de validación
+
+## Use AI: Predeterminado, Sí o No
+
+Abra las [columnas de tabla](README.md) del tipo de documento y tabla correctos. **Utilizar IA (Use AI)** es un desplegable de tres estados, no una casilla. Se guarda inmediatamente.
+
+| Opción actual | Efecto en el esquema base |
+| --- | --- |
+| **Predeterminado · solicitado** o **Predeterminado · no solicitado** | Usa la selección predeterminada de DocBits para ese tipo y nombre de columna. No significa siempre activado ni siempre desactivado. |
+| **Sí · solicitado** | Solicita expresamente la columna configurada. |
+| **No · no solicitado** | La excluye del esquema base, incluso si normalmente se solicita. |
+
+Volver a **Predeterminado** elimina la elección explícita. Una columna propia nueva normalmente no pertenece a la selección predeterminada de IA: seleccione **Sí** para solicitarla. Las columnas predeterminadas de IA no son todas las columnas incluidas en DocBits; compruebe el efecto indicado y la vista previa.
+
+**Obligatoria**, **Solo lectura** y **Oculta** controlan integridad, edición y visibilidad; no sustituyen la elección de IA. **No** no elimina la columna ni borra valores, y no impide que reglas, scripts u otras fuentes la rellenen. El entrenamiento y las etiquetas adicionales pueden ampliar la solicitud del proveedor: resuelva también allí las contradicciones. Este ajuste no sustituye automáticamente un resultado obtenido solo mediante reglas.
+
+[Structured Output para tablas](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

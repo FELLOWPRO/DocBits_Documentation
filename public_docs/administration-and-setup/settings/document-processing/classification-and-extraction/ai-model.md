@@ -37,3 +37,7 @@ Antes de eliminar una entrada, identifique la plantilla y todas sus preferencias
 <!-- Obsolete illustration retired: Historical navigation, table or deletion picture is not current read-only model-menu evidence -->
 
 En el procesamiento posterior se aplican la configuración de la organización y los valores de respaldo pertinentes para esa plantilla. Otras plantillas del mismo proveedor pueden conservar sus propias preferencias. La eliminación no vuelve a procesar automáticamente los documentos históricos. Durante esta revisión no se eliminó ninguna entrada ni se comprobó una extracción posterior a la eliminación.
+
+## Ajustes y configuraciones específicas
+
+Structured Output tiene su propio ajuste de organización y plantilla, independiente del nivel de modelo. Cámbielo en Más opciones del documento; confirmar guarda el valor y reinicia ese documento. Los indicadores de la lista son de solo lectura. Eliminar una entrada puede borrar varios valores específicos a la vez. [Structured Output para tablas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

@@ -1,5 +1,9 @@
 # Clasificación y extracción
 
+<figure><img src="../../../../.gitbook/assets/classification-general-es-20261104.png" alt="Pestaña General con ajustes de procesamiento. El patrón de código de barras de la organización está oculto; no se cambió ningún ajuste."><figcaption><p>Pestaña General con ajustes de procesamiento. El patrón de código de barras de la organización está oculto; no se cambió ningún ajuste.</p></figcaption></figure>
+
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output para tablas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+
 ## ¿Qué configuración funciona en qué paso del proceso?
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-es-20261028.png" alt="Del archivo a los datos reconocidos: Vea el tipo de documento, la fuente de datos y la ruta de extracción por separado."><figcaption><p>Vea el tipo de documento, la fuente de datos y la ruta de extracción por separado. El diagrama es esquemático; La configuración activa de su organización determina el comportamiento real.</p></figcaption></figure>
@@ -35,7 +39,6 @@ Esta página explica en detalle todos los ajustes disponibles.
 Para acceder a la configuración de **Clasificación y extracción**, ve a:\
 **Configuración → Procesamiento de documentos → Clasificación y extracción**
 
-<figure><img src="../../../../.gitbook/assets/dbdc860-settings-nav-es-20261012.png" alt="Navegación de Ajustes con Procesamiento de documentos y Clasificación y extracción"><figcaption><p>Abre <strong>Ajustes → Procesamiento de documentos → Clasificación y extracción</strong>.</p></figcaption></figure>
 
 ## División de documentos
 
@@ -46,17 +49,17 @@ Para activar esta función:
 1. Ve a la sección **División de documentos**.
 2.  Abre el menú desplegable.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    
 3.  Selecciona **Dividir por código de barras/código QR**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    
 
 A continuación tendrás la opción de:
 
 * Seleccionar uno o varios tipos de código de barras que se deben detectar.
 *   Indicar un patrón regex que el código de barras debe cumplir para que se active la división del documento.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Formato de importes
 
@@ -98,7 +101,7 @@ Más información sobre el entrenamiento [aquí](../../../setup/document-trainin
 
 El modo se guarda bajo la clave de preferencia `TABLE_EXTRACTION_VISION_MODE`; el interruptor anterior `TABLE_EXTRACTION_USE_VISION` se mantiene y equivale en la práctica a *Solo imágenes*. La interfaz de la aplicación etiqueta este ajuste como *Utilice la visión artificial para la extracción de tablas (IA).*; la opción predeterminada que muestra el desplegable es *Desactivado (solo texto)*. Los demás nombres de modo aún no se han podido leer literalmente de la interfaz en español (el desplegable estaba cerrado en la captura), por lo que aquí se traducen del inglés.
 
-**Utilizar extracción estructurada (IA):** La IA devuelve la tabla en una estructura fija que se asigna directamente a las columnas de tabla configuradas. Recomendado cuando los encabezados de columna varían mucho entre documentos. Al hacer clic en el ajuste se abre la vista previa *Lo que solicita la IA* con los campos y columnas exactos que se solicitan a la IA: *Campos de encabezado solicitados* y *columnas de línea solicitadas* se muestran con su origen (por ejemplo, *Defecto*), junto con los campos *Configurado, no solicitado* y el modo de salida esperado (por ejemplo, *Salida: estricta – sin columnas adicionales*). Los campos configurados para el tipo de documento pero desactivados no se solicitan a la IA.
+**Utilizar extracción estructurada (IA):** El interruptor establece el valor de organización para la salida estructurada. Las columnas solicitadas dependen de Predeterminado/Sí/No en Use AI, de la plantilla y del entrenamiento del proveedor. La guía completa explica configuración, vista previa y ejemplo. [Structured Output para tablas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
 
 <figure><img src="../../../../.gitbook/assets/dbdc860-structured-preview-es-20261012.png" alt="Vista previa de la solicitud de IA con los campos de encabezado y las columnas de línea solicitados y el modo de salida estricta"><figcaption><p>La vista previa <em>Lo que solicita la IA</em> muestra los campos de encabezado y las columnas de línea solicitados, con el modo de salida esperado (<em>Salida: estricta</em>).</p></figcaption></figure>
 
@@ -167,7 +170,6 @@ En la sección **Reglas de clasificación** puedes definir patrones **regex** y 
 
 Para acceder a esta sección, haz clic en la pestaña **Reglas de clasificación** en la parte superior de la página.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
 ### **Añadir una nueva regla de clasificación**
 
@@ -175,7 +177,7 @@ Para crear una nueva regla:
 
 1.  Haz clic en **Añadir** en la esquina superior derecha.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    
 2. Rellena los siguientes campos:
    * **Patrón**: El patrón regex que el sistema debe buscar para activar la clasificación.
    * **Tipo**: Dónde se debe buscar el patrón (por ejemplo, **Código de barras**).
@@ -183,10 +185,10 @@ Para crear una nueva regla:
    * **Tipo de documento**: Define el tipo de documento que se asigna cuando el patrón coincide.
    *   **Subtipo de documento** _(opcional)_: Indica un subtipo para una clasificación más detallada.
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       
 3.  Haz clic en **Guardar** para guardar la regla de clasificación.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Editar una regla de clasificación**
 
@@ -194,14 +196,14 @@ Para editar una regla existente:
 
 1.  Haz clic en los tres puntos de la columna **Acciones**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Selecciona **Editar**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    
 3. Realiza los cambios que desees.
 4.  Haz clic en **Guardar** para aplicar los cambios.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Eliminar una regla de clasificación**
 
@@ -209,10 +211,10 @@ Para eliminar una regla:
 
 1.  Haz clic en los tres puntos de la columna **Acciones**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Selecciona **Eliminar**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Modelos de IA
 
@@ -222,14 +224,12 @@ La sección **Modelos de IA** muestra todos los modelos entrenados a medida que 
 
 Para abrir esta sección, haz clic en la pestaña **Modelos de IA** situada en la parte superior de la página.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
 ### Categorías de modelos
 
 Los modelos están organizados en categorías. Debajo del nombre de cada categoría se muestra el número de modelos que contiene.\
 Haz clic en una categoría para ver sus detalles.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
 En la parte superior de la página de la categoría seleccionada verás la información clave de cada modelo:
 
@@ -247,7 +247,6 @@ Todos los modelos de una categoría se listan en una tabla con la siguiente info
 * **Subtipos de documento**: Los subtipos en los que se sigue clasificando el documento.
 * **Prioridad**: El nivel de prioridad que determina la posición del modelo en la cola de clasificación.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
 ### Editar un modelo
 
@@ -255,10 +254,12 @@ Para editar un modelo:
 
 1.  Haz clic en el icono del lápiz de la columna **Acciones** junto al modelo que quieras editar.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    
 2. Actualiza los campos disponibles:
    * **Siguiente modelo**: Selecciona el modelo que debe procesar la salida del modelo actual.
    * **Tipo de documento**: Elige el tipo de documento con el que el modelo debe clasificar la entrada.
 3.  Haz clic en **Guardar** para aplicar los cambios.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-es-20261104.png" alt="Controles actuales de extracción. Structured Output está desactivado en esta configuración existente y por eso no aparece la vista previa. No se cambió ningún ajuste de extracción."><figcaption><p>Controles actuales de extracción. Structured Output está desactivado en esta configuración existente y por eso no aparece la vista previa. No se cambió ningún ajuste de extracción.</p></figcaption></figure>

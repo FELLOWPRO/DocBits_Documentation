@@ -24,6 +24,8 @@ DocBits biedt meerdere manieren om documenten te wijzigen, te controleren en te 
 
 Elk document doorloopt dezelfde stappen. Elk hulpmiddel heeft zijn eigen plek in die flow, en die plek bepaalt wat het kan zien en wat het nog kan wijzigen.
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Isometrisch rangeerterrein: een documentwagon passeert Transformatieregels, regels voor het matchen van inkooporders, opnieuw Transformatieregels en Aangepaste validatieregels, daarna een signaal Klaar voor validatie, vervolgens Standaard workflow, Geavanceerde workflow en een Workflow SDK-kaart"><figcaption>Een documentwagon rijdt van links naar rechts door 1 Transformatieregels, 2 Regels voor het matchen van inkooporders (Transformatieregels draaien na de match opnieuw) en 3 Aangepaste validatieregels; pas na het brandende signaal Klaar voor validatie kan een workflow starten, namelijk 4 Standaard workflow, 5 Geavanceerde workflow (het wisselspoor) of 6 een Workflow SDK-kaart, terwijl Scripts (&#x3C;/>) vóór het signaal op triggerpunten langs de route ingrijpen.</figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-flow-nl.svg" alt="Waar Transformatieregels, regels voor het matchen van inkooporders, Aangepaste validatieregels, Scripts en Workflows in de documentflow draaien"><figcaption></figcaption></figure>
 
 In woorden:

@@ -10,6 +10,8 @@ Met AI Table controleert u geëxtraheerde regels, corrigeert u kolommen en bewaa
 * [Extractie uitleggen en problemen onderzoeken](explain-extraction.md)
 * [Assistent en rechten](assistant-and-permissions.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Isometrische illustratie van een tabellezer: een leeskop met een cartridge met instructies scant een documenttabel, een patchpaneel koppelt elke teruggegeven kolom aan een geconfigureerde kolom, en de geconfigureerde kolommen staan als bakken met elk een Use AI-draaiknop met drie standen."><figcaption><p>De AI leest de tabel en geeft kolommen terug. Elke teruggegeven kolom wordt gekoppeld aan een geconfigureerde tabelkolom (een teruggegeven kolom zonder koppeling blijft verborgen), elke geconfigureerde kolom heeft een eigen Use AI-instelling (Standaard, Ja of Nee), en de AI-instructies en <strong>Opslaan als training</strong> bepalen hoe de volgende documenten van de leverancierslay-out worden gelezen.</p></figcaption></figure>
+
 ## Wanneer u de AI-tabel krijgt
 
 * Een beheerder heeft **AI-tabel extractie** ingeschakeld (Instellingen → Documentverwerking → Classificatie en extractie, zie [Instellingen voor beheerders](#instellingen-voor-beheerders)). Als deze uitstaat, toont het tabelgebied *AI-tabel wordt hier weergegeven. Inschakelen in …*.

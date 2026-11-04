@@ -61,6 +61,10 @@ Je hebt vervolgens de optie om:
 
     ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_16.png)
 
+Na een geslaagde splitsing wordt het bovenliggende document verwijderd en gaan de pagina's verder als afzonderlijke documenten die dezelfde batch delen.
+
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Isometrische illustratie van acht vellen in een bak, met een scanner die een streepjescode op vel 6 leest. Scheidingsbladen staan voor vel 3 en vel 6 en verdelen de vellen over drie documenten; één elastiekje loopt rond de hele bak."><figcaption><p>Voorbeeld met het patroon <code>^INV\d{6}$</code>: de codes op vel 3 en vel 6 komen overeen en starten elk een nieuw document, de code op vel 4 komt niet overeen en splitst niets, en het elastiekje staat voor de batch die de ontstane documenten delen.</p></figcaption></figure>
+
 ## Bedrag opmaak
 
 In de sectie **Bedrag opmaak** heb je twee opties:

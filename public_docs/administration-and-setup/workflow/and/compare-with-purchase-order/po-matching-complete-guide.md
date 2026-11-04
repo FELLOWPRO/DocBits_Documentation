@@ -38,6 +38,8 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Isometrische balans: in de linkerschaal ligt de PO-eenheidsprijs van 100, in de rechterschaal de factuureenheidsprijs van 103 (100 plus een klein extra gewicht). De balk helt en de wijzer staat binnen de groene band die de tolerantie van 5% markeert." width="768"><figcaption><p>De PO-prijs (€100) ligt in de linkerschaal en de factuurprijs (€103) in de rechterschaal. Het verschil van €3 is 3% van de PO-prijs, dus de wijzer blijft binnen de groene tolerantieband van ±5% en de controle slaagt. Buiten ±5% (rood) moet de factuur worden beoordeeld.</p></figcaption></figure>
+
 ***
 
 ## 1. Volledige match van inkooporder

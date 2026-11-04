@@ -4,11 +4,11 @@
 
 Otwórz kartę **Dziennik zmian** obok karty **Zasady i polityka**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pl.png" alt="Karta Dziennik zmian z kolumnami Gdy, Kto, Reguła, Od → Do i Działanie"><figcaption><p>Dziennik zmian z czterema przykładowymi wpisami. Nazwa użytkownika jest zastąpiona przykładową nazwą.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pl-20261104.png" alt="Fragment dziennika zmian. Dane użytkowników są ukryte."><figcaption><p>Fragment dziennika zmian. Dane użytkowników są ukryte.</p></figcaption></figure>
 
 | Kolumna | Co pokazuje |
 | --- | --- |
-| **Gdy** | Czas zmiany. |
+| **Czas zmiany** | Czas zmiany. |
 | **Kto** | Użytkownik, który dokonał zmiany. |
 | **Reguła** | Ustawienie lub reguła, która się zmieniła. |
 | **Od → Do** | Stara i nowa wartość. |

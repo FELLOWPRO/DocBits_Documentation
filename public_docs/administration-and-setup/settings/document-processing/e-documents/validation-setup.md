@@ -4,31 +4,31 @@ Ta strona opisuje kreator konfiguracji, akceptowane wersje XRechnung oraz akcept
 
 ## Konfiguracja walidacji
 
-<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-pl.png" alt="Konfiguracja walidacji i akceptowane wersje"><figcaption><p>Konfiguracja walidacji i akceptowane wersje XRechnung</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-pl-20261104.png" alt="Wersje XRechnung akceptowane w przykładowej organizacji Dev. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Wersje XRechnung akceptowane w przykładowej organizacji Dev. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
-Karta **Konfiguracja walidacji** pokazuje Twój bieżący profil walidacji (na przykład *B2G — Public Sector Receiver*). Kliknij **Edytuj odpowiedzi**, aby ponownie uruchomić kreatora konfiguracji i zmienić standard, względem którego prowadzona jest walidacja.
+Karta **Konfiguracja walidacji** pokazuje Twój bieżący profil walidacji (na przykład *B2G — Public Sector Receiver*). Kliknij **Edytuj odpowiedzi**, aby ponownie uruchomić kreator konfiguracji i zmienić standard, względem którego prowadzona jest walidacja.
 
 ## Akceptowane wersje XRechnung
 
 Bramka **Akceptowane wersje XRechnung** wymienia każdą wersję XRechnung. Zaznacz wersje, które akceptujesz — dokumenty, których CustomizationID znajduje się poza tą listą, są odrzucane z kodem `VAL-VERSION-NOT-ALLOWED` przed jakąkolwiek inną kontrolą. Pusta lista oznacza „akceptuj wszystko". Każda wersja jest oznaczona jako **current**, **deprecated** lub **EOL** wraz z datą wydania.
 
-## Akceptowane profile i model wagi
+## Akceptowane profile i poziomy ważności <a id="akceptowane-profile-i-model-wagi"></a>
 
-<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-pl.png" alt="Akceptowane profile i legenda wag"><figcaption><p>Akceptowane profile i znaczenie poszczególnych wag</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-pl-20261104.png" alt="Akceptowane profile ZUGFeRD i Factur-X. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs."><figcaption><p>Akceptowane profile ZUGFeRD i Factur-X. W tej wersji niektóre teksty interfejsu mogą nadal być po angielsku lub mieć błędne tłumaczenie. Instrukcja wyjaśnia ich znaczenie; zrzuty pokazują niezmieniony interfejs.</p></figcaption></figure>
 
 Wybierz, które **profile** akceptujesz (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)), używając przycisków **Akceptuj wszystko** / **Wyczyść**, a następnie **Zapisz**.
 
-Każda reguła walidacji ma **wagę**, która decyduje, co się dzieje po jej uruchomieniu:
+Każda reguła walidacji ma **poziom ważności**, który decyduje, co się dzieje po jej uruchomieniu:
 
-| Waga | Skutek |
+| Poziom ważności | Skutek |
 |------|--------|
-| **FATAL** | Natychmiast zatrzymuje przetwarzanie. Żadna kolejna warstwa nie jest sprawdzana; dokument przechodzi w stan Błąd. |
-| **ERROR** | Dokument jest odrzucany. Pozostałe wyniki dla tego samego dokumentu są nadal pokazywane; powiadomienie dostawcy (jeśli włączone) jest wyzwalane. |
-| **WARNING** | Pojawia się w raporcie walidacji, ale dokument przechodzi przez potok normalnie. |
-| **INFO** | Tylko dziennik audytu. Brak widocznego efektu dla użytkownika i brak odrzucenia. |
+| **FATAL** | Zatrzymuje bieżący etap walidacji, jeżeli błąd uniemożliwia dalsze kontrole. Zablokowanie przetwarzania zależy również od ustawienia **Blokowanie** dla typu dokumentu. |
+| **ERROR** | Błąd walidacji. Przy włączonym ustawieniu **Blokowanie** dokument otrzymuje status **Błąd**. Jest to odrębne od ręcznej czynności **Odrzuć dokument**. |
+| **WARNING** | Pojawia się w raporcie walidacji, ale przetwarzanie dokumentu przebiega normalnie. |
+| **INFO** | Komunikat informacyjny w raporcie walidacyjnym. Nie blokuje dokumentu. |
 
 ### Co zmienia kreator
 
-Karta **Konfiguracja walidacji** niżej na stronie otwiera kreatora przyciskiem **Edytuj odpowiedzi**. Kreator zastępuje cały zestaw nadpisanych reguł Twojej organizacji. DocBits ostrzega Cię przed zapisem. Sprawdź dokładnie krok **Review and apply**.
+Karta **Konfiguracja walidacji** niżej na stronie otwiera kreator przyciskiem **Edytuj odpowiedzi**. Kreator zastępuje cały zestaw nadpisanych reguł Twojej organizacji. DocBits ostrzega Cię przed zapisem. Sprawdź dokładnie krok **Sprawdź i zastosuj**.
 
-Dalej: [Wagi reguł](validation-rule-severities.md) i [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).
+Dalej: [Poziomy ważności reguł](validation-rule-severities.md) i [Walidacja dla każdego typu dokumentu](validation-per-document-type.md).

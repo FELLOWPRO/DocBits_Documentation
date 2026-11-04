@@ -8,7 +8,7 @@ La pagina **Validazione della fattura elettronica** (**Impostazioni → Document
 
 ## Cosa trovi in questa pagina
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-it.png" alt="La pagina Validazione della fattura elettronica con la tabella Validazione per ogni tipo di documento"><figcaption><p>La pagina Validazione della fattura elettronica. La scheda <strong>Regole e politiche</strong> inizia con la tabella <strong>Validazione per ogni tipo di documento</strong>. Organizzazione di esempio.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-it-20261104.png" alt="Validazione e blocco per tipo di documento. I nomi configurati sono nascosti. Esempio su Dev."><figcaption><p>Validazione e blocco per tipo di documento. I nomi configurati sono nascosti. Esempio su Dev.</p></figcaption></figure>
 
 | Argomento | Cosa fa | Per chi |
 | --- | --- | --- |

@@ -4,7 +4,7 @@ As colunas de tabela definem quais colunas a tabela de itens de linha de um tipo
 
 **Onde:** Settings → Global Settings → Document Types → Table Columns
 
-<figure><img src="../../../../../.gitbook/assets/table-columns_list.png" alt="Lista de Table Columns com os indicadores Required, Read Only, Hidden e Use AI por coluna"><figcaption><p>Table Columns: uma linha por coluna; os indicadores são alterados diretamente na lista</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/structured-output-column-choice-pt-20261104.png" alt="Lista Use AI atual com Padrão, Sim e Não. Nenhuma opção foi alterada. As células de título estão ocultas para proteger dados."><figcaption><p>Lista Use AI atual com Padrão, Sim e Não. Nenhuma opção foi alterada. As células de título estão ocultas para proteger dados.</p></figcaption></figure>
 
 ## O que você vê
 
@@ -19,7 +19,7 @@ Cada linha é uma coluna de uma tabela. A lista mostra:
 | **Is Required** | O documento não pode ser aprovado enquanto esta coluna estiver vazia em qualquer linha. |
 | **Read Only** | Os usuários veem o valor, mas não podem editá-lo. |
 | **Hidden** | A coluna não é exibida nem exportada. Usado para desativar colunas padrão de que você não precisa. |
-| **Use AI** | A extração de tabela por IA preenche esta coluna, mesmo quando um fornecedor tem regras treinadas. |
+| **Use AI** | Escolha de três estados: Padrão herda a seleção de IA do tipo de documento, Sim solicita a coluna explicitamente e Não a exclui do esquema base. É independente de Obrigatória, Somente leitura e Oculta. |
 | **Actions** | Ícone de tradução: renomeia o título. Ícone de informações: de onde vem o rótulo exibido (sua tradução, o padrão, a chave). Menu de três pontos: *Delete*, somente para colunas criadas pela sua organização; as colunas padrão só podem ser ocultadas. |
 
 Dois botões acima da lista:
@@ -44,3 +44,19 @@ Todo tipo de documento acompanha um conjunto de colunas padrão (para faturas: n
 * [Solução de problemas](troubleshooting-1.md)
 * [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md): ensine ao DocBits onde fica a tabela de um fornecedor
 * [AI Table](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): o que o usuário vê na tela de validação
+
+## Use AI: Padrão, Sim ou Não
+
+Abra [Colunas de tabela](README.md) para o tipo de documento e a tabela corretos. **Usar IA (Use AI)** é uma lista de três estados, não uma caixa de seleção. A alteração é salva imediatamente.
+
+| Opção atual | Efeito no esquema base |
+| --- | --- |
+| **Padrão · solicitado** ou **Padrão · não solicitado** | Usa a seleção DocBits para esse tipo e nome de coluna. Padrão não significa sempre ativado nem sempre desativado. |
+| **Sim · solicitado** | Solicita explicitamente essa coluna configurada à IA. |
+| **Não · não solicitado** | Exclui a coluna do esquema base, mesmo que normalmente seja solicitada. |
+
+Voltar a **Padrão** remove a escolha explícita. Uma coluna própria recém-criada normalmente não pertence à seleção padrão de IA: escolha **Sim** para solicitá-la. As colunas padrão de IA não são todas as colunas fornecidas. Verifique o efeito indicado e a prévia.
+
+**Obrigatória**, **Somente leitura** e **Oculta** controlam completude, edição e visibilidade; não substituem a escolha de IA. **Não** não exclui a coluna nem apaga valores, e não impede que regras, scripts ou outras fontes a preencham. Treinamento do fornecedor e tags de IA podem ampliar a solicitação efetiva: resolva também ali as contradições. O interruptor não substitui automaticamente um resultado obtido apenas por regras.
+
+[Structured Output para tabelas](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

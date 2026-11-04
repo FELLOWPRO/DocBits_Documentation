@@ -75,8 +75,6 @@
   * [Interpretar as estatísticas de entrega dos fornecedores](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [Painel de ordens de expedição](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)
   * [Opções de Configuração do Usuário](end-user-and-partner-section/end-user-section/user-configuration-options.md)
-  * [Tabela de IA](end-user-and-partner-section/end-user-section/ai-table/README.md)
-    * [Tags e instruções da tabela de IA](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
   * [Ecrã de validação](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Modelo de IA Específico do Fornecedor para Extração de Campos e Tabelas](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Verificações Automáticas na Tela de Validação](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
@@ -121,6 +119,16 @@
     * [Status do Portal de Suporte](end-user-and-partner-section/end-user-section/ressources-and-support/support-portal-status.md)
 * [Secção de parceiros](end-user-and-partner-section/partner-section/README.md)
   * [Teste de Automação de Faturas com DocBits](end-user-and-partner-section/partner-section/invoice-automation-testing-with-docbits.md)
+
+
+* [AI Table](end-user-and-partner-section/end-user-section/ai-table/README.md)
+  * [Configurações e valores específicos](end-user-and-partner-section/end-user-section/ai-table/configuration.md)
+  * [Structured Output para tabelas](end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+  * [Colunas e correções](end-user-and-partner-section/end-user-section/ai-table/columns-and-corrections.md)
+  * [Instruções de IA](end-user-and-partner-section/end-user-section/ai-table/ai-instructions.md)
+  * [Tags e instruções da tabela de IA](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
+  * [Explicar a extração e diagnosticar](end-user-and-partner-section/end-user-section/ai-table/explain-extraction.md)
+  * [Assistente e permissões](end-user-and-partner-section/end-user-section/ai-table/assistant-and-permissions.md)
 
 ## Administração e configuração <a href="#administration-and-setup" id="administration-and-setup"></a>
 

@@ -34,3 +34,7 @@ Para alterar o modelo, abra o menu de opções clicando no botão **Mais opçõe
 Se os resultados da **extração de campos** ou **extração de tabelas** não forem satisfatórios, tente mudar para outro modelo para melhorar a precisão.
 
 Para configurar o modelo de IA **globalmente para fornecedores sem modelo personalizado** ou para **gerenciar qual modelo está ativo para cada fornecedor**, consulte a documentação correspondente [**aqui**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+
+## Configurações e valores específicos
+
+Structured Output tem sua própria configuração de organização/modelo de extração, separada do nível de IA. Altere em Mais opções do documento; confirmar salva o valor específico e reinicia esse documento. Os indicadores da lista são somente leitura. Excluir uma entrada pode remover vários valores específicos juntos. [Structured Output para tabelas](../ai-table/structured-output.md).

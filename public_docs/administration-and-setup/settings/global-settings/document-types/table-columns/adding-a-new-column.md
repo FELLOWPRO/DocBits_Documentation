@@ -28,13 +28,13 @@ Adicione uma coluna quando um valor precisar ser capturado por item de linha e a
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-pt.png" alt="Caixa de confirmação «Criar uma nova coluna na tabela?» com os botões Cancelar e Criar coluna"><figcaption><p>Confirme antes de a coluna ser criada para todos os fornecedores.</p></figcaption></figure>
 
-5. Selecione **Criar coluna** para salvar, ou **Cancelar** para voltar sem criar nada. A coluna aparece na lista com *Read Only*, *Hidden* e *Use AI* desativados. Altere esses indicadores na lista, se necessário; consulte [Editando e excluindo colunas](editing-and-deleting-columns.md).
+5. Após criar a coluna, confira as configurações na lista. Somente leitura e Oculta começam desativadas. Use AI começa em Padrão; uma coluna própria normalmente não é solicitada assim. Escolha Sim para solicitá-la na extração estruturada.
 
 ## Depois de adicionar
 
 * A coluna fica **vazia nos documentos existentes**. Ela é preenchida nos documentos enviados ou reiniciados após a alteração.
 * Para fornecedores com **regras treinadas**, abra um dos documentos deles no treinamento de tabelas e mapeie a nova coluna; caso contrário, a coluna permanece vazia para esse fornecedor. Consulte [Defining tables and columns](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
-* Com a **extração de tabela por IA**, a IA preenche a coluna se o valor for reconhecível no documento. Marque a coluna com *Use AI* se o fornecedor tiver regras treinadas, mas esta coluna ainda deva vir da IA.
+* Para extração estruturada por IA, defina Use AI da coluna própria como Sim e verifique a prévia. Criar a coluna não basta para solicitá-la. Confira associações e instruções do fornecedor, reprocesse um documento de teste e verifique o resultado.
 * Adicione a coluna ao **mapeamento de exportação** se o ERP deve recebê-la; consulte [Export](../../../document-processing/export.md).
 
 ## Mensagens
@@ -44,3 +44,5 @@ Adicione uma coluna quando um valor precisar ser capturado por item de linha e a
 | *Column name already exists* | Já existe na tabela uma coluna com este nome técnico. Escolha outro título. |
 | *Column name already exists – Please activate it in Table Column settings* | Uma coluna padrão oculta tem este nome. Desative o indicador *Hidden* dela em vez de criar uma nova. |
 | *No table exists. Please create table before creating columns.* | O tipo de documento ainda não tem tabela: clique primeiro em **Create new table**. |
+
+[Structured Output para tabelas](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

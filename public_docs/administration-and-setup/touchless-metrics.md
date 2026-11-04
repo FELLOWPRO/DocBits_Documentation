@@ -63,7 +63,7 @@ Qualità di estrazione nel campione: **100 %**; Pure: **70 %**; AP combinato: **
 
 **Un intervento resta registrato.** Un riavvio successivo o un’elaborazione automatica non cancellano le correzioni precedenti. Leggere e previsualizzare non costituisce di per sé un intervento; validazione manuale e riavvio umano sì. Una pura approvazione resta distinta.
 
-<figure><img src="../.gitbook/assets/touchless-methodology-it.png" alt="Calcolo nella vera interfaccia italiana. Il tasso AP combina Pure e sola approvazione sul denominatore dei documenti conclusi e idonei. La schermata misura il processo, non la precisione dell’estrazione; i suoi dati dimostrativi non sono il campione illustrativo di 200 documenti."><figcaption><p>Calcolo nella vera interfaccia italiana. Il tasso AP combina Pure e sola approvazione sul denominatore dei documenti conclusi e idonei. La schermata misura il processo, non la precisione dell’estrazione; i suoi dati dimostrativi non sono il campione illustrativo di 200 documenti.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-methodology-it-20261104.png" alt="Popolazione attuale di formazione: 201 fatture concluse e idonee, nessuna ancora in corso o esclusa. Le 107 interamente automatiche danno 53,2 %; con 11 sole approvazioni sono 118 e 58,7 %. Questi tassi misurano il processo, non la precisione di estrazione."><figcaption><p>Popolazione attuale di formazione: 201 fatture concluse e idonee, nessuna ancora in corso o esclusa. Le 107 interamente automatiche danno 53,2 %; con 11 sole approvazioni sono 118 e 58,7 %. Questi tassi misurano il processo, non la precisione di estrazione.</p></figcaption></figure>
 
 ### Quali azioni AP contano come intervento?
 
@@ -83,7 +83,7 @@ Salvare senza una modifica dimostrata non prova una correzione. Verificate se l�
 
 ### Un’etichetta AP, due significati
 
-La **percentuale AP in intestazione** combina Pure e sola approvazione: (120 + 30) / 190 = 78,9 %. Il **numero sottostante** conta le sole 30 approvazioni. Riquadri fornitore e linea blu AP del grafico documentato indicano la categoria distinta sola approvazione, pari al 15,8 %. Non sommate Pure e AP combinato: si sovrappongono.
+Percentuale e numero della scheda AP attuale combinano Pure e sola approvazione. Nell’esempio di calcolo sono 150 = 120 + 30 documenti e 78,9 %. Nella schermata attuale sono 118 = 107 + 11 fatture e 58,7 %. La categoria di esito distinta, come il gruppo MCP `AP_TOUCHLESS`, conta soltanto le 11 approvazioni. La curva blu attuale mostra il tasso combinato, con la popolazione di ciascun punto. Pure e AP combinato si sovrappongono: non sommateli.
 
 ### Aggiornamento dei dati
 

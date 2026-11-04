@@ -11,7 +11,7 @@ A recommendation can come with a **change proposal**, a single setting change th
 A before/after difference is an **observation**, not proof of cause. Other things can change at the same time (a new supplier, a seasonal peak).
 {% endhint %}
 
-**Example.** You apply _Switch on automatic PO match and export_ for invoices. Two weeks later the **Change history** says: pure rate before 52 % (210 documents), after 61 % (198 documents). That is +9 pp, enough documents to be measurable.
+**Example (illustrative).** You apply _Switch on automatic PO match and export_ for invoices. Two weeks later the **Change history** shows an AP touchless rate before of 52 % (210 documents), after 61 % (198 documents). That is +9 pp, enough documents to be measurable. The measured rate includes pure and approval-only documents; it does not measure extraction accuracy. A source-data correction in Infor must also be checked against the imported data and later invoices; do not assume it is a DocBits setting change or is automatically listed in this history.
 
 Administrators also see two sections between the key figures and the charts:
 
@@ -33,3 +33,5 @@ The effect values are **estimates**. If the report answers _forbidden_, your rol
 * [Touchless Intelligence](./)
 * [Supplier Diagnosis and Issue Clusters](touchless-supplier-diagnosis.md)
 * [PO Matching Diagnosis](touchless-po-matching-diagnosis.md)
+
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->

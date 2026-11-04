@@ -2,7 +2,7 @@
 
 ## Overview
 
-Many invoices stop at the purchase order. The invoice says one thing, the purchase order (PO) says another, and DocBits cannot decide on its own whether they belong together. Every such document needs a person, so it is **not touchless**.
+Many invoices stop at the purchase order. The invoice says one thing, the purchase order (PO) says another, and the configured checks cannot resolve the difference automatically. **Correct extraction can still lead to a blocked PO match when source-system data differs.** A temporary stop is not yet a final outcome: later automatic processing can succeed, while a recorded manual correction or restart prevents a successful document from being touchless.
 
 Touchless Intelligence shows you **why** a PO match failed and **how** DocBits tried to match. This page explains the two pipeline stages involved, the reasons you will see, and the **PO matching decision flow**, a diagram that shows the matching steps one after the other.
 
@@ -40,6 +40,23 @@ A document that stops at stage 9 or 10 shows up with the first blocker **PO matc
 {% hint style="info" %}
 Not every PO matching reason can be fixed in DocBits. If the supplier sends a wrong PO number, the card says **Supplier action only**: the supplier has to correct the document and send it again.
 {% endhint %}
+
+## Worked example: correct extraction, different Infor data
+
+This is an illustrative case, separate from the screenshots. The invoice shows **10 units at €10.00 each**, total **€100.00**. DocBits extracts all three values correctly. The imported Infor order shows **10 units at €9.00 each**, total **€90.00**. Assume the configured matching checks block this price difference.
+
+1. **Check extraction:** compare the original invoice with the extracted quantity, unit price and line amount. They match, so there is no demonstrated extraction error for these values.
+2. **Check the source:** compare the imported order with the current Infor order, including price unit and import time. An outdated import and an incorrect Infor order require different fixes.
+3. **Clarify the business value:** in this example, purchasing confirms that €10.00 was agreed and corrects the Infor order. If €9.00 were the agreed price, the supplier's invoice would need clarification instead.
+4. **Verify the corrected import:** check that the correct order values have actually reached DocBits before retrying.
+5. **Record the AP action:** AP manually restarts this invoice in DocBits; after successful completion it is **AP assisted**. Correct extraction and a non-touchless process can both be true.
+6. **Check later invoices:** verify that matching and export now complete without another correction or restart. The previously touched invoice remains touched; later invoices provide evidence of improvement.
+
+{% hint style="warning" %}
+Do not change a correctly extracted €10.00 to €9.00 just to match an incorrect order, or widen a tolerance solely to hide the discrepancy. Confirm the agreed value and correct the responsible data or configuration. A matching blocker identifies where the process stopped, not who caused it.
+{% endhint %}
+
+See [Touchless Intelligence](./) for the separate extraction-quality example and the AP touchless calculation, and [Document Trace](touchless-document-trace.md) for the evidence to compare.
 
 ## The PO matching decision flow
 
@@ -100,7 +117,7 @@ A supplier invoices item **"A-4711-X"**, your PO says **"4711"**. No rule compar
 
 * In the cluster you read _27 affected, 27 recoverable_, expected lift for example **+8.7 pp**.
 * The fix is on your side: add or reorder a rule that matches on the supplier item number or the description, or maintain the supplier item numbers in the master data.
-* After you changed the rule, apply the change with a [change proposal](touchless-change-proposals.md) and read the **Change history** two weeks later: pure rate before and after.
+* After you changed the rule, apply the change with a [change proposal](touchless-change-proposals.md) and read the **Change history** two weeks later: AP touchless rate before and after.
 
 ### Example 3: The purchase order is not there yet
 
@@ -127,3 +144,5 @@ After a transformation rule for the table of a supplier went live, the matching 
 * [Change Proposals and Reports](touchless-change-proposals.md)
 * [Purchase Order Matching Rules](../../settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * [PO Matching Cards: Complete Guide](../../workflow/cards-overview/po-matching-complete-guide.md)
+
+<!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->

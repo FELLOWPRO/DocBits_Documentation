@@ -4,6 +4,8 @@
 
 Touchless Intelligence beantwoordt twee afzonderlijke vragen: **Heeft DocBits de factuur correct uitgelezen?** en **Is het hele proces zonder verwerkingsingreep afgerond?** Correct uitlezen kan toch werk opleveren als Infor-gegevens afwijken. AP is de menselijke crediteurenadministratie.
 
+<figure><img src="../.gitbook/assets/anatomy-touchless-nl.svg" alt="Isometrische sorteerlijn: een transportband met 14 poorten, een duwer die één document naar een controlebak verplaatst, een exportbak met een stapel documenten en een wijzerplaat met 78,9 procent"><figcaption><p>Touchless als sorteerlijn, met de illustratieve getallen uit het rekenvoorbeeld: de 14 poorten zijn de fasen van het Pipeline Path, vellen die nog op de band liggen zijn in behandeling en tellen niet mee, een document dat bij een poort stopt wordt in de controlebak geduwd bij de documenten met AP Assisted (30) en procesuitzondering (10), en de Pure Touchless- (120) en alleen-goedkeuringsdocumenten (30) in de exportbak geven op de wijzerplaat 150 van 190, oftewel 78,9 %, voorbij de doelmarkering van 70 %.</p></figcaption></figure>
+
 ## Vind de juiste handleiding
 
 | Handleiding | Inhoud |

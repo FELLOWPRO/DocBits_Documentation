@@ -33,10 +33,12 @@ Wanneer u een factuur ontvangt, moet deze overeenkomen met de eerder geplaatste 
 **Het grote plaatje:**
 
 ```
-PO Placed     Invoice Arrives     PO Matching     Decision
-(€100)    →   (€103)          →   (Check if       → Approve/Reject
-Qty: 100      Qty: 100            within tolerance)
+PO geplaatst    Factuur komt binnen     PO-matching       Beslissing
+(€100)    →     (€103)              →   (Controleer of    → Goedkeuren/Afwijzen
+Aantal: 100     Aantal: 100             binnen tolerantie)
 ```
+
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Isometrische balans: in de linkerschaal ligt de PO-eenheidsprijs van 100, in de rechterschaal de factuureenheidsprijs van 103 (100 plus een klein extra gewicht). De balk helt en de wijzer staat binnen de groene band die de tolerantie van 5% markeert." width="768"><figcaption><p>De PO-prijs (€100) ligt in de linkerschaal en de factuurprijs (€103) in de rechterschaal. Het verschil van €3 is 3% van de PO-prijs, dus de wijzer blijft binnen de groene tolerantieband van ±5% en de controle slaagt. Buiten ±5% (rood) moet de factuur worden beoordeeld.</p></figcaption></figure>
 
 ***
 
@@ -70,16 +72,16 @@ Systeem vergelijkt:
 
 ```
 PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+- Artikel ABC: Aantal 100, Eenheidsprijs €50 = €5000
+- Artikel XYZ: Aantal 50, Eenheidsprijs €20 = €1000
+- Totaal: €6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+Factuur:
+- Artikel ABC: Aantal 100, Eenheidsprijs €50 = €5000
+- Artikel XYZ: Aantal 50, Eenheidsprijs €20 = €1000
+- Totaal: €6000
 
-Result: ✅ FULL MATCH
+Resultaat: ✅ VOLLEDIGE MATCH
 ```
 
 ***
@@ -94,35 +96,35 @@ Vergelijkt de eenheidsprijs op de factuur met de eenheidsprijs op de inkooporder
 
 * **Eenheidsprijstolerantie**: Variatie tot dit bedrag toestaan
 * **Tolerantietype**: Percentage (%) of Absoluut (€/$)
-* **Exploitant**: is gelijk aan, is groter dan, is kleiner dan, enz.
+* **Operator**: is gelijk aan, is groter dan, is kleiner dan, enz.
 
 ### Hoe het werkt (percentage tolerantie)
 
 **Formule:**
 
 ```
-Variance % = |(Invoice Price - PO Price)| / PO Price × 100
+Afwijking % = |(Factuurprijs - PO-prijs)| / PO-prijs × 100
 
-Check: Is Variance % ≤ Tolerance %?
+Controle: Is afwijking % ≤ tolerantie %?
 ```
 
 **Stapsgewijs voorbeeld:**
 
 ```
-Step 1: Get prices
-  PO Unit Price: €100.00
-  Invoice Unit Price: €103.00
+Stap 1: Prijzen ophalen
+  PO-eenheidsprijs: €100.00
+  Factuureenheidsprijs: €103.00
 
-Step 2: Calculate difference
-  Difference = |€103.00 - €100.00| = €3.00
+Stap 2: Verschil berekenen
+  Verschil = |€103.00 - €100.00| = €3.00
 
-Step 3: Calculate percentage
+Stap 3: Percentage berekenen
   Percentage = (€3.00 / €100.00) × 100 = 3%
 
-Step 4: Check tolerance (5% allowed)
-  Is 3% ≤ 5%? YES ✅
+Stap 4: Tolerantie controleren (5% toegestaan)
+  Is 3% ≤ 5%? JA ✅
 
-Result: PASS - Within tolerance
+Resultaat: PASS - Binnen tolerantie
 ```
 
 ### Voorbeelden uit de echte wereld
@@ -130,56 +132,56 @@ Result: PASS - Within tolerance
 #### Voorbeeld 1: Kleine verhoging (geaccepteerd)
 
 ```
-PO Price: €50.00
-Invoice Price: €51.50
-Tolerance: ±3%
+PO-prijs: €50.00
+Factuurprijs: €51.50
+Tolerantie: ±3%
 
-Calculation:
-  Variance = |(€51.50 - €50.00)| / €50.00 × 100
-  Variance = €1.50 / €50.00 × 100 = 3%
+Berekening:
+  Afwijking = |(€51.50 - €50.00)| / €50.00 × 100
+  Afwijking = €1.50 / €50.00 × 100 = 3%
 
-Is 3% ≤ 3%? YES ✅ ACCEPT
+Is 3% ≤ 3%? JA ✅ ACCEPTEREN
 ```
 
 #### Voorbeeld 2: Grote verhoging (afgewezen)
 
 ```
-PO Price: €50.00
-Invoice Price: €55.00
-Tolerance: ±3%
+PO-prijs: €50.00
+Factuurprijs: €55.00
+Tolerantie: ±3%
 
-Calculation:
-  Variance = |(€55.00 - €50.00)| / €50.00 × 100
-  Variance = €5.00 / €50.00 × 100 = 10%
+Berekening:
+  Afwijking = |(€55.00 - €50.00)| / €50.00 × 100
+  Afwijking = €5.00 / €50.00 × 100 = 10%
 
-Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
+Is 10% ≤ 3%? NEE ❌ AFWIJZEN - BEOORDELING NODIG
 ```
 
 #### Voorbeeld 3: Korting (ook aangevinkt)
 
 ```
-PO Price: €100.00
-Invoice Price: €97.00
-Tolerance: ±5%
+PO-prijs: €100.00
+Factuurprijs: €97.00
+Tolerantie: ±5%
 
-Calculation:
-  Variance = |(€97.00 - €100.00)| / €100.00 × 100
-  Variance = €3.00 / €100.00 × 100 = 3%
+Berekening:
+  Afwijking = |(€97.00 - €100.00)| / €100.00 × 100
+  Afwijking = €3.00 / €100.00 × 100 = 3%
 
-Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
+Is 3% ≤ 5%? JA ✅ ACCEPTEREN (korting valt binnen de tolerantie)
 ```
 
 #### Voorbeeld 4: Absolute waardetolerantie
 
 ```
-PO Price: €10.00
-Invoice Price: €10.50
-Tolerance: ±€1.00 (absolute, not %)
+PO-prijs: €10.00
+Factuurprijs: €10.50
+Tolerantie: ±€1.00 (absoluut, niet %)
 
-Calculation:
-  Variance = |€10.50 - €10.00| = €0.50
+Berekening:
+  Afwijking = |€10.50 - €10.00| = €0.50
 
-Is €0.50 ≤ €1.00? YES ✅ ACCEPT
+Is €0.50 ≤ €1.00? JA ✅ ACCEPTEREN
 ```
 
 ### Wat te doen met resultaten
@@ -208,7 +210,7 @@ Controleert of het bestelde aantal overeenkomt met het gefactureerde aantal
 ### Parameters
 
 * **Tolerantie**: Bedrag of % mag afwijken
-* **Exploitant**: gelijk aan, groter dan, kleiner dan
+* **Operator**: gelijk aan, groter dan, kleiner dan
 * **Aantaltype**: Besteld, Ontvangen, Open
 
 ### Rekenvoorbeeld
@@ -216,34 +218,34 @@ Controleert of het bestelde aantal overeenkomt met het gefactureerde aantal
 **Percentagetolerantie:**
 
 ```
-Formula:
-  Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
+Formule:
+  Hoeveelheidsafwijking % = |(Factuuraantal - PO-aantal)| / PO-aantal × 100
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 103 units
-  Tolerance: ±5%
+Voorbeeld:
+  PO-hoeveelheid: 100 stuks
+  Factuurhoeveelheid: 103 stuks
+  Tolerantie: ±5%
 
-  Variance = |(103 - 100)| / 100 × 100
-  Variance = 3 / 100 × 100 = 3%
+  Afwijking = |(103 - 100)| / 100 × 100
+  Afwijking = 3 / 100 × 100 = 3%
 
-  Is 3% ≤ 5%? YES ✅ ACCEPT
+  Is 3% ≤ 5%? JA ✅ ACCEPTEREN
 ```
 
 **Absolute tolerantie:**
 
 ```
-Formula:
-  Quantity Variance = |Invoice Qty - PO Qty|
+Formule:
+  Hoeveelheidsafwijking = |Factuuraantal - PO-aantal|
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 102 units
-  Tolerance: ±5 units
+Voorbeeld:
+  PO-hoeveelheid: 100 stuks
+  Factuurhoeveelheid: 102 stuks
+  Tolerantie: ±5 stuks
 
-  Variance = |102 - 100| = 2 units
+  Afwijking = |102 - 100| = 2 stuks
 
-  Is 2 units ≤ 5 units? YES ✅ ACCEPT
+  Is 2 stuks ≤ 5 stuks? JA ✅ ACCEPTEREN
 ```
 
 ### Scenario's uit de echte wereld
@@ -251,31 +253,31 @@ Example:
 #### Overlevering (meer dan besteld)
 
 ```
-Ordered: 100 units
-Invoiced: 110 units
-Tolerance: ±5%
+Besteld: 100 stuks
+Gefactureerd: 110 stuks
+Tolerantie: ±5%
 
-Variance = |(110-100)|/100 × 100 = 10%
+Afwijking = |(110-100)|/100 × 100 = 10%
 
-Is 10% ≤ 5%? NO ❌
+Is 10% ≤ 5%? NEE ❌
 
-Decision: Contact supplier - more delivered than ordered
-Possible reason: Error by supplier, partial shipment already received
+Beslissing: Neem contact op met de leverancier - meer geleverd dan besteld
+Mogelijke reden: Fout van de leverancier, deellevering al ontvangen
 ```
 
 #### Onderlevering (minder dan besteld)
 
 ```
-Ordered: 100 units
-Invoiced: 95 units
-Tolerance: ±5%
+Besteld: 100 stuks
+Gefactureerd: 95 stuks
+Tolerantie: ±5%
 
-Variance = |(95-100)|/100 × 100 = 5%
+Afwijking = |(95-100)|/100 × 100 = 5%
 
-Is 5% ≤ 5%? YES ✅
+Is 5% ≤ 5%? JA ✅
 
-Decision: Accept - within tolerance
-Possible reason: Partial shipment, rest to follow
+Beslissing: Accepteren - binnen tolerantie
+Mogelijke reden: Deellevering, de rest volgt
 ```
 
 ***
@@ -289,10 +291,10 @@ Wanneer de hoeveelheid verschilt, wordt berekend of het totale prijsverschil acc
 ### Waarom dit ertoe doet
 
 ```
-Scenario: You ordered 100 units but received 110
-- Quantity is 10% over (bad)
-- BUT: You're only charged for 10% extra
-- Combined effect might be acceptable
+Scenario: U bestelde 100 stuks maar ontving er 110
+- De hoeveelheid is 10% te hoog (slecht)
+- MAAR: er wordt slechts 10% extra in rekening gebracht
+- Het gecombineerde effect kan acceptabel zijn
 ```
 
 ### Berekening
@@ -300,30 +302,30 @@ Scenario: You ordered 100 units but received 110
 **Formule:**
 
 ```
-Combined Variance = Quantity Variance × Price Variance
+Gecombineerde afwijking = Hoeveelheidsafwijking × Prijsafwijking
 
-If both are within tolerance, combined is usually acceptable
+Als beide binnen de tolerantie vallen, is de combinatie meestal acceptabel
 ```
 
 **Voorbeeld:**
 
 ```
 PO:
-- Unit Price: €100
-- Quantity: 100
-- Total: €10,000
+- Eenheidsprijs: €100
+- Hoeveelheid: 100
+- Totaal: €10,000
 
-Invoice:
-- Unit Price: €102 (2% higher)
-- Quantity: 105 (5% higher)
-- Total: €10,710
+Factuur:
+- Eenheidsprijs: €102 (2% hoger)
+- Hoeveelheid: 105 (5% hoger)
+- Totaal: €10,710
 
-Analysis:
-- Price variance: 2% ✅
-- Quantity variance: 5% ✅
-- Combined effect: 1.02 × 1.05 = 1.071 = 7.1% total increase
+Analyse:
+- Prijsafwijking: 2% ✅
+- Hoeveelheidsafwijking: 5% ✅
+- Gecombineerd effect: 1.02 × 1.05 = 1.071 = 7.1% totale stijging
 
-Is combined variance acceptable? Usually YES ✅
+Is de gecombineerde afwijking acceptabel? Meestal JA ✅
 ```
 
 ***
@@ -339,32 +341,32 @@ Controleert of de artikelen op de factuur overeenkomen met de artikelen op de in
 **Exacte overeenkomst (eenvoudigste):**
 
 ```
-PO Item ID: ABC-123
-Invoice Item ID: ABC-123
-Result: ✅ MATCH
+PO-artikel-ID: ABC-123
+Factuurartikel-ID: ABC-123
+Resultaat: ✅ OVEREENKOMST
 ```
 
 **Artikelnummer leverancier (vaker):**
 
 ```
-PO Item: ABC-123 (Our internal code)
-Supplier Item: SUPP-456 (Their code for same item)
-System matches these as same item
-Result: ✅ MATCH
+PO-artikel: ABC-123 (onze interne code)
+Leveranciersartikel: SUPP-456 (hun code voor hetzelfde artikel)
+Het systeem koppelt deze als hetzelfde artikel
+Resultaat: ✅ OVEREENKOMST
 ```
 
 ### Scenario: wat als het niet overeenkomt?
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+PO-artikel: ABC-123 (koperdraad, 2mm)
+Factuurartikel: ABC-124 (staaldraad, 2mm)
 
-Result: ❌ NO MATCH
+Resultaat: ❌ GEEN OVEREENKOMST
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+Acties:
+1. Is dit een vervanging? Controleer bij inkoop
+2. Is dit een fout? Neem contact op met de leverancier
+3. Is de omschrijving vergelijkbaar? Controleer handmatig
 ```
 
 ***
@@ -386,11 +388,11 @@ Controleert of het type inkooporder correct is
 ### Controleer voorbeeld
 
 ```
-PO Order Type: Standard Order
-Invoice Order Type: Standard Order
-Result: ✅ MATCH
+PO-ordertype: Standaardbestelling
+Factuurordertype: Standaardbestelling
+Resultaat: ✅ OVEREENKOMST
 
-If mismatch: Could affect terms, payment, pricing
+Bij afwijking: kan gevolgen hebben voor voorwaarden, betaling en prijzen
 ```
 
 ***
@@ -406,39 +408,39 @@ Controleert of de leverdatum overeenkomt met de beloofde datum op de inkooporder
 **Late levering:**
 
 ```
-Formula:
-  Days Late = Invoice Delivery Date - PO Promised Date
+Formule:
+  Dagen te laat = Leveringsdatum factuur - Beloofde datum PO
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-22
-  Days Late = 7 days
+Voorbeeld:
+  PO beloofd: 2025-10-15
+  Werkelijke levering: 2025-10-22
+  Dagen te laat = 7 dagen
 
-If tolerance is ±3 days:
-  Is 7 ≤ 3? NO ❌ LATE
+Als de tolerantie ±3 dagen is:
+  Is 7 ≤ 3? NEE ❌ TE LAAT
 ```
 
 **Vroege levering:**
 
 ```
-Formula:
-  Days Early = PO Promised Date - Invoice Delivery Date
+Formule:
+  Dagen te vroeg = Beloofde datum PO - Leveringsdatum factuur
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-10
-  Days Early = 5 days
+Voorbeeld:
+  PO beloofd: 2025-10-15
+  Werkelijke levering: 2025-10-10
+  Dagen te vroeg = 5 dagen
 
-Early delivery is usually OK ✅
-Unless you need it at specific time
+Vroege levering is meestal in orde ✅
+Tenzij u het op een specifiek moment nodig hebt
 ```
 
 ### Tolerantie-instellingen
 
 ```
-±3 days: Allow 3 days late or early
-±5 days: Allow up to 5 days variance
-0 days: Must match exactly
+±3 dagen: 3 dagen te laat of te vroeg toestaan
+±5 dagen: tot 5 dagen afwijking toestaan
+0 dagen: moet exact overeenkomen
 ```
 
 ***
@@ -452,11 +454,11 @@ Controleert of extra kosten (belasting, verzending, administratie) overeenkomen 
 ### Gemeenschappelijke kosten
 
 ```
-- Shipping: €50
-- Handling: €10
-- Packaging: €5
-- Insurance: €15
-- Taxes: €300
+- Verzendkosten: €50
+- Afhandeling: €10
+- Verpakking: €5
+- Verzekering: €15
+- Belastingen: €300
 ```
 
 ### Berekening
@@ -464,32 +466,32 @@ Controleert of extra kosten (belasting, verzending, administratie) overeenkomen 
 **Voorbeeld: controle van verzendkosten**
 
 ```
-PO Shipping: €50.00
-Invoice Shipping: €51.00
-Tolerance: ±3%
+PO-verzendkosten: €50.00
+Factuurverzendkosten: €51.00
+Tolerantie: ±3%
 
-Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
+Afwijking = |€51.00 - €50.00| / €50.00 × 100 = 2%
 
-Is 2% ≤ 3%? YES ✅ ACCEPT
+Is 2% ≤ 3%? JA ✅ ACCEPTEREN
 ```
 
 **Voorbeeld: meerdere kosten**
 
 ```
-PO Total Charges:
-  - Shipping: €50
-  - Taxes: €300
-  - Handling: €10
-  Total: €360
+Totale kosten PO:
+  - Verzendkosten: €50
+  - Belastingen: €300
+  - Afhandeling: €10
+  Totaal: €360
 
-Invoice Total Charges:
-  - Shipping: €50
-  - Taxes: €312 (11% tax)
-  - Handling: €10
-  Total: €372
+Totale kosten factuur:
+  - Verzendkosten: €50
+  - Belastingen: €312 (11% belasting)
+  - Afhandeling: €10
+  Totaal: €372
 
-Difference: €12
-Check if within tolerance ✅ or ❌
+Verschil: €12
+Controleer of binnen tolerantie ✅ of ❌
 ```
 
 ***
@@ -505,37 +507,37 @@ Controleert of de belastingbedragen correct zijn berekend
 **Formule:**
 
 ```
-Tax Amount = Subtotal × Tax Rate
+Belastingbedrag = Subtotaal × Belastingtarief
 
-Example:
-  Subtotal: €1000
-  Tax Rate: 19%
-  Expected Tax: €1000 × 0.19 = €190
+Voorbeeld:
+  Subtotaal: €1000
+  Belastingtarief: 19%
+  Verwachte belasting: €1000 × 0.19 = €190
 
-Invoice Tax: €190
-Match? YES ✅
+Factuurbelasting: €190
+Overeenkomst? JA ✅
 ```
 
 **Veelvoorkomende problemen:**
 
 ```
-1. Tax rate changed (region-based)
-2. Tax applied to wrong amount (before/after discounts)
-3. Multiple tax rates (some items 7%, others 19%)
-4. Tax exempt items (0% tax)
+1. Belastingtarief gewijzigd (afhankelijk van regio)
+2. Belasting over het verkeerde bedrag berekend (vóór/na kortingen)
+3. Meerdere belastingtarieven (sommige artikelen 7%, andere 19%)
+4. Van belasting vrijgestelde artikelen (0% belasting)
 ```
 
 **Voorbeeld: belasting met meerdere tarieven**
 
 ```
-Item A: €100 @ 19% tax = €119
-Item B: €100 @ 7% tax = €107
-Item C: €100 @ 0% tax = €100
-Total: €326
+Artikel A: €100 @ 19% belasting = €119
+Artikel B: €100 @ 7% belasting = €107
+Artikel C: €100 @ 0% belasting = €100
+Totaal: €326
 
-Invoice shows €325 (€1 error)
+Factuur toont €325 (€1 fout)
 
-Check: Within tolerance or needs attention?
+Controle: Binnen tolerantie of aandacht nodig?
 ```
 
 ***
@@ -549,15 +551,15 @@ Zorgt ervoor dat de factuur voor de juiste faciliteit/kostenplaats is
 ### Voorbeeld
 
 ```
-PO is for:
-- Facility: Berlin Plant
-- Cost Center: CC-2025
+De PO is voor:
+- Faciliteit: Fabriek Berlijn
+- Kostenplaats: CC-2025
 
-Invoice should have:
-- Facility: Berlin Plant ✅
-- Cost Center: CC-2025 ✅
+De factuur moet hebben:
+- Faciliteit: Fabriek Berlijn ✅
+- Kostenplaats: CC-2025 ✅
 
-If different facility: May need different approval
+Bij een andere faciliteit: mogelijk is een andere goedkeuring nodig
 ```
 
 ***
@@ -571,21 +573,21 @@ Controleert of de leverancier nog goedgekeurd/actief is
 ### Statustypen
 
 ```
-✅ ACTIVE: Approved, can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ ACTIVE: Goedgekeurd, zakendoen is mogelijk
+⚠️ ON HOLD: Tijdelijk geblokkeerd
+❌ INACTIVE: Er wordt niet langer zaken gedaan
+⚠️ CONDITIONAL: Alleen voor specifieke artikelen
 ```
 
 ### Controleer voorbeeld
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
-Status when creating PO: ACTIVE
-Status when invoice arrives: INACTIVE
+Leverancier: ABC Corp
+Status in database: ACTIVE
+Status bij het aanmaken van de PO: ACTIVE
+Status bij binnenkomst van de factuur: INACTIVE
 
-Alert: Supplier status changed! Investigate why.
+Waarschuwing: de status van de leverancier is gewijzigd! Zoek uit waarom.
 ```
 
 ***
@@ -595,46 +597,46 @@ Alert: Supplier status changed! Investigate why.
 ### Strikte toleranties (lager risico, meer handmatig werk)
 
 ```
-Use for:
-- High-value items
-- Items where exactness matters
-- Regulated industries
+Gebruiken voor:
+- Artikelen met een hoge waarde
+- Artikelen waarbij nauwkeurigheid telt
+- Gereguleerde sectoren
 
-Settings:
-- Unit Price: ±1%
-- Quantity: ±1%
-- Delivery Date: ±1 day
-- Charges: ±1%
+Instellingen:
+- Eenheidsprijs: ±1%
+- Hoeveelheid: ±1%
+- Leveringsdatum: ±1 dag
+- Kosten: ±1%
 ```
 
 ### Gematigde toleranties (evenwichtig)
 
 ```
-Use for:
-- Most business transactions
-- Standard items
-- Normal purchasing
+Gebruiken voor:
+- De meeste zakelijke transacties
+- Standaardartikelen
+- Normale inkoop
 
-Settings:
-- Unit Price: ±3-5%
-- Quantity: ±3-5%
-- Delivery Date: ±3 days
-- Charges: ±5%
+Instellingen:
+- Eenheidsprijs: ±3-5%
+- Hoeveelheid: ±3-5%
+- Leveringsdatum: ±3 dagen
+- Kosten: ±5%
 ```
 
 ### Losse toleranties (hoger risico, minder handmatig werk)
 
 ```
-Use for:
-- Low-value items
-- Bulk purchases
-- Supplier agreements with flexibility
+Gebruiken voor:
+- Artikelen met een lage waarde
+- Bulkaankopen
+- Leveranciersafspraken met flexibiliteit
 
-Settings:
-- Unit Price: ±10%
-- Quantity: ±10%
-- Delivery Date: ±7 days
-- Charges: ±10%
+Instellingen:
+- Eenheidsprijs: ±10%
+- Hoeveelheid: ±10%
+- Leveringsdatum: ±7 dagen
+- Kosten: ±10%
 ```
 
 ***
@@ -642,24 +644,24 @@ Settings:
 ## Voorbeeld van workflow voor PO-matching
 
 ```
-Invoice Arrives
+Factuur komt binnen
     ↓
-Condition: "Is amount > €5000?" → YES
+Voorwaarde: "Is het bedrag > €5000?" → JA
     ↓
-Check: Full Match? → NO (10% price difference)
+Controle: Volledige match? → NEE (10% prijsverschil)
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+Controle: Eenheidsprijs binnen 5%? → NEE (12% verschil)
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+Controle: Hoeveelheid binnen 5%? → JA (2% verschil)
     ↓
-Decision: FAIL - Price variance too high
+Beslissing: FAIL - Prijsafwijking te hoog
     ↓
-Flag for: Manual review / Buyer approval
+Markeren voor: Handmatige beoordeling / Goedkeuring door inkoper
     ↓
-Wait for: Buyer comment
+Wachten op: Opmerking van de inkoper
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+Indien goedgekeurd: Doorgaan naar export
+Indien afgewezen: Terug naar leverancier
 ```
 
 ***
@@ -669,61 +671,61 @@ If Rejected: Return to Supplier
 ### "PO niet gevonden"
 
 ```
-Cause: Invoice PO number doesn't exist in system
-Fix:
-1. Verify PO number spelling
-2. Check if PO was created
-3. Verify PO is in correct organization
-4. Ask supplier for PO reference
+Oorzaak: Het PO-nummer van de factuur bestaat niet in het systeem
+Oplossing:
+1. Controleer de spelling van het PO-nummer
+2. Controleer of de PO is aangemaakt
+3. Controleer of de PO zich in de juiste organisatie bevindt
+4. Vraag de leverancier om de PO-referentie
 ```
 
 ### "Items komen niet overeen"
 
 ```
-Cause: Invoice items are different from PO items
-Possible Reasons:
-1. Substitution approved by procurement
-2. Different item numbers for same item
-3. Error by supplier
-Fix: Contact procurement or supplier
+Oorzaak: De factuurartikelen verschillen van de PO-artikelen
+Mogelijke redenen:
+1. Vervanging goedgekeurd door inkoop
+2. Verschillende artikelnummers voor hetzelfde artikel
+3. Fout van de leverancier
+Oplossing: Neem contact op met inkoop of de leverancier
 ```
 
 ### "Prijs hoger dan PO"
 
 ```
-Cause: Invoice price > PO price
-Possible Reasons:
-1. Price increase approved
-2. Supplier error
-3. Currency difference
-4. Additional services included
-Fix: Verify with procurement
+Oorzaak: Factuurprijs > PO-prijs
+Mogelijke redenen:
+1. Prijsverhoging goedgekeurd
+2. Fout van de leverancier
+3. Valutaverschil
+4. Extra diensten inbegrepen
+Oplossing: Controleer bij inkoop
 ```
 
 ### "Bezorgdatum verkeerd"
 
 ```
-Cause: Invoice dated after promised delivery
-Possible Reasons:
-1. Shipment was delayed
-2. Receiving date different from invoice date
-3. Partial shipment
-Fix: Check shipping documents or contact supplier
+Oorzaak: Factuur gedateerd na de beloofde levering
+Mogelijke redenen:
+1. Levering was vertraagd
+2. Ontvangstdatum wijkt af van factuurdatum
+3. Deellevering
+Oplossing: Controleer de verzenddocumenten of neem contact op met de leverancier
 ```
 
 ***
 
 ## Overzichtstabel
 
-| Kaart           | Wat het controleert        | Hoofdberekening     | Gemeenschappelijke tolerantie |
+| Kaart           | Wat het controleert        | Hoofdberekening     | Gangbare tolerantie |
 | -------------- | --------------------- | -------------------- | ---------------- |
-| Volledige wedstrijd     | Alles            | Alle cheques           | Varieert           |
+| Volledige match         | Alles            | Alle controles         | Varieert           |
 | Eenheidsprijs     | Prijs per eenheid        | % of € verschil    | ±3-5%            |
 | Hoeveelheid       | Besteld bedrag        | % of eenheidsverschil | ±3-5%            |
 | Gecombineerde prijs | Totaal met wijziging aantal | Aantal × prijs          | ±5-10%           |
 | Artikel-ID        | Juiste artikelen           | String-match         | Exact            |
 | Besteltype     | Soort aankoop      | String-match         | Exact            |
-| Leveringsdatum  | Toen aangekomen          | Dag verschil       | ±3 dagen          |
+| Leveringsdatum  | Aankomstdatum           | Dag verschil       | ±3 dagen          |
 | Kosten        | Extra kosten            | % of € verschil    | ±5%              |
 | Belasting            | Belastingbedrag            | Belasting% berekening    | ±1%              |
 | Faciliteit       | Kostenplaats           | String-match         | Exact            |

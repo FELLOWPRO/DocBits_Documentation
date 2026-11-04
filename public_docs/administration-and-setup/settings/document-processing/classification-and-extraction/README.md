@@ -1,5 +1,9 @@
 # Classification And Extraction
 
+<figure><img src="../../../../.gitbook/assets/classification-general-pl-20261104.png" alt="Karta Ogólne z ustawieniami przetwarzania. Wzorzec kodu kreskowego organizacji jest ukryty; nie zmieniono ustawień."><figcaption><p>Karta Ogólne z ustawieniami przetwarzania. Wzorzec kodu kreskowego organizacji jest ukryty; nie zmieniono ustawień.</p></figcaption></figure>
+
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output dla tabel](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+
 ## Które ustawienie działa na którym etapie procesu?
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-pl-20261028.png" alt="Od pliku do rozpoznanych danych: Przeglądaj oddzielnie typ dokumentu, źródło danych i ścieżkę ekstrakcji."><figcaption><p>Przeglądaj oddzielnie typ dokumentu, źródło danych i ścieżkę ekstrakcji. Schemat ma charakter schematyczny; aktywne ustawienia Twojej organizacji określają rzeczywiste zachowanie.</p></figcaption></figure>
@@ -35,7 +39,6 @@ Na tej stronie znajduje się szczegółowy opis wszystkich dostępnych ustawień
 Aby uzyskać dostęp do ustawień **Klasyfikacja i wyodrębnianie**, przejdź do:\
 **Ustawienia → Przetwarzanie dokumentu → Klasyfikacja i wyodrębnianie**
 
-<figure><img src="../../../../.gitbook/assets/dbdc864-settings-nav-pl-20261012.png" alt="Nawigacja Ustawień z wyróżnionymi pozycjami Przetwarzanie dokumentów oraz Klasyfikacja i ekstrakcja"><figcaption><p>Otwórz <strong>Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja</strong>.</p></figcaption></figure>
 
 ## Document Splitting
 
@@ -46,17 +49,17 @@ Aby aktywować tę funkcję:
 1. Przejdź do sekcji **Podział dokumentu**.
 2.  Otwórz menu rozwijane.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    
 3.  Wybierz **Podziel według kodu kreskowego/QR kodu**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    
 
 Będziesz wtedy mieć możliwość:
 
 * Wybierz jeden lub więcej typów kodów kreskowych, które mają zostać wykryte.
 *   Określ wzór wyrażenia regularnego, do którego musi pasować kod kreskowy, aby uruchomić podział dokumentu.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Formatowanie kwot
 
@@ -98,7 +101,7 @@ Więcej o szkoleniu [tutaj](../../../setup/document-training/training-line-field
 
 Tryb jest zapisywany pod kluczem preferencji `TABLE_EXTRACTION_VISION_MODE`; starszy przełącznik `TABLE_EXTRACTION_USE_VISION` pozostaje i oznacza w praktyce *Tylko obrazy*.
 
-**Użyj ekstrakcji strukturalnej (AI):** AI zwraca tabelę w stałej strukturze, która mapuje się bezpośrednio na skonfigurowane kolumny tabeli. Zalecane, gdy nagłówki kolumn na dokumentach mocno się różnią. Kliknięcie tego ustawienia otwiera podgląd tego, o jakie pola i kolumny AI zostanie dokładnie poproszona: pola nagłówka oraz kolumny wierszy są wymienione wraz z ich źródłem (żądane albo wyłączone pola standardowe) wraz z oczekiwanym trybem wyjścia (na przykład *strict* – bez dodatkowych kolumn). Pola skonfigurowane dla typu dokumentu, ale wyłączone, nie są żądane od AI.
+**Użyj ekstrakcji strukturalnej (AI):** Przełącznik określa ustawienie organizacji dla wyniku strukturalnego. Żądane kolumny zależą od Domyślne/Tak/Nie w Use AI, nadpisań szablonu i treningu dostawcy. Pełna instrukcja opisuje konfigurację, podgląd i przykład. [Structured Output dla tabel](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
 
 **Ekstrakcja tabeli dla elementu kosztowego (Table Extraction for Costing Element):** Po włączeniu DocBits może wyodrębniać elementy kosztowe z tabel na poziomie pozycji i odpowiednio je klasyfikować.\
 Szczegółowe wyjaśnienie [tutaj](table-extraction-for-costing-element.md).
@@ -165,7 +168,6 @@ W sekcji **Zasady klasyfikacji** możesz zdefiniować konkretne wzorce i kryteri
 
 Aby uzyskać dostęp do tej sekcji, kliknij zakładkę **Zasady klasyfikacji** u góry strony.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
 ### **Dodaj nową regułę klasyfikacji**
 
@@ -173,7 +175,7 @@ Aby utworzyć nową regułę:
 
 1.  Kliknij **Dodaj** w prawym górnym rogu.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    
 2. Wypełnij następujące pola:
    * **Wzorzec**: Wzorzec wyrażenia regularnego, którego system powinien szukać, aby wywołać klasyfikację.
    * **Type**: Gdzie należy szukać wzorca (np. **Kod kreskowy**).
@@ -181,10 +183,10 @@ Aby utworzyć nową regułę:
    * **Typ dokumentu**: Określ typ dokumentu, który ma zostać przypisany po dopasowaniu wzorca.
    *   **Podtyp dokumentu** _(opcjonalnie)_: Określ podtyp w celu uzyskania bardziej szczegółowej klasyfikacji.
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       
 3.  Kliknij **Zapisz**, aby zapisać regułę klasyfikacji.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Edytuj regułę klasyfikacji**
 
@@ -192,14 +194,14 @@ Aby edytować istniejącą regułę:
 
 1.  Kliknij trzy kropki w kolumnie **Akcje**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Select **Edit**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    
 3. Wprowadź żądane zmiany.
 4.  Kliknij **Zapisz**, aby zastosować aktualizacje.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Usuń regułę klasyfikacji**
 
@@ -207,10 +209,10 @@ Aby usunąć regułę:
 
 1.  Kliknij trzy kropki w kolumnie **Akcje**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Select **Delete**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Modele AI
 
@@ -220,14 +222,12 @@ Sekcja **Modele AI** wyświetla wszystkie specjalnie wytrenowane modele, które 
 
 Aby otworzyć tę sekcję, kliknij zakładkę **Modele AI** znajdującą się na górze strony.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
 ### Kategorie modeli
 
 Modele są podzielone na kategorie. Pod każdą nazwą kategorii pokazana jest liczba modeli, które zawiera.\
 Kliknij kategorię, aby wyświetlić jej szczegóły.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
 U góry strony wybranej kategorii zobaczysz najważniejsze informacje o każdym modelu:
 
@@ -245,7 +245,6 @@ Wszystkie modele w danej kategorii są wymienione w tabeli zawierającej następ
 * **Podtypy dokumentów**: Podtypy, na które dokument jest dalej klasyfikowany.
 * **Priority**: Poziom priorytetu określający pozycję modelu w kolejce klasyfikacyjnej.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
 ### Edycja modelu
 
@@ -253,10 +252,12 @@ Aby edytować model:
 
 1.  Kliknij ikonę pióra w kolumnie **Akcje** obok modelu, który chcesz edytować.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    
 2. Zaktualizuj dostępne pola:
    * **Następny model**: Wybierz model, który powinien przetwarzać dane wyjściowe z bieżącego modelu.
    * **Typ dokumentu**: Wybierz typ dokumentu, jako który model powinien klasyfikować dane wejściowe.
 3.  Kliknij **Zapisz**, aby zastosować zmiany.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-pl-20261104.png" alt="Aktualne ustawienia ekstrakcji. Structured Output jest wyłączony w tej istniejącej konfiguracji, dlatego podgląd schematu nie jest widoczny. Nie zmieniono ustawień ekstrakcji."><figcaption><p>Aktualne ustawienia ekstrakcji. Structured Output jest wyłączony w tej istniejącej konfiguracji, dlatego podgląd schematu nie jest widoczny. Nie zmieniono ustawień ekstrakcji.</p></figcaption></figure>

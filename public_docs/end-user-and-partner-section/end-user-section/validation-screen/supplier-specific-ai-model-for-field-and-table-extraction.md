@@ -34,3 +34,7 @@ Aby zmienić model, otwórz menu opcji, klikając przycisk **Więcej opcji** (tr
 Jeśli wyniki **ekstrakcji pól** lub **ekstrakcji tabel** nie są satysfakcjonujące, spróbuj przełączyć się na inny model, aby poprawić dokładność.
 
 Aby skonfigurować model AI **globalnie dla dostawców bez niestandardowego modelu** lub aby **zarządzać, który model jest aktywny dla każdego dostawcy**, zapoznaj się z odpowiednią dokumentacją [**tutaj**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md).
+
+## Ustawienia i nadpisania
+
+Structured Output ma oddzielne ustawienie organizacji/szablonu, niezależne od poziomu modelu AI. Zmień je w Więcej opcji dokumentu; potwierdzenie zapisuje nadpisanie i uruchamia ten dokument ponownie. Wskaźniki na liście są tylko do odczytu. Usunięcie wpisu może usunąć kilka nadpisań jednocześnie. [Structured Output dla tabel](../ai-table/structured-output.md).

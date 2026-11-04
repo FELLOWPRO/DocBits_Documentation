@@ -4,7 +4,7 @@ Enter a document ID in **Document ID**, or open a sample document from a cluster
 
 The header shows the file, its status (for example **In progress**), the run you are looking at and its first blocker, and a **Document** button with the document ID.
 
-<figure><img src="../../../.gitbook/assets/touchless-document-trace-pipeline.png" alt="The Document Trace page with the file header, the pipeline stopped at Field Validation and the beginning of the Stage Log"><figcaption><p>The Document Trace: the Pipeline Path with every stage, and the Stage Log with the details each stage recorded.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-overview-en.png" alt="Dev NOVA: processing path and recorded points from the first test run"><figcaption><p>New capture from Dev NOVA 11.0.3, 4 November 2026. The fictional test invoice stops at field validation. Classification, supplier search, header extraction and table extraction contain real recorded points; the cards show the document and run history. This is the running product UI.</p></figcaption></figure>
 
 The **Pipeline Path** shows 14 stages: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Each stage carries one state:
 
@@ -12,7 +12,7 @@ The **Pipeline Path** shows 14 stages: Intake, Classification, E-Document Valida
 | --- | --- |
 | **Passed** (green) | The stage ran fine |
 | **Stopped Here** (orange) | The stage blocked the document |
-| **Up Next** | The document never got this far |
+| **Not reached** | Shown after the first blocker in the path; check the stage log for any additional recorded execution |
 | **Nothing Recorded** (dashed) | No data was recorded for this stage |
 | **Not applicable** | The stage does not apply to this document |
 
@@ -26,13 +26,29 @@ The **Stage Log** below the path lists the same stages with what each one record
 * A point that no stage recorded is shown as **Not recorded**, never as an invented value. Points are numbers and fixed words, never document text.
 * **Show Raw Diagnostics** switches the raw data on when support asks for it.
 
-<figure><img src="../../../.gitbook/assets/touchless-document-trace-stage-log.png" alt="The Stage Log with extraction details, a blocked Field Validation stage and the Run History"><figcaption><p>This example stops at Field Validation. Header Extraction records eight missing fields; Field Validation is blocked and has no detailed points recorded. These observations identify checks to investigate, but do not establish whether extraction, the invoice or source-system data caused the problem.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-stage-log-en.png" alt="Dev NOVA: stage log with confidence, extraction points and blocked field validation"><figcaption><p>Actual first run: 100% classification confidence, 0 supplier candidates, 1 table row and 7 mapping gaps. Passed means a stage ran; it does not prove a supplier match or that every invoice value is correct. Field validation reports a missing required field.</p></figcaption></figure>
 
 ### Runs and changes
 
-The run selector at the top of the Stage Log (**Run 1 · Current**) switches between the runs of the document. **Run History** on the right lists every run with its outcome and where it stopped. When a document ran more than once, choose a run in the selector to compare it with the current one: the changed points carry a badge with the difference and its unit, for example **−2 fields** or **+3 %**.
+Use the run selector to choose an attempt. Run History lists its result and first blocker. Recorded differences compare the selected run with its predecessor, not automatically with the current run. A difference badge includes its unit; unchanged points stay unchanged.
 
-The **Document** card next to the Stage Log lists the document type, supplier, invoice number, purchase order, number of pages and whether the analysis is **Rule**-based or AI-written.
+The Document card lists the document type, supplier, invoice number, purchase order, pages and recorded analysis method. Here Manual reflects the document type supplied during test import. The 100% classification value is therefore not independent evidence of automatic classification accuracy.
+
+### Read supplier and table details
+
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-supplier-en.png" alt="Dev NOVA: supplier details separate detected identifiers, master-data searches and matches"><figcaption><p>This run finds the supplier name on the invoice and searches master data, but assigns no supplier. VAT ID, IBAN, email and GLN are absent from this test invoice. A missing master-data match is a different diagnosis from a missing invoice value.</p></figcaption></figure>
+
+Check three separate questions: was an identifier found on the document, was it looked up, and was a supplier matched? A green stage alone does not answer them.
+
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-table-en.png" alt="Dev NOVA: first-run table details report seven mapping gaps"><figcaption><p>Table details report 7 mapping gaps for 1 table and 1 row. Check column mapping before concluding that extraction failed. The comparison footer is not a valid baseline for the selected initial run, which has no predecessor.</p></figcaption></figure>
+
+### Recognize a real restart
+
+<figure><img src="../../../.gitbook/assets/touchless-nova-trace-runs-en.png" alt="Dev NOVA: comparison of two actual test runs with unchanged stage points"><figcaption><p>The same test invoice after a genuine manual restart, with no invoice fields corrected. A new run proves another attempt, not an improvement. Unchanged points show No change; no difference badges have been invented.</p></figcaption></figure>
+
+A manual restart is a human intervention. Only a later successful completion would classify this case as AP Assisted. While it remains in progress, it is excluded from the completed-document denominator.
+
+Evidence limits. This case demonstrates no business approval, successful export or ERP acknowledgement. The legacy PO matcher provides no recorded decision path here; this is not evidence of an Infor comparison. In NOVA 11.0.3, the stage log can record a passed PO lookup after blocked field validation while the path labels it Not reached. Check both views. The summary also shows the invoice number as Not recorded although the extraction contains it; use the original and extracted fields for a value comparison.
 
 ## Distinguish extraction from source-system data
 
@@ -66,3 +82,5 @@ See [Touchless with MCP](touchless-mcp.md) for the matching tool calls and class
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
 
 <!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->
+
+The five new trace screenshots show the localized Dev NOVA 11.0.3 UI and the same owned test invoice. Any separate original-versus-field image remains a limited illustration of that comparison.

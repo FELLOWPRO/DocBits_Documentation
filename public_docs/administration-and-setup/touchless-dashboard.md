@@ -17,15 +17,15 @@ De bovenste keuze en die voor geleerde regels werken in de gecontroleerde implem
 
 ### De vijf kerncijfers
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards-nl.png" alt="Kengetallen in de echte Nederlandse interface: het AP-percentage omvat Pure plus alleen goedkeuring; het aantal eronder telt uitsluitend goedkeuringen. Pure en AP overlappen. Extractiekwaliteit vraagt een onafhankelijke vergelijking met het origineel."><figcaption><p>Kengetallen in de echte Nederlandse interface: het AP-percentage omvat Pure plus alleen goedkeuring; het aantal eronder telt uitsluitend goedkeuringen. Pure en AP overlappen. Extractiekwaliteit vraagt een onafhankelijke vergelijking met het origineel.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-kpi-nl-20261104.png" alt="Huidig factuurrapport over 30 dagen: 107 volledig automatische facturen plus 11 met alleen goedkeuring vormen 118 van 201, oftewel 58,7 % AP Touchless. Pure afzonderlijk is 53,2 %. De AP-kaart toont al het gecombineerde aantal 118. Fictieve trainingshistorie; dit bewijst geen uitgevoerde ERP-export."><figcaption><p>Huidig factuurrapport over 30 dagen: 107 volledig automatische facturen plus 11 met alleen goedkeuring vormen 118 van 201, oftewel 58,7 % AP Touchless. Pure afzonderlijk is 53,2 %. De AP-kaart toont al het gecombineerde aantal 118. Fictieve trainingshistorie; dit bewijst geen uitgevoerde ERP-export.</p></figcaption></figure>
 
-| Kaart | Toont | Voorbeeld (illustratief) |
+| Kaart | Wat telt mee? | Huidige opname |
 | --- | --- | --- |
-| **Puur touchless** | Het percentage en het verschil met het doel | **63,2 %** · "120 documenten" · "−6,8 pp t.o.v. doel van 70 %" (rood, onder het doel) |
-| **AP Touchless** | Gecombineerd Pure + alleen goedkeuring | **78,9 %** · 30 documenten met alleen goedkeuring |
-| **AP ondersteund** | Het aantal documenten en hun aandeel | **30** · 15,8 % |
-| **Procesuitzonderingen** | Het aantal documenten en hun aandeel | **10** · 5,3 % |
-| **Diagnosedekking** | Voor hoeveel geblokkeerde documenten de oorzaak **bekend** is | **80 %** · "10 zonder bekende oorzaak" |
+| Pure Touchless | Succesvol afgerond zonder ingreep of goedkeuring | 107 · 53,2 % |
+| AP Touchless | Pure plus alleen goedkeuring; gecombineerd percentage en aantal | 118 · 58,7 % |
+| AP Assisted | Succesvol afgerond met een handmatige ingreep | 37 · 18,4 % |
+| Procesuitzonderingen | Uitkomst die als uitzondering is ingedeeld | 46 · 22,9 % |
+| Diagnosedekking | Geblokkeerde gevallen met een bekende oorzaak | 100 % · 0 zonder bekende oorzaak |
 
 * Een kaart toont een streepje (—) in plaats van **0 %** als er niets te meten is. Een streepje betekent "geen gegevens", niet "nul".
 * **Diagnosedekking** = documenten met een bekende blokkeringsreden ÷ alle geblokkeerde documenten. Voorbeeld: 50 geblokkeerde documenten, 10 met een onbekende oorzaak → 40 ÷ 50 = **80 %**. Een lage waarde betekent "we begrijpen nog niet waarom documenten stoppen". Verbeter die eerst voordat u afzonderlijke oorzaken probeert op te lossen.
@@ -33,9 +33,9 @@ De bovenste keuze en die voor geleerde regels werken in de gecontroleerde implem
 
 ### Touchless-percentage in de tijd
 
-<figure><img src="../.gitbook/assets/touchless-trend-nl.png" alt="Trend in de echte Nederlandse interface. De blauwe AP-lijn in deze opname toont de afzonderlijke categorie alleen goedkeuring, niet het gecombineerde koppercentage. Opnamen en rekenvoorbeelden kunnen verschillende perioden en populaties betreffen."><figcaption><p>Trend in de echte Nederlandse interface. De blauwe AP-lijn in deze opname toont de afzonderlijke categorie alleen goedkeuring, niet het gecombineerde koppercentage. Opnamen en rekenvoorbeelden kunnen verschillende perioden en populaties betreffen.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-trend-nl-20261104.png" alt="Huidige trend: roze toont Pure Touchless; blauw het gecombineerde percentage inclusief alleen goedkeuring. De stippellijn geeft het doel van 70 % aan. Deze fictieve trainingsgevallen bewijzen geen werkelijke procesverbetering."><figcaption><p>Huidige trend: roze toont Pure Touchless; blauw het gecombineerde percentage inclusief alleen goedkeuring. De stippellijn geeft het doel van 70 % aan. Deze fictieve trainingsgevallen bewijzen geen werkelijke procesverbetering.</p></figcaption></figure>
 
-De opname toont afzonderlijke aandelen: Pure en AP met alleen goedkeuring. De blauwe lijn vervangt niet het gecombineerde AP-percentage. Combineer alleen voor dezelfde periode en populatie. Korte perioden gebruiken dagelijkse punten, langere wekelijkse.
+De huidige grafiek toont Pure, gecombineerd AP en het doel. Blauw omvat Pure en alleen goedkeuring en ligt dus op of boven roze; tel de twee percentages niet op. Elk punt gebruikt zijn eigen aantal afgeronde, meetellende documenten: een dagpercentage is niet automatisch het percentage over de hele periode. Korte perioden tonen dagpunten, lange perioden weekpunten. De afzonderlijke uitkomstcategorie alleen goedkeuring verschilt van deze gecombineerde lijn.
 
 **Voorbeeld.** Pure van 55 naar 68 % na een wijziging toont een verband in de tijd. Vergelijk type, leveranciers en andere wijzigingen; voor/na bewijst op zichzelf geen enkele oorzaak.
 

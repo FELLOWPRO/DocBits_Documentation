@@ -63,7 +63,7 @@ Extractiekwaliteit in de steekproef: **100 %**; Pure: **70 %**; gecombineerd AP:
 
 **Een menselijke ingreep blijft tellen.** Een latere automatische uitvoering of herstart wist eerdere correcties niet. Lezen en voorvertonen zijn op zichzelf geen ingrepen; handmatige validatie en menselijke herstart wel. Alleen goedkeuring blijft afzonderlijk.
 
-<figure><img src="../.gitbook/assets/touchless-methodology-nl.png" alt="Berekening in de echte Nederlandse interface. AP combineert Pure en alleen goedkeuring, gedeeld door de afgeronde meetellende documenten. Dit meet het proces, niet de extractienauwkeurigheid. De democijfers zijn niet de illustratieve steekproef van 200 documenten."><figcaption><p>Berekening in de echte Nederlandse interface. AP combineert Pure en alleen goedkeuring, gedeeld door de afgeronde meetellende documenten. Dit meet het proces, niet de extractienauwkeurigheid. De democijfers zijn niet de illustratieve steekproef van 200 documenten.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-methodology-nl-20261104.png" alt="Huidige trainingspopulatie: 201 afgeronde, meetellende facturen; geen gevallen in verwerking of uitgesloten. De 107 volledig automatische facturen geven 53,2 %; met 11 alleen goedkeuring zijn dat 118 en 58,7 %. Deze procespercentages meten geen extractienauwkeurigheid."><figcaption><p>Huidige trainingspopulatie: 201 afgeronde, meetellende facturen; geen gevallen in verwerking of uitgesloten. De 107 volledig automatische facturen geven 53,2 %; met 11 alleen goedkeuring zijn dat 118 en 58,7 %. Deze procespercentages meten geen extractienauwkeurigheid.</p></figcaption></figure>
 
 ### Welke AP-acties tellen als ingreep?
 
@@ -83,7 +83,7 @@ Opslaan zonder aangetoonde wijziging bewijst geen correctie. Controleer of ook h
 
 ### Eén AP-label, twee betekenissen
 
-Het **AP-percentage bovenaan** combineert Pure en alleen goedkeuring: (120 + 30) / 190 = 78,9 %. Het **aantal eronder** telt alleen de 30 goedkeuringen. De leverancierscategorie en de blauwe AP-lijn in de beschreven grafiek tonen alleen goedkeuring: 15,8 %. Pure en het gecombineerde AP-percentage overlappen; tel ze niet op.
+Het percentage en aantal op de huidige AP-kaart combineren Pure en alleen goedkeuring. In het rekenvoorbeeld zijn dat 150 = 120 + 30 documenten en 78,9 %. In de huidige opname zijn dat 118 = 107 + 11 facturen en 58,7 %. De afzonderlijke uitkomstcategorie, zoals de MCP-groep `AP_TOUCHLESS`, telt alleen de 11 goedkeuringen. De huidige blauwe lijn toont het gecombineerde percentage met de populatie van elk punt. Pure en gecombineerd AP overlappen: tel ze niet op.
 
 ### Actualiteit van de gegevens
 

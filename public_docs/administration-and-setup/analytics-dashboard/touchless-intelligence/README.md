@@ -1,8 +1,16 @@
 # Touchless Intelligence
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4" %}
-
 Touchless Intelligence answers two separate questions: **Did DocBits extract the invoice correctly?** And: **Did the whole process finish without a processing intervention?** Correct extraction can still need rework when Infor data differs. AP means the human Accounts Payable team.
+
+## Video: Touchless report functions
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.mp4" %}
+
+This 5:41 review version shows a populated report: filters, KPIs and calculation, trends, first blockers, recorded evidence, document history, run comparison, learned rules, improvements and history, consulting reports and actual MCP results.
+
+[Open the video with English captions and 16 chapter links](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html). Human listening review of this new version is still pending.
+
+These training cases explain report functions. A recommendation or preview proves neither an applied setting nor a measured improvement. The displayed MCP change proposal still needs a specific target configuration; preview and apply are unavailable for that proposal. Some native product text may retain its original language.
 
 <figure><img src="../../../.gitbook/assets/anatomy-touchless.svg" alt="Isometric sorting line: a conveyor with 14 gates, a pusher that diverts one document into a review tray, an export bin with a stack of documents and a dial reading 78.9 percent"><figcaption><p>Touchless as a sorting line, with the illustrative numbers from the example calculation: the 14 gates are the stages of the Pipeline Path, sheets still on the belt are in progress and not counted, a document that stops at a gate is pushed into the review tray with the AP assisted (30) and process exception (10) documents, and the pure (120) and approval-only (30) documents in the export bin give the dial's 150 of 190, or 78.9 %, past the 70 % target mark.</p></figcaption></figure>
 

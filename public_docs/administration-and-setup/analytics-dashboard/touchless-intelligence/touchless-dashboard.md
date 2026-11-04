@@ -1,5 +1,9 @@
 # Use the dashboard
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Selection and data timestamp](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=01).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Filters
 
 | Filter                            | What it does                                                                                                                                                                                                                   |
@@ -19,26 +23,26 @@ Before applying a rule, check the type shown inside that section. If no matching
 
 ### The five key figures
 
-<figure><img src="../../../.gitbook/assets/touchless-kpi-cards.png" alt="The five key figures: Pure touchless, AP touchless, AP assisted, Process exceptions and Diagnosis coverage"><figcaption><p>The five key figures. Here the pure rate is 50.3 % (156 documents), which is 19.7 points under the 70 % target, and diagnosis coverage is 100 %. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-report-kpi-en-20261104.png" alt="Current 30-day invoice report: 107 fully automatic invoices plus 11 approval-only invoices give 118 of 201, or 58.7% AP Touchless. Pure alone is 53.2%. The AP card already shows the combined count of 118. Fictional training history; no executed ERP export is established."><figcaption><p>Current 30-day invoice report: 107 fully automatic invoices plus 11 approval-only invoices give 118 of 201, or 58.7% AP Touchless. Pure alone is 53.2%. The AP card already shows the combined count of 118. Fictional training history; no executed ERP export is established.</p></figcaption></figure>
 
 | Card                   | Shows                                             | Example (illustrative)                                                      |
 | ---------------------- | ------------------------------------------------- | --------------------------------------------------------------------------- |
 | **Pure touchless**     | The percentage and the difference to the target   | **63.2 %** · "120 documents" · "−6.8 pp vs 70 % target" (red, below target) |
-| **AP touchless**       | Combined percentage: pure plus approval-only; the document count underneath refers to the approval-only outcome | **78.9 %** · "30 documents" (approval only) |
+| **AP touchless** | Combined percentage and count: Pure plus approval-only | **78.9%** · "150 documents" in the example with 120 Pure and 30 approval-only |
 | **AP assisted**        | The number of documents and their share           | **30** · 15.8 %                                                             |
 | **Process exceptions** | The number of documents and their share           | **10** · 5.3 %                                                              |
 | **Diagnosis coverage** | How many blocked documents have a **known** cause | **80 %** · "10 without a known cause"                                       |
 
-* In the screenshot, 156 pure documents plus 11 approval-only documents give **167 ÷ 310 = 53.9% AP touchless**. Pure alone is **156 ÷ 310 = 50.3%**. The two percentages overlap.
+* In the current screenshot, 107 fully automatic plus 11 approval-only invoices give **118 ÷ 201 = 58.7% AP Touchless**. Pure alone is **107 ÷ 201 = 53.2%**. The two percentages overlap and must not be added.
 * A card shows a dash (—) instead of **0 %** when there is nothing to measure. A dash means "no data", not "zero".
 * **Diagnosis coverage** = documents with a known blocking reason ÷ all blocked documents. Example: 50 blocked documents, 10 with an unknown cause → 40 ÷ 50 = **80 %**. A low value means "we do not yet understand why documents stop". Improve it before you try to fix individual causes.
 * **Click a card** to open the document list behind the number in a new tab ("View the documents behind this number"). Cards with 0 documents are not clickable.
 
 ### Touchless rate over time
 
-<figure><img src="../../../.gitbook/assets/touchless-trend.png" alt="Line chart of the pure touchless and AP touchless rate per day with the 70 percent target line"><figcaption><p>The rate per day with the target line. Here the rate stays between 40 and 60 % and drops sharply from 10 October. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-report-trend-en-20261104.png" alt="Current report trend: pink shows Pure Touchless and blue shows the combined rate including approval-only documents. The dashed line marks the 70% target. These curves use fictional training cases and do not establish an actual process improvement."><figcaption><p>Current report trend: pink shows Pure Touchless and blue shows the combined rate including approval-only documents. The dashed line marks the 70% target. These curves use fictional training cases and do not establish an actual process improvement.</p></figcaption></figure>
 
-The screenshot shows separate outcome shares: **Pure touchless** and **AP touchless** (approval only), plus the **target line**. In this captured view the blue line is the approval-only share, not the combined AP headline rate. The combined rate adds the pure and approval-only shares over the same population. Keep outcome shares and the combined KPI distinct when reading charts. Short periods show daily points, long periods weekly points.
+The current chart shows **Pure Touchless**, the **combined AP Touchless rate**, and the **target line**. Blue includes Pure and approval-only, so it is on or above pink; do not add the two values. Each point has its own number of eligible completed documents, so a daily rate is not automatically the whole-period rate. Short periods show daily points, long periods weekly points. The separate approval-only outcome category is different from this combined line.
 
 **Example.** After you switched on automatic PO matching on 1 October, the pure rate climbs from 55 % to 68 % within two weeks. The chart shows the day the curve turns, so you can investigate the timing. A before/after association does not by itself prove that this setting caused the improvement. Compare document type, supplier mix and other changes.
 

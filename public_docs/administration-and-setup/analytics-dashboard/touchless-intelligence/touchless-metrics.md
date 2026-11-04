@@ -1,5 +1,9 @@
 # Metrics and calculation
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Calculate the rates](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=03).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Correct extraction and a touchless process are different
 
 **DocBits can read every invoice value correctly and the invoice can still need AP attention because the source-system data differs.** AP means Accounts Payable, the team processing supplier invoices. Check these two questions separately:
@@ -63,7 +67,7 @@ The tab shows a **target** (70 % unless your organisation uses a different one).
 
 Click **How touchless is calculated** at the top right to open this explanation inside DocBits, with the numbers of your own period (documents in period, still in progress, excluded, measured).
 
-<figure><img src="../../../.gitbook/assets/touchless-methodology.png" alt="The drawer How touchless is calculated with the numbers of the period"><figcaption><p>The drawer <strong>How touchless is calculated</strong>: here 2,425 documents, of which 2,115 are in progress and 310 are measured. The 156 pure documents give 50.3%; adding 11 approval-only documents gives 167 and 53.9% AP touchless. These figures describe the process, not extraction accuracy. Example organisation with demo data.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-report-methodology-en-20261104.png" alt="Current training population: 201 eligible completed invoices, with none still processing or excluded. The 107 fully automatic invoices give 53.2%; adding 11 approval-only invoices gives 118 and 58.7%. These process rates do not measure extraction accuracy."><figcaption><p>Current training population: 201 eligible completed invoices, with none still processing or excluded. The 107 fully automatic invoices give 53.2%; adding 11 approval-only invoices gives 118 and 58.7%. These process rates do not measure extraction accuracy.</p></figcaption></figure>
 
 ### Example: 100% correct extraction, 80% AP touchless
 
@@ -118,9 +122,9 @@ A click on Save without evidence of a changed value does not prove a correction.
 | Location | Meaning |
 | --- | --- |
 | AP headline percentage | Combined Pure + approval-only: (120 + 30) / 190 = 78.9% |
-| Document count beneath that percentage | Approval-only count: 30, not 150 |
-| Supplier outcome tile or segment | Separate approval-only category: 30 / 190 = 15.8% |
-| Blue AP line in the [dashboard trend screenshot](touchless-dashboard.md) | Separate approval-only share; not the combined headline |
+| Document count beneath that percentage in the current report | Combined Pure + approval-only: 150 = 120 + 30 |
+| AP Touchless outcome category, such as the MCP bucket `AP_TOUCHLESS` | Separate approval-only category: 30 / 190 = 15.8% |
+| Blue AP line in the current [dashboard trend screenshot](touchless-dashboard.md) | Combined Pure + approval-only rate at each point, using that point's population |
 
 The final outcome categories sum to 100% of the measured population. The Pure and combined AP headline percentages overlap and must not be added.
 

@@ -2,7 +2,7 @@
 
 Administrators can create a custom document type or change the settings of an existing one. Open **Settings → Document Processing → Document Types**. The page separates the built-in **Default Document Types** from **Custom Document Types**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc163-document-types-en.png" alt="Document Types page showing the Invoice card with Activate, Extraction, More Settings and links for layouts, fields, tables, scripts and model training"><figcaption><p>Use a document type card to open the setting you want to change.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document-types-overview-en-20261104.png" alt="The Document Types page: the Default Document Types section with the Invoice card, which has Activate and Extraction switches, the More Settings gear and the links Layouts, Fields, Tables, Validation Rules, Transformation Rules, Scripts, Model Training, E-Doc, Document Sub Types and Logs; the other cards show fewer links."><figcaption><p>Use a document type card to open the setting you want to change. The Invoice card offers the most links because validation and transformation rules are enabled for it.</p></figcaption></figure>
 
 ## Create a custom document type
 
@@ -28,9 +28,12 @@ Find the type's card under **Default Document Types** or **Custom Document Types
 | **Layouts**            | Opens the validation layout. See [navigating the Layout Manager](layout-manager/navigating-the-layout-manager.md).                                               |
 | **Fields**             | Opens field configuration. See [adding and editing fields](fields/adding-and-editing-fields.md).                                                                 |
 | **Tables**             | Opens table columns for this document type.                                                                                                                      |
+| **Validation Rules**   | Opens the [custom validation rules](custom-validation-rules.md) of this document type. Shown when the rule manager is available.                                |
+| **Transformation Rules** | Opens the [transformation rules](transformation-rules.md) of this document type. Shown when the rule manager is available.                                    |
 | **Scripts**            | Opens processing scripts when that feature is available.                                                                                                         |
 | **Model Training**     | Opens training data and model options.                                                                                                                           |
 | **E-Doc**              | Opens electronic document settings when available. See [E-Doc settings](edi/).                                                                                   |
 | **Document Sub Types** | Opens subtype settings; see [Document Sub Types](document-sub-types.md).                                                                                         |
+| **Logs**               | Opens the rule execution logs of this document type, one row per evaluated rule; see [Custom Validation Rules](custom-validation-rules.md).                     |
 
 The links shown on a card depend on the organization's enabled features and the document type. Open the relevant section, make the intended change there, and check a sample document in the validation view before using the updated type in regular processing.

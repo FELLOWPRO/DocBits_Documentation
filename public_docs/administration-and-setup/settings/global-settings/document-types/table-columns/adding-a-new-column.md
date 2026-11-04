@@ -28,13 +28,13 @@ Añada una columna cuando deba capturarse por línea un valor que las columnas p
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-es.png" alt="Cuadro de confirmación «¿Crear una nueva columna de tabla?» con los botones Cancelar y Crear columna"><figcaption><p>Confirme antes de que la columna se cree para todos los proveedores.</p></figcaption></figure>
 
-5. Seleccione **Crear columna** para guardar, o **Cancelar** para volver sin crear nada. La columna aparece en la lista con *Read Only*, *Hidden* y *Use AI* sin marcar. Cambie esos indicadores en la lista si es necesario; consulte [Editar y eliminar columnas](editing-and-deleting-columns.md).
+5. Tras crear la columna, revise sus ajustes en la lista. Read Only y Hidden empiezan desactivados. Use AI comienza en Predeterminado; una columna propia normalmente no se solicita así. Elija Sí si la extracción estructurada debe solicitarla.
 
 ## Después de añadirla
 
 * La columna está **vacía en los documentos existentes**. Se rellena en los documentos cargados o reiniciados después del cambio.
 * En el caso de proveedores con **reglas entrenadas**, abra uno de sus documentos en el entrenamiento de tablas y asigne la nueva columna; de lo contrario, la columna permanece vacía para ese proveedor. Consulte [Defining tables and columns](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
-* Con la **extracción de tablas con IA**, la IA rellena la columna si el valor es reconocible en el documento. Marque la columna con *Use AI* si el proveedor tiene reglas entrenadas pero esta columna debe seguir procediendo de la IA.
+* Para la extracción estructurada por IA, seleccione Sí en Use AI de la columna propia y compruebe la vista previa. Crear la columna no basta para solicitarla. Revise asignaciones e instrucciones del proveedor, reprocese un documento de prueba y compruebe el resultado.
 * Añada la columna al **mapeo de exportación** si el ERP debe recibirla; consulte [Export](../../../document-processing/export.md).
 
 ## Mensajes
@@ -44,3 +44,5 @@ Añada una columna cuando deba capturarse por línea un valor que las columnas p
 | *Column name already exists* | Ya hay una columna con este nombre técnico en la tabla. Elija otro título. |
 | *Column name already exists – Please activate it in Table Column settings* | Una columna predeterminada oculta tiene este nombre. Desmarque su indicador *Hidden* en lugar de crear una nueva. |
 | *No table exists. Please create table before creating columns.* | El tipo de documento aún no tiene tabla: haga clic primero en **Create new table**. |
+
+[Structured Output para tablas](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

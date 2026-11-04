@@ -28,3 +28,7 @@ Un cambio puede requerir confirmación y reiniciar la extracción. Compruebe pri
 Compare los modelos con documentos de prueba autorizados y compruebe valores, tiempos y costes. Cambiar de modelo puede volver a procesar un documento y no garantiza una mejora. Para configurar el valor de la organización o revisar preferencias de plantillas, consulte la documentación relacionada.
 
 [**aquí**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)
+
+## Ajustes y configuraciones específicas
+
+Structured Output tiene su propio ajuste de organización y plantilla, independiente del nivel de modelo. Cámbielo en Más opciones del documento; confirmar guarda el valor y reinicia ese documento. Los indicadores de la lista son de solo lectura. Eliminar una entrada puede borrar varios valores específicos a la vez. [Structured Output para tablas](../ai-table/structured-output.md).

@@ -6,7 +6,7 @@ Nachdem Sie den [Prüfbericht](validation-report.md) gelesen haben, sagt Ihnen d
 
 ## Was als Nächstes zu tun ist
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-de-20261104.png" alt="Gesamtbewertung, nächster Schritt und Aktionen im Prüfbericht."><figcaption><p>Gesamtbewertung, nächster Schritt und Aktionen im Prüfbericht.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-next-step-de-20261104-v2.png" alt="Gesamtbewertung, nächster Schritt und Aktionen im Prüfbericht."><figcaption><p>Gesamtbewertung, nächster Schritt und Aktionen im Prüfbericht.</p></figcaption></figure>
 
 Die **Gesamtbewertung** sagt in einem Satz, ob die Rechnung konform ist. Der Block **Nächster Schritt** sagt Ihnen, was zu tun ist:
 
@@ -23,7 +23,7 @@ Die Schaltflächen am Ende des Berichts:
 
 ## Ein Dokument ablehnen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-de-20261104.png" alt="Dialog zum Ablehnen der synthetischen Beispielrechnung. Die Ablehnung wurde abgebrochen."><figcaption><p>Dialog zum Ablehnen der synthetischen Beispielrechnung. Die Ablehnung wurde abgebrochen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-reject-dialog-de-20261104-v2.png" alt="Dialog zum Ablehnen der synthetischen Beispielrechnung. Die Ablehnung wurde abgebrochen."><figcaption><p>Dialog zum Ablehnen der synthetischen Beispielrechnung. Die Ablehnung wurde abgebrochen.</p></figcaption></figure>
 
 1. Wählen Sie im Bericht **Dokument ablehnen**.
 2. Prüfen Sie die **Begründung**. DocBits übernimmt sie aus den Fehlern im Bericht. Sie können den Text bearbeiten.

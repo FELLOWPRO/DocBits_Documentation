@@ -8,21 +8,21 @@ De sectie **PO Verzendingsorder** geeft een overzicht van de leverings- en factu
 
 Om deze functie te activeren:
 
-1. Ga naar **Instellingen** → **Documentverwerking** → **Module**.
-2. Selecteer **Inkooporder**.
-3.  Schakel de optie **PO Verzendingsorder** in.\
+1. Ga naar **Instellingen** → **Module**.
+2. Open de sectie **Inkooporder** (*Afstemming en validatie van inkooporders*).
+3.  Schakel de optie **PO-verzendingsorder** in.
 
+    <div align="left"><figure><img src="../../../../.gitbook/assets/po-shipment-order-module-setting-nl.png" alt="Sectie Inkooporder onder Instellingen → Module met de schakelaar PO-verzendingsorder" width="563"><figcaption><p>Instellingen → Module → Inkooporder</p></figcaption></figure></div>
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/docbits_docbits_image_5.png" alt="DocBits DocBits Afbeelding 5" width="563"><figcaption></figcaption></figure></div>
+Dezelfde sectie bevat nog twee schakelaars: **PO-dashboard** voegt een dashboard voor inkooporders toe aan de navigatie, en **Verzendorder Dashboard** voegt een dashboard voor verzendorders toe dat inkomende leveringen per inkooporderregel toont.
 
 ## **Waar het verschijnt**
 
-Eenmaal ingeschakeld, wordt de sectie PO Verzendingsorder zichtbaar in de interface Inkooporder Matching.\
-
+Eenmaal ingeschakeld, wordt de sectie PO-verzendingsorder zichtbaar in de interface Inkooporder Matching.\
 
 <figure><img src="../../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Instellingen Workflow"><figcaption></figcaption></figure>
 
-### **PO Verzendingsorder – Veldbeschrijvingen**
+### **PO-verzendingsorder – Veldbeschrijvingen**
 
 * **Item ID** Identificeert het specifieke item in de inkooporder.
 * **Leveringsnummer** Referentienummer voor de zending of levering.

@@ -75,8 +75,6 @@
   * [Leveranciersstatistieken voor leveringen begrijpen](end-user-and-partner-section/end-user-section/supplier-statistics.md)
   * [Dashboard voor verzendorders](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)
   * [Gebruikersconfiguratie-opties](end-user-and-partner-section/end-user-section/user-configuration-options.md)
-  * [AI Tabel](end-user-and-partner-section/end-user-section/ai-table/README.md)
-    * [AI Tabel Tags](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
   * [Validatiescherm](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Leverancierspecifiek AI-model voor Veld- en Tabelextractie](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Automatische controles op het validatiescherm](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
@@ -121,6 +119,16 @@
     * [Status van het ondersteuningsportaal](end-user-and-partner-section/end-user-section/ressources-and-support/support-portal-status.md)
 * [Partner Sectie](end-user-and-partner-section/partner-section/README.md)
   * [Factuurautomatiseringstest met DocBits](end-user-and-partner-section/partner-section/invoice-automation-testing-with-docbits.md)
+
+
+* [AI Table](end-user-and-partner-section/end-user-section/ai-table/README.md)
+  * [Instellingen en sjabloonafwijkingen](end-user-and-partner-section/end-user-section/ai-table/configuration.md)
+  * [Structured Output voor tabellen](end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+  * [Kolommen en correcties](end-user-and-partner-section/end-user-section/ai-table/columns-and-corrections.md)
+  * [AI-instructies](end-user-and-partner-section/end-user-section/ai-table/ai-instructions.md)
+  * [AI Tabel Tags](end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md)
+  * [Extractie uitleggen en problemen onderzoeken](end-user-and-partner-section/end-user-section/ai-table/explain-extraction.md)
+  * [Assistent en rechten](end-user-and-partner-section/end-user-section/ai-table/assistant-and-permissions.md)
 
 ## Administratie en instelling <a href="#administration-and-setup" id="administration-and-setup"></a>
 

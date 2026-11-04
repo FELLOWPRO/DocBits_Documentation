@@ -4,7 +4,7 @@ Geben Sie eine Dokument-ID in **Dokument-ID** ein oder öffnen Sie ein Beispield
 
 Die Kopfzeile zeigt die Datei, ihren Status (zum Beispiel **In Bearbeitung**), den Lauf, den Sie gerade ansehen, und dessen ersten Blocker sowie eine Schaltfläche **Dokument** mit der Dokument-ID.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-pipeline-de.png" alt="Die Seite Dokumentverlauf mit Dateikopfzeile, dem bei der Feldvalidierung gestoppten Verarbeitungspfad und dem Anfang des Schrittprotokolls"><figcaption><p>Der Dokumentverlauf: der Verarbeitungspfad mit allen Schritten und das Schrittprotokoll mit den Angaben, die jeder Schritt aufgezeichnet hat.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-overview-de.png" alt="Dev NOVA: Verarbeitungspfad und echte aufgezeichnete Werte des ersten Testlaufs"><figcaption><p>Neu aufgenommen auf Dev NOVA 11.0.3 am 4. November 2026: Der fiktive Testbeleg stoppt bei der Feldvalidierung. Klassifizierung, Lieferantensuche, Kopfdaten- und Tabellenextraktion enthalten tatsächlich aufgezeichnete Werte. Die Karten rechts zeigen Dokument und Laufhistorie. Dies ist eine laufende Produktoberfläche.</p></figcaption></figure>
 
 Der **Verarbeitungspfad** zeigt 14 Schritte: Eingang, Klassifizierung, E-Dokument-Prüfung, Lieferantenerkennung, Texterkennung, Kopfdatenextraktion, Tabellenextraktion, Feldvalidierung, Bestellsuche, Bestellzeilenabgleich, Freigabe, Workflow-Steuerung, Export, ERP-Bestätigung. Jeder Schritt trägt genau einen Zustand:
 
@@ -12,7 +12,7 @@ Der **Verarbeitungspfad** zeigt 14 Schritte: Eingang, Klassifizierung, E-Dokumen
 | --- | --- |
 | **Bestanden** (grün) | Der Schritt ist fehlerfrei gelaufen |
 | **Hier angehalten** (orange) | Der Schritt hat das Dokument blockiert |
-| **Als Nächstes** | Das Dokument ist nie so weit gekommen |
+| **Als Nächstes** | Im Verarbeitungspfad als nachfolgender Schritt dargestellt; zusätzliche Einträge im Schrittprotokoll prüfen |
 | **Nichts erfasst** (gestrichelt) | Für diesen Schritt wurden keine Daten aufgezeichnet |
 | **Nicht zutreffend** | Der Schritt gilt für dieses Dokument nicht |
 
@@ -26,13 +26,29 @@ Das **Schrittprotokoll** unter dem Pfad listet dieselben Schritte mit dem auf, w
 * Ein Wert, den kein Schritt aufgezeichnet hat, erscheint als **Nicht erfasst**, nie als erfundener Wert. Werte sind Zahlen und feste Begriffe, nie Dokumenttext.
 * **Rohdiagnose anzeigen** blendet die Rohdaten ein, wenn der Support danach fragt.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-stage-log-de.png" alt="Das Schrittprotokoll mit bestandenen Schritten, blockierter Feldvalidierung und Einträgen Nicht erfasst"><figcaption><p>Dieses Beispiel stoppt bei der Feldvalidierung. Die Einträge zeigen <strong>Nicht erfasst</strong>: Der Screenshot benennt einen Blocker, beweist aber weder einen Auslesefehler noch falsche Quelldaten.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-stage-log-de.png" alt="Dev NOVA: Schrittprotokoll mit Konfidenz, Extraktionswerten und blockierter Feldvalidierung"><figcaption><p>Echter erster Lauf: 100 % Klassifizierungskonfidenz, 0 Lieferantenkandidaten, 1 Tabellenzeile und 7 Zuordnungslücken. Bestanden bedeutet, dass ein Schritt ausgeführt wurde; es bestätigt weder eine Lieferantenzuordnung noch die Richtigkeit aller Rechnungswerte. Die Feldvalidierung meldet ein fehlendes Pflichtfeld.</p></figcaption></figure>
 
 ### Läufe und Änderungen
 
-Die Laufauswahl oben im Schrittprotokoll (**Lauf 1 · Aktuell**) wechselt zwischen den Läufen des Dokuments. Die **Laufhistorie** rechts listet jeden Lauf mit seinem Ergebnis und der Stelle auf, an der er stehen geblieben ist. Wenn ein Dokument mehrfach gelaufen ist, wählen Sie in der Auswahl einen Lauf, um ihn mit dem aktuellen zu vergleichen: Die geänderten Werte tragen dann ein Abzeichen mit der Differenz und ihrer Einheit, zum Beispiel **−2 Felder** oder **+3 %**.
+Die Laufauswahl oben im Schrittprotokoll (**Lauf 1 · Aktuell**) wechselt zwischen den Läufen des Dokuments. Die **Laufhistorie** rechts listet jeden Lauf mit seinem Ergebnis und der Stelle auf, an der er stehen geblieben ist. Wenn ein Dokument mehrfach gelaufen ist, wählen Sie den gewünschten Lauf. Vorhandene Änderungen beziehen sich auf seinen vorherigen Lauf: Die geänderten Werte tragen dann ein Abzeichen mit der Differenz und ihrer Einheit, zum Beispiel **−2 Felder** oder **+3 %**.
 
-Die Karte **Dokument** neben dem Schrittprotokoll nennt Dokumenttyp, Lieferant, Rechnungsnummer, Bestellung, Seitenzahl und ob die Analyse **regelbasiert** ist oder von einer KI geschrieben wurde.
+Die Karte **Dokument** neben dem Schrittprotokoll nennt Dokumenttyp, Lieferant, Rechnungsnummer, Bestellung, Seitenzahl und die aufgezeichnete Analysemethode. Im Beispiel steht dort **Manuell**, weil der Dokumenttyp beim Testimport vorgegeben wurde; die 100 % sind daher kein unabhängiger Nachweis einer automatischen Klassifizierung.
+
+### Lieferanten- und Tabellendetails lesen
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-supplier-de.png" alt="Dev NOVA: Lieferantendetails unterscheiden gefundene Kennungen, Stammdatensuche und Zuordnung"><figcaption><p>Der echte Testlauf findet den Namen auf der Rechnung und sucht ihn in den Stammdaten, ordnet aber keinen Lieferanten zu. USt-ID, IBAN, E-Mail und GLN stehen nicht auf diesem Testbeleg. Ein fehlender Stammdatentreffer ist eine andere Diagnose als ein nicht gefundener Rechnungswert.</p></figcaption></figure>
+
+Prüfen Sie die drei Fragen getrennt: Ist die Kennung auf dem Dokument vorhanden? Wurde sie gesucht? Gab es eine Zuordnung? Ein grüner Schritt allein beantwortet diese Fragen nicht.
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-table-de.png" alt="Dev NOVA: Tabellendetails des ersten Laufs mit sieben gemeldeten Zuordnungslücken"><figcaption><p>Die Tabellendetails melden 7 Zuordnungslücken bei 1 Tabelle und 1 Zeile. Prüfen Sie die Spaltenzuordnung, bevor Sie einen Auslesefehler annehmen. Die Oberfläche zeigt im ersten Lauf noch „Keine Änderung seit Lauf 0“; für den ersten Lauf gibt es keinen früheren Lauf als Vergleichsbasis.</p></figcaption></figure>
+
+### Einen echten Neustart erkennen
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-runs-de.png" alt="Dev NOVA: Vergleichstabelle der beiden tatsächlichen Testläufe ohne geänderte Schrittwerte"><figcaption><p>Derselbe Testbeleg nach einem tatsächlich ausgelösten manuellen Neustart. Es wurden keine Rechnungsfelder korrigiert. Die neue Laufnummer belegt einen weiteren Versuch, keine erfolgreiche Verbesserung. Unveränderte Werte erzeugen keine erfundenen Differenz-Abzeichen.</p></figcaption></figure>
+
+Der Neustart ist ein menschlicher Eingriff. Erst ein später erfolgreich abgeschlossener Beleg würde in diesem Fall als **AP mit Eingriff** zählen; solange er noch in Bearbeitung ist, gehört er nicht in den Nenner der Abschlussquote.
+
+**Grenzen dieses Nachweises.** Dieser Testfall zeigt keine fachliche Freigabe, keinen erfolgreichen Export und keine ERP-Bestätigung. Der PO-Bereich enthält keinen aufgezeichneten Entscheidungsweg des Legacy-Matchers. Er beweist keinen Infor-Abgleich. In NOVA 11.0.3 sind zudem nicht alle Anzeigen konsistent: Das Schrittprotokoll kann nach der blockierten Feldvalidierung noch einen bestandenen Bestellsuchschritt enthalten, während der Pfad ihn als „Als Nächstes“ zeigt. Prüfen Sie beide Ansichten. Die Dokumentkarte zeigt die Rechnungsnummer hier als „Nicht erfasst“, obwohl sie im Extraktionsergebnis vorhanden ist; sie ersetzt deshalb nicht den Original- und Feldvergleich.
 
 ## Original und ursprüngliche Auslesung nachweisen
 
@@ -70,8 +86,6 @@ Legen Sie vor der Prüfung fest, welche Felder und Positionen beurteilt werden. 
 
 ## Mehrere Blocker bei derselben Rechnung
 
-<figure><img src="../.gitbook/assets/touchless-touched-exception-de.png" alt="Deutscher Dokumentverlauf mit Prozessausnahme, menschlicher Bearbeitung und einem beim Export angehaltenen Verarbeitungspfad"><figcaption><p>Eine Prozessausnahme kann gleichzeitig einen menschlichen Eingriff im Verlauf haben. Die Kopfzeile zeigt hier noch die englische Ergebnisbeschriftung PROCESS EXCEPTION neben Vom Benutzer bearbeitet; der Pfad stoppt beim Export, die ERP-Bestätigung ist noch nicht erreicht. Diese Aufnahme belegt keine falsche Auslesung und zeigt keine erfolgreiche Verarbeitung. Dateiname und Dokument-ID sind aus Datenschutzgründen ausgeblendet.</p></figcaption></figure>
-
 Das folgende Beispiel beschreibt einen möglichen Verlauf, nicht die einzelnen Läufe der Screenshots:
 
 | Zeitpunkt / Lauf | Was sichtbar wird | Was daraus folgt |
@@ -91,7 +105,7 @@ Die zugehörigen MCP-Aufrufe und die Einordnung menschlicher Aktionen sind unter
 * [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)
 * [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
 
-Die Screenshots auf dieser Seite zeigen die deutsche Benutzeroberfläche.
+Die fünf neuen Verlaufsscreenshots zeigen die deutsche Oberfläche von Dev NOVA 11.0.3 und denselben eigens angelegten Testbeleg. Die separate Validierungsaufnahme dient weiterhin nur dem Vergleich von Original und angezeigtem Feld.
 
 <!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->
 

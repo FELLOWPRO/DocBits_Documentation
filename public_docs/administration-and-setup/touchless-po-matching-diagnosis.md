@@ -1,5 +1,9 @@
 # Touchless Intelligence: Diagnóstico de la coincidencia con la OC
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo del vídeo (versión de revisión):** [Seguir un documento](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/es.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Descripción general
 
 Una factura correctamente extraída puede detenerse porque los datos de la orden de compra difieren y las reglas no resuelven la discrepancia. Un bloqueo temporal aún no es un resultado final: un reintento automático puede tener éxito; una corrección o un reinicio manual registrado seguido de éxito da AP Assisted.

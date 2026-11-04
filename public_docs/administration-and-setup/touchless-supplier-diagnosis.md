@@ -1,5 +1,9 @@
 # Touchless Intelligence: Diagnóstico de proveedores y clústeres de problemas
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo del vídeo (versión de revisión):** [Investigar incidencias recurrentes](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/es.html#chapter=06).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Haga clic en un proveedor de la cola para abrir su página de diagnóstico.
 

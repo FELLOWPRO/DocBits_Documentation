@@ -1,5 +1,9 @@
 # Touchless Intelligence: Propuestas de cambio e informes
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo del vídeo (versión de revisión):** [Propuestas e historial](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/es.html#chapter=10).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Una recomendación puede venir acompañada de una **change proposal** (propuesta de cambio): un único cambio de ajuste que debería ayudar. Los administradores trabajan con ella en cuatro pasos:
 

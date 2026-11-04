@@ -40,8 +40,6 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
-<figure><img src="../../../.gitbook/assets/anatomy-po-matching.svg" alt="Isometrische Balkenwaage: Die linke Schale trägt den Bestell-Stückpreis von 100, die rechte Schale den Rechnungs-Stückpreis von 103 (100 plus ein kleines Zusatzgewicht). Der Waagebalken neigt sich leicht, und sein Zeiger steht im grünen Band, das die Toleranz von 5 % markiert." width="768"><figcaption><p>Der Bestellpreis (€100) liegt auf der linken Schale, der Rechnungspreis (€103) auf der rechten. Die Differenz von €3 entspricht 3 % des Bestellpreises, der Zeiger bleibt also im grünen Toleranzband von ±5 %, und die Prüfung gilt als bestanden. Jenseits von ±5 % (rot) muss die Rechnung geprüft werden.</p></figcaption></figure>
-
 ***
 
 ## 1. Purchase Order Full Match

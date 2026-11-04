@@ -1,5 +1,9 @@
 # Dashboard bedienen
 
+<!-- touchless-admin-video-20261104:start -->
+**Video-Kapitel (Prüffassung):** [Gleiche Datenbasis vergleichen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html#chapter=03).
+<!-- touchless-admin-video-20261104:end -->
+
 ### Filter
 
 | Filter | Was er bewirkt |

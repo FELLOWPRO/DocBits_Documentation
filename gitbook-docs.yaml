@@ -8,7 +8,7 @@ site:
       path: docbits
       default: true
       content:
-        directory: ./docbits
+        directory: null
         language: en
     - type: space
       key: space-2

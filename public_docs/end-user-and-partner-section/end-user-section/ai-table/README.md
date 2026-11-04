@@ -10,6 +10,8 @@ AI Table permet de vérifier les lignes extraites, corriger les colonnes et enre
 * [Expliquer l'extraction et diagnostiquer](explain-extraction.md)
 * [Assistant et droits](assistant-and-permissions.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Illustration isométrique d'un lecteur de tableau : une tête de lecture avec une cartouche d'instructions parcourt un tableau de document, un tableau de connexions branche chaque colonne renvoyée sur une colonne configurée, et les colonnes configurées se dressent comme des bacs avec chacun un bouton Use AI à trois positions."><figcaption><p>L'IA lit le tableau et renvoie des colonnes. Chaque colonne renvoyée est associée à une colonne de tableau configurée (une colonne renvoyée sans association reste masquée), chaque colonne configurée dispose de son propre réglage Use AI (Par défaut, Oui ou Non), et les instructions IA ainsi que <strong>Enregistrer comme formation</strong> déterminent la manière dont les documents suivants de cette mise en page fournisseur sont lus.</p></figcaption></figure>
+
 ## Quand obtenez-vous le tableau AI
 
 * Un administrateur a activé **Extraction de table AI** (Paramètres → Traitement des documents → Classification et extraction, voir [Paramètres pour les administrateurs](#parametres-pour-les-administrateurs)). Si l'option est désactivée, la zone du tableau affiche *La table AI s'affichera ici. Activer dans …*.

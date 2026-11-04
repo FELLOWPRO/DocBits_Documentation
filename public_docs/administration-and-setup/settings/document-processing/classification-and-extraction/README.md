@@ -61,6 +61,10 @@ Vous aurez ensuite la possibilité de :
 
     
 
+Après une division réussie, le document parent est supprimé et les pages se poursuivent sous forme de documents distincts qui partagent le même lot.
+
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Illustration isométrique de huit feuilles dans un bac, avec un scanner qui lit un code-barres sur la feuille 6. Des intercalaires se dressent devant les feuilles 3 et 6 et répartissent les feuilles en trois documents ; un élastique entoure l'ensemble du bac."><figcaption><p>Exemple avec le motif <code>^INV\d{6}$</code> : les codes des feuilles 3 et 6 correspondent et chacun démarre un nouveau document, le code de la feuille 4 ne correspond pas et ne divise rien, et l'élastique représente le lot que partagent les documents obtenus.</p></figcaption></figure>
+
 ## Formatage des montants
 
 Dans la section **Formatage des montants**, vous disposez de deux options :

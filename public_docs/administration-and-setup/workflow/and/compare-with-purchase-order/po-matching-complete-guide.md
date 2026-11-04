@@ -38,6 +38,8 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Balance isométrique à fléau : le plateau de gauche porte le prix unitaire du bon de commande de 100, celui de droite le prix unitaire de la facture de 103 (100 plus un petit poids supplémentaire). Le fléau penche et son aiguille se trouve dans la zone verte qui marque la tolérance de 5 %." width="768"><figcaption><p>Le prix du bon de commande (100 €) se trouve sur le plateau de gauche et le prix de la facture (103 €) sur celui de droite. L'écart de 3 € représente 3 % du prix du bon de commande : l'aiguille reste donc dans la zone verte de tolérance de ±5 % et le contrôle est réussi. Au-delà de ±5 % (en rouge), la facture doit être vérifiée.</p></figcaption></figure>
+
 ***
 
 ## 1. Correspondance complète du bon de commande

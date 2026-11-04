@@ -4,6 +4,8 @@
 
 Touchless Intelligence répond à deux questions distinctes : **DocBits a-t-il correctement extrait la facture ?** et **Le processus entier a-t-il abouti sans intervention de traitement ?** Une extraction correcte peut encore nécessiter du travail si les données Infor diffèrent. AP désigne l’équipe humaine de comptabilité fournisseurs.
 
+<figure><img src="../.gitbook/assets/anatomy-touchless-fr.svg" alt="Chaîne de tri isométrique : un convoyeur avec 14 portes, un poussoir qui dévie un document vers un bac de contrôle, un bac d'export avec une pile de documents et un cadran indiquant 78,9 pour cent"><figcaption><p>Touchless comme chaîne de tri, avec les chiffres illustratifs de l'exemple de calcul : les 14 portes sont les étapes du Chemin du pipeline, les feuilles encore sur le tapis sont en cours et ne sont pas comptées, un document qui s'arrête à une porte est poussé dans le bac de contrôle avec les documents AP assisté (30) et Exception de processus (10), et les documents Pure (120) et avec approbation seule (30) dans le bac d'export donnent les 150 sur 190 du cadran, soit 78,9 %, au-dessus de la marque cible de 70 %.</p></figcaption></figure>
+
 ## Trouver le bon guide
 
 | Guide | Contenu |

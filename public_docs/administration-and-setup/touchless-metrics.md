@@ -45,7 +45,7 @@ Jakość odczytu w tej próbie: **100 %**, Pure: **70 %**, łączny AP: **80 %**
 
 **Ingerencja pozostaje zapisana.** Późniejsze automatyczne wykonanie nie usuwa korekt ani ręcznego restartu. Samo czytanie i podgląd nie są ingerencją; ręczna walidacja i restart są. Zatwierdzenie jest osobną kategorią.
 
-<figure><img src="../.gitbook/assets/touchless-methodology-pl.png" alt="Obliczenia w rzeczywistym polskim interfejsie. Łączny AP obejmuje Pure i samo zatwierdzenie wśród zakończonych kwalifikujących się dokumentów. To miara procesu, nie jakości odczytu; dane zrzutu nie są przykładową populacją 200 dokumentów."><figcaption><p>Obliczenia w rzeczywistym polskim interfejsie. Łączny AP obejmuje Pure i samo zatwierdzenie wśród zakończonych kwalifikujących się dokumentów. To miara procesu, nie jakości odczytu; dane zrzutu nie są przykładową populacją 200 dokumentów.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-methodology-pl-20261104.png" alt="Aktualna populacja szkoleniowa: 201 zakończonych, kwalifikujących się faktur; żadna w toku ani wykluczona. 107 całkowicie automatycznych daje 53,2 %; z 11 samymi zatwierdzeniami to 118 i 58,7 %. Te wskaźniki procesu nie mierzą poprawności odczytu."><figcaption><p>Aktualna populacja szkoleniowa: 201 zakończonych, kwalifikujących się faktur; żadna w toku ani wykluczona. 107 całkowicie automatycznych daje 53,2 %; z 11 samymi zatwierdzeniami to 118 i 58,7 %. Te wskaźniki procesu nie mierzą poprawności odczytu.</p></figcaption></figure>
 
 ### Które działania AP są ingerencją?
 
@@ -65,7 +65,7 @@ Zapis bez wykazanej zmiany nie dowodzi korekty; sprawdź też ręczną walidacj�
 
 ### Dwa znaczenia AP
 
-**Procent AP u góry** to Pure + samo zatwierdzenie: 150 / 190 = 78,9 %. **Liczba poniżej** to tylko 30 zatwierdzeń. Kategorie dostawcy i niebieska linia AP opisanego wykresu pokazują samo zatwierdzenie: 15,8 %. Nie dodawaj nakładających się procentów Pure i łącznego AP.
+Procent i liczba na aktualnej karcie AP łączą Pure i samo zatwierdzenie. W przykładzie obliczeń to 150 = 120 + 30 dokumentów i 78,9 %. Na aktualnym zrzucie to 118 = 107 + 11 faktur i 58,7 %. Oddzielna kategoria wyniku, np. grupa MCP `AP_TOUCHLESS`, liczy tylko 11 zatwierdzeń. Aktualna niebieska linia pokazuje wskaźnik łączny z populacją każdego punktu. Pure i łączny AP nakładają się: nie dodawaj ich.
 
 ### Aktualność danych
 

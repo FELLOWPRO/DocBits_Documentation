@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-Veel facturen stoppen bij de inkooporder. De factuur zegt het ene, de inkooporder (PO) zegt het andere, en DocBits kan niet zelf beslissen of ze bij elkaar horen. Elk zo'n document heeft een persoon nodig, dus het is **niet touchless**.
+Een correct uitgelezen factuur kan stoppen wanneer ordergegevens afwijken en de regels dat verschil niet oplossen. Een tijdelijke blokkade is nog geen einduitkomst: automatische hervatting kan slagen; geregistreerde correctie of menselijke herstart geeft AP Assisted na succes.
 
 Touchless Intelligence laat u zien **waarom** een PO-match mislukte en **hoe** DocBits probeerde te matchen. Deze pagina legt de twee betrokken pipelinefasen uit, de redenen die u zult zien en de **beslisstroom van de PO-matching**, een diagram dat de matchingstappen na elkaar toont.
 
@@ -40,6 +40,9 @@ Een document dat bij fase 9 of 10 stopt, verschijnt in de leverancierswachtrij m
 {% hint style="info" %}
 Niet elke reden voor PO-matching kan in DocBits worden opgelost. Als de leverancier een verkeerd PO-nummer stuurt, zegt de kaart **Alleen actie van leverancier**: de leverancier moet het document corrigeren en opnieuw sturen.
 {% endhint %}
+
+Afzonderlijke prijs- en aantalgevallen met bewijs staan bij de [voorbeelden](touchless-examples.md).
+
 
 ## De beslisstroom van de PO-matching
 
@@ -100,7 +103,7 @@ Een leverancier factureert artikel **"A-4711-X"**, uw PO zegt **"4711"**. Geen e
 
 * In het cluster leest u *27 getroffen, 27 herstelbaar*, verwachte stijging bijvoorbeeld **+8,7 pp**.
 * De oplossing ligt aan uw kant: voeg een regel toe of wijzig de volgorde van regels zodat op het artikelnummer van de leverancier of op de omschrijving wordt gematcht, of onderhoud de artikelnummers van de leverancier in de stamgegevens.
-* Nadat u de regel hebt gewijzigd, past u de wijziging toe met een [wijzigingsvoorstel](touchless-change-proposals.md) en leest u twee weken later de **Wijzigingsgeschiedenis**: puur percentage voor en na.
+* Gebruik na een ondersteunde DocBits-configuratiewijziging voorvertoning en historie om gecombineerd AP vóór/na te meten. Controleer een Infor-correctie via import en nieuwe facturen; die vormt niet automatisch een configuratiehistorie-item.
 
 ### Voorbeeld 3: De inkooporder is er nog niet
 
@@ -117,7 +120,7 @@ Nadat een transformatieregel voor de tabel van een leverancier live ging, daalde
 3. Open de **Leveranciersdiagnose** en lees het cluster: reden, getroffen documenten, **Wat te wijzigen**, **Ontbrekend bewijs**.
 4. Open **Hoe deze organisatie matcht** en controleer de regelset: versie, eigenaar en toleranties.
 5. Open één **voorbeelddocument** en het bijbehorende [Documentspoor](touchless-document-trace.md): welke fase, welke reden?
-6. Wijzig **één** ding (volgorde van regels, tolerantie, artikelmapping) met een voorbeeldweergave, zodat de **Wijzigingsgeschiedenis** het kan meten.
+6. Los een bevestigde oorzaak op. Gebruik voor een ondersteund DocBits-voorstel de voorvertoning. Controleer bij Infor bron, import en nieuwe facturen apart; veronderstel geen automatisch item in de configuratiehistorie.
 
 ## Gerelateerde pagina's
 
@@ -127,3 +130,7 @@ Nadat een transformatieregel voor de tabel van een leverancier live ging, daalde
 * [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md)
 * [Regels voor het Matchen van Inkooporders](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * PO Bijpassende kaarten: complete gids
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

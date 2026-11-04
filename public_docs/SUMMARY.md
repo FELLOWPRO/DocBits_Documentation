@@ -838,10 +838,14 @@
 * [Rapport Pagina](administration-and-setup/report-page.md)
 * [Analyse-dashboard](administration-and-setup/analytics-dashboard.md)
   * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
-    * [Leveranciersdiagnose en probleemclusters](administration-and-setup/touchless-supplier-diagnosis.md)
+    * [Metrieken en berekening](administration-and-setup/touchless-metrics.md)
+    * [Het dashboard gebruiken](administration-and-setup/touchless-dashboard.md)
+    * [Voorbeelden: prijs en aantal](administration-and-setup/touchless-examples.md)
+    * [Touchless Intelligence: Leveranciersdiagnose en probleemclusters](administration-and-setup/touchless-supplier-diagnosis.md)
     * [Touchless Intelligence: PO-matchingdiagnose](administration-and-setup/touchless-po-matching-diagnosis.md)
-    * [Documentspoor](administration-and-setup/touchless-document-trace.md)
-    * [Wijzigingsvoorstellen en rapporten](administration-and-setup/touchless-change-proposals.md)
+    * [Touchless Intelligence: Documentspoor](administration-and-setup/touchless-document-trace.md)
+    * [Touchless Intelligence: Wijzigingsvoorstellen en rapporten](administration-and-setup/touchless-change-proposals.md)
+    * [Touchless uitleggen en verbeteren met MCP](administration-and-setup/touchless-mcp.md)
 
 ## Infor integratie en configuratie <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

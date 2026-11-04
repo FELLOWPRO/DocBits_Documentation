@@ -4,6 +4,8 @@
 
 Touchless Intelligence distingue duas perguntas: **o DocBits extraiu corretamente a fatura?** e **o processo inteiro terminou sem intervenção de processamento?** Extração correta não exclui trabalho devido a dados Infor diferentes. AP é a equipa humana de contas a pagar.
 
+<figure><img src="../.gitbook/assets/anatomy-touchless-pt.svg" alt="Linha de triagem isométrica: uma esteira com 14 portões, um empurrador que desvia um documento para uma bandeja de revisão, um contentor de exportação com uma pilha de documentos e um mostrador com 78,9 por cento"><figcaption><p>O Touchless como linha de triagem, com os números ilustrativos do cálculo de exemplo: os 14 portões são as etapas do Caminho do oleoduto, as folhas ainda na esteira estão em andamento e não são contadas, um documento que para num portão é empurrado para a bandeja de revisão com os documentos AP Assisted (30) e de exceção de processo (10), e os documentos Pure touchless (120) e apenas aprovação (30) no contentor de exportação dão ao mostrador 150 de 190, ou 78,9 %, acima da marca da meta de 70 %.</p></figcaption></figure>
+
 ## Encontrar o guia certo
 
 | Guia | Conteúdo |

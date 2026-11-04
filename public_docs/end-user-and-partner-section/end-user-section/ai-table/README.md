@@ -10,6 +10,8 @@ Com AI Table, você revisa posições extraídas, corrige colunas e salva instru
 * [Explicar a extração e diagnosticar](explain-extraction.md)
 * [Assistente e permissões](assistant-and-permissions.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Ilustração isométrica de um leitor de tabelas: uma cabeça de leitura com um cartucho de instruções varre a tabela de um documento, um painel de conexões liga cada coluna retornada a uma coluna configurada, e as colunas configuradas ficam como compartimentos, cada um com um botão Use AI de três posições."><figcaption><p>A IA lê a tabela e retorna colunas. Cada coluna retornada é mapeada para uma coluna de tabela configurada (uma coluna retornada sem mapeamento permanece oculta), cada coluna configurada tem a sua própria configuração Use AI (Padrão, Sim ou Não), e as instruções de IA e <strong>Salvar como treinamento</strong> definem como os próximos documentos do layout do fornecedor são lidos.</p></figcaption></figure>
+
 ## Quando você obtém a tabela de IA
 
 * Um administrador ativou a **Extração de tabela de IA** (Configurações → Processamento de documentos → Tipos de documentos → Classificação e Extração, veja [Configurações para administradores](#configuracoes-para-administradores)). Se ela estiver desativada, a área da tabela mostra *A tabela AI será exibida aqui. Habilite em*.

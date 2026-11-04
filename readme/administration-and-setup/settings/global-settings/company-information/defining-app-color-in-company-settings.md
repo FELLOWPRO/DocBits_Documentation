@@ -4,26 +4,25 @@
 
 La configuración de **Color de la Aplicación** permite a los administradores definir el esquema de color de la interfaz de la aplicación. Esta función es particularmente útil para distinguir entre diferentes entornos como pruebas, sandbox y producción. Al asignar colores distintos a cada entorno, los usuarios pueden identificar fácilmente en qué entorno están trabajando, reduciendo el riesgo de realizar acciones críticas en el entorno equivocado.
 
-<figure><img src="../../../../.gitbook/assets/AppColor.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/app-color-section-es.png" alt="Sección Color de la aplicación en la configuración de la empresa con el campo Color y los botones Restablecer y Guardar"><figcaption><p>Color de la aplicación en Ajustes → Configuración de la empresa</p></figcaption></figure>
 
 ## Acceder a la Configuración de Color de la Aplicación
 
 1. **Navegar a la Configuración de la Empresa**:
-   * Desde el menú principal, haga clic en la sección **Información de la Empresa**.
+   * Ve a **Ajustes** → **Configuración de la empresa**.
 2. **Localizar la Sección de Color de la Aplicación**:
-   * Desplácese hacia abajo hasta la sección **Color de la Aplicación** dentro de la configuración de Información de la Empresa.
+   * Despliega la sección **Color de la aplicación** (*Personalice los colores y la marca de la aplicación para diferentes entornos*).
 
 ## Establecer el Color de la Aplicación
 
 1. **Elegir un Color**:
-   * Haga clic en el cuadro de color o ingrese un código hexadecimal directamente en el campo de texto.
-   * Aparecerá un selector de color, permitiéndole seleccionar el color deseado.
-   * Puede ingresar un código hexadecimal específico si tiene un color predeterminado para el entorno.
+   * Haz clic en el icono del cuentagotas a la derecha del campo **Color**. Se abre el selector de color.
+   * Elige el color que quieras. El campo **Color** muestra el valor hexadecimal del color seleccionado.
 2. **Guardar el Color**:
    * Una vez que haya seleccionado el color, haga clic en el botón **Guardar** para aplicar el cambio.
-   * La interfaz de la aplicación se actualizará inmediatamente para reflejar el nuevo color.
+   * La interfaz de la aplicación se actualiza al nuevo color de inmediato.
 3. **Restablecer a Predeterminado**:
-   * Si desea volver al color predeterminado, haga clic en el botón **Restablecer**.
+   * Haz clic en **Restablecer** para volver al color predeterminado, **#2388AE**. El valor predeterminado se guarda de inmediato, no hace falta nada más.
 
 ## Mejores Prácticas para Colores de Entorno
 
@@ -33,9 +32,9 @@ Para evitar confusiones, se recomienda establecer un esquema de color estándar 
 * **Pruebas**: Use un color brillante o de alerta, como **#ffcc00** (amarillo) o **#ffa500** (naranja), para indicar un entorno de pruebas.
 * **Sandbox**: Use un color distinto, como **#007bff** (azul) o **#6c757d** (gris), para indicar un entorno de sandbox o desarrollo.
 
-## Aviso del Plan de Suscripción
+## Suscripción
 
-Debajo de la sección de Color de la Aplicación, los administradores también verán información relacionada con el **Plan de Suscripción**. Esto incluye el plan actual, su estado y los días restantes de suscripción.
+Los datos de la suscripción están en una página propia dentro de los ajustes; no forman parte de esta sección.
 
 ## Importancia del Color de la Aplicación
 

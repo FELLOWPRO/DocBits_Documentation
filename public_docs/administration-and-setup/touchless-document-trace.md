@@ -4,7 +4,7 @@ Introduzca un ID de documento en **Document ID**, o abra un documento de muestra
 
 La cabecera muestra el archivo, su estado (por ejemplo **En proceso**), la ejecución que está consultando y su primer bloqueador, además de un botón **Documento** con el ID del documento.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-pipeline-es.png" alt="La página Seguimiento del documento con la cabecera del archivo, la Ruta de la tubería de 14 etapas y el comienzo del registro de etapas"><figcaption><p>El seguimiento del documento: la ruta de la tubería con todas las etapas y el registro de etapas con lo que cada una registró.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-overview-es.png" alt="Dev NOVA: recorrido y valores registrados en la primera ejecución de prueba"><figcaption><p>Nueva captura de Dev NOVA 11.0.3, del 4 de noviembre de 2026. La factura ficticia se detiene en la validación de campos. Clasificación, búsqueda de proveedor y extracción de cabecera y tabla contienen valores realmente registrados. Las tarjetas muestran el documento y su historial. Es la interfaz del producto en funcionamiento. En esta versión, el recorrido conserva los nombres de etapa en inglés y la tarjeta usa correos para el pedido; aquí se refiere al pedido de compra.</p></figcaption></figure>
 
 La **Ruta de la tubería** muestra 14 etapas: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Cada etapa lleva un solo estado:
 
@@ -12,7 +12,7 @@ La **Ruta de la tubería** muestra 14 etapas: Intake, Classification, E-Document
 | --- | --- |
 | **Aprobado** (verde) | La etapa se ejecutó sin problemas |
 | **Me detuve aquí** (naranja) | La etapa bloqueó el documento |
-| **A continuación** | El documento nunca llegó tan lejos |
+| **No alcanzado** | Paso posterior al primer bloqueo en el recorrido; compruebe en el registro si hay ejecuciones adicionales registradas |
 | **No se registró nada** (discontinuo) | No se registraron datos para esta etapa |
 | **No aplicable** | La etapa no se aplica a este documento |
 
@@ -26,13 +26,29 @@ El **registro de etapas** bajo la ruta enumera las mismas etapas con lo que cada
 * Un valor que ninguna etapa registró se muestra como **No registrado**, nunca como un valor inventado. Los valores son números y términos fijos, nunca texto del documento.
 * **Mostrar diagnósticos sin procesar** activa los datos en bruto cuando el soporte los solicita.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace-stage-log-es.png" alt="Registro de etapas en español con validación de campos bloqueada. Los valores no registrados permanecen como tales: el bloqueo no demuestra por sí solo un error de extracción ni datos incorrectos de Infor."><figcaption><p>Registro de etapas en español con validación de campos bloqueada. Los valores no registrados permanecen como tales: el bloqueo no demuestra por sí solo un error de extracción ni datos incorrectos de Infor.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-nova-trace-stage-log-es.png" alt="Dev NOVA: registro con confianza, valores de extracción y validación bloqueada"><figcaption><p>Primera ejecución real: confianza de clasificación del 100 %, 0 proveedores candidatos, 1 fila y 7 brechas de asignación. Un paso aprobado confirma su ejecución, no la identificación del proveedor ni la exactitud de todos los valores. La validación indica un campo obligatorio ausente.</p></figcaption></figure>
 
 ### Ejecuciones y cambios
 
-El selector de ejecución en la parte superior del registro de etapas (**Ejecutar 1 · Actual**) cambia entre las ejecuciones del documento. El **historial de ejecuciones** a la derecha enumera cada ejecución con su resultado y el punto en el que se detuvo. Cuando un documento se ha ejecutado más de una vez, elija una ejecución en el selector para compararla con la actual: los valores modificados llevan entonces una insignia con la diferencia y su unidad, por ejemplo **−2 campos** o **+3 %**.
+El selector permite elegir un intento; el historial muestra su resultado y primer bloqueo. Las diferencias registradas comparan la ejecución seleccionada con su predecesora, no automáticamente con la actual. Cada diferencia incluye su unidad; los valores idénticos permanecen sin cambios.
 
-La tarjeta **Documento** junto al registro de etapas indica el tipo de documento, el proveedor, el número de factura, la orden de compra, el número de páginas y si el análisis se basa en **reglas** o lo escribió una IA.
+La tarjeta Documento muestra tipo, proveedor, número de factura, pedido, páginas y método de análisis registrado. Aquí Manual corresponde al tipo indicado durante la importación de prueba. El 100 % no demuestra de forma independiente la precisión de una clasificación automática.
+
+### Interpretar los detalles de proveedor y tabla
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-supplier-es.png" alt="Dev NOVA: identificadores encontrados, búsqueda en datos maestros y asignación del proveedor"><figcaption><p>Se encuentra el nombre en la factura y se busca en los datos maestros, pero no se asigna ningún proveedor. Esta factura no contiene NIF-IVA, IBAN, correo electrónico ni GLN. No encontrar una coincidencia en los datos maestros es distinto de no encontrar un valor en la factura.</p></figcaption></figure>
+
+Compruebe por separado si el identificador estaba en el documento, si se buscó y si se asignó un proveedor. Un paso verde no responde por sí solo a estas tres preguntas.
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-table-es.png" alt="Dev NOVA: detalle de la primera ejecución con siete brechas de asignación"><figcaption><p>El detalle indica 7 brechas de asignación para 1 tabla y 1 fila. Compruebe la asignación de columnas antes de concluir que falló la extracción. El pie de comparación no es una base válida para la primera ejecución seleccionada, que no tiene predecesora.</p></figcaption></figure>
+
+### Reconocer un reinicio real
+
+<figure><img src="../.gitbook/assets/touchless-nova-trace-runs-es.png" alt="Dev NOVA: comparación de dos ejecuciones reales sin cambios en los valores registrados"><figcaption><p>La misma factura tras un reinicio manual real, sin corregir campos. Una nueva ejecución acredita otro intento, no una mejora. Los valores idénticos se muestran sin cambios; no se han inventado diferencias.</p></figcaption></figure>
+
+Un reinicio manual es una intervención humana. Solo si el documento termina correctamente más adelante contará como AP Assisted. Mientras siga en proceso, queda fuera del denominador de documentos finalizados.
+
+Límites de la evidencia. Este caso no demuestra aprobación de negocio, exportación correcta ni confirmación del ERP. El comparador de pedidos heredado no aporta aquí una ruta de decisión registrada; no acredita un cotejo con Infor. En NOVA 11.0.3, el registro puede mostrar una búsqueda de pedido aprobada tras la validación bloqueada mientras el recorrido la presenta como siguiente paso. Compruebe ambas vistas. El resumen también indica que el número de factura no está registrado aunque sí aparece en la extracción; compare el original con los campos extraídos.
 
 ## Separar extracción y datos de origen
 
@@ -68,3 +84,5 @@ Las capturas de pantalla de esta página muestran la interfaz en español.
 <!-- Touchless documentation alignment 2026-11-04: extraction quality is distinct from process automation. KPI definition checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4; existing native screenshots and video sources preserved except unsafe historical list images. -->
 
 <!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->
+
+Las cinco nuevas capturas muestran la interfaz localizada de Dev NOVA 11.0.3 y la misma factura de prueba creada para la documentación. Cualquier imagen separada del original y sus campos solo ilustra esa comparación.

@@ -2,7 +2,7 @@
 
 使用实际提供的 DocBits MCP 工具，区分读取与写入。核实组织、角色、类型、期间和日期，不编造证据。
 
-<figure><img src="../../../.gitbook/assets/site-complete-touchless-owned-po-price-zh.png" alt="真实中文 Dev 视图，虚构订单为 10 × 9 = 90。这是用于 MCP 诊断的源值比较，不是 MCP 客户端截图，也不证明提取或处理成功。"><figcaption><p>真实中文 Dev 视图，虚构订单为 10 × 9 = 90。这是用于 MCP 诊断的源值比较，不是 MCP 客户端截图，也不证明提取或处理成功。</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/touchless-owned-po-price-zh.png" alt="真实中文 Dev 视图，虚构订单为 10 × 9 = 90。这是用于 MCP 诊断的源值比较，不是 MCP 客户端截图，也不证明提取或处理成功。"><figcaption><p>真实中文 Dev 视图，虚构订单为 10 × 9 = 90。这是用于 MCP 诊断的源值比较，不是 MCP 客户端截图，也不证明提取或处理成功。</p></figcaption></figure>
 
 ## 通过 MCP 解释 Touchless
 

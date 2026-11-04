@@ -70,6 +70,10 @@ Wenn der Organisationsschalter eingeschaltet ist, erscheint darunter **Das forde
 
 Ohne verwertbare Kopffeldkonfiguration kann kein strukturiertes Gesamtschema entstehen; ein eingeschalteter Schalter allein belegt daher keinen Schemaeinsatz. Prüfen Sie den konkreten Lauf über **Extraktion erklären** und die verfügbaren Dokumentprotokolle. [KI-Tabelle](README.md) erläutert diese Ansichten und ihre Zugriffsrechte.
 
+Im gezeigten Konfigurationsbeispiel gehören `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` und `PROJECT_CODE` zu den angeforderten Spalten von INVOICE_TABLE. Die eigene Projektspalte steht ausdrücklich auf **Ja**, wie in Schritt 2 des folgenden Beispiels. Die Vorschau enthält weitere konfigurierte Rechnungsspalten; Ihre Auswahl und Anzahl können daher abweichen. **12** ist die Zahl der angeforderten Spalten dieser Tabelle, nicht die Zeilenzahl oder die gesamte Eigenschaftenzahl des Schemas. Dies ist eine Konfigurationsvorschau, kein Extraktionsergebnis.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-de-20261104.png" alt="Ausschnitt der Schema-Vorschau für Rechnung bei aktiviertem Structured Output. INVOICE_TABLE fordert 12 Spalten an, darunter PROJECT_CODE mit Use AI auf Ja. Weitere konfigurierte Tabellen und der Eigenschaftenzähler liegen außerhalb dieses Ausschnitts."><figcaption><p>Ausschnitt der Schema-Vorschau für Rechnung bei aktiviertem Structured Output. INVOICE_TABLE fordert 12 Spalten an, darunter PROJECT_CODE mit Use AI auf Ja. Weitere konfigurierte Tabellen und der Eigenschaftenzähler liegen außerhalb dieses Ausschnitts.</p></figcaption></figure>
+
 ## 5. Beispiel: Rechnung mit zwei Artikelnummern und Projekt
 
 Das folgende Beispiel ist synthetisch und beschreibt ein Prüfziel, keinen ausgeführten Extraktionslauf. Auf dem Beleg stehen zwei Positionen:

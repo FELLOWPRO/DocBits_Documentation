@@ -14,7 +14,7 @@ The Settings Assistant answers questions from this documentation. For that, ever
 
 **What happens when you change a docs page**
 
-1. A change is merged: English in `docbits/` on `main`, every other language in `readme/` on its language branch (`de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `zh`).
+1. A change is merged into `public_docs/`: English on `main`, every other language on its language branch (`de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `zh`).
 2. The GitHub Action **Docs Search Sync** (`.github/workflows/docs-search-sync.yml`) sends changed pages to the fulltextsearch service (`/docs/ingest`). It runs on every push to `main` and `de`, and every night for all languages, reading each language from its branch.
 3. fulltextsearch cuts the page into sections by heading, skips sections whose text did not change, and asks the DigitalOcean serverless embedding model (bge-m3) for the vectors.
 4. Text and vector are stored in **one OpenSearch index per language**: `docbits-docs-{env}-{lang}`. Languages never mix.

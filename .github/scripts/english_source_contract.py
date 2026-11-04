@@ -54,28 +54,11 @@ def _directory(value: object) -> str:
 
 
 def _english_directory(repo: Path, commit: str) -> str:
-    default = _configuration(repo, commit, ".gitbook.yaml")
-    spaces = _configuration(repo, commit, "gitbook-docs.yaml")
-    structure = spaces.get("site", {}).get("structure", [])
-    if not isinstance(structure, list):
-        raise ValueError("English space structure must be a list")
-    english = [
-        item["content"]
-        for item in structure
-        if isinstance(item, dict)
-        and isinstance(item.get("content"), dict)
-        and item["content"].get("language") == "en"
-    ]
-    if len(english) != 1:
-        raise ValueError("Expected exactly one English GitBook space")
-    active = _directory(english[0].get("directory"))
-    root = _directory(default.get("root", "./"))
-    if root != active:
-        raise ValueError(
-            f"Default Git Sync root {root!r} differs from active English "
-            f"directory {active!r}; align .gitbook.yaml with gitbook-docs.yaml"
-        )
-    return active
+    """English content root: the `root:` GitBook reads from main's .gitbook.yaml."""
+    root = _directory(_configuration(repo, commit, ".gitbook.yaml").get("root"))
+    if not root:
+        raise ValueError("English directory root must name a folder, not the repository root")
+    return root
 
 
 def _object(repo: Path, commit: str, path: str) -> bytes | None:

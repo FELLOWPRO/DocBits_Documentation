@@ -11,6 +11,8 @@ Mit AI Table prüfen Sie extrahierte Positionen, korrigieren Spalten und speiche
 * [Assistent und Berechtigungen](assistant-and-permissions.md)
 * [Videos](videos.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Isometrische Darstellung eines Tabellenlesers: Ein Lesekopf mit einer Anweisungskassette tastet eine Dokumenttabelle ab, ein Patchfeld steckt jede zurückgegebene Spalte in eine konfigurierte Spalte, und die konfigurierten Spalten stehen als Behälter mit je einem Drehschalter für Use AI mit drei Stellungen da."><figcaption><p>Die KI liest die Tabelle und liefert Spalten zurück. Jede zurückgegebene Spalte wird einer konfigurierten Tabellenspalte zugeordnet (eine zurückgegebene Spalte ohne Zuordnung bleibt ausgeblendet), jede konfigurierte Spalte hat ihre eigene Use-AI-Einstellung (Standard, Ja oder Nein), und die KI-Anweisungen sowie <strong>Als Training speichern</strong> bestimmen, wie die nächsten Dokumente desselben Lieferantenlayouts gelesen werden.</p></figcaption></figure>
+
 ## Wann Sie die KI-Tabelle erhalten
 
 * Ein Administrator hat **AI-Tabellen-Extraktion** eingeschaltet (Einstellungen → Dokumentenverarbeitung → Klassifizierung und Extraktion, siehe [Einstellungen für Administratoren](#einstellungen-fur-administratoren)). Ist sie ausgeschaltet, zeigt der Tabellenbereich *Hier wird die KI-Tabelle angezeigt. Aktivieren in …*.

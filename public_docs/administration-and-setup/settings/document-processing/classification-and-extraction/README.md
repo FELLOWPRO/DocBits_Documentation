@@ -64,6 +64,8 @@ When **Split by Barcode/QR-Code** is selected, two more fields appear:
 
 After a successful split, the parent document is deleted and the pages continue as separate documents that share the same batch.
 
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Isometric illustration of eight sheets in a tray with a scanner reading a barcode on sheet 6. Dividers stand in front of sheets 3 and 6, splitting the sheets into three documents, and one rubber band runs round the whole tray."><figcaption><p>Example with the pattern <code>^INV\d{6}$</code>: the codes on sheets 3 and 6 match and each starts a new document, the code on sheet 4 does not match and splits nothing, and the rubber band stands for the batch the resulting documents share.</p></figcaption></figure>
+
 ### Document Processing
 
 **Pages to process** limits how many pages are OCRed, classified and extracted per document.

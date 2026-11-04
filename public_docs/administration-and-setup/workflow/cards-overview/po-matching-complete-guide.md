@@ -38,6 +38,8 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
+<figure><img src="../../../.gitbook/assets/anatomy-po-matching.svg" alt="Isometric beam balance: the left pan holds the PO unit price of 100, the right pan holds the invoice unit price of 103 (100 plus a small extra weight). The beam tilts and its pointer stands inside the green band that marks the 5% tolerance." width="768"><figcaption><p>The PO price (€100) sits on the left pan and the invoice price (€103) on the right. The €3 difference is 3% of the PO price, so the pointer stays inside the green ±5% tolerance band and the check passes. Beyond ±5% (red) the invoice needs review.</p></figcaption></figure>
+
 ***
 
 ## 1. Purchase Order Full Match

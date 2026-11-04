@@ -11,6 +11,8 @@ Use AI Table to review extracted line items, correct columns and save suitable i
 * [Assistant and permissions](assistant-and-permissions.md)
 * [Videos](videos.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="Isometric illustration of a table reader: a reader head with an instructions cartridge scans a document table, a patch panel plugs each returned column into a configured column, and the configured columns stand as bins with a three-position Use AI knob each."><figcaption><p>The AI reads the table and returns columns. Each returned column is mapped to a configured table column (a returned column without a mapping stays hidden), each configured column has its own Use AI setting (Default, Yes or No), and the AI instructions and <strong>Save as training</strong> shape how the next documents of the supplier layout are read.</p></figcaption></figure>
+
 ## When you get the AI table
 
 * An admin has switched on **AI Table extraction** (Settings → Document Processing → Classification and Extraction, see [Settings for admins](./#settings-for-admins)). If it is off, the table area shows _AI Table will display here. Enable in …_.

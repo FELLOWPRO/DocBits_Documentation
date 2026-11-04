@@ -4,6 +4,8 @@
 
 Touchless Intelligence answers two separate questions: **Did DocBits extract the invoice correctly?** And: **Did the whole process finish without a processing intervention?** Correct extraction can still need rework when Infor data differs. AP means the human Accounts Payable team.
 
+<figure><img src="../../../.gitbook/assets/anatomy-touchless.svg" alt="Isometric sorting line: a conveyor with 14 gates, a pusher that diverts one document into a review tray, an export bin with a stack of documents and a dial reading 78.9 percent"><figcaption><p>Touchless as a sorting line, with the illustrative numbers from the example calculation: the 14 gates are the stages of the Pipeline Path, sheets still on the belt are in progress and not counted, a document that stops at a gate is pushed into the review tray with the AP assisted (30) and process exception (10) documents, and the pure (120) and approval-only (30) documents in the export bin give the dial's 150 of 190, or 78.9 %, past the 70 % target mark.</p></figcaption></figure>
+
 ## Find the right guide
 
 | Guide | What it covers |

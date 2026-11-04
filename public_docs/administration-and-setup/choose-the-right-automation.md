@@ -24,6 +24,8 @@ DocBits gives you several ways to change, check and route documents: **Transform
 
 Every document passes through the same steps. Each tool has its own place in that flow, and that place decides what it can see and what it can still change.
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Isometric railway yard: a document wagon passes Transformation Rules, Purchase Order Matching Rules, Transformation Rules again and Custom Validation Rules, then a Ready for validation signal, then Standard Workflow, Advanced Workflow and a Workflow SDK card"><figcaption>A document wagon runs left to right through 1 Transformation Rules, 2 Purchase Order Matching Rules (Transformation Rules run again after the match) and 3 Custom Validation Rules; only after the lit Ready for validation signal can a workflow start, either 4 Standard Workflow, 5 Advanced Workflow (the branching siding) or 6 a Workflow SDK card, while Scripts (&#x3C;/>) hook in at trigger points along the way before the signal.</figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-flow.svg" alt="Where Transformation Rules, PO Matching Rules, Custom Validation Rules, Scripts and Workflows run in the document flow"><figcaption></figcaption></figure>
 
 In words:

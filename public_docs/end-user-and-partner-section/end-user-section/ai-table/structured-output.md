@@ -70,6 +70,10 @@ Het voorbeeld bevat geen leverancierstraining of AI-tags. Extra instructies kunn
 
 Zonder bruikbare kopveldconfiguratie kan geen volledig schema worden opgebouwd. Een ingeschakelde schakelaar bewijst het gebruik dus niet. Controleer de echte verwerking via **Extractie uitleggen** en de beschikbare documentlogboeken; [AI-tabel](README.md) beschrijft deze weergaven en toegangsrechten.
 
+In dit configuratievoorbeeld horen `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` en `PROJECT_CODE` bij de aangevraagde kolommen van INVOICE_TABLE. De eigen projectkolom staat uitdrukkelijk op **Ja**, zoals in stap 2 van het volgende voorbeeld. De voorvertoning bevat ook andere geconfigureerde factuurkolommen; uw selectie en aantal kunnen daarom afwijken. **12** is het aantal aangevraagde kolommen in deze tabel, niet het aantal rijen of het totale aantal schema-eigenschappen. Dit is een configuratievoorbeeld, geen extractieresultaat.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-nl-20261104.png" alt="Uitsnede van het schemavoorbeeld voor Factuur met Structured Output ingeschakeld. INVOICE_TABLE vraagt 12 kolommen aan, waaronder PROJECT_CODE met Gebruik AI op Ja. Andere geconfigureerde tabellen en de eigenschappenteller vallen buiten deze uitsnede."><figcaption><p>Uitsnede van het schemavoorbeeld voor Factuur met Structured Output ingeschakeld. INVOICE_TABLE vraagt 12 kolommen aan, waaronder PROJECT_CODE met Gebruik AI op Ja. Andere geconfigureerde tabellen en de eigenschappenteller vallen buiten deze uitsnede.</p></figcaption></figure>
+
 ## 5. Voorbeeld: factuur met twee nummers en een project
 
 Dit synthetische voorbeeld beschrijft een te controleren resultaat, geen uitgevoerde extractie.

@@ -8,11 +8,13 @@ Sekcja **Zamówienie wysyłki PO** zawiera szczegółowe informacje dotyczące s
 
 Aby aktywować tę funkcję:
 
-1. Przejdź do **Ustawienia** → **Przetwarzanie dokumentów** → **Moduł**.
-2. Wybierz **Zamówienie zakupu**.
+1. Przejdź do **Ustawienia** → **Moduł**.
+2. Otwórz sekcję **Zamówienie zakupu** (*Dopasowanie i walidacja zamówień*).
 3.  Włącz opcję **Zamówienie wysyłki PO**.
 
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2ZdK2XuCIjc4Hz3W0s5H%252FPO-Shipment-Order-Setting.jpg%3Falt%3Dmedia%26token%3Dbe657223-f04e-4326-a284-bb29bae148e0&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=97986166&#x26;sv=2" alt="" width="563"></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/po-shipment-order-module-setting-pl.png" alt="Sekcja Zamówienie zakupu w Ustawienia → Moduł z przełącznikiem Zamówienie wysyłki PO" width="563"><figcaption><p>Ustawienia → Moduł → Zamówienie zakupu</p></figcaption></figure></div>
+
+Ta sama sekcja zawiera jeszcze dwa przełączniki: **Panel PO** dodaje do nawigacji panel zamówień zakupu, a **Panel zamówień wysyłkowych** dodaje panel zamówień wysyłkowych, który wyświetla przychodzące dostawy dla każdej pozycji zamówienia zakupu.
 
 ## **Gdzie się pojawia**
 

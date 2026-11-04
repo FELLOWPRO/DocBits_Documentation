@@ -83,24 +83,7 @@ Das folgende Beispiel beschreibt einen möglichen Verlauf, nicht die einzelnen L
 
 Wählen Sie die Läufe nacheinander und vergleichen Sie **ersten Blocker**, aufgezeichnete Details und Laufresultat. Prüfen Sie danach das **Dokumentergebnis**. Ein später bestandener Schritt löscht weder den früheren Blocker noch die menschliche Bearbeitung. **Nicht erfasst** bedeutet fehlender Nachweis, nicht bestanden.
 
-## Beispiel: Original, Auslesung und Verlauf mit MCP vergleichen
-
-> Prüfe diese Rechnung, ohne sie zu ändern. Vergleiche Original, aktuelle Kopffelder und Tabellen. Erkläre den ersten belegten Blocker und die bisherigen Läufe. Sage ausdrücklich, wenn die ursprüngliche Auslesung vor einem Eingriff nicht mehr belegt ist.
-
-| Aufruf | Was er liefert | Was er allein nicht beweist |
-| --- | --- | --- |
-| `get_extracted_fields` mit `doc_id` | Aktuelle Kopffelder, Werte und Konfidenzen | Historische Werte vor einer Korrektur oder vollständige Richtigkeit |
-| `get_extracted_tables` mit `doc_id` | Vorhandene Tabellen, Zeilen und Werte | Übereinstimmung mit dem Original oder mit der Bestellung |
-| `touchless_get_document_trace` mit `doc_id` | Ergebnis, Eingriffe, Läufe und aufgezeichnete Stufen | Nicht aufgezeichnete Arbeit in Infor |
-| `touchless_explain_pipeline` mit `doc_id` | Erklärung des belegten Verarbeitungspfads | Automatisch bewiesene Grundursache bei fehlender Evidenz |
-
-**Tatsächlich beobachteter Gegencheck:** Bei einer neuen Testrechnung meldete die Stufe `header_extraction` den Status `passed`, zugleich aber `extracted_field_count: 0`. `get_extracted_fields` lieferte acht leere Pflichtfelder; `get_extracted_tables` meldete keine Tabelle. Die Pflichtfeldprüfung blockierte mit `REQUIRED_FIELD_MISSING`. Ein Assistent muss hier fehlende Auslesewerte erklären und die Extraktionskonfiguration prüfen. Er darf aus dem grünen Stufenstatus keine richtige Auslesung und aus den abweichenden Bestellwerten noch keinen belegten Preisblocker ableiten.
-
-### Zählt eine MCP-Aktion als AP-Eingriff?
-
-Lesen und Erklären ändern die Rechnung nicht. Ein MCP-Zugang kann aber auch schreibende Werkzeuge bereitstellen. Korrekturen, manuelle Validierung und Neustarts sind deshalb gesondert zu beurteilen. Maßgeblich sind die tatsächlich aufgezeichnete Aktion und ihre Zuordnung zu einem Menschen oder Systemkonto. Ein API-Schlüssel kann als Systemkonto auftreten; „über MCP ausgeführt“ bedeutet allein weder menschlicher Eingriff noch Pure Touchless.
-
-Prüfen Sie anschließend im Dokumentverlauf `human_touched`, `human_touch_source`, `human_restart_count`, `business_approval_touched`, den finalen Status und die Laufhistorie. Verwenden Sie keinen Systemzugang, um menschliche Nacharbeit bei der Kennzahl auszublenden. Eine reine fachliche Freigabe ist von einer gespeicherten Korrektur oder einem manuellen Neustart zu unterscheiden.
+Die zugehörigen MCP-Aufrufe und die Einordnung menschlicher Aktionen sind unter [Touchless mit MCP](touchless-mcp.md) beschrieben.
 
 ## Weiterführende Seiten
 

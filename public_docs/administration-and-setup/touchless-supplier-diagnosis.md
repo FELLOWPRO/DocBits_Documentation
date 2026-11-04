@@ -89,19 +89,7 @@ Ist der erste Blocker eines Clusters ein Grund aus dem Bestellabgleich (zum Beis
 
 Die Cluster-Aufnahme zeigt beobachtete Blocker und unbestätigte Ursachen. Erst die Dokumentnachweise machen daraus eine bestätigte Diagnose; die angezeigten Potenziale sind noch keine erreichten Verbesserungen.
 
-## Lieferanten über MCP priorisieren und Verbesserungen ableiten
-
-> Welche Lieferanten verlieren im letzten Monat die meisten Touchless-Rechnungen? Prüfe zuerst die größten belegten Ursachen. Trenne Auslesefehler, abweichende Quelldaten und Prozessregeln. Schlage je Ursache eine Maßnahme und einen prüfbaren Erfolgsnachweis vor; ändere noch nichts.
-
-1. Rufen Sie `touchless_rank_supplier_opportunities` mit `period: "30d"`, `doc_type: "INVOICE"`, `order_by_field: "lost_docs"` und `order_by_direction: "desc"` auf. Mit `search` suchen Sie gezielt nach Lieferantennummer oder Name. `limit` und `offset` steuern die Ergebnis-Seiten.
-2. Übernehmen Sie den zurückgegebenen `supplier_key` unverändert in `touchless_diagnose_supplier`. Verwenden Sie für die aktuelle Lage `window: 30`; prüfen Sie mit 90 Tagen, ob die Ursache dauerhaft vorkommt.
-3. Öffnen Sie ein tatsächlich geliefertes `issue_signature` mit `touchless_get_issue_cluster`. Kontrollieren Sie Beispieldokumente und die fehlende Evidenz. Verwenden Sie keine frei erfundene Signatur.
-4. Lassen Sie mit `touchless_get_recommendations` die bestätigte Ursache und eine passende Maßnahme erklären. Ein erwarteter Zuwachs bleibt eine Schätzung. Überlappende Cluster dürfen Sie nicht einfach addieren.
-5. Prüfen Sie nach der Behebung neue, vergleichbare Rechnungen und die [Änderungsmessung](touchless-change-proposals.md). Bereits manuell bearbeitete Rechnungen werden dadurch nicht rückwirkend Pure Touchless.
-
-**Beispiel für die Entscheidung:** Sind Preis und Menge richtig ausgelesen, aber die importierten Bestellungen veraltet, lautet die Maßnahme „Bestellimport und Quellwerte korrigieren“. Sind Beträge bereits gegenüber dem Original falsch, prüfen Sie stattdessen Extraktion und Konfiguration. Ist nur eine fachliche Freigabe vorgeschrieben, ist das kein Auslesefehler und bei erfolgreichem Abschluss weiterhin AP Touchless.
-
-Eine leere Rangliste ist kein Beweis, dass es keine Probleme gibt. Im Dev-Test mit drei noch laufenden Rechnungen war die Rangliste leer; daraus war noch keine abgeschlossene Lieferantenquote berechenbar. Prüfen Sie Datenstand, Filter, Lieferantenzuordnung und genügend abgeschlossene Dokumente.
+Die zugehörigen MCP-Aufrufe und die Einordnung menschlicher Aktionen sind unter [Touchless mit MCP](touchless-mcp.md) beschrieben.
 
 ## Weiterführende Seiten
 

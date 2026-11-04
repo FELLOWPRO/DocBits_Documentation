@@ -846,10 +846,14 @@
 * [Berichtsseite](administration-and-setup/report-page.md)
 * [Analyse-Dashboard](administration-and-setup/analytics-dashboard.md)
   * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
+    * [Kennzahlen und Berechnung](administration-and-setup/touchless-metrics.md)
+    * [Dashboard bedienen](administration-and-setup/touchless-dashboard.md)
+    * [Praxisbeispiele: Preis und Menge](administration-and-setup/touchless-examples.md)
     * [Lieferantendiagnose und Fehlermuster](administration-and-setup/touchless-supplier-diagnosis.md)
     * [Touchless Intelligence: Bestellabgleich-Diagnose](administration-and-setup/touchless-po-matching-diagnosis.md)
     * [Dokumentverlauf](administration-and-setup/touchless-document-trace.md)
     * [Änderungsvorschläge und Berichte](administration-and-setup/touchless-change-proposals.md)
+    * [Touchless mit MCP erklären und verbessern](administration-and-setup/touchless-mcp.md)
 
 ## Infor Integration und Konfiguration <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

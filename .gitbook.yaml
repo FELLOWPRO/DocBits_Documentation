@@ -1,4 +1,4 @@
-root: ./readme/
+root: ./public_docs/
 
 redirects:
     administration-and-setup/settings/global-settings/document-expiry: administration-and-setup/settings/document-processing/documents-expiry.md

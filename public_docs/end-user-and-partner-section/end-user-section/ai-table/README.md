@@ -11,6 +11,8 @@
 * [助手与权限](assistant-and-permissions.md)
 * [视频](videos.md)
 
+<figure><img src="../../../.gitbook/assets/anatomy-ai-table.svg" alt="等距示意图：表格读取器。带有指令盒的读取头扫描文档表格，接线板将返回的每一列接入已配置的列，已配置的列像料箱一样排列，每个料箱上都有一个三档的 Use AI 旋钮。"><figcaption><p>AI 读取表格并返回各列。每个返回的列会映射到一个已配置的表格列（没有映射的返回列保持隐藏），每个已配置的列都有自己的 Use AI 设置（默认、是或否），而 AI 指令和 <strong>Save as training</strong> 决定该供应商版式的后续文档如何被读取。</p></figcaption></figure>
+
 ## 何时会显示 AI 表格
 
 * 管理员已启用 **AI Table extraction**（设置 → 文档处理 → 分类和提取，参见[管理员设置](./#settings-for-admins)）。如果未启用，表格区域会显示 _AI Table will display here. Enable in …_。

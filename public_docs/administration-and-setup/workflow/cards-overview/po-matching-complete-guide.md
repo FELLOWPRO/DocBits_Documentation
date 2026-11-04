@@ -33,10 +33,12 @@
 **大图：**
 
 ```
-PO Placed     Invoice Arrives     PO Matching     Decision
-(€100)    →   (€103)          →   (Check if       → Approve/Reject
-Qty: 100      Qty: 100            within tolerance)
+已下达 PO     收到发票          PO 匹配           决定
+(€100)    →   (€103)        →   (检查是否在   → 批准/拒绝
+数量：100     数量：100          容差范围内)
 ```
+
+<figure><img src="../../../.gitbook/assets/anatomy-po-matching.svg" alt="等臂天平的等距示意图：左盘放 PO 单价 100，右盘放发票单价 103（100 加一个小砝码）。横梁略微倾斜，指针停在标示 5% 容差的绿色区域内。" width="768"><figcaption><p>PO 价格（€100）在左盘，发票价格（€103）在右盘。€3 的差额是 PO 价格的 3%，因此指针停在绿色的 ±5% 容差区域内，检查通过。超出 ±5%（红色）时，发票需要审核。</p></figcaption></figure>
 
 ***
 
@@ -69,17 +71,17 @@ Qty: 100      Qty: 100            within tolerance)
 ### 示例
 
 ```
-PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+PO：
+- 商品 ABC：数量 100，单价 €50 = €5000
+- 商品 XYZ：数量 50，单价 €20 = €1000
+- 合计：€6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+发票：
+- 商品 ABC：数量 100，单价 €50 = €5000
+- 商品 XYZ：数量 50，单价 €20 = €1000
+- 合计：€6000
 
-Result: ✅ FULL MATCH
+结果：✅ 完全匹配
 ```
 
 ***
@@ -101,28 +103,28 @@ Result: ✅ FULL MATCH
 **公式：**
 
 ```
-Variance % = |(Invoice Price - PO Price)| / PO Price × 100
+差异 % = |(发票价格 - PO 价格)| / PO 价格 × 100
 
-Check: Is Variance % ≤ Tolerance %?
+检查：差异 % ≤ 容差 %？
 ```
 
 **逐步示例：**
 
 ```
-Step 1: Get prices
-  PO Unit Price: €100.00
-  Invoice Unit Price: €103.00
+步骤 1：获取价格
+  PO 单价：€100.00
+  发票单价：€103.00
 
-Step 2: Calculate difference
-  Difference = |€103.00 - €100.00| = €3.00
+步骤 2：计算差额
+  差额 = |€103.00 - €100.00| = €3.00
 
-Step 3: Calculate percentage
-  Percentage = (€3.00 / €100.00) × 100 = 3%
+步骤 3：计算百分比
+  百分比 = (€3.00 / €100.00) × 100 = 3%
 
-Step 4: Check tolerance (5% allowed)
-  Is 3% ≤ 5%? YES ✅
+步骤 4：检查容差（允许 5%）
+  3% ≤ 5%？是 ✅
 
-Result: PASS - Within tolerance
+结果：通过 - 在容差范围内
 ```
 
 ### 现实世界的例子
@@ -130,56 +132,56 @@ Result: PASS - Within tolerance
 #### 示例 1：小幅增加（已接受）
 
 ```
-PO Price: €50.00
-Invoice Price: €51.50
-Tolerance: ±3%
+PO 价格：€50.00
+发票价格：€51.50
+容差：±3%
 
-Calculation:
-  Variance = |(€51.50 - €50.00)| / €50.00 × 100
-  Variance = €1.50 / €50.00 × 100 = 3%
+计算：
+  差异 = |(€51.50 - €50.00)| / €50.00 × 100
+  差异 = €1.50 / €50.00 × 100 = 3%
 
-Is 3% ≤ 3%? YES ✅ ACCEPT
+3% ≤ 3%？是 ✅ 接受
 ```
 
 #### 示例2：大幅度增加（拒绝）
 
 ```
-PO Price: €50.00
-Invoice Price: €55.00
-Tolerance: ±3%
+PO 价格：€50.00
+发票价格：€55.00
+容差：±3%
 
-Calculation:
-  Variance = |(€55.00 - €50.00)| / €50.00 × 100
-  Variance = €5.00 / €50.00 × 100 = 10%
+计算：
+  差异 = |(€55.00 - €50.00)| / €50.00 × 100
+  差异 = €5.00 / €50.00 × 100 = 10%
 
-Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
+10% ≤ 3%？否 ❌ 拒绝 - 需要审核
 ```
 
 #### 示例 3：折扣（也选中）
 
 ```
-PO Price: €100.00
-Invoice Price: €97.00
-Tolerance: ±5%
+PO 价格：€100.00
+发票价格：€97.00
+容差：±5%
 
-Calculation:
-  Variance = |(€97.00 - €100.00)| / €100.00 × 100
-  Variance = €3.00 / €100.00 × 100 = 3%
+计算：
+  差异 = |(€97.00 - €100.00)| / €100.00 × 100
+  差异 = €3.00 / €100.00 × 100 = 3%
 
-Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
+3% ≤ 5%？是 ✅ 接受（折扣在容差范围内）
 ```
 
 #### 示例 4：绝对值容差
 
 ```
-PO Price: €10.00
-Invoice Price: €10.50
-Tolerance: ±€1.00 (absolute, not %)
+PO 价格：€10.00
+发票价格：€10.50
+容差：±€1.00（绝对值，非 %）
 
-Calculation:
-  Variance = |€10.50 - €10.00| = €0.50
+计算：
+  差异 = |€10.50 - €10.00| = €0.50
 
-Is €0.50 ≤ €1.00? YES ✅ ACCEPT
+€0.50 ≤ €1.00？是 ✅ 接受
 ```
 
 ### 如何处理结果
@@ -216,34 +218,34 @@ Is €0.50 ≤ €1.00? YES ✅ ACCEPT
 **百分比公差：**
 
 ```
-Formula:
-  Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
+公式：
+  数量差异 % = |(发票数量 - PO 数量)| / PO 数量 × 100
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 103 units
-  Tolerance: ±5%
+示例：
+  PO 数量：100 件
+  发票数量：103 件
+  容差：±5%
 
-  Variance = |(103 - 100)| / 100 × 100
-  Variance = 3 / 100 × 100 = 3%
+  差异 = |(103 - 100)| / 100 × 100
+  差异 = 3 / 100 × 100 = 3%
 
-  Is 3% ≤ 5%? YES ✅ ACCEPT
+  3% ≤ 5%？是 ✅ 接受
 ```
 
 **绝对公差：**
 
 ```
-Formula:
-  Quantity Variance = |Invoice Qty - PO Qty|
+公式：
+  数量差异 = |发票数量 - PO 数量|
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 102 units
-  Tolerance: ±5 units
+示例：
+  PO 数量：100 件
+  发票数量：102 件
+  容差：±5 件
 
-  Variance = |102 - 100| = 2 units
+  差异 = |102 - 100| = 2 件
 
-  Is 2 units ≤ 5 units? YES ✅ ACCEPT
+  2 件 ≤ 5 件？是 ✅ 接受
 ```
 
 ### 真实场景
@@ -251,31 +253,31 @@ Example:
 #### 超额交付（超过订单数量）
 
 ```
-Ordered: 100 units
-Invoiced: 110 units
-Tolerance: ±5%
+已订购：100 件
+已开票：110 件
+容差：±5%
 
-Variance = |(110-100)|/100 × 100 = 10%
+差异 = |(110-100)|/100 × 100 = 10%
 
-Is 10% ≤ 5%? NO ❌
+10% ≤ 5%？否 ❌
 
-Decision: Contact supplier - more delivered than ordered
-Possible reason: Error by supplier, partial shipment already received
+决定：联系供应商 - 交付数量多于订购数量
+可能原因：供应商出错，或已收到部分发货
 ```
 
 #### 交货不足（少于订单）
 
 ```
-Ordered: 100 units
-Invoiced: 95 units
-Tolerance: ±5%
+已订购：100 件
+已开票：95 件
+容差：±5%
 
-Variance = |(95-100)|/100 × 100 = 5%
+差异 = |(95-100)|/100 × 100 = 5%
 
-Is 5% ≤ 5%? YES ✅
+5% ≤ 5%？是 ✅
 
-Decision: Accept - within tolerance
-Possible reason: Partial shipment, rest to follow
+决定：接受 - 在容差范围内
+可能原因：部分发货，其余稍后发出
 ```
 
 ***
@@ -289,10 +291,10 @@ Possible reason: Partial shipment, rest to follow
 ### 为什么这很重要
 
 ```
-Scenario: You ordered 100 units but received 110
-- Quantity is 10% over (bad)
-- BUT: You're only charged for 10% extra
-- Combined effect might be acceptable
+场景：您订购了 100 件，但收到 110 件
+- 数量超出 10%（不好）
+- 但是：您只需为多出的 10% 付款
+- 综合影响可能是可以接受的
 ```
 
 ### 计算
@@ -300,30 +302,30 @@ Scenario: You ordered 100 units but received 110
 **公式：**
 
 ```
-Combined Variance = Quantity Variance × Price Variance
+综合差异 = 数量差异 × 价格差异
 
-If both are within tolerance, combined is usually acceptable
+如果两者都在容差范围内，综合结果通常可以接受
 ```
 
 **示例：**
 
 ```
-PO:
-- Unit Price: €100
-- Quantity: 100
-- Total: €10,000
+PO：
+- 单价：€100
+- 数量：100
+- 合计：€10,000
 
-Invoice:
-- Unit Price: €102 (2% higher)
-- Quantity: 105 (5% higher)
-- Total: €10,710
+发票：
+- 单价：€102（高 2%）
+- 数量：105（高 5%）
+- 合计：€10,710
 
-Analysis:
-- Price variance: 2% ✅
-- Quantity variance: 5% ✅
-- Combined effect: 1.02 × 1.05 = 1.071 = 7.1% total increase
+分析：
+- 价格差异：2% ✅
+- 数量差异：5% ✅
+- 综合影响：1.02 × 1.05 = 1.071 = 总计增加 7.1%
 
-Is combined variance acceptable? Usually YES ✅
+综合差异是否可接受？通常是 ✅
 ```
 
 ***
@@ -339,32 +341,32 @@ Is combined variance acceptable? Usually YES ✅
 **精确匹配（最简单）：**
 
 ```
-PO Item ID: ABC-123
-Invoice Item ID: ABC-123
-Result: ✅ MATCH
+PO 商品 ID：ABC-123
+发票商品 ID：ABC-123
+结果：✅ 匹配
 ```
 
 **供应商货品编号（较常见）：**
 
 ```
-PO Item: ABC-123 (Our internal code)
-Supplier Item: SUPP-456 (Their code for same item)
-System matches these as same item
-Result: ✅ MATCH
+PO 商品：ABC-123（我方内部编码）
+供应商商品：SUPP-456（供应商对同一商品的编码）
+系统将两者识别为同一商品
+结果：✅ 匹配
 ```
 
 ### 场景：如果不匹配怎么办？
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+PO 商品：ABC-123（铜线，2mm）
+发票商品：ABC-124（钢线，2mm）
 
-Result: ❌ NO MATCH
+结果：❌ 不匹配
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+处理措施：
+1. 这是替代品吗？请向采购部门确认
+2. 这是错误吗？请联系供应商
+3. 描述是否相似？请手动核实
 ```
 
 ***
@@ -386,11 +388,11 @@ Actions:
 ### 检查示例
 
 ```
-PO Order Type: Standard Order
-Invoice Order Type: Standard Order
-Result: ✅ MATCH
+PO 订单类型：标准订单
+发票订单类型：标准订单
+结果：✅ 匹配
 
-If mismatch: Could affect terms, payment, pricing
+如果不匹配：可能影响条款、付款和价格
 ```
 
 ***
@@ -406,39 +408,39 @@ If mismatch: Could affect terms, payment, pricing
 **延迟交货：**
 
 ```
-Formula:
-  Days Late = Invoice Delivery Date - PO Promised Date
+公式：
+  延迟天数 = 发票交货日期 - PO 承诺日期
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-22
-  Days Late = 7 days
+示例：
+  PO 承诺日期：2025-10-15
+  实际交货：2025-10-22
+  延迟天数 = 7 天
 
-If tolerance is ±3 days:
-  Is 7 ≤ 3? NO ❌ LATE
+如果容差为 ±3 天：
+  7 ≤ 3？否 ❌ 延迟
 ```
 
 **提早交付：**
 
 ```
-Formula:
-  Days Early = PO Promised Date - Invoice Delivery Date
+公式：
+  提前天数 = PO 承诺日期 - 发票交货日期
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-10
-  Days Early = 5 days
+示例：
+  PO 承诺日期：2025-10-15
+  实际交货：2025-10-10
+  提前天数 = 5 天
 
-Early delivery is usually OK ✅
-Unless you need it at specific time
+提前交货通常没有问题 ✅
+除非您需要在特定时间收货
 ```
 
 ### 公差设置
 
 ```
-±3 days: Allow 3 days late or early
-±5 days: Allow up to 5 days variance
-0 days: Must match exactly
+±3 天：允许延迟或提前 3 天
+±5 天：允许最多 5 天的差异
+0 天：必须完全一致
 ```
 
 ***
@@ -452,11 +454,11 @@ Unless you need it at specific time
 ### 常见收费
 
 ```
-- Shipping: €50
-- Handling: €10
-- Packaging: €5
-- Insurance: €15
-- Taxes: €300
+- 运费：€50
+- 手续费：€10
+- 包装费：€5
+- 保险费：€15
+- 税费：€300
 ```
 
 ### 计算
@@ -464,32 +466,32 @@ Unless you need it at specific time
 **示例：运费检查**
 
 ```
-PO Shipping: €50.00
-Invoice Shipping: €51.00
-Tolerance: ±3%
+PO 运费：€50.00
+发票运费：€51.00
+容差：±3%
 
-Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
+差异 = |€51.00 - €50.00| / €50.00 × 100 = 2%
 
-Is 2% ≤ 3%? YES ✅ ACCEPT
+2% ≤ 3%？是 ✅ 接受
 ```
 
 **示例：多次收费**
 
 ```
-PO Total Charges:
-  - Shipping: €50
-  - Taxes: €300
-  - Handling: €10
-  Total: €360
+PO 费用合计：
+  - 运费：€50
+  - 税费：€300
+  - 手续费：€10
+  合计：€360
 
-Invoice Total Charges:
-  - Shipping: €50
-  - Taxes: €312 (11% tax)
-  - Handling: €10
-  Total: €372
+发票费用合计：
+  - 运费：€50
+  - 税费：€312（11% 税率）
+  - 手续费：€10
+  合计：€372
 
-Difference: €12
-Check if within tolerance ✅ or ❌
+差额：€12
+检查是否在容差范围内 ✅ 或 ❌
 ```
 
 ***
@@ -505,37 +507,37 @@ Check if within tolerance ✅ or ❌
 **公式：**
 
 ```
-Tax Amount = Subtotal × Tax Rate
+税额 = 小计 × 税率
 
-Example:
-  Subtotal: €1000
-  Tax Rate: 19%
-  Expected Tax: €1000 × 0.19 = €190
+示例：
+  小计：€1000
+  税率：19%
+  预期税额：€1000 × 0.19 = €190
 
-Invoice Tax: €190
-Match? YES ✅
+发票税额：€190
+是否匹配？是 ✅
 ```
 
 **常见问题：**
 
 ```
-1. Tax rate changed (region-based)
-2. Tax applied to wrong amount (before/after discounts)
-3. Multiple tax rates (some items 7%, others 19%)
-4. Tax exempt items (0% tax)
+1. 税率变更（按地区）
+2. 税额基数错误（折扣前/折扣后）
+3. 多种税率（部分商品 7%，其他 19%）
+4. 免税商品（0% 税率）
 ```
 
 **示例：多重税率**
 
 ```
-Item A: €100 @ 19% tax = €119
-Item B: €100 @ 7% tax = €107
-Item C: €100 @ 0% tax = €100
-Total: €326
+商品 A：€100 @ 19% 税 = €119
+商品 B：€100 @ 7% 税 = €107
+商品 C：€100 @ 0% 税 = €100
+合计：€326
 
-Invoice shows €325 (€1 error)
+发票显示 €325（相差 €1）
 
-Check: Within tolerance or needs attention?
+检查：在容差范围内还是需要处理？
 ```
 
 ***
@@ -549,15 +551,15 @@ Check: Within tolerance or needs attention?
 ### 示例
 
 ```
-PO is for:
-- Facility: Berlin Plant
-- Cost Center: CC-2025
+PO 对应：
+- 工厂：柏林工厂
+- 成本中心：CC-2025
 
-Invoice should have:
-- Facility: Berlin Plant ✅
-- Cost Center: CC-2025 ✅
+发票应包含：
+- 工厂：柏林工厂 ✅
+- 成本中心：CC-2025 ✅
 
-If different facility: May need different approval
+如果工厂不同：可能需要不同的审批
 ```
 
 ***
@@ -571,21 +573,21 @@ If different facility: May need different approval
 ### 状态类型
 
 ```
-✅ ACTIVE: Approved, can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ 活跃：已批准，可以开展业务
+⚠️ 暂停：暂时被阻止
+❌ 停用：不再有业务往来
+⚠️ 有条件：仅限特定商品
 ```
 
 ### 检查示例
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
-Status when creating PO: ACTIVE
-Status when invoice arrives: INACTIVE
+供应商：ABC Corp
+数据库中的状态：活跃
+创建 PO 时的状态：活跃
+收到发票时的状态：停用
 
-Alert: Supplier status changed! Investigate why.
+提醒：供应商状态已变更！请调查原因。
 ```
 
 ***
@@ -595,46 +597,46 @@ Alert: Supplier status changed! Investigate why.
 ### 严格的公差（更低的风险，更多的手工工作）
 
 ```
-Use for:
-- High-value items
-- Items where exactness matters
-- Regulated industries
+适用于：
+- 高价值商品
+- 对精确度要求高的商品
+- 受监管行业
 
-Settings:
-- Unit Price: ±1%
-- Quantity: ±1%
-- Delivery Date: ±1 day
-- Charges: ±1%
+设置：
+- 单价：±1%
+- 数量：±1%
+- 交货日期：±1 天
+- 费用：±1%
 ```
 
 ### 中等公差（平衡）
 
 ```
-Use for:
-- Most business transactions
-- Standard items
-- Normal purchasing
+适用于：
+- 大多数业务交易
+- 标准商品
+- 常规采购
 
-Settings:
-- Unit Price: ±3-5%
-- Quantity: ±3-5%
-- Delivery Date: ±3 days
-- Charges: ±5%
+设置：
+- 单价：±3-5%
+- 数量：±3-5%
+- 交货日期：±3 天
+- 费用：±5%
 ```
 
 ### 宽松的公差（风险更高，体力工作更少）
 
 ```
-Use for:
-- Low-value items
-- Bulk purchases
-- Supplier agreements with flexibility
+适用于：
+- 低价值商品
+- 批量采购
+- 条款灵活的供应商协议
 
-Settings:
-- Unit Price: ±10%
-- Quantity: ±10%
-- Delivery Date: ±7 days
-- Charges: ±10%
+设置：
+- 单价：±10%
+- 数量：±10%
+- 交货日期：±7 天
+- 费用：±10%
 ```
 
 ***
@@ -642,24 +644,24 @@ Settings:
 ## PO 匹配工作流程示例
 
 ```
-Invoice Arrives
+收到发票
     ↓
-Condition: "Is amount > €5000?" → YES
+条件：“金额是否 > €5000？” → 是
     ↓
-Check: Full Match? → NO (10% price difference)
+检查：完全匹配？ → 否（价格相差 10%）
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+检查：单价是否在 5% 以内？ → 否（相差 12%）
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+检查：数量是否在 5% 以内？ → 是（相差 2%）
     ↓
-Decision: FAIL - Price variance too high
+决定：失败 - 价格差异过大
     ↓
-Flag for: Manual review / Buyer approval
+标记为：人工审核 / 采购员审批
     ↓
-Wait for: Buyer comment
+等待：采购员备注
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+如果批准：继续导出
+如果拒绝：退回供应商
 ```
 
 ***
@@ -669,46 +671,46 @@ If Rejected: Return to Supplier
 ### “未找到订单”
 
 ```
-Cause: Invoice PO number doesn't exist in system
-Fix:
-1. Verify PO number spelling
-2. Check if PO was created
-3. Verify PO is in correct organization
-4. Ask supplier for PO reference
+原因：发票上的 PO 编号在系统中不存在
+解决方法：
+1. 核对 PO 编号拼写
+2. 检查 PO 是否已创建
+3. 确认 PO 位于正确的组织
+4. 向供应商索取 PO 参考号
 ```
 
 ### “物品不匹配”
 
 ```
-Cause: Invoice items are different from PO items
-Possible Reasons:
-1. Substitution approved by procurement
-2. Different item numbers for same item
-3. Error by supplier
-Fix: Contact procurement or supplier
+原因：发票上的商品与 PO 中的商品不同
+可能的原因：
+1. 采购部门已批准替代品
+2. 同一商品使用了不同的商品编号
+3. 供应商出错
+解决方法：联系采购部门或供应商
 ```
 
 ### “价格高于 PO”
 
 ```
-Cause: Invoice price > PO price
-Possible Reasons:
-1. Price increase approved
-2. Supplier error
-3. Currency difference
-4. Additional services included
-Fix: Verify with procurement
+原因：发票价格 > PO 价格
+可能的原因：
+1. 已批准涨价
+2. 供应商出错
+3. 货币不同
+4. 包含额外服务
+解决方法：向采购部门核实
 ```
 
 ### “交货日期错误”
 
 ```
-Cause: Invoice dated after promised delivery
-Possible Reasons:
-1. Shipment was delayed
-2. Receiving date different from invoice date
-3. Partial shipment
-Fix: Check shipping documents or contact supplier
+原因：发票日期晚于承诺的交货日期
+可能的原因：
+1. 发货延迟
+2. 收货日期与发票日期不同
+3. 部分发货
+解决方法：检查发货单据或联系供应商
 ```
 
 ***

@@ -24,6 +24,8 @@ DocBits 提供了多种方式来更改、检查和路由文档：**转换规则*
 
 每份文档都要经过相同的步骤。每种工具在流程中都有自己的位置，这决定了它能读取哪些内容，以及还能更改哪些内容。
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="等距铁路调车场示意图：文档车厢依次经过转换规则、采购订单匹配规则、再次经过转换规则和自定义验证规则，然后是 Ready for validation 信号灯，之后是标准工作流、高级工作流和 Workflow SDK 卡片"><figcaption>文档车厢从左到右依次经过 1 转换规则、2 采购订单匹配规则（匹配后转换规则会再次运行）和 3 自定义验证规则；只有在 Ready for validation 信号灯亮起后，工作流才能启动，可以是 4 标准工作流、5 高级工作流（带分支的侧线）或 6 Workflow SDK 卡片，而脚本（&#x3C;/>）会在信号灯之前沿途的触发点接入。</figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-phases-zh.png" alt="自动化执行阶段示例。脚本仅在配置的触发点运行；具体规则轮次、保存及状态事件行为应使用测试文档验证。"><figcaption><p>自动化执行阶段示例。脚本仅在配置的触发点运行；具体规则轮次、保存及状态事件行为应使用测试文档验证。</p></figcaption></figure>
 
 具体来说：

@@ -28,13 +28,13 @@ Aggiungi una colonna quando per ogni voce di riga deve essere acquisito un valor
 
 <figure><img src="../../../../../.gitbook/assets/mef178-column-create-confirm-it.png" alt="Finestra di conferma «Creare una nuova colonna nella tabella?» con i pulsanti Annulla e Crea colonna"><figcaption><p>Conferma prima che la colonna venga creata per tutti i fornitori.</p></figcaption></figure>
 
-5. Seleziona **Crea colonna** per salvare, oppure **Annulla** per tornare indietro senza creare nulla. La colonna compare nell'elenco con *Sola lettura*, *Nascosta* e *Usa AI* disattivati. Se necessario, attiva questi flag nell'elenco, vedi [Modifica ed eliminazione delle colonne](editing-and-deleting-columns.md).
+5. Dopo la creazione, verificare le impostazioni nell'elenco. Sola lettura e Nascosta sono inizialmente disattivate. Use AI parte da Predefinito; una colonna personalizzata normalmente non viene richiesta così. Scegliere Sì se l'estrazione strutturata deve richiederla.
 
 ## Dopo l'aggiunta
 
 * La colonna è **vuota sui documenti esistenti**. Viene compilata sui documenti caricati o riavviati dopo la modifica.
 * Per i fornitori con **regole addestrate**, apri uno dei loro documenti nell'addestramento della tabella e mappa la nuova colonna, altrimenti la colonna resta vuota per quel fornitore. Vedi [Definizione Tabelle e Colonne](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
-* Con l'**estrazione AI della tabella**, l'AI compila la colonna se il valore è riconoscibile sul documento. Contrassegna la colonna come *Usa AI* se il fornitore ha regole addestrate ma questa colonna deve comunque provenire dall'AI.
+* Per l'estrazione strutturata AI, impostare Use AI della colonna personalizzata su Sì e verificare l'anteprima. Creare la colonna non basta a richiederla. Controllare mappature e istruzioni del fornitore, rielaborare un documento di prova e verificare il risultato.
 * Aggiungi la colonna alla **mappatura di esportazione** se l'ERP deve riceverla, vedi [Esportazione](../../../document-processing/export.md).
 
 ## Messaggi
@@ -44,3 +44,5 @@ Aggiungi una colonna quando per ogni voce di riga deve essere acquisito un valor
 | *Column name already exists* | Nella tabella esiste già una colonna con questo nome tecnico. Scegli un titolo diverso. |
 | *Column name already exists – Please activate it in Table Column settings* | Una colonna predefinita nascosta ha questo nome. Disattiva il suo flag *Nascosta* invece di crearne una nuova. |
 | *No table exists. Please create table before creating columns.* | Il tipo di documento non ha ancora una tabella: fai prima clic su **Crea nuova tabella**. |
+
+[Structured Output per le tabelle](../../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

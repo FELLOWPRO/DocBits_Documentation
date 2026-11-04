@@ -21,3 +21,7 @@ Consulta [Modello AI specifico del fornitore](../../../../end-user-and-partner-s
 Prima di eliminare una voce, identifica il template e tutte le preferenze interessate. L’eliminazione può rimuovere più preferenze del template, non soltanto il livello AI. Esamina l’eventuale conferma della versione in uso prima di procedere. Successivamente si applicano la configurazione dell’organizzazione e i valori di ripiego pertinenti; gli altri template possono mantenere impostazioni indipendenti.
 
 La modifica non rielabora automaticamente i documenti storici e non garantisce convalida, abbinamento degli ordini, approvazione o esportazione. Durante questa verifica non sono stati eliminati template né eseguite nuove estrazioni.
+
+## Impostazioni e valori specifici
+
+Structured Output ha una propria impostazione organizzazione/modello di estrazione, separata dal livello AI. Modificarla in Altre opzioni del documento; la conferma salva il valore specifico e riavvia quel documento. Gli indicatori nell'elenco sono di sola lettura. Eliminare una voce può rimuovere più impostazioni specifiche insieme. [Structured Output per le tabelle](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

@@ -1,5 +1,9 @@
 # Touchless mit MCP erklären und verbessern
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video-Kapitel (Prüffassung):** [Kennzahlen über MCP abfragen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/de.html#chapter=12).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Die folgenden Abläufe verwenden tatsächlich angebotene DocBits-MCP-Werkzeuge. Lesen und Erklären sind von schreibenden Aufrufen zu unterscheiden. Prüfen Sie Organisation, Rolle, Dokumenttyp, Zeitraum und Datenstand; fehlende Evidenz bleibt offen.
 
 <figure><img src="../.gitbook/assets/touchless-owned-po-price-de.png" alt="Echte deutsche Dev-Ansicht einer eigens angelegten fiktiven Bestellung: 10 × 9 = 90. Sie ist der Quellvergleich für die MCP-Diagnose, kein Screenshot eines MCP-Clients und kein Nachweis erfolgreicher Auslesung oder Verarbeitung."><figcaption><p>Echte deutsche Dev-Ansicht einer eigens angelegten fiktiven Bestellung: 10 × 9 = 90. Sie ist der Quellvergleich für die MCP-Diagnose, kein Screenshot eines MCP-Clients und kein Nachweis erfolgreicher Auslesung oder Verarbeitung.</p></figcaption></figure>

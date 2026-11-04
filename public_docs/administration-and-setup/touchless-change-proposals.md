@@ -1,5 +1,9 @@
 # Touchless Intelligence: Änderungsvorschläge und Berichte
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video-Kapitel (Prüffassung):** [Vorschläge und Verlauf](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/de.html#chapter=10).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Eine Empfehlung kann einen **Änderungsvorschlag** enthalten. Er beschreibt eine unterstützte Einstellungsänderung; er ersetzt keine Korrektur von Bestell- oder Stammdaten im Quellsystem. Ein Bericht oder ein Cluster allein ändert noch keine Daten. Administratoren arbeiten damit in vier Schritten:
 

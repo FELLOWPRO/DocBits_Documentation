@@ -24,7 +24,7 @@ DocBits doskonale radzi sobie z dostosowywaniem układów dokumentów zgodnie z 
 * Dostosuj pola: Dostosuj układ, dodając lub usuwając pola. Na przykład dodaj 'City Tax' dla układu USA.
 * Zastosuj i przetestuj: Po dostosowaniu zastosuj układ do swoich dokumentów i przetestuj, aby zapewnić dokładność.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/origin_layout_2.svg)
 
 ## **Wskazówki dotyczące skutecznego dostosowania**
 

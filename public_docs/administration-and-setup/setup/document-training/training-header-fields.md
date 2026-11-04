@@ -20,7 +20,7 @@ Możesz pomóc w szkoleniu DocBits, aby rozpoznawał te pola, ręcznie identyfik
 Powtórz ten proces dla wszystkich wymaganych pól.\
 Gdy wszystkie niezbędne pola zostaną wypełnione, **kliknij "Zapisz Reguły"**, aby zapisać szkolenie. Zapewnia to, że DocBits uczy się, gdzie znaleźć każdy kawałek informacji dla podobnych dokumentów w przyszłości.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/header_field_training_2.png)
 
 Po zapisaniu, twój dokument jest gotowy do wyeksportowania — a następnym razem DocBits automatycznie wydobyje przeszkolone pola.
 

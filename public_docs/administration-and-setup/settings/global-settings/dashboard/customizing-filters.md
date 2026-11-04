@@ -2,7 +2,7 @@
 
 Jeśli szukasz jednego lub więcej konkretnych dokumentów, masz do dyspozycji następujące opcje. W obrębie paska wyszukiwania udostępniliśmy różne narzędzia, które pomogą Ci znaleźć poszukiwany dokument. Aby uzyskać do nich dostęp, wybierz następujący ikonę.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/customizing_filters_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/customizing_filters_1.png)
 
 Korzystanie z filtrów pozwala użytkownikom szybko znaleźć istotne informacje i ograniczyć ilość danych do niezbędnych.
 

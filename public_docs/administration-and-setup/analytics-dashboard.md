@@ -127,7 +127,7 @@ Przełącznik **Wybierz wszystko** w nagłówku pozwala uwzględnić lub wyklucz
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-pl.png" alt="Karty etapów ze zbiorczymi czasami przetwarzania. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu."><figcaption><p>Karty etapów ze zbiorczymi czasami przetwarzania. Etykieta Ekstrakcja terenowa oznacza tu ekstrakcję pól dokumentu.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Porównaj ze Średnią Globalną
 
@@ -151,7 +151,7 @@ Wykres Średniego Czasu wizualizuje, jak czas przetwarzania jest rozłożony dla
 
 Gdy włączone jest **Porównaj ze Średnią Globalną**, wykres wyświetla również Średnią Globalną DocBits do celów porównawczych.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Najlepsze dokumenty
 
@@ -163,7 +163,7 @@ Karta **Najlepsze dokumenty** zawiera listę poszczególnych dokumentów pasują
 * **Ukryj / pokaż wszystkie** dokumenty w filtrze za pomocą ikony oka w nagłówku.
 * **Kliknij dokument** (nazwa pliku lub pasek postępu), aby skopiować jego identyfikator dokumentu do schowka.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Wykres Trendu Czasu
 
@@ -177,9 +177,9 @@ Karta **Najlepsze dokumenty** zawiera listę poszczególnych dokumentów pasują
 
 Ułatwia to wykrycie nagłego skoku dla konkretnego dostawcy lub stopniowego wzrostu dla konkretnego typu dokumentu, zanim stanie się krytycznym problemem.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Tabela danych
 
@@ -191,9 +191,9 @@ Tabela danych zapewnia pełny dostęp do wszystkich podstawowych danych wierszy 
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-pl.png" alt="Tabela analityczna z polskimi etykietami; wartości dokumentów są ukryte."><figcaption><p>Tabela analityczna z polskimi etykietami; wartości dokumentów są ukryte.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_data_table_export.png)
 
 ## Touchless Intelligence
 

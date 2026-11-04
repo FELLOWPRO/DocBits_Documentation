@@ -838,10 +838,14 @@
 * [Pagina dei report](administration-and-setup/report-page.md)
 * [Dashboard di Analisi](administration-and-setup/analytics-dashboard.md)
   * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
+    * [Metriche e calcolo](administration-and-setup/touchless-metrics.md)
+    * [Usare il pannello](administration-and-setup/touchless-dashboard.md)
+    * [Esempi: prezzo e quantità](administration-and-setup/touchless-examples.md)
     * [Touchless Intelligence: Diagnosi del fornitore e cluster di problemi](administration-and-setup/touchless-supplier-diagnosis.md)
     * [Touchless Intelligence: Diagnosi dell'abbinamento ordini](administration-and-setup/touchless-po-matching-diagnosis.md)
-    * [Tracciamento del documento](administration-and-setup/touchless-document-trace.md)
-    * [Proposte di modifica e report](administration-and-setup/touchless-change-proposals.md)
+    * [Touchless Intelligence: Tracciamento del documento](administration-and-setup/touchless-document-trace.md)
+    * [Touchless Intelligence: Proposte di modifica e report](administration-and-setup/touchless-change-proposals.md)
+    * [Spiegare e migliorare Touchless con MCP](administration-and-setup/touchless-mcp.md)
 
 ## Integrazione e Configurazione Infor <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

@@ -2,7 +2,7 @@
 
 ## Panoramica
 
-Molte fatture si fermano all'ordine d'acquisto. La fattura dice una cosa, l'ordine d'acquisto (PO) ne dice un'altra, e DocBits non può decidere da solo se appartengono insieme. Ogni documento di questo tipo richiede una persona, quindi **non è touchless**.
+Una fattura correttamente estratta può fermarsi se i dati dell’ordine differiscono e le regole non risolvono il divario. Un blocco temporaneo non è un esito finale: una ripresa automatica può riuscire; correzione o riavvio umano registrati danno AP Assisted dopo successo.
 
 Touchless Intelligence ti mostra **perché** un abbinamento ordini è fallito e **come** DocBits ha provato ad abbinare. Questa pagina spiega le due fasi della pipeline coinvolte, i motivi che vedrai e il **flusso decisionale dell'abbinamento ordini** (PO matching decision flow), un diagramma che mostra i passi di abbinamento uno dopo l'altro.
 
@@ -40,6 +40,9 @@ Un documento che si ferma alla fase 9 o 10 compare nella coda dei fornitori con 
 {% hint style="info" %}
 Non tutti i motivi di abbinamento ordini possono essere risolti in DocBits. Se il fornitore invia un numero d'ordine sbagliato, la scheda indica **Supplier action only**: il fornitore deve correggere il documento e inviarlo di nuovo.
 {% endhint %}
+
+I casi separati di prezzo e quantità e le relative prove sono negli [Esempi](touchless-examples.md).
+
 
 ## Il flusso decisionale dell'abbinamento ordini
 
@@ -100,7 +103,7 @@ Un fornitore fattura l'articolo **"A-4711-X"**, il tuo ordine dice **"4711"**. N
 
 * Nel cluster leggi *27 interessati, 27 recuperabili*, incremento atteso ad esempio **+8,7 pp**.
 * La correzione è dalla tua parte: aggiungi o riordina una regola che abbini sul codice articolo del fornitore o sulla descrizione, oppure mantieni i codici articolo del fornitore nei dati anagrafici.
-* Dopo aver cambiato la regola, applica la modifica con una [proposta di modifica](touchless-change-proposals.md) e leggi la **Cronologia delle modifiche** due settimane dopo: tasso puro prima e dopo.
+* Dopo una modifica DocBits supportata, usate anteprima e storico per misurare il tasso AP combinato prima/dopo. Una correzione Infor va verificata tramite import e nuove fatture; non crea automaticamente una voce nello storico dei parametri.
 
 ### Esempio 3: l'ordine d'acquisto non c'è ancora
 
@@ -117,7 +120,7 @@ Dopo l'attivazione di una regola di trasformazione per la tabella di un fornitor
 3. Apri la **Diagnosi del fornitore** e leggi il cluster: motivo, documenti interessati, **Cosa cambiare**, **Prove mancanti**.
 4. Apri **How this organisation matches** e controlla il set di regole: versione, proprietario e tolleranze.
 5. Apri un **documento di esempio** e il suo [Tracciamento del documento](touchless-document-trace.md): quale fase, quale motivo?
-6. Cambia **una** cosa (ordine delle regole, tolleranza, mappatura degli articoli) con un'anteprima, così la **Cronologia delle modifiche** può misurarla.
+6. Risolvete una causa confermata. Per una proposta DocBits supportata usate l’anteprima. Per dati Infor verificate separatamente fonte, importazione e nuove fatture; non presupponete una registrazione automatica nello storico dei parametri.
 
 ## Pagine correlate
 
@@ -127,3 +130,7 @@ Dopo l'attivazione di una regola di trasformazione per la tabella di un fornitor
 * [Proposte di modifica e report](touchless-change-proposals.md)
 * [Regole di abbinamento degli ordini d'acquisto](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * PO Matching Cards: guida completa
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

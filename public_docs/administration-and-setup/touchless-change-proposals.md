@@ -6,13 +6,13 @@ Una raccomandazione può essere accompagnata da una **proposta di modifica**, ci
 1. **Anteprima** (Preview): mostra la modifica (valore attuale → valore proposto) e ciò che DocBits si aspetta. Non viene salvato nulla. **Applica** (Apply) è possibile solo dopo aver visto un'anteprima.
 2. **Applica**: salva esattamente la modifica vista in anteprima. Viene registrata nel log.
 3. **Misura**: DocBits confronta il tasso touchless dello stesso tipo di documento **prima e dopo**, su periodi di uguale durata. Servono almeno **20 documenti** in ciascun periodo, altrimenti indica *not measurable*.
-4. **Annulla** (Undo): ripristina la modifica.
+4. **Annullare**: ripristina l’impostazione se la proposta supporta il ritorno. Verificate disponibilità e valore ripristinato.
 
 {% hint style="warning" %}
 Una differenza prima/dopo è un'**osservazione**, non la prova di una causa. Nello stesso periodo possono cambiare altre cose (un nuovo fornitore, un picco stagionale).
 {% endhint %}
 
-**Esempio.** Applichi *Switch on automatic PO match and export* per le fatture. Due settimane dopo la **Cronologia delle modifiche** (Change history) indica: tasso puro prima 52 % (210 documenti), dopo 61 % (198 documenti). Sono +9 pp, con documenti sufficienti per la misurazione.
+**Esempio illustrativo.** Dopo una modifica di configurazione, AP Touchless passa dal 52 % (210 documenti) al 61 % (198), cioè +9 punti. Include Pure e sola approvazione; non misura l’estrazione. Servono almeno 20 documenti conclusi idonei per ciascun periodo comparabile. Il prima/dopo è osservazione, non causalità. Una correzione Infor richiede controllo dell’import e delle fatture successive; non presupponete che sia una modifica DocBits registrata.
 
 
 Gli amministratori vedono anche due sezioni tra gli indicatori chiave e i grafici:
@@ -31,8 +31,14 @@ Gli amministratori trovano il **Report di consulenza** (Consulting report) in fo
 
 I valori dell'effetto sono **stime**. Se il report risponde *forbidden*, il tuo ruolo non lo consente.
 
+Strumenti e classificazione delle azioni umane sono spiegati in [Touchless con MCP](touchless-mcp.md).
+
 ## Pagine correlate
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Diagnosi del fornitore e cluster di problemi](touchless-supplier-diagnosis.md)
 * [Diagnosi dell'abbinamento ordini](touchless-po-matching-diagnosis.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

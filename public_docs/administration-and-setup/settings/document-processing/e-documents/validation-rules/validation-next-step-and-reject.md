@@ -4,7 +4,7 @@ After you read the [validation report](validation-report.md), the report tells y
 
 ## What to do next
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step.png" alt="The end of the report with the assessment, the next step and the buttons"><figcaption><p>The assessment, the next step and the buttons at the end of the report</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-next-step.png" alt="The assessment, the next step and the buttons at the end of the report"><figcaption><p>The assessment, the next step and the buttons at the end of the report</p></figcaption></figure>
 
 The **Assessment** says in one sentence whether the invoice conforms. The block **Next step** tells you what to do:
 
@@ -21,7 +21,7 @@ The buttons at the end of the report:
 
 ## Reject a document
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog.png" alt="The Reject document dialog with the reason filled from the report"><figcaption><p>The reason is filled from the errors in the report. You can edit it.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-reject-dialog.png" alt="The reason is filled from the errors in the report. You can edit it."><figcaption><p>The reason is filled from the errors in the report. You can edit it.</p></figcaption></figure>
 
 1. In the report, select **Reject document**.
 2. Check the **Reason**. DocBits fills it from the errors in the report. You can edit the text.

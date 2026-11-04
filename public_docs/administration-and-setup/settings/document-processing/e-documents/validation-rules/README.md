@@ -8,7 +8,7 @@ The **E-Invoice Validation** page (**Settings → E-Documents → E-Invoice Vali
 
 ## What is on this page
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings.png" alt="The E-Invoice Validation page with the table Validation for each document type"><figcaption><p>The E-Invoice Validation page. The tab <strong>Rules and policy</strong> starts with the table <strong>Validation for each document type</strong>. Example organisation.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings-en-20261104.png" alt="Validation and blocking per document type. Configured names are hidden. Dev example."><figcaption><p>Validation and blocking per document type. Configured names are hidden. Dev example.</p></figcaption></figure>
 
 | Topic                                                                   | What it does                                                                                                                             | Who                             |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |

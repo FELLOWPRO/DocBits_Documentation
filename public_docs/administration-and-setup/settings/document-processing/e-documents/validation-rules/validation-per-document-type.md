@@ -8,7 +8,7 @@ Administrators decide for each document type whether DocBits validates incoming 
 
 Go to **Settings → E-Documents → E-Invoice Validation**. The tab **Rules and policy** starts with the table **Validation for each document type**.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings.png" alt="The table Validation for each document type with the switches Enabled and Blocking"><figcaption><p>One row for each document type with the switches Enabled and Blocking. Example organisation.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-settings-en-20261104.png" alt="Validation and blocking per document type. Configured names are hidden. Dev example."><figcaption><p>Validation and blocking per document type. Configured names are hidden. Dev example.</p></figcaption></figure>
 
 | Switch       | What it does                                                                                                                                                                                                      |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ If a document type has sub-type overrides, the table shows a note about them.
 1. Select the switch you want to change.
 2. DocBits shows **Confirm validation change** with the document type and the change, for example _QUOTE: Enabled → On_.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm.png" alt="The dialog Confirm validation change"><figcaption><p>Every change needs a confirmation</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-validation-confirm.png" alt="Every change needs a confirmation"><figcaption><p>Every change needs a confirmation</p></figcaption></figure>
 
 3. Read the note: **Already saved reports do not change.** The change applies only to new checks, including when you restart the processing of a document.
 4. Select **Confirm change**, or **Cancel** to keep the old setting.

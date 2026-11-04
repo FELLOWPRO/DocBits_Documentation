@@ -1,5 +1,9 @@
 # Ejemplos: precio y cantidad
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo del vídeo (versión de revisión):** [Seguir un documento](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/es.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Ejemplo completo: extracción correcta, datos de Infor diferentes
 
 Caso ilustrativo: la factura contiene **10 unidades a 10,00 € = 100,00 €**. DocBits extrae los tres valores correctamente. El pedido importado contiene **10 unidades a 9,00 € = 90,00 €**. Supongamos que las reglas bloquean esta diferencia.

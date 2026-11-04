@@ -1,5 +1,9 @@
 # Touchless Intelligence: Seguimiento del documento
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capítulo del vídeo (versión de revisión):** [Comparar ejecuciones](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/es.html#chapter=08).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Introduzca un ID de documento en **Document ID**, o abra un documento de muestra de un clúster, para ver **qué le ocurrió a este documento**.
 
 La cabecera muestra el archivo, su estado (por ejemplo **En proceso**), la ejecución que está consultando y su primer bloqueador, además de un botón **Documento** con el ID del documento.

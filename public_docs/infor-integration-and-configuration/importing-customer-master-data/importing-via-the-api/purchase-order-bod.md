@@ -10,7 +10,7 @@ Inkooporders bereiken DocBits normaal gesproken automatisch via uw ION-datastroo
 
 Er zijn twee endpoints en ze doen hetzelfde. Het enige verschil is hoe u de BOD aanlevert:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-po-bod-endpoints.png)
 
 | Endpoint | Wanneer u het gebruikt |
 | --- | --- |
@@ -29,7 +29,7 @@ U hebt nodig:
 
 Om het Org ID te vinden, gaat u naar **Settings → Integration & SSO** en opent u de sectie **ID**. Klik op het kopieerpictogram naast het veld.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** toont de suborganisatie die in de koptekst is geselecteerd. Met **CROSS** geselecteerd — de weergave over alle suborganisaties heen — toont het dezelfde waarde als **Org ID**, en daarom komen de twee velden in de schermafbeelding hierboven overeen. Schakel eerst naar een specifieke suborganisatie als u het ID daarvan nodig hebt.
@@ -62,22 +62,22 @@ Alles onder **import** is vergrendeld totdat u autoriseert. Er zijn twee dingen 
 
 * Klik op het **slotpictogram** rechts van het endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-swagger-lock.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-swagger-lock.png)
 
 * Het blijkt **Beschikbare autorisaties** opent met twee items.
 * Plak uw **Org ID** in **X-ORG-ID** en klik op **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid.png)
 
 * Het item toont nu **Authorized** en verbergt de waarde.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Scroll naar **X-API-KEY**, plak uw API key en klik op **Authorize**. In DocBits vindt u die onder **Settings → Integration & SSO**, in de sectie **API Key**, of u kunt [een nieuwe sleutel aanmaken](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#een-api-sleutel-aanmaken).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Klik op **Close**.
 
@@ -87,13 +87,13 @@ Plak de sleutel op zichzelf — zet er geen `Bearer` voor. Beide autorisaties bl
 
 ### 3. De velden invullen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-po.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-tryitout-po.png)
 
 Klik op **Try it out** en vul vervolgens het formulier in van het endpoint dat u hebt gekozen.
 
 #### Een bestand uploaden — `/import/purchase_order_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-po-bod-form.png)
 
 | Veld | |
 | --- | --- |
@@ -127,7 +127,7 @@ Regeltoewijzingen gebruiken dezelfde namen `custom_field_1` … `custom_field_5`
 
 #### De XML plakken — `/import/purchase_order_bod_xml`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-xml-form.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-po-bod-xml-form.png)
 
 Dit endpoint accepteert de BOD niet als eenvoudige plakactie. Het veld **xml** is een object, vooringevuld met:
 
@@ -163,11 +163,11 @@ Controleer voordat u uitvoert de keuzelijst **Servers** onderaan het formulier. 
 
 Klik op **Execute**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-execute.png)
 
 **Als u een bestand hebt geüpload**, is het antwoord:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-response.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-response.png)
 
 ```json
 {

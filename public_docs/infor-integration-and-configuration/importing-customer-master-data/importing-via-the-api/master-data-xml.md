@@ -10,7 +10,7 @@ Gebruik dit voor stamgegevens die niet als BOD binnenkomen — prijslijsten, kos
 
 ## Twee manieren om de XML te versturen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-endpoints.png)
 
 | Endpoint | Wanneer u het gebruikt |
 | --- | --- |
@@ -29,7 +29,7 @@ U hebt nodig:
 * **Veldtoewijzingen** — welk XPath welke kolom vult.
 * **Uw Org ID**, uit **Settings → Integration & SSO**, in de sectie **ID**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-org-id.png)
 
 ## Stapsgewijze instructies
 
@@ -50,21 +50,21 @@ Gebruik de regio waarin uw organisatie wordt gehost — dezelfde regio waarmee u
 
 ### 2. Autoriseren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-lock.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-lock.png)
 
 Autoriseren werkt precies zoals bij de BOD-imports: klik op het **slotpictogram**, plak uw **Org ID** in **X-ORG-ID**, plak uw API key in **X-API-KEY** en klik bij elk op **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey.png)
 
 ### 3. De velden invullen
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-xml.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-tryitout-xml.png)
 
 Klik op **Try it out** en vul vervolgens het formulier in.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-form.png)
 
 | Veld | |
 | --- | --- |
@@ -124,7 +124,7 @@ Controleer naar welke omgeving en welke organisatie u wijst voordat u uitvoert. 
 
 Controleer voordat u uitvoert de keuzelijst **Servers** onderaan het formulier.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-execute.png)
 
 Klik op **Execute**. Een geslaagde import geeft terug:
 
@@ -135,7 +135,7 @@ Klik op **Execute**. Een geslaagde import geeft terug:
 }
 ```
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-response.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-xml-response.png)
 
 Anders dan de BOD-imports melden deze endpoints problemen met een echte foutstatus in plaats van een `200` met `"success": false` — een **400** betekent dat het verzoek is geweigerd en dat er niets is geschreven.
 

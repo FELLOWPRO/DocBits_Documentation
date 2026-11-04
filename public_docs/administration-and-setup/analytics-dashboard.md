@@ -127,7 +127,7 @@ Met een schakelaar **Alles selecteren** in de header kunt u alle stappen tegelij
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-nl.png" alt="Fasekaarten met geaggregeerde verwerkingstijden."><figcaption><p>Fasekaarten met geaggregeerde verwerkingstijden.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Vergelijk met het wereldwijde gemiddelde
 
@@ -151,7 +151,7 @@ De Grafiek Gemiddelde Tijd visualiseert hoe de verwerkingstijd is verdeeld over 
 
 Wanneer **Vergelijk met het wereldwijde gemiddelde** is ingeschakeld, toont de grafiek ook het DocBits Global Average voor benchmarking.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Topdocumenten
 
@@ -163,7 +163,7 @@ De kaart **Topdocumenten** somt individuele documenten op die overeenkomen met d
 * **Verberg / toon alle** documenten in het filter via het oogpictogram in de header.
 * **Klik op een document** (bestandsnaam of voortgangsbalk) om de document-ID naar het klembord te kopiëren.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Tijdtrendgrafiek
 
@@ -177,9 +177,9 @@ Volg prestatietrends in de tijd en spot afwijkingen. De Tijdtrendgrafiek toont d
 
 Hierdoor is het eenvoudig om een plotselinge piek voor een specifieke leverancier te detecteren, of een geleidelijke toename voor een specifiek documenttype, voordat het een kritiek probleem wordt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Datatabel
 
@@ -191,9 +191,9 @@ De Datatabel biedt volledige toegang tot alle onderliggende rijgegevens voor de 
 
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-nl.png" alt="Analysetabel met Nederlandstalige labels; documentwaarden zijn afgeschermd. Het productlabel Tafel verwijst hier naar een gegevenstabel."><figcaption><p>Analysetabel met Nederlandstalige labels; documentwaarden zijn afgeschermd. Het productlabel Tafel verwijst hier naar een gegevenstabel.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_data_table_export.png)
 
 ## Touchless Intelligence
 

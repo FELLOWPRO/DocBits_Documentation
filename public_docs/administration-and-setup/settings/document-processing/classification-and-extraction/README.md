@@ -46,17 +46,17 @@ Om deze functie te activeren:
 1. Ga naar de sectie **Documenten splitsen**.
 2.  Open het keuzemenu.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_14.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_14.png)
 3.  Selecteer **Gesplitst op barcode/QR-code**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_15.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_15.png)
 
 Je hebt vervolgens de optie om:
 
 * Een of meer streepjescode-typen te selecteren die moeten worden gedetecteerd.
 *   Een regex-patroon op te geven waaraan de streepjescode moet voldoen om het splitsen van documenten te activeren.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_16.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_16.png)
 
 ## Bedrag opmaak
 
@@ -165,7 +165,7 @@ In de sectie **Classificatieregels** kun je specifieke **regex**-patronen en cri
 
 Om deze sectie te openen, klik op het tabblad **Classificatieregels** bovenaan de pagina.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_1.png)
 
 ### Nieuwe classificatieregel toevoegen
 
@@ -173,7 +173,7 @@ Om een nieuwe regel te maken:
 
 1.  Klik rechtsboven op **Toevoegen**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_2.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_2.png)
 2. Vul de volgende velden in:
    * **Patroon**: Het regex-patroon waar het systeem naar moet zoeken om classificatie te activeren.
    * **Type**: Waar naar het patroon moet worden gezocht (bijv. **Streepjescode**).
@@ -181,10 +181,10 @@ Om een nieuwe regel te maken:
    * **Documenttype**: Definieer het documenttype dat moet worden toegewezen wanneer het patroon overeenkomt.
    *   **Subdocumenttype** _(optioneel)_: Geef een subtype op voor een gedetailleerdere classificatie.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_3.png)
+       ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_3.png)
 3.  Klik op **Opslaan** om je classificatieregel op te slaan.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_4.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_4.png)
 
 ### Een classificatieregel bewerken
 
@@ -192,14 +192,14 @@ Om een bestaande regel te bewerken:
 
 1.  Klik op de drie puntjes in de kolom **Acties**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_5.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_5.png)
 2.  Selecteer **Bewerking**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_6.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_6.png)
 3. Breng de gewenste wijzigingen aan.
 4.  Klik op **Opslaan** om de updates toe te passen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_4.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_4.png)
 
 ### Een classificatieregel verwijderen
 
@@ -207,10 +207,10 @@ Om een regel te verwijderen:
 
 1.  Klik op de drie puntjes in de kolom **Acties**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_5.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_5.png)
 2.  Selecteer **Verwijderen**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_7.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_7.png)
 
 ## AI-modellen
 
@@ -220,14 +220,14 @@ De sectie **AI-modellen** toont alle op maat getrainde modellen die specifiek vo
 
 Om deze sectie te openen, klik op het tabblad **AI-modellen** bovenaan de pagina.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_8.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_8.png)
 
 ### Modelcategorieën
 
 Modellen zijn georganiseerd in categorieën. Onder elke categorienaam wordt het aantal modellen weergegeven dat deze bevat.\
 Klik op een categorie om de details te bekijken.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_9.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_9.png)
 
 Bovenaan de pagina van de geselecteerde categorie zie je kerninformatie over elk model:
 
@@ -245,7 +245,7 @@ Alle modellen binnen een categorie worden weergegeven in een tabel met de volgen
 * **Document-subtypen**: De subtypen waarin het document verder wordt geclassificeerd.
 * **Prioriteit**: Het prioriteitsniveau dat de positie van het model in de classificatiewachtrij bepaalt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_11.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_11.png)
 
 ### Een model bewerken
 
@@ -253,10 +253,10 @@ Om een model te bewerken:
 
 1.  Klik op het penpictogram in de kolom **Acties** naast het model dat je wilt bewerken.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_10.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_10.png)
 2. Werk de beschikbare velden bij:
    * **Volgend model**: Selecteer het model dat de output van het huidige model moet verwerken.
    * **Documenttype**: Kies het documenttype waarmee het model de input moet classificeren.
 3.  Klik op **Opslaan** om je wijzigingen toe te passen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/classification_and_extraction_12.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/classification_and_extraction_12.png)

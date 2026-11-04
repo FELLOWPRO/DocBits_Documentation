@@ -17,15 +17,15 @@ Il selettore superiore e quello delle regole apprese sono indipendenti nell’im
 
 ### I cinque indicatori chiave
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards-it.png" alt="Indicatori nella vera interfaccia italiana: AP percentuale comprende Pure e sola approvazione, mentre il numero sottostante conta soltanto le approvazioni. Le percentuali Pure e AP si sovrappongono. La precisione di estrazione richiede un controllo indipendente dell’originale."><figcaption><p>Indicatori nella vera interfaccia italiana: AP percentuale comprende Pure e sola approvazione, mentre il numero sottostante conta soltanto le approvazioni. Le percentuali Pure e AP si sovrappongono. La precisione di estrazione richiede un controllo indipendente dell’originale.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-kpi-it-20261104.png" alt="Rapporto attuale delle fatture su 30 giorni: 107 interamente automatiche più 11 con sola approvazione danno 118 su 201, cioè 58,7 % AP Touchless. Pure da solo è 53,2 %. La scheda AP mostra già il totale combinato di 118. Storico fittizio di formazione; non dimostra un’esportazione ERP eseguita."><figcaption><p>Rapporto attuale delle fatture su 30 giorni: 107 interamente automatiche più 11 con sola approvazione danno 118 su 201, cioè 58,7 % AP Touchless. Pure da solo è 53,2 %. La scheda AP mostra già il totale combinato di 118. Storico fittizio di formazione; non dimostra un’esportazione ERP eseguita.</p></figcaption></figure>
 
-| Scheda | Mostra | Esempio (illustrativo) |
+| Scheda | Che cosa comprende | Schermata attuale |
 | --- | --- | --- |
-| **Touchless puro** (Pure touchless) | La percentuale e la differenza rispetto all'obiettivo | **63,2 %** · "120 documents" · "−6,8 pp vs 70 % target" (rosso, sotto l'obiettivo) |
-| **AP Touchless** | Tasso combinato Pure + sola approvazione | **78,9 %** · 30 documenti con sola approvazione |
-| **AP assistito** (AP assisted) | Il numero di documenti e la loro quota | **30** · 15,8 % |
-| **Eccezioni di processo** (Process exceptions) | Il numero di documenti e la loro quota | **10** · 5,3 % |
-| **Copertura della diagnosi** (Diagnosis coverage) | Per quanti documenti bloccati la causa è **nota** | **80 %** · "10 without a known cause" |
+| Pure Touchless | Conclusione riuscita senza interventi né approvazione | 107 · 53,2 % |
+| AP Touchless | Pure più sola approvazione; percentuale e numero combinati | 118 · 58,7 % |
+| AP Assisted | Conclusione riuscita con intervento manuale | 37 · 18,4 % |
+| Eccezioni di processo | Esito classificato come eccezione | 46 · 22,9 % |
+| Copertura diagnostica | Casi bloccati con una causa nota | 100 % · 0 senza causa nota |
 
 * Una scheda mostra un trattino (—) invece di **0 %** quando non c'è nulla da misurare. Un trattino significa "nessun dato", non "zero".
 * **Copertura della diagnosi** = documenti con un motivo di blocco noto ÷ tutti i documenti bloccati. Esempio: 50 documenti bloccati, 10 con causa sconosciuta → 40 ÷ 50 = **80 %**. Un valore basso significa "non capiamo ancora perché i documenti si fermano". Miglioralo prima di provare a correggere le singole cause.
@@ -33,9 +33,9 @@ Il selettore superiore e quello delle regole apprese sono indipendenti nell’im
 
 ### Tasso touchless nel tempo
 
-<figure><img src="../.gitbook/assets/touchless-trend-it.png" alt="Andamento nella vera interfaccia italiana. La linea blu AP di questa schermata rappresenta la categoria distinta sola approvazione, non la percentuale AP combinata dell’intestazione. Schermate e calcoli illustrativi possono riguardare periodi e popolazioni diversi."><figcaption><p>Andamento nella vera interfaccia italiana. La linea blu AP di questa schermata rappresenta la categoria distinta sola approvazione, non la percentuale AP combinata dell’intestazione. Schermate e calcoli illustrativi possono riguardare periodi e popolazioni diversi.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-trend-it-20261104.png" alt="Andamento attuale: rosa indica Pure Touchless; blu il tasso combinato, inclusa la sola approvazione. La linea tratteggiata indica l’obiettivo del 70 %. Questi casi fittizi di formazione non dimostrano un miglioramento reale del processo."><figcaption><p>Andamento attuale: rosa indica Pure Touchless; blu il tasso combinato, inclusa la sola approvazione. La linea tratteggiata indica l’obiettivo del 70 %. Questi casi fittizi di formazione non dimostrano un miglioramento reale del processo.</p></figcaption></figure>
 
-La schermata rappresenta quote distinte: Pure e AP con sola approvazione. La linea blu non sostituisce il tasso AP combinato. Per combinarle servono lo stesso periodo e la stessa popolazione. I periodi brevi usano punti giornalieri e quelli lunghi settimanali.
+Il grafico attuale mostra Pure, AP combinato e l’obiettivo. Blu comprende Pure e sola approvazione: è allo stesso livello o sopra rosa; non sommate i due tassi. Ogni punto usa la propria popolazione di documenti conclusi e idonei: il tasso giornaliero non coincide automaticamente con quello dell’intero periodo. I periodi brevi mostrano punti giornalieri, quelli lunghi punti settimanali. La categoria distinta sola approvazione è diversa da questa curva combinata.
 
 **Esempio.** Pure dal 55 al 68 % dopo una modifica mostra un’associazione temporale. Confrontate tipo, fornitori e altri cambiamenti: il prima/dopo non prova da solo una causa unica.
 

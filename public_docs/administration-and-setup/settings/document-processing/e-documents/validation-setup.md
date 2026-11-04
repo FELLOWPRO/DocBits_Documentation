@@ -4,7 +4,7 @@ Diese Seite erklärt den Setup-Assistenten, die akzeptierten XRechnung-Versionen
 
 ## Validierungs-Setup
 
-<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-de.png" alt="Validierungs-Setup und akzeptierte Versionen"><figcaption><p>Validierungs-Setup und akzeptierte XRechnung-Versionen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-de-20261104.png" alt="Akzeptierte XRechnung-Versionen in der Dev-Beispielorganisation. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Akzeptierte XRechnung-Versionen in der Dev-Beispielorganisation. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Die Karte **Validierungs-Setup** zeigt Ihr aktuelles Validierungsprofil (zum Beispiel *B2G – Public Sector Receiver*). Klicken Sie auf **Antworten bearbeiten**, um den Setup-Assistenten erneut auszuführen und den Standard zu ändern, gegen den validiert wird.
 
@@ -14,7 +14,7 @@ Das Gate **Akzeptierte XRechnung-Versionen** listet jede XRechnung-Version auf. 
 
 ## Akzeptierte Profile und Schweregrad-Modell
 
-<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-de.png" alt="Akzeptierte Profile und Schweregrad-Legende"><figcaption><p>Akzeptierte Profile und die Bedeutung der Schweregrade</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-de-20261104.png" alt="Akzeptierte ZUGFeRD- und Factur-X-Profile. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche."><figcaption><p>Akzeptierte ZUGFeRD- und Factur-X-Profile. Einzelne Produkttexte können in dieser Version noch Englisch oder sprachlich fehlerhaft sein. Die Anleitung erklärt die Bedeutung; die Screenshots zeigen die unveränderte Oberfläche.</p></figcaption></figure>
 
 Wählen Sie über **Alle akzeptieren** / **Leeren** und anschließend **Speichern**, welche **Profile** Sie akzeptieren (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)).
 
@@ -22,10 +22,10 @@ Jede Validierungsregel hat einen **Schweregrad**, der bestimmt, was beim Auslös
 
 | Schweregrad | Auswirkung |
 |-------------|------------|
-| **FATAL** | Stoppt die Verarbeitung sofort. Keine weitere Ebene wird geprüft; das Dokument geht in den Fehlerstatus. |
-| **ERROR** | Das Dokument wird abgelehnt. Andere Findings desselben Dokuments werden weiterhin angezeigt; die Lieferantenbenachrichtigung (falls aktiviert) wird ausgelöst. |
+| **FATAL** | Beendet den aktuellen Prüfschritt, wenn der Fehler weitere Prüfungen verhindert. Ob die Prüfung die Dokumentverarbeitung blockiert, hängt zusätzlich von **Blockierend** am Dokumenttyp ab. |
+| **ERROR** | Ein Validierungsfehler. Bei eingeschaltetem **Blockierend** erhält das Dokument den Status **Fehler**. Das ist getrennt von der manuellen Aktion **Dokument ablehnen**. |
 | **WARNING** | Erscheint im Validierungsbericht, das Dokument durchläuft die Pipeline jedoch normal. |
-| **INFO** | Nur Audit-Log. Keine nutzerseitige Auswirkung und keine Ablehnung. |
+| **INFO** | Ein Hinweis im Prüfbericht. Er blockiert das Dokument nicht. |
 
 ### Was der Assistent ändert
 

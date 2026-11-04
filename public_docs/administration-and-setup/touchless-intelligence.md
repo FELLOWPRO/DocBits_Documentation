@@ -313,6 +313,20 @@ Das ERP bestätigt einen Export unter Umständen erst Stunden nach dem Versand. 
 **Ändert die KI etwas von selbst?**
 Nein. Die KI schreibt nur Erklärungen. Eine Einstellung ändert sich erst, wenn ein Administrator sie in der Vorschau geprüft und angewendet hat.
 
+## Touchless über MCP erklären
+
+Mit einem verbundenen DocBits-MCP-Zugang können Sie dieselben fachlichen Fragen stellen wie im Dashboard. Beginnen Sie mit einer Auswertung ohne Änderungen:
+
+> Erkläre mir für Rechnungen der letzten 30 Tage Pure Touchless, reine AP-Freigaben und die kombinierte AP-Touchless-Quote. Nenne Zähler, Nenner, ausgeschlossene und laufende Dokumente sowie den Datenstand. Trenne die Quote von der Auslesegenauigkeit.
+
+Dazu dient `touchless_get_summary` mit `period: "30d"` und `doc_type: "INVOICE"`. Für einen Teilprozess verwenden Sie zusätzlich die von `touchless_list_segments` tatsächlich angebotenen Segmentfelder und Werte. Vergleichen Sie Dashboard und MCP nur mit derselben Organisation, demselben Dokumenttyp, Zeitraum und Segment; prüfen Sie jeweils `data_as_of`.
+
+**Geprüftes Dev-Beispiel mit eigenen Testdaten:** Drei neu hochgeladene Rechnungen waren noch `IN_PROGRESS`. Die Rückgabe enthielt `population.total: 3`, `population.in_progress: 3`, `population.eligible: 0` und `official_touchless_rate.ap_pct: null`. Daraus folgt **noch keine berechenbare Quote**. Melden Sie weder „0 % Auslesegenauigkeit“ noch „100 % Touchless“, nur weil drei Uploads angekommen sind. Das `eligible` der Zusammenfassung bezeichnet hier die abgeschlossene KPI-Grundgesamtheit; ein einzelner Dokumentverlauf kann zugleich `eligible: true` und `bucket_final: false` ausweisen.
+
+Die folgenden Seiten zeigen die nächsten Fragen: [Lieferanten priorisieren](touchless-supplier-diagnosis.md), [ein Dokument erklären](touchless-document-trace.md), [Bestellabweichungen prüfen](touchless-po-matching-diagnosis.md) und [Verbesserungen kontrolliert umsetzen](touchless-change-proposals.md).
+
+MCP-Aufrufe laufen mit den Rechten des verbundenen Kontos. Organisationskontext und Rolle müssen passen. Die hier beschriebenen direkten MCP-Leseaufrufe wurden auf Dev geprüft; die Verfügbarkeit in einer anderen Oberfläche oder einer zusätzlichen Tool-Freigabeliste ist damit nicht zugesichert.
+
 ## Weiterführende Seiten
 
 * [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)

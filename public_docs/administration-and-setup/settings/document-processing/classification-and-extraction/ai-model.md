@@ -27,3 +27,7 @@ Vérifiez les colonnes et les valeurs réellement présentes dans votre version.
 Identifiez d’abord le modèle d’extraction et l’ensemble de ses préférences. La suppression d’une entrée peut retirer plusieurs préférences de ce modèle, pas uniquement le choix du modèle d’IA. Un administrateur qui doit réaliser cette opération doit examiner sa portée et la confirmation avant de poursuivre.
 
 Les traitements suivants utilisent la configuration de l’organisation et les valeurs de repli applicables au modèle concerné. D’autres modèles du même fournisseur peuvent conserver leurs propres préférences. La suppression ne relance pas automatiquement les documents historiques. Aucune entrée n’a été supprimée et aucune extraction après suppression n’a été testée pendant cette vérification.
+
+## Paramètres et dérogations
+
+Structured Output possède un réglage organisation/modèle d'extraction distinct du niveau d'IA. Modifiez-le dans Plus d'options du document ; confirmer enregistre la dérogation et redémarre ce document. Les indicateurs de la liste sont en lecture seule. Supprimer une entrée peut retirer plusieurs dérogations ensemble. [Structured Output pour les tableaux](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

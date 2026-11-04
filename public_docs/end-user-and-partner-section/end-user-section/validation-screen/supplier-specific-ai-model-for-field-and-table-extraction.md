@@ -28,3 +28,7 @@ Un changement peut nécessiter une confirmation et relancer l’extraction. Vér
 Comparez les modèles avec des documents de test autorisés et contrôlez les valeurs, les temps et les coûts. Un changement peut retraiter un document et ne garantit pas une amélioration. Pour configurer la valeur de l’organisation ou examiner les préférences des modèles d’extraction, consultez la documentation associée.
 
 [**ici**](../../../administration-and-setup/settings/document-processing/classification-and-extraction/ai-model.md)
+
+## Paramètres et dérogations
+
+Structured Output possède un réglage organisation/modèle d'extraction distinct du niveau d'IA. Modifiez-le dans Plus d'options du document ; confirmer enregistre la dérogation et redémarre ce document. Les indicateurs de la liste sont en lecture seule. Supprimer une entrée peut retirer plusieurs dérogations ensemble. [Structured Output pour les tableaux](../ai-table/structured-output.md).

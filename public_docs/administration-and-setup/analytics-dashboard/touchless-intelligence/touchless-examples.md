@@ -1,5 +1,9 @@
 # Worked examples: price and quantity
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Follow a document](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Worked example: correct extraction, different Infor data
 
 This is an illustrative case, separate from the screenshots. The invoice shows **10 units at €10.00 each**, total **€100.00**. DocBits extracts all three values correctly. The imported Infor order shows **10 units at €9.00 each**, total **€90.00**. Assume the configured matching checks block this price difference.

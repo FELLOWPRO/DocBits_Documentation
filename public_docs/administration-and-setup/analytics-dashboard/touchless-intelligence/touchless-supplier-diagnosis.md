@@ -1,5 +1,9 @@
 # Supplier Diagnosis and Issue Clusters
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Investigate recurring issues](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=06).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Click a supplier in the queue to open its diagnosis page.
 
 <figure><img src="../../../.gitbook/assets/touchless-supplier-detail.png" alt="The Supplier Diagnosis page with outcome tiles, trend and two issue clusters"><figcaption><p>The Supplier Diagnosis page: outcome tiles, trend with period selector and two issue clusters ordered by expected lift. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>

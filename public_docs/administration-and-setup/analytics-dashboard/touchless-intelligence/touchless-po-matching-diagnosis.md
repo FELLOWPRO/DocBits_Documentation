@@ -1,5 +1,9 @@
 # PO Matching Diagnosis
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Follow a document](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Overview
 
 Many invoices stop at the purchase order. The invoice says one thing, the purchase order (PO) says another, and the configured checks cannot resolve the difference automatically. **Correct extraction can still lead to a blocked PO match when source-system data differs.** A temporary stop is not yet a final outcome: later automatic processing can succeed, while a recorded manual correction or restart prevents a successful document from being touchless.

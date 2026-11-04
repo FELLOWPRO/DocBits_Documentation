@@ -1,5 +1,9 @@
 # Change Proposals and Reports
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Proposals and history](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=10).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 A recommendation can come with a **change proposal**, a single setting change that should help. Administrators work with it in four steps:
 
 1. **Preview**: shows the change (current → proposed value) and what DocBits expects. Nothing is saved. **Apply** is only possible after you looked at a preview.

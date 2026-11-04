@@ -1,5 +1,9 @@
 # Explain and improve Touchless with MCP
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Query figures with MCP](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=12).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 The following workflows use tools actually advertised by DocBits MCP. Distinguish reading and explanation from writing. Check organisation, role, document type, period and data timestamp; do not invent missing evidence.
 
 <figure><img src="../../../.gitbook/assets/touchless-owned-po-price-en.png" alt="Actual English Dev view of an owned fictional PO: 10 × 9 = 90. This is source comparison for MCP diagnosis, not a screenshot of an MCP client or proof of successful extraction or processing."><figcaption><p>Actual English Dev view of an owned fictional PO: 10 × 9 = 90. This is source comparison for MCP diagnosis, not a screenshot of an MCP client or proof of successful extraction or processing.</p></figcaption></figure>

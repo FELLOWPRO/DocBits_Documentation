@@ -1,5 +1,9 @@
 # Document Trace
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Video chapter (review version):** [Compare runs](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/en.html#chapter=08).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Enter a document ID in **Document ID**, or open a sample document from a cluster, to see **what happened to this one document**.
 
 The header shows the file, its status (for example **In progress**), the run you are looking at and its first blocker, and a **Document** button with the document ID.

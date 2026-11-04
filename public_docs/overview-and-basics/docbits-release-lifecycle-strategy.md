@@ -23,7 +23,7 @@ Antes de mudar, verifique se ambos os canais estão prontos e disponíveis no se
 
 ## Visão geral do ciclo de vida
 
-![Ciclo de vida de releases do DocBits em três fases com VESTA e NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy.png)
+![Ciclo de vida de releases do DocBits em três fases com VESTA e NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
 Cada ciclo é composto por três fases. Em seguida, um rollover gerenciado pela FELLOWPRO leva a release de produção do NOVA para o VESTA e inicia o próximo ciclo.
 
@@ -82,7 +82,7 @@ As mesmas três fases se repetem então com os novos números de versão.
 
 O diagrama abaixo ilustra com mais detalhes o ciclo de releases descrito acima.
 
-![Ciclo de releases detalhado do DocBits com VESTA e NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
+![Ciclo de releases detalhado do DocBits com VESTA e NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
 
 ### Cadência de releases
 

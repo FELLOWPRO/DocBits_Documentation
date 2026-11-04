@@ -20,7 +20,7 @@ Você pode ajudar a treinar o DocBits para reconhecer esses campos identificando
 Repita este processo para todos os campos necessários.\
 Uma vez que todos os campos necessários tenham sido preenchidos, **clique em "Salvar Regras"** para armazenar o treinamento. Isso garante que o DocBits aprenda onde encontrar cada informação para documentos semelhantes no futuro.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/header_field_training_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/header_field_training_2.png)
 
 Após salvar, seu documento estará pronto para ser exportado — e na próxima vez, o DocBits extrairá automaticamente os campos treinados.
 

@@ -10,7 +10,7 @@ As ordens de compra chegam normalmente ao DocBits de forma automática através 
 
 Existem dois endpoints e fazem a mesma coisa. A única diferença está na forma como entrega o BOD:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-po-bod-endpoints.png)
 
 | Endpoint | Quando o usar |
 | --- | --- |
@@ -29,7 +29,7 @@ Vai precisar de:
 
 Para encontrar o Org ID, vá a **Settings → Integration & SSO** e abra a secção **ID**. Clique no ícone de cópia junto ao campo.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-org-id.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-org-id.png)
 
 {% hint style="info" %}
 **Sub Org ID** mostra a suborganização que estiver selecionada no cabeçalho. Com **CROSS** selecionado — a vista sobre todas as suborganizações — mostra o mesmo valor que **Org ID**, razão pela qual os dois campos coincidem na captura acima. Mude primeiro para uma suborganização específica se precisar do ID dela.
@@ -62,22 +62,22 @@ Tudo o que está sob **import** fica bloqueado até autorizar. Há duas coisas a
 
 * Clique no **ícone de cadeado** à direita do endpoint.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-swagger-lock.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-swagger-lock.png)
 
 * Abre-se a caixa de diálogo **Available authorizations** com duas entradas.
 * Cole o seu **Org ID** em **X-ORG-ID** e clique em **Authorize**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid.png)
 
 * A entrada mostra agora **Authorized** e oculta o valor.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-orgid-done.png)
 
 * Desça até **X-API-KEY**, cole a sua API key e clique em **Authorize**. No DocBits encontra-a em **Settings → Integration & SSO**, na secção **API Key**, ou pode [criar uma nova chave](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#criar-uma-chave-api).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey-done.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-authorize-apikey-done.png)
 
 * Clique em **Close**.
 
@@ -87,13 +87,13 @@ Cole a chave sozinha — não escreva `Bearer` à frente. Ambas as autorizaçõe
 
 ### 3. Preencher os campos
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-tryitout-po.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-tryitout-po.png)
 
 Clique em **Try it out** e preencha depois o formulário do endpoint que escolheu.
 
 #### Carregar um ficheiro — `/import/purchase_order_bod`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-po-bod-form.png)
 
 | Campo | |
 | --- | --- |
@@ -127,7 +127,7 @@ Os mapeamentos de linha usam os mesmos nomes `custom_field_1` … `custom_field_
 
 #### Colar o XML — `/import/purchase_order_bod_xml`
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-xml-form.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-po-bod-xml-form.png)
 
 Este endpoint não aceita o BOD como uma simples colagem. O campo **xml** é um objeto, pré-preenchido com:
 
@@ -163,11 +163,11 @@ Antes de executar, verifique a lista pendente **Servers** no fundo do formulári
 
 Clique em **Execute**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-execute.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-execute.png)
 
 **Se carregou um ficheiro**, a resposta é:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-response.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/import-response.png)
 
 ```json
 {

@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-Muitas faturas param no pedido de compra. A fatura diz uma coisa, o pedido de compra (PO) diz outra, e o DocBits não consegue decidir sozinho se elas combinam. Todo documento assim precisa de uma pessoa, portanto **não é touchless**.
+Uma fatura corretamente extraída pode parar se os dados da encomenda divergirem. Um bloqueio temporário não é um resultado final. Retoma automática pode manter Pure; correção ou reinício humano registado dá AP Assisted após sucesso.
 
 O Touchless Intelligence mostra **por que** um PO match falhou e **como** o DocBits tentou fazer o match. Esta página explica as duas etapas do pipeline envolvidas, os motivos que você verá e o **fluxo de decisão do PO Matching** (PO matching decision flow), um diagrama que mostra as etapas do match uma após a outra.
 
@@ -40,6 +40,9 @@ Um documento que para na etapa 9 ou 10 aparece na fila de fornecedores com o pri
 {% hint style="info" %}
 Nem todo motivo de PO Matching pode ser corrigido no DocBits. Se o fornecedor envia um número de PO errado, o cartão diz **Supplier action only**: o fornecedor precisa corrigir o documento e enviá-lo de novo.
 {% endhint %}
+
+Casos de preço e quantidade estão nos [exemplos](touchless-examples.md).
+
 
 ## O fluxo de decisão do PO Matching
 
@@ -100,7 +103,7 @@ Um fornecedor fatura o item **"A-4711-X"**, o seu PO diz **"4711"**. Nenhuma reg
 
 * No cluster você lê *27 affected, 27 recoverable*, ganho esperado, por exemplo, de **+8,7 pp**.
 * A correção está do seu lado: adicione ou reordene uma regra que faça o match pelo número de item do fornecedor ou pela descrição, ou mantenha os números de item do fornecedor nos dados mestres.
-* Depois de alterar a regra, aplique a alteração com uma [proposta de alteração](touchless-change-proposals.md) e leia o **Change history** duas semanas depois: taxa pure antes e depois.
+* Após alteração DocBits suportada, use pré-visualização e histórico para medir AP combinado antes/depois. Corrija Infor e verifique importação e novas faturas; isso não cria automaticamente um registo no histórico de parâmetros.
 
 ### Exemplo 3: o pedido de compra ainda não existe
 
@@ -117,7 +120,7 @@ Depois que uma regra de transformação para a tabela de um fornecedor entrou em
 3. Abra o **Supplier Diagnosis** e leia o cluster: motivo, documentos afetados, **What to change**, **Missing evidence**.
 4. Abra **How this organisation matches** e verifique o conjunto de regras: versão, proprietário e tolerâncias.
 5. Abra um **documento de exemplo** e o seu [Rastreamento do documento](touchless-document-trace.md): qual etapa, qual motivo?
-6. Altere **uma** coisa (ordem das regras, tolerância, mapeamento de itens) com uma pré-visualização, para que o **Change history** possa medi-la.
+6. Resolva uma causa confirmada. Use pré-visualização para propostas DocBits suportadas. Para Infor verifique separadamente origem, importação e novas faturas; não presuma registo automático no histórico.
 
 ## Páginas relacionadas
 
@@ -127,3 +130,7 @@ Depois que uma regra de transformação para a tabela de um fornecedor entrou em
 * [Propostas de alteração e relatórios](touchless-change-proposals.md)
 * [Regras de matching de pedidos de compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * Cartões de correspondência de pedidos de compra: guia completo
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

@@ -6,12 +6,29 @@
 
 **Touchless Intelligence** beantwortet zwei Fragen zu Ihrer Dokumentenverarbeitung:
 
-1. **Wie viele Dokumente laufen durch DocBits, ohne dass jemand eingreift?** Das ist Ihre *Touchless-Quote*.
+1. **Wie viele Dokumente werden ohne manuelle Korrektur oder sonstigen Bearbeitungseingriff abgeschlossen?** Das ist Ihre *AP-Touchless-Quote*; eine reine fachliche Freigabe ist erlaubt. *Pure Touchless* schließt auch diese Freigabe aus.
 2. **Warum bleiben die anderen stehen, und was sollten wir ändern, damit weniger stehen bleiben?** Das ist die *Diagnose*.
 
 Touchless Intelligence ist ein Tab des [Analytics Dashboards](analytics-dashboard.md). Es verursacht keinen zusätzlichen Aufwand für Ihr Team: DocBits zeichnet auf, was in der Verarbeitungs-Pipeline mit jedem Dokument passiert, und wertet das Ergebnis alle 15 Minuten aus.
 
 <figure><img src="../.gitbook/assets/touchless-overview-de.png" alt="Der Tab Touchless Intelligence mit fünf Kennzahlen, Verbesserungsvorschlägen und dem Diagramm der Touchless-Quote"><figcaption><p>Der Tab Touchless Intelligence: Kennzahlen, Verbesserungen, die Quote im Zeitverlauf und das Diagramm „Wo Touchless zuerst verloren geht“. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+
+### Korrekte Auslesung und ein Touchless-Prozess sind zwei verschiedene Fragen
+
+**DocBits kann alle Rechnungswerte richtig auslesen, und trotzdem braucht die Rechnung einen AP-Eingriff, weil die Daten aus dem Quellsystem abweichen.** AP steht für Accounts Payable, also die Kreditorenbuchhaltung. Prüfen Sie diese beiden Fragen getrennt:
+
+| Frage | Was Sie vergleichen | Was das Ergebnis aussagt |
+| --- | --- | --- |
+| **Hat DocBits den Beleg richtig ausgelesen?** | Originalrechnung mit den ausgelesenen Kopffeldern und Tabellenpositionen, vor einer manuellen Korrektur | Auslesequalität: Entspricht der ausgelesene Wert dem tatsächlichen Inhalt der Rechnung? |
+| **Konnte der Prozess ohne Bearbeitungseingriff abgeschlossen werden?** | Korrekt ausgelesene Rechnung mit den Bestell- und Stammdaten aus Infor ERP sowie dem aufgezeichneten Bearbeitungsverlauf | Prozessautomatisierung: Konnten die konfigurierten Prüfungen, der Abgleich und der Export ohne Korrektur oder Neustart abgeschlossen werden? |
+
+Ein anderer Wert in Infor sagt allein noch nicht, welche Seite falsch ist. Prüfen Sie Rechnung, vereinbarte Bestellung und die tatsächlich nach DocBits importierten Daten. Die Quelldaten können falsch sein, der Import kann veraltet sein oder der Lieferant kann einen anderen Wert berechnet haben.
+
+{% hint style="info" %}
+**Die Touchless-Quote misst den Prozess, nicht die Auslesegenauigkeit.** „AP mit Eingriff“ beweist keinen Auslesefehler von DocBits. Umgekehrt beweisen ein bestandener Extraktionsschritt oder ein hoher Konfidenzwert nicht, dass jeder Wert richtig ist. Dafür müssen Sie den Originalbeleg mit den ausgelesenen Werten vergleichen.
+{% endhint %}
+
+Die Screenshots zeigen die deutsch eingestellte DocBits-Oberfläche. Produktbegriffe wie **Pure Touchless** und **AP Touchless** bleiben wie in der Oberfläche erhalten; technische Kennungen und unveränderte englische Produktbeschriftungen sind keine übersetzten Beispieldaten.
 
 ### Was Sie damit tun können
 
@@ -37,23 +54,27 @@ Wenn Sie keine Berechtigung haben, zeigt die Seite *Aktion nicht erlaubt, bitte 
 
 ## Was „Touchless“ bedeutet
 
-Jedes Dokument endet in genau **einem** Ergebnis:
+Jedes abgeschlossene, berücksichtigte Dokument wird genau **einer** dieser Kategorien zugeordnet:
 
-| Ergebnis | Bedeutung | Zählt in der Quote |
+| Kategorie | Bedeutung | Zählt als touchless? |
 | --- | --- | --- |
-| **Pure Touchless** | Vom Import bis zum Export **ganz ohne menschliches Zutun** verarbeitet | Ja, als Erfolg |
-| **AP Touchless** | Lief automatisch, und eine Person hat nur die **fachliche Freigabe** erteilt. Eine Korrektur war nicht nötig | Ja, als Erfolg |
-| **AP mit Eingriff** (AP assisted) | Eine Person musste **ein Feld korrigieren, das Dokument neu starten** oder anderweitig eingreifen | Ja, als Fehlschlag. Es ist kein Fehler, nur Automatisierung, die das Dokument nicht vollständig getragen hat |
-| **Prozessausnahme** (Process exception) | Endete in einem **Fehler**, wurde **abgelehnt**, wurde **vom ERP zurückgewiesen** oder **blieb in der Pipeline hängen** | Ja, als Fehlschlag |
-| **In Bearbeitung** (In progress) | Noch nicht abgeschlossen | **Nein**. Es gibt noch kein Ergebnis |
-| **Nicht berücksichtigt** (Not eligible) | Gelöscht, archiviert, ein Testdokument oder ein ausgeschlossener Dokumenttyp | **Nein** |
+| **Pure Touchless** | Erfolgreich verarbeitet, ohne menschlichen Eingriff oder Freigabe | Ja |
+| **AP Touchless** | Erfolgreich verarbeitet; nur eine fachliche Freigabe war nötig | Ja |
+| **AP Assisted** – „AP mit Eingriff“ | Erfolgreich verarbeitet, aber jemand musste korrigieren, manuell validieren oder neu starten | Nein |
+| **Prozessausnahme** | Beispielsweise abgelehnt, endgültiger Fehler, ERP-Zurückweisung oder ein als Ausnahme eingestufter Stillstand | Nein |
 
-Die **Touchless-Quote** lautet:
+„Manuell validieren“ meint hier einen aufgezeichneten Bearbeitungseingriff. Eine reine fachliche Freigabe zählt weiterhin als **AP Touchless**. **AP Assisted beschreibt den Eingriff, nicht dessen Ursache:** DocBits kann vollständig richtig ausgelesen haben, während abweichende Infor-Daten den Eingriff erfordern.
+
+Dokumente **in Bearbeitung** (In progress) und **nicht berücksichtigte** Dokumente (Not eligible, beispielsweise gelöschte oder ausgeschlossene Testdokumente) bleiben außerhalb dieser vier Kategorien für die Quotenberechnung.
+
+Die **AP-Touchless-Quote**, einschließlich Dokumenten mit reiner Freigabe, lautet:
 
 ```
 rate = (Pure touchless + AP touchless)
        ÷ (Pure touchless + AP touchless + AP assisted + Process exception)
 ```
+
+**AP touchless** im Zähler bezeichnet hier das Dokumentergebnis „nur Freigabe“. Der **Prozentwert der Karte AP Touchless** ist dagegen die gemeinsame Quote: vollständig automatische Dokumente plus Dokumente mit reiner Freigabe. **Addieren Sie die beiden angezeigten Prozentwerte nicht.** Bei der Pure-Quote stehen nur die vollständig automatischen Dokumente im Zähler; der Nenner bleibt gleich.
 
 Dokumente, die noch **in Bearbeitung** oder **nicht berücksichtigt** sind, gehen nie in die Berechnung ein. Das schützt die Quote: Ein Dokument, das vor fünf Minuten eingegangen ist, kann sie nicht senken.
 
@@ -76,14 +97,45 @@ In 30 Tagen sind 200 Dokumente eingegangen:
 
 * Nenner: 120 + 30 + 30 + 10 = **190**. Die 8 Dokumente in Bearbeitung und die 2 nicht berücksichtigten Dokumente bleiben außen vor.
 * **Pure Touchless**: 120 ÷ 190 = **63,2 %**
-* **AP Touchless**: 30 ÷ 190 = **15,8 %**
-* **Touchless-Quote**: (120 + 30) ÷ 190 = **78,9 %**
+* Anteil mit **reiner Freigabe**: 30 ÷ 190 = **15,8 %**. Das ist der Anteil dieses Dokumentergebnisses, nicht die gemeinsame AP-Touchless-Quote.
+* **AP-Touchless-Quote**: (120 + 30) ÷ 190 = **78,9 %**
 
-Der Tab zeigt ein **Ziel** (70 %, sofern Ihre Organisation kein anderes verwendet). In diesem Beispiel liegt die Quote über dem Ziel.
+Der Tab zeigt ein **Ziel** (70 %, sofern Ihre Organisation kein anderes verwendet). In diesem Beispiel liegt die gemeinsame AP-Quote über 70 %, die Pure-Quote mit 63,2 % darunter. Vergleichen Sie das Ziel mit der jeweils auf der Karte oder im Diagramm benannten Quote.
 
 Klicken Sie oben rechts auf **Wie Touchless berechnet wird** (How touchless is calculated), um diese Erklärung direkt in DocBits zu öffnen, mit den Zahlen Ihres eigenen Zeitraums (Dokumente im Zeitraum, noch in Bearbeitung, ausgeschlossen, gemessen).
 
-<figure><img src="../.gitbook/assets/touchless-methodology-de.png" alt="Die Seitenleiste „Wie Touchless berechnet wird“ mit den Zahlen des Zeitraums"><figcaption><p>Die Seitenleiste <strong>Wie Touchless berechnet wird</strong>: die Formel, <strong>Ihre Zahlen in diesem Zeitraum</strong> (hier 2.425 Dokumente, 2.115 noch in Bearbeitung, 310 gemessen) und was die einzelnen Ergebnisse bedeuten. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology-de.png" alt="Die Seitenleiste „Wie Touchless berechnet wird“ mit 310 gemessenen Dokumenten, 50,3 Prozent Pure Touchless und 53,9 Prozent Touchless inklusive Freigabe"><figcaption><p>Die Seitenleiste <strong>Wie Touchless berechnet wird</strong>: hier 3.606 Dokumente, davon 3.296 noch in Bearbeitung und 310 gemessen. 156 vollständig automatische Dokumente ergeben 50,3 % Pure Touchless; zusammen mit 11 Dokumenten mit reiner Freigabe sind es 167 und damit 53,9 % AP Touchless. Diese Zahlen beschreiben den Prozess, nicht die Auslesegenauigkeit. Beispielorganisation mit Demodaten.</p></figcaption></figure>
+
+### Beispiel: 100 % richtig ausgelesen, 80 % AP Touchless
+
+Angenommen, ein Vergleich von Originalrechnungen und ausgelesenen Werten bestätigt: **Alle 100 abgeschlossenen, berücksichtigten Rechnungen wurden vollständig richtig ausgelesen.** Ihre Verarbeitung endet so:
+
+| Was passiert ist | Dokumente | Ergebnis |
+| --- | --- | --- |
+| Rechnung und Quelldaten stimmen überein; der gesamte Prozess läuft automatisch durch | 70 | Pure Touchless |
+| Rechnung und Quelldaten stimmen überein; nur eine fachliche Freigabe ist nötig | 10 | AP Touchless (Dokumentergebnis „nur Freigabe“) |
+| Die Rechnung ist richtig ausgelesen, die importierten Infor-Daten weichen jedoch ab. AP klärt die Abweichung und startet die Dokumente nach Korrektur der Quelldaten manuell in DocBits neu; anschließend werden sie erfolgreich abgeschlossen | 20 | AP mit Eingriff |
+
+* **Richtig ausgelesene Dokumente in dieser geprüften Stichprobe:** 100 ÷ 100 = **100 %**.
+* **Pure-Touchless-Quote:** 70 ÷ 100 = **70 %**.
+* **AP-Touchless-Quote:** (70 + 10) ÷ 100 = **80 %**.
+
+Das ist kein Widerspruch: Alle Rechnungen waren richtig ausgelesen, 20 brauchten wegen der Quelldaten trotzdem einen Bearbeitungseingriff. Die **100 % Auslesequalität sind hier das beispielhafte Ergebnis einer gesonderten Belegprüfung**, keine zusätzliche Kennzahl dieses Dashboards. Sie lassen sich nicht allein aus den Touchless-Ergebnissen berechnen.
+
+### Beispiele: Was musste AP tatsächlich tun?
+
+Die folgenden Fälle sind Schulungsbeispiele, keine Einzeldokumente aus den Screenshots. Die erfolgreichen Ergebnisse setzen den Abschluss der Verarbeitung voraus, einschließlich einer ERP-Bestätigung, sofern diese erforderlich ist.
+
+| Fall | Originalrechnung / DocBits-Auslesung / Quelldaten | AP-Aktion und Ergebnis | Wo Sie die Ursache prüfen |
+| --- | --- | --- | --- |
+| **Auslesefehler** | Bestellnummer `45001234` / falsch als `45001284` ausgelesen / richtige Bestellung `45001234` ist in Infor vorhanden | AP korrigiert die ausgelesene Nummer; die Rechnung endet erfolgreich als **AP mit Eingriff** | Extraktion für diesen Lieferanten |
+| **Abweichung im Quellsystem** | Stückpreis 10,00 € / korrekt 10,00 € ausgelesen / importierte Infor-Bestellung enthält 9,00 €, außerhalb der konfigurierten Toleranz | AP bestätigt den vereinbarten Preis von 10,00 €, veranlasst die Bestellkorrektur und startet die Rechnung manuell in DocBits neu; sie endet erfolgreich als **AP mit Eingriff** | Infor-Bestelldaten und deren Import |
+| **Verzögerter Import** | Bestellnummer auf Rechnung und in DocBits korrekt / Bestellung existiert in Infor, ist aber noch nicht in DocBits angekommen | Erfolgen späterer Import und erneute Verarbeitung automatisch ohne aufgezeichneten menschlichen Eingriff oder Freigabe, kann das Ergebnis **Pure Touchless** bleiben. Ein manueller Neustart mit anschließendem Erfolg ergibt **AP mit Eingriff** | Importzeitpunkt und tatsächliche Laufhistorie |
+| **ERP-Ablehnung** | Auslesung korrekt, das ERP weist das exportierte Dokument jedoch zurück | **Prozessausnahme**, solange der Fall als abschließende ERP-Ablehnung eingeordnet ist, auch nach einem vorherigen Eingriff | ERP-Ablehnung und Exportnachweise |
+
+**Auch eine kleine aufgezeichnete Korrektur oder ein manueller Neustart zählt als Eingriff.** „AP assisted“ bedeutet „mit Unterstützung durch AP“; es ist keine Bezeichnung für einen eigenen KI-Assistenten. Ein Quelldatenproblem und ein Auslesefehler können deshalb zum gleichen Ergebnis führen, brauchen aber unterschiedliche Behebungen.
+
+Die Einordnung beruht auf den Ereignissen, die DocBits aufzeichnet. Setzen Sie nicht voraus, dass ausschließlich in Infor erledigte Arbeit ohne entsprechendes DocBits-Ereignis automatisch als AP-Eingriff gezählt wird. Halten Sie diese Arbeit zusätzlich in der Diagnose fest.
 
 ### Wie aktuell sind die Zahlen
 
@@ -109,11 +161,12 @@ Die **Unterorganisation**, die Sie oben in DocBits gewählt haben, grenzt die Ke
 | Karte | Zeigt | Beispiel (zur Veranschaulichung) |
 | --- | --- | --- |
 | **Pure Touchless** | Den Prozentwert und die Abweichung vom Ziel | **63,2 %** · „120 Dokumente“ · „−6,8 PP zum Ziel von 70 %“ (rot, unter dem Ziel) |
-| **AP Touchless** | Den Prozentwert | **15,8 %** · „30 Dokumente“ |
+| **AP Touchless** | Gemeinsame Quote aus Pure und reiner Freigabe; die Dokumentanzahl darunter bezeichnet die Fälle mit reiner Freigabe | **78,9 %** · „30 Dokumente“ (nur Freigabe) |
 | **AP mit Eingriff** | Die Anzahl der Dokumente und ihren Anteil | **30** · 15,8 % |
 | **Prozessausnahmen** | Die Anzahl der Dokumente und ihren Anteil | **10** · 5,3 % |
 | **Diagnoseabdeckung** (Diagnosis coverage) | Bei wie vielen blockierten Dokumenten die Ursache **bekannt** ist | **80 %** · „10 ohne bekannte Ursache“ |
 
+* Im Screenshot ergeben 156 vollständig automatische plus 11 nur freigegebene Dokumente **167 ÷ 310 = 53,9 % AP Touchless**. Pure allein sind **156 ÷ 310 = 50,3 %**. Die Prozentwerte überschneiden sich.
 * Eine Karte zeigt einen Strich (—) statt **0 %**, wenn es nichts zu messen gibt. Ein Strich bedeutet „keine Daten“, nicht „null“.
 * **Diagnoseabdeckung** = Dokumente mit bekanntem Blockadegrund ÷ alle blockierten Dokumente. Beispiel: 50 blockierte Dokumente, 10 davon mit unbekannter Ursache → 40 ÷ 50 = **80 %**. Ein niedriger Wert bedeutet „wir verstehen noch nicht, warum Dokumente stehen bleiben“. Verbessern Sie ihn, bevor Sie einzelne Ursachen beheben.
 * **Klicken Sie auf eine Karte**, um die Dokumentenliste hinter der Zahl in einem neuen Tab zu öffnen („Dokumente zu dieser Zahl anzeigen“). Karten mit 0 Dokumenten sind nicht anklickbar.
@@ -122,7 +175,7 @@ Die **Unterorganisation**, die Sie oben in DocBits gewählt haben, grenzt die Ke
 
 <figure><img src="../.gitbook/assets/touchless-trend-de.png" alt="Liniendiagramm der Pure-Touchless- und der AP-Touchless-Quote pro Tag mit der Ziellinie bei 70 Prozent"><figcaption><p>Die Quote pro Tag mit der Ziellinie. Hier bleibt die Quote zwischen 40 und 60 % und fällt ab dem 10. Oktober stark ab. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
-Ein Diagramm mit einer Linie für **Pure Touchless**, einer für **AP Touchless** und der **Ziellinie**. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte.
+Der Screenshot zeigt getrennte Ergebnisanteile: **Pure Touchless** und **AP Touchless** (nur Freigabe) sowie die **Ziellinie**. Die blaue Linie dieser Aufnahme ist der Anteil mit reiner Freigabe, nicht die gemeinsame AP-Kennzahl im Kopfbereich. Für die gemeinsame Quote werden Pure und reine Freigaben über dieselbe Grundgesamtheit addiert. Unterscheiden Sie beim Lesen der Diagramme Ergebnisanteile und gemeinsame Kennzahl. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte.
 
 **Beispiel.** Nachdem Sie am 1. Oktober den automatischen Bestellabgleich eingeschaltet haben, steigt die Pure-Quote innerhalb von zwei Wochen von 55 % auf 68 %. Das Diagramm zeigt den Tag, an dem die Kurve dreht, sodass Sie ihn Ihrer Änderung zuordnen können.
 
@@ -132,11 +185,9 @@ Ein Diagramm mit einer Linie für **Pure Touchless**, einer für **AP Touchless*
 
 Ein Balkendiagramm der **blockierten Dokumente** pro Pipeline-Schritt: der **erste** Schritt, der ein Dokument gestoppt hat.
 
-**Beispiel.** Balken: Lieferantenerkennung 12, Feldvalidierung 41, Bestellpositionsabgleich 7. Der größte Balken sagt Ihnen, dass Sie sich zuerst die **Feldvalidierung** ansehen sollten, meist weil ein Pflichtfeld nicht extrahiert wird.
+**Beispiel.** Balken: Lieferantenerkennung 12, Feldvalidierung 41, Bestellpositionsabgleich 7. Der größte Balken sagt Ihnen, dass Sie zuerst die **Feldvalidierung** prüfen sollten. Ein nicht ausgelesener Wert ist eine mögliche Ursache; vergleichen Sie Originalrechnung, Feldregeln und verfügbare Quelldaten, bevor Sie die Ursache bestätigen.
 
 ### Lieferantenpotenziale
-
-<figure><img src="../.gitbook/assets/touchless-supplier-queue-de.png" alt="Die Tabelle Lieferantenpotenziale mit Volumen, Pure-Quote, verlorenen Dokumenten, Grundursache, rückgewinnbaren Dokumenten, erwartetem Zuwachs, Konfidenz und Status"><figcaption><p>Die Lieferanten-Warteschlange (gekürzt auf die ersten vier Zeilen). Der erste Lieferant hat 106 Dokumente, eine Pure-Quote von 38,7 % und 65 rückgewinnbare Dokumente, daher bringt seine Behebung <strong>+21 PP</strong>. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 Die Warteschlange beantwortet die Frage **„Welchen Lieferanten sollten wir zuerst verbessern?“** Sie ist nach **rückgewinnbaren** Dokumenten sortiert, die höchsten zuerst, mit 25 Zeilen pro Seite.
 
@@ -163,13 +214,11 @@ Mit dem Suchfeld („Lieferantennummer oder Name suchen“) finden Sie einen Lie
 
 ### Lieferanten vergleichen
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers-de.png" alt="Die Seite „Lieferanten vergleichen“ mit drei Lieferanten nebeneinander und einem Balkendiagramm ihrer Ergebnisse"><figcaption><p>Drei Lieferanten nebeneinander: Pure-Quote, verlorene und rückgewinnbare Dokumente, Grundursache, erwarteter Zuwachs und ein Balkendiagramm der Ergebnisse. Jedes <strong>Öffnen</strong> führt zur Lieferantendiagnose. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
-
 Klicken Sie auf **Lieferanten vergleichen**, wählen Sie **zwei bis fünf** Lieferanten aus (jeder wird mit seiner Anzahl blockierter Dokumente aufgeführt) und klicken Sie auf **Vergleichen**.
 
 Der Vergleich zeigt die Lieferanten nebeneinander: **Pure-Quote**, **Verlorene Dokumente**, **Rückgewinnbar**, **Grundursache**, **Erwarteter Zuwachs**, ein Balkendiagramm der Ergebnisse und einen Link zur jeweiligen **Lieferantendiagnose**.
 
-**Beispiel.** Lieferant A und B senden dasselbe Rechnungslayout. B hat eine Pure-Quote von 80 %, A nur 35 %. Beide haben die Grundursache „Stammdaten“. Der Vergleich zeigt, dass das Layout in Ordnung ist und dass der Lieferantensatz von A unvollständig ist. Korrigieren Sie die Stammdaten von A, statt das Template zu ändern.
+**Beispiel.** Lieferant A und B senden dasselbe Rechnungslayout. B hat eine Pure-Quote von 80 %, A nur 35 %. Bei A deutet die Diagnose auf „Stammdaten“. Vergleichen Sie Originalrechnungen, ausgelesene Werte und importierte Lieferantensätze, bevor Sie die Ursache bestätigen. Der Quotenunterschied allein beweist weder ein korrektes Layout noch unvollständige Stammdaten.
 
 ### Mit KI analysieren
 
@@ -207,6 +256,12 @@ All das steht auch Ihrem KI-Assistenten über den [DocBits MCP](../advanced-func
 
 ## FAQ
 
+**DocBits hat alles richtig ausgelesen. Warum ist die Rechnung „AP mit Eingriff“?**
+Touchless misst den gesamten Prozess. Falsche oder veraltete Infor-Daten können auch bei korrekter Auslesung eine aufgezeichnete Korrektur oder einen manuellen Neustart erfordern. Prüfen Sie Originalrechnung, DocBits-Auslesung und importierte Quelldaten getrennt.
+
+**Sagt „AP mit Eingriff“, ob DocBits oder Infor die Arbeit verursacht hat?**
+Nein. Es beschreibt den Eingriff, nicht die Verantwortlichkeit. Bestätigen Sie die Ursache anhand des Dokumentverlaufs sowie der zugrunde liegenden Beleg- und Quelldaten.
+
 **Die Quoten zeigen einen Strich (—).**
 Im Zeitraum hat kein Dokument ein Endergebnis erreicht, oder es wurden weniger Dokumente als das Minimum gemessen. Dokumente, die noch in Bearbeitung sind, werden nicht gezählt.
 
@@ -233,3 +288,5 @@ Nein. Die KI schreibt nur Erklärungen. Eine Einstellung ändert sich erst, wenn
 * [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)
 
 <!-- Source notes (not shown): screenshots come from the dev test organisation with synthetic demo data (seed script) and fictional supplier names; the PO matching decision flow has no screenshot yet. facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described. -->
+
+<!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->

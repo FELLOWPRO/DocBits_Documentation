@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Viele Rechnungen bleiben bei der Bestellung stehen. Die Rechnung sagt das eine, die Bestellung (PO) etwas anderes, und DocBits kann nicht selbst entscheiden, ob beide zusammengehören. Jedes solche Dokument braucht eine Person, ist also **nicht touchless**.
+Viele Rechnungen bleiben bei der Bestellung stehen. Die Rechnung sagt das eine, die Bestellung (PO) etwas anderes, und die konfigurierten Prüfungen können den Unterschied nicht automatisch auflösen. **Eine korrekte Auslesung kann bei abweichenden Quelldaten trotzdem zu einem blockierten Bestellabgleich führen.** Ein vorübergehender Stopp ist noch kein Endergebnis: Eine spätere automatische Verarbeitung kann erfolgreich sein; eine aufgezeichnete manuelle Korrektur oder ein Neustart verhindert bei erfolgreichem Abschluss die Touchless-Einordnung.
 
 Touchless Intelligence zeigt Ihnen, **warum** ein Bestellabgleich gescheitert ist und **wie** DocBits abgleichen wollte. Diese Seite erklärt die beiden beteiligten Pipeline-Schritte, die Gründe, die Sie sehen werden, und den **Entscheidungsablauf des Bestellabgleichs**, ein Diagramm, das die Abgleichschritte nacheinander zeigt.
 
@@ -40,6 +40,23 @@ Ein Dokument, das bei Schritt 9 oder 10 stehen bleibt, erscheint in der Lieferan
 {% hint style="info" %}
 Nicht jeder Grund im Bestellabgleich lässt sich in DocBits beheben. Sendet der Lieferant eine falsche Bestellnummer, steht auf der Karte **Nur Lieferantenaktion**: Der Lieferant muss das Dokument korrigieren und erneut senden.
 {% endhint %}
+
+## Durchgängiges Beispiel: richtig ausgelesen, andere Infor-Daten
+
+Dieser Schulungsfall ist unabhängig von den Screenshots. Die Rechnung enthält **10 Stück zu je 10,00 €**, insgesamt **100,00 €**. DocBits liest alle drei Werte korrekt aus. Die importierte Infor-Bestellung enthält **10 Stück zu je 9,00 €**, insgesamt **90,00 €**. Angenommen, die konfigurierten Abgleichprüfungen blockieren diese Preisabweichung.
+
+1. **Auslesung prüfen:** Vergleichen Sie Originalrechnung und ausgelesene Menge, Stückpreis und Positionsbetrag. Sie stimmen überein; für diese Werte ist kein Auslesefehler nachgewiesen.
+2. **Quelle prüfen:** Vergleichen Sie die importierte Bestellung mit der aktuellen Infor-Bestellung, einschließlich Preiseinheit und Importzeitpunkt. Ein veralteter Import und eine falsche Infor-Bestellung brauchen unterschiedliche Behebungen.
+3. **Fachlich richtigen Wert klären:** In diesem Beispiel bestätigt der Einkauf den vereinbarten Preis von 10,00 € und korrigiert die Infor-Bestellung. Wären 9,00 € vereinbart, müsste stattdessen die Lieferantenrechnung geklärt werden.
+4. **Korrigierten Import nachweisen:** Prüfen Sie vor der erneuten Verarbeitung, ob die richtigen Bestellwerte tatsächlich in DocBits angekommen sind.
+5. **AP-Aktion festhalten:** AP startet diese Rechnung manuell in DocBits neu; nach erfolgreichem Abschluss zählt sie als **AP mit Eingriff**. Korrekte Auslesung und ein Prozess mit Eingriff können gleichzeitig zutreffen.
+6. **Folgerechnungen prüfen:** Kontrollieren Sie, ob Abgleich und Export jetzt ohne weitere Korrektur oder Neustart abschließen. Die bereits bearbeitete Rechnung bleibt bearbeitet; spätere Rechnungen liefern den Verbesserungsnachweis.
+
+{% hint style="warning" %}
+Ändern Sie korrekt ausgelesene 10,00 € nicht auf 9,00 €, nur damit eine falsche Bestellung passt. Erweitern Sie auch keine Toleranz allein zum Verdecken der Abweichung. Klären Sie den vereinbarten Wert und korrigieren Sie die verantwortlichen Daten oder die Konfiguration. Der Abgleichblocker zeigt, wo der Prozess stoppt, nicht wer die Ursache gesetzt hat.
+{% endhint %}
+
+Die getrennte Betrachtung der Auslesequalität und die AP-Touchless-Berechnung finden Sie unter [Touchless Intelligence](touchless-intelligence.md), die zu vergleichenden Nachweise unter [Dokumentverlauf](touchless-document-trace.md).
 
 ## Der Entscheidungsablauf des Bestellabgleichs
 
@@ -100,7 +117,7 @@ Ein Lieferant stellt den Artikel **„A-4711-X“** in Rechnung, Ihre Bestellung
 
 * Im Cluster lesen Sie *27 betroffen, 27 rückgewinnbar*, erwarteter Zuwachs zum Beispiel **+8,7 PP**.
 * Die Lösung liegt auf Ihrer Seite: Fügen Sie eine Regel hinzu oder ändern Sie die Reihenfolge, sodass nach der Artikelnummer des Lieferanten oder nach der Beschreibung abgeglichen wird, oder pflegen Sie die Artikelnummern des Lieferanten in den Stammdaten.
-* Nachdem Sie die Regel geändert haben, wenden Sie die Änderung mit einem [Änderungsvorschlag](touchless-change-proposals.md) an und lesen zwei Wochen später die **Änderungshistorie**: Pure-Quote vorher und nachher.
+* Nachdem Sie die Regel geändert haben, wenden Sie die Änderung mit einem [Änderungsvorschlag](touchless-change-proposals.md) an und lesen zwei Wochen später die **Änderungshistorie**: AP-Touchless-Quote vorher und nachher.
 
 ### Beispiel 3: Die Bestellung ist noch nicht da
 
@@ -127,3 +144,5 @@ Nachdem eine Transformationsregel für die Tabelle eines Lieferanten in Kraft ge
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
 * [Purchase Order Matching Rules](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * PO Matching Cards: Complete Guide
+
+<!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->

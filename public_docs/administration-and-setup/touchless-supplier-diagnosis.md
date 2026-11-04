@@ -5,6 +5,8 @@ Klicken Sie in der Warteschlange auf einen Lieferanten, um dessen Diagnoseseite 
 
 <figure><img src="../.gitbook/assets/touchless-supplier-detail-de.png" alt="Die Seite Lieferantendiagnose mit Ergebniskacheln, Trend und zwei Fehlermustern"><figcaption><p>Die Seite Lieferantendiagnose: Ergebniskacheln, Trend mit Zeitraumauswahl und zwei Fehlermuster, nach erwartetem Zuwachs geordnet. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
+Die Ergebniskacheln und Diagrammsegmente zählen getrennte Dokumentergebnisse. AP Touchless bedeutet hier nur freigegebene Dokumente; die gemeinsame AP-Kennzahl auf der Übersicht enthält zusätzlich die Pure-Dokumente.
+
 Die Seite zeigt:
 
 * **Sechs Ergebniskacheln** (Pure Touchless, AP Touchless, AP mit Eingriff, Prozessausnahme, In Bearbeitung, Nicht berücksichtigt), jeweils mit Link zu den Dokumenten.
@@ -20,14 +22,14 @@ Ein kurzer Hinweis erklärt eine leere Seite, zum Beispiel: *5 Dokumente dieses 
 
 Ein **Cluster** fasst die Dokumente eines Lieferanten zusammen, die aus dem **gleichen ersten Grund** stehen geblieben sind. Statt 40 Einzelproblemen sehen Sie „3 Probleme“.
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster-de.png" alt="Eine geöffnete Cluster-Karte mit erstem Blocker, „Was zu ändern ist“ und dem Änderungsvorschlag"><figcaption><p>Eine geöffnete Cluster-Karte: der erste Blocker, <strong>Was zu ändern ist</strong> (What to change) und ein <strong>Änderungsvorschlag</strong> (Change proposal) mit Risiko, Geltungsbereich und offenen Fragen. Hier umfasst das Cluster 58 Dokumente und ist +18,7 PP wert. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-de.png" alt="Zwei eingeklappte Fehlermuster mit Pflichtfeld fehlt und Lieferant nicht erkannt sowie dem Hinweis Ursache noch nicht bestätigt"><figcaption><p>Zwei Fehlermuster: 58 Dokumente mit fehlendem Pflichtfeld und 7 ohne erkannten Lieferanten. <strong>Ursache noch nicht bestätigt</strong> trennt den beobachteten Blocker von der noch zu prüfenden Ursache. Die angezeigten +18,7 und +2,3 Prozentpunkte sind geschätzte Potenziale, keine bereits gemessenen Verbesserungen. Beispielorganisation mit Demodaten.</p></figcaption></figure>
 
 **Beispiel-Cluster (zur Veranschaulichung).**
 
 * **Überschrift**: *Pflichtfeld fehlt* im Schritt *Feldvalidierung*
 * **Betroffen**: 28 Dokumente. **Rückgewinnbar**: 28 Dokumente. **Erwarteter Zuwachs**: +2,8 PP
 * **Vermutete Ursache**: Der Lieferant druckt die Bestellnummer unterhalb der Tabelle, wo die Extraktion nicht sucht
-* **Was zu ändern ist**: *Stammdatenänderung*: das Layout dieses Lieferanten hinzufügen. **Öffnen** führt Sie zur richtigen Einstellungsseite
+* **Nächster Prüfschritt**: Gedruckte Bestellnummer mit der Auslesung vergleichen und die Extraktionskonfiguration dieses Lieferanten prüfen, bevor Sie eine Änderung vorschlagen
 * **Verantwortlich**: Consultant. **Konfidenz**: Mittel. **Quelle**: Hypothese
 
 Was eine Cluster-Karte zeigt:
@@ -56,6 +58,19 @@ Jede Ursache zeigt ihre **Quelle**, damit Sie einen abgeleiteten Befund von eine
 
 KI-Texte werden in der Sprache Ihrer Organisation verfasst. Wurde ein Cluster in einer anderen Sprache analysiert, verwenden Sie **In dieser Sprache analysieren**.
 
+## Wer behebt eine Abweichung in den Quelldaten?
+
+Setzen Sie **AP mit Eingriff** nicht mit einem Auslesefehler gleich. Trennen Sie für jedes Beispieldokument das Verarbeitungsergebnis von der bestätigten Ursache:
+
+| Nachweis | Wo Sie prüfen oder beheben |
+| --- | --- |
+| Ein Wert steht auf der Rechnung anders, als DocBits ihn ausgelesen hat | Extraktionskonfiguration oder Lieferanten-Template |
+| Auslesung und Rechnung stimmen überein; Preis, Menge oder Einheit in der Infor-Bestellung sind nachweislich falsch | Quelldaten; AP stimmt sich mit Einkauf oder Stammdatenverantwortlichen ab |
+| Infor ist korrekt, DocBits hat aber eine alte oder unvollständige Kopie | Import oder ERP-Integration |
+| Rechnung und Quelldaten weichen ab, der vereinbarte Wert ist noch unklar | Fachliche Klärung; Ursache noch nicht bestätigen |
+
+Ein kleiner AP-Eingriff kann eine Rechnung abschließen, während das wiederkehrende Quelldatenproblem ungelöst bleibt. Halten Sie die Sofortaktion und die dauerhafte Behebung getrennt fest. Das Cluster allein beweist nicht den historischen Inhalt von Infor. Siehe [durchgängiges Infor-Beispiel](touchless-po-matching-diagnosis.md).
+
 ## Bestellabgleich-Cluster
 
 Ist der erste Blocker eines Clusters ein Grund aus dem Bestellabgleich (zum Beispiel *PO-Positionsabweichung* oder *Bestellung nicht gefunden*), zeigt die Cluster-Karte, wie DocBits versucht, die Rechnung mit der Bestellung abzugleichen. Siehe [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md).
@@ -66,3 +81,5 @@ Ist der erste Blocker eines Clusters ein Grund aus dem Bestellabgleich (zum Beis
 * [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
 * [Dokumentverlauf](touchless-document-trace.md)
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
+
+<!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->

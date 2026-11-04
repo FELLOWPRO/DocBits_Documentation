@@ -12,7 +12,7 @@ Eine Empfehlung kann einen **Änderungsvorschlag** enthalten, eine einzelne Eins
 Ein Vorher/Nachher-Unterschied ist eine **Beobachtung**, kein Beweis für die Ursache. Gleichzeitig können sich andere Dinge ändern (ein neuer Lieferant, eine saisonale Spitze).
 {% endhint %}
 
-**Beispiel.** Sie wenden *Automatischen Bestellabgleich und Export einschalten* für Rechnungen an. Zwei Wochen später sagt die **Änderungshistorie**: Pure-Quote vorher 52 % (210 Dokumente), nachher 61 % (198 Dokumente). Das sind +9 PP, mit genügend Dokumenten, um messbar zu sein.
+**Beispiel (zur Veranschaulichung).** Sie wenden *Automatischen Bestellabgleich und Export einschalten* für Rechnungen an. Zwei Wochen später zeigt die **Änderungshistorie** eine AP-Touchless-Quote von vorher 52 % (210 Dokumente) und nachher 61 % (198 Dokumente). Das sind +9 PP, mit genügend Dokumenten für eine Messung. Die gemessene Quote umfasst Pure und reine Freigaben; sie misst keine Auslesegenauigkeit. Eine Quelldatenkorrektur in Infor prüfen Sie zusätzlich anhand des Imports und späterer Rechnungen. Sie ist keine DocBits-Einstellungsänderung und wird nicht automatisch als Eintrag dieser Historie vorausgesetzt.
 
 
 Administratoren sehen außerdem zwei Abschnitte zwischen den Kennzahlen und den Diagrammen:
@@ -36,3 +36,5 @@ Die Wirkungswerte sind **Schätzungen**. Antwortet der Bericht *forbidden*, erla
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Lieferantendiagnose und Fehlermuster](touchless-supplier-diagnosis.md)
 * [Bestellabgleich-Diagnose](touchless-po-matching-diagnosis.md)
+
+<!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->

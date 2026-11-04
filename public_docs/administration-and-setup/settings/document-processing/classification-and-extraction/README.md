@@ -1,5 +1,9 @@
 # Classificação e extração
 
+<figure><img src="../../../../.gitbook/assets/classification-general-pt-20261104.png" alt="Aba Geral com configurações de processamento. O padrão de código de barras da organização está oculto; nenhuma configuração foi alterada."><figcaption><p>Aba Geral com configurações de processamento. O padrão de código de barras da organização está oculto; nenhuma configuração foi alterada.</p></figcaption></figure>
+
+[AI Table](../../../../end-user-and-partner-section/end-user-section/ai-table/README.md) · [Structured Output para tabelas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md)
+
 ## Qual configuração funciona em qual etapa do processo?
 
 <figure><img src="../../../../.gitbook/assets/process-extraction-pt-20261028.png" alt="Do arquivo aos dados reconhecidos: Visualize o tipo de documento, a fonte de dados e o caminho de extração separadamente."><figcaption><p>Visualize o tipo de documento, a fonte de dados e o caminho de extração separadamente. O diagrama é esquemático; as configurações ativas da sua organização determinam o comportamento real.</p></figcaption></figure>
@@ -35,7 +39,6 @@ Esta página explica as configurações disponíveis.
 Para abrir as configurações de **Classificação e extração**, aceda a:\
 **Configurações → Processamento de documentos → Classificação e extração**
 
-<figure><img src="../../../../.gitbook/assets/dbdc865-settings-nav-pt-20261012.png" alt="Navegação das configurações com Processamento de documentos e Classificação e Extração realçados"><figcaption><p>Abra <strong>Configurações → Processamento de documentos → Classificação e Extração</strong>.</p></figcaption></figure>
 
 ## Divisão de documentos
 
@@ -46,17 +49,17 @@ Para ativar esta funcionalidade:
 1. Abra a secção **Divisão de documentos**.
 2.  Abra a lista suspensa.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_14.png" alt=""><figcaption></figcaption></figure>
+    
 3.  Selecione **Dividir por código de barras/QR**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_15.png" alt=""><figcaption></figcaption></figure>
+    
 
 Depois, poderá:
 
 * Selecionar um ou mais tipos de código de barras a detetar.
 *   Indicar um padrão de expressão regular que o código de barras deve cumprir para provocar a divisão do documento.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_16.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Formatação de valores
 
@@ -112,7 +115,7 @@ Saiba mais sobre o treino [aqui](../../../setup/document-training/training-line-
 
 O modo é guardado na chave de preferência `TABLE_EXTRACTION_VISION_MODE`; o botão antigo `TABLE_EXTRACTION_USE_VISION` mantém-se e significa, na prática, *Somente imagens*.
 
-**Usar Extração estruturada (IA):** A IA devolve a tabela numa estrutura fixa que é mapeada diretamente para as colunas de tabela configuradas. Recomendado quando os cabeçalhos das colunas nos documentos variam muito. Clicar na definição abre uma pré-visualização exata dos campos e colunas que serão pedidos à IA: os campos de cabeçalho e as colunas de linhas são listados com a sua origem (campos padrão pedidos ou desativados), juntamente com o modo de saída esperado (por exemplo, *strict* – sem colunas adicionais). Os campos configurados para o tipo de documento mas desativados não são pedidos à IA.
+**Utilizar Extração Estruturada (IA):** O interruptor define o padrão da organização para saída estruturada. As colunas solicitadas dependem de Padrão/Sim/Não em Use AI, dos valores específicos do modelo de extração e do treinamento. O guia completo explica configuração, prévia e exemplo. [Structured Output para tabelas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).
 
 **Extração de tabelas para elemento de custo:** Quando ativada, o DocBits pode extrair elementos de custo das tabelas ao nível da linha e classificá-los em conformidade.\
 Explicação detalhada disponível [aqui](table-extraction-for-costing-element.md).
@@ -179,7 +182,6 @@ Na secção **Regras de classificação**, pode definir padrões de **expressõe
 
 Para abrir esta secção, clique no separador **Regras de classificação** no topo da página.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_1.png" alt=""><figcaption></figcaption></figure>
 
 ### **Adicionar uma regra de classificação**
 
@@ -187,7 +189,7 @@ Para criar uma regra:
 
 1.  Clique em **Adicionar** no canto superior direito.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_2.png" alt=""><figcaption></figcaption></figure>
+    
 2. Preencha os campos seguintes:
    * **Padrão**: expressão regular que o sistema deve procurar para iniciar a classificação.
    * **Tipo**: local onde o padrão deve ser procurado, por exemplo no **código de barras**.
@@ -195,10 +197,10 @@ Para criar uma regra:
    * **Tipo de documento**: tipo a atribuir ao documento quando o padrão corresponder.
    *   **Subtipo de documento** _(opcional)_: indique um subtipo para uma classificação mais detalhada.
 
-       <figure><img src="../../../../.gitbook/assets/classification_and_extraction_3.png" alt=""><figcaption></figcaption></figure>
+       
 3.  Clique em **Guardar** para guardar a regra de classificação.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Editar uma regra de classificação**
 
@@ -206,14 +208,14 @@ Para editar uma regra existente:
 
 1.  Clique nos três pontos da coluna **Ações**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Selecione **Editar**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_6.png" alt=""><figcaption></figcaption></figure>
+    
 3. Efetue as alterações pretendidas.
 4.  Clique em **Guardar** para aplicar as alterações.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_4.png" alt=""><figcaption></figcaption></figure>
+    
 
 ### **Eliminar uma regra de classificação**
 
@@ -221,10 +223,10 @@ Para eliminar uma regra:
 
 1.  Clique nos três pontos da coluna **Ações**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_5.png" alt=""><figcaption></figcaption></figure>
+    
 2.  Selecione **Eliminar**.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_7.png" alt=""><figcaption></figcaption></figure>
+    
 
 ## Modelos de IA
 
@@ -234,14 +236,12 @@ A secção **Modelos de IA** apresenta os modelos treinados e ajustados especifi
 
 Para abrir esta secção, clique no separador **Modelos de IA** no topo da página.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_8.png" alt=""><figcaption></figcaption></figure>
 
 ### Categorias de modelos
 
 Os modelos estão organizados por categorias. Por baixo do nome de cada categoria, é apresentado o número de modelos que contém.\
 Clique numa categoria para consultar os detalhes.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_9.png" alt=""><figcaption></figcaption></figure>
 
 No topo da página da categoria selecionada, encontrará informação sobre cada modelo:
 
@@ -259,7 +259,6 @@ Os modelos da categoria são apresentados numa tabela com a seguinte informaçã
 * **Subtipos de documento**: subtipos nos quais o documento é classificado adicionalmente.
 * **Prioridade**: nível que determina a posição do modelo na fila de classificação.
 
-<figure><img src="../../../../.gitbook/assets/classification_and_extraction_11.png" alt=""><figcaption></figcaption></figure>
 
 ### Editar um modelo
 
@@ -267,10 +266,12 @@ Para editar um modelo:
 
 1.  Clique no ícone de lápis da coluna **Ações**, junto ao modelo que pretende editar.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_10.png" alt=""><figcaption></figcaption></figure>
+    
 2. Atualize os campos disponíveis:
    * **Próximo modelo**: selecione o modelo que deve processar o resultado do modelo atual.
    * **Tipo de documento**: escolha o tipo que o modelo deve atribuir ao documento de entrada.
 3.  Clique em **Guardar** para aplicar as alterações.
 
-    <figure><img src="../../../../.gitbook/assets/classification_and_extraction_12.png" alt=""><figcaption></figcaption></figure>
+    
+
+<figure><img src="../../../../.gitbook/assets/structured-output-settings-pt-20261104.png" alt="Controles atuais de extração. Structured Output está desativado nesta configuração existente, portanto não aparece a prévia do esquema. Nenhuma configuração de extração foi alterada."><figcaption><p>Controles atuais de extração. Structured Output está desativado nesta configuração existente, portanto não aparece a prévia do esquema. Nenhuma configuração de extração foi alterada.</p></figcaption></figure>

@@ -65,3 +65,7 @@ Para redefinir a configuração do modelo de IA de um fornecedor para o padrão:
     <figure><img src="../../../../.gitbook/assets/dbdc865-ai-model-delete-confirm-pt-20261012.png" alt="Diálogo de confirmação perguntando se a entrada deve ser excluída"><figcaption><p>Confirme a exclusão no diálogo.</p></figcaption></figure>
 
 Uma vez excluído, o fornecedor voltará a usar o **modelo de IA** padrão para a **extração de campo** e a **extração de tabela**.
+
+## Configurações e valores específicos
+
+Structured Output tem sua própria configuração de organização/modelo de extração, separada do nível de IA. Altere em Mais opções do documento; confirmar salva o valor específico e reinicia esse documento. Os indicadores da lista são somente leitura. Excluir uma entrada pode remover vários valores específicos juntos. [Structured Output para tabelas](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

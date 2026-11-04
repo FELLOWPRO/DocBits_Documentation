@@ -4,26 +4,25 @@
 
 Die **App-Farbe**-Einstellung ermöglicht es Administratoren, das Farbschema der Benutzeroberfläche der Anwendung festzulegen. Diese Funktion ist besonders nützlich, um zwischen verschiedenen Umgebungen wie Test, Sandbox und Produktion zu unterscheiden. Durch die Zuweisung unterschiedlicher Farben zu jeder Umgebung können Benutzer leicht erkennen, in welcher Umgebung sie arbeiten, wodurch das Risiko verringert wird, kritische Aktionen in der falschen Umgebung auszuführen.
 
-<figure><img src="../../../../.gitbook/assets/AppColor-de.png" alt="App Color Abschnitt in den Unternehmenseinstellungen"><figcaption><p>Der Abschnitt App Color, in dem die Farbe der Anwendungsoberflaeche festgelegt wird.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/app-color-section-de.png" alt="Abschnitt App-Farbe in den Unternehmenseinstellungen mit dem Feld Farbe sowie den Schaltflächen Zurücksetzen und Speichern"><figcaption><p>App-Farbe unter Einstellungen → Unternehmenseinstellungen</p></figcaption></figure>
 
 ## Zugriff auf die App-Farbe-Einstellung
 
 1. **Navigieren zu den Unternehmens-Einstellungen**:
-   * Klicken Sie im Hauptmenü auf den Abschnitt **Infos**.
+   * Gehen Sie zu **Einstellungen** → **Unternehmenseinstellungen**.
 2. **Finden Sie den App-Farbe-Bereich**:
-   * Scrollen Sie nach unten zum Abschnitt **App-Farbe** innerhalb der Unternehmens-Einstellungen.
+   * Klappen Sie den Abschnitt **App-Farbe** auf (*Passen Sie App-Farben und Branding für verschiedene Umgebungen an*).
 
 ## Festlegen der App-Farbe
 
 1. **Wählen Sie eine Farbe**:
-   * Klicken Sie auf das Farbfeld oder geben Sie einen Hex-Code direkt in das Textfeld ein.
-   * Ein Farbauswahlwerkzeug wird angezeigt, mit dem Sie die gewünschte Farbe auswählen können.
-   * Sie können einen bestimmten Hex-Code eingeben, wenn Sie eine vordefinierte Farbe für die Umgebung haben.
+   * Klicken Sie auf das Pipettensymbol rechts neben dem Feld **Farbe**. Die Farbauswahl öffnet sich.
+   * Wählen Sie die gewünschte Farbe aus. Das Feld **Farbe** zeigt den Hex-Wert der aktuell gewählten Farbe.
 2. **Farbe speichern**:
    * Nachdem Sie die Farbe ausgewählt haben, klicken Sie auf die Schaltfläche **Speichern**, um die Änderung anzuwenden.
-   * Die Benutzeroberfläche der Anwendung wird sofort aktualisiert, um die neue Farbe widerzuspiegeln.
+   * Die Benutzeroberfläche der Anwendung wird sofort auf die neue Farbe umgestellt.
 3. **Auf Standard zurücksetzen**:
-   * Wenn Sie zur Standardfarbe zurückkehren möchten, klicken Sie auf die Schaltfläche **Zurücksetzen**.
+   * Klicken Sie auf **Zurücksetzen**, um die Standardfarbe **#2388AE** wiederherzustellen. Die Standardfarbe wird sofort gespeichert, weitere Schritte sind nicht nötig.
 
 ## Best Practices für Umgebungsfarben
 
@@ -33,9 +32,9 @@ Um Verwirrung zu vermeiden, wird empfohlen, ein standardisiertes Farbschema für
 * **Test**: Verwenden Sie eine helle oder alarmierende Farbe, wie **#ffcc00** (gelb) oder **#ffa500** (orange), um eine Testumgebung anzuzeigen.
 * **Sandbox**: Verwenden Sie eine auffällige Farbe, wie **#007bff** (blau) oder **#6c757d** (grau), um eine Sandbox- oder Entwicklungsumgebung anzuzeigen.
 
-## Abonnement-Plan Hinweis
+## Abonnement
 
-Im Abschnitt App-Farbe sehen Administratoren auch Informationen zum **Abonnement-Plan**. Dazu gehören der aktuelle Plan, dessen Status und die verbleibenden Tage des Abonnements.
+Die Angaben zum Abonnement stehen auf einer eigenen Seite in den Einstellungen; sie sind nicht Teil dieses Abschnitts.
 
 ## Bedeutung der App-Farbe
 

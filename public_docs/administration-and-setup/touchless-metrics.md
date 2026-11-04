@@ -1,5 +1,9 @@
 # Kennzahlen und Berechnung
 
+<!-- touchless-admin-video-20261104:start -->
+**Video-Kapitel (Prüffassung):** [So wird gerechnet](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v1/de.html#chapter=02).
+<!-- touchless-admin-video-20261104:end -->
+
 ### Korrekte Auslesung und ein Touchless-Prozess sind zwei verschiedene Fragen
 
 **DocBits kann alle Rechnungswerte richtig auslesen, und trotzdem braucht die Rechnung einen AP-Eingriff, weil die Daten aus dem Quellsystem abweichen.** AP steht für Accounts Payable, also die Kreditorenbuchhaltung. Prüfen Sie diese beiden Fragen getrennt:

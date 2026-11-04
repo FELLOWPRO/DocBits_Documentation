@@ -5,7 +5,7 @@ import os
 import sys
 import unittest
 import urllib.error
-from contextlib import redirect_stdout
+from contextlib import redirect_stdout, redirect_stderr
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -16,7 +16,7 @@ import docs_search_sync as sync
 class ServicePreflightTests(unittest.TestCase):
     def test_old_service_rejects_spanish_before_full_sync_can_write(self):
         error = urllib.error.HTTPError('https://service/docs/search', 422, 'Invalid', {}, io.BytesIO(b'{"detail":"only main/de"}'))
-        with patch.dict(os.environ, DOCS_INGEST_URL='https://service', DOCS_INGEST_KEY='secret'), patch.object(sys, 'argv', ['sync', 'full', '--lang', 'es']), patch.object(sync.urllib.request, 'urlopen', side_effect=error) as fetch, patch.object(sync, 'run_full') as full:
+        with redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()), patch.dict(os.environ, DOCS_INGEST_URL='https://service', DOCS_INGEST_KEY='secret'), patch.object(sys, 'argv', ['sync', 'full', '--lang', 'es']), patch.object(sync.urllib.request, 'urlopen', side_effect=error) as fetch, patch.object(sync, 'run_full') as full:
             with self.assertRaises(urllib.error.HTTPError):
                 sync.main()
         full.assert_not_called()

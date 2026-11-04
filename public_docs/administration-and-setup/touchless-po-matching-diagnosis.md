@@ -43,7 +43,7 @@ Nicht jeder Grund im Bestellabgleich lässt sich in DocBits beheben. Sendet der 
 
 ## Durchgängiges Beispiel: richtig ausgelesen, andere Infor-Daten
 
-Dieser Schulungsfall ist unabhängig von den Screenshots. Die Rechnung enthält **10 Stück zu je 10,00 €**, insgesamt **100,00 €**. DocBits liest alle drei Werte korrekt aus. Die importierte Infor-Bestellung enthält **10 Stück zu je 9,00 €**, insgesamt **90,00 €**. Angenommen, die konfigurierten Abgleichprüfungen blockieren diese Preisabweichung.
+Der folgende Schulungsfall verbindet Original, Auslesung, Quelldaten und Endergebnis. Die Screenshots zeigen die zugehörigen Ansichten der Anwendung; sie sind kein aufgezeichneter Infor-Durchlauf dieser Beispielrechnung. Die Rechnung enthält **10 Stück zu je 10,00 €**, insgesamt **100,00 €**. DocBits liest alle drei Werte korrekt aus. Die importierte Infor-Bestellung enthält **10 Stück zu je 9,00 €**, insgesamt **90,00 €**. Angenommen, die konfigurierten Abgleichprüfungen blockieren diese Preisabweichung.
 
 1. **Auslesung prüfen:** Vergleichen Sie Originalrechnung und ausgelesene Menge, Stückpreis und Positionsbetrag. Sie stimmen überein; für diese Werte ist kein Auslesefehler nachgewiesen.
 2. **Quelle prüfen:** Vergleichen Sie die importierte Bestellung mit der aktuellen Infor-Bestellung, einschließlich Preiseinheit und Importzeitpunkt. Ein veralteter Import und eine falsche Infor-Bestellung brauchen unterschiedliche Behebungen.
@@ -57,6 +57,18 @@ Dieser Schulungsfall ist unabhängig von den Screenshots. Die Rechnung enthält 
 {% endhint %}
 
 Die getrennte Betrachtung der Auslesequalität und die AP-Touchless-Berechnung finden Sie unter [Touchless Intelligence](touchless-intelligence.md), die zu vergleichenden Nachweise unter [Dokumentverlauf](touchless-document-trace.md).
+
+### Welche Nachweise zu diesem Fall gehören
+
+| Station | Was Sie ansehen | Was Sie festhalten |
+| --- | --- | --- |
+| Original und Auslesung | Rechnung über **Dokument** im Dokumentverlauf öffnen, Felder und Positionen vergleichen | 10 × 10,00 € = 100,00 €, vor manueller Korrektur; [Prüfanleitung](touchless-document-trace.md) |
+| Bestellabgleich | Entscheidungsablauf im folgenden Screenshot und dokumentbezogene Blocker lesen | Tatsächlich angewandter Regelsatz, Preiseinheit und relevante Toleranz; der Organisationsablauf allein belegt noch keine Dokumentwerte |
+| Quelle und Import | Importierte Bestellung mit dem aktuellen Infor-Datensatz vergleichen | 10 × 9,00 € = 90,00 €, Importzeitpunkt und fachlich vereinbarter Preis |
+| AP-Aktion | Laufhistorie nach der Quellenkorrektur prüfen | Wer manuell neu gestartet hat und welcher Lauf daraus entstand |
+| Ergebnis und Messung | Nach Abschluss und aktualisiertem Datenstand das Dokumentergebnis prüfen | AP mit Eingriff; [Berechnung und Aktionsmatrix](touchless-intelligence.md) |
+
+Fehlt ein Nachweis, bleibt genau dieser Teil offen. Insbesondere beweisen weder das Ablaufdiagramm noch ein grüner Verarbeitungsschritt die korrekte Auslesung sämtlicher Rechnungswerte.
 
 ## Der Entscheidungsablauf des Bestellabgleichs
 
@@ -76,7 +88,7 @@ Innerhalb der Stufen probiert DocBits in dieser Reihenfolge:
 
 Jeder Schritt fragt **Treffer gefunden?** Die Antwort **Ja** (grün) führt zu **Treffer gefunden**, und das Dokument läuft weiter. Die Antwort **Kein Treffer** (rot) führt zum nächsten Schritt, und nach dem letzten Schritt lautet das Ergebnis **Kein Treffer gefunden**: Das Dokument bleibt stehen und braucht eine Person.
 
-<figure><img src="../.gitbook/assets/touchless-po-matching-flow-de.png" alt="Der Entscheidungsablauf des Bestellabgleichs: Kopfzeile mit dem Regelsatz, fünf nummerierte Abgleichstufen mit ihren Durchgängen und die Endpunkte Treffer gefunden und Kein Treffer gefunden"><figcaption><p>Der Entscheidungsablauf des Bestellabgleichs, geöffnet über <strong>Wie diese Organisation abgleicht</strong> auf der Seite Lieferantendiagnose. Die Kopfzeile zeigt den Regelsatz (Version 7, im Besitz dieser Organisation) und die Toleranzen. Darunter laufen die fünf Stufen mit ihren Durchgängen von oben nach unten. Grün führt zu <strong>Treffer gefunden</strong>, rot führt zum nächsten Schritt und endet in <strong>Kein Treffer gefunden</strong>. Beispielorganisation mit Demodaten.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-po-matching-flow-de.png" alt="Der Entscheidungsablauf des Bestellabgleichs: Kopfzeile mit dem Regelsatz, fünf nummerierte Abgleichstufen mit ihren Durchgängen und die Endpunkte Match gefunden und Kein Match gefunden"><figcaption><p>Der Entscheidungsablauf des Bestellabgleichs, geöffnet über <strong>Wie diese Organisation abgleicht</strong> auf der Seite Lieferantendiagnose. Die Kopfzeile zeigt den Regelsatz (Version 7, im Besitz dieser Organisation) und die Toleranzen. Darunter laufen die fünf Stufen mit ihren Durchgängen von oben nach unten. Grün führt zu <strong>Match gefunden</strong>, rot führt zum nächsten Schritt und endet in <strong>Kein Match gefunden</strong>. Beispielorganisation mit Demodaten.</p></figcaption></figure>
 
 ### Was die Kopfzeile des Diagramms Ihnen sagt
 
@@ -134,7 +146,7 @@ Nachdem eine Transformationsregel für die Tabelle eines Lieferanten in Kraft ge
 3. Öffnen Sie die **Lieferantendiagnose** und lesen Sie das Cluster: Grund, betroffene Dokumente, **Was zu ändern ist**, **Fehlende Evidenz**.
 4. Öffnen Sie **Wie diese Organisation abgleicht** und prüfen Sie den Regelsatz: Version, Eigentümer und Toleranzen.
 5. Öffnen Sie ein **Beispieldokument** und seinen [Dokumentverlauf](touchless-document-trace.md): Welcher Schritt, welcher Grund?
-6. Ändern Sie **eine** Sache (Regelreihenfolge, Toleranz, Artikelzuordnung) mit einer Vorschau, damit die **Änderungshistorie** sie messen kann.
+6. Beheben Sie **eine bestätigte Ursache**. Verwenden Sie bei einem unterstützten DocBits-Vorschlag die Vorschau. Bei einer Artikel- oder Bestellkorrektur in Infor prüfen Sie den Import und neue Rechnungen gesondert; erwarten Sie dafür nicht automatisch einen Eintrag der DocBits-Änderungshistorie.
 
 ## Weiterführende Seiten
 
@@ -143,6 +155,8 @@ Nachdem eine Transformationsregel für die Tabelle eines Lieferanten in Kraft ge
 * [Dokumentverlauf](touchless-document-trace.md)
 * [Änderungsvorschläge und Berichte](touchless-change-proposals.md)
 * [Purchase Order Matching Rules](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* PO Matching Cards: Complete Guide
+* [PO-Matching-Karten – vollständiger Leitfaden](workflow/and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 <!-- Doku-Prüfung 04.11.2026: Auslesequalität getrennt von Prozessergebnissen; Kennzahlen und Endergebnisse gegen DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py und bucket.py, geprüft. Bestehende deutsche Originalaufnahmen getrennt von den Schulungsbeispielen geprüft. -->
+
+<!-- Completion review 2026-11-04: AP actions, original-value evidence, overlapping KPI labels, sequential blockers and screenshot proof limits checked. -->

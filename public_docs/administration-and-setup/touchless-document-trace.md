@@ -36,6 +36,25 @@ De kaart **Document** naast het stappenlogboek vermeldt het documenttype, de lev
 
 **Voorbeeld.** De documenten van één leverancier stoppen allemaal bij stap 8. In het spoor ziet u telkens dezelfde ontbrekende velden. Dat is geen extractieprobleem van losse documenten, maar een ontbrekende standaardwaarde in uw veldconfiguratie: herstel die één keer en het hele cluster is terug te winnen.
 
+## Extractie en brongegevens onderscheiden
+
+Vergelijk origineel en uitgelezen velden/regels vóór correcties. Vergelijk daarna geïmporteerde inkooporder en actuele Infor-gegevens, inclusief eenheden, prijseenheden en importtijd. Onderscheid origineel versus extractie, correcte extractie versus geïmporteerde order en Infor versus zijn kopie. Een geslaagde stap bewijst niet elke waarde. Laat de oorzaak open als bewijs ontbreekt.
+
+**Voorbeeld:** origineel en extractie tonen €10, de geïmporteerde order €9. Dat is een orderafwijking, geen aangetoonde extractiefout. Controleer de afgesproken prijs. Menselijke herstart gevolgd door succes geeft AP Assisted. Zie [kengetallen en berekening](touchless-metrics.md).
+
+Terugkerende ontbrekende velden bewijzen een herhaald blokkeringspunt, niet noodzakelijk een ontbrekende standaardwaarde. Controleer origineel, extractie, validatie en configuratie.
+
+## Oorspronkelijke extractie en opeenvolgende blokkades bewijzen
+
+1. Open het juiste document en de juiste uitvoering. Vergelijk ordernummer, valuta, aantallen, eenheden, prijseenheden, prijzen, regels en relevante totalen met het origineel.
+2. Scheid huidige waarden van waarden vóór correcties. Gebruik historisch bewijs van dezelfde uitvoering; wisselen van uitvoering herstelt niet gegarandeerd elke oude cel.
+3. Ontbreekt de oorspronkelijke waarde, noteer **niet beoordeelbaar**. Leg selectie, velden, regels en steekproefgrootte vooraf vast.
+4. Vergelijk de geïmporteerde kopie, importtijd en actuele Infor-waarden om een verouderde kopie van een foutieve bron te onderscheiden.
+
+Een uitvoering kan wachten op een order; een volgende kan na de import een prijsverschil tonen. De eerste bewijst niet dat die latere controle al is uitgevoerd. Een menselijke herstart blijft na succes AP Assisted; een definitieve ERP-afwijzing heeft voorrang als uitzondering. **Niet vastgelegd** betekent ontbrekend bewijs.
+
+Tools en menselijke acties worden uitgelegd bij [Touchless met MCP](touchless-mcp.md).
+
 ## Gerelateerde pagina's
 
 * [Touchless Intelligence](touchless-intelligence.md)
@@ -43,3 +62,7 @@ De kaart **Document** naast het stappenlogboek vermeldt het documenttype, de lev
 * [PO-matchingdiagnose](touchless-po-matching-diagnosis.md)
 
 De schermafbeeldingen op deze pagina tonen de interface in het Nederlands.
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

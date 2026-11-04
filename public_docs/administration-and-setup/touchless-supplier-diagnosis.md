@@ -7,7 +7,7 @@ Klik op een leverancier in de wachtrij om de diagnosepagina te openen.
 
 De pagina toont:
 
-* **Zes uitkomsttegels** (Puur touchless, AP touchless, AP ondersteund, Procesuitzondering, In behandeling, Niet in aanmerking), elk gekoppeld aan de documenten.
+* **Vier tegels met eindresultaten**: Pure Touchless, AP Touchless, AP Assisted en procesuitzondering; elke tegel opent de documenten.
 * **De trend** met een eigen periodekiezer: 30 dagen, 90 dagen, 6 maanden, 1 jaar of een zelfgekozen bereik (tot twee jaar). Dit wijzigt alleen de grafiek.
 * **Probleemclusters** (zie hieronder).
 * **Wijzigingsgeschiedenis** (Change history): de wijzigingen die u voor deze leverancier hebt toegepast en wat ze hebben gedaan.
@@ -27,7 +27,7 @@ Een **cluster** groepeert de documenten van één leverancier die om dezelfde **
 * **Kop**: *Required field missing* (verplicht veld ontbreekt) in fase *Field Validation* (veldvalidatie)
 * **Getroffen**: 28 documenten. **Herstelbaar**: 28 documenten. **Verwachte stijging**: +2,8 pp
 * **Vermoedelijke oorzaak**: de leverancier drukt het PO-nummer onder de tabel af, waar de extractie niet kijkt
-* **Wat te wijzigen**: *Wijziging van stamgegevens*: voeg de lay-out van deze leverancier toe. **Openen** brengt u naar de juiste instellingenpagina
+* **Volgende controle**: vergelijk het gedrukte en uitgelezen ordernummer en daarna de extractieconfiguratie voordat u een wijziging voorstelt
 * **Eigenaar**: Consultant. **Betrouwbaarheid**: Gemiddeld. **Bron**: Hypothese
 
 Wat een clusterkaart toont:
@@ -60,9 +60,26 @@ AI-teksten worden geschreven in de taal van uw organisatie. Als een cluster in e
 
 Als de eerste blokkade van een cluster een reden voor PO-matching is (bijvoorbeeld *PO item mismatch* of *Purchase order not found*), toont de clusterkaart hoe DocBits probeert de factuur aan de inkooporder te koppelen. Zie [PO-matchingdiagnose](touchless-po-matching-diagnosis.md).
 
+## Wie corrigeert de gegevens?
+
+| Bewijs | Waar onderzoeken of oplossen? |
+| --- | --- |
+| Origineel en extractie verschillen | Extractie of leveranciersconfiguratie |
+| Extractie correct, Infor-prijs/hoeveelheid/eenheid aantoonbaar onjuist | Bron; AP stemt af met inkoop of stamdatabeheer |
+| Infor correct, importkopie oud of onvolledig | Import of ERP-integratie |
+| Waarden verschillen, afspraak nog onbekend | Inhoudelijke afstemming; oorzaak niet bevestigd |
+
+De AP-tegel bij de leverancier telt alleen goedkeuring; het AP-koppercentage omvat ook Pure. Leg de directe actie en blijvende oplossing apart vast. Een kleine ingreep kan de factuur afronden terwijl de terugkerende oorzaak blijft bestaan.
+
+Tools en menselijke acties worden uitgelegd bij [Touchless met MCP](touchless-mcp.md).
+
 ## Gerelateerde pagina's
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [PO-matchingdiagnose](touchless-po-matching-diagnosis.md)
 * [Documentspoor](touchless-document-trace.md)
 * [Wijzigingsvoorstellen en rapporten](touchless-change-proposals.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

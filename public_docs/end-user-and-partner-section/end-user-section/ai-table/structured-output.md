@@ -70,6 +70,10 @@ When the organization switch is on, **What the AI requests** appears below it. S
 
 Without usable header-field configuration, a structured overall schema cannot be built; an enabled switch alone therefore does not prove schema use. Check the actual run through **Explain extraction** and the available document logs. [AI Table](README.md) explains these views and their access requirements.
 
+In this configuration example, the requested INVOICE_TABLE columns include `ITEM_NUMBER`, `SUPPLIER_ITEM_NUMBER`, `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT` and `PROJECT_CODE`. The custom project column is explicitly set to **Yes**, as in step 2 of the example below. The preview also includes other configured invoice columns, so your selection and count can differ. **12** is the number of requested columns in this table, not the number of rows or the total schema property count. This is a configuration preview, not an extraction result.
+
+<figure><img src="../../../.gitbook/assets/structured-output-schema-preview-en-20261104.png" alt="Excerpt from the Invoice schema preview with Structured Output enabled. INVOICE_TABLE requests 12 columns, including PROJECT_CODE with Use AI set to Yes. Other configured tables and the property counter are outside this excerpt."><figcaption><p>Excerpt from the Invoice schema preview with Structured Output enabled. INVOICE_TABLE requests 12 columns, including PROJECT_CODE with Use AI set to Yes. Other configured tables and the property counter are outside this excerpt.</p></figcaption></figure>
+
 ## 5. Example: invoice with two item numbers and a project
 
 This synthetic example defines a verification target, not an executed extraction run. The document contains two items:

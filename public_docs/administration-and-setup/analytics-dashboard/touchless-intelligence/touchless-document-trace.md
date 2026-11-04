@@ -46,6 +46,34 @@ The **Document** card next to the Stage Log lists the document type, supplier, i
 
 **Repeated missing fields.** Several documents stopping at Field Validation establish a repeated blocker. Possible causes include extraction, a genuinely absent invoice value, a validation rule or a missing configured default. Compare the evidence before choosing a fix; repetition alone does not prove any one cause.
 
+## Prove the original extraction before drawing conclusions
+
+1. Open **Document** from this trace and verify the document ID and selected run. Compare the original PO number, currency, quantities, units, price units, unit prices, line amounts and relevant totals with the validation fields and tables.
+2. Distinguish current values from extraction before a correction. For an already edited invoice, use a matching historical field record or extraction evidence for that run. Switching runs does not promise reconstruction of every old field and cell.
+3. If the original extracted value is unavailable, record it as **not assessable**, not correct. Define the fields, line coverage, sample selection and sample size before reporting an independent extraction-quality result.
+4. Compare imported PO values and import timestamp with current Infor values. This separates incorrect source data from an outdated copy.
+
+Successive blockers are possible: run 1 may stop because a PO has not arrived; after import, run 2 may reveal a price discrepancy. Neither proves that the first run reached the later check. A manual restart persists after success as AP Assisted; a final ERP rejection instead takes precedence as a process exception. **Not recorded** means missing evidence, not a passed check.
+
+### Read the evidence through MCP
+
+> Inspect this invoice without changing it. Compare the original, current fields and tables. Explain the recorded stages and runs, and identify missing historical extraction evidence.
+
+| Tool, using the same `doc_id` | Evidence and limit |
+| --- | --- |
+| `get_extracted_fields` | Current header values and confidence; not a historical snapshot |
+| `get_extracted_tables` | Actual tables and rows; not proof they agree with the original |
+| `touchless_get_document_trace` | Recorded outcomes, interventions, stages and runs |
+| `touchless_explain_pipeline` | Explanation of the evidenced processing path; does not fill missing evidence |
+
+**Observed negative check:** Our fresh test invoice had a `passed` header-extraction stage but `extracted_field_count: 0`, eight empty required fields and no table. Field validation blocked with `REQUIRED_FIELD_MISSING`. The assistant must investigate missing extraction/configuration, rather than claim correct extraction from a green stage or a proven PO-price blocker from differing source values.
+
+### Does an MCP action count as a human touch?
+
+Read-only inspection does not change an invoice. Other MCP tools may write fields, validate or restart. Classification depends on the recorded event and whether its actor is a human or system account. An API key can act as a system account; “performed through MCP” alone proves neither a human touch nor Pure Touchless. Never use system credentials to hide human rework.
+
+After a document action inspect `human_touched`, `human_touch_source`, `human_restart_count`, `business_approval_touched`, final status and runs. Business approval only is different from a saved correction, manual validation or human restart.
+
 ## Related pages
 
 * [Touchless Intelligence](./)
@@ -53,3 +81,5 @@ The **Document** card next to the Stage Log lists the document type, supplier, i
 * [PO Matching Diagnosis](touchless-po-matching-diagnosis.md)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
+
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

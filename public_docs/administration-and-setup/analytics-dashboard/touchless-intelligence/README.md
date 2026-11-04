@@ -133,6 +133,34 @@ The following cases are illustrative, not the individual documents behind the sc
 
 The classification uses the events DocBits records. Do not assume that work performed only in Infor, without a corresponding recorded DocBits event, is automatically counted as an AP intervention. Keep that work in the diagnosis as well.
 
+### Which AP actions count as intervention?
+
+The following assumes successful completion, including the required ERP confirmation. The recorded action and its actor matter, not how long the work took.
+
+| Action | Effect on the document outcome |
+| --- | --- |
+| Open, read, filter, compare or preview | Does not by itself create a processing intervention; Pure Touchless remains possible |
+| Give business approval, including a second approval | AP Touchless, if there was no processing intervention |
+| Change and save a header field or table cell | AP Assisted; even one saved correction counts |
+| Manually validate and advance a document, even without correcting a value | AP Assisted; manual validation is distinct from approval only |
+| Manually restart processing or export | AP Assisted; a later automatic run does not remove the intervention |
+| Automatic system retry or automatic workflow write | Does not by itself create a human intervention; earlier human touches persist |
+| Correct data only in Infor | External work is not automatically a recorded DocBits event; document it separately and inspect the subsequent DocBits action |
+| Final ERP rejection after a correction | Process exception takes precedence; the intervention remains in the history |
+
+A click on Save without evidence of a changed value does not prove a correction. Check whether it also triggered manual validation or a restart.
+
+### The AP label has two meanings
+
+| Location | Meaning |
+| --- | --- |
+| AP headline percentage | Combined Pure + approval-only: (120 + 30) / 190 = 78.9% |
+| Document count beneath that percentage | Approval-only count: 30, not 150 |
+| Supplier outcome tile or segment | Separate approval-only category: 30 / 190 = 15.8% |
+| Blue AP line in the trend screenshot | Separate approval-only share; not the combined headline |
+
+The final outcome categories sum to 100% of the measured population. The Pure and combined AP headline percentages overlap and must not be added.
+
 ### How current are the numbers
 
 Outcomes are **recalculated every 15 minutes**. A document's outcome can still change after it first appears: the ERP may confirm an export hours later. The line **Data as of …** at the bottom of the tab shows when the numbers were last computed.
@@ -173,7 +201,7 @@ The **sub-organisation** you selected at the top of DocBits narrows the key figu
 
 The screenshot shows separate outcome shares: **Pure touchless** and **AP touchless** (approval only), plus the **target line**. In this captured view the blue line is the approval-only share, not the combined AP headline rate. The combined rate adds the pure and approval-only shares over the same population. Keep outcome shares and the combined KPI distinct when reading charts. Short periods show daily points, long periods weekly points.
 
-**Example.** After you switched on automatic PO matching on 1 October, the pure rate climbs from 55 % to 68 % within two weeks. The chart shows the day the curve turns, so you can match it to your change.
+**Example.** After you switched on automatic PO matching on 1 October, the pure rate climbs from 55 % to 68 % within two weeks. The chart shows the day the curve turns, so you can investigate the timing. A before/after association does not by itself prove that this setting caused the improvement. Compare document type, supplier mix and other changes.
 
 ### Where touchless is lost first
 
@@ -242,7 +270,7 @@ While it runs you see **Queued**, **Running**, **Done**, **Already analysed** or
 3. Read **Where touchless is lost first** and pick the biggest stage.
 4. Open **Supplier opportunities**. Sort by **Expected lift** and take the top supplier with the status **RECOVERABLE**.
 5. Read the **issue clusters**, check **Missing evidence**, then follow **What to change**.
-6. Apply one change at a time with a **preview**, so the **Change history** can measure it.
+6. Fix one confirmed cause. For a supported DocBits proposal use preview and change history. For an Infor correction, document the source and import separately; it does not automatically create a DocBits setting-change entry.
 7. After two weeks check the **before/after** result.
 
 ## Ask in plain language: DocBits MCP
@@ -253,6 +281,16 @@ All of this is also available to your AI assistant through the [DocBits MCP](../
 * "Which three suppliers cost us the most touchless documents?"
 * "Why do documents of this supplier stop for a human?"
 * "Why did the PO match fail for this document?"
+
+## Explain Touchless through MCP
+
+> Explain Pure Touchless, approval-only outcomes and the combined AP rate for invoices over the last 30 days. State the numerator, denominator, in-progress and excluded documents, scope and data timestamp. Keep extraction correctness separate.
+
+Use `touchless_get_summary` with `period: "30d"` and `doc_type: "INVOICE"`. For a subprocess, use only segment fields and values actually returned by `touchless_list_segments`. Compare the dashboard and MCP with the same organisation, document type, segment and period; read `data_as_of`.
+
+**Verified Dev counterexample:** Three newly uploaded test invoices were still `IN_PROGRESS`. The summary returned `population.total: 3`, `population.in_progress: 3`, `population.eligible: 0` and `official_touchless_rate.ap_pct: null`. No rate was measurable yet. This is neither 0% extraction accuracy nor 100% Touchless. Summary eligibility here refers to the completed KPI population; an individual trace can simultaneously show `eligible: true` and `bucket_final: false`.
+
+The MCP examples on these five pages use direct DocBits MCP tools checked on Dev. Your connected account's organisation and role apply; availability in another interface or an additional tool allowlist is not established by that test.
 
 ## FAQ
 
@@ -283,3 +321,5 @@ No. It records the intervention, not responsibility. Use the document trace and 
 * [DocBits MCP](../../../advanced-functions-and-tools/docbits-mcp/)
 
 <!-- Documentation review 2026-11-04: extraction quality vs process outcomes; KPI and terminal-outcome definitions checked against DocBits_API c51f350c728acb8ac964098d15f7b006bce273f4, module/automation_intelligence/kpi.py and bucket.py. Existing native screenshots retained and checked separately from illustrative examples. -->
+
+<!-- Completion review 2026-11-04: owned synthetic PO examples, MCP schema/read evidence, human-action classification, KPI labels and screenshot proof limits. -->

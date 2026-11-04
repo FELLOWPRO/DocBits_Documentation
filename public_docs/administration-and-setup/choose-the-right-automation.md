@@ -24,6 +24,8 @@ DocBits propose plusieurs moyens de modifier, de contrôler et d'acheminer les d
 
 Chaque document traverse les mêmes étapes. Chaque outil a sa place dans ce flux, et cette place détermine ce qu'il voit et ce qu'il peut encore modifier.
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Gare de triage isométrique : un wagon-document passe par les règles de transformation, les règles de correspondance des bons de commande, de nouveau les règles de transformation et les règles de validation personnalisées, puis par un signal Prêt pour la validation, puis par Standard Workflow, Advanced Workflow et une carte Workflow SDK"><figcaption><p>Un wagon-document circule de gauche à droite à travers 1 les règles de transformation, 2 les règles de correspondance des bons de commande (les règles de transformation s'exécutent de nouveau après le rapprochement) et 3 les règles de validation personnalisées ; ce n'est qu'après le signal lumineux Prêt pour la validation qu'un workflow peut démarrer, soit 4 Standard Workflow, 5 Advanced Workflow (la voie de garage avec embranchements) ou 6 une carte Workflow SDK, tandis que les scripts (&#x3C;/>) s'accrochent à des points de déclenchement le long du parcours, avant le signal.</p></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-flow-fr.svg" alt="Où les règles de transformation, les règles de correspondance des bons de commande, les règles de validation personnalisées, les scripts et les workflows s'exécutent dans le flux du document"><figcaption></figcaption></figure>
 
 En clair :

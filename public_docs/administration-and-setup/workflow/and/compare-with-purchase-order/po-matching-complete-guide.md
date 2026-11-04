@@ -33,10 +33,12 @@ Lorsque vous recevez une facture, elle doit correspondre au bon de commande (PO)
 **Vue d'ensemble :**
 
 ```
-PO Placed     Invoice Arrives     PO Matching     Decision
-(€100)    →   (€103)          →   (Check if       → Approve/Reject
-Qty: 100      Qty: 100            within tolerance)
+BC passé      Facture reçue         Rapprochement BC    Décision
+(€100)    →   (€103)            →   (Vérifier si      → Approuver/Rejeter
+Qté : 100     Qté : 100             dans la tolérance)
 ```
+
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Balance isométrique à fléau : le plateau de gauche porte le prix unitaire du bon de commande de 100, celui de droite le prix unitaire de la facture de 103 (100 plus un petit poids supplémentaire). Le fléau penche et son aiguille se trouve dans la zone verte qui marque la tolérance de 5 %." width="768"><figcaption><p>Le prix du bon de commande (100 €) se trouve sur le plateau de gauche et le prix de la facture (103 €) sur celui de droite. L'écart de 3 € représente 3 % du prix du bon de commande : l'aiguille reste donc dans la zone verte de tolérance de ±5 % et le contrôle est réussi. Au-delà de ±5 % (en rouge), la facture doit être vérifiée.</p></figcaption></figure>
 
 ***
 
@@ -69,17 +71,17 @@ Le système compare :
 ### Exemple
 
 ```
-PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+Bon de commande :
+- Article ABC : Qté 100, Prix unitaire €50 = €5000
+- Article XYZ : Qté 50, Prix unitaire €20 = €1000
+- Total : €6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+Facture :
+- Article ABC : Qté 100, Prix unitaire €50 = €5000
+- Article XYZ : Qté 50, Prix unitaire €20 = €1000
+- Total : €6000
 
-Result: ✅ FULL MATCH
+Résultat : ✅ CORRESPONDANCE COMPLÈTE
 ```
 
 ***
@@ -101,28 +103,28 @@ Compare le prix unitaire sur la facture avec le prix unitaire sur le bon de comm
 **Formule :**
 
 ```
-Variance % = |(Invoice Price - PO Price)| / PO Price × 100
+Écart % = |(Prix facture - Prix bon de commande)| / Prix bon de commande × 100
 
-Check: Is Variance % ≤ Tolerance %?
+Contrôle : l'écart % est-il ≤ à la tolérance % ?
 ```
 
 **Exemple étape par étape :**
 
 ```
-Step 1: Get prices
-  PO Unit Price: €100.00
-  Invoice Unit Price: €103.00
+Étape 1 : Récupérer les prix
+  Prix unitaire du bon de commande : €100.00
+  Prix unitaire de la facture : €103.00
 
-Step 2: Calculate difference
-  Difference = |€103.00 - €100.00| = €3.00
+Étape 2 : Calculer la différence
+  Différence = |€103.00 - €100.00| = €3.00
 
-Step 3: Calculate percentage
-  Percentage = (€3.00 / €100.00) × 100 = 3%
+Étape 3 : Calculer le pourcentage
+  Pourcentage = (€3.00 / €100.00) × 100 = 3%
 
-Step 4: Check tolerance (5% allowed)
-  Is 3% ≤ 5%? YES ✅
+Étape 4 : Vérifier la tolérance (5 % autorisés)
+  3 % ≤ 5 % ? OUI ✅
 
-Result: PASS - Within tolerance
+Résultat : PASS - Dans la tolérance
 ```
 
 ### Exemples concrets
@@ -130,56 +132,56 @@ Result: PASS - Within tolerance
 #### Exemple 1 : petite augmentation (acceptée)
 
 ```
-PO Price: €50.00
-Invoice Price: €51.50
-Tolerance: ±3%
+Prix du bon de commande : €50.00
+Prix de la facture : €51.50
+Tolérance : ±3%
 
-Calculation:
-  Variance = |(€51.50 - €50.00)| / €50.00 × 100
-  Variance = €1.50 / €50.00 × 100 = 3%
+Calcul :
+  Écart = |(€51.50 - €50.00)| / €50.00 × 100
+  Écart = €1.50 / €50.00 × 100 = 3%
 
-Is 3% ≤ 3%? YES ✅ ACCEPT
+3 % ≤ 3 % ? OUI ✅ ACCEPTER
 ```
 
 #### Exemple 2 : augmentation importante (rejetée)
 
 ```
-PO Price: €50.00
-Invoice Price: €55.00
-Tolerance: ±3%
+Prix du bon de commande : €50.00
+Prix de la facture : €55.00
+Tolérance : ±3%
 
-Calculation:
-  Variance = |(€55.00 - €50.00)| / €50.00 × 100
-  Variance = €5.00 / €50.00 × 100 = 10%
+Calcul :
+  Écart = |(€55.00 - €50.00)| / €50.00 × 100
+  Écart = €5.00 / €50.00 × 100 = 10%
 
-Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
+10 % ≤ 3 % ? NON ❌ REJETER - RÉVISION NÉCESSAIRE
 ```
 
 #### Exemple 3 : Remise (également vérifiée)
 
 ```
-PO Price: €100.00
-Invoice Price: €97.00
-Tolerance: ±5%
+Prix du bon de commande : €100.00
+Prix de la facture : €97.00
+Tolérance : ±5%
 
-Calculation:
-  Variance = |(€97.00 - €100.00)| / €100.00 × 100
-  Variance = €3.00 / €100.00 × 100 = 3%
+Calcul :
+  Écart = |(€97.00 - €100.00)| / €100.00 × 100
+  Écart = €3.00 / €100.00 × 100 = 3%
 
-Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
+3 % ≤ 5 % ? OUI ✅ ACCEPTER (la remise est dans la tolérance)
 ```
 
 #### Exemple 4 : Tolérance de valeur absolue
 
 ```
-PO Price: €10.00
-Invoice Price: €10.50
-Tolerance: ±€1.00 (absolute, not %)
+Prix du bon de commande : €10.00
+Prix de la facture : €10.50
+Tolérance : ±€1.00 (absolue, pas en %)
 
-Calculation:
-  Variance = |€10.50 - €10.00| = €0.50
+Calcul :
+  Écart = |€10.50 - €10.00| = €0.50
 
-Is €0.50 ≤ €1.00? YES ✅ ACCEPT
+€0.50 ≤ €1.00 ? OUI ✅ ACCEPTER
 ```
 
 ### Que faire des résultats
@@ -192,7 +194,7 @@ Is €0.50 ≤ €1.00? YES ✅ ACCEPT
 
 **Si ÉCHEC ❌ :**
 
-* Indicateur pour révision manuelle
+* Signaler pour révision manuelle
 * Demander des explications au fournisseur
 * Contacter l'équipe d'approvisionnement
 * Approuver avec note si acceptable
@@ -216,34 +218,34 @@ Vérifie si la quantité commandée correspond à la quantité facturée
 **Pourcentage de tolérance :**
 
 ```
-Formula:
-  Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
+Formule :
+  Écart de quantité % = |(Qté facture - Qté bon de commande)| / Qté bon de commande × 100
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 103 units
-  Tolerance: ±5%
+Exemple :
+  Quantité du bon de commande : 100 unités
+  Quantité facturée : 103 unités
+  Tolérance : ±5%
 
-  Variance = |(103 - 100)| / 100 × 100
-  Variance = 3 / 100 × 100 = 3%
+  Écart = |(103 - 100)| / 100 × 100
+  Écart = 3 / 100 × 100 = 3%
 
-  Is 3% ≤ 5%? YES ✅ ACCEPT
+  3 % ≤ 5 % ? OUI ✅ ACCEPTER
 ```
 
 **Tolérance absolue :**
 
 ```
-Formula:
-  Quantity Variance = |Invoice Qty - PO Qty|
+Formule :
+  Écart de quantité = |Qté facture - Qté bon de commande|
 
-Example:
-  PO Quantity: 100 units
-  Invoice Quantity: 102 units
-  Tolerance: ±5 units
+Exemple :
+  Quantité du bon de commande : 100 unités
+  Quantité facturée : 102 unités
+  Tolérance : ±5 unités
 
-  Variance = |102 - 100| = 2 units
+  Écart = |102 - 100| = 2 unités
 
-  Is 2 units ≤ 5 units? YES ✅ ACCEPT
+  2 unités ≤ 5 unités ? OUI ✅ ACCEPTER
 ```
 
 ### Scénarios du monde réel
@@ -251,31 +253,31 @@ Example:
 #### Surlivraison (plus que commandé)
 
 ```
-Ordered: 100 units
-Invoiced: 110 units
-Tolerance: ±5%
+Commandé : 100 unités
+Facturé : 110 unités
+Tolérance : ±5%
 
-Variance = |(110-100)|/100 × 100 = 10%
+Écart = |(110-100)|/100 × 100 = 10%
 
-Is 10% ≤ 5%? NO ❌
+10 % ≤ 5 % ? NON ❌
 
-Decision: Contact supplier - more delivered than ordered
-Possible reason: Error by supplier, partial shipment already received
+Décision : contacter le fournisseur - livraison supérieure à la commande
+Raison possible : erreur du fournisseur, livraison partielle déjà reçue
 ```
 
 #### Sous-livraison (moins que commandé)
 
 ```
-Ordered: 100 units
-Invoiced: 95 units
-Tolerance: ±5%
+Commandé : 100 unités
+Facturé : 95 unités
+Tolérance : ±5%
 
-Variance = |(95-100)|/100 × 100 = 5%
+Écart = |(95-100)|/100 × 100 = 5%
 
-Is 5% ≤ 5%? YES ✅
+5 % ≤ 5 % ? OUI ✅
 
-Decision: Accept - within tolerance
-Possible reason: Partial shipment, rest to follow
+Décision : accepter - dans la tolérance
+Raison possible : livraison partielle, le reste suivra
 ```
 
 ***
@@ -289,10 +291,10 @@ Lorsque la quantité diffère, calcule si la différence de prix totale est acce
 ### Pourquoi c'est important
 
 ```
-Scenario: You ordered 100 units but received 110
-- Quantity is 10% over (bad)
-- BUT: You're only charged for 10% extra
-- Combined effect might be acceptable
+Scénario : vous avez commandé 100 unités mais en avez reçu 110
+- La quantité dépasse de 10 % (mauvais)
+- MAIS : seuls 10 % supplémentaires vous sont facturés
+- L'effet combiné peut être acceptable
 ```
 
 ### Calcul
@@ -300,30 +302,30 @@ Scenario: You ordered 100 units but received 110
 **Formule :**
 
 ```
-Combined Variance = Quantity Variance × Price Variance
+Écart combiné = Écart de quantité × Écart de prix
 
-If both are within tolerance, combined is usually acceptable
+Si les deux sont dans la tolérance, l'écart combiné est généralement acceptable
 ```
 
 **Exemple :**
 
 ```
-PO:
-- Unit Price: €100
-- Quantity: 100
-- Total: €10,000
+Bon de commande :
+- Prix unitaire : €100
+- Quantité : 100
+- Total : €10,000
 
-Invoice:
-- Unit Price: €102 (2% higher)
-- Quantity: 105 (5% higher)
-- Total: €10,710
+Facture :
+- Prix unitaire : €102 (2 % de plus)
+- Quantité : 105 (5 % de plus)
+- Total : €10,710
 
-Analysis:
-- Price variance: 2% ✅
-- Quantity variance: 5% ✅
-- Combined effect: 1.02 × 1.05 = 1.071 = 7.1% total increase
+Analyse :
+- Écart de prix : 2 % ✅
+- Écart de quantité : 5 % ✅
+- Effet combiné : 1.02 × 1.05 = 1.071 = 7,1 % d'augmentation totale
 
-Is combined variance acceptable? Usually YES ✅
+L'écart combiné est-il acceptable ? Généralement OUI ✅
 ```
 
 ***
@@ -339,32 +341,32 @@ Vérifie si les éléments de la facture correspondent aux éléments du bon de 
 **Correspondance exacte (le plus simple) :**
 
 ```
-PO Item ID: ABC-123
-Invoice Item ID: ABC-123
-Result: ✅ MATCH
+ID d'article du bon de commande : ABC-123
+ID d'article de la facture : ABC-123
+Résultat : ✅ CORRESPONDANCE
 ```
 
 **Numéro d'article du fournisseur (plus courant) :**
 
 ```
-PO Item: ABC-123 (Our internal code)
-Supplier Item: SUPP-456 (Their code for same item)
-System matches these as same item
-Result: ✅ MATCH
+Article du bon de commande : ABC-123 (notre code interne)
+Article du fournisseur : SUPP-456 (son code pour le même article)
+Le système les associe comme étant le même article
+Résultat : ✅ CORRESPONDANCE
 ```
 
 ### Scénario : Et si cela ne correspond pas ?
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+Article du bon de commande : ABC-123 (fil de cuivre, 2 mm)
+Article de la facture : ABC-124 (fil d'acier, 2 mm)
 
-Result: ❌ NO MATCH
+Résultat : ❌ AUCUNE CORRESPONDANCE
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+Actions :
+1. S'agit-il d'une substitution ? Vérifier auprès des achats
+2. S'agit-il d'une erreur ? Contacter le fournisseur
+3. La description est-elle similaire ? Vérifier manuellement
 ```
 
 ***
@@ -386,11 +388,11 @@ Vérifie que le type de bon de commande est correct
 ### Exemple de vérification
 
 ```
-PO Order Type: Standard Order
-Invoice Order Type: Standard Order
-Result: ✅ MATCH
+Type de commande du bon de commande : commande standard
+Type de commande de la facture : commande standard
+Résultat : ✅ CORRESPONDANCE
 
-If mismatch: Could affect terms, payment, pricing
+En cas d'écart : peut affecter les conditions, le paiement, les prix
 ```
 
 ***
@@ -406,39 +408,39 @@ Vérifie si la date de livraison correspond à la date promise sur le bon de com
 **Retard de livraison :**
 
 ```
-Formula:
-  Days Late = Invoice Delivery Date - PO Promised Date
+Formule :
+  Jours de retard = Date de livraison facture - Date promise du bon de commande
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-22
-  Days Late = 7 days
+Exemple :
+  Promis (bon de commande) : 2025-10-15
+  Livraison réelle : 2025-10-22
+  Jours de retard = 7 jours
 
-If tolerance is ±3 days:
-  Is 7 ≤ 3? NO ❌ LATE
+Si la tolérance est de ±3 jours :
+  7 ≤ 3 ? NON ❌ EN RETARD
 ```
 
 **Livraison anticipée :**
 
 ```
-Formula:
-  Days Early = PO Promised Date - Invoice Delivery Date
+Formule :
+  Jours d'avance = Date promise du bon de commande - Date de livraison facture
 
-Example:
-  PO Promised: 2025-10-15
-  Actual Delivery: 2025-10-10
-  Days Early = 5 days
+Exemple :
+  Promis (bon de commande) : 2025-10-15
+  Livraison réelle : 2025-10-10
+  Jours d'avance = 5 jours
 
-Early delivery is usually OK ✅
-Unless you need it at specific time
+Une livraison anticipée est généralement acceptable ✅
+Sauf si vous en avez besoin à un moment précis
 ```
 
 ### Paramètres de tolérance
 
 ```
-±3 days: Allow 3 days late or early
-±5 days: Allow up to 5 days variance
-0 days: Must match exactly
+±3 jours : autoriser 3 jours de retard ou d'avance
+±5 jours : autoriser jusqu'à 5 jours d'écart
+0 jour : doit correspondre exactement
 ```
 
 ***
@@ -452,11 +454,11 @@ Vérifie si les frais supplémentaires (taxes, expédition, manutention) corresp
 ### Frais communs
 
 ```
-- Shipping: €50
-- Handling: €10
-- Packaging: €5
-- Insurance: €15
-- Taxes: €300
+- Expédition : €50
+- Manutention : €10
+- Emballage : €5
+- Assurance : €15
+- Taxes : €300
 ```
 
 ### Calcul
@@ -464,32 +466,32 @@ Vérifie si les frais supplémentaires (taxes, expédition, manutention) corresp
 **Exemple : Vérification des frais d'expédition**
 
 ```
-PO Shipping: €50.00
-Invoice Shipping: €51.00
-Tolerance: ±3%
+Expédition (bon de commande) : €50.00
+Expédition (facture) : €51.00
+Tolérance : ±3%
 
-Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
+Écart = |€51.00 - €50.00| / €50.00 × 100 = 2%
 
-Is 2% ≤ 3%? YES ✅ ACCEPT
+2 % ≤ 3 % ? OUI ✅ ACCEPTER
 ```
 
 **Exemple : Charges multiples**
 
 ```
-PO Total Charges:
-  - Shipping: €50
-  - Taxes: €300
-  - Handling: €10
-  Total: €360
+Total des frais (bon de commande) :
+  - Expédition : €50
+  - Taxes : €300
+  - Manutention : €10
+  Total : €360
 
-Invoice Total Charges:
-  - Shipping: €50
-  - Taxes: €312 (11% tax)
-  - Handling: €10
-  Total: €372
+Total des frais (facture) :
+  - Expédition : €50
+  - Taxes : €312 (taxe de 11 %)
+  - Manutention : €10
+  Total : €372
 
-Difference: €12
-Check if within tolerance ✅ or ❌
+Différence : €12
+Vérifier si dans la tolérance ✅ ou ❌
 ```
 
 ***
@@ -505,37 +507,37 @@ Vérifie que les montants des taxes sont calculés correctement
 **Formule :**
 
 ```
-Tax Amount = Subtotal × Tax Rate
+Montant de la taxe = Sous-total × Taux de taxe
 
-Example:
-  Subtotal: €1000
-  Tax Rate: 19%
-  Expected Tax: €1000 × 0.19 = €190
+Exemple :
+  Sous-total : €1000
+  Taux de taxe : 19 %
+  Taxe attendue : €1000 × 0.19 = €190
 
-Invoice Tax: €190
-Match? YES ✅
+Taxe de la facture : €190
+Correspondance ? OUI ✅
 ```
 
 **Problèmes courants :**
 
 ```
-1. Tax rate changed (region-based)
-2. Tax applied to wrong amount (before/after discounts)
-3. Multiple tax rates (some items 7%, others 19%)
-4. Tax exempt items (0% tax)
+1. Taux de taxe modifié (selon la région)
+2. Taxe appliquée au mauvais montant (avant/après remises)
+3. Plusieurs taux de taxe (certains articles à 7 %, d'autres à 19 %)
+4. Articles exonérés de taxe (taxe à 0 %)
 ```
 
 **Exemple : Fiscalité multi-taux**
 
 ```
-Item A: €100 @ 19% tax = €119
-Item B: €100 @ 7% tax = €107
-Item C: €100 @ 0% tax = €100
-Total: €326
+Article A : €100 à 19 % de taxe = €119
+Article B : €100 à 7 % de taxe = €107
+Article C : €100 à 0 % de taxe = €100
+Total : €326
 
-Invoice shows €325 (€1 error)
+La facture indique €325 (erreur de €1)
 
-Check: Within tolerance or needs attention?
+Contrôle : dans la tolérance ou à examiner ?
 ```
 
 ***
@@ -549,15 +551,15 @@ S'assure que la facture concerne le bon établissement/centre de coûts
 ### Exemple
 
 ```
-PO is for:
-- Facility: Berlin Plant
-- Cost Center: CC-2025
+Le bon de commande concerne :
+- Établissement : usine de Berlin
+- Centre de coûts : CC-2025
 
-Invoice should have:
-- Facility: Berlin Plant ✅
-- Cost Center: CC-2025 ✅
+La facture devrait indiquer :
+- Établissement : usine de Berlin ✅
+- Centre de coûts : CC-2025 ✅
 
-If different facility: May need different approval
+Si l'établissement diffère : une autre approbation peut être nécessaire
 ```
 
 ***
@@ -571,21 +573,21 @@ Vérifie si le fournisseur est toujours approuvé/actif
 ### Types de statut
 
 ```
-✅ ACTIVE: Approved, can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ ACTIVE : approuvé, les affaires sont possibles
+⚠️ ON HOLD : temporairement bloqué
+❌ INACTIVE : plus d'affaires en cours
+⚠️ CONDITIONAL : uniquement pour certains articles
 ```
 
 ### Exemple de vérification
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
-Status when creating PO: ACTIVE
-Status when invoice arrives: INACTIVE
+Fournisseur : ABC Corp
+Statut dans la base de données : ACTIVE
+Statut à la création du bon de commande : ACTIVE
+Statut à la réception de la facture : INACTIVE
 
-Alert: Supplier status changed! Investigate why.
+Alerte : le statut du fournisseur a changé ! Cherchez pourquoi.
 ```
 
 ***
@@ -595,46 +597,46 @@ Alert: Supplier status changed! Investigate why.
 ### Tolérances strictes (risque moindre, travail manuel accru)
 
 ```
-Use for:
-- High-value items
-- Items where exactness matters
-- Regulated industries
+À utiliser pour :
+- Articles de grande valeur
+- Articles pour lesquels l'exactitude est essentielle
+- Secteurs réglementés
 
-Settings:
-- Unit Price: ±1%
-- Quantity: ±1%
-- Delivery Date: ±1 day
-- Charges: ±1%
+Paramètres :
+- Prix unitaire : ±1%
+- Quantité : ±1%
+- Date de livraison : ±1 jour
+- Frais : ±1%
 ```
 
 ### Tolérances modérées (équilibrées)
 
 ```
-Use for:
-- Most business transactions
-- Standard items
-- Normal purchasing
+À utiliser pour :
+- La plupart des transactions commerciales
+- Articles standard
+- Achats courants
 
-Settings:
-- Unit Price: ±3-5%
-- Quantity: ±3-5%
-- Delivery Date: ±3 days
-- Charges: ±5%
+Paramètres :
+- Prix unitaire : ±3-5%
+- Quantité : ±3-5%
+- Date de livraison : ±3 jours
+- Frais : ±5%
 ```
 
 ### Tolérances lâches (risque plus élevé, moins de travail manuel)
 
 ```
-Use for:
-- Low-value items
-- Bulk purchases
-- Supplier agreements with flexibility
+À utiliser pour :
+- Articles de faible valeur
+- Achats en gros
+- Accords fournisseurs flexibles
 
-Settings:
-- Unit Price: ±10%
-- Quantity: ±10%
-- Delivery Date: ±7 days
-- Charges: ±10%
+Paramètres :
+- Prix unitaire : ±10%
+- Quantité : ±10%
+- Date de livraison : ±7 jours
+- Frais : ±10%
 ```
 
 ***
@@ -642,24 +644,24 @@ Settings:
 ## Exemple de workflow de correspondance de bons de commande
 
 ```
-Invoice Arrives
+Facture reçue
     ↓
-Condition: "Is amount > €5000?" → YES
+Condition : « Le montant est-il > €5000 ? » → OUI
     ↓
-Check: Full Match? → NO (10% price difference)
+Contrôle : correspondance complète ? → NON (10 % d'écart de prix)
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+Contrôle : prix unitaire à ±5 % ? → NON (12 % d'écart)
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+Contrôle : quantité à ±5 % ? → OUI (2 % d'écart)
     ↓
-Decision: FAIL - Price variance too high
+Décision : FAIL - Écart de prix trop élevé
     ↓
-Flag for: Manual review / Buyer approval
+Signaler pour : révision manuelle / approbation de l'acheteur
     ↓
-Wait for: Buyer comment
+Attendre : commentaire de l'acheteur
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+Si approuvé : poursuivre vers l'exportation
+Si rejeté : retour au fournisseur
 ```
 
 ***
@@ -669,46 +671,46 @@ If Rejected: Return to Supplier
 ### "Bon de commande introuvable"
 
 ```
-Cause: Invoice PO number doesn't exist in system
-Fix:
-1. Verify PO number spelling
-2. Check if PO was created
-3. Verify PO is in correct organization
-4. Ask supplier for PO reference
+Cause : le numéro de bon de commande de la facture n'existe pas dans le système
+Solution :
+1. Vérifier l'orthographe du numéro de bon de commande
+2. Vérifier si le bon de commande a été créé
+3. Vérifier que le bon de commande se trouve dans la bonne organisation
+4. Demander la référence du bon de commande au fournisseur
 ```
 
 ### "Les éléments ne correspondent pas"
 
 ```
-Cause: Invoice items are different from PO items
-Possible Reasons:
-1. Substitution approved by procurement
-2. Different item numbers for same item
-3. Error by supplier
-Fix: Contact procurement or supplier
+Cause : les articles de la facture diffèrent de ceux du bon de commande
+Raisons possibles :
+1. Substitution approuvée par les achats
+2. Numéros d'article différents pour le même article
+3. Erreur du fournisseur
+Solution : contacter les achats ou le fournisseur
 ```
 
 ### "Prix supérieur au bon de commande"
 
 ```
-Cause: Invoice price > PO price
-Possible Reasons:
-1. Price increase approved
-2. Supplier error
-3. Currency difference
-4. Additional services included
-Fix: Verify with procurement
+Cause : prix de la facture > prix du bon de commande
+Raisons possibles :
+1. Augmentation de prix approuvée
+2. Erreur du fournisseur
+3. Différence de devise
+4. Services supplémentaires inclus
+Solution : vérifier auprès des achats
 ```
 
 ### "Date de livraison erronée"
 
 ```
-Cause: Invoice dated after promised delivery
-Possible Reasons:
-1. Shipment was delayed
-2. Receiving date different from invoice date
-3. Partial shipment
-Fix: Check shipping documents or contact supplier
+Cause : facture datée après la livraison promise
+Raisons possibles :
+1. L'expédition a été retardée
+2. La date de réception diffère de la date de facture
+3. Livraison partielle
+Solution : vérifier les documents d'expédition ou contacter le fournisseur
 ```
 
 ***
@@ -717,13 +719,13 @@ Fix: Check shipping documents or contact supplier
 
 | Carte           | Ce qu'il vérifie        | Calcul principal     | Tolérance commune |
 | -------------- | --------------------- | -------------------- | ---------------- |
-| Match complet     | Tout            | Tous les chèques           | Varie           |
+| Correspondance complète | Tout            | Tous les contrôles           | Varie           |
 | Prix unitaire     | Prix par unité        | % ou € de différence    | ±3-5%            |
-| Quantité       | Montant commandé        | % ou unité de différence | ±3-5%            |
+| Quantité       | Quantité commandée        | % ou unité de différence | ±3-5%            |
 | Prix combiné | Total avec changement de quantité | Quantité × Prix          | ±5-10%           |
-| Identifiant de l'article        | Bons articles           | Correspondance de chaîne         | Exact            |
+| Identifiant de l'article        | Articles corrects           | Correspondance de chaîne         | Exact            |
 | Type de commande     | Type d'achat      | Correspondance de chaîne         | Exact            |
-| Date de livraison  | Quand arrivé          | Différence de jour       | ±3 jours          |
+| Date de livraison  | Date d'arrivée          | Différence de jour       | ±3 jours          |
 | Frais        | Frais supplémentaires            | % ou € de différence    | ±5%              |
 | Taxe            | Montant de la taxe            | Calcul du % de taxe    | ±1%              |
 | Installation       | Centre de coûts           | Correspondance de chaîne         | Exact            |
@@ -746,7 +748,7 @@ Fix: Check shipping documents or contact supplier
 
 `CONDITION_PROMISED_DELIVERY_DATE_TO_CURRENT` · version 2
 
-Supposons une date de référence de `2026-10-21` et une date de livraison de ligne promise de `2026-10-23`. Sélectionnez la comparaison au plus tard et la tolérance du jour zéro. La date future satisfait cette comparaison ; `2026-10-20` ne le fait pas. Configurez délibérément les options Any/All et Accept-Tolérance-Day et testez une date manquante séparément.
+Supposons une date de référence de `2026-10-21` et une date de livraison de ligne promise de `2026-10-23`. Sélectionnez la comparaison au plus tard et la tolérance du jour zéro. La date future satisfait cette comparaison ; `2026-10-20` ne le fait pas. Configurez délibérément les options Any/All et jour de tolérance accepté, et testez une date manquante séparément.
 
 <!-- workflow-card-example-condition_po_extracted_table_column-20261021 -->
 

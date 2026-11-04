@@ -23,7 +23,7 @@ Przed przełączeniem proszę sprawdzić, czy oba kanały są gotowe i dostępne
 
 ## Przegląd cyklu życia
 
-![Trzyfazowy cykl życia wydań DocBits VESTA i NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy.png)
+![Trzyfazowy cykl życia wydań DocBits VESTA i NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
 Każdy cykl składa się z trzech faz. Następnie przejście (rollover) zarządzane przez FELLOWPRO przenosi wydanie produkcyjne NOVA do VESTA i rozpoczyna kolejny cykl.
 
@@ -82,7 +82,7 @@ Te same trzy fazy powtarzają się następnie z nowymi numerami wersji.
 
 Poniższy diagram przedstawia opisany powyżej cykl wydań bardziej szczegółowo.
 
-![Szczegółowy cykl wydań DocBits VESTA i NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
+![Szczegółowy cykl wydań DocBits VESTA i NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
 
 ### Częstotliwość wydań
 

@@ -4,14 +4,14 @@
 
 Ustawienia panelu są zaprojektowane, aby pomóc administratorom kontrolować prezentację danych i interakcję w panelu DocBits. Te ustawienia określają, jakie informacje są natychmiast dostępne po zalogowaniu, zapewniając użytkownikom szybki dostęp do najważniejszych danych dla ich zadań.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_1.png)
 
 ## Uzyskiwanie dostępu do Ustawień Panelu
 
 Aby uzyskać dostęp do ustawień panelu, przejdź do:\
 **Ustawienia → Ustawienia globalne → Panel**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_dashboard.png)
 
 ## **Ogólny**
 
@@ -20,13 +20,13 @@ Aby uzyskać dostęp do ustawień panelu, przejdź do:\
   * **Automatyczne ładowanie pulpitu nawigacyjnego**: Kontroluje, czy panel powinien automatycznie ładować dane po uzyskaniu dostępu przez użytkownika, co może pomóc w skróceniu czasów ładowania i poprawie doświadczeń użytkownika poprzez ładowanie danych tylko wtedy, gdy są potrzebne.
   *   **Eksportuj dane pulpitu nawigacyjnego**: Ta funkcja dodaje nowy przycisk **Eksportuj** do paska narzędzi panelu, umożliwiając eksportowanie bieżącego widoku panelu jako pliku **.csv** lub **.xlsx**.
 
-      ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
+      ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_3.png)
 
 ## **Historia eksportu**
 
 W **Historii eksportu** zobaczysz tabelę z listą wszystkich wcześniejszych eksportów wraz z kluczowymi informacjami o każdym żądaniu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
 
 Zawarte są następujące szczegóły:
 
@@ -51,19 +51,19 @@ Zawarte są następujące szczegóły:
 
 * **Oczekujący dostęp do danych wejściowych (dni)**: określa, przez ile dni osoba poproszona o informację w strumieniu aktywności może otworzyć dokument w trybie tylko do odczytu; po tym czasie link przestaje działać. Domyślnie są to 14 dni, a dostęp kończy się także wtedy, gdy dokument przejdzie dalej. Zobacz [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtry**
 
 * **Styl filtra statusu**: Określa styl prezentacji filtrów statusu, który można ustawić na domyślny lub dostosowany zgodnie z operacyjnym skupieniem użytkowników.
 * **Niestandardowy filtr statusu**: Umożliwia tworzenie i stosowanie niestandardowych filtrów, które mogą celować w konkretne statusy dokumentów, takie jak "Nowy", "Walidacja" lub "Eksportowanie". Umożliwia to użytkownikom szybki dostęp do dokumentów na określonych etapach przetwarzania.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_5.png)
 
 ## Panel zaawansowanej wysyłki
 
 * **Widoczność dostarczonych zamówień**: Ta funkcja pozwala użytkownikowi określić czas, przez jaki dostarczone zamówienia będą widoczne.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_6.png)
 
 Te ustawienia panelu są kluczowe dla zapewnienia, że platforma DocBits jest jak najbardziej responsywna i użyteczna, zapewniając użytkownikom potężne narzędzie do monitorowania i zarządzania aktywnościami przetwarzania dokumentów bezpośrednio z panelu.

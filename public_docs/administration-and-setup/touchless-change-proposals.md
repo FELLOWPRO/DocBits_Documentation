@@ -1,5 +1,9 @@
 # Touchless Intelligence : Propositions de modification et rapports
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Chapitre vidéo (version de contrôle):** [Propositions et historique](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.html#chapter=10).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Une recommandation peut s'accompagner d'une **proposition de modification**, un changement de paramètre unique qui devrait aider. Les administrateurs la traitent en quatre étapes :
 

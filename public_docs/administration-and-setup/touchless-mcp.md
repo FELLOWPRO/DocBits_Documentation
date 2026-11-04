@@ -1,5 +1,9 @@
 # Expliquer et améliorer Touchless avec MCP
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Chapitre vidéo (version de contrôle):** [Interroger les indicateurs avec MCP](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.html#chapter=12).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Ces parcours utilisent des outils réellement proposés par DocBits MCP. Distinguez lecture et explication des écritures. Vérifiez organisation, rôle, type, période et date ; n’inventez pas de preuves absentes.
 
 <figure><img src="../.gitbook/assets/touchless-owned-po-price-fr.png" alt="Véritable vue française d’une commande fictive créée sur Dev : 10 × 9 = 90. C’est une comparaison source pour le diagnostic MCP, pas une capture d’un client MCP ni une preuve d’extraction ou de traitement réussi. UNIT PRICE est un libellé produit encore anglais et signifie prix unitaire."><figcaption><p>Véritable vue française d’une commande fictive créée sur Dev : 10 × 9 = 90. C’est une comparaison source pour le diagnostic MCP, pas une capture d’un client MCP ni une preuve d’extraction ou de traitement réussi. UNIT PRICE est un libellé produit encore anglais et signifie prix unitaire.</p></figcaption></figure>

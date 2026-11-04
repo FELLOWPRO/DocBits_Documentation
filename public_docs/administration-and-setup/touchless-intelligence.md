@@ -1,8 +1,16 @@
 # Touchless Intelligence
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/fr.mp4" %}
-
 Touchless Intelligence répond à deux questions distinctes : **DocBits a-t-il correctement extrait la facture ?** et **Le processus entier a-t-il abouti sans intervention de traitement ?** Une extraction correcte peut encore nécessiter du travail si les données Infor diffèrent. AP désigne l’équipe humaine de comptabilité fournisseurs.
+
+## Vidéo : fonctions du rapport Touchless
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.mp4" %}
+
+Cette version de contrôle de 5:45 montre un rapport alimenté : filtres, indicateurs et calcul, évolution, premiers blocages, preuves enregistrées, historique du document, exécutions, règles apprises, améliorations et historique, conseil et résultats MCP réels.
+
+[Ouvrir la vidéo avec sous-titres français et 16 chapitres](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/fr.html). L'évaluation auditive de cette nouvelle version reste à réaliser.
+
+Ces cas pédagogiques expliquent les fonctions du rapport. Une recommandation ou un aperçu ne prouve ni une modification appliquée ni une amélioration mesurée. La proposition MCP affichée nécessite encore une configuration cible précise ; aperçu et application sont indisponibles. Certains textes natifs du produit peuvent conserver leur langue d'origine. Dans les règles apprises, «20 sur 21» indique les cas auxquels la règle s’applique. Le contre-exemple montre une valeur déjà acceptée que la règle remplacerait ; certains libellés natifs traduisent ce sens de façon imprécise.
 
 <figure><img src="../.gitbook/assets/anatomy-touchless-fr.svg" alt="Chaîne de tri isométrique : un convoyeur avec 14 portes, un poussoir qui dévie un document vers un bac de contrôle, un bac d'export avec une pile de documents et un cadran indiquant 78,9 pour cent"><figcaption><p>Touchless comme chaîne de tri, avec les chiffres illustratifs de l'exemple de calcul : les 14 portes sont les étapes du Chemin du pipeline, les feuilles encore sur le tapis sont en cours et ne sont pas comptées, un document qui s'arrête à une porte est poussé dans le bac de contrôle avec les documents AP assisté (30) et Exception de processus (10), et les documents Pure (120) et avec approbation seule (30) dans le bac d'export donnent les 150 sur 190 du cadran, soit 78,9 %, au-dessus de la marque cible de 70 %.</p></figcaption></figure>
 

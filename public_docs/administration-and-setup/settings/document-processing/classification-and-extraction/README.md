@@ -61,6 +61,10 @@ A continuación tendrás la opción de:
 
     
 
+Tras una división correcta, el documento principal se elimina y las páginas continúan como documentos independientes que comparten el mismo lote.
+
+<figure><img src="../../../../.gitbook/assets/anatomy-barcode-split.svg" alt="Ilustración isométrica de ocho hojas en una bandeja con un escáner que lee un código de barras en la hoja 6. Hay separadores delante de las hojas 3 y 6 que dividen las hojas en tres documentos, y una banda elástica rodea toda la bandeja."><figcaption><p>Ejemplo con el patrón <code>^INV\d{6}$</code>: los códigos de las hojas 3 y 6 coinciden y cada uno inicia un documento nuevo, el código de la hoja 4 no coincide y no divide nada, y la banda elástica representa el lote que comparten los documentos resultantes.</p></figcaption></figure>
+
 ## Formato de importes
 
 En la sección **Formato de importes** tienes dos opciones:

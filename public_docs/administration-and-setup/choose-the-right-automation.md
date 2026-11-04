@@ -24,6 +24,8 @@ DocBits ofrece varias formas de modificar, comprobar y enrutar documentos: **Tra
 
 Todo documento pasa por los mismos pasos. Cada herramienta tiene su lugar en ese flujo, y ese lugar determina qué puede ver y qué puede todavía modificar.
 
+<figure><img src="../.gitbook/assets/anatomy-automation.svg" alt="Estación de ferrocarril isométrica: un vagón de documentos pasa por las reglas de transformación, las reglas de coincidencia de órdenes de compra, de nuevo las reglas de transformación y las Custom Validation Rules, después una señal Ready for validation, y luego Standard Workflow, Advanced Workflow y una tarjeta Workflow SDK"><figcaption>Un vagón de documentos avanza de izquierda a derecha por 1 reglas de transformación, 2 reglas de coincidencia de órdenes de compra (las reglas de transformación se ejecutan de nuevo tras la coincidencia) y 3 Custom Validation Rules; solo después de la señal Ready for validation encendida puede iniciarse un workflow: 4 Standard Workflow, 5 Advanced Workflow (la vía de bifurcación) o 6 una tarjeta Workflow SDK, mientras que los Scripts (&#x3C;/>) se enganchan en los puntos de activación a lo largo del recorrido, antes de la señal.</figcaption></figure>
+
 <figure><img src="../.gitbook/assets/automation-flow-es.svg" alt="Dónde se ejecutan las reglas de transformación, las reglas de coincidencia de OC, las Custom Validation Rules, los Scripts y los Workflows en el flujo del documento"><figcaption></figcaption></figure>
 
 En palabras:

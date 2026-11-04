@@ -5,11 +5,17 @@
 | Filter | Was er bewirkt |
 | --- | --- |
 | **7D / 30D / 90D** | Der Zeitraum für die Kennzahlen und die Warteschlange. Standard sind 30 Tage |
-| **Dokumenttyp** (Document Type) | Beschränkt jede Zahl auf einen Typ, zum Beispiel INVOICE |
+| **Dokumenttyp** (Document Type) | Filtert die Touchless-Kennzahlen und die zugehörige Auswertung auf einen Typ, zum Beispiel INVOICE. Gelernte Regelvorschläge haben derzeit eine eigene Auswahl; siehe unten |
 | **Segmentfeld / Segmentwert** (Segment field / Segment value) | Nur, wenn Ihre Organisation mehrere Prozesse über einen Dokumenttyp abwickelt (zum Beispiel direkte, indirekte und EAM-Bestellungen im Feld `order_type`). Wählen Sie ein Feld, um die Aufschlüsselung zu sehen, und einen Wert, um alles darauf einzugrenzen |
 | **Dokument-ID** (Document ID) | Öffnet den **Dokumentverlauf** für ein Dokument |
 
 Die **Unterorganisation**, die Sie oben in DocBits gewählt haben, grenzt die Kennzahlen und die Lieferanten-Warteschlange ein. Fehlermuster (Cluster) und die KI-Analyse betreffen immer die gesamte Organisation.
+
+### Dokumenttyp oben und bei gelernten Regelvorschlägen
+
+Die obere Auswahl und der Dokumenttyp im Abschnitt **Gelernte Regelvorschläge** sind im derzeit geprüften Stand getrennt. Der Abschnitt lädt seine verfügbaren Typen selbst und wählt zunächst den ersten Eintrag. Wählen Sie oben **ORDER_CONFIRMATION**, kann unten deshalb weiterhin **INVOICE** stehen. Die dortigen Regeln betreffen dann Rechnungen, nicht die ausgewählten Auftragsbestätigungen.
+
+Prüfen Sie vor einer Regelanwendung immer den Dokumenttyp direkt am Abschnitt. Gibt es dort keinen passenden Typ, sind damit keine Regelvorschläge für diesen Typ belegt. Der Abschnitt verwendet außerdem seine eigene Datengrundlage, etwa korrigierte Dokumente der letzten 60 Tage; das ist nicht automatisch der Zeitraum der oberen Quote. Diese Beschreibung erklärt den aktuellen getrennten Zustand und behauptet keine bereits umgesetzte Synchronisierung.
 
 ### Die fünf Kennzahlen
 

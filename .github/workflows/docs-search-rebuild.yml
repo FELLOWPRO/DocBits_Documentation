@@ -47,15 +47,15 @@ jobs:
       max-parallel: 3
       matrix:
         include:
-          - { lang: main, root: docbits }
-          - { lang: de, root: deutsch }
-          - { lang: es, root: espanol }
-          - { lang: fr, root: french }
-          - { lang: it, root: italian }
-          - { lang: nl, root: dutch }
-          - { lang: pl, root: polish }
-          - { lang: pt, root: portuguese }
-          - { lang: zh, root: chinese }
+          - { lang: main, root: public_docs }
+          - { lang: de, root: _lang/public_docs }
+          - { lang: es, root: _lang/public_docs }
+          - { lang: fr, root: _lang/public_docs }
+          - { lang: it, root: _lang/public_docs }
+          - { lang: nl, root: _lang/public_docs }
+          - { lang: pl, root: _lang/public_docs }
+          - { lang: pt, root: _lang/public_docs }
+          - { lang: zh, root: _lang/public_docs }
     steps:
       - uses: actions/checkout@v6
         if: inputs.lang == 'all' || inputs.lang == matrix.lang
@@ -74,6 +74,17 @@ jobs:
           SYNC_LANG: ${{ matrix.lang }}
           DOCS_ROOT: ${{ matrix.root }}
         run: python3 .github/scripts/docs_search_sync.py purge --lang "$SYNC_LANG"
+
+      # The language spaces sync from their own branch (public_docs/) since
+      # 2026-11-03; read the pages from there, not from main.
+      - name: Fetch language branch pages
+        if: (inputs.lang == 'all' || inputs.lang == matrix.lang) && matrix.lang != 'main'
+        env:
+          SYNC_LANG: ${{ matrix.lang }}
+        run: |
+          git fetch --no-tags --depth=1 origin "+refs/heads/$SYNC_LANG:refs/remotes/origin/$SYNC_LANG"
+          mkdir -p _lang
+          git archive "origin/$SYNC_LANG" public_docs | tar -x -C _lang
 
       - name: Full ingest + reconcile
         if: inputs.lang == 'all' || inputs.lang == matrix.lang

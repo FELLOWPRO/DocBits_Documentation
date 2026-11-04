@@ -52,12 +52,11 @@ import urllib.parse
 import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# Folder the pages are read from. English is `docbits/` on main (the GitBook
-# space imports it; `readme/` is an outdated copy, only 658 of its 832 pages
-# exist on the live site) and `readme/` is the layout of the language branches.
-# The language spaces are mirrored into main:<folder>/ by language_bridge.py
-# (deutsch/, espanol/, ...). The all-languages sync runs from main with
-# DOCS_ROOT set per language, so no language branch needs this script.
+# Folder the pages are read from, set by the workflows via DOCS_ROOT: the
+# GitBook content root public_docs/ on main (English) and on every language
+# branch. The all-languages sync runs from main and points DOCS_ROOT at a copy
+# of that branch's public_docs/, so no language branch needs this script.
+# The default only serves the unit tests.
 README_ROOT = os.environ.get("DOCS_ROOT", "readme")
 SUMMARY_PATH = os.path.join(README_ROOT, "SUMMARY.md")
 BASE_DOCS_URL = "https://docs.docbits.com"

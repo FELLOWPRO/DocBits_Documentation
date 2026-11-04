@@ -1,2 +1,0 @@
-# Importazione dei dati anagrafici
-

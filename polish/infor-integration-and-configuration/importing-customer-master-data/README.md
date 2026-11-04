@@ -1,2 +1,0 @@
-# Importowanie danych podstawowych
-

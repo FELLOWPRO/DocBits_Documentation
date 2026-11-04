@@ -13,21 +13,6 @@ ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / ".github/scripts/english_source_contract.py"
 
 
-def test_default_git_sync_root_matches_active_english_space():
-    default = yaml.safe_load((ROOT / ".gitbook.yaml").read_text())
-    site = yaml.safe_load((ROOT / "gitbook-docs.yaml").read_text())
-    english = [
-        item["content"]["directory"]
-        for item in site["site"]["structure"]
-        if item.get("content", {}).get("language") == "en"
-    ]
-    assert len(english) == 1
-    assert Path(default["root"]) == Path(english[0]), (
-        "Default Git Sync root must match the active English GitBook directory; "
-        "otherwise approved English changes can remain unpublished."
-    )
-
-
 @pytest.fixture
 def checker():
     spec = importlib.util.spec_from_file_location("english_source_contract", SCRIPT)
@@ -85,21 +70,12 @@ def test_rejects_legacy_source_only_page_change(checker, repository):
     assert any("readme/page.md" in error and "docbits/page.md" in error for error in errors)
 
 
-def test_accepts_published_counterpart_without_overwriting_newer_public_sections(
-    checker, repository,
-):
+def test_rejects_readme_edit_even_when_published_counterpart_changes(checker, repository):
     repo, base = repository
     write(repo, "readme/page.md", "# Corrected source\n")
-    published = "# Corrected public page\n\nNewer public section.\n"
-    write(repo, "docbits/page.md", published)
-    assert checker.check(repo, base, commit(repo)) == []
-    assert (repo / "docbits/page.md").read_text() == published
-
-
-def test_accepts_canonical_catchup_when_content_is_already_published(checker, repository):
-    repo, base = repository
-    write(repo, "readme/page.md", (repo / "docbits/page.md").read_bytes())
-    assert checker.check(repo, base, commit(repo)) == []
+    write(repo, "docbits/page.md", "# Corrected public page\n")
+    errors = checker.check(repo, base, commit(repo))
+    assert any("readme/page.md" in error and "retired" in error for error in errors)
 
 
 @pytest.mark.parametrize("relative", ["docbits/page.md", "deutsch/page.md"])
@@ -116,38 +92,30 @@ def test_rejects_source_only_binary_asset_with_spaces(checker, repository):
     assert any("docbits/.gitbook/assets/diagram (EN).png" in error for error in errors)
 
 
-def test_accepts_updated_published_asset(checker, repository):
-    repo, base = repository
-    for directory in ("readme", "docbits"):
-        write(repo, directory + "/.gitbook/assets/diagram (EN).png", b"\x00\xffnew")
-    assert checker.check(repo, base, commit(repo)) == []
-
-
-def test_rejects_new_source_page_without_imported_counterpart(checker, repository):
+def test_rejects_new_readme_page(checker, repository):
     repo, base = repository
     write(repo, "readme/Field rules (EN).md", "# New English page\n")
     errors = checker.check(repo, base, commit(repo))
     assert any("docbits/Field rules (EN).md" in error for error in errors)
 
 
-def test_accepts_new_page_in_both_directories(checker, repository):
+def test_accepts_new_page_in_active_directory_only(checker, repository):
     repo, base = repository
-    for directory in ("readme", "docbits"):
-        write(repo, directory + "/new.md", "# Reviewed new page\n")
+    write(repo, "docbits/new.md", "# Reviewed new page\n")
     assert checker.check(repo, base, commit(repo)) == []
 
 
-def test_rejects_unpublished_page_removal(checker, repository):
+def test_accepts_legacy_page_removal(checker, repository):
     repo, base = repository
     (repo / "readme/page.md").unlink()
-    assert checker.check(repo, base, commit(repo))
-
-
-def test_accepts_removal_from_both_directories(checker, repository):
-    repo, base = repository
-    for directory in ("readme", "docbits"):
-        (repo / directory / "page.md").unlink()
     assert checker.check(repo, base, commit(repo)) == []
+
+
+def test_accepts_removing_the_whole_readme_folder(checker, repository):
+    repo, base = repository
+    git(repo, "rm", "-rq", "readme")
+    assert checker.check(repo, base, commit(repo)) == []
+    assert (repo / "docbits/page.md").exists()
 
 
 def test_rejects_deleted_public_target_when_source_remains(checker, repository):
@@ -163,36 +131,29 @@ def test_accepts_no_content_changes(checker, repository):
     assert checker.check(repo, base, base) == []
 
 
-def test_rejects_default_root_that_disagrees_with_active_space(checker, repository):
+@pytest.mark.parametrize("root", ["../outside", "/absolute", "docbits/../outside", "./"])
+def test_rejects_unsafe_or_empty_root(checker, repository, root):
     repo, base = repository
-    write(repo, ".gitbook.yaml", "root: ./readme/\n")
-    with pytest.raises(ValueError, match="root"):
-        checker.check(repo, base, commit(repo))
-
-
-@pytest.mark.parametrize("directory", ["../outside", "/absolute", "docbits/../outside"])
-def test_rejects_unsafe_active_directory(checker, repository, directory):
-    repo, base = repository
-    write(
-        repo, "gitbook-docs.yaml",
-        f"site:\n  structure:\n    - content:\n        directory: {directory}\n        language: en\n",
-    )
+    write(repo, ".gitbook.yaml", f"root: {root}\n")
     with pytest.raises(ValueError, match="directory"):
         checker.check(repo, base, commit(repo))
 
 
-def test_rejects_missing_english_space(checker, repository):
+def test_follows_a_renamed_root(checker, repository):
     repo, base = repository
-    write(repo, "gitbook-docs.yaml", "site:\n  structure: []\n")
-    with pytest.raises(ValueError, match="English"):
-        checker.check(repo, base, commit(repo))
+    git(repo, "mv", "docbits", "public_docs")
+    write(repo, ".gitbook.yaml", "root: ./public_docs/\n")
+    head = commit(repo)
+    assert checker.check(repo, base, head) == []
+    write(repo, "readme/page.md", "# Still writes the retired folder\n")
+    errors = checker.check(repo, head, commit(repo))
+    assert any("public_docs/page.md" in error for error in errors)
 
 
-def test_rejects_duplicate_english_space(checker, repository):
+def test_rejects_missing_gitbook_configuration(checker, repository):
     repo, base = repository
-    existing = (repo / "gitbook-docs.yaml").read_text()
-    write(repo, "gitbook-docs.yaml", existing + "    - content:\n        directory: ./other\n        language: en\n")
-    with pytest.raises(ValueError, match="English"):
+    (repo / ".gitbook.yaml").unlink()
+    with pytest.raises(ValueError, match="Missing configuration"):
         checker.check(repo, base, commit(repo))
 
 

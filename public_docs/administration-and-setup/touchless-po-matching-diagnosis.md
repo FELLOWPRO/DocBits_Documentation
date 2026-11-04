@@ -1,5 +1,9 @@
 # Touchless Intelligence: Diagnosi dell'abbinamento ordini
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capitolo video (versione di verifica):** [Seguire un documento](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Panoramica
 
 Una fattura correttamente estratta può fermarsi se i dati dell’ordine differiscono e le regole non risolvono il divario. Un blocco temporaneo non è un esito finale: una ripresa automatica può riuscire; correzione o riavvio umano registrati danno AP Assisted dopo successo.

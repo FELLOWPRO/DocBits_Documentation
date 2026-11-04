@@ -1,5 +1,9 @@
 # Usare il pannello
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capitolo video (versione di verifica):** [Selezione e data dei dati](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=01).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ### Filtri
 
 | Filtro | Cosa fa |

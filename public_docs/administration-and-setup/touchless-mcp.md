@@ -1,5 +1,9 @@
 # Spiegare e migliorare Touchless con MCP
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capitolo video (versione di verifica):** [Consultare indicatori con MCP](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=12).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 Questi percorsi usano strumenti realmente offerti da DocBits MCP. Distinguete lettura e spiegazione dalle scritture. Controllate organizzazione, ruolo, tipo, periodo e data; non inventate prove mancanti.
 
 <figure><img src="../.gitbook/assets/touchless-owned-po-price-it.png" alt="Vera vista italiana di un ordine fittizio creato su Dev: 10 × 9 = 90. È un confronto della fonte per la diagnosi MCP, non una schermata di un client MCP né prova di estrazione o elaborazione riuscita."><figcaption><p>Vera vista italiana di un ordine fittizio creato su Dev: 10 × 9 = 90. È un confronto della fonte per la diagnosi MCP, non una schermata di un client MCP né prova di estrazione o elaborazione riuscita.</p></figcaption></figure>

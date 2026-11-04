@@ -1,5 +1,9 @@
 # Esempi: prezzo e quantità
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capitolo video (versione di verifica):** [Seguire un documento](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=07).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 ## Esempio completo: estrazione corretta, dati Infor diversi
 
 Caso illustrativo: fattura **10 unità × 10 € = 100 €**, estratta correttamente. Ordine importato **10 × 9 € = 90 €**. Supponiamo che le regole attive blocchino la differenza.

@@ -1,5 +1,9 @@
 # Touchless Intelligence: Proposte di modifica e report
 
+<!-- touchless-admin-video-v2-20261104:start -->
+**Capitolo video (versione di verifica):** [Proposte e cronologia](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence-preview-admin/v2/it.html#chapter=10).
+<!-- touchless-admin-video-v2-20261104:end -->
+
 
 Una raccomandazione può essere accompagnata da una **proposta di modifica**, cioè un singolo cambiamento di impostazione che dovrebbe aiutare. Gli amministratori lavorano con essa in quattro passi:
 

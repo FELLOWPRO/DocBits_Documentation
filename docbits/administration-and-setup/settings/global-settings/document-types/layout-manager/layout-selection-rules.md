@@ -124,9 +124,9 @@ To use another fallback layout, create a rule **without any condition** and give
 
 Click **New rule** on the Selection rules tab of the screen you want to change.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-editor.png" alt="Scope, conditions and target layout in the English rule editor."><figcaption><p>Scope, conditions and target layout in the English rule editor.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/lsr-rule-editor-en-20261104.png" alt="The layout selection rule editor for an invoice: the summary sentence at the top, then Step 1 Scope and priority with Rule name, Rule key, Document Type, Layout Type, Priority and a Log execution checkbox, Step 2 Applies when with the condition Document Origin is AR and the buttons Add Condition and Add nested group, Step 3 Target layout with the selected Field Validation Layout (AR), and the live preview panel on the right with Sample document, matched_by, Resolved layout, Priority hit and watched_fields."><figcaption><p>The rule editor: scope and priority, the conditions, the target layout, and the live preview of what the rule would do.</p></figcaption></figure>
 
-The sentence at the top summarises the rule as you build it — "When header.supplier\_id = HP0000278, an INVOICE document gets the Field Validation Layout (Base) layout for Field validation. Checked at priority 5 — the first matching rule wins."
+The sentence at the top summarises the rule as you build it — "When doc.doc_origin = AR, an INVOICE document gets the origin-ar layout for Field validation. Checked at priority 0 — the first matching rule wins."
 
 ### Step 1 — Scope & priority
 
@@ -136,6 +136,7 @@ The sentence at the top summarises the rule as you build it — "When header.sup
 | **Rule key**                        | Generated from the name; stays the same when you rename the rule.                                                 |
 | **Document Type** / **Layout type** | The document type and the screen the rule is for. Taken from where you clicked **New rule**.                      |
 | **Priority**                        | Lower numbers are checked first. Leave gaps (5, 10, 20 …) so you can insert rules later.                          |
+| **Log execution**                   | Records each evaluation of the rule so you can follow later why a document did or did not match. Leave it off until you need that trace. |
 
 ### Step 2 — Applies when
 
@@ -189,7 +190,7 @@ Screen **Approval** · priority **10** · _Total Amount greater than 10000_ · t
 
 Screen **Approval** · priority **5** · _Document Status is Pending second approval_ · target _Second Approval Layout_. Documents in the first approval step do not match and get the Approval default layout.
 
-<figure><img src="../../../../../.gitbook/assets/s150-layout-rule-approval-status.png" alt="Unsaved draft in the layout selection rule editor."><figcaption><p>Unsaved draft in the layout selection rule editor.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/lsr-rule-editor-approval-en-20261104.png" alt="An Approval selection rule in the editor: Rule name Layout for DE, priority 2000, the conditions Document Status is Pending second approval and Document Origin is Deutsch, the target layout Second Approval Layout (DE), and the live preview showing the sample document, matched_by rule, resolved layout and priority hit 2000."><figcaption><p>An Approval rule for the second approval step — the live preview on the right already shows that this rule wins at priority 2000.</p></figcaption></figure>
 
 ### A special reject screen for some suppliers
 

@@ -4,6 +4,8 @@
 
 Touchless Intelligence risponde a due domande distinte: **DocBits ha estratto correttamente la fattura?** e **L’intero processo è terminato senza interventi di elaborazione?** Un’estrazione corretta può comunque richiedere lavoro se i dati Infor differiscono. AP indica il reparto umano di contabilità fornitori.
 
+<figure><img src="../.gitbook/assets/anatomy-touchless-it.svg" alt="Linea di smistamento isometrica: un nastro trasportatore con 14 varchi, uno spintore che devia un documento in un vassoio di revisione, un contenitore di esportazione con una pila di documenti e un quadrante che indica 78,9 percento"><figcaption><p>Touchless come linea di smistamento, con i numeri illustrativi dell&#x27;esempio di calcolo: i 14 varchi sono le fasi del percorso della pipeline, i fogli ancora sul nastro sono in corso e non vengono conteggiati, un documento che si ferma a un varco viene spinto nel vassoio di revisione insieme ai documenti AP Assisted (30) ed Eccezione di processo (10), e i documenti Pure Touchless (120) e AP Touchless, cioè solo approvazione (30), nel contenitore di esportazione danno i 150 su 190 del quadrante, ovvero il 78,9 %, oltre il contrassegno obiettivo del 70 %.</p></figcaption></figure>
+
 ## Trovare la guida giusta
 
 | Guida | Contenuto |

@@ -38,6 +38,8 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Bilancia a bracci isometrica: sul piatto sinistro il prezzo unitario del PO di 100, su quello destro il prezzo unitario della fattura di 103 (100 più un piccolo peso aggiuntivo). Il braccio si inclina e la lancetta si ferma all&#x27;interno della fascia verde che indica la tolleranza del 5%." width="768"><figcaption><p>Il prezzo del PO (€100) sta sul piatto sinistro e il prezzo della fattura (€103) su quello destro. La differenza di €3 è il 3% del prezzo del PO, quindi la lancetta resta nella fascia verde di tolleranza ±5% e il controllo viene superato. Oltre ±5% (rosso) la fattura richiede una verifica.</p></figcaption></figure>
+
 ***
 
 ## 1. Corrispondenza completa dell'ordine di acquisto

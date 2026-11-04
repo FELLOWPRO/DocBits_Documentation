@@ -8,19 +8,21 @@ A seção **Pedido de Envio de PO** fornece uma análise do status de entrega e 
 
 Para ativar este recurso:
 
-1. Vá para **Configurações** → **Processamento de Documentos** → **Módulo**.
-2. Selecione **Pedido de Compra**.
-3.  Ative a opção **Pedido de Envio de PO**.
+1. Vá para **Configurações** → **Módulo**.
+2. Abra a seção **Ordem de compra** (*Conciliação e Validação de Pedidos de Compra*).
+3.  Ative a opção **Ordem de Remessa de PO**.
 
-    <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2ZdK2XuCIjc4Hz3W0s5H%252FPO-Shipment-Order-Setting.jpg%3Falt%3Dmedia%26token%3Dbe657223-f04e-4326-a284-bb29bae148e0&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=97986166&#x26;sv=2" alt="" width="563"></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/po-shipment-order-module-setting-pt.png" alt="Seção Ordem de compra em Configurações → Módulo com o interruptor Ordem de Remessa de PO" width="563"><figcaption><p>Configurações → Módulo → Ordem de compra</p></figcaption></figure></div>
+
+A mesma seção contém mais dois interruptores: **Painel de PO** adiciona à navegação um painel de pedidos de compra, e **Painel de Pedidos de Remessa** adiciona um painel de pedidos de remessa que lista as entregas recebidas por item do pedido de compra.
 
 ## **Onde Aparece**
 
-Uma vez habilitada, a seção Pedido de Envio de PO se torna visível na interface de Correspondência de Pedido de Compra.
+Uma vez habilitada, a seção Ordem de Remessa de PO se torna visível na interface de Correspondência de Pedido de Compra.
 
 ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2R9tB3JySdIMk8meRSVZ%252FPO-Shipment-Order-1.jpg%3Falt%3Dmedia%26token%3D70aa50f4-84cd-4a55-b580-037b893d1f5b\&width=768\&dpr=4\&quality=100\&sign=e4619335\&sv=2)
 
-### **Pedido de Envio de PO – Descrições dos Campos**
+### **Ordem de Remessa de PO – Descrições dos Campos**
 
 * **ID do Item** Identifica o item específico no pedido de compra.
 * **Número de Entrega** Número de referência para o envio ou entrega.

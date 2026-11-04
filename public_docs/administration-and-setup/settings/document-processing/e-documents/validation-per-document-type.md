@@ -8,12 +8,12 @@ Administratoren legen für jeden Dokumenttyp fest, ob DocBits eingehende E-Rechn
 
 Gehen Sie zu **Einstellungen → E-Dokumente → E-Rechnungs-Prüfung**. Der Tab **Regeln und Richtlinie** beginnt mit der Tabelle **Prüfung je Dokumenttyp**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-de.png" alt="Die Tabelle Prüfung je Dokumenttyp mit den Schaltern Aktiviert und Blockierend"><figcaption><p>Eine Zeile je Dokumenttyp mit den Schaltern Aktiviert und Blockierend. Beispielorganisation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-de-20261104.png" alt="Prüfung und Blockierung je Dokumenttyp. Konfigurierte Namen sind ausgeblendet. Beispiel aus Dev."><figcaption><p>Prüfung und Blockierung je Dokumenttyp. Konfigurierte Namen sind ausgeblendet. Beispiel aus Dev.</p></figcaption></figure>
 
 | Schalter | Was er bewirkt |
 | --- | --- |
 | **Aktiviert** | DocBits prüft jede eingehende E-Rechnung dieses Dokumenttyps und speichert einen [Prüfbericht](validation-report.md). |
-| **Blockierend** | Ein Finding mit dem Schweregrad Fehler stoppt das Dokument. Es erhält den Status **Fehler**. Ist Blockierend aus, speichert DocBits den Bericht und das Dokument läuft weiter. **Blockierend** können Sie nur einschalten, wenn **Aktiviert** eingeschaltet ist. |
+| **Blockierend** | Ein Prüfhinweis mit dem Schweregrad Fehler stoppt das Dokument. Es erhält den Status **Fehler**. Ist Blockierend aus, speichert DocBits den Bericht und das Dokument läuft weiter. **Blockierend** können Sie nur einschalten, wenn **Aktiviert** eingeschaltet ist. |
 
 Hat ein Dokumenttyp Überschreibungen für Untertypen, zeigt die Tabelle einen Hinweis dazu.
 
@@ -22,7 +22,7 @@ Hat ein Dokumenttyp Überschreibungen für Untertypen, zeigt die Tabelle einen H
 1. Wählen Sie den Schalter, den Sie ändern möchten.
 2. DocBits zeigt **Änderung der Prüfung bestätigen** mit dem Dokumenttyp und der Änderung, zum Beispiel *QUOTE: Aktiviert → Ein*.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-de.png" alt="Der Dialog Änderung der Prüfung bestätigen"><figcaption><p>Jede Änderung muss bestätigt werden</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-confirm-de-20261104.png" alt="Bestätigung einer Einstellungsänderung. Die Änderung wurde für diese Aufnahme abgebrochen."><figcaption><p>Bestätigung einer Einstellungsänderung. Die Änderung wurde für diese Aufnahme abgebrochen.</p></figcaption></figure>
 
 3. Lesen Sie den Hinweis: **Bereits gespeicherte Prüfberichte bleiben unverändert.** Die Änderung gilt nur für neue Prüfungen, auch bei einem Neustart der Verarbeitung eines Dokuments.
 4. Wählen Sie **Änderung bestätigen** oder **Abbrechen**, um die alte Einstellung zu behalten.

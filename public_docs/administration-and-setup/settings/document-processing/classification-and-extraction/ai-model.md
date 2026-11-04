@@ -60,3 +60,7 @@ Prüfen Sie vor dem Löschen, welche Extraktionsvorlage und welche Überschreibu
     <!-- Obsolete illustration retired: Retire historical navigation, table or deletion illustration; current view is shown in the model-options section and deletion was not performed -->
 
 Nach dem Löschen liest die nachfolgende Verarbeitung die anwendbare Organisationskonfiguration und Rückfallwerte für diese Vorlage. Andere Vorlagen desselben Lieferanten können eigene Überschreibungen behalten. Historische Dokumente werden nicht automatisch erneut verarbeitet. Für diese Anleitung wurde kein Eintrag gelöscht und kein daraus resultierendes Extraktionsergebnis getestet.
+
+## Einstellungen und Überschreibungen
+
+Structured Output hat eine eigene Organisations-/Vorlageneinstellung, getrennt von der Modellstufe. Ändern Sie sie unter Mehr Optionen am Dokument; die Bestätigung speichert die Überschreibung und startet dieses Dokument neu. Die Anzeigen in der Einstellungsliste sind schreibgeschützt. Eintrag löschen kann mehrere Überschreibungen zugleich entfernen. [Structured Output für Tabellen](../../../../end-user-and-partner-section/end-user-section/ai-table/structured-output.md).

@@ -8,7 +8,7 @@ When you upload an e-invoice that is wrong, DocBits does not lose it. The docume
 
 A supplier sends an XML file in which a closing tag does not match its opening tag. The file cannot be read, so DocBits stops at the first check, **L1 · Well-formedness**.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed.png" alt="The error screen for an XML file that is not well-formed: the XML on the left with the faulty line marked, the explanation on the right"><figcaption><p>The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-xml-malformed.png" alt="The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data."><figcaption><p>The error screen for a damaged XML file. The faulty line is marked in the XML. Example file with fictional data.</p></figcaption></figure>
 
 The screen has two sides:
 
@@ -17,7 +17,7 @@ The screen has two sides:
 
 Select **View validation details** to open the full [validation report](validation-report.md).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed.png" alt="The validation report of the damaged XML file with the finding XML-PARSE"><figcaption><p>The report of the damaged file: one error at level 1 Syntax, with the technical message and the position</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-xml-malformed.png" alt="The report of the damaged file: one error at level 1 Syntax, with the technical message and the position"><figcaption><p>The report of the damaged file: one error at level 1 Syntax, with the technical message and the position</p></figcaption></figure>
 
 The report names the exact position (here line 5, column 4081) and gives the technical message of the XML parser. Select **Show in XML** to jump to that line. The hint **How to fix** tells you to ask the sender for a corrected file.
 
@@ -25,7 +25,7 @@ The report names the exact position (here line 5, column 4081) and gives the tec
 
 The XML is fine, but a required field is missing. For example, the seller cannot be identified because no seller identifier, registration identifier or VAT identifier is present (rule `BR-CO-26`).
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view.png" alt="The error screen for an invoice that breaks a business rule"><figcaption><p>The error screen for a business-rule error: the layer <strong>L3 · Business Rules</strong>, the rule code and a next step</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view.png" alt="The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step"><figcaption><p>The error screen for a business-rule error: the layer L3 · Business Rules, the rule code and a next step</p></figcaption></figure>
 
 Here the card names the layer **L3 · Business Rules** and the code `BR-CO-26`. The report lists all findings of the invoice, see [Validation report](validation-report.md).
 

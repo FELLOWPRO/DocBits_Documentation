@@ -8,13 +8,13 @@ This page is for people who process invoices. Administrators set up the rules on
 
 If validation is **on** and **blocking** for the document type, an invoice with a blocking finding gets the status **Error**. Open the document from the dashboard. The error view shows the XML on the left and the reason on the right.
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-error-view.png" alt="The error view of a rejected e-invoice with the XML on the left and the reason on the right"><figcaption><p>The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-error-view.png" alt="The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names."><figcaption><p>The error view: the XML of the invoice and the first blocking finding with a next step. Example invoice with fictional names.</p></figcaption></figure>
 
 The card on the right names the layer that rejected the invoice (for example **L3 · Business Rules**), the rule code (for example `BR-CO-26`), a short explanation and a **Next step**. Select **View validation details** to open the full report.
 
 ## Read the report
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-top.png" alt="The top of the validation report with file data, the verdict and the result per level"><figcaption><p>The top of the report: file data, the verdict and the result for each level</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-top.png" alt="The top of the report: file data, the verdict and the result for each level"><figcaption><p>The top of the report: file data, the verdict and the result for each level</p></figcaption></figure>
 
 The report starts with the facts about the file:
 
@@ -47,7 +47,7 @@ The table **Result per level** shows how many errors, warnings and information m
 
 ## The findings
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings.png" alt="The list of findings with code, level, plain-language text, how to fix and Show in XML"><figcaption><p>Each finding has a code, a level, a text you can read and a hint how to fix it</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-report-findings.png" alt="Each finding has a code, a level, a text you can read and a hint how to fix it"><figcaption><p>Each finding has a code, a level, a text you can read and a hint how to fix it</p></figcaption></figure>
 
 Each finding is one row:
 

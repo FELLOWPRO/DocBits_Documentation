@@ -4,7 +4,7 @@ This page explains the setup wizard, the accepted XRechnung versions and the acc
 
 ## Validation Setup
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-setup-versions.png" alt="Validation setup and accepted versions"><figcaption><p>Validation setup and accepted XRechnung versions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-setup-versions-en-20261104.png" alt="Accepted XRechnung versions in the Dev example organisation."><figcaption><p>Accepted XRechnung versions in the Dev example organisation.</p></figcaption></figure>
 
 The **Validation Setup** card shows your current validation profile (for example _B2G — Public Sector Receiver_). Click **Edit answers** to re-run the setup wizard and change which standard you validate against.
 
@@ -14,7 +14,7 @@ The **Accepted XRechnung versions** gate lists every XRechnung version. Tick the
 
 ## Accepted profiles and severity model
 
-<figure><img src="../../../../../.gitbook/assets/einvoice-profiles-severity.png" alt="Accepted profiles and severity legend"><figcaption><p>Accepted profiles and what each severity means</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/einvoice-profiles-severity-en-20261104.png" alt="Accepted ZUGFeRD and Factur-X profiles."><figcaption><p>Accepted ZUGFeRD and Factur-X profiles.</p></figcaption></figure>
 
 Choose which **profiles** you accept (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) using **Accept all** / **Clear**, then **Save**.
 
@@ -22,10 +22,10 @@ Each validation rule has a **severity** that decides what happens when it fires:
 
 | Severity    | Effect                                                                                                                          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **FATAL**   | Stops processing immediately. No subsequent layer is checked; the document goes to Error.                                       |
-| **ERROR**   | The document is rejected. Other findings on the same document are still surfaced; the supplier notification (if enabled) fires. |
+| **FATAL** | Stops the current validation stage when the error prevents further checks. Whether validation blocks document processing also depends on the document type’s **Blocking** setting. |
+| **ERROR** | A validation error. With **Blocking** enabled, the document receives status **Error**. This is separate from manually selecting **Reject document**. |
 | **WARNING** | Surfaces in the validation report, but the document proceeds through the pipeline normally.                                     |
-| **INFO**    | Audit-log only. No user-facing effect and no rejection.                                                                         |
+| **INFO** | An information message in the validation report. It does not block the document. |
 
 ### What the wizard changes
 

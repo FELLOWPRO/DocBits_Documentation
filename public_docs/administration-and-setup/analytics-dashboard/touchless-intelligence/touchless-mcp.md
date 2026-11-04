@@ -10,7 +10,7 @@
 
 使用 `touchless_get_summary`，参数 `period: "30d"`、`doc_type: "INVOICE"`。细分维度和值必须来自 `touchless_list_segments`。比较相同组织、类型、期间和细分；读取 `data_as_of`。
 
-**真实 Dev 反例：** 三份新发票仍为 `IN_PROGRESS`：`population.total: 3`、`population.in_progress: 3`、`population.eligible: 0`、`official_touchless_rate.ap_pct: null`。暂时无法计算比例，不代表提取正确率 0 % 或 Touchless 100 %。这里摘要的 `eligible` 是已完成 KPI 范围；单份追踪可同时显示 `eligible: true`、`bucket_final: false`。
+ **真实 Dev 反例：**  三份新发票仍为 `IN_PROGRESS`：`population.total: 3`、`population.in_progress: 3`、`population.eligible: 0`、`official_touchless_rate.ap_pct: null`。暂时无法计算比例，不代表提取正确率 0 % 或 Touchless 100 %。这里摘要的 `eligible` 是已完成 KPI 范围；单份追踪可同时显示 `eligible: true`、`bucket_final: false`。
 
 这些是实际提供并在 Dev 检查过的 MCP 工具；组织和权限仍适用。不能据此证明其他界面或额外工具白名单也已支持。
 
@@ -37,7 +37,7 @@
 | `touchless_get_document_trace` | 已记录的结果、干预和执行 |
 | `touchless_explain_pipeline` | 解释有证据的路径，不补造缺失证据 |
 
-**真实负向测试：** `header_extraction: passed`，但 `extracted_field_count: 0`、八个必填字段为空、没有表格。验证报 `REQUIRED_FIELD_MISSING`。应检查提取/配置；绿色步骤不证明正确提取或价格阻塞。
+ **真实负向测试：**  `header_extraction: passed`，但 `extracted_field_count: 0`、八个必填字段为空、没有表格。验证报 `REQUIRED_FIELD_MISSING`。应检查提取/配置；绿色步骤不证明正确提取或价格阻塞。
 
 ### MCP 操作是否算人工干预？
 
@@ -63,7 +63,7 @@
 | --- | --- | --- |
 | 列表 | `touchless_list_change_proposals`，可选 `issue_signature`、`window: "30d"`、`lang: "zh"` | 现有提案，不写入设置 |
 | 预览 | `touchless_preview_change`，使用返回的 `proposal_id`、`issue_signature` | 明确范围，以及获准时绑定的 `preview_token` |
-| 应用 | `touchless_apply_change`，使用相同 ID、令牌、`overrides`、`window` | **写入**支持的设置；成功返回 `change_id` |
+| 应用 | `touchless_apply_change`，使用相同 ID、令牌、`overrides`、`window` | **写入** 支持的设置；成功返回 `change_id` |
 | 测量 | `touchless_verify_change`，使用该 `change_id` 和相同 `window` | 前后比较；每期至少 20 份已完成且符合条件的文档 |
 
 不要编造 ID 或令牌。值不同需重新预览；过期或未获准的预览不证明已应用。演示案例未证明实际应用提案或测得提升。

@@ -4,7 +4,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4" %}
 
-Touchless Intelligence 区分两个问题：**DocBits 是否正确提取发票？**以及**整个流程是否无人工处理干预地完成？** 提取正确也可能需要处理不同的 Infor 数据。AP 指人工应付账款团队。
+Touchless Intelligence 区分两个问题： **DocBits 是否正确提取发票？** 以及 **整个流程是否无人工处理干预地完成？** 提取正确也可能需要处理不同的 Infor 数据。AP 指人工应付账款团队。
 
 ## 选择合适的指南
 

@@ -45,7 +45,7 @@ Qualidade de extração na amostra: **100 %**; Pure: **70 %**; AP combinado: **8
 
 **A intervenção permanece registada.** Uma execução automática posterior não apaga correções ou reinícios humanos. Ler e pré-visualizar não são, por si só, intervenções; validação manual e reinício humano são. A aprovação permanece distinta.
 
-<figure><img src="../.gitbook/assets/touchless-methodology-pt.png" alt="Cálculo na interface portuguesa real. A taxa AP combina Pure e apenas aprovação entre documentos concluídos elegíveis. Mede o processo, não a precisão de extração; os dados da captura não são a população ilustrativa de 200 documentos."><figcaption><p>Cálculo na interface portuguesa real. A taxa AP combina Pure e apenas aprovação entre documentos concluídos elegíveis. Mede o processo, não a precisão de extração; os dados da captura não são a população ilustrativa de 200 documentos.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-methodology-pt-20261104.png" alt="População atual de formação: 201 faturas concluídas e elegíveis, nenhuma em curso ou excluída. As 107 totalmente automáticas dão 53,2 %; com 11 de apenas aprovação são 118 e 58,7 %. Estas taxas medem o processo, não a precisão de extração."><figcaption><p>População atual de formação: 201 faturas concluídas e elegíveis, nenhuma em curso ou excluída. As 107 totalmente automáticas dão 53,2 %; com 11 de apenas aprovação são 118 e 58,7 %. Estas taxas medem o processo, não a precisão de extração.</p></figcaption></figure>
 
 ### Que ações AP contam como intervenção?
 
@@ -65,7 +65,7 @@ Guardar sem alteração demonstrada não comprova correção; verifique também 
 
 ### Dois significados de AP
 
-A **percentagem AP no cabeçalho** combina Pure e apenas aprovação: 150 / 190 = 78,9 %. O **número abaixo** conta só as 30 aprovações. A categoria do fornecedor e a linha azul AP do gráfico documentado mostram apenas aprovação: 15,8 %. Não some Pure e AP combinado, que se sobrepõem.
+A percentagem e o número do cartão AP atual combinam Pure e apenas aprovação. No exemplo de cálculo são 150 = 120 + 30 documentos e 78,9 %. Na captura atual são 118 = 107 + 11 faturas e 58,7 %. A categoria de resultado separada, como o grupo MCP `AP_TOUCHLESS`, conta só as 11 aprovações. A linha azul atual mostra a taxa combinada, com a população de cada ponto. Pure e AP combinado sobrepõem-se: não os some.
 
 ### Atualidade dos dados
 

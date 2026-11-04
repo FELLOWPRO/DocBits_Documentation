@@ -7,7 +7,7 @@ Kliknij dostawcę w kolejce, aby otworzyć stronę jego diagnozy.
 
 Strona pokazuje:
 
-* **Sześć kafelków wyników** (Czysty touchless, AP touchless, AP wspomagany, Wyjątek procesu, W toku, Niekwalifikujące się), każdy z linkiem do dokumentów.
+* **Cztery kafelki wyników końcowych**: Pure Touchless, AP Touchless, AP Assisted i wyjątek procesu; każdy otwiera dokumenty.
 * **Trend** z własnym wyborem okresu: 30 dni, 90 dni, 6 miesięcy, 1 rok lub zakres niestandardowy (do dwóch lat). Zmienia to tylko wykres.
 * **Klastry problemów** (patrz niżej).
 * **Historia zmian** (Change history): zmiany zastosowane dla tego dostawcy i ich efekt.
@@ -27,7 +27,7 @@ Krótka notatka wyjaśnia pustą stronę, na przykład: *5 documents from this s
 * **Nagłówek**: *Brak wymaganego pola* na etapie *Walidacja pól*
 * **Dotyczy**: 28 dokumentów. **Do odzyskania**: 28 dokumentów. **Oczekiwany wzrost**: +2,8 pp
 * **Podejrzewana przyczyna**: dostawca drukuje numer PO pod tabelą, gdzie ekstrakcja nie szuka
-* **Co zmienić**: *Zmiana danych podstawowych*: dodaj układ tego dostawcy. **Otwórz** prowadzi do właściwej strony ustawień
+* **Następna kontrola**: porównaj numer zamówienia na oryginale i w odczycie, następnie konfigurację ekstrakcji przed proponowaniem zmian
 * **Właściciel**: Konsultant. **Pewność**: Średnia. **Źródło**: Hipoteza
 
 Co pokazuje karta klastra:
@@ -60,9 +60,26 @@ Teksty AI są pisane w języku Twojej organizacji. Jeśli klaster został przean
 
 Jeśli pierwszą blokadą klastra jest powód związany z dopasowaniem PO (na przykład *Niezgodność pozycji PO* lub *Nie znaleziono zamówienia zakupu*), karta klastra pokazuje, jak DocBits próbuje dopasować fakturę do zamówienia zakupu. Zobacz [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md).
 
+## Kto powinien poprawić dane?
+
+| Dowód | Miejsce działania |
+| --- | --- |
+| Oryginał różni się od odczytu | Ekstrakcja lub konfiguracja dostawcy |
+| Odczyt poprawny, potwierdzony błąd ceny/ilości/jednostki Infor | Źródło; AP koordynuje zakupy lub właściciela danych |
+| Infor poprawny, importowana kopia stara/niepełna | Import lub integracja ERP |
+| Różne wartości, uzgodnienie nieznane | Wyjaśnienie biznesowe; przyczyna niepotwierdzona |
+
+Kategoria AP dostawcy to samo zatwierdzenie, a łączny AP obejmuje też Pure. Oddziel doraźne zakończenie faktury od trwałego usunięcia przyczyny.
+
+Narzędzia i klasyfikację działań opisuje [Touchless przez MCP](touchless-mcp.md).
+
 ## Powiązane strony
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md)
 * [Ślad dokumentu](touchless-document-trace.md)
 * [Propozycje zmian i raporty](touchless-change-proposals.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

@@ -2,7 +2,7 @@
 
 ## Przegląd
 
-Wiele faktur zatrzymuje się na zamówieniu zakupu. Faktura mówi jedno, zamówienie zakupu (PO) mówi coś innego, a DocBits nie potrafi samodzielnie zdecydować, czy do siebie pasują. Każdy taki dokument wymaga człowieka, więc **nie jest touchless**.
+Poprawnie odczytana faktura może się zatrzymać przy rozbieżnych danych zamówienia. Tymczasowa blokada nie jest wynikiem końcowym. Automatyczne wznowienie może zachować Pure; zapisana korekta lub ręczny restart oznaczają po sukcesie AP Assisted.
 
 Touchless Intelligence pokazuje, **dlaczego** dopasowanie PO się nie powiodło i **jak** DocBits próbował dopasować. Ta strona wyjaśnia dwa zaangażowane etapy potoku, powody, które zobaczysz, oraz **schemat decyzyjny dopasowania PO** (PO matching decision flow), czyli diagram pokazujący kroki dopasowania jeden po drugim.
 
@@ -40,6 +40,9 @@ Dokument, który zatrzymuje się na etapie 9 lub 10, pojawia się w kolejce dost
 {% hint style="info" %}
 Nie każdy powód związany z dopasowaniem PO można naprawić w DocBits. Jeśli dostawca wysyła błędny numer PO, karta pokazuje **Tylko działanie dostawcy**: dostawca musi poprawić dokument i wysłać go ponownie.
 {% endhint %}
+
+Przypadki ceny i ilości znajdziesz w [przykładach](touchless-examples.md).
+
 
 ## Schemat decyzyjny dopasowania PO
 
@@ -100,7 +103,7 @@ Dostawca fakturuje towar **„A-4711-X"**, Twoje PO mówi **„4711"**. Żadna r
 
 * W klastrze czytasz *27 dotyczy, 27 do odzyskania*, oczekiwany wzrost na przykład **+8,7 pp**.
 * Naprawa leży po Twojej stronie: dodaj lub zmień kolejność reguły, która dopasowuje według numeru pozycji dostawcy lub opisu, albo uzupełnij numery pozycji dostawcy w danych podstawowych.
-* Po zmianie reguły zastosuj zmianę przez [propozycję zmiany](touchless-change-proposals.md) i dwa tygodnie później przeczytaj **Historię zmian**: czysty wskaźnik przed i po.
+* Po obsługiwanej zmianie DocBits użyj podglądu i historii do porównania łącznego AP. Korektę Infor sprawdź przez import i nowe faktury; nie tworzy automatycznie historii ustawień.
 
 ### Przykład 3: Zamówienia zakupu jeszcze nie ma
 
@@ -117,7 +120,7 @@ Po wejściu w życie reguły transformacji dla tabeli dostawcy wskaźnik dopasow
 3. Otwórz **Diagnozę dostawcy** i przeczytaj klaster: powód, dotknięte dokumenty, **Co zmienić**, **Brakujące dowody**.
 4. Otwórz **Jak ta organizacja dopasowuje** i sprawdź zestaw reguł: wersję, właściciela i tolerancje.
 5. Otwórz jeden **przykładowy dokument** i jego [Ślad dokumentu](touchless-document-trace.md): który etap, jaki powód?
-6. Zmień **jedną** rzecz (kolejność reguł, tolerancję, mapowanie pozycji) z podglądem, aby **Historia zmian** mogła ją zmierzyć.
+6. Usuń potwierdzoną przyczynę. Użyj podglądu obsługiwanego wniosku DocBits. Dla Infor oddzielnie sprawdź źródło, import i nowe faktury; nie zakładaj wpisu w historii ustawień.
 
 ## Powiązane strony
 
@@ -127,3 +130,7 @@ Po wejściu w życie reguły transformacji dla tabeli dostawcy wskaźnik dopasow
 * [Propozycje zmian i raporty](touchless-change-proposals.md)
 * [Zasady Dopasowywania Zamówień Zakupu](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
 * Karty dopasowania PO: kompletny przewodnik (PO Matching Cards - Complete Guide)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

@@ -6,13 +6,13 @@ Rekomendacja może zawierać **propozycję zmiany** (change proposal), czyli poj
 1. **Podgląd** (Preview): pokazuje zmianę (obecna → proponowana wartość) i to, czego oczekuje DocBits. Nic nie jest zapisywane. **Zastosuj** jest możliwe dopiero po obejrzeniu podglądu.
 2. **Zastosuj** (Apply): zapisuje dokładnie tę zmianę, która była w podglądzie. Jest to rejestrowane w logu.
 3. **Mierz** (Measure): DocBits porównuje wskaźnik touchless tego samego typu dokumentu **przed i po**, w okresach o równej długości. W każdym okresie potrzeba co najmniej **20 dokumentów**, w przeciwnym razie wyświetla *not measurable* (niemierzalne).
-4. **Cofnij** (Undo): wycofuje zmianę.
+4. **Cofnij**: przywraca ustawienie, jeśli propozycja to obsługuje. Sprawdź dostępność i przywróconą wartość.
 
 {% hint style="warning" %}
 Różnica przed/po jest **obserwacją**, a nie dowodem przyczyny. W tym samym czasie mogą zmieniać się inne rzeczy (nowy dostawca, sezonowy szczyt).
 {% endhint %}
 
-**Przykład.** Stosujesz *Włącz automatyczne dopasowanie PO i eksport* dla faktur. Dwa tygodnie później **Historia zmian** (Change history) pokazuje: czysty wskaźnik przed 52 % (210 dokumentów), po 61 % (198 dokumentów). To +9 pp, wystarczająco dużo dokumentów, aby dało się to zmierzyć.
+**Przykład ilustracyjny.** Po zmianie konfiguracji AP rośnie z 52 % (210 dokumentów) do 61 % (198), czyli o 9 punktów. Obejmuje Pure i samo zatwierdzenie, nie jakość odczytu. Każdy porównywalny okres wymaga co najmniej 20 zakończonych kwalifikujących się dokumentów. Obserwacja przed/po nie dowodzi przyczynowości. Korekta Infor wymaga sprawdzenia importu i nowych faktur, nie domniemanego wpisu zmiany DocBits.
 
 
 Administratorzy widzą też dwie sekcje między kluczowymi wskaźnikami a wykresami:
@@ -31,8 +31,14 @@ Administratorzy znajdą **Raport doradczy** na dole karty. Kliknij **Utwórz rap
 
 Wartości efektu są **szacunkami**. Jeśli raport odpowiada *forbidden* (zabronione), Twoja rola na to nie pozwala.
 
+Narzędzia i klasyfikację działań opisuje [Touchless przez MCP](touchless-mcp.md).
+
 ## Powiązane strony
 
 * [Touchless Intelligence](touchless-intelligence.md)
 * [Diagnoza dostawcy i klastry problemów](touchless-supplier-diagnosis.md)
 * [Diagnoza dopasowania PO](touchless-po-matching-diagnosis.md)
+
+<!-- Alignment 2026-11-04: correct extraction is distinct from process Touchless; KPI numerator and denominator verified. -->
+
+<!-- Completion 2026-11-04: localized MCP examples, AP actions, original-value evidence and owned synthetic PO cards. -->

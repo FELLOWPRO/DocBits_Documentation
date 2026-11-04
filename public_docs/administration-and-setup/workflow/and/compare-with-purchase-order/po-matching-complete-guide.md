@@ -38,6 +38,8 @@ PO Placed     Invoice Arrives     PO Matching     Decision
 Qty: 100      Qty: 100            within tolerance)
 ```
 
+<figure><img src="../../../../.gitbook/assets/anatomy-po-matching.svg" alt="Balanza isométrica de brazos: el platillo izquierdo contiene el precio unitario de la orden de compra de 100, el derecho el precio unitario de la factura de 103 (100 más un pequeño peso adicional). El brazo se inclina y su aguja queda dentro de la banda verde que marca la tolerancia del 5 %." width="768"><figcaption><p>El precio de la OC (100 €) está en el platillo izquierdo y el de la factura (103 €) en el derecho. La diferencia de 3 € es el 3 % del precio de la OC, así que la aguja permanece dentro de la banda verde de tolerancia de ±5 % y la comprobación se supera. Por encima de ±5 % (rojo) la factura requiere revisión.</p></figcaption></figure>
+
 ***
 
 ## 1. Coincidencia total de la orden de compra

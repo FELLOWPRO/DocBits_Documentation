@@ -4,6 +4,8 @@
 
 Touchless Intelligence responde a dos preguntas distintas: **¿DocBits extrajo correctamente la factura?** y **¿Terminó todo el proceso sin intervención de procesamiento?** Una extracción correcta todavía puede requerir trabajo cuando los datos de Infor difieren. AP es el equipo humano de cuentas por pagar.
 
+<figure><img src="../.gitbook/assets/anatomy-touchless-es.svg" alt="Línea de clasificación isométrica: una cinta transportadora con 14 compuertas, un empujador que desvía un documento a una bandeja de revisión, un contenedor de exportación con una pila de documentos y un indicador que marca 78,9 %"><figcaption><p>Touchless como línea de clasificación, con las cifras ilustrativas del ejemplo de cálculo: las 14 compuertas son las etapas del Pipeline Path, las hojas que aún están en la cinta están en proceso y no cuentan, un documento que se detiene en una compuerta se empuja a la bandeja de revisión junto con los documentos AP assisted (30) y de excepción de proceso (10), y los documentos Pure touchless (120) y de solo aprobación (30) del contenedor de exportación dan los 150 de 190 del indicador, o 78,9 %, por encima de la marca objetivo del 70 %.</p></figcaption></figure>
+
 ## Encontrar la guía adecuada
 
 | Guía | Contenido |

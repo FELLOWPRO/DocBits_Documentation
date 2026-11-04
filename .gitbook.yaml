@@ -1,4 +1,4 @@
-root: ./readme/
+root: ./public_docs/
 
 redirects:
     gao-ji-gong-neng-yu-gong-ju/docbits-mcp: advanced-functions-and-tools/docbits-mcp/README.md

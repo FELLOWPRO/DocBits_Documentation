@@ -56,22 +56,7 @@ Administratoren finden den **Consulting-Bericht** unten im Tab. Klicken Sie auf 
 
 Die Wirkungswerte sind **Schätzungen**. Antwortet der Bericht *forbidden*, erlaubt Ihre Rolle ihn nicht.
 
-## Verbesserungen über MCP: erst erklären, dann gezielt ändern
-
-> Erkläre die wichtigsten bestätigten Ursachen. Liste unterstützte Änderungsvorschläge und zeige zuerst die Vorschau. Begründe Umfang und Risiken. Wende erst die konkret ausgewählte Änderung an und prüfe danach gespeicherten Wert, Änderungshistorie und messbare Wirkung.
-
-| Schritt | MCP-Werkzeug und wichtige Eingaben | Ergebnis und Grenze |
-| --- | --- | --- |
-| Vorschläge lesen | `touchless_list_change_proposals`, optional `issue_signature`, `window: "30d"`, `lang: "de"` | Liefert vorhandene Vorschläge; speichert keine Konfiguration |
-| Vorschau prüfen | `touchless_preview_change` mit dem zurückgegebenen `proposal_id` und derselben `issue_signature` | Zeigt den konkreten Umfang und liefert bei einer zulässigen Vorschau einen gebundenen `preview_token` |
-| Ausgewählte Änderung speichern | `touchless_apply_change` mit genau diesen IDs, dem `preview_token` und denselben `overrides` und `window` wie in der Vorschau | **Schreibender Aufruf:** ändert die unterstützte Einstellung und liefert bei Erfolg eine `change_id` |
-| Wirkung lesen | `touchless_verify_change` mit dieser `change_id` und demselben `window` | Liest die Vorher/Nachher-Messung; genügend geeignete abgeschlossene Dokumente bleiben erforderlich |
-
-Übernehmen Sie IDs und Token aus echten Rückgaben. Eine Vorschau für einen Wert darf nicht zum Anwenden eines anderen Werts verwendet werden. Ist die Vorschau abgelaufen, nicht erlaubt oder unvollständig, ist kein erfolgreicher Änderungsfall belegt. Die Tabelle beschreibt den Werkzeugablauf; sie zeigt keine im Demo-Fall ausgeführte Änderung und keinen gemessenen Zuwachs.
-
-**Beispiel „dauerhaft besser“:** Eine bestätigte Fehlkonfiguration verursacht wiederholt manuelle Eingriffe. Sie prüfen einen vorhandenen Vorschlag, speichern genau diese Änderung und kontrollieren anschließend neue Rechnungen. Erst eine Messung mit mindestens 20 geeigneten abgeschlossenen Dokumenten je Zeitraum liefert einen Vorher/Nachher-Wert. Steigt die AP-Touchless-Quote von 52 auf 61 %, sind das 9 Prozentpunkte beobachteter Unterschied, keine bewiesene alleinige Wirkung der Änderung.
-
-**Beispiel „richtige Quelle“:** Eine falsche Bestellung in Infor benötigt eine fachliche Quellenkorrektur und einen geprüften Import. Dafür ist `touchless_apply_change` kein allgemeines Infor-Schreibwerkzeug. Bestätigen Sie zunächst den vereinbarten Preis, korrigieren Sie die verantwortliche Quelle und prüfen Sie den Import sowie die Ergebnisse neuer Rechnungen. Vergrößern Sie keine Toleranz, nur um falsche Quelldaten durchzulassen.
+Die zugehörigen MCP-Aufrufe und die Einordnung menschlicher Aktionen sind unter [Touchless mit MCP](touchless-mcp.md) beschrieben.
 
 ## Weiterführende Seiten
 

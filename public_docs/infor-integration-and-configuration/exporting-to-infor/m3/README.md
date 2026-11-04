@@ -13,11 +13,11 @@
      * Busque `"ci"` dentro del archivo.
      * Copie el valor dentro de las comillas (sin las comillas).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_1.png)
 
 4. En **Documents**, agregue `Sync.CaptureDocument`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_2.png)
 
 5. Haga clic en **Save** para finalizar la configuración.
 
@@ -29,11 +29,11 @@
 2. Navegue a **Infor** > **OS** > **ION** > **Connect** > **Mappings**.
 3. Haga clic en **Import** y seleccione el archivo de mapping apropiado para **M3**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_3.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_3.png)
 
 4. Una vez importados los archivos, apruebe los mappings para activarlos.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_4.png)
 
 ## Paso 3: Crear el Data Flow
 
@@ -49,12 +49,12 @@
    * **Name**: `DocBits` o `DocBits-Export`.
 2. Haga clic en **Add** y seleccione el **Connection Point** creado en el Paso 1.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_5.png)
 
 3. Haga clic en el **Document Icon** junto al Application Node.
    * Haga clic en **Add** y seleccione `Sync.CaptureDocument`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_6.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_6.png)
 
 #### Nodo de asignación
 
@@ -62,7 +62,7 @@
    * **Name**: `Capt2process`.
    * **Mapping**: `CaptureDocument_to_ProcessSupplierInvoice`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_7.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_7.png)
 
 #### Nodo de aplicación
 
@@ -70,12 +70,12 @@
    * **Name**: `M3`.
 2. Haga clic en **Add** y seleccione la **M3 Application** del cliente.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_8.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_8.png)
 
 3. Haga clic en el **Document Icon** junto al Application Node.
    * Haga clic en **Add** y seleccione `Acknowledge.SupplierInvoice`.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_9.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_9.png)
 
 #### Nodo de API
 
@@ -84,7 +84,7 @@
    * **ION API Connector**: `DocBits_Import`.
    * Si `DocBits_Import` no existe, consulte el **Paso 1** y el **Paso 2** de la documentación Import from M3 para crear el Connection Point.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/export_to_m3_from_docbits_10.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/export_to_m3_from_docbits_10.png)
 
 #### Guardar y activar el Flow
 
@@ -100,7 +100,7 @@
 1. Abra **DocBits**.
 2.  Navegue a **Configuración > Procesamiento de documentos > Exportar**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 3. Cree una nueva exportación:
    * **Seleccionar**: **Infor IDM + ION BOD**.
    * **Título**: Elija un título significativo.
@@ -116,7 +116,7 @@
 1. Abra **DocBits**.
 2.  Navegue a **Configuración > Procesamiento de documentos > Exportar**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 3. Cree una nueva exportación:
    * **Seleccionar**: **Infor IDM + M3 (API)**.
    * **Título**: Elija un título significativo.
@@ -132,7 +132,7 @@
 1. Abra **DocBits**.
 2.  Navegue a **Configuración > Procesamiento de documentos > Exportar**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_export.png)
+    ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_export.png)
 3. Cree una nueva exportación:
    * **Seleccionar**: **Infor IDM + M3 (API)**.
    * **Título**: Elija un título significativo.

@@ -4,14 +4,14 @@
 
 Los ajustes del Panel están diseñados para ayudar a los administradores a controlar la presentación de datos y la interacción dentro del panel de DocBits. Estos ajustes determinan qué información está disponible de inmediato al iniciar sesión, asegurando que los usuarios tengan acceso rápido a los datos más relevantes para sus tareas.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_1.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_1.png)
 
 ## Accediendo a los Ajustes del Panel
 
 Para acceder a los ajustes del panel, navega a:\
 **Ajustes → Ajustes globales → Panel**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_dashboard.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/settings_dashboard.png)
 
 ## **General**
 
@@ -20,13 +20,13 @@ Para acceder a los ajustes del panel, navega a:\
   * **Cargar automáticamente el tablero de instrumentos**: Controla si el panel debe cargar automáticamente los datos al acceder el usuario, lo que puede ayudar a reducir los tiempos de carga y mejorar la experiencia del usuario al cargar datos solo cuando sea necesario.
   *   **Exportar datos del cuadro de mandos**: Esta función añade un nuevo botón de **Exportar** a la barra de herramientas del panel, permitiéndote exportar la vista actual del panel como un archivo **.csv** o **.xlsx**.
 
-      ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
+      ![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_3.png)
 
 ## **Historial de exportaciones**
 
 En el **Historial de exportaciones**, verás una tabla que lista todas las exportaciones pasadas junto con información clave sobre cada solicitud.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_4.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_4.png)
 
 Los siguientes detalles están incluidos:
 
@@ -51,19 +51,19 @@ Los siguientes detalles están incluidos:
 
 * **Acceso de entrada pendiente (días)**: define cuántos días puede abrir el documento en modo de solo lectura la persona a la que se le pidió una entrada en el flujo de actividad; después, el enlace deja de funcionar. El valor predeterminado es 14 días y el acceso también termina en cuanto el documento avanza. Consulte [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_2.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_2.png)
 
 ## **Filtros**
 
 * **Estilo de filtro de estado**: Determina el estilo de presentación de los filtros de estado, que se puede establecer como predeterminado o personalizado según el enfoque operativo de los usuarios.
 * **Filtro de estado personalizado**: Permite la creación y aplicación de filtros personalizados que pueden dirigirse a estados de documentos específicos como "Nuevo", "Validando" o "Exportando". Esto permite a los usuarios acceder rápidamente a documentos en etapas específicas de procesamiento.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_5.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_5.png)
 
 ## Cuadro de mandos de envíos anticipados
 
 * **Visibilidad de pedidos entregados**: Esta función permite al usuario especificar la duración durante la cual los pedidos entregados serán visibles.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_6.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/dashboard_settings_6.png)
 
 Estos ajustes del panel son cruciales para garantizar que la plataforma DocBits sea lo más receptiva y útil posible, proporcionando a los usuarios una herramienta poderosa para monitorear y gestionar actividades de procesamiento de documentos directamente desde el panel.

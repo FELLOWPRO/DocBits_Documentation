@@ -146,7 +146,7 @@ Un conmutador **Seleccionar todo** en el encabezado le permite incluir o excluir
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_flow_steps_card-es.png" alt="Tarjetas de pasos con tiempos de procesamiento agregados."><figcaption><p>Tarjetas de pasos con tiempos de procesamiento agregados.</p></figcaption></figure>
 
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Comparar con el Promedio Mundial
 
@@ -172,7 +172,7 @@ El Gráfico de Tiempo Promedio visualiza cómo se distribuye el tiempo de proces
 
 Cuando **Comparar con el Promedio Mundial** está activado, el gráfico también muestra el Promedio Mundial de DocBits para realizar la comparación.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Documentos principales
 
@@ -184,7 +184,7 @@ La tarjeta **Documentos principales** enumera los documentos individuales que co
 * **Ocultar / mostrar todos** los documentos del filtro mediante el icono del ojo del encabezado.
 * **Haga clic en un documento** (nombre de archivo o barra de progreso) para copiar su ID de Documento al portapapeles.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Gráfico de Tendencia Temporal
 
@@ -198,9 +198,9 @@ Realice un seguimiento de las tendencias de rendimiento a lo largo del tiempo y 
 
 Esto facilita la detección de un aumento repentino para un proveedor específico, o un incremento gradual para un tipo de documento específico, antes de que se convierta en un problema crítico.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Tabla de Datos
 
@@ -214,9 +214,9 @@ La Tabla de Datos proporciona acceso completo a todos los datos de fila subyacen
 <figure><img src="../.gitbook/assets/s150-analytics_dashboard_data_table-es.png" alt="Tabla de análisis con encabezados en español; los valores de los documentos están ocultos."><figcaption><p>Tabla de análisis con encabezados en español; los valores de los documentos están ocultos.</p></figcaption></figure>
 
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/analytics_dashboard_data_table_export.png)
 
 ## Touchless Intelligence
 

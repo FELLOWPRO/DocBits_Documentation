@@ -23,7 +23,7 @@ Antes de cambiar, compruebe que ambos canales están preparados y disponibles en
 
 ## Resumen del ciclo de vida
 
-![Ciclo de vida de versiones de DocBits en tres fases con VESTA y NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy.png)
+![Ciclo de vida de versiones de DocBits en tres fases con VESTA y NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
 Cada ciclo consta de tres fases. Posteriormente, una transición gestionada por FELLOWPRO incorpora la versión de producción de NOVA a VESTA e inicia el siguiente ciclo.
 
@@ -82,7 +82,7 @@ A continuación, las mismas tres fases se repiten con los nuevos números de ver
 
 El siguiente diagrama ilustra con mayor detalle el ciclo de versiones descrito anteriormente.
 
-![Ciclo de versiones detallado de DocBits con VESTA y NOVA](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
+![Ciclo de versiones detallado de DocBits con VESTA y NOVA](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
 
 ### Frecuencia de las versiones
 

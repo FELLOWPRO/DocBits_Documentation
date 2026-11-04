@@ -26,7 +26,7 @@ DocBits se destaca en adaptar diseños de documentos según sus orígenes geogr�
 * Personalizar campos: Adapte el diseño agregando o eliminando campos. Por ejemplo, incluya 'City Tax' para un diseño de EE.UU.
 * Aplicar y probar: Una vez personalizado, aplique el diseño a sus documentos y pruebe para asegurar la precisión.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
+![](https://raw.githubusercontent.com/FELLOWPRO/DocBits_Documentation/refs/heads/main/public_docs/.gitbook/assets/origin_layout_2.svg)
 
 ## **Consejos para una personalización efectiva**
 

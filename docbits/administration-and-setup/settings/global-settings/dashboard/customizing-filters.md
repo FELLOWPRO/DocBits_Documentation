@@ -1,25 +1,27 @@
 # Customizing Filters
 
-Use dashboard filters to narrow the visible document list. Dashboard search criteria and the status-filter configuration are separate controls.
+Dashboard filters narrow the document list for your current search. The **status filter** setting is separate: it decides which statuses the dashboard's status filter offers in the first place.
 
 ## Filter the document list
 
-Open the dashboard and use the search field or filter controls. The smart-filter menu includes shortcuts such as **Overdue**, **Due soon**, **Assigned to me**, **Pending validation**, **Full PO match** and **Partial PO match**. Select the filter appropriate to your search and inspect the resulting list.
+Open the dashboard and use the search field or the filter controls. The smart-filter menu offers shortcuts such as **Overdue**, **Due soon**, **Assigned to me**, **Pending validation**, **Full PO match** and **Partial PO match**.
 
-<figure><img src="../../../../.gitbook/assets/prior-u030-en.png" alt="Document search and quick filters with document values hidden."><figcaption><p>Document search and quick filters with document values hidden.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/prior-u030-en.png" alt="Document search and quick filters with document values hidden."><figcaption><p>Document search and quick filters.</p></figcaption></figure>
 
-Combine criteria using the controls available in your version. Verify the displayed results when combining filters; selecting a filter does not change a document’s extracted values, approval or export status.
-
-To remove a criterion, use its visible X/remove control or the available clear-filter action. Check that the list now reflects the remaining criteria.
+You can combine several filters. To remove one, click the **X** on its chip. Filtering only changes which documents you see; it does not change a document's extracted values, approval or export status.
 
 ## Configure the status filter
 
-Open **Settings → Dashboard → Filters**. Choose **Status filter style**. If you select **Custom**, choose the statuses to expose through **Custom status filter**, then use **Apply** to save this configuration. Changing this setting is different from filtering the list for one search.
+Open **Settings → Dashboard → Filters** and choose a **Status filter style**:
 
-Organization administrators update the organization default. Where these controls are available to other users, the selection is saved as their personal preference instead. A personal preference takes precedence over the organization default.
+* **All** shows the full status list.
+* **Static** shows a predefined, shorter list.
+* **Custom** lets you choose the statuses your organization needs.
 
-Changing **Status filter style** saves the style immediately. **Apply** saves the custom status list; applying an empty list restores **All**. Choosing **All** directly restores the standard style and hides the custom selector and its **Apply** button.
+<figure><img src="../../../../.gitbook/assets/dbdc168-status-filter-options-en.png" alt="Status filter style dropdown showing All, Static and Custom options"><figcaption><p>The three status filter styles.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/prior-u015-en.png" alt="Dashboard status-filter settings; displayed values were not changed."><figcaption><p>Dashboard status-filter settings; displayed values were not changed.</p></figcaption></figure>
+Changing the style saves it immediately. With **Custom**, pick the statuses under **Custom status filter** and click **Apply**. Applying an empty list switches the style back to **All**.
 
-The illustrations show the controls only. No filter configuration was applied and no document was modified for these screenshots.
+<figure><img src="../../../../.gitbook/assets/dbdc168-status-filter-en.png" alt="Dashboard settings showing Filters and the Status filter style control"><figcaption><p>The status filter setting in Dashboard settings.</p></figcaption></figure>
+
+Organization administrators set the default for the organization. Where other users have access to these controls, their selection is saved as a personal preference, which takes precedence over the organization default.

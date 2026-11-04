@@ -1,5 +1,7 @@
 # Settings
 
+Need help with a setting? See [Find documentation with the Settings Assistant](settings-assistant/README.md).
+
 ## Video tutorial: Settings hub and modules
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/settings-hub-modules-admin/v1/en.mp4" %}

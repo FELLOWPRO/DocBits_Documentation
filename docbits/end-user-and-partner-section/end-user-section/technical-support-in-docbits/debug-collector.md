@@ -37,3 +37,7 @@ Review the snapshot before sending if you were handling documents containing cus
 
 
 Open the diagnostic report from the support controls, describe the problem and review the collected technical information before sharing it. A report helps collect evidence; it does not identify the cause by itself.
+
+## See also
+
+If DocBits opens to a blank screen instead of the normal interface, the cached application files may be out of date. See [PWA Cache Status](pwa-cache-status.md) to inspect the cache and clear it.

@@ -47,6 +47,7 @@ The following details are included:
   * **Only Admin and Assignee**: Only users with Admin privileges and the assigned user can restart the document.
   * **All Users**: All users who have been granted the necessary [permissions](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) can restart documents.
 
+* **Pending Input access (days)**: Sets how many days a user who was asked for input in the Activity Stream can open the document read-only; after that the link no longer works. The default is 14 days, and access also ends as soon as the document moves on. See [Pending Input](../../../../end-user-and-partner-section/end-user-section/pending-input.md).
 * **Return to Validation (Exported Docs)**: Controls the return-to-validation action for exported documents.
 * **Lock finished documents**: The help text explains that finished documents can only be archived or set to an error status once locked. Workflows that must continue after export use the **Exported** status.
 * **Keep failed exports as error until repeated**: For an inactive export configuration started by a workflow, retains **export error** until that configuration exports successfully again. Restarting the export alone does not clear the failure, as explained in the control's help text.

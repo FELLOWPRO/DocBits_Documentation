@@ -4,6 +4,8 @@
 
 <figure><img src="../../../.gitbook/assets/dbdc-855-activity-logs-service-en-20261031.png" alt="Activity Logging in the English interface: the log-table headings are Timestamp, Severity, Service and Message. Service identifies the generating service and matches the Service filter above. Log entries and export metadata are outside this view."><figcaption><p>Activity Logging in the English interface: the log-table headings are Timestamp, Severity, Service and Message. Service identifies the generating service and matches the Service filter above. Log entries and export metadata are outside this view.</p></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/activity_logging_service-en-20261012.png" alt="Activity Logging log table with the Service column"><figcaption><p>The log table shows a Service column (not Component) for the service that generated each log entry.</p></figcaption></figure>
+
 Activity Logging provides a real-time view of system events across all DocBits services. Use it to monitor processing activity, troubleshoot errors, and audit system behavior.
 
 ## Analytics Banner

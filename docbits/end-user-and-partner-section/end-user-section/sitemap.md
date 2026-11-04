@@ -21,6 +21,14 @@ Entries are colour-coded by type:
 
 Click any entry to jump straight to it. Entries that need a parameter (such as a document type or document ID) include an inline selector — choose the value before clicking through.
 
+## Training videos in the list
+
+Entries for pages that have a training video show a video icon after the name — not only in Settings, but everywhere in the catalog, for example on the Dashboard, Field Validation, the Workflow pages or Pending Input. Select the icon to play that page's video in the **Videos & Tutorials** panel while you stay on the sitemap.
+
+<figure><img src="../../.gitbook/assets/sitemap-training-video.png" alt="The sitemap with video icons next to several entries and the Videos and Tutorials panel open on the Dashboard video"><figcaption><p>Entries with a training video carry a video icon; selecting it opens that video in the panel.</p></figcaption></figure>
+
+The panel still lists every video by topic, so you can also browse and search the whole library from the icon in the top bar. See [Videos & Tutorials](videos-and-tutorials.md).
+
 ## Searching and filtering
 
 The sticky header at the top of the page hosts the search box and the filter pills. Type a few characters to live-filter the list across labels and descriptions. Use the type pills to narrow to a single entry type — for example, only **Dialog** entries.

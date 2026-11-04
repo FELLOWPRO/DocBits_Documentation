@@ -12,9 +12,11 @@ The video shows the script list with filter and sort, switching scripts on and o
 
 1. Open **Settings → Document Types**.
 2. On the document type you want to manage, select **Scripts**. The page lists scripts for that document type.
-3. Search by name or use **All**, **Active**, and **Inactive** to narrow the list. You can also sort it by name or modification date.
+3. Search by name or use **All**, **Active**, and **Inactive** to narrow the list. The list is sorted by execution order by default; the sort control switches between execution order and name (**A-Z** / **Z-A**).
 
-Each card shows the script name, trigger, version, and status. The pencil opens the editor; the copy icon duplicates the script. **New** opens the editor for a new script.
+Each card shows the script name, its execution order as a numbered chip, trigger, version, and status. The pencil opens the editor; the copy icon duplicates the script. **New** opens the editor for a new script.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-list.png" alt="Scripts list sorted by execution order, each card showing a numbered execution-order chip next to the script name"><figcaption><p>The numbered chip on each card is the script's execution order.</p></figcaption></figure>
 
 Administrators can use **Scripts** to manage processing rules for a document type. This guide shows where to find scripts, how to switch them on or off, and how to change a published script safely.
 
@@ -27,6 +29,18 @@ Administrators can use **Scripts** to manage processing rules for a document typ
 Each card shows the script name, trigger, version, and status. The pencil opens the editor; the copy icon duplicates the script. **New** opens the editor for a new script.
 
 <figure><img src="../../../../../.gitbook/assets/s150-docbits_edit_script_icon.png" alt="English script management with edit controls and script names hidden."><figcaption><p>English script management with edit controls and script names hidden.</p></figcaption></figure>
+
+## Set the execution order
+
+Use **Execution order** to control the sequence in which scripts run: lower numbers run first.
+
+1. Open the script in the editor.
+2. Enter a whole number in **Execution order**, from 0 upwards. Leave the field empty to keep 0.
+3. Save the script. Letters, decimals and negative numbers are rejected with an error on the field, and nothing is saved.
+
+If you change the execution order and then activate a version, DocBits saves the script first and activates the version only when that save succeeds.
+
+<figure><img src="../../../../../.gitbook/assets/core2170-script-execution-order-editor.png" alt="Script editor with the Execution order field next to the document type selector"><figcaption><p>Execution order in the script editor.</p></figcaption></figure>
 
 ## Activate or deactivate a script
 

@@ -4,14 +4,19 @@
 
 ## Open the panel
 
-The video icon sits at the right end of the top bar, after the help icon.
+The video icon sits in the icon group at the right end of the top bar, between the recent-errors icon and the information and help icons.
 
-<figure><img src="../../.gitbook/assets/videos-tutorials-header.png" alt="The DocBits top bar with the yellow Videos and Tutorials icon as the last icon on the right"><figcaption><p>The video icon is the last icon in the top bar.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/videos-tutorials-header-en.png" alt="The DocBits top bar with the white Videos and Tutorials film icon in the icon group, carrying a small yellow dot in its top-right corner, between the recent-errors icon and the information and help icons"><figcaption><p>The video icon sits in the icon group, with a yellow dot while videos are unacknowledged.</p></figcaption></figure>
 
-* The icon is **yellow with a small dot** while at least one video has not been acknowledged.
-* It takes the same colour as the other header icons once you have acknowledged every video.
+* The icon itself is **white**, like its neighbours in the group.
+* A **small yellow dot** on its top-right corner marks that at least one video has not been acknowledged.
+* The dot disappears once you have acknowledged every video.
 
 Select the icon to open **Videos & Tutorials** as a panel on the right.
+
+{% hint style="info" %}
+The icon belongs to the header icon group, so it is hidden where that whole group is hidden: on the **Settings → Document Types** pages and on narrow screens. You can still reach every video from the [sitemap](sitemap.md), where pages with a video carry a video icon.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/videos-tutorials-panel.png" alt="The Videos and Tutorials panel listing the topics Document processing, Workflows, PO Matching, E-Documents, Validation and rules, Analytics and Administration as folders with video counts"><figcaption><p>The panel opens on the list of topics. Each topic is a folder with its number of videos.</p></figcaption></figure>
 
@@ -37,7 +42,7 @@ Select a video to play it in the panel. The title and a short description say wh
 
 <figure><img src="../../.gitbook/assets/videos-tutorials-player.png" alt="A video playing in the Videos and Tutorials panel with its title, description and the Acknowledge button"><figcaption><p>Play the video in the panel, then acknowledge it.</p></figcaption></figure>
 
-Select **Acknowledge** when you have watched the video. This marks it as seen for your user only: the **NEW** marker on the video and on its folder disappears for you, and the icon in the top bar turns grey once nothing is left unacknowledged. Other users still see their own unacknowledged videos.
+Select **Acknowledge** when you have watched the video. This marks it as seen for your user only: the **NEW** marker on the video and on its folder disappears for you, and the yellow dot on the top-bar icon goes away once nothing is left unacknowledged. Other users still see their own unacknowledged videos.
 
 ## Videos for administrators and for users
 

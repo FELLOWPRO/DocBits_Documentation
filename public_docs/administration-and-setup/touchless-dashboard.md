@@ -17,15 +17,15 @@ Górny wybór i wybór w regułach są obecnie niezależne. Sekcja reguł ładuj
 
 ### Pięć kluczowych wskaźników
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards-pl.png" alt="Rzeczywisty polski panel: procent AP obejmuje Pure i samo zatwierdzenie; liczba poniżej obejmuje tylko zatwierdzenia. Procentów Pure i AP nie należy dodawać. Jakość odczytu wymaga osobnej kontroli oryginału."><figcaption><p>Rzeczywisty polski panel: procent AP obejmuje Pure i samo zatwierdzenie; liczba poniżej obejmuje tylko zatwierdzenia. Procentów Pure i AP nie należy dodawać. Jakość odczytu wymaga osobnej kontroli oryginału.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-kpi-pl-20261104.png" alt="Aktualny raport faktur za 30 dni: 107 całkowicie automatycznych oraz 11 wymagających tylko zatwierdzenia daje 118 z 201, czyli 58,7 % AP Touchless. Samo Pure to 53,2 %. Karta AP pokazuje już łączną liczbę 118. Fikcyjna historia szkoleniowa; nie potwierdza wykonania eksportu do ERP."><figcaption><p>Aktualny raport faktur za 30 dni: 107 całkowicie automatycznych oraz 11 wymagających tylko zatwierdzenia daje 118 z 201, czyli 58,7 % AP Touchless. Samo Pure to 53,2 %. Karta AP pokazuje już łączną liczbę 118. Fikcyjna historia szkoleniowa; nie potwierdza wykonania eksportu do ERP.</p></figcaption></figure>
 
-| Kafelek | Pokazuje | Przykład (poglądowy) |
+| Karta | Co obejmuje | Aktualny zrzut |
 | --- | --- | --- |
-| **Czysty touchless** | Procent i różnicę względem celu | **63,2 %** · „120 dokumentów" · „−6,8 pp wobec celu 70 %" (czerwony, poniżej celu) |
-| **AP Touchless** | Łączny wskaźnik Pure + samo zatwierdzenie | **78,9 %** · 30 dokumentów tylko z zatwierdzeniem |
-| **AP wspomagany** | Liczbę dokumentów i ich udział | **30** · 15,8 % |
-| **Wyjątki procesu** | Liczbę dokumentów i ich udział | **10** · 5,3 % |
-| **Pokrycie diagnozą** (Diagnosis coverage) | Ile zablokowanych dokumentów ma **znaną** przyczynę | **80 %** · „10 bez znanej przyczyny" |
+| Pure Touchless | Pomyślne zakończenie bez ingerencji i zatwierdzenia | 107 · 53,2 % |
+| AP Touchless | Pure i samo zatwierdzenie; łączny procent i liczba | 118 · 58,7 % |
+| AP Assisted | Pomyślne zakończenie z ręczną ingerencją | 37 · 18,4 % |
+| Wyjątki procesu | Wynik sklasyfikowany jako wyjątek | 46 · 22,9 % |
+| Pokrycie diagnostyczne | Zablokowane przypadki ze znaną przyczyną | 100 % · 0 bez znanej przyczyny |
 
 * Kafelek pokazuje kreskę (—) zamiast **0 %**, gdy nie ma czego mierzyć. Kreska oznacza „brak danych", nie „zero".
 * **Pokrycie diagnozą** = dokumenty ze znanym powodem blokady ÷ wszystkie zablokowane dokumenty. Przykład: 50 zablokowanych dokumentów, 10 z nieznaną przyczyną → 40 ÷ 50 = **80 %**. Niska wartość oznacza „jeszcze nie rozumiemy, dlaczego dokumenty się zatrzymują". Popraw ją, zanim spróbujesz usuwać pojedyncze przyczyny.
@@ -33,9 +33,9 @@ Górny wybór i wybór w regułach są obecnie niezależne. Sekcja reguł ładuj
 
 ### Wskaźnik touchless w czasie
 
-<figure><img src="../.gitbook/assets/touchless-trend-pl.png" alt="Rzeczywisty polski wykres. Niebieska linia AP przedstawia odrębną kategorię samego zatwierdzenia, a nie łączny AP z nagłówka. Zrzuty i przykłady mogą dotyczyć innych populacji."><figcaption><p>Rzeczywisty polski wykres. Niebieska linia AP przedstawia odrębną kategorię samego zatwierdzenia, a nie łączny AP z nagłówka. Zrzuty i przykłady mogą dotyczyć innych populacji.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-report-trend-pl-20261104.png" alt="Aktualny trend: różowy oznacza Pure Touchless, a niebieski wskaźnik łączny obejmujący samo zatwierdzenie. Linia przerywana pokazuje cel 70 %. Fikcyjne przypadki szkoleniowe nie dowodzą rzeczywistej poprawy procesu."><figcaption><p>Aktualny trend: różowy oznacza Pure Touchless, a niebieski wskaźnik łączny obejmujący samo zatwierdzenie. Linia przerywana pokazuje cel 70 %. Fikcyjne przypadki szkoleniowe nie dowodzą rzeczywistej poprawy procesu.</p></figcaption></figure>
 
-Wykres pokazuje osobne udziały Pure oraz AP z samym zatwierdzeniem. Niebieska linia nie zastępuje łącznego AP. Łączenie wymaga tego samego okresu i populacji. Krótkie okresy mają punkty dzienne, dłuższe tygodniowe.
+Aktualny wykres pokazuje Pure, łączny AP i cel. Niebieski obejmuje Pure i samo zatwierdzenie, dlatego jest na poziomie różowego lub powyżej; nie dodawaj tych procentów. Każdy punkt ma własną populację zakończonych, kwalifikujących się dokumentów: wynik dzienny nie jest automatycznie wynikiem całego okresu. Krótkie okresy pokazują punkty dzienne, długie tygodniowe. Oddzielna kategoria samego zatwierdzenia różni się od tej łącznej linii.
 
 **Przykład.** Pure z 55 do 68 % po zmianie to związek czasowy. Porównaj typ, dostawców i inne zmiany; przed/po nie dowodzi jednej przyczyny.
 

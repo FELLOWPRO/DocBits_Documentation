@@ -8,11 +8,11 @@ De pagina **Validatie van elektronische facturen** (**Instellingen → E-documen
 
 ## Wat staat op deze pagina
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-nl.png" alt="De pagina Validatie van elektronische facturen met de tabel Validatie voor elk documenttype"><figcaption><p>De pagina Validatie van elektronische facturen. Het tabblad <strong>Regels en beleid</strong> begint met de tabel <strong>Validatie voor elk documenttype</strong>. Voorbeeldorganisatie.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-nl-20261104.png" alt="Validatie en blokkering per documenttype. Ingestelde namen zijn verborgen. Voorbeeld uit Dev."><figcaption><p>Validatie en blokkering per documenttype. Ingestelde namen zijn verborgen. Voorbeeld uit Dev.</p></figcaption></figure>
 
 | Onderwerp | Wat het doet | Wie |
 | --- | --- | --- |
-| [Validatie-instellingen en geaccepteerde versies](validation-setup.md) | De installatiewizard, de geaccepteerde XRechnung-versies, de geaccepteerde profielen en wat elke ernst betekent. | Organisatiebeheerders |
+| [Validatie-instellingen en geaccepteerde versies](validation-setup.md) | De installatiewizard, de geaccepteerde XRechnung-versies, de geaccepteerde profielen en wat elk ernstniveau betekent. | Organisatiebeheerders |
 | [Ernst van regels](validation-rule-severities.md) | De regeltabel: wijzig de ernst van elke regel voor uw organisatie. | Organisatiebeheerders |
 | [Validatie voor elk documenttype](validation-per-document-type.md) | Schakel validatie in (**Ingeschakeld**) en bepaal of een mislukte controle het document stopt (**Blokkeren**). Elke wijziging moet worden bevestigd. | Organisatiebeheerders |
 | [Wijzigingslogboek](validation-change-log.md) | Elke wijziging van de instellingen: wanneer, wie, welke regel, van → naar. | Organisatiebeheerders |

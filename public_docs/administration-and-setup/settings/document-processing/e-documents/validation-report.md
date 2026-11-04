@@ -1,5 +1,7 @@
 # Validatierapport
 
+> Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.
+
 Wanneer DocBits een e-factuur afwijst, kunt u precies lezen waarom. Het **validatierapport** toont elke bevinding in begrijpelijke taal, vertelt u wat u moet herstellen en toont de volgende stap. U opent het vanuit het document, niet vanuit de instellingen. Het scherm waar u het vindt, wordt beschreven in [Het foutscherm voor een afgewezen e-factuur](validation-error-screen.md).
 
 Deze pagina is bedoeld voor mensen die facturen verwerken. Beheerders stellen de regels in op de pagina [Validatie van elektronische facturen](validation-rules.md) en kiezen per documenttype of een mislukte controle de factuur blokkeert, zie [Validatie voor elk documenttype](validation-per-document-type.md).
@@ -8,13 +10,13 @@ Deze pagina is bedoeld voor mensen die facturen verwerken. Beheerders stellen de
 
 Als validatie **aan** staat en **blokkeert** voor het documenttype, krijgt een factuur met een blokkerende bevinding de status **Fout**. Open het document vanuit het dashboard. De foutweergave toont links de XML en rechts de reden.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-error-view-nl.png" alt="De foutweergave van een afgewezen e-factuur met links de XML en rechts de reden"><figcaption><p>De foutweergave: de XML van de factuur en de eerste blokkerende bevinding met een volgende stap. Voorbeeldfactuur met fictieve namen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-error-view-nl-20261104-v2.png" alt="Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface."><figcaption><p>Foutscherm van een volledig fictieve voorbeeldfactuur. Sommige interfaceteksten zijn in deze versie nog Engels of onjuist vertaald. De handleiding legt de betekenis uit; de schermafbeeldingen tonen de ongewijzigde interface.</p></figcaption></figure>
 
 De kaart rechts noemt de laag die de factuur heeft afgewezen (bijvoorbeeld **L3 · Bedrijfsregels**), de regelcode (bijvoorbeeld `BR-CO-26`), een korte uitleg en een **Volgende stap**. Selecteer **Bekijk validatiegegevens** om het volledige rapport te openen.
 
 ## Het rapport lezen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-top-nl.png" alt="De bovenkant van het validatierapport met bestandsgegevens, het oordeel en het resultaat per niveau"><figcaption><p>De bovenkant van het rapport: bestandsgegevens, het oordeel en het resultaat per niveau</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-top-nl-20261104-v2.png" alt="Rapport van de fictieve factuur met bestandsgegevens en het resultaat."><figcaption><p>Rapport van de fictieve factuur met bestandsgegevens en het resultaat.</p></figcaption></figure>
 
 Het rapport begint met de feiten over het bestand:
 
@@ -47,7 +49,7 @@ De tabel **Resultaat per niveau** toont hoeveel fouten, waarschuwingen en inform
 
 ## De bevindingen
 
-<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-nl.png" alt="De lijst met bevindingen met code, niveau, tekst in begrijpelijke taal, hoe u het oplost en Weergeven in XML"><figcaption><p>Elke bevinding heeft een code, een niveau, een leesbare tekst en een tip om het op te lossen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-report-findings-nl-20261104-v2.png" alt="Uittreksel uit het rapport: verkopersidentificatie ontbreekt, regel BR-CO-26."><figcaption><p>Uittreksel uit het rapport: verkopersidentificatie ontbreekt, regel BR-CO-26.</p></figcaption></figure>
 
 Elke bevinding is één rij:
 
@@ -55,7 +57,7 @@ Elke bevinding is één rij:
 * **Niveau**: **Fout**, **Waarschuwing** of **Informatie**.
 * **Uw organisatie**: het niveau volgens de instellingen van uw organisatie. Een streepje betekent dat uw organisatie het niveau niet heeft gewijzigd.
 * **Veld en tekst**: het probleem in begrijpelijke taal, het veld waar het om gaat (bijvoorbeeld *BT-29 Verkopersidentificatiecode*), het technische bericht van de validator en **Hoe los ik dit op?**.
-* **Lijn** en **Weergeven in XML**: selecteer **Weergeven in XML** om het rapport te sluiten en naar de regel in de XML-viewer te springen.
+* **Regel** en **Weergeven in XML**: selecteer **Weergeven in XML** om het rapport te sluiten en naar de regel in de XML-viewer te springen.
 
 DocBits heeft teksten in begrijpelijke taal voor de meest voorkomende regels. Voor een regel zonder zo'n tekst toont het rapport het technische bericht van de validator.
 

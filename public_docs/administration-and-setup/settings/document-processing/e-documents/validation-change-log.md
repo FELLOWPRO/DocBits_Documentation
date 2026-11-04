@@ -4,12 +4,12 @@ Het **Wijzigingslogboek** legt elke wijziging van de validatie-instellingen vast
 
 Open het tabblad **Wijzigingslogboek** naast **Regels en beleid**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-nl.png" alt="Het tabblad Wijzigingslogboek met de kolommen Wanneer, WHO, Regel, Van naar Naar en Actie"><figcaption><p>Het wijzigingslogboek met vier voorbeeldvermeldingen. De gebruikersnaam is vervangen door een voorbeeldnaam.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-nl-20261104.png" alt="Uittreksel uit het wijzigingslogboek. Gebruikersgegevens zijn verborgen."><figcaption><p>Uittreksel uit het wijzigingslogboek. Gebruikersgegevens zijn verborgen.</p></figcaption></figure>
 
 | Kolom | Wat ze toont |
 | --- | --- |
 | **Wanneer** | Het tijdstip van de wijziging. |
-| **WHO** | De gebruiker die de wijziging heeft gemaakt. |
+| **Gebruiker** | De gebruiker die de wijziging heeft gemaakt. |
 | **Regel** | De instelling of regel die is gewijzigd. |
 | **Van → Naar** | De oude en de nieuwe waarde. |
 | **Actie** | Het soort wijziging. Rijen van de installatiewizard kunt u openen om de afzonderlijke wijzigingen te zien. |
